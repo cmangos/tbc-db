@@ -1,8 +1,8 @@
--- =============================================================================
--- ====     ACID Release 3.0.4 FULL RELEASE FOR 3.3.2 and 3.3.0a CLIENTS    ====
--- =============================================================================
+-- ==================================================================
+-- ====     ACID Release 2.0.4 FULL RELEASE FOR 2.4.3 CLIENTS    ====
+-- ==================================================================
 
-/* Copyright (C) 2008 - 2010 ScriptDev2/ACID <https://sd2-acid.svn.sourceforge.net/svnroot/sd2-acid/>
+/* Copyright (C) 2008 - 2011 ScriptDev2/ACID <https://sd2-acid.svn.sourceforge.net/svnroot/sd2-acid/>
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License','or
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `version` (
 
 -- Set ACID Release Version Information
 -- ====================================
-UPDATE db_version SET `creature_ai_version` = 'ACID 2.0.4 - Full Release for Mangos 0.12 (2.4.3 Client)';
+UPDATE db_version SET `creature_ai_version` = 'ACID 2.0.4 - Full Release for Mangos One (2.4.3 Client)';
 UPDATE version SET `script_version` = 'ACID 2.0.4 - Full Release for Oregon Core (2.4.3 Client)';
 
 
