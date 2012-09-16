@@ -28979,11 +28979,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2187301','21873','9','0','100','3','0','8','6000','8400','11','28168','1','0','0','0','0','0','0','0','0','0','Coilfang Guardian - Cast Arcing Smash'),
 ('2187302','21873','9','0','100','3','0','5','10000','14400','11','9080','1','1','0','0','0','0','0','0','0','0','Coilfang Guardian - Cast Hamstring'),
 -- Shadow of Leotheras (SD2 Backport)
-('2187501','21875','11','0','100','2','0','0','0','0','1','-1268','0','0','21','0','0','0','0','0','0','0','Shadow of Leotheras - Yell and Stop Combat Movemnt on Spawn'),
+('2187501','21875','11','0','100','2','0','0','0','0','1','-1268','0','0','21','0','0','0','20','0','0','0','Shadow of Leotheras - Yell, Stop Combat Movemnt and Stop Auto Attack on Spawn'),
 ('2187502','21875','5','0','100','3','0','0','0','0','1','-1269','-1270','-1271','0','0','0','0','0','0','0','0','Shadow of Leotheras - Yell on Player Kill'),
-('2187503','21875','0','0','100','3','2000','3000','3000','3000','11','37674','0','0','0','0','0','0','0','0','0','0','Shadow of Leotheras - Cast Chaos Blast'),
-('2187504','21875','9','0','100','3','25','60','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Shadow of Leotheras - Start Combat Movement at 25 Yards'),
-('2187505','21875','9','0','100','3','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Shadow of Leotheras - Prevent Combat Movement at 15 Yards'),
+('2187503','21875','0','0','100','3','2000','3000','3000','3000','11','37674','1','0','0','0','0','0','0','0','0','0','Shadow of Leotheras - Cast Chaos Blast'),
 -- Tidewalker Lurker
 ('2192001','21920','9','0','100','3','0','5','5900','7100','11','41932','1','0','0','0','0','0','0','0','0','0','Tidewalker Lurker - Cast Carnivorous Bite'),
 -- Enchanted Elemental (21958) - mob_enchanted_elemental
