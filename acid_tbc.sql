@@ -28826,6 +28826,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2121803','21218','0','0','100','3','7000','12000','13000','17000','11','38945','5','1','0','0','0','0','0','0','0','0','Vashj\'ir Honor Guard - Cast Frightening Shout'),
 ('2121804','21218','12','0','100','3','20','0','30000','35000','11','38959','6','1','0','0','0','0','0','0','0','0','Vashj\'ir Honor Guard - Cast Execute at 20% Player HP'),
 ('2121805','21218','2','0','100','2','50','0','0','0','11','38947','0','1','1','-106','0','0','0','0','0','0','Vashj\'ir Honor Guard - Cast Enrage at 50% HP'),
+('2121806','21218','29','0','100','2','1000','1000','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Vashj\'ir Honor Guard - Set Instance Data64 (SD2) on Timer'),
 -- Coilfang Priestess
 ('2122001','21220','1','0','100','2','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Coilfang Priestess - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 ('2122002','21220','4','0','100','2','0','0','0','0','11','38582','1','0','23','1','0','0','0','0','0','0','Coilfang Priestess - Cast Holy Smite and Set Phase 1 on Aggro'),
@@ -28839,6 +28840,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2122010','21220','14','0','100','3','70000','40','16000','21000','11','38580','6','1','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Greater Heal on Friendlies'),
 ('2122011','21220','2','0','100','2','20','0','0','0','11','38580','0','1','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Greater Heal at 20% HP'),
 ('2122012','21220','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Set Phase to 0 on Evade'),
+('2122013','21220','29','0','100','2','1000','1000','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Set Instace Data64 (SD2) on Timer'),
 -- Coilfang Beast-Tamer
 ('2122101','21221','1','0','100','2','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Coilfang Beast-Tamer - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('2122102','21221','9','1','100','3','5','35','4000','6000','11','38904','4','0','40','2','0','0','0','0','0','0','Coilfang Beast-Tamer - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
@@ -28956,6 +28958,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Purified Water Elemental (21260) - NSR
 -- Greyheart Technician
 ('2126301','21263','9','0','100','3','0','5','7300','13300','11','38995','4','0','0','0','0','0','0','0','0','0','Greyheart Technician - Cast Hamstring'),
+('2126302','21263','29','0','100','2','1000','1000','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - Set Instace Data64 (SD2) on Timer'),
 -- Coilfang Serpentguard
 ('2129801','21298','11','0','100','2','0','0','0','0','11','38603','0','1','0','0','0','0','0','0','0','0','Coilfang Serpentguard - Cast Corrupt Devotion Aura on Spawn'),
 ('2129802','21298','0','0','80','3','8900','14700','15900','18900','11','38599','0','0','0','0','0','0','0','0','0','0','Coilfang Serpentguard - Cast Spell Reflection'),
@@ -28973,6 +28976,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2129911','21299','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Set Phase to 0 on Evade'),
 -- Coilfang Shatterer
 ('2130101','21301','0','0','100','3','7600','14100','18200','21500','11','38591','4','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Cast Shatter Armor'),
+('2130102','21301','29','0','100','2','1000','1000','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Set Instance Data64 (SD2) on Timer'),
 -- Coilfang Hate-Screamer
 ('2133901','21339','0','0','100','2','5000','9000','21000','38600','11','38491','4','0','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Silence'),
 ('2133902','21339','0','0','100','3','6100','11200','7000','12000','11','38496','4','0','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Sonic Scream'),
