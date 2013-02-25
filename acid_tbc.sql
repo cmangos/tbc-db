@@ -28195,7 +28195,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2296002','22960','9','0','100','3','4000','9000','9000','14000','11','40895','4','0','0','0','0','0','0','0','0','0','Dragonmaw Wyrmcaller - Cast Jab'),
 ('2296003','22960','0','0','100','3','8000','15000','16000','21000','11','40892','4','0','0','0','0','0','0','0','0','0','Dragonmaw Wyrmcaller - Cast Fixate'),
 -- Priestess of Delight
-('2296201','22962','0','0','100','5000','9000','12000','16000','35000','11','41351','4','0','0','0','0','0','0','0','0','0','Priestess of Delight - Cast Curse of Vitality'),
+('2296201','22962','0','0','100','3','9000','12000','16000','35000','11','41351','4','0','0','0','0','0','0','0','0','0','Priestess of Delight - Cast Curse of Vitality'),
 -- Bonechewer Worker
 ('2296301','22963','1','0','100','2','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Bonechewer Worker - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('2296302','22963','9','1','100','3','5','35','4000','6000','11','40844','4','0','40','2','0','0','0','0','0','0','Bonechewer Worker - Cast Throw Pick and Set Ranged Weapon Model (Phase 1)'),
