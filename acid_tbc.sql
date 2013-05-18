@@ -1,8 +1,8 @@
--- ==============================================================================
--- ====     ACID RELEASE 2.0.7 - FULL RELEASE FOR MANGOS ONE 2.4.3 CLIENT    ====
--- ==============================================================================
+-- =================================================================================
+-- ====     ACID RELEASE 2.0.7 - FULL RELEASE FOR CMANGOS-TBC (2.4.3 CLIENT)    ====
+-- =================================================================================
 
-/* Copyright (C) 2008 - 2012 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
+/* Copyright (C) 2008 - 2013 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
