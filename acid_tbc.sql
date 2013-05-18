@@ -21784,8 +21784,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1863305','18633','14','0','100','3','8100','15','13200','19300','11','25058','6','0','0','0','0','0','0','0','0','0','Cabal Acolyte (Normal) - Cast Renew on Friendlies'),
 ('1863306','18633','14','0','100','5','12500','15','13200','19300','11','38210','6','0','0','0','0','0','0','0','0','0','Cabal Acolyte (Heroic) - Cast Renew on Friendlies'),
 ('1863307','18633','2','0','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Cabal Acolyte - Flee at 15% HP'),
--- Cabal Summoner (4.3.4 Official Data - Normal/Heroic)
-('1863401','18634','1','0','100','7','3000','8000','5000','7000','11','33335','1','0','0','0','0','0','0','0','0','0','Cabal Summoner - Cast Shadow Bolt OOC (Part of Visual Event)'),
+-- Cabal Summoner (4.3.4 Official Data - Normal/Heroic) - VISUAL SPELL COMMENTED OUT UNTIL FURTHER SNIFF RESEARCH AN BE DONE TO PREVENT TARGET ERROR ON SPELLCAST
+-- ('1863401','18634','1','0','100','7','3000','8000','5000','7000','11','33335','1','0','0','0','0','0','0','0','0','0','Cabal Summoner - Cast Shadow Bolt OOC (Part of Visual Event)'),
 ('1863402','18634','4','0','10','38','0','0','0','0','1','-664','-665','-666','1','-667','-668','-669','1','-665','-666','-669','Cabal Summoner - Random Say on Aggro'),
 ('1863403','18634','0','0','100','3','1800','6200','4800','16900','11','14034','1','0','0','0','0','0','0','0','0','0','Cabal Summoner (Normal) - Cast Fireball'),
 ('1863404','18634','0','0','100','5','1800','6200','4800','16900','11','15228','1','0','0','0','0','0','0','0','0','0','Cabal Summoner (Heroic) - Cast Fireball'),
