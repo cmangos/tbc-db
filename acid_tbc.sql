@@ -7033,7 +7033,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('838301','8383','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Master Wood - Summon Stormwind City Guard on Hostile LOS'),
 -- Lil Timmy (NEEDS SNIFF RESEARCH TO FIND PROPER SUMMON SPELL FOR THE KITTEN AS THIS IS NOT THE CORRECT SPELL MOST LIKELY)
 -- ('866601','8666','1','0','100','1','4000','5000','10000','20000','11','10679','0','18','0','0','0','0','0','0','0','0','Lil Timmy - Spawn his White Kitten'),
-('866602','8666','32','0','100','1','0','0','180000','180000','1','-1311','-1312','-1313','1','-1314','-1315','-1316','0','0','0','0','Lil Timmy - Random Say OOC'),     
+('866602','8666','1','0','100','32','0','0','180000','180000','1','-1311','-1312','-1313','1','-1314','-1315','-1316','0','0','0','0','Lil Timmy - Random Say OOC'),     
 -- Auctioneer Chilton  
 ('867001','8670','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Auctioneer Chilton - Summon Stormwind City Guard on Hostile LOS'),
 -- Auctioneer Fitch  
@@ -10452,7 +10452,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('377101','3771','1','0','100','0','0','0','0','0','31','1','2','0','0','0','0','0','0','0','0','0','Bleakheart Hellcaller - Random Select Phase on Spawn'),
 ('377102','3771','1','5','100','0','0','1000','0','0','11','12746','0','3','22','0','0','0','0','0','0','0','Bleakheart Hellcaller - Summon Voidwalker OOC on Spawn then set Phase 0 (Phase 1)'),
 ('377103','3771','1','3','100','0','0','1000','0','0','11','11939','0','3','22','0','0','0','0','0','0','0','Bleakheart Hellcaller - Summon Imp OOC on Spawn then set Phase 0 (Phase 2)'),
-('377004','3770','2','0','100','0','30','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Bleakheart Hellcaller - Cast Enrage at 30% HP'),
+('377004','3771','0','0','100','1','7000','12000','8000','15000','11','13878','1','0','0','0','0','0','0','0','0','0','Bleakheart Hellcaller - Cast Scorch'),
+('377005','3771','2','0','100','0','30','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Bleakheart Hellcaller - Cast Enrage at 30% HP'),
 -- Lesser Felguard (3.3.0 Official Data)
 ('377201','3772','9','0','100','1','0','5','13900','21500','11','18812','1','0','0','0','0','0','0','0','0','0','Lesser Felguard - Cast Knockdown'),
 ('377202','3772','0','0','100','1','2500','4500','66000','77800','11','184','0','1','0','0','0','0','0','0','0','0','Lesser Felguard - Cast Fire Shield II'),
