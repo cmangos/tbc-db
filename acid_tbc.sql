@@ -19007,10 +19007,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1926412','19264','2','0','100','0','20','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Force-Commander Gorax - Cast Toughen at 20% HP'),
 ('1926413','19264','2','0','100','0','10','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Force-Commander Gorax - Cast Toughen at 10% HP'),
 ('1926414','19264','6','0','100','0','0','0','0','0','11','39012','0','7','0','0','0','0','0','0','0','0','Force-Commander Gorax - Create Gorax Corpse Spell Focus on Death'),
--- Legion Transporter: Alpha
-('1929101','19291','8','0','100','0','33655','-1','0','0','33','19291','6','0','0','0','0','0','0','0','0','0','Legion Transporter: Alpha - Quest Credit on Dropping The Nether Modulator Spellhit (Quest: 10129)'),
--- Legion Transporter: Beta
-('1929201','19292','8','0','100','0','33655','-1','0','0','33','19292','6','0','0','0','0','0','0','0','0','0','Legion Transporter: Beta - Quest Credit on Dropping The Nether Modulator Spellhit (Quest: 10146)'),
+-- Legion Transporter: Alpha (19291) - NSR
+-- Legion Transporter: Beta (19292) - NSR
 -- Shattered Hand Grenadier
 ('1929501','19295','0','0','100','1','6000','6000','13000','15000','11','7978','1','0','0','0','0','0','0','0','0','0','Shattered Hand Grenadier - Cast Throw Dynamite'),
 -- Goliathon
