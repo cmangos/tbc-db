@@ -11492,10 +11492,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1652210','16522','3','3','100','1','100','15','100','100','23','-1','0','0','0','0','0','0','0','0','0','0','Surveyor Candress - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1652211','16522','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Surveyor Candress - Set Phase to 0 on Evade'),
 -- Inoculated Nestlewood Owlkin
-('1653401','16534','1','0','100','0','0','0','0','0','30','1','1','2','0','0','0','0','0','0','0','0','Inoculated Nestlewood Owlkin - Set Random Phase on Spawn'),
-('1653402','16534','1','5','100','0','1000','1000','0','0','1','-906','-907','-908','0','0','0','0','0','0','0','0','Inoculated Nestlewood Owlkin - Random Text Emote (Phase 1)'),
-('1653403','16534','1','3','100','0','1000','1000','0','0','1','-909','-910','0','0','0','0','0','0','0','0','0','Inoculated Nestlewood Owlkin - Random Text Emote (Phase 2)'),
-('1653404','16534','6','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Inoculated Nestlewood Owlkin - Set Phase 0 on Death'),
+('1653401','16534','1','0','100','32','1000','1000','0','0','1','-906','-907','-908','1','-909','-910','-906','1','-907','-908','-909','Inoculated Nestlewood Owlkin - Random Text Emote'),
 -- Vindicator Aldar (16535) - NSR
 -- Mutated Owlkin (16537) - NSR
 -- Tolaan (16546) - NSR
