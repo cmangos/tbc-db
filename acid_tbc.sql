@@ -6869,7 +6869,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('351302','3513','2','0','100','1','2','1','1000','1000','42','1','-1','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible'),      
 -- Thomas Miller 
 ('351801','3518','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Thomas Miller - Summon Stormwind City Guard on Hostile LOS'),
-('351802','3518','1','0','100','1','0','0','180000','180000','1','-204','-205','0','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
+('351802','3518','1','0','100','1','0','0','120000','180000','1','-204','-205','-142','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
 -- Ol' Emma 
 ('352001','3520','10','0','100','0','0','15','0','0','12','68','1','600000','0','0','0','0','0','0','0','0','Ol\' Emma - Summon Stormwind City Guard on Hostile LOS'),
 ('352002','3520','1','0','100','1','0','0','180000','180000','1','-423','-424','-425','0','0','0','0','0','0','0','0','Ol\' Emma - Random Say 1 OOC'),
@@ -32017,7 +32017,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- ('-139','You have come to play? Then let us play!','0','0','0','9520','0'),
 ('-140','The coils of death... Will crush you.','5787','1','0','3670','0'),
 ('-141','Invaders! Sound the Alarm!','0','1','0','23586','0'),
--- ('-142','%s submits.','0','2','0','9520','0'),
+('-142','Get it while it\'s hot!','0','0','0','3518','0'),
 ('-143','Any intruders must be eliminated!','0','1','0','Tempest Keep','0'),
 ('-144','Protect the Botanica at all costs!','0','1','0','17976','0'),
 ('-145','Protect the Mechanar at all costs!','0','1','0','19166','0'),
