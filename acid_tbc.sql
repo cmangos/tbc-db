@@ -32080,7 +32080,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-170','And stay down!','5781','1','0','639','0'),
 ('-171','Lapdogs, all of you!','5782','1','0','639','0'),
 ('-172','Fools! Our cause is righteous!','5783','1','0','639','0'),
-('-173','The Brotherhood will prevail!','5784','1','0','639','0'),
+('-173','The Brotherhood shall prevail!','5784','1','0','639','0'),
 -- (-174 PLEASE RE-USE)
 ('-175','You will suffer eternally!','0','1','0','21181','0'),
 ('-176','Little creature made of flesh, your wish is granted! Death comes for you!','0','1','0','21181','0'),
