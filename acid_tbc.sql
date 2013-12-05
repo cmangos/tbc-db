@@ -27222,11 +27222,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1841903','18419','0','0','100','3','9600','16900','7200','20500','11','34797','1','1','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper (Normal) - Cast Nature Shock'),
 ('1841904','18419','0','0','100','5','9600','16900','7200','16900','11','39120','1','1','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper (Heroic) - Cast Nature Shock'),
 ('1841905','18419','0','0','100','7','12000','18000','17000','21000','11','34800','5','1','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper - Cast Impending Coma'),
--- Sunseeker Geomancer (4.3.4 Official Data - Normal) - (OOC Spells are Waypoint Scripted - I Have Fraps Video)
--- ('1842002','18420','1','0','100','7','20000','20000','20000','20000','11','34167','0','0','0','0','0','0','0','0','0','0','Sunseeker Geomancer - Cast Blizzard Visual OOC'),
--- ('1842001','18420','1','0','100','7','20000','20000','20000','20000','11','34169','0','0','0','0','0','0','0','0','0','0','Sunseeker Geomancer - Cast Rain of Fire Visual OOC'),
--- ('1842003','18420','1','0','100','7','20000','20000','20000','20000','11','34170','0','0','0','0','0','0','0','0','0','0','Sunseeker Geomancer - Cast Arcane Explosion Visual OOC'),
-('1842004','18420','9','0','100','7','0','8','3600','8400','11','35124','0','0','0','0','0','0','0','0','0','0','Sunseeker Geomancer - Cast Arcane Explosion'),
+-- Sunseeker Geomancer (4.3.4 Official Data - Normal)
+('1842001','18420','9','0','100','7','0','8','3600','8400','11','35124','0','0','0','0','0','0','0','0','0','0','Sunseeker Geomancer - Cast Arcane Explosion'),
 -- Sunseeker Researcher (4.3.4 Official Data - Normal/Heroic)
 ('1842101','18421','1','0','100','7','1000','1000','2000','5000','11','34355','0','33','0','0','0','0','0','0','0','0','Sunseeker Researcher - Cast Poison Shield OOC'),
 ('1842102','18421','16','0','100','7','34355','1','2000','5000','11','34355','6','1','0','0','0','0','0','0','0','0','Sunseeker Researcher - Cast Poison Shield on Missing Buff'),
