@@ -24685,7 +24685,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1725904','17259','0','0','100','7','3600','15400','5600','24100','11','6713','1','1','0','0','0','0','0','0','0','0','Bonechewer Hungerer - Cast Disarm'),
 ('1725905','17259','2','0','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bonechewer Hungerer - Flee at 15% HP'),
 -- Bonechewer Ravener (3.0.3 Official Data - Normal Log Only)
-('1726401','17264','1','0','100','6','180000','240000','180000','240000','1','-673','0','0','0','0','0','0','0','0','0','0','Bonechewer Ravener - Random Say OOC'),
+('1726401','17264','1','0','30','6','180000','240000','180000','240000','1','-673','0','0','0','0','0','0','0','0','0','0','Bonechewer Ravener - Random Say OOC'),
 ('1726402','17264','4','0','20','6','0','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bonechewer Ravener - Random Say on Aggro'),
 ('1726403','17264','0','0','100','7','3200','8800','20100','30100','11','30621','1','0','13','-40','1','0','0','0','0','0','Bonechewer Ravener - Cast Kidney Shot and Reduce Aggro'),
 -- Bleeding Hollow Darkcaster (3.0.3 Official Data - Normal Log Only)
@@ -24720,7 +24720,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1728001','17280','0','0','100','7','1000','3100','13100','25300','11','30636','1','0','0','0','0','0','0','0','0','0','Shattered Hand Warhound - Cast Furious Howl'),
 ('1728002','17280','0','0','100','7','2300','8600','3600','8400','11','30639','1','0','0','0','0','0','0','0','0','0','Shattered Hand Warhound - Cast Carnivorous Bite'),
 -- Bonechewer Ripper (3.0.3 Official Data - Normal Log Only)
-('1728101','17281','0','0','100','7','700','1000','12000','19000','11','18501','0','0','1','-46','0','0','0','0','0','0','Bonechewer Ripper - Cast Enrage'),
+('1728101','17281','1','0','100','7','10000','30000','20000','40000','5','15','0','0','0','0','0','0','0','0','0','0','Bonechewer Ripper - Random Emote OOC'),
+('1728102','17281','0','0','100','7','700','1000','12000','19000','11','18501','0','0','1','-46','0','0','0','0','0','0','Bonechewer Ripper - Cast Enrage'),
 -- Watchkeeper Gargolmar (17306) - boss_watchkeeper_gargolmar
 -- Vazruden the Herald (17307) - boss_vazruden_herald
 -- Omor the Unscarred (17308) - boss_omor_the_unscarred
@@ -27212,7 +27213,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodwarder Steward (4.3.4 Official Data - Normal/Heroic)
 ('1840401','18404','0','0','100','7','11100','21500','16800','28900','11','34821','0','0','0','0','0','0','0','0','0','0','Bloodwarder Steward - Cast Arcane Flurry'),
 -- Tempest Forge Peacekeeper (4.3.4 Official Data - Normal/Heroic)
-('1840501','18405','1','0','75','7','30000','120000','120000','240000','1','-143','-144','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Random Say OOC'),
+('1840501','18405','1','0','15','7','30000','120000','120000','240000','1','-143','-144','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Random Say OOC'),
 ('1840502','18405','0','0','100','7','9200','21700','12100','24100','11','34785','1','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Cast Arcane Volley'),
 ('1840503','18405','0','0','100','7','8400','19300','7200','18100','11','34791','0','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Cast Arcane Explosion'),
 ('1840504','18405','0','0','100','7','7600','16400','15700','25300','11','34793','1','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Cast Arcane Blast'),
