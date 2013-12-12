@@ -24685,9 +24685,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1725904','17259','0','0','100','7','3600','15400','5600','24100','11','6713','1','1','0','0','0','0','0','0','0','0','Bonechewer Hungerer - Cast Disarm'),
 ('1725905','17259','2','0','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bonechewer Hungerer - Flee at 15% HP'),
 -- Bonechewer Ravener (3.0.3 Official Data - Normal Log Only)
-('1726401','17264','1','0','30','6','180000','240000','180000','240000','1','-673','0','0','0','0','0','0','0','0','0','0','Bonechewer Ravener - Random Say OOC'),
-('1726402','17264','4','0','20','6','0','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bonechewer Ravener - Random Say on Aggro'),
-('1726403','17264','0','0','100','7','3200','8800','20100','30100','11','30621','1','0','13','-40','1','0','0','0','0','0','Bonechewer Ravener - Cast Kidney Shot and Reduce Aggro'),
+('1726401','17264','4','0','20','6','0','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bonechewer Ravener - Random Say on Aggro'),
+('1726402','17264','0','0','100','7','3200','8800','20100','30100','11','30621','1','0','13','-40','1','0','0','0','0','0','Bonechewer Ravener - Cast Kidney Shot and Reduce Aggro'),
 -- Bleeding Hollow Darkcaster (3.0.3 Official Data - Normal Log Only)
 ('1726901','17269','1','0','100','6','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 ('1726902','17269','4','0','100','2','0','0','0','0','11','15241','1','0','23','1','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Normal) - Cast Scorch and Set Phase 1 on Aggro'),
@@ -32566,7 +32565,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-670','Pathetic worm!','0','0','0','18848','0'),
 ('-671','Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!','0','0','0','22381','0'),
 ('-672','This world is OURS!','0','0','1','Common Orc Say','0'),
-('-673','You there!  Keep a close watch on these ramparts, intruders could approach at any time!','0','1','0','17264','0'),
+-- Please Re-Use -673
 ('-674','For Kargath!  For Victory!','0','0','0','17264','0'),
 ('-675','How can you just leave me here?','0','0','0','18206','0'),
 ('-676','Help me!  Please help me!','0','0','0','18206','0'),
