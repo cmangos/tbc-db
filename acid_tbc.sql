@@ -10581,8 +10581,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('389701','3897','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Krolg - Flee at 15% HP'),
 -- Illiyana (3.3.0 Official Data)
 ('390101','3901','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Illiyana - Flee at 15% HP'),
--- Searing Totem II (3.3.0 Official Data)
-('390201','3902','0','0','100','1','1000','1000','2200','2900','11','6350','1','0','0','0','0','0','0','0','0','0','Searing Totem II - Cast Attack'),
+-- Searing Totem II (3.3.0 Official Data) - TOTEMAI
 -- Dagri (3915) - NSR
 -- Shael'dryn (3916) - NSR
 -- Befouled Water Elemental (3.3.0 Official Data)
@@ -23693,20 +23692,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1799103','17991','0','0','100','7','15300','37400','22900','32600','11','31948','4','1','0','0','0','0','0','0','0','0','Rokmar the Crackler - Cast Ensnaring Moss'),
 ('1799104','17991','0','0','100','7','9700','14900','12100','22900','11','35008','4','1','0','0','0','0','0','0','0','0','Rokmar the Crackler - Cast Water Spit'),
 ('1799105','17991','2','0','100','7','20','0','120000','120000','11','34970','0','1','1','-46','0','0','0','0','0','0','Rokmar the Crackler - Cast Enrage at 20% HP'),
--- Mennu Earthgrab Totem 
-('1817601','18176','1','0','100','6','0','0','0','0','20','0','0','0','21','0','0','0','0','0','0','0','Mennu Earthgrab Totem - Prevent Combat Movement and Prevent Melee on Spawn'),
-('1817602','18176','0','0','100','7','1000','4000','16000','18000','11','20654','4','0','0','0','0','0','0','0','0','0','Mennu Earthgrab Totem - Cast Snare'),
--- Mennu Stoneskin Totem
-('1817701','18177','1','0','100','6','0','0','0','0','20','0','0','0','21','0','0','0','0','0','0','0','Mennu Stoneskin Totem - Prevent Combat Movement and Prevent Melee on Spawn'),
-('1817702','18177','0','0','100','6','1000','1000','0','0','11','31986','0','0','0','0','0','0','0','0','0','0','Mennu Stoneskin Totem - Cast Stoneskin'),
+-- Mennu Earthgrab Totem - TOTEMAI
+-- Mennu Stoneskin Totem - TOTEMAI
 -- Mennu Fire Nova Totem
 ('1817901','18179','1','0','100','6','0','0','0','0','20','0','0','0','21','0','0','0','0','0','0','0','Mennu Fire Nova Totem - Prevent Combat Movement and Prevent Melee on Spawn'),
 ('1817902','18179','0','0','100','6','5000','5000','0','0','11','30687','1','0','0','0','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Explode and Self Kill'),
 ('1817903','18179','8','0','100','7','0','127','0','0','11','30687','1','0','0','0','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Explode When Hit By Spell and Self Kill'),
 -- Wastewalker Captive
 ('1820601','18206','10','0','20','6','1','15','0','0','1','-675','-676','-677','0','0','0','0','0','0','0','0','Wastewalker Captive - Random Say on OOC LOS'),
--- Mennu Healing Ward
-('2020801','20208','0','0','100','7','1000','1000','6000','6000','11','34977','0','0','0','0','0','0','0','0','0','0','Mennu Healing Ward - Cast Mennu\'s Healing Ward'),
+-- Mennu Healing Ward - TOTEMAI
 -- Coilfang Scale-Healer (3.0.3 and 4.3.3 Official Data - Normal Only)
 ('2112601','21126','0','0','100','3','3600','9200','12100','13400','11','34944','0','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Normal) - Cast Holy Nova'),
 ('2112602','21126','0','0','100','5','3600','9200','12100','13400','11','37669','0','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Heroic) - Cast Holy Nova'),
