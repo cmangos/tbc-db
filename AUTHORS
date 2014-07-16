@@ -1,0 +1,16 @@
+This file contains authorship information related to the TBC-DB database Project
+
+The code of TBC-DB database is shipped as it is without any form of warranty,
+and - except for third party libraries - licensed under the GPL v2.0,
+which you can read from the file "LICENSE.mdown"
+
+* The authors are assigned to by git commit authorship information,
+ listed within the git commit messages, or if forgotten before mentioned in the github comments related to a commit.
+
+* The most recent history can be checked at https://github.com/TBC-DB/Database
+
+* Initially the code for this project was written by Dasblub in TBCDB Project for Mangos One Project but was reworked and Continued by X-Savior initially for Mangos One but later for CMaNGOS-TBC Project.
+
+The third party libraries have their own way of addressing authorship, and the authorship of commits importing/ updating
+a third party library reflects who did the importing instead of who wrote the code within the commit.
+
