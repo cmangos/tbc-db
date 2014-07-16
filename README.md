@@ -39,6 +39,6 @@ And if something goes wrong?
 The best way to submit an issue is to use the [TBC-DB Forums At:][1].
 
 
-[1]: www.udb.no-ip.org "UDB/TBC-DB Forums"
+[1]: http://udb.no-ip.org "UDB/TBC-DB Forums"
 
 
