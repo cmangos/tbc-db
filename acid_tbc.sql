@@ -33302,7 +33302,5 @@ UPDATE creature_ai_scripts SET `action1_param1` = '1' WHERE action1_type = 5 AND
 UPDATE creature_ai_scripts SET `action2_param1` = '1' WHERE action2_type = 5 AND action2_param1 = 462;
 UPDATE creature_ai_scripts SET `action3_param1` = '1' WHERE action3_type = 5 AND action3_param1 = 462;
 
-
-
 -- EOF
 
