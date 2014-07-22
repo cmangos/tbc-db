@@ -228,22 +228,26 @@ ECHO -----------------------------------------------------------------------
 mysqladmin.exe --user=%User% --password=%Password% -f DROP %MangosDB%
 mysqladmin.exe --user=%User% --password=%Password% -f DROP %CharactersDB%
 mysqladmin.exe --user=%User% --password=%Password% -f DROP %ScriptDev2DB%
+ECHO.
 ECHO --------------------
 ECHO CREATE NEW DATABASES
 ECHO --------------------
 mysqladmin.exe --user=%User% --password=%Password% CREATE %MangosDB%
 mysqladmin.exe --user=%User% --password=%Password% CREATE %CharactersDB%
 mysqladmin.exe --user=%User% --password=%Password% CREATE %ScriptDev2DB%
+ECHO.
 ECHO -----------------------------------------------------
 ECHO IMPORT BASE DATA INTO DATABASES - NO CONTENT INCLUDED
 ECHO -----------------------------------------------------
 mysql.exe --user=%User% --password=%Password% %MangosDB% < %Mangos%\sql\mangos.sql
 mysql.exe --user=%User% --password=%Password% %CharactersDB% < %Mangos%\sql\characters.sql
 mysql.exe --user=%User% --password=%Password% %ScriptDev2DB% < %SD2%\sql\scriptdev2_create_structure_mysql.sql
+ECHO.
 ECHO --------------------
 ECHO REMOVE OLD SQL FILES
 ECHO --------------------
 RD /S /Q Temp_Created_Files
+ECHO.
 ECHO ------------------------------------------------------------------------
 ECHO DATABASES HAVE BEEN RESTORED TO ORIGINAL EMPTY STATE - READY FOR CONTENT
 ECHO (PRESS ANY KEY TO RETURN TO THE MAIN MENU)
@@ -298,11 +302,13 @@ ECHO PLEASE BE PATIENT WHILE NEW DATA IS IMPORTING TO THE DATABASES
 ECHO --------------------------------------------------------------
 mysql.exe --user=%User% --password=%Password% %MangosDB% < %CurrentVersion%_FULL.sql
 mysql.exe --user=%User% --password=%Password% %ScriptDev2DB% < %SD2%\sql\scriptdev2_script_full.sql
+ECHO.
 ECHO --------------------
 ECHO REMOVE OLD SQL FILES
 ECHO --------------------
 del /s %CurrentVersion%_FULL.sql
 RD /S /Q Temp_Created_Files
+ECHO.
 ECHO -------------------------------------------------------------------
 ECHO CONGRATULATIONS - BRAND NEW INSTALLATION IS NOW COMPLETE USING 
 ECHO THE DEFAULT DATABASE NAMES AND DATABASE USERNAMES. MAKE SURE YOU
