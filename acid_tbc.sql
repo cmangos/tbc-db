@@ -14384,8 +14384,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lurking Shark (23928) - NSR
 -- Gavis Greyshield      
 ('2394101','23941','2','0','100','0','20','0','0','0','1','-992','0','0','24','0','0','0','23','1','0','0','Gavis Greyshield -  Say and Set Phase 1 at 20% HP'),
-('2394102','23941','21','5','100','0','0','0','0','0','2','35','0','0','1','-993','0','0','23','1','0','0','Gavis Greyshield - Become Friendly and Say and Set Phase 2 on Reach Home (Phase 1)'),
-('2394103','23941','1','3','100','1','120000','120000','120000','120000','2','54','0','0','22','0','0','0','0','0','0','0','Gavis Greyshield - Become Hostile After 2 Minutes OOC and Set Phase 0 (Phase 2)'),
+('2394102','23941','21','5','100','0','0','0','0','0','11','42660','0','16','2','35','0','0','1','-993','0','0','Gavis Greyshield - Cast Gavis Greyshield Credit and Become Friendly and Say on Reach Home (Phase 1)'),
+('2394103','23941','21','5','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Gavis Greyshield - Set Phase 2 on Reach Home (Phase 1)'),
+('2394104','23941','1','3','100','1','120000','120000','120000','120000','2','54','0','0','22','0','0','0','0','0','0','0','Gavis Greyshield - Become Hostile After 2 Minutes OOC and Set Phase 0 (Phase 2)'),
 -- Andello Porter (23942) - NSR
 -- Lieutenant Nath (23949) - NSR
 -- Lieutenant Khand (23950) - NSR
