@@ -18866,8 +18866,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1687602','16876','2','0','100','0','50','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Bonechewer Mutant - Cast Enrage at 50% HP'),
 ('1687603','16876','2','0','100','0','20','0','0','0','11','34114','0','1','1','-149','0','0','0','0','0','0','Bonechewer Mutant - Cast Instability at 20% HP'),
 -- Shattered Hand Berserker (3.0.3 Official Data - Logs Only)
-('1687801','16878','4','0','60','0','0','0','0','0','11','35570','1','0','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Cast Charge on Aggro'),
-('1687802','16878','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Shattered Hand Berserker - Cast Enrage at 30% HP'),
+('1687801','16878','1','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Set Phase 1 on Spawn'),
+('1687802','16878','4','0','60','0','0','0','0','0','11','35570','1','0','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Cast Charge on Aggro'),
+('1687803','16878','8','5','100','0','39184','-1','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Set Phase 2 On Anchorite Contrition Spellhit (Phase 1)'),
+('1687804','16878','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Shattered Hand Berserker - Cast Enrage at 30% HP'),
+('1687805','16878','6','3','100','0','0','0','0','0','12','22454','0','120000','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Cast Summon Fel Spirit On Death (Phase 2)'),
 -- Hulking Helboar
 ('1688001','16880','4','0','100','0','0','0','0','0','11','33909','0','0','0','0','0','0','0','0','0','0','Hulking Helboar - Cast Hulk on Aggro'),
 ('1688002','16880','8','0','100','0','34665','-1','0','0','16','16880','34665','6','0','0','0','0','0','0','0','0','Hulking Helboar - Quest Credit on Administer Antidote Spellhit (Quest: 10255)'),
@@ -19258,6 +19261,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2237411','22374','2','0','100','0','30','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Hand of Kargath - Cast Toughen at 30% HP'),
 ('2237412','22374','2','0','100','0','20','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Hand of Kargath - Cast Toughen at 20% HP'),
 ('2237413','22374','2','0','100','0','10','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Hand of Kargath - Cast Toughen at 10% HP'),
+-- Anchorite Relic Bunny (More Research Required - This Does Not Seem Proper Way - Require Sniff Data To Understand)
+-- ('2244401','22444','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - Prevent Combat Movement On Spawn'),
+-- ('2244402','22444','1','0','100','0','2000','2000','0','0','11','39184','0','1','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - Cast Anchorite Contrition OOC'),
 -- Felblood Initiate
 ('2491801','24918','0','0','100','1','4000','6000','7000','9000','11','14873','1','0','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Sinister Strike'),
 ('2491802','24918','0','0','100','1','17000','22000','20000','26000','11','29098','1','1','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Bitter Withdrawal'),
