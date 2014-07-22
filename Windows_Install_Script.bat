@@ -23,9 +23,9 @@ ECHO (MYSQL INSTALL MUST SUPPORT BIN PATH FOR COMMAND PROMPT FUNCTIONS)
 ECHO =====================================================================
 ECHO.
 :MENU
-ECHO .......................................
-ECHO Choose Preferred Installation Option 
-ECHO .......................................
+ECHO ...........................................................................
+ECHO Choose Preferred Installation Option - (If Updating Option #1 Is Suggested)
+ECHO ...........................................................................
 ECHO.
 ECHO 1 - TBC-DB Full Database Install with Newest Data and Latest SD2 and ACID
 ECHO 2 - TBC-DB Full Database From Older Stable Release and Latest SD2 and ACID
@@ -155,15 +155,18 @@ copy /a %SD2%\sql\mangos_scriptname_full.sql /b Temp_Created_Files\012_SD2_Full.
 copy /a %ACID%\acid_tbc.sql /b Temp_Created_Files\013_ACID_TBC.sql
 copy /a Temp_Created_Files\*.sql /b %CurrentVersion%_FULL.sql
 RD /S /Q Temp_Created_Files
+ECHO.
 ECHO --------------------------------------------------------------
 ECHO PLEASE BE PATIENT WHILE NEW DATA IS IMPORTING TO THE DATABASES
 ECHO --------------------------------------------------------------
 mysql.exe --user=%User% --password=%Password% %MangosDB% < %CurrentVersion%_FULL.sql
 mysql.exe --user=%User% --password=%Password% %ScriptDev2DB% < %SD2%\sql\scriptdev2_script_full.sql
+ECHO.
 ECHO --------------------
 ECHO REMOVE OLD SQL FILES
 ECHO --------------------
 del /s %CurrentVersion%_FULL.sql
+ECHO.
 ECHO -------------------------------------------------------------------
 ECHO DATABASE UPDATES ARE COMPLETE - PRESS ANY KEY TO RETURN TO THE MENU
 ECHO -------------------------------------------------------------------
@@ -191,15 +194,18 @@ copy /a %SD2%\sql\mangos_scriptname_full.sql /b Temp_Created_Files\012_SD2_Full.
 copy /a %ACID%\acid_tbc.sql /b Temp_Created_Files\013_ACID_TBC.sql
 copy /a Temp_Created_Files\*.sql /b %StableVersion%_FULL_STABLE.sql
 RD /S /Q Temp_Created_Files
+ECHO.
 ECHO --------------------------------------------------------------
 ECHO PLEASE BE PATIENT WHILE NEW DATA IS IMPORTING TO THE DATABASES
 ECHO --------------------------------------------------------------
 mysql.exe --user=%User% --password=%Password% %MangosDB% < %StableVersion%_FULL_STABLE.sql
 mysql.exe --user=%User% --password=%Password% %ScriptDev2DB% < %SD2%\sql\scriptdev2_script_full.sql
+ECHO.
 ECHO --------------------
 ECHO REMOVE OLD SQL FILES
 ECHO --------------------
 del /s %StableVersion%_FULL_STABLE.sql
+ECHO.
 ECHO -------------------------------------------------------------------
 ECHO DATABASE UPDATES ARE COMPLETE - PRESS ANY KEY TO RETURN TO THE MENU
 ECHO -------------------------------------------------------------------
