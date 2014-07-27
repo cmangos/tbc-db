@@ -14,8 +14,8 @@ SET ScriptDev2DB="scriptdev2"
 REM ##################################################################################################
 REM DO NOT EDIT ANYTHING BELOW THIS LINE - ALL CONFIGURATION REQUIRED LOCATED IN INSTALL_SCRIPT_Config
 REM ##################################################################################################
-SET CurrentVersion="1.4.1"
-SET StableVersion="1.4.1"
+SET CurrentVersion="1.4.3"
+SET StableVersion="1.4.2"
 CLS
 ECHO =====================================================================
 ECHO TBC-DB INSTALLATION HELPER SCRIPT - SIMPLIFIED MANAGEMENT FOR USERS
@@ -149,6 +149,8 @@ ECHO ---------------------------------------------------------------
 copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\000_TBCDB_Full.sql
 copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\001_TBCDB_Updates.sql
 copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
 copy /a Updates\*.sql /b Temp_Created_Files\010_TBCDB_NewData.sql
 copy /a %SD2%\sql\mangos_scriptname_clear.sql /b Temp_Created_Files\011_SD2_Clear.sql
 copy /a %SD2%\sql\mangos_scriptname_full.sql /b Temp_Created_Files\012_SD2_Full.sql
@@ -170,6 +172,7 @@ ECHO.
 ECHO -------------------------------------------------------------------
 ECHO DATABASE UPDATES ARE COMPLETE - PRESS ANY KEY TO RETURN TO THE MENU
 ECHO -------------------------------------------------------------------
+ECHO.
 PAUSE
 CLS
 GOTO MENU
@@ -189,6 +192,8 @@ ECHO ---------------------------------------------------------------------------
 copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\000_TBCDB_Full.sql
 copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\001_TBCDB_Updates.sql
 copy /a Current_Release\Updates\1.4.1_updatepack_*.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
 copy /a %SD2%\sql\mangos_scriptname_clear.sql /b Temp_Created_Files\011_SD2_Clear.sql
 copy /a %SD2%\sql\mangos_scriptname_full.sql /b Temp_Created_Files\012_SD2_Full.sql
 copy /a %ACID%\acid_tbc.sql /b Temp_Created_Files\013_ACID_TBC.sql
@@ -209,6 +214,7 @@ ECHO.
 ECHO -------------------------------------------------------------------
 ECHO DATABASE UPDATES ARE COMPLETE - PRESS ANY KEY TO RETURN TO THE MENU
 ECHO -------------------------------------------------------------------
+ECHO.
 PAUSE
 CLS
 GOTO MENU
@@ -222,9 +228,9 @@ ECHO --------------------
 RD /S /Q Temp_Created_Files
 MD Temp_Created_Files
 ECHO.
-ECHO -----------------------------------------------------------------------
-ECHO DELETE GAME DATABASES AND THEN RE-CREATE THEM AND IMPORT PROPER DATA
-ECHO -----------------------------------------------------------------------
+ECHO -------------------------------------------------------------------
+ECHO DELETE GAME DATABASES AND THEN RE-CREATE THEM TO IMPORT PROPER DATA
+ECHO -------------------------------------------------------------------
 mysqladmin.exe --user=%User% --password=%Password% -f DROP %MangosDB%
 mysqladmin.exe --user=%User% --password=%Password% -f DROP %CharactersDB%
 mysqladmin.exe --user=%User% --password=%Password% -f DROP %ScriptDev2DB%
@@ -252,6 +258,7 @@ ECHO ------------------------------------------------------------------------
 ECHO DATABASES HAVE BEEN RESTORED TO ORIGINAL EMPTY STATE - READY FOR CONTENT
 ECHO (PRESS ANY KEY TO RETURN TO THE MAIN MENU)
 ECHO ------------------------------------------------------------------------
+ECHO.
 PAUSE
 CLS
 GOTO MENU
@@ -290,6 +297,8 @@ ECHO ---------------------------------------------------------------
 copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\000_TBCDB_Full.sql
 copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\001_TBCDB_Updates.sql
 copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
 copy /a Updates\*.sql /b Temp_Created_Files\010_TBCDB_NewData.sql
 copy /a %SD2%\sql\mangos_scriptname_clear.sql /b Temp_Created_Files\011_SD2_Clear.sql
 copy /a %SD2%\sql\mangos_scriptname_full.sql /b Temp_Created_Files\012_SD2_Full.sql
@@ -354,6 +363,8 @@ ECHO IF YOU HAVE UPDATED YOUR TBC-DB DATABASE MAKE SURE THAT
 ECHO YOU REMEMBER TO COMPILE YOUR UPDATED CMANGOS AND SD2
 ECHO CODE TO COMPLETE THE UPGRADE, FAILURE TO DO SO WILL
 ECHO CAUSE YOU MORE HEADACHES THEN IT IS WORTH AND FAILURE!
+ECHO YOU MUST ALSO MANUALLY IMPORT ANY REALMD AND CHARACTERS
+ECHO DB UPDATES (ONLY YOUR MANGOS/WORLD DB WAS UPDATED!!!
 ECHO.
 ECHO -------------------------------------------------------
 ECHO THANK YOU FOR FLYING WITH US AND HOPE TO SEE YOU AGAIN

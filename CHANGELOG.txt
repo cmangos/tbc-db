@@ -1,0 +1,284 @@
+-- ==================================================================
+-- TBC-DB UPDATE PACK 1.4.2 "WORK MUST GO ON!" FOR CMANGOS-TBC s2120+
+-- ==================================================================
+-- VARIOUS DB FIXES / QUEST IMPLEMENTATIONS / NPC WAYPOINT IMPLEMENTATIONS
+-- OVERHAUL DUNGEON: TEMPEST KEEP: THE MECHANAR
+-- OVERHAUL DUNGEON: TEMPEST KEEP: THE BOTANICA
+-- OVERHAUL DUNGEON: TEMPEST KEEP: THE ARCATRAZ
+-- OVERHAUL DUNGEON: HELLFIRE CITADEL: HELLFIRE RAMPARTS
+-- FIX TBC DUNGEON PORTAL SPAWNS (NORMAL/HEROIC)
+-- INTRODUCED UPDATED WINDOWS INSTALLATION SCRIPT (HIGHLY RECCOEMNDED TO USE)
+-- STATS SYSTEM RELATED ERRORS ARE NOT FIXED WITH THIS RELEASE (COMING WITH 1.4.3)
+
+
+-- ==========================================================================
+-- TBC-DB UPDATE PACK 1.4.1 "IT'S A DUNGEON GOOD TIME" FOR CMANGOS-TBC s2034+
+-- ==========================================================================
+-- Fix a wrong/overlapping string issue in the scripts for quest 114 and 308.
+-- Converted Spell_Area data to use conditions.
+-- More Uldaman fixes: add Ironaya event + fix 'Stoned' aura used by NPCs in the Archaedas encounter.
+-- Add missing data for all TBC Instance Portals.
+-- Added missing creature and gameobject spawns for the following Dungeons and Raids: Naxxramas, Dire Maul, Blackrock Spire, Karazhan, Onyxia, Ahn'Qiraj.
+-- Added missing Midsummer event spawns in Slave Pens
+-- Fixed a lot of dungeon doors and other gameobject factions, flags and orientation in various dungeons.
+-- Added support for Simon Game event.
+-- Added support for Zul'Farrak pyramid event.
+-- Added support for the Karazhan Chess event.
+-- Fixed various spawns and script issues in dungeons.
+-- Added Latest SD2 s2753 Data
+-- Added Latest TBC ACID Data
+
+
+-- =========================================================================================
+-- TBC-DB UPDATE PACK 1.3.1 / FULL RELEASE 1.4.0 "OUR HAPPY HARDCORE" FOR CMANGOS-TBC s1982+
+-- =========================================================================================
+-- Implemented missing "Orb of the Blue Flight" gameobjects
+-- Improvements for Sunwell Plateau instance
+-- Improvements for Magtheridon's Lair instance
+-- Major improvements for Blackwing Lair instance (thanks UDB team)
+-- Improvements for quests 1126, 1221, 6651, 9164, 9689, 9948, 10309, 10458, 10518 (thanks UDB team)
+-- Implement Alchemy trainers, mount vendors and Darkmoon Faire vendors by database (thanks YTDB and UDB teams)
+-- Implement missing gameobject spawns in Eye of the Storm and Arathi Basin battlegrounds
+-- Implement missing gameobject spawns in Shadowmoon Valley (thanks UDB team)
+-- Implement missing creature spawns in Ruins of Ahn'qiraj (thanks UDB team)
+-- Fixed a few regressions in earlier releases.
+-- Initial fill of the 'conditions' table - converting all conditions used in gossip and loot.
+-- Added lots of gossip to cover for gossip scripts removed from ScriptDev2.
+-- Improvements for Grandmaster Vorpil.
+-- Improvements for Buru the Gorger.
+-- Improvements for Hungarfen.
+-- Improvements for Warp Splinter.
+-- Improvements for Magtheridon.
+-- Improvements for Ouro (AQ40).
+-- Improvements for Jan'alai (Zul'Aman).
+-- Added hard-mode loot for Zul'Aman.
+-- Creature linking for Moroes (Karazhan).
+-- Updated Arcatraz entrance event.
+-- Major improvement for the Dark Portal instance.
+-- Improvements for several BRD quests. Support for quests 4322, "Jail Break!", and 4083, "The Spectral Chalice".
+-- Improvements for quest 10588, "The Cipher of Damnation".
+-- Support for quest 6402, "Stormwind Rendezvous" (Onyxia chain).
+-- Uldaman improvements.
+-- Various small improvements.
+-- Creature_Equip_Template Cleanup / Conversion / Implementation (351 - 1006)
+-- Latest ACID 2.0.7 Included
+-- SD2 s2720 Included
+
+
+-- ======================================================================================
+-- TBC-DB UPDATE PACK 1.2.2 / FULL RELEASE 1.3.0 "TO HELL AND BACK" FOR MaNGOS ONE s1749+
+-- ======================================================================================
+-- MANGOS ONE DB COMMIT BACKPORTS
+-- BACKPORT MISSING CREATURE_TEMPLATE_ADDON ENTRIES FROM UDB
+-- BACKPORT CREATURE_TEMPLATE INHABIT TYPE FROM UDB
+-- BACKPORT CREATURE_TEMPLATE MECHANIC_IMMUNE_MASK DATA FROM UDB AND SALJA
+-- BACKPORT CREATURE_TEMPLATE SCALE DATA FROM UDB
+-- BACKPORT CREATURE_TEMPLATE RUN SPEED DATA FROM UDB
+-- BACKPORT CREATURE_TEMPLATE WALK SPEED DATA FROM UDB
+-- CREATURE LINKING TEMPLATE DATA - THANKS XFURRY
+-- VARIOUS MISC DATABASE FIXES
+-- IMPLEMENT MORE SPELL SCRIPT TARGET ENTIRES - THANKS XFURRY
+-- VARIOUS CREATURE AND GAMEOBJECT FIXES - THANKS XFURRY
+-- BACKPORT MISC FIXES FROM MANGOS ONE DB - THANKS SALJA
+-- VARIOUS FIXES FROM XFURRY AND SALJA
+-- FIX GOSSIP FOR TRAUMA SURGEONS (NPC: 12920 AND 23939) - THANKS SHLAINN
+-- FIX QUEST TEXT FOR QUEST: 3181 "THE HORN OF THE BEAST" - THANKS SHLAINN
+-- FIX LOOT FOR QUEST: 943 "THE ABSENT MINDED PROSPECTOR" - THANKS SHLAINN
+-- FIX QUEST TEXT FOR QUEST: 10203 "INVALUABLE ASSET ZAPPING" - THANKS SHLAINN
+-- CAVERNS OF TIME: OLD HILLSBRAD FOOTHILLS IMPROVEMENTS - PART OF SD2 2695 - THANKS XFURRY
+-- FIX WARBRINGER OMROGG - SHATTERED HALLS - THANKS XFURRY
+-- CREATURE LINKING IMPROVEMENTS - THANKS XFURRY
+-- IMPROVEMENTS FOR TEMPEST KEEP: ARCATRAZ - THANKS XFURRY
+-- IMPROVEMENTS FOR TEMPEST KEEP: MECHANAR - THANKS XFURRY
+-- IMPROVEMENTS FOR BOSS C'THUN IN TEMPLE OF AHN`QIRAJ - THANKS XFURRY
+-- IMPROVEMENTS FOR BOSS OURO IN TEMPLE OF AHN`QIRAJ - THANKS XFURRY
+-- IMPROVEMENTS FOR KARAZHAN - THANKS XFURRY
+-- ADD MISSING GOSSIP FOR JANA PROUDMORE (QUEST: 11222 "PROOF OF TREACHERY") - INFERNOS
+-- OUTDOOR PVP FIXES - (THANKS XFURRY AND SALJA)
+-- FIX SOME COMMENT TYPO'S - THANKS LORDPSYAN
+-- FIXES FOR PRINCE MALCHEZAAR - KARAZHAN - THANKS XFURRY
+-- UPDATES FOR SHADE OF ARAN - KARAZHAN - THANKS XFURRY
+-- UPDATES FOR TERESTIAN - KARAZHAN - THANKS XFURRY
+-- UPDATE QUEST EMOTE DATA - BACKPORTED FROM UDB
+-- UPDATE QUEST INCOMPLETE EMOTES - BACKPORTED FROM UDB
+-- UPDATE QUEST DETAILS EMOTES - BACKPORTED FROM UDB
+-- UPDATE GAME EVENT SCHEDULE FOR 2012 (AS PER DISCUSSIONS IT WAS DECIDED WE WILL MAINTIAN SCHEDULE TO MATCH OFFICIAL ANNUALLY)
+-- FIX WEBBED CREATURE MOVEMENT IN BLOODMYST ISLE - THANKS MARK FOR THE REPORT
+-- UDB 405 BACKPORTS - THANKS SALJA
+-- NPC VENDOR TO TEMPLATE CONVERSION AND IMPLEMENTATION - MASSIVE THANK YOU TO SCHLAINN FOR AN OUTSTANDING EFFORT
+-- MORE RANDOM DATABASE FIXES
+-- SHLAINN'S MANGOS ONE DB BACKPORTS TO SYNC UP ALL REMAINING PRE-COOPERATION BACKPORTS (THANKS SHLAINN AND SALJA)
+-- XFURRY'S COLLECTION OF FIXES INCLUDING BLACK TEMPLE
+
+
+-- ================================================================
+-- TBC-DB UPDATE PACK 1.2.1 "WINTER VEIL FUN" FOR MaNGOS ONE s1434+
+-- ================================================================
+-- IMPLEMENT MORE SPELL SCRIPT TARGET DATA
+-- IMPLEMENT MORE SPELL TARGET POSITION DATA
+-- CHILDREN'S WEEK GAME EVENT FIXES
+-- LOTS AND LOTS OF VARIOUS MISC DATABASE FIXES AND QUEST IMPLEMENTATIONS
+-- IMPLEMENT GANDLING EVENT IN SCHOLOMANCE
+-- FIX AND IMPROVE THE STABILIZE SUN GATE EVENTS
+-- ADDITIONAL LOOT DATA FOR SHATTERED HALLS BOSSES THAT INCLUDES DATA FROM WINTER VEIL PATCH
+-- SUNWELL PLATEAU BOSS HEALTH AND MANA FIXES (2.4.3 Data)
+-- ADD MISSING SPELL SCRIPT TARGET ENTRIES FOR ONYXIA
+-- ADD SOME MISSING GRAVEYARDS
+-- NPC WAYPOINT AND MOVEMENT FIXES/IMPROVEMENTS
+-- SKILL LEVEL REQUIREMENT FIX FOR FIRST AID TRAINERS
+-- IMPLEMENT QUEST: 970 - "THE TOWER OF ALTHALAXX" QUEST END SCRIPTS
+-- IMPLEMENT QUEST: 502 - "ELIXIR OF PAIN" QUEST END SCRIPTS
+-- IMPLEMENT QUEST: 411 - "THE PRODIGAL LICH RETURNS" QUEST END SCRIPTS
+-- IMPLEMENT QUEST: 1064 - "FORSAKEN AID" QUEST START SCRIPTS
+-- IMPLEMENT QUEST: 3922 - "NUGGET SLUGS" QUEST END SCRIPTS
+-- UPDATE AND IMPROVE SCRIPTS FOR AXLE'S EVENT IN DUSTWALLOW MARSH
+-- GOSSIP SCRIPTS WERE REMOVED FROM SD2 AND ARE NOW RE-IMPLIMENTED AS PART OF DB PROJECT - SEE SD2 COMMIT 2320
+-- GENERAL NPC LINKING
+-- WINTER VEIL GAME EVENT OVERHAUL (MAJOR FIXES AND IMPLEMENTATIONS)
+-- CORRECT AND IMPLEMENT SUNWELL PLATEAU NPC IMMUNITY MASKS
+-- NAXXRAMAS FIXES AND IMPROVEMENTS
+-- CREATURE_EQUIP_TEMPLATE CLEANUP / CONVERSION / IMPLIMENTATION (151 - 350)
+
+
+-- ===============================================================================
+-- TBC-DB UPDATE PACK 1.1.2 / FULL RELEASE 1.2.0 "SUPERNOVA" FOR MaNGOS ONE s1409+
+-- ===============================================================================
+-- REMOVAL OF DUPLICATE OR INCORRECT GAMEOBJECT SPAWNS
+-- FIX MISC GAMEOBJECT ROTATION VALUES
+-- ADD MISSING GAMEOBJECT ENTRIES AND RELATED SPAWNS FOR QUEST: 5097 (ALL ALONG THE WATCHTOWERS)
+-- VARIOUS SMALL FIXES FOR THE DEADMINES
+-- FIX SPAWNMASK OF RECENTLY ADDED ALTERAC VALLEY GAMEOBJECT SPAWNS
+-- FIX OZZIE TOGGLEVOLT MODEL_ID TO BE CORRECT
+-- CREATURE_EQUIP_TEMPLATE CLEANUP / CONVERSION / IMPLIMENTATION - (TEMPLATE ID'S 1-150 + 277/1874)
+-- INCLUDED ACID 2.0.6 SPECIAL EDITION RELEASE (ADDED A FEW MINOR FIXES SINCE 2.0.6 RELEASE)
+
+
+-- ======================================================================
+-- TBC-DB UPDATE PACK 1.1.1 "RETURN OF THE CRUSADE" FOR MaNGOS ONE s1357+
+-- ======================================================================
+-- PROFESSION TRAINER SPELL ID FIXES
+-- ADD 2 MISSING SHAMAN TRAINER SPELLS (MAIL ARMOR AND HEROISM)
+-- COMPLETE WORLD NPC CLASS TRAINER TEMPLATE IMPLIMENTATION
+-- SPELL SCRIPT TARGET UPDATES
+-- HELLFIRE RAMPARTS COMPLETE UPDATE (NPC SPAWN FIXES/ADDITIONS/WAYPOINT MOVEMENT)
+-- GHOSTLANDS MISSING NPC SPAWN DATA
+-- FIX RIZZLE SPRYSPROCKET FACTION AND MODEL (QUEST: 10994)
+-- FIX FACTION OF 3 INJURED NPC's INVOLVED IN TRIAGE QUEST (QUEST: 6624)
+-- ADDED MISSING CHEST OF THE SEVEN SPAWN FROM BLACKROCK DEPTHS
+-- ADDED MISSING DOOR SPAWNS FOR HELLFIRE CITADEL: THE SHATTERED HALLS (BACKPORTED FROM UDB 401)
+-- ADDED VARIOUS MISSING GAMEOBJECT SPAWNS FOR AUCHINDOUN: SETHEKK HALLS (BACKPORTED FROM UDB 401)
+-- ADDED A FEW MISSING GAMEOBJECT SPAWNS IN COILFANG RESERVOIR: THE STEAMVAULT (BACKPORTED FROM UDB 401)
+-- ADDED MISSING GAMEOBJECT SPAWNS IN KARAZHAN (BACKPORTED FROM UDB 401)
+-- ADDED MISSING CAGE SPAWN IN STRATHHOLME (BACKPORTED FROM UDB 401)
+-- ADDED MISSING GAMEOBJECT SPAWNS FOR MOLTEN CORE (BACKPORTED FROM UDB 401)
+-- ADDED MISSING CACHE OF THE LEGION GAMEOBJECT SPAWN FROM TEMPEST KEEP: THE MECHANAR (BACKPORTED FROM UDB 401)
+-- ADDED MISSING GAMEOBJECT SPAWNS FOR SUNKEN TEMPLE (BACKPORTED FROM UDB 401 AND 402)
+-- REMOVED SEVERAL INCORRECTLY SPAWNED NPC'S (BACKPORTED FROM UDB 402)
+-- ADD MISSING CELL DOOR LEVER IN HELLFIRE CITADEL: THE BLOOD FURNACE (BACKPORTED FROM UDB 402)
+-- ADD MISSING BELNISTRASZ'S BRAZIER SPAWN IN RAZORFEN DOWNS (BACKPORTED FROM UDB 402)
+-- ADD MISSING QUEST NPC SPAWNS IN ZUL'AMAN (HARKOR,ASHLI,KRAZ) (BACKPORTED FROM UDB 402)
+-- GAMEOBJECT ROTATION2 VALUE CALCULATION FIXES
+-- ACID 2.0.5 INCLUDED (FIXED MISSING AINAME FIELD ENTRIES)
+
+
+-- ========================================================================================
+-- TBC-DB UPDATE PACK 1.0.5 / FULL RELEASE 1.1.0 "A SOLID FOUNDATION" FOR MaNGOS ONE s1153+
+-- ========================================================================================
+-- More Updates and Improvements to Game Events Schedule
+-- Improvements For Nazan and Vazruden Encounter in Hellfire Ramparts (Requires Major Improvements To SD2 Scripts and Possibly Core Support)
+-- The Deadmines NPC Stats/Damage Fixes and Updates (2.3.0 Official Bestiary Data) - Looking For Player Feedback Before Working On Other Dungeons
+-- The Deadmines Improved NPC Creature Template Spell Data
+-- Shadowfang Keep NPC Stats/Damage Fixes and Updates (2.3.0 Official Bestiary Data) - Looking For Player Feedback Before Working On Other Dungeons
+-- Shadowfang Keep Improved NPC Creature Template Spell Data
+-- Shadowfang Keep Waypoint Movement Improvements/Backports
+-- The Stockade NPC Stats/Damage Fixes and Updates (2.3.0 Official Bestiary Data) - Looking For Player Feedback Before Working On Other Dungeons
+-- The Stockade Improved NPC Creature Template Spell Data
+-- NPC Class/Pet Trainer Template Implementation (Data Conversion and Implementation From NPC Trainer Data)
+-- NPC Profession Trainer Template Implementation (Data Conversion/Implementation + Spell Fixes to PROPER Profession Learning Spell ID's)
+-- Darkmoon Faire Elwynn Forest - Additions / Improvements / Implementations
+-- Improvements and Further Implementation of L70ETC Concert in World's End Tavern (Shattrath City) and Grim Guzzler (Blackrock Depths)
+-- Fix For Quest 8346 "Thirst Unending" (Hotfix: Updated ACID Scripts) - This Fix Will Be Included in ACID 2.0.6
+-- Call to Arms: Alterac Valley! (Updated and Proper Implementation) -> A Few Banners Might Need Orientation Fixes/Tweaks
+-- Call to Arms: Warsong Gulch! (Updated and Proper Implementation) -> A Few Banners Might Need Orientation Fixes/Tweaks
+-- Call to Arms: Arathi Basin! (Updated and Proper Implementation) -> A Few Banners Might Need Orientation Fixes/Tweaks
+-- Call to Arms: Eye of the Storm! (Updated and Proper Implementation) -> A Few Banners Might Need Orientation Fixes/Tweaks
+-- Various High GUID RE-GUID Cleanups in effort to better streamline the DB
+-- Re-GUID Recently Added Battlegrounds NPC's to better streamline the DB
+-- Implemented Stockades Jail Break Game Event in Stormwind City Every Half Hour
+-- Update Dynamic Quests to Allow Special Race/Class/Profession Specific Quests To Always Be Attainable Regardless Of Player Level
+-- Remove More WOTLK Point of Interest Data
+-- Add Missing Blackwing Lair Gameobject Spawns
+-- Add Missing Zul'Aman Gameobject Spawns
+-- Add Missing Ruins of Ahn'Qiraj (AQ40) Gameobject Spawns
+-- Slave Pens - Mid-Summer Fire Festival Gameobject Additions and Fixes
+-- Major Rework and Improvements to Gossip Menu Data (Including Backported Data from UDB 399/400 and Fixes by Yazdonline)
+-- Corrected Gossip Menu Option Data for Map Location Pin-Pointing and Fix Several Texts
+-- Implement (Dimension Ripper-Everlook / Ultrasafe Transporter: Gadgetzan / Dimensional Ripper-Area 52 / Ultrasafe Transporter-Toshley's Station)
+-- Major Gossip Updates / Improvements (Backported UDB 399) - There Is Most Likely Still WOTLK Content Embedded
+-- Fix POI Data From TBC-DB 1.0.4 Due To ICON Value Differences Between Mangos One and Mangos Master (Fix Tombstone Icon For POI on Mini-Map)
+-- Quest Template ReqSource Cleanup and Streamlining (Thanks Crackm)
+-- Gnomeregan: Grubbis Encounter Event Data Added (Thanks Schmoozerd)
+-- Blackrock Depths - Arena Event Cleanup and Implementation - (Special Thanks to Schmoozerd)
+-- Implement Automated SetInCombatWith Zone for Specific NPC's - (Special Thanks to Schmoozerd)
+-- Brewfest: Brew Of The Month Quest & Game Event Implementation (Year 1) - 2.4.3 -> 3.2.0 Version
+-- Backported UDB 399 Quest Related Emotes
+-- 1250 New Various Gameobject Spawns - (Backported Data From UDB 399)
+-- Complete Rare NPC Spawn Pool Implementation for Eastern Kingdom Including Staggered Spawn Times and NPC Movement
+-- Complete Rare NPC Spawn Pool Implementation for Outlands Including Staggered Spawn Times and NPC Movement
+-- Lots of Applicable Random UDB (397 - 400) Backported Data and Various Forum & Developer Fixes
+-- Includes Full SD2 2037 Mangos DB Data (Cleans Out All Previous C++ Scripted Data) - Warning Custom Scriptnames Will Be Removed
+-- Included ACID 2.0.5 Scripts
+-- Included SD2 Mangos Master -> Mangoes One Console Error Cleanup
+
+
+-- ===============================================================
+-- TBC-DB UPDATE PACK 1.0.4 "MOVING FORWARD" FOR MaNGOS ONE s0657+
+-- ===============================================================
+-- Added/Implemented Gossip and POI Data (Thanks Funkybit)
+-- Implemented 2.4.3 Reputation Award Rate Multipliers for Argent Dawn/Timbermaw Hold/Cenarion Circle
+-- Removed WOTLK POI Data
+-- Cleaned Up Some Redundant Model Entries
+-- Completely Updated Game Events based on Blizz 2011 Schedule
+-- Implement Pyrewood Village Nightly Events
+-- Implemented 2.4.3 Level 40 Riding Trainer Mail
+-- Updated Various Spell Tables Based on Backported UDB Data
+-- Implemented Perry Gatner and L70ETC Game Events at World's End Tavern in Shattrath City
+-- Several Forum Submissions from Members (Thank you very much!)
+-- Included SD2 1937 Full Update and TBC-DB Console Error Cleanup Update (For Your Convenience)
+
+
+-- ================================================================
+-- TBC-DB UPDATE PACK 1.0.3 "NEW BEGINNINGS" FOR MaNGOS 0.12 s0481+
+-- ================================================================
+-- Fixed Battlegrounds as required (Thanks For The Help Funkybit!).
+-- Added Point of Interest Data but still requires Gossip Data (Currently Work in Progress) To Function Properly.
+-- Fixed Various Console Errors and Provided Core Rollup Files for easy updating and allows Mangos to clean out SQL Updates Folder.
+-- This is more of a basic Service Pack that will lead up to 1.0.4 Update Pack Release in the Near Future (Providing More New Content).
+
+
+-- ==========================
+-- PRIOR TO UPDATE PACK 1.0.3
+-- ==========================
+-- A COUPLE MINOR COMMITS TO PREPARE FOR FIRST MAJOR RELEASE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
