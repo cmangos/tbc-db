@@ -1,8 +1,8 @@
--- =================================================================================
--- ====     ACID RELEASE 2.1.0 - FULL RELEASE FOR CMANGOS-TBC (2.4.3 CLIENT)    ====
--- =================================================================================
+-- ========================================================
+-- ====     ACID TBC FOR CMANGOS-TBC (2.4.3 CLIENT)    ====
+-- ========================================================
 
-/* Copyright (C) 2008 - 2013 ACID <http://www.scriptdev2.com/forums/6-ACID-Development>
+/* Copyright (C) 2008 - 2014 ACID <http://www.cmangos.net>
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
@@ -31,7 +31,7 @@ TRUNCATE creature_ai_texts;
 -- ===========================================
 -- Set Mangos ACID Release Version Information
 -- ===========================================
-UPDATE db_version SET `creature_ai_version` = 'ACID 2.1.0 \'Let The Show Carry On!\' - Full Release for CMaNGOS-TBC (2.4.3 Client)';
+UPDATE db_version SET `creature_ai_version` = 'ACID 2.4.3 (The Burning Crusades) for CMaNGOS-TBC (2.4.3 Client)';
 
 
 -- =======================
@@ -20584,14 +20584,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shattered Sun Magi
 ('2515301','25153','1','0','100','1','10000','90000','30000','90000','5','11','0','0','0','0','0','0','0','0','0','0','Shattered Sun Magi - Laugh Emote OOC'),
 ('2515302','25153','1','0','100','1','5000','25000','5000','25000','5','1','0','0','0','0','0','0','0','0','0','0','Shattered Sun Magi - Talk Emote OOC'),
--- Shattered Sun Trainee
--- ('2513401','25134','1','0','100','1','0','3000','3000','3000','10','36','43','54','0','0','0','0','0','0','0','0','Shattered Sun Trainee - Random Emote OOC'),
--- Shattered Sun Trainee
--- ('2513501','25135','1','0','100','1','0','3000','3000','3000','10','36','43','54','0','0','0','0','0','0','0','0','Shattered Sun Trainee - Random Emote OOC'),
--- Shattered Sun Trainee
--- ('2513601','25136','1','0','100','1','0','3000','3000','3000','10','36','43','54','0','0','0','0','0','0','0','0','Shattered Sun Trainee - Random Emote OOC'),
--- Shattered Sun Trainee
--- ('2513701','25137','1','0','100','1','0','3000','3000','3000','10','36','43','54','0','0','0','0','0','0','0','0','Shattered Sun Trainee - Random Emote OOC'),
 -- Shattered Sun Cleric
 ('2515501','25155','1','0','100','1','10000','90000','20000','70000','5','11','0','0','0','0','0','0','0','0','0','0','Shattered Sun Cleric - Laugh Emote OOC'),
 ('2515502','25155','1','0','100','1','5000','25000','5000','25000','5','1','0','0','0','0','0','0','0','0','0','0','Shattered Sun Cleric - Talk Emote OOC'),
