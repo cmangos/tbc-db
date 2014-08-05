@@ -191,7 +191,7 @@ ECHO BUILD FULL DB FROM MOST RECENT STABLE RELEASE OF TBC-DB AND CURRENT SD2/ACI
 ECHO ---------------------------------------------------------------------------------
 copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\000_TBCDB_Full.sql
 copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\001_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.1_updatepack_*.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
 copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
 copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
 copy /a %SD2%\sql\mangos_scriptname_clear.sql /b Temp_Created_Files\011_SD2_Clear.sql
