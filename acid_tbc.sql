@@ -20980,8 +20980,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2165007','21650','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Skettis Talonite - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Cabal Abjurist
 ('2166001','21660','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Cabal Abjurist - Prevent Combat Movement on Spawn'),
-('2166002','21660','4','0','100','0','0','0','0','0','11','34447','1','4','23','1','0','0','0','0','0','0','Cabal Abjurist - Cast Arcane Missiles and Set Phase 1 on Aggro'),
-('2166003','21660','9','5','100','1','0','40','2400','3800','11','34447','1','4','0','0','0','0','0','0','0','0','Cabal Abjurist - Cast Arcane Missiles (Phase 1)'),
+('2166002','21660','0','0','100','0','1000','1000','0','0','11','34447','1','0','23','1','0','0','0','0','0','0','Cabal Abjurist - Cast Arcane Missiles and Set Phase 1 on Aggro'),
+('2166003','21660','9','5','100','1','0','30','2400','3800','11','34447','1','0','0','0','0','0','0','0','0','0','Cabal Abjurist - Cast Arcane Missiles (Phase 1)'),
 ('2166004','21660','3','5','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Cabal Abjurist - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 ('2166005','21660','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Cabal Abjurist - Start Combat Movement at 35 Yards (Phase 1)'),
 ('2166006','21660','9','5','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Cabal Abjurist - Prevent Combat Movement at 15 Yards (Phase 1)'),
