@@ -20385,8 +20385,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2171702','21717','2','0','100','0','30','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Dragonmaw Wrangler - Cast Enrage at 30% HP'),
 -- Dragonmaw Subjugator
 ('2171801','21718','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Dragonmaw Subjugator - Prevent Combat Movement on Spawn'),
-('2171802','21718','4','0','100','0','0','0','0','0','11','9613','1','0','23','1','0','0','0','0','0','0','Dragonmaw Subjugator - Cast Shadow Bolt and Set Phase 1 on Aggro'),
-('2171803','21718','9','13','100','1','0','40','2400','3800','11','9613','1','0','0','0','0','0','0','0','0','0','Dragonmaw Subjugator - Cast Shadow Bolt (Phase 1)'),
+('2171802','21718','0','0','100','0','1000','1000','0','0','11','9613','1','0','23','1','0','0','0','0','0','0','Dragonmaw Subjugator - Cast Shadow Bolt and Set Phase 1 on Aggro'),
+('2171803','21718','9','13','100','1','0','30','2400','3800','11','9613','1','0','0','0','0','0','0','0','0','0','Dragonmaw Subjugator - Cast Shadow Bolt (Phase 1)'),
 ('2171804','21718','3','13','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Dragonmaw Subjugator - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 ('2171805','21718','9','13','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Subjugator - Start Combat Movement at 35 Yards (Phase 1)'),
 ('2171806','21718','9','13','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Dragonmaw Subjugator - Prevent Combat Movement at 15 Yards (Phase 1)'),
