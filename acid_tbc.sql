@@ -2221,7 +2221,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift Racing Ram (24463) - NSR
 -- Pol Amberstill (24468) - NSR
 -- Brewfest Reveler
-('2448401','24484','22','0','100','1','35','0','0','0','11','41586','6','0','0','0','0','0','0','0','0','0','Brewfest Reveler - Cast Brewfest Toast on Recieve Drink Emote'),
+('2448401','24484','1','0','75','1','3000','15000','12000','21000','10','92','153','1','0','0','0','0','0','0','0','0','Brewfest Reveler - Random Emotes OOC'),
+('2448402','24484','22','0','100','1','35','0','0','0','11','41586','6','0','0','0','0','0','0','0','0','0','Brewfest Reveler - Cast Brewfest Toast on Recieve Drink Emote'),
 -- Costumed Orphan Matron (24519) - NSR
 -- Ipfelkofer Ironkeg (24710) - NSR
 -- Dun Morogh Flame Warden (25895) - NSR
