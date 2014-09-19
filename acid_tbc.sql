@@ -2215,7 +2215,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dark Iron Guzzler (23709) - NSR
 -- Belbi Quikswitch (23710) - NSR
 -- Touring Orphan (23712) - NSR
--- Self-Turning and Oscillating Utility Target (24108) - NSR
+-- Self-Turning and Oscillating Utility Target (24108)
+('2410801','24108','8','0','100','1','42436','-1','500','500','5','34','0','0','11','47173','6','0','0','0','0','0','Self-Turning and Oscillating Utility Target - Emote and Cast Brewfest - Dark Iron Attack - Intro - Assign Kill Credit on Drink! Spellhit'),
 -- Flynn Firebrew (24364) - NSR
 -- Racing Ram (24462) - NSR
 -- Swift Racing Ram (24463) - NSR
