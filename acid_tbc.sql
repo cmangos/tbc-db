@@ -19722,7 +19722,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1954612','19546','2','0','100','0','15','0','0','0','22','3','0','0','0','0','0','0','0','0','0','0','Abjurist Belmara - Set Phase 3 at 15% HP'),
 ('1954613','19546','2','7','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Abjurist Belmara - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 ('1954614','19546','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Abjurist Belmara - Set Phase to 0 on Evade'),
--- Dimensius the All-Devouring (19554) - COMPLEX BOSS TYPE NPC (Will Script When I Get Time)
+-- Dimensius the All-Devouring (19554) - npc_dimensius
 -- Netherologist Coppernickels (19569) - NSR
 -- Rocket-Chief Fuselage (19570) - NSR
 -- Innkeeper Remi Dodoso (19571) - NSR
@@ -20166,8 +20166,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dealer Rashaad 20980 
 -- Dealer Najeeb 20981 
 -- Mutated Farahlon Lasher 20983 
--- Protectorate Defender 20984 
--- Captain Saeed 20985 
+-- Protectorate Defender
+('2098401','20984','30','0','100','0','5','20985','0','0','5','15','0','0','0','0','0','0','0','0','0','0','Protectorate Defender - Handle Emote on AI event received'),
+('2098402','20984','0','0','100','1','1000','2000','11000','15000','11','31553','1','0','0','0','0','0','0','0','0','0','Protectorate Defender - Cast Hamstring'),
+('2098403','20984','0','0','100','1','2000','3000','2000','4000','11','36500','4','0','0','0','0','0','0','0','0','0','Protectorate Defender - Cast Glaive'),
+-- Captain Saeed
+('2098501','20985','0','0','100','1','2000','3000','2000','4000','11','15496','1','0','0','0','0','0','0','0','0','0','Captain Saeed - Cast Cleave'),
 -- Dealer Sadaqat 20989 
 -- Azurebeak (3.0.3 Official Data - Logs Only)
 ('2100501','21005','0','0','100','1','9100','9100','11000','14000','11','31273','1','0','0','0','0','0','0','0','0','0','Azurebeak - Cast Screech'),
@@ -20194,8 +20198,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zixxy 21734 
 -- Chubis 21751 
 -- Spawn of Dimensius 21780 
--- Protectorate Regenerator 21783 
--- Protectorate Avenger 21805 
+-- Protectorate Regenerator
+('2178301','21783','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Protectorate Regenerator - Prevent Combat Movement on Spawn'),
+('2178302','21783','30','0','100','0','5','20985','0','0','5','15','0','0','0','0','0','0','0','0','0','0','Protectorate Regenerator - Handle Emote on AI event received'),
+('2178303','21783','0','0','100','1','1000','2000','3000','4000','11','34232','1','0','0','0','0','0','0','0','0','0','Protectorate Regenerator - Cast Holy Bolt'),
+('2178304','21783','9','0','100','1','15','20','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Protectorate Regenerator - Start Combat Movement on Range Check'),
+('2178305','21783','9','0','100','1','0','10','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Protectorate Regenerator - Prevent Combat Movement on Range Check'),
+-- Protectorate Avenger
+('2180501','21805','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Protectorate Avenger - Prevent Combat Movement on Spawn'),
+('2180502','21805','30','0','100','0','5','20985','0','0','5','15','0','0','0','0','0','0','0','0','0','0','Protectorate Avenger - Handle Emote on AI event received'),
+('2180503','21805','0','0','100','1','2000','3000','4000','8000','11','36500','1','0','0','0','0','0','0','0','0','0','Protectorate Avenger  - Cast Glaive'),
+('2180504','21805','9','0','100','1','15','25','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Protectorate Avenger - Start Combat Movement on Range Check'),
+('2180505','21805','9','0','100','1','0','20','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Protectorate Avenger - Prevent Combat Movement on Range Check'),
 -- Terrorguard Protector 21923 
 -- Avatar of Sathal 21925 
 -- Area 52 Death Machine 21976 
@@ -30275,7 +30289,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- M'uru (25741) - boss_muru
 -- Dark Fiend
 ('2574401','25744','11','0','100','2','0','0','0','0','11','45769','0','0','11','45934','0','0','0','0','0','0','Dark Fiend - Cast Sunwell Radiance and Cast Dark Fiend on Spawn'),
-('2574402','25744','9','0','100','2','0','5','0','0','11','45944','0','2','41','0','0','0','0','0','0','0','Dark Fiend - Cast Dark Fiend and Despawn on Range Check'),
+('2574402','25744','9','0','100','2','0','5','0','0','11','45944','0','2','41','1000','0','0','0','0','0','0','Dark Fiend - Cast Dark Fiend and Despawn on Range Check'),
 ('2574403','25744','8','0','100','2','988','-1','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Dark Fiend - Despawn on Dispel Magic (Rank 2) Hit'),
 ('2574404','25744','8','0','100','2','8012','-1','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Dark Fiend - Despawn on Purge (Rank 2) Hit'),
 ('2574405','25744','8','0','100','2','32592','-1','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Dark Fiend - Despawn on Mass Dispel Hit'),
