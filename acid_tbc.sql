@@ -3270,24 +3270,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('47501','475','4','0','25','0','0','0','0','0','1','-8','0','0','0','0','0','0','0','0','0','0','Kobold Tunneler - Chance Say on Aggro'),
 
 -- Kobold Geomancer (2.4.2 Official Data)
-('47601','476','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Prevent Combat Movement on Spawn'),
-('47602','476','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Frost Armor on Spawn'),
-('47603','476','4','0','15','0','0','0','0','0','1','-7','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Random Aggro Say'),
-('47604','476','4','0','100','0','0','0','0','0','11','20793','1','0','23','1','0','0','0','0','0','0','Kobold Geomancer - Cast Fireball and Set Phase 1 on Aggro'),
+('47601','476','11','0','100','1','1000','1000','180000','180000','11','12544','0','1','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Frost Armor on Spawn'),
+('47602','476','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Prevent Combat Movement OOC'),
+('47603','476','4','0','15','0','0','0','0','0','1','-7','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Random Say on Aggro'),
+('47604','476','4','0','100','0','0','0','0','0','11','20793','1','0','22','1','0','0','0','0','0','0','Kobold Geomancer - Cast Fireball and Set Phase 1 on Aggro'),
 ('47605','476','9','5','100','1','0','40','1500','3000','11','20793','1','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Fireball (Phase 1)'),
-('47606','476','3','5','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Kobold Geomancer - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
-('47607','476','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Start Combat Movement at 35 Yards (Phase 1)'),
-('47608','476','9','5','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('47609','476','9','5','100','0','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Start Combat Movement Below 5 Yards'),
-('47610','476','3','3','100','1','100','30','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Set Phase 1 when Mana is above 30% (Phase 2)'),
-('47611','476','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Frost Armor on Missing Buff'),
+('47606','476','3','5','100','1','15','0','1000','1000','21','1','0','0','22','2','0','0','0','0','0','0','Kobold Geomancer - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('47607','476','9','5','100','1','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Start Combat Movement When Range > 25 Yards (Phase 1)'),
+('47608','476','9','5','100','1','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('47609','476','9','5','100','1','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Start Combat Movement When Range < 5 Yards'),
+('47610','476','3','3','100','1','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Set Phase 1 when Mana > 30% (Phase 2)'),
+('47611','476','27','0','100','1','12544','1','5000','5000','11','12544','0','1','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Frost Armor on Missing Buff'),
 ('47612','476','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Kobold Geomancer - Set Phase to 0 on Evade'),
-
--- Test Script
--- ('47601','476','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Frost Armor on Spawn'),
--- ('47602','476','4','0','15','0','0','0','0','0','1','-2','-2','-4','0','0','0','0','0','0','0','0','Kobold Geomancer - Random Aggro Say'),
--- ('47603','476','9','0','100','1','0','40','1500','3000','11','20793','1','64','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Fireball (Phase 1)'),
--- ('47604','476','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Kobold Geomancer - Cast Frost Armor on Missing Buff'),
 
 -- Riverpaw Outrunner (2.4.2 Official Data)
 ('47801','478','11','0','100','0','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Riverpaw Outrunner - Cast Thrash on Spawn'),
@@ -33302,6 +33296,27 @@ UPDATE creature_ai_scripts SET `action3_param1` = '17467' WHERE action3_type = 1
 UPDATE creature_ai_scripts SET `action1_param1` = '1' WHERE action1_type = 5 AND action1_param1 = 462;
 UPDATE creature_ai_scripts SET `action2_param1` = '1' WHERE action2_type = 5 AND action2_param1 = 462;
 UPDATE creature_ai_scripts SET `action3_param1` = '1' WHERE action3_type = 5 AND action3_param1 = 462;
+
+
+
+-- =========================================================================
+-- HUGE WORKAROUND TEMP FIX FOR MAGE SCRIPTS, RANGE CHECKS AND PHASE CHANGES - WILL BE REMOVED WHEN NEW EVENTAI OVERHAUL WITH Creature_AI_Scripts_Template IS IMPLEMENTED
+-- =========================================================================
+
+-- Phase 1 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '1' WHERE COMMENT LIKE '%Set Phase 1%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '1' WHERE COMMENT LIKE '%Set Phase 1%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '1' WHERE COMMENT LIKE '%Set Phase 1%' AND action3_type = '23';
+
+-- Phase 2 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '2' WHERE COMMENT LIKE '%Set Phase 2%' AND action1_type = '23';
+
+-- Fix Range Checks For Repeatable Checks
+UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '25', event_param2 = '80', event_param3 = '1000', event_param4 = '1000' WHERE event_type='9' AND event_param1='35' AND event_param2='80' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '5', event_param2 = '15', event_param3 = '1000', event_param4 = '1000' WHERE event_type='9' AND event_param1='5' AND event_param2='15' AND event_param3='0' AND event_param4='0';
+UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '0', event_param2 = '5', event_param3 = '1000', event_param4 = '1000' WHERE event_type='9' AND event_param1='0' AND event_param2='5' AND event_param3='0' AND event_param4='0';
+
+
 
 -- EOF
 
