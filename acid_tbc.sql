@@ -2215,8 +2215,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dark Iron Guzzler (23709) - NSR
 -- Belbi Quikswitch (23710) - NSR
 -- Touring Orphan (23712) - NSR
--- Self-Turning and Oscillating Utility Target (24108)
-('2410801','24108','8','0','100','1','42436','-1','500','500','5','34','0','0','11','47173','7','0','0','0','0','0','Self-Turning and Oscillating Utility Target - Emote and Cast Brewfest - Dark Iron Attack - Intro - Assign Kill Credit on Drink! Spellhit'),
+-- Self-Turning and Oscillating Utility Target (24108) - NSR
 -- Flynn Firebrew (24364) - NSR
 -- Racing Ram (24462) - NSR
 -- Swift Racing Ram (24463) - NSR
@@ -8266,7 +8265,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scarlet Friar
 ('153801','1538','1','0','100','1','1000','1000','3000000','3000000','11','1243','0','1','0','0','0','0','0','0','0','0','Scarlet Friar - Cast Power Word: Fortitude'),
 ('153802','1538','4','0','15','0','0','0','0','0','1','-897','-1028','-896','0','0','0','0','0','0','0','0','Scarlet Friar - Random Say on Aggro'),
-('153803','1538','14','0','100','1','55','40','8000','12000','11','2052','6','1','0','0','0','0','0','0','0','0','Scarlet Friar - Cast Lesser Heal on Friendlies'),
+('153803','1538','14','0','90','1','55','40','18000','29000','11','2052','6','1','0','0','0','0','0','0','0','0','Scarlet Friar - Cast Lesser Heal on Friendlies'),
 ('153804','1538','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Friar - Flee at 15% HP'),
 -- Scarlet Neophyte
 ('153901','1539','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Scarlet Neophyte - Prevent Combat Movement on Spawn'),
