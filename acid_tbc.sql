@@ -15421,7 +15421,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Eranikus the Redeemed 15628     
 -- Nightmare Phantasm
 ('1562901','15629','0','0','100','0','15000','20000','15000','20000','11','21307','0','0','0','0','0','0','0','0','0','0', 'Nightmare Phantasm - cast Swell of Souls'),
-('1562902','15629','0','0','100','0','7000','14000','12000','18000','11','17228','0','0','0','0','0','0','0','0','0','0', 'Nightmare Phantasm - cast Shadowbolt Volley');    
+('1562902','15629','0','0','100','0','7000','14000','12000','18000','11','17228','0','0','0','0','0','0','0','0','0','0', 'Nightmare Phantasm - cast Shadowbolt Volley'),
 -- Tyrande 15633     
 -- Stormwind Reveler 15694     
 -- Thunder Bluff Reveler 15719     
@@ -15430,6 +15430,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Undercity Reveler 15907     
 -- Fariel Starsong 15909     
 -- Lunar Festival Sentinel 15961     
+-- Malfurion Stormrage
+('1794901','17949','11','0','100','0','0','0','0','0','11','17321','0','1','0','0','0','0','0','0','0','0','Malfurion Stormrage - Cast Spirit Spawn-in on Spawned');
 -- Clintar Dreamwalker 22834     
 -- Cenarion Dreamwarden 22835     
 -- Dreamwarden Lurosa 22837     
@@ -18786,6 +18788,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1684412','16844','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Crust Burster - Set Phase 0 on Evade'),
 -- Mag'har Grunt
 ('1684601','16846','2','0','100','0','20','0','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Mag\'har Grunt - Cast Enrage When Below 20% HP'),
+-- Debilitated Mag'har Grunt
+('1684701','16847','8','0','100','0','29314','-1','0','0','48','1','2','0','1','-742','-743','-744','0','0','0','0','Debilitated Mag\'har Grunt - Set random movement and Yell random text on Spell hit'),
 -- Marauding Crust Burster
 ('1685701','16857','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Marauding Crust Burster - Remove Unselectable Unit Flag on Spawn'),
 ('1685702','16857','11','0','100','0','0','0','0','0','11','29147','0','16','11','33928','0','0','21','0','0','0','Marauding Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Spawn'),
@@ -18974,6 +18978,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1705802','17058','0','0','100','32','1000','1000','0','0','1','-1145','-1146','0','1','-1147','-1148','0','0','0','0','0','Illidari Taskmaster - Random Say on Aggro'),
 ('1705803','17058','0','0','75','1','2000','2000','16000','16000','11','16244','0','0','0','0','0','0','0','0','0','0','Illidari Taskmaster - Cast Demoralizing Shout'),
 ('1705804','17058','2','0','100','0','20','0','0','0','11','34186','0','0','0','0','0','0','0','0','0','0','Illidari Taskmaster - Cast Haste Other When Below 20% HP'),
+-- Viera Sunwhisper
+('1722601','17226','8','0','100','0','30077','-1','0','0','33','17226','6','0','48','2','0','0','0','0','0','0','Viera Sunwhisper - Kill Credit and WP movement on Spell Hit'),
 -- Highlord Kruul (SD2 Backport)
 ('1833801','18338','11','0','100','0','0','0','0','0','1','-1206','-1207','0','0','0','0','0','0','0','0','0','Highlord Kruul - Yell on Spawn'),
 ('1833802','18338','4','0','100','0','0','0','0','0','1','-1208','-1209','-1210','0','0','0','0','0','0','0','0','Highlord Kruul - Yell on Aggro'),
@@ -19091,6 +19097,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1930504','19305','2','0','100','0','90','0','0','0','11','33904','0','0','0','0','0','0','0','0','0','0','Goliathon - Summon Goliathon Shardling 90% HP'),
 ('1930505','19305','2','0','100','0','60','0','0','0','11','33905','0','0','0','0','0','0','0','0','0','0','Goliathon - Summon Goliathon Shardling 60% HP'),
 ('1930506','19305','2','0','100','0','30','0','0','0','11','33906','0','0','0','0','0','0','0','0','0','0','Goliathon - Summon Goliathon Shardling 30% HP'),
+('1930507','19305','11','0','100','0','0','0','0','0','11','7741','0','1','0','0​','0','0','0','0','0','0','Goliathon - Cast Summoned Demon on Spawned'),
 -- Marshal Isildor
 ('1930801','19308','1','0','100','1','60000','60000','120000','180000','1','-336','-335','-334','5','5','0','0','0','0','0','0','Marshal Isildor - Gossip Speech and Emote'),
 -- Drillmaster Zurok (3.0.3 Official Data - Logs Only)
@@ -19149,6 +19156,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1941503','19415','2','0','100','0','50','0','0','0','11','11642','0','0','0','0','0','0','0','0','0','0','Shattered Hand Acolyte - Cast Heal at 50% HP'),
 -- Raging Shardling
 ('1941901','19419','2','0','100','0','20','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Raging Shardling - Cast Enrage When Below 20% HP'),
+-- Goliathon Shardling
+('1942001','19420','11','0','100','0','0','0','0','0','11','24240','0','1','0','​0','0','0','0','0','0','0','Goliathon Shardling - Cast Spawn - Red Lightning on Spawned'),
 -- Bleeding Hollow Necrolyte
 ('1942201','19422','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Necrolyte - Prevent Combat Movement on Spawn'),
 ('1942202','19422','4','0','100','0','0','0','0','0','11','9053','1','0','23','1','0','0','0','0','0','0','Bleeding Hollow Necrolyte - Cast Fireball and Set Phase 1 on Aggro'),
@@ -20477,6 +20486,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2211307','22113','9','0','100','1','0','5','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Mordenai - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 5 Yards'),
 ('2211308','22113','7','0','100','0','0','0','0','0','0','0','0','0','40','1','0','0','0','0','0','0','Mordenai -  Set Melee Weapon Model on Evade'),
 ('2211309','22113','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mordenai - Flee at 15% HP'),
+-- Dark Conclave Ritualist
+('2213801','22138','1','0','75','1','1000','1000','48000','55000','11','38469','0','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Dark Conclave Ritualist Channel while OOC'),
 -- Dragonmaw Peon (22252) - npc_dragonmaw_peon
 -- Torloth the Magnificent (22076) - mob_torloth
 ('2231501','22315','0','0','100','0','2000','2000','0','0','11','38108','0','1','37','0','0','0','0','0','0','0','Deathforge Mine - Cast Deathforge Mine Explosion then Self Destruct'),
@@ -32617,30 +32628,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-737','My treasure! You no steal from Tartek, dumb big-tongue traitor thing.','0','0','0','28105','0'),
 ('-738','The %s screams with rage and rushes to the aid of her babies.','0','2','0','28213','0'),
 ('-739','Your mother was a wench and your father smelt of seaforium!','0','0','0','29369','0'),
-('-740','You will not defeat the Assembly of Iron so easily, invaders!','15674','1','0','32867','0'),
-('-741','My death only serves to hasten your demise.','15678','1','0','32867','0'),
-('-742','Impossible!','15679','1','0','32867','0'),
-('-743','So fragile and weak!','15675','1','0','32867','0'),
-('-744','Flesh... such a hindrance.','15676','1','0','32867','0'),
-('-745','You seek the secrets of Ulduar? Then take them!','15677','1','0','32867','0'),
-('-746','This meeting of the Assembly of Iron is adjourned!','15680','1','0','32867','0'),
-('-747','Whether the world\'s greatest gnats or the world\'s greatest heroes, you\'re still only mortal.','15684','1','0','32857','0'),
-('-748','Stormcaller Brundir begins to Overload!','0','3','0','32857','0'),
-('-749','Stand still and stare into the light!','15687','1','0','32857','0'),
-('-750','The power of the storm lives on...','15689','1','0','32857','0'),
-('-751','You rush headlong into the maw of madness!','15690','1','0','32857','0'),
-('-752','A merciful kill!','15685','1','0','32857','0'),
-('-753','HAH!','15686','1','0','32857','0'),
-('-754','This meeting of the Assembly of Iron is adjourned!','15691','1','0','32857','0'),
-('-755','Let the storm clouds rise and rain down death from above!','15688','1','0','32857','0'),
-('-756','Nothing short of total decimation will suffice!','15657','1','0','32927','0'),
-('-757','The legacy of storms shall not be undone...','15662','1','0','32927','0'),
-('-758','What have you gained from my defeat? You are no less doomed, mortals...','15663','1','0','32927','0'),
-('-759','Decipher this!','15660','1','0','32927','0'),
-('-760','Face the lightning surge!','15661','1','0','32927','0'),
-('-761','The world on suffers yet another insignificant loss!','15658','1','0','32927','0'),
-('-762','Death is the price of your arrogance.','15659','1','0','32927','0'),
-('-763','This meeting of the Assembly of Iron is adjourned!','15664','1','0','32927','0'),
+('-740','At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.','0','0','0','Vaelan greetings','0'),
+('-741','Listen carefully, for the lord of Blackrock will surely destroy you, should you not be prepared.','0','0','0','Vaelan greetings','0'),
+('-742','My strength.... is... returning!','0','0','0','16847','0'),
+('-743','You\'ve restored my health! I\'m in your debt, $N.','0','0','0','16847','0'),
+('-744','You\'e found a cure! We will crush our enemies!','0','0','0','16847','0'),
+-- PLEASE RE-USE -745 to -763
 ('-764','Leave this place!','0','0','0','10940','0'),
 ('-765','Death to the interlopers!','0','0','0','18952','0'),
 ('-766','You will not master me, puny $r!','0','0','0','26045','0'),
@@ -33216,7 +33209,7 @@ DELETE FROM `creature_ai_scripts` WHERE creature_id IN (23013,23014,23041,23513,
 
 -- Remove WOTLK Text Entries
 -- -------------------------
-DELETE FROM `creature_ai_texts` WHERE entry IN (-1128,-1127,-1126,-1125,-1124,-1123,-1122,-1121,-1120,-1053,-1052,-1051,-1050,-1049,-1046,-1018,-1017,-1016,-1015,-1014,-1013,-1012,-1011,-996,-995,-994,-958,-957,-956,-955,-954,-953,-952,-951,-950,-949,-948,-901,-900,-899,-898,-894,-893,-892,-891,-890,-889,-888,-887,-886,-885,-884,-883,-882,-881,-880,-879,-878,-877,-876,-875,-874,-873,-872,-871,-870,-869,-868,-867,-866,-865,-864,-863,-862,-861,-860,-859,-858,-857,-856,-855,-854,-853,-852,-851,-850,-849,-848,-847,-846,-845,-844,-843,-842,-841,-815,-814,-813,-812,-811,-810,-806,-805,-804,-803,-802,-801,-800,-799,-798,-796,-795,-794,-793,-792,-791,-790,-789,-788,-787,-786,-785,-784,-783,-782,-781,-780,-779,-778,-777,-776,-774,-773,-772,-771,-768,-767,-766,-763,-762,-761,-760,-759,-758,-757,-756,-755,-754,-753,-752,-751,-750,-749,-748,-747,-746,-745,-744,-743,-742,-741,-740,-739,-738,-737,-736,-735,-734,-733,-732,-731,-730,-729,-728,-727,-726,-725,-724,-723,-722,-721,-720,-697,-696,-693,-692,-691,-690,-689,-688,-653,-652,-651,-650,-633,-632,-631,-630,-629,-628,-565,-564,-563,-562,-561,-560,-559,-558,-557,-556,-555,-538,-537,-536,-535,-534,-533,-522,-521,-520,-519,-518,-517,-516,-515,-514,-513,-512,-511,-510,-509,-508,-507,-506,-505,-504,-501,-500,-499,-498,-497,-496,-495,-493,-489,-488,-487,-486,-485,-484,-483,-482,-481,-480,-479,-478,-477,-476,-475,-474,-422,-421,-420,-419,-418,-417,-348,-347,-80,-79,-78,-77);
+DELETE FROM `creature_ai_texts` WHERE entry IN (-1128,-1127,-1126,-1125,-1124,-1123,-1122,-1121,-1120,-1053,-1052,-1051,-1050,-1049,-1046,-1018,-1017,-1016,-1015,-1014,-1013,-1012,-1011,-996,-995,-994,-958,-957,-956,-955,-954,-953,-952,-951,-950,-949,-948,-901,-900,-899,-898,-894,-893,-892,-891,-890,-889,-888,-887,-886,-885,-884,-883,-882,-881,-880,-879,-878,-877,-876,-875,-874,-873,-872,-871,-870,-869,-868,-867,-866,-865,-864,-863,-862,-861,-860,-859,-858,-857,-856,-855,-854,-853,-852,-851,-850,-849,-848,-847,-846,-845,-844,-843,-842,-841,-815,-814,-813,-812,-811,-810,-806,-805,-804,-803,-802,-801,-800,-799,-798,-796,-795,-794,-793,-792,-791,-790,-789,-788,-787,-786,-785,-784,-783,-782,-781,-780,-779,-778,-777,-776,-774,-773,-772,-771,-768,-767,-766,-763,-762,-761,-760,-759,-758,-757,-756,-755,-754,-753,-752,-751,-750,-749,-748,-747,-746,-745,-741,-740,-739,-738,-737,-736,-735,-734,-733,-732,-731,-730,-729,-728,-727,-726,-725,-724,-723,-722,-721,-720,-697,-696,-693,-692,-691,-690,-689,-688,-653,-652,-651,-650,-633,-632,-631,-630,-629,-628,-565,-564,-563,-562,-561,-560,-559,-558,-557,-556,-555,-538,-537,-536,-535,-534,-533,-522,-521,-520,-519,-518,-517,-516,-515,-514,-513,-512,-511,-510,-509,-508,-507,-506,-505,-504,-501,-500,-499,-498,-497,-496,-495,-493,-489,-488,-487,-486,-485,-484,-483,-482,-481,-480,-479,-478,-477,-476,-475,-474,-422,-421,-420,-419,-418,-417,-348,-347,-80,-79,-78,-77);
 
 -- Remove Unique and Specific WOTLK Scripts
 -- ----------------------------------------
