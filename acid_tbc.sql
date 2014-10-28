@@ -30261,8 +30261,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2559706','25597','0','0','100','3','7000','11000','16000','19000','11','46280','5','1','0','0','0','0','0','0','0','0','Oblivion Mage - Cast Polymorph'),
 ('2559707','25597','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Oblivion Mage - Set Phase to 0 on Evade'),
 -- Volatile Felfire Fiend
-('2559801','25598','11','0','100','2','0','0','0','0','11','45769','0','0','0','0','0','0','0','0','0','0','Volatile Felfire Fiend - Cast Sunwell Randience on Spawn'),
-('2559802','25598','9','0','100','2','0','5','0','0','11','45779','0','2','37','0','0','0','0','0','0','0','Volatile Felfire Fiend - Cast Felfire Fission and Die'),
+('2559801','25598','11','2','100','2','0','0','0','0','11','45769','0','0','38','0','0','0','0','0','0','0','Volatile Felfire Fiend - Cast Sunwell Randience and Set in combat with zone on Spawn'),
+('2559802','25598','9','2','100','2','0','5','0','0','11','45779','0','2','23','1','0','0','0','0','0','0','Volatile Felfire Fiend - Cast Felfire Fission and Increase Phase (Phase 1)'),
+('2559803','25598','0','1','100','2','1000','1000','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Volatile Felfire Fiend - Die (Phase 2)'),
 -- Cataclysm Hound
 ('2559901','25599','11','0','100','2','0','0','0','0','11','45769','0','0','0','0','0','0','0','0','0','0','Cataclysm Hound - Cast Sunwell Radiance on Spawn'),
 ('2559902','25599','0','0','100','3','7000','11000','18000','24000','11','46292','1','0','0','0','0','0','0','0','0','0','Cataclysm Hound - Cast Cataclysm Breath'),
