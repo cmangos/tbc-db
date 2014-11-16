@@ -20505,6 +20505,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2233111','22331','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dragonmaw Elite - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Demon Portal (Zuluhed)
 ('2233601','22336','1','0','100','0','27000','29000','0','0','12','22338','0','5000','0','0','0','0','0','0','0','0','Demon Portal (Zuluhed) - Summon Arcubus OOC'),
+-- Shadowhoof Summoner
+('2285901','22859','1','0','100','0','0','0','0','0','21','0','0','0','22','0','​0','0','0','0','0','0','Shadowhoof Summoner - Prevent Combat Movement and Set Phase to 0 on Spawn'),
+('2285902','22859','4','0','100','0','0','0','0','0','11','9613','1','0','22','1​','0','0','0','0','0','0','Shadowhoof Summoner - Cast Shadow Bolt and Set Phase 1 on Aggro'),
+('2285903','22859','9','5','100','1','0','40','3400','4800','11','9613','1','0',​'0','0','0','0','0','0','0','0','Shadowhoof Summoner - Cast Shadow Bolt (Phase 1)'),
+('2285904','22859','9','5','100','1','0','40','26000','35000','11','13338','1','​0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Curse of Tongues (Phase 1)'),
+('2285905','22859','3','5','100','0','15','0','0','0','21','1','0','0','23','1',​'0','0','0','0','0','0','Shadowhoof Summoner - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('2285906','22859','9','5','100','0','35','80','0','0','21','1','0','0','0','0',​'0','0','0','0','0','0','Shadowhoof Summoner - Start Combat Movement at 35 Yards (Phase 1)'),
+('2285907','22859','9','5','100','0','5','15','0','0','21','0','0','0','0','0','​0','0','0','0','0','0','Shadowhoof Summoner - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('2285908','22859','9','5','100','0','0','5','0','0','21','1','0','0','0','0','0​','0','0','0','0','0','Shadowhoof Summoner - Start Combat Movement Below 5 Yards (Phase 1)'),
+('2285909','22859','3','3','100','1','100','25','100','100','22','1','0','0','0'​,'0','0','0','0','0','0','0','Shadowhoof Summoner - Set Phase 1 when Mana is above 25% (Phase 2)'),
+('2285910','22859','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0​','0','0','0','0','0','Shadowhoof Summoner - Set Phase to 0 on Evade'),
+('2285911','22859','1','0','100','1','1000','1000','0','0','11','39550','0','0',​'0','0','0','0','0','0','0','0','Shadowhoof Summoner - Cast Arcane Channeling while OOC'),
 -- Black Blood of Draenor
 ('2328601','23286','0','0','100','1','8000','14000','18000','25000','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
 ('2328602','23286','2','0','100','0','40','0','0','0','11','7279','1','1','25','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Black Sludge and Flee at 40% HP'),
