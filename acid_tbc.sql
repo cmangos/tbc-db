@@ -16129,8 +16129,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Twilight Geolord 11881     
 -- Twilight Stonecaller 11882     
 -- Twilight Master 11883     
--- Tortured Druid 12178     
--- Tortured Sentinel 12179     
+-- Tortured Druid
+('1217801','12178','2','0','100','0','25','0','0','0','11','23381','0','1','0','0','0','0','0','0','0','0','Tortured Druid - Cast Healing Touch When Below 25% HP'),
+('1217802','12178','0','0','100','1','0','13200','29300','31400','11','23380','1','0','0','0','0','0','0','0','0','0','Tortured Druid - Cast Moonfire'),
+('1217803','12178','6','0','75','0','0','0','0','0','11','21327','0','2','1','-344','0','0','0','0','0','0', 'Tortured Druid - Cast Hive Ashi Drone on death'), 
+-- Tortured Sentinel
+('1217901','12179','6','0','75','0','0','0','0','0','11','21327','0','2','1','-344','0','0','0','0','0','0','Tortured Sentinel - Cast Hive Ashi Drone on death'),  
 -- Shade of Ambermoon 12199     
 -- Zannok Hidepiercer 12956     
 -- Hive'Ashi Drone 13136     
@@ -32256,7 +32260,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-341','%s jumps out of the shadows!','0','2','0','636','0'),
 ('-342','%s calls more of his allies out of the shadows.','0','2','0','639','0'),
 ('-343','%s calls for reinforcements!','0','2','0','17976','0'),
--- PLEASE RE-USE -344
+('-344','%s\'s death cry has stirred the nearby silithid hive.','0','2','0','Tortured Druid/Sentinel death','0'),
 ('-345','The only justice is death!','0','0','0','18796','0'),
 ('-346','%s begins to summon in reinforcements!','0','2','0','2358','0'),
 ('-347','The Helmsman comes for you!','0','1','0','32576','0'),
