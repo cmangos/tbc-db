@@ -19103,7 +19103,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1930504','19305','2','0','100','0','90','0','0','0','11','33904','0','0','0','0','0','0','0','0','0','0','Goliathon - Summon Goliathon Shardling 90% HP'),
 ('1930505','19305','2','0','100','0','60','0','0','0','11','33905','0','0','0','0','0','0','0','0','0','0','Goliathon - Summon Goliathon Shardling 60% HP'),
 ('1930506','19305','2','0','100','0','30','0','0','0','11','33906','0','0','0','0','0','0','0','0','0','0','Goliathon - Summon Goliathon Shardling 30% HP'),
-('1930507','19305','11','0','100','0','0','0','0','0','11','7741','0','1','0','0​','0','0','0','0','0','0','Goliathon - Cast Summoned Demon on Spawned'),
+('1930507','19305','11','0','100','0','0','0','0','0','11','7741','0','1','0','0','0','0','0','0','0','0','Goliathon - Cast Summoned Demon on Spawned'),
 -- Marshal Isildor
 ('1930801','19308','1','0','100','1','60000','60000','120000','180000','1','-336','-335','-334','5','5','0','0','0','0','0','0','Marshal Isildor - Gossip Speech and Emote'),
 -- Drillmaster Zurok (3.0.3 Official Data - Logs Only)
@@ -19163,7 +19163,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Raging Shardling
 ('1941901','19419','2','0','100','0','20','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Raging Shardling - Cast Enrage When Below 20% HP'),
 -- Goliathon Shardling
-('1942001','19420','11','0','100','0','0','0','0','0','11','24240','0','1','0','​0','0','0','0','0','0','0','Goliathon Shardling - Cast Spawn - Red Lightning on Spawned'),
+('1942001','19420','11','0','100','0','0','0','0','0','11','24240','0','1','0','0','0','0','0','0','0','0','Goliathon Shardling - Cast Spawn - Red Lightning on Spawned'),
 -- Bleeding Hollow Necrolyte
 ('1942201','19422','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Necrolyte - Prevent Combat Movement on Spawn'),
 ('1942202','19422','4','0','100','0','0','0','0','0','11','9053','1','0','23','1','0','0','0','0','0','0','Bleeding Hollow Necrolyte - Cast Fireball and Set Phase 1 on Aggro'),
