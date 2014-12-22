@@ -7371,6 +7371,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('115201','1152','0','0','100','1','11200','12000','11200','12000','11','3604','1','0','0','0','0','0','0','0','0','0','Snapjaw Crocolisk - Cast Tendon Rip'),
 -- Thysta
 ('138701','1387','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Thysta - Summon Enraged Wyverns and Yell on Aggro'),
+-- Mok'Rash
+('149301','1493','1','0','100','33','350800','365800','175400','190400','1','-748','-749','-750','1','-751','-752','-755','1','-753','-754','-755','Mok\'Rash - Random Yell'),
 -- Enraged Silverback Gorilla
 ('151101','1511','2','0','100','0','10','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Enraged Silverback Gorilla - Cast Enrage at 10% HP'),
 -- Thrashtail Basilisk
@@ -32657,7 +32659,15 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-744','You\'e found a cure! We will crush our enemies!','0','0','0','16847','0'),
 -- PLEASE RE-USE -745 to -745
 ('-747','The %s flies up through the trees, free of Terokk\'s corruption.','0','2','0','22339','0'),
--- PLEASE RE-USE -748 to -763
+('-748','SMOTTS, I HAVE YOUR LITTLE BELT....COME GET IT!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-749','SMOTTS! HEY, SMOTTS! COME OUT AND PLAY!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-750','DON\'T LET THIS STATUE BE MY ONLY COMPANY, COME OUT AND PLAY!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-751','COME OUT TO JANEIRO\'S POINT. I\'M WAITING FOR YOU, SMOTTS...','0','1','0','Mok\'Rash - Random Yell','0'),
+('-752','I PROMISE I WON\'T KILL YOUR CREW THIS TIME. HAH! BUT MY BROTHER MIGHT EAT THEM!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-753','HAVE YOU RUN OUT OF SHIPS TO SEND? WHERE IS YOUR COURAGE?','0','1','0','Mok\'Rash - Random Yell','0'),
+('-754','YOU WERE SUCH GOOD SPORT THE LAST TIME...COME OUT!','0','1','0','Mok\'Rash - Random Yell','0'),
+('-755','I HAVE YOUR LITTLE BELT TIED AROUND MY FINGER, SMOTTS. DON\'T YOU WANT IT BACK?','0','1','0','Mok\'Rash - Random Yell','0'),
+-- PLEASE RE-USE -756 to -763
 ('-764','Leave this place!','0','0','0','10940','0'),
 ('-765','Death to the interlopers!','0','0','0','18952','0'),
 ('-766','You will not master me, puny $r!','0','0','0','26045','0'),
