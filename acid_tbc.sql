@@ -26971,10 +26971,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2085702','20857','9','0','100','7','0','5','2000','3000','11','38804','1','0','0','0','0','0','0','0','0','0','Arcatraz Defender  - Cast Flaming Weapon'),
 ('2085703','20857','0','0','100','7','2000','3000','1000','1000','11','40449','1','1','0','0','0','0','0','0','0','0','Arcatraz Defender  - Cast Protean Subdual'),
 -- Arcatraz Warder   
-('2085901','20859','11','0','100','6','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Arcatraz Warder - Prevent Combat Movement Spawn'), 
+('2085901','20859','11','0','100','6','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Arcatraz Warder - Prevent Combat Movement Spawn'),
 ('2085902','20859','1','0','100','7','1000','3000','4000','5000','11','36327','0','0','40','2','0','0','0','0','0','0','Arcatraz Warder - Cast Shoot Arcane Explosion Arrow and Set Ranged Weapon Model OOC'),
-('2085903','20859','9','0','100','6','0','5','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Arcatraz Warder - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 5 Yards (Phase 1)'),    
-('2085904','20859','21','0','100','6','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Arcatraz Warder - Prevent Combat Movement on Reaching Home after Evade'), 
+('2085903','20859','9','0','100','7','0','5','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Arcatraz Warder - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 5 Yards (Phase 1)'),
+('2085904','20859','21','0','100','6','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Arcatraz Warder - Prevent Combat Movement on Reaching Home after Evade'),
 -- Protean Nightmare 
 ('2086401','20864','9','0','100','7','0','40','12000','18000','11','36612','4','33','0','0','0','0','0','0','0','0','Protean Nightmare  - Cast Incubation'),
 ('2086402','20864','9','0','100','3','0','5','9000','15000','11','36617','4','32','0','0','0','0','0','0','0','0','Protean Nightmare (Normal)  - Cast Gaping Maw'),
@@ -26999,7 +26999,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2086801','20868','9','0','100','7','0','20','17000','25000','11','36677','4','1','0','0','0','0','0','0','0','0','Entropic Eye - Cast Chaos Breath'),
 ('2086802','20868','9','0','100','3','0','5','6000','8000','11','36664','4','0','0','0','0','0','0','0','0','0','Entropic Eye (Normal) - Cast Tentacle Cleave'),
 ('2086803','20868','9','0','100','5','0','5','4000','7000','11','38816','4','0','0','0','0','0','0','0','0','0','Entropic Eye (Heroic) - Cast Tentacle Cleave'),
--- Arcatraz Sentinel (Need To Confirm That Behavior is Identical to Official Now)
+-- Arcatraz Sentinel (Need To Confirm That Behaviour is Identical to Official Now)
 ('2086901','20869','11','0','100','2','0','0','0','0','11','36716','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge on Spawn'),
 ('2086902','20869','11','0','100','4','0','0','0','0','11','38828','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge on Spawn'),
 ('2086903','20869','1','0','100','6','1000','1000','0','0','11','31261','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel - Cast Permanent Feign Death (Root) on Spawn'),
@@ -27099,7 +27099,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2090004','20900','0','0','100','3','9000','14000','18000','24000','11','36835','0','1','0','0','0','0','0','0','0','0','Unchained Doombringer (Normal) - Cast War Stomp'),
 ('2090005','20900','0','0','100','3','7000','12000','17000','21000','11','38911','0','1','0','0','0','0','0','0','0','0','Unchained Doombringer (Heroic) - Cast War Stomp'),
 -- Sargeron Archer 
-('2090101','20901','1','0','100','6','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Sargeron Archer - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('2090101','20901','1','0','100','6','0','0','0','0','21','0','0','0','20','0','0','0','22','1','0','0','Sargeron Archer - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('2090102','20901','9','1','100','3','5','30','4000','7000','11','22907','1','0','40','2','0','0','0','0','0','0','Sargeron Archer (Normal) - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('2090103','20901','9','1','100','5','5','30','4000','7000','11','38940','1','0','40','2','0','0','0','0','0','0','Sargeron Archer (Heroic) - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('2090104','20901','0','0','100','3','12000','18000','15000','19000','11','36827','1','1','0','0','0','0','0','0','0','0','Sargeron Archer (Normal) - Cast Hooked Net'),
@@ -27118,16 +27118,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Warden Mellichar (20904) - npc_warden_mellichar
 -- Blazing Trickster
 ('2090501','20905','1','0','100','6','0','0','0','0','21','0','0','0','22','0','0','0','1','-19','0','0','Blazing Trickster - Prevent Combat Movement and Set Phase to 0 and Say on Spawn'),
-('2090502','20905','4','0','100','2','0','0','0','0','11','36906','1','0','23','1','0','0','34','5','1','0','Blazing Trickster (Normal) - Cast Fireball and Set Phase 1 and Set Instance Data on Aggro'),
+('2090502','20905','4','0','100','2','0','0','0','0','11','36906','1','0','22','1','0','0','34','5','1','0','Blazing Trickster (Normal) - Cast Fireball and Set Phase 1 and Set Instance Data on Aggro'),
 ('2090503','20905','9','5','100','3','0','40','7000','10000','11','36906','4','0','0','0','0','0','0','0','0','0','Blazing Trickster (Normal) - Cast Fireball (Phase 1)'),
-('2090504','20905','4','0','100','4','0','0','0','0','11','39023','1','0','23','1','0','0','34','5','1','0','Blazing Trickster (Heroic) - Cast Fireball and Set Phase 1 and Set Instance Data on Aggro'),
+('2090504','20905','4','0','100','4','0','0','0','0','11','39023','1','0','22','1','0','0','34','5','1','0','Blazing Trickster (Heroic) - Cast Fireball and Set Phase 1 and Set Instance Data on Aggro'),
 ('2090505','20905','9','5','100','5','0','40','7000','10000','11','39023','4','0','0','0','0','0','0','0','0','0','Blazing Trickster (Heroic) - Cast Fireball (Phase 1)'),
 ('2090506','20905','0','0','100','7','2000','5000','16000','21000','11','36907','0','33','0','0','0','0','0','0','0','0','Blazing Trickster - Cast Fire Shield'),
 ('2090507','20905','3','5','100','6','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Blazing Trickster - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('2090508','20905','9','5','100','6','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Blazing Trickster - Start Combat Movement at 35 Yards (Phase 1)'),
-('2090509','20905','9','5','100','6','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Blazing Trickster - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('2090510','20905','9','5','100','6','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Blazing Trickster - Start Combat Movement Below 5 Yards'),
-('2090511','20905','3','3','100','7','100','15','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Blazing Trickster - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('2090508','20905','9','5','100','7','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Blazing Trickster - Start Combat Movement at 35 Yards (Phase 1)'),
+('2090509','20905','9','5','100','7','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Blazing Trickster - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('2090510','20905','9','5','100','7','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Blazing Trickster - Start Combat Movement Below 5 Yards'),
+('2090511','20905','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Blazing Trickster - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2090512','20905','7','0','100','6','0','0','0','0','22','0','0','0','34','4','2','0','0','0','0','0','Blazing Trickster - Set Phase to 0 and Set Instance Data on Evade'),
 ('2090513','20905','6','0','100','6','0','0','0','0','1','-20','0','0','34','5','3','0','0','0','0','0','Blazing Trickster - Say and Set Instance Data on Death'),
 -- Phase-Hunter
