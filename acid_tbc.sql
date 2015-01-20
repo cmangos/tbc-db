@@ -27458,8 +27458,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2047801','20478','11','0','100','6','0','0','0','0','11','35259','0','1','0','0','0','0','0','0','0','0','Arcane Servant - Cast Spotlight on Spawn'),
 ('2047802','20478','0','0','100','7','3600','10800','16900','26500','11','35255','1','0','0','0','0','0','0','0','0','0','Arcane Servant - Cast Arcane Volley'),
 ('2047803','20478','6','0','100','6','0','0','0','0','11','22271','0','7','0','0','0','0','0','0','0','0','Arcane Servant - Cast Arcane Explosion on Death'),
--- Raging Flames (4.3.4 Official Data - Normal/Heroic) - (SPELL DOES NOT EXIST??? POSSIBLE 4.3.4 SPELL ID)
--- ('2048101','20481','11','0','100','6','0','0','0','0','11','35281','0','0','0','0','0','0','0','0','0','0','Raging Flames - Cast Unknown Spell on Spawn (Data From Sniff) - Old SD2 Spell is 35278)'),
+-- Raging Flames (4.3.4 Official Data - Normal/Heroic)
+('2048101','20481','11','0','100','6','0','0','0','0','11','35278','0','0','0','0','0','0','0','0','0','0','Raging Flames - Cast Raging Flames on Spawn'),
 ('2048102','20481','0','0','100','3','15700','31300','15700','28900','11','35268','0','0','0','0','0','0','0','0','0','0','Raging Flames (Normal) - Cast  Inferno'),
 ('2048103','20481','0','0','100','5','15700','31300','15700','28900','11','39346','0','0','0','0','0','0','0','0','0','0','Raging Flames (Heroic) - Cast  Inferno'),
 -- Nether Charge (4.3.4 Official Data - Normal/Heroic) - Sniff Data
