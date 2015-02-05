@@ -6722,6 +6722,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('132701','1327','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Reese Langston - Summon Stormwind City Guard on Aggro'),
 -- Elly Langston  
 ('132801','1328','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Elly Langston - Summon Stormwind City Guard on Aggro'),
+('132802','1328','22','0','100','1','41','6','469','0','5','11','0','0','0','0','0','0','0','0','0','0','Elly Langston - laugh on flex emote'),
+('132803','1328','22','0','100','1','34','6','469','0','5','94','0','0','0','0','0','0','0','0','0','0','Elly Langston - dance on dance emote'),
+('132804','1328','22','0','100','1','84','6','469','0','5','17','0','0','0','0','0','0','0','0','0','0','Elly Langston - blow a kiss on shy emote'),
+('132805','1328','22','0','100','1','17','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','Elly Langston - bows on bow emote'),
+('132806','1328','22','0','100','1','58','6','469','0','5','24','0','0','0','0','0','0','0','0','0','0','Elly Langston - shy on kiss emote'),
+('132807','1328','22','0','100','1','77','6','469','0','1','-1327','0','0','5','14','0','0','0','0','0','0','Elly Langston - rude text on rude emote'),
+('132808','1328','22','0','100','33','101','6','469','0','1','-1328','-1329','-1333','1','-1331','-1332','0','0','0','0','0','Elly Langston - random text on wave emote'),
 -- Gerik Koen  
 ('133301','1333','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Gerik Koen - Summon Stormwind City Guard on Aggro'),
 -- Mayda Thane  
@@ -6858,8 +6865,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ol' Emma 
 ('352001','3520','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Ol\' Emma - Summon Stormwind City Guard on Aggro'),
 -- Sewer Beast (3581) - NSR
--- Jenn Langston  (HAS EMOTES TO SCRIPT) 
+-- Jenn Langston
 ('362601','3626','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Jenn Langston - Summon Stormwind City Guard on Aggro'),
+('362602','3626','22','0','100','1','41','6','469','0','5','11','0','0','0','0','0','0','0','0','0','0','Jenn Langston - laugh on flex emote'),
+('362603','3626','22','0','100','1','34','6','469','0','5','94','0','0','0','0','0','0','0','0','0','0','Jenn Langston - dance on dance emote'),
+('362604','3626','22','0','100','1','84','6','469','0','5','17','0','0','0','0','0','0','0','0','0','0','Jenn Langston - blow a kiss on shy emote'),
+('362605','3626','22','0','100','1','17','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','Jenn Langston - bows on bow emote'),
+('362606','3626','22','0','100','1','58','6','469','0','5','24','0','0','0','0','0','0','0','0','0','0','Jenn Langston - shy on kiss emote'),
+('362607','3626','22','0','100','1','77','6','469','0','1','-1327','0','0','5','14','0','0','0','0','0','0','Jenn Langston - rude text on rude emote'),
+('362608','3626','22','0','100','33','101','6','469','0','1','-1328','-1329','-1330','1','-1331','-1332','0','0','0','0','0','Jenn Langston - random text on wave emote'),
 -- Erich Lohan  
 ('362701','3627','4','0','100','0','0','0','0','0','12','68','1','300000','0','0','0','0','0','0','0','0','Erich Lohan - Summon Stormwind City Guard on Aggro'),
 -- Steven Lohan  
@@ -33197,7 +33211,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1323','It is you who have invaded our home. Gorefiend will avenge us!','0','4','0','21788 21795','0'),
 ('-1324','We will never dissipate, mortal... Our fate is tied to Gorefiend...','0','4','0','21788 21795','0'),
 ('-1325','We are bound here... eternally. It is the will of Gorefiend.','0','4','0','21788 21795','0'),
-('-1326','Gorefiend will have your head, interloper!','0','4','0','21788 21795','0');
+('-1326','Gorefiend will have your head, interloper!','0','4','0','21788 21795','0'),
+('-1327','%s returns the rude gesture to $n','0','2','0','Jenn/Elly Langston rude','0'),
+('-1328','Well hello, $n, what can I get you today?','0','0','0','Jenn/Elly Langston random text','0'),
+('-1329','Been a tough day? A nice ale should loosen those worries right up.','0','0','0','Jenn/Elly Langston random text','0'),
+('-1330','Do you think I need more pieces of flair?','0','0','0','Jenn Langston random text','0'),
+('-1331','What do you fancy, $G sir:miss;?','0','0','0','Jenn Langston random text','0'),
+('-1332','Hi, what would you like?','0','0','0','Jenn Langston random text','0'),
+('-1333','Look what the cat dragged in. What can I get you, $n?','0','0','0','Jenn Langston random text','0');
 
 
 -- =======================================================
