@@ -20389,6 +20389,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Enraged Earth Spirit
 ('2105001','21050','0','0','85','1','40000','40000','15000','15000','11','38498','4','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Cast Fiery Boulder'),
 ('2105002','21050','6','0','100','0','0','0','0','0','11','38365','0','3','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Summon Enraged Earth Shard on Death'),
+-- Dormant Infernal
+('2108001','21080','4','0','100','0','0','0','0','0','3','19759','0','0','0','0','0','0','0','0','0','0','Dormant Infernal - morph into Newly Crafted Infernal on aggro'),
+('2108002','21080','1','0','100','0','0','0','0','0','3','0','0','0','0','0','0','0','0','0','0','0','Dormant Infernal - demorph on OCC'),
 -- Cyrukh the Firelord
 ('2118101','21181','11','0','100','0','0','0','0','0','11','36329','0','0','1','-175','0','0','0','0','0','0','Cyrukh the Firelord - Cast Cyrukh Fire Kit and Yell on Spawned'),
 ('2118102','21181','4','0','100','0','0','0','0','0','1','-176','0','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Yell on Aggro'),
@@ -20397,6 +20400,27 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2118105','21181','0','0','100','1','15000','18000','19000','22000','11','39425','0','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Cast Trample'),
 ('2118106','21181','6','0','100','0','0','0','0','0','11','37235','0','2','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Cast Cyrukh Defeated on Death'),
 ('2118107','21181','21','0','100','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Forced Despawn on Reached Home'),
+-- Bonechewer Messenger
+('2124401','21244','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Bonechewer Messenger - unmount on aggro'),
+('2124402','21244','0','0','100','0','0','0','1000','1000','11','35570','4','0','0','0','0','0','0','0','0','0','Bonechewer Messenger - Cast Charge'),
+-- Wrathstalker
+('2124901','21249','11','0','100','0','0','0','0','0','11','7791','0','1','0','0','0','0','0','0','0','0','Wrathstalker - spawn effect'),
+('2124902','21249','0','0','100','1','9400','16200','8200','20100','11','15496','4','0','0','0','0','0','0','0','0','0','Wrathstalker - Cast Cleave'),
+('2124903','21249','2','0','100','0','30','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Wrathstalker - Cast Enrage at 30% HP'),
+-- Shadow Council Warlock
+('2130201','21302','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 1 on Spawn'),
+('2130202','21302','9','13','100','1','0','40','2400','3800','11','9613','1','0','0','0','0','0','0','0','0','0','Shadow Council Warlock -  Cast Shadow Bolt (Phase 1)'),
+('2130203','21302','9','13','100','1','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement Below 5 Yards'),
+('2130204','21302','9','13','100','1','5','35','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Prevent Combat Movement between 5 and 35 Yards (Phase 1)'),
+('2130205','21302','9','13','100','1','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement at 35 Yards (Phase 1)'),
+('2130206','21302','3','13','100','0','15','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('2130207','21302','3','11','100','1','100','30','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('2130208','21302','2','0','100','0','30','0','0','0','21','1','0','0','22','3','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement and Set Phase 3 when HP are below 30%'),
+('2130209','21302','9','7','100','0','0','15','0','0','11','37992','1','1','21','0','0','0','0','0','0','0','Shadow Council Warlock - Prevent Combat Movement and Cast Drain Life when in 15 yard range (Phase 3)'),
+('2130210','21302','9','7','100','1','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement Below 5 Yards'),
+('2130211','21302','9','7','100','1','15','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement at 15 Yards (Phase 3)'),
+('2130212','21302','2','7','100','0','100','45','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 1 when Life is above 45% (Phase 3)'),
+('2130213','21302','7','0','100','0','0','0','0','0','22','1','0','0','48','2','0','0','0','0','0','0','Shadow Council Warlock - Set Phase to 1 and change Movement to Waypoints on Evade'),
 -- Dark Conclave Harbringer
 ('2138401','21384','0','0','100','1','6000','6000','6000','12000','11','15496','1','1','0','0','0','0','0','0','0','0','Dark Conclave Harbringer - Cast Cleave'),
 ('2138402','21384','2','0','100','1','50','0','8000','8000','11','16588','0','0','0','0','0','0','0','0','0','0','Dark Conclave Harbringer - Cast Dark Mending'),
@@ -20417,6 +20441,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2140301','21403','1','0','100','1','1000','1000','4000','4000','11','36804','0','0','0','0','0','0 ','0','0','0','0','Invis Legion Hold Caster - Cast Electrical Shock OOC'),
 -- Envoy Icarius
 ('2140901','21409','4','0','100','0','0','0','0','0','1','-640','0','0','0','0','0','0','0','0','0','0','Envoy Icarius - Say on Aggro'),
+-- Shadow Council Warlock
+('2150301','21503','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 1 on Spawn'),
+('2150302','21503','9','13','100','1','0','40','2400','3800','11','9613','1','0','0','0','0','0','0','0','0','0','Shadow Council Warlock -  Cast Shadow Bolt (Phase 1)'),
+('2150303','21503','9','13','100','1','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement Below 5 Yards'),
+('2150304','21503','9','13','100','1','5','35','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Prevent Combat Movement between 5 and 35 Yards (Phase 1)'),
+('2150305','21503','9','13','100','1','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement at 35 Yards (Phase 1)'),
+('2150306','21503','3','13','100','0','15','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('2150307','21503','3','11','100','1','100','30','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('2150308','21503','7','0','100','0','0','0','0','0','22','1','0','0','48','2','0','0','0','0','0','0','Shadow Council Warlock - Set Phase to 1 and change Movement to Waypoints on Evade'),
 -- Borak, Son of Oronok
 ('2168601','21686','0','0','100','1','15000','17000','15000','17000','11','7159','1','0','0','0','0','0','0','0','0','0','Borak, Son of Oronok - Cast Backstab'),
 ('2168602','21686','0','0','100','1','8000','10000','8000','10000','11','27611','1','0','0','0','0','0','0','0','0','0','Borak, Son of Oronok - Cast Eviscerate'),
