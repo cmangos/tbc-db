@@ -18884,7 +18884,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1687802','16878','4','0','60','0','0','0','0','0','11','35570','1','0','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Cast Charge on Aggro'),
 ('1687803','16878','8','5','100','0','39184','-1','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Set Phase 2 On Anchorite Contrition Spellhit (Phase 1)'),
 ('1687804','16878','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Shattered Hand Berserker - Cast Enrage at 30% HP'),
-('1687805','16878','6','3','100','0','0','0','0','0','12','22454','0','120000','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Cast Summon Fel Spirit On Death (Phase 2)'),
+('1687805','16878','6','3','100','0','0','0','0','0','11','39190','0','6','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Cast Send Vengeance On Death (Phase 2)'),
 -- Hulking Helboar
 ('1688001','16880','4','0','100','0','0','0','0','0','11','33909','0','0','0','0','0','0','0','0','0','0','Hulking Helboar - Cast Hulk on Aggro'),
 ('1688002','16880','8','0','100','0','34665','-1','0','0','16','16880','34665','6','0','0','0','0','0','0','0','0','Hulking Helboar - Quest Credit on Administer Antidote Spellhit (Quest: 10255)'),
@@ -19280,9 +19280,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2237411','22374','2','0','100','0','30','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Hand of Kargath - Cast Toughen at 30% HP'),
 ('2237412','22374','2','0','100','0','20','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Hand of Kargath - Cast Toughen at 20% HP'),
 ('2237413','22374','2','0','100','0','10','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Hand of Kargath - Cast Toughen at 10% HP'),
--- Anchorite Relic Bunny (More Research Required - This Does Not Seem Proper Way - Require Sniff Data To Understand)
--- ('2244401','22444','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - Prevent Combat Movement On Spawn'),
--- ('2244402','22444','1','0','100','0','2000','2000','0','0','11','39184','0','1','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - Cast Anchorite Contrition OOC'),
+-- Anchorite Relic Bunny
+('2244401','22444','1','0','100','1','1000','1000','0','0','11','39184','0','6','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - Cast Anchorite Contrition while OOC'),
+('2244402','22444','11','0','100','0','0','0','0','0','2','1662','0x01','0','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - change faction'),
+('2244403','22444','11','0','100','0','0','0','0','0','41','300000','0','0','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - despawn self'),
+-- Fel Spirit
+('2245401','22454','0','0','100','0','0','0','0','0','1','-860','0','0','0','0','0','0','0','0','0','0','Fel Spirit - Yell on Aggro'),
 -- Felblood Initiate
 ('2491801','24918','0','0','100','1','4000','6000','7000','9000','11','14873','1','0','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Sinister Strike'),
 ('2491802','24918','0','0','100','1','17000','22000','20000','26000','11','29098','1','1','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Bitter Withdrawal'),
@@ -32845,7 +32848,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-857','Such strength... it must be mine!','13481','1','0','26530','0'),
 ('-858','Your flesh betrays you.','13482','1','0','26530','0'),
 ('-859','You only advance... the master\'s plan...','13483','1','0','26530','0'),
-('-860','Prince Arthas Menethil, on this day, a powerful darkness has taken hold of your soul. The death you are destined to visit upon others will this day be your own.','13408','6','0','26532','0'),
+('-860','Vengeance will not be yours, $N!','0','0','0','22454','0'),
 ('-861','We\'ll see about that, young prince.','13409','1','0','26532','0'),
 ('-862','Tick tock, tick tock...','13410','1','0','26532','0'),
 ('-863','Not quick enough!','13411','1','0','26532','0'),
@@ -32853,9 +32856,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-865','There is no future for you.','13413','1','0','26532','0'),
 ('-866','This is the hour of our greatest triumph!','13414','1','0','26532','0'),
 ('-867','You would destined to fail.','13415','1','0','26532','0'),
-('-868','Yes, this is the beginning. I\'ve been waiting for you, young prince. I am Mal\'Ganis.','14410','1','0','26533','0'),
-('-869','As you can see, your people are now mine. I will now turn this city, household by household, until the flame of life has been snuffed out forever.','14411','1','0','26533','0'),
-('-870','Your journey has just begun, young prince. Gather your forces, and meet me in the arctic land of Northrend. It is there we shall settle the score between us. It is there that your true destiny will unfold.','14412','1','0','26533','0'),
+-- PLEASE RE-USE -868 to -870
 ('-871','This will be a fine test, Prince Arthas.','14413','1','0','26533','0'),
 ('-872','Time out.','14414','1','0','26533','0'),
 ('-873','You seem tired.','14415','1','0','26533','0'),
