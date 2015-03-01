@@ -28250,7 +28250,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('760703','7607','9','0','100','3','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Weegli Blastfuse - Prevent Combat Movement at Below 5 Yards'),
 ('760704','7607','0','0','100','3','2000','3000','3000','4000','11','6660','1','0','0','0','0','0','0','0','0','0','Weegli Blastfuse - Cast Shoot'),
 ('760705','7607','0','0','100','3','5000','7000','6000','11000','11','8858','4','0','0','0','0','0','0','0','0','0','Weegli Blastfuse - Cast Bomb'),
-('760706','7607','0','0','100','3','7000','11000','30000','35000','11','21688','0','0','0','0','0','0','0','0','0','0','Weegli Blastfuse - Cast Goblin Land Mine'),
+-- ('760706','7607','0','0','100','3','7000','11000','30000','35000','11','21688','0','0','0','0','0','0','0','0','0','0','Weegli Blastfuse - Cast Goblin Land Mine'),
 -- Murta Grimgut (4.0.1 Official Data) - Data is not complete but is as good as I could get after multiple runs on the Instance
 ('760801','7608','1','0','100','2','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Murta Grimgut - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 ('760802','7608','0','0','100','3','1000','3000','51800','51800','11','11974','0','1','0','0','0','0','0','0','0','0','Murta Grimgut - Cast Power Word Shield'),
