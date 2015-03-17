@@ -21874,13 +21874,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nexus-Prince Shaffar (18344) - boss_nexusprince_shaffar
 -- Ethereal Wraith (4.3.4 Official Data - Normal/Heroic)
 ('1839401','18394','1','0','100','6','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Ethereal Wraith - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('1839402','18394','4','0','100','6','0','0','0','0','11','34934','1','0','23','1','0','0','0','0','0','0','Ethereal Wraith - Cast Shadowbolt Volley and Set Phase 1 on Aggro'),
+('1839402','18394','4','0','100','6','0','0','0','0','11','34934','1','0','22','1','0','0','0','0','0','0','Ethereal Wraith - Cast Shadowbolt Volley and Set Phase 1 on Aggro'),
 ('1839403','18394','9','5','100','7','0','30','7800','13300','11','34934','1','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Cast Shadowbolt Volley (Phase 1)'),
 ('1839404','18394','3','5','100','6','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Ethereal Wraith - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1839405','18394','9','5','100','6','25','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Start Combat Movement at 25 Yards (Phase 1)'),
-('1839406','18394','9','5','100','6','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('1839407','18394','9','5','100','6','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Start Combat Movement Below 5 Yards (Phase 1)'),
-('1839408','18394','3','3','100','7','100','15','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1839406','18394','9','5','100','7','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('1839407','18394','9','5','100','7','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Start Combat Movement Below 5 Yards (Phase 1)'),
+('1839408','18394','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1839409','18394','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Set Phase to 0 on Evade'),
 -- Arcane Fiend (4.3.4 Official Data - Normal/Heroic)
 ('1842901','18429','9','0','100','3','0','8','8400','10200','11','15253','0','1','0','0','0','0','0','0','0','0','Arcane Fiend (Normal) - Cast Arcane Explosion'),
@@ -21888,13 +21888,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1842903','18429','0','0','100','7','8400','13700','10800','13300','11','15122','1','0','0','0','0','0','0','0','0','0','Arcane Fiend - Cast Counter Spell'),
 -- Ethereal Apprentice (4.3.4 Official Data - Normal)
 ('1843001','18430','1','0','100','6','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Prevent Combat Movement on Spawn'),
-('1843002','18430','4','0','100','6','0','0','0','0','11','32370','1','0','23','1','0','0','0','0','0','0','Ethereal Apprentice - Cast Frostbolt and Set Phase 1 on Aggro'),
+('1843002','18430','4','0','100','6','0','0','0','0','11','32370','1','0','22','1','0','0','0','0','0','0','Ethereal Apprentice - Cast Frostbolt and Set Phase 1 on Aggro'),
 ('1843003','18430','9','13','100','7','0','40','3600','3600','11','32369','1','23','1','0','0','0','0','0','0','0','Ethereal Apprentice - Cast Fireball (Phase 1)'),
-('1843004','18430','9','11','100','7','0','40','3600','3600','11','32370','1','23','-1','0','0','0','0','0','0','0','Ethereal Apprentice - Cast Frostbolt (Phase 2)'),
-('1843005','18430','3','9','100','6','15','0','0','0','21','1','0','0','22','3','0','0','0','0','0','0','Ethereal Apprentice - Start Combat Movement and Set Phase 3 when Mana is at 15% (Phase 1 and 2)'),
-('1843006','18430','9','9','100','6','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Start Combat Movement at 35 Yards (Phase 1 and 2)'),
-('1843007','18430','9','9','100','6','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Prevent Combat Movement at 15 Yards (Phase 1 and 2)'),
-('1843008','18430','9','0','100','6','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Start Combat Movement Below 5 Yards'),
+('1843004','18430','9','11','100','7','0','40','3600','3600','11','32370','1','23','0','0','0','0','0','0','0','0','Ethereal Apprentice - Cast Frostbolt (Phase 2)'),
+('1843005','18430','3','9','100','7','15','0','1000','1000','21','1','0','0','22','3','0','0','0','0','0','0','Ethereal Apprentice - Start Combat Movement and Set Phase 3 when Mana is at 15% (Phase 1 and 2)'),
+('1843006','18430','9','9','100','7','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Start Combat Movement at 35 Yards (Phase 1 and 2)'),
+('1843007','18430','9','9','100','7','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Prevent Combat Movement at 15 Yards (Phase 1 and 2)'),
+('1843008','18430','9','0','100','7','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Start Combat Movement Below 5 Yards'),
 ('1843009','18430','3','7','100','7','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Set Phase 1 when Mana is above 30% (Phase 3)'),
 ('1843010','18430','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Set Phase to 0 on Evade'),
 -- Ethereal Beacon (SD2 Backport)
@@ -21917,7 +21917,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Consortium Engineer (19673) - NSR
 -- Ambassador Pax'ivi (22928) - NSR
 -- Yor (UNABLE TO ACCESS THIS BOSS YET TO GET OFFICIAL DATA)
-('2293001','22930','9','0','100','5','0','5','6000','9000','11','38361','0','0','0','0','0','0','0','0','0','0','Yor - Cast Double Breath'),
+('2293001','22930','0','0','100','5','6000','10000','8000','15000','11','38361','0','0','0','0','0','0','0','0','0','0','Yor - Cast Double Breath'),
 -- Dancing Flames (25305) - npc_dancing_flames
 
 
