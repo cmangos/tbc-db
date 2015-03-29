@@ -3857,20 +3857,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1945603','19456','2','0','100','0','25','0','0','0','1','-115','-116','0','0','0','0','0','0','0','0','0','Whitebark\'s Spirit - Say At 25% HP'),
 ('1945604','19456','2','0','100','0','20','0','0','0','2','35','0','0','24','0','0','0','0','0','0','0','Whitebark\'s Spirit - Turn Friendly and Evade At 20% HP'),
 -- Jero'me (19882) - NSR
--- Jane
-('2009801','20098','1','0','100','1','132000','132000','300000','300000','1','-945','0','0','0','0','0','0','0','0','0','0','Jane - Say OOC'),
--- Jessel
-('2010001','20100','11','0','100','0','0','0','0','0','5','12','0','0','0','0','0','0','0','0','0','0','Jessel - Emote State Sleep on Spawn'),
-('2010002','20100','1','0','100','1','120000','120000','300000','300000','5','13','0','0','0','0','0','0','0','0','0','0','Jessel - Emote State Sit OOC'),
-('2010003','20100','1','0','100','1','125000','125000','300000','300000','1','-944','0','0','0','0','0','0','0','0','0','0','Jessel - Say 1 OOC'),
-('2010004','20100','1','0','100','1','139000','139000','300000','300000','1','-946','0','0','0','0','0','0','0','0','0','0','Jessel - Say 2 OOC'),
-('2010005','20100','1','0','100','1','145000','145000','300000','300000','5','12','0','0','0','0','0','0','0','0','0','0','Jessel - Emote State Sleep OOC'),
+-- Jane (20098) - NSR
+-- Jessel (20100) - NSR
 -- Purple Hawkstrider (20217) - NSR
 -- Blue Hawkstrider (20220) - NSR
 -- Black Hawkstrider (20222) - NSR
 -- Swift Purple Hawkstrider (20223) - NSR
 -- Swift Green Hawkstrider (20224) - NSR
--- Nova (20244) - NSR
+-- Nova
+('2024401','20244','1','0','100','1','10000','10000','110000','110000','1','-944','-945','-946','1','-1166','-1167','-1168','0','0','0','0','Nova - Random say on OOC'),
+('2024402','20244','1','0','100','1','60000','60000','160000','160000','1','-945','-946','-944','1','-1166','-1169','-1167','0','0','0','0','Nova - Random say on OOC'),
 -- Air Force Trip Wire - Rooftop (Horde) (22001) - npc_air_force_bots
 -- Arena Promoter (22101) - NSR
 -- Blood Elf Reveler (23045) - HOLIDAY SPECIFIC BUFFS FROM DOING EMOTES (NEED MORE INFORMATION)
@@ -32942,9 +32938,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-941','If only I had some wine to go with my cheese...','0','0','0','18929','18'),
 ('-942','Why couldn\'t mother have chosen something else to dedicate herself to? Cakes, pastries, even bread - anything but cheese!','0','0','0','18929','1'),
 ('-943','Ooh what a dreadful job! All day, surrounded by the stench of bad feet.','0','0','0','18929','1'),
-('-944','Was... Was it all a dream? Azuremyst, Bloodymyst, Zangarmarsh, Shadowmoon... even Zul\'Aman... Jane! Jane where are you!','0','0','0','20100','1'),
-('-945','I\'m right here, daddy. You\'ve been asleep all day long. You sure must be tired!','0','0','0','20098','1'),
-('-946','Ah, wonderful. It was all just a dream...','0','0','0','20100','1'),
+('-944','%s holds a sea shell up to her ear.','0','2','0','20244','0'),
+('-945','%s shakes the dirt loose from the shell.','0','2','0','20244','0'),
+('-946','%s picks up a sea shell.','0','2','0','20244','0'),
 ('-947','The pain...the need...I hunger for more...','0','0','10','Common Wretched Text','0'),
 ('-948','What is this? I recognize you from when I killed Akali. You must be this $n that everyone is dreading.','0','0','0','29028','0'),
 ('-949','You don\'t worry me, boy. Just the opposite - I look forward to killing you and your friends. Nothing will stand between me and Zim\'Torga now!','0','0','0','29028','0'),
@@ -33149,6 +33145,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1149','Me crush puny friend of dragons!','0','0','0','23786','0'),
 ('-1150','You leave Stonemaul lands now!','0','0','0','23786','0'),
 ('-1151','Why you wake ghost? Where other Stonemauls?!','0','0','0','23786','0'),
+('-1166','Jane will love this one!','0','0','10','20244','0'),
+('-1167','Oooh, a shiny one!','0','0','10','20244','0'),
+('-1168','I think I can see the Sunwell from here!','0','0','10','20244','0'),
+('-1169','Can you really hear the ocean from one of these shells?','0','0','10','20244','0'),
 ('-1194','Emperor Thaurissan does not wish to be disturbed! Turn back now or face your doom, weak mortals!','0','1','0','9938','0'),
 ('-1195','Prepare to be Malowned!','0','1','0','11143','0'),
 ('-1196','You just got MALOWNED!','0','1','0','11143','0'),
