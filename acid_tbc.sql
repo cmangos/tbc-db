@@ -27093,8 +27093,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2086903','20869','1','0','100','6','1000','1000','0','0','11','31261','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel - Cast Permanent Feign Death (Root) on Spawn'),
 ('2086904','20869','10','0','100','2','0','5','0','0','28','0','31261','0','28','0','36716','0','0','0','0','0','Arcatraz Sentinel (Normal) - Remove Permanent Feign Death (Root) and Energy Discharge on Hostile LOS at 5 Yards'),
 ('2086905','20869','10','0','100','4','0','5','0','0','28','0','31261','0','28','0','38828','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Remove Permanent Feign Death (Root) and Energy Discharge on Hostile LOS at 5 Yards'),
-('2086906','20869','2','0','100','2','8','0','2000','2000','11','36719','0','1','36','21761','0','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Explode and Transform into Destroyed Sentinel at 8% HP'),
-('2086907','20869','2','0','100','4','8','0','2000','2000','11','38830','0','1','36','21761','0','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Explode and Transform into Destroyed Sentinel at 8% HP'),
+('2086906','20869','2','0','100','2','8','0','2000','2000','11','36719','0','1','36','21761','0','0','33','20869','1','0','Arcatraz Sentinel (Normal) - Cast Explode and Transform into Destroyed Sentinel at 8% HP and Give Quest Credit'),
+('2086907','20869','2','0','100','4','8','0','2000','2000','11','38830','0','1','36','21761','0','0','33','20869','1','0','Arcatraz Sentinel (Heroic) - Cast Explode and Transform into Destroyed Sentinel at 8% HP and Give Quest Credit'),
 ('2086908','20869','21','0','100','2','0','0','0','0','11','36716','0','0','42','1','1','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
 ('2086909','20869','21','0','100','4','0','0','0','0','11','38828','0','0','42','1','1','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
 -- Zereketh The Unbound
