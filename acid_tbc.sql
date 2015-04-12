@@ -27087,14 +27087,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2086801','20868','9','0','100','7','0','20','17000','25000','11','36677','4','1','0','0','0','0','0','0','0','0','Entropic Eye - Cast Chaos Breath'),
 ('2086802','20868','9','0','100','3','0','5','6000','8000','11','36664','4','0','0','0','0','0','0','0','0','0','Entropic Eye (Normal) - Cast Tentacle Cleave'),
 ('2086803','20868','9','0','100','5','0','5','4000','7000','11','38816','4','0','0','0','0','0','0','0','0','0','Entropic Eye (Heroic) - Cast Tentacle Cleave'),
--- Arcatraz Sentinel (Need To Confirm That Behaviour is Identical to Official Now)
-('2086901','20869','11','0','100','2','0','0','0','0','11','36716','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge on Spawn'),
-('2086902','20869','11','0','100','4','0','0','0','0','11','38828','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge on Spawn'),
+-- Arcatraz Sentinel
+('2086901','20869','11','0','100','2','0','0','0','0','11','36716','0','0','42','1','1','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge and Set Min Health At 1% on Spawn'),
+('2086902','20869','11','0','100','4','0','0','0','0','11','38828','0','0','42','1','1','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Set Min Health At 1% on Spawn'),
 ('2086903','20869','1','0','100','6','1000','1000','0','0','11','31261','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel - Cast Permanent Feign Death (Root) on Spawn'),
 ('2086904','20869','10','0','100','2','0','5','0','0','28','0','31261','0','28','0','36716','0','0','0','0','0','Arcatraz Sentinel (Normal) - Remove Permanent Feign Death (Root) and Energy Discharge on Hostile LOS at 5 Yards'),
 ('2086905','20869','10','0','100','4','0','5','0','0','28','0','31261','0','28','0','38828','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Remove Permanent Feign Death (Root) and Energy Discharge on Hostile LOS at 5 Yards'),
-('2086906','20869','2','0','100','2','8','0','0','0','11','36719','0','1','36','21761','0','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Explode and Transform into Destroyed Sentinel at 8% HP'),
-('2086907','20869','2','0','100','4','8','0','0','0','11','38830','0','1','36','21761','0','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Explode and Transform into Destroyed Sentinel at 8% HP'),
+('2086906','20869','2','0','100','2','8','0','2000','2000','11','36719','0','1','36','21761','0','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Explode and Transform into Destroyed Sentinel at 8% HP'),
+('2086907','20869','2','0','100','4','8','0','2000','2000','11','38830','0','1','36','21761','0','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Explode and Transform into Destroyed Sentinel at 8% HP'),
+('2086908','20869','21','0','100','2','0','0','0','0','11','36716','0','0','42','1','1','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
+('2086909','20869','21','0','100','4','0','0','0','0','11','38828','0','0','42','1','1','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
 -- Zereketh The Unbound
 ('2087001','20870','4','0','100','6','0','0','0','0','1','-634','0','0','0','0','0','0','0','0','0','0','Zereketh The Unbound - Yell on Aggro'),
 ('2087002','20870','0','0','100','7','21000','32000','32000','45000','11','36119','4','0','0','0','0','0','0','0','0','0','Zereketh The Unbound - Cast Void Zone'),
