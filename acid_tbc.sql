@@ -6114,8 +6114,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1776901','17769','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Blood Knight Adept - Summon Silvermoon City Guardian on Aggro'),
 -- Blood Elf Magister  
 ('1784501','17845','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Blood Elf Magister - Summon Silvermoon City Guardian on Aggro'),
--- Arcane Guardian      
+-- Arcane Guardian
 ('1810301','18103','9','0','100','1','0','30','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Arcane Guardian - Cast Hooked Net'),
+('1810302','18103','1','0','75','33','5000','10000','90000','100000','1','-1170','-1171','-1334','1','-1335','-1336','-1337','0','0','0','0','Arcane Guardian - Random say on OOC'),
 -- Champion Vranesh  
 ('1814601','18146','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Champion Vranesh - Summon Silvermoon City Guardian on Aggro'),
 -- Silvermoon Ranger      
@@ -6151,11 +6152,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Silvermoon Farstrider  
 ('1850701','18507','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Silvermoon Farstrider - Summon Silvermoon City Guardian on Aggro'),
 -- Conjurer Tyren
-('1852701','18527','0','0','100','1','20000','60000','180000','240000','11','12051','0','1','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Evocation'),
-('1852702','18527','0','0','100','1','15000','30000','45000','90000','11','11540','0','0','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Blue Firework'),
-('1852703','18527','0','0','100','1','30000','60000','45000','90000','11','30161','0','0','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Purple Firework'),
-('1852704','18527','0','0','100','1','45000','75000','45000','90000','11','11542','0','0','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Red Streaks Firework'),
-('1852705','18527','0','0','100','1','60000','90000','45000','90000','11','11544','0','0','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Yellow Rose Firework'),
+('1852701','18527','1','0','25','1','30000','60000','180000','240000','11','1949','0','0','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Hellfire while OOC'),
+('1852702','18527','1','0','100','1','90000','120000','420000','480000','11','12051','0','1','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Evocation while OOC'),
 -- Trainee Alcor (18626) - NSR
 -- Trainee Firea (18627) - NSR     
 -- Trainee Sinthar (18628) - NSR
@@ -33154,6 +33152,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1167','Oooh, a shiny one!','0','0','10','20244','0'),
 ('-1168','I think I can see the Sunwell from here!','0','0','10','20244','0'),
 ('-1169','Can you really hear the ocean from one of these shells?','0','0','10','20244','0'),
+('-1170','Obey the laws of Silvermoon. Failure to do so will result in termination.','0','0','0','18103','0'),
+('-1171','Do not disturb the serenity of the city. Peace must be upheld.','0','0','0','18103','0'),
 ('-1194','Emperor Thaurissan does not wish to be disturbed! Turn back now or face your doom, weak mortals!','0','1','0','9938','0'),
 ('-1195','Prepare to be Malowned!','0','1','0','11143','0'),
 ('-1196','You just got MALOWNED!','0','1','0','11143','0'),
@@ -33292,7 +33292,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1330','Do you think I need more pieces of flair?','0','0','0','Jenn Langston random text','0'),
 ('-1331','What do you fancy, $G sir:miss;?','0','0','0','Jenn Langston random text','0'),
 ('-1332','Hi, what would you like?','0','0','0','Jenn Langston random text','0'),
-('-1333','Look what the cat dragged in. What can I get you, $n?','0','0','0','Jenn Langston random text','0');
+('-1333','Look what the cat dragged in. What can I get you, $n?','0','0','0','Jenn Langston random text','0'),
+('-1334','Remain strong. Kael\'thas will - error - Lor\'themar will lead you to power and glory!','0','0','0','18103','0'),
+('-1335','Maintain order within these walls.','0','0','0','18103','0'),
+('-1336','Happiness is mandatory, citizen.','0','0','0','18103','0'),
+('-1337','Do not be disheartened. Silvermoon will remain strong through this course of events.','0','0','0','18103','0');
 
 
 -- =======================================================
