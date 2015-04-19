@@ -14355,6 +14355,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2378901','23789','11','0','100','0','0','0','0','0','11','42433','1','0','0','0','0','0','0','0','0','0','Smolderwing - Cast Smolderwing Fire Breath on Spawn'),
 ('2378902','23789','1','0','100','0','4000','4000','0','0','19','768','0','0','0','0','0','0','0','0','0','0','Smolderwing - Become Hostile after Smolderwing Fire Breath Spell Cast'),
 -- Moxie Steelgrille (23797) - NSR
+-- Zeppelin Power Core
+('2383201','23832','1','0','100','1','1000','1000','5000','5000','11','42491','0','32','0','0','0','0','0','0','0','0','Zeppelin Power Core - Cast Energized Periodic while OOC'),
 -- Sergeant Amelyn      
 ('2383501','23835','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sergeant Amelyn - Flee at 15% HP'),
 -- Razorspine      
