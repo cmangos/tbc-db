@@ -5975,6 +5975,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1664101','16641','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Melaris - Summon Silvermoon City Guardian on Aggro'),
 -- Camberon  
 ('1664201','16642','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Camberon - Summon Silvermoon City Guardian on Aggro'),
+('1664202','16642','11','0','100','0','0','0','0','0','40','2','0','0','0','0','0','0','0','0','0','0','Camberon - Set Ranged Weapon on Spawn'),
+('1664203','16642','1','0','100','1','60000','60000','120000','120000','40','1','0','0','5','133','0','0','0','0','0','0','Camberon - Set Ranged Weapon Model and Emote while OOC'),
+('1664204','16642','1','0','100','1','88000','88000','148000','148000','40','2','0','0','5','0','0','0','0','0','0','0','Camberon - Set Ranged Weapon Model and Emote while OOC'),
 -- Razia  
 ('1664301','16643','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Razia - Summon Silvermoon City Guardian on Aggro'),
 -- Botanist Nathera  
