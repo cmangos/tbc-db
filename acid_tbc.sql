@@ -6160,7 +6160,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1852701','18527','1','0','25','1','30000','60000','180000','240000','11','1949','0','0','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Hellfire while OOC'),
 ('1852702','18527','1','0','100','1','90000','120000','420000','480000','11','12051','0','1','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Evocation while OOC'),
 -- Justin's Bunny Channeler
-('1856301','18563','0','0','100','1','1000','1000','0','0','11','32573','0','0','0','0','0','0','0','0','0','0','Justin\'s Bunny Channeler - Cast Justin\'s Zappy Channel while OOC'),
+('1856301','18563','1','0','100','0','1000','1000','0','0','11','32573','0','0','0','0','0','0','0','0','0','0','Justin\'s Bunny Channeler - Cast Justin\'s Zappy Channel while OOC'),
 -- Trainee Alcor (18626) - NSR
 -- Trainee Firea (18627) - NSR     
 -- Trainee Sinthar (18628) - NSR
