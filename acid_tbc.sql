@@ -5906,6 +5906,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Argent Messenger (16359) - NSR
 -- Vinemaster Suntouched  
 ('1644201','16442','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Vinemaster Suntouched - Summon Silvermoon City Guardian on Aggro'),
+('1644202','16442','1','0','75','1','2000','3500','6500','9000','5','1','0','0','0','0','0','0','0','0','0','0','Vinemaster Suntouched - Emote while OOC'),
 -- Tandrine  
 ('1656801','16568','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Tandrine - Summon Silvermoon City Guardian on Aggro'),
 -- Kredis  
@@ -6135,7 +6136,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1819001','18190','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Kristine Denny - Summon Silvermoon City Guardian on Aggro'),
 -- Ambassador Kelemar  
 ('1819101','18191','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Ambassador Kelemar - Summon Silvermoon City Guardian on Aggro'),
--- Trayanise (18230) - NSR     
+-- Trayanise
+('1823001','18230','1','0','75','33','6000','18000','32000','48000','1','-1338','-1339','-1340','1','-1341','-1342','0','0','0','0','0','Trayanise - Random say on OOC'),
 -- Keyanomir  
 ('1823101','18231','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Keyanomir - Summon Silvermoon City Guardian on Aggro'),
 -- Nimrida (18232) - NSR     
@@ -33305,7 +33307,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1334','Remain strong. Kael\'thas will - error - Lor\'themar will lead you to power and glory!','0','0','0','18103','0'),
 ('-1335','Maintain order within these walls.','0','0','0','18103','0'),
 ('-1336','Happiness is mandatory, citizen.','0','0','0','18103','0'),
-('-1337','Do not be disheartened. Silvermoon will remain strong through this course of events.','0','0','0','18103','0');
+('-1337','Do not be disheartened. Silvermoon will remain strong through this course of events.','0','0','0','18103','0'),
+('-1338','The magister\'s going to kill me...','0','0','0','18230','0'),
+('-1339','Argh. They told me those crystals would work properly!','0','0','0','18230','0'),
+('-1340','When I catch you, I\'m going to disenchant your components, so help me...','0','0','0','18230','0'),
+('-1341','You stay out of the regent lord\'s way! I mean it!','0','0','0','18230','0'),
+('-1342','No, no, no! Come back here!','0','0','0','18230','0');
 
 
 -- =======================================================
