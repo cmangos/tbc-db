@@ -19389,6 +19389,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1806401','18064','0','0','80','1','2000','2000','20000','20000','11','15038','0','1','0','0','0','0','0','0','0','0','Warmaul Shaman - Cast Scorching Totem'),
 ('1806402','18064','2','0','100','0','20','0','0','0','11','11986','0','1','0','0','0','0','0','0','0','0','Warmaul Shaman - Cast Healing Wave'),
 ('1806403','18064','0','0','80','1','6000','6000','12000','16000','11','12548','1','0','0','0','0','0','0','0','0','0','Warmaul Shaman - Cast Frost Shock'),
+-- Living Fire
+('1810901','18109','11','0','100','0','0','0','0','0','1','-1349','0','0','0','0','0','0','0','0','0','0','Living Fire - Say on Spawn'),
+-- Windyreed Quest Credit (Big Hut)
+('1811001','18110','8','0','100','1','31927','-1','0','0','48','2','0','0','11','31928','0','0','0','0','0','0','Windyreed Quest Credit (Big Hut) - Change MovementType and Cast Living Fire on Spell Hit'),
+-- Windyreed Quest Credit (Hut 01)
+('1814201','18142','8','0','100','1','31927','-1','0','0','48','2','0','0','11','31928','0','0','0','0','0','0','Windyreed Quest Credit (Hut 01) - Change MovementType and Cast Living Fire on Spell Hit'),
+-- Windyreed Quest Credit (Hut 02)
+('1814301','18143','8','0','100','1','31927','-1','0','0','48','2','0','0','11','31928','0','0','0','0','0','0','Windyreed Quest Credit (Hut 02) - Change MovementType and Cast Living Fire on Spell Hit'),
+-- Windyreed Quest Credit (Hut 03)
+('1814401','18144','8','0','100','1','31927','-1','0','0','48','2','0','0','11','31928','0','0','0','0','0','0','Windyreed Quest Credit (Hut 03) - Change MovementType and Cast Living Fire on Spell Hit'),
 -- Gurok the Usurper
 ('1818201','18182','0','0','100','1','8000','8000','12000','12000','11','23114','1','0','0','0','0','0','0','0','0','0','Gurok the Usurper - Cast Earth Shock'),
 ('1818202','18182','0','0','100','1','20000','20000','25000','25000','11','22127','1','0','0','0','0','0','0','0','0','0','Gurok the Usurper - Cast Entangling Roots'),
@@ -19415,7 +19425,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1841101','18411','0','0','100','1','30000','30000','30000','50000','11','34771','0','1','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Force Punch'),
 ('1841102','18411','0','0','100','1','9000','9000','9000','15000','11','28168','1','1','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Arcing Smash'),
 -- Kil'sorrow Ritualist
-('1865801','18658','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Prevent Combat Movement on Spawn'),
+('1865801','18658','1','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Set Phase to 0 on Spawn'),
 ('1865802','18658','4','0','100','0','0','0','0','0','11','9613','1','0','23','1','0','0','0','0','0','0','Kil\'sorrow Ritualist - Cast Shadow Bolt and Set Phase 1 on Aggro'),
 ('1865803','18658','9','13','100','1','0','40','2400','3800','11','9613','1','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Cast Shadow Bolt (Phase 1)'),
 ('1865804','18658','3','13','100','0','15','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Kil\'sorrow Ritualist - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -19427,6 +19437,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1865810','18658','2','0','100','0','15','0','0','0','22','3','0','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Set Phase 3 at 15% HP'),
 ('1865811','18658','2','7','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Kil\'sorrow Ritualist - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 ('1865812','18658','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Set Phase to 0 on Evade'),
+('1865813','18658','30','0','100','1','5','18660','0','0','11','32623','10','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Cast Power Subjugator on Receive AI Event Custom A.'),
+-- Subjugator Vaz'shir
+('1866001','18660','1','0','100','0','1000','1000','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A on OOC Timer'),
+('1866002','18660','21','0','100','0','0','0','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A. on Reaching Home'),
 -- Bro'Gaz the Clanless
 ('1868401','18684','9','0','100','1','0','5','9000','13000','11','38313','1','0','0','0','0','0','0','0','0','0','Bro\'Gaz the Clanless - Cast Pummel'),
 ('1868402','18684','0','0','100','1','6000','11000','16000','21000','11','12468','4','0','0','0','0','0','0','0','0','0','Bro\'Gaz the Clanless - Cast Flamestrike'),
@@ -33344,7 +33358,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1339','Argh. They told me those crystals would work properly!','0','0','0','18230','0'),
 ('-1340','When I catch you, I\'m going to disenchant your components, so help me...','0','0','0','18230','0'),
 ('-1341','You stay out of the regent lord\'s way! I mean it!','0','0','0','18230','0'),
-('-1342','No, no, no! Come back here!','0','0','0','18230','0');
+('-1342','No, no, no! Come back here!','0','0','0','18230','0'),
+('-1349','Burn Burn Burn','0','0','12','18109','0');
 
 
 -- =======================================================
