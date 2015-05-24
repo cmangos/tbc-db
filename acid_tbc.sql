@@ -22008,7 +22008,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1832302','18323','0','0','100','7','3600','15700','10900','22100','11','33967','0','0','0','0','0','0','0','0','0','0','Sethekk Guard - Cast Thunderclap'),
 -- Sethekk Prophet (4.3.4 Official Data - Normal/Heroic)
 ('1832501','18325','0','0','100','7','8700','17700','13200','24100','11','27641','4','0','0','0','0','0','0','0','0','0','Sethekk Prophet - Cast Fear'),
-('1832502','18325','6','0','100','6','0','0','0','0','12','18703','1','10000','0','0','0','0','0','0','0','0','Sethekk Prophet - Spawn Sethekk Spirit on Death'),
+('1832502','18325','6','0','100','6','0','0','0','0','11','32692','0','7','0','0','0','0','0','0','0','0','Sethekk Prophet - Summon Arakkoa Spirit on Death'),
 -- Sethekk Shaman (4.3.4 Official Data - Normal/Heroic)
 ('1832601','18326','4','0','15','38','0','0','0','0','1','-1240','-1241','-1242','1','-1242','-1243','-1244','1','-1241','-1242','-1243','Sethekk Shaman - Random Say on Aggro'),
 ('1832602','18326','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sethekk Shaman - Set Phase 1 on Aggro'),
@@ -22032,6 +22032,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dark Vortex (4.3.4 Official Data - Normal/Heroic) 
 ('1870101','18701','0','0','100','7','3600','7200','8400','19300','11','12471','1','0','0','0','0','0','0','0','0','0','Dark Vortex - Cast Shadow Bolt'),
 ('1870102','18701','7','0','100','6','0','0','0','0','18','33554432','0','0','41','0','0','0','0','0','0','0','Dark Vortex - Set Unit Flags and Despawn on Evade'),
+-- Sethekk Spirit (4.3.4 Official Data - Normal/Heroic)
+('1870301','18703','11','0','100','6','0','0','0','0','11','24051','0','1','0','0','0','0','0','0','0','0','Sethekk Spirit - Cast Spirit Burst on Spawn'),
 -- Lakka (18956) - GOSSIP AND DB SCRIPT
 -- Syth Fire Elemental (4.3.4 Official Data - Normal/Heroic) 
 ('1920301','19203','4','0','100','6','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Syth Fire Elemental - Set Phase 1 on Aggro'),
