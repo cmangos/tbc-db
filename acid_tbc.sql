@@ -5900,191 +5900,112 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cat (6368) - NSR     
 -- Lunar Festival Harbinger (15895) - NSR
 -- Lunar Festival Vendor (15898) - NSR
--- Sathren Azuredawn  
-('1619101','16191','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Sathren Azuredawn - Summon Silvermoon City Guardian on Aggro'),
+-- Sathren Azuredawn  16191
 -- Silvermoon City Guardian (16222) - guard_silvermoon 
 -- Argent Messenger (16359) - NSR
 -- Vinemaster Suntouched  
-('1644201','16442','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Vinemaster Suntouched - Summon Silvermoon City Guardian on Aggro'),
-('1644202','16442','1','0','75','1','2000','3500','6500','9000','5','1','0','0','0','0','0','0','0','0','0','0','Vinemaster Suntouched - Emote while OOC'),
--- Tandrine  
-('1656801','16568','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Tandrine - Summon Silvermoon City Guardian on Aggro'),
--- Kredis  
-('1661001','16610','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Kredis - Summon Silvermoon City Guardian on Aggro'),
--- Zalle  
-('1661101','16611','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Zalle - Summon Silvermoon City Guardian on Aggro'),
--- Velanni  
-('1661201','16612','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Velanni - Summon Silvermoon City Guardian on Aggro'),
--- Parnis  
-('1661301','16613','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Parnis - Summon Silvermoon City Guardian on Aggro'),
--- Novia  
-('1661501','16615','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Novia - Summon Silvermoon City Guardian on Aggro'),
--- Periel  
-('1661601','16616','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Periel - Summon Silvermoon City Guardian on Aggro'),
--- Daenice  
-('1661701','16617','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Daenice - Summon Silvermoon City Guardian on Aggro'),
+('1644201','16442','1','0','75','1','2000','3500','6500','9000','5','1','0','0','0','0','0','0','0','0','0','0','Vinemaster Suntouched - Emote while OOC'),
+-- Tandrine  16568
+-- Kredis  16610
+-- Zalle  16611
+-- Velanni  16612
+-- Parnis  16613
+-- Novia  16615
+-- Periel  16616
+-- Daenice  16617
 -- Innkeeper Velandra (16618) - npc_innkeeper 
--- Celana  
-('1661901','16619','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Celana - Summon Silvermoon City Guardian on Aggro'),
--- Mathaleron  
-('1662001','16620','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Mathaleron - Summon Silvermoon City Guardian on Aggro'),
--- Ileda  
-('1662101','16621','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Ileda - Summon Silvermoon City Guardian on Aggro'),
--- Zyandrel  
-('1662301','16623','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Zyandrel - Summon Silvermoon City Guardian on Aggro'),
--- Gelanthis  
-('1662401','16624','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Gelanthis - Summon Silvermoon City Guardian on Aggro'),
--- Keeli  
-('1662501','16625','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Keeli - Summon Silvermoon City Guardian on Aggro'),
--- Tynna  
-('1662601','16626','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Tynna - Summon Silvermoon City Guardian on Aggro'),
--- Ithillan  
-('1662701','16627','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Ithillan - Summon Silvermoon City Guardian on Aggro'),
--- Caidori  
-('1662801','16628','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Caidori - Summon Silvermoon City Guardian on Aggro'),
--- Tandron  
-('1662901','16629','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Tandron - Summon Silvermoon City Guardian on Aggro'),
--- Andra  
-('1663101','16631','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Andra - Summon Silvermoon City Guardian on Aggro'),
--- Sedana  
-('1663301','16633','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Sedana - Summon Silvermoon City Guardian on Aggro'),
--- Dolothos  
-('1663401','16634','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Dolothos - Summon Silvermoon City Guardian on Aggro'),
--- Lyna  
-('1663501','16635','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Lyna - Summon Silvermoon City Guardian on Aggro'),
--- Zathanna  
-('1663601','16636','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Zathanna - Summon Silvermoon City Guardian on Aggro'),
--- Welethelon  
-('1663701','16637','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Welethelon - Summon Silvermoon City Guardian on Aggro'),
--- Deynna  
-('1663801','16638','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Deynna - Summon Silvermoon City Guardian on Aggro'),
--- Galana  
-('1663901','16639','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Galana - Summon Silvermoon City Guardian on Aggro'),
+-- Celana  16619
+-- Mathaleron  16620
+-- Ileda  16621
+-- Zyandrel  16623
+-- Gelanthis  16624
+-- Keeli  16625
+-- Tynna  16626
+-- Ithillan  16627
+-- Caidori  16628
+-- Tandron  16629
+-- Andra  16631
+-- Sedana  16633
+-- Dolothos  16634
+-- Lyna  16635
+-- Zathanna  16636
+-- Welethelon  16637
+-- Deynna  16638
+-- Galana  16639
 -- Keelen Sheets
 ('1664001','16640','1','0','100','1','1000','1000','600000','600000','11','35915','0','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Molten Armor on Spawn'),
-('1664002','16640','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Keelen Sheets - Summon Silvermoon City Guardian on Aggro'),
-('1664003','16640','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 1 on Aggro'),
-('1664004','16640','9','5','100','1','0','5','5000','9000','11','33661','1','0','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Crush Armor (Phase 1)'),
-('1664005','16640','24','5','100','1','33661','10','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 2 on Target Max Crush Armor Aura Stack (Phase 1)'),
-('1664006','16640','28','3','100','1','33661','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 1 on Target Missing Crush Armor Aura Stack (Phase 2)'),
-('1664007','16640','0','0','100','1','7000','11000','12000','17000','11','6713','1','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Disarm'),
-('1664008','16640','9','0','100','1','14000','18000','13000','17000','11','37110','4','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Fire Blast'),
-('1664009','16640','9','0','100','1','16000','21000','15000','19000','11','37109','4','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Fireball Volley'),
-('1664010','16640','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase to 0 on Evade'),
--- Melaris  
-('1664101','16641','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Melaris - Summon Silvermoon City Guardian on Aggro'),
+('1664002','16640','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 1 on Aggro'),
+('1664003','16640','9','5','100','1','0','5','5000','9000','11','33661','1','0','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Crush Armor (Phase 1)'),
+('1664004','16640','24','5','100','1','33661','10','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 2 on Target Max Crush Armor Aura Stack (Phase 1)'),
+('1664005','16640','28','3','100','1','33661','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 1 on Target Missing Crush Armor Aura Stack (Phase 2)'),
+('1664006','16640','0','0','100','1','7000','11000','12000','17000','11','6713','1','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Disarm'),
+('1664007','16640','9','0','100','1','14000','18000','13000','17000','11','37110','4','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Fire Blast'),
+('1664008','16640','9','0','100','1','16000','21000','15000','19000','11','37109','4','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Fireball Volley'),
+('1664009','16640','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase to 0 on Evade'),
+-- Melaris  16641
 -- Camberon  
-('1664201','16642','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Camberon - Summon Silvermoon City Guardian on Aggro'),
-('1664202','16642','11','0','100','0','0','0','0','0','40','2','0','0','0','0','0','0','0','0','0','0','Camberon - Set Ranged Weapon on Spawn'),
-('1664203','16642','1','0','100','1','60000','60000','120000','120000','40','1','0','0','5','133','0','0','0','0','0','0','Camberon - Set Ranged Weapon Model and Emote while OOC'),
-('1664204','16642','1','0','100','1','88000','88000','148000','148000','40','2','0','0','5','0','0','0','0','0','0','0','Camberon - Set Ranged Weapon Model and Emote while OOC'),
--- Razia  
-('1664301','16643','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Razia - Summon Silvermoon City Guardian on Aggro'),
--- Botanist Nathera  
-('1664401','16644','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Botanist Nathera - Summon Silvermoon City Guardian on Aggro'),
--- Alamma  
-('1664601','16646','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Alamma - Summon Silvermoon City Guardian on Aggro'),
--- Talionia  
-('1664701','16647','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Talionia - Summon Silvermoon City Guardian on Aggro'),
--- Zanien  
-('1664801','16648','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Zanien - Summon Silvermoon City Guardian on Aggro'),
--- Torian  
-('1664901','16649','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Torian - Summon Silvermoon City Guardian on Aggro'),
+('1664201','16642','11','0','100','0','0','0','0','0','40','2','0','0','0','0','0','0','0','0','0','0','Camberon - Set Ranged Weapon on Spawn'),
+('1664202','16642','1','0','100','1','60000','60000','120000','120000','40','1','0','0','5','133','0','0','0','0','0','0','Camberon - Set Ranged Weapon Model and Emote while OOC'),
+('1664203','16642','1','0','100','1','88000','88000','148000','148000','40','2','0','0','5','0','0','0','0','0','0','0','Camberon - Set Ranged Weapon Model and Emote while OOC'),
+-- Razia  16643
+-- Botanist Nathera  16644
+-- Alamma  16646
+-- Talionia  16647
+-- Zanien  16648
+-- Torian  16649
 -- Bithrus
-('1665001','16650','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Bithrus - Summon Silvermoon City Guardian on Aggro'),
-('1665002','16650','0','0','100','1','5000','30000','30000','60000','11','11540','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Blue Firework'),
-('1665003','16650','0','0','100','1','20000','45000','30000','60000','11','11541','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Green Firework'),
-('1665004','16650','0','0','100','1','30000','60000','30000','60000','11','30161','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Purple Firework'),
-('1665005','16650','0','0','100','1','45000','75000','30000','60000','11','11542','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Red Streaks Firework'),
-('1665006','16650','0','0','100','1','60000','90000','30000','60000','11','11544','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Yellow Rose Firework'),
--- Zaedana  
-('1665101','16651','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Zaedana - Summon Silvermoon City Guardian on Aggro'),
--- Quithas  
-('1665201','16652','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Quithas - Summon Silvermoon City Guardian on Aggro'),
--- Inethven  
-('1665301','16653','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Inethven - Summon Silvermoon City Guardian on Aggro'),
--- Narinth  
-('1665401','16654','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Narinth - Summon Silvermoon City Guardian on Aggro'),
--- Harene Plainwalker  
-('1665501','16655','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Harene Plainwalker - Summon Silvermoon City Guardian on Aggro'),
--- Shalenn  
-('1665601','16656','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Shalenn - Summon Silvermoon City Guardian on Aggro'),
--- Aldrae  
-('1665801','16658','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Aldrae - Summon Silvermoon City Guardian on Aggro'),
--- Lotheolan  
-('1665901','16659','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Lotheolan - Summon Silvermoon City Guardian on Aggro'),
--- Belestra  
-('1666001','16660','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Belestra - Summon Silvermoon City Guardian on Aggro'),
--- Alestus  
-('1666201','16662','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Alestus - Summon Silvermoon City Guardian on Aggro'),
--- Belil  
-('1666301','16663','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Belil - Summon Silvermoon City Guardian on Aggro'),
--- Zelan  
-('1666401','16664','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Zelan - Summon Silvermoon City Guardian on Aggro'),
--- Feledis  
-('1666601','16666','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Feledis - Summon Silvermoon City Guardian on Aggro'),
--- Danwe  
-('1666701','16667','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Danwe - Summon Silvermoon City Guardian on Aggro'),
--- Gloresse  
-('1666801','16668','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Gloresse - Summon Silvermoon City Guardian on Aggro'),
--- Bemarrin  
-('1666901','16669','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Bemarrin - Summon Silvermoon City Guardian on Aggro'),
--- Eriden  
-('1667001','16670','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Eriden - Summon Silvermoon City Guardian on Aggro'),
--- Mirvedon  
-('1667101','16671','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Mirvedon - Summon Silvermoon City Guardian on Aggro'),
--- Tana  
-('1667201','16672','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Tana - Summon Silvermoon City Guardian on Aggro'),
--- Oninath  
-('1667301','16673','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Oninath - Summon Silvermoon City Guardian on Aggro'),
--- Zandine  
-('1667401','16674','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Zandine - Summon Silvermoon City Guardian on Aggro'),
--- Halthenis  
-('1667501','16675','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Halthenis - Summon Silvermoon City Guardian on Aggro'),
--- Sylann  
-('1667601','16676','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Sylann - Summon Silvermoon City Guardian on Aggro'),
--- Quelis  
-('1667701','16677','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Quelis - Summon Silvermoon City Guardian on Aggro'),
--- Rahein  
-('1667801','16678','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Rahein - Summon Silvermoon City Guardian on Aggro'),
--- Osselan  
-('1667901','16679','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Osselan - Summon Silvermoon City Guardian on Aggro'),
--- Ithelis  
-('1668001','16680','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Ithelis - Summon Silvermoon City Guardian on Aggro'),
--- Champion Bachi  
-('1668101','16681','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Champion Bachi - Summon Silvermoon City Guardian on Aggro'),
--- Darlia  
-('1668301','16683','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Darlia - Summon Silvermoon City Guardian on Aggro'),
+('1665001','16650','0','0','100','1','5000','30000','30000','60000','11','11540','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Blue Firework'),
+('1665002','16650','0','0','100','1','20000','45000','30000','60000','11','11541','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Green Firework'),
+('1665003','16650','0','0','100','1','30000','60000','30000','60000','11','30161','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Purple Firework'),
+('1665004','16650','0','0','100','1','45000','75000','30000','60000','11','11542','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Red Streaks Firework'),
+('1665005','16650','0','0','100','1','60000','90000','30000','60000','11','11544','0','0','0','0','0','0','0','0','0','0','Bithrus - Cast Yellow Rose Firework'),
+-- Zaedana  16651
+-- Quithas  16652
+-- Inethven  16653
+-- Narinth  16654
+-- Harene Plainwalker 16655 
+-- Shalenn  16656
+-- Aldrae  16658
+-- Lotheolan  16659
+-- Belestra  16660
+-- Alestus  16662
+-- Belil  16663
+-- Zelan  16664
+-- Feledis  16666
+-- Danwe  16667
+-- Gloresse  16668
+-- Bemarrin  16669
+-- Eriden  16670
+-- Mirvedon  16671
+-- Tana  16672
+-- Oninath  16673
+-- Zandine  16674
+-- Halthenis  16675
+-- Sylann  16676
+-- Quelis  16677
+-- Rahein  16678
+-- Osselan  16679
+-- Ithelis  16680
+-- Champion Bachi  16681
+-- Darlia  16683
 -- Zelanis (16684) - npc_rogue_trainer 
--- Elara  
-('1668501','16685','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Elara - Summon Silvermoon City Guardian on Aggro'),
--- Nerisen  
-('1668601','16686','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Nerisen - Summon Silvermoon City Guardian on Aggro'),
--- Talmar  
-('1668701','16687','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Talmar - Summon Silvermoon City Guardian on Aggro'),
--- Lynalis  
-('1668801','16688','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Lynalis - Summon Silvermoon City Guardian on Aggro'),
--- Zaralda  
-('1668901','16689','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Zaralda - Summon Silvermoon City Guardian on Aggro'),
--- Rathin  
-('1669001','16690','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Rathin - Summon Silvermoon City Guardian on Aggro'),
--- Noraelath  
-('1669101','16691','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Noraelath - Summon Silvermoon City Guardian on Aggro'),
--- Tyn  
-('1669201','16692','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Tyn - Summon Silvermoon City Guardian on Aggro'),
--- Winthren  
-('1669301','16693','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Winthren - Summon Silvermoon City Guardian on Aggro'),
+-- Elara  16685
+-- Nerisen  16686
+-- Talmar  16687
+-- Lynalis  16688
+-- Zaralda  16689
+-- Rathin  16690
+-- Noraelath  16691
+-- Tyn  16692
+-- Winthren  16693
 -- Karen Wentworth (16694) - NSR     
 -- Gurak (16695) - NSR     
 -- Krukk
 ('1669601','16696','9','0','100','1','60000','600000','1800000','2100000','11','17205','0','0','0','0','0','0','0','0','0','0','Krukk - Cast Winterfall Firewater'),
--- Amin  
-('1670301','16703','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Amin - Summon Silvermoon City Guardian on Aggro'),
--- Drathen  
-('1678001','16780','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Drathen - Summon Silvermoon City Guardian on Aggro'),
+-- Amin  16703
+-- Drathen  16780
 -- Midsummer Celebrant (16781) - NSR     
--- Yatheon  
-('1678201','16782','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Yatheon - Summon Silvermoon City Guardian on Aggro'),
+-- Yatheon  16782
 -- Halduron Brightwing      
 ('1680101','16801','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Halduron Brightwing - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('1680102','16801','9','1','100','1','5','30','2300','3900','11','15620','1','0','40','2','0','0','0','0','0','0','Halduron Brightwing - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
@@ -6096,66 +6017,42 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Festival Talespinner (16818) - NSR
 -- Honor Hold Target Dummy Middle (16897) - NSR     
 -- Broom (17213) - NSR     
--- Jenath  
-('1762701','17627','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Jenath - Summon Silvermoon City Guardian on Aggro'),
--- Vynna  
-('1762801','17628','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Vynna - Summon Silvermoon City Guardian on Aggro'),
--- Feynna  
-('1762901','17629','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Feynna - Summon Silvermoon City Guardian on Aggro'),
+-- Jenath  17627
+-- Vynna  17628
+-- Feynna  17629
 -- Innkeeper Jovia (17630) - npc_innkeeper 
--- Ceera  
-('1763101','17631','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Ceera - Summon Silvermoon City Guardian on Aggro'),
--- Elana  
-('1763201','17632','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Elana - Summon Silvermoon City Guardian on Aggro'),
--- Hatheon  
-('1763301','17633','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Hatheon - Summon Silvermoon City Guardian on Aggro'),
--- Knight-Lord Bloodvalor  
-('1771701','17717','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Knight-Lord Bloodvalor - Summon Silvermoon City Guardian on Aggro'),
--- Magister Astalor Bloodsworn  
-('1771801','17718','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Magister Astalor Bloodsworn - Summon Silvermoon City Guardian on Aggro'),
+-- Ceera  17631
+-- Elana  17632
+-- Hatheon  17633
+-- Knight-Lord Bloodvalor 17717 
+-- Magister Astalor Bloodsworn  17718
 -- Blood Knight Stillblade (17768) - npc_blood_knight_stillblade 
--- Blood Knight Adept  
-('1776901','17769','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Blood Knight Adept - Summon Silvermoon City Guardian on Aggro'),
--- Blood Elf Magister  
-('1784501','17845','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Blood Elf Magister - Summon Silvermoon City Guardian on Aggro'),
+-- Blood Knight Adept  17769
+-- Blood Elf Magister  17845
 -- Arcane Guardian
 ('1810301','18103','9','0','100','1','0','30','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Arcane Guardian - Cast Hooked Net'),
 ('1810302','18103','1','0','75','33','5000','10000','90000','100000','1','-1170','-1171','-1334','1','-1335','-1336','-1337','0','0','0','0','Arcane Guardian - Random say on OOC'),
--- Champion Vranesh  
-('1814601','18146','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Champion Vranesh - Summon Silvermoon City Guardian on Aggro'),
+-- Champion Vranesh  18146
 -- Silvermoon Ranger      
 ('1814701','18147','9','0','100','1','0','60','7000','12000','11','29120','1','0','0','0','0','0','0','0','0','0','Silvermoon Ranger - Cast Shoot Bow'),
--- Initiate Colin  
-('1817401','18174','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Initiate Colin - Summon Silvermoon City Guardian on Aggro'),
--- Initiate Emeline  
-('1817501','18175','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Initiate Emeline - Summon Silvermoon City Guardian on Aggro'),
--- Cheneta  
-('1818701','18187','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Cheneta - Summon Silvermoon City Guardian on Aggro'),
--- Tatai  
-('1818801','18188','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Tatai - Summon Silvermoon City Guardian on Aggro'),
--- Dela Runetotem  
-('1818901','18189','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Dela Runetotem - Summon Silvermoon City Guardian on Aggro'),
--- Kristine Denny  
-('1819001','18190','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Kristine Denny - Summon Silvermoon City Guardian on Aggro'),
--- Ambassador Kelemar  
-('1819101','18191','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Ambassador Kelemar - Summon Silvermoon City Guardian on Aggro'),
+-- Initiate Colin  18174
+-- Initiate Emeline  18175
+-- Cheneta  18187
+-- Tatai  18188
+-- Dela Runetotem  18189
+-- Kristine Denny  18190
+-- Ambassador Kelemar  18191
 -- Trayanise
 ('1823001','18230','1','0','75','33','6000','18000','32000','48000','1','-1338','-1339','-1340','1','-1341','-1342','0','0','0','0','0','Trayanise - Random say on OOC'),
--- Keyanomir  
-('1823101','18231','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Keyanomir - Summon Silvermoon City Guardian on Aggro'),
+-- Keyanomir  18231
 -- Nimrida (18232) - NSR     
 -- Tiny Arcane Construct (18237) - NSR
--- Lyria Skystrider  
-('1830301','18303','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Lyria Skystrider - Summon Silvermoon City Guardian on Aggro'),
--- Silvermoon Magister  
-('1833601','18336','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Silvermoon Magister - Summon Silvermoon City Guardian on Aggro'),
--- Priest Kath'mar  
-('1833701','18337','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Priest Kath\'mar - Summon Silvermoon City Guardian on Aggro'),
--- Olirea  
-('1834701','18347','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Olirea - Summon Silvermoon City Guardian on Aggro'),
+-- Lyria Skystrider  18303
+-- Silvermoon Magister  18336
+-- Priest Kath'mar  18337
+-- Olirea  18347
 -- Silvermoon Practice Dummy (18504) - NSR     
--- Silvermoon Farstrider  
-('1850701','18507','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Silvermoon Farstrider - Summon Silvermoon City Guardian on Aggro'),
+-- Silvermoon Farstrider  18507
 -- Conjurer Tyren
 ('1852701','18527','1','0','25','1','30000','60000','180000','240000','11','1949','0','0','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Hellfire while OOC'),
 ('1852702','18527','1','0','100','1','90000','120000','420000','480000','11','12051','0','1','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Evocation while OOC'),
@@ -6164,48 +6061,34 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Trainee Alcor (18626) - NSR
 -- Trainee Firea (18627) - NSR     
 -- Trainee Sinthar (18628) - NSR
--- Instructor Cel  
-('1862901','18629','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Instructor Cel - Summon Silvermoon City Guardian on Aggro'),
--- Vaeron Kormar  
-('1866801','18668','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Vaeron Kormar - Summon Silvermoon City Guardian on Aggro'),
--- Terric Brightwind  
-('1866901','18669','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Terric Brightwind - Summon Silvermoon City Guardian on Aggro'),
--- Priest Ennas  SERIES OF SAYS 
-('1867101','18671','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Priest Ennas - Summon Silvermoon City Guardian on Aggro'),     
+-- Instructor Cel  18629
+-- Vaeron Kormar  18668
+-- Terric Brightwind  18669
+-- Priest Ennas  SERIES OF SAYS 18671
 -- Leper Gnome Laborer (18722) - NSR
--- Melaya Tassier  
-('1872401','18724','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Melaya Tassier - Summon Silvermoon City Guardian on Aggro'),
--- Rarthein  
-('1872701','18727','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Rarthein - Summon Silvermoon City Guardian on Aggro'),
+-- Melaya Tassier  18724
+-- Rarthein  18727
 -- Sirigna'no (18730) - NSR
--- Elrodan  
-('1874301','18743','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Elrodan - Summon Silvermoon City Guardian on Aggro'),
+-- Elrodan  18743
 -- Aurosalia (18744) - NSR
--- Darise  
-('1876101','18761','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Darise - Summon Silvermoon City Guardian on Aggro'),
+-- Darise  18761
 -- Blood Elf Warlock
 ('1876301','18763','11','0','100','0','0','0','0','0','42','1','1','0','0','0','0','0','0','0','0','0','Blood Elf Warlock - Set Invinceability at 1% on Spawn'),
 ('1876302','18763','4','0','100','0','0','0','0','0','11','32932','0','0','0','0','0','0','0','0','0','0','Blood Elf Warlock - Cast Sun Shield on Aggro'),
 -- Faenel the Drunkard (18781) - NSR
--- Gatewatcher Aendor  
-('1879001','18790','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Gatewatcher Aendor - Summon Silvermoon City Guardian on Aggro'),
+-- Gatewatcher Aendor  18790
 -- Harassed Citizen (18792) - NSR
--- Silvermoon Citizen  
-('1879901','18799','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Silvermoon Citizen - Summon Silvermoon City Guardian on Aggro'),
+-- Silvermoon Citizen  18799
 -- Blood Elf Commoner (19169) - NSR
--- Kalinda  
-('1977501','19775','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Kalinda - Summon Silvermoon City Guardian on Aggro'),
+-- Kalinda  19775
 -- Bipp Glizzitor (19923) - NSR
--- Worker Mo'rrisroe  
-('2008701','20087','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Worker Mo\'rrisroe - Summon Silvermoon City Guardian on Aggro'),
+-- Worker Mo'rrisroe  20087
 -- Duyash the Cruel (20390) - NSR
--- Sorim Lightsong  
-('2061201','20612','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Sorim Lightsong - Summon Silvermoon City Guardian on Aggro'),
+-- Sorim Lightsong  20612
 -- Royal Guard      
 ('2067201','20672','9','0','100','1','0','5','7000','11000','11','40505','1','0','0','0','0','0','0','0','0','0','Royal Guard - Cast Cleave'),
 ('2067202','20672','2','0','100','1','30','0','120000','120000','11','8599','0','1','0','0','0','0','0','0','0','0','Royal Guard - Cast Enrage at 30% HP'),
--- Herald Amorlin  
-('2072401','20724','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Herald Amorlin - Summon Silvermoon City Guardian on Aggro'),
+-- Herald Amorlin  20724
 -- Senior Sergeant Eveningshade (21155) - NSR
 -- Officer Dawning (21970) - NSR
 -- Eye of the Storm Envoy (22015) - SCRIPTED IN ANOTHER ZONE   
@@ -6235,8 +6118,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2520201','25202','11','0','100','0','0','0','0','0','42','1','1','0','0','0','0','0','0','0','0','0','Arcanist Myndimendez - Set Invinceability at 1% on Spawn'),
 -- Roitau
 ('2520701','25207','11','0','100','0','0','0','0','0','42','1','1','0','0','0','0','0','0','0','0','0','Roitau - Set Invinceability at 1% on Spawn'),
--- Lord Solanar Bloodwrath  
-('2522301','25223','4','0','100','0','0','0','0','0','12','16222','1','300000','0','0','0','0','0','0','0','0','Lord Solanar Bloodwrath - Summon Silvermoon City Guardian on Aggro'),
+-- Lord Solanar Bloodwrath  25223
 -- Arena Organizer (26012) - NSR     
 -- Master Flame Eater (26113) - NSR     
 -- Midsummer Merchant (26124) - NSR     
