@@ -6058,10 +6058,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1852702','18527','1','0','100','1','90000','120000','420000','480000','11','12051','0','1','0','0','0','0','0','0','0','0','Conjurer Tyren - Cast Evocation while OOC'),
 -- Justin's Bunny Channeler
 ('1856301','18563','1','0','100','0','1000','1000','0','0','11','32573','0','0','0','0','0','0','0','0','0','0','Justin\'s Bunny Channeler - Cast Justin\'s Zappy Channel while OOC'),
--- Trainee Alcor (18626) - NSR
--- Trainee Firea (18627) - NSR     
+-- Trainee Alcor
+('1862601','18626','1','0','100','33','1000','1000','4000','4000','10','35','60','36','10','54','36','60','0','0','0','0','Trainee Alcor - Random Emote on OOC'),
+-- Trainee Firea
+('1862701','18627','1','0','100','33','1000','1000','4000','4000','10','35','60','36','10','54','36','60','0','0','0','0','Trainee Firea - Random Emote on OOC'),
 -- Trainee Sinthar (18628) - NSR
--- Instructor Cel  18629
+-- Instructor Cel
+('1862902','18629','1','0','100','1','1000','3000','6000','8000','10','1','25','274','0','0','0','0','0','0','0','0','Instructor Cel - Random Emote on OOC'),
 -- Vaeron Kormar  18668
 -- Terric Brightwind  18669
 -- Priest Ennas  SERIES OF SAYS 18671
@@ -18148,6 +18151,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2129604','21296','1','2','100','0','25000','25000','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Bladespire Champion (Phase 2) - Evade on OOC Timer'),
 ('2129605','21296','0','0','100','1','5000','8000','12000','18000','11','8078','0','0','0','0','0','0','0','0','0','0','Bladespire Champion - Cast Thunderclap'),
 ('2129606','21296','7','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bladespire Champion - Set Phase 1 on Evade'),
+-- Raven's Wood Leafbeard
+('2132601','21326','0','0','50','1','9000','12000','35000','42000','11','37696','0','0','0','0','0','0','0','0','0','0','Raven\'s Wood Leafbeard - Cast Force of Nature'),
+('2132602','21326','30','0','100','0','5','22226','0','0','2','35','1','0','24','0','0','0','1','-A','0','0','Raven\'s Wood Leafbeard - Becomes friendly on Receive AI Event.'),
+('2132603','21326','30','0','100','0','5','22226','0','0','41','15000','0','0','0','0','0','0','0','0','0','0','Raven\'s Wood Leafbeard - Despawns on Receive AI Event.'),
 -- Greater Crust Burster
 ('2138001','21380','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Greater Crust Burster - Remove Unselectable Unit Flag on Spawn'),
 ('2138002','21380','11','0','100','0','0','0','0','0','11','29147','0','16','11','33928','0','0','21','0','0','0','Greater Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Spawn'),
@@ -18196,6 +18203,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wrath Speaker
 ('2219501','22195','0','0','75','1','2500','7500','14000','18000','11','34017','1','0','0','0','0','0','0','0','0','0','Wrath Speaker - Cast Rain of Chaos'),
 ('2219502','22195','0','0','100','1','10100','14100','122000','130000','11','11980','4','1','0','0','0','0','0','0','0','0','Wrath Speaker - Cast Curse of Weakness'),
+-- Koi-Koi Spirit
+('2222601','22226','0','0','100','1','1000','3000','15000','17000','11','36093','1','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Cast Ghost Strike'),
+('2222602','22226','6','0','100','0','0','0','0','0','45','5','50','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Send AI Event on Death.'),
 -- Bash'ir Raider
 ('2224101','22241','0','0','60','1','7000','7000','12000','12000','11','35922','0','0','0','0','0','0','0','0','0','0','Bash\'ir Raider - Cast Energy Flare'),
 ('2224102','22241','0','0','90','1','30000','30000','30000','30000','11','32920','0','0','0','0','0','0','0','0','0','0','Bash\'ir Raider - Cast Warp'),
