@@ -18153,7 +18153,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2129606','21296','7','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bladespire Champion - Set Phase 1 on Evade'),
 -- Raven's Wood Leafbeard
 ('2132601','21326','0','0','50','1','9000','12000','35000','42000','11','37696','0','0','0','0','0','0','0','0','0','0','Raven\'s Wood Leafbeard - Cast Force of Nature'),
-('2132602','21326','30','0','100','0','5','22226','0','0','2','35','1','0','24','0','0','0','1','-A','0','0','Raven\'s Wood Leafbeard - Becomes friendly on Receive AI Event.'),
+('2132602','21326','30','0','100','0','5','22226','0','0','2','35','1','0','24','0','0','0','1','-1350','0','0','Raven\'s Wood Leafbeard - Becomes friendly on Receive AI Event.'),
 ('2132603','21326','30','0','100','0','5','22226','0','0','41','15000','0','0','0','0','0','0','0','0','0','0','Raven\'s Wood Leafbeard - Despawns on Receive AI Event.'),
 -- Greater Crust Burster
 ('2138001','21380','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Greater Crust Burster - Remove Unselectable Unit Flag on Spawn'),
@@ -32855,7 +32855,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1340','When I catch you, I\'m going to disenchant your components, so help me...','0','0','0','18230','0'),
 ('-1341','You stay out of the regent lord\'s way! I mean it!','0','0','0','18230','0'),
 ('-1342','No, no, no! Come back here!','0','0','0','18230','0'),
-('-1349','Burn Burn Burn','0','0','12','18109','0');
+('-1349','Burn Burn Burn','0','0','12','18109','0'),
+('-1350','%s appears very grateful to be free of the koi-koi spirit\'s influence.','0','2','0','21326','34');
 
 
 -- =======================================================
