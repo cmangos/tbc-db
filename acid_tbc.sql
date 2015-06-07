@@ -20747,6 +20747,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2238705','22387','0','0','100','1','4000','9000','9000','14000','11','12058','4','1','0','0','0','0','0','0','0','0','Lithic Oracle - Cast Chain Lightning'),
 -- Lithic Talonguard
 ('2238801','22388','0','0','100','1','2000','5000','45000','50000','11','6016','1','0','0','0','0','0','0','0','0','0','Lithic Talonguard - Cast Pierce Armor'),
+-- Sand Gnome
+('2248301','22483','11','0','100','0','0','0','0','0','1','-1351','-1352','-1353','0','0','0','0','0','0','0','0','Sand Gnome - Say on Spawned'),
 -- Lost Torranche
 ('2280701','22807','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lost Torranche - Flee at 15% HP'),
 -- Guardian of the Hawk
@@ -32856,7 +32858,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1341','You stay out of the regent lord\'s way! I mean it!','0','0','0','18230','0'),
 ('-1342','No, no, no! Come back here!','0','0','0','18230','0'),
 ('-1349','Burn Burn Burn','0','0','12','18109','0'),
-('-1350','%s appears very grateful to be free of the koi-koi spirit\'s influence.','0','2','0','21326','34');
+('-1350','%s appears very grateful to be free of the koi-koi spirit\'s influence.','0','2','0','21326','34'),
+('-1351','AYYAYAAYAA!','0','0','0','22483','0'),
+('-1352','AWOOOOGAAAA!','0','0','0','22483','0'),
+('-1353','AAAAEEEEEEIIIIIIII!!!!!','0','0','0','22483','0');
 
 
 -- =======================================================
