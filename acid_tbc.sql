@@ -4545,13 +4545,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hillsbrad Councilman
 ('238701','2387','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Hillsbrad Councilman - Prevent Combat Movement and Set Phase to 0 on Spawn'),
 ('238702','2387','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Cast Frost Armor on Spawn'),
-('238703','2387','4','0','100','0','0','0','0','0','11','20806','1','0','23','1','0','0','0','0','0','0','Hillsbrad Councilman - Cast Frostbolt and Set Phase 1 on Aggro'),
+('238703','2387','4','0','100','0','0','0','0','0','11','20806','1','0','22','1','0','0','0','0','0','0','Hillsbrad Councilman - Cast Frostbolt and Set Phase 1 on Aggro'),
 ('238704','2387','9','13','100','1','0','40','3400','4800','11','20806','1','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Cast Frostbolt (Phase 1)'),
-('238705','2387','3','13','100','0','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Hillsbrad Councilman - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('238706','2387','9','13','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Start Combat Movement at 35 Yards (Phase 1)'),
-('238707','2387','9','13','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('238708','2387','9','13','100','0','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Start Combat Movement Below 5 Yards (Phase 1)'),
-('238709','2387','3','11','100','1','100','15','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('238705','2387','3','13','100','0','7','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Hillsbrad Councilman - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('238706','2387','9','13','100','1','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Start Combat Movement at 25 Yards (Phase 1)'),
+('238707','2387','9','13','100','1','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('238708','2387','9','13','100','1','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Start Combat Movement Below 5 Yards (Phase 1)'),
+('238709','2387','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('238710','2387','9','0','100','1','0','5','25000','25000','11','122','0','1','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Cast Frost Nova'),
 ('238711','2387','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Cast Frost Armor on Missing Buff'),
 ('238712','2387','2','0','100','0','15','0','0','0','22','3','0','0','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Set Phase 3 at 15% HP'),
@@ -4589,13 +4589,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jailor Eston      
 ('242701','2427','0','0','100','1','7000','11000','21000','25000','11','3442','5','0','0','0','0','0','0','0','0','0','Jailor Eston - Cast Enslave'),
 -- Jailor Marlgen
-('242801','2428','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Jailor Marlgen - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('242801','2428','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','22','1','0','0','Jailor Marlgen - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 ('242802','2428','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Jailor Marlgen - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('242803','2428','9','5','100','1','30','80','1000','1000','21','1','1','0','20','1','0','0','0','0','0','0','Jailor Marlgen - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
 ('242804','2428','9','5','100','1','0','10','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Jailor Marlgen - Start Combat Movement and Set Melee Weapon Model and Start Melee at 10 Yards (Phase 1)'),
 ('242805','2428','9','5','100','1','11','25','1000','1000','21','0','1','0','20','0','0','0','0','0','0','0','Jailor Marlgen - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
 ('242806','2428','9','0','100','1','0','20','7000','11000','11','6533','1','1','0','0','0','0','0','0','0','0','Jailor Marlgen - Cast Net'),
-('242807','2428','2','0','100','0','15','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Jailor Marlgen - Set Phase 2 at 15% HP'),
+('242807','2428','2','0','100','0','15','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Jailor Marlgen - Set Phase 2 at 15% HP'),
 ('242808','2428','2','3','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Jailor Marlgen - Start Combat Movement and Flee at 15% HP (Phase 2)'),
 ('242809','2428','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Jailor Marlgen - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Novice Thaivand (2429) - NSR
@@ -4669,13 +4669,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('706902','7069','9','0','100','1','0','5','9000','13000','11','12555','1','1','0','0','0','0','0','0','0','0','Condemned Monk - Cast Pummel'),
 -- Condemned Cleric      
 ('707001','7070','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Condemned Cleric - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('707002','7070','4','0','100','0','0','0','0','0','11','25054','1','0','23','1','0','0','0','0','0','0','Condemned Cleric - Cast Holy Smite and Set Phase 1 on Aggro'),
+('707002','7070','4','0','100','0','0','0','0','0','11','25054','1','0','22','1','0','0','0','0','0','0','Condemned Cleric - Cast Holy Smite and Set Phase 1 on Aggro'),
 ('707003','7070','9','5','100','1','0','40','3400','4800','11','25054','1','0','0','0','0','0','0','0','0','0','Condemned Cleric - Cast Holy Smite (Phase 1)'),
-('707004','7070','3','5','100','0','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Condemned Cleric - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('707005','7070','9','5','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Condemned Cleric - Start Combat Movement at 35 Yards (Phase 1)'),
-('707006','7070','9','5','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Condemned Cleric - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('707007','7070','9','5','100','0','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Condemned Cleric - Start Combat Movement Below 5 Yards (Phase 1)'),
-('707008','7070','3','3','100','1','100','15','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Condemned Cleric - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('707004','7070','3','5','100','0','7','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Condemned Cleric - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('707005','7070','9','5','100','1','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Condemned Cleric - Start Combat Movement at 25 Yards (Phase 1)'),
+('707006','7070','9','5','100','1','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Condemned Cleric - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('707007','7070','9','5','100','1','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Condemned Cleric - Start Combat Movement Below 5 Yards (Phase 1)'),
+('707008','7070','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Condemned Cleric - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('707009','7070','14','0','100','1','3000','40','18000','21000','11','15586','6','1','0','0','0','0','0','0','0','0','Condemned Cleric - Cast Heal on Friendlies'),
 ('707010','7070','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Condemned Cleric - Set Phase to 0 on Evade'),
 -- Cursed Paladin      
@@ -4684,13 +4684,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('707201','7072','9','0','100','1','0','5','5000','8000','11','15580','1','0','0','0','0','0','0','0','0','0','Cursed Justicar - Cast Strike'),
 -- Writhing Mage      
 ('707501','7075','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Writhing Mage - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('707502','7075','4','0','100','0','0','0','0','0','11','12675','1','0','23','1','0','0','0','0','0','0','Writhing Mage - Cast Frostbolt and Set Phase 1 on Aggro'),
+('707502','7075','4','0','100','0','0','0','0','0','11','12675','1','0','22','1','0','0','0','0','0','0','Writhing Mage - Cast Frostbolt and Set Phase 1 on Aggro'),
 ('707503','7075','9','13','100','1','0','40','3400','4800','11','12675','1','0','0','0','0','0','0','0','0','0','Writhing Mage - Cast Frostbolt (Phase 1)'),
-('707504','7075','3','13','100','0','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Writhing Mage - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('707505','7075','9','13','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Start Combat Movement at 35 Yards (Phase 1)'),
-('707506','7075','9','13','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('707507','7075','9','13','100','0','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Start Combat Movement Below 5 Yards (Phase 1)'),
-('707508','7075','3','11','100','1','100','15','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('707504','7075','3','13','100','0','7','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Writhing Mage - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('707505','7075','9','13','100','1','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Start Combat Movement at 25 Yards (Phase 1)'),
+('707506','7075','9','13','100','1','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Prevent Combat Movement at 15 Yards (Phase 1)'),
+('707507','7075','9','13','100','1','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Start Combat Movement Below 5 Yards (Phase 1)'),
+('707508','7075','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('707509','7075','2','0','100','0','15','0','0','0','22','3','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Set Phase 3 at 15% HP'),
 ('707510','7075','2','7','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Writhing Mage - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 ('707511','7075','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Writhing Mage - Set Phase to 0 on Evade'),
@@ -33097,10 +33097,31 @@ UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '1' WHERE C
 UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '2' WHERE COMMENT LIKE '%Set Phase 2%' AND action1_type = '23';
 UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '2' WHERE COMMENT LIKE '%Set Phase 2%' AND action2_type = '23';
 UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '2' WHERE COMMENT LIKE '%Set Phase 2%' AND action3_type = '23';
+
 -- Phase 3 Fixes
 UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '3' WHERE COMMENT LIKE '%Set Phase 3%' AND action1_type = '23';
 UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '3' WHERE COMMENT LIKE '%Set Phase 3%' AND action2_type = '23';
 UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '3' WHERE COMMENT LIKE '%Set Phase 3%' AND action3_type = '23';
+
+-- Phase 4 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '4' WHERE COMMENT LIKE '%Set Phase 4%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '4' WHERE COMMENT LIKE '%Set Phase 4%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '4' WHERE COMMENT LIKE '%Set Phase 4%' AND action3_type = '23';
+
+-- Phase 5 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '5' WHERE COMMENT LIKE '%Set Phase 5%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '5' WHERE COMMENT LIKE '%Set Phase 5%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '5' WHERE COMMENT LIKE '%Set Phase 5%' AND action3_type = '23';
+
+-- Phase 6 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '6' WHERE COMMENT LIKE '%Set Phase 6%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '6' WHERE COMMENT LIKE '%Set Phase 6%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '6' WHERE COMMENT LIKE '%Set Phase 6%' AND action3_type = '23';
+
+-- Phase 7 Fixes
+UPDATE creature_ai_scripts SET action1_type = '22', action1_param1 = '7' WHERE COMMENT LIKE '%Set Phase 7%' AND action1_type = '23';
+UPDATE creature_ai_scripts SET action2_type = '22', action2_param1 = '7' WHERE COMMENT LIKE '%Set Phase 7%' AND action2_type = '23';
+UPDATE creature_ai_scripts SET action3_type = '22', action3_param1 = '7' WHERE COMMENT LIKE '%Set Phase 7%' AND action3_type = '23';
 
 -- Fix Range Checks For Repeatable Checks
 UPDATE creature_ai_scripts SET event_flags = '1', event_param1 = '15', event_param2 = '0', event_param3 = '1000', event_param4 = '1000' WHERE event_type='3' AND event_param1='15' AND event_param2='0' AND event_param3='0' AND event_param4='0';
