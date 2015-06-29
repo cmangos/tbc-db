@@ -14955,13 +14955,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fariel Starsong 15909     
 -- Lunar Festival Sentinel 15961     
 -- Malfurion Stormrage
-('1794901','17949','11','0','100','0','0','0','0','0','11','17321','0','1','0','0','0','0','0','0','0','0','Malfurion Stormrage - Cast Spirit Spawn-in on Spawned');
+('1794901','17949','11','0','100','0','0','0','0','0','11','17321','0','1','0','0','0','0','0','0','0','0','Malfurion Stormrage - Cast Spirit Spawn-in on Spawned'),
 -- Clintar Dreamwalker 22834     
 -- Cenarion Dreamwarden 22835     
 -- Dreamwarden Lurosa 22837     
 -- Manifest Nightmare 22889     
 -- Phantasmal Lash 22902     
--- Aspect of the Raven 22915     
+-- Aspect of the Raven
+('2291501','22915','0','0','100','0','1000','1000','0','0','1','-643','0','0','0','0','0','0','0','0','0','0','Aspect of the Raven - Yell on Aggro');
 -- Clintar Dreamwalker's Spirit (22916) - npc_clintar_dw_spirit 
 
 
@@ -32298,7 +32299,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-640','Ah, damn it all! Clever trap. Too bad you\'ll never live to tell the tale...','0','0','0','21409','0'),
 ('-641','At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.','0','0','0','Vaelan greetings','0'),
 ('-642','Listen carefully, for the lord of Blackrock will surely destroy you, should you not be prepared.','0','0','0','Vaelan greetings','0'),
--- Please Re-Use -643 to -647
+('-643','Foolish druid! Dividing your essence has weakened you, opening the door for my master to dominate the Emerald Dream. Your spirit and body will die here!','0','1','0','22915','0'),
+-- Please Re-Use -644 to -647
 ('-648','%s lets out a deep roar, alerting nearby allies and becoming enraged!','0','2','0','Dire Maul Guards','0'),
 ('-649','%s goes into a drunken rage!','0','2','0','14322','0'),
 ('-650','I am Scarlet Onslaught. We don\'t rat out our leaders!','0','0','0','29490','0'),
