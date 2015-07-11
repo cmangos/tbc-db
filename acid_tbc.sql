@@ -3660,7 +3660,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rotlimb Marauder (3.0.3 Official Data)
 ('1565801','15658','0','0','100','1','1700','4700','10300','23600','11','3234','1','0','0','0','0','0','0','0','0','0','Rotlimb Marauder - Cast Disease Touch'),
 -- Grimscale Murloc
-('1566801','15668','0','0','100','1','6000','10000','18000','23000','11','26661','0','0','0','0','0','0','0','0','0','0','Grimscale Murloc - Cast Fear'),
+('1566801','15668','0','0','100','1','6000','10000','18000','23000','11','26661','5','0','0','0','0','0','0','0','0','0','Grimscale Murloc - Cast Fear'),
 -- Grimscale Oracle (3.0.3 Official Data)
 ('1566901','15669','2','0','100','1','70','0','53400','55800','11','17137','0','0','0','0','0','0','0','0','0','0','Grimscale Oracle - Cast Flash Heal at 70% HP'),
 -- Grimscale Forager (3.0.3 Official Data)
