@@ -20068,6 +20068,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2130211','21302','9','7','100','1','15','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Start Combat Movement at 15 Yards (Phase 3)'),
 ('2130212','21302','2','7','100','0','100','45','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 1 when Life is above 45% (Phase 3)'),
 ('2130213','21302','7','0','100','0','0','0','0','0','22','1','0','0','48','2','0','0','0','0','0','0','Shadow Council Warlock - Set Phase to 1 and change Movement to Waypoints on Evade'),
+-- Ruul the Darkener
+('2131501','21315','0','0','100','0','1000','1000','0','0','1','-1383','0','0','0','0','0','0','0','0','0','0','Ruul the Darkener - Say on Aggro'),
+('2131502','21315','0','0','100','1','5000','7000','16000','21000','11','39153','1','0','0','0','0','0','0','0','0','0','Ruul the Darkener - Cast Darkfury'),
+('2131503','21315','0','0','100','1','9000','11000','13000','15000','11','15284','1','1','0','0','0','0','0','0','0','0','Ruul the Darkener - Cast Cleave'),
+('2131504','21315','2','0','100','1','30','0','7000','9000','11','35871','1','1','0','0','0','0','0','0','0','0','Scarlet Commander Rodrick - Cast Spellbreaker at 30% HP'),
+('2131505','21315','6','0','100','0','0','0','0','0','43','0','0','0','12','22106','0','120000','0','0','0','0','Ruul the Darkener - unmount and summon 21134 on Death'),
 -- Dark Conclave Harbringer
 ('2138401','21384','0','0','100','1','6000','6000','6000','12000','11','15496','1','1','0','0','0','0','0','0','0','0','Dark Conclave Harbringer - Cast Cleave'),
 ('2138402','21384','2','0','100','1','50','0','8000','8000','11','16588','0','0','0','0','0','0','0','0','0','0','Dark Conclave Harbringer - Cast Dark Mending'),
@@ -33213,7 +33219,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1368','I cannot be destroyed! By the will of Ragnaros, I shall be reborn!','0','0','0','9017','0'),
 ('-1369','What are you doing? Intruders!!','0','1','0','9476','0'),
 ('-1370','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
-('-1371','%s gets really dizzy!','0','2','0','9554','0');
+('-1371','%s gets really dizzy!','0','2','0','9554','0'),
+('-1383','Your world is at an end.','0','0','0','21315','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
