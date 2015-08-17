@@ -21172,9 +21172,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1951901','19519','0','0','100','1','2000','2000','6000','6000','11','35244','1','0','0','0','0','0','0','0','0','0','Starving Bog Lord - Cast Choking Vines'),
 ('1951902','19519','0','0','75','1','3000','3000','10000','10000','11','35238','1','0','0','0','0','0','0','0','0','0','Starving Bog Lord - Cast War Stomp'),
 -- Marshrock Threshalisk
-('1970601','19706','4','0','100','0','0','0','0','0','11','35385','0','0','0','0','0','0','0','0','0','0','Marshrock Threshalisk - Cast Threshalisk Charge on Aggro'),
+('1970601','19706','4','0','100','0','0','0','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Marshrock Threshalisk - Cast Threshalisk Charge on Aggro'),
 -- Ironspine Threshalisk
-('1972901','19729','4','0','100','0','0','0','0','0','11','35385','0','0','0','0','0','0','0','0','0','0','Ironspine Threshalisk - Cast Threshalisk Charge'),
+('1972901','19729','4','0','100','0','0','0','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Ironspine Threshalisk - Cast Threshalisk Charge on Aggro'),
 -- Ironspine Gazer
 ('1973001','19730','0','0','75','1','5000','5000','16000','16000','11','35313','4','0','0','0','0','0','0','0','0','0','Ironspine Gazer - Cast Hypnotic Gaze'),
 ('1973002','19730','4','0','100','0','0','0','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Ironspine Gazer - Cast Threshalisk Charge on Aggro'),
