@@ -33271,10 +33271,10 @@ UPDATE creature_template SET ScriptName= '' WHERE ScriptName= 'generic_creature'
 UPDATE creature_template INNER JOIN creature_ai_scripts ON creature_template.entry = creature_ai_scripts.creature_id SET AIName='EventAI';
 
 
--- ====================================================================
--- WOTLK RANDOM CLEANUP AND REMOVAL (TO REMOVE ERRORS FOR 2.4.3 CLIENT)
--- ====================================================================
--- Remove All WOTLK ONLY Creature ID Scripts (This is a complete list of 3.x.x Only NPC's)
+-- =========================================================================
+-- RANDOM CLEANUP AND REMOVAL OF SCRIPTS (TO REMOVE ERRORS FOR 2.4.3 CLIENT)
+-- =========================================================================
+-- Remove All Non-Existant Creature ID Scripts
 DELETE FROM `creature_ai_scripts` WHERE creature_id NOT IN (SELECT entry FROM creature_template);
 
 
