@@ -33278,10 +33278,10 @@ UPDATE creature_template INNER JOIN creature_ai_scripts ON creature_template.ent
 DELETE FROM `creature_ai_scripts` WHERE creature_id NOT IN (SELECT entry FROM creature_template);
 
 
--- =========================
--- Remove WOTLK Text Entries -- NEED TO AUTOMATE THIS CHECK FOR CLEANUP (NEED TO DEVELOP A NICE CLEAN QUERY)
--- =========================
-DELETE FROM `creature_ai_texts` WHERE entry IN (-1128,-1127,-1126,-1125,-1124,-1123,-1122,-1121,-1120,-1053,-1052,-1051,-1050,-1049,-1046,-1018,-1017,-1016,-1015,-1014,-1013,-1012,-1011,-996,-995,-994,-958,-957,-956,-955,-954,-953,-952,-951,-950,-949,-948,-901,-900,-899,-898,-894,-893,-892,-891,-890,-889,-888,-887,-886,-885,-884,-883,-882,-881,-880,-879,-878,-877,-876,-875,-874,-873,-872,-871,-870,-869,-868,-867,-866,-865,-864,-863,-862,-861,-859,-858,-857,-856,-855,-854,-853,-852,-851,-850,-849,-848,-847,-846,-845,-844,-843,-842,-841,-815,-814,-813,-812,-811,-810,-806,-805,-804,-803,-802,-801,-800,-799,-798,-796,-795,-794,-793,-792,-791,-790,-789,-788,-787,-786,-785,-784,-783,-782,-781,-780,-779,-778,-777,-776,-774,-773,-772,-771,-768,-767,-766,-761,-760,-759,-758,-757,-756,-746,-745,-741,-740,-739,-738,-737,-736,-735,-734,-733,-732,-731,-730,-729,-728,-727,-726,-725,-724,-723,-722,-721,-720,-697,-696,-693,-692,-691,-690,-689,-688,-653,-652,-651,-650,-633,-632,-631,-630,-629,-628,-565,-564,-563,-562,-561,-560,-559,-558,-557,-556,-555,-538,-537,-536,-535,-534,-533,-522,-521,-520,-519,-518,-517,-516,-515,-514,-513,-512,-511,-510,-509,-508,-507,-506,-505,-504,-501,-500,-499,-498,-497,-496,-495,-493,-489,-488,-487,-486,-485,-484,-483,-482,-481,-480,-479,-478,-477,-476,-475,-474,-422,-421,-420,-419,-418,-417,-348,-347,-80,-79,-78,-77);
+-- ==========================
+-- Remove Unused Text Entries
+-- ==========================
+DELETE FROM creature_ai_texts WHERE NOT  entry IN (SELECT DISTINCT * FROM (SELECT   action1_param1 FROM creature_ai_scripts WHERE action1_type = 1 AND action1_param1 != 0 UNION SELECT   action1_param2 FROM creature_ai_scripts WHERE action1_type = 1 AND action1_param2 != 0 UNION SELECT   action1_param3 FROM creature_ai_scripts WHERE action1_type = 1 AND action1_param3 != 0 UNION SELECT   action2_param1 FROM creature_ai_scripts WHERE action2_type = 1 AND action2_param1 != 0 UNION SELECT   action2_param2 FROM creature_ai_scripts WHERE action2_type = 1 AND action2_param2 != 0 UNION SELECT   action2_param3 FROM creature_ai_scripts WHERE action2_type = 1 AND action2_param3 != 0 UNION SELECT   action3_param1 FROM creature_ai_scripts WHERE action3_type = 1 AND action3_param1 != 0 UNION SELECT   action3_param2 FROM creature_ai_scripts WHERE action3_type = 1 AND action3_param2 != 0 UNION SELECT   action3_param3 FROM creature_ai_scripts WHERE action3_type = 1 AND action3_param3 != 0) AS t);
 
 
 -- ============================================================
@@ -33342,8 +33342,9 @@ UPDATE creature_ai_scripts SET `action2_param1` = '17467' WHERE action2_type = 1
 UPDATE creature_ai_scripts SET `action3_param1` = '17467' WHERE action3_type = 11 AND action3_param1 = 55606;
 
 
+-- ============================================================
 -- Alter Conflicting 3.x.x Emote ID's for 2.4.3 Compatible Ones
--- ------------------------------------------------------------
+-- ============================================================
 -- ONE_SHOT_STUN Emote (Replaced Emote with Talk Emote) - Will require 2.4.3 Customization To Use State
 UPDATE creature_ai_scripts SET `action1_param1` = '1' WHERE action1_type = 5 AND action1_param1 = 462;
 UPDATE creature_ai_scripts SET `action2_param1` = '1' WHERE action2_type = 5 AND action2_param1 = 462;
