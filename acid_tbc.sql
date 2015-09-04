@@ -21323,6 +21323,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1849319','18493','0','191','100','7','3000','5000','3000','5000','11','32856','0','1','22','1','0','0','0','0','0','0','Auchenai Soulpriest - Summon Unliving Stalker and Set Phase 1 (Phase 6)'),
 ('1849320','18493','0','127','100','7','3000','5000','3000','5000','11','32857','0','1','22','1','0','0','0','0','0','0','Auchenai Soulpriest - Summon Phantasmal Possessor and Set Phase 1 (Phase 7)'),
 ('1849321','18493','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Auchenai Soulpriest - Set Phase to 0 on Evade'),
+('1849322','18493','30','0','100','6','5','18778','0','0','11','30662','10','0','0','0','0','0','0','0','0','0','Auchenai Soulpriest - Cast Demonic Summon Channel on Receive AI Event Custom A.'),
 -- Auchenai Vindicator (4.3.4 Official Data - Normal/Heroic)
 ('1849501','18495','1','0','100','3','1000','1000','30000','60000','11','32861','0','33','0','0','0','0','0','0','0','0','Auchenai Vindicator (Normal) - Cast Shadowguard'),
 ('1849502','18495','1','0','100','5','1000','1000','30000','60000','11','38379','0','33','0','0','0','0','0','0','0','0','Auchenai Vindicator (Heroic) - Cast Shadowguard'),
@@ -21447,6 +21448,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1870204','18702','0','0','100','7','12100','17500','4800','9600','11','38252','1','33','0','0','0','0','0','0','0','0','Auchenai Necromancer (Heroic) - Cast Seed of Corruption'),
 ('1870205','18702','14','0','100','3','1000','15','15700','26500','11','33325','0','1','0','0','0','0','0','0','0','0','Auchenai Necromancer (Normal) - Cast Shadow Mend on Friendlies'),
 ('1870206','18702','14','0','100','5','2500','15','6100','8400','11','37367','0','1','0','0','0','0','0','0','0','0','Auchenai Necromancer (Heroic) - Cast Shadow Mend on Friendlies'),
+-- Flying Raging Soul
+('1872601','18726','1','0','100','7','0','40','1000','1000','11','32459','0','6','0','0','0','0','0','0','0','0','Flying Raging Soul - cast Raging Soul Visual on OOC Timer'),
+-- Cosmetic Raging Soul
+('1877801','18778','1','0','100','6','1000','1000','0','0','45','5','15','0','0','0','0','0','0','0','0','0','Cosmetic Raging Soul - Send AI Event Custom A on OOC Timer'),
+('1877802','18778','8','0','100','7','30662','-1','0','0','11','32459','0','0','0','0','0','0','0','0','0','0','Cosmetic Raging Soul - cast Raging Soul Visual on Spell Hit'),
 -- D'ore (4.3.4 Official Data - Normal/Heroic)
 ('1941201','19412','11','0','100','6','0','0','0','0','1','-840','0','0','11','7765','0','0','0','0','0','0','D\'ore - Text Emote and Cast Projection on Spawn'),
 
@@ -21557,7 +21563,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shadow Lord Xiraxis
 ('1966601','19666','4','0','100','6','0','0','0','0','1','-816','0','0','0','0','0','0','0','0','0','0','Shadow Lord Xiraxis - Say on Aggro'),
 -- Cryo-Engineer Sha'heen (19671) - REQUIRES C++ SOLUTION AS THIS NPC IS USED IN ESCORT QUEST
--- Consortium Laborer (19672) - NSR 
+-- Consortium Laborer
+('1967201','19672','11','0','100','6','0','0','0','0','11','34427','0','1','0','0','0','0','0','0','0','0','Consortium Laborer - spawn effect'),
 -- Consortium Engineer (19673) - NSR
 -- Ambassador Pax'ivi (22928) - NSR
 -- Yor (UNABLE TO ACCESS THIS BOSS YET TO GET OFFICIAL DATA)
@@ -21699,6 +21706,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2190403','21904','0','0','100','3','3800','11100','10900','21700','11','32901','1','0','0','0','0','0','0','0','0','0','Avian Warhawk (Normal) - Cast Carnivorous Bite'),
 ('2190404','21904','0','0','100','5','3800','11100','10900','21700','11','39198','1','0','0','0','0','0','0','0','0','0','Avian Warhawk (Heroic) - Cast Carnivorous Bite'),
 ('2190405','21904','0','0','100','7','6200','25500','12100','24100','11','18144','0','1','0','0','0','0','0','0','0','0','Avian Warhawk - Cast Swoop'),
+-- Avian Flyer
+('2193101','21931','11','0','100','38','0','0','0','0','3','0','18933','0','3','0','4566','0','3','0','20588','0','Avian Flye - randomized model on spawn'),
 -- Anzu (23035) - boss_anzu
 -- Brood of Anzu (23132) - NSR
 -- Hawk Spirit (4.3.4 Official Data - Normal/Heroic)
