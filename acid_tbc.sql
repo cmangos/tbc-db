@@ -20620,6 +20620,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1880901','18809','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Furnan Skysoar - Summon Enraged Gryphons and Yell on Aggro'),
 -- Lemla Hopewing
 ('1918101','19181','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Lemla Hopewing - Summon Enraged Gryphons and Yell on Aggro'),
+-- Lower City Operative
+('1950101','19501','2','0','100','1','50','0','10000','13000','45','5','50','0','1','-1384','-1385','-1386','0','0','0','0','Lower City Operative - Send AI Event and Say random text on 50% HP'),
+-- Lower City Healer
+('1950201','19502','30','0','100','1','5','19501','0','0','11','31739','10','0','1','-1387','-1388','0','0','0','0','0','Lower City Healer - Cast Heal and say random text on Receive AI Event.'),
 -- Grek
 ('1960601','19606','1','0','100','1','120000','120000','120000','120000','1','-244','0','0','5','18','0','0','4','6941','0','0','Grek - Gossip Speech and Emote and Sound'),
 ('1960602','19606','1','0','100','1','300000','300000','300000','300000','1','-245','0','0','5','5','0','0','0','0','0','0','Grek - Gossip Speech and Emote'),
@@ -20856,8 +20860,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2238705','22387','0','0','100','1','4000','9000','9000','14000','11','12058','4','1','0','0','0','0','0','0','0','0','Lithic Oracle - Cast Chain Lightning'),
 -- Lithic Talonguard
 ('2238801','22388','0','0','100','1','2000','5000','45000','50000','11','6016','1','0','0','0','0','0','0','0','0','0','Lithic Talonguard - Cast Pierce Armor'),
+-- Mature Bone Sifter
+('2248201','22482','11','0','100','0','0','0','0','0','11','37989','0','16','11','33928','0','0','21','0','0','0','Mature Bone Sifter - Cast Sandworm Submerge Visual and Cast Tunnel Bore Bone Passive and Prevent Combat Movement on Spawn'),
+('2248202','22482','1','0','100','1','1000','1000','1000','1000','11','37989','0','48','0','0','0','0','0','0','0','0','Mature Bone Sifter - Cast Sandworm Submerge Visual OOC'),
+('2248203','22482','4','0','100','0','0','0','0','0','28','0','37989','0','28','0','33928','0','22','1','0','0','Mature Bone Sifter - Remove Sandworm Submerge Visual and Remove Tunnel Bore Bone Passive and Set Phase 1 on Aggro'),
+('2248204','22482','9','5','100','1','0','50','2100','4500','11','31747','1','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - Cast Poison (Phase 1)'),
+('2248205','22482','9','5','100','1','0','5','25000','27000','11','32738','1','1','0','0','0','0','0','0','0','0','Mature Bone Sifter - Cast Bore (Phase 1)'),
+('2248206','22482','9','5','100','1','50','100','500','500','11','37989','0','16','11','33928','0','0','22','2','0','0','Mature Bone Sifter - Cast Sandworm Submerge Visual and Cast Tunnel Bore Bone Passive and Set Phase 2 at 50 Yards (Phase 1)'),
+('2248207','22482','9','5','100','1','50','100','500','500','23','1','0','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - Enable Combat Movement at 50 Yards (Phase 1)'),
+('2248208','22482','9','3','100','1','0','8','500','500','28','0','37989','0','28','0','33928','0','21','0','0','0','Mature Bone Sifter - Remove Sandworm Submerge Visual and Remove Tunnel Bore Bone Passive and Prevent Combat Movement at 8 Yards (Phase 2)'),
+('2248209','22482','9','3','100','1','0','8','500','500','22','1','0','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - Set Phase 1 at 8 Yards (Phase 2)'),
+('2248210','22482','7','0','100','0','0','0','0','0','11','37989','0','21','11','33928','0','0','21','0','0','0','Mature Bone Sifter - Cast Sandworm Submerge Visual and Cast Tunnel Bore Bone Passive and Prevent Combat Movement on Evade'),
+('2248211','22482','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - Set Phase 0 on Evade'),
+('2248212','22482','1','0','100','1','300000','300000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - despawn self'),
 -- Sand Gnome
 ('2248301','22483','11','0','100','0','0','0','0','0','1','-1351','-1352','-1353','0','0','0','0','0','0','0','0','Sand Gnome - Say on Spawned'),
+('2248302','22483','1','0','100','1','300000','300000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Sand Gnome - despawn self'),
 -- Lost Torranche
 ('2280701','22807','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lost Torranche - Flee at 15% HP'),
 -- Guardian of the Hawk
@@ -33240,6 +33258,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1370','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
 ('-1371','%s gets really dizzy!','0','2','0','9554','0'),
 ('-1383','Your world is at an end.','0','0','0','21315','0');
+('-1384','Need some help!','0','0','0','19501','0'),
+('-1385','Um, healer?!','0','0','0','19501','0'),
+('-1386','Need heal over here!','0','0','0','19501','0'),
+('-1387','Here it comes!','0','0','0','19502','0'),
+('-1388','Incoming.','0','0','0','19502','0');
+
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
