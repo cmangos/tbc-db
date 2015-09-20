@@ -21578,8 +21578,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1930702','19307','0','0','100','7','4800','19700','10800','21700','11','34322','0','0','0','0','0','0','0','0','0','0','Nexus Terror - Cast Psychic Scream'),
 ('1930703','19307','0','0','100','7','7100','20900','26500','37400','11','34925','4','0','0','0','0','0','0','0','0','0','Nexus Terror - Cast Curse of Impotence'),
 ('1930704','19307','0','0','100','7','8400','17100','15700','25300','11','38065','1','1','0','0','0','0','0','0','0','0','Nexus Terror (Heroic) - Cast Death Coil'),
--- Shadow Lord Xiraxis
-('1966601','19666','4','0','100','6','0','0','0','0','1','-816','0','0','0','0','0','0','0','0','0','0','Shadow Lord Xiraxis - Say on Aggro'),
+-- Shadow Lord Xiraxis (19666) - NSR
 -- Cryo-Engineer Sha'heen (19671) - REQUIRES C++ SOLUTION AS THIS NPC IS USED IN ESCORT QUEST
 -- Consortium Laborer
 ('1967201','19672','11','0','100','6','0','0','0','0','11','34427','0','1','0','0','0','0','0','0','0','0','Consortium Laborer - spawn effect'),
@@ -32758,7 +32757,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-813','Business concluded.','14505','1','0','29266','0'),
 ('-814','Profit!','14506','1','0','29266','0'),
 ('-815','This... is an unrecoverable... loss.','14507','1','0','29266','0'),
-('-816','Never underestimate the other ethereal\'s greed.','0','0','0','19666','0'),
+-- REUSE -816
 ('-817','So or\'manley fi siame Dim fus siame yudo','5859','1','14','8580','0'),
 ('-818','You will rest with the honored dead.','0','0','0','18493','0'),
 ('-819','Turn back! Do not wake the dreamer!','5866','1','0','5721','0'),
@@ -33263,7 +33262,6 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1386','Need heal over here!','0','0','0','19501','0'),
 ('-1387','Here it comes!','0','0','0','19502','0'),
 ('-1388','Incoming.','0','0','0','19502','0');
-
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
