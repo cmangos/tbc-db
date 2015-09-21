@@ -33256,7 +33256,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1369','What are you doing? Intruders!!','0','1','0','9476','0'),
 ('-1370','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
 ('-1371','%s gets really dizzy!','0','2','0','9554','0'),
-('-1383','Your world is at an end.','0','0','0','21315','0');
+('-1383','Your world is at an end.','0','0','0','21315','0'),
 ('-1384','Need some help!','0','0','0','19501','0'),
 ('-1385','Um, healer?!','0','0','0','19501','0'),
 ('-1386','Need heal over here!','0','0','0','19501','0'),
