@@ -18254,18 +18254,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2132601','21326','0','0','50','1','9000','12000','35000','42000','11','37696','0','0','0','0','0','0','0','0','0','0','Raven\'s Wood Leafbeard - Cast Force of Nature'),
 ('2132602','21326','30','0','100','0','5','22226','0','0','2','35','1','0','24','0','0','0','1','-1350','0','0','Raven\'s Wood Leafbeard - Becomes friendly on Receive AI Event.'),
 ('2132603','21326','30','0','100','0','5','22226','0','0','41','15000','0','0','0','0','0','0','0','0','0','0','Raven\'s Wood Leafbeard - Despawns on Receive AI Event.'),
--- Greater Crust Burster
-('2138001','21380','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Greater Crust Burster - Remove Unselectable Unit Flag on Spawn'),
-('2138002','21380','11','0','100','0','0','0','0','0','11','29147','0','16','11','33928','0','0','21','0','0','0','Greater Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Spawn'),
-('2138003','21380','1','0','100','1','1000','1000','1000','1000','11','29147','0','48','0','0','0','0','0','0','0','0','Greater Crust Burster - Cast Sandworm Submerge Visual OOC'),
-('2138004','21380','4','0','100','0','0','0','0','0','28','0','29147','0','28','0','33928','0','23','1','0','0','Greater Crust Burster - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Set Phase 1 on Aggro'),
-('2138005','21380','9','5','100','1','0','50','2100','4500','11','31747','1','0','0','0','0','0','0','0','0','0','Greater Crust Burster - Cast Poison (Phase 1)'),
-('2138006','21380','9','5','100','1','50','100','500','500','11','29147','0','16','11','33928','0','0','21','1','0','0','Greater Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Set Phase 2 at 50 Yards (Phase 1)'),
-('2138007','21380','9','5','100','1','50','100','500','500','23','1','0','0','0','0','0','0','0','0','0','0','Greater Crust Burster - Enable Combat Movement at 50 Yards (Phase 1)'),
-('2138008','21380','9','3','100','1','0','8','500','500','28','0','29147','0','28','0','33928','0','21','0','0','0','Greater Crust Burster - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Prevent Combat Movement at 8 Yards (Phase 2)'),
-('2138009','21380','9','3','100','1','0','8','500','500','23','-1','0','0','0','0','0','0','0','0','0','0','Greater Crust Burster - Set Phase 1 at 8 Yards (Phase 2)'),
-('2138010','21380','7','0','100','0','0','0','0','0','11','29147','0','21','11','33928','0','0','21','0','0','0','Greater Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Evade'),
-('2138011','21380','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Greater Crust Burster - Set Phase 0 on Evade'),
+-- Greater Crust Burster (21380) - npc_burster_worm
+-- Young Crust Burster
+('2138101','21381','11','0','100','0','0','0','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Young Crust Burster - Prevent Combat movement on spawned'),
+('2138102','21381','0','0','100','1','0','1000','3000','4000','11','21067','1','0','0','0','0','0','0','0','0','0','Young Crust Burster - Cast Poison Bolt'),
+('2138103','21381','9','0','100','1','30','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Young Crust Burster - Start combat movement at 30 yards'),
+('2138104','21381','9','0','100','1','0','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Young Crust Burster - Prevent combat movement at 25 yards'),
 -- Wyrmcult Blackwhelp
 ('2138701','21387','1','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Wyrmcult Blackwhelp - Prevent Combat Movement on Spawn'),
 ('2138702','21387','8','0','100','0','38177','-1','0','0','11','38178','6','3','21','0','0','0','41','0','0','0','Wyrmcult Blackwhelp - Cast Create Wyrmcult Blackwhelp Item and Prevent Combat Movement and Despawn on Blackwhelp Net Spellhit'),
@@ -18416,35 +18410,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1659004','16590','1','0','100','1','464000','464000','464000','464000','1','-301','0','0','0','0','0','0','0','0','0','0','Injured Thrallmar Grunt - Gossip Speech (5)'),
 -- Flightmaster Krill Bitterhue
 ('1682201','16822','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Flightmaster Krill Bitterhue - Summon Enraged Gryphons and Yell on Aggro'),
--- Crust Burster
-('1684401','16844','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Crust Burster - Remove Unselectable Unit Flag on Spawn'),
-('1684402','16844','11','0','100','0','0','0','0','0','11','29147','0','16','11','33928','0','0','21','0','0','0','Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Spawn'),
-('1684403','16844','1','0','100','1','1000','1000','1000','1000','11','29147','0','48','0','0','0','0','0','0','0','0','Crust Burster - Cast Sandworm Submerge Visual OOC'),
-('1684404','16844','4','0','100','0','0','0','0','0','28','0','29147','0','28','0','33928','0','23','1','0','0','Crust Burster - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Set Phase 1 on Aggro'),
-('1684405','16844','9','5','100','1','0','50','2100','4500','11','31747','1','0','0','0','0','0','0','0','0','0','Crust Burster - Cast Poison (Phase 1)'),
-('1684406','16844','9','5','100','1','0','5','45000','50000','11','32738','1','1','0','0','0','0','0','0','0','0','Crust Burster - Cast Bore (Phase 1)'),
-('1684407','16844','9','5','100','1','50','100','500','500','11','29147','0','16','11','33928','0','0','21','1','0','0','Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Set Phase 2  at 50 Yards (Phase 1)'),
-('1684408','16844','9','5','100','1','50','100','500','500','23','1','0','0','0','0','0','0','0','0','0','0','Crust Burster - Enable Combat Movement at 50 Yards (Phase 1)'),
-('1684409','16844','9','3','100','1','0','8','500','500','28','0','29147','0','28','0','33928','0','21','0','0','0','Crust Burster - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Prevent Combat Movement at 8 Yards (Phase 2)'),
-('1684410','16844','9','3','100','1','0','8','500','500','23','-1','0','0','0','0','0','0','0','0','0','0','Crust Burster - Set Phase 1 at 8 Yards (Phase 2)'),
-('1684411','16844','7','0','100','0','0','0','0','0','11','29147','0','21','11','33928','0','0','21','0','0','0','Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Evade'),
-('1684412','16844','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Crust Burster - Set Phase 0 on Evade'),
+-- Crust Burster (16844) - npc_burster_worm
 -- Mag'har Grunt
 ('1684601','16846','2','0','100','0','20','0','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Mag\'har Grunt - Cast Enrage When Below 20% HP'),
 -- Debilitated Mag'har Grunt
 ('1684701','16847','8','0','100','0','29314','-1','0','0','48','1','2','0','1','-742','-743','-744','0','0','0','0','Debilitated Mag\'har Grunt - Set random movement and Yell random text on Spell hit'),
--- Marauding Crust Burster
-('1685701','16857','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Marauding Crust Burster - Remove Unselectable Unit Flag on Spawn'),
-('1685702','16857','11','0','100','0','0','0','0','0','11','29147','0','16','11','33928','0','0','21','0','0','0','Marauding Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Spawn'),
-('1685703','16857','1','0','100','1','1000','1000','1000','1000','11','29147','0','48','0','0','0','0','0','0','0','0','Marauding Crust Burster - Cast Sandworm Submerge Visual OOC'),
-('1685704','16857','4','0','100','0','0','0','0','0','28','0','29147','0','28','0','33928','0','23','1','0','0','Marauding Crust Burster - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Set Phase 1 on Aggro'),
-('1685705','16857','9','5','100','1','0','50','2100','4500','11','31747','1','0','0','0','0','0','0','0','0','0','Marauding Crust Burster - Cast Poison (Phase 1)'),
-('1685706','16857','9','5','100','1','50','100','500','500','11','29147','0','16','11','33928','0','0','21','1','0','0','Marauding Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Set Phase 2  at 50 Yards (Phase 1)'),
-('1685707','16857','9','5','100','1','50','100','500','500','23','1','0','0','0','0','0','0','0','0','0','0','Marauding Crust Burster - Enable Combat Movement at 50 Yards (Phase 1)'),
-('1685708','16857','9','3','100','1','0','8','500','500','28','0','29147','0','28','0','33928','0','21','0','0','0','Marauding Crust Burster - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Prevent Combat Movement at 8 Yards (Phase 2)'),
-('1685709','16857','9','3','100','1','0','8','500','500','23','-1','0','0','0','0','0','0','0','0','0','0','Marauding Crust Burster - Set Phase 1 at 8 Yards (Phase 2)'),
-('1685710','16857','7','0','100','0','0','0','0','0','11','29147','0','21','11','33928','0','0','21','0','0','0','Marauding Crust Burster - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Evade'),
-('1685711','16857','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Marauding Crust Burster - Set Phase 0 on Evade'),
+-- Marauding Crust Burster (16857) - npc_burster_worm
 -- Deranged Helboar (3.0.3 Official Data - Logs Only)
 ('1686301','16863','1','0','100','0','1000','1000','0','0','11','33908','0','0','0','0','0','0','0','0','0','0','Deranged Helboar - Cast Burning Spikes on Spawn'),
 ('1686302','16863','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Deranged Helboar - Cast Enrage When Below 30% HP'),
@@ -18564,20 +18535,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1696401','16964','0','0','100','1','9000','9000','17000','17000','11','34080','0','1','0','0','0','0','0','0','0','0','Warlord Morkh - Cast Riposte Stance'),
 ('1696402','16964','0','0','100','1','7000','7000','8000','8000','11','11978','1','1','0','0','0','0','0','0','0','0','Warlord Morkh - Cast Kick'),
 ('1696403','16964','2','0','100','0','20','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Warlord Morkh - Cast Enrage at 20% HP'),
--- Tunneler
-('1696801','16968','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Tunneler - Remove Unselectable Unit Flag on Spawn'),
-('1696802','16968','11','0','100','0','0','0','0','0','11','29147','0','16','11','33928','0','0','21','0','0','0','Tunneler - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Spawn'),
-('1696803','16968','1','0','100','1','1000','1000','1000','1000','11','29147','0','48','0','0','0','0','0','0','0','0','Tunneler - Cast Sandworm Submerge Visual OOC'),
-('1696804','16968','4','0','100','0','0','0','0','0','28','0','29147','0','28','0','33928','0','23','1','0','0','Tunneler - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Set Phase 1 on Aggro'),
-('1696805','16968','9','5','100','1','0','50','2100','4500','11','31747','1','0','0','0','0','0','0','0','0','0','Tunneler - Cast Poison (Phase 1)'),
-('1696806','16968','0','5','100','1','20400','20400','45000','50000','11','32738','1','0','0','0','0','0','0','0','0','0','Tunneler - Cast Bore (Phase 1)'),
-('1696807','16968','9','5','100','1','50','100','500','500','11','29147','0','16','11','33928','0','0','21','1','0','0','Tunneler - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Set Phase 2  at 50 Yards (Phase 1)'),
-('1696808','16968','9','5','100','1','50','100','500','500','23','1','0','0','0','0','0','0','0','0','0','0','Tunneler - Enable Combat Movement at 50 Yards (Phase 1)'),
-('1696809','16968','9','3','100','1','0','8','500','500','28','0','29147','0','28','0','33928','0','21','0','0','0','Tunneler - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Prevent Combat Movement at 8 Yards (Phase 2)'),
-('1696810','16968','9','3','100','1','0','8','500','500','23','-1','0','0','0','0','0','0','0','0','0','0','Tunneler - Set Phase 1 at 8 Yards (Phase 2)'),
-('1696811','16968','7','0','100','0','0','0','0','0','11','29147','0','21','11','33928','0','0','21','0','0','0','Tunneler - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Prevent Combat Movement on Evade'),
-('1696812','16968','2','0','100','1','30','0','12000','17000','11','32714','0','1','0','0','0','0','0','0','0','0','Tunneler - Cast Enrage at 30% HP'),
-('1696813','16968','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Tunneler - Set Phase 0 on Evade'),
+('1696404','16964','6','0','100','0','0','0','0','0','32','21134','0','26','0','0','0','0','0','0','0','0','Warlord Morkh - summon 21134 on Death'),
+-- Tunneler (16968) - npc_burster_worm
 -- Bonestripper Buzzard
 ('1697201','16972','0','0','100','1','6000','6000','10000','10000','11','37012','1','0','0','0','0','0','0','0','0','0','Bonestripper Buzzard - Cast swoop'),
 -- Bonestripper Vulture
@@ -20235,6 +20194,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2285909','22859','3','3','100','1','100','25','100','100','22','1','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Set Phase 1 when Mana is above 25% (Phase 2)'),
 ('2285910','22859','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Set Phase to 0 on Evade'),
 ('2285911','22859','1','0','100','1','1000','1000','0','0','11','39550','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Cast Arcane Channeling while OOC'),
+-- Nethermine Burster (23285) - npc_burster_worm
 -- Black Blood of Draenor
 ('2328601','23286','0','0','100','1','8000','14000','18000','25000','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
 ('2328602','23286','2','0','100','0','40','0','0','0','11','7279','1','1','25','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Black Sludge and Flee at 40% HP'),
@@ -20783,6 +20743,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2183804','21838','2','0','100','0','25','0','0','0','11','28747','0','0','1','-106','0','0','0','0','0','0','Terokk - Cast Enrage at 25% HP '),
 ('2183805','21838','6','0','100','0','0','0','0','0','11','40722','0','7','0','0','0','0','0','0','0','0','Terokk - Cast Will of the Arakkoa God on Death'),
 -- Slain Auchenai Warrior (21846) - NSR
+-- Bone Crawler (21849) - npc_burster_worm
 -- Auchenai Warrior
 ('2185201','21852','0','0','100','1','4000','8000','5000','9000','11','38618','0','0','0','0','0','0','0','0','0','0','Auchenai Warrior - Cast Whirlwind'),
 -- Ironspine Petrifier
@@ -20806,22 +20767,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2191109','21911','2','0','100','0','30','0','0','0','11','5137','1','1','0','0','0','0','0','0','0','0','Skettis Soulcaller - Cast Call of the Grave at 30% HP'),
 ('2191110','21911','0','0','100','1','6000','10000','13000','18000','11','38663','1','0','0','0','0','0','0','0','0','0','Skettis Soulcaller - Cast Slow'),
 ('2191111','21911','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Skettis Soulcaller - Set Phase to 0 on Evade'),
--- Hai'shulud
-('2203801','22038','11','0','100','0','0','0','0','0','11','37989','0','16','11','33928','0','0','21','0','0','0','Hai\'shulud - Cast Sandworm Submerge Visual and Cast Tunnel Bore Bone Passive and Prevent Combat Movement on Spawn'),
-('2203802','22038','4','0','100','0','0','0','0','0','28','0','37989','0','28','0','33928','0','22','1','0','0','Hai\'shulud - Remove Sandworm Submerge Visual and Remove Tunnel Bore Bone Passive and Set Phase 1 on Aggro'),
-('2203803','22038','4','0','100','0','0','0','0','0','11','37991','0','0','0','0','0','0','0','0','0','0','Hai\'shulud - Cast Bone Burst on Aggro'),
-('2203804','22038','9','5','100','1','50','100','500','500','21','1','0','0','0','0','0','0','0','0','0','0','Hai\'shulud - Start Combat Movement at 50 Yards (Phase 1)'),
-('2203805','22038','9','5','100','1','5','50','500','500','21','0','0','0','0','0','0','0','0','0','0','0','Hai\'shulud - Prevent Combat Movement between 5 and 50 Yards (Phase 1)'),
-('2203806','22038','9','5','100','1','0','5','500','500','21','1','0','0','0','0','0','0','0','0','0','0','Hai\'shulud - Start Combat Movement Below 5 Yards (Phase 1)'),
-('2203807','22038','9','5','100','1','0','50','2100','4500','11','31747','1','0','0','0','0','0','0','0','0','0','Hai\'shulud - Cast Poison (Phase 1)'),
-('2203808','22038','9','5','100','1','0','5','25000','27000','11','32738','1','1','0','0','0','0','0','0','0','0','Hai\'shulud - Cast Bore (Phase 1)'),
-('2203809','22038','0','5','100','1','3000','3000','10000','10000','28','0','37989','0','28','0','33928','0','0','0','0','0','Hai\'shulud - Remove Sandworm Submerge Visual and Remove Tunnel Bore Bone Passive (Phase 1)'),
-('2203810','22038','9','5','100','0','50','100','0','0','11','37989','0','16','11','33928','0','0','22','2','0','0','Hai\'shulud - Cast Sandworm Submerge Visual and Cast Tunnel Bore Bone Passive and Set Phase 2 at 50 Yards (Phase 1)'),
-('2203811','22038','9','3','100','1','0','5','500','500','22','1','0','0','0','0','0','0','0','0','0','0','Hai\'shulud - Set Phase 1 at 5 Yards (Phase 2)'),
-('2203812','22038','9','3','100','1','0','5','500','500','28','0','37989','0','28','0','33928','0','21','0','0','0','Hai\'shulud - Remove Sandworm Submerge Visual and Remove Tunnel Bore Bone Passive and Prevent Combat Movement at 5 Yards (Phase 2)'),
-('2203813','22038','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Hai\'shulud - Set Phase 0 on Evade'),
-('2203814','22038','21','0','100','0','0','0','0','0','11','37989','0','16','11','33928','0','0','21','0','0','0','Hai\'shulud - Cast Sandworm Submerge Visual and Cast Tunnel Bore Bone Passive and Prevent Combat Movement on REACHED_HOME'),
-('2203815','22038','1','0','100','1','300000','300000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Hai\'shulud - despawn self'),
+-- Hai'shulud (22038) - npc_burster_worm
 -- Infested Root-Walker (SD2 BACKPORT)
 ('2209501','22095','0','0','100','1','15000','20000','32000','38000','11','39000','0','0','0','0','0','0','0','0','0','0','Infested Root-Walker - Cast Regrowth'),
 ('2209502','22095','6','0','100','0','0','0','0','0','11','39130','0','7','0','0','0','0','0','0','0','0','Infested Root-Walker - Summon Wood Mites on Death'),
@@ -20878,22 +20824,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2238705','22387','0','0','100','1','4000','9000','9000','14000','11','12058','4','1','0','0','0','0','0','0','0','0','Lithic Oracle - Cast Chain Lightning'),
 -- Lithic Talonguard
 ('2238801','22388','0','0','100','1','2000','5000','45000','50000','11','6016','1','0','0','0','0','0','0','0','0','0','Lithic Talonguard - Cast Pierce Armor'),
--- Mature Bone Sifter
-('2248201','22482','11','0','100','0','0','0','0','0','11','37989','0','16','11','33928','0','0','21','0','0','0','Mature Bone Sifter - Cast Sandworm Submerge Visual and Cast Tunnel Bore Bone Passive and Prevent Combat Movement on Spawn'),
-('2248202','22482','4','0','100','0','0','0','0','0','28','0','37989','0','28','0','33928','0','22','1','0','0','Mature Bone Sifter - Remove Sandworm Submerge Visual and Remove Tunnel Bore Bone Passive and Set Phase 1 on Aggro'),
-('2248203','22482','9','5','100','1','0','50','2100','4500','11','31747','1','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - Cast Poison (Phase 1)'),
-('2248204','22482','9','5','100','1','0','5','25000','27000','11','32738','1','1','0','0','0','0','0','0','0','0','Mature Bone Sifter - Cast Bore (Phase 1)'),
-('2248205','22482','0','5','100','1','3000','3000','10000','10000','28','0','37989','0','28','0','33928','0','0','0','0','0','Mature Bone Sifter - Remove Sandworm Submerge Visual and Remove Tunnel Bore Bone Passive (Phase 1)'),
-('2248206','22482','9','5','100','1','50','100','500','500','11','37989','0','16','11','33928','0','0','22','2','0','0','Mature Bone Sifter - Cast Sandworm Submerge Visual and Cast Tunnel Bore Bone Passive and Set Phase 2 at 50 Yards (Phase 1)'),
-('2248207','22482','9','5','100','1','50','100','500','500','23','1','0','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - Enable Combat Movement at 50 Yards (Phase 1)'),
-('2248208','22482','9','3','100','1','0','8','500','500','28','0','37989','0','28','0','33928','0','21','0','0','0','Mature Bone Sifter - Remove Sandworm Submerge Visual and Remove Tunnel Bore Bone Passive and Prevent Combat Movement at 8 Yards (Phase 2)'),
-('2248209','22482','9','3','100','1','0','8','500','500','22','1','0','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - Set Phase 1 at 8 Yards (Phase 2)'),
-('2248210','22482','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - Set Phase 0 on Evade'),
-('2248211','22482','21','0','100','0','0','0','0','0','11','37989','0','16','11','33928','0','0','21','0','0','0','Mature Bone Sifter - Cast Sandworm Submerge Visual and Cast Tunnel Bore Bone Passive and Prevent Combat Movement on REACHED_HOME'),
-('2248212','22482','1','0','100','1','300000','300000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Mature Bone Sifter - despawn self'),
+-- Bone Sifter (22466) - npc_burster_worm
+-- Mature Bone Sifter (22482) - npc_burster_worm
 -- Sand Gnome
 ('2248301','22483','11','0','100','0','0','0','0','0','1','-1351','-1352','-1353','0','0','0','0','0','0','0','0','Sand Gnome - Say on Spawned'),
-('2248302','22483','1','0','100','1','300000','300000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Sand Gnome - despawn self'),
 -- Lost Torranche
 ('2280701','22807','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lost Torranche - Flee at 15% HP'),
 -- Guardian of the Hawk
