@@ -32807,7 +32807,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-906','The %s didn\'t like what just happened.','0','2','0','16534','18'),
 ('-907','The %s looks confused.','0','2','0','16534','6'),
 ('-908','The %s nods appreciatively.','0','2','0','16534','2'),
-('-909','The %s doen\'t look like it minds the crystal\'s effect.','0','2','0','16534','22'),
+('-909','The %s doesn\'t look like it minds the crystal\'s effect.','0','2','0','16534','22'),
 ('-910','The %s seems overjoyed.','0','2','0','16534','4'),
 ('-911','<Sobbing> I hate graveyards. So many dead. And my sweet Luhanaa.....','0','0','0','17073','1'),
 ('-912','It should have been me!','0','0','0','17073','1'),
