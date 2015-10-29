@@ -11136,7 +11136,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greater Timberstrider (17374) - NSR
 -- Stillpine Captive (17375) - NSR
 -- Stillpine Ancestor Akida
-('1737901','17379','11','0','100','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','Stillpine Ancestor Akida - Cast Elemental Spawn-in on Spawn'),
+('1737901','17379','11','0','100','0','0','0','0','0','11','25035','0','1','3','0','16995','0','0','0','0','0','Stillpine Ancestor Akida - Cast Elemental Spawn-in and set correct modelid on Spawn'),
 -- Stillpine Ancestor Coo
 ('1739101','17391','11','0','100','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','Stillpine Ancestor Coo - Cast Elemental Spawn-in on Spawn'),
 -- Stillpine Ancestor Tikti
@@ -11226,7 +11226,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Azuremyst Peacekeeper (18038) - guard_azuremyst
 -- Otonambusi (18810) - NSR
 -- Nibblet (19073) - NSR
--- Apprentice Tedon (20227) -NSR
+-- Apprentice Tedon
+('2022701','20227','30','0','100','1','5','16516','0','0','18','256','10','0','0','0','0','0','0','0','0','0','Apprentice Tedon - change targets unitFlag on Receive AI Event'),
 -- Apprentice Vishael (20233) - NSR
 -- Stormwind Marine
 ('2055601','20556','9','0','100','1','0','5','8000','12000','11','12170','1','0','0','0','0','0','0','0','0','0','Stormwind Marine - Cast Revenge'),
