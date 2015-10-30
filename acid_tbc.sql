@@ -11138,7 +11138,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stillpine Ancestor Akida
 ('1737901','17379','11','0','100','0','0','0','0','0','11','25035','0','1','3','0','16995','0','0','0','0','0','Stillpine Ancestor Akida - Cast Elemental Spawn-in and set correct modelid on Spawn'),
 -- Stillpine Ancestor Coo
-('1739101','17391','11','0','100','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','Stillpine Ancestor Coo - Cast Elemental Spawn-in on Spawn'),
+('1739101','17391','11','0','100','0','0','0','0','0','11','25035','0','1','3','0','16995','0','0','0','0','0','Stillpine Ancestor Coo - Cast Elemental Spawn-in ans set correct modelid on Spawn'),
 -- Stillpine Ancestor Tikti
 ('1739201','17392','11','0','100','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','Stillpine Ancestor Tikti - Cast Elemental Spawn-in on Spawn'),
 -- Stillpine Ancestor Yor
