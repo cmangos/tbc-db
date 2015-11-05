@@ -28771,6 +28771,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Corrupted Green Whelp (14023) - NSR
 -- Corrupted Blue Whelp (14024) - NSR
 -- Corrupted Bronze Whelp (14025) - NSR
+-- Demon Portal
+('1408101','14081','1','0','100','3','30000','30000','30000','30000','11','22392','0','0','0','0','0','0','0','0','0','0','Demon Portal - Summon Enraged Felguard'),
 -- Enraged Felguard
 ('1410101','14101','9','0','100','3','0','5','5000','8000','11','15580','1','0','0','0','0','0','0','0','0','0','Enraged Felguard - Cast Strike'),
 ('1410102','14101','0','0','100','3','7000','11000','12000','15000','11','15548','0','1','0','0','0','0','0','0','0','0','Enraged Felguard - Cast Thunderclap'),
