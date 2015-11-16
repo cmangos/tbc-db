@@ -11118,8 +11118,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- "Cookie" McWeaksauce (17246) - OOC CONVERSATION WITH Admiral Odesyus
 -- Alliance Logger (17247) - NSR
 -- Flaming Aspect (17272) - NSR
--- Venture Co. Saboteur
-('1727801','17278','4','0','100','0','0','0','0','0','11','31271','0','0','0','0','0','0','0','0','0','0','Venture Co. Saboteur - Cast Torch Burn on Aggro'),
+-- Venture Co. Saboteur (17278) - NSR
 -- Venture Co. Gemologist (17279) - NSR
 -- Ragnarose (17285) - NSR    
 -- Warlord Sriss'tiz 
