@@ -27,7 +27,7 @@ ECHO ...........................................................................
 ECHO.
 ECHO 1 - TBC-DB Full Database Install with Newest Data and Latest CMangos and ACID
 ECHO 2 - TBC-DB Full Database From Older Stable Release NO CUSTOM CONTENT INCLUDED
-ECHO 3 - Database Reset (%MangosDB% and %CharactersDB%) - DB WIPE
+ECHO 3 - Database Reset (%WorldDB% and %CharactersDB%) - DB WIPE
 ECHO 4 - BRAND NEW FIRST TIME INSTALLATION - Create Databases and Import Latest Data
 ECHO 5 - INSTALLATION REMOVAL - Remove and Delete All Default Databases
 ECHO 6 - EXIT (No Changes)
@@ -82,7 +82,7 @@ IF %M%==2 GOTO MENU
 :OPTION3
 CLS
 ECHO ===========================================================================
-ECHO Database Reset (%MangosDB% and %CharactersDB%) - DB WIPE - NO GAME CONTENT
+ECHO Database Reset (%WorldDB% and %CharactersDB%) - DB WIPE - NO GAME CONTENT
 ECHO ===========================================================================
 ECHO.
 ECHO .......................................
