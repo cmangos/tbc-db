@@ -2,15 +2,13 @@
 REM ########################################################################################################
 REM USER CONFIGURATION REQUIRED FOR AUTOMATIC IMPORT OF DATA - PLEASE UPDATE THIS DATA FOR YOUR INSTALLATION
 REM ########################################################################################################
-SET Mangos="C:\CMangos"
-SET SD2="C:\CMangos\src\bindings\ScriptDev2"
+SET CMangos="C:\CMangos"
 SET ACID="C:\CMangos\ACID\acid_tbc"
 SET User="mangos"
 SET Password="mangos"
-SET MangosDB="mangos"
+SET WorldDB="mangos"
 SET CharactersDB="characters"
 SET RealmdDB="realmd"
-SET ScriptDev2DB="scriptdev2"
 REM ##################################################################################################
 REM DO NOT EDIT ANYTHING BELOW THIS LINE - ALL CONFIGURATION REQUIRED LOCATED IN INSTALL_SCRIPT_Config
 REM ##################################################################################################
@@ -27,15 +25,15 @@ ECHO ...........................................................................
 ECHO Choose Preferred Installation Option - (If Updating Option #1 Is Suggested)
 ECHO ...........................................................................
 ECHO.
-ECHO 1 - TBC-DB Full Database Install with Newest Data and Latest SD2 and ACID
-ECHO 2 - TBC-DB Full Database From Older Stable Release and Latest SD2 and ACID
-ECHO 3 - Database Reset (%MangosDB%/%CharactersDB%/%ScriptDev2DB%) - DB WIPE
-ECHO 4 - BRAND NEW INSTALLATION - Create New Databases and Newest Data Import
+ECHO 1 - TBC-DB Full Database Install with Newest Data and Latest CMangos and ACID
+ECHO 2 - TBC-DB Full Database From Older Stable Release NO CUSTOM CONTENT INCLUDED
+ECHO 3 - Database Reset (%MangosDB% and %CharactersDB%) - DB WIPE
+ECHO 4 - BRAND NEW FIRST TIME INSTALLATION - Create Databases and Import Latest Data
 ECHO 5 - INSTALLATION REMOVAL - Remove and Delete All Default Databases
 ECHO 6 - EXIT (No Changes)
 ECHO.
 ECHO ----------------------------------------------------------------------------
-ECHO (MAKE SURE YOUR CMaNGOS-TBC / SD2-TBC / ACID-TBC REPOS ARE UP TO DATE FIRST)
+ECHO (MAKE SURE YOUR CMaNGOS-TBC AND ACID-TBC REPOS ARE UP TO DATE FIRST)
 ECHO ----------------------------------------------------------------------------
 SET /P M=Type 1, 2, 3, 4, 5 or 6 then press ENTER:
 IF %M%==1 GOTO OPTION1
@@ -84,7 +82,7 @@ IF %M%==2 GOTO MENU
 :OPTION3
 CLS
 ECHO ===========================================================================
-ECHO Database Reset (%MangosDB%/%CharactersDB%/%ScriptDev2DB%) - NO GAME CONTENT
+ECHO Database Reset (%MangosDB% and %CharactersDB%) - DB WIPE - NO GAME CONTENT
 ECHO ===========================================================================
 ECHO.
 ECHO .......................................
@@ -101,9 +99,9 @@ IF %M%==2 GOTO MENU
 
 :OPTION4
 CLS
-ECHO ====================================================================
-ECHO BRAND NEW INSTALLATION - Create New Databases and Newest Data Import
-ECHO ====================================================================
+ECHO ===========================================================================
+ECHO BRAND NEW FIRST TIME INSTALLATION - Create Databases and Import Latest Data
+ECHO ===========================================================================
 ECHO.
 ECHO .......................................
 ECHO Please Confirm Your Installation Option 
@@ -143,17 +141,18 @@ ECHO --------------------
 RD /S /Q Temp_Created_Files
 MD Temp_Created_Files
 ECHO.
-ECHO ---------------------------------------------------------------
-ECHO BUILD COMPLETE NEW FULL DB FROM NEWEST TBC-DB / SD2 / ACID DATA
-ECHO ---------------------------------------------------------------
-copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\000_TBCDB_Full.sql
-copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\001_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
+ECHO ----------------------------------------------------------------------
+ECHO BUILDING COMPLETE NEW FULL DB FROM NEWEST TBC-DB / CMANGOS / ACID DATA
+ECHO ----------------------------------------------------------------------
+copy /a %CMangos%\sql\base\mangos.sql /b Temp_Created_Files\000_CMangos_Base.sql
+copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\001_TBCDB_Full.sql
+copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\005_TBCDB_Updates.sql
 copy /a Updates\*.sql /b Temp_Created_Files\010_TBCDB_NewData.sql
-copy /a %SD2%\sql\mangos_scriptname_clear.sql /b Temp_Created_Files\011_SD2_Clear.sql
-copy /a %SD2%\sql\mangos_scriptname_full.sql /b Temp_Created_Files\012_SD2_Full.sql
+copy /a Updates\Custom_Data\*.sql /b Temp_Created_Files\011_TBCDB_Custom_Data.sql
+copy /a %CMangos%\sql\scriptdev2\scriptdev2.sql /b Temp_Created_Files\012_SD2_Full.sql
 copy /a %ACID%\acid_tbc.sql /b Temp_Created_Files\013_ACID_TBC.sql
 copy /a Temp_Created_Files\*.sql /b %CurrentVersion%_FULL.sql
 RD /S /Q Temp_Created_Files
@@ -161,8 +160,7 @@ ECHO.
 ECHO --------------------------------------------------------------
 ECHO PLEASE BE PATIENT WHILE NEW DATA IS IMPORTING TO THE DATABASES
 ECHO --------------------------------------------------------------
-mysql.exe --user=%User% --password=%Password% %MangosDB% < %CurrentVersion%_FULL.sql
-mysql.exe --user=%User% --password=%Password% %ScriptDev2DB% < %SD2%\sql\scriptdev2_script_full.sql
+mysql.exe --user=%User% --password=%Password% %WorldDB% < %CurrentVersion%_FULL.sql
 ECHO.
 ECHO --------------------
 ECHO REMOVE OLD SQL FILES
@@ -187,24 +185,23 @@ RD /S /Q Temp_Created_Files
 MD Temp_Created_Files
 ECHO.
 ECHO ---------------------------------------------------------------------------------
-ECHO BUILD FULL DB FROM MOST RECENT STABLE RELEASE OF TBC-DB AND CURRENT SD2/ACID DATA
+ECHO BUILDING COMPLETE NEW FULL DB FROM OLDER STABLE TBC-DB / CMANGOS / ACID DATA
 ECHO ---------------------------------------------------------------------------------
-copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\000_TBCDB_Full.sql
-copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\001_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
-copy /a %SD2%\sql\mangos_scriptname_clear.sql /b Temp_Created_Files\011_SD2_Clear.sql
-copy /a %SD2%\sql\mangos_scriptname_full.sql /b Temp_Created_Files\012_SD2_Full.sql
+copy /a %CMangos%\sql\base\mangos.sql /b Temp_Created_Files\000_CMangos_Base.sql
+copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\001_TBCDB_Full.sql
+copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\005_TBCDB_Updates.sql
+copy /a %CMangos%\sql\scriptdev2\scriptdev2.sql /b Temp_Created_Files\012_SD2_Full.sql
 copy /a %ACID%\acid_tbc.sql /b Temp_Created_Files\013_ACID_TBC.sql
-copy /a Temp_Created_Files\*.sql /b %StableVersion%_FULL_STABLE.sql
+copy /a Temp_Created_Files\*.sql /b %StableVersion%_FULL.sql
 RD /S /Q Temp_Created_Files
 ECHO.
 ECHO --------------------------------------------------------------
 ECHO PLEASE BE PATIENT WHILE NEW DATA IS IMPORTING TO THE DATABASES
 ECHO --------------------------------------------------------------
-mysql.exe --user=%User% --password=%Password% %MangosDB% < %StableVersion%_FULL_STABLE.sql
-mysql.exe --user=%User% --password=%Password% %ScriptDev2DB% < %SD2%\sql\scriptdev2_script_full.sql
+mysql.exe --user=%User% --password=%Password% %WorldDB% < %StableVersion%_FULL.sql
 ECHO.
 ECHO --------------------
 ECHO REMOVE OLD SQL FILES
@@ -231,23 +228,20 @@ ECHO.
 ECHO -------------------------------------------------------------------
 ECHO DELETE GAME DATABASES AND THEN RE-CREATE THEM TO IMPORT PROPER DATA
 ECHO -------------------------------------------------------------------
-mysqladmin.exe --user=%User% --password=%Password% -f DROP %MangosDB%
+mysqladmin.exe --user=%User% --password=%Password% -f DROP %WorldDB%
 mysqladmin.exe --user=%User% --password=%Password% -f DROP %CharactersDB%
-mysqladmin.exe --user=%User% --password=%Password% -f DROP %ScriptDev2DB%
 ECHO.
 ECHO --------------------
 ECHO CREATE NEW DATABASES
 ECHO --------------------
-mysqladmin.exe --user=%User% --password=%Password% CREATE %MangosDB%
+mysqladmin.exe --user=%User% --password=%Password% CREATE %WorldDB%
 mysqladmin.exe --user=%User% --password=%Password% CREATE %CharactersDB%
-mysqladmin.exe --user=%User% --password=%Password% CREATE %ScriptDev2DB%
 ECHO.
 ECHO -----------------------------------------------------
 ECHO IMPORT BASE DATA INTO DATABASES - NO CONTENT INCLUDED
 ECHO -----------------------------------------------------
-mysql.exe --user=%User% --password=%Password% %MangosDB% < %Mangos%\sql\mangos.sql
-mysql.exe --user=%User% --password=%Password% %CharactersDB% < %Mangos%\sql\characters.sql
-mysql.exe --user=%User% --password=%Password% %ScriptDev2DB% < %SD2%\sql\scriptdev2_create_structure_mysql.sql
+mysql.exe --user=%User% --password=%Password% %WorldDB% < %CMangos%\sql\base\mangos.sql
+mysql.exe --user=%User% --password=%Password% %CharactersDB% < %CMangos%\sql\base\characters.sql
 ECHO.
 ECHO --------------------
 ECHO REMOVE OLD SQL FILES
@@ -280,28 +274,27 @@ ECHO.
 ECHO -------------------------------------------------
 ECHO CREATE MYSQL USER AND NEW REQUIRED GAME DATABASES
 ECHO -------------------------------------------------
-mysql.exe --user=%User% --password=%Password% < %Mangos%\sql\create_mysql.sql
-mysql.exe --user=%User% --password=%Password% < %SD2%\sql\scriptdev2_create_database.sql
+mysql.exe --user=%User% --password=%Password% < %CMangos%\sql\create\db_create_mysql.sql
 ECHO.
 ECHO -----------------------------
 ECHO LOAD DATABASE TABLE STRUCTURE 
 ECHO -----------------------------
-mysql.exe --user=%User% --password=%Password% %MangosDB% < %Mangos%\sql\mangos.sql
-mysql.exe --user=%User% --password=%Password% %CharactersDB% < %Mangos%\sql\characters.sql
-mysql.exe --user=%User% --password=%Password% %RealmdDB% < %Mangos%\sql\realmd.sql
-mysql.exe --user=%User% --password=%Password% %ScriptDev2DB% < %SD2%\sql\scriptdev2_create_structure_mysql.sql
+mysql.exe --user=%User% --password=%Password% %WorldDB% < %CMangos%\sql\base\mangos.sql
+mysql.exe --user=%User% --password=%Password% %CharactersDB% < %CMangos%\sql\base\characters.sql
+mysql.exe --user=%User% --password=%Password% %RealmdDB% < %CMangos%\sql\base\realmd.sql
 ECHO.
-ECHO ---------------------------------------------------------------
-ECHO BUILD COMPLETE NEW FULL DB FROM NEWEST TBC-DB / SD2 / ACID DATA
-ECHO ---------------------------------------------------------------
-copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\000_TBCDB_Full.sql
-copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\001_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
+ECHO ----------------------------------------------------------------------
+ECHO BUILDING COMPLETE NEW FULL DB FROM NEWEST TBC-DB / CMANGOS / ACID DATA
+ECHO ----------------------------------------------------------------------
+copy /a %CMangos%\sql\base\mangos.sql /b Temp_Created_Files\000_CMangos_Base.sql
+copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\001_TBCDB_Full.sql
+copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
+copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\005_TBCDB_Updates.sql
 copy /a Updates\*.sql /b Temp_Created_Files\010_TBCDB_NewData.sql
-copy /a %SD2%\sql\mangos_scriptname_clear.sql /b Temp_Created_Files\011_SD2_Clear.sql
-copy /a %SD2%\sql\mangos_scriptname_full.sql /b Temp_Created_Files\012_SD2_Full.sql
+copy /a Updates\Custom_Data\*.sql /b Temp_Created_Files\011_TBCDB_Custom_Data.sql
+copy /a %CMangos%\sql\scriptdev2\scriptdev2.sql /b Temp_Created_Files\012_SD2_Full.sql
 copy /a %ACID%\acid_tbc.sql /b Temp_Created_Files\013_ACID_TBC.sql
 copy /a Temp_Created_Files\*.sql /b %CurrentVersion%_FULL.sql
 RD /S /Q Temp_Created_Files
@@ -309,8 +302,7 @@ ECHO.
 ECHO --------------------------------------------------------------
 ECHO PLEASE BE PATIENT WHILE NEW DATA IS IMPORTING TO THE DATABASES
 ECHO --------------------------------------------------------------
-mysql.exe --user=%User% --password=%Password% %MangosDB% < %CurrentVersion%_FULL.sql
-mysql.exe --user=%User% --password=%Password% %ScriptDev2DB% < %SD2%\sql\scriptdev2_script_full.sql
+mysql.exe --user=%User% --password=%Password% %WorldDB% < %CurrentVersion%_FULL.sql
 ECHO.
 ECHO --------------------
 ECHO REMOVE OLD SQL FILES
