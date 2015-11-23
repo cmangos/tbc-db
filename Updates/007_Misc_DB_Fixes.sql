@@ -61,7 +61,7 @@ UPDATE npc_vendor_template SET condition_id=238 WHERE item IN (5042);
 -- ==================================
 -- Fix Gug Fatcandle Faction and Loot
 -- ==================================
-UPDATE creature_template SET FactionAlliance=26, FactionHorde=26, MinGold=2, MaxGold=4 WHERE entry IN (62);
+UPDATE creature_template SET FactionAlliance=26, FactionHorde=26, MinLootGold=2, MaxLootGold=4 WHERE entry IN (62);
 DELETE FROM creature_loot_template WHERE entry IN (62);
 insert into `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`) values('62','56147','100','0','1','1','0');
 insert into `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`) values('62','117','1.1','1','1','1','0');
