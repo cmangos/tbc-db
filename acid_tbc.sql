@@ -29356,7 +29356,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Calliard (16159) - NSR
 -- Hastings (16169) - NSR
 -- Coldmist Stalker
-('1617001','16170','11','0','100','2','0','0','0','0','11','29291','0','0','0','0','0','0','0','0','0','0','Coldmist Stalker - Cast Chilling Poison on Spawn'),
+('1617001','16170','11','0','100','2','0','0','0','0','11','29291','0','0','11','22766','0','0','0','0','0','0','Coldmist Stalker - Cast Chilling Poison and Sneak on Spawn'),
 -- Coldmist Widow
 ('1617101','16171','4','0','100','2','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Coldmist Widow - Set Phase 1 on Aggro'),
 ('1617102','16171','9','5','100','3','0','30','5000','9000','11','29293','1','0','0','0','0','0','0','0','0','0','Coldmist Widow - Cast Poison Volley (Phase 1)'),
