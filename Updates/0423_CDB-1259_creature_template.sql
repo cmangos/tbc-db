@@ -1,0 +1,45 @@
+-- Fixed level, health, mana and damage stats of the creatures (trash,
+-- and bosses) in Scholomance. They are now similar to what they
+-- were back in Classic.
+-- Several sources were used with cross-checking: Bestiary, WoW Dungeon
+-- Companion, various web archives (wowwiki, allakhazam...)
+UPDATE `creature_template` SET /*`Faction`='14', `UnitFlags`='0', */`DamageMultiplier`='2.5', `MeleeBaseAttackTime`='2000', `MechanicImmuneMask`=`MechanicImmuneMask`|536870912 WHERE `entry`='1853'; -- Darkmaster Gandling (4.3D) (1A)
+UPDATE `creature_template` SET `DamageMultiplier`='6.25', `MeleeBaseAttackTime`='2000' WHERE `entry`='10433'; -- Marduk Blackpool (5D) (1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3.9', `ArmorMultiplier`='1' WHERE `entry`='10469'; -- Scholomance Adept (4D) (0.992232A)
+UPDATE `creature_template` SET `ArmorMultiplier`='1' WHERE `entry`='10470'; -- Scholomance Neophyte (3.8D) (0.991963A)
+UPDATE `creature_template` SET `ArmorMultiplier`='1' WHERE `entry`='10471'; -- Scholomance Acolyte (3.8D) (0.992109A)
+UPDATE `creature_template` SET `DamageMultiplier`='3.9', `ArmorMultiplier`='1' WHERE `entry`='10472'; -- Scholomance Occultist (4D) (0.992232A)
+UPDATE `creature_template` SET `PowerMultiplier`='2', `DamageMultiplier`='3.6', `ArmorMultiplier`='1' WHERE `entry`='10475'; -- Scholomance Student (6D) (0.992261A)
+UPDATE `creature_template` SET `ArmorMultiplier`='1' WHERE `entry`='10476'; -- Scholomance Necrolyte (3.8D) (0.992109A)
+UPDATE `creature_template` SET `DamageMultiplier`='3.9', `ArmorMultiplier`='1' WHERE `entry`='10477'; -- Scholomance Necromancer (4D) (0.992232A)
+UPDATE `creature_template` SET `PowerMultiplier`='3', `DamageMultiplier`='4', `MeleeBaseAttackTime`='2000', `ArmorMultiplier`='1' WHERE `entry`='10478'; -- Splintered Skeleton (8D) (0.960169A)
+UPDATE `creature_template` SET `DamageMultiplier`='0.75', `MeleeBaseAttackTime`='2000' WHERE `entry`='10479'; -- Skulking Corpse (1.1D) (1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3.5' WHERE `entry`='10480'; -- Unstable Corpse (1D) (1A)
+UPDATE `creature_template` SET `MechanicImmuneMask`='8388625' WHERE `entry`='10482'; -- Risen Lackey (1D) (1A)
+UPDATE `creature_template` SET `ArmorMultiplier`='1' WHERE `entry`='10485'; -- Risen Aberration (2.5D) (0.98952A)
+UPDATE `creature_template` SET `PowerMultiplier`='3' WHERE `entry`='10486'; -- Risen Warrior (6D) (1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3.9', `ArmorMultiplier`='1.5' WHERE `entry`='10487'; -- Risen Protector (4D) (1.48618A)
+UPDATE `creature_template` SET `PowerMultiplier`='3', `DamageMultiplier`='7.5' WHERE `entry`='10488'; -- Risen Construct (8D) (1A)
+UPDATE `creature_template` SET `PowerMultiplier`='3', `ArmorMultiplier`='1.5' WHERE `entry`='10489'; -- Risen Guard (3.8D) (1.48925A)
+UPDATE `creature_template` SET `DamageMultiplier`='3.9', `ArmorMultiplier`='1' WHERE `entry`='10491'; -- Risen Bonewarder (4D) (0.992938A)
+UPDATE `creature_template` SET `PowerMultiplier`='3', `DamageMultiplier`='3.9' WHERE `entry`='10495'; -- Diseased Ghoul (4D) (1A)
+UPDATE `creature_template` SET `PowerMultiplier`='3', `DamageMultiplier`='3.9', `MeleeBaseAttackTime`='2000' WHERE `entry`='10497'; -- Ragged Ghoul (6.7D) (1A)
+UPDATE `creature_template` SET `ArmorMultiplier`='1' WHERE `entry`='10498'; -- Spectral Tutor (4D) (0.953496A)
+UPDATE `creature_template` SET `DamageMultiplier`='3.9', `ArmorMultiplier`='1' WHERE `entry`='10499'; -- Spectral Researcher (4D) (0.953496A)
+UPDATE `creature_template` SET `ArmorMultiplier`='1' WHERE `entry`='10500'; -- Spectral Teacher (3.9D) (0.920386A)
+UPDATE `creature_template` SET `PowerMultiplier`='3' WHERE `entry`='10504'; -- Lord Alexei Barov (6D) (1A)
+UPDATE `creature_template` SET /*`Faction`='14', `UnitFlags`='0', */`DamageMultiplier`='12', `MeleeBaseAttackTime`='2000' WHERE `entry`='10506'; -- Kirtonos the Herald (15D) (1A)
+UPDATE `creature_template` SET `PowerMultiplier`='3' WHERE `entry`='10507'; -- The Ravenian (7D) (1A)
+UPDATE `creature_template` SET `ArmorMultiplier`='1' WHERE `entry`='10508'; -- Ras Frostwhisper (4D) (1.20928A)
+UPDATE `creature_template` SET `PowerMultiplier`='3' WHERE `entry`='10901'; -- Lorekeeper Polkelt (4D) (1A)
+UPDATE `creature_template` SET `ArmorMultiplier`='1' WHERE `entry`='11257'; -- Scholomance Handler (4D) (0.96065A)
+UPDATE `creature_template` SET `PowerMultiplier`='3' WHERE `entry`='11261'; -- Doctor Theolen Krastinov (11D) (1A)
+UPDATE `creature_template` SET `MinLevel`='58', /*`Faction`='14', `SpeedWalk`='1',*/ `DamageMultiplier`='1', `MeleeBaseAttackTime`='2000', `ArmorMultiplier`='1' WHERE `entry`='11263'; -- Spectral Projection (1.4D) (0.960169A)
+UPDATE `creature_template` SET `MinLevel`='58', `MaxLevel`='59', /*`Faction`='14', `UnitFlags`='0',*/ `DamageMultiplier`='1.8', `MeleeBaseAttackTime`='2000' WHERE `entry`='11284'; -- Dark Shade (3.1D) (1A) - https://tbc.wowhead.com/npc=10472/scholomance-occultist
+UPDATE `creature_template` SET `PowerMultiplier`='3', `DamageMultiplier`='1' WHERE `entry`='11551'; -- Necrofiend (6D) (1A)
+UPDATE `creature_template` SET `DamageMultiplier`='3.9', `ArmorMultiplier`='1' WHERE `entry`='11582'; -- Scholomance Dark Summoner (4D) (0.992232A)
+UPDATE `creature_template` SET /*`Faction`='14', */`SpeedWalk`='1', `DamageMultiplier`='0.33', /*`MeleeBaseAttackTime`='2000',*/ `ArmorMultiplier`='1', `MinLootGold`='65', `MaxLootGold`='326' WHERE `entry`='11598'; -- Risen Guardian (0.3D) (0.950543A)
+
+-- https://github.com/cmangos/classic-db/commit/d3f8425bd2670742c6ad8db720a30b5f67a5894d
+UPDATE `creature_template` SET `DamageMultiplier`='1.5', `MeleeBaseAttackTime`='2000' WHERE `entry`='16119'; -- Bone Minion (2.1D) (1A)
+
