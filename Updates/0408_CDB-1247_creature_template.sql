@@ -28,3 +28,7 @@ UPDATE `creature_template` SET `Faction`='16', `SpeedWalk`=(2.5/2.5), `SpeedRun`
 UPDATE `creature_template` SET `DamageMultiplier`='4', `MeleeBaseAttackTime`='2000' WHERE `entry`='14354'; -- Pusillin (7D) (1A)
 UPDATE `creature_template` SET `MinLevel`='60', `MaxLevel`='60' WHERE `entry`='16045'; -- Isalien Trigger (1D) (1A)
 
+-- https://github.com/cmangos/classic-db/commit/46ed68020a2ce559ba2ca0f612cc4d47961a29c4
+UPDATE `creature_template` SET `DamageMultiplier`='6', `MeleeBaseAttackTime`='2600', `MechanicImmuneMask`='8388624' WHERE `entry`='16097'; -- Isalien (13.6D) (1A)
+UPDATE `creature_template` SET `PowerMultiplier`='15' WHERE `entry`='16098'; -- Empyrean (6D) (1A)
+
