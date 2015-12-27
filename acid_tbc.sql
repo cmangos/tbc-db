@@ -29640,7 +29640,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Roar (17546) - boss_roar
 -- Tinhead (17547) - boss_tinhead
 -- Tito (SD2 Backport)
-('1754801','17548','0','0','100','3','7000','9000','7000','10000','11','31015','0','0','0','0','0','0','0','0','0','0','Tito - Cast Annoying Yipping'),
+('1754801','17548','0','0','100','3','7000','9000','7000','10000','11','31015','4','0','0','0','0','0','0','0','0','0','Tito - Cast Annoying Yipping'),
 ('1754802','17548','21','0','100','2','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Tito - Forced Despawn on Reached Home'),
 -- Grandmother (17603) - npc_grandmother
 -- Prince Malchezaar's Axes
