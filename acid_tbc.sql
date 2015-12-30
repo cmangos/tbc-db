@@ -24261,7 +24261,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==========
--- Gnomeregan
+-- Gnomeregan - (Zone Script Revamp Complete)
 -- ==========
 -- Namdo Bizzfizzle
 ('268301','2683','2','0','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Namdo Bizzfizzle - Flee at 15% HP'),
@@ -24429,7 +24429,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===================================
--- Hellfire Citadel: Hellfire Ramparts
+-- Hellfire Citadel: Hellfire Ramparts - (Zone Script Revamp Complete)
 -- ===================================
 -- Bonechewer Hungerer (3.0.3 Official Data - Normal Log Only)
 ('1725901','17259','4','0','10','6','100','0','0','0','1','-158','-181','-672','0','0','0','0','0','0','0','0','Bonechewer Hungerer - Random Say on Aggro'),
@@ -24441,29 +24441,25 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1726401','17264','4','0','20','6','0','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bonechewer Ravener - Random Say on Aggro'),
 ('1726402','17264','0','0','100','7','3200','8800','20100','30100','11','30621','1','0','13','-40','1','0','0','0','0','0','Bonechewer Ravener - Cast Kidney Shot and Reduce Aggro'),
 -- Bleeding Hollow Darkcaster (3.0.3 Official Data - Normal Log Only)
-('1726901','17269','1','0','100','6','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('1726902','17269','4','0','100','2','0','0','0','0','11','15241','1','0','22','1','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Normal) - Cast Scorch and Set Phase 1 on Aggro'),
-('1726903','17269','9','5','100','3','0','30','2400','3600','11','15241','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Normal) - Cast Scorch (Phase 1)'),
-('1726904','17269','4','0','100','4','0','0','0','0','11','36807','1','0','22','1','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Heroic) - Cast Scorch and Set Phase 1 on Aggro'),
-('1726905','17269','9','5','100','5','0','30','2400','3600','11','36807','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Heroic) - Cast Scorch (Phase 1)'),
+('1726901','17269','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Set Phase 1 on Aggro'),
+('1726902','17269','9','5','100','3','8','30','2400','3600','11','15241','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Normal) - Cast Scorch (Phase 1)'),
+('1726903','17269','9','5','100','5','8','30','2400','3600','11','36807','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Heroic) - Cast Scorch (Phase 1)'),
+('1726904','17269','9','5','100','7','30','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Start Combat Movement at 30 Yards (Phase 1)'),
+('1726905','17269','9','5','100','7','0','14','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Start Combat Movement at 14 Yards (Phase 1)'),
 ('1726906','17269','3','5','100','7','15','0','1000','1000','21','1','0','0','22','2','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
-('1726907','17269','9','5','100','6','15','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Start Combat Movement at 15 Yards (Phase 1)'),
-('1726908','17269','9','5','100','7','5','10','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Prevent Combat Movement at 10 Yards (Phase 1)'),
-('1726909','17269','9','5','100','7','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Start Combat Movement Below 5 Yards'),
-('1726910','17269','3','3','100','7','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Set Phase 1 when Mana is above 30% (Phase 2)'),
-('1726911','17269','0','0','100','3','11600','31300','22700','45500','11','20754','4','1','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Normal) - Cast Rain of Fire'),
-('1726912','17269','0','0','100','5','11600','31300','22700','45500','11','36808','4','1','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Heroic) - Cast Rain of Fire'),
-('1726913','17269','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Set Phase to 0 on Evade'),
+('1726907','17269','3','3','100','7','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('1726908','17269','0','0','100','3','11600','31300','22700','45500','11','20754','4','1','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Normal) - Cast Rain of Fire'),
+('1726909','17269','0','0','100','5','11600','31300','22700','45500','11','36808','4','1','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Heroic) - Cast Rain of Fire'),
+('1726910','17269','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Set Phase to 0 on Evade'),
 -- Bleeding Hollow Archer (3.0.3 Official Data - Normal Log Only)
-('1727001','17270','1','0','100','6','0','0','0','0','21','0','0','0','20','0','0','0','22','1','0','0','Bleeding Hollow Archer - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('1727001','17270','1','0','100','6','0','0','0','0','20','0','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Archer - Prevent Melee and Set Phase 1 on Spawn'),
 ('1727002','17270','4','0','10','6','100','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bleeding Hollow Archer - Random Say on Aggro'),
 ('1727003','17270','9','1','100','3','5','30','2300','5000','11','18651','1','0','40','2','0','0','0','0','0','0','Bleeding Hollow Archer (Normal) - Cast Multi Shot and Set Ranged Weapon Model (Phase 1)'),
 ('1727004','17270','9','1','100','5','5','30','2300','5000','11','31942','1','0','40','2','0','0','0','0','0','0','Bleeding Hollow Archer (Heroic) - Cast Multi Shot and Set Ranged Weapon Model (Phase 1)'),
 ('1727005','17270','9','1','100','6','20','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Bleeding Hollow Archer - Start Combat Movement and Start Melee at 20 Yards (Phase 1)'),
 ('1727006','17270','9','1','100','6','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Bleeding Hollow Archer - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('1727007','17270','9','1','100','6','10','15','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Bleeding Hollow Archer - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
-('1727008','17270','0','0','100','7','12100','15300','13300','18200','11','30614','1','1','40','2','0','0','0','0','0','0','Bleeding Hollow Archer - Cast Aimed Shot'),
-('1727009','17270','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Bleeding Hollow Archer - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('1727007','17270','0','0','100','7','12100','15300','13300','18200','11','30614','1','1','40','2','0','0','0','0','0','0','Bleeding Hollow Archer - Cast Aimed Shot'),
+('1727008','17270','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Bleeding Hollow Archer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bonechewer Destroyer (3.0.3 Official Data - Normal Log Only)
 ('1727101','17271','4','0','20','6','0','0','0','0','1','-156','-181','-674','0','0','0','0','0','0','0','0','Bonechewer Destroyer - Random Say on Aggro'),
 ('1727102','17271','9','0','100','7','0','5','6100','21400','11','16856','1','0','0','0','0','0','0','0','0','0','Bonechewer Destroyer - Cast Mortal Strike'),
@@ -24493,20 +24489,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1745508','17455','0','0','25','2','20030','20030','0','0','32','17280','1','19','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Normal) - Summon 4th Shattered Hand Warhound'),
 ('1745509','17455','0','0','75','4','17030','17030','0','0','32','17280','1','19','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Heroic) - Summon 4th Shattered Hand Warhound'),
 -- Bleeding Hollow Scryer (3.0.3 Official Data - Normal Log Only)
-('1747801','17478','1','0','100','6','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Prevent Combat Movement on Spawn'),
-('1747802','17478','4','0','10','6','100','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Random Say on Aggro'),
-('1747803','17478','4','0','100','2','0','0','0','0','11','12471','1','0','22','1','0','0','0','0','0','0','Bleeding Hollow Scryer (Normal) - Cast Shadowbolt and Set Phase 1 on Aggro'),
-('1747804','17478','9','5','100','3','0','40','3600','4800','11','12471','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer (Normal) - Cast Shadowbolt (Phase 1)'),
-('1747805','17478','4','0','100','4','0','0','0','0','11','15232','1','0','22','1','0','0','0','0','0','0','Bleeding Hollow Scryer (Heroic) - Cast Shadowbolt and Set Phase 1 on Aggro'),
-('1747806','17478','9','5','100','5','0','40','3100','4700','11','15232','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer (Heroic) - Cast Shadowbolt (Phase 1)'),
-('1747807','17478','3','5','100','7','15','0','1000','1000','21','1','0','0','23','1','0','0','0','0','0','0','Bleeding Hollow Scryer - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
-('1747808','17478','9','5','100','7','25','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Start Combat Movement at 25 Yards (Phase 1)'),
-('1747809','17478','9','5','100','7','5','15','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('1747810','17478','9','5','100','7','0','5','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Start Combat Movement Below 5 Yards'),
-('1747811','17478','3','3','100','7','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Set Phase 1 when Mana is above 30% (Phase 2)'),
-('1747812','17478','0','0','100','7','6600','23500','17100','23800','11','30615','5','1','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Cast Fear'),
-('1747813','17478','2','0','100','6','15','0','0','0','11','30659','0','7','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Cast Fel Infusion at 15% HP (THIS SHOULD BE CAST ON BONECHEWER RIPPER ON DEATH BUT IS A CORE LIMITATION CURRENTLY)'),
-('1747814','17478','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Set Phase to 0 on Evade'),
+('1747801','17478','4','0','10','6','100','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Random Say on Aggro'),
+('1747802','17478','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Set Phase 1 on Aggro'),
+('1747803','17478','9','5','100','3','8','40','3600','4800','11','12471','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer (Normal) - Cast Shadowbolt (Phase 1)'),
+('1747804','17478','9','5','100','5','8','40','3100','4700','11','15232','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer (Heroic) - Cast Shadowbolt (Phase 1)'),
+('1747805','17478','9','5','100','7','30','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Start Combat Movement at 30 Yards (Phase 1)'),
+('1747806','17478','9','5','100','7','0','14','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Start Combat Movement at 14 Yards (Phase 1)'),
+('1747807','17478','3','5','100','7','15','0','1000','1000','21','1','0','0','22','2','0','0','0','0','0','0','Bleeding Hollow Scryer - Start Combat Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
+('1747808','17478','3','3','100','7','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Set Phase 1 when Mana is above 30% (Phase 2)'),
+('1747809','17478','0','0','100','7','6600','23500','17100','23800','11','30615','5','1','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Cast Fear'),
+('1747810','17478','2','0','100','6','15','0','0','0','11','30659','0','7','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Cast Fel Infusion at 15% HP (THIS SHOULD BE CAST ON BONECHEWER RIPPER ON DEATH BUT IS A CORE LIMITATION CURRENTLY)'),
+('1747811','17478','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Set Phase to 0 on Evade'),
 -- Hellfire Sentry (3.0.3 Official Data - Normal Log Only)
 ('1751701','17517','0','0','100','7','1200','7900','20800','24100','11','30621','1','0','0','0','0','0','0','0','0','0','Hellfire Sentry - Cast Kidney Shot'),
 ('1751702','17517','6','0','100','6','0','0','0','0','34','2','4','0','0','0','0','0','0','0','0','0','Hellfire Sentry - Set Instance Data on Death'),
