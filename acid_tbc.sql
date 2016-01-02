@@ -26925,7 +26925,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==================================================================
--- Tempest Keep: The Mechanar - (4.3.4 Official Data - Normal/Heroic)
+-- Tempest Keep: The Mechanar - (4.3.4 Official Data - Normal/Heroic) - (Zone Script Revamp Complete)
 -- ==================================================================
 -- Mercutio (12581) - NSR
 -- Tempest-Forge Patroller (4.3.4 Official Data - Normal/Heroic)
@@ -26998,14 +26998,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1971302','19713','0','0','100','3','15200','27700','21700','36800','11','35056','1','0','0','0','0','0','0','0','0','0','Mechanar Wrecker (Normal) - Cast Glob of Machine Fluid'),
 ('1971303','19713','0','0','100','5','15200','27700','21700','36800','11','38923','1','0','0','0','0','0','0','0','0','0','Mechanar Wrecker (Heroic) - Cast Glob of Machine Fluid'),
 -- Mechanar Tinkerer (4.3.4 Official Data - Normal/Heroic)
-('1971601','19716','1','0','100','6','0','0','0','0','21','0','0','0','20','0','0','0','22','1','0','0','Mechanar Tinkerer - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
-('1971602','19716','9','5','100','3','0','25','1200','1200','11','35057','1','0','40','2','0','0','0','0','0','0','Mechanar Tinkerer (Normal) - Cast Netherbomb and Set Ranged Weapon Model (Phase 1)'),
-('1971603','19716','9','5','100','5','0','25','1200','1200','11','38925','1','0','40','2','0','0','0','0','0','0','Mechanar Tinkerer (Heroic) - Cast Netherbomb and Set Ranged Weapon Model (Phase 1)'),
+('1971601','19716','1','0','100','6','0','0','0','0','20','0','0','0','22','1','0','0','0','0','0','0','Mechanar Tinkerer - Prevent Melee and Set Phase 1 on Spawn'),
+('1971602','19716','9','5','100','3','8','25','1200','1200','11','35057','1','0','40','2','0','0','0','0','0','0','Mechanar Tinkerer (Normal) - Cast Netherbomb and Set Ranged Weapon Model (Phase 1)'),
+('1971603','19716','9','5','100','5','8','25','1200','1200','11','38925','1','0','40','2','0','0','0','0','0','0','Mechanar Tinkerer (Heroic) - Cast Netherbomb and Set Ranged Weapon Model (Phase 1)'),
 ('1971604','19716','9','5','100','6','20','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Mechanar Tinkerer - Start Combat Movement and Start Melee at 20 Yards (Phase 1)'),
-('1971605','19716','9','5','100','6','1','15','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Mechanar Tinkerer - Prevent Combat Movement and Prevent Melee at 15 Yards (Phase 1)'),
-('1971606','19716','2','5','100','6','50','0','0','0','21','1','0','0','11','35062','1','1','0','0','0','0','Mechanar Tinkerer - Enable Combat Movement and Cast Maniacal Charge and Set Phase 2 at 50% HP (Phase 1)'),
-('1971607','19716','9','3','100','7','0','5','2000','2000','11','35058','0','7','37','0','0','0','0','0','0','0','Mechanar Tinkerer - Cast Nether Explosion and Die (Phase 2)'),
-('1971608','19716','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','21','0','0','0','Mechanar Tinkerer - Set Phase to 1 and Set Melee Weapon Model and Prevent Combat Movement on Evade'),
+('1971605','19716','2','5','100','6','50','0','0','0','21','1','0','0','11','35062','1','1','22','2','0','0','Mechanar Tinkerer - Enable Combat Movement and Cast Maniacal Charge and Set Phase 2 at 50% HP (Phase 1)'),
+('1971606','19716','9','3','100','7','0','5','2000','2000','11','35058','0','7','37','0','0','0','0','0','0','0','Mechanar Tinkerer - Cast Nether Explosion and Die (Phase 2)'),
+('1971607','19716','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mechanar Tinkerer - Set Phase to 1 and Set Melee Weapon Model on Evade'),
 -- Tempest-Forge Destroyer (4.3.4 Official Data - Normal/Heroic)
 ('1973501','19735','0','0','100','7','9700','10800','10900','22900','11','35783','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Destroyer - Cast Knockdown'),
 ('1973502','19735','0','0','100','7','8400','16900','9600','20500','11','36582','0','0','0','0','0','0','0','0','0','0','Tempest-Forge Destroyer - Cast Charged Fist'),
