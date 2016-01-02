@@ -26774,7 +26774,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==================================================================
--- Tempest Keep: The Botanica - (4.3.4 Official Data - Normal/Heroic)
+-- Tempest Keep: The Botanica - (4.3.4 Official Data - Normal/Heroic) - (Zone Script Revamp Complete)
 -- ==================================================================
 -- High Botanist Freywinn (17975) - boss_high_botanist_freywinn
 -- Commander Sarannis (4.3.4 Official Data - Normal/Heroic) - (Adds Summon Spell: 34803 / Casts - 34810 (NPC: 20083 5 Yards Behind) and 34817 / 34818 / 34819 (NPC: 20078 5 Yards Sides and Front)
@@ -26790,11 +26790,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1797610','17976','6','0','100','6','0','0','0','0','1','-36','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Death'),
 -- Warp Splinter (17977) - boss_warp_splinter
 -- Thorngrin the Tender (4.3.4 Official Data - Normal/Heroic) - (Enrage After Successful Sacrifice Cast - Current is Workaround with EventAI Core Limitations)
-('1797801','17978','4','0','100','6','0','0','0','0','1','-9','0','0','23','1','0','0','0','0','0','0','Thorngrin the Tender - Yell and Set Phase 1 on Aggro'),
+('1797801','17978','4','0','100','6','0','0','0','0','1','-9','0','0','22','1','0','0','0','0','0','0','Thorngrin the Tender - Yell and Set Phase 1 on Aggro'),
 ('1797802','17978','0','5','100','3','4800','12100','16900','25300','11','34659','0','1','1','-10','-11','0','0','0','0','0','Thorngrin the Tender (Normal) - Cast Hellfire and Random Yell (Phase 1)'),
 ('1797803','17978','0','5','100','5','4800','12100','16900','22900','11','39131','0','1','1','-10','-11','0','0','0','0','0','Thorngrin the Tender (Heroic) - Cast Hellfire and Random Yell (Phase 1)'),
-('1797804','17978','0','5','100','7','12000','12000','26000','26000','11','34661','5','0','1','-14','0','0','0','0','0','0','Thorngrin the Tender - Cast Sacrifice and Yell and Set Phase 2 (Phase 1)'),
-('1797805','17978','24','3','100','7','34661','1','2000','2000','11','34670','0','0','1','-46','0','0','0','23','-1','0','Thorngrin the Tender - Cast Enrage and Yell and Set Phase 1 (Phase 2)'),
+('1797804','17978','0','5','100','7','12000','12000','26000','26000','11','34661','5','0','1','-14','0','0','22','2','0','0','Thorngrin the Tender - Cast Sacrifice and Yell and Set Phase 2 (Phase 1)'),
+('1797805','17978','24','3','100','7','34661','1','2000','2000','11','34670','0','0','1','-46','0','0','0','22','1','0','Thorngrin the Tender - Cast Enrage and Yell and Set Phase 1 (Phase 2)'),
 ('1797806','17978','2','0','100','6','50','0','0','0','1','-12','0','0','0','0','0','0','0','0','0','0','Thorngrin the Tender - Yell at 50% HP'),
 ('1797807','17978','2','0','100','6','20','0','0','0','1','-13','0','0','0','0','0','0','0','0','0','0','Thorngrin the Tender - Yell at 20% HP'),
 ('1797808','17978','5','0','100','7','5000','5000','0','0','1','-15','0','0','0','0','0','0','0','0','0','0','Thorngrin the Tender - Yell on Player Kill'),
@@ -26896,12 +26896,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1992001','19920','9','0','100','7','0','35','9600','15700','11','35507','1','0','0','0','0','0','0','0','0','0','Thorn Flayer - Cast Mind Flay'),
 -- Sapling (19949) - mob_warp_splinter_treant
 -- Frayer Protector (4.3.4 Official Data - Normal/Heroic)
-('1995301','19953','1','0','100','6','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Frayer Protector - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+('1995301','19953','1','0','100','6','0','0','0','0','20','0','0','0','22','1','0','0','0','0','0','0','Frayer Protector - Prevent Melee and Set Phase 1 on Spawn'),
 ('1995302','19953','9','5','100','7','5','30','2300','3900','11','34745','1','0','40','2','0','0','0','0','0','0','Frayer Protector - Cast Shoot Thorns and Set Ranged Weapon Model (Phase 1)'),
 ('1995303','19953','9','5','100','7','30','80','1000','1000','21','1','1','0','20','1','0','0','0','0','0','0','Frayer Protector - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
 ('1995304','19953','9','5','100','7','0','10','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Frayer Protector - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('1995305','19953','9','5','100','7','11','25','1000','1000','21','0','1','0','20','0','0','0','0','0','0','0','Frayer Protector - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
-('1995306','19953','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Frayer Protector - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('1995305','19953','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Frayer Protector - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- White Seedling (4.3.4 Official Data - Normal/Heroic)
 ('1995801','19958','9','0','100','7','0','5','500','500','11','34752','1','32','0','0','0','0','0','0','0','0','White Seedling - Cast Freezing Touch'),
 -- Blue Seedling (4.3.4 Official Data - Normal/Heroic)
