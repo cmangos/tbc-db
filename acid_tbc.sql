@@ -92,7 +92,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Crushridge Mage (3.1.1 Official Data)
 ('225501','2255','4','0','10','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Crushridge Mage - Random Say on Aggro'),
 ('225502','2255','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Crushridge Mage - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('225503','2255','9','5','100','1','8','40','3500','4800','11','9672','1','0','0','0','0','0','0','0','0','0','Crushridge Mage - Cast Frostbolt (Phase 1)'),
+('225503','2255','9','5','100','1','0','40','3500','4800','11','9672','1','0','0','0','0','0','0','0','0','0','Crushridge Mage - Cast Frostbolt (Phase 1)'),
 ('225504','2255','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Crushridge Mage - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('225505','2255','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Crushridge Mage - Disable Dynamic Movement at 0-8 Yards'),
 ('225506','2255','3','5','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Crushridge Mage - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -112,7 +112,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('227102','2271','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dalaran Shield Guard - Flee at 15% HP'),
 -- Dalaran Theurgist (3.1.1 Official Data)
 ('227201','2272','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dalaran Theurgist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('227202','2272','9','13','100','1','8','40','3300','6600','11','20819','1','0','0','0','0','0','0','0','0','0','Dalaran Theurgist - Cast Frostbolt (Phase 1)'),
+('227202','2272','9','13','100','1','0','40','3300','6600','11','20819','1','0','0','0','0','0','0','0','0','0','Dalaran Theurgist - Cast Frostbolt (Phase 1)'),
 ('227203','2272','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dalaran Theurgist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('227204','2272','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Dalaran Theurgist - Disable Dynamic Movement at 0-8 Yards'),
 ('227205','2272','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dalaran Theurgist - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -127,7 +127,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('228703','2287','14','0','100','0','1495','15','0','0','11','8269','0','1','1','-550','0','0','1','-551','0','0','Crushridge Warmonger - Cast Frenzy and Text Emote on Friendly Death'),
 -- Baron Vardus (3.1.1 Official Data)
 ('230601','2306','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Baron Vardus - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('230602','2306','9','13','100','1','8','40','3200','4500','11','20822','1','0','0','0','0','0','0','0','0','0','Baron Vardus - Cast Frostbolt (Phase 1)'),
+('230602','2306','9','13','100','1','0','40','3200','4500','11','20822','1','0','0','0','0','0','0','0','0','0','Baron Vardus - Cast Frostbolt (Phase 1)'),
 ('230603','2306','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Baron Vardus - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('230604','2306','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Baron Vardus - Disable Dynamic Movement at 0-8 Yards'),
 ('230605','2306','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Baron Vardus - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -141,7 +141,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elysa (2317) - NSR
 -- Argus Shadow Mage (3.1.1 Official Data)
 ('231801','2318','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Argus Shadow Mage - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('231802','2318','9','13','100','1','8','40','3500','4900','11','20816','1','0','0','0','0','0','0','0','0','0','Argus Shadow Mage - Cast Shadow Bolt (Phase 1)'),
+('231802','2318','9','13','100','1','0','40','3500','4900','11','20816','1','0','0','0','0','0','0','0','0','0','Argus Shadow Mage - Cast Shadow Bolt (Phase 1)'),
 ('231803','2318','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Argus Shadow Mage - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('231804','2318','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Argus Shadow Mage - Disable Dynamic Movement at 0-8 Yards'),
 ('231805','2318','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Argus Shadow Mage - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -153,7 +153,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Syndicate Wizard (3.1.1 Official Data)
 ('231901','2319','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Syndicate Wizard - Cast Frost Armor on Spawn'),
 ('231902','2319','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Syndicate Wizard - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('231903','2319','9','5','100','1','8','40','3500','5400','11','20815','1','0','0','0','0','0','0','0','0','0','Syndicate Wizard - Cast Fireball (Phase 1)'),
+('231903','2319','9','5','100','1','0','40','3500','5400','11','20815','1','0','0','0','0','0','0','0','0','0','Syndicate Wizard - Cast Fireball (Phase 1)'),
 ('231904','2319','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Syndicate Wizard - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('231905','2319','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Syndicate Wizard - Disable Dynamic Movement at 0-8 Yards'),
 ('231906','2319','3','5','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Syndicate Wizard - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -170,7 +170,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Gray Bear (2356) - NSR
 -- Dalaran Summoner (3.1.1 Official Data)
 ('235801','2358','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dalaran Summoner - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('235802','2358','9','5','100','1','8','40','3200','4500','11','20815','1','0','0','0','0','0','0','0','0','0','Dalaran Summoner - Cast Fireball (Phase 1)'),
+('235802','2358','9','5','100','1','0','40','3200','4500','11','20815','1','0','0','0','0','0','0','0','0','0','Dalaran Summoner - Cast Fireball (Phase 1)'),
 ('235803','2358','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dalaran Summoner - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('235804','2358','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Dalaran Summoner - Disable Dynamic Movement at 0-8 Yards'),
 ('235805','2358','3','5','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dalaran Summoner - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -197,7 +197,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('241401','2414','2','0','100','0','15','0','0','0','25','0','0','0','0','0','0','0','0','0','0','0','Kegan Darkmar - Flee at 15% HP'),
 -- Warden Belamoore (3.1.1 Official Data)
 ('241501','2415','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Warden Belamoore - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('241502','2415','9','13','100','1','8','40','3300','4900','11','20823','1','0','0','0','0','0','0','0','0','0','Warden Belamoore - Cast Fireball (Phase 1)'),
+('241502','2415','9','13','100','1','0','40','3300','4900','11','20823','1','0','0','0','0','0','0','0','0','0','Warden Belamoore - Cast Fireball (Phase 1)'),
 ('241503','2415','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Warden Belamoore - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('241504','2415','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Warden Belamoore - Disable Dynamic Movement at 0-8 Yards'),
 ('241505','2415','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Warden Belamoore - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -255,7 +255,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bro'kin (2480) - NSR
 -- Archmage Ansirem Runeweaver (3.1.1 Official Data)
 ('254301','2543','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Archmage Ansirem Runeweaver - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('254302','2543','9','13','100','1','8','40','3500','4500','11','20792','1','0','0','0','0','0','0','0','0','0','Archmage Ansirem Runeweaver - Cast Frostbolt (Phase 1)'),
+('254302','2543','9','13','100','1','0','40','3500','4500','11','20792','1','0','0','0','0','0','0','0','0','0','Archmage Ansirem Runeweaver - Cast Frostbolt (Phase 1)'),
 ('254303','2543','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Archmage Ansirem Runeweaver - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('254304','2543','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Archmage Ansirem Runeweaver - Disable Dynamic Movement at 0-8 Yards'),
 ('254305','2543','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Archmage Ansirem Runeweaver - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -335,9 +335,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('255201','2552','0','0','100','1','12800','22200','2100','32400','11','4974','1','32','0','0','0','0','0','0','0','0','Witherbark Troll - Cast Wither Touch'),
 ('255202','2552','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Witherbark Troll - Flee at 15% HP'),
 -- Witherbark Shadowcaster (3.0.9 Official Data)
-('255302','2553','1','0','50','0','1000','1000','0','0','11','11939','0','1','0','0','0','0','0','0','0','0','Witherbark Shadowcaster - Summon Imp on Spawn'),
+('255301','2553','1','0','50','0','1000','1000','0','0','11','11939','0','1','0','0','0','0','0','0','0','0','Witherbark Shadowcaster - Summon Imp on Spawn'),
 ('255302','2553','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Witherbark Shadowcaster - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('255304','2553','9','13','100','1','8','40','3600','4800','11','20816','1','0','0','0','0','0','0','0','0','0','Witherbark Shadowcaster - Cast Shadow Bolt (Phase 1)'),
+('255303','2553','9','13','100','1','0','40','3600','4800','11','20816','1','0','0','0','0','0','0','0','0','0','Witherbark Shadowcaster - Cast Shadow Bolt (Phase 1)'),
 ('255304','2553','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Witherbark Shadowcaster - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('255305','2553','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Witherbark Shadowcaster - Disable Dynamic Movement at 0-8 Yards'),
 ('255306','2553','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Witherbark Shadowcaster - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -398,7 +398,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('256701','2567','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','0','0','0','0','0','0','0','0','0','Boulderfist Magus - Cast Frost Armor on Spawn'),
 ('256702','2567','0','0','5','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Boulderfist Magus - Random Say on Aggro'),
 ('256703','2567','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Boulderfist Magus - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('256704','2567','9','13','100','1','8','40','3500','4800','11','20822','1','0','0','0','0','0','0','0','0','0','Boulderfist Magus - Cast Frostbolt (Phase 1)'),
+('256704','2567','9','13','100','1','0','40','3500','4800','11','20822','1','0','0','0','0','0','0','0','0','0','Boulderfist Magus - Cast Frostbolt (Phase 1)'),
 ('256705','2567','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Boulderfist Magus - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('256706','2567','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Boulderfist Magus - Disable Dynamic Movement at 0-8 Yards'),
 ('256707','2567','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Boulderfist Magus - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -413,7 +413,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('256902','2569','0','0','100','1','11600','20300','15900','45500','11','4955','0','1','0','0','0','0','0','0','0','0','Boulderfist Mauler - Cast Fist of Stone at 30% HP'),
 -- Boulderfist Shaman (3.0.9 Official Data)
 ('257001','2570','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Boulderfist Shaman - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('257002','2570','9','5','100','1','8','40','3500','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Boulderfist Shaman - Cast Lightning Bolt (Phase 1)'),
+('257002','2570','9','5','100','1','0','40','3500','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Boulderfist Shaman - Cast Lightning Bolt (Phase 1)'),
 ('257003','2570','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Boulderfist Shaman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('257004','2570','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Boulderfist Shaman - Disable Dynamic Movement at 0-8 Yards'),
 ('257005','2570','3','5','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Boulderfist Shaman - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -429,7 +429,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Drywhisker Surveyor (3.0.9 Official Data)
 ('257301','2573','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','0','0','0','0','0','0','0','0','0','Drywhisker Surveyor - Cast Frost Armor on Spawn'),
 ('257302','2573','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Drywhisker Surveyor - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('257303','2573','9','13','100','1','8','40','3500','4800','11','20822','1','0','0','0','0','0','0','0','0','0','Drywhisker Surveyor - Cast Frostbolt (Phase 1)'),
+('257303','2573','9','13','100','1','0','40','3500','4800','11','20822','1','0','0','0','0','0','0','0','0','0','Drywhisker Surveyor - Cast Frostbolt (Phase 1)'),
 ('257304','2573','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Drywhisker Surveyor - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('257305','2573','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Drywhisker Surveyor - Disable Dynamic Movement at 0-8 Yards'),
 ('257306','2573','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Drywhisker Surveyor - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -453,7 +453,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('257503','2575','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dark Iron Suppier - Flee at 15% HP'),
 -- Dark Iron Shadowcaster (3.0.9 Official Data)
 ('257701','2577','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dark Iron Shadowcaster - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('257702','2577','9','13','100','1','8','40','3500','4500','11','20816','1','0','0','0','0','0','0','0','0','0','Dark Iron Shadowcaster - Cast Shadow Bolt (Phase 1)'),
+('257702','2577','9','13','100','1','0','40','3500','4500','11','20816','1','0','0','0','0','0','0','0','0','0','Dark Iron Shadowcaster - Cast Shadow Bolt (Phase 1)'),
 ('257703','2577','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Shadowcaster - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('257704','2577','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Dark Iron Shadowcaster - Disable Dynamic Movement at 0-8 Yards'),
 ('257705','2577','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dark Iron Shadowcaster - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -503,7 +503,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('259001','2590','1','0','50','1','1000','1000','300000','300000','11','25085','0','0','0','0','0','0','0','0','0','0','Syndicate Conjuror - Cast Bright Campfire on Spawn'),
 ('259002','2590','1','0','100','0','3000','3000','0','0','11','43896','0','1','0','0','0','0','0','0','0','0','Syndicate Conjuror -  Summon Voidwalker on Spawn'),
 ('259003','2590','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Syndicate Conjuror - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('259004','2590','9','13','100','1','8','40','3400','4600','11','9613','1','0','0','0','0','0','0','0','0','0','Syndicate Conjuror - Cast Shadow Bolt (Phase 1)'),
+('259004','2590','9','13','100','1','0','40','3400','4600','11','9613','1','0','0','0','0','0','0','0','0','0','Syndicate Conjuror - Cast Shadow Bolt (Phase 1)'),
 ('259005','2590','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Syndicate Conjuror - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('259006','2590','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Syndicate Conjuror - Disable Dynamic Movement at 0-8 Yards'),
 ('259007','2590','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Syndicate Conjuror - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -515,7 +515,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Syndicate Magus (3.0.9 Official Data)
 ('259101','2591','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','0','0','0','0','0','0','0','0','0','Syndicate Magus - Cast Frost Armor on Spawn'),
 ('259102','2591','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Syndicate Magus - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('259103','2591','9','13','100','1','8','40','3600','4800','11','9672','1','0','0','0','0','0','0','0','0','0','Syndicate Magus - Cast Frostbolt (Phase 1)'),
+('259103','2591','9','13','100','1','0','40','3600','4800','11','9672','1','0','0','0','0','0','0','0','0','0','Syndicate Magus - Cast Frostbolt (Phase 1)'),
 ('259104','2591','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Syndicate Magus - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('259105','2591','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Syndicate Magus - Disable Dynamic Movement at 0-8 Yards'),
 ('259106','2591','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Syndicate Magus - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -531,7 +531,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('259502','2595','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Daggerspine Raider - Flee at 15% HP'),
 -- Daggerspine Sorceress (3.0.9 Official Data)
 ('259601','2596','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Daggerspine Sorceress - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('259602','2596','9','13','100','1','8','40','3400','4700','11','20824','1','0','0','0','0','0','0','0','0','0','Daggerspine Sorceress - Cast Lightning Bolt (Phase 1)'),
+('259602','2596','9','13','100','1','0','40','3400','4700','11','20824','1','0','0','0','0','0','0','0','0','0','Daggerspine Sorceress - Cast Lightning Bolt (Phase 1)'),
 ('259603','2596','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Daggerspine Sorceress - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('259604','2596','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Daggerspine Sorceress - Disable Dynamic Movement at 0-8 Yards'),
 ('259605','2596','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Daggerspine Sorceress - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -547,7 +547,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Darbel Montrose (3.0.9 Official Data)
 ('259801','2598','1','0','100','0','1000','1000','0','0','11','8722','0','0','0','0','0','0','0','0','0','0','Darbel Montrose - Summon Succubus on Spawn'),
 ('259802','2598','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Darbel Montrose - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('259803','2598','9','13','100','1','8','40','3600','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Darbel Montrose - Cast Shadow Bolt (Phase 1)'),
+('259803','2598','9','13','100','1','0','40','3600','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Darbel Montrose - Cast Shadow Bolt (Phase 1)'),
 ('259804','2598','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Darbel Montrose - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('259805','2598','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Darbel Montrose - Disable Dynamic Movement at 0-8 Yards'),
 ('259806','2598','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Darbel Montrose - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -595,7 +595,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('260801','2608','0','0','100','1','1000','3000','20000','35000','11','9128','0','0','0','0','0','0','0','0','0','0','Commander Amaren - Cast Battle Shout'),
 -- Geomancer Flintdagger (3.0.9 Official Data)
 ('260901','2609','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Geomancer Flintdagger - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('260902','2609','9','13','100','1','8','40','3400','4800','11','20823','1','0','0','0','0','0','0','0','0','0','Geomancer Flintdagger - Cast Fireball (Phase 1)'),
+('260902','2609','9','13','100','1','0','40','3400','4800','11','20823','1','0','0','0','0','0','0','0','0','0','Geomancer Flintdagger - Cast Fireball (Phase 1)'),
 ('260903','2609','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Geomancer Flintdagger - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('260904','2609','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Geomancer Flintdagger - Disable Dynamic Movement at 0-8 Yards'),
 ('260905','2609','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Geomancer Flintdagger - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -643,7 +643,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('276103','2761','27','0','100','1','12544','1','15000','30000','11','12544','0','1','0','0','0','0','0','0','0','0','Cresting Exile - Cast Frost Armor on Missing Buff'),
 -- Thundering Exile (3.0.9 Official Data)
 ('276201','2762','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Thundering Exile - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('276202','2762','9','5','100','1','8','40','3300','4500','11','9532','1','0','0','0','0','0','0','0','0','0','Thundering Exile - Cast Lightning Bolt (Phase 1)'),
+('276202','2762','9','5','100','1','0','40','3300','4500','11','9532','1','0','0','0','0','0','0','0','0','0','Thundering Exile - Cast Lightning Bolt (Phase 1)'),
 ('276203','2762','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Thundering Exile - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('276204','2762','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Thundering Exile - Disable Dynamic Movement at 0-8 Yards'),
 ('276205','2762','3','5','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Thundering Exile - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -711,7 +711,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Feeboz (3.0.9 Official Data)
 ('406301','4063','4','0','100','0','0','0','0','0','1','-527','-528','-530','0','0','0','0','0','0','0','0','Feeboz - Random Say on Aggro'),
 ('406302','4063','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Feeboz - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('406303','4063','9','13','100','1','8','40','3800','4800','11','34083','1','0','0','0','0','0','0','0','0','0','Feeboz - Cast Fireball (Phase 1)'),
+('406303','4063','9','13','100','1','0','40','3800','4800','11','34083','1','0','0','0','0','0','0','0','0','0','Feeboz - Cast Fireball (Phase 1)'),
 ('406304','4063','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Feeboz - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('406305','4063','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Feeboz - Disable Dynamic Movement at 0-8 Yards'),
 ('406306','4063','3','13','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Feeboz - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -28959,14 +28959,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Phantom Guest
 ('1640901','16409','1','0','100','34','1000','1000','0','0','30','1','3','9','30','5','6','9','30','7','8','9','Phantom Guest - Randomized Random Phase Select on Spawn'),
 ('1640902','16409','4','1021','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Phantom Guest - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1640903','16409','9','1021','100','3','8','40','3400','4800','11','29492','4','0','0','0','0','0','0','0','0','0','Phantom Guest - Cast Searing Pain (Phase 1)'),
+('1640903','16409','9','1021','100','3','0','40','3400','4800','11','29492','4','0','0','0','0','0','0','0','0','0','Phantom Guest - Cast Searing Pain (Phase 1)'),
 ('1640904','16409','9','1021','100','3','8000','12000','21000','26000','11','29928','4','1','0','0','0','0','0','0','0','0','Phantom Guest - Cast Immolate (Phase 1)'),
 ('1640905','16409','9','1021','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Phantom Guest - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1640906','16409','9','1021','100','1','2','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Phantom Guest - Disable Dynamic Movement at 0-8 Yards (Phase 1)'),
 ('1640907','16409','3','1021','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Phantom Guest - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 ('1640908','16409','3','1019','100','3','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Phantom Guest - Set Phase 1 when Mana is above 30% (Phase 2)'),
 ('1640909','16409','4','1015','100','2','0','0','0','0','49','1','0','0','22','3','0','0','0','0','0','0','Phantom Guest - Enable Dynamic Movement and Set Phase 3 on Aggro'),
-('1640910','16409','9','1015','100','3','8','30','2400','3800','11','29579','1','0','21','1','0','0','0','0','0','0','Phantom Guest - Cast Throw Dynamite (Phase 3)'),
+('1640910','16409','9','1015','100','3','0','30','2400','3800','11','29579','1','0','21','1','0','0','0','0','0','0','Phantom Guest - Cast Throw Dynamite (Phase 3)'),
 ('1640911','16409','9','1015','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Phantom Guest - Enable Dynamic Movement at 9-80 Yards (Phase 3)'),
 ('1640912','16409','9','1015','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Phantom Guest - Disable Dynamic Movement at 0-8 Yards (Phase 3)'),
 ('1640913','16409','3','1015','100','2','15','0','0','0','49','0','0','0','22','4','0','0','0','0','0','0','Phantom Guest - Disable Dynamic Movement and Set Phase 4 when Mana is at 15% (Phase 3)'),
@@ -29098,15 +29098,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spell Shade
 ('1652501','16525','1','0','100','2','0','0','0','0','11','29920','0','1','0','0','0','0','0','0','0','0','Spell Shade - Cast Phasing Invisibility on Spawn'),
 ('1652502','16525','0','0','100','2','0','0','0','0','30','1','3','5','0','0','0','0','0','0','0','0','Spell Shade - Random Phase Select on Aggro'),
-('1652503','16525','9','253','100','3','8','40','3000','5000','11','29926','4','0','0','0','0','0','0','0','0','0','Spell Shade - Cast Frostbolt (Phase 1)'),
+('1652503','16525','9','253','100','3','0','40','3000','5000','11','29926','4','0','0','0','0','0','0','0','0','0','Spell Shade - Cast Frostbolt (Phase 1)'),
 ('1652504','16525','9','253','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Spell Shade - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1652505','16525','3','253','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Spell Shade - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
 ('1652506','16525','3','251','100','3','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Spell Shade - Set Phase 1 when Mana is above 30% (Phase 2)'),
-('1652507','16525','9','247','100','3','8','40','3000','5000','11','29925','4','0','0','0','0','0','0','0','0','0','Spell Shade - Cast Fireball (Phase 3)'),
+('1652507','16525','9','247','100','3','0','40','3000','5000','11','29925','4','0','0','0','0','0','0','0','0','0','Spell Shade - Cast Fireball (Phase 3)'),
 ('1652508','16525','9','247','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Spell Shade - Enable Dynamic Movement at 9-80 Yards (Phase 3)'),
 ('1652509','16525','3','247','100','2','15','0','0','0','49','0','0','0','22','4','0','0','0','0','0','0','Spell Shade - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 3)'),
 ('1652510','16525','3','239','100','3','100','30','1000','1000','22','3','0','0','0','0','0','0','0','0','0','0','Spell Shade - Set Phase 1 when Mana is above 30% (Phase 4)'),
-('1652511','16525','9','223','100','3','8','40','3000','5000','11','29927','4','0','0','0','0','0','0','0','0','0','Spell Shade - Cast Shadowbolt (Phase 5)'),
+('1652511','16525','9','223','100','3','0','40','3000','5000','11','29927','4','0','0','0','0','0','0','0','0','0','Spell Shade - Cast Shadowbolt (Phase 5)'),
 ('1652512','16525','9','223','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Spell Shade - Enable Dynamic Movement at 9-80 Yards (Phase 5)'),
 ('1652513','16525','3','223','100','2','15','0','0','0','49','0','0','0','22','6','0','0','0','0','0','0','Spell Shade - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 5)'),
 ('1652514','16525','3','191','100','3','100','30','1000','1000','22','5','0','0','0','0','0','0','0','0','0','0','Spell Shade - Set Phase 1 when Mana is above 30% (Phase 6)'),
@@ -29125,7 +29125,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1653002','16530','0','1','100','3','3000','3000','3000','3000','11','29919','0','0','39','0','0','0','0','0','0','0','Mana Warp - Cast Warp Breach and Die'),
 -- Homunculus
 ('1653901','16539','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Homunculus - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1653902','16539','9','5','100','3','8','40','3400','4200','11','30180','4','0','0','0','0','0','0','0','0','0','Homunculus - Firebolt Bolt (Phase 1)'),
+('1653902','16539','9','5','100','3','0','40','3400','4200','11','30180','4','0','0','0','0','0','0','0','0','0','Homunculus - Firebolt Bolt (Phase 1)'),
 ('1653903','16539','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Homunculus - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1653904','16539','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Homunculus - Disable Dynamic Movement at 0-8 Yards'),
 ('1653905','16539','3','5','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Homunculus - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -29133,7 +29133,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1653907','16539','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Homunculus - Set Phase to 0 on Evade'),
 -- Shadow Pillager
 ('1654001','16540','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadow Pillager - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('1654002','16540','9','5','100','3','8','40','4000','5000','11','29317','4','0','0','0','0','0','0','0','0','0','Shadow Pillager - Cast Shadow Bolt (Phase 1)'),
+('1654002','16540','9','5','100','3','0','40','4000','5000','11','29317','4','0','0','0','0','0','0','0','0','0','Shadow Pillager - Cast Shadow Bolt (Phase 1)'),
 ('1654003','16540','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Shadow Pillager - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1654004','16540','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Shadow Pillager - Disable Dynamic Movement at 0-8 Yards'),
 ('1654005','16540','3','5','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Shadow Pillager - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
@@ -29190,7 +29190,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Restless Skeleton (17261) - NSR
 -- Fiendish Imp
 ('1726701','17267','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Fiendish Imp - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('1726702','17267','9','5','100','3','8','30','3400','4800','11','30050','1','0','0','0','0','0','0','0','0','0','Fiendish Imp - Cast Fireball (Phase 1)'),
+('1726702','17267','9','5','100','3','0','30','3400','4800','11','30050','1','0','0','0','0','0','0','0','0','0','Fiendish Imp - Cast Fireball (Phase 1)'),
 ('1726703','17267','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Fiendish Imp - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1726704','17267','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Fiendish Imp - Disable Dynamic Movement at 0-8 Yards'),
 ('1726705','17267','3','5','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Fiendish Imp - Disable Dynamic Movement and Set Phase 2 when Mana is at 15% (Phase 1)'),
