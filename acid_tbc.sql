@@ -21368,7 +21368,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==============================================================
--- Auchindoun: Mana-Tombs - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data - (Zone Script Revamp Complete)
+-- Auchindoun: Mana-Tombs - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data  - (Final Zone Script Revamp Complete)
 -- ==============================================================
 -- Adder (3300) - NSR    
 -- Rat (4075) - NSR    
@@ -21432,26 +21432,24 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1834304','18343','0','0','100','7','16900','37400','13300','25300','11','32361','4','1','0','0','0','0','0','0','0','0','Tavarok - Cast Crystal Prison'),
 -- Nexus-Prince Shaffar (18344) - boss_nexusprince_shaffar
 -- Ethereal Wraith (4.3.4 Official Data - Normal/Heroic)
-('1839401','18394','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Set Phase 1 on Aggro'),
-('1839402','18394','9','5','100','7','8','30','7800','13300','11','34934','1','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Cast Shadowbolt Volley (Phase 1)'),
-('1839403','18394','9','5','100','7','30','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Start Combat Movement at 30 Yards (Phase 1)'),
-('1839404','18394','9','5','100','7','0','14','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Start Combat Movement at 14 Yards (Phase 1)'),
-('1839405','18394','3','5','100','6','7','0','0','0','21','1','0','0','22','2','0','0','0','0','0','0','Ethereal Wraith - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1839401','18394','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Ethereal Wraith - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1839402','18394','9','5','100','7','0','30','7800','13300','11','34934','1','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Cast Shadowbolt Volley (Phase 1)'),
+('1839403','18394','9','5','100','7','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1839404','18394','9','0','100','7','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Disable Dynamic Movement at 0-8 Yards'),
+('1839405','18394','3','5','100','6','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Ethereal Wraith - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1839406','18394','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('1839407','18394','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ethereal Wraith - Set Phase to 0 on Evade'),
 -- Arcane Fiend (4.3.4 Official Data - Normal/Heroic)
 ('1842901','18429','9','0','100','3','0','8','8400','10200','11','15253','0','1','0','0','0','0','0','0','0','0','Arcane Fiend (Normal) - Cast Arcane Explosion'),
 ('1842902','18429','9','0','100','5','0','8','6600','10200','11','33860','0','1','0','0','0','0','0','0','0','0','Arcane Fiend (Heroic) - Cast Arcane Explosion'),
 ('1842903','18429','0','0','100','7','8400','13700','10800','13300','11','15122','1','0','0','0','0','0','0','0','0','0','Arcane Fiend - Cast Counter Spell'),
 -- Ethereal Apprentice (4.3.4 Official Data - Normal)
-('1843001','18430','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Set Phase 1 on Aggro'),
-('1843002','18430','9','13','100','7','8','40','3600','3600','11','32369','1','0','22','2','0','0','0','0','0','0','Ethereal Apprentice - Cast Fireball and Set Phase 2 (Phase 1)'),
-('1843003','18430','9','11','100','7','8','40','3600','3600','11','32370','1','0','22','1','0','0','0','0','0','0','Ethereal Apprentice - Cast Frostbolt and Set Phase 1 (Phase 2)'),
-('1843004','18430','3','9','100','7','15','0','1000','1000','21','1','0','0','22','3','0','0','0','0','0','0','Ethereal Apprentice - Start Combat Movement and Set Phase 3 when Mana is at 15% (Phase 1 and 2)'),
-('1843005','18430','9','9','100','7','30','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Start Combat Movement at 30 Yards (Phase 1 and 2)'),
-('1843006','18430','9','9','100','7','0','14','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Start Combat Movement at 14 Yards (Phase 1 and 2)'),
-('1843007','18430','3','7','100','7','100','30','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Set Phase 1 when Mana is above 30% (Phase 3)'),
-('1843008','18430','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Set Phase to 0 on Evade'),
+('1843001','18430','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Ethereal Apprentice - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1843002','18430','9','13','100','7','0','40','3600','3600','11','32369','1','0','22','2','0','0','0','0','0','0','Ethereal Apprentice - Cast Fireball and Set Phase 2 (Phase 1)'),
+('1843003','18430','9','11','100','7','0','40','3600','3600','11','32370','1','0','22','1','0','0','0','0','0','0','Ethereal Apprentice - Cast Frostbolt and Set Phase 1 (Phase 2)'),
+('1843004','18430','9','9','100','7','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Enable Dynamic Movement at 9-80 Yards (Phase 1 and 2)'),
+('1843005','18430','9','0','100','7','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Disable Dynamic Movement at 0-8 Yards'),
+('1843006','18430','3','9','100','6','7','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Ethereal Apprentice - Disable Dynamic Movement and Set Phase 3 when Mana is at 7% (Phase 1 and 2)'),
+('1843007','18430','3','7','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ethereal Apprentice - Set Phase 1 when Mana is above 15% (Phase 3)'),
 -- Ethereal Beacon (SD2 Backport)
 ('1843101','18431','0','0','100','7','0','1000','3000','8000','11','15254','1','0','0','0','0','0','0','0','0','0','Ethereal Beacon - Cast  Arcane Bolt'),
 ('1843102','18431','0','0','100','2','20000','20000','0','0','11','32372','0','0','41','2000','0','0','0','0','0','0','Ethereal Beacon (Normal) - Cast Summon Ethereal Apprentice and Forced Despawn'),
