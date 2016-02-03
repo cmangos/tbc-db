@@ -19684,7 +19684,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2130208','21302','9','7','100','0','0','15','0','0','11','37992','1','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Cast Drain Life (Phase 3)'),
 ('2130209','21302','2','7','100','0','100','45','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 1 When Above 45% HP (Phase 3)'),
 ('2130210','21302','9','7','100','1','9','15','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Enable Dynamic Movement at 9-15 Yards (Phase 3)'),
-('2130211','21302','7','0','100','0','0','0','0','0','22','0','0','0','48','2','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 0 and Set Waypoint Movement on Evade')
+('2130211','21302','7','0','100','0','0','0','0','0','22','0','0','0','48','2','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 0 and Set Waypoint Movement on Evade'),
 -- Ruul the Darkener
 ('2131501','21315','0','0','100','0','1000','1000','0','0','1','-1383','0','0','0','0','0','0','0','0','0','0','Ruul the Darkener - Say on Aggro'),
 ('2131502','21315','0','0','100','1','5000','7000','16000','21000','11','39153','1','0','0','0','0','0','0','0','0','0','Ruul the Darkener - Cast Darkfury'),
@@ -19724,8 +19724,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grom'tor, Son of Oronok
 ('2168701','21687','4','0','100','0','0','0','0','0','11','31403','0','2','11','12169','0','2','22','1','0','0','Grom\'tor, Son of Oronok - Cast Battle Shout and Shield Block and Set Phase 1 on Aggro'),
 ('2168702','21687','9','5','100','1','0','5','4000','6000','11','16145','1','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Sunder Armor (Phase 1)'),
-('1032303','21687','24','5','100','1','16145','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('1032304','21687','28','3','100','1','16145','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
+('2168703','21687','24','5','100','1','16145','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
+('2168704','21687','28','3','100','1','16145','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('2168705','21687','9','0','100','1','0','5','6000','11000','11','29426','1','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Heroic Strike'),
 ('2168706','21687','0','0','100','1','25000','28000','23000','26000','11','26281','1','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Taunt'),
 ('2168707','21687','2','0','100','1','30','0','30000','40000','11','15062','0','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Shield Wall at 30% HP'),
