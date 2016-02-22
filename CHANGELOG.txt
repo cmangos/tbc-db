@@ -1,3 +1,25 @@
+-- ============================================================
+-- TBC-DB UPDATE PACK 1.4.3 "A PROJECT REVIVAL" FOR CMANGOS-TBC
+-- ============================================================
+-- Implemented some NPC Pathing
+-- Implement Base Data for New Class Level Stats System
+-- Remove Redundant DB Data
+-- New Buddy System Updates and Conversions
+-- Random DB Fixed - Brought To You By Team Vengeance
+-- Stormwind City NPC Movement Improvements - Brought To You By Team Vengeance
+-- Complete Revamp of Windows Install Script
+-- Revamp of Repo Folder Structure
+-- Undercity Improvements - Brought To You By Team Vengeance
+-- Huge Elwynn Forest Improvements - Brought To You By Team Vengeance
+-- Fix Some NPC Inhabit Types - Brought To You By Team Vengeance
+-- Fix NPC Spawn Z-Values (Neo2003) - Brought To You By Team Vengeance
+-- Initial Work on TBC Brewfest
+-- Fix Gug Fatcandle and Loot
+-- Initial Work on Implementing NPC Class Level Stats System
+-- Pet Levelstats Overhaul and Improvements
+-- NPC Armor Fixes - All Stats Fixes Brought To You by Team Vengeance
+
+
 -- ==================================================================
 -- TBC-DB UPDATE PACK 1.4.2 "WORK MUST GO ON!" FOR CMANGOS-TBC s2120+
 -- ==================================================================

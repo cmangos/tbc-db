@@ -12,8 +12,8 @@ SET RealmdDB="realmd"
 REM ##################################################################################################
 REM DO NOT EDIT ANYTHING BELOW THIS LINE - ALL CONFIGURATION REQUIRED LOCATED IN INSTALL_SCRIPT_Config
 REM ##################################################################################################
-SET CurrentVersion="1.4.3"
-SET StableVersion="1.4.2"
+SET CurrentVersion="1.5.1"
+SET StableVersion="1.5.0"
 CLS
 ECHO =====================================================================
 ECHO TBC-DB INSTALLATION HELPER SCRIPT - SIMPLIFIED MANAGEMENT FOR USERS
@@ -146,10 +146,6 @@ ECHO BUILDING COMPLETE NEW FULL DB FROM NEWEST TBC-DB / CMANGOS / ACID DATA
 ECHO ----------------------------------------------------------------------
 copy /a %CMangos%\sql\base\mangos.sql /b Temp_Created_Files\000_CMangos_Base.sql
 copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\001_TBCDB_Full.sql
-copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\005_TBCDB_Updates.sql
 copy /a Updates\*.sql /b Temp_Created_Files\010_TBCDB_NewData.sql
 copy /a Updates\Custom_Data\*.sql /b Temp_Created_Files\011_TBCDB_Custom_Data.sql
 copy /a %CMangos%\sql\scriptdev2\scriptdev2.sql /b Temp_Created_Files\012_SD2_Full.sql
@@ -189,10 +185,6 @@ ECHO BUILDING COMPLETE NEW FULL DB FROM OLDER STABLE TBC-DB / CMANGOS / ACID DAT
 ECHO ---------------------------------------------------------------------------------
 copy /a %CMangos%\sql\base\mangos.sql /b Temp_Created_Files\000_CMangos_Base.sql
 copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\001_TBCDB_Full.sql
-copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\005_TBCDB_Updates.sql
 copy /a %CMangos%\sql\scriptdev2\scriptdev2.sql /b Temp_Created_Files\012_SD2_Full.sql
 copy /a %ACID%\acid_tbc.sql /b Temp_Created_Files\013_ACID_TBC.sql
 copy /a Temp_Created_Files\*.sql /b %StableVersion%_FULL.sql
@@ -288,10 +280,6 @@ ECHO BUILDING COMPLETE NEW FULL DB FROM NEWEST TBC-DB / CMANGOS / ACID DATA
 ECHO ----------------------------------------------------------------------
 copy /a %CMangos%\sql\base\mangos.sql /b Temp_Created_Files\000_CMangos_Base.sql
 copy /a Current_Release\Full_DB\*.sql /b Temp_Created_Files\001_TBCDB_Full.sql
-copy /a Current_Release\Updates\1.4.1_corepatch_mangos_*.sql /b Temp_Created_Files\002_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.1_updatepack.sql /b Temp_Created_Files\003_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_corepatch_mangos_*.sql /b Temp_Created_Files\004_TBCDB_Updates.sql
-copy /a Current_Release\Updates\1.4.2_updatepack.sql /b Temp_Created_Files\005_TBCDB_Updates.sql
 copy /a Updates\*.sql /b Temp_Created_Files\010_TBCDB_NewData.sql
 copy /a Updates\Custom_Data\*.sql /b Temp_Created_Files\011_TBCDB_Custom_Data.sql
 copy /a %CMangos%\sql\scriptdev2\scriptdev2.sql /b Temp_Created_Files\012_SD2_Full.sql
