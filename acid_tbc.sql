@@ -18689,6 +18689,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1840102','18401','0','0','80','1','6000','9000','24000','27000','11','16429','4','33','0','0','0','0','0','0','0','0','Skra\'gath - Cast Piercing Shadow'),
 ('1840103','18401','9','0','100','1','0','5','16000','19000','11','32324','4','0','0','0','0','0','0','0','0','0','Skra\'gath - Cast Shadow Burst'),
 ('1840104','18401','0','0','100','1','12000','15000','33000','37000','11','32322','0','1','0','0','0','0','0','0','0','0','Skra\'gath - Cast Dark Shriek'),
+-- Warmaul Champion
+('1840201','18402','11','0','100','0','0','0','0','0','1','-1411','0','0','11','31403','0','1','0','0','0','0','Warmaul Champion - Say and Cast Battle Shout on Spawn'),
+('1840202','18402','9','0','100','1','8','25','23000','26000','11','32323','4','0','0','0','0','0','0','0','0','0','Warmaul Champion - Cast Charge'),
+('1840203','18402','0','0','100','1','3000','6000','14000','17000','11','15708','4','1','0','0','0','0','0','0','0','0','Warmaul Champion - Cast Mortal Strike'),
+('1840204','18402','9','0','75','1','0','5','9000','13000','11','17963','4','0','0','0','0','0','0','0','0','0','Warmaul Champion - Cast Sundering Cleave'),
 -- Warden Bullrok
 ('1840701','18407','1','0','100','1','60000','60000','120000','240000','1','-314','-313','0','0','0','0','0','0','0','0','0','Warden Bullrok - Random Gossip Speech'),
 -- Durn the Hungerer
@@ -32325,7 +32330,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1407','Illidan\'s lapdogs!  You will pay for my imprisonment with your lives!','0','1','0','21506','0'),
 ('-1408','Brokentoe prepares to charge.','0','3','0','18398','0'),
 ('-1409','ROKDAR SMASH PUNY $n!','0','1','0','18400','0'),
-('-1410','Closer... Come closer... See what the void brings!','0','1','0','18401','0');
+('-1410','Closer... Come closer... See what the void brings!','0','1','0','18401','0'),
+('-1411','Piece by piece I will tear this challenger apart... PIECE BY PIECE!','0','0','0','18402','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
