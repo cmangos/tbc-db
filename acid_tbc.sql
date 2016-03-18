@@ -11318,7 +11318,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1785305','17853','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Tracker of the Hand - Set Melee Weapon Model on Evade'),
 -- Matis (17865) - NSR
 -- Image of Velen (17874) - NSR
--- Hunter of the Hand (17875) - NSR
+-- Hunter of the Hand
+('1787501','17875','11','0','100','32','0','0','0','0','3','0','17280','0','3','0','17281','0','3','0','17282','0','Hunter of the Hand - randomized model on spawn'),
 -- Void Critter (17887) - NSR
 -- Scout Loryi (17926) - NSR
 -- Scout Jorli (17927) - NSR
