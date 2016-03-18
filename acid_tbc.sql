@@ -18673,6 +18673,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1829601','18296','1','0','10','1','500000','500000','500000','700000','1','-312','-310','-307','0','0','0','0','0','0','0','0','Sunspring Orphan - Random Gossip Speech'),
 -- Giselda the Crone
 ('1839101','18391','2','0','100','0','65','0','0','0','11','33316','0','0','0','0','0','0','0','0','0','0','Giselda the Crone - Cast Giselda Transform at 65% HP'),
+-- Brokentoe
+('1839801','18398','11','0','100','0','0','0','0','0','1','-1408','0','0','0','0','0','0','0','0','0','0','Brokentoe - say on spawn'),
+('1839802','18398','0','0','85','1','4000','6000','16000','19000','11','32023','1','0','0','0','0','0','0','0','0','0','Brokentoe - Cast Hoof Stomp'),
 -- Warden Bullrok
 ('1840701','18407','1','0','100','1','60000','60000','120000','240000','1','-314','-313','0','0','0','0','0','0','0','0','0','Warden Bullrok - Random Gossip Speech'),
 -- Durn the Hungerer
@@ -32306,7 +32309,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1404','Time to meet your maker!','0','0','0','17587','0'),
 ('-1405','Thanks for the heal, $N!','0','0','0','17587','0'),
 ('-1406','Face the wrath of Bristlelimb!','0','1','0','17702','0'),
-('-1407','Illidan\'s lapdogs!  You will pay for my imprisonment with your lives!','0','1','0','21506','0'); 
+('-1407','Illidan\'s lapdogs!  You will pay for my imprisonment with your lives!','0','1','0','21506','0'),
+('-1408','Brokentoe prepares to charge.','0','3','0','18398','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
