@@ -18680,6 +18680,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1839901','18399','1','0','100','0','0','0','0','0','10','4','15','0','0','0','0','0','0','0','0','0','Murkblood Twin - Random Emote on Spawn'),
 ('1839902','18399','9','0','100','1','0','5','6000','9000','11','32319','1','1','0','0','0','0','0','0','0','0','Murkblood Twin - Cast Mutilate'),
 ('1839903','18399','9','0','100','1','0','5','14000','20000','11','14873','1','0','0','0','0','0','0','0','0','0','Murkblood Twin - Cast Sinister Strike'),
+-- Rokdar the Sundered Lord
+('1840001','18400','0','0','100','0','0','0','0','0','1','-1409','0','0','0','0','0','0','0','0','0','0','Rokdar the Sundered Lord - Yell on Aggro'),
+('1840002','18400','0','0','100','1','6000','9000','16000','19000','11','31389','4','0','0','0','0','0','0','0','0','0','Rokdar the Sundered Lord - Cast Knock Away'),
+('1840003','18400','0','0','100','1','23000','27000','34000','37000','11','16727','0','1','0','0','0','0','0','0','0','0','Rokdar the Sundered Lord - Cast War Stomp'),
 -- Warden Bullrok
 ('1840701','18407','1','0','100','1','60000','60000','120000','240000','1','-314','-313','0','0','0','0','0','0','0','0','0','Warden Bullrok - Random Gossip Speech'),
 -- Durn the Hungerer
@@ -32314,7 +32318,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1405','Thanks for the heal, $N!','0','0','0','17587','0'),
 ('-1406','Face the wrath of Bristlelimb!','0','1','0','17702','0'),
 ('-1407','Illidan\'s lapdogs!  You will pay for my imprisonment with your lives!','0','1','0','21506','0'),
-('-1408','Brokentoe prepares to charge.','0','3','0','18398','0');
+('-1408','Brokentoe prepares to charge.','0','3','0','18398','0'),
+('-1409','ROKDAR SMASH PUNY $n!','0','1','0','18400','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
