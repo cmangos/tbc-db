@@ -11588,10 +11588,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('233804','2338','6','0','12','0','0','0','0','0','1','-990','0','0','0','0','0','0','0','0','0','0','Twilight Disciple - Chance Say on Death'),
 -- Twilight Thug      
 ('233901','2339','11','0','100','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Twilight Thug - Cast Battle Stance on Spawn'),
-('233902','2339','0','0','100','1','2000','5000','16000','21000','11','5242','0','0','0','0','0','0','0','0','0','0','Twilight Thug - Cast Battle Shout'),
-('233903','2339','9','0','100','1','0','5','9000','12000','11','6713','1','1','0','0','0','0','0','0','0','0','Twilight Thug - Cast Disarm'),
-('233904','2339','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Twilight Thug - Flee at 15% HP'),
-('233905','2339','6','0','12','0','0','0','0','0','1','-990','0','0','0','0','0','0','0','0','0','0','Twilight Thug - Chance Say on Death'),
+('233902','2339','4','0','75','0','0','0','0','0','1','-1396','-1397','0','0','0','0','0','0','0','0','0','Twilight Thug - Chance Say on Aggro'),
+('233903','2339','0','0','100','1','2000','5000','16000','21000','11','5242','0','0','0','0','0','0','0','0','0','0','Twilight Thug - Cast Battle Shout'),
+('233904','2339','9','0','100','1','0','5','9000','12000','11','6713','1','1','0','0','0','0','0','0','0','0','Twilight Thug - Cast Disarm'),
+('233905','2339','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Twilight Thug - Flee at 15% HP'),
+('233906','2339','6','0','25','0','0','0','0','0','1','-990','-1398','0','0','0','0','0','0','0','0','0','Twilight Thug - Chance Say on Death'),
 -- Archaeologist Hollee (2913) - NSR
 -- Prospector Remtravel (2917) - npc_prospector_remtravel 
 -- Sentinel Glynda Nal'Shea (2930) - NSR
@@ -32263,7 +32264,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1392','The Scourge beckons you, foolish $r.','0','0','0','11076','0'),
 ('-1393','Who dares approach this cauldron? Taste my dark blade!','0','0','0','11077','0'),
 ('-1394','$c - I will consume your light!','0','0','0','11078','0'),
-('-1395','You dare summon me?!','0','0','0','17206','0');
+('-1395','You dare summon me?!','0','0','0','17206','0'),
+('-1396','Embrace the end!','0','0','0','Common Text','0'),
+('-1397','Carnage!  May I spill blood in His name!','0','0','0','Common Text','0'),
+('-1398','My death matters little... the Hammer will still fall!','0','0','0','Common Text','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
