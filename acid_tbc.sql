@@ -10982,7 +10982,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1755601','17556','9','0','100','1','0','5','8000','12000','11','30736','1','0','0','0','0','0','0','0','0','0','Death Ravager - Cast Enraging Bite'),
 ('1755602','17556','9','0','100','1','0','5','17000','21000','11','13443','1','1','0','0','0','0','0','0','0','0','Death Ravager - Cast Rend'),
 ('1755603','17556','2','0','100','0','30','0','0','0','11','3019','0','1','1','-106','0','0','0','0','0','0','Death Ravager - Cast Frenzy at 30% HP'),
--- Draenei Youngling (17587) - NSR
+-- Draenei Youngling
+('1758701','17587','1','0','75','33','10000','60000','120000','240000','1','-1399','-1400','-1401','1','-1402','-1403','0','0','0','0','0','Draenei Youngling - Randomized Say OOC'),
+('1758702','17587','4','0','50','0','0','0','0','0','1','-1404','0','0','0','0','0','0','0','0','0','0','Draenei Youngling - Say on Aggro'),
+('1758703','17587','8','0','100','1','59542','-1','0','0','1','-1405','0','0','0','0','0','0','0','0','0','0','Draenei Youngling - Say on SpellHIT'),
 -- Blood Elf Bandit
 ('1759101','17591','11','0','100','0','0','0','0','0','11','5916','0','0','0','0','0','0','0','0','0','0','Blood Elf Bandit - Cast Shadowstalker Stealth on Spawn'),
 ('1759102','17591','4','0','75','0','0','0','0','0','1','-541','-542','-543','0','0','0','0','0','0','0','0','Blood Elf Bandit - Random Say on Aggro'),
@@ -32267,7 +32270,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1395','You dare summon me?!','0','0','0','17206','0'),
 ('-1396','Embrace the end!','0','0','0','Common Text','0'),
 ('-1397','Carnage!  May I spill blood in His name!','0','0','0','Common Text','0'),
-('-1398','My death matters little... the Hammer will still fall!','0','0','0','Common Text','0');
+('-1398','My death matters little... the Hammer will still fall!','0','0','0','Common Text','0'),
+('-1399','Hrm, azure snapdragons? Where do they come up with these names? Daedal has gone mad!','0','0','0','17587','0'),
+('-1400','Where in the Nether are these damnable lashers?','0','0','0','17587','0'),
+('-1401','These stags are nothing like talbuks.','0','0','0','17587','0'),
+('-1402','I wonder what that little purple creature at the village is...It\'s certainly beautiful.','0','0','0','17587','0'),
+('-1403','I\'m supposed to be hunting infected nightstalkers...this should be easy.','0','0','0','17587','0'),
+('-1404','Time to meet your maker!','0','0','0','17587','0'),
+('-1405','Thanks for the heal, $N!','0','0','0','17587','0'),
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
