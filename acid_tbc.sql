@@ -10883,6 +10883,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hauteur
 ('1720601','17206','0','0','100','1','1000','1000','62000','69000','11','134','0','1','0','0','0','0','0','0','0','0','Hauteur - Cast Fire Shield'),
 ('1720602','17206','9','0','100','1','0','25','12000','16000','11','8050','4','33','0','0','0','0','0','0','0','0','Hauteur - Cast Flame Shock'),
+('1720603','17206','11','0','100','0','0','0','0','0','1','-1395','0','0','0','0','0','0','0','0','0','0','Hauteur - say on Spawn'),
 -- Tuluun (17212) - NSR
 -- Anchorite Fateema (17214) - NSR
 -- Daedal (17215) - NSR
@@ -32264,7 +32265,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1391','$r flesh... Must feed!','0','0','0','11075','0'),
 ('-1392','The Scourge beckons you, foolish $r.','0','0','0','11076','0'),
 ('-1393','Who dares approach this cauldron? Taste my dark blade!','0','0','0','11077','0'),
-('-1394','$c - I will consume your light!','0','0','0','11078','0');
+('-1394','$c - I will consume your light!','0','0','0','11078','0'),
+('-1395','You dare summon me?!','0','0','0','17206','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
