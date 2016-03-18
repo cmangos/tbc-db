@@ -18378,6 +18378,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mistress of Doom
 ('1919201','19192','9','0','100','1','0','30','14000','21000','11','34017','1','0','0','0','0','0','0','0','0','0','Mistress of Doom - Cast Rain of Chaos'),
 ('1919202','19192','2','0','100','0','80','0','0','0','11','34237','0','0','0','0','0','0','0','0','0','0','Mistress of Doom - Summon Imps at 80% HP'),
+-- Commander Duron
+('1922901','19229','30','0','100','1','5','16831','0','0','18','768','10','0','0','0','0','0','0','0','0','0','Commander Duron - change targets unitFlag on Receive AI Event A'),
+('1922902','19229','30','0','100','1','6','16864','0','0','18','768','10','0','0','0','0','0','0','0','0','0','Commander Duron - change targets unitFlag on Receive AI Event B'),
+-- Lieutenant General Orion
+('1925301','19253','30','0','100','1','5','16580','0','0','18','33536','10','0','0','0','0','0','0','0','0','0','Lieutenant General Orion - change targets unitFlag on Receive AI Event A'),
+('1925302','19253','30','0','100','1','6','16582','0','0','18','768','10','0','0','0','0','0','0','0','0','0','Lieutenant General Orion - change targets unitFlag on Receive AI Event B'),
 -- General Krakork
 ('1925501','19255','1','0','100','1','150000','150000','150000','150000','1','-302','-303','-1129','5','5','0','0','0','0','0','0','General Krakork - Random Gossip Speech and Emote'),
 -- Force-Commander Gorax (3.0.3 Official Data - Logs Only)
