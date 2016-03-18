@@ -10946,10 +10946,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- High Chief Stillpine (17440) - NSR
 -- Gurf (17441) - NSR
 -- Moordo (17442) - NSR
--- Kurz the Revelator
-('1744301','17443','1','0','100','1','300000','300000','5400000','5400000','11','30499','0','0','0','0','0','0','0','0','0','0','Kurz the Revelator - Cast Revelations OOC'),
-('1744302','17443','1','0','100','1','2100000','2100000','5400000','5400000','11','30536','0','0','0','0','0','0','0','0','0','0','Kurz the Revelator - Cast Revelations OOC'),
-('1744303','17443','1','0','100','1','3900000','3900000','5400000','5400000','11','30603','0','0','0','0','0','0','0','0','0','0','Kurz the Revelator - Cast Revelations OOC'),
+-- Kurz the Revelator (17443) - NSR
 -- Magtor the Blind Watcher (17444) - NSR
 -- Stillpine the Younger (17445) - NSR
 -- Parkat Steelfur (17446) - NSR
