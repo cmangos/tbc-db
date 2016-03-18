@@ -11047,8 +11047,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bristlelimb Shaman
 ('1732001','17320','9','0','100','1','0','20','18000','22000','11','32967','4','0','0','0','0','0','0','0','0','0','Bristlelimb Shaman - Cast Flame Shock'),
 ('1732002','17320','0','0','100','1','9000','15000','45000','50000','11','32968','0','1','0','0','0','0','0','0','0','0','Bristlelimb Shaman - Cast Scorching Totem'),
+('1732003','17320','6','0','8','0','0','0','0','0','32','17702','0','27','0','0','0','0','0','0','0','0','Bristlelimb Shaman - chance to summon High Chief Bristlelimb on Death'),
 -- Bristlelimb Warrior
 ('1732101','17321','9','0','100','1','0','5','6000','11000','11','11976','1','0','0','0','0','0','0','0','0','0','Bristlelimb Warrior - Cast Strike'),
+('1732102','17321','6','0','8','0','0','0','0','0','32','17702','0','27','0','0','0','0','0','0','0','0','Bristlelimb Warrior - chance to summon High Chief Bristlelimb on Death'),
 -- Infected Wildkin
 ('1732201','17322','9','0','100','1','0','5','9000','15000','11','31282','4','32','0','0','0','0','0','0','0','0','Infected Wildkin - Cast Infected Wound'),
 -- Contaminated Wildkin (17323) - NSR
@@ -11280,8 +11282,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Researcher Cornelius (17686) - NSR
 -- Lord Xiz (17701) - NSR
 -- High Chief Bristlelimb
-('1770201','17702','0','0','100','1','3000','5000','11000','15000','11','20753','0','1','0','0','0','0','0','0','0','0','High Chief Bristlelimb - Cast Demoralizing Roar'),
-('1770202','17702','9','0','100','1','0','5','5000','8000','11','15793','1','0','0','0','0','0','0','0','0','0','High Chief Bristlelimb - Cast Maul'),
+('1770201','17702','11','0','100','0','0','0','0','0','1','-1406','0','0','0','0','0','0','0','0','0','0','High Chief Bristlelimb - Yell at Spawn'),
+('1770202','17702','0','0','100','1','3000','5000','11000','15000','11','20753','0','1','0','0','0','0','0','0','0','0','High Chief Bristlelimb - Cast Demoralizing Roar'),
+('1770203','17702','9','0','100','1','0','5','5000','8000','11','15793','1','0','0','0','0','0','0','0','0','0','High Chief Bristlelimb - Cast Maul'),
 -- Messenger Hermesius (17703) - NSR
 -- Hand of Argus Swordsman
 ('1770401','17704','0','0','100','1','3000','5000','11000','15000','11','9128','0','1','0','0','0','0','0','0','0','0','Hand of Argus Swordsman - Cast Battle Shout'),
@@ -32278,6 +32281,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1403','I\'m supposed to be hunting infected nightstalkers...this should be easy.','0','0','0','17587','0'),
 ('-1404','Time to meet your maker!','0','0','0','17587','0'),
 ('-1405','Thanks for the heal, $N!','0','0','0','17587','0'),
+('-1406','Face the wrath of Bristlelimb!','0','1','0','17702','0'); 
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
@@ -32308,7 +32312,8 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 ('23','2507.12','4010.69','133.87','5.99','60000','20287'),
 ('24','2547.05','3980.34','131.04','2.29','60000','20287'),
 ('25','-4542.21','1023.72','9.669','0.86','32000','21867'), 
-('26','726.106','77.9764','-86.5913','6.00393','18000000','13716');
+('26','726.106','77.9764','-86.5913','6.00393','18000000','13716'),
+('27','-2426.937','-12166.98','32.70101','3.68','300000','17702');
 
 -- =======================================================
 -- Set EventAI in Creature_Template and Final SQL Cleanups
