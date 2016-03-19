@@ -11304,8 +11304,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodcursed Voyager
 ('1771401','17714','4','0','100','0','0','0','0','0','39','15','0','0','0','0','0','0','0','0','0','0','Bloodcursed Voyager - Call for Help on Aggro'),
 -- Atoph the Bloodcursed
-('1771501','17715','9','0','100','1','0','5','5000','8000','11','11976','1','0','0','0','0','0','0','0','0','0','Atoph the Bloodcursed - Cast Strike'),
-('1771502','17715','9','0','100','1','0','5','21000','25000','11','11977','1','1','0','0','0','0','0','0','0','0','Atoph the Bloodcursed - Cast Rend'),
+('1771501','17715','0','0','100','0','0','0','0','0','1','-1413','0','0','0','0','0','0','0','0','0','0','Atoph the Bloodcursed - Yell on Aggro'),
+('1771502','17715','9','0','100','1','0','5','5000','8000','11','11976','1','0','0','0','0','0','0','0','0','0','Atoph the Bloodcursed - Cast Strike'),
+('1771503','17715','9','0','100','1','0','5','21000','25000','11','11977','1','1','0','0','0','0','0','0','0','0','Atoph the Bloodcursed - Cast Rend'),
 -- Captured Sunhawk Agent (17824) - npc_captured_sunhawk_agent
 -- Interrogator Elysia (17825) - NSR
 -- Vindicator Kuros (17843) - NSR
@@ -32346,7 +32347,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1409','ROKDAR SMASH PUNY $n!','0','1','0','18400','0'),
 ('-1410','Closer... Come closer... See what the void brings!','0','1','0','18401','0'),
 ('-1411','Piece by piece I will tear this challenger apart... PIECE BY PIECE!','0','0','0','18402','0'),
-('-1412','No more nice ogre! You hurt Mogor!','0','1','0','18069','0');
+('-1412','No more nice ogre! You hurt Mogor!','0','1','0','18069','0'),
+('-1413','Who dares defile the statue of our beloved?','0','1','0','17715','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
