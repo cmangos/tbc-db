@@ -11134,7 +11134,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1735807','17358','9','0','100','1','0','5','9000','18000','11','31280','4','33','0','0','0','0','0','0','0','0','Fouled Water Spirit - Cast Bloodmyst Chill'),
 ('1735808','17358','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Fouled Water Spirit - Set Phase to 0 on Evade'),
 -- Tel'athion the Impure
-('1735901','17359','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Tel\'athion the Impure - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1735901','17359','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','1','-1414','0','0','Tel\'athion the Impure - Enable Dynamic Movement, Set Phase 1 and Say on Aggro'),
 ('1735902','17359','9','5','100','1','0','40','3400','4800','11','9672','1','0','0','0','0','0','0','0','0','0','Tel\'athion the Impure - Cast Frostbolt (Phase 1)'),
 ('1735903','17359','0','5','100','1','11000','15000','13000','16000','11','15736','4','1','0','0','0','0','0','0','0','0','Tel\'athion the Impure - Cast Arcane Missiles (Phase 1)'),
 ('1735904','17359','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Tel\'athion the Impure - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
@@ -32358,7 +32358,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1410','Closer... Come closer... See what the void brings!','0','1','0','18401','0'),
 ('-1411','Piece by piece I will tear this challenger apart... PIECE BY PIECE!','0','0','0','18402','0'),
 ('-1412','No more nice ogre! You hurt Mogor!','0','1','0','18069','0'),
-('-1413','Who dares defile the statue of our beloved?','0','1','0','17715','0');
+('-1413','Who dares defile the statue of our beloved?','0','1','0','17715','0'),
+('-1414','What have you done to my life\'s work?!  DIE!!!','0','0','0','17359','0');
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
