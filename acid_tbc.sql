@@ -18352,10 +18352,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1895207','18952','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Bonechewer Scavenger - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1895208','18952','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bonechewer Scavenger - Flee at 15% HP (Phase 2)'),
 ('1895209','18952','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Bonechewer Scavenger - Set Phase 1 and Set Melee Weapon Model on Evade'),
-
-
-
-
 -- Darkspear Axethrower
 ('1897001','18970','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Darkspear Axethrower - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('1897002','18970','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Darkspear Axethrower - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
