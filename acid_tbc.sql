@@ -28436,14 +28436,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gruul's Lair
 -- ============
 -- Scarshield Sentry
-('904401','9044','1','0','100','2','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Scarshield Sentry - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
-('904402','9044','9','1','100','3','5','35','2300','3900','11','6660','4','0','40','2','0','0','0','0','0','0','Scarshield Sentry - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('904403','9044','9','1','100','3','7000','11000','11000','15000','11','14443','4','0','40','2','0','0','0','0','0','0','Scarshield Sentry - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
-('904404','9044','9','1','100','3','35','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Scarshield Sentry - Start Combat Movement and Start Melee at 35 Yards (Phase 1)'),
-('904405','9044','9','1','100','3','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Scarshield Sentry - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('904406','9044','9','1','100','3','11','30','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Scarshield Sentry - Prevent Combat Movement and Prevent Melee at 30 Yards (Phase 1)'),
-('904407','9044','0','0','100','3','7000','12000','10000','16000','11','14897','1','1','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Slowing Poison'),
-('904408','9044','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Scarshield Sentry - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('904401','9044','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Scarshield Sentry - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('904402','9044','9','0','100','3','5','35','2300','3900','11','6660','4','0','40','2','0','0','0','0','0','0','Scarshield Sentry - Cast Shoot and Set Ranged Weapon Model'),
+('904403','9044','9','0','100','3','7000','11000','11000','15000','11','14443','4','0','40','2','0','0','0','0','0','0','Scarshield Sentry - Cast Multi-Shot and Set Ranged Weapon Model'),
+('904404','9044','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Scarshield Sentry - Enable Dynamic Movement at 9-80 Yards'),
+('904405','9044','9','0','100','3','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Scarshield Sentry - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('904406','9044','0','0','100','3','7000','12000','10000','16000','11','14897','1','1','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Slowing Poison'),
+('904407','9044','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Scarshield Sentry - Set Melee Weapon Model on Evade'),
 -- High King Maulgar (18831) - boss_high_king_maulgar
 -- Krosh Firehand (18832) - boss_krosh_firehand
 -- Olm the Summoner (18834) - boss_olm_the_summoner
