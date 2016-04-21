@@ -18559,6 +18559,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1970109','19701','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bonechewer Evoker - Set Phase to 0 on Evade'),
 -- Void Spawner
 ('2014301','20143','1','0','100','1','2000','5000','15000','23000','11','34943','0','0','0','0','0','0','0','0','0','0','Void Spawner - Summon Unstable Voidwalker'),
+('2014302','20143','1','0','100','0','80000','80000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Void Spawner Despawn'),
 -- Unstable Voidwalker
 ('2014501','20145','9','0','100','1','0','5','5000','9000','11','33914','1','0','0','0','0','0','0','0','0','0','Unstable Voidwalker - Cast Shadowstrike'),
 -- Runetog Wildhammer
