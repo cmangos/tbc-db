@@ -6187,7 +6187,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==============
--- Stormwind City
+-- Stormwind City - (Final Zone Script Revamp Complete)
 -- ==============
 -- Stormwind City Guard (68) - guard_stormwind 
 -- Roberto Pupellyverbos 277 
@@ -6229,18 +6229,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kyra Boucher  1275
 -- Archbishop Benedictus
 ('128401','1284','4','0','100','0','0','0','0','0','4','5883','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Say on Aggro'),
-('128402','1284','1','0','100','0','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Archbishop Benedictus - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('128403','1284','4','0','100','0','0','0','0','0','11','20695','1','0','23','1','0','0','0','0','0','0','Archbishop Benedictus - Cast Holy Smite and Set Phase 1 on Aggro'),
-('128404','1284','9','13','100','1','0','40','3400','4800','11','20695','1','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Holy Smite (Phase 1)'),
-('128405','1284','9','13','100','0','0','5','0','0','11','20694','0','1','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Holy Nova (Phase 1)'),
-('128406','1284','3','13','100','0','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Archbishop Benedictus - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('128407','1284','9','13','100','0','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Start Combat Movement at 35 Yards (Phase 1)'),
-('128408','1284','9','13','100','0','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('128409','1284','9','13','100','0','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Start Combat Movement Below 5 Yards (Phase 1)'),
-('128410','1284','3','11','100','1','100','15','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('128411','1284','2','7','100','0','15','0','0','0','21','1','0','0','25','0','0','0','1','-47','0','0','Archbishop Benedictus - Start Combat Movement and Flee at 15% HP (Phase 3)'),
-('128412','1284','0','0','100','1','12000','18000','35000','45000','11','20697','0','1','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Power Word: Shield'),
-('128413','1284','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Set Phase to 0 on Evade'),
+('128402','1284','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Archbishop Benedictus - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('128403','1284','9','13','100','1','8','40','3400','4800','11','20695','1','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Holy Smite (Phase 1)'),
+('128404','1284','9','13','100','1','0','5','12000','19000','11','20694','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Holy Nova (Phase 1)'),
+('128405','1284','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('128406','1284','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Disable Dynamic Movement at 0-8 Yards'),
+('128407','1284','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Archbishop Benedictus - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('128408','1284','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('128409','1284','0','0','100','1','12000','18000','35000','45000','11','20697','0','1','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Power Word: Shield'),
+('128410','1284','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Archbishop Benedictus - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('128411','1284','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Archbishop Benedictus - Flee at 15% HP (Phase 3)'),
+('128412','1284','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Set Phase to 0 on Evade'),
 -- Thurman Mullby  1285
 -- Edna Mullby  1286
 -- Marda Weller 1287 
@@ -6444,13 +6443,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Duthorian Rall  6171
 -- Gazin Tenorm  6173
 -- Stephanie Turner  6174
--- Stockade Archer 
-('623701','6237','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Stockade Archer - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
+-- Stockade Archer
+('623701','6237','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Stockade Archer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('623702','6237','9','1','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Stockade Archer - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('623703','6237','9','1','100','1','30','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Stockade Archer - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
-('623704','6237','9','1','100','1','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Stockade Archer - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('623705','6237','9','1','100','1','11','25','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Stockade Archer - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
-('623706','6237','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','21','0','0','0','Stockade Archer - Set Phase to 1 and Set Melee Weapon Model and Prevent Combat Movement on Evade'),
+('623703','6237','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Stockade Archer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('623704','6237','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Stockade Archer - Disable Dynamic Movement at 0-8 Yards'),
+('623705','6237','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Stockade Archer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('623706','6237','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Stockade Archer - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('623707','6237','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Stockade Archer - Set Phase to 0 on Evade'),
 -- Acolyte Porena  6267
 -- Shoni the Shilent  6579
 -- Innkeeper Allison (6740) - npc_innkeeper 
@@ -6505,24 +6505,24 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Major Mattingly      
 ('1439401','14394','14','0','100','1','40','800','8000','12000','11','15493','6','0','0','0','0','0','0','0','0','0','Major Mattingly - Cast Holy Light on Friendlies'),
 -- Officer Jaxon
-('1442301','14423','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase 1 on Aggro'),
+('1442301','14423','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase 1 on Aggro'),
 ('1442302','14423','9','5','100','1','0','5','5000','9000','11','21081','1','0','0','0','0','0','0','0','0','0','Officer Jaxon - Cast Sunder Armor (Phase 1)'),
-('1442303','14423','24','5','100','1','21081','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('1442304','14423','28','3','100','1','21081','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
+('1442303','14423','24','5','100','1','21081','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
+('1442304','14423','28','3','100','1','21081','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1442305','14423','9','0','100','1','0','30','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Officer Jaxon - Cast Hooked Net'),
 ('1442306','14423','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Officer Jaxon - Set Phase to 0 on Evade'),
 -- Officer Pomeroy
-('1443801','14438','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase 1 on Aggro'),
+('1443801','14438','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase 1 on Aggro'),
 ('1443802','14438','9','5','100','1','0','5','5000','9000','11','21081','1','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Cast Sunder Armor (Phase 1)'),
-('1443803','14438','24','5','100','1','21081','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('1443804','14438','28','3','100','1','21081','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
+('1443803','14438','24','5','100','1','21081','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
+('1443804','14438','28','3','100','1','21081','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1443805','14438','9','0','100','1','0','30','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Cast Hooked Net'),
 ('1443806','14438','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Officer Pomeroy - Set Phase to 0 on Evade'),
 -- Officer Brady
-('1443901','14439','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase 1 on Aggro'),
+('1443901','14439','4','0','100','0','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase 1 on Aggro'),
 ('1443902','14439','9','5','100','1','0','5','5000','9000','11','21081','1','0','0','0','0','0','0','0','0','0','Officer Brady - Cast Sunder Armor (Phase 1)'),
-('1443903','14439','24','5','100','1','21081','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('1443904','14439','28','3','100','1','21081','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
+('1443903','14439','24','5','100','1','21081','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
+('1443904','14439','28','3','100','1','21081','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1443905','14439','9','0','100','1','0','30','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Officer Brady - Cast Hooked Net'),
 ('1443906','14439','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Officer Brady - Set Phase to 0 on Evade'),
 -- Orphan Matron Nightingale  14450
