@@ -5677,10 +5677,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Galana  16639
 -- Keelen Sheets
 ('1664001','16640','1','0','100','1','1000','1000','600000','600000','11','35915','0','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Molten Armor on Spawn'),
-('1664002','16640','4','0','100','0','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 1 on Aggro'),
+('1664002','16640','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 1 on Aggro'),
 ('1664003','16640','9','5','100','1','0','5','5000','9000','11','33661','1','0','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Crush Armor (Phase 1)'),
-('1664004','16640','24','5','100','1','33661','10','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 2 on Target Max Crush Armor Aura Stack (Phase 1)'),
-('1664005','16640','28','3','100','1','33661','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 1 on Target Missing Crush Armor Aura Stack (Phase 2)'),
+('1664004','16640','24','5','100','1','33661','10','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 2 on Target Max Crush Armor Aura Stack (Phase 1)'),
+('1664005','16640','28','3','100','1','33661','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Keelen Sheets - Set Phase 1 on Target Missing Crush Armor Aura Stack (Phase 2)'),
 ('1664006','16640','0','0','100','1','7000','11000','12000','17000','11','6713','1','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Disarm'),
 ('1664007','16640','9','0','100','1','14000','18000','13000','17000','11','37110','4','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Fire Blast'),
 ('1664008','16640','9','0','100','1','16000','21000','15000','19000','11','37109','4','1','0','0','0','0','0','0','0','0','Keelen Sheets - Cast Fireball Volley'),
@@ -5749,14 +5749,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Drathen  16780
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE     
 -- Yatheon  16782
--- Halduron Brightwing      
-('1680101','16801','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Halduron Brightwing - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
-('1680102','16801','9','1','100','1','5','30','2300','3900','11','15620','1','0','40','2','0','0','0','0','0','0','Halduron Brightwing - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('1680103','16801','0','1','100','1','7000','12000','12000','16000','11','21390','4','1','40','2','0','0','0','0','0','0','Halduron Brightwing - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
-('1680104','16801','9','1','100','1','30','80','0','0','21','1','1','0','20','1','0','0','0','0','0','0','Halduron Brightwing - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
-('1680105','16801','9','1','100','1','0','10','0','0','21','1','0','0','40','1','0','0','20','1','0','0','Halduron Brightwing - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('1680106','16801','9','1','100','1','11','25','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Halduron Brightwing - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
-('1680107','16801','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','21','0','0','0','Halduron Brightwing - Set Phase to 1 and Set Melee Weapon Model and Prevent Combat Movement on Evade'),
+-- Halduron Brightwing
+('1680101','16801','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Halduron Brightwing - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('1680102','16801','9','0','100','1','5','30','2300','3900','11','15620','1','0','40','2','0','0','0','0','0','0','Halduron Brightwing - Cast Shoot and Set Ranged Weapon Model'),
+('1680103','16801','0','0','100','1','7000','12000','12000','16000','11','21390','4','1','40','2','0','0','0','0','0','0','Halduron Brightwing - Cast Multi-Shot and Set Ranged Weapon Model'),
+('1680104','16801','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Halduron Brightwing - Enable Dynamic Movement at 9-80 Yards'),
+('1680105','16801','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Halduron Brightwing - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1680106','16801','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Halduron Brightwing - Set Melee Weapon Model on Evade'),
 -- Festival Talespinner (16818) - NSR
 -- Honor Hold Target Dummy Middle (16897) - NSR     
 -- Broom (17213) - NSR     
