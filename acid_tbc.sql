@@ -7947,7 +7947,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =========
--- Undercity
+-- Undercity - (Final Zone Script Revamp Complete)
 -- =========
 -- Dan Golthas223
 -- Grizzle Halfmane
@@ -8153,15 +8153,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nardstrum Copperpinch    13429  
 -- Jaycrue Copperpinch (13430) - NSR
 -- Royal Dreadguard
-('1383901','13839','1','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','23','1','0','0','Royal Dreadguard - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
-('1383902','13839','9','5','100','1','5','30','2300','3900','11','16100','1','0','40','2','0','0','0','0','0','0','Royal Dreadguard - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('1383903','13839','9','5','100','1','30','80','1000','1000','21','1','1','0','20','1','0','0','0','0','0','0','Royal Dreadguard - Start Combat Movement and Start Melee at 30 Yards (Phase 1)'),
-('1383904','13839','9','5','100','1','0','10','1000','1000','21','1','0','0','40','1','0','0','20','1','0','0','Royal Dreadguard - Start Combat Movement and Set Melee Weapon Model and Start Melee Below 10 Yards (Phase 1)'),
-('1383905','13839','9','5','100','1','11','25','1000','1000','21','0','1','0','20','0','0','0','0','0','0','0','Royal Dreadguard - Prevent Combat Movement and Prevent Melee at 25 Yards (Phase 1)'),
-('1383906','13839','9','0','100','1','0','5','6000','9000','11','9080','1','1','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Hamstring'),
-('1383907','13839','0','0','100','1','7000','10000','7000','10000','11','14516','4','0','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Strike'),
-('1383908','13839','13','0','100','1','8000','12000','0','0','11','11972','1','1','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Shield Bash on Target Spell Casting'),
-('1383909','13839','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','21','0','0','0','Royal Dreadguard - Set Phase to 1 and Set Melee Weapon Model and Prevent Combat Movement on Evade'),
+('1383901','13839','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Royal Dreadguard - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('1383902','13839','9','0','100','1','5','30','2300','3900','11','16100','1','0','40','2','0','0','0','0','0','0','Royal Dreadguard - Cast Shoot and Set Ranged Weapon Model'),
+('1383903','13839','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Royal Dreadguard - Enable Dynamic Movement at 9-80 Yards'),
+('1383904','13839','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Royal Dreadguard - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1383905','13839','9','0','100','1','0','5','6000','9000','11','9080','1','1','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Hamstring'),
+('1383906','13839','0','0','100','1','7000','10000','7000','10000','11','14516','4','0','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Strike'),
+('1383907','13839','13','0','100','1','8000','12000','0','0','11','11972','1','1','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Shield Bash on Target Spell Casting'),
+('1383908','13839','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Royal Dreadguard - Set Melee Weapon Model on Evade'),
 -- Seeker Cromwell      14402
 -- Seeker Nahr      14403
 -- Seeker Thompson      14404
