@@ -8305,7 +8305,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scarlet Hunter
 ('183101','1831','1','0','100','0','1000','1000','0','0','11','17164','0','1','0','0','0','0','0','0','0','0','Scarlet Hunter - Summon Scarlet Hound on Spawn'),
 ('183102','1831','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Scarlet Hunter - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('183103','1831','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Scarlet Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),EL (5 Yards Min Range)
+('183103','1831','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Scarlet Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('183104','1831','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Scarlet Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('183105','1831','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Scarlet Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('183106','1831','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Scarlet Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
