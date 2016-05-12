@@ -8305,7 +8305,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scarlet Hunter
 ('183101','1831','1','0','100','0','1000','1000','0','0','11','17164','0','1','0','0','0','0','0','0','0','0','Scarlet Hunter - Summon Scarlet Hound on Spawn'),
 ('183102','1831','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Scarlet Hunter - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('183103','1831','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Scarlet Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('183103','1831','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Scarlet Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),EL (5 Yards Min Range)
 ('183104','1831','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Scarlet Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('183105','1831','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Scarlet Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('183106','1831','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Scarlet Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
@@ -9309,7 +9309,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 
 -- =========
--- Ashenvale
+-- Ashenvale - (Final Zone Script Revamp Complete)
 -- =========
 -- Deer (883) - NSR    
 -- Squirrel (1412) - NSR    
@@ -28249,8 +28249,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gruul the Dragonkiller (19044) - boss_gruul
 -- Lair Brute
 ('1938901','19389','9','0','100','3','0','5','8300','22500','11','39171','1','1','0','0','0','0','0','0','0','0','Lair Brute - Cast Mortal Strike'),
-('1938902','19389','9','0','100','3','0','5','6100','16000','11','39174','4','0','0','0','0','0','0','0','0','0','Lair Brute - Cast Cleave'),
-('1938903','19389','0','0','100','3','17600','18100','27100','34200','11','24193','5','1','0','0','0','0','0','0','0','0','Lair Brute - Cast Charge'),
+('1938902','19389','9','0','100','3','0','5','6100','16000','11','39174','1','0','0','0','0','0','0','0','0','0','Lair Brute - Cast Cleave'),
+('1938903','19389','9','0','100','3','8','25','27100','34200','11','24193','9','1','0','0','0','0','0','0','0','0','Lair Brute - Cast Charge'),
 ('1938904','19389','2','0','100','2','15','0','0','0','39','12','0','0','1','-1431','0','0','0','0','0','0','Lair Brute - Call for Help and and Text Emote at 15% HP'),
 -- Gronn-Priest
 ('2135001','21350','9','0','100','3','0','8','12000','19000','11','22884','0','1','0','0','0','0','0','0','0','0','Gronn-Priest - Cast Psychic Scream'),
