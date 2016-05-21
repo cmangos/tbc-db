@@ -10322,7 +10322,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Magister Hawkhelm
 ('664701','6647','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Magister Hawkhelm - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('664702','6647','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Magister Hawkhelm - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('664703','6647','9','5','100','1','5','30','9000','13000','11','18651','4','1','40','2','0','0','0','0','0','0','Magister Hawkhelm - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),nge)
+('664703','6647','9','5','100','1','5','30','9000','13000','11','18651','4','1','40','2','0','0','0','0','0','0','Magister Hawkhelm - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('664704','6647','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Magister Hawkhelm - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('664705','6647','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Magister Hawkhelm - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('664706','6647','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Magister Hawkhelm - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
@@ -11139,7 +11139,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('217001','2170','14','0','100','1','200','40','18000','21000','11','1058','6','0','0','0','0','0','0','0','0','0','Blackwood Ursa - Cast Rejuvenation on Friendlies'), 
 -- Blackwood Shaman
 ('217101','2171','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Blackwood Shaman - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('217102','2171','9','5','100','1','8','40','3400','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Blackwood Shaman - Cast Lightning Bolt (Phase 1)'),)
+('217102','2171','9','5','100','1','8','40','3400','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Blackwood Shaman - Cast Lightning Bolt (Phase 1)'),
 ('217103','2171','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Blackwood Shaman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('217104','2171','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Blackwood Shaman - Disable Dynamic Movement at 0-8 Yards'),
 ('217105','2171','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Blackwood Shaman - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -28459,7 +28459,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1700702','17007','14','0','100','3','0','50','7000','13000','11','29380','6','0','0','0','0','0','0','0','0','0','Lady Keira Berrybuck - Cast Cleanse on Friendly HP'),
 ('1700703','17007','2','0','100','3','30','0','30000','30000','11','29382','0','0','0','0','0','0','0','0','0','0','Lady Keira Berrybuck - Cast Divine Shield'),
 ('1700704','17007','14','0','100','35','0','0','10000','15000','11','29383','0','0','11','29562','0','0','0','0','0','0','Lady Keira Berrybuck - Cast Holy Light'),
-('1700705','17007','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lady Keira Berrybuck - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1700705','17007','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lady Keira Berrybuck - Enable Dynamic Movement at 9-80 Yards'),
 ('1700706','17007','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Lady Keira Berrybuck - Disable Dynamic Movement at 0-8 Yards'),
 -- Phantom Hound
 ('1706701','17067','9','0','100','3','0','5','7000','11000','11','29574','4','32','0','0','0','0','0','0','0','0','Phantom Hound - Cast Rend'),
@@ -28520,8 +28520,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1987202','19872','14','0','100','3','0','50','4000','9000','11','29564','6','0','0','0','0','0','0','0','0','0','Lady Catriona Von\'Indi - Cast Greater Heal on Friendly HP'),
 ('1987203','19872','0','0','100','3','5000','7000','17000','22000','11','29563','4','0','0','0','0','0','0','0','0','0','Lady Catriona Von\'Indi - Cast Holy Fire'),
 ('1987204','19872','0','0','100','3','1000','3000','15000','25000','11','29408','0','0','0','0','0','0','0','0','0','0','Lady Catriona Von\'Indi - Cast Power Word: Shield'),
-('1987205','19872','9','0','100','3','30','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Lady Catriona Von\'Indi - Start Combat Movement at 30 Yards'),
-('1987206','19872','9','0','100','3','0','14','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Lady Catriona Von\'Indi - Start Combat Movement at 14 Yards'),
+('1987205','19872','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lady Catriona Von\'Indi - Enable Dynamic Movement at 9-80 Yards'),
+('1987206','19872','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Lady Catriona Von\'Indi - Disable Dynamic Movement at 0-8 Yards'),
 -- Lord Crispin Ference (SD2 Backport)
 ('1987301','19873','0','0','100','3','6000','7000','10000','12000','11','8379','1','0','0','0','0','0','0','0','0','0','Lord Crispin Ference - Cast Disarm'),
 ('1987302','19873','0','0','100','3','8000','10000','7000','11000','11','29567','1','0','0','0','0','0','0','0','0','0','Lord Crispin Ference - Cast Heroic Strike'),
@@ -28535,8 +28535,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1987501','19875','4','0','100','2','0','0','0','0','11','29406','0','0','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Cast Shadowform on Aggro'),
 ('1987502','19875','0','0','100','3','1000','1000','5000','12000','11','29570','4','0','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Cast Mind Flay'),
 ('1987503','19875','0','0','100','3','7000','8000','5000','10000','11','29405','4','0','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Cast Mana Burn'),
-('1987504','19875','9','13','100','3','30','80','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Start Combat Movement at 30 Yards (Phase 1)'),
-('1987505','19875','9','13','100','3','0','14','1000','1000','21','1','0','0','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Start Combat Movement at 14 Yards (Phase 1)'),
+('1987504','19875','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Enable Dynamic Movement at 9-80 Yards'),
+('1987505','19875','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Disable Dynamic Movement at 0-8 Yards'),
 -- Lord Robin Daris (SD2 Backport)
 ('1987601','19876','0','0','100','3','5000','7000','7000','11000','11','9080','1','0','0','0','0','0','0','0','0','0','Lord Robin Daris - Cast Hamstring'),
 ('1987602','19876','0','0','100','3','8000','10000','14000','18000','11','29572','1','0','0','0','0','0','0','0','0','0','Lord Robin Daris - Cast Mortal Strike'),
