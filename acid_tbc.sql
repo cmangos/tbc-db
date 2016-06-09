@@ -27590,7 +27590,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ========================================
--- Coilfang Reservoir: Serpentshrine Cavern (Partial 2.4.3 Official Data)
+-- Coilfang Reservoir: Serpentshrine Cavern (Partial 2.4.3 Official Data) - (Final Zone Script Revamp Complete)
 -- ========================================
 -- Underbog Mushroom (17990) - mob_underbog_mushroom
 -- Lady Vashj (21212) - boss_lady_vashj
@@ -27811,7 +27811,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ============
--- Gruul's Lair
+-- Gruul's Lair - (Final Zone Script Revamp Complete)
 -- ============
 -- High King Maulgar (18831) - boss_high_king_maulgar
 -- Krosh Firehand (18832) - boss_krosh_firehand
@@ -27836,7 +27836,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ====================================
--- Hellfire Citadel: Magtheridon's Lair
+-- Hellfire Citadel: Magtheridon's Lair - (Final Zone Script Revamp Complete)
 -- ====================================
 -- Hellfire Channeler (17256) - mob_hellfire_channeler
 -- Magtheridon (17257) - boss_magtheridon
@@ -28256,7 +28256,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===========
--- Molten Core
+-- Molten Core - (Final Zone Script Revamp Complete)
 -- ===========
 -- Ragnaros (11502) - boss_ragnaros
 -- Molten Giant
@@ -28268,37 +28268,33 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1165902','11659','9','0','100','3','0','10','7000','10000','11','20276','4','0','0','0','0','0','0','0','0','0','Molten Destroyer - Cast Knockdown'),
 ('1165903','11659','0','0','100','3','9000','12000','8000','11000','11','19129','0','1','0','0','0','0','0','0','0','0','Molten Destroyer - Cast Massive Tremor'),
 -- Flamewaker
-('1166101','11661','4','0','100','2','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Flamewaker - Set Phase 1 on Aggro'),
+('1166101','11661','4','0','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Flamewaker - Set Phase 1 on Aggro'),
 ('1166102','11661','9','5','100','3','0','5','5000','9000','11','15502','0','0','0','0','0','0','0','0','0','0','Flamewaker - Cast Sunder Armor (Phase 1)'),
-('1166103','11661','24','5','100','3','15502','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Flamewaker - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('1166104','11661','28','3','100','3','15502','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Flamewaker - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
+('1166103','11661','24','5','100','3','15502','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Flamewaker - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
+('1166104','11661','28','3','100','3','15502','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Flamewaker - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1166105','11661','0','0','100','3','5000','8000','7000','9000','11','19730','4','0','0','0','0','0','0','0','0','0','Flamewaker - Cast Strike'),
 ('1166106','11661','9','0','100','3','0','8','9000','12000','11','20277','0','1','0','0','0','0','0','0','0','0','Flamewaker - Cast Fist of Ragnaros'),
 ('1166107','11661','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flamewaker - Set Phase to 0 on Evade'),
 -- Flamewaker Priest (11662) - mob_flamewaker_priest
 -- Flamewaker Healer
-('1166301','11663','1','0','100','2','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Flamewaker Healer - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('1166302','11663','4','0','100','2','0','0','0','0','11','22677','1','0','23','1','0','0','0','0','0','0','Flamewaker Healer - Cast Shadow Bolt and Set Phase 1 on Aggro'),
-('1166303','11663','9','5','100','3','0','40','3200','4600','11','22677','1','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Cast Shadow Bolt (Phase 1)'),
-('1166304','11663','3','5','100','2','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Flamewaker Healer - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('1166305','11663','9','5','100','2','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Start Combat Movement at 35 Yards (Phase 1)'),
-('1166306','11663','9','5','100','2','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('1166307','11663','9','5','100','2','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Start Combat Movement Below 5 Yards (Phase 1)'),
-('1166308','11663','3','3','100','3','100','15','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('1166309','11663','0','0','100','3','9000','14000','8000','12000','11','20603','0','1','0','0','0','0','0','0','0','0','Flamewaker Healer - Cast Shadow Shock'),
-('1166310','11663','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Set Phase to 0 on Evade'),
+('1166301','11663','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Flamewaker Healer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1166302','11663','9','5','100','3','8','40','3400','4800','11','22677','1','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Cast Shadow Bolt (Phase 1)'),
+('1166303','11663','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1166304','11663','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Disable Dynamic Movement at 0-8 Yards'),
+('1166305','11663','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Flamewaker Healer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1166306','11663','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1166307','11663','0','0','100','3','9000','14000','8000','12000','11','20603','0','1','0','0','0','0','0','0','0','0','Flamewaker Healer - Cast Shadow Shock'),
+('1166308','11663','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Healer - Set Phase to 0 on Evade'),
 -- Flamewaker Elite
-('1166401','11664','1','0','100','2','0','0','0','0','21','0','0','0','22','0','0','0','0','0','0','0','Flamewaker Elite - Prevent Combat Movement and Set Phase to 0 on Spawn'),
-('1166402','11664','4','0','100','2','0','0','0','0','11','36711','1','0','23','1','0','0','0','0','0','0','Flamewaker Elite - Cast Fireball and Set Phase 1 on Aggro'),
-('1166403','11664','9','5','100','3','0','40','4000','5000','11','36711','4','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Fireball (Phase 1)'),
-('1166404','11664','3','5','100','2','7','0','0','0','21','1','0','0','23','1','0','0','0','0','0','0','Flamewaker Elite - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('1166405','11664','9','5','100','2','35','80','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Start Combat Movement at 35 Yards (Phase 1)'),
-('1166406','11664','9','5','100','2','5','15','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Prevent Combat Movement at 15 Yards (Phase 1)'),
-('1166407','11664','9','5','100','2','0','5','0','0','21','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Start Combat Movement Below 5 Yards (Phase 1)'),
-('1166408','11664','3','3','100','3','100','15','1000','1000','23','-1','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('1166409','11664','9','0','100','3','0','8','11000','14000','11','20229','0','1','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Blast Wave'),
-('1166410','11664','0','0','100','3','9000','11000','9000','12000','11','20623','4','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Fire Blast'),
-('1166411','11664','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Set Phase to 0 on Evade'),
+('1166401','11664','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Flamewaker Elite - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1166402','11664','9','5','100','3','8','40','3400','4800','11','36711','1','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Fireball (Phase 1)'),
+('1166403','11664','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1166404','11664','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Disable Dynamic Movement at 0-8 Yards'),
+('1166405','11664','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Flamewaker Elite - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1166406','11664','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1166407','11664','9','0','100','3','0','8','11000','14000','11','20229','0','1','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Blast Wave'),
+('1166408','11664','0','0','100','3','9000','11000','9000','12000','11','20623','4','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Cast Fire Blast'),
+('1166409','11664','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Flamewaker Elite - Set Phase to 0 on Evade'),
 -- Lava Annihilator (11665)
 -- Firewalker
 ('1166601','11666','0','0','100','3','7000','11000','8000','15000','11','19635','0','0','0','0','0','0','0','0','0','0','Firewalker - Cast Incite Flames'),
@@ -28312,15 +28308,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flame Imp
 ('1166901','11669','9','0','100','3','0','10','4000','7000','11','20602','0','0','0','0','0','0','0','0','0','0','Flame Imp - Cast Fire Nova'),
 -- Core Hound
-('1167101','11671','4','0','100','2','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Core Hound - Set Phase 1 on Aggro'),
+('1167101','11671','4','0','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Core Hound - Set Phase 1 on Aggro'),
 ('1167102','11671','9','5','100','3','0','10','5000','9000','11','19771','1','0','0','0','0','0','0','0','0','0','Core Hound - Cast Serrated Bite (Phase 1)'),
-('1167103','11671','24','5','100','3','19771','10','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Core Hound - Set Phase 2 on Target Max Serrated Bite Aura Stack (Phase 1)'),
-('1167104','11671','28','3','100','3','19771','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Core Hound - Set Phase 1 on Target Missing Serrated Bite Aura Stack (Phase 2)'),
+('1167103','11671','24','5','100','3','19771','10','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Core Hound - Set Phase 2 on Target Max Serrated Bite Aura Stack (Phase 1)'),
+('1167104','11671','28','3','100','3','19771','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Core Hound - Set Phase 1 on Target Missing Serrated Bite Aura Stack (Phase 2)'),
 ('1167105','11671','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Core Hound - Set Phase to 0 on Evade'),
 -- Core Rager (11672) - mob_core_rager
 -- Ancient Core Hound
 ('1167301','11673','11','0','100','2','0','0','0','0','11','18950','0','2','0','0','0','0','0','0','0','0','Ancient Core Hound - Invisibility and Stealth Detection'),
-('1167302','11673','4','0','100','34','0','0','0','0','31','0','5','0','0','0','0','0','0','0','0','0','Ancient Core Hound - Set random phase on Aggro'),
+('1167302','11673','4','0','100','34','0','0','0','0','31','0','5','0','0','0','0','0','0','0','0','0','Ancient Core Hound - Set Random Phase on Aggro'),
 ('1167303','11673','0','0','100','3','1000','1000','1000','1000','11','19319','1','0','0','0','0','0','0','0','0','0','Ancient Core Hound - Vicious Bite'),
 ('1167304','11673','0','0','100','3','8000','12000','9000','14000','11','19272','0','1','0','0','0','0','0','0','0','0','Ancient Core Hound - Lava Breath'),
 ('1167305','11673','0','62','100','3','5000','10000','8000','12000','11','19364','0','1','0','0','0','0','0','0','0','0','Ancient Core Hound - Ground Stomp (Phase 0)'),
