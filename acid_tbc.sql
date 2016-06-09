@@ -28629,7 +28629,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===============
--- Sunwell Plateau
+-- Sunwell Plateau - (Final Zone Script Revamp Complete)
 -- ===============
 -- Black Rat (2110) - NSR    
 -- Infernal (22203) - NSR
@@ -28700,17 +28700,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2548405','25484','7','0','100','2','0','0','0','0','11','16380','0','1','0','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Greater Invisibility on Evade'),
 -- Shadowsword Deathbringer
 ('2548501','25485','11','0','100','2','0','0','0','0','11','45769','0','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Cast Sunwell Radiance on Spawn'),
-('2548502','25485','4','0','100','2','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Set Phase 1 on Aggro'),
+('2548502','25485','4','0','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Set Phase 1 on Aggro'),
 ('2548503','25485','9','5','100','3','0','5','9000','15000','11','46481','1','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Cast Disease Buffet (Phase 1)'),
-('2548504','25485','24','5','100','3','46481','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Set Phase 2 on Target Max Disease Buffet Aura Stack (Phase 1)'),
-('2548505','25485','28','3','100','3','46481','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Set Phase 1 on Target Missing Disease Buffet Aura Stack (Phase 2)'),
+('2548504','25485','24','5','100','3','46481','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Set Phase 2 on Target Max Disease Buffet Aura Stack (Phase 1)'),
+('2548505','25485','28','3','100','3','46481','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Set Phase 1 on Target Missing Disease Buffet Aura Stack (Phase 2)'),
 ('2548506','25485','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Set Phase to 0 on Evade'),
 -- Shadowsword Vanquisher
 ('2548601','25486','11','0','100','2','0','0','0','0','11','45769','0','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Cast Sunwell Radiance on Spawn'),
-('2548602','25486','4','0','100','2','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Set Phase 1 on Aggro'),
+('2548602','25486','4','0','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Set Phase 1 on Aggro'),
 ('2548603','25486','9','5','100','3','0','5','11000','14000','11','46469','1','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Cast Melt Armor (Phase 1)'),
-('2548604','25486','24','5','100','3','46469','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Set Phase 2 on Target Max Melt Armor Aura Stack (Phase 1)'),
-('2548605','25486','28','3','100','3','46469','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Set Phase 1 on Target Missing Melt Armor Aura Stack (Phase 2)'),
+('2548604','25486','24','5','100','3','46469','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Set Phase 2 on Target Max Melt Armor Aura Stack (Phase 1)'),
+('2548605','25486','28','3','100','3','46469','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Set Phase 1 on Target Missing Melt Armor Aura Stack (Phase 2)'),
 ('2548606','25486','0','0','100','3','7000','11000','9000','12000','11','46468','1','1','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Cast Cleave'),
 ('2548607','25486','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Set Phase to 0 on Evade'),
 -- Shield Orb (25502)
@@ -28754,10 +28754,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2559504','25595','0','0','100','2','18000','24000','21000','26000','11','46291','5','1','0','0','0','0','0','0','0','0','Chaos Gazer - Cast Drain Life'),
 -- Oblivion Mage
 ('2559701','25597','11','0','100','2','0','0','0','0','11','45769','0','0','0','0','0','0','0','0','0','0','Oblivion Mage - Cast Sunwell Radiance on Spawn'),
-('2559702','25597','4','0','100','2','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Oblivion Mage - Set Phase 1 on Aggro'),
+('2559702','25597','4','0','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Oblivion Mage - Set Phase 1 on Aggro'),
 ('2559703','25597','9','5','100','3','0','5','9000','14000','11','46279','1','0','0','0','0','0','0','0','0','0','Oblivion Mage - Cast Flame Buffet (Phase 1)'),
-('2559704','25597','24','5','100','3','46279','10','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Oblivion Mage - Set Phase 2 on Target Max Flame Buffet Aura Stack (Phase 1)'),
-('2559705','25597','28','3','100','3','46279','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Oblivion Mage - Set Phase 1 on Target Missing Flame Buffet Aura Stack (Phase 2)'),
+('2559704','25597','24','5','100','3','46279','10','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Oblivion Mage - Set Phase 2 on Target Max Flame Buffet Aura Stack (Phase 1)'),
+('2559705','25597','28','3','100','3','46279','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Oblivion Mage - Set Phase 1 on Target Missing Flame Buffet Aura Stack (Phase 2)'),
 ('2559706','25597','0','0','100','3','7000','11000','16000','19000','11','46280','5','1','0','0','0','0','0','0','0','0','Oblivion Mage - Cast Polymorph'),
 ('2559707','25597','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Oblivion Mage - Set Phase to 0 on Evade'),
 -- Volatile Felfire Fiend
