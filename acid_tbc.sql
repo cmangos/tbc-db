@@ -29017,7 +29017,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===================
--- Temple of Ahn'Qiraj
+-- Temple of Ahn'Qiraj - (Final Zone Script Revamp Complete)
 -- =================== 
 -- Roach (4076) - NSR
 -- Vekniss Soldier
@@ -29034,10 +29034,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vekniss Wasp
 ('1523601','15236','9','0','100','3','0','40','9000','12000','11','26077','4','0','0','0','0','0','0','0','0','0','Vekniss Wasp - Cast Itch'),
 -- Vekniss Hive Crawler
-('1524001','15240','4','0','100','2','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Set Phase 1 on Aggro'),
+('1524001','15240','4','0','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Set Phase 1 on Aggro'),
 ('1524002','15240','9','5','100','3','0','5','5000','9000','11','25051','1','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Cast Sunder Armor (Phase 1)'),
-('1524003','15240','24','5','100','3','25051','5','5000','5000','23','1','0','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('1524004','15240','28','3','100','3','25051','1','5000','5000','23','-1','0','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
+('1524003','15240','24','5','100','3','25051','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
+('1524004','15240','28','3','100','3','25051','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1524005','15240','9','0','100','3','0','40','9000','14000','11','25809','4','32','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Cast Crippling Poison'),
 ('1524006','15240','0','0','100','3','9000','15000','12000','16000','11','25810','4','32','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Cast Mind-numbing Poison'),
 ('1524007','15240','0','0','100','3','7000','11000','10000','14000','11','26601','1','0','0','0','0','0','0','0','0','0','Vekniss Hive Crawler - Cast Poison Bolt'),
