@@ -11017,15 +11017,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Void Critter (17887) - NSR
 -- Scout Loryi (17926) - NSR
 -- Scout Jorli (17927) - NSR
--- Demolitionist Legoso
-('1798201','17982','1','0','100','1','1000','1000','600000','600000','11','325','0','1','0','0','0','0','0','0','0','0','Demolitionist Legoso - Cast Lightning Shield on Spawn'),
-('1798202','17982','9','0','100','1','0','25','13000','16000','11','8056','1','0','0','0','0','0','0','0','0','0','Demolitionist Legoso - Cast Frost Shock'),
-('1798203','17982','0','0','100','1','6000','9000','45000','55000','11','38116','0','1','0','0','0','0','0','0','0','0','Demolitionist Legoso - Cast Searing Totem'),
-('1798204','17982','0','0','100','1','14000','16000','120000','125000','11','31633','0','1','0','0','0','0','0','0','0','0','Demolitionist Legoso - Cast Strength of Earth Totem'),
-('1798205','17982','27','0','100','1','325','1','15000','30000','11','325','0','1','0','0','0','0','0','0','0','0','Demolitionist Legoso - Cast Lightning Shield on Missing Buff'),
-('1798206','17982','14','0','100','1','400','40','15000','20000','11','8004','6','1','0','0','0','0','0','0','0','0','Demolitionist Legoso - Cast Lesser Healing Wave on Friendlies'),
-('1798207','17982','14','0','100','1','900','40','18000','22000','11','913','6','1','0','0','0','0','0','0','0','0','Demolitionist Legoso - Cast Healing Wave on Friendlies'),
-('1798208','17982','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Demolitionist Legoso - Flee at 15% HP'),
+-- Bloodmyst Tesla Coil
+('1797901','17979','30','0','100','1','5','17678','0','0','11','31611','0','32','0','0','0','0','0','0','0','0','Bloodmyst Tesla Coil - Cast Channel Earth Shield on Received AI event'),
+-- Demolitionist Legoso (17982)
 -- Vindicator Corin (17986) - NSR
 -- Archimindy (17989) - NSR
 -- Defender Adrielle (18020) - NSR
@@ -31465,7 +31459,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1412','No more nice ogre! You hurt Mogor!','0','1','0','18069','0'),
 ('-1413','Who dares defile the statue of our beloved?','0','1','0','17715','0'),
 ('-1414','What have you done to my life\'s work?!  DIE!!!','0','0','0','17359','0'),
-('-1431','%s lets out a massive roar, calling for aid!','0','2','0','17664','15');
+('-1431','%s lets out a massive roar, calling for aid!','0','2','0','17664','15'),
+('-1432','Petulant children, pray to your gods for you are about to meet them!','0','1','0','17678','0');
+
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
