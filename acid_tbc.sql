@@ -25607,7 +25607,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2085701','20857','11','0','100','6','0','0','0','0','11','38805','0','1','0','0','0','0','0','0','0','0','Arcatraz Defender  - Cast Immolate on Spawn'),
 ('2085702','20857','9','0','100','7','0','5','2000','3000','11','38804','1','0','0','0','0','0','0','0','0','0','Arcatraz Defender  - Cast Flaming Weapon'),
 ('2085703','20857','0','0','100','7','2000','3000','1000','1000','11','40449','1','1','0','0','0','0','0','0','0','0','Arcatraz Defender  - Cast Protean Subdual'),
--- Arcatraz Warder (NEED TO REVIEW AI AND SEE HOW OR IF NEW DYNAMIC SYSTEM IS INVOLVED)
+-- Arcatraz Warder
 ('2085901','20859','1','0','100','7','1000','3000','4000','5000','11','36327','0','0','40','2','0','0','0','0','0','0','Arcatraz Warder - Cast Shoot Arcane Explosion Arrow and Set Ranged Weapon Model OOC'),
 -- Protean Nightmare (4.3.4 Official Data - Normal)
 ('2086401','20864','0','0','100','7','15200','21700','10900','22900','11','36622','4','33','0','0','0','0','0','0','0','0','Protean Nightmare  - Cast Incubation'),
@@ -25633,7 +25633,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2086801','20868','9','0','100','7','0','20','17000','25000','11','36677','4','1','0','0','0','0','0','0','0','0','Entropic Eye - Cast Chaos Breath'),
 ('2086802','20868','9','0','100','3','0','5','6000','8000','11','36664','4','0','0','0','0','0','0','0','0','0','Entropic Eye (Normal) - Cast Tentacle Cleave'),
 ('2086803','20868','9','0','100','5','0','5','4000','7000','11','38816','4','0','0','0','0','0','0','0','0','0','Entropic Eye (Heroic) - Cast Tentacle Cleave'),
--- Arcatraz Sentinel (STILL USING STOP COMBAT MOVEMENT BUT I DO NOT SEE A BETTER OPTION FOR THIS SPECIFIC SCRIPT)
+-- Arcatraz Sentinel
 ('2086901','20869','11','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel - Set Phase 0 on Spawn'),
 ('2086902','20869','1','0','100','2','1000','1000','0','0','11','36716','0','0','42','1','1','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge and Set Min Health At 1% on Spawn'),
 ('2086903','20869','1','0','100','4','1000','1000','0','0','11','38828','0','0','42','1','1','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Set Min Health At 1% on Spawn'),
@@ -25642,15 +25642,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2086906','20869','10','0','100','4','0','5','0','0','28','0','31261','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Remove Permanent Feign Death (Root) on Hostile LOS at 5 Yards'),
 ('2086907','20869','0','0','100','2','3000','3000','0','0','28','0','36716','0','22','1','0','0','0','0','0','0','Arcatraz Sentinel (Normal) - Remove Remove Energy Discharge and Set Phase 1'),
 ('2086908','20869','0','0','100','4','3000','3000','0','0','28','0','38828','0','22','1','0','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Remove Remove Energy Discharge and Set Phase 1'),
-('2086909','20869','0','13','100','3','4000','6000','4000','6000','11','36717','1','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge (Phase 1)'),
-('2086910','20869','0','13','100','5','4000','6000','4000','6000','11','38829','1','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge (Phase 1)'),
-('2086911','20869','2','13','100','2','10','0','0','0','11','36716','0','0','36','21761','0','0','22','2','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge and Transform into Destroyed Sentinel and Set Phase 2 at 10% HP (Phase 1)'),
-('2086912','20869','2','13','100','4','10','0','0','0','11','38828','0','0','36','21761','0','0','22','2','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Transform into Destroyed Sentinel and Set Phase 2 at 10% HP (Phase 1)'),
-('2086913','20869','0','11','100','7','1000','1000','1000','1000','21','0','0','0','20','0','0','0','22','3','0','0','Arcatraz Sentinel - Prevent Combat Movement and Prevent Melee and Set Phase 3 (Phase 2)'),
-('2086914','20869','0','7','100','3','10000','10000','10000','10000','28','0','36717','0','33','20869','1','0','11','36719','0','7','Arcatraz Sentinel (Normal) - Remove Remove Energy Discharge and Give Quest Kill Credit and Cast Explode and Set Phase 0 (Phase 3)'),
-('2086915','20869','0','7','100','5','10000','10000','10000','10000','28','0','38828','0','33','20869','1','0','11','36719','0','7','Arcatraz Sentinel (Heroic) - Remove Remove Energy Discharge and Give Quest Kill Credit and Cast Explode and Set Phase 0 (Phase 3)'),
-('2086916','20869','21','0','100','2','0','0','0','0','11','36716','0','0','42','1','1','0','22','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
-('2086917','20869','21','0','100','4','0','0','0','0','11','38828','0','0','42','1','1','0','22','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
+('2086909','20869','0','29','100','3','4000','6000','4000','6000','11','36717','1','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge (Phase 1)'),
+('2086910','20869','0','29','100','5','4000','6000','4000','6000','11','38829','1','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge (Phase 1)'),
+('2086911','20869','2','29','100','2','10','0','0','0','11','36716','0','0','36','21761','0','0','22','2','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge and Transform into Destroyed Sentinel and Set Phase 2 at 10% HP (Phase 1)'),
+('2086912','20869','2','29','100','4','10','0','0','0','11','38828','0','0','36','21761','0','0','22','2','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Transform into Destroyed Sentinel and Set Phase 2 at 10% HP (Phase 1)'),
+('2086913','20869','0','27','100','7','1000','1000','1000','1000','21','0','0','0','20','0','0','0','22','3','0','0','Arcatraz Sentinel - Prevent Combat Movement and Prevent Melee and Set Phase 3 (Phase 2)'),
+('2086914','20869','0','23','100','3','10000','10000','10000','10000','28','0','36717','0','33','20869','1','0','11','36719','0','7','Arcatraz Sentinel (Normal) - Remove Remove Energy Discharge and Give Quest Kill Credit and Cast Explode and Set Phase 0 (Phase 3)'),
+('2086915','20869','0','23','100','5','10000','10000','10000','10000','28','0','38828','0','33','20869','1','0','11','36719','0','7','Arcatraz Sentinel (Heroic) - Remove Remove Energy Discharge and Give Quest Kill Credit and Cast Explode and Set Phase 0 (Phase 3)'),
+('2086916','20869','0','23','100','7','10000','10000','10000','10000','22','4','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel - Set Phase 4 (Phase 3)'),
+('2086917','20869','0','15','100','7','10000','10000','10000','10000','14','-100','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel - Drop All Threat on Players (Phase 4)'),
+('2086918','20869','21','0','100','2','0','0','0','0','11','36716','0','0','42','1','1','0','22','0','0','0','Arcatraz Sentinel (Normal) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
+('2086919','20869','21','0','100','4','0','0','0','0','11','38828','0','0','42','1','1','0','22','0','0','0','Arcatraz Sentinel (Heroic) - Cast Energy Discharge and Set Min Health At 1% on Return Home'),
 -- Zereketh The Unbound
 ('2087001','20870','4','0','100','6','0','0','0','0','1','-634','0','0','0','0','0','0','0','0','0','0','Zereketh The Unbound - Yell on Aggro'),
 ('2087002','20870','0','0','100','7','21000','32000','32000','45000','11','36119','4','0','0','0','0','0','0','0','0','0','Zereketh The Unbound - Cast Void Zone'),
