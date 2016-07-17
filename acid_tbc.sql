@@ -27074,7 +27074,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2304904','23049','2','13','100','2','66','0','0','0','11','41101','0','0','11','41105','0','0','23','1','0','0','Shadowmoon Weapon Master - Cast Defensive Stance and Defensive Aura and Set Phase 2 at 66% HP (Phase 1)'),
 ('2304905','23049','0','11','100','3','7000','16000','21000','30000','11','41104','0','0','0','0','0','0','0','0','0','0','Shadowmoon Weapon Master - Cast Shield Wall (Phase 2)'),
 ('2304906','23049','2','11','100','2','33','0','0','0','1','-378','0','0','11','41100','0','0','11','41107','0','0','Shadowmoon Weapon Master - Say and Cast Set Berserker Stance and Berseker Aura at 33% HP (Phase 2)'),
-('2304907','23049','2','11','100','2','33','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Shadowmoon Weapon Master - Set Phase 3 at 33% HP (Phase 2)'),
+('2304907','23049','2','11','100','2','33','0','0','0','22','3','0','0','0','0','0','0','0','0','0','0','Shadowmoon Weapon Master - Set Phase 3 at 33% HP (Phase 2)'),
 ('2304908','23049','0','7','100','3','12000','15000','18000','23000','11','41097','0','0','0','0','0','0','0','0','0','0','Shadowmoon Weapon Master - Cast Whirlwind (Phase 3)'),
 ('2304909','23049','7','0','100','2','0','0','0','0','11','41099','0','0','11','41106','0','0','22','1','0','0','Shadowmoon Weapon Master - Cast Battle Stance and Battle Aura and Set Phase 1 on Evade'),
 -- Demon Fire
