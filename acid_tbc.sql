@@ -12662,7 +12662,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2508001','25080','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Grunt Umgor - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('2508002','25080','9','0','100','1','0','45','2300','3900','11','23337','1','0','40','2','0','0','0','0','0','0','Grunt Umgor - Cast Shoot and Set Ranged Weapon Model'),
 ('2508003','25080','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Grunt Umgor - Enable Dynamic Movement at 9-80 Yards'),
-('2508004','25080','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Grunt Umgor - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('2508004','25080','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Grunt Umgor - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2508005','25080','9','0','100','1','0','20','11000','18000','11','12024','1','1','0','0','0','0','0','0','0','0','Grunt Umgor - Cast Net'),
 ('2508006','25080','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Grunt Umgor - Set Melee Weapon Model on Evade'),
 -- Grunt Ounda
