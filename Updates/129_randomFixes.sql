@@ -14,4 +14,7 @@ UPDATE `quest_template` SET `ReqSourceId1` = '7131' WHERE `entry` = '1846';
 
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = '-100' WHERE `entry` = '21287' AND `item` = '30689';
 
+-- Quests are not available for proper races
+UPDATE `quest_template` SET `RequiredRaces` = '1101' WHERE `entry` IN (10818, 10805);
+
 
