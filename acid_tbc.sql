@@ -17513,6 +17513,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Death's Door Fel Cannon
 ('2244301','22443','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Death\'s Door Fel Cannon - OOC - Prevent Combat Movement'),
 ('2244302','22443','0','0','100','1','1000','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Death\'s Door Fel Cannon - Combat - Cast Fel Cannon Blast'),
+-- Unstable Fel-Imp
+('2247401','22474','11','0','100','1','0','0','0','0','22','0','0','0','11','39227','0','0','0','0','0','0','Unstable Fel-Imp - Disable melee and Cast transform spell on Spawn'),
+('2247402','22474','9','0','100','1','0','5','0','0','11','39266','0','0','0','0','0','0','0','0','0','0','Unstable Fel-Imp - Cast Unstable Explosion'),
 -- Vim'gol the Vile 
 ('2291101','22911','6','0','100','0','0','0','0','0','11','39862','0','7','0','0','0','0','0','0','0','0','Vim\'gol the Vile - Cast Summon Vim\'gol\'s Vile Grimoire Chest on Death (Quest: 10998)'),
 -- Bash'ir Surveyor
