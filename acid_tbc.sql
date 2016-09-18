@@ -17292,6 +17292,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1893701','18937','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Amerun Leafshade - Summon Enraged Hippogryphs on Aggro'),
 -- Unoke Tenderhoof
 ('1895301','18953','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Unoke Tenderhoof - Summon Enraged Wyverns and Yell on Aggro'),
+-- Baelmon the Hound-Master
+('1974701','19747','4','0','100','32','0','0','0','0','1','-1433','-1434','-1435','1','-1436','-1437','-1438','0','0','0','0','Baelmon the Hound-Master - Random Say on Aggro'),
+('1974702','19747','0','0','100','1','5000','9000','18000','25000','11','11443','1','0','0','0','0','0','0','0','0','0','Baelmon the Hound-Master - Cast Cripple'),
+('1974703','19747','0','0','100','1','20000','25000','25000','30000','11','31598','1','0','0','0','0','0','0','0','0','0','Baelmon the Hound-Master - Cast Rain of Fire'),
+('1974704','19747','0','0','100','0','35000','40000','40000','45000','11','39272','1','0','1','-1439','0','0','0','0','0','0','Baelmon the Hound-Master - Cast Summon Wrath Hound'),
 -- Bloodmaul Skirmisher
 ('1994801','19948','0','0','80','1','8000','14000','20000','30000','11','34932','0','0','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Bloodmaul Buzz'),
 ('1994802','19948','2','0','100','0','30','0','0','0','11','37786','0','1','1','-46','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Bloodmaul Rage at 30% HP'),
@@ -17465,6 +17470,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2172906','21729','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Electromental - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('2172907','21729','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Electromental - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2172908','21729','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Electromental - Set Phase to 0 on Evade'),
+-- Summoned Wrath Hound
+('2183701','21837','11','0','100','0','0','0','0','0','11','22578','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Glowy (Black) on Spawn'),
+('2183702','21837','4','0','100','0','0','0','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Charge on Aggro'),
+('2183703','21837','9','0','100','1','0','5','6000','10000','11','36406','1','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Double Breath'),
 -- Apexis Flayer
 ('2217501','22175','0','0','100','1','8300','13300','22000','26000','11','13443','4','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Rend'),
 ('2217502','22175','0','0','100','1','4200','6200','28100','31600','11','40770','1','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Shred Armor'),
@@ -17514,8 +17523,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2244301','22443','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Death\'s Door Fel Cannon - OOC - Prevent Combat Movement'),
 ('2244302','22443','0','0','100','1','1000','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Death\'s Door Fel Cannon - Combat - Cast Fel Cannon Blast'),
 -- Unstable Fel-Imp
-('2247401','22474','11','0','100','1','0','0','0','0','22','0','0','0','11','39227','0','0','0','0','0','0','Unstable Fel-Imp - Disable melee and Cast transform spell on Spawn'),
+('2247401','22474','11','0','100','0','0','0','0','0','20','0','0','0','11','39227','0','0','0','0','0','0','Unstable Fel-Imp - Disable melee and Cast transform spell on Spawn'),
 ('2247402','22474','9','0','100','1','0','5','0','0','11','39266','0','0','0','0','0','0','0','0','0','0','Unstable Fel-Imp - Cast Unstable Explosion'),
+-- Lesser Wrath Hound
+('2249901','22499','9','0','100','1','0','5','6000','10000','11','36406','1','0','0','0','0','0','0','0','0','0','Lesser Wrath Hound - Cast Double Breath'),
 -- Vim'gol the Vile 
 ('2291101','22911','6','0','100','0','0','0','0','0','11','39862','0','7','0','0','0','0','0','0','0','0','Vim\'gol the Vile - Cast Summon Vim\'gol\'s Vile Grimoire Chest on Death (Quest: 10998)'),
 -- Bash'ir Surveyor
@@ -31510,7 +31521,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1413','Who dares defile the statue of our beloved?','0','1','0','17715','0'),
 ('-1414','What have you done to my life\'s work?!  DIE!!!','0','0','0','17359','0'),
 ('-1431','%s lets out a massive roar, calling for aid!','0','2','0','17664','15'),
-('-1432','Petulant children, pray to your gods for you are about to meet them!','0','1','0','17678','0');
+('-1432','Petulant children, pray to your gods for you are about to meet them!','0','1','0','17678','0'),
+('-1433','Prepare yourself for eternal torture, mortal!','0','1','0','19747','0'),
+('-1434','WHAT?! Who dares to disturb the Burning Legion?','0','1','0','19747','0'),
+('-1435','I shall enjoy the smell of the grease from your marrow crackling over the fire!','0','1','0','19747','0'),
+('-1436','Nothing will prevent your doom!','0','1','0','19747','0'),
+('-1437','You DARE to attack me?!','0','1','0','19747','0'),
+('-1438','You will suffer slowly until the end of time for this affront!','0','1','0','19747','0'),
+('-1439','Release the hounds!','0','1','0','19747','0');
 
 
 -- =======================================================
