@@ -4558,7 +4558,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Raena Flinthammer 5108     
 -- Myra Tyrngaarde 5109     
 -- Barim Jurgenstaad 5110     
--- Innkeeper Firebrew 5111   npc_innkeeper 
+-- Innkeeper Firebrew - npc_innkeeper
+('511101','5111','22','0','100','1','22','9','8353','0','5','19','0','0','15','8353','6','0','1','-1473','0','0','Innkeeper Firebrew - Emote and Gives Quest Credit on Received Emote'),
 -- Gwenna Firebrew 5112     
 -- Kelv Sternhammer 5113     
 -- Bilban Tosslespanner 5114     
@@ -4635,7 +4636,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Krom Stoutarm 6294     
 -- Jubahl Corpseseeker 6382     
 -- Gnoarn 6569     
--- Talvash del Kissel 6826     
+-- Talvash del Kissel
+('682601','6826','22','0','100','1','264','9','8355','0','5','275','0','0','15','8355','6','0','1','-1471','0','0','Talvash del Kissel - Emote and Gives Quest Credit on Received Emote'),
 -- Dinita Stonemantle 7292     
 -- Demnul Farmountain 7298     
 -- Dink 7312     
@@ -6431,7 +6433,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('623707','6237','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Stockade Archer - Set Phase to 0 on Evade'),
 -- Acolyte Porena  6267
 -- Shoni the Shilent  6579
--- Innkeeper Allison (6740) - npc_innkeeper 
+-- Innkeeper Allison - npc_innkeeper
+('674001','6740','22','0','100','1','41','9','8356','0','5','23','0','0','15','8356','6','0','1','-1470','0','0','Innkeeper Allison - Emote and Gives Quest Credit on Received Emote'),
 -- Renzik "The Shiv"  6946
 -- Doc Mixilpixil  7207
 -- Noarm (7208) - NSR     
@@ -8092,7 +8095,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('649203','6492','21','0','100','0','0','0','0','0','11','9093','0','1','0','0','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Invisibility on Return Home'),
 -- Andron Gant      6522
 -- Estelle Gendry      6566
--- Innkeeper Norman (6741) - npc_innkeeper 
+-- Innkeeper Norman - npc_innkeeper
+('674101','6741','22','0','100','1','22','9','8354','0','5','19','0','0','15','8354','6','0','1','-1473','0','0','Innkeeper Norman - Emote and Gives Quest Credit on Received Emote'),
 -- Killian Hagey     7087 
 -- Gothard Winslow      7297
 -- Alessandro Luca    7683  
@@ -12543,6 +12547,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1137801','11378','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Foreman Thazz\'ril - Flee at 15% HP'),
 -- Kali Remik
 ('1181401','11814','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kali Remik - Flee at 15% HP'),
+('1181402','11814','22','0','100','1','264','9','8358','0','5','275','0','0','15','8358','6','0','1','-1471','0','0','Kali Remik - Emote and Gives Quest Credit on Received Emote'),
 -- Magga      
 ('1194301','11943','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Magga - Flee at 15% HP'),
 -- Snurk Bucksquick      
@@ -14697,7 +14702,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ur'kyo 6018     
 -- Therzok 6446     
 -- Gamon 6466     
--- Innkeeper Gryshka 6929   npc_innkeeper 
+-- Innkeeper Gryshka - npc_innkeeper
+('692901','6929','22','0','100','1','41','9','8359','0','5','23','0','0','15','8359','6','0','1','-1470','0','0','Innkeeper Gryshka - Emote and Gives Quest Credit on Received Emote'),
 -- Dran Droffers 6986     
 -- Malton Droffers 6987     
 -- Zilzibin Drumlore 7010     
@@ -16097,6 +16103,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zarrin 6286     
 -- Radnaal Maneweaver 6287     
 -- Spirit Healer (6491) - NSR   
+-- Innkeeper Salienne - npc_innkeeper
+('673501','6735','22','0','100','1','34','9','8357','0','5','94','0','0','15','8357','6','0','1','-1472','0','0','Innkeeper Saelienne - Emote and Gives Quest Credit on Received Emote'),
 -- Innkeeper Keldamyr (6736) - npc_innkeeper 
 -- Porthannius 6780     
 -- Melarith 6781     
@@ -16829,7 +16837,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Birgitte Cranston 5957     
 -- Henen Ragetotem 6393     
 -- Orm Stonehoof 6410     
--- Innkeeper Pala 6746   npc_innkeeper 
+-- Innkeeper Pala - npc_innkeeper
+('674601','6746','22','0','100','1','34','9','8360','0','5','94','0','0','15','8360','6','0','1','-1472','0','0','Innkeeper Pala - Emote and Gives Quest Credit on Received Emote'),
 -- Mooranta 7089     
 -- Taim Ragetotem 7427     
 -- Chesmu 8356     
@@ -31528,7 +31537,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1436','Nothing will prevent your doom!','0','1','0','19747','0'),
 ('-1437','You DARE to attack me?!','0','1','0','19747','0'),
 ('-1438','You will suffer slowly until the end of time for this affront!','0','1','0','19747','0'),
-('-1439','Release the hounds!','0','1','0','19747','0');
+('-1439','Release the hounds!','0','1','0','19747','0'),
+('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
+('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
+('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
+('-1473','Bawk,bawk,bawk! Happy Hallow\'s End, $n!','0','0','0','6741','0');
 
 
 -- =======================================================
