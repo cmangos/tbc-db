@@ -10498,7 +10498,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mura (16919) - NSR
 -- Ryosh (16920) - NSR
 -- Ammen Vale Guardian (16921) - NSR
--- Injured Draenei (16971) - npc_injured_draenei
+-- Injured Draenei
+('1697101','16971','8','0','100','1','29170','-1','0','0','47','1','0','0','41','15000','0','0','0','0','0','0','Injured Draenei - Set Sit State and Despawn on SpellHIT'),
 -- Technician Zhanaa (17071) - NSR
 -- Draenei Mourner
 ('1707301','17073','1','0','100','1','30000','30000','570000','570000','1','-911','-912','-913','0','0','0','0','0','0','0','0','Draenei Mourner - Random Say 1'),
