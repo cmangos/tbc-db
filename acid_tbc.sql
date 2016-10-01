@@ -19299,11 +19299,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2179501','21795','4','0','25','32','0','0','0','0','1','-1322','-1323','-1324','1','-1325','-1326','-1322','0','0','0','0','Shadowmoon Harbinger - Random Say on Aggro'),
 -- Scorchshell Pincer
 ('2186401','21864','9','0','100','1','0','8','5000','10000','11','38208','1','32','0','0','0','0','0','0','0','0','Scorchshell Pincer - Cast Burning Poison'),
+-- Teron Gorefiend
+('2186701','21867','11','0','100','0','0','0','0','0','18','33536','0','0','2','14','0','0','0','0','0','0','Teron Gorefiend - Set unitFlags and Faction on spawn'),
 -- Chain of Shadows
-('2187601','21876','1','0','75','1','5000','5000','15000','20000','11','37784','0','0','0','0','0','0','0','0','0','0','Chain of Shadows - Cast Enforced Submission OOC'),
--- Karsius
-('2187701','21877','11','0','100','0','0','0','0','0','11','37789','0','1','1','-1320','0','0','0','0','0','0','Karsius - Cast Teron Freed and Say on Spawn'),
-('2187702','21877','6','0','100','0','0','0','0','0','1','-1321','0','0','32','21867','0','25','0','0','0','0','Karsius - Yell on Death and Summon Teron Gorefiend'),
+('2187601','21876','11','0','100','0','0','0','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Chain of Shadows - Enable Dynamic Movement on Spawn'),
+('2187602','21876','1','0','75','1','5000','5000','15000','20000','11','37784','0','0','0','0','0','0','0','0','0','0','Chain of Shadows - Cast Enforced Submission OOC'),
+-- Karsius the Ancient Watcher
+('2187701','21877','11','0','100','0','0','0','0','0','1','-1320','0','0','0','0','0','0','0','0','0','0','Karsius the Ancient Watcher - Say on Spawn'),
+('2187702','21877','6','0','100','0','0','0','0','0','1','-1321','0','0','11','37789','0','0','0','0','0','0','Karsius the Ancient Watcher - Yell and Cast Teron Free on Death (q.10639)'),
 -- Felboar
 ('2187801','21878','9','0','100','1','8','25','12000','18000','11','35570','1','0','0','0','0','0','0','0','0','0','Felboar - Cast Charge'),
 -- Vilewing Chimaera
@@ -28413,7 +28416,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shazzrah (12264) - boss_shazzrah
 -- Lava Spawn
 ('1226501','12265','0','0','100','3','0','1000','3000','3000','11','19391','1','0','0','0','0','0','0','0','0','0','Lava Spawn - Fireball'),
-('1226502','12265','0','0','100','2','30000','30000','0','0','1','-1320','0','0','11','19569','0','2','0','0','0','0','Lava Spawn - Emote + Split1'),
+('1226502','12265','0','0','100','2','30000','30000','0','0','1','-1318','0','0','11','19569','0','2','0','0','0','0','Lava Spawn - Emote + Split1'),
 ('1226503','12265','17','0','100','2','12265','0','0','0','11','19570','0','2','41','0','0','0','0','0','0','0','Lava Spawn - Split2 + Despawn'),
 -- Dancing Flames (25305) - npc_dancing_flames
 
@@ -31469,7 +31472,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1317','Silithid Creeper lays an egg!','0','2','0','3250','0'),
 ('-1318','Silithid Creeper Egg begins to crack and open...','0','2','0','5781','0'),
 ('-1319','Silithid Creeper Egg splits open!','0','2','0','5781','0'),
-('-1320','Your pathetic attempt to escape will be short lived, Gorefiend. Let the boy go and submit! Even with your armour and weapons, you cannot defeat the ancients!','0','0','0','21877','0'),
+('-1320','Your pathetic attempt to escape will be short lived, Gorefiend. Let the boy go and submit! Even with your armour and weapons, you cannot defeat the ancients!','0','0','0','21877','25'),
 ('-1321','What ... have you done...','0','1','0','21877','0'),
 ('-1322','Pray that the chilling embrace of Teron Gorefiend does not reach out for you...','0','4','0','21788 21795','0'),
 ('-1323','It is you who have invaded our home. Gorefiend will avenge us!','0','4','0','21788 21795','0'),
@@ -31583,7 +31586,7 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 ('22','2540.95','4032.21','136.18','4.44','60000','20287'),
 ('23','2507.12','4010.69','133.87','5.99','60000','20287'),
 ('24','2547.05','3980.34','131.04','2.29','60000','20287'),
-('25','-4542.21','1023.72','9.669','0.86','32000','21867'), 
+-- '25' - PLS REUSE 
 ('26','726.106','77.9764','-86.5913','6.00393','18000000','13716'),
 ('27','-2426.937','-12166.98','32.70101','3.68','300000','17702');
 
