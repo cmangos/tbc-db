@@ -10948,9 +10948,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deathclaw
 ('1766101','17661','9','0','100','1','0','5','5000','8000','11','31279','1','0','0','0','0','0','0','0','0','0','Deathclaw - Cast Swipe'),
 -- Jessera of Mac'Aree (17663) - NSR
--- Matis the Cruel
-('1766401','17664','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Matis the Cruel - Unmount on Aggro'),
-('1766402','17664','6','0','100','0','0','0','0','0','11','31336','0','2','0','0','0','0','0','0','0','0','Matis the Cruel - Cast Matis Captured DND on Death'),
+-- Matis the Cruel  (KEPT PREVENT COMBAT MOVEMENT ON PURPOSE - NEED BETTER SOLUTION)
+('1766401','17664','11','0','100','0','0','0','0','0','47','0','0','0','43','0','2346','0','22','0','0','0','Matis the Cruel - Mount and set Phase 0 on spawn'),
+('1766402','17664','11','0','100','0','0','0','0','0','20','1','0','0','21','1','0','0','0','0','0','0','Matis the Cruel - Start Combat Movement and Start Melee on spawn'),
+('1766403','17664','1','0','40','1','6000','50000','80000','135000','1','-1477','0','0','0','0','0','0','0','0','0','0','Matis the Cruel - Say while OOC'),
+('1766404','17664','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Matis the Cruel - Unmount on Aggro'),
+('1766405','17664','30','0','100','0','6','17853','0','0','20','0','0','0','21','0','0','0','22','1','0','0','Tracker of the Hand - Prevent Combat Movement, Prevent Melee and Set Phase 1 on Receive AI Event Custom B.'),
+('1766406','17664','29','1','100','0','2000','2000','0','0','1','-1476','0','0','11','31336','0','2','0','0','0','0','Matis the Cruel - Say and Cast Matis Captured DND (Phase1)'),
+('1766407','17664','29','1','100','0','6000','6000','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','Matis the Cruel - set Stand State and despawn(Phase1)'),
+('1766408','17664','7','0','100','0','0','0','0','0','43','0','2346','0','0','0','0','0','0','0','0','0','Matis the Cruel - Mount on Evade'),
 -- Astur (17666) - NSR
 -- Beega (17667) - NSR
 -- Stinkhorn Striker (17673) - NSR
@@ -11004,12 +11010,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Interrogator Elysia (17825) - NSR
 -- Vindicator Kuros (17843) - NSR
 -- Vindicator Aesom (17844) - NSR
--- Tracker of the Hand
-('1785301','17853','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Tracker of the Hand - Enable Dynamic Movement and Prevent Melee on Aggro'),
-('1785302','17853','9','0','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Tracker of the Hand - Cast Shoot and Set Ranged Weapon Model'),
-('1785303','17853','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Tracker of the Hand - Enable Dynamic Movement at 9-80 Yards'),
-('1785304','17853','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Tracker of the Hand - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1785305','17853','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Tracker of the Hand - Set Melee Weapon Model on Evade'),
+-- Tracker of the Hand  (KEPT PREVENT COMBAT MOVEMENT ON PURPOSE - NEED BETTER SOLUTION)
+('1785301','17853','0','0','100','0','0','0','0','0','1','-1474','0','0','0','0','0','0','0','0','0','0','Tracker of the Hand - Say on Aggro'),
+('1785302','17853','30','0','100','0','5','17664','0','0','20','0','0','0','21','0','0','0','45','6','100','0','Tracker of the Hand - Prevent Combat Movement, Prevent Melee and Send AI Event Custom B on Receive AI Event Custom A.'),
+('1785303','17853','7','0','100','0','0','0','0','0','1','-1475','0','0','41','4000','0','0','0','0','0','0','Tracker of the Hand - Say and despawn on Evade'),
+('1785305','17853','7','0','100','0','0','0','0','0','20','1','0','0','22','1','0','0','0','0','0','0','Tracker of the Hand - Start Combat Movement and Start Melee on Evade'),
+('1785304','17853','1','0','40','0','180000','180000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Tracker of the Hand - Despawn while OOC'),
 -- Matis (17865) - NSR
 -- Image of Velen (17874) - NSR
 -- Hunter of the Hand
@@ -31542,7 +31548,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
 ('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
 ('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
-('-1473','Bawk,bawk,bawk! Happy Hallow\'s End, $n!','0','0','0','6741','0');
+('-1473','Bawk,bawk,bawk! Happy Hallow\'s End, $n!','0','0','0','6741','0'),
+('-1474','We\'ve got you now, $n!','0','0','0','17853','0'),
+('-1475','Return to Kuros. I will bring him to Blood Watch.','0','0','0','17853','0'),
+('-1476','%s falls unconscious.','0','2','0','17664','0'),
+('-1477','Draenei filth will not last on this world...','0','0','0','17664','0');
 
 
 -- =======================================================
