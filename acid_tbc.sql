@@ -10473,16 +10473,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blood Elf Scout
 ('1652101','16521','4','0','15','0','0','0','0','0','1','-902','-903','-904','0','0','0','0','0','0','0','0','Blood Elf Scout - Chance to Say on Aggro'),
 ('1652102','16521','0','0','100','1','4000','9000','30000','30000','11','25602','1','0','0','0','0','0','0','0','0','0','Blood Elf Scout - Cast Faerie Fire'),
--- Surveyor Candress (RED BEAM REQUIRES MORE FIXING)
+-- Surveyor Candress - (Dynamic Movement not ReQ.)
 ('1652201','16522','1','0','100','0','2000','2000','0','0','11','31515','0','0','0','0','0','0','0','0','0','0','Surveyor Candress - Cast Red Beam on Spawn'),
-('1652202','16522','4','0','100','0','0','0','0','0','28','0','31515','0','1','-905','0','0','0','0','0','0','Surveyor Candress - Say on Aggro'),
-('1652203','16522','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Surveyor Candress - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1652204','16522','9','5','100','1','0','40','3800','5200','11','9487','1','0','0','0','0','0','0','0','0','0','Surveyor Candress - Cast Fireball (Phase 1)'),
-('1652205','16522','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Surveyor Candress - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('1652206','16522','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Surveyor Candress - Disable Dynamic Movement at 0-8 Yards'),
-('1652207','16522','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Surveyor Candress - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('1652208','16522','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Surveyor Candress - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('1652209','16522','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Surveyor Candress - Set Phase to 0 on Evade'),
+('1652202','16522','4','0','100','0','0','0','0','0','28','0','31515','0','1','-905','0','0','45','5','150','0','Surveyor Candress - Remove aura, Say and Send AI Event "A" on Aggro'),
+('1652203','16522','9','0','100','1','0','40','12000','16000','11','9053','1','0','0','0','0','0','0','0','0','0','Surveyor Candress - Cast Fireball'),
 -- Inoculated Nestlewood Owlkin
 ('1653401','16534','1','0','100','32','1000','1000','0','0','1','-906','-907','-908','1','-909','-910','-906','1','-907','-908','-909','Inoculated Nestlewood Owlkin - Random Text Emote'),
 -- Vindicator Aldar (16535) - NSR
@@ -10510,8 +10504,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit of the Vale (17087) - NSR
 -- Firmanvaar (17089) - NSR
 -- Diktynna (17101) - NSR
--- Angry Murloc 
-('1710201','17102','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Angry Murloc - Flee at 15% HP'),
+-- Angry Murloc - NSR
 -- Acteon (17110) - NSR
 -- Arugoo of the Stillpine (17114) - NSR
 -- Exarch Menelaous (17116) - NSR
@@ -10695,6 +10688,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1761211','17612','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Quel\'dorei Magewraith - Set Phase to 0 on Evade'),
 -- Huntress Kella Nightbow (17614) - NSR
 -- Kioni (17929) - NSR
+-- Red Crystal Bunny
+('1794701','17947','30','0','100','1','5','16522','0','0','11','5','0','0','0','0','0','0','0','0','0','0','Red Crystal Bunny - Killself on Receive AI Event A'),
 -- Nabek (17930) - NSR
 -- Heur (17983) - NSR
 -- Azuremyst Peacekeeper (18038) - guard_azuremyst
