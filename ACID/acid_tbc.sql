@@ -27969,7 +27969,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Karazhan - (Zone Script Revamp Complete)
 -- ========
 -- Spectral Charger
-('1554701','15547','0','0','100','3','5000','9000','13000','17000','11','29320','3','0','0','0','0','0','0','0','0','0','Spectral Charger - Cast Charge'),
+('1554701','15547','0','0','100','3','5000','9000','13000','17000','11','29320','5','0','22','1','0','0','0','0','0','0','Spectral Charger - Cast Charge and Set Phase 1'),
+('1554702','15547','0','5','100','3','0','0','0','0','11','29321','4','0','22','0','0','0','0','0','0','0','Spectral Charger - Cast Fear and Set Phase 0 (Phase 1)'),
 -- Spectral Stallion
 ('1554801','15548','9','0','100','3','0','5','6000','9000','11','29577','1','0','0','0','0','0','0','0','0','0','Spectral Stallion - Cast Hoof Strike'),
 ('1554802','15548','0','0','100','3','4000','7000','9000','13000','11','29323','0','1','0','0','0','0','0','0','0','0','Spectral Stallion - Cast Absorb Vitality'),
@@ -27979,6 +27980,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1555102','15551','0','0','100','3','4000','8000','45000','48000','11','6016','1','1','0','0','0','0','0','0','0','0','Spectral Stable Hand - Cast Pierce Armor'),
 ('1555103','15551','14','0','100','2','38400','30','21000','28000','11','29339','6','1','11','29340','6','0','0','0','0','0','Spectral Stable Hand - Cast Healing Touch and Whip Rage on Friendlies'),
 ('1555104','15551','6','0','100','2','0','0','0','0','1','-40','-41','0','0','0','0','0','0','0','0','0','Spectral Stable Hand - Random Say on Death'),
+('1555105','15551','4','0','25','2','0','0','0','0','1','-1457','-1458','0','0','0','0','0','0','0','0','0','Spectral Stable Hand - Random Say on Aggro'),
 -- Moroes (15687) - boss_moroes
 -- Terestian Illhoof (15688) - boss_terestian_illhoof
 -- Netherspite (15689) - boss_netherspite
@@ -28046,6 +28048,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Servant
 ('1640701','16407','9','0','100','2','0','40','12000','21000','11','29540','1','32','0','0','0','0','0','0','0','0','Spectral Servant - Cast Curse of Past Burdens'),
 ('1640702','16407','6','0','20','2','0','0','0','0','1','-43','-44','-45','0','0','0','0','0','0','0','0','Spectral Servant - Random Say on Death'),
+('1640703','16407','1','0','10','2','300000','600000','300000','600000','1','-1452','-1453','-1454','0','0','0','0','0','0','0','0','Spectral Servant - Random Say Idle OOC'),
+('1640704','16407','4','0','10','2','0','0','0','0','1','-1455','-1456','0','0','0','0','0','0','0','0','0','Spectral Servant - Random Say on Aggro'),
 -- Phantom Valet
 ('1640801','16408','4','0','100','2','0','0','0','0','1','-76','0','0','0','0','0','0','0','0','0','0','Phantom Valet - Yell on Aggro'),
 ('1640802','16408','9','0','100','3','0','10','16000','25000','11','29584','0','0','0','0','0','0','0','0','0','0','Phantom Valet - Cast Demoralizing Shout'),
@@ -28079,7 +28083,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1640926','16409','6','0','20','2','0','0','0','0','1','-50','0','0','0','0','0','0','0','0','0','0','Phantom Guest - Say on Death'),
 -- Spectral Retainer
 ('1641001','16410','9','0','100','3','0','5','6000','12000','11','29578','4','32','0','0','0','0','0','0','0','0','Spectral Retainer - Cast Rend'),
-('1641002','16410','0','0','100','3','9000','13000','18000','22000','11','29546','9','1','0','0','0','0','0','0','0','0','Spectral Retainer - Cast Oath of Fealty'),
+('1641002','16410','0','0','100','3','9000','13000','18000','22000','11','29546','5','1','0','0','0','0','0','0','0','0','Spectral Retainer - Cast Oath of Fealty'),
+('1641003','16410','4','0','50','2','0','0','0','0','1','-1450','-1451','0','0','0','0','0','0','0','0','0','Spectral Retainer - Random Say on Aggro'),
+('1641004','16410','6','0','20','2','0','0','0','0','1','-1449','0','0','0','0','0','0','0','0','0','0','Spectral Retainer - Say on Death'),
 -- Spectral Chef
 ('1641101','16411','0','0','100','3','4000','8000','6000','10000','11','29665','1','0','0','0','0','0','0','0','0','0','Spectral Chef - Cast Cleave'),
 ('1641102','16411','9','0','100','3','0','5','12000','15000','11','29667','1','1','0','0','0','0','0','0','0','0','Spectral Chef - Cast Hamstring'),
@@ -28087,9 +28093,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1641201','16412','9','0','100','3','0','5','7000','12000','11','29676','1','0','0','0','0','0','0','0','0','0','Ghostly Baker - Cast Rolling Pin'),
 ('1641202','16412','0','0','100','3','5000','9000','12000','18000','11','29675','4','33','0','0','0','0','0','0','0','0','Ghostly Baker - Cast Roast'),
 -- Ghostly Steward
-('1641401','16414','2','0','100','2','25','0','0','0','11','29691','0','0','1','-350','-351','-352','23','1','0','0','Ghostly Steward - Cast Frenzy and Yell at 25% HP'),
-('1641402','16414','0','1','100','3','5000','11000','9000','15000','11','29690','4','0','0','0','0','0','0','0','0','0','Ghostly Steward - Cast Drunken Skull Crack (Phase 1)'),
-('1641403','16414','6','0','20','2','0','0','0','0','1','-49','0','0','0','0','0','0','0','0','0','0','Ghostly Steward - Say on Death'),
+('1641401','16414','2','0','100','2','50','0','0','0','11','29691','0','0','1','-350','-351','-352','23','1','0','0','Ghostly Steward - Cast Frenzy and Yell at 50% HP'),
+('1641402','16414','0','1','100','3','1000','4000','7000','14000','11','29690','1','0','0','0','0','0','0','0','0','0','Ghostly Steward - Cast Drunken Skull Crack (Phase 1)'),
+('1641403','16414','6','0','20','2','0','0','0','0','1','-49','-1448','0','0','0','0','0','0','0','0','0','Ghostly Steward - Say on Death'),
+('1641404','16414','4','0','20','2','0','0','0','0','1','-1445','-1446','-1447','0','0','0','0','0','0','0','0','Ghostly Steward - Say on Aggro'),
 -- Skeletal Waiter
 ('1641501','16415','0','0','100','3','6000','12000','21000','30000','11','32441','4','32','0','0','0','0','0','0','0','0','Skeletal Waiter - Cast Brittle Bones'),
 -- Spectral Sentry
@@ -28185,11 +28192,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Syphoner
 ('1649201','16492','9','0','100','3','0','20','9000','13000','11','29881','4','0','0','0','0','0','0','0','0','0','Syphoner - Cast Drain Mana'),
 -- Arcane Protector
-('1650401','16504','11','0','100','2','0','0','0','0','11','11649','0','1','30','1','2','3','0','0','0','0','Arcane Protector - Cast Detect Invisibility and Set Random Phase on Spawn'),
-('1650402','16504','8','13','100','3','0','127','0','0','11','29788','0','0','0','0','0','0','0','0','0','0','Arcane Protector - Cast Return Fire on Spellhit (Phase 1)'),
-('1650403','16504','0','11','100','3','3000','8000','15000','19000','12','17283','4','600000','0','0','0','0','0','0','0','0','Arcane Protector - Summon Astral Spark (Phase 2)'),
-('1650404','16504','0','7','100','3','1000','3000','18000','21000','11','29840','0','0','0','0','0','0','0','0','0','0','Arcane Protector - Cast Fist of Stone (Phase 3)'),
-('1650405','16504','7','0','100','2','0','0','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Arcane Protector - Set Random Phase on Evade'),
+('1650401','16504','11','0','100','2','0','0','0','0','11','11649','0','1','30','1','2','3','0','0','0','0','Arcane Protector - Cast Detect Invisibility on Spawn'),
+('1650402','16504','0','13','100','3','0','0','0','0','11','29788','0','1','1','-1444','0','0','22','0','0','0','Arcane Protector - Cast Return Fire (Phase 1)'),
+('1650403','16504','0','11','100','3','0','0','0','0','11','29793','0','1','1','-1442','0','0','22','0','0','0','Arcane Protector - Cast Return Fire (Phase 2)'),
+('1650404','16504','0','7','100','3','0','0','0','0','11','29794','0','1','1','-1443','0','0','22','0','0','0','Arcane Protector - Cast Return Fire (Phase 3)'),
+('1650405','16504','0','0','100','3','3000','8000','15000','19000','12','17283','4','600000','0','0','0','0','0','0','0','0','Arcane Protector - Summon Astral Spark'),
+('1650406','16504','0','0','100','3','1000','3000','18000','21000','11','29840','0','0','0','0','0','0','0','0','0','0','Arcane Protector - Cast Fist of Stone'),
+('1650407','16504','0','0','100','3','0','0','21000','22000','30','1','2','3','0','0','0','0','0','0','0','0','Arcane Protector - Set Random Phase'),
 -- Shade of Aran (16524) - boss_shade_of_aran
 -- Spell Shade
 ('1652501','16525','1','0','100','2','0','0','0','0','11','29920','0','1','0','0','0','0','0','0','0','0','Spell Shade - Cast Phasing Invisibility on Spawn'),
@@ -31600,6 +31609,23 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1439','Release the hounds!','0','1','0','19747','0'),
 ('-1440','Your father destroyed my children and left their bodies impaled upon the rocky blades at Dragon''s End. For this, you will die! Enough of this farce. Prepare to face my full wrath!','0','1','0','0','Baron Sablemane'),
 ('-1441','Baron Sablemane begins emanating immense power.','0','2','0','0', 'Baron Sablemane'),
+('-1442','Activate defense mode EL-2S.','0','0','0','0','16504'),
+('-1443','Activate defense mode EL-5R.','0','0','0','0','16504'),
+('-1444','Activate defense mode EL-7M.','0','0','0','0','16504'),
+('-1445','How dare you spill the master''s wine!','0','0','0','0','16414 on Aggro'),
+('-1446','Impudent outsiders!','0','0','0','0','16414 on Aggro'),
+('-1447','Meddling fools! You will pay with your lives!','0','0','0','0','16414 on Aggro'),
+('-1448','You''ll never make it out alive...','0','0','0','0','16414 on Death'),
+('-1449','I mustn''t be afraid...','0','0','0','0','16410 on Death'),
+('-1450','Off with you!','0','0','0','0','16410 on Aggro'),
+('-1451','You''ll ruin everything!','0','0','0','0','16410 on Aggro'),
+('-1452','The rest are fine without us.','0','0','0','0','16407 idle'),
+('-1453','They''ll never know we''re missing.','0','0','0','0','16407 idle'),
+('-1454','If we dawdle much longer',' there''ll be hell to pay!','0','0','0','0','16407 idle'),
+('-1455','What is this?','0','0','0','0','16407 on Aggro'),
+('-1456','Invaders in the tower!','0','0','0','0','16407 on Aggro'),
+('-1457','Intruders!','0','0','0','0','15551 on Aggro'),
+('-1458','You are not welcome!','0','0','0','0','15551 on Aggro'),
 ('-1459','Demon Hunter Supplicant begins intensely dodging incoming attacks.','0','2','0','0','Demon Hunter Supplicant'),
 ('-1460','Who dares to interrupt my operations?','0','1','0','0','Nexus-Prince Razaan spawn'),
 ('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
