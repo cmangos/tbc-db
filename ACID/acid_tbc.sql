@@ -17384,6 +17384,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Maggoc
 ('2060001','20600','2','0','100','0','30','0','0','0','11','36406','0','0','1','-106','0','0','0','0','0','0','Maggoc - Cast Frenzy at 30% HP'),
 ('2060002','20600','6','0','100','0','0','0','0','0','11','39891','0','7','0','0','0','0','0','0','0','0','Maggoc - Summon Maggoc\'s Treasure Chest on Death'),
+-- Razaani Raider
+('2060101','20601','0','0','100','1','7000','12000','9000','15000','11','35922','0','1','0','0','0','0','0','0','0','0','Razaani Raider - Cast Energy Flare'),
+('2060102','20601','0','0','100','1','2000','6000','16000','21000','11','32920','1','1','0','0','0','0','0','0','0','0','Razaani Raider - Cast Warp'),
+-- Razaani Nexus Stalker
+('2060901','20609','9','0','100','1','0','8','12000','15000','11','11975','0','0','0','0','0','0','0','0','0','0','Razaani Nexus Stalker - Cast Arcane Explosion'),
+('2060902','20609','9','0','100','1','0','30','14000','18000','11','36513','0','0','0','0','0','0','0','0','0','0','Razaani Nexus Stalker - Cast Intangible Presence'),
+-- Razaani Spell-Thief
+('2061401','20614','9','0','100','1','0','8','9000','14000','11','36508','1','0','0','0','0','0','0','0','0','0','Razaani Spell-Thief - Cast Energy Surge'),
 -- Korgaah
 ('2072301','20723','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Korgaah - Set Phase 1 on Spawned'),
 ('2072302','20723','30','4','100','1','5','21241','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Korgaah (Phase 1) - Set Phase 2 on Received AI Event'),
@@ -17443,6 +17451,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2092403','20924','2','0','100','0','10','0','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Glasshide Petrifier - Cast Soften at 10% HP'),
 -- Scalded Basilisk
 ('2092501','20925','0','0','85','1','8000','13000','14000','19000','11','35236','0','0','0','0','0','0','0','0','0','0','Scalded Basilisk - Cast Heat Wave'),
+-- Nexus-Prince Razaan
+('2105701','21057','1','0','100','0','1000','1000','0','0','1','-1460','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Razaan yell on spawn'),
+('2105702','21057','0','0','100','1','8000','12000','17000','21000','11','35924','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Razaan - Cast Energy Flux'),
 -- Rina Moonspring
 ('2106601','21066','1','0','100','1','60000','60000','300000','300000','1','-339','0','0','0','0','0','0','0','0','0','0','Rina Moonspring - Gossip Event Text Emote'),
 -- Rip Pedalslam
@@ -19188,6 +19199,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2105004','21050','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Enraged Earth Spirit - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2105005','21050','6','0','100','0','0','0','0','0','11','38365','0','7','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Summon Enraged Earth Shard on Death'),
 ('2105006','21050','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Set Melee Weapon Model on Evade'),
+-- Demon Hunter Supplicant
+('2117901','21179','2','0','100','0','40','0','0','0','1','-1459','0','0','11','37683','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Evasion at 40% HP'),
+('2117902','21179','2','0','100','0','25','0','0','0','11','32720','0','0','0','0','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Sprint at 25% HP'),
 -- Dormant Infernal
 ('2108001','21080','4','0','100','0','0','0','0','0','3','19759','0','0','0','0','0','0','0','0','0','0','Dormant Infernal - Morph into Newly Crafted Infernal on Aggro'),
 ('2108002','21080','1','0','100','0','0','0','0','0','3','0','0','0','0','0','0','0','0','0','0','0','Dormant Infernal - Demorph on OCC'),
@@ -19351,6 +19365,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2201801','22018','0','0','100','1','1000','3000','120000','240000','11','30931','0','0','0','0','0','0','0','0','0','0','Eclipsion Cavalier - Cast Battle Shout'),
 ('2201802','22018','0','0','100','1','10000','14000','17000','21000','11','35871','1','0','0','0','0','0','0','0','0','0','Eclipsion Cavalier - Cast Spellbreaker'),
 ('2201803','22018','6','0','100','0','0','0','0','0','11','38311','1','7','0','0','0','0','0','0','0','0','Eclipsion Cavalier - Summon Eclipsion Hawkstrider on Death'),
+-- Asghar
+('2202501','22025','0','0','100','1','1000','2000','5000','5000','11','15496','0','0','0','0','0','0','0','0','0','0','Asghar - Cast Cleave'),
+('2202502','22025','2','0','100','1','50','0','6000','7000','11','16588','0','0','0','0','0','0','0','0','0','0','Asghar - Cast Dark Mending at 50% HP'),
 -- Illidari Mind Breaker
 ('2207401','22074','9','0','100','1','0','40','18000','26000','11','38985','4','0','0','0','0','0','0','0','0','0','Illidari Mind Breaker - Cast Focused Bursts'),
 ('2207402','22074','0','0','100','1','21000','35000','35000','48000','11','22884','0','0','0','0','0','0','0','0','0','0','Illidari Mind Breaker - Cast Psychic Scream'),
@@ -28228,6 +28245,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greater Fleshbeast
 ('1659601','16596','9','0','100','3','0','5','18000','21000','11','29935','0','1','0','0','0','0','0','0','0','0','Greater Fleshbeast - Cast Gaping Maw'),
 ('1659602','16596','0','0','100','3','5000','9000','7000','10000','11','29939','4','0','0','0','0','0','0','0','0','0','Greater Fleshbeast - Cast Infectious Poison'),
+-- Void Zone
+('1669701', '16697', '11', '0', '100', '0', '0', '0', '0', '0', '21', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Void Zone (Netherspite) - Do not move in combat'),
+('1669702', '16697', '11', '0', '100', '0', '0', '0', '0', '0', '11', '32250', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Void Zone (Netherspite) - Cast Consumption on Spawn')
 -- Ebonlocke (16806) - NSR
 -- Sebastian (16811) - NSR
 -- Barnes (16812) - npc_barnes
@@ -31570,6 +31590,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1439','Release the hounds!','0','1','0','19747','0'),
 ('-1440','Your father destroyed my children and left their bodies impaled upon the rocky blades at Dragon''s End. For this, you will die! Enough of this farce. Prepare to face my full wrath!','0','1','0','0','Baron Sablemane'),
 ('-1441','Baron Sablemane begins emanating immense power.','0','2','0','0', 'Baron Sablemane'),
+('-1459','Demon Hunter Supplicant begins intensely dodging incoming attacks.','0','2','0','0','Demon Hunter Supplicant'),
+('-1460','Who dares to interrupt my operations?','0','1','0','0','Nexus-Prince Razaan spawn'),
 ('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
 ('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
 ('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
