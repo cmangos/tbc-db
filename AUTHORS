@@ -7,7 +7,7 @@ which you can read from the file "LICENSE.mdown"
 * The authors are assigned to by git commit authorship information,
  listed within the git commit messages, or if forgotten before mentioned in the github comments related to a commit.
 
-* The most recent history can be checked at https://github.com/TBC-DB/Database
+* The most recent history can be checked at https://github.com/cmangos/tbc-db
 
 * Initially the code for this project was written by Dasblub in TBCDB Project for Mangos One Project but was reworked and Continued by X-Savior initially for Mangos One but later for CMaNGOS-TBC Project.
 
