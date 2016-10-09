@@ -23667,7 +23667,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bonechewer Ripper (3.0.3 Official Data - Normal Log Only)
 ('1728101','17281','1','0','100','7','10000','30000','20000','40000','5','15','0','0','0','0','0','0','0','0','0','0','Bonechewer Ripper - Random Emote OOC'),
 ('1728102','17281','0','0','100','7','700','1000','12000','19000','11','18501','0','0','1','-46','0','0','0','0','0','0','Bonechewer Ripper - Cast Enrage'),
-('1728103','17281','30','0','100','6','0','17478','0','0','11','30659','0','7','0','0','0','0','0','0','0','0','Bonechewer Ripper - Cast Fel Infusion on Recieve AI_EVENT_JUST_DIED From Bleeding Hollow Scryer'),
 -- Watchkeeper Gargolmar (17306) - boss_watchkeeper_gargolmar
 -- Vazruden the Herald (17307) - boss_vazruden_herald
 -- Omor the Unscarred (17308) - boss_omor_the_unscarred
@@ -23696,7 +23695,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1747807','17478','3','5','100','6','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bleeding Hollow Scryer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1747808','17478','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1747809','17478','0','0','100','7','6600','23500','17100','23800','11','30615','5','1','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Cast Fear'),
-('1747810','17478','6','0','100','6','0','0','0','0','45','0','50','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Send AI_EVENT_JUST_DIED on Death'),
+('1747810','17478','6','0','100','6','0','0','0','0','11','30659','0','1','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Cast Fel Infusion on Death'),
 -- Hellfire Sentry (3.0.3 Official Data - Normal Log Only)
 ('1751701','17517','0','0','100','7','1200','7900','20800','24100','11','30621','1','0','0','0','0','0','0','0','0','0','Hellfire Sentry - Cast Kidney Shot'),
 ('1751702','17517','6','0','100','6','0','0','0','0','34','2','4','0','0','0','0','0','0','0','0','0','Hellfire Sentry - Set Instance Data on Death'),
