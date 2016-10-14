@@ -11,3 +11,6 @@ INSERT INTO spell_chain VALUES
 (25488, 16344, 8026, 7, 0);
 
 
+UPDATE spell_affect SET SpellFamilyMask=0x0000000000200000 WHERE effectId = 1 AND entry=16266; -- proper elemental weapons mask for flametongue
+
+
