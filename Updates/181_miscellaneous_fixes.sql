@@ -26,4 +26,6 @@ UPDATE creature_template SET ModelId1=13069 WHERE entry = 21310; -- remove impli
 
 UPDATE dbscripts_on_creature_movement SET data_flags=data_flags|0x08 WHERE id=2130901 AND delay=1; -- make cast triggered to enable showing visual from channel
 
+UPDATE creature_template SET FactionAlliance=35,FactionHorde=35 WHERE entry=17435; -- set correct faction from wotlk-db
+
 
