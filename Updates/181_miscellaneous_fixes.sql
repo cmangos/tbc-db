@@ -28,4 +28,6 @@ UPDATE dbscripts_on_creature_movement SET data_flags=data_flags|0x08 WHERE id=21
 
 UPDATE creature_template SET FactionAlliance=35,FactionHorde=35 WHERE entry=17435; -- set correct faction from wotlk-db
 
+UPDATE quest_template SET ExclusiveGroup=0 WHERE entry=8280; -- remove exclusive group, the group is for prequests (one horde one ally)
+
 
