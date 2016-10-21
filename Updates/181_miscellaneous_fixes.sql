@@ -30,4 +30,6 @@ UPDATE creature_template SET FactionAlliance=35,FactionHorde=35 WHERE entry=1743
 
 UPDATE quest_template SET ExclusiveGroup=0 WHERE entry=8280; -- remove exclusive group, the group is for prequests (one horde one ally)
 
+UPDATE `creature` SET `position_x`=1924.63, `position_y`= 5574.76, `position_z`=273.122,modelid=0 WHERE  `guid`=74872; -- remove hacked positions when visual wasnt working
+
 
