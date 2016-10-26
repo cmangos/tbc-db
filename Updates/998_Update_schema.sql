@@ -386,4 +386,24 @@ DELETE FROM `spell_proc_event` WHERE `entry` IN (18096);
 INSERT INTO `spell_proc_event` VALUES
 (18096, 0x00,  5, 0x0000008000000060, 0x0000008000000060, 0x0000008000000060, 0x00051000, 0x00000000, 0.000000, 0.000000,  0);
 
+ALTER TABLE db_version CHANGE COLUMN required_s2332_01_mangos_more_spell_data required_s2334_01_mangos_flametongue bit;
+
+INSERT INTO spell_bonus_data VALUES('8026', '0.1', '0', '0', '0', 'Shaman - Flametongue Weapon Proc Rank 1');
+
+DELETE FROM spell_chain WHERE first_spell=8026;
+INSERT INTO spell_chain VALUES
+(8026, 0, 8026, 1, 0),
+(8028, 8026, 8026, 2, 0),
+(8029, 8028, 8026, 3, 0),
+(10445, 8029, 8026, 4, 0),
+(16343, 10445, 8026, 5, 0),
+(16344, 16343, 8026, 6, 0),
+(25488, 16344, 8026, 7, 0);
+
+ALTER TABLE db_version CHANGE COLUMN required_s2334_01_mangos_flametongue required_s2336_01_mangos_mangle bit;
+
+DELETE FROM `spell_threat` WHERE `entry` IN (33878, 33986, 33987);
+INSERT INTO `spell_threat` VALUES
+(33878,       0,  1.3,    0);
+
 
