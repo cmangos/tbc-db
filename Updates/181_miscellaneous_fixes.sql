@@ -56,4 +56,6 @@ UPDATE creature_template SET ExtraFlags = 64 WHERE entry IN (22474, 22475); -- U
 
 DELETE FROM gameobject WHERE id IN(103661); -- object spawned by script
 
+UPDATE gameobject_template SET data14=1 WHERE entry=103661; -- make trap search for friendlies
+
 
