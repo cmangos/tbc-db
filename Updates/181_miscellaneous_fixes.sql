@@ -63,4 +63,6 @@ UPDATE creature_template SET SkinningLootId = 0 WHERE Entry = 10717; -- remove s
 
 UPDATE quest_template SET RewRepFaction1=54, RewRepFaction2=47, RewRepValue1=25, RewRepValue2=25 WHERE entry IN (308); -- add back change done in wotlk
 
+UPDATE gameobject SET spawntimesecs=5 WHERE id IN(104564,104569,104574,104575); -- unify respawn timers
+
 
