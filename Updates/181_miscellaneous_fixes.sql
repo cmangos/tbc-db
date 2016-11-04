@@ -61,4 +61,6 @@ UPDATE gameobject_template SET data14=1 WHERE entry=103661; -- make trap search 
 UPDATE creature_template SET SkinningLootId = 0 WHERE Entry = 10717; -- remove skinning loot from Temporal Parasite
 
 
+UPDATE quest_template SET RewRepFaction1=54, RewRepFaction2=47, RewRepValue1=25, RewRepValue2=25 WHERE entry IN (308); -- add back change done in wotlk
+
 
