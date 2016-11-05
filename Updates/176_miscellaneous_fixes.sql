@@ -46,3 +46,6 @@ UPDATE creature_template SET FactionAlliance = 35, FactionHorde = 35 WHERE Entry
 -- Fix Chest of the Seven position
 UPDATE gameobject SET position_x = 1265.85, position_y = -285.098, position_z = -78.2193, orientation = 3.90954, rotation0 = 0, rotation1 = 0, rotation2 = -0.927183, rotation3 = 0.374608 WHERE id = 169243;
 
+DELETE FROM creature_equip_template WHERE entry = 155;
+INSERT INTO creature_equip_template VALUES (155, 2361, 0, 0); -- add missing Darkmoon Faire equipment template
+
