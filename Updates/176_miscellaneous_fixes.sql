@@ -36,3 +36,13 @@ INSERT INTO db_script_string VALUES
 -- CompleteScript for Helcular's Revenge (553)
 UPDATE quest_template SET CompleteScript = 553 WHERE entry = 553;
 
+
+
+-- Gloom'rel should start friendly, he has gossip which spawns object for quest The Spectral Chalice (4083) to learn spell Smelt Dark Iron (14891)
+-- Fixes "The Seven" encounter in BRD
+-- http://jira.vengeancewow.com/browse/TBC-1740
+-- http://jira.vengeancewow.com/browse/TBC-1933
+UPDATE creature_template SET FactionAlliance = 35, FactionHorde = 35 WHERE Entry IN (9034,9035,9036,9037,9038,9039);
+-- Fix Chest of the Seven position
+UPDATE gameobject SET position_x = 1265.85, position_y = -285.098, position_z = -78.2193, orientation = 3.90954, rotation0 = 0, rotation1 = 0, rotation2 = -0.927183, rotation3 = 0.374608 WHERE id = 169243;
+
