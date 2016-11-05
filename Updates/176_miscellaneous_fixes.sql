@@ -49,3 +49,6 @@ UPDATE gameobject SET position_x = 1265.85, position_y = -285.098, position_z = 
 DELETE FROM creature_equip_template WHERE entry = 155;
 INSERT INTO creature_equip_template VALUES (155, 2361, 0, 0); -- add missing Darkmoon Faire equipment template
 
+-- Ambassador Jerrikar (SMV rare spawn) fights nearby Illidari Overseer and Ashtongue Worker
+UPDATE creature_template SET FactionAlliance = 1813, FactionHorde = 1813 WHERE Entry = 18695;
+
