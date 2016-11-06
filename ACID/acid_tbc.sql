@@ -8608,6 +8608,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rory (11285) - NSR
 -- Magistrate Marduke (11286) - NSR
 -- Baker Masterson (11287) - NSR
+-- Darrowshire Poltergeist
+('1129601', '11296','11','0','100','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Darrowshire Poltergeist -  SET Passive State on Spawn'),  
+('1129602', '11296','11','0','100','32','0','0','0','0','1','-1482','-1483','-1484','1','-1485','-1486','-1487','1','-1488','0','0','Darrowshire Poltergeist - Random Say on Spawn'),
 -- Joseph Dirte (11316) - NSR
 -- Alexia Ironknife (11609) - NSR
 -- Kirsta Deepshadow (11610) - NSR
@@ -31667,7 +31670,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1475','Return to Kuros. I will bring him to Blood Watch.','0','0','0','17853','0'),
 ('-1476','%s falls unconscious.','0','2','0','17664','0'),
 ('-1477','Draenei filth will not last on this world...','0','0','0','17664','0'),
-('-1481','%s\'s physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!','0','2','0','2681','0');
+('-1481','%s\'s physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!','0','2','0','2681','0'),
+('-1482','The Light must prevail!','0','0','0','11296','0'),
+('-1483','Captain Redpath! How could you forsake us?','0','0','0','11296','0'),
+('-1484','End our suffering!','0','0','0','11296','0'),
+('-1485','Oh, Darrowshire! I would give a thousand lives for you!','0','0','0','11296','0'),
+('-1486','You must save him!','0','0','0','11296','0'),
+('-1487','I was devoured by Horgus! I can still feel his teeth upon me!','0','0','0','11296','0'),
+('-1488','Beware Marduk! Beware, or your strength will wither.','0','0','0','11296','0');
 
 
 -- =======================================================
