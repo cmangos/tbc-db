@@ -10598,7 +10598,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Admiral Odesyus (17240) - OOC CONVERSATION WITH "Cookie" McWeaksauce
 -- Priestess Kyleen Il'dinare (17241) - NSR
 -- Archaeologist Adamant Ironheart (17242) - NSR
--- Engineer "Spark" Overgrind (17243) - npc_engineer_spark_overgrind
+-- Engineer "Spark" Overgrind (note: Self Cast)
+('1724301','17243','30','0','100','33','5','17243','0','0','1','-1489','-1490','-1491','1','-1492','-1493','0','0','0','0','0','Engineer "Spark" Overgrind - Randomized Random Say on Receive AI Event A'),
 -- Alliance Axeman (17244) - NSR
 -- Blacksmith Calypso (17245) - NSR
 -- "Cookie" McWeaksauce (17246) - OOC CONVERSATION WITH Admiral Odesyus
@@ -31679,7 +31680,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1485','Oh, Darrowshire! I would give a thousand lives for you!','0','0','0','11296','0'),
 ('-1486','You must save him!','0','0','0','11296','0'),
 ('-1487','I was devoured by Horgus! I can still feel his teeth upon me!','0','0','0','11296','0'),
-('-1488','Beware Marduk! Beware, or your strength will wither.','0','0','0','11296','0');
+('-1488','Beware Marduk! Beware, or your strength will wither.','0','0','0','11296','0'),
+('-1489', 'Another one!','0','0','0','17243','71'),
+('-1490', 'Yes Master, all goes along as planned.','0','0','0','17243','71'),
+('-1491', 'A-ha! Found one!','0','0','0','17243','71'),
+('-1492', 'I wonder if you can really hear the ocean in these things.','0','0','0','17243','71'),
+('-1493', 'Oh that\'s a big one!','0','0','0','17243','71');
 
 
 -- =======================================================
