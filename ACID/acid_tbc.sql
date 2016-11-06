@@ -19393,6 +19393,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2207403','22074','9','0','100','1','0','30','12000','16000','11','17194','1','0','0','0','0','0','0','0','0','0','Illidari Mind Breaker - Cast Mind Blast'),
 -- Illidari Soldier
 ('2207501','22075','0','0','100','1','10000','14000','17000','21000','11','35871','1','0','0','0','0','0','0','0','0','0','Illidari Soldier - Cast Spellbreaker'),
+-- Spirit Hunter
+('2133201','21332','11','0','100','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Spirit Hunter - Set Defensive State on Spawn'),
 -- Mordenai
 ('2211301','22113','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Mordenai - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('2211302','22113','9','5','100','1','5','30','2200','2700','11','38372','1','0','40','2','0','0','0','0','0','0','Mordenai - Set Ranged Weapon Model and Cast Shoot'),
