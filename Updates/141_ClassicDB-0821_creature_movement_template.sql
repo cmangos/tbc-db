@@ -21,7 +21,6 @@ UPDATE `creature` SET `MovementType` = 2 WHERE `id` = 7795;
 UPDATE `creature_template` SET `MovementType` = 2 WHERE `Entry` = 7795;
 DELETE FROM `creature_movement_template` WHERE `entry` = 7795;
 INSERT INTO `creature_movement_template` VALUES
-INSERT INTO `creature_movement_template` VALUES
 (7795, 1, 1704.96, 1202.13, 9.24427, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (7795, 2, 1684.78, 1225.34, 8.87707, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (7795, 3, 1706.28, 1200.92, 9.22012, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
