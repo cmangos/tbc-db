@@ -36,9 +36,6 @@ For a full installation guide, please refer to [CMaNGOS installation instruction
 
 And if something goes wrong?
 ----------------------------
-The best way to submit an issue is to use the [TBC-DB Forums At:][1].
-
-
-[1]: http://udb.no-ip.org "UDB/TBC-DB Forums"
+The best way to submit an issue is to use tbc-db github.
 
 
