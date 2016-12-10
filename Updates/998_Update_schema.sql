@@ -406,4 +406,10 @@ DELETE FROM `spell_threat` WHERE `entry` IN (33878, 33986, 33987);
 INSERT INTO `spell_threat` VALUES
 (33878,       0,  1.3,    0);
 
+ALTER TABLE quest_template ADD COLUMN RequiredCondition INT(11) UNSIGNED NOT NULL DEFAULT 0 AFTER RequiredSkillValue;
+
+ALTER TABLE db_version CHANGE COLUMN required_s2336_01_mangos_mangle required_s2338_01_mangos_item_extraflags bit;
+
+UPDATE item_template SET extraFlags = 1 WHERE extraFlags != 0;
+
 
