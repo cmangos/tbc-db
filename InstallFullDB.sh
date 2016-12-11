@@ -247,6 +247,23 @@ then
   echo
   echo
 
+  # Apply dbc folder
+  echo "> Trying to apply $CORE_PATH/sql/base/dbc ..."
+  for f in "$CORE_PATH/sql/base/dbc/"*.sql
+  do
+    echo "    Appending DBC file update `basename $f` to database $DATABASE"
+    $MYSQL_COMMAND < $f
+    if [[ $? != 0 ]]
+    then
+      echo "ERROR: cannot apply $f"
+      exit 1
+    fi
+    
+  done
+  echo "  DBC datas successfully applied"
+  echo
+  echo
+
   # Apply scriptdev2.sql
   echo "> Trying to apply $CORE_PATH/sql/scriptdev2/scriptdev2.sql ..."
   $MYSQL_COMMAND < $CORE_PATH/sql/scriptdev2/scriptdev2.sql
