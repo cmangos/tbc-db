@@ -1,0 +1,53 @@
+-- ============================================
+-- Pyrewood Village Human/Worgen Implementation - Moved From Night Time Game Event to Specific Event (Should Be an Entire Standalone Event)
+-- ============================================
+DELETE FROM game_event_creature WHERE guid IN (17663,17905,17908,17910,17911,18220,18221,18235,18236,18237,18238,18239,18291,18306,18307,18309,18310,18350,18354,18355,18400,18404,18405,18407,18408,18409,18411,18413,18996,19002,19005,19007,19008,19012,19015,19019,19084,19219,19220,19222,19223,19224,19227,19228,19229,19316,19343);
+DELETE FROM game_event_creature_data WHERE guid IN (17663,17905,17908,17910,17911,18220,18221,18235,18236,18237,18238,18239,18291,18306,18307,18309,18310,18350,18354,18355,18400,18404,18405,18407,18408,18409,18411,18413,18996,19002,19005,19007,19008,19012,19015,19019,19084,19219,19220,19222,19223,19224,19227,19228,19229,19316,19343);
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('17663','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('17905','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('17908','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('17910','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('17911','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18220','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18221','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18235','3531','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18236','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18237','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18238','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18239','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18291','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18306','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18307','3529','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18309','3533','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18310','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18350','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18354','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18355','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18400','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18404','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18405','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18407','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18408','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18409','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18411','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18413','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('18996','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19002','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19005','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19007','1896','729','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19008','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19012','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19015','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19019','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19084','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19219','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19220','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19222','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19223','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19224','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19227','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19228','1893','564','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19229','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19316','1892','574','0','7671','7671','23');
+insert into `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) values('19343','1892','574','0','7671','7671','23');
+
