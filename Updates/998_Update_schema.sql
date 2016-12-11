@@ -412,4 +412,22 @@ ALTER TABLE db_version CHANGE COLUMN required_s2336_01_mangos_mangle required_s2
 
 UPDATE item_template SET extraFlags = 1 WHERE extraFlags != 0;
 
+ALTER TABLE db_version CHANGE COLUMN required_s2338_01_mangos_item_extraflags required_s2339_01_mangos_areatrigger_teleport_condition_id bit;
 
+ALTER TABLE areatrigger_teleport ADD COLUMN `condition_id` INT(11) unsigned NOT NULL default '0' AFTER target_orientation;
+
+ALTER TABLE db_version CHANGE COLUMN required_s2339_01_mangos_areatrigger_teleport_condition_id required_s2339_02_mangos_quest_template_RequiredCondition bit;
+
+ALTER TABLE quest_template ADD COLUMN RequiredCondition INT(11) UNSIGNED NOT NULL DEFAULT 0 AFTER RequiredSkillValue;
+
+ALTER TABLE db_version CHANGE COLUMN required_s2339_02_mangos_quest_template_RequiredCondition required_s2339_03_mangos_npc_trainer_conditon_id bit;
+
+ALTER TABLE npc_trainer ADD COLUMN `condition_id` INT(11) unsigned NOT NULL default '0' AFTER reqlevel;
+
+ALTER TABLE db_version CHANGE COLUMN required_s2339_03_mangos_npc_trainer_conditon_id required_s2339_04_mangos_npc_trainer_template_conditon_id bit;
+
+ALTER TABLE npc_trainer_template ADD COLUMN `condition_id` INT(11) unsigned NOT NULL default '0' AFTER reqlevel;
+
+ALTER TABLE db_version CHANGE COLUMN required_s2339_04_mangos_npc_trainer_template_conditon_id required_s2340_01_mangos_spell_template bit;
+
+DROP TABLE IF EXISTS `spell_template`;
