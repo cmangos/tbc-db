@@ -3356,7 +3356,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1527301','15273','8','0','100','0','28734','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Killed Credit for Sunstrider Mana Tap Counter'),
 ('1527302','15273','0','0','100','1','10100','16500','12700','24800','11','37361','1','0','0','0','0','0','0','0','0','0','Arcane Wraith - Cast Arcane Bolt'),
 -- Mana Wyrm (3.0.3 Official Data)
-('1527401','15274','8','0','100','0','28734','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Killed Credit for Sunstrider Mana Tap Counter'),
+('1527401','15274','8','0','100','0','28730','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Cast Quest Credit 8346 on Arcane Torrent Spellhit (Quest: 8346)'),
+('1527402','15274','8','0','100','0','25046','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Cast Quest Credit 8346 on Arcane Torrent Spellhit (Quest: 8346)'),
+('1527403','15274','0','0','75','1','12000','14000','56000','64000','11','25602','1','0','0','0','0','0','0','0','0','0','Mana Wyrm - cast Faerie Fire'),
 -- Magistrix Erona (15278) - NSR
 -- Julia Sunstriker (15279) - NSR
 -- Jesthenis Sunstriker (15280) - NSR
