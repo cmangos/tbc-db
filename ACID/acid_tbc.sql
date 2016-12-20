@@ -10541,7 +10541,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bristlelimb Ursa (17185) - NSR
 -- Deranged Owlbeast (17186) - NSR
 -- Aberrant Owlbeast
-('1718701','17187','0','0','100','1','8000','12000','8000','14000','11','31270','0','0','0','0','0','0','0','0','0','0','Aberrant Owlbeast - Cast Moonfire'),
+('1718701','17187','0','0','100','1','8000','12000','8000','14000','11','31270','1','0','0','0','0','0','0','0','0','0','Aberrant Owlbeast - Cast Moonfire'),
 -- Raving Owlbeast (3.3.3a Official Data)
 ('1718801','17188','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Raving Owlbeast - Cast Enrage at 30% HP'),
 -- Crazed Wildkin (17189) - NSR
