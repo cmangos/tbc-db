@@ -30634,7 +30634,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-107','Protect the innocent!','0','0','0','15638','0'),
 ('-108','Serve the Public Trust!','0','0','0','15638','0'),
 ('-109','Uphold the Law!','0','0','0','15638','0'),
-('-110','Take heart! Your friends will not long mourn your passing!','0','0','0','15638','0'),
+('-110','Take heart! Your friends will not long mourn your passing!','8506','0','0','15638','0'),
 ('-111','%s bursts, showering the area with arcane residue!','0','2','0','15648','0'),
 ('-112','Your world is ours now.','11056','1','0','17767','0'),
 ('-113','More, more, more!  I must feed soon.','0','0','10','Common Wretched Text','0'),
