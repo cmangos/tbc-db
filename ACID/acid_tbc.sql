@@ -3532,6 +3532,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1593805','15938','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Eversong Ranger - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1593806','15938','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Eversong Ranger - Flee at 15% HP (Phase 2)'),
 ('1593807','15938','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Eversong Ranger - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('1593808','15938','8','0','100','1','1243','-1','120000','120000','33','15938','6','0','0','0','0','0','0','0','0','0','Eversong Ranger - Gives Quest Credit on Power Word: Fortitude Spellhit (Quest: 9489)'),
+('1593809','15938','8','0','33','1','1243','-1','0','0','1','-1494','-1495','-1496','0','0','0','0','0','0','0','0','Eversong Ranger - 33% Chance to Say (Quest: 9489)'),
 -- Ranger Degolien (15939) - NSR
 -- Ranger Selron (15940) - NSR
 -- Apprentice Ralen (15941) - NSR
@@ -31685,7 +31687,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1490', 'Yes Master, all goes along as planned.','0','0','0','17243','71'),
 ('-1491', 'A-ha! Found one!','0','0','0','17243','71'),
 ('-1492', 'I wonder if you can really hear the ocean in these things.','0','0','0','17243','71'),
-('-1493', 'Oh that\'s a big one!','0','0','0','17243','71');
+('-1493', 'Oh that\'s a big one!','0','0','0','17243','71'),
+('-1494','Nothing can stop me now!','0','0','0','15938','0'),
+('-1495','Your faith guides me to victory.','0','0','0','15938','0'),
+('-1496','Thank you for the blessing, $n.','0','0','0','15938','0');
 
 
 -- =======================================================
