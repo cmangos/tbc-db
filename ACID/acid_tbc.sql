@@ -3475,7 +3475,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Withered Green Keeper (3.0.3 Official Data)
 ('1563701','15637','0','0','100','1','10200','11900','14100','25800','11','13584','1','0','0','0','0','0','0','0','0','0','Withered Green Keeper - Cast Strike'),
 -- Arcane Patroller (3.0.3 Official Data)
-('1563801','15638','4','0','15','0','0','0','0','0','1','-107','-108','-109','0','0','0','0','0','0','0','0','Arcane Patroller - Random Say on Aggro'),
+('1563801','15638','4','0','100','0','0','0','0','0','1','-107','-108','-109','0','0','0','0','0','0','0','0','Arcane Patroller - Random Say on Aggro'),
 -- Amani Axe Thrower (3.0.3 Official Data)
 ('1564101','15641','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Amani Axe Thrower - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1564102','15641','9','0','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Amani Axe Thrower - Cast Throw and Set Ranged Weapon Model'),
