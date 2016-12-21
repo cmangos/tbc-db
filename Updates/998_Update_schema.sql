@@ -423,3 +423,14 @@ ALTER TABLE db_version CHANGE COLUMN required_s2339_03_mangos_npc_trainer_condit
 ALTER TABLE db_version CHANGE COLUMN required_s2339_04_mangos_npc_trainer_template_conditon_id required_s2340_01_mangos_spell_template bit;
 
 DROP TABLE IF EXISTS `spell_template`;
+
+ALTER TABLE db_version CHANGE COLUMN required_s2340_01_mangos_spell_template required_s2341_01_mangos_game_event bit;
+
+ALTER TABLE game_event MODIFY start_time DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute start date, the event will never start before', MODIFY end_time DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute end date, the event will never start after';
+
+UPDATE game_event SET start_time='1970-01-01 00:00:00' WHERE start_time='0000-00-00 00:00:00';
+UPDATE game_event SET end_time='1970-01-01 00:00:00' WHERE end_time='0000-00-00 00:00:00';
+
+ALTER TABLE db_version CHANGE COLUMN required_s2341_01_mangos_game_event required_s2342_01_mangos_game_event_creature_data bit;
+
+ALTER TABLE db_version CHANGE COLUMN required_s2342_01_mangos_game_event_creature_data required_s2343_01_mangos_quest_template bit;
