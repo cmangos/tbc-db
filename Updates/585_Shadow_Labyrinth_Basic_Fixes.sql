@@ -7,7 +7,7 @@ UPDATE creature_template SET UnitFlags=570458880 WHERE entry IN (19224,20663);
 -- ===========================================
 -- Murmur Stats Fixes and Spawn Heroic Version
 -- ===========================================
-UPDATE Creature_Template SET UnitFlags=32832 WHERE entry IN (18708,20657);
+UPDATE creature_template SET UnitFlags=32832 WHERE entry IN (18708,20657);
 
 
 -- ================================================
