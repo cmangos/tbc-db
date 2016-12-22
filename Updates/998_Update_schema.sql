@@ -1,8 +1,8 @@
-ALTER TABLE db_version CHANGE COLUMN required_s2328_01_mangos_scriptdev2_tables required_s2329_01_mangos_creature_template bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2328_01_mangos_scriptdev2_tables` `required_s2329_01_mangos_creature_template` bit;
 
-ALTER TABLE creature_template ADD COLUMN SchoolImmuneMask INT(10) UNSIGNED DEFAULT 0 NOT NULL AFTER MechanicImmuneMask; 
+ALTER TABLE `creature_template` ADD COLUMN `SchoolImmuneMask` INT(10) UNSIGNED DEFAULT 0 NOT NULL AFTER `MechanicImmuneMask`;
 
-ALTER TABLE db_version CHANGE COLUMN required_s2329_01_mangos_creature_template required_s2330_01_mangos_spell_data bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2329_01_mangos_creature_template` `required_s2330_01_mangos_spell_data` bit;
 
 DELETE FROM `spell_bonus_data` WHERE `entry` IN (5570,33763,8921,8936,774,3044,1978,7268,7269,7270,8419,8418,10273,10274,25346,27076,38700,38703,11113,42208,42209,42210,42211,42212,42213,42198,120,31661,2120,44459,44461,1463,31935,26573,879,24275,20925,31803,2812,31893,32221,20424,20167,25742,14914,23455,23458,23459,27803,27804,27805,25329,585,34914,8042,8443,8504,8505,11310,11311,25538,25539,8050,10444,8026,8028,8029,10445,16343,16344,25488,8056,8034,5672,403,26364,26365,26366,26367,26369,26370,26363,26371, 26372,8188,10582,10583,10584,25551,3606,6350,6351,6352,10435,10436,25530,1949,5857,11681,11682,27214,348,42223,42224,42225,42226,42218,27243,30108);
 DELETE FROM `spell_bonus_data` WHERE `entry` IN (19503,34490,34120,1978,42243,7268,42208,543,2120,122,6143,11426,12654,1463,31935,20911,26573,25899,20925,2812,32220,20187,31893,32221,20424,25742,31803,44041,2944,32897,14914,23455,17,33619,139,28377,585,10797,2943,34914,26688,2818,32645,8680,13220,421,8042,10444,8056,8034,5672,403,26364,8187,3606,1949,5857,42223,27243,23722,40472,40471,40972,23687,22600,13897,28715,26170,20004,37661,11351,34587,45429,45428,45430,17484,45055,30564);
@@ -364,11 +364,13 @@ INSERT INTO `spell_threat` VALUES
 (33987,     232,    1,    0),
 (44041,       0,  0.5,    0);
 
-ALTER TABLE db_version CHANGE COLUMN required_s2330_01_mangos_spell_data required_s2331_01_mangos_event_linkedto BIT(1) NULL DEFAULT NULL;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2330_01_mangos_spell_data` `required_s2331_01_mangos_event_linkedto` BIT(1) NULL DEFAULT NULL;
 
-ALTER TABLE game_event ADD COLUMN linkedTo mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'This event starts only if defined LinkedTo event is started' AFTER holiday;
+UPDATE `game_event` SET `start_time` = '1970-01-01 00:00:01', `end_time` = '1970-01-01 00:00:01' WHERE `entry` IN (13, 17, 22, 33);
+ALTER TABLE `game_event` MODIFY `start_time` DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute start date, the event will never start before', MODIFY `end_time` DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute end date, the event will never start after';
+ALTER TABLE `game_event` ADD COLUMN `linkedTo` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'This event starts only if defined LinkedTo event is started' AFTER `holiday`;
 
-ALTER TABLE db_version CHANGE COLUMN required_s2331_01_mangos_event_linkedto required_s2332_01_mangos_more_spell_data bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2331_01_mangos_event_linkedto` `required_s2332_01_mangos_more_spell_data` bit;
 
 DELETE FROM `spell_bonus_data` WHERE `entry` IN (42463, 7001);
 INSERT INTO `spell_bonus_data` VALUES
@@ -386,12 +388,12 @@ DELETE FROM `spell_proc_event` WHERE `entry` IN (18096);
 INSERT INTO `spell_proc_event` VALUES
 (18096, 0x00,  5, 0x0000008000000060, 0x0000008000000060, 0x0000008000000060, 0x00051000, 0x00000000, 0.000000, 0.000000,  0);
 
-ALTER TABLE db_version CHANGE COLUMN required_s2332_01_mangos_more_spell_data required_s2334_01_mangos_flametongue bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2332_01_mangos_more_spell_data` `required_s2334_01_mangos_flametongue` bit;
 
-INSERT INTO spell_bonus_data VALUES('8026', '0.1', '0', '0', '0', 'Shaman - Flametongue Weapon Proc Rank 1');
+INSERT INTO `spell_bonus_data` VALUES('8026', '0.1', '0', '0', '0', 'Shaman - Flametongue Weapon Proc Rank 1');
 
-DELETE FROM spell_chain WHERE first_spell=8026;
-INSERT INTO spell_chain VALUES
+DELETE FROM `spell_chain` WHERE `first_spell`=8026;
+INSERT INTO `spell_chain` VALUES
 (8026, 0, 8026, 1, 0),
 (8028, 8026, 8026, 2, 0),
 (8029, 8028, 8026, 3, 0),
@@ -400,37 +402,32 @@ INSERT INTO spell_chain VALUES
 (16344, 16343, 8026, 6, 0),
 (25488, 16344, 8026, 7, 0);
 
-ALTER TABLE db_version CHANGE COLUMN required_s2334_01_mangos_flametongue required_s2336_01_mangos_mangle bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2334_01_mangos_flametongue` `required_s2336_01_mangos_mangle` bit;
 
 DELETE FROM `spell_threat` WHERE `entry` IN (33878, 33986, 33987);
 INSERT INTO `spell_threat` VALUES
 (33878,       0,  1.3,    0);
 
-ALTER TABLE db_version CHANGE COLUMN required_s2336_01_mangos_mangle required_s2338_01_mangos_item_extraflags bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2336_01_mangos_mangle` `required_s2338_01_mangos_item_extraflags` bit;
 
-UPDATE item_template SET extraFlags = 1 WHERE extraFlags != 0;
+UPDATE `item_template` SET `extraFlags` = 1 WHERE `extraFlags` != 0;
 
-ALTER TABLE db_version CHANGE COLUMN required_s2338_01_mangos_item_extraflags required_s2339_01_mangos_areatrigger_teleport_condition_id bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2338_01_mangos_item_extraflags` `required_s2339_01_mangos_areatrigger_teleport_condition_id` bit;
 
-ALTER TABLE db_version CHANGE COLUMN required_s2339_01_mangos_areatrigger_teleport_condition_id required_s2339_02_mangos_quest_template_RequiredCondition bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2339_01_mangos_areatrigger_teleport_condition_id` `required_s2339_02_mangos_quest_template_RequiredCondition` bit;
 
-ALTER TABLE quest_template ADD COLUMN RequiredCondition INT(11) UNSIGNED NOT NULL DEFAULT 0 AFTER RequiredSkillValue;
+ALTER TABLE `quest_template` ADD COLUMN `RequiredCondition` INT(11) UNSIGNED NOT NULL DEFAULT 0 AFTER `RequiredSkillValue`;
 
-ALTER TABLE db_version CHANGE COLUMN required_s2339_02_mangos_quest_template_RequiredCondition required_s2339_03_mangos_npc_trainer_conditon_id bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2339_02_mangos_quest_template_RequiredCondition` `required_s2339_03_mangos_npc_trainer_conditon_id` bit;
 
-ALTER TABLE db_version CHANGE COLUMN required_s2339_03_mangos_npc_trainer_conditon_id required_s2339_04_mangos_npc_trainer_template_conditon_id bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2339_03_mangos_npc_trainer_conditon_id` `required_s2339_04_mangos_npc_trainer_template_conditon_id` bit;
 
-ALTER TABLE db_version CHANGE COLUMN required_s2339_04_mangos_npc_trainer_template_conditon_id required_s2340_01_mangos_spell_template bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2339_04_mangos_npc_trainer_template_conditon_id` `required_s2340_01_mangos_spell_template` bit;
 
 DROP TABLE IF EXISTS `spell_template`;
 
-ALTER TABLE db_version CHANGE COLUMN required_s2340_01_mangos_spell_template required_s2341_01_mangos_game_event bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2340_01_mangos_spell_template` `required_s2341_01_mangos_game_event` bit;
 
-ALTER TABLE game_event MODIFY start_time DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute start date, the event will never start before', MODIFY end_time DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute end date, the event will never start after';
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2341_01_mangos_game_event` `required_s2342_01_mangos_game_event_creature_data` bit;
 
-UPDATE game_event SET start_time='1970-01-01 00:00:00' WHERE start_time='0000-00-00 00:00:00';
-UPDATE game_event SET end_time='1970-01-01 00:00:00' WHERE end_time='0000-00-00 00:00:00';
-
-ALTER TABLE db_version CHANGE COLUMN required_s2341_01_mangos_game_event required_s2342_01_mangos_game_event_creature_data bit;
-
-ALTER TABLE db_version CHANGE COLUMN required_s2342_01_mangos_game_event_creature_data required_s2343_01_mangos_quest_template bit;
+ALTER TABLE `db_version` CHANGE COLUMN `required_s2342_01_mangos_game_event_creature_data` `required_s2343_01_mangos_quest_template` bit;
