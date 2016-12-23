@@ -9,7 +9,7 @@
 DELETE FROM gossip_menu WHERE entry=19606;
 INSERT INTO gossip_menu VALUES(19606,9853,0,0); -- add missing gossip menu
 DELETE FROM gossip_menu_option WHERE menu_id=19606 and id=0;
-INSERT INTO gossip_menu_option VALUES(19606,0,0,'Grek, will you try out this new weapon oil Rakoria made?',1,1,-1,1,10201,0,0,'',601,0); -- add missing gossip menu option
+INSERT INTO gossip_menu_option VALUES(19606,0,0,'Grek, will you try out this new weapon oil Rakoria made?',1,1,-1,1,10201,0,0,'',601); -- add missing gossip menu option
 DELETE FROM conditions WHERE condition_entry=601;
 INSERT INTO conditions VALUES(601,9,10201,0); -- condition to show gossip option when on quest
 
