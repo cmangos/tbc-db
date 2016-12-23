@@ -17588,7 +17588,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lesser Wrath Hound
 ('2249901','22499','9','0','100','1','0','5','6000','10000','11','36406','0','0','0','0','0','0','0','0','0','0','Lesser Wrath Hound - Cast Double Breath'),
 -- Vim'gol the Vile 
-('2291101','22911','6','0','100','0','0','0','0','0','11','39862','0','7','0','0','0','0','0','0','0','0','Vim\'gol the Vile - Cast Summon Vim\'gol\'s Vile Grimoire Chest on Death (Quest: 10998)'),
 -- Bash'ir Surveyor
 ('2315301','23153','0','0','100','1','18000','28000','21000','29000','11','40835','4','0','0','0','0','0','0','0','0','0','Bash\'ir Surveyor - Cast Stasis Field'),
 ('2315302','23153','0','0','100','1','12000','18000','18000','31000','11','40881','1','0','0','0','0','0','0','0','0','0','Bash\'ir Surveyor - Cast Arcane Blast'),
