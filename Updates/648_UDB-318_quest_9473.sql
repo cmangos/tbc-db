@@ -30,7 +30,7 @@ INSERT INTO db_script_string (entry, content_default, sound, type, language, emo
 (2000000657,'%s groans.',0,2,0,0,NULL),
 (2000000658,'%s sits up.',0,2,0,0,NULL),
 (2000000659,'Whe... Where am I? What... What is this place?',0,0,0,5,NULL),
-(2000000660,'BY THE LIGHT OF ELUNE! Eredar! Cursed demons, what have you to me? I have not come alone, we will fight you as we have in the past! I...',0,0,0,6,NULL),
+(2000000660,'BY THE LIGHT OF ELUNE! Eredar! Cursed demons, what have you done to me? I have not come alone, we will fight you as we have in the past! I...',0,0,0,6,NULL),
 (2000000661,'%s falls back into a coma.',0,2,0,0,NULL);
 
 
