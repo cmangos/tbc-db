@@ -19229,7 +19229,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2108001','21080','4','0','100','0','0','0','0','0','3','19759','0','0','0','0','0','0','0','0','0','0','Dormant Infernal - Morph into Newly Crafted Infernal on Aggro'),
 ('2108002','21080','1','0','100','0','0','0','0','0','3','0','0','0','0','0','0','0','0','0','0','0','Dormant Infernal - Demorph on OCC'),
 -- Cyrukh the Firelord
-('2118101','21181','11','0','100','0','0','0','0','0','11','36329','0','0','1','-175','0','0','0','0','0','0','Cyrukh the Firelord - Cast Cyrukh Fire Kit and Yell on Spawn'),
+('2118101','21181','11','0','100','0','0','0','0','0','11','36329','0','0','1','-174','-175','0','0','0','0','0','Cyrukh the Firelord - Cast Cyrukh Fire Kit and Yell on Spawn'),
 ('2118102','21181','4','0','100','0','0','0','0','0','1','-176','0','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Yell on Aggro'),
 ('2118103','21181','9','0','100','1','0','30','14000','18000','11','39429','8','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Cast Fel Flamestrike'),
 ('2118104','21181','9','0','100','1','0','5','16000','24000','11','18945','1','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Cast Knock Away'),
@@ -30701,8 +30701,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-171','Lapdogs, all of you!','5782','1','0','639','0'),
 ('-172','Fools! Our cause is righteous!','5783','1','0','639','0'),
 ('-173','The Brotherhood shall prevail!','5784','1','0','639','0'),
--- (-174 PLEASE RE-USE)
-('-175','You will suffer eternally!','0','1','0','21181','0'),
+('-174','Come, mortals, face the lord of fire!','0','1','0','Cyrukh - YELL 1','0'),
+('-175','You will suffer eternally!','0','1','0','Cyrukh - YELL 2','0'),
 ('-176','Little creature made of flesh, your wish is granted! Death comes for you!','0','1','0','21181','0'),
 ('-177','I\'m going to wear your skin as a smoking jacket! The stogies? You\'ll have to pry them from my cold dead... er... RAWR!!!!','0','0','0','11058','0'),
 ('-178','Looking for these???? You\'ll never have em!','0','0','0','11058','0'),
