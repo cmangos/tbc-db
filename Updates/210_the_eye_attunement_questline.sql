@@ -39,4 +39,30 @@ INSERT INTO db_script_string(entry, content_default, sound, type, language, emot
 (2000006092,'%s lets loose the most foul belch ever heard or smelled.',0,2,0,0,'Tobias - EMOTE 2'),
 (2000006093,'Ok then, back to business.',0,0,0,1,'Tobias - SAY 2');
 
+-- The Shadowmoon Shuffle 10576
+UPDATE creature_loot_template SET ChanceOrQuestChance=-25 WHERE item=30640 AND entry IN(19792,19796,19806);
+UPDATE creature_loot_template SET ChanceOrQuestChance=-5 WHERE item=30640 AND entry IN(19795);
+
+-- What Illidan wants Illidan gets 10577
+UPDATE gossip_menu_option SET action_script_id=8341 WHERE menu_id=8341 AND id=0;
+DELETE FROM dbscripts_on_gossip WHERE id=8340;
+INSERT INTO dbscripts_on_gossip(id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(8341,0,0,0,0,21639,75468,16,2000006094,0,0,0,0,0,0,0,'Ilidan Slayer - Play emote'),
+(8341,1,3,0,0,21639,75468,16,0,0,0,0,-4579.364,1671.540,175.868,3.371,'Ilidan Slayer - Move behind player'),
+(8341,1,3,0,0,21639,75469,16,0,0,0,0,-4579.287,1667.287,175.849,2.513,'Ilidan Slayer - Move behind player');
+DELETE FROM db_script_string WHERE entry IN(2000006094);
+INSERT INTO db_script_string(entry, content_default, sound, type, language, emote, comment) VALUES
+(2000006094,'%s moves in behind you with his axe at the ready.',0,2,0,0,'Ilidan Slayer - emote');
+DELETE FROM dbscripts_on_gossip WHERE id=8338;
+INSERT INTO dbscripts_on_gossip(id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(8338, 0, 7, 10577, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'quest 10577 complete'),
+(8338,1,3,0,0,21639,75468,16,0,0,0,0,-4578.17,1674.25,176.243,0,'Ilidan Slayer - Move home'),
+(8338,1,3,0,0,21639,75469,16,0,0,0,0,-4578.82,1664.22,176.243,0.296706,'Ilidan Slayer - Move home');
+
+-- The Cipher of Damnation 10588
+UPDATE creature_template SET MinLevel=70,MaxLevel=70 WHERE entry IN(21685,21687,21686);
+UPDATE creature_template SET MinLevelHealth=20250,MaxLevelHealth=20250 WHERE entry=21685;
+UPDATE creature_template SET MinLevelHealth=16200,MaxLevelHealth=16200 WHERE entry=21686;
+UPDATE creature_template SET MinLevelHealth=55888,MaxLevelHealth=55888 WHERE entry=21687;
+
 
