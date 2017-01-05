@@ -1,4 +1,5 @@
 UPDATE db_script_string SET type=2 WHERE entry IN(2000005492,2000005496); -- fix merge mistake
+UPDATE creature_template SET NpcFlags=2, UnitFlags=768, FactionAlliance=35, FactionHorde=35 WHERE entry in(21073,21097,21109,21116); -- fix attackability
 
 -- Demonic Crystal Prisons 10528
 
