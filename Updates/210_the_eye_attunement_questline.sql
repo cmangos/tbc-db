@@ -1,5 +1,11 @@
 UPDATE db_script_string SET type=2 WHERE entry IN(2000005492,2000005496); -- fix merge mistake
 UPDATE creature_template SET NpcFlags=2, UnitFlags=768, FactionAlliance=35, FactionHorde=35 WHERE entry in(21073,21097,21109,21116); -- fix attackability
+DELETE FROM spell_script_target WHERE entry IN(36035); -- target only enraged spirits
+INSERT INTO spell_script_target VALUES
+(36035,1,21050,0),
+(36035,1,21061,0),
+(36035,1,21059,0),
+(36035,1,21060,0);
 
 -- Demonic Crystal Prisons 10528
 
