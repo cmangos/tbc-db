@@ -11,10 +11,10 @@ INSERT INTO `item_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`groupid`
 (30650,30653,100,3,1,1), -- Dertrok's Third Wand
 (30650,30654,100,4,1,1); -- Dertrok's Fourth Wand
 
-UPDATE creature_loot_template SET ChanceOrQuestChance=-30 WHERE entry=19982; -- adjust drop chances for quest item
-UPDATE creature_loot_template SET ChanceOrQuestChance=-30 WHERE entry=19983;
-UPDATE creature_loot_template SET ChanceOrQuestChance=-25 WHERE entry=19984;
-UPDATE creature_loot_template SET ChanceOrQuestChance=-10 WHERE entry=20161;
+UPDATE creature_loot_template SET ChanceOrQuestChance=-30 WHERE entry=19982 AND item=30655; -- adjust drop chances for quest item
+UPDATE creature_loot_template SET ChanceOrQuestChance=-30 WHERE entry=19983 AND item=30655;
+UPDATE creature_loot_template SET ChanceOrQuestChance=-25 WHERE entry=19984 AND item=30655;
+UPDATE creature_loot_template SET ChanceOrQuestChance=-10 WHERE entry=20161 AND item=30655;
 
 UPDATE quest_template SET ReqSourceId1=30655,ReqSourceCount1=4 WHERE entry=10566; -- make item drop during quest
 
