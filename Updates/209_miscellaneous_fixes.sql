@@ -4,4 +4,6 @@ UPDATE creature_loot_template SET ChanceOrQuestChance=1 WHERE entry=16152 AND it
 
 UPDATE creature_template SET SchoolImmuneMask=4,ResistanceFire=0,MechanicImmuneMask=16 WHERE entry IN(6073); -- searing infernal, immune to fire, immune to fear
 
+UPDATE quest_template SET SpecialFlags=0 WHERE entry IN(5056); -- quest should not require external event
+
 
