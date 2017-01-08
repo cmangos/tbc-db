@@ -6,4 +6,6 @@ UPDATE creature_template SET SchoolImmuneMask=4,ResistanceFire=0,MechanicImmuneM
 
 UPDATE quest_template SET SpecialFlags=0 WHERE entry IN(5056); -- quest should not require external event
 
+UPDATE quest_template SET MinLevel=47 WHERE entry IN(3941,3942); -- mid questline wrong minlevel
+
 
