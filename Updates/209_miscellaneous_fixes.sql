@@ -23,3 +23,5 @@ DELETE FROM npc_text WHERE id IN(17880);
 INSERT INTO npc_text VALUES
 ('17880', 'This teleporter will transport you to Grom''gol in Northern Stranglethorn.$B$BUsually.$B$BI mean, sometimes it''ll just disintegrate you, or reduce all your soft tissues into a greenish, foul-smelling mist, but mostly it''s safe!$B$B...mostly.', '', '0', '100', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0', '0', '0', '0', '0', '0', '0', '0');
 
+UPDATE gameobject_template SET data5=1 WHERE entry in(177243,177365,177366,177367,177368,177369,177397,177398,177399,177400); -- should despawn after usage
+
