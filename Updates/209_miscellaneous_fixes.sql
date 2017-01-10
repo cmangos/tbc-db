@@ -25,3 +25,7 @@ INSERT INTO npc_text VALUES
 
 UPDATE gameobject_template SET data5=1 WHERE entry in(177243,177365,177366,177367,177368,177369,177397,177398,177399,177400); -- should despawn after usage
 
+DELETE FROM npc_vendor WHERE entry=3348 AND item=5642;
+INSERT INTO npc_vendor VALUES -- horde NPC was missing this TBC-530
+('3348', '5642', '0', '0', '0', '0', 'Recipe: Free Action Potion');
+
