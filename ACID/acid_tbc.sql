@@ -23896,6 +23896,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1669901','16699','9','0','100','7','0','5','5000','9000','11','15496','1','0','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Cast Cleave'),
 ('1669902','16699','0','0','100','7','8000','12000','9000','13000','11','30471','1','1','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Cast Uppercut'),
 ('1669903','16699','2','0','100','7','30','0','120000','120000','11','30485','0','1','1','-106','0','0','0','0','0','0','Shattered Hand Reaver - Cast Enrage at 30% HP'),
+-- Shattered Hand Legionnaire
+('1670001','16700','2','0','100','6','30','0','0','0','11','30485','0','0','0','0','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Enrage on 30% HP'),
+('1670002','16700','13','0','100','7','15000','15000','0','0','11','15615','1','0','0','0','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Pummel on target casting'),
 -- Shattered Hand Sharpshooter
 ('1670401','16704','4','0','100','6','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Shattered Hand Sharpshooter - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1670402','16704','9','0','100','3','5','30','2300','5000','11','15620','1','0','40','2','0','0','0','0','0','0','Shattered Hand Sharpshooter (Normal) - Cast Shoot and Set Ranged Weapon Model'),
@@ -23922,6 +23925,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1742704','17427','9','0','100','7','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Archer - Enable Dynamic Movement at 9-80 Yards'),
 ('1742705','17427','9','0','100','7','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Shattered Hand Archer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1742706','17427','7','0','100','6','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Archer - Set Melee Weapon Model on Evade'),
+-- Shattered Hand Blood Guard
+('1746101','17461','4','0','100','6','0','0','0','0','34','4','4','0','0','0','0','0','0','0','0','0','Shattered Hand Blood Guard - End Gauntlet on aggro'),
+('1746102','17461','6','0','100','6','0','0','0','0','34','4','3','0','0','0','0','0','0','0','0','0','Shattered Hand Blood Guard - Finish Gauntlet on death'),
+('1746103','17461','7','0','100','6','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Shattered Hand Blood Guard - Fail Gauntlet on evade'),
 -- Shattered Hand Zealot
 ('1746201','17462','9','0','100','7','0','5','10000','13000','11','30989','1','0','0','0','0','0','0','0','0','0','Shattered Hand Zealot - Cast Hamstring'),
 -- Shattered Hand Gladiator
@@ -23989,7 +23996,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1769501','17695','1','0','100','6','1000','1000','0','0','11','30991','0','0','0','0','0','0','0','0','0','0','Shattered Hand Assassin - Cast Stealth on Spawn'),
 ('1769502','17695','0','0','100','7','2000','4000','4500','6500','11','30992','1','0','0','0','0','0','0','0','0','0','Shattered Hand Assassin - Cast Backstab'),
 -- Blood Guard Porung
-('2092301','20923','9','0','100','5','0','5','7000','10000','11','15496','1','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Cast Cleave (Heroic)');
+('2092301','20923','9','0','100','5','0','5','7000','10000','11','15496','1','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Cast Cleave (Heroic)'),
+('2092302','20923','4','0','100','6','0','0','0','0','34','4','4','0','0','0','0','0','0','0','0','0','Blood Guard Porung - End Gauntlet on aggro'),
+('2092303','20923','6','0','100','6','0','0','0','0','34','4','3','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Finish Gauntlet on death'),
+('2092304','20923','7','0','100','6','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Fail Gauntlet on evade');
 
 
 
