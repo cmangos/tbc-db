@@ -29,3 +29,6 @@ DELETE FROM npc_vendor WHERE entry=3348 AND item=5642;
 INSERT INTO npc_vendor VALUES -- horde NPC was missing this TBC-530
 ('3348', '5642', '0', '0', '0', '0', 'Recipe: Free Action Potion');
 
+-- Nightbane immune to interrupt and silence
+UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask|(33554432+256) WHERE entry=17225;
+
