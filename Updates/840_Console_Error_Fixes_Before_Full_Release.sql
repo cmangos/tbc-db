@@ -98,6 +98,8 @@ insert into `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 -- ===========================
 -- Updated Game Event Schedule
 -- ===========================
+ALTER TABLE `game_event` MODIFY `start_time` DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute start date, the event will never start before', MODIFY `end_time` DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute end date, the event will never start after';
+
 TRUNCATE game_event;
 INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`) VALUES
 ('1','2012-06-21 02:00:00','2020-12-31 00:00:00','525600','20160','341','Midsummer Fire Festival'), -- Occurrence: 525600
@@ -110,15 +112,15 @@ INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `lengt
 ('10','2012-04-29 02:00:00','2020-12-31 00:00:00','525600','10080','201','Children\'s Week '), -- Occurrence: 525600
 ('11','2012-09-24 02:00:00','2020-12-31 00:00:00','525600','10080','321','Harvest Festival'),
 ('12','2012-10-18 02:00:00','2020-12-31 00:00:00','525600','20160','324','Hallow\'s End'), -- Occurrence: 525600
-('13','0000-00-00 00:00:00','0000-00-00 00:00:00','525600','1','0','Elemental Invasions'), -- Occurrence: 525600
+('13','1970-01-01 00:00:00','1970-01-01 00:00:00','525600','1','0','Elemental Invasions'), -- Occurrence: 525600
 
 ('16','2007-08-04 14:00:00','2020-12-31 00:00:00','180','120','0','Gurubashi Arena Booty Run'),
-('17','0000-00-00 00:00:00','0000-00-00 00:00:00','525600','1','0','Scourge Invasion'), -- Occurrence: 525600
+('17','1970-01-01 00:00:00','1970-01-01 00:00:00','525600','1','0','Scourge Invasion'), -- Occurrence: 525600
 ('18','2011-01-14 02:00:00','2020-12-31 00:00:00','5760','5760','283','Call to Arms: Alterac Valley!'), -- Occurrence: 5760
 ('19','2011-01-21 02:00:00','2020-12-31 00:00:00','5760','5760','284','Call to Arms: Warsong Gulch!'), -- Occurrence: 5760
 ('20','2011-01-28 02:00:00','2020-12-31 00:00:00','5760','5760','285','Call to Arms: Arathi Basin!'), -- Occurrence: 5760
 ('21','2010-01-07 02:00:00','2020-12-31 00:00:00','5760','5760','353','Call to Arms: Eye of the Storm!'), -- Occurrence: 5760
-('22','0000-00-00 00:00:00','0000-00-00 00:00:00','525600','1','0','AQ War Effort'), -- Occurrence: 525600
+('22','1970-01-01 00:00:00','1970-01-01 00:00:00','525600','1','0','AQ War Effort'), -- Occurrence: 525600
 ('23','2011-01-01 21:00:00','2020-12-31 00:00:00','1440','510','0','Pyrewood Village - Night Time Scourge Curse'),
 ('24','2011-01-01 00:58:00','2020-12-31 00:00:00','30','10','0','Stormwind City - Stockades Jail Break'),
 
@@ -129,7 +131,7 @@ INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `lengt
 ('30','2011-01-10 21:00:00','2020-12-31 00:00:00','86400','21600','0','Zul\'Gurub - Edge of Madness (Hazza\'rah)'),
 ('31','2011-01-24 21:00:00','2020-12-31 00:00:00','86400','21600','0','Zul\'Gurub - Edge of Madness (Renataki)'),
 ('32','2010-12-13 21:00:00','2020-12-31 00:00:00','86400','21600','0','Zul\'Gurub - Edge of Madness (Wushoolay)'),
-('33','0000-00-00 00:00:00','0000-00-00 00:00:00','5184000','2592000','0','Arena Tournament'),
+('33','1970-01-01 00:00:00','1970-01-01 00:00:00','5184000','2592000','0','Arena Tournament'),
 ('34','2009-01-04 10:00:00','2020-12-31 00:00:00','10080','240','0','Stranglethorn Fishing Extravaganza - Announce'),
 ('35','2009-01-04 14:00:00','2020-12-31 00:00:00','10080','120','301','Stranglethorn Fishing Extravaganza'),
 ('36','2009-01-04 14:00:00','2020-12-31 00:00:00','10080','180','0','Stranglethorn Fishing Extravaganza - Turn-in'),
