@@ -59,3 +59,6 @@ INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_id,
 ('5347', '0', '0', 'Please tell me more about Zaetar.', '1', '1', '5346', '0', '0', '0', '0', NULL, '0'),
 ('5349', '0', '0', 'Please tell me more about Maraudon', '1', '1', '5347', '0', '0', '0', '0', NULL, '0');
 
+
+DELETE FROM creature_loot_template WHERE entry IN(22323) AND item IN(22577); -- remove mote of shadow drop from incandescent fel spark
+
