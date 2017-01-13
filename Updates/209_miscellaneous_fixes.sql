@@ -76,4 +76,5 @@ UPDATE creature_loot_template SET ChanceOrQuestChance=20,condition_id=1148 WHERE
 -- need to point to Cooking Trainer not Ench Trainer
 UPDATE gossip_menu_option SET action_poi_id=42 WHERE menu_id=421 AND id=2;
 
+UPDATE creature SET spawntimesecs=28800 WHERE id IN(521); -- make Lupos much rarer
 
