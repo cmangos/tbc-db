@@ -73,3 +73,7 @@ INSERT INTO conditions VALUES
 (1148,-1,1146,1147);
 UPDATE creature_loot_template SET ChanceOrQuestChance=20,condition_id=1148 WHERE item=23797;
 
+-- need to point to Cooking Trainer not Ench Trainer
+UPDATE gossip_menu_option SET action_poi_id=42 WHERE menu_id=421 AND id=2;
+
+
