@@ -64,3 +64,12 @@ DELETE FROM creature_loot_template WHERE entry IN(22323) AND item IN(22577); -- 
 
 DELETE FROM creature WHERE id IN(17853); -- spawned by script - Tracker of the Hand
 
+-- Fix drop chance and make it not drop when you have it or quest taken/completed
+DELETE FROM conditions WHERE condition_entry IN(1145,1146,1147,1148);
+INSERT INTO conditions VALUES
+(1145,19,9535,0),
+(1146,-1,3,1145),
+(1147,16,23797,1),
+(1148,-1,1146,1147);
+UPDATE creature_loot_template SET ChanceOrQuestChance=20,condition_id=1148 WHERE item=23797;
+
