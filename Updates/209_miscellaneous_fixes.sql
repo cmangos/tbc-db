@@ -62,3 +62,5 @@ INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_id,
 
 DELETE FROM creature_loot_template WHERE entry IN(22323) AND item IN(22577); -- remove mote of shadow drop from incandescent fel spark
 
+DELETE FROM creature WHERE id IN(17853); -- spawned by script - Tracker of the Hand
+
