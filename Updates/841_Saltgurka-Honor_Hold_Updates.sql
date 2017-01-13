@@ -7,6 +7,13 @@ INSERT INTO `creature_ai_scripts` VALUES
 ('1682501','16825','1','0','100','1','3000','10000','3000','10000','5','92','0','0','0','0','0','0','0','0','0','0','Father Malgor Devidicus - Drink emote'); -- 46583
 
 -- ----------------------------------------------------------
+-- Honor Hold Defenders
+-- ----------------------------------------------------------
+-- Update EquipmentTemplate for all Honor Hold Defenders. Entry 20513 (the two guards next to the destroyed keep) had the correct ones, all others were wrong for some reason.
+UPDATE `creature_template` SET `EquipmentTemplateId`=1195 WHERE `entry`=16842;
+
+
+-- ----------------------------------------------------------
 -- Magus Filinthus
 -- ----------------------------------------------------------
 
