@@ -1,4 +1,12 @@
 -- ----------------------------------------------------------
+-- Father Malgor Devidicus - Drink emote
+-- ----------------------------------------------------------
+UPDATE `creature_template` SET `AIName`='EventAI' WHERE `entry`=16825;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=16825;
+INSERT INTO `creature_ai_scripts` VALUES
+('1682501','16825','1','0','100','1','3000','10000','3000','10000','5','92','0','0','0','0','0','0','0','0','0','0','Father Malgor Devidicus - Drink emote'); -- 46583
+
+-- ----------------------------------------------------------
 -- Magus Filinthus
 -- ----------------------------------------------------------
 
