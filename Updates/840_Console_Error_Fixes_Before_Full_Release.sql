@@ -98,9 +98,8 @@ insert into `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 -- ===========================
 -- Updated Game Event Schedule
 -- ===========================
-ALTER TABLE `game_event` MODIFY `start_time` DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute start date, the event will never start before', MODIFY `end_time` DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute end date, the event will never start after';
-
 TRUNCATE game_event;
+ALTER TABLE `game_event` MODIFY `start_time` DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute start date, the event will never start before', MODIFY `end_time` DATETIME NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT 'Absolute end date, the event will never start after';
 INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`) VALUES
 ('1','2012-06-21 02:00:00','2020-12-31 00:00:00','525600','20160','341','Midsummer Fire Festival'), -- Occurrence: 525600
 ('2','2012-12-15 08:00:00','2020-12-31 00:00:00','525600','25920','141','Feast of Winter Veil - Main Event'), -- Occurrence: 525600
