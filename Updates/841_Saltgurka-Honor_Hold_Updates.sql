@@ -377,6 +377,90 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@GUID,@POINT := @POINT + '1',-648.031433,2770.963623,104.529289,0,0);
 
 -- ----------------------------------------------------------
+-- Stormwind cavalrymen
+-- Two issues here:
+-- 1. The cavalrymen should be "running". They are currently set to walkspeed because of issues with the linking system at very high movement speeds. 
+--    (Last cavalryman glitching and falling far behind)
+--
+-- 2. Due to what I assume is a flaw in the linking system, the member creatures do not evade after combat, they instantly start following their master again
+--    This means they will stay unmounted, so the only workaround I can think of is an OoC timer.
+-- ----------------------------------------------------------
+
+DELETE FROM `creature_linking` WHERE `master_guid`=57965;
+INSERT INTO `creature_linking` (`master_guid`,`guid`,`flag`)VALUES
+(57965,57966,1539),
+(57965,57967,1539),
+(57965,57968,1539);
+
+-- Creature id: 16843
+UPDATE creature_template SET AIName='EventAI' WHERE entry=16843;
+DELETE FROM creature_ai_scripts WHERE creature_id=16843;
+INSERT INTO creature_ai_scripts VALUES 
+('1684301','16843','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Stormwind Cavalryman - Dismount on Aggro'),
+('1684302','16843','1','0','100','1','15000','15000','15000','15000','43','0','2410','0','0','0','0','0','0','0','0','0','Stormwind Cavalryman - Mount Out of Combat'); -- See comment above
+
+UPDATE `creature` SET `orientation`=0 WHERE `guid`=57965;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=0,`position_x`=-609.255,`position_y`=2519.03,`position_z`=67.1583,`orientation`=0 WHERE `guid`=57966;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=0,`position_x`=-612.255,`position_y`=2519.03,`position_z`=67.1583,`orientation`=0 WHERE `guid`=57967;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=0,`position_x`=-615.255,`position_y`=2519.03,`position_z`=68.1583,`orientation`=0 WHERE `guid`=57968;
+
+-- DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=5796501;
+-- INSERT INTO `dbscripts_on_creature_movement` (`id`,`command`,`datalong`,`comments`) VALUES
+-- (5796501,25,1,'Stormwind Cavalryman - Set Run');
+
+-- Pathing for  Entry: 16843 'TDB FORMAT' 
+SET @GUID := 57965;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-606.2551,`position_y`=2519.0322,`position_z`=67.1583 WHERE `guid`=@GUID;
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`script_id`) VALUES
+(@GUID,@POINT := @POINT + '1',-603.8413,2468.978,57.24754,0), -- 02:10:26
+(@GUID,@POINT := @POINT + '1',-604.4803,2435.139,50.4033,0), -- 02:10:29
+(@GUID,@POINT := @POINT + '1',-599.3711,2409.698,44.90717,0), -- 02:10:31
+(@GUID,@POINT := @POINT + '1',-584.9319,2406.705,43.84761,0), -- 02:10:33
+(@GUID,@POINT := @POINT + '1',-582.3895,2430.362,47.80949,0), -- 02:10:34
+(@GUID,@POINT := @POINT + '1',-582.2234,2463.364,54.12881,0), -- 02:10:36
+(@GUID,@POINT := @POINT + '1',-583.6277,2498.37,61.37954,0), -- 02:10:37
+(@GUID,@POINT := @POINT + '1',-558.1464,2532.389,67.1059,0), -- 02:10:40
+(@GUID,@POINT := @POINT + '1',-524.2815,2553.872,65.78352,0), -- 02:10:42
+(@GUID,@POINT := @POINT + '1',-505.6973,2594.282,68.3791,0), -- 02:10:46
+(@GUID,@POINT := @POINT + '1',-504.4495,2604.855,70.36739,0), -- 02:10:48
+(@GUID,@POINT := @POINT + '1',-509.9106,2664.477,70.11888,0), -- 02:10:51
+(@GUID,@POINT := @POINT + '1',-511.2125,2694.753,68.72308,0), -- 02:10:53
+(@GUID,@POINT := @POINT + '1',-517.1431,2716.786,67.86261,0), -- 02:10:54
+(@GUID,@POINT := @POINT + '1',-534.4116,2747.668,69.11035,0), -- 02:10:57
+(@GUID,@POINT := @POINT + '1',-565.2167,2807.088,63.10085,0), -- 02:10:59
+(@GUID,@POINT := @POINT + '1',-596.0338,2836.992,59.53964,0), -- 02:11:03
+(@GUID,@POINT := @POINT + '1',-614.9552,2858.75073,54.6820,0), -- 02:11:03 -- Added
+(@GUID,@POINT := @POINT + '1',-630.5186,2866.889,51.23105,0), -- 02:11:05
+(@GUID,@POINT := @POINT + '1',-678.2933,2883.322,47.20448,0), -- 02:11:08
+(@GUID,@POINT := @POINT + '1',-697.3795,2884.9079,41.7335,0), -- 02:11:11
+(@GUID,@POINT := @POINT + '1',-723.3648,2887.826,33.06394,0), -- 02:11:11
+(@GUID,@POINT := @POINT + '1',-746.0063,2887.6555,27.1176,0), -- 02:11:11
+(@GUID,@POINT := @POINT + '1',-762.1984,2886.511,24.12672,0), -- 02:11:14
+(@GUID,@POINT := @POINT + '1',-792.9378,2863.699,21.6566,0), -- 02:11:16
+(@GUID,@POINT := @POINT + '1',-819.9457,2843.082,18.99449,0), -- 02:11:20
+(@GUID,@POINT := @POINT + '1',-873.9966,2815.336,15.86702,0), -- 02:11:22
+(@GUID,@POINT := @POINT + '1',-894.1238,2802.419,14.53608,0), -- 02:11:26
+(@GUID,@POINT := @POINT + '1',-897.1019,2770.831,21.08281,0), -- 02:11:27
+(@GUID,@POINT := @POINT + '1',-867.1028,2775.519,38.11693,0), -- 02:11:30
+(@GUID,@POINT := @POINT + '1',-860.3279,2762.119,45.57374,0), -- 02:11:31
+(@GUID,@POINT := @POINT + '1',-869.2184,2737.057,57.95547,0), -- 02:11:32
+(@GUID,@POINT := @POINT + '1',-871.6135,2701.309,78.26624,0), -- 02:11:35
+(@GUID,@POINT := @POINT + '1',-856.28,2675.755,92.30522,0), -- 02:11:37
+(@GUID,@POINT := @POINT + '1',-833.6925,2676.522,98.57971,0), -- 02:11:39
+(@GUID,@POINT := @POINT + '1',-808.1074,2687.286,104.2635,0), -- 02:11:41
+(@GUID,@POINT := @POINT + '1',-790.7687,2689.69,104.2749,0), -- 02:11:43
+(@GUID,@POINT := @POINT + '1',-725.1459,2676.275,96.73329,0), -- 02:11:45
+(@GUID,@POINT := @POINT + '1',-693.6385,2675.371,93.11407,0), -- 02:11:48
+(@GUID,@POINT := @POINT + '1',-678.6763,2653.897,90.2196,0), -- 02:11:50
+(@GUID,@POINT := @POINT + '1',-670.2182,2623.38,87.0732,0), -- 02:11:51
+(@GUID,@POINT := @POINT + '1',-647.7286,2588.648,83.14568,0), -- 02:11:54
+(@GUID,@POINT := @POINT + '1',-620.5898,2546.875,73.73161,0), -- 02:11:56
+(@GUID,@POINT := @POINT + '1',-604.7241,2503.232,64.53005,0); -- 02:12:00
+-- 0x203CD042401072C00000490000797476 .go -894.1846 2802.289 14.45487
+
+-- ----------------------------------------------------------
 -- Magus Filinthus
 -- ----------------------------------------------------------
 
