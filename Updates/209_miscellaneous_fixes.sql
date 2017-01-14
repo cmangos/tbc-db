@@ -78,3 +78,8 @@ UPDATE gossip_menu_option SET action_poi_id=42 WHERE menu_id=421 AND id=2;
 
 UPDATE creature SET spawntimesecs=28800 WHERE id IN(521); -- make Lupos much rarer
 
+-- Deep Elem Mine proper quaternion
+DELETE FROM gameobject WHERE id IN(1692);
+INSERT INTO gameobject(guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+('33326', '1692', '0', '340.22', '1249.68', '80.8974', '2.76636', '0.68659', '0.001571', '0.72691', '0.013906', '7200', '100', '1');
+
