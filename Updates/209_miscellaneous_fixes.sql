@@ -94,3 +94,6 @@ DELETE FROM gameobject WHERE id IN(152580);
 INSERT INTO gameobject(guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 ('49843', '152580', '1', '-4445.28', '2058.18', '44.9976', '-0.767946', '0.468413', '0.332221', '-0.472813', '0.668331', '900', '100', '1');
 
+-- unify respawntime
+UPDATE gameobject SET spawntimesecs=1800 WHERE id IN(180751);
+
