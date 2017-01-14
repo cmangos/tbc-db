@@ -111,3 +111,6 @@ UPDATE gameobject SET spawntimesecs=180 WHERE id IN(142477);
 UPDATE areatrigger_teleport SET target_orientation=5.211 WHERE id IN(702);
 UPDATE areatrigger_teleport SET target_orientation=5.346 WHERE id IN(704);
 
+-- Set respawn to wowhead comment data - TODO: implement pooling for these entries
+UPDATE gameobject SET spawntimesecs=180 WHERE id IN(179486,179490);
+
