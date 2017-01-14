@@ -461,6 +461,23 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 -- 0x203CD042401072C00000490000797476 .go -894.1846 2802.289 14.45487
 
 -- ----------------------------------------------------------
+-- Nethergarde Infantry Inside Inn (GUID 57896 to 57899)
+-- I created a separate template for these for 2 reasons:
+-- 1. I can't do the drink animation through EventAI only for these unless they have a separate template
+-- 2. These four Infantries should not be affected by the Nethergarde/Stormwind-random-template-on-spawn-stuff. 
+-- ----------------------------------------------------------
+
+DELETE FROM `creature_template` WHERE `entry` = 16913;
+INSERT INTO `creature_template` (`Entry`, `Name`, `MinLevel`, `MaxLevel`, `ModelId1`, `FactionAlliance`, `FactionHorde`, `CreatureType`, `UnitFlags`, `UnitClass`, `DamageMultiplier`, `MinLevelHealth`, `MaxLevelHealth`, `MinMeleeDmg`, `MaxMeleeDmg`, `Armor`, `MeleeAttackPower`, `RangedAttackPower`, `MovementType`, `EquipmentTemplateId`, `AIName`) VALUES 
+('16913', 'Nethergarde Infantry', '58', '60', '16376', '1671', '1671', '7', '832', '1', '0', '2900', '3900', '62', '95', '3791', '36', '100', '1', '5593', 'EventAI');
+
+DELETE FROM `creature_ai_scripts` WHERE `creature_id` = 16913;
+INSERT INTO `creature_ai_scripts` VALUES
+('1691301','16913','1','0','100','1','3000','10000','3000','10000','5','92','0','0','0','0','0','0','0','0','0','0','Nethergarde Infantry - Drink animation'); -- 46583
+
+UPDATE `creature` SET `id`=16913 WHERE `guid` IN (57896,57897,57898,57899);
+
+-- ----------------------------------------------------------
 -- Magus Filinthus
 -- ----------------------------------------------------------
 
