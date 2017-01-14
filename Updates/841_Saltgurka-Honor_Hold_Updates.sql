@@ -155,7 +155,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@GUID,@POINT := @POINT + '1',-724.4536,2725.909,95.40195,1.439442,250,0), -- 14:54:32
 (@GUID,@POINT := @POINT + '1',-725.5215,2724.479,95.6583,4.015551,15000,5794204); -- Text
 
--- Add missing spawn.
+-- Add missing spawn. (Proof: https://youtu.be/oAdpzodemN8?t=58s)
 DELETE FROM `creature` WHERE `guid`=120000;
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `curhealth`, `MovementType`) VALUES 
 ('120000', '16842', '530', '-661.241577', '2764.013184', '89.648140', '0', '300', '6600', '2');
@@ -308,6 +308,73 @@ DELETE FROM `creature_linking` WHERE `master_guid`=57951;
 INSERT INTO `creature_linking` (`guid`,`master_guid`,`flag`)VALUES
 (57952,57951,515);
 
+-- ----------------------------------------------------------
+-- Honor Hold Archers
+-- ----------------------------------------------------------
+
+SET @GUID := 58441;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-778.086792,`position_y`=2611.213379,`position_z`=133.253265 WHERE `guid`=@GUID;
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-778.086792,2611.213379,133.253265,500,0.526309),
+(@GUID,@POINT := @POINT + '1',-794.580505,2601.480469,133.253265,500,3.718954);
+
+SET @GUID := 58440;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-816.596924,`position_y`=2638.899902,`position_z`=133.253357 WHERE `guid`=@GUID;
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-816.596924,2638.899902,133.253357,500,3.718954), 
+(@GUID,@POINT := @POINT + '1',-802.575134,2647.312988,133.253357,500,0.526309); 
+
+SET @GUID := 58448;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-684.023132,`position_y`=2574.477539,`position_z`=100.586746 WHERE `guid`=@GUID;
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-684.023132,2574.477539,100.586746,0,0), 
+(@GUID,@POINT := @POINT + '1',-697.688110,2571.345703,100.598846,0,0), 
+(@GUID,@POINT := @POINT + '1',-696.135071,2564.149170,100.609314,0,0), 
+(@GUID,@POINT := @POINT + '1',-680.653442,2567.783447,100.623665,0,0),
+(@GUID,@POINT := @POINT + '1',-696.135071,2564.149170,100.609314,0,0), 
+(@GUID,@POINT := @POINT + '1',-697.688110,2571.345703,100.598846,0,0);
+
+SET @GUID := 58442;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-764.784241,`position_y`=2575.985352,`position_z`=104.092911 WHERE `guid`=@GUID;
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-764.784241,2575.985352,104.092911,0,0), 
+(@GUID,@POINT := @POINT + '1',-733.677124,2567.583740,104.187248,0,0), 
+(@GUID,@POINT := @POINT + '1',-734.555359,2563.964844,104.136047,0,0), 
+(@GUID,@POINT := @POINT + '1',-765.734924,2572.005371,104.136047,0,0),
+(@GUID,@POINT := @POINT + '1',-734.555359,2563.964844,104.136047,0,0), 
+(@GUID,@POINT := @POINT + '1',-733.677124,2567.583740,104.187248,0,0);
+
+SET @GUID := 58453;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-615.481384,`position_y`=2607.880127,`position_z`=99.092003 WHERE `guid`=@GUID;
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-615.481384,2607.880127,99.092003,0,0), 
+(@GUID,@POINT := @POINT + '1',-603.260986,2615.532715,99.038170,0,0), 
+(@GUID,@POINT := @POINT + '1',-606.086731,2619.775635,99.001106,0,0), 
+(@GUID,@POINT := @POINT + '1',-618.218689,2611.881104,99.001846,0,0),
+(@GUID,@POINT := @POINT + '1',-606.086731,2619.775635,99.001106,0,0), 
+(@GUID,@POINT := @POINT + '1',-603.260986,2615.532715,99.038170,0,0);
+
+SET @GUID := 58452;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-679.087219,`position_y`=2782.460693,`position_z`=110.077003 WHERE `guid`=@GUID;
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-679.087219,2782.460693,110.077003,0,0), 
+(@GUID,@POINT := @POINT + '1',-648.031433,2770.963623,104.529289,0,0), 
+(@GUID,@POINT := @POINT + '1',-645.291565,2776.596680,104.270088,0,0), 
+(@GUID,@POINT := @POINT + '1',-677.481628,2787.628906,110.064980,0,0),
+(@GUID,@POINT := @POINT + '1',-645.291565,2776.596680,104.270088,0,0), 
+(@GUID,@POINT := @POINT + '1',-648.031433,2770.963623,104.529289,0,0);
 
 -- ----------------------------------------------------------
 -- Magus Filinthus
