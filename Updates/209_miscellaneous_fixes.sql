@@ -97,3 +97,6 @@ INSERT INTO gameobject(guid, id, map, position_x, position_y, position_z, orient
 -- unify respawntime
 UPDATE gameobject SET spawntimesecs=1800 WHERE id IN(180751);
 
+-- nesingwary expedition should not be inn
+DELETE FROM areatrigger_tavern WHERE id IN(98);
+
