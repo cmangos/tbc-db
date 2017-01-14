@@ -100,3 +100,7 @@ UPDATE gameobject SET spawntimesecs=1800 WHERE id IN(180751);
 -- nesingwary expedition should not be inn
 DELETE FROM areatrigger_tavern WHERE id IN(98);
 
+-- add spell script target so that visual happens during Portal to Maraudon creation
+DELETE FROM spell_script_target WHERE entry IN(21127);
+INSERT INTO spell_script_target VALUES(21127,0,178386,0);
+
