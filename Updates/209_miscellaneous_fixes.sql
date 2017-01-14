@@ -86,3 +86,6 @@ INSERT INTO gameobject(guid, id, map, position_x, position_y, position_z, orient
 -- Campfire trap GO - target frendlies
 UPDATE gameobject_template SET CustomData1=1 WHERE entry IN(31442);
 
+-- Bubbly fissure GO - wrong data
+UPDATE gameobject_template SET type=6, CustomData1=1 WHERE entry IN(177524);
+
