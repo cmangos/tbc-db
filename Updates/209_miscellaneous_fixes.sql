@@ -107,3 +107,7 @@ INSERT INTO spell_script_target VALUES(21127,0,178386,0);
 -- wowhead mentions several minutes so taking a guess and changing to 3 from 5
 UPDATE gameobject SET spawntimesecs=180 WHERE id IN(142477);
 
+-- Mage tower areatrigger teleport orientation fixes
+UPDATE areatrigger_teleport SET target_orientation=5.211 WHERE id IN(702);
+UPDATE areatrigger_teleport SET target_orientation=5.346 WHERE id IN(704);
+
