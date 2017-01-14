@@ -104,3 +104,6 @@ DELETE FROM areatrigger_tavern WHERE id IN(98);
 DELETE FROM spell_script_target WHERE entry IN(21127);
 INSERT INTO spell_script_target VALUES(21127,0,178386,0);
 
+-- wowhead mentions several minutes so taking a guess and changing to 3 from 5
+UPDATE gameobject SET spawntimesecs=180 WHERE id IN(142477);
+
