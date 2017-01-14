@@ -83,3 +83,6 @@ DELETE FROM gameobject WHERE id IN(1692);
 INSERT INTO gameobject(guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
 ('33326', '1692', '0', '340.22', '1249.68', '80.8974', '2.76636', '0.68659', '0.001571', '0.72691', '0.013906', '7200', '100', '1');
 
+-- Campfire trap GO - target frendlies
+UPDATE gameobject_template SET CustomData1=1 WHERE entry IN(31442);
+
