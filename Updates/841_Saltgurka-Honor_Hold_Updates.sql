@@ -1,4 +1,30 @@
 -- ----------------------------------------------------------
+-- Model and equipment updates
+-- ----------------------------------------------------------
+-- Update EquipmentTemplate for all Honor Hold Defenders. Entry 20513 (the two guards next to the destroyed keep) had the correct ones, all others were wrong for some reason.
+UPDATE `creature_template` SET `EquipmentTemplateId`=1195 WHERE `entry`=16842;
+
+-- Also the human model was missing from their creature_template
+UPDATE `creature_template` SET `ModelId1`=16387,`ModelId2`=16388,`ModelId3`=16389,`ModelId4`=16390 WHERE `entry` IN (16842,20513); -- 16390
+
+-- Removing the gender link, because some creatures need to use the male model only
+UPDATE `creature_model_info` SET `modelid_other_gender`=0 WHERE `modelid` BETWEEN 16387 AND 16390;
+
+-- The guards outside the destroyed keep should always be male, as indicated by their texts. "I am a grumpy old man!"
+UPDATE `creature` SET `modelid`=16387 WHERE `guid` IN(72636,72637);
+
+-- Nethergarde Infantry were missing the female model
+UPDATE `creature_template` SET `ModelId1`=16377,`ModelId2`=16376,`ModelId3`=16375 WHERE `entry`=16831; 
+UPDATE `creature_model_info` SET `modelid_other_gender`=0 WHERE `modelid` IN(16375,16376,16377);
+UPDATE `creature_model_info` SET `modelid_alternative`=16377 WHERE `modelid`=16376; 
+
+-- The infantry that's doing work around the town and the guard at the outhouse should not be carrying any weapons. Override with an empty equip_template
+DELETE FROM `creature_equip_template` WHERE `entry`=123;
+INSERT INTO `creature_equip_template` (`entry`,`equipentry1`,`equipentry2`,`equipentry3`) VALUES
+(123,0,0,0);
+UPDATE `creature` SET `equipment_id`=123 WHERE `guid` IN(57895,57889,58153,57942,58142,58149,58154,57904); -- Use an empty equip_template
+
+-- ----------------------------------------------------------
 -- Father Malgor Devidicus - Drink emote
 -- ----------------------------------------------------------
 UPDATE `creature_template` SET `AIName`='EventAI' WHERE `entry`=16825;
@@ -9,8 +35,6 @@ INSERT INTO `creature_ai_scripts` VALUES
 -- ----------------------------------------------------------
 -- Honor Hold Defenders
 -- ----------------------------------------------------------
--- Update EquipmentTemplate for all Honor Hold Defenders. Entry 20513 (the two guards next to the destroyed keep) had the correct ones, all others were wrong for some reason.
-UPDATE `creature_template` SET `EquipmentTemplateId`=1195 WHERE `entry`=16842;
 
 -- Outhouse guard GUID: 57942
 -- Since this guard has a gossip menu it needs to have a separate template from the other guards (as far as I know). 
@@ -158,7 +182,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 -- Add missing spawn. (Proof: https://youtu.be/oAdpzodemN8?t=58s)
 DELETE FROM `creature` WHERE `guid`=120000;
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `curhealth`, `MovementType`) VALUES 
-('120000', '16842', '530', '-661.241577', '2764.013184', '89.648140', '0', '300', '6600', '2');
+('120000', '16842', '530', '-661.241577', '2764.013184', '91.648140', '0', '300', '6600', '2');
 
 SET @GUID := 57948; -- member 120000
 SET @POINT := 0;
@@ -468,8 +492,8 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 -- ----------------------------------------------------------
 
 DELETE FROM `creature_template` WHERE `entry` = 16913;
-INSERT INTO `creature_template` (`Entry`, `Name`, `MinLevel`, `MaxLevel`, `ModelId1`, `FactionAlliance`, `FactionHorde`, `CreatureType`, `UnitFlags`, `UnitClass`, `DamageMultiplier`, `MinLevelHealth`, `MaxLevelHealth`, `MinMeleeDmg`, `MaxMeleeDmg`, `Armor`, `MeleeAttackPower`, `RangedAttackPower`, `MovementType`, `EquipmentTemplateId`, `AIName`) VALUES 
-('16913', 'Nethergarde Infantry', '58', '60', '16376', '1671', '1671', '7', '832', '1', '0', '2900', '3900', '62', '95', '3791', '36', '100', '1', '5593', 'EventAI');
+INSERT INTO `creature_template` (`Entry`, `Name`, `MinLevel`, `MaxLevel`, `ModelId1`, `ModelId2`, `FactionAlliance`, `FactionHorde`, `CreatureType`, `UnitFlags`, `UnitClass`, `DamageMultiplier`, `MinLevelHealth`, `MaxLevelHealth`, `MinMeleeDmg`, `MaxMeleeDmg`, `Armor`, `MeleeAttackPower`, `RangedAttackPower`, `MovementType`, `EquipmentTemplateId`, `AIName`) VALUES 
+('16913', 'Nethergarde Infantry', '58', '60', '16377', '16376', '1671', '1671', '7', '832', '1', '0', '2900', '3900', '62', '95', '3791', '36', '100', '1', '5593', 'EventAI');
 
 DELETE FROM `creature_ai_scripts` WHERE `creature_id` = 16913;
 INSERT INTO `creature_ai_scripts` VALUES
