@@ -478,6 +478,317 @@ INSERT INTO `creature_ai_scripts` VALUES
 UPDATE `creature` SET `id`=16913 WHERE `guid` IN (57896,57897,57898,57899);
 
 -- ----------------------------------------------------------
+-- Nethergarde/Stormwind Infantry
+-- ----------------------------------------------------------
+-- The way these NPCs should work is that they have a 50/50 chance of being Stormwind/Nethergarde. However I can't think of any good way to implement that, so I will have to make them static :(
+
+-- -----------------------------------------------
+-- Boxes near gate.
+-- Bucket: 13606 D: 24283
+-- White bag: 12859 D: 23320
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 5815401 AND 5815404;
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`comments`) VALUES
+(5815401,1.5,1,66,0,0,0,'Nethergarde/Stormwind Infantry - Salute Emote'),
+(5815402,0,1,69,0,0,0,'Nethergarde/Stormwind Infantry - Use Emote State'),
+(5815402,2,42,0,0,12859,13606,'Nethergarde/Stormwind Infantry - Equip Bucket and Bag'),
+(5815403,0,1,0,0,0,0,'Nethergarde/Stormwind Infantry - Turn off Use Emote State'),
+(5815404,2,2,159,8,0,0,'Nethergarde/Stormwind Infantry - Set Kneel Emote State'), -- Emote 68 doesn't work, so this is the only way to do it
+(5815404,3,42,1,0,0,0,'Nethergarde/Stormwind Infantry - UnEquip Bucket and Bag'),
+(5815404,4,2,159,0,0,0,'Nethergarde/Stormwind Infantry - Remove Kneel Emote State');
+
+-- Remove static use emote
+UPDATE `creature_addon` SET `emote`=0 WHERE `guid`=58154;
+
+-- Pathing for  Entry: 16831 'TDB FORMAT' 
+SET @GUID := 58154;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=@GUID; -- ,`position_x`=-675.5676,`position_y`=2609.854,`position_z`=86.83054
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-679.1447,2609.0058,86.71082,120000,5815402,2.417790), -- 17:19:23 -- Use emote by boxes for 2 mins (120000)
+(@GUID,@POINT := @POINT + '1',-679.1447,2609.0058,86.71082,1000,5815403,2.417790), -- 17:19:23 -- Turn off use emote state
+(@GUID,@POINT := @POINT + '1',-676.3438,2608.4021,86.4456,0,0,0), -- 17:19:23
+(@GUID,@POINT := @POINT + '1',-673.6891,2610.629,86.79488,0,0,0), -- 17:19:24
+(@GUID,@POINT := @POINT + '1',-676.3786,2619.2211,87.1581,0,0,0), -- 17:19:24 -- Added
+(@GUID,@POINT := @POINT + '1',-702.3351,2632.415,90.65683,0,0,0), -- 17:19:35
+(@GUID,@POINT := @POINT + '1',-710.6298,2636.448,91.78142,0,0,0), -- 17:19:41
+(@GUID,@POINT := @POINT + '1',-721.761,2645.975,93.45092,0,0,0), -- 17:19:46
+(@GUID,@POINT := @POINT + '1',-723.8354,2648.165,93.72618,0,0,0), -- 17:19:51
+(@GUID,@POINT := @POINT + '1',-736.1548,2658.172,96.76268,0,0,0), -- 17:19:54
+(@GUID,@POINT := @POINT + '1',-745.5068,2656.399,100.4888,0,0,0), -- 17:19:59
+(@GUID,@POINT := @POINT + '1',-753.444,2652.021,105.0069,0,0,0), -- 17:20:03
+(@GUID,@POINT := @POINT + '1',-759.5253,2648.16,108.0777,0,0,0), -- 17:20:08
+(@GUID,@POINT := @POINT + '1',-762.7746,2645.629,108.1487,0,0,0), -- 17:20:12
+(@GUID,@POINT := @POINT + '1',-781.6511,2634.466,108.0655,0,0,0), -- 17:20:18
+(@GUID,@POINT := @POINT + '1',-787.555,2630.417,107.7722,0,0,0), -- 17:20:22
+(@GUID,@POINT := @POINT + '1',-786.5496,2618.983,109.4194,0,0,0), -- 17:20:26
+(@GUID,@POINT := @POINT + '1',-782.7269,2612.487,109.4225,0,0,0), -- 17:20:31
+(@GUID,@POINT := @POINT + '1',-781.1051,2609.958,109.422,0,0,0), -- 17:20:35
+(@GUID,@POINT := @POINT + '1',-769.5511,2615.452,109.422,0,0,0), -- 17:20:36
+(@GUID,@POINT := @POINT + '1',-769.2007,2622.1369,109.1723,6000,5815404,1.620606), -- 17:20:41 -- Kneel and put down satchels
+(@GUID,@POINT := @POINT + '1',-769.2007,2622.1369,109.1723,0,0,0), -- Turn off kneel emote
+(@GUID,@POINT := @POINT + '1',-772.579,2614.799,109.422,0,0,0), -- 17:20:50
+(@GUID,@POINT := @POINT + '1',-775.0747,2612.723,109.422,0,0,0), -- 17:20:53
+(@GUID,@POINT := @POINT + '1',-783.3768,2615.284,109.422,0,0,0), -- 17:20:55
+(@GUID,@POINT := @POINT + '1',-788.9121,2624.131,108.1715,0,0,0), -- 17:20:59
+(@GUID,@POINT := @POINT + '1',-789.2635,2626.8117,107.6731,0,0,0), -- Added
+(@GUID,@POINT := @POINT + '1',-776.8205,2637.103,108.0527,0,0,0), -- 17:21:05
+(@GUID,@POINT := @POINT + '1',-755.5786,2651.957,105.9618,0,0,0), -- 17:21:12
+(@GUID,@POINT := @POINT + '1',-742.3715,2657.095,99.17558,0,0,0), -- 17:21:23
+(@GUID,@POINT := @POINT + '1',-730.1269,2658.817,95.05613,0,0,0), -- 17:21:28
+(@GUID,@POINT := @POINT + '1',-725.9871,2659.364,94.28555,0,0,0), -- 17:21:35
+(@GUID,@POINT := @POINT + '1',-721.1169,2645.587,93.1051,0,0,0), -- 17:21:39
+(@GUID,@POINT := @POINT + '1',-706.5137,2635.195,91.43243,0,0,0), -- 17:21:43
+(@GUID,@POINT := @POINT + '1',-682.3307,2623.243,88.63831,0,0,0), -- 17:21:50
+(@GUID,@POINT := @POINT + '1',-675.4275,2616.5568,86.8754,0,0,0), -- Added
+(@GUID,@POINT := @POINT + '1',-675.5676,2609.854,86.83054,0,0,0), -- 17:24:30
+(@GUID,@POINT := @POINT + '1',-676.6392,2606.2456,86.3983,0,0,0),
+(@GUID,@POINT := @POINT + '1',-676.6392,2606.2456,86.3983,4000,5815401,3.898266); -- 17:19:23 -- Salute
+-- 0x203CDC4240106FC0005D0100007D011C .go -675.5676 2609.854 86.83054
+
+-- -----------------------------------------------
+-- Boxes near keep
+-- Red bag 12856 D:23319
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 5788901 AND 5788903;
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`comments`) VALUES
+(5788901,0,1,69,0,0,0,'Nethergarde/Stormwind Infantry - Use Emote State'),
+(5788901,1,42,1,0,0,0,'Nethergarde/Stormwind Infantry - UnEquip Red Bags'),
+(5788902,0,1,69,0,0,0,'Nethergarde/Stormwind Infantry - Use Emote State'),
+(5788902,1,42,0,0,12856,12856,'Nethergarde/Stormwind Infantry - Equip Red Bags'),
+(5788903,0,1,0,0,0,0,'Nethergarde/Stormwind Infantry - Turn off Use Emote State');
+
+-- Remove static use emote
+UPDATE `creature_addon` SET `emote`=0 WHERE `guid`=57889;
+
+-- Boxes near keep
+-- Pathing for  Entry: 16831 'TDB FORMAT' 
+SET @GUID := 57889;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=@GUID; -- ,`position_x`=-801.4343,`position_y`=2643.785,`position_z`=109.4202
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-785.8399,2655.8332,109.1721,80000,5788901,0.470773), -- 17:17:06 -- Use emote and drop satchels 1m20s (80000)
+(@GUID,@POINT := @POINT + '1',-785.8399,2655.8332,109.1721,1000,5788903,0.470773), -- Turn off use emote
+(@GUID,@POINT := @POINT + '1',-796.5684,2651.333,109.422,0,0,0), -- 17:18:22
+(@GUID,@POINT := @POINT + '1',-799.8857,2645.846,109.422,0,0,0), -- 17:18:27
+(@GUID,@POINT := @POINT + '1',-794.1083,2633.137,108.1725,0,0,0), -- 17:18:31
+(@GUID,@POINT := @POINT + '1',-787.5057,2632.853,107.9186,0,0,0), -- 17:18:37
+(@GUID,@POINT := @POINT + '1',-777.4234,2638.755,108.0459,0,0,0), -- 17:18:40
+(@GUID,@POINT := @POINT + '1',-754.8186,2655.99,104.2998,0,0,0), -- 17:18:49
+(@GUID,@POINT := @POINT + '1',-750.262,2666.566,99.67981,0,0,0), -- 17:18:56
+(@GUID,@POINT := @POINT + '1',-752.3864,2673.738,99.89954,0,0,0), -- 17:19:01
+(@GUID,@POINT := @POINT + '1',-760.5037,2682.006,101.7457,0,0,0), -- 17:19:05
+(@GUID,@POINT := @POINT + '1',-762.8121,2683.413,102.0922,0,0,0), -- 17:19:09
+(@GUID,@POINT := @POINT + '1',-766.9202,2682.946,102.3289,0,0,0), -- 17:19:11
+(@GUID,@POINT := @POINT + '1',-768.8111,2681.4240,102.1079,0,0,0), -- Added
+(@GUID,@POINT := @POINT + '1',-767.8975,2680.983,102.1091,130000,5788902,5.564075), -- 17:19:14 -- Work and pick up satchels 2m10s (130000)
+(@GUID,@POINT := @POINT + '1',-767.8975,2680.983,102.1091,1000,5788903,5.564075), -- Turn off use emote
+(@GUID,@POINT := @POINT + '1',-760.3657,2682.387,101.792,0,0,0), -- 17:21:23
+(@GUID,@POINT := @POINT + '1',-750.4936,2674.702,99.7462,0,0,0), -- 17:21:26
+(@GUID,@POINT := @POINT + '1',-746.1119,2660.125,99.62329,0,0,0), -- 17:21:32
+(@GUID,@POINT := @POINT + '1',-749.8309,2654.803,103.0287,0,0,0), -- 17:21:38
+(@GUID,@POINT := @POINT + '1',-757.9945,2648.734,107.6141,0,0,0), -- 17:21:40
+(@GUID,@POINT := @POINT + '1',-776.5012,2637.151,108.0291,0,0,0), -- 17:21:45
+(@GUID,@POINT := @POINT + '1',-787.7245,2630.948,107.7993,0,0,0), -- 17:21:54
+(@GUID,@POINT := @POINT + '1',-791.5713,2630.794,107.9425,0,0,0), -- 17:21:58
+(@GUID,@POINT := @POINT + '1',-801.4343,2643.785,109.4202,0,0,0), -- 17:16:55
+(@GUID,@POINT := @POINT + '1',-796.0193,2651.808,109.422,0,0,0); -- 17:17:01
+-- 0x203CDC4240106FC0005D0100007CD71E .go -801.4343 2643.785 109.4202
+
+-- -----------------------------------------------
+-- Going from inn to gate boxes
+-- Black bottle 3756 D:6529
+-- Green bottle 3757 D:6530
+
+DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000000892 AND 2000000897;
+INSERT INTO `db_script_string` (`entry`,`content_default`,`emote`,`type`) VALUES 
+-- Infantry speech
+(2000000892,'Where do you want these bottles?',1,0),
+(2000000893,'Got another shipment for you, Sid.',1,0),
+(2000000894,'Craziest thing - No matter how many bottles I take from the stockpile, the quantity on hand never decreases. It''s like I''m stuck in some endless loop of actions...',1,0),
+(2000000897,'%s nods.',273,2),
+-- Sid speech
+(2000000895,'Bless yer heart, soldier! Just put ''em in the back room.',1,0),
+(2000000896,'Just leave ''em in the cellar.',1,0);
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 5815301 AND 5815304;
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`comments`) VALUES
+(5815301,0,1,69,0,0,0,'Nethergarde/Stormwind Infantry - Use Emote State'),
+(5815301,1,42,0,0,3756,3757,'Nethergarde/Stormwind Infantry - Equip Black and Green Bottles'),
+(5815302,1,2,159,8,0,0,'Nethergarde/Stormwind Infantry - Set Kneel Emote State'), -- Emote 68 doesn't work, so this is the only way to do it
+(5815302,2,42,1,0,0,0,'Nethergarde/Stormwind Infantry - UnEquip Black and Green Bottles'),
+(5815302,4,2,159,0,0,0,'Nethergarde/Stormwind Infantry - Remove Kneel Emote State'),
+(5815303,0,1,0,0,0,0,'Nethergarde/Stormwind Infantry - Turn off Use Emote State');
+
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`dataint3`,`buddy_entry`,`search_radius`,`data_flags`,`comments`) VALUES
+(5815304,0,32,1,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Pause Waypoints'),
+(5815304,0.5,36,0,0,0,0,0,16826,10,1,'Nethergarde/Stormwind Infantry - Face Sid'),
+(5815304,1,0,0,0,2000000892,2000000893,2000000894,0,0,0,'Nethergarde/Stormwind Infantry - Random say'),
+(5815304,5,36,0,0,0,0,0,16826,10,0,'Sid Limbardi - Face Nethergarde/Stormwind Infantry'),
+(5815304,7,0,0,0,2000000895,2000000896,0,16826,10,0,'Sid Limbardi - Random say'),
+(5815304,11,0,0,0,2000000897,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Text emote'),
+(5815304,12.5,36,1,0,0,0,0,16826,10,0,'Sid Limbardi - Reset facing'),
+(5815304,13,32,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - UnPause Waypoints');
+
+-- Remove static use emote
+UPDATE `creature_addon` SET `emote`=0 WHERE `guid`=58153;
+
+-- Pathing for  Entry: 16831 'TDB FORMAT' 
+SET @GUID := 58153;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=@GUID; -- ,`position_x`=-691.2068,`position_y`=2612.307,`position_z`=86.82053
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-686.3853,2604.818,86.82053,180000,5815301,0.480196), -- 14:22:38 --O -- Use emote for 3m (180000)
+(@GUID,@POINT := @POINT + '1',-686.3853,2604.818,86.82053,0,5815303,0.480196), -- Turn off use emote
+(@GUID,@POINT := @POINT + '1',-691.2068,2612.307,86.82053,0,0,0), -- 14:19:27
+(@GUID,@POINT := @POINT + '1',-692.7888,2615.884,89.03557,0,0,0), -- 14:19:29
+(@GUID,@POINT := @POINT + '1',-694.6949,2622.964,90.10753,0,0,0), -- 14:19:32
+(@GUID,@POINT := @POINT + '1',-690.473511,2632.930420,89.649323,0,0,0), -- 14:19:34 -- C
+(@GUID,@POINT := @POINT + '1',-681.0259,2642.447,89.63081,0,0,0), -- 14:19:39
+(@GUID,@POINT := @POINT + '1',-679.9601,2643.327,89.52776,0,0,0), -- 14:19:45
+(@GUID,@POINT := @POINT + '1',-676.0788,2652.33,89.45507,0,0,0), -- 14:19:49
+(@GUID,@POINT := @POINT + '1',-683.2964,2672.437,91.13505,0,0,0), -- 14:19:54
+(@GUID,@POINT := @POINT + '1',-691.312,2677.852,92.85458,0,0,0), -- 14:19:58
+(@GUID,@POINT := @POINT + '1',-697.7299,2679.415,93.82138,0,0,0), -- 14:20:02
+(@GUID,@POINT := @POINT + '1',-703.9164,2680.697,93.97695,0,0,0), -- 14:20:07
+(@GUID,@POINT := @POINT + '1',-709.7415,2703.192,94.69138,0,0,0), -- 14:20:13
+(@GUID,@POINT := @POINT + '1',-709.845,2710.919,94.83158,0,0,0), -- 14:20:17
+(@GUID,@POINT := @POINT + '1',-709.8132,2713.014,94.97685,0,0,0), -- 14:20:20
+(@GUID,@POINT := @POINT + '1',-703.2125,2713.8120,94.7370,0,0,0), -- 14:20:24 --C
+(@GUID,@POINT := @POINT + '1',-702.9235,2721.491,94.4231,0,0,0), -- 14:20:26
+(@GUID,@POINT := @POINT + '1',-703.556,2730.551,94.98415,0,0,0), -- 14:20:29
+(@GUID,@POINT := @POINT + '1',-704.699,2735.226,94.90048,0,0,0), -- 14:20:32
+(@GUID,@POINT := @POINT + '1',-705.576,2736.907,94.73344,0,5815304,0), -- 14:20:36 --O --Speech with Sid
+(@GUID,@POINT := @POINT + '1',-705.576,2736.907,94.73344,0,0,0), -- 
+(@GUID,@POINT := @POINT + '1',-704.5279,2742.1013,94.7331,0,0,0), -- 14:20:48 --C
+(@GUID,@POINT := @POINT + '1',-711.543,2742.858,94.97518,0,0,0), -- 14:20:52
+(@GUID,@POINT := @POINT + '1',-713.9904,2745.996,94.95235,0,0,0), -- 14:20:53
+(@GUID,@POINT := @POINT + '1',-714.3401,2747.434,94.40321,0,0,0), -- 14:20:54
+(@GUID,@POINT := @POINT + '1',-713.3446,2758.6386,87.9284,0,0,0), -- 14:20:57 --C
+(@GUID,@POINT := @POINT + '1',-711.1699,2759.309,88.18364,0,0,0), -- 14:21:00
+(@GUID,@POINT := @POINT + '1',-704.456970,2754.737793,87.564606,0,0,0), -- A
+(@GUID,@POINT := @POINT + '1',-704.5567,2753.353,87.7123,8000,5815302,4.874504), -- 14:21:03 -- Kneel 
+(@GUID,@POINT := @POINT + '1',-704.5567,2753.353,87.7123,0,0,0), -- 
+(@GUID,@POINT := @POINT + '1',-711.8190,2759.0969,87.9301,0,0,0), -- 14:21:13 --C
+(@GUID,@POINT := @POINT + '1',-714.008,2757.465,88.25082,0,0,0), -- 14:21:16
+(@GUID,@POINT := @POINT + '1',-713.868652,2744.810059,94.720543,0,0,0), -- 14:21:20 --C
+(@GUID,@POINT := @POINT + '1',-704.5270,2743.0043,94.7323,0,0,0), -- 14:21:24 --C
+(@GUID,@POINT := @POINT + '1',-704.3337,2731.918,94.98073,0,0,0), -- 14:21:27
+(@GUID,@POINT := @POINT + '1',-703.8024,2728.728,94.42149,0,0,0), -- 14:21:32
+(@GUID,@POINT := @POINT + '1',-703.2446,2714.0810,94.7372,0,0,0), -- 14:21:36 --C
+(@GUID,@POINT := @POINT + '1',-709.2371,2711.9323,94.7216,0,0,0), -- 14:21:41 --C
+(@GUID,@POINT := @POINT + '1',-709.0999,2700.167,94.53326,0,0,0), -- 14:21:43
+(@GUID,@POINT := @POINT + '1',-709.7512,2696.803,94.39558,0,0,0), -- 14:21:49
+(@GUID,@POINT := @POINT + '1',-694.2099,2679.308,93.23099,0,0,0), -- 14:21:56
+(@GUID,@POINT := @POINT + '1',-682.8473,2672.114,91.00636,0,0,0), -- 14:22:01
+(@GUID,@POINT := @POINT + '1',-679.4442,2666.898,90.3499,0,0,0), -- 14:22:06
+(@GUID,@POINT := @POINT + '1',-677.2031,2648.906,89.43787,0,0,0), -- 14:22:10
+(@GUID,@POINT := @POINT + '1',-683.6664,2640.914,89.94809,0,0,0), -- 14:22:16
+(@GUID,@POINT := @POINT + '1',-689.635,2635.617,89.85884,0,0,0), -- 14:22:23
+(@GUID,@POINT := @POINT + '1',-691.4574,2610.438,88.27208,0,0,0), -- 14:22:29
+(@GUID,@POINT := @POINT + '1',-687.9446,2606.449,87.25223,0,0,0); -- 14:22:34
+-- 0x202FD44240106FC00028C9000000CB0A .go -691.2068 2612.307 86.82053
+
+-- -----------------------------------------------
+-- Infantry riding to Dark Portal
+
+-- Remove static use emote
+UPDATE `creature_addon` SET `emote`=0 WHERE `guid`=57904;
+
+-- Remove static mounted Nethergarde Infantry in the middle of the road to dark portal. It should not be there.
+UPDATE `creature` SET `spawnMask`=0 WHERE `guid`=57894;
+
+DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000000898 AND 2000000903;
+INSERT INTO `db_script_string` (`entry`,`content_default`,`emote`,`type`) VALUES 
+(2000000898,'Soldier! Front and center!',22,0),
+(2000000899,'SIR! YES, SIR! Reporting for duty, sir!',66,0),
+(2000000900,'At ease, Private. I have a mission for you. The last messenger I sent to Nethergarde didn''t make it. We found his entrails scattered about the bone road a few hours ago. We suspect it may have been legion or fel orc, maybe even Horde...',1,0),
+(2000000901,'I need this message delivered to Watch Commander Netherwane at Nethergarde Keep. There''s a commendation in it for you if you make it... Your horse is waiting at the stables. Dismissed!',1,0),
+(2000000902,'Sir, yes sir! Private will do their best to not die, sir!',66,0),
+(2000000903,'ONWARD!',25,0);
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 5790401 AND 5790404;
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`dataint3`,`o`,`buddy_entry`,`search_radius`,`data_flags`,`comments`) VALUES
+
+-- Starting point
+(5790401,0,32,1,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Pause Waypoints'),
+(5790401,0,1,69,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Use Emote State'),
+(5790401,310,36,0,0,0,0,0,0,16830,15,0,'Field Commander Romus - Face Nethergarde/Stormwind Infantry'),
+(5790401,311,0,0,0,2000000898,0,0,0,16830,15,0,'Field Commander Romus - Say'),
+(5790401,315,36,1,0,0,0,0,0,16830,15,0,'Field Commander Romus - Reset facing'),
+(5790401,315,25,1,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Set Run'),
+(5790401,316,1,0,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Turn off Use Emote State'),
+(5790401,316,32,0,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - UnPause Waypoints'),
+
+-- Commander Romus speech
+(5790402,0,32,1,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Pause Waypoints'),
+(5790402,1,0,0,0,2000000899,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Say'),
+(5790402,5,1,66,0,0,0,0,0,16830,5,0,'Field Commander Romus - Salute Emote'),
+(5790402,9,0,0,0,2000000900,0,0,0,16830,5,0,'Field Commander Romus - Say'),
+(5790402,14,1,274,0,0,0,0,0,16830,5,0,'Field Commander Romus - No Emote'),
+(5790402,18,1,25,0,0,0,0,0,16830,5,0,'Field Commander Romus - Point Emote'),
+(5790402,23,0,0,0,2000000901,0,0,0,16830,5,0,'Field Commander Romus - Say'),
+(5790402,30,1,66,0,0,0,0,0,16830,5,0,'Field Commander Romus - Salute Emote'),
+(5790402,34,0,0,0,2000000902,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Say'),
+(5790402,38,32,0,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - UnPause Waypoints'),
+
+-- Stables
+(5790403,0,32,1,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Pause Waypoints'),
+(5790403,2,24,14583,0,0,0,0,0,0,0,8,'Nethergarde/Stormwind Infantry - Mount'),
+(5790403,2,3,14583,0,0,0,0,4.671405,0,0,0,'Nethergarde/Stormwind Infantry - Change orientation'),
+(5790403,4,0,0,0,2000000903,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Say'),
+(5790403,6,32,0,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - UnPause Waypoints'),
+
+-- Despawn at Pit Commander
+(5790404,0.5,18,0,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Despawn Self');
+
+SET @GUID := 57904;
+SET @POINT := 0;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=@GUID; -- ,`position_x`=-691.2068,`position_y`=2612.307,`position_z`=86.82053
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(@GUID,@POINT := @POINT + '1',-685.791992,2613.540039,86.794296,1000,5790401,5.759590), -- Use emote for 5 minutes (300000) Delay set in script
+(@GUID,@POINT := @POINT + '1',-687.472229,2616.658447,86.710960,0,0,0),
+(@GUID,@POINT := @POINT + '1',-682.574829,2620.803711,88.151718,0,0,0),
+(@GUID,@POINT := @POINT + '1',-676.642761,2615.959961,86.981232,0,0,0),
+(@GUID,@POINT := @POINT + '1',-674.329407,2609.616699,86.322594,0,0,0),
+(@GUID,@POINT := @POINT + '1',-675.306641,2605.604004,86.210304,0,0,0),
+(@GUID,@POINT := @POINT + '1',-676.763794,2605.120850,86.379608,1000,5790402,3.536410), -- Commander Romus
+(@GUID,@POINT := @POINT + '1',-674.549683,2611.720947,86.483368,0,0,0),
+(@GUID,@POINT := @POINT + '1',-678.310547,2638.740234,88.703293,0,0,0),
+(@GUID,@POINT := @POINT + '1',-679.028748,2664.635742,89.741463,0,0,0),
+(@GUID,@POINT := @POINT + '1',-671.325989,2676.265869,89.416718,0,0,0),
+(@GUID,@POINT := @POINT + '1',-674.344604,2693.288086,93.091721,0,0,0),
+(@GUID,@POINT := @POINT + '1',-674.599670,2743.367676,93.920700,500,5790403,1.521863), -- Stables
+(@GUID,@POINT := @POINT + '1',-677.643127,2704.469238,95.054634,0,0,0),
+(@GUID,@POINT := @POINT + '1',-671.842590,2677.694092,89.490532,0,0,0),
+(@GUID,@POINT := @POINT + '1',-678.045410,2645.686279,89.096954,0,0,0),
+(@GUID,@POINT := @POINT + '1',-669.998047,2623.258789,86.624306,0,0,0),
+(@GUID,@POINT := @POINT + '1',-655.739563,2598.554443,84.029610,0,0,0),
+(@GUID,@POINT := @POINT + '1',-632.641663,2565.597412,78.746429,0,0,0),
+(@GUID,@POINT := @POINT + '1',-607.324219,2522.187744,67.821083,0,0,0),
+(@GUID,@POINT := @POINT + '1',-595.335815,2388.799805,41.003193,0,0,0),
+(@GUID,@POINT := @POINT + '1',-581.345642,2342.467773,36.629642,0,0,0),
+(@GUID,@POINT := @POINT + '1',-550.296387,2303.856445,38.000889,0,0,0),
+(@GUID,@POINT := @POINT + '1',-362.033478,2212.660156,65.475555,0,0,0),
+(@GUID,@POINT := @POINT + '1',-312.921783,2189.765137,68.706818,0,0,0),
+(@GUID,@POINT := @POINT + '1',-225.342789,2145.467285,80.624886,0,0,0),
+(@GUID,@POINT := @POINT + '1',-212.901291,2050.899658,95.679672,0,0,0),
+(@GUID,@POINT := @POINT + '1',-219.452209,1999.933472,97.980362,0,0,0),
+(@GUID,@POINT := @POINT + '1',-218.855148,1909.651855,95.992867,0,0,0),
+(@GUID,@POINT := @POINT + '1',-216.886719,1809.921631,84.503563,0,0,0),
+(@GUID,@POINT := @POINT + '1',-198.987488,1711.623169,56.695255,0,0,0),
+(@GUID,@POINT := @POINT + '1',-205.837692,1576.815308,29.152548,0,0,0),
+(@GUID,@POINT := @POINT + '1',-236.891464,1449.709106,14.442049,0,0,0),
+(@GUID,@POINT := @POINT + '1',-250.994446,1381.184204,10.943465,0,0,0),
+(@GUID,@POINT := @POINT + '1',-245.435089,1312.707642,17.504017,0,0,0),
+(@GUID,@POINT := @POINT + '1',-242.646530,1225.579590,32.766041,0,0,0),
+(@GUID,@POINT := @POINT + '1',-246.733353,1189.487305,42.817516,5000,5790404,4.803368); -- Pit Commander
+
+-- ----------------------------------------------------------
 -- Magus Filinthus
 -- ----------------------------------------------------------
 
