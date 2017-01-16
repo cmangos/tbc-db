@@ -840,7 +840,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 -- ----------------------------------------------------------
 
 -- Move the barkeep slightly to prevent his emotes from going through the table.
-UPDATE `creature` SET `position_x`=-708.8249,`position_y`=2740.1203,`position_z`=94.7337 WHERE `guid`=57884;
+-- UPDATE `creature` SET `position_x`=-708.8249,`position_y`=2740.1203,`position_z`=94.7337 WHERE `guid`=57884;
 
 UPDATE `creature_template` SET `extraflags`=16386 WHERE `entry`=16821; -- Civilian + ignore mmaps because of stairs messing up the movement otherwise. Old value: 2
 
@@ -883,7 +883,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`dataint`,`
 -- Pathing for  Entry: 16821 'TDB FORMAT'
 SET @GUID := 57879;
 SET @POINT := 0;
-UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`spawntimesecs`=1,`position_x`=-779.6566,`position_y`=2749.112,`position_z`=155.3301 WHERE `guid`=@GUID;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`spawntimesecs`=30,`position_x`=-779.6566,`position_y`=2749.112,`position_z`=155.3301 WHERE `guid`=@GUID;
 DELETE FROM `creature_movement` WHERE `id`=@GUID;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`orientation`,`script_id`) VALUES
 (@GUID,@POINT := @POINT + '1',-779.6566,2749.112,155.3301,0,0,0), -- 01:49:23
