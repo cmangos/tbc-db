@@ -17698,6 +17698,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flightmaster Krill Bitterhue
 ('1682201','16822','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Flightmaster Krill Bitterhue - Summon Enraged Gryphons and Yell on Aggro'),
 -- Crust Burster (16844) - npc_burster_worm
+-- Stormwind Cavalryman
+('1684301','16843','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Stormwind Cavalryman - Dismount on Aggro'),
+('1684302','16843','1','0','100','1','15000','15000','15000','15000','43','0','2410','0','0','0','0','0','0','0','0','0','Stormwind Cavalryman - Mount Out of Combat'), -- Has to be done this way due to creature_linking=no evade
 -- Mag'har Grunt
 ('1684601','16846','2','0','100','0','20','0','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Mag\'har Grunt - Cast Enrage When Below 20% HP'),
 -- Debilitated Mag'har Grunt
@@ -17757,6 +17760,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hulking Helboar
 ('1688001','16880','4','0','100','0','0','0','0','0','11','33909','0','0','0','0','0','0','0','0','0','0','Hulking Helboar - Cast Hulk on Aggro'),
 ('1688002','16880','8','0','100','0','34665','-1','0','0','16','16880','34665','6','0','0','0','0','0','0','0','0','Hulking Helboar - Quest Credit on Administer Antidote Spellhit (Quest: 10255)'),
+-- Father Malgor Devidicus
+('1682501','16825','1','0','100','1','3000','10000','3000','10000','5','92','0','0','0','0','0','0','0','0','0','0','Father Malgor Devidicus - Drink emote'),
 -- Blistering Rot
 ('1690101','16901','0','0','100','1','3000','7000','6000','11000','11','32722','0','0','0','0','0','0','0','0','0','0','Blistering Rot - Cast Blistering Rot'),
 -- Unyielding Footman
@@ -17789,6 +17794,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1691207','16912','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mag\'har Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1691208','16912','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mag\'har Hunter - Flee at 15% HP (Phase 2)'),
 ('1691209','16912','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mag\'har Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
+-- Nethergarde Infantry
+('1691301','16913','1','0','100','1','3000','10000','3000','10000','5','92','0','0','0','0','0','0','0','0','0','0','Nethergarde Infantry - Drink animation'),
 -- Bonechewer Raider
 ('1692501','16925','4','0','100','0','0','0','0','0','11','32723','0','0','0','0','0','0','0','0','0','0','Bonechewer Raider - Summon Bonechewer Riding Wolf on Aggro'),
 -- Stonescythe Alpha

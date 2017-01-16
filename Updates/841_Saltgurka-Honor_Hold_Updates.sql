@@ -28,9 +28,6 @@ UPDATE `creature` SET `equipment_id`=123 WHERE `guid` IN(57895,57889,58153,57942
 -- Father Malgor Devidicus - Drink emote
 -- ----------------------------------------------------------
 UPDATE `creature_template` SET `AIName`='EventAI' WHERE `entry`=16825;
-DELETE FROM `creature_ai_scripts` WHERE `creature_id`=16825;
-INSERT INTO `creature_ai_scripts` VALUES
-('1682501','16825','1','0','100','1','3000','10000','3000','10000','5','92','0','0','0','0','0','0','0','0','0','0','Father Malgor Devidicus - Drink emote'); -- 46583
 
 -- ----------------------------------------------------------
 -- Honor Hold Defenders
@@ -447,10 +444,6 @@ INSERT INTO `creature_linking` (`master_guid`,`guid`,`flag`)VALUES
 
 -- Creature id: 16843
 UPDATE creature_template SET AIName='EventAI' WHERE entry=16843;
-DELETE FROM creature_ai_scripts WHERE creature_id=16843;
-INSERT INTO creature_ai_scripts VALUES 
-('1684301','16843','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Stormwind Cavalryman - Dismount on Aggro'),
-('1684302','16843','1','0','100','1','15000','15000','15000','15000','43','0','2410','0','0','0','0','0','0','0','0','0','Stormwind Cavalryman - Mount Out of Combat'); -- See comment above
 
 UPDATE `creature` SET `orientation`=0 WHERE `guid`=57965;
 UPDATE `creature` SET `spawndist`=0,`MovementType`=0,`position_x`=-609.255,`position_y`=2519.03,`position_z`=67.1583,`orientation`=0 WHERE `guid`=57966;
@@ -523,10 +516,6 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 DELETE FROM `creature_template` WHERE `entry` = 16913;
 INSERT INTO `creature_template` (`Entry`, `Name`, `MinLevel`, `MaxLevel`, `ModelId1`, `ModelId2`, `FactionAlliance`, `FactionHorde`, `CreatureType`, `UnitFlags`, `UnitClass`, `DamageMultiplier`, `MinLevelHealth`, `MaxLevelHealth`, `MinMeleeDmg`, `MaxMeleeDmg`, `Armor`, `MeleeAttackPower`, `RangedAttackPower`, `MovementType`, `EquipmentTemplateId`, `AIName`) VALUES 
 ('16913', 'Nethergarde Infantry', '58', '60', '16377', '16376', '1671', '1671', '7', '832', '1', '0', '2900', '3900', '62', '95', '3791', '36', '100', '1', '5593', 'EventAI');
-
-DELETE FROM `creature_ai_scripts` WHERE `creature_id` = 16913;
-INSERT INTO `creature_ai_scripts` VALUES
-('1691301','16913','1','0','100','1','3000','10000','3000','10000','5','92','0','0','0','0','0','0','0','0','0','0','Nethergarde Infantry - Drink animation'); -- 46583
 
 UPDATE `creature` SET `id`=16913 WHERE `guid` IN (57896,57897,57898,57899);
 
