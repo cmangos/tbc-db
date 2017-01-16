@@ -333,6 +333,35 @@ INSERT INTO `creature_linking` (`guid`,`master_guid`,`flag`)VALUES
 (57952,57951,515);
 
 -- ----------------------------------------------------------
+-- Honor Hold Guards next to the destroyed keep
+
+DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000000904 AND 2000000908;
+INSERT INTO `db_script_string` (`entry`,`content_default`,`emote`) VALUES 
+(2000000904,'Twenty years we''ve been stranded in this hell-hole. It''s all I can do not to run screaming through that blasted Portal. I want to see my loved ones again! I want them to know I''m still alive.',1),
+(2000000905,'I feel the same. But there''s still a job to do out here. It''ll all be for naught if this evil finds its way back to Azeroth - back to our homes. We just have to hold on a while longer. Trust Danath - he''s never let us down before.',1),
+(2000000906,'It''s not him I''m worried about. It''s all these new rookies around here - and those creepy purple elves they brought with ''em. They ain''t even proved themselves yet.',1),
+(2000000907,'C''mon - you sound like a grumpy old man.',1),
+(2000000908,'I am a grumpy old man!',5);
+
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=7263601;
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`dataint`,`buddy_entry`,`search_radius`,`data_flags`,`comments`) VALUES
+(7263601,0,0,0,2000000904,0,0,0,'Honor Hold Defender Speech'),
+(7263601,15,1,5,0,0,0,0,'Honor Hold Defender Exclamation Emote'),
+(7263601,25,0,0,2000000905,16842,72637,16,'Honor Hold Defender2 Speech'),
+(7263601,40,1,1,0,16842,72637,16,'Honor Hold Defender2 Talk Emote'),
+(7263601,50,0,0,2000000906,0,0,0,'Honor Hold Defender Speech'),
+(7263601,65,0,0,2000000907,16842,72637,16,'Honor Hold Defender2 Speech'),
+(7263601,73,0,0,2000000908,0,0,0,'Honor Hold Defender Speech');
+
+SET @GUID := 72636;
+UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=@GUID;
+DELETE FROM `creature_movement` WHERE `id`=@GUID;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`waittime`,`script_id`) VALUES
+(@GUID,1,-665.296997,2662.179932,88.979301,4.398230,300000,7263601); -- 5min rest
+
+
+-- ----------------------------------------------------------
 -- Honor Hold Archers
 -- ----------------------------------------------------------
 
