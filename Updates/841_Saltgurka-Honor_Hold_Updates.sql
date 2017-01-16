@@ -18,6 +18,11 @@ UPDATE `creature_template` SET `ModelId1`=16377,`ModelId2`=16376,`ModelId3`=1637
 UPDATE `creature_model_info` SET `modelid_other_gender`=0 WHERE `modelid` IN(16375,16376,16377);
 UPDATE `creature_model_info` SET `modelid_alternative`=16377 WHERE `modelid`=16376; 
 
+-- Nethergarde infantry inside inn should have mugs and mutton in their hands.
+DELETE FROM `creature_equip_template` WHERE `entry` = 5593;
+INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`, `equipentry3`) VALUES
+(5593,2704,13407,0);
+
 -- The infantry that's doing work around the town and the guard at the outhouse should not be carrying any weapons. Override with an empty equip_template
 DELETE FROM `creature_equip_template` WHERE `entry`=123;
 INSERT INTO `creature_equip_template` (`entry`,`equipentry1`,`equipentry2`,`equipentry3`) VALUES
