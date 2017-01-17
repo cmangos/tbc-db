@@ -19,20 +19,15 @@ UPDATE `creature_model_info` SET `modelid_other_gender`=0 WHERE `modelid` IN(163
 UPDATE `creature_model_info` SET `modelid_alternative`=16377 WHERE `modelid`=16376; 
 
 -- Nethergarde infantry inside inn should have mugs and mutton in their hands.
-DELETE FROM `creature_equip_template` WHERE `entry` = 5593;
+DELETE FROM `creature_equip_template` WHERE `entry` = 124;
 INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`, `equipentry3`) VALUES
-(5593,2704,13407,0);
+(124,2704,13407,0);
 
 -- The infantry that's doing work around the town and the guard at the outhouse should not be carrying any weapons. Override with an empty equip_template
 DELETE FROM `creature_equip_template` WHERE `entry`=123;
 INSERT INTO `creature_equip_template` (`entry`,`equipentry1`,`equipentry2`,`equipentry3`) VALUES
 (123,0,0,0);
 UPDATE `creature` SET `equipment_id`=123 WHERE `guid` IN(57895,57889,58153,57942,58142,58149,58154,57904); -- Use an empty equip_template
-
--- ----------------------------------------------------------
--- Father Malgor Devidicus - Drink emote
--- ----------------------------------------------------------
-UPDATE `creature_template` SET `AIName`='EventAI' WHERE `entry`=16825;
 
 -- ----------------------------------------------------------
 -- Honor Hold Defenders
@@ -65,9 +60,9 @@ DELETE FROM `npc_text` WHERE `ID` = 15878;
 INSERT INTO `npc_text` (`ID`,`text0_0`,`prob0`,`em0_0`) VALUES
 (15878,'OY! Wait in line, would ya? Outland food doesn''t agree with me at all.',1,5); -- Exclamation emote
 
-DELETE FROM `gossip_menu` WHERE `entry`=20026;
+DELETE FROM `gossip_menu` WHERE `entry`=10006;
 INSERT INTO `gossip_menu` (`entry`,`text_id`) VALUES
-(20026,15878);
+(10006,15878);
 
 -- Pathing for  Entry: 16821 'TDB FORMAT' 
 SET @GUID := 57942;
@@ -182,11 +177,11 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@GUID,@POINT := @POINT + '1',-725.5215,2724.479,95.6583,4.015551,15000,5794204); -- Text
 
 -- Add missing spawn. (Proof: https://youtu.be/oAdpzodemN8?t=58s)
-DELETE FROM `creature` WHERE `guid`=120000;
+DELETE FROM `creature` WHERE `guid`=151000;
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `curhealth`, `MovementType`) VALUES 
-('120000', '16842', '530', '-661.241577', '2764.013184', '91.648140', '0', '300', '6600', '2');
+('151000', '16842', '530', '-661.241577', '2764.013184', '91.648140', '0', '300', '6600', '2');
 
-SET @GUID := 57948; -- member 120000
+SET @GUID := 57948; -- member 151000
 SET @POINT := 0;
 UPDATE `creature` SET `spawndist`=0,`MovementType`=2,`position_x`=-659.241577,`position_y`=2764.013184,`position_z`=89.648140,`orientation`=0 WHERE `guid`=@GUID;
 DELETE FROM `creature_movement` WHERE `id`=@GUID;
@@ -198,7 +193,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 
 DELETE FROM `creature_linking` WHERE `master_guid`= 57948;
 INSERT INTO `creature_linking` (`guid`,`master_guid`,`flag`)VALUES
-(120000,57948,515);
+(151000,57948,515);
 
 -- Pathing for  Entry: 16842 'TDB FORMAT'
 SET @GUID := 57943; -- member 57944
@@ -447,9 +442,6 @@ INSERT INTO `creature_linking` (`master_guid`,`guid`,`flag`)VALUES
 (57965,57967,1539),
 (57965,57968,1539);
 
--- Creature id: 16843
-UPDATE creature_template SET AIName='EventAI' WHERE entry=16843;
-
 UPDATE `creature` SET `orientation`=0 WHERE `guid`=57965;
 UPDATE `creature` SET `spawndist`=0,`MovementType`=0,`position_x`=-609.255,`position_y`=2519.03,`position_z`=67.1583,`orientation`=0 WHERE `guid`=57966;
 UPDATE `creature` SET `spawndist`=0,`MovementType`=0,`position_x`=-612.255,`position_y`=2519.03,`position_z`=67.1583,`orientation`=0 WHERE `guid`=57967;
@@ -520,7 +512,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 
 DELETE FROM `creature_template` WHERE `entry` = 16913;
 INSERT INTO `creature_template` (`Entry`, `Name`, `MinLevel`, `MaxLevel`, `ModelId1`, `ModelId2`, `FactionAlliance`, `FactionHorde`, `CreatureType`, `UnitFlags`, `UnitClass`, `DamageMultiplier`, `MinLevelHealth`, `MaxLevelHealth`, `MinMeleeDmg`, `MaxMeleeDmg`, `Armor`, `MeleeAttackPower`, `RangedAttackPower`, `MovementType`, `EquipmentTemplateId`, `AIName`) VALUES 
-('16913', 'Nethergarde Infantry', '58', '60', '16377', '16376', '1671', '1671', '7', '832', '1', '0', '2900', '3900', '62', '95', '3791', '36', '100', '1', '5593', 'EventAI');
+('16913', 'Nethergarde Infantry', '58', '60', '16377', '16376', '1671', '1671', '7', '832', '1', '0', '2900', '3900', '62', '95', '3791', '36', '100', '1', '124', 'EventAI');
 
 UPDATE `creature` SET `id`=16913 WHERE `guid` IN (57896,57897,57898,57899);
 
