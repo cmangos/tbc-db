@@ -18993,7 +18993,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2060701','20607','9','0','100','1','5','30','45000','55000','11','35313','1','0','0','0','0','0','0','0','0','0','Craghide Basilisk - Cast Hypnotic Gaze'),
 -- Talbuk Doe
 ('2061001','20610','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Reset flag on spawn'),
-('2061002','20610','8','0','100','0','35771','1','0','0','11','40347','6','2','11','45787','0','18','18','33554432','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
+('2061002','20610','8','0','100','0','35771','1','0','0','11','40347','6','2','11','42386','0','18','18','33554432','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
+('2061003','20610','8','0','100','0','35771','1','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
 -- Shimmerwing Moth 20611 
 -- Mana Invader 20618 
 -- Ethereum Relay 20619 
@@ -19017,7 +19018,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Markaru 20775 
 -- Talbuk Sire
 ('2077701','20777','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Talbuk Sire - Reset flag on spawn'),
-('2077702','20777','8','0','100','0','35771','1','0','0','11','40347','6','2','11','45787','0','18','18','33554432','0','0','Talbuk Sire - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
+('2077702','20777','8','0','100','0','35771','1','0','0','11','40347','6','2','11','42386','0','18','18','33554432','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
+('2077703','20777','8','0','100','0','35771','1','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
 -- Void Waste
 ('2077801','20778','0','0','100','1','2000','6000','7000','10000','11','36519','0','32','0','0','0','0','0','0','0','0','Void Waste - Cast Toxic Burst'),
 ('2077802','20778','8','0','100','0','35686','-1','0','0','36','20805','-1','0','0','0','0','0','0','0','0','0','Void Waste - Change Entry after (proc) Spell 35686'),
