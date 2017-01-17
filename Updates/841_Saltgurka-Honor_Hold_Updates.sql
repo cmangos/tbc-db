@@ -40,7 +40,7 @@ UPDATE `creature` SET `equipment_id`=123 WHERE `guid` IN(57895,57889,58153,57942
 
 UPDATE `creature` SET `id`=16842 WHERE `guid` IN(72636,72637);
 UPDATE `creature` SET `id`=20513,`spawndist`=0,`MovementType`=2 WHERE `guid`=57942;
-UPDATE `creature_template` SET `GossipMenuId`=20026,`NpcFlags`=1 WHERE `entry`=20513;
+UPDATE `creature_template` SET `GossipMenuId`=10006,`NpcFlags`=1 WHERE `entry`=20513;
 
 DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000000888 AND 2000000891;
 INSERT INTO `db_script_string` (`entry`,`content_default`,`emote`) VALUES 
