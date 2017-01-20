@@ -31,6 +31,8 @@ INSERT INTO npc_vendor VALUES -- horde NPC was missing this TBC-530
 
 -- Nightbane immune to interrupt and silence
 UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask|(33554432+256) WHERE entry=17225;
+-- Mightbane not tauntable
+UPDATE creature_template SET ExtraFlags=ExtraFlags|256 WHERE entry=17225;
 
 -- Celebras the Redeemed fixes
 -- fixes script getting stuck
