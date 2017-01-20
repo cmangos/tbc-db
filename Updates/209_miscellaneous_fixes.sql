@@ -120,3 +120,6 @@ UPDATE gameobject SET spawntimesecs=180 WHERE id IN(179486,179490);
 UPDATE creature_onkill_reputation SET RewOnKillRepValue1=12, MaxStanding1=5 WHERE creature_id=18797;
 UPDATE creature_onkill_reputation SET RewOnKillRepValue1=15 WHERE creature_id=20662;
 
+-- Add swimming InhabitType to Monstrous Crawler
+UPDATE creature_template SET InhabitType=3 WHERE entry=1088;
+
