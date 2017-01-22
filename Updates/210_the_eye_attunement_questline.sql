@@ -72,4 +72,7 @@ UPDATE creature_template SET MinLevelHealth=20250,MaxLevelHealth=20250 WHERE ent
 UPDATE creature_template SET MinLevelHealth=16200,MaxLevelHealth=16200 WHERE entry=21686;
 UPDATE creature_template SET MinLevelHealth=55888,MaxLevelHealth=55888 WHERE entry=21687;
 
+-- Trial of the Naaru: Mercy
+UPDATE creature_loot_template SET ChanceOrQuestChance=-100 WHERE item=31716;
+
 
