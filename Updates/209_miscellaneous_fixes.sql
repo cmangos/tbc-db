@@ -126,3 +126,6 @@ UPDATE creature_template SET InhabitType=3 WHERE entry=1088;
 -- remove custom scale from entries
 UPDATE creature_template SET Scale=0 WHERE entry IN(4324,10182);
 
+-- SSC attunement, correct chaining and cast Mark of Vashj on player on completion
+UPDATE quest_template SET PrevQuestId=10900,RewSpellCast=39145 WHERE entry=10901;
+
