@@ -632,22 +632,23 @@ insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('84973','8
 UPDATE creature SET position_x = '-11091.561523', position_y = '-1911.222046', position_z = '49.848724', orientation = '5.009161' WHERE guid = '85376';
 UPDATE creature SET position_x = '-11096.168945', position_y = '-1904.782471', position_z = '49.861694', orientation = '1.849504' WHERE guid = '85377';
 insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('84979','16389','532','1','0','0','-11097.2','-1901.61','49.8417','5.02565','86400','0','0','41916','0','0','0');
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85055','16407','532','1','0','0','-11099.2','-1898.3','49.8568','0.78686','86400','0','0','41916','0','0','2');
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85347','16407','532','1','0','0','-11092.1','-1914.78','49.86','1.6241','86400','0','0','40566','0','0','2');
+insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85055','16407','532','1','0','0','-11099.2','-1898.3','49.8568','0.78686','86400','0','0','41916','0','0','0');
+insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85347','16407','532','1','0','0','-11092.1','-1914.78','49.86','1.6241','86400','0','0','40566','0','0','0');
 
-DELETE FROM creature_movement WHERE id IN (85055);
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','1','-11099.2','-1898.3','49.8568','65000','0','0','0','0','0','0','0','0','0.78686','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','2','-11099.2','-1898.3','49.8568','55000','8505501','0','0','0','0','0','0','0','0.78686','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','3','-11099.2','-1898.3','49.8568','50000','0','0','0','0','0','0','0','0','0.78686','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','4','-11099.2','-1898.3','49.8568','80000','8505501','0','0','0','0','0','0','0','0.78686','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','5','-11099.2','-1898.3','49.8568','37000','0','0','0','0','0','0','0','0','0.78686','0','0');
-
-DELETE FROM creature_movement WHERE id IN (85347);
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','1','-11092.1','-1914.78','49.86','90000','0','0','0','0','0','0','0','0','1.6241','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','2','-11092.1','-1914.78','49.86','60000','0','0','0','0','0','0','0','0','1.6241','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','3','-11092.1','-1914.78','49.86','45000','8505501','0','0','0','0','0','0','0','1.6241','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','4','-11092.1','-1914.78','49.86','90000','0','0','0','0','0','0','0','0','1.6241','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','5','-11092.1','-1914.78','49.86','20000','8505501','0','0','0','0','0','0','0','1.6241','0','0');
+-- Commented out by Saltgurka. These should not be speaking.
+-- DELETE FROM creature_movement WHERE id IN (85055);
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','1','-11099.2','-1898.3','49.8568','65000','0','0','0','0','0','0','0','0','0.78686','0','0');
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','2','-11099.2','-1898.3','49.8568','55000','8505501','0','0','0','0','0','0','0','0.78686','0','0');
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','3','-11099.2','-1898.3','49.8568','50000','0','0','0','0','0','0','0','0','0.78686','0','0');
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','4','-11099.2','-1898.3','49.8568','80000','8505501','0','0','0','0','0','0','0','0.78686','0','0');
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85055','5','-11099.2','-1898.3','49.8568','37000','0','0','0','0','0','0','0','0','0.78686','0','0');
+-- 
+-- DELETE FROM creature_movement WHERE id IN (85347);
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','1','-11092.1','-1914.78','49.86','90000','0','0','0','0','0','0','0','0','1.6241','0','0');
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','2','-11092.1','-1914.78','49.86','60000','0','0','0','0','0','0','0','0','1.6241','0','0');
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','3','-11092.1','-1914.78','49.86','45000','8505501','0','0','0','0','0','0','0','1.6241','0','0');
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','4','-11092.1','-1914.78','49.86','90000','0','0','0','0','0','0','0','0','1.6241','0','0');
+-- insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85347','5','-11092.1','-1914.78','49.86','20000','8505501','0','0','0','0','0','0','0','1.6241','0','0');
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (8505501);
 insert into `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) values('8505501','0','0','0','0','0','0','0','2000000810','2000000811','2000000812','0','0','0','0','0','Spectral Servant - Random Say');
@@ -674,28 +675,33 @@ insert into `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 UPDATE creature SET equipment_id=5486 WHERE guid IN (84973,101409,85085,101404);
 
 
--- Last Group of 3 NPC on the Lower Floor (Stables)
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85350','16389','532','1','0','0','-11125','-1896.74','49.8918','6.11585','86400','0','0','41916','0','0','2');
+-- Last Group of 5 NPC on the Lower Floor (Stables)
+DELETE FROM `creature` WHERE `guid` IN(85352,85353); -- Others are deleted higher up
+insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85350','16389','532','1','0','0','-11125','-1896.74','49.8918','6.11585','86400','0','0','41916','0','0','0');
 insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85348','16389','532','1','0','0','-11122.7','-1896.08','49.8902','3.48162','86400','0','0','41916','0','0','0');
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85349','16389','532','1','0','0','-11121.6','-1890.82','49.8836','3.19338','86400','0','0','41916','0','0','2');
+insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85349','16389','532','1','0','0','-11121.6','-1890.82','49.8836','3.19338','86400','0','0','41916','0','0','0');
+insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85352','16407','532','1','0','0','-11123.614258','-1898.481812','49.889698','1.219402','86400','0','0','41916','0','0','2');
+insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85353','16407','532','1','0','0','-11123.963867','-1891.184082','49.891106','5.397719','86400','0','0','41916','0','0','2');
 
-DELETE FROM creature_movement WHERE id IN (85349);
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85349','1','-11121.6','-1890.82','49.8836','75000','0','0','0','0','0','0','0','0','3.19338','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85349','2','-11121.6','-1890.82','49.8836','35000','8505501','0','0','0','0','0','0','0','3.19338','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85349','3','-11121.6','-1890.82','49.8836','70000','0','0','0','0','0','0','0','0','3.19338','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85349','4','-11121.6','-1890.82','49.8836','80000','8505501','0','0','0','0','0','0','0','3.19338','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85349','5','-11121.6','-1890.82','49.8836','30000','0','0','0','0','0','0','0','0','3.19338','0','0');
+DELETE FROM creature_movement WHERE id IN (85352);
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85352','1','-11123.614258','-1898.481812','49.889698','75000','0','0','0','0','0','0','0','0','100','0','0');
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85352','2','-11123.614258','-1898.481812','49.889698','35000','8505501','0','0','0','0','0','0','0','100','0','0');
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85352','3','-11123.614258','-1898.481812','49.889698','70000','0','0','0','0','0','0','0','0','100','0','0');
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85352','4','-11123.614258','-1898.481812','49.889698','80000','8505501','0','0','0','0','0','0','0','100','0','0');
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85352','5','-11123.614258','-1898.481812','49.889698','30000','0','0','0','0','0','0','0','0','100','0','0');
 
-DELETE FROM creature_movement WHERE id IN (85350);
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85350','1','-11125','-1896.74','49.8918','45000','8505501','0','0','0','0','0','0','0','6.11585','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85350','2','-11125','-1896.74','49.8918','45000','0','0','0','0','0','0','0','0','6.11585','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85350','3','-11125','-1896.74','49.8918','90000','8505501','0','0','0','0','0','0','0','6.11585','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85350','4','-11125','-1896.74','49.8918','80000','0','0','0','0','0','0','0','0','6.11585','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85350','5','-11125','-1896.74','49.8918','65000','0','0','0','0','0','0','0','0','6.11585','0','0');
+DELETE FROM creature_movement WHERE id IN (85353);
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85353','1','-11123.963867','-1891.184082','49.891106','45000','8505501','0','0','0','0','0','0','0','100','0','0');
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85353','2','-11123.963867','-1891.184082','49.891106','45000','0','0','0','0','0','0','0','0','100','0','0');
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85353','3','-11123.963867','-1891.184082','49.891106','90000','8505501','0','0','0','0','0','0','0','100','0','0');
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85353','4','-11123.963867','-1891.184082','49.891106','80000','0','0','0','0','0','0','0','0','100','0','0');
+insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85353','5','-11123.963867','-1891.184082','49.891106','65000','0','0','0','0','0','0','0','0','100','0','0');
 
 DELETE FROM creature_linking WHERE master_guid IN (85350);
 insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('85348','85350','3');
 insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('85349','85350','3');
+insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('85352','85350','3');
+insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('85353','85350','3');
 
 
 
@@ -4202,13 +4208,13 @@ DELETE FROM game_event_creature WHERE guid=85355;
 DELETE FROM game_event_creature_data WHERE guid=85355;
 DELETE FROM creature_battleground WHERE guid=85355;
 DELETE FROM creature_linking WHERE guid=85355 OR master_guid=85355;
-DELETE FROM creature WHERE guid=85353;
+-- DELETE FROM creature WHERE guid=85353;
 DELETE FROM creature_addon WHERE guid=85353;
-DELETE FROM creature_movement WHERE id=85353;
+-- DELETE FROM creature_movement WHERE id=85353;
 DELETE FROM game_event_creature WHERE guid=85353;
 DELETE FROM game_event_creature_data WHERE guid=85353;
 DELETE FROM creature_battleground WHERE guid=85353;
-DELETE FROM creature_linking WHERE guid=85353 OR master_guid=85353;
+-- DELETE FROM creature_linking WHERE guid=85353 OR master_guid=85353;
 
 
 -- Spell Shade Group
