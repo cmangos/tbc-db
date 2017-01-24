@@ -2043,39 +2043,42 @@ DELETE FROM creature_linking WHERE guid=57059 OR master_guid=57059;
 
 
 -- Spectral Servant Pathing Down The Stairs
-UPDATE creature SET position_x = '-10917.510742', position_y = '-2004.839844', position_z = '92.182434', orientation = '4.581106' WHERE guid = '85024';
-
+UPDATE creature SET position_x = '-10911.2', position_y = '-2000.3', position_z = '92.184', orientation = '4.14224' WHERE guid = '85024';
+-- Waypoints fixed, source wotlk-db
 DELETE FROM creature_movement WHERE id IN (85024);
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','1','-10919.5','-2021.17','92.1844','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','2','-10921.8','-2041.82','86.0719','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','3','-10924.8','-2043.54','86.072','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','4','-10936.5','-2042.3','86.0729','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','5','-10938.3','-2039.02','86.0714','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','6','-10935.8','-2018.83','79.9744','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','7','-10947','-2017.47','79.9744','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','8','-10935.5','-2018.97','79.9744','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','9','-10938.1','-2039.26','86.0706','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','10','-10936.3','-2042.56','86.071','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','11','-10924.6','-2043.78','86.0727','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','12','-10921.2','-2042.01','86.0712','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','13','-10919','-2021.42','92.1838','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','14','-10917','-2001.99','92.1825','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','15','-10913.8','-1999.84','92.1832','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','16','-10910.6','-2000.19','92.1832','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','17','-10906.8','-1994.91','92.1842','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','18','-10904.8','-1972.5','92.1845','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','19','-10903','-1954.15','92.1857','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','20','-10901.4','-1935.77','92.185','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','21','-10900','-1921.7','92.1832','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','22','-10901.6','-1936.23','92.1847','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','23','-10902.9','-1955.29','92.186','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','24','-10904.7','-1972.81','92.1851','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','25','-10906.8','-1995.33','92.1851','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','26','-10910.4','-2000.62','92.1851','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','27','-10913.7','-1999.91','92.1835','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','28','-10916.8','-2002.2','92.1835','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85024','29','-10917.7','-2005.19','92.1835','0','0','0','0','0','0','0','0','0','0','0','0');
-
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(85024,1,-10916.9,-2002.36,92.183,0,0,4.20329),
+(85024,2,-10919.7,-2026.27,92.1834,0,0,4.59992),
+(85024,3,-10920.8,-2036.76,86.0722,0,0,4.38157),
+(85024,4,-10922.9,-2042.15,86.0722,0,0,3.93547),
+(85024,5,-10928.7,-2043.93,86.0726,0,0,3.04247),
+(85024,6,-10934.2,-2042.9,86.0726,0,0,2.43065),
+(85024,7,-10937.1,-2039.5,86.0726,0,0,1.7935),
+(85024,8,-10937.6,-2034.7,86.0712,0,0,1.49427),
+(85024,9,-10936.3,-2023.85,79.9743,0,0,1.49034),
+(85024,10,-10936.4,-2020.46,79.9743,0,0,2.1917),
+(85024,11,-10938.4,-2018.53,79.9743,0,0,3.08077),
+(85024,12,-10947.8,-2018.26,79.9743,0,0,3.05642),
+(85024,13,-10937,-2019.36,79.9743,0,0,5.57677),
+(85024,14,-10936,-2021.73,79.9743,0,0,4.64948),
+(85024,15,-10936.1,-2024.25,79.974,0,0,4.61021),
+(85024,16,-10937.5,-2034.22,86.0707,0,0,4.5788),
+(85024,17,-10936.9,-2039.84,86.0712,0,0,5.25263),
+(85024,18,-10933.3,-2043.53,86.072,0,0,5.97912),
+(85024,19,-10927.8,-2043.82,86.0725,0,0,0.112188),
+(85024,20,-10922.8,-2041.88,86.0725,0,0,1.0044),
+(85024,21,-10920.7,-2036.8,86.0714,0,0,1.4238),
+(85024,22,-10919.6,-2026.59,92.183,0,0,1.45129),
+(85024,23,-10917.2,-2002.8,92.1832,0,0,0.567719),
+(85024,24,-10911.4,-2000.2,92.1832,0,0,1.00597),
+(85024,25,-10907.8,-1994.65,92.1843,0,0,1.19247),
+(85024,26,-10905.8,-1976.78,92.1846,0,0,1.4595),
+(85024,27,-10904,-1963.18,92.1732,0,0,1.4006),
+(85024,28,-10887.2,-1964.69,92.1718,0,0,6.16944),
+(85024,29,-10904,-1962.55,92.1727,0,0,4.52403),
+(85024,30,-10905.6,-1976.29,92.1855,0,0,4.6065),
+(85024,31,-10908,-1995.75,92.1855,0,0,4.1111),
+(85024,32,-10911.1,-1999.73,92.184,0,0,3.84642);
 
 -- Another Pathing Spectral Servant
 UPDATE creature SET position_x = '-10923.925781', position_y = '-1999.406494', position_z = '92.183105', orientation = '0.349380' WHERE guid = '85002';
@@ -2270,69 +2273,157 @@ insert into `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 
 
 -- Spectral Servant Pathing Along Edge All The Way Around
-UPDATE creature SET position_x = '-10946.081055', position_y = '-2007.330444', position_z = '93.824371', orientation = '1.448168', MovementType = '2' WHERE guid = '85002';
-
+UPDATE creature SET position_x = '-10945.8', position_y = '-1937.39', position_z = '93.8207', orientation = '2.44967', MovementType = '2' WHERE guid = '85002';
+-- Waypoints fixed, source wotlk-db
 DELETE FROM creature_movement WHERE id IN (85002);
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','1','-10941.9','-1978.09','93.8236','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','2','-10939','-1954.13','93.8236','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','3','-10938.2','-1942.83','93.8205','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','4','-10945.5','-1935.71','93.82','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','5','-10940.4','-1891.35','93.82','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','6','-10945','-1935.82','93.82','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','7','-10937.5','-1942.77','93.8207','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','8','-10938.6','-1954.52','93.8223','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','9','-10941.6','-1978.45','93.8226','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','10','-10946.1','-2006.96','93.8226','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','11','-10949.6','-2039.12','93.8226','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','12','-10954.7','-2040.14','93.8226','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','13','-10998.2','-2034.44','93.8234','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','14','-10998.4','-2029.78','93.8234','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','15','-10993.6','-1989.05','93.8313','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','16','-11003.2','-1981.86','93.8317','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','17','-11009.3','-1974.32','93.8335','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','18','-11007.9','-1970.34','93.8335','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','19','-10999.9','-1965.14','93.8335','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','20','-10990.1','-1961.81','93.8329','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','21','-10989.2','-1949.38','93.8248','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','22','-10992.5','-1949.49','93.8262','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','23','-10993.9','-1959.77','93.8234','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','24','-11016.6','-1957.03','93.8255','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','25','-11015.3','-1944.18','93.8248','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','26','-11019.1','-1943.93','93.8271','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','27','-11021.2','-1969.24','93.8254','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','28','-11022.3','-1982.36','93.8275','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','29','-10998.4','-1985.08','93.8311','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','30','-10993','-1989.32','93.8314','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','31','-10998.7','-2030.45','93.8236','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','32','-10997.8','-2034.55','93.8236','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','33','-10953','-2039.67','93.8233','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','34','-10949','-2037.4','93.8233','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85002','35','-10945.8','-2009.24','93.8233','0','0','0','0','0','0','0','0','0','0','0','0');
-
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(85002,1,-10943.3,-1919.21,93.8204,0,0,1.4064),
+(85002,2,-10940.9,-1898.83,93.8204,0,0,1.41504),
+(85002,3,-10943.3,-1918.74,93.8204,0,0,4.58334),
+(85002,4,-10945.3,-1937.43,93.8204,0,0,5.45314),
+(85002,5,-10937.8,-1944.18,93.82,0,0,4.59706),
+(85002,6,-10940,-1960.04,93.8244,0,0,4.56172),
+(85002,7,-10940.9,-1967.86,93.8244,0,0,4.76749),
+(85002,8,-10941.9,-1976.56,93.8244,0,0,4.49522),
+(85002,9,-10944,-1994.69,93.8244,0,0,4.55805),
+(85002,10,-10946.8,-2020.59,93.8244,0,0,4.58946),
+(85002,11,-10949,-2039.38,93.8244,0,0,2.94484),
+(85002,12,-10970.8,-2036.96,93.823,0,0,3.0383),
+(85002,13,-10998.5,-2034.09,93.8234,0,0,1.5107),
+(85002,14,-10996.4,-2015.4,93.8226,0,0,1.4518),
+(85002,15,-10993.9,-1987.12,93.8331,0,0,2.68095),
+(85002,16,-10999.5,-1984.85,93.8331,0,0,2.42334),
+(85002,17,-11003.9,-1981.12,93.8328,0,0,2.34235),
+(85002,18,-11010.1,-1972.48,93.8336,0,0,0.502162),
+(85002,19,-10999.1,-1964.65,93.8336,0,0,0.485668),
+(85002,20,-10992.3,-1960.35,93.829,0,0,0.976542),
+(85002,21,-10990.1,-1956.12,93.8219,0,0,1.41087),
+(85002,22,-10989.6,-1951.54,93.8257,0,0,2.98324),
+(85002,23,-10992.5,-1951.31,93.8238,0,0,4.51398),
+(85002,24,-10993.6,-1957.15,93.8189,0,0,4.19831),
+(85002,25,-10996.6,-1960.65,93.8319,0,0,3.62026),
+(85002,26,-11001.8,-1963.04,93.8319,0,0,3.38778),
+(85002,27,-11007,-1963.55,93.8319,0,0,3.0422),
+(85002,28,-11016.4,-1961.16,93.8271,0,0,2.27487),
+(85002,29,-11019.6,-1955.1,93.8272,0,0,1.66461),
+(85002,30,-11018.6,-1944.95,93.8269,0,0,1.39679),
+(85002,31,-11019.3,-1956.88,93.828,0,0,5.00727),
+(85002,32,-11015.2,-1961.86,93.8266,0,0,5.80679),
+(85002,33,-11004.9,-1963.63,93.8304,0,0,0.041585),
+(85002,34,-10997.8,-1961.53,93.8313,0,0,0.489262),
+(85002,35,-10993.1,-1956.71,93.8188,0,0,1.05868),
+(85002,36,-10992.6,-1950.81,93.8228,0,0,6.22738),
+(85002,37,-10989.4,-1951.63,93.8255,0,0,4.57019),
+(85002,38,-10990.8,-1957.83,93.823,0,0,4.16314),
+(85002,39,-10992.9,-1960.72,93.8268,0,0,3.72646),
+(85002,40,-11010,-1972.64,93.8339,0,0,5.43156),
+(85002,41,-11003.5,-1981.47,93.8339,0,0,5.54495),
+(85002,42,-10998.5,-1985.22,93.8324,0,0,5.91408),
+(85002,43,-10993.5,-1987.31,93.8346,0,0,4.53964),
+(85002,44,-10996.3,-2014.51,93.8233,0,0,4.61032),
+(85002,45,-10998.7,-2033.83,93.8239,0,0,6.21253),
+(85002,46,-10971,-2037.04,93.8226,0,0,6.16148),
+(85002,47,-10949.1,-2039.68,93.8233,0,0,1.41767),
+(85002,48,-10945.8,-2011.43,93.8233,0,0,1.44486),
+(85002,49,-10942,-1977.16,93.8233,0,0,1.16447),
+(85002,50,-10940.4,-1972.92,93.8233,0,0,1.7221),
+(85002,51,-10941.3,-1967.79,93.8234,0,0,1.48727),
+(85002,52,-10937.7,-1944.51,93.8204,0,0,2.31351),
+(85002,53,-10945.7,-1937.36,93.8204,0,0,2.43524);
 
 -- Spectral Servant Pathing The Far Side
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85003','16407','532','1','0','0','-10940.9','-2007.76','93.8233','4.56542','86400','0','0','40566','0','0','2');
-
+insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('85003','16407','532','1','0','0','-10954.8','-2042.3','93.8209','3.06687','86400','0','0','40566','0','0','2');
+-- Waypoints fixed, source wotlk-db
 DELETE FROM creature_movement WHERE id IN (85003);
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','1','-10944.9','-2042.26','93.8233','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','2','-10949','-2043.57','93.8233','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','3','-11000.9','-2037.29','93.8234','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','4','-11001.8','-2032.61','93.8234','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','5','-10996.7','-1991','93.8254','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','6','-11000.3','-1987.36','93.8265','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','7','-11019.9','-1984.66','93.8286','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','8','-11023.4','-1979.58','93.8272','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','9','-11021','-1963.89','93.8261','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','10','-11023.2','-1979.81','93.827','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','11','-11019.4','-1985.35','93.8288','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','12','-10999.8','-1987.79','93.8288','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','13','-10996.1','-1991.7','93.8267','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','14','-11001.5','-2032.91','93.8233','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','15','-10997.4','-2038.48','93.8233','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','16','-10948.7','-2043.93','93.8234','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','17','-10944.7','-2040.24','93.8234','0','0','0','0','0','0','0','0','0','0','0','0');
-insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('85003','18','-10940.8','-2005.73','93.8234','0','0','0','0','0','0','0','0','0','0','0','0');
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(85003,1,-10977.5,-2040.33,93.8186,0,0,3.02724),
+(85003,2,-11003,-2036.79,93.8234,0,0,1.43288),
+(85003,3,-11000.3,-2011.53,93.8187,0,0,1.48001),
+(85003,4,-10998.5,-1988.94,93.8268,0,0,2.55993),
+(85003,5,-11002.3,-1986.53,93.8273,0,0,3.02567),
+(85003,6,-11020.8,-1984.43,93.8285,0,0,2.45626),
+(85003,7,-11022.6,-1979.85,93.8285,0,0,1.69938),
+(85003,8,-11021.5,-1971.8,93.827,0,0,3.01329),
+(85003,9,-11025.8,-1971.1,93.8255,0,0,3.04628),
+(85003,10,-11021.5,-1971.75,93.8259,0,0,4.65399),
+(85003,11,-11022.5,-1981.15,93.8274,0,0,5.10778),
+(85003,12,-11020.2,-1984.48,93.8288,0,0,5.92302),
+(85003,13,-11000.4,-1987.18,93.8292,0,0,5.65484),
+(85003,14,-10998.5,-1989.25,93.8276,0,0,4.86631),
+(85003,15,-11001,-2017.83,93.8186,0,0,4.59771),
+(85003,16,-11002.4,-2036.59,93.8234,0,0,5.66977),
+(85003,17,-10995.9,-2038.62,93.8234,0,0,6.19991),
+(85003,18,-10965.6,-2041.46,93.8209,0,0,6.17635),
+(85003,19,-10946.6,-2043.22,93.8234,0,0,1.51501),
+(85003,20,-10943.2,-2014.11,93.8234,0,0,1.46907),
+(85003,21,-10941,-2001.39,93.8234,0,0,0.3538),
+(85003,22,-10935,-2000.37,92.183,0,0,6.17203),
+(85003,23,-10940.6,-2001.14,93.8254,0,0,4.36954),
+(85003,24,-10943.5,-2018.75,93.8254,0,0,4.6033),
+(85003,25,-10947,-2042.79,93.8254,0,0,3.06785),
+(85003,26,-10954,-2042.51,93.8254,0,0,3.06392);
 
+-- 2 missing Spectral Servant patrols added
+-- Source: wotlk-db
+DELETE FROM `creature` WHERE `guid` IN(85037,85009);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES 
+(85009, 16407, 532, 1, 0, 0, -10939, -1960.1, 93.8242, 4.65429, 14400, 0, 0, 40566, 0, 0, 2),
+(85037, 16407, 532, 1, 0, 0, -10929.6, -1971.55, 92.1902, 3.78897, 14400, 0, 0, 40566, 0, 0, 2);
+
+DELETE FROM creature_movement WHERE id IN (85009);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(85009,1,-10940.2,-1973.64,93.8247,0,0,4.85444),
+(85009,2,-10938.7,-1978.97,93.8247,0,0,5.44741),
+(85009,3,-10934.2,-1983.91,92.1832,0,0,5.36102),
+(85009,4,-10930.3,-1990.17,92.1832,0,0,4.93926),
+(85009,5,-10929.7,-1997.99,92.1832,0,0,6.05924),
+(85009,6,-10927.3,-1997.9,92.1832,0,0,0.672978),
+(85009,7,-10923,-1993.13,92.1832,0,0,0.556801),
+(85009,8,-10907.6,-1987.53,92.1841,0,0,1.07752),
+(85009,9,-10907.7,-1983.21,92.1841,0,0,2.12659),
+(85009,10,-10914.9,-1976.66,92.1841,0,0,2.07289),
+(85009,11,-10918.9,-1961.26,92.1772,0,0,1.48751),
+(85009,12,-10913.8,-1945.75,92.1905,0,0,1.48123),
+(85009,13,-10913.4,-1934.54,92.1977,0,0,2.28234),
+(85009,14,-10917.7,-1933.11,92.1978,0,0,3.38111),
+(85009,15,-10928.9,-1939.34,92.1833,0,0,3.36881),
+(85009,16,-10931.9,-1938.4,93.8243,0,0,2.1216),
+(85009,17,-10932.5,-1924.93,93.8227,0,0,1.82315),
+(85009,18,-10936.5,-1913.97,93.8196,0,0,2.48367),
+(85009,19,-10940.7,-1913.28,93.8197,0,0,3.51176),
+(85009,20,-10943.7,-1916.1,93.8197,0,0,4.41953),
+(85009,21,-10946.4,-1934.47,93.8197,0,0,4.81537),
+(85009,22,-10945.4,-1939.65,93.8197,0,0,5.45153),
+(85009,23,-10941.3,-1943.85,93.8189,0,0,5.27953),
+(85009,24,-10938.7,-1949.25,93.8197,0,0,4.92139),
+(85009,25,-10939,-1959.69,93.8231,0,0,4.66221);
+
+DELETE FROM creature_movement WHERE id IN (85037);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(85037,1,-10930.2,-1974.14,92.1811,0,0,4.97965),
+(85037,2,-10924.1,-1986.02,92.1835,0,0,5.25061),
+(85037,3,-10920.9,-1992.06,92.1835,0,0,5.48622),
+(85037,4,-10916.6,-1995.72,92.1835,0,0,5.8852),
+(85037,5,-10909.6,-1997.67,92.1837,0,0,1.17045),
+(85037,6,-10906.3,-1973.6,92.1844,0,0,1.41393),
+(85037,7,-10903.4,-1951.48,92.1859,0,0,1.46105),
+(85037,8,-10899.8,-1928.96,92.1844,0,0,1.8514),
+(85037,9,-10902.5,-1922.91,92.1844,0,0,2.44732),
+(85037,10,-10908,-1921.64,92.2038,0,0,3.26715),
+(85037,11,-10916.9,-1922.34,92.1969,0,0,3.01975),
+(85037,12,-10926.9,-1919.77,92.1837,0,0,3.10615),
+(85037,13,-10932.5,-1917.74,93.8192,0,0,2.32252),
+(85037,14,-10943.6,-1903.07,93.8198,0,0,2.13795),
+(85037,15,-10944.7,-1919.94,93.8198,0,0,5.07533),
+(85037,16,-10942.9,-1925,93.8198,0,0,5.61198),
+(85037,17,-10938.1,-1929.66,93.8198,0,0,6.18672),
+(85037,18,-10916.3,-1932.04,92.1985,0,0,5.63301),
+(85037,19,-10913.1,-1936.05,92.1969,0,0,4.79264),
+(85037,20,-10916.5,-1946.13,92.1907,0,0,4.24287),
+(85037,21,-10918.6,-1950.79,92.1862,0,0,5.38562),
+(85037,22,-10915.8,-1954.34,92.1848,0,0,5.06284),
+(85037,23,-10914.7,-1956.37,92.18,0,0,4.13372),
+(85037,24,-10928.8,-1971.05,92.1806,0,0,3.76305);
 
 -- Ebonlocke (Data Backported From UDB 4.3.4 Sniff Data)
 UPDATE creature_template SET GossipMenuId=8175 WHERE entry IN (16806);
@@ -3040,9 +3131,9 @@ DELETE FROM game_event_creature WHERE guid=85213;
 DELETE FROM game_event_creature_data WHERE guid=85213;
 DELETE FROM creature_battleground WHERE guid=85213;
 DELETE FROM creature_linking WHERE guid=85213 OR master_guid=85213;
-DELETE FROM creature WHERE guid=85037;
+-- DELETE FROM creature WHERE guid=85037;
 DELETE FROM creature_addon WHERE guid=85037;
-DELETE FROM creature_movement WHERE id=85037;
+-- DELETE FROM creature_movement WHERE id=85037;
 DELETE FROM game_event_creature WHERE guid=85037;
 DELETE FROM game_event_creature_data WHERE guid=85037;
 DELETE FROM creature_battleground WHERE guid=85037;
