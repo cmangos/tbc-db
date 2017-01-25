@@ -8,7 +8,7 @@ DELETE FROM `creature` WHERE `guid`=151030;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES 
 ('151030', '19201', '530', '1', '0', '0', '-1190.294', '8772.655', '44.03177', '3.00052', '300', '0', '0', '14496', '0', '0', '2');
 -- Relocate the other spawns to the same GUID range
-UPDATE `creature` SET `guid`=151031 WHERE `guid`=68733 AND `id`=19201;
+UPDATE `creature` SET `guid`=151031, `curhealth`=14496 WHERE `guid`=68733 AND `id`=19201; -- error fix (health was incorrect)
 UPDATE `creature` SET `guid`=151032 WHERE `guid`=68734 AND `id`=19201;
 UPDATE `creature` SET `guid`=151033 WHERE `guid`=68735 AND `id`=19201;
 UPDATE `creature` SET `guid`=151034 WHERE `guid`=68736 AND `id`=19201;
