@@ -3713,21 +3713,132 @@ DELETE FROM creature_battleground WHERE guid=57187;
 DELETE FROM creature_linking WHERE guid=57187 OR master_guid=57187;
 
 
--- Add Missing Ghastly Haunt
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('57183','16481','532','1','0','0','-11062.1','-2014.99','96.9886','1.73657','86400','6','0','73800','0','0','1');
+-- Random spawns for Trapped Souls and Ghastly Haunts
+-- missing creatures added. Source wotlk-db
+DELETE FROM `creature` WHERE `id`IN(16481,16482);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151010, 16481, 532, 1, 0, 0, -11045.2, -1973.17, 143.078, 5.76862, 14400, 5, 0, 51660, 0, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151011, 16481, 532, 1, 0, 0, -11063.7, -1948.29, 124.578, 1.1929, 14400, 5, 0, 51660, 0, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151012, 16481, 532, 1, 0, 0, -11061.9, -2032.53, 115.17, 5.24006, 14400, 5, 0, 51660, 0, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151013, 16481, 532, 1, 0, 0, -11010.5, -1964.66, 110.077, 0.268507, 14400, 5, 0, 51660, 0, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151014, 16481, 532, 1, 0, 0, -11038, -1948.52, 113.32, 2.59801, 14400, 5, 0, 51660, 0, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151015, 16481, 532, 1, 0, 0, -11053, -1949.28, 96.472, 2.12436, 14400, 5, 0, 51660, 0, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151016, 16481, 532, 1, 0, 0, -11060.2, -2014.64, 97.019, 5.98857, 14400, 5, 0, 51660, 0, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151017, 16481, 532, 1, 0, 0, -11090.5, -1969.23, 92.6019, 1.52474, 14400, 5, 0, 51660, 0, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151018, 16481, 532, 1, 0, 0, -11057.7, -1997.75, 115.226, 2.9081, 14400, 5, 0, 51660, 0, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151019, 16481, 532, 1, 0, 0, -11051.3, -1982.27, 158.296, 4.31096, 14400, 0, 0, 51660, 0, 0, 0);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151020, 16482, 532, 1, 0, 0, -11051.2, -1982.32, 158.191, 4.91253, 14400, 5, 0, 41321, 33090, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151021, 16482, 532, 1, 0, 0, -11057.4, -1997.93, 115.226, 3.16662, 14400, 5, 0, 41321, 33090, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151022, 16482, 532, 1, 0, 0, -11052.8, -1949.66, 96.4722, 2.09848, 14400, 5, 0, 41321, 33090, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151023, 16482, 532, 1, 0, 0, -11090.3, -1968.85, 92.5991, 2.20059, 14400, 5, 0, 41321, 33090, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151024, 16482, 532, 1, 0, 0, -11060.5, -2014.54, 97.014, 5.07515, 14400, 5, 0, 41321, 33090, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151025, 16482, 532, 1, 0, 0, -11061.9, -2032.95, 115.235, 4.92807, 14400, 5, 0, 41321, 33090, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151026, 16482, 532, 1, 0, 0, -11010.4, -1964.47, 110.108, 0.797895, 14400, 5, 0, 41321, 33090, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151027, 16482, 532, 1, 0, 0, -11038.1, -1948.53, 113.325, 1.8208, 14400, 5, 0, 41321, 33090, 0, 1);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151028, 16482, 532, 1, 0, 0, -11044.9, -1973.42, 143.162, 4.18879, 14400, 0, 0, 41321, 33090, 0, 0);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES (151029, 16482, 532, 1, 0, 0, -11063.4, -1947.76, 124.578, 1.14371, 14400, 5, 0, 41321, 33090, 0, 1);
 
-
--- Add Missing Trapped Soul
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('57181','16482','532','1','0','0','-11050.2','-1950.5','96.4721','2.42536','86400','6','0','41321','33090','0','1');
-
-
--- Add Missing Ghastly Haunt
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('57177','16481','532','1','0','0','-11063.5','-2035.54','115.17','4.74447','86400','6','0','73800','0','0','1');
-
-
--- Add Missing Ghastly Haunt
-insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('57186','16481','532','1','0','0','-11047.2','-1976.11','143.079','0.37844','86400','6','0','73800','0','0','1');
-
+ 
+-- Pools created
+ 
+-- Pool Templates -- Pool 1
+DELETE FROM pool_template WHERE entry = 25577;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25577, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 1');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25577;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151020, 25577, 0, 'Karazhan - Trapped Soul'),
+(151019, 25577, 0, 'Karazhan - Ghastly Haunt');
+ 
+-- Pool Templates -- Pool 2
+DELETE FROM pool_template WHERE entry = 25578;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25578, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 2');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25578;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151021, 25578, 0, 'Karazhan - Trapped Soul'),
+(151018, 25578, 0, 'Karazhan - Ghastly Haunt');
+ 
+-- Pool Templates -- Pool 3
+DELETE FROM pool_template WHERE entry = 25579;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25579, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 3');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25579;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151022, 25579, 0, 'Karazhan - Trapped Soul'),
+(151015, 25579, 0, 'Karazhan - Ghastly Haunt');
+ 
+-- Pool Templates -- Pool 4
+DELETE FROM pool_template WHERE entry = 25580;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25580, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 4');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25580;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151023, 25580, 0, 'Karazhan - Trapped Soul'),
+(151017, 25580, 0, 'Karazhan - Ghastly Haunt');
+ 
+-- Pool Templates -- Pool 5
+DELETE FROM pool_template WHERE entry = 25581;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25581, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 5');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25581;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151024, 25581, 0, 'Karazhan - Trapped Soul'),
+(151016, 25581, 0, 'Karazhan - Ghastly Haunt');
+ 
+-- Pool Templates -- Pool 6
+DELETE FROM pool_template WHERE entry = 25582;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25582, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 6');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25582;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151025, 25582, 0, 'Karazhan - Trapped Soul'),
+(151012, 25582, 0, 'Karazhan - Ghastly Haunt');
+ 
+-- Pool Templates -- Pool 7
+DELETE FROM pool_template WHERE entry = 25583;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25583, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 7');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25583;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151026, 25583, 0, 'Karazhan - Trapped Soul'),
+(151013, 25583, 0, 'Karazhan - Ghastly Haunt');
+ 
+-- Pool Templates -- Pool 8
+DELETE FROM pool_template WHERE entry = 25584;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25584, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 8');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25584;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151027, 25584, 0, 'Karazhan - Trapped Soul'),
+(151014, 25584, 0, 'Karazhan - Ghastly Haunt');
+ 
+-- Pool Templates -- Pool 9
+DELETE FROM pool_template WHERE entry = 25585;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25585, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 9');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25585;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151028, 25585, 0, 'Karazhan - Trapped Soul'),
+(151010, 25585, 0, 'Karazhan - Ghastly Haunt');
+ 
+-- Pool Templates -- Pool 10
+DELETE FROM pool_template WHERE entry = 25586;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(25586, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 10');
+-- Individual Creature Spawn Pools
+DELETE FROM pool_creature WHERE pool_entry = 25586;
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES
+(151029, 25586, 0, 'Karazhan - Trapped Soul'),
+(151011, 25586, 0, 'Karazhan - Ghastly Haunt');
 
 -- ======================
 -- The Menagerie Overhaul
