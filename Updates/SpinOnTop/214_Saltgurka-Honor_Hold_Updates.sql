@@ -44,19 +44,19 @@ UPDATE `creature` SET `id`=16842 WHERE `guid` IN(72636,72637);
 UPDATE `creature` SET `id`=20513,`spawndist`=0,`MovementType`=2 WHERE `guid`=57942;
 UPDATE `creature_template` SET `GossipMenuId`=10006,`NpcFlags`=1 WHERE `entry`=20513;
 
-DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000000888 AND 2000000891;
+DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001051 AND 2000001054;
 INSERT INTO `db_script_string` (`entry`,`content_default`,`emote`) VALUES 
-(2000000888,'Do ya want me to call a medic? Maybe a priest? It''s been over an hour, mate!',5),
-(2000000889,'So help me, I''m gonna count to ten and if yer not outta there by the time I reach 10, I''m comin'' in!',5),
-(2000000890,'What''s goin'' on in there?? For the love of the LIGHT, hurry it up!',5),
-(2000000891,'OY! You in there, this is official Honor Hold business yer holdin'' up!',5);
+(2000001051,'Do ya want me to call a medic? Maybe a priest? It''s been over an hour, mate!',5),
+(2000001052,'So help me, I''m gonna count to ten and if yer not outta there by the time I reach 10, I''m comin'' in!',5),
+(2000001053,'What''s goin'' on in there?? For the love of the LIGHT, hurry it up!',5),
+(2000001054,'OY! You in there, this is official Honor Hold business yer holdin'' up!',5);
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 5794201 AND 5794204;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`dataint`,`comments`) VALUES
-(5794201,0,0,0,2000000888,'Outhouse Honor Hold Guard Text1'),
-(5794202,0,0,0,2000000889,'Outhouse Honor Hold Guard Text2'),
-(5794203,0,0,0,2000000890,'Outhouse Honor Hold Guard Text3'),
-(5794204,0,0,0,2000000891,'Outhouse Honor Hold Guard Text4');
+(5794201,0,0,0,2000001051,'Outhouse Honor Hold Guard Text1'),
+(5794202,0,0,0,2000001052,'Outhouse Honor Hold Guard Text2'),
+(5794203,0,0,0,2000001053,'Outhouse Honor Hold Guard Text3'),
+(5794204,0,0,0,2000001054,'Outhouse Honor Hold Guard Text4');
 
 DELETE FROM `npc_text` WHERE `ID` = 15878;
 INSERT INTO `npc_text` (`ID`,`text0_0`,`prob0`,`em0_0`) VALUES
@@ -334,24 +334,24 @@ INSERT INTO `creature_linking` (`guid`,`master_guid`,`flag`)VALUES
 -- ----------------------------------------------------------
 -- Honor Hold Guards next to the destroyed keep
 
-DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000000904 AND 2000000908;
+DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001055 AND 2000001059;
 INSERT INTO `db_script_string` (`entry`,`content_default`,`emote`) VALUES 
-(2000000904,'Twenty years we''ve been stranded in this hell-hole. It''s all I can do not to run screaming through that blasted Portal. I want to see my loved ones again! I want them to know I''m still alive.',1),
-(2000000905,'I feel the same. But there''s still a job to do out here. It''ll all be for naught if this evil finds its way back to Azeroth - back to our homes. We just have to hold on a while longer. Trust Danath - he''s never let us down before.',1),
-(2000000906,'It''s not him I''m worried about. It''s all these new rookies around here - and those creepy purple elves they brought with ''em. They ain''t even proved themselves yet.',1),
-(2000000907,'C''mon - you sound like a grumpy old man.',1),
-(2000000908,'I am a grumpy old man!',5);
+(2000001055,'Twenty years we''ve been stranded in this hell-hole. It''s all I can do not to run screaming through that blasted Portal. I want to see my loved ones again! I want them to know I''m still alive.',1),
+(2000001056,'I feel the same. But there''s still a job to do out here. It''ll all be for naught if this evil finds its way back to Azeroth - back to our homes. We just have to hold on a while longer. Trust Danath - he''s never let us down before.',1),
+(2000001057,'It''s not him I''m worried about. It''s all these new rookies around here - and those creepy purple elves they brought with ''em. They ain''t even proved themselves yet.',1),
+(2000001058,'C''mon - you sound like a grumpy old man.',1),
+(2000001059,'I am a grumpy old man!',5);
 
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=7263601;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`dataint`,`buddy_entry`,`search_radius`,`data_flags`,`comments`) VALUES
-(7263601,0,0,0,2000000904,0,0,0,'Honor Hold Defender Speech'),
+(7263601,0,0,0,2000001055,0,0,0,'Honor Hold Defender Speech'),
 (7263601,15,1,5,0,0,0,0,'Honor Hold Defender Exclamation Emote'),
-(7263601,25,0,0,2000000905,16842,72637,16,'Honor Hold Defender2 Speech'),
+(7263601,25,0,0,2000001056,16842,72637,16,'Honor Hold Defender2 Speech'),
 (7263601,40,1,1,0,16842,72637,16,'Honor Hold Defender2 Talk Emote'),
-(7263601,50,0,0,2000000906,0,0,0,'Honor Hold Defender Speech'),
-(7263601,65,0,0,2000000907,16842,72637,16,'Honor Hold Defender2 Speech'),
-(7263601,73,0,0,2000000908,0,0,0,'Honor Hold Defender Speech');
+(7263601,50,0,0,2000001057,0,0,0,'Honor Hold Defender Speech'),
+(7263601,65,0,0,2000001058,16842,72637,16,'Honor Hold Defender2 Speech'),
+(7263601,73,0,0,2000001059,0,0,0,'Honor Hold Defender Speech');
 
 SET @GUID := 72636;
 UPDATE `creature` SET `spawndist`=0,`MovementType`=2 WHERE `guid`=@GUID;
@@ -664,16 +664,16 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 -- Black bottle 3756 D:6529
 -- Green bottle 3757 D:6530
 
-DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000000892 AND 2000000897;
+DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001060 AND 2000001065;
 INSERT INTO `db_script_string` (`entry`,`content_default`,`emote`,`type`) VALUES 
 -- Infantry speech
-(2000000892,'Where do you want these bottles?',1,0),
-(2000000893,'Got another shipment for you, Sid.',1,0),
-(2000000894,'Craziest thing - No matter how many bottles I take from the stockpile, the quantity on hand never decreases. It''s like I''m stuck in some endless loop of actions...',1,0),
-(2000000897,'%s nods.',273,2),
+(2000001060,'Where do you want these bottles?',1,0),
+(2000001061,'Got another shipment for you, Sid.',1,0),
+(2000001062,'Craziest thing - No matter how many bottles I take from the stockpile, the quantity on hand never decreases. It''s like I''m stuck in some endless loop of actions...',1,0),
+(2000001063,'%s nods.',273,2),
 -- Sid speech
-(2000000895,'Bless yer heart, soldier! Just put ''em in the back room.',1,0),
-(2000000896,'Just leave ''em in the cellar.',1,0);
+(2000001064,'Bless yer heart, soldier! Just put ''em in the back room.',1,0),
+(2000001065,'Just leave ''em in the cellar.',1,0);
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 5815301 AND 5815304;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`comments`) VALUES
@@ -687,10 +687,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`dataint3`,`buddy_entry`,`search_radius`,`data_flags`,`comments`) VALUES
 (5815304,0,32,1,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Pause Waypoints'),
 (5815304,0.5,36,0,0,0,0,0,16826,10,1,'Nethergarde/Stormwind Infantry - Face Sid'),
-(5815304,1,0,0,0,2000000892,2000000893,2000000894,0,0,0,'Nethergarde/Stormwind Infantry - Random say'),
+(5815304,1,0,0,0,2000001060,2000001061,2000001062,0,0,0,'Nethergarde/Stormwind Infantry - Random say'),
 (5815304,5,36,0,0,0,0,0,16826,10,0,'Sid Limbardi - Face Nethergarde/Stormwind Infantry'),
-(5815304,7,0,0,0,2000000895,2000000896,0,16826,10,0,'Sid Limbardi - Random say'),
-(5815304,11,0,0,0,2000000897,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Text emote'),
+(5815304,7,0,0,0,2000001064,2000001065,0,16826,10,0,'Sid Limbardi - Random say'),
+(5815304,11,0,0,0,2000001063,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Text emote'),
 (5815304,12.5,36,1,0,0,0,0,16826,10,0,'Sid Limbardi - Reset facing'),
 (5815304,13,32,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - UnPause Waypoints');
 
@@ -763,14 +763,14 @@ DELETE FROM `creature_addon` WHERE `guid`=57904;
 -- Remove static mounted Nethergarde Infantry in the middle of the road to dark portal. It should not be there.
 UPDATE `creature` SET `spawnMask`=0 WHERE `guid`=57894;
 
-DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000000898 AND 2000000903;
+DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001066 AND 2000001071;
 INSERT INTO `db_script_string` (`entry`,`content_default`,`emote`,`type`) VALUES 
-(2000000898,'Soldier! Front and center!',22,0),
-(2000000899,'SIR! YES, SIR! Reporting for duty, sir!',66,0),
-(2000000900,'At ease, Private. I have a mission for you. The last messenger I sent to Nethergarde didn''t make it. We found his entrails scattered about the bone road a few hours ago. We suspect it may have been legion or fel orc, maybe even Horde...',1,0),
-(2000000901,'I need this message delivered to Watch Commander Netherwane at Nethergarde Keep. There''s a commendation in it for you if you make it... Your horse is waiting at the stables. Dismissed!',1,0),
-(2000000902,'Sir, yes sir! Private will do their best to not die, sir!',66,0),
-(2000000903,'ONWARD!',25,0);
+(2000001066,'Soldier! Front and center!',22,0),
+(2000001067,'SIR! YES, SIR! Reporting for duty, sir!',66,0),
+(2000001068,'At ease, Private. I have a mission for you. The last messenger I sent to Nethergarde didn''t make it. We found his entrails scattered about the bone road a few hours ago. We suspect it may have been legion or fel orc, maybe even Horde...',1,0),
+(2000001069,'I need this message delivered to Watch Commander Netherwane at Nethergarde Keep. There''s a commendation in it for you if you make it... Your horse is waiting at the stables. Dismissed!',1,0),
+(2000001070,'Sir, yes sir! Private will do their best to not die, sir!',66,0),
+(2000001071,'ONWARD!',25,0);
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 5790401 AND 5790404;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`dataint3`,`o`,`buddy_entry`,`search_radius`,`data_flags`,`comments`) VALUES
@@ -779,7 +779,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (5790401,0,32,1,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Pause Waypoints'),
 (5790401,0,1,69,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Use Emote State'),
 (5790401,310,36,0,0,0,0,0,0,16830,15,0,'Field Commander Romus - Face Nethergarde/Stormwind Infantry'),
-(5790401,311,0,0,0,2000000898,0,0,0,16830,15,0,'Field Commander Romus - Say'),
+(5790401,311,0,0,0,2000001066,0,0,0,16830,15,0,'Field Commander Romus - Say'),
 (5790401,315,36,1,0,0,0,0,0,16830,15,0,'Field Commander Romus - Reset facing'),
 (5790401,315,25,1,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Set Run'),
 (5790401,316,1,0,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Turn off Use Emote State'),
@@ -787,21 +787,21 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 
 -- Commander Romus speech
 (5790402,0,32,1,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Pause Waypoints'),
-(5790402,1,0,0,0,2000000899,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Say'),
+(5790402,1,0,0,0,2000001067,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Say'),
 (5790402,5,1,66,0,0,0,0,0,16830,5,0,'Field Commander Romus - Salute Emote'),
-(5790402,9,0,0,0,2000000900,0,0,0,16830,5,0,'Field Commander Romus - Say'),
+(5790402,9,0,0,0,2000001068,0,0,0,16830,5,0,'Field Commander Romus - Say'),
 (5790402,14,1,274,0,0,0,0,0,16830,5,0,'Field Commander Romus - No Emote'),
 (5790402,18,1,25,0,0,0,0,0,16830,5,0,'Field Commander Romus - Point Emote'),
-(5790402,23,0,0,0,2000000901,0,0,0,16830,5,0,'Field Commander Romus - Say'),
+(5790402,23,0,0,0,2000001069,0,0,0,16830,5,0,'Field Commander Romus - Say'),
 (5790402,30,1,66,0,0,0,0,0,16830,5,0,'Field Commander Romus - Salute Emote'),
-(5790402,34,0,0,0,2000000902,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Say'),
+(5790402,34,0,0,0,2000001070,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Say'),
 (5790402,38,32,0,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - UnPause Waypoints'),
 
 -- Stables
 (5790403,0,32,1,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Pause Waypoints'),
 (5790403,2,24,14583,0,0,0,0,0,0,0,8,'Nethergarde/Stormwind Infantry - Mount'),
 (5790403,2,3,14583,0,0,0,0,4.671405,0,0,0,'Nethergarde/Stormwind Infantry - Change orientation'),
-(5790403,4,0,0,0,2000000903,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Say'),
+(5790403,4,0,0,0,2000001071,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - Say'),
 (5790403,6,32,0,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - UnPause Waypoints'),
 
 -- Despawn at Pit Commander
@@ -859,41 +859,41 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 
 UPDATE `creature_template` SET `extraflags`=16386 WHERE `entry`=16821; -- Civilian + ignore mmaps because of stairs messing up the movement otherwise. Old value: 2
 
-DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000000876 AND 2000000887;
+DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001072 AND 2000001083;
 INSERT INTO `db_script_string` (`entry`,`content_default`,`emote`) VALUES 
-(2000000876,'What now, Danath? Can you not see that I am imundated with work as is?',6), -- Question
-(2000000877,'I take my leave now, Commander. Good day!',1), -- Talk
-(2000000878,'A mailbox? Well is that not the salt on the wounds! Twenty years cut-off from the world and now a mailbox! WONDERFUL!',5), -- Exclamation
-(2000000879,'Sid! Ale, NOW!',22), -- Shout
-(2000000880,'Comin'' right up, yer highness! Is there anythin'' else you''ll be needin''? Perhaps yer hat cleaned or yer nails trimmed?',22), -- Shout
-(2000000881,'Don''t you start with me, Sid! Have it sent to my quarters in the tower instead! Your inn has become a zoo!',5), -- Exclamation
-(2000000882,'Twenty years lost! Twenty! I won''t stand for this! No, no, no...',5), -- Random text 1
-(2000000883,'What manner of fools opens the very thing we were sent to close?',5), -- Random text 2
-(2000000884,'To trust an orc? Even if it is the progeny of Durotan himself! This is madness!',5), -- Random text 3
-(2000000885,'Never! I''ll never abide by their will! I''d sooner be dead.',5), -- Random text 4
-(2000000886,'I have a good mind to tear down that portal myself! This is outrageous!',5), -- Random text 5
-(2000000887,'And have you heard? Have you heard the preposterous claims? Alliance and Horde supporting peace? Why the very thought of such things makes my blood boil!',5); -- Random text 6
+(2000001072,'What now, Danath? Can you not see that I am imundated with work as is?',6), -- Question
+(2000001073,'I take my leave now, Commander. Good day!',1), -- Talk
+(2000001074,'A mailbox? Well is that not the salt on the wounds! Twenty years cut-off from the world and now a mailbox! WONDERFUL!',5), -- Exclamation
+(2000001075,'Sid! Ale, NOW!',22), -- Shout
+(2000001076,'Comin'' right up, yer highness! Is there anythin'' else you''ll be needin''? Perhaps yer hat cleaned or yer nails trimmed?',22), -- Shout
+(2000001077,'Don''t you start with me, Sid! Have it sent to my quarters in the tower instead! Your inn has become a zoo!',5), -- Exclamation
+(2000001078,'Twenty years lost! Twenty! I won''t stand for this! No, no, no...',5), -- Random text 1
+(2000001079,'What manner of fools opens the very thing we were sent to close?',5), -- Random text 2
+(2000001080,'To trust an orc? Even if it is the progeny of Durotan himself! This is madness!',5), -- Random text 3
+(2000001081,'Never! I''ll never abide by their will! I''d sooner be dead.',5), -- Random text 4
+(2000001082,'I have a good mind to tear down that portal myself! This is outrageous!',5), -- Random text 5
+(2000001083,'And have you heard? Have you heard the preposterous claims? Alliance and Horde supporting peace? Why the very thought of such things makes my blood boil!',5); -- Random text 6
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 5787900 AND 5787907;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`buddy_entry`,`search_radius`,`data_flags`,`comments`) VALUES
-(5787901,0,0,0,0,2000000876,0,0,0,'Magus Filinthus - What now, Danath? Can you not see that I am imundated with work as is?'),
+(5787901,0,0,0,0,2000001072,0,0,0,'Magus Filinthus - What now, Danath? Can you not see that I am imundated with work as is?'),
 (5787901,3,1,1,0,0,0,0,0,'Magus Filinthus - Talk emote'),
-(5787902,0,0,0,0,2000000877,0,0,0,'Magus Filinthus - I take my leave now, Commander. Good day!'),
+(5787902,0,0,0,0,2000001073,0,0,0,'Magus Filinthus - I take my leave now, Commander. Good day!'),
 (5787902,4,1,66,0,0,0,0,0,'Magus Filinthus - Salute emote'),
-(5787904,0,0,0,0,2000000878,0,0,0,'Magus Filinthus - Mailbox speech'),
+(5787904,0,0,0,0,2000001074,0,0,0,'Magus Filinthus - Mailbox speech'),
 (5787905,0,32,1,0,0,0,0,0,'Magus Filinthus - Pause Waypoints'),
-(5787905,0,0,0,0,2000000879,0,0,0,'Magus Filinthus - Sid! Ale, NOW!'),
-(5787905,4,0,0,0,2000000880,16826,20,7,'[Buddy: 16826]Sid - Comin'' right up, yer highness! Is there anythin'' else you''ll be needin''? Perhaps yer hat cleaned or yer nails trimmed?'),
+(5787905,0,0,0,0,2000001075,0,0,0,'Magus Filinthus - Sid! Ale, NOW!'),
+(5787905,4,0,0,0,2000001076,16826,20,7,'[Buddy: 16826]Sid - Comin'' right up, yer highness! Is there anythin'' else you''ll be needin''? Perhaps yer hat cleaned or yer nails trimmed?'),
 (5787905,10,1,14,0,0,16826,20,7,'[Buddy: 16826]Sid - Rude emote'),
-(5787905,14,0,0,0,2000000881,0,0,0,'Magus Filinthus - Don''t you start with me, Sid! Have it sent to my quarters in the tower instead! Your inn has becoma a zoo!'),
+(5787905,14,0,0,0,2000001077,0,0,0,'Magus Filinthus - Don''t you start with me, Sid! Have it sent to my quarters in the tower instead! Your inn has becoma a zoo!'),
 (5787905,18,1,14,0,0,0,0,0,'Magus Filinthus - Rude emote'),
 (5787905,23,15,7791,1,0,0,0,0,'Magus Filinthus - Cast teleport on self'),
 (5787905,25,18,0,1,0,0,0,0,'Magus Filinthus - Despawn self');
 
 -- Random texts
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`dataint`,`dataint2`,`dataint3`,`comments`) VALUES
-(5787906,0,0,2000000882,2000000883,2000000884,'Magus Filinthus - Random texts 1-3'),
-(5787907,0,0,2000000885,2000000886,2000000887,'Magus Filinthus - Random texts 4-6');
+(5787906,0,0,2000001078,2000001079,2000001080,'Magus Filinthus - Random texts 1-3'),
+(5787907,0,0,2000001081,2000001082,2000001083,'Magus Filinthus - Random texts 4-6');
 
 -- Pathing for  Entry: 16821 'TDB FORMAT'
 SET @GUID := 57879;
