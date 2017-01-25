@@ -4684,7 +4684,7 @@ insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('85333','8
 
 
 -- Pathing Greater Fleshbeast
-UPDATE creature SET SpawnDist=0, MovementType=2 WHERE guid IN (135864);
+UPDATE creature SET SpawnDist=0, MovementType=2 WHERE guid IN (135862);
 DELETE FROM creature_movement WHERE id IN (135862);
 insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('135862','1','-11064.8','-1943.53','264.698','0','0','0','0','0','0','0','0','0','0','0','0');
 insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('135862','2','-11055.5','-1943.21','264.698','0','0','0','0','0','0','0','0','0','0','0','0');
