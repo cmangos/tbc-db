@@ -560,7 +560,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (5815404,4,2,159,0,0,0,'Nethergarde/Stormwind Infantry - Remove Kneel Emote State');
 
 -- Remove static use emote
-UPDATE `creature_addon` SET `emote`=0 WHERE `guid`=58154;
+DELETE FROM `creature_addon` WHERE `guid`=58154;
 
 -- Pathing for  Entry: 16831 'TDB FORMAT' 
 SET @GUID := 58154;
@@ -622,7 +622,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (5788903,0,1,0,0,0,0,'Nethergarde/Stormwind Infantry - Turn off Use Emote State');
 
 -- Remove static use emote
-UPDATE `creature_addon` SET `emote`=0 WHERE `guid`=57889;
+DELETE FROM `creature_addon` WHERE `guid`=57889;
 
 -- Boxes near keep
 -- Pathing for  Entry: 16831 'TDB FORMAT' 
@@ -695,7 +695,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (5815304,13,32,0,0,0,0,0,0,0,0,'Nethergarde/Stormwind Infantry - UnPause Waypoints');
 
 -- Remove static use emote
-UPDATE `creature_addon` SET `emote`=0 WHERE `guid`=58153;
+DELETE FROM `creature_addon` WHERE `guid`=58153;
 
 -- Pathing for  Entry: 16831 'TDB FORMAT' 
 SET @GUID := 58153;
@@ -758,7 +758,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 -- Infantry riding to Dark Portal
 
 -- Remove static use emote
-UPDATE `creature_addon` SET `emote`=0 WHERE `guid`=57904;
+DELETE FROM `creature_addon` WHERE `guid`=57904;
 
 -- Remove static mounted Nethergarde Infantry in the middle of the road to dark portal. It should not be there.
 UPDATE `creature` SET `spawnMask`=0 WHERE `guid`=57894;
