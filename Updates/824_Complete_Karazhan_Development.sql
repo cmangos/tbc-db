@@ -3511,6 +3511,29 @@ insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('57083','5
 insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('57088','57082','3');
 insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('57131','57082','3');
 
+-- Emotes
+UPDATE creature SET spawndist = 0, MovementType = 2 WHERE guid IN (57131,57088,57081,57129,57082,57083);
+DELETE FROM creature_movement WHERE id IN (57131,57088,57081,57129,57082,57083);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(57131,1,-10926.5,-1865.88,110.599,3000,1646801,2.1293),
+(57131,2,-10926.5,-1865.88,110.599,14000,0,2.1293),
+(57088,1,-10927.2,-1862.6,110.599,5000,0,4.29351),
+(57088,2,-10927.2,-1862.6,110.599,6000,1646801,4.29351),
+(57081,1,-10935.7,-1875.22,110.602,6000,0,1.309),
+(57081,2,-10935.7,-1875.22,110.602,7000,1647001,1.309),
+(57129,1,-10941.3,-1869.12,110.601,1000,0,0.994838),
+(57129,2,-10941.3,-1869.12,110.601,13000,1646801,0.994838),
+(57082,1,-10939.4,-1867.83,110.6,8000,1647001,3.05433),
+(57082,2,-10939.4,-1867.83,110.6,3000,1647001,3.05433),
+(57083,1,-10935.8,-1871.22,110.6,10000,1646801,4.81711),
+(57083,2,-10935.8,-1871.22,110.6,2000,1646801,4.81711);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1646801,1647001);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1646801,1,1,1,0,0,0,0,6,273,274,11,0,0,0,0,''),
+(1647001,1,1,274,0,0,0,0,1,11,6,273,0,0,0,0,'');
+
+-- Rat
+UPDATE creature SET position_x = -10935.636719, position_y = -1879.532227, position_z = 110.519699, spawndist = 1, MovementType = 1 WHERE guid = 28671;
 
 -- Group of 6 NPC in Upper Opera House
 insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('57143','16468','532','1','0','0','-10884.3','-1873.26','110.517','0.901676','86400','0','0','13972','0','0','0');
@@ -3522,6 +3545,23 @@ insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('57149','5
 insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('57086','57143','3');
 insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('57142','57143','3');
 
+-- Emotes
+UPDATE creature SET spawndist = 0, MovementType = 2 WHERE guid IN (57085,57142,57149,57084,57086,57143);
+DELETE FROM creature_movement WHERE id IN (57085,57142,57149,57084,57086,57143);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(57085,1,-10883.4,-1869.55,110.599,19000,1646801,4.46804),
+(57142,1,-10882.7,-1886.03,110.601,4000,1647001,0.802851),
+(57142,2,-10882.7,-1886.03,110.601,22000,0,0.802851),
+(57149,1,-10875.8,-1881.21,110.602,7000,0,2.35619),
+(57149,2,-10875.8,-1881.21,110.602,5000,1647001,2.35619),
+(57084,1,-10875,-1878.74,110.601,17000,0,4.01426),
+(57084,2,-10875,-1878.74,110.601,5000,1646801,4.01426),
+(57086,1,-10880.7,-1885.19,110.602,3000,0,2.93215),
+(57086,2,-10880.7,-1885.19,110.602,16000,1646801,2.93215),
+(57143,1,-10884.3,-1873.28,110.599,16000,0,1.20428),
+(57143,2,-10884.3,-1873.28,110.599,3000,1646801,1.20428);
+-- Rat
+UPDATE creature SET spawndist = 2, MovementType = 1 WHERE guid = 28701;
 
 -- 3 NPC Pathing in Upper Opera House
 insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values('57087','16470','532','1','0','0','-10946.6','-1810.09','107.664','4.59462','86400','0','0','33056','16545','0','2');
