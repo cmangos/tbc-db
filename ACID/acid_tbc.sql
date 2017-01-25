@@ -16580,7 +16580,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('730708','7307','8','2','100','1','11300','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 8 hit and Move to Phase 1'),
 ('730709','7307','8','2','100','1','31016','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 9 hit and Move to Phase 1'),
 ('730710','7307','8','2','100','1','26865','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 10 hit and Move to Phase 1'),
-('730711','7307','7','1','100','1','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venture Co. Patroller - Set Phase 0 on Evade in Phase 1'),
+('730711','7307','7','1','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venture Co. Patroller - Set Phase 0 on Evade in Phase 1'),
 -- Venture Co. Patroller
 ('730801','7308','8','2','100','1','1943','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 1 hit and Move to Phase 1'),
 ('730802','7308','8','2','100','1','8639','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 2 hit and Move to Phase 1'),
@@ -16589,7 +16589,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('730805','7308','8','2','100','1','11274','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 5 hit and Move to Phase 1'),
 ('730806','7308','8','2','100','1','11275','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 6 hit and Move to Phase 1'),
 ('730807','7308','8','2','100','1','26867','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 7 hit and Move to Phase 1'),
-('730808','7308','7','1','100','1','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venture Co. Patroller - Set Phase 0 on Evade in Phase 1'),
+('730808','7308','7','1','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venture Co. Patroller - Set Phase 0 on Evade in Phase 1'),
 -- Mutated Venture Co. Drone
 ('731001','7310','8','0','100','1','8676','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Die on Ambush Rank 1 hit'),
 ('731002','7310','8','0','100','1','8724','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mutated Venture Co. Drone - Die on Ambush Rank 2 hit'),
@@ -18137,7 +18137,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2130602','21306','1','0','30','0','5000','9000','0','0','2','14','1','0','0','0','0','0',' 0','0','0','0','Cursed Scarab - 30% Should Change Faction OOC'),
 ('2130603','21306','1','0','100','0','18000','24000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Cursed Scarab - Despawn OOC'),
 -- Bubbling Slimer Bunny
-('2250501','22505','1','0','100','1','1000','5000','22000','27000','12','22506','1','25000','1','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Summon Foul Purge'),
+('2250501','22505','1','0','100','1','1000','5000','22000','27000','12','22506','0','25000','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Summon Foul Purge'),
 -- Incandescent Fel Spark
 ('19228126','22323','0','0','100','1','0','1000','10000','11000','11','36247','1','0','0','0','0','0','0','0','0','0','Incandescent Fel Spark - Cast Fel Fireball'),
 ('19228127','22323','6','0','100','0','0','0','0','0','11','44877','0','3','0','0','0','0','0','0','0','0','Incandescent Fel Spark - Cast Living Flare Master on Death'),
@@ -18241,7 +18241,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1806905','18069','2','20','100','0','50','0','26000','29000','11','15982','0','1','0','0','0','0','0','0','0','0','Mogor - cast Healing Wave at 50% HP (Phase 1+3'),
 ('1806906','18069','2','13','100','0','5','0','0','0','11','29266','0','7','18','2','0','0','22','2','0','0','Mogor - cast Permanent Feign Death, set unitFlag and set phase 2 at 5% HP (Phase 1)'),
 ('1806907','18069','29','11','100','0','6000','6000','0','0','11','32343','0','23','22','3','0','0','0','0','0','0','Mogor - cast Revive Self and set Phase 3 (Phase2)'),
-('1806908','18069','29','7','100','0','3000','3000','0','0','1','-1424','0','0','11','28747','0','23','19','2','0','0','Mogor - Yell, Cast Frenzy and remove unitFlag (Phase3)'),
+('1806908','18069','29','7','100','0','3000','3000','0','0','1','-1412','0','0','11','28747','0','23','19','2','0','0','Mogor - Yell, Cast Frenzy and remove unitFlag (Phase3)'),
 ('1806909','18069','21','0','100','0','0','0','0','0','41','2000','0','0','0','0','0','0','0','0','0','0','Mogor - Despawn Self on Reaching Home'),
 -- Living Fire
 ('1810901','18109','11','0','100','0','0','0','0','0','1','-1349','0','0','0','0','0','0','0','0','0','0','Living Fire - Say on Spawn'),
