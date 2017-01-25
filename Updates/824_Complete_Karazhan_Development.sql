@@ -4020,6 +4020,8 @@ insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('57182','11','-11231.5','-1901.35','145.99','0','0','0','0','0','0','0','0','0','0','0','0');
 insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('57182','12','-11212.9','-1889.02','152.054','0','0','0','0','0','0','0','0','0','0','0','0');
 
+-- All should do RandomMovement
+UPDATE creature SET spawndist = 3, MovementType = 1 WHERE id IN (16489,16491);
 
 -- Mana Feeder Group
 UPDATE creature SET position_x = '-11232.000977', position_y = '-1835.479248', position_z = '136.022995', orientation = '1.924269' WHERE guid = '85296';
