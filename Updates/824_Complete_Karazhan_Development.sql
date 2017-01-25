@@ -3915,6 +3915,25 @@ insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('85266','5
 insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('85267','57206','515');
 insert into `creature_linking` (`guid`, `master_guid`, `flag`) values('85268','57206','515');
 
+-- The Curator
+-- waypoints corrected (minor adjustment, he was walking too far out before)
+UPDATE creature_template SET MovementType = 2 WHERE entry = 15691;
+UPDATE creature SET SpawnDist = 0, MovementType = 2 WHERE guid = 56327;
+DELETE FROM creature_movement WHERE id = 56327;
+DELETE FROM creature_movement_template WHERE entry = 15691;
+INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+(15691,1,-11173.1,-1901.89,165.766,0,0,2.24672),
+(15691,2,-11191.4,-1878.79,153.672,0,0,2.22708),
+(15691,3,-11194.1,-1875.5,153.544,0,0,2.18781),
+(15691,4,-11191,-1879.08,153.846,0,0,5.40009),
+(15691,5,-11172.9,-1902.04,165.766,0,0,5.37653),
+(15691,6,-11168.4,-1907.76,165.766,0,0,0.851978),
+(15691,7,-11136.8,-1882.43,165.766,0,0,0.632851),
+(15691,8,-11120.4,-1869.84,165.766,0,0,0.715318),
+(15691,9,-11104.6,-1856.86,165.766,0,0,0.664268),
+(15691,10,-11120,-1869.51,165.766,0,0,3.81371),
+(15691,11,-11136.7,-1882.52,165.766,0,0,3.80193),
+(15691,12,-11168.8,-1908.21,165.766,0,0,3.83335);
 
 -- ===========================
 -- Guardian's Library Overhaul
