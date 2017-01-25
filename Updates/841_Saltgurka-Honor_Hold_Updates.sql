@@ -15,8 +15,10 @@ UPDATE `creature` SET `modelid`=16387 WHERE `guid` IN(72636,72637);
 
 -- Nethergarde Infantry were missing the female model
 UPDATE `creature_template` SET `ModelId1`=16377,`ModelId2`=16376,`ModelId3`=16375 WHERE `entry`=16831; 
-UPDATE `creature_model_info` SET `modelid_other_gender`=0 WHERE `modelid` IN(16375,16376,16377);
-UPDATE `creature_model_info` SET `modelid_alternative`=16377 WHERE `modelid`=16376; 
+UPDATE `creature_model_info` SET `modelid_other_gender`=0 WHERE `modelid`=16375; -- Female model should never pick her "other gender". That model is unused.
+UPDATE `creature_model_info` SET `modelid_other_gender`=16377 WHERE `modelid`=16376; -- Link dwarf and male. Female model should not be used inside the inn. (Girls don't drink beer according to wow lore? :O)
+UPDATE `creature_model_info` SET `modelid_other_gender`=16376 WHERE `modelid`=16377; -- Link dwarf and male
+UPDATE `creature_model_info` SET `modelid_alternative`=16377 WHERE `modelid`=16376;
 
 -- Nethergarde infantry inside inn should have mugs and mutton in their hands.
 DELETE FROM `creature_equip_template` WHERE `entry` = 124;
@@ -505,16 +507,37 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 
 -- ----------------------------------------------------------
 -- Nethergarde Infantry Inside Inn (GUID 57896 to 57899)
--- I created a separate template for these for 2 reasons:
--- 1. I can't do the drink animation through EventAI only for these unless they have a separate template
--- 2. These four Infantries should not be affected by the Nethergarde/Stormwind-random-template-on-spawn-stuff. 
+-- These four Infantries should not be affected by the Nethergarde/Stormwind-random-template-on-spawn-stuff. (which is not implemented yet anyways)
 -- ----------------------------------------------------------
 
-DELETE FROM `creature_template` WHERE `entry` = 16913;
-INSERT INTO `creature_template` (`Entry`, `Name`, `MinLevel`, `MaxLevel`, `ModelId1`, `ModelId2`, `FactionAlliance`, `FactionHorde`, `CreatureType`, `UnitFlags`, `UnitClass`, `DamageMultiplier`, `MinLevelHealth`, `MaxLevelHealth`, `MinMeleeDmg`, `MaxMeleeDmg`, `Armor`, `MeleeAttackPower`, `RangedAttackPower`, `MovementType`, `EquipmentTemplateId`, `AIName`) VALUES 
-('16913', 'Nethergarde Infantry', '58', '60', '16377', '16376', '1671', '1671', '7', '832', '1', '0', '2900', '3900', '62', '95', '3791', '36', '100', '1', '124', 'EventAI');
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (5789601);
+INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(5789601,1,1,92,0,0,0,0,0,0,0,0,0,0,0,0,'Nethergarde Infantry - Drink/Eat');
+ 
+UPDATE `creature` SET `modelid`=16377,`equipment_id`=124,`MovementType`=2 WHERE `guid` IN (57896,57897,57898,57899);
 
-UPDATE `creature` SET `id`=16913 WHERE `guid` IN (57896,57897,57898,57899);
+DELETE FROM creature_movement WHERE id IN (57896,57897,57898,57899);
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, orientation) VALUES
+-- 57896
+(57896,1,-706.337,2726.19,94.1936,4000,5789601,100),
+(57896,2,-706.337,2726.19,94.1936,10000,5789601,100),
+(57896,3,-706.337,2726.19,94.1936,6000,5789601,100),
+(57896,4,-706.337,2726.19,94.1936,8000,5789601,100),
+-- 57897
+(57897,4,-711.224,2726.41,94.1936,4000,5789601,100),
+(57897,1,-711.224,2726.41,94.1936,10000,5789601,100),
+(57897,2,-711.224,2726.41,94.1936,6000,5789601,100),
+(57897,3,-711.224,2726.41,94.1936,8000,5789601,100),
+-- 57898
+(57898,3,-711.314,2723.37,94.1936,4000,5789601,100),
+(57898,4,-711.314,2723.37,94.1936,10000,5789601,100),
+(57898,1,-711.314,2723.37,94.1936,6000,5789601,100),
+(57898,2,-711.314,2723.37,94.1936,8000,5789601,100),
+-- 57899
+(57899,2,-707,2721.95,94.1936,4000,5789601,100),
+(57899,3,-707,2721.95,94.1936,10000,5789601,100),
+(57899,4,-707,2721.95,94.1936,6000,5789601,100),
+(57899,1,-707,2721.95,94.1936,8000,5789601,100);
 
 -- ----------------------------------------------------------
 -- Nethergarde/Stormwind Infantry
