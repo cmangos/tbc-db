@@ -4707,7 +4707,7 @@ UPDATE creature SET SpawnDist=20, MovementType=1 WHERE id IN (17660);
 
 
 -- Greater Fleshbeast in Top of Tower
-UPDATE creature SET SpawnDist=5, MovementType=1 WHERE guid IN (135865);
+UPDATE creature SET SpawnDist=3, MovementType=1 WHERE guid IN (135865);
 
 
 -- Prince Malchezaar Pathing
@@ -4725,7 +4725,13 @@ insert into `creature_movement_template` (`entry`, `point`, `position_x`, `posit
 insert into `creature_movement_template` (`entry`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('15690','9','-10948.3','-2023.49','275.584','0','0','0','0','0','0','0','0','0','0','0','0');
 insert into `creature_movement_template` (`entry`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values('15690','10','-10933.5','-2017.54','275.742','0','0','0','0','0','0','0','0','0','0','0','0');
 
+-- From wotl-db port
 
+-- Sealed Tome
+-- Only one book should be available to loot
+UPDATE gameobject_loot_template SET groupid = 1 WHERE entry = 18509;
+-- should despawn after use
+UPDATE gameobject_template SET data2 = 0 WHERE data1 = 18509;
 
 
 
