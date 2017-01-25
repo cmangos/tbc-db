@@ -129,3 +129,11 @@ UPDATE creature_template SET Scale=0 WHERE entry IN(4324,10182);
 -- SSC attunement, correct chaining and cast Mark of Vashj on player on completion
 UPDATE quest_template SET PrevQuestId=10900,RewSpellCast=39145 WHERE entry=10901;
 
+-- Astral Flare
+UPDATE creature_template SET ExtraFlags=ExtraFlags|256,MechanicImmuneMask=MechanicImmuneMask|(64+1024+2048) WHERE entry=17096;
+-- Immune to taunts, stuns, roots, and snares'
+
+-- Malchezaar
+UPDATE creature_template SET ExtraFlags=ExtraFlags|256 WHERE entry=15690;
+-- Immune to taunt
+
