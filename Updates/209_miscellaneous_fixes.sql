@@ -138,3 +138,5 @@ UPDATE creature_template SET ExtraFlags=ExtraFlags|256,MechanicImmuneMask=Mechan
 UPDATE creature_template SET ExtraFlags=ExtraFlags|256 WHERE entry=15690;
 -- Immune to taunt
 
+-- Ritual of Summoning - trigger spell after 5 seconds
+UPDATE gameobject_template SET CustomData1=5000 WHERE entry IN(36727);
