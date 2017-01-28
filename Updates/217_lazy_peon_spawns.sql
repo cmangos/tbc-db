@@ -1,4 +1,4 @@
-UPDATE creature SET MovementType=0 WHERE id=10556;
+UPDATE creature SET MovementType=0,spawndist=0 WHERE id=10556;
 DELETE FROM creature_movement WHERE id IN (3345, 3346, 3347, 3348, 6523, 6524, 6525, 6526, 6527, 7372, 7373, 7374, 7375, 7376);
 
 -- Spawn points
