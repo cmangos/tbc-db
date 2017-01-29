@@ -10,11 +10,11 @@ UPDATE `creature` SET `guid`=151036 WHERE `guid`=64995 AND `id`=18202;
 UPDATE `creature` SET `guid`=151037 WHERE `guid`=64996 AND `id`=18202;
 UPDATE `creature` SET `guid`=151038 WHERE `guid`=64997 AND `id`=18203;
 UPDATE `creature` SET `guid`=151039 WHERE `guid`=64998 AND `id`=18203;
-UPDATE `creature` SET `guid`=151041 WHERE `guid`=64999 AND `id`=18203;
-UPDATE `creature` SET `guid`=151042 WHERE `guid`=65000 AND `id`=18203;
-UPDATE `creature` SET `guid`=151043 WHERE `guid`=65001 AND `id`=18203;
-UPDATE `creature` SET `guid`=151044 WHERE `guid`=65002 AND `id`=18203;
-UPDATE `creature` SET `guid`=151045 WHERE `guid`=65003 AND `id`=18203;
+UPDATE `creature` SET `guid`=151040 WHERE `guid`=64999 AND `id`=18203;
+UPDATE `creature` SET `guid`=151041 WHERE `guid`=65000 AND `id`=18203;
+UPDATE `creature` SET `guid`=151042 WHERE `guid`=65001 AND `id`=18203;
+UPDATE `creature` SET `guid`=151043 WHERE `guid`=65002 AND `id`=18203;
+UPDATE `creature` SET `guid`=151044 WHERE `guid`=65003 AND `id`=18203;
 
 -- I set orientations to 0, because it's a nightmare to handle formations otherwise
 DELETE FROM `creature` WHERE `id`=18205 AND (`guid` BETWEEN 64995 AND 65003);
