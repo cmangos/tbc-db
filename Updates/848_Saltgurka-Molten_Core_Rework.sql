@@ -9,10 +9,13 @@
 UPDATE `creature_template` SET `DamageSchool`='2' WHERE `Entry` IN ('11666', '11667', '11668', '11673', '12056', '12143', '12265');
 
 -- Increase the size of some of the runes a tiny bit so that you can't see into the void through the cracks
-UPDATE `gameobject_template` SET `size`=1.05 WHERE `entry`=176953; -- Rune of Mazj
-UPDATE `gameobject_template` SET `size`=1.05 WHERE `entry`=176952; -- Rune of Zeth
-UPDATE `gameobject_template` SET `size`=1.05 WHERE `entry`=176951; -- Rune of Koro
-UPDATE `gameobject_template` SET `size`=1.05 WHERE `entry`=176954; -- Rune of Theri
+-- They should not be interactable by players except when targeting with an item (flag 16). This was already set for 3 of them
+UPDATE `gameobject_template` SET `size`=1.03788,`flags`=16 WHERE `entry`=176953; -- Rune of Mazj
+UPDATE `gameobject_template` SET `size`=1.03788,`flags`=16 WHERE `entry`=176952; -- Rune of Zeth
+UPDATE `gameobject_template` SET `size`=1.03788,`flags`=16 WHERE `entry`=176951; -- Rune of Koro
+UPDATE `gameobject_template` SET `size`=1.03788,`flags`=16 WHERE `entry`=176954; -- Rune of Theri
+-- Set animprogress to 100 for all runes. The fire spout animation doesn't play otherwise.
+UPDATE `gameobject` SET `animprogress`=100 WHERE `id` IN(176951,176952,176953,176954,176955,176956,176957);
 
 -- Add the circle fire animation to Rune of Zeth
 DELETE FROM `gameobject` WHERE `guid`=113269;
