@@ -36,6 +36,12 @@ UPDATE `creature_linking_template` SET `flag`=1031 WHERE `master_entry`=12259 AN
 -- Golemagg followers should not respawn while boss is dead
 UPDATE `creature_linking_template` SET `flag`=1063 WHERE `master_entry`=11988 AND `entry`=11672; -- Old flag: 39
 
+-- Prevent Core Hounds packs to respawn if Magmadar is defeated
+DELETE FROM creature_linking_template WHERE entry = 11671;
+INSERT INTO creature_linking_template VALUES
+(11671, 409, 11982, 1024, 0);
+
+
 -- ************************
 -- Creature Stats
 -- ************************
