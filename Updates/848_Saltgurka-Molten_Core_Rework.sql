@@ -33,6 +33,9 @@ UPDATE `creature_linking_template` SET `flag`=1031 WHERE `master_entry`=12098 AN
 -- Gehennas followers should not respawn while boss is dead
 UPDATE `creature_linking_template` SET `flag`=1031 WHERE `master_entry`=12259 AND `entry`=11661; -- Old flag: 7
 
+-- Golemagg followers should not respawn while boss is dead
+UPDATE `creature_linking_template` SET `flag`=1063 WHERE `master_entry`=11988 AND `entry`=11672; -- Old flag: 39
+
 -- ************************
 -- Creature Stats
 -- ************************
