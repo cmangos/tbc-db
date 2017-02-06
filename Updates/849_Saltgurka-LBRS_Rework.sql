@@ -3780,3 +3780,5 @@ UPDATE `creature_template` SET `FactionAlliance` = 40, `FactionHorde` = 40 WHERE
 UPDATE `creature_template` SET `FactionAlliance` = 35, `FactionHorde` = 35 WHERE `entry` = 15560;
 UPDATE `creature_template` SET `FactionAlliance` = 114, `FactionHorde` = 114 WHERE `entry` = 16044;
 UPDATE `creature_template` SET `FactionAlliance` = 114, `FactionHorde` = 114 WHERE `entry` = 16048;
+
+
