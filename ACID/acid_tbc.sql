@@ -3487,7 +3487,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Amani Shadowpriest (3.0.3 Official Data)
 ('1564201','15642','0','0','100','1','4200','7700','7100','16200','11','11639','1','32','0','0','0','0','0','0','0','0','Amani Shadowpriest - Cast Shadow Word: Pain'),
 -- Amani Berserker (3.0.3 Official Data)
-('1564301','15643','2','0','100','0','30','0','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Amani Berserker - Cast Enrage at 30% HP'),
+('1564301','15643','2','0','100','0','30','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Amani Berserker - Cast Enrage at 30% HP'),
 -- Wretched Urchin (3.0.3 Official Data)
 ('1564401','15644','1','0','15','1','4000','30000','20000','75000','5','1','0','0','1','-113','-114','-947','0','0','0','0','Wretched Urchin - Emote and Random Say OOC'),
 -- Wretched Thug (3.0.3 Official Data)
@@ -31778,7 +31778,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1494','Nothing can stop me now!','0','0','0','15938','0'),
 ('-1495','Your faith guides me to victory.','0','0','0','15938','0'),
 ('-1496','Thank you for the blessing, $n.','0','0','0','15938','0'),
-('-1497','%s\'s will falters.','0','2','0','10321','0');
+('-1497','%s\'s will falters.','0','2','0','10321','0'),
 ('-1498','This frozen land shall suffice for a start. Come to me, mortals - and I shall give you a quick and painful death.','0','6','0','Princess Tempestria','0'),
 ('-1499','If you mortals are all so craven, this will be much easier than I thought!','0','6','0','Princess Tempestria','0'),
 ('-1500','%s causes a gale to sweep across the land, the sound of his mindless fury coming from the northwest.','0','3','0','The Windreaver','0'),
