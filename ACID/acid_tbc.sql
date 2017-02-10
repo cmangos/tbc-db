@@ -14968,6 +14968,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hive'Ashi Ambusher 13301     
 -- Highlord Demitrian 14347   npc_highlord_demitrian 
 -- Prince Thunderaan 14435     
+('1443501','14435','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Prevent Combat Movement On Spawn'),
+('1443502','14435','4','0','100','0','0','0','0','0','1','-1309','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Yell on Aggro'),
+('1443503','14435','0','0','100','1','9000','13000','16000','20000','11','23009','0','1','0','0','0','0','0','0','0','0','Prince Thunderaan - Cast Tendrils of Air'),
+('1443504','14435','0','0','100','1','7500','8500','10000','15000','11','23011','0','0','0','0','0','0','0','0','0','0','Prince Thunderaan - Cast Tears of the Wind Seeker'),  
 -- The Windreaver 14454     
 -- Whirling Invader 14455     
 -- Setis 14471     
@@ -30604,7 +30608,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-22','VanCleef pay big for you heads!','5774','1','0','644','0'),
 ('-23','Cipher of Damnation belongs to us now!','0','0','0','20427','0'),
 ('-24','The master will know of this incursion. You will be hunted for all eternity!','0','0','0','20427','0'),
--- PLEASE RE-USE -25 to -27
+('-25','My power is discombobulatingly devastating! It is ludicrous that these mortals even attempt to enter my realm!','0','1','0','Prince Thunderaan','0'),
+-- PLEASE RE-USE -26 to -27
 ('-28','You do not belong here!  Ancients, rise against these intruders!','0','1','0','11489','0'),
 ('-29','You no challenge me, scrubs! I\'m da king now, and I stay king FOREVER!!!','0','0','0','11501','0'),
 ('-30','%s blood sprays into the air!','0','2','0','Common Gnomeregan Emote','0'),
