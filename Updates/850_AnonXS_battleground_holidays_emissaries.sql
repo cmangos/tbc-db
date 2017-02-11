@@ -867,8 +867,8 @@ INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 18);
 INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 18);
 INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 19);
 INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 19);
-INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 19);
-INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 19);
+INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 20);
+INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 20);
 INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 21);
 INSERT INTO `game_event_creature` VALUES (@GUID := @GUID + 1, 21);
 
