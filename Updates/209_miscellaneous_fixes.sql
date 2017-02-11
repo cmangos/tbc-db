@@ -163,3 +163,6 @@ UPDATE `gameobject` SET `spawntimesecs` = 120 WHERE `id` = 272;
 DELETE FROM `creature` WHERE `id` = 3395;
 
 
+-- Shattrath to Caverns of Time gossip
+UPDATE dbscripts_on_gossip SET data_flags=0 WHERE id=9205; -- fix crash, npc should cast it on player
+
