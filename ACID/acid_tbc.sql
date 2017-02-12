@@ -19026,11 +19026,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ethereum Prisoner 20520 
 -- Agent Araxes 20551 
 -- Agent Ya-six 20552 
+-- Image of Commander Ameer <The Protectorate>
+('2055301','20553','11','0','100','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Image of Commander Ameer <The Protectorate> - Cast Simple Teleport on Spawn'),
 -- Arconus the Insatiable 20554 
 -- Withered Corpse
 ('2056101','20561','4','0','100','0','0','0','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion, Despawn Self AND Summon Parasitic Fleshbeast on Agrro'),
 ('2056102','20561','10','0','100','0','0','4','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion, Despawn Self AND Summon Parasitic Fleshbeast on LOS'),   
--- Image of Agent Ya-six 20564 
+-- Image of Agent Ya-six <The Protectorate>
+('2056401','20564','11','0','100','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Image of Agent Ya-six <The Protectorate> - Cast Simple Teleport on Spawn'),  
 -- Shaleskin Ripper 20606 
 -- Craghide Basilisk
 ('2060702','20607','9','0','100','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Craghide Basilisk - Cast Threshalisk Charge on Aggro'),
