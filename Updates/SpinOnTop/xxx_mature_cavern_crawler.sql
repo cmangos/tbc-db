@@ -1,9 +1,8 @@
 
-SET @GUID := 78185;
+SET @GUID := 77718;
 SET @POINT := 0;
 
-REPLACE INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
-(@GUID, '22132', '530', '1', '0', '0', '1080.587', '6062.305', '137.2193', '0.5573791', '300', '0', '0', '5914', '0', '0', '2');
+UPDATE `creature` SET `position_x`='1080.587', `position_y`='6062.305', `position_z`='137.2193', `orientation`='0.5573791', `spawndist`='0', `MovementType`='2' WHERE `guid`=@GUID;
 
 DELETE FROM `creature_movement` WHERE `id`=@GUID;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) VALUES
