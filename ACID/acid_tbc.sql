@@ -19027,7 +19027,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Agent Araxes 20551 
 -- Agent Ya-six 20552 
 -- Arconus the Insatiable 20554 
--- Withered Corpse 20561 
+-- Withered Corpse
+('2056101','20561','4','0','100','0','0','0','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion, Despawn Self AND Summon Parasitic Fleshbeast on Agrro'),
+('2056102','20561','10','0','100','0','0','4','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion, Despawn Self AND Summon Parasitic Fleshbeast on LOS'),   
 -- Image of Agent Ya-six 20564 
 -- Shaleskin Ripper 20606 
 -- Craghide Basilisk
