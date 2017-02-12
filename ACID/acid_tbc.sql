@@ -19902,6 +19902,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1880901','18809','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Furnan Skysoar - Summon Enraged Gryphons and Yell on Aggro'),
 -- Lemla Hopewing
 ('1918101','19181','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Lemla Hopewing - Summon Enraged Gryphons and Yell on Aggro'),
+-- Ancient Draenei Spirit
+('1941601','19416','1','0','75','1','1000','6000','9000','14000','5','1','0','0','0','0','0','0','0','0','0','0','Ancient Draenei Spirit - Emote while OOC'),  
 -- Lower City Operative
 ('1950101','19501','2','0','100','1','50','0','10000','13000','45','5','50','0','1','-1384','-1385','-1386','0','0','0','0','Lower City Operative - Send AI Event and Say Random Text at 50% HP'),
 -- Lower City Healer
