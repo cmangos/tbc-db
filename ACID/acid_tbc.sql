@@ -18368,6 +18368,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1878901','18789','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Furgu - Summon Enraged Hippogryphs on Aggro'),
 -- Gursha
 ('1880801','18808','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Gursha - Summon Enraged Wyverns and Yell on Aggro'),
+-- Wazat
+('1903501','19035','1','0','100','1','15000','22000','55000','65000','1','-1532','-1533','-1534','0','0','0','0','0','0','0','0','Wazat - Random Say OOC'),
+-- Windroc Matriarch
+('1905501','19055','9','0','100','1','0','5','12000','16000','11','30285','1','0','0','0','0','0','0','0','0','0','Windroc Matriarch - Cast Eagle Claw'),
+('1905502','19055','0','0','100','1','3000','6000','22000','26000','11','32914','0','1','0','0','0','0','0','0','0','0','Windroc Matriarch - Cast Wing Buffet'),
 -- Fel Cannon: Hate
 ('1906701','19067','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Fel Cannon: Hate - OOC - Prevent Combat Movement'),
 ('1906702','19067','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Fel Cannon: Hate - Combat - Cast Fel Cannon Blast'),
@@ -31853,8 +31858,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1528','Hello, sister. What have we here?','0','1','0','16101 16102','0'),
 ('-1529','Would-be interlopers, I\'m afraid.','0','1','0','16101 16102','0'),
 ('-1530','Shall we slay them for the impertinence of disturbing our sleep?','0','1','0','16101 16102','0'),
-('-1531','Yes, we shall!','0','1','0','16101 16102','0');
-  
+('-1531','Yes, we shall!','0','1','0','16101 16102','0'),
+('-1532','Oh sweet, delicious, spotted eggs - you will be mine...','0','0','0','19035','1'),
+('-1533','If only I could get this blasted machine working!','0','0','0','19035','1'),
+('-1534','They look so delicious...','0','0','0','19035','1');
+
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
