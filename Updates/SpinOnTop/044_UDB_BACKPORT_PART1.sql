@@ -3521,7 +3521,7 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139977,19179,530,1,0,0,-3565.7,564.905,12.7033,4.82071,25,0,0,42,0,0,0);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139978,19179,530,1,0,0,-3574.95,564.225,13.0331,4.33377,25,0,0,42,0,0,0);
 -- Black Temple Battle Sensor -- event controler
-DELETE FROM Creature WHERE guid IN (139979);
+DELETE FROM creature WHERE guid IN (139979);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES (139979,22934,530,1,0,0,-3565.66,499.164,20.2467,2.548181,25,0,0,42,0,0,0);
 
 
