@@ -2095,7 +2095,20 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift White Mechanostrider (14552) - NSR
 -- Swift Green Mechanostrider (14553) - NSR
 -- Wagner Hammerstrike (15011) - NSR
--- Honored Hero (15113) - NSR
+-- Honored Hero
+('1511301','15113','22','0','100','1','5','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','Honored Hero - Bow Emote on Receive Emote'),
+('1511312','15113','22','0','100','1','72','6','469','0','5','25','0','0','0','0','0','0','0','0','0','0','Honored Hero - Point Emote on Receive Emote'),
+('1511311','15113','22','0','100','1','110','6','469','0','5','1','0','0','0','0','0','0','0','0','0','0','Honored Hero - Talk Emote on Receive Emote'),
+('1511310','15113','22','0','100','1','21','6','469','0','5','4','0','0','0','0','0','0','0','0','0','0','Honored Hero - Cheer Emote on Receive Emote'),
+('1511309','15113','22','0','100','1','101','6','469','0','5','3','0','0','0','0','0','0','0','0','0','0','Honored Hero - Wave Emote on Receive Emote'),
+('1511308','15113','22','0','100','1','55','6','469','0','5','3','0','0','0','0','0','0','0','0','0','0','Honored Hero - Wave Emote on Receive Emote'),
+('1511307','15113','22','0','100','1','48','6','469','0','5','3','0','0','0','0','0','0','0','0','0','0','Honored Hero - Wave Emote on Receive Emote'),
+('1511306','15113','22','0','100','1','19','6','469','0','5','3','0','0','0','0','0','0','0','0','0','0','Honored Hero - Wave Emote on Receive Emote'),
+('1511305','15113','22','0','100','1','59','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','Honored Hero - Bow Emote on Receive Emote'),
+('1511304','15113','22','0','100','1','35','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','Honored Hero - Bow Emote on Receive Emote'),
+('1511303','15113','22','0','100','1','33','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','Honored Hero - Bow Emote on Receive Emote'),
+('1511302','15113','22','0','100','1','17','6','469','0','5','2','0','0','0','0','0','0','0','0','0','0','Honored Hero - Bow Emote on Receive Emote'),
+('1511313','15113','22','0','100','1','78','6','469','0','5','66','0','0','0','0','0','0','0','0','0','0','Honored Hero - Salute Emote on Receive Emote'),
 -- Elder Goldwell (15569) - NSR
 -- Wonderform Operator (15732) - NSR
 -- Ironforge Reveler (15906) - NSR
@@ -31842,8 +31855,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1504','You have not seen the last of me fools! All will be consumed in the end!','0','6','0','Baron Charr','0'),
 ('-1505','Tiny mortals - me HERE! Doom you meet!','0','6','0','Avalanchion','0'),
 ('-1506','Where you hiding? Me find you!','0','6','0','Avalanchion','0'),
--- PLEASE RE-USE 1507 - 1515
-('-1516','Thanks, buddy! Let\'s see if I can\'t get this hunk o\' junk movin\' faster!','0','0','0','27110','0'),
+-- PLEASE RE-USE 1507 - 1516
 ('-1517','Muahahahaha! What is this pathetic spectacle I see before me? Well, what are you waiting for? I hunger, and you look as if you may make for a passable appetizer!','0','1','0','16042','0'),
 ('-1518','I\'ve gone easy on you thus far, but now you bore me. Witness the magnificence of my power, and despair!','0','1','0','16042','0'),
 ('-1519','I will not die again! Not to the likes of you!!','0','1','0','16042','0'),
