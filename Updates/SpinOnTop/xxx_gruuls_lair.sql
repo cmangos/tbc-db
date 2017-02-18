@@ -55,26 +55,7 @@ REPLACE INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_f
 
 -- -| CREATURE TEMPLATE |---
 
-UPDATE `creature_template` SET `EquipmentTemplateId`=5616 WHERE `Entry`=19389;
-UPDATE `creature_template` SET `EquipmentTemplateId`=5617 WHERE `Entry`=21350;
-UPDATE `creature_template` SET `EquipmentTemplateId`=5618 WHERE `Entry`=18835;
-UPDATE `creature_template` SET `EquipmentTemplateId`=5619 WHERE `Entry`=18836;
-UPDATE `creature_template` SET `EquipmentTemplateId`=5620 WHERE `Entry`=18831;
-UPDATE `creature_template` SET `EquipmentTemplateId`=5621 WHERE `Entry`=18834;
-UPDATE `creature_template` SET `EquipmentTemplateId`=5622 WHERE `Entry`=18832;
-
 UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000', `RangedBaseAttackTime`='2000' WHERE `Entry`='18847'; -- Wild Fel Stalker
-
--- -| CREATUTE EQUIPMENT |---
-
-REPLACE INTO `creature_equip_template` (`entry`,`equipentry1`,`equipentry2`,`equipentry3`) VALUES
-(5616, 5289,0,0),
-(5617,12421,0,0),
-(5618,13750,0,0),
-(5619,14092,0,0),
-(5620,14586,0,0),
-(5621,13698,0,0),
-(5622,20718,0,0);
 
 -- -| GAMEOBJECT |---
 
