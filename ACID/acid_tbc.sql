@@ -5576,7 +5576,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Raze (8441) - NSR
 -- Shadowsilk Poacher (8442) - NSR
 -- Trade Master Kovic   
-('844401','8444','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Trade Master Kovic - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('844401','8444','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','1','-1535','0','0','Trade Master Kovic - Enable Dynamic Movement, Set Phase 1 and Say on Aggro'),
 ('844402','8444','9','13','100','1','8','40','3400','4800','11','9053','1','0','0','0','0','0','0','0','0','0','Trade Master Kovic - Cast Fireball (Phase 1)'),
 ('844403','8444','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Trade Master Kovic - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('844404','8444','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Trade Master Kovic - Disable Dynamic Movement at 0-8 Yards'),
@@ -31877,7 +31877,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1531','Yes, we shall!','0','1','0','16101 16102','0'),
 ('-1532','Oh sweet, delicious, spotted eggs - you will be mine...','0','0','0','19035','1'),
 ('-1533','If only I could get this blasted machine working!','0','0','0','19035','1'),
-('-1534','They look so delicious...','0','0','0','19035','1');
+('-1534','They look so delicious...','0','0','0','19035','1'),
+('-1535','There\'ll be a new trade risin\' up round your carcass, $N. We\'ll call it \'flesh-craftin.\'','0','0','0','Trade Master Kovic','0');
 
 
 -- =======================================================
