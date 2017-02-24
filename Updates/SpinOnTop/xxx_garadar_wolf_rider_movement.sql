@@ -1,19 +1,23 @@
 -- ************************
 -- Garadar Wolf Riders
 -- ************************
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(1906801);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=1906801;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES 
 (1906801,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,'Garadar Wolf Rider - Run');
 
+-- ---------------------------------
 -- West gate
--- They had path already
--- Linking distance was too far
+-- ---------------------------------
+-- They had path already but linking distance was too far and they were not running
 UPDATE `creature` SET `position_x`=-1212.250000,`position_y`=7405.810059,`position_z`=28.152399,`orientation`=0 WHERE `guid`=68371;
 UPDATE `creature` SET `position_x`=-1217.250000,`position_y`=7405.810059,`position_z`=28.688900,`orientation`=0 WHERE `guid`=68370;
 -- They should be "Running"
 UPDATE `creature_movement` SET `script_id`=1906801 WHERE `id`=68371 AND `point`=1;
 
+
+-- ---------------------------------
 -- East gate
+-- ---------------------------------
 UPDATE `creature` SET `orientation`=0,`MovementType`=2,`spawndist`=0 WHERE `guid`=68368; -- Master
 UPDATE `creature` SET `position_x`=-1317.29,`position_y`=6940.27,`position_z`=31.4055,`orientation`=0,`MovementType`=0,`spawndist`=0 WHERE `guid`=68369; -- Follower
 
