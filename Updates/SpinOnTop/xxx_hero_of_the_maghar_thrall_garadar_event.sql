@@ -32,7 +32,7 @@ UPDATE `creature_template` SET `MovementType`=2,`SpeedWalk`=1,`SpeedRun`=(9.7/7)
 UPDATE `creature_template` SET `MovementType`=2,`SpeedWalk`=1,`SpeedRun`=(9.7/7),`UnitFlags`=320 WHERE `entry`=19592; -- Korkron Warrior
 UPDATE `creature_template` SET `MovementType`=2,`SpeedWalk`=1,`SpeedRun`=(9.7/7),`UnitFlags`=320 WHERE `entry`=19594; -- Korkron Honor Guard
 UPDATE `creature_template` SET `SpeedWalk`=1,`SpeedRun`=(8/7),`MovementType`=0,`UnitFlags`=33555264,`ExtraFlags`=0,`Rank`=1 WHERE `entry`=19647; -- Mini Thrall. Had CREATURE_EXTRA_FLAG_INSTANCE_BIND and CREATURE_EXTRA_FLAG_GUARD which make no sense
-UPDATE `creature_template` SET `MovementType`=0,`UnitFlags`=896,`CreatureType`=3,`Rank`=1 WHERE `entry`=18075; -- Mannoroth -- sniffed: 33555200, have to remove UNIT_FLAG_NOT_SELECTABLE, otherwise thralls doomhammer spell has no animation
+UPDATE `creature_template` SET `MovementType`=0,`UnitFlags`=33555200,`CreatureType`=3,`Rank`=1 WHERE `entry`=18075; -- Mannoroth 
 UPDATE `creature_template` SET `MovementType`=0,`UnitFlags`=33555200,`ExtraFlags`=0 WHERE `entry`=18076; -- Grom Hellscream 
 UPDATE `creature_template` SET `MovementType`=2 WHERE `entry`=19590; -- Thrall Event Generator
 UPDATE `creature_template` SET `ModelId1`=17612,`UnitFlags`=33554752,`ExtraFlags`=128,`Rank`=1 WHERE `entry`=19597; -- Thralls hero music 
@@ -582,7 +582,7 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=1964701;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES 
 (1964701,0.2,20,0,0,0,0,0,0,0,0,0,0,0,0,0,'Mini Thrall - Set Idle Movement'),
-(1964701,0.2,15,34389,0,18075,10,1,0,0,0,0,0,0,0,0,'Mini Thrall - Cast Throw Doomhammer'),
+(1964701,0.2,15,34389,4,18075,10,1,0,0,0,0,0,0,0,0,'Mini Thrall - Cast Throw Doomhammer'),
 (1964701,0.5,42,0,0,0,0,0,0,0,0,0,0,0,0,0,'Mini Thrall - Unequip Doomhammer from hands'),
 (1964701,0.5,5,169,375,0,0,0,0,0,0,0,0,0,0,0,'Mini Thrall - Remove STATE_READY2H'),
 (1964701,0.5,4,169,27,0,0,0,0,0,0,0,0,0,0,0,'Mini Thrall - Add STATE_READYUNARMED');
