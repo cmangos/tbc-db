@@ -19039,7 +19039,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Seeping Sludge
 ('2050101','20501','2','0','100','1','50','0','30000','45000','11','36465','0','0','0','0','0','0','0','0','0','0','Seeping Sludge - Cast Seeping Split at 50% HP'),
 ('2050102','20501','8','0','100','0','35686','-1','0','0','36','20806','-1','0','0','0','0','0','0','0','0','0','Seeping Sludge - Change Entry after (proc) Spell 35686'),
--- Tormented Soul 20512 
+-- Tormented Soul
+('2051201','20512','4','0','100','0','0','0','0','0','36','20480','1','0','41','300000','0','0','0','0','0','0','Tormented Soul - Transform into Kirin\'Var Ghost AND Despawn on Aggro'),
+('2051202','20512','0','0','100','1','6000','8000','15000','17000','11','36153','1','0','0','0','0','0','0','0','0','0','Tormented Soul - Cast Soulbind'), 
 -- Harpax 20515 
 -- Warp Monstrosity 20516 
 -- Image of Wind Trader Marid
@@ -19139,7 +19141,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Azurebeak (3.0.3 Official Data - Logs Only)
 ('2100501','21005','0','0','100','1','7100','11100','11000','14000','11','31273','1','0','0','0','0','0','0','0','0','0','Azurebeak - Cast Screech'),
 -- Disembodied Exarch 21058 
--- Tormented Citizen 21065 
+-- Tormented Citizen
+('2106501','21065','4','0','100','32','0','0','0','0','36','20480','1','0','36','20496','1','0','0','0','0','0','Tormented Citizen - Randomized Transform into Kirin\'Var Ghost OR Tormented Citizen on Aggro'),
+('2106502','21065','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','41','300000','0','0','Tormented Citizen- Enable Dynamic Movement, Set Phase 1 AND Despawn on Aggro'),
+('2106503','21065','9','5','100','1','8','40','2000','4000','11','9613','1','0','0','0','0','0','0','0','0','0','Tormented Citizen- Cast Shadow Bolt (Phase 1)'),
+('2106504','21065','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Tormented Citizen- Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2106505','21065','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Tormented Citizen- Disable Dynamic Movement at 0-8 Yards'),
+('2106506','21065','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Tormented Citizen- Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('2106507','21065','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Tormented Citizen- Set Phase 1 when Mana is above 15% (Phase 2)'),
+('2106508','21065','0','5','100','1','9000','13000','120000','124000','11','11980','1','1','0','0','0','0','0','0','0','0','Tormented Citizen - Cast Curse of Weakness (Phase 1)'),
+('2106509','21065','0','5','100','1','16000','19000','27000','29000','11','36153','1','1','0','0','0','0','0','0','0','0','Tormented Citizen - Cast Soulbind (Phase 1)'),
+('2106510','21065','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Tormented Citizen- Set Phase to 0 on Evade'),  
 -- Farahlon Crumbler 21077 
 -- Farahlon Shardling 21078 
 -- Cragskaar Shardling 21079 
