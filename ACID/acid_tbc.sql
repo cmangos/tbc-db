@@ -29218,11 +29218,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Crystalcore Devastator (SD2 Backport)
 ('2004001','20040','4','0','100','2','0','0','0','0','11','35035','0','0','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Countercharge on Aggro'),
 ('2004002','20040','0','0','100','3','25000','25000','23000','23000','11','37102','1','0','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Knock Away'),
-('2004003','20040','2','0','100','2','5','0','0','0','11','34937','0','0','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Powered Down on Health Check'),
+('2004003','20040','2','0','100','2','15','0','0','0','11','34937','0','1','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Power Down at 15% HP'),
+('2004004','20040','2','0','100','3','30','25','1000','1000','28','0','34937','0','0','0','0','0','0','0','0','0','Crystalcore Devastator - Remove Power Down at 25% HP'),
 -- Crystalcore Sentinel
 ('2004101','20041','0','0','100','3','9000','14000','25000','35000','11','37104','4','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Overcharge'),
 ('2004102','20041','0','0','100','3','21000','25000','25000','30000','11','37106','0','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Charged Arcane Explosion'),
 ('2004103','20041','2','0','100','2','15','0','0','0','11','34937','0','1','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Power Down at 15% HP'),
+('2004104','20041','2','0','100','3','30','25','1000','1000','28','0','34937','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Remove Power Down at 25% HP'),
 -- Tempest-Smith
 ('2004201','20042','1','0','100','3','5000','20000','20000','40000','11','34946','0','0','0','0','0','0','0','0','0','0','Tempest-Smith - Cast Repair Golem OOC'),
 ('2004202','20042','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Tempest-Smith - Enable Dynamic Movement and Prevent Melee on Aggro'),
@@ -29297,7 +29299,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2005003','20050','9','0','100','3','0','20','6000','8000','11','37276','1','0','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Mind Flay'),
 ('2005004','20050','0','0','100','3','7000','11000','21000','26000','11','37275','5','1','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Shadow Word: Pain'),
 -- Crystalcore Mechanic
-('2005201','20052','1','0','100','3','5000','20000','20000','40000','11','37121','0','0','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Recharge OOC'),
+('2005201','20052','15','0','100','3','0','50','10000','10000','11','37121','6','1','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Recharge on Friendly CC'),
 ('2005202','20052','0','0','100','3','8000','15000','16000','21000','11','37123','4','0','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Saw Blade'),
 -- Lord Sanguinar (20060) - boss_lord_sanguinar
 -- Grand Astromancer Capernian (20062) - boss_grand_astromancer_capernian
