@@ -18324,11 +18324,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1825901','18259','9','0','100','1','0','5','20000','28000','11','32023','0','0','0','0','0','0','0','0','0','0','Banthar - Cast Hoof Stomp'),
 ('1825902','18259','9','0','100','1','8','25','14000','21000','11','32021','1','0','0','0','0','0','0','0','0','0','Banthar - Cast Rushing Charge'),
 -- Bleeding Hollow Refugee
-('1829201','18292','1','0','100','1','30000','30000','60000','180000','1','-310','-308','0','5','5','0','0','0','0','0','0','Bleeding Hollow Refugee - Gossip Speech and Emote'),
--- Sunspring Refugee
-('1829301','18293','1','0','100','1','20000','20000','60000','180000','1','-309','0','0','5','21','0','0','0','0','0','0','Sunspring Refugee - Gossip Speech and Emote'),
--- Sunspring Orphan
-('1829601','18296','1','0','10','1','500000','500000','500000','700000','1','-312','-310','-307','0','0','0','0','0','0','0','0','Sunspring Orphan - Random Gossip Speech'),
+('1829201','18292','30','0','100','0','5','19140','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Set Phase 1'),
+('1829202','18292','1','13','100','1','1500','2500','1500','2500','10','4','15','21','0','0','0','0','0','0','0','0','Bleeding Hollow Refugee - Random Emote (Phase 1)'),
+('1829203','18292','1','13','100','1','5000','250000','5000','250000','0','0','0','0','30','2','3','-1','0','0','0','0','Bleeding Hollow Refugee - Set Phase 2/3 randomly (Phase 1)'),
+('1829204','18292','1','11','100','1','100','100','100','100','1','-307','-308','-309','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Random Say and Set Phase 1 (Phase 2)'),
+('1829205','18292','1','7','100','1','100','100','100','100','1','-310','-312','-317','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Random Say and Set Phase 1 (Phase 3)'),
+-- Sunspring Post Refugee
+('1829301','18293','30','0','100','0','5','19140','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Set Phase 1'),
+('1829302','18293','1','13','100','1','1500','2500','1500','2500','10','4','15','21','0','0','0','0','0','0','0','0','Bleeding Hollow Refugee - Random Emote (Phase 1)'),
+('1829303','18293','1','13','100','1','5000','250000','5000','250000','0','0','0','0','30','2','3','-1','0','0','0','0','Bleeding Hollow Refugee - Set Phase 2/3 randomly (Phase 1)'),
+('1829304','18293','1','11','100','1','100','100','100','100','1','-307','-308','-309','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Random Say and Set Phase 1 (Phase 2)'),
+('1829305','18293','1','7','100','1','100','100','100','100','1','-310','-312','-317','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Random Say and Set Phase 1 (Phase 3)'),
+-- Sunspring Post Orphan
+('1829601','18296','30','0','100','0','5','19140','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Set Phase 1'),
+('1829602','18296','1','13','100','1','5000','250000','5000','250000','0','0','0','0','30','2','3','-1','0','0','0','0','Bleeding Hollow Refugee - Set Phase 2/3 randomly (Phase 1)'),
+('1829603','18296','1','11','100','1','100','100','100','100','1','-307','-308','-309','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Random Say and Set Phase 1 (Phase 2)'),
+('1829604','18296','1','7','100','1','100','100','100','100','1','-310','-312','-317','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Random Say and Set Phase 1 (Phase 3)'),
 -- Giselda the Crone
 ('1839101','18391','2','0','100','0','65','0','0','0','11','33316','0','0','0','0','0','0','0','0','0','0','Giselda the Crone - Cast Giselda Transform at 65% HP'),
 -- Brokentoe
@@ -18396,6 +18407,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mag'har Pitfighter
 ('1914001','19140','1','0','100','1','10000','10000','2000','2000','11','33423','0','0','0','0','0','0','0','0','0','0','Mag\'har Pitfighter - Punch'),
 ('1914002','19140','1','0','100','1','28000','28000','15000','15000','5','60','0','0','11','33425','0','0','0','0','0','0','Mag\'har Pitfighter - Kick'),
+('1914003','19140','1','0','100','1','1000','1000','60000','60000','45','5','5','0','0','0','0','0','0','0','0','0','Mag\'har Pitfighter - Throw AI Event 5'),
 -- Kurenai Pitfighter
 ('1914101','19141','1','0','100','1','10000','10000','2000','2000','11','33423','0','0','0','0','0','0','0','0','0','0','Kurenai Pitfighter - Punch'),
 ('1914102','19141','1','0','100','1','28000','28000','15000','15000','5','60','0','0','11','33425','0','0','0','0','0','0','Kurenai Pitfighter - Kick'),
@@ -31003,17 +31015,17 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-304','What is it that you want from me, shaman?','0','0','0','21769','0'),
 ('-305','Do you not have eyes? Did you not see the demons on our very doorstep? I do not have the soldiers to spare!','0','0','0','21769','0'),
 ('-306','Pray to your gods, shaman. Perhaps they will come to your aid. The Horde however, cannot...','0','0','0','21769','0'),
-('-307','Wow! Look at his muscles!','0','0','0','18296','0'),
-('-308','Will he win? Can he win?','0','0','0','18292','0'),
-('-309','He\'s so well disciplined!','0','0','0','18293','0'),
-('-310','I wanna be just like the pitfighter!','0','0','0','18292','0'),
+('-307','Wow! Look at his muscles!','0','0','0','18296/18293/18292','1'),
+('-308','Will he win? Can he win?','0','0','0','18296/18293/18292','1'),
+('-309','He\'s so well disciplined!','0','0','0','18296/18293/18292','1'),
+('-310','I wanna be just like the pitfighter!','0','0','0','18296/18293/18292','1'),
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','11582','0'),
-('-312','How does he do it?','0','0','0','18296','0'),
+('-312','How does he do it?','0','0','0','18296/18293/18292','1'),
 ('-313','That\'s the best reward we\'re going to be able to offer. Hopefully someone accepts the mission.','0','0','0','18407','0'),
 ('-314','Damm those ogres. Damn them to the Nether. Won\'t someone save us from these savages! This is the fifth kidnapping is as many days.','0','0','0','18407','0'),
 ('-315','Any time any of you peons want to take a break, the graveyard is right over there.','0','0','0','19362','0'),
 ('-316','If I see any lazy peons here, I\'ll load them into a catapult and launch them off to the Black Temple!','0','1','0','19362','0'),
--- PLEASE RE-USE 317
+('-317','The pitfighter will be victorious! Just look at him!','0','0','0','18296/18293/18292','1'),
 ('-318','Last time someone went out to try and collect the bounty on Netherlock, all we got back was a compressed layer of foolhardy adventurer!','0','0','0','19541','0'),
 ('-319','Maybe I should gather up some other agents and head out there after this shift?','0','0','0','19541','0'),
 -- 320 Please Re-Use
