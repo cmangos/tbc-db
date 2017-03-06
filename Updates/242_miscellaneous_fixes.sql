@@ -28,3 +28,6 @@ UPDATE `creature` SET `map`=47 WHERE `guid`=84369 AND `id`=4512;
 -- https://github.com/TrinityCore/TrinityCore/issues/19141
 UPDATE `quest_template` SET `PrevQuestID`=511 WHERE `entry`=514;
 
+-- Correct typo
+-- Thanks to Sneaky for finding and fixing
+UPDATE `db_script_string` SET `content_default`='Well hand it over and let\'s see what you got!' WHERE `entry`='2000005050';
