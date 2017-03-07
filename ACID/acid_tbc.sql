@@ -18324,11 +18324,28 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1825901','18259','9','0','100','1','0','5','20000','28000','11','32023','0','0','0','0','0','0','0','0','0','0','Banthar - Cast Hoof Stomp'),
 ('1825902','18259','9','0','100','1','8','25','14000','21000','11','32021','1','0','0','0','0','0','0','0','0','0','Banthar - Cast Rushing Charge'),
 -- Bleeding Hollow Refugee
-('1829201','18292','1','0','100','1','30000','30000','60000','180000','1','-310','-308','0','5','5','0','0','0','0','0','0','Bleeding Hollow Refugee - Gossip Speech and Emote'),
--- Sunspring Refugee
-('1829301','18293','1','0','100','1','20000','20000','60000','180000','1','-309','0','0','5','21','0','0','0','0','0','0','Sunspring Refugee - Gossip Speech and Emote'),
--- Sunspring Orphan
-('1829601','18296','1','0','10','1','500000','500000','500000','700000','1','-312','-310','-307','0','0','0','0','0','0','0','0','Sunspring Orphan - Random Gossip Speech'),
+('1829201','18292','30','0','100','0','5','19140','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Refugee - Set Phase 1 on Receive AI Event A'),
+('1829202','18292','1','5','100','1','1500','2500','1500','2500','10','4','15','21','0','0','0','0','0','0','0','0','Bleeding Hollow Refugee - Random Emote (Phase 1)'),
+('1829203','18292','1','5','100','1','5000','250000','5000','250000','0','0','0','0','22','2','0','0','0','0','0','0','Bleeding Hollow Refugee - Set Phase 2 (Phase 1)'),
+('1829204','18292','1','3','100','1','100','100','100','100','1','-307','-308','-309','1','-310','-312','-317','22','1','0','0','Bleeding Hollow Refugee - Random Say and Set Phase 1 (Phase 2)'),
+-- Sunspring Post Refugee
+('1829301','18293','30','0','100','0','5','19140','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Sunspring Post Refugee - Set Phase 1 on Receive AI Event A'),
+('1829302','18293','1','5','100','1','1500','2500','1500','2500','10','4','15','21','0','0','0','0','0','0','0','0','Sunspring Post Refugee - Random Emote (Phase 1)'),
+('1829303','18293','1','5','100','1','5000','250000','5000','250000','0','0','0','0','22','2','0','0','0','0','0','0','Sunspring Post Refugee - Set Phase 2 (Phase 1)'),
+('1829304','18293','1','3','100','1','100','100','100','100','1','-307','-308','-309','1','-310','-312','-317','22','1','0','0','Sunspring Post Refugee - Random Say and Set Phase 1 (Phase 2)'),
+-- Sunspring Post Orphan
+('1829601','18296','30','0','100','0','5','19140','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Sunspring Post Orphan - Set Phase 1 on Receive AI Event A (Pitfighter spectator)'),
+('1829602','18296','30','0','100','0','6','18299','0','0','0','0','0','0','22','3','0','0','0','0','0','0','Sunspring Post Orphan - Set Phase 3 on Receive AI Event B (Running around Garadar)'),
+('1829603','18296','1','61','100','1','5000','250000','5000','250000','0','0','0','0','22','2','0','0','0','0','0','0','Sunspring Post Orphan - Set Phase 2 (Phase 1)'),
+('1829604','18296','1','59','100','1','100','100','100','100','1','-307','-308','-309','1','-310','-312','-317','22','1','0','0','Sunspring Post Orphan - Random Say and Set Phase 1 (Phase 2)'),
+('1829606','18296','1','55','100','1','30000','300000','80000','300000','0','0','0','0','31','4','6','0','0','0','0','0','Sunspring Post Orphan - Set Phase 4-5 randomly (Phase 3)'),
+('1829607','18296','1','47','100','1','100','100','100','100','1','-474','-475','0','1','-476','-477','0','22','3','0','0','Sunspring Post Orphan - Random Say and Set Phase 3 (Phase 4)'),
+('1829608','18296','1','31','100','1','100','100','100','100','1','-478','-479','0','1','-480','-481','0','22','3','0','0','Sunspring Post Orphan - Random Say and Set Phase 3 (Phase 5)'),
+-- Bleeding Hollow Orphan
+('1829901','18299','30','0','100','0','6','18299','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Orphan - Set Phase 1 on Receive AI Event B'),
+('1829902','18299','1','13','100','1','30000','300000','80000','300000','0','0','0','0','31','2','4','0','0','0','0','0','Bleeding Hollow Orphan - Set Phase 2-3 randomly (Phase 1)'),
+('1829903','18299','1','11','100','1','100','100','100','100','1','-474','-475','0','1','-476','-477','0','22','1','0','0','Bleeding Hollow Orphan - Random Say and Set Phase 1 (Phase 2)'),
+('1829904','18299','1','7','100','1','100','100','100','100','1','-478','-479','0','1','-480','-481','0','22','1','0','0','Bleeding Hollow Orphan - Random Say and Set Phase 1 (Phase 3)'),
 -- Giselda the Crone
 ('1839101','18391','2','0','100','0','65','0','0','0','11','33316','0','0','0','0','0','0','0','0','0','0','Giselda the Crone - Cast Giselda Transform at 65% HP'),
 -- Brokentoe
@@ -18357,6 +18374,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Durn the Hungerer
 ('1841101','18411','9','0','100','1','0','5','9000','15000','11','28168','1','0','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Arcing Smash'),
 ('1841102','18411','0','0','100','1','12000','24000','30000','50000','11','34771','0','0','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Force Punch'),
+-- Telaari Watcher
+('1848801','18488','30','0','100','0','5','19141','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Telaari Watcher - Set Phase 1 on Receive AI Event A'),
+('1848802','18488','1','5','100','1','1500','2500','1500','2500','10','4','15','21','0','0','0','0','0','0','0','0','Telaari Watcher - Random Emote (Phase 1)'),
+('1848803','18488','1','5','100','1','5000','250000','5000','250000','0','0','0','0','31','2','4','0','0','0','0','0','Telaari Watcher - Set Phase 2 (Phase 1)'),
+('1848804','18488','1','3','100','1','100','100','100','100','1','-417','-418','-419','1','-420','-421','-422','22','1','0','0','Telaari Watcher - Random Say and Set Phase 1 (Phase 2)'),
 -- Kil'sorrow Ritualist
 ('1865801','18658','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Kil\'sorrow Ritualist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1865802','18658','9','13','100','1','0','40','3400','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Cast Shadow Bolt (Phase 1)'),
@@ -18390,15 +18412,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Cannon: Hate
 ('1906701','19067','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Fel Cannon: Hate - OOC - Prevent Combat Movement'),
 ('1906702','19067','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Fel Cannon: Hate - Combat - Cast Fel Cannon Blast'),
--- Nagrand Target Dummy
-('1913901','19139','1','0','100','1','10350','10350','2350','2350','5','33','0','0','0','0','0','0','0','0','0','0','Nagrand Target Dummy - Wound Punch'),
-('1913902','19139','1','0','100','1','28350','28350','15350','15350','5','34','0','0','0','0','0','0','0','0','0','0','Nagrand Target Dummy - Wound Critical Kick'),
 -- Mag'har Pitfighter
-('1914001','19140','1','0','100','1','10000','10000','2000','2000','11','33423','0','0','0','0','0','0','0','0','0','0','Mag\'har Pitfighter - Punch'),
-('1914002','19140','1','0','100','1','28000','28000','15000','15000','5','60','0','0','11','33425','0','0','0','0','0','0','Mag\'har Pitfighter - Kick'),
+('1914001','19140','1','0','100','1','1000','1000','60000','60000','45','5','7','0','0','0','0','0','0','0','0','0','Mag\'har Pitfighter - Send AI Event 5'),
+('1914002','19140','1','0','100','1','1200','1200','1200','1200','0','0','0','0','30','1','2','3','0','0','0','0','Mag\'har Pitfighter - Set Phase 1/2/3 randomly (Phase 0)'),
+('1914003','19140','1','13','100','1','100','100','100','100','11','33423','0','0','22','0','0','0','0','0','0','0','Mag\'har Pitfighter - Punch and Set Phase 0 (Phase 1)'),
+('1914004','19140','1','11','100','1','100','100','100','100','11','33424','0','0','22','0','0','0','0','0','0','0','Mag\'har Pitfighter - Kick and Set Phase 0 (Phase 2)'),
+('1914005','19140','1','7','100','1','100','100','100','100','11','33425','0','0','22','0','0','0','0','0','0','0','Mag\'har Pitfighter - Lights Out and Set Phase 0 (Phase 3)'),
 -- Kurenai Pitfighter
-('1914101','19141','1','0','100','1','10000','10000','2000','2000','11','33423','0','0','0','0','0','0','0','0','0','0','Kurenai Pitfighter - Punch'),
-('1914102','19141','1','0','100','1','28000','28000','15000','15000','5','60','0','0','11','33425','0','0','0','0','0','0','Kurenai Pitfighter - Kick'),
+('1914101','19141','1','0','100','1','1000','1000','60000','60000','45','5','6','0','0','0','0','0','0','0','0','0','Kurenai Pitfighter - Send AI Event 5'),
+('1914102','19141','1','0','100','1','1200','1200','1200','1200','0','0','0','0','30','1','2','3','0','0','0','0','Kurenai Pitfighter - Set Phase 1/2/3 randomly (Phase 0)'),
+('1914103','19141','1','13','100','1','100','100','100','100','11','33423','0','0','22','0','0','0','0','0','0','0','Kurenai Pitfighter - Punch and Set Phase 0 (Phase 1)'),
+('1914104','19141','1','11','100','1','100','100','100','100','11','33424','0','0','22','0','0','0','0','0','0','0','Kurenai Pitfighter - Kick and Set Phase 0 (Phase 2)'),
+('1914105','19141','1','7','100','1','100','100','100','100','11','33425','0','0','22','0','0','0','0','0','0','0','Kurenai Pitfighter - Lights Out and Set Phase 0 (Phase 3)'),
+-- Telaari Citizen
+('1914901','19149','30','0','100','0','5','19141','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Telaari Citizen - Set Phase 1 on Receive AI Event A'),
+('1914902','19149','1','5','100','1','1500','2500','1500','2500','10','4','15','21','0','0','0','0','0','0','0','0','Telaari Citizen - Random Emote (Phase 1)'),
+('1914903','19149','1','5','100','1','5000','250000','5000','250000','0','0','0','0','22','2','0','0','0','0','0','0','Telaari Citizen - Set Phase 2 (Phase 1)'),
+('1914904','19149','1','3','100','1','100','100','100','100','1','-417','-418','-419','1','-420','-421','-422','22','1','0','0','Telaari Citizen - Random Say and Set Phase 1 (Phase 2)'),
 -- Deathshadow Acolyte
 ('1948001','19480','0','0','100','1','5000','7000','11000','15000','11','31293','0','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Consuming Shadows'),
 -- Legion Fel Cannon
@@ -31003,17 +31033,17 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-304','What is it that you want from me, shaman?','0','0','0','21769','0'),
 ('-305','Do you not have eyes? Did you not see the demons on our very doorstep? I do not have the soldiers to spare!','0','0','0','21769','0'),
 ('-306','Pray to your gods, shaman. Perhaps they will come to your aid. The Horde however, cannot...','0','0','0','21769','0'),
-('-307','Wow! Look at his muscles!','0','0','0','18296','0'),
-('-308','Will he win? Can he win?','0','0','0','18292','0'),
-('-309','He\'s so well disciplined!','0','0','0','18293','0'),
-('-310','I wanna be just like the pitfighter!','0','0','0','18292','0'),
+('-307','Wow! Look at his muscles!','0','0','1','Maghar Pitfighter Spectator Text','1'),
+('-308','Will he win? Can he win?','0','0','1','Maghar Pitfighter Spectator Text','1'),
+('-309','He\'s so well disciplined!','0','0','1','Maghar Pitfighter Spectator Text','1'),
+('-310','I wanna be just like the pitfighter!','0','0','1','Maghar Pitfighter Spectator Text','1'),
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','11582','0'),
-('-312','How does he do it?','0','0','0','18296','0'),
+('-312','How does he do it?','0','0','1','Maghar Pitfighter Spectator Text','1'),
 ('-313','That\'s the best reward we\'re going to be able to offer. Hopefully someone accepts the mission.','0','0','0','18407','0'),
 ('-314','Damm those ogres. Damn them to the Nether. Won\'t someone save us from these savages! This is the fifth kidnapping is as many days.','0','0','0','18407','0'),
 ('-315','Any time any of you peons want to take a break, the graveyard is right over there.','0','0','0','19362','0'),
 ('-316','If I see any lazy peons here, I\'ll load them into a catapult and launch them off to the Black Temple!','0','1','0','19362','0'),
--- PLEASE RE-USE 317
+('-317','The pitfighter will be victorious! Just look at him!','0','0','1','Maghar Pitfighter Spectator Text','1'),
 ('-318','Last time someone went out to try and collect the bounty on Netherlock, all we got back was a compressed layer of foolhardy adventurer!','0','0','0','19541','0'),
 ('-319','Maybe I should gather up some other agents and head out there after this shift?','0','0','0','19541','0'),
 -- 320 Please Re-Use
@@ -31112,7 +31142,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-414','If the Captain finds out, it\'ll be the end of me.','0','0','0','1719','0'),
 ('-415','They must have had someone helping them.','0','0','0','1719','0'),
 ('-416','All of a sudden they were everywhere.','0','0','0','1719','0'),
--- PLEASE RE-USE 417 - 428
+('-417','Wow! Look at his muscles!','0','0','7','Kurenai Pitfighter Spectator Text','1'),
+('-418','Will he win? Can he win?','0','0','7','Kurenai Pitfighter Spectator Text','1'),
+('-419','He\'s so well disciplined!','0','0','7','Kurenai Pitfighter Spectator Text','1'),
+('-420','I wanna be just like the pitfighter!','0','0','7','Kurenai Pitfighter Spectator Text','1'),
+('-421','How does he do it?','0','0','7','Kurenai Pitfighter Spectator Text','1'),
+('-422','The pitfighter will be victorious! Just look at him!','0','0','7','Kurenai Pitfighter Spectator Text','1'),
+-- PLEASE RE-USE 423 - 428
 ('-429','Are we there yet?','0','0','0','3504','0'),
 ('-430','My feet hurt.','0','0','0','3504','0'),
 ('-431','Is it true? Are there crocolisks in the canal?','0','0','0','3504','0'),
@@ -31158,7 +31194,15 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-471','%s begins to crack and break apart.','0','2','0','2359','0'),
 ('-472','%s\'s strength dwindles as chunks of rock break off.','0','2','0','2359','0'),
 ('-473','%s is reduced to rubble, but still continues to fight.','0','2','0','2359','0'),
--- PLEASE RE-USE 474 - 489
+('-474','I don\'t wanna play anymore!','0','0','1','18299/18296','0'),
+('-475','Duck!','0','0','1','18299/18296','0'),
+('-476','I miss mommy.','0','0','1','18299/18296','0'),
+('-477','OGRE! You\'re the ogre! HA-HA!','0','0','1','18299/18296','0'),
+('-478','Can we stop running now?','0','0','1','18299/18296','0'),
+('-479','Don\'t go to the lake! It\'s haunted!','0','0','1','18299/18296','0'),
+('-480','Tag! You\'re it!','0','0','1','18299/18296','0'),
+('-481','Get out of the way!','0','0','1','18299/18296','0'),
+-- PLEASE RE-USE 482 - 489
 ('-490','My back is killing me.','0','0','0','12337','0'),
 ('-491','If I should fall, take my pouch. Make certain that it gets to the High General.','0','0','0','12337','0'),
 ('-492','I sense danger up ahead.','0','0','0','12337','0'),
