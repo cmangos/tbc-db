@@ -31,3 +31,6 @@ UPDATE `quest_template` SET `PrevQuestID`=511 WHERE `entry`=514;
 -- Correct typo
 -- Thanks to Sneaky for finding and fixing
 UPDATE `db_script_string` SET `content_default`='Well hand it over and let\'s see what you got!' WHERE `entry`='2000005050';
+
+-- Replace $N$N with proper line break
+UPDATE quest_template SET OfferRewardText = 'With Warlord Sriss''tiz dead, the possibility of a naga invasion is now only a distant memory. We are safe, for the time being...$B$BI must admit, I was wrong to think badly of you, $N. You have shown that you are nothing like the filth that was Archimonde. Accept this as a gift from the night elves.' WHERE entry = 9515;
