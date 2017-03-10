@@ -18352,8 +18352,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1840202','18402','9','0','100','1','8','25','23000','26000','11','32323','4','0','0','0','0','0','0','0','0','0','Warmaul Champion - Cast Charge'),
 ('1840203','18402','0','0','100','1','3000','6000','14000','17000','11','15708','4','1','0','0','0','0','0','0','0','0','Warmaul Champion - Cast Mortal Strike'),
 ('1840204','18402','9','0','75','1','0','5','9000','13000','11','17963','4','0','0','0','0','0','0','0','0','0','Warmaul Champion - Cast Sundering Cleave'),
--- Warden Bullrok
-('1840701','18407','1','0','100','1','60000','60000','120000','240000','1','-314','-313','0','0','0','0','0','0','0','0','0','Warden Bullrok - Random Gossip Speech'),
 -- Durn the Hungerer
 ('1841101','18411','9','0','100','1','0','5','9000','15000','11','28168','1','0','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Arcing Smash'),
 ('1841102','18411','0','0','100','1','12000','24000','30000','50000','11','34771','0','0','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Force Punch'),
@@ -31009,8 +31007,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-310','I wanna be just like the pitfighter!','0','0','0','18292','0'),
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','11582','0'),
 ('-312','How does he do it?','0','0','0','18296','0'),
-('-313','That\'s the best reward we\'re going to be able to offer. Hopefully someone accepts the mission.','0','0','0','18407','0'),
-('-314','Damm those ogres. Damn them to the Nether. Won\'t someone save us from these savages! This is the fifth kidnapping is as many days.','0','0','0','18407','0'),
+-- Reuse 313-314
 ('-315','Any time any of you peons want to take a break, the graveyard is right over there.','0','0','0','19362','0'),
 ('-316','If I see any lazy peons here, I\'ll load them into a catapult and launch them off to the Black Temple!','0','1','0','19362','0'),
 -- PLEASE RE-USE 317
