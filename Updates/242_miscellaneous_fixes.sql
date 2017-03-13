@@ -42,5 +42,7 @@ UPDATE creature_template SET UnitFlags=768 WHERE entry=17518;
 UPDATE `quest_template` SET `Objectives`='Deliver the Sealed Letter to Ag\'tor Bloodfist in Azshara.' WHERE `entry`='3504';
 UPDATE `quest_template` SET `OfferRewardText`='You say that you found it on one of the Scourge at Windrunner Spire and that there\'s an inscription on it? Let me see! Here, take this coin for a job well done. ' WHERE `entry`='9175';
 
+-- Dalliah the Doomsayer should not be immune to interrupt and should be immune to taunt
+UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask&~33554432,ExtraFlags=ExtraFlags|256 WHERE entry IN(20885,21590);
 
 
