@@ -31819,7 +31819,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1118','Wow! The laughs dont\'t drop very often here, do they?','0','0','0','19228','6'),
 ('-1119','Kill $N!','0','1','0','15392','25'),
 -- PLEASE RE-USE 1120 - 1128
-('-1129','I\'m not gonna lie to you, soldiers. We\'re getting our butts out there! Now which one of you is orc enough to do something about it?','0','0','0','19255','1'),
+('-1129','I\'m not gonna lie to you, soldiers. We\'re getting our butts kicked out there! Now which one of you is orc enough to do something about it?','0','0','0','19255','1'),
 ('-1130','I can\'t belive that Papa Wheeler thinks he\'s going to dupe anyone into going out to Manaforge B\'naar!','0','0','0','19541','1'),
 ('-1131','We can\'t let a failing servo slow down the construction of the X-52 Nether-Rocket!','0','0','0','19541','1'),
 ('-1132','Netherock?! That thing\'ll squish you flat with one step of its massive foot! No thanks!','0','0','0','19541','1'),
