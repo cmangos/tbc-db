@@ -63,6 +63,7 @@ PASSWORD="mangos"
 
 ## Define the path to your core's folder (This is optional)
 ##   If set the core updates located under sql/updates from this mangos-directory will be added automatically
+##   If not set, need to apply sql/base/dbc/ files manually
 CORE_PATH=""
 
 ## Define your mysql programm if this differs
