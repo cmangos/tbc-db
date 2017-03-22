@@ -16785,7 +16785,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('586501','5865','4','0','100','0','0','0','0','0','11','8210','0','1','0','0','0','0','0','0','0','0','Dishu - Cast Savannah Cubs on Aggro'),
 -- Summoned Felhunter
 ('626801','6268','0','0','100','1','5000','11000','11000','17000','11','2691','1','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Mana Burn'),
--- Polly (7167) - NSR
+-- Polly
+('716701','7167','11','0','100','0','0','0','0','0','1','-628','0','0','0','0','0','0','0','0','0','0','Polly - Say on Spawn'),
+-- Polly
+('716801','7168','11','0','100','0','0','0','0','0','1','-629','0','0','0','0','0','0','0','0','0','0','Polly - Say on Spawn'),
 -- Venture Co. Lookout
 ('730701','7307','8','2','100','1','2098','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 1 hit and Move to Phase 1'),
 ('730702','7307','8','2','100','1','6760','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 2 hit and Move to Phase 1'),
@@ -31488,7 +31491,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-625','So can you teach me this... this...','0','0','0','20353','0'),
 ('-626','And the Kirin Tor? What have they to say of this necromancy?','0','0','0','20353','0'),
 ('-627','Then teach me, Kel\'Thuzad. Teach me everything you know...','0','0','0','20353','0'),
--- PLEASE RE-USE 628 - 633
+('-628','SQUAWK!','0','1','0','7167','0'),
+('-629','What the squawk??? Squawk, squawk, squawk? SQUAWK!','0','0','0','7168','0'),
+-- PLEASE RE-USE 630 - 633
 ('-634','Life energy to... consume.','11250','1','0','20870','0'),
 ('-635','The shadow... will engulf you.','11253','1','0','20870','0'),
 ('-636','Darkness...consumes...all.','11254','1','0','20870','0'),
