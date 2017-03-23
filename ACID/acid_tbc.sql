@@ -3366,12 +3366,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Frog (13321) - NSR    
 -- Tender (15271) - NSR
 -- Arcane Wraith (3.0.3 Official Data)
-('1527301','15273','8','0','100','0','28734','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Killed Credit for Sunstrider Mana Tap Counter'),
+('1527301','15273','8','0','100','0','28734','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Arcane Wraith - Quest Credit on Mana Tap Spellhit (Quest: 8346)'),
 ('1527302','15273','0','0','100','1','10100','16500','12700','24800','11','37361','1','0','0','0','0','0','0','0','0','0','Arcane Wraith - Cast Arcane Bolt'),
 -- Mana Wyrm (3.0.3 Official Data)
-('1527401','15274','8','0','100','0','28730','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Cast Quest Credit 8346 on Arcane Torrent Spellhit (Quest: 8346)'),
-('1527402','15274','8','0','100','0','25046','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Cast Quest Credit 8346 on Arcane Torrent Spellhit (Quest: 8346)'),
-('1527403','15274','0','0','75','1','12000','14000','56000','64000','11','25602','1','0','0','0','0','0','0','0','0','0','Mana Wyrm - cast Faerie Fire'),
+('1527401','15274','8','0','100','0','28734','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Quest Credit on Mana Tap Spellhit (Quest: 8346)'),
+('1527402','15274','0','0','75','1','12000','14000','56000','64000','11','25602','1','0','0','0','0','0','0','0','0','0','Mana Wyrm - Cast Faerie Fire'),
 -- Magistrix Erona (15278) - NSR
 -- Julia Sunstriker (15279) - NSR
 -- Jesthenis Sunstriker (15280) - NSR
@@ -3393,13 +3392,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jainthess Thelryn (15291) - NSR
 -- Faraden Thelryn (15292) - NSR
 -- Feral Tender (3.0.3 Official Data)
-('1529401','15294','8','0','100','0','28734','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Killed Credit for Sunstrider Mana Tap Counter'),
+('1529401','15294','8','0','100','0','28734','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Feral Tender - Quest Credit on Mana Tap Spellhit (Quest: 8346)'),
 ('1529402','15294','2','0','100','1','50','0','15300','22900','11','31325','0','0','0','0','0','0','0','0','0','0','Feral Tender - Cast Renew at 50% HP'),
 -- Well Watcher Solanian (15295) - NSR
 -- Arcanist Ithanas (15296) - NSR
 -- Arcanist Helion (15297) - NSR
 -- Tainted Arcane Wraith (3.0.3 Official Data)
-('1529801','15298','8','0','100','0','28734','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Mana Wyrm - Killed Credit for Sunstrider Mana Tap Counter'),
+('1529801','15298','8','0','100','0','28734','-1','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Tainted Arcane Wraith - Quest Credit on Mana Tap Spellhit (Quest: 8346)'),
 ('1529802','15298','0','0','100','1','9000','18800','21100','32200','11','25603','1','0','0','0','0','0','0','0','0','0','Tainted Arcane Wraith - Cast Slow'),
 -- Outrunner Alarion (15301) - NSR
 -- Springpaw Cub (15366) - NSR
