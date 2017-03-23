@@ -17,3 +17,7 @@ UPDATE creature SET equipment_id=0 WHERE id=18948;
 -- does not drop currently as it requires 9373
 UPDATE creature_loot_template SET ChanceOrQuestChance=10 WHERE item=23338;
 
+-- Flora of the Eco-Domes
+-- fix incorrect ID for creatures which need to be killed for quest credit
+UPDATE quest_template SET ReqCreatureOrGOId1=20983 WHERE entry=10426;
+
