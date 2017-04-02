@@ -27,4 +27,8 @@ INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`position_x`,`position_y
 (150125, 300118, 530, 1, 4734.71, 3193.67, 161.48, 0.386745, 0, 0, 0.19217, 0.981362, 120, 120, 0, 1),
 (150126, 300118, 530, 1, 4673.28, 3126.67, 166.725, 5.42979, 0, 0, 0.413867, -0.910337, 120, 120, 0, 1);
 
+-- Pendant of the Violet Eye should proc on any cast
+DELETE FROM spell_proc_event WHERE entry IN(29601);
+INSERT INTO spell_proc_event(entry,procEx) VALUES(29601,65536);
+
 
