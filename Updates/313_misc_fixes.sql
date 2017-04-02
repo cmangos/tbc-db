@@ -31,4 +31,8 @@ INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`position_x`,`position_y
 DELETE FROM spell_proc_event WHERE entry IN(29601);
 INSERT INTO spell_proc_event(entry,procEx) VALUES(29601,65536);
 
+-- Darkmoon Card: Crusade should proc on any cast
+DELETE FROM spell_proc_event WHERE entry IN(39440);
+INSERT INTO spell_proc_event(entry,procEx) VALUES(39440,65536);
+
 
