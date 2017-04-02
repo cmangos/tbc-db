@@ -35,4 +35,7 @@ INSERT INTO spell_proc_event(entry,procEx) VALUES(29601,65536);
 DELETE FROM spell_proc_event WHERE entry IN(39440);
 INSERT INTO spell_proc_event(entry,procEx) VALUES(39440,65536);
 
+-- Scarab of Unending Life should proc on any cast
+UPDATE spell_proc_event SET procEx=65536 WHERE entry IN(33953);
+
 
