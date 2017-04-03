@@ -38,4 +38,9 @@ INSERT INTO spell_proc_event(entry,procEx) VALUES(39440,65536);
 -- Scarab of Unending Life should proc on any cast
 UPDATE spell_proc_event SET procEx=65536 WHERE entry IN(33953);
 
+-- Min Level for Gnomeregan
+UPDATE areatrigger_teleport SET required_level=15 WHERE id IN(324,523);
+-- Shadowfang Keep
+UPDATE areatrigger_teleport SET required_level=15 WHERE id IN(244);
+
 
