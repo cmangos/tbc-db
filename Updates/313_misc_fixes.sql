@@ -74,5 +74,7 @@ DELETE FROM spell_area WHERE spell=39841;
 -- Administer Antidote - quest should complete on dreadtusk kill not on spellcast of Administer Antidote
 UPDATE quest_template SET ReqSpellCast1=0,ReqCreatureOrGOId1=16992 WHERE entry IN(10255);
 
->>>>>>> Fix q.10255 completion parameters
+-- Gordunni Cobalt - remove hack
+DELETE FROM dbscripts_on_go_template_use WHERE id IN(144050);
+
 
