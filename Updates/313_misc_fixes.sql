@@ -71,10 +71,16 @@ INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, b
 -- Fix "... Helmet of Second Sight", Spectrecles effect - should be active any time player equips item
 DELETE FROM spell_area WHERE spell=39841;
 
+-- https://jira.vengeancewow.com/browse/TBC-1902
 -- Administer Antidote - quest should complete on dreadtusk kill not on spellcast of Administer Antidote
 UPDATE quest_template SET ReqSpellCast1=0,ReqCreatureOrGOId1=16992 WHERE entry IN(10255);
 
+-- https://jira.vengeancewow.com/browse/TBC-6
 -- Gordunni Cobalt - remove hack
 DELETE FROM dbscripts_on_go_template_use WHERE id IN(144050);
+
+-- https://jira.vengeancewow.com/browse/TBC-10
+-- Should only drop one item per kill
+UPDATE creature_loot_template SET mincountOrRef=1,maxcount=1 WHERE entry IN(9683) AND item IN(11509);
 
 
