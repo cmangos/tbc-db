@@ -83,4 +83,8 @@ DELETE FROM dbscripts_on_go_template_use WHERE id IN(144050);
 -- Should only drop one item per kill
 UPDATE creature_loot_template SET mincountOrRef=1,maxcount=1 WHERE entry IN(9683) AND item IN(11509);
 
+-- https://jira.vengeancewow.com/browse/TBC-1691
+-- Apprentice Angler - quest should reward 1g 12s on level 70
+UPDATE quest_template SET RewMoneyMaxLevel=11200 WHERE entry IN(8194);
+
 
