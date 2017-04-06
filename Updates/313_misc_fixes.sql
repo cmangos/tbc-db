@@ -61,3 +61,9 @@ DELETE FROM `creature_loot_template` WHERE `entry`=7404 AND `item`=5869;
 -- stop auto completion of Quest: 660 - Hints of a New Plague?
 UPDATE `quest_template` SET `SpecialFlags`=2 WHERE `entry`=660;
 
+-- The Rethban Gauntlet
+UPDATE quest_template SET StartScript=1699 WHERE entry=1699;
+DELETE FROM dbscripts_on_quest_start WHERE id=1699;
+INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(1699, 0, 15, 8554, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Drinking Barleybrew Scalder');
+
