@@ -71,3 +71,8 @@ INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, b
 -- Fix "... Helmet of Second Sight", Spectrecles effect - should be active any time player equips item
 DELETE FROM spell_area WHERE spell=39841;
 
+-- Administer Antidote - quest should complete on dreadtusk kill not on spellcast of Administer Antidote
+UPDATE quest_template SET ReqSpellCast1=0,ReqCreatureOrGOId1=16992 WHERE entry IN(10255);
+
+>>>>>>> Fix q.10255 completion parameters
+
