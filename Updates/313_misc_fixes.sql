@@ -49,13 +49,15 @@ UPDATE creature_template SET RegenerateStats=2 WHERE entry IN(20899);
 -- Cuergos Gold - should be repeatable
 UPDATE quest_template SET SpecialFlags=SpecialFlags|1 WHERE entry IN(2882);
 
-/*
-https://jira.vengeancewow.com/browse/TBC-241
-Problem: The centaur in 1k needles are dropping the Cloven Hoof(I:5869) quest item for the quest The Sacred Flame(Q:1197). This shouldn't drop from mobs, it should only be receivable from the Ancient Brazier(GO:20807).
-Solution: Removed Item from creature's loot table. */
-
+-- https://jira.vengeancewow.com/browse/TBC-241
+-- The Sacred Flame(Q:1197)
+-- Cloven Hoof(I:5869) should only be accessible via Ancient Brazier(GO:20807)  
 DELETE FROM `creature_loot_template` WHERE `entry`=4095 AND `item`=5869;
 DELETE FROM `creature_loot_template` WHERE `entry`=4097 AND `item`=5869;
 DELETE FROM `creature_loot_template` WHERE `entry`=4099 AND `item`=5869;
 DELETE FROM `creature_loot_template` WHERE `entry`=7404 AND `item`=5869;
+
+-- https://jira.vengeancewow.com/browse/TBC-228
+-- stop auto completion of Quest: 660 - Hints of a New Plague?
+UPDATE `quest_template` SET `SpecialFlags`=2 WHERE `entry`=660;
 
