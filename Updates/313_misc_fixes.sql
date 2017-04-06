@@ -87,4 +87,20 @@ UPDATE creature_loot_template SET mincountOrRef=1,maxcount=1 WHERE entry IN(9683
 -- Apprentice Angler - quest should reward 1g 12s on level 70
 UPDATE quest_template SET RewMoneyMaxLevel=11200 WHERE entry IN(8194);
 
+-- https://jira.vengeancewow.com/browse/TBC-2453
+-- Fixed timings and script for short john mithril
+UPDATE creature_movement_template SET script_id=0 WHERE entry=14508 AND pathId=0 AND point=16;
+UPDATE creature_movement_template SET script_id=0 WHERE entry=14508 AND pathId=0 AND point=19;
+UPDATE creature_movement_template SET waittime=4000, script_id=1450802 WHERE entry=14508 AND pathId=0 AND point=15;
+UPDATE creature_movement_template SET script_id=1450803 WHERE entry=14508 AND pathId=0 AND point=22;
+
+DELETE FROM dbscripts_on_creature_movement WHERE id IN(1450802,1450803);
+INSERT INTO dbscripts_on_creature_movement(id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+('1450802', '4', '0', '0', '0', '0', '0', '0', '0', '2000009078', '0', '0', '0', '0', '0', '0', '0', 'Short John Mithril - yell 2'),
+('1450802', '4', '9', '12029', '10500', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Short John Mithril - spawn chest'),
+('1450802', '4', '25', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Short John Mithril - Run On'),
+('1450803', '0', '25', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Short John Mithril - Run Off');
+-- Short John Mithril - make him active
+UPDATE creature_template SET ExtraFlags=4096 WHERE entry IN(14508);
+
 
