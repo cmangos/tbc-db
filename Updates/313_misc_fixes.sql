@@ -112,4 +112,8 @@ DELETE FROM creature_template_addon WHERE entry IN (7784,7806,7807);
 DELETE FROM creature_addon WHERE guid IN (23229,93301,50381);
 UPDATE creature SET spawntimesecsmin=150, spawntimesecsmax=150 WHERE id IN (7784,7806,7807);
 
+-- https://jira.vengeancewow.com/browse/TBC-2460
+-- Improve drop chance of objectives for q.3601 'Kim'jael Indeed!'
+UPDATE gameobject_loot_template SET ChanceOrQuestChance=-25 WHERE item IN (10717,10715,10722,10718);
+
 
