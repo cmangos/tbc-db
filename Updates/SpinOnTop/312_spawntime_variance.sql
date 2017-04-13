@@ -33,3 +33,5 @@ UPDATE creature SET spawntimesecsmin=172800, spawntimesecsmax=345600 WHERE id=61
 -- RARE SPAWNS (soon to come)
 
 
+ALTER TABLE db_version CHANGE COLUMN required_s2343_01_mangos_quest_template required_s2348_02_mangos_gameobjects bit;
+
