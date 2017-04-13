@@ -3,11 +3,17 @@
 -- ----------------------------------------------------------
 
 -- Linking
-DELETE FROM `creature_linking_template` WHERE `master_entry`=18258;
-INSERT INTO `creature_linking_template` (`entry`,`map`,`master_entry`,`flag`,`search_range`)VALUES
-(17130,530,18258,512,25), -- Stag 
-(18964,530,18258,512,35), -- Injured Talbuk
-(17131,530,18258,512,20); -- Thorngrazer 
+DELETE FROM `creature_linking` WHERE `master_guid`=65528;
+INSERT INTO `creature_linking` (`guid`,`master_guid`,`flag`) VALUES
+(59972,65528,515),
+(59973,65528,515),
+(59974,65528,515),
+(59727,65528,515),
+(59728,65528,515),
+(59729,65528,515),
+(59730,65528,515),
+(68109,65528,515),
+(68110,65528,515);
 
 UPDATE `creature` SET `spawndist`=0,`MovementType`=0 WHERE `guid` IN (59730,59728,68109,68110,59727,59729,59972,59974,59973);
 
