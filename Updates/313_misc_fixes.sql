@@ -124,4 +124,6 @@ UPDATE creature SET MovementType=1 WHERE guid IN (31772,37642,37647,37669,37671,
 -- should have UNIT_FLAG_PASSIVE and UNIT_FLAG_OOC_NOT_ATTACKABLE according to sniff
 UPDATE creature_template SET UnitFlags=UnitFlags|512|256 WHERE entry=17265;
 
+-- Surf Crawler/Encrusted Surf Crawler can swim
+UPDATE creature_template SET InhabitType=3 WHERE entry IN (3107,3108);
 
