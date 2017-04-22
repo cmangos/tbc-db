@@ -17824,6 +17824,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2172906','21729','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Electromental - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('2172907','21729','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Electromental - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2172908','21729','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Electromental - Set Phase to 0 on Evade'),
+-- Wyrm from Beyond
+('2179601','21796','0','0','100','1','4000','6000','5500','7000','11','13321','1','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Cast Mana Burn'),
 -- Summoned Wrath Hound
 ('2183701','21837','11','0','100','0','0','0','0','0','11','22578','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Glowy (Black) on Spawn'),
 ('2183702','21837','4','0','100','0','0','0','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Charge on Aggro'),
