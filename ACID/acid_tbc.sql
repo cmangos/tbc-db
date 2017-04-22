@@ -19342,7 +19342,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ethereum Prisoner (Tyralius) 20825 
 -- Ethereum Gladiator 20854 
 -- Aurine Moonblaze 20871 
--- Void Conduit 20899 
+-- Void Conduit (must not respond to players aggro)
+('2089901','20899','9','0','100','1','0','500','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Void Conduit - Prevent Combat Movement and Prevent Melee'),
+('2089902','20899','8','0','100','1','35734','-1','0','0','11','5','0','0','0','0','0','0','0','0','0','0','Void Conduit - Credit on SpellHIT'),
+('2089903','20899','6','0','100','0','0','0','0','0','1','-1541','0','0','0','0','0','0','0','0','0','0','Void Conduit - Yell on Death'),
 -- Protectorate Nether Drake 20903 
 -- Professor Dabiri 20907 
 -- Tashar 20913 
@@ -32144,7 +32147,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1537','My lord will be outraged to learn of this ambush. Let us hope your death will appease him.','0','0','0','Crimson Templar','0'),
 ('-1538','The Abyssal Council does not tolerate deceit! Feel our wrath, little $r!','0','0','0','Crimson Templar','0'),
 ('-1539','Your life is a fitting sacrifice for my master, $c.','0','0','0','Crimson Templar','0'),
-('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0');
+('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0'),
+('-1541','You only hasten the inevitable. In time, all will be devoured!','0','1','0','20899','0');
 
 
 -- =======================================================
