@@ -133,4 +133,16 @@ UPDATE creature_template SET InhabitType=3 WHERE entry IN (3107,3108);
 DELETE FROM points_of_interest WHERE entry=439;
 DELETE FROM gossip_menu_option WHERE menu_id=2343 AND id=3;
 
+-- Captain's Key (9249)
+-- https://jira.vengeancewow.com/browse/TBC-2461
+-- https://jira.vengeancewow.com/browse/TBC-886
+DELETE FROM item_loot_template WHERE item=9249 AND entry=16884; -- Sturdy Junkbox
+UPDATE item_loot_template SET ChanceOrQuestChance=10 WHERE item=9249 AND entry=9276; -- Pirate's Footlocker
+
+DELETE FROM creature_loot_template WHERE item=9249 AND entry=2354; -- Vicious Gray Bear
+DELETE FROM creature_loot_template WHERE item=9249 AND entry=5420; -- Glasshide Gazer
+DELETE FROM creature_loot_template WHERE item=9249 AND entry=5617; -- Wastewander Shadow Mage
+DELETE FROM creature_loot_template WHERE item=9249 AND entry=9453; -- Aquementas
+DELETE FROM creature_loot_template WHERE item=9249 AND entry=10414; -- Patchwork Horror
+
 
