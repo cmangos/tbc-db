@@ -127,3 +127,10 @@ UPDATE creature_template SET UnitFlags=UnitFlags|512|256 WHERE entry=17265;
 -- Surf Crawler/Encrusted Surf Crawler can swim
 UPDATE creature_template SET InhabitType=3 WHERE entry IN (3107,3108);
 
+-- https://jira.vengeancewow.com/browse/TBC-1709
+-- Darnassus Paladin Trainer - Rukua (35281) 
+-- Not added until WotLK
+DELETE FROM points_of_interest WHERE entry=439;
+DELETE FROM gossip_menu_option WHERE menu_id=2343 AND id=3;
+
+
