@@ -116,4 +116,8 @@ UPDATE creature SET spawntimesecsmin=150, spawntimesecsmax=150 WHERE id IN (7784
 -- Improve drop chance of objectives for q.3601 'Kim'jael Indeed!'
 UPDATE gameobject_loot_template SET ChanceOrQuestChance=-25 WHERE item IN (10717,10715,10722,10718);
 
+-- Remove obviously wrong movement for all creatures in Black Morass
+DELETE FROM creature_movement WHERE id IN (31772,37642,37647,37669,37671,37676,37677,37682,37691,37692,37693,37694,37695,37696,37697,37698,37699,37700,38347,39540);
+UPDATE creature SET MovementType=1 WHERE guid IN (31772,37642,37647,37669,37671,37676,37677,37682,37691,37692,37693,37694,37695,37696,37697,37698,37699,37700,38347,39540);
+
 
