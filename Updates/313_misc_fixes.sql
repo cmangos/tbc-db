@@ -149,4 +149,7 @@ DELETE FROM creature_loot_template WHERE item=9249 AND entry=10414; -- Patchwork
 -- add UNIT_FLAG_NOT_SELECTABLE
 UPDATE creature_template SET UnitFlags=UnitFlags|33554432 WHERE entry IN (17662,18602);
 
+-- https://jira.vengeancewow.com/browse/TBC-34
+UPDATE creature_template SET InhabitType=5 WHERE entry=21840;
+
 
