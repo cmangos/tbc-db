@@ -18851,6 +18851,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1887901','18879','1','0','100','0','0','0','0','0','11','34804','0','0','0','0','0','0','0','0','0','0','Phase Hunter - Cast Materialize on Spawn'),
 ('1887902','18879','0','0','100','1','2900','9600','11300','16800','11','37176','1','0','0','0','0','0','0','0','0','0','Phase Hunter - Cast Mana Burn'),
 ('1887903','18879','8','0','100','0','0','1','0','0','11','34814','0','0','0','0','0','0','0','0','0','0','Phase Hunter - Cast De-Materialize on Physical Spell Hit'),
+('1887904','18879','2','0','100','0','35','0','0','0','1','-1542','0','0','0','0','0','0','0','0','0','0','Phase Hunter - TextEmote at 35% HP'),
 -- Nether Ray 
 ('1888001','18880','9','0','100','1','0','20','7000','11000','11','35334','1','0','0','0','0','0','0','0','0','0','Nether Ray - Cast Nether Shock'),
 ('1888002','18880','9','0','100','1','0','15','6000','9000','11','36659','4','32','0','0','0','0','0','0','0','0','Nether Ray - Cast Tail Sting'),
@@ -32165,7 +32166,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1538','The Abyssal Council does not tolerate deceit! Feel our wrath, little $r!','0','0','0','Crimson Templar','0'),
 ('-1539','Your life is a fitting sacrifice for my master, $c.','0','0','0','Crimson Templar','0'),
 ('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0'),
-('-1541','You only hasten the inevitable. In time, all will be devoured!','0','1','0','20899','0');
+('-1541','You only hasten the inevitable. In time, all will be devoured!','0','1','0','20899','0'),
+('-1542','The %s is very weak.','0','2','0','18879','0');
 
 
 -- =======================================================
