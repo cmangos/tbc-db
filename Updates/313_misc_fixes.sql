@@ -145,4 +145,8 @@ DELETE FROM creature_loot_template WHERE item=9249 AND entry=5617; -- Wastewande
 DELETE FROM creature_loot_template WHERE item=9249 AND entry=9453; -- Aquementas
 DELETE FROM creature_loot_template WHERE item=9249 AND entry=10414; -- Patchwork Horror
 
+-- Broggok Poison Cloud in Blood Furnace
+-- add UNIT_FLAG_NOT_SELECTABLE
+UPDATE creature_template SET UnitFlags=UnitFlags|33554432 WHERE entry IN (17662,18602);
+
 
