@@ -3406,8 +3406,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1536701','15367','4','0','100','0','0','0','0','0','1','-110','0','0','0','0','0','0','0','0','0','0','Felendren the Banished - Say on Aggro'),
 ('1536702','15367','0','0','100','1','9100','10600','20500','28600','11','16568','1','0','0','0','0','0','0','0','0','0','Felendren the Banished - Cast Mind Flay'),
 -- Sunstrider Guardian
-('1537101','15371','22','0','30','1','78','6','469','0','1','-936','-937','0','0','0','0','0','0','0','0','0','Sunstrider Guardian -  Say on Receive Salute Emote'),
-('1537102','15371','22','0','30','1','77','6','469','0','1','-938','0','0','0','0','0','0','0','0','0','0','Sunstrider Guardian - Say on Receive Rude Emote'),
+('1537101','15371','22','0','30','1','78','6','67','0','1','-936','-937','0','0','0','0','0','0','0','0','0','Sunstrider Guardian -  Say on Receive Salute Emote'),
+('1537102','15371','22','0','30','1','77','6','67','0','1','-938','0','0','0','0','0','0','0','0','0','0','Sunstrider Guardian - Say on Receive Rude Emote'),
 -- Springpaw Lynx (15372) - NSR
 -- Marniel Amberlight (15397) - npc_innkeeper
 -- Larianna Riverwind (15398) - NSR
