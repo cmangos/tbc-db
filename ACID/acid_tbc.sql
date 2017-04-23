@@ -7683,7 +7683,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nissa Agamand (1655) - NSR
 -- Thurman Agamand (1656) - NSR
 -- Devilin Agamand
-('165701','1657','4','0','60','0','0','0','0','0','1','-1033','-1034','0','0','0','0','0','0','0','0','0','Devlin Agamand - Random Say on Aggro'),
+('165701','1657','4','0','60','0','0','0','0','0','1','-1033','-1034','-320','0','0','0','0','0','0','0','0','Devlin Agamand - Random Say on Aggro'),
 ('165702','1657','9','0','100','1','0','5','16000','30000','11','3148','1','0','0','0','0','0','0','0','0','0','Devilin Agamand  - Cast Head Crack'),
 -- Captain Dargol (1658) - NSR
 -- Scarlet Bodyguard
@@ -31270,7 +31270,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-317','The pitfighter will be victorious! Just look at him!','0','0','1','Maghar Pitfighter Spectator Text','1'),
 ('-318','Last time someone went out to try and collect the bounty on Netherlock, all we got back was a compressed layer of foolhardy adventurer!','0','0','0','19541','0'),
 ('-319','Maybe I should gather up some other agents and head out there after this shift?','0','0','0','19541','0'),
--- 320 Please Re-Use
+('-320','Mother, oh mother. You should have listened to me...','0','0','0','1657','0'),
 ('-321','Iman m t\'ief fu Fus\'obeah italaf','0','0','0','Common Frostmane Troll Text','0'),
 ('-322','Dim wha Siame cyaa fi so yudo','0','0','0','Common Frostmane Troll Text','0'),
 ('-323','So ju weh siame is fus nehjo skam worl Uptfeel','0','0','0','1260','0'),
