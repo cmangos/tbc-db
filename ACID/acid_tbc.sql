@@ -24085,7 +24085,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bonechewer Destroyer (3.0.3 Official Data - Normal Log Only)
 ('1727101','17271','4','0','20','6','0','0','0','0','1','-156','-181','-674','0','0','0','0','0','0','0','0','Bonechewer Destroyer - Random Say on Aggro'),
 ('1727102','17271','9','0','100','7','0','5','6100','21400','11','16856','1','0','0','0','0','0','0','0','0','0','Bonechewer Destroyer - Cast Mortal Strike'),
-('1727103','17271','0','0','100','7','19300','31400','11100','32200','11','10101','1','1','13','-80','1','0','0','0','0','0','Bonechewer Destroyer - Cast Knock Away and Reduce Threat'),
+('1727103','17271','0','0','100','7','19300','31400','11100','32200','11','10101','1','1','0','0','0','0','0','0','0','0','Bonechewer Destroyer - Cast Knock Away and Reduce Threat'),
 -- Shattered Hand Warhound (3.0.3 Official Data - Normal Log Only)
 ('1728001','17280','0','0','100','7','1000','3100','13100','25300','11','30636','1','0','0','0','0','0','0','0','0','0','Shattered Hand Warhound - Cast Furious Howl'),
 ('1728002','17280','0','0','100','7','2300','8600','3600','8400','11','30639','1','0','0','0','0','0','0','0','0','0','Shattered Hand Warhound - Cast Carnivorous Bite'),
