@@ -153,3 +153,10 @@ UPDATE creature_template SET UnitFlags=UnitFlags|33554432 WHERE entry IN (17662,
 UPDATE creature_template SET InhabitType=5 WHERE entry=21840;
 
 
+-- Add missing Fire Elemental and Earth Elemental spells
+DELETE FROM creature_template_addon WHERE entry IN(15438,15352);
+INSERT INTO creature_template_addon(entry,auras) VALUES
+(15352,'36492'),
+(15438,'36492');
+
+
