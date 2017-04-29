@@ -159,4 +159,7 @@ INSERT INTO creature_template_addon(entry,auras) VALUES
 (15352,'36492'),
 (15438,'36492');
 
+-- Fix factions for Snake trap snakes
+UPDATE creature_template SET FactionAlliance=1629 WHERE entry IN(19921,19833);
+
 
