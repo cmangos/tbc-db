@@ -19820,20 +19820,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==============
 -- Shattrath City
 -- ==============
--- Adyen the Lightwarden
-('1853701','18537','1','0','100','1','9000','9000','600000','600000','1','-964','0','0','0','0','0','0','0','0','0','0','Adyen the Lightwarden - Say OOC 1'),
+-- Adyen the Lightwarden (When should this be used?)
+-- ('1853701','18537','1','0','100','1','9000','9000','600000','600000','1','-964','0','0','0','0','0','0','0','0','0','0','Adyen the Lightwarden - Say OOC 1'),
 -- Raliq the Drunk
 ('1858501','18585','0','0','100','1','3000','5000','12000','16000','11','10966','1','0','0','0','0','0','0','0','0','0','Raliq the Drunk - Cast Uppercut'),
 -- Spymistress Mehlisah Highcrown
 ('1889301','18893','1','0','100','1','5000','25000','5000','15000','5','1','0','0','0','0','0','0','0','0','0','0','Spymistress Mehlisah Highcrown - Random Talk Emote OOC'),
 -- Skettis Outcast
 ('1907501','19075','1','0','100','1','5000','25000','5000','15000','5','1','0','0','0','0','0','0','0','0','0','0','Skettis Outcast - Random Talk Emote OOC'),
--- Aldor Anchorite
-('1913801','19138','1','0','25','1','269500','269500','269500','269500','1','-273','0','0','0','0','0','0','0','0','0','0','Aldor Anchorite - Say OOC'),
 -- Mag'har Refugee
 ('1914401','19144','1','0','100','1','15000','25000','10000','20000','5','1','0','0','0','0','0','0','0','0','0','0','Mag\'har Refugee - Random Talk Emote OOC'),
 -- Orc Refugee
 ('1915001','19150','1','0','100','1','15000','25000','10000','20000','5','1','0','0','0','0','0','0','0','0','0','0','Orc Refugee - Random Talk Emote OOC'),
+-- Neophyte Combatant
+('1916101','19161','30','0','100','0','5','19337','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Neophyte Combatant - Set Phase 1 on Receive AI Event A'),
+('1916102','19161','1','5','100','0','0','0','0','0','47','8','0','0','22','2','0','0','0','0','0','0','Neophyte Combatant - Kneel and set Phase 2'),
+('1916103','19161','1','3','100','0','45000','45000','45000','45000','47','0','0','0','22','0','0','0','24','0','0','0','Neophyte Combatant - Turn off kneel, evade and set Phase 0'),
 -- Peasant Refugee
 ('1917001','19170','1','0','100','1','10000','15000','15000','25000','5','1','0','0','0','0','0','0','0','0','0','0','Peasant Refugee - Random Talk Emote OOC'),
 -- Cro Threadstrong
@@ -19854,20 +19856,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1928304','19283','1','0','100','1','30000','300000','240000','520000','1','-837','-838','-839','0','0','0','0','0','0','0','0','Vagrant - Random Say OOC'),
 -- Vagabond
 ('1928901','19289','11','0','50','0','0','0','0','0','10','12','65','68','0','0','0','0','0','0','0','0','Vagabond - Random State on Spawn'),
--- Harbinger Erothem
--- ('1934609','19346','1','0','100','1','1200000','1200000','240000','240000','1','-274','0','0','0','0','0','0','0','0','0','0','Harbinger Erothem - OOC Say Pray 1'),
--- ('1934610','19346','1','0','100','1','1240000','1240000','244000','244000','1','-275','0','0','0','0','0','0','0','0','0','0','Harbinger Erothem - OOC Say Pray 2'),
--- ('1934611','19346','1','0','100','1','2690000','2690000','269000','269000','1','-276','0','0','0','0','0','0','0','0','0','0','Harbinger Erothem - OOC Say Pray 3'),
--- Anchorite Nindumen
-('1937801','19378','1','0','100','1','122000','122000','242000','242000','1','-277','0','0','0','0','0','0','0','0','0','0','Anchorite Nindumen - Say OOC'),
-('1937802','19378','1','0','100','1','127000','127000','247000','247000','1','-278','0','0','0','0','0','0','0','0','0','0','Anchorite Nindumen - Say OOC'),
-('1937803','19378','1','0','100','1','129000','129000','249000','249000','1','-279','0','0','0','0','0','0','0','0','0','0','Anchorite Nindumen - Say OOC'),
-('1937804','19378','1','0','100','1','134000','134000','254000','254000','1','-280','0','0','0','0','0','0','0','0','0','0','Anchorite Nindumen - Say OOC'),
-('1937805','19378','1','0','100','1','138000','138000','258000','258000','1','-281','0','0','0','0','0','0','0','0','0','0','Anchorite Nindumen - Say OOC'),
-('1937806','19378','1','0','100','1','140000','140000','260000','260000','1','-282','0','0','0','0','0','0','0','0','0','0','Anchorite Nindumen - Say OOC'),
-('1937807','19378','1','0','100','1','143000','143000','263000','263000','1','-283','0','0','0','0','0','0','0','0','0','0','Anchorite Nindumen - Say OOC'),
-('1937808','19378','1','0','100','1','146000','146000','266000','266000','1','-284','0','0','0','0','0','0','0','0','0','0','Anchorite Nindumen - Say OOC'),
-('1937809','19378','1','0','100','1','148000','148000','268000','268000','1','-285','0','0','0','0','0','0','0','0','0','0','Anchorite Nindumen - Say OOC'),
 -- Harbinger Haronem
 ('1947501','19475','1','0','100','1','6000','6000','6000','6000','5','1','0','0','0','0','0','0','0','0','0','0','Harbinger Haronem - Talk Emote OOC'),
 ('1947502','19475','1','0','100','1','39000','39000','300000','300000','1','-832','0','0','0','0','0','0','0','0','0','0','Harbinger Haronem - Say OOC (Part of Whirligig Wafflefry Conversation)'),
@@ -31223,19 +31211,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-270','Yea, that hit the spot. Muffins for sale! Get your fresh muffins right here!','0','0','0','19664','0'),
 ('-271','Yea, yea, I\'m the muffin man. You know why? Because I sell muffins, that\'s why!','0','0','0','19664','0'),
 ('-272','I\'ve got muffins right over here. Come on over!','0','0','0','19664','0'),
-('-273','May it be so.','0','0','0','19138','0'),
+-- Reuse 273
 ('-274','%s looks weak enough to capture.','0','2','0','4351','0'),
 ('-275','This land was mine long before your wretched kind set foot here.','0','1','0','23864','0'),
 ('-276','All who venture here belong to me, including you!','0','1','0','23864','0'),
-('-277','Of course, my friend. How can I be of service to you?','0','0','0','19378','0'),
-('-278','A noble request. It would be an honor, Erothem.','0','0','0','19378','0'),
-('-279','My friends, please join me in humble supplication the the Light.','0','0','0','19378','0'),
-('-280','Light that we embrace, we beseech thee...','0','0','0','19378','0'),
-('-281','Into our struggle against the darkness we have sent our children.','0','0','0','19378','0'),
-('-282','Please bless and protect them, and grant them success over those who seek to do us harm...','0','0','0','19378','0'),
-('-283','Continue to bless this, our ancient home, we beg.','0','0','0','19378','0'),
-('-284','Bless us with tolerance for our elven visitors.','0','0','0','19378','0'),
-('-285','By the Naaru, may it be so.','0','0','0','19378','0'),
+-- Reuse 277 - 285
 ('-286','%s nods.','0','2','0','16589','0'),
 ('-287','Lost some of my best soldiers that day...','0','0','0','16589','0'),
 ('-288','But that\'s not the worst of it. Before I could pull us back, a group of \'em spotted us and attacked.','0','0','0','16589','0'),
@@ -31716,7 +31696,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-961','It smells like...','0','0','0','19635','1'),
 ('-962','...victory.','0','0','0','19635','15'),
 ('-963','Looks like today was the wrong day to quit mana tapping...','0','0','0','19926','1'),
-('-964','Excellent. We must focus our efforts on the cleansing of Nagrand!','0','0','0','18537','5'),
+-- ('-964','Excellent. We must focus our efforts on the cleansing of Nagrand!','0','0','0','18537','5'),
 ('-965','The rift\'s power is ours!','0','0','33','24966','0'),
 ('-966','Core overload detected. System malfunction detected...','0','2','0','24972','0'),
 ('-967','Beat or be beaten! This is the way of the Legion!','0','1','0','25158','1'),
