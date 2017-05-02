@@ -165,4 +165,11 @@ UPDATE creature_template SET FactionAlliance=1629 WHERE entry IN(19921,19833);
 -- Crystalline Key for q.10528 'Demonic Crystal Prisons'
 UPDATE creature_loot_template SET ChanceOrQuestChance=-100 WHERE item=30442 AND entry=21309;
 
+-- Plagued Rat
+UPDATE creature_template SET FactionHorde=16, FactionAlliance=16 WHERE entry=10441;
+-- Plagued Insect
+UPDATE creature_template SET FactionHorde=16, FactionAlliance=16 WHERE entry=10461;
+-- Plagued Maggot
+UPDATE creature_template SET FactionHorde=16, FactionAlliance=16 WHERE entry=10536;
+
 
