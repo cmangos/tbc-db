@@ -30676,7 +30676,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1572008','15720','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Set Phase to 0 on Evade'),
 -- Legion Fel Cannon MKII
 ('2245101','22451','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - OOC - Prevent Combat Movement'),
-('2245102','22451','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Combat - Cast Fel Cannon Blast');
+('2245102','22451','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Combat - Cast Fel Cannon Blast'),
+-- D.I.S.C.O.
+('2798901','27989','11','0','100','0','0','0','0','0','11','50487','0','0','0','0','0','0','0','0','0','0','D.I.S.C.O. - Cast Create Disco Ball Visual Object on spawn');
 
 
 
