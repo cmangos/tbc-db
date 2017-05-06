@@ -23,3 +23,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68559,19,-2012.094,5256.791,-44.69251,0,0,0),
 (68559,20,-1969.056,5245.463,-43.32985,0,0,0);
 
+-- One missing spawn
+DELETE FROM `creature` WHERE `guid`=151276 AND `id`=19162;
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES 
+(151276, 19162, 530, 1, 0, 0, -1990.34, 5182.772, -40.20918, 1.204277, 300, 300, 0, 0, 4000, 0, 0, 0);
