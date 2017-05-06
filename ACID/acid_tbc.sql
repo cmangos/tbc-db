@@ -19836,9 +19836,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1915001','19150','1','0','100','1','15000','25000','10000','20000','5','1','0','0','0','0','0','0','0','0','0','0','Orc Refugee - Random Talk Emote OOC'),
 -- Peasant Refugee
 ('1917001','19170','1','0','100','1','10000','15000','15000','25000','5','1','0','0','0','0','0','0','0','0','0','0','Peasant Refugee - Random Talk Emote OOC'),
--- Cro Threadstrong
-('1919601','19196','1','0','100','1','900000','900000','900000','960000','1','-264','0','0','0','0','0','0','0','0','0','0','Cro Threadstrong - Gossip Speech OOC'),
-('1919602','19196','1','0','100','1','660000','660000','660000','780000','1','-267','0','0','0','0','0','0','0','0','0','0','Cro Threadstrong - Gossip Yell OOC'),
 -- Grand Anchorite Almonen (19216)
 -- Griftah
 ('1922701','19227','10','0','75','1','1','30','120000','120000','1','-258','-257','-252','0','0','0','0','0','0','0','0','Griftah - Gossip Speech OOC'),
@@ -31202,7 +31199,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-252','C\'mere, $r. Ya don\'t want to be riskin\' yerself in a dungeon, do ya? Filthy work, and for what? Some worthless trinket? Nah, what ya need be one of my amulets. Guarenteed to work! ','0','0','0','19227','0'),
 ('-253','Dangerous out there, innit? Know what ya need? Protection. I can help ya defy death itself! Ya wear this madstone \'round yer neck, see, and then ya be able to come back if ya find yerself in the spirit world! Just a quick jaunt to yer corpse and up ya com','0','0','0','19227','0'),
 ('-254','Amazing Amulets! Incredible curios! The newfangled jewelcrafters be havin\' nothin\' on the tried and true mystical methods of ol\' Griftah! Improve yerself through these magical talismans for a bargain price!','0','0','0','19227','0'),
-('-255','I could have sworn I had more apples. Grok!','0','0','0','19223','0'),
+-- Reuse 255
 ('-256','If no one help. Grok smash!','0','0','0','22940','0'),
 ('-257','Look over here, $c! I got somethin\' for ya. Just what ya need. It\'s soap, right... and it\'s on a rope! No offense, man, but yer a little ripe, you know what I\'m sayin\'? ','0','0','0','19227','0'),
 ('-258','Hey! Hey, $r! I be havin\' just the thing for ya. Ya ever see a Tikbalang? Frightenin\' creatures. Prone to stealin\' ya away. What ya need is my tikbaland wards. Guaranteed to ward away all tikbalangs!','0','0','0','19227','0'),
@@ -31210,11 +31207,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-260','Mog\'dorg the Wizened tell Grok go to city, get help for Bloodmaul. Grok go.','0','0','0','22940','0'),
 ('-261','Bladespire clan not fight fair. Have Gronn to help dem. You go to Blade\'s Edge Mountains. Talk to Mog\'dorg the Wizened. Kill Gromm.','0','0','0','22940','0'),
 ('-262','Ya look tired, $c. I be havin\' somethin\' for ya. These amulets, they can help ya leap obstacles and swim through the rivers like ya be born to it. They energize the food ya be eatin\'. Makin\' yer wounds close before yer eyes!','0','0','0','19227','0'),
-('-263','What is that poor orc yelling about? Someone should see what is going on.','0','0','0','19223','0'),
-('-264','I feel that war is fast approaching. The fruit vendor has enlisted to help an ogre. I shall have to enlist help as well.','0','0','0','19196','0'),
+-- Reuse 263-264
 ('-265','Ya look lovesick. Special someone be gettin\' ya down, eh? No worries, no worries. Ya get this medallion from me, ya wear it when ya see \'em and they be all over ya, sweetheart!','0','0','0','19227','0'),
 ('-266','Me hungry. Fruit look tasty.','0','0','0','22940','0'),
-('-267','FRUIT VENDOR!!! Your cart is still in our way! We will give you one more hour to move it from our area. Do not test our patience anymore!','0','1','0','19196','0'),
+-- Reuse 267
 ('-268','Grok get angry if puny ones not go to Blade\'s Edge and talk to Mog\'dorg!','0','0','0','22940','0'),
 ('-269','Nothing like a tankard full to wash down one of my magnificent muffins.','0','0','0','19664','0'),
 ('-270','Yea, that hit the spot. Muffins for sale! Get your fresh muffins right here!','0','0','0','19664','0'),
