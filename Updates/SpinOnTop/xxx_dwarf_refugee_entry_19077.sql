@@ -2,6 +2,8 @@ UPDATE creature SET MovementType=2, orientation=0 WHERE guid=68395; -- Leader
 UPDATE creature SET MovementType=0, orientation=0, position_x=-1892.04, position_y=5179.68, position_z=-46.875 WHERE guid=68394; -- Follower 1
 UPDATE creature SET MovementType=0, orientation=0, position_x=-1894.54, position_y=5179.68, position_z=-45.521030 WHERE guid=68393; -- Follower 2
 
+DELETE FROM creature_movement WHERE id IN(68394,68393); -- Delete the old follower paths
+
 DELETE FROM creature_linking WHERE master_guid=68395;
 INSERT INTO creature_linking (guid,master_guid,flag) VALUES
 (68394,68395,512),
