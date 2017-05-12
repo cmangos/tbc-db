@@ -187,4 +187,9 @@ INSERT INTO dbscripts_on_event VALUES
 ('12823', '6', '10', '20137', '180000', '0', '0', '0', '0', '0', '0', '0', '0', '-1193.53', '2259.04', '47.484', '0.820305', 'quest 10250'),
 ('12823', '6', '10', '20137', '180000', '0', '0', '0', '0', '0', '0', '0', '0', '-1190.24', '2269.2', '46.0973', '4.97419', 'quest 10250');
 
+DELETE FROM db_script_string WHERE entry IN (2000000228,2000000229);
+INSERT INTO `db_script_string` (`entry`,`content_default`,`content_loc1`,`content_loc2`,`content_loc3`,`content_loc4`,`content_loc5`,`content_loc6`,`content_loc7`,`content_loc8`,`sound`,`type`,`language`,`emote`,`comment`) VALUES
+('2000000228', 'Urtrak kill you!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '0', '0', '0', '0', NULL),
+('2000000229', 'Vengeance is ours!  Attack my brothers!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '0', '0', '0', '0', NULL);
+
 
