@@ -192,4 +192,7 @@ INSERT INTO `db_script_string` (`entry`,`content_default`,`content_loc1`,`conten
 ('2000000228', 'Urtrak kill you!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '0', '0', '0', '0', NULL),
 ('2000000229', 'Vengeance is ours!  Attack my brothers!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '0', '0', '0', '0', NULL);
 
+-- Daily Dungeon bunny should ignore MMAP
+UPDATE creature_template SET ExtraFlags=ExtraFlags|0x00004000 WHERE entry IN(24412);
+
 
