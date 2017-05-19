@@ -197,12 +197,12 @@ UPDATE creature_template SET ExtraFlags=ExtraFlags|0x00004000 WHERE entry IN(244
 
 -- Netherspite
 DELETE FROM creature_movement_template WHERE entry=15689;
-INSERT INTO creature_movement_template (entry, pathId, point, position_x, position_y, position_z, orientation, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
-(15689, 0, 1, -11110.6, -1624.45, 279.362, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(15689, 0, 2, -11128.7, -1582.11, 278.794, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(15689, 0, 3, -11183.7, -1627.3, 278.239, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(15689, 0, 4, -11134.3, -1684.33, 278.238, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(15689, 0, 5, -11101.3, -1631.32, 278.794, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+INSERT INTO creature_movement_template (entry, pathId, point, position_x, position_y, position_z, orientation, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, model1, model2) VALUES
+(15689, 0, 1, -11110.6, -1624.45, 279.362, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(15689, 0, 2, -11128.7, -1582.11, 278.794, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(15689, 0, 3, -11183.7, -1627.3, 278.239, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(15689, 0, 4, -11134.3, -1684.33, 278.238, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(15689, 0, 5, -11101.3, -1631.32, 278.794, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 -- Al'ar
 UPDATE creature SET MovementType=2, position_x=370.3282, position_y=-32.59526, position_z=44.08632 WHERE guid=12479;
