@@ -195,4 +195,27 @@ INSERT INTO `db_script_string` (`entry`,`content_default`,`content_loc1`,`conten
 -- Daily Dungeon bunny should ignore MMAP
 UPDATE creature_template SET ExtraFlags=ExtraFlags|0x00004000 WHERE entry IN(24412);
 
+-- Netherspite
+DELETE FROM creature_movement_template WHERE entry=15689;
+INSERT INTO creature_movement_template (entry, pathId, point, position_x, position_y, position_z, orientation, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+(15689, 0, 1, -11110.6, -1624.45, 279.362, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(15689, 0, 2, -11128.7, -1582.11, 278.794, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(15689, 0, 3, -11183.7, -1627.3, 278.239, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(15689, 0, 4, -11134.3, -1684.33, 278.238, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(15689, 0, 5, -11101.3, -1631.32, 278.794, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- Al'ar
+UPDATE creature SET MovementType=2, position_x=370.3282, position_y=-32.59526, position_z=44.08632 WHERE guid=12479;
+DELETE FROM creature_movement WHERE id=12479;
+UPDATE creature_template SET MovementType=2 WHERE entry=19514;
+DELETE FROM creature_movement_template WHERE entry=19514;
+INSERT INTO creature_movement_template (entry, pathId, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
+(19514,0,1,370.3282,-32.59526,44.08632,100,0,0),
+(19514,0,2,383.0095,-0.892289,43.99946,100,0,0),
+(19514,0,3,370.5421,31.28668,43.80863,100,0,0),
+(19514,0,4,332.5465,45.77088,43.6697,100,0,0),
+(19514,0,5,294.3148,30.9292,43.8919,100,0,0),
+(19514,0,6,282.0638,-0.653615,43.91968,100,0,0),
+(19514,0,7,294.2132,-32.41557,43.61413,100,0,0),
+(19514,0,8,332.3423,-47.54061,43.69747,100,0,0);
 
