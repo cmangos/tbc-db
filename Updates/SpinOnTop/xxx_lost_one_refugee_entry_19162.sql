@@ -20,10 +20,31 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68559,16,-2062.025,5280.688,-38.46484,0,0,0),
 (68559,17,-2044.511,5298.059,-38.90862,0,0,0),
 (68559,18,-2037.18,5297.292,-38.98505,0,0,0),
-(68559,19,-2012.094,5256.791,-44.69251,0,0,0),
-(68559,20,-1969.056,5245.463,-43.32985,0,0,0);
+(68559,19,-2012.094,5256.791,-44.69251,0,0,0);
 
--- One missing spawn
-DELETE FROM `creature` WHERE `guid`=151276 AND `id`=19162;
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES 
-(151276, 19162, 530, 1, 0, 0, -1990.34, 5182.772, -40.20918, 1.204277, 300, 300, 0, 0, 4000, 0, 0, 0);
+-- This one should only be at the soup kitchen while the event is running.
+UPDATE `creature` SET `position_x`=-1990.34, `position_y`=5182.772, `position_z`=-40.20918, `orientation`=1.204277, `MovementType`=2, `spawndist`=0 WHERE `guid`=68558;
+DELETE FROM `creature_movement` WHERE `id`=68558;
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(68558,1,-1990.34,5182.772,-40.20918,500,2,1.204277),
+(68558,2,-1971.296,5208.073,-44.83416,0,0,0),
+(68558,3,-1959.054,5219.249,-46.72676,0,0,0),
+(68558,4,-1934.495,5226.018,-44.90169,0,0,0),
+(68558,5,-1932.629,5227.989,-43.7804,500,2,100);
+-- Add return path
+
+-- For creature GUID 68560. Started by script
+DELETE FROM `creature_movement_template` WHERE `entry`=19162;
+INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(19162,1,1,-1948.781,5172.326,-40.20918,0,0,0),
+(19162,2,1,-1953.118,5182.277,-40.20918,0,0,0),
+(19162,3,1,-1951.219,5206.953,-47.5035,0,0,0),
+(19162,4,1,-1937.34,5215.381,-47.54671,0,0,0),
+(19162,5,1,-1928.857,5219.073,-46.83961,0,0,0),
+(19162,6,1,-1927.44,5225.338,-44.63172,500,2,100),
+(19162,7,1,-1937.06,5173.81,-40.2092,500,1916201,100);
+-- Add return path
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=1916201;
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
+(1916201,0,20,5,0,0,0,0,0,0,0,8,'Lost one Refugee - Random Movement',0,0,0,0);
