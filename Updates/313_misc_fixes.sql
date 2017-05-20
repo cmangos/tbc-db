@@ -219,3 +219,7 @@ INSERT INTO creature_movement_template (entry, pathId, point, position_x, positi
 (19514,0,7,294.2132,-32.41557,43.61413,100,0,0),
 (19514,0,8,332.3423,-47.54061,43.69747,100,0,0);
 
+-- Raging Flames should be immune to taunt and banish
+UPDATE creature_template SET ExtraFlags=ExtraFlags|256,MechanicImmuneMask=MechanicImmuneMask|131072 WHERE entry IN(20481,21538);
+
+
