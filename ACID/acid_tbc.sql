@@ -19035,7 +19035,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1964307','19643','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1964308','19643','9','0','100','1','0','30','12000','16000','11','35914','4','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Cast Astral Focus'),
 ('1964309','19643','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Sunfury Astromancer - Set Phase to 0 on Evade'),
--- Papa Wheeler (19645) - NSR
+-- Papa Wheeler
+('1964501','19645','1','0','100','33','120000','180000','120000','180000','1','-423','-424','-425','1','-426','-427','428','0','0','0','0','Papa Wheeler - Random Say OOC'),
 -- Seasoned Vindicator (19651) - NSR
 -- Glacius (19653) - NSR
 -- Summoner Kanthin
@@ -31409,7 +31410,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-420','I wanna be just like the pitfighter!','0','0','7','Kurenai Pitfighter Spectator Text','1'),
 ('-421','How does he do it?','0','0','7','Kurenai Pitfighter Spectator Text','1'),
 ('-422','The pitfighter will be victorious! Just look at him!','0','0','7','Kurenai Pitfighter Spectator Text','1'),
--- PLEASE RE-USE 423 - 428
+('-423','Chubis Chubisimo!  Get those things fixed... we haven\'t got all day!','0','0','0','19645','5'),
+('-424','How much am I paying you?  You call that working?','0','0','0','19645','5'),
+('-425','When I was your age I could have had all of those shredders fixed before breakfast and still had time for all of my other chores.  In the Winterspring snow, no less.  And it\'s uphill both ways there!','0','0','0','19645','5'),
+('-426','Chubis, after you\'re done there, make sure that you put another coat of wax on the Wheeler mobile.  I want to take mama out for a spin tonight.','0','0','0','19645','5'),
+('-427','I just knew that I shouldn\'t have fired Beebo!','0','0','0','19645','5'),
+('-428','Okay, if you can manage to get even one of those fixed, I\'ll let you take a ten minute break.  How\'s that sound?  Pretty good, huh?','0','0','0','19645','5'),
 ('-429','Are we there yet?','0','0','0','3504','0'),
 ('-430','My feet hurt.','0','0','0','3504','0'),
 ('-431','Is it true? Are there crocolisks in the canal?','0','0','0','3504','0'),
