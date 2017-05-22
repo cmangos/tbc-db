@@ -14,8 +14,8 @@ UPDATE `quest_template` SET `DetailsEmote1`='5', `DetailsEmote2`='1', `DetailsEm
 
 -- Add missing gameobject
 DELETE FROM `gameobject` WHERE `guid`=200003;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES 
-('200003', '183820', '530', '3058.785', '3622.131', '143.4428', '5.951575', '-0.1650467', '0.9862857', '-24', '-24');
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES 
+('200003', '183820', '530', '3058.785', '3622.131', '143.4428', '5.951575', '-0.1650467', '0.9862857', '-24', '-24', '100', '1');
 
 -- Pathing for  Entry: 21751 'UDB FORMAT' 
 UPDATE `creature_template` SET `MovementType`=2 WHERE `entry`=21751;
