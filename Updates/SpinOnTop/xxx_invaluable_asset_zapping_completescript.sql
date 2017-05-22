@@ -18,7 +18,7 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(1963401,1963402);
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
 (1963401,0,32,1,0,0,0,0,0,0,0,0,0,'Lead Sapper Blastfizzle - Pause Waypoints',0,0,0,0),
-(1963401,0,25,0,0,0,0,0,0,0,19634,12,0,'Lead Sapper Blastfizzle - Set Run Off',0,0,0,0),
+(1963401,0,25,0,0,0,0,0,0,0,0,0,0,'Lead Sapper Blastfizzle - Set Run Off',0,0,0,0),
 (1963401,0,15,34427,0,0,0,0,0,0,21262,10,7,'Goblin Equipment Trigger - Cast Ethereal Teleport',0,0,0,0),
 (1963401,1,0,0,0,0,2000001199,0,0,0,0,0,0,'Lead Sapper Blastfizzle - Crash, get out of there!!!  Oh no!!!  Not another of my proteges!!!',0,0,0,0),
 (1963401,1,15,29266,0,0,0,0,0,0,21259,10,7,'Crash Bigbomb - Cast Permanent Feign Death',0,0,0,0),
@@ -40,9 +40,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 DELETE FROM `dbscripts_on_quest_end` WHERE `id`=10203;
 INSERT INTO `dbscripts_on_quest_end` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
 (10203,0,1,5,0,0,0,0,0,0,21259,10,0,'Crash Bigbomb - OneShotExclamation',0,0,0,0),
-(10203,0,25,1,0,0,0,0,0,0,19634,10,0,'Lead Sapper Blastfizzle - Set Run On',0,0,0,0),
-(10203,3,20,2,1,0,0,0,0,0,19634,10,0,'Lead Sapper Blastfizzle - Set Waypoint Movement PathId 1',0,0,0,0),
-(10203,3,0,0,0,0,2000001198,0,0,0,19634,12,0,'Lead Sapper Blastfizzle - Ack!  Everyone run... the last asset is materializing!!!',0,0,0,0);
+(10203,0,25,1,0,0,0,0,0,0,0,0,0,'Lead Sapper Blastfizzle - Set Run On',0,0,0,0),
+(10203,3,20,2,1,0,0,0,0,0,0,0,0,'Lead Sapper Blastfizzle - Set Waypoint Movement PathId 1',0,0,0,0),
+(10203,3,0,0,0,0,2000001198,0,0,0,0,0,0,'Lead Sapper Blastfizzle - Ack!  Everyone run... the last asset is materializing!!!',0,0,0,0);
 
 DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001198 AND 2000001202;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 
