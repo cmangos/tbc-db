@@ -222,4 +222,11 @@ INSERT INTO creature_movement_template (entry, pathId, point, position_x, positi
 -- Raging Flames should be immune to taunt and banish
 UPDATE creature_template SET ExtraFlags=ExtraFlags|256,MechanicImmuneMask=MechanicImmuneMask|131072 WHERE entry IN(20481,21538);
 
+-- https://jira.vengeancewow.com/browse/TBC-1413?focusedCommentId=35769
+DELETE FROM pool_template WHERE entry=1669;
+INSERT INTO pool_template (entry, max_limit, description) VALUES
+(1669, 1, 'Night Elf Plans: An''daroth');
+DELETE FROM pool_gameobject_template WHERE id=181138;
+INSERT INTO pool_gameobject_template (id, pool_entry, chance, description) VALUES
+(181138, 1669, 0, 'Night Elf Plans: An''daroth');
 
