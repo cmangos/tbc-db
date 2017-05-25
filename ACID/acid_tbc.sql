@@ -28068,6 +28068,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1789904','17899','0','11','100','2','0','0','1500','1500','11','31624','0','1','22','0','0','0','0','0','0','0','Shadowy Necromancer - Cast Raise Dead On Player Kill and Set Phase Back To 0 (Phase 2)'),
 ('1789905','17899','0','7','100','2','0','0','1500','1500','11','31625','0','1','22','0','0','0','0','0','0','0','Shadowy Necromancer - Cast Raise Dead On Player Kill and Set Phase Back To 0 (Phase 3)'),
 ('1789906','17899','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowy Necromancer - Set Phase To 0 On Evade'),
+('1789907','17899','6','0','25','2','0','0','0','0','1','-695','-696','-697','0','0','0','0','0','0','0','0','Shadowy Necromancer - Random Say on Death'),
 -- Skeleton Invader (17902) - NSR
 -- Skeleton Mage
 ('1790301','17903','4','0','100','2','0','0','0','0','49','1','0','0','30','1','3','5','0','0','0','0','Skeleton Mage - Enable Dynamic Movement and Random Phase Select on Aggro'),
@@ -31617,6 +31618,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- PLEASE RE-USE 688 - 693
 ('-694','%s chips and splinters!','0','2','0','7023','0'),
 -- PLEASE RE-USE 695 - 697
+('-695','A pleasure... to serve the master.','0','0','0','17899','0'),
+('-696','You will... ultimately fail.','0','0','0','17899','0'),
+('-697','My life... to the master.','0','0','0','17899','0'),
 ('-698','ATTACK WITH THE FULL FORCE OF NETHERWING, MY CHILDREN! ATTACK!','0','1','0','11980','0'),
 ('-699','Lord Illidan, bless me with the power of the flight!','0','1','0','11980','0'),
 -- PLEASE RE-USE -700
