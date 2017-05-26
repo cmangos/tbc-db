@@ -230,3 +230,33 @@ DELETE FROM pool_gameobject_template WHERE id=181138;
 INSERT INTO pool_gameobject_template (id, pool_entry, chance, description) VALUES
 (181138, 1669, 0, 'Night Elf Plans: An''daroth');
 
+-- https://jira.vengeancewow.com/browse/TBC-1833
+-- https://youtu.be/NBgPPjV48Pw?t=678 (proof that these did despawn after loot)
+
+-- All Relic Coffer should despawn after being looted - no restock
+UPDATE gameobject_template SET data2=0 WHERE entry=160836;
+
+-- Sometimes these dbscripts would unlock the Relic Coffer within the adjacent safe - use guids instead to solve this problem
+DELETE FROM dbscripts_on_go_template_use WHERE id IN (174554,174555,174556,174557,174558,174559,174560,174561,174562,174563,174564,174566);
+INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+('174554', '0', '27', '8', '0', '0', '160836', '43120', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174555', '0', '27', '8', '0', '0', '160836', '43136', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174556', '0', '27', '8', '0', '0', '160836', '43129', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174557', '0', '27', '8', '0', '0', '160836', '43124', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174558', '0', '27', '8', '0', '0', '160836', '43125', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174559', '0', '27', '8', '0', '0', '160836', '43123', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174560', '0', '27', '8', '0', '0', '160836', '43135', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174561', '0', '27', '8', '0', '0', '160836', '43128', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174562', '0', '27', '8', '0', '0', '160836', '43127', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174563', '0', '27', '8', '0', '0', '160836', '43126', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174564', '0', '27', '8', '0', '0', '160836', '43121', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer'),
+('174566', '0', '27', '8', '0', '0', '160836', '43122', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'Relic Coffer Door - Access: Relic Coffer');
+
+-- Secret Safe (161495)
+DELETE FROM gameobject_loot_template WHERE entry=11104 AND item=11309; -- why have 1% chance for Heart of the Mountain? it is looted from object next to this one
+UPDATE gameobject_loot_template SET ChanceOrQuestChance=0, groupid=1 WHERE entry=11104; -- should always drop 1 of 4 blues
+UPDATE gameobject SET spawntimesecsmin=10800000, spawntimesecsmax=10800000 WHERE id=161495; -- match respawn timer of relic coffers
+
+-- Dark Coffer (160845)
+DELETE FROM gameobject_loot_template WHERE entry=11103 AND item=11309; -- once again, no need to have Heart of the Mountain drop here
+
