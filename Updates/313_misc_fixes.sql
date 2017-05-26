@@ -260,3 +260,10 @@ UPDATE gameobject SET spawntimesecsmin=10800000, spawntimesecsmax=10800000 WHERE
 -- Dark Coffer (160845)
 DELETE FROM gameobject_loot_template WHERE entry=11103 AND item=11309; -- once again, no need to have Heart of the Mountain drop here
 
+-- https://jira.vengeancewow.com/browse/TBC-2547
+REPLACE INTO gameobject_template (entry, type, displayId, name, faction, flags, ExtraFlags, size, data0, data1, data2, data3, data4, data5, data6, data7, data8, data9, data10, data11, data12, data13, data14, data15, data16, data17, data18, data19, data20, data21, data22, data23, CustomData1, mingold, maxgold, ScriptName) VALUES
+(178225, 8, 2770, 'Dire Pool Spell Focus', 0, 0, 0, 1, 1083, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+
+REPLACE INTO gameobject (guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
+(150000, 178225, 1, -4033.24, 1345.66, 152.989, 3.14159, 0, 0, 1, 0, 900, 900, 100, 1);
+
