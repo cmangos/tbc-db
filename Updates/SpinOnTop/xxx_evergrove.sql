@@ -149,10 +149,10 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(2213001,2213002);
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
 (2213001,0,1,35,0,0,0,0,0,0,0,0,0,'Baron Sablemane''s Blackwhelp - OneShotAttackUnarmed',0,0,0,0),
-(2213001,1,36,0,0,0,0,0,0,0,22103,5,3,'Baron Sablemane - Face Baron Sablemane''s Blackwhelp',0,0,0,0),
-(2213001,2,0,4,0,0,0,0,0,0,22103,5,0,'Baron Sablemane - Random Text',0,0,0,0),
-(2213001,2,35,5,5,0,0,0,0,0,0,0,0,'Baron Sablemane''s Blackwhelp - Throw AI Event Type 5 (A)',0,0,0,0),
-(2213001,10,36,1,0,0,0,0,0,0,22103,5,0,'Baron Sablemane - Reset Facing',0,0,0,0),
+(2213001,1,36,0,0,0,0,0,0,0,22103,2,3,'Baron Sablemane - Face Baron Sablemane''s Blackwhelp',0,0,0,0),
+(2213001,2,0,4,0,0,0,0,0,0,22103,2,0,'Baron Sablemane - Random Text',0,0,0,0),
+(2213001,2,35,5,2,0,0,0,0,0,0,0,0,'Baron Sablemane''s Blackwhelp - Throw AI Event Type 5 (A)',0,0,0,0),
+(2213001,10,36,1,0,0,0,0,0,0,22103,2,0,'Baron Sablemane - Reset Facing',0,0,0,0),
 
 (2213002,0,1,35,0,0,0,0,0,0,0,0,0,'Baron Sablemane''s Blackwhelp - OneShotAttackUnarmed',0,0,0,0),
 (2213002,1,36,0,0,0,0,0,0,0,21983,5,3,'Samia Inkling - Face Baron Sablemane''s Blackwhelp',0,0,0,0),
