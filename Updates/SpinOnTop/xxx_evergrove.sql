@@ -160,7 +160,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (2213002,2,35,5,5,0,0,0,0,0,0,0,0,'Baron Sablemane''s Blackwhelp - Throw AI Event Type 5 (A)',0,0,0,0),
 (2213002,10,36,1,0,0,0,0,0,0,21983,5,0,'Samia Inkling - Reset Facing',0,0,0,0);
 
-DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001205 AND 2000001219;
+DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001205 AND 2000001220;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 
 (2000001205, 'Has he found the one, yet?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'Samia Inkling (Entry: 21983)'),
 (2000001206, 'What does the baron want?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'Samia Inkling (Entry: 21983)'),
@@ -177,7 +177,8 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 (2000001216, 'Very well, but make certain she knows that the blackwhelps are to be captured first.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'Baron Sablemane (Entry: 22103)'),
 (2000001217, 'If they will not bend the knee, then she is to see to it that they are destroyed!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'Baron Sablemane (Entry: 22103)'),
 (2000001218, 'Must I tell her every little thing to do?  I have larger issues of my own to deal with here.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'Baron Sablemane (Entry: 22103)'),
-(2000001219, 'I did not sanction their actions.  Tell her to deal with it.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'Baron Sablemane (Entry: 22103)');
+(2000001219, 'I did not sanction their actions.  Tell her to deal with it.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'Baron Sablemane (Entry: 22103)'),
+(2000001220, 'Tell her to use the druids for that!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 'Baron Sablemane (Entry: 22103)');
 
 DELETE FROM `dbscript_string_template` WHERE `id` IN(3,4);
 INSERT INTO `dbscript_string_template` (`id`,`string_id`) VALUES
@@ -196,5 +197,6 @@ INSERT INTO `dbscript_string_template` (`id`,`string_id`) VALUES
 (4,2000001216),
 (4,2000001217),
 (4,2000001218),
-(4,2000001219);
+(4,2000001219),
+(4,2000001220);
 
