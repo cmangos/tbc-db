@@ -1,3 +1,6 @@
+-- Quest emotes
+UPDATE `quest_template` SET `DetailsEmote1`='1', `DetailsEmote2`='11', `IncompleteEmote`='6', `CompleteEmote`='6', `OfferRewardEmote1`='1', `OfferRewardEmoteDelay1`='1000' WHERE `entry`=10721;
+
 -- Update templates
 UPDATE creature_template SET UnitFlags=256, SpeedRun=(11.5/7), MovementType=2, AIName='NullAI' WHERE entry=22114; -- Huffer. NullAI so huffer doesn't fight back
 UPDATE creature_template SET UnitFlags=0, SpeedWalk=(5/2.5), SpeedRun=(10/7) WHERE entry=20216; -- Grulloc
