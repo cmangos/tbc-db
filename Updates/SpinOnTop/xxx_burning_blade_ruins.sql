@@ -97,7 +97,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (60052,32,-2522.571,6252.928,20.17067,0,0,0),
 (60052,33,-2565.119,6251.4,18.20123,0,0,0);
 
--- #2
+-- #2 This one has a lot of issues on slopes. Adding points in between didn't help completely either. Map issue?
 UPDATE `creature` SET `position_x`=-2368.993,`position_y`=6155.321,`position_z`=60.68983,`orientation`=3.375115,`spawndist`=0,`MovementType`=2 WHERE `guid`=60059; -- Set the proper spawnpoint
 DELETE FROM `creature_movement` WHERE `id`=60059;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
@@ -114,8 +114,6 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (60059,11,-2474.902,6153.139,63.35086,0,0,0),
 (60059,12,-2500.071,6186.787,60.56055,0,0,0),
 (60059,13,-2533.038,6182.577,60.19934,0,0,0),
--- (60059,47,-2530.369,6181.444,60.43702,0,0,0),
--- (60059,48,-2539.59,6185.89,60.73629,0,0,0),
 (60059,14,-2500.569,6181.5,59.989,0,0,0),
 (60059,15,-2466.607,6169.582,58.25665,0,0,0),
 (60059,16,-2447.577,6166.336,54.24046,0,0,0),
@@ -133,9 +131,6 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (60059,28,-2541.146,6187.5,60.79309,0,0,0),
 (60059,29,-2538.757,6187.5,60.69751,0,0,0),
 (60059,30,-2533.038,6182.577,60.19934,0,0,0),
--- (60059,18,-2534.322,6185.142,61.45393,0,0,0),
--- (60059,19,-2539.59,6185.89,60.73629,0,0,0),
--- (60059,20,-2533.038,6182.577,60.32648,0,0,0),
 (60059,31,-2500.071,6186.787,60.56055,0,0,0),
 (60059,32,-2475.183,6153.281,63.52248,0,0,0),
 (60059,33,-2449.129,6140.594,77.34264,0,0,0),
