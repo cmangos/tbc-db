@@ -95,7 +95,7 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,
 DELETE FROM `dbscripts_on_quest_end` WHERE `id`=10724;
 INSERT INTO `dbscripts_on_quest_end` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
 (10724,0,10,22268,300000,0,1,0,0,0,0,0,8,'Summon Leokk',2554.141,5948.822,116.6123,6.008636),
-(10724,1,20,2,1,0,0,0,0,0,22268,500,0,'Prisoner of the Bladespire - Leokk - Set Waypoint Movement',0,0,0,0),
+(10724,1,20,2,1,0,0,0,0,0,22268,300,0,'Prisoner of the Bladespire - Leokk - Set Waypoint Movement',0,0,0,0),
 (10724,1,3,0,0,0,0,0,0,0,0,0,0,'Rexxar - Set Facing',0,0,0,5.986479),
 (10724,3,0,0,0,0,2000001222,0,0,0,0,0,0,'Rexxar - I think I hear him coming now.',0,0,0,0),
 (10724,12,3,0,0,0,0,0,0,0,0,0,0,'Rexxar - Set Facing 2',0,0,0,0.3490658),
