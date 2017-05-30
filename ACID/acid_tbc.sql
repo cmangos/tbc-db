@@ -31379,8 +31379,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-310','I wanna be just like the pitfighter!','0','0','1','Maghar Pitfighter Spectator Text','1'),
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','11582','0'),
 ('-312','How does he do it?','0','0','1','Maghar Pitfighter Spectator Text','1'),
-('-313','That\'s the best reward we\'re going to be able to offer. Hopefully someone accepts the mission.','0','0','0','18407','0'),
-('-314','Damm those ogres. Damn them to the Nether. Won\'t someone save us from these savages! This is the fifth kidnapping is as many days.','0','0','0','18407','0'),
+-- Please Re-use 313 - 314
 ('-315','Any time any of you peons want to take a break, the graveyard is right over there.','0','0','0','19362','0'),
 ('-316','If I see any lazy peons here, I\'ll load them into a catapult and launch them off to the Black Temple!','0','1','0','19362','0'),
 ('-317','The pitfighter will be victorious! Just look at him!','0','0','1','Maghar Pitfighter Spectator Text','1'),
