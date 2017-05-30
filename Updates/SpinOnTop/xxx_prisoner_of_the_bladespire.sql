@@ -44,6 +44,7 @@ INSERT INTO `dbscripts_on_event` (`id`,`delay`,`command`,`datalong`,`datalong2`,
 (14461,0,25,1,0,0,0,0,0,0,22460,100,0,'Prisoner of the Bladespire - Spirit - Set Run On',0,0,0,0),
 (14461,1,3,0,0,0,0,0,0,0,22460,100,0,'Prisoner of the Bladespire - Spirit - Move to Cage',3671.992,5285.056,16.39916,5.320172),
 (14461,8,0,0,0,0,2000001221,0,0,0,22460,100,0,'Prisoner of the Bladespire - Spirit - %s uses the key to open the cage.',0,0,0,0),
+(14461,8,35,0,0,0,0,0,0,0,22460,100,1,'Prisoner of the Bladespire - Send AI Event 5 to Spirit',0,0,0,0),
 (14461,8,13,0,0,0,0,0,0,0,185296,100,1,'Prisoner of the Bladespire - Open Battered Cage',0,0,0,0),
 (14461,11,20,2,0,0,0,0,0,0,22268,100,0,'Prisoner of the Bladespire - Leokk - Set Waypoint Movement',0,0,0,0);
 
