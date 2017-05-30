@@ -19918,6 +19918,55 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2294001','22940','1','0','100','1','156000','156000','156000','276000','1','-256','-259','0','0','0','0','0','0','0','0','0','Grok - Say OOC'),
 ('2294002','22940','1','0','100','1','270000','270000','270000','270000','1','-260','-261','-268','0','0','0','0','0','0','0','0','Grok - Say OOC'),
 ('2294003','22940','1','0','100','1','890000','890000','890000','950000','1','-266','0','0','0','0','0','0','0','0','0','0','Grok - Say OOC'),
+-- Vazruden the Herald Image
+('2441001','24410','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Vazruden the Herald Image - Cast Heroic Image Channel OOC'),
+-- Shattered Hand Centurion Image
+('2441101','24411','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion Image - Cast Non-Heroic Image Channel OOC'),
+-- Keli'dan the Breaker Image
+('2441301','24413','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Keli\'dan the Breaker Image - Cast Heroic Image Channel OOC'),
+-- Warchief Kargath Bladefist Image
+('2441401','24414','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Warchief Kargath Bladefist Image - Cast Heroic Image Channel OOC'),
+-- Coilfang Myrmidon Image
+('2441501','24415','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Coilfang Myrmidon Image - Cast Non-Heroic Image Channel OOC'),
+-- Quagmirran Image
+('2441901','24419','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Quagmirran Image - Cast Heroic Image Channel OOC'),
+-- The Black Stalker Image
+('2442001','24420','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','The Black Stalker Image - Cast Heroic Image Channel OOC'),
+-- Warlord Kalithresh Image
+('2442101','24421','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Warlord Kalithresh Image - Cast Heroic Image Channel OOC'),
+-- Talon King Ikiss Image
+('2442201','24422','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Talon King Ikiss Image - Cast Heroic Image Channel OOC'),
+-- Nexus-Prince Shaffar Image
+('2442301','24423','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Shaffar Image - Cast Heroic Image Channel OOC'),
+-- Exarch Maladaar Image
+('2442401','24424','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Exarch Maladaar Image - Cast Heroic Image Channel OOC'),
+-- Murmur Image
+('2442501','24425','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Murmur Image - Cast Heroic Image Channel OOC'),
+-- Malicious Instructor Image
+('2442601','24426','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Malicious Instructor Image - Cast Non-Heroic Image Channel OOC'),
+-- Epoch Hunter Image
+('2442701','24427','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Epoch Hunter Image - Cast Heroic Image Channel OOC'),
+-- Aeonus Image
+('2442801','24428','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Aeonus Image - Cast Heroic Image Channel OOC'),
+-- Rift Lord Image
+('2442901','24429','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Rift Lord Image - Cast Non-Heroic Image Channel OOC'),
+-- Sunseeker Channeler Image
+('2443001','24430','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Sunseeker Channeler Image - Cast Non-Heroic Image Channel OOC'),
+-- Warp Splinter Image
+('2443101','24431','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Warp Splinter Image - Cast Heroic Image Channel OOC'),
+-- Tempest-Forge Destroyer Image
+('2443201','24432','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Tempest-Forge Destroyer Image - Cast Non-Heroic Image Channel OOC'),
+-- Pathaleon Image
+('2443301','24433','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Pathaleon Image - Cast Heroic Image Channel OOC'),
+-- Arcatraz Sentinel Image
+('2443401','24434','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel Image - Cast Non-Heroic Image Channel OOC'),
+-- Harbinger Skyriss Image
+('2443501','24435','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Harbinger Skyriss Image - Cast Heroic Image Channel OOC'),
+-- Sister of Torment Image
+('2485401','24854','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Sister of Torment Image - Cast Non-Heroic Image Channel OOC'),
+-- Kael'thas Sunstrider Image
+('2485501','24855','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Kael\'thas Sunstrider Image - Cast Heroic Image Channel OOC'),
+
 -- Commander Steele (25141)
 -- Shattered Sun Marksman
 ('2514201','25142','1','0','100','1','5000','30000','12000','35000','5','1','0','0','0','0','0','0','0','0','0','0','Shattered Sun Marksman - Talk Emote OOC'),
