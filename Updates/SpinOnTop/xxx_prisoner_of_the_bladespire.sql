@@ -52,10 +52,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (2246001,4,35,5,0,0,0,0,0,0,0,0,0,'Spirit - Send AI Event 5 to Self',0,0,0,0),
 (2246001,6,20,2,0,0,0,0,0,0,22268,10,0,'Leokk - Set Waypoint Movement',0,0,0,0);
 
-DELETE FROM `dbscripts_on_event` WHERE `id`=14461;
-INSERT INTO `dbscripts_on_event` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(14461,0,25,1,0,0,0,0,0,0,22460,100,0,'Prisoner of the Bladespire - Spirit - Set Run On',0,0,0,0);
-
 DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001221 AND 2000001223;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 
 (2000001221, '%s uses the key to open the cage.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 0, 0, 'Spirit (Entry: 22460)'),
