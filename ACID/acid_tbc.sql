@@ -11046,8 +11046,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1766101','17661','9','0','100','1','0','5','5000','8000','11','31279','1','0','0','0','0','0','0','0','0','0','Deathclaw - Cast Swipe'),
 -- Jessera of Mac'Aree (17663) - NSR
 -- Matis the Cruel  (KEPT PREVENT COMBAT MOVEMENT ON PURPOSE - NEED BETTER SOLUTION)
-('1766401','17664','11','0','100','0','0','0','0','0','47','0','0','0','43','0','2346','0','22','0','0','0','Matis the Cruel - Mount and set Phase 0 on spawn'),
-('1766402','17664','11','0','100','0','0','0','0','0','20','1','0','0','21','1','0','0','0','0','0','0','Matis the Cruel - Start Combat Movement and Start Melee on spawn'),
+('1766401','17664','11','0','100','1','0','0','0','0','47','0','0','0','43','0','2346','0','22','0','0','0','Matis the Cruel - Mount and set Phase 0 on spawn'),
+('1766402','17664','11','0','100','1','0','0','0','0','20','1','0','0','21','1','0','0','0','0','0','0','Matis the Cruel - Start Combat Movement and Start Melee on spawn'),
 ('1766403','17664','1','0','40','1','6000','50000','80000','135000','1','-1477','0','0','0','0','0','0','0','0','0','0','Matis the Cruel - Say while OOC'),
 ('1766404','17664','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Matis the Cruel - Unmount on Aggro'),
 ('1766405','17664','30','0','100','0','6','17853','0','0','20','0','0','0','21','0','0','0','22','1','0','0','Tracker of the Hand - Prevent Combat Movement, Prevent Melee and Set Phase 1 on Receive AI Event Custom B.'),
