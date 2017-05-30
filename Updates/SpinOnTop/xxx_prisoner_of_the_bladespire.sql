@@ -2,7 +2,7 @@
 -- Quest Script 10724
 -- ------------------------
 
-UPDATE creature_template SET InhabitType=7,UnitFlags=33554432 WHERE entry=22460; -- Spirit should fly at all times
+UPDATE creature_template SET InhabitType=7,UnitFlags=33554432,MovementType=2 WHERE entry=22460; -- Spirit should fly at all times
 UPDATE creature_template SET MovementType=0 WHERE entry=22268; -- Leokk idle movement
 UPDATE creature_template SET ModelId1=20851,UnitFlags=33817344 WHERE entry=22269; -- Black Drake Corpse
 UPDATE creature SET spawntimesecsmin=5, spawntimesecsmax=5 WHERE id=22268; -- Leokk should respawn right away after finishing his path
@@ -37,16 +37,24 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position
 (22268,14,3682.029,5448.403,43.98391,0,0,0),
 (22268,15,3667.688,5485.795,61.92836,1000,1,100);
 
+-- Spirit path
+DELETE FROM `creature_movement_template` WHERE `entry`=22460;
+INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(22460,1,3671.992,5285.056,16.39916,1000,2246001,5.320172);
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(2246001);
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
+(2246001,0,32,1,0,0,0,0,0,0,0,0,0,'Spirit - Pause Waypoints',0,0,0,0),
+(2246001,0,25,1,0,0,0,0,0,0,22268,10,0,'Leokk - Set Run On',0,0,0,0),
+(2246001,0,21,1,0,0,0,0,0,0,22268,10,0,'Leokk - Set Active Object On',0,0,0,0),
+(2246001,3,0,0,0,0,2000001221,0,0,0,0,0,0,'Spirit - %s uses the key to open the cage.',0,0,0,0),
+(2246001,3,13,0,0,0,0,0,0,0,185296,10,1,'Open Battered Cage',0,0,0,0),
+(2246001,4,35,5,0,0,0,0,0,0,0,0,0,'Spirit - Send AI Event 5 to Self',0,0,0,0),
+(2246001,6,20,2,0,0,0,0,0,0,22268,10,0,'Leokk - Set Waypoint Movement',0,0,0,0);
+
 DELETE FROM `dbscripts_on_event` WHERE `id`=14461;
 INSERT INTO `dbscripts_on_event` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(14461,0,25,1,0,0,0,0,0,0,22268,100,0,'Prisoner of the Bladespire - Leokk - Set Run On',0,0,0,0),
-(14461,0,21,1,0,0,0,0,0,0,22268,100,0,'Prisoner of the Bladespire - Leokk - Set Active Object On',0,0,0,0),
-(14461,0,25,1,0,0,0,0,0,0,22460,100,0,'Prisoner of the Bladespire - Spirit - Set Run On',0,0,0,0),
-(14461,1,3,0,0,0,0,0,0,0,22460,100,0,'Prisoner of the Bladespire - Spirit - Move to Cage',3671.992,5285.056,16.39916,5.320172),
-(14461,8,0,0,0,0,2000001221,0,0,0,22460,100,0,'Prisoner of the Bladespire - Spirit - %s uses the key to open the cage.',0,0,0,0),
-(14461,8,35,0,0,0,0,0,0,0,22460,100,1,'Prisoner of the Bladespire - Send AI Event 5 to Spirit',0,0,0,0),
-(14461,8,13,0,0,0,0,0,0,0,185296,100,1,'Prisoner of the Bladespire - Open Battered Cage',0,0,0,0),
-(14461,11,20,2,0,0,0,0,0,0,22268,100,0,'Prisoner of the Bladespire - Leokk - Set Waypoint Movement',0,0,0,0);
+(14461,0,25,1,0,0,0,0,0,0,22460,100,0,'Prisoner of the Bladespire - Spirit - Set Run On',0,0,0,0);
 
 DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001221 AND 2000001223;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 
