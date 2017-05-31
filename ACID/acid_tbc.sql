@@ -23097,7 +23097,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1789215','17892','3','23','100','6','7','0','0','0','49','0','0','0','22','4','0','0','0','0','0','0','Infinite Chronomancer - Disable Dynamic Movement and Set Phase 4 when Mana is at 7% (Phase 3)'),
 ('1789216','17892','3','15','100','7','100','15','1000','1000','22','3','0','0','0','0','0','0','0','0','0','0','Infinite Chronomancer - Set Phase 3 when Mana is above 15% (Phase 4)'),
 ('1789217','17892','9','0','100','7','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Infinite Chronomancer - Disable Dynamic Movement at 0-8 Yards'),
--- Time Keeper (17918)
+-- Time Keeper
+('1791801','17918','0','0','100','7','2000','3000','5000','6000','11','31478','0','0','0','0','0','0','0','0','0','0','Time Keeper - Cast Sand Breath'),
+('1791802','17918','11','0','100','6','0','0','0','0','1','-1546','-1547','-1548','0','0','0','0','0','0','0','0','Time Keeper - Say on Spawn'),
+('1791803','17918','1','0','100','6','5000','5000','0','0','41','0','0','0','1','-1543','-1544','-1545','0','0','0','0','Time Keeper - Despawn on Timer OOC'),
 -- Darkwater Crocolisk
 ('1795201','17952','9','0','100','7','0','5','7000','13000','11','34370','1','0','0','0','0','0','0','0','0','0','Darkwater Crocolisk - Cast Jagged Tooth Snap'),
 -- Darkwater Crocolisk (2.4.3 Official Data)
@@ -32286,7 +32289,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1539','Your life is a fitting sacrifice for my master, $c.','0','0','0','Crimson Templar','0'),
 ('-1540','Leaping leper gnomes! I\'ve been stuck in there for months. Thanks, gang.','0','0','0','10776','0'),
 ('-1541','You only hasten the inevitable. In time, all will be devoured!','0','1','0','20899','0'),
-('-1542','The %s is very weak.','0','2','0','18879','0');
+('-1542','The %s is very weak.','0','2','0','18879','0'),
+('-1543','Victory will be ours!','0','1','0','17918','0'),
+('-1544','Carry on! Victory at all costs!','0','1','0','17918','0'),
+('-1545','Continue the fight! Do not falter!','0','1','0','17918','0'),
+('-1546','There is no time to waste!','0','0','0','17918','0'),
+('-1547','We must hurry!','0','0','0','17918','0'),
+('-1548','We must use this time wisely!','0','0','0','17918','0');
 
 
 -- =======================================================
