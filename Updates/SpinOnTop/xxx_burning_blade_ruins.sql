@@ -76,7 +76,7 @@ UPDATE `creature` SET `MovementType`=1,`spawndist`=2 WHERE `guid` IN(151319,1513
 -- Throw AI Event to trigger phase 2 for self, then set idle movement. (We really need a way to specify GUIDs directly in EventAI :P)
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(2211401,2211402,2211403);
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(1713501,0,35,5,1,0,0,0,0,0,0,0,0,'Boulderfist Mystic - Throw AI Event Type 6 (B)',0,0,0,0),
+(1713501,0,35,6,0,0,0,0,0,0,0,0,0,'Boulderfist Mystic - Throw AI Event Type 6 (B)',0,0,0,0),
 (1713501,0,20,0,0,0,0,0,0,0,0,0,0,'Boulderfist Mystic - Set Idle Movement',0,0,0,0);
 
 UPDATE `creature` SET `MovementType`=2 WHERE `guid` IN(151282,151281,151285,151286,151296,151289,151290,151291,151277,151276,151287,151288);
