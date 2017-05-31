@@ -49,8 +49,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (2246001,0,21,1,0,0,0,0,0,0,22268,10,0,'Leokk - Set Active Object On',0,0,0,0),
 (2246001,3,0,0,0,0,2000001221,0,0,0,0,0,0,'Spirit - %s uses the key to open the cage.',0,0,0,0),
 (2246001,3,13,0,0,0,0,0,0,0,185296,10,1,'Open Battered Cage',0,0,0,0),
-(2246001,4,35,5,0,0,0,0,0,0,0,0,0,'Spirit - Send AI Event 5 to Self',0,0,0,0),
-(2246001,6,20,2,0,0,0,0,0,0,22268,10,0,'Leokk - Set Waypoint Movement',0,0,0,0);
+(2246001,4,35,1000,0,0,0,0,0,0,0,0,0,'Spirit - Send AI Event 1000 to Self',0,0,0,0),
+(2246001,6,20,2,0,0,0,0,0,0,22268,50,0,'Leokk - Set Waypoint Movement',0,0,0,0);
 
 DELETE FROM `db_script_string` WHERE `entry` BETWEEN 2000001221 AND 2000001223;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 
