@@ -22,16 +22,19 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68559,18,-2037.18,5297.292,-38.98505,0,0,0),
 (68559,19,-2012.094,5256.791,-44.69251,0,0,0);
 
--- This one should only be at the soup kitchen while the event is running.
+-- Should only be at the soup kitchen while the event is running.
 UPDATE `creature` SET `position_x`=-1990.34, `position_y`=5182.772, `position_z`=-40.20918, `orientation`=1.204277, `MovementType`=2, `spawndist`=0 WHERE `guid`=68558;
 DELETE FROM `creature_movement` WHERE `id`=68558;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(68558,1,-1990.34,5182.772,-40.20918,500,2,1.204277),
+(68558,1,-1990.34,5182.772,-40.20918,500,7,1.204277),
 (68558,2,-1971.296,5208.073,-44.83416,0,0,0),
 (68558,3,-1959.054,5219.249,-46.72676,0,0,0),
 (68558,4,-1934.495,5226.018,-44.90169,0,0,0),
-(68558,5,-1932.629,5227.989,-43.7804,500,2,100);
--- Add return path
+(68558,5,-1932.629,5227.989,-43.7804,500,7,100),
+(68558,6,-1960.676,5213.877,-46.36922,0,0,0),
+(68558,7,-1976.085,5198.858,-43.04825,0,0,0),
+(68558,8,-1994.809,5185.682,-40.20918,0,0,0),
+(68558,9,-1990.34,5182.772,-40.20918,0,0,0);
 
 -- For creature GUID 68560. Started by script
 DELETE FROM `creature_movement_template` WHERE `entry`=19162;
@@ -41,10 +44,16 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,
 (19162,3,1,-1951.219,5206.953,-47.5035,0,0,0),
 (19162,4,1,-1937.34,5215.381,-47.54671,0,0,0),
 (19162,5,1,-1928.857,5219.073,-46.83961,0,0,0),
-(19162,6,1,-1927.44,5225.338,-44.63172,500,2,100),
-(19162,7,1,-1937.06,5173.81,-40.2092,500,1916201,100);
--- Add return path
+(19162,6,1,-1927.44,5225.338,-44.63172,500,7,100),
+(19162,7,1,-1956.115,5213.376,-46.58211,0,0,0),
+(19162,8,1,-1965.408,5196.368,-42.89487,0,0,0),
+(19162,9,1,-1954.238,5180.217,-40.20918,0,0,0),
+(19162,10,1,-1946.639,5172.008,-40.20918,0,0,0),
+(19162,11,1,-1940.029,5174.476,-40.20918,0,0,0),
+(19162,12,1,-1939.988,5179.947,-40.20918,0,0,0),
+(19162,13,1,-1939.988,5179.947,-40.20918,500,1916201,5.445427);
+-- (19162,7,1,-1937.06,5173.81,-40.2092,500,1916201,100);
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=1916201;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(1916201,0,20,5,0,0,0,0,0,0,0,8,'Lost one Refugee - Random Movement',0,0,0,0);
+(1916201,0,20,5,0,0,0,0,0,0,0,0,'Lost one Refugee - Random Movement',0,0,0,0);

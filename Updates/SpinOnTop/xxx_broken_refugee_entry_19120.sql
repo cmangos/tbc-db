@@ -1,4 +1,4 @@
-UPDATE creature_template SET MovementType=0 WHERE entry=19120;
+UPDATE creature_template SET MovementType=2 WHERE entry=19120;
 DELETE FROM `creature` WHERE `guid` IN(68397); -- Should be a temporary spawn while soup kitchen is spawned
 
 -- Pathing for  Entry: 19120 'UDB FORMAT' 
@@ -59,10 +59,10 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68396,52,-1684.591,5173.31,-40.20918,2550000,0,100); -- 42.5 min rest 
 
 -- Entry: 19120 Low: 1441801
-UPDATE `creature` SET `position_x`=-1949.055786, `position_y`=5146.003418, `position_z`=-40.208229, `orientation`=3.246158, `MovementType`=2, `spawndist`=0 WHERE `guid`=68400; -- guessed positions
+UPDATE `creature` SET `position_x`=-1950.886, `position_y`=5147.88, `position_z`=-40.12583, `orientation`=1.989675, `MovementType`=2, `spawndist`=0 WHERE `guid`=68400; -- proper position
 DELETE FROM `creature_movement` WHERE `id`=68400;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(68400,1,-1949.055786,5146.003418,-40.208229,500,2,3.246158), -- guessed
+(68400,1,-1950.886,5147.88,-40.12583,500,7,1.989675),
 (68400,2,-1949.721,5152.821,-39.9239,0,0,0),
 (68400,3,-1946.221,5161.821,-39.9239,0,0,0),
 (68400,4,-1944.221,5171.071,-39.9239,0,0,0),
@@ -73,13 +73,13 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68400,9,-1972.471,5210.821,-44.9239,0,0,0),
 (68400,10,-1957.971,5215.821,-46.1739,0,0,0),
 (68400,11,-1952.221,5221.321,-47.4239,0,0,0),
-(68400,12,-1949.721,5225.321,-47.4239,500,2,100);
+(68400,12,-1949.721,5225.321,-47.4239,500,7,100);
 
 --  Entry: 19120 Low: 18219016
-UPDATE `creature` SET `position_x`=-1955.556763, `position_y`=5151.641113, `position_z`=-40.208958, `orientation`=6.171769, `MovementType`=2, `spawndist`=0 WHERE `guid`=68398; -- guessed positions
+UPDATE `creature` SET `position_x`=-1955.547, `position_y`=5151.664, `position_z`=-40.12583, `orientation`=6.108652, `MovementType`=2, `spawndist`=0 WHERE `guid`=68398; -- proper positions
 DELETE FROM `creature_movement` WHERE `id`=68398;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(68398,1,-1955.556763,5151.641113,-40.208958,500,2,6.171769), -- guessed
+(68398,1,-1955.547,5151.664,-40.12583,500,7,6.108652),
 (68398,2,-1951.786,5153.44,-39.96341,0,0,0),
 (68398,3,-1946.286,5163.44,-39.96341,0,0,0),
 (68398,4,-1943.536,5171.19,-39.96341,0,0,0),
@@ -90,17 +90,25 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68398,9,-1945.286,5209.44,-47.21341,0,0,0),
 (68398,10,-1934.536,5212.94,-46.96341,0,0,0),
 (68398,11,-1928.536,5219.69,-46.46341,0,0,0),
-(68398,12,-1928.536,5221.19,-46.46341,500,2,100);
+(68398,12,-1928.536,5221.19,-46.46341,500,7,100);
 
 -- Entry: 19120 Low: 9830408
-UPDATE `creature` SET `position_x`=-1933.011230, `position_y`=5168.393555, `position_z`=-40.208958, `orientation`=1.918839, `MovementType`=2, `spawndist`=0 WHERE `guid`=68399; -- guessed positions
+UPDATE `creature` SET `position_x`=-1934.094, `position_y`=5168.918, `position_z`=-40.12583, `orientation`=1.902409, `MovementType`=2, `spawndist`=0 WHERE `guid`=68399; -- proper position
 DELETE FROM `creature_movement` WHERE `id`=68399;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(68399,1,-1933.011230,5168.393555,-40.208958,500,2,1.918839), -- guessed
+(68399,1,-1934.094,5168.918,-40.12583,500,7,1.902409),
 (68399,2,-1933.86,5173.742,-40.00908,0,0,0),
 (68399,3,-1931.86,5186.242,-40.00908,0,0,0),
 (68399,4,-1933.86,5198.242,-46.25908,0,0,0),
 (68399,5,-1931.86,5219.992,-46.50908,0,0,0),
-(68399,6,-1931.86,5221.492,-46.50908,500,2,100);
+(68399,6,-1931.86,5221.492,-46.50908,500,7,100);
 
+DELETE FROM `creature_movement_template` WHERE `entry`=19120 AND `pathId`=1;
+INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(19120,1,1,-1917.847,5223.277,-45.8255,3372000,0,1.797689),
+(19120,2,1,-1939.508,5193.9,-44.90732,0,0,0),
+(19120,3,1,-1942.963,5179.514,-40.20918,0,0,0),
+(19120,4,1,-1965.36,5185.708,-40.20918,0,0,0),
+(19120,5,1,-1987.079,5186.03,-40.20918,0,0,0),
+(19120,6,1,-2003.908,5185.23,-40.20918,1000,1,100);
 

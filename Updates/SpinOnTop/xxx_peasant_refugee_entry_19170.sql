@@ -7,6 +7,10 @@ DELETE FROM `creature` WHERE `guid` IN(68578,68581,68579,68580); -- Should be a 
 UPDATE `creature_template_addon` SET `emote`=0 WHERE entry=19170;
 DELETE FROM `creature_addon` WHERE `guid` IN(68577,68578,68579,68580,68581,68584,68585);
 
+-- Missing, laying down
+-- [2] Position: X: -1954.773 Y: 5170.282 Z: -40.20918
+-- [2] Orientation: 1.099557
+
 -- Pathing for  Entry: 19170 'UDB FORMAT' 
 UPDATE `creature` SET `MovementType`=2,`spawndist`=0 WHERE `guid`=68584;
 DELETE FROM `creature_movement` WHERE `id`=68584;
@@ -54,7 +58,7 @@ UPDATE `gameobject` SET `spawntimesecsmin`=-3852,`spawntimesecsmax`=-3852 WHERE 
 UPDATE `creature` SET `position_x`=-2074.216, `position_y`=5316.652, `position_z`=-37.32356, `MovementType`=2, `spawndist`=0 WHERE `guid`=68577;
 DELETE FROM `creature_movement` WHERE `id`=68577;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(68577,1,-2080.913,5290.43,-37.32355,0,0,0),
+(68577,1,-2080.913,5290.43,-37.32355,0,9,0),
 (68577,2,-2060.495,5273.947,-38.46501,0,0,0),
 (68577,3,-2041.92,5263.64,-39.82203,0,0,0),
 (68577,4,-2024.709,5250.461,-43.74634,0,0,0),
@@ -79,6 +83,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68577,18,-1936.801,5239.364,-41.81791,0,0,0),
 (68577,19,-1947.085,5241.049,-43.01661,0,0,0),
 (68577,20,-1982.853,5241.942,-46.05104,0,0,0);
+-- missing return points
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 1917001 AND 1917007;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
@@ -98,14 +103,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 
 (1917005,0,1,69,0,0,0,0,0,0,0,0,0,'Peasant Refugee - STATE_USESTANDING',0,0,0,0),
 
-(1917005,0,10,19120,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Broken Refugee',-1917.847,5223.277,-45.8255,1.797689),
+(1917005,0,10,19120,0,1,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Broken Refugee',-1917.847,5223.277,-45.8255,1.797689),
 (1917005,0,10,19170,0,2,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1932.707,5230.585,-43.11866,0.715585),
 (1917005,0,10,19170,0,3,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1922.545,5225.516,-44.2592,1.658063),
 (1917005,0,10,19170,0,4,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1937.682,5236.961,-42.48709,6.038839),
 (1917005,0,21,1,0,0,0,0,0,0,19150,68482,16,'Orc Refugee - Set Active Object',0,0,0,0),
-(1917005,0,32,0,0,0,0,0,0,0,19150,68482,16,'Orc Refugee - Resume Waypoints',0,0,0,0),
+(1917005,1,32,0,0,0,0,0,0,0,19150,68482,16,'Orc Refugee - Resume Waypoints',0,0,0,0),
 (1917005,0,21,1,0,0,0,0,0,0,19155,68524,16,'Sporeling Refugee - Set Active Object',0,0,0,0),
-(1917005,0,20,2,1,0,0,0,0,0,19155,68524,16,'Sporeling Refugee - Set Waypoint Movement',0,0,0,0),
+(1917005,1,20,2,1,0,0,0,0,0,19155,68524,16,'Sporeling Refugee - Set Waypoint Movement',0,0,0,0),
 
 (1917005,11,10,19170,0,5,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1921.905,5222.219,-44.85762,1.832596),
 (1917005,11,10,19170,0,6,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1931.493,5223.518,-45.4137,1.064651),
@@ -125,7 +130,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1917005,3349,1,6,0,0,0,0,0,0,0,0,0,'Peasant Refugee - OneShotQuestion',0,0,0,0), -- 3349
 (1917005,3349,32,0,0,0,0,0,0,0,19155,68524,16,'Sporeling Refugee - Resume Waypoints',0,0,0,0),
 (1917005,3349,32,0,0,0,0,0,0,0,19150,68482,16,'Orc Refugee - Resume Waypoints',0,0,0,0),
+(1917005,3349,32,0,0,0,0,0,0,0,19120,68400,16,'Broken Refugee - Resume Waypoints',0,0,0,0), -- Guessed timer, creature is broken on live retail
+
+(1917005,3355,32,0,0,0,0,0,0,0,19120,68399,16,'Broken Refugee - Resume Waypoints',0,0,0,0), -- Guessed timer, creature is broken on live retail
+
+(1917005,3366,32,0,0,0,0,0,0,0,19144,68467,16,'Maghar Refugee - Resume Waypoints',0,0,0,0),
+(1917005,3366,32,0,0,0,0,0,0,0,19120,68398,16,'Broken Refugee - Resume Waypoints',0,0,0,0), -- Guessed timer, creature is broken on live retail
 (1917005,3366,1,0,0,0,0,0,0,0,0,0,0,'Peasant Refugee - ONESHOT_NONE',0,0,0,0), -- 3366
+
 (1917005,3375,40,0,0,0,0,0,0,0,183355,10,1,'Peasant Refugee - Despawn Shattrath Soup Tent',0,0,0,0), -- 3375
 
 (1917006,0,32,1,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Pause Waypoints',0,0,0,0),

@@ -1,4 +1,4 @@
-UPDATE creature_template SET MovementType=0 WHERE entry=19150;
+
 
 -- Pathing for  Entry: 19150 'UDB FORMAT' 
 UPDATE `creature` SET `MovementType`=2,`spawndist`=0 WHERE `guid`=68481;
@@ -29,12 +29,12 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68481,23,-1701.509,5247.913,-49.62231,0,0,0),
 (68481,24,-1724.574,5235.167,-50.46606,0,0,0);
 
--- This one should only be at the soup kitchen while the event is running.
+-- Should only be at the soup kitchen while the event is running.
 UPDATE `creature` SET `position_x`=-1727.175, `position_y`=5276.094, `position_z`=-40.20918, `orientation`=5.288348, `MovementType`=2, `spawndist`=0 WHERE `guid`=68482;
 DELETE FROM `creature_movement` WHERE `id`=68482;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 -- To kitchen
-(68482,1,-1727.175,5276.094,-40.20918,500,2,5.288348),
+(68482,1,-1727.175,5276.094,-40.20918,500,7,5.288348),
 (68482,2,-1743.104,5265.377,-40.20918,0,0,0),
 (68482,3,-1755.205,5248.055,-40.20918,0,0,0),
 (68482,4,-1772.216,5242.507,-40.20918,0,0,0),
@@ -44,10 +44,10 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68482,8,-1841.556,5198.459,-43.07298,0,0,0),
 (68482,9,-1855.024,5176.454,-48.17921,0,0,0),
 (68482,10,-1877.369,5188.83,-50.57867,0,0,0),
-(68482,11,-1902.808,5214.768,-48.60621,0,0,0),
+(68482,11,-1902.808,5214.768,-48.60621,0,10,0),
 
 -- At kitchen
-(68482,12,-1910.953,5224.428,-45.45106,500,2,100),
+(68482,12,-1910.953,5224.428,-45.45106,500,7,100),
 
 -- From kitchen
 (68482,13,-1883.114,5214.616,-45.82743,0,0,0),
@@ -62,11 +62,6 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68482,22,-1745.085,5260.75,-40.20918,0,0,0),
 (68482,23,-1724.028,5271.72,-40.20918,0,0,0),
 (68482,24,-1727.175,5276.094,-40.20918,0,0,0);
-
-
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=2;
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `command`, `datalong`, `comments`) VALUES 
-('2', '32', '1', 'GENERIC - Pause Waypoints');
 
 DELETE FROM `creature_addon` WHERE `guid`=68482;
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES (68482, 0, 7, 1, 16, 0, 0, NULL);
