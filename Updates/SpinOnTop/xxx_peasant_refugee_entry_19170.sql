@@ -1,15 +1,25 @@
 -- All Peasant Refugees should not have Bloody Cleavers. 
--- The only one who should have it is the one at the soup kitchen (http://www.wowhead.com/npc=19170/peasant-refugee#comments), and it should be unequiped once the NPC moves to despawn point
+-- The only one who should have it is the one at the soup kitchen and it should be unequiped once the NPC moves to despawn point
 UPDATE creature_template SET EquipmentTemplateId=0,MovementType=2 WHERE entry=19170; -- Old: 55271
 
-DELETE FROM `creature` WHERE `guid` IN(68578,68581,68579,68580); -- Should be a temporary spawn while soup kitchen is spawned
+DELETE FROM `creature` WHERE `guid` IN(68577,96670); -- Delete duplicate and incorrect spawns
 
-UPDATE `creature_template_addon` SET `emote`=0 WHERE entry=19170;
-DELETE FROM `creature_addon` WHERE `guid` IN(68577,68578,68579,68580,68581,68584,68585);
+-- Delete unneeded addons
+DELETE FROM creature_template_addon WHERE entry=19170;
+DELETE FROM `creature_addon` WHERE `guid` IN(68581,68578,68579,68580,68581,68584,68585);
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES 
+(68578, 0, 3, 1, 16, 0, 0, NULL);
 
--- Missing, laying down
--- [2] Position: X: -1954.773 Y: 5170.282 Z: -40.20918
--- [2] Orientation: 1.099557
+
+UPDATE creature SET `position_x`=-1954.773, `position_y`=5170.282, `position_z`=-40.20918, `orientation`=1.099557 WHERE guid=68578;
+UPDATE creature SET `position_x`=-1870.212, `position_y`=5477.063, `position_z`=-12.34477, `orientation`=0.9773844 WHERE guid=68579;
+UPDATE creature SET position_x=-1867.284, position_y=5477.182, position_z=-12.34477, orientation=2.321288 WHERE guid=68580;
+
+-- Pooling at Spymistress Mehlisah Highcrown
+DELETE FROM pool_creature WHERE guid IN(68579,68580);
+INSERT INTO pool_creature (guid, pool_entry, chance, description) VALUES 
+(68579, 104, 0, 'Peasant Refugee at Spymistress Mehlisah Highcrown'),
+(68580, 105, 0, 'Peasant Refugee at Spymistress Mehlisah Highcrown');
 
 -- Pathing for  Entry: 19170 'UDB FORMAT' 
 UPDATE `creature` SET `MovementType`=2,`spawndist`=0 WHERE `guid`=68584;
@@ -53,37 +63,44 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68585,15,-2045.668,5307.952,-39.6055,0,0,0);
 
 
-UPDATE `gameobject` SET `spawntimesecsmin`=-3852,`spawntimesecsmax`=-3852 WHERE `guid`=24224;
--- This one should only be at the soup kitchen while the event is running. On normal spawnpoint he should move randomly
-UPDATE `creature` SET `position_x`=-2074.216, `position_y`=5316.652, `position_z`=-37.32356, `MovementType`=2, `spawndist`=0 WHERE `guid`=68577;
-DELETE FROM `creature_movement` WHERE `id`=68577;
+-- Should only be at the soup kitchen while the event is running. On normal spawnpoint he should move randomly
+UPDATE `creature` SET `position_x`=-2074.216, `position_y`=5316.652, `position_z`=-37.32356, `MovementType`=2, `spawndist`=0 WHERE `guid`=68581;
+DELETE FROM `creature_movement` WHERE `id`=68581;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(68577,1,-2080.913,5290.43,-37.32355,0,9,0),
-(68577,2,-2060.495,5273.947,-38.46501,0,0,0),
-(68577,3,-2041.92,5263.64,-39.82203,0,0,0),
-(68577,4,-2024.709,5250.461,-43.74634,0,0,0),
-(68577,5,-1989.924,5241.191,-45.88612,0,0,0),
-(68577,6,-1956.249,5238.913,-43.63295,0,0,0),
-(68577,7,-1938.983,5240.378,-42.72091,0,0,0),
-(68577,8,-1933.321,5238.574,-41.81791,0,0,0),
-(68577,9,-1929.502,5237.604,-41.81791,113000,1917001,100),
+(68581,1,-2080.913,5290.43,-37.32355,0,9,0),
+(68581,2,-2060.495,5273.947,-38.46501,0,0,0),
+(68581,3,-2041.92,5263.64,-39.82203,0,0,0),
+(68581,4,-2024.709,5250.461,-43.74634,0,0,0),
+(68581,5,-1989.924,5241.191,-45.88612,0,0,0),
+(68581,6,-1956.249,5238.913,-43.63295,0,0,0),
+(68581,7,-1938.983,5240.378,-42.72091,0,0,0),
+(68581,8,-1933.321,5238.574,-41.81791,0,0,0),
+(68581,9,-1929.502,5237.604,-41.81791,113000,1917001,100),
 
-(68577,10,-1934.128,5238.561,-41.81791,0,0,0),
--- Entry: 19170 Low: 1441800
-(68577,11,-1932.826,5239.141,-41.81791,105600,1917002,100),
+(68581,10,-1934.128,5238.561,-41.81791,0,0,0),
 
-(68577,12,-1933.799,5243.494,-41.81791,0,0,0),
+(68581,11,-1932.826,5239.141,-41.81791,105600,1917002,100),
 
-(68577,13,-1931.935,5241.604,-41.81791,85000,1917003,100),
+(68581,12,-1933.799,5243.494,-41.81791,0,0,0),
 
-(68577,14,-1936.411,5240.464,-41.81791,0,0,0),
-(68577,15,-1932.958,5238.352,-41.81791,0,0,0),
-(68577,16,-1929.68,5237.738,-41.81791,81500,1917004,100),
-(68577,17,-1929.68,5237.738,-41.81791,3378000,1917005,4.34587), -- 3378000
-(68577,18,-1936.801,5239.364,-41.81791,0,0,0),
-(68577,19,-1947.085,5241.049,-43.01661,0,0,0),
-(68577,20,-1982.853,5241.942,-46.05104,0,0,0);
--- missing return points
+(68581,13,-1931.935,5241.604,-41.81791,85000,1917003,100),
+
+(68581,14,-1936.411,5240.464,-41.81791,0,0,0),
+(68581,15,-1932.958,5238.352,-41.81791,0,0,0),
+(68581,16,-1929.68,5237.738,-41.81791,81500,1917004,100),
+(68581,17,-1929.68,5237.738,-41.81791,3378000,1917005,4.34587), -- 3378000
+(68581,18,-1936.801,5239.364,-41.81791,0,0,0),
+(68581,19,-1947.085,5241.049,-43.01661,0,0,0),
+(68581,20,-1982.853,5241.942,-46.05104,0,0,0),
+(68581,21,-2008.307,5246.722,-45.68372,0,0,0),
+(68581,22,-2042.242,5261.862,-39.91481,0,0,0),
+(68581,23,-2059.462,5270.288,-38.465,0,0,0),
+(68581,24,-2075.885,5287.067,-37.32355,0,0,0),
+(68581,25,-2078.647,5300.69,-37.32355,0,0,0),
+(68581,26,-2076.997,5309.269,-37.32355,0,0,0),
+(68581,27,-2071.997,5321.677,-37.32356,0,0,0),
+(68581,28,-2072.468,5320.509,-37.32356,0,0,0),
+(68581,29,-2075.165,5315.614,-37.32356,50,1917007,100);
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 1917001 AND 1917007;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
@@ -107,8 +124,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1917005,0,10,19170,0,2,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1932.707,5230.585,-43.11866,0.715585),
 (1917005,0,10,19170,0,3,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1922.545,5225.516,-44.2592,1.658063),
 (1917005,0,10,19170,0,4,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1937.682,5236.961,-42.48709,6.038839),
-(1917005,0,21,1,0,0,0,0,0,0,19150,68482,16,'Orc Refugee - Set Active Object',0,0,0,0),
-(1917005,1,32,0,0,0,0,0,0,0,19150,68482,16,'Orc Refugee - Resume Waypoints',0,0,0,0),
+(1917005,0,21,1,0,0,0,0,0,0,19150,151340,16,'Orc Refugee - Set Active Object',0,0,0,0),
+(1917005,1,32,0,0,0,0,0,0,0,19150,151340,16,'Orc Refugee - Resume Waypoints',0,0,0,0),
 (1917005,0,21,1,0,0,0,0,0,0,19155,68524,16,'Sporeling Refugee - Set Active Object',0,0,0,0),
 (1917005,1,20,2,1,0,0,0,0,0,19155,68524,16,'Sporeling Refugee - Set Waypoint Movement',0,0,0,0),
 
@@ -116,37 +133,41 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1917005,11,10,19170,0,6,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1931.493,5223.518,-45.4137,1.064651),
 (1917005,11,10,19170,0,7,0,0,0,0,0,0,0,'Peasant Refugee - Spawn Peasant Refugee',-1923.905,5220.219,-46.12845,1.64061),
 (1917005,11,20,2,1,0,0,0,0,0,19162,68560,16,'Lost one Refugee - Set Waypoint Movement',0,0,0,0),
-(1917005,11,21,1,0,0,0,0,0,0,19144,68467,16,'Maghar Refugee - Set Active Object',0,0,0,0),
-(1917005,11,32,0,0,0,0,0,0,0,19144,68467,16,'Maghar Refugee - Resume Waypoints',0,0,0,0),
+(1917005,11,21,1,0,0,0,0,0,0,19144,151333,16,'Maghar Refugee - Set Active Object',0,0,0,0),
+(1917005,11,32,0,0,0,0,0,0,0,19144,151333,16,'Maghar Refugee - Resume Waypoints',0,0,0,0),
 
-(1917005,135,32,0,0,0,0,0,0,0,19120,68400,16,'Broken Refugee - Resume Waypoints',0,0,0,0),
+(1917005,135,32,0,0,0,0,0,0,0,19120,151347,16,'Broken Refugee - Resume Waypoints',0,0,0,0),
 
 (1917005,157,32,0,0,0,0,0,0,0,19162,68558,16,'Lost one Refugee - Resume Waypoints',0,0,0,0),
 
-(1917005,181,32,0,0,0,0,0,0,0,19120,68399,16,'Broken Refugee - Resume Waypoints',0,0,0,0),
+(1917005,181,32,0,0,0,0,0,0,0,19120,151346,16,'Broken Refugee - Resume Waypoints',0,0,0,0),
 
-(1917005,248,32,0,0,0,0,0,0,0,19120,68398,16,'Broken Refugee - Resume Waypoints',0,0,0,0),
+(1917005,248,32,0,0,0,0,0,0,0,19120,151345,16,'Broken Refugee - Resume Waypoints',0,0,0,0),
 
 (1917005,3349,1,6,0,0,0,0,0,0,0,0,0,'Peasant Refugee - OneShotQuestion',0,0,0,0), -- 3349
 (1917005,3349,32,0,0,0,0,0,0,0,19155,68524,16,'Sporeling Refugee - Resume Waypoints',0,0,0,0),
-(1917005,3349,32,0,0,0,0,0,0,0,19150,68482,16,'Orc Refugee - Resume Waypoints',0,0,0,0),
-(1917005,3349,32,0,0,0,0,0,0,0,19120,68400,16,'Broken Refugee - Resume Waypoints',0,0,0,0), -- Guessed timer, creature is broken on live retail
+(1917005,3349,32,0,0,0,0,0,0,0,19150,151340,16,'Orc Refugee - Resume Waypoints',0,0,0,0),
+(1917005,3349,32,0,0,0,0,0,0,0,19120,151347,16,'Broken Refugee - Resume Waypoints',0,0,0,0), -- Guessed timer, creature is broken on live retail
 
-(1917005,3355,32,0,0,0,0,0,0,0,19120,68399,16,'Broken Refugee - Resume Waypoints',0,0,0,0), -- Guessed timer, creature is broken on live retail
+(1917005,3355,32,0,0,0,0,0,0,0,19120,151346,16,'Broken Refugee - Resume Waypoints',0,0,0,0), -- Guessed timer, creature is broken on live retail
 
-(1917005,3366,32,0,0,0,0,0,0,0,19144,68467,16,'Maghar Refugee - Resume Waypoints',0,0,0,0),
-(1917005,3366,32,0,0,0,0,0,0,0,19120,68398,16,'Broken Refugee - Resume Waypoints',0,0,0,0), -- Guessed timer, creature is broken on live retail
+(1917005,3366,32,0,0,0,0,0,0,0,19144,151333,16,'Maghar Refugee - Resume Waypoints',0,0,0,0),
+(1917005,3366,32,0,0,0,0,0,0,0,19120,151345,16,'Broken Refugee - Resume Waypoints',0,0,0,0), -- Guessed timer, creature is broken on live retail
 (1917005,3366,1,0,0,0,0,0,0,0,0,0,0,'Peasant Refugee - ONESHOT_NONE',0,0,0,0), -- 3366
 
 (1917005,3375,40,0,0,0,0,0,0,0,183355,10,1,'Peasant Refugee - Despawn Shattrath Soup Tent',0,0,0,0), -- 3375
 
-(1917006,0,32,1,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Pause Waypoints',0,0,0,0),
+(1917005,3382,32,0,0,0,0,0,0,0,19162,68560,16,'Lost one Refugee - Resume Waypoints',0,0,0,0),
+
+(1917005,3426,32,0,0,0,0,0,0,0,19162,68558,16,'Lost one Refugee - Resume Waypoints',0,0,0,0),
+
 (1917006,0,42,0,0,0,2827,0,0,0,0,0,0,'Peasant Refugee - Update Equipment',0,0,0,0),
 (1917006,0,1,69,0,0,0,0,0,0,0,0,0,'Peasant Refugee - STATE_USESTANDING',0,0,0,0),
+(1917006,3565,42,1,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Set Default Equipment',0,0,0,0),
 
-(1917007,0,42,1,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Update Equipment',0,0,0,0);
+(1917007,0,20,5,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Random Movement',0,0,0,0);
 
--- Peasant with bloody knife
+-- Peasant with bloody cleaver
 DELETE FROM `creature_movement_template` WHERE `entry`=19170 AND `pathId`=1;
 INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (19170,1,1,-2040.664,5312.794,-39.99809,0,0,0),
@@ -159,8 +180,8 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,
 (19170,8,1,-1928.475,5248.881,-41.81789,0,0,0),
 (19170,9,1,-1921.047,5240.427,-41.81789,0,0,0),
 (19170,10,1,-1919.995,5235.011,-41.81792,0,0,0),
-(19170,11,1,-1921.561,5235.31,-41.81792,500,1917006,2.740167),
-(19170,12,1,-1923.438,5227.604,-43.8158,0,1917007,0),
+(19170,11,1,-1921.561,5235.31,-41.81792,3565000,1917006,2.740167),
+(19170,12,1,-1923.438,5227.604,-43.8158,0,0,0),
 (19170,13,1,-1946.327,5232.099,-45.00704,0,0,0),
 (19170,14,1,-1991.425,5248.515,-44.99781,0,0,0),
 (19170,15,1,-2014.07,5261.001,-43.92688,0,0,0),
@@ -168,7 +189,7 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,
 (19170,17,1,-2040.418,5317.36,-40.12309,0,0,0),
 (19170,18,1,-2042.96,5336.785,-40.65192,0,0,0),
 (19170,19,1,-2032.956,5342.394,-38.71989,0,0,0),
-(19170,20,1,-2024.317,5337.025,-38.71989,0,0,0);
+(19170,20,1,-2024.317,5337.025,-38.71989,1000,1,100);
 
 -- First pack of 3 peasant refugees
 DELETE FROM `creature_movement_template` WHERE `entry`=19170 AND `pathId`=2;

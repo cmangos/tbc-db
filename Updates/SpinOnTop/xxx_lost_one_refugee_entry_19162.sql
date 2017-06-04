@@ -1,3 +1,6 @@
+-- Fix model
+UPDATE creature_model_info SET modelid_alternative=152 WHERE modelid=11650;
+
 -- Pathing for  Entry: 19162 'UDB FORMAT' 
 UPDATE `creature` SET `MovementType`=2, `spawndist`=0 WHERE `guid`=68559;
 DELETE FROM `creature_movement` WHERE `id`=68559;

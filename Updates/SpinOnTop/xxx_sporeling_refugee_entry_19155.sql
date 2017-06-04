@@ -52,9 +52,9 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,
 (19155,20,1,-1743.904,5226.239,-50.4254,0,0,0),
 (19155,21,1,-1714.136,5234.733,-51.05395,0,0,0),
 (19155,22,1,-1681.296,5271.378,-51.46129,0,0,0),
-(19155,23,1,-1668.254,5284.326,-49.39611,0,0,0),
+(19155,23,1,-1668.254,5284.326,-49.39611,0,10,0),
 (19155,24,1,-1668.487,5284.095,-49.42394,500,1915501,2.775074);
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=1915501;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(1915501,0,20,5,0,0,0,0,0,0,0,8,'Sporeling Refugee - Random Movement',0,0,0,0);
+(1915501,0,20,1,5,0,0,0,0,0,0,8,'Sporeling Refugee - Random Movement',0,0,0,0);
