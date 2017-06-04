@@ -70,3 +70,20 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68376,9,-1615.109,5397.366,-36.73718,0,0,0);
 
 
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=1907501;
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
+(1907501,0,35,5,0,0,0,0,0,0,0,0,0,'Skettis Outcast - Send AI Event Type 5 (A) to Self',0,0,0,0),
+(1907501,0,20,0,0,0,0,0,0,0,0,0,0,'Skettis Outcast - Set Idle Movement',0,0,0,0);
+
+UPDATE `creature` SET `MovementType`=2 WHERE `guid` IN(68384,68383,68378,68380);
+DELETE FROM `creature_movement` WHERE `id` IN(68384,68383,68378,68380);
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+-- 68384
+(68384,1,-1675.29,5495.21,-40.3227,1000,1907501,4.13643),
+-- 68383
+(68383,1,-1678.37,5492.67,-40.3227,1000,1907501,0.890118),
+-- 68378
+(68378,1,-1705.6,5435.7,-12.3448,1000,1907501,2.51327),
+-- 68380
+(68380,1,-1707.06,5442.57,-12.3448,1000,1907501,4.76475);
+
