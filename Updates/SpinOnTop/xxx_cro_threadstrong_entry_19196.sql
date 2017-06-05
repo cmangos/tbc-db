@@ -58,7 +58,7 @@ INSERT INTO dbscript_string_template (id,string_id) VALUES
 (2,2000001183),
 (2,2000001184);
 
--- Missing item in tbc-dn. Data from wotlk-db. (Was added in 2.4.2 http://www.wowhead.com/item=38518/cros-apple#comments)
+-- Missing item in tbc-db. Data from wotlk-db. (Was added in 2.4.2 http://www.wowhead.com/item=38518/cros-apple#comments)
 DELETE FROM `item_template` WHERE `entry`=38518;
 INSERT INTO `item_template` (`entry`, `name`, `displayid`, `Quality`, `Flags`, `BuyPrice`, `SellPrice`, `ItemLevel`, `RequiredLevel`, `maxcount`, `stackable`, `delay`, `spellid_1`, `spellcharges_1`, `spellcooldown_1`, `spellcategorycooldown_1`, `description`, `Material`) VALUES 
 ('38518', 'Cro\'s Apple', '50737', '1', '64', '150', '37', '5', '1', '24', '24', '0', '50749', '-1', '0', '1000', 'For Cro Threadstrong!', '7');
@@ -66,3 +66,4 @@ INSERT INTO `item_template` (`entry`, `name`, `displayid`, `Quality`, `Flags`, `
 DELETE FROM `npc_vendor` WHERE `entry`=19196 AND `item`=38518;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `ExtendedCost`, `condition_id`, `comments`) VALUES 
 (19196, 38518, 0, 0, 0, 0, NULL);
+

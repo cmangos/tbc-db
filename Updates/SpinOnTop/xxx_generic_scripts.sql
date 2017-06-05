@@ -15,3 +15,4 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `command`, `datalong`, `comm
 
 -- Update comment to make it clear that it's generic and not specific to Stratholme Gargoyles
 UPDATE dbscripts_on_creature_movement SET comments='GENERIC - Run Mode On' WHERE id=5;
+
