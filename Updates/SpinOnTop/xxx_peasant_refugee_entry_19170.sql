@@ -165,7 +165,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1917006,0,1,69,0,0,0,0,0,0,0,0,0,'Peasant Refugee - STATE_USESTANDING',0,0,0,0),
 (1917006,3565,42,1,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Set Default Equipment',0,0,0,0),
 
-(1917007,0,20,5,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Random Movement',0,0,0,0);
+(1917007,0,20,1,5,0,0,0,0,0,0,0,0,'Peasant Refugee - Random Movement',0,0,0,0);
 
 -- Peasant with bloody cleaver
 DELETE FROM `creature_movement_template` WHERE `entry`=19170 AND `pathId`=1;

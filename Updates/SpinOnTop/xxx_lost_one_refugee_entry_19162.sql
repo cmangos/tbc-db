@@ -59,4 +59,5 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`pathId`,`position_x`,
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=1916201;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(1916201,0,20,5,0,0,0,0,0,0,0,0,'Lost one Refugee - Random Movement',0,0,0,0);
+(1916201,0,20,1,5,0,0,0,0,0,0,0,'Lost one Refugee - Random Movement',0,0,0,0);
+

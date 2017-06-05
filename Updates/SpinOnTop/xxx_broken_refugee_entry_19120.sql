@@ -1,11 +1,9 @@
 UPDATE creature_template SET MovementType=2 WHERE entry=19120;
 
--- Are there addons by default??
-
 -- Missing spawns
 DELETE FROM creature WHERE guid=151342;
 INSERT INTO creature (guid, id, map, spawnmask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) values
-(151342,19120,530,1,0,0,-1870.212,5477.063,-12.34477,0.9773844,300,300,0,0,6400,0,0,0);
+(151342,19120,530,1,0,0,-1870.212,5477.063,-12.34477,0.9773844,300,300,0,0,6900,0,0,0);
 
 -- Relocate existing spawns to the same guid range
 UPDATE `creature` SET `guid`=151343, position_x=-1867.284, position_y=5477.182, position_z=-12.34477, orientation=2.321288 WHERE `guid`=68397 AND `id`=19120;
