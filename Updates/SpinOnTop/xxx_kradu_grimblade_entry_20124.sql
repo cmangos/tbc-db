@@ -5,7 +5,7 @@ UPDATE creature_template SET MovementType=2 WHERE entry=20124;
 DELETE FROM `creature_movement_template` WHERE `entry`=20124;
 INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (20124,1,-1847.755,5230.35,-38.04539,25000,1907502,4.77226),
-(20124,2,-1850.955,5228.034,-38.04538,110000,1907501,100);
+(20124,2,-1850.955,5228.034,-38.04538,110000,1907501,4.652941);
 
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(1907501,1907502);
