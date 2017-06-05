@@ -11,7 +11,7 @@ INSERT INTO creature (guid, id, map, spawnmask, modelid, equipment_id, position_
 UPDATE `creature` SET `guid`=151331, spawntimesecsmin=300, spawntimesecsmax=300, modelid=0, position_x=-1867.284, position_y=5477.182, position_z=-12.34477, orientation=2.321288 WHERE `guid`=96667 AND `id`=19144; -- Normalize spawntime and modelid
 UPDATE `creature` SET `guid`=151332, position_x=-1610.705, position_y=5345.501, position_z=-40.20918, orientation=5.318808, MovementType=1, spawndist=5 WHERE `guid`=68465 AND `id`=19144;
 UPDATE `creature` SET `guid`=151333, position_x=-1622.22, position_y=5347.756, position_z=-40.20918, MovementType=2, spawndist=0 WHERE `guid`=68467 AND `id`=19144;
-UPDATE `creature` SET `guid`=151334 WHERE `guid`=68466 AND `id`=19144;
+UPDATE `creature` SET `guid`=151334, MovementType=2, spawndist=0 WHERE `guid`=68466 AND `id`=19144;
 
 -- Pooling at Spymistress Mehlisah Highcrown
 DELETE FROM pool_creature WHERE guid IN(151330,151331);
