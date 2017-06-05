@@ -99,8 +99,8 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (68581,25,-2078.647,5300.69,-37.32355,0,0,0),
 (68581,26,-2076.997,5309.269,-37.32355,0,0,0),
 (68581,27,-2071.997,5321.677,-37.32356,0,0,0),
-(68581,28,-2072.468,5320.509,-37.32356,0,0,0),
-(68581,29,-2075.165,5315.614,-37.32356,50,1917007,100);
+(68581,28,-2072.468,5320.509,-37.32356,0,10,0),
+(68581,29,-2075.165,5315.614,-37.32356,1000,1917007,100);
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 1917001 AND 1917007;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
@@ -165,7 +165,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1917006,0,1,69,0,0,0,0,0,0,0,0,0,'Peasant Refugee - STATE_USESTANDING',0,0,0,0),
 (1917006,3565,42,1,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Set Default Equipment',0,0,0,0),
 
-(1917007,0,20,1,5,0,0,0,0,0,0,0,0,'Peasant Refugee - Random Movement',0,0,0,0);
+(1917007,0,20,1,5,0,0,0,0,0,0,0,0,'Peasant Refugee - Random Movement',0,0,0,0),
+(1917007,18000,20,2,0,0,0,0,0,0,0,0,0,'Peasant Refugee - Set Waypoint Movement',0,0,0,0); -- 5 hour rest
 
 -- Peasant with bloody cleaver
 DELETE FROM `creature_movement_template` WHERE `entry`=19170 AND `pathId`=1;
