@@ -18,3 +18,7 @@ UPDATE creature_template SET FactionHorde=1720, FactionAlliance=1720 WHERE entry
 -- Karazhan Side Entrance Door
 UPDATE gameobject_template SET flags=2 WHERE entry=184275;
 
+-- Give HFP Marauding Crust Burster proper aura - serverside
+UPDATE creature_template_addon SET auras='34038' WHERE entry IN(16857);
+
+
