@@ -21,4 +21,9 @@ UPDATE gameobject_template SET flags=2 WHERE entry=184275;
 -- Give HFP Marauding Crust Burster proper aura - serverside
 UPDATE creature_template_addon SET auras='34038' WHERE entry IN(16857);
 
+-- Kathelas
+-- I have no idea why, but those quests require you to complete 10296 and 10297 (Black Morass questline in Caverns of Time), which is obviously wrong.
+-- The quests shouldnt require anything except being level 55.
+UPDATE quest_template SET PrevQuestId=0 WHERE entry=6804 OR entry=6805;
+
 
