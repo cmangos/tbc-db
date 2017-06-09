@@ -453,7 +453,7 @@ REPLACE INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment
 
 -- Blackwind Sabercat
 
-SET @CGUID := 150611; -- [-69/+20]
+SET @CGUID := 150621; -- [-69/+20]
 
 DELETE FROM `creature` WHERE `id`=21723;
 
@@ -479,7 +479,7 @@ REPLACE INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment
 (@CGUID + 18, '21723', '530', '1', '0', '0', '-3497.760', '3222.698', '297.6161', '1.33395200', '300', '00', '0', '1', '0', '0', '2'),
 (@CGUID + 19, '21723', '530', '1', '0', '0', '-3530.819', '3153.300', '315.3123', '3.60827600', '300', '00', '0', '1', '0', '0', '2');
 
-SET @POINT := 15;
+SET @POINT := 0;
 DELETE FROM `creature_movement` WHERE `id`=@CGUID + 15;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) VALUES
 (@CGUID + 15, @POINT := @POINT + 1, '-3552.347', '3200.382', '310.3728', '0', '0', '0', '0', '0', '0', '0', '0', '0', '100', '0', '0'),
@@ -533,7 +533,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- Monstrous Kaliri
 
-SET @GUID := 150631; -- [-13/+18]
+SET @GUID := 150641; -- [-13/+18]
 
 DELETE FROM `creature` WHERE `id` = 23051;
 
@@ -1145,7 +1145,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- Skettis Kaliri
 
-SET @GUID := 150649; -- [-30/+30]
+SET @GUID := 150659; -- [-30/+30]
 
 DELETE FROM `creature` WHERE `id` = 21804;
 
