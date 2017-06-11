@@ -18536,6 +18536,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =======
 -- Nagrand
 -- =======
+-- Boulderfist Crusher (Need to research spells)
+('1713401','17134','30','0','30','33','5','18369','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Boulderfist Crusher - Set Phase 1 on Receive AI Event 5 (A)'),
+('1713402','17134','1','1','100','33','3000','3000','3000','3000','1','-1125','-1126','0','1','-1127','-1128','0','0','0','0','0','Boulderfist Crusher - Random Say OOC (Phase 1)'),
+('1713403','17134','1','1','100','1','3000','3000','3000','3000','22','0','0','0','0','0','0','0','0','0','0','0','Boulderfist Crusher - Set Phase 0 OOC (Phase 1)'),
+-- Boulderfist Mystic (Need to research spells)
+('1713501','17135','30','0','30','33','5','18369','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 1 on Receive AI Event 5 (A)'),
+('1713502','17135','1','5','100','33','3000','3000','3000','3000','1','-1125','-1126','0','1','-1127','-1128','0','0','0','0','0','Boulderfist Mystic - Random Say OOC (Phase 1)'),
+('1713503','17135','1','5','100','1','3000','3000','3000','3000','22','0','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 0 OOC (Phase 1)'),
+('1713504','17135','30','0','100','33','6','17135','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 2 on Receive AI Event 6 (B)'),
+('1713505','17135','1','3','100','33','4000','6000','4000','6000','5','396','6','0','5','273','274','0','0','0','0','0','Boulderfist Mystic - Random Emote OOC (Phase 2)'),
 -- Goretooth
 ('1714401','17144','9','0','100','1','0','5','20000','24000','11','3604','1','0','0','0','0','0','0','0','0','0','Goretooth - Cast Tendon Rip'),
 ('1714402','17144','0','0','100','1','8000','14000','15000','21000','11','39215','1','0','0','0','0','0','0','0','0','0','Goretooth - Cast Gushing Wound'),
@@ -18643,6 +18653,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bleeding Hollow Orphan
 ('1829901','18299','30','0','100','0','6','18299','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Orphan - Set Phase 1 on Receive AI Event B'),
 ('1829902','18299','1','1','100','33','30000','300000','80000','300000','1','-474','-475','-476','1','-477','-478','-479','1','-480','-481','0','Bleeding Hollow Orphan - Random Say (Phase 1)'),
+-- Corki
+('1836901','18369','1','0','100','1','70000','90000','70000','90000','22','1','0','0','45','5','17','0','0','0','0','0','Corki - Set Phase 1 and Throw AI Event 5 (A) OOC'),
+('1836902','18369','1','1','100','33','0','0','0','0','0','0','0','0','1','-1120','-1121','0','1','-1122','-1123','-1124','Corki - Random Say OOC (Phase 1)'),
+('1836903','18369','1','1','100','1','500','500','500','500','22','0','0','0','0','0','0','0','0','0','0','0','Corki - Set Phase 0 (Phase 1)'),
 -- Giselda the Crone
 ('1839101','18391','2','0','100','0','65','0','0','0','11','33316','0','0','0','0','0','0','0','0','0','0','Giselda the Crone - Cast Giselda Transform at 65% HP'),
 -- Brokentoe
@@ -31980,7 +31994,15 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1117','They dont\'t know where to store the leftovers!','0','0','0','19228','25'),
 ('-1118','Wow! The laughs dont\'t drop very often here, do they?','0','0','0','19228','6'),
 ('-1119','Kill $N!','0','1','0','15392','25'),
--- PLEASE RE-USE 1120 - 1128
+('-1120','Hey fatso, how do you go to the bathroom with all that fat!?','0','0','0','18369','0'),
+('-1121','Eat me already! I can\'t take being locked up in this cage around you stinky, fat slobs.','0','0','0','18369','0'),
+('-1122','I want my daddy!','0','0','0','18369','0'),
+('-1123','You fatheads are in trouble if I ever get out of here!','0','0','0','18369','0'),
+('-1124','Hey fathead, how about some food!?','0','0','0','18369','0'),
+('-1125','Me no can take it no more!','0','0','0','17874/17875','1'),
+('-1126','Me lose appetite. Corki is poop.','0','0','0','17874/17875','1'),
+('-1127','You shut up!','0','0','0','17874/17875','1'),
+('-1128','Me don\'t even want to eat him no more.','0','0','0','17874/17875','1'),
 ('-1129','I\'m not gonna lie to you, soldiers. We\'re getting our butts kicked out there! Now which one of you is orc enough to do something about it?','0','0','0','19255','1'),
 ('-1130','I can\'t belive that Papa Wheeler thinks he\'s going to dupe anyone into going out to Manaforge B\'naar!','0','0','0','19541','1'),
 ('-1131','We can\'t let a failing servo slow down the construction of the X-52 Nether-Rocket!','0','0','0','19541','1'),
