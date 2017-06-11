@@ -17900,6 +17900,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2183701','21837','11','0','100','0','0','0','0','0','11','22578','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Glowy (Black) on Spawn'),
 ('2183702','21837','4','0','100','0','0','0','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Charge on Aggro'),
 ('2183703','21837','9','0','100','1','0','5','6000','10000','11','36406','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Double Breath'),
+-- Samia Inkling
+('2198301','21983','1','0','100','1','6000','9000','6000','9000','5','1','0','0','0','0','0','0','0','0','0','0','Samia Inkling - Talk Emote OOC'),
+('2198302','21983','30','0','100','33','5','22130','0','0','5','1','5','6','5','11','15','25','5','273','274','0','Samia Inkling - Random Emote on Receive AI Event 5 (A)'),
 -- Apexis Flayer
 ('2217501','22175','0','0','100','1','8300','13300','22000','26000','11','13443','4','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Rend'),
 ('2217502','22175','0','0','100','1','4200','6200','28100','31600','11','40770','1','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Shred Armor'),
@@ -17908,6 +17911,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2218002','22180','0','0','100','1','8100','13300','8100','13300','11','40773','0','0','0','0','0','0','0','0','0','0','Shard-Hide Boar - Cast Shard Hide'),
 -- Aether Ray
 ('2218101','22181','0','0','100','1','7900','13000','28000','36000','11','35333','1','0','0','0','0','0','0','0','0','0','Aether Ray - Cast Tail Swipe'),
+-- Tree Warden Chawn
+('2200701','22007','1','0','100','1','6000','9000','6000','9000','5','1','0','0','0','0','0','0','0','0','0','0','Tree Warden Chawn - Talk Emote OOC'),
+-- Baron Sablemane
+('2210301','22103','30','0','100','33','5','22130','0','0','5','1','5','6','5','11','15','25','5','273','274','0','Baron Sablemane - Random Emote on Receive AI Event 5 (A)'),
 -- Wrath Speaker
 ('2219501','22195','0','0','75','1','2500','7500','14000','18000','11','34017','1','0','0','0','0','0','0','0','0','0','Wrath Speaker - Cast Rain of Chaos'),
 ('2219502','22195','0','0','100','1','10100','14100','122000','130000','11','11980','4','0','0','0','0','0','0','0','0','0','Wrath Speaker - Cast Curse of Weakness'),
@@ -17953,6 +17960,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2244802','22448','0','0','100','1','3000','3000','5000','6000','11','3391','1','0','0','0','0','0','0','0','0','0','Rexxar - Cast Thrash'),
 ('2244803','22448','2','0','100','0','40','0','0','0','12','22498','1','0','0','0','0','0','0','0','0','0','Rexxar - Summon Misha at 40% HP'),
 ('2244804','22448','25','0','100','0','22498','0','0','0','11','8602','0','1','0','0','0','0','0','0','0','0','Rexxar - Cast Vengeance on Misha Death'),
+-- Natasha
+('2246501','22465','1','0','40','33','60000','120000','60000','120000','1','-77','-78','0','1','-79','-80','0','0','0','0','0','Natasha - Random OOC Say'),
 -- Unstable Fel-Imp
 ('2247401','22474','11','0','100','0','0','0','0','0','20','0','0','0','11','39227','0','0','0','0','0','0','Unstable Fel-Imp - Disable melee and Cast transform spell on Spawn'),
 ('2247402','22474','9','0','100','1','0','5','0','0','11','39266','0','0','0','0','0','0','0','0','0','0','Unstable Fel-Imp - Cast Unstable Explosion'),
@@ -31139,7 +31148,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-74','Aaaaahhh! So close to escaping.','0','0','0','Common Gnome Text','0'),
 ('-75','%s skitters out from the shadows...','0','2','0','16179','0'),
 ('-76','Hey! Where do you think you are going, sneaking around like that?','0','1','0','16408','0'),
--- (77 - 80 Please Re-Use)
+('-77','Antelarion says I fell off a big bird, as I fell he caught me... He is so pretty!','0','0','0','22465','0'),
+('-78','Antelarion, is it safe to play in the forest yet?','0','0','0','22465','0'),
+('-79','I\'m only 4 years old.','0','0','0','22465','0'),
+('-80','I think I came from Eng-land, do you know where that is?','0','0','0','22465','0'),
 ('-81','Your strategy was flawed.','11102','1','0','19218','0'),
 ('-82','Yes, the only logical outcome.','11103','1','0','19218','0'),
 ('-83','An unforeseen... contingency.','11106','1','0','19218','0'),
