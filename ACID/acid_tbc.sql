@@ -31617,7 +31617,6 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-687','Who dares slay one of my Kargath\'s commanders?  You will pay for this... in flesh!','0','1','0','22374','0'),
 -- PLEASE RE-USE 688 - 693
 ('-694','%s chips and splinters!','0','2','0','7023','0'),
--- PLEASE RE-USE 695 - 697
 ('-695','A pleasure... to serve the master.','0','0','0','17899','0'),
 ('-696','You will... ultimately fail.','0','0','0','17899','0'),
 ('-697','My life... to the master.','0','0','0','17899','0'),
