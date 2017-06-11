@@ -1947,16 +1947,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Frostmane Seer (2.4.3 Official Data)
 ('139701','1397','1','0','50','1','1000','1000','600000','600000','11','324','0','1','0','0','0','0','0','0','0','0','Frostmane Seer - Cast Lightning Shield on Spawn'),
 ('139702','1397','4','0','15','0','0','0','0','0','1','-321','-322','0','0','0','0','0','0','0','0','0','Frostmane Seer - Random Say on Aggro'),
-('139703','1397','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','YYYYYYYY - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('139703','1397','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Frostmane Seer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('139704','1397','9','13','100','1','0','40','3400','5400','11','9532','1','0','0','0','0','0','0','0','0','0','Frostmane Seer - Cast Lightning Bolt (Phase 1)'),
-('139705','1397','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','YYYYYYYY - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('139706','1397','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','YYYYYYYY - Disable Dynamic Movement at 0-8 Yards'),
-('139707','1397','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','YYYYYYYY - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('139708','1397','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','YYYYYYYY - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('139705','1397','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Frostmane Seer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('139706','1397','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Frostmane Seer - Disable Dynamic Movement at 0-8 Yards'),
+('139707','1397','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Frostmane Seer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('139708','1397','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Frostmane Seer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('139709','1397','27','0','100','1','324','1','5000','12000','11','324','0','1','0','0','0','0','0','0','0','0','Frostmane Seer - Cast Lightning Shield on Missing Aura'),
-('139710','1397','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','YYYYYYYY - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
-('139711','1397','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','YYYYYYYY - Flee at 15% HP (Phase 3)'),
-('139712','1397','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','YYYYYYYY - Set Phase to 0 on Evade'),
+('139710','1397','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Frostmane Seer - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('139711','1397','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Frostmane Seer - Flee at 15% HP (Phase 3)'),
+('139712','1397','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Frostmane Seer - Set Phase to 0 on Evade'),
 -- Avarus Kharag
 ('167901','1679','0','0','100','1','6000','8000','11000','15000','11','5588','1','0','0','0','0','0','0','0','0','0','Avarus Kharag - Cast Hammer of Justice'),
 ('167902','1679','2','0','100','1','30','0','20000','30000','11','1026','0','1','0','0','0','0','0','0','0','0','Avarus Kharag - Cast Holy Light at 30% HP'),
@@ -7287,8 +7287,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('264502','2645','9','5','100','1','5','30','2300','3900','11','15547','1','0','40','2','0','0','0','0','0','0','Vilebranch Shadow Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('264503','2645','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Vilebranch Shadow Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('264504','2645','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Vilebranch Shadow Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('264505','2645','9','0','100','1','0','30','21000','26000','11','14032','4','1','0','0','0','0','0','0','0','0','Vilebranch Hideskinner - Cast Shadow Word: Pain'),
-('264506','2645','0','0','100','1','4000','9000','15000','21000','11','9657','0','1','0','0','0','0','0','0','0','0','Vilebranch Hideskinner - Cast Shadow Shell'),
+('264505','2645','9','0','100','1','0','30','21000','26000','11','14032','4','1','0','0','0','0','0','0','0','0','Vilebranch Shadow Hunter - Cast Shadow Word: Pain'),
+('264506','2645','0','0','100','1','4000','9000','15000','21000','11','9657','0','1','0','0','0','0','0','0','0','0','Vilebranch Shadow Hunter - Cast Shadow Shell'),
 ('264507','2645','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Vilebranch Shadow Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('264508','2645','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vilebranch Shadow Hunter - Flee at 15% HP (Phase 2)'),
 ('264509','2645','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Vilebranch Shadow Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
@@ -11302,13 +11302,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('220501','2205','0','0','100','1','3000','5000','14000','21000','11','5242','0','0','0','0','0','0','0','0','0','0','Greymist Warrior - Cast Battle Shout'), 
 ('220502','2205','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Greymist Warrior - Flee at 15% HP'),
 -- Greymist Hunter
-('220601','2206','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','YYYYYYYY - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('220601','2206','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Greymist Hunter - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('220602','2206','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Greymist Hunter - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
-('220603','2206','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','YYYYYYYY - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('220604','2206','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','YYYYYYYY - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('220605','2206','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','YYYYYYYY - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
-('220606','2206','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','YYYYYYYY - Flee at 15% HP (Phase 2)'),
-('220607','2206','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','YYYYYYYY - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('220603','2206','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Greymist Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('220604','2206','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Greymist Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('220605','2206','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Greymist Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('220606','2206','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Greymist Hunter - Flee at 15% HP (Phase 2)'),
+('220607','2206','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Greymist Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Greymist Oracle
 ('220701','2207','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Greymist Oracle - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('220702','2207','9','13','100','1','8','40','3400','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Greymist Oracle - Cast Lightning Bolt (Phase 1)'),
@@ -11409,7 +11409,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Terenthis (3693) - NSR
 -- Sentinel Selarin (3694) - NSR
 -- Grimclaw
-('369501','3695','22','0','100','1','101','0','0', '0','1','-662','0','0','1','-663','0','0','0','0','0','0','Grimclaw - Text Emote on Recive Wave Emote'),
+('369501','3695','22','0','100','1','101','0','0', '0','1','-662','0','0','1','-663','0','0','0','0','0','0','Grimclaw - Text Emote on Receive Wave Emote'),
 -- Tharnariun Treetender (3701) - NSR
 -- Alanndarian Nightsong (3702) - NSR
 -- Caylais Moonfeather
