@@ -17736,6 +17736,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2021602','20216','0','0','100','1','5000','9000','12000','17000','11','21055','1','0','0','0','0','0','0','0','0','0','Grulloc - Cast Crush Armor'),
 ('2021603','20216','0','0','100','1','6000','17000','5000','10000','11','38772','4','32','0','0','0','0','0','0','0','0','Grulloc - Cast Grievous Wound'),
 ('2021604','20216','6','0','100','0','0','0','0','0','11','39890','0','7','0','0','0','0','0','0','0','0','Grulloc - Summon Grulloc\'s Dragon Skull Chest on Death'),
+('2021605','20216','8','0','10','33','38360','-1','0','0','1','-799','-800','-801','1','-802','-803','-804','1','-805','-806','0','Grulloc - Random Yell on Huffer Threatens Grulloc Spellhit'),
+('2021606','20216','30','0','100','0','5','22114','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Grulloc - Set Phase 1 on Receive AI Event 5 (A)'),
+('2021607','20216','21','1','100','0','0','0','0','0','1','-798','0','0','22','0','0','0','0','0','0','0','Grulloc - Yell and Set Phase 0 on Reached Home (Phase 1)'),
 -- Bladespire Cook
 ('2033401','20334','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Set Phase 1 on Spawned'),
 ('2033402','20334','30','13','100','1','5','21241','0','0','22','2','0','0','5','16','0','0','0','0','0','0','Bladespire Cook - Set Phase 2 and Kneel on Received AI Event (Phase 1)'),
@@ -31764,7 +31767,15 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-775','Alright! We Surrender... Just put your weapons down, I\'ll cooperate','0','0','0','5089','0'),
 -- PLEASE RE-USE 776 - 796
 ('-797','%s puts his club away and begins swinging wildly!','0','2','0','11441','0'),
--- PLEASE RE-USE 798 - 806
+('-798','Where piggy go?!','0','1','0','20216','53'),
+('-799','You be Grulloc\'s friend!','0','1','0','20216','0'),
+('-800','Mmm, other white meat!','0','1','0','20216','0'),
+('-801','Grulloc having lots of fun!','0','1','0','20216','0'),
+('-802','Me hungry!','0','1','0','20216','0'),
+('-803','Me keep piggy as pet!','0','1','0','20216','0'),
+('-804','Porkchops!','0','1','0','20216','0'),
+('-805','Piggy stop!','0','1','0','20216','0'),
+('-806','Me like soft bacon!','0','1','0','20216','0'),
 ('-807','%s begins to retaliate all attacks against him!','0','2','0','14325','0'),
 ('-808','No one get past me and threaten da king!  Ungh, take it!!','0','0','0','14325','0'),
 ('-809','Help me crush these punys!','0','1','0','14325','0'),
