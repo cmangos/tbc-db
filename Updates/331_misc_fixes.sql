@@ -54,3 +54,6 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position
 (18424,17,-1827.051,4745.991,18.33447,0,0,0,0,0,0,0,0,0,0,0,0),
 (18424,18,-1818.022,4746.606,22.55483,0,0,0,0,0,0,0,0,0,0,0,0);
 
+-- Ethereal Thief - immune to MC
+UPDATE creature_template SET MechanicImmuneMask=1 WHERE entry=16544;
+
