@@ -26,4 +26,6 @@ UPDATE creature_template_addon SET auras='34038' WHERE entry IN(16857);
 -- The quests shouldnt require anything except being level 55.
 UPDATE quest_template SET PrevQuestId=0 WHERE entry=6804 OR entry=6805;
 
+-- Correct data for Doom Lord Kazzak model
+UPDATE creature_model_info SET bounding_radius=9, combat_reach=15.75 WHERE modelid=17887;
 
