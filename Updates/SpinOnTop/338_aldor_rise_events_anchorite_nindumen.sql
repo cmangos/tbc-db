@@ -21,7 +21,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1937801,0,32,1,0,0,0,0,0,'Anchorite Nindumen - Pause Waypoints'),
 
 (1937802,0,32,1,0,0,0,0,0,'Anchorite Nindumen - Pause Waypoints'),
-(1937802,0,0,0,0,2000001157,0,0,0,'Anchorite Nindumen - My friends, please join me in humble supplication to the Light.'), -- 02:05:20.273
+(1937802,0,0,0,0,2000001159,0,0,0,'Anchorite Nindumen - My friends, please join me in humble supplication to the Light.'), -- 02:05:20.273
 (1937802,4,28,8,0,0,19346,10,0,'Harbinger Erothem - Kneel'), -- 02:05:24.610
 (1937802,5,28,8,0,0,0,0,0,'Anchorite Nindumen - Kneel'), -- 02:05:25.826
 
@@ -38,34 +38,34 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1937802,7,28,8,0,0,19138,68437,16,'Anchorite Attendant - Kneel'),
 (1937802,7,28,8,0,0,19138,68439,16,'Anchorite Attendant - Kneel'),
 
-(1937802,16,0,0,0,2000001158,0,0,0,'Anchorite Nindumen - Light that we embrace, we beseech thee...'), -- 02:05:36.840
-(1937802,27,0,0,0,2000001159,0,0,0,'Anchorite Nindumen - Into our struggle against the darkness we have sent our children.'), -- 02:05:47.807
-(1937802,38,0,0,0,2000001160,0,0,0,'Anchorite Nindumen - Please bless and protect them, and grant them success over those who seek to do us harm...'), -- 02:05:58.758
-(1937802,49,0,0,0,2000001161,0,0,0,'Anchorite Nindumen - Continue to bless this, our ancient home, we beg.'), -- 02:06:09.710
-(1937802,60,0,0,0,2000001162,0,0,0,'Anchorite Nindumen - Bless us with tolerance for our elven visitors.'), -- 02:06:20.630
-(1937802,71,0,0,0,2000001163,0,0,0,'Anchorite Nindumen - By the Naaru, may it be so.'), -- 02:06:31.628
+(1937802,16,0,0,0,2000001160,0,0,0,'Anchorite Nindumen - Light that we embrace, we beseech thee...'), -- 02:05:36.840
+(1937802,27,0,0,0,2000001161,0,0,0,'Anchorite Nindumen - Into our struggle against the darkness we have sent our children.'), -- 02:05:47.807
+(1937802,38,0,0,0,2000001162,0,0,0,'Anchorite Nindumen - Please bless and protect them, and grant them success over those who seek to do us harm...'), -- 02:05:58.758
+(1937802,49,0,0,0,2000001163,0,0,0,'Anchorite Nindumen - Continue to bless this, our ancient home, we beg.'), -- 02:06:09.710
+(1937802,60,0,0,0,2000001164,0,0,0,'Anchorite Nindumen - Bless us with tolerance for our elven visitors.'), -- 02:06:20.630
+(1937802,71,0,0,0,2000001165,0,0,0,'Anchorite Nindumen - By the Naaru, may it be so.'), -- 02:06:31.628
 (1937802,75,28,0,0,0,19346,10,0,'Harbinger Erothem - Stand'), -- 02:06:35.153
-(1937802,75,0,0,0,2000001164,19346,10,0,'Harbinger Erothem - May it be so.'), -- 02:06:35.262
+(1937802,75,0,0,0,2000001166,19346,10,0,'Harbinger Erothem - May it be so.'), -- 02:06:35.262
 
 (1937802,77,28,0,0,0,19138,68443,16,'Anchorite Attendant - Stand'), -- 02:06:36.495
 (1937802,77,28,0,0,0,19138,68442,16,'Anchorite Attendant - Stand'),
 (1937802,77,28,0,0,0,19142,68462,16,'Aldor Anchorite - Stand'),
 (1937802,77,28,0,0,0,19142,68463,16,'Aldor Anchorite - Stand'),
 (1937802,77,28,0,0,0,19138,68441,16,'Anchorite Attendant - Stand'),
-(1937802,77,0,0,0,2000001164,19142,68463,16,'Aldor Anchorite - May it be so.'),
-(1937802,77,0,0,0,2000001164,19138,68441,16,'Anchorite Attendant - May it be so.'),
+(1937802,77,0,0,0,2000001166,19142,68463,16,'Aldor Anchorite - May it be so.'),
+(1937802,77,0,0,0,2000001166,19138,68441,16,'Anchorite Attendant - May it be so.'),
 
 (1937802,79,28,0,0,0,19142,68460,16,'Aldor Anchorite - Stand'),
 (1937802,79,28,0,0,0,19138,68438,16,'Anchorite Attendant - Stand'),
 (1937802,79,28,0,0,0,19138,68440,16,'Anchorite Attendant - Stand'),
-(1937802,79,0,0,0,2000001164,19138,68438,16,'Anchorite Attendant - May it be so.'),
+(1937802,79,0,0,0,2000001166,19138,68438,16,'Anchorite Attendant - May it be so.'),
 
 (1937802,80,32,0,0,0,19346,10,0,'Harbinger Erothem - Resume Waypoints'),
 
 (1937802,81,28,0,0,0,19138,68437,16,'Anchorite Attendant - Stand'),
 (1937802,81,28,0,0,0,19138,68439,16,'Anchorite Attendant - Stand'),
-(1937802,81,0,0,0,2000001164,19138,68437,16,'Anchorite Attendant - May it be so.'),
-(1937802,81,0,0,0,2000001164,19138,68439,16,'Anchorite Attendant - May it be so.'),
+(1937802,81,0,0,0,2000001166,19138,68437,16,'Anchorite Attendant - May it be so.'),
+(1937802,81,0,0,0,2000001166,19138,68439,16,'Anchorite Attendant - May it be so.'),
 
 (1937802,82,28,0,0,0,0,0,0,'Anchorite Nindumen - Stand'), -- 02:06:42.439
 (1937802,86,32,0,0,0,0,0,0,'Anchorite Nindumen - Resume Waypoints'); -- 02:06:46.073

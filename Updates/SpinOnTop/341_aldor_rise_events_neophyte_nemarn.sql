@@ -35,16 +35,16 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 
 (1937702,0,32,1,0,0,0,0,0,'Neophyte Nemarn - Pause Waypoints'),
 (1937702,0,1,2,0,0,0,0,0,'Neophyte Nemarn - OneShotBow'), -- 02:14:01.935
-(1937702,4,0,0,0,2000001165,0,0,0,'Neophyte Nemarn - Sir, I am here to deliver my report from the Scryer''s Tier.'), -- 02:14:05.695
-(1937702,12,0,0,0,2000001166,18537,10,3,'Adyen the Lightwarden - Well, out with it, neophyte...'), -- 02:14:13.152
-(1937702,19,0,0,0,2000001167,0,0,0,'Neophyte Nemarn - Sir, it''s impossible to read anything into their actions.'), -- 02:14:20.312
-(1937702,26,0,0,0,2000001168,0,0,0,'Neophyte Nemarn - Their movements are totally chaotic, as if they themselves know not what they are about.'), -- 02:14:27.582
-(1937702,33,0,0,0,2000001169,0,0,0,'Neophyte Nemarn - My apologies, sir. I wish I had more to report.'), -- 02:14:34.867
-(1937702,41,0,0,0,2000001170,18537,10,3,'Adyen the Lightwarden - It is exactly as I expected, soldier. They know we watch them closely.'), -- 02:14:42.417
-(1937702,48,0,0,0,2000001171,18537,10,3,'Adyen the Lightwarden - They mask their intentions with meaningless movements to confuse us.'), -- 02:14:49.640
-(1937702,56,0,0,0,2000001172,18537,10,3,'Adyen the Lightwarden - In time, you may learn to see through their deceptions.'), -- 02:14:56.863
-(1937702,63,0,0,0,2000001173,18537,10,3,'Adyen the Lightwarden - Until then, your presence at your post will keep them on their toes.'), -- 02:15:04.086
-(1937702,70,0,0,0,2000001174,0,0,0,'Neophyte Nemarn - As you command, sir.'), -- 02:15:11.324
+(1937702,4,0,0,0,2000001167,0,0,0,'Neophyte Nemarn - Sir, I am here to deliver my report from the Scryer''s Tier.'), -- 02:14:05.695
+(1937702,12,0,0,0,2000001168,18537,10,3,'Adyen the Lightwarden - Well, out with it, neophyte...'), -- 02:14:13.152
+(1937702,19,0,0,0,2000001169,0,0,0,'Neophyte Nemarn - Sir, it''s impossible to read anything into their actions.'), -- 02:14:20.312
+(1937702,26,0,0,0,2000001170,0,0,0,'Neophyte Nemarn - Their movements are totally chaotic, as if they themselves know not what they are about.'), -- 02:14:27.582
+(1937702,33,0,0,0,2000001171,0,0,0,'Neophyte Nemarn - My apologies, sir. I wish I had more to report.'), -- 02:14:34.867
+(1937702,41,0,0,0,2000001172,18537,10,3,'Adyen the Lightwarden - It is exactly as I expected, soldier. They know we watch them closely.'), -- 02:14:42.417
+(1937702,48,0,0,0,2000001173,18537,10,3,'Adyen the Lightwarden - They mask their intentions with meaningless movements to confuse us.'), -- 02:14:49.640
+(1937702,56,0,0,0,2000001174,18537,10,3,'Adyen the Lightwarden - In time, you may learn to see through their deceptions.'), -- 02:14:56.863
+(1937702,63,0,0,0,2000001175,18537,10,3,'Adyen the Lightwarden - Until then, your presence at your post will keep them on their toes.'), -- 02:15:04.086
+(1937702,70,0,0,0,2000001176,0,0,0,'Neophyte Nemarn - As you command, sir.'), -- 02:15:11.324
 (1937702,73,1,2,0,0,0,0,0,'Neophyte Nemarn - OneShotBow'), -- 02:15:14.834
 (1937702,73,32,0,0,0,0,0,0,'Neophyte Nemarn - Resume Waypoints'); -- 02:15:14.834
 
