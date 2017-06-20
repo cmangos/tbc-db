@@ -70,4 +70,19 @@ DELETE FROM gossip_menu WHERE entry=7501;
 INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
 ('7501', '9097', '0', '0');
 
+-- force faction auras after completing quests to make the mobs neutral
+DELETE FROM conditions WHERE condition_entry IN(1191,1192,1193,1194);
+INSERT INTO conditions(condition_entry, type, value1, value2) VALUES
+('1191', '8', '10182', '0'),
+('1192', '8', '10305', '0'),
+('1193', '8', '10306', '0'),
+('1194', '8', '10307', '0');
+
+DELETE FROM spell_area WHERE spell IN(36216,36217,36218,36219);
+INSERT INTO spell_area(spell,area,condition_id,gender,autocast) VALUES
+(36216,3523,1191,2,1),
+(36217,3523,1192,2,1),
+(36218,3523,1193,2,1),
+(36219,3523,1194,2,1);
+
 
