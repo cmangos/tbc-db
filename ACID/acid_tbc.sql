@@ -19920,25 +19920,38 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Raliq the Drunk
 ('1858501','18585','0','0','100','1','3000','5000','12000','16000','11','10966','1','0','0','0','0','0','0','0','0','0','Raliq the Drunk - Cast Uppercut'),
 -- Spymistress Mehlisah Highcrown
-('1889301','18893','1','0','100','1','5000','25000','5000','15000','5','1','0','0','0','0','0','0','0','0','0','0','Spymistress Mehlisah Highcrown - Random Talk Emote OOC'),
+('1889301','18893','1','0','100','33','6000','10000','6000','10000','5','1','0','0','10','273','274','0','10','5','6','0','Spymistress Mehlisah Highcrown - Random Emote OOC'),
+('1889302','18893','1','0','100','0','500','500','0','0','45','5','3','0','0','0','0','0','0','0','0','0','Spymistress Mehlisah Highcrown - Send AI Event 5 (A)'),
 -- Skettis Outcast
-('1907501','19075','1','0','100','1','5000','25000','5000','15000','5','1','0','0','0','0','0','0','0','0','0','0','Skettis Outcast - Random Talk Emote OOC'),
+('1907501','19075','30','0','100','0','5','19075','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Skettis Outcast - Set Phase 1 on Receive AI Event 5 (A)'),
+('1907502','19075','1','1','100','33','4000','8000','4000','8000','10','1','11','15','0','0','0','0','0','0','0','0','Skettis Outcast - Random Emote OOC (Phase 1)'),
+-- High Elf Refugee
+('1907601','19076','30','6','100','0','5','18893','0','0','0','0','0','0','22','1','0','0','0','0','0','0','High Elf Refugee - Set Phase 1 on Receive AI Event 5 (A)'),
+('1907602','19076','30','6','100','0','6','19076','0','0','0','0','0','0','22','2','0','0','0','0','0','0','High Elf Refugee - Set Phase 2 on Receive AI Event 6 (A)'),
+('1907603','19076','1','5','100','33','8000','16000','8000','16000','5','1','0','0','10','273','274','0','10','5','6','0','High Elf Refugee - Random Emote OOC (Phase 1)'),
+('1907604','19076','1','3','100','33','1200000','1800000','1200000','1800000','47','0','0','0','47','1','0','0','47','3','0','0','High Elf Refugee - Random Stand State OOC (Phase 2)'),
+-- Broken Refugee
+('1912001','19120','30','2','100','0','5','18893','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Broken Refugee - Set Phase 1 on Receive AI Event 5 (A)'),
+('1912002','19120','1','1','100','33','8000','16000','8000','16000','5','1','0','0','10','273','274','0','10','5','6','0','Broken Refugee - Random Emote OOC (Phase 1)'),
 -- Mag'har Refugee
-('1914401','19144','1','0','100','1','15000','25000','10000','20000','5','1','0','0','0','0','0','0','0','0','0','0','Mag\'har Refugee - Random Talk Emote OOC'),
+('1914401','19144','30','6','100','0','5','18893','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Mag\'har Refugee - Set Phase 1 on Receive AI Event 5 (A)'),
+('1914402','19144','30','6','100','0','6','19144','0','0','0','0','0','0','22','2','0','0','0','0','0','0','Mag\'har Refugee - Set Phase 2 on Receive AI Event 6 (A)'),
+('1914403','19144','1','5','100','33','8000','16000','8000','16000','5','1','0','0','10','273','274','0','10','5','6','0','Mag\'har Refugee - Random Emote OOC (Phase 1)'),
+('1914404','19144','1','3','100','33','1200000','1800000','1200000','1800000','47','0','0','0','47','1','0','0','47','3','0','0','Mag\'har Refugee - Random Stand State OOC (Phase 2)'),
 -- Orc Refugee
-('1915001','19150','1','0','100','1','15000','25000','10000','20000','5','1','0','0','0','0','0','0','0','0','0','0','Orc Refugee - Random Talk Emote OOC'),
+('1915001','19150','30','6','100','0','5','18893','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Orc Refugee - Set Phase 1 on Receive AI Event 5 (A)'),
+('1915002','19150','30','6','100','0','6','19150','0','0','0','0','0','0','22','2','0','0','0','0','0','0','Orc Refugee - Set Phase 2 on Receive AI Event 6 (A)'),
+('1915003','19150','1','5','100','33','8000','16000','8000','16000','5','1','0','0','10','273','274','0','10','5','6','0','Orc Refugee - Random Emote OOC (Phase 1)'),
+('1915004','19150','1','3','100','33','1200000','1800000','1200000','1800000','47','0','0','0','47','1','0','0','47','3','0','0','Orc Refugee - Random Stand State OOC (Phase 2)'),
 -- Neophyte Combatant
 ('1916101','19161','30','0','100','1','5','19337','0','0','47','8','0','0','22','1','0','0','0','0','0','0','Neophyte Combatant - Kneel and Set Phase 1 on Receive AI Event A'),
 ('1916102','19161','1','1','100','1','45000','45000','45000','45000','47','0','0','0','22','0','0','0','0','0','0','0','Neophyte Combatant - Turn off kneel and set Phase 0'),
 -- Peasant Refugee
-('1917001','19170','1','0','100','1','10000','15000','15000','25000','5','1','0','0','0','0','0','0','0','0','0','0','Peasant Refugee - Random Talk Emote OOC'),
--- Cro Threadstrong
-('1919601','19196','1','0','100','1','900000','900000','900000','960000','1','-264','0','0','0','0','0','0','0','0','0','0','Cro Threadstrong - Gossip Speech OOC'),
-('1919602','19196','1','0','100','1','660000','660000','660000','780000','1','-267','0','0','0','0','0','0','0','0','0','0','Cro Threadstrong - Gossip Yell OOC'),
+('1917001','19170','30','2','100','0','5','18893','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Peasant Refugee - Set Phase 1 on Receive AI Event 5 (A)'),
+('1917002','19170','1','1','100','33','8000','16000','8000','16000','5','1','0','0','10','273','274','0','10','5','6','0','Peasant Refugee - Random Emote OOC (Phase 1)'),
+-- Cro Threadstrong (19196) NSR
 -- Grand Anchorite Almonen (19216)
--- Granny Smith
-('1922301','19223','1','0','100','1','210000','210000','210000','210000','1','-255','0','0','0','0','0','0','0','0','0','0','Granny Smith - Gossip Speech OOC'),
-('1922302','19223','1','0','100','1','600000','600000','600000','600000','1','-263','0','0','0','0','0','0','0','0','0','0','Granny Smith - Gossip Speech OOC'),
+-- Granny Smith (19223) NSR
 -- Griftah
 ('1922701','19227','10','0','75','1','1','30','120000','120000','1','-258','-257','-252','0','0','0','0','0','0','0','0','Griftah - Gossip Speech OOC'),
 ('1922702','19227','10','0','20','1','1','30','500000','500000','1','-262','-258','-257','0','0','0','0','0','0','0','0','Griftah - Gossip Speech OOC'),
@@ -19953,10 +19966,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Harbinger Haronem
 ('1947501','19475','1','0','100','1','6000','6000','6000','6000','5','1','0','0','0','0','0','0','0','0','0','0','Harbinger Haronem - Talk Emote OOC'),
 ('1947502','19475','1','0','100','1','39000','39000','300000','300000','1','-832','0','0','0','0','0','0','0','0','0','0','Harbinger Haronem - Say OOC (Part of Whirligig Wafflefry Conversation)'),
+-- Madame Ruby
+('1966301','19663','1','2','100','1','40000','120000','40000','120000','47','1','0','0','22','1','0','0','0','0','0','0','Madame Ruby - Set Stand State Sit and Set Phase 1 OOC (Phase 0)'),
+('1966302','19663','1','1','100','1','40000','120000','40000','120000','47','0','0','0','22','0','0','0','0','0','0','0','Madame Ruby - Set Stand State Stand and Set Phase 0 OOC (Phase 1)'),
 -- Muffin Man Moser
 ('1966401','19664','1','0','100','1','480000','480000','480000','480000','1','-269','0','0','0','0','0','0','0','0','0','0','Muffin Man Moser - Say OOC'),
 ('1966402','19664','1','0','100','1','490000','490000','490000','490000','1','-270','0','0','5','7','0','0','0','0','0','0','Muffin Man Moser - Say and Emote OOC'),
 ('1966403','19664','1','0','100','1','345000','345000','345000','465000','1','-271','-272','0','0','0','0','0','0','0','0','0','Muffin Man Moser - Say OOC'),
+-- Fantei
+('1967801','19678','1','2','100','1','40000','120000','40000','120000','47','1','0','0','22','1','0','0','0','0','0','0','Fantei - Set Stand State Sit and Set Phase 1 OOC (Phase 0)'),
+('1967802','19678','1','1','100','1','40000','120000','40000','120000','47','0','0','0','22','0','0','0','0','0','0','0','Fantei - Set Stand State Stand and Set Phase 0 OOC (Phase 1)'),
 -- Eye of the Storm Emissary
 ('2201301','22013','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','Eye of the Storm Emissary - Random Laugh or Cry Emote'),
 ('2201302','22013','1','0','100','1','5000','25000','10000','30000','5','1','0','0','0','0','0','0','0','0','0','0','Eye of the Storm Emissary - Talk Emote OOC'),
@@ -19967,6 +19986,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2294001','22940','1','0','100','1','156000','156000','156000','276000','1','-256','-259','0','0','0','0','0','0','0','0','0','Grok - Say OOC'),
 ('2294002','22940','1','0','100','1','270000','270000','270000','270000','1','-260','-261','-268','0','0','0','0','0','0','0','0','Grok - Say OOC'),
 ('2294003','22940','1','0','100','1','890000','890000','890000','950000','1','-266','0','0','0','0','0','0','0','0','0','0','Grok - Say OOC'),
+-- The Rokk
+('2439301','24393','1','0','100','1','80000','220000','80000','220000','1','-1507','-1508','-1509','22','1','0','0','0','0','0','0','The Rokk - Random Say and Set Phase 1 OOC'),
+('2439302','24393','1','1','100','1','8000','8000','8000','8000','22','0','0','0','45','5','7','0','0','0','0','0','The Rokk - Set Phase 0 and Send AI Event 5 (A) OOC (Phase 1)'),
 -- Vazruden the Herald Image
 ('2441001','24410','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Vazruden the Herald Image - Cast Heroic Image Channel OOC'),
 -- Shattered Hand Centurion Image
@@ -19977,6 +19999,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2441401','24414','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Warchief Kargath Bladefist Image - Cast Heroic Image Channel OOC'),
 -- Coilfang Myrmidon Image
 ('2441501','24415','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Coilfang Myrmidon Image - Cast Non-Heroic Image Channel OOC'),
+-- Grisy Spicecrackle
+('2441601','24416','30','0','100','1','5','24393','0','0','1','-1510','-1511','-1512','0','0','0','0','0','0','0','0','Grisy Spicecrackle - Random Say on Receive AI Event 5 (A)'),
 -- Quagmirran Image
 ('2441901','24419','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Quagmirran Image - Cast Heroic Image Channel OOC'),
 -- The Black Stalker Image
@@ -20011,6 +20035,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2443401','24434','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Arcatraz Sentinel Image - Cast Non-Heroic Image Channel OOC'),
 -- Harbinger Skyriss Image
 ('2443501','24435','1','0','100','0','1000','1000','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Harbinger Skyriss Image - Cast Heroic Image Channel OOC'),
+-- Consortium Assistant
+('2443701','24437','30','0','100','33','5','24437','0','0','48','2','3','0','48','2','4','0','48','2','5','0','Consortium Assistant - Set Random PathID on Receive AI Event 5 (A)'),
+('2443702','24437','30','0','100','33','6','24437','0','0','48','2','1','0','48','2','2','0','0','0','0','0','Consortium Assistant - Set Random PathID on Receive AI Event 6 (B)'),
+('2443703','24437','30','0','100','1','5','24437','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Consortium Assistant - Set Phase 1 on Receive AI Event 5 (A)'),
+('2443704','24437','30','0','100','1','6','24437','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Consortium Assistant - Set Phase 1 on Receive AI Event 6 (B)'),
+('2443705','24437','30','0','100','33','8','24437','0','0','5','233','0','0','11','43778','0','0','0','0','0','0','Consortium Assistant - Set Emote State OR Cast Channel Cast Directed (no effects) on Receive AI Event 8 (C)'),
+('2443706','24437','1','5','100','1','140000','250000','140000','250000','51','0','0','0','22','0','0','0','52','3','0','0','Consortium Assistant - Resume Waypoints, Set Phase 0 and Cancel Channeling OOC (Phase 1)'),
 -- Sister of Torment Image
 ('2485401','24854','1','0','100','0','1000','1000','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Sister of Torment Image - Cast Non-Heroic Image Channel OOC'),
 -- Kael'thas Sunstrider Image
@@ -31346,7 +31377,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-252','C\'mere, $r. Ya don\'t want to be riskin\' yerself in a dungeon, do ya? Filthy work, and for what? Some worthless trinket? Nah, what ya need be one of my amulets. Guarenteed to work! ','0','0','0','19227','0'),
 ('-253','Dangerous out there, innit? Know what ya need? Protection. I can help ya defy death itself! Ya wear this madstone \'round yer neck, see, and then ya be able to come back if ya find yerself in the spirit world! Just a quick jaunt to yer corpse and up ya com','0','0','0','19227','0'),
 ('-254','Amazing Amulets! Incredible curios! The newfangled jewelcrafters be havin\' nothin\' on the tried and true mystical methods of ol\' Griftah! Improve yerself through these magical talismans for a bargain price!','0','0','0','19227','0'),
-('-255','I could have sworn I had more apples. Grok!','0','0','0','19223','0'),
+-- Reuse 255
 ('-256','If no one help. Grok smash!','0','0','0','22940','0'),
 ('-257','Look over here, $c! I got somethin\' for ya. Just what ya need. It\'s soap, right... and it\'s on a rope! No offense, man, but yer a little ripe, you know what I\'m sayin\'? ','0','0','0','19227','0'),
 ('-258','Hey! Hey, $r! I be havin\' just the thing for ya. Ya ever see a Tikbalang? Frightenin\' creatures. Prone to stealin\' ya away. What ya need is my tikbaland wards. Guaranteed to ward away all tikbalangs!','0','0','0','19227','0'),
@@ -31354,11 +31385,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-260','Mog\'dorg the Wizened tell Grok go to city, get help for Bloodmaul. Grok go.','0','0','0','22940','0'),
 ('-261','Bladespire clan not fight fair. Have Gronn to help dem. You go to Blade\'s Edge Mountains. Talk to Mog\'dorg the Wizened. Kill Gromm.','0','0','0','22940','0'),
 ('-262','Ya look tired, $c. I be havin\' somethin\' for ya. These amulets, they can help ya leap obstacles and swim through the rivers like ya be born to it. They energize the food ya be eatin\'. Makin\' yer wounds close before yer eyes!','0','0','0','19227','0'),
-('-263','What is that poor orc yelling about? Someone should see what is going on.','0','0','0','19223','0'),
-('-264','I feel that war is fast approaching. The fruit vendor has enlisted to help an ogre. I shall have to enlist help as well.','0','0','0','19196','0'),
+-- Reuse 263-264
 ('-265','Ya look lovesick. Special someone be gettin\' ya down, eh? No worries, no worries. Ya get this medallion from me, ya wear it when ya see \'em and they be all over ya, sweetheart!','0','0','0','19227','0'),
 ('-266','Me hungry. Fruit look tasty.','0','0','0','22940','0'),
-('-267','FRUIT VENDOR!!! Your cart is still in our way! We will give you one more hour to move it from our area. Do not test our patience anymore!','0','1','0','19196','0'),
+-- Reuse 267
 ('-268','Grok get angry if puny ones not go to Blade\'s Edge and talk to Mog\'dorg!','0','0','0','22940','0'),
 ('-269','Nothing like a tankard full to wash down one of my magnificent muffins.','0','0','0','19664','0'),
 ('-270','Yea, that hit the spot. Muffins for sale! Get your fresh muffins right here!','0','0','0','19664','0'),
@@ -32300,7 +32330,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1504','You have not seen the last of me fools! All will be consumed in the end!','0','6','0','Baron Charr','0'),
 ('-1505','Tiny mortals - me HERE! Doom you meet!','0','6','0','Avalanchion','0'),
 ('-1506','Where you hiding? Me find you!','0','6','0','Avalanchion','0'),
--- PLEASE RE-USE 1507 - 1516
+('-1507','Put a little elbow grease into it!  And maybe some regular grease, while you\'re at it.  Those mag\'har sure like the clefthoof fat.','0','0','0','24393','22'),
+('-1508','Are those ingredients chopped up and cooked?  What\'s the hold up?!','0','0','0','24393','22'),
+('-1509','We have a dozen more dishes to finish today!  Get a move on!','0','0','0','24393','22'),
+('-1510','Can\'t make water boil any faster, genius!','0','0','0','24416','15'),
+('-1511','Yeah, yeah!  Shut yer trap and let me finish this stew!','0','0','0','24416','15'),
+('-1512','It\'ll be done when it\'s done, darn it!','0','0','0','24416','15'),
+-- PLEASE RE-USE 1513 - 1516
 ('-1517','Muahahahaha! What is this pathetic spectacle I see before me? Well, what are you waiting for? I hunger, and you look as if you may make for a passable appetizer!','0','1','0','16042','0'),
 ('-1518','I\'ve gone easy on you thus far, but now you bore me. Witness the magnificence of my power, and despair!','0','1','0','16042','0'),
 ('-1519','I will not die again! Not to the likes of you!!','0','1','0','16042','0'),
