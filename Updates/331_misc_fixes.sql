@@ -85,4 +85,7 @@ INSERT INTO spell_area(spell,area,condition_id,gender,autocast) VALUES
 (36218,3523,1193,2,1),
 (36219,3523,1194,2,1);
 
+-- Remove Nefarian loot from Ragnaros
+DELETE FROM creature_loot_template WHERE entry IN(11502) AND item=34107 AND mincountOrRef=-34107;
+
 
