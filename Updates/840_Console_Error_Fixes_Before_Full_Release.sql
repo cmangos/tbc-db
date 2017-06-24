@@ -734,4 +734,72 @@ DELETE a FROM creature_loot_template a WHERE not exists (select entry from refer
 DELETE a FROM gameobject_loot_template a WHERE not exists (select entry from reference_loot_template b where a.item=b.entry) and (-a.mincountOrRef)=a.item and -a.mincountOrRef<>0;
 DELETE a FROM item_loot_template a WHERE not exists (select entry from reference_loot_template b where a.item=b.entry) and (-a.mincountOrRef)=a.item and -a.mincountOrRef<>0;
 
+UPDATE creature SET curhealth = 2762 WHERE guid IN(140775);
+UPDATE creature SET curhealth = 1605 WHERE guid IN(128984);
+UPDATE creature SET curhealth = 852 WHERE guid IN(190307);
+UPDATE creature SET curhealth = 8072 WHERE guid IN(160096);
+UPDATE creature SET curhealth = 7863 WHERE guid IN(160095);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3528);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3529);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3530);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3531);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3532);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3533);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3526);
+UPDATE creature SET curhealth = 1554 WHERE guid IN(190205);
+UPDATE creature SET curhealth = 13311 WHERE guid IN(43520);
+UPDATE creature SET curhealth = 13278 WHERE guid IN(43517);
+UPDATE creature SET curhealth = 13387 WHERE guid IN(43512);
+UPDATE creature SET curhealth = 13183 WHERE guid IN(43510);
+UPDATE creature SET curhealth = 852 WHERE guid IN(190306);
+UPDATE creature SET curhealth = 7866 WHERE guid IN(43490);
+UPDATE creature SET curhealth = 1554 WHERE guid IN(190204);
+UPDATE creature SET curhealth = 1554 WHERE guid IN(190141);
+UPDATE creature SET curhealth = 1554 WHERE guid IN(190140);
+UPDATE creature SET curhealth = 573 WHERE guid IN(190139);
+UPDATE creature SET curhealth = 573 WHERE guid IN(190138);
+UPDATE creature SET curhealth = 1554 WHERE guid IN(190133);
+UPDATE creature SET curhealth = 1554 WHERE guid IN(190132);
+UPDATE creature SET curhealth = 8014 WHERE guid IN(43463);
+UPDATE creature SET curhealth = 7866 WHERE guid IN(42888);
+UPDATE creature SET curhealth = 573 WHERE guid IN(190203);
+UPDATE creature SET curhealth = 95940 WHERE guid IN(151018);
+UPDATE creature SET curhealth = 95940 WHERE guid IN(151017);
+UPDATE creature SET curhealth = 95940 WHERE guid IN(151016);
+UPDATE creature SET curhealth = 95940 WHERE guid IN(151015);
+UPDATE creature SET curhealth = 95940 WHERE guid IN(151013);
+UPDATE creature SET curhealth = 95940 WHERE guid IN(151014);
+UPDATE creature SET curhealth = 95940 WHERE guid IN(151012);
+UPDATE creature SET curhealth = 95940 WHERE guid IN(151010);
+UPDATE creature SET curhealth = 95940 WHERE guid IN(151011);
+UPDATE creature SET curhealth = 8682 WHERE guid IN(57942);
+UPDATE creature SET curhealth = 4050 WHERE guid IN(86034);
+UPDATE creature SET curhealth = 5600 WHERE guid IN(68393);
+UPDATE creature SET curhealth = 5600 WHERE guid IN(68394);
+UPDATE creature SET curhealth = 5744 WHERE guid IN(96594);
+UPDATE creature SET curhealth = 2762 WHERE guid IN(140775);
+UPDATE creature_template SET MinLevelHealth=2762,MaxLevelHealth=2762,HealthMultiplier=2.3 WHERE entry IN(8394);
+UPDATE creature SET curhealth = 1605 WHERE guid IN(128984);
+UPDATE creature SET curhealth = 852 WHERE guid IN(190307);
+UPDATE creature SET curhealth = 7599 WHERE guid IN(160096);
+UPDATE creature SET curhealth = 7863 WHERE guid IN(160095);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3528);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3529);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3530);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3531);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3532);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3533);
+UPDATE creature SET curhealth = 8352 WHERE guid IN(3526);
+UPDATE creature SET curhealth = 1554 WHERE guid IN(190205);
+UPDATE creature SET curhealth = 13311 WHERE guid IN(43520);
+UPDATE creature SET curhealth = 13278 WHERE guid IN(43517);
+UPDATE creature SET curhealth = 13387 WHERE guid IN(43512);
+UPDATE creature SET curhealth = 13183 WHERE guid IN(43510);
+UPDATE creature SET curhealth = 852 WHERE guid IN(190306);
+
+DELETE FROM creature_addon WHERE guid IN(68923,68924,68925,75829,79020);
+
+DELETE FROM npc_gossip WHERE npc_guid IN(31884,84093,84092,84091,84089,84088,84087,84086)
+
+
 

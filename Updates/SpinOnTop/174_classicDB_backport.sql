@@ -959,7 +959,7 @@ INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
 (6535, 7738, 0, 3174);
 DELETE FROM gossip_menu_option WHERE menu_id = 6535;
 INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, condition_id) VALUES 
-(6535, 0, 0, 'Smear the ash on my face like war paint!', 1, 0, -1, 0, 6535, 0, 0, NULL, 1079);
+(6535, 0, 0, 'Smear the ash on my face like war paint!', 1, 0, -1, 0, 6535, 0, 0, NULL, 3173);
 DELETE FROM dbscripts_on_gossip WHERE id = 6535;
 INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES 
 (6535, 0, 15, 24705, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Invocation of the Wickerman');
