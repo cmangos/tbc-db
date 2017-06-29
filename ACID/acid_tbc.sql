@@ -18539,16 +18539,28 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =======
 -- Nagrand
 -- =======
--- Boulderfist Crusher (Need to research spells)
+-- Boulderfist Crusher (Need to research combat spells)
 ('1713401','17134','30','0','30','33','5','18369','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Boulderfist Crusher - Set Phase 1 on Receive AI Event 5 (A)'),
 ('1713402','17134','1','1','100','33','3000','3000','3000','3000','1','-1125','-1126','0','1','-1127','-1128','0','0','0','0','0','Boulderfist Crusher - Random Say OOC (Phase 1)'),
 ('1713403','17134','1','1','100','1','3000','3000','3000','3000','22','0','0','0','0','0','0','0','0','0','0','0','Boulderfist Crusher - Set Phase 0 OOC (Phase 1)'),
--- Boulderfist Mystic (Need to research spells)
+-- Boulderfist Mystic (Need to research combat spells)
 ('1713501','17135','30','0','30','33','5','18369','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 1 on Receive AI Event 5 (A)'),
 ('1713502','17135','1','5','100','33','3000','3000','3000','3000','1','-1125','-1126','0','1','-1127','-1128','0','0','0','0','0','Boulderfist Mystic - Random Say OOC (Phase 1)'),
 ('1713503','17135','1','5','100','1','3000','3000','3000','3000','22','0','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 0 OOC (Phase 1)'),
 ('1713504','17135','30','0','100','33','6','17135','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 2 on Receive AI Event 6 (B)'),
 ('1713505','17135','1','3','100','33','4000','6000','4000','6000','5','396','6','0','5','273','274','0','0','0','0','0','Boulderfist Mystic - Random Emote OOC (Phase 2)'),
+-- Boulderfist Warrior (Need to research combat spells)
+('1713601','17136','30','0','30','33','5','20812','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 1 on Receive AI Event 5 (A)'),
+('1713602','17136','1','5','100','33','3000','3000','3000','3000','1','-1125','-1126','0','1','-1127','-1128','0','0','0','0','0','Boulderfist Mystic - Random Say OOC (Phase 1)'),
+('1713603','17136','1','5','100','1','3000','3000','3000','3000','22','0','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 0 OOC (Phase 1)'),
+('1713604','17136','30','0','100','33','6','17136','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 2 on Receive AI Event 6 (B)'),
+('1713605','17136','1','3','100','33','4000','6000','4000','6000','5','396','6','0','5','273','274','0','0','0','0','0','Boulderfist Mystic - Random Emote OOC (Phase 2)'),
+-- Boulderfist Mage (Need to research combat spells)
+('1713701','17137','30','0','30','33','5','20812','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 1 on Receive AI Event 5 (A)'),
+('1713702','17137','1','5','100','33','3000','3000','3000','3000','1','-1125','-1126','0','1','-1127','-1128','0','0','0','0','0','Boulderfist Mystic - Random Say OOC (Phase 1)'),
+('1713703','17137','1','5','100','1','3000','3000','3000','3000','22','0','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 0 OOC (Phase 1)'),
+('1713704','17137','30','0','100','33','6','17137','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Boulderfist Mystic - Set Phase 2 on Receive AI Event 6 (B)'),
+('1713705','17137','1','3','100','33','4000','6000','4000','6000','5','396','6','0','5','273','274','0','0','0','0','0','Boulderfist Mystic - Random Emote OOC (Phase 2)'),
 -- Goretooth
 ('1714401','17144','9','0','100','1','0','5','20000','24000','11','3604','1','0','0','0','0','0','0','0','0','0','Goretooth - Cast Tendon Rip'),
 ('1714402','17144','0','0','100','1','8000','14000','15000','21000','11','39215','1','0','0','0','0','0','0','0','0','0','Goretooth - Cast Gushing Wound'),
@@ -18741,6 +18753,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1914903','19149','1','1','100','33','5000','250000','5000','250000','1','-417','-418','-419','1','-420','-421','-422','0','0','0','0','Telaari Citizen - Random Say (Phase 1)'),
 -- Deathshadow Acolyte
 ('1948001','19480','0','0','100','1','5000','7000','11000','15000','11','31293','0','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Consuming Shadows'),
+-- Corki
+('2081201','20812','1','0','100','1','70000','90000','70000','90000','22','1','0','0','45','5','17','0','0','0','0','0','Corki - Set Phase 1 and Throw AI Event 5 (A) OOC'),
+('2081202','20812','1','1','100','33','0','0','0','0','0','0','0','0','1','-1513','-1514','0','1','-1515','-1516','0','Corki - Random Say OOC (Phase 1)'),
+('2081203','20812','1','1','100','1','500','500','500','500','22','0','0','0','0','0','0','0','0','0','0','0','Corki - Set Phase 0 (Phase 1)'),
 -- Legion Fel Cannon
 ('2123301','21233','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - OOC - Prevent Combat Movement'),
 ('2123302','21233','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
@@ -32336,7 +32352,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1510','Can\'t make water boil any faster, genius!','0','0','0','24416','15'),
 ('-1511','Yeah, yeah!  Shut yer trap and let me finish this stew!','0','0','0','24416','15'),
 ('-1512','It\'ll be done when it\'s done, darn it!','0','0','0','24416','15'),
--- PLEASE RE-USE 1513 - 1516
+('-1513','Hey fatso, is there any reason why you insist on living in a dung filled hole in the wall?','0','0','0','20812','0'),
+('-1514','Can I get some food, please??? This is outrageous!','0','0','0','20812','0'),
+('-1515','I don\'t know what smells worse: Your feet or a dung-filled cheese and fish fillet.','0','0','0','20812','0'),
+('-1516','Congratulations. It smells worse in here than in the ruins.','0','0','0','20812','0'),
 ('-1517','Muahahahaha! What is this pathetic spectacle I see before me? Well, what are you waiting for? I hunger, and you look as if you may make for a passable appetizer!','0','1','0','16042','0'),
 ('-1518','I\'ve gone easy on you thus far, but now you bore me. Witness the magnificence of my power, and despair!','0','1','0','16042','0'),
 ('-1519','I will not die again! Not to the likes of you!!','0','1','0','16042','0'),
