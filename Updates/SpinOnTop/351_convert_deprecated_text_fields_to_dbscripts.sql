@@ -90,6 +90,7 @@ UPDATE `creature_movement_template` SET `script_id`=351307, `textid1`=0, `textid
 -- This guy is a follower of another NPC and isn't using his path. Delete it
 DELETE FROM creature_movement WHERE id=87089;
 DELETE FROM dbscripts_on_creature_movement WHERE id=351101;
+DELETE FROM db_script_string WHERE entry=2000005168;
 
 -- This guy already had script updated to creature_movement_template, but creature_movement waypoints were not removed
 DELETE FROM `creature_movement` WHERE `id`=63614;
