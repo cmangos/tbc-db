@@ -40,5 +40,6 @@ UPDATE creature_template_addon SET auras='7743' WHERE entry=703;
 DELETE FROM creature_addon WHERE guid IN(76661,76663,76664,76669,76670,76675,76676);
 UPDATE creature_template SET LootId=0 WHERE entry=17887;
 DELETE FROM pickpocketing_loot_template WHERE entry=21387;
+UPDATE creature_template SET PickpocketLootId=0 WHERE entry IN(21387);
 
 
