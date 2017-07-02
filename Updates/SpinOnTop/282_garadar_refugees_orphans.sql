@@ -330,6 +330,8 @@ DELETE FROM `creature` WHERE `guid` IN(84588,84717,84718);
 DELETE FROM `creature_movement` WHERE `id` IN(84588,84717,84718);
 -- Delete the dbscript from old path, we'll create a new one.
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=1829601;
+-- Also delete the text, now done in EventAI
+DELETE FROM db_script_string WHERE entry=2000005147;
 -- Update their spawn position for linking formation
 UPDATE `creature` SET `position_x`=-1363.474365,`position_y`=7168.391113,`position_z`=33.544312,`orientation`=4.05506,`spawndist`=0,`MovementType`=2 WHERE `guid`=65634;
 UPDATE `creature` SET `position_x`=-1361.136719,`position_y`=7170.930664,`position_z`=33.538593,`orientation`=4.05506,`spawndist`=0,`MovementType`=0 WHERE `guid`=65635;
