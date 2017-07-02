@@ -28,6 +28,10 @@ INSERT INTO dbscripts_on_spell(id, delay, command, datalong, datalong2, buddy_en
 ('29188', '0', '15', '29190', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'teleport - final chamber'),
 ('39566', '0', '15', '39567', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'teleport - Karazhan - Aran room');
 
+ALTER TABLE db_version CHANGE COLUMN required_s2344_01_mangos_gameobject_template required_s2345_01_mangos_instance_encounters bit;
+ALTER TABLE db_version CHANGE COLUMN required_s2345_01_mangos_instance_encounters required_s2346_01_mangos_instance_template bit;
+ALTER TABLE db_version CHANGE COLUMN required_s2346_01_mangos_instance_template required_s2347_01_mangos_dbscript_string_template bit; -- here because voa has different origin time
+ALTER TABLE db_version CHANGE COLUMN required_s2347_01_mangos_dbscript_string_template required_s2347_02_mangos_creature_movement_template bit;
 
 DROP TABLE IF EXISTS `instance_encounters`;
 CREATE TABLE `instance_encounters` (
