@@ -7,8 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="TBCDB_1.5.0_cmangos-tbc.sql"
-DB_TITLE="v1.5"
+FULLDB_FILE="TBCDB_1.6.0_Vengeance-TBC.sql"
+DB_TITLE="v1.6"
 NEXT_MILESTONES="0.12.4 0.13"
 
 #internal use
@@ -306,35 +306,6 @@ fi
 echo "  ACID successfully applied"
 echo
 echo
-
-## SpinOnTop Updates
-if [ -d "${ADDITIONAL_PATH}Updates/SpinOnTop" ]
-then
-  COUNT=0
-  if [ "$(ls ${ADDITIONAL_PATH}Updates/SpinOnTop/*.sql)" ]
-  then
-    echo "> Trying to apply SpinOnTop updates"
-    for UPDATE in "${ADDITIONAL_PATH}Updates/SpinOnTop/"*.sql
-    do
-      echo "   process update $UPDATE"
-      $MYSQL_COMMAND < "$UPDATE"
-      if [[ $? != 0 ]]
-      then
-        echo "ERROR: cannot apply $UPDATE"
-        exit 1
-      fi
-      ((COUNT++))
-    done
-    if [ "$COUNT" != 0 ]
-    then
-      echo "  Applied $COUNT SpinOnTop DB updates successfully"
-    else
-      echo "  Did not found any new SpinOnTop DB update to apply"
-    fi
-    echo
-    echo
-  fi
-fi
 
 #
 #    DEVELOPERS UPDATES
