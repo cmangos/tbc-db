@@ -1,3 +1,9 @@
+-- -------------------------- VoA ONLY
+DELETE FROM dbscripts_on_event WHERE id=14461;
+UPDATE `creature_template` SET `MinLevel`='70', `MaxLevel`='70', `MinLevelHealth`='6986', `MaxLevelHealth`='6986', `Expansion`='1' WHERE `Entry`=22269;
+DELETE FROM dbscripts_on_creature_movement WHERE id=22268;
+-- ---------------------------
+
 -- ------------------------
 -- Quest Script 10724
 -- ------------------------

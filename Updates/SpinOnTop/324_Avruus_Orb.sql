@@ -3,7 +3,7 @@ DELETE FROM gossip_menu_option where menu_id=20282;
 DELETE FROM gossip_menu where entry=20282;
 UPDATE gossip_menu SET script_id=1021901 WHERE entry IN(10219);
 UPDATE gossip_menu_option SET action_script_id=1021902 WHERE menu_id IN(10219);
-DELETE FROM dbscripts_on_gossip where id in(196608,196609);
+DELETE FROM dbscripts_on_gossip where id in(196608,196609,10219);
 DELETE FROM dbscripts_on_gossip where id in(1021901,1021902);
 INSERT INTO dbscripts_on_gossip(id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 ('1021901', '1', '10', '17085', '180000', '0', '0', '0', '0', '0', '0', '0', '0', '-1323.91', '4042.45', '116.626', '0.296706', 'Summon aeranas'),
