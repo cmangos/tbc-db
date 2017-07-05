@@ -91,4 +91,10 @@ DELETE FROM creature_loot_template WHERE entry IN(11502) AND item=34107 AND minc
 -- Illhoof's Demon Chains should be immune to everything except Bleed
 UPDATE creature_template SET MechanicImmuneMask=1073725439 WHERE entry=17248;
 
+-- Correct flags of some creatures in Lower City
+UPDATE creature_template SET UnitFlags=32768 WHERE entry IN(21411);
+UPDATE creature_template SET UnitFlags=512 WHERE entry IN(19185);
+UPDATE creature_template SET UnitFlags=768 WHERE entry IN(21434);
+UPDATE creature_template SET UnitFlags=33024 WHERE entry IN(19170);
+
 
