@@ -8,7 +8,7 @@
 
 # need to be changed on each official DB/CORE release
 FULLDB_FILE="TBCDB_1.6.0_RiseOfThePhoenix.sql"
-DB_TITLE="v1.6"
+DB_TITLE="v1.6 'Rise from the Ashes'"
 NEXT_MILESTONES="0.12.4 0.13"
 
 #internal use
