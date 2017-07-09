@@ -18647,6 +18647,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Murkblood Scavenger
 ('1820701','18207','30','0','100','0','5','18207','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Murkblood Scavenger - Set Phase 1 on Receive AI Event 5 (A)'),
 ('1820702','18207','1','1','100','33','3500','5000','3500','5000','10','5','14','15','10','20','44','71','0','0','0','0','Murkblood Scavenger - Random Emote OOC (Phase 1)'),
+-- Harold Lane
+('1821801','18218','1','0','100','33','120000','350000','120000','350000','1','-1549','-1550','-1551','1','-1552','-1553','0','1','-1554','-1555','0','Harold Lane - Random Text Emote OOC'),
 -- Fire Bomb Target
 ('1822501','18225','11','0','100','0','0','0','0','0','11','31961','0','0','0','0','0','0','0','0','0','0','Fire Bomb Target - Cast Fire Bomb on Spawn'),
 -- Bach'lor
@@ -18663,11 +18665,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1829301','18293','30','0','100','0','5','19140','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Sunspring Post Refugee - Set Phase 1 on Receive AI Event A'),
 ('1829302','18293','1','1','100','1','1500','2500','1500','2500','10','4','15','21','0','0','0','0','0','0','0','0','Sunspring Post Refugee - Random Emote (Phase 1)'),
 ('1829303','18293','1','1','100','33','5000','250000','5000','250000','1','-307','-308','-309','1','-310','-312','-317','0','0','0','0','Sunspring Post Refugee - Random Say (Phase 1)'),
+-- Kristen Dispwitch
+('1829401','18294','11','0','100','0','0','0','0','0','43','0','14375','0','0','0','0','0','0','0','0','0','Kristen Dipswitch - Mount up on Spawn'),
 -- Sunspring Post Orphan
 ('1829601','18296','30','0','100','0','5','19140','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Sunspring Post Orphan - Set Phase 1 on Receive AI Event A (Pitfighter spectator)'),
 ('1829602','18296','30','0','100','0','6','18299','0','0','0','0','0','0','22','2','0','0','0','0','0','0','Sunspring Post Orphan - Set Phase 2 on Receive AI Event B (Running around Garadar)'),
 ('1829603','18296','1','5','100','33','5000','250000','5000','250000','1','-307','-308','-309','1','-310','-312','-317','0','0','0','0','Sunspring Post Orphan - Random Say (Phase 1)'),
 ('1829604','18296','1','3','100','33','30000','300000','80000','300000','1','-474','-475','-476','1','-477','-478','-479','1','-480','-481','0','Sunspring Post Orphan - Random Say (Phase 2)'),
+-- Gankly Rottenfist
+('1829701','18297','11','0','100','0','0','0','0','0','11','32199','0','0','0','0','0','0','0','0','0','0','Gankly Rottenfist - Cast Stealth on Spawn'),
 -- Bleeding Hollow Orphan
 ('1829901','18299','30','0','100','0','6','18299','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Orphan - Set Phase 1 on Receive AI Event B'),
 ('1829902','18299','1','1','100','33','30000','300000','80000','300000','1','-474','-475','-476','1','-477','-478','-479','1','-480','-481','0','Bleeding Hollow Orphan - Random Say (Phase 1)'),
@@ -32384,7 +32390,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1545','Continue the fight! Do not falter!','0','1','0','17918','0'),
 ('-1546','There is no time to waste!','0','0','0','17918','0'),
 ('-1547','We must hurry!','0','0','0','17918','0'),
-('-1548','We must use this time wisely!','0','0','0','17918','0');
+('-1548','We must use this time wisely!','0','0','0','17918','0'),
+('-1549','%s begins to whistle a tune, but then stops abruptly and moans.','0','2','0','18218','0'),
+('-1550','%s groans in pain.','0','2','0','18218','0'),
+('-1551','%s winces when he touches the tender area around his scratch.','0','2','0','18218','0'),
+('-1552','%s moans from the pain of his thorn scratch.','0','2','0','18218','0'),
+('-1553','Shifting, %s moans from the pain of his thorn scratch.','0','2','0','18218','0'),
+('-1554','%s looks at his friends and then grunts painfully.','0','2','0','18218','0'),
+('-1555','%s wakes himself up snoring.','0','2','0','18218','0');
 
 
 -- =======================================================
