@@ -18375,6 +18375,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Drillmaster Zurok (3.0.3 Official Data - Logs Only)
 ('1931201','19312','0','0','100','1','8200','13800','19000','21600','11','33500','0','0','0','0','0','0','0','0','0','0','Drillmaster Zurok - Cast Whirlwind'),
 ('1931202','19312','9','0','100','1','0','10','12600','13500','11','18813','1','0','0','0','0','0','0','0','0','0','Drillmaster Zurok - Cast Knock Away'),
+-- Field Marshal Rohamus
+('1931601','19316','1','6','100','1','60000','85000','60000','85000','22','1','0','0','0','0','0','0','0','0','0','0','Field Marshal Rohamus - Set Phase 1 OOC (Phase 0)'),
+('1931602','19316','1','5','100','33','0','0','0','0','1','-630','-631','0','1','-632','-633','0','0','0','0','0','Field Marshal Rohamus - Random Say OOC (Phase 1)'),
+('1931603','19316','1','5','100','1','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Field Marshal Rohamus - Set Phase 2 OOC (Phase 1)'),
+('1931604','19316','1','3','100','1','3600','3600','3600','3600','22','0','0','0','5','275','0','0','0','0','0','0','Field Marshal Rohamus - Set Phase 0 and Train Emote OOC (Phase 2)'),
 -- Thornfang Ravager
 ('1934901','19349','9','0','100','1','0','5','7000','13000','11','33781','1','0','0','0','0','0','0','0','0','0','Thornfang Ravager - Cast Ravage'),
 -- Thornfang Venomspitter
@@ -31714,7 +31719,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-627','Then teach me, Kel\'Thuzad. Teach me everything you know...','0','0','0','20353','0'),
 ('-628','SQUAWK!','0','1','0','7167','0'),
 ('-629','What the squawk??? Squawk, squawk, squawk? SQUAWK!','0','0','0','7168','0'),
--- PLEASE RE-USE 630 - 633
+('-630','Well done, soldiers! We weren\'t about to let the filthy animals of the Horde show us up!','0','0','7','19316','22'),
+('-631','We\'re gonna melt this hunk of junk down and make weapons with the ingots! Let\'s see how the Legion likes a taste of fel reaver served up Alliance style!','0','0','7','19316','22'),
+('-632','Tear it down, soldiers! We\'re shippin\' this thing back to Stormwind!','0','0','7','19316','22'),
+('-633','Let them throw another one of these overgrown tin cans at us! We\'ll show them what the Alliance is made of!','0','0','7','19316','22'),
 ('-634','Life energy to... consume.','11250','1','0','20870','0'),
 ('-635','The shadow... will engulf you.','11253','1','0','20870','0'),
 ('-636','Darkness...consumes...all.','11254','1','0','20870','0'),
