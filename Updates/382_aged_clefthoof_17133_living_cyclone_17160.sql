@@ -225,14 +225,20 @@ INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_
 -- Dead Aged Clefthoof 4
 -- [6] Position: X: -1179.027 Y: 8585.521 Z: 35.36817
 -- [6] Orientation: 2.75762
-(151673,17133,530,1,0,0,-1179.027,8585.521,35.36817,2.75762,300,300,0,0,6116,0,1,0);
+(151673,17133,530,1,0,0,-1179.027,8585.521,35.36817,2.75762,300,300,0,0,6116,0,1,0),
+
+-- Dead Aged Clefthoof 5
+-- [7] Position: X: -649.6729 Y: 8326.309 Z: 51.29285
+-- [7] Orientation: 0.541052
+(151674,17133,530,1,0,0,-649.6729,8326.309,51.29285,0.541052,300,300,0,0,6116,0,1,0);
 
 -- Addons for the dead Clefthooves
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES 
 (151670, 0, 0, 1, 16, 0, 0, '29266'),
 (151671, 0, 0, 1, 16, 0, 0, '29266'),
 (151672, 0, 0, 1, 16, 0, 0, '29266'),
-(151673, 0, 0, 1, 16, 0, 0, '29266');
+(151673, 0, 0, 1, 16, 0, 0, '29266'),
+(151674, 0, 0, 1, 16, 0, 0, '29266');
  
 DELETE FROM pool_template WHERE entry BETWEEN 348 AND 397;
 INSERT INTO pool_template (entry, max_limit, description) VALUES
