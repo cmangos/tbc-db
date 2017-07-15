@@ -7,8 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="TBCDB_1.5.0_cmangos-tbc.sql"
-DB_TITLE="v1.5"
+FULLDB_FILE="TBCDB_1.6.0_RiseOfThePhoenix.sql"
+DB_TITLE="v1.6 'Rise from the Ashes'"
 NEXT_MILESTONES="0.12.4 0.13"
 
 #internal use
@@ -61,8 +61,12 @@ USERNAME="mangos"
 ## Define your password (It is suggested to restrict read access to this file!)
 PASSWORD="mangos"
 
+# Define waiting time
+WAIT="19"
+
 ## Define the path to your core's folder (This is optional)
 ##   If set the core updates located under sql/updates from this mangos-directory will be added automatically
+##   If not set, need to apply sql/base/dbc/ files manually
 CORE_PATH=""
 
 ## Define your mysql programm if this differs
@@ -109,7 +113,7 @@ then
   echo "Please bring your repositories up-to-date!"
   echo "Press CTRL+C to exit"
   # show a mini progress bar
-  for i in {1..19}
+  for i in in $(seq 1 $WAIT);
   do
    echo -ne .
    sleep 1
@@ -305,35 +309,6 @@ fi
 echo "  ACID successfully applied"
 echo
 echo
-
-## SpinOnTop Updates
-if [ -d "${ADDITIONAL_PATH}Updates/SpinOnTop" ]
-then
-  COUNT=0
-  if [ "$(ls ${ADDITIONAL_PATH}Updates/SpinOnTop/*.sql)" ]
-  then
-    echo "> Trying to apply SpinOnTop updates"
-    for UPDATE in "${ADDITIONAL_PATH}Updates/SpinOnTop/"*.sql
-    do
-      echo "   process update $UPDATE"
-      $MYSQL_COMMAND < "$UPDATE"
-      if [[ $? != 0 ]]
-      then
-        echo "ERROR: cannot apply $UPDATE"
-        exit 1
-      fi
-      ((COUNT++))
-    done
-    if [ "$COUNT" != 0 ]
-    then
-      echo "  Applied $COUNT SpinOnTop DB updates successfully"
-    else
-      echo "  Did not found any new SpinOnTop DB update to apply"
-    fi
-    echo
-    echo
-  fi
-fi
 
 #
 #    DEVELOPERS UPDATES
