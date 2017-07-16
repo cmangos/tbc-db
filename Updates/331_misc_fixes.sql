@@ -107,4 +107,9 @@ INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, positi
 (94137, 182263, 530, 1, -2474.44, 6111.16, 91.7629, 3.66388, 0, 0, 0.966095, -0.258186, -125, -125, 100, 1),
 (94138, 182263, 530, 1, -2533.21, 6168.56, 59.9387, 3.75028, 0, 0, 0.954044, -0.299667, -125, -125, 100, 1);
 
+-- https://jira.vengeancewow.com/browse/TBC-2496
+-- Terokkarantula model
+-- Source: Retail sniff
+UPDATE creature_model_info SET bounding_radius=20, combat_reach=20 WHERE modelid=19716;
+
 
