@@ -97,4 +97,14 @@ UPDATE creature_template SET UnitFlags=512 WHERE entry IN(19185);
 UPDATE creature_template SET UnitFlags=768 WHERE entry IN(21434);
 UPDATE creature_template SET UnitFlags=33024 WHERE entry IN(19170);
 
+-- https://jira.vengeancewow.com/browse/TBC-2593
+-- Standards and Practices (9910)
+-- Data from WotLK-DB
+
+-- Add missing spell focuses
+DELETE FROM gameobject WHERE guid IN (94137,94138);
+INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
+(94137, 182263, 530, 1, -2474.44, 6111.16, 91.7629, 3.66388, 0, 0, 0.966095, -0.258186, -125, -125, 100, 1),
+(94138, 182263, 530, 1, -2533.21, 6168.56, 59.9387, 3.75028, 0, 0, 0.954044, -0.299667, -125, -125, 100, 1);
+
 
