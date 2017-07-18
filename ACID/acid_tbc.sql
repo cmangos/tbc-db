@@ -29827,8 +29827,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vekniss Warrior
 ('1523001','15230','6','0','100','2','0','0','0','0','11','6122','0','7','0','0','0','0','0','0','0','0','Vekniss Warrior - Summon Vekniss Borer on Death'),
 -- Vekniss Guardian
-('1523301','15233','9','0','100','3','0','10','8000','11000','11','26025','0','0','0','0','0','0','0','0','0','0','Vekniss Guardian - Cast Impale'),
-('1523302','15233','2','0','100','2','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Vekniss Guardian - Cast Enrage at 20% HP'),
+('1523301','15233','4','0','50','2','0','0','0','0','1','-673','0','0','0','0','0','0','0','0','0','0','Vekniss Guardian - Emote on Aggro'),
+('1523302','15233','9','0','100','3','0','10','8000','11000','11','26025','0','0','0','0','0','0','0','0','0','0','Vekniss Guardian - Cast Impale'),
+('1523303','15233','2','0','100','2','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Vekniss Guardian - Cast Enrage at 20% HP'),
 -- Vekniss Stinger (15235) - NSR
 -- Vekniss Wasp
 ('1523601','15236','9','0','100','3','0','40','9000','12000','11','26077','4','0','0','0','0','0','0','0','0','0','Vekniss Wasp - Cast Itch'),
@@ -31775,7 +31776,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-670','Pathetic worm!','0','0','0','18848','0'),
 ('-671','Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!','0','0','0','22381','0'),
 ('-672','This world is OURS!','0','0','1','Common Orc Say','0'),
--- PLEASE RE-USE -673
+('-673','%s emits a strange noise.','0','2','0','15233 16168','0')
 ('-674','For Kargath!  For Victory!','0','0','0','17264','0'),
 ('-675','How can you just leave me here?','0','0','0','18206','0'),
 ('-676','Help me!  Please help me!','0','0','0','18206','0'),
