@@ -31776,7 +31776,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-670','Pathetic worm!','0','0','0','18848','0'),
 ('-671','Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!','0','0','0','22381','0'),
 ('-672','This world is OURS!','0','0','1','Common Orc Say','0'),
-('-673','%s emits a strange noise.','0','2','0','15233 16168','0')
+('-673','%s emits a strange noise.','0','2','0','15233 16168','0'),
 ('-674','For Kargath!  For Victory!','0','0','0','17264','0'),
 ('-675','How can you just leave me here?','0','0','0','18206','0'),
 ('-676','Help me!  Please help me!','0','0','0','18206','0'),
