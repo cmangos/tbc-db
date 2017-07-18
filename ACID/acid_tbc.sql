@@ -18693,7 +18693,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1836902','18369','1','1','100','33','0','0','0','0','0','0','0','0','1','-1120','-1121','0','1','-1122','-1123','-1124','Corki - Random Say OOC (Phase 1)'),
 ('1836903','18369','1','1','100','1','500','500','500','500','22','0','0','0','0','0','0','0','0','0','0','0','Corki - Set Phase 0 (Phase 1)'),
 -- Giselda the Crone
-('1839101','18391','2','0','100','0','65','0','0','0','11','33316','0','0','0','0','0','0','0','0','0','0','Giselda the Crone - Cast Giselda Transform at 65% HP'),
+('1839101','18391','2','0','100','0','65','0','0','0','11','33316','0','0','1','-255','0','0','0','0','0','0','Giselda the Crone - Cast Giselda Transform and Say at 65% HP'),
+('1839102','18391','0','0','100','1','4500','8500','3600','14500','11','32000','1','0','0','0','0','0','0','0','0','0','Giselda the Crone - Cast Mind Sear'),
 -- Brokentoe
 ('1839801','18398','11','0','100','0','0','0','0','0','1','-1408','0','0','0','0','0','0','0','0','0','0','Brokentoe - say on spawn'),
 ('1839802','18398','0','0','85','1','4000','6000','16000','19000','11','32023','1','0','0','0','0','0','0','0','0','0','Brokentoe - Cast Hoof Stomp'),
@@ -31406,7 +31407,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-252','C\'mere, $r. Ya don\'t want to be riskin\' yerself in a dungeon, do ya? Filthy work, and for what? Some worthless trinket? Nah, what ya need be one of my amulets. Guarenteed to work! ','0','0','0','19227','0'),
 ('-253','Dangerous out there, innit? Know what ya need? Protection. I can help ya defy death itself! Ya wear this madstone \'round yer neck, see, and then ya be able to come back if ya find yerself in the spirit world! Just a quick jaunt to yer corpse and up ya com','0','0','0','19227','0'),
 ('-254','Amazing Amulets! Incredible curios! The newfangled jewelcrafters be havin\' nothin\' on the tried and true mystical methods of ol\' Griftah! Improve yerself through these magical talismans for a bargain price!','0','0','0','19227','0'),
--- Reuse 255
+('-255','Your blood will coat the walls of Kil\'sorrow!','0','0','0','18391','0'),
 ('-256','If no one help. Grok smash!','0','0','0','22940','0'),
 ('-257','Look over here, $c! I got somethin\' for ya. Just what ya need. It\'s soap, right... and it\'s on a rope! No offense, man, but yer a little ripe, you know what I\'m sayin\'? ','0','0','0','19227','0'),
 ('-258','Hey! Hey, $r! I be havin\' just the thing for ya. Ya ever see a Tikbalang? Frightenin\' creatures. Prone to stealin\' ya away. What ya need is my tikbaland wards. Guaranteed to ward away all tikbalangs!','0','0','0','19227','0'),
