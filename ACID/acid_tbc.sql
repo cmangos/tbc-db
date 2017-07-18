@@ -18035,6 +18035,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================
 -- Hellfire Peninsula
 -- ==================
+-- Bat Rider Guard
+('1524201','15242','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Bat Rider Guard - Prevent Combat Movement on Spawn'),
+('1524202','15242','0','0','100','1','0','5','12000','18000','11','38066','1','0','0','0','0','0','0','0','0','0','Bat Rider Guard - Cast Unstable Concoction'),
 -- Watch Commander Krunk
 ('1658401','16584','1','0','100','1','300000','300000','300000','300000','1','-298','0','0','5','5','0','0','0','0','0','0','Watch Commander Krunk - Gossip Speech'),
 -- Cookie One-Eye
