@@ -17876,6 +17876,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2132601','21326','0','0','50','1','9000','12000','35000','42000','11','37696','0','0','0','0','0','0','0','0','0','0','Raven\'s Wood Leafbeard - Cast Force of Nature'),
 ('2132602','21326','30','0','100','0','5','22226','0','0','2','35','1','0','24','0','0','0','1','-1350','0','0','Raven\'s Wood Leafbeard - Becomes Friendly on Receive AI Event'),
 ('2132603','21326','30','0','100','0','5','22226','0','0','41','15000','0','0','0','0','0','0','0','0','0','0','Raven\'s Wood Leafbeard - Despawn on Receive AI Event'),
+-- Ogre Building Bunny Large
+('2135101','21351','11','0','100','1','0','0','0','0','11','36952','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Large - Cast Ogre Building Bunny Curse Visual Large on Spawn'),
 -- Greater Crust Burster (21380) - npc_burster_worm
 -- Young Crust Burster
 ('2138101','21381','9','0','100','1','0','30','5000','8000','11','21067','1','0','0','0','0','0','0','0','0','0','Young Crust Burster - Cast Poison Bolt'),
@@ -17888,10 +17890,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2138706','21387','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Wyrmcult Blackwhelp - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2138707','21387','8','0','100','0','38177','-1','0','0','11','38178','6','3','21','0','0','0','41','0','0','0','Wyrmcult Blackwhelp - Cast Create Wyrmcult Blackwhelp Item and Prevent Combat Movement and Despawn on Blackwhelp Net Spellhit'),
 ('2138708','21387','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Wyrmcult Blackwhelp - Set Phase to 0 on Evade'),
+-- Ogre Building Bunny Small
+('2145601','21456','11','0','100','1','0','0','0','0','11','32582','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Small - Cast Ogre Building Bunny Curse Visual on Spawn'),
 -- Black Wyrmkin
 ('2149701','21497','0','0','75','1','5000','12000','16000','21000','11','20712','0','0','0','0','0','0','0','0','0','0','Black Wyrmkin - Cast Flame Breath'),
 ('2149702','21497','0','0','85','1','4000','9000','16000','26000','11','29685','0','0','0','0','0','0','0','0','0','0','Black Wyrmkin - Cast Terrifying Roar'),
 ('2149703','21497','0','0','85','1','9000','16000','18000','24000','11','29685','0','0','0','0','0','0','0','0','0','0','Black Wyrmkin - Cast Tail Sweep'),
+-- Ogre Building Cursed Spirit Bunny
+('2149801','21498','30','0','100','1','5','0','0','0','12','21449','0','300000','0','0','0','0','0','0','0','0','Ogre Building Cursed Spirit Bunny - Summon Cursed Spirit on Receive AI Event Custom A'),
 -- Electromental
 ('2172901','21729','11','0','100','0','0','0','0','0','11','37248','0','1','0','0','0','0','0','0','0','0','Electromental - Cast Power Converters: Electromental Visual on Spawn'),
 ('2172902','21729','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Electromental - Enable Dynamic Movement and Set Phase 1 on Aggro'),
