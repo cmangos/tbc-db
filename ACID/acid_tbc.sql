@@ -29712,7 +29712,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2004207','20042','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Tempest-Smith - Set Melee Weapon Model on Evade'),
 -- Apprentice Star Scryer
 ('2004301','20043','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Apprentice Star Scryer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2004302','20043','9','9','100','3','8','50','3400','4800','11','37129','1','0','0','0','0','0','0','0','0','0','Apprentice Star Scryer - Cast Arcane Volley (Phase 1 and 2)'),
+('2004302','20043','9','9','100','3','8','50','15000','25000','11','37129','1','0','0','0','0','0','0','0','0','0','Apprentice Star Scryer - Cast Arcane Volley (Phase 1 and 2)'),
 ('2004303','20043','9','13','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Apprentice Star Scryer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2004304','20043','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Apprentice Star Scryer - Disable Dynamic Movement at 0-8 Yards'),
 ('2004305','20043','3','13','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Apprentice Star Scryer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
