@@ -28387,8 +28387,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2121802','21218','0','0','100','3','13600','18300','8700','14400','11','38576','0','0','0','0','0','0','0','0','0','0','Vashj\'ir Honor Guard - Cast Knockback'),
 ('2121803','21218','0','0','100','3','7000','12000','13000','17000','11','38945','5','1','0','0','0','0','0','0','0','0','Vashj\'ir Honor Guard - Cast Frightening Shout'),
 ('2121804','21218','12','0','100','3','20','0','30000','35000','11','38959','1','1','0','0','0','0','0','0','0','0','Vashj\'ir Honor Guard - Cast Execute at 20% Player HP'),
-('2121805','21218','2','0','100','2','50','0','0','0','11','38947','0','1','1','-106','0','0','0','0','0','0','Vashj\'ir Honor Guard - Cast Enrage at 50% HP'),
+('2121805','21218','2','0','100','2','50','0','0','0','11','38947','0','1','1','-849','0','0','0','0','0','0','Vashj\'ir Honor Guard - Cast Enrage at 50% HP'),
 ('2121806','21218','29','0','100','2','1000','1000','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Vashj\'ir Honor Guard - Set Instance Data64 (SD2) on Timer'),
+('2121807','21218','1','0','75','35','10000','60000','60000','60000','1','-841','-842','-843','1','-844','-845','-846','1','-847','-848','0','Vashj\'ir Honor Guard - Random Say OOC'),
 -- Coilfang Priestess
 ('2122001','21220','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Coilfang Priestess - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2122002','21220','9','5','100','3','8','50','3400','4800','11','38582','1','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Holy Smite (Phase 1)'),
@@ -28411,12 +28412,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2122107','21221','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Coilfang Beast-Tamer - Set Melee Weapon Model on Evade'),
 -- Tidewalker Depth-Seer
 ('2122401','21224','14','0','100','3','10000','40','15000','17000','11','38657','6','0','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Rejuvenation on Friendlies'),
-('2122402','21224','14','0','100','3','25000','40','12000','21000','11','38658','6','1','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Healing Touch on Friendlies'),
+('2122402','21224','14','0','100','3','25000','40','12000','21000','11','38658','6','0','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Healing Touch on Friendlies'),
 ('2122403','21224','2','0','100','3','20','0','12000','15000','11','38659','0','1','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Tranquility at 20% HP'),
 -- Tidewalker Warrior
 ('2122501','21225','9','0','100','3','0','5','18000','27000','11','39070','1','1','0','0','0','0','0','0','0','0','Tidewalker Warrior - Cast Bloodthirst'),
 ('2122502','21225','0','0','100','3','12400','16100','15000','19000','11','39069','1','0','0','0','0','0','0','0','0','0','Tidewalker Warrior - Cast Uppercut'),
 ('2122503','21225','0','0','100','3','13700','17300','22100','24600','11','38664','0','0','0','0','0','0','0','0','0','0','Tidewalker Warrior - Cast Frenzy'),
+('2122504','21225','0','0','100','3','7500','20000','7500','20000','14','-100','0','0','13','100','4','0','0','0','0','0','Tidewalker Warrior - Reset Threat and Attack New Target'),
+('2122505','21225','9','0','100','3','0','5','9900','10900','11','38474','1','0','0','0','0','0','0','0','0','0','Tidewalker Warrior - Cast Cleave'),
 -- Tidewalker Shaman
 ('2122601','21226','1','0','100','3','1000','1000','600000','600000','11','39067','0','1','0','0','0','0','0','0','0','0','Tidewalker Shaman - Cast Lightning Shield on Spawn'),
 ('2122602','21226','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Tidewalker Shaman - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -28425,7 +28428,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2122605','21226','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Tidewalker Shaman - Disable Dynamic Movement at 0-8 Yards'),
 ('2122606','21226','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Tidewalker Shaman - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('2122607','21226','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Tidewalker Shaman - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('2122608','21226','0','0','100','2','12000','18000','16000','21000','11','39066','4','1','0','0','0','0','0','0','0','0','Tidewalker Shaman - Cast Chain Lightning'),
+('2122608','21226','0','0','100','3','12000','18000','16000','21000','11','39066','4','1','0','0','0','0','0','0','0','0','Tidewalker Shaman - Cast Chain Lightning'),
 ('2122609','21226','27','0','100','3','39067','1','15000','30000','11','39067','0','1','0','0','0','0','0','0','0','0','Tidewalker Shaman - Cast Lightning Shield on Missing Buff'),
 ('2122610','21226','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Tidewalker Shaman - Set Phase to 0 on Evade'),
 -- Tidewalker Harpooner
@@ -28494,20 +28497,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2125107','21251','0','503','100','3','6700','10900','16100','21800','11','39031','0','1','0','0','0','0','0','0','0','0','Underbog Colossus - Cast Frenzy (Phase 3)'),
 ('2125108','21251','6','0','100','2','0','0','0','0','31','4','8','0','0','0','0','0','0','0','0','0','Underbog Colossus - Random Phase on Death'),
 ('2125109','21251','6','495','100','2','0','0','0','0','11','38718','0','7','0','0','0','0','0','0','0','0','Underbog Colossus - Cast Toxic Pool on Death (Phase 4)'),
-('2125110','21251','6','479','100','2','0','0','0','0','11','38730','0','7','0','0','0','0','0','0','0','0','Underbog Colossus - Cast Refreshing Mist on Death (Phase 5)'),
-('2125111','21251','6','447','100','2','0','0','0','0','12','22347','1','600000','12','22347','1','600000','0','0','0','0','Underbog Colossus - Summon 2 Colossus Lurker on Death (Phase 6)'),
-('2125112','21251','6','383','100','2','0','0','0','0','12','22352','1','600000','12','22352','1','600000','12','22352','1','600000','Underbog Colossus - Summon 3 Colossus Rager on Death (Phase 7)'),
-('2125113','21251','6','383','100','2','0','0','0','0','12','22352','1','600000','12','22352','1','600000','12','22352','1','600000','Underbog Colossus - Summon 3 Colossus Rager on Death (Phase 7)'),
-('2125114','21251','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Underbog Colossus - Set Phase to 0 on Evade'),
+('2125110','21251','6','479','100','2','0','0','0','0','11','38726','0','1','11','38726','0','1','11','38726','0','1','Underbog Colossus - Cast Summon Serpentshrine Mushroom on Death (Phase 5)'),
+('2125111','21251','6','479','100','2','0','0','0','0','11','38726','0','1','11','38726','0','1','0','0','0','0','Underbog Colossus - Cast Summon Serpentshrine Mushroom on Death (Phase 5)'),
+('2125112','21251','6','447','100','2','0','0','0','0','11','38922','0','1','0','0','0','0','0','0','0','0','Underbog Colossus - Cast Summon Colossus Lurker on Death (Phase 6)'),
+('2125113','21251','6','383','100','2','0','0','0','0','11','38928','0','1','0','0','0','0','0','0','0','0','Underbog Colossus - Cast Summon Colossus Rager on Death (Phase 7)'),
+('2125114','21251','11','0','100','34','0','0','0','0','11','38714','0','0','11','38715','0','0','11','38717','0','0','Underbog Colossus - Cast Random Vulnerability on Spawn'),
+('2125115','21251','21','0','100','34','0','0','0','0','11','38714','0','0','11','38715','0','0','11','38717','0','0','Underbog Colossus - Cast Random Vulnerability on Reached Home'),
 -- Tainted Water Elemental
 ('2125301','21253','11','0','100','2','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Tainted Water Elemental - Cast Elemental Spawn-in on Spawn'),
 -- Purified Water Elemental (21260) - NSR
 -- Greyheart Technician
 ('2126301','21263','9','0','100','3','0','5','7300','13300','11','38995','4','0','0','0','0','0','0','0','0','0','Greyheart Technician - Cast Hamstring'),
 ('2126302','21263','29','0','100','2','1000','1000','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - Set Instace Data64 (SD2) on Timer'),
+('2126303','21263','30','0','100','3','5','21218','0','0','5','26','0','0','51','0','0','0','0','0','0','0','Greyheart Technician - Emote and Set Waypoint Movement on Receive Custom AI Event A'),
 -- Coilfang Serpentguard
 ('2129801','21298','11','0','100','2','0','0','0','0','11','38603','0','1','0','0','0','0','0','0','0','0','Coilfang Serpentguard - Cast Corrupt Devotion Aura on Spawn'),
 ('2129802','21298','0','0','80','3','8900','14700','15900','18900','11','38599','0','0','0','0','0','0','0','0','0','0','Coilfang Serpentguard - Cast Spell Reflection'),
+('2129803','21298','9','0','100','3','0','5','9900','10900','11','38474','1','0','0','0','0','0','0','0','0','0','Coilfang Serpentguard - Cast Cleave'),
 -- Coilfang Fathom-Witch
 ('2129901','21299','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Coilfang Fathom-Witch - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2129902','21299','9','5','100','3','8','45','3400','4800','11','38628','1','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Shadow Bolt (Phase 1)'),
@@ -28515,14 +28521,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2129904','21299','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Disable Dynamic Movement at 0-8 Yards'),
 ('2129905','21299','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Coilfang Fathom-Witch - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('2129906','21299','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('2129907','21299','0','0','100','3','8200','13700','66300','89300','11','38627','0','1','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Shadow Nova'),
+('2129907','21299','0','0','100','3','8200','13700','66300','89300','11','38627','0','1','13','-99','1','0','0','0','0','0','Coilfang Fathom-Witch - Cast Shadow Nova and Reduce Threat'),
 ('2129908','21299','0','0','100','3','13200','18700','22900','32100','11','38626','9','1','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Domination'),
 ('2129909','21299','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Set Phase to 0 on Evade'),
 -- Coilfang Shatterer
-('2130101','21301','0','0','100','3','7600','14100','18200','21500','11','38591','4','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Cast Shatter Armor'),
+('2130101','21301','0','0','100','3','7600','14100','18200','21500','11','38591','1','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Cast Shatter Armor'),
 ('2130102','21301','29','0','100','2','1000','1000','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Set Instance Data64 (SD2) on Timer'),
 -- Coilfang Hate-Screamer
-('2133901','21339','0','0','100','2','5000','9000','21000','38600','11','38491','4','0','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Silence'),
+('2133901','21339','0','0','100','3','5000','9000','21000','38600','11','38491','4','0','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Silence'),
 ('2133902','21339','0','0','100','3','6100','11200','7000','12000','11','38496','4','0','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Sonic Scream'),
 -- Coilfang Frenzy (21508) - NSR
 -- Greyheart Spellbinder
@@ -28534,7 +28540,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2185702','21857','0','0','100','3','6100','8400','7900','12500','11','39309','1','0','0','0','0','0','0','0','0','0','Inner Demon - Cast Shadow Bolt'),
 -- Serpentshrine Lurker
 ('2186301','21863','4','0','100','2','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Serpentshrine Lurker - Set Phase 1 on Aggro'),
-('2186302','21863','9','5','100','3','1000','3000','4000','8000','11','38655','1','0','0','0','0','0','0','0','0','0','Serpentshrine Lurker - Cast Poison Bolt Volley (Phase 1)'),
+('2186302','21863','0','5','100','3','1000','3000','4000','8000','11','38655','1','0','0','0','0','0','0','0','0','0','Serpentshrine Lurker - Cast Poison Bolt Volley (Phase 1)'),
 ('2186303','21863','24','5','100','3','38655','3','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Serpentshrine Lurker - Set Phase 2 on Target Max Poison Bolt Volley Aura Stack (Phase 1)'),
 ('2186304','21863','28','3','100','3','38655','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Serpentshrine Lurker - Set Phase 1 on Target Missing Poison Bolt Volley Aura Stack (Phase 2)'),
 ('2186305','21863','0','0','100','3','8000','13000','16800','21000','11','38650','0','1','0','0','0','0','0','0','0','0','Serpentshrine Lurker - Cast Rancid Mushroom Primer'),
@@ -28576,6 +28582,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2205607','22056','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Coilfang Strider - Set Phase to 0 on Evade'),
 -- Fathom Lurker
 ('2211901','22119','9','0','100','3','0','8','14000','21000','11','25778','1','0','0','0','0','0','0','0','0','0','Fathom Lurker - Cast Knock Away'),
+('2211902','22119','6','0','100','2','0','0','0','0','11','38419','0','7','0','0','0','0','0','0','0','0','Fathom Lurker - Cast Spore Explosion on Death'),
 -- Fathom Sporebat
 ('2212001','22120','9','0','100','3','0','8','14000','21000','11','25778','1','0','0','0','0','0','0','0','0','0','Fathom Sporebat - Cast Knock Away'),
 -- Toxic Sporebat (SD2 Backport)
@@ -28584,7 +28591,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2223801','22238','0','0','100','3','2000','7000','11000','16000','11','38623','1','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Water Bolt Volley'),
 ('2223802','22238','9','0','100','3','0','8','16000','21000','11','39035','0','1','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Frost Nova'),
 -- Rancid Mushroom
-('2225001','22250','6','0','100','2','0','0','0','0','11','38652','0','7','0','0','0','0','0','0','0','0','Rancid Mushroom - Cast Spore Cloud on Death'),
+('2225001','22250','11','0','100','2','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Rancid Mushroom - Stop Combat Movement and Stop Auto Attack on Spawn'),
+('2225002','22250','0','0','100','3','1500','1500','1500','1500','11','31698','0','7','0','0','0','0','0','0','0','0','Rancid Mushroom - Cast Grow'),
+('2225003','22250','0','0','100','2','20000','20000','0','0','11','38652','0','7','37','0','0','0','0','0','0','0','Rancid Mushroom - Cast Spore Cloud and Die'),
 -- Colossus Lurker (22347) - NSR
 -- Colossus Rager (22352) - NSR
 -- Serpentshrine Parasite (22379) - NSR
@@ -31887,7 +31896,16 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-838','Spare a copper, madame?','0','0','0','19283','1'),
 ('-839','Please don\'t ignore us...','0','0','0','19283','1'),
 ('-840','A cool breeze caresses your face. Gentle, melodic humming resonates throughout the chamber.','0','2','0','19412','0'),
--- PLEASE RE-USE 841 - 859
+('-841','We\'re in the home stretch now.','0','0','0','21218','1'),
+('-842','Lady Vashj expects our work to be done soon.','0','0','0','21218','1'),
+('-843','Steady the pumps.','0','0','0','21218','1'),
+('-844','Maintain focus.','0','0','0','21218','1'),
+('-845','You should be honored to be doing Lady Vashj\'s bidding.','0','0','0','21218','1'),
+('-846','Our work is not yet complete.','0','0','0','21218','1'),
+('-847','Keep those pumps working.','0','0','0','21218','1'),
+('-848','We must work faster.','0','0','0','21218','1'),
+('-849','Enough! I have had enough of you filthy warm bloods!','0','1','0','21218','0'),
+-- PLEASE RE-USE 850 - 859
 ('-860','Vengeance will not be yours, $N!','0','0','0','22454','0'),
 -- PLEASE RE-USE -861 to -894
 ('-895','There is no escape for you. The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','1535','0'),
