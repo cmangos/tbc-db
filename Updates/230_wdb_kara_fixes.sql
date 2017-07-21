@@ -526,8 +526,16 @@ INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `posit
 -- All Chaotic Sentience and Mana Feeder should have random movement
 UPDATE `creature` SET `spawndist` = 3, `MovementType` = 1 WHERE `id` IN (16489,16491);
 
--- Greater Fleshbeast 135862 has the path, not 135864
-UPDATE `creature` SET `spawndist` = 5, `MovementType` = 1 WHERE `guid` = 135864;
+UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 135864;
+DELETE FROM creature_movement WHERE id=135864;
+INSERT INTO creature_movement (id, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
+('135864', '1', '-10999.2', '-1897.55', '239.091', '0', '0', '0', '0', '0', '0', '0', '0', '0', '5.09817', '0', '0'),
+('135864', '2', '-11014.9', '-1922.57', '232.258', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.84546', '0', '0'),
+('135864', '3', '-11034.7', '-1935.7', '232.258', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.79833', '0', '0'),
+('135864', '4', '-11068.5', '-1968.44', '232.177', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.7606', '0', '0'),
+('135864', '5', '-11034.1', '-1935.31', '232.257', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0.740747', '0', '0'),
+('135864', '6', '-10995.8', '-1902.67', '237.272', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0.781025', '0', '0');
+
 UPDATE `creature` SET `spawndist` = 0, `MovementType` = 2 WHERE `guid` = 135862;
 
 UPDATE `creature` SET `spawndist` = 3 WHERE `guid` = 135865;
