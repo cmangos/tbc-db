@@ -26825,17 +26825,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1921806','19218','0','0','100','5','24100','33100','28900','54200','11','39193','0','0','0','0','0','0','0','0','0','0','Gatewatcher Gyro-Kill (Heroic) - Cast Shadow Power'),
 ('1921807','19218','5','0','100','7','5000','5000','0','0','1','-81','-82','0','0','0','0','0','0','0','0','0','Gatewatcher Gyro-Kill - Random Yell on Player Kill'),
 ('1921808','19218','6','0','100','6','0','0','0','0','1','-83','0','0','0','1','-146','0','0','0','0','0','Gatewatcher Gyro-Kill - Yell and Emote on Death'),
--- Mechano-Lord Capacitus (4.3.4 Official Data - Normal/Heroic) - (Spells: 35153/35904/35905/35906 That Summons Nether Charge NPC: 20405 - 5 Yards away in 4 directions)
-('1921901','19219','4','0','100','6','0','0','0','0','1','-87','0','0','0','0','0','0','0','0','0','0','Mechano-Lord Capacitus - Yell on Aggro'),
-('1921902','19219','0','0','100','7','16100','18600','19700','33200','11','35161','1','0','0','0','0','0','0','0','0','0','Mechano-Lord Capacitus - Cast Head Crack'),
-('1921903','19219','0','0','100','3','2000','5000','9000','13000','12','20405','4','0','0','0','0','0','0','0','0','0','Mechano-Lord Capacitus (Normal) - Summon Nether Charge'),
-('1921904','19219','0','0','100','5','9000','11000','2500','3500','12','20405','4','0','0','0','0','0','0','0','0','0','Mechano-Lord Capacitus (Heroic) - Summon Nether Charge'),
-('1921905','19219','0','0','100','3','15000','15000','40000','40000','11','35159','0','1','1','-90','-91','0','0','0','0','0','Mechano-Lord Capacitus (Normal) - Cast Reflective Damage Shield and Random Yell'),
-('1921906','19219','0','0','100','3','35000','35000','40000','40000','11','35158','0','1','1','-90','-91','0','0','0','0','0','Mechano-Lord Capacitus (Normal) - Cast Reflective Magic Shield and Random Yell'),
-('1921907','19219','0','0','100','5','24500','29700','27700','33800','11','39096','0','1','1','-90','-91','0','0','0','0','0','Mechano-Lord Capacitus (Heroic) - Cast Polarity Shift and Random Yell'),
-('1921908','19219','0','0','100','5','180000','180000','1200','1200','11','26662','0','1','0','0','0','0','0','0','0','0','Mechano-Lord Capacitus (Heroic) - Cast Berserk after 3 Minutes'),
-('1921909','19219','5','0','100','7','5000','5000','0','0','1','-88','-92','0','0','0','0','0','0','0','0','0','Mechano-Lord Capacitus - Random Yell on Player Kill'),
-('1921910','19219','6','0','100','6','0','0','0','0','1','-89','0','0','0','0','0','0','0','0','0','0','Mechano-Lord Capacitus - Yell on Death'),
+-- Mechano-Lord Capacitus - boss_mechano_lord_capacitus
 -- Pathaleon the Calculator (19220) - boss_pathaleon_the_calculator
 -- Nethermancer Sepethrea (19221) - boss_nethermancer_sepethrea
 -- Mechanar Crusher (4.3.4 Official Data - Normal/Heroic)
@@ -26893,11 +26883,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2048102','20481','0','0','100','3','15700','31300','15700','28900','11','35268','0','0','0','0','0','0','0','0','0','0','Raging Flames (Normal) - Cast  Inferno'),
 ('2048103','20481','0','0','100','5','15700','31300','15700','28900','11','39346','0','0','0','0','0','0','0','0','0','0','Raging Flames (Heroic) - Cast  Inferno'),
 -- Nether Charge (4.3.4 Official Data - Normal/Heroic) - Sniff Data
-('2040501','20405','11','0','100','6','0','0','0','0','11','35150','0','0','11','37670','0','0','41','18000','0','0','Nether Charge - Cast Nether Charge Passive and Cast Nether Charge Timer on Spawn'),
-('2040502','20405','0','0','100','6','11000','11000','0','0','21','0','0','0','11','35151','0','1','0','0','0','0','Nether Charge - Prevent Combat Movement and Cast Nether Charge Pulse'),
-('2040503','20405','0','0','100','6','13000','13000','0','0','11','35151','0','1','0','0','0','0','0','0','0','0','Nether Charge - Cast Nether Charge Pulse'),
-('2040504','20405','0','0','100','6','15000','15000','0','0','11','35151','0','1','0','0','0','0','0','0','0','0','Nether Charge - Cast Nether Charge Pulse'),
-('2040505','20405','0','0','100','6','17000','17000','0','0','11','35152','0','1','0','0','0','0','0','0','0','0','Nether Charge - Cast Unknown Spell (From Sniff Data)'),
+('2040501', '20405', '11', '0', '100', '6', '0', '0', '0', '0', '11', '35150', '0', '0', '11', '37670', '0', '0', '50', '0', '0', '0', 'Nether Charge - Cast Nether Charge Passive, Cast Nether Charge Timer on Spawn and set React Passive'),
+('2040502', '20405', '0', '0', '100', '6', '10500', '10500', '0', '0', '21', '0', '0', '0', '11', '35151', '0', '1', '0', '0', '0', '0', 'Nether Charge - Prevent Combat Movement and Cast Nether Charge Pulse'),
+('2040503', '20405', '0', '0', '100', '6', '12500', '12500', '0', '0', '11', '35151', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'Nether Charge - Cast Nether Charge Pulse'),
+('2040504', '20405', '0', '0', '100', '6', '14500', '14500', '0', '0', '11', '35151', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'Nether Charge - Cast Nether Charge Pulse'),
 -- Sunseeker Engineer (4.3.4 Official Data - Normal/Heroic)
 ('2098801','20988','0','0','100','7','1300','9600','21700','30200','11','36341','1','0','0','0','0','0','0','0','0','0','Sunseeker Engineer - Cast Super Shrink Ray'),
 ('2098802','20988','0','0','100','3','5100','16400','12100','22900','11','36345','1','0','0','0','0','0','0','0','0','0','Sunseeker Engineer (Normal) - Cast Death Ray'),
@@ -31273,12 +31262,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-84','Measure twice, cut once.','11104','1','0','19218','0'),
 ('-85','If my division is correct you should be quite dead.','11105','1','0','19218','0'),
 ('-86','I predict a painful death.','11101','1','0','19218','0'),
-('-87','You should split while you can.','11162','1','0','19219','0'),
-('-88','Damn, I\'m good!','11164','1','0','19219','0'),
-('-89','Bully!','11167','1','0','19219','0'),
-('-90','Go ahead, gimme your best shot. I can take it!','11166','1','0','19219','0'),
-('-91','Think you can hurt me, huh? Think I\'m afraid of you?!','11165','1','0','19219','0'),
-('-92','Can\'t say I didn\'t warn you!','11163','1','0','19219','0'),
+-- Reuse 87-92
 ('-93','The work must continue.','10376','1','0','17941','0'),
 ('-94','Don\'t make me kill you!','10378','1','0','17941','0'),
 ('-95','You brought this on yourselves.','10379','1','0','17941','0'),
