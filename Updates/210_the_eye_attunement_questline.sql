@@ -16,6 +16,19 @@ INSERT INTO dbscripts_on_quest_end (id, delay, command, datalong, datalong2, bud
 (10528,1,15,5,0,0,0,0x04,0,0,0,0,0,0,0,0,'Artor - Cast Death Touch'),
 (10528,4,0,0,0,21318,25,0,2000009036,0,0,0,0,0,0,0,'Artor - Make spirit talk');
 
+-- Set proper aura for Spirit of Ar'tor
+UPDATE `creature_template_addon` SET `auras`='32648' WHERE `entry`=21318;
+
+-- Add spell_area
+DELETE FROM spell_area WHERE spell=32649 AND area=3752;
+INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, `quest_end`, `condition_id`, `aura_spell`, `racemask`, `gender`, `autocast`) VALUES 
+(32649, 3752, 0, 0, 0, 1195, 0, 0, 2, 1);
+
+-- Condition
+DELETE FROM conditions WHERE condition_entry=1195;
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`) VALUES 
+(1195, 8, 10528); -- Quest 10528 Rewarded
+
 -- Of Thistleheads and Eggs 10547
 
 UPDATE quest_template SET CompleteScript=10547 WHERE entry=10547;
