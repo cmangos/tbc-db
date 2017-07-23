@@ -18380,7 +18380,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1930505','19305','2','0','100','0','60','0','0','0','11','33905','0','1','0','0','0','0','0','0','0','0','Goliathon - Summon Goliathon Shardling 60% HP'),
 ('1930506','19305','2','0','100','0','30','0','0','0','11','33906','0','1','0','0','0','0','0','0','0','0','Goliathon - Summon Goliathon Shardling 30% HP'),
 -- Marshal Isildor
-('1930801','19308','1','0','100','1','60000','60000','120000','180000','1','-336','-335','-334','5','5','0','0','0','0','0','0','Marshal Isildor - Gossip Speech and Emote'),
+('1930801','19308','1','14','100','1','6000','12000','6000','12000','22','1','0','0','51','1','0','0','0','0','0','0','Marshal Isildor - Set Phase 1 and Pause Waypoints OOC (Phase 0)'),
+('1930802','19308','1','13','100','33','0','0','0','0','1','-644','-645','0','1','-646','-647','0','0','0','0','0','Marshal Isildor - Random Say OOC (Phase 1)'),
+('1930803','19308','1','13','100','1','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Marshal Isildor - Set Phase 2 OOC (Phase 1)'),
+('1930804','19308','1','11','100','1','4000','4000','4000','4000','5','273','0','0','22','3','0','0','0','0','0','0','Marshal Isildor - Emote and Set Phase 3 OOC (Phase 2)'),
+('1930805','19308','1','7','100','1','4000','4000','4000','4000','51','0','0','0','22','0','0','0','0','0','0','0','Marshal Isildor - Resume Waypoints and Set Phase 0 (Phase 3)'),
 -- Drillmaster Zurok (3.0.3 Official Data - Logs Only)
 ('1931201','19312','0','0','100','1','8200','13800','19000','21600','11','33500','0','0','0','0','0','0','0','0','0','0','Drillmaster Zurok - Cast Whirlwind'),
 ('1931202','19312','9','0','100','1','0','10','12600','13500','11','18813','1','0','0','0','0','0','0','0','0','0','Drillmaster Zurok - Cast Knock Away'),
@@ -31505,9 +31509,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-331','Nae, that\'s fer wimps. Hit me with yer hammer!','0','0','0','19394','0'),
 ('-332','Bron! \'Ey Bron! \'Ey Bron! Hit me!','0','0','0','19394','0'),
 ('-333','I don\'t get it! Are ya blind? Can ya not see the demons bangin\' on our door? Who am I gonna send out to talk to your shaman friends? Point \'em out!','0','0','0','21773','0'),
-('-334','Do you think that demons will play fair? These beasts are more savage than the orcs, more cunning than the undead. Do not attempt to engage Legion by normal standards of war.','0','0','0','19308','0'),
-('-335','How many more soldiers need to die before we start paying attention out there?','0','0','0','19308','0'),
-('-336','This war - and don\'t mistake this for anything but war - is not going to win itself. If we do not fight, scratch, claw, and kick for every speck of land on this shattered world, all will be lost.','0','0','0','19308','0'),
+-- Re-Use 334-336
 ('-337','The creatures of this place are strong, wayfarer. You\'ll need ample ammunition if you hope to survive. You\'re in luck - I am well-stocked with fine arrows, bullets, and throwing weapons. The price is reasonable, considering the circumstances.','0','0','0','19534','0'),
 ('-338','Ahh, another powerful traveler. The nether can be dangerous; you\'ll want the most potent spells at your disposal. I carry the finest reagents, common and exotic. Come and buy - you won\'t be sorry!','0','0','0','19535','0'),
 ('-339','%s whispers softley in reverent tones under her breath.','0','2','0','21066','0'),
@@ -31768,7 +31770,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-641','At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.','0','0','0','Vaelan greetings','0'),
 ('-642','Listen carefully, for the lord of Blackrock will surely destroy you, should you not be prepared.','0','0','0','Vaelan greetings','0'),
 ('-643','Foolish druid! Dividing your essence has weakened you, opening the door for my master to dominate the Emerald Dream. Your spirit and body will die here!','0','1','0','22915','0'),
--- PLEASE RE-USE -644 to -647
+('-644','Do you think that demons will play fair? These beasts are more savage than the orcs, more cunning than the undead. Do not attempt to engage Legion by normal standards of war.','0','0','0','19308','1'),
+('-645','How many more soldiers need to die before we start paying attention out there?','0','0','0','19308','1'),
+('-646','This war - and don\'t mistake this for anything but war - is not going to win itself. If we do not fight, scratch, claw, and kick for every speck of land on this shattered world, all will be lost.','0','0','0','19308','1'),
+('-647','I regret to inform you all that we sent home another ten soldiers today - in body bags.','0','0','0','19308','1'),
 ('-648','%s lets out a deep roar, alerting nearby allies and becoming enraged!','0','2','0','Dire Maul Guards','0'),
 ('-649','%s goes into a drunken rage!','0','2','0','14322','0'),
 -- PLEASE RE-USE 650 - 653
