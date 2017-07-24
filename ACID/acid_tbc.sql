@@ -26884,9 +26884,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2048103','20481','0','0','100','5','15700','31300','15700','28900','11','39346','0','0','0','0','0','0','0','0','0','0','Raging Flames (Heroic) - Cast  Inferno'),
 -- Nether Charge (4.3.4 Official Data - Normal/Heroic) - Sniff Data
 ('2040501', '20405', '11', '0', '100', '6', '0', '0', '0', '0', '11', '35150', '0', '0', '11', '37670', '0', '0', '50', '0', '0', '0', 'Nether Charge - Cast Nether Charge Passive, Cast Nether Charge Timer on Spawn and set React Passive'),
-('2040502', '20405', '0', '0', '100', '6', '10500', '10500', '0', '0', '21', '0', '0', '0', '11', '35151', '0', '1', '0', '0', '0', '0', 'Nether Charge - Prevent Combat Movement and Cast Nether Charge Pulse'),
-('2040503', '20405', '0', '0', '100', '6', '12500', '12500', '0', '0', '11', '35151', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'Nether Charge - Cast Nether Charge Pulse'),
-('2040504', '20405', '0', '0', '100', '6', '14500', '14500', '0', '0', '11', '35151', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'Nether Charge - Cast Nether Charge Pulse'),
+('2040502', '20405', '29', '0', '100', '6', '10500', '10500', '0', '0', '11', '35151', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', 'Nether Charge - Prevent Combat Movement and Cast Nether Charge Pulse'),
+('2040503', '20405', '29', '0', '100', '6', '12500', '12500', '0', '0', '11', '35151', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', 'Nether Charge - Cast Nether Charge Pulse'),
+('2040504', '20405', '29', '0', '100', '6', '14500', '14500', '0', '0', '11', '35151', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', 'Nether Charge - Cast Nether Charge Pulse'),
 -- Sunseeker Engineer (4.3.4 Official Data - Normal/Heroic)
 ('2098801','20988','0','0','100','7','1300','9600','21700','30200','11','36341','1','0','0','0','0','0','0','0','0','0','Sunseeker Engineer - Cast Super Shrink Ray'),
 ('2098802','20988','0','0','100','3','5100','16400','12100','22900','11','36345','1','0','0','0','0','0','0','0','0','0','Sunseeker Engineer (Normal) - Cast Death Ray'),
