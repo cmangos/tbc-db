@@ -29783,7 +29783,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2005003','20050','9','0','100','3','0','20','6000','8000','11','37276','1','0','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Mind Flay'),
 ('2005004','20050','0','0','100','3','7000','11000','21000','26000','11','37275','5','1','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Shadow Word: Pain'),
 -- Crystalcore Mechanic
-('2005201','20052','15','0','100','3','0','50','10000','10000','11','37121','6','1','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Recharge on Friendly CC'),
+('2005201','20052','14','0','100','3','200000','50','10000','10000','11','37121','6','1','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Recharge on Friendly Low HP'),
 ('2005202','20052','0','0','100','3','8000','15000','16000','21000','11','37123','4','0','0','0','0','0','0','0','0','0','Crystalcore Mechanic - Cast Saw Blade'),
 -- Lord Sanguinar (20060) - boss_lord_sanguinar
 -- Grand Astromancer Capernian (20062) - boss_grand_astromancer_capernian
