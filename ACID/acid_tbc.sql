@@ -28584,6 +28584,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2225001','22250','11','0','100','2','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Rancid Mushroom - Stop Combat Movement and Stop Auto Attack on Spawn'),
 ('2225002','22250','0','0','100','3','1500','1500','1500','1500','11','31698','0','7','0','0','0','0','0','0','0','0','Rancid Mushroom - Cast Grow'),
 ('2225003','22250','0','0','100','2','20000','20000','0','0','11','38652','0','7','37','0','0','0','0','0','0','0','Rancid Mushroom - Cast Spore Cloud and Die'),
+-- Mushrom Spell Effect
+('2233501','22335','11','0','100','3','0','0','0','0','11','38730','0','0','0','0','0','0','0','0','0','0','Mushrom Spell Effect - Cast Refreshing Mist on Spawn'),
 -- Colossus Lurker (22347) - NSR
 -- Colossus Rager (22352) - NSR
 -- Serpentshrine Parasite (22379) - NSR
