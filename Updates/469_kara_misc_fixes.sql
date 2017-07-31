@@ -42,7 +42,7 @@ UPDATE `creature` SET `position_x`=-11223.17, `position_y`=-1686.636, `position_
 UPDATE `creature` SET `position_x`=-11238.66, `position_y`=-1684.178, `position_z`=290.4314, `orientation`=2.164208 WHERE `guid`=85345;
 
 -- Add proper auras
-UPDATE `creature_template_addon` SET `auras`='3417 18950' WHERE `entry`=16596; -- Stealth Detection and Thrash for Greater Fleshbeast
+UPDATE `creature_template_addon` SET `auras`='8876 18950' WHERE `entry`=16596; -- Stealth Detection and Thrash for Greater Fleshbeast
 UPDATE `creature_template_addon` SET `auras`='18950' WHERE `entry`=16485; -- Stealth Detection for Arcane Watchman
 UPDATE `creature_template_addon` SET `auras`='29908' WHERE `entry`=16491; -- Astral Bite for Mana Feeders
 UPDATE `creature_template_addon` SET `auras`='18950' WHERE `entry`=16504; -- Stealth Detection for Arcane Protector
