@@ -42,7 +42,7 @@ INSERT INTO dbscripts_on_quest_end(id, delay, command, datalong, datalong2, budd
 (10547,11,0,0,0,0,0,0x04,2000006091,0,0,0,0,0,0,0,'Tobias - SAY 1'),
 (10547,12,20,2,0,0,0,0x04,0,0,0,0,0,0,0,0,'Tobias - Start WP movement');
 DELETE FROM creature_movement_template WHERE entry IN(21411);
-INSERT INTO dbscripts_on_creature_movement(id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+INSERT INTO creature_movement_template(entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
 (21411, 1, -2080.785,5296.885,-37.323, 8000, 1054701, 0, 0, 0, 0, 0, 0, 0, 5.422, 0, 0),
 (21411, 2, -2083.83,5299.95,-37.3236, 1000, 1054702, 0, 0, 0, 0, 0, 0, 0, 0.314159, 0, 0);
 DELETE FROM dbscripts_on_creature_movement WHERE id IN(1054701,1054702);
