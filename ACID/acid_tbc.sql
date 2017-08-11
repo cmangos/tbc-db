@@ -19678,6 +19678,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1980602','19806','6','0','100','0','0','0','0','0','11','38311','1','7','0','0','0','0','0','0','0','0','Eclipsion Bloodwarder - Summon Eclipsion Hawkstrider on Death'),
 -- Crazed Colossus
 ('1982301','19823','6','0','100','0','0','0','0','0','11','38223','7','7','0','0','0','0','0','0','0','0','Crazed Colossus - Cast Quest Credit: Crazed Colossus on Death'),
+-- Son of Corok
+('1982401','19824','9','0','100','1','0','5','9500','18000','11','12612','0','0','0','0','0','0','0','0','0','0','Son of Corok  - Stomp'),
 -- Dark Conclave Talonite
 ('1982501','19825','9','0','100','1','0','8','12000','17000','11','39229','1','0','0','0','0','0','0','0','0','0','Dark Conclave Talonite - Cast Talon of Justice'),
 ('1982502','19825','9','0','100','1','0','5','12000','18000','11','39230','1','0','0','0','0','0','0','0','0','0','Dark Conclave Harbringer - Cold Touch'),
