@@ -11,4 +11,8 @@ DELETE FROM dbscripts_on_creature_movement WHERE id IN(7273) AND command=5;
 INSERT INTO dbscripts_on_creature_movement(id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 ('7273', '0', '5', '46', '256', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Gahzrilla - Remove Unit Flag IMMUNE_TO_PLAYER');
 
+-- What Book? I Don't See Any Book. (10231)
+UPDATE creature_template SET UnitFlags=32768|512|256 WHERE entry=19720; -- "Dirty" Larry <Ruffian>
+UPDATE creature_template SET UnitFlags=32768|512|256 WHERE entry=19725; -- "Epic" Malone <Ruffian>
+UPDATE creature_template SET UnitFlags=32768|512|256 WHERE entry=19726; -- "Creepjack" <Ruffian>
 
