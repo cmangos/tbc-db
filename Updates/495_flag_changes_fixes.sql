@@ -6,4 +6,9 @@ UPDATE creature_template SET UnitFlags=33600 WHERE entry IN(20912,21599); -- har
 UPDATE creature_template SET UnitFlags=320,FactionAlliance=16,FactionHorde=16 WHERE entry IN(21181);
 UPDATE creature_model_info SET bounding_radius=5,combat_reach=10 WHERE modelid IN(20135);
 
+-- remove 256 unitflag from gahzrilla at end of WPs
+DELETE FROM dbscripts_on_creature_movement WHERE id IN(7273) AND command=5;
+INSERT INTO dbscripts_on_creature_movement(id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+('7273', '0', '5', '46', '256', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Gahzrilla - Remove Unit Flag IMMUNE_TO_PLAYER');
+
 
