@@ -1,0 +1,1 @@
+REPLACE INTO `item_template` (`entry`, `RequiredLevel`) VALUES (20033, 60);
