@@ -29706,7 +29706,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2004003','20040','2','0','100','2','15','0','0','0','11','34937','0','1','0','0','0','0','0','0','0','0','Crystalcore Devastator - Cast Power Down at 15% HP'),
 ('2004004','20040','2','0','100','3','30','25','1000','1000','28','0','34937','0','0','0','0','0','0','0','0','0','Crystalcore Devastator - Remove Power Down at 25% HP'),
 -- Crystalcore Sentinel
-('2004101','20041','0','0','100','3','9000','14000','25000','35000','11','37104','1','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Overcharge'),
+('2004101','20041','0','0','100','3','9000','14000','25000','35000','11','37104','1','0','1','-1556','0','0','0','0','0','0','Crystalcore Sentinel - Cast Overcharge'),
 ('2004102','20041','0','0','100','3','21000','25000','25000','30000','11','37106','0','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Charged Arcane Explosion'),
 ('2004103','20041','2','0','100','2','15','0','0','0','11','34937','0','1','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Cast Power Down at 15% HP'),
 ('2004104','20041','2','0','100','3','30','25','1000','1000','28','0','34937','0','0','0','0','0','0','0','0','0','Crystalcore Sentinel - Remove Power Down at 25% HP'),
@@ -32542,7 +32542,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1552','%s moans from the pain of his thorn scratch.','0','2','0','18218','0'),
 ('-1553','Shifting, %s moans from the pain of his thorn scratch.','0','2','0','18218','0'),
 ('-1554','%s looks at his friends and then grunts painfully.','0','2','0','18218','0'),
-('-1555','%s wakes himself up snoring.','0','2','0','18218','0');
+('-1555','%s wakes himself up snoring.','0','2','0','18218','0'),
+('-1556','%s\'s hand begins to glow with Arcane energy!','0','2','0','20041','0');
 
 
 -- =======================================================
