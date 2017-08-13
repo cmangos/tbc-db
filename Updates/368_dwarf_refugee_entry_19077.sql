@@ -1,6 +1,6 @@
 UPDATE creature SET MovementType=2, orientation=0 WHERE guid=68395; -- Leader
-UPDATE creature SET MovementType=0, orientation=0, position_x=-1892.04, position_y=5179.68, position_z=-46.875 WHERE guid=68394; -- Follower 1
-UPDATE creature SET MovementType=0, orientation=0, position_x=-1894.54, position_y=5179.68, position_z=-45.521030 WHERE guid=68393; -- Follower 2
+UPDATE creature SET MovementType=0, orientation=0, position_x=-1892.04, position_y=5179.68, position_z=-46.875, spawndist=0 WHERE guid=68394; -- Follower 1
+UPDATE creature SET MovementType=0, orientation=0, position_x=-1894.54, position_y=5179.68, position_z=-45.521030, spawndist=0 WHERE guid=68393; -- Follower 2
 
 DELETE FROM creature_movement WHERE id IN(68394,68393); -- Delete the old follower paths
 
