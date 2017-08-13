@@ -28947,7 +28947,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1659602','16596','0','0','100','3','5000','9000','7000','10000','11','29939','4','0','0','0','0','0','0','0','0','0','Greater Fleshbeast - Cast Infectious Poison'),
 -- Void Zone
 ('1669701', '16697', '11', '0', '100', '2', '0', '0', '0', '0', '21', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Void Zone (Netherspite) - Do not move in combat'),
-('1669702', '16697', '11', '0', '100', '2', '0', '0', '0', '0', '11', '32250', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Void Zone (Netherspite) - Cast Consumption on Spawn'),
+('1669702', '16697', '11', '0', '100', '2', '0', '0', '0', '0', '11', '28874', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Void Zone (Netherspite) - Cast Consumption on Spawn'),
 -- Ebonlocke (16806) - NSR
 -- Sebastian (16811) - NSR
 -- Barnes (16812) - npc_barnes
