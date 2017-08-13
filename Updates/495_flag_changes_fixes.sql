@@ -16,3 +16,7 @@ UPDATE creature_template SET UnitFlags=32768|512|256 WHERE entry=19720; -- "Dirt
 UPDATE creature_template SET UnitFlags=32768|512|256 WHERE entry=19725; -- "Epic" Malone <Ruffian>
 UPDATE creature_template SET UnitFlags=32768|512|256 WHERE entry=19726; -- "Creepjack" <Ruffian>
 
+-- add missing 512 flag to Netherspite portals
+UPDATE creature_template SET UnitFlags=33555200 WHERE entry IN(17367,17368,17369);
+
+
