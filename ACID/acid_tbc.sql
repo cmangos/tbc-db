@@ -18629,6 +18629,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1715602','17156','2','0','100','0','30','0','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Tortured Earth Spirit - Cast Enrage at 30% HP'),
 -- Shattered Rumbler
 ('1715701','17157','0','0','100','1','7000','14000','14000','21000','11','33840','0','0','0','0','0','0','0','0','0','0','Shattered Rumbler - Cast Earth Rumble'),
+-- Storm Rager
+('1715901','17159','0','0','100','1','4000','8000','8000','12000','11','32018','1','0','0','0','0','0','0','0','0','0','Storm Rager - Cast Call Lightning'),
 -- Living Cyclone
 ('1716001','17160','9','0','100','0','35','40','0','0','11','31705','1','0','0','0','0','0','0','0','0','0','Living Cyclone - Cast Magnetic Pull'),
 -- Voidspawn
