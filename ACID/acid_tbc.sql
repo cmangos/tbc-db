@@ -19747,6 +19747,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2118107','21181','21','0','100','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Forced Despawn on Reached Home'),
 -- Oronok Torn-Heart
 ('21183001', '21183', '0', '0', '100', '1', '6700', '11200', '18100', '24900', '11', '16006', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Oronok Torn-Heart - Cast Chain Lightning'),
+-- Ravenous Flayer
+('2119601','21196','0','0','100','1','4000','12000','20000','25000','11','37933','1','0','0','0','0','0','0','0','0','0','Ravenous Flayer - Cast Consume Flesh'),
 -- Bonechewer Messenger
 ('2124401','21244','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Bonechewer Messenger - Dismount on Aggro'),
 ('2124402','21244','9','0','100','0','8','25','0','0','11','35570','1','0','0','0','0','0','0','0','0','0','Bonechewer Messenger - Cast Charge'),
