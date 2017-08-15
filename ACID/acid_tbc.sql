@@ -18165,6 +18165,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1691209','16912','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mag\'har Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bonechewer Raider
 ('1692501','16925','4','0','100','0','0','0','0','0','11','32723','0','0','0','0','0','0','0','0','0','0','Bonechewer Raider - Summon Bonechewer Riding Wolf on Aggro'),
+-- Stonescythe Whelp
+('1692701','16927','2','0','100','1','50','0','15300','22900','11','33896','0','0','0','0','0','0','0','0','0','0','Stonescythe Whelp - Cast Desperate Defense at 50% HP'),
 -- Stonescythe Alpha
 ('1692901','16929','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase 1 on Aggro'),
 ('1692902','16929','9','5','100','1','0','5','5000','9000','11','33911','1','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Cast Tear Armor (Phase 1)'),
