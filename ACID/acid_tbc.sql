@@ -17854,6 +17854,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2106601','21066','1','0','100','1','60000','60000','300000','300000','1','-339','0','0','0','0','0','0','0','0','0','0','Rina Moonspring - Gossip Event Text Emote'),
 -- Rip Pedalslam
 ('2110701','21107','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Rip Pedalslam - Summon Enraged Gryphons and Yell on Aggro'),
+-- Felsworn Scalewing
+('2112301','21123','9','0','100','1','0','30','14000','15000','11','32093','1','0','0','0','0','0','0','0','0','0','Felsworn Scalewing - Cast Poison Spit'),
 -- Dullgrom Dredger
 ('2125401','21254','0','0','100','0','2000','3000','0','0','28','0','36661','0','0','0','0','0','0','0','0','0','Dullgrom Dredger - Remove Confused Ogre'),
 ('2125402','21254','2','0','100','0','30','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Dullgrom Dredger - Enrage on Low Health'),
