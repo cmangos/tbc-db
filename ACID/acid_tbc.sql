@@ -19474,7 +19474,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Captured Protectorate Vanguard 20763 
 -- Warden Icoshock 20770 
 -- Netherock 20772 
--- Barbscale Crocolisk 20773 
+-- Barbscale Crocolisk
+('2077301','20773','9','0','100','1','0','5','20000','20000','11','3604','1','0','0','0','0','0','0','0','0','0','Barbscale Crocolisk - Cast Tendon Rip'),
 -- Farahlon Lasher
 ('2077401','20774','9','0','100','1','0','30','14000','19000','11','12747','1','0','0','0','0','0','0','0','0','0','Farahlon Lasher - Cast Entangling Roots'),
 ('2077402','20774','9','0','100','1','0','8','16000','21000','11','36604','0','0','0','0','0','0','0','0','0','0','Farahlon Lasher - Cast Flanking Growth'),
