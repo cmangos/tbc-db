@@ -13196,6 +13196,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift Palomino (14559) - NSR
 -- Swift White Steed (14560) - NSR
 -- Swift Brown Steed (14561) - NSR
+-- Doctor Weavil
+('1555201','15552','0','0','100','1','15000','15000','121000','121000','11','25772','1','0','0','0','0','0','0','0','0','0','Doctor Weavil - Cast Mental Domination'),
+('1555202','15552','0','0','100','1','15000','25000','25000','30000','11','25774','4','0','0','0','0','0','0','0','0','0','Doctor Weavil - Cast Mind Shatter'),
 -- Doctor Weavil's Flying Machine (15553) - NSR
 -- Minion of Weavil (15591) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
