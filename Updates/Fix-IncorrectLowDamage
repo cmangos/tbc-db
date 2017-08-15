@@ -1,2 +1,0 @@
-select entry, DamageMultiplier from `creature_template` where DamageMultiplier = 0;
-UPDATE `creature_template` set  DamageMultiplier = 1 WHERE `DamageMultiplier` = 0;
