@@ -18567,6 +18567,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =======
 -- Nagrand
 -- =======
+-- Talbuk Stag
+('1713001','17130','0','0','100','1','6000','12000','19000','26000','11','32019','1','0','0','0','0','0','0','0','0','0','Talbuk Thorngrazer - Cast Gore'),
 -- Boulderfist Crusher (Need to research combat spells)
 ('1713401','17134','30','0','30','33','5','18369','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Boulderfist Crusher - Set Phase 1 on Receive AI Event 5 (A)'),
 ('1713402','17134','1','1','100','33','3000','3000','3000','3000','1','-1125','-1126','0','1','-1127','-1128','0','0','0','0','0','Boulderfist Crusher - Random Say OOC (Phase 1)'),
