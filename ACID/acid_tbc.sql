@@ -18567,6 +18567,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =======
 -- Nagrand
 -- =======
+-- Windroc
+('1712801','17128','0','0','100','1','5000','10000','10000','20000','11','30285','1','32','0','0','0','0','0','0','0','0','Windroc - Cast Eagle Claw'),
 -- Talbuk Stag
 ('1713001','17130','0','0','100','1','6000','12000','19000','26000','11','32019','1','0','0','0','0','0','0','0','0','0','Talbuk Thorngrazer - Cast Gore'),
 -- Boulderfist Crusher (Need to research combat spells)
