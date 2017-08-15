@@ -23637,6 +23637,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1810506','18105','2','0','100','6','20','0','0','0','11','15716','0','0','1','-46','0','0','0','0','0','0','Ghaz\'an - Cast Enrage at 20% HP'),
 -- Lykul Stinger (3.0.3 Official Data - Normal Logs Only)
 ('1963201','19632','2','0','100','7','50','0','14000','18000','11','34392','0','1','1','-46','0','0','0','0','0','0','Lykul Stinger - Cast Stinger Rage at 50% HP'),
+-- Underbog Frenzy
+('2046501','20465','9','0','100','7','0','5','10000','20000','11','12097','1','0','0','0','0','0','0','0','0','0','Underbog Frenzy - Cast Pierce Armor'),
 -- Spore Strider
 ('2229901','22299','0','0','100','5','1000','3000','4800','6100','11','20824','4','0','0','0','0','0','0','0','0','0','Spore Strider (Heroic) - Cast Lightning Bolt'),
 
