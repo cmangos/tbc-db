@@ -4061,7 +4061,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1635703','16357','0','0','100','1','8000','12000','11000','15000','11','28887','1','1','0','0','0','0','0','0','0','0','Anok\'suten - Cast Wither Strike'),
 ('1635704','16357','2','0','100','0','30','0','0','0','39','40','0','0','1','-551','0','0','0','0','0','0','Anok\'suten - Call For Help at 30% HP'),
 -- Kel'gash the Wicked
-('1635801','16358','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Kel\'gash the Wicked - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1635801','16358','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','1','-267','0','0','Kel\'gash the Wicked - Enable Dynamic Movement, Set Phase 1 and Say on Aggro'),
 ('1635802','16358','9','5','100','1','0','40','3400','4800','11','20802','1','0','0','0','0','0','0','0','0','0','Kel\'gash the Wicked - Cast Lightning Bolt (Phase 1)'),
 ('1635803','16358','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Kel\'gash the Wicked - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1635804','16358','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Kel\'gash the Wicked - Disable Dynamic Movement at 0-8 Yards'),
@@ -31581,7 +31581,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Reuse 263-264
 ('-265','Ya look lovesick. Special someone be gettin\' ya down, eh? No worries, no worries. Ya get this medallion from me, ya wear it when ya see \'em and they be all over ya, sweetheart!','0','0','0','19227','0'),
 ('-266','Me hungry. Fruit look tasty.','0','0','0','22940','0'),
--- Reuse 267
+('-267','Haha... I gonna kill puny $r and make trophy of your skull!','0','0','0','16358','0'),
 ('-268','Grok get angry if puny ones not go to Blade\'s Edge and talk to Mog\'dorg!','0','0','0','22940','0'),
 ('-269','Nothing like a tankard full to wash down one of my magnificent muffins.','0','0','0','19664','0'),
 ('-270','Yea, that hit the spot. Muffins for sale! Get your fresh muffins right here!','0','0','0','19664','0'),
