@@ -26784,17 +26784,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1797609','17976','5','0','100','7','5000','5000','0','0','1','-21','-35','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Player Kill'),
 ('1797610','17976','6','0','100','6','0','0','0','0','1','-36','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Death'),
 -- Warp Splinter (17977) - boss_warp_splinter
--- Thorngrin the Tender (4.3.4 Official Data - Normal/Heroic) - (Enrage After Successful Sacrifice Cast - Current is Workaround with EventAI Core Limitations)
-('1797801','17978','4','0','100','6','0','0','0','0','1','-9','0','0','22','1','0','0','0','0','0','0','Thorngrin the Tender - Yell and Set Phase 1 on Aggro'),
-('1797802','17978','0','5','100','3','4800','12100','16900','25300','11','34659','0','1','1','-10','-11','0','0','0','0','0','Thorngrin the Tender (Normal) - Cast Hellfire and Random Yell (Phase 1)'),
-('1797803','17978','0','5','100','5','4800','12100','16900','22900','11','39131','0','1','1','-10','-11','0','0','0','0','0','Thorngrin the Tender (Heroic) - Cast Hellfire and Random Yell (Phase 1)'),
-('1797804','17978','0','5','100','7','12000','12000','26000','26000','11','34661','5','0','1','-14','0','0','22','2','0','0','Thorngrin the Tender - Cast Sacrifice and Yell and Set Phase 2 (Phase 1)'),
-('1797805','17978','24','3','100','7','34661','1','2000','2000','11','34670','0','0','1','-46','0','0','0','22','1','0','Thorngrin the Tender - Cast Enrage and Yell and Set Phase 1 (Phase 2)'),
-('1797806','17978','2','0','100','6','50','0','0','0','1','-12','0','0','0','0','0','0','0','0','0','0','Thorngrin the Tender - Yell at 50% HP'),
-('1797807','17978','2','0','100','6','20','0','0','0','1','-13','0','0','0','0','0','0','0','0','0','0','Thorngrin the Tender - Yell at 20% HP'),
-('1797808','17978','5','0','100','7','5000','5000','0','0','1','-15','0','0','0','0','0','0','0','0','0','0','Thorngrin the Tender - Yell on Player Kill'),
-('1797809','17978','6','0','100','6','0','0','0','0','1','-16','0','0','22','0','0','0','0','0','0','0','Thorngrin the Tender - Yell and Set Phase 0 on Death'),
-('1797810','17978','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Thorngrin the Tender - Set Phase 0 on Evade'),
+-- Thorngrin the Tender - boss_thorngrin
 -- Laj (17980) - boss_laj
 -- Bloodwarder Protector (4.3.4 Official Data - Normal/Heroic)
 ('1799301','17993','9','0','100','6','8','25','0','0','11','34784','1','0','0','0','0','0','0','0','0','0','Bloodwarder Protector - Cast Intervene on Aggro'),
@@ -31418,14 +31408,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-6','Grrrr... fresh meat!','0','0','0','Common Gnoll Text','0'),
 ('-7','You no take candle!','0','0','0','Common Kobold Text','0'),
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
-('-9','What aggravation is this? You will die!','11205','1','0','17978','0'),
-('-10','Scream while you burn! ','11211','1','0','17978','0'),
-('-11','I\'ll incinerate you!','11210','1','0','17978','0'),
-('-12','I revel in your pain!','11209','1','0','17978','0'),
-('-13','You seek a prize, eh? How about death?','11206','1','0','17978','0'),
-('-14','Your life will be mine!','11208','1','0','17978','0'),
-('-15','I hate to say I told you so...','11207','1','0','17978','0'),
-('-16','You won\'t... get far.','11212','1','0','17978','0'),
+-- PLEASE RE-USE -9 to -15
 ('-17','Insolent fool! You thought to steal Zelemar\'s blood? You shall pay with your own!','0','1','0','17830','0'),
 ('-18','For Victory! For Agamaggan!','5812','1','0','4420','0'),
 ('-19','I\'m gonna cook ya, and then i\'m going to eat ya!','0','0','0','20905','1'),
