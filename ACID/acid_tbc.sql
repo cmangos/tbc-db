@@ -20346,6 +20346,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1854110','18541','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Urdak - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('1854111','18541','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Urdak - Flee at 15% HP (Phase 3)'),
 ('1854112','18541','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Urdak - Set Phase to 0 on Evade'),
+-- Firewing Courier
+('1854801','18548','0','0','100','0','0','0','0','0','1','-700','0','0','0','0','0','0','0','0','0','0','Firewing Courier - Say on Aggro'),
 -- Sharth Voldoun 
 ('1855401','18554','0','0','100','1','3000','5000','40000','45000','11','15277','0','0','0','0','0','0','0','0','0','0','Sharth Voldoun - Cast Seal of Reckoning'),
 ('1855402','18554','2','0','100','0','40','0','15000','20000','11','13952','0','0','0','0','0','0','0','0','0','0','Sharth Voldoun - Cast Holy Light When Below 40% HP'),
@@ -31942,7 +31944,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-697','My life... to the master.','0','0','0','17899','0'),
 ('-698','ATTACK WITH THE FULL FORCE OF NETHERWING, MY CHILDREN! ATTACK!','0','1','0','11980','0'),
 ('-699','Lord Illidan, bless me with the power of the flight!','0','1','0','11980','0'),
--- PLEASE RE-USE -700
+('-700','This belongs to Firewing Point.  You\'ll not be putting your grubby hands on it!','0','0','0','18548','0'),
 ('-701','Impudent fools! I will kill you myself!','8609','1','0','15341','0'),
 ('-702','Warriors! Captains! Continue the fight!','8613','1','0','15341','0'),
 ('-703','You are not worth my time, $n.','8614','1','0','15341','0'),
