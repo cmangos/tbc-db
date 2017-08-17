@@ -26745,12 +26745,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Negaton Field 
 ('2141401','21414','11','0','100','2','0','0','0','0','11','36728','0','0','41','20000','0','0','0','0','0','0','Negaton Field (Normal) - Cast Negaton Field and Delayed Despawn on Spawn'),
 ('2141402','21414','11','0','100','4','0','0','0','0','11','38833','0','0','41','20000','0','0','0','0','0','0','Negaton Field (Heroic) - Cast Negaton Field and Delayed Despawn on Spawn'),
--- Harbinger Skyriss (SD2 Backport)
-('2146601','21466','0','0','100','3','10000','10000','10000','10000','11','36929','4','0','0','0','0','0','0','0','0','0','Harbinger Skyriss (Normal) - Cast Mind Rend'),
-('2146602','21466','0','0','100','5','10000','10000','10000','10000','11','39021','4','0','0','0','0','0','0','0','0','0','Harbinger Skyriss (Heroic) - Cast Mind Rend'),
--- Harbinger Skyriss (SD2 Backport)
-('2146701','21467','0','0','100','3','10000','10000','10000','10000','11','36929','4','0','0','0','0','0','0','0','0','0','Harbinger Skyriss (Normal) - Cast Mind Rend'),
-('2146702','21467','0','0','100','5','10000','10000','10000','10000','11','39021','4','0','0','0','0','0','0','0','0','0','Harbinger Skyriss (Heroic) - Cast Mind Rend'),
+-- Harbinger Skyriss Illusion 1 (SD2 Backport)
+('2146601','21466','0','0','100','3','10000','10000','10000','10000','11','36929','4','0','0','0','0','0','0','0','0','0','Harbinger Skyriss Illusion 1 (Normal) - Cast Mind Rend'),
+('2146602','21466','0','0','100','5','10000','10000','10000','10000','11','39021','4','0','0','0','0','0','0','0','0','0','Harbinger Skyriss Illusion 1 (Heroic) - Cast Mind Rend'),
+('2146603','21466','11','0','100','6','0','0','0','0','11','26262','0','0','0','0','0','0','0','0','0','0','Harbinger Skyriss Illusion 1 - Cast Birth on Spawn'),
+('2146604','21466','29','0','100','6','200','200','0','0','11','36937','0','0','19','2','0','0','0','0','0','0','Harbinger Skyriss Illusion 1 - Cast Mind Rend and remove NON_ATTACKABLE flag'),
+-- Harbinger Skyriss Illusion 2 (SD2 Backport)
+('2146701','21467','0','0','100','3','10000','10000','10000','10000','11','36929','4','0','0','0','0','0','0','0','0','0','Harbinger Skyriss Illusion 2 (Normal) - Cast Mind Rend'),
+('2146702','21467','0','0','100','5','10000','10000','10000','10000','11','39021','4','0','0','0','0','0','0','0','0','0','Harbinger Skyriss Illusion 2 (Heroic) - Cast Mind Rend'),
+('2146703','21467','11','0','100','6','0','0','0','0','11','26262','0','0','0','0','0','0','0','0','0','0','Harbinger Skyriss Illusion 2 - Cast Birth on Spawn'),
+('2146704','21467','29','0','100','6','200','200','0','0','11','36937','0','0','19','2','0','0','0','0','0','0','Harbinger Skyriss Illusion 2 - Cast Mind Rend and remove NON_ATTACKABLE flag'),
 -- Ethereum Life-Binder
 ('2170201','21702','9','0','100','3','0','8','14000','20000','11','37480','1','1','0','0','0','0','0','0','0','0','Ethereum Life-Binder (Normal) - Cast Bind'),
 ('2170202','21702','9','0','100','5','0','8','14000','20000','11','38900','1','1','0','0','0','0','0','0','0','0','Ethereum Life-Binder (Heroic) - Cast Bind'),
