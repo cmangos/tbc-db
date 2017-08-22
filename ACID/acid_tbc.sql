@@ -20422,8 +20422,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Firewing Courier
 ('1854801','18548','0','0','100','0','0','0','0','0','1','-700','0','0','0','0','0','0','0','0','0','0','Firewing Courier - Say on Aggro'),
 -- Sharth Voldoun 
-('1855401','18554','0','0','100','1','3000','5000','40000','45000','11','15277','0','0','0','0','0','0','0','0','0','0','Sharth Voldoun - Cast Seal of Reckoning'),
-('1855402','18554','2','0','100','0','40','0','15000','20000','11','13952','0','0','0','0','0','0','0','0','0','0','Sharth Voldoun - Cast Holy Light When Below 40% HP'),
+('1855401','18554','4','0','100','0','0','0','0','0','53','2','0','0','53','4','6','0','54','-1137','0','0','Sharth Voldoun - Say and Run Despawn Script for Pathaleon the Calculator\'s Image on Aggro'),
+('1855402','18554','2','0','100','1','70','0','30000','35000','11','15277','0','0','0','0','0','0','0','0','0','0','Sharth Voldoun - Cast Seal of Reckoning When Below 70% HP'),
+('1855403','18554','2','0','100','1','50','0','15000','20000','11','13952','0','0','0','0','0','0','0','0','0','0','Sharth Voldoun - Cast Holy Light When Below 50% HP'),
 -- Lisaile Fireweaver
 ('1858301','18583','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Lisaile Fireweaver - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1858302','18583','9','13','100','1','0','40','3400','4800','11','9053','1','0','0','0','0','0','0','0','0','0','Lisaile Fireweaver - Cast Fireball (Phase 1)'),
@@ -32358,7 +32359,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1134','We will find what the Master is looking for! Failure is not an option!','0','1','0','19354','0'),
 ('-1135','None can stand against the serpent lords!','5786','1','0','3671','0'),
 ('-1136','Speak, filthy refugee! What was your caravan doing in the Bone Wastes?','0','0','0','22378','0'),
--- 1137 and 1138 REUSE
+('-1137','You come into my house and threaten ME?  I think not!','0','0','0','18554','0'),
+-- 1138 REUSE
 ('-1139','Come, $n. See what the Nightmare brings...','0','1','0','15625','0'),
 ('-1140','The Nightmare cannot be stopped!','0','1','0','15625','0'),
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','15625','0'),
