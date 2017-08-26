@@ -12,4 +12,9 @@ UPDATE quest_template SET RequiredRaces=0 WHERE entry IN (140,139,138,136);
 -- http://www.wowhead.com/item=30431/thunderlord-clan-artifact#comments:id=368675
 UPDATE creature_loot_template SET ChanceOrQuestChance=10 WHERE item=30431;
 
+-- Waterlogged Letter (2656) should only contain Waterlogged Envelope
+DELETE FROM gameobject_loot_template WHERE entry=2117 AND item != 4433;
+-- Decrease respawn time of Waterlogged Letter (was 2 hours)
+UPDATE gameobject SET spawntimesecsmin=300, spawntimesecsmax=300 WHERE id=2656;
+
 
