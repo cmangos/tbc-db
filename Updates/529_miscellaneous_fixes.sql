@@ -8,4 +8,8 @@ Horde can also get this quest along with every other captain sander's quests.
 */
 UPDATE quest_template SET RequiredRaces=0 WHERE entry IN (140,139,138,136);
 
+-- Thunderlord Clan Artifact should drop more often
+-- http://www.wowhead.com/item=30431/thunderlord-clan-artifact#comments:id=368675
+UPDATE creature_loot_template SET ChanceOrQuestChance=10 WHERE item=30431;
+
 
