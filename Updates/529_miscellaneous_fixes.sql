@@ -17,4 +17,7 @@ DELETE FROM gameobject_loot_template WHERE entry=2117 AND item != 4433;
 -- Decrease respawn time of Waterlogged Letter (was 2 hours)
 UPDATE gameobject SET spawntimesecsmin=300, spawntimesecsmax=300 WHERE id=2656;
 
+-- quest is rewarded using spells and not with this outdated mechanic
+UPDATE quest_template SET ReqSpellCast1=0,ReqSpellCast2=0,ReqSpellCast3=0 WHERE entry IN(10720);
+
 
