@@ -20,4 +20,7 @@ UPDATE gameobject SET spawntimesecsmin=300, spawntimesecsmax=300 WHERE id=2656;
 -- quest is rewarded using spells and not with this outdated mechanic
 UPDATE quest_template SET ReqSpellCast1=0,ReqSpellCast2=0,ReqSpellCast3=0 WHERE entry IN(10720);
 
+-- fix murmur unitflags
+UPDATE creature_template SET UnitFlags=32832 WHERE entry IN(18708,20657);
+
 
