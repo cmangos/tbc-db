@@ -1,5 +1,6 @@
 UPDATE creature_template SET ModelId1=11686,ModelId2=19963,AIName='NullAI' WHERE entry IN(21030);
 UPDATE creature_template SET AIName='NullAI' WHERE entry IN(20978);
+UPDATE creature_template SET UnitFlags=33554432,ExtraFlags=0 WHERE entry IN(21625,21030,20978); -- fix wrong flags and data
 
 DELETE FROM creature WHERE id IN(20978);
 INSERT INTO creature(guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
