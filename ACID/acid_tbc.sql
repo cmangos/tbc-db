@@ -5574,10 +5574,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dorius Stonetender (8284) - NSR
 -- Dark Iron Steelshifter (8337) - NSR
 -- Dark Iron Marksman (8338) - NSR     
--- Lathoric the Black (8391) - NSR
+-- Lathoric the Black
+('839101','8391','11','0','100','0','0','0','0','0','54','-273','0','0','0','0','0','0','0','0','0','0','Lathoric the Black - Yell on Spawn'),
+('839102','8391','21','0','100','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Lathoric the Black - Forced Despawn on Reached Home'),
 -- Obsidion      
 ('840001','8400','9','0','100','1','0','5','15000','21000','11','10101','1','0','0','0','0','0','0','0','0','0','Obsidion - Cast Knock Away'),
 ('840002','8400','0','0','100','1','7000','11000','12000','16000','11','12734','0','0','0','0','0','0','0','0','0','0','Obsidion - Cast Knock Away'),
+('840003','8400','7','0','100','0','0','0','0','0','18','256','0','0','0','0','0','0','0','0','0','0','Obsidion - Set UNIT_FLAG_IMMUNE_TO_PLAYER on Evade'),
 -- Enslaved Archaeologist (8402) - NSR
 -- Dying Archaeologist (8417) - NSR
 -- Twilight Idolater (8419) - NSR
@@ -31689,7 +31692,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-270','Yea, that hit the spot. Muffins for sale! Get your fresh muffins right here!','0','0','0','19664','0'),
 ('-271','Yea, yea, I\'m the muffin man. You know why? Because I sell muffins, that\'s why!','0','0','0','19664','0'),
 ('-272','I\'ve got muffins right over here. Come on over!','0','0','0','19664','0'),
--- Reuse 273
+('-273','Obsidion, Rise and Serve your Master!','0','1','0','8391','0'),
 ('-274','%s looks weak enough to capture.','0','2','0','4351','0'),
 ('-275','This land was mine long before your wretched kind set foot here.','0','1','0','23864','0'),
 ('-276','All who venture here belong to me, including you!','0','1','0','23864','0'),
