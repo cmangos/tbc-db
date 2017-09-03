@@ -19835,6 +19835,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2088705','20887','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Deathforge Imp - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('2088706','20887','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Deathforge Imp - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2088707','20887','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Deathforge Imp - Set Phase to 0 on Evade'),
+-- Coilskar Assassin
+('2104401','21044','4','0','100','0','0','0','0','0','54','0','0','5','0','0','0','0','0','0','0','0','Coilskar Assassin - Random Say on Aggro'),
 -- Enraged Earth Spirit
 ('2105001','21050','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Enraged Earth Spirit - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('2105002','21050','9','0','100','1','0','30','3800','5200','11','38498','4','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Cast Fiery Boulder'),
@@ -32700,7 +32702,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1553','Shifting, %s moans from the pain of his thorn scratch.','0','2','0','18218','0'),
 ('-1554','%s looks at his friends and then grunts painfully.','0','2','0','18218','0'),
 ('-1555','%s wakes himself up snoring.','0','2','0','18218','0'),
-('-1556','%s\'s hand begins to glow with Arcane energy!','0','2','0','20041','0');
+('-1556','%s\'s hand begins to glow with Arcane energy!','0','2','0','20041','0'),
+('-1557','Kill them all!','0','0','0','21044','0'),
+('-1558','You will never essscape Coilssskarrr...','0','0','0','21044','0');
 
 
 -- =======================================================
