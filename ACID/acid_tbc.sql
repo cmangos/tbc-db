@@ -20428,7 +20428,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Firewing Courier
 ('1854801','18548','0','0','100','0','0','0','0','0','1','-700','0','0','0','0','0','0','0','0','0','0','Firewing Courier - Say on Aggro'),
 -- Sharth Voldoun 
-('1855401','18554','4','0','100','0','0','0','0','0','53','2','0','0','53','4','6','0','54','-1137','0','0','Sharth Voldoun - Say and Run Despawn Script for Pathaleon the Calculator\'s Image on Aggro'),
+('1855401','18554','4','0','100','0','0','0','0','0','53','10025','0','0','53','10027','6','0','54','-1137','0','0','Sharth Voldoun - Say and Run Despawn Script for Pathaleon the Calculator\'s Image on Aggro'),
 ('1855402','18554','2','0','100','1','70','0','30000','35000','11','15277','0','0','0','0','0','0','0','0','0','0','Sharth Voldoun - Cast Seal of Reckoning When Below 70% HP'),
 ('1855403','18554','2','0','100','1','50','0','15000','20000','11','13952','0','0','0','0','0','0','0','0','0','0','Sharth Voldoun - Cast Holy Light When Below 50% HP'),
 -- Lisaile Fireweaver

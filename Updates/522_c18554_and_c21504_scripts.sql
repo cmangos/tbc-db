@@ -15,17 +15,17 @@ UPDATE creature_movement_template SET pathId=1 WHERE entry=21504 AND pathId=0;
 UPDATE creature_template SET ExtraFlags=0 WHERE entry IN(20781,20617);
 
 
-DELETE FROM `dbscripts_on_relay` WHERE `id` IN(2,3,4);
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN(10025,10026,10027);
 INSERT INTO `dbscripts_on_relay` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(2,0,45,3,0,0,0,0,0,0,21504,10,0,'Sharth Voldoun - Run Despawn Script for Pathaleon the Calculator\'s Image',0,0,0,0),
-(2,0,32,1,0,0,0,0,0,0,0,0,0,'Sharth Voldoun - Pause Waypoints (Failsafe in case he resets within 10 seconds)',0,0,0,0),
-(2,15,32,0,0,0,0,0,0,0,0,0,0,'Sharth Voldoun - Resume Waypoints',0,0,0,0),
+(10025,0,45,10026,0,0,0,0,0,0,21504,10,0,'Sharth Voldoun - Run Despawn Script for Pathaleon the Calculator\'s Image',0,0,0,0),
+(10025,0,32,1,0,0,0,0,0,0,0,0,0,'Sharth Voldoun - Pause Waypoints (Failsafe in case he resets within 10 seconds)',0,0,0,0),
+(10025,15,32,0,0,0,0,0,0,0,0,0,0,'Sharth Voldoun - Resume Waypoints',0,0,0,0),
 
-(3,2,0,0,0,0,2000001329,0,0,0,0,0,0,'Pathaleon the Calculator''s Image - I believe I may recognize them.  Deal with this quickly, Sharth.  Then take the mana bomb and destroy their town!',0,0,0,0),
-(3,10,15,34427,0,0,0,0,0,0,0,0,4,'Pathaleon the Calculator''s Image - Cast Ethereal Teleport',0,0,0,0),
-(3,10,18,1500,0,0,0,0,0,0,0,0,2,'Pathaleon the Calculator''s Image - Despawn Self',0,0,0,0),
+(10026,2,0,0,0,0,2000001329,0,0,0,0,0,0,'Pathaleon the Calculator''s Image - I believe I may recognize them.  Deal with this quickly, Sharth.  Then take the mana bomb and destroy their town!',0,0,0,0),
+(10026,10,15,34427,0,0,0,0,0,0,0,0,4,'Pathaleon the Calculator''s Image - Cast Ethereal Teleport',0,0,0,0),
+(10026,10,18,1500,0,0,0,0,0,0,0,0,2,'Pathaleon the Calculator''s Image - Despawn Self',0,0,0,0),
 
-(4,0,36,0,0,0,0,0,0,0,21504,30,3,'Pathaleon the Calculator''s Image - Set Facing towards the player that attacked Sharth Voldoun',0,0,0,0);
+(10027,0,36,0,0,0,0,0,0,0,21504,30,3,'Pathaleon the Calculator''s Image - Set Facing towards the player that attacked Sharth Voldoun',0,0,0,0);
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 1855401 AND 1855410;
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(2150402);
