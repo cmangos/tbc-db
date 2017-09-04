@@ -1,5 +1,5 @@
--- Void Traveler and Sapling should move much more slowly
-UPDATE creature_template SET SpeedWalk=2/2.5,SpeedRun=2/7 WHERE entry IN(19226,19949);
+-- Void Traveler and Sapling should move much more slowly, including HC versions
+UPDATE creature_template SET SpeedWalk=2/2.5,SpeedRun=2/7 WHERE entry IN(19226,19949,20664,21567);
 
 /*
 Captain Sanders' Hidden Treasure
