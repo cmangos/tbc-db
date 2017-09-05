@@ -18188,7 +18188,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1691208','16912','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mag\'har Hunter - Flee at 15% HP (Phase 2)'),
 ('1691209','16912','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mag\'har Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bonechewer Raider
-('1692501','16925','4','0','100','0','0','0','0','0','11','32723','0','0','0','0','0','0','0','0','0','0','Bonechewer Raider - Summon Bonechewer Riding Wolf on Aggro'),
+('1692501','16925','4','0','100','0','0','0','0','0','43','0','0','0','11','32723','0','0','0','0','0','0','Bonechewer Raider - Dismount and Cast Summon Bonechewer Riding Wolf on Aggro'),
+('1692502','16925','4','0','20','32','0','0','0','0','1','-765','-766','0','1','-767','-768','0','0','0','0','0','Bonechewer Raider - Say on Aggro'),
+('1692503','16925','7','0','100','0','0','0','0','0','43','0','17408','0','56','0','0','0','0','0','0','0','Bonechewer Raider - Despawn Guardians and Mount on Evade'),
 -- Stonescythe Alpha
 ('1692901','16929','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase 1 on Aggro'),
 ('1692902','16929','9','5','100','1','0','5','5000','9000','11','33911','1','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Cast Tear Armor (Phase 1)'),
@@ -18314,6 +18316,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vorakem Doomspeaker
 ('1867901','18679','9','0','100','1','0','5','6000','9000','11','9080','1','0','0','0','0','0','0','0','0','0','Vorakem Doomspeaker - Cast Hamstring'),
 ('1867902','18679','2','0','100','0','20','0','0','0','11','8599','0','1','0','0','0','0','0','0','0','0','Vorakem Doomspeaker - Cast Enrage at 20% HP'),
+-- Bonechewer Riding Wolf
+('1870601','18706','9','0','100','1','0','5','10500','12500','11','16460','1','0','0','0','0','0','0','0','0','0','Bonechewer Riding Wolf - Cast Festering Bite'),
+('1870602','18706','0','0','100','1','8000','8000','15000','15000','11','3149','0','0','0','0','0','0','0','0','0','0','Bonechewer Riding Wolf - Cast Furious Howl'),
 -- Fel Reaver
 ('1873301','18733','6','0','100','0','0','0','0','0','28','0','34623','0','0','0','0','0','0','0','0','0','Fel Reaver - Remove Fel Reaver Warning Aura on Death'),
 -- Kuma
@@ -18351,12 +18356,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1895001','18950','0','0','100','1','3000','9000','8000','13000','11','33626','1','0','0','0','0','0','0','0','0','0','Orgrimmar Grunt - Cast Strike'),
 ('1895002','18950','0','0','100','1','2000','4000','14000','20000','11','23511','0','1','0','0','0','0','0','0','0','0','Orgrimmar Grunt - Cast Demoralizing Shout'),
 -- Bonechewer Scavenger
-('1895201','18952','4','0','20','0','0','0','0','0','1','-765','0','0','22','1','0','0','0','0','0','0','Bonechewer Scavenger - Say and Set Phase 1 on Aggro'),
-('1895202','18952','0','5','100','0','1000','3000','0','0','11','13398','1','0','0','0','0','0','0','0','0','0','Bonechewer Scavenger - Cast Throw Wrench (Phase 1)'),
-('1895203','18952','9','5','100','1','0','5','6000','9000','11','34113','1','0','0','0','0','0','0','0','0','0','Bonechewer Scavenger - Cast Bonechewer Bite (Phase 1)'),
-('1895204','18952','2','0','100','0','15','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bonechewer Scavenger - Set Phase 2 at 15% HP'),
-('1895205','18952','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bonechewer Scavenger - Flee at 15% HP (Phase 2)'),
-('1895206','18952','7','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bonechewer Scavenger - Set Phase 1 on Evade'),
+('1895201','18952','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bonechewer Scavenger - Set Phase 1 on Aggro'),
+('1895202','18952','4','0','20','32','0','0','0','0','1','-765','-766','0','1','-767','-768','0','0','0','0','0','Bonechewer Scavenger - Say on Aggro'),
+('1895203','18952','0','13','100','0','1000','3000','0','0','11','13398','1','0','0','0','0','0','0','0','0','0','Bonechewer Scavenger - Cast Throw Wrench (Phase 1)'),
+('1895204','18952','9','13','100','1','0','5','6000','9000','11','34113','1','0','0','0','0','0','0','0','0','0','Bonechewer Scavenger - Cast Bonechewer Bite (Phase 1)'),
+('1895205','18952','2','0','100','0','15','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Bonechewer Scavenger - Set Phase 2 at 15% HP'),
+('1895206','18952','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bonechewer Scavenger - Flee at 15% HP (Phase 2)'),
+('1895207','18952','7','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bonechewer Scavenger - Set Phase 1 on Evade'),
 -- Darnassian Archer
 ('1896501','18965','0','0','100','1','0','2000','2000','3000','11','15620','1','0','0','0','0','0','0','0','0','0','Darnassian Archer - Cast Shoot'),
 ('1896502','18965','4','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Darnassian Archer - Prevent Combat Movement on Aggro'),
@@ -32131,8 +32137,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-762','Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.','0','0','0','Scholomance Dark Summoner','1'),
 ('-763','Wow, this one is just plain useless. Let me try again.','0','0','0','Scholomance Dark Summoner','1'),
 ('-764','Leave this place!','0','0','0','10940','0'),
-('-765','Death to the interlopers!','0','0','0','18952','0'),
--- PLEASE RE-USE 766 - 768
+('-765','Death to the interlopers!','0','0','0','Common Bonechewer Orc Text','0'),
+('-766','For Spinebreaker!','0','0','0','Common Bonechewer Orc Text','0'),
+('-767','Your bones will be devoured!','0','0','0','Common Bonechewer Orc Text','0'),
+('-768','Protect the Warchief at all costs!','0','0','0','Common Bonechewer Orc Text','0'),
 ('-769','I am slain! Summon Verog!','0','1','0','Common Say for Kokar Centaurs','0'),
 ('-770','I am summoned! Intruders, come to my tent and face your death!','0','1','0','3395','0'),
 -- PLEASE RE-USE 771 - 774
