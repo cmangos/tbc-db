@@ -32,4 +32,6 @@ Objectives='Apothecary Faustin at Beggar\'s Haunt needs 5 Shadow Panther Hearts,
 OfferRewardText='That Infiltrator in Stonard will surely.... open up... after he drinks my special serum. Haha!$b$bThe ingredients required are by no means easy to procure. Shadow Panthers are common in the Swamp but collecting enough hearts for our purpose can be daunting. And the Mire Lord can be such a fussy beast.$b$b'
 WHERE entry=1383;
 
-
+-- Fix faction for horses outside Gadgetzan (https://jira.vengeancewow.com/browse/TBC-2763?filter=10504)
+-- Use classic-db value
+UPDATE creature_template SET FactionAlliance=35, FactionHorde=35 WHERE entry=8883;
