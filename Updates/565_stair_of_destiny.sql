@@ -438,7 +438,7 @@ DELETE FROM dbscripts_on_relay WHERE id IN (10100,10101,10102,10103);
 INSERT INTO dbscripts_on_relay (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (10100, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.86, 'Peon Overseer - face west catapult'),
 (10100, 2, 0, 0, 0, 0, 0, 0, 0, 2000005478, 2000005479, 2000005480, 2000005481, 0, 0, 0, 0, 'Peon Overseer - random say'),
-(10100, 3, 45, 0, 10104, 0, 0, 0, 0, 25, 75, 0, 0, 0, 0, 0, 0, 'Peon Overseer - 25% chance for peon response'),
+(10100, 3, 45, 0, 10103, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Peon Overseer - 25% chance for peon response'),
 
 (10101, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.74, 'Peon Overseer - face east catapult'),
 (10101, 2, 0, 0, 0, 0, 0, 0, 0, 2000005478, 2000005479, 2000005480, 2000005481, 0, 0, 0, 0, 'Peon Overseer - random say'),
