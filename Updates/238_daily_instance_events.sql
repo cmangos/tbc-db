@@ -1,6 +1,3 @@
-ALTER TABLE quest_template
-DROP COLUMN QuestGroup;
-
 ALTER TABLE game_event
 ADD EventGroup mediumint(8) unsigned NOT NULL DEFAULT '0' AFTER linkedTo;
 
