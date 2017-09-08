@@ -40,4 +40,13 @@ UPDATE creature_template SET FactionAlliance=35, FactionHorde=35 WHERE entry=888
 -- update stats from ClassicDB
 UPDATE creature_template SET MinLevel=30, MaxLevel=30, Scale=0.7, ArmorMultiplier=1, MinLevelHealth=1003, MaxLevelHealth=1003, MinMeleeDmg=10, MaxMeleeDmg=11, MeleeAttackPower=5 WHERE entry=10656;
 
+-- Malicious Instructor (18848)
+UPDATE creature_template_addon SET auras='19818' WHERE entry=18848; -- Double Attack
+
+-- Shadow Labs creatures
+UPDATE creature_model_info SET combat_reach=1.5 WHERE modelid IN (18599,18600,18601,18602,18603,18604,18581,18582,18589,20668,20661);
+UPDATE creature_model_info SET bounding_radius=0.8920838, combat_reach=1.5 WHERE modelid=159;
+UPDATE creature_model_info SET bounding_radius=1.936856, combat_reach=2 WHERE modelid=18193;
+UPDATE creature_model_info SET bounding_radius=1.035876 WHERE modelid=7949;
+
 
