@@ -31172,6 +31172,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 -- Archery Target
 ('520201','5202','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
+-- Eranikus the Chained
+('850601','8506','11','0','100','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
 -- Enraged Wyvern
 ('929701','9297','11','0','100','0','0','0','0','0','11','7276','0','1','0','0','0','0','0','0','0','0','Enraged Wyvern - Cast Poison Proc on Spawn'),
 -- Enraged Gryphon
@@ -32743,7 +32745,17 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1555','%s wakes himself up snoring.','0','2','0','18218','0'),
 ('-1556','%s\'s hand begins to glow with Arcane energy!','0','2','0','20041','0'),
 ('-1557','Kill them all!','0','0','0','21044','0'),
-('-1558','You will never essscape Coilssskarrr...','0','0','0','21044','0');
+('-1558','You will never essscape Coilssskarrr...','0','0','0','21044','0'),
+('-1559','It hurts so much... Itharius, my old friend... please help me...','0','4','0','8506','0'),
+('-1560','Will the nightmare ever end?! I cannot force myself awake!','0','4','0','8506','0'),
+('-1561','Torture me no more! Release me, mortal! The Swamp of Sorrows... mortal... please...','0','4','0','8506','0'),
+('-1562','My eyes! It burns... it burns...','0','4','0','8506','0'),
+('-1563','Foolish mortal, I will rend your soul in two once I am released!','0','4','0','8506','0'),
+('-1564','My charge to watch the temple has failed... my corrupted soul knows no peace...','0','4','0','8506','0'),
+('-1565','My soul is not a trinket! Mortal, you must release me from these chains!','0','4','0','8506','0'),
+('-1566','Foolish mortals you do not yet see the potential of that Artifact.','0','4','0','8506','0'),
+('-1567','You are an agent of their wicked god, fool. I will see you destroyed!','0','4','0','8506','0'),
+('-1568','I sense my grip on the Dream twisting into chaos.','0','4','0','8506','0');
 
 
 -- =======================================================
