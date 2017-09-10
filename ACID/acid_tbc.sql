@@ -20062,6 +20062,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1820303','18203','24','5','100','3','11971','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Murkblood Raider - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
 ('1820304','18203','28','3','100','3','11971','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Murkblood Raider - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1820305','18203','0','0','100','1','3500','4000','10000','11000','11','15496','1','0','0','0','0','0','0','0','0','0','Murkblood Raider - Cast Cleave'),
+-- Ortor of Murkblood 18204
+('1820401','18204','0','0','100','1','0','3000','5000','10000','11','32132','1','0','0','0','0','0','0','0','0','0','Ortor of Murkblood - Cast Tainted Chain Lightning'),
+('1820402','18204','0','0','100','1','5000','10000','15000','19000','11','31981','0','0','0','0','0','0','0','0','0','0','Ortor of Murkblood - Cast Tainted Earthgrab Totem'),
+('1820403','18204','0','0','100','33','3000','6000','30000','60000','11','32135','0','0','11','32137','0','0','0','0','0','0','Ortor of Murkblood - Cast Corrupted Air Totem or Cast Corrupted Healing Stream Totem'),
 -- Clefthoof
 ('1820501','18205','0','0','100','1','6000','18000','20000','28000','11','32023','0','0','0','0','0','0','0','0','0','0','Clefthoof - Cast Hoof Stomp'),
 -- Murkblood Scavenger
