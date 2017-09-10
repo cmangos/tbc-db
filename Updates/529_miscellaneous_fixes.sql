@@ -49,4 +49,11 @@ UPDATE creature_model_info SET bounding_radius=0.8920838, combat_reach=1.5 WHERE
 UPDATE creature_model_info SET bounding_radius=1.936856, combat_reach=2 WHERE modelid=18193;
 UPDATE creature_model_info SET bounding_radius=1.035876 WHERE modelid=7949;
 
+-- Fix Pusillin event
+DELETE FROM conditions WHERE condition_entry=1096;
+INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
+(1096,33,19,0);
+UPDATE gossip_menu SET condition_id=1096 WHERE entry=5709 AND condition_id=463;
+UPDATE gossip_menu_option SET condition_id=1096 WHERE menu_id=5709 AND condition_id=463;
+
 
