@@ -18327,6 +18327,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1873301','18733','6','0','100','0','0','0','0','0','28','0','34623','0','0','0','0','0','0','0','0','0','Fel Reaver - Remove Fel Reaver Warning Aura on Death'),
 -- Kuma
 ('1878501','18785','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Kuma - Summon Enraged Hippogryphs on Aggro'),
+-- Camera Shaker
+('1882801','18828','29','0','100','1','6000','11000','6000','11000','11','33016','0','0','0','0','0','0','0','0','0','0','Camera Shaker - Cast Internal Shake Camera'),
 -- Vlagga Freyfeather
 ('1893001','18930','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Vlagga Freyfeather - Summon Enraged Wyverns and Yell on Aggro'),
 -- Amish Wildhammer
