@@ -16866,7 +16866,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('730708','7307','8','2','100','1','11300','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 8 hit and Move to Phase 1'),
 ('730709','7307','8','2','100','1','31016','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 9 hit and Move to Phase 1'),
 ('730710','7307','8','2','100','1','26865','-1','0','0','11','8223','0','0','22','1','0','0','0','0','0','0','Venture Co. Lookout - Cast Oops! on Eviscerate Rank 10 hit and Move to Phase 1'),
-('730711','7307','7','1','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venture Co. Patroller - Set Phase 0 on Evade in Phase 1'),
+('730711','7307','7','1','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venture Co. Lookout - Set Phase 0 on Evade in Phase 1'),
 -- Venture Co. Patroller
 ('730801','7308','8','2','100','1','1943','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 1 hit and Move to Phase 1'),
 ('730802','7308','8','2','100','1','8639','-1','0','0','11','10266','0','0','22','1','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 2 hit and Move to Phase 1'),
