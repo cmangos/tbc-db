@@ -18559,10 +18559,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1942210','19422','5','0','100','0','0','0','0','0','11','34019','0','1','0','0','0','0','0','0','0','0','Bleeding Hollow Necrolyte - Cast Raise Dead on Player Kill'),
 ('1942211','19422','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Necrolyte - Set Phase to 0 on Evade'),
 -- Bleeding Hollow Tormentor
-('1942401','19424','0','0','100','0','1000','1000','0','0','11','34368','0','1','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Summon Bleeding Hollow Riding Worg on Aggro'),
+('1942401','19424','4','0','100','0','0','0','0','0','11','34368','0','1','43','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Summon Bleeding Hollow Riding Worg and Dismount on Aggro'),
 ('1942402','19424','0','0','100','1','9000','16000','12000','18000','11','33924','2','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Cast Fear'),
 ('1942403','19424','14','0','100','1','800','20','18000','26000','11','33976','6','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Cast Mend Pet on Friendlies'),
 ('1942404','19424','2','0','100','0','15','0','0','0','11','31553','1','0','1','-47','0','0','25','0','0','0','Bleeding Hollow Tormentor - Cast Hamstring and Flee at 15% HP'),
+('1942405','19424','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Despawn Guardians on Evade'),
 -- Dreadcaller
 ('1943401','19434','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dreadcaller - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1943402','19434','9','5','100','1','0','40','3400','4800','11','32666','1','0','0','0','0','0','0','0','0','0','Dreadcaller - Cast Shadow Bolt (Phase 1)'),
