@@ -19472,12 +19472,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2022102','20221','9','0','100','1','0','5','13000','17000','11','33731','1','0','0','0','0','0','0','0','0','0','Sunfury Flamekeeper - Cast Judgement of the Flame'),
 ('2022103','20221','2','0','100','0','30','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Sunfury Flamekeeper - Cast Enrage at 30% HP'),
 -- Karaaz (20242) - NSR
--- Scrapped Fel Reaver
-('2024301','20243','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','18','512','0','0','Scrapped Fel Reaver - Prevent Combat Movement and Prevent Auto Attack and Unit Flag Passive on Spawn'),
-('2024302','20243','11','0','100','0','0','0','0','0','3','22509','0','0','0','0','0','0','0','0','0','0','Scrapped Fel Reaver - Transform on Spawn'),
-('2024303','20243','8','0','100','0','35282','-1','0','0','19','512','0','0','0','0','0','0','0','0','0','0','Scrapped Fel Reaver - Remove Unit Flag Passive on Spell Fel Zapper Hit'),
-('2024304','20243','0','0','100','33','15000','20000','15000','20000','32','20287','1','22','32','20287','1','23','32','20287','1','24','Scrapped Fel Reaver - Summon Zaxxis Ambusher'),
-('2024305','20243','7','0','100','0','0','0','0','0','18','512','0','0','3','22509','0','0','0','0','0','0','Scrapped Fel Reaver - Set Unit Flag Passive and Transform on Evade'),
+-- Scrapped Fel Reaver - npc_scrapped_fel_reaver
 -- Sunfury Nethermancer
 ('2024801','20248','1','0','100','1','1000','1000','300000','300000','11','36477','0','1','0','0','0','0','0','0','0','0','Sunfury Nethermancer - Summon Mana Beast on Spawn'),
 ('2024802','20248','4','0','100','0','0','0','0','0','49','1','0','0','11','35778','0','0','22','1','0','0','Sunfury Nethermancer - Enable Dynamic Movement and Cast Bloodcrystal Surge and Set Phase 1 on Aggro'),
