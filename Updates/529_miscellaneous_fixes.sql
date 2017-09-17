@@ -59,4 +59,5 @@ UPDATE gossip_menu_option SET condition_id=1096 WHERE menu_id=5709 AND condition
 -- Magtheridon Blaze trap correct data
 UPDATE gameobject_template SET faction=54, flags=32 WHERE entry IN(181832);
 
-
+-- Fixed wrong modelId of NPC 8927 (Dark Screecher)
+UPDATE `creature_template` SET `ModelId1` = 1955 WHERE `Entry` = 8927;
