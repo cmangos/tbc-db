@@ -61,3 +61,12 @@ UPDATE gameobject_template SET faction=54, flags=32 WHERE entry IN(181832);
 
 -- Fixed wrong modelId of NPC 8927 (Dark Screecher)
 UPDATE `creature_template` SET `ModelId1` = 1955 WHERE `Entry` = 8927;
+
+-- https://jira.vengeancewow.com/browse/TBC-2839
+-- quest: Traitors Among Us (11126)
+-- npc: Deserter Agitator (23602)
+DELETE FROM dbscripts_on_gossip WHERE id=8762 AND command=5;
+INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+('8762', '0', '5', '46', '256', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Deserter Agitator - Remove UnitFlag (Immune to Player)');
+
+
