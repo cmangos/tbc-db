@@ -30345,7 +30345,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1133802','11338','0','5','100','3','1000','2000','3500','4000','11','15232','1','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Shadow Bolt (Phase 1)'),
 ('1133803','11338','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1133804','11338','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Disable Dynamic Movement at 0-8 Yards'),
-('1133805','11338','3','5','100','3','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Hakkari Shadowcaster - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1133805','11338','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Hakkari Shadowcaster - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1133806','11338','3','3','100','2','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1133807','11338','0','5','100','3','3000','7000','10000','20000','11','20741','1','1','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Shadow Bolt Volley (Phase 1)'),
 ('1133808','11338','8','5','75','3','0','127','5000','8000','11','22947','6','1','0','0','0','0','0','0','0','0','Hakkari Shadowcaster - Cast Mana Burn (Phase 1)'),
