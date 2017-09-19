@@ -12,7 +12,7 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position
 (19346,6,-1741.911,5794.957,146.5123,0,0,0,0,0,0,0,0,0,0,0,0),
 (19346,7,-1734.54,5812.544,148.7986,0,0,0,0,0,0,0,0,0,0,0,0),
 (19346,8,-1733.764,5814.145,148.6574,500,1934603,0,0,0,0,0,0,0,5.934119,0,0),
-(19346,9,-1727.996,5824.952,148.6574,500,1934604,0,0,0,0,0,0,0,100,0,0),
+(19346,9,-1727.996,5824.952,148.6574,500,7,0,0,0,0,0,0,0,100,0,0),
 (19346,10,-1741.497,5795.166,146.7986,0,0,0,0,0,0,0,0,0,0,0,0),
 (19346,11,-1744.342,5788.361,146.6898,0,0,0,0,0,0,0,0,0,0,0,0),
 (19346,12,-1749.211,5773.418,145.0416,0,0,0,0,0,0,0,0,0,0,0,0),
@@ -62,6 +62,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 
 (1934601,69,0,0,0,2000001152,0,0,0,'Harbinger Erothem - May the Light be with you... Dismissed!'), -- 01:53:34.417
 
+(1934601,70,21,1,0,0,0,0,0,'Harbinger Erothem - Set Active Object'), -- He needs to be active to prevent event from being permanently stuck if he gets unloaded and doesn't return before the neophytes respawn
 (1934601,70,32,0,0,0,19337,68926,16,'Aldor Marksman - Unpause Waypoints'), -- 01:53:35.197
 (1934601,70,32,0,0,0,19337,68927,16,'Aldor Marksman - Unpause Waypoints'),
 (1934601,70,32,0,0,0,19337,68928,16,'Aldor Marksman - Unpause Waypoints'),
@@ -99,6 +100,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1934603,30,32,0,0,0,19378,5,0,'Anchorite Nindumen - Resume Waypoints'), -- 02:05:13.658
 (1934603,31,32,0,0,0,0,0,0,'Harbinger Erothem - Resume Waypoints'), -- 02:05:14.875
 
-(1934604,0,32,1,0,0,0,0,0,'Harbinger Erothem - Pause Waypoints');
+(1934604,0,32,1,0,0,0,0,0,'Harbinger Erothem - Pause Waypoints'),
+(1934604,0,21,0,0,0,0,0,0,'Harbinger Erothem - Set Active Object Off');
 
 
