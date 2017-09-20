@@ -9,7 +9,6 @@
 -- Clean up wrong spawns
 DELETE FROM creature WHERE guid IN (67988,67982,67986,67979,67978,67973,67974,67989,67990,67976,67985); -- Fel Soldier
 DELETE FROM creature WHERE guid IN (68311,68313); -- Wrath Master
-DELETE FROM creature WHERE guid IN (68189); -- Felguard Destroyer
 DELETE FROM creature WHERE guid IN (68014,68117,68266,68267); -- Extra spawns on Alliance side
 DELETE FROM creature WHERE guid IN (68026); -- Extra Orgrimmar Grunt on Horde side
 
@@ -85,17 +84,17 @@ insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- WAVE 2: 4 FEL SOLDIER - TELEPORT IN FROM GATEWAY MURKETH
 -- 1 min respawn
-DELETE FROM creature WHERE guid IN (67990,67976,67985,68189);
+DELETE FROM creature WHERE guid IN (67990,67976,67985,60043);
 insert into `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) values
 ('67990', '18944', '530', '1', '0', '0', '-145.517', '1518.95', '34.4242', '3.15987', '60', '60', '0', '0', '90818', '0', '0', '0'),
 ('67976', '18944', '530', '1', '0', '0', '-145.763', '1514.5', '33.8965', '3.10096', '60', '60', '0', '0', '90818', '0', '0', '2'),
 ('67985', '18944', '530', '1', '0', '0', '-145.924', '1510.49', '33.4262', '3.09704', '60', '60', '0', '0', '90818', '0', '0', '0'),
-('68189', '18944', '530', '1', '0', '0', '-146.759', '1505.32', '32.7634', '3.00436', '60', '60', '0', '0', '90818', '0', '0', '0');
+('60043', '18944', '530', '1', '0', '0', '-146.759', '1505.32', '32.7634', '3.00436', '60', '60', '0', '0', '90818', '0', '0', '0');
 DELETE FROM creature_linking WHERE master_guid IN (67976);
 insert into `creature_linking` (`guid`, `master_guid`, `flag`) values
 ('67990','67976',643+1024+8192),
 ('67985','67976',643+1024+8192),
-('68189','67976',643+1024+8192);
+('60043','67976',643+1024+8192);
 UPDATE creature SET SpawnDist=0, MovementType=2 WHERE guid = '67976';
 DELETE FROM creature_movement WHERE id IN (67976);
 insert into `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) values
