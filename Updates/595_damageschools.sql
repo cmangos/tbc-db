@@ -2,7 +2,8 @@
 UPDATE `creature_template` SET `damageschool` = 5 WHERE `entry` = 8538;
 
 -- Ragnaros 11502 http://wowwiki.wikia.com/wiki/Ragnaros_(tactics)?oldid=1604003
-UPDATE `creature_template` SET `damageschool` = 2 WHERE `entry` = 11502;
+-- Rechecking Videos with Min-/MaxMeleeDmg & Multipliers between classic-db and tbc-db results in damageschool being physical
+UPDATE `creature_template` SET `damageschool` = 0 WHERE `entry` = 11502;
 
 -- http://www.wowhead.com/npc=14457/princess-tempestria#comments:id=298819
 UPDATE `creature_template` SET `damageschool` = 4 WHERE `entry` = 14457;
