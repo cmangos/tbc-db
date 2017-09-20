@@ -1,9 +1,6 @@
 -- Unseen Servant 8538 http://www.wowhead.com/npc=8538/unseen-servant#comments:id=164759
 UPDATE `creature_template` SET `damageschool` = 5 WHERE `entry` = 8538;
 
--- Ragnaros 11502 http://wowwiki.wikia.com/wiki/Ragnaros_(tactics)?oldid=1604003
-UPDATE `creature_template` SET `damageschool` = 2 WHERE `entry` = 11502;
-
 -- http://www.wowhead.com/npc=14457/princess-tempestria#comments:id=298819
 UPDATE `creature_template` SET `damageschool` = 4 WHERE `entry` = 14457;
 
