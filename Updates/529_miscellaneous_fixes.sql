@@ -69,4 +69,7 @@ DELETE FROM dbscripts_on_gossip WHERE id=8762 AND command=5;
 INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 ('8762', '0', '5', '46', '256', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Deserter Agitator - Remove UnitFlag (Immune to Player)');
 
+-- Lollipop - does not drop from any of these creatures
+DELETE FROM creature_loot_template WHERE item=7806;
+
 
