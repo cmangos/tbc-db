@@ -80,4 +80,11 @@ DELETE FROM dbscripts_on_go_template_use WHERE id=181849;
 INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 ('181849', '2', '5', '46', '256', '0', '17556', '30', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Death Ravager - Remove UnitFlag (Immune to Player)');
 
+-- Panther Cage (176195) opened by Panther Cage Key (12942)
+-- quest: Hypercapacitor Gizmo (5151)
+-- Enraged Panther (10992)
+DELETE FROM dbscripts_on_go_template_use WHERE id=176195 AND delay=2;
+INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+('176195', '2', '5', '46', '256', '0', '10992', '30', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Enraged Panther - Remove UnitFlag (Immune to Player)');
+
 
