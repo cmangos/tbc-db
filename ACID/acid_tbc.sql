@@ -3793,12 +3793,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Apprentice Varnis (16206) - NSR
 -- Apothecary Enith (16208) - NSR
 -- Ranger Vedoran (16209) - NSR
--- Ranger Lethvalin (16213) - NSR
+-- Ranger Lethvalin
+('1621301','16213','1','0','100','1','240000','600000','240000','600000','54','0','0','10009','0','0','0','0','0','0','0','0','Ranger Lethvalin - Say OOC'),
 -- Lieutenant Tomathren (16217) - NSR
 -- Ranger Valanna (16219) - NSR
 -- Captain Helios (16220) - NSR
 -- Rathis Tomber (16224) - npc_rathis_tomber
--- Dame Auriferous (16231)
+-- Dame Auriferous
 ('1623101','16231','1','30','100','1','10000','60000','300000','600000','53','10035','0','0','22','1','0','0','0','0','0','0','Dame Auriferous - Start Relay Script 1 and Set Phase 1 OOC (Phase 0)'),
 ('1623102','16231','1','29','100','1','80000','120000','80000','120000','53','10036','0','0','22','2','0','0','0','0','0','0','Dame Auriferous - Start Relay Script 2 and Set Phase 2 OOC (Phase 1)'),
 ('1623103','16231','1','27','100','1','80000','120000','80000','120000','53','10037','0','0','22','3','0','0','0','0','0','0','Dame Auriferous - Start Relay Script 3 and Set Phase 3 OOC (Phase 2)'),
