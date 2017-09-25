@@ -3975,7 +3975,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vengeful Apparition
 ('1632801','16328','2','0','100','1','30','0','120000','120000','11','8599','0','0','0','0','0','0','0','0','0','0','Vengeful Apparition - Cast Enrage at 30% HP'),
 -- Dar'Khan Drathir
-('1632901','16329','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dar\'Khan Drathir - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1632901','16329','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','1','-994','-995','-996','Dar\'Khan Drathir - Enable Dynamic Movement and Set Phase 1 and Say on Aggro'),
 ('1632902','16329','9','5','100','1','0','40','3400','4800','11','20791','1','0','0','0','0','0','0','0','0','0','Dar\'Khan Drathir - Cast Shadow Bolt (Phase 1)'),
 ('1632903','16329','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dar\'Khan Drathir - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1632904','16329','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Dar\'Khan Drathir - Disable Dynamic Movement at 0-8 Yards'),
@@ -3983,8 +3983,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1632906','16329','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Dar\'Khan Drathir - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1632907','16329','0','0','100','1','9000','12000','27000','31000','11','21068','4','1','0','0','0','0','0','0','0','0','Dar\'Khan Drathir - Cast Corruption'),
 ('1632908','16329','0','0','100','1','19000','24000','21000','25000','11','38660','4','1','0','0','0','0','0','0','0','0','Dar\'Khan Drathir - Cast Fear'),
-('1632909','16329','6','0','100','0','0','0','0','0','1','-124','0','0','0','0','0','0','0','0','0','0','Dar\'Khan Drathir - Yell on Creature Death'),
-('1632910','16329','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dar\'Khan Drathir - Set Phase to 0 on Evade'),
+('1632909','16329','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dar\'Khan Drathir - Set Phase to 0 on Evade'),
 -- Sentinel Spy
 ('1633001','16330','9','0','100','1','0','5','5000','9000','11','14873','1','0','0','0','0','0','0','0','0','0','Sentinel Spy - Cast Sinister Strike'),
 ('1633002','16330','33','0','100','1','0','0','7000','11000','11','7159','1','1','0','0','0','0','0','0','0','0','Sentinel Spy - Cast Backstab on Facing Target Back'),
@@ -31612,7 +31611,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-121','Your time is almost... up.','11002','1','0','17842','0'),
 ('-122','No one is going to save you.','11048','1','0','17842','0'),
 ('-123','I am the serpent king! I can do anything.','5788','1','0','3673','0'),
-('-124','Insolence!','0','1','0','16329','0'),
+-- Reuse 124
 ('-125','The Legion\'s final conquest has begun! Once again the subjugation of this world is within our grasp. Let none survive!','11022','1','0','17767','0'),
 ('-126','Succumb to the icy chill... of death!','11024','1','0','17767','0'),
 ('-127','It will be much colder in your grave.','11058','1','0','17767','0'),
@@ -32313,7 +32312,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-991','You might wanna stand back. Fish guttin\' is a dirty job.','0','0','0','23896','1'),
 ('-992','I surrender! Stay your blade!','0','0','0','23941','1'),
 ('-993','I will go with you. Just spare my men. They\'re good lads who\'ve only made a mistake...','0','0','0','23941','1'),
--- PLEASE RE-USE 994 - 996
+('-994','Death is the price you shall pay for this insolence!','0','0','0','16329','0'),
+('-995','Mortal fools! The ghouls of Deatholme will feast on your remains!','0','0','0','16329','0'),
+('-996','Your deaths shall be slow and painful!','0','0','0','16329','0'),
 ('-997','Drohn\'s brew is the stuff legends are made of! Come taste the legend!','0','0','0','24492','1'),
 ('-998','We drink for the Horde! Do you drink for the Horde? Come show us at Drohn\'s Distillery!','0','0','0','24492','1'),
 ('-999','Hey you, the tall one... Want to put some hair on your chest? Drohn\'s Distillery can help you out!','0','0','0','24492','1'),
