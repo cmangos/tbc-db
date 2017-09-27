@@ -161,6 +161,8 @@ UPDATE dbscript_random_templates SET comments = '5355,16769 - Random Emote' WHER
 UPDATE dbscript_random_templates SET comments = '1410,5355 - Random Emote' WHERE id = 10001;
 UPDATE dbscript_random_templates SET comments = '5355,16769 - Turn to random target Group 1-3' WHERE id = 10002;
 UPDATE dbscript_random_templates SET comments = '5355,16769 - Emote OR Turn to random target Group 1-3' WHERE id = 10003;
+UPDATE dbscript_random_templates SET comments = '5355/16769/1410 - Random Texts' WHERE id = 10005;
+UPDATE dbscript_random_templates SET comments = '5355/16769/1410 - Random Aggro Texts' WHERE id = 10006;
 UPDATE dbscript_random_templates SET comments = '19426 - random action' WHERE id = 10100;
 UPDATE dbscript_random_templates SET comments = '19426 - 25% chance for peon response' WHERE id = 10103;
 

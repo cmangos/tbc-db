@@ -34,18 +34,18 @@ INSERT INTO `dbscripts_on_relay` (`id`,`delay`,`command`,`datalong`,`datalong2`,
 
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN 10005 AND 10006;
-INSERT INTO dbscript_random_templates (id,type,target_id,chance,comments) VALUES
-(10005,0,-482,0,'5355/16769/1410 - Random Texts'),
-(10005,0,-483,0,'5355/16769/1410 - Random Texts'),
-(10005,0,-484,0,'5355/16769/1410 - Random Texts'),
-(10005,0,-485,0,'5355/16769/1410 - Random Texts'),
+INSERT INTO dbscript_random_templates (id,type,target_id,chance) VALUES
+(10005,0,-482,0),
+(10005,0,-483,0),
+(10005,0,-484,0),
+(10005,0,-485,0),
 
-(10006,0,-277,0,'5355/16769/1410 - Random Aggro Texts'),
-(10006,0,-278,0,'5355/16769/1410 - Random Aggro Texts'),
-(10006,0,-279,0,'5355/16769/1410 - Random Aggro Texts'),
-(10006,0,-280,0,'5355/16769/1410 - Random Aggro Texts'),
-(10006,0,-281,0,'5355/16769/1410 - Random Aggro Texts'),
-(10006,0,-282,0,'5355/16769/1410 - Random Aggro Texts');
+(10006,0,-277,0),
+(10006,0,-278,0),
+(10006,0,-279,0),
+(10006,0,-280,0),
+(10006,0,-281,0),
+(10006,0,-282,0);
 
 
 DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000001343 AND 2000001347;
