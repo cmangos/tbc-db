@@ -20280,16 +20280,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('141003','1410','0','0','100','1','6000','8000','12000','18000','11','33483','4','0','0','0','0','0','0','0','0','0','Firewing Bloodwarder - Cast Mana Tap'),
 ('141004','1410','0','0','100','1','8000','13000','13000','18000','11','33390','0','0','0','0','0','0','0','0','0','0','Firewing Bloodwarder - Cast Arcane Torrent'),
 ('141005','1410','30','0','100','1','5','20809','0','0','53','10021','10','0','51','1','0','0','22','1','0','0','Firewing Bloodwarder - Start Relay Script and Pause Waypoints and Set Phase 1 on Receive AI Event 5 (A)'),
-('141006','1410','30','0','10','1','5','20809','0','0','54','0','0','10005','0','0','0','0','0','0','0','0','Firewing Bloodwarder - Random Say on Receive AI Event 5 (A)'),
-('141007','1410','29','1','100','1','20500','20500','20500','20500','51','0','0','0','22','0','0','0','0','0','0','0','Firewing Defender - Resume Waypoints and Set Phase 0 (Phase 1)'),
+('141006','1410','30','0','30','1','5','20809','0','0','53','10023','0','0','0','0','0','0','0','0','0','0','Firewing Bloodwarder - Set Stand State Sit on Receive AI Event 5 (A) (30% chance)'),
+('141007','1410','30','0','10','1','5','20809','0','0','54','0','0','10005','0','0','0','0','0','0','0','0','Firewing Bloodwarder - Random Say on Receive AI Event 5 (A) (10% chance)'),
+('141008','1410','29','1','100','1','20500','20500','20500','20500','51','0','0','0','22','0','0','0','0','0','0','0','Firewing Defender - Resume Waypoints and Set Phase 0 (Phase 1)'),
 -- Firewing Defender
 ('535501','5355','4','0','20','0','0','0','0','0','54','1','0','10006','0','0','0','0','0','0','0','0','Firewing Defender - Random Say on Aggro'),
 ('535502','5355','0','0','100','1','2000','4000','3000','6000','11','11976','1','0','0','0','0','0','0','0','0','0','Firewing Defender - Cast Strike'),
 ('535503','5355','0','0','100','1','6000','8000','12000','18000','11','33483','4','0','0','0','0','0','0','0','0','0','Firewing Defender - Cast Mana Tap'),
 ('535504','5355','0','0','100','1','8000','13000','1300','18000','11','33390','0','0','0','0','0','0','0','0','0','0','Firewing Defender - Cast Arcane Torrent'),
 ('535505','5355','30','0','100','1','5','20809','0','0','53','10021','10','0','51','1','0','0','22','1','0','0','Firewing Defender - Start Relay Script and Pause Waypoints and Set Phase 1 on Receive AI Event 5 (A)'),
-('535506','5355','30','0','10','1','5','20809','0','0','54','0','0','10005','0','0','0','0','0','0','0','0','Firewing Defender - Random Say on Receive AI Event 5 (A)'),
-('535507','5355','29','1','100','1','20500','20500','20500','20500','51','0','0','0','22','0','0','0','0','0','0','0','Firewing Defender - Resume Waypoints and Set Phase 0 (Phase 1)'),
+('535506','5355','30','0','30','1','5','20809','0','0','53','10023','0','0','0','0','0','0','0','0','0','0','Firewing Defender - Set Stand State Sit on Receive AI Event 5 (A) (30% chance)'),
+('535507','5355','30','0','10','1','5','20809','0','0','54','0','0','10005','0','0','0','0','0','0','0','0','Firewing Defender - Random Say on Receive AI Event 5 (A) (10% chance)'),
+('535508','5355','29','1','100','1','20500','20500','20500','20500','51','0','0','0','22','0','0','0','0','0','0','0','Firewing Defender - Resume Waypoints and Set Phase 0 (Phase 1)'),
 -- Succubus Minion
 ('1092801','10928','0','0','100','1','2000','4000','4000','7000','11','32202','1','0','0','0','0','0','0','0','0','0','Succubus Minion - Cast Lash of Pain'),
 -- Shadowy Executioner
@@ -20310,9 +20312,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1676913','16769','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Firewing Warlock - Flee at 15% HP (Phase 3)'),
 ('1676914','16769','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Firewing Warlock - Set Phase to 0 on Evade'),
 ('1676915','16769','30','0','100','1','5','20809','0','0','53','10021','10','0','22','4','0','0','0','0','0','0','Firewing Warlock - Start Relay Script and Set Phase 4 on Receive AI Event 5 (A)'),
-('1676916','16769','30','0','10','1','5','20809','0','0','54','0','0','10005','0','0','0','0','0','0','0','0','Firewing Warlock - Random Say on Receive AI Event 5 (A)'),
-('1676917','16769','1','15','100','1','20000','20000','20000','20000','53','10024','0','0','0','0','0','0','0','0','0','0','Firewing Warlock - Start Relay Script OOC (Phase 4)'),
-('1676918','16769','1','15','100','1','20500','20500','20500','20500','11','32783','0','0','22','0','0','0','0','0','0','0','Firewing Warlock - Cast Arcane Channeling and Set Phase 0 OOC (Phase 4)'),
+('1676916','16769','30','0','30','1','5','20809','0','0','53','10023','0','0','0','0','0','0','0','0','0','0','Firewing Warlock - Set Stand State Sit on Receive AI Event 5 (A) (30% chance)'),
+('1676917','16769','30','0','10','1','5','20809','0','0','54','0','0','10005','0','0','0','0','0','0','0','0','Firewing Warlock - Random Say on Receive AI Event 5 (A) (10% chance)'),
+('1676918','16769','1','15','100','1','20000','20000','20000','20000','53','10022','0','0','0','0','0','0','0','0','0','0','Firewing Warlock - Start Relay Script OOC (Phase 4)'),
+('1676919','16769','1','15','100','1','20500','20500','20500','20500','11','32783','0','0','22','0','0','0','0','0','0','0','Firewing Warlock - Cast Arcane Channeling and Set Phase 0 OOC (Phase 4)'),
 -- Bonechewer Devastator
 ('1677201','16772','0','0','100','1','4000','7000','6000','8000','11','8646','1','0','0','0','0','0','0','0','0','0','Bonechewer Devastator - Cast Snap Kick'),
 -- Broken Skeleton
@@ -31763,7 +31766,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-274','%s looks weak enough to capture.','0','2','0','4351','0'),
 ('-275','This land was mine long before your wretched kind set foot here.','0','1','0','23864','0'),
 ('-276','All who venture here belong to me, including you!','0','1','0','23864','0'),
--- Reuse 277 - 285
+('-277','You won\'t escape alive!','0','0','0','5355/16769/1410','0'),
+('-278','I will have your energy and then your life!','0','0','0','5355/16769/1410','0'),
+('-279','For Kael\'thas!','0','0','0','5355/16769/1410','0'),
+('-280','You know too much!','0','0','0','5355/16769/1410','0'),
+('-281','They mustn\'t escape!','0','0','0','5355/16769/1410','0'),
+('-282','Kill them before they get away!','0','0','0','5355/16769/1410','0'),
+-- Reuse 283 - 285
 ('-286','%s nods.','0','2','0','16589','0'),
 ('-287','Lost some of my best soldiers that day...','0','0','0','16589','0'),
 ('-288','But that\'s not the worst of it. Before I could pull us back, a group of \'em spotted us and attacked.','0','0','0','16589','0'),
@@ -31956,7 +31965,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-479','Don\'t go to the lake! It\'s haunted!','0','0','1','18299/18296','0'),
 ('-480','Tag! You\'re it!','0','0','1','18299/18296','0'),
 ('-481','Get out of the way!','0','0','1','18299/18296','0'),
--- PLEASE RE-USE 482 - 489
+('-482','The %s turns to face his impending doom.','0','2','0','5355/16769/1410','0'),
+('-483','Oh no!','0','0','0','5355/16769/1410','0'),
+('-484','The %s looks on in disbelief.','0','2','0','5355/16769/1410','0'),
+('-485','They set it off!','0','0','0','5355/16769/1410','0'),
+-- PLEASE RE-USE 486 - 489
 ('-490','My back is killing me.','0','0','0','12337','0'),
 ('-491','If I should fall, take my pouch. Make certain that it gets to the High General.','0','0','0','12337','0'),
 ('-492','I sense danger up ahead.','0','0','0','12337','0'),
