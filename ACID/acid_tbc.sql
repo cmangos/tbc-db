@@ -32100,7 +32100,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-647','I regret to inform you all that we sent home another ten soldiers today - in body bags.','0','0','0','19308','1'),
 ('-648','%s lets out a deep roar, alerting nearby allies and becoming enraged!','0','2','0','Dire Maul Guards','0'),
 ('-649','%s goes into a drunken rage!','0','2','0','14322','0'),
--- PLEASE RE-USE 650 - 653
+('-650','%s taps his foot impatiently.','0','2','0','16213','0'),
+('-651','%s glares at the guards.','0','2','0','16213','0'),
+('-652','%s sighs in apparent frustration.','0','2','0','16213','0'),
+('-653','%s peers inside the tower and then clenches his jaw.','0','2','0','16213','0'),
 ('-654','Snivvle is here! Snivvle claims the Coldtooth Mine!','0','0','0','11677','0'),
 ('-655','Tell us!  Where does your leader hide?','0','0','0','16924','0'),
 ('-656','Please!  I must feed on something soon... A mana crystal.... a shard... anything!  The pain is unbearable!','0','0','0','16916','0'),
