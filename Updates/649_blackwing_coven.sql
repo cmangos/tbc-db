@@ -1,8 +1,8 @@
 -- Misc. Blackwing Coven fixes
 -- ------------------------
 
-UPDATE creature_template SET SpeedWalk=(2.5/2.5), SpeedRun=(6/2.5), ModelId1=20377, ModelId2=20378, ModelId3=20379, ModelId4=20380 WHERE entry=21637; -- Wyrmcult Scout
-UPDATE creature_template SET SpeedWalk=(2.5/2.5), SpeedRun=(8/2.5) WHERE entry=21040; -- Outraged Raven's Wood Sapling
+UPDATE creature_template SET SpeedWalk=(2.5/2.5), SpeedRun=(6/7), ModelId1=20377, ModelId2=20378, ModelId3=20379, ModelId4=20380 WHERE entry=21637; -- Wyrmcult Scout
+UPDATE creature_template SET SpeedWalk=(2.5/2.5), SpeedRun=(8/7) WHERE entry=21040; -- Outraged Raven's Wood Sapling
 UPDATE creature_template SET SpeedWalk=(2.77778/2.5), SpeedRun=(8/7), MovementType=0 WHERE entry=21387; -- Wyrmcult Blackwhelps should be idle by default
 UPDATE creature_template_addon SET auras='37637' WHERE entry=21497; -- Blackscale
 UPDATE creature_template_addon SET auras='37637' WHERE entry=21389; -- Maxnar the Ashmaw
