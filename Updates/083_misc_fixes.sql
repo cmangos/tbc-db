@@ -14,3 +14,6 @@ INSERT INTO creature_movement_template(entry, point, position_x, position_y, pos
 ('17682', '7', '-2564.03', '-12308.3', '12.5844', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 ('17682', '8', '-2576.29', '-12302.8', '11.7896', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'); -- add missing waypoint data
 
+UPDATE gossip_menu_option SET condition_id=15 WHERE menu_id=7368 AND id=0; -- corrected condition on draenei hunter trainer
+
+
