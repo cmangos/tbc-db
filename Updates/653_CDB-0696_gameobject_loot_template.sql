@@ -6,5 +6,5 @@ SET @CONDITION := 673;
 UPDATE `gameobject_loot_template` SET `condition_id` = @CONDITION WHERE `item` = 5075;
 
 DELETE FROM `conditions` WHERE `condition_entry` = @CONDITION;
-INSERT INTO `conditions` VALUES
+INSERT INTO `conditions` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
 (@CONDITION, 4, 17, 0);
