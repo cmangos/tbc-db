@@ -4,7 +4,7 @@
 UPDATE creature_template SET SpeedWalk=(2.5/2.5), SpeedRun=(8/7) WHERE entry=16339;
 
 DELETE FROM creature WHERE guid IN(81867,81862) AND id=16339; -- Duplicate spawns
-UPDATE creature SET MovementType=0 WHERE guid IN(81858,81938,81863,81861,81859); -- Idle Movement
+UPDATE creature SET MovementType=0, spawndist=0 WHERE guid IN(81858,81938,81863,81861,81859); -- Idle Movement
 
 UPDATE creature SET position_x=7829.58, position_y=-7911.2, position_z=169.326, orientation=5.06238, spawndist=8 WHERE guid=81864 AND id=16339;
 UPDATE creature SET position_x=7817.933, position_y=-7875.994, position_z=167.2403, orientation=1.919862 WHERE guid=81938 AND id=16339;
