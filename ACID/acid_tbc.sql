@@ -19131,6 +19131,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Durn the Hungerer
 ('1841101','18411','9','0','100','1','0','5','9000','15000','11','28168','1','0','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Arcing Smash'),
 ('1841102','18411','0','0','100','1','12000','24000','30000','50000','11','34771','0','0','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Force Punch'),
+-- Warmaul Chef Bufferlo
+('1844001','18440','4','0','100','0','0','0','0','0','54','0','0','10031','0','0','0','0','0','0','0','0','Warmaul Chef Bufferlo - Random Say on Aggro'),
+('1844002','18440','1','0','100','1','80000','100000','80000','100000','53','-10032','0','0','0','0','0','0','0','0','0','0','Warmaul Chef Bufferlo - Random OOC Events'),
+('1844003','18440','0','0','100','1','0','5','6000','10000','11','32376','1','0','0','0','0','0','0','0','0','0','Warmaul Chef Bufferlo - Cast Tenderize'),
+('1844004','18440','0','0','100','1','3000','5000','20000','30000','11','32378','1','0','0','0','0','0','0','0','0','0','Warmaul Chef Bufferlo - Cast Filet'),
 -- Telaari Watcher
 ('1848801','18488','30','0','100','0','5','19141','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Telaari Watcher - Set Phase 1 on Receive AI Event A'),
 ('1848802','18488','1','1','100','1','1500','2500','1500','2500','10','4','15','21','0','0','0','0','0','0','0','0','Telaari Watcher - Random Emote (Phase 1)'),
@@ -31839,7 +31844,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-84','Measure twice, cut once.','11104','1','0','19218','0'),
 ('-85','If my division is correct you should be quite dead.','11105','1','0','19218','0'),
 ('-86','I predict a painful death.','11101','1','0','19218','0'),
--- Reuse 87-92
+('-87','IT DUZ WUT IT\'S TOLD!','0','0','0','18440','0'),
+('-88','YOU GUD IN DA BELLY!','0','0','0','18440','0'),
+('-89','GET IN DA STEW!','0','0','0','18440','0'),
+-- Reuse 90-92
 ('-93','The work must continue.','10376','1','0','17941','0'),
 ('-94','Don\'t make me kill you!','10378','1','0','17941','0'),
 ('-95','You brought this on yourselves.','10379','1','0','17941','0'),
@@ -33219,7 +33227,10 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10029,0,-497,0,'Generic Blades Edge Ogre On Death Text (If Player has Completed Quest 11000)'),
 (10029,0,-498,0,'Generic Blades Edge Ogre On Death Text (If Player has Completed Quest 11000)'),
 (10029,0,-499,0,'Generic Blades Edge Ogre On Death Text (If Player has Completed Quest 11000)'),
-(10029,0,-500,0,'Generic Blades Edge Ogre On Death Text (If Player has Completed Quest 11000)');
+(10029,0,-500,0,'Generic Blades Edge Ogre On Death Text (If Player has Completed Quest 11000)'),
+(10031,0,-87,0,'18440 - Random Aggro Texts'),
+(10031,0,-88,0,'18440 - Random Aggro Texts'),
+(10031,0,-89,0,'18440 - Random Aggro Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
