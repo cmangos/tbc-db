@@ -28586,11 +28586,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1246801','12468','9','0','100','3','0','30','11000','15000','11','22275','4','1','0','0','0','0','0','0','0','0','Death Talon Hatcher - Cast Flamestrike'),
 ('1246802','12468','0','0','100','3','1000','3000','4000','6000','11','22442','4','0','0','0','0','0','0','0','0','0','Death Talon Hatcher - Cast Growing Flames'),
 -- Grethok the Controller
-('1255701','12557','4','0','100','2','0','0','0','0','1','-1294','0','0','0','0','0','0','0','0','0','0','Grethlok the Controller - Yell on Aggro'),
-('1255702','12557','9','0','100','3','0','30','5000','8000','11','22273','1','0','0','0','0','0','0','0','0','0','Grethlok the Controller - Cast Arcane Missiles'),
-('1255703','12557','0','0','100','3','8000','11000','20000','24000','11','22274','4','1','0','0','0','0','0','0','0','0','Grethlok the Controller - Cast Greater Polymorph'),
-('1255704','12557','0','0','100','3','11000','14000','16000','20000','11','14515','4','0','1','-1295','0','0','0','0','0','0','Grethlok the Controller - Cast Dominate Mind and Yell'),
-('1255705','12557','0','0','100','3','15000','21000','10000','17000','11','13747','4','0','0','0','0','0','0','0','0','0','Grethlok the Controller - Cast Slow'),
+('1255701','12557','4','0','100','2','0','0','0','0','1','-1294','0','0','0','0','0','0','0','0','0','0','Grethok the Controller - Yell on Aggro'),
+('1255702','12557','9','0','100','3','0','30','5000','8000','11','22273','1','0','0','0','0','0','0','0','0','0','Grethok the Controller - Cast Arcane Missiles'),
+('1255703','12557','0','0','100','3','8000','11000','20000','24000','11','22274','4','1','0','0','0','0','0','0','0','0','Grethok the Controller - Cast Greater Polymorph'),
+('1255704','12557','0','0','100','3','11000','14000','16000','20000','11','14515','4','0','1','-1295','0','0','0','0','0','0','Grethok the Controller - Cast Dominate Mind and Yell'),
+('1255705','12557','0','0','100','3','15000','21000','10000','17000','11','13747','4','0','0','0','0','0','0','0','0','0','Grethok the Controller - Cast Slow'),
+('1255706','12557','7','0','100','0','0','0','0','0','1','-1343','0','0','0','0','0','0','0','0','0','0','Grethok the Controller - Yell on Evade'),
 -- Vaelastrasz the Corrupt (13020) - boss_vaelastrasz
 -- Blackwing Technician
 ('1399601','13996','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Blackwing Technician - Enable Dynamic Movement and Prevent Melee on Aggro'),
@@ -32908,6 +32909,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1340','When I catch you, I\'m going to disenchant your components, so help me...','0','0','0','18230','0'),
 ('-1341','You stay out of the regent lord\'s way! I mean it!','0','0','0','18230','0'),
 ('-1342','No, no, no! Come back here!','0','0','0','18230','0'),
+('-1343','I have regained control! Return to your posts!','8274','1','0','12557','0'),
 ('-1349','Burn Burn Burn','0','0','12','18109','0'),
 ('-1350','%s appears very grateful to be free of the koi-koi spirit\'s influence.','0','2','0','21326','34'),
 ('-1351','AYYAYAAYAA!','0','0','0','22483','0'),
