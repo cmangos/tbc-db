@@ -128,3 +128,4 @@ DELETE FROM dbscripts_on_creature_movement WHERE id IN (1897701,1897702); -- mov
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES 
 (1897701,0,15,7741,0,0,0,0x04,0,0,0,0,0,0,0,0,'spawn effect'),
 (1897702,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'despawn'); 
+

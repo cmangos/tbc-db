@@ -19,3 +19,4 @@ UPDATE creature_template SET UnitFlags=UnitFlags|518 WHERE entry=16852; -- make 
 
 -- 18/04
 UPDATE quest_template SET ReqSpellCast2=0 WHERE entry=10923; -- a quest Evil Draws Near has wrong completion conditions
+

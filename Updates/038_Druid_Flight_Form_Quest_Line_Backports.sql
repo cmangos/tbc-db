@@ -283,3 +283,4 @@ INSERT INTO dbscripts_on_go_template_use (id, delay, command, datalong, datalong
 UPDATE creature_template SET MovementType = 0 WHERE entry = 22992; -- update for 'Guardian of the Hawk'
 -- quest 10994 'Chasing the Moonstone' - Druid 
 UPDATE creature_template SET MovementType = 0, InhabitType = 3 WHERE entry = 23002; -- update for 'Rizzle Sprysprocket'
+

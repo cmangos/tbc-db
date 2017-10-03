@@ -22,11 +22,11 @@ UPDATE `creature` SET `spawndist`=40,`MovementType`=1 WHERE `guid`=151032;
 -- (@GUID,67,-1190.294,8772.655,44.03177,0,0,0,0,0,0,0,0,0,0,0,0,0),
 -- I assume that Blizzard's intention was that they should despawn after reaching the last waypoint, so that's what I did.
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(15103001);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(1920101);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES 
-(15103001,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Mountain Gronn - Pause waypoints'),
-(15103001,1,20,1,8,0,0,8,0,0,0,0,0,0,0,0,'Mountain Gronn - Random movement around current position'),
-(15103001,60,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'Mountain Gronn - Despawn Self'); 
+(1920101,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Mountain Gronn - Pause waypoints'),
+(1920101,1,20,1,8,0,0,8,0,0,0,0,0,0,0,0,'Mountain Gronn - Random movement around current position'),
+(1920101,60,18,0,0,0,0,0,0,0,0,0,0,0,0,0,'Mountain Gronn - Despawn Self'); 
 
 SET @GUID := 151030;
 SET @POINT := 0;
@@ -50,7 +50,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@GUID,@POINT := @POINT + '1',-1081.081,8848.842,102.7461,0,0,0,0,0,0,0,0,0,0,0,0),
 (@GUID,@POINT := @POINT + '1',-1082.776,8856.875,102.9781,0,0,0,0,0,0,0,0,0,0,0,0),
 (@GUID,@POINT := @POINT + '1',-1086.328735,8893.722656,102.045715,0,0,0,0,0,0,0,0,0,0,0,0),
-(@GUID,@POINT := @POINT + '1',-1055.303467,8927.958984,100.954239,10000,15103001,0,0,0,0,0,0,0,100,0,0);
+(@GUID,@POINT := @POINT + '1',-1055.303467,8927.958984,100.954239,10000,1920101,0,0,0,0,0,0,0,100,0,0);
 
 SET @GUID := 151031;
 SET @POINT := 0;
@@ -77,7 +77,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@GUID,@POINT := @POINT + '1',-874.3984,8936.214,156.2588,0,0,0,0,0,0,0,0,0,0,0,0),
 (@GUID,@POINT := @POINT + '1',-855.9192,8931.477,158.7263,0,0,0,0,0,0,0,0,0,0,0,0),
 (@GUID,@POINT := @POINT + '1',-845.134521,8925.713867,161.844772,0,0,0,0,0,0,0,0,0,0,0,0),
-(@GUID,@POINT := @POINT + '1',-834.978149,8919.649414,165.966446,10000,15103001,0,0,0,0,0,0,0,100,0,0);
+(@GUID,@POINT := @POINT + '1',-834.978149,8919.649414,165.966446,10000,1920101,0,0,0,0,0,0,0,100,0,0);
 
 -- Pathing for  Entry: 19201 'TDB FORMAT' 
 SET @GUID := 151033;

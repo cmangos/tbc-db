@@ -19,3 +19,4 @@ INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inv
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (31551,44085,-1,5,2,4,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (31206,33835,-1,0,2,1,13);
 INSERT IGNORE INTO item_template (entry,displayid,unk0,subclass,class,sheath,inventorytype) VALUES (31601,44150,-1,1,2,1,17);
+

@@ -161,3 +161,4 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 DELETE FROM `creature_template_addon` WHERE `entry`=21694;
 INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUE
 (21694,0,0,0,0,0,0,'18950');
+
