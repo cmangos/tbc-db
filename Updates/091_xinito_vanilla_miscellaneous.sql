@@ -21,10 +21,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES (55464, 40002, 0, 'Westfall - Battered Chest Pool 2');
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES (55466, 40002, 0, 'Westfall - Battered Chest Pool 2');
 
--- Remove Blood Shard from Copper & Tin veins outside of Barrens
-DELETE FROM gameobject_loot_template WHERE entry=1502 AND item=5075;
-DELETE FROM gameobject_loot_template WHERE entry=1503 AND item=5075;
-
 -- Fix princess (390) & adds (330)
  
 -- Fix flag (FLAG_FOLLOW, FLAG_AGGRO_ON_AGGRO, FLAG_TO_AGGRO_ON_AGGRO)
