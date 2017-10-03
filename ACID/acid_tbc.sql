@@ -19167,6 +19167,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Subjugator Vaz'shir
 ('1866001','18660','1','0','100','0','1000','1000','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A on OOC Timer'),
 ('1866002','18660','21','0','100','0','0','0','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A on Reaching Home'),
+-- Voidhunter Yar
+('1868301','18683','4','0','100','0','0','0','0','0','54','0','0','10033','49','1','0','0','22','1','0','0','Voidhunter Yar - Random Say and Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1868302','18683','8','253','100','0','0','2','0','0','11','34336','0','1','22','2','0','0','54','-533','0','0','Voidhunter Yar - Cast Damage Reduction: Holy and Set Phase 2 and Text Emote on Holy Spellhit (Phase 1)'),
+('1868303','18683','8','253','100','0','0','4','0','0','11','34333','0','1','22','3','0','0','54','-534','0','0','Voidhunter Yar - Cast Damage Reduction: Fire and Set Phase 3 and Text Emote on Fire Spellhit (Phase 1)'),
+('1868304','18683','8','253','100','0','0','8','0','0','11','34335','0','1','22','4','0','0','54','-535','0','0','Voidhunter Yar - Cast Damage Reduction: Nature and Set Phase 4 and Text Emote on Nature Spellhit (Phase 1)'),
+('1868305','18683','8','253','100','0','0','16','0','0','11','34334','0','1','22','5','0','0','54','-536','0','0','Voidhunter Yar - Cast Damage Reduction: Frost and Set Phase 5 and Text Emote on Frost Spellhit (Phase 1)'),
+('1868306','18683','8','253','100','0','0','32','0','0','11','34338','0','1','22','6','0','0','54','-537','0','0','Voidhunter Yar - Cast Damage Reduction: Shadow and Set Phase 6 and Text Emote on Shadow Spellhit (Phase 1)'),
+('1868307','18683','8','253','100','0','0','64','0','0','11','34331','0','1','22','7','0','0','54','-538','0','0','Voidhunter Yar - Cast Damage Reduction: Arcane and Set Phase 7 and Text Emote on Arcane Spellhit (Phase 1)'),
+('1868308','18683','0','251','100','1','1000','2000','2500','4000','11','15498','1','0','0','0','0','0','0','0','0','0','Voidhunter Yar - Cast Holy Smite (Phase 2)'),
+('1868309','18683','0','247','100','1','1000','2000','3000','4000','11','14034','1','0','0','0','0','0','0','0','0','0','Voidhunter Yar - Cast Fireball (Phase 3)'),
+('1868310','18683','0','239','100','1','1000','2000','3000','3500','11','12167','1','0','0','0','0','0','0','0','0','0','Voidhunter Yar - Cast Lighting Bolt (Phase 4)'),
+('1868311','18683','0','223','100','1','1000','2000','3000','3500','11','15497','1','0','0','0','0','0','0','0','0','0','Voidhunter Yar - Cast Frostball (Phase 5)'),
+('1868312','18683','0','189','100','1','1000','2000','3000','3500','11','12471','1','0','0','0','0','0','0','0','0','0','Voidhunter Yar - Cast Shadow Bolt (Phase 6 and 1)'),
+('1868313','18683','0','127','100','1','1000','2000','1000','2000','11','38204','1','0','0','0','0','0','0','0','0','0','Voidhunter Yar - Cast Arcane Bolt (Phase 7)'),
+('1868314','18683','9','0','100','1','0','30','14300','28200','11','38051','1','0','0','0','0','0','0','0','0','0','Voidhunter Yar - Cast Fel Shackles'),
+('1868315','18683','3','0','100','0','7','0','0','0','49','0','0','0','0','0','0','0','0','0','0','0','Voidhunter Yar - Disable Dynamic Movement when Mana is at 7%'),
 -- Bro'Gaz the Clanless
 ('1868401','18684','9','0','100','1','0','5','9000','13000','11','38313','1','0','0','0','0','0','0','0','0','0','Bro\'Gaz the Clanless - Cast Pummel'),
 ('1868402','18684','0','0','100','1','6000','11000','16000','21000','11','12468','4','0','0','0','0','0','0','0','0','0','Bro\'Gaz the Clanless - Cast Flamestrike'),
@@ -32098,7 +32114,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-331','Nae, that\'s fer wimps. Hit me with yer hammer!','0','0','0','19394','0'),
 ('-332','Bron! \'Ey Bron! \'Ey Bron! Hit me!','0','0','0','19394','0'),
 ('-333','I don\'t get it! Are ya blind? Can ya not see the demons bangin\' on our door? Who am I gonna send out to talk to your shaman friends? Point \'em out!','0','0','0','21773','0'),
--- Re-Use 334-336
+('-334','Let my darkness engulf you!','0','0','0','18683','0'),
+('-335','In the void, no one can hear you scream!','0','0','0','18683','0'),
+('-336','I shall send your soul into the infinite void!','0','0','0','18683','0'),
 ('-337','The creatures of this place are strong, wayfarer. You\'ll need ample ammunition if you hope to survive. You\'re in luck - I am well-stocked with fine arrows, bullets, and throwing weapons. The price is reasonable, considering the circumstances.','0','0','0','19534','0'),
 ('-338','Ahh, another powerful traveler. The nether can be dangerous; you\'ll want the most potent spells at your disposal. I carry the finest reagents, common and exotic. Come and buy - you won\'t be sorry!','0','0','0','19535','0'),
 ('-339','%s whispers softley in reverent tones under her breath.','0','2','0','21066','0'),
@@ -32282,7 +32300,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-530','No!  Leave us!  We must not fail our task!','0','0','0','Drywhisker','0'),
 ('-531','Take that!  The Drywhiskers will prevail!','0','0','0','Drywhisker','0'),
 ('-532','Stop!  Foolish $c, we cannot let you summon the creature Myzrael!','0','1','0','2763','0'),
--- PLEASE RE-USE 533 - 538
+('-533','%s absorbs the holy energy of the attack.','0','2','0','18683','0'),
+('-534','%s absorbs the fire energy of the attack.','0','2','0','18683','0'),
+('-535','%s absorbs the nature energy of the attack.','0','2','0','18683','0'),
+('-536','%s absorbs the frost energy of the attack.','0','2','0','18683','0'),
+('-537','%s absorbs the shadow energy of the attack.','0','2','0','18683','0'),
+('-538','%s absorbs the arcane energy of the attack.','0','2','0','18683','0'),
 ('-539','%s is getting hungry!','0','2','0','8567','0'),
 ('-540','%s is getting VERY hungry!','0','2','0','8567','0'),
 ('-541','For Silvermoon! For Sunstrider!','0','0','0','17591','0'),
@@ -33244,7 +33267,10 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10029,0,-500,0,'Generic Blades Edge Ogre On Death Text (If Player has Completed Quest 11000)'),
 (10031,0,-87,0,'18440 - Random Aggro Texts'),
 (10031,0,-88,0,'18440 - Random Aggro Texts'),
-(10031,0,-89,0,'18440 - Random Aggro Texts');
+(10031,0,-89,0,'18440 - Random Aggro Texts'),
+(10033,0,-334,0,'18683 - Random Aggro Texts'),
+(10033,0,-335,0,'18683 - Random Aggro Texts'),
+(10033,0,-336,0,'18683 - Random Aggro Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
