@@ -5,3 +5,4 @@ DELETE FROM conditions WHERE condition_entry IN(1149,1150);
 INSERT INTO conditions VALUES
 (1149,38,3521,0),
 (1150,38,3521,1);
+

@@ -25,3 +25,4 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES (26178, 40041, 0, 'Stormwind Stockades - Large Solid Chest Pool');
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES (26179, 40041, 0, 'Stormwind Stockades - Large Solid Chest Pool');
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES (31964, 40041, 0, 'Stormwind Stockades - Large Solid Chest Pool');
+
