@@ -77,7 +77,9 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 
 
 -- MISSING UDB BACKPORT
-insert into `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`) values('81381','182012','530','1','-1937.6','-11847.1','50.6868','2.68781','0','0','0.97437','0.22495','180','255','1');
+DELETE FROM gameobject WHERE guid=81381 AND id=182012;
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`) VALUES
+('81381','182012','530','1','-1937.6','-11847.1','50.6868','2.68781','0','0','0.97437','0.22495','180','255','1');
 
 
 
