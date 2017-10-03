@@ -13,3 +13,4 @@ INSERT INTO dbscripts_on_go_template_use(id, delay, command, datalong, datalong2
 VALUES(184588,0,10,20787,12000,0,0,0,0,0,0,0,3916.4,2511.83,105.016,3.964,'Captain Tyralius - SPAWN'),
 (184588,0,18,0,0,20825,10,3,0,0,0,0,0,0,0,0,'Captain Tyralius - DESPAWN dummy creature'),
 (184588,2,0,0,0,20787,10,3,2000000227,0,0,0,0,0,0,0,'Captain Tyralius - SAY');
+

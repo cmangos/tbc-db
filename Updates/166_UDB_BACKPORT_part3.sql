@@ -1047,19 +1047,19 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, wa
 (56051,5,145.97,-152.706,13.7712,2000,1,3.13306,0,0);
 
 -- UDB_280
--- Classic [1147]
+-- Classic [1146]
 -- Master Elemental Shaper Krixix
 DELETE FROM creature_template_spells WHERE entry = 14401;
 INSERT INTO creature_template_spells (entry, spell1, spell2, spell3, spell4) VALUES
 (14401, 22968, 0, 0, 0); 
 
--- Classic [1146]
+-- Classic [1145]
 -- Kurmokk
 DELETE FROM creature WHERE guid BETWEEN 98913 AND 98922;
 DELETE FROM pool_creature_template WHERE id = 14491;
 DELETE FROM pool_template WHERE entry = 1120;
 UPDATE creature_template SET ModelId1 = 3188, FactionAlliance = 72, FactionHorde = 72, MovementType = 2 WHERE Entry = 14491;
-UPDATE creature SET modelid = 0, MovementType = 2 WHERE guid = 49126;
+UPDATE creature SET modelid = 0, MovementType = 2, position_x=-13769.472, position_y=-210.8100, position_z=28.15880, orientation=1.6824140 WHERE guid = 49126;
 DELETE FROM creature_movement WHERE id = (SELECT guid FROM creature WHERE id = 14491);
 DELETE FROM creature_movement_template WHERE entry = 14491;
 INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, orientation, model1, model2) VALUES
