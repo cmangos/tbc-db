@@ -18497,7 +18497,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1692902','16929','9','5','100','1','0','5','5000','9000','11','33911','1','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Cast Tear Armor (Phase 1)'),
 ('1692903','16929','24','5','100','1','33911','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase 2 on Target Max Tear Armor Aura Stack (Phase 1)'),
 ('1692904','16929','28','3','100','1','33911','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase 1 on Target Missing Tear Armor Aura Stack (Phase 2)'),
-('1692905','16929','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase to 0 on Evade'),
+('1692905','16929','2','0','100','1','50','0','15300','22900','11','33896','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Cast Desperate Defense at 50% HP'),
+('1692906','16929','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase to 0 on Evade'),
 -- Razorfang Hatchling
 ('1693201','16932','0','0','100','1','4000','8000','8000','12000','11','33781','1','0','0','0','0','0','0','0','0','0','Razorfang Hatchling - Cast Ravage'),
 -- Razorfang Ravager
