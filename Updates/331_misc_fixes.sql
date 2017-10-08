@@ -57,3 +57,17 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position
 -- Ethereal Thief - immune to MC
 UPDATE creature_template SET MechanicImmuneMask=1 WHERE entry=16544;
 
+UPDATE creature_template SET MovementType=0 WHERE entry IN(16514); -- only one spawn and already set in creature table
+
+-- missing gossip during q.9700 from WDB
+DELETE FROM gossip_menu_option WHERE menu_id=7465 AND id=0;
+INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, condition_id) VALUES
+('7465', '0', '0', 'Where should I begin my search for the portal?', '1', '1', '7501', '0', '0', '0', '0', '', '1190');
+DELETE FROM conditions WHERE condition_entry=1190;
+INSERT INTO conditions(condition_entry, type, value1, value2) VALUES
+('1190', '9', '9700', '0');
+DELETE FROM gossip_menu WHERE entry=7501;
+INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
+('7501', '9097', '0', '0');
+
+
