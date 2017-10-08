@@ -152,7 +152,6 @@ UPDATE creature_template SET UnitFlags=UnitFlags|33554432 WHERE entry IN (17662,
 -- https://jira.vengeancewow.com/browse/TBC-34
 UPDATE creature_template SET InhabitType=5 WHERE entry=21840;
 
-
 -- Add missing Fire Elemental and Earth Elemental spells
 DELETE FROM creature_template_addon WHERE entry IN(15438,15352);
 INSERT INTO creature_template_addon(entry,auras) VALUES
@@ -266,4 +265,23 @@ REPLACE INTO gameobject_template (entry, type, displayId, name, faction, flags, 
 
 REPLACE INTO gameobject (guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
 (150000, 178225, 1, -4033.24, 1345.66, 152.989, 3.14159, 0, 0, 1, 0, 900, 900, 100, 1);
+
+-- Beer Basted Boar Ribs reward text fix
+UPDATE `quest_template` SET `OfferRewardText`='The Malt is brewed, the Boars are dead\r\nAnd before all is done and anything said\r\nWe will have to fight for first dibs\r\nOn these savory Beer Basted Boar Ribs!' WHERE `entry`=384;
+
+-- All of these should be able to swim
+-- Tide Crawler, Encrusted Tide Crawler
+-- Young Reef Crawler, Reef Crawler
+-- Raging Reef Crawler, Corrupted Surf Crawler
+UPDATE creature_template SET InhabitType=3 WHERE entry IN (2232, 2233, 2234, 2235, 2236, 3228);
+
+-- Remove gossip flag from Deathguard Phillip, Deathguard Randolph, Deathguard Oliver
+UPDATE `creature_template` SET `NpcFlags`=0 WHERE `entry` IN (1736, 1737, 1739);
+
+-- Remove static gossip for Scooty, he has a menu.
+DELETE FROM `npc_gossip` WHERE `npc_guid`=2;
+
+-- Gossip menu for Bernard Gump
+UPDATE `creature_template` SET `GossipMenuId`=703 WHERE `entry`=1302;
+
 
