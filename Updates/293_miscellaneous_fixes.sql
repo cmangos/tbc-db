@@ -21,3 +21,30 @@ UPDATE creature_loot_template SET ChanceOrQuestChance=10 WHERE item=23338;
 -- fix incorrect ID for creatures which need to be killed for quest credit
 UPDATE quest_template SET ReqCreatureOrGOId1=20983 WHERE entry=10426;
 
+-- Apexis Guardians had no static spawns after patch 2.1
+DELETE FROM creature WHERE id=22275;
+
+-- Terrordar the Tormentor - removed after 2.1
+DELETE FROM creature WHERE id=22385;
+
+-- Know Thine Enemy (9567)
+-- Correct position of objects so they aren't floating, remove duplicates
+-- Nazzivus Monument and Dark Braziers
+UPDATE gameobject_template SET size=1.23 WHERE entry IN (182212,182015,182016);
+-- Nazzivus Monument Glyphs (no despawn after use)
+UPDATE gameobject_template SET size=2.5, flags=flags|32 WHERE entry=182532;
+-- remove duplicates and respawn Nazzivus Monument, Nazzivus Monument Glyphs, and Dark Braziers
+DELETE FROM gameobject WHERE id IN (182212,182532,182015,182016);
+INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecs, animprogress, state) VALUES
+(44724, 182532, 530, 1, -2309.816, -11265.79, 36.36997, 3.106652, 0, 0, 0.9998474, 0.01746928, 0, 100, 1), -- location confirmed
+(44725, 182212, 530, 1, -2300.86, -11266.4, 35.7, 3.05441, 0, 0, 0.99905, 0.0435775, 300, 100, 1), -- guessed, not official position
+(66127, 182015, 530, 1, -2307.572, -11258.4, 38.09388, 3.174276, 0, 0, -0.9998665, 0.01634102, 300, 255, 1), -- location confirmed
+(43231, 182016, 530, 1, -2308.392, -11272.69, 38.22277, 5.852986, 0, 0, -0.2134447, 0.9769552, 300, 255, 1); -- location confirmed
+
+-- These creatures were hostile until some point in WotLK
+-- Tender 15271
+-- Feral Tender 15294
+-- Vampiric Mistbat 16354
+UPDATE creature_template SET FactionAlliance=16, FactionHorde=16 WHERE entry IN (15271,15294,16354);
+
+
