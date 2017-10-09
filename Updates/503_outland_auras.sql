@@ -32,4 +32,6 @@ UPDATE creature_template_addon SET auras='18950' WHERE entry=19662;
 -- Shattrath City Peacekeeper - Defensive State (DND)
 UPDATE creature_template_addon SET auras='5301' WHERE entry=19687;
 
+-- Corrupted Treant -- Stone Skin Passive
+UPDATE creature_template_addon SET auras='5811' WHERE entry=17352;
 
