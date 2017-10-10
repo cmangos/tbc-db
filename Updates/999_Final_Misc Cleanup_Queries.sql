@@ -72,7 +72,9 @@ UPDATE conditions SET comments=CONCAT('Alliance Player') WHERE type=6 AND value1
 UPDATE conditions SET comments=CONCAT('Horde Player') WHERE type=6 AND value1=67 AND comments IS NULL; -- CONDITION_TEAM
 UPDATE conditions SET comments=CONCAT('Has Skill ID ',value1,', Minimum Skill Value ',value2) WHERE type=7 AND comments IS NULL; -- CONDITION_SKILL
 UPDATE conditions SET comments=CONCAT('Quest ID ',value1,' Rewarded') WHERE type=8 AND comments IS NULL; -- CONDITION_QUESTREWARDED
-UPDATE conditions SET comments=CONCAT('Quest ID ',value1,' Taken') WHERE type=9 AND comments IS NULL; -- CONDITION_QUESTTAKEN
+UPDATE conditions SET comments=CONCAT('Quest ID ',value1,' Taken') WHERE type=9 AND value2=0 AND comments IS NULL; -- CONDITION_QUESTTAKEN
+UPDATE conditions SET comments=CONCAT('Quest ID ',value1,' Taken AND NOT Completed') WHERE type=9 AND value2=1 AND comments IS NULL; -- CONDITION_QUESTTAKEN
+UPDATE conditions SET comments=CONCAT('Quest ID ',value1,' Taken AND Completed') WHERE type=9 AND value2=2 AND comments IS NULL; -- CONDITION_QUESTTAKEN
 UPDATE conditions SET comments=CONCAT('Player has any Argent Dawn Commission Aura Active (17670,23930,24198,29112,29113)') WHERE type=10 AND comments IS NULL; -- CONDITION_AD_COMMISSION_AURA
 UPDATE conditions SET comments=CONCAT('NOT Player Has Aura: ',value1, ', EffectIndex: ',value2) WHERE type=11 AND comments IS NULL; -- CONDITION_NO_AURA
 UPDATE conditions SET comments=CONCAT('Event ID ',value1, ' Active') WHERE type=12 AND comments IS NULL; -- CONDITION_ACTIVE_EVENT
