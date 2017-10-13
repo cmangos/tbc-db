@@ -9,3 +9,4 @@ INSERT INTO conditions VALUES
 
 UPDATE creature_loot_template SET ChanceOrQuestChance=100, condition_id = @COND + 1 where item=21142;
 UPDATE creature_loot_template SET ChanceOrQuestChance=100, condition_id = @COND + 2 where item=21138;
+

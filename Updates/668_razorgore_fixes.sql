@@ -12,3 +12,4 @@ INSERT INTO spell_script_target VALUES
 
 -- Prevented Grethok and its adds to respawn while Razorgore is dead
 UPDATE creature_linking_template SET flag=flag+1024 WHERE master_entry IN (12557, 12435);
+
