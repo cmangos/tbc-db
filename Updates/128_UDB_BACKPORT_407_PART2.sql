@@ -93,9 +93,8 @@ insert into `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`, `e
 
 
 -- Missing DB_Script_string
-DELETE FROM db_script_string WHERE entry IN (2000005242,2000005243,2000005244,2000005167,2000005168,2000005206,2000005207,2000005208,2000005209,2000005205,2000005258,2000005259,2000005260,2000005261,2000005262);
+DELETE FROM db_script_string WHERE entry IN (2000005242,2000005243,2000005244,2000005168,2000005206,2000005207,2000005208,2000005209,2000005205,2000005258,2000005259,2000005260,2000005261,2000005262);
 INSERT INTO `db_script_string` (entry, content_default, content_loc1, content_loc2, content_loc3, content_loc4, content_loc5, content_loc6, content_loc7, content_loc8) VALUES
-('2000005167','Is it true that the paladins train here?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 ('2000005168','Why do we have to learn this stuff anyway?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 ('2000005205','It\'s coming along, Wafflefry. Haven\'t you got a product demonstration to do or something?',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 ('2000005206','Be the first on your block to own the incredible Electrostatic Maculation Blaster!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
@@ -3341,7 +3340,6 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (351307,1,0,0,0,0,0,0,2000005142,0,0,0,0,0,0,0,''),
 (351307,9,1,1,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (351307,17,1,1,0,0,0,0,0,0,0,0,0,0,0,0,'');
-UPDATE db_script_string SET emote = 1 WHERE entry = 2000005167;
 -- Steven c.3511
 DELETE FROM creature_movement WHERE id = 87089;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `orientation`, `model1`, `model2`) VALUES
@@ -3416,7 +3414,7 @@ UPDATE creature_movement SET emote = 0 WHERE id = 87089 AND point = 43;
 DELETE FROM dbscripts_on_creature_movement WHERE id = 351101; 
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (351101,9,0,0,0,0,0,0,2000005168,0,0,0,0,0,0,0,'');
-UPDATE db_script_string SET emote = 1 WHERE entry IN (2000005134,2000005135,2000005136,2000005139,2000005142,2000005167,2000005168);
+UPDATE db_script_string SET emote = 1 WHERE entry IN (2000005134,2000005135,2000005136,2000005139,2000005142,2000005168);
 -- Neophyte Narama c.25644
 DELETE FROM creature_movement WHERE id = 48381;
 DELETE FROM creature_movement_template WHERE entry = 25644;

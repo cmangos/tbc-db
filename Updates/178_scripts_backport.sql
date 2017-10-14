@@ -718,19 +718,6 @@ DELETE FROM db_script_string WHERE entry = 2000000184;
 INSERT INTO db_script_string VALUES
 (2000000184, 'There, it is completed.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '0', '0', '0', '0', NULL);
 
--- UDB: Did You Get The Note? (10719)
-UPDATE quest_template SET CompleteScript = 10719 WHERE entry = 10719;
-
-DELETE FROM dbscripts_on_quest_end WHERE id = 10719;
-INSERT INTO dbscripts_on_quest_end VALUES
-(10719, 1, 0, 0, 0, 21983, 10, 1, 2000009037, 0, 0, 0, 0, 0, 0, 0, ''),
-(10719, 3, 0, 0, 0, 21983, 10, 0, 2000009038, 0, 0, 0, 0, 0, 0, 0, '');
-
-DELETE FROM db_script_string WHERE entry IN (2000009037,2000009038);
-INSERT INTO db_script_string VALUES
-(2000009037, '$r, do you know who Kolphis Darkscale is?', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '0', '0', '0', '0', NULL),
-(2000009038, 'Yes, he\'s second-in-command of the wyrmcult at the Blackwing Coven to the west.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '0', '0', '0', '0', NULL);
-
 -- ClassicDB: To the Top (3567)
 UPDATE quest_template SET CompleteScript = 3567 WHERE entry = 3567;
 
