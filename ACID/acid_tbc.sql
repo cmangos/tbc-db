@@ -22034,6 +22034,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1863503','18635','0','0','100','5','10200','18100','14100','26200','11','38226','1','0','0','0','0','0','0','0','0','0','Cabal Deathsworn (Heroic) - Cast Black Cleave'),
 ('1863504','18635','0','0','100','7','10900','28200','12100','22900','11','11428','1','0','0','0','0','0','0','0','0','0','Cabal Deathsworn - Cast Knockdown'),
 ('1863505','18635','2','0','100','6','25','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Cabal Deathsworn - Cast Enrage at 25% HP'),
+-- Cabal Assassin
+('1863601','18636','4','0','10','6','0','0','0','0','54','0','0','10034','0','0','0','0','0','0','0','0','Cabal Assassin - Random Say on Aggro'),
+('1863602','18636','1','0','100','6','0','0','0','0','11','30991','0','0','0','0','0','0','0','0','0','0','Cabal Assassin - Cast Stealth OOC'),
+('1863603','18636','33','0','100','7','0','0','4500','6500','11','30992','1','0','0','0','0','0','0','0','0','0','Cabal Assassin - Cast Backstab on Facing Target Back'),
 -- Cabal Shadow Priest (4.3.4 Official Data - Normal/Heroic)
 ('1863701','18637','11','0','100','6','0','0','0','0','11','16592','0','1','0','0','0','0','0','0','0','0','Cabal Shadow Priest - Cast Shadowform on Spawn'),
 ('1863702','18637','4','0','10','38','0','0','0','0','1','-664','-665','-666','1','-667','-668','-669','1','-665','-666','-669','Cabal Shadow Priest - Random Say on Aggro'),
@@ -33372,7 +33376,13 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10031,0,-89,0,'18440 - Random Aggro Texts'),
 (10033,0,-334,0,'18683 - Random Aggro Texts'),
 (10033,0,-335,0,'18683 - Random Aggro Texts'),
-(10033,0,-336,0,'18683 - Random Aggro Texts');
+(10033,0,-336,0,'18683 - Random Aggro Texts'),
+(10034,0,-664,0,'Shadow Labyrinth - Random Aggro Texts'),
+(10034,0,-665,0,'Shadow Labyrinth - Random Aggro Texts'),
+(10034,0,-666,0,'Shadow Labyrinth - Random Aggro Texts'),
+(10034,0,-667,0,'Shadow Labyrinth - Random Aggro Texts'),
+(10034,0,-668,0,'Shadow Labyrinth - Random Aggro Texts'),
+(10034,0,-669,0,'Shadow Labyrinth - Random Aggro Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
