@@ -21,4 +21,9 @@ DELETE FROM dbscripts_on_gossip WHERE id=16101;
 INSERT INTO dbscripts_on_gossip(id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 ('16101', '0', '15', '9949', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'cast Thieves\' Tool Rack Conjure'); -- add script to spawn in thieves tools
 
+UPDATE creature_template SET ExtraFlags=ExtraFlags&~128 WHERE entry IN(21348,21310); -- remove invis to enable seeing visual
+UPDATE creature_template SET ModelId1=13069 WHERE entry = 21310; -- remove implike model
+
+UPDATE dbscripts_on_creature_movement SET data_flags=data_flags|0x08 WHERE id=2130901 AND delay=1; -- make cast triggered to enable showing visual from channel
+
 
