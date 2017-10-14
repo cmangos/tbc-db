@@ -19197,6 +19197,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Subjugator Vaz'shir
 ('1866001','18660','1','0','100','0','1000','1000','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A on OOC Timer'),
 ('1866002','18660','21','0','100','0','0','0','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A on Reaching Home'),
+-- Terrorguard
+('1866101','18661','0','0','100','1','3000','7000','13000','17000','11','11443','1','32','0','0','0','0','0','0','0','0','Terrorguard - Cast Cripple'),
+('1866102','18661','0','0','100','1','7000','11000','12000','15000','11','11876','0','0','0','0','0','0','0','0','0','0','Terrorguard - Cast War Stomp'),
 -- Voidhunter Yar
 ('1868301','18683','4','0','100','0','0','0','0','0','54','0','0','10033','49','1','0','0','22','1','0','0','Voidhunter Yar - Random Say and Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1868302','18683','8','253','100','0','0','2','0','0','11','34336','0','1','22','2','0','0','54','-533','0','0','Voidhunter Yar - Cast Damage Reduction: Holy and Set Phase 2 and Text Emote on Holy Spellhit (Phase 1)'),
