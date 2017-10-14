@@ -2466,6 +2466,7 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 -- Bartleby <Drunk> -- not req. no more.
 DELETE FROM creature_movement_template WHERE entry = 6090;
 UPDATE creature_template SET MovementType = 0 WHERE entry = 6090;
+UPDATE creature SET MovementType = 0 WHERE id = 6090;
 -- Erk
 DELETE FROM creature_movement_template WHERE entry = 14857;
 INSERT INTO creature_movement_template (entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
