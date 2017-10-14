@@ -18458,6 +18458,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1692501','16925','4','0','100','0','0','0','0','0','43','0','0','0','11','32723','0','0','0','0','0','0','Bonechewer Raider - Dismount and Cast Summon Bonechewer Riding Wolf on Aggro'),
 ('1692502','16925','4','0','20','32','0','0','0','0','1','-765','-766','0','1','-767','-768','0','0','0','0','0','Bonechewer Raider - Say on Aggro'),
 ('1692503','16925','7','0','100','0','0','0','0','0','43','0','17408','0','56','0','0','0','0','0','0','0','Bonechewer Raider - Despawn Guardians and Mount on Evade'),
+-- Stonescythe Whelp
+('1692701','16927','2','0','100','0','60','0','0','0','11','33896','0','0','54','-124','0','0','0','0','0','0','Stonescythe Whelp - Cast Desperate Defense and Text Emote at 60% HP'),
+('1692702','16927','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Stonescythe Whelp - Flee at 15% HP'),
 -- Stonescythe Alpha
 ('1692901','16929','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase 1 on Aggro'),
 ('1692902','16929','9','5','100','1','0','5','5000','9000','11','33911','1','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Cast Tear Armor (Phase 1)'),
@@ -32007,7 +32010,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-121','Your time is almost... up.','11002','1','0','17842','0'),
 ('-122','No one is going to save you.','11048','1','0','17842','0'),
 ('-123','I am the serpent king! I can do anything.','5788','1','0','3673','0'),
--- Reuse 124
+('-124','%s defends himself in desperation.','0','2','0','16927','0'),
 ('-125','The Legion\'s final conquest has begun! Once again the subjugation of this world is within our grasp. Let none survive!','11022','1','0','17767','0'),
 ('-126','Succumb to the icy chill... of death!','11024','1','0','17767','0'),
 ('-127','It will be much colder in your grave.','11058','1','0','17767','0'),
