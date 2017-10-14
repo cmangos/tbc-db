@@ -14,7 +14,7 @@ UPDATE `creature` SET `spawndist` = 5, `MovementType` = 1, spawntimesecsmin=2880
 
 DELETE FROM `conditions` WHERE `condition_entry` = 1340;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES
-(1340, 8, 5209, 0);
+(1340, 8, 5203, 0);
 
 DELETE FROM `gossip_menu` WHERE `entry` = 3129 AND `text_id` = 4114;
 INSERT INTO `gossip_menu` (entry, text_id, script_id, condition_id) VALUES
