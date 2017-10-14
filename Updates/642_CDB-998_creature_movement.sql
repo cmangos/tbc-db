@@ -2,10 +2,6 @@
 -- This closes #260  
 SET @GUID := 105971;
 
-DELETE FROM `creature_addon` WHERE `guid` = @GUID;
-INSERT INTO `creature_addon` (guid, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
-(@GUID, 0, 0, 1, 16, 0, 0, '6523');
-
 UPDATE `creature_template` SET `FactionAlliance` = 35, `FactionHorde` = 35 WHERE `Entry` = 2624;
 
 DELETE FROM `dbscripts_on_event` WHERE `id` = 364;
