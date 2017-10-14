@@ -67,5 +67,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (351307,0,1,1,0,0,0,0,0,0,0,0,0,'Miss Danna - ONESHOT_TALK',0,0,0,0);
 UPDATE creature_movement_template SET emote=0 WHERE entry=3513 AND point IN(20,41,59);
 
-
+-- -------
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN(1849701);
+INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
+(1849701,0,28,8,0,0,0,0,0,0,0,0,0,'Auchenai Monk - Set Stand State Kneel',0,0,0,0),
+(1849701,29,28,0,0,0,0,0,0,0,0,0,0,'Auchenai Monk - Set Stand State Stand',0,0,0,0);
+UPDATE creature_movement SET script_id=1849701 WHERE id=83357 AND point IN(4,14);
 
