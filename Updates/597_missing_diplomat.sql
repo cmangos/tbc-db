@@ -50,7 +50,3 @@ INSERT INTO dbscripts_on_creature_movement VALUES
 (496701, 124, 18, 0, 0, 0, 4965, 50, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Archmage Tervosh - Despawn Pained'),
 (496701, 124, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Archmage Tervosh - Despawn Self');
 
--- Ensuring the visual teleport spell effect is targeting the right NPC
-DELETE FROM  spell_script_target WHERE entry=7079;
-INSERT INTO spell_script_target VALUES
-(7079, 1, 4966, 0);
