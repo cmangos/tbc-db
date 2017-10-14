@@ -58,4 +58,7 @@ DELETE FROM gameobject WHERE id IN(103661); -- object spawned by script
 
 UPDATE gameobject_template SET data14=1 WHERE entry=103661; -- make trap search for friendlies
 
+UPDATE creature_template SET SkinningLootId = 0 WHERE Entry = 10717; -- remove skinning loot from Temporal Parasite
+
+
 
