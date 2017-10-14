@@ -1,7 +1,7 @@
 -- Added conditions for items involved in quest Nefarius's Corruption
 SET @COND := 1395;
 
--- DELETE FROM conditions WHERE condition_entry IN (@COND, @COND + 1);
+DELETE FROM conditions WHERE condition_entry IN (@COND,@COND+1,@COND+2);
 INSERT INTO conditions VALUES
 (@COND, 9, 8730, 0, 'Has taken quest Nefarius Corruption'),
 (@COND + 1, -1, @COND, 243, 'Has taken quest 8730 and event failed'),
