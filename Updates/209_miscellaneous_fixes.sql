@@ -147,3 +147,19 @@ UPDATE gameobject_template SET data2=32929 WHERE entry = 179944;
 DELETE FROM spell_script_target WHERE entry=32929 AND targetEntry=179944;
 INSERT INTO spell_script_target VALUES('32929', '0', '179944', '0');
 
+-- https://jira.vengeancewow.com/browse/TBC-2035
+-- Out of This World Produce! (11036)
+-- https://jira.vengeancewow.com/browse/TBC-2021
+-- Report to Spymaster Thalodien (11039)
+-- no minimum level set for these quests currently
+UPDATE `quest_template` SET `MinLevel` = 67 WHERE `entry` IN (11036, 11039);
+
+-- https://jira.vengeancewow.com/browse/TBC-2032
+-- Currently 15 minute respawn, set to 2 minutes instead
+UPDATE `gameobject` SET `spawntimesecs` = 120 WHERE `id` = 272;
+
+-- https://jira.vengeancewow.com/browse/TBC-2071
+-- Verog the Dervish has a chance to be summoned via ACID, remove static spawn
+DELETE FROM `creature` WHERE `id` = 3395;
+
+
