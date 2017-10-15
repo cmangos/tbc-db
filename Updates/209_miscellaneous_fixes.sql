@@ -123,3 +123,6 @@ UPDATE creature_onkill_reputation SET RewOnKillRepValue1=15 WHERE creature_id=20
 -- Add swimming InhabitType to Monstrous Crawler
 UPDATE creature_template SET InhabitType=3 WHERE entry=1088;
 
+-- remove custom scale from entries
+UPDATE creature_template SET Scale=0 WHERE entry IN(4324,10182);
+
