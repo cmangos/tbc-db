@@ -8,4 +8,7 @@ UPDATE quest_template SET SpecialFlags=0 WHERE entry IN(5056); -- quest should n
 
 UPDATE quest_template SET MinLevel=47 WHERE entry IN(3941,3942); -- mid questline wrong minlevel
 
+DELETE FROM gameobject WHERE guid=30079 AND id=2024;
+INSERT INTO gameobject VALUES -- fix andorhal sign quaternion
+('30079', '2024', '0', '1', '452.427', '-629.573', '166.348', '2.90598', '0.576802', '-0.173584', '0.779713', '0.170927', '7200', '100', '1');
 
