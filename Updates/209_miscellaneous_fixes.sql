@@ -166,3 +166,8 @@ DELETE FROM `creature` WHERE `id` = 3395;
 -- Shattrath to Caverns of Time gossip
 UPDATE dbscripts_on_gossip SET data_flags=0 WHERE id=9205; -- fix crash, npc should cast it on player
 
+-- Fix Naxx areatrigger naming and quest req
+UPDATE areatrigger_teleport SET required_quest_done=9378 WHERE id IN(4055,4156);
+UPDATE areatrigger_teleport SET name='Naxxramas (Entrance)' WHERE id IN(4055);
+UPDATE areatrigger_teleport SET name='Naxxramas (Exit)' WHERE id IN(4156);
+
