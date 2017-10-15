@@ -34,3 +34,8 @@ UPDATE `db_script_string` SET `content_default`='Well hand it over and let\'s se
 
 -- Replace $N$N with proper line break
 UPDATE quest_template SET OfferRewardText = 'With Warlord Sriss''tiz dead, the possibility of a naga invasion is now only a distant memory. We are safe, for the time being...$B$BI must admit, I was wrong to think badly of you, $N. You have shown that you are nothing like the filth that was Archimonde. Accept this as a gift from the night elves.' WHERE entry = 9515;
+
+-- Add proper UnitFlags to Ythyar repair vendor in Karazhan
+UPDATE creature_template SET UnitFlags=768 WHERE entry=17518;
+
+
