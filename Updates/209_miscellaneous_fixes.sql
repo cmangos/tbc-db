@@ -32,3 +32,30 @@ INSERT INTO npc_vendor VALUES -- horde NPC was missing this TBC-530
 -- Nightbane immune to interrupt and silence
 UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask|(33554432+256) WHERE entry=17225;
 
+-- Celebras the Redeemed fixes
+-- fixes script getting stuck
+DELETE FROM dbscripts_on_spell WHERE id = 21914;
+INSERT INTO dbscripts_on_spell(id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+('21914', '0', '14', '21916', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Celebras - Remove Celebras Waiting');
+
+DELETE FROM dbscripts_on_go_template_use WHERE id=178965 and delay=1 and command=15;
+INSERT INTO dbscripts_on_go_template_use(id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+('178965', '1', '15', '21914', '0', '13716', '20', '7', '0', '0', '0', '0', '0', '0', '0', '0', 'cast Celebras Quit Escort');
+
+-- missing gossip
+
+UPDATE creature_template SET GossipMenuId=5349,NpcFlags=NpcFlags|1 WHERE entry=13716;
+
+DELETE FROM gossip_menu WHERE entry IN(5349,5347,5346,5361);
+INSERT INTO gossip_menu VALUES
+('5346', '6381', '0', '0'),
+('5347', '6380', '0', '0'),
+('5349', '6354', '0', '0'),
+('5361', '6393', '0', '0');
+
+DELETE FROM gossip_menu_option WHERE menu_id IN(5349,5347,5346);
+INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, condition_id) VALUES
+('5346', '0', '0', 'Tell me more about Remulos and Zaetar.', '1', '1', '5361', '0', '0', '0', '0', NULL, '0'),
+('5347', '0', '0', 'Please tell me more about Zaetar.', '1', '1', '5346', '0', '0', '0', '0', NULL, '0'),
+('5349', '0', '0', 'Please tell me more about Maraudon', '1', '1', '5347', '0', '0', '0', '0', NULL, '0');
+
