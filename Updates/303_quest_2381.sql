@@ -12,16 +12,17 @@ INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
 
 DELETE FROM gossip_menu_option WHERE menu_id = 524;
 INSERT INTO `gossip_menu_option` (`menu_id`,`id`,`option_icon`,`option_text`,`option_id`,`npc_option_npcflag`,`action_menu_id`,`action_poi_id`,`action_script_id`,`box_coded`,`box_money`,`box_text`,`condition_id`) VALUES
-(524, 0, 0, '[PH] Get E.C.A.C.', 1, 1, -1, 0, 524, 0, 0, '', 1174),
-(524, 1, 0, '[PH] Get Thieves'' Tools', 1, 1, -1, 0, 50041, 0, 0, '', 1174);
+(524, 0, 0, '[PH] Get E.C.A.C.', 1, 1, -1, 0, 52401, 0, 0, '', 1174),
+(524, 1, 0, '[PH] Get Thieves'' Tools', 1, 1, -1, 0, 52402, 0, 0, '', 1174);
 
 DELETE FROM conditions WHERE condition_entry = 1174;
 INSERT INTO conditions (condition_entry, type, value1, value2) VALUES
 (1174, 9, 2381, 0);
 
-DELETE FROM dbscripts_on_gossip WHERE id = 524;
+DELETE FROM dbscripts_on_gossip WHERE id IN(52401,52402);
 INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(524, 0, 15, 9977, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Conjure E.C.A.C');
+(52401, 0, 15, 9977, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Conjure E.C.A.C'),
+(52402, 0, 15, 9949, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Thieves'' Tool Rack Conjure');
 
 -- E.C.A.C. should not work on weakened Polly or Lathoric the Black
 DELETE FROM spell_script_target WHERE entry = 9976 AND targetEntry IN (7168, 8391);
