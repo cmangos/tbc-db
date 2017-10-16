@@ -35,3 +35,7 @@ UPDATE creature_template_addon SET auras='5301' WHERE entry=19687;
 -- Corrupted Treant -- Stone Skin Passive
 UPDATE creature_template_addon SET auras='5811' WHERE entry=17352;
 
+-- Mo'arg Master Planner - Double Attack
+DELETE FROM creature_addon WHERE guid IN(SELECT guid FROM creature WHERE id=18567);
+UPDATE creature_template_addon SET auras='19194' WHERE entry IN(18567);
+
