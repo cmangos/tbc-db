@@ -17894,11 +17894,41 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Razaani Raider
 ('2060101','20601','0','0','100','1','7000','12000','9000','15000','11','35922','0','1','0','0','0','0','0','0','0','0','Razaani Raider - Cast Energy Flare'),
 ('2060102','20601','0','0','100','1','2000','6000','16000','21000','11','32920','1','1','0','0','0','0','0','0','0','0','Razaani Raider - Cast Warp'),
+('2060103','20601','6','0','100','0','0','0','0','0','11','35737','0','0','0','0','0','0','0','0','0','0','Razaani Raider - Cast Summon Deadsoul Orb'),
 -- Razaani Nexus Stalker
 ('2060901','20609','9','0','100','1','0','8','12000','15000','11','11975','0','0','0','0','0','0','0','0','0','0','Razaani Nexus Stalker - Cast Arcane Explosion'),
 ('2060902','20609','9','0','100','1','0','30','14000','18000','11','36513','0','0','0','0','0','0','0','0','0','0','Razaani Nexus Stalker - Cast Intangible Presence'),
+('2060903','20609','6','0','100','0','0','0','0','0','11','35737','0','0','0','0','0','0','0','0','0','0','Razaani Nexus Stalker - Cast Summon Deadsoul Orb'),
 -- Razaani Spell-Thief
 ('2061401','20614','9','0','100','1','0','8','9000','14000','11','36508','1','0','0','0','0','0','0','0','0','0','Razaani Spell-Thief - Cast Energy Surge'),
+('2061402','20614','6','0','100','0','0','0','0','0','11','35737','0','0','0','0','0','0','0','0','0','0','Razaani Spell-Thief - Cast Summon Deadsoul Orb'),
+-- Blade's Edge - Orb Trigger 01
+('2066601','20666','30','0','100','1','5','20845','0','0','0','0','0','0','11','35740','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Cast Holy Nova on Receive AI Event 5'),
+('2066602','20666','30','491521','100','1','5','20845','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Increment Phase on Receive AI Event 5 (Phase 1-14)'),
+('2066603','20666','30','458751','100','1','5','20845','0','0','22','4','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Set Phase 4 on Receive AI Event 5 (Phase 16)'),
+('2066604','20666','30','393215','100','1','5','20845','0','0','22','8','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Set Phase 8 on Receive AI Event 5 (Phase 17)'),
+('2066605','20666','30','262143','100','1','5','20845','0','0','22','12','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Set Phase 12 on Receive AI Event 5 (Phase 18)'),
+('2066606','20666','30','524286','100','1','5','20845','0','0','53','10051','0','0','53','10056','0','0','23','1','0','0','Blade\'s Edge - Orb Trigger 01 - Start Relay Script and Increment Phase and Set Active Object on Receive AI Event 5 (Phase 0)'),
+('2066607','20666','29','524285','100','1','300000','300000','300000','300000','53','10058','0','0','22','0','0','0','53','10059','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 0 and Set Active Object Off on Timer (Phase 1)'),
+('2066608','20666','29','524283','100','1','300000','300000','300000','300000','53','10058','0','0','22','0','0','0','53','10059','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 0 and Set Active Object Off on Timer (Phase 2)'),
+('2066609','20666','29','524279','100','1','300000','300000','300000','300000','53','10058','0','0','22','0','0','0','53','10059','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 0 and Set Active Object Off on Timer (Phase 3)'),
+('2066610','20666','30','524271','100','1','5','20845','0','0','53','10052','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Start Relay Script on Receive AI Event 5 (Phase 4)'), --
+('2066611','20666','29','524271','100','1','300000','300000','300000','300000','53','10058','0','0','22','16','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 16 on Timer (Phase 4)'),
+('2066612','20666','29','524255','100','1','300000','300000','300000','300000','53','10058','0','0','22','16','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 16 on Timer (Phase 5)'),
+('2066613','20666','29','524223','100','1','300000','300000','300000','300000','53','10058','0','0','22','16','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 16 on Timer (Phase 6)'),
+('2066614','20666','29','524159','100','1','300000','300000','300000','300000','53','10058','0','0','22','16','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 16 on Timer (Phase 7)'),
+('2066615','20666','30','524031','100','1','5','20845','0','0','53','10053','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Start Relay Script on Receive AI Event 5 (Phase 8)'), --
+('2066616','20666','29','524031','100','1','300000','300000','300000','300000','53','10058','0','0','22','17','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 17 on Timer (Phase 8)'),
+('2066617','20666','29','523775','100','1','300000','300000','300000','300000','53','10058','0','0','22','17','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 17 on Timer (Phase 9)'),
+('2066618','20666','29','523263','100','1','300000','300000','300000','300000','53','10058','0','0','22','17','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 17 on Timer (Phase 10)'),
+('2066619','20666','29','522239','100','1','300000','300000','300000','300000','53','10058','0','0','22','17','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 17 on Timer (Phase 11)'),
+('2066620','20666','30','520191','100','1','5','20845','0','0','53','10054','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Start Relay Script on Receive AI Event 5 (Phase 12)'), --
+('2066621','20666','29','520191','100','1','300000','300000','300000','300000','53','10058','0','0','22','18','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 18 on Timer (Phase 12)'),
+('2066622','20666','29','516095','100','1','300000','300000','300000','300000','53','10058','0','0','22','18','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 18 on Timer (Phase 13)'),
+('2066623','20666','29','507903','100','1','300000','300000','300000','300000','53','10058','0','0','22','18','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Despawn Closest Blade\'s Edge - Nexus Prince Event - Orb01 and Set Phase 18 on Timer (Phase 14)'),
+('2066624','20666','30','491519','100','0','5','20845','0','0','53','10055','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Start Relay Script on Receive AI Event 5 (Phase 15)'),
+('2066625','20666','30','491519','100','0','6','21057','0','0','22','0','0','0','53','10059','0','0','24','0','0','0','Blade\'s Edge - Orb Trigger 01 - Set Phase 0 and Set Active Object Off and Enter Evade Mode on Receive AI Event 6 (Phase 15)'),
+('2066626','20666','29','65535','100','1','60000','60000','60000','60000','45','5','10','0','22','0','0','0','53','10059','0','0','Blade\'s Edge - Orb Trigger 01 - Send AI Event 5 and Set Phase 0 and Set Active Object Off on Timer (Phase 16-18)'),
 -- Korgaah
 ('2072301','20723','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Korgaah - Set Phase 1 on Spawned'),
 ('2072302','20723','30','13','100','1','5','21241','0','0','22','2','0','0','5','16','0','0','0','0','0','0','Korgaah - Set Phase 2 and Kneel on Received AI Event (Phase 1)'),
@@ -18062,6 +18092,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2092501','20925','0','0','85','1','8000','13000','14000','19000','11','35236','0','0','0','0','0','0','0','0','0','0','Scalded Basilisk - Cast Heat Wave'),
 -- Lesser Nether Drake
 ('2100401','21004','0','0','100','1','4000','8000','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Lesser Nether Drake - Cast Intangible Presence'),
+-- Blade's Edge - Nexus Prince Event - Orb01
+('2102501','21025','30','0','100','0','5','20666','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Nexus Prince Event - Orb01 - Despawn on Receive AI Event 5'),
 -- Dreadwing
 ('2103201','21032','9','0','100','1','0','30','20000','24000','11','36513','0','0','0','0','0','0','0','0','0','0','Dreadwing - Cast Intangible Presence'),
 ('2103202','21032','9','0','100','1','0','5','9000','13000','11','36631','0','0','0','0','0','0','0','0','0','0','Dreadwing - Cast Netherbreath'),
@@ -18093,8 +18125,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2104807','21048','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2104808','21048','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Say on Death if Killer Player has Completed Quest 11000'),
 -- Nexus-Prince Razaan
-('2105701','21057','11','0','100','0','0','0','0','0','1','-1460','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Razaan yell on spawn'),
+('2105701','21057','11','0','100','0','0','0','0','0','1','-1460','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Razaan - Yell on Spawn'),
 ('2105702','21057','0','0','100','1','8000','12000','17000','21000','11','35924','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Razaan - Cast Energy Flux'),
+('2105703','21057','6','0','100','0','0','0','0','0','11','37957','0','7','11','37987','0','7','0','0','0','0','Nexus-Prince Razaan - Cast Gnome Mercy: Summon Collection of Souls Chest and Cast Gnome Mercy: Summon Collection of Souls Glowy on Death'),
 -- Rina Moonspring
 ('2106601','21066','1','0','100','1','60000','60000','300000','300000','1','-339','0','0','0','0','0','0','0','0','0','0','Rina Moonspring - Gossip Event Text Emote'),
 -- Rip Pedalslam
