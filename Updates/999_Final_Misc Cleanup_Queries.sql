@@ -56,7 +56,7 @@ UPDATE `npc_vendor` ct JOIN `item_template` it ON it.entry = ct.item SET ct.comm
 UPDATE conditions SET comments=NULL;
 -- CONDITION_NONE
 UPDATE conditions SET comments=CONCAT('Player Has Aura: ',value1, ', EffectIndex: ',value2) WHERE type=1 AND comments IS NULL; -- CONDITION_AURA
-UPDATE conditions SET comments=CONCAT('Player Has Less Than ',value2,' of Item ID ',value1,' in Inventory') WHERE type=2 AND comments IS NULL; -- CONDITION_ITEM
+UPDATE conditions SET comments=CONCAT('Player Has ',value2,' or more of Item ID ',value1,' in Inventory') WHERE type=2 AND comments IS NULL; -- CONDITION_ITEM
 UPDATE conditions SET comments=CONCAT('Player Has Item ID ',value1,' Equipped') WHERE type=3 AND comments IS NULL; -- CONDITION_ITEM_EQUIPPED
 UPDATE conditions SET comments=CONCAT('Is In Area ID: ',value1) WHERE type=4 AND value2=0 AND comments IS NULL; -- CONDITION_AREAID
 UPDATE conditions SET comments=CONCAT('NOT In Area ID: ',value1) WHERE type=4 AND value2=1 AND comments IS NULL; -- CONDITION_AREAID
