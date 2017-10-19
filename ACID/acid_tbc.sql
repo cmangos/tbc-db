@@ -18328,6 +18328,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2333202','23332','9','0','100','1','8','25','18000','24000','11','35570','4','0','0','0','0','0','0','0','0','0','Bash\'ir Reckoner - Cast Charge'),
 ('2333203','23332','0','0','90','1','9000','18000','16000','24000','11','40949','0','0','0','0','0','0','0','0','0','0','Bash\'ir Reckoner - Cast Warp'),
 ('2333204','23332','9','0','100','1','0','8','25000','31000','11','40935','1','0','0','0','0','0','0','0','0','0','Bash\'ir Reckoner - Cast Dematerialize Armor'),
+-- Zarcsin
+('2335501','23355','4','0','100','0','0','0','0','0','1','-501','0','0','0','0','0','0','0','0','0','0','Zarcsin - Text on Aggro'),
+('2335502','23355','2','0','100','0','50','0','0','0','11','41447','0','0','1','-106','0','0','0','0','0','0','Zarcsin - Cast Enrage at 50% HP'),
+('2335503','23355','0','0','100','1','5000','6000','12000','13000','11','41444','0','0','0','0','0','0','0','0','0','0','Zarcsin - Cast Fel Flames'),
 -- Bash'ir Controller
 ('2336801','23368','9','0','100','1','0','8','16000','24000','11','34944','0','0','0','0','0','0','0','0','0','0','Bash\'ir Controller - Cast Holy Nova'),
 ('2336802','23368','0','0','100','1','32000','42000','42000','60000','11','10901','0','0','0','0','0','0','0','0','0','0','Bash\'ir Controller - Cast Power Word Shield'),
@@ -32437,7 +32441,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-498','Me honored... $g king : queen; kill me.','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)','0'),
 ('-499','$G King : Queen; $n, me die now.','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)','0'),
 ('-500','$G King : Queen; think... there really is... an Ogri\'la?','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)','0'),
--- Please Re-Use 501
+('-501','As I shall consume your flesh, so too shall the Burning Legion consume your people!','0','1','0','23355','0'),
 ('-502','I presume you come with good news?','0','0','0','2597','0'),
 ('-503','Things are going as planned, Lord Falconcrest. I assure you, it is only a matter of time.','0','0','0','2599','0'),
 -- PLEASE RE-USE 504 - 513
