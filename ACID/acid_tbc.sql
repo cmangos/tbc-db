@@ -9793,11 +9793,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('394401','3944','0','0','100','1','5000','9000','15000','19000','11','15970','5','0','0','0','0','0','0','0','0','0','Wrathtail Priestess - Cast Sleep'),
 ('394402','3944','14','0','100','1','350','40','25600','37700','11','11642','6','1','0','0','0','0','0','0','0','0','Wrathtail Priestess - Cast Heal on Friendlies'),
 ('394403','3944','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Wrathtail Priestess - Flee at 15% HP'),
--- Velinde Starsong
-('394601','3946','11','0','100','0','0','0','0','0','17','73','8','0','0','0','0','0','0','0','0','0','Velinde Starsong - Kneel Start on Spawn (Quest 1022)'),
-('394602','3946','1','0','100','0','5000','5000','0','0','5','1','0','0','1','-658','0','0','0','0','0','0','Velinde Starsong - First Say OOC (Quest 1022)'),
-('394603','3946','1','0','100','0','10000','10000','0','0','5','1','0','0','1','-659','0','0','0','0','0','0','Velinde Starsong - Second Say OOC (Quest 1022)'),
-('394604','3946','1','0','100','0','15000','15000','0','0','5','1','0','0','1','-660','0','0','0','0','0','0','Velinde Starsong - Final Say OOC (Quest 1022)'),
+-- Velinde Starsong (3946) - NSR
 -- Bhaldaran Ravenshade (3951) - NSR
 -- Aeolynn (3952) - NSR
 -- Tandaan Lightmane (3953) - NSR
@@ -32575,9 +32571,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-655','Tell us!  Where does your leader hide?','0','0','0','16924','0'),
 ('-656','Please!  I must feed on something soon... A mana crystal.... a shard... anything!  The pain is unbearable!','0','0','0','16916','0'),
 ('-657','You\'re not getting anything until you speak, scum!','0','0','0','16924','0'),
-('-658','The numbers of my companions dwindles, goddess, and my own power shall soon be insufficient to hold back the demons of Felwood.','0','0','0','3946','0'),
-('-659','Goddess, grant me the power to overcome my enemies! Hear me, please, my need is desperate and my cause is just!','0','0','0','3946','0'),
-('-660','What... what is this? Could this be the answer to my prayers? Elune has granted me a weapon--this scythe--to defeat the demons.','0','0','0','3946','0'),
+-- Reuse 658-660
 ('-661','You have chosen death.','0','0','0','18493','0'),
 ('-662','%s growls in your direction before taking time to sniff you.','0','2','0','3695','0'),
 ('-663','%s faces southeast and whimpers before looking back at you. ','0','2','0','3695','0'),
