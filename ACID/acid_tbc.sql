@@ -17741,7 +17741,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deathforge Technician
 ('1997901','19979','0','0','100','1','6000','12000','10000','15000','11','36250','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Steal Armor'),
 ('1997902','19979','2','0','100','1','30','0','8000','8000','11','36825','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Drain Life at 30% HP'),
--- Bloodmaul Brute (Missing combat spells!)
+-- Bloodmaul Brute (Missing normal combat texts)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('1999103','19991','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Bloodmaul Brute - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -17750,6 +17750,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999106','19991','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('1999107','19991','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('1999108','19991','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Brute - Say on Death if Killer Player has Completed Quest 11000'),
+('1999109','19991','0','0','80','1','8000','14000','20000','30000','11','34932','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Cast Bloodmaul Buzz'),
+('1999110','19991','9','0','100','1','0','5','5000','9000','11','15496','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Cast Cleave'),
+('1999111','19991','0','0','100','1','3500','4000','10000','12000','11','37577','1','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Cast Debilitating Strike'),
+('1999112','19991','2','0','100','0','20','0','0','0','11','8599','0','0','54','-106','0','0','0','0','0','0','Bloodmaul Brute - Cast Enrage at 20% HP'),
 -- Bloodmaul Shaman (Missing combat spells!)
 ('1999201','19992','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999202','19992','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
