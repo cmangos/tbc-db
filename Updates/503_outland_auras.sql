@@ -23,9 +23,6 @@ UPDATE creature_template_addon SET auras='8876' WHERE entry=18214;
 -- Lagoon Walker - Moss Covered Feet Proc
 UPDATE creature_template_addon SET auras='6871' WHERE entry=20291;
 
--- Lagoon Eel - Electric Skin
-UPDATE creature_template_addon SET auras='35319' WHERE entry=20290;
-
 -- Aaron Hollman - Invisibility and Stealth Detection
 UPDATE creature_template_addon SET auras='18950' WHERE entry=19662;
 
