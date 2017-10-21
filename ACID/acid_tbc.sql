@@ -17741,6 +17741,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deathforge Technician
 ('1997901','19979','0','0','100','1','6000','12000','10000','15000','11','36250','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Steal Armor'),
 ('1997902','19979','2','0','100','1','30','0','8000','8000','11','36825','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Drain Life at 30% HP'),
+-- Ruuan'ok Cloudgazer
+('1998501','19985','1','0','100','1','1000','1000','150000','150000','11','12550','0','1','0','0','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Cast Lightning Shield OOC'),
+('1998502','19985','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1998503','19985','9','13','100','1','0','40','3000','4000','11','9532','1','0','0','0','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Cast Lighting Bolt (Phase 1)'),
+('1998504','19985','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1998505','19985','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Disable Dynamic Movement at 0-8 Yards'),
+('1998506','19985','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('1998507','19985','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('1998508','19985','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('1998509','19985','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Flee at 15% HP (Phase 3)'),
+('1998510','19985','27','13','100','1','12550','1','15000','30000','11','12550','0','1','0','0','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Cast Lightning Shield on Missing Buff (Phase 1)'),
+('1998511','19985','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Set Phase to 0 on Evade'),
 -- Bloodmaul Brute (Missing combat spells!)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
