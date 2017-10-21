@@ -18775,6 +18775,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1926412','19264','2','0','100','0','20','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Force-Commander Gorax - Cast Toughen at 20% HP'),
 ('1926413','19264','2','0','100','0','10','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Force-Commander Gorax - Cast Toughen at 10% HP'),
 ('1926414','19264','6','0','100','0','0','0','0','0','11','39012','0','7','0','0','0','0','0','0','0','0','Force-Commander Gorax - Create Gorax Corpse Spell Focus on Death'),
+-- Subjugator Shi'aziv
+('1928201','19282','0','0','100','1','7100','8300','10800','11500','11','32026','1','0','0','0','0','0','0','0','0','0','Subjugator Shi\'aziv - Cast Pain Spike'),
 -- Legion Transporter: Alpha (19291) - NSR
 -- Legion Transporter: Beta (19292) - NSR
 -- Shattered Hand Grenadier
