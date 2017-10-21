@@ -39,3 +39,6 @@ UPDATE creature_template_addon SET auras='5811' WHERE entry=17352;
 DELETE FROM creature_addon WHERE guid IN(SELECT guid FROM creature WHERE id=18567);
 UPDATE creature_template_addon SET auras='19194' WHERE entry IN(18567);
 
+-- Sporelok - Sporeskin
+UPDATE `creature_template_addon` SET `auras` = '35230' WHERE `entry` = 18912;
+
