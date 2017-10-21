@@ -18909,6 +18909,21 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1945801','19458','2','0','100','0','20','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ripp - Flee at 20% HP'),
 -- Feng
 ('1945901','19459','2','0','100','0','20','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Feng - Flee at 20% HP'),
+-- Vacillating Voidcaller
+('1952701','19527','11','0','100','0','0','0','0','0','11','34302','0','0','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Cast Coalesce on Spawn'),
+('1952702','19527','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Set Phase 1 on Aggro'),
+('1952703','19527','8','253','100','0','0','2','0','0','11','34336','0','1','22','2','0','0','0','0','0','0','Vacillating Voidcaller - Cast Damage Reduction: Holy and Set Phase 2 on Holy Spellhit (Phase 1)'),
+('1952704','19527','8','253','100','0','0','4','0','0','11','34333','0','1','22','3','0','0','0','0','0','0','Vacillating Voidcaller - Cast Damage Reduction: Fire and Set Phase 3 on Fire Spellhit (Phase 1)'),
+('1952705','19527','8','253','100','0','0','8','0','0','11','34335','0','1','22','4','0','0','0','0','0','0','Vacillating Voidcaller - Cast Damage Reduction: Nature and Set Phase 4 on Nature Spellhit (Phase 1)'),
+('1952706','19527','8','253','100','0','0','16','0','0','11','34334','0','1','22','5','0','0','0','0','0','0','Vacillating Voidcaller - Cast Damage Reduction: Frost and Set Phase 5 on Frost Spellhit (Phase 1)'),
+('1952707','19527','8','253','100','0','0','32','0','0','11','34338','0','1','22','6','0','0','0','0','0','0','Vacillating Voidcaller - Cast Damage Reduction: Shadow and Set Phase 6 on Shadow Spellhit (Phase 1)'),
+('1952708','19527','8','253','100','0','0','64','0','0','11','34331','0','1','22','7','0','0','0','0','0','0','Vacillating Voidcaller - Cast Damage Reduction: Arcane and Set Phase 7 on Arcane Spellhit (Phase 1)'),
+('1952709','19527','0','251','100','1','1000','2000','2500','4000','11','34346','1','0','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Cast Holy Bolt (Phase 2)'),
+('1952710','19527','0','247','100','1','1000','2000','2500','4000','11','34348','1','0','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Cast Fireball (Phase 3)'),
+('1952711','19527','0','239','100','1','1000','2000','2500','4000','11','34345','1','0','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Cast Lighting Bolt (Phase 4)'),
+('1952712','19527','0','223','100','1','1000','2000','2500','4000','11','34347','1','0','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Cast Frostball (Phase 5)'),
+('1952713','19527','0','189','100','1','1000','2000','2500','4000','11','34344','1','0','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Cast Shadow Bolt (Phase 6 and 1)'),
+('1952714','19527','0','127','100','1','1000','2000','1500','3000','11','33552','1','0','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Cast Arcane Missiles (Phase 7)'),
 -- Amilya Airheart
 ('1955801','19558','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Amilya Airheart - Summon Enraged Wyverns and Yell on Aggro'),
 ('1955802','19558','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Amilya Airheart - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
