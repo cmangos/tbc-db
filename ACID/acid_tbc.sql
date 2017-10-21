@@ -7836,7 +7836,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Night Web Spider
 ('150501','1505','1','0','100','0','1000','1000','0','0','11','6752','0','32','0','0','0','0','0','0','0','0','Night Web Spider - Cast Weak Poison Proc OOC'),
 -- Scarlet Convert
-('150601','1506','4','0','15','0','0','0','0','0','1','-897','-895','-1030','0','0','0','0','0','0','0','0','Scarlet Convert - Random Say on Aggro'),
+('150601','1506','4','0','15','0','0','0','0','0','1','-1305','-1307','-1030','0','0','0','0','0','0','0','0','Scarlet Convert - Random Say on Aggro'),
 -- Scarlet Initiate
 ('150701','1507','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Scarlet Initiate - Cast Frost Armor on Spawn'),
 ('150702','1507','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Scarlet Initiate - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -7887,23 +7887,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wailing Ancestor
 ('153401','1534','9','0','100','1','0','8','12000','21000','11','7713','0','0','0','0','0','0','0','0','0','0','Wailing Ancestor - Cast Wailing Dead'),
 -- Scarlet Warrior
-('153501','1535','4','0','15','0','0','0','0','0','1','-895','-896','-897','0','0','0','0','0','0','0','0','Scarlet Warrior - Random Say on Aggro'),
+('153501','1535','4','0','15','0','0','0','0','0','1','-1307','-1306','-1305','0','0','0','0','0','0','0','0','Scarlet Warrior - Random Say on Aggro'),
 ('153502','1535','0','0','100','1','3000','5000','45000','50000','11','3238','0','0','0','0','0','0','0','0','0','0','Scarlet Warrior - Cast Nimble Reflexes'),
 ('153503','1535','2','0','100','0','15','0','0','0','25','0','0','0','0','0','0','0','0','0','0','0','Scarlet Warrior - Flee at 15% HP'),
 -- Scarlet Missionary
-('153601','1536','4','0','15','0','0','0','0','0','1','-1028','-896','-895','0','0','0','0','0','0','0','0','Scarlet Missionary - Random Say on Aggro'),
+('153601','1536','4','0','15','0','0','0','0','0','1','-1028','-1306','-1307','0','0','0','0','0','0','0','0','Scarlet Missionary - Random Say on Aggro'),
 ('153602','1536','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Missionary - Flee at 15% HP'),
 -- Scarlet Zealot
-('153701','1537','4','0','15','0','0','0','0','0','1','-897','-1028','-1029','0','0','0','0','0','0','0','0','Scarlet Zealot - Random Say on Aggro'),
+('153701','1537','4','0','15','0','0','0','0','0','1','-1305','-1028','-1029','0','0','0','0','0','0','0','0','Scarlet Zealot - Random Say on Aggro'),
 ('153702','1537','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Zealot - Flee at 15% HP'),
 -- Scarlet Friar
 ('153801','1538','1','0','100','1','1000','1000','3000000','3000000','11','1243','0','1','0','0','0','0','0','0','0','0','Scarlet Friar - Cast Power Word: Fortitude'),
-('153802','1538','4','0','15','0','0','0','0','0','1','-897','-1028','-896','0','0','0','0','0','0','0','0','Scarlet Friar - Random Say on Aggro'),
+('153802','1538','4','0','15','0','0','0','0','0','1','-1305','-1028','-1306','0','0','0','0','0','0','0','0','Scarlet Friar - Random Say on Aggro'),
 ('153803','1538','14','0','90','1','55','40','18000','29000','11','2052','6','1','0','0','0','0','0','0','0','0','Scarlet Friar - Cast Lesser Heal on Friendly Missing HP'),
 ('153804','1538','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Friar - Flee at 15% HP'),
 -- Scarlet Neophyte
 ('153901','1539','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Scarlet Neophyte - Cast Frost Armor on Spawn'),
-('153902','1539','0','0','15','0','0','0','0','0','1','-895','-896','-1029','0','0','0','0','0','0','0','0','Scarlet Neophyte - Random Say on Aggro'),
+('153902','1539','0','0','15','0','0','0','0','0','1','-1307','-1306','-1029','0','0','0','0','0','0','0','0','Scarlet Neophyte - Random Say on Aggro'),
 ('153903','1539','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Scarlet Neophyte - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('153904','1539','9','13','100','1','0','40','3400','4800','11','13322','1','0','0','0','0','0','0','0','0','0','Scarlet Neophyte - Cast Frostbolt (Phase 1)'),
 ('153905','1539','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Scarlet Neophyte - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
@@ -7915,7 +7915,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('153911','1539','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Neophyte - Flee at 15% HP (Phase 3)'),
 ('153912','1539','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Scarlet Neophyte - Set Phase 0 on Evade'),
 -- Scarlet Vanguard
-('154001','1540','4','0','15','0','0','0','0','0','1','-897','-1029','-1030','0','0','0','0','0','0','0','0','Scarlet Vanguard - Random Say on Aggro'),
+('154001','1540','4','0','15','0','0','0','0','0','1','-1305','-1029','-1030','0','0','0','0','0','0','0','0','Scarlet Vanguard - Random Say on Aggro'),
 ('154002','1540','0','0','100','1','1000','3000','180000','183000','11','7164','0','1','0','0','0','0','0','0','0','0','Scarlet Vanguard - Cast Defensive Stance'),
 ('154003','1540','9','0','100','1','0','5','9000','16000','11','11972','1','0','0','0','0','0','0','0','0','0','Scarlet Vanguard - Cast Shield Bash'),
 ('154004','1540','13','0','100','1','0','20000','0','0','11','72','1','1','0','0','0','0','0','0','0','0','Scarlet Vanguard - Cast Shield Bash on Target Casting'),
@@ -7961,7 +7961,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('165702','1657','9','0','100','1','0','5','16000','30000','11','3148','1','0','0','0','0','0','0','0','0','0','Devilin Agamand - Cast Head Crack'),
 -- Captain Dargol (1658) - NSR
 -- Scarlet Bodyguard
-('166001','1660','4','0','35','0','0','0','0','0','1','-897','-1028','-896','0','0','0','0','0','0','0','0','Scarlet Bodyguard - Random Say on Aggro'),
+('166001','1660','4','0','35','0','0','0','0','0','1','-1305','-1028','-1306','0','0','0','0','0','0','0','0','Scarlet Bodyguard - Random Say on Aggro'),
 ('166002','1660','0','0','100','1','1000','7000','5000','28000','11','12169','0','0','0','0','0','0','0','0','0','0','Scarlet Bodyguard - Cast Shield Block'),
 ('166003','1660','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Bodyguard - Flee at 15% HP'),
 -- Novice Elreth (1661) - NSR
@@ -16928,7 +16928,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('327503','3275','0','0','100','1','7000','15000','9000','14000','11','8014','4','33','0','0','0','0','0','0','0','0','Kolkar Marauder - Cast Tetanus'),
 ('327504','3275','6','0','5','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Marauder - Chance Say and Summon Verog the Dervish on Death'),
 -- Witchwing Roguefeather
-('327701','3277','4','0','75','0','0','0','0','0','1','-494','0','0','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Say on Aggro'),
+('327701','3277','4','0','75','0','0','0','0','0','1','-201','0','0','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Say on Aggro'),
 ('327702','3277','0','0','100','1','4000','8000','12000','16000','11','7992','1','0','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Cast Slowing Poison'),
 ('327703','3277','33','0','100','1','0','0','9000','12000','11','6595','1','1','0','0','0','0','0','0','0','0','Witchwing Roguefeather - Cast Exploit Weakness on Facing Target Back'),
 -- Witchwing Ambusher 3279 - NSR
@@ -22908,8 +22908,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Guardian of the Falcon
 ('2299401','22994','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','18','2','0','0','Guardian of the Falcon - Set Unattackable on Spawn'),
 ('2299402','22994','11','0','100','0','0','0','0','0','5','27','0','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Emote Ready Unarmed on Spawn'),
-('2299403','22994','1','0','100','0','1000','1000','0','0','1','-242','-1','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Say 1 OOC'),
-('2299404','22994','1','0','100','0','7500','7500','0','0','1','-243','-1','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Say 2 OOC'),
+('2299403','22994','1','0','100','0','1000','1000','0','0','1','-240','-1','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Say 1 OOC'),
+('2299404','22994','1','0','100','0','7500','7500','0','0','1','-241','-1','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Say 2 OOC'),
 ('2299405','22994','1','0','100','0','12000','12000','0','0','21','1','0','0','20','1','0','0','19','2','0','0','Guardian of the Falcon - Set Attackable OOC'),
 ('2299406','22994','0','0','100','0','12000','12000','0','0','5','0','0','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Remove Emote'),
 ('2299407','22994','0','0','100','1','25000','25000','30000','30000','11','40367','1','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Cast Twisting Blast'),
@@ -24787,7 +24787,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('919601','9196','0','0','100','3','12000','12000','18000','18000','11','10101','1','0','0','0','0','0','0','0','0','0','Highlord Omokk - Cast Knock Away'),
 ('919602','9196','2','0','100','2','20','0','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','Highlord Omokk - Cast Frenzy'),
 ('919603','9196','0','0','100','3','1000','3000','15000','25000','1','-359','-360','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
-('919604','9196','5','0','100','3','0','0','0','0','1','-1367','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Player Kill'),
+('919604','9196','5','0','100','3','0','0','0','0','1','-361','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Player Kill'),
 -- Spirestone Battle Mage - Aggro Texts
 ('919701','9197','0','0','100','3','4000','10000','5000','15000','11','15305','4','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Chain Lighting'),
 ('919702','9197','16','0','100','3','16170','40','20000','20000','11','16170','6','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Bloodlust on Friendly Missing Buff'),
@@ -25570,7 +25570,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1783503','17835','33','0','100','3','0','0','4800','7200','11','7159','1','0','0','0','0','0','0','0','0','0','Infinite Assassin (Normal) - Cast Backstab on Facing Target Back'),
 ('1783504','17835','33','0','100','5','0','0','4800','7200','11','15657','1','0','0','0','0','0','0','0','0','0','Infinite Assassin (Heroic) - Cast Backstab on Facing Target Back'),
 ('1783505','17835','0','0','100','7','1200','12400','20100','24900','11','30832','1','0','0','0','0','0','0','0','0','0','Infinite Assassin - Cast Kidney Shot'),
-('1783506','17835','6','0','10','6','0','0','0','0','1','-514','-515','-516','0','0','0','0','0','0','0','0','Infinite Assassin - Random Say on Death'),
+('1783506','17835','6','0','10','6','0','0','0','0','1','-514','-515','-442','0','0','0','0','0','0','0','0','Infinite Assassin - Random Say on Death'),
 -- Time Rift (17838) - npc_time_rift
 -- Rift Lord (2.4.3 Official Data)
 ('1783901','17839','4','0','50','6','0','0','0','0','1','-443','-444','-445','0','0','0','0','0','0','0','0','Rift Lord - Random Say on Aggro'),
@@ -25597,7 +25597,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1789208','17892','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Infinite Chronomancer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1789209','17892','9','5','100','3','0','8','9500','10100','11','33860','0','1','0','0','0','0','0','0','0','0','Infinite Chronomancer (Normal) - Cast Arcane Explosion (Phase 1)'),
 ('1789210','17892','9','5','100','5','0','8','8000','10100','11','33623','0','1','0','0','0','0','0','0','0','0','Infinite Chronomancer (Heroic) - Cast Arcane Explosion (Phase 1)'),
-('1789211','17892','6','0','10','6','0','0','0','0','1','-514','-515','-516','0','0','0','0','0','0','0','0','Infinite Chronomancer - Random Say on Death'),
+('1789211','17892','6','0','10','6','0','0','0','0','1','-514','-515','-442','0','0','0','0','0','0','0','0','Infinite Chronomancer - Random Say on Death'),
 -- Time Keeper
 ('1791801','17918','0','0','100','7','2000','3000','5000','6000','11','31478','0','0','0','0','0','0','0','0','0','0','Time Keeper - Cast Sand Breath'),
 ('1791802','17918','11','0','100','6','0','0','0','0','54','0','0','10012','0','0','0','0','0','0','0','0','Time Keeper - Say on Spawn'),
@@ -25613,7 +25613,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1899402','18994','4','0','100','6','0','0','0','0','28','0','31326','0','0','0','0','0','0','0','0','0','Infinite Executioner - Remove Corrupt Medivh on Aggro'),
 ('1899403','18994','0','0','100','3','7200','7200','9700','20300','11','15580','1','0','0','0','0','0','0','0','0','0','Infinite Executioner (Normal) - Cast Strike'),
 ('1899404','18994','0','0','100','5','2000','3900','9700','13700','11','34920','1','0','0','0','0','0','0','0','0','0','Infinite Executioner (Heroic) - Cast Strike'),
-('1899405','18994','6','0','10','6','0','0','0','0','1','-514','-515','-516','0','0','0','0','0','0','0','0','Infinite Executioner - Random Say on Death'),
+('1899405','18994','6','0','10','6','0','0','0','0','1','-514','-515','-442','0','0','0','0','0','0','0','0','Infinite Executioner - Random Say on Death'),
 -- Infinite Vanquisher (2.4.3 Official Data)
 ('1899501','18995','4','0','15','6','0','0','0','0','1','-442','-446','-447','0','0','0','0','0','0','0','0','Infinite Vanquisher - Random Say on Aggro'),
 ('1899502','18995','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','28','0','31326','0','Infinite Vanquisher - Enable Dynamic Movement, Remove Corrupt Medivh and Set Phase 1 on Aggro'),
@@ -25623,7 +25623,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1899506','18995','9','0','100','7','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Infinite Vanquisher - Disable Dynamic Movement at 0-8 Yards'),
 ('1899507','18995','3','5','100','6','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Infinite Vanquisher - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1899508','18995','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Infinite Vanquisher - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('1899509','18995','6','0','10','6','0','0','0','0','1','-514','-515','-516','0','0','0','0','0','0','0','0','Infinite Vanquisher - Random Say on Death'),
+('1899509','18995','6','0','10','6','0','0','0','0','1','-514','-515','-442','0','0','0','0','0','0','0','0','Infinite Vanquisher - Random Say on Death'),
 -- Darkwater Crocolisk (2.4.3 Official Data)
 ('2007501','20075','0','0','100','7','1900','9000','6800','18300','11','34370','1','0','0','0','0','0','0','0','0','0','Darkwater Crocolisk - Cast Jagged Tooth Snap'),
 -- Sa'at (20201) - npc_saat
@@ -25648,14 +25648,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2113608','21136','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Infinite Chronomancer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2113609','21136','9','5','100','3','0','8','33800','39800','11','15063','0','1','0','0','0','0','0','0','0','0','Infinite Chronomancer (Normal) - Cast Frost Nova (Phase 1)'),
 ('2113610','21136','9','5','100','5','0','8','22200','25700','11','15531','0','1','0','0','0','0','0','0','0','0','Infinite Chronomancer (Heroic) - Cast Frost Nova (Phase 1)'),
-('2113611','21136','6','0','10','6','0','0','0','0','1','-514','-515','-516','0','0','0','0','0','0','0','0','Infinite Chronomancer - Random Say on Death'),
+('2113611','21136','6','0','10','6','0','0','0','0','1','-514','-515','-442','0','0','0','0','0','0','0','0','Infinite Chronomancer - Random Say on Death'),
 -- Infinite Assassin
 ('2113701','21137','4','0','15','6','0','0','0','0','1','-442','-446','-447','0','0','0','0','0','0','0','0','Infinite Assassin - Random Say on Aggro'),
 ('2113702','21137','4','0','100','6','0','0','0','0','28','0','31326','0','0','0','0','0','0','0','0','0','Infinite Assassin - Remove Corrupt Medivh on Aggro'),
 ('2113703','21137','0','0','100','5','500','7300','3500','14500','11','15667','1','0','0','0','0','0','0','0','0','0','Infinite Assassin (Heroic) - Cast Sinister Strike'),
 ('2113704','21137','0','0','100','3','1900','10100','10400','21600','11','14874','1','0','0','0','0','0','0','0','0','0','Infinite Assassin (Normal) - Cast Rupture'),
 ('2113705','21137','0','0','100','5','1000','15800','10100','20500','11','15583','1','0','0','0','0','0','0','0','0','0','Infinite Assassin (Heroic) - Cast Rupture'),
-('2113706','21137','6','0','10','6','0','0','0','0','1','-514','-515','-516','0','0','0','0','0','0','0','0','Infinite Assassin - Random Say on Death'),
+('2113706','21137','6','0','10','6','0','0','0','0','1','-514','-515','-442','0','0','0','0','0','0','0','0','Infinite Assassin - Random Say on Death'),
 -- Infinite Executioner
 ('2113801','21138','4','0','15','6','0','0','0','0','1','-439','-440','-441','0','0','0','0','0','0','0','0','Infinite Executioner - Random Say on Aggro'),
 ('2113802','21138','4','0','100','6','0','0','0','0','28','0','31326','0','0','0','0','0','0','0','0','0','Infinite Executioner - Remove Corrupt Medivh on Aggro'),
@@ -25663,7 +25663,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2113804','21138','0','0','100','5','2000','11700','6000','11700','11','15496','1','0','0','0','0','0','0','0','0','0','Infinite Executioner (Heroic) - Cast Cleave'),
 ('2113805','21138','0','0','90','3','7200','11800','15500','26500','11','9080','1','0','0','0','0','0','0','0','0','0','Infinite Executioner (Normal) - Cast Hamstring'),
 ('2113806','21138','0','0','90','5','4600','10200','10800','15800','11','9080','1','0','0','0','0','0','0','0','0','0','Infinite Executioner (Heroic) - Cast Hamstring'),
-('2113807','21138','6','0','10','6','0','0','0','0','1','-514','-515','-516','0','0','0','0','0','0','0','0','Infinite Executioner - Random Say on Death'),
+('2113807','21138','6','0','10','6','0','0','0','0','1','-514','-515','-442','0','0','0','0','0','0','0','0','Infinite Executioner - Random Say on Death'),
 -- Infinite Vanquisher
 ('2113901','21139','4','0','15','6','0','0','0','0','1','-442','-446','-447','0','0','0','0','0','0','0','0','Infinite Vanquisher - Random Say on Aggro'),
 ('2113902','21139','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','28','0','31326','0','Infinite Vanquisher - Enable Dynamic Movement, Remove Corrupt Medivh and Set Phase 1 on Aggro'),
@@ -25675,7 +25675,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2113908','21139','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Infinite Vanquisher - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2113909','21139','0','0','100','3','5900','6000','5900','6000','11','13341','1','1','0','0','0','0','0','0','0','0','Infinite Vanquisher (Normal) - Cast Fire Blast'),
 ('2113910','21139','0','0','100','5','5900','6000','5900','6000','11','38526','1','1','0','0','0','0','0','0','0','0','Infinite Vanquisher (Heroic) - Cast Fire Blast'),
-('2113911','21139','6','0','10','6','0','0','0','0','1','-514','-515','-516','0','0','0','0','0','0','0','0','Infinite Vanquisher - Random Say on Death'),
+('2113911','21139','6','0','10','6','0','0','0','0','1','-514','-515','-442','0','0','0','0','0','0','0','0','Infinite Vanquisher - Random Say on Death'),
 -- Rift Lord
 ('2114001','21140','4','0','50','6','0','0','0','0','1','-443','-444','-445','0','0','0','0','0','0','0','0','Rift Lord - Random Say on Aggro'),
 ('2114002','21140','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Rift Lord - Set Phase 1 on Aggro'),
@@ -25975,7 +25975,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1772601','17726','0','0','100','3','2300','8100','10600','20400','11','31410','1','0','0','0','0','0','0','0','0','0','Wrathfin Myrmidon (Normal) - Cast Coral Cut'),
 ('1772602','17726','0','0','100','5','2300','8100','10600','20400','11','37973','1','0','0','0','0','0','0','0','0','0','Wrathfin Myrmidon (Heroic) - Cast Coral Cut'),
 -- Wrathfin Sentry (3.0.3 Official Data - Normal Logs Only)
-('1772701','17727','4','0','50','6','100','0','0','0','0','0','0','0','1','-154','0','0','0','0','0','0','Wrathfin Sentry - Say on Aggro'),
+('1772701','17727','4','0','50','6','100','0','0','0','0','0','0','0','1','-738','0','0','0','0','0','0','Wrathfin Sentry - Say on Aggro'),
 ('1772702','17727','9','0','100','7','0','5','8000','10500','11','11976','1','0','0','0','0','0','0','0','0','0','Wrathfin Sentry - Cast Strike'),
 ('1772703','17727','0','0','100','7','12000','15000','17000','22000','11','11972','1','0','0','0','0','0','0','0','0','0','Wrathfin Sentry - Cast Shield Bash'),
 -- Murkblood Tribesman (3.0.3 Official Data - Normal Logs Only)
@@ -33979,8 +33979,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
 ('-9','Hear the voices below the earth!  They call for your blood!','0','0','0','Darkscreecher Akkarai on Spawn','0'),
 ('-10','You capture Karrog!  Karrog smash you!','0','0','0','Karrog on Spawn','0'),
+-- PLEASE RE-USE 11 classic>tbc>wotlk
 ('-12','Consume $N, my children!','0','0','0','Darkscreecher Akkarai on Flock Call 40427','0'),
--- PLEASE RE-USE -13 to -15
+-- PLEASE RE-USE 13 - 16 classic>tbc>wotlk
 ('-17','Insolent fool! You thought to steal Zelemar\'s blood? You shall pay with your own!','0','1','0','17830','0'),
 ('-18','For Victory! For Agamaggan!','5812','1','0','4420','0'),
 ('-19','I\'m gonna cook ya, and then i\'m going to eat ya!','0','0','0','20905','1'),
@@ -33990,7 +33991,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-23','Cipher of Damnation belongs to us now!','0','0','0','20427','0'),
 ('-24','The master will know of this incursion. You will be hunted for all eternity!','0','0','0','20427','0'),
 ('-25','My power is discombobulatingly devastating! It is ludicrous that these mortals even attempt to enter my realm!','0','1','0','Prince Thunderaan','0'),
--- PLEASE RE-USE -26 to -27
+-- PLEASE RE-USE 26 - 27 classic>tbc>wotlk
 ('-28','You do not belong here!  Ancients, rise against these intruders!','0','1','0','11489','0'),
 ('-29','You no challenge me, scrubs! I\'m da king now, and I stay king FOREVER!!!','0','0','0','11501','0'),
 ('-30','%s blood sprays into the air!','0','2','0','Common Gnomeregan Emote','0'),
@@ -34102,7 +34103,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-136','Bah! My power rules here!','5816','1','0','4421','0'),
 ('-137','I will be reborn, mortals! Incendius shall raise me from these ashes!','0','0','0','9026','0'),
 ('-138','It\'s so cold, so dark.... I\'m not overacting, am I?','0','0','0','16473','0'),
--- ('-139','You have come to play? Then let us play!','0','0','0','9520','0'),
+-- PLEASE RE-USE 139 classic>tbc>wotlk
 ('-140','The coils of death... Will crush you.','5787','1','0','3670','0'),
 ('-141','Invaders! Sound the Alarm!','0','1','0','23586','0'),
 ('-142','Get it while it\'s hot!','0','0','0','3518','0'),
@@ -34117,7 +34118,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-151','I miss my dog so much...','11798','0','0','23618','0'),
 ('-152','%s grows in size upon seeing $N!','0','2','0','17725','0'),
 ('-153','%s strength fades!','0','2','0','17725','0'),
-('-154','Illidan reigns!','0','0','0','17727','0'),
+-- PLEASE RE-USE 154 classic>tbc>wotlk
 ('-155','%s begins to arm the Proximity Bomb!','0','2','0','17414','0'),
 ('-156','The blood is our power!','0','0','1','17264/17270/17271/17478/17491','0'),
 ('-157','Lok narash!','0','0','0','17370/17371/17455','0'),
@@ -34164,7 +34165,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-198','You should not be here! Slay them!','5799','1','0','4831','0'),
 ('-199','Suffer you despicable insect!','11000','1','0','17842','0'),
 ('-200','You will be easy prey, $c.','0','1','0','2015,2017,2018','0'),
-('-201','My talons will shred your puny body, $r.','0','0','0','2018','0'),
+('-201','My talons will shred your puny body, $r.','0','0','0','2018/3277','0'),
 ('-202','A fine trophy your head will make, $r.','0','0','0','2015,2017,2018','0'),
 ('-203','NO!!!  It puts the tannin in the basket, or it gets the mallet again!','0','1','0','14351','0'),
 ('-204','Fresh bread for sale!','0','0','0','3518','0'),
@@ -34203,10 +34204,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-237','%s focuses on $N.','0','2','0','23163','0'),
 ('-238','Fool! The essence of the hawk will never be yours!','0','0','0','22992','0'),
 ('-239','The time of the Raven is night, but yours will end here!','0','0','0','22992','0'),
-('-240','You dare to disturb the loyal followers of the Raven?','0','0','0','22993','0'),
-('-241','You will die for your hubris, druid!','0','0','0','22993','0'),
-('-242','You dare to disturb the loyal followers of the Raven?','0','0','0','22994','0'),
-('-243','You will die for your hubris, druid!','0','0','0','22994','0'),
+('-240','You dare to disturb the loyal followers of the Raven?','0','0','0','22993/22994','0'),
+('-241','You will die for your hubris, druid!','0','0','0','22993/22994','0'),
+-- PLEASE RE-USE 242 - 243 classic>tbc>wotlk
 ('-244','Someone come read this wanted poster to Grek. Grek can\'t read.','0','0','0','19606','0'),
 ('-245','Behold the power of the Light! Grace and glory to the Alliance!','0','1','0','18966','0'),
 ('-246','The attackers shall not succeed! Strength and honor to the Horde!','0','1','0','18969','0'),
@@ -34405,7 +34405,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-439','We will not fail!','0','0','0','17892','0'),
 ('-440','Death to the Last Guardian!','0','0','0','17892','0'),
 ('-441','We are not finished!','0','0','0','17892','0'),
-('-442','Your efforts... are in vain.','0','0','0','17835','0'),
+('-442','Your efforts... are in vain.','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
 ('-443','The rift must be protected!','0','0','0','21104','0'),
 ('-444','You are running out of time!','0','0','0','21104','0'),
 ('-445','Victory or death!','0','0','0','21104','0'),
@@ -34457,7 +34457,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-491','If I should fall, take my pouch. Make certain that it gets to the High General.','0','0','0','12337','0'),
 ('-492','I sense danger up ahead.','0','0','0','12337','0'),
 ('-493','%s lets loose a guttural growl as her body collapses. A horrifying howl can be heard echoing through the halls of Blackrock Spire. Something is very, very angry.','0','2','0','10220','0'),
-('-494','My talons will shred your puny body, $r.','0','0','0','3277','0'),
+-- PLEASE RE-USE 494 classic>tbc>wotlk
 ('-495','Puny $r... you were a... horrible $g king : queen;.','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)','0'),
 ('-496','Agh... me am...dead.','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)','0'),
 ('-497','Me go to... Ogri''la.','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)','0'),
@@ -34479,7 +34479,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-513','You won\'t get away this time!','0','0','0','16238','0'),
 ('-514','More will take my place.','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
 ('-515','A minor victory...','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
-('-516','Your efforts... are in vain.','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
+-- PLEASE RE-USE 516 classic>tbc>wotlk
 ('-517','The sands of time shall be scattered to the winds!','0','1','0','21148/21104/21140/17839','0'),
 ('-518','History is about to be rewritten!','0','1','0','21148/21104/21140/17839','0'),
 ('-519','Let the siege begin!','0','1','0','21148/21104/21140/17839','0'),
@@ -34701,7 +34701,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-735','Stupid puny thing.  Me smash!','0','0','0','19948/19993/22160','0'),
 ('-736','Die, warmblood!','0','0','0','17940/17957/17961 - Common Outland Nagas','0'),
 ('-737','For the Master!','0','0','0','17940/17938/17957/17961 - Common Outland Nagas','0'),
-('-738','Illidan reigns!','0','0','0','17958 - Common Outland Nagas','0'),
+('-738','Illidan reigns!','0','0','0','17958/17727 - Common Outland Nagas','0'),
 ('-739','My blood is like venom!','0','0','0','17940/17957/17958 - Common Outland Nagas','0'),
 ('-740','By Nazjatar\'s Depths!','0','0','0','17957/17958/21126 - Common Outland Nagas','0'),
 ('-741','You have brought me back too soon! I am weak yet... What is this! Who... It matters not! DIE!','0','0','0','22452','1'),
@@ -34759,7 +34759,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-793','Press the attack!','0','0','0','17943','0'),
 ('-794','Don\'t give... up!','0','0','0','17943','0'),
 ('-795','Elune help us!','0','0','0','17943','0'),
--- PLEASE RE-USE 796
+-- PLEASE RE-USE 796 classic>tbc>wotlk
 ('-797','%s puts his club away and begins swinging wildly!','0','2','0','11441','0'),
 ('-798','Where piggy go?!','0','1','0','20216','53'),
 ('-799','You be Grulloc\'s friend!','0','1','0','20216','0'),
@@ -34779,7 +34779,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-813','If it is Elune\'s... will.','0','0','0','17945','0'),
 ('-814','Ahhh!!','0','0','0','17944','0'),
 ('-815','I tried.','0','0','0','17944','0'),
--- REUSE 816
+-- PLEASE RE-USE 816 classic>tbc>wotlk
 ('-817','So or\'manley fi siame Dim fus siame yudo','5859','1','14','8580','0'),
 ('-818','You will rest with the honored dead.','0','0','0','18493','0'),
 ('-819','Turn back! Do not wake the dreamer!','5866','1','0','5721','0'),
@@ -34816,15 +34816,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-850','I am... released?','0','0','0','17905','0'),
 ('-851','Let this torment end!!','0','0','0','17905','0'),
 ('-852','Is it really... over?','0','0','0','17905','0'),
--- PLEASE RE-USE 853 - 859
+-- PLEASE RE-USE 853 - 859 classic>tbc>wotlk
 ('-860','Vengeance will not be yours, $N!','0','0','0','22454','0'),
--- PLEASE RE-USE -861 to -894
-('-895','There is no escape for you. The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','1535','0'),
-('-896','You carry the taint of the scourge. Prepare to enter the twisting nether.','0','0','0','1535','0'),
-('-897','The light condemns all who harbor evil. Now you will die!','0','0','0','1535','0'),
+-- PLEASE RE-USE 861 - 897 classic>tbc>wotlk
 ('-898','%s cackles maniacally as he combines the two mixtures in his hands.','0','2','0','16464','153'),
 ('-899','Drat!  This bloodthistle extract doesn\'t seem to want to combine properly with my poison.  I\'ll not be deterred - those trolls will be dealt with!  Perhaps a different mixture?','0','0','0','16464','0'),
--- PLEASE RE-USE 900 - 901
+-- PLEASE RE-USE 900 - 901 classic>tbc>wotlk
 ('-902','What a pity you survived the crash just to die here.','0','0','0','16521','0'),
 ('-903','We won\'t allow you to leave this valley!','0','0','0','16521','0'),
 ('-904','I hope you\'ve made your peace.','0','0','0','16521','0'),
@@ -34874,13 +34871,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-948','%s seems to have weakened.','0','2','0','20610 20777','0'),
 ('-949','%s calls for the aid of a nearby male!','0','2','0','20610','0'),
 ('-950','%s rushes to the aid of a nearby doe!','0','2','0','20777','0'),
--- PLEASE RE-USE 951 - 958
+-- PLEASE RE-USE 951 - 958 classic>tbc>wotlk
 ('-959','Intruder detected! Neutralizing threat immediately!','0','0','0','18698','0'),
 ('-960','I love the smell of nether in the morning.','0','0','0','19635','1'),
 ('-961','It smells like...','0','0','0','19635','1'),
 ('-962','...victory.','0','0','0','19635','15'),
 ('-963','Looks like today was the wrong day to quit mana tapping...','0','0','0','19926','1'),
--- ('-964','Excellent. We must focus our efforts on the cleansing of Nagrand!','0','0','0','18537','5'),
+-- PLEASE RE-USE 964 classic>tbc>wotlk
 ('-965','The rift\'s power is ours!','0','0','33','24966','0'),
 ('-966','Core overload detected. System malfunction detected...','0','2','0','24972','0'),
 ('-967','Beat or be beaten! This is the way of the Legion!','0','1','0','25158','1'),
@@ -34927,7 +34924,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1008','Hey, hey! Nice build you got there honey!','0','0','0','24495','1'),
 ('-1009','Yo! Big lady! You think you\'re big enough to handle me?','0','0','0','24495','1'),
 ('-1010','Hey tough stuff! Hey, $c! Do you like money? I\'m loaded! How about you come over here and check out my gold coins?','0','0','0','24495','1'),
--- PLEASE RE-USE 1011 - 1013
+-- PLEASE RE-USE 1011 - 1013 classic>tbc>wotlk
 ('-1014','Excellent!  Fresh parts!','0','0','0','22062','0'),
 ('-1015','It is very kind of you to donate your organs!','0','0','0','22062','0'),
 ('-1016','Be proud, your brain will be put to good use in one of my abominations.','0','0','0','22062','0'),
@@ -35066,12 +35063,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1149','Me crush puny friend of dragons!','0','0','0','23786','0'),
 ('-1150','You leave Stonemaul lands now!','0','0','0','23786','0'),
 ('-1151','Why you wake ghost? Where other Stonemauls?!','0','0','0','23786','0'),
+-- PLEASE RE-USE 1152 - 1165 classic>tbc>wotlk
 ('-1166','Jane will love this one!','0','0','10','20244','0'),
 ('-1167','Oooh, a shiny one!','0','0','10','20244','0'),
 ('-1168','I think I can see the Sunwell from here!','0','0','10','20244','0'),
 ('-1169','Can you really hear the ocean from one of these shells?','0','0','10','20244','0'),
 ('-1170','Obey the laws of Silvermoon. Failure to do so will result in termination.','0','0','0','18103','0'),
 ('-1171','Do not disturb the serenity of the city. Peace must be upheld.','0','0','0','18103','0'),
+-- PLEASE RE-USE 1172 - 1193 classic>tbc>wotlk
 ('-1194','Emperor Thaurissan does not wish to be disturbed! Turn back now or face your doom, weak mortals!','0','1','0','9938','0'),
 ('-1195','Prepare to be Malowned!','0','1','0','11143','0'),
 ('-1196','You just got MALOWNED!','0','1','0','11143','0'),
@@ -35132,7 +35131,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1251','Thrall will never be free!','10409','1','0','17862','0'),
 ('-1252','Did you really think you would leave here alive?','10410','1','0','17862','0'),
 ('-1253','Guards! Urgh..Guards..!','10411','1','0','17862','0'),
--- PLEASE RE-USE 1254
+-- PLEASE RE-USE 1254 classic>tbc>wotlk
 ('-1255','I know what you\'re up to, and I mean to put an end to it, permanently!','10429','1','0','17848','0'),
 ('-1256','No more middling for you.','10432','1','0','17848','0'),
 ('-1257','You will not interfere!','10433','1','0','17848','0'),
@@ -35222,17 +35221,18 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1341','You stay out of the regent lord\'s way! I mean it!','0','0','0','18230','0'),
 ('-1342','No, no, no! Come back here!','0','0','0','18230','0'),
 ('-1343','I have regained control! Return to your posts!','8274','1','0','12557','0'),
+-- PLEASE RE-USE 1344 - 1348 classic>tbc>wotlk
 ('-1349','Burn Burn Burn','0','0','12','18109','0'),
 ('-1350','%s appears very grateful to be free of the koi-koi spirit\'s influence.','0','2','0','21326','34'),
 ('-1351','AYYAYAAYAA!','0','0','0','22483','0'),
 ('-1352','AWOOOOGAAAA!','0','0','0','22483','0'),
 ('-1353','AAAAEEEEEEIIIIIIII!!!!!','0','0','0','22483','0'),
--- Re-Use -1354 - -1366
-('-1367','Raaar!!! Me smash $R!','0','0','0','9196','1'),
+-- PLEASE RE-USE 1354 - 1367 classic>tbc>wotlk
 ('-1368','I cannot be destroyed! By the will of Ragnaros, I shall be reborn!','0','0','0','9017','0'),
 ('-1369','What are you doing? Intruders!!','0','1','0','9476','0'),
 ('-1370','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
 ('-1371','%s gets really dizzy!','0','2','0','9554','0'),
+-- PLEASE RE-USE 1372 - 1382 classic>tbc>wotlk
 ('-1383','Your world is at an end.','0','0','0','21315','0'),
 ('-1384','Need some help!','0','0','0','19501','0'),
 ('-1385','Um, healer?!','0','0','0','19501','0'),
@@ -35265,6 +35265,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1412','No more nice ogre! You hurt Mogor!','0','1','0','18069','0'),
 ('-1413','Who dares defile the statue of our beloved?','0','1','0','17715','0'),
 ('-1414','What have you done to my life\'s work?!  DIE!!!','0','0','0','17359','0'),
+-- PLEASE RE-USE 1415 - 1430 classic>tbc>wotlk
 ('-1431','%s lets out a massive roar, calling for aid!','0','2','0','17664','15'),
 ('-1432','Petulant children, pray to your gods for you are about to meet them!','0','1','0','17678','0'),
 ('-1433','Prepare yourself for eternal torture, mortal!','0','1','0','19747','0'),
@@ -35296,6 +35297,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1459','Demon Hunter Supplicant begins intensely dodging incoming attacks.','0','2','0','Demon Hunter Supplicant','0'),
 ('-1460','Who dares to interrupt my operations?','0','1','0','Nexus-Prince Razaan spawn','0'),
 ('-1461','Who dares steal my precious mount? You will pay for your insolence, mortal!','0','1','0','Lord Hel''nurath - Yell on Aggro','0'),
+-- PLEASE RE-USE 1462 - 1469 classic>tbc>wotlk
 ('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
 ('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
 ('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
@@ -35304,6 +35306,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1475','Return to Kuros. I will bring him to Blood Watch.','0','0','0','17853','0'),
 ('-1476','%s falls unconscious.','0','2','0','17664','0'),
 ('-1477','Draenei filth will not last on this world...','0','0','0','17664','0'),
+-- PLEASE RE-USE 1478 - 1480 classic>tbc>wotlk
 ('-1481','%s\'s physical form is weakened. You notice the Stone of Binding near the creature is glowing! Strike now!','0','2','0','2681','0'),
 ('-1482','The Light must prevail!','0','0','0','11296','0'),
 ('-1483','Captain Redpath! How could you forsake us?','0','0','0','11296','0'),
@@ -35403,7 +35406,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1577','Once I have hacked off your limbs, I may hang your body from our battlements.','0','0','0','18677','0'),
 ('-1578','I love to bathe in the blood of my enemies!','0','0','0','18677','0'),
 ('-1579','I crave your death!','0','0','0','18677','0'),
--- Reuse -1580 to -1586
+-- PLEASE RE-USE 1580 - 1586 classic>tbc>wotlk
 ('-1587','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0'),
 ('-1588','KILL THEM ALL!','0','1','0','23440/23441','0'),
 ('-1589','BURN IT DOWN!','0','1','0','23440/23441','0'),
