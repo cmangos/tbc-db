@@ -21273,6 +21273,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2321904','23219','0','0','100','1','12000','15000','20000','40000','11','32920','1','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Cast Warp'),
 ('2321905','23219','0','0','100','1','2000','5000','7000','15000','11','37417','4','1','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Cast Warp Charge'),
 ('2321906','23219','7','0','100','0','0','0','0','0','11','32942','0','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Recast Phasing Invisibility when Evading'),
+-- Razorthorn Flayer
+('2492001','24920','0','0','100','1','2000','15000','45000','60000','11','46202','1','0','0','0','0','0','0','0','0','0','Razorthorn Flayer - Cast Pierce Armor'),
+('2492002','24920','0','0','100','1','5000','20000','15000','20000','11','13443','1','0','0','0','0','0','0','0','0','0','Razorthorn Flayer - Cast Rend'),
+('2492003','24920','2','0','100','0','60','0','0','0','11','33896','0','0','54','-124','0','0','0','0','0','0','Razorthorn Flayer - Cast Desperate Defense and Text Emote at 60% HP'),
 -- Razorthorn Ravager
 ('2492201','24922','9','0','100','1','0','5','15000','20000','11','13443','1','0','0','0','0','0','0','0','0','0','Razorthorn Ravager - Cast Rend'),
 ('2492202','24922','0','0','100','1','5000','9000','8000','12000','11','33781','1','0','0','0','0','0','0','0','0','0','Razorthorn Ravager - Cast Ravage'),
@@ -32064,7 +32068,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-121','Your time is almost... up.','11002','1','0','17842','0'),
 ('-122','No one is going to save you.','11048','1','0','17842','0'),
 ('-123','I am the serpent king! I can do anything.','5788','1','0','3673','0'),
-('-124','%s defends himself in desperation.','0','2','0','16927','0'),
+('-124','%s defends himself in desperation.','0','2','0','16927/24920','0'),
 ('-125','The Legion\'s final conquest has begun! Once again the subjugation of this world is within our grasp. Let none survive!','11022','1','0','17767','0'),
 ('-126','Succumb to the icy chill... of death!','11024','1','0','17767','0'),
 ('-127','It will be much colder in your grave.','11058','1','0','17767','0'),
