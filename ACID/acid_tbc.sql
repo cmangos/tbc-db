@@ -18760,6 +18760,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1925302','19253','30','0','100','1','6','16582','0','0','18','768','10','0','0','0','0','0','0','0','0','0','Lieutenant General Orion - change targets unitFlag on Receive AI Event B'),
 -- General Krakork
 ('1925501','19255','1','0','100','1','150000','150000','150000','150000','1','-302','-303','-1129','5','5','0','0','0','0','0','0','General Krakork - Random Gossip Speech and Emote'),
+-- Warboss Nekrogg
+('1926301','19263','9','0','100','1','0','5','5000','8000','11','34113','1','0','0','0','0','0','0','0','0','0','Warboss Nekrogg - Cast Bonechewer Bite'),
 -- Force-Commander Gorax (3.0.3 Official Data - Logs Only)
 ('1926401','19264','4','0','100','0','0','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Force-Commander Gorax - Cast Toughen on Aggro'),
 ('1926402','19264','9','0','100','1','0','5','3800','6400','11','9080','1','32','0','0','0','0','0','0','0','0','Force-Commander Gorax - Cast Hamstring'),
