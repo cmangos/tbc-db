@@ -17685,6 +17685,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hemathion
 ('1869201','18692','0','0','100','1','10000','18000','13000','25000','11','9573','1','0','0','0','0','0','0','0','0','0','Hemathion - Cast Flame Breath'),
 ('1869202','18692','0','0','100','1','20000','30000','20000','35000','11','14100','0','0','0','0','0','0','0','0','0','0','Hemathion - Cast Terrifying Roar'),
+-- Speaker Mar'grom
+('1869301','18693','1','0','100','1','1000','5000','300000','600000','54','0','0','10035','0','0','0','0','0','0','0','0','Speaker Mar\'grom - Text OOC'),
+('1869302','18693','4','0','100','0','0','0','0','0','54','0','0','10036','0','0','0','0','0','0','0','0','Speaker Mar\'grom - Text on Aggro'),
+('1869303','18693','4','0','100','0','0','0','0','0','11','15497','1','3','0','0','0','0','0','0','0','0','Speaker Mar\'grom - Cast Frostbolt on Aggro'),
+('1869304','18693','8','0','100','1','0','4','3000','15000','11','37844','0','32','0','0','0','0','0','0','0','0','Speaker Mar\'grom - Cast Fire Ward on Fire Spellhit'),
+('1869305','18693','0','0','100','1','4000','6000','4000','9000','11','15241','1','0','0','0','0','0','0','0','0','0','Speaker Mar\'grom - Cast Scorch'),
+('1869306','18693','0','0','100','1','8000','10000','5500','11000','11','12466','1','0','0','0','0','0','0','0','0','0','Speaker Mar\'grom - Cast Fireball'),
 -- Amerun Leafshade
 ('1893701','18937','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Amerun Leafshade - Summon Enraged Hippogryphs on Aggro'),
 -- Unoke Tenderhoof
@@ -32482,7 +32489,17 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-552','Greetings citizen.','0','0','7','466','0'),
 ('-553','Who dares disrupt the sanctity of Eldre\'Thalas? Face me, cowards!','0','1','0','11486','0'),
 ('-554','Finally, my soul may rest... Oh, dearest Cerellean...','0','0','0','3667','0'),
--- PLEASE RE-USE 555 - 565
+('-555','Mog\'dorg is a fool to think that one of the smaller races will be our savior.','0','0','0','18693 OOC','0'),
+('-556','Do not listen to Mog\'dorg\'s lies! Ogri\'la is a myth! We make our own heaven here with the blood of any that would divide and subjugate us!','0','0','0','18693 OOC','0'),
+('-557','The time has come. Strike down every creature that stands in the way of the clans!','0','0','0','18693 OOC','0'),
+('-558','Will we never learn to work together? Or will we simply kill each other off and be forgotten in time.','0','0','0','18693 OOC','0'),
+('-559','Do not bow to Mog\'dorg\'s puppet! He would replace our gronn overlords with a liege of lesser stock. Why should we replace one master with another?','0','0','0','18693 OOC','0'),
+('-560','If only the leaders of the clans would listen. Unity is the only answer. All other paths lead to our destruction.','0','0','0','18693 OOC','0'),
+('-561','We should be uniting the Ogre clans, not fighting each other.','0','0','0','18693 OOC','0'),
+('-562','The Ogre clans will not be subjugated. Not by the gronn, and not by a puny $r like you!','0','0','0','18693 Aggro','0'),
+('-563','My message of unity is meant for the Ogre clans, not for you, $r!','0','0','0','18693 Aggro','0'),
+('-564','I decree that you are an enemy of the Ogre clans. Punishment is death!','0','0','0','18693 Aggro','0'),
+('-565','I will not allow you to kill any more of my kind! Prepare to die!','0','0','0','18693 Aggro','0'),
 ('-566','Who dares disturb my meditation!','5802','1','0','4832','0'),
 ('-567','Sleep...','5804','1','0','4832','0'),
 ('-568','Just... Dust...','5803','1','0','4832','0'),
@@ -33434,7 +33451,18 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10034,0,-666,0,'Shadow Labyrinth - Random Aggro Texts'),
 (10034,0,-667,0,'Shadow Labyrinth - Random Aggro Texts'),
 (10034,0,-668,0,'Shadow Labyrinth - Random Aggro Texts'),
-(10034,0,-669,0,'Shadow Labyrinth - Random Aggro Texts');
+(10034,0,-669,0,'Shadow Labyrinth - Random Aggro Texts'),
+(10035,0,-555,0,'18693 - Random OOC Texts'),
+(10035,0,-556,0,'18693 - Random OOC Texts'),
+(10035,0,-557,0,'18693 - Random OOC Texts'),
+(10035,0,-558,0,'18693 - Random OOC Texts'),
+(10035,0,-559,0,'18693 - Random OOC Texts'),
+(10035,0,-560,0,'18693 - Random OOC Texts'),
+(10035,0,-561,0,'18693 - Random OOC Texts'),
+(10036,0,-562,0,'18693 - Random Aggro Texts'),
+(10036,0,-563,0,'18693 - Random Aggro Texts'),
+(10036,0,-564,0,'18693 - Random Aggro Texts'),
+(10036,0,-565,0,'18693 - Random Aggro Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
