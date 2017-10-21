@@ -18809,6 +18809,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1931602','19316','1','5','100','1','0','0','0','0','54','0','0','10026','0','0','0','0','0','0','0','0','Field Marshal Rohamus - Random Say OOC (Phase 1)'),
 ('1931603','19316','1','5','100','1','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Field Marshal Rohamus - Set Phase 2 OOC (Phase 1)'),
 ('1931604','19316','1','3','100','1','3600','3600','3600','3600','22','0','0','0','5','275','0','0','0','0','0','0','Field Marshal Rohamus - Set Phase 0 and Train Emote OOC (Phase 2)'),
+-- Subjugator Yalqiz
+('1933501','19335','0','0','100','1','7100','8300','10800','11500','11','32026','1','0','0','0','0','0','0','0','0','0','Subjugator Yalqiz - Pain Spike'),
 -- Thornfang Ravager
 ('1934901','19349','9','0','100','1','0','5','7000','13000','11','33781','1','0','0','0','0','0','0','0','0','0','Thornfang Ravager - Cast Ravage'),
 -- Thornfang Venomspitter
