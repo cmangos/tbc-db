@@ -17759,7 +17759,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999206','19992','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('1999207','19992','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('1999208','19992','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Say on Death if Killer Player has Completed Quest 11000'),
--- Bloodmaul Mauler (Missing combat spells!)
+-- Bloodmaul Mauler
+('1999301','19993','9','0','100','1','0','5','8000','11000','11','37592','1','0','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Cast Knockdown'),
+('1999302','19993','0','0','100','1','8000','14000','20000','30000','11','34932','0','0','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Cast Bloodmaul Buzz'),
+('1999303','19993','2','0','100','0','30','0','0','0','11','37786','0','0','54','-46','0','0','0','0','0','0','Bloodmaul Mauler - Cast Bloodmaul Rage at 30% HP'),
 -- Bloodmaul Warlock
 ('1999401','19994','1','0','100','1','1000','1000','1800000','1800000','11','13787','0','1','0','0','0','0','0','0','0','0','Bloodmaul Warlock - Cast Demon Armor on Spawn'),
 ('1999402','19994','1','0','100','0','3000','3000','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Bloodmaul Warlock - Summon Imp on Spawn'),
