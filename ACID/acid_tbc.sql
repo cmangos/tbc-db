@@ -17967,6 +17967,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2072619','20726','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Mugdorg - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2072620','20726','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Mugdorg - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2072621','20726','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Mugdorg - Say on Death if Killer Player has Completed Quest 11000'),
+-- Bladespire Ravager
+('2072901','20729','9','0','100','0','8','25','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Bladespire Ravager - Cast Charge'),
+('2072902','20729','9','0','100','1','0','5','10000','11000','11','16128','1','32','0','0','0','0','0','0','0','0','Bladespire Ravager - Cast Infected Bite'),
 -- Glumdor
 ('2073001','20730','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Glumdor - Set Phase 1 on Spawn'),
 ('2073002','20730','4','0','100','0','0','0','0','0','11','13730','0','0','22','1','0','0','0','0','0','0','Glumdor - Cast Demoralizing Shout and Set Phase 1 on Aggro'),
