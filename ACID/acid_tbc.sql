@@ -20201,7 +20201,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1975701','19757','9','0','100','1','0','8','8400','14500','11','11969','0','0','0','0','0','0','0','0','0','0','Infernal Soul - Cast Fire Nova'),
 -- Coilskar Defender
 ('1976201','19762','13','0','100','1','10000','15000','0','0','11','38233','1','0','0','0','0','0','0','0','0','0','Coilskar Defender - Cast Shield Bash on Target Casting'),
-('1976202','19762','2','0','100','1','25','0','25000','45000','11','38031','0','0','0','0','0','0','0','0','0','0','Coilskar Defender - Cast Shield Block When Below 25% HP'),
+('1976202','19762','2','0','100','1','25','0','25000','45000','11','38031','0','0','22','1','0','0','0','0','0','0','Coilskar Defender - Cast Shield Block and Set Phase 1 When Below 25% HP'),
+('1976203','19762','0','1','100','0','0','0','0','0','54','-1138','0','0','0','0','0','0','0','0','0','0','Coilskar Defender - Text Emote (Phase 1)'),
+('1976204','19762','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Coilskar Defender - Set Phase to 0 on Evade'),
 -- Coilskar Myrmidon
 ('1976501','19765','9','0','100','1','0','20','11500','13000','11','38027','1','32','0','0','0','0','0','0','0','0','Coilskar Myrmidon - Cast Boiling Blood'),
 -- Coilskar Sorceress
@@ -32965,7 +32967,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1135','None can stand against the serpent lords!','5786','1','0','3671','0'),
 ('-1136','Speak, filthy refugee! What was your caravan doing in the Bone Wastes?','0','0','0','22378','0'),
 ('-1137','You come into my house and threaten ME?  I think not!','0','0','0','18554','0'),
--- 1138 REUSE
+('-1138','%s raises his shield in a vigorous defense!','0','2','0','19762','0'),
 ('-1139','Come, $n. See what the Nightmare brings...','0','1','0','15625','0'),
 ('-1140','The Nightmare cannot be stopped!','0','1','0','15625','0'),
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','15625','0'),
