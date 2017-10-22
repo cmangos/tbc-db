@@ -19895,7 +19895,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nether Dragon
 ('2033201','20332','9','0','100','1','0','30','20000','24000','11','36513','0','0','0','0','0','0','0','0','0','0','Nether Dragon - Cast Intangible Presence'),
 ('2033202','20332','9','0','100','1','0','5','9000','13000','11','36631','0','0','0','0','0','0','0','0','0','0','Nether Dragon - Cast Netherbreath'),
--- Parasitic Fleshbeast (20335) - NSR
+-- Parasitic Fleshbeast
+('2033501','20335','9','0','25','1','0','20','3000','9000','11','36469','1','32','0','0','0','0','0','0','0','0','Parasitic Fleshbeast - Cast Parasite'),
 -- Fleshfiend 20340
 -- Nether-Stalker Oazul 20341
 -- Lee Sparks 20389
