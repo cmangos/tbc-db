@@ -19939,7 +19939,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flesh Handler Viridius 20450
 -- Subservient Flesh Beast 20451
 -- Ethereum Assassin 20452
--- Ethereum Shocktrooper 20453
+-- Ethereum Shocktrooper
+('2045301','20453','9','0','100','1','10','25','5000','9000','11','36500','1','0','0','0','0','0','0','0','0','0','Ethereum Shocktrooper - Cast Glaive'),
+('2045302','20453','9','0','100','1','0','5','11000','15000','11','31553','1','0','0','0','0','0','0','0','0','0','Ethereum Shocktrooper  - Cast Hamstring'),
 -- Nexus-King Salhadaar 20454
 -- Ethereum Researcher 20456
 -- Ethereum Archon 20458
