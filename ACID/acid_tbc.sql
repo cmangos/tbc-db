@@ -19908,7 +19908,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Legion Destroyer
 ('2040301','20403','9','0','100','33','0','5','8000','12000','11','13737','1','0','11','11428','1','0','0','0','0','0','Legion Shocktrooper - Cast Mortal Strike or Knockdown'),
 -- Warp-Gate Engineer 20404
--- Kirin'Var Apprentice 20409
+-- Kirin'Var Apprentice
+('2040901','20409','0','0','100','0','3000','9000','0','0','11','36099','1','0','0','0','0','0','0','0','0','0','Kirin\'Var Apprentice - Cast Throw Hammer'),
 -- Rhonsus 20410
 -- Spectral Bovine 20411
 -- Bessy 20415
