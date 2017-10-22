@@ -19987,7 +19987,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2061001','20610','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Reset flag on spawn'),
 ('2061002','20610','8','0','100','0','35771','1','0','0','11','40347','6','2','11','42386','0','18','18','33554432','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
 ('2061003','20610','8','0','100','0','35771','1','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
--- Shimmerwing Moth 20611
+-- Shimmerwing Moth
+('2061101','20611','0','0','100','1','9000','15000','16000','24000','11','36592','0','0','0','0','0','0','0','0','0','0','Shimmerwing Moth - Cast Shimmerwing Dust'),
+('2061102','20611','0','0','100','1','3000','5000','11000','16000','11','32914','0','0','0','0','0','0','0','0','0','0','Shimmerwing Moth - Cast Wing Buffet'),
 -- Mana Invader 20618
 -- Ethereum Relay 20619
 -- Scythetooth Raptor 20634
