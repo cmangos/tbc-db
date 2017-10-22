@@ -19943,7 +19943,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nexus-King Salhadaar 20454
 -- Ethereum Researcher 20456
 -- Ethereum Archon 20458
--- Ethereum Overlord 20459
+-- Ethereum Overlord
+('2045901','20459','0','0','100','1','6000','6000','14000','18000','11','32064','0','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Battle Shout'),
+('2045902','20459','0','0','100','1','8000','10000','35000','35000','11','36510','1','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Enchanted Weapons'),
+('2045903','20459','9','0','100','0','8','25','0','0','11','36509','1','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Charge'),
 -- Chief Engineer Gork'lonn 20460
 -- Apprentice Andrethan 20463
 -- Thadell 20464
