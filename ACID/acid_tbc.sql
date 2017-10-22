@@ -19995,7 +19995,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2067101','20671','4','0','100','0','0','0','0','0','11','36589','0','0','0','0','0','0','0','0','0','0','Ripfang Lynx - Cast Dash on Aggro'),
 ('2067102','20671','0','0','100','1','5000','10800','7200','14900','11','31279','1','0','0','0','0','0','0','0','0','0','Ripfang Lynx - Cast Swipe'),
 ('2067103','20671','0','0','100','1','6000','12000','25000','35000','11','36590','1','0','0','0','0','0','0','0','0','0','Ripfang Lynx - Cast Rip'),
--- Swiftwing Shredder 20673
+-- Swiftwing Shredder
+('2067301','20673','0','0','100','1','3000','9000','9000','13000','11','36594','1','0','0','0','0','0','0','0','0','0','Swiftwing Shredder - Cast Lightning Breath'),
 -- Ethereum Sparring Dummy 20676
 -- Overseer Azarad 20685
 -- Captain Zovax 20727
