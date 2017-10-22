@@ -21591,6 +21591,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ragestone Trampler
 ('2028001','20280','9','0','100','1','0','5','7000','12000','11','5568','0','0','0','0','0','0','0','0','0','0','Ragestone Trampler - Cast Trample'),
 ('2028002','20280','2','0','100','0','30','0','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Ragestone Trampler - Cast Enrage at 30% HP'),
+-- Marshrock Stomper
+('2028301','20283','9','0','100','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Marshrock Stomper - Cast Threshalisk Charge'),
+('2028302','20283','0','0','100','1','5000','10000','15000','30000','11','12612','0','0','0','0','0','0','0','0','0','0','Marshrock Stomper - Cast Stomp'),
 -- Marsh Baron Brok
 ('2029201','20292','2','0','100','0','75','0','0','0','11','9616','0','0','0','0','0','0','0','0','0','0','Marsh Baron Brok - Cast Wild Regeneration at 75% HP'),
 -- Bogstrok Razorclaw
