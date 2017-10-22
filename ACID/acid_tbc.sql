@@ -20199,6 +20199,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1975602','19756','0','0','100','1','8000','12000','12000','16000','11','36225','0','0','0','0','0','0','0','0','0','0','Deathforge Smith - Chaos Nova'),
 -- Infernal Soul
 ('1975701','19757','9','0','100','1','0','8','8400','14500','11','11969','0','0','0','0','0','0','0','0','0','0','Infernal Soul - Cast Fire Nova'),
+-- Coilskar Defender
+('1976201','19762','13','0','100','1','10000','15000','0','0','11','38233','1','0','0','0','0','0','0','0','0','0','Coilskar Defender - Cast Shield Bash on Target Casting'),
+('1976202','19762','2','0','100','1','25','0','25000','45000','11','38031','0','0','0','0','0','0','0','0','0','0','Coilskar Defender - Cast Shield Block When Below 25% HP'),
 -- Coilskar Myrmidon
 ('1976501','19765','9','0','100','1','0','20','11500','13000','11','38027','1','32','0','0','0','0','0','0','0','0','Coilskar Myrmidon - Cast Boiling Blood'),
 -- Coilskar Cobra
