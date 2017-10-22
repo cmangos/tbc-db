@@ -20209,6 +20209,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Coilskar Sorceress
 ('1976701','19767','0','0','100','1','0','1000','2500','4700','11','32011','1','0','0','0','0','0','0','0','0','0','Coilskar Sorceress - Cast Water Bolt'),
 ('1976702','19767','2','0','100','1','99','0','30000','35000','11','38026','0','0','0','0','0','0','0','0','0','0','Coilskar Sorceress - Cast Viscous Shield When Below 99% HP'),
+-- Coilskar Siren
+('1976801','19768','0','0','100','1','0','1000','2500','4700','11','32011','1','0','0','0','0','0','0','0','0','0','Coilskar Siren - Cast Water Bolt'),
+('1976802','19768','2','0','100','1','99','0','30000','35000','11','38026','0','0','0','0','0','0','0','0','0','0','Coilskar Siren - Cast Viscous Shield When Below 99% HP'),
 -- Coilskar Cobra
 ('1978401','19784','9','0','100','1','5','30','10000','12000','11','38030','1','0','0','0','0','0','0','0','0','0','Coilskar Cobra - Cast Poison Spit'),
 -- Eclipsion Centurion
