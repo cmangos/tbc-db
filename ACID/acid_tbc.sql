@@ -19938,7 +19938,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Researcher Navuud 20449
 -- Flesh Handler Viridius 20450
 -- Subservient Flesh Beast 20451
--- Ethereum Assassin 20452
+-- Ethereum Assassin
+('2045201','20452','13','0','100','1','12000','15000','0','0','11','34802','1','0','0','0','0','0','0','0','0','0','Ethereum Assassin - Cast Kick on Target Spell Casting'),
+('2045202','20452','33','0','100','1','0','0','5000','8000','11','7159','1','0','0','0','0','0','0','0','0','0','Ethereum Assassin - Cast Backstab on Facing Target Back'),
+('2045203','20452','0','0','100','1','2000','6000','16000','21000','11','32920','0','0','0','0','0','0','0','0','0','0','Ethereum Assassin - Cast Warp'),
 -- Ethereum Shocktrooper 20453
 -- Nexus-King Salhadaar 20454
 -- Ethereum Researcher 20456
