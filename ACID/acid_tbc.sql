@@ -20052,7 +20052,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wrath Lord 20929
 -- Hatecryer 20930
 -- Tyrantus 20931
--- Nuramoc 20932
+-- Nuramoc
+('2093201','20932','0','0','100','1','2000','5000','10000','15000','11','15797','1','0','0','0','0','0','0','0','0','0','Nuramoc - Cast Lightning Breath'),
+('2093202','20932','0','0','100','1','4000','8000','12000','17000','11','21971','1','0','0','0','0','0','0','0','0','0','Nuramoc - Cast Poison Bolt'),
+('2093203','20932','2','0','100','1','99','0','15000','20000','11','38905','0','32','0','0','0','0','0','0','0','0','Nuramoc - Cast Prismatic Shield When Below 99% HP'),
 -- Severed Defender 20934
 -- Dealer Rashaad 20980
 -- Dealer Najeeb 20981
