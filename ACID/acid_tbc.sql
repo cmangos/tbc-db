@@ -18068,7 +18068,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2075607','20756','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bladespire Chef - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2075608','20756','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Chef - Say on Death if Killer Player has Completed Quest 11000'),
 -- Fingrom 20757 (Missing combat spells!)
--- Bladespire Crusher (Missing combat spells!)
+-- Bladespire Crusher
 ('2076501','20765','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bladespire Crusher - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2076502','20765','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bladespire Crusher - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2076503','20765','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Bladespire Crusher - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -18077,6 +18077,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2076506','20765','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bladespire Crusher - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2076507','20765','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bladespire Crusher - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2076508','20765','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Crusher - Say on Death if Killer Player has Completed Quest 11000'),
+('2076509','20765','9','0','100','1','0','5','10000','11000','11','15496','1','0','0','0','0','0','0','0','0','0','Bladespire Crusher - Cast Cleave'),
+('2076510','20765','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Bladespire Crusher - Cast Enrage at 30% HP'),
 -- Bladespire Mystic (Missing combat spells!)
 ('2076601','20766','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bladespire Crusher - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2076602','20766','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bladespire Crusher - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
