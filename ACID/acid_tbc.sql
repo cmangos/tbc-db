@@ -20073,7 +20073,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shauly Pore 20921
 -- Fallen Vindicator 20922
 -- Ironspine Forgelord 20928
--- Wrath Lord 20929
+-- Wrath Lord
+('2092901','20929','9','0','100','1','0','5','7000','11000','11','15496','1','0','0','0','0','0','0','0','0','0','Wrath Lord - Cast Cleave'),
 -- Hatecryer 20930
 -- Tyrantus 20931
 -- Nuramoc 20932
