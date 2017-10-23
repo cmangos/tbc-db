@@ -20027,7 +20027,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wrathbringer Laz-tarash 20789
 -- Malevus the Mad 20790
 -- Kaylaan the Lost 20794
--- Forgemaster Morug 20800
+-- Forgemaster Morug
+('2080001','20800','9','0','100','1','0','45','8000','16000','11','36228','1','0','0','0','0','0','0','0','0','0','Forgemaster Morug - Cast Chainsaw Blade'),
+('2080002','20800','0','0','100','1','5000','11000','12000','15000','11','34261','0','0','0','0','0','0','0','0','0','0','Forgemaster Morug  - Cast Slime Spray'),
 -- Silroth 20801
 -- Protectorate Demolitionist 20802
 -- Overmaster Grindgarr 20803
