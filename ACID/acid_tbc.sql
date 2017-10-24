@@ -19982,7 +19982,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ethereum Shocktrooper 20453
 -- Nexus-King Salhadaar 20454
 -- Ethereum Researcher 20456
--- Ethereum Archon 20458
+-- Ethereum Archon
+('2045801','20458','0','0','100','1','4000','8000','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Ethereum Archon - Cast Intangible Presence'),
+('2045802','20458','2','0','100','1','30','0','17000','21000','11','35924','0','0','0','0','0','0','0','0','0','0','Ethereum Archon - Cast Energy Flux'),
 -- Ethereum Overlord 20459
 -- Chief Engineer Gork'lonn 20460
 -- Apprentice Andrethan 20463
