@@ -18141,6 +18141,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2105703','21057','6','0','100','0','0','0','0','0','11','37957','0','7','11','37987','0','7','0','0','0','0','Nexus-Prince Razaan - Cast Gnome Mercy: Summon Collection of Souls Chest and Cast Gnome Mercy: Summon Collection of Souls Glowy on Death'),
 -- Rina Moonspring
 ('2106601','21066','1','0','100','1','60000','60000','300000','300000','1','-339','0','0','0','0','0','0','0','0','0','0','Rina Moonspring - Gossip Event Text Emote'),
+-- Living Grove Defender
+('2107201','21072','0','0','100','1','6000','6000','12000','16000','11','12747','1','0','0','0','0','0','0','0','0','0','Living Grove Defender - Cast Entangling Roots'),
 -- Rip Pedalslam
 ('2110701','21107','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Rip Pedalslam - Summon Enraged Gryphons and Yell on Aggro'),
 -- Felsworn Scalewing
