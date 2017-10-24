@@ -17763,6 +17763,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deathforge Technician
 ('1997901','19979','0','0','100','1','6000','12000','10000','15000','11','36250','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Steal Armor'),
 ('1997902','19979','2','0','100','1','30','0','8000','8000','11','36825','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Drain Life at 30% HP'),
+-- Grishna Harbinger
+('1998901','19989','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Grishna Harbinger - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1998902','19989','9','13','100','1','0','40','3000','4000','11','9532','1','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Cast Lighting Bolt (Phase 1)'),
+('1998903','19989','0','13','100','1','2500','5500','10000','11000','11','37589','1','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Cast Shriveling Gaze (Phase 1)'),
+('1998904','19989','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1998905','19989','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Disable Dynamic Movement at 0-8 Yards'),
+('1998906','19989','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Grishna Harbinger - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('1998907','19989','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Set Phase 1 at 15% MP (Phase 2)'),
+('1998908','19989','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Grishna Harbinger - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('1998909','19989','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grishna Harbinger - Flee at 15% HP (Phase 3)'),
+('1998910','19989','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Set Phase to 0 on Evade'),
 -- Bloodmaul Brute (Missing combat spells!)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
