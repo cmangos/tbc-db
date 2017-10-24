@@ -18145,6 +18145,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2110701','21107','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Rip Pedalslam - Summon Enraged Gryphons and Yell on Aggro'),
 -- Felsworn Scalewing
 ('2112301','21123','9','0','100','1','0','30','14000','15000','11','32093','1','0','0','0','0','0','0','0','0','0','Felsworn Scalewing - Cast Poison Spit'),
+-- Felsworn Daggermaw
+('2112401','21124','9','0','100','0','8','25','0','0','11','35570','1','0','0','0','0','0','0','0','0','0','Felsworn Daggermaw - Cast Charge'),
+('2112402','21124','9','0','100','1','0','5','10000','11000','11','7367','1','32','0','0','0','0','0','0','0','0','Felsworn Daggermaw - Cast Infected Bite'),
 -- Bloodmaul Drudger (Missing combat spells!)
 ('2123801','21238','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2123802','21238','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
