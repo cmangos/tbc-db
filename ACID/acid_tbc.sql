@@ -17763,6 +17763,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deathforge Technician
 ('1997901','19979','0','0','100','1','6000','12000','10000','15000','11','36250','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Steal Armor'),
 ('1997902','19979','2','0','100','1','30','0','8000','8000','11','36825','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Drain Life at 30% HP'),
+-- Grishna Falconwing
+('1998801','19988','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Grishna Falconwing - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('1998802','19988','9','13','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Grishna Falconwing - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
+('1998803','19988','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Grishna Falconwing - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1998804','19988','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Grishna Falconwing - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1998805','19988','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Grishna Falconwing - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1998806','19988','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grishna Falconwing - Flee at 15% HP (Phase 2)'),
+('1998807','19988','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Grishna Falconwing - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Bloodmaul Brute (Missing combat spells!)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
