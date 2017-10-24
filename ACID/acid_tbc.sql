@@ -17766,6 +17766,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deathforge Technician
 ('1997901','19979','0','0','100','1','6000','12000','10000','15000','11','36250','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Steal Armor'),
 ('1997902','19979','2','0','100','1','30','0','8000','8000','11','36825','1','0','0','0','0','0','0','0','0','0','Deathforge Technician - Cast Drain Life at 30% HP'),
+-- Vekh'nir Keeneye
+('1998201','19982','9','0','75','1','0','5','60000','60000','11','38541','0','0','54','-1046','0','0','0','0','0','0','Vekh\'nir Keeneye - Cast Evasion and Text Emote'),
+('1998202','19982','0','0','100','1','3500','7000','20000','30000','11','35321','1','0','0','0','0','0','0','0','0','0','Vekh\'nir Keeneye - Cast Gushing Wound'),
 -- Bloodmaul Brute (Missing combat spells!)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
@@ -32929,7 +32932,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1043','Death to the Warden\'s men!','0','0','0','1716','0'),
 ('-1044','Fresh meat!','0','0','0','1716','0'),
 ('-1045','More of the Warden\'s errand boys!','0','0','0','1716','0'),
--- PLEASE RE-USE 1046 - 1047
+('-1046','%s rushes forward, carefully watching its enemy.','0','2','0','19982','0'),
+-- PLEASE RE-USE 1047
 ('-1048','You are in the presence of a god!','0','2','0','15963','0'),
 ('-1049','%s brushes up against $n and farts like only an ogre can.','0','2','0','Generic Blades Edge Ogre /fart emote response','0'),
 ('-1050','Me like to fart, too!','0','0','0','Generic Blades Edge Ogre /fart emote response','1'),
