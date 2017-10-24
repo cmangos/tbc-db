@@ -19995,7 +19995,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Naberius 20483
 -- Area 52 Big Bruiser 20484
 -- Area 52 Bruiser 20485
--- Skeletal Stallion 20495
+-- Skeletal Stallion
+('2049501','20495','9','0','100','0','8','25','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Skeletal Stallion - Cast Charge'),
+('2049502','20495','0','0','100','1','11000','13000','12000','16000','11','11978','1','0','0','0','0','0','0','0','0','0','Skeletal Stallion - Cast Kick'),
 -- Kirin'Var Spectre 20496
 -- Sundered Shard 20498
 -- Seeping Sludge
