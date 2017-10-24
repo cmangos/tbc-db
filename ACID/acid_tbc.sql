@@ -17750,6 +17750,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1995707','19957','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brewmaster - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('1995708','19957','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brewmaster - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('1995709','19957','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Brewmaster - Say on Death if Killer Player has Completed Quest 11000'),
+-- Doomforge Attendant
+('1996101','19961','9','0','100','1','0','15','9000','14000','11','36846','1','0','0','0','0','0','0','0','0','0','Doomforge Attendant - Cast Mana Bomb'),
+('1996102','19961','9','0','100','1','0','5','10000','15000','11','36208','1','0','0','0','0','0','0','0','0','0','Doomforge Attendant - Cast Steal Weapon'),
 -- Deathforge Over-Smith
 ('1997801','19978','0','0','100','1','5000','11000','12000','15000','11','36486','1','0','0','0','0','0','0','0','0','0','Deathforge Over-Smith - Cast Slime Spray'),
 ('1997802','19978','0','0','100','1','8000','12000','16000','19000','11','37615','0','0','0','0','0','0','0','0','0','0','Deathforge Over-Smith - Cast Toxic Slime'),
