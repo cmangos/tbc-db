@@ -18218,6 +18218,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2138706','21387','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Wyrmcult Blackwhelp - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2138707','21387','8','0','100','0','38177','-1','0','0','11','38178','6','3','21','0','0','0','41','0','0','0','Wyrmcult Blackwhelp - Cast Create Wyrmcult Blackwhelp Item and Prevent Combat Movement and Despawn on Blackwhelp Net Spellhit'),
 ('2138708','21387','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Wyrmcult Blackwhelp - Set Phase to 0 on Evade'),
+-- Strider Jock <Razak's Roughriders>
+('2142701','21427','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Strider Jock - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('2142702','21427','9','13','100','1','5','30','2300','3900','11','36246','1','0','40','2','0','0','0','0','0','0','Strider Jock - Cast Shoot Tech Gun and Set Ranged Weapon Model (Phase 1)'),
+('2142703','21427','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Strider Jock - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2142704','21427','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Strider Jock - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('2142705','21427','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Strider Jock - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2142706','21427','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Strider Jock - Flee at 15% HP (Phase 2)'),
+('2142707','21427','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Strider Jock - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Ogre Building Bunny Small
 ('2145601','21456','11','0','100','1','0','0','0','0','11','32582','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Small - Cast Ogre Building Bunny Curse Visual on Spawn'),
 -- Black Wyrmkin
