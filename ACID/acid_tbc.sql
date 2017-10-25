@@ -20380,6 +20380,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2138601','21386','9','0','100','1','0','5','11000','16000','11','37974','1','0','0','0','0','0','0','0','0','0','Dark Conclave Hawkeye - Cast Enraging Strike'),
 -- Invis Legion Hold Caster
 ('2140301','21403','1','0','100','1','1000','1000','4000','4000','11','36804','0','0','0','0','0','0 ','0','0','0','0','Invis Legion Hold Caster - Cast Electrical Shock OOC'),
+-- Felfire Diemetradon
+('2140801','21408','2','0','100','0','30','0','0','0','11','37941','0','0','0','0','0','0','0','0','0','0','Felfire Diemetradon - Cast Flaming Wound at 30% HP'),
 -- Envoy Icarius
 ('2140901','21409','4','0','100','0','0','0','0','0','1','-640','0','0','0','0','0','0','0','0','0','0','Envoy Icarius - Say on Aggro'),
 -- Shadow Council Warlock
