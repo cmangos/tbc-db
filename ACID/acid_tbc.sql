@@ -20094,7 +20094,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fallen Vindicator 20922
 -- Ironspine Forgelord 20928
 -- Wrath Lord 20929
--- Hatecryer 20930
+-- Hatecryer
+('2093001','20930','0','0','100','1','8000','8000','15000','16000','11','34017','1','0','0','0','0','0','0','0','0','0','Hatecryer - Cast Rain of Chaos'),
 -- Tyrantus 20931
 -- Nuramoc 20932
 -- Severed Defender 20934
