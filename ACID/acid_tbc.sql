@@ -18123,6 +18123,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2092501','20925','0','0','85','1','8000','13000','14000','19000','11','35236','0','0','0','0','0','0','0','0','0','0','Scalded Basilisk - Cast Heat Wave'),
 -- Lesser Nether Drake
 ('2100401','21004','0','0','100','1','4000','8000','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Lesser Nether Drake - Cast Intangible Presence'),
+-- Grovestalker Lynx
+('2102201','21022','9','0','100','1','5','40','15000','20000','11','36589','0','0','0','0','0','0','0','0','0','0','Grovestalker Lynx - Cast Dash'),
 -- Blade's Edge - Nexus Prince Event - Orb01
 ('2102501','21025','30','0','100','0','5','20666','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Nexus Prince Event - Orb01 - Despawn on Receive AI Event 5'),
 -- Dreadwing
