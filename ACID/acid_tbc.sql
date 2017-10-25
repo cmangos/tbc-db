@@ -20095,7 +20095,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ironspine Forgelord 20928
 -- Wrath Lord 20929
 -- Hatecryer 20930
--- Tyrantus 20931
+-- Tyrantus
+('2093101','20931','0','0','100','1','4000','4500','12000','12000','11','35321','1','32','0','0','0','0','0','0','0','0','Tyrantus - Cast Gushing Wound'),
+('2093102','20931','0','0','100','1','7000','8000','15000','15000','11','36629','0','0','0','0','0','0','0','0','0','0','Tyrantus  - Cast Terrifying Roar'),
 -- Nuramoc 20932
 -- Severed Defender 20934
 -- Dealer Rashaad 20980
