@@ -18128,7 +18128,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dreadwing
 ('2103201','21032','9','0','100','1','0','30','20000','24000','11','36513','0','0','0','0','0','0','0','0','0','0','Dreadwing - Cast Intangible Presence'),
 ('2103202','21032','9','0','100','1','0','5','9000','13000','11','36631','0','0','0','0','0','0','0','0','0','0','Dreadwing - Cast Netherbreath'),
--- Boulder'mok Brute (Missing combat spells!)
+-- Boulder'mok Brute
 ('2104601','21046','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2104602','21046','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2104603','21046','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Boulder\'mok Brute - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -18137,6 +18137,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2104606','21046','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Brute - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2104607','21046','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Brute - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2104608','21046','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Boulder\'mok Brute - Say on Death if Killer Player has Completed Quest 11000'),
+('2104609','21046','0','0','100','1','6000','6000','13000','14000','11','37577','1','0','0','0','0','0','0','0','0','0','Boulder\'mok Brute - Cast Debilitating Strike'),
+('2104610','21046','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Boulder\'mok Brute - Cast Enrage at 30% HP'),
 -- Boulder'mok Shaman (Missing combat spells!)
 ('2104701','21047','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Shaman - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2104702','21047','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Shaman - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
