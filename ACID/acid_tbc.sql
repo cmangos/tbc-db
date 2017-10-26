@@ -17918,6 +17918,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2021605','20216','8','0','10','1','38360','-1','0','0','54','0','0','10020','0','0','0','0','0','0','0','0','Grulloc - Random Yell on Huffer Threatens Grulloc Spellhit'),
 ('2021606','20216','30','0','100','0','5','22114','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Grulloc - Set Phase 1 on Receive AI Event 5 (A)'),
 ('2021607','20216','21','1','100','0','0','0','0','0','1','-798','0','0','22','0','0','0','0','0','0','0','Grulloc - Yell and Set Phase 0 on Reached Home (Phase 1)'),
+-- Bloodmaul Battle Worg
+('2033001','20330','0','0','100','1','8000','8000','15000','16000','11','37776','0','0','0','0','0','0','0','0','0','0','Bloodmaul Battle Worg - Cast Blood Howl'),
 -- Bladespire Cook
 ('2033401','20334','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Set Phase 1 on Spawned'),
 ('2033402','20334','30','13','100','1','5','21241','0','0','22','2','0','0','5','16','0','0','0','0','0','0','Bladespire Cook - Set Phase 2 and Kneel on Received AI Event (Phase 1)'),
