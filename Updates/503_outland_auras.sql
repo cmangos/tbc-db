@@ -39,3 +39,8 @@ UPDATE creature_template_addon SET auras='19194' WHERE entry IN(18567);
 -- Sporelok - Sporeskin
 UPDATE `creature_template_addon` SET `auras` = '35230' WHERE `entry` = 18912;
 
+-- Corrupted Fire Elemental - Shadowform
+DELETE FROM `creature_template_addon` WHERE `entry` = 21706;
+INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+('21706', '0', '0', '1', '16', '0', '0', '35194');
+
