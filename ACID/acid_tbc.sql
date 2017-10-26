@@ -18226,6 +18226,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2149703','21497','0','0','85','1','9000','16000','18000','24000','11','29685','0','0','0','0','0','0','0','0','0','0','Black Wyrmkin - Cast Tail Sweep'),
 -- Ogre Building Cursed Spirit Bunny
 ('2149801','21498','30','0','100','1','5','0','0','0','12','21449','0','300000','0','0','0','0','0','0','0','0','Ogre Building Cursed Spirit Bunny - Summon Cursed Spirit on Receive AI Event Custom A'),
+-- Death's Watch
+('2151601','21516','9','0','100','1','0','15','7000','10000','11','37621','1','0','0','0','0','0','0','0','0','0','Death\'s Watch - Casts Mind Flay'),
 -- Electromental
 ('2172901','21729','11','0','100','0','0','0','0','0','11','37248','0','1','0','0','0','0','0','0','0','0','Electromental - Cast Power Converters: Electromental Visual on Spawn'),
 ('2172902','21729','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Electromental - Enable Dynamic Movement and Set Phase 1 on Aggro'),
