@@ -20442,6 +20442,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2168705','21687','9','0','100','1','0','5','6000','11000','11','29426','1','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Heroic Strike'),
 ('2168706','21687','0','0','100','1','25000','28000','23000','26000','11','26281','1','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Taunt'),
 ('2168707','21687','2','0','100','1','30','0','30000','40000','11','15062','0','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Shield Wall at 30% HP'),
+-- Corrupted Fire Elemental
+('2170601','21706','9','0','100','1','0','40','3400','4800','11','9053','1','0','0','0','0','0','0','0','0','0','Corrupted Fire Elemental - Cast Fireball'),
 -- Corrupted Earth Elemental
 ('2170801','21708','0','0','70','1','23000','23000','5000','5000','11','43305','1','0','0','0','0','0','0','0','0','0','Corrupted Earth Elemental - Cast Earth Shock'),
 -- Dragonmaw Wrangler
