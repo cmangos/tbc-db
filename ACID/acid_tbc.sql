@@ -21158,6 +21158,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2165004','21650','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Skettis Talonite - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2165005','21650','0','0','100','1','6000','10000','9000','14000','11','11428','1','1','0','0','0','0','0','0','0','0','Skettis Talonite - Cast Knockdown'),
 ('2165006','21650','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Skettis Talonite - Set Melee Weapon Model on Evade'),
+-- Time-Lost Skettis Reaver
+('2165101','21651','4','0','100','0','0','0','0','0','11','42247','0','0','0','0','0','0','0','0','0','0','Time-Lost Skettis Reaver - Cast Battle Shout on Aggro'),
+('2165102','21651','9','0','100','1','0','5','5000','8000','11','15496','1','0','0','0','0','0','0','0','0','0','Time-Lost Skettis Reaver - Cast Cleave'),
+('2165103','21651','2','0','100','0','30','0','0','0','11','3019','0','0','54','-106','0','0','0','0','0','0','Time-Lost Skettis Reaver - Cast Frenzy at 30% HP'),
 -- Cabal Abjurist
 ('2166001','21660','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Cabal Abjurist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2166002','21660','9','5','100','1','0','30','3400','4800','11','34447','1','0','0','0','0','0','0','0','0','0','Cabal Abjurist - Cast Arcane Missiles (Phase 1)'),
