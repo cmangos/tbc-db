@@ -20065,7 +20065,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2045302','20453','0','0','100','1','0','2500','5000','9000','11','36500','1','0','0','0','0','0','0','0','0','0','Ethereum Shocktrooper - Cast Glaive'),
 ('2045303','20453','0','0','100','1','0','5000','11000','15000','11','31553','1','0','0','0','0','0','0','0','0','0','Ethereum Shocktrooper  - Cast Hamstring'),
 -- Nexus-King Salhadaar 20454
--- Ethereum Researcher 20456
+-- Ethereum Researcher
+('2045601','20456','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Ethereum Researcher - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2045602','20456','9','13','100','1','0','40','3800','5200','11','9532','1','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Cast Lightning Bolt (Phase 1)'),
+('2045603','20456','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2045604','20456','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Disable Dynamic Movement at 0-8 Yards'),
+('2045605','20456','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Ethereum Researcher - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2045606','20456','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Set Phase 1 at 15% MP (Phase 2)'),
+('2045607','20456','9','0','100','1','0','8','8000','15000','11','36508','1','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Cast Energy Surge'),
+('2045608','20456','2','0','100','1','50','0','16000','20000','11','36506','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Cast Energy Charge at 50% HP'),
+('2045609','20456','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Set Phase to 0 on Evade'),
 -- Ethereum Archon 20458
 -- Ethereum Overlord 20459
 -- Chief Engineer Gork'lonn 20460
