@@ -17812,6 +17812,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1998908','19989','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Grishna Harbinger - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('1998909','19989','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grishna Harbinger - Flee at 15% HP (Phase 3)'),
 ('1998910','19989','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Set Phase to 0 on Evade'),
+-- Grishna Scorncrow
+('1999001','19990','0','0','100','1','10000','20000','20000','30000','11','35321','1','32','0','0','0','0','0','0','0','0','Grishna Scorncrow - Cast Gushing Wound'),
+('1999002','19990','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grishna Scorncrow - Flee at 15% HP'),
 -- Bloodmaul Brute (Missing combat spells!)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
