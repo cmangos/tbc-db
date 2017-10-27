@@ -21675,8 +21675,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Du'ga
 ('1879101','18791','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Du\'ga - Summon Enraged Wyverns and Yell on Aggro'),
 -- Captain Krosh
-('1899201','18992','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','0','0','0','0','0','0','0','0','Captain Krosh - Cast Furious Rage'),
-('1899202','18992','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','0','0','0','0','0','0','0','0','Captain Krosh - Cast Exhaustion'),
+('1899201','18992','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Captain Krosh - Cast Furious Rage'),
+('1899202','18992','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','0','Captain Krosh - Cast Exhaustion'),
 -- Chieftain Mummakit
 ('1917401','19174','2','0','100','0','50','0','0','0','11','35205','0','0','0','0','0','0','0','0','0','0','Chieftain Mummakit - Cast Vanish at 50% HP'),
 -- Withered Bog Lord
@@ -21770,8 +21770,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Young Spore Bat
 ('2038701','20387','6','0','75','0','0','0','0','0','11','35336','1','7','0','0','0','0','0','0','0','0','Young Spore Bat - Cast Energizing Spores on Death'),
 -- Captain Bo'kar
-('2044201','20442','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','0','0','0','0','0','0','0','0','Captain Bo\'kar - Cast Furious Rage'),
-('2044202','20442','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','0','0','0','0','0','0','0','0','Captain Bo\'kar - Cast Exhaustion'),
+('2044201','20442','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Captain Bo\'kar - Cast Furious Rage'),
+('2044202','20442','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','0','Captain Bo\'kar - Cast Exhaustion'),
 -- Ango'rosh Sentry
 ('2044301','20443','9','0','100','1','0','5','5000','9000','11','15496','1','0','0','0','0','0','0','0','0','0','Ango\'rosh Sentry - Cast Cleave'),
 ('2044302','20443','0','0','100','1','3000','7000','14000','21000','11','13730','0','0','0','0','0','0','0','0','0','0','Ango\'rosh Senty - Cast Demoralizing Shout'),
@@ -32376,7 +32376,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-260','Mog\'dorg the Wizened tell Grok go to city, get help for Bloodmaul. Grok go.','0','0','0','22940','0'),
 ('-261','Bladespire clan not fight fair. Have Gronn to help dem. You go to Blade\'s Edge Mountains. Talk to Mog\'dorg the Wizened. Kill Gromm.','0','0','0','22940','0'),
 ('-262','Ya look tired, $c. I be havin\' somethin\' for ya. These amulets, they can help ya leap obstacles and swim through the rivers like ya be born to it. They energize the food ya be eatin\'. Makin\' yer wounds close before yer eyes!','0','0','0','19227','0'),
--- Reuse 263-264
+('-263','%s goes into a furious rage.','0','2','0','18992/20442','0'),
+('-264','%s is exhausted.','0','2','0','18992/20442','0'),
 ('-265','Ya look lovesick. Special someone be gettin\' ya down, eh? No worries, no worries. Ya get this medallion from me, ya wear it when ya see \'em and they be all over ya, sweetheart!','0','0','0','19227','0'),
 ('-266','Me hungry. Fruit look tasty.','0','0','0','22940','0'),
 ('-267','Haha... I gonna kill puny $r and make trophy of your skull!','0','0','0','16358','0'),
