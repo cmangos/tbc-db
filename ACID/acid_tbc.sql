@@ -20058,7 +20058,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ethereum Assassin 20452
 -- Ethereum Shocktrooper 20453
 -- Nexus-King Salhadaar 20454
--- Ethereum Researcher 20456
+-- Ethereum Researcher
+('2045601','20456','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Ethereum Researcher - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2045602','20456','9','13','100','1','0','40','3800','5200','11','9532','1','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Cast Lightning Bolt (Phase 1)'),
+('2045603','20456','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2045604','20456','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Disable Dynamic Movement at 0-8 Yards'),
+('2045605','20456','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Ethereum Researcher - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2045606','20456','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Set Phase 1 at 15% MP (Phase 2)'),
+('2045607','20456','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Set Phase to 0 on Evade'),
 -- Ethereum Archon 20458
 -- Ethereum Overlord 20459
 -- Chief Engineer Gork'lonn 20460
