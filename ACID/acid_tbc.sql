@@ -17801,6 +17801,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1998803','19988','9','2','100','1','5','30','5000','8000','11','10277','1','0','40','2','0','0','0','0','0','0','Grishna Falconwing - Cast Throw and Set Ranged Weapon Model and Set Phase 1 at 5-30 Yards (Phase 0)'),
 ('1998804','19988','9','1','100','1','0','5','0','0','40','1','0','0','22','0','0','0','0','0','0','0','Grishna Falconwing - Set Melee Weapon Model and Set Phase 0 at 0-5 Yards (Phase 1)'),
 ('1998805','19988','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Grishna Falconwing - Set Phase 0 and Set Melee Weapon Model on Evade'),
+-- Grishna Harbinger
+('1998901','19989','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Grishna Harbinger - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1998902','19989','9','13','100','1','0','40','3000','4000','11','9532','1','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Cast Lighting Bolt (Phase 1)'),
+('1998903','19989','0','13','100','1','2500','5500','10000','11000','11','37589','1','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Cast Shriveling Gaze (Phase 1)'),
+('1998904','19989','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1998905','19989','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Disable Dynamic Movement at 0-8 Yards'),
+('1998906','19989','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Grishna Harbinger - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('1998907','19989','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Set Phase 1 at 15% MP (Phase 2)'),
+('1998908','19989','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Grishna Harbinger - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('1998909','19989','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grishna Harbinger - Flee at 15% HP (Phase 3)'),
+('1998910','19989','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Set Phase to 0 on Evade'),
 -- Bloodmaul Brute (Missing combat spells!)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
