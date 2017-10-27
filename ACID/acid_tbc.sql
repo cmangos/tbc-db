@@ -17795,6 +17795,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1998601','19986','0','0','100','1','0','5000','12000','15000','11','37681','1','0','0','0','0','0','0','0','0','0','Ruuan\'ok Skyfury - Cast Lightning Fury'),
 -- Ruuan'ok Ravenguard
 ('1998701','19987','0','0','100','1','3000','12000','10000','12000','11','37581','1','0','0','0','0','0','0','0','0','0','Ruuan\'ok Ravenguard - Cast Thundercleave'),
+-- Grishna Falconwing
+('1998801','19988','11','0','100','0','0','0','0','0','11','35109','0','0','0','0','0','0','0','0','0','0','Grishna Falconwing - Cast Grishna Kaliri on Spawn'),
+('1998802','19988','4','0','100','0','0','0','0','0','11','37588','0','0','0','0','0','0','0','0','0','0','Grishna Falconwing - Cast Dive on Aggro'),
+('1998803','19988','9','2','100','1','5','30','5000','8000','11','10277','1','0','40','2','0','0','0','0','0','0','Grishna Falconwing - Cast Throw and Set Ranged Weapon Model and Set Phase 1 at 5-30 Yards (Phase 0)'),
+('1998804','19988','9','1','100','1','0','5','0','0','40','1','0','0','22','0','0','0','0','0','0','0','Grishna Falconwing - Set Melee Weapon Model and Set Phase 0 at 0-5 Yards (Phase 1)'),
+('1998805','19988','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Grishna Falconwing - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Bloodmaul Brute (Missing combat spells!)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
