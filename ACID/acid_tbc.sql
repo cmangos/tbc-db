@@ -17793,6 +17793,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1998511','19985','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ruuan\'ok Cloudgazer - Set Phase to 0 on Evade'),
 -- Ruuan'ok Skyfury
 ('1998601','19986','0','0','100','1','0','5000','12000','15000','11','37681','1','0','0','0','0','0','0','0','0','0','Ruuan\'ok Skyfury - Cast Lightning Fury'),
+-- Ruuan'ok Ravenguard
+('1998701','19987','0','0','100','1','3000','12000','10000','12000','11','37581','1','0','0','0','0','0','0','0','0','0','Ruuan\'ok Ravenguard - Cast Thundercleave'),
 -- Bloodmaul Brute (Missing combat spells!)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
