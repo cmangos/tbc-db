@@ -20060,7 +20060,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2045202','20452','13','0','100','1','12000','15000','0','0','11','34802','1','0','0','0','0','0','0','0','0','0','Ethereum Assassin - Cast Kick on Target Spell Casting'),
 ('2045203','20452','33','0','100','1','0','0','5000','8000','11','7159','1','0','0','0','0','0','0','0','0','0','Ethereum Assassin - Cast Backstab on Facing Target Back'),
 ('2045204','20452','0','0','100','1','2000','6000','16000','21000','11','32920','0','0','0','0','0','0','0','0','0','0','Ethereum Assassin - Cast Warp'),
--- Ethereum Shocktrooper 20453
+-- Ethereum Shocktrooper
+('2045301','20453','0','0','100','1','10000','60000','10000','60000','54','0','0','10037','0','0','0','0','0','0','0','0','Ethereum Shocktrooper - Random Say'),
+('2045302','20453','0','0','100','1','0','2500','5000','9000','11','36500','1','0','0','0','0','0','0','0','0','0','Ethereum Shocktrooper - Cast Glaive'),
+('2045303','20453','0','0','100','1','0','5000','11000','15000','11','31553','1','0','0','0','0','0','0','0','0','0','Ethereum Shocktrooper  - Cast Hamstring'),
 -- Nexus-King Salhadaar 20454
 -- Ethereum Researcher 20456
 -- Ethereum Archon 20458
@@ -32614,7 +32617,15 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-501','How do you defeat that which has no life?','0','0','0','20452','0'),
 ('-502','I presume you come with good news?','0','0','0','2597','0'),
 ('-503','Things are going as planned, Lord Falconcrest. I assure you, it is only a matter of time.','0','0','0','2599','0'),
--- PLEASE RE-USE 504 - 513
+('-504','Pathetic. Is that the best you can do?','0','0','0','20453','0'),
+('-505','Now you will know fear!','0','0','0','20453','0'),
+('-506','You\'re weak! COME ON!','0','0','0','20453','0'),
+('-507','Your battle prowess is nothing compared to mine!','0','0','0','20453','0'),
+('-508','Taste pure energy!','0','0','0','20453','0'),
+('-509','Your death will serve as a message to all that would dare set foot upon Ethereum territory!','0','0','0','20453','0'),
+('-510','Run away while you still can!','0','0','0','20453','0'),
+('-511','For Salhadaar! For the Nexus-King!','0','0','0','20453','0'),
+-- PLEASE RE-USE 512 - 513
 ('-514','More will take my place.','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
 ('-515','A minor victory...','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
 ('-516','Your efforts... are in vain.','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
@@ -33630,7 +33641,15 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10036,0,-562,0,'18693 - Random Aggro Texts'),
 (10036,0,-563,0,'18693 - Random Aggro Texts'),
 (10036,0,-564,0,'18693 - Random Aggro Texts'),
-(10036,0,-565,0,'18693 - Random Aggro Texts');
+(10036,0,-565,0,'18693 - Random Aggro Texts'),
+(10037,0,-504,0,'20453 - Random IC Texts'),
+(10037,0,-505,0,'20453 - Random IC Texts'),
+(10037,0,-506,0,'20453 - Random IC Texts'),
+(10037,0,-507,0,'20453 - Random IC Texts'),
+(10037,0,-508,0,'20453 - Random IC Texts'),
+(10037,0,-509,0,'20453 - Random IC Texts'),
+(10037,0,-510,0,'20453 - Random IC Texts'),
+(10037,0,-511,0,'20453 - Random IC Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
