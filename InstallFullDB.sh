@@ -61,9 +61,6 @@ USERNAME="mangos"
 ## Define your password (It is suggested to restrict read access to this file!)
 PASSWORD="mangos"
 
-# Define waiting time
-WAIT="19"
-
 ## Define the path to your core's folder (This is optional)
 ##   If set the core updates located under sql/updates from this mangos-directory will be added automatically
 ##   If not set, need to apply sql/base/dbc/ files manually
@@ -71,6 +68,9 @@ CORE_PATH=""
 
 ## Define your mysql programm if this differs
 MYSQL="mysql"
+
+## Define if you want to wait a bit before applying the full database
+FORCE_WAIT="YES"
 
 ## Define if the 'dev' directory for processing development SQL files needs to be used
 ##   Set the variable to "YES" to use the dev directory
@@ -113,7 +113,7 @@ then
   echo "Please bring your repositories up-to-date!"
   echo "Press CTRL+C to exit"
   # show a mini progress bar
-  for i in in $(seq 1 $WAIT);
+  for i in $(seq 1 10);
   do
    echo -ne .
    sleep 1
