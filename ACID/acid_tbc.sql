@@ -20376,6 +20376,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1980602','19806','6','0','100','0','0','0','0','0','11','38311','1','7','0','0','0','0','0','0','0','0','Eclipsion Bloodwarder - Summon Eclipsion Hawkstrider on Death'),
 -- Crazed Colossus
 ('1982301','19823','6','0','100','0','0','0','0','0','11','38223','7','7','0','0','0','0','0','0','0','0','Crazed Colossus - Cast Quest Credit: Crazed Colossus on Death'),
+('1982302','19823','2','0','100','0','75','0','0','0','12','21936','1','30000','0','0','0','0','0','0','0','0','Crazed Colossus - Summon Crazed Shardling at 75% HP'),
+('1982303','19823','2','0','100','0','50','0','0','0','12','21936','1','30000','0','0','0','0','0','0','0','0','Crazed Colossus - Summon Crazed Shardling at 50% HP'),
+('1982304','19823','2','0','100','0','25','0','0','0','12','21936','1','30000','0','0','0','0','0','0','0','0','Crazed Colossus - Summon Crazed Shardling at 25% HP'),
 -- Son of Corok
 ('1982401','19824','9','0','100','1','0','5','9500','18000','11','12612','0','0','0','0','0','0','0','0','0','0','Son of Corok  - Cast Stomp'),
 -- Dark Conclave Talonite
@@ -20586,6 +20589,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2187801','21878','9','0','100','1','8','25','12000','18000','11','35570','1','0','0','0','0','0','0','0','0','0','Felboar - Cast Charge'),
 -- Vilewing Chimaera
 ('2187901','21879','9','0','100','1','0','30','16000','21000','11','16552','4','0','0','0','0','0','0','0','0','0','Vilewing Chimaera - Cast Venom Spit'),
+-- Crazed Shardling
+('2193601','21936','0','0','100','1','3000','3000','120000','120000','11','34970','0','0','54','-46','0','0','0','0','0','0','Crazed Shardling - Cast Frenzy'),
 -- Gan'arg Technician
 ('2196001','21960','1','0','40','1','2000','20000','35000','60000','11','38053','0','0','0','0','0','0','0','0','0','0','Gan\'arg Technician - Cast Tune Deathforge Infernal OOC'),
 -- Eclipsion Soldier
