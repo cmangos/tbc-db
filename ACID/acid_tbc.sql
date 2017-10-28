@@ -20102,7 +20102,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Image of Commander Ameer 20482
 -- Naberius 20483
 -- Area 52 Big Bruiser 20484
--- Area 52 Bruiser 20485
+-- Area 52 Bruiser
+('2048501','20485','9','0','100','1','0','20','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Area 52 Bruiser - Cast Net'),
 -- Skeletal Stallion 20495
 -- Kirin'Var Spectre 20496
 -- Sundered Shard 20498
