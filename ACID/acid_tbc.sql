@@ -20094,7 +20094,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thadell 20464
 -- Zephyrion 20470
 -- Nether-Stalker Nauthis 20471
--- Ethereum Nexus-Stalker 20474
+-- Ethereum Nexus-Stalker
+('2047401','20474','1','0','100','1','1000','1000','600000','600000','11','36515','0','32','0','0','0','0','0','0','0','0','Ethereum Nexus-Stalker - Cast Shadowtouched OOC'),
+('2047402','20474','9','0','100','1','0','5','10000','11000','11','36517','1','0','0','0','0','0','0','0','0','0','Ethereum Nexus-Stalker - Cast Shadowsurge'),
 -- Kirin'Var Ghost 20480
 -- Image of Commander Ameer 20482
 -- Naberius 20483
