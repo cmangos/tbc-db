@@ -20081,7 +20081,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2045803','20458','2','0','100','0','25','0','0','0','22','1','0','0','21','0','0','0','0','0','0','0','Ethereum Archon - Set Phase 1 and Stop Combat Movement At 25% HP'),
 ('2045804','20458','0','1','100','1','0','0','8100','8100','11','35924','0','1','54','-544','0','0','0','0','0','0','Ethereum Archon - Cast Energy Flux and Text Emote (Phase 1)'),
 ('2045805','20458','7','0','100','0','0','0','0','0','22','0','0','0','21','1','0','0','0','0','0','0','Ethereum Researcher - Set Phase to 0 and Allow Combat Movement on Evade'),
--- Ethereum Overlord 20459
+-- Ethereum Overlord
+('2045901','20459','11','0','100','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Simple Teleport on Spawn'),
+('2045902','20459','0','0','100','1','6000','6000','15000','25000','11','32064','0','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Battle Shout'),
+('2045903','20459','0','0','100','1','8000','10000','40000','50000','11','36510','0','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Enchanted Weapons'),
+('2045904','20459','9','0','100','1','8','25','15000','21000','11','36509','1','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Charge'),
+('2045905','20459','8','0','100','1','30023','-1','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Despawn Guardians on Spellhit'),
+('2045906','20459','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Despawn Guardians on Evade'),
+('2045907','20459','6','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Despawn Guardians on Death'),
 -- Chief Engineer Gork'lonn 20460
 -- Apprentice Andrethan 20463
 -- Thadell 20464
