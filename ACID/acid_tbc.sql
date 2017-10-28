@@ -22174,7 +22174,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Time-Lost Skettis High Priest
 ('2178701','21787','9','0','100','1','0','40','8000','12000','11','9734','1','0','0','0','0','0','0','0','0','0','Time-Lost Skettis High Priest - Cast Holy Smite'),
 ('2178702','21787','0','0','100','1','4200','7700','7100','16200','11','11639','4','32','0','0','0','0','0','0','0','0','Time-Lost Skettis High Priest - Cast Shadow Word Pain'),
-('2178703','21787','14','0','100','1','4000','40','10000','15000','11','42420','6','1','0','0','0','0','0','0','0','0','Time-Lost Skettis High Priest - Cast Shadow Mend on Friendlies'),
+('2178703','21787','14','0','100','1','4000','40','10000','15000','11','42420','6','1','0','0','0','0','0','0','0','0','Time-Lost Skettis High Priest - Cast Flash Heal on Friendlies'),
 -- Skettis Kaliri
 ('2180401','21804','9','0','100','1','0','5','5000','10000','11','5708','1','0','0','0','0','0','0','0','0','0','Skettis Kaliri - Cast Swoop'),
 -- Ironspine Chomper
