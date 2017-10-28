@@ -20619,6 +20619,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2187901','21879','9','0','100','1','0','30','16000','21000','11','16552','4','0','0','0','0','0','0','0','0','0','Vilewing Chimaera - Cast Venom Spit'),
 -- Gan'arg Technician
 ('2196001','21960','1','0','40','1','2000','20000','35000','60000','11','38053','0','0','0','0','0','0','0','0','0','0','Gan\'arg Technician - Cast Tune Deathforge Infernal OOC'),
+-- Chancellor Bloodleaf
+('2201201','22012','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Chancellor Bloodleaf - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2201202','22012','9','5','100','1','0','30','5000','7000','11','15790','1','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Cast Arcane Missiles (Phase 1)'),
+('2201203','22012','9','5','100','1','0','10','5000','10000','11','34517','0','1','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Cast Arcane Explosion (Phase 1)'),
+('2201204','22012','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2201205','22012','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Disable Dynamic Movement at 0-8 Yards'),
+('2201206','22012','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Chancellor Bloodleaf - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2201207','22012','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Set Phase 1 at 15% MP (Phase 2)'),
+('2201208','22012','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Set Phase to 0 on Evade'),
 -- Eclipsion Soldier
 ('2201601','22016','2','0','100','0','20','0','0','0','11','36476','0','0','0','0','0','0','0','0','0','0','Eclipsion Soldier - Cast Blood Heal at 20% HP'),
 -- Eclipsion Spellbinder
