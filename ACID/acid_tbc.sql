@@ -20561,6 +20561,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2172002','21720','4','0','15','0','0','0','0','0','1','-101','-102','-105','0','0','0','0','0','0','0','0','Dragonmaw Shaman - Random Say on Aggro'),
 ('2172003','21720','4','0','100','0','0','0','0','0','11','6742','0','0','0','0','0','0','0','0','0','0','Dragonmaw Shaman - Cast Bloodlust on Aggro'),
 ('2172004','21720','27','0','100','1','12550','1','5000','5000','11','12550','0','32','0','0','0','0','0','0','0','0','Dragonmaw Shaman - Cast Lightning Shield on Missing Buff'),
+-- Sunfury Blood Lord
+('2174301','21743','4','0','100','0','0','0','0','0','54','-544','0','0','39','20','0','0','0','0','0','0','Sunfury Blood Lord - Text and Call for Help on Aggro'),
+('2174302','21743','9','0','100','1','0','5','10000','12000','11','37577','1','0','0','0','0','0','0','0','0','0','Sunfury Blood Lord - Cast Debilitating Strike'),
+('2174303','21743','0','0','100','1','6000','8000','9500','18000','11','36104','0','0','0','0','0','0','0','0','0','0','Sunfury Blood Lord - Cast Torrent of Flames'),
 -- Overlord Or'barokh
 ('2176901','21769','1','0','100','1','120000','120000','300000','300000','1','-304','0','0','5','6','0','0','0','0','0','0','Overlord Or\'barokh - Gossip and Emote (1)'),
 ('2176902','21769','1','0','100','1','123000','123000','303000','303000','1','-305','0','0','5','6','0','0','0','0','0','0','Overlord Or\'barokh - Gossip and Emote (2)'),
@@ -32665,7 +32669,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-541','For Silvermoon! For Sunstrider!','0','0','0','17591','0'),
 ('-542','Your death will make a fitting tribute to the King!','0','0','0','17591','0'),
 ('-543','Your money or your life! Actually, just your life will do...','0','0','0','17591','0'),
--- PLEASE RE-USE -544
+('-544','Guardians! To me!','0','0','0','21743','0'),
 ('-545','Scanning life forms....target not found','0','0','0','14224','0'),
 ('-546','Target lost....resuming search patterns Delta','0','0','0','14224','0'),
 ('-547','Unknown life forms detected....assessing...','0','0','0','14224','0'),
