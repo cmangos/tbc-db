@@ -20519,6 +20519,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2140301','21403','1','0','100','1','1000','1000','4000','4000','11','36804','0','0','0','0','0','0 ','0','0','0','0','Invis Legion Hold Caster - Cast Electrical Shock OOC'),
 -- Envoy Icarius
 ('2140901','21409','4','0','100','0','0','0','0','0','1','-640','0','0','0','0','0','0','0','0','0','0','Envoy Icarius - Say on Aggro'),
+-- Greater Felfire Diemetradon
+('2146201','21462','9','0','100','1','0','40','8000','12000','11','37945','1','0','0','0','0','0','0','0','0','0','Greater Felfire Diemetradon  - Cast Fel Fireball'),
+('2146202','21462','2','0','100','0','30','0','0','0','11','37941','0','0','0','0','0','0','0','0','0','0','Greater Felfire Diemetradon - Cast Flaming Wound at 30% HP'),
 -- Shadow Council Warlock
 ('2150301','21503','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadow Council Warlock - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2150302','21503','9','5','100','1','7','40','3000','5000','11','9613','1','0','0','0','0','0','0','0','0','0','Shadow Council Warlock- Cast Icebolt (Phase 1)'),
