@@ -20572,6 +20572,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2178801','21788','4','0','25','32','0','0','0','0','1','-1322','-1323','-1324','1','-1325','-1326','-1322','0','0','0','0','Shadowmoon Zealot - Random Say on Aggro'),
 -- Shadowmoon Harbinger
 ('2179501','21795','4','0','25','32','0','0','0','0','1','-1322','-1323','-1324','1','-1325','-1326','-1322','0','0','0','0','Shadowmoon Harbinger - Random Say on Aggro'),
+-- Illidari Overseer <Servant of Illidan>
+('2180801','21808','0','0','100','1','2000','3000','7000','13000','11','32736','1','32','0','0','0','0','0','0','0','0','Illidari Overseer - Cast Mortal Strike'),
+('2180802','21808','9','0','100','1','0','5','15000','16000','11','11977','1','0','0','0','0','0','0','0','0','0','Illidari Overseer - Cast Rend'),
 -- Scorchshell Pincer
 ('2186401','21864','9','0','100','1','0','8','5000','10000','11','38208','1','32','0','0','0','0','0','0','0','0','Scorchshell Pincer - Cast Burning Poison'),
 -- Teron Gorefiend
