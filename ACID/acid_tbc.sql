@@ -18217,7 +18217,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2104706','21047','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Shaman - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2104707','21047','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Shaman - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2104708','21047','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Boulder\'mok Shaman - Say on Death if Killer Player has Completed Quest 11000'),
--- Boulder'mok Chieftain (Missing combat spells!)
+-- Boulder'mok Chieftain
 ('2104801','21048','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2104802','21048','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2104803','21048','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Boulder\'mok Chieftain - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -18226,6 +18226,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2104806','21048','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2104807','21048','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2104808','21048','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Say on Death if Killer Player has Completed Quest 11000'),
+('2104809','21048','0','0','100','1','6000','6000','13000','14000','11','8078','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Cast Thunderclap'),
+('2104810','21048','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Boulder\'mok Chieftain - Cast Furious Rage and Emote'),
+('2104811','21048','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','Boulder\'mok Chieftain - Cast Exhaustion and Emote'),
 -- Nexus-Prince Razaan
 ('2105701','21057','11','0','100','0','0','0','0','0','1','-1460','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Razaan - Yell on Spawn'),
 ('2105702','21057','0','0','100','1','8000','12000','17000','21000','11','35924','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Razaan - Cast Energy Flux'),
