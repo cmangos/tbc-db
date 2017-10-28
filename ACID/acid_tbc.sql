@@ -20572,6 +20572,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2178801','21788','4','0','25','32','0','0','0','0','1','-1322','-1323','-1324','1','-1325','-1326','-1322','0','0','0','0','Shadowmoon Zealot - Random Say on Aggro'),
 -- Shadowmoon Harbinger
 ('2179501','21795','4','0','25','32','0','0','0','0','1','-1322','-1323','-1324','1','-1325','-1326','-1322','0','0','0','0','Shadowmoon Harbinger - Random Say on Aggro'),
+-- Elekk Demolisher
+('2180201','21802','0','0','100','1','5000','10000','15000','30000','11','38045','0','0','0','0','0','0','0','0','0','0','Elekk Demolisher - Cast Rampaging Stomp'),
 -- Scorchshell Pincer
 ('2186401','21864','9','0','100','1','0','8','5000','10000','11','38208','1','32','0','0','0','0','0','0','0','0','Scorchshell Pincer - Cast Burning Poison'),
 -- Teron Gorefiend
