@@ -20427,6 +20427,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2042702','20427','4','0','100','0','0','0','0','0','1','-23','-24','0','0','0','0','0','0','0','0','0','Veneratus the Many - Yell on Aggro'),
 -- Eclipsion Dragonhawk
 ('2050201','20502','9','0','100','1','0','8','11000','16000','11','37985','0','0','0','0','0','0','0','0','0','0','Eclipsion Dragonhawk - Cast Fire Breath'),
+-- Prophetess Cavrylin
+('2068301','20683','9','0','100','1','0','30','8000','12000','11','37629','4','32','0','0','0','0','0','0','0','0','Prophetess Cavrylin - Cast Melt Flesh'),
+('2068302','20683','32','0','100','1','0','10','12000','16000','11','37997','0','0','0','0','0','0','0','0','0','0','Prophetess Cavrylin - Cast Chaos Nova in Range'),
 -- Deathforge Summoner
 ('2087201','20872','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Deathforge Summoner - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2087202','20872','9','5','100','1','0','40','3400','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Deathforge Summoner - Cast Shadow Bolt (Phase 1)'),
