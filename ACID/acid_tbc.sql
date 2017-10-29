@@ -18239,6 +18239,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dreadwing
 ('2103201','21032','9','0','100','1','0','30','20000','24000','11','36513','0','0','0','0','0','0','0','0','0','0','Dreadwing - Cast Intangible Presence'),
 ('2103202','21032','9','0','100','1','0','5','9000','13000','11','36631','0','0','0','0','0','0','0','0','0','0','Dreadwing - Cast Netherbreath'),
+-- Bladewing Bloodletter
+('2103301','21033','0','0','100','1','0','3000','8000','15000','11','37839','1','0','0','0','0','0','0','0','0','0','Bladewing Bloodletter - Cast Poison Spit'),
+('2103302','21033','0','0','100','1','3000','5000','13000','18000','11','37838','1','0','0','0','0','0','0','0','0','0','Bladewing Bloodletter - Cast Blood Leech'),
 -- Boulder'mok Brute (Missing combat spells!)
 ('2104601','21046','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2104602','21046','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
