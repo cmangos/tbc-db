@@ -18269,7 +18269,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2104711','21047','16','1','100','1','28902','30','20000','40000','11','28902','6','0','0','0','0','0','0','0','0','0','Boulder\'mok Shaman - Cast Bloodlust on Friendlies (Phase 1)'),
 ('2104712','21047','14','0','100','1','2500','40','15300','22900','11','11986','6','0','0','0','0','0','0','0','0','0','Boulder\'mok Shaman - Cast Healing Wave on Friendlies'),
 ('2104713','21047','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Shaman - Set Phase to 0 on Evade'),
--- Boulder'mok Chieftain (Missing combat spells!)
+-- Boulder'mok Chieftain
 ('2104801','21048','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2104802','21048','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2104803','21048','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Boulder\'mok Chieftain - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -18278,6 +18278,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2104806','21048','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2104807','21048','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2104808','21048','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Say on Death if Killer Player has Completed Quest 11000'),
+('2104809','21048','9','0','100','1','0','10','13000','14000','11','8078','0','0','0','0','0','0','0','0','0','0','Boulder\'mok Chieftain - Cast Thunderclap'),
+('2104810','21048','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Boulder\'mok Chieftain - Cast Furious Rage and Text Emote'),
+('2104811','21048','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','0','Boulder\'mok Chieftain - Cast Exhaustion and Text Emote'),
 -- Nexus-Prince Razaan
 ('2105701','21057','11','0','100','0','0','0','0','0','1','-1460','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Razaan - Yell on Spawn'),
 ('2105702','21057','0','0','100','1','8000','12000','17000','21000','11','35924','0','0','0','0','0','0','0','0','0','0','Nexus-Prince Razaan - Cast Energy Flux'),
@@ -21820,8 +21823,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Du'ga
 ('1879101','18791','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Du\'ga - Summon Enraged Wyverns and Yell on Aggro'),
 -- Captain Krosh
-('1899201','18992','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Captain Krosh - Cast Furious Rage'),
-('1899202','18992','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','0','Captain Krosh - Cast Exhaustion'),
+('1899201','18992','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Captain Krosh - Cast Furious Rage and Text Emote'),
+('1899202','18992','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','0','Captain Krosh - Cast Exhaustion and Text Emote'),
 -- Chieftain Mummakit
 ('1917401','19174','2','0','100','0','50','0','0','0','11','35205','0','0','0','0','0','0','0','0','0','0','Chieftain Mummakit - Cast Vanish at 50% HP'),
 -- Withered Bog Lord
@@ -21915,8 +21918,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Young Spore Bat
 ('2038701','20387','6','0','75','0','0','0','0','0','11','35336','1','7','0','0','0','0','0','0','0','0','Young Spore Bat - Cast Energizing Spores on Death'),
 -- Captain Bo'kar
-('2044201','20442','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Captain Bo\'kar - Cast Furious Rage'),
-('2044202','20442','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','0','Captain Bo\'kar - Cast Exhaustion'),
+('2044201','20442','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Captain Bo\'kar - Cast Furious Rage and Text Emote'),
+('2044202','20442','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','0','Captain Bo\'kar - Cast Exhaustion and Text Emote'),
 -- Ango'rosh Sentry
 ('2044301','20443','9','0','100','1','0','5','5000','9000','11','15496','1','0','0','0','0','0','0','0','0','0','Ango\'rosh Sentry - Cast Cleave'),
 ('2044302','20443','0','0','100','1','3000','7000','14000','21000','11','13730','0','0','0','0','0','0','0','0','0','0','Ango\'rosh Senty - Cast Demoralizing Shout'),
