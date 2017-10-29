@@ -20561,6 +20561,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2105006','21050','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Set Melee Weapon Model on Evade'),
 -- Enraged Water Spirit
 ('2105901','21059','0','0','100','1','0','0','10000','20000','11','38032','1','0','0','0','0','0','0','0','0','0','Enraged Water Spirit - Cast Stormbolt'),
+-- Enraged Fire Spirit
+('2106101','21061','0','2','100','1','0','0','10000','11000','11','36247','1','0','0','0','0','0','0','0','0','0','Enraged Fire Spirit - Cast Fel Fireball (Phase 0)'),
+('2106102','21061','2','0','100','0','50','0','0','0','11','8599','0','1','54','-106','0','0','22','1','0','0','Enraged Fire Spirit - Cast Enrage and Set Phase 1 at 50% HP'),
+('2106103','21061','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Enraged Fire Spirit - Set Phase to 0 on Evade'),
 -- Demon Hunter Supplicant
 ('2117901','21179','2','0','100','0','40','0','0','0','1','-1459','0','0','11','37683','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Evasion at 40% HP'),
 ('2117902','21179','2','0','100','0','25','0','0','0','11','32720','0','0','0','0','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Sprint at 25% HP'),
