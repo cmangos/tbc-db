@@ -20553,12 +20553,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Coilskar Assassin
 ('2104401','21044','4','0','100','0','0','0','0','0','54','0','0','10010','0','0','0','0','0','0','0','0','Coilskar Assassin - Random Say on Aggro'),
 -- Enraged Earth Spirit
-('2105001','21050','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Enraged Earth Spirit - Enable Dynamic Movement and Prevent Melee on Aggro'),
-('2105002','21050','9','0','100','1','0','30','3800','5200','11','38498','4','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Cast Fiery Boulder'),
-('2105003','21050','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Enable Dynamic Movement at 9-80 Yards'),
-('2105004','21050','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Enraged Earth Spirit - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('2105005','21050','6','0','100','0','0','0','0','0','11','38365','0','7','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Summon Enraged Earth Shard on Death'),
-('2105006','21050','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Set Melee Weapon Model on Evade'),
+('2105001','21050','9','0','100','1','5','30','3800','5200','11','38498','4','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Cast Fiery Boulder'),
+('2105002','21050','6','0','100','0','0','0','0','0','11','38365','0','7','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Summon Enraged Earth Shard on Death'),
 -- Enraged Water Spirit
 ('2105901','21059','0','0','100','1','0','0','10000','20000','11','38032','1','0','0','0','0','0','0','0','0','0','Enraged Water Spirit - Cast Stormbolt'),
 -- Enraged Fire Spirit
