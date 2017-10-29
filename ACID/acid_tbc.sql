@@ -20243,7 +20243,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mehrdad 20810
 -- Ghabar 20811
 -- Ethereum Prisoner (Tyralius) 20825
--- Ethereum Gladiator 20854
+-- Ethereum Gladiator
+('2085401','20854','0','0','100','1','2000','4000','4000','8000','11','9080','1','32','0','0','0','0','0','0','0','0','Ethereum Gladiator - Cast Hamstring'),
+('2085402','20854','0','0','100','1','4000','6000','4000','8000','11','15284','1','0','0','0','0','0','0','0','0','0','Ethereum Gladiator - Cast Cleave'),
+('2085403','20854','0','0','100','1','6000','8000','4000','8000','11','16856','1','32','0','0','0','0','0','0','0','0','Ethereum Gladiator - Cast Mortal Strike'),
 -- Aurine Moonblaze 20871
 -- Void Conduit (must not respond to players aggro)
 ('2089901','20899','9','0','100','1','0','500','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Void Conduit - Prevent Combat Movement and Prevent Melee'),
