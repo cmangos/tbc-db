@@ -18150,6 +18150,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2074801','20748','0','0','100','1','3000','10000','45000','60000','11','5781','1','32','0','0','0','0','0','0','0','0','Thunderlord Dire Wolf - Cast Threatening Growl'),
 -- Scalewing Serpent
 ('2074901','20749','0','0','100','1','0','1500','14500','18000','11','37841','1','0','0','0','0','0','0','0','0','0','Scalewing Serpent - Cast Lightning Strike'),
+-- Daggermaw Lashtail
+('2075101','20751','9','0','100','1','8','25','15000','21000','11','35570','1','0','0','0','0','0','0','0','0','0','Daggermaw Lashtail - Cast Charge'),
+('2075102','20751','0','0','100','1','3000','10000','10000','11000','11','7367','1','32','0','0','0','0','0','0','0','0','Daggermaw Lashtail - Cast Infected Bite'),
 -- Dorgok 20753 (Missing combat spells!)
 ('2075301','20753','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Droggam - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2075302','20753','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Droggam - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
