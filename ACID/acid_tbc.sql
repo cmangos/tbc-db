@@ -18223,6 +18223,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2092501','20925','0','0','85','1','8000','13000','14000','19000','11','35236','0','0','0','0','0','0','0','0','0','0','Scalded Basilisk - Cast Heat Wave'),
 -- Lesser Nether Drake
 ('2100401','21004','0','0','100','1','4000','8000','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Lesser Nether Drake - Cast Intangible Presence'),
+-- Scorch Imp
+('2102101','21021','9','0','100','1','0','40','3400','4800','11','9053','1','0','0','0','0','0','0','0','0','0','Scorch Imp - Cast Fireball'),
+('2102102','21021','8','0','100','1','0','4','3000','15000','11','37844','0','32','0','0','0','0','0','0','0','0','Scorch Imp - Cast Fire Ward on Fire Spellhit'),
 -- Blade's Edge - Nexus Prince Event - Orb01
 ('2102501','21025','30','0','100','0','5','20666','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Nexus Prince Event - Orb01 - Despawn on Receive AI Event 5'),
 -- Dreadwing
