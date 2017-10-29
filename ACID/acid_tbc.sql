@@ -18232,6 +18232,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2102106','21021','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Scorch Imp - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2102107','21021','8','0','100','1','0','4','3000','15000','11','37844','0','33','0','0','0','0','0','0','0','0','Scorch Imp - Cast Fire Ward on Fire Spellhit'),
 ('2102108','21021','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Scorch Imp - Set Phase to 0 on Evade'),
+-- Grovestalker Lynx
+('2102201','21022','9','0','100','1','5','40','15000','20000','11','36589','0','0','0','0','0','0','0','0','0','0','Grovestalker Lynx - Cast Dash'),
 -- Blade's Edge - Nexus Prince Event - Orb01
 ('2102501','21025','30','0','100','0','5','20666','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Nexus Prince Event - Orb01 - Despawn on Receive AI Event 5'),
 -- Dreadwing
