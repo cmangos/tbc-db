@@ -20233,7 +20233,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Forgemaster Morug
 ('2080001','20800','0','0','100','1','0','5000','8000','16000','11','36228','1','0','0','0','0','0','0','0','0','0','Forgemaster Morug - Cast Chainsaw Blade'),
 ('2080002','20800','0','0','100','1','5000','11000','12000','15000','11','34261','0','0','0','0','0','0','0','0','0','0','Forgemaster Morug  - Cast Slime Spray'),
--- Silroth 20801
+-- Silroth
+('2080101','20801','0','0','100','1','8000','12000','10000','18000','11','36253','1','0','0','0','0','0','0','0','0','0','Silroth - Cast Chemical Flames'),
+('2080102','20801','0','0','100','1','5000','11000','12000','15000','11','36252','0','0','0','0','0','0','0','0','0','0','Silroth - Cast Felforge Flames'),
 -- Protectorate Demolitionist 20802
 -- Overmaster Grindgarr 20803
 -- Void Waste Globule 20805
