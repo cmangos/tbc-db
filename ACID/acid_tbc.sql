@@ -20559,6 +20559,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2105004','21050','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Enraged Earth Spirit - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2105005','21050','6','0','100','0','0','0','0','0','11','38365','0','7','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Summon Enraged Earth Shard on Death'),
 ('2105006','21050','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Set Melee Weapon Model on Evade'),
+-- Enraged Water Spirit
+('2105901','21059','0','0','100','1','0','0','10000','20000','11','38032','1','0','0','0','0','0','0','0','0','0','Enraged Water Spirit - Cast Stormbolt'),
 -- Demon Hunter Supplicant
 ('2117901','21179','2','0','100','0','40','0','0','0','1','-1459','0','0','11','37683','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Evasion at 40% HP'),
 ('2117902','21179','2','0','100','0','25','0','0','0','11','32720','0','0','0','0','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Sprint at 25% HP'),
