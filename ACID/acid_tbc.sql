@@ -20469,6 +20469,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Prophetess Cavrylin
 ('2068301','20683','9','0','100','1','0','30','8000','12000','11','37629','4','32','0','0','0','0','0','0','0','0','Prophetess Cavrylin - Cast Melt Flesh'),
 ('2068302','20683','32','0','100','1','0','10','12000','16000','11','37997','0','0','0','0','0','0','0','0','0','0','Prophetess Cavrylin - Cast Chaos Nova in Range'),
+-- Keeper of the Cistern
+('2079501','20795','0','0','100','1','0','1000','2500','4700','11','32011','1','0','0','0','0','0','0','0','0','0','Keeper of the Cistern - Cast Water Bolt'),
+('2079502','20795','9','0','100','1','0','10','12000','16500','11','11831','0','0','0','0','0','0','0','0','0','0','Coilskar Waterkeeper - Cast Frost Nova'),
 -- Deathforge Summoner
 ('2087201','20872','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Deathforge Summoner - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2087202','20872','9','5','100','1','0','40','3400','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Deathforge Summoner - Cast Shadow Bolt (Phase 1)'),
