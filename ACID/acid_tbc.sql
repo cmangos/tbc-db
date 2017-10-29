@@ -18370,6 +18370,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2225408','22254','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Wrath Corruptor - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('2225409','22254','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Wrath Corruptor - Flee at 15% HP (Phase 3)'),
 ('2225410','22254','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Wrath Corruptor - Set Phase to 0 on Evade'),
+-- Witness of Doom
+('2228201','22282','0','0','100','0','1','1','0','0','25','0','0','0','54','-48','0','0','0','0','0','0','Witness of Doom - Flee and Text on Aggro'),
+('2228202','22282','0','0','100','0','7000','7000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Witness of Doom - Despawn IC'),
 -- Furnace Guard
 ('2229101','22291','0','0','100','1','6300','12800','6300','12800','11','32736','1','0','0','0','0','0','0','0','0','0','Furnace Guard - Cast Mortal Strike'),
 -- Mo'arg Extractor
@@ -19012,7 +19015,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1943408','19434','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dreadcaller - Set Phase to 0 on Evade'),
 -- Eye of Grillok
 ('1944002','19440','4','0','100','0','0','0','0','0','1','-48','0','0','0','0','0','0','0','0','0','0','Eye of Grillok - Emote on Aggro'),
-('1944001','19440','0','0','100','1','6000','6000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Eye of Grillok - Despawn After 6 Seconds'),
+('1944001','19440','0','0','100','1','6000','6000','0','0','39','30','0','0','41','0','0','0','0','0','0','0','Eye of Grillok - Call for Help and Despawn After 6 Seconds'),
 -- Worg Master Kruush
 ('1944202','19442','4','0','100','0','0','0','0','0','1','-187','0','0','0','0','0','0','0','0','0','0','Worg Master Kruush - Emote on Aggro'),
 ('1944201','19442','9','0','100','1','0','5','12000','16000','11','30478','1','0','0','0','0','0','0','0','0','0','Worg Master Kruush - Cast Hemmorrhage'),
@@ -32210,7 +32213,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-45','The master... will be angry...','0','0','0','16407','0'),
 ('-46','%s becomes enraged!','0','2','0','Common Text','0'),
 ('-47','%s attempts to run away in fear!','0','2','0','Common Text','0'),
-('-48','You are spotted by the eye of Grillok!','0','2','0','19440','0'),
+('-48','You are spotted by the %s!','0','2','0','19440/22282','0'),
 ('-49','Wait... No! No!','0','0','0','16414','0'),
 ('-50','Not... Fair...','0','0','0','16409','0'),
 ('-51','The fates have turned against me!','0','0','0','16408','0'),
