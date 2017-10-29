@@ -18328,6 +18328,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2200701','22007','1','0','100','1','6000','9000','6000','9000','5','1','0','0','0','0','0','0','0','0','0','0','Tree Warden Chawn - Talk Emote OOC'),
 -- Baron Sablemane
 ('2210301','22103','30','0','100','33','5','22130','0','0','5','1','5','6','5','11','15','25','5','273','274','0','Baron Sablemane - Random Emote on Receive AI Event 5 (A)'),
+-- Mature Cavern Crawler
+('2213201','22132','9','0','100','1','0','30','4500','6000','11','7951','1','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Cast Toxic Spit'),
 -- Bloodmaul Taskmaster 22160 (Missing combat spells!)
 -- Apexis Flayer
 ('2217501','22175','0','0','100','1','8300','13300','22000','26000','11','13443','4','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Rend'),
