@@ -39,3 +39,6 @@ UPDATE creature_template_addon SET auras='19194' WHERE entry IN(18567);
 -- Sporelok - Sporeskin
 UPDATE `creature_template_addon` SET `auras` = '35230' WHERE `entry` = 18912;
 
+-- Accursed Apparition - Stealth Detection & Greater Invisibility
+UPDATE `creature_template_addon` SET `auras` = '8279 16380' WHERE `entry` = 21941;
+
