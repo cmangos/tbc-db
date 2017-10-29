@@ -20676,6 +20676,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2211310','22113','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mordenai - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Dark Conclave Ritualist
 ('2213801','22138','1','0','75','1','1000','1000','48000','55000','11','38469','0','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Dark Conclave Ritualist Channel while OOC'),
+-- Dragonmaw Ascendant
+('2225301','22253','9','0','100','1','0','10','10000','12000','11','10966','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Uppercut'),
+('2225302','22253','9','0','100','1','0','5','6000','10000','11','15496','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Cleave'),
+('2225303','22253','0','0','100','1','7000','9000','6000','10000','11','17547','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Mortal Strike'),
 -- Dragonmaw Peon (22252) - npc_dragonmaw_peon
 -- Torloth the Magnificent (22076) - mob_torloth
 ('2231501','22315','0','0','100','0','2000','2000','0','0','11','38108','0','1','37','0','0','0','0','0','0','0','Deathforge Mine - Cast Deathforge Mine Explosion then Self Destruct'),
