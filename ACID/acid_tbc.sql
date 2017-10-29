@@ -20339,7 +20339,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Farahlon Crumbler 21077
 -- Farahlon Shardling 21078
 -- Cragskaar Shardling 21079
--- Sunfury Blood Knight 21089
+-- Sunfury Blood Knight
+('2108901','21089','0','0','100','1','5000','15000','15000','25000','11','35871','1','0','0','0','0','0','0','0','0','0','Sunfury Blood Knight - Cast Spellbreaker'),
+('2108902','21089','2','0','100','1','50','0','25000','35000','11','36476','0','0','0','0','0','0','0','0','0','0','Sunfury Blood Knight - Cast Blood Heal at 50% HP'),
+('2108903','21089','2','0','100','0','30','0','0','0','11','8599','0','2','54','-106','0','0','0','0','0','0','Sunfury Blood Knight - Cast Enrage at 30% HP'),
 -- Fel Imp 21135
 -- Legion Fel Cannon 21233
 -- Crash Bigbomb 21259
