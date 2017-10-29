@@ -18146,6 +18146,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2073219','20732','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Gorr\'Dim - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2073220','20732','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Gorr\'Dim - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2073221','20732','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Gorr\'Dim - Say on Death if Killer Player has Completed Quest 11000'),
+-- Thunderlord Dire Wolf
+('2074801','20748','9','0','100','1','0','5','45000','60000','11','5781','1','32','0','0','0','0','0','0','0','0','Thunderlord Dire Wolf - Cast Threatening Growl'),
 -- Scalewing Serpent
 ('2074901','20749','0','0','100','1','0','1500','14500','18000','11','37841','1','0','0','0','0','0','0','0','0','0','Scalewing Serpent - Cast Lightning Strike'),
 -- Dorgok 20753 (Missing combat spells!)
