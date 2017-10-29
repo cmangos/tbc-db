@@ -18204,7 +18204,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2076609','20766','27','0','100','1','12550','1','15000','30000','11','12550','0','0','0','0','0','0','0','0','0','0','Bladespire Mystic - Cast Lightning Shield on Missing Buff'),
 ('2076610','20766','2','0','100','1','30','0','15000','30000','11','37599','0','0','0','0','0','0','0','0','0','0','Bladespire Mystic - Cast Bloodlust At 30% HP'),
 ('2076611','20766','14','0','100','1','2500','40','15300','22900','11','11986','6','0','0','0','0','0','0','0','0','0','Bladespire Mystic - Cast Healing Wave on Friendlies'),
--- Gnosh Brognat (Missing combat spells!)
+-- Gnosh Brognat
 ('2076801','20768','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2076802','20768','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2076803','20768','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Gnosh Brognat - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -18213,6 +18213,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2076806','20768','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2076807','20768','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2076808','20768','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Gnosh Brognat - Say on Death if Killer Player has Completed Quest 11000'),
+('2076809','20768','0','0','100','1','6000','6000','12000','16000','11','37597','1','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Cast Meat Slap'),
+('2076810','20768','0','0','100','1','2500','5500','10000','11000','11','37596','1','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Cast Tenderize'),
 -- Glasshide Petrifier
 ('2092401','20924','2','0','100','0','70','41','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Glasshide Petrifier - Cast Soften at 70% HP'),
 ('2092402','20924','2','0','100','0','40','11','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Glasshide Petrifier - Cast Soften at 40% HP'),
