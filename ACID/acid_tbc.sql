@@ -18363,6 +18363,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2138706','21387','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Wyrmcult Blackwhelp - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2138707','21387','8','0','100','0','38177','-1','0','0','11','38178','6','3','21','0','0','0','41','0','0','0','Wyrmcult Blackwhelp - Cast Create Wyrmcult Blackwhelp Item and Prevent Combat Movement and Despawn on Blackwhelp Net Spellhit'),
 ('2138708','21387','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Wyrmcult Blackwhelp - Set Phase to 0 on Evade'),
+-- Maxnar the Ashmaw
+('2138901','21389','9','0','100','1','0','8','12000','16000','11','37638','0','0','0','0','0','0','0','0','0','0','Maxnar the Ashmaw - Cast Flame Breath'),
+('2138902','21389','0','0','100','1','3000','5000','5000','9000','11','32736','1','0','0','0','0','0','0','0','0','0','Maxnar the Ashmaw - Cast Mortal Strike'),
+('2138903','21389','0','0','100','1','7000','9000','5000','7000','11','15284','1','0','0','0','0','0','0','0','0','0','Maxnar the Ashmaw - Cast Cleave'),
 -- Ogre Building Bunny Small
 ('2145601','21456','11','0','100','1','0','0','0','0','11','32582','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Small - Cast Ogre Building Bunny Curse Visual on Spawn'),
 -- Black Wyrmkin
