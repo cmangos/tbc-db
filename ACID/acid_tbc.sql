@@ -20832,6 +20832,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2282106','22821','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Despawn Guardians on Evade'),
 ('2282107','22821','6','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Despawn Guardians on Death'),
 -- Ethereum Nullifier 22822
+('2282201','22822','2','0','100','1','30','0','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Ethereum Nullifier - Cast Intangible Presence'),
+-- Ethereum Avenger 22821
 -- Protectorate Advisor Rahim 22899
 -- Tortured Protectorate Vanguard 22900
 -- Ethereum Jailor 23008
