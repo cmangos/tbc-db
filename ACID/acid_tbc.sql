@@ -18367,6 +18367,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2138901','21389','9','0','100','1','0','8','12000','16000','11','37638','0','0','0','0','0','0','0','0','0','0','Maxnar the Ashmaw - Cast Flame Breath'),
 ('2138902','21389','0','0','100','1','3000','5000','5000','9000','11','32736','1','0','0','0','0','0','0','0','0','0','Maxnar the Ashmaw - Cast Mortal Strike'),
 ('2138903','21389','0','0','100','1','7000','9000','5000','7000','11','15284','1','0','0','0','0','0','0','0','0','0','Maxnar the Ashmaw - Cast Cleave'),
+-- Gore-Scythe Ravager
+('2142301','21423','0','0','100','1','0','5000','15000','20000','11','13443','1','0','0','0','0','0','0','0','0','0','Gore-Scythe Ravager - Cast Rend'),
 -- Ogre Building Bunny Small
 ('2145601','21456','11','0','100','1','0','0','0','0','11','32582','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Small - Cast Ogre Building Bunny Curse Visual on Spawn'),
 -- Black Wyrmkin
