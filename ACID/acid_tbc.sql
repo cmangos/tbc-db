@@ -20613,6 +20613,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2117807','21178','2','0','100','0','50','0','0','0','11','37905','0','2','22','1','0','0','0','0','0','0','Varedis - Cast Metamorphosis and Set Phase 1 at 50% HP'),
 ('2117808','21178','8','0','100','1','37906','-1','0','0','28','0','37905','0','22','0','0','0','0','0','0','0','Varedis - Remove Metamorphosis and Set Phase 0 on Book of Fel Names Spellhit'),
 ('2117809','21178','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Varedis - Set Phase to 0 on Evade'),
+-- Demon Hunter Initiate
+('2118001','21180','0','0','100','1','3000','10000','15000','25000','11','35871','1','32','0','0','0','0','0','0','0','0','Demon Hunter Initiate - Cast Spellbreaker'),
 -- Cyrukh the Firelord
 ('2118101','21181','11','0','100','0','0','0','0','0','11','36329','0','0','1','-174','-175','0','0','0','0','0','Cyrukh the Firelord - Cast Cyrukh Fire Kit and Yell on Spawn'),
 ('2118102','21181','4','0','100','0','0','0','0','0','1','-176','0','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Yell on Aggro'),
