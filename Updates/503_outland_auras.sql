@@ -42,3 +42,6 @@ UPDATE `creature_template_addon` SET `auras` = '35230' WHERE `entry` = 18912;
 -- Corrupted Water Elemental - Shadowform
 UPDATE `creature_template_addon` SET `auras` = '35194' WHERE `entry` = 21428;
 
+-- Wyrmcult Blessed - Resistances
+UPDATE `creature_template_addon` SET `auras` = '37637' WHERE `entry` = 21492;
+
