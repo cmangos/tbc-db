@@ -20596,6 +20596,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2116802','21168','0','0','100','1','6000','6000','10000','18000','11','39262','4','0','0','0','0','0','0','0','0','0','Theras - Cast Mana Burn'),
 ('2116803','21168','0','0','100','1','1000','5000','11000','15000','11','35871','1','0','0','0','0','0','0','0','0','0','Theras - Cast Spellbreaker'),
 ('2116804','21168','2','0','100','0','50','0','0','0','11','36298','0','2','0','0','0','0','0','0','0','0','Theras - Cast Metamorphosis at 50% HP'),
+-- Alandien
+('2117101','21171','4','0','100','0','0','0','0','0','54','-313','0','0','0','0','0','0','0','0','0','0','Alandien - Say on Aggro'),
+('2117102','21171','32','2','100','1','0','5','20000','30000','11','39138','0','0','0','0','0','0','0','0','0','0','Alandien - Cast Immolation (Phase 0)'),
+('2117103','21171','32','0','100','1','0','10','15000','30000','11','39082','0','0','0','0','0','0','0','0','0','0','Alandien - Cast Shadowfury'),
+('2117104','21171','0','0','100','1','3500','4000','10000','18000','11','39262','4','0','0','0','0','0','0','0','0','0','Alandien - Cast Mana Burn'),
+('2117105','21171','2','0','100','0','50','0','0','0','11','36298','0','2','22','1','0','0','0','0','0','0','Alandien - Cast Metamorphosis and Set Phase 1 at 50% HP'),
+('2117106','21171','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Alandien - Set Phase to 0 on Evade'),
 -- Cyrukh the Firelord
 ('2118101','21181','11','0','100','0','0','0','0','0','11','36329','0','0','1','-174','-175','0','0','0','0','0','Cyrukh the Firelord - Cast Cyrukh Fire Kit and Yell on Spawn'),
 ('2118102','21181','4','0','100','0','0','0','0','0','1','-176','0','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Yell on Aggro'),
@@ -32603,7 +32610,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-310','I wanna be just like the pitfighter!','0','0','1','Maghar Pitfighter Spectator Text','1'),
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','11582','0'),
 ('-312','How does he do it?','0','0','1','Maghar Pitfighter Spectator Text','1'),
--- Please Re-use 313 - 314
+('-313','You dare fight me? I was trained by Illidan himself!','0','0','0','21171','0'),
+-- Please Re-use 314
 ('-315','Any time any of you peons want to take a break, the graveyard is right over there.','0','0','0','19362','0'),
 ('-316','If I see any lazy peons here, I\'ll load them into a catapult and launch them off to the Black Temple!','0','1','0','19362','0'),
 ('-317','The pitfighter will be victorious! Just look at him!','0','0','1','Maghar Pitfighter Spectator Text','1'),
