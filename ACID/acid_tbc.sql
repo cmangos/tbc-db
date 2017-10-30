@@ -20406,7 +20406,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nadja 22279
 -- Soren 22280
 -- Inactive Fel Reaver 22293
--- Morcrush Shardling 22344
+-- Morcrush Shardling
+('2234401','22344','0','0','100','1','9000','14000','16000','21000','11','8078','0','0','0','0','0','0','0','0','0','0','Morcrush Shardling - Cast Thunderclap'),
+('2234402','22344','2','0','100','0','50','0','0','0','11','34970','0','0','0','0','0','0','0','0','0','0','Morcrush Shardling - Cast Enrage at 50% HP'),
 -- Furious Nether-wraith 22408
 -- Zarevhi 22427
 -- Sab'aoth 22479
