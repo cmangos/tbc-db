@@ -20718,6 +20718,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2142801','21428','0','0','100','1','0','5000','5000','15000','11','9672','1','0','0','0','0','0','0','0','0','0','Corrupted Water Elemental - Cast Frostbolt'),
 -- Ashtongue Worker
 ('2145501','21455','0','0','100','1','2000','8000','15000','30000','11','6016','1','32','0','0','0','0','0','0','0','0','Ashtongue Worker - Cast Pierce Armor'),
+-- Greater Felfire Diemetradon
+('2146201','21462','0','0','100','1','0','5000','8000','12000','11','37945','1','0','0','0','0','0','0','0','0','0','Greater Felfire Diemetradon  - Cast Fel Fireball'),
+('2146202','21462','2','0','100','1','30','0','15000','30000','11','37941','0','0','0','0','0','0','0','0','0','0','Greater Felfire Diemetradon - Cast Flaming Wound at 30% HP'),
 -- Shadow Council Warlock
 ('2150301','21503','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadow Council Warlock - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2150302','21503','9','5','100','1','7','40','3000','5000','11','9613','1','0','0','0','0','0','0','0','0','0','Shadow Council Warlock- Cast Icebolt (Phase 1)'),
