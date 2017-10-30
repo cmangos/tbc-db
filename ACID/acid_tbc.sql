@@ -18330,6 +18330,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2129616','21296','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bladespire Champion - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2129617','21296','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bladespire Champion - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2129618','21296','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Champion - Say on Death if Killer Player has Completed Quest 11000'),
+-- Fel Corrupter
+('2130001','21300','9','0','100','1','0','40','3800','5200','11','9613','1','0','0','0','0','0','0','0','0','0','Fel Corrupter - Cast Shadow Bolt'),
+('2130002','21300','0','0','100','1','2700','4200','24000','32000','11','32063','4','0','0','0','0','0','0','0','0','0','Fel Corrupter - Cast Corruption'),
+('2130003','21300','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Fel Corrupter - Flee at 15% HP'),
 -- Gor Grimgut
 ('2131901','21319','0','0','100','1','11000','14000','16000','19000','11','35491','0','0','0','0','0','0','0','0','0','0','Gor Grimgut - Cast Furious Rage'),
 -- Raven's Wood Leafbeard
