@@ -20716,6 +20716,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2140901','21409','4','0','100','0','0','0','0','0','1','-640','0','0','0','0','0','0','0','0','0','0','Envoy Icarius - Say on Aggro'),
 -- Corrupted Water Elemental
 ('2142801','21428','0','0','100','1','0','5000','5000','15000','11','9672','1','0','0','0','0','0','0','0','0','0','Corrupted Water Elemental - Cast Frostbolt'),
+-- Ashtongue Worker
+('2145501','21455','0','0','100','1','2000','8000','15000','30000','11','6016','1','32','0','0','0','0','0','0','0','0','Ashtongue Worker - Cast Pierce Armor'),
 -- Shadow Council Warlock
 ('2150301','21503','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadow Council Warlock - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2150302','21503','9','5','100','1','7','40','3000','5000','11','9613','1','0','0','0','0','0','0','0','0','0','Shadow Council Warlock- Cast Icebolt (Phase 1)'),
