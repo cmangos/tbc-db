@@ -21849,6 +21849,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2318808','23188','9','0','100','1','0','100','10000','20000','11','38861','1','0','40','2','0','0','0','0','0','0','Dragonmaw Transporter - Cast Aimed Shot and Set Ranged Weapon Model'),
 ('2318809','23188','0','0','100','1','5000','10000','6000','10000','11','38859','1','32','40','2','0','0','0','0','0','0','Dragonmaw Transporter - Cast Serpent Sting and Set Ranged Weapon Model'),
 ('2318810','23188','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Set Melee Weapon Model on Evade'),
+-- Overmine Flayer 23264
+('2326401','23264','0','0','100','1','5000','20000','15000','20000','11','13443','1','0','0','0','0','0','0','0','0','0','Overmine Flayer - Cast Rend'),
+('2326402','23264','2','0','100','1','75','0','10000','15000','11','33810','0','0','0','0','0','0','0','0','0','0','Overmine Flayer - Cast Rock Shell at 75% HP'),
 -- Nethermine Burster (23285) - npc_burster_worm
 -- Black Blood of Draenor
 ('2328601','23286','0','0','100','1','8000','14000','18000','25000','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
