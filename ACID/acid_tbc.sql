@@ -18513,7 +18513,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vekh
 ('2230501','22305','9','0','100','1','0','8','8000','12000','11','37582','0','0','0','0','0','0','0','0','0','0','Vekh - Cast Whirlwind'),
 ('2230502','22305','2','0','100','1','50','0','15300','22900','11','11642','0','0','0','0','0','0','0','0','0','0','Vekh - Cast Heal When Below 50% HP'),
--- Bloodmaul Soothsayer (Missing combat spells!)
+-- Bloodmaul Soothsayer
 ('2238401','22384','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2238402','22384','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2238403','22384','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Bloodmaul Soothsayer - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -18522,6 +18522,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2238406','22384','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2238407','22384','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2238408','22384','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Say on Death if Killer Player has Completed Quest 11000'),
+('2238409','22384','1','0','100','0','3000','5000','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Cast Summon Imp OOC'),
+('2238410','22384','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bloodmaul Soothsayer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2238411','22384','9','13','100','1','0','40','3400','4800','11','20825','1','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Cast Shadow Bolt (Phase 1)'),
+('2238412','22384','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2238413','22384','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Disable Dynamic Movement at 0-8 Yards'),
+('2238414','22384','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bloodmaul Soothsayer - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2238415','22384','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Set Phase 1 at 15% MP (Phase 2)'),
+('2238416','22384','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Bloodmaul Soothsayer - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('2238417','22384','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodmaul Soothsayer - Flee at 15% HP (Phase 3)'),
+('2238418','22384','27','0','100','1','13787','1','15000','30000','11','13787','0','32','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Cast Demon Armor on Missing Buff'),
+('2238419','22384','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Set Phase to 0 on Evade'),
 -- Death's Door Fel Cannon
 ('2244301','22443','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Death\'s Door Fel Cannon - OOC - Prevent Combat Movement'),
 ('2244302','22443','0','0','100','1','1000','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Death\'s Door Fel Cannon - Combat - Cast Fel Cannon Blast'),
