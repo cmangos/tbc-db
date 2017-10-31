@@ -18561,6 +18561,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2291004','22910','6','0','100','0','0','0','0','0','11','39909','0','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - Summon Soul on death'),
 -- Sundered Spirit
 ('2291201','22912','0','0','100','1','10000','15000','10000','15000','11','20816','1','0','0','0','0','0','0','0','0','0','Sundered Spirit - In Combat - Cast Shadow Bolt'),
+-- Rivendark
+('2306101','23061','4','0','100','0','0','0','0','0','54','0','1','10039','0','0','0','0','0','0','0','0','Rivendark - Yell on Aggro'),
+('2306102','23061','9','0','100','1','0','5','8000','12000','11','40505','1','0','0','0','0','0','0','0','0','0','Rivendark - Cast Cleave'),
+('2306103','23061','0','0','100','1','10000','18000','13000','25000','11','40032','1','0','0','0','0','0','0','0','0','0','Rivendark - Cast Fiery Breath'),
+('2306104','23061','0','0','100','1','9000','14000','12000','15000','11','15847','0','0','0','0','0','0','0','0','0','0','Rivendark - Cast Tail Sweep'),
+('2306105','23061','32','0','100','1','0','35','15000','25000','11','36922','0','0','0','0','0','0','0','0','0','0','Rivendark - Cast Bellowing Roar'),
+('2306106','23061','0','0','100','1','5000','15000','10000','12000','11','41988','4','32','0','0','0','0','0','0','0','0','Rivendark - Cast Corruption'),
 -- Bash'ir Surveyor
 ('2315301','23153','0','0','100','1','18000','28000','21000','29000','11','40835','4','0','0','0','0','0','0','0','0','0','Bash\'ir Surveyor - Cast Stasis Field'),
 ('2315302','23153','0','0','100','1','12000','18000','18000','31000','11','40881','1','0','0','0','0','0','0','0','0','0','Bash\'ir Surveyor - Cast Arcane Blast'),
@@ -33189,7 +33196,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-685','What is this?! Didn\'t mommy and daddy teach you anything?','0','1','0','17959','0'),
 ('-686','%s begins a massive heal!','0','2','0','17730','0'),
 ('-687','Who dares slay one of my Kargath\'s commanders?  You will pay for this... in flesh!','0','1','0','22374','0'),
--- PLEASE RE-USE 688 - 693
+('-688','What is this?! $N and $G his : her; friends come to play?','0','1','0','23061','0'),
+('-689','Get away from my clutch!!!','0','1','0','23061','0'),
+('-690','You have dared to defile my perch and must now be cleansed in fire!','0','1','0','23061','0'),
+('-691','The Skyguard shall pay for your temerity, $N!','0','1','0','23061','0'),
+('-692','Little $r, you will now come to appreciate my wrath!','0','1','0','23061','0'),
+('-693','I believe that I shall feast upon both $r and ogre flesh tonight.','0','1','0','23061','0'),
 ('-694','%s chips and splinters!','0','2','0','7023','0'),
 ('-695','A pleasure... to serve the master.','0','0','0','17899','0'),
 ('-696','You will... ultimately fail.','0','0','0','17899','0'),
@@ -34044,7 +34056,14 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10037,0,-511,0,'20453 - Random IC Texts'),
 (10038,0,-90,0,'21178 - Random Aggro Texts'),
 (10038,0,-91,0,'21178 - Random Aggro Texts'),
-(10038,0,-92,0,'21178 - Random Aggro Texts');
+(10038,0,-92,0,'21178 - Random Aggro Texts'),
+(10039,0,-688,0,'23061 - Random Aggro Texts'),
+(10039,0,-689,0,'23061 - Random Aggro Texts'),
+(10039,0,-690,0,'23061 - Random Aggro Texts'),
+(10039,0,-691,0,'23061 - Random Aggro Texts'),
+(10039,0,-692,0,'23061 - Random Aggro Texts'),
+(10039,0,-693,0,'23061 - Random Aggro Texts');
+
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
