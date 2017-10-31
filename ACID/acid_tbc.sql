@@ -20880,6 +20880,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2197903','21979','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Val\'zareq the Conqueror - Enable Dynamic Movement at 9-80 Yards'),
 ('2197904','21979','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Val\'zareq the Conqueror - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2197905','21979','7','0','100','0','0','0','0','0','0','0','0','0','40','1','0','0','0','0','0','0','Val\'zareq the Conqueror - Set Melee Weapon Model on Evade'),
+-- Corok the Mighty
+('2201101','22011','9','0','100','1','0','5','10000','12000','11','12612','0','0','0','0','0','0','0','0','0','0','Corok the Mighty - Cast Stomp'),
+('2201102','22011','9','0','100','1','0','10','8000','15000','11','15550','0','0','0','0','0','0','0','0','0','0','Corok the Mighty - Cast Trample'),
 -- Eclipsion Soldier
 ('2201601','22016','2','0','100','0','20','0','0','0','11','36476','0','0','0','0','0','0','0','0','0','0','Eclipsion Soldier - Cast Blood Heal at 20% HP'),
 -- Eclipsion Spellbinder
