@@ -20883,6 +20883,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Corok the Mighty
 ('2201101','22011','9','0','100','1','0','5','10000','12000','11','12612','0','0','0','0','0','0','0','0','0','0','Corok the Mighty - Cast Stomp'),
 ('2201102','22011','9','0','100','1','0','10','8000','15000','11','15550','0','0','0','0','0','0','0','0','0','0','Corok the Mighty - Cast Trample'),
+-- Chancellor Bloodleaf
+('2201201','22012','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Chancellor Bloodleaf - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2201202','22012','9','5','100','1','0','30','5000','7000','11','15790','1','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Cast Arcane Missiles (Phase 1)'),
+('2201203','22012','9','5','100','1','0','10','5000','10000','11','34517','0','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Cast Arcane Explosion (Phase 1)'),
+('2201204','22012','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2201205','22012','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Disable Dynamic Movement at 0-8 Yards'),
+('2201206','22012','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Chancellor Bloodleaf - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2201207','22012','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Set Phase 1 at 15% MP (Phase 2)'),
+('2201208','22012','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Chancellor Bloodleaf - Set Phase to 0 on Evade'),
 -- Eclipsion Soldier
 ('2201601','22016','2','0','100','0','20','0','0','0','11','36476','0','0','0','0','0','0','0','0','0','0','Eclipsion Soldier - Cast Blood Heal at 20% HP'),
 -- Eclipsion Spellbinder
