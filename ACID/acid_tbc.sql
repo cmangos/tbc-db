@@ -20866,7 +20866,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vilewing Chimaera
 ('2187901','21879','9','0','100','1','0','30','16000','21000','11','16552','4','0','0','0','0','0','0','0','0','0','Vilewing Chimaera - Cast Venom Spit'),
 -- Felspine the Greater
-('2189701','21897','2','0','100','0','30','0','0','0','11','37941','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Flaming Wound at 30% HP'),
+('2189701','21897','2','0','100','1','30','0','15000','30000','11','37941','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Flaming Wound at 30% HP'),
 ('2189702','21897','9','0','100','1','0','5','10000','18000','11','38356','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Fel Flames'),
 -- Gan'arg Technician
 ('2196001','21960','1','0','40','1','2000','20000','35000','60000','11','38053','0','0','0','0','0','0','0','0','0','0','Gan\'arg Technician - Cast Tune Deathforge Infernal OOC'),
