@@ -18425,6 +18425,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2183703','21837','9','0','100','1','0','5','6000','10000','11','36406','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Double Breath'),
 -- Mature Silkwing
 ('2183901','21839','9','0','100','1','0','20','9000','15000','11','32914','0','0','0','0','0','0','0','0','0','0','Mature Silkwing - Casts Wing Buffet'),
+-- Rema
+('2195601','21956','0','0','100','1','1000','5000','15000','25000','11','13443','1','0','0','0','0','0','0','0','0','0','Rema - Cast Rend'),
+('2195602','21956','0','0','100','1','4000','8000','30000','45000','11','5781','1','0','0','0','0','0','0','0','0','0','Rema - Cast Threatening Growl'),
+('2195603','21956','2','0','100','0','30','0','0','0','11','8599','0','0','54','-106','0','0','0','0','0','0','Rema - Cast Enrage at 30% HP'),
 -- Bladespire Sober Defender (Missing combat spells!)
 ('2197501','21975','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bladespire Sober Defender - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2197502','21975','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bladespire Sober Defender - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
