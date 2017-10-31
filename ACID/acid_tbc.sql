@@ -21041,6 +21041,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2296701','22967','0','0','100','1','1000','20000','20000','240000','11','30931','0','32','0','0','0','0','0','0','0','0','Scryer Cavalier - Cast Battle Shout'),
 ('2296702','22967','0','0','100','1','5000','15000','15000','25000','11','35871','1','32','0','0','0','0','0','0','0','0','Scryer Cavalier - Cast Spellbreaker'),
 ('2296703','22967','6','0','100','0','0','0','0','0','43','0','0','0','11','39783','0','0','0','0','0','0','Scryer Cavalier - Dismount and Cast Summon Eclipsion Hawkstrider on Death'),
+-- Dragonmaw Transporter
+('2318801','23188','4','0','25','0','0','0','0','0','54','0','1','10041','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Text on Aggro'),
+('2318802','23188','4','0','100','0','0','0','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Enable Dynamic Movement on Aggro'),
+('2318803','23188','9','0','100','1','5','30','2300','3900','11','38858','1','0','40','2','0','0','0','0','0','0','Dragonmaw Transporter - Cast Shoot and Set Ranged Weapon Model'),
+('2318804','23188','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Enable Dynamic Movement at 9-80 Yards'),
+('2318805','23188','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Dragonmaw Transporter - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('2318808','23188','9','0','100','1','0','100','10000','20000','11','38861','1','0','40','2','0','0','0','0','0','0','Dragonmaw Transporter - Cast Aimed Shot and Set Ranged Weapon Model'),
+('2318809','23188','0','0','100','1','5000','10000','6000','10000','11','38859','1','32','40','2','0','0','0','0','0','0','Dragonmaw Transporter - Cast Serpent Sting and Set Ranged Weapon Model'),
+('2318810','23188','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Set Melee Weapon Model on Evade'),
 -- Nethermine Burster (23285) - npc_burster_worm
 -- Black Blood of Draenor
 ('2328601','23286','0','0','100','1','8000','14000','18000','25000','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
@@ -32793,7 +32802,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-280','You know too much!','0','0','0','5355/16769/1410','0'),
 ('-281','They mustn\'t escape!','0','0','0','5355/16769/1410','0'),
 ('-282','Kill them before they get away!','0','0','0','5355/16769/1410','0'),
--- Reuse 283 - 285
+('-283','For the Dragonmaw!','0','0','0','23188','0'),
+('-284','Long live the Dragonmaw! Die you worthless $r!','0','0','0','23188','0'),
+('-285','Your bones will break under my boot, $r!','0','0','0','23188','0'),
 ('-286','%s nods.','0','2','0','16589','0'),
 ('-287','Lost some of my best soldiers that day...','0','0','0','16589','0'),
 ('-288','But that\'s not the worst of it. Before I could pull us back, a group of \'em spotted us and attacked.','0','0','0','16589','0'),
@@ -34044,7 +34055,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10037,0,-511,0,'20453 - Random IC Texts'),
 (10038,0,-90,0,'21178 - Random Aggro Texts'),
 (10038,0,-91,0,'21178 - Random Aggro Texts'),
-(10038,0,-92,0,'21178 - Random Aggro Texts');
+(10038,0,-92,0,'21178 - Random Aggro Texts'),
+(10041,0,-283,0,'23188 - Random Aggro Texts'),
+(10041,0,-284,0,'23188 - Random Aggro Texts'),
+(10041,0,-285,0,'23188 - Random Aggro Texts');
+
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
