@@ -21042,7 +21042,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2296702','22967','0','0','100','1','5000','15000','15000','25000','11','35871','1','32','0','0','0','0','0','0','0','0','Scryer Cavalier - Cast Spellbreaker'),
 ('2296703','22967','6','0','100','0','0','0','0','0','43','0','0','0','11','39783','0','0','0','0','0','0','Scryer Cavalier - Dismount and Cast Summon Eclipsion Hawkstrider on Death'),
 -- Dragonmaw Transporter
-('2318801','23188','4','0','100','0','0','0','0','0','54','0','1','10041','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Text on Aggro'),
+('2318801','23188','4','0','25','0','0','0','0','0','54','0','1','10041','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Text on Aggro'),
 ('2318802','23188','4','0','100','0','0','0','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Enable Dynamic Movement on Aggro'),
 ('2318803','23188','9','0','100','1','5','30','2300','3900','11','38858','1','0','40','2','0','0','0','0','0','0','Dragonmaw Transporter - Cast Shoot and Set Ranged Weapon Model'),
 ('2318804','23188','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Enable Dynamic Movement at 9-80 Yards'),
