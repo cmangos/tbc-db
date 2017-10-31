@@ -20835,7 +20835,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2282201','22822','2','0','100','1','30','0','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Ethereum Nullifier - Cast Intangible Presence'),
 -- Protectorate Advisor Rahim 22899
 -- Tortured Protectorate Vanguard 22900
--- Ethereum Jailor 23008
+-- Ethereum Jailor
+('2300801','23008','11','0','100','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Ethereum Jailor - Cast Simple Teleport on Spawn'),
+('2300802','23008','0','2','100','1','4000','8000','15000','25000','11','36513','0','0','0','0','0','0','0','0','0','0','Ethereum Jailor - Cast Intangible Presence (Phase 0)'),
+('2300803','23008','2','0','100','0','25','0','0','0','22','1','0','0','21','0','0','0','0','0','0','0','Ethereum Jailor - Set Phase 1 and Stop Combat Movement At 25% HP'),
+('2300804','23008','0','1','100','1','0','0','8100','8100','11','35924','0','1','54','-544','0','0','0','0','0','0','Ethereum Jailor - Cast Energy Flux and Text Emote (Phase 1)'),
+('2300805','23008','7','0','100','0','0','0','0','0','22','0','0','0','21','1','0','0','0','0','0','0','Ethereum Jailor - Set Phase to 0 and Allow Combat Movement on Evade'),
 -- Krixel Pinchwhistle 23396
 -- Liza Cutlerflix 24974
 -- Warpy 24977
