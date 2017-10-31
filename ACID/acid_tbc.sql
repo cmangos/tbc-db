@@ -18528,6 +18528,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2291004','22910','6','0','100','0','0','0','0','0','11','39909','0','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - Summon Soul on death'),
 -- Sundered Spirit
 ('2291201','22912','0','0','100','1','10000','15000','10000','15000','11','20816','1','0','0','0','0','0','0','0','0','0','Sundered Spirit - In Combat - Cast Shadow Bolt'),
+-- Bombing Run Target Bunny
+('2311801','23118','11','0','100','0','0','0','0','0','11','40196','0','0','0','0','0','0','0','0','0','0','Bombing Run Target Bunny - Cast Bombing Run: Hunter\'s Mark on Spawn'),
 -- Bash'ir Surveyor
 ('2315301','23153','0','0','100','1','18000','28000','21000','29000','11','40835','4','0','0','0','0','0','0','0','0','0','Bash\'ir Surveyor - Cast Stasis Field'),
 ('2315302','23153','0','0','100','1','12000','18000','18000','31000','11','40881','1','0','0','0','0','0','0','0','0','0','Bash\'ir Surveyor - Cast Arcane Blast'),
