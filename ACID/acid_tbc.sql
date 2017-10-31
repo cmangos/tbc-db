@@ -20912,6 +20912,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2285907','22859','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Shadowhoof Summoner - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('2285908','22859','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2285909','22859','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Set Phase to 0 on Evade'),
+-- Lightsworn Elekk Rider
+('2296601','22966','6','0','100','0','0','0','0','0','43','0','0','0','11','39782','0','0','0','0','0','0','Lightsworn Elekk Rider - Dismount and Cast Summon Lightsworn Elekk on Death'),
 -- Nethermine Burster (23285) - npc_burster_worm
 -- Black Blood of Draenor
 ('2328601','23286','0','0','100','1','8000','14000','18000','25000','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
