@@ -18408,6 +18408,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2172908','21729','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Electromental - Set Phase to 0 on Evade'),
 -- Wyrm from Beyond
 ('2179601','21796','0','0','100','1','4000','6000','5500','7000','11','13321','1','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Cast Mana Burn'),
+-- Wyrmcult Poacher
+('2180901','21809','11','0','100','0','0','0','0','0','11','37547','0','0','0','0','0','0','0','0','0','0','Wyrmcult Poacher - Cast Wyrmcult BroodlingCall on Spawn'),
+('2180902','21809','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Wyrmcult Poacher - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('2180903','21809','9','13','100','1','5','30','2300','3900','11','15547','1','0','40','2','0','0','0','0','0','0','Wyrmcult Poacher - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('2180904','21809','9','13','100','1','0','20','12000','15000','11','6533','1','0','0','0','0','0','0','0','0','0','Wyrmcult Poacher - Cast Net (Phase 1)'),
+('2180905','21809','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Wyrmcult Poacher - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2180906','21809','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Wyrmcult Poacher - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('2180907','21809','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Wyrmcult Poacher - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2180908','21809','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Wyrmcult Poacher - Flee at 15% HP (Phase 2)'),
+('2180909','21809','7','0','100','0','0','0','0','0','22','0','0','0','40','2','0','0','0','0','0','0','Wyrmcult Poacher - Set Phase 1 and Set Ranged Weapon Model on Evade'),
 -- Summoned Wrath Hound
 ('2183701','21837','11','0','100','0','0','0','0','0','11','22578','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Glowy (Black) on Spawn'),
 ('2183702','21837','4','0','100','0','0','0','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Charge on Aggro'),
