@@ -31303,6 +31303,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2359702','23597','0','0','100','3','5000','5000','12000','12000','11','43246','1','0','0','0','0','0','0','0','0','0','Amani\'shi Guardian - Cast Rend'),
 -- Amani Dragonhawk Hatchling
 ('2359801','23598','0','0','100','3','7000','9000','7000','9000','11','43299','4','0','0','0','0','0','0','0','0','0','Amani Dragonhawk Hatchling - Cast Flame Buffet'),
+-- Amani'shi Trainer
+('2377401','23774','4','0','15','2','0','0','0','0','1','-228','-229','-283','0','0','0','0','0','0','0','0','Amani\'shi Trainer - Text on Aggro'),
+('2377402','23774','0','0','100','3','4000','8000','7000','14000','11','20989','4','0','0','0','0','0','0','0','0','0','Amani\'shi Trainer - Cast Sleep'),
+('2377403','23774','16','0','100','3','43292','15','5000','15000','11','43292','6','0','0','0','0','0','0','0','0','0','Amani\'shi Trainer - Cast Incite Rage on Friendlies on Missing Buff'),
 -- Dragonhawk God Invisman
 ('2381301','23813','10','0','100','3','1','20','2000','2000','33','23813','6','0','0','0','0','0','0','0','0','0','Dragonhawk God Invisman - Killed Moster at LOS'),
 -- Eagle God Invisman
@@ -32793,7 +32797,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-280','You know too much!','0','0','0','5355/16769/1410','0'),
 ('-281','They mustn\'t escape!','0','0','0','5355/16769/1410','0'),
 ('-282','Kill them before they get away!','0','0','0','5355/16769/1410','0'),
--- Reuse 283 - 285
+('-283','My weapon be thirsty!','0','0','0','Troll Text','0'),
+-- Reuse 284 - 285
 ('-286','%s nods.','0','2','0','16589','0'),
 ('-287','Lost some of my best soldiers that day...','0','0','0','16589','0'),
 ('-288','But that\'s not the worst of it. Before I could pull us back, a group of \'em spotted us and attacked.','0','0','0','16589','0'),
