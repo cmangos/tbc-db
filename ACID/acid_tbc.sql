@@ -22898,11 +22898,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2306802','23068','0','0','100','1','3000','4000','30000','50000','11','32863','1','1','0','0','0','0','0','0','0','0','Talonpriest Zellek - Cast Seed of Corruption'),
 ('2306803','23068','9','0','100','1','0','5','8000','12000','11','15652','1','1','0','0','0','0','0','0','0','0','Talonpriest Zellek - Cast Head Smash'),
 ('2306804','23068','9','0','100','1','0','20','5000','7000','11','17173','1','0','0','0','0','0','0','0','0','0','Talonpriest Zellek - Cast Drain Life'),
--- Darkscreecher Akkarai
+-- Darkscreecher Akkarai 23161
 ('2316101','23161','11','2','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Set Phase 0 on Spawn'),
 ('2316102','23161','29','2','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Spawn - Red Lightning on Generic Timer'),
 ('2316103','23161','29','2','100','0','4500','4500','0','0','1','-9','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Say on Generic Timer'),
 ('2316104','23161','29','2','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Darkscreecher Akkarai - Set Phase 1 and Remove Immune flag and Attack Spawner on Generic Timer'),
+('2316105','23161','0','5','100','1','8000','12000','8000','12000','11','40429','1','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Frostbolt (Phase 1)'),
+('2316106','23161','0','0','100','0','14000','14000','0','0','11','40427','0','0','54','-12','1','0','0','0','0','0','Darkscreecher Akkarai - Cast Flock Call and Yell and Set Phase 2'),
+('2316107','23161','0','0','100','0','15500','15500','0','0','12','23206','0','20000','12','23206','0','20000','12','23206','0','20000','Darkscreecher Akkarai - Summon Akkarai Hatchling (Spell 40426)'),
+('2316108','23161','0','0','100','0','15500','15500','0','0','12','23206','0','20000','12','23206','0','20000','12','23206','0','20000','Darkscreecher Akkarai - Summon Akkarai Hatchling (Spell 40426)'),
+('2316109','23161','0','3','100','1','2000','6000','2000','6000','11','40430','1','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Frostbolt (Phase 2)'),
+('2316110','23161','0','5','100','1','10000','10000','15000','20000','11','40428','0','1','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Shadow Bolt Volley'),
+('2316111','23161','2','0','100','1','30','0','5000','10000','11','15730','1','32','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Curse of Mending at 30% HP'),
+('2316112','23161','0','0','100','1','15000','20000','15000','20000','11','13341','1','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Fire Blast'),
 -- Vakkiz the Windrager
 ('2316201','23162','11','6','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Set Phase 0 on Spawn'),
 ('2316202','23162','29','6','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Cast Spawn - Red Lightning on Generic Timer'),
@@ -22926,6 +22934,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2316502','23165','29','2','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Karrog - Cast Spawn - Red Lightning on Generic Timer'),
 ('2316503','23165','29','2','100','0','4500','4500','0','0','1','-10','0','0','0','0','0','0','0','0','0','0','Karrog - Say on Generic Timer'),
 ('2316504','23165','29','2','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Karrog - Set Phase 1 and Remove Immune flag and Attack Spawner on Generic Timer'),
+-- Akkarai Hatchling 23206
 -- Blackwind Warp Chaser
 ('2321901','23219','1','0','100','0','1000','1000','0','0','11','32942','0','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Cast Phasing Invisibility OOC'),
 ('2321902','23219','4','0','100','0','0','0','0','0','28','0','32942','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Remove Phasing Invisibility on Aggro'),
@@ -33921,7 +33930,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
 ('-9','Hear the voices below the earth!  They call for your blood!','0','0','0','Darkscreecher Akkarai on Spawn','0'),
 ('-10','You capture Karrog!  Karrog smash you!','0','0','0','Karrog on Spawn','0'),
--- PLEASE RE-USE -11 to -15
+('-12','Consume $N, my children!','0','0','0','Darkscreecher Akkarai on Flock Call 40427','0'),
+-- PLEASE RE-USE -13 to -15
 ('-17','Insolent fool! You thought to steal Zelemar\'s blood? You shall pay with your own!','0','1','0','17830','0'),
 ('-18','For Victory! For Agamaggan!','5812','1','0','4420','0'),
 ('-19','I\'m gonna cook ya, and then i\'m going to eat ya!','0','0','0','20905','1'),
