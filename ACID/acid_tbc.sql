@@ -18416,6 +18416,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2180905','21809','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Wyrmcult Poacher - Enable Dynamic Movement at 9-80 Yards'),
 ('2180906','21809','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Wyrmcult Poacher - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2180907','21809','7','0','100','0','0','0','0','0','0','0','0','0','40','2','0','0','0','0','0','0','Wyrmcult Poacher - Set Ranged Weapon Model on Evade'),
+-- Wyrmcult Hewer
+('2181001','21810','9','0','100','1','0','8','12000','16000','11','37704','0','0','0','0','0','0','0','0','0','0','Wyrmcult Hewer - Cast Whirlwind'),
+('2181002','21810','2','0','100','0','25','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Wyrmcult Hewer - Cast Enrage at 25% HP'),
 -- Summoned Wrath Hound
 ('2183701','21837','11','0','100','0','0','0','0','0','11','22578','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Glowy (Black) on Spawn'),
 ('2183702','21837','4','0','100','0','0','0','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Charge on Aggro'),
