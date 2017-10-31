@@ -20946,6 +20946,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shadowmoon Chosen
 ('2208401','22084','0','0','100','1','3500','4000','10000','12000','11','10966','1','0','0','0','0','0','0','0','0','0','Shadowmoon Chosen - Cast Uppercut'),
 ('2208402','22084','0','0','100','1','6000','8000','12000','15000','11','38618','0','0','0','0','0','0','0','0','0','0','Shadowmoon Chosen - Cast Whirlwind'),
+-- Illidari Watcher <The Crimson Sigil>
+('2209301','22093','9','0','100','1','0','5','6000','12000','11','32736','1','32','0','0','0','0','0','0','0','0','Illidari Watcher - Cast Mortal Strike'),
 -- Mordenai
 ('2211301','22113','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Mordenai - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('2211302','22113','9','5','100','1','5','30','2200','2700','11','38372','1','0','40','2','0','0','0','0','0','0','Mordenai - Set Ranged Weapon Model and Cast Shoot'),
