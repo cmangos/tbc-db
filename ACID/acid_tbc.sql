@@ -20816,6 +20816,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunfury Eradicator
 ('2174201','21742','0','0','100','1','7000','9000','30000','35000','11','38008','0','0','0','0','0','0','0','0','0','0','Sunfury Eradicator  - Cast Seal of Blood'),
 ('2174202','21742','14','0','100','1','2500','40','12000','15000','11','17137','6','1','0','0','0','0','0','0','0','0','Sunfury Eradicator - Cast Flash Heal on Friendlies'),
+-- Sunfury Blood Lord
+('2174301','21743','4','0','100','0','0','0','0','0','54','-746','0','0','39','20','0','0','0','0','0','0','Sunfury Blood Lord - Say and Call for Help on Aggro'),
+('2174302','21743','0','0','100','1','3000','9000','10000','12000','11','37577','1','0','0','0','0','0','0','0','0','0','Sunfury Blood Lord - Cast Debilitating Strike'),
+('2174303','21743','32','0','100','1','0','8','9500','18000','11','36104','0','0','0','0','0','0','0','0','0','0','Sunfury Blood Lord - Cast Torrent of Flames'),
 -- Overlord Or'barokh
 ('2176901','21769','1','0','100','1','120000','120000','300000','300000','1','-304','0','0','5','6','0','0','0','0','0','0','Overlord Or\'barokh - Gossip and Emote (1)'),
 ('2176902','21769','1','0','100','1','123000','123000','303000','303000','1','-305','0','0','5','6','0','0','0','0','0','0','Overlord Or\'barokh - Gossip and Emote (2)'),
@@ -33099,7 +33103,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-742','My strength.... is... returning!','0','0','0','16847','0'),
 ('-743','You\'ve restored my health! I\'m in your debt, $N.','0','0','0','16847','0'),
 ('-744','You\'e found a cure! We will crush our enemies!','0','0','0','16847','0'),
--- PLEASE RE-USE -745 to -745
+-- PLEASE RE-USE -745
+('-746','Guardians! To me!','0','0','0','21743','0'),
 ('-747','The %s flies up through the trees, free of Terokk\'s corruption.','0','2','0','22339','0'),
 ('-748','SMOTTS, I HAVE YOUR LITTLE BELT....COME GET IT!','0','1','0','Mok\'Rash - Random Yell','0'),
 ('-749','SMOTTS! HEY, SMOTTS! COME OUT AND PLAY!','0','1','0','Mok\'Rash - Random Yell','0'),
