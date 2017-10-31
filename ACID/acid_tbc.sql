@@ -31304,7 +31304,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Amani Dragonhawk Hatchling
 ('2359801','23598','0','0','100','3','7000','9000','7000','9000','11','43299','4','0','0','0','0','0','0','0','0','0','Amani Dragonhawk Hatchling - Cast Flame Buffet'),
 -- Amani'shi Trainer
-('2377401','23774','4','0','15','2','0','0','0','0','1','-228','-229','-283','0','0','0','0','0','0','0','0','Amani\'shi Trainer - Text on Aggro'),
+('2377401','23774','4','0','15','2','0','0','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Amani\'shi Trainer - Text on Aggro'),
 ('2377402','23774','0','0','100','3','4000','8000','7000','14000','11','20989','4','0','0','0','0','0','0','0','0','0','Amani\'shi Trainer - Cast Sleep'),
 ('2377403','23774','16','0','100','3','43292','15','5000','15000','11','43292','6','0','0','0','0','0','0','0','0','0','Amani\'shi Trainer - Cast Incite Rage on Friendlies on Missing Buff'),
 -- Dragonhawk God Invisman
@@ -32742,9 +32742,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-225','Sweet dreams...','11545','1','0','17808','0'),
 ('-226','Let fire rain from above!','10980','1','0','17808','0'),
 ('-227','Earth and sky shall burn!','11036','1','0','17808','0'),
-('-228','I gonna make you into mojo!','0','0','0','Common Frostmane Troll Text','0'),
-('-229','Killing you be easy.','0','0','0','Common Frostmane Troll Text','0'),
-('-230','You be dead soon!','0','0','0','Common Frostmane Troll Text','0'),
+('-228','I gonna make you into mojo!','0','0','0','Common Troll Text','0'),
+('-229','Killing you be easy.','0','0','0','Common Troll Text','0'),
+('-230','You be dead soon!','0','0','0','Common Troll Text','0'),
 ('-231','I\'ll cut you!','0','0','0','Common Frostmane Troll Text','0'),
 ('-232','The Brotherhood will not be hampered by insects.','0','0','0','6846','0'),
 ('-233','So much to do, so much to do! Where does the time go?','0','0','0','295','0'),
@@ -32797,7 +32797,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-280','You know too much!','0','0','0','5355/16769/1410','0'),
 ('-281','They mustn\'t escape!','0','0','0','5355/16769/1410','0'),
 ('-282','Kill them before they get away!','0','0','0','5355/16769/1410','0'),
-('-283','My weapon be thirsty!','0','0','0','Troll Text','0'),
+('-283','My weapon be thirsty!','0','0','0','Common Troll Text','0'),
 -- Reuse 284 - 285
 ('-286','%s nods.','0','2','0','16589','0'),
 ('-287','Lost some of my best soldiers that day...','0','0','0','16589','0'),
@@ -34049,7 +34049,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10037,0,-511,0,'20453 - Random IC Texts'),
 (10038,0,-90,0,'21178 - Random Aggro Texts'),
 (10038,0,-91,0,'21178 - Random Aggro Texts'),
-(10038,0,-92,0,'21178 - Random Aggro Texts');
+(10038,0,-92,0,'21178 - Random Aggro Texts'),
+(10042,0,-228,0,'Common Troll Text - Random Aggro Texts'),
+(10042,0,-229,0,'Common Troll Text - Random Aggro Texts'),
+(10042,0,-230,0,'Common Troll Text - Random Aggro Texts'),
+(10042,0,-283,0,'Common Troll Text - Random Aggro Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
