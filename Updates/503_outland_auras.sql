@@ -55,5 +55,7 @@ DELETE FROM creature_template_addon WHERE entry=21897;
 INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
 ('21897', '0', '0', '1', '16', '0', '0', '36006');
 
+-- Accursed Apparition - Stealth Detection & Greater Invisibility
+UPDATE `creature_template_addon` SET `auras` = '8279 16380' WHERE `entry` = 21941;
 
 
