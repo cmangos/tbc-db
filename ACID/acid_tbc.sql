@@ -20874,6 +20874,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2189702','21897','9','0','100','1','0','5','10000','18000','11','38356','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Fel Flames'),
 -- Gan'arg Technician
 ('2196001','21960','1','0','40','1','2000','20000','35000','60000','11','38053','0','0','0','0','0','0','0','0','0','0','Gan\'arg Technician - Cast Tune Deathforge Infernal OOC'),
+-- Val'zareq the Conqueror <The Crimson Sigil>
+('2197901','21979','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Val\'zareq the Conqueror - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('2197902','21979','9','5','100','1','0','40','2300','3900','11','38094','1','0','40','2','0','0','0','0','0','0','Val\'zareq the Conqueror - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('2197903','21979','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Val\'zareq the Conqueror - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2197904','21979','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Val\'zareq the Conqueror - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('2197905','21979','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Val\'zareq the Conqueror - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2197906','21979','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Val\'zareq the Conqueror - Flee at 15% HP (Phase 2)'),
+('2197907','21979','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Val\'zareq the Conqueror - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Eclipsion Soldier
 ('2201601','22016','2','0','100','0','20','0','0','0','11','36476','0','0','0','0','0','0','0','0','0','0','Eclipsion Soldier - Cast Blood Heal at 20% HP'),
 -- Eclipsion Spellbinder
