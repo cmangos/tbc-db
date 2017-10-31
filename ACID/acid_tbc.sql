@@ -19194,6 +19194,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2130601','21306','11','0','100','0','0','0','0','0','48','1','15','0','0','0','0','0','0','0','0','0','Cursed Scarab - Set Random Movement on Spawn'),
 ('2130602','21306','1','0','30','0','5000','9000','0','0','2','14','1','0','0','0','0','0',' 0','0','0','0','Cursed Scarab - 30% Should Change Faction OOC'),
 ('2130603','21306','1','0','100','0','18000','24000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Cursed Scarab - Despawn OOC'),
+-- Hellfire Wardling 22259
+-- Fel Warden
+('2227301','22273','11','0','100','0','0','0','0','0','11','7741','0','0','54','-314','0','0','0','0','0','0','Fel Warden - Cast Summoned Demon and Say on Spawn'),
+('2227302','22273','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Fel Warden - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2227303','22273','9','5','100','1','0','40','3200','4600','11','14034','1','0','0','0','0','0','0','0','0','0','Fel Warden - Cast Fireball (Phase 1)'),
+('2227304','22273','9','5','100','1','0','8','13000','15000','11','11831','0','1','0','0','0','0','0','0','0','0','Fel Warden - Cast Frost Nova (Phase 1)'),
+('2227305','22273','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Fel Warden - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2227306','22273','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Fel Warden - Disable Dynamic Movement at 0-8 Yards'),
+('2227307','22273','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Fel Warden - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2227308','22273','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Fel Warden - Set Phase 1 at 15% MP (Phase 2)'),
+('2227309','22273','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Fel Warden - Set Phase to 0 on Evade'),
 -- Bubbling Slimer Bunny
 ('2250501','22505','1','0','100','1','1000','5000','22000','27000','12','22506','0','25000','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Summon Foul Purge'),
 -- The Exorcism Lightning Cloud Bunny
@@ -32775,7 +32786,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','11582','0'),
 ('-312','How does he do it?','0','0','1','Maghar Pitfighter Spectator Text','1'),
 ('-313','You dare fight me? I was trained by Illidan himself!','0','0','0','21171','0'),
--- Please Re-use 314
+('-314','Die, interloper! Your puny device cannot pierce the dark magics of Hellfire Citadel!','0','0','0','22273','0'),
 ('-315','Any time any of you peons want to take a break, the graveyard is right over there.','0','0','0','19362','0'),
 ('-316','If I see any lazy peons here, I\'ll load them into a catapult and launch them off to the Black Temple!','0','1','0','19362','0'),
 ('-317','The pitfighter will be victorious! Just look at him!','0','0','1','Maghar Pitfighter Spectator Text','1'),
