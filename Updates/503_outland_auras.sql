@@ -58,4 +58,7 @@ INSERT INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_fla
 -- Accursed Apparition - Stealth Detection & Greater Invisibility
 UPDATE `creature_template_addon` SET `auras` = '8279 16380' WHERE `entry` = 21941;
 
+-- Fear Fiend - Fear Proc
+UPDATE `creature_template_addon` SET `auras` = '35408' WHERE `entry` = 22204;
+
 
