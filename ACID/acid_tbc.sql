@@ -18447,6 +18447,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2205201','22052','0','0','100','1','3500','7000','10000','11000','11','35321','1','32','0','0','0','0','0','0','0','0','Daggermaw Blackhide - Cast Gushing Wound'),
 -- Baron Sablemane
 ('2210301','22103','30','0','100','33','5','22130','0','0','5','1','5','6','5','11','15','25','5','273','274','0','Baron Sablemane - Random Emote on Receive AI Event 5 (A)'),
+-- Rip-Blade Ravager
+('2212301','22123','9','0','100','1','0','5','9000','13000','11','3242','1','0','0','0','0','0','0','0','0','0','Rip-Blade Ravager - Cast Ravage'),
 -- Bloodmaul Taskmaster 22160 (Missing combat spells!)
 -- Apexis Flayer
 ('2217501','22175','0','0','100','1','8300','13300','22000','26000','11','13443','4','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Rend'),
