@@ -3806,7 +3806,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1623104','16231','1','23','100','1','80000','120000','80000','120000','53','10038','0','0','22','4','0','0','0','0','0','0','Dame Auriferous - Start Relay Script 4 and Set Phase 4 OOC (Phase 3)'),
 ('1623105','16231','1','15','100','1','80000','120000','80000','120000','53','10039','0','0','22','0','0','0','0','0','0','0','Dame Auriferous - Start Relay Script 5 and Set Phase 0 OOC (Phase 4)'),
 -- Magister Sylastor (16237) - NSR
--- Night Elf Ambusher (16238) - NSR
+-- Night Elf Ambusher
+('1623801','16238','30','0','100','0','5','16238','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Night Elf Ambusher - Set Phase 1 on Receive AI Event 5 (A)'),
+('1623802','16238','4','0','100','0','0','0','0','0','2','124','0','0','0','0','0','0','0','0','0','0','Night Elf Ambusher - Set Faction on Aggro'),
+('1623803','16238','4','1','100','0','0','0','0','0','54','-513','1','0','22','0','0','0','0','0','0','0','Night Elf Ambusher - Say and Set Phase 0 on Aggro (Phase 1)'),
+('1623804','16238','6','0','100','0','0','0','0','0','53','10060','0','0','0','0','0','0','0','0','0','0','Night Elf Ambusher - Start Relay Script on Death'),
 -- Magister Kaendris (16239) - NSR
 -- Arcanist Janeda (16240) - NSR
 -- Tranquillien Scout (16242) - NSR
@@ -33044,7 +33048,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-510','Run away while you still can!','0','0','0','20453','0'),
 ('-511','For Salhadaar! For the Nexus-King!','0','0','0','20453','0'),
 ('-512','Stupid, squishy $r. That weapon mine now! Give!','0','0','0','20730','0'),
--- PLEASE RE-USE 513
+('-513','You won\'t get away this time!','0','0','0','16238','0'),
 ('-514','More will take my place.','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
 ('-515','A minor victory...','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
 ('-516','Your efforts... are in vain.','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
