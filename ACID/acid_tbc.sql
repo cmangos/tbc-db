@@ -5220,7 +5220,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==================
--- Redridge Mountians
+-- Redridge Mountains
 -- ==================
 -- Gath'Ilzogg (2.4.3 Official Data)
 ('33401','334','0','0','100','1','1300','6500','194300','194300','11','7164','0','0','0','0','0','0','0','0','0','0','Gath\'Ilzogg - Cast Defensive Stance on Aggro'),
