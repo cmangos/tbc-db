@@ -23684,8 +23684,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('621102','6211','9','0','100','1','0','5','1900','12100','0','0','11','8374','1','0','0','0','0','0','0','0','0','0','Caverndeep Reaver - Cast Arcing Smash'),
 ('621103','6211','8','0','100','0','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Caverndeep Reaver - Emote on Radiation Spellhit'),
 ('621104','6211','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Caverndeep Reaver - Flee at 15% HP'),
--- Dark Iron Agent (3.3.5a Official Data)
-('621201','6212','0','0','100','1','15700','24400','21300','34900','0','0','11','11802','1','0','0','0','0','0','0','0','0','0','Dark Iron Agent - Cast Dark Iron Land Mine'),
+-- Dark Iron Agent 6212 (3.3.5a Official Data)
+('621201','6212','0','0','100','1','15700','24400','21300','34900','0','0','11','11802','0','0','0','0','0','0','0','0','0','0','Dark Iron Agent - Cast Dark Iron Land Mine'),
 ('621202','6212','8','0','100','0','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Dark Iron Agent - Emote on Radiation Spellhit'),
 -- Irradiated Invader (3.3.5a Official Data)
 ('621301','6213','1','0','100','0','1000','1000','0','0','0','0','11','21862','0','32','0','0','0','0','0','0','0','0','Irradiated Invader - Cast Radiation Visual OOC'),
@@ -23804,7 +23804,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Walking Bomb (3.3.5a Official Data)
 ('791501','7915','9','0','100','0','0','5','0','0','0','0','11','11504','0','7','0','0','0','0','0','0','0','0','Walking Bomb - Cast Walking Bomb Effect'),
 -- Blastmaster Emi Shortfuse (7998) - npc_blastmaster_emi_shortfuse
--- Dark Iron Land Mine (8035) - NSR (Core Handles This as a Pet so Unable To Script Properly)
+-- Dark Iron Land Mine 8035
+('803501','8035','11','0','100','0','0','0','0','0','0','0','11','11816','0','0','11','10831','0','0','0','0','0','0','Dark Iron Land Mine - Cast Land Mine Arming and Reflection Field on Spawn'),
+('803502','8035','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Dark Iron Land Mine - Stop Movement and Stop Melee on Aggro'),
+('803503','8035','29','0','100','0','0','0','0','0','0','0','54','-857','0','0','0','0','0','0','0','0','0','0','Dark Iron Land Mine - Emote on Generic Timer'),
+('803504','8035','29','0','100','0','5000','5000','0','0','0','0','54','-858','0','0','0','0','0','0','0','0','0','0','Dark Iron Land Mine - Emote on Generic Timer'),
+('803505','8035','29','0','100','0','10000','10000','0','0','0','0','54','-859','0','0','22','1','0','0','0','0','0','0','Dark Iron Land Mine - Emote and Set Phase 1 on Generic Timer'),
+('803506','8035','32','5','100','0','0','8','0','0','0','0','11','4043','17','0','41','10000','0','0','37','0','0','0','Dark Iron Land Mine - Cast Detonation and Delayed Despawn and Die in Range (Phase 1)'),
 -- Sprok (8320) - NSR
 -- Tink Sprocketwhistle (Rough Scripted Data)
 ('967601','9676','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Tink Sprocketwhistle - Flee at 15% HP'),
@@ -30861,7 +30867,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-854','Time to die!','0','1','0','Varimathras 2425','0'),
 ('-855','None can oppose me.','0','1','0','Varimathras 2425','0'),
 ('-856','For Sylvanas!','0','1','0','Varimathras 2425','0'),
--- Classic PLEASE RE-USE 857 - 894
+('-857','%s will be armed in 10 seconds!','0','2','0','8035','0'),
+('-858','%s will be armed in 5 seconds!','0','2','0','8035','0'),
+('-859','%s is now armed!','0','2','0','8035','0'),
+-- Classic PLEASE RE-USE 860 - 894
 ('-895','There is no escape for you.  The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','Common Scarlet Text','0'),
 ('-896','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','Common Scarlet Text','0'),
 ('-897','The light condemns all who harbor evil.  Now you will die!','0','0','0','Common Scarlet Text','0'),
