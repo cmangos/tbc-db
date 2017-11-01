@@ -18789,6 +18789,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1694602','16946','32','2','100','0','10','40','0','0','11','32735','12','0','22','1','0','0','3','0','19668','0','Mo\'arg Forgefiend - Cast Saw Blade and Set Phase 1 and Transform in Range (Phase 0)'),
 ('1694603','16946','0','1','100','1','5000','11000','12000','15000','11','36486','1','0','0','0','0','0','0','0','0','0','Mo\'arg Forgefiend - Cast Slime Spray (Phase 1)'),
 ('1694604','16946','7','0','100','0','0','0','0','0','3','0','0','0','22','0','0','0','0','0','0','0','Mo\'arg Forgefiend - Demorph and Set Phase 0 on Evade'),
+-- Gan'arg Servant
+('1694701','16947','6','0','100','0','0','0','0','0','11','32003','0','0','0','0','0','0','0','0','0','0','Gan\'arg Sapper - Cast Power Burn on Death'),
 -- Netherhound
 ('1695001','16950','0','0','100','1','3000','5000','7000','11000','11','11981','1','0','0','0','0','0','0','0','0','0','Netherhound - Cast Mana Burn'),
 -- Terrorfiend
