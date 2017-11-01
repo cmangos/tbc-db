@@ -3794,9 +3794,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Apothecary Enith (16208) - NSR
 -- Ranger Vedoran (16209) - NSR
 -- Ranger Lethvalin
-('1621301','16213','1','0','100','1','240000','600000','240000','600000','54','0','0','10009','0','0','0','0','0','0','0','0','Ranger Lethvalin - Say OOC'),
--- Lieutenant Tomathren (16217) - NSR
--- Ranger Valanna (16219) - NSR
+('1621301','16213','1','0','100','1','240000','600000','240000','600000','54','0','0','10009','0','0','0','0','0','0','0','0','Ranger Lethvalin - Random Say OOC'),
+-- Lieutenant Tomathren
+('1621701','16217','1','0','100','1','120000','230000','120000','230000','54','0','0','10039','45','5','11','0','0','0','0','0','Lieutenant Tomathren - Random Say and Send AI Event 5 (A) OOC'),
+-- Ranger Valanna
+('1621901','16219','30','0','100','1','5','16217','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Ranger Valanna - Set Phase 1 on Receive AI Event 5 (A)'),
+('1621902','16219','1','1','100','1','7300','7300','7300','7300','54','0','0','10040','22','0','0','0','0','0','0','0','Ranger Lethvalin - Random Say and Set Phase 0 OOC (Phase 1)'),
 -- Captain Helios (16220) - NSR
 -- Rathis Tomber (16224) - npc_rathis_tomber
 -- Dame Auriferous
@@ -33248,7 +33251,19 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-717','YOU TRY DA\' BEST, NOW TRY DA\' REST! OGRE BREW!!','0','1','0','23685','0'),
 ('-718','HEY YOU! DRINK OGRE BREWS! MAKE YOU BIG AND STRONG!','0','1','0','23685','0'),
 ('-719','YOU WANT DRINK? WE GOT DRINK!','0','1','0','23685','0'),
--- PLEASE RE-USE 720 - 741
+('-720','They should have listened to me.  Then I\'d receive all of the accolades that are my due!','0','0','1','16217','1'),
+('-721','I tell you now, when we get back to Farstrider Enclave there will be a full accounting of your actions, Ranger Valanna! You alone were responsible for our losses and I\'m certain that the captain will see it my way.','0','0','1','16217','1'),
+('-722','Did I not yell at them? Pull back! Pull back and regroup with suppressing fire!!','0','0','1','16217','1'),
+('-723','Take that!','0','0','1','16217','1'),
+('-724','This isn\'t Silvermoon City! Where are we? Oh, I was confused there for a moment.','0','0','1','16217','1'),
+('-725','I\'m sure to receive a commendation upon our return. We may have suffered a few losses, but overall I think we did quite nicely, don\'t you, Valanna?','0','0','1','16217','1'),
+('-726','You have got to be the most incompetent officer I have ever met!','0','0','0','16219','1'),
+('-727','Idiot.','0','0','0','16219','1'),
+('-728','Uh huh.  Whatever you say.','0','0','0','16219','1'),
+('-729','Remind me once again why it is that I don\'t just leave?','0','0','0','16219','1'),
+('-730','Would you please shut up?!','0','0','0','16219','1'),
+('-731','With all due respect, sir, stick it!','0','0','0','16219','1'),
+-- PLEASE RE-USE 732 - 741
 ('-742','My strength.... is... returning!','0','0','0','16847','0'),
 ('-743','You\'ve restored my health! I\'m in your debt, $N.','0','0','0','16847','0'),
 ('-744','You\'e found a cure! We will crush our enemies!','0','0','0','16847','0'),
@@ -34076,7 +34091,19 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10037,0,-511,0,'20453 - Random IC Texts'),
 (10038,0,-90,0,'21178 - Random Aggro Texts'),
 (10038,0,-91,0,'21178 - Random Aggro Texts'),
-(10038,0,-92,0,'21178 - Random Aggro Texts');
+(10038,0,-92,0,'21178 - Random Aggro Texts'),
+(10039,0,-720,0,'16217 - Random OOC Texts'),
+(10039,0,-721,0,'16217 - Random OOC Texts'),
+(10039,0,-722,0,'16217 - Random OOC Texts'),
+(10039,0,-723,0,'16217 - Random OOC Texts'),
+(10039,0,-724,0,'16217 - Random OOC Texts'),
+(10039,0,-725,0,'16217 - Random OOC Texts'),
+(10040,0,-726,0,'16219 - Random OOC Texts'),
+(10040,0,-727,0,'16219 - Random OOC Texts'),
+(10040,0,-728,0,'16219 - Random OOC Texts'),
+(10040,0,-729,0,'16219 - Random OOC Texts'),
+(10040,0,-730,0,'16219 - Random OOC Texts'),
+(10040,0,-731,0,'16219 - Random OOC Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
