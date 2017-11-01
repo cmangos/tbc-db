@@ -21067,6 +21067,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Black Blood of Draenor
 ('2328601','23286','0','0','100','1','8000','14000','18000','25000','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
 ('2328602','23286','2','0','100','0','40','0','0','0','11','7279','1','1','25','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Black Sludge and Flee at 40% HP'),
+-- Netherwing Ally
+('2332001','23320','0','0','100','1','1000','2000','6000','8000','11','13901','1','0','0','0','0','0','0','0','0','0','Netherwing Ally - Cast Arcane Bolt'),
 -- Illidan Stormrage
 ('2346701','23467','11','0','100','0','0','0','0', '0','11','24240','0','1','0','0','0','0','0','0',' 0','0','Lord Illidan - Cast Spawn - Cast Red Lightning on Spawn'),
 
