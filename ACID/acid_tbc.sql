@@ -19633,7 +19633,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2234101','22341','9','0','100','1','0','20','8000','14000','11','32000','1','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Mind Sear'),
 -- Deathshadow Spellbinder
 ('2234201','22342','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Deathshadow Spellbinder - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2234202','22342','9','13','100','1','0','40','3400','4800','11','33447','0','0','0','0','0','0','0','0','0','0','Deathshadow Spellbinder - Cast Arcane Missles (Phase 1)'),
+('2234202','22342','9','13','100','1','0','40','3400','4800','11','34446','1','0','0','0','0','0','0','0','0','0','Deathshadow Spellbinder - Cast Arcane Missles (Phase 1)'),
 ('2234203','22342','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Deathshadow Spellbinder - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2234204','22342','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Deathshadow Spellbinder - Disable Dynamic Movement at 0-8 Yards'),
 ('2234205','22342','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Deathshadow Spellbinder - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
