@@ -68,7 +68,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('224503','2245','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Syndicate Saboteur - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('224504','2245','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Syndicate Saboteur - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('224505','2245','0','0','100','1','7400','10200','14500','26900','11','6980','1','1','40','2','0','0','0','0','0','0','Syndicate Saboteur - Cast Fire Shot and Set Ranged Weapon Model'),
-('224506','2245','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Syndicate Saboteur - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('224506','2245','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Syndicate Saboteur - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('224507','2245','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Saboteur - Flee at 15% HP (Phase 2)'),
 ('224508','2245','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Syndicate Saboteur - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Syndicate Assassin (3.1.1 Official Data)
@@ -351,7 +351,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('255403','2554','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Witherbark Axe Thrower - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('255404','2554','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Witherbark Axe Thrower - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('255405','2554','0','0','100','1','10200','26000','2500','6700','11','4974','1','32','0','0','0','0','0','0','0','0','Witherbark Axe Thrower - Cast Wither Touch'),
-('255406','2554','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Witherbark Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('255406','2554','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Witherbark Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('255407','2554','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Witherbark Axe Thrower - Flee at 15% HP (Phase 2)'),
 ('255408','2554','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Witherbark Axe Thrower - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Witherbark Witch Doctor (3.0.9 Official Data)
@@ -487,7 +487,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('258702','2587','9','5','100','1','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Syndicate Pathstalker - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('258703','2587','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Syndicate Pathstalker - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('258704','2587','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Syndicate Pathstalker - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('258705','2587','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Syndicate Pathstalker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('258705','2587','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Syndicate Pathstalker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('258706','2587','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Pathstalker - Flee at 15% HP (Phase 2)'),
 ('258707','2587','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Syndicate Pathstalker - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Syndicate Prowler (3.0.9 Official Data)
@@ -981,7 +981,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('485603','4856','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Stonevault Cave Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('485604','4856','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Stonevault Cave Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('485605','4856','9','5','100','1','0','20','20300','26700','11','6533','1','0','0','0','0','0','0','0','0','0','Stonevault Cave Hunter - Cast Net'),
-('485606','4856','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Stonevault Cave Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('485606','4856','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Stonevault Cave Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('485607','4856','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Stonevault Cave Hunter - Flee at 15% HP (Phase 2)'),
 ('485608','4856','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Stonevault Cave Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Neeka Bloodscar (5394) - NSR
@@ -1106,7 +1106,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('599703','5997','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Nethergarde Engineer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('599704','5997','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Nethergarde Engineer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('599705','5997','0','0','100','1','8000','11000','12000','16000','11','8858','1','1','0','0','0','0','0','0','0','0','Nethergarde Engineer - Cast Bomb'),
-('599706','5997','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Nethergarde Engineer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('599706','5997','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Nethergarde Engineer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('599707','5997','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Nethergarde Engineer - Flee at 15% HP (Phase 2)'),
 ('599708','5997','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Nethergarde Engineer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Nethergarde Foreman
@@ -1850,7 +1850,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('112303','1123','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Frostmane Headhunter - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('112304','1123','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Frostmane Headhunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('112305','1123','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Frostmane Headhunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('112306','1123','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Frostmane Headhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('112306','1123','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Frostmane Headhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('112307','1123','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Frostmane Headhunter - Flee at 15% HP (Phase 2)'),
 ('112308','1123','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Frostmane Headhunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Frostmane Shadowcaster (2.4.3 Official Data)
@@ -2039,7 +2039,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('784306','7843','9','0','100','1','0','5','17000','23000','11','9080','1','1','0','0','0','0','0','0','0','0','Gnomeregan Evacuee - Cast Hamstring'),
 ('784307','7843','0','0','100','1','7000','9000','13000','16000','11','25712','1','1','0','0','0','0','0','0','0','0','Gnomeregan Evacuee - Cast Heroic Strike'),
 ('784308','7843','2','0','100','1','30','0','30000','45000','11','2055','0','1','0','0','0','0','0','0','0','0','Gnomeregan Evacuee - Cast Heal at 30% HP'),
-('784309','7843','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Gnomeregan Evacuee - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('784309','7843','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Gnomeregan Evacuee - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('784310','7843','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gnomeregan Evacuee - Flee at 15% HP (Phase 2)'),
 ('784311','7843','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Gnomeregan Evacuee - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Binjy Featherwhistle (7954) - NSR
@@ -2082,7 +2082,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1299602','12996','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Mounted Ironforge Mountaineer - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1299603','12996','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mounted Ironforge Mountaineer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1299604','12996','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mounted Ironforge Mountaineer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1299605','12996','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mounted Ironforge Mountaineer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1299605','12996','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mounted Ironforge Mountaineer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1299606','12996','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mounted Ironforge Mountaineer - Flee at 15% HP (Phase 2)'),
 ('1299607','12996','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mounted Ironforge Mountaineer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Gnome Engineer (13000) - NSR
@@ -2611,7 +2611,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('856103','8561','9','5','100','1','5','30','6000','9000','11','17171','1','0','40','2','0','0','0','0','0','0','Mossflayer Shadowhunter - Cast Shadow Shot and Set Ranged Weapon Model (Phase 1)'),
 ('856104','8561','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mossflayer Shadowhunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('856105','8561','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mossflayer Shadowhunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('856106','8561','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mossflayer Shadowhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('856106','8561','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mossflayer Shadowhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('856107','8561','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mossflayer Shadowhunter - Flee at 15% HP (Phase 2)'),
 ('856108','8561','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mossflayer Shadowhunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mossflayer Cannibal
@@ -2630,7 +2630,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('856404','8564','9','5','100','1','5','30','9000','11000','11','17174','1','0','40','2','0','0','0','0','0','0','Ranger - Cast Concussive Shot and Set Ranged Weapon Model (Phase 1)'),
 ('856405','8564','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Ranger - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('856406','8564','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Ranger - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('856407','8564','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Ranger - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('856407','8564','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Ranger - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('856408','8564','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ranger - Flee at 15% HP (Phase 2)'),
 ('856409','8564','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Ranger - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Pathstrider
@@ -2716,7 +2716,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1081703','10817','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Duggan Wildhammer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1081704','10817','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Duggan Wildhammer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1081705','10817','9','0','100','1','0','5','6000','9000','11','15284','1','1','0','0','0','0','0','0','0','0','Duggan Wildhammer - Cast Cleave'),
-('1081706','10817','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Duggan Wildhammer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1081706','10817','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Duggan Wildhammer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1081707','10817','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Duggan Wildhammer - Flee at 15% HP (Phase 2)'),
 ('1081708','10817','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Duggan Wildhammer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Hed\'mush the Rotting
@@ -2743,7 +2743,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1082404','10824','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Ranger Lord Hawkspear - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1082405','10824','9','0','100','1','0','5','7000','9000','11','11978','1','1','0','0','0','0','0','0','0','0','Ranger Lord Hawkspear - Cast Kick'),
 ('1082406','10824','9','0','100','1','0','5','4000','7000','11','11978','1','0','0','0','0','0','0','0','0','0','Ranger Lord Hawkspear - Cast Strike'),
-('1082407','10824','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Ranger Lord Hawkspear - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1082407','10824','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Ranger Lord Hawkspear - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1082408','10824','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ranger Lord Hawkspear - Flee at 15% HP (Phase 2)'),
 ('1082409','10824','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Ranger Lord Hawkspear - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Gish the Unmoving
@@ -2901,7 +2901,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1232204','12322','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Quel\'Lithien Protector - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1232205','12322','9','0','100','1','0','5','5000','7000','11','12057','1','0','0','0','0','0','0','0','0','0','Quel\'Lithien Protector - Cast Strike'),
 ('1232206','12322','9','0','100','1','0','5','8000','13000','11','11978','1','0','0','0','0','0','0','0','0','0','Quel\'Lithien Protector - Cast Kick'),
-('1232207','12322','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Quel\'Lithien Protector - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1232207','12322','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Quel\'Lithien Protector - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1232208','12322','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Quel\'Lithien Protector - Flee at 15% HP (Phase 2)'),
 ('1232209','12322','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Quel\'Lithien Protector - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Crimson Courier
@@ -3547,7 +3547,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1593802','15938','9','5','100','1','5','30','3400','3700','11','6660','1','0','40','2','0','0','0','0','0','0','Eversong Ranger - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1593803','15938','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Eversong Ranger - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1593804','15938','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Eversong Ranger - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1593805','15938','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Eversong Ranger - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1593805','15938','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Eversong Ranger - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1593806','15938','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Eversong Ranger - Flee at 15% HP (Phase 2)'),
 ('1593807','15938','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Eversong Ranger - Set Phase 1 and Set Melee Weapon Model on Evade'),
 ('1593808','15938','8','0','100','1','1243','-1','120000','120000','33','15938','6','0','0','0','0','0','0','0','0','0','Eversong Ranger - Gives Quest Credit on Power Word: Fortitude Spellhit (Quest: 9489)'),
@@ -4004,7 +4004,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1633203','16332','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Darnassian Huntress - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1633204','16332','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Darnassian Huntress - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1633205','16332','9','0','100','1','0','5','5000','9000','11','11976','1','0','0','0','0','0','0','0','0','0','Darnassian Huntress - Cast Strike'),
-('1633206','16332','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Darnassian Huntress - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1633206','16332','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Darnassian Huntress - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1633207','16332','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Darnassian Huntress - Flee at 15% HP (Phase 2)'),
 ('1633208','16332','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Darnassian Huntress - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Sentinel Infiltrator
@@ -4044,7 +4044,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1634402','16344','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Shadowpine Headhunter - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('1634403','16344','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Shadowpine Headhunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1634404','16344','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Shadowpine Headhunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1634405','16344','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Shadowpine Headhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1634405','16344','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Shadowpine Headhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1634406','16344','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowpine Headhunter - Flee at 15% HP (Phase 2)'),
 ('1634407','16344','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Shadowpine Headhunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Shadowpine Catlord
@@ -4090,7 +4090,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1640303','16403','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Withered Grimscale - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1640304','16403','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Withered Grimscale - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1640305','16403','9','0','100','1','0','5','16000','28000','11','7901','4','32','0','0','0','0','0','0','0','0','Withered Grimscale - Cast Decayed Agility'),
-('1640306','16403','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Withered Grimscale - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1640306','16403','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Withered Grimscale - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1640307','16403','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Withered Grimscale - Flee at 15% HP (Phase 2)'),
 ('1640308','16403','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Withered Grimscale - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Yellowgill Frenzy (16404) - NSR
@@ -4271,7 +4271,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('234503','2345','0','5','100','1','12000','18000','30000','30000','11','6685','4','1','40','2','0','0','0','0','0','0','Dun Garok Rifleman - Cast Piercing Shot and Set Ranged Weapon Model (Phase 1)'),
 ('234504','2345','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dun Garok Rifleman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('234505','2345','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dun Garok Rifleman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('234506','2345','2','0','100','0','30','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Dun Garok Rifleman - Disable Dynamic Movement and Set Phase 2 at 30% HP'),
+('234506','2345','2','0','100','0','30','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dun Garok Rifleman - Disable Dynamic Movement and Set Phase 2 at 30% HP'),
 ('234507','2345','2','3','100','0','30','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dun Garok Rifleman - Flee at 30% HP (Phase 2)'),
 ('234508','2345','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dun Garok Rifleman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Dun Garok Priest
@@ -4312,7 +4312,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('236902','2369','9','5','100','1','5','30','2200','3800','11','10277','1','0','40','2','0','0','0','0','0','0','Daggerspine Shorehunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('236903','2369','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Daggerspine Shorehunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('236904','2369','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Daggerspine Shorehunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('236905','2369','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Daggerspine Shorehunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('236905','2369','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Daggerspine Shorehunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('236906','2369','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Daggerspine Shorehunter - Flee at 15% HP (Phase 2)'),
 ('236907','2369','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Daggerspine Shorehunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Daggerspine Screamer
@@ -4350,7 +4350,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('237502','2375','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Torn Fin Coastrunner - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('237503','2375','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Torn Fin Coastrunner - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('237504','2375','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Torn Fin Coastrunner - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('237505','2375','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Torn Fin Coastrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('237505','2375','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Torn Fin Coastrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('237506','2375','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Torn Fin Coastrunner - Flee at 15% HP (Phase 2)'),
 ('237507','2375','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Torn Fin Coastrunner - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Torn Fin Oracle
@@ -4434,7 +4434,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('242803','2428','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Jailor Marlgen - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('242804','2428','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Jailor Marlgen - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('242805','2428','9','0','100','1','0','20','7000','11000','11','6533','1','1','0','0','0','0','0','0','0','0','Jailor Marlgen - Cast Net'),
-('242806','2428','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Jailor Marlgen - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('242806','2428','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Jailor Marlgen - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('242807','2428','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Jailor Marlgen - Flee at 15% HP (Phase 2)'),
 ('242808','2428','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Jailor Marlgen - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Novice Thaivand (2429) - NSR
@@ -4887,7 +4887,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2497904','24979','9','5','100','1','10','40','13000','17000','11','37847','1','1','40','2','0','0','0','0','0','0','Dawnblade Marksman - Cast Immolation Arrow and Set Ranged Weapon Model (Phase 1)'),
 ('2497905','24979','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dawnblade Marksman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2497906','24979','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dawnblade Marksman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('2497907','24979','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Dawnblade Marksman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2497907','24979','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dawnblade Marksman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2497908','24979','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dawnblade Marksman - Flee at 15% HP (Phase 2)'),
 ('2497909','24979','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dawnblade Marksman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Shattered Sun Sentry
@@ -4971,7 +4971,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2513203','25132','9','5','100','1','5','40','2300','3900','11','38094','1','0','40','2','0','0','0','0','0','0','Sunblade Lookout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('2513204','25132','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sunblade Lookout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2513205','25132','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sunblade Lookout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('2513206','25132','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sunblade Lookout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2513206','25132','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sunblade Lookout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2513207','25132','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sunblade Lookout - Flee at 15% HP (Phase 2)'),
 ('2513208','25132','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sunblade Lookout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Astromancer Darnarian (25133) - NSR
@@ -5044,7 +5044,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('116203','1162','9','5','100','1','5','30','2800','4800','11','10277','1','0','40','2','0','0','0','0','0','0','Stonesplinter Scout - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('116204','1162','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Stonesplinter Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('116205','1162','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Stonesplinter Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('116206','1162','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Stonesplinter Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('116206','1162','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Stonesplinter Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('116207','1162','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Stonesplinter Scout - Flee at 15% HP (Phase 2)'),
 ('116208','1162','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Stonesplinter Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Stonesplinter Skullthumper (2.4.3 Official Data)
@@ -5092,7 +5092,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('117303','1173','9','5','100','1','5','30','2300','2700','11','6660','1','0','40','2','0','0','0','0','0','0','Tunnel Rat Scout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('117304','1173','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Tunnel Rat Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('117305','1173','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Tunnel Rat Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('117306','1173','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Tunnel Rat Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('117306','1173','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Tunnel Rat Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('117307','1173','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Tunnel Rat Scout - Flee at 15% HP (Phase 2)'),
 ('117308','1173','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Tunnel Rat Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Tunnel Rat Geomancer (2.4.3 Official Data)
@@ -5261,7 +5261,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('42403','424','9','5','100','1','5','30','3400','3700','11','6660','1','0','40','2','0','0','0','0','0','0','Redridge Poacher - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('42404','424','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Redridge Poacher - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('42405','424','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Redridge Poacher - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('42406','424','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Redridge Poacher - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('42406','424','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Redridge Poacher - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('42407','424','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Redridge Poacher - Flee at 15% HP (Phase 2)'),
 ('42408','424','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Redridge Poacher - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Redridge Brute (2.4.3 Official Data)
@@ -5441,7 +5441,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('406403','4064','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Blackrock Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('406404','4064','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Blackrock Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('406405','4064','0','0','90','1','1400','4300','16900','25300','11','3019','0','1','1','-46','0','0','0','0','0','0','Blackrock Scout - Cast Enrage'),
-('406406','4064','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Blackrock Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('406406','4064','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Blackrock Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('406407','4064','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Blackrock Scout - Flee at 15% HP (Phase 2)'),
 ('406408','4064','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Blackrock Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Blackrock Sentry (2.4.3 Official Data)
@@ -5455,7 +5455,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('446204','4462','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Blackrock Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('446205','4462','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Blackrock Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('446206','4462','0','0','100','1','6400','31400','19700','34400','11','3019','0','1','1','-46','0','0','0','0','0','0','Blackrock Hunter - Cast Enrage'),
-('446207','4462','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Blackrock Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('446207','4462','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Blackrock Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('446208','4462','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Blackrock Hunter - Flee at 15% HP (Phase 2)'),
 ('446209','4462','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Blackrock Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Blackrock Summoner (2.4.3 Official Data)
@@ -5582,7 +5582,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('828303','8283','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Slave Master Blackheart - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('828304','8283','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Slave Master Blackheart - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('828305','8283','9','0','100','1','0','18','8000','11000','11','6533','1','1','0','0','0','0','0','0','0','0','Slave Master Blackheart - Cast Net'),
-('828306','8283','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Slave Master Blackheart - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('828306','8283','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Slave Master Blackheart - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('828307','8283','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Slave Master Blackheart - Flee at 15% HP (Phase 2)'),
 ('828308','8283','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Slave Master Blackheart - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Dorius Stonetender (8284) - NSR
@@ -5625,7 +5625,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('856602','8566','9','5','100','1','5','30','1200','2400','11','6660','1','0','40','2','0','0','0','0','0','0','Dark Iron Lookout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('856603','8566','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Lookout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('856604','8566','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dark Iron Lookout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('856605','8566','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Dark Iron Lookout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('856605','8566','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dark Iron Lookout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('856606','8566','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dark Iron Lookout - Flee at 15% HP (Phase 2)'),
 ('856607','8566','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dark Iron Lookout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Dark Iron Watchman
@@ -6710,7 +6710,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('69402','694','9','5','100','1','5','30','3500','4900','11','10277','1','0','40','2','0','0','0','0','0','0','Bloodscalp Axe Thrower - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('69403','694','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bloodscalp Axe Thrower - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('69404','694','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Bloodscalp Axe Thrower - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('69405','694','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Bloodscalp Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('69405','694','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bloodscalp Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('69406','694','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodscalp Axe Thrower - Flee at 15% HP (Phase 2)'),
 ('69407','694','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Bloodscalp Axe Thrower - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Skullsplitter Axe Thrower
@@ -6719,7 +6719,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('69603','696','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Skullsplitter Axe Thrower - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('69604','696','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Skullsplitter Axe Thrower - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('69605','696','0','0','100','1','5000','7000','23000','26000','11','3148','1','0','0','0','0','0','0','0','0','0','Skullsplitter Axe Thrower - Cast Head Crack'),
-('69606','696','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Skullsplitter Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('69606','696','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Skullsplitter Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('69607','696','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Skullsplitter Axe Thrower - Flee at 15% HP (Phase 2)'),
 ('69608','696','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Skullsplitter Axe Thrower - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bloodscalp Shaman
@@ -6823,7 +6823,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('109703','1097','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Venture Co Mechanic - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('109704','1097','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Venture Co Mechanic - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('109705','1097','9','0','100','1','5','30','6500','10000','11','14443','1','0','40','2','0','0','0','0','0','0','Venture Co Mechanic - Cast Multi-Shot'),
-('109706','1097','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Venture Co Mechanic - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('109706','1097','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Venture Co Mechanic - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('109707','1097','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co Mechanic - Flee at 15% HP (Phase 2)'),
 ('109708','1097','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Venture Co Mechanic - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- River Crocolisk
@@ -6943,7 +6943,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('445802','4458','9','5','100','1','5','30','2600','4800','11','10277','1','0','40','2','0','0','0','0','0','0','Murkgill Hunter - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('445803','4458','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Murkgill Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('445804','4458','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Murkgill Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('445805','4458','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Murkgill Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('445805','4458','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Murkgill Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('445806','4458','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murkgill Hunter - Flee at 15% HP (Phase 2)'),
 ('445807','4458','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Murkgill Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Murkgill Oracle
@@ -6987,7 +6987,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1609603','16096','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1609604','16096','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Steamwheedle Bruiser - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1609605','16096','9','0','100','1','0','18','11000','18000','11','12024','1','0','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Cast Net'),
-('1609606','16096','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Steamwheedle Bruiser - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1609606','16096','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Steamwheedle Bruiser - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1609607','16096','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Steamwheedle Bruiser - Flee at 15% HP (Phase 2)'),
 ('1609608','16096','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Steamwheedle Bruiser - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Nizzle
@@ -7059,7 +7059,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('75902','759','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Lost One Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('75903','759','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lost One Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('75904','759','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Lost One Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('75905','759','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Lost One Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('75905','759','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Lost One Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('75906','759','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lost One Hunter - Flee at 15% HP (Phase 2)'),
 ('75907','759','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Lost One Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Lost One Muckdweller
@@ -7264,7 +7264,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('263902','2639','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Vilebranch Axe Thrower - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('263903','2639','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Vilebranch Axe Thrower - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('263904','2639','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Vilebranch Axe Thrower - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('263905','2639','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Vilebranch Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('263905','2639','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Vilebranch Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('263906','2639','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vilebranch Axe Thrower - Flee at 15% HP (Phase 2)'),
 ('263907','2639','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Vilebranch Axe Thrower - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Vilebranch Witch Doctor
@@ -7285,7 +7285,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('264103','2641','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Vilebranch Headhunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('264104','2641','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Vilebranch Headhunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('264105','2641','9','0','100','1','0','5','15000','18000','11','7357','4','1','0','0','0','0','0','0','0','0','Vilebranch Headhunter - Cast Poisonous Stab'),
-('264106','2641','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Vilebranch Headhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('264106','2641','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Vilebranch Headhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('264107','2641','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vilebranch Headhunter - Flee at 15% HP (Phase 2)'),
 ('264108','2641','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Vilebranch Headhunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Vilebranch Shadowcaster
@@ -7313,7 +7313,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('264504','2645','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Vilebranch Shadow Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('264505','2645','9','0','100','1','0','30','21000','26000','11','14032','4','1','0','0','0','0','0','0','0','0','Vilebranch Shadow Hunter - Cast Shadow Word: Pain'),
 ('264506','2645','0','0','100','1','4000','9000','15000','21000','11','9657','0','1','0','0','0','0','0','0','0','0','Vilebranch Shadow Hunter - Cast Shadow Shell'),
-('264507','2645','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Vilebranch Shadow Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('264507','2645','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Vilebranch Shadow Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('264508','2645','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vilebranch Shadow Hunter - Flee at 15% HP (Phase 2)'),
 ('264509','2645','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Vilebranch Shadow Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Vilebranch Blood Drinker
@@ -7332,7 +7332,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('264903','2649','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Witherbark Scalper - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('264904','2649','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Witherbark Scalper - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('264905','2649','12','0','100','1','20','0','30000','35000','11','7160','1','1','0','0','0','0','0','0','0','0','Witherbark Scalper - Cast Execute on Target at 20% HP'),
-('264906','2649','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Witherbark Scalper - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('264906','2649','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Witherbark Scalper - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('264907','2649','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Witherbark Scalper - Flee at 15% HP (Phase 2)'),
 ('264908','2649','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Witherbark Scalper - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Witherbark Zealot
@@ -7376,7 +7376,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('269102','2691','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Highvale Outrunner - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('269103','2691','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Highvale Outrunner - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('269104','2691','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Highvale Outrunner - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('269105','2691','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Highvale Outrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('269105','2691','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Highvale Outrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('269106','2691','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Highvale Outrunner - Flee at 15% HP (Phase 2)'),
 ('269107','2691','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Highvale Outrunner - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Highvale Scout
@@ -7387,7 +7387,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('269303','2693','9','5','100','1','5','30','9000','13000','11','14443','4','1','40','2','0','0','0','0','0','0','Highvale Marksman - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
 ('269304','2693','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Highvale Marksman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('269305','2693','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Highvale Marksman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('269306','2693','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Highvale Marksman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('269306','2693','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Highvale Marksman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('269307','2693','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Highvale Marksman - Flee at 15% HP (Phase 2)'),
 ('269308','2693','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Highvale Marksman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Highvale Ranger
@@ -7493,7 +7493,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('821404','8214','9','5','100','1','5','30','15000','21000','11','8806','4','32','40','2','0','0','0','0','0','0','Jalinde Summerdrake - Cast Poisoned Shot and Set Ranged Weapon Model (Phase 1)'),
 ('821405','8214','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Jalinde Summerdrake - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('821406','8214','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Jalinde Summerdrake - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('821407','8214','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Jalinde Summerdrake - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('821407','8214','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Jalinde Summerdrake - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('821408','8214','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Jalinde Summerdrake - Flee at 15% HP (Phase 2)'),
 ('821409','8214','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Jalinde Summerdrake - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Grimungous
@@ -7876,7 +7876,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('428103','4281','9','5','100','1','8000','12000','9000','13000','11','6979','4','1','40','2','0','0','0','0','0','0','Scarlet Scout - Cast Fire Shot and Set Ranged Weapon Model (Phase 1)'),
 ('428104','4281','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Scarlet Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('428105','4281','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Scarlet Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('428106','4281','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Scarlet Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('428106','4281','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Scarlet Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('428107','4281','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Scout - Flee at 15% HP (Phase 2)'),
 ('428108','4281','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Scarlet Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Scarlet Magician
@@ -8012,7 +8012,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2510603','25106','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Watcher Du\'una - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2510604','25106','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Watcher Du\'una - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2510605','25106','9','0','100','1','0','20','8000','12000','11','12024','1','1','0','0','0','0','0','0','0','0','Watcher Du\'una - Cast Net'),
-('2510606','25106','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Watcher Du\'una - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2510606','25106','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Watcher Du\'una - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2510607','25106','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Watcher Du\'una - Flee at 15% HP (Phase 2)'),
 ('2510608','25106','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Watcher Du\'una - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Watcher Umjin
@@ -8021,7 +8021,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2510703','25107','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Watcher Umjin - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2510704','25107','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Watcher Umjin - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2510705','25107','9','0','100','1','0','20','8000','12000','11','12024','1','1','0','0','0','0','0','0','0','0','Watcher Umjin - Cast Net'),
-('2510706','25107','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Watcher Umjin - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2510706','25107','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Watcher Umjin - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2510707','25107','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Watcher Umjin - Flee at 15% HP (Phase 2)'),
 ('2510708','25107','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Watcher Umjin - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Meefi Farthrottle (26539) - NSR
@@ -8389,7 +8389,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('183103','1831','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Scarlet Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('183104','1831','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Scarlet Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('183105','1831','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Scarlet Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('183106','1831','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Scarlet Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('183106','1831','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Scarlet Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('183107','1831','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Hunter - Flee at 15% HP (Phase 2)'),
 ('183108','1831','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Scarlet Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Scarlet Magus
@@ -8721,7 +8721,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1161304','11613','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Huntsman Radley - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1161305','11613','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Huntsman Radley - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1161306','11613','9','0','100','1','0','5','5000','8000','11','11976','1','1','0','0','0','0','0','0','0','0','Huntsman Radley - Cast Strike'),
-('1161307','11613','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Huntsman Radley - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1161307','11613','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Huntsman Radley - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1161308','11613','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Huntsman Radley - Flee at 15% HP (Phase 2)'),
 ('1161309','11613','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Huntsman Radley - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bloodshot
@@ -8776,7 +8776,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('9504','95','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Defias Smuggler - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('9505','95','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Defias Smuggler - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('9506','95','33','0','65','1','0','0','3800','6900','11','53','1','0','0','0','0','0','0','0','0','0','Defias Smuggler - Cast Backstab on Facing Target Back'),
-('9507','95','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Defias Smuggler - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('9507','95','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Defias Smuggler - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('9508','95','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Smuggler - Flee at 15% HP (Phase 2)'),
 ('9509','95','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Defias Smuggler - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Riverpaw Taskmaster (2.4.3 Official Data)
@@ -8876,7 +8876,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('45803','458','9','5','100','1','5','30','2900','4800','11','10277','1','0','40','2','0','0','0','0','0','0','Murloc Hunter - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('45804','458','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Murloc Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('45805','458','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Murloc Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('45806','458','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Murloc Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('45806','458','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Murloc Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('45807','458','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murloc Hunter - Flee at 15% HP (Phase 2)'),
 ('45808','458','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Murloc Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Vultros (2.4.3 Official Data)
@@ -8893,7 +8893,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('50003','500','9','5','100','1','5','30','2200','4700','11','6660','1','0','40','2','0','0','0','0','0','0','Riverpaw Scout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('50004','500','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Riverpaw Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('50005','500','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Riverpaw Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('50006','500','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Riverpaw Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('50006','500','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Riverpaw Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('50007','500','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Riverpaw Scout - Flee at 15% HP (Phase 2)'),
 ('50008','500','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Riverpaw Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Riverpaw Herbalist (2.4.3 Official Data)
@@ -9259,7 +9259,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('105404','1054','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Demolitionist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('105405','1054','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dark Iron Demolitionist - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('105406','1054','0','0','100','1','1200','8300','8200','20100','11','7891','0','3','0','0','0','0','0','0','0','0','Dark Iron Demolitionist - Cast Gift of Ragnaros'),
-('105407','1054','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Dark Iron Demolitionist - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('105407','1054','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dark Iron Demolitionist - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('105408','1054','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dark Iron Demolitionist - Flee at 15% HP (Phase 2)'),
 ('105409','1054','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dark Iron Demolitionist - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Dragonmaw Bonewarder
@@ -9308,7 +9308,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('141803','1418','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bluegill Raider - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('141804','1418','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Bluegill Raider - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('141805','1418','0','0','100','1','11000','14300','16500','33300','11','12024','1','0','0','0','0','0','0','0','0','0','Bluegill Raider - Cast Net'),
-('141806','1418','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Bluegill Raider - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('141806','1418','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bluegill Raider - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('141807','1418','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bluegill Raider - Flee at 15% HP (Phase 2)'),
 ('141808','1418','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Bluegill Raider - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Shellei Brondir
@@ -9333,7 +9333,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('210303','2103','9','5','100','1','5','30','2400','3600','11','6660','1','0','40','2','0','0','0','0','0','0','Dragonmaw Scout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('210304','2103','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('210305','2103','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dragonmaw Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('210306','2103','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Dragonmaw Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('210306','2103','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dragonmaw Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('210307','2103','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dragonmaw Scout - Flee at 15% HP (Phase 2)'),
 ('210308','2103','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dragonmaw Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Garneg Charskull
@@ -9355,7 +9355,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('652304','6523','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dark Iron Rifleman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('652305','6523','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dark Iron Rifleman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('652306','6523','0','0','100','1','16100','16100','20100','32200','11','7891','0','3','0','0','0','0','0','0','0','0','Dark Iron Rifleman - Cast Gift of Ragnaros'),
-('652307','6523','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Dark Iron Rifleman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('652307','6523','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dark Iron Rifleman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('652308','6523','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dark Iron Rifleman - Flee at 15% HP (Phase 2)'),
 ('652309','6523','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dark Iron Rifleman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Axtroz
@@ -9406,7 +9406,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('369105','3691','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Raene Wolfrunner - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('369106','3691','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Raene Wolfrunner - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('369107','3691','9','0','100','1','0','20','11000','13000','11','6533','1','1','0','0','0','0','0','0','0','0','Raene Wolfrunner - Cast Net'),
-('369108','3691','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Raene Wolfrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('369108','3691','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Raene Wolfrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('369109','3691','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Raene Wolfrunner - Flee at 15% HP (Phase 2)'),
 ('369110','3691','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Raene Wolfrunner - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Ran Bloodtooth
@@ -9415,7 +9415,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('369603','3696','9','5','100','1','5','30','9000','14000','11','14443','4','0','40','2','0','0','0','0','0','0','Ran Bloodtooth - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
 ('369604','3696','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Ran Bloodtooth - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('369605','3696','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Ran Bloodtooth - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('369606','3696','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Ran Bloodtooth - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('369606','3696','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Ran Bloodtooth - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('369607','3696','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ran Bloodtooth - Flee at 15% HP (Phase 2)'),
 ('369608','3696','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Ran Bloodtooth - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bolyun (3698) - NSR
@@ -9516,7 +9516,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('374002','3740','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Saltspittle Muckdweller - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('374003','3740','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Saltspittle Muckdweller - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('374004','3740','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Saltspittle Muckdweller - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('374005','3740','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Saltspittle Muckdweller - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('374005','3740','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Saltspittle Muckdweller - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('374006','3740','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Saltspittle Muckdweller - Flee at 15% HP (Phase 2)'),
 ('374007','3740','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Saltspittle Muckdweller - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Saltspittle Oracle (3.3.0 Official Data)
@@ -9531,7 +9531,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('374502','3745','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Foulweald Pathfinder - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('374503','3745','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Foulweald Pathfinder - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('374504','3745','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Foulweald Pathfinder - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('374505','3745','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Foulweald Pathfinder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('374505','3745','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Foulweald Pathfinder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('374506','3745','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Foulweald Pathfinder - Flee at 15% HP (Phase 2)'),
 ('374507','3745','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Foulweald Pathfinder - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Foulweald Den Watcher (3.3.0 Official Data)
@@ -9667,7 +9667,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('380803','3808','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Forsaken Dark Stalker - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('380804','3808','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Forsaken Dark Stalker - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('380805','3808','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Forsaken Dark Stalker - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('380806','3808','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Forsaken Dark Stalker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('380806','3808','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Forsaken Dark Stalker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('380807','3808','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Forsaken Dark Stalker - Flee at 15% HP (Phase 2)'),
 ('380808','3808','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Forsaken Dark Stalker - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Ashenvale Bear (3809) - NSR
@@ -9770,7 +9770,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('392603','3926','9','5','100','1','5','30','2300','2800','11','6660','1','0','40','2','0','0','0','0','0','0','Thistlefur Pathfinder - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('392604','3926','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Thistlefur Pathfinder - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('392605','3926','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Thistlefur Pathfinder - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('392606','3926','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Thistlefur Pathfinder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('392606','3926','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Thistlefur Pathfinder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('392607','3926','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Thistlefur Pathfinder - Flee at 15% HP (Phase 2)'),
 ('392608','3926','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Thistlefur Pathfinder - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Rotting Slime (3.3.0 Official Data)
@@ -9943,7 +9943,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1168003','11680','9','5','100','1','5','30','12000','15000','11','18545','1','0','40','2','0','0','0','0','0','0','Horde Scout - Cast Scorpid Sting and Set Ranged Weapon Model (Phase 1)'),
 ('1168004','11680','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Horde Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1168005','11680','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Horde Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1168006','11680','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Horde Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1168006','11680','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Horde Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1168007','11680','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Horde Scout - Flee at 15% HP (Phase 2)'),
 ('1168008','11680','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Horde Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Horde Deforester
@@ -10053,7 +10053,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1286202','12862','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Warsong Scout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1286203','12862','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Warsong Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1286204','12862','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Warsong Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1286205','12862','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Warsong Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1286205','12862','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Warsong Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1286206','12862','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Warsong Scout - Flee at 15% HP (Phase 2)'),
 ('1286207','12862','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Warsong Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Warsong Runner
@@ -10061,7 +10061,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1286302','12863','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Warsong Runner - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1286303','12863','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Warsong Runner - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1286304','12863','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Warsong Runner - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1286305','12863','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Warsong Runner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1286305','12863','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Warsong Runner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1286306','12863','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Warsong Runner - Flee at 15% HP (Phase 2)'),
 ('1286307','12863','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Warsong Runner - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Warsong Outrider
@@ -10078,7 +10078,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1289602','12896','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Silverwing Sentinel - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1289603','12896','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Silverwing Sentinel - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1289604','12896','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Silverwing Sentinel - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1289605','12896','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Silverwing Sentinel - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1289605','12896','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Silverwing Sentinel - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1289606','12896','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Silverwing Sentinel - Flee at 15% HP (Phase 2)'),
 ('1289607','12896','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Silverwing Sentinel - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Silverwing Warrior (3.3.0 Official Data)
@@ -10103,7 +10103,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1471503','14715','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Silverwing Elite - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1471504','14715','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Silverwing Elite - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1471505','14715','9','0','100','1','0','5','6100','15900','11','15496','1','0','0','0','0','0','0','0','0','0','Silverwing Elite - Cast Cleave'),
-('1471506','14715','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Silverwing Elite - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1471506','14715','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Silverwing Elite - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1471507','14715','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Silverwing Elite - Flee at 15% HP (Phase 2)'),
 ('1471508','14715','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Silverwing Elite - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Sentinel Farsong
@@ -10111,7 +10111,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1473302','14733','9','5','100','1','5','30','2300','3900','11','15620','1','0','40','2','0','0','0','0','0','0','Sentinel Farsong - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1473303','14733','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sentinel Farsong - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1473304','14733','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sentinel Farsong - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1473305','14733','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sentinel Farsong - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1473305','14733','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sentinel Farsong - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1473306','14733','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sentinel Farsong - Flee at 15% HP (Phase 2)'),
 ('1473307','14733','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sentinel Farsong - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Illiyana Moonblaze
@@ -10121,7 +10121,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1475304','14753','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Illiyana Moonblaze - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1475305','14753','9','0','100','1','0','20','12000','15000','11','6533','1','1','0','0','0','0','0','0','0','0','Illiyana Moonblaze - Cast Net'),
 ('1475306','14753','2','0','100','1','30','0','40000','40000','11','3019','0','1','0','0','0','0','0','0','0','0','Illiyana Moonblaze - Cast Frenzy at 30% HP'),
-('1475307','14753','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Illiyana Moonblaze - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1475307','14753','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Illiyana Moonblaze - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1475308','14753','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Illiyana Moonblaze - Flee at 15% HP (Phase 2)'),
 ('1475309','14753','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Illiyana Moonblaze - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Gapp Jinglepocket (14963) - NSR
@@ -10170,7 +10170,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2473802','24738','9','5','100','1','5','30','2600','3500','11','6660','1','0','40','2','0','0','0','0','0','0','Elenna Edune - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('2473803','24738','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Elenna Edune - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2473804','24738','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Elenna Edune - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('2473805','24738','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Elenna Edune - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2473805','24738','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Elenna Edune - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2473806','24738','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Elenna Edune - Flee at 15% HP (Phase 2)'),
 ('2473807','24738','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Elenna Edune - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Benjari Edune (24739) - NSR
@@ -10391,7 +10391,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('664703','6647','9','5','100','1','5','30','9000','13000','11','18651','4','1','40','2','0','0','0','0','0','0','Magister Hawkhelm - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('664704','6647','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Magister Hawkhelm - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('664705','6647','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Magister Hawkhelm - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('664706','6647','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Magister Hawkhelm - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('664706','6647','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Magister Hawkhelm - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('664707','6647','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Magister Hawkhelm - Flee at 15% HP (Phase 2)'),
 ('664708','6647','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Magister Hawkhelm - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Antilos
@@ -10405,7 +10405,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('664904','6649','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lady Sesspira - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('664905','6649','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Lady Sesspira - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('664906','6649','0','0','100','1','11000','15000','9000','16000','11','20299','4','1','0','0','0','0','0','0','0','0','Lady Sesspira - Cast Forked Lightning'),
-('664907','6649','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Lady Sesspira - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('664907','6649','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Lady Sesspira - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('664908','6649','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lady Sesspira - Flee at 15% HP (Phase 2)'),
 ('664909','6649','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Lady Sesspira - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- General Fangferror
@@ -10454,7 +10454,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('838602','8386','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Horizon Scout Crewman - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('838603','8386','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Horizon Scout Crewman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('838604','8386','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Horizon Scout Crewman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('838605','8386','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Horizon Scout Crewman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('838605','8386','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Horizon Scout Crewman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('838606','8386','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Horizon Scout Crewman - Flee at 15% HP (Phase 2)'),
 ('838607','8386','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Horizon Scout Crewman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Pilot Xiggs Fuselighter (8392) - NSR
@@ -10660,7 +10660,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1719202','17192','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Siltfin Hunter - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('1719203','17192','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Siltfin Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1719204','17192','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Siltfin Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1719205','17192','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Siltfin Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1719205','17192','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Siltfin Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1719206','17192','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Siltfin Hunter - Flee at 15% HP (Phase 2)'),
 ('1719207','17192','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Siltfin Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Wrathscale Naga
@@ -10741,7 +10741,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1743902','17439','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Stillpine Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1743903','17439','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Stillpine Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1743904','17439','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Stillpine Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1743905','17439','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Stillpine Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1743905','17439','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Stillpine Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1743906','17439','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Stillpine Hunter - Flee at 15% HP (Phase 2)'),
 ('1743907','17439','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Stillpine Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- High Chief Stillpine (17440) - NSR
@@ -11044,7 +11044,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1760904','17609','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sunhawk Saboteur - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1760905','17609','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sunhawk Saboteur - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1760906','17609','0','0','100','1','8000','11000','9000','14000','11','31734','1','33','0','0','0','0','0','0','0','0','Sunhawk Saboteur - Cast Mark of the Sunhawk'),
-('1760907','17609','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sunhawk Saboteur - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1760907','17609','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sunhawk Saboteur - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1760908','17609','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sunhawk Saboteur - Flee at 15% HP (Phase 2)'),
 ('1760909','17609','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sunhawk Saboteur - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Sunhawk Agent
@@ -11268,7 +11268,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('218403','2184','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lady Moongazer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('218404','2184','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Lady Moongazer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('218405','2184','9','0','100','1','0','20','8000','11000','11','6533','1','1','0','0','0','0','0','0','0','0','Lady Moongazer - Cast Net'),
-('218406','2184','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Lady Moongazer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('218406','2184','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Lady Moongazer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('218407','2184','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lady Moongazer - Flee at 15% HP (Phase 2)'),
 ('218408','2184','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Lady Moongazer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Darkshore Thresher
@@ -11323,7 +11323,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('220602','2206','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Greymist Hunter - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('220603','2206','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Greymist Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('220604','2206','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Greymist Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('220605','2206','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Greymist Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('220605','2206','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Greymist Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('220606','2206','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Greymist Hunter - Flee at 15% HP (Phase 2)'),
 ('220607','2206','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Greymist Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Greymist Oracle
@@ -11402,7 +11402,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('364902','3649','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Thundris Windweaver - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('364903','3649','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Thundris Windweaver - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('364904','3649','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Thundris Windweaver - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('364905','3649','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Thundris Windweaver - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('364905','3649','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Thundris Windweaver - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('364906','3649','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Thundris Windweaver - Flee at 15% HP (Phase 2)'),
 ('364907','3649','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Thundris Windweaver - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Asterion (3650) - NSR
@@ -11465,7 +11465,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('418302','4183','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Naram Longclaw - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('418303','4183','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Naram Longclaw - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('418304','4183','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Naram Longclaw - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('418305','4183','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Naram Longclaw - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('418305','4183','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Naram Longclaw - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('418306','4183','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Naram Longclaw - Flee at 15% HP (Phase 2)'),
 ('418307','4183','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Naram Longclaw - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Shaldyn
@@ -11578,7 +11578,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1171103','11711','0','0','30','1','15000','30000','30000','60000','9','6314','6315','6316','0','0','0','0','0','0','0','0','Sentinel Aynasha - Random Combat Say'),
 ('1171104','11711','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sentinel Aynasha - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1171105','11711','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sentinel Aynasha - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1171106','11711','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sentinel Aynasha - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1171106','11711','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sentinel Aynasha - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1171107','11711','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sentinel Aynasha - Flee at 15% HP (Phase 2)'),
 ('1171108','11711','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sentinel Aynasha - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Blackwood Tracker
@@ -11618,7 +11618,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2499603','24996','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mariner Bladewhisper - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2499604','24996','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mariner Bladewhisper - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2499605','24996','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Mariner Bladewhisper - Cast Net'),
-('2499606','24996','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mariner Bladewhisper - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2499606','24996','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mariner Bladewhisper - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2499607','24996','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mariner Bladewhisper - Flee at 15% HP (Phase 2)'),
 ('2499608','24996','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mariner Bladewhisper - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mariner Swiftstar
@@ -11627,7 +11627,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2499703','24997','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mariner Swiftstar - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2499704','24997','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mariner Swiftstar - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2499705','24997','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Mariner Swiftstar - Cast Net'),
-('2499706','24997','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mariner Swiftstar - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2499706','24997','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mariner Swiftstar - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2499707','24997','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mariner Swiftstar - Flee at 15% HP (Phase 2)'),
 ('2499708','24997','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mariner Swiftstar - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mariner Farsight
@@ -11636,7 +11636,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2499803','24998','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mariner Farsight - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2499804','24998','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mariner Farsight - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2499805','24998','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Mariner Farsight - Cast Net'),
-('2499806','24998','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mariner Farsight - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2499806','24998','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mariner Farsight - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2499807','24998','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mariner Farsight - Flee at 15% HP (Phase 2)'),
 ('2499808','24998','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mariner Farsight - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mariner Evenmist
@@ -11645,7 +11645,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2500703','25007','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mariner Evenmist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2500704','25007','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mariner Evenmist - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2500705','25007','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Mariner Evenmist - Cast Net'),
-('2500706','25007','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mariner Evenmist - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2500706','25007','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mariner Evenmist - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2500707','25007','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mariner Evenmist - Flee at 15% HP (Phase 2)'),
 ('2500708','25007','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mariner Evenmist - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Captain Angelina Soluna (25009) - NSR
@@ -11658,7 +11658,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2501303','25013','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sentinel Brightgrass - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2501304','25013','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sentinel Brightgrass - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2501305','25013','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Sentinel Brightgrass - Cast Net'),
-('2501306','25013','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sentinel Brightgrass - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2501306','25013','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sentinel Brightgrass - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2501307','25013','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sentinel Brightgrass - Flee at 15% HP (Phase 2)'),
 ('2501308','25013','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sentinel Brightgrass - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Sentinel Winterdew
@@ -11667,7 +11667,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2501403','25014','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sentinel Winterdew - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2501404','25014','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sentinel Winterdew - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2501405','25014','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Sentinel Winterdew - Cast Net'),
-('2501406','25014','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sentinel Winterdew - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2501406','25014','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sentinel Winterdew - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2501407','25014','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sentinel Winterdew - Flee at 15% HP (Phase 2)'),
 ('2501408','25014','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sentinel Winterdew - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Navigator Landerson (25015) - NSR
@@ -11683,7 +11683,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2505303','25053','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mariner Farseeker - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2505304','25053','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mariner Farseeker - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2505305','25053','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Mariner Farseeker - Cast Net'),
-('2505306','25053','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mariner Farseeker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2505306','25053','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mariner Farseeker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2505307','25053','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mariner Farseeker - Flee at 15% HP (Phase 2)'),
 ('2505308','25053','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mariner Farseeker - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mariner Keenstar
@@ -11692,7 +11692,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2505403','25054','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mariner Keenstar - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2505404','25054','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mariner Keenstar - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2505405','25054','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Mariner Keenstar - Cast Net'),
-('2505406','25054','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mariner Keenstar - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2505406','25054','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mariner Keenstar - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2505407','25054','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mariner Keenstar - Flee at 15% HP (Phase 2)'),
 ('2505408','25054','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mariner Keenstar - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mariner Frostnight
@@ -11701,7 +11701,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2505503','25055','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mariner Frostnight - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2505504','25055','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mariner Frostnight - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2505505','25055','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Mariner Frostnight - Cast Net'),
-('2505506','25055','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mariner Frostnight - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2505506','25055','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mariner Frostnight - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2505507','25055','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mariner Frostnight - Flee at 15% HP (Phase 2)'),
 ('2505508','25055','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mariner Frostnight - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mariner Stillglider
@@ -11710,7 +11710,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2505603','25056','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mariner Stillglider - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2505604','25056','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mariner Stillglider - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2505605','25056','9','0','100','1','0','20','7000','10000','11','12024','1','1','0','0','0','0','0','0','0','0','Mariner Stillglider - Cast Net'),
-('2505606','25056','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mariner Stillglider - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2505606','25056','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mariner Stillglider - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2505607','25056','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mariner Stillglider - Flee at 15% HP (Phase 2)'),
 ('2505608','25056','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mariner Stillglider - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Darkshore Flame Warden (25893) - NSR
@@ -11994,7 +11994,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('471603','4716','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Slitherblade Tidehunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('471604','4716','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Slitherblade Tidehunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('471605','4716','9','0','100','1','0','8','25000','29000','11','865','0','1','0','0','0','0','0','0','0','0','Slitherblade Tidehunter - Cast Frost Nova'),
-('471606','4716','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Slitherblade Tidehunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('471606','4716','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Slitherblade Tidehunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('471607','4716','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Slitherblade Tidehunter - Flee at 15% HP (Phase 2)'),
 ('471608','4716','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Slitherblade Tidehunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Slitherblade Oracle
@@ -12042,7 +12042,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('563802','5638','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Kreldig Ungor - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('563803','5638','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Kreldig Ungor - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('563804','5638','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Kreldig Ungor - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('563805','5638','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Kreldig Ungor - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('563805','5638','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Kreldig Ungor - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('563806','5638','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kreldig Ungor - Flee at 15% HP (Phase 2)'),
 ('563807','5638','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Kreldig Ungor - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Takata Steelblade (5641) - NSR
@@ -12323,7 +12323,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('311202','3112','9','5','100','1','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Razormane Scout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('311203','3112','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Razormane Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('311204','3112','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Razormane Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('311205','3112','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Razormane Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('311205','3112','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Razormane Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('311206','3112','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Razormane Scout - Flee at 15% HP (Phase 2)'),
 ('311207','3112','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Razormane Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Razormane Dustrunner
@@ -12358,7 +12358,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('312002','3120','9','5','100','1','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Kolkar Outrunner - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('312003','3120','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Kolkar Outrunner - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('312004','3120','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Kolkar Outrunner - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('312005','3120','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Kolkar Outrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('312005','3120','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Kolkar Outrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('312006','3120','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kolkar Outrunner - Flee at 15% HP (Phase 2)'),
 ('312007','3120','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Kolkar Outrunner - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Durotar Tiger (3121) - NSR
@@ -13022,7 +13022,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('488902','4889','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Torq Ironblast - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('488903','4889','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Torq Ironblast - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('488904','4889','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Torq Ironblast - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('488905','4889','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Torq Ironblast - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('488905','4889','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Torq Ironblast - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('488906','4889','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Torq Ironblast - Flee at 15% HP (Phase 2)'),
 ('488907','4889','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Torq Ironblast - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Piter Verance
@@ -13034,7 +13034,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('489202','4892','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Jensen Farran - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('489203','4892','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Jensen Farran - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('489204','4892','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Jensen Farran - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('489205','4892','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Jensen Farran - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('489205','4892','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Jensen Farran - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('489206','4892','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Jensen Farran - Flee at 15% HP (Phase 2)'),
 ('489207','4892','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Jensen Farran - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bartender Lillian
@@ -13096,7 +13096,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('497302','4973','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Guard Lasiter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('497303','4973','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Guard Lasiter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('497304','4973','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Guard Lasiter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('497305','4973','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Guard Lasiter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('497305','4973','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Guard Lasiter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('497306','4973','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Guard Lasiter - Flee at 15% HP (Phase 2)'),
 ('497307','4973','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Guard Lasiter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Theramore Guard
@@ -13289,7 +13289,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2363603','23636','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mudsprocket Bruiser - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2363604','23636','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mudsprocket Bruiser - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2363605','23636','9','0','100','1','0','20','7000','9000','11','12024','1','0','0','0','0','0','0','0','0','0','Mudsprocket Bruiser - Cast Net'),
-('2363606','23636','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mudsprocket Bruiser - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2363606','23636','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mudsprocket Bruiser - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2363607','23636','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mudsprocket Bruiser - Flee at 15% HP (Phase 2)'),
 ('2363608','23636','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mudsprocket Bruiser - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Deserter Lieutenant
@@ -13399,7 +13399,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2484103','24841','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Marine Halters - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2484104','24841','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Marine Halters - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2484105','24841','9','0','100','1','0','20','7000','9000','11','12024','1','1','0','0','0','0','0','0','0','0','Marine Halters - Cast Net'),
-('2484106','24841','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Marine Halters - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2484106','24841','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Marine Halters - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2484107','24841','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Marine Halters - Flee at 15% HP (Phase 2)'),
 ('2484108','24841','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Marine Halters - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Marine Anderson
@@ -13408,7 +13408,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2484203','24842','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Marine Anderson - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2484204','24842','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Marine Anderson - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2484205','24842','9','0','100','1','0','20','7000','9000','11','12024','1','1','0','0','0','0','0','0','0','0','Marine Anderson - Cast Net'),
-('2484206','24842','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Marine Anderson - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2484206','24842','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Marine Anderson - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2484207','24842','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Marine Anderson - Flee at 15% HP (Phase 2)'),
 ('2484208','24842','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Marine Anderson - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Engineer Combs
@@ -13839,7 +13839,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('525104','5251','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Woodpaw Trapper - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('525105','5251','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Woodpaw Trapper - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('525106','5251','9','0','100','1','0','20','9000','12000','11','6533','1','1','0','0','0','0','0','0','0','0','Woodpaw Trapper - Cast Net'),
-('525107','5251','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Woodpaw Trapper - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('525107','5251','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Woodpaw Trapper - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('525108','5251','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Woodpaw Trapper - Flee at 15% HP (Phase 2)'),
 ('525109','5251','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Woodpaw Trapper - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Woodpaw Brute
@@ -14127,7 +14127,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('795603','7956','9','5','100','1','5','30','8000','11000','11','14443','4','1','40','2','0','0','0','0','0','0','Kindal Moonweaver - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
 ('795604','7956','9','5','100','7','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Kindal Moonweaver - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('795605','7956','9','0','100','7','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Kindal Moonweaver - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('795606','7956','2','0','100','6','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Kindal Moonweaver - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('795606','7956','2','0','100','6','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Kindal Moonweaver - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('795607','7956','2','3','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kindal Moonweaver - Flee at 15% HP (Phase 2)'),
 ('795608','7956','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Kindal Moonweaver - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Jer'kai Moonweaver
@@ -14177,7 +14177,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('954802','9548','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Cawind Trueaim - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('954803','9548','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Cawind Trueaim - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('954804','9548','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Cawind Trueaim - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('954805','9548','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Cawind Trueaim - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('954805','9548','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Cawind Trueaim - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('954806','9548','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Cawind Trueaim - Flee at 15% HP (Phase 2)'),
 ('954807','9548','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Cawind Trueaim - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Shyrka Wolfrunner (9986) - NSR
@@ -14394,7 +14394,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('294702','2947','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Harken Windtotem - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('294703','2947','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Harken Windtotem - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('294704','2947','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Harken Windtotem - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('294705','2947','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Harken Windtotem - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('294705','2947','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Harken Windtotem - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('294706','2947','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Harken Windtotem - Flee at 15% HP (Phase 2)'),
 ('294707','2947','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Harken Windtotem - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mull Thunderhorn (2948) - NSR
@@ -14408,7 +14408,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('295103','2951','9','5','100','1','5','30','9000','14000','11','1516','4','1','40','2','0','0','0','0','0','0','Palemane Poacher - Cast Quick Shot and Set Ranged Weapon Model (Phase 1)'),
 ('295104','2951','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Palemane Poacher - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('295105','2951','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Palemane Poacher - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('295106','2951','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Palemane Poacher - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('295106','2951','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Palemane Poacher - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('295107','2951','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Palemane Poacher - Flee at 15% HP (Phase 2)'),
 ('295108','2951','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Palemane Poacher - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bristleback Quilboar (2952) - NSR
@@ -14469,7 +14469,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('296802','2968','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Galak Outrunner - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('296803','2968','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Galak Outrunner - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('296804','2968','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Galak Outrunner - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('296805','2968','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Galak Outrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('296805','2968','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Galak Outrunner - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('296806','2968','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Galak Outrunner - Flee at 15% HP (Phase 2)'),
 ('296807','2968','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Galak Outrunner - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Wiry Swoop
@@ -14534,7 +14534,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('306102','3061','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Lanka Farshot - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('306103','3061','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lanka Farshot - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('306104','3061','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Lanka Farshot - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('306105','3061','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Lanka Farshot - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('306105','3061','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Lanka Farshot - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('306106','3061','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lanka Farshot - Flee at 15% HP (Phase 2)'),
 ('306107','3061','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Lanka Farshot - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Meela Dawnstrider
@@ -14569,7 +14569,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('307802','3078','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Kennah Hawkseye - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('307803','3078','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Kennah Hawkseye - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('307804','3078','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Kennah Hawkseye - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('307805','3078','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Kennah Hawkseye - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('307805','3078','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Kennah Hawkseye - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('307806','3078','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kennah Hawkseye - Flee at 15% HP (Phase 2)'),
 ('307807','3078','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Kennah Hawkseye - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Varg Windwhisper
@@ -15434,7 +15434,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('398902','3989','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Venture Co. Logger - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('398903','3989','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Venture Co. Logger - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('398904','3989','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Venture Co. Logger - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('398905','3989','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Venture Co. Logger - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('398905','3989','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Venture Co. Logger - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('398906','3989','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Logger - Flee at 15% HP (Phase 2)'),
 ('398907','3989','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Venture Co. Logger - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Venture Co. Deforester
@@ -15453,7 +15453,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('399202','3992','9','5','100','1','5','30','3000','5000','11','7978','1','0','40','2','0','0','0','0','0','0','Venture Co. Engineer - Cast Throw Dynamite and Set Ranged Weapon Model (Phase 1)'),
 ('399203','3992','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Venture Co. Engineer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('399204','3992','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Venture Co. Engineer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('399205','3992','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Venture Co. Engineer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('399205','3992','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Venture Co. Engineer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('399206','3992','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Engineer - Flee at 15% HP (Phase 2)'),
 ('399207','3992','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Venture Co. Engineer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Venture Co. Machine Smith
@@ -15492,7 +15492,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('400702','4007','9','5','100','1','5','30','2300','3900','11','7951','1','0','40','2','0','0','0','0','0','0','Deepmoss Venomspitter - Cast Toxic Spit and Set Ranged Weapon Model (Phase 1)'),
 ('400703','4007','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Deepmoss Venomspitter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('400704','4007','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Deepmoss Venomspitter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('400705','4007','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Deepmoss Venomspitter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('400705','4007','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Deepmoss Venomspitter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('400706','4007','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Deepmoss Venomspitter - Flee at 15% HP (Phase 2)'),
 ('400707','4007','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Deepmoss Venomspitter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Cliff Stormer
@@ -15618,7 +15618,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('405304','4053','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Daughter of Cenarius - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('405305','4053','0','0','100','1','6000','11000','10000','16000','11','527','1','1','0','0','0','0','0','0','0','0','Daughter of Cenarius - Cast Dispel Magic on Target'),
 ('405306','4053','0','0','100','1','4500','6000','9000','14000','11','527','0','1','0','0','0','0','0','0','0','0','Daughter of Cenarius - Cast Dispel Magic on Self'),
-('405307','4053','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Daughter of Cenarius - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('405307','4053','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Daughter of Cenarius - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('405308','4053','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Daughter of Cenarius - Flee at 15% HP (Phase 2)'),
 ('405309','4053','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Daughter of Cenarius - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Mirkfallon Keeper
@@ -15633,7 +15633,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('406103','4061','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mirkfallon Dryad - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('406104','4061','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mirkfallon Dryad - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('406105','4061','9','0','100','1','0','30','10000','16000','11','7992','4','33','0','0','0','0','0','0','0','0','Mirkfallon Dryad - Cast Slowing Poison'),
-('406106','4061','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mirkfallon Dryad - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('406106','4061','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mirkfallon Dryad - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('406107','4061','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mirkfallon Dryad - Flee at 15% HP (Phase 2)'),
 ('406108','4061','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mirkfallon Dryad - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Nal'taszar
@@ -15645,7 +15645,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('407002','4070','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Venture Co. Builder - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('407003','4070','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Venture Co. Builder - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('407004','4070','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Venture Co. Builder - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('407005','4070','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Venture Co. Builder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('407005','4070','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Venture Co. Builder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('407006','4070','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co. Builder - Flee at 15% HP (Phase 2)'),
 ('407007','4070','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Venture Co. Builder - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Prisoner of Jin'Zil (4072) - NSR
@@ -15740,7 +15740,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('851803','8518','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Rynthariel the Keymaster - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('851804','8518','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Rynthariel the Keymaster - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('851805','8518','9','0','100','1','0','30','10000','16000','11','7992','4','33','0','0','0','0','0','0','0','0','Rynthariel the Keymaster - Cast Slowing Poison'),
-('851806','8518','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Rynthariel the Keymaster - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('851806','8518','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Rynthariel the Keymaster - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('851807','8518','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Rynthariel the Keymaster - Flee at 15% HP (Phase 2)'),
 ('851808','8518','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Rynthariel the Keymaster - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Borand
@@ -15768,7 +15768,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1191103','11911','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Grimtotem Mercenary - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1191104','11911','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Grimtotem Mercenary - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1191105','11911','9','0','100','1','0','5','7000','11000','11','12555','4','1','0','0','0','0','0','0','0','0','Grimtotem Mercenary - Cast Pummel'),
-('1191106','11911','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Grimtotem Mercenary - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1191106','11911','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Grimtotem Mercenary - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1191107','11911','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grimtotem Mercenary - Flee at 15% HP (Phase 2)'),
 ('1191108','11911','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Grimtotem Mercenary - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Grimtotem Brute
@@ -15971,7 +15971,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('564602','5646','9','5','100','1','5','30','2200','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Sandfury Axe Thrower - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('564603','5646','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sandfury Axe Thrower - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('564604','5646','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sandfury Axe Thrower - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('564605','5646','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sandfury Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('564605','5646','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sandfury Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('564606','5646','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sandfury Axe Thrower - Flee at 15% HP (Phase 2)'),
 ('564607','5646','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sandfury Axe Thrower - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Sandfury Firecaller (4.0.3 Official Data)
@@ -16020,7 +16020,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('785602','7856','9','5','100','1','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Southsea Freebooter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('785603','7856','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Southsea Freebooter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('785604','7856','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Southsea Freebooter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('785605','7856','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Southsea Freebooter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('785605','7856','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Southsea Freebooter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('785606','7856','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Southsea Freebooter - Flee at 15% HP (Phase 2)'),
 ('785607','7856','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Southsea Freebooter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Southsea Dock Worker (4.0.3 Official Data)
@@ -16197,7 +16197,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2144803','21448','9','5','100','1','0','45','7000','12000','11','23337','4','1','40','2','0','0','0','0','0','0','Gadgetzan Sniper - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('2144804','21448','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Gadgetzan Sniper - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2144805','21448','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Gadgetzan Sniper - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('2144806','21448','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Gadgetzan Sniper - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2144806','21448','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Gadgetzan Sniper - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2144807','21448','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gadgetzan Sniper - Flee at 15% HP (Phase 2)'),
 ('2144808','21448','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Gadgetzan Sniper - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Alurmi (21643) - NSR
@@ -16363,7 +16363,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('215102','2151','9','5','100','1','5','30','2300','3900','11','18561','1','0','40','2','0','0','0','0','0','0','Moon Priestess Amara - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('215103','2151','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Moon Priestess Amara - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('215104','2151','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Moon Priestess Amara - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('215105','2151','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Moon Priestess Amara - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('215105','2151','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Moon Priestess Amara - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('215106','2151','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Moon Priestess Amara - Flee at 15% HP (Phase 2)'),
 ('215107','2151','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Moon Priestess Amara - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Gnarlpine Ambusher (2152) - NSR
@@ -16544,7 +16544,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('325803','3258','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bristleback Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('325804','3258','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Bristleback Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('325805','3258','0','5','100','1','9000','14000','9000','14000','11','8806','4','32','40','2','0','0','0','0','0','0','Bristleback Hunter - Cast Poisoned Shot'),
-('325806','3258','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Bristleback Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('325806','3258','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bristleback Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('325807','3258','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bristleback Hunter - Flee at 15% HP (Phase 2)'),
 ('325808','3258','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Bristleback Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bristleback Water Seeker
@@ -16570,7 +16570,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('326503','3265','9','5','100','1','5','25','2300','3900','40','2','0','0','11','6660','1','0','0','0','0','0','Razormane Hunter - Set Ranged Weapon Model and Cast Shoot (Phase 1)'),
 ('326504','3265','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Razormane Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('326505','3265','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Razormane Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('326506','3265','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Razormane Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('326506','3265','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Razormane Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('326507','3265','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Razormane Hunter - Flee at 15% HP (Phase 2)'),
 ('326508','3265','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Razormane Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Razormane Defender
@@ -16608,7 +16608,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('327203','3272','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Kolkar Wrangler - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('327204','3272','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Kolkar Wrangler - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('327205','3272','9','0','100','1','0','20','14000','21000','11','12024','1','0','0','0','0','0','0','0','0','0','Kolkar Wrangler - Cast Net'),
-('327206','3272','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Kolkar Wrangler - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('327206','3272','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Kolkar Wrangler - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('327207','3272','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kolkar Wrangler - Flee at 15% HP (Phase 2)'),
 ('327208','3272','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Kolkar Wrangler - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Kolkar Stormer
@@ -16661,7 +16661,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('337702','3377','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Bael\'dun Rifleman - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('337703','3377','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bael\'dun Rifleman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('337704','3377','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Bael\'dun Rifleman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('337705','3377','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Bael\'dun Rifleman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('337705','3377','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bael\'dun Rifleman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('337706','3377','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bael\'dun Rifleman - Flee at 15% HP (Phase 2)'),
 ('337707','3377','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Bael\'dun Rifleman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bael'dun Officer
@@ -16702,7 +16702,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('339403','3394','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Barak Kodobane - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('339404','3394','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Barak Kodobane - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('339405','3394','9','0','100','1','0','20','12000','15000','11','6533','1','0','0','0','0','0','0','0','0','0','Barak Kodobane - Cast Net'),
-('339406','3394','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Barak Kodobane - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('339406','3394','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Barak Kodobane - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('339407','3394','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Barak Kodobane - Flee at 15% HP (Phase 2)'),
 ('339408','3394','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Barak Kodobane - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Verog the Dervish
@@ -16760,7 +16760,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('345603','3456','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Razormane Pathfinder - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('345604','3456','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Razormane Pathfinder - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('345605','3456','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Razormane Pathfinder - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('345606','3456','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Razormane Pathfinder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('345606','3456','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Razormane Pathfinder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('345607','3456','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Razormane Pathfinder - Flee at 15% HP (Phase 2)'),
 ('345608','3456','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Razormane Pathfinder - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Razormane Stalker
@@ -16816,7 +16816,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('583803','5838','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Brokespear - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('583804','5838','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Brokespear - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('583805','5838','0','0','100','1','6000','12000','9000','15000','11','7992','4','32','0','0','0','0','0','0','0','0','Brokespear - Cast Slowing Poison'),
-('583806','5838','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Brokespear - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('583806','5838','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Brokespear - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('583807','5838','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Brokespear - Flee at 15% HP (Phase 2)'),
 ('583808','5838','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Brokespear - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Rocklance
@@ -16833,7 +16833,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('584703','5847','0','5','100','1','6000','12000','9000','14000','11','6979','4','1','40','1','0','0','0','0','0','0','Heggin Stonewhisker - Cast Fire Shot and Set Ranged Weapon Model (Phase 1)'),
 ('584704','5847','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Heggin Stonewhisker - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('584705','5847','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Heggin Stonewhisker - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('584706','5847','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Heggin Stonewhisker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('584706','5847','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Heggin Stonewhisker - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('584707','5847','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Heggin Stonewhisker - Flee at 15% HP (Phase 2)'),
 ('584708','5847','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Heggin Stonewhisker - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Malgin Barleybrew
@@ -16844,7 +16844,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('584903','5849','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Digger Flameforge - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('584904','5849','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Digger Flameforge - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('584905','5849','9','0','100','1','0','5','9000','14000','11','6253','1','1','0','0','0','0','0','0','0','0','Digger Flameforge - Cast Backhand'),
-('584906','5849','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Digger Flameforge - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('584906','5849','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Digger Flameforge - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('584907','5849','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Digger Flameforge - Flee at 15% HP (Phase 2)'),
 ('584908','5849','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Digger Flameforge - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Hagg Taurenbane
@@ -16913,7 +16913,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('933603','9336','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Boss Copperplug - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('933604','9336','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Boss Copperplug - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('933605','9336','9','0','100','1','0','20','11000','18000','11','6533','1','0','0','0','0','0','0','0','0','0','Boss Copperplug - Cast Net'),
-('933606','9336','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Boss Copperplug - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('933606','9336','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Boss Copperplug - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('933607','9336','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Boss Copperplug - Flee at 15% HP (Phase 2)'),
 ('933608','9336','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Boss Copperplug - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Warlord Krom'zar
@@ -16975,7 +16975,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('409303','4093','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Galak Wrangler - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('409304','4093','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Galak Wrangler - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('409305','4093','9','0','100','1','0','20','9000','15000','11','6533','1','0','0','0','0','0','0','0','0','0','Galak Wrangler - Cast Net'),
-('409306','4093','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Galak Wrangler - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('409306','4093','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Galak Wrangler - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('409307','4093','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Galak Wrangler - Flee at 15% HP (Phase 2)'),
 ('409308','4093','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Galak Wrangler - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Galak Scout
@@ -16983,7 +16983,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('409402','4094','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Galak Scout - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('409403','4094','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Galak Scout - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('409404','4094','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Galak Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('409405','4094','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Galak Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('409405','4094','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Galak Scout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('409406','4094','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Galak Scout - Flee at 15% HP (Phase 2)'),
 ('409407','4094','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Galak Scout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Galak Mauler
@@ -18380,7 +18380,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2142702','21427','9','13','100','1','5','30','2300','3900','11','36246','1','0','40','2','0','0','0','0','0','0','Strider Jock - Cast Shoot Tech Gun and Set Ranged Weapon Model (Phase 1)'),
 ('2142703','21427','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Strider Jock - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2142704','21427','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Strider Jock - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('2142705','21427','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Strider Jock - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2142705','21427','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Strider Jock - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2142706','21427','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Strider Jock - Flee at 15% HP (Phase 2)'),
 ('2142707','21427','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Strider Jock - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Ogre Building Bunny Small
@@ -18761,7 +18761,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1691204','16912','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mag\'har Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1691205','16912','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mag\'har Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1691206','16912','9','0','100','1','0','20','14000','18000','11','12024','1','0','0','0','0','0','0','0','0','0','Mag\'har Hunter - Cast Net'),
-('1691207','16912','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mag\'har Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1691207','16912','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mag\'har Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1691208','16912','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mag\'har Hunter - Flee at 15% HP (Phase 2)'),
 ('1691209','16912','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mag\'har Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bonechewer Raider
@@ -18939,7 +18939,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1894203','18942','9','5','100','1','5','30','2300','3900','11','22121','1','0','40','2','0','0','0','0','0','0','Innalia - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1894204','18942','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Innalia - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1894205','18942','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Innalia - Disable Dynamic Movement and Eneable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1894206','18942','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Innalia - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1894206','18942','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Innalia - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1894207','18942','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Innalia - Flee at 15% HP (Phase 2)'),
 ('1894208','18942','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Innalia - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Fel Soldier
@@ -18991,7 +18991,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1897002','18970','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Darkspear Axethrower - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
 ('1897003','18970','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Darkspear Axethrower - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1897004','18970','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Darkspear Axethrower - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1897005','18970','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Darkspear Axethrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1897005','18970','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Darkspear Axethrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1897006','18970','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Darkspear Axethrower - Flee at 15% HP (Phase 2)'),
 ('1897007','18970','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Darkspear Axethrower - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Undercity Mage
@@ -19210,7 +19210,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1955803','19558','9','5','100','1','5','30','2300','3900','11','22121','1','0','40','2','0','0','0','0','0','0','Amilya Airheart - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1955804','19558','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Amilya Airheart - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1955805','19558','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Amilya Airheart - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1955806','19558','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Amilya Airheart - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1955806','19558','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Amilya Airheart - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1955807','19558','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Amilya Airheart - Flee at 15% HP (Phase 2)'),
 ('1955808','19558','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Amilya Airheart - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Bonechewer Evoker (3.0.3 Official Data - Logs Only)
@@ -19343,7 +19343,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1714604','17146','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Kil\'sorrow Spellbinder - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1714605','17146','0','0','100','1','3000','6000','20000','25000','11','22744','4','0','0','0','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Cast Chains of Ice'),
 ('1714606','17146','13','0','100','1','25000','25000','0','0','11','31999','1','1','0','0','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Cast Counterspell on Target Casting'),
-('1714607','17146','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1714607','17146','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1714608','17146','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Flee at 15% HP (Phase 2)'),
 ('1714609','17146','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Kil'sorrow Cultist
@@ -20021,7 +20021,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1970504','19705','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Master Daellis Dawnstrike - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1970505','19705','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Master Daellis Dawnstrike - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1970506','19705','9','0','100','1','0','5','16000','21000','11','35963','1','0','0','0','0','0','0','0','0','0','Master Daellis Dawnstrike - Cast Improved Wing Clip'),
-('1970507','19705','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Master Daellis Dawnstrike - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1970507','19705','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Master Daellis Dawnstrike - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1970508','19705','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Master Daellis Dawnstrike - Flee at 15% HP (Phase 2)'),
 ('1970509','19705','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Master Daellis Dawnstrike - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Sunfury Archer
@@ -20031,7 +20031,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1970704','19707','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sunfury Archer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1970705','19707','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sunfury Archer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1970706','19707','9','0','100','1','0','20','12000','15000','11','12024','1','0','0','0','0','0','0','0','0','0','Sunfury Archer - Cast Net'),
-('1970707','19707','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sunfury Archer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1970707','19707','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sunfury Archer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1970708','19707','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sunfury Archer - Flee at 15% HP (Phase 2)'),
 ('1970709','19707','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sunfury Archer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Chief Engineer Trep (19709) - NSR
@@ -20048,7 +20048,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1977903','19779','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sunfury Geologist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1977904','19779','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sunfury Geologist - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1977905','19779','9','0','100','1','0','5','5000','9000','11','35918','1','32','0','0','0','0','0','0','0','0','Sunfury Geologist - Cast Puncture Armor'),
-('1977906','19779','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sunfury Geologist - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1977906','19779','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sunfury Geologist - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1977907','19779','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sunfury Geologist - Flee at 15% HP (Phase 2)'),
 ('1977908','19779','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sunfury Geologist - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Off-Duty Engineer (19780) - NSR
@@ -20191,7 +20191,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2020705','20207','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sunfury Bowman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2020706','20207','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sunfury Bowman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2020707','20207','9','0','100','1','0','20','12000','15000','11','12024','1','0','0','0','0','0','0','0','0','0','Sunfury Bowman - Cast Net'),
-('2020708','20207','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sunfury Bowman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2020708','20207','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sunfury Bowman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2020709','20207','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sunfury Bowman - Flee at 15% HP (Phase 2)'),
 ('2020710','20207','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sunfury Bowman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Shaleskin Flayer
@@ -21040,7 +21040,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2211305','22113','0','5','100','1','2000','2500','9500','11500','40','2','0','0','11','36732','1','0','0','0','0','0','Mordenai - Set Ranged Weapon Model and Cast Scatter Shot'),
 ('2211306','22113','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mordenai - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2211307','22113','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Mordenai - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('2211308','22113','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Mordenai - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2211308','22113','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mordenai - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2211309','22113','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mordenai - Flee at 15% HP (Phase 2)'),
 ('2211310','22113','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mordenai - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Dark Conclave Ritualist
@@ -21060,7 +21060,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2233105','22331','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dragonmaw Elite - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2233106','22331','0','0','100','1','6000','9000','12000','16000','11','38861','4','0','40','2','0','0','0','0','0','0','Dragonmaw Elite - Cast Aimed Shot'),
 ('2233107','22331','0','0','100','1','4000','6000','12000','16000','11','38859','4','32','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Serpent Sting'),
-('2233108','22331','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Dragonmaw Elite - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2233108','22331','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dragonmaw Elite - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2233109','22331','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dragonmaw Elite - Flee at 15% HP (Phase 2)'),
 ('2233110','22331','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dragonmaw Elite - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Demon Portal (Zuluhed)
@@ -21354,7 +21354,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1845203','18452','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Skithian Dreadhawk - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1845204','18452','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Skithian Dreadhawk - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1845205','18452','0','0','100','1','5000','8000','14000','18000','11','32908','1','0','0','0','0','0','0','0','0','0','Skithian Dreadhawk - Cast Wing Clip'),
-('1845206','18452','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Skithian Dreadhawk - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1845206','18452','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Skithian Dreadhawk - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1845207','18452','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Skithian Dreadhawk - Flee at 15% HP (Phase 2)'),
 ('1845208','18452','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Skithian Dreadhawk - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Skithian Windripper
@@ -21374,7 +21374,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1845702','18457','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Tuurem Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1845703','18457','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Tuurem Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1845704','18457','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Tuurem Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1845705','18457','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Tuurem Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1845705','18457','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Tuurem Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1845706','18457','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Tuurem Hunter - Flee at 15% HP (Phase 2)'),
 ('1845707','18457','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Tuurem Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Lost Spirit
@@ -21943,7 +21943,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1811304','18113','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Feralfen Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1811305','18113','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Feralfen Hunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1811306','18113','0','0','100','1','4000','8000','18000','24000','11','31975','1','0','0','0','0','0','0','0','0','0','Feralfen Hunter - Cast Serpent Sting'),
-('1811307','18113','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Feralfen Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1811307','18113','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Feralfen Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1811308','18113','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Feralfen Hunter - Flee at 15% HP (Phase 2)'),
 ('1811309','18113','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Feralfen Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Feralfen Mystic
@@ -23021,7 +23021,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('889703','8897','9','5','100','3','5','30','2300','3900','11','9143','1','0','40','2','0','0','0','0','0','0','Doomforge Craftsman - Cast Bomb and Set Ranged Weapon Model (Phase 1)'),
 ('889704','8897','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Doomforge Craftsman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('889705','8897','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Doomforge Craftsman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('889706','8897','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Doomforge Craftsman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('889706','8897','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Doomforge Craftsman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('889707','8897','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Doomforge Craftsman - Flee at 15% HP (Phase 2)'),
 ('889708','8897','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Doomforge Craftsman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Anvilrage Marshal
@@ -23050,7 +23050,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('890105','8901','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Anvilrage Reservist - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('890106','8901','9','0','100','3','0','5','12000','15000','11','9080','1','1','0','0','0','0','0','0','0','0','Anvilrage Reservist - Cast Hamstring'),
 ('890107','8901','0','0','100','3','8000','11000','7000','12000','11','11976','1','0','0','0','0','0','0','0','0','0','Anvilrage Reservist - Cast Strike'),
-('890108','8901','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Anvilrage Reservist - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('890108','8901','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Anvilrage Reservist - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('890109','8901','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Anvilrage Reservist - Flee at 15% HP (Phase 2)'),
 ('890110','8901','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Anvilrage Reservist - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Shadowforge Citizen (Abortion of a Script - Someday Completely Re-Write This One!!!)
@@ -23509,7 +23509,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1605207','16052','9','0','80','3','0','5','7000','12000','11','27633','1','0','40','1','0','0','0','0','0','0','Malgen Longspear - Cast Wing Clip and Set Melee Weapon Model'),
 ('1605208','16052','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Malgen Longspear - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1605209','16052','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Malgen Longspear - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1605210','16052','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Malgen Longspear - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1605210','16052','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Malgen Longspear - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1605211','16052','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Malgen Longspear - Flee at 15% HP (Phase 2)'),
 ('1605212','16052','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Malgen Longspear - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Korv (16053)
@@ -23638,7 +23638,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('924104','9241','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Smolderthorn Headhunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('924105','9241','9','0','100','3','5','30','9000','13000','11','16001','1','1','40','2','0','0','0','0','0','0','Smolderthorn Headhunter - Cast Impale'),
 ('924106','9241','0','0','100','3','5000','10000','22000','26000','11','6016','1','0','0','0','0','0','0','0','0','0','Smolderthorn Headhunter - Cast Pierce Armor'),
-('924107','9241','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Smolderthorn Headhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('924107','9241','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Smolderthorn Headhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('924108','9241','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Smolderthorn Headhunter - Flee at 15% HP (Phase 2)'),
 ('924109','9241','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Smolderthorn Headhunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Scarshield Warlock
@@ -23715,7 +23715,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('926704','9267','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Smolderthorn Axe Thrower - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('926705','9267','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Smolderthorn Axe Thrower - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('926706','9267','0','0','100','3','9000','14000','11000','15000','11','11428','1','1','0','0','0','0','0','0','0','0','Smolderthorn Axe Thrower - Knockdown'),
-('926707','9267','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Smolderthorn Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('926707','9267','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Smolderthorn Axe Thrower - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('926708','9267','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Smolderthorn Axe Thrower - Flee at 15% HP (Phase 2)'),
 ('926709','9267','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Smolderthorn Axe Thrower - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Smolderthorn Berserker
@@ -24051,7 +24051,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1781503','17815','9','5','100','5','5','30','2400','2400','11','16100','1','0','40','2','0','0','0','0','0','0','Lordaeron Sentry (Heroic) - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('1781504','17815','9','5','100','7','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lordaeron Sentry - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1781505','17815','9','0','100','7','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Lordaeron Sentry - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1781506','17815','2','0','100','6','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Lordaeron Sentry - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1781506','17815','2','0','100','6','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Lordaeron Sentry - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1781507','17815','2','3','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lordaeron Sentry - Flee at 15% HP (Phase 2)'),
 ('1781508','17815','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Lordaeron Sentry - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Durnholde Sentry (4.3.4 Official Data - Normal/Heroic)
@@ -24072,7 +24072,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1782008','17820','0','5','100','3','12500','20200','12100','22900','11','31942','1','1','40','2','0','0','0','0','0','0','Durnholde Rifleman (Normal) - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
 ('1782009','17820','0','5','100','5','12500','20200','12100','22900','11','38383','1','1','40','2','0','0','0','0','0','0','Durnholde Rifleman (Heroic) - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
 ('1782010','17820','0','0','100','7','10900','26500','22900','36200','11','23601','4','1','40','2','0','0','0','0','0','0','Durnholde Rifleman - Cast Scatter Shot and Set Ranged Weapon Model'),
-('1782011','17820','2','0','100','6','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Durnholde Rifleman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1782011','17820','2','0','100','6','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Durnholde Rifleman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1782012','17820','2','3','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Durnholde Rifleman - Flee at 15% HP (Phase 2)'),
 ('1782013','17820','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Durnholde Rifleman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 ('1782014','17820','6','0','10','38','0','0','0','0','1','-1279','-1280','-1281','1','-1280','-1281','-1282','1','-1279','-1280','-1282','Durnholde Rifleman - Random Say on Death'),
@@ -24140,7 +24140,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1809406','18094','9','0','100','7','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Tarren Mill Lookout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1809407','18094','0','5','100','7','14000','19000','14000','19000','11','17174','4','1','40','2','0','0','0','0','0','0','Tarren Mill Lookout - Cast Concussive Shot and Set Ranged Weapon Model (Phase 1)'),
 ('1809408','18094','0','5','100','7','8400','20800','7200','21700','11','35511','1','1','40','2','0','0','0','0','0','0','Tarren Mill Lookout - Cast Serpent Sting and Set Ranged Weapon Model (Phase 1)'),
-('1809409','18094','2','0','100','6','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Tarren Mill Lookout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1809409','18094','2','0','100','6','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Tarren Mill Lookout - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1809410','18094','2','3','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Tarren Mill Lookout - Flee at 15% HP (Phase 2)'),
 ('1809411','18094','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Tarren Mill Lookout - Set Phase 1 and Set Melee Weapon Model on Evade'),
 ('1809412','18094','6','0','10','6','0','0','0','0','1','-1285','-1286','-1287','0','0','0','0','0','0','0','0','Tarren Mill Lookout - Random Say on Death'),
@@ -25474,7 +25474,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('640703','6407','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Holdout Technician - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('640704','6407','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Holdout Technician - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('640705','6407','0','5','100','3','5000','8000','7000','13000','11','8858','1','0','40','2','0','0','0','0','0','0','Holdout Technician - Cast Bomb and Set Ranged Weapon Model (Phase 1)'),
-('640706','6407','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Holdout Technician - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('640706','6407','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Holdout Technician - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('640707','6407','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Holdout Technician - Flee at 15% HP (Phase 2)'),
 ('640708','6407','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Holdout Technician - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Viscous Fallout (7079) - NSR
@@ -25848,7 +25848,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2468304','24683','9','5','100','5','8','60','2300','5000','11','46028','1','0','40','2','0','0','0','0','0','0','Sunblade Mage Guard (Heroic) - Cast Glaive Throw and Set Ranged Weapon Model (Phase 1)'),
 ('2468305','24683','9','5','100','7','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sunblade Mage Guard - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2468306','24683','9','0','100','7','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sunblade Mage Guard - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('2468307','24683','2','0','100','6','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sunblade Mage Guard - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2468307','24683','2','0','100','6','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sunblade Mage Guard - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2468308','24683','2','3','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sunblade Mage Guard - Flee at 15% HP (Phase 2)'),
 ('2468309','24683','7','0','100','6','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sunblade Mage Guard - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Sunblade Blood Knight
@@ -26438,7 +26438,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('453003','4530','9','5','100','3','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Razorfen Handler - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('453004','4530','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Razorfen Handler - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('453005','4530','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Razorfen Handler - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('453006','4530','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Razorfen Handler - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('453006','4530','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Razorfen Handler - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('453007','4530','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Razorfen Handler - Flee at 15% HP (Phase 2)'),
 ('453008','4530','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Razorfen Handler - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Razorfen Beast Trainer
@@ -26448,7 +26448,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('453104','4531','0','5','100','3','6000','9000','9000','14000','11','6984','4','1','40','2','0','0','0','0','0','0','Razorfen Beast Trainer - Cast Frost Shot and Set Ranged Weapon Model (Phase 1)'),
 ('453105','4531','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Razorfen Beast Trainer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('453106','4531','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Razorfen Beast Trainer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('453107','4531','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Razorfen Beast Trainer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('453107','4531','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Razorfen Beast Trainer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('453108','4531','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Razorfen Beast Trainer - Flee at 15% HP (Phase 2)'),
 ('453109','4531','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Razorfen Beast Trainer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Razorfen Beastmaster
@@ -26458,7 +26458,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('453204','4532','0','5','100','3','5000','8000','12000','18000','11','8275','4','33','40','2','0','0','0','0','0','0','Razorfen Beastmaster - Cast Poisoned Shot and Set Ranged Weapon Model (Phase 1)'),
 ('453205','4532','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Razorfen Beastmaster - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('453206','4532','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Razorfen Beastmaster - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('453207','4532','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Razorfen Beastmaster - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('453207','4532','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Razorfen Beastmaster - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('453208','4532','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Razorfen Beastmaster - Flee at 15% HP (Phase 2)'),
 ('453209','4532','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Razorfen Beastmaster - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Tamed Hyena (4534) - NSR
@@ -26546,7 +26546,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('428804','4288','0','5','100','3','9200','11600','10900','18100','11','7896','1','1','40','2','0','0','0','0','0','0','Scarlet Beastmaster - Cast Exploding Shot and Set Ranged Weapon Model (Phase 1)'),
 ('428805','4288','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Scarlet Beastmaster - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('428806','4288','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Scarlet Beastmaster - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('428807','4288','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Scarlet Beastmaster - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('428807','4288','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Scarlet Beastmaster - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('428808','4288','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Beastmaster - Flee at 15% HP (Phase 2)'),
 ('428809','4288','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Scarlet Beastmaster - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Scarlet Evoker (4.3.4 Official Data)
@@ -28149,7 +28149,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('62203','622','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Goblin Engineer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('62204','622','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Goblin Engineer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('62205','622','0','0','100','3','500','4500','67800','89000','11','3605','0','1','0','0','0','0','0','0','0','0','Goblin Engineer - Summon Remote-Controlled Golem'),
-('62206','622','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Goblin Engineer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('62206','622','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Goblin Engineer - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('62207','622','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Goblin Engineer - Flee at 15% HP (Phase 2)'),
 ('62208','622','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Goblin Engineer - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Defias Overseer (3.0.8a Official Data)
@@ -28193,7 +28193,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('172502','1725','9','5','100','3','5','30','2200','3800','11','6660','1','0','40','2','0','0','0','0','0','0','Defias Watchman - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('172503','1725','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Defias Watchman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('172504','1725','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Defias Watchman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('172505','1725','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Defias Watchman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('172505','1725','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Defias Watchman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('172506','1725','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Watchman - Flee at 15% HP (Phase 2)'),
 ('172507','1725','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Defias Watchman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Defias Magician (3.0.8a Official Data)
@@ -28393,7 +28393,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('690603','6906','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Baelog - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('690604','6906','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Baelog - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('690605','6906','9','0','100','3','0','5','5000','7000','11','14516','1','0','0','0','0','0','0','0','0','0','Baelog - Cast Strike'),
-('690606','6906','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Baelog - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('690606','6906','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Baelog - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('690607','6906','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Baelog - Flee at 15% HP (Phase 2)'),
 ('690608','6906','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Baelog - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Eric "The Swift"
@@ -28470,7 +28470,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('729003','7290','0','5','100','3','13700','17100','32500','43500','11','6685','1','1','40','2','0','0','0','0','0','0','Shadowforge Sharpshooter - Cast Piercing Shot and Set Ranged Weapon Model (Phase 1)'),
 ('729004','7290','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Shadowforge Sharpshooter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('729005','7290','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Shadowforge Sharpshooter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('729006','7290','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Shadowforge Sharpshooter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('729006','7290','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Shadowforge Sharpshooter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('729007','7290','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowforge Sharpshooter - Flee at 15% HP (Phase 2)'),
 ('729008','7290','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Shadowforge Sharpshooter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Galgann Firehammer (4.0.1 Official Data) - Flame Shock was removed in 4.0.1
@@ -28686,7 +28686,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('724603','7246','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sandfury Shadowhunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('724604','7246','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Sandfury Shadowhunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('724605','7246','0','0','100','3','12800','27900','25300','42200','11','11641','4','1','0','0','0','0','0','0','0','0','Sandfury Shadowhunter - Cast Hex'),
-('724606','7246','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Sandfury Shadowhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('724606','7246','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sandfury Shadowhunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('724607','7246','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sandfury Shadowhunter - Flee at 15% HP (Phase 2)'),
 ('724608','7246','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sandfury Shadowhunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Sandfury Soul Eater (4.0.1 Official Data)
@@ -28846,7 +28846,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1008204','10082','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Zerillis - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1008205','10082','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Zerillis - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1008206','10082','9','0','100','3','0','20','12100','25400','11','6533','1','1','0','0','0','0','0','0','0','0','Zerillis - Cast Net'),
-('1008207','10082','2','0','100','2','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','Zerillis - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1008207','10082','2','0','100','2','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Zerillis - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1008208','10082','2','3','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Zerillis - Flee at 15% HP (Phase 2)'),
 ('1008209','10082','7','0','100','2','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Zerillis - Set Phase 1 and Set Melee Weapon Model on Evade');
 -- Elder Wildmane (15578) - NSR
