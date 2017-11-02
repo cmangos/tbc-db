@@ -18825,6 +18825,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1696606','16966','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Haal\'eshi Windwalker - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1696607','16966','0','0','100','1','5000','10000','12000','15000','11','32717','1','32','0','0','0','0','0','0','0','0','Haal\'eshi Windwalker - Cast Hurricane'),
 ('1696608','16966','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Haal\'eshi Windwalker - Set Phase to 0 on Evade'),
+-- Haal'eshi Talonguard
+('1696701','16967','9','0','100','1','15','40','10000','20000','11','32720','0','0','0','0','0','0','0','0','0','0','Haal\'eshi Talonguard - Cast Sprint'),
 -- Tunneler (16968) - npc_burster_worm
 -- Bonestripper Buzzard
 ('1697201','16972','9','0','100','1','0','5','9000','16000','11','37012','1','0','0','0','0','0','0','0','0','0','Bonestripper Buzzard - Cast Swoop'),
