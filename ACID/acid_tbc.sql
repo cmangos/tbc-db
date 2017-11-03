@@ -21874,6 +21874,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===========
 -- Zangarmarsh
 -- ===========
+-- Umbrafen Slavebinder
+('1804201','18042','4','0','15','0','0','0','0','0','54','-693','1','0','0','0','0','0','0','0','0','0','Umbrafen Slavebinder - Say on Aggro'),
 -- Rajis Fyashe
 ('1804401','18044','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Rajis Fyashe - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1804402','18044','9','13','100','1','0','40','3400','4800','11','15043','1','0','0','0','0','0','0','0','0','0','Rajis Fyashe - Cast Frostbolt (Phase 1)'),
@@ -33243,7 +33245,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-690','Your death is at hand, $N. Savor these last moments.','0','1','0','22281/23353/23354/23355','0'),
 ('-691','I am older than you can fathom.  Show some respect!','0','1','0','22281/23353/23354/23355','0'),
 ('-692','May whatever god you believe in have mercy on you. For I will show you none.','0','1','0','22281/23353/23354/23355','0'),
--- PLEASE RE-USE 693
+('-693','You won\'t escape us, $r!','0','0','0','18042','0'),
 ('-694','%s chips and splinters!','0','2','0','7023','0'),
 ('-695','A pleasure... to serve the master.','0','0','0','17899','0'),
 ('-696','You will... ultimately fail.','0','0','0','17899','0'),
