@@ -17925,8 +17925,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2066624','20666','30','491519','100','0','5','20845','0','0','53','10055','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Start Relay Script on Receive AI Event 5 (Phase 15)'),
 ('2066625','20666','30','491519','100','0','6','21057','0','0','22','0','0','0','53','10059','0','0','24','0','0','0','Blade\'s Edge - Orb Trigger 01 - Set Phase 0 and Set Active Object Off and Enter Evade Mode on Receive AI Event 6 (Phase 15)'),
 ('2066626','20666','29','65535','100','1','60000','60000','60000','60000','45','5','10','0','22','0','0','0','53','10059','0','0','Blade\'s Edge - Orb Trigger 01 - Send AI Event 5 and Set Phase 0 and Set Active Object Off on Timer (Phase 16-18)'),
--- Ridgespine Stalker
-('2071401','20714','0','0','100','1','3500','4000','10000','11000','11','744','1','32','0','0','0','0','0','0','0','0','Ridgespine Stalker - Cast Poison'),
+-- Ridgespine Stalker NSR
 -- Korgaah
 ('2072301','20723','11','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Korgaah - Set Phase 1 on Spawned'),
 ('2072302','20723','30','13','100','1','5','21241','0','0','22','2','0','0','5','16','0','0','0','0','0','0','Korgaah - Set Phase 2 and Kneel on Received AI Event (Phase 1)'),
