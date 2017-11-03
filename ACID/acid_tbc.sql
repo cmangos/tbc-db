@@ -21875,7 +21875,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zangarmarsh
 -- ===========
 -- Umbrafen Slavebinder
-('2321902','23219','4','0','15','0','0','0','0','0','54','-693','1','0','0','0','0','0','0','0','0','0','Umbrafen Slavebinder - Say on Aggro'),
+('1804201','18042','4','0','15','0','0','0','0','0','54','-693','1','0','0','0','0','0','0','0','0','0','Umbrafen Slavebinder - Say on Aggro'),
 -- Rajis Fyashe
 ('1804401','18044','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Rajis Fyashe - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1804402','18044','9','13','100','1','0','40','3400','4800','11','15043','1','0','0','0','0','0','0','0','0','0','Rajis Fyashe - Cast Frostbolt (Phase 1)'),
