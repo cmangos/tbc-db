@@ -8,6 +8,6 @@ INSERT INTO `dbscript_string` (`entry`, `content_default`, `content_loc1`, `cont
 
 -- add script and correct ID according to above
 DELETE FROM `dbscripts_on_quest_end` WHERE `id`=703;
-INSERT INTO `dbscripts_on_quest_end` (id,delay,command,datalong,datalong2,datalong3,buddy_entry,search_distance,data_flags,dataint1,dataint2,dataint3,dataint4,x,y,z,o,comments) VALUES
+INSERT INTO `dbscripts_on_quest_end` (id,delay,command,datalong,datalong2,datalong3,buddy_entry,search_radius,data_flags,dataint,dataint2,dataint3,dataint4,x,y,z,o,comments) VALUES
 (703, 0, 0, 0, 0, 0, 0, 0, 0, 2000001453, 0, 0, 0, 0, 0, 0, 0, 'Rigglefuzz - emote on Quest Complete');
 
