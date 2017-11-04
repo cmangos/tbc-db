@@ -1,0 +1,10 @@
+-- add quest end rp
+UPDATE `quest_template` SET `CompleteScript`='703' WHERE  `entry`=703;
+
+-- Change string id
+DELETE FROM `dbscript_string` WHERE `entry`=2000009106;
+INSERT INTO `dbscript_string` VALUES (2000009106, '%s cooks up a batch of spicy hot buzzard wings for $N.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 0, 0, 'Rigglefuzz - emote on Quest Complete');
+
+-- add script and correct ID according to above
+DELETE FROM `dbscripts_on_quest_end` WHERE `id`=703 AND `delay`=0 AND `command`=0 AND `datalong`=0 AND `datalong2`=0 AND `datalong3`=0 AND `buddy_entry`=0 AND `search_radius`=0 AND `data_flags`=0 AND `dataint`=2000009106 AND `dataint2`=0 AND `dataint3`=0 AND `dataint4`=0 AND `x`=0 AND `y`=0 AND `z`=0 AND `o`=0 AND `comments`='Rigglefuzz - emote on Quest Complete';
+INSERT INTO `dbscripts_on_quest_end` VALUES (703, 0, 0, 0, 0, 0, 0, 0, 0, 2000009106, 0, 0, 0, 0, 0, 0, 0, 'Rigglefuzz - emote on Quest Complete');
