@@ -17940,6 +17940,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2009506','20095','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2009507','20095','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2009508','20095','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Grimnok Battleborn - Say on Death if Killer Player has Completed Quest 11000'),
+-- Lashh'an Matriarch
+('2011301','20113','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Lashh\'an Matriarch - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2011302','20113','9','5','100','1','0','40','4800','5200','11','9613','1','0','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Cast Shadowbolt (Phase 1)'),
+('2011303','20113','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2011304','20113','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Disable Dynamic Movement at 0-8 Yards'),
+('2011305','20113','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Lashh\'an Matriarch - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2011306','20113','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Set Phase 1 at 15% MP (Phase 2)'),
+('2011307','20113','0','5','100','1','3000','4600','10000','11000','11','37579','1','32','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Cast Impending Doom (Phase 1)'),
+('2011308','20113','14','0','100','1','2000','40','8000','14000','11','34110','6','1','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Cast Shadow Mend on Friendlies'),
+('2011309','20113','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Set Phase to 0 on Evade'),
 -- Gurn Grubnosh 20116 (Missing combat spells!)
 -- Vekh'nir Matriarch
 ('2016101','20161','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Vekh\'nir Matriarch - Enable Dynamic Movement and Set Phase 1 on Aggro'),
