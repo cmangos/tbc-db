@@ -21918,6 +21918,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===========
 -- Zangarmarsh
 -- ===========
+-- Expedition Warden
+('1785501','17855','9','0','100','1','0','20','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Expedition Warden - Cast Net'),
 -- Rajis Fyashe
 ('1804401','18044','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Rajis Fyashe - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1804402','18044','9','13','100','1','0','40','3400','4800','11','15043','1','0','0','0','0','0','0','0','0','0','Rajis Fyashe - Cast Frostbolt (Phase 1)'),
