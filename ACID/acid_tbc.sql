@@ -21554,6 +21554,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1880701','18807','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Kerna - Summon Enraged Wyverns and Yell on Aggro'),
 -- Furnan Skysoar
 ('1880901','18809','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Furnan Skysoar - Summon Enraged Gryphons and Yell on Aggro'),
+-- High Elf Ranger
+('1900001','19000','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','High Elf Ranger - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1900002','19000','9','13','100','1','5','30','2300','3900','11','15547','1','0','40','2','0','0','0','0','0','0','High Elf Ranger - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('1900003','19000','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','High Elf Ranger - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1900004','19000','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','High Elf Ranger - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('1900005','19000','2','0','100','0','15','0','0','0','49','0','0','0','22','1','0','0','0','0','0','0','High Elf Ranger - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('1900006','19000','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','High Elf Ranger - Flee at 15% HP (Phase 2)'),
+('1900007','19000','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','High Elf Ranger - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Lemla Hopewing
 ('1918101','19181','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Lemla Hopewing - Summon Enraged Gryphons and Yell on Aggro'),
 -- Ancient Draenei Spirit
