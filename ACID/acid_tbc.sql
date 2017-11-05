@@ -18259,6 +18259,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2102108','21021','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Scorch Imp - Set Phase to 0 on Evade'),
 -- Grovestalker Lynx
 ('2102201','21022','9','0','100','1','5','40','15000','20000','11','36589','0','0','0','0','0','0','0','0','0','0','Grovestalker Lynx - Cast Dash'),
+-- Stronglimb Deeproot
+('2102301','21023','9','0','100','1','5','30','15000','25000','11','11922','1','0','0','0','0','0','0','0','0','0','Stronglimb Deeproot - Cast Entangling Roots'),
+('2102302','21023','9','0','100','1','0','5','10000','15000','11','12612','0','0','0','0','0','0','0','0','0','0','Stronglimb Deeproot - Cast Stomp'),
 -- Blade's Edge - Nexus Prince Event - Orb01
 ('2102501','21025','30','0','100','0','5','20666','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Nexus Prince Event - Orb01 - Despawn on Receive AI Event 5'),
 -- Dreadwing
