@@ -17940,7 +17940,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2009506','20095','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2009507','20095','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2009508','20095','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Grimnok Battleborn - Say on Death if Killer Player has Completed Quest 11000'),
--- Gurn Grubnosh 20116 (Missing combat spells!)
+-- Gurn Grubnosh
+('2011601','20116','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Gurn Grubnosh - Cast Furious Rage and Text Emote'),
+('2011602','20116','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','0','Gurn Grubnosh - Cast Exhaustion and Text Emote'),
 -- Vekh'nir Matriarch
 ('2016101','20161','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Vekh\'nir Matriarch - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2016102','20161','9','5','100','1','0','40','4800','5200','11','9613','1','0','0','0','0','0','0','0','0','0','Vekh\'nir Matriarch - Cast Shadowbolt (Phase 1)'),
