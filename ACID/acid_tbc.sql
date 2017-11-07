@@ -20688,6 +20688,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1979702','19797','9','0','100','1','0','30','14000','18000','11','16102','1','0','0','0','0','0','0','0','0','0','Illidari Highlord - Cast Flamestrike'),
 -- Illidari Agonizer
 ('1980101','19801','9','0','100','1','0','30','2400','4200','11','36227','1','0','0','0','0','0','0','0','0','0','Illidari Agonizer - Cast Firebolt'),
+-- Illidari Dreadbringer <Servant of Illidan>
+('1979902','19799','0','0','100','1','5000','10000','10000','15000','11','38167','1','32','0','0','0','0','0','0','0','0','Illidari Dreadbringer  - Cast Curse of Blood'),
+('1979901','19799','2','0','100','0','30','0','0','0','11','38166','0','0','54','-106','0','0','0','0','0','0','Illidari Dreadbringer - Cast Frenzy at 30% HP'),
 -- Eclipsion Bloodwarder
 ('1980601','19806','2','0','100','0','35','0','0','0','11','37838','4','0','0','0','0','0','0','0','0','0','Eclipsion Bloodwarder - Cast Blood Leech at 35% HP'),
 ('1980602','19806','6','0','100','0','0','0','0','0','11','38311','1','7','0','0','0','0','0','0','0','0','Eclipsion Bloodwarder - Summon Eclipsion Hawkstrider on Death'),
