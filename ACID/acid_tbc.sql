@@ -20686,6 +20686,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Illidari Highlord
 ('1979701','19797','9','0','100','1','0','25','3000','6000','11','38010','1','32','0','0','0','0','0','0','0','0','Illidari Highlord - Cast Curse of Flames'),
 ('1979702','19797','9','0','100','1','0','30','14000','18000','11','16102','1','0','0','0','0','0','0','0','0','0','Illidari Highlord - Cast Flamestrike'),
+-- Illidari Painlasher
+('1980001','19800','0','0','100','1','3000','7000','9500','12000','11','15968','1','0','0','0','0','0','0','0','0','0','Illidari Painlasher - Cast Lash of Pain'),
 -- Illidari Agonizer
 ('1980101','19801','9','0','100','1','0','30','2400','4200','11','36227','1','0','0','0','0','0','0','0','0','0','Illidari Agonizer - Cast Firebolt'),
 -- Illidari Dreadbringer
