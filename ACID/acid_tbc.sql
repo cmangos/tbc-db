@@ -20292,7 +20292,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rhonsus 20410
 -- Spectral Bovine 20411
 -- Bessy 20415
--- Overseer Theredis 20416
+-- Overseer Theredis
+('2041601','20416','0','0','100','1','4000','9000','9000','14000','11','6713','1','0','54','-1047','0','0','0','0','0','0','Overseer Theredis - Cast Disarm and Emote'),
+('2041602','20416','0','0','100','1','5000','15000','15000','25000','11','35871','1','0','0','0','0','0','0','0','0','0','Overseer Theredis - Cast Spellbreaker'),
 -- Overseer Athanel 20435
 -- Sunfury Protector 20436
 -- Ara Technician 20438
@@ -33563,7 +33565,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1044','Fresh meat!','0','0','0','1716','0'),
 ('-1045','More of the Warden\'s errand boys!','0','0','0','1716','0'),
 ('-1046','%s rushes forward, carefully watching its enemy.','0','2','0','19982','0'),
--- PLEASE RE-USE 1047
+('-1047','%s laughs at your clumsiness.','0','2','0','20416','153'),
 ('-1048','You are in the presence of a god!','0','2','0','15963','0'),
 ('-1049','%s brushes up against $n and farts like only an ogre can.','0','2','0','Generic Blades Edge Ogre /fart emote response','0'),
 ('-1050','Me like to fart, too!','0','0','0','Generic Blades Edge Ogre /fart emote response','1'),
