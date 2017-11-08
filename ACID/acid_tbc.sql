@@ -20450,7 +20450,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2080101','20801','0','0','100','1','8000','12000','10000','18000','11','36253','1','0','0','0','0','0','0','0','0','0','Silroth - Cast Chemical Flames'),
 ('2080102','20801','0','0','100','1','5000','11000','12000','15000','11','36252','0','0','0','0','0','0','0','0','0','0','Silroth - Cast Felforge Flames'),
 -- Protectorate Demolitionist 20802
--- Overmaster Grindgarr 20803
+-- Overmaster Grindgarr
+('2080301','20803','0','0','100','1','4000','8000','10000','18000','11','36487','0','0','0','0','0','0','0','0','0','0','Overmaster Grindgarr - Cast Fel Flames'),
+('2080302','20803','9','0','100','1','0','5','15000','18000','11','35238','1','0','0','0','0','0','0','0','0','0','Overmaster Grindgarr - Cast War Stomp'),
 -- Void Waste Globule 20805
 -- Seeping Sludge Globule 20806
 -- Mehrdad 20810
