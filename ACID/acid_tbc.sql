@@ -18319,6 +18319,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2107201','21072','0','0','100','1','6000','6000','12000','16000','11','12747','1','0','0','0','0','0','0','0','0','0','Living Grove Defender - Cast Entangling Roots'),
 -- Rip Pedalslam
 ('2110701','21107','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Rip Pedalslam - Summon Enraged Gryphons and Yell on Aggro'),
+-- Station Guard
+('2111501','21115','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Station Guard - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2111502','21115','9','13','100','1','5','30','2300','3900','11','36246','1','0','40','2','0','0','0','0','0','0','Station Guard - Cast Shoot Tech Gun and Set Ranged Weapon Model (Phase 1)'),
+('2111503','21115','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Station Guard - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2111504','21115','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Station Guard - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('2111505','21115','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Station Guard - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2111506','21115','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Station Guard - Flee at 15% HP (Phase 2)'),
+('2111507','21115','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Station Guard - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Felsworn Scalewing
 ('2112301','21123','9','0','100','1','0','30','14000','15000','11','32093','1','0','0','0','0','0','0','0','0','0','Felsworn Scalewing - Cast Poison Spit'),
 -- Felsworn Daggermaw
@@ -18404,7 +18412,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2142704','21427','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Strider Jock - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2142705','21427','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Strider Jock - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2142706','21427','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Strider Jock - Flee at 15% HP (Phase 2)'),
-('2142707','21427','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Strider Jock - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('2142707','21427','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Strider Jock - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Ogre Building Bunny Small
 ('2145601','21456','11','0','100','1','0','0','0','0','11','32582','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Small - Cast Ogre Building Bunny Curse Visual on Spawn'),
 -- Wyrmcult Blessed
