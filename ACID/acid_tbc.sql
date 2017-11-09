@@ -18405,6 +18405,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2142705','21427','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Strider Jock - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2142706','21427','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Strider Jock - Flee at 15% HP (Phase 2)'),
 ('2142707','21427','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Strider Jock - Set Phase 1 and Set Melee Weapon Model on Evade'),
+-- Station Sharpshooter
+('2144101','21441','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Station Sharpshooter - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2144102','21441','9','13','100','1','5','30','2300','3900','11','36246','1','0','40','2','0','0','0','0','0','0','Station Sharpshooter - Cast Shoot Tech Gun and Set Ranged Weapon Model (Phase 1)'),
+('2144103','21441','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Station Sharpshooter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2144104','21441','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Station Sharpshooter - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('2144105','21441','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Station Sharpshooter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2144106','21441','2','11','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Station Sharpshooter - Flee at 15% HP (Phase 2)'),
+('2144107','21441','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Station Sharpshooter - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Ogre Building Bunny Small
 ('2145601','21456','11','0','100','1','0','0','0','0','11','32582','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Small - Cast Ogre Building Bunny Curse Visual on Spawn'),
 -- Wyrmcult Blessed
