@@ -21012,6 +21012,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Felspine the Greater
 ('2189701','21897','2','0','100','1','30','0','15000','30000','11','37941','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Flaming Wound at 30% HP'),
 ('2189702','21897','9','0','100','1','0','5','10000','18000','11','38356','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Fel Flames'),
+-- Spellbound Terrorguard
+('2190801','21908','9','0','100','1','0','5','9500','18000','11','37488','0','0','0','0','0','0','0','0','0','0','Spellbound Terrorguard - Cast Fel Flames'),
+('2190802','21908','0','0','100','1','3000','9000','10000','15000','11','31553','1','32','0','0','0','0','0','0','0','0','Spellbound Terrorguard - Cast Hamstring'),
 -- Gan'arg Technician
 ('2196001','21960','1','0','40','1','2000','20000','35000','60000','11','38053','0','0','0','0','0','0','0','0','0','0','Gan\'arg Technician - Cast Tune Deathforge Infernal OOC'),
 -- Val'zareq the Conqueror
