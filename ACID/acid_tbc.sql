@@ -20563,7 +20563,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2180504','21805','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Protectorate Avenger - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2180505','21805','30','0','100','0','5','20985','0','0','5','15','0','0','0','0','0','0','0','0','0','0','Protectorate Avenger - Handle Emote on AI Event Received'),
 ('2180506','21805','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Protectorate Avenger - Set Melee Weapon Model on Evade'),
--- Terrorguard Protector 21923
+-- Terrorguard Protector
+('2192301','21923','0','0','100','1','3000','5000','7000','11000','11','15496','1','0','0','0','0','0','0','0','0','0','Terrorguard Protector - Cast Cleave'),
+('2192302','21923','9','0','100','1','0','5','10000','20000','11','37488','0','0','0','0','0','0','0','0','0','0','Terrorguard Protector - Cast Fel Flames'),
 -- Avatar of Sathal 21925
 -- Area 52 Death Machine 21976
 -- Stormspire Drake 22064
