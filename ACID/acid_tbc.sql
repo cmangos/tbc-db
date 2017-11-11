@@ -21811,6 +21811,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2183803','21838','2','0','100','0','30','0','120000','120000','11','40733','0','1','1','-106','0','0','0','0','0','0','Terokk - Cast Divine Shield at 30% HP '),
 ('2183804','21838','2','0','100','0','25','0','0','0','11','28747','0','1','1','-106','0','0','0','0','0','0','Terokk - Cast Enrage at 25% HP '),
 ('2183805','21838','6','0','100','0','0','0','0','0','11','40722','0','7','0','0','0','0','0','0','0','0','Terokk - Cast Will of the Arakkoa God on Death'),
+-- Mountain Colossus
+('2184401','21844','9','0','100','1','0','10','12000','16000','11','15548','0','0','0','0','0','0','0','0','0','0','Mountain Colossus - Cast Thunderclap'),
+('2184402','21844','2','0','100','0','40','0','0','0','11','39080','0','0','0','0','0','0','0','0','0','0','Mountain Colossus - Cast Summon Mountain Shardling at 40% HP'),
 -- Slain Auchenai Warrior (21846) - NSR
 -- Bone Crawler (21849) - npc_burster_worm
 -- Auchenai Warrior
