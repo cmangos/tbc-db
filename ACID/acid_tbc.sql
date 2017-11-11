@@ -18485,6 +18485,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2200701','22007','1','0','100','1','6000','9000','6000','9000','5','1','0','0','0','0','0','0','0','0','0','0','Tree Warden Chawn - Talk Emote OOC'),
 -- Daggermaw Blackhide
 ('2205201','22052','0','0','100','1','3500','7000','10000','11000','11','35321','1','32','0','0','0','0','0','0','0','0','Daggermaw Blackhide - Cast Gushing Wound'),
+-- Toshley Flying Machine
+('2208901','22089','11','0','100','0','0','0','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Toshley Flying Machine - Enable Dynamic Movement on Spawn'),
+('2208902','22089','0','0','100','1','0','5000','12000','18000','11','38083','1','0','0','0','0','0','0','0','0','0','Toshley Flying Machine - Cast Rocket Launcher'),
 -- Baron Sablemane
 ('2210301','22103','30','0','100','33','5','22130','0','0','5','1','5','6','5','11','15','25','5','273','274','0','Baron Sablemane - Random Emote on Receive AI Event 5 (A)'),
 -- Rip-Blade Ravager
