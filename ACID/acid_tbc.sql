@@ -21820,6 +21820,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2185201','21852','0','0','100','1','4000','8000','5000','9000','11','38618','0','0','0','0','0','0','0','0','0','0','Auchenai Warrior - Cast Whirlwind'),
 -- Ironspine Petrifier
 ('2185401','21854','0','0','100','1','6000','9000','14000','18000','11','32905','4','0','0','0','0','0','0','0','0','0','Ironspine Petrifier - Cast Glare'),
+-- Sha'tar Vindicator
+('2185801','21858','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Sha\'tar Vindicator - Cast Net'),
 -- Slain Sha'tar Vindicator (21859) - NSR
 -- Mana Bomb Lightning Trigger
 ('2189801','21898','30','0','100','0','5','20809','0','0','22','1','0','0','11','37843','0','0','0','0','0','0','Mana Bomb Lightning Trigger - Set Phase 1 and Cast Mana Bomb: Lightning on Receive AI Event 5 (A)'),
