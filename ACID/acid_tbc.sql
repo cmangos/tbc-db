@@ -34268,9 +34268,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10041,0,-690,0,'22281/23353/23354/23355 - Random Spawn Texts'),
 (10041,0,-691,0,'22281/23353/23354/23355 - Random Spawn Texts'),
 (10041,0,-692,0,'22281/23353/23354/23355 - Random Spawn Texts'),
-(10042,0,-733,0,'19948/19993 - Random IC Texts'),
-(10042,0,-734,0,'19948/19993 - Random IC Texts'),
-(10042,0,-735,0,'19948/19993 - Random IC Texts');
+(10042,0,-733,0,'19948/19993/22160 - Random IC Texts'),
+(10042,0,-734,0,'19948/19993/22160 - Random IC Texts'),
+(10042,0,-735,0,'19948/19993/22160 - Random IC Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
