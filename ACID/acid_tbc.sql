@@ -21849,6 +21849,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2191108','21911','2','0','100','0','30','0','0','0','11','5137','1','1','0','0','0','0','0','0','0','0','Skettis Soulcaller - Cast Call of the Grave at 30% HP'),
 ('2191109','21911','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Skettis Soulcaller - Set Phase to 0 on Evade'),
 -- Hai'shulud (22038) - npc_burster_worm
+-- Vengeful Husk
+('2204501','22045','0','0','100','1','4000','8000','13000','18000','11','38621','1','0','0','0','0','0','0','0','0','0','Vengeful Husk - Cast Debilitating Strike'),
 -- Infested Root-Walker
 ('2209501','22095','0','0','100','1','15000','20000','32000','38000','11','39000','0','0','0','0','0','0','0','0','0','0','Infested Root-Walker - Cast Regrowth'),
 ('2209502','22095','6','0','100','0','0','0','0','0','11','39130','0','7','0','0','0','0','0','0','0','0','Infested Root-Walker - Summon Wood Mites on Death'),
