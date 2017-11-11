@@ -20965,6 +20965,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2171905','21719','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dragonmaw Drake-Rider - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2171906','21719','0','0','100','1','6000','11000','12000','16000','11','38859','4','32','0','0','0','0','0','0','0','0','Dragonmaw Drake-Rider - Cast Serpent Sting'),
 ('2171907','21719','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Drake-Rider - Set Melee Weapon Model on Evade'),
+('2171908','21719','6','0','100','0','0','0','0','0','43','0','0','0','11','38341','0','0','0','0','0','0','Dragonmaw Drake-Rider - Dismount and Cast Summon Enslaved Netherdrake on Death'),
 -- Dragonmaw Shaman
 ('2172001','21720','1','0','100','1','1000','1000','600000','600000','11','12550','0','1','0','0','0','0','0','0','0','0','Dragonmaw Shaman - Cast Lightning Shield on Spawn'),
 ('2172002','21720','4','0','15','0','0','0','0','0','1','-101','-102','-105','0','0','0','0','0','0','0','0','Dragonmaw Shaman - Random Say on Aggro'),
@@ -21020,6 +21021,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2197903','21979','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Val\'zareq the Conqueror - Enable Dynamic Movement at 9-80 Yards'),
 ('2197904','21979','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Val\'zareq the Conqueror - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2197905','21979','7','0','100','0','0','0','0','0','0','0','0','0','40','1','0','0','0','0','0','0','Val\'zareq the Conqueror - Set Melee Weapon Model on Evade'),
+-- Dragonmaw Nether Drake
+('2200001','22000','9','0','100','1','0','5','16000','20000','11','38344','1','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Arcane Blast'),
+('2200002','22000','0','0','100','1','4000','8000','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Intangible Presence'),
 -- Corok the Mighty
 ('2201101','22011','9','0','100','1','0','5','10000','12000','11','12612','0','0','0','0','0','0','0','0','0','0','Corok the Mighty - Cast Stomp'),
 ('2201102','22011','9','0','100','1','0','10','8000','15000','11','15550','0','0','0','0','0','0','0','0','0','0','Corok the Mighty - Cast Trample'),
