@@ -20736,6 +20736,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1980602','19806','6','0','100','0','0','0','0','0','11','38311','1','7','0','0','0','0','0','0','0','0','Eclipsion Bloodwarder - Summon Eclipsion Hawkstrider on Death'),
 -- Crazed Colossus
 ('1982301','19823','6','0','100','0','0','0','0','0','11','38223','7','7','0','0','0','0','0','0','0','0','Crazed Colossus - Cast Quest Credit: Crazed Colossus on Death'),
+('1982302','19823','2','0','100','0','75','0','0','0','11','37947','0','0','0','0','0','0','0','0','0','0','Crazed Colossus - Cast Summon Crazed Shardling at 75% HP'),
+('1982303','19823','2','0','100','0','50','0','0','0','11','37948','0','0','0','0','0','0','0','0','0','0','Crazed Colossus - Cast Summon Crazed Shardling at 50% HP'),
+('1982304','19823','2','0','100','0','25','0','0','0','11','37949','0','0','0','0','0','0','0','0','0','0','Crazed Colossus - Cast Summon Crazed Shardling at 25% HP'),
 -- Son of Corok
 ('1982401','19824','9','0','100','1','0','5','9500','18000','11','12612','0','0','0','0','0','0','0','0','0','0','Son of Corok  - Cast Stomp'),
 -- Dark Conclave Talonite
@@ -21056,6 +21059,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Felspine the Greater
 ('2189701','21897','2','0','100','1','30','0','15000','30000','11','37941','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Flaming Wound at 30% HP'),
 ('2189702','21897','9','0','100','1','0','5','10000','18000','11','38356','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Fel Flames'),
+-- Crazed Shardling
+('2193601','21936','0','0','100','1','3000','3000','120000','120000','11','34970','0','0','54','-46','0','0','0','0','0','0','Crazed Shardling - Cast Frenzy'),
 -- Gan'arg Technician
 ('2196001','21960','1','0','40','1','2000','20000','35000','60000','11','38053','0','0','0','0','0','0','0','0','0','0','Gan\'arg Technician - Cast Tune Deathforge Infernal OOC'),
 -- Val'zareq the Conqueror
