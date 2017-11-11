@@ -21046,6 +21046,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Felspine the Greater
 ('2189701','21897','2','0','100','1','30','0','15000','30000','11','37941','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Flaming Wound at 30% HP'),
 ('2189702','21897','9','0','100','1','0','5','10000','18000','11','38356','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Fel Flames'),
+-- Lothros <Servant of Illidan>
+('2192801','21928','0','0','100','1','5000','10000','10000','15000','11','38167','1','32','0','0','0','0','0','0','0','0','Lothros - Cast Curse of Blood'),
+('2192802','21928','2','0','100','0','30','0','0','0','11','38166','0','0','54','-106','0','0','0','0','0','0','Lothros - Cast Frenzy at 30% HP'),
 -- Gan'arg Technician
 ('2196001','21960','1','0','40','1','2000','20000','35000','60000','11','38053','0','0','0','0','0','0','0','0','0','0','Gan\'arg Technician - Cast Tune Deathforge Infernal OOC'),
 -- Val'zareq the Conqueror
