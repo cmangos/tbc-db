@@ -17734,8 +17734,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1974703','19747','0','0','100','1','20000','25000','25000','30000','11','31598','1','0','0','0','0','0','0','0','0','0','Baelmon the Hound-Master - Cast Rain of Fire'),
 ('1974704','19747','0','0','100','0','35000','40000','40000','45000','11','39272','1','0','1','-1439','0','0','0','0','0','0','Baelmon the Hound-Master - Cast Summon Wrath Hound'),
 -- Bloodmaul Skirmisher
-('1994801','19948','0','0','80','1','8000','14000','20000','30000','11','34932','0','0','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Bloodmaul Buzz'),
-('1994802','19948','2','0','100','0','30','0','0','0','11','37786','0','1','1','-46','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Bloodmaul Rage at 30% HP'),
+('1994801','19948','0','0','100','1','8000,','14000','20000','30000','11','37786','0','0','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Bloodmaul Rage'),
+('1994802','19948','8','0','100','1','37786','-1','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Random Say on Bloodmaul Rage Spellhit'),
 ('1994803','19948','9','0','90','1','0','5','12000','16000','11','34802','1','0','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Kick'),
 ('1994804','19948','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1994805','19948','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
@@ -17754,16 +17754,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1995206','19952','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bloodmaul Geomancer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1995207','19952','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1995208','19952','27','0','100','1','12544','1','5000','5000','11','12544','0','32','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Cast Frost Armor on Missing Buff'),
-('1995209','19952','2','0','100','0','30','0','0','0','11','34932','0','1','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Cast Bloodmaul Buzz at 30% HP'),
-('1995210','19952','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Set Phase to 0 on Evade'),
-('1995211','19952','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
-('1995212','19952','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
-('1995213','19952','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Bloodmaul Geomancer - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
-('1995214','19952','22','0','100','1','58','8','11000','0','54','-1052','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Say on Receive TEXTEMOTE_KISS if Player has Completed Quest 11000'),
-('1995215','19952','22','0','100','1','72','8','11000','0','54','-1053','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Say on Receive TEXTEMOTE_POINT if Player has Completed Quest 11000'),
-('1995216','19952','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
-('1995217','19952','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
-('1995218','19952','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Say on Death if Killer Player has Completed Quest 11000'),
+('1995209','19952','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Set Phase to 0 on Evade'),
+('1995210','19952','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
+('1995211','19952','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
+('1995212','19952','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Bloodmaul Geomancer - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
+('1995213','19952','22','0','100','1','58','8','11000','0','54','-1052','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Say on Receive TEXTEMOTE_KISS if Player has Completed Quest 11000'),
+('1995214','19952','22','0','100','1','72','8','11000','0','54','-1053','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Say on Receive TEXTEMOTE_POINT if Player has Completed Quest 11000'),
+('1995215','19952','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
+('1995216','19952','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
+('1995217','19952','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Say on Death if Killer Player has Completed Quest 11000'),
 -- Bloodmaul Brewmaster
 ('1995701','19957','0','0','85','1','6000','12000','30000','35000','11','37591','1','0','0','0','0','0','0','0','0','0','Bloodmaul Brewmaster - Cast Drunken Haze'),
 ('1995702','19957','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brewmaster - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
@@ -17857,7 +17856,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999206','19992','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('1999207','19992','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('1999208','19992','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Say on Death if Killer Player has Completed Quest 11000'),
--- Bloodmaul Mauler (Missing combat spells!)
+-- Bloodmaul Mauler
+('1999301','19993','9','0','100','1','0','5','8000','11000','11','37592','1','0','22','1','0','0','0','0','0','0','Bloodmaul Mauler - Cast Knockdown and Set Phase 1'),
+('1999302','19993','0','1','100','0','0,','0','0','0','54','-732','0','0','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Say (Phase 1)'),
+('1999303','19993','0','0','100','1','8000,','14000','20000','30000','11','37786','0','0','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Cast Bloodmaul Rage'),
+('1999304','19993','8','0','100','1','37786','-1','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Random Say on Bloodmaul Rage Spellhit'),
 -- Bloodmaul Warlock
 ('1999401','19994','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Warlock - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999402','19994','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Warlock - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
@@ -33382,7 +33385,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-729','Remind me once again why it is that I don\'t just leave?','0','0','0','16219','1'),
 ('-730','Would you please shut up?!','0','0','0','16219','1'),
 ('-731','With all due respect, sir, stick it!','0','0','0','16219','1'),
--- PLEASE RE-USE 732 - 741
+('-732','You no cast spells!','0','0','0','19993','0'),
+('-733','Me mad. You get smash in face!','0','0','0','19948/19993','0'),
+('-734','Me angered. Raaah!','0','0','0','19948/19993','0'),
+('-735','Stupid puny thing.  Me smash!','0','0','0','19948/19993','0'),
+-- PLEASE RE-USE 736 - 741
 ('-742','My strength.... is... returning!','0','0','0','16847','0'),
 ('-743','You\'ve restored my health! I\'m in your debt, $N.','0','0','0','16847','0'),
 ('-744','You\'e found a cure! We will crush our enemies!','0','0','0','16847','0'),
@@ -34227,7 +34234,10 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10041,0,-689,0,'22281/23353/23354/23355 - Random Spawn Texts'),
 (10041,0,-690,0,'22281/23353/23354/23355 - Random Spawn Texts'),
 (10041,0,-691,0,'22281/23353/23354/23355 - Random Spawn Texts'),
-(10041,0,-692,0,'22281/23353/23354/23355 - Random Spawn Texts');
+(10041,0,-692,0,'22281/23353/23354/23355 - Random Spawn Texts'),
+(10042,0,-733,0,'19948/19993 - Random IC Texts'),
+(10042,0,-734,0,'19948/19993 - Random IC Texts'),
+(10042,0,-735,0,'19948/19993 - Random IC Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
