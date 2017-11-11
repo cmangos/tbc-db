@@ -18793,12 +18793,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stonescythe Whelp
 ('1692701','16927','2','0','100','0','60','0','0','0','11','33896','0','0','54','-124','0','0','0','0','0','0','Stonescythe Whelp - Cast Desperate Defense and Text Emote at 60% HP'),
 ('1692702','16927','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Stonescythe Whelp - Flee at 15% HP'),
+-- Stonescythe Ambusher
+('1692801','16928','9','0','100','0','0','5','0','0','11','31819','1','0','0','0','0','0','0','0','0','0','Stonescythe Ambusher - Cast Cheap Shot'),
+('1692802','16928','2','0','100','0','60','0','0','0','11','33896','0','0','54','-124','0','0','22','1','0','0','Stonescythe Ambusher - Cast Desperate Defense and Text Emote and Set Phase 1 at 60% HP'),
+('1692803','16928','0','1','100','0','30000','30000','0','0','11','33896','0','0','54','-124','0','0','0','0','0','0','Stonescythe Ambusher - Cast Desperate Defense and Text Emote (Phase 1)'),
+('1692804','16928','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Stonescythe Ambusher - Set Phase to 0 on Evade'),
 -- Stonescythe Alpha
-('1692901','16929','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase 1 on Aggro'),
-('1692902','16929','9','5','100','1','0','5','5000','9000','11','33911','1','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Cast Tear Armor (Phase 1)'),
-('1692903','16929','24','5','100','1','33911','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase 2 on Target Max Tear Armor Aura Stack (Phase 1)'),
-('1692904','16929','28','3','100','1','33911','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase 1 on Target Missing Tear Armor Aura Stack (Phase 2)'),
-('1692905','16929','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase to 0 on Evade'),
+('1692901','16929','28','0','100','1','33911','5','5000','9000','11','33911','1','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Cast Tear Armor on Target Missing Tear Armor Aura Stack'),
+('1692902','16929','2','0','100','0','60','0','0','0','11','33896','0','0','54','-124','0','0','22','1','0','0','Stonescythe Alpha - Cast Desperate Defense and Text Emote and Set Phase 1 at 60% HP'),
+('1692903','16929','0','1','100','0','30000','30000','0','0','11','33896','0','0','54','-124','0','0','0','0','0','0','Stonescythe Alpha - Cast Desperate Defense and Text Emote (Phase 1)'),
+('1692904','16929','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase to 0 on Evade'),
 -- Razorfang Hatchling
 ('1693201','16932','0','0','100','1','4000','8000','8000','12000','11','33781','1','0','0','0','0','0','0','0','0','0','Razorfang Hatchling - Cast Ravage'),
 -- Razorfang Ravager
@@ -32753,7 +32757,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-121','Your time is almost... up.','11002','1','0','17842','0'),
 ('-122','No one is going to save you.','11048','1','0','17842','0'),
 ('-123','I am the serpent king! I can do anything.','5788','1','0','3673','0'),
-('-124','%s defends himself in desperation.','0','2','0','16927/24920','0'),
+('-124','%s defends himself in desperation.','0','2','0','Desperate Defense Text','0'),
 ('-125','The Legion\'s final conquest has begun! Once again the subjugation of this world is within our grasp. Let none survive!','11022','1','0','17767','0'),
 ('-126','Succumb to the icy chill... of death!','11024','1','0','17767','0'),
 ('-127','It will be much colder in your grave.','11058','1','0','17767','0'),
