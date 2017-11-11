@@ -18494,6 +18494,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2213202','22132','9','0','100','1','0','30','2700','3400','11','7951','1','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Cast Toxic Spit'),
 ('2213203','22132','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Enable Dynamic Movement at 9-80 Yards'),
 ('2213204','22132','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Disable Dynamic Movement at 0-8 Yards'),
+-- Ruuan Weald Sister
+('2215101','22151','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Ruuan Weald Sister - Cast Net'),
 -- Bloodmaul Taskmaster 22160 (Missing combat spells!)
 -- Apexis Flayer
 ('2217501','22175','0','0','100','1','8300','13300','22000','26000','11','13443','4','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Rend'),
