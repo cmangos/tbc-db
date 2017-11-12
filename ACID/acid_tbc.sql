@@ -21181,6 +21181,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2285907','22859','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Shadowhoof Summoner - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('2285908','22859','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2285909','22859','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Set Phase to 0 on Evade'),
+-- Lightsworn Vindicator
+('2286101','22861','0','0','100','1','3000','12000','15000','28000','11','33632','1','0','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Exorcism'),
+('2286102','22861','0','0','100','1','5000','15000','18000','24000','11','13005','1','32','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Hammer of Justice'),
+('2286103','22861','14','0','100','1','2500','40','12000','18000','11','13952','6','1','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Holy Light on Friendlies'),
+('2286104','22861','14','0','100','1','1000','40','30000','45000','11','13903','6','1','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Seal of Sacrifice on Friendlies'),
+('2286105','22861','1','0','100','0','5000','25000','0','0','11','39794','0','0','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Redemption OOC'),
 -- Lightsworn Elekk Rider
 ('2296601','22966','6','0','100','0','0','0','0','0','43','0','0','0','11','39782','0','0','0','0','0','0','Lightsworn Elekk Rider - Dismount and Cast Summon Lightsworn Elekk on Death'),
 -- Scryer Cavalier
