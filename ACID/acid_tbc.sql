@@ -21149,6 +21149,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2211308','22113','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Mordenai - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2211309','22113','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mordenai - Flee at 15% HP (Phase 2)'),
 ('2211310','22113','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mordenai - Set Phase 1 and Set Melee Weapon Model on Evade'),
+-- Shadowmoon Eye of Kilrogg
+('2213401','22134','0','0','100','0','1','1','0','0','25','0','0','0','54','-1047','0','0','41','7000','0','0','Shadowmoon Eye of Kilrogg - Flee and Text Emote and Despawn Self on Aggro'),
 -- Dark Conclave Ritualist
 ('2213801','22138','1','0','75','1','1000','1000','48000','55000','11','38469','0','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Dark Conclave Ritualist Channel while OOC'),
 -- Dragonmaw Ascendant
@@ -33632,7 +33634,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1044','Fresh meat!','0','0','0','1716','0'),
 ('-1045','More of the Warden\'s errand boys!','0','0','0','1716','0'),
 ('-1046','%s rushes forward, carefully watching its enemy.','0','2','0','19982','0'),
--- PLEASE RE-USE 1047
+('-1047','You are spotted by the %s!','0','2','0','22134','0'),
 ('-1048','You are in the presence of a god!','0','2','0','15963','0'),
 ('-1049','%s brushes up against $n and farts like only an ogre can.','0','2','0','Generic Blades Edge Ogre /fart emote response','0'),
 ('-1050','Me like to fart, too!','0','0','0','Generic Blades Edge Ogre /fart emote response','1'),
