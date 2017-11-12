@@ -18485,6 +18485,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2200701','22007','1','0','100','1','6000','9000','6000','9000','5','1','0','0','0','0','0','0','0','0','0','0','Tree Warden Chawn - Talk Emote OOC'),
 -- Daggermaw Blackhide
 ('2205201','22052','0','0','100','1','3500','7000','10000','11000','11','35321','1','32','0','0','0','0','0','0','0','0','Daggermaw Blackhide - Cast Gushing Wound'),
+-- Wyrmcult Provisioner
+('2209901','22099','13','0','100','1','12000','15000','0','0','11','34802','1','0','0','0','0','0','0','0','0','0','Wyrmcult Provisioner - Cast Kick on Target Casting'),
+('2209902','22099','0','0','100','1','3000','7000','6000','9000','11','35857','1','0','0','0','0','0','0','0','0','0','Wyrmcult Provisioner - Cast Torch'),
 -- Baron Sablemane
 ('2210301','22103','30','0','100','33','5','22130','0','0','5','1','5','6','5','11','15','25','5','273','274','0','Baron Sablemane - Random Emote on Receive AI Event 5 (A)'),
 -- Rip-Blade Ravager
