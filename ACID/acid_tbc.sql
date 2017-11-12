@@ -18497,7 +18497,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2213202','22132','9','0','100','1','0','30','2700','3400','11','7951','1','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Cast Toxic Spit'),
 ('2213203','22132','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Enable Dynamic Movement at 9-80 Yards'),
 ('2213204','22132','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Disable Dynamic Movement at 0-8 Yards'),
--- Bloodmaul Taskmaster 22160 (Missing combat spells!)
+-- Bloodmaul Taskmaster
+('2216001','22160','9','0','100','1','0','5','8000','11000','11','37592','1','0','0','0','0','0','0','0','0','0','Bloodmaul Taskmaster - Cast Knockdown'),
+('2216002','22160','0','0','100','1','8000,','14000','20000','30000','11','37786','0','0','0','0','0','0','0','0','0','0','Bloodmaul Taskmaster - Cast Bloodmaul Rage'),
+('2216003','22160','8','0','100','1','37786','-1','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Bloodmaul Taskmaster - Random Say on Bloodmaul Rage Spellhit'),
 -- Apexis Flayer
 ('2217501','22175','0','0','100','1','8300','13300','22000','26000','11','13443','4','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Rend'),
 ('2217502','22175','0','0','100','1','4200','6200','28100','31600','11','40770','1','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Shred Armor'),
@@ -34270,9 +34273,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10041,0,-690,0,'22281/23353/23354/23355 - Random Spawn Texts'),
 (10041,0,-691,0,'22281/23353/23354/23355 - Random Spawn Texts'),
 (10041,0,-692,0,'22281/23353/23354/23355 - Random Spawn Texts'),
-(10042,0,-733,0,'19948/19993 - Random IC Texts'),
-(10042,0,-734,0,'19948/19993 - Random IC Texts'),
-(10042,0,-735,0,'19948/19993 - Random IC Texts');
+(10042,0,-733,0,'19948/19993/22160 - Random IC Texts'),
+(10042,0,-734,0,'19948/19993/22160 - Random IC Texts'),
+(10042,0,-735,0,'19948/19993/22160 - Random IC Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
