@@ -20622,7 +20622,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rescued Consortium Dealer 22813
 -- Rescued Sporeggar Scout 22814
 -- Rescued Keepers of Time Custodian 22815
--- Ethereum Avenger 22821
+-- Ethereum Avenger
+('2282101','22821','11','0','100','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Cast Simple Teleport on Spawn'),
+('2282102','22821','0','0','100','1','6000','6000','15000','25000','11','32064','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Cast Battle Shout'),
+('2282103','22821','0','0','100','1','8000','10000','40000','50000','11','36510','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Cast Enchanted Weapons'),
+('2282104','22821','9','0','100','1','8','25','15000','21000','11','36509','1','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Cast Charge'),
+('2282105','22821','8','0','100','1','30023','-1','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Despawn Guardians on Spellhit'),
+('2282106','22821','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Despawn Guardians on Evade'),
+('2282107','22821','6','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Despawn Guardians on Death'),
 -- Ethereum Nullifier 22822
 -- Protectorate Advisor Rahim 22899
 -- Tortured Protectorate Vanguard 22900
