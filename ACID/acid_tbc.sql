@@ -19733,6 +19733,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Legion Fel Cannon
 ('2123301','21233','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - OOC - Prevent Combat Movement'),
 ('2123302','21233','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
+-- Rumbling Earth-Heart
+('2231301','22313','0','0','100','1','7000','14000','14000','21000','11','33840','0','0','0','0','0','0','0','0','0','0','Rumbling Earth-Heart  - Cast Earth Rumble'),
+('2231302','22313','2','0','100','0','30','0','0','0','11','8599','0','0','54','-106','0','0','0','0','0','0','Rumbling Earth-Heart - Cast Enrage at 30% HP'),
 -- Deathshadow Acolyte
 ('2234101','22341','9','0','100','1','0','20','8000','14000','11','32000','1','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Mind Sear'),
 -- Deathshadow Spellbinder
