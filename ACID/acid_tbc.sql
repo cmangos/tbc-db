@@ -21192,6 +21192,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2233110','22331','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dragonmaw Elite - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Demon Portal (Zuluhed)
 ('2233601','22336','1','0','100','0','27000','29000','0','0','12','22338','0','5000','0','0','0','0','0','0','0','0','Demon Portal (Zuluhed) - Summon Arcubus OOC'),
+-- Shadowhoof Assassin <Servant of Illidan>
+('2285801','22858','0','0','100','1','3500','4000','10000','12000','11','37577','1','0','0','0','0','0','0','0','0','0','Shadowhoof Assassin - Cast Debilitating Strike'),
+('2285802','22858','0','0','100','1','6000','8000','11000','18000','11','14873','1','0','0','0','0','0','0','0','0','0','Shadowhoof Assassin - Cast Sinister Strike'),
 -- Shadowhoof Summoner
 ('2285901','22859','1','0','100','1','1000','1000','0','0','11','39550','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Cast Arcane Channeling OOC'),
 ('2285902','22859','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadowhoof Summoner - Enable Dynamic Movement and Set Phase 1 on Aggro'),
