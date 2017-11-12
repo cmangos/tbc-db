@@ -19733,6 +19733,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Legion Fel Cannon
 ('2123301','21233','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - OOC - Prevent Combat Movement'),
 ('2123302','21233','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
+-- Crashing Wave-Spirit
+('2230901','22309','0','0','100','1','0','1000','10000','18000','11','34425','1','0','0','0','0','0','0','0','0','0','Crashing Wave-Spirit - Cast Water Bolt'),
 -- Deathshadow Acolyte
 ('2234101','22341','9','0','100','1','0','20','8000','14000','11','32000','1','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Mind Sear'),
 -- Deathshadow Spellbinder
