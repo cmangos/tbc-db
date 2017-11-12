@@ -21171,6 +21171,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2233110','22331','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dragonmaw Elite - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Demon Portal (Zuluhed)
 ('2233601','22336','1','0','100','0','27000','29000','0','0','12','22338','0','5000','0','0','0','0','0','0','0','0','Demon Portal (Zuluhed) - Summon Arcubus OOC'),
+-- Illidari Ravager <Servant of Illidan>
+('2285701','22857','9','0','100','1','0','5','9500','12000','11','15496','1','0','0','0','0','0','0','0','0','0','Illidari Ravager - Cast Cleave'),
+('2285702','22857','0','0','100','1','6000','6000','14000','16000','11','32009','1','0','0','0','0','0','0','0','0','0','Illidari Ravager - Cast Cutdown'),
+('2285703','22857','0','0','100','1','8000','8000','15000','18000','11','16244','0','0','0','0','0','0','0','0','0','0','Illidari Ravager - Cast Demoralizing Shout'),
 -- Shadowhoof Summoner
 ('2285901','22859','1','0','100','1','1000','1000','0','0','11','39550','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Cast Arcane Channeling OOC'),
 ('2285902','22859','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadowhoof Summoner - Enable Dynamic Movement and Set Phase 1 on Aggro'),
