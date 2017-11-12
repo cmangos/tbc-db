@@ -18552,6 +18552,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2228102','22281','0','0','100','1','3000','9000','10000','15000','11','15708','1','0','0','0','0','0','0','0','0','0','Galvanoth - Cast Mortal Strike'),
 ('2228103','22281','9','0','100','1','0','10','10000','15000','11','38750','0','0','0','0','0','0','0','0','0','0','Galvanoth - Cast War Stomp'),
 ('2228104','22281','0','0','100','1','2500','5500','15000','25000','11','39139','1','0','0','0','0','0','0','0','0','0','Galvanoth - Cast Fel Flamestrike'),
+-- Witness of Doom
+('2228201','22282','0','0','100','0','1','1','0','0','25','0','0','0','54','-48','0','0','41','7000','0','0','Witness of Doom - Flee and Text Emote and Despawn Self on Aggro'),
 -- Furnace Guard
 ('2229101','22291','0','0','100','1','6300','12800','6300','12800','11','32736','1','0','0','0','0','0','0','0','0','0','Furnace Guard - Cast Mortal Strike'),
 -- Vile Fire-Soul
@@ -19237,7 +19239,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1943408','19434','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dreadcaller - Set Phase to 0 on Evade'),
 -- Eye of Grillok
 ('1944002','19440','4','0','100','0','0','0','0','0','1','-48','0','0','0','0','0','0','0','0','0','0','Eye of Grillok - Emote on Aggro'),
-('1944001','19440','0','0','100','1','6000','6000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Eye of Grillok - Despawn After 6 Seconds'),
+('1944001','19440','0','0','100','1','6000','6000','0','0','39','30','0','0','41','0','0','0','0','0','0','0','Eye of Grillok - Call for Help and Despawn After 6 Seconds'),
 -- Worg Master Kruush
 ('1944202','19442','4','0','100','0','0','0','0','0','1','-187','0','0','0','0','0','0','0','0','0','0','Worg Master Kruush - Emote on Aggro'),
 ('1944201','19442','9','0','100','1','0','5','12000','16000','11','30478','1','0','0','0','0','0','0','0','0','0','Worg Master Kruush - Cast Hemmorrhage'),
@@ -21156,7 +21158,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2211309','22113','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mordenai - Flee at 15% HP (Phase 2)'),
 ('2211310','22113','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mordenai - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Shadowmoon Eye of Kilrogg
-('2213401','22134','0','0','100','0','1','1','0','0','25','0','0','0','54','-1047','0','0','41','7000','0','0','Shadowmoon Eye of Kilrogg - Flee and Text Emote and Despawn Self on Aggro'),
+('2213401','22134','0','0','100','0','1','1','0','0','25','0','0','0','54','-48','0','0','41','7000','0','0','Shadowmoon Eye of Kilrogg - Flee and Text Emote and Despawn Self on Aggro'),
 -- Dark Conclave Ritualist
 ('2213801','22138','1','0','75','1','1000','1000','48000','55000','11','38469','0','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Dark Conclave Ritualist Channel while OOC'),
 -- Dragonmaw Ascendant
@@ -32750,7 +32752,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-45','The master... will be angry...','0','0','0','16407','0'),
 ('-46','%s becomes enraged!','0','2','0','Common Text','0'),
 ('-47','%s attempts to run away in fear!','0','2','0','Common Text','0'),
-('-48','You are spotted by the eye of Grillok!','0','2','0','19440','0'),
+('-48','You are spotted by the %s!','0','2','0','19440/22282/22134','0'),
 ('-49','Wait... No! No!','0','0','0','16414','0'),
 ('-50','Not... Fair...','0','0','0','16409','0'),
 ('-51','The fates have turned against me!','0','0','0','16408','0'),
@@ -33640,7 +33642,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1044','Fresh meat!','0','0','0','1716','0'),
 ('-1045','More of the Warden\'s errand boys!','0','0','0','1716','0'),
 ('-1046','%s rushes forward, carefully watching its enemy.','0','2','0','19982','0'),
-('-1047','You are spotted by the %s!','0','2','0','22134','0'),
+-- Reuse 1047
 ('-1048','You are in the presence of a god!','0','2','0','15963','0'),
 ('-1049','%s brushes up against $n and farts like only an ogre can.','0','2','0','Generic Blades Edge Ogre /fart emote response','0'),
 ('-1050','Me like to fart, too!','0','0','0','Generic Blades Edge Ogre /fart emote response','1'),
