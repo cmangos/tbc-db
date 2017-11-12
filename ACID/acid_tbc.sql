@@ -18557,6 +18557,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vekh
 ('2230501','22305','9','0','100','1','0','8','8000','12000','11','37582','0','0','0','0','0','0','0','0','0','0','Vekh - Cast Whirlwind'),
 ('2230502','22305','2','0','100','1','50','0','15300','22900','11','11642','0','0','0','0','0','0','0','0','0','0','Vekh - Cast Heal When Below 50% HP'),
+-- Wyrmcult Hunter
+('2230801','22308','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Wyrmcult Hunter - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2230802','22308','9','13','100','1','5','30','2300','3900','11','15547','1','0','40','2','0','0','0','0','0','0','Wyrmcult Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('2230803','22308','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Wyrmcult Hunter - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2230804','22308','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Wyrmcult Hunter - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('2230805','22308','9','13','100','1','10','40','15000','20000','11','39182','1','0','40','2','0','0','0','0','0','0','Wyrmcult Hunter - Cast Serpent Sting and Set Ranged Weapon Model (Phase 1)'),
+('2230806','22308','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Wyrmcult Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2230807','22308','2','11','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Wyrmcult Hunter - Flee at 15% HP (Phase 2)'),
+('2230808','22308','0','11','100','0','7000','7000','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Wyrmcult Hunter - Enable Dynamic Movement and Set Phase 1 (Phase 2)'),
+('2230809','22308','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Wyrmcult Hunter - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Bloodmaul Soothsayer
 ('2238401','22384','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2238402','22384','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Soothsayer - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
