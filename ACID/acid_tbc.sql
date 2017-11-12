@@ -22324,6 +22324,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2238705','22387','0','0','100','1','4000','9000','9000','14000','11','12058','4','1','0','0','0','0','0','0','0','0','Lithic Oracle - Cast Chain Lightning'),
 -- Lithic Talonguard
 ('2238801','22388','0','0','100','1','2000','5000','45000','50000','11','6016','1','0','0','0','0','0','0','0','0','0','Lithic Talonguard - Cast Pierce Armor'),
+-- Reanimated Exarch 22452
+('2245201','22452','11','0','100','0','0','0','0','0','54','-741','0','0','0','0','0','0','0','0','0','0','Reanimated Exarch - Say on Spawn'),
+('2245202','22452','0','0','100','0','1000','2000','0','0','11','8258','0','0','0','0','0','0','0','0','0','0','Reanimated Exarch - Cast Devotion Aura'),
 -- Vindicator Haylen
 ('2246201','22462','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Vindicator Haylen - Cast Net'),
 -- Wounded Sha'tar Vindicator
@@ -33917,7 +33920,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-733','Me mad. You get smash in face!','0','0','0','19948/19993/22160','0'),
 ('-734','Me angered. Raaah!','0','0','0','19948/19993/22160','0'),
 ('-735','Stupid puny thing.  Me smash!','0','0','0','19948/19993/22160','0'),
--- PLEASE RE-USE 736 - 741
+-- PLEASE RE-USE 736 - 740
+('-741','You have brought me back too soon! I am weak yet... What is this! Who... It matters not! DIE!','0','0','0','22452','1'),
 ('-742','My strength.... is... returning!','0','0','0','16847','0'),
 ('-743','You\'ve restored my health! I\'m in your debt, $N.','0','0','0','16847','0'),
 ('-744','You\'e found a cure! We will crush our enemies!','0','0','0','16847','0'),
