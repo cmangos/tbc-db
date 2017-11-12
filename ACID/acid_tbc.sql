@@ -19738,6 +19738,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Storming Wind-Ripper
 ('2231001','22310','27','0','100','1','12550','1','15000','30000','11','12550','0','0','0','0','0','0','0','0','0','0','Storming Wind-Ripper - Cast Lightning Shield on Missing Buff'),
 ('2231002','22310','0','0','100','1','5000','8000','10000','18000','11','20295','1','0','0','0','0','0','0','0','0','0','Storming Wind-Ripper - Cast Lighting Bolt'),
+-- Rumbling Earth-Heart
+('2231301','22313','9','0','100','1','0','10','25000','35000','11','33840','0','0','0','0','0','0','0','0','0','0','Rumbling Earth-Heart - Cast Earth Rumble'),
+('2231302','22313','2','0','100','0','30','0','0','0','11','8599','0','2','54','-46','0','0','0','0','0','0','Rumbling Earth-Heart - Cast Enrage at 30% HP'),
 -- Deathshadow Acolyte
 ('2234101','22341','9','0','100','1','0','20','8000','14000','11','32000','1','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Mind Sear'),
 -- Deathshadow Spellbinder
