@@ -20611,7 +20611,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Morcrush Shardling
 ('2234401','22344','9','0','100','1','0','10','16000','21000','11','8078','0','0','0','0','0','0','0','0','0','0','Morcrush Shardling - Cast Thunderclap'),
 ('2234402','22344','2','0','100','0','50','0','0','0','11','34970','0','0','0','0','0','0','0','0','0','0','Morcrush Shardling - Cast Enrage at 50% HP'),
--- Furious Nether-wraith 22408
+-- Furious Nether-wraith
+('2240801','22408','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Furious Nether-wraith - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2240802','22408','9','13','100','1','0','40','3800','4800','11','39337','1','0','0','0','0','0','0','0','0','0','Furious Nether-wraith - Cast Arcane Bolt (Phase 1)'),
+('2240803','22408','0','13','100','1','13000','16000','12000','17000','11','38205','1','0','0','0','0','0','0','0','0','0','Furious Nether-wraith - Cast Shadow Blast (Phase 1)'),
+('2240804','22408','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Furious Nether-wraith - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2240805','22408','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Furious Nether-wraith - Disable Dynamic Movement at 0-8 Yards'),
+('2240806','22408','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Furious Nether-wraith - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2240807','22408','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Furious Nether-wraith - Set Phase 1 at 15% MP (Phase 2)'),
+('2240808','22408','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Furious Nether-wraith - Set Phase 0 on Evade'),
 -- Zarevhi 22427
 -- Sab'aoth 22479
 -- Kerpow Blastwrench 22491
