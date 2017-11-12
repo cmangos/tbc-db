@@ -17864,6 +17864,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999302','19993','0','1','100','0','0,','0','0','0','54','-732','0','0','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Say (Phase 1)'),
 ('1999303','19993','0','0','100','1','8000,','14000','20000','30000','11','37786','0','0','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Cast Bloodmaul Rage'),
 ('1999304','19993','8','0','100','1','37786','-1','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Random Say on Bloodmaul Rage Spellhit'),
+('1999305','19993','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Set Phase to 0 on Evade'),
 -- Bloodmaul Warlock
 ('1999401','19994','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Warlock - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999402','19994','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Warlock - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
@@ -18497,7 +18498,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2213202','22132','9','0','100','1','0','30','2700','3400','11','7951','1','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Cast Toxic Spit'),
 ('2213203','22132','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Enable Dynamic Movement at 9-80 Yards'),
 ('2213204','22132','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Mature Cavern Crawler - Disable Dynamic Movement at 0-8 Yards'),
--- Bloodmaul Taskmaster 22160 (Missing combat spells!)
+-- Bloodmaul Taskmaster
+('2216001','22160','9','0','100','1','0','5','8000','11000','11','37592','1','0','22','1','0','0','0','0','0','0','Bloodmaul Taskmaster - Cast Knockdown and Set Phase 1'),
+('2216002','22160','0','1','100','0','0,','0','0','0','54','-732','0','0','0','0','0','0','0','0','0','0','Bloodmaul Taskmaster - Say (Phase 1)'),
+('2216003','22160','0','0','100','1','8000,','14000','20000','30000','11','37786','0','0','0','0','0','0','0','0','0','0','Bloodmaul Taskmaster - Cast Bloodmaul Rage'),
+('2216004','22160','8','0','100','1','37786','-1','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Bloodmaul Taskmaster - Random Say on Bloodmaul Rage Spellhit'),
+('2216005','22160','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bloodmaul Taskmaster - Set Phase to 0 on Evade'),
 -- Apexis Flayer
 ('2217501','22175','0','0','100','1','8300','13300','22000','26000','11','13443','4','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Rend'),
 ('2217502','22175','0','0','100','1','4200','6200','28100','31600','11','40770','1','0','0','0','0','0','0','0','0','0','Apexis Flayer - Cast Shred Armor'),
@@ -33420,10 +33426,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-729','Remind me once again why it is that I don\'t just leave?','0','0','0','16219','1'),
 ('-730','Would you please shut up?!','0','0','0','16219','1'),
 ('-731','With all due respect, sir, stick it!','0','0','0','16219','1'),
-('-732','You no cast spells!','0','0','0','19993','0'),
-('-733','Me mad. You get smash in face!','0','0','0','19948/19993','0'),
-('-734','Me angered. Raaah!','0','0','0','19948/19993','0'),
-('-735','Stupid puny thing.  Me smash!','0','0','0','19948/19993','0'),
+('-732','You no cast spells!','0','0','0','19993/22160','0'),
+('-733','Me mad. You get smash in face!','0','0','0','19948/19993/22160','0'),
+('-734','Me angered. Raaah!','0','0','0','19948/19993/22160','0'),
+('-735','Stupid puny thing.  Me smash!','0','0','0','19948/19993/22160','0'),
 -- PLEASE RE-USE 736 - 741
 ('-742','My strength.... is... returning!','0','0','0','16847','0'),
 ('-743','You\'ve restored my health! I\'m in your debt, $N.','0','0','0','16847','0'),
@@ -34270,9 +34276,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10041,0,-690,0,'22281/23353/23354/23355 - Random Spawn Texts'),
 (10041,0,-691,0,'22281/23353/23354/23355 - Random Spawn Texts'),
 (10041,0,-692,0,'22281/23353/23354/23355 - Random Spawn Texts'),
-(10042,0,-733,0,'19948/19993 - Random IC Texts'),
-(10042,0,-734,0,'19948/19993 - Random IC Texts'),
-(10042,0,-735,0,'19948/19993 - Random IC Texts');
+(10042,0,-733,0,'19948/19993/22160 - Random IC Texts'),
+(10042,0,-734,0,'19948/19993/22160 - Random IC Texts'),
+(10042,0,-735,0,'19948/19993/22160 - Random IC Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
