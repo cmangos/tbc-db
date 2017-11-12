@@ -19735,6 +19735,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2123302','21233','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
 -- Crashing Wave-Spirit
 ('2230901','22309','0','0','100','1','0','1000','10000','18000','11','34425','1','0','0','0','0','0','0','0','0','0','Crashing Wave-Spirit - Cast Water Bolt'),
+-- Storming Wind-Ripper
+('2231001','22310','27','0','100','1','12550','1','15000','30000','11','12550','0','0','0','0','0','0','0','0','0','0','Storming Wind-Ripper - Cast Lightning Shield on Missing Buff'),
+('2231002','22310','0','0','100','1','5000','8000','10000','18000','11','20295','1','0','0','0','0','0','0','0','0','0','Storming Wind-Ripper - Cast Lighting Bolt'),
 -- Deathshadow Acolyte
 ('2234101','22341','9','0','100','1','0','20','8000','14000','11','32000','1','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Mind Sear'),
 -- Deathshadow Spellbinder
