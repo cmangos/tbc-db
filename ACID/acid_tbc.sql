@@ -16226,6 +16226,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2144806','21448','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Gadgetzan Sniper - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('2144807','21448','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gadgetzan Sniper - Flee at 15% HP (Phase 2)'),
 ('2144808','21448','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Gadgetzan Sniper - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('2144809','21448','0','5','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Gadgetzan Sniper - Cast Net (Phase 1)'),
 -- Alurmi (21643) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Tanaris Flame Warden (25916) - NSR
