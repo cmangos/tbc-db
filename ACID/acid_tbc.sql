@@ -22508,6 +22508,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1811307','18113','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Feralfen Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1811308','18113','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Feralfen Hunter - Flee at 15% HP (Phase 2)'),
 ('1811309','18113','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Feralfen Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('1811310','18113','0','5','100','1','7000','9000','14000','18000','11','12024','1','0','0','0','0','0','0','0','0','0','Feralfen Hunter - Cast Net (Phase 1)'),
 -- Feralfen Mystic
 ('1811401','18114','1','0','100','1','1000','1000','600000','600000','11','12550','0','1','0','0','0','0','0','0','0','0','Feralfen Mystic - Cast Lightning Shield on Spawn'),
 ('1811402','18114','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Feralfen Mystic - Enable Dynamic Movement and Set Phase 1 on Aggro'),
