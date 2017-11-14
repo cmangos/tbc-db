@@ -21211,6 +21211,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nethermine Flayer
 ('2316901','23169','0','0','100','1','3000','7000','15000','20000','11','13443','1','0','0','0','0','0','0','0','0','0','Nethermine Flayer - Cast Rend'),
 ('2316902','23169','0','0','100','1','4200','6200','28100','31600','11','40770','1','0','0','0','0','0','0','0','0','0','Nethermine Flayer - Cast Shred Armor'),
+-- Dragonmaw Transporter
+('2318801','23188','4','0','15','0','0','0','0','0','54','0','1','10043','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Random Say on Aggro'),
+('2318802','23188','4','0','100','0','0','0','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Enable Dynamic Movement on Aggro'),
+('2318803','23188','9','0','100','1','5','30','2300','3900','11','38858','1','0','40','2','0','0','0','0','0','0','Dragonmaw Transporter - Cast Shoot and Set Ranged Weapon Model'),
+('2318804','23188','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Enable Dynamic Movement at 9-80 Yards'),
+('2318805','23188','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Dragonmaw Transporter - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('2318808','23188','9','0','100','1','0','100','10000','20000','11','38861','1','0','40','2','0','0','0','0','0','0','Dragonmaw Transporter - Cast Aimed Shot and Set Ranged Weapon Model'),
+('2318809','23188','0','0','100','1','5000','10000','6000','10000','11','38859','1','32','40','2','0','0','0','0','0','0','Dragonmaw Transporter - Cast Serpent Sting and Set Ranged Weapon Model'),
+('2318810','23188','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Set Melee Weapon Model on Evade'),
 -- Nethermine Burster (23285) - npc_burster_worm
 -- Black Blood of Draenor
 ('2328601','23286','0','0','100','1','8000','14000','18000','25000','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
@@ -32820,7 +32829,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-102','Long live the Dragonmaw! Die you worthless $r!','0','0','1','Common Dragonmaw Text','0'),
 ('-103','Brains...','0','0','0','1158','0'),
 ('-104','This land belongs to the Dark Iron Dwarves. Prepare to see the afterlife, $c!','0','0','6','1364','0'),
-('-105','Your bones will break under my boot, $r!','0','0','1','2108','0'),
+('-105','Your bones will break under my boot, $r!','0','0','1','Common Dragonmaw Text','0'),
 ('-106','%s goes into a frenzy!','0','2','0','Enrage Text','0'),
 ('-107','Protect the innocent!','0','0','0','15638','0'),
 ('-108','Serve the Public Trust!','0','0','0','15638','0'),
@@ -34291,7 +34300,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10041,0,-692,0,'22281/23353/23354/23355 - Random Spawn Texts'),
 (10042,0,-733,0,'19948/19993/22160 - Random IC Texts'),
 (10042,0,-734,0,'19948/19993/22160 - Random IC Texts'),
-(10042,0,-735,0,'19948/19993/22160 - Random IC Texts');
+(10042,0,-735,0,'19948/19993/22160 - Random IC Texts'),
+(10043,0,-101,0,'Common Dragonmaw - Random Aggro Texts'),
+(10043,0,-102,0,'Common Dragonmaw - Random Aggro Texts'),
+(10043,0,-105,0,'Common Dragonmaw - Random Aggro Texts');
+
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
