@@ -21875,10 +21875,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Black Blood of Draenor
 ('2328601','23286','0','0','100','1','8000','14000','18000','25000','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
 ('2328602','23286','2','0','100','0','40','0','0','0','11','7279','1','1','25','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Black Sludge and Flee at 40% HP'),
--- Crazed Murkblood Foreman
+-- Crazed Murkblood Foreman 23305
 ('2330501','23305','2','0','100','0','30','0','0','0','11','40743','0','0','54','-106','0','0','0','0','0','0','Crazed Murkblood Foreman - Cast Enrage at 30% HP'),
 -- Netherwing Ally
 ('2332001','23320','0','0','100','1','1000','2000','6000','8000','11','13901','1','0','0','0','0','0','0','0','0','0','Netherwing Ally - Cast Arcane Bolt'),
+-- Crazed Murkblood Miner 23324
+('2332401','23324','2','0','100','0','30','0','0','0','11','40743','0','0','54','-106','0','0','0','0','0','0','Crazed Murkblood Miner - Cast Enrage at 30% HP'),
 -- Nethermine Ravager 23326
 ('2332601','23326','0','0','100','1','5000','20000','15000','20000','11','13443','1','0','0','0','0','0','0','0','0','0','Nethermine Ravager - Cast Rend'),
 ('2332602','23326','2','0','100','1','75','0','10000','15000','11','33810','0','0','0','0','0','0','0','0','0','0','Nethermine Ravager - Cast Rock Shell at 75% HP'),
