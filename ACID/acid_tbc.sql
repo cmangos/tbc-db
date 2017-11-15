@@ -19969,7 +19969,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1888401','18884','11','0','100','0','0','0','0','0','11','32942','0','0','0','0','0','0','0','0','0','0','Warp Chaser - Cast Phasing Invisibility on Spawn'),
 ('1888402','18884','9','0','100','1','8','25','14000','19000','11','37417','1','0','0','0','0','0','0','0','0','0','Warp Chaser - Cast Warp Charge'),
 ('1888403','18884','9','0','100','1','0','5','3000','6000','11','32739','1','0','0','0','0','0','0','0','0','0','Warp Chaser - Cast Venomous Bite'),
--- Farahlon Giant (18885) - NSR
+-- Farahlon Giant
+('1888501','18885','2','0','100','0','75','0','0','0','11','36042','0','0','0','0','0','0','0','0','0','0','Farahlon Giant - Cast Summon Farahlon Crumbler at 75% HP'),
+('1888502','18885','2','0','100','0','50','0','0','0','11','36043','0','0','0','0','0','0','0','0','0','0','Farahlon Giant - Cast Summon Farahlon Crumbler at 50% HP'),
+('1888503','18885','2','0','100','0','25','0','0','0','11','36044','0','0','0','0','0','0','0','0','0','0','Farahlon Giant - Cast Summon Farahlon Crumbler at 25% HP'),
 -- Farahlon Breaker (18886) - NSR
 -- Krexcil (18938) - NSR
 -- Ravandwyr (19217) - NSR
