@@ -22795,7 +22795,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Avian Flyer
 ('2193101','21931','11','0','100','38','0','0','0','0','3','0','18933','0','3','0','4566','0','3','0','20588','0','Avian Flye - randomized model on spawn'),
 -- Anzu (23035) - boss_anzu
--- Brood of Anzu (23132) - NSR
+-- Brood of Anzu
+('2313201','23132','9','0','100','1','0','5','10000','15000','11','31273','1','32','0','0','0','0','0','0','0','0','Brood of Anzu - Cast Screech'),
 -- Hawk Spirit (4.3.4 Official Data - Normal/Heroic)
 ('2313401','23134','8','0','100','5','0','7','0','0','11','40237','0','0','0','0','0','0','0','0','0','0','Hawk Spirit (Heroic) - Cast Protection of the Hawk on SpellHit'),
 -- Falcon Spirit (4.3.4 Official Data - Normal/Heroic)
