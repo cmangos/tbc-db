@@ -19970,7 +19970,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1888402','18884','9','0','100','1','8','25','14000','19000','11','37417','1','0','0','0','0','0','0','0','0','0','Warp Chaser - Cast Warp Charge'),
 ('1888403','18884','9','0','100','1','0','5','3000','6000','11','32739','1','0','0','0','0','0','0','0','0','0','Warp Chaser - Cast Venomous Bite'),
 -- Farahlon Giant (18885) - NSR
--- Farahlon Breaker (18886) - NSR
+-- Farahlon Breaker
+('1888601','18886','2','0','100','0','75','0','0','0','12','21078','1','0','0','0','0','0','0','0','0','0','Farahlon Breaker - Cast Summon Farahlon Shardling at 75% HP'),
+('1888602','18886','2','0','100','0','50','0','0','0','12','21078','1','0','0','0','0','0','0','0','0','0','Farahlon Breaker - Cast Summon Farahlon Shardling at 50% HP'),
+('1888603','18886','2','0','100','0','25','0','0','0','12','21078','1','0','0','0','0','0','0','0','0','0','Farahlon Breaker - Cast Summon Farahlon Shardling at 25% HP'),
 -- Krexcil (18938) - NSR
 -- Ravandwyr (19217) - NSR
 -- Netherstorm Crystal Target
