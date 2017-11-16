@@ -18684,7 +18684,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2247309','22473','12','0','100','0','15','0','0','0','22','3','0','0','1','-1440','0','0','49','0','0','0','Baron Sablemane - Set Phase 3, Disable Dynamic Movement and speak at 15% HP'),
 ('2247310','22473','12','0','100','0','15','0','0','0','11','39255','0','1','1','-1441','0','0','36','22496','0','0','Baron Sablemane - Play emote, Cast Black Dragon Form and Transform at 15% HP'),
 ('2247311','22473','0','7','100','1','3000','4000','6500','7500','11','39263','1','0','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Flame Breath (Phase 3)'),
-
+-- Phase Wyrm
+('2491701','24917','1','0','100','1','1000','1000','600000','600000','11','35319','0','32','0','0','0','0','0','0','0','0','Phase Wyrm - Cast Electric Skin OOC'),
 
 -- ==================
 -- Hellfire Peninsula
