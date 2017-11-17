@@ -21705,6 +21705,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1880701','18807','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Kerna - Summon Enraged Wyverns and Yell on Aggro'),
 -- Furnan Skysoar
 ('1880901','18809','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Furnan Skysoar - Summon Enraged Gryphons and Yell on Aggro'),
+-- Allerian Defender
+('1899901','18999','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Allerian Defender - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1899902','18999','9','13','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Allerian Defender - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('1899903','18999','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Allerian Defender - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1899904','18999','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Allerian Defender - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('1899905','18999','9','13','100','1','10','30','10000','10000','11','18396','1','0','0','0','0','0','0','0','0','0','Allerian Defender - Cast Dismounting Blast (Phase 1)'),
+('1899906','18999','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Allerian Defender - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Lemla Hopewing
 ('1918101','19181','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Lemla Hopewing - Summon Enraged Gryphons and Yell on Aggro'),
 -- Ancient Draenei Spirit
