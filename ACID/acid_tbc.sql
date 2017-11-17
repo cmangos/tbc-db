@@ -18984,6 +18984,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Reaver
 ('1873301','18733','6','0','100','0','0','0','0','0','28','0','34623','0','0','0','0','0','0','0','0','0','Fel Reaver - Remove Fel Reaver Warning Aura on Death'),
 ('1873302','18733','9','0','100','1','0','15','8000','12000','11','41534','0','0','0','0','0','0','0','0','0','0','Fel Reaver - Cast War Stomp'),
+-- Telhamat Protector
+('1875801','18758','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Telhamat Protector - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
+('1875802','18758','9','13','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Telhamat Protector - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('1875803','18758','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Telhamat Protector - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1875804','18758','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Telhamat Protector - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1875805','18758','9','13','100','1','10','30','10000','10000','11','18396','1','0','0','0','0','0','0','0','0','0','Telhamat Protector - Cast Dismounting Blast (Phase 1)'),
+('1875806','18758','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Telhamat Protector - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Kuma
 ('1878501','18785','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Kuma - Summon Enraged Hippogryphs on Aggro'),
 -- Camera Shaker
