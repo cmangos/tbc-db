@@ -18984,6 +18984,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Reaver
 ('1873301','18733','6','0','100','0','0','0','0','0','28','0','34623','0','0','0','0','0','0','0','0','0','Fel Reaver - Remove Fel Reaver Warning Aura on Death'),
 ('1873302','18733','9','0','100','1','0','15','8000','12000','11','41534','0','0','0','0','0','0','0','0','0','0','Fel Reaver - Cast War Stomp'),
+-- Telhamat Protector
+('1875801','18758','9','0','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Telhamat Protector - Cast Shoot and Set Ranged Weapon Model'),
+('1875802','18758','0','0','100','0','5000','15000','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Telhamat Protector - Cast Dismounting Blast'),
 -- Kuma
 ('1878501','18785','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Kuma - Summon Enraged Hippogryphs on Aggro'),
 -- Camera Shaker
