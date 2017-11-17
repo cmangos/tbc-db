@@ -22811,8 +22811,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1850603','18506','0','0','100','2','2000','5000','0','0','11','32888','1','0','0','0','0','0','0','0','0','0','Raging Soul (Normal) - Cast Rage'),
 ('1850604','18506','0','0','100','4','2000','5000','0','0','11','38380','1','0','0','0','0','0','0','0','0','0','Raging Soul (Heroic) - Cast Rage'),
 ('1850605','18506','7','0','100','6','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Raging Soul - Despawn on Evade'),
--- Raging Skeleton
-('1852101','18521','0','0','100','7','5000','10000','5000','10000','14','-100','0','0','0','0','0','0','0','0','0','0','Raging Skeleton - Reset Threat'),
+-- Raging Skeleton 18521 NSR
 -- Angered Skeleton (18524) - NSR
 -- Phasing Soldier (4.3.4 Official Data - Normal/Heroic)
 ('1855601','18556','11','0','100','6','0','0','0','0','11','32828','0','1','0','0','0','0','0','0','0','0','Phasing Soldier - Cast Protection Aura on Spawn'),
