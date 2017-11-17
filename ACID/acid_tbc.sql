@@ -18989,6 +18989,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1875802','18758','0','0','100','0','5000','15000','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Telhamat Protector - Cast Dismounting Blast'),
 -- Kuma
 ('1878501','18785','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Kuma - Summon Enraged Hippogryphs on Aggro'),
+-- Gan'arg Sapper
+('1882701','18827','2','0','100','0','15','0','0','0','11','33974','0','0','0','0','0','0','0','0','0','0','Gan\'arg Sapper - Cast Power Burn at 15% HP'),
 -- Camera Shaker
 ('1882801','18828','29','0','100','1','6000','11000','6000','11000','11','33016','0','0','0','0','0','0','0','0','0','0','Camera Shaker - Cast Internal Shake Camera'),
 -- Vlagga Freyfeather
