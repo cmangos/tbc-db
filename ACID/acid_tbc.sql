@@ -18989,6 +18989,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1875802','18758','0','0','100','0','5000','15000','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Telhamat Protector - Cast Dismounting Blast'),
 -- Kuma
 ('1878501','18785','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Kuma - Summon Enraged Hippogryphs on Aggro'),
+-- Gan'arg Sapper
+('1882701','18827','2','0','100','0','20','0','0','0','11','33974','0','0','54','-284','0','0','0','0','0','0','Gan\'arg Sapper - Cast Power Burn and Text Emote at 20% HP'),
 -- Camera Shaker
 ('1882801','18828','29','0','100','1','6000','11000','6000','11000','11','33016','0','0','0','0','0','0','0','0','0','0','Camera Shaker - Cast Internal Shake Camera'),
 -- Vlagga Freyfeather
@@ -33059,7 +33061,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-281','They mustn\'t escape!','0','0','0','5355/16769/1410','0'),
 ('-282','Kill them before they get away!','0','0','0','5355/16769/1410','0'),
 ('-283','My weapon be thirsty!','0','0','0','Common Troll Text','0'),
--- Reuse 284 - 285
+('-284','%s\'s eyes glow red as he begins to cackle madly!','0','2','7','18827','0'),
+-- Reuse 285
 ('-286','%s nods.','0','2','0','16589','0'),
 ('-287','Lost some of my best soldiers that day...','0','0','0','16589','0'),
 ('-288','But that\'s not the worst of it. Before I could pull us back, a group of \'em spotted us and attacked.','0','0','0','16589','0'),
