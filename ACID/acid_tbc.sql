@@ -20608,7 +20608,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2093204','20932','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Nuramoc - Enable Dynamic Movement at 9-80 Yards'),
 ('2093205','20932','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Nuramoc - Disable Dynamic Movement at 0-8 Yards'),
 ('2093206','20932','2','0','100','0','99','0','0','0','11','38905','0','0','0','0','0','0','0','0','0','0','Nuramoc - Cast Prismatic Shield When Below 99% HP'),
--- Severed Defender 20934
+-- Severed Defender <Kirin Tor>
+('2093401','20934','9','0','100','1','0','5','10000','15000','11','36093','1','0','0','0','0','0','0','0','0','0','Severed Defender - Cast Ghost Strike'),
+('2093402','20934','0','0','100','1','0','2000','9000','14000','11','12169','0','0','0','0','0','0','0','0','0','0','Severed Defender - Cast Shield Block'),
 -- Dealer Rashaad 20980
 -- Dealer Najeeb 20981
 -- Mutated Farahlon Lasher 20983
