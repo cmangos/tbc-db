@@ -17733,6 +17733,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1974702','19747','0','0','100','1','5000','9000','18000','25000','11','11443','1','0','0','0','0','0','0','0','0','0','Baelmon the Hound-Master - Cast Cripple'),
 ('1974703','19747','0','0','100','1','20000','25000','25000','30000','11','31598','1','0','0','0','0','0','0','0','0','0','Baelmon the Hound-Master - Cast Rain of Fire'),
 ('1974704','19747','0','0','100','0','35000','40000','40000','45000','11','39272','1','0','1','-1439','0','0','0','0','0','0','Baelmon the Hound-Master - Cast Summon Wrath Hound'),
+-- Lashh'an Talonite
+('1994301','19943','1','0','100','0','1000','1000','0','0','11','34854','0','0','0','0','0','0','0','0','0','0','Lashh\'an Talonite - Cast Lashh\'an Kaliri OOC'),
+('1994302','19943','33','0','100','1','0','0','5000','8000','11','37685','1','0','0','0','0','0','0','0','0','0','Lashh\'an Talonite - Cast Backstab on Facing Target Back'),
 -- Bloodmaul Skirmisher
 ('1994801','19948','0','0','100','1','8000,','14000','20000','30000','11','37786','0','0','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Bloodmaul Rage'),
 ('1994802','19948','8','0','100','1','37786','-1','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Random Say on Bloodmaul Rage Spellhit'),
@@ -17952,6 +17955,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2009506','20095','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2009507','20095','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2009508','20095','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Grimnok Battleborn - Say on Death if Killer Player has Completed Quest 11000'),
+-- Lashh'an Kaliri 20109 NSR
 -- Gurn Grubnosh 20116 (Missing combat spells!)
 -- Vekh'nir Matriarch
 ('2016101','20161','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Vekh\'nir Matriarch - Enable Dynamic Movement and Set Phase 1 on Aggro'),
