@@ -17961,6 +17961,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999819','19998','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('1999820','19998','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('1999821','19998','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Shaman - Say on Death if Killer Player has Completed Quest 11000'),
+-- Bloodmaul Dire Wolf
+('2005801','20058','0','0','100','1','0','5000','15000','20000','11','13443','1','0','0','0','0','0','0','0','0','0','Bloodmaul Dire Wolf - Cast Rend'),
 -- Grimnok Battleborn (Missing combat spells!)
 ('2009501','20095','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2009502','20095','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
