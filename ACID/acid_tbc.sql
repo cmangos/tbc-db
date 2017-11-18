@@ -19936,6 +19936,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1885902','18859','0','0','100','1','5000','7000','14000','17000','11','34017','1','0','0','0','0','0','0','0','0','0','Wrath Priestess - Cast Rain of Chaos'),
 -- Daughter of Destiny
 ('1886001','18860','0','0','100','1','4000','8000','7000','12000','11','36225','0','0','0','0','0','0','0','0','0','0','Daughter of Destiny - Cast Chaos Nova'),
+('1886002','18860','9','0','100','1','0','30','120000','130000','11','36844','1','32','0','0','0','0','0','0','0','0','Daughter of Destiny - Cast Curse of Horrors'),
 -- Mana Wraith
 ('1886401','18864','9','0','100','1','0','30','9000','13000','11','29054','1','0','0','0','0','0','0','0','0','0','Mana Wraith - Cast Devour Mana'),
 -- Warp Aberration
@@ -20677,7 +20678,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Netherock Crumbler 21323
 -- Apex Crumbler 21328
 -- Thorny Growth 21331
--- Shadow Horror 21435
+-- Shadow Horror 21435 NSR
 -- Kablamm Farflinger 21493
 -- Pathaleon the Calculator's Image 21504
 -- Nandirx 21732
