@@ -20999,6 +20999,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2130209','21302','2','7','100','0','100','45','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 1 When Above 45% HP (Phase 3)'),
 ('2130210','21302','9','7','100','1','9','15','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Enable Dynamic Movement at 9-15 Yards (Phase 3)'),
 ('2130211','21302','7','0','100','0','0','0','0','0','22','0','0','0','48','2','0','0','0','0','0','0','Shadow Council Warlock - Set Phase 0 and Set Waypoint Movement on Evade'),
+-- Mutant Horror
+('2130501','21305','9','0','100','1','0','5','15000','20000','11','37950','1','0','0','0','0','0','0','0','0','0','Mutant Horror - Cast Mutated Blood'),
+('2130502','21305','2','0','100','0','30','0','0','0','11','8599','0','0','54','-106','0','0','0','0','0','0','Mutant Horror - Cast Enrage at 30% HP'),
 -- Painmistress Gabrissa
 ('2130901','21309','12','0','100','1','100','50','10000','12000','11','38048','1','32','0','0','0','0','0','0','0','0','Painmistress Gabrissa - Cast Curse of Pain on Target Above 50% HP'),
 ('2130902','21309','0','0','100','1','6000','8000','15000','16000','11','38169','0','0','0','0','0','0','0','0','0','0','Painmistress Gabrissa - Cast Subservience'),
