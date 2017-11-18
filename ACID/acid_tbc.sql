@@ -20340,7 +20340,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2020709','20207','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sunfury Bowman - Flee at 15% HP (Phase 2)'),
 ('2020710','20207','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Sunfury Bowman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Shaleskin Flayer
-('2021001','20210','4','0','100','0','0','0','0','0','11','36576','0','0','0','0','0','0','0','0','0','0','Shaleskin Flayer - Cast Shaleskin on Aggro'),
+('2021001','20210','1','0','100','1','1000','1000','600000','600000','11','36576','0','34','0','0','0','0','0','0','0','0','Shaleskin Flayer - Cast Shaleskin OOC'),
 -- Pentatharon
 ('2021501','20215','0','0','100','1','5000','8500','7400','12500','11','36039','1','0','0','0','0','0','0','0','0','0','Pentatharon - Cast Carrion Swarm'),
 -- Sunfury Technician (20218) - NSR
@@ -20485,7 +20485,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2056102','20561','10','0','100','0','0','4','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion, Despawn Self AND Summon Parasitic Fleshbeast on LOS'),
 -- Image of Agent Ya-six <The Protectorate>
 ('2056401','20564','11','0','100','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Image of Agent Ya-six <The Protectorate> - Cast Simple Teleport on Spawn'),
--- Shaleskin Ripper 20606
+-- Shaleskin Ripper
+('2060601','20606','1','0','100','1','1000','1000','600000','600000','11','36576','0','34','0','0','0','0','0','0','0','0','Shaleskin Ripper - Cast Shaleskin OOC'),
 -- Craghide Basilisk
 ('2060702','20607','9','0','100','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Craghide Basilisk - Cast Threshalisk Charge on Aggro'),
 ('2060701','20607','9','0','100','1','5','30','45000','55000','11','35313','1','0','0','0','0','0','0','0','0','0','Craghide Basilisk - Cast Hypnotic Gaze'),
