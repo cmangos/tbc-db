@@ -20526,7 +20526,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2072709','20727','2','0','100','0','20','0','0','0','11','33962','0','2','0','0','0','0','0','0','0','0','Captain Zovax - Cast Toughen VIII at 20% HP'),
 ('2072710','20727','2','0','100','0','10','0','0','0','11','33962','0','2','0','0','0','0','0','0','0','0','Captain Zovax - Cast Toughen IX at 10% HP'),
 -- Captured Protectorate Vanguard 20763
--- Warden Icoshock 20770
+-- Warden Icoshock
+('2077001','20770','1','0','100','1','1000','1000','600000','600000','11','36515','0','32','0','0','0','0','0','0','0','0','Warden Icoshock - Cast Shadowtouched OOC'),
+('2077002','20770','9','0','100','1','0','5','10000','11000','11','36517','1','0','0','0','0','0','0','0','0','0','Warden Icoshock - Cast Shadowsurge'),
 -- Netherock 20772
 -- Barbscale Crocolisk
 ('2077301','20773','9','0','100','1','0','5','20000','20000','11','3604','1','0','0','0','0','0','0','0','0','0','Barbscale Crocolisk - Cast Tendon Rip'),
