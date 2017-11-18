@@ -17728,6 +17728,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1893701','18937','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Amerun Leafshade - Summon Enraged Hippogryphs on Aggro'),
 -- Unoke Tenderhoof
 ('1895301','18953','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Unoke Tenderhoof - Summon Enraged Wyverns and Yell on Aggro'),
+-- Lashh'an Wing Guard
+('1994401','19944','0','0','100','1','3000','9000','12000','16000','11','37577','1','0','0','0','0','0','0','0','0','0','Lashh\'an Wing Guard - Cast Debilitating Strike'),
 -- Baelmon the Hound-Master
 ('1974701','19747','4','0','100','32','0','0','0','0','1','-1433','-1434','-1435','1','-1436','-1437','-1438','0','0','0','0','Baelmon the Hound-Master - Random Say on Aggro'),
 ('1974702','19747','0','0','100','1','5000','9000','18000','25000','11','11443','1','0','0','0','0','0','0','0','0','0','Baelmon the Hound-Master - Cast Cripple'),
