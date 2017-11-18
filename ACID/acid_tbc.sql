@@ -31567,12 +31567,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2127302','21273','11','0','100','2','0','0','0','0','11','10021','0','2','11','37016','0','2','0','0','0','0','Phaseshift Bulvark - Cast 100% Block and Cast Shield Spike on Spawn'),
 -- Staff of Disintegration
 ('2127401','21274','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Staff of Disintegration - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2127402','21274','9','5','100','3','0','100','6000','9000','11','36990','4','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frostbolt (Phase 1)'),
+('2127402','21274','9','5','100','3','0','100','2500','4800','11','36990','1','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frostbolt (Phase 1)'),
 ('2127403','21274','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2127404','21274','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Disable Dynamic Movement at 0-8 Yards'),
 ('2127405','21274','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Staff of Disintegration - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('2127406','21274','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('2127407','21274','9','0','100','3','0','10','12000','15000','11','36989','0','1','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frost Nova'),
+('2127407','21274','32','0','100','3','0','8','12000','15000','11','36989','0','1','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frost Nova (Phase 1)'),
 ('2127408','21274','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Set Phase to 0 on Evade'),
 -- Phoenix (21362) - mob_phoenix_tk
 -- Phoenix Egg (21364) - mob_phoenix_egg_tk
