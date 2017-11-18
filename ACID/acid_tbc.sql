@@ -18434,6 +18434,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2132603','21326','30','0','100','0','5','22226','0','0','41','15000','0','0','0','0','0','0','0','0','0','0','Raven\'s Wood Leafbeard - Despawn on Receive AI Event'),
 -- Ogre Building Bunny Large
 ('2135101','21351','11','0','100','1','0','0','0','0','11','36952','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Large - Cast Ogre Building Bunny Curse Visual Large on Spawn'),
+-- Silkwing
+('2137301','21373','0','0','100','1','3000','5000','11000','16000','11','32914','0','0','0','0','0','0','0','0','0','0','Silkwing - Cast Wing Buffet'),
 -- Greater Crust Burster (21380) - npc_burster_worm
 -- Young Crust Burster
 ('2138101','21381','9','0','100','1','0','30','5000','8000','11','21067','1','0','0','0','0','0','0','0','0','0','Young Crust Burster - Cast Poison Bolt'),
