@@ -17983,7 +17983,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2011307','20113','0','5','100','1','3000','4600','10000','11000','11','37579','1','32','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Cast Impending Doom (Phase 1)'),
 ('2011308','20113','14','0','100','1','2000','40','8000','14000','11','34110','6','1','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Cast Shadow Mend on Friendlies'),
 ('2011309','20113','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Lashh\'an Matriarch - Set Phase to 0 on Evade'),
--- Gurn Grubnosh 20116 (Missing combat spells!)
+-- Gurn Grubnosh
+('2011601','20116','0','0','100','1','2000','2000','15000','15000','11','35491','0','0','54','-263','0','0','0','0','0','0','Gurn Grubnosh - Cast Furious Rage and Text Emote'),
+('2011602','20116','0','0','100','1','8000','8000','15000','15000','11','35492','0','0','54','-264','0','0','0','0','0','0','Gurn Grubnosh - Cast Exhaustion and Text Emote'),
 -- Vekh'nir Matriarch
 ('2016101','20161','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Vekh\'nir Matriarch - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2016102','20161','9','5','100','1','0','40','4800','5200','11','9613','1','0','0','0','0','0','0','0','0','0','Vekh\'nir Matriarch - Cast Shadowbolt (Phase 1)'),
