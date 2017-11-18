@@ -20625,7 +20625,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dealer Sadaqat 20989
 -- Azurebeak (3.0.3 Official Data - Logs Only)
 ('2100501','21005','0','0','100','1','7100','11100','11000','14000','11','31273','1','0','0','0','0','0','0','0','0','0','Azurebeak - Cast Screech'),
--- Disembodied Exarch 21058
+-- Disembodied Exarch
+('2105801','21058','1','0','100','1','1000','1000','300000','300000','11','36004','0','32','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Power Word: Fortitude OOC'),
+('2105802','21058','4','0','100','0','0','0','0','0','11','8258','0','0','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Devotion Aura on Aggro'),
+('2105803','21058','14','0','100','1','2000','40','22000','22000','11','33910','6','1','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Heal Other on Friendlies'),
 -- Tormented Citizen
 ('2106501','21065','4','0','100','32','0','0','0','0','36','20480','1','0','36','20496','1','0','0','0','0','0','Tormented Citizen - Randomized Transform into Kirin\'Var Ghost OR Tormented Citizen on Aggro'),
 ('2106502','21065','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','41','300000','0','0','Tormented Citizen - Enable Dynamic Movement, Set Phase 1 AND Despawn on Aggro'),
