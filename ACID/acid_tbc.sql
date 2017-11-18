@@ -21016,6 +21016,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2131505','21315','6','0','100','0','0','0','0','0','43','0','0','0','12','22106','0','120000','0','0','0','0','Ruul the Darkener - Dismount and Summon Eye of the Citadel on Death'),
 -- Spirit Hunter
 ('2133201','21332','11','0','100','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Spirit Hunter - Set Defensive State on Spawn'),
+-- Illidari Shadowstalker <Servant of Illidan>
+('2133701','21337','33','0','100','1','0','0','4800','6100','11','7159','1','0','0','0','0','0','0','0','0','0','Illidari Shadowstalker - Cast Backstab on Facing Target Back'),
+('2133702','21337','9','0','50','1','0','5','9000','14000','11','30981','1','32','0','0','0','0','0','0','0','0','Illidari Shadowstalker - Cast Crippling Poison'),
 -- Dark Conclave Harbringer
 ('2138401','21384','9','0','100','1','0','5','6000','12000','11','15496','1','0','0','0','0','0','0','0','0','0','Dark Conclave Harbringer - Cast Cleave'),
 ('2138402','21384','2','0','100','1','50','0','8000','8000','11','16588','0','0','0','0','0','0','0','0','0','0','Dark Conclave Harbringer - Cast Dark Mending at 50% HP'),
