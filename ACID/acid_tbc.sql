@@ -21708,6 +21708,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Allerian Defender
 ('1899901','18999','9','0','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Allerian Defender - Cast Shoot and Set Ranged Weapon Model'),
 ('1899902','18999','0','0','100','0','5000','15000','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Allerian Defender - Cast Dismounting Blast'),
+-- High Elf Ranger
+('1900001','19000','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','High Elf Ranger - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('1900002','19000','9','0','100','1','5','30','2300','3900','11','15547','1','0','40','2','0','0','0','0','0','0','High Elf Ranger - Cast Shoot and Set Ranged Weapon Model'),
+('1900003','19000','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','High Elf Ranger - Enable Dynamic Movement at 9-80 Yards'),
+('1900004','19000','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','High Elf Ranger - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1900005','19000','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','High Elf Ranger - Set Melee Weapon Model on Evade'),
 -- Lemla Hopewing
 ('1918101','19181','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Lemla Hopewing - Summon Enraged Gryphons and Yell on Aggro'),
 -- Ancient Draenei Spirit
