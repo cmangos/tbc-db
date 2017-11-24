@@ -21140,6 +21140,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2168707','21687','2','0','100','1','30','0','30000','40000','11','15062','0','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Shield Wall at 30% HP'),
 -- Corrupted Fire Elemental
 ('2170601','21706','0','0','100','1','0','5000','5000','15000','11','9053','1','0','0','0','0','0','0','0','0','0','Corrupted Fire Elemental - Cast Fireball'),
+-- Corrupted Air Elemental
+('2170701','21707','0','0','100','1','0','5000','5000','15000','11','9532','1','0','0','0','0','0','0','0','0','0','Corrupted Air Elemental - Cast Lighting Bolt'),
 -- Corrupted Earth Elemental
 ('2170801','21708','0','0','70','1','23000','23000','5000','5000','11','43305','1','0','0','0','0','0','0','0','0','0','Corrupted Earth Elemental - Cast Earth Shock'),
 -- Dragonmaw Wrangler
