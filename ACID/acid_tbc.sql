@@ -21172,6 +21172,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2172002','21720','4','0','15','0','0','0','0','0','1','-101','-102','-105','0','0','0','0','0','0','0','0','Dragonmaw Shaman - Random Say on Aggro'),
 ('2172003','21720','4','0','100','0','0','0','0','0','11','6742','0','0','0','0','0','0','0','0','0','0','Dragonmaw Shaman - Cast Bloodlust on Aggro'),
 ('2172004','21720','27','0','100','1','12550','1','5000','5000','11','12550','0','32','0','0','0','0','0','0','0','0','Dragonmaw Shaman - Cast Lightning Shield on Missing Buff'),
+-- Enslaved Netherwing Whelp
+('2172101','21721','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Enslaved Netherwing Whelp - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2172102','21721','9','0','100','1','0','40','3000','6000','11','38340','1','0','0','0','0','0','0','0','0','0','Enslaved Netherwing Whelp - Cast Arcane Bolt'),
+('2172103','21721','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Enslaved Netherwing Whelp - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2172104','21721','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Enslaved Netherwing Whelp - Disable Dynamic Movement at 0-8 Yards'),
+('2172105','21721','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Enslaved Netherwing Whelp - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2172106','21721','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Enslaved Netherwing Whelp - Set Phase 1 at 15% MP (Phase 2)'),
+('2172107','21721','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Enslaved Netherwing Whelp - Set Phase to 0 on Evade'),
 -- Sunfury Eradicator
 ('2174201','21742','0','0','100','1','7000','9000','30000','35000','11','38008','0','0','0','0','0','0','0','0','0','0','Sunfury Eradicator  - Cast Seal of Blood'),
 ('2174202','21742','14','0','100','1','2500','40','12000','15000','11','17137','6','1','0','0','0','0','0','0','0','0','Sunfury Eradicator - Cast Flash Heal on Friendlies'),
