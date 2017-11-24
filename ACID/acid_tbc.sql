@@ -20721,7 +20721,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Terrorguard Protector
 ('2192301','21923','0','0','100','1','3000','5000','7000','11000','11','15496','1','0','0','0','0','0','0','0','0','0','Terrorguard Protector - Cast Cleave'),
 ('2192302','21923','9','0','100','1','0','5','10000','20000','11','37488','0','0','0','0','0','0','0','0','0','0','Terrorguard Protector - Cast Fel Flames'),
--- Avatar of Sathal 21925
+-- Avatar of Sathal
+('2192501','21925','11','0','100','0','0','0','0','0','54','-745','11','0','0','0','0','0','0','0','0','0','Avatar of Sathal - Yell on Spawn'),
+('2192502','21925','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Avatar of Sathal - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2192503','21925','9','5','100','1','0','30','3600','4800','11','12471','1','0','0','0','0','0','0','0','0','0','Avatar of Sathal - Cast Shadow Bolt (Phase 1)'),
+('2192504','21925','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Avatar of Sathal - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2192505','21925','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Avatar of Sathal - Disable Dynamic Movement at 0-8 Yards'),
+('2192506','21925','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Avatar of Sathal - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2192507','21925','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Avatar of Sathal - Set Phase 1 at 15% MP (Phase 2)'),
+('2192508','21925','0','5','100','1','6000','12000','12000','17000','11','34017','1','0','0','0','0','0','0','0','0','0','Avatar of Sathal - Cast Rain of Chaos'),
+('2192509','21925','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Avatar of Sathal - Set Phase 0 on Evade'),
 -- Area 52 Death Machine 21976
 -- Stormspire Drake 22064
 -- Nadja 22279
@@ -33667,7 +33676,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-742','My strength.... is... returning!','0','0','0','16847','0'),
 ('-743','You\'ve restored my health! I\'m in your debt, $N.','0','0','0','16847','0'),
 ('-744','You\'e found a cure! We will crush our enemies!','0','0','0','16847','0'),
--- PLEASE RE-USE -745
+('-745','Feel my wrath, $r scum! You will not get away with this!','0','1','0','21925','0'),
 ('-746','Guardians! To me!','0','0','0','21743','0'),
 ('-747','The %s flies up through the trees, free of Terokk\'s corruption.','0','2','0','22339','0'),
 ('-748','SMOTTS, I HAVE YOUR LITTLE BELT....COME GET IT!','0','1','0','Mok\'Rash - Random Yell','0'),
