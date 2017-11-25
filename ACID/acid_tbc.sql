@@ -6422,8 +6422,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grand Admiral Jes-Tereth  1750
 -- Mithras Ironhill  1751
 -- Caledra Dawnbreeze  1752
--- Lord Gregor Lescovar (1754) - NSR
--- Marzon the Silent Blade (1755) - NSR
+-- Lord Gregor Lescovar
+('175401','1754','0','0','100','0','1000','1000','0','0','1','-144','0','0','0','0','0','0','0','0','0','0','Lord Gregor Lescovar - Say on Aggro'),
+-- Marzon the Silent Blade
+('175501','1755','0','0','100','0','1000','1000','0','0','1','-143','0','0','0','0','0','0','0','0','0','0','Marzon the Silent Blade - Say on Aggro'),
 -- Stormwind Royal Guard (1756) - NSR
 -- Stormwind City Patroller (1976) - guard_stormwind
 -- Crier Goodman  2198
@@ -22682,7 +22684,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gur'zil
 ('2076201','20762','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Gur\'zil - Summon Enraged Wyverns and Yell on Aggro'),
 -- Xeleth
-('2189401','21894','11','0','100','0','0','0','0','0','55','11','0','0','1','-1571','0','0','0','0','0','0','Xeleth - attack spawner (player) on spawn and yell'),
+('2189401','21894','11','0','100','0','0','0','0','0','55','11','0','0','54','-1574','0','0','0','0','0','0','Xeleth - Attack Spawner (Player) and Yell on Spawn'),
 ('2189402','21894','0','0','100','1','0','0','12500','12500','11','36414','1','0','0','0','0','0','0','0','0','0','Xeleth - cast Focused Bursts'),
 -- Halu
 ('2248501','22485','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Halu - Summon Enraged Hippogryphs on Aggro');
@@ -28365,7 +28367,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodwarder Steward (4.3.4 Official Data - Normal/Heroic)
 ('1840401','18404','0','0','100','7','11100','21500','16800','28900','11','34821','0','0','0','0','0','0','0','0','0','0','Bloodwarder Steward - Cast Arcane Flurry'),
 -- Tempest Forge Peacekeeper (4.3.4 Official Data - Normal/Heroic)
-('1840501','18405','1','0','15','7','30000','120000','120000','240000','1','-143','-144','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Random Say OOC'),
+('1840501','18405','1','0','15','7','30000','120000','120000','240000','1','-1571','-1572','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Random Say OOC'),
 ('1840502','18405','0','0','100','7','9200','21700','12100','24100','11','34785','1','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Cast Arcane Volley'),
 ('1840503','18405','0','0','100','7','8400','19300','7200','18100','11','34791','0','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Cast Arcane Explosion'),
 ('1840504','18405','0','0','100','7','7600','16400','15700','25300','11','34793','1','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Cast Arcane Blast'),
@@ -28487,7 +28489,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================================================================
 -- Mercutio (12581) - NSR
 -- Tempest-Forge Patroller (4.3.4 Official Data - Normal/Heroic)
-('1916601','19166','1','0','75','7','30000','120000','120000','240000','1','-143','-145','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller - Random Say OOC'),
+('1916601','19166','1','0','75','7','30000','120000','120000','240000','1','-1571','-1573','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller - Random Say OOC'),
 ('1916602','19166','0','0','100','3','6100','10400','6800','16900','11','35012','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller (Normal) - Cast Charged Arcane Missle'),
 ('1916603','19166','0','0','100','5','6100','10400','6800','16900','11','38941','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller (Heroic) - Cast Charged Arcane Missle'),
 ('1916604','19166','0','0','100','7','9700','16400','12500','20500','11','35011','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller - Cast Knockdown'),
@@ -33215,9 +33217,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-140','The coils of death... Will crush you.','5787','1','0','3670','0'),
 ('-141','Invaders! Sound the Alarm!','0','1','0','23586','0'),
 ('-142','Get it while it\'s hot!','0','0','0','3518','0'),
-('-143','Any intruders must be eliminated!','0','1','0','Tempest Keep','0'),
-('-144','Protect the Botanica at all costs!','0','1','0','17976','0'),
-('-145','Protect the Mechanar at all costs!','0','1','0','19166','0'),
+('-143','The Defias shall succeed! No meek adventurer will stop us!','0','0','0','1755','0'),
+('-144','What? How dare you!','0','0','0','1754','0'),
+('-145','%s flees toward safety or another tiger.','0','2','0','Zulian Cub fleeing text','0'),
 ('-146','You hear a faint unlocking sound...','0','2','0','Mechanar','0'),
 ('-147','The end is come!','0','0','0','18796','0'),
 ('-148','Woot! Thanks!','0','0','0','17681','0'),
@@ -34449,7 +34451,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1568','I sense my grip on the Dream twisting into chaos.','0','4','0','8506','0'),
 ('-1569','%s lets out a high pitched screech, calling for help.','0','2','0','1983','0'),
 ('-1570','I shall return in time..','0','0','0','1983','0'),
-('-1571','Who disturbs my slumber?  That spear... I still carry the scar!','0','1','0','Xeleth aggro yell','0');
+('-1571','Any intruders must be eliminated!','0','1','0','Tempest Keep','0'),
+('-1572','Protect the Botanica at all costs!','0','1','0','17976','0'),
+('-1573','Protect the Mechanar at all costs!','0','1','0','19166','0'),
+('-1574','Who disturbs my slumber?  That spear... I still carry the scar!','0','1','0','Xeleth aggro yell','0');
 
 
 
