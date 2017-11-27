@@ -18549,6 +18549,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2201902','22019','2','0','100','0','25','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Kolphis Darkscale - Cast Enrage at 25% HP'),
 -- Daggermaw Blackhide
 ('2205201','22052','0','0','100','1','3500','7000','10000','11000','11','35321','1','32','0','0','0','0','0','0','0','0','Daggermaw Blackhide - Cast Gushing Wound'),
+-- Toshley Flying Machine
+('2208901','22089','11','0','100','0','0','0','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Toshley Flying Machine - Enable Dynamic Movement on Spawn'),
+('2208902','22089','0','0','100','1','0','5000','12000','18000','11','38083','1','0','0','0','0','0','0','0','0','0','Toshley Flying Machine - Cast Rocket Launcher'),
 -- Wyrmcult Provisioner
 ('2209901','22099','13','0','100','1','12000','15000','0','0','11','34802','1','0','0','0','0','0','0','0','0','0','Wyrmcult Provisioner - Cast Kick on Target Casting'),
 ('2209902','22099','0','0','100','1','3000','7000','6000','9000','11','35857','1','0','0','0','0','0','0','0','0','0','Wyrmcult Provisioner - Cast Torch'),
