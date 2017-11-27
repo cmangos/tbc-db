@@ -21325,6 +21325,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2207403','22074','9','0','100','1','0','30','12000','16000','11','17194','1','0','0','0','0','0','0','0','0','0','Illidari Mind Breaker - Cast Mind Blast'),
 -- Illidari Soldier
 ('2207501','22075','0','0','100','1','10000','14000','17000','21000','11','35871','1','0','0','0','0','0','0','0','0','0','Illidari Soldier - Cast Spellbreaker'),
+-- Torloth the Magnificent (22076) - mob_torloth
 -- Shadowmoon Darkweaver
 ('2208101','22081','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadowmoon Darkweaver - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2208102','22081','0','13','100','1','0','0','3400','5200','11','9613','1','0','0','0','0','0','0','0','0','0','Shadowmoon Darkweaver - Cast Shadow Bolt (Phase 1)'),
@@ -21359,13 +21360,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2213401','22134','0','0','100','0','1','1','0','0','25','0','0','0','54','-48','0','0','41','7000','0','0','Shadowmoon Eye of Kilrogg - Flee and Text Emote and Despawn Self on Aggro'),
 -- Dark Conclave Ritualist
 ('2213801','22138','1','0','75','1','1000','1000','48000','55000','11','38469','0','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Dark Conclave Ritualist Channel while OOC'),
+-- Dragonmaw Peon (22252) - npc_dragonmaw_peon
 -- Dragonmaw Ascendant
 ('2225301','22253','0','0','100','1','5000','9000','10000','12000','11','10966','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Uppercut'),
 ('2225302','22253','0','0','100','1','3000','5000','6000','10000','11','15496','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Cleave'),
 ('2225303','22253','0','0','100','1','7000','9000','6000','10000','11','17547','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Mortal Strike'),
--- Dragonmaw Peon (22252) - npc_dragonmaw_peon
--- Torloth the Magnificent (22076) - mob_torloth
-('2231501','22315','0','0','100','0','2000','2000','0','0','11','38108','0','1','37','0','0','0','0','0','0','0','Deathforge Mine - Cast Deathforge Mine Explosion then Self Destruct'),
+-- Dragonmaw Skybreaker
+('2227401','22274','4','0','15','0','0','0','0','0','54','0','1','10043','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Random Say on Aggro'),
+('2227402','22274','4','0','100','0','0','0','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Enable Dynamic Movement on Aggro'),
+('2227403','22274','9','0','100','1','5','45','2300','3900','11','38858','1','0','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Shoot and Set Ranged Weapon Model'),
+('2227404','22274','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Enable Dynamic Movement at 9-80 Yards'),
+('2227405','22274','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Dragonmaw Skybreaker - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('2227406','22274','0','0','100','1','0','6000','12000','16000','11','38861','4','0','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Aimed Shot and Set Ranged Weapon Model'),
+('2227407','22274','0','0','100','1','4000','6000','12000','16000','11','38859','4','32','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Serpent Sting and Set Ranged Weapon Model'),
+('2227408','22274','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Transporter - Set Melee Weapon Model on Evade'),
+-- Deathforge Mine
+('2231511','22315','0','0','100','0','2000','2000','0','0','11','38108','0','1','37','0','0','0','0','0','0','0','Deathforge Mine - Cast Deathforge Mine Explosion then Self Destruct'),
 -- Dragonmaw Elite
 ('2233101','22331','11','0','100','0','0','0','0','0','11','32121','0','1','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Choose Target (50 yd) on Spawn'),
 ('2233102','22331','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Dragonmaw Elite - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
