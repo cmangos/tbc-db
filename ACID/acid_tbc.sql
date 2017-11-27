@@ -20771,7 +20771,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zarevhi 22427
 -- Sab'aoth 22479
 -- Kerpow Blastwrench 22491
--- Cosmowrench Bruiser 22494
+-- Cosmowrench Bruiser
+('2249401','22494','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Cosmowrench Bruiser - Cast Net'),
 -- Rescued Cenarion Expedition Druid 22810
 -- Rescued Lower City Brute 22811
 -- Rescued Sha'tar Vindicator 22812
