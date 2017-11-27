@@ -22169,6 +22169,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2238705','22387','0','0','100','1','4000','9000','9000','14000','11','12058','4','1','0','0','0','0','0','0','0','0','Lithic Oracle - Cast Chain Lightning'),
 -- Lithic Talonguard
 ('2238801','22388','0','0','100','1','2000','5000','45000','50000','11','6016','1','0','0','0','0','0','0','0','0','0','Lithic Talonguard - Cast Pierce Armor'),
+-- Vindicator Haylen
+('2246201','22462','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Vindicator Haylen - Cast Net'),
 -- Wounded Sha'tar Vindicator
 ('2246301','22463','11','0','100','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Wounded Sha\'tar Vindicator -  Set React State Passive on Spawn'),
 -- Bone Sifter (22466) - npc_burster_worm
