@@ -26121,6 +26121,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1659301','16593','11','0','100','6','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Shattered Hand Brawler - Cast Thrash on Spawn'),
 ('1659302','16593','9','0','100','7','0','5','12000','21000','11','36020','1','32','13','100','1','0','0','0','0','0','Shattered Hand Brawler - Cast Curse of Shattered Hand'),
 ('1659303','16593','13','0','100','7','12000','15000','0','0','11','36033','1','1','0','0','0','0','0','0','0','0','Shattered Hand Brawler - Cast Kick on Target Spell Casting'),
+('1659304','16593','4','0','100','6','0','0','0','0','28','0','29266','0','0','0','0','0','0','0','0','0','Shattered Hand Brawler - Remove Permanent Feign Death Aura on Aggro'),
 -- Shadowmoon Acolyte
 ('1659401','16594','1','0','100','7','1000','1000','3600000','3600000','11','30479','0','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte - Cast Resist Shadow on Spawn'),
 ('1659402','16594','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadowmoon Acolyte - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -26138,6 +26139,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1659414','16594','2','0','100','6','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Shadowmoon Acolyte - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('1659415','16594','2','7','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowmoon Acolyte - Flee at 15% HP (Phase 3)'),
 ('1659416','16594','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte - Set Phase to 0 on Evade'),
+('1659417','16594','4','0','100','6','0','0','0','0','28','0','29266','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte - Remove Permanent Feign Death Aura on Aggro'),
 -- Shattered Hand Reaver
 ('1669901','16699','9','0','100','7','0','5','5000','9000','11','15496','1','0','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Cast Cleave'),
 ('1669902','16699','0','0','100','7','8000','12000','9000','13000','11','30471','1','1','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Cast Uppercut'),
