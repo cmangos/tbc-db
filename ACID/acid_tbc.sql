@@ -30210,7 +30210,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fathom-Guard Sharkkis (21966) - boss_fathomguard_sharkkis
 -- Tainted Elemental (SD2 Backport)
 ('2200901','22009','11','0','100','2','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Tainted Elemental - Prevent Combat Movement on Spawn'),
-('2200902','22009','0','0','100','3','2000','3000','2000','3000','11','38253','4','0','0','0','0','0','0','0','0','0','Tainted Elemental - Cast Poison Bolt'),
+('2200902','22009','0','0','100','3','0','0','2000','2000','11','38253','4','0','0','0','0','0','0','0','0','0','Tainted Elemental - Cast Poison Bolt'),
 -- Pure Spawn of Hydross
 ('2203501','22035','11','0','100','2','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Pure Spawn of Hydross - Cast Elemental Spawn-in on Spawn'),
 -- Tainted Spawn of Hydross
