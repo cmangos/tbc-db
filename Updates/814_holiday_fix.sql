@@ -8,4 +8,9 @@ INSERT INTO game_event_creature (guid, event) VALUES
 (62848, 12),
 (62849, 12);
 
+-- Brewfest Reveler - Brewfest only
+DELETE FROM game_event_creature WHERE guid=101386;
+INSERT INTO game_event_creature (guid, event) VALUES
+(101386, 26);
+
 
