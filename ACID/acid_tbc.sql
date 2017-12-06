@@ -29735,8 +29735,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Death Talon Wyrmguard
 ('1246001','12460','0','0','100','3','5000','8000','8000','12000','11','24375','0','0','0','0','0','0','0','0','0','0','Death Talon Wyrmguard - Cast War Stomp'),
 -- Death Talon Overseer
-('1246101','12461','9','0','100','3','0','20','4000','7000','11','20623','4','0','0','0','0','0','0','0','0','0','Death Talon Overseer - Cast Fire Blast'),
-('1246102','12461','9','0','100','3','0','5','6000','9000','11','15284','1','1','0','0','0','0','0','0','0','0','Death Talon Overseer - Cast Cleave'),
+('1246101','12461','4','0','100','0','0','0','0','0','1','-1018','0','0','0','0','0','0','0','0','0','0','Death Talon Overseer - Say on Aggro'),
+('1246102','12461','9','0','100','3','0','20','4000','7000','11','20623','4','0','0','0','0','0','0','0','0','0','Death Talon Overseer - Cast Fire Blast'),
+('1246103','12461','9','0','100','3','0','5','6000','9000','11','15284','1','1','0','0','0','0','0','0','0','0','Death Talon Overseer - Cast Cleave'),
 -- Death Talon Flamescale
 ('1246301','12463','9','0','100','3','0','40','12000','17000','11','16636','4','1','0','0','0','0','0','0','0','0','Death Talon Flamescale - Cast Berserker Charge'),
 ('1246302','12463','9','0','100','3','0','20','5000','8000','11','22423','4','32','0','0','0','0','0','0','0','0','Death Talon Flamescale - Cast Flame Shock'),
@@ -33939,7 +33940,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1008','Hey, hey! Nice build you got there honey!','0','0','0','24495','1'),
 ('-1009','Yo! Big lady! You think you\'re big enough to handle me?','0','0','0','24495','1'),
 ('-1010','Hey tough stuff! Hey, $c! Do you like money? I\'m loaded! How about you come over here and check out my gold coins?','0','0','0','24495','1'),
--- PLEASE RE-USE 1011 - 1018
+-- PLEASE RE-USE 1011 - 1017
+('-1018','The blood samples must be protected! Destroy the intruders!','0','0','0','12461','0'),
 ('-1019','This will teach you to lay off the herb, $r.','0','0','0','11447','1'),
 ('-1020','Step right up! Step right up! Greetings my friend. I\'m Silas Darkmoon and I want to welcome you to the greatest show on Azeroth! It\'s the Darkmoon Faire friend, and it\'s your lucky day! Sparing no expense, we\'ve gathered wonders and treats from around the world for your delight. Whether you\'re young or old, rich or poor, the Darkmoon Faire has it all!','0','0','0','14823','1'),
 ('-1021','Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world! We have spared no expense in bringing you excitement that children of all ages will delight in!','0','0','0','14823','1'),
