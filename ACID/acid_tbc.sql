@@ -31514,6 +31514,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2127201','21272','9','0','100','3','0','5','7000','9000','11','36991','1','0','0','0','0','0','0','0','0','0','Warp Slicer - Cast Rend'),
 -- Phaseshift Bulwark
 ('2127301','21273','9','0','100','3','0','5','13000','17000','11','36988','1','0','0','0','0','0','0','0','0','0','Phaseshift Bulwark - Cast Shield Bash'),
+('2127302','21273','11','0','100','2','0','0','0','0','11','10021','0','0','11','37016','0','0','0','0','0','0','Phaseshift Bulvark - Cast 100% block on spawn'),
 -- Staff of Disintegration
 ('2127401','21274','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Staff of Disintegration - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2127402','21274','9','5','100','3','0','100','6000','9000','11','36990','4','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frostbolt (Phase 1)'),
