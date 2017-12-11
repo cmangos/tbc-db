@@ -30246,8 +30246,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2211902','22119','6','0','100','2','0','0','0','0','11','38419','0','7','0','0','0','0','0','0','0','0','Fathom Lurker - Cast Spore Explosion on Death'),
 -- Fathom Sporebat
 ('2212001','22120','9','0','100','3','0','8','14000','21000','11','25778','1','0','0','0','0','0','0','0','0','0','Fathom Sporebat - Cast Knock Away'),
--- Toxic Sporebat (SD2 Backport)
-('2214001','22140','0','0','100','3','5000','8000','12000','20000','11','38575','0','0','0','0','0','0','0','0','0','0','Toxic Sporebat - Cast Toxic Spores'),
+-- Toxic Sporebat - handled through vashj script
 -- Serpentshrine Tidecaller
 ('2223801','22238','0','0','100','3','2000','7000','11000','16000','11','38623','1','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Water Bolt Volley'),
 ('2223802','22238','9','0','100','3','0','8','16000','21000','11','39035','0','1','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Frost Nova'),
