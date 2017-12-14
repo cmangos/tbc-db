@@ -17885,7 +17885,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999109','19991','0','0','100','1','1000','5000','5000','9000','11','15496','1','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Cast Cleave'),
 ('1999110','19991','0','0','100','1','3500','4000','10000','12000','11','37577','1','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Cast Debilitating Strike'),
 ('1999111','19991','2','0','100','0','30','0','0','0','11','8599','0','0','54','-106','0','0','0','0','0','0','Bloodmaul Brute - Cast Enrage at 30% HP'),
--- Bloodmaul Shaman (Missing combat spells!)
+-- Bloodmaul Shaman
 ('1999201','19992','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999202','19992','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('1999203','19992','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Bloodmaul Shaman - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -17894,6 +17894,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999206','19992','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('1999207','19992','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('1999208','19992','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Say on Death if Killer Player has Completed Quest 11000'),
+('1999209','19992','4','0','15','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Random Say on Aggro'),
+('1999210','19992','27','0','100','1','12550','1','15000','30000','11','12550','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Cast Lightning Shield on Missing Buff'),
+('1999211','19992','0','0','100','1','3000','6000','15000','35000','11','15038','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Cast Scorching Totem'),
+('1999212','19992','0','0','100','1','8000','12000','30000','35000','11','15869','0','0','0','0','0','0','0','0','0','0','Bloodmaul Shaman - Superior Healing Ward'),
 -- Bloodmaul Mauler
 ('1999301','19993','9','0','100','1','0','5','8000','11000','11','37592','1','0','22','1','0','0','0','0','0','0','Bloodmaul Mauler - Cast Knockdown and Set Phase 1'),
 ('1999302','19993','0','1','100','0','0','0','0','0','54','-732','0','0','0','0','0','0','0','0','0','0','Bloodmaul Mauler - Say (Phase 1)'),
@@ -24191,7 +24195,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Highlord Omokk
 ('919601','9196','0','0','100','3','12000','12000','18000','18000','11','10101','1','0','0','0','0','0','0','0','0','0','Highlord Omokk - Cast Knock Away'),
 ('919602','9196','2','0','100','2','20','0','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','Highlord Omokk - Cast Frenzy'),
-('919603','9196','0','0','100','3','1000','3000','15000','25000','1','-1365','-1366','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
+('919603','9196','0','0','100','3','1000','3000','15000','25000','1','-359','-360','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
 ('919604','9196','5','0','100','3','0','0','0','0','1','-1367','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Player Kill'),
 -- Spirestone Battle Mage
 ('919701','9197','0','0','100','3','4000','10000','5000','15000','11','15305','4','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Chain Lighting'),
@@ -34432,8 +34436,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1351','AYYAYAAYAA!','0','0','0','22483','0'),
 ('-1352','AWOOOOGAAAA!','0','0','0','22483','0'),
 ('-1353','AAAAEEEEEEIIIIIIII!!!!!','0','0','0','22483','0'),
-('-1365','I\'ll crush you!','0','0','0','9196','0'),
-('-1366','Me smash! You die!','0','0','0','9196','0'),
+-- Re-Use -1354 - -1366
 ('-1367','Raaar!!! Me smash $R!','0','0','0','9196','1'),
 ('-1368','I cannot be destroyed! By the will of Ragnaros, I shall be reborn!','0','0','0','9017','0'),
 ('-1369','What are you doing? Intruders!!','0','1','0','9476','0'),
