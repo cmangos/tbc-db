@@ -21004,7 +21004,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2117901','21179','2','0','100','0','40','0','0','0','1','-1459','0','0','11','37683','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Evasion at 40% HP'),
 ('2117902','21179','2','0','100','0','25','0','0','0','11','32720','0','0','0','0','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Sprint at 25% HP'),
 -- Dormant Infernal
-('2108001','21080','4','0','100','0','0','0','0','0','3','19759','0','0','11','12743','0','0','28','36055','0','0','Dormant Infernal - Morph into Newly Crafted Infernal on Aggro and cast Immolate and remove Stationary Infernal Ball'),
+('2108001','21080','4','0','100','0','0','0','0','0','3','19759','0','0','11','12743','0','0','28','0','36055','0','Dormant Infernal - Morph into Newly Crafted Infernal on Aggro and cast Immolate and remove Stationary Infernal Ball'),
 ('2108002','21080','1','0','100','0','0','0','0','0','3','0','0','0','28','12743','0','0','0','0','0','0','Dormant Infernal - Demorph on OCC and remove Immolate from self'),
 ('2108003','21080','11','0','100','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Dormant Infernal - REACT_DEFENSIVE on spawn'),
 -- Uvuros
