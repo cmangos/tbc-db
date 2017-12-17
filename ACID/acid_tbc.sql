@@ -17992,7 +17992,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999821','19998','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Shaman - Say on Death if Killer Player has Completed Quest 11000'),
 -- Bloodmaul Dire Wolf
 ('2005801','20058','0','0','100','1','0','5000','15000','20000','11','13443','1','0','0','0','0','0','0','0','0','0','Bloodmaul Dire Wolf - Cast Rend'),
--- Grimnok Battleborn (Missing combat spells!)
+-- Grimnok Battleborn
 ('2009501','20095','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2009502','20095','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2009503','20095','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Grimnok Battleborn - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -18001,6 +18001,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2009506','20095','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2009507','20095','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2009508','20095','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Grimnok Battleborn - Say on Death if Killer Player has Completed Quest 11000'),
+('2009509','20095','4','0','15','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Grimnok Battleborn - Random Say on Aggro'),
+('2009510','20095','0','0','100','1','8000,','14000','20000','30000','11','37786','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Cast Bloodmaul Rage'),
+('2009511','20095','8','0','100','1','37786','-1','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Grimnok Battleborn - Random Say on Bloodmaul Rage Spellhit'),
+('2009512','20095','0','0','100','1','0','5000','10000','11000','11','15496','1','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Cast Cleave'),
 -- Lashh'an Kaliri 20109 NSR
 -- Lashh'an Matriarch
 ('2011301','20113','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Lashh\'an Matriarch - Enable Dynamic Movement and Set Phase 1 on Aggro'),
