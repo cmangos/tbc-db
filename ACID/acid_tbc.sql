@@ -18428,7 +18428,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2112401','21124','9','0','100','1','8','25','15000','21000','11','35570','1','0','0','0','0','0','0','0','0','0','Felsworn Daggermaw - Cast Charge'),
 ('2112402','21124','0','0','100','1','0','5000','10000','11000','11','7367','1','32','0','0','0','0','0','0','0','0','Felsworn Daggermaw - Cast Infected Bite'),
 -- Crystal Flayer 21189 NSR
--- Bloodmaul Drudger (Missing combat spells!)
+-- Bloodmaul Drudger
 ('2123801','21238','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2123802','21238','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2123803','21238','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Bloodmaul Drudger - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -18437,9 +18437,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2123806','21238','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2123807','21238','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2123808','21238','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Say on Death if Killer Player has Completed Quest 11000'),
+('2123809','21238','4','0','15','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Random Say on Aggro'),
+('2123810','21238','9','0','100','1','0','5','4000','7000','11','35918','1','32','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Cast Puncture Armor'),
+('2123811','21238','2','0','100','0','30','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Cast Enrage at 30% HP'),
 -- Dullgrom Dredger
 ('2125401','21254','0','0','100','0','2000','3000','0','0','28','0','36661','0','0','0','0','0','0','0','0','0','Dullgrom Dredger - Remove Confused Ogre'),
-('2125402','21254','2','0','100','0','30','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Dullgrom Dredger - Enrage on Low Health'),
+('2125402','21254','2','0','100','0','30','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Dullgrom Dredger - Cast Enrage at 30% HP'),
 ('2125403','21254','13','0','100','1','12000','15000','0','0','11','34802','1','0','0','0','0','0','0','0','0','0','Dullgrom Dredger - Cast Kick'),
 -- Bloodmaul Goon
 ('2129401','21294','0','0','100','1','6000','9000','12000','16000','11','10966','1','0','0','0','0','0','0','0','0','0','Bloodmaul Goon - Cast Uppercut'),
