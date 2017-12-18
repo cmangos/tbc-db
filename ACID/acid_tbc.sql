@@ -123,7 +123,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('227210','2272','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dalaran Theurgist - Set Phase to 0 on Evade'),
 -- Crushridge Warmonger (3.1.1 Official Data)
 ('228701','2287','4','0','10','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Crushridge Warmonger - Random Say on Aggro'),
-('228702','2287','2','0','100','0','50','0','0','0','39','15','0','0','1','-550','0','0','0','0','0','0','Crushridge Warmonger - Call for Help at 50% HP'),
+('228702','2287','2','0','100','0','50','0','0','0','39','15','0','0','1','-551','0','0','0','0','0','0','Crushridge Warmonger - Call for Help at 50% HP'),
 ('228703','2287','14','0','100','0','1495','15','0','0','11','8269','0','1','1','-550','0','0','1','-551','0','0','Crushridge Warmonger - Cast Frenzy and Text Emote on Friendly Death'),
 -- Baron Vardus (3.1.1 Official Data)
 ('230601','2306','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Baron Vardus - Enable Dynamic Movement and Set Phase 1 on Aggro'),
