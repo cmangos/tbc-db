@@ -19910,6 +19910,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1694302','16943','2','0','100','0','30','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Cyber-Rage Forgelord - Cast Enrage at 30% HP'),
 -- Mo'arg Doomsmith
 ('1694401','16944','9','0','100','1','0','5','12000','16000','11','36200','0','0','0','0','0','0','0','0','0','0','Mo\'arg Doomsmith - Cast Doomsaw'),
+('1694402','16944','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Mo\'arg Doomsmith - Despawn Guardians on Evade'),
 -- Gan'arg Engineer
 ('1694801','16948','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Gan\'arg Engineer - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1694802','16948','9','0','100','1','0','30','2800','3900','11','7978','1','0','0','0','0','0','0','0','0','0','Gan\'arg Engineer - Cast Throw Dynamite'),
