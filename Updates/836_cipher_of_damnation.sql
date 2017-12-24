@@ -5,6 +5,8 @@ UPDATE creature_template SET UnitFlags=32768 WHERE entry IN(21685,21686,21687);
 INSERT INTO gameobject VALUES
 ('150143', '185170', '530', '0', '-3600.012', '1933.345', '58.23738', '4.729844', '0', '0', '-0.7009087', '0.7132511', '-120', '-120', '0', '0');
 
+UPDATE creature_template SET MovementType=2 WHERE entry IN(21685);
+
 REPLACE INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (21685,1,1,-3419.458,1383.739,228.1865,0,0,100),
 (21685,1,2,-3420.999,1395.204,257.6374,0,0,100),
