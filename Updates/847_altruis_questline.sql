@@ -8,4 +8,7 @@ INSERT INTO dbscripts_on_event(id, delay, command, datalong, datalong2, datalong
 ('14139', '0', '10', '21894', '360000', '0', '0', '0', '0', '0', '0', '0', '0', '568.9283', '8653.24', '19.95006', '3.508112', 'Spawn Xeleth');
 UPDATE creature_model_info SET combat_reach=2.2,bounding_radius=3 WHERE modelid = 20217;
 
+-- in TBC a quest can have only 4 objectives, both item AND kill, this causes UI issue
+UPDATE quest_template SET ReqItemId1=0,ReqItemCount1=0 WHERE entry IN(10651,10692);
+
 
