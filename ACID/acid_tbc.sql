@@ -26156,11 +26156,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1652303','16523','6','0','100','2','0','0','0','0','11','36023','1','7','0','0','0','0','0','0','0','0','Shattered Hand Savage (Normal) - Cast Deathblow on Death'),
 ('1652304','16523','6','0','100','4','0','0','0','0','11','36054','1','7','0','0','0','0','0','0','0','0','Shattered Hand Savage (Heroic) - Cast Deathblow on Death'),
 -- Shattered Hand Brawler
-('1659301','16593','11','0','100','6','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Shattered Hand Brawler - Cast Thrash on Spawn'),
+('1659301','16593','4','0','100','6','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Shattered Hand Brawler - Cast Thrash on Aggro'),
 ('1659302','16593','9','0','100','7','0','5','12000','21000','11','36020','1','32','13','100','1','0','0','0','0','0','Shattered Hand Brawler - Cast Curse of Shattered Hand'),
 ('1659303','16593','13','0','100','7','12000','15000','0','0','11','36033','1','1','0','0','0','0','0','0','0','0','Shattered Hand Brawler - Cast Kick on Target Spell Casting'),
 -- Shadowmoon Acolyte
-('1659401','16594','1','0','100','7','1000','1000','3600000','3600000','11','30479','0','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte - Cast Resist Shadow on Spawn'),
+('1659401','16594','16','13','100','7','30479','40','10000','60000','11','30479','6','1','0','0','0','0','0','0','0','0','Shadowmoon Acolyte - Cast Resist Shadow on Friendly Missing Buff (Phase 1)'),
 ('1659402','16594','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadowmoon Acolyte - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1659403','16594','9','13','100','3','0','30','3400','4800','11','31516','1','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte (Normal) - Cast Mind Blast (Phase 1)'),
 ('1659404','16594','9','13','100','5','0','30','3400','4800','11','15587','1','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte (Heroic) - Cast Mind Blast (Phase 1)'),
