@@ -40,8 +40,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1993301,49,0,0,0,0,19932,10,0,2000000440,0,0,0,0,0,0,0,'Andormu - say 6'),
 (1993301,60,0,0,0,0,0,0,0,2000005706,0,0,0,0,0,0,0,'Andormu - say 7'); -- pre-existing "%s nods." 
 
-DELETE FROM dbscript_string WHERE entry BETWEEN 2000000431 AND 2000000440;
-INSERT INTO dbscript_string (entry, content_default, emote) VALUES
+DELETE FROM db_script_string WHERE entry BETWEEN 2000000431 AND 2000000440;
+INSERT INTO db_script_string (entry, content_default, emote) VALUES
 (2000000431,'Fascinating. What is it, Andormu?',6),
 (2000000432,'Something very, very disturbing. We''re starting to see more of them across the timeways.',1),
 (2000000433,'Hrm, are they tampering with timeways?',6),
@@ -83,8 +83,8 @@ DELETE FROM creature_linking WHERE guid=16398;
 INSERT INTO creature_linking (guid, master_guid, flag) VALUES
 (16398,23459,512); -- follow
 
-DELETE FROM dbscript_string WHERE entry IN (2000000441,2000000442,2000000443,2000000444,2000000445);
-INSERT INTO dbscript_string (entry, content_default, emote, type) VALUES
+DELETE FROM db_script_string WHERE entry IN (2000000441,2000000442,2000000443,2000000444,2000000445);
+INSERT INTO db_script_string (entry, content_default, emote, type) VALUES
 (2000000441,'%s examines the specimen.',0,2),
 (2000000442,'I can''t get a reading... Something is interfering...',1,0),
 (2000000443,'This specimen is fading from existence. Something or someone is altering the timeway.',1,0),
