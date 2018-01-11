@@ -32,6 +32,10 @@ UPDATE `creature_template` SET `damageschool` = 3 WHERE `entry` = 22881;
 -- http://wowwiki.wikia.com/wiki/Vexallus
 UPDATE `creature_template` SET `damageschool` = 6 WHERE `entry` = 25573;
 
+-- Ember of Azzinoth - DamageSchool Fire http://www.wowhead.com/npc=23192/ember-of-azzinoth#comments:id=327761
+-- http://www.wowhead.com/npc=23192/ember-of-azzinoth#comments:id=741416 <- interesting comment about a supposed blizzlike mechanic
+UPDATE `creature_template` SET `DamageSchool` = 2 WHERE `entry` = 23192;
+
 -- -------------------------------
 
 -- Confirmed by wotlk-db and TrinityDB
