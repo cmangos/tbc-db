@@ -25320,6 +25320,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2046501','20465','9','0','100','7','0','5','10000','20000','11','12097','1','0','0','0','0','0','0','0','0','0','Underbog Frenzy - Cast Pierce Armor'),
 -- Spore Strider
 ('2229901','22299','0','0','100','5','1000','3000','4800','6100','11','20824','4','0','0','0','0','0','0','0','0','0','Spore Strider (Heroic) - Cast Lightning Bolt'),
+('2229902','22299','11','0','100','4','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Spore Strider (Heroic) - Zone Combat Pulse on Spawn'),
 
 
 
