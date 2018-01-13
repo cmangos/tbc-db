@@ -31565,7 +31565,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Phaseshift Bulwark
 ('2127301','21273','32','0','100','3','0','5','10000','15000','11','36988','12','0','0','0','0','0','0','0','0','0','Phaseshift Bulwark - Cast Shield Bash in Range'),
 ('2127302','21273','11','0','100','2','0','0','0','0','11','10021','0','2','11','37016','0','2','0','0','0','0','Phaseshift Bulvark - Cast 100% Block and Cast Shield Spike on Spawn'),
--- Staff of Disintegration
+-- Staff of Disintegration - missing forced ranged combat movement ~15y on frost nova
 ('2127401','21274','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Staff of Disintegration - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2127402','21274','9','5','100','3','0','100','2500','4800','11','36990','1','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frostbolt (Phase 1)'),
 ('2127403','21274','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
