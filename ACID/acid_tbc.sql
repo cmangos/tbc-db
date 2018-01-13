@@ -31547,7 +31547,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thaladred the Darkener (20064) - boss_thaladred_the_darkener
 -- Netherstrand Longbow
 ('2126801','21268','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Netherstrand Longbow - Enable Dynamic Movement and Prevent Melee on Aggro'),
-('2126802','21268','9','0','100','3','0','100','3000','6000','11','36980','1','0','40','2','0','0','0','0','0','0','Netherstrand Longbow - Cast Shoot and Set Ranged Weapon Model'),
+('2126802','21268','9','0','100','3','0','100','3000','3000','11','36980','1','0','40','2','0','0','0','0','0','0','Netherstrand Longbow - Cast Shoot and Set Ranged Weapon Model'),
 ('2126803','21268','0','0','100','3','7000','11000','12000','16000','11','36979','1','0','40','2','0','0','0','0','0','0','Netherstrand Longbow - Cast Multi-Shot and Set Ranged Weapon Model'),
 ('2126804','21268','9','0','100','3','0','20','24000','30000','11','36994','0','1','0','0','0','0','0','0','0','0','Netherstrand Longbow - Cast Blink'),
 ('2126805','21268','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Netherstrand Longbow - Enable Dynamic Movement at 9-80 Yards'),
