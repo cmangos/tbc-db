@@ -31572,7 +31572,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2127404','21274','9','0','100','3','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Disable Dynamic Movement at 0-8 Yards'),
 ('2127405','21274','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Staff of Disintegration - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('2127406','21274','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('2127407','21274','32','0','100','3','0','8','12000','15000','11','36989','0','1','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frost Nova (Phase 1)'),
+('2127407','21274','32','0','100','3','0','8','12000','15000','11','36989','0','1','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frost Nova'),
 ('2127408','21274','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Set Phase to 0 on Evade'),
 -- Phoenix (21362) - mob_phoenix_tk
 -- Phoenix Egg (21364) - mob_phoenix_egg_tk
