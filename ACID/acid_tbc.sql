@@ -26110,7 +26110,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1742901','17429','0','0','100','7','0','0','20500','20500','11','22120','4','0','0','0','0','0','0','0','0','0','Fel Orc Neophyte - Cast Charge on Aggro'),
 ('1742902','17429','0','0','100','7','2300','2500','120000','130000','11','8269','0','0','0','0','0','0','0','0','0','0','Fel Orc Neophyte - Cast Frenzy'),
 -- Hellfire Imp - (3.0.3 Official Data - Normal Log Only)
-('1747701','17477','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Hellfire Imp - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1747701','17477','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','28','0','35766','0','Hellfire Imp - Enable Dynamic Movement and Set Phase 1 and Remove Summon Visual Test on Aggro'),
 ('1747702','17477','9','5','100','3','0','40','3400','4800','11','15242','1','0','0','0','0','0','0','0','0','0','Hellfire Imp (Normal) - Cast Fireball (Phase 1)'),
 ('1747703','17477','9','5','100','5','0','40','3400','4800','11','17290','1','0','0','0','0','0','0','0','0','0','Hellfire Imp (Heroic) - Cast Fireball (Phase 1)'),
 ('1747704','17477','9','5','100','7','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Hellfire Imp - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
