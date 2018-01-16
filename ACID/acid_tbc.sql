@@ -22146,7 +22146,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2190701','21907','9','0','100','1','0','5','6000','11000','11','15691','1','0','0','0','0','0','0','0','0','0','Cabal Initiate - Cast Eviscerate'),
 ('2190702','21907','2','0','100','0','30','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Cabal Initiate - Cast Enrage at 30% HP'),
 -- Skettis Soulcaller
-('2191101','21911','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Skettis Soulcaller - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2191101','21911','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','52','3','0','0','Skettis Soulcaller - Enable Dynamic Movement and Set Phase 1 and Interrupt Channel on Aggro'),
 ('2191102','21911','9','5','100','1','0','40','3400','4800','11','20298','1','0','0','0','0','0','0','0','0','0','Skettis Soulcaller - Cast Shadow Bolt (Phase 1)'),
 ('2191103','21911','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Skettis Soulcaller - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2191104','21911','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Skettis Soulcaller - Disable Dynamic Movement at 0-8 Yards'),
