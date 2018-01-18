@@ -18999,6 +18999,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lieutenant Commander Thalvos
 ('1697801','16978','9','0','100','1','0','5','7000','11000','11','11976','1','0','0','0','0','0','0','0','0','0','Lieutenant Commander Thalvos - Cast Strike'),
 ('1697802','16978','0','0','100','1','8000','12000','12000','16000','11','8242','1','0','0','0','0','0','0','0','0','0','Lieutenant Commander Thalvos - Cast Shield Slam'),
+-- Dreadtusk 16992 - Hulking Helboar 16880
 -- Draenei Anchorite
 ('1699401','16994','0','0','100','1','5000','7000','17000','22000','11','17140','1','0','0','0','0','0','0','0','0','0','Draenei Anchorite - Cast Holy Fire'),
 -- Draenei Vindicator
