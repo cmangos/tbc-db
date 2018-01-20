@@ -18804,6 +18804,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1659002','16590','1','0','30','1','454500','454500','454500','454500','1','-299','0','0','0','0','0','0','0','0','0','0','Injured Thrallmar Grunt - Gossip (2)'),
 ('1659003','16590','1','0','30','1','459000','459000','459000','459000','1','-300','0','0','0','0','0','0','0','0','0','0','Injured Thrallmar Grunt - Gossip (3)'),
 ('1659004','16590','1','0','100','1','464000','464000','464000','464000','1','-301','0','0','0','0','0','0','0','0','0','0','Injured Thrallmar Grunt - Gossip Speech (5)'),
+-- Thrallmar Wolf Rider 16599
+('1659901','16599','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Thrallmar Wolf Rider - Dismount on Aggro'),
+('1659902','16599','0','0','100','0','5000','15000','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Thrallmar Wolf Rider - Cast Dismounting Blast'),
+('1659903','16599','9','0','100','33','0','5','10000','15000','11','19643','1','0','11','15618','1','0','0','0','0','0','Thrallmar Wolf Rider - Cast Mortal Strike or Cast Snap Kick'),
+('1659904','16599','1','0','100','1','15000','15000','15000','15000','43','0','14334','0','0','0','0','0','0','0','0','0','Thrallmar Wolf Rider - Mount OOC'), -- Has to be done this way due to creature_linking=no evade
 -- Flightmaster Krill Bitterhue
 ('1682201','16822','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Flightmaster Krill Bitterhue - Summon Enraged Gryphons and Yell on Aggro'),
 -- Crust Burster (16844) - npc_burster_worm
