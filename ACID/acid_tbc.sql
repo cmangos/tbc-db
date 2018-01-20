@@ -21399,6 +21399,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Illidari Watcher
 ('2209301','22093','0','0','100','1','1000','5000','6000','12000','11','32736','1','32','0','0','0','0','0','0','0','0','Illidari Watcher - Cast Mortal Strike'),
 -- Shadowmoon Retainer 22102
+('2210201','22102','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Shadowmoon Retainer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2210202','22102','9','0','100','1','6','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Shadowmoon Retainer - Enable Dynamic Movement at 6-80 Yards'),
+('2210203','22102','9','0','100','1','0','5','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Shadowmoon Retainer - Disable Dynamic Movement and Set Melee Weapon Model at 0-5 Yards'),
+('2210204','22102','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Shadowmoon Retainer - Set Phase 0 and Set Melee Weapon Model on Evade'),
+('2210205','22102','9','0','100','1','5','30','2300','2600','11','15547','1','0','40','2','0','0','0','0','0','0','Shadowmoon Retainer - Cast Shoot and Set Ranged Weapon Model'),
 -- Mordenai
 ('2211301','22113','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Mordenai - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('2211302','22113','9','5','100','1','5','30','2200','2700','11','38372','1','0','40','2','0','0','0','0','0','0','Mordenai - Set Ranged Weapon Model and Cast Shoot'),
