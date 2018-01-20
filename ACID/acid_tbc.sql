@@ -28104,17 +28104,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2085701','20857','11','0','100','6','0','0','0','0','11','38805','0','1','0','0','0','0','0','0','0','0','Arcatraz Defender  - Cast Immolate on Spawn'),
 ('2085702','20857','9','0','100','7','0','5','2000','3000','11','38804','1','0','0','0','0','0','0','0','0','0','Arcatraz Defender  - Cast Flaming Weapon'),
 ('2085703','20857','0','0','100','7','2000','3000','1000','1000','11','40449','1','1','0','0','0','0','0','0','0','0','Arcatraz Defender  - Cast Protean Subdual'),
--- Arcatraz Warder (Needs Ranged Combat Movement Action 57)
+-- Arcatraz Warder 20859 (Needs Ranged Combat Movement Action 57)
 ('2085901','20859','1','0','100','7','1000','3000','4000','5000','11','36327','0','0','40','2','0','0','0','0','0','0','Arcatraz Warder - Cast Shoot Arcane Explosion Arrow and Set Ranged Weapon Model OOC'),
 ('2085902','20859','1','0','100','7','16000','16000','2000','4000','11','36293','0','0','40','2','0','0','0','0','0','0','Arcatraz Warder - Cast Arcane Shot and Set Ranged Weapon Model OOC'),
 ('2085903','20859','4','0','100','0','0','0','0','0','21','0','0','0','22','1','0','0','0','0','0','0','Arcatraz Warder - Stop Movement and Set Phase 1 on Aggro'),
 ('2085904','20859','9','0','100','3','5','30','2300','3900','11','22907','1','0','40','2','0','0','0','0','0','0','Arcatraz Warder (Normal) - Cast Shoot and Set Ranged Weapon Model'),
 ('2085905','20859','9','0','100','5','5','30','2300','3900','11','38940','1','0','40','2','0','0','0','0','0','0','Arcatraz Warder (Heroic) - Cast Shoot and Set Ranged Weapon Model'),
-('2085906','20859','0','13','100','7','0','5000','5000','10000','11','36609','1','0','40','2','0','0','0','0','0','0','Arcatraz Warder (Normal) - Cast Arcane Shot and Set Ranged Weapon Model (Phase 1)'),
-('2085907','20859','0','13','100','7','0','5000','5000','10000','11','38807','1','0','40','2','0','0','0','0','0','0','Arcatraz Warder (Heroic) - Cast Arcane Shot and Set Ranged Weapon Model (Phase 1)'),
-('2085908','20859','9','13','100','1','9','80','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Arcatraz Warder - Stop Movement at 9-80 Yards (Phase 1)'),
-('2085909','20859','9','0','100','1','0','8','1000','1000','21','1','0','0','40','1','0','0','0','0','0','0','Arcatraz Warder - Start Movement and Set Melee Weapon Model at 0-8 Yards'),
-('2085910','20859','7','0','100','0','0','0','0','0','22','0','0','0','40','2','0','0','21','1','0','0','Arcatraz Warder - Set Phase 0 and Set Melee Weapon Model and Start Movement on Evade'),
+('2085906','20859','9','0','100','1','0','5','16000','21000','11','35963','1','1','0','0','0','0','0','0','0','0','Arcatraz Warder - Cast Improved Wing Clip'), -- should move away
+('2085907','20859','0','13','100','7','0','5000','5000','10000','11','36609','1','0','40','2','0','0','0','0','0','0','Arcatraz Warder (Normal) - Cast Arcane Shot and Set Ranged Weapon Model (Phase 1)'),
+('2085908','20859','0','13','100','7','0','5000','5000','10000','11','38807','1','0','40','2','0','0','0','0','0','0','Arcatraz Warder (Heroic) - Cast Arcane Shot and Set Ranged Weapon Model (Phase 1)'),
+('2085909','20859','9','13','100','1','9','80','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Arcatraz Warder - Stop Movement at 9-80 Yards (Phase 1)'),
+('2085910','20859','9','0','100','1','0','8','1000','1000','21','1','0','0','40','1','0','0','0','0','0','0','Arcatraz Warder - Start Movement and Set Melee Weapon Model at 0-8 Yards'),
+('2085911','20859','7','0','100','0','0','0','0','0','22','0','0','0','40','2','0','0','21','1','0','0','Arcatraz Warder - Set Phase 0 and Set Melee Weapon Model and Start Movement on Evade'),
 -- Protean Nightmare (4.3.4 Official Data - Normal)
 ('2086401','20864','0','0','100','7','15200','21700','10900','22900','11','36622','4','33','0','0','0','0','0','0','0','0','Protean Nightmare  - Cast Incubation'),
 ('2086402','20864','0','0','100','3','16900','17600','19300','26500','11','36617','1','0','0','0','0','0','0','0','0','0','Protean Nightmare (Normal)  - Cast Gaping Maw'),
