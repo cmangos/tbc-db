@@ -18608,7 +18608,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2224201','22242','4','0','100','0','0','0','0','0','11','38860','0','0','0','0','0','0','0','0','0','0','Bash\'ir Spell-Thief - Cast Damage Reduction on Aggro'),
 -- Bash'ir Arcanist
 ('2224301','22243','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bash\'ir Arcanist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2224302','22243','9','5','100','1','0','40','3400','4800','11','34447','1','0','0','0','0','0','0','0','0','0','Bash\'ir Arcanist - Cast Arcane Missiles (Phase 1)'),
+('2224302','22243','9','5','100','1','0','40','3400','4800','11','34446','1','0','0','0','0','0','0','0','0','0','Bash\'ir Arcanist - Cast Arcane Missiles (Phase 1)'),
 ('2224303','22243','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bash\'ir Arcanist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2224304','22243','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Bash\'ir Arcanist - Disable Dynamic Movement at 0-8 Yards'),
 ('2224305','22243','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bash\'ir Arcanist - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -19524,7 +19524,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1714403','17144','2','0','100','1','50','0','9000','12000','11','38887','1','0','0','0','0','0','0','0','0','0','Goretooth - Cast Blood Leech at 50% HP'),
 -- Kil'sorrow Spellbinder
 ('1714601','17146','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Kil\'sorrow Spellbinder - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('1714602','17146','9','13','100','1','0','40','3800','5200','11','34447','1','0','0','0','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Cast Arcane Missiles (Phase 1)'),
+('1714602','17146','9','13','100','1','0','40','3800','5200','11','34446','1','0','0','0','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Cast Arcane Missiles (Phase 1)'),
 ('1714603','17146','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1714604','17146','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Kil\'sorrow Spellbinder - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1714605','17146','0','0','100','1','3000','6000','20000','25000','11','22744','4','0','0','0','0','0','0','0','0','0','Kil\'sorrow Spellbinder - Cast Chains of Ice'),
@@ -20035,7 +20035,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1887026','18870','9','7679','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Voidshrieker - Enable Dynamic Movement at 9-80 Yards (Phase 9)'),
 ('1887027','18870','3','7679','100','0','7','0','0','0','49','0','0','0','22','10','0','0','0','0','0','0','Voidshrieker - Disable Dynamic Movement and Set Phase 10 when Mana is at 7% (Phase 9)'),
 ('1887028','18870','3','7167','100','1','100','15','1000','1000','22','9','0','0','0','0','0','0','0','0','0','0','Voidshrieker - Set Phase 9 when Mana is above 15% (Phase 10)'),
-('1887029','18870','9','6143','100','1','0','30','2400','3800','11','34447','1','0','0','0','0','0','0','0','0','0','Voidshrieker - Cast Arcane Missiles (Phase 11)'),
+('1887029','18870','9','6143','100','1','0','30','2400','3800','11','34446','1','0','0','0','0','0','0','0','0','0','Voidshrieker - Cast Arcane Missiles (Phase 11)'),
 ('1887030','18870','9','6143','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Voidshrieker - Enable Dynamic Movement at 9-80 Yards (Phase 11)'),
 ('1887031','18870','3','6143','100','0','7','0','0','0','49','0','0','0','22','12','0','0','0','0','0','0','Voidshrieker - Disable Dynamic Movement and Set Phase 12 when Mana is at 7% (Phase 11)'),
 ('1887032','18870','3','4095','100','1','100','15','1000','1000','22','11','0','0','0','0','0','0','0','0','0','0','Voidshrieker - Set Phase 11 when Mana is above 15% (Phase 12)'),
@@ -20152,7 +20152,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Abjurist Belmara
 ('1954601','19546','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Abjurist Belmara - Cast Frost Armor on Spawn'),
 ('1954602','19546','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Abjurist Belmara - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1954603','19546','9','5','100','1','0','30','3400','4800','11','34447','1','0','0','0','0','0','0','0','0','0','Abjurist Belmara - Cast Arcane Missiles (Phase 1)'),
+('1954603','19546','9','5','100','1','0','30','3400','4800','11','34446','1','0','0','0','0','0','0','0','0','0','Abjurist Belmara - Cast Arcane Missiles (Phase 1)'),
 ('1954604','19546','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Abjurist Belmara - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1954605','19546','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Abjurist Belmara - Disable Dynamic Movement at 0-8 Yards'),
 ('1954606','19546','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Abjurist Belmara - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -20333,7 +20333,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2013205','20132','0','0','100','1','6500','9000','10000','12000','11','37537','1','0','0','0','0','0','0','0','0','0','Socrethar - Cast Backlash'),
 -- Sunfury Arcanist
 ('2013401','20134','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Sunfury Arcanist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2013402','20134','9','13','100','1','8','30','3400','4800','11','34447','1','0','0','0','0','0','0','0','0','0','Sunfury Arcanist - Cast Arcane Missiles (Phase 1)'),
+('2013402','20134','9','13','100','1','8','30','3400','4800','11','34446','1','0','0','0','0','0','0','0','0','0','Sunfury Arcanist - Cast Arcane Missiles (Phase 1)'),
 ('2013403','20134','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sunfury Arcanist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2013404','20134','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Sunfury Arcanist - Disable Dynamic Movement at 0-8 Yards'),
 ('2013405','20134','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Sunfury Arcanist - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -21344,7 +21344,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2201601','22016','2','0','100','0','20','0','0','0','11','36476','0','0','0','0','0','0','0','0','0','0','Eclipsion Soldier - Cast Blood Heal at 20% HP'),
 -- Eclipsion Spellbinder
 ('2201701','22017','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Eclipsion Spellbinder - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2201702','22017','9','13','100','1','0','30','3400','4800','11','34447','1','0','0','0','0','0','0','0','0','0','Eclipsion Spellbinder - Cast Fireball (Phase 1)'),
+('2201702','22017','9','13','100','1','0','30','3400','4800','11','34446','1','0','0','0','0','0','0','0','0','0','Eclipsion Spellbinder - Cast Fireball (Phase 1)'),
 ('2201703','22017','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Eclipsion Spellbinder - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2201704','22017','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Eclipsion Spellbinder - Disable Dynamic Movement at 0-8 Yards'),
 ('2201705','22017','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Eclipsion Spellbinder - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -22079,7 +22079,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2165103','21651','2','0','100','0','30','0','0','0','11','3019','0','0','54','-106','0','0','0','0','0','0','Time-Lost Skettis Reaver - Cast Frenzy at 30% HP'),
 -- Cabal Abjurist
 ('2166001','21660','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Cabal Abjurist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2166002','21660','9','5','100','1','0','30','3400','4800','11','34447','1','0','0','0','0','0','0','0','0','0','Cabal Abjurist - Cast Arcane Missiles (Phase 1)'),
+('2166002','21660','9','5','100','1','0','30','3400','4800','11','34446','1','0','0','0','0','0','0','0','0','0','Cabal Abjurist - Cast Arcane Missiles (Phase 1)'),
 ('2166003','21660','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Cabal Abjurist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2166004','21660','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Cabal Abjurist - Disable Dynamic Movement at 0-8 Yards'),
 ('2166005','21660','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Cabal Abjurist - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -22361,7 +22361,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1808711','18087','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Darkcrest Siren - Set Phase to 0 on Evade'),
 -- Bloodscale Enchantress
 ('1808801','18088','4','0','100','0','0','0','0','0','11','33245','0','1','49','1','0','0','22','1','0','0','Bloodscale Enchantress - Cast Ice Barrier and Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1808802','18088','9','5','100','1','0','30','3400','4800','11','34447','1','0','0','0','0','0','0','0','0','0','Bloodscale Enchantress - Cast Arcane Missiles (Phase 1)'),
+('1808802','18088','9','5','100','1','0','30','3400','4800','11','34446','1','0','0','0','0','0','0','0','0','0','Bloodscale Enchantress - Cast Arcane Missiles (Phase 1)'),
 ('1808803','18088','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bloodscale Enchantress - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1808804','18088','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Bloodscale Enchantress - Disable Dynamic Movement at 0-8 Yards'),
 ('1808805','18088','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bloodscale Enchantress - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
