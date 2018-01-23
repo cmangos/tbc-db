@@ -21135,6 +21135,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2140801','21408','2','0','100','1','30','0','15000','30000','11','37941','0','0','0','0','0','0','0','0','0','0','Felfire Diemetradon - Cast Flaming Wound at 30% HP'),
 -- Envoy Icarius
 ('2140901','21409','4','0','100','0','0','0','0','0','1','-640','0','0','0','0','0','0','0','0','0','0','Envoy Icarius - Say on Aggro'),
+-- Corrupt Water Totem
+('2142001','21420','11','0','100','0','0','0','0','0','20','0','0','0','21','0','0','0','50','0','0','0','Corrupt Water Totem - Prevent Melee and Disable Combat Movement and Set React State Passive on Spawn'),
+('2142002','21420','6','0','100','0','0','0','0','0','11','36826','0','0','11','36826','0','0','11','15063','0','0','Corrupt Water Totem - Cast Summon Corrupted Water Elemental (x2) and Cast Frost Nova on Death'),
 -- Corrupted Water Elemental
 ('2142801','21428','0','0','100','1','0','5000','5000','15000','11','9672','1','0','0','0','0','0','0','0','0','0','Corrupted Water Elemental - Cast Frostbolt'),
 -- Skethyl Owl
@@ -21223,6 +21226,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2168705','21687','9','0','100','1','0','5','6000','11000','11','29426','1','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Heroic Strike'),
 ('2168706','21687','0','0','100','1','25000','28000','23000','26000','11','26281','1','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Taunt'),
 ('2168707','21687','2','0','100','1','30','0','30000','40000','11','15062','0','0','0','0','0','0','0','0','0','0','Grom\'tor, Son of Oronok - Cast Shield Wall at 30% HP'),
+-- Corrupt Fire Totem
+('2170301','21703','11','0','100','0','0','0','0','0','20','0','0','0','21','0','0','0','50','0','0','0','Corrupt Fire Totem - Prevent Melee and Disable Combat Movement and Set React State Passive on Spawn'),
+('2170302','21703','6','0','100','0','0','0','0','0','11','37201','0','0','11','37201','0','0','11','11969','0','0','Corrupt Fire Totem - Cast Summon Corrupted Fire Elemental (x2) and Cast Fire Nova on Death'),
+-- Corrupt Earth Totem
+('2170401','21704','11','0','100','0','0','0','0','0','20','0','0','0','21','0','0','0','50','0','0','0','Corrupt Earth Totem - Prevent Melee and Disable Combat Movement and Set React State Passive on Spawn'),
+('2170402','21704','6','0','100','0','0','0','0','0','11','37203','0','0','11','37203','0','0','11','37203','0','0','Corrupt Earth Totem - Cast Summon Corrupted Earth Elemental (x3)'),
+-- Corrupt Air Totem
+('2170501','21705','11','0','100','0','0','0','0','0','20','0','0','0','21','0','0','0','50','0','0','0','Corrupt Air Totem - Prevent Melee and Disable Combat Movement and Set React State Passive on Spawn'),
+('2170502','21705','6','0','100','0','0','0','0','0','11','37202','0','0','11','37202','0','0','11','37202','0','0','Corrupt Air Totem - Cast Summon Corrupted Air Elemental (x3)'),
 -- Corrupted Fire Elemental
 ('2170601','21706','0','0','100','1','0','5000','5000','15000','11','9053','1','0','0','0','0','0','0','0','0','0','Corrupted Fire Elemental - Cast Fireball'),
 -- Corrupted Air Elemental
