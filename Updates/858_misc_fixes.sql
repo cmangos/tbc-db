@@ -15,4 +15,7 @@ UPDATE creature_template SET SchoolImmuneMask=8,Leash=50,MinLevel=66,MaxLevel=70
 UPDATE creature_template SET HealthMultiplier=1.0,FactionAlliance=1629,FactionHorde=1629,MinLevel=68,MaxLevel=68 WHERE entry IN(15438); -- fire elemental totem
 UPDATE creature_template SET SchoolImmuneMask=4,Leash=50,MinLevel=68,MaxLevel=70,SpeedWalk=2.5/2.5,SpeedRun=8/7 WHERE entry IN(15438); -- greater fire elemental
 
+-- correct flags for snake trap snakes
+UPDATE creature_template SET UnitFlags=0x00008000 WHERE entry IN(19921,19833);
+
 
