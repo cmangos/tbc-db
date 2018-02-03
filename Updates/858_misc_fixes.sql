@@ -18,4 +18,9 @@ UPDATE creature_template SET SchoolImmuneMask=4,Leash=50,MinLevel=68,MaxLevel=70
 -- correct flags for snake trap snakes
 UPDATE creature_template SET UnitFlags=0x00008000 WHERE entry IN(19921,19833);
 
+-- Add affect mask for Improved Consecration to affect Consecration
+DELETE FROM spell_affect WHERE entry IN(34252);
+INSERT INTO spell_affect VALUES
+(34252,0,0x0000000000000020);
+
 
