@@ -23,4 +23,9 @@ DELETE FROM spell_affect WHERE entry IN(34252);
 INSERT INTO spell_affect VALUES
 (34252,0,0x0000000000000020);
 
+-- this shield should not scale with anything
+DELETE FROM spell_bonus_data WHERE entry IN(32643);
+INSERT INTO spell_bonus_data(entry,comments) VALUES
+(32643,'Item - Petrified Lichen Guard');
+
 
