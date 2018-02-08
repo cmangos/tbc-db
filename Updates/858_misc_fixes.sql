@@ -28,4 +28,6 @@ DELETE FROM spell_bonus_data WHERE entry IN(32643);
 INSERT INTO spell_bonus_data(entry,comments) VALUES
 (32643,'Item - Petrified Lichen Guard');
 
+DELETE FROM creature WHERE id IN(17077); -- spawned with script
+
 
