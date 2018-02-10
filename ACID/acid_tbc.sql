@@ -18614,7 +18614,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2224201','22242','4','0','100','0','0','0','0','0','11','38860','0','0','0','0','0','0','0','0','0','0','Bash\'ir Spell-Thief - Cast Damage Reduction on Aggro'),
 -- Bash'ir Arcanist
 ('2224301','22243','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bash\'ir Arcanist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2224302','22243','9','5','100','1','0','40','3400','4800','11','34446','1','0','0','0','0','0','0','0','0','0','Bash\'ir Arcanist - Cast Arcane Missiles (Phase 1)'),
+('2224302','22243','9','5','100','1','0','40','6800','9600','11','34446','1','0','0','0','0','0','0','0','0','0','Bash\'ir Arcanist - Cast Arcane Missiles (Phase 1)'),
 ('2224303','22243','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bash\'ir Arcanist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2224304','22243','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Bash\'ir Arcanist - Disable Dynamic Movement at 0-8 Yards'),
 ('2224305','22243','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Bash\'ir Arcanist - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -22077,7 +22077,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ethereal Arcanist
 ('2140501','21405','4','0','100','0','0','0','0','0','11','32936','0','1','0','0','0','0','0','0','0','0','Ethereal Arcanist - Cast Der\'izu Focus on Aggro'),
 ('2140502','21405','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Ethereal Arcanist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2140503','21405','9','13','100','1','0','40','3400','4800','11','33833','1','0','0','0','0','0','0','0','0','0','Ethereal Arcanist - Cast Arcane Missiles (Phase 1)'),
+('2140503','21405','9','13','100','1','0','40','3400','4800','11','33832','1','0','0','0','0','0','0','0','0','0','Ethereal Arcanist - Cast Arcane Missiles (Phase 1)'),
 ('2140504','21405','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Ethereal Arcanist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2140505','21405','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Ethereal Arcanist - Disable Dynamic Movement at 0-8 Yards'),
 ('2140506','21405','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Ethereal Arcanist - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -23283,8 +23283,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1879409','18794','3','61','100','6','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Cabal Ritualist - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1879410','18794','3','59','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Cabal Ritualist - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1879411','18794','0','55','100','6','1000','1000','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Cabal Ritualist - Enable Dynamic Movement on Aggro (Phase 3)'),
-('1879412','18794','9','55','100','3','0','30','2400','3800','11','33833','1','0','0','0','0','0','0','0','0','0','Cabal Ritualist (Normal) - Cast Arcane Missiles (Phase 3)'),
-('1879413','18794','9','55','100','5','0','30','2400','3800','11','38264','1','0','0','0','0','0','0','0','0','0','Cabal Ritualist (Heroic) - Cast Arcane Missiles (Phase 3)'),
+('1879412','18794','9','55','100','3','0','30','4800','7600','11','33832','1','0','0','0','0','0','0','0','0','0','Cabal Ritualist (Normal) - Cast Arcane Missiles (Phase 3)'),
+('1879413','18794','9','55','100','5','0','30','4800','7600','11','38263','1','0','0','0','0','0','0','0','0','0','Cabal Ritualist (Heroic) - Cast Arcane Missiles (Phase 3)'),
 ('1879414','18794','0','55','100','7','2400','14300','5200','21700','11','33487','4','1','0','0','0','0','0','0','0','0','Cabal Ritualist - Cast Addle Humanoid (Phase 3)'),
 ('1879415','18794','9','55','100','7','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Cabal Ritualist - Enable Dynamic Movement at 9-80 Yards (Phase 3)'),
 ('1879416','18794','3','55','100','6','7','0','0','0','49','0','0','0','22','4','0','0','0','0','0','0','Cabal Ritualist - Disable Dynamic Movement and Set Phase 4 when Mana is at 7% (Phase 3)'),
