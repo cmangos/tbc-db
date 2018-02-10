@@ -19,8 +19,4 @@ INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inv
 	('2027903', '20279', '0', '11', '100', '0', '5000', '8500', '0', '0', '28', '0', '31261', '0', '19', '536870912', '0', '0', '22', '3', '0', '0', 'Ragestone Threshalisk - Remove Permanent Feign Death (Root) and unit flag UNK_29, set phase 3 (Phase 2)'),
 	('2027904', '20279', '0', '7', '1000', '0', '0', '0', '0', '0', '11', '35385', '1', '0', '54', '-1017', '0', '0', '0', '0', '0', '0', 'Ragestone Threshalisk - Charge and emote (Phase 3)');
 */
--- fix threshalisks charging themselves
-UPDATE `spell_template`
-	SET `EffectImplicitTargetA2` = '6'
-	WHERE id = '35385';
 
