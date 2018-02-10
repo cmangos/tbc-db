@@ -18287,12 +18287,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2076808','20768','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Gnosh Brognat - Say on Death if Killer Player has Completed Quest 11000'),
 ('2076809','20768','0','0','100','1','6000','6000','12000','16000','11','37597','1','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Cast Meat Slap'),
 ('2076810','20768','0','0','100','1','2500','5500','10000','11000','11','37596','1','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Cast Tenderize'),
--- Glasshide Petrifier
-('2092401','20924','2','0','100','0','70','41','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Glasshide Petrifier - Cast Soften at 70% HP'),
-('2092402','20924','2','0','100','0','40','11','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Glasshide Petrifier - Cast Soften at 40% HP'),
-('2092403','20924','2','0','100','0','10','0','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Glasshide Petrifier - Cast Soften at 10% HP'),
+-- Grishnath Basilisk
+('2092401','20924','2','0','100','0','70','41','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Grishnath Basilisk - Cast Soften at 70% HP'),
+('2092402','20924','2','0','100','0','40','11','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Grishnath Basilisk - Cast Soften at 40% HP'),
+('2092403','20924','2','0','100','0','10','0','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Grishnath Basilisk - Cast Soften at 10% HP'),
+('2092404','20924','2','0','40','0','15','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Grishnath Basilisk - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('2092405','20924','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Grishnath Basilisk - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('2092406','20924','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Grishnath Basilisk - Cast Threshalisk Charge and Emote (Phase 2)'),
 -- Scalded Basilisk
 ('2092501','20925','0','0','85','1','8000','13000','14000','19000','11','35236','0','0','0','0','0','0','0','0','0','0','Scalded Basilisk - Cast Heat Wave'),
+('2092502','20925','2','0','40','0','15','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Scalded Basilisk - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('2092503','20925','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Scalded Basilisk - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('2092504','20925','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Scalded Basilisk - Cast Threshalisk Charge and Emote (Phase 2)'),
+-- Ruuan Weald Basilisk 20987
+('2098701','20987','2','0','60','0','15','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Scalded Basilisk - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('2098702','20987','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Scalded Basilisk - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('2098703','20987','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Scalded Basilisk - Cast Threshalisk Charge and Emote (Phase 2)'),
 -- Ridgespine Horror
 ('2099801','20998','4','0','100','0','0','0','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Ridgespine Horror - Enable Dynamic Movement on Aggro'),
 ('2099802','20998','0','0','100','1','0','0','2700','3400','11','7951','1','0','0','0','0','0','0','0','0','0','Ridgespine Horror - Cast Toxic Spit'),
@@ -20565,8 +20575,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shaleskin Ripper
 ('2060601','20606','1','0','100','1','1000','1000','600000','600000','11','36576','0','34','0','0','0','0','0','0','0','0','Shaleskin Ripper - Cast Shaleskin OOC'),
 -- Craghide Basilisk
-('2060702','20607','9','0','100','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Craghide Basilisk - Cast Threshalisk Charge on Aggro'),
-('2060701','20607','9','0','100','1','5','30','45000','55000','11','35313','1','0','0','0','0','0','0','0','0','0','Craghide Basilisk - Cast Hypnotic Gaze'),
+('2060701','20607','9','0','20','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Craghide Basilisk - Cast Threshalisk Charge on Aggro'),
+('2060702','20607','9','0','100','1','5','30','45000','55000','11','35313','1','0','0','0','0','0','0','0','0','0','Craghide Basilisk - Cast Hypnotic Gaze'),
+('2060703','20607','2','0','30','0','15','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Craghide Basilisk - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('2060704','20607','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Craghide Basilisk - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('2060705','20607','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Craghide Basilisk - Cast Threshalisk Charge and Emote (Phase 2)'),
 -- Talbuk Doe
 ('2061001','20610','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Reset flag on spawn'),
 ('2061002','20610','8','0','100','0','35771','1','0','0','11','40347','6','2','11','42386','0','18','18','33554432','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
@@ -22610,16 +22623,25 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1951901','19519','9','0','100','1','0','5','12000','16000','11','35238','1','0','0','0','0','0','0','0','0','0','Starving Bog Lord - Cast War Stomp'),
 ('1951902','19519','9','0','100','1','0','15','4000','8000','11','35244','1','32','0','0','0','0','0','0','0','0','Starving Bog Lord - Cast Choking Vines'),
 -- Marshrock Threshalisk
-('1970601','19706','9','0','100','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Marshrock Threshalisk - Cast Threshalisk Charge'),
+('1970601','19706','9','0','20','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Marshrock Threshalisk - Cast Threshalisk Charge'),
+('1970602','19706','2','0','50','0','15','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Marshrock Threshalisk - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('1970603','19706','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Marshrock Threshalisk - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('1970604','19706','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Marshrock Threshalisk - Cast Threshalisk Charge and Emote (Phase 2)'),
 -- Ironspine Threshalisk
-('1972901','19729','9','0','100','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Ironspine Threshalisk - Cast Threshalisk Charge'),
+('1972901','19729','9','0','20','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Ironspine Threshalisk - Cast Threshalisk Charge'),
+('1972902','19729','2','0','60','0','15','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Ironspine Threshalisk - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('1972903','19729','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Ironspine Threshalisk - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('1972904','19729','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Ironspine Threshalisk - Cast Threshalisk Charge and Emote (Phase 2)'),
 -- Ironspine Gazer
-('1973001','19730','9','0','100','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Ironspine Gazer - Cast Threshalisk Charge'),
+('1973001','19730','9','0','20','0','0','40','0','0','11','35385','1','0','0','0','0','0','0','0','0','0','Ironspine Gazer - Cast Threshalisk Charge'),
 ('1973002','19730','0','0','100','1','7000','11000','45000','50000','11','35313','1','0','0','0','0','0','0','0','0','0','Ironspine Gazer - Cast Hypnotic Gaze'),
+('1973003','19730','2','0','40','0','15','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Ironspine Gazer - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('1973004','19730','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Ironspine Gazer - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('1973005','19730','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Ironspine Gazer - Cast Threshalisk Charge and Emote (Phase 2)'),
 -- Ango'rosh Warlock
 ('1973201','19732','11','0','100','32','0','0','0','0','11','8722','0','0','11','11939','0','0','0','0','0','0','Ango\'rosh Warlock - Cast Summon Succubus or Summon Imp on Spawn'),
 ('1973202','19732','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Ango\'rosh Warlock - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('1973203','19732','9','23','100','1','0','40','3400','4800','11','20825','1','0','0','0','0','0','0','0','0','0','Ango\'rosh Warlock - Cast Shadow Bolt (Phase 1)'),
+('1973203','19732','9','5','100','1','0','40','3400','4800','11','20825','1','0','0','0','0','0','0','0','0','0','Ango\'rosh Warlock - Cast Shadow Bolt (Phase 1)'),
 ('1973204','19732','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Ango\'rosh Warlock - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1973205','19732','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Ango\'rosh Warlock - Disable Dynamic Movement at 0-8 Yards'),
 ('1973206','19732','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Ango\'rosh Warlock - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
@@ -22671,9 +22693,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2027002','20270','2','0','100','0','50','0','0','0','11','16561','0','0','0','0','0','0','0','0','0','0','Feralfen Druid - Cast Regrowth at 50% HP'),
 -- Ragestone Threshalisk
 ('2027901','20279','2','0','100','0','20','0','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Ragestone Threshalisk - Cast Enrage at 20% HP'),
+('2027902','20279','2','0','30','0','15','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Ragestone Threshalisk - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('2027903','20279','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Ragestone Threshalisk - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('2027904','20279','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Ragestone Threshalisk - Cast Threshalisk Charge and Emote (Phase 2)'),
 -- Ragestone Trampler
 ('2028001','20280','9','0','100','1','0','5','7000','12000','11','5568','0','0','0','0','0','0','0','0','0','0','Ragestone Trampler - Cast Trample'),
 ('2028002','20280','2','0','100','0','30','0','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Ragestone Trampler - Cast Enrage at 30% HP'),
+('2028003','20280','2','0','30','0','15','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Ragestone Trampler - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('2028004','20280','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Ragestone Trampler - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('2028005','20280','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Ragestone Trampler - Cast Threshalisk Charge and Emote (Phase 2)'),
 -- Marshrock Stomper
 ('2028301','20283','0','0','100','1','5000','10000','15000','30000','11','12612','0','0','0','0','0','0','0','0','0','0','Marshrock Stomper - Cast Stomp'),
 -- Lagoon Eel
@@ -33998,7 +34026,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1008','Hey, hey! Nice build you got there honey!','0','0','0','24495','1'),
 ('-1009','Yo! Big lady! You think you\'re big enough to handle me?','0','0','0','24495','1'),
 ('-1010','Hey tough stuff! Hey, $c! Do you like money? I\'m loaded! How about you come over here and check out my gold coins?','0','0','0','24495','1'),
--- PLEASE RE-USE 1011 - 1017
+-- PLEASE RE-USE 1011 - 1016
+('-1017', '%s stops playing dead and charges forward!', '0', '2', '0', '0', '19729 19706 20279'),
 ('-1018','The blood samples must be protected! Destroy the intruders!','0','0','0','12461','0'),
 ('-1019','This will teach you to lay off the herb, $r.','0','0','0','11447','1'),
 ('-1020','Step right up! Step right up! Greetings my friend. I\'m Silas Darkmoon and I want to welcome you to the greatest show on Azeroth! It\'s the Darkmoon Faire friend, and it\'s your lucky day! Sparing no expense, we\'ve gathered wonders and treats from around the world for your delight. Whether you\'re young or old, rich or poor, the Darkmoon Faire has it all!','0','0','0','14823','1'),
