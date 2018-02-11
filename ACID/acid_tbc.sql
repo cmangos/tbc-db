@@ -4123,13 +4123,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blood Knight Dawnstar (17832) - npc_blood_knight_dawnstar
 -- Terellia (18426) - NSR
 -- Dr. Whitherlimb
-('2206201','22062','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Dr. Whitherlimb - Set Phase 1 on Aggro'),
+('2206201','22062','4','0','100','0','0','0','0','0','22','1','0','0','54','-1014','0','0','0','0','0','0','Dr. Whitherlimb - Set Phase 1 and Say on Aggro'),
 ('2206202','22062','9','5','100','1','0','30','5000','7000','11','21067','1','0','0','0','0','0','0','0','0','0','Dr. Whitherlimb - Cast Poison Bolt (Phase 1)'),
 ('2206203','22062','24','5','100','1','21067','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Dr. Whitherlimb - Set Phase 2 on Target Max Poison Bolt Aura Stack (Phase 1)'),
 ('2206204','22062','28','3','100','1','21067','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Dr. Whitherlimb - Set Phase 1 on Target Missing Poison Bolt Aura Stack (Phase 2)'),
 ('2206205','22062','0','0','100','1','8000','15000','15000','30000','11','38864','4','33','0','0','0','0','0','0','0','0','Dr. Whitherlimb - Cast Withering Poison'),
 ('2206206','22062','2','0','100','1','50','0','35000','45000','11','38871','0','1','0','0','0','0','0','0','0','0','Dr. Whitherlimb - Cast Monstrous Elixir at 50% HP'),
 ('2206207','22062','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dr. Whitherlimb - Set Phase to 0 on Evade'),
+('2206208','22062','5','0','100','0','0','0','0','0','1','-1015','-1016','0','0','0','0','0','0','0','0','0','Dr. Whitherlimb - Yell on Player Kill'),
 -- Budd Nedreck (23559) - npc_budd_nedreck
 -- Provisioner Ameenah (23560) - NSR
 -- Turgore (23565) - NSR
@@ -24101,7 +24102,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('919601','9196','0','0','100','3','12000','12000','18000','18000','11','10101','1','0','0','0','0','0','0','0','0','0','Highlord Omokk - Cast Knock Away'),
 ('919602','9196','2','0','100','2','20','0','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','Highlord Omokk - Cast Frenzy'),
 ('919603','9196','0','0','100','3','1000','3000','15000','25000','1','-1365','-1366','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
-('919604','9196','5','0','100','3','0','0','0','0','1','-1367','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Unit Kill'),
+('919604','9196','5','0','100','3','0','0','0','0','1','-1367','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Player Kill'),
 -- Spirestone Battle Mage
 ('919701','9197','0','0','100','3','4000','10000','5000','15000','11','15305','4','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Chain Lighting'),
 ('919702','9197','14','0','100','3','6000','40','20000','20000','11','16170','6','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Bloodlust'),
@@ -26823,7 +26824,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('735709','7357','0','0','100','3','30000','40000','30000','40000','1','-164','-165','-166','0','0','0','0','0','0','0','0','Modresh Fire Eye - Random Combat Yell'),
 -- Amnennar the Coldbringer (SD2 Backport)
 ('735800','7358','4','0','100','2','0','0','0','0','1','-1221','0','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Yell on Aggro'),
-('735801','7358','5','0','100','2','0','0','0','0','1','-1225','0','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Yell on Killed Unit'),
+('735801','7358','5','0','100','2','0','0','0','0','1','-1225','0','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Yell on Player Kill'),
 ('735802','7358','0','0','100','3','8000','8000','12000','12000','11','13009','1','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Cast Amnennar\'s Wrath'),
 ('735803','7358','0','0','100','3','1000','1000','8000','8000','11','15530','4','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Cast Frostbolt'),
 ('735804','7358','0','0','100','3','10000','15000','15000','15000','11','15531','0','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Cast Frost Nova'),
@@ -27901,7 +27902,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Postmaster Malown (SD2 Backport)
 ('1114301','11143','11','0','100','0','0','0','0','0','11','3417','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Thrash on Spawn'),
 ('1114302','11143','4','0','100','0','0','0','0','0','1','-1195','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Yell on Aggro'),
-('1114303','11143','5','0','100','1','0','0','0','0','1','-1196','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Yell on Unit Kill'),
+('1114303','11143','5','0','100','1','0','0','0','0','1','-1196','0','0','0','0','0','0','0','0','0','0','Postmaster Malown - Yell on Player Kill'),
 ('1114304','11143','0','0','100','1','5000','8000','5000','8000','11','6253','1','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Backhand'),
 ('1114305','11143','0','0','100','1','15000','17000','15000','17000','11','12542','4','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Fear'),
 ('1114306','11143','0','0','100','1','18000','20000','18000','20000','11','12741','4','0','0','0','0','0','0','0','0','0','Postmaster Malown - Cast Curse of Weakness'),
@@ -30034,7 +30035,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1789802','17898','9','0','100','3','0','5','12000','19000','11','31610','1','0','0','0','0','0','0','0','0','0','Abomination - Cast Knockdown'),
 -- Shadowy Necromancer
 ('1789901','17899','0','0','100','3','6000','10000','9000','16000','11','31627','1','0','0','0','0','0','0','0','0','0','Shadowy Necromancer - Cast Shadow Bolt'),
-('1789902','17899','5','0','100','3','0','0','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Shadowy Necromancer - Random Phase on Player Death'),
+('1789902','17899','5','0','100','3','0','0','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Shadowy Necromancer - Random Phase on Player Kill'),
 ('1789903','17899','0','13','100','2','0','0','1500','1500','11','31617','0','1','22','0','0','0','0','0','0','0','Shadowy Necromancer - Cast Raise Dead On Player Kill and Set Phase Back To 0 (Phase 1)'),
 ('1789904','17899','0','11','100','2','0','0','1500','1500','11','31624','0','1','22','0','0','0','0','0','0','0','Shadowy Necromancer - Cast Raise Dead On Player Kill and Set Phase Back To 0 (Phase 2)'),
 ('1789905','17899','0','7','100','2','0','0','1500','1500','11','31625','0','1','22','0','0','0','0','0','0','0','Shadowy Necromancer - Cast Raise Dead On Player Kill and Set Phase Back To 0 (Phase 3)'),
@@ -32025,7 +32026,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1135202','11352','0','0','100','3','10000','10000','12000','12000','11','11130','4','0','0','0','0','0','0','0','0','0','Gurubashi Berserker - Cast Knock Away'),
 ('1135203','11352','0','0','90','3','5000','5000','13000','18000','11','15588','0','0','0','0','0','0','0','0','0','0','Gurubashi Berserker - Cast Thunderclap'),
 ('1135204','11352','2','0','50','3','50','0','6000','8000','11','8269','0','32','1','-46','0','0','0','0','0','0','Gurubashi Berserker - Cast Enrage at 50% HP'),
-('1135205','11352','5','0','100','3','120000','120000','0','0','11','8269','0','34','0','0','0','0','0','0','0','0','Gurubashi Berserker - Cast Enrage at Kill'),
+('1135205','11352','5','0','100','3','120000','120000','0','0','11','8269','0','34','0','0','0','0','0','0','0','0','Gurubashi Berserker - Cast Enrage on Player Kill'),
 -- Gurubashi Blood Drinker
 ('1135301','11353','0','0','75','3','2000','4000','4000','6000','11','24437','1','0','0','0','0','0','0','0','0','0','Gurubashi Blood Drinker - Cast Blood Leech'),
 ('1135302','11353','2','0','100','3','30','0','8000','12000','11','24435','1','0','0','0','0','0','0','0','0','0','Gurubashi Blood Drinker - Cast Drain Life at 30% health'),
@@ -34033,7 +34034,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1008','Hey, hey! Nice build you got there honey!','0','0','0','24495','1'),
 ('-1009','Yo! Big lady! You think you\'re big enough to handle me?','0','0','0','24495','1'),
 ('-1010','Hey tough stuff! Hey, $c! Do you like money? I\'m loaded! How about you come over here and check out my gold coins?','0','0','0','24495','1'),
--- PLEASE RE-USE 1011 - 1016
+-- PLEASE RE-USE 1011 - 1013
+('-1014','Excellent!  Fresh parts!','0','0','0','22062','0'),
+('-1015','It is very kind of you to donate your organs!','0','0','0','22062','0'),
+('-1016','Be proud, your brain will be put to good use in one of my abominations.','0','0','0','22062','0'),
 ('-1017', '%s stops playing dead and charges forward!', '0', '2', '0', '0', '19729 19706 20279'),
 ('-1018','The blood samples must be protected! Destroy the intruders!','0','0','0','12461','0'),
 ('-1019','This will teach you to lay off the herb, $r.','0','0','0','11447','1'),
