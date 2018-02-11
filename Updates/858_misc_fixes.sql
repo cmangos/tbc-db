@@ -30,4 +30,7 @@ INSERT INTO spell_bonus_data(entry,comments) VALUES
 
 DELETE FROM creature WHERE id IN(17077); -- spawned with script
 
+-- correct mask for Presence of Mind - taken from wotlk and checked against patch notes
+UPDATE spell_affect SET SpellFamilyMask=0x0000100061400035 WHERE entry IN(12043);
+
 
