@@ -25,7 +25,7 @@ REPLACE INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`
 (4658, 4, 0, '<Take the letter>', 0, 1, 1, -1, 0, 5, 0, 0, NULL, 0, 196),
 (5061, 4, 0, '<Take the letter>', 0, 1, 1, -1, 0, 5, 0, 0, NULL, 0, 196);
 
-UPDATE `gossip_menu_option` SET `condition_id` = 180 WHERE `action_script_id` = 5; -- Quest ID 6681 NOT Taken AND NOT Rewarded instead of additional below level 25, as it can then never be done above that level
+UPDATE `gossip_menu_option` SET `condition_id` = 196 WHERE `action_script_id` = 5; -- needs rogue condition atleast, level condition is questionable but leaving as is for now
 
 UPDATE `gossip_menu` SET `condition_id` = 0 WHERE `text_id` = 4439; -- Yes, $c?
 UPDATE `gossip_menu` SET `condition_id` = 112 WHERE `text_id` = 4442; -- What can this insignificant servant do for you, $N? Training perhaps? "Player ClassMask: 16"

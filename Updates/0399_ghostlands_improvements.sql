@@ -2483,7 +2483,7 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 1721001;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
-(1721001, 0, 	0, 31, 16330, 5, 0, 0, 0, 1, -12000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Leader - Terminate Script If Sentinel Spy (16330) Is Not Found in Range'),
+(1721001, 0, 	0, 31, 16330, 5, 0, 0, 0, 0, -12000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Leader - Terminate Script If Sentinel Spy (16330) Is Not Found in Range'),
 (1721001, 1000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Leader - EMOTE_ONESHOT_SALUTE (66)'),
 (1721001, 3000, 0, 1, 1, 0, 0, 16330, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Spy - EMOTE_ONESHOT_TALK (1)'),
 (1721001, 5000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Leader - EMOTE_ONESHOT_QUESTION (6)'),
@@ -2728,7 +2728,7 @@ INSERT INTO `creature_movement` (`Id`, `Point`, `PositionX`, `PositionY`, `Posit
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 1633301;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
-(1633301, 0, 	0, 31, 16333, 5, 0, 0, 0, 1, -12000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Infiltrator (Master) - Terminate Script If Sentinel Infiltrator (16333) Is Not Found in Range'),
+(1633301, 0, 	0, 31, 16333, 5, 0, 0, 0, 0, -12000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Infiltrator (Master) - Terminate Script If Sentinel Infiltrator (16333) Is Not Found in Range'),
 (1633301, 1000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Infiltrator (Master) - EMOTE_ONESHOT_SALUTE (66)'),
 (1633301, 1000, 0, 1, 66, 0, 0, 16333, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Infiltrator - EMOTE_ONESHOT_SALUTE (66)'),
 (1633301, 3000, 0, 1, 1, 0, 0, 16333, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sentinel Infiltrator - EMOTE_ONESHOT_TALK (1)'),
