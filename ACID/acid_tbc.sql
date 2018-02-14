@@ -22171,6 +22171,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2173008','21730','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Alluvion - Set Phase to 0 on Evade'),
 -- Time-Lost Skettis Worshipper
 ('2176301','21763','0','0','100','1','4000','12000','30000','60000','11','38167','1','32','0','0','0','0','0','0','0','0','Time-Lost Skettis Worshipper - Cast Curse of Blood'),
+-- Time-Lost Skettis High Priest 21787
+('2178701','21787','9','0','100','1','0','40','8000','12000','11','9734','1','0','0','0','0','0','0','0','0','0','Time-Lost Skettis High Priest - Cast Holy Smite'),
+('2178702','21787','0','0','100','1','4200','7700','7100','16200','11','11639','4','32','0','0','0','0','0','0','0','0','Time-Lost Skettis High Priest - Cast Shadow Word Pain'),
+('2178703','21787','14','0','100','1','4000','40','10000','15000','11','42420','6','1','0','0','0','0','0','0','0','0','Time-Lost Skettis High Priest - Cast Flash Heal on Friendlies'),
 -- Skettis Kaliri
 ('2180401','21804','9','0','100','1','0','5','5000','10000','11','5708','1','0','0','0','0','0','0','0','0','0','Skettis Kaliri - Cast Swoop'),
 -- Ironspine Chomper
