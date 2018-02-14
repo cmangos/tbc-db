@@ -22088,8 +22088,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2140510','21405','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ethereal Arcanist - Flee at 15% HP (Phase 3)'),
 ('2140511','21405','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ethereal Arcanist - Set Phase to 0 on Evade'),
 -- Terokkar - Bone Wastes - Draenei Soul
-('2142401','21424','1','0','100','0','0','0','0','0','11','17327','0','0','11','31748','0','0','11','36545','0','0','Terokkar - Bone Wastes - Draenei Soul - Cast Ethereal Teleport on Spawn'),
-('2142402','21424','1','0','100','0','1000','1000','0','0','11','36550','0','0','0','0','0','0','0','0','0','0','Terokkar - Bone Wastes - Draenei Soul - Cast Ethereal Teleport on Spawn'),
+('2142401','21424','1','0','100','0','0','0','0','0','11','17327','0','0','11','31748','0','0','11','36545','0','0','Terokkar - Bone Wastes - Draenei Soul - Cast Spirit Particles and Cast Spirit Particles, big and Cast Floating Drowned on Spawn'),
+('2142402','21424','1','0','100','0','1000','1000','0','0','11','36550','0','0','0','0','0','0','0','0','0','0','Terokkar - Bone Wastes - Draenei Soul - Cast Floating Drowned on Spawn'),
 -- Bone Wastes - White Nether Orb
 ('2144501','21445','29','0','100','0','9000','9000','0','0','48','2','0','0','0','0','0','0','0','0','0','0','Bone Wastes - White Nether Orb - Set Waypoint Movement on Timer'),
 -- Trachela
