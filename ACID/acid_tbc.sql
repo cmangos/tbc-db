@@ -22323,10 +22323,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2316205','23162','6','0','100','0','0','0','0','0','3','0','0','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Transform into Serpant Form on Death'),
 -- Gezzarak the Huntress
 ('2316301','23163','11','0','100','0','0','0','0','0','11','24240','0','0','54','-236','0','0','22','1','0','0','Gezzarak the Huntress - Cast Spawn - Red Lightning and Emote and Set Phase 1 on Spawn'),
-('2316302','23163','0','5','100','1','5000','10000','15000','21000','11','40542','1','0','22','2','0','0','14','-100','0','0','Gezzarak the Huntress - Cast Warped Armor and Set Phase 2 and Reset Threat (Phase 1)'),
-('2316303','23163','0','3','100','1','0','0','10000','10000','11','40432','5','0','13','100','5','0','54','-237','1','0','Gezzarak the Huntress - Cast Warp and Attack New Target and Emote (Phase 2)'),
-('2316304','23163','0','3','100','1','500','500','10000','10000','11','40433','0','3','22','1','0','0','0','0','0','0','Gezzarak the Huntress - Cast Warp Rift and Set Phase 1 (Phase 2)'),
-('2316305','23163','0','0','100','1','10000','20000','10000','20000','11','40434','1','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Cast Knock Away'),
+('2316302','23163','1','0','100','0','1000','1000','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Remove UNIT_FLAG_IMMUNE_TO_PLAYER OOC'),
+('2316303','23163','0','5','100','1','5000','10000','15000','21000','11','40542','1','0','22','2','0','0','14','-100','0','0','Gezzarak the Huntress - Cast Warped Armor and Set Phase 2 and Reset Threat (Phase 1)'),
+('2316304','23163','0','3','100','1','0','0','10000','10000','11','40432','5','0','13','100','5','0','54','-237','1','0','Gezzarak the Huntress - Cast Warp and Attack New Target and Emote (Phase 2)'),
+('2316305','23163','0','3','100','1','500','500','10000','10000','11','40433','0','3','22','1','0','0','0','0','0','0','Gezzarak the Huntress - Cast Warp Rift and Set Phase 1 (Phase 2)'),
+('2316306','23163','0','0','100','1','10000','20000','10000','20000','11','40434','1','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Cast Knock Away'),
 -- Blackwind Warp Chaser
 ('2321901','23219','11','0','100','0','0','0','0','0','11','32942','0','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Cast Phasing Invisibility On Spawn'),
 ('2321902','23219','4','0','100','0','0','0','0','0','28','0','32942','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Remove Phasing Invisibility On Aggro'),
