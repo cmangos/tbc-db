@@ -20414,8 +20414,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dealer Dunar (20194) - NSR
 -- Ambassador's Honor Guard
 ('2019901','20199','9','0','100','1','0','5','8000','12000','11','15284','1','0','0','0','0','0','0','0','0','0','Ambassador\'s Honor Guard - Cast Cleave'),
--- Cragskaar
-('2020201','20202','9','0','100','1','0','8','12000','16000','11','32959','4','0','0','0','0','0','0','0','0','0','Cragskaar - Cast Knock Away'),
+-- Cragskaar 20202
+('2020201','20202','9','0','100','1','0','10','12000','16000','11','32959','4','0','0','0','0','0','0','0','0','0','Cragskaar - Cast Knock Away'),
+('2020202','20202','2','0','100','0','90','0','0','0','11','36048','0','1','0','0','0','0','0','0','0','0','Cragskaar - Cast Summon Motherlode Shardling at 90% HP'),
+('2020203','20202','2','0','100','0','60','0','0','0','11','36049','0','1','0','0','0','0','0','0','0','0','Cragskaar - Cast Summon Motherlode Shardling at 60% HP'),
+('2020204','20202','2','0','100','0','30','0','0','0','11','36050','0','1','0','0','0','0','0','0','0','0','Cragskaar - Cast Summon Motherlode Shardling at 30% HP'),
 -- Nether Technician (20203) - NSR
 -- Action Jaxon (20204) - NSR
 -- Audi the Needle (20205) - NSR
@@ -20737,9 +20740,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2106508','21065','0','5','100','1','9000','13000','120000','124000','11','11980','1','1','0','0','0','0','0','0','0','0','Tormented Citizen - Cast Curse of Weakness (Phase 1)'),
 ('2106509','21065','0','5','100','1','16000','19000','27000','29000','11','36153','1','1','0','0','0','0','0','0','0','0','Tormented Citizen - Cast Soulbind (Phase 1)'),
 ('2106510','21065','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Tormented Citizen - Set Phase to 0 on Evade'),
--- Farahlon Crumbler 21077
--- Farahlon Shardling 21078
--- Cragskaar Shardling 21079
+-- Farahlon Crumbler 21077 - NSR
+-- Farahlon Shardling 21078 - NSR
+-- Cragskaar Shardling 21079 - NSR
 -- Sunfury Blood Knight
 ('2108901','21089','0','0','100','1','5000','15000','15000','25000','11','35871','1','0','0','0','0','0','0','0','0','0','Sunfury Blood Knight - Cast Spellbreaker'),
 ('2108902','21089','2','0','100','1','50','0','25000','35000','11','36476','0','0','0','0','0','0','0','0','0','0','Sunfury Blood Knight - Cast Blood Heal at 50% HP'),
