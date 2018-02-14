@@ -18565,6 +18565,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kolphis Darkscale
 ('2201901','22019','9','0','100','1','0','5','7000','13000','11','17207','0','0','0','0','0','0','0','0','0','0','Kolphis Darkscale - Cast Whirlwind'),
 ('2201902','22019','2','0','100','0','25','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Kolphis Darkscale - Cast Enrage at 25% HP'),
+-- Cavern Crawler 22044 - NSR
 -- Daggermaw Blackhide
 ('2205201','22052','0','0','100','1','3500','7000','10000','11000','11','35321','1','32','0','0','0','0','0','0','0','0','Daggermaw Blackhide - Cast Gushing Wound'),
 -- Toshley Flying Machine

@@ -64,3 +64,6 @@ UPDATE `creature_template_addon` SET `auras` = '35408' WHERE `entry` = 22204;
 -- Summoned Old God - Transparency (Self)
 UPDATE `creature_template_addon` SET `auras` = '38457' WHERE `entry` = 22137;
 
+-- Cavern Crawler - Poison Proc
+UPDATE `creature_template_addon` SET `auras` = '3616' WHERE `entry` = 22044;
+
