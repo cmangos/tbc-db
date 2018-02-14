@@ -20414,7 +20414,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dealer Dunar (20194) - NSR
 -- Ambassador's Honor Guard
 ('2019901','20199','9','0','100','1','0','5','8000','12000','11','15284','1','0','0','0','0','0','0','0','0','0','Ambassador\'s Honor Guard - Cast Cleave'),
--- Cragskaar
+-- Cragskaar 20202
 ('2020201','20202','9','0','100','1','0','10','12000','16000','11','32959','4','0','0','0','0','0','0','0','0','0','Cragskaar - Cast Knock Away'),
 ('2020202','20202','2','0','100','0','90','0','0','0','11','36048','0','1','0','0','0','0','0','0','0','0','Cragskaar - Cast Summon Motherlode Shardling at 90% HP'),
 ('2020203','20202','2','0','100','0','60','0','0','0','11','36049','0','1','0','0','0','0','0','0','0','0','Cragskaar - Cast Summon Motherlode Shardling at 60% HP'),
