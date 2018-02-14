@@ -50,7 +50,7 @@ INSERT INTO creature(guid, id, map, spawnMask, modelid, equipment_id, position_x
 ('150714', '21705', '530', '1', '0', '0', '-4646.824', '1091.067', '0.1460583', '3.490659', '300', '300', '0', '0', '4733', '7031', '0', '2'),
 ('150715', '21705', '530', '1', '0', '0', '-4654.152', '1084.944', '1.098066', '6.021386', '300', '300', '0', '0', '4733', '7031', '0', '2');
 
-DELETE FROM `creature_movement` WHERE `id` IN(SELECT guid FROM creature WHERE id=21420);
+DELETE FROM `creature_movement` WHERE `id` IN(SELECT guid FROM creature WHERE id IN(21420,21703,21705,21704));
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`waittime`,`script_id`) VALUES
 -- water
 (150704,1,'-2783.867', '1483.096', '9.206907', '3.403392',1000,2142003), -- 38106
@@ -100,7 +100,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (2170503,0,20,0,0,0,0,0,0,0,0,0,0,'(3) Corrupt Air Totem - Set Idle Movement',0,0,0,0);
 
 -- Totems should only respawn when lakaan respawns
-DELETE FROM creature_linking_template WHERE entry=21420;
+DELETE FROM creature_linking_template WHERE entry IN(21420,21703,21705,21704);
 INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
 (21420,530,21416,128+1024+2048,20), -- FLAG_RESPAWN_ON_RESPAWN + FLAG_CANT_SPAWN_IF_BOSS_DEAD + FLAG_CANT_SPAWN_IF_BOSS_ALIVE
 (21703,530,21710,128+1024+2048,20),
