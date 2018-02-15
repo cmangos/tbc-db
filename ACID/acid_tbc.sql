@@ -21396,7 +21396,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2197903','21979','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Val\'zareq the Conqueror - Enable Dynamic Movement at 9-80 Yards'),
 ('2197904','21979','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Val\'zareq the Conqueror - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('2197905','21979','7','0','100','0','0','0','0','0','0','0','0','0','40','1','0','0','0','0','0','0','Val\'zareq the Conqueror - Set Melee Weapon Model on Evade'),
--- Dragonmaw Nether Drake
+-- Altar of Sha'tar Vindicator 21986
+('2198601','21986','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Altar of Sha\'tar Vindicator - Cast Net'),
+-- Dragonmaw Nether Drake 22000
 ('2200001','22000','0','0','100','1','5000','10000','16000','20000','11','38344','1','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Arcane Blast'),
 ('2200002','22000','0','0','100','1','4000','8000','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Intangible Presence'),
 -- Corok the Mighty
