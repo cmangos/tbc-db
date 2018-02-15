@@ -39,4 +39,7 @@ INSERT INTO spell_bonus_data(entry, direct_bonus, dot_bonus, ap_bonus, ap_dot_bo
 ('1822', '0', '0', '0.01', '0.02', 'Druid - Rake'),
 ('779', '0', '0', '0.08', '0', 'Druid - Swipe');
 
+-- Repeatable quests for Aldor/Scryers should be available from 0/3000
+UPDATE quest_template SET RequiredMinRepValue=0 WHERE entry IN(10412,10414,10415,10325,10326,10327);
+
 
