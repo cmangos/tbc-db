@@ -180,8 +180,8 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 
 -- Add missing spawn. (Proof: https://youtu.be/oAdpzodemN8?t=58s)
 DELETE FROM `creature` WHERE `guid`=151000;
-INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `curhealth`, `MovementType`) VALUES 
-('151000', '16842', '530', '-661.241577', '2764.013184', '91.648140', '0', '300', '6600', '0');
+INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `curhealth`, `MovementType`) VALUES 
+('151000', '16842', '530', '-661.241577', '2764.013184', '91.648140', '0', '300', '0', '6600', '0');
 
 SET @GUID := 57948; -- member 151000
 SET @POINT := 0;
