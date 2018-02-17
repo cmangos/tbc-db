@@ -21564,6 +21564,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anchorite Caalen 22862
 ('2286201','22862','0','0','100','1','3000','9000','8000','13000','11','20696','1','0','0','0','0','0','0','0','0','0','Anchorite Caalen - Cast Holy Smite'),
 ('2286202','22862','0','0','100','1','9000','12000','12000','15000','11','35943','0','1','0','0','0','0','0','0','0','0','Anchorite Caalen - Cast Prayer of Healing'),
+-- Seasoned Magister 22863
+('2286301','22863','4','0','10','0','0','0','0','0','1','-1571','-1572','0','0','0','0','0','0','0','0','0','Seasoned Magister - Say on Aggro'),
+('2286302','22863','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Seasoned Magister - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2286303','22863','9','13','100','1','0','40','3400','4800','11','9053','1','0','0','0','0','0','0','0','0','0','Seasoned Magister - Cast Fireball (Phase 1)'),
+('2286304','22863','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Seasoned Magister - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2286305','22863','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Seasoned Magister - Disable Dynamic Movement at 0-8 Yards'),
+('2286306','22863','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Seasoned Magister - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
+('2286307','22863','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Seasoned Magister - Set Phase 1 at 15% MP (Phase 2)'),
+('2286308','22863','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Seasoned Magister - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
+('2286309','22863','2','7','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Seasoned Magister - Flee at 15% HP (Phase 3)'),
+('2286310','22863','0','7','100','0','7000','7000','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Seasoned Magister - Enable Dynamic Movement and Set Phase 1 (Phase 3)'),
+('2286311','22863','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Seasoned Magister - Set Phase 0 on Evade'),
 -- Lightsworn Elekk Rider
 ('2296601','22966','6','0','100','0','0','0','0','0','43','0','0','0','11','39782','0','0','0','0','0','0','Lightsworn Elekk Rider - Dismount and Cast Summon Lightsworn Elekk on Death'),
 -- Scryer Cavalier
@@ -28640,7 +28652,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================================================================
 -- Mercutio (12581) - NSR
 -- Tempest-Forge Patroller (4.3.4 Official Data - Normal/Heroic)
-('1916601','19166','1','0','75','7','30000','120000','120000','240000','1','-1571','-1573','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller - Random Say OOC'),
+('1916601','19166','1','0','75','7','30000','120000','120000','240000','1','-1575','-1576','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller - Random Say OOC'),
 ('1916602','19166','0','0','100','3','6100','10400','6800','16900','11','35012','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller (Normal) - Cast Charged Arcane Missle'),
 ('1916603','19166','0','0','100','5','6100','10400','6800','16900','11','38941','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller (Heroic) - Cast Charged Arcane Missle'),
 ('1916604','19166','0','0','100','7','9700','16400','12500','20500','11','35011','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller - Cast Knockdown'),
@@ -34576,7 +34588,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1571','Any intruders must be eliminated!','0','1','0','Tempest Keep','0'),
 ('-1572','Protect the Botanica at all costs!','0','1','0','17976','0'),
 ('-1573','Protect the Mechanar at all costs!','0','1','0','19166','0'),
-('-1574','Who disturbs my slumber?  That spear... I still carry the scar!','0','1','0','Xeleth aggro yell','0');
+('-1574','Who disturbs my slumber?  That spear... I still carry the scar!','0','1','0','Xeleth aggro yell','0'),
+('-1575','Come closer, demon! Death awaits!','0','0','0','22863','0'),
+('-1576','I\'ve a message for your master, scum!','0','0','0','22863','0');
 
 
 
