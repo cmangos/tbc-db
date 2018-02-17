@@ -20509,6 +20509,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2041601','20416','0','0','100','1','4000','9000','20000','30000','11','6713','1','0','54','-1047','0','0','0','0','0','0','Overseer Theredis - Cast Disarm and Text Emote'),
 ('2041602','20416','0','0','100','1','5000','15000','15000','25000','11','35871','1','0','0','0','0','0','0','0','0','0','Overseer Theredis - Cast Spellbreaker'),
 -- Overseer Athanel 20435
+('2043501','20435','9','0','100','1','0','5','8000','11000','11','15496','1','0','0','0','0','0','0','0','0','0','Overseer Athanel - Cast Cleave'),
 -- Sunfury Protector 20436
 -- Ara Technician 20438
 -- Ara Engineer 20439
