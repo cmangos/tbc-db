@@ -22595,7 +22595,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sporeggar Preserver
 ('1813901','18139','14','0','100','1','4000','40','15000','25000','11','11431','6','1','0','0','0','0','0','0','0','0','Sporeggar Preserver - Cast Healing Touch on Friendlies'),
 ('1813902','18139','0','0','100','1','0','3000','11500','12500','11','6950','1','32','0','0','0','0','0','0','0','0','Sporeggar Preserver - Cast Faerie Fire'),
--- Sporeggar Harvester
+-- Sporeggar Harvester 18140
 ('1814001','18140','0','0','100','1','0','5000','15000','20000','11','13445','1','0','0','0','0','0','0','0','0','0','Sporeggar Harvester - Cast Rend'),
 -- Ssslith
 ('1815401','18154','4','0','100','0','0','0','0','0','11','17741','0','0','0','0','0','0','0','0','0','0','Ssslith - Cast Mana Shield on Aggro'),
