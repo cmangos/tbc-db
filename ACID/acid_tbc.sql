@@ -17956,7 +17956,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999611','19996','16','1','100','1','6742','30','10900','18100','11','6742','6','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Cast Bloodlust on Friendlies (Phase 1)'),
 ('1999612','19996','9','1','100','1','0','30','14000','18000','11','16102','1','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Cast Flamestrike (Phase 1)'),
 ('1999613','19996','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Set Phase 0 on Evade'),
--- Bladespire Enforcer (Missing combat spells!)
+-- Bladespire Enforcer 19997
 ('1999701','19997','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bladespire Enforcer - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999702','19997','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bladespire Enforcer - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('1999703','19997','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Bladespire Enforcer - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -17965,6 +17965,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999706','19997','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bladespire Enforcer - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('1999707','19997','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bladespire Enforcer - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('1999708','19997','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Enforcer - Say on Death if Killer Player has Completed Quest 11000'),
+('1999709','19997','4','0','15','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Bladespire Enforcer - Random Say on Aggro'),
+('1999710','19997','0','0','90','3','5000','5000','13000','18000','11','15588','0','0','0','0','0','0','0','0','0','0','Bladespire Enforcer - Cast Thunderclap'),
+('1999711','19997','2','0','100','0','30','0','0','0','11','8599','0','0','54','-106','0','0','0','0','0','0','Bladespire Enforcer - Cast Enrage at 30% HP'),
 -- Bladespire Shaman
 ('1999801','19998','4','0','100','0','0','0','0','0','49','1','0','0','11','12550','0','0','22','1','0','0','Bladespire Shaman - Enable Dynamic Movement and Cast Lightning Shield and Set Phase 1 on Aggro'),
 ('1999802','19998','9','13','100','1','0','40','3400','4800','11','26098','1','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Cast Lightning Bolt (Phase 1)'),
