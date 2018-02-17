@@ -18896,6 +18896,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1687803','16878','8','5','100','0','39184','-1','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Set Phase 2 On Anchorite Contrition Spellhit (Phase 1)'),
 ('1687804','16878','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Shattered Hand Berserker - Cast Enrage at 30% HP'),
 ('1687805','16878','6','3','100','0','0','0','0','0','11','39190','0','6','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Cast Send Vengeance On Death (Phase 2)'),
+-- Starving Helboar 16879 - NSR
 -- Hulking Helboar
 ('1688001','16880','4','0','100','0','0','0','0','0','11','33909','0','0','0','0','0','0','0','0','0','0','Hulking Helboar - Cast Hulk on Aggro'),
 ('1688002','16880','8','0','100','0','34665','-1','0','0','16','16880','34665','6','0','0','0','0','0','0','0','0','Hulking Helboar - Quest Credit on Administer Antidote Spellhit (Quest: 10255)'),
