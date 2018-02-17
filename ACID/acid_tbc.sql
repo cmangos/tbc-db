@@ -16217,7 +16217,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nozari (20131) - NSR
 -- Steward of Time (20142) - npc_steward_of_time
 -- Vixton Pinchwhistle (20278) - NSR
--- Gadgetzan Sniper
+-- Gadgetzan Sniper 21448
 ('2144801','21448','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Gadgetzan Sniper - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('2144802','21448','9','5','100','1','0','80','2300','3900','11','22121','1','0','40','2','0','0','0','0','0','0','Gadgetzan Sniper - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('2144803','21448','9','5','100','1','0','45','7000','12000','11','23337','4','1','40','2','0','0','0','0','0','0','Gadgetzan Sniper - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
