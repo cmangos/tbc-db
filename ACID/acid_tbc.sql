@@ -22498,7 +22498,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1808808','18088','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bloodscale Enchantress - Set Phase to 0 on Evade'),
 -- Bloodscale Slavedriver
 ('1808901','18089','4','0','100','0','0','0','0','0','11','32064','0','0','0','0','0','0','0','0','0','0','Bloodscale Slavedriver - Cast Battle Shout on Aggro'),
--- Feralfen Hunter
+-- Feralfen Hunter 18113
 ('1811301','18113','11','0','100','0','0','0','0','0','11','32060','0','0','0','0','0','0','0','0','0','0','Feralfen Hunter - Cast Summon Spore Bat on Spawn'),
 ('1811302','18113','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Feralfen Hunter - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('1811303','18113','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Feralfen Hunter - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
@@ -22508,6 +22508,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1811307','18113','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Feralfen Hunter - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1811308','18113','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Feralfen Hunter - Flee at 15% HP (Phase 2)'),
 ('1811309','18113','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Feralfen Hunter - Set Phase 1 and Set Melee Weapon Model on Evade'),
+('1811310','18113','0','5','100','1','7000','9000','14000','18000','11','12024','1','0','0','0','0','0','0','0','0','0','Feralfen Hunter - Cast Net (Phase 1)'),
 -- Feralfen Mystic
 ('1811401','18114','1','0','100','1','1000','1000','600000','600000','11','12550','0','1','0','0','0','0','0','0','0','0','Feralfen Mystic - Cast Lightning Shield on Spawn'),
 ('1811402','18114','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Feralfen Mystic - Enable Dynamic Movement and Set Phase 1 on Aggro'),
