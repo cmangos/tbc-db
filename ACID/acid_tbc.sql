@@ -21561,6 +21561,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2286103','22861','14','0','100','1','2500','40','12000','18000','11','13952','6','1','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Holy Light on Friendlies'),
 ('2286104','22861','14','0','100','1','1000','40','30000','45000','11','13903','6','1','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Seal of Sacrifice on Friendlies'),
 -- ('2286105','22861','1','0','100','0','5000','25000','0','0','11','39794','0','0','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Redemption OOC'), -- TODO: Find out how this is used
+-- Anchorite Caalen 22862
+('2286201','22862','0','0','100','1','3000','9000','8000','13000','11','20696','1','0','0','0','0','0','0','0','0','0','Anchorite Caalen - Cast Holy Smite'),
+('2286202','22862','0','0','100','1','9000','12000','12000','15000','11','35943','0','1','0','0','0','0','0','0','0','0','Anchorite Caalen - Cast Prayer of Healing'),
 -- Lightsworn Elekk Rider
 ('2296601','22966','6','0','100','0','0','0','0','0','43','0','0','0','11','39782','0','0','0','0','0','0','Lightsworn Elekk Rider - Dismount and Cast Summon Lightsworn Elekk on Death'),
 -- Scryer Cavalier
