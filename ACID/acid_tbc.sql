@@ -31994,7 +31994,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tamed Amani Crocolisk
 ('2413801','24138','0','0','100','3','1000','5000','6000','12000','11','43353','1','0','0','0','0','0','0','0','0','0','Tamed Amani Crocolisk - Cast Infected Bite'),
 ('2413802','24138','0','0','100','3','6000','8500','8000','12000','11','43352','5','0','0','0','0','0','0','0','0','0','Tamed Amani Crocolisk - Cast Tail Swipe'),
--- Amani Eagle
+-- Amani Eagle 24159
 ('2415901','24159','9','0','100','3','0','5','8000','10000','11','43517','1','0','0','0','0','0','0','0','0','0','Amani Eagle - Cast Talon'),
 -- Amani'shi Wind Walker
 ('2417901','24179','2','0','100','3','30','0','30000','30000','11','43527','0','1','0','0','0','0','0','0','0','0','Amani\'shi Wind Walker - Cast Chain Heal'),
