@@ -19098,6 +19098,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1867701','18677','0','0','100','1','6000','11000','8000','14000','11','38875','1','0','0','0','0','0','0','0','0','0','Mekthorg the Wild - Cast Pike Vault'),
 ('1867702','18677','0','0','100','1','12000','15000','9000','13000','11','37704','0','0','0','0','0','0','0','0','0','0','Mekthorg the Wild - Cast Whirlwind'),
 ('1867703','18677','2','0','100','0','20','0','0','0','11','8599','0','1','0','0','0','0','0','0','0','0','Mekthorg the Wild - Cast Enrage at 20% HP'),
+('1867704','18677','4','0','50','0','0','0','0','0','1','-1577','-1578','-1579','0','0','0','0','0','0','0','0','Mekthorg the Wild - Say on Aggro'),
 -- Fulgorge (Should This NPC Be Added To npc_burster_worm Script) ???
 ('1867801','18678','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Fulgorge - Remove Unselectable Unit Flag on Spawn'),
 ('1867802','18678','11','0','100','0','0','0','0','0','11','29147','0','16','11','33928','0','0','49','1','0','0','Fulgorge - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Enable Dynamic Movement on Spawn'),
@@ -34616,7 +34617,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1573','Protect the Mechanar at all costs!','0','1','0','19166','0'),
 ('-1574','Who disturbs my slumber?  That spear... I still carry the scar!','0','1','0','Xeleth aggro yell','0'),
 ('-1575','Come closer, demon! Death awaits!','0','0','0','22863','0'),
-('-1576','I\'ve a message for your master, scum!','0','0','0','22863','0');
+('-1576','I\'ve a message for your master, scum!','0','0','0','22863','0'),
+('-1577','Once I have hacked off your limbs, I may hang your body from our battlements.','0','0','0','18677','0'),
+('-1578','I love to bathe in the blood of my enemies!','0','0','0','18677','0'),
+('-1579','I crave your death!','0','0','0','18677','0');
 
 
 
