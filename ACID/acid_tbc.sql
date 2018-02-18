@@ -20564,7 +20564,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2045904','20459','9','0','100','1','8','25','15000','21000','11','36509','1','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Charge'),
 ('2045905','20459','8','0','100','1','30023','-1','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Despawn Guardians on Spellhit'),
 ('2045906','20459','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Despawn Guardians on Evade'),
-('2045907','20459','6','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Despawn Guardians on Death'),
 -- Chief Engineer Gork'lonn 20460
 -- Apprentice Andrethan 20463
 -- Thadell 20464
@@ -20866,7 +20865,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2282104','22821','9','0','100','1','8','25','15000','21000','11','36509','1','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Cast Charge'),
 ('2282105','22821','8','0','100','1','30023','-1','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Despawn Guardians on Spellhit'),
 ('2282106','22821','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Despawn Guardians on Evade'),
-('2282107','22821','6','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Ethereum Avenger - Despawn Guardians on Death'),
 -- Ethereum Nullifier 22822
 ('2282201','22822','2','0','100','1','30','0','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Ethereum Nullifier - Cast Intangible Presence'),
 -- Protectorate Advisor Rahim 22899
