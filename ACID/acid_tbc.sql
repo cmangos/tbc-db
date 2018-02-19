@@ -18582,7 +18582,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2195601','21956','0','0','100','1','1000','5000','15000','25000','11','13443','1','0','0','0','0','0','0','0','0','0','Rema - Cast Rend'),
 ('2195602','21956','0','0','100','1','4000','8000','30000','45000','11','5781','1','0','0','0','0','0','0','0','0','0','Rema - Cast Threatening Growl'),
 ('2195603','21956','2','0','100','0','30','0','0','0','11','8599','0','0','54','-106','0','0','0','0','0','0','Rema - Cast Enrage at 30% HP'),
--- Bladespire Sober Defender (Missing combat spells!)
+-- Bladespire Sober Defender
 ('2197501','21975','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bladespire Sober Defender - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2197502','21975','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bladespire Sober Defender - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2197503','21975','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Bladespire Sober Defender - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -18591,6 +18591,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2197506','21975','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Bladespire Sober Defender - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2197507','21975','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Bladespire Sober Defender - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2197508','21975','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Sober Defender - Say on Death if Killer Player has Completed Quest 11000'),
+('2197509','21975','4','0','15','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Bladespire Sober Defender - Random Say on Aggro'),
+('2197510','21975','0','0','100','1','1000','5000','5000','9000','11','15496','1','0','0','0','0','0','0','0','0','0','Bladespire Sober Defender - Cast Cleave'),
 -- Samia Inkling
 ('2198301','21983','1','0','100','1','6000','9000','6000','9000','5','1','0','0','0','0','0','0','0','0','0','0','Samia Inkling - Talk Emote OOC'),
 ('2198302','21983','30','0','100','33','5','22130','0','0','5','1','5','6','5','11','15','25','5','273','274','0','Samia Inkling - Random Emote on Receive AI Event 5 (A)'),
