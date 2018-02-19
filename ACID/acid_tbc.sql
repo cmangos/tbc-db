@@ -18251,15 +18251,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Daggermaw Lashtail
 ('2075101','20751','9','0','100','1','8','25','15000','21000','11','35570','1','0','0','0','0','0','0','0','0','0','Daggermaw Lashtail - Cast Charge'),
 ('2075102','20751','0','0','100','1','3000','10000','10000','11000','11','7367','1','32','0','0','0','0','0','0','0','0','Daggermaw Lashtail - Cast Infected Bite'),
--- Dorgok 20753 (Missing combat spells!)
-('2075301','20753','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Droggam - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
-('2075302','20753','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Droggam - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
-('2075303','20753','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Droggam - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
-('2075304','20753','22','0','100','1','58','8','11000','0','54','-1052','0','0','0','0','0','0','0','0','0','0','Droggam - Say on Receive TEXTEMOTE_KISS if Player has Completed Quest 11000'),
-('2075305','20753','22','0','100','1','72','8','11000','0','54','-1053','0','0','0','0','0','0','0','0','0','0','Droggam - Say on Receive TEXTEMOTE_POINT if Player has Completed Quest 11000'),
-('2075306','20753','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Droggam - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
-('2075307','20753','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Droggam - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
-('2075308','20753','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Droggam - Say on Death if Killer Player has Completed Quest 11000'),
+-- Dorgok 20753
+('2075301','20753','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Dorgok - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
+('2075302','20753','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Dorgok - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
+('2075303','20753','22','0','100','1','39','8','11000','0','54','-1049','6','0','54','-1050','6','0','0','0','0','0','Dorgok - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
+('2075304','20753','22','0','100','1','58','8','11000','0','54','-1052','0','0','0','0','0','0','0','0','0','0','Dorgok - Say on Receive TEXTEMOTE_KISS if Player has Completed Quest 11000'),
+('2075305','20753','22','0','100','1','72','8','11000','0','54','-1053','0','0','0','0','0','0','0','0','0','0','Dorgok - Say on Receive TEXTEMOTE_POINT if Player has Completed Quest 11000'),
+('2075306','20753','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Dorgok - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
+('2075307','20753','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Dorgok - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
+('2075308','20753','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Dorgok - Say on Death if Killer Player has Completed Quest 11000'),
+('2075309','20753','4','0','15','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Dorgok - Random Say on Aggro'),
+('2075310','20753','9','0','100','1','0','30','15000','24000','11','11962','1','0','0','0','0','0','0','0','0','0','Dorgok - Cast Immolate'),
+('2075311','20753','0','0','100','1','4000','8000','13000','18000','11','39119','1','0','0','0','0','0','0','0','0','0','Dorgok - Cast Fear'),
 -- Bladespire Chef 20756 (Missing combat spells!)
 ('2075601','20756','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bladespire Chef - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2075602','20756','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bladespire Chef - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
