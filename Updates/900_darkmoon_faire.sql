@@ -300,6 +300,16 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (141004,0,0,1,16,0,0,NULL),
 (141006,0,0,1,16,0,0,NULL);
 
+-- Darkmoon Carnie have different text during building
+INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
+(141000,7354),
+(141001,7354),
+(141002,7354),
+(141003,7354),
+(141004,7354),
+(141005,7354),
+(141006,7354);
+
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`waittime`,`script_id`) VALUES 
 (141003,1,-2278.34,5208.68,-9.90711,100,0,0),
 (141003,2,-2281.2,5205.93,-9.69241,100,10000,1069),
@@ -369,25 +379,8 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (142026,0,0,1,16,0,0,NULL);
 
 INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
-(142001,7400),
-(142003,7389),
-(142004,7406),
-(142005,7390),
-(142007,11743),
-(142008,7383),
-(142009,7397),
-(142011,7337),
-(142013,7314),
-(142014,7404),
-(142015,7364),
-(142016,7355),
-(142017,7387),
-(142018,11482),
-(142019,7338),
-(142020,7382),
-(142023,7395),
-(142024,7382),
-(142025,7789);
+(142018, 11482), -- Silas Darkmoon - unique text for Outland
+(142025, 11743); -- Maxima Blastenheimer - unique text for Terokkar
 
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`waittime`,`script_id`) VALUES
 (142003,1,-2236.82,5230.13,-9.89211,3.64774,125000,1484601),
@@ -688,6 +681,18 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (141206,0,0,1,16,0,0,NULL),
 (141207,0,0,1,16,0,0,NULL);
 
+-- Darkmoon Carnie have different text during building
+INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
+(141200,7354),
+(141201,7354),
+(141202,7354),
+(141203,7354),
+(141204,7354),
+(141205,7354),
+(141206,7354),
+(141207,7354),
+(141208,7354);
+
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`waittime`,`script_id`) VALUES 
 (141205,1,-1591.34,151.961,-7.32129,100,10000,1069),
 (141205,2,-1585.29,169.181,-7.49794,100,10000,1069),
@@ -943,26 +948,8 @@ INSERT INTO `creature_addon` (`guid`,`mount`,`bytes1`,`b2_0_sheath`,`b2_1_flags`
 (143024,0,0,1,16,0,0,NULL),
 (143025,0,0,1,16,0,0,NULL);
 
-INSERT INTO `npc_gossip` (`npc_guid`,`textid`) VALUES 
-(143001,7400),
-(143002,7395),
-(143003,7397),
-(143004,7389),
-(143005,7355),
-(143006,7387),
-(143007,7339),
-(143008,7338),
-(143009,11482),
-(143010,7337),
-(143011,7390),
-(143012,7314),
-(143014,7383),
-(143020,7406),
-(143021,7404),
-(143024,7382),
-(143025,7382),
-(143026,7792),
-(143027,7790);
+INSERT INTO `npc_gossip` (`npc_guid`,`textid`) VALUES
+(143027,8349); -- Maxima Blastenheimer - unique text for Mulgore
 
 INSERT INTO `creature_linking` (`guid`,`master_guid`,`flag`) VALUES (143011,143020,512);
 
@@ -1083,6 +1070,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (141506,0,0,1,16,69,0,NULL),
 (141508,0,0,1,16,0,0,NULL);
 
+-- Darkmoon Carnie have different text during building
 INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
 (141500,7354),
 (141501,7354),
@@ -1229,25 +1217,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (144012,0,0,1,16,0,0,NULL),
 (144013,0,0,1,16,0,0,NULL),
 (144022,0,0,1,16,0,0,NULL);
-
-INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES
-(144000,7790),
-(144004,7400),
-(144006,7314),
-(144007,7389),
-(144008,7337),
-(144009,7792),
-(144010,7334),
-(144011,7338),
-(144013,7382),
-(144014,7397),
-(144015,7339),
-(144016,7355),
-(144018,7387),
-(144019,7404),
-(144020,7406),
-(144022,7382),
-(144026,7383);
 
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`waittime`,`script_id`) VALUES 
 (144013,1,-9568.37,94.7635,58.8818,0.840734,0,0),
