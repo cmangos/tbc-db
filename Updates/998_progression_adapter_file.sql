@@ -43,16 +43,16 @@ REPLACE INTO game_event(`entry`, `start_time`, `end_time`, `occurence`, `length`
 ('92','2018-11-03 00:00:01','2030-12-31 23:59:00','525600','2880','0','Darkmoon Faire (Elwynn Forest) - November 2018 - Building Stage 2'),
 ('93','2018-11-05 00:00:01','2030-12-31 23:59:00','525600','8640','374','Darkmoon Faire (Elwynn Forest) - November 2018 - Darkmoon Faire Open'),
 
-('94','2017-12-07 00:00:01','2030-12-31 23:59:00','525600','4320','0','Darkmoon Faire (Terokkar Forest) - December 2018 - Building Stage 1'),
-('95','2017-12-08 00:00:01','2030-12-31 23:59:00','525600','2880','0','Darkmoon Faire (Terokkar Forest) - December 2018 - Building Stage 2'),
-('96','2017-12-10 00:00:01','2030-12-31 23:59:00','525600','8640','376','Darkmoon Faire (Terokkar Forest) - December 2018 - Darkmoon Faire Open'),
+('94','2018-12-07 00:00:01','2030-12-31 23:59:00','525600','4320','0','Darkmoon Faire (Terokkar Forest) - December 2018 - Building Stage 1'),
+('95','2018-12-08 00:00:01','2030-12-31 23:59:00','525600','2880','0','Darkmoon Faire (Terokkar Forest) - December 2018 - Building Stage 2'),
+('96','2018-12-10 00:00:01','2030-12-31 23:59:00','525600','8640','376','Darkmoon Faire (Terokkar Forest) - December 2018 - Darkmoon Faire Open'),
 
-('97','2018-01-04 00:00:01','2030-12-31 23:59:00','525600','4320','0','Darkmoon Faire (Mulgore) - January 2019 - Building Stage 1'),
-('98','2018-01-05 00:00:01','2030-12-31 23:59:00','525600','2880','0','Darkmoon Faire (Mulgore) - January 2019 - Building Stage 2'),
-('99','2018-01-07 00:00:01','2030-12-31 23:59:00','525600','8640','375','Darkmoon Faire (Mulgore) - January 2019 - Darkmoon Faire Open'),
+('97','2019-01-04 00:00:01','2030-12-31 23:59:00','525600','4320','0','Darkmoon Faire (Mulgore) - January 2019 - Building Stage 1'),
+('98','2019-01-05 00:00:01','2030-12-31 23:59:00','525600','2880','0','Darkmoon Faire (Mulgore) - January 2019 - Building Stage 2'),
+('99','2019-01-07 00:00:01','2030-12-31 23:59:00','525600','8640','375','Darkmoon Faire (Mulgore) - January 2019 - Darkmoon Faire Open'),
 
-('100','2018-02-01 00:00:01','2030-12-31 23:59:00','525600','4320','0','Darkmoon Faire (Elwynn Forest) - February 2019 - Building Stage 1'),
-('101','2018-02-02 00:00:01','2030-12-31 23:59:00','525600','2880','0','Darkmoon Faire (Elwynn Forest) - February 2019 - Building Stage 2'),
-('102','2018-02-04 00:00:01','2030-12-31 23:59:00','525600','8640','374','Darkmoon Faire (Elwynn Forest) - February 2019 - Darkmoon Faire Open');
+('100','2019-02-01 00:00:01','2030-12-31 23:59:00','525600','4320','0','Darkmoon Faire (Elwynn Forest) - February 2019 - Building Stage 1'),
+('101','2019-02-02 00:00:01','2030-12-31 23:59:00','525600','2880','0','Darkmoon Faire (Elwynn Forest) - February 2019 - Building Stage 2'),
+('102','2019-02-04 00:00:01','2030-12-31 23:59:00','525600','8640','374','Darkmoon Faire (Elwynn Forest) - February 2019 - Darkmoon Faire Open');
 
 
