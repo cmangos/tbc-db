@@ -74,6 +74,9 @@ DELETE FROM `creature_addon` WHERE `guid` IN (SELECT `guid` FROM `creature` WHER
 DELETE FROM `creature_template_addon` WHERE `entry` = 12856;
 INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES (12856, 0, 33554432, 1, 16, 0, 0, '20540'); -- bytes1 131072
 
+-- Scarshield Quartermaster 9046 - http://www.wowhead.com/npc=9046/scarshield-quartermaster#comments:id=599352
+UPDATE `creature` SET `spawntimesecsmin` = 600, `spawntimesecsmax` = 900 WHERE `guid` = 248 AND `id` = 9046;
+
 -- =====================================================================================================
 -- Map: 530 Outland
 -- =====================================================================================================
