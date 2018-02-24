@@ -143,13 +143,13 @@ INSERT INTO dbscripts_on_event(id, delay, command, datalong, datalong2, datalong
 ('14143', '5', '15', '37964', '0', '0', '21940', '50', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Invis Illidari Bane Caster cast 37964 on Invis Illidari Blade Target'),
 ('14143', '5', '18', '500', '0', '0', '21939', '50', '4', '0', '0', '0', '0', '0', '0', '0', '0', 'Invis Illidari Blade Target despawn self');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN(1299901);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN(1299902); -- 174_classicDB_backport uses 1299901
 INSERT INTO dbscripts_on_creature_movement(id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-('1299901', '0', '15', '32567', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'World Invisible Trigger cast 32567 on self');
+('1299902', '0', '15', '32567', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'World Invisible Trigger cast 32567 on self');
 
 DELETE FROM creature_movement_template WHERE entry IN(12999) AND pathId IN(1,2,3);
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(12999,1,1,-3419.688,1382.749,252.1638,0,1299901,100),
+(12999,1,1,-3419.688,1382.749,252.1638,0,1299902,100),
 (12999,1,2,-3422.217,1374.109,256.516,0,0,100),
 (12999,1,3,-3422.531,1373.037,257.0555,0,0,100),
 (12999,1,4,-3421.961,1371.917,258.1678,0,0,100),
@@ -161,7 +161,7 @@ INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,
 (12999,1,10,-3424.212,1371.755,261.0606,0,0,100),
 (12999,1,11,-3424.212,1371.755,261.0606,1000,1,100);
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(12999,2,1,-3410.118,1370.628,254.5587,0,1299901,100),
+(12999,2,1,-3410.118,1370.628,254.5587,0,1299902,100),
 (12999,2,2,-3419.413,1373.9,256.2615,0,0,100),
 (12999,2,3,-3420.929,1374.434,256.5392,0,0,100),
 (12999,2,4,-3422.325,1373.867,257.5341,0,0,100),
@@ -173,7 +173,7 @@ INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,
 (12999,2,10,-3423.19,1377.492,261.3121,0,0,100),
 (12999,2,11,-3423.19,1377.492,261.3121,1000,1,100);
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(12999,3,1,-3430.305,1370.527,253.8981,0,1299901,100),
+(12999,3,1,-3430.305,1370.527,253.8981,0,1299902,100),
 (12999,3,2,-3420.786,1371.988,256.59,0,0,100),
 (12999,3,3,-3419.411,1372.199,256.9789,0,0,100),
 (12999,3,4,-3418.807,1373.605,257.7566,0,0,100),
