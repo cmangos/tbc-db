@@ -30514,6 +30514,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hellfire Channeler (17256) - mob_hellfire_channeler
 -- Magtheridon (17257) - boss_magtheridon
 -- Burning Abyssal (17454) - mob_abyssal
+-- Magtheridon's Room 17516
+('1751601','17516','11','0','100','2','0','0','0','0','11','30632','0','0','50','0','0','0','0','0','0','0','Magtheridon''s Room - Cast Debris and REACT_PASSIVE on Spawn'),
 -- Hellfire Warder
 ('1882901','18829','9','0','100','3','8','45','3400','4800','11','39175','0','0','0','0','0','0','0','0','0','0','Hellfire Warder - Cast Shadow Bolt Volley'),
 ('1882902','18829','9','0','100','3','0','8','18000','25000','11','34436','0','0','0','0','0','0','0','0','0','0','Hellfire Warder - Cast Shadow Burst'),
