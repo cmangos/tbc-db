@@ -18244,6 +18244,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2073219','20732','22','0','100','1','75','8','11000','0','5','15','0','0','0','0','0','0','0','0','0','0','Gorr\'Dim - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2073220','20732','22','0','100','1','101','8','11000','0','5','3','0','0','0','0','0','0','0','0','0','0','Gorr\'Dim - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2073221','20732','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Gorr\'Dim - Say on Death if Killer Player has Completed Quest 11000'),
+-- Silkwing Larva 20747
+('2074701','20747','2','0','100','0','20','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Silkwing Larva - Set Phase 1 at 20%'), -- stun/incapacitate should prevent this
+('2074702','20747','0','5','100','0','0','0','0','0','54','-347','0','0','21','0','0','0','20','0','0','0','Silkwing Larva - Emote and Stop Movement and Stop Melee at 20% (Phase 1)'),
+('2074703','20747','0','5','100','0','3000','3000','0','0','11','36948','0','0','54','-348','0','0','37','0','0','0','Silkwing Larva - Cast Silkwing and Kill Self (Phase 1)'),
+('2074704','20747','7','0','100','0','0','0','0','0','22','0','0','0','21','0','0','0','20','0','0','0','Silkwing Larva - Set Phase 0 and Start Movement and Start Melee on Evade'),
 -- Thunderlord Dire Wolf
 ('2074801','20748','0','0','100','1','3000','10000','45000','60000','11','5781','1','32','0','0','0','0','0','0','0','0','Thunderlord Dire Wolf - Cast Threatening Growl'),
 -- Scalewing Serpent
@@ -33603,7 +33608,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-344','%s\'s death cry has stirred the nearby silithid hive.','0','2','0','Tortured Druid/Sentinel death','0'),
 ('-345','The only justice is death!','0','0','0','18796','0'),
 ('-346','%s begins to summon in reinforcements!','0','2','0','2358','0'),
--- (347-348 Please Re-Use)
+('-347','%s begins to metamorphose...','0','2','0','20747','0'),
+('-348','%s splits open!','0','2','0','20747','0'),
 ('-349','Where is that dog?','11796','0','0','23618','0'),
 ('-350','How dare you disturb the master\'s dinner!','0','1','0','16414','0'),
 ('-351','That was wasted on the likes of you!','0','0','0','16414','0'),
