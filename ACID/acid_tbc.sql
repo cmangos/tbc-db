@@ -21294,6 +21294,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Illidari Slayer
 ('2163901','21639','9','0','100','1','8','30','15000','21000','11','22120','1','0','0','0','0','0','0','0','0','0','Illidari Slayer - Cast Charge'),
 ('2163902','21639','0','0','100','1','0','5000','9500','12000','11','15496','1','0','0','0','0','0','0','0','0','0','Illidari Slayer - Cast Cleave'),
+-- Mature Netherwing Drake 21648 - mob_mature_netherwing_drake
 -- Illidari Satyr
 ('2165601','21656','12','0','100','1','100','50','10000','15000','11','38048','1','32','0','0','0','0','0','0','0','0','Illidari Satyr - Cast Curse of Pain'),
 -- Oronu the Elder
