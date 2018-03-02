@@ -13,7 +13,7 @@ INSERT INTO creature_movement_template VALUES
 
 SET @TIMER := 3 * 60 * 1000;
 
-SET @ENTRY := 2000001364;
+SET @ENTRY := 2000002020;
 
 -- Texts used in speech
 DELETE FROM  dbscript_string WHERE entry BETWEEN @ENTRY AND @ENTRY + 4;
