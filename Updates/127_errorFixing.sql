@@ -1,5 +1,6 @@
 -- add missing movement for creatures from UDB
 UPDATE creature_template SET MovementType=2 WHERE entry IN(1737,1739);
+UPDATE creature SET MovementType=2 WHERE id IN(1737,1739);
 
 DELETE FROM creature_movement_template WHERE entry IN(1737,1739);
 INSERT INTO creature_movement_template(entry, point, position_x, position_y, position_z, waittime, script_id, textid1, textid2, textid3, textid4, textid5, emote, spell, orientation, model1, model2) VALUES
