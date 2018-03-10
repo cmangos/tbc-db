@@ -4942,7 +4942,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2506006','25060','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Set Phase to 0 on Evade'),
 -- Harbinger Inuuro (25061) - NSR
 -- Dawnblade Hawkrider
-('2506301','25063','10','0','100','1','0','70','3000','6500','11','45189','6','0','0','0','0','0','0','0','0','0','Dawnblade Hawkrider - Cast Dawnblade Attack'),
+('2506301','25063','10','0','100','1','0','70','3000','6500','11','45189','6','0','40','2','0','0','0','0','0','0','Dawnblade Hawkrider - Cast Dawnblade Attack and Set Ranged Weapon Model OOC LOS'),
 -- Magister Ilastar (25069) - NSR
 -- Darkspine Siren
 ('2507301','25073','1','0','100','1','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Darkspine Siren - Cast Frost Armor on Spawn'),
