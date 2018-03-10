@@ -1065,4 +1065,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID + 03, @POINT := @POINT + 1, '3010.420', '6834.429', '369.9110', '0', '0', '100'),
 (@CGUID + 03, @POINT := @POINT + 1, '3006.181', '6800.649', '373.9317', '0', '0', '100');
 
+UPDATE creature, creature_template SET creature.curhealth = creature_template.MinLevelHealth, creature.curmana = creature_template.MinLevelMana WHERE creature.id = creature_template.entry AND creature_template.RegenerateStats & 1;
+
 
