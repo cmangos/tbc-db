@@ -28783,6 +28783,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1996401','19964','9','0','100','7','0','20','2400','4800','11','36339','1','0','0','0','0','0','0','0','0','0','Red Seedling - Cast Fire Blast'),
 -- Green Seedling (4.3.4 Official Data - Normal/Heroic)
 ('1996901','19969','11','0','100','6','0','0','0','0','11','34757','0','0','0','0','0','0','0','0','0','0','Green Seedling - Cast Toxic Pollen on Spawn'),
+('1996902','19969','6','0','100','6','0','0','0','0','28','0','34757','0','0','0','0','0','0','0','0','0','Green Seedling - Remove Toxic Pollen on Death'),
 -- Summoned Bloodwarder Reservist (4.3.4 Official Data - Normal/Heroic)
 ('2007801','20078','0','0','100','7','12400','16400','8100','16200','11','34820','1','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Reservist - Cast Arcane Strike'),
 -- Summoned Bloodwarder Mender (4.3.4 Official Data - Normal/Heroic)
