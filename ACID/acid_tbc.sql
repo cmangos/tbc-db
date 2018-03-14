@@ -28618,6 +28618,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2110102','21101','11','0','100','4','0','0','0','0','11','39003','0','0','0','0','0','0','0','0','0','0','Unbound Void Zone (Heroic) - Cast Consumption on Spawn'),
 -- Arcane Warder Target (KEEPING PREVENT COMBAT MOVEMENT ON PURPOSE UNTIL BETTER SOLUTION IS DETERMINED)
 ('2118601','21186','11','0','100','6','0','0','0','0','42','1','0','0','21','0','0','0','0','0','0','0','Arcane Warder Target - Set Invincible and Prevent Combat Movement on Spawn'),
+-- Arcane Explosion
+('2129001','21290','11','0','100','6','0','0','0','0','11','36514','0','0','41','0','0','0','0','0','0','0','Arcane Explosion - Cast Energy and Despawn on Spawn'),
 -- Defender Corpse
 ('2130301','21303','10','0','100','6','0','8','0','0','11','36593','0','7','37','0','0','0','0','0','0','0','Defender Corpse - Cast Corpse Burst and Die on 8 Yards LOS'),
 -- Warder Corpse
