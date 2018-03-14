@@ -16547,7 +16547,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Porthannius 6780
 -- Melarith 6781
 -- Sethir the Ancient 6909
--- Minion of Sethir 6911
+-- Minion of Sethir
+('691101','6911','4','0','50','0','0','0','0','0','1','-1587','0','0','0','0','0','0','0','0','0','0','Minion of Sethir - Say on Aggro'),
 -- Ferocitas the Dream Eater
 ('723401','7234','11','0','100','0','0','0','0','0','11','12787','0','0','0','0','0','0','0','0','0','0','Ferocitas the Dream Eater - Cast Thrash on Spawn'),
 -- Gnarlpine Mystic
@@ -34756,7 +34757,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1576','I\'ve a message for your master, scum!','0','0','0','22863','0'),
 ('-1577','Once I have hacked off your limbs, I may hang your body from our battlements.','0','0','0','18677','0'),
 ('-1578','I love to bathe in the blood of my enemies!','0','0','0','18677','0'),
-('-1579','I crave your death!','0','0','0','18677','0');
+('-1579','I crave your death!','0','0','0','18677','0'),
+-- Reuse -1580 to -1586
+('-1587','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0');
 
 
 
