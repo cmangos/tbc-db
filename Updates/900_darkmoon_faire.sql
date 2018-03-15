@@ -458,8 +458,8 @@ INSERT INTO `game_event_creature` (`guid`, `event`) (SELECT guid, 87 AS event FR
 INSERT INTO `game_event_creature` (`guid`, `event`) (SELECT guid, 96 AS event FROM creature WHERE guid BETWEEN 142000 AND 142027);
 INSERT INTO `game_event_creature` (`guid`, `event`) (SELECT guid, 105 AS event FROM creature WHERE guid BETWEEN 142000 AND 142027);
 
-DELETE FROM gameobject WHERE guid BETWEEN 96000 AND 96154;
-DELETE FROM game_event_gameobject WHERE guid BETWEEN 96000 AND 96154;
+DELETE FROM gameobject WHERE guid BETWEEN 96000 AND 96153;
+DELETE FROM game_event_gameobject WHERE guid BETWEEN 96000 AND 96153;
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`,  `animprogress`, `state`) VALUES
 (96000,180573,530,1,-1805.75,4964.83,-24.7187,-3.01942,0,0,0,0,180,180,100,1),
@@ -615,13 +615,12 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (96150,180524,530,1,-2288.5,5240.46,-9.98673,-2.82743,0,0,0,0,180,180,100,1),
 (96151,180524,530,1,-2272.53,5244.65,-9.97546,2.19912,0,0,0,0,180,180,100,1),
 (96152,180524,530,1,-2245.76,5241.94,-9.97542,-2.18166,0,0,0,0,180,180,100,1),
-(96153,180524,530,1,-2233.28,5218.25,-9.97196,-3.10669,0,0,0,0,180,180,100,1),
-(96154,186560,530,1,-1742.18,5457.85,-12.4281,-1.71042,0,0,0,0,180,180,100,1);
+(96153,180524,530,1,-2233.28,5218.25,-9.97196,-3.10669,0,0,0,0,180,180,100,1);
 
-INSERT INTO `game_event_gameobject` (`guid`, `event`) (SELECT guid, 78 AS event FROM gameobject WHERE guid BETWEEN 96000 AND 96154);
-INSERT INTO `game_event_gameobject` (`guid`, `event`) (SELECT guid, 87 AS event FROM gameobject WHERE guid BETWEEN 96000 AND 96154);
-INSERT INTO `game_event_gameobject` (`guid`, `event`) (SELECT guid, 96 AS event FROM gameobject WHERE guid BETWEEN 96000 AND 96154);
-INSERT INTO `game_event_gameobject` (`guid`, `event`) (SELECT guid, 105 AS event FROM gameobject WHERE guid BETWEEN 96000 AND 96154);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) (SELECT guid, 78 AS event FROM gameobject WHERE guid BETWEEN 96000 AND 96153);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) (SELECT guid, 87 AS event FROM gameobject WHERE guid BETWEEN 96000 AND 96153);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) (SELECT guid, 96 AS event FROM gameobject WHERE guid BETWEEN 96000 AND 96153);
+INSERT INTO `game_event_gameobject` (`guid`, `event`) (SELECT guid, 105 AS event FROM gameobject WHERE guid BETWEEN 96000 AND 96153);
 
 -- ==========================================================================================================================================================================================================================================================================================================
 -- ==========================================================================================================================================================================================================================================================================================================
