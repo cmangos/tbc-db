@@ -23559,6 +23559,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1920905','19209','2','0','100','6','25','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Summoned Cabal Deathsworn - Cast Enrage at 25% HP'),
 ('1920906','19209','7','0','100','6','0','0','0','0','41','0','0','0','18','33554432','0','0','0','0','0','0','Summoned Cabal Deathsworn - Despawn on Evade'),
 -- Void Traveler (19226) - npc_void_traveler (Part of Grandmaster Vorpil Scripted Encounter)
+-- Containment Beam
+('2115901','21159','1','0','100','7','1000','1000','5000','5000','11','36220','0','0','0','0','0','0','0','0','0','0','Containment Beam - Cast Containment Beam OOC'),
 
 
 
