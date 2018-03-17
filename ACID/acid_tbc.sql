@@ -3365,8 +3365,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cat (6368) - NSR
 -- Spirit Healer (6491) - NSR
 -- Enraged Felbat (9521) - SCRIPTED IN ANOTHER ZONE
--- Crimson Cannon
-('1119901','11199','9','0','100','1','0','40','4000','5000','11','17501','1','0','0','0','0','0','0','0','0','0','Crimson Cannon - Cast Cannon Fire'),
+-- Crimson Cannon 11199
+('1119901','11199','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Crimson Cannon - Prevent Movement and Prevent Melee on Spawn'),
+('1119902','11199','9','0','100','1','0','40','1000','1500','11','17501','1','0','0','0','0','0','0','0','0','0','Crimson Cannon - Cast Cannon Fire'),
 -- Frog (13321) - NSR
 -- Tender (15271) - NSR
 -- Arcane Wraith (3.0.3 Official Data)
@@ -18830,9 +18831,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Draaca Longtail
 ('2239651','22396','0','0','100','1','5300','6500','9200','10900','11','32009','1','0','0','0','0','0','0','0','0','0','Draaca Longtail - Cast Cutdown'),
 ('2239652','22396','2','0','100','0','30','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Draaca Longtail - Cast Enrage at 30% HP'),
--- Death's Door Fel Cannon
-('2244301','22443','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Death\'s Door Fel Cannon - OOC - Prevent Combat Movement'),
-('2244302','22443','0','0','100','1','1000','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Death\'s Door Fel Cannon - Combat - Cast Fel Cannon Blast'),
+-- Death's Door Fel Cannon 22443 - NSR
 -- Rexxar
 ('2244801','22448','0','0','100','1','1000','2000','7000','8000','11','40504','1','0','0','0','0','0','0','0','0','0','Rexxar - Cast Cleave'),
 ('2244802','22448','0','0','100','1','3000','3000','5000','6000','11','3391','1','0','0','0','0','0','0','0','0','0','Rexxar - Cast Thrash'),
@@ -19437,9 +19436,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1935402','19354','0','0','100','1','8000','12000','8000','14000','11','16856','1','0','0','0','0','0','0','0','0','0','Arzeth the Merciless - Cast Mortal Strike'),
 ('1935403','19354','9','0','100','1','0','30','12000','14000','11','15245','1','0','0','0','0','0','0','0','0','0','Arzeth the Merciless - Cast Shadow Bolt Volley'),
 ('1935404','19354','8','0','100','0','35460','-1','0','0','36','20680','1','0','1','-1133','0','0','0','0','0','0','Arzeth the Merciless - Changes Template to Arzeth the Powerless After Using Staff of the Dreghood Elders (Quest: 10369)'),
--- Fel Cannon
-('1939901','19399','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Fel Cannon - OOC - Prevent Combat Movement'),
-('1939902','19399','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Fel Cannon - Combat - Cast Fel Cannon Blast'),
+-- Fel Cannon 19399
+('1939901','19399','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Fel Cannon - Prevent Movement and Prevent Melee on Spawn'),
+('1939902','19399','0','0','100','1','0','1000','2500','2500','11','36238','1','0','0','0','0','0','0','0','0','0','Fel Cannon - Combat - Cast Fel Cannon Blast'),
 -- Shattered Hand Neophyte (3.0.3 Official Data - Logs Only)
 ('1941001','19410','0','0','100','1','6500','9300','18700','22400','11','11639','1','0','0','0','0','0','0','0','0','0','Shattered Hand Neophyte - Cast Shadow Word: Pain'),
 ('1941002','19410','0','0','100','1','6800','15100','45000','55000','11','6742','0','0','0','0','0','0','0','0','0','0','Shattered Hand Neophyte - Cast Bloodlust'),
@@ -19618,9 +19617,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2244403','22444','11','0','100','0','0','0','0','0','41','300000','0','0','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - Despawn'),
 -- Fel Spirit
 ('2245401','22454','0','0','100','0','0','0','0','0','1','-860','0','0','0','0','0','0','0','0','0','0','Fel Spirit - Yell on Aggro'),
--- Fel Cannon MKI
-('2246101','22461','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Fel Cannon MKI - OOC - Prevent Combat Movement'),
-('2246102','22461','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Fel Cannon MKI - Combat - Cast Fel Cannon Blast'),
+-- Fel Cannon MKI 22461
+('2246101','22461','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Fel Cannon MKI - Prevent Movement and Prevent Melee on Spawn'),
+('2246102','22461','0','0','100','1','0','1000','2500','2500','11','36238','1','0','0','0','0','0','0','0','0','0','Fel Cannon MKI - Combat - Cast Fel Cannon Blast'),
 -- Felblood Initiate
 ('2491801','24918','9','0','100','1','0','5','5000','9000','11','14873','1','0','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Sinister Strike'),
 ('2491802','24918','9','0','100','1','0','5','12000','16000','11','35871','1','0','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Spellbreaker'),
@@ -19963,9 +19962,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Windroc Matriarch
 ('1905501','19055','9','0','100','1','0','5','12000','16000','11','30285','1','0','0','0','0','0','0','0','0','0','Windroc Matriarch - Cast Eagle Claw'),
 ('1905502','19055','0','0','100','1','3000','6000','22000','26000','11','32914','0','1','0','0','0','0','0','0','0','0','Windroc Matriarch - Cast Wing Buffet'),
--- Fel Cannon: Hate
-('1906701','19067','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Fel Cannon: Hate - OOC - Prevent Combat Movement'),
-('1906702','19067','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Fel Cannon: Hate - Combat - Cast Fel Cannon Blast'),
+-- Fel Cannon: Hate 19067 - NSR
 -- Mag'har Pitfighter
 ('1914001','19140','1','0','100','1','1000','1000','60000','60000','45','5','7','0','0','0','0','0','0','0','0','0','Mag\'har Pitfighter - Send AI Event 5'),
 ('1914002','19140','1','0','100','1','1200','1200','1200','1200','0','0','0','0','30','1','2','3','0','0','0','0','Mag\'har Pitfighter - Set Phase 1/2/3 randomly (Phase 0)'),
@@ -19984,6 +19981,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1914903','19149','1','1','100','33','5000','250000','5000','250000','1','-417','-418','-419','1','-420','-421','-422','0','0','0','0','Telaari Citizen - Random Say (Phase 1)'),
 -- Clefthoof Calf
 ('1918301','19183','0','0','100','1','6000','18000','20000','28000','11','32023','0','0','0','0','0','0','0','0','0','0','Clefthoof Calf - Cast Hoof Stomp'),
+-- Fel Cannon: Fear 19210 - NSR
 -- Deathshadow Acolyte
 ('1948001','19480','0','0','100','1','5000','7000','11000','15000','11','31293','0','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Consuming Shadows'),
 -- Kor'kron Warrior
@@ -20000,9 +19998,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1959405','19594','1','15','100','0','0','0','0','0','43','0','2327','0','0','0','0','0','0','0','0','0','Kor\'kron Honor Guard - Mount up (Phase 4)'),
 -- Corki
 ('2081201','20812','1','0','100','1','70000','90000','70000','90000','54','0','0','10024','45','5','17','0','0','0','0','0','Corki - Random Say and Throw AI Event 5 (A) OOC'),
--- Legion Fel Cannon
-('2123301','21233','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - OOC - Prevent Combat Movement'),
-('2123302','21233','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
+-- Legion Fel Cannon 21233
+('2123301','21233','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Legion Fel Cannon - Prevent Movement and Prevent Melee on Spawn'),
+('2123302','21233','0','0','100','1','0','1000','2500','2500','11','36238','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
 -- Crashing Wave-Spirit
 ('2230901','22309','0','0','100','1','0','1000','10000','18000','11','34425','1','0','0','0','0','0','0','0','0','0','Crashing Wave-Spirit - Cast Water Bolt'),
 -- Storming Wind-Ripper
@@ -20904,7 +20902,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2113505','21135','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Fel Imp - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
 ('2113506','21135','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Fel Imp - Set Phase 1 at 15% MP (Phase 2)'),
 ('2113507','21135','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Fel Imp - Set Phase to 0 on Evade'),
--- Legion Fel Cannon 21233
 -- Crash Bigbomb 21259
 -- Seeping Ooze 21264
 -- Parasitic Fleshling 21265
@@ -33094,9 +33091,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1938109','19381','29','0','100','0','4000','4000','0','0','11','33799','0','0','0','0','0','0','0','0','0','0','Flame Wave - Cast Flame Wave on Spawn'),
 ('1938110','19381','29','0','100','0','4500','4500','0','0','11','33799','0','0','0','0','0','0','0','0','0','0','Flame Wave - Cast Flame Wave on Spawn'),
 ('1938111','19381','29','0','100','0','5000','5000','0','0','11','33799','0','0','0','0','0','0','0','0','0','0','Flame Wave - Cast Flame Wave on Spawn'),
--- Legion Fel Cannon MKII
-('2245101','22451','1','0','100','1','1000','1000','1000','1000','21','0','0','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - OOC - Prevent Combat Movement'),
-('2245102','22451','0','0','100','1','0','1000','2500','2500','11','36242','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Combat - Cast Fel Cannon Blast'),
+-- Legion Fel Cannon MKII 22451
+('2245101','22451','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Prevent Movement and Prevent Melee on Spawn'),
+('2245102','22451','0','0','100','1','0','1000','2500','2500','11','36238','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Cast Fel Cannon Blast'),
 -- D.I.S.C.O.
 ('2798901','27989','11','0','100','0','0','0','0','0','11','50487','0','0','0','0','0','0','0','0','0','0','D.I.S.C.O. - Cast Create Disco Ball Visual Object on spawn');
 
