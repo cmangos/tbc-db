@@ -1,0 +1,1 @@
+UPDATE creature_template SET UnitFlags=64 WHERE entry = 4500;
