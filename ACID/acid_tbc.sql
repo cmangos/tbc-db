@@ -30486,8 +30486,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2123102','21231','0','0','100','3','7300','11400','7600','12600','11','38631','4','0','0','0','0','0','0','0','0','0','Greyheart Shield-Bearer - Cast Avenger\'s Shield'),
 -- Greyheart Skulker
 ('2123201','21232','9','0','100','3','0','5','4800','7900','11','38625','4','0','0','0','0','0','0','0','0','0','Greyheart Skulker - Cast Kick'),
--- Serpentshrine Sporebat
-('2124601','21246','9','0','100','3','6','30','13600','17600','11','22120','4','0','0','0','0','0','0','0','0','0','Serpentshrine Sporebat - Cast Charge'),
+-- Serpentshrine Sporebat 21246
+('2124601','21246','32','0','100','3','5','30','13600','17600','11','22120','12','0','0','0','0','0','0','0','0','0','Serpentshrine Sporebat - Cast Charge in Range'),
 ('2124602','21246','0','0','100','3','0','5','24000','36800','11','38924','0','1','0','0','0','0','0','0','0','0','Serpentshrine Sporebat - Cast Spore Burst'),
 -- Underbog Colossus
 ('2125101','21251','11','0','100','2','0','0','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Underbog Colossus - Random Phase on Spawn'),
