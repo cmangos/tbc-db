@@ -23078,8 +23078,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mal'druk the Soulrender
 ('2044501','20445','0','0','100','1','4000','9000','7000','11000','11','16568','1','0','0','0','0','0','0','0','0','0','Mal\'druk the Soulrender - Cast Mind Flay'),
 ('2044502','20445','2','0','100','0','50','0','0','0','11','35425','0','1','0','0','0','0','0','0','0','0','Mal\'druk the Soulrender - Cast Summon Shadow Image at 50% HP'),
--- Terror Totem
-('2045501','20455','0','0','100','1','2000','2000','15000','15000','11','35198','0','0','0','0','0','0','0','0','0','0','Terror Totem - Cast Fear'),
+-- Terror Totem 20455 - TotemAI
 -- Terrorclaw
 ('2047701','20477','9','0','100','1','0','5','5000','9000','11','40504','1','0','0','0','0','0','0','0','0','0','Terrorclaw - Cast Cleave'),
 -- Gur'zil
