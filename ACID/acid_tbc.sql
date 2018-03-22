@@ -30191,6 +30191,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2333906','23339','0','0','100','3','45000','60000','60000','75000','11','41171','1','1','0','0','0','0','0','0','0','0','Illidari Heartseeker - Cast Skeleton Shot'),
 ('2333907','23339','2','0','100','2','50','0','0','0','11','41170','1','1','0','0','0','0','0','0','0','0','Illidari Heartseeker - Cast Curse of the Bleakheart at 50% HP'),
 ('2333908','23339','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Illidari Heartseeker - Set Melee Weapon Model on Evade'),
+-- Whirling Blade
+('2336901','23369','0','0','100','2','0','6000','0','0','11','41058','0','0','0','0','0','0','0','0','0','0','Whirling Blade - Cast Whirlwind'),
 -- Shadowmoon Fallen (23371) - NSR
 -- Ashtongue Stalker
 ('2337401','23374','11','0','100','2','0','0','0','0','11','34189','0','1','0','0','0','0','0','0','0','0','Ashtongue Stalker - Cast Stealth on Spawn'),
