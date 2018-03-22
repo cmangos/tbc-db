@@ -22667,9 +22667,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2305102','23051','0','0','100','1','7000','9000','17000','20000','11','13738','1','0','0','0','0','0','0','0','0','0','Monstrous Kaliri - Cast Rend'),
 ('2305103','23051','0','0','100','1','4000','5000','9000','12000','11','5708','0','0','0','0','0','0','0','0','0','0','Monstrous Kaliri - Cast Swoop'),
 -- Talonpriest Ishaal 23066
-('2306601','23066','4','0','25','0','0','0','0','0','54','0','0','10040','0','0','0','0','0','0','0','0','Talonpriest Ishaal - Say on Aggro'),
+('2306601','23066','4','0','25','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Talonpriest Ishaal - Say on Aggro'),
 ('2306602','23066','14','0','100','1','2500','40','9600','15700','11','17843','6','0','0','0','0','0','0','0','0','0','Talonpriest Ishaal - Cast Flash Heal on Friendies'),
 ('2306603','23066','9','0','100','1','0','30','18000','24000','11','15654','1','0','0','0','0','0','0','0','0','0','Talonpriest Ishaal - Cast Shadow Word Pain'),
+-- Talonpriest Skizzik 23067
+('2306701','23067','4','0','25','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Talonpriest Skizzik - Say on Aggro'),
+('2306702','23067','9','0','100','1','0','20','2000','4000','11','17165','1','0','0','0','0','0','0','0','0','0','Talonpriest Skizzik - Cast Mind Flay'),
+('2306703','23067','9','0','100','1','0','5','8000','12000','11','22884','0','1','0','0','0','0','0','0','0','0','Talonpriest Skizzik - Cast Psychic Scream'),
+('2306704','23067','0','0','100','1','8500','12000','12000','18000','11','32712','0','1','0','0','0','0','0','0','0','0','Talonpriest Skizzik - Cast Shadow Nova'),
 -- Vakkiz the Windrager
 ('2316201','23162','11','0','100','0','0','0','0','0','1','-234','0','0','22','1','0','0','0','0','0','0','Vakkiz the Windrager - Emote and Set Phase 1 on Spawn'),
 ('2316202','23162','0','5','100','1','6500','9500','8500','11500','11','40420','1','1','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Cast Lightning Breath (Phase 1)'),
@@ -23407,7 +23412,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Roach (4076) - NSR
 -- Spider (14881) - NSR
 -- Sethekk Initiate (4.3.4 Official Data - Normal/Heroic)
-('1831801','18318','4','0','15','38','0','0','0','0','1','-1240','-1241','-1242','1','-1242','-1243','-1244','1','-1240','-1241','-1244','Sethekk Initiate - Random Say on Aggro'),
+('1831801','18318','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Initiate - Random Say on Aggro'),
 ('1831802','18318','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sethekk Initiate - Set Phase 1 on Aggro'),
 ('1831803','18318','9','5','100','7','0','5','10800','18100','11','16145','1','0','0','0','0','0','0','0','0','0','Sethekk Initiate - Cast Sunder Armor (Phase 1)'),
 ('1831804','18318','24','5','100','7','16145','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Sethekk Initiate - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
@@ -23416,7 +23421,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1831807','18318','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Sethekk Initiate - Set Phase to 0 on Evade'),
 -- Time-Lost Scryer (4.3.4 Official Data - Normal/Heroic)
 ('1831901','18319','1','0','100','7','1000','1000','1800000','1800000','11','32689','0','1','0','0','0','0','0','0','0','0','Time-Lost Scryer - Cast Arcane Destruction on Spawn'),
-('1831902','18319','4','0','15','38','0','0','0','0','1','-1240','-1241','-1242','1','-1242','-1243','-1244','1','-1240','-1241','-1244','Time-Lost Scryer - Random Say on Aggro'),
+('1831902','18319','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Scryer - Random Say on Aggro'),
 ('1831903','18319','0','0','100','3','7800','13300','10400','17700','11','22273','1','0','0','0','0','0','0','0','0','0','Time-Lost Scryer (Normal)- Cast Arcane Missiles'),
 ('1831904','18319','0','0','100','5','7800','13300','10400','17700','11','33989','1','0','0','0','0','0','0','0','0','0','Time-Lost Scryer (Heroic) - Cast Arcane Missiles'),
 ('1831905','18319','14','0','100','3','3300','15','9600','15700','11','17843','6','0','0','0','0','0','0','0','0','0','Time-Lost Scryer (Normal) - Cast Flash Heal on Friendies'),
@@ -23425,33 +23430,35 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1831908','18319','14','0','100','5','11800','15','13200','21700','11','15981','6','1','0','0','0','0','0','0','0','0','Time-Lost Scryer (Heroic) - Cast Rejuvenation on Friendies'),
 ('1831909','18319','27','0','100','7','32689','1','5000','5000','11','32689','0','1','0','0','0','0','0','0','0','0','Time-Lost Scryer - Cast Arcane Destruction on Missing Arcane Destruction Aura'),
 -- Time-Lost Shadowmage (4.3.4 Official Data - Normal)
-('1832001','18320','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Set Phase 1 on Aggro'),
-('1832002','18320','0','5','100','3','4800','9600','21700','33800','11','32682','1','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Normal) - Cast Curse of the Dark Talon (Phase 1)'),
-('1832003','18320','0','5','100','5','4800','9600','21700','33800','11','38149','1','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Heroic) - Cast Curse of the Dark Talon (Phase 1)'),
-('1832004','18320','24','5','100','3','32682','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Normal) - Set Phase 2 on Target Max Curse of the Dark Talon Aura Stack (Phase 1)'),
-('1832005','18320','24','5','100','5','38149','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Heroic) - Set Phase 2 on Target Max Curse of the Dark Talon Aura Stack (Phase 1)'),
-('1832006','18320','28','3','100','3','32682','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Normal) - Set Phase 1 on Target Missing Curse of the Dark Talon Aura Stack (Phase 2)'),
-('1832007','18320','28','3','100','5','38149','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Heroic) - Set Phase 1 on Target Missing Curse of the Dark Talon Aura Stack (Phase 2)'),
-('1832008','18320','0','0','100','7','6600','18600','9300','21800','11','32677','1','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Cast Shadow Missiles'),
-('1832009','18320','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Set Phase to 0 on Evade'),
+('1832001','18320','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Random Say on Aggro'),
+('1832002','18320','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Set Phase 1 on Aggro'),
+('1832003','18320','0','5','100','3','4800','9600','21700','33800','11','32682','1','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Normal) - Cast Curse of the Dark Talon (Phase 1)'),
+('1832004','18320','0','5','100','5','4800','9600','21700','33800','11','38149','1','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Heroic) - Cast Curse of the Dark Talon (Phase 1)'),
+('1832005','18320','24','5','100','3','32682','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Normal) - Set Phase 2 on Target Max Curse of the Dark Talon Aura Stack (Phase 1)'),
+('1832006','18320','24','5','100','5','38149','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Heroic) - Set Phase 2 on Target Max Curse of the Dark Talon Aura Stack (Phase 1)'),
+('1832007','18320','28','3','100','3','32682','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Normal) - Set Phase 1 on Target Missing Curse of the Dark Talon Aura Stack (Phase 2)'),
+('1832008','18320','28','3','100','5','38149','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage (Heroic) - Set Phase 1 on Target Missing Curse of the Dark Talon Aura Stack (Phase 2)'),
+('1832009','18320','0','0','100','7','6600','18600','9300','21800','11','32677','1','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Cast Shadow Missiles'),
+('1832010','18320','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Time-Lost Shadowmage - Set Phase to 0 on Evade'),
 -- Sethekk Talon Lord (4.3.4 Official Data - Normal/Heroic)
-('1832101','18321','4','0','15','38','0','0','0','0','1','-1240','-1241','-1242','1','-1242','-1243','-1244','1','-1240','-1241','-1244','Sethekk Talon Lord - Random Say on Aggro'),
+('1832101','18321','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Talon Lord - Random Say on Aggro'),
 ('1832102','18321','0','0','100','7','2400','7200','16300','24300','11','32674','4','0','0','0','0','0','0','0','0','0','Sethekk Talon Lord - Cast Avengers Shield'),
 ('1832103','18321','0','0','100','7','9300','16700','14300','25400','11','32654','5','0','0','0','0','0','0','0','0','0','Sethekk Talon Lord - Cast Talon of Justice'),
 -- Sethekk Ravenguard (4.3.4 Official Data - Normal/Heroic) - Should Frenzy on Nearby Ravenguard Death (15% HP is current limitation workaround)
-('1832201','18322','4','0','15','38','0','0','0','0','1','-1240','-1241','-1242','1','-1242','-1243','-1244','1','-1241','-1242','-1243','Sethekk Ravenguard - Random Say on Aggro'),
+('1832201','18322','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Ravenguard - Random Say on Aggro'),
 ('1832202','18322','0','0','100','3','7200','20500','10800','21700','11','33964','1','0','0','0','0','0','0','0','0','0','Sethekk Ravenguard (Normal) - Cast Bloodthirst'),
 ('1832203','18322','0','0','100','5','7200','20500','10800','21700','11','40423','1','0','0','0','0','0','0','0','0','0','Sethekk Ravenguard (Heroic) - Cast Bloodthirst'),
 ('1832204','18322','0','0','100','7','6100','17400','16800','21700','11','32651','0','0','0','0','0','0','0','0','0','0','Sethekk Ravenguard - Cast Howling Screech'),
 ('1832205','18322','2','0','100','6','15','0','0','0','11','34970','0','1','0','0','0','0','0','0','0','0','Sethekk Ravenguard - Cast Frenzy at 15% HP'),
 -- Sethekk Guard (4.3.4 Official Data - Normal/Heroic)
-('1832301','18323','4','0','15','38','0','0','0','0','1','-1240','-1241','-1242','1','-1242','-1243','-1244','1','-1241','-1242','-1243','Sethekk Guard - Random Say on Aggro'),
+('1832301','18323','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Guard - Random Say on Aggro'),
 ('1832302','18323','0','0','100','7','3600','15700','10900','22100','11','33967','0','0','0','0','0','0','0','0','0','0','Sethekk Guard - Cast Thunderclap'),
 -- Sethekk Prophet (4.3.4 Official Data - Normal/Heroic)
-('1832501','18325','0','0','100','7','8700','17700','13200','24100','11','27641','4','0','0','0','0','0','0','0','0','0','Sethekk Prophet - Cast Fear'),
-('1832502','18325','6','0','100','6','0','0','0','0','11','32692','0','7','0','0','0','0','0','0','0','0','Sethekk Prophet - Summon Arakkoa Spirit on Death'),
+('1832501','18325','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Prophet - Random Say on Aggro'),
+('1832502','18325','0','0','100','7','8700','17700','13200','24100','11','27641','4','0','0','0','0','0','0','0','0','0','Sethekk Prophet - Cast Fear'),
+('1832503','18325','6','0','100','6','0','0','0','0','11','32692','0','7','0','0','0','0','0','0','0','0','Sethekk Prophet - Summon Arakkoa Spirit on Death'),
 -- Sethekk Shaman (4.3.4 Official Data - Normal/Heroic)
-('1832601','18326','4','0','15','38','0','0','0','0','1','-1240','-1241','-1242','1','-1242','-1243','-1244','1','-1241','-1242','-1243','Sethekk Shaman - Random Say on Aggro'),
+('1832601','18326','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Shaman - Random Say on Aggro'),
 ('1832602','18326','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Sethekk Shaman - Set Phase 1 on Aggro'),
 ('1832603','18326','0','5','100','7','7900','14500','90000','90000','11','32663','1','1','0','0','0','0','0','0','0','0','Sethekk Shaman - Cast Summon Dark Vortex (Phase 1)'),
 ('1832604','18326','17','5','100','7','18701','5000','5000','0','22','2','0','0','0','0','0','0','0','0','0','0','Sethekk Shaman - Set Phase 2 on Dark Vortex Spawn (Phase 1)'),
@@ -23459,12 +23466,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1832606','18326','0','0','100','3','4300','9100','7200','14500','11','15501','1','0','0','0','0','0','0','0','0','0','Sethekk Shaman (Normal) - Cast Earth Shock'),
 ('1832607','18326','0','0','100','5','4300','9100','7200','14500','11','22885','1','0','0','0','0','0','0','0','0','0','Sethekk Shaman (Heroic) - Cast Earth Shock'),
 ('1832608','18326','6','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Sethekk Shaman - Set Phase 0 on Death'),
--- Time-Lost Controller (4.3.4 Official Data - Normal/Heroic)
-('1832701','18327','4','0','15','38','0','0','0','0','1','-1240','-1241','-1242','1','-1240','-1242','-1244','1','-1241','-1242','-1243','Time-Lost Controller - Random Say on Aggro'),
-('1832702','18327','0','0','100','7','9100','24100','27800','48300','11','32764','0','1','0','0','0','0','0','0','0','0','Time-Lost Controller - Cast Summon Charming Totem'),
+-- Time-Lost Controller 18327 (4.3.4 Official Data - Normal/Heroic)
+('1832701','18327','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Time-Lost Controller - Random Say on Aggro'),
+('1832702','18327','0','0','100','7','9100','24100','27800','48300','11','32764','0','1','0','0','0','0','0','0','0','0','Time-Lost Controller - Summon Charming Totem'),
 ('1832703','18327','0','0','100','7','8400','23200','9700','32600','11','35013','4','0','0','0','0','0','0','0','0','0','Time-Lost Controller - Cast Shrink'),
 -- Sethekk Oracle (4.3.4 Official Data - Normal/Heroic)
-('1832801','18328','4','0','15','38','0','0','0','0','1','-1240','-1241','-1242','1','-1240','-1242','-1244','1','-1241','-1242','-1243','Sethekk Oracle - Random Say on Aggro'),
+('1832801','18328','4','0','15','6','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Oracle - Random Say on Aggro'),
 ('1832802','18328','0','0','100','3','6100','12100','18500','27700','11','32690','1','0','0','0','0','0','0','0','0','0','Sethekk Oracle (Normal) - Cast Arcane Lightning'),
 ('1832803','18328','0','0','100','5','1200','12100','7200','13300','11','38146','1','0','0','0','0','0','0','0','0','0','Sethekk Oracle (Heroic) - Cast Arcane Lightning'),
 ('1832804','18328','0','0','100','7','2400','8700','8400','19300','11','32129','1','32','0','0','0','0','0','0','0','0','Sethekk Oracle - Cast Faerie Fire'),
@@ -34745,11 +34752,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1237','Welcome to the Void...','0','0','0','Mana-Tombs','0'),
 ('-1238','You\'re far from home, stranger.','0','0','0','Mana-Tombs','0'),
 ('-1239','What have the netherwinds brought us?','0','0','0','Mana-Tombs','0'),
-('-1240','Arak-ha!','0','0','0','Sethekk Halls','0'),
-('-1241','Protect the Veil!','0','0','0','Sethekk Halls','0'),
-('-1242','Darkfire -- avenge us!','0','0','0','Sethekk Halls','0'),
-('-1243','Ssssekk-sara Rith-nealaak!','0','0','0','Sethekk Halls','0'),
-('-1244','In Terokk\'s name!','0','0','0','Sethekk Halls','0'),
+('-1240','Arak-ha!','0','0','0','Generic Random Arakkoa Aggro Texts','0'),
+('-1241','Protect the Veil!','0','0','0','Generic Random Arakkoa Aggro Texts','0'),
+('-1242','Darkfire -- avenge us!','0','0','0','Generic Random Arakkoa Aggro Texts','0'),
+('-1243','Ssssekk-sara Rith-nealaak!','0','0','0','Generic Random Arakkoa Aggro Texts','0'),
+('-1244','In Terokk\'s name!','0','0','0','Generic Random Arakkoa Aggro Texts','0'),
 ('-1245','%s begins to summon in a Cabal Deathsworn!','0','2','0','18634','0'),
 ('-1246','%s begins to summon in a Cabal Acolyte!','0','2','0','18634','0'),
 ('-1247','Cabal Summoner summons a Cabal Deathsworn to his aid!','0','2','0','19209','0'),
@@ -35246,8 +35253,12 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10044,0,-283,0,'Common Troll - Random Aggro Texts'),
 (10045,0,-658,0,'18340 - Random Spawn Texts'),
 (10045,0,-659,0,'18340 - Random Spawn Texts'),
-(10045,0,-660,0,'18340 - Random Spawn Texts');
-
+(10045,0,-660,0,'18340 - Random Spawn Texts'),
+(10046,0,-1240,0,'Generic Random Arakkoa Aggro Texts'),
+(10046,0,-1241,0,'Generic Random Arakkoa Aggro Texts'),
+(10046,0,-1242,0,'Generic Random Arakkoa Aggro Texts'),
+(10046,0,-1243,0,'Generic Random Arakkoa Aggro Texts'),
+(10046,0,-1244,0,'Generic Random Arakkoa Aggro Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
