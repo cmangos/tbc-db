@@ -18262,6 +18262,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2066624','20666','30','491519','100','0','5','20845','0','0','53','10055','0','0','0','0','0','0','0','0','0','0','Blade\'s Edge - Orb Trigger 01 - Start Relay Script on Receive AI Event 5 (Phase 15)'),
 ('2066625','20666','30','491519','100','0','6','21057','0','0','22','0','0','0','53','10059','0','0','24','0','0','0','Blade\'s Edge - Orb Trigger 01 - Set Phase 0 and Set Active Object Off and Enter Evade Mode on Receive AI Event 6 (Phase 15)'),
 ('2066626','20666','29','65535','100','1','60000','60000','60000','60000','45','5','10','0','22','0','0','0','53','10059','0','0','Blade\'s Edge - Orb Trigger 01 - Send AI Event 5 and Set Phase 0 and Set Active Object Off on Timer (Phase 16-18)'),
+-- Fiendling Flesh Beast 20668 - NSR
 -- Fey Drake
 ('2071301','20713','0','0','100','1','6000','6000','12000','16000','11','36718','0','0','0','0','0','0','0','0','0','0','Fey Drake - Cast Blink'),
 ('2071302','20713','18','0','100','1','100','1','10000','11000','11','11981','1','0','0','0','0','0','0','0','0','0','Fey Drake - Cast Mana Burn on Target Mana User'),
@@ -18922,8 +18923,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2291002','22910','0','0','100','1','10000','10000','16000','20000','11','39621','1','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - In Combat - Cast Corruption'),
 ('2291003','22910','0','0','100','1','20000','20000','20000','20000','11','39620','4','0','11','39620','4','0','11','39620','4','0','Skulloc Soulgrinder - In Combat - Cast Summon Ogre Ghost 3x'),
 ('2291004','22910','6','0','100','0','0','0','0','0','11','39909','0','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - Cast Summon Soul on Death'),
--- Sundered Spirit
-('2291201','22912','0','0','100','1','10000','15000','10000','15000','11','20816','1','0','0','0','0','0','0','0','0','0','Sundered Spirit - In Combat - Cast Shadow Bolt'),
+-- Vim'gol the Vile 22911
+-- Sundered Spirit 22912
+('2291201','22912','11','0','100','0','0','0','0','0','11','39916','0','0','11','28126','0','0','11','17321','0','0','Sundered Spirit - Cast Soulgrinder Ghost Transform and Cast Spirit Particles (purple) and Cast Spirit Spawn-in on Spawn'),
+('2291202','22912','0','0','100','1','6000','12000','6000','12000','11','20816','1','0','0','0','0','0','0','0','0','0','Sundered Spirit - Cast Shadow Bolt'),
 -- Thuk the Defiant
 ('2292001','22920','32','0','100','1','8','40','5000','10000','11','38777','12','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Rock Rumble in Range'),
 ('2292002','22920','0','0','100','1','3000','6000','8000','16000','11','38770','1','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Mortal Wound'),
@@ -19002,6 +19005,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2247310','22473','12','0','100','0','15','0','0','0','11','39255','0','1','1','-1441','0','0','36','22496','0','0','Baron Sablemane - Play emote, Cast Black Dragon Form and Transform at 15% HP'),
 ('2247311','22473','0','7','100','1','3000','4000','6500','7500','11','39263','1','0','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Flame Breath (Phase 3)'),
 -- Simon Game Bunny 22923 - npc_simon_game_bunny
+-- Sundered Ghost 24039
+('2403901','24039','11','0','100','0','0','0','0','0','11','39916','0','0','11','28126','0','0','11','17321','0','0','Sundered Ghost - Cast Soulgrinder Ghost Transform and Cast Spirit Particles (purple) and Cast Spirit Spawn-in on Spawn'),
 
 
 -- ==================
