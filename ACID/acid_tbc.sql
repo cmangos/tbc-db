@@ -18814,6 +18814,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Koi-Koi Spirit
 ('2222601','22226','0','0','100','1','1000','3000','15000','17000','11','36093','1','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Cast Ghost Strike'),
 ('2222602','22226','6','0','100','0','0','0','0','0','45','5','50','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Send AI Event on Death'),
+-- Grishna Arakkoa 22232 - NSR
 -- Bash'ir Raider
 ('2224101','22241','0','0','100','1','7000','12000','9000','15000','11','35922','0','0','0','0','0','0','0','0','0','0','Bash\'ir Raider - Cast Energy Flare'),
 ('2224102','22241','0','0','90','1','9000','18000','16000','24000','11','32920','0','0','0','0','0','0','0','0','0','0','Bash\'ir Raider - Cast Warp'),
@@ -18917,7 +18918,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2249802','22498','0','0','100','1','3000','4000','25000','30000','11','20753','1','0','0','0','0','0','0','0','0','0','Misha - Cast Demoralizing Roar'),
 -- Lesser Wrath Hound
 ('2249901','22499','9','0','100','1','0','5','6000','10000','11','36406','0','0','0','0','0','0','0','0','0','0','Lesser Wrath Hound - Cast Double Breath'),
--- Vim'gol the Vile
+-- Matron Li-sahar 22825 (missing combat ai at least)
+-- King Dorfbruiser 22826 (missing combat ai at least)
+-- Gorgolon the All-Seeing 22827 (missing combat ai at least)
+-- Trelopades 22828  (missing combat ai at least)
 -- Skulloc Soulgrinder
 ('2291001','22910','0','0','100','1','30000','30000','50000','50000','11','39622','5','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - In Combat - Cast Banish'),
 ('2291002','22910','0','0','100','1','10000','10000','16000','20000','11','39621','1','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - In Combat - Cast Corruption'),
