@@ -3409,8 +3409,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Outrunner Alarion (15301) - NSR
 -- Springpaw Cub (15366) - NSR
 -- Felendren the Banished (3.0.3 Official Data)
-('1536701','15367','4','0','100','0','0','0','0','0','1','-110','0','0','0','0','0','0','0','0','0','0','Felendren the Banished - Say on Aggro'),
+('1536701','15367','4','0','100','0','0','0','0','0','1','-110','-1593','0','0','0','0','0','0','0','0','0','Felendren the Banished - Say on Aggro'),
 ('1536702','15367','0','0','100','1','9100','10600','20500','28600','11','16568','1','0','0','0','0','0','0','0','0','0','Felendren the Banished - Cast Mind Flay'),
+('1536703','15367','5','0','100','0','0','0','0','0','1','-1594','0','0','0','0','0','0','0','0','0','0','Felendren the Banished - Say on Player Kill'),
 -- Sunstrider Guardian
 ('1537101','15371','22','0','30','1','78','6','67','0','1','-936','-937','0','0','0','0','0','0','0','0','0','Sunstrider Guardian -  Say on Receive Salute Emote'),
 ('1537102','15371','22','0','30','1','77','6','67','0','1','-938','0','0','0','0','0','0','0','0','0','0','Sunstrider Guardian - Say on Receive Rude Emote'),
@@ -33828,7 +33829,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-107','Protect the innocent!','0','0','0','15638','0'),
 ('-108','Serve the Public Trust!','0','0','0','15638','0'),
 ('-109','Uphold the Law!','0','0','0','15638','0'),
-('-110','Take heart! Your friends will not long mourn your passing!','8506','0','0','15638','0'),
+('-110','Take heart! Your friends will not long mourn your passing!','8506','0','0','15367','0'),
 ('-111','%s bursts, showering the area with arcane residue!','0','2','0','15648','0'),
 ('-112','Your world is ours now.','11056','1','0','17767','0'),
 ('-113','More, more, more!  I must feed soon.','0','0','10','Common Wretched Text','0'),
@@ -35115,7 +35116,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1589','BURN IT DOWN!','0','1','0','23440/23441','0'),
 ('-1590','Me smell stench of the living!','5823','1','0','8567','0'),
 ('-1591','Me feast on you all!','5824','1','0','8567','0'),
-('-1592','I\'ll feast on your bones!','5860','1','0','8580','0');
+('-1592','I\'ll feast on your bones!','5860','1','0','8580','0'),
+('-1593','I must feed! Prepare to die!','8508','0','0','15367','0'),
+('-1594','Foolish Whelp! I will consume your energies and then your soul!','8507','0','0','15367','0');
 
 
 
