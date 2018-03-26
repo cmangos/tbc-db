@@ -28639,6 +28639,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('858001','8580','11','0','100','2','0','0','0','0','1','-817','0','0','0','0','0','0','0','0','0','0','Atal\'alarion - Yell on Spawn'),
 ('858002','8580','0','0','100','3','10700','14900','21600','41600','11','12887','1','0','0','0','0','0','0','0','0','0','Atal\'alarion - Cast Sweeping Slam'),
 ('858003','8580','0','0','100','3','9700','18900','20500','32200','11','6524','0','1','0','0','0','0','0','0','0','0','Atal\'alarion - Cast Ground Tremor'),
+('858004','8580','4','0','100','2','0','0','0','0','1','-1592','0','0','0','0','0','0','0','0','0','0','Atal\'alarion - Yell on Aggro'),
 -- Hukku's Voidwalker (8656) - NSR
 -- Hukku's Succubus (3.3.0 Official Data) - Seduction Spell Information Unknown (REQUIRES 2 PEOPLE IN FIGHT TO COLLECT DATA)
 ('865701','8657','9','0','100','3','0','5','12000','19500','11','11779','1','0','0','0','0','0','0','0','0','0','Hukku\'s Succubus - Cast Lash of Pain'),
@@ -35113,8 +35114,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1588','KILL THEM ALL!','0','1','0','23440/23441','0'),
 ('-1589','BURN IT DOWN!','0','1','0','23440/23441','0'),
 ('-1590','Me smell stench of the living!','5823','1','0','8567','0'),
-('-1591','Me feast on you all!','5824','1','0','8567','0');
-
+('-1591','Me feast on you all!','5824','1','0','8567','0'),
+('-1592','I\'ll feast on your bones!','5860','1','0','8580','0');
 
 
 
