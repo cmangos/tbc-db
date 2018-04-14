@@ -4884,16 +4884,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2497810','24978','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Dawnblade Summoner - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('2497811','24978','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dawnblade Summoner - Flee at 15% HP (Phase 3)'),
 ('2497812','24978','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dawnblade Summoner - Set Phase to 0 on Evade'),
--- Dawnblade Marksman
-('2497901','24979','10','0','100','1','0','70','7000','13000','11','45101','7','0','0','0','0','0','0','0','0','0','Dawnblade Marksman - Cast Flaming Arrow OOC'),
-('2497902','24979','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Dawnblade Marksman - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
-('2497903','24979','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Dawnblade Marksman - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('2497904','24979','9','5','100','1','10','40','13000','17000','11','37847','1','1','40','2','0','0','0','0','0','0','Dawnblade Marksman - Cast Immolation Arrow and Set Ranged Weapon Model (Phase 1)'),
-('2497905','24979','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dawnblade Marksman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('2497906','24979','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Dawnblade Marksman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('2497907','24979','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dawnblade Marksman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
-('2497908','24979','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dawnblade Marksman - Flee at 15% HP (Phase 2)'),
-('2497909','24979','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dawnblade Marksman - Set Phase 1 and Set Melee Weapon Model on Evade'),
+-- Dawnblade Marksman 24979
+('2497901','24979','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dawnblade Marksman - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2497902','24979','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Dawnblade Marksman - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('2497903','24979','0','5','100','1','0','5000','13000','17000','11','37847','1','1','40','2','0','0','0','0','0','0','Dawnblade Marksman - Cast Immolation Arrow and Set Ranged Weapon Model (Phase 1)'),
+('2497904','24979','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dawnblade Marksman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2497905','24979','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Dawnblade Marksman - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('2497906','24979','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Dawnblade Marksman - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
+('2497907','24979','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dawnblade Marksman - Flee at 15% HP (Phase 2)'),
+('2497908','24979','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Dawnblade Marksman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Crystal Ward 24980
 -- Converted Sentry 24981 - npc_converted_sentry
 -- Shattered Sun Sentry
