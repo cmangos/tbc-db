@@ -11472,8 +11472,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('221203','2212','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Deth\'ryll Satyr - Enable Dynamic Movement at 9-80 Yards'),
 ('221204','2212','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Deth\'ryll Satyr - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('221205','2212','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Deth\'ryll Satyr - Set Melee Weapon Model on Evade'),
--- Pygmy Tide Crawler
-('223101','2231','9','0','100','1','0','5','8000','11000','11','33844','1','0','0','0','0','0','0','0','0','0','Pygmy Tide Crawler - Cast Pin'),
+-- Pygmy Tide Crawler 2231 - NSR
 -- Tide Crawler (2232) - NSR
 -- Encrusted Tide Crawler
 ('223301','2233','9','0','100','1','0','5','7000','12000','11','3427','1','32','0','0','0','0','0','0','0','0','Encrusted Tide Crawler - Cast Infected Wound'),
