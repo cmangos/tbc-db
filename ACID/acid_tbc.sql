@@ -20076,8 +20076,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mo'arg Master Planner
 ('1856701','18567','11','0','100','0','0','0','0','0','3','0','18370','0','0','0','0','0','0','0','0','0','Mo\'arg Master Planner - Transform on Spawn'),
 ('1856702','18567','32','0','100','1','8','40','10000','15000','11','31705','12','0','0','0','0','0','0','0','0','0','Mo\'arg Master Planner - Cast Magnetic Pull in Range'),
--- Kil'sorrow Ritualist
-('1865801','18658','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Kil\'sorrow Ritualist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+-- Kil'sorrow Ritualist 18658
+('1865801','18658','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','52','3','0','0','Kil\'sorrow Ritualist - Enable Dynamic Movement and Set Phase 1 and Interrupt Channeling on Aggro'),
 ('1865802','18658','9','13','100','1','0','40','3400','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Cast Shadow Bolt (Phase 1)'),
 ('1865803','18658','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1865804','18658','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Disable Dynamic Movement at 0-8 Yards'),
@@ -20088,9 +20088,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1865809','18658','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kil\'sorrow Ritualist - Flee at 15% HP (Phase 3)'),
 ('1865810','18658','30','0','100','1','5','18660','0','0','11','32623','10','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Cast Power Subjugator on Receive AI Event Custom A'),
 ('1865811','18658','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Set Phase to 0 on Evade'),
--- Subjugator Vaz'shir
+-- Subjugator Vaz'shir 18660
 ('1866001','18660','1','0','100','0','1000','1000','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A on OOC Timer'),
 ('1866002','18660','21','0','100','0','0','0','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A on Reaching Home'),
+('1866003','18660','4','0','100','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Subjugator Vaz\'shir - Interrupt Channeling on Aggro'),
 -- Terrorguard
 ('1866101','18661','0','0','100','1','3000','7000','13000','17000','11','11443','1','32','0','0','0','0','0','0','0','0','Terrorguard - Cast Cripple'),
 ('1866102','18661','0','0','100','1','7000','11000','12000','15000','11','11876','0','0','0','0','0','0','0','0','0','0','Terrorguard - Cast War Stomp'),
