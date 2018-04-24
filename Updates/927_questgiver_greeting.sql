@@ -2,7 +2,7 @@ UPDATE questgiver_greeting SET EmoteId=1 WHERE Entry IN (9536,3391,4077,4452,588
 
 -- +74
 REPLACE INTO questgiver_greeting (Entry, Type, Text, EmoteId, EmoteDelay) VALUES
-(239,0,'Sometimes I think there''s a big gray cloud in the sky, just raining down bad luck upon us.  First, we''re driven off our land, and now we can''t even get out of Westfall.  Everything''s a mess.  Something needs to be done.',0,0),
+(239,0,'Adventure from lands far and near $bMeeting with folks both odd and queer $bBut if of me a question you ask $bYou must first complete a simple task!',0,0),
 (240,0,'Ach, it''s hard enough keeping order around here without all these new troubles popping up!  I hope you have good news, $N...',0,0),
 (265,0,'I have sensed your coming for quite some time, $n.  It was written in the pattern of the stars.',0,0),
 (267,0,'Welcome to the town of Darkshire.  Clerk Daltry at your service.  Can I be of some assistance?',0,0),
