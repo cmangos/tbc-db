@@ -3491,8 +3491,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Yasmine Teli'Larien (15494) - NSR
 -- Aleinia (15501) - NSR
 -- Ranger Sallina (15513) - NSR
--- Eversong Tender (15635) - NSR
--- Eversong Green Keeper (15636) - NSR
+-- Eversong Tender 15635
+('1563501','15635','14','0','100','1','40','40','12000','15000','11','12160','6','1','0','0','0','0','0','0','0','0','Eversong Tender - Cast Rejuvenation on Friendlies'),
+-- Eversong Green Keeper 15636
+('1563601','15636','14','0','100','1','40','40','12000','15000','11','12160','6','1','0','0','0','0','0','0','0','0','Eversong Green Keeper - Cast Rejuvenation on Friendlies'),
 -- Withered Green Keeper (3.0.3 Official Data)
 ('1563701','15637','0','0','100','1','10200','11900','14100','25800','11','13584','1','0','0','0','0','0','0','0','0','0','Withered Green Keeper - Cast Strike'),
 -- Arcane Patroller (3.0.3 Official Data)
@@ -3530,21 +3532,26 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1565701','15657','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Darkwraith - Cast Enrage at 30% HP'),
 -- Rotlimb Marauder (3.0.3 Official Data)
 ('1565801','15658','0','0','100','1','1700','4700','10300','23600','11','3234','1','0','0','0','0','0','0','0','0','0','Rotlimb Marauder - Cast Disease Touch'),
--- Grimscale Murloc
-('1566801','15668','0','0','100','1','6000','12000','18000','23000','11','26661','5','0','0','0','0','0','0','0','0','0','Grimscale Murloc - Cast Fear'),
--- Grimscale Oracle (3.0.3 Official Data)
-('1566901','15669','2','0','100','1','70','0','53400','55800','11','17137','0','0','0','0','0','0','0','0','0','0','Grimscale Oracle - Cast Flash Heal at 70% HP'),
--- Grimscale Forager (3.0.3 Official Data)
+-- Grimscale Murloc 15668
+('1566801','15668','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grimscale Murloc - Flee at 15% HP'),
+('1566802','15668','30','0','100','1','5','15937','0','0','11','26661','0','0','0','0','0','0','0','0','0','0','Grimscale Murloc - Cast Fear on Recieve AI Event 5'),
+-- Grimscale Oracle 15669
+('1566901','15669','14','0','100','1','40','40','12000','15000','11','17137','6','1','0','0','0','0','0','0','0','0','Grimscale Oracle - Cast Flash Heal on Friendlies'),
+('1566902','15669','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grimscale Oracle - Flee at 15% HP'),
+('1566903','15669','30','0','100','1','5','15937','0','0','11','26661','0','0','0','0','0','0','0','0','0','0','Grimscale Oracle - Cast Fear on Recieve AI Event 5'),
+-- Grimscale Forager 15670 (3.0.3 Official Data)
 ('1567001','15670','0','0','100','1','3500','17400','12300','27900','11','7365','1','32','0','0','0','0','0','0','0','0','Grimscale Forager - Cast Bottle of Poison'),
+('1567002','15670','30','0','100','1','5','15937','0','0','11','26661','0','0','0','0','0','0','0','0','0','0','Grimscale Forager - Cast Fear on Recieve AI Event 5'),
 -- Wonderform Operator (15732) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Hathvelion Sungaze (15920) - NSR
 -- Captain Kelisendra (15921) - NSR
 -- Apprentice Loralthalis (15924) - NSR
--- Mmmrrrggglll (3.0.3 Official Data) - TO-DO: Figure Out How To Frenzy/Fear Other Murlocs on Death
+-- Mmmrrrggglll 15937 (3.0.3 Official Data)
 ('1593701','15937','0','0','100','1','2500','8500','21700','123400','11','12058','1','0','0','0','0','0','0','0','0','0','Mmmrrrggglll - Cast Chain Lightning'),
 ('1593702','15937','0','0','100','1','7800','14700','11200','22500','11','21030','1','1','0','0','0','0','0','0','0','0','Mmmrrrggglll - Cast Frost Shock'),
 ('1593703','15937','2','0','100','1','70','0','82400','174000','11','12491','0','1','0','0','0','0','0','0','0','0','Mmmrrrggglll - Cast Healing Wave at 70% HP'),
+('1593704','15937','6','0','100','0','0','0','0','0','45','5','225','0','0','0','0','0','0','0','0','0','Mmmrrrggglll - Send AI Event 5 on Death'),
 -- Eversong Ranger (3.0.3 Official Data)
 ('1593801','15938','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Eversong Ranger - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('1593802','15938','9','5','100','1','5','30','3400','3700','11','6660','1','0','40','2','0','0','0','0','0','0','Eversong Ranger - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
@@ -3571,7 +3578,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1594509','15945','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Apprentice Meledor - Set Phase to 0 on Evade'),
 -- Apprentice Veya (15946) - NSR
 -- Thaelis the Hungerer (15949) - NSR
--- Grimscale Seer (3.0.3 Official Data)
+-- Grimscale Seer 15950 (3.0.3 Official Data)
 ('1595001','15950','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Grimscale Seer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1595002','15950','9','5','100','1','0','40','3800','4900','11','20802','1','0','0','0','0','0','0','0','0','0','Grimscale Seer - Cast Lightning Bolt (Phase 1)'),
 ('1595003','15950','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Grimscale Seer - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
@@ -3579,6 +3586,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1595005','15950','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Grimscale Seer - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1595006','15950','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Grimscale Seer - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1595007','15950','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Grimscale Seer - Set Phase to 0 on Evade'),
+('1595008','15950','30','0','100','1','5','15937','0','0','11','26661','0','0','0','0','0','0','0','0','0','0','Grimscale Seer - Cast Fear on Recieve AI Event 5'),
 -- Magister Duskwither (15951) - NSR
 -- Gharsul the Remorseless (15958) - NSR
 -- Duskwither Apprentice (3.0.3 Official Data)
