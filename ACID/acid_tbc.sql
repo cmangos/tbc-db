@@ -21563,8 +21563,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2150309','21503','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set Phase to 0 on Evade'),
 ('2150310','21503','30','0','100','0','5','21506','0','0','11','38722','10','5','0','0','0','0','0','0','0','0','Shadow Council Warlock - Cast Spellbind Azaloth on Receive AI Event Custom A.'),
 ('2150311','21503','30','0','100','0','6','0','0','0','2','1826','1','0','0','0','0','0','0','0','0','0','Shadow Council Warlock - Set temp. faction on Receive AI Event Custom B.'),
--- Sunfury Summoner
-('2150501','21505','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Sunfury Summoner - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+-- Sunfury Summoner 21505
+('2150501','21505','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','52','3','0','0','Sunfury Summoner - Enable Dynamic Movement and Set Phase 1 and Interrupt Channeling on Aggro'),
 ('2150502','21505','9','5','100','1','0','40','3400','4800','11','13901','1','0','0','0','0','0','0','0','0','0','Sunfury Summoner - Cast Arcane Bolt (Phase 1)'),
 ('2150503','21505','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Sunfury Summoner - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('2150504','21505','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Sunfury Summoner - Disable Dynamic Movement at 0-8 Yards'),
