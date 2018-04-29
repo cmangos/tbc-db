@@ -4042,9 +4042,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1633901','16339','9','0','100','1','0','5','11000','18000','11','31390','1','0','0','0','0','0','0','0','0','0','Arcane Reaver - Cast Knockdown'),
 -- Shadowpine Ripper
 ('1634001','16340','9','0','100','1','0','5','10000','14000','11','12555','1','0','0','0','0','0','0','0','0','0','Shadowpine Ripper - Cast Pummel'),
--- Shadowpine Witch
-('1634101','16341','1','0','100','1','1000','1000','600000','600000','11','12550','0','0','0','0','0','0','0','0','0','0','Shadowpine Witch - Cast Lightning Shield on Spawn'),
-('1634102','16341','27','0','100','1','12550','1','15000','30000','11','12550','0','0','0','0','0','0','0','0','0','0','Shadowpine Witch - Cast Lightning Shield on Missing Buff'),
+-- Shadowpine Witch 16341
+('1634101','16341','27','0','100','1','12550','1','15000','30000','11','12550','0','0','0','0','0','0','0','0','0','0','Shadowpine Witch - Cast Lightning Shield on Missing Buff'),
 -- Mummified Headhunter
 ('1634201','16342','6','0','100','0','0','0','0','0','11','29047','0','7','0','0','0','0','0','0','0','0','Mummified Headhunter - Cast Cloud of Disease on Death'),
 -- Shadowpine Oracle
@@ -4093,8 +4092,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1635807','16358','9','0','100','1','0','30','9000','13000','11','28900','4','1','0','0','0','0','0','0','0','0','Kel\'gash the Wicked - Cast Chain Lightning'),
 ('1635808','16358','0','0','100','1','7000','10000','15000','22000','11','7289','4','32','0','0','0','0','0','0','0','0','Kel\'gash the Wicked - Cast Shrink'),
 ('1635809','16358','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Kel\'gash the Wicked - Set Phase to 0 on Evade'),
--- Zombified Grimscale
+-- Zombified Grimscale 16402
 ('1640201','16402','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Zombified Grimscale - Flee at 15% HP'),
+('1640202','16402','1','0','100','0','1000','1000','0','0','11','31386','0','32','0','0','0','0','0','0','0','0','Zombified Grimscale - Cast Fevered Fatigue OOC'),
 -- Withered Grimscale
 ('1640301','16403','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Withered Grimscale - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('1640302','16403','9','5','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Withered Grimscale - Cast Throw and Set Ranged Weapon Model (Phase 1)'),
@@ -31081,8 +31081,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1638903','16389','24','5','100','3','29618','10','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Set Phase 2 on Target Max Burning Brand Aura Stack (Phase 1)'),
 ('1638904','16389','28','3','100','3','29618','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Set Phase 1 on Target Missing Burning Brand Aura Stack (Phase 2)'),
 ('1638905','16389','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Set Phase to 0 on Evade'),
--- Vampiric Mistbat
-('1635401','16354','9','0','100','2','0','5','12000','18000','11','29363','0','32','0','0','0','0','0','0','0','0','Vampiric Mistbat - Cast Draining Touch'),
+-- Vampiric Mistbat 16354
+('1635401','16354','1','0','100','0','1000','1000','0','0','11','29363','0','32','0','0','0','0','0','0','0','0','Vampiric Mistbat - Cast Draining Touch OOC'),
 -- Lesser Scourgebat
 ('1635501','16355','9','0','100','3','0','5','5000','8000','11','3234','1','0','0','0','0','0','0','0','0','0','Lesser Scourgebat - Cast Disease Touch'),
 -- Phantom Attendant
