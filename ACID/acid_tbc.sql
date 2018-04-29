@@ -25149,15 +25149,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1784001','17840','2','0','100','6','50','0','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','Durnholde Tracking Hound - Cast Frenzy at 50% HP'),
 -- Pit Spectator (17846) - NSR
 -- Lieutenant Drake (4.3.4 Official Data - Normal/Heroic)
-('1784801','17848','11','0','100','7','0','0','0','0','1','-1254','0','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Yell on Spawn'),
-('1784802','17848','4','0','100','6','0','0','0','0','1','-1255','0','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Yell on Aggro'),
-('1784803','17848','0','0','100','7','6100','6100','7200','22900','11','9080','1','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Cast Hamstring'),
-('1784804','17848','0','0','100','7','8400','10900','16900','27800','11','31911','1','1','1','-1258','0','0','0','0','0','0','Lieutenant Drake - Cast Mortal Strike and Yell'),
-('1784805','17848','0','0','100','7','13300','14500','18100','22900','11','31909','0','1','0','0','0','0','0','0','0','0','Lieutenant Drake - Cast Whirlwind'),
-('1784806','17848','0','0','100','7','20500','24100','12100','26600','11','33792','4','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Cast Exploding Shot'),
-('1784807','17848','0','0','100','7','25000','30000','25000','35000','11','33789','5','1','1','-1259','0','0','0','0','0','0','Lieutenant Drake - Cast Frightening Shout and Yell'),
-('1784808','17848','5','0','100','7','0','0','0','0','1','-1256','-1257','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Yell on Player Kill'),
-('1784809','17848','6','0','100','6','0','0','0','0','1','-1260','0','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Yell on Death'),
+('1784801','17848','4','0','100','6','0','0','0','0','1','-1255','0','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Yell on Aggro'),
+('1784802','17848','0','0','100','7','6100','6100','7200','22900','11','9080','1','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Cast Hamstring'),
+('1784803','17848','0','0','100','7','8400','10900','16900','27800','11','31911','1','1','1','-1258','0','0','0','0','0','0','Lieutenant Drake - Cast Mortal Strike and Yell'),
+('1784804','17848','0','0','100','7','13300','14500','18100','22900','11','31909','0','1','0','0','0','0','0','0','0','0','Lieutenant Drake - Cast Whirlwind'),
+('1784805','17848','0','0','100','7','20500','24100','12100','26600','11','33792','4','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Cast Exploding Shot'),
+('1784806','17848','0','0','100','7','25000','30000','25000','35000','11','33789','5','1','1','-1259','0','0','0','0','0','0','Lieutenant Drake - Cast Frightening Shout and Yell'),
+('1784807','17848','5','0','100','7','0','0','0','0','1','-1256','-1257','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Yell on Player Kill'),
+('1784808','17848','6','0','100','6','0','0','0','0','1','-1260','0','0','0','0','0','0','0','0','0','0','Lieutenant Drake - Yell on Death'),
 -- Durnholde Veteran (4.3.4 Official Data - Normal/Heroic)
 ('1786001','17860','4','0','10','38','0','0','0','0','1','-1275','-1276','-1277','1','-1276','-1277','-1278','1','-1275','-1277','-1278','Durnholde Veteran - Random Say on Aggro'),
 ('1786002','17860','0','0','100','7','4800','10900','3600','10900','11','15581','1','0','0','0','0','0','0','0','0','0','Durnholde Veteran - Cast Sinister Strike'),
@@ -25448,10 +25447,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1791803','17918','1','0','100','6','5000','5000','0','0','41','0','0','0','54','0','0','10011','0','0','0','0','Time Keeper - Despawn on Timer OOC'),
 -- Darkwater Crocolisk
 ('1795201','17952','9','0','100','7','0','5','7000','13000','11','34370','1','0','0','0','0','0','0','0','0','0','Darkwater Crocolisk - Cast Jagged Tooth Snap'),
--- Darkwater Crocolisk (2.4.3 Official Data)
-('2007501','20075','0','0','100','7','1900','9000','6800','18300','11','34370','1','0','0','0','0','0','0','0','0','0','Darkwater Crocolisk - Cast Jagged Tooth Snap'),
--- Sable Jaguar (18982) - Cast Sneak on Spawn and Evade
--- Blackfang Tarantula - NSR
+-- Dark Portal Black Crystal Invisible Stalker 18553
+('1855301','18553','11','0','100','0','0','0','0','0','11','32563','0','1','0','0','0','0','0','0','0','0','Dark Portal Black Crystal Invisible Stalker - Cast Black Crystal State on Spawn'),
+-- Sable Jaguar 18982 - NSR
+-- Blackfang Tarantula 18983 - NSR
 -- Infinite Executioner (2.4.3 Official Data)
 ('1899401','18994','4','0','15','6','0','0','0','0','1','-439','-440','-441','28','0','31326','0','0','0','0','0','Infinite Executioner - Random Say on Aggro'),
 ('1899402','18994','4','0','100','6','0','0','0','0','28','0','31326','0','0','0','0','0','0','0','0','0','Infinite Executioner - Remove Corrupt Medivh on Aggro'),
@@ -25468,6 +25467,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1899507','18995','3','5','100','6','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Infinite Vanquisher - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1899508','18995','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Infinite Vanquisher - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1899509','18995','6','0','10','6','0','0','0','0','1','-514','-515','-516','0','0','0','0','0','0','0','0','Infinite Vanquisher - Random Say on Death'),
+-- Darkwater Crocolisk (2.4.3 Official Data)
+('2007501','20075','0','0','100','7','1900','9000','6800','18300','11','34370','1','0','0','0','0','0','0','0','0','0','Darkwater Crocolisk - Cast Jagged Tooth Snap'),
 -- Sa'at (20201) - npc_saat
 -- Rift Keeper (2.4.3 Official Data)
 ('2110401','21104','4','0','50','6','0','0','0','0','1','-443','-444','-445','0','0','0','0','0','0','0','0','Rift Keeper - Random Say on Aggro'),
@@ -34924,7 +34925,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1251','Thrall will never be free!','10409','1','0','17862','0'),
 ('-1252','Did you really think you would leave here alive?','10410','1','0','17862','0'),
 ('-1253','Guards! Urgh..Guards..!','10411','1','0','17862','0'),
-('-1254','You there, fetch water quickly! Get these flames out before they spread to the rest of the keep! Hurry, damn you!','10428','1','0','17848','0'),
+-- PLEASE RE-USE 1254
 ('-1255','I know what you\'re up to, and I mean to put an end to it, permanently!','10429','1','0','17848','0'),
 ('-1256','No more middling for you.','10432','1','0','17848','0'),
 ('-1257','You will not interfere!','10433','1','0','17848','0'),
