@@ -29081,7 +29081,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1950501','19505','0','0','100','7','8100','14200','12100','27700','11','34637','1','0','0','0','0','0','0','0','0','0','Sunseeker Channeler - Cast Soul Channel'),
 -- Sunseeker Gene-Splicer (4.3.4 Official Data - Normal/Heroic)
 ('1950701','19507','0','0','100','3','4800','15300','18100','25300','11','34642','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Normal) - Cast Death and Decay'),
-('1950702','19507','0','0','100','3','4800','15300','18100','25300','11','39347','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Heroic) - Cast Death and Decay'),
+('1950702','19507','0','0','100','5','4800','15300','18100','25300','11','39347','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Heroic) - Cast Death and Decay'),
 ('1950703','19507','0','0','100','7','22100','29400','34800','37700','11','34247','1','1','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer - Cast Summon Lasher Beast'),
 -- Sunseeker Herbalist (4.3.4 Official Data - Normal/Heroic)
 ('1950801','19508','0','0','100','7','6100','9600','12100','20500','11','22127','4','1','0','0','0','0','0','0','0','0','Sunseeker Herbalist - Cast Entangling Roots'),
