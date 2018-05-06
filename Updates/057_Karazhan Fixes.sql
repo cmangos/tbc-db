@@ -10,36 +10,4 @@ UPDATE creature_template SET ExtraFlags=769 WHERE entry IN (17535);
 -- The Big Bad Wolf (17521)
 UPDATE creature_template SET ExtraFlags=769 WHERE entry IN (17521);
 
--- Shade of Aran
-UPDATE creature_template SET Leash=60 WHERE entry IN (16524); -- Can Be Pulled Outside of Room
-
--- Leash Prince To His Room To Prevent Pulling Him Outside Of It
-UPDATE creature_template SET Leash=100 WHERE entry IN (15690);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

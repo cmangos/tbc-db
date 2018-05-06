@@ -13,13 +13,13 @@ INSERT INTO dbscripts_on_quest_end (id, delay, command, datalong, datalong2, dat
 ('1838', '1', '20', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Thun''grim Firegaze - Set Waypoint Movement');
 
 DELETE FROM creature_movement_template WHERE entry=5878;
-INSERT INTO creature_movement_template (entry, pathId, point, position_x, position_y, position_z, orientation, waittime, script_id, comment) VALUES
-(5878,0,1,-423.713,-3167.24,212.779,100,0,0,''),
-(5878,0,2,-423.211,-3164.23,212.864,100,0,0,''),
-(5878,0,3,-425.1,-3162.25,212.697,2.92829,39000,587801,''),
-(5878,0,4,-423.211,-3164.23,212.864,100,0,0,''),
-(5878,0,5,-423.713,-3167.24,212.779,100,0,0,''),
-(5878,0,6,-437.62,-3176.26,211.385,100,1000,587802,'');
+INSERT INTO creature_movement_template (entry, pathId, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
+(5878,0,1,-423.713,-3167.24,212.779,100,0,0),
+(5878,0,2,-423.211,-3164.23,212.864,100,0,0),
+(5878,0,3,-425.1,-3162.25,212.697,2.92829,39000,587801),
+(5878,0,4,-423.211,-3164.23,212.864,100,0,0),
+(5878,0,5,-423.713,-3167.24,212.779,100,0,0),
+(5878,0,6,-437.62,-3176.26,211.385,100,1000,587802);
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (587801,587802);
 INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
