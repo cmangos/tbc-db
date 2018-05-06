@@ -25568,7 +25568,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greater Bogstrok (3.0.3 and 4.3.3 Official Data - Normal Only)
 ('1781701','17817','0','0','100','7','2400','18100','10800','16900','11','35760','4','32','0','0','0','0','0','0','0','0','Bogstrok - Cast Decayed Strength'),
 -- Naturalist Bite (3.0.3 Official Data - Normal Logs Only)
-('1789301','17893','10','0','100','6','1','15','0','0','1','-682','0','0','0','0','0','0','0','0','0','0','Naturalist Bite - Yell on OOC LOS'),
+('1789301','17893','17','0','100','6','17957','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - On summon Coilfang Champion launch relay script'),
+('1789302','17893','17','0','100','6','17960','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - On summon Coilfang Soothsayer launch relay script'),
+('1789303','17893','17','0','100','6','17961','0','0','0','53','10024','6','0','0','0','0','0','0','0','0','0','Naturalist Bite - On summon Coilfang Enchantress launch relay script'),
 -- Coilfang Observer (3.0.3 and 4.3.3 Official Data - Normal Only)(Chance to say on aggro)
 ('1793801','17938','0','0','100','3','9700','20500','27700','39800','11','17883','1','0','0','0','0','0','0','0','0','0','Coilfang Observer (Normal) - Cast Immolate'),
 ('1793802','17938','0','0','100','5','9700','20500','27700','39800','11','37668','1','0','0','0','0','0','0','0','0','0','Coilfang Observer (Heroic) - Cast Immolate'),
