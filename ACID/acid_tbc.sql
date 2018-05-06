@@ -19379,18 +19379,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1867702','18677','0','0','100','1','12000','15000','9000','13000','11','37704','0','0','0','0','0','0','0','0','0','0','Mekthorg the Wild - Cast Whirlwind'),
 ('1867703','18677','2','0','100','0','20','0','0','0','11','8599','0','1','0','0','0','0','0','0','0','0','Mekthorg the Wild - Cast Enrage at 20% HP'),
 ('1867704','18677','4','0','50','0','0','0','0','0','1','-1577','-1578','-1579','0','0','0','0','0','0','0','0','Mekthorg the Wild - Say on Aggro'),
--- Fulgorge (Should This NPC Be Added To npc_burster_worm Script) ???
-('1867801','18678','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Fulgorge - Remove Unselectable Unit Flag on Spawn'),
-('1867802','18678','11','0','100','0','0','0','0','0','11','29147','0','16','11','33928','0','0','49','1','0','0','Fulgorge - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Enable Dynamic Movement on Spawn'),
-('1867803','18678','1','0','100','1','1000','1000','1000','1000','11','29147','0','48','0','0','0','0','0','0','0','0','Fulgorge - Cast Sandworm Submerge Visual OOC'),
-('1867804','18678','4','0','100','0','0','0','0','0','28','0','29147','0','28','0','33928','0','23','1','0','0','Fulgorge - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Set Phase 1 on Aggro'),
-('1867805','18678','9','5','100','1','0','30','2100','4500','11','32330','1','0','0','0','0','0','0','0','0','0','Fulgorge - Cast Poison Spit (Phase 1)'),
-('1867806','18678','9','5','100','1','30','100','500','500','11','29147','0','16','11','33928','0','0','49','1','0','0','Fulgorge - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Set Phase 2 at 30 Yards (Phase 1)'),
-('1867807','18678','9','5','100','1','30','100','500','500','23','1','0','0','0','0','0','0','0','0','0','0','Fulgorge - Enable Combat Movement at 30 Yards (Phase 1)'),
-('1867808','18678','9','3','100','1','0','8','500','500','28','0','29147','0','28','0','33928','0','49','0','0','0','Fulgorge - Remove Sandworm Submerge Visual and Remove Tunnel Bore Passive and Disable Dynamic Movement at 8 Yards (Phase 2)'),
-('1867809','18678','9','3','100','1','0','8','500','500','23','-1','0','0','0','0','0','0','0','0','0','0','Fulgorge - Set Phase 1 at 8 Yards (Phase 2)'),
-('1867810','18678','7','0','100','0','0','0','0','0','11','29147','0','21','11','33928','0','0','49','1','0','0','Fulgorge - Cast Sandworm Submerge Visual and Cast Tunnel Bore Passive and Enable Dynamic Movement on Evade'),
-('1867811','18678','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Fulgorge - Set Phase 0 on Evade'),
+-- Fulgorge 18678 - npc_burster_worm
 -- Vorakem Doomspeaker
 ('1867901','18679','9','0','100','1','0','5','6000','9000','11','9080','1','0','0','0','0','0','0','0','0','0','Vorakem Doomspeaker - Cast Hamstring'),
 ('1867902','18679','2','0','100','0','20','0','0','0','11','8599','0','1','0','0','0','0','0','0','0','0','Vorakem Doomspeaker - Cast Enrage at 20% HP'),
