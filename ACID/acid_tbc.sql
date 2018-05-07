@@ -34481,7 +34481,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-679','Hurry up with it already! The longer you take, the more of a hurtin\' I\'m putting on you!','0','1','0','17959','0'),
 ('-680','Wake up! Now get up and back to work!','0','1','0','17959','0'),
 ('-681','Too soon! You are slacking off too soon!','0','1','0','17959','0'),
-('-682','Hey!  Over here!  Yeah, over here... I\'m in this cage!!!','0','1','0','17959','0'),
+-- PLEASE RE-USE 682
 ('-683','This is terrible..... my arms grow tired from beating on you lazy peons!','0','1','0','17959','0'),
 ('-684','Get back to work you!','0','1','0','17959','0'),
 ('-685','What is this?! Didn\'t mommy and daddy teach you anything?','0','1','0','17959','0'),
