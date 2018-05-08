@@ -4108,7 +4108,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Whitetail Frenzy (16405) - NSR
 -- Ranger Krenn'an (16462) - NSR
 -- Farstrider Solanna (16463) - NSR
--- Apothecary Venustus (16464) - NSR
+-- Apothecary Venustus (16464)
+('1646401','16464','1','14','100','1','60000','300000','300000','750000','54','-898','0','0','22','1','0','0','0','0','0','0','Apothecary Venustus - Text Emote and Set Phase 1 OOC (Phase 0)'),
+('1646402','16464','1','13','100','1','3500','3500','3500','3500','5','133','0','0','22','2','0','0','0','0','0','0','Apothecary Venustus - Set Emote State and Set Phase 2 OOC (Phase 1)'),
+('1646403','16464','1','11','100','1','15800','15800','15800','15800','5','0','0','0','22','3','0','0','0','0','0','0','Apothecary Venustus - ONESHOT_NONE and Set Phase 3 OOC (Phase 2)'),
+('1646404','16464','1','7','100','1','2500','2500','2500','2500','54','-899','0','0','22','0','0','0','0','0','0','0','Apothecary Venustus - Say and Set Phase 0 OOC (Phase 3)'),
+('1646405','16464','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Apothecary Venustus - Set Phase to 0 on Evade'),
 -- Shadowpine Shadowcaster
 ('1646901','16469','9','0','100','1','0','20','11000','15000','11','16568','1','0','0','0','0','0','0','0','0','0','Shadowpine Shadowcaster - Cast Mind Flay'),
 ('1646902','16469','0','0','100','1','5000','9000','9000','13000','11','31394','4','33','0','0','0','0','0','0','0','0','Shadowpine Shadowcaster - Cast Mark of Shadow'),
@@ -34617,7 +34622,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-895','There is no escape for you. The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','1535','0'),
 ('-896','You carry the taint of the scourge. Prepare to enter the twisting nether.','0','0','0','1535','0'),
 ('-897','The light condemns all who harbor evil. Now you will die!','0','0','0','1535','0'),
--- PLEASE RE-USE 898 - 901
+('-898','%s cackles maniacally as he combines the two mixtures in his hands.','0','2','0','16464','153'),
+('-899','Drat!  This bloodthistle extract doesn\'t seem to want to combine properly with my poison.  I\'ll not be deterred - those trolls will be dealt with!  Perhaps a different mixture?','0','0','0','16464','0'),
+-- PLEASE RE-USE 900 - 901
 ('-902','What a pity you survived the crash just to die here.','0','0','0','16521','0'),
 ('-903','We won\'t allow you to leave this valley!','0','0','0','16521','0'),
 ('-904','I hope you\'ve made your peace.','0','0','0','16521','0'),
