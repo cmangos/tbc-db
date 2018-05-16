@@ -20918,9 +20918,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2060704','20607','0','5','100','0','5000','8500','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Craghide Basilisk - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
 ('2060705','20607','0','3','100','0','0','0','0','0','11','35385','1','0','54','-1017','0','0','0','0','0','0','Craghide Basilisk - Cast Threshalisk Charge and Emote (Phase 2)'),
 -- Talbuk Doe
-('2061001','20610','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Reset flag on spawn'),
-('2061002','20610','8','0','100','0','35771','1','0','0','11','40347','6','2','11','42386','0','18','18','33554432','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
-('2061003','20610','8','0','100','0','35771','1','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
+('2061001','20610','9','2','100','1','0','5','19000','26000','11','32019','1','0','0','0','0','0','0','0','0','0','Talbuk Doe - Cast Gore (Phase 0)'),
+('2061002','20610','2','0','100','0','20','0','0','0','1','-948','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Text Emote at 20% HP'),
+('2061003','20610','8','0','100','0','35771','1','0','0','11','40347','6','2','11','14915','0','0','18','256','0','0','Talbuk Doe - Cast Talbuk Tagging Credit, Cast Self Visual - Sleep Until Cancelled (DND), and Set UnitFlag on Tag Subbued Talbuk Spellhit'),
+('2061004','20610','8','0','100','0','35771','1','0','0','41','10000','0','0','47','7','0','0','22','1','0','0','Talbuk Doe - Set Stand State, Set Phase 1, and Despawn on Tag Subbued Talbuk Spellhit'),
+('2061005','20610','8','0','100','0','35771','1','0','0','50','0','0','0','21','0','0','0','0','0','0','0','Talbuk Doe - Set React State and Prevent Combat Movement on Tag Subbued Talbuk Spellhit'),
+('2061006','20610','0','0','100','0','1000','1000','0','0','1','-949','0','0','45','5','35','1','0','0','0','0','Talbuk Doe - Text Emote and Send AI Event Custom A on Aggro'),
+('2061007','20610','11','0','100','0','0','0','0','0','47','0','0','0','19','256','0','0','0','0','0','0','Talbuk Doe - Set Stand State and Remove UnitFlag on Spawn'),
 -- Shimmerwing Moth
 ('2061101','20611','0','0','100','1','9000','15000','16000','24000','11','36592','0','0','0','0','0','0','0','0','0','0','Shimmerwing Moth - Cast Shimmerwing Dust'),
 ('2061102','20611','0','0','100','1','3000','5000','11000','16000','11','32914','0','0','0','0','0','0','0','0','0','0','Shimmerwing Moth - Cast Wing Buffet'),
@@ -20968,9 +20972,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2077403','20774','8','0','100','0','35772','-1','0','0','36','20983','-1','0','11','3019','0','0','0','0','0','0','Farahlon Lasher - Change Template to Mutated Farahlon Lasher and Cast Frenzy on Energy Field Modulator Spellhit (Quest: 10426)'),
 -- Markaru 20775
 -- Talbuk Sire
-('2077701','20777','11','0','100','0','0','0','0','0','19','33554432','0','0','0','0','0','0','0','0','0','0','Talbuk Sire - Reset flag on spawn'),
-('2077702','20777','8','0','100','0','35771','1','0','0','11','40347','6','2','11','42386','0','18','18','33554432','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
-('2077703','20777','8','0','100','0','35771','1','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Talbuk Doe - Give quest credit on item spell Talbuk Tagger and sleep/despawn'),
+('2077701','20777','9','2','100','1','0','5','20000','28000','11','32023','0','0','0','0','0','0','0','0','0','0','Talbuk Sire - Cast Hoof Stomp (Phase 0)'),
+('2077702','20777','0','2','100','1','9200','17400','20200','28000','11','32020','1','0','0','0','0','0','0','0','0','0','Talbuk Sire - Cast Talbuk Strike (Phase 0)'),
+('2077703','20777','2','0','100','0','20','0','0','0','1','-948','0','0','0','0','0','0','0','0','0','0','Talbuk Sire - Text Emote at 20% HP'),
+('2077704','20777','8','0','100','0','35771','1','0','0','11','40347','6','2','11','14915','0','0','18','256','0','0','Talbuk Sire - Cast Talbuk Tagging Credit, Cast Self Visual - Sleep Until Cancelled (DND), and Set UnitFlag on Tag Subbued Talbuk Spellhit'),
+('2077705','20777','8','0','100','0','35771','1','0','0','41','10000','0','0','47','7','0','0','22','1','0','0','Talbuk Sire - Set Stand State, Set Phase 1, and Despawn on Tag Subbued Talbuk Spellhit'),
+('2077706','20777','8','0','100','0','35771','1','0','0','50','0','0','0','21','0','0','0','0','0','0','0','Talbuk Sire - Set React State and Prevent Combat Movement on Tag Subbued Talbuk Spellhit'),
+('2077707','20777','11','0','100','0','0','0','0','0','47','0','0','0','19','256','0','0','0','0','0','0','Talbuk Sire - Set Stand State and Remove UnitFlag on Spawn'),
+('2077708','20777','30','0','100','0','5','20610','0','0','1','-950','0','0','55','6','0','0','0','0','0','0','Talbuk Sire - Text Emote and Attack Start on Receive AI Event Custom A');
 -- Void Waste
 ('2077801','20778','0','0','100','1','2000','6000','7000','10000','11','36519','0','32','0','0','0','0','0','0','0','0','Void Waste - Cast Toxic Burst'),
 ('2077802','20778','8','0','100','0','35686','-1','0','0','36','20805','-1','0','0','0','0','0','0','0','0','0','Void Waste - Change Entry after (proc) Spell 35686'),
@@ -34683,7 +34692,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-945','%s shakes the dirt loose from the shell.','0','2','0','20244','0'),
 ('-946','%s picks up a sea shell.','0','2','0','20244','0'),
 ('-947','The pain...the need...I hunger for more...','0','0','10','Common Wretched Text','0'),
--- PLEASE RE-USE 948 - 958
+('-948','%s seems to have weakened.','0','2','0','20610 20777','0'),
+('-949','%s calls for the aid of a nearby male!','0','2','0','20610','0'),
+('-950','%s rushes to the aid of a nearby doe!','0','2','0','20777','0'),
+-- PLEASE RE-USE 951 - 958
 ('-959','Intruder detected! Neutralizing threat immediately!','0','0','0','18698','0'),
 ('-960','I love the smell of nether in the morning.','0','0','0','19635','1'),
 ('-961','It smells like...','0','0','0','19635','1'),
