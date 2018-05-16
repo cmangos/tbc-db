@@ -20979,7 +20979,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2077705','20777','8','0','100','0','35771','1','0','0','41','10000','0','0','47','7','0','0','22','1','0','0','Talbuk Sire - Set Stand State, Set Phase 1, and Despawn on Tag Subbued Talbuk Spellhit'),
 ('2077706','20777','8','0','100','0','35771','1','0','0','50','0','0','0','21','0','0','0','0','0','0','0','Talbuk Sire - Set React State and Prevent Combat Movement on Tag Subbued Talbuk Spellhit'),
 ('2077707','20777','11','0','100','0','0','0','0','0','47','0','0','0','19','256','0','0','0','0','0','0','Talbuk Sire - Set Stand State and Remove UnitFlag on Spawn'),
-('2077708','20777','30','0','100','0','5','20610','0','0','1','-950','0','0','55','6','0','0','0','0','0','0','Talbuk Sire - Text Emote and Attack Start on Receive AI Event Custom A');
+('2077708','20777','30','0','100','0','5','20610','0','0','1','-950','0','0','55','6','0','0','0','0','0','0','Talbuk Sire - Text Emote and Attack Start on Receive AI Event Custom A'),
 -- Void Waste
 ('2077801','20778','0','0','100','1','2000','6000','7000','10000','11','36519','0','32','0','0','0','0','0','0','0','0','Void Waste - Cast Toxic Burst'),
 ('2077802','20778','8','0','100','0','35686','-1','0','0','36','20805','-1','0','0','0','0','0','0','0','0','0','Void Waste - Change Entry after (proc) Spell 35686'),
