@@ -31038,10 +31038,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Attumen the Huntsman (15550) - boss_attumen
 -- Spectral Stable Hand
 ('1555101','15551','9','0','100','3','0','5','11000','15000','11','18812','4','0','0','0','0','0','0','0','0','0','Spectral Stable Hand - Cast Knockdown'),
-('1555102','15551','0','0','100','3','4000','8000','45000','48000','11','6016','1','1','0','0','0','0','0','0','0','0','Spectral Stable Hand - Cast Pierce Armor'),
-('1555103','15551','14','0','100','3','38400','30','21000','28000','11','29339','6','1','11','29340','6','0','0','0','0','0','Spectral Stable Hand - Cast Healing Touch and Whip Rage on Friendlies'),
+('1555102','15551','0','0','100','3','4000','8000','45000','48000','11','6016','1','0','0','0','0','0','0','0','0','0','Spectral Stable Hand - Cast Pierce Armor'),
+('1555103','15551','0','0','100','3','5000','10000','21000','28000','11','29339','0','0','0','0','0','0','0','0','0','0','Spectral Stable Hand - Cast Healing Touch on Spectral Charger/Stallion'),
 ('1555104','15551','6','0','100','2','0','0','0','0','1','-40','-41','0','0','0','0','0','0','0','0','0','Spectral Stable Hand - Random Say on Death'),
 ('1555105','15551','4','0','25','2','0','0','0','0','1','-1457','-1458','0','0','0','0','0','0','0','0','0','Spectral Stable Hand - Random Say on Aggro'),
+('1555106','15551','0','0','100','3','8000','12000','30000','40000','11','29340','0','0','0','0','0','0','0','0','0','0','Spectral Stable Hand - Cast Whip Rage on Spectral Charger/Stallion'),
 -- Moroes (15687) - boss_moroes
 -- Terestian Illhoof (15688) - boss_terestian_illhoof
 -- Netherspite (15689) - boss_netherspite
