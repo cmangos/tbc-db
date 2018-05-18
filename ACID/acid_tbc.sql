@@ -31377,9 +31377,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1726705','17267','3','5','100','2','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Fiendish Imp - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1726706','17267','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Fiendish Imp - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1726707','17267','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Fiendish Imp - Set Phase to 0 on Evade'),
--- Astral Spark
-('1728301','17283','0','0','100','3','1000','3000','3000','5000','11','29864','0','0','0','0','0','0','0','0','0','0','Astral Spark - Cast Sear'),
-('1728302','17283','2','0','100','2','30','0','0','0','11','29876','0','1','0','0','0','0','0','0','0','0','Astral Spark - Cast Detonate at 30% HP'),
+-- Astral Spark 17283
+('1728301','17283','11','0','100','2','0','0','0','0','11','29876','0','0','0','0','0','0','0','0','0','0','Astral Spark - Cast Detonate on Spawn'),
+('1728302','17283','0','0','100','3','500','500','1000','1000','11','29864','0','0','0','0','0','0','0','0','0','0','Astral Spark - Cast Sear'),
+('1728303','17283','29','0','100','2','7000','7000','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Astral Spark - Die'),
 -- Nether Portal - Serenity 17367 - npc_netherspite_portal
 -- Nether Portal - Dominance 17368 - npc_netherspite_portal
 -- Nether Portal - Perseverence 17369 - npc_netherspite_portal
