@@ -4932,6 +4932,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2499908','24999','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Irespeaker - Set Phase to 0 on Evade'),
 -- Abyssal Flamewalker 25001
 ('2500101','25001','0','0','100','1','2000','4000','4000','8000','11','45227','1','0','0','0','0','0','0','0','0','0','Abyssal Flamewalker - Cast Abyssal Meteor Fall'),
+('2500102','25001','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Abyssal Flamewalker - Remove Immolation on Death'),
 -- Unleashed Hellion
 ('2500201','25002','0','0','100','1','17000','17000','28000','28000','11','11876','0','0','0','0','0','0','0','0','0','0','Unleashed Hellion - Cast War Stomp'),
 ('2500202','25002','0','0','100','1','18000','18000','28000','28000','11','20754','1','0','0','0','0','0','0','0','0','0','Unleashed Hellion - Cast Rain of Fire'),
@@ -18086,6 +18087,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1996303','19963','0','0','100','1','6000','12000','12000','17000','11','34017','4','0','0','0','0','0','0','0','0','0','Doomcryer - Cast Rain of Chaos'),
 -- Abyssal Flamebringer 19973
 ('1997301','19973','0','0','100','1','6000','15000','18000','28000','11','37633','1','0','0','0','0','0','0','0','0','0','Abyssal Flamebringer - Cast Abyssal Strike'),
+('1997302','19973','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Abyssal Flamebringer - Remove Immolation on Death'),
 -- Deathforge Over-Smith
 ('1997801','19978','0','0','100','1','5000','11000','12000','15000','11','36486','1','0','0','0','0','0','0','0','0','0','Deathforge Over-Smith - Cast Slime Spray'),
 ('1997802','19978','0','0','100','1','8000','12000','16000','19000','11','37615','0','0','0','0','0','0','0','0','0','0','Deathforge Over-Smith - Cast Toxic Slime'),
@@ -19590,7 +19592,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- General Krakork
 ('1925501','19255','1','0','100','1','150000','150000','150000','150000','1','-302','-303','-1129','5','5','0','0','0','0','0','0','General Krakork - Random Gossip Speech and Emote'),
 -- Infernal Invader 19259
+('1925901','19259','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Infernal Invader - Remove Immolation on Death'),
 -- Infernal Warbringer 19261
+('1926101','19261','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Infernal Warbringer - Remove Immolation on Death'),
 -- Warboss Nekrogg
 ('1926301','19263','9','0','100','1','0','5','5000','8000','11','34113','1','0','0','0','0','0','0','0','0','0','Warboss Nekrogg - Cast Bonechewer Bite'),
 -- Force-Commander Gorax 19264 (3.0.3 Official Data - Logs Only)
@@ -19794,6 +19798,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2014501','20145','9','0','100','1','0','5','5000','9000','11','33914','1','0','0','0','0','0','0','0','0','0','Unstable Voidwalker - Cast Shadowstrike'),
 -- Magister Aledis 20159 - npc_magister_aledis
 -- Infernal Defender 20160
+('2016001','20160','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Infernal Defender - Remove Immolation on Death'),
 -- Runetog Wildhammer
 ('2023401','20234','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Runetog Wildhammer - Summon Enraged Gryphons and Yell on Aggro'),
 -- Razorsaw
@@ -21285,6 +21290,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1869502','18695','0','0','100','1','8000','16000','18000','24000','11','38916','0','0','0','0','0','0','0','0','0','0','Ambassador Jerrikar - Cast Diplomatic Immunity'),
 ('1869503','18695','0','0','100','1','9000','12000','14000','19000','11','38913','4','0','0','0','0','0','0','0','0','0','Ambassador Jerrikar - Cast Silence'),
 -- Kraator 18696
+('1869601','18696','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Kraator - Remove Immolation on Death'),
 -- Brubeck Stormfoot
 ('1893901','18939','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Brubeck Stormfoot - Summon Enraged Gryphons and Yell on Aggro'),
 -- Drek'Gol
@@ -21318,7 +21324,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Infernal Soul
 ('1975701','19757','9','0','100','1','0','8','8400','14500','11','11969','0','0','0','0','0','0','0','0','0','0','Infernal Soul - Cast Fire Nova'),
 -- Newly Crafted Infernal 19759
+('1975901','19759','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Newly Crafted Infernal - Remove Immolation on Death'),
 -- Cooling Infernal 19760
+('1976001','19760','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Cooling Infernal - Remove Immolation on Death'),
 -- Coilskar Defender
 ('1976201','19762','13','0','100','1','10000','15000','0','0','11','38233','1','0','0','0','0','0','0','0','0','0','Coilskar Defender - Cast Shield Bash on Target Casting'),
 ('1976202','19762','2','0','100','1','25','0','25000','45000','11','38031','0','0','22','1','0','0','0','0','0','0','Coilskar Defender - Cast Shield Block and Set Phase 1 When Below 25% HP'),
@@ -21456,6 +21464,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2108001','21080','4','0','100','0','0','0','0','0','3','19759','0','0','11','12743','0','32','28','0','36055','0','Dormant Infernal - Morph into Newly Crafted Infernal and Cast Immolation and Remove Stationary Infernal Ball on Aggro'),
 ('2108002','21080','1','0','100','0','0','0','0','0','3','0','0','0','28','0','12743','0','0','0','0','0','Dormant Infernal - Demorph and Remove Immolation OCC'),
 ('2108003','21080','11','0','100','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Dormant Infernal - REACT_DEFENSIVE on Spawn'),
+('2108004','21080','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Dormant Infernal - Remove Immolation on Death'),
 -- Uvuros
 ('2110201','21102','32','0','100','1','0','20','30000','55000','11','37939','0','0','0','0','0','0','0','0','0','0','Uvuros - Cast Terrifying Roar'),
 ('2110202','21102','9','0','100','1','0','20','12000','20000','11','38361','0','0','0','0','0','0','0','0','0','0','Uvuros - Cast Double Breath'),
@@ -21566,6 +21575,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2131504','21315','2','0','100','1','30','0','7000','9000','11','35871','1','1','0','0','0','0','0','0','0','0','Scarlet Commander Rodrick - Cast Spellbreaker at 30% HP'),
 ('2131505','21315','6','0','100','0','0','0','0','0','43','0','0','0','12','22106','0','120000','0','0','0','0','Ruul the Darkener - Dismount and Summon Eye of the Citadel on Death'),
 -- Deathforged Infernal 21316
+('2131601','21316','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Deathforged Infernal - Remove Immolation on Death'),
 -- Spirit Hunter
 ('2133201','21332','11','0','100','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Spirit Hunter - Set Defensive State on Spawn'),
 -- Veneratus Spawn Node 21334 - npc_veneratus_spawn_node
@@ -22005,6 +22015,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2298901','22989','9','0','100','1','0','10','8000','16000','11','39954','0','0','0','0','0','0','0','0','0','0','Maiev Shadowsong  - Cast Fan of Blades'),
 ('2298902','22989','0','0','100','1','9000','18000','16000','24000','11','32920','0','0','0','0','0','0','0','0','0','0','Maiev Shadowsong  - Cast Warp'),
 -- Karabor Infernal 23044
+('2304401','23044','6','0','100','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Karabor Infernal - Remove Immolation on Death'),
 -- Or'kaos the Insane 23168
 ('2316801','23168','0','0','100','1','5000','9000','10000','12000','11','10966','1','0','0','0','0','0','0','0','0','0','Or\'kaos the Insane - Cast Uppercut'),
 ('2316802','23168','0','0','100','1','3000','5000','6000','10000','11','15496','1','0','0','0','0','0','0','0','0','0','Or\'kaos the Insane - Cast Cleave'),
