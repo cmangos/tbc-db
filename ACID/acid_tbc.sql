@@ -4600,6 +4600,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Milstaff Stormeye 2489
 -- Sara Balloo 2695
 -- Durtham Greldon 2737
+-- King Magni Bronzebeard 2784
+('278401','2784','4','0','100','0','0','0','0','0','4','5896','0','0','0','0','0','0','0','0','0','0','King Magni Bronzebeard - Play Sound 5896 on Aggro'),
+('278402','2784','0','0','100','1','5000','7000','25000','30000','11','19135','0','0','0','0','0','0','0','0','0','0','King Magni Bronzebeard - Cast Avatar'),
+('278403','2784','0','0','100','1','8000','10000','20000','30000','11','20686','1','0','0','0','0','0','0','0','0','0','King Magni Bronzebeard - Cast Knock Away'),
+('278404','2784','0','0','100','1','12000','15000','15000','20000','11','20685','4','0','0','0','0','0','0','0','0','0','King Magni Bronzebeard - Cast Storm Bolt'),
 -- Gerrig Bonegrip 2786
 -- Grand Mason Marblesten 2790
 -- Hammertoe's Spirit 2915
@@ -4708,6 +4713,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Demnul Farmountain 7298
 -- Dink 7312
 -- Lyon Mountainheart 7936
+-- High Tinker Mekkatorque 7937
+('793701','7937','4','0','100','0','0','0','0','0','4','5897','0','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Play Sound 5897 on Aggro'),
+('793702','7937','5','0','100','0','0','0','0','0','4','7255','0','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Play Sound 7255 on Player Kill'),
+('793703','7937','0','0','100','1','3000','5000','15000','18000','11','9143','5','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Cast Bomb'),
+('793704','7937','0','0','100','1','9000','11000','16000','19000','11','22739','0','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Cast Goblin Dragon Gun'),
+('793705','7937','0','0','100','1','6000','8000','20000','25000','11','22742','1','0','0','0','0','0','0','0','0','0','High Tinker Mekkatorque - Cast Super Shrink Ray'),
 -- Tinkmaster Overspark 7944
 -- Master Mechanic Castpipe 7950
 -- Thalgus Thunderfist 7976
@@ -5812,13 +5823,27 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Drathen  16780
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Yatheon  16782
--- Halduron Brightwing
+-- Grand Magister Rommath 16800
+('1680001','16800','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Grand Magister Rommath - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1680002','16800','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Grand Magister Rommath - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1680003','16800','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Grand Magister Rommath - Disable Dynamic Movement at 0-8 Yards'),
+('1680004','16800','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Grand Magister Rommath - Set Phase 0 on Evade'),
+('1680005','16800','9','13','100','1','0','100','3400','4800','11','33417','1','0','0','0','0','0','0','0','0','0','Grand Magister Rommath - Cast Fireball (Phase 1)'),
+('1680006','16800','0','13','100','1','8000','12000','12000','16000','11','33452','4','1','0','0','0','0','0','0','0','0','Grand Magister Rommath - Cast Flamestrike (Phase 1)'),
+('1680007','16800','27','0','100','1','35915','1','15000','30000','11','35915','0','1','0','0','0','0','0','0','0','0','Grand Magister Rommath - Cast Molten Armor on Missing Buff'),
+-- Halduron Brightwing 16801
 ('1680101','16801','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Halduron Brightwing - Enable Dynamic Movement and Prevent Melee on Aggro'),
-('1680102','16801','9','0','100','1','5','30','2300','3900','11','15620','1','0','40','2','0','0','0','0','0','0','Halduron Brightwing - Cast Shoot and Set Ranged Weapon Model'),
-('1680103','16801','0','0','100','1','7000','12000','12000','16000','11','21390','4','1','40','2','0','0','0','0','0','0','Halduron Brightwing - Cast Multi-Shot and Set Ranged Weapon Model'),
+('1680102','16801','9','0','100','1','5','30','2300','3900','11','20463','1','0','40','2','0','0','0','0','0','0','Halduron Brightwing - Cast Shoot and Set Ranged Weapon Model'),
+('1680103','16801','0','0','100','1','7000','12000','8000','12000','11','21390','4','1','40','2','0','0','0','0','0','0','Halduron Brightwing - Cast Multi-Shot and Set Ranged Weapon Model'),
 ('1680104','16801','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Halduron Brightwing - Enable Dynamic Movement at 9-80 Yards'),
 ('1680105','16801','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Halduron Brightwing - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1680106','16801','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Halduron Brightwing - Set Melee Weapon Model on Evade'),
+('1680107','16801','0','0','100','1','5000','7000','5000','9000','11','15284','1','0','0','0','0','0','0','0','0','0','Halduron Brightwing - Cast Cleave'),
+-- Lor'themar Theron 16802
+('1680201','16802','0','0','100','1','5000','7000','5000','9000','11','15284','1','0','0','0','0','0','0','0','0','0','Lor''themar Theron - Cast Cleave'),
+-- ('1680202','16802','0','0','100','1','5000','7000','5000','9000','11','59715','4','0','0','0','0','0','0','0','0','0','Lor''themar Theron - Cast Arcane Shock'),
+('1680203','16802','0','0','100','1','8000','11000','10000','13000','11','33385','4','0','0','0','0','0','0','0','0','0','Lor''themar Theron - Cast Mana Burn'),
+('1680204','16802','0','0','100','1','22000','24000','44000','48000','11','33384','0','0','0','0','0','0','0','0','0','0','Lor''themar Theron - Cast Mass Charm'),
 -- Festival Talespinner (16818) - NSR
 -- Honor Hold Target Dummy Middle (16897) - NSR
 -- Broom (17213) - NSR
@@ -6339,7 +6364,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Keldric Boucher  1257
 -- Kyra Boucher  1275
 -- Archbishop Benedictus
-('128401','1284','4','0','100','0','0','0','0','0','4','5883','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Say on Aggro'),
+('128401','1284','4','0','100','0','0','0','0','0','4','5883','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Play Sound 5883 on Aggro'),
 ('128402','1284','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Archbishop Benedictus - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('128403','1284','9','13','100','1','8','40','3400','4800','11','20695','1','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Holy Smite (Phase 1)'),
 ('128404','1284','9','13','100','1','0','5','12000','19000','11','20694','0','0','0','0','0','0','0','0','0','0','Archbishop Benedictus - Cast Holy Nova (Phase 1)'),
@@ -11148,7 +11173,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vindicator Aalesia (17433) - NSR
 -- Morae (17434) - NSR
 -- Skunk (17467) - NSR
--- Prophet Velen (17468) - (WORLD BOSS SCRIPT)
+-- Prophet Velen 17468
+('1746801','17468','4','0','100','0','0','0','0','0','4','10154','0','0','0','0','0','0','0','0','0','0','Prophet Velen - Play Sound 10154 on Aggro'),
+-- ('1746802','17468','0','0','100','1','0','0','3000','4500','11','59703','1','0','0','0','0','0','0','0','0','0','Prophet Velen - Cast Holy Smite'),
+-- ('1746803','17468','0','0','100','1','8000','9000','12000','18000','11','59700','1','1','0','0','0','0','0','0','0','0','Prophet Velen - Cast Holy Blast'),
+-- ('1746804','17468','0','0','100','1','11000','12000','20000','25000','11','59701','0','1','0','0','0','0','0','0','0','0','Prophet Velen - Cast Holy Nova'),
+('1746805','17468','0','0','100','1','5000','7000','6000','8000','11','33542','1','0','0','0','0','0','0','0','0','0','Prophet Velen - Cast Staff Strike'),
+-- ('1746806','17468','0','0','100','1','14000','16000','24000','28000','11','59698','0','1','0','0','0','0','0','0','0','0','Prophet Velen - Cast Prayer of Healing'),
 -- Zevrax
 ('1749401','17494','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Zevrax - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1749402','17494','9','5','100','1','0','40','3400','4800','11','20791','1','0','0','0','0','0','0','0','0','0','Zevrax - Cast Shadow Bolt (Phase 1)'),
@@ -13286,6 +13317,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Archmage Tervosh
 ('496701','4967','0','0','100','1','1000','1000','1800000','1800000','11','7120','0','1','0','0','0','0','0','0','0','0','Archmage Tervosh - Cast Proudmoore\'s Defense'),
 ('496702','4967','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Archmage Tervosh - Flee at 15% HP'),
+-- Lady Jaina Proudmoore 4968
+('496801','4968','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','4','5882','0','0','Lady Jaina Proudmoore - Enable Dynamic Movement and Set Phase 1 and Play Sound 5882 on Aggro'),
+('496802','4968','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('496803','4968','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Disable Dynamic Movement at 0-8 Yards'),
+('496804','4968','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Set Phase 0 on Evade'),
+('496805','4968','9','13','100','1','0','50','2000','3500','11','20692','1','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Fireball (Phase 1)'),
+('496806','4968','0','13','100','1','4000','5000','45000','55000','11','20681','0','1','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Summon Water Elementals (Phase 1)'),
+('496807','4968','0','13','100','1','5000','9000','15000','17000','11','20679','4','0','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Fire Blast (Phase 1)'),
+('496808','4968','0','13','100','1','8000','12000','25000','28000','11','20680','4','1','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Blizzard (Phase 1)'),
+('496809','4968','2','13','100','1','50','0','14000','21000','11','20682','4','1','0','0','0','0','0','0','0','0','Lady Jaina Proudmoore - Cast Teleport at 50% HP (Phase 1)'),
 -- Kagoro (4972) - NSR
 -- Guard Lasiter
 ('497301','4973','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Guard Lasiter - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
@@ -15060,6 +15101,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Xon'cha 9988
 -- Xao'tsu 10088
 -- Ug'thok 10266
+-- Vol'jin 10540
+('1054001','10540','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','4','5881','0','0','Vol''jin - Enable Dynamic Movement and Set Phase 1 and Play Sound 5881 on Aggro'),
+('1054002','10540','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Vol''jin - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1054003','10540','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Vol''jin - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
+('1054004','10540','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Vol''jin - Set Phase 0 and Set Melee Weapon Model on Evade'),
+('1054005','10540','9','13','100','1','5','30','2300','3900','11','20463','1','0','40','2','0','0','0','0','0','0','Vol''jin - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('1054006','10540','0','13','100','1','12000','14000','22000','26000','11','17820','0','0','0','0','0','0','0','0','0','0','Vol''jin - Cast Veil of Shadow (Phase 1)'),
+('1054007','10540','0','13','100','1','3000','5000','14000','16000','11','17146','4','32','0','0','0','0','0','0','0','0','Vol''jin - Cast Shadow Word: Pain (Phase 1)'),
+('1054008','10540','0','13','100','1','6000','8000','8000','12000','11','17289','4','0','0','0','0','0','0','0','0','0','Vol''jin - Cast Shadow Shock (Phase 1)'),
+('1054009','10540','0','13','100','1','8000','12000','18000','22000','11','16097','0','0','0','0','0','0','0','0','0','0','Vol''jin - Cast Hex (Phase 1)'),
 -- Warcaller Gorlach 10880
 -- Roxxik 11017
 -- Whuut 11046
@@ -16595,6 +16646,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Keldas 3306
 -- Tenaron Stormgrip 3514
 -- Corithras Moonrage 3515
+-- Arch Druid Fandral Staghelm 3516
+('351601','3516','0','0','100','1','0','0','2000','3000','11','20698','1','0','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Wrath'),
+('351602','3516','0','0','100','1','3000','5000','25000','35000','11','20702','0','1','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Summon Treant Allies'),
+('351603','3516','0','0','100','1','8000','12000','26000','30000','11','20701','0','1','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Rejuvenation'),
+('351604','3516','0','0','100','1','5000','7000','17000','21000','11','20699','1','0','0','0','0','0','0','0','0','0','Arch Druid Fandral Staghelm - Cast Entangling Roots'),
 -- Sentinel Arynia Cloudsbreak 3519
 -- Blackmoss the Fetid 3535
 -- Tallonkai Swiftroot 3567
@@ -30591,11 +30647,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Druid of the Claw
 ('379501','3795','14','0','100','3','15000','40','15000','18000','11','31782','6','0','0','0','0','0','0','0','0','0','Druid of the Claw - Cast Rejuvenation on Friendlies'),
 -- Rat (4075) - NSR
--- Tyrande Whisperwind
-('799901','7999','9','0','100','3','0','15','6000','8000','11','20691','1','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Cleave'),
-('799902','7999','9','0','100','3','0','30','16000','21000','11','20687','4','1','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Starfall'),
-('799903','7999','0','0','100','3','9000','12000','17000','22000','11','20690','5','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Moonfire'),
-('799904','7999','0','0','100','3','11000','14000','9000','12000','11','20688','2','1','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Searing Arrow'),
+-- Tyrande Whisperwind 7999
+('799901','7999','4','0','100','2','0','0','0','0','4','5885','0','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Play Sound 5885 on Aggro'),
+('799902','7999','0','0','100','3','5000','7000','6000','8000','11','20691','1','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Cleave'),
+('799903','7999','0','0','100','3','6000','8000','16000','21000','11','20687','0','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Starfall'),
+('799904','7999','0','0','100','3','9000','12000','17000','22000','11','20690','4','34','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Moonfire'),
+('799905','7999','0','0','100','3','11000','14000','9000','12000','11','20688','4','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Searing Arrow'),
 -- Echo of Archimonde
 ('1308301','13083','1','0','100','2','15000','15000','0','0','1','-216','0','0','0','0','0','0','0','0','0','0','Echo of Archimonde - Yell 15 Seconds after Spawn'),
 -- Rage Winterchill
