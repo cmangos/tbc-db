@@ -7172,6 +7172,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodsail Deckhand
 ('450501','4505','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodsail Deckhand - Flee at 15% HP'),
 -- Booty Bay Bruiser 4624 - guard_contested
+('462401','4624','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Booty Bay Bruiser - Cast Net'),
 -- Se'Jib 7871 - npc_prof_leather
 -- Gluggle
 ('1448701','14487','0','0','100','1','15600','15600','32000','35000','11','6306','0','0','0','0','0','0','0','0','0','0','Gluggle - Cast Acid Splash'),
@@ -16385,7 +16386,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('939701','9397','1','0','100','1','1000','1000','600000','600000','11','12550','0','1','0','0','0','0','0','0','0','0','Living Storm - Cast Lightning Shield on Spawn'),
 ('939702','9397','27','0','100','1','12550','1','5000','5000','11','12550','0','1','0','0','0','0','0','0','0','0','Living Storm - Cast Lightning Shield on Missing Lightning Shield Aura Stack'),
 -- Aquementas (9453) - mob_aquementas
--- Gadgetzan Bruiser (9460) - guard_contested
+-- Gadgetzan Bruiser 9460 - guard_contested
+('946001','9460','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Gadgetzan Bruiser - Cast Net'),
 -- Yorba Screwspigot (9706) - NSR
 -- Laziphus (9985) - NSR
 -- Prospector Ironboot (10460) - NSR
@@ -17052,6 +17054,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Owatanka
 ('347301','3473','0','0','100','1','7000','15000','10000','18000','11','6254','1','0','0','0','0','0','0','0','0','0','Owatanka - Cast Chained Bolt'),
 -- Ratchet Bruiser 3502 - guard_contested
+('350201','3502','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Ratchet Bruiser - Cast Net'),
 -- Devrak
 ('361501','3615','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Devrak - Summon Enraged Wyverns and Yell on Aggro'),
 -- Silithid Creeper Egg
@@ -17904,7 +17907,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Himmik 11187
 -- Evie Whirlbrew 11188
 -- Qia 11189
--- Everlook Bruiser 11190   guard_contested
+-- Everlook Bruiser 11190 - guard_contested
+('1119001','11190','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Everlook Bruiser - Cast Net'),
 -- Lilith the Lithe 11191   npc_prof_blacksmith
 -- Kilram 11192   npc_prof_blacksmith
 -- Seril Scourgebane 11193   npc_prof_blacksmith
@@ -20935,10 +20939,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kirin'Var Ghost 20480
 -- Image of Commander Ameer 20482
 -- Naberius 20483
--- Area 52 Big Bruiser
-('2048401','20484','9','0','100','1','0','20','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Area 52 Big Bruiser - Cast Net'),
--- Area 52 Bruiser
-('2048501','20485','9','0','100','1','0','20','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Area 52 Bruiser - Cast Net'),
+-- Area 52 Big Bruiser 20484
+('2048401','20484','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Area 52 Big Bruiser - Cast Net'),
+-- Area 52 Bruiser 20485
+('2048501','20485','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Area 52 Bruiser - Cast Net'),
 -- Skeletal Stallion
 ('2049501','20495','9','0','100','1','8','25','15000','21000','11','22911','1','0','0','0','0','0','0','0','0','0','Skeletal Stallion - Cast Charge'),
 ('2049502','20495','0','0','100','1','11000','13000','12000','16000','11','11978','1','0','0','0','0','0','0','0','0','0','Skeletal Stallion - Cast Kick'),
