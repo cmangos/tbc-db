@@ -26689,13 +26689,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hellfire Citadel: Hellfire Ramparts
 -- ===================================
 -- Bonechewer Hungerer (3.0.3 Official Data - Normal Log Only)
-('1725901','17259','4','0','10','6','100','0','0','0','1','-158','-181','-672','0','0','0','0','0','0','0','0','Bonechewer Hungerer - Random Say on Aggro'),
+('1725901','17259','4','0','10','38','100','0','0','0','1','-158','-159','-160','1','-181','0','0','0','0','0','0','Bonechewer Hungerer - Random Say on Aggro'),
 ('1725902','17259','9','0','100','7','0','5','2400','5800','11','14516','1','0','0','0','0','0','0','0','0','0','Bonechewer Hungerer - Cast Strike'),
 ('1725903','17259','0','0','100','7','1300','9200','30100','34100','11','16244','0','1','0','0','0','0','0','0','0','0','Bonechewer Hungerer - Cast Demoralizing Shout'),
 ('1725904','17259','0','0','100','7','3600','15400','5600','24100','11','6713','1','1','0','0','0','0','0','0','0','0','Bonechewer Hungerer - Cast Disarm'),
 ('1725905','17259','2','0','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bonechewer Hungerer - Flee at 15% HP'),
 -- Bonechewer Ravener (3.0.3 Official Data - Normal Log Only)
-('1726401','17264','4','0','20','6','0','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bonechewer Ravener - Random Say on Aggro'),
+('1726401','17264','4','0','20','38','0','0','0','0','1','-156','-181','-160','1','-159','-158','0','0','0','0','0','Bonechewer Ravener - Random Say on Aggro'),
 ('1726402','17264','0','0','100','7','3200','8800','20100','30100','11','30621','1','0','13','-40','1','0','0','0','0','0','Bonechewer Ravener - Cast Kidney Shot and Reduce Aggro'),
 -- Bleeding Hollow Darkcaster (3.0.3 Official Data - Normal Log Only)
 ('1726901','17269','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -26707,8 +26707,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1726907','17269','3','3','100','7','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1726908','17269','0','0','100','3','11600','31300','22700','45500','11','20754','4','1','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Normal) - Cast Rain of Fire'),
 ('1726909','17269','0','0','100','5','11600','31300','22700','45500','11','36808','4','1','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster (Heroic) - Cast Rain of Fire'),
+('1726910','17269','4','0','15','6','0','0','0','0','1','-181','-160','0','0','0','0','0','0','0','0','0','Bleeding Hollow Darkcaster - Text on Aggro'),
 -- Bleeding Hollow Archer (3.0.3 Official Data - Normal Log Only)
-('1727001','17270','4','0','10','6','100','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bleeding Hollow Archer - Random Say on Aggro'),
+('1727001','17270','4','0','10','6','100','0','0','0','1','-156','-181','-160','0','0','0','0','0','0','0','0','Bleeding Hollow Archer - Random Say on Aggro'),
 ('1727002','17270','4','0','100','6','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Bleeding Hollow Archer - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1727003','17270','9','0','100','3','5','30','2300','5000','11','18651','1','0','40','2','0','0','0','0','0','0','Bleeding Hollow Archer (Normal) - Cast Multi Shot and Set Ranged Weapon Model'),
 ('1727004','17270','9','0','100','5','5','30','2300','5000','11','31942','1','0','40','2','0','0','0','0','0','0','Bleeding Hollow Archer (Heroic) - Cast Multi Shot and Set Ranged Weapon Model'),
@@ -26717,7 +26718,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1727007','17270','0','0','100','7','12100','15300','13300','18200','11','30614','1','1','40','2','0','0','0','0','0','0','Bleeding Hollow Archer - Cast Aimed Shot'),
 ('1727008','17270','7','0','100','6','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Archer - Set Melee Weapon Model on Evade'),
 -- Bonechewer Destroyer (3.0.3 Official Data - Normal Log Only)
-('1727101','17271','4','0','20','6','0','0','0','0','1','-156','-181','-674','0','0','0','0','0','0','0','0','Bonechewer Destroyer - Random Say on Aggro'),
+('1727101','17271','4','0','20','38','0','0','0','0','1','-156','-181','-158','1','-160','0','0','0','0','0','0','Bonechewer Destroyer - Random Say on Aggro'),
 ('1727102','17271','9','0','100','7','0','5','6100','21400','11','16856','1','0','0','0','0','0','0','0','0','0','Bonechewer Destroyer - Cast Mortal Strike'),
 ('1727103','17271','0','0','100','7','19300','31400','11100','32200','11','10101','1','1','0','0','0','0','0','0','0','0','Bonechewer Destroyer - Cast Knock Away and Reduce Threat'),
 -- Shattered Hand Warhound (3.0.3 Official Data - Normal Log Only)
@@ -26738,14 +26739,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1745501','17455','4','0','100','6','0','0','0','0','1','-179','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster - Yell on Aggro'),
 ('1745502','17455','0','0','100','7','4200','12400','15200','20500','11','9128','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster - Cast Battle Shout'),
 ('1745503','17455','0','0','100','7','1200','10400','10800','21700','11','10966','1','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster - Cast Uppercut'),
-('1745504','17455','0','0','100','2','20000','20000','0','0','1','-180','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Normal) - Yell For Summon Shattered Hand Warhounds'),
-('1745505','17455','0','0','100','4','17000','17000','0','0','1','-180','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Heroic) - Yell For Summon Shattered Hand Warhounds'),
+('1745504','17455','0','0','100','2','20000','20000','0','0','1','-180','-486','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Normal) - Yell For Summon Shattered Hand Warhounds'),
+('1745505','17455','0','0','100','4','17000','17000','0','0','1','-180','-486','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Heroic) - Yell For Summon Shattered Hand Warhounds'),
 ('1745506','17455','0','0','100','2','20100','20100','0','0','32','17280','1','16','32','17280','1','17','32','17280','1','18','Bonechewer Beastmaster (Normal) - Summon 3 Shattered Hand Warhounds'),
 ('1745507','17455','0','0','100','4','17100','17100','0','0','32','17280','1','16','32','17280','1','17','32','17280','1','18','Bonechewer Beastmaster (Heroic) - Summon 3 Shattered Hand Warhounds'),
 ('1745508','17455','0','0','25','2','20100','20100','0','0','32','17280','1','19','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Normal) - Summon 4th Shattered Hand Warhound'),
 ('1745509','17455','0','0','75','4','17100','17100','0','0','32','17280','1','19','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Heroic) - Summon 4th Shattered Hand Warhound'),
+('1745510','17455','4','0','15','6','0','0','0','0','1','-157','-487','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster - Say on Aggro'),
 -- Bleeding Hollow Scryer (3.0.3 Official Data - Normal Log Only)
-('1747801','17478','4','0','10','6','100','0','0','0','1','-156','-181','-672','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Random Say on Aggro'),
+('1747801','17478','4','0','10','6','100','0','0','0','1','-156','-181','-160','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer - Random Say on Aggro'),
 ('1747802','17478','4','0','100','6','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bleeding Hollow Scryer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1747803','17478','9','5','100','3','0','40','3600','4800','11','12471','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer (Normal) - Cast Shadowbolt (Phase 1)'),
 ('1747804','17478','9','5','100','5','0','40','3100','4700','11','15232','1','0','0','0','0','0','0','0','0','0','Bleeding Hollow Scryer (Heroic) - Cast Shadowbolt (Phase 1)'),
@@ -26758,6 +26760,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hellfire Sentry (3.0.3 Official Data - Normal Log Only)
 ('1751701','17517','0','0','100','7','1200','7900','20800','24100','11','30621','1','0','0','0','0','0','0','0','0','0','Hellfire Sentry - Cast Kidney Shot'),
 ('1751702','17517','6','0','100','6','0','0','0','0','34','2','4','0','0','0','0','0','0','0','0','0','Hellfire Sentry - Set Instance Data on Death'),
+('1751703','17517','4','0','33','6','0','0','0','0','54','-487','0','0','0','0','0','0','0','0','0','0','Hellfire Sentry - Say on Aggro'),
 -- Nazan (17536) - NSR
 -- Vazruden (17537) - boss_vazruden
 -- Fiendish Hound (3.0.3 Official Data - Normal Log Only)
@@ -34071,11 +34074,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-153','%s strength fades!','0','2','0','17725','0'),
 ('-154','Illidan reigns!','0','0','0','17727','0'),
 ('-155','%s begins to arm the Proximity Bomb!','0','2','0','17414','0'),
-('-156','The blood is our power!','0','0','1','17491','0'),
-('-157','Lok Narash!','0','0','0','17370','0'),
-('-158','For Kargath! For Victory!','0','0','1','17397','0'),
-('-159','Lok\'tar Illidari!','0','0','0','17397','0'),
-('-160','This world is OURS!','0','0','0','17397','0'),
+('-156','The blood is our power!','0','0','1','17264/17270/17271/17478/17491','0'),
+('-157','Lok narash!','0','0','0','17370/17455','0'),
+('-158','For Kargath!  For Victory!','0','0','0','17259/17264/17271/17397','0'),
+('-159','Lok\'tar Illidari!','0','0','0','17259/17264/17397','0'), -- Lok\'tar Illadari! (Sniff)
+('-160','This world is OURS!','0','0','0','17259/17264/17269/17270/17271/17478/17397','0'),
 ('-161','A living $r... soon to be a dead like me.','0','0','0','Common Undead Text','0'),
 ('-162','Mmm... I love my delicious Southshore stout.','0','0','0','2440','0'),
 ('-163','Slay them, my brethren! For the Scourge!','5822','1','0','7357','0'),
@@ -34094,9 +34097,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-176','Little creature made of flesh, your wish is granted! Death comes for you!','0','1','0','21181','0'),
 ('-177','I\'m going to wear your skin as a smoking jacket! The stogies? You\'ll have to pry them from my cold dead... er... RAWR!!!!','0','0','0','11058','0'),
 ('-178','Looking for these???? You\'ll never have em!','0','0','0','11058','0'),
-('-179','Hold them back while I release the warhounds!','10160','1','0','17259','0'),
-('-180','My pets are hungry and they will dine on your flesh!','10161','1','0','17259','0'),
-('-181','We are the true Horde!','0','0','1','17259','0'),
+('-179','Intruders!  Hold them off until I can release the warhounds!','10160','1','0','17455','0'),
+('-180','My pets are hungry and they will dine on your flesh!','10161','1','0','17455','0'),
+('-181','We are the true Horde!','0','0','0','17259/17264/17269/17270/17271/17478','0'),
 ('-182','Mine! Mine! Mine! Gizlock is the ruler of this domain! You shall never reveal my presence!','0','1','0','13601','0'),
 ('-183','What? Oh no. I don\'t care what you have to say. I just enjoy inflicting pain.','0','1','0','4306','0'),
 ('-184','You will talk eventually. You might as well spill it now.','0','0','0','4306','0'),
@@ -34401,7 +34404,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-483','Oh no!','0','0','0','5355/16769/1410','0'),
 ('-484','The %s looks on in disbelief.','0','2','0','5355/16769/1410','0'),
 ('-485','They set it off!','0','0','0','5355/16769/1410','0'),
--- PLEASE RE-USE 486 - 489
+('-486','You\'re too late, now feel the wrath of my warhounds!','0','1','0','17455','0'),
+('-487','Gakarah ma!','0','0','0','17455/17517','0'),
+-- PLEASE RE-USE 488 - 489
 ('-490','My back is killing me.','0','0','0','12337','0'),
 ('-491','If I should fall, take my pouch. Make certain that it gets to the High General.','0','0','0','12337','0'),
 ('-492','I sense danger up ahead.','0','0','0','12337','0'),
@@ -34584,9 +34589,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-669','The Legion reigns!','0','0','0','Shadow Labyrinth','0'),
 ('-670','Pathetic worm!','0','0','0','18848','0'),
 ('-671','Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!','0','0','0','22381','0'),
-('-672','This world is OURS!','0','0','1','Common Orc Say','0'),
+-- PLEASE RE-USE 672
 ('-673','%s emits a strange noise.','0','2','0','15233 16168','0'),
-('-674','For Kargath!  For Victory!','0','0','0','17264','0'),
+-- PLEASE RE-USE 674
 ('-675','How can you just leave me here?','0','0','0','18206','0'),
 ('-676','Help me!  Please help me!','0','0','0','18206','0'),
 ('-677','Will the pain ever end?','0','0','0','18206','0'),
