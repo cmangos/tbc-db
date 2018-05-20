@@ -25684,9 +25684,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1793802','17938','0','0','100','5','9700','20500','27700','39800','11','37668','1','0','0','0','0','0','0','0','0','0','Coilfang Observer (Heroic) - Cast Immolate'),
 ('1793803','17938','0','0','100','3','9600','21700','10900','21700','11','32191','1','0','0','0','0','0','0','0','0','0','Coilfang Observer (Normal) - Cast Heavy Dynamite'),
 ('1793804','17938','0','0','100','5','9600','21700','10900','21700','11','37666','1','0','0','0','0','0','0','0','0','0','Coilfang Observer (Heroic) - Cast Heavy Dynamite'),
+('1793805','17938','4','0','15','6','0','0','0','0','1','-737','0','0','0','0','0','0','0','0','0','0','Coilfang Observer - Text on Aggro'),
 -- Coilfang Technician (3.0.3 and 4.3.4 Official Data - Normal Only)(Random Say on Aggro)
 ('1794001','17940','0','0','100','3','9400','20500','20500','34100','11','16005','4','0','0','0','0','0','0','0','0','0','Coilfang Technician (Normal) - Cast Rain of Fire'),
 ('1794002','17940','0','0','100','5','9400','20500','20500','34100','11','39376','4','0','0','0','0','0','0','0','0','0','Coilfang Technician (Heroic) - Cast Rain of Fire'),
+('1794003','17940','4','0','15','6','0','0','0','0','1','-736','-737','-739','0','0','0','0','0','0','0','0','Coilfang Technician - Text on Aggro'),
 -- Mennu the Betrayer (3.0.3 and 4.3.4 Official Data - Normal Only)
 ('1794101','17941','4','0','100','6','0','0','0','0','1','-93','-94','-95','0','0','0','0','0','0','0','0','Mennu the Betrayer - Yell on Aggro'),
 ('1794102','17941','0','0','100','7','13700','18000','25400','33800','11','31985','0','1','0','0','0','0','0','0','0','0','Mennu the Betrayer - Cast Summon Tainted Stoneskin Totem'),
@@ -25711,9 +25713,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1795705','17957','0','0','100','7','14200','24100','29000','29000','11','19134','5','0','0','0','0','0','0','0','0','0','Coilfang Champion - Cast Frightening Shout'),
 ('1795706','17957','0','0','100','7','4700','17900','10100','22200','11','15284','1','1','0','0','0','0','0','0','0','0','Coilfang Champion - Cast Cleave'),
 ('1795707','17957','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Coilfang Champion - Set Phase to 0 on Evade'),
+('1795708','17957','4','0','15','38','0','0','0','0','1','-736','-737','0','1','-739','-740','0','0','0','0','0','Coilfang Champion - Random Text on Aggro'),
 -- Coilfang Defender (3.0.3 and 4.3.3 Official Data - Normal Only) (Chance to Say on Aggro)
 ('1795801','17958','0','0','100','7','4900','16900','10400','22900','11','15655','1','0','0','0','0','0','0','0','0','0','Coilfang Defender - Cast Shield Slam'),
 ('1795802','17958','0','0','100','7','10500','15700','13200','28900','11','31554','0','1','0','0','0','0','0','0','0','0','Coilfang Defender - Cast Spell Reflection'),
+('1795803','17958','4','0','15','6','0','0','0','0','1','-738','-739','-740','0','0','0','0','0','0','0','0','Coilfang Defender - Text on Aggro'),
 -- Coilfang Slavehandler (3.0.3 and 4.3.3 Official Data - Normal Only)
 ('1795901','17959','1','0','90','7','60000','120000','360000','420000','1','-679','-680','-681','0','0','0','0','0','0','0','0','Coilfang Slavehandler - Random Yell 1 OOC'),
 ('1795902','17959','1','0','90','7','180000','240000','540000','680000','1','-683','-684','-685','0','0','0','0','0','0','0','0','Coilfang Slavehandler - Random Yell 2 OOC'),
@@ -25735,6 +25739,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1796103','17961','0','0','100','3','11200','22500','18100','26500','11','32193','4','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Normal) - Cast Lightning Cloud'),
 ('1796104','17961','0','0','100','5','11200','22500','18100','26500','11','37665','4','0','0','0','0','0','0','0','0','0','Coilfang Enchantress (Heroic) - Cast Lightning Cloud'),
 ('1796105','17961','0','0','100','7','5600','19300','18100','26500','11','32173','4','0','0','0','0','0','0','0','0','0','Coilfang Enchantress - Cast Entangling Roots'),
+('1796106','17961','4','0','15','6','0','0','0','0','1','-736','-737','0','0','0','0','0','0','0','0','0','Coilfang Enchantress - Text on Aggro'),
 -- Coilfang Collaborator (3.0.3 and 4.3.3 Official Data - Normal Only)
 ('1796201','17962','0','0','100','7','9800','17200','14500','24100','11','33787','1','0','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Cripple'),
 ('1796202','17962','0','0','100','7','20100','26200','20000','26000','11','19130','1','0','0','0','0','0','0','0','0','0','Coilfang Collaborator - Cast Revenge'),
@@ -25770,7 +25775,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1817902','18179','0','0','100','6','5000','5000','0','0','11','30687','1','0','0','0','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Explode and Self Kill'),
 ('1817903','18179','8','0','100','7','0','127','0','0','11','30687','1','0','0','0','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Explode When Hit By Spell and Self Kill'),
 -- Wastewalker Captive
-('1820601','18206','10','0','20','6','1','15','0','0','1','-675','-676','-677','0','0','0','0','0','0','0','0','Wastewalker Captive - Random Say on OOC LOS'),
+('1820601','18206','10','0','20','38','1','15','0','0','1','-674','-675','0','1','-676','-677','0','0','0','0','0','Wastewalker Captive - Random Say on OOC LOS'),
 -- Mennu Healing Ward - TOTEMAI
 -- Coilfang Scale-Healer (3.0.3 and 4.3.3 Official Data - Normal Only)
 ('2112601','21126','0','0','100','3','3600','9200','12100','13400','11','34944','0','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Normal) - Cast Holy Nova'),
@@ -25779,7 +25784,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2112604','21126','16','0','100','5','36052','15','7200','13300','11','36052','6','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Heroic) - Cast Power Word: Shield on Friendlies'),
 ('2112605','21126','14','0','100','3','4000','40','12000','16000','11','34945','6','1','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Normal) - Cast Heal on Friendlies'),
 ('2112606','21126','14','0','100','5','8000','40','12000','16000','11','39378','6','1','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Heroic) - Cast Heal on Friendlies'),
--- Coilfang Tempest (3.0.3 and 4.3.4 Official Data - Normal Only)(Chance to say on aggro)
+('2112607','21126','4','0','15','6','0','0','0','0','1','-740','0','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer - Text on Aggro'),
+-- Coilfang Tempest (3.0.3 and 4.3.4 Official Data - Normal Only)(Chance to say on Aggro)
 ('2112701','21127','0','0','100','7','4900','10800','6100','14900','11','15667','1','0','0','0','0','0','0','0','0','0','Coilfang Tempest - Cast Sinister Strike'),
 ('2112702','21127','0','0','100','7','10800','22900','26900','44600','11','36872','4','33','0','0','0','0','0','0','0','0','Coilfang Tempest - Cast Deadly Poison'),
 -- Coilfang Ray (3.0.3 and 4.3.3 Official Data - Normal Only)
@@ -26787,6 +26793,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1737108','17371','0','0','100','3','1100','7800','14800','30100','11','32197','4','33','0','0','0','0','0','0','0','0','Shadowmoon Warlock (Normal) - Cast Corruption'),
 ('1737109','17371','0','0','100','5','1100','7800','14800','30100','11','37113','4','33','0','0','0','0','0','0','0','0','Shadowmoon Warlock (Heroic) - Cast Corruption'),
 ('1737110','17371','0','0','100','7','6600','10700','14900','14900','11','13338','4','33','0','0','0','0','0','0','0','0','Shadowmoon Warlock - Cast Curse of Tongues'),
+('1737111','17371','4','0','15','6','0','0','0','0','1','-157','-181','0','0','0','0','0','0','0','0','0','Shadowmoon Warlock - Say on Aggro'),
 -- Keli'dan the Breaker 17377 - boss_kelidan_the_breaker
 -- Broggok 17380 - boss_broggok
 -- The Maker 17381 - boss_the_maker
@@ -26802,6 +26809,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1739509','17395','0','0','100','6','10500','13000','0','0','11','30851','0','1','0','0','0','0','0','0','0','0','Shadowmoon Summoner - Cast Summon Felhound Manastalker'),
 ('1739510','17395','0','0','100','3','12000','14000','12000','14000','11','18399','4','1','0','0','0','0','0','0','0','0','Shadowmoon Summoner (Normal) - Cast Flamestrike'),
 ('1739511','17395','0','0','100','5','12000','14000','12000','14000','11','16102','4','1','0','0','0','0','0','0','0','0','Shadowmoon Summoner (Heroic) - Cast Flamestrike'),
+('1739512','17395','4','0','15','6','0','0','0','0','1','-160','0','0','0','0','0','0','0','0','0','0','Shadowmoon Summoner - Say on Aggro'),
 -- Shadowmoon Adept (3.0.3 Official Data - Normal Log Only)
 ('1739701','17397','11','0','100','6','0','0','0','0','11','8876','0','0','0','0','0','0','0','0','0','0','Shadowmoon Adept - Cast Thrash on Spawn'),
 ('1739702','17397','4','0','10','6','0','0','0','0','1','-158','-159','-160','0','0','0','0','0','0','0','0','Shadowmoon Adept - Random Say on Aggro'),
@@ -26826,6 +26834,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1741403','17414','0','0','100','3','4400','10600','3600','6200','11','40062','4','0','0','0','0','0','0','0','0','0','Shadowmoon Technician (Normal) - Cast Throw Dynamite'),
 ('1741404','17414','0','0','100','5','4400','10600','3600','6200','11','40064','4','0','0','0','0','0','0','0','0','0','Shadowmoon Technician (Heroic) - Cast Throw Dynamite'),
 ('1741405','17414','0','0','100','7','5400','11600','24300','24300','11','6726','4','1','0','0','0','0','0','0','0','0','Shadowmoon Technician - Cast Silence'),
+('1741406','17414','4','0','15','6','0','0','0','0','1','-159','0','0','0','0','0','0','0','0','0','0','Shadowmoon Technician - Say on Aggro'),
 -- Fel Orc Neophyte (3.0.3 Official Data - Normal Log Only)
 ('1742901','17429','0','0','100','7','0','0','20500','20500','11','22120','4','0','0','0','0','0','0','0','0','0','Fel Orc Neophyte - Cast Charge on Aggro'),
 ('1742902','17429','0','0','100','7','2300','2500','120000','130000','11','8269','0','0','0','0','0','0','0','0','0','0','Fel Orc Neophyte - Cast Frenzy'),
@@ -34075,10 +34084,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-154','Illidan reigns!','0','0','0','17727','0'),
 ('-155','%s begins to arm the Proximity Bomb!','0','2','0','17414','0'),
 ('-156','The blood is our power!','0','0','1','17264/17270/17271/17478/17491','0'),
-('-157','Lok narash!','0','0','0','17370/17455','0'),
+('-157','Lok narash!','0','0','0','17370/17371/17455','0'),
 ('-158','For Kargath!  For Victory!','0','0','0','17259/17264/17271/17397','0'),
-('-159','Lok\'tar Illidari!','0','0','0','17259/17264/17397','0'), -- Lok\'tar Illadari! (Sniff)
-('-160','This world is OURS!','0','0','0','17259/17264/17269/17270/17271/17478/17397','0'),
+('-159','Lok\'tar Illidari!','0','0','0','17259/17264/17397/17414','0'), -- Lok\'tar Illadari! (Sniff)
+('-160','This world is OURS!','0','0','0','17259/17264/17269/17270/17271/17395/17397/17478','0'),
 ('-161','A living $r... soon to be a dead like me.','0','0','0','Common Undead Text','0'),
 ('-162','Mmm... I love my delicious Southshore stout.','0','0','0','2440','0'),
 ('-163','Slay them, my brethren! For the Scourge!','5822','1','0','7357','0'),
@@ -34099,7 +34108,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-178','Looking for these???? You\'ll never have em!','0','0','0','11058','0'),
 ('-179','Intruders!  Hold them off until I can release the warhounds!','10160','1','0','17455','0'),
 ('-180','My pets are hungry and they will dine on your flesh!','10161','1','0','17455','0'),
-('-181','We are the true Horde!','0','0','0','17259/17264/17269/17270/17271/17478','0'),
+('-181','We are the true Horde!','0','0','0','17259/17264/17269/17270/17271/17371/17478','0'),
 ('-182','Mine! Mine! Mine! Gizlock is the ruler of this domain! You shall never reveal my presence!','0','1','0','13601','0'),
 ('-183','What? Oh no. I don\'t care what you have to say. I just enjoy inflicting pain.','0','1','0','4306','0'),
 ('-184','You will talk eventually. You might as well spill it now.','0','0','0','4306','0'),
@@ -34591,7 +34600,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-671','Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!','0','0','0','22381','0'),
 -- PLEASE RE-USE 672
 ('-673','%s emits a strange noise.','0','2','0','15233 16168','0'),
--- PLEASE RE-USE 674
+('-674','You over there!  Help me find a way out of this wretched cage!','0','0','0','18206','0'),
 ('-675','How can you just leave me here?','0','0','0','18206','0'),
 ('-676','Help me!  Please help me!','0','0','0','18206','0'),
 ('-677','Will the pain ever end?','0','0','0','18206','0'),
@@ -34653,7 +34662,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-733','Me mad. You get smash in face!','0','0','0','19948/19993/22160','0'),
 ('-734','Me angered. Raaah!','0','0','0','19948/19993/22160','0'),
 ('-735','Stupid puny thing.  Me smash!','0','0','0','19948/19993/22160','0'),
--- PLEASE RE-USE 736 - 740
+('-736','Die, warmblood!','0','0','0','17940/17957/17961 - Common Outland Nagas','0'),
+('-737','For the Master!','0','0','0','17940/17938/17957/17961 - Common Outland Nagas','0'),
+('-738','Illidan reigns!','0','0','0','17958 - Common Outland Nagas','0'),
+('-739','My blood is like venom!','0','0','0','17940/17957/17958 - Common Outland Nagas','0'),
+('-740','By Nazjatar\'s Depths!','0','0','0','17957/17958/21126 - Common Outland Nagas','0'),
 ('-741','You have brought me back too soon! I am weak yet... What is this! Who... It matters not! DIE!','0','0','0','22452','1'),
 ('-742','My strength.... is... returning!','0','0','0','16847','0'),
 ('-743','You\'ve restored my health! I\'m in your debt, $N.','0','0','0','16847','0'),
