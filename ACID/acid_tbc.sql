@@ -25507,7 +25507,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =================================
 -- Snake (2914)
 -- Medivh (15608) - npc_medivh_black_morass
--- Shadow Council Enforcer (17023)
+-- Shadow Council Enforcer
+('1702301','17023','1','0','100','0','30000','34000','0','0','51','0','0','0','0','0','0','0','0','0','0','0','Shadow Council Enforcer - Resume Waypoints OOC'),
 -- Infinite Assassin (2.4.3 Official Data)
 ('1783501','17835','4','0','15','6','0','0','0','0','1','-442','-446','-447','0','0','0','0','0','0','0','0','Infinite Assassin - Random Say on Aggro'),
 ('1783502','17835','4','0','100','6','0','0','0','0','28','0','31326','0','0','0','0','0','0','0','0','0','Infinite Assassin - Remove Corrupt Medivh on Aggro'),
