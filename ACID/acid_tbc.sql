@@ -20868,6 +20868,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lee Sparks 20389
 -- Foreman Sundown 20393
 -- Eye of Culuthas 20394
+('2039401','20394','0','0','100','1','0','5000','12500','15000','11','36414','1','0','0','0','0','0','0','0','0','0','Eye of Culuthas - Cast Focused Bursts'),
 -- Overseer Seylanna 20397
 -- Terror Imp 20399
 -- Legion Shocktrooper
