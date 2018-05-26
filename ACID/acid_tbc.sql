@@ -22055,25 +22055,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2332601','23326','0','0','100','1','5000','20000','15000','20000','11','13443','1','0','0','0','0','0','0','0','0','0','Nethermine Ravager - Cast Rend'),
 ('2332602','23326','2','0','100','1','75','0','10000','15000','11','33810','0','0','0','0','0','0','0','0','0','0','Nethermine Ravager - Cast Rock Shell at 75% HP'),
 -- Dragonmaw Skybreaker 23440
-('2344001','23440','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dragonmaw Skybreaker - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2344002','23440','4','0','20','32','0','0','0','0','1','-1588','-1589','0','1','-101','-102','-105','0','0','0','0','Dragonmaw Skybreaker - Random Yell on Aggro'),
-('2344003','23440','9','13','100','1','5','45','2300','3900','11','41440','1','0','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('2344004','23440','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('2344005','23440','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Dragonmaw Skybreaker - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
-('2344006','23440','0','13','100','1','10000','17000','4000','8000','11','41448','4','0','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
-('2344007','23440','0','13','100','1','13000','19000','4000','8000','11','36732','4','32','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Scatter Shot and Set Ranged Weapon Model (Phase 1)'),
-('2344008','23440','0','13','100','1','17000','22000','4000','8000','11','38861','4','0','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Aimed Shot and Set Ranged Weapon Model (Phase 1)'),
-('2344009','23440','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Dragonmaw Skybreaker - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Dragonmaw Skybreaker 23441
-('2344101','23441','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dragonmaw Skybreaker - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2344102','23441','4','0','20','32','0','0','0','0','1','-1588','-1589','0','1','-101','-102','-105','0','0','0','0','Dragonmaw Skybreaker - Random Yell on Aggro'),
-('2344103','23441','9','13','100','1','5','45','2300','3900','11','41440','1','0','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('2344104','23441','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('2344105','23441','9','0','100','1','0','8','1000','1000','49','0','0','0','40','1','0','0','0','0','0','0','Dragonmaw Skybreaker - Disable Dynamic Movement and Set Melee Weapon Model at 0-8 Yards'),
-('2344106','23441','0','13','100','1','10000','17000','4000','8000','11','41448','4','0','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
-('2344107','23441','0','13','100','1','13000','19000','4000','8000','11','36732','4','32','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Scatter Shot and Set Ranged Weapon Model (Phase 1)'),
-('2344108','23441','0','13','100','1','17000','22000','4000','8000','11','38861','4','0','40','2','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Aimed Shot and Set Ranged Weapon Model (Phase 1)'),
-('2344109','23441','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Dragonmaw Skybreaker - Set Phase 0 and Set Melee Weapon Model on Evade'),
 -- Illidan Stormrage 23467
 ('2346701','23467','11','0','100','0','0','0','0', '0','11','24240','0','1','0','0','0','0','0','0','0','0','Lord Illidan - Cast Spawn - Red Lightning on Spawn'),
 -- Netherwing Ray
