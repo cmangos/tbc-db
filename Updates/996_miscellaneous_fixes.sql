@@ -30,3 +30,6 @@ INSERT INTO conditions (condition_entry, type, value1, value2, comments) VALUES
 UPDATE creature_loot_template SET condition_id=3001 WHERE item=12842;
 
 
+-- Ozzie Togglevolt 1268 - modelid also used by 21413,21930,21935,21942,21944
+UPDATE `creature_model_info` SET `modelid_other_gender` = 0 WHERE `modelid` = 3441;
+
