@@ -30806,7 +30806,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1792806','17928','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Alliance Priest - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1792807','17928','14','0','100','3','15000','40','15000','21000','11','31739','6','1','0','0','0','0','0','0','0','0','Alliance Priest - Cast Heal on Friendlies'),
 ('1792808','17928','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Alliance Priest - Set Phase to 0 on Evade'),
--- Alliance Peasant (17931) - NSR
+-- Alliance Peasant
+('1793101','17931','6','0','50','0','0','0','0','0','54','0','0','10060','0','0','0','0','0','0','0','0','Alliance Peasant - Random Say on Death'),
 -- Tauren Warrior
 ('1793301','17933','9','0','100','3','0','15','7000','11000','11','31755','0','0','0','0','0','0','0','0','0','0','Tauren Warrior - Cast War Stomp'),
 -- Horde Headhunter
@@ -34397,7 +34398,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-485','They set it off!','0','0','0','5355/16769/1410','0'),
 ('-486','You\'re too late, now feel the wrath of my warhounds!','0','1','0','17455','0'),
 ('-487','Gakarah ma!','0','0','0','17455/17517','0'),
--- PLEASE RE-USE 488 - 489
+('-488','It\'s the end of the world!','0','0','0','17931','0'),
+('-489','We\'re doomed!','0','0','0','17931','0'),
 ('-490','My back is killing me.','0','0','0','12337','0'),
 ('-491','If I should fall, take my pouch. Make certain that it gets to the High General.','0','0','0','12337','0'),
 ('-492','I sense danger up ahead.','0','0','0','12337','0'),
@@ -35539,7 +35541,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10046,0,-1241,0,'Generic Random Arakkoa Aggro Texts'),
 (10046,0,-1242,0,'Generic Random Arakkoa Aggro Texts'),
 (10046,0,-1243,0,'Generic Random Arakkoa Aggro Texts'),
-(10046,0,-1244,0,'Generic Random Arakkoa Aggro Texts');
+(10046,0,-1244,0,'Generic Random Arakkoa Aggro Texts'),
+(10060,0,-488,0,'17931 - Random Death Texts'),
+(10060,0,-489,0,'17931 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
