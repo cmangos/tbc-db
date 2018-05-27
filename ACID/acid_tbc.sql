@@ -30841,6 +30841,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1793506','17935','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Horde Witch Doctor - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1793507','17935','0','0','100','3','11000','16000','30000','36000','11','31760','0','1','0','0','0','0','0','0','0','0','Horde Witch Doctor - Cast Healing Ward'),
 ('1793508','17935','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Horde Witch Doctor - Set Phase to 0 on Evade'),
+('1793509','17935','6','0','10','0','0','0','0','0','54','-682','6','0','0','0','0','0','0','0','0','0','Horde Witch Doctor - Say on Death'),
 -- Horde Shaman
 ('1793601','17936','1','0','100','3','1000','1000','600000','600000','11','31765','0','1','0','0','0','0','0','0','0','0','Horde Shaman - Cast Lightning Shield OOC'),
 ('1793602','17936','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Horde Shaman - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -34607,7 +34608,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-679','Hurry up with it already! The longer you take, the more of a hurtin\' I\'m putting on you!','0','1','0','17959','0'),
 ('-680','Wake up! Now get up and back to work!','0','1','0','17959','0'),
 ('-681','Too soon! You are slacking off too soon!','0','1','0','17959','0'),
--- PLEASE RE-USE 682
+('-682','I no gonna make it....','0','0','0','18206','0'),
 ('-683','This is terrible..... my arms grow tired from beating on you lazy peons!','0','1','0','17959','0'),
 ('-684','Get back to work you!','0','1','0','17959','0'),
 ('-685','What is this?! Didn\'t mommy and daddy teach you anything?','0','1','0','17959','0'),
