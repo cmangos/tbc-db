@@ -30816,6 +30816,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1792809','17928','6','0','10','0','0','0','0','0','54','0','6','10066','0','0','0','0','0','0','0','0','Alliance Priest - Random Say on Death'),
 -- Alliance Peasant
 ('1793101','17931','6','0','50','0','0','0','0','0','54','0','6','10060','0','0','0','0','0','0','0','0','Alliance Peasant - Random Say on Death'),
+-- Horde Grunt
+('1793201','17932','4','0','10','0','0','0','0','0','54','0','6','10069','0','0','0','0','0','0','0','0','Horde Grunt - Random Say on Aggro'),
+('1793202','17932','0','0','100','3','2500','2500','10000','15000','11','31754','1','0','0','0','0','0','0','0','0','0','Horde Grunt - Cast Strike'),
+('1793203','17932','6','0','10','0','0','0','0','0','54','0','6','10070','0','0','0','0','0','0','0','0','Horde Grunt - Random Say on Death'),
 -- Tauren Warrior
 ('1793301','17933','9','0','100','3','0','15','7000','11000','11','31755','0','0','0','0','0','0','0','0','0','0','Tauren Warrior - Cast War Stomp'),
 -- Horde Headhunter
@@ -33550,8 +33554,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1494602','14946','0','0','100','3','8000','11000','12000','17000','11','21188','4','1','11','23969','0','0','0','0','0','0','Slidore\'s Gryphon - Cast Stun Bomb Attack and Throw Liquid Fire'),
 -- Ichman's Gryphon (14947) - NSR
 -- Vipore's Gryphon (14948) - NSR
--- Horde Grunt
-('1793201','17932','0','0','100','3','2500','2500','10000','15000','11','31754','1','0','0','0','0','0','0','0','0','0','Horde Grunt - Cast Strike'),
 -- Anvilrage Enforcer
 ('2481901','24819','0','0','100','3','1000','3000','9000','12000','11','13608','1','0','0','0','0','0','0','0','0','0','Anvilrage Enforcer - Cast Hooked Net'),
 ('2481902','24819','0','0','100','3','6000','9000','12000','15000','11','11972','1','1','0','0','0','0','0','0','0','0','Anvilrage Enforcer - Cast Shield Bash'),
@@ -34705,7 +34707,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-783','We kill \'em good, mon.','0','0','0','17934','0'),
 ('-784','It all over... now.','0','0','0','17934','0'),
 ('-785','Dis no good....','0','0','0','17934','0'),
--- PLEASE RE-USE 786 - 796
+('-786','Destroy them all!','0','0','0','17932','0'),
+('-787','Have at them! Lok\'tar!','0','0','0','17932','0'),
+('-788','Keep... fighting!','0','0','0','17932','0'),
+('-789','Spill their... blood!','0','0','0','17932','0'),
+-- PLEASE RE-USE 790 - 796
 ('-797','%s puts his club away and begins swinging wildly!','0','2','0','11441','0'),
 ('-798','Where piggy go?!','0','1','0','20216','53'),
 ('-799','You be Grulloc\'s friend!','0','1','0','20216','0'),
@@ -35586,7 +35592,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10067,0,-782,0,'17934 - Random Aggro Texts'),
 (10067,0,-783,0,'17934 - Random Aggro Texts'),
 (10068,0,-784,0,'17934 - Random Death Texts'),
-(10068,0,-785,0,'17934 - Random Death Texts');
+(10068,0,-785,0,'17934 - Random Death Texts'),
+(10069,0,-786,0,'17932 - Random Aggro Texts'),
+(10069,0,-787,0,'17932 - Random Aggro Texts'),
+(10070,0,-788,0,'17932 - Random Death Texts'),
+(10070,0,-789,0,'17932 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
