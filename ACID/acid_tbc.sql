@@ -30780,7 +30780,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Alliance Footman
 ('1791901','17919','0','0','100','3','4000','8000','16000','25000','11','31731','0','0','0','0','0','0','0','0','0','0','Alliance Footman - Cast Shield Wall'),
 -- Alliance Knight
-('1792001','17920','0','0','100','3','1000','3000','21000','35000','11','31732','0','0','0','0','0','0','0','0','0','0','Alliance Knight - Cast Rallying Cry'),
+('1792001','17920','4','0','20','0','0','0','0','0','54','0','6','10061','0','0','0','0','0','0','0','0','Alliance Knight - Random Say on Aggro'),
+('1792002','17920','0','0','100','3','1000','3000','21000','35000','11','31732','0','0','0','0','0','0','0','0','0','0','Alliance Knight - Cast Rallying Cry'),
+('1792003','17920','6','0','20','0','0','0','0','0','54','-758','6','0','0','0','0','0','0','0','0','0','Alliance Knight - Say on Death'),
 -- Alliance Rifleman
 ('1792101','17921','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Alliance Rifleman - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1792102','17921','9','0','100','3','8','40','2100','3200','11','32103','1','0','40','2','0','0','0','0','0','0','Alliance Rifleman - Cast Shoot and Set Ranged Weapon Model'),
@@ -30807,7 +30809,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1792807','17928','14','0','100','3','15000','40','15000','21000','11','31739','6','1','0','0','0','0','0','0','0','0','Alliance Priest - Cast Heal on Friendlies'),
 ('1792808','17928','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Alliance Priest - Set Phase to 0 on Evade'),
 -- Alliance Peasant
-('1793101','17931','6','0','50','0','0','0','0','0','54','0','0','10060','0','0','0','0','0','0','0','0','Alliance Peasant - Random Say on Death'),
+('1793101','17931','6','0','50','0','0','0','0','0','54','0','0','10060','6','0','0','0','0','0','0','0','Alliance Peasant - Random Say on Death'),
 -- Tauren Warrior
 ('1793301','17933','9','0','100','3','0','15','7000','11000','11','31755','0','0','0','0','0','0','0','0','0','0','Tauren Warrior - Cast War Stomp'),
 -- Horde Headhunter
@@ -34666,7 +34668,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-753','HAVE YOU RUN OUT OF SHIPS TO SEND? WHERE IS YOUR COURAGE?','0','1','0','Mok\'Rash - Random Yell','0'),
 ('-754','YOU WERE SUCH GOOD SPORT THE LAST TIME...COME OUT!','0','1','0','Mok\'Rash - Random Yell','0'),
 ('-755','I HAVE YOUR LITTLE BELT TIED AROUND MY FINGER, SMOTTS. DON\'T YOU WANT IT BACK?','0','1','0','Mok\'Rash - Random Yell','0'),
--- PLEASE RE-USE -756 to -761
+('-756',' For Lordaeron! For victory!','0','0','0','17920','0'),
+('-757',' Rout these demons!','0','0','0','17920','0'),
+('-758',' Light receive me!','0','0','0','17920','0'),
+-- PLEASE RE-USE -759 to -761
 ('-762','Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.','0','0','0','Scholomance Dark Summoner','1'),
 ('-763','Wow, this one is just plain useless. Let me try again.','0','0','0','Scholomance Dark Summoner','1'),
 ('-764','Leave this place!','0','0','0','10940','0'),
@@ -35543,7 +35548,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10046,0,-1243,0,'Generic Random Arakkoa Aggro Texts'),
 (10046,0,-1244,0,'Generic Random Arakkoa Aggro Texts'),
 (10060,0,-488,0,'17931 - Random Death Texts'),
-(10060,0,-489,0,'17931 - Random Death Texts');
+(10060,0,-489,0,'17931 - Random Death Texts'),
+(10061,0,-756,0,'17920 - Random Death Texts'),
+(10061,0,-757,0,'17920 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
