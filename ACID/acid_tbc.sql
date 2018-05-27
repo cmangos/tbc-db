@@ -30786,12 +30786,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1792002','17920','0','0','100','3','1000','3000','21000','35000','11','31732','0','0','0','0','0','0','0','0','0','0','Alliance Knight - Cast Rallying Cry'),
 ('1792003','17920','6','0','20','0','0','0','0','0','54','-758','6','0','0','0','0','0','0','0','0','0','Alliance Knight - Say on Death'),
 -- Alliance Rifleman
-('1792101','17921','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Alliance Rifleman - Enable Dynamic Movement and Prevent Melee on Aggro'),
-('1792102','17921','9','0','100','3','8','40','2100','3200','11','32103','1','0','40','2','0','0','0','0','0','0','Alliance Rifleman - Cast Shoot and Set Ranged Weapon Model'),
-('1792103','17921','9','0','100','3','5000','9000','5000','8000','11','7896','4','1','40','2','0','0','0','0','0','0','Alliance Rifleman - Cast Exploding Shot and Set Ranged Weapon Model'),
-('1792104','17921','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Alliance Rifleman - Enable Dynamic Movement at 9-80 Yards'),
-('1792105','17921','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Alliance Rifleman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1792106','17921','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Alliance Rifleman - Set Melee Weapon Model on Evade'),
+('1792101','17921','4','0','10','0','0','0','0','0','54','0','6','10064','0','0','0','0','0','0','0','0','Alliance Rifleman - Random Say on Aggro'),
+('1792102','17921','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Alliance Rifleman - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('1792103','17921','9','0','100','3','8','40','2100','3200','11','32103','1','0','40','2','0','0','0','0','0','0','Alliance Rifleman - Cast Shoot and Set Ranged Weapon Model'),
+('1792104','17921','9','0','100','3','5000','9000','5000','8000','11','7896','4','1','40','2','0','0','0','0','0','0','Alliance Rifleman - Cast Exploding Shot and Set Ranged Weapon Model'),
+('1792105','17921','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Alliance Rifleman - Enable Dynamic Movement at 9-80 Yards'),
+('1792106','17921','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Alliance Rifleman - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1792107','17921','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Alliance Rifleman - Set Melee Weapon Model on Evade'),
+('1792108','17921','6','0','10','0','0','0','0','0','54','0','6','10065','0','0','0','0','0','0','0','0','Alliance Rifleman - Random Say on Death'),
 -- Alliance Sorceress
 ('1792201','17922','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Alliance Sorceress - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1792202','17922','9','5','100','3','8','30','3400','4800','11','31743','1','0','0','0','0','0','0','0','0','0','Alliance Sorceress - Cast Arcane Missile (Phase 1)'),
@@ -34688,7 +34690,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-773','Agghh!','0','0','0','17919','0'),
 ('-774','I... can\'t....','0','0','0','17919','0'),
 ('-775','Alright! We Surrender... Just put your weapons down, I\'ll cooperate','0','0','0','5089','0'),
--- PLEASE RE-USE 776 - 796
+('-776','Blow \'em away!','0','0','0','17921','0'),
+('-777','I\'m itchin\' to shoot somethin\'!','0','0','0','17921','0'),
+('-778','Carry on the fight!','0','0','0','17921','0'),
+('-779','For... Khaz... Modan!','0','0','0','17921','0'),
+-- PLEASE RE-USE 780 - 796
 ('-797','%s puts his club away and begins swinging wildly!','0','2','0','11441','0'),
 ('-798','Where piggy go?!','0','1','0','20216','53'),
 ('-799','You be Grulloc\'s friend!','0','1','0','20216','0'),
@@ -35559,7 +35565,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10062,0,-771,0,'17919 - Random Aggro Texts'),
 (10062,0,-772,0,'17919 - Random Aggro Texts'),
 (10063,0,-773,0,'17919 - Random Death Texts'),
-(10063,0,-774,0,'17919 - Random Death Texts');
+(10063,0,-774,0,'17919 - Random Death Texts'),
+(10064,0,-776,0,'17921 - Random Aggro Texts'),
+(10064,0,-777,0,'17921 - Random Aggro Texts'),
+(10065,0,-778,0,'17921 - Random Death Texts'),
+(10065,0,-779,0,'17921 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
