@@ -30782,9 +30782,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1791902','17919','0','0','100','3','4000','8000','16000','25000','11','31731','0','0','0','0','0','0','0','0','0','0','Alliance Footman - Cast Shield Wall'),
 ('1791903','17919','6','0','10','0','0','0','0','0','54','0','6','10063','0','0','0','0','0','0','0','0','Alliance Footman - Random Say on Death'),
 -- Alliance Knight
-('1792001','17920','4','0','20','0','0','0','0','0','54','0','6','10061','0','0','0','0','0','0','0','0','Alliance Knight - Random Say on Aggro'),
+('1792001','17920','4','0','10','0','0','0','0','0','54','0','6','10061','0','0','0','0','0','0','0','0','Alliance Knight - Random Say on Aggro'),
 ('1792002','17920','0','0','100','3','1000','3000','21000','35000','11','31732','0','0','0','0','0','0','0','0','0','0','Alliance Knight - Cast Rallying Cry'),
-('1792003','17920','6','0','20','0','0','0','0','0','54','-758','6','0','0','0','0','0','0','0','0','0','Alliance Knight - Say on Death'),
+('1792003','17920','6','0','10','0','0','0','0','0','54','-758','6','0','0','0','0','0','0','0','0','0','Alliance Knight - Say on Death'),
 -- Alliance Rifleman
 ('1792101','17921','4','0','10','0','0','0','0','0','54','0','6','10064','0','0','0','0','0','0','0','0','Alliance Rifleman - Random Say on Aggro'),
 ('1792102','17921','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Alliance Rifleman - Enable Dynamic Movement and Prevent Melee on Aggro'),
@@ -30812,8 +30812,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1792806','17928','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Alliance Priest - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1792807','17928','14','0','100','3','15000','40','15000','21000','11','31739','6','1','0','0','0','0','0','0','0','0','Alliance Priest - Cast Heal on Friendlies'),
 ('1792808','17928','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Alliance Priest - Set Phase to 0 on Evade'),
+('1792809','17928','6','0','10','0','0','0','0','0','54','0','6','10066','0','0','0','0','0','0','0','0','Alliance Priest - Random Say on Death'),
 -- Alliance Peasant
-('1793101','17931','6','0','50','0','0','0','0','0','54','0','0','10060','6','0','0','0','0','0','0','0','Alliance Peasant - Random Say on Death'),
+('1793101','17931','6','0','50','0','0','0','0','0','54','0','6','10060','0','0','0','0','0','0','0','0','Alliance Peasant - Random Say on Death'),
 -- Tauren Warrior
 ('1793301','17933','9','0','100','3','0','15','7000','11000','11','31755','0','0','0','0','0','0','0','0','0','0','Tauren Warrior - Cast War Stomp'),
 -- Horde Headhunter
@@ -34694,7 +34695,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-777','I\'m itchin\' to shoot somethin\'!','0','0','0','17921','0'),
 ('-778','Carry on the fight!','0','0','0','17921','0'),
 ('-779','For... Khaz... Modan!','0','0','0','17921','0'),
--- PLEASE RE-USE 780 - 796
+('-780','For... Quel\'Thalas.','0','0','0','17928','0'),
+('-781','Stay... the course.','0','0','0','17928','0'),
+-- PLEASE RE-USE 782 - 796
 ('-797','%s puts his club away and begins swinging wildly!','0','2','0','11441','0'),
 ('-798','Where piggy go?!','0','1','0','20216','53'),
 ('-799','You be Grulloc\'s friend!','0','1','0','20216','0'),
@@ -35569,7 +35572,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10064,0,-776,0,'17921 - Random Aggro Texts'),
 (10064,0,-777,0,'17921 - Random Aggro Texts'),
 (10065,0,-778,0,'17921 - Random Death Texts'),
-(10065,0,-779,0,'17921 - Random Death Texts');
+(10065,0,-779,0,'17921 - Random Death Texts'),
+(10066,0,-780,0,'17928 - Random Death Texts'),
+(10066,0,-781,0,'17928 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
