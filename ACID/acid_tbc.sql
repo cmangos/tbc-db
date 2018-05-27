@@ -30778,7 +30778,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Stalker
 ('1791601','17916','9','0','100','3','0','30','6000','9000','11','31729','5','0','0','0','0','0','0','0','0','0','Fel Stalker - Cast Mana Burn'),
 -- Alliance Footman
-('1791901','17919','0','0','100','3','4000','8000','16000','25000','11','31731','0','0','0','0','0','0','0','0','0','0','Alliance Footman - Cast Shield Wall'),
+('1791901','17919','4','0','10','0','0','0','0','0','54','0','6','10062','0','0','0','0','0','0','0','0','Alliance Footman - Random Say on Aggro'),
+('1791902','17919','0','0','100','3','4000','8000','16000','25000','11','31731','0','0','0','0','0','0','0','0','0','0','Alliance Footman - Cast Shield Wall'),
+('1791903','17919','6','0','10','0','0','0','0','0','54','0','6','10063','0','0','0','0','0','0','0','0','Alliance Footman - Random Say on Death'),
 -- Alliance Knight
 ('1792001','17920','4','0','20','0','0','0','0','0','54','0','6','10061','0','0','0','0','0','0','0','0','Alliance Knight - Random Say on Aggro'),
 ('1792002','17920','0','0','100','3','1000','3000','21000','35000','11','31732','0','0','0','0','0','0','0','0','0','0','Alliance Knight - Cast Rallying Cry'),
@@ -34668,9 +34670,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-753','HAVE YOU RUN OUT OF SHIPS TO SEND? WHERE IS YOUR COURAGE?','0','1','0','Mok\'Rash - Random Yell','0'),
 ('-754','YOU WERE SUCH GOOD SPORT THE LAST TIME...COME OUT!','0','1','0','Mok\'Rash - Random Yell','0'),
 ('-755','I HAVE YOUR LITTLE BELT TIED AROUND MY FINGER, SMOTTS. DON\'T YOU WANT IT BACK?','0','1','0','Mok\'Rash - Random Yell','0'),
-('-756',' For Lordaeron! For victory!','0','0','0','17920','0'),
-('-757',' Rout these demons!','0','0','0','17920','0'),
-('-758',' Light receive me!','0','0','0','17920','0'),
+('-756','For Lordaeron! For victory!','0','0','0','17920','0'),
+('-757','Rout these demons!','0','0','0','17920','0'),
+('-758','Light receive me!','0','0','0','17920','0'),
 -- PLEASE RE-USE -759 to -761
 ('-762','Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.','0','0','0','Scholomance Dark Summoner','1'),
 ('-763','Wow, this one is just plain useless. Let me try again.','0','0','0','Scholomance Dark Summoner','1'),
@@ -34681,7 +34683,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-768','Protect the Warchief at all costs!','0','0','0','Common Bonechewer Orc Text','0'),
 ('-769','I am slain! Summon Verog!','0','1','0','Common Say for Kokar Centaurs','0'),
 ('-770','I am summoned! Intruders, come to my tent and face your death!','0','1','0','3395','0'),
--- PLEASE RE-USE 771 - 774
+('-771','Back, hold them back!','0','0','0','17919','0'),
+('-772','Let these monsters taste cold steel!','0','0','0','17919','0'),
+('-773','Agghh!','0','0','0','17919','0'),
+('-774','I... can\'t....','0','0','0','17919','0'),
 ('-775','Alright! We Surrender... Just put your weapons down, I\'ll cooperate','0','0','0','5089','0'),
 -- PLEASE RE-USE 776 - 796
 ('-797','%s puts his club away and begins swinging wildly!','0','2','0','11441','0'),
@@ -35550,7 +35555,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10060,0,-488,0,'17931 - Random Death Texts'),
 (10060,0,-489,0,'17931 - Random Death Texts'),
 (10061,0,-756,0,'17920 - Random Death Texts'),
-(10061,0,-757,0,'17920 - Random Death Texts');
+(10061,0,-757,0,'17920 - Random Death Texts'),
+(10062,0,-771,0,'17919 - Random Aggro Texts'),
+(10062,0,-772,0,'17919 - Random Aggro Texts'),
+(10063,0,-773,0,'17919 - Random Death Texts'),
+(10063,0,-774,0,'17919 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
