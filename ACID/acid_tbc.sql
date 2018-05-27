@@ -30819,11 +30819,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tauren Warrior
 ('1793301','17933','9','0','100','3','0','15','7000','11000','11','31755','0','0','0','0','0','0','0','0','0','0','Tauren Warrior - Cast War Stomp'),
 -- Horde Headhunter
-('1793401','17934','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Horde Headhunter - Enable Dynamic Movement and Prevent Melee on Aggro'),
-('1793402','17934','9','0','100','3','8','40','3000','4500','11','31758','4','0','40','2','0','0','0','0','0','0','Horde Headhunter - Cast Spear Throw and Set Ranged Weapon Model'),
-('1793403','17934','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Horde Headhunter - Enable Dynamic Movement at 9-80 Yards'),
-('1793404','17934','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Horde Headhunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1793405','17934','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Horde Headhunter - Set Melee Weapon Model on Evade'),
+('1793401','17934','4','0','10','0','0','0','0','0','54','0','6','10067','0','0','0','0','0','0','0','0','Horde Headhunter - Random Say on Aggro'),
+('1793402','17934','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Horde Headhunter - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('1793403','17934','9','0','100','3','8','40','3000','4500','11','31758','4','0','40','2','0','0','0','0','0','0','Horde Headhunter - Cast Spear Throw and Set Ranged Weapon Model'),
+('1793404','17934','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Horde Headhunter - Enable Dynamic Movement at 9-80 Yards'),
+('1793405','17934','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Horde Headhunter - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1793406','17934','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Horde Headhunter - Set Melee Weapon Model on Evade'),
+('1793407','17934','6','0','10','0','0','0','0','0','54','0','6','10068','0','0','0','0','0','0','0','0','Horde Headhunter - Random Say on Death'),
 -- Horde Witch Doctor
 ('1793501','17935','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Horde Witch Doctor - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1793502','17935','9','5','100','3','8','40','3400','4800','11','31759','1','0','0','0','0','0','0','0','0','0','Horde Witch Doctor - Cast Holy Bolt (Phase 1)'),
@@ -34698,7 +34700,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-779','For... Khaz... Modan!','0','0','0','17921','0'),
 ('-780','For... Quel\'Thalas.','0','0','0','17928','0'),
 ('-781','Stay... the course.','0','0','0','17928','0'),
--- PLEASE RE-USE 782 - 796
+('-782','Take their heads!','0','0','0','17934','0'),
+('-783','We kill \'em good, mon.','0','0','0','17934','0'),
+('-784','It all over... now.','0','0','0','17934','0'),
+('-785','Dis no good....','0','0','0','17934','0'),
+-- PLEASE RE-USE 786 - 796
 ('-797','%s puts his club away and begins swinging wildly!','0','2','0','11441','0'),
 ('-798','Where piggy go?!','0','1','0','20216','53'),
 ('-799','You be Grulloc\'s friend!','0','1','0','20216','0'),
@@ -35575,7 +35581,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10065,0,-778,0,'17921 - Random Death Texts'),
 (10065,0,-779,0,'17921 - Random Death Texts'),
 (10066,0,-780,0,'17928 - Random Death Texts'),
-(10066,0,-781,0,'17928 - Random Death Texts');
+(10066,0,-781,0,'17928 - Random Death Texts'),
+(10067,0,-782,0,'17934 - Random Aggro Texts'),
+(10067,0,-783,0,'17934 - Random Aggro Texts'),
+(10068,0,-784,0,'17934 - Random Death Texts'),
+(10068,0,-785,0,'17934 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
