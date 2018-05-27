@@ -30821,7 +30821,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1793202','17932','0','0','100','3','2500','2500','10000','15000','11','31754','1','0','0','0','0','0','0','0','0','0','Horde Grunt - Cast Strike'),
 ('1793203','17932','6','0','10','0','0','0','0','0','54','0','6','10070','0','0','0','0','0','0','0','0','Horde Grunt - Random Say on Death'),
 -- Tauren Warrior
-('1793301','17933','9','0','100','3','0','15','7000','11000','11','31755','0','0','0','0','0','0','0','0','0','0','Tauren Warrior - Cast War Stomp'),
+('1793301','17933','4','0','10','0','0','0','0','0','54','0','6','10071','0','0','0','0','0','0','0','0','Tauren Warrior - Random Say on Aggro'),
+('1793302','17933','9','0','100','3','0','15','7000','11000','11','31755','0','0','0','0','0','0','0','0','0','0','Tauren Warrior - Cast War Stomp'),
+('1793303','17933','6','0','10','0','0','0','0','0','54','-761','6','0','0','0','0','0','0','0','0','0','Tauren Warrior - Say on Death'),
 -- Horde Headhunter
 ('1793401','17934','4','0','10','0','0','0','0','0','54','0','6','10067','0','0','0','0','0','0','0','0','Horde Headhunter - Random Say on Aggro'),
 ('1793402','17934','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Horde Headhunter - Enable Dynamic Movement and Prevent Melee on Aggro'),
@@ -34682,7 +34684,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-756','For Lordaeron! For victory!','0','0','0','17920','0'),
 ('-757','Rout these demons!','0','0','0','17920','0'),
 ('-758','Light receive me!','0','0','0','17920','0'),
--- PLEASE RE-USE -759 to -761
+('-759','Crush them!','0','0','0','17933','0'),
+('-760','For the Earth Mother!','0','0','0','17933','0'),
+('-761','I return... to the earth.','0','0','0','17933','0'),
 ('-762','Note the weak binding structure of this one. Be sure to finish your incantations or this is what you will end up with.','0','0','0','Scholomance Dark Summoner','1'),
 ('-763','Wow, this one is just plain useless. Let me try again.','0','0','0','Scholomance Dark Summoner','1'),
 ('-764','Leave this place!','0','0','0','10940','0'),
@@ -35596,7 +35600,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10069,0,-786,0,'17932 - Random Aggro Texts'),
 (10069,0,-787,0,'17932 - Random Aggro Texts'),
 (10070,0,-788,0,'17932 - Random Death Texts'),
-(10070,0,-789,0,'17932 - Random Death Texts');
+(10070,0,-789,0,'17932 - Random Death Texts'),
+(10071,0,-759,0,'17933 - Random Aggro Texts'),
+(10071,0,-760,0,'17933 - Random Aggro Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
