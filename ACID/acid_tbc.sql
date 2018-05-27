@@ -30803,6 +30803,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1792206','17922','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Alliance Sorceress - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1792207','17922','0','0','100','3','10000','14000','13000','18000','11','31741','5','33','0','0','0','0','0','0','0','0','Alliance Sorceress - Cast Slow'),
 ('1792208','17922','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Alliance Sorceress - Set Phase to 0 on Evade'),
+('1792209','17922','6','0','10','0','0','0','0','0','54','-285','6','0','0','0','0','0','0','0','0','0','Alliance Sorceress - Say on Death'),
 -- Alliance Priest
 ('1792801','17928','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Alliance Priest - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1792802','17928','9','5','100','3','8','40','3400','4800','11','31740','1','0','0','0','0','0','0','0','0','0','Alliance Priest - Cast Holy Smite (Phase 1)'),
@@ -34202,7 +34203,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-282','Kill them before they get away!','0','0','0','5355/16769/1410','0'),
 ('-283','My weapon be thirsty!','0','0','0','Common Troll Text','0'),
 ('-284','%s\'s eyes glow red as he begins to cackle madly!','0','2','7','18827','0'),
--- Reuse 285
+('-285','Not... my best... day.','0','0','0','17922','0'),
 ('-286','%s nods.','0','2','0','16589','0'),
 ('-287','Lost some of my best soldiers that day...','0','0','0','16589','0'),
 ('-288','But that\'s not the worst of it. Before I could pull us back, a group of \'em spotted us and attacked.','0','0','0','16589','0'),
