@@ -30836,7 +30836,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1793507','17935','0','0','100','3','11000','16000','30000','36000','11','31760','0','1','0','0','0','0','0','0','0','0','Horde Witch Doctor - Cast Healing Ward'),
 ('1793508','17935','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Horde Witch Doctor - Set Phase to 0 on Evade'),
 -- Horde Shaman
-('1793601','17936','1','0','100','3','1000','1000','600000','600000','11','31765','0','1','0','0','0','0','0','0','0','0','Horde Shaman - Cast Lightning Shield on Spawn'),
+('1793601','17936','1','0','100','3','1000','1000','600000','600000','11','31765','0','1','0','0','0','0','0','0','0','0','Horde Shaman - Cast Lightning Shield OOC'),
 ('1793602','17936','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Horde Shaman - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1793603','17936','9','5','100','3','8','40','3400','4800','11','31764','1','0','0','0','0','0','0','0','0','0','Horde Shaman - Cast Lightning Bolt (Phase 1)'),
 ('1793604','17936','9','5','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Horde Shaman - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
@@ -30846,6 +30846,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1793608','17936','0','0','100','3','14000','26000','40000','55000','11','6742','0','1','0','0','0','0','0','0','0','0','Horde Shaman - Cast Bloodlust'),
 ('1793609','17936','27','0','100','3','31765','1','15000','30000','11','31765','0','1','0','0','0','0','0','0','0','0','Horde Shaman - Cast Lightning Shield on Missing Buff'),
 ('1793610','17936','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Horde Shaman - Set Phase to 0 on Evade'),
+('1793611','17936','6','0','10','0','0','0','0','0','54','-672','6','0','0','0','0','0','0','0','0','0','Horde Shaman - Say on Death'),
 -- Horde Peon (17937) - NSR
 -- Night Elf Archer
 ('1794301','17943','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Night Elf Archer - Enable Dynamic Movement and Prevent Melee on Aggro'),
@@ -34592,7 +34593,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-669','The Legion reigns!','0','0','0','Shadow Labyrinth','0'),
 ('-670','Pathetic worm!','0','0','0','18848','0'),
 ('-671','Incompetent fools! Auchindoun should\'ve been ours... look at yourselves scrambling like rats!','0','0','0','22381','0'),
--- PLEASE RE-USE 672
+('-672','I am one... with all.','0','0','0','17936','0'),
 ('-673','%s emits a strange noise.','0','2','0','15233 16168','0'),
 ('-674','You over there!  Help me find a way out of this wretched cage!','0','0','0','18206','0'),
 ('-675','How can you just leave me here?','0','0','0','18206','0'),
