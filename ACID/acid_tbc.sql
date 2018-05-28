@@ -30858,11 +30858,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1793611','17936','6','0','10','0','0','0','0','0','54','-672','6','0','0','0','0','0','0','0','0','0','Horde Shaman - Say on Death'),
 -- Horde Peon (17937) - NSR
 -- Night Elf Archer
-('1794301','17943','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Night Elf Archer - Enable Dynamic Movement and Prevent Melee on Aggro'),
-('1794302','17943','9','1','100','3','5','40','3000','4500','11','32103','4','0','40','2','0','0','0','0','0','0','Night Elf Archer - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
-('1794303','17943','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Night Elf Archer - Enable Dynamic Movement at 9-80 Yards'),
-('1794304','17943','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Night Elf Archer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
-('1794305','17943','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Night Elf Archer - Set Melee Weapon Model on Evade'),
+('1794301','17943','4','0','10','0','0','0','0','0','54','0','6','10074','0','0','0','0','0','0','0','0','Night Elf Archer - Random Say on Aggro'),
+('1794302','17943','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Night Elf Archer - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('1794303','17943','9','1','100','3','5','40','3000','4500','11','32103','4','0','40','2','0','0','0','0','0','0','Night Elf Archer - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
+('1794304','17943','9','0','100','3','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Night Elf Archer - Enable Dynamic Movement at 9-80 Yards'),
+('1794305','17943','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Night Elf Archer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('1794306','17943','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Night Elf Archer - Set Melee Weapon Model on Evade'),
+('1794307','17943','6','0','10','0','0','0','0','0','54','0','6','10075','0','0','0','0','0','0','0','0','Night Elf Archer - Random Say on Death'),
 -- Dryad (17944) - NSR
 -- Night Elf Huntress
 ('1794501','17945','9','0','100','3','0','5','6000','10000','11','31779','1','0','0','0','0','0','0','0','0','0','Night Elf Huntress - Cast Cleave'),
@@ -34721,7 +34723,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-789','Spill their... blood!','0','0','0','17932','0'),
 ('-790','Remain... strong.','0','0','0','3795','0'),
 ('-791','The land... cries out.','0','0','0','3795','0'),
--- PLEASE RE-USE 790 - 796
+('-792','Andu-falah-dor!','0','0','0','17943','0'),
+('-793','Press the attack!','0','0','0','17943','0'),
+('-794','Don\'t give... up!','0','0','0','17943','0'),
+('-795','Elune help us!','0','0','0','17943','0'),
+-- PLEASE RE-USE 796
 ('-797','%s puts his club away and begins swinging wildly!','0','2','0','11441','0'),
 ('-798','Where piggy go?!','0','1','0','20216','53'),
 ('-799','You be Grulloc\'s friend!','0','1','0','20216','0'),
@@ -35610,7 +35616,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10071,0,-759,0,'17933 - Random Aggro Texts'),
 (10071,0,-760,0,'17933 - Random Aggro Texts'),
 (10073,0,-790,0,'3795 - Random Death Texts'),
-(10073,0,-791,0,'3795 - Random Death Texts');
+(10073,0,-791,0,'3795 - Random Death Texts'),
+(10074,0,-792,0,'17943 - Random Aggro Texts'),
+(10074,0,-793,0,'17943 - Random Aggro Texts'),
+(10075,0,-794,0,'17943 - Random Death Texts'),
+(10075,0,-795,0,'17943 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
