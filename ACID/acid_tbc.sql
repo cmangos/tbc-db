@@ -30667,6 +30667,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('379409','3794','6','0','10','0','0','0','0','0','54','-693','6','0','0','0','0','0','0','0','0','0','Druid of the Talon - Say on Death'),
 -- Druid of the Claw
 ('379501','3795','14','0','100','3','15000','40','15000','18000','11','31782','6','0','0','0','0','0','0','0','0','0','Druid of the Claw - Cast Rejuvenation on Friendlies'),
+('379502','3795','6','0','10','0','0','0','0','0','54','0','6','10073','0','0','0','0','0','0','0','0','Druid of the Claw - Random Say on Death'),
 -- Rat (4075) - NSR
 -- Tyrande Whisperwind 7999
 ('799901','7999','4','0','100','2','0','0','0','0','4','5885','0','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Play Sound 5885 on Aggro'),
@@ -34718,6 +34719,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-787','Have at them! Lok\'tar!','0','0','0','17932','0'),
 ('-788','Keep... fighting!','0','0','0','17932','0'),
 ('-789','Spill their... blood!','0','0','0','17932','0'),
+('-790','Remain... strong.','0','0','0','3795','0'),
+('-791','The land... cries out.','0','0','0','3795','0'),
 -- PLEASE RE-USE 790 - 796
 ('-797','%s puts his club away and begins swinging wildly!','0','2','0','11441','0'),
 ('-798','Where piggy go?!','0','1','0','20216','53'),
@@ -35605,7 +35608,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10070,0,-788,0,'17932 - Random Death Texts'),
 (10070,0,-789,0,'17932 - Random Death Texts'),
 (10071,0,-759,0,'17933 - Random Aggro Texts'),
-(10071,0,-760,0,'17933 - Random Aggro Texts');
+(10071,0,-760,0,'17933 - Random Aggro Texts'),
+(10073,0,-790,0,'3795 - Random Death Texts'),
+(10073,0,-791,0,'3795 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
