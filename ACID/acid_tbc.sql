@@ -30865,7 +30865,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1794305','17943','9','0','100','3','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Night Elf Archer - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1794306','17943','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Night Elf Archer - Set Melee Weapon Model on Evade'),
 ('1794307','17943','6','0','10','0','0','0','0','0','54','0','6','10075','0','0','0','0','0','0','0','0','Night Elf Archer - Random Say on Death'),
--- Dryad (17944) - NSR
+-- Dryad
+('1794401','17944','6','0','10','0','0','0','0','0','54','0','6','10078','0','0','0','0','0','0','0','0','Dryad - Random Say on Death'),
 -- Night Elf Huntress
 ('1794501','17945','4','0','10','0','0','0','0','0','54','0','6','10076','0','0','0','0','0','0','0','0','Night Elf Huntress - Random Say on Aggro'),
 ('1794502','17945','9','0','100','3','0','5','6000','10000','11','31779','1','0','0','0','0','0','0','0','0','0','Night Elf Huntress - Cast Cleave'),
@@ -34747,7 +34748,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-811','Tor ilisar\'thera\'nal!','0','0','0','17945','0'),
 ('-812','Keep at them!','0','0','0','17945','0'),
 ('-813','If it is Elune\'s... will.','0','0','0','17945','0'),
--- REUSE 814 - 816
+('-814','Ahhh!!','0','0','0','17944','0'),
+('-815','I tried.','0','0','0','17944','0'),
+-- REUSE 816
 ('-817','So or\'manley fi siame Dim fus siame yudo','5859','1','14','8580','0'),
 ('-818','You will rest with the honored dead.','0','0','0','18493','0'),
 ('-819','Turn back! Do not wake the dreamer!','5866','1','0','5721','0'),
@@ -35630,7 +35633,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10076,0,-810,0,'17945 - Random Aggro Texts'),
 (10076,0,-811,0,'17945 - Random Aggro Texts'),
 (10077,0,-812,0,'17945 - Random Death Texts'),
-(10077,0,-813,0,'17945 - Random Death Texts');
+(10077,0,-813,0,'17945 - Random Death Texts'),
+(10078,0,-814,0,'17944 - Random Death Texts'),
+(10078,0,-815,0,'17944 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
