@@ -30876,7 +30876,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Night Elf Ancient Protector
 ('1848701','18487','9','0','100','3','0','30','9000','14000','11','11922','4','32','0','0','0','0','0','0','0','0','Night Elf Ancient Protector - Cast Entangling Roots'),
 ('1848702','18487','9','0','100','3','0','5','8000','12000','11','45','0','1','0','0','0','0','0','0','0','0','Night Elf Ancient Protector - Cast War Stomp'),
--- Night Elf Wisp (18502) - NSR
+-- Night Elf Wisp
+('1850201','18502','0','0','100','1','0','1000','2000','3000','11','32110','1','0','0','0','0','0','0','0','0','0','Night Elf Wisp - Cast Spark'),
 -- Tydormu (23381) - NSR
 -- Indormi (23437) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
