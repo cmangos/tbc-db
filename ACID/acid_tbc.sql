@@ -30664,6 +30664,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('379406','3794','3','3','100','3','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Druid of the Talon - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('379407','3794','9','0','100','3','0','30','30000','33000','11','25602','1','1','0','0','0','0','0','0','0','0','Druid of the Talon - Cast Faerie Fire'),
 ('379408','3794','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Druid of the Talon - Set Phase to 0 on Evade'),
+('379409','3794','6','0','10','0','0','0','0','0','54','-693','6','0','0','0','0','0','0','0','0','0','Druid of the Talon - Say on Death'),
 -- Druid of the Claw
 ('379501','3795','14','0','100','3','15000','40','15000','18000','11','31782','6','0','0','0','0','0','0','0','0','0','Druid of the Claw - Cast Rejuvenation on Friendlies'),
 -- Rat (4075) - NSR
@@ -34620,7 +34621,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-690','Your death is at hand, $N. Savor these last moments.','0','1','0','22281/23353/23354/23355','0'),
 ('-691','I am older than you can fathom.  Show some respect!','0','1','0','22281/23353/23354/23355','0'),
 ('-692','May whatever god you believe in have mercy on you. For I will show you none.','0','1','0','22281/23353/23354/23355','0'),
--- PLEASE RE-USE 693
+('-693','Winds... carry me.','0','0','0','3794','0'),
 ('-694','%s chips and splinters!','0','2','0','7023','0'),
 ('-695','A pleasure... to serve the master.','0','0','0','17899','0'),
 ('-696','You will... ultimately fail.','0','0','0','17899','0'),
