@@ -30867,7 +30867,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1794307','17943','6','0','10','0','0','0','0','0','54','0','6','10075','0','0','0','0','0','0','0','0','Night Elf Archer - Random Say on Death'),
 -- Dryad (17944) - NSR
 -- Night Elf Huntress
-('1794501','17945','9','0','100','3','0','5','6000','10000','11','31779','1','0','0','0','0','0','0','0','0','0','Night Elf Huntress - Cast Cleave'),
+('1794501','17945','4','0','10','0','0','0','0','0','54','0','6','10076','0','0','0','0','0','0','0','0','Night Elf Huntress - Random Say on Aggro'),
+('1794502','17945','9','0','100','3','0','5','6000','10000','11','31779','1','0','0','0','0','0','0','0','0','0','Night Elf Huntress - Cast Cleave'),
+('1794503','17945','6','0','10','0','0','0','0','0','54','0','6','10077','0','0','0','0','0','0','0','0','Night Elf Huntress - Random Say on Death'),
 -- Ancient Wisp (SD2 Backport)
 ('1794601','17946','0','0','100','3','1000','2000','2000','3000','11','39349','1','0','0','0','0','0','0','0','0','0','Ancient Wisp - Cast Ancient Spark'),
 -- Tyrande Whisperwind (17948) - npc_tyrande_whisperwind
@@ -34741,7 +34743,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-807','%s begins to retaliate all attacks against him!','0','2','0','14325','0'),
 ('-808','No one get past me and threaten da king!  Ungh, take it!!','0','0','0','14325','0'),
 ('-809','Help me crush these punys!','0','1','0','14325','0'),
--- REUSE 810 - 816
+('-810','Take the fight to them!','0','0','0','17945','0'),
+('-811','Tor ilisar\'thera\'nal!','0','0','0','17945','0'),
+('-812','Keep at them!','0','0','0','17945','0'),
+('-813','If it is Elune\'s... will.','0','0','0','17945','0'),
+-- REUSE 814 - 816
 ('-817','So or\'manley fi siame Dim fus siame yudo','5859','1','14','8580','0'),
 ('-818','You will rest with the honored dead.','0','0','0','18493','0'),
 ('-819','Turn back! Do not wake the dreamer!','5866','1','0','5721','0'),
@@ -35620,7 +35626,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10074,0,-792,0,'17943 - Random Aggro Texts'),
 (10074,0,-793,0,'17943 - Random Aggro Texts'),
 (10075,0,-794,0,'17943 - Random Death Texts'),
-(10075,0,-795,0,'17943 - Random Death Texts');
+(10075,0,-795,0,'17943 - Random Death Texts'),
+(10076,0,-810,0,'17945 - Random Aggro Texts'),
+(10076,0,-811,0,'17945 - Random Aggro Texts'),
+(10077,0,-812,0,'17945 - Random Death Texts'),
+(10077,0,-813,0,'17945 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
