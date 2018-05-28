@@ -30765,6 +30765,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1790501','17905','9','0','100','3','0','30','18000','24000','11','31651','4','33','0','0','0','0','0','0','0','0','Banshee - Cast Banshee Curse'),
 ('1790502','17905','0','0','100','3','7000','11000','11000','16000','11','38183','4','0','0','0','0','0','0','0','0','0','Banshee - Cast Banshee Wail'),
 ('1790503','17905','0','0','100','3','45000','60000','60000','90000','11','31662','0','1','0','0','0','0','0','0','0','0','Banshee - Cast Anti-Magic Shell'),
+('1790504','17905','6','0','25','2','0','0','0','0','54','0','0','10079','0','0','0','0','0','0','0','0','Banshee - Random Say on Death'),
 -- Gargoyle
 ('1790601','17906','9','0','80','3','0','35','5000','9000','11','31664','1','0','0','0','0','0','0','0','0','0','Gargoyle - Cast Gargoyle Strike'),
 -- Frost Wyrm
@@ -34785,7 +34786,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-847','Keep those pumps working.','0','0','0','21218','1'),
 ('-848','We must work faster.','0','0','0','21218','1'),
 ('-849','Enough! I have had enough of you filthy warm bloods!','0','1','0','21218','0'),
--- PLEASE RE-USE 850 - 859
+('-850','I am... released?','0','0','0','17905','0'),
+('-851','Let this torment end!!','0','0','0','17905','0'),
+('-852','Is it really... over?','0','0','0','17905','0'),
+-- PLEASE RE-USE 853 - 859
 ('-860','Vengeance will not be yours, $N!','0','0','0','22454','0'),
 -- PLEASE RE-USE -861 to -894
 ('-895','There is no escape for you. The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','1535','0'),
@@ -35636,7 +35640,10 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10077,0,-812,0,'17945 - Random Death Texts'),
 (10077,0,-813,0,'17945 - Random Death Texts'),
 (10078,0,-814,0,'17944 - Random Death Texts'),
-(10078,0,-815,0,'17944 - Random Death Texts');
+(10078,0,-815,0,'17944 - Random Death Texts'),
+(10079,0,-850,0,'17905 - Random Death Texts'),
+(10079,0,-851,0,'17905 - Random Death Texts'),
+(10079,0,-852,0,'17905 - Random Death Texts');
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
