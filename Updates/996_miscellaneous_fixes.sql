@@ -33,3 +33,5 @@ UPDATE creature_loot_template SET condition_id=3001 WHERE item=12842;
 -- Ozzie Togglevolt 1268 - modelid also used by 21413,21930,21935,21942,21944
 UPDATE `creature_model_info` SET `modelid_other_gender` = 0 WHERE `modelid` = 3441;
 
+-- 0 as AIName
+UPDATE `creature_template` SET `AIName` = '' WHERE `entry` IN (15554,16166,17290,17296,17431);
