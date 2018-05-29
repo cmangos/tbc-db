@@ -35,3 +35,7 @@ UPDATE `creature_model_info` SET `modelid_other_gender` = 0 WHERE `modelid` = 34
 
 -- 0 as AIName
 UPDATE `creature_template` SET `AIName` = '' WHERE `entry` IN (15554,16166,17290,17296,17431);
+
+-- c.22295 eligible target for Hotter than Hell q.10764
+DELETE FROM `spell_script_target` WHERE `entry` = 38202 AND `targetEntry` = 22295;
+INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES (38202, 2, 22295, 0);
