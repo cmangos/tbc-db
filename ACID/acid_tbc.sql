@@ -18990,6 +18990,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2228104','22281','0','0','100','1','2500','5500','15000','25000','11','39139','1','0','0','0','0','0','0','0','0','0','Galvanoth - Cast Fel Flamestrike'),
 -- Witness of Doom
 ('2228201','22282','0','0','100','0','1','1','0','0','25','0','0','0','54','-48','0','0','41','7000','0','0','Witness of Doom - Flee and Text Emote and Despawn Self on Aggro'),
+-- Eredar Stormbringer 22283 - Pre 2.1
+-- Fel Rager 22286 - Pre 2.1
+-- Amberpelt Clefthoof 22287 - Pre 2.1
+-- Darkflame Infernal 22289 - Pre 2.1
 -- Furnace Guard
 ('2229101','22291','0','0','100','1','6300','12800','6300','12800','11','32736','1','0','0','0','0','0','0','0','0','0','Furnace Guard - Cast Mortal Strike'),
 -- Vile Fire-Soul
@@ -19821,10 +19825,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2227307','22273','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Fel Warden - Disable Dynamic Movement and Set Phase 2 at 7% MP (Phase 1)'),
 ('2227308','22273','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Fel Warden - Set Phase 1 at 15% MP (Phase 2)'),
 ('2227309','22273','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Fel Warden - Set Phase to 0 on Evade'),
--- Bubbling Slimer Bunny
-('2250501','22505','1','0','100','1','1000','5000','22000','27000','12','22506','0','25000','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Summon Foul Purge'),
--- The Exorcism Lightning Cloud Bunny
-('2250801','22508','1','0','100','1','5000','6000','35000','45000','11','39381','0','1','0','0','0','0','0','0','0','0','The Exorcism Lightning Cloud Bunny - Cast The Exorcism Lightning Bunny Visual'),
+-- Deathforge Automaton 22295 - Pre 2.4 - NSR
+-- Throne-Guard Highlord 22297  - Pre 2.4 - guessed values
+('2229701','22297','0','0','100','1','9400','15400','12000','16000','11','24193','4','0','14','-99','0','0','0','0','0','0','Throne-Guard Highlord - Cast Charge and Reset Threat'),
+('2229702','22297','9','0','100','1','0','5','9000','12000','11','34996','1','0','0','0','0','0','0','0','0','0','Throne-Guard Highlord - Cast Uppercut'),
+-- Throne-Guard Sentinel 22301 - Pre 2.4 - guessed values
+('2230101','22301','0','0','100','1','8000','15000','20000','35000','11','39046','4','32','0','0','0','0','0','0','0','0','Throne-Guard Sentinel - Cast Impending Doom'),
+('2230102','22301','9','0','100','1','0','8','8000','12000','11','38750','0','0','0','0','0','0','0','0','0','0','Throne-Guard Sentinel - Cast War Stomp'),
+-- Throne-Guard Champion 22302 - Pre 2.4 - guessed values
+('2230201','22302','0','0','100','1','8000','12000','15000','15000','11','38741','4','0','0','0','0','0','0','0','0','0','Throne-Guard Champion - Cast Rain of Fire'),
+('2230202','22302','0','0','100','1','7000','12000','13000','17000','11','39048','0','1','0','0','0','0','0','0','0','0','Throne-Guard Champion - Cast Howl of Terror'),
+-- Throne Hound 22303 - Pre 2.4 - guessed values
+('2230301','22303','0','0','100','1','0','10000','12000','18000','11','32714','0','0','0','0','0','0','0','0','0','0','Throne Hound - Cast Frenzy'),
 -- Incandescent Fel Spark
 ('19228126','22323','0','0','100','1','0','1000','10000','11000','11','36247','1','0','0','0','0','0','0','0','0','0','Incandescent Fel Spark - Cast Fel Fireball'),
 ('19228127','22323','6','0','100','0','0','0','0','0','11','44877','0','3','0','0','0','0','0','0','0','0','Incandescent Fel Spark - Cast Living Flare Master on Death'),
@@ -19853,6 +19865,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Cannon MKI 22461
 ('2246101','22461','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Fel Cannon MKI - Prevent Movement and Prevent Melee on Spawn'),
 ('2246102','22461','0','0','100','1','0','1000','2500','2500','11','36238','1','0','0','0','0','0','0','0','0','0','Fel Cannon MKI - Combat - Cast Fel Cannon Blast'),
+-- Bubbling Slimer Bunny
+('2250501','22505','1','0','100','1','1000','5000','22000','27000','12','22506','0','25000','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Summon Foul Purge'),
+-- The Exorcism Lightning Cloud Bunny
+('2250801','22508','1','0','100','1','5000','6000','35000','45000','11','39381','0','1','0','0','0','0','0','0','0','0','The Exorcism Lightning Cloud Bunny - Cast The Exorcism Lightning Bunny Visual'),
 -- Felblood Initiate - spell_dummy_npc
 ('2491801','24918','9','0','100','1','0','5','5000','9000','11','14873','1','0','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Sinister Strike'),
 ('2491802','24918','9','0','100','1','0','5','12000','16000','11','35871','1','0','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Spellbreaker'),
