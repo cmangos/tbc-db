@@ -30733,7 +30733,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1789501','17895','0','0','100','3','3000','7000','15000','30000','11','31540','0','0','0','0','0','0','0','0','0','0','Ghoul - Cast Frenzy'),
 ('1789502','17895','2','0','100','2','7','0','0','0','11','31537','0','0','0','0','0','0','0','0','0','0','Ghoul - Cast Cannibalize at 7% HP'),
 -- Crypt Fiend
-('1789701','17897','9','0','100','3','0','10','10000','14000','11','28991','4','0','0','0','0','0','0','0','0','0','Crypt Fiend - Cast Web'),
+('1789701','17897','0','0','100','1','0','2500','2500','8000','11','31592','1','2','0','0','0','0','0','0','0','0','Crypt Fiend - Cast Crypt Scarabs'),
 -- Abomination
 ('1789801','17898','11','0','100','2','0','0','0','0','11','31607','0','0','0','0','0','0','0','0','0','0','Abomination - Cast Disease Cloud on Spawn'),
 ('1789802','17898','9','0','100','3','0','5','12000','19000','11','31610','1','0','0','0','0','0','0','0','0','0','Abomination - Cast Knockdown'),
@@ -30877,6 +30877,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ancient Wisp (SD2 Backport)
 ('1794601','17946','0','0','100','3','1000','2000','2000','3000','11','39349','1','0','0','0','0','0','0','0','0','0','Ancient Wisp - Cast Ancient Spark'),
 -- Tyrande Whisperwind (17948) - npc_tyrande_whisperwind
+-- Crypt Scarab
+('1796701','17967','11','0','100','0','0','0','0','0','11','39487','0','2','11','16420','0','2','11','16423','0','2','Crypt Scarab - Cast Crypt Scarab Hate and Cast Crypt Scarab Confuse and Cast Crypt Scarab Suicide Passive on Spawn'),
+('1796702','17967','8','0','100','0','16424','-1','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Crypt Scarab - Die on Crypt Scarab Suicide SpellHit'),
 -- Archimonde (17968) - boss_archimonde
 -- Guardian Water Elemental (18001) - NSR
 -- Horde Healing Ward (18036) - POSSIBLE HEALING SPELL CASTS???
