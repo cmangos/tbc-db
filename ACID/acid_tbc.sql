@@ -1365,7 +1365,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Soldier (16298) - NSR
 -- Skeletal Shocktrooper (16299) - NSR
 -- Spirit of the Damned (16379) - NSR
--- Bone Witch (16380) - NSR
+-- Bone Witch 16380 - Scourge Strike 28265
+('1638001','16380','4','0','100','0','0','0','0','0','11','32900','0','34','49','1','0','0','22','1','0','0','Bone Witch - Cast Bone Shards Proc and Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('1638002','16380','9','5','100','1','0','40','4000','8000','11','20720','1','0','0','0','0','0','0','0','0','0','Bone Witch - Cast Arcane Bolt (Phase 1)'),
+('1638003','16380','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bone Witch - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('1638004','16380','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Bone Witch - Disable Dynamic Movement at 0-8 Yards'),
+('1638005','16380','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bone Witch - Set Phase 0 on Evade'),
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Sevel (16840) - NSR
 -- Watch Commander Relthorn Netherwane (16841) - NSR
@@ -1686,7 +1691,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Soldier (16298) - NSR
 -- Skeletal Shocktrooper (16299) - NSR
 -- Spirit of the Damned (16379) - NSR
--- Bone Witch (16380) - NSR
+-- Bone Witch (16380) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Void Zone (16697) - Should Be Scripted in SD2
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Anvilrage Taskmaster
@@ -3007,7 +3012,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1637804','16378','9','0','100','1','0','5','8000','14000','11','15618','1','1','0','0','0','0','0','0','0','0','Argent Sentry - Cast Snap Kick'),
 ('1637805','16378','9','0','100','1','20','45','2300','3900','11','23337','1','0','40','2','0','0','0','0','0','0','Argent Sentry - Cast Shoot and Set Ranged Weapon Model'),
 -- Spirit of the Damned (16379) - NSR
--- Bone Witch (16380) - NSR
+-- Bone Witch (16380) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Argent Dawn Paladin (16395) - NSR
 -- Argent Dawn Crusader (16433) - NSR
 -- Argent Dawn Champion (16434) - NSR
@@ -16423,7 +16428,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Soldier (16298) - NSR
 -- Skeletal Shocktrooper (16299) - NSR
 -- Spirit of the Damned (16379) - NSR
--- Bone Witch (16380) - NSR
+-- Bone Witch (16380) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Rumsen Fizzlebrack (16417) - NSR
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Darkwater Crocolisk (17952) - ALREADY SCRIPTED IN ANOTHER ZONE
@@ -17964,7 +17969,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Soldier 16298 NSR
 -- Skeletal Shocktrooper 16299 NSR
 -- Spirit of the Damned 16379 NSR
--- Bone Witch 16380 NSR
+-- Bone Witch 16380 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Bronn Fitzwrench 16416
 -- Midsummer Celebrant 16781 NSR
 -- Goblin Commoner 20102
