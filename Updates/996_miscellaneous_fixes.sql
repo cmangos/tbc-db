@@ -39,3 +39,11 @@ UPDATE `creature_template` SET `AIName` = '' WHERE `entry` IN (15554,16166,17290
 -- c.22295 eligible target for Hotter than Hell q.10764
 DELETE FROM `spell_script_target` WHERE `entry` = 38202 AND `targetEntry` = 22295;
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffectMask`) VALUES (38202, 2, 22295, 0);
+
+-- Summon Enraged Felbat 14252, Summon Enraged Wyvern 14307, Summon Enraged Gryphon 14313, Summon Enraged Hippogryph 14329, Summon Enraged Mounts 29110
+UPDATE `creature_template` SET `SpeedRun` = (30 / 7), `SpeedWalk` = (2.5 / 2.5), `Rank` = 1, `PowerMultiplier` = 3, `MovementType` = 0
+WHERE `entry` IN (
+9297, -- Enraged Wyvern
+9521, -- Enraged Felbat
+9526, -- Enraged Gryphon
+9527); -- Enraged Hippogryph
