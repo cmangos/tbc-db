@@ -10852,7 +10852,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit of the Vale (17087) - NSR
 -- Firmanvaar (17089) - NSR
 -- Diktynna (17101) - NSR
--- Angry Murloc - NSR
+-- Angry Murloc 17102
+('1710201','17102','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Angry Murloc - Flee at 15% HP'),
 -- Acteon (17110) - NSR
 -- Arugoo of the Stillpine (17114) - NSR
 -- Exarch Menelaous (17116) - NSR
