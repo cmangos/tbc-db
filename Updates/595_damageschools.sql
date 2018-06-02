@@ -10,9 +10,6 @@ UPDATE `creature_template` SET `damageschool` = 5 WHERE `entry` = 14686;
 -- http://wowwiki.wikia.com/wiki/Giant_Infernal
 UPDATE `creature_template` SET `damageschool` = 2 WHERE `entry` = 17908;
 
--- http://wowwiki.wikia.com/wiki/Patch_2.1.0, http://www.wowhead.com/npc=18405/tempest-forge-peacekeeper#comments:id=49024:reply=4923
-UPDATE `creature_template` SET `damageschool` = 6 WHERE `entry` IN (18405,21578);
-
 -- http://wowwiki.wikia.com/wiki/Hydross_the_Unstable
 UPDATE `creature_template` SET `damageschool` = 4 WHERE `entry` = 22035;
 UPDATE `creature_template` SET `damageschool` = 3 WHERE `entry` = 22036;
