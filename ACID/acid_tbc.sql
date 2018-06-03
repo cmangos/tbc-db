@@ -24787,7 +24787,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('919601','9196','0','0','100','3','12000','12000','18000','18000','11','10101','1','0','0','0','0','0','0','0','0','0','Highlord Omokk - Cast Knock Away'),
 ('919602','9196','2','0','100','2','20','0','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','Highlord Omokk - Cast Frenzy'),
 ('919603','9196','0','0','100','3','1000','3000','15000','25000','1','-359','-360','0','0','0','0','0','0','0','0','0','Highlord Omokk - Random Combat Say'),
-('919604','9196','5','0','100','3','0','0','0','0','1','-361','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Player Kill'),
+('919604','9196','5','0','100','3','0','0','0','0','1','-1367','0','0','0','0','0','0','0','0','0','0','Highlord Omokk - Yell on Player Kill'),
 -- Spirestone Battle Mage - Aggro Texts
 ('919701','9197','0','0','100','3','4000','10000','5000','15000','11','15305','4','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Chain Lighting'),
 ('919702','9197','16','0','100','3','16170','40','20000','20000','11','16170','6','0','0','0','0','0','0','0','0','0','Spirestone Battle Mage - Bloodlust on Friendly Missing Buff'),
@@ -35227,7 +35227,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1351','AYYAYAAYAA!','0','0','0','22483','0'),
 ('-1352','AWOOOOGAAAA!','0','0','0','22483','0'),
 ('-1353','AAAAEEEEEEIIIIIIII!!!!!','0','0','0','22483','0'),
--- PLEASE RE-USE 1354 - 1367 classic>tbc>wotlk
+-- PLEASE RE-USE 1354 - 1366 classic>tbc>wotlk
+('-1367','Raaar!!! Me smash $R!','0','0','0','9196','1'),
 ('-1368','I cannot be destroyed! By the will of Ragnaros, I shall be reborn!','0','0','0','9017','0'),
 ('-1369','What are you doing? Intruders!!','0','1','0','9476','0'),
 ('-1370','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
