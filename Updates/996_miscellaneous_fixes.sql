@@ -65,3 +65,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- Silvermoon Ritual of Summoning Dummy 18782
 UPDATE `creature_template` SET `UnitFlags` = 33554432, `ExtraFlags` = 0, `ModelId2` = 11686 WHERE `entry` = 18782;
+
+-- Injured Grunt 19432
+UPDATE `creature_template` SET `ModelId1` = 16307, `ModelId2` = 4259, `ModelId3` = 4602  WHERE `entry` = 19432;
+
+-- Orgrimmar Peon 19425
+UPDATE `creature_template` SET `ModelId1` = 16310, `ModelId2` = 16312 WHERE `entry` = 19425;
