@@ -21051,7 +21051,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tormented Soul
 ('2051201','20512','4','0','100','0','0','0','0','0','36','20480','1','0','41','300000','0','0','0','0','0','0','Tormented Soul - Transform into Kirin\'Var Ghost and Delayed Despawn on Aggro'),
 ('2051202','20512','0','0','100','1','6000','8000','15000','17000','11','36153','1','0','0','0','0','0','0','0','0','0','Tormented Soul - Cast Soulbind'),
--- Harpax 20515
+-- Harpax 20515 - NSR
 -- Warp Monstrosity 20516
 -- Image of Wind Trader Marid
 ('2051801','20518','11','0','100','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Image of Wind Trader Marid - Cast Simple Teleport on Spawn'),
@@ -21260,6 +21260,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2126701','21267','18','0','100','1','100','1','5000','10000','11','36484','0','0','0','0','0','0','0','0','0','0','Mana Beast - Cast Mana Burn on Target Mana User'),
 -- Ethereum Mace
 ('2128601','21286','11','0','100','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Ethereum Mace - Cast Simple Teleport on Spawn'),
+-- Warp Storm 21322
+('2132201','21322','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Warp Storm - Disable Movement and Melee on Spawn'),
+('2132202','21322','0','0','100','1','1000','2000','3000','5000','11','36580','0','0','0','0','0','0','0','0','0','0','Warp Storm - Cast Warp Storm'),
 -- Netherock Crumbler 21323
 -- Apex Crumbler 21328
 -- Thorny Growth 21331
@@ -30996,6 +30999,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1848702','18487','9','0','100','3','0','5','8000','12000','11','45','0','1','0','0','0','0','0','0','0','0','Night Elf Ancient Protector - Cast War Stomp'),
 -- Night Elf Wisp
 ('1850201','18502','0','0','100','1','0','1000','2000','3000','11','32110','1','0','0','0','0','0','0','0','0','0','Night Elf Wisp - Cast Spark'),
+-- Infernal Target (Hyjal) 21075 - NSR
 -- Tydormu (23381) - NSR
 -- Indormi (23437) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
