@@ -13547,7 +13547,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2363608','23636','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Mudsprocket Bruiser - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Deserter Lieutenant
 ('2363701','23637','9','0','100','1','0','5','9000','13000','11','11972','1','0','0','0','0','0','0','0','0','0','Deserter Lieutenant - Cast Shield Bash'),
--- Garn Mathers (23679) - NSR
+-- Garn Mathers 23679
+('2367901','23679','1','0','100','0','1000','1000','0','0','11','43124','0','0','0','0','0','0','0','0','0','0','Garn Mathers - Cast Lifesteal OOC'),
+('2367902','23679','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Garn Mathers - Flee at 15% HP'),
 -- Scorchscale Drake
 ('2368701','23687','9','0','100','1','0','8','7000','11000','11','8873','1','0','0','0','0','0','0','0','0','0','Scorchscale Drake - Cast Flame Breath'),
 -- Mirefin Ambusher
