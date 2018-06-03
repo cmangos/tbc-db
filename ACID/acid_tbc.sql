@@ -15238,6 +15238,20 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hellfire Combat Dummy 17059
 -- Ambassador Dawnsinger 17098
 -- Rough Stone Statue 18372
+('1837201','18372','11','0','100','0','0','0','0','0','11','32253','11','0','0','0','0','0','0','0','0','0','Rough Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1837202','18372','29','0','100','0','12500','12500','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Rough Stone Statue - Die on Generic Timer'),
+-- Coarse Stone Statue 18734
+('1873401','18734','11','0','100','0','0','0','0','0','11','32787','11','0','0','0','0','0','0','0','0','0','Coarse Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1873402','18734','29','0','100','0','12500','12500','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Coarse Stone Statue - Die on Generic Timer'),
+-- Heavy Stone Statue 18735
+('1873501','18735','11','0','100','0','0','0','0','0','11','32788','11','0','0','0','0','0','0','0','0','0','Heavy Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1873502','18735','29','0','100','0','16500','16500','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Heavy Stone Statue - Die on Generic Timer'),
+-- Solid Stone Statue 18736
+('1873601','18736','11','0','100','0','0','0','0','0','11','32790','11','0','0','0','0','0','0','0','0','0','Solid Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1873602','18736','29','0','100','0','16500','16500','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Solid Stone Statue - Die on Generic Timer'),
+-- Dense Stone Statue 18737
+('1873701','18737','11','0','100','0','0','0','0','0','11','32791','11','0','0','0','0','0','0','0','0','0','Dense Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1873702','18737','29','0','100','0','25500','25500','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Dense Stone Statue - Die on Generic Timer'),
 -- Orc Commoner 19175
 -- Troll Commoner 19177
 -- Councilor Arial D'Anastasis 19850
