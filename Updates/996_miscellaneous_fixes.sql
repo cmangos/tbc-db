@@ -105,3 +105,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnmask`, `position_x`, `positio
 UPDATE `creature_template` SET `AIName` = 'TotemAI' WHERE `entry` = 22895;
 DELETE FROM `creature_template_spells` WHERE `entry` = 22895;
 INSERT INTO `creature_template_spells` (`entry`, `spell1`) VALUES (22895, 39592);
+
+-- Garn Mathers 23679 - Pathing & Aura
+UPDATE `creature_template_addon` SET `auras` = '43124' WHERE `entry` = 23679;
+UPDATE `creature` SET `position_x` = -3050.214, `position_y` = -4329.639, `position_z` = 8.156482, `MovementType` = 2 WHERE `guid` = 30758 AND `id` = 23679;
+DELETE FROM `creature_movement_template` WHERE `entry` = 23679;
+INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(23679, 1, -3036.532, -4321.038, 7.281482, 100, 0, 0),
+(23679, 2, -3023.106, -4328.81, 7.629521, 100, 0, 0),
+(23679, 3, -3008.108, -4334.823, 6.678975, 100, 0, 0),
+(23679, 4, -2997.053, -4344.776, 6.470808, 100, 0, 0),
+(23679, 5, -2981.868, -4353.176, 8.554548, 100, 0, 0),
+(23679, 6, -2970.308, -4358.457, 9.804548, 100, 0, 0),
+(23679, 7, -2972.343, -4368.458, 9.75026, 100, 0, 0),
+(23679, 8, -2983.737, -4381.268, 10.37526, 100, 0, 0),
+(23679, 9, -3001.056, -4383.682, 10.51553, 100, 0, 0),
+(23679, 10, -3011.959, -4373.93, 9.140532, 100, 0, 0),
+(23679, 11, -3040.596, -4358.319, 8.194913, 100, 0, 0),
+(23679, 12, -3047.94, -4343.792, 8.069913, 100, 0, 0),
+(23679, 13, -3050.214, -4329.639, 8.156482, 100, 0, 0);
