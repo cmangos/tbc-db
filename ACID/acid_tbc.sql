@@ -19776,6 +19776,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1942405','19424','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Despawn Guardians on Evade'),
 -- Orgrimmar Peon 19425
 ('1942501','19425','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Orgrimmar Peon - Cast Invisibility and Stealth Detection OOC'),
+-- Peon Overseer 19426
+('1942601','19426','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Peon Overseer - Cast Invisibility and Stealth Detection OOC'),
 -- Dreadcaller
 ('1943401','19434','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dreadcaller - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1943402','19434','9','5','100','1','0','40','3400','4800','11','32666','1','0','0','0','0','0','0','0','0','0','Dreadcaller - Cast Shadow Bolt (Phase 1)'),
