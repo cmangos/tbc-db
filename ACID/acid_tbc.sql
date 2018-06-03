@@ -13532,7 +13532,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Apprentice Morlann (23600) - NSR
 -- Apprentice Garion (23601) - NSR
 -- Deserter Agitator (23602) - npc_deserter_agitator
--- Dyslix Silvergrub (23612) - NSR
+-- Dyslix Silvergrub 23612
+('2361201','23612','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Dyslix Silvergrub - Spawn Enraged Wyvern and Gryphon on Aggro'),
 -- Privateer
 ('2362001','23620','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Privateer - Flee at 15% HP'),
 -- Mudsprocket Bruiser
@@ -17280,7 +17281,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1286507','12865','0','0','100','1','5000','9000','15000','25000','11','8282','1','32','0','0','0','0','0','0','0','0','Ambassador Malcin - Cast Curse of Blood'),
 ('1286508','12865','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ambassador Malcin - Set Phase 0 on Evade'),
 -- Bragok 16227
-('1622701','16227','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','1','-549','0','0','Bragok - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
+('1622701','16227','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Bragok - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 
 
 
