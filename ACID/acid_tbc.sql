@@ -771,6 +771,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sir Maximus Adams (19855) - NSR
 -- The Black Bride (19905) - NSR
 -- Minor Voidwalker (24476) - NSR
+-- Syndicate Thief 24477
+('2447701','24477','1','0','100','0','1000','1000','0','0','11','3616','0','32','0','0','0','0','0','0','0','0','Syndicate Thief - Cast Poison Proc OOC'),
+('2447702','24477','33','0','100','1','0','0','1800','9800','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Thief - Cast Backstab on Facing Target Back'),
+('2447703','24477','0','0','100','1','5000','9000','18000','24000','11','8379','1','0','0','0','0','0','0','0','0','0','Syndicate Thief - Cast Disarm'),
+('2447704','24477','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Thief - Flee at 15% HP'),
 -- Arathi Flame Warden (25887) - NSR
 -- Arathi Flame Keeper (25923) - NSR
 -- Flame Eater (25994) - NSR
