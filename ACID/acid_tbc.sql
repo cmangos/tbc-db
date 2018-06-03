@@ -15680,6 +15680,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1776503','17765','0','0','100','1','6000','8000','22000','24000','11','18328','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Incapacitating Shout'),
 ('1776504','17765','13','0','100','1','20000','30000','22000','24000','11','11972','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel -  Cast Shield Bash on Target Casting'),
 -- Horde Silithyst Sentinel 17766
+('1776601','17766','4','0','100','0','0','30','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Dismounting Blast on Aggro'),
+('1776602','17766','9','0','100','1','5','30','12000','14000','11','19643','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Mortal Strike'),
+('1776603','17766','0','0','100','1','6000','8000','22000','24000','11','18328','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Incapacitating Shout'),
+('1776604','17766','13','0','100','1','20000','30000','22000','24000','11','11972','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel -  Cast Shield Bash on Target Casting'),
 -- Silithus Flame Warden 25914
 -- Silithus Flame Keeper 25919
 -- Glacial Lieutenant 26215
