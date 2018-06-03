@@ -62,3 +62,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (15576, 8, -351.5483, -697.48, 57.64296, 100, 0, 0),
 (15576, 9, -362.4808, -716.3622, 57.62971, 100, 0, 0),
 (15576, 10, -359.8831, -724.0493, 57.7183, 100, 0, 0);
+
+-- Silvermoon Ritual of Summoning Dummy 18782
+UPDATE `creature_template` SET `UnitFlags` = 33554432, `ExtraFlags` = 0, `ModelId2` = 11686 WHERE `entry` = 18782;
