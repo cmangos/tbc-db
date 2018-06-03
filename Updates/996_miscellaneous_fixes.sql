@@ -100,3 +100,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnmask`, `position_x`, `positio
 (191124, 21941, 530, 1, -3670.686, 4793.217, -20.97872, 2.007943, 300, 300, 5, 1),
 (191125, 21941, 530, 1, -3721.201, 4685.048, -16.82257, 4.183875, 300, 300, 5, 1),
 (191126, 21941, 530, 1, -3720.889, 4759.596, -19.78682, 3.498393, 300, 300, 5, 1);
+
+-- Summoned Searing Totem 22895 s.39591
+UPDATE `creature_template` SET `AIName` = 'TotemAI' WHERE `entry` = 22895;
+DELETE FROM `creature_template_spells` WHERE `entry` = 22895;
+INSERT INTO `creature_template_spells` (`entry`, `spell1`) VALUES (22895, 39592);
