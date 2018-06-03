@@ -20269,6 +20269,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunspring Post Credit Marker 18840 - npc_creditmarker_visit_with_ancestors
 -- Laughing Skull Clan Ruins Credit Marker 18841 - npc_creditmarker_visit_with_ancestors
 -- Garadar Credit Marker 18842 - npc_creditmarker_visit_with_ancestors
+-- "King" Dond 18897
+('1889701','18897','10','0','100','1','1','5','60000','120000','54','-1597','0','0','0','0','0','0','0','0','0','0','"King" Dond - Say OOC LOS'),
 -- Wazat
 ('1903501','19035','1','0','100','1','15000','22000','55000','65000','1','-1532','-1533','-1534','0','0','0','0','0','0','0','0','Wazat - Random Say OOC'),
 -- Windroc Matriarch
@@ -35435,7 +35437,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1593','I must feed! Prepare to die!','8508','0','0','15367','0'),
 ('-1594','Foolish Whelp! I will consume your energies and then your soul!','8507','0','0','15367','0'),
 ('-1595','How can you have any pudding if you don\'t eat your fish?','0','0','7','Otonambusi 18810','5'),
-('-1596','If you don\'t eat your fish, you can\'t have any pudding!','0','0','7','Otonambusi 18810','5');
+('-1596','If you don\'t eat your fish, you can\'t have any pudding!','0','0','7','Otonambusi 18810','5'),
+('-1597','Welcome, welcome, to the recently appropriated and callously renamed Steamwheedle Stadium!','0','0','0','"King" Dond 18897','0');
+
 
 
 -- =======================================================
