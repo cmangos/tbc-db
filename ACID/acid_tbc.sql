@@ -5930,6 +5930,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gatewatcher Aendor 18790
 -- Harassed Citizen (18792) - NSR
 -- Silvermoon Citizen 18799
+('1879901','18799','1','0','100','1','0','5000','25000','40000','5','4','0','0','0','0','0','0','0','0','0','0','Silvermoon Citizen - EMOTE_ONESHOT_CHEER OOC'),
 -- Blood Elf Commoner (19169) - NSR
 -- Kalinda 19775
 -- Bipp Glizzitor (19923) - NSR
