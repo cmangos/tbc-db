@@ -19233,7 +19233,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1659003','16590','1','0','30','1','459000','459000','459000','459000','1','-300','0','0','0','0','0','0','0','0','0','0','Injured Thrallmar Grunt - Gossip (3)'),
 ('1659004','16590','1','0','100','1','464000','464000','464000','464000','1','-301','0','0','0','0','0','0','0','0','0','0','Injured Thrallmar Grunt - Gossip Speech (5)'),
 -- Thrallmar Peon 16591
-('1659101','16591','0','0','100','33','5000','10000','15000','20000','11','19643','1','0','11','15618','1','0','0','0','0','0','Thrallmar Peon - Cast Mortal Strike or Cast Snap Kick'),
+('1659101','16591','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Thrallmar Peon - Cast Invisibility and Stealth Detection OOC'),
+('1659102','16591','0','0','100','33','5000','10000','15000','20000','11','19643','1','0','11','15618','1','0','0','0','0','0','Thrallmar Peon - Cast Mortal Strike or Cast Snap Kick'),
 -- Thrallmar Wolf Rider 16599
 ('1659901','16599','4','0','100','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Thrallmar Wolf Rider - Dismount on Aggro'),
 ('1659902','16599','0','0','100','0','5000','15000','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Thrallmar Wolf Rider - Cast Dismounting Blast'),
@@ -19773,6 +19774,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1942403','19424','14','0','100','1','800','20','18000','26000','11','33976','6','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Cast Mend Pet on Friendly Missing HP'),
 ('1942404','19424','2','0','100','0','15','0','0','0','11','31553','1','0','1','-47','0','0','25','0','0','0','Bleeding Hollow Tormentor - Cast Hamstring and Flee at 15% HP'),
 ('1942405','19424','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Despawn Guardians on Evade'),
+-- Orgrimmar Peon 19425
+('1942501','19425','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Orgrimmar Peon - Cast Invisibility and Stealth Detection OOC'),
 -- Dreadcaller
 ('1943401','19434','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Dreadcaller - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1943402','19434','9','5','100','1','0','40','3400','4800','11','32666','1','0','0','0','0','0','0','0','0','0','Dreadcaller - Cast Shadow Bolt (Phase 1)'),
@@ -21377,6 +21380,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1893901','18939','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Brubeck Stormfoot - Spawn Enraged Gryphons and Yell on Aggro'),
 -- Drek'Gol
 ('1931701','19317','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Drek\'Gol - Spawn Enraged Wyverns and Yell on Aggro'),
+-- Shadowmoon Peon 19355
+('1935501','19355','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Shadowmoon Peon - Cast Invisibility and Stealth Detection OOC'),
 -- Kor'kron Defender
 ('1936201','19362','1','0','5','1','190000','190000','250000','550000','1','-316','-315','0','0','0','0','0','0','0','0','0','Kor\'kron Defender - Gossip Yell OOC'),
 -- Barimoke Wildbeard
@@ -22628,6 +22633,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1900003','19000','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','High Elf Ranger - Enable Dynamic Movement at 9-80 Yards'),
 ('1900004','19000','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','High Elf Ranger - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1900005','19000','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','High Elf Ranger - Set Melee Weapon Model on Evade'),
+-- Stonebreaker Peon 19048
+('1904801','19048','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Stonebreaker Peon - Cast Invisibility and Stealth Detection OOC'),
 -- Lemla Hopewing
 ('1918101','19181','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Lemla Hopewing - Spawn Enraged Gryphons and Yell on Aggro'),
 -- Ancient Draenei Spirit
