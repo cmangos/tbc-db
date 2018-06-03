@@ -4574,7 +4574,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rousch (16090) - NSR
 -- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Duskingdawn (17092) - NSR
--- Forsaken Raider (17108) - NSR
+-- Forsaken Raider 17108
+('1710801','17108','1','0','100','0','1000','8000','0','0','11','6718','0','32','11','8601','0','32','0','0','0','0','Forsaken Raider - Cast Phasing Stealth and Slowing Poison OOC'),
+('1710802','17108','4','0','100','0','0','0','0','0','28','0','6718','0','0','0','0','0','0','0','0','0','Forsaken Raider - Remove Phasing Stealth on Aggro'),
 -- Huraan (17218) - NSR
 -- Hillsbrad Flame Warden (25901) - NSR
 -- Hillsbrad Flame Keeper (25935) - NSR
