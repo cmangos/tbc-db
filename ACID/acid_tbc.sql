@@ -34103,7 +34103,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-136','Bah! My power rules here!','5816','1','0','4421','0'),
 ('-137','I will be reborn, mortals! Incendius shall raise me from these ashes!','0','0','0','9026','0'),
 ('-138','It\'s so cold, so dark.... I\'m not overacting, am I?','0','0','0','16473','0'),
--- PLEASE RE-USE 139 classic>tbc>wotlk
+-- ('-139','You have come to play? Then let us play!','0','0','0','9520','0'), -- related to q.4122?
 ('-140','The coils of death... Will crush you.','5787','1','0','3670','0'),
 ('-141','Invaders! Sound the Alarm!','0','1','0','23586','0'),
 ('-142','Get it while it\'s hot!','0','0','0','3518','0'),
@@ -34877,7 +34877,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-961','It smells like...','0','0','0','19635','1'),
 ('-962','...victory.','0','0','0','19635','15'),
 ('-963','Looks like today was the wrong day to quit mana tapping...','0','0','0','19926','1'),
--- PLEASE RE-USE 964 classic>tbc>wotlk
+-- ('-964','Excellent. We must focus our efforts on the cleansing of Nagrand!','0','0','0','18537','5'), -- unknown when this is used, might be pre 2.4, quest related or custom
 ('-965','The rift\'s power is ours!','0','0','33','24966','0'),
 ('-966','Core overload detected. System malfunction detected...','0','2','0','24972','0'),
 ('-967','Beat or be beaten! This is the way of the Legion!','0','1','0','25158','1'),
