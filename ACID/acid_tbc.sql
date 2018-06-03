@@ -20229,6 +20229,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1865809','18658','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kil\'sorrow Ritualist - Flee at 15% HP (Phase 3)'),
 ('1865810','18658','30','0','100','1','5','18660','0','0','11','32623','10','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Cast Power Subjugator on Receive AI Event Custom A'),
 ('1865811','18658','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Kil\'sorrow Ritualist - Set Phase 0 on Evade'),
+-- Voidwraith 18659
+('1865901','18659','6','0','100','0','0','0','0','0','12','19480','1','300','0','0','0','0','0','0','0','0','Voidwraith - Summon Darkened Spirit on Death'), -- Soul Split s.34064
 -- Subjugator Vaz'shir 18660
 ('1866001','18660','1','0','100','0','1000','1000','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A on OOC Timer'),
 ('1866002','18660','21','0','100','0','0','0','0','0','45','5','10','0','11','32622','0','0','0','0','0','0','Subjugator Vaz\'shir - Cast Drain K\'ure and Send AI Event Custom A on Reached Home'),
