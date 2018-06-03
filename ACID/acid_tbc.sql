@@ -11049,7 +11049,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nabek (17930) - NSR
 -- Heur (17983) - NSR
 -- Azuremyst Peacekeeper (18038) - guard_azuremyst
--- Otonambusi (18810) - NSR
+-- Otonambusi 18810
+('1881001','18810','1','0','100','1','120000','240000','300000','420000','1','-1595','-1596','0','0','0','0','0','0','0','0','0','Otonambusi - Say OOC'),
 -- Nibblet (19073) - NSR
 -- Apprentice Tedon
 ('2022701','20227','30','0','100','1','5','16516','0','0','18','256','10','0','0','0','0','0','0','0','0','0','Apprentice Tedon - Change Targets UnitFlag on Receive AI Event'),
@@ -35432,8 +35433,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1591','Me feast on you all!','5824','1','0','8567','0'),
 ('-1592','I\'ll feast on your bones!','5860','1','0','8580','0'),
 ('-1593','I must feed! Prepare to die!','8508','0','0','15367','0'),
-('-1594','Foolish Whelp! I will consume your energies and then your soul!','8507','0','0','15367','0');
-
+('-1594','Foolish Whelp! I will consume your energies and then your soul!','8507','0','0','15367','0'),
+('-1595','How can you have any pudding if you don\'t eat your fish?','0','0','7','Otonambusi 18810','5'),
+('-1596','If you don\'t eat your fish, you can\'t have any pudding!','0','0','7','Otonambusi 18810','5');
 
 
 -- =======================================================
