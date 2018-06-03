@@ -71,3 +71,11 @@ UPDATE `creature_template` SET `ModelId1` = 16307, `ModelId2` = 4259, `ModelId3`
 
 -- Orgrimmar Peon 19425
 UPDATE `creature_template` SET `ModelId1` = 16310, `ModelId2` = 16312 WHERE `entry` = 19425;
+
+-- Murg "Oldie" Muckjaw
+UPDATE creature_template SET UnitFlags=33024 WHERE entry=23340;
+-- Trope the Filth-Belcher
+UPDATE creature_template SET UnitFlags=33024 WHERE entry=23342;
+-- Dragonmaw Race: Trope's Target
+UPDATE creature_template SET UnitFlags=33554432, InhabitType=7 WHERE entry=23357;
+
