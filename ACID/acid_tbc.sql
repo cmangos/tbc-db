@@ -20603,7 +20603,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1952902','19529','9','0','100','1','0','5','9000','11000','11','16856','1','0','0','0','0','0','0','0','0','0','Stormspire Nexus-Guard - Cast Mortal Strike'),
 ('1952903','19529','0','0','100','1','7000','9000','5000','7000','11','15284','1','0','0','0','0','0','0','0','0','0','Stormspire Nexus-Guard - Cast Cleave'),
 -- Eyonix (19531) - NSR
--- Dealer Aljaan (19533) - NSR
+-- Dealer Aljaan 19533
+('1953301','19533','10','0','100','1','1','5','60000','120000','1','-1598','0','0','0','0','0','0','0','0','0','0','Dealer Aljaan - Say OOC LOS'),
 -- Dealer Digriz
 ('1953401','19534','1','0','100','1','120000','120000','180000','240000','1','-337','0','0','0','0','0','0','0','0','0','0','Dealer Digriz - Say OOC'),
 -- Dealer Zijaad
@@ -35455,7 +35456,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1594','Foolish Whelp! I will consume your energies and then your soul!','8507','0','0','15367','0'),
 ('-1595','How can you have any pudding if you don\'t eat your fish?','0','0','7','Otonambusi 18810','5'),
 ('-1596','If you don\'t eat your fish, you can\'t have any pudding!','0','0','7','Otonambusi 18810','5'),
-('-1597','Welcome, welcome, to the recently appropriated and callously renamed Steamwheedle Stadium!','0','0','0','"King" Dond 18897','0');
+('-1597','Welcome, welcome, to the recently appropriated and callously renamed Steamwheedle Stadium!','0','0','0','"King" Dond 18897','0'),
+('-1598','A tradesman, perhaps? You need look no further than I for supplies. My prices are quite fair, friend. These items were difficult to acquire, but what does the source matter, eh? You\'ll have what you need.','0','0','0','Dealer Aljaan 19533','1');
 
 
 
