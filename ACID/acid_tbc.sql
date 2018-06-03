@@ -18982,6 +18982,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fear Fiend
 ('2220401','22204','9','0','50','1','0','5','8000','16000','11','38356','0','0','0','0','0','0','0','0','0','0','Fear Fiend - Cast Fel Flames'),
 -- Expedition Druid 22206 - NSR
+-- Fhyn Leafshadow 22216
+('2221601','22216','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Fhyn Leafshadow - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 -- Felstorm Corruptor 22217
 ('2221701','22217','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Felstorm Corruptor - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2221702','22217','9','13','100','1','0','40','3400','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Felstorm Corruptor - Cast Shadow Bolt (Phase 1)'),
