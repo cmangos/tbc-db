@@ -3718,7 +3718,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1781001','17810','4','0','100','0','0','0','0','0','11','20164','0','0','0','0','0','0','0','0','0','0','Champion Lightrend - Cast Seal of Justice on Aggro'),
 -- Champion Swiftblade
 ('1781101','17811','2','0','100','1','50','0','20000','35000','11','19939','0','0','0','0','0','0','0','0','0','0','Champion Swiftblade - Cast Flash of Light at 50% HP'),
--- Champion Sunstriker (17812) - NSR
+-- Champion Sunstriker 17812
+('1781201','17812','0','0','100','1','0','0','3000','3000','11','20375','0','32','0','0','0','0','0','0','0','0','Champion Sunstriker - Cast Seal of Command'),
+('1781202','17812','0','0','100','1','0','6000','6000','6000','11','20271','1','0','0','0','0','0','0','0','0','0','Champion Sunstriker - Cast Judgement'),
+('1781203','17812','2','0','100','1','50','0','8000','13000','11','19939','0','1','0','0','0','0','0','0','0','0','Champion Sunstriker - Cast Flash of Light at 50% HP'),
 -- Slain Outrunner (17849) - NSR
 -- Kinamisa (18277) - NSR
 -- Sleyin (18926) - NSR
