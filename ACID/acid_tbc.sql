@@ -22160,6 +22160,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spymistress Mehlisah Highcrown
 ('1889301','18893','1','0','100','33','6000','10000','6000','10000','5','1','0','0','10','273','274','0','10','5','6','0','Spymistress Mehlisah Highcrown - Random Emote OOC'),
 ('1889302','18893','1','0','100','0','500','500','0','0','45','5','3','0','0','0','0','0','0','0','0','0','Spymistress Mehlisah Highcrown - Send AI Event 5 (A)'),
+-- Nutral 18940 - NSR
 -- Skettis Outcast
 ('1907501','19075','30','0','100','0','5','19075','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Skettis Outcast - Set Phase 1 on Receive AI Event 5 (A)'),
 ('1907502','19075','1','1','100','33','4000','8000','4000','8000','10','1','11','15','0','0','0','0','0','0','0','0','Skettis Outcast - Random Emote OOC (Phase 1)'),
