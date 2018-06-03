@@ -19837,6 +19837,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1955806','19558','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Amilya Airheart - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('1955807','19558','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Amilya Airheart - Flee at 15% HP (Phase 2)'),
 ('1955808','19558','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Amilya Airheart - Set Phase 1 and Set Melee Weapon Model on Evade'),
+-- Peon Bolgar 19562
+('1956201','19562','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Peon Bolgar - Cast Invisibility and Stealth Detection OOC'),
 -- Bonechewer Evoker (3.0.3 Official Data - Logs Only)
 ('1970101','19701','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bonechewer Evoker - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1970102','19701','9','13','100','1','0','40','3400','4800','11','9053','1','0','0','0','0','0','0','0','0','0','Bonechewer Evoker - Cast Fireball (Phase 1)'),
