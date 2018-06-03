@@ -17290,6 +17290,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Exodar Peacekeeper 16733 - guard_exodar
 -- Stephanos
 ('1755501','17555','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Stephanos - Spawn Enraged Hippogryphs on Aggro'),
+-- Camera Shaker - 30-90 seconds (18955)
+('1895501','18955','1','0','100','1','0','0','0','0','11','33271','0','0','0','0','0','0','0','0','0','0','Camera Shaker - 30-90 - Cast Internal Shake Camera w/ rumble sound'),
+('1895502','18955','10','0','100','1','1','10','30000','90000','11','33271','7','0','0','0','0','0','0','0','0','0','Camera Shaker - 30-90 - Cast Internal Shake Camera w/ rumble sound'),
 
 
 
