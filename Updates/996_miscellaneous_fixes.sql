@@ -136,4 +136,4 @@ INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `posit
 (25003, 4, 12589.8, -6916, 4.726335, 6.260564, 10000, 0);
 
 -- Flame Wave II 22228
-UPDATE `creature_template` SET `MinLevel` = 68, `MaxLevel` = 69, `UnitFlags` = 33554432, `SpeedRun` = (16 / 7), `SpeedWalk` = (2.5 / 2.5) WHERE `entry` = 22228;
+UPDATE `creature_template` SET `MinLevel` = 68, `MaxLevel` = 69, `MinLevelHealth` = 3834, `MaxLevelHealth` = 3942, `UnitFlags` = 33554432, `SpeedRun` = (16 / 7), `SpeedWalk` = (2.5 / 2.5) WHERE `entry` = 22228;
