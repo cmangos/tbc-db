@@ -139,3 +139,26 @@ INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `posit
 UPDATE `creature_template` SET `MinLevel` = 68, `MaxLevel` = 69, `MinLevelHealth` = 3834, `MaxLevelHealth` = 3942, `UnitFlags` = 33554432, `SpeedRun` = (16 / 7), `SpeedWalk` = (2.5 / 2.5) WHERE `entry` = 22228;
 
 UPDATE `creature_equip_template` SET `equipentry1` = 1905, `equipentry3` = 5856 WHERE `entry` = 1162; -- Stonesplinter Scout 1162
+
+-- Skullsplitter Spiritchaser 672 guid.1365 leading Ana'thek the Cruel 1059 - resolves TBC-148
+DELETE FROM `creature_linking` WHERE `master_guid` = 1365;
+INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES (1366, 1365, 515),(1367, 1365, 515);
+UPDATE `creature` SET `MovementType` = 2 WHERE `guid` = 1365 AND `id` = 672;
+DELETE FROM `creature_movement` WHERE `id` = 1365;
+INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(1365, 1, -13046.87, -629.1666, 53.37298, 100, 0, 0),
+(1365, 2, -13036.7, -635.2722, 53.34197, 100, 0, 0),
+(1365, 3, -13019.63, -643.6182, 53.98716, 100, 0, 0),
+(1365, 4, -13001.18, -650.5718, 52.61216, 100, 0, 0),
+(1365, 5, -12986.05, -655.6912, 51.3574, 100, 0, 0),
+(1365, 6, -12953.69, -679.1108, 51.29697, 100, 0, 0),
+(1365, 7, -12907.74, -720.5589, 51.17647, 100, 0, 0),
+(1365, 8, -12909.85, -751.8694, 51.42327, 100, 30000, 0),
+(1365, 9, -12907.74, -720.5589, 51.17647, 100, 0, 0),
+(1365, 10, -12953.69, -679.1108, 51.29697, 100, 0, 0),
+(1365, 11, -12986.05, -655.6912, 51.3574, 100, 0, 0),
+(1365, 12, -13001.18, -650.5718, 52.61216, 100, 0, 0),
+(1365, 13, -13019.63, -643.6182, 53.98716, 100, 0, 0),
+(1365, 14, -13036.7, -635.2722, 53.34197, 100, 0, 0),
+(1365, 15, -13046.87, -629.1666, 53.37298, 100, 0, 0),
+(1365, 16, -13076.93, -607.4487, 54.23201, 5.550147, 60000, 0);
