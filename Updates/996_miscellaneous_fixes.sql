@@ -137,3 +137,5 @@ INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `posit
 
 -- Flame Wave II 22228
 UPDATE `creature_template` SET `MinLevel` = 68, `MaxLevel` = 69, `MinLevelHealth` = 3834, `MaxLevelHealth` = 3942, `UnitFlags` = 33554432, `SpeedRun` = (16 / 7), `SpeedWalk` = (2.5 / 2.5) WHERE `entry` = 22228;
+
+UPDATE `creature_equip_template` SET `equipentry1` = 1905, `equipentry3` = 5856 WHERE `entry` = 1162; -- Stonesplinter Scout 1162
