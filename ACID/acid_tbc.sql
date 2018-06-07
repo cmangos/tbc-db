@@ -22180,6 +22180,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2332602','23326','2','0','100','1','75','0','10000','15000','11','33810','0','0','0','0','0','0','0','0','0','0','Nethermine Ravager - Cast Rock Shell at 75% HP'),
 -- Dragonmaw Race: Trope's Target 23357
 ('2335701','23357','8','0','100','0','40909','-1','0','0','11','40900','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Trope''s Target - Cast Corlok''s Skull Barrage Knockdown on Trope''s Slime Cannon Spell Hit'),
+-- Dragonmaw Race: Corlok's Target 23358
+('2335801','23358','8','0','100','0','40894','-1','0','0','11','40900','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Corlok''s Target - Cast Corlok''s Skull Barrage Knockdown on Corlok''s Skull Barrage Spell Hit'),
 -- Dragonmaw Skybreaker 23440
 -- Dragonmaw Skybreaker 23441
 -- Illidan Stormrage 23467
