@@ -186,3 +186,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES (191135, 1
 -- Dragonmaw Skybreaker
 UPDATE creature_template SET FactionAlliance=14, FactionHorde=14, UnitFlags=32768, SpeedWalk=2.5/2.5, SpeedRun=9.7/7 WHERE entry=22274;
 
+-- Corlok the Vet
+UPDATE creature_template SET UnitFlags=33024 WHERE entry=23344;
+-- Dragonmaw Race: Corlok's Target
+UPDATE creature_template SET UnitFlags=33554432, InhabitType=7 WHERE entry=23358;
+
