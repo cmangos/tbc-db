@@ -182,3 +182,7 @@ UPDATE `creature` SET `spawntimesecsmin` = 60, `spawntimesecsmax` = 60 WHERE `id
 
 DELETE FROM `creature_linking` WHERE `master_guid` = 191136;
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES (191135, 191136, 515),(191134, 191136, 515),(191133, 191136, 515),(191132, 191136, 515),(191131, 191136, 515),(191130, 191136, 515),(191129, 191136, 515),(191128, 191136, 515),(191127, 191136, 3);
+
+-- Dragonmaw Skybreaker
+UPDATE creature_template SET FactionAlliance=14, FactionHorde=14, UnitFlags=32768, SpeedWalk=2.5/2.5, SpeedRun=9.7/7 WHERE entry=22274;
+
