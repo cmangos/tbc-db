@@ -191,3 +191,6 @@ UPDATE creature_template SET UnitFlags=33024 WHERE entry=23344;
 -- Dragonmaw Race: Corlok's Target
 UPDATE creature_template SET UnitFlags=33554432, InhabitType=7 WHERE entry=23358;
 
+-- Grimtotem Naturalist 7726
+UPDATE `creature` SET `modelid` = 0 WHERE `id` = 7726;
+UPDATE `creature_template_addon` SET `auras` = '' WHERE `entry` = 7726;
