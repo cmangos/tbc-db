@@ -220,3 +220,6 @@ UPDATE creature_template SET UnitFlags=33024 WHERE entry=23348;
 -- Dragonmaw Race: Skyshatter's Target
 UPDATE creature_template SET InhabitType=7 WHERE entry=23361;
 
+-- Terrorclaw
+UPDATE creature_template SET UnitFlags=32768 WHERE entry=20477;
+
