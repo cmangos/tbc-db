@@ -22186,6 +22186,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2335901','23359','8','0','100','0','40928','-1','0','0','11','40929','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Ichman''s Target - Cast Ichman''s Blazing Fireball Knockdown on Ichman''s Blazing Fireball Spell Hit'),
 -- Dragonmaw Race: Mulverick's Target 23360
 ('2336001','23360','8','0','100','0','40930','-1','0','0','11','40931','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Mulverick''s Target - Cast Mulverick''s Great Balls of Lightning on Mulverick''s Great Balls of Lightning Spell Hit'),
+-- Dragonmaw Race: Skyshatter's Target 23361
+('2336101','23361','8','0','100','0','40945','-1','0','0','11','41064','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Skyshatter''s Target - Cast Sky Shatter on Sky Shatter Spell Hit'),
 -- Dragonmaw Skybreaker 23440
 -- Dragonmaw Skybreaker 23441
 -- Illidan Stormrage 23467
