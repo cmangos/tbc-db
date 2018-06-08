@@ -223,3 +223,12 @@ UPDATE creature_template SET InhabitType=7 WHERE entry=23361;
 -- Terrorclaw
 UPDATE creature_template SET UnitFlags=32768 WHERE entry=20477;
 
+-- Add some missing objects in Dragonmaw Base Camp and Netherwing Mines
+DELETE FROM gameobject WHERE guid IN (170011,170012,170013,170014,170015);
+INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
+(170011, 51704, 530, 1, -5122.906, 631.8186, 86.90026, 5.548713, 0, 0, -0.3590374, 0.9333231, 120, 120, 255, 1), -- Anvil
+(170012, 51705, 530, 1, -5110.281, 626.765, 87.16945, 3.332152, 0, 0, -0.9954643, 0.09513562, 120, 120, 255, 1), -- Anvil
+(170013, 50984, 530, 1, -5116.811, 631.0879, 84.99586, 1.359921, 0, 0, 0.6287622, 0.7775976, 120, 120, 255, 1), -- Heated Forge
+(170014, 180035, 530, 1, -5031.66, 637.0347, 25.39388, 2.216565, 0, 0, 0.8949337, 0.4461992, 120, 120, 255, 1), -- Fence
+(170015, 180035, 530, 1, -5024.21, 625.4202, 25.38931, 2.199115, 0, 0, 0.8910065, 0.4539906, 120, 120, 255, 1); -- Fence
+
