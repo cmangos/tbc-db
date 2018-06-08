@@ -22182,8 +22182,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2335701','23357','8','0','100','0','40909','-1','0','0','11','40900','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Trope''s Target - Cast Corlok''s Skull Barrage Knockdown on Trope''s Slime Cannon Spell Hit'),
 -- Dragonmaw Race: Corlok's Target 23358
 ('2335801','23358','8','0','100','0','40894','-1','0','0','11','40900','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Corlok''s Target - Cast Corlok''s Skull Barrage Knockdown on Corlok''s Skull Barrage Spell Hit'),
--- Dragonmaw Race: Ichman''s Target 23359
+-- Dragonmaw Race: Ichman's Target 23359
 ('2335901','23359','8','0','100','0','40928','-1','0','0','11','40929','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Ichman''s Target - Cast Ichman''s Blazing Fireball Knockdown on Ichman''s Blazing Fireball Spell Hit'),
+-- Dragonmaw Race: Mulverick's Target 23360
+('2336001','23360','8','0','100','0','40930','-1','0','0','11','40931','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Mulverick''s Target - Cast Mulverick''s Great Balls of Lightning on Mulverick''s Great Balls of Lightning Spell Hit'),
 -- Dragonmaw Skybreaker 23440
 -- Dragonmaw Skybreaker 23441
 -- Illidan Stormrage 23467
