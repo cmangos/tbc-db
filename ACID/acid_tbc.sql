@@ -16452,7 +16452,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Ragetotem (15573) - NSR
 -- Elder Dreamseer (15586) - NSR
 -- Metzen the Reindeer (15664) - NSR
--- Southsea Kidnapper (15685) - NSR
+-- Southsea Kidnapper 15685
+('1568501','15685','0','0','100','1','6900','15400','7200','15400','11','6713','1','0','0','0','0','0','0','0','0','0','Southsea Kidnapper - Cast Disarm'),
 -- Wonderform Operator (15732) - NSR
 -- Qiraji Brigadier General (15753) - NSR
 -- Greater Anubisath Warbringer (15754) - NSR
