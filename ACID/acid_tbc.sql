@@ -19507,6 +19507,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Aeranas 17085 - npc_aeranas
 -- Viera Sunwhisper
 ('1722601','17226','8','0','100','0','30077','-1','0','0','33','17226','6','0','48','2','0','0','0','0','0','0','Viera Sunwhisper - Kill Credit and WP Movement on Spell Hit'),
+-- Stone Guard Stok'ton 17493
+('1749301','17493','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Stone Guard Stok\'ton - Cast Invisibility and Stealth Detection OOC'),
+('1749302','17493','0','0','100','33','5000','10000','15000','20000','11','19643','1','0','11','15618','1','0','0','0','0','0','Stone Guard Stok\'ton - Cast Mortal Strike or Cast Snap Kick'),
 -- Highlord Kruul
 ('1833801','18338','11','0','100','0','0','0','0','0','1','-1206','-1207','0','0','0','0','0','0','0','0','0','Highlord Kruul - Yell on Spawn'),
 ('1833802','18338','4','0','100','0','0','0','0','0','1','-1208','-1209','-1210','0','0','0','0','0','0','0','0','Highlord Kruul - Yell on Aggro'),
