@@ -5720,7 +5720,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1463602','14636','9','0','100','1','0','8','11000','15000','11','23417','1','0','0','0','0','0','0','0','0','0','Chambermaid Pillaclencher - Cast Smother'),
 -- Elder Ironband (15567) - NSR
 -- Metzen the Reindeer (15664) - NSR
--- Dark Iron Kidnapper (15692) - NSR
+-- Dark Iron Kidnapper 15692
+('1569201','15692','4','0','25','0','0','0','0','0','54','-1580','0','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Say on Aggro'),
+('1569202','15692','0','0','100','1','4000','4000','9000','12000','11','6533','1','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Cast Net'),
+('1569203','15692','0','0','100','1','1900','10800','9200','17200','11','11977','1','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Cast Rend'),
 -- Frigid Lieutenant (26214) - NSR
 
 
@@ -35500,7 +35503,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1577','Once I have hacked off your limbs, I may hang your body from our battlements.','0','0','0','18677','0'),
 ('-1578','I love to bathe in the blood of my enemies!','0','0','0','18677','0'),
 ('-1579','I crave your death!','0','0','0','18677','0'),
--- PLEASE RE-USE 1580 - 1586 classic>tbc>wotlk
+('-1580','Let me give you my regards for Greatfather Winter, scum.','0','0','0','15692','0'),
+-- PLEASE RE-USE 1581 - 1586 classic>tbc>wotlk
 ('-1587','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0'),
 ('-1588','KILL THEM ALL!','0','1','0','23440/23441','0'),
 ('-1589','BURN IT DOWN!','0','1','0','23440/23441','0'),
