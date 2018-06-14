@@ -9052,6 +9052,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('15701','157','9','0','50','0','6','15','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Goretusk - Cast Rushing Charge'),
 -- Murloc Warrior (2.4.3 Official Data)
 ('17101','171','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murloc Warrior - Flee at 15% HP'),
+-- Farmer Saldean 233
+('23301','233','1','0','100','1','1000','15000','150000','180000','1','-14','-15','-16','0','0','0','0','0','0','0','0','Farmer Saldean - Say OOC'),
 -- Old Murk-eye (2.4.3 Official Data)
 ('39101','391','0','0','100','1','1900','2200','2200','5200','11','3584','1','32','0','0','0','0','0','0','0','0','Old Murk-eye - Cast Volatile Infection'),
 ('39102','391','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Old Murk-eye - Flee at 15% HP'),
@@ -34150,6 +34152,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- PLEASE RE-USE 11 classic>tbc>wotlk
 ('-12','Consume $N, my children!','0','0','0','Darkscreecher Akkarai on Flock Call 40427','0'),
 -- PLEASE RE-USE 13 - 16 classic>tbc>wotlk
+('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
+('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
+('-16','They might have run all the other farmers off, but the Saldean\'s will never leave Westfall.','0','0','7','Farmer Saldean 233','0'),
 ('-17','Insolent fool! You thought to steal Zelemar\'s blood? You shall pay with your own!','0','1','0','17830','0'),
 ('-18','For Victory! For Agamaggan!','5812','1','0','4420','0'),
 ('-19','I\'m gonna cook ya, and then i\'m going to eat ya!','0','0','0','20905','1'),
