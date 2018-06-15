@@ -23114,6 +23114,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Khn'nix 17866
 ('1786601','17866','1','0','100','0','1000','1000','0','0','11','35230','0','32','0','0','0','0','0','0','0','0','Khn\'nix - Cast Sporeskin OOC'),
 -- Fhwoor 17877 - npc_fhwoor
+-- Fahssn 17923
+('1792301','17923','1','0','100','0','1000','1000','0','0','11','35230','0','32','0','0','0','0','0','0','0','0','Fahssn - Cast Sporeskin OOC'),
 -- Kayra Longmane 17969 - npc_kayra_longmane
 -- Rajis Fyashe
 ('1804401','18044','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Rajis Fyashe - Enable Dynamic Movement and Set Phase 1 on Aggro'),
