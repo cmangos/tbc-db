@@ -20209,7 +20209,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1829602','18296','30','0','100','0','6','18299','0','0','0','0','0','0','22','2','0','0','0','0','0','0','Sunspring Post Orphan - Set Phase 2 on Receive AI Event B (Running around Garadar)'),
 ('1829603','18296','1','5','100','33','5000','250000','5000','250000','1','-307','-308','-309','1','-310','-312','-317','0','0','0','0','Sunspring Post Orphan - Random Say (Phase 1)'),
 ('1829604','18296','1','3','100','33','30000','300000','80000','300000','1','-474','-475','-476','1','-477','-478','-479','1','-480','-481','0','Sunspring Post Orphan - Random Say (Phase 2)'),
--- Gankly Rottenfist 18297 - NSR
+-- Gankly Rottenfist 18297 - sprint, shiv/crippling poison, and shadowstep, stealth
 -- Gava'xi
 ('1829801','18298','0','0','100','1','0','5000','11000','18000','11','14873','1','0','0','0','0','0','0','0','0','0','Gava\'xi - Cast Sinister Strike'),
 -- Bleeding Hollow Orphan
@@ -23359,6 +23359,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1834009','18340','2','0','100','0','30','0','0','0','11','33962','0','2','0','0','0','0','0','0','0','0','Steam Pump Overseer - Cast Toughen VII at 30% HP'),
 ('1834010','18340','2','0','100','0','20','0','0','0','11','33962','0','2','0','0','0','0','0','0','0','0','Steam Pump Overseer - Cast Toughen VIII at 20% HP'),
 ('1834011','18340','2','0','100','0','10','0','0','0','11','33962','0','2','0','0','0','0','0','0','0','0','Steam Pump Overseer - Cast Toughen IX at 10% HP'),
+-- Sporeggar Spawn 18358
+('1835801','18358','1','0','100','0','1000','1000','0','0','11','35230','0','32','0','0','0','0','0','0','0','0','Sporeggar Spawn - Cast Sporeskin OOC'),
 -- Coosh'coosh - npc_cooshcoosh
 ('1858601','18586','1','0','100','1','1000','1000','600000','600000','11','12550','0','0','0','0','0','0','0','0','0','0','Coosh\'coosh - Cast Lightning Shield on Spawn'),
 ('1858602','18586','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Coosh\'coosh - Enable Dynamic Movement and Set Phase 1 on Aggro'),
