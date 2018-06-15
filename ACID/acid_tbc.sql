@@ -19632,6 +19632,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1897601','18976','0','0','100','1','3500','5500','10000','10000','11','32004','1','0','0','0','0','0','0','0','0','0','Urga\'zz - Cast Drill'),
 ('1897602','18976','0','0','100','1','7500','7500','14000','16000','11','32003','1','0','0','0','0','0','0','0','0','0','Urga\'zz - Cast Power Burn'),
 ('1897603','18976','0','0','100','1','8500','8500','12000','12000','11','34095','1','0','0','0','0','0','0','0','0','0','Urga\'zz - Cast Throw Proximity Bomb'),
+-- Felguard Destroyer 18977 - NSR
 -- Doomwhisperer
 ('1898101','18981','9','0','100','1','0','30','8000','12000','11','33969','1','0','0','0','0','0','0','0','0','0','Doomwhisperer - Cast Draining Bolt'),
 -- Ironforge Paladin
@@ -19712,6 +19713,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1929801','19298','9','0','100','1','0','5','8000','11000','11','15496','1','0','0','0','0','0','0','0','0','0','Warbringer Arix\'Amal - Cast Cleave'),
 ('1929802','19298','0','0','100','1','5500','7500','18000','21000','11','32009','1','0','0','0','0','0','0','0','0','0','Warbringer Arix\'Amal - Cast Cutdown'),
 ('1929803','19298','2','0','100','1','30','0','60000','60000','11','34250','0','2','0','0','0','0','0','0','0','0','Warbringer Arix\'Amal - Cast Whipped Fury at 30% HP'),
+-- Deathwhisperer 19299
+('1929901','19299','1','0','100','0','1000','1000','0','0','11','12787','0','32','11','15088','0','32','0','0','0','0','Deathwhisperer - Cast Thrash and Flurry OOC'),
 -- Goliathon
 ('1930507','19305','11','0','100','0','0','0','0','0','11','7741','0','1','0','0','0','0','0','0','0','0','Goliathon - Cast Summoned Demon on Spawn'),
 ('1930502','19305','9','0','100','1','0','5','5000','9000','11','33688','1','0','0','0','0','0','0','0','0','0','Goliathon - Cast Crystal Strike'),
@@ -21445,6 +21448,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1935501','19355','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Shadowmoon Peon - Cast Invisibility and Stealth Detection OOC'),
 -- Kor'kron Defender
 ('1936201','19362','1','0','5','1','190000','190000','250000','550000','1','-316','-315','0','0','0','0','0','0','0','0','0','Kor\'kron Defender - Gossip Yell OOC'),
+-- Kor'kron Rider 19364
+('1936401','19364','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Kor\'kron Rider - Cast Invisibility and Stealth Detection OOC'),
+('1936402','19364','0','0','100','33','5000','10000','15000','20000','11','19643','1','0','11','15618','1','0','0','0','0','0','Kor\'kron Rider - Cast Mortal Strike or Cast Snap Kick'),
 -- Barimoke Wildbeard
 ('1939401','19394','1','0','100','1','100000','100000','100000','100000','1','-332','0','0','0','0','0','0','0','0','0','0','Barimoke Wildbeard - Gossip Event (Part 1) OOC'),
 ('1939402','19394','1','0','100','1','111000','111000','111000','111000','1','-331','0','0','5','274','0','0','0','0','0','0','Barimoke Wildbeard - Gossip Event (Part 2) OOC'),
@@ -22718,6 +22724,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1900003','19000','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','High Elf Ranger - Enable Dynamic Movement at 9-80 Yards'),
 ('1900004','19000','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','High Elf Ranger - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('1900005','19000','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','High Elf Ranger - Set Melee Weapon Model on Evade'),
+-- Gardok Ripjaw 19002
 -- Stonebreaker Peon 19048
 ('1904801','19048','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Stonebreaker Peon - Cast Invisibility and Stealth Detection OOC'),
 -- Lemla Hopewing
@@ -29492,7 +29499,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1921806','19218','0','0','100','5','24100','33100','28900','54200','11','39193','0','0','0','0','0','0','0','0','0','0','Gatewatcher Gyro-Kill (Heroic) - Cast Shadow Power'),
 ('1921807','19218','5','0','100','7','5000','5000','0','0','1','-81','-82','0','0','0','0','0','0','0','0','0','Gatewatcher Gyro-Kill - Random Yell on Player Kill'),
 ('1921808','19218','6','0','100','6','0','0','0','0','1','-83','0','0','0','1','-146','0','0','0','0','0','Gatewatcher Gyro-Kill - Yell and Emote on Death'),
--- Mechano-Lord Capacitus - boss_mechano_lord_capacitus
+-- Mechano-Lord Capacitus (19219) - boss_mechano_lord_capacitus
 -- Pathaleon the Calculator (19220) - boss_pathaleon_the_calculator
 -- Nethermancer Sepethrea (19221) - boss_nethermancer_sepethrea
 -- Mechanar Crusher (4.3.4 Official Data - Normal/Heroic)
