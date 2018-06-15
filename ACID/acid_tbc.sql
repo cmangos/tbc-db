@@ -23111,6 +23111,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1785602','17856','0','0','100','1','3000','7000','10000','18000','11','13730','0','0','0','0','0','0','0','0','0','0','Gzhun\'tt - Cast Demoralizing Shout'),
 -- T'shu 17857
 ('1785701','17857','1','0','100','0','1000','1000','0','0','11','35230','0','32','0','0','0','0','0','0','0','0','T\'shu - Cast Sporeskin OOC'),
+-- Khn'nix 17866
+('1786601','17866','1','0','100','0','1000','1000','0','0','11','35230','0','32','0','0','0','0','0','0','0','0','Khn\'nix - Cast Sporeskin OOC'),
 -- Fhwoor 17877 - npc_fhwoor
 -- Kayra Longmane 17969 - npc_kayra_longmane
 -- Rajis Fyashe
