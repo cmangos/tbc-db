@@ -18072,6 +18072,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1893701','18937','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Amerun Leafshade - Spawn Enraged Hippogryphs on Aggro'),
 -- Unoke Tenderhoof
 ('1895301','18953','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Unoke Tenderhoof - Spawn Enraged Wyverns and Yell on Aggro'),
+-- Thunderlord Grunt 19449
+('1944901','19449','0','0','100','1','0','5000','6000','9000','11','40505','1','0','0','0','0','0','0','0','0','0','Thunderlord Grunt - Cast Cleave'),
+('1944902','19449','2','0','100','0','30','0','0','0','11','8599','0','0','54','-106','0','0','0','0','0','0','Thunderlord Grunt - Cast Enrage at 30% HP'),
 -- Lashh'an Wing Guard
 ('1994401','19944','0','0','100','1','3000','9000','12000','16000','11','37577','1','0','0','0','0','0','0','0','0','0','Lashh\'an Wing Guard - Cast Debilitating Strike'),
 -- Baelmon the Hound-Master
@@ -21451,6 +21454,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kor'kron Rider 19364
 ('1936401','19364','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Kor\'kron Rider - Cast Invisibility and Stealth Detection OOC'),
 ('1936402','19364','0','0','100','33','5000','10000','15000','20000','11','19643','1','0','11','15618','1','0','0','0','0','0','Kor\'kron Rider - Cast Mortal Strike or Cast Snap Kick'),
+-- Wildhammer Scout 19384 - NSR
 -- Barimoke Wildbeard
 ('1939401','19394','1','0','100','1','100000','100000','100000','100000','1','-332','0','0','0','0','0','0','0','0','0','0','Barimoke Wildbeard - Gossip Event (Part 1) OOC'),
 ('1939402','19394','1','0','100','1','111000','111000','111000','111000','1','-331','0','0','5','274','0','0','0','0','0','0','Barimoke Wildbeard - Gossip Event (Part 2) OOC'),
