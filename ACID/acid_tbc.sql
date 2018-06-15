@@ -22236,8 +22236,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==============
 -- Shattrath City
 -- ==============
--- Adyen the Lightwarden (When should this be used?)
--- ('1853701','18537','1','0','100','1','9000','9000','600000','600000','1','-964','0','0','0','0','0','0','0','0','0','0','Adyen the Lightwarden - Say OOC 1'),
+-- Adyen the Lightwarden - npc_adyen_the_lightwarden
+-- ('1853701','18537','1','0','100','1','9000','9000','600000','600000','1','-964','0','0','0','0','0','0','0','0','0','0','Adyen the Lightwarden - Say OOC 1'), -- (When should this be used?)
 -- Aldor Vindicator 18549 - guard_shattrath_aldor
 -- Scryer Arcane Guardian 18568 - guard_shattrath_scryer
 -- Sal'salabim 18584 - npc_salsalabim
@@ -23405,6 +23405,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swamprat Guard
 ('1891001','18910','0','0','100','1','5000','7000','7000','10000','11','12169','0','0','0','0','0','0','0','0','0','0','Swamprat Guard - Cast Shield Block'),
 ('1891002','18910','0','0','100','1','7000','8500','8000','12000','11','12170','1','0','0','0','0','0','0','0','0','0','Swamprat Guard - Cast Revenge'),
+-- Sporelok 18912
+('1891201','18912','1','0','100','0','1000','1000','0','0','11','35230','0','32','0','0','0','0','0','0','0','0','Sporelok - Cast Sporeskin OOC'),
 -- Telredor Guard
 ('1892201','18922','0','0','100','1','5000','7000','7000','10000','11','12169','0','0','0','0','0','0','0','0','0','0','Telredor Guard - Cast Shield Block'),
 ('1892202','18922','0','0','100','1','7000','8500','8000','12000','11','12170','1','0','0','0','0','0','0','0','0','0','Telredor Guard - Cast Revenge'),
