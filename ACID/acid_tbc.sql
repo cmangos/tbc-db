@@ -20126,6 +20126,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1806908','18069','29','11','100','0','6000','6000','0','0','11','32343','0','23','22','3','0','0','42','0','1','0','Mogor - Cast Revive Self and Remove Invincible and Set Phase 3 on Generic Timer (Phase 2)'),
 ('1806909','18069','29','7','100','0','3000','3000','0','0','1','-1412','0','0','11','28747','0','23','19','570425344','0','0','Mogor - Yell and Cast Frenzy and Remove UnitFlag on Generic Timer (Phase 3)'),
 ('1806910','18069','21','0','100','0','0','0','0','0','41','2000','0','0','0','0','0','0','0','0','0','0','Mogor - Delayed Despawn on Reached Home'),
+-- Gordawg 18099
+('1809901','18099','0','0','100','1','2000','6000','9000','12000','11','20276','1','0','0','0','0','0','0','0','0','0','Gordawg - Cast Knockdown'),
 -- Living Fire
 ('1810901','18109','11','0','100','0','0','0','0','0','1','-1349','0','0','0','0','0','0','0','0','0','0','Living Fire - Say on Spawn'),
 -- Windyreed Quest Credit (Big Hut)
