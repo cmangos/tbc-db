@@ -23106,6 +23106,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===========
 -- Expedition Warden
 ('1785501','17855','0','0','100','1','0','3000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Expedition Warden - Cast Net'),
+-- Gzhun'tt 17856
+('1785601','17856','1','0','100','0','1000','1000','0','0','11','35230','0','32','0','0','0','0','0','0','0','0','Gzhun\'tt - Cast Sporeskin OOC'),
+('1785602','17856','0','0','100','1','3000','7000','10000','18000','11','13730','0','0','0','0','0','0','0','0','0','0','Gzhun\'tt - Cast Demoralizing Shout'),
 -- Fhwoor 17877 - npc_fhwoor
 -- Kayra Longmane 17969 - npc_kayra_longmane
 -- Rajis Fyashe
