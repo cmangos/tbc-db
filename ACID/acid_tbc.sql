@@ -21233,6 +21233,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2080302','20803','9','0','100','1','0','5','15000','18000','11','35238','1','0','0','0','0','0','0','0','0','0','Overmaster Grindgarr - Cast War Stomp'),
 -- Void Waste Globule 20805
 -- Seeping Sludge Globule 20806
+('2080601','20806','11','0','100','0','0','0','0','0','11','35242','0','0','0','0','0','0','0','0','0','0','Seeping Sludge Globule - Cast Darkstalker Birth on Spawn'),
 -- Mehrdad 20810
 -- Ghabar 20811
 -- Ethereum Prisoner (Tyralius) 20825
