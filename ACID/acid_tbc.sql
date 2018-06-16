@@ -20469,8 +20469,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cyber-Rage Forgelord
 ('1694301','16943','9','0','100','1','0','8','19000','23000','11','36255','0','0','0','0','0','0','0','0','0','0','Cyber-Rage Forgelord - Cast Chaos Nova'),
 ('1694302','16943','2','0','100','0','30','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Cyber-Rage Forgelord - Cast Enrage at 30% HP'),
--- Mo'arg Doomsmith
-('1694401','16944','9','0','100','1','0','5','12000','16000','11','36200','0','0','0','0','0','0','0','0','0','0','Mo\'arg Doomsmith - Cast Doomsaw'),
+-- Mo'arg Doomsmith 16944
+('1694401','16944','9','0','100','1','0','30','12000','16000','11','36200','0','0','0','0','0','0','0','0','0','0','Mo\'arg Doomsmith - Cast Doomsaw'),
 ('1694402','16944','7','0','100','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Mo\'arg Doomsmith - Despawn Guardians on Evade'),
 -- Gan'arg Engineer
 ('1694801','16948','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Gan\'arg Engineer - Enable Dynamic Movement and Prevent Melee on Aggro'),
@@ -20612,7 +20612,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1887902','18879','0','0','100','1','2900','9600','11300','16800','11','37176','1','0','0','0','0','0','0','0','0','0','Phase Hunter - Cast Mana Burn'),
 ('1887903','18879','8','0','100','0','0','1','0','0','11','34814','0','0','0','0','0','0','0','0','0','0','Phase Hunter - Cast De-Materialize on Physical Spell Hit'),
 ('1887904','18879','2','0','100','0','35','0','0','0','1','-1542','0','0','0','0','0','0','0','0','0','0','Phase Hunter - TextEmote at 35% HP'),
--- Nether Ray
+-- Nether Ray 18880
 ('1888001','18880','9','0','100','1','0','20','7000','11000','11','35334','1','0','0','0','0','0','0','0','0','0','Nether Ray - Cast Nether Shock'),
 ('1888002','18880','9','0','100','1','0','15','6000','9000','11','36659','4','32','0','0','0','0','0','0','0','0','Nether Ray - Cast Tail Sting'),
 ('1888003','18880','9','0','100','1','0','10','11000','15000','11','17008','4','0','0','0','0','0','0','0','0','0','Nether Ray - Cast Drain Mana'),
@@ -21316,6 +21316,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2108903','21089','2','0','100','0','30','0','0','0','11','8599','0','2','54','-106','0','0','0','0','0','0','Sunfury Blood Knight - Cast Enrage at 30% HP'),
 -- Doomsaw 21119
 ('2111901','21119','11','0','100','0','0','0','0','0','11','36193','0','0','11','36194','0','0','0','0','0','0','Doomsaw - Cast Saw Visual and Saw on Spawn'),
+('2111902','21119','9','0','100','0','0','3','0','0','41','500','0','0','0','0','0','0','0','0','0','0','Doomsaw - Delayed Despawn in Melee Range'),
 -- Fel Imp
 ('2113501','21135','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Fel Imp - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2113502','21135','9','5','100','1','0','30','3400','4700','11','36227','1','0','0','0','0','0','0','0','0','0','Fel Imp - Cast Firebolt (Phase 1)'),
@@ -21989,7 +21990,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Felspine the Greater
 ('2189701','21897','2','0','100','1','30','0','15000','30000','11','37941','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Flaming Wound at 30% HP'),
 ('2189702','21897','9','0','100','1','0','5','10000','18000','11','38356','0','0','0','0','0','0','0','0','0','0','Felspine the Greater - Cast Fel Flames'),
--- Netherskate
+-- Netherskate 21901
 ('2190101','21901','0','0','100','1','0','7000','7000','11000','11','35334','1','0','0','0','0','0','0','0','0','0','Netherskate - Cast Nether Shock'),
 ('2190102','21901','0','0','100','1','0','6000','6000','9000','11','36659','4','32','0','0','0','0','0','0','0','0','Netherskate - Cast Tail Sting'),
 ('2190103','21901','18','0','100','1','100','1','11000','15000','11','17008','1','0','0','0','0','0','0','0','0','0','Netherskate - Cast Drain Mana on Target Mana User'),
@@ -22258,7 +22259,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dragonmaw Skybreaker 23441
 -- Illidan Stormrage 23467
 ('2346701','23467','11','0','100','0','0','0','0','0','11','24240','0','1','0','0','0','0','0','0','0','0','Lord Illidan - Cast Spawn - Red Lightning on Spawn'),
--- Netherwing Ray
+-- Netherwing Ray 23501
 ('2350101','23501','9','0','100','1','0','20','7000','11000','11','35334','1','0','0','0','0','0','0','0','0','0','Netherwing Ray - Cast Nether Shock'),
 ('2350102','23501','9','0','100','1','0','15','6000','9000','11','36659','4','32','0','0','0','0','0','0','0','0','Netherwing Ray - Cast Tail Sting'),
 ('2350103','23501','9','0','100','1','0','10','11000','15000','11','17008','4','0','0','0','0','0','0','0','0','0','Netherwing Ray - Cast Drain Mana'),
@@ -22918,7 +22919,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2180401','21804','9','0','100','1','0','5','5000','10000','11','5708','1','0','0','0','0','0','0','0','0','0','Skettis Kaliri - Cast Swoop'),
 -- Ironspine Chomper
 ('2181601','21816','9','0','100','1','0','5','5000','7000','11','32906','1','0','0','0','0','0','0','0','0','0','Ironspine Chomper - Cast Chomp'),
--- Terokk - npc_terokk - TBE
+-- Terokk 21838 - boss_terokk
 -- Mountain Colossus
 ('2184401','21844','9','0','100','1','0','10','12000','16000','11','15548','0','0','0','0','0','0','0','0','0','0','Mountain Colossus - Cast Thunderclap'),
 ('2184402','21844','2','0','100','0','40','0','0','0','11','39080','0','0','0','0','0','0','0','0','0','0','Mountain Colossus - Cast Summon Mountain Shardling at 40% HP'),
@@ -22930,7 +22931,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2185401','21854','0','0','100','1','6000','9000','14000','18000','11','32905','4','0','0','0','0','0','0','0','0','0','Ironspine Petrifier - Cast Glare'),
 -- Sha'tar Vindicator
 ('2185801','21858','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Sha\'tar Vindicator - Cast Net'),
--- Slain Sha'tar Vindicator (21859) - NSR
+-- Slain Sha'tar Vindicator (21859) - NSR (37759 on Spellhit?, summons 21869, movement?)
+-- Unliving Guardian 21869 - NSR
+-- Unliving Initiate 21870 - NSR
 -- Mana Bomb Lightning Trigger
 ('2189801','21898','30','0','100','0','5','20809','0','0','22','1','0','0','11','37843','0','0','0','0','0','0','Mana Bomb Lightning Trigger - Set Phase 1 and Cast Mana Bomb: Lightning on Receive AI Event 5 (A)'),
 ('2189802','21898','1','1','50','1','1200','1200','1200','1200','11','37843','0','0','0','0','0','0','0','0','0','0','Mana Bomb Lightning Trigger - Cast Mana Bomb: Lightning (Phase 1)'),
@@ -22951,6 +22954,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2191107','21911','0','0','100','1','6000','10000','13000','18000','11','38663','1','0','0','0','0','0','0','0','0','0','Skettis Soulcaller - Cast Slow'),
 ('2191108','21911','2','0','100','0','30','0','0','0','11','5137','1','1','0','0','0','0','0','0','0','0','Skettis Soulcaller - Cast Call of the Grave at 30% HP'),
 ('2191109','21911','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Skettis Soulcaller - Set Phase 0 on Evade'),
+-- Accursed Apparition 21941 - NSR
 -- Enslaved Doomguard
 ('2196301','21963','0','0','100','1','3000','7000','13000','17000','11','11443','1','32','0','0','0','0','0','0','0','0','Enslaved Doomguard - Cripple'),
 ('2196302','21963','0','0','100','1','20000','25000','25000','30000','11','31598','4','0','0','0','0','0','0','0','0','0','Enslaved Doomguard - Rain of Fire'),
@@ -29333,6 +29337,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2170204','21702','0','0','100','5','7000','11000','18000','24000','11','34941','4','0','0','0','0','0','0','0','0','0','Ethereum Life-Binder (Heroic) - Cast Shadow Word: Pain'),
 ('2170205','21702','14','0','100','3','12000','40','25000','35000','11','37479','6','1','0','0','0','0','0','0','0','0','Ethereum Life-Binder (Normal) - Cast Shadow Mend on Friendly Missing HP'),
 ('2170206','21702','14','0','100','5','15000','40','25000','35000','11','38899','6','1','0','0','0','0','0','0','0','0','Ethereum Life-Binder (Heroic) - Cast Shadow Mend on Friendly Missing HP'),
+-- Destroyed Sentinel 21761 - NSR
 -- Udalo (21962) - NSR
 -- Third Fragment Guardian (22892) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
