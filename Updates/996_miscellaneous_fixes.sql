@@ -299,3 +299,15 @@ UPDATE creature_template SET ExtraFlags=0 WHERE entry IN (16897,16898,16899);
 UPDATE `creature_template` SET `InhabitType` = 7 WHERE `entry` = 19484;
 -- Overseer Seylanna 20397
 UPDATE `creature_template_addon` SET `auras` = '' WHERE `entry` = 20397; -- 34062
+
+-- Sunfury Nethermancer 20248 - Crystal Channel OOC
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (2024801);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `comments`) VALUES
+(2024801, 0, 15, 35778, 'Sunfury Nethermancer - Cast Bloodcrystal Surge OOC'),
+(2024801, 0, 15, 33918, 'Sunfury Nethermancer - Cast Crystal Channel OOC');
+
+UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71943,71944,71945,71954,71957) AND `point` = 1;
+UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71946,71949,71950,71952,71958,71959,71960,71962,71963,71964,71965,71969,71970,71975) AND `point` = 2;
+UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71945,71954,71956,71958) AND `point` = 3;
+UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71947,71951,71968) AND `point` = 4;
+UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71945,71948) AND `point` = 5;
