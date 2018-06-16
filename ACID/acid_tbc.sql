@@ -21622,6 +21622,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2088706','20887','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Deathforge Imp - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('2088707','20887','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Deathforge Imp - Set Phase 0 on Evade'),
 -- Earthmender Wilda 21027 - npc_wilda
+-- Captured Water Spirit 21029
 -- Coilskar Assassin
 ('2104401','21044','4','0','100','0','0','0','0','0','54','0','0','10010','0','0','0','0','0','0','0','0','Coilskar Assassin - Random Say on Aggro'),
 -- Enraged Earth Spirit
@@ -32570,7 +32571,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cosmic Infuse
 ('2127001','21270','9','0','100','3','0','15','6000','6000','11','36985','0','0','0','0','0','0','0','0','0','0','Cosmic Infuser - Cast Holy Nova'),
 ('2127002','21270','14','0','100','3','40000','40','10000','15000','11','36983','6','1','0','0','0','0','0','0','0','0','Cosmic Infuser - Cast Heal on Friendly Missing HP'),
--- Infinity Blades NSR
+-- Infinity Blades 21271
+('2127101','21271','11','0','100','0','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Infinity Blades - Cast Thrash on Spawn'),
 -- Warp Slicer
 ('2127201','21272','9','0','100','3','0','5','6000','6000','11','36991','1','0','0','0','0','0','0','0','0','0','Warp Slicer - Cast Rend'),
 -- Phaseshift Bulwark
