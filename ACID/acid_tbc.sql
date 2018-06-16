@@ -21204,15 +21204,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2077802','20778','8','0','100','0','35686','-1','0','0','36','20805','-1','0','0','0','0','0','0','0','0','0','Void Waste - Change Entry after (proc) Spell 35686'),
 -- Congealed Void Horror 20779
 -- Kaylaan 20780
--- Porfus the Gem Gorger 20783
--- Armbreaker Huffaz 20784
--- Fel Tinkerer Zortan 20785
--- Gul'bor 20786
+-- Porfus the Gem Gorger 20783 - 20520 should morph entry
+-- Armbreaker Huffaz 20784 - 20520 should morph entry
+-- Fel Tinkerer Zortan 20785 - 20520 should morph entry
+('2078501','20785','9','0','100','1','0','5','11000','15000','11','36208','1','0','0','0','0','0','0','0','0','0','Fel Tinkerer Zortan - Cast Steal Weapon'),
+('2078502','20785','18','0','100','1','100','1','9000','14000','11','36846','1','0','0','0','0','0','0','0','0','0','Fel Tinkerer Zortan - Cast Mana Bomb on Target Mana User'),
+-- Gul'bor 20786 - 20520 should morph entry
 -- Captain Tyralius 20787
--- Forgosh 20788
--- Wrathbringer Laz-tarash 20789
--- Malevus the Mad 20790
--- Kaylaan the Lost 20794
+-- Forgosh 20788 - 20520 should morph entry
+-- Wrathbringer Laz-tarash 20789 - 20520 should morph entry
+-- Malevus the Mad 20790 - 20520 should morph entry
+-- Kaylaan the Lost 20794 - npc_kaylaan_the_lost
 -- Forgemaster Morug
 ('2080001','20800','0','0','100','1','0','5000','8000','16000','11','36228','1','0','0','0','0','0','0','0','0','0','Forgemaster Morug - Cast Chainsaw Blade'),
 ('2080002','20800','0','0','100','1','5000','11000','12000','15000','11','34261','0','0','0','0','0','0','0','0','0','0','Forgemaster Morug - Cast Slime Spray'),
