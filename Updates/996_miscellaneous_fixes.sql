@@ -311,3 +311,7 @@ UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71946,71949,
 UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71945,71954,71956,71958) AND `point` = 3;
 UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71947,71951,71968) AND `point` = 4;
 UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71945,71948) AND `point` = 5;
+
+-- Lobo 21952
+DELETE FROM `creature_template_addon` WHERE `entry` = 21952;
+INSERT INTO `creature_template_addon` (`entry`, `bytes1`) VALUES (21952,3);
