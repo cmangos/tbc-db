@@ -5944,7 +5944,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kalinda 19775
 -- Bipp Glizzitor (19923) - NSR
 -- Worker Mo'rrisroe 20087
--- Duyash the Cruel (20390) - NSR
+-- Duyash the Cruel 20390
+('2039001','20390','9','0','100','1','0','5','15000','30000','11','36132','0','0','0','0','0','0','0','0','0','0','Duyash the Cruel - Cast Whirlwind'),
 -- Sorim Lightsong 20612
 -- Royal Guard
 ('2067201','20672','9','0','100','1','0','5','7000','11000','11','40505','1','0','0','0','0','0','0','0','0','0','Royal Guard - Cast Cleave'),
