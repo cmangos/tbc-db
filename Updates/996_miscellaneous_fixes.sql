@@ -295,3 +295,7 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`, `inverseEffec
 -- Honor Hold Target Dummy Left 16899
 UPDATE creature_template SET ExtraFlags=0 WHERE entry IN (16897,16898,16899);
 
+-- Netherstorm Repair Target 19484
+UPDATE `creature_template` SET `InhabitType` = 7 WHERE `entry` = 19484;
+-- Overseer Seylanna 20397
+UPDATE `creature_template_addon` SET `auras` = '' WHERE `entry` = 20397; -- 34062
