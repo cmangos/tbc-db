@@ -315,3 +315,6 @@ UPDATE `creature_movement` SET `script_id` = 2024801 WHERE `id` IN (71945,71948)
 -- Lobo 21952
 DELETE FROM `creature_template_addon` WHERE `entry` = 21952;
 INSERT INTO `creature_template_addon` (`entry`, `bytes1`) VALUES (21952,3);
+
+-- Doomsaw 21119
+UPDATE `creature_template` SET `SpeedWalk` = (7 / 2.5), `SpeedRun` = (10 / 7) WHERE `entry` = 21119;
