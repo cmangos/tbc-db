@@ -21123,6 +21123,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Image of Commander Ameer <The Protectorate>
 ('2055301','20553','11','0','100','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Image of Commander Ameer <The Protectorate> - Cast Simple Teleport on Spawn'),
 -- Arconus the Insatiable 20554
+('2055401','20554','0','0','100','1','2000','8000','10000','15000','11','36473','0','0','0','0','0','0','0','0','0','0','Arconus the Insatiable - Cast Desecration'),
+('2055402','20554','2','0','100','1','25','0','15300','22900','11','36472','0','1','0','0','0','0','0','0','0','0','Arconus the Insatiable - Cast Consume Shadows at 25% HP'),
 -- Withered Corpse
 ('2056101','20561','4','0','100','0','0','0','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion and Summon Parasitic Fleshbeast and Delayed Despawn on Aggro'),
 ('2056102','20561','10','0','100','0','0','4','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion and Summon Parasitic Fleshbeast and Delayed Despawn on OOC LOS'),
