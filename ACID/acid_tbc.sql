@@ -18999,6 +18999,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2218101','22181','0','0','100','1','7900','13000','28000','36000','11','35333','1','0','0','0','0','0','0','0','0','0','Aether Ray - Cast Tail Swipe'),
 -- Lightning Wasp
 ('2218201','22182','1','0','100','1','1000','1000','600000','600000','11','35319','0','32','0','0','0','0','0','0','0','0','Lightning Wasp - Cast Electric Skin OOC'),
+-- Marmot 22189 - NSR
 -- Wrath Speaker
 ('2219501','22195','0','0','75','1','2500','7500','14000','18000','11','34017','1','0','0','0','0','0','0','0','0','0','Wrath Speaker - Cast Rain of Chaos'),
 ('2219502','22195','0','0','100','1','10100','14100','122000','130000','11','11980','4','0','0','0','0','0','0','0','0','0','Wrath Speaker - Cast Curse of Weakness'),
@@ -19018,6 +19019,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2221708','22217','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Felstorm Corruptor - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('2221709','22217','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Felstorm Corruptor - Flee at 15% HP (Phase 3)'),
 ('2221710','22217','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Felstorm Corruptor - Set Phase 0 on Evade'),
+-- Felstorm Overseer 22221 - Pre 2.1 - missing abilities
+('2222101','22221','1','0','100','0','1000','1000','0','0','11','39102','0','32','0','0','0','0','0','0','0','0','Felstorm Overseer - Cast Glowy (Black) OOC'),
 -- Koi-Koi Spirit
 ('2222601','22226','0','0','100','1','1000','3000','15000','17000','11','36093','1','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Cast Ghost Strike'),
 ('2222602','22226','6','0','100','0','0','0','0','0','45','5','50','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Send AI Event on Death'),
@@ -19066,6 +19069,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Rager 22286 - Pre 2.1
 -- Amberpelt Clefthoof 22287 - Pre 2.1
 -- Darkflame Infernal 22289 - Pre 2.1
+('2228901','22289','1','0','100','0','1000','1000','0','0','11','39102','0','32','0','0','0','0','0','0','0','0','Darkflame Infernal - Cast Glowy (Black) OOC'),
 -- Furnace Guard
 ('2229101','22291','0','0','100','1','6300','12800','6300','12800','11','32736','1','0','0','0','0','0','0','0','0','0','Furnace Guard - Cast Mortal Strike'),
 -- Vile Fire-Soul
@@ -19111,6 +19115,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Draaca Longtail
 ('2239651','22396','0','0','100','1','5300','6500','9200','10900','11','32009','1','0','0','0','0','0','0','0','0','0','Draaca Longtail - Cast Cutdown'),
 ('2239652','22396','2','0','100','0','30','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Draaca Longtail - Cast Enrage at 30% HP'),
+-- Evergrove Druid 22423 - npc_evergrove_druid
 -- Death's Door Fel Cannon 22443 - NSR
 -- Rexxar
 ('2244801','22448','0','0','100','1','1000','3000','5000','6000','11','34915','1','0','0','0','0','0','0','0','0','0','Rexxar - Cast Threat (Threat)'),
@@ -19128,6 +19133,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2247402','22474','9','0','100','1','0','5','0','0','11','39266','0','0','0','0','0','0','0','0','0','0','Unstable Fel-Imp - Cast Unstable Explosion'),
 -- Evergrove Ancient
 ('2247801','22478','9','0','100','1','0','10','12000','20000','11','39274','0','0','0','0','0','0','0','0','0','0','Evergrove Ancient - Cast Trample'),
+-- Spirit 22492
 -- Misha
 ('2249801','22498','0','0','100','1','1000','2000','5000','6000','11','17156','1','0','0','0','0','0','0','0','0','0','Misha - Cast Maul'),
 ('2249802','22498','0','0','100','1','3000','4000','25000','30000','11','20753','1','0','0','0','0','0','0','0','0','0','Misha - Cast Demoralizing Roar'),
@@ -19923,6 +19929,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Guard Hound 21847 - npc_fel_guard_hound
 -- Demoniac Scryer 22258 - npc_demoniac_scryer
 -- Hellfire Wardling 22259
+('2225901','22259','11','0','100','0','0','0','0','0','11','38683','0','0','0','0','0','0','0','0','0','0','Hellfire Wardling - Cast Magic Sucker Device Despawner, Mob on Spawn'),
+('2225902','22259','6','0','100','0','0','0','0','0','11','38891','0','2','0','0','0','0','0','0','0','0','Hellfire Wardling - Cast Magic Sucker Device (Despawn Visual) on Death'),
+-- Magic Sucker Device Buttress 22267
 -- Fel Warden
 ('2227301','22273','11','0','100','0','0','0','0','0','11','7741','0','0','54','-314','0','0','0','0','0','0','Fel Warden - Cast Summoned Demon and Say on Spawn'),
 ('2227302','22273','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Fel Warden - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -22016,6 +22025,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dragonmaw Nether Drake 22000
 ('2200001','22000','0','0','100','1','5000','10000','16000','20000','11','38344','1','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Arcane Blast'),
 ('2200002','22000','0','0','100','1','4000','8000','12000','16000','11','36513','0','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Intangible Presence'),
+-- Shadowlord Deathwail 22006 - npc_shadowlord_deathwail
 -- Corok the Mighty
 ('2201101','22011','9','0','100','1','0','5','10000','12000','11','12612','0','0','0','0','0','0','0','0','0','0','Corok the Mighty - Cast Stomp'),
 ('2201102','22011','9','0','100','1','0','10','8000','15000','11','15550','0','0','0','0','0','0','0','0','0','0','Corok the Mighty - Cast Trample'),
@@ -22120,11 +22130,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2213401','22134','0','0','100','0','1','1','0','0','25','0','0','0','54','-48','0','0','41','7000','0','0','Shadowmoon Eye of Kilrogg - Flee and Text Emote and Delayed Despawn on Aggro'),
 -- Dark Conclave Ritualist
 ('2213801','22138','1','0','75','1','1000','1000','48000','55000','11','38469','0','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Dark Conclave Ritualist Channel OOC'),
+-- Harbinger Saronen 22214
 -- Dragonmaw Peon (22252) - npc_dragonmaw_peon
 -- Dragonmaw Ascendant
 ('2225301','22253','0','0','100','1','5000','9000','10000','12000','11','10966','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Uppercut'),
 ('2225302','22253','0','0','100','1','3000','5000','6000','10000','11','15496','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Cleave'),
 ('2225303','22253','0','0','100','1','7000','9000','6000','10000','11','17547','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Mortal Strike'),
+-- Shadowwing Owl 22265
 -- Dragonmaw Skybreaker
 ('2227401','22274','4','0','15','0','0','0','0','0','54','0','1','10043','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Random Say on Aggro'),
 ('2227402','22274','4','0','100','0','0','0','0','0','49','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Enable Dynamic Movement on Aggro'),
@@ -22997,6 +23009,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2219901','22199','2','0','100','1','30','0','120000','120000','11','33958','0','1','1','-106','0','0','0','0','0','0','Slaag - Cast Frenzy at 30% HP'),
 ('2219902','22199','6','0','100','0','0','0','0','0','11','39898','0','7','0','0','0','0','0','0','0','0','Slaag - Cast Summon Slaags Standard Chest on Death'),
 ('2219903','22199','0','0','100','1','27000','32000','27000','32000','11','21909','0','0','0','0','0','0','0','0','0','0','Slaag - Cast Dust Field'),
+-- Draenei Tomb Guardian 22285 - npc_draenei_tomb_guardian
 -- Rotting Forest-Rager
 ('2230701','22307','9','0','100','1','0','5','12000','18000','11','15548','0','0','0','0','0','0','0','0','0','0','Rotting Forest-Rager - Cast Thunderclap'),
 ('2230702','22307','6','0','100','0','0','0','0','0','11','39130','0','7','0','0','0','0','0','0','0','0','Rotting Forest-Rager - Cast Summon Wood Mites on Death'),
@@ -23039,6 +23052,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lost Torranche
 ('2280701','22807','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lost Torranche - Flee at 15% HP'),
 -- Cenarion Sparrowhawk 22972 - npc_cenarion_sparrowhawk
+-- Monstrous Kaliri Egg Trigger 22991 - s.39843
 -- Guardian of the Hawk
 ('2299201','22992','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','18','2','0','0','Guardian of the Hawk - Set Unattackable on Spawn'),
 ('2299202','22992','11','0','100','0','0','0','0','0','5','27','0','0','0','0','0','0','0','0','0','0','Guardian of the Hawk - Emote Ready Unarmed on Spawn'),
