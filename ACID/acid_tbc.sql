@@ -19155,14 +19155,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thuk the Defiant
 ('2292001','22920','32','0','100','1','8','40','5000','10000','11','38777','12','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Rock Rumble in Range'),
 ('2292002','22920','0','0','100','1','3000','6000','8000','16000','11','38770','1','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Mortal Wound'),
+-- Felguard Degrader 23055
+-- Fel Imp Defender 23078
+-- Doomguard Punisher 23113
 -- Ogri'la Peacekeeper 23115
 ('2311501','23115','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Ogri\'la Peacekeeper - Cast Net'),
+-- Bombing Run Target Bunny 23118
 -- Bash'ir Surveyor
 ('2315301','23153','0','0','100','1','18000','28000','21000','29000','11','40835','4','0','0','0','0','0','0','0','0','0','Bash\'ir Surveyor - Cast Stasis Field'),
 ('2315302','23153','0','0','100','1','12000','18000','18000','31000','11','40881','1','0','0','0','0','0','0','0','0','0','Bash\'ir Surveyor - Cast Arcane Blast'),
 ('2315303','23153','2','0','100','1','40','0','38000','38000','11','11436','1','0','0','0','0','0','0','0','0','0','Bash\'ir Surveyor - Cast Slow when below 40% Health'),
 -- Crystalfused Miner
 ('2317401','23174','0','0','100','1','6000','12000','15000','20000','11','32614','0','0','0','0','0','0','0','0','0','0','Crystalfused Miner - Cast Arcane Explosion'),
+-- Mo'arg Tormenter 23212
+-- Eye of Shartuul 23228
+-- Shartuul 23230
+-- Skyguard Ranger 23242
+('2324201','23242','0','0','100','1','3000','9000','10000','20000','11','38618','0','0','0','0','0','0','0','0','0','0','Skyguard Ranger - Cast Whirlwind'),
 -- Slavering Slave
 ('2324601','23246','9','0','100','1','0','30','7500','9500','11','40976','1','0','0','0','0','0','0','0','0','0','Slavering Slave - Cast Slimy Spittle'),
 -- Bash'ir Subprimal
