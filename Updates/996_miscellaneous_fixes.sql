@@ -321,3 +321,5 @@ UPDATE `creature_template` SET `SpeedWalk` = (7 / 2.5), `SpeedRun` = (10 / 7) WH
 
 -- MECHANIC_DISORIENTED & MECHANIC_KNOCKOUT Immunity for Pusillin 14354
 UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask|2|8192 WHERE entry IN (14354);
+
+UPDATE `item_template` SET `maxcount` = 0 WHERE `entry` = 32589; -- Hellfire-Encased Pendant 32589
