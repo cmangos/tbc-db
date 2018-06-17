@@ -5,4 +5,14 @@ INSERT INTO spell_proc_event(entry,procFlags) VALUES
 (35244,0x00080000),
 (36659,0x00080000);
 
+-- new Shadowfiend level stats from TBC sniffs, 66, 67 and 70 sniffed, rest filled
+UPDATE pet_levelstats SET mana=100 WHERE creature_entry IN(19668);
+DELETE FROM pet_levelstats WHERE creature_entry IN(19668) AND level IN(66,67,68,69,70);
+INSERT INTO pet_levelstats(creature_entry, level, hp, mana, armor, str, agi, sta, inte, spi) VALUES
+('19668', '66', '1160', '2846', '100', '0', '0', '0', '0', '0'),
+('19668', '67', '1193', '2933', '100', '0', '0', '0', '0', '0'),
+('19668', '68', '1227', '3010', '100', '0', '0', '0', '0', '0'),
+('19668', '69', '1261', '3095', '100', '0', '0', '0', '0', '0'),
+('19668', '70', '1296', '3155', '100', '0', '0', '0', '0', '0');
+
 
