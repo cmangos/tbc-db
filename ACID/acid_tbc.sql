@@ -19188,6 +19188,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2324902','23249','2','0','100','1','20','0','31000','31000','11','29935','4','0','0','0','0','0','0','0','0','0','Bash\'ir Flesh Fiend - Cast Gaping Maw at 20% Health'),
 -- Skyguard Windcharger
 ('2325701','23257','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Skyguard Windcharger - Cast Net'),
+-- Dreadmaw 23275
+-- Portable Fel Cannon 23278
+-- Fel Eye Stalk 23323
+('2332301','23323','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Fel Eye Stalk - Prevent Movement on Spawn'),
+('2332302','23323','9','0','100','1','0','25','9000','10000','11','40842','1','0','0','0','0','0','0','0','0','0','Fel Eye Stalk - Cast Mind Flay'),
 -- Bash'ir Reckoner
 ('2333201','23332','4','0','100','0','0','0','0','0','11','30798','0','0','0','0','0','0','0','0','0','0','Bash\'ir Reckoner - Cast Dual Wield on Aggro'),
 ('2333202','23332','9','0','100','1','8','25','18000','24000','11','35570','4','0','0','0','0','0','0','0','0','0','Bash\'ir Reckoner - Cast Charge'),
@@ -22260,6 +22265,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2328602','23286','2','0','100','0','40','0','0','0','11','7279','1','1','25','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Black Sludge and Flee at 40% HP'),
 -- Crazed Murkblood Foreman 23305
 ('2330501','23305','2','0','100','0','30','0','0','0','11','40743','0','0','54','-106','0','0','0','0','0','0','Crazed Murkblood Foreman - Cast Enrage at 30% HP'),
+-- Disobedient Dragonmaw Peon 23311 - npc_disobedient_dragonmaw_peon
 -- Netherwing Ally
 ('2332001','23320','0','0','100','1','1000','2000','6000','8000','11','13901','1','0','0','0','0','0','0','0','0','0','Netherwing Ally - Cast Arcane Bolt'),
 -- Crazed Murkblood Miner 23324
