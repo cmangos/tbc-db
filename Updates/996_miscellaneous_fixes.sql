@@ -333,3 +333,6 @@ UPDATE `creature_template` SET `FactionAlliance` = 1811, `FactionHorde` = 1811, 
 
 -- Fel Eye Stalk 23323
 UPDATE `creature_template` SET `UnitFlags` = 33554688, `ModelId1` = 16480, `ModelId2` = 19595 WHERE `entry` = 23323;
+
+-- Remove <Alterac Valley Battlemaster> from Game Event 18, should be spawned by default
+DELETE FROM `game_event_creature` WHERE `guid` IN (SELECT guid FROM creature WHERE id IN (347,5118,7410,7427,12197,14942,16695,19906,19907,20119,20271,20276));
