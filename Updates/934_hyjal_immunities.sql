@@ -1,5 +1,5 @@
 -- ----------
--- IMMUNITIES
+-- ADD IMMUNITIES
 -- ----------
 
 -- CHARM [44 spells] (Mind Control, Enslave Demon, Dominate Mind, Seduction, etc.)
@@ -235,5 +235,17 @@ UPDATE creature_template SET ExtraFlags=ExtraFlags|4194304 WHERE entry IN(
 17864, -- Lesser Doomguard
 17767, -- Rage Winterchill
 17818 -- Towering Infernal
+);
+
+-- ===========
+-- REMOVE IMMUNITIES
+-- ===========
+
+-- DISTRACT [5 spells]
+UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask&~8 WHERE entry IN (
+17767, -- Rage Winterchill
+17808, -- Anetheron
+17842, -- Azgalor
+17888 -- Kaz'rogal
 );
 
