@@ -25600,8 +25600,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tarren Mill Horsehand (18646) - NSR
 -- Innkeeper Monica (18649) - NSR
 -- Young Blanchy (18651) - NSR
--- Jay Lemieux (18655) - NSR
--- Julie Honeywell (18656) - NSR
+-- Jay Lemieux (18655)
+('1865501','18655','1','0','100','3','30000','60000','60000','90000','1','-1599','-1600','0','0','0','0','0','0','0','0','0','Jay Lemieux - Random Say OOC'),
+-- Julie Honeywell (18656)
+('1865601','18656','1','0','100','3','30000','60000','60000','90000','1','-1601','-1602','0','0','0','0','0','0','0','0','0','Julie Honeywell - Random Say OOC'),
 -- Tarren Mill Fisherman (18657) - NSR
 -- Aged Dalaran Wizard
 ('1866401','18664','1','0','100','7','1000','1000','1800000','1800000','11','12544','0','1','0','0','0','0','0','0','0','0','Aged Dalaran Wizard - Cast Frost Armor on Spawn'),
@@ -35648,7 +35650,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1595','How can you have any pudding if you don\'t eat your fish?','0','0','7','Otonambusi 18810','5'),
 ('-1596','If you don\'t eat your fish, you can\'t have any pudding!','0','0','7','Otonambusi 18810','5'),
 ('-1597','Welcome, welcome, to the recently appropriated and callously renamed Steamwheedle Stadium!','0','0','0','"King" Dond 18897','0'),
-('-1598','A tradesman, perhaps? You need look no further than I for supplies. My prices are quite fair, friend. These items were difficult to acquire, but what does the source matter, eh? You\'ll have what you need.','0','0','0','Dealer Aljaan 19533','1');
+('-1598','A tradesman, perhaps? You need look no further than I for supplies. My prices are quite fair, friend. These items were difficult to acquire, but what does the source matter, eh? You\'ll have what you need.','0','0','0','Dealer Aljaan 19533','1'),
+('-1599','I wanna play soldier!','0','0','0','Jay Lemieux 18655','0'),
+('-1600','Tag! You\'re it!','0','0','0','Jay Lemieux 18655','0'),
+('-1601','Can I play?','0','0','0','Julie Honeywell 18656','0'),
+('-1602','Ew, boys are gross!','0','0','0','Julie Honeywell 18656','0');
+
 
 
 
