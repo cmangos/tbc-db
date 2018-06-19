@@ -58,7 +58,7 @@ DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 1985101 AND 1985
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
 (1985101,0,0,0,0,0,2000001331,0,0,0,0,0,0,'Negatron - I AM DEATH!  PREPARE YOUR TOWN FOR ANNIHILATION!',0,0,0,0),
 (1985101,6,5,46,256,0,0,0,0,0,0,0,0,'Negatron - Remove UNIT_FLAG_IMMUNE_TO_PLAYER',0,0,0,0),
-(1985101,6,26,0,0,0,0,0,0,0,19849,40,1,'Negatron - Attack Scrap Reaver',0,0,0,0),
+(1985101,7,26,0,0,0,0,0,0,0,19849,40,1,'Negatron - Attack Scrap Reaver',0,0,0,0),
 
 (1985102,0,0,0,0,0,2000001332,0,0,0,0,0,0,'Negatron - YOUR SAD ATTEMPT AT CREATING A FEL REAVER TO STOP ME HAS FAILED!  NOW, ON TO AREA 52!',0,0,0,0),
 (1985102,0,2,46,33536,0,0,0,0,0,0,0,0,'Negatron - Set UnitFlags 33536',0,0,0,0),
