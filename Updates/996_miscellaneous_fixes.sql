@@ -354,3 +354,6 @@ UPDATE `gameobject_template` SET `faction` = 114, `data2` = 5 WHERE `entry` = 18
 
 -- Servant's Access Door
 UPDATE `gameobject_template` SET `flags` = 34 WHERE `entry` = 184281;
+
+-- Felfire Diemetradon 21408,Greater Felfire Diemetradon 21462
+UPDATE `creature_template` SET `InhabitType` = 3 WHERE `entry` IN (21408,21462);
