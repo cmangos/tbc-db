@@ -351,3 +351,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 UPDATE `gameobject_template` SET `faction` = 114, `data2` = 5 WHERE `entry` = 184663;
 -- Shadow Sight 184664
 UPDATE `gameobject_template` SET `faction` = 114, `data2` = 5 WHERE `entry` = 184664;
+
+-- Servant's Access Door
+UPDATE `gameobject_template` SET `flags` = 34 WHERE `entry` = 184281;
