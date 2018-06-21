@@ -334,6 +334,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2374; -- Torn
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2375; -- Torn Fin Coastrunner
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2376; -- Torn Fin Oracle
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2377; -- Torn Fin Tidehunter
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=2385; -- Feral Mountain Lion
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2387; -- Hillsbrad Councilman
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2388; -- Innkeeper Shay
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2389; -- Zarise
@@ -454,15 +455,15 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2928; -- Prim
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2929; -- Savage Owlbeast
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2932; -- Magregan Deepshadow
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2934; -- Keeper Bel'dugur
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2989; -- Bael'dun Digger
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=2990; -- Bael'dun Appraiser
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3024; -- Tah Winterhoof
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3044; -- Miles Welsh
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3045; -- Malakai Cross
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3046; -- Father Cobb
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3047; -- Archmage Shymm
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3048; -- Ursyn Ghull
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3049; -- Thurston Xane
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=2989; -- Bael'dun Digger
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=2990; -- Bael'dun Appraiser
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3024; -- Tah Winterhoof
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3044; -- Miles Welsh
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3045; -- Malakai Cross
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3046; -- Father Cobb
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3047; -- Archmage Shymm
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3048; -- Ursyn Ghull
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3049; -- Thurston Xane
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3110; -- Dreadmaw Crocolisk
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3128; -- Kul Tiras Sailor
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3129; -- Kul Tiras Marine
@@ -478,31 +479,32 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3205; -- Zala
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3206; -- Voodoo Troll
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3207; -- Hexed Troll
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3231; -- Corrupted Dreadmaw Crocolisk
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3296; -- Orgrimmar Grunt
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3300; -- Adder
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3296; -- Orgrimmar Grunt
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3300; -- Adder
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3301; -- Morgan Ladimore
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3374; -- Bael'dun Excavator
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3375; -- Bael'dun Foreman
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3376; -- Bael'dun Soldier
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3377; -- Bael'dun Rifleman
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3378; -- Bael'dun Officer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3379; -- Burning Blade Bruiser
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3380; -- Burning Blade Acolyte
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3381; -- Southsea Brigand
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3382; -- Southsea Cannoneer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3383; -- Southsea Cutthroat
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3384; -- Southsea Privateer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3385; -- Theramore Marine
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3386; -- Theramore Preserver
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3390; -- Apothecary Helbrim
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3392; -- Prospector Khazgorm
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3393; -- Captain Fairmount
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3374; -- Bael'dun Excavator
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3375; -- Bael'dun Foreman
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3376; -- Bael'dun Soldier
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3377; -- Bael'dun Rifleman
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3378; -- Bael'dun Officer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3379; -- Burning Blade Bruiser
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3380; -- Burning Blade Acolyte
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3381; -- Southsea Brigand
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3382; -- Southsea Cannoneer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3383; -- Southsea Cutthroat
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3384; -- Southsea Privateer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3385; -- Theramore Marine
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3386; -- Theramore Preserver
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3390; -- Apothecary Helbrim
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3392; -- Prospector Khazgorm
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3393; -- Captain Fairmount
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3398; -- Gesharahan
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3414; -- General Twinbraid
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3414; -- General Twinbraid
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3461; -- Oasis Snapjaw
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3467; -- Baron Longshore
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3470; -- Rathorian
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3467; -- Baron Longshore
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=3470; -- Rathorian
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3476; -- Isha Awak
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=3502;	-- Ratchet Bruiser
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3522; -- Constance Brisboise
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3523; -- Bowen Brisboise
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3528; -- Pyrewood Armorer
@@ -555,16 +557,16 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3942; -- Mavo
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3943; -- Ruuzel
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3944; -- Wrathtail Priestess
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=3982; -- Monika Sengutz
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4050; -- Cenarion Caretaker
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4051; -- Cenarion Botanist
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4052; -- Cenarion Druid
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4050; -- Cenarion Caretaker
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4051; -- Cenarion Botanist
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4052; -- Cenarion Druid
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4062; -- Dark Iron Bombardier
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4064; -- Blackrock Scout
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4065; -- Blackrock Sentry
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4142; -- Sparkleshell Tortoise
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4143; -- Sparkleshell Snapper
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4144; -- Sparkleshell Borer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4202; -- Gerenzo Wrenchwhistle
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4202; -- Gerenzo Wrenchwhistle
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4280; -- Scarlet Preserver
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4281; -- Scarlet Scout
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4282; -- Scarlet Magician
@@ -588,7 +590,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4388; -- Youn
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4389; -- Murk Thresher
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4390; -- Elder Murk Thresher
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4397; -- Mudrock Spikeshell
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4423; -- Darnassian Protector
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4423; -- Darnassian Protector
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4457; -- Murkgill Forager
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4458; -- Murkgill Hunter
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4459; -- Murkgill Oracle
@@ -671,11 +673,11 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4614; -- Mart
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4615; -- Katrina Alliestar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4616; -- Lavinia Crowe
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4617; -- Thaddeus Webb
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4677; -- Doomwarder
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4679; -- Nether Maiden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4680; -- Doomwarder Captain
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4682; -- Nether Sister
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4684; -- Nether Sorceress
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4677; -- Doomwarder
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4679; -- Nether Maiden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4680; -- Doomwarder Captain
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4682; -- Nether Sister
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=4684; -- Nether Sorceress
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4711; -- Slitherblade Naga
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4712; -- Slitherblade Sorceress
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=4713; -- Slitherblade Warrior
@@ -718,13 +720,13 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5401; -- Kazk
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5414; -- Apothecary Faustin
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5418; -- Deathstalker Zraedus
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5431; -- Surf Glider
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5543; -- Clarice Foster
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5543; -- Clarice Foster
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5595; -- Ironforge Guard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5624; -- Undercity Guardian
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5643; -- Tyranis Malem
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5645; -- Sandfury Hideskinner
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5646; -- Sandfury Axe Thrower
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5647; -- Sandfury Firecaller
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5643; -- Tyranis Malem
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5645; -- Sandfury Hideskinner
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5646; -- Sandfury Axe Thrower
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5647; -- Sandfury Firecaller
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5651; -- Patrick Garrett
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5653; -- Tyler
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5654; -- Edward
@@ -775,11 +777,11 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5754; -- Zane
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5757; -- Lilly
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5758; -- Leo Sarn
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5759; -- Nurse Neela
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5771; -- Jugkar Grim'rod
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5797; -- Aean Swiftriver
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5798; -- Thora Feathermoon
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5799; -- Hannah Bladeleaf
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5800; -- Marcus Bel
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5771; -- Jugkar Grim'rod
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5797; -- Aean Swiftriver
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5798; -- Thora Feathermoon
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5799; -- Hannah Bladeleaf
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5800; -- Marcus Bel
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5819; -- Mirelle Tremayne
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5820; -- Gillian Moore
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5821; -- Sheldon Von Croy
@@ -789,19 +791,19 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5839; -- Dark
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5840; -- Dark Iron Steamsmith
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5844; -- Dark Iron Slaver
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5846; -- Dark Iron Taskmaster
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5849; -- Digger Flameforge
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5915; -- Brother Ravenoak
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5931; -- Foreman Rigger
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5849; -- Digger Flameforge
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5915; -- Brother Ravenoak
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5931; -- Foreman Rigger
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5952; -- Den Grunt
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5953; -- Razor Hill Grunt
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5955; -- Tooga
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5957; -- Birgitte Cranston
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5955; -- Tooga
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=5957; -- Birgitte Cranston
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=5997; -- Nethergarde Engineer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6001; -- Nethergarde Analyst
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6011; -- Felguard Sentry
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6015; -- Torta
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=6015; -- Torta
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6033; -- Lake Frenzy
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6115; -- Roaming Felguard
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=6115; -- Roaming Felguard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6136; -- Arkkoran Muckdweller
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6138; -- Arkkoran Oracle
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6140; -- Hetaera
@@ -826,7 +828,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6371; -- Stor
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6389; -- Deathguard Podrig
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6411; -- Velora Nitely
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6467; -- Mennet Carkad
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6494; -- Tazan
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=6494; -- Tazan
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6497; -- Astor Hadren
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6522; -- Andron Gant
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6523; -- Dark Iron Rifleman
@@ -834,7 +836,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6570; -- Fenw
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6575; -- Scarlet Trainee
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6649; -- Lady Sesspira
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6650; -- General Fangferror
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6668; -- Lord Cyrik Blackforge
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=6668; -- Lord Cyrik Blackforge
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6739; -- Innkeeper Bates
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6741; -- Innkeeper Norman
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=6784; -- Calvin Montague
@@ -850,7 +852,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7037; -- Thau
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7038; -- Thaurissan Agent
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7050; -- Defias Drone
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7053; -- Klaven Mortwake
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7067; -- Venture Co. Drone
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=7067; -- Venture Co. Drone
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7068; -- Condemned Acolyte
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7069; -- Condemned Monk
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7070; -- Condemned Cleric
@@ -858,14 +860,14 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7071; -- Curs
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7072; -- Cursed Justicar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7075; -- Writhing Mage
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7087; -- Killian Hagey
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7268; -- Sandfury Guardian
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=7268; -- Sandfury Guardian
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7273; -- Gahz'rilla
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7275; -- Shadowpriest Sezz'ziz
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7286; -- Zul'Farrak Zombie
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7297; -- Gothard Winslow
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7310; -- Mutated Venture Co. Drone
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7461; -- Hederine Initiate
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7463; -- Hederine Slayer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=7310; -- Mutated Venture Co. Drone
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=7461; -- Hederine Initiate
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=7463; -- Hederine Slayer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7489; -- Silverpine Deathguard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7562; -- Brown Snake
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7565; -- Black Kingsnake
@@ -876,13 +878,13 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7683; -- Ales
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7725; -- Grimtotem Raider
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7726; -- Grimtotem Naturalist
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7727; -- Grimtotem Shaman
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7730; -- Stonetalon Grunt
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=7730; -- Stonetalon Grunt
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7796; -- Nekrum Gutchewer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7806; -- Homing Robot OOX-09/HL
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7807; -- Homing Robot OOX-22/FE
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7809; -- Vilebranch Ambusher
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7847; -- Caliph Scorpidsting
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7883; -- Andre Firebeard
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=7847; -- Caliph Scorpidsting
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=7883; -- Andre Firebeard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7885; -- Spitelash Battlemaster
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7886; -- Spitelash Enchantress
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=7977; -- Gammerita
@@ -913,7 +915,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=8560; -- Moss
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=8561; -- Mossflayer Shadowhunter
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=8562; -- Mossflayer Cannibal
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=8566; -- Dark Iron Lookout
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=8617; -- Zalashji
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=8617; -- Zalashji
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=8636; -- Morta'gya the Keeper
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=8637; -- Dark Iron Watchman
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=8672; -- Auctioneer Leeka
@@ -951,12 +953,14 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10158; -- Moo
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10159; -- Young Moonkin
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10160; -- Raging Moonkin
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10181; -- Lady Sylvanas Windrunner
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10182; -- Rokaro
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10201; -- Lady Hederine
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=10182; -- Rokaro
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=10201; -- Lady Hederine
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10204; -- Misha
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10216; -- Gubber Blump
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10296; -- Vaelan
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10323; -- Murkdeep
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=10374; -- Spire Spider
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=10375; -- Spire Spiderling
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10559; -- Lady Vespia
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10605; -- Scarlet Medic
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10608; -- Scarlet Priest
@@ -964,10 +968,10 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10665; -- Jun
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10667; -- Chromie
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10756; -- Scalding Elemental
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10757; -- Boiling Elemental
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10758; -- Grimtotem Bandit
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10759; -- Grimtotem Stomper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10760; -- Grimtotem Geomancer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10761; -- Grimtotem Reaver
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=10758; -- Grimtotem Bandit
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=10759; -- Grimtotem Stomper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=10760; -- Grimtotem Geomancer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=10761; -- Grimtotem Reaver
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10778; -- Janice Felstone
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10781; -- Royal Overseer Bauhaus
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10802; -- Hitah'ya the Keeper
@@ -975,7 +979,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10828; -- Hig
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10837; -- High Executor Derrington
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10877; -- Courier Hammerfall
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10927; -- Marlene Redpath
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10929; -- Haleh
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=10929; -- Haleh
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10937; -- Captain Redpath
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10938; -- Redpath the Corrupted
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=10939; -- Marduk the Black
@@ -1002,7 +1006,8 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11064; -- Dar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11067; -- Malcomb Wynn
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11141; -- Spirit of Trey Lightforge
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11142; -- Undead Postman
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11191; -- Lilith the Lithe
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11190; -- Everlook Bruiser
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11191; -- Lilith the Lithe
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11216; -- Eva Sarkhoff
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11217; -- Lucien Sarkhoff
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11218; -- Kerlonian Evershade
@@ -1016,9 +1021,31 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11287; -- Bak
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11290; -- Mossflayer Zombie
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11291; -- Unliving Mossflayer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11316; -- Joseph Dirte
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11338; -- Hakkari Shadowcaster
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11339; -- Hakkari Shadow Hunter
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11340; -- Hakkari Blood Priest
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11346; -- Hakkari Oracle
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11347; -- Zealot Lor'Khan
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11348; -- Zealot Zath
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11350; -- Gurubashi Axe Thrower
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11351; -- Gurubashi Headhunter
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11353; -- Gurubashi Blood Drinker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11355; -- Gurubashi Warrior
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11356; -- Gurubashi Champion
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11360; -- Zulian Cub
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11361; -- Zulian Tiger
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11365; -- Zulian Panther
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11371; -- Razzashi Serpent
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11372; -- Razzashi Adder
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11373; -- Razzashi Cobra
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11380; -- Jin'do the Hexxer
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11382; -- Bloodlord Mandokir
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11383; -- High Priestess Hai'watna
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11387; -- Sandfury Speaker
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11388; -- Witherbark Speaker
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11389; -- Bloodscalp Speaker
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11390; -- Skullsplitter Speaker
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11391; -- Vilebranch Speaker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11439; -- Illusion of Jandice Barov
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11562; -- Drysnap Crawler
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11563; -- Drysnap Pincer
@@ -1027,29 +1054,31 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11613; -- Hun
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11615; -- Mickey Levine
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11621; -- Spectral Corpse
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11656; -- Warsong Peon
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11680; -- Horde Scout
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11680; -- Horde Scout
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11681; -- Horde Deforester
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11682; -- Warsong Grunt
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11683; -- Warsong Shaman
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11697; -- Mannoroc Lasher
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11751; -- Rilan Howard
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11697; -- Mannoroc Lasher
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11751; -- Rilan Howard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11752; -- Blaise Montgomery
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11803; -- Twilight Keeper Exeter
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11804; -- Twilight Keeper Havunth
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11822; -- Moonglade Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11822; -- Moonglade Warden
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11830; -- Hakkari Priest
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=11831; -- Hakkari Witch Doctor
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11835; -- Theodore Griffs
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11858; -- Grundig Darkcloud
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11858; -- Grundig Darkcloud
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11870; -- Archibald
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11898; -- Crusader Lord Valdelmar
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11910; -- Grimtotem Ruffian
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11911; -- Grimtotem Mercenary
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11912; -- Grimtotem Brute
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11913; -- Grimtotem Sorcerer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11914; -- Gorehoof the Black
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11910; -- Grimtotem Ruffian
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11911; -- Grimtotem Mercenary
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11912; -- Grimtotem Brute
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11913; -- Grimtotem Sorcerer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=11914; -- Gorehoof the Black
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11936; -- Artist Renfray
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=11945; -- Claire Willower
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12123; -- Reef Shark
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12138; -- Lunaclaw
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=12138; -- Lunaclaw
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12178; -- Tortured Druid
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12179; -- Tortured Sentinel
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12199; -- Shade of Ambermoon
@@ -1064,10 +1093,11 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12636; -- Geo
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12717; -- Muglash
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12722; -- Vera Nightshade
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12856; -- Ashenvale Outrunner
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12865; -- Ambassador Malcin
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=12865; -- Ambassador Malcin
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12896; -- Silverwing Sentinel
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12897; -- Silverwing Warrior
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=12920; -- Doctor Gregory Victor
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=12999; -- World Invisible Trigger
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=13118; -- Crimson Bodyguard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=13154; -- Commander Louis Philips
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=13157; -- Makasgar
@@ -1101,25 +1131,29 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14402; -- See
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14403; -- Seeker Nahr
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14404; -- Seeker Thompson
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14423; -- Officer Jaxon
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14426; -- Harb Foulmountain
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=14426; -- Harb Foulmountain
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14436; -- Mor'zul Bloodbringer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14437; -- Gorzeeki Wildeyes
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14438; -- Officer Pomeroy
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14439; -- Officer Brady
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14440; -- Hunter Sagewind
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14441; -- Hunter Ragetotem
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14442; -- Hunter Thunderhorn
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=14440; -- Hunter Sagewind
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=14441; -- Hunter Ragetotem
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=14442; -- Hunter Thunderhorn
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14446; -- Fingat
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14450; -- Orphan Matron Nightingale
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14451; -- Orphan Matron Battlewail
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14463; -- Daio the Decrepit
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14469; -- Niby the Almighty
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14487; -- Gluggle
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=14507; -- High Priest Venoxis
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=14509; -- High Priest Thekal
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=14510; -- High Priestess Mar'li
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=14517; -- High Priestess Jeklik
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14522; -- Ur'dan
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14523; -- Ulathek
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14527; -- Simone the Inconspicuous
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14529; -- Franklin the Friendly
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14531; -- Artorius the Amiable
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=14531; -- Artorius the Amiable
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14536; -- Nelson the Nice
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14621; -- Overseer Maltorius
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14622; -- Thorium Brotherhood Lookout
@@ -1132,7 +1166,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14724; -- Bub
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14725; -- Raedon Duskstriker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14726; -- Rashona Straglash
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14727; -- Vehena
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14728; -- Rumstag Proudstrider
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=14728; -- Rumstag Proudstrider
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14729; -- Ralston Farnsley
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14730; -- Revantusk Watcher
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14731; -- Lard
@@ -1151,9 +1185,13 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14764; -- Ice
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14765; -- Stonehearth Marshal
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14766; -- Iceblood Marshal
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14769; -- West Frostwolf Marshal
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=14825; -- Withered Mistress
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=14826; -- Sacrificed Troll
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14875; -- Molthor
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14876; -- Zandalar Headshrinker
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14881; -- Spider
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=14881; -- Spider
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=14882; -- Atal'ai Mistress
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=14883; -- Voodoo Slave
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14902; -- Jin'rokh the Breaker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14903; -- Al'tabim the All-Seeing
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14904; -- Maywiki of Zuldazar
@@ -1166,9 +1204,11 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14984; -- Ser
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=14991; -- League of Arathor Emissary
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15021; -- Deathmaster Dwire
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15022; -- Deathstalker Mortis
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=15067; -- Zulian Stalker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15080; -- Servant of the Hand
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15088; -- Booty Bay Elite
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15102; -- Silverwing Emissary
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=15111; -- Mad Servant
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15131; -- Qeeju
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15162; -- Scarlet Inquisitor
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15169; -- Ralo'shan the Eternal Watcher
@@ -1295,7 +1335,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15763; -- Off
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15764; -- Officer Ironbeard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15765; -- Officer Redblade
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15766; -- Officer Maloof
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15767; -- Officer Thunderstrider
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=15767; -- Officer Thunderstrider
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15768; -- Officer Gothena
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15864; -- Valadar Starsong
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=15871; -- Elder Bronzebeard
@@ -1376,9 +1416,9 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16402; -- Zom
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16403; -- Withered Grimscale
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16404; -- Yellowgill Frenzy
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16405; -- Whitetail Frenzy
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16416; -- Bronn Fitzwrench
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16417; -- Rumsen Fizzlebrack
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16418; -- Mupsi Shacklefridd
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=16416; -- Bronn Fitzwrench
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=16417; -- Rumsen Fizzlebrack
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=16418; -- Mupsi Shacklefridd
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16424; -- Spectral Sentry
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16425; -- Phantom Guardsman
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16426; -- Bennett
@@ -1424,7 +1464,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16733; -- Exo
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16734; -- Funaam
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16769; -- Firewing Warlock
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16772; -- Bonechewer Devastator
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16781; -- Midsummer Celebrant
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=16781; -- Midsummer Celebrant
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16788; -- Festival Flamekeeper
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16790; -- Falconer Drenna Riverwind
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=16791; -- Ryathen the Somber
@@ -1649,6 +1689,8 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17765; -- All
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17766; -- Horde Silithyst Sentinel
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17796; -- Mekgineer Steamrigger
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17804; -- Squire Rowe
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry IN (17814,20538); -- Lordaeron Watchman
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry IN (17815,20537); -- Lordaeron Sentry
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17822; -- Landen Stilwell
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17824; -- Captured Sunhawk Agent
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17825; -- Interrogator Elysia
@@ -1660,6 +1702,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17858; -- War
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17865; -- Matis
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17886; -- [DND]Sunhawk Portal Controller
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17887; -- Void Critter
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=17888; -- Kaz'rogal
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17896; -- Kameel Longstride
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17904; -- Fedryen Swiftspear
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=17909; -- Lauranna Thar'well
@@ -1693,6 +1736,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18080; -- Kat
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18086; -- Darkcrest Taskmaster
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18087; -- Darkcrest Siren
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18089; -- Bloodscale Slavedriver
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry IN (18096,20531); -- Epoch Hunter
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18097; -- Nahuud
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18098; -- Kialon Nightblade
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18103; -- Arcane Guardian
@@ -1810,15 +1854,15 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18461; -- Dam
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18463; -- Dampscale Devourer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18464; -- Warp Stalker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18465; -- Warp Hunter
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18466; -- Dreadfang Lurker
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18467; -- Dreadfang Widow
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=18466; -- Dreadfang Lurker
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=18467; -- Dreadfang Widow
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18468; -- Teromoth
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18469; -- Royal Teromoth
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18470; -- Bonelasher
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18471; -- Gurgthock
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18475; -- Mug'gok
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18476; -- Timber Worg
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18477; -- Timber Worg Alpha
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=18476; -- Timber Worg
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=18477; -- Timber Worg Alpha
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18482; -- Empoor
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18483; -- Empoor's Bodyguard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18488; -- Telaari Watcher
@@ -1872,13 +1916,13 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18639; -- Cab
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18640; -- Cabal Warlock
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18641; -- Cabal Familiar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18642; -- Fel Guardhound
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18647; -- Deathskitter
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=18647; -- Deathskitter
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18652; -- Zahlia
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18658; -- Kil'sorrow Ritualist
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18663; -- Maiden of Discipline
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18668; -- Vaeron Kormar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18669; -- Terric Brightwind
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18670; -- Ironjaw
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=18670; -- Ironjaw
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18675; -- Soolaveen
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18676; -- Keb'ezil
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=18680; -- Marticar
@@ -1983,13 +2027,13 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19018; -- Wil
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19019; -- Luftasia
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19020; -- Matron Qualia
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19021; -- Nancila
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19022; -- Stabled Panther
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19023; -- Stabled Tallstrider
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19024; -- Stabled Boar
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19025; -- Stabled Bear
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19026; -- Stabled Raptor
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19027; -- Stabled Kurenai Lion
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19030; -- Stabled Kurenai Panther
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19022; -- Stabled Panther
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19023; -- Stabled Tallstrider
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19024; -- Stabled Boar
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19025; -- Stabled Bear
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19026; -- Stabled Raptor
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19027; -- Stabled Kurenai Lion
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19030; -- Stabled Kurenai Panther
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19033; -- Nicole Bartlett
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19034; -- Mendorn
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19042; -- Leeli Longhaggle
@@ -2145,8 +2189,8 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19451; -- Qua
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19453; -- Sunfury Captain
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19455; -- Nurse Judith
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19457; -- Grillok "Darkeye"
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19458; -- Ripp
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19459; -- Feng
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19458; -- Ripp
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19459; -- Feng
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19460; -- Bleeding Hollow Skeleton
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19475; -- Harbinger Haronem
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19482; -- Sagan
@@ -2219,11 +2263,12 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19754; -- Dea
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19755; -- Mo'arg Weaponsmith
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19756; -- Deathforge Smith
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19759; -- Newly Crafted Infernal
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=19762; -- Coilskar Defender
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19763; -- Manni
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19764; -- Moh
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19765; -- Coilskar Myrmidon
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19766; -- Jakk
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19767; -- Coilskar Sorceress
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19767; -- Coilskar Sorceress
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19768; -- Coilskar Siren
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19769; -- Coilskar Screamer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19772; -- Spirit Sage Gartok
@@ -2258,9 +2303,9 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19875; -- Bar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19880; -- Nether-Stalker Khay'ji
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19882; -- Jero'me
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19926; -- Spellreaver Marathelle
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19932; -- Andormu
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19933; -- Nozari
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19935; -- Soridormi
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19932; -- Andormu
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19933; -- Nozari
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=19935; -- Soridormi
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19937; -- Commander Hogarth
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19940; -- Apex
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19943; -- Lashh'an Talonite
@@ -2269,6 +2314,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19945; -- Las
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19946; -- Darkcrest Slaver
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19947; -- Darkcrest Sorceress
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19948; -- Bloodmaul Skirmisher
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=19950; -- Custodian of Time
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19952; -- Bloodmaul Geomancer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19957; -- Bloodmaul Brewmaster
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19982; -- Vekh'nir Keeneye
@@ -2288,13 +2334,13 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19995; -- Bla
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19996; -- Bladespire Battlemage
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19997; -- Bladespire Enforcer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=19998; -- Bladespire Shaman
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20053; -- Lodaeron Sentry Specimen
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20054; -- Lordaeron Watchman Specimen
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20058; -- Bloodmaul Dire Wolf
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20053; -- Lodaeron Sentry Specimen
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20054; -- Lordaeron Watchman Specimen
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20058; -- Bloodmaul Dire Wolf
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20066; -- Gahruj
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20079; -- Darkcrest Sentry
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20080; -- Galgrom
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20081; -- Bortega
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20080; -- Galgrom
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20081; -- Bortega
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20084; -- Image of Nexus-Prince Haramad
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20087; -- Worker Mo'rrisroe
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20088; -- Bloodscale Overseer
@@ -2304,13 +2350,13 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20092; -- Dea
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20095; -- Grimnok Battleborn
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20096; -- Uriku
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20097; -- Nula the Butcher
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20102; -- Goblin Commoner
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20102; -- Goblin Commoner
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20112; -- Wind Trader Tuluman
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20113; -- Lashh'an Matriarch
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20123; -- Farmer Griffith
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20124; -- Kradu Grimblade
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20125; -- Zula Slagfury
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20129; -- Custodian of Time
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20129; -- Custodian of Time
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20134; -- Sunfury Arcanist
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20135; -- Sunfury Arch Mage
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20136; -- Sunfury Researcher
@@ -2352,7 +2398,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20313; -- Pha
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20324; -- Parched Hydra
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20326; -- Mo'arg Warp-Master
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20329; -- Grishna Matriarch
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20330; -- Bloodmaul Battle Worg
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20330; -- Bloodmaul Battle Worg
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20331; -- G'eras Vindicator
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20339; -- Oric Coe
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20341; -- Nether-Stalker Oazul
@@ -2403,11 +2449,11 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20683; -- Pro
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20684; -- Lady Shav'rar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20685; -- Overseer Azarad
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20710; -- Bogstrok Hatchling
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20714; -- Ridgespine Stalker
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20714; -- Ridgespine Stalker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20723; -- Korgaah
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20726; -- Mugdorg
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20728; -- Bladespire Raptor
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20729; -- Bladespire Ravager
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20728; -- Bladespire Raptor
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=20729; -- Bladespire Ravager
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20730; -- Glumdor
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20731; -- Droggam
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=20732; -- Gorr'Dim
@@ -2447,14 +2493,16 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21007; -- Ser
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21023; -- Stronglimb Deeproot
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21024; -- Earthmender Torlok
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21026; -- Earthmender Gorboto
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=21027; -- Earthmender Wilda
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=21029; -- Captured Water Spirit
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21032; -- Dreadwing
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21045; -- Hired Bodyguard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21046; -- Boulder'mok Brute
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21047; -- Boulder'mok Shaman
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21048; -- Boulder'mok Chieftain
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21049; -- Spirit of the Past
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21050; -- Enraged Earth Spirit
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21059; -- Enraged Water Spirit
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21050; -- Enraged Earth Spirit
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21059; -- Enraged Water Spirit
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21066; -- Rina Moonspring
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21077; -- Farahlon Crumbler
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21081; -- Mok'Nathal Hunter
@@ -2479,7 +2527,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21188; -- Tha
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21192; -- Kugnar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21193; -- Gralga
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21194; -- Ru'zah
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21195; -- Domesticated Felboar
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21195; -- Domesticated Felboar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21197; -- Bronwyn Stouthammer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21235; -- "Backstab" Bindo Gearbomb
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21238; -- Bloodmaul Drudger
@@ -2493,7 +2541,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21283; -- Meg
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21284; -- Auchenai Initiate
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21285; -- Auchenai Doomsayer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21287; -- Warbringer Razuun
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21292; -- Ar'tor, Son of Oronok
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21292; -- Ar'tor, Son of Oronok
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21296; -- Bladespire Champion
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21300; -- Fel Corrupter
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21302; -- Shadow Council Warlock
@@ -2525,7 +2573,9 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21400; -- Eck
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21402; -- Anchorite Ceyla
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21404; -- Legion Hold Fel Reaver
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21408; -- Felfire Diemetradon
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=21424; -- Terokkar - Bone Wastes - Draenei Soul
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21432; -- Almaador
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=21448; -- Gadgetzan Sniper
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21450; -- Skethyl Owl
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21453; -- Ashtongue Shaman
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21454; -- Ashtongue Warrior
@@ -2548,9 +2598,9 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21627; -- Ecl
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21637; -- Wyrmcult Scout
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21639; -- Illidari Slayer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21640; -- Trogma
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21643; -- Alurmi
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21643; -- Alurmi
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21644; -- Skettis Wing Guard
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21648; -- Mature Netherwing Drake
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21648; -- Mature Netherwing Drake
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21649; -- Skettis Windwalker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21650; -- Skettis Talonite
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21651; -- Time-Lost Skettis Reaver
@@ -2568,12 +2618,12 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21690; -- R-3
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21691; -- Toshley
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21717; -- Dragonmaw Wrangler
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21718; -- Dragonmaw Subjugator
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21719; -- Dragonmaw Drake-Rider
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21719; -- Dragonmaw Drake-Rider
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21720; -- Dragonmaw Shaman
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21721; -- Enslaved Netherwing Whelp
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21722; -- Enslaved Netherwing Drake
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21723; -- Blackwind Sabercat
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21724; -- Hawkbane
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21722; -- Enslaved Netherwing Drake
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21723; -- Blackwind Sabercat
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21724; -- Hawkbane
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21728; -- Skettis Surger
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21729; -- Electromental
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21730; -- Alluvion
@@ -2612,7 +2662,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21808; -- Ill
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21809; -- Wyrmcult Poacher
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21810; -- Wyrmcult Hewer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21816; -- Ironspine Chomper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21820; -- Mature Nether Drake
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21820; -- Mature Nether Drake
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21822; -- Vindicator Aluumen
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21824; -- Dizzy Dina
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21837; -- Summoned Wrath Hound
@@ -2635,7 +2685,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21911; -- Ske
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21912; -- Skettis Sentinel
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21936; -- Crazed Shardling
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21937; -- Earthmender Sophurus
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21956; -- Rema
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=21956; -- Rema
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21970; -- Officer Dawning
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21971; -- Officer Khaluun
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21975; -- Bladespire Sober Defender
@@ -2646,7 +2696,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21984; -- Rex
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21985; -- Skettis Eviscerator
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=21986; -- Altar of Sha'tar Vindicator
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22004; -- Leoroxx
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22006; -- Shadowlord Deathwail
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=22006; -- Shadowlord Deathwail
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22007; -- Tree Warden Chawn
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22011; -- Corok the Mighty
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22012; -- Chancellor Bloodleaf
@@ -2655,15 +2705,15 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22017; -- Ecl
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22018; -- Eclipsion Cavalier
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22019; -- Kolphis Darkscale
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22037; -- Smith Gorlunk
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22039; -- [PH] bat target
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22044; -- Cavern Crawler
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=22039; -- [PH] bat target
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=22044; -- Cavern Crawler
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22045; -- Vengeful Husk
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22053; -- Mosswood the Ancient
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22059; -- Wildhammer Gryphon Rider
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22060; -- Fenissa the Assassin
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22061; -- Shadowmoon Soulstealer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22072; -- Shadowsworn Drakonid
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22073; -- Marcus Auralion
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=22073; -- Marcus Auralion
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22081; -- Shadowmoon Darkweaver
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22082; -- Shadowmoon Slayer
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22084; -- Shadowmoon Chosen
@@ -2677,7 +2727,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22108; -- Bla
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22113; -- Mordenai
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22115; -- Enraged Earth Shard
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22130; -- Baron Sablemane's Blackwhelp
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22132; -- Mature Cavern Crawler
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=22132; -- Mature Cavern Crawler
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22138; -- Dark Conclave Ritualist
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22143; -- Gordunni Back-Breaker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22144; -- Gordunni Elementalist
@@ -2762,7 +2812,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22431; -- Anc
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22433; -- Ja'y Nosliw
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22437; -- Remnant of Malice
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22440; -- Remnant of Pride
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22441; -- Teribus the Cursed
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=22441; -- Teribus the Cursed
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22446; -- Commander Ra'vaj
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22453; -- Injured Sha'tar Vindicator
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22454; -- Fel Spirit
@@ -2841,6 +2891,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22963; -- Bon
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22964; -- Sister of Pleasure
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22965; -- Enslaved Servant
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22966; -- Lightsworn Elekk Rider
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=22980; -- Skyguard Scout
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22981; -- Watcher Elaira
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=22982; -- Skyguard Navigator
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23016; -- Skyguard Handler
@@ -2848,7 +2899,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23018; -- Sha
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23020; -- Shadow Serpent
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23022; -- Gordunni Soulreaper
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23028; -- Bonechewer Taskmaster
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23030; -- Dragonmaw Sky Stalker
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=23030; -- Dragonmaw Sky Stalker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23038; -- Sky Commander Adaris
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23042; -- Severin
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23047; -- Shadowmoon Soldier
@@ -2876,6 +2927,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23204; -- Vak
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23207; -- Skettis Assassin
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23222; -- Bonechewer Brawler
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23223; -- Bonechewer Spectator
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=23225; -- Netherwing Drake Escape Point
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23232; -- Mutant War Hound
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23234; -- Bananas
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23235; -- Bonechewer Blade Fury
@@ -2893,12 +2945,13 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23272; -- Arc
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23273; -- Arcanist Raestan
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23284; -- Lady Sinestra
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23291; -- Chief Overseer Mudlump
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23330; -- Dragonmaw Wind Reaver
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=23330; -- Dragonmaw Wind Reaver
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23337; -- Illidari Centurion
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23339; -- Illidari Heartseeker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23367; -- Grella
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23373; -- Mortog Steamhead
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23374; -- Ashtongue Stalker
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=23377; -- Skyguard Ace
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23383; -- Skyguard Prisoner
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23394; -- Promenade Sentinel
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23397; -- Illidari Blood Lord
@@ -2913,8 +2966,8 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23415; -- Sky
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23421; -- Ashtongue Channeler
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23433; -- Barthamus
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23435; -- Sanctum Defender
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23440; -- Dragonmaw Skybreaker
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23441; -- Dragonmaw Skybreaker
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=23440; -- Dragonmaw Skybreaker
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=23441; -- Dragonmaw Skybreaker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23443; -- Dragonmaw Raid Credit Marker (Scryers)
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23449; -- Yuula
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23453; -- Altar Defender
@@ -2922,7 +2975,7 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23454; -- Dra
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23483; -- Arcanist Xorith
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23484; -- Haldor the Compulsive
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23486; -- Goldark Snipehunter
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23536; -- Nagulon
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=23536; -- Nagulon
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23542; -- Amani'shi Axe Thrower
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23559; -- Budd Nedreck
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=23574; -- Akil'zon
@@ -2990,62 +3043,64 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24442; -- Tan
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24477; -- Syndicate Thief
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24495; -- Blix Fixwidget
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24504; -- Amani'shi Hatcher
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24554; -- Eramas Brightblaze
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24556; -- Zelfan
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24559; -- Warlord Salaris
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24560; -- Priestess Delrissa
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24561; -- Yazzai
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24554; -- Eramas Brightblaze
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24556; -- Zelfan
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24559; -- Warlord Salaris
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24560; -- Priestess Delrissa
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24561; -- Yazzai
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24657; -- Glodrak Huntsniper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24664; -- Kael'thas Sunstrider
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24674; -- Phoenix
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24675; -- Phoenix Egg
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24683; -- Sunblade Mage Guard
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24684; -- Sunblade Blood Knight
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24685; -- Sunblade Magister
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24686; -- Sunblade Warlock
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24687; -- Sunblade Physician
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24688; -- Wretched Skulker
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24689; -- Wretched Bruiser
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24690; -- Wretched Husk
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24696; -- Coilskar Witch
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24697; -- Sister of Torment
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24698; -- Ethereum Smuggler
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24723; -- Selin Fireheart
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24664; -- Kael'thas Sunstrider
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24674; -- Phoenix
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24675; -- Phoenix Egg
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24683; -- Sunblade Mage Guard
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24684; -- Sunblade Blood Knight
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24685; -- Sunblade Magister
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24686; -- Sunblade Warlock
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24687; -- Sunblade Physician
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24688; -- Wretched Skulker
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24689; -- Wretched Bruiser
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24690; -- Wretched Husk
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24696; -- Coilskar Witch
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24697; -- Sister of Torment
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24698; -- Ethereum Smuggler
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24723; -- Selin Fireheart
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24739; -- Benjari Edune
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24744; -- Vexallus
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24762; -- Sunblade Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24777; -- Sunblade Sentinel
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24808; -- Broken Sentinel
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24813; -- Exarch Larethor
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24744; -- Vexallus
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24762; -- Sunblade Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24777; -- Sunblade Sentinel
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24808; -- Broken Sentinel
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24813; -- Exarch Larethor
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24818; -- Anvilrage Taskmaster
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24819; -- Anvilrage Enforcer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24822; -- Tyrith
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24822; -- Tyrith
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24841; -- Marine Halters
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24842; -- Marine Anderson
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24850; -- Kalecgos
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24881; -- Karrtog
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24885; -- Exorcist Sullivan
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24886; -- Exorcist Vaisha
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24932; -- Exarch Nasuun
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24937; -- Magistrix Seyla
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24938; -- Shattered Sun Marksman
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24960; -- Wretched Devourer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24965; -- Vindicator Xayann
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24966; -- Wretched Fiend
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24967; -- Captain Theris Dawnhearth
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24976; -- Dawnblade Blood Knight
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24978; -- Dawnblade Summoner
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24979; -- Dawnblade Marksman
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=24994; -- Shattered Sun Sentry
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25002; -- Unleashed Hellion
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25032; -- Eldara Dawnrunner
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25034; -- Tradesman Portanuus
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25047; -- Wretched Hungerer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25057; -- Battlemage Arynna
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25059; -- Ayren Cloudbreaker
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24850; -- Kalecgos
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24881; -- Karrtog
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24885; -- Exorcist Sullivan
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24886; -- Exorcist Vaisha
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=24891; -- Kalecgos
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=24892; -- Sathrovarr the Corruptor
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24932; -- Exarch Nasuun
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24937; -- Magistrix Seyla
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24938; -- Shattered Sun Marksman
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24960; -- Wretched Devourer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24965; -- Vindicator Xayann
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24966; -- Wretched Fiend
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24967; -- Captain Theris Dawnhearth
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24976; -- Dawnblade Blood Knight
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24978; -- Dawnblade Summoner
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24979; -- Dawnblade Marksman
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=24994; -- Shattered Sun Sentry
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25002; -- Unleashed Hellion
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25032; -- Eldara Dawnrunner
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25034; -- Tradesman Portanuus
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25047; -- Wretched Hungerer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25057; -- Battlemage Arynna
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25059; -- Ayren Cloudbreaker
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25060; -- Darkspine Myrmidon
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25061; -- Harbinger Inuuro
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25063; -- Dawnblade Hawkrider
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25061; -- Harbinger Inuuro
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25063; -- Dawnblade Hawkrider
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25073; -- Darkspine Siren
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25079; -- Deathguard Fowles
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25080; -- Grunt Umgor
@@ -3055,120 +3110,123 @@ UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25084; -- Gre
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25106; -- Watcher Du'una
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25107; -- Watcher Umjin
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25109; -- Rocket Chicken
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25115; -- Shattered Sun Warrior
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25132; -- Sunblade Lookout
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25144; -- Shattered Sun Bombardier
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25115; -- Shattered Sun Warrior
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25132; -- Sunblade Lookout
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25144; -- Shattered Sun Bombardier
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25145; -- Budd's Bodyguard
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25160; -- Madrigosa
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25161; -- Dawnblade Dragonhawk
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25162; -- Drill Sergeant Bahduum
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25164; -- Shattered Sun Recruit
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25160; -- Madrigosa
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25161; -- Dawnblade Dragonhawk
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25162; -- Drill Sergeant Bahduum
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25164; -- Shattered Sun Recruit
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25195; -- Marksman Bova
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25196; -- Archer Delvinar
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25212; -- Kite Sky Lightning Bunny
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25363; -- Sunblade Cabalist
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25367; -- Sunblade Arch Mage
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25368; -- Sunblade Slayer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25369; -- Sunblade Vindicator
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25370; -- Sunblade Dusk Priest
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25371; -- Sunblade Dawn Priest
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25372; -- Sunblade Scout
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25507; -- Sunblade Protector
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25508; -- Shadowsword Guardian
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25509; -- Priestess of Torment
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25547; -- Coilskar Witch (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25550; -- Eramas Brightblaze (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25551; -- Ethereum Smuggler (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25563; -- Sister of Torment (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25565; -- Sunblade Blood Knight (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25567; -- Sunblade Keeper (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25568; -- Sunblade Mage Guard (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25569; -- Sunblade Magister (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25570; -- Sunblade Physician (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25571; -- Sunblade Sentinel (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25572; -- Sunblade Warlock (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25574; -- Warlord Salaris (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25575; -- Wretched Bruiser (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25576; -- Wretched Husk (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25577; -- Wretched Skulker (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25578; -- Yazzai (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25579; -- Zelfan (1)
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25591; -- Painbringer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25592; -- Doomfire Destroyer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25593; -- Apocalypse Guard
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25595; -- Chaos Gazer
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25597; -- Oblivion Mage
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25599; -- Cataclysm Hound
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=25319; -- Kalecgos
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25363; -- Sunblade Cabalist
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25367; -- Sunblade Arch Mage
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25368; -- Sunblade Slayer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25369; -- Sunblade Vindicator
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25370; -- Sunblade Dusk Priest
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25371; -- Sunblade Dawn Priest
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25372; -- Sunblade Scout
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25507; -- Sunblade Protector
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25508; -- Shadowsword Guardian
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25509; -- Priestess of Torment
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25547; -- Coilskar Witch (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25550; -- Eramas Brightblaze (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25551; -- Ethereum Smuggler (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25563; -- Sister of Torment (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25565; -- Sunblade Blood Knight (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25567; -- Sunblade Keeper (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25568; -- Sunblade Mage Guard (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25569; -- Sunblade Magister (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25570; -- Sunblade Physician (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25571; -- Sunblade Sentinel (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25572; -- Sunblade Warlock (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25574; -- Warlord Salaris (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25575; -- Wretched Bruiser (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25576; -- Wretched Husk (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25577; -- Wretched Skulker (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25578; -- Yazzai (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25579; -- Zelfan (1)
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25591; -- Painbringer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25592; -- Doomfire Destroyer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25593; -- Apocalypse Guard
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25595; -- Chaos Gazer
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25597; -- Oblivion Mage
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25599; -- Cataclysm Hound
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25632; -- Vindicator Moorba
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25638; -- Captain Selana
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25639; -- Anchorite Elbadon
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25644; -- Neophyte Narama
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=25653; -- Power of the Blue Flight
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25661; -- Shattered Sun Soldier
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25851; -- Volatile Fiend
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25867; -- Sunblade Dragonhawk
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25883; -- Ashenvale Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25884; -- Ashenvale Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25887; -- Arathi Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25890; -- Blasted Lands Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25893; -- Darkshore Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25894; -- Desolace Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25895; -- Dun Morogh Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25896; -- Duskwood Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25897; -- Dustwallow Marsh Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25898; -- Elwynn Forest Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25899; -- Feralas Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25900; -- Hellfire Peninsula Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25901; -- Hillsbrad Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25902; -- Loch Modan Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25904; -- Redridge Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25906; -- Teldrassil Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25908; -- The Hinterlands Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25910; -- Westfall Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25911; -- Wetlands Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25914; -- Silithus Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25915; -- Stranglethorn Vale Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25916; -- Tanaris Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25917; -- Winterspring Flame Warden
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25919; -- Silithus Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25920; -- Stranglethorn Vale Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25921; -- Tanaris Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25922; -- Winterspring Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25923; -- Arathi Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25925; -- Badlands Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25927; -- Burning Steppes Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25928; -- Desolace Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25930; -- Dustwallow Marsh Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25932; -- Feralas Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25934; -- Hellfire Peninsula Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25935; -- Hillsbrad Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25937; -- Nagrand Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25939; -- Silverpine Forest Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25940; -- Stonetalon Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25941; -- Swamp of Sorrows Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25942; -- Terokkar Forest Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25943; -- The Barrens Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25944; -- The Hinterlands Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25945; -- Thousand Needles Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25947; -- Zangarmarsh Flame Keeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25949; -- Ice Caller Briatha
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25951; -- Heretic Emissary
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25955; -- Hand of the Deceiver Sunwell
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25956; -- Chaos Gazer Sunwell
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25957; -- Cataclysm Hound Sunwell
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25958; -- Volatile Felfire Fiend Sunwell
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25959; -- Apocalypse Guard Sunwell
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25962; -- Fire Eater
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25975; -- Master Fire Eater
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25980; -- Heretic Bodyguard
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25991; -- Kixi the Shiv
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25992; -- Big Bruiser
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=25994; -- Flame Eater
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=26101; -- Fire Fiend
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=26113; -- Master Flame Eater
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=26123; -- Midsummer Supplier
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=26124; -- Midsummer Merchant
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=26253; -- Shattered Sun Peacekeeper
-UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=26560; -- Ohura
+UPDATE creature_template SET InhabitType=InhabitType|2 WHERE entry=25708; -- Sinister Reflection
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25851; -- Volatile Fiend
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25867; -- Sunblade Dragonhawk
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25883; -- Ashenvale Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25884; -- Ashenvale Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25887; -- Arathi Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25890; -- Blasted Lands Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25893; -- Darkshore Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25894; -- Desolace Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25895; -- Dun Morogh Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25896; -- Duskwood Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25897; -- Dustwallow Marsh Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25898; -- Elwynn Forest Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25899; -- Feralas Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25900; -- Hellfire Peninsula Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25901; -- Hillsbrad Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25902; -- Loch Modan Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25904; -- Redridge Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25906; -- Teldrassil Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25908; -- The Hinterlands Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25910; -- Westfall Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25911; -- Wetlands Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25914; -- Silithus Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25915; -- Stranglethorn Vale Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25916; -- Tanaris Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25917; -- Winterspring Flame Warden
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25919; -- Silithus Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25920; -- Stranglethorn Vale Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25921; -- Tanaris Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25922; -- Winterspring Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25923; -- Arathi Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25925; -- Badlands Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25927; -- Burning Steppes Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25928; -- Desolace Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25930; -- Dustwallow Marsh Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25932; -- Feralas Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25934; -- Hellfire Peninsula Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25935; -- Hillsbrad Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25937; -- Nagrand Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25939; -- Silverpine Forest Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25940; -- Stonetalon Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25941; -- Swamp of Sorrows Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25942; -- Terokkar Forest Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25943; -- The Barrens Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25944; -- The Hinterlands Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25945; -- Thousand Needles Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25947; -- Zangarmarsh Flame Keeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25949; -- Ice Caller Briatha
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25951; -- Heretic Emissary
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25955; -- Hand of the Deceiver Sunwell
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25956; -- Chaos Gazer Sunwell
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25957; -- Cataclysm Hound Sunwell
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25958; -- Volatile Felfire Fiend Sunwell
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25959; -- Apocalypse Guard Sunwell
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25962; -- Fire Eater
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25975; -- Master Fire Eater
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25980; -- Heretic Bodyguard
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25991; -- Kixi the Shiv
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25992; -- Big Bruiser
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=25994; -- Flame Eater
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=26101; -- Fire Fiend
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=26113; -- Master Flame Eater
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=26123; -- Midsummer Supplier
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=26124; -- Midsummer Merchant
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=26253; -- Shattered Sun Peacekeeper
+UPDATE creature_template SET UnitFlags=UnitFlags|32768, InhabitType=InhabitType|2 WHERE entry=26560; -- Ohura
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=27666; -- Ontuvo
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=27667; -- Anwehu
 UPDATE creature_template SET UnitFlags=UnitFlags|32768 WHERE entry=27705; -- Lorrin Foxfire
