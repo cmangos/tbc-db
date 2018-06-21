@@ -71,7 +71,7 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, command, datalong, datalon
 ('1937001', '0', '1', '233', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Ordinn Thunderfist set emote 233'),
 ('1937001', '6', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Ordinn Thunderfist set emote 0'),
 ('1937001', '7', '0', '0', '0', '0', '0', '0', '0', '2000005911', '0', '0', '0', '0', '0', '0', '0', 'Ordinn Thunderfist SAY 1'),
-('1937002', '0', '0', '0', '0', '0', '0', '0', '0', '2000005910', '0', '0', '0', '0', '0', '0', '0', 'Ordinn Thunderfist SAY 2'),
+('1937002', '0', '0', '0', '0', '0', '0', '0', '0', '2000005912', '0', '0', '0', '0', '0', '0', '0', 'Ordinn Thunderfist SAY 2'),
 ('1937003', '0', '29', '3', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Ordinn Thunderfist add NPC flags qgiver and gossip'),
 ('1937003', '0', '20', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Ordinn Thunderfist move idle');
 DELETE FROM dbscript_string WHERE entry IN(2000005911,2000005912);
@@ -122,7 +122,6 @@ INSERT INTO dbscript_string(entry, content_default, content_loc1, content_loc2, 
 (2000005913,'%s reads several pages of the Lexicon Demonica before beginning his work.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'David Wayne Emote 1'),
 (2000005914,'Ashj zila enkil X adare lok revos xi mannor kiel lok zilthuras il archim Il gular adare kamil revola lok karaman il zila tichar',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0,8,0,'David Wayne SAY 1'),
 (2000005915,'Anti-demon magics flare to life and imbue the weapon.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,2,0,0,'David Wayne Emote 2');
-
 
 
 UPDATE creature_template SET ExtraFlags=ExtraFlags&~128,MovementType=2 WHERE entry IN(12999);
