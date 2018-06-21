@@ -360,3 +360,13 @@ UPDATE `creature_template` SET `InhabitType` = 3 WHERE `entry` IN (21408,21462);
 
 -- Remove Mini Model for Ashtongue Primalist 22847
 UPDATE `creature_model_info` SET `modelid_other_gender` = 0 WHERE `modelid` = 21117;
+
+-- Dragonmaw Peon Work Node
+UPDATE creature_template SET UnitFlags=33555200, ModelId1=11686, ModelId2=0 WHERE Entry=23308;
+
+-- Netherwing Drake Escape Point
+UPDATE creature_template SET UnitFlags=33587968 WHERE Entry=23225;
+
+-- Karazhan - Chess, Victory Controller
+UPDATE creature_template SET UnitFlags=33554432, ModelId1=11686 WHERE Entry=22524;
+
