@@ -370,3 +370,5 @@ UPDATE creature_template SET UnitFlags=33587968 WHERE Entry=23225;
 -- Karazhan - Chess, Victory Controller
 UPDATE creature_template SET UnitFlags=33554432, ModelId1=11686 WHERE Entry=22524;
 
+-- Redeemed Avian 22326
+UPDATE `creature_template` SET `InhabitType` = 5 WHERE `entry` = 22326;
