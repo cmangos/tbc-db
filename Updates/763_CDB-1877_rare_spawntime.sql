@@ -13,7 +13,7 @@ UPDATE creature SET spawntimesecsmin=12*@H, spawntimesecsmax=24*@H WHERE id=8204
 UPDATE creature SET spawntimesecsmin=12*@H, spawntimesecsmax=24*@H WHERE id=8205; -- Haarka the Ravenous
 UPDATE creature SET spawntimesecsmin=12*@H, spawntimesecsmax=24*@H WHERE id=8207; -- Greater Firebird
 UPDATE creature SET spawntimesecsmin=48*@H, spawntimesecsmax=72*@H WHERE id=8208; -- Murderous Blisterpaw
-UPDATE creature SET spawntimesecsmax=24*@H WHERE id=8210; -- Razortalon
+UPDATE creature SET spawntimesecsmin=12*@H, spawntimesecsmax=24*@H WHERE id=8210; -- Razortalon
 UPDATE creature SET spawntimesecsmin=12*@H, spawntimesecsmax=24*@H WHERE id=8211; -- Old Cliff Jumper
 UPDATE creature SET spawntimesecsmin=32*@H, spawntimesecsmax=48*@H WHERE id=8212; -- The Reak
 UPDATE creature SET spawntimesecsmin=12*@H, spawntimesecsmax=24*@H WHERE id=8213; -- Ironback
