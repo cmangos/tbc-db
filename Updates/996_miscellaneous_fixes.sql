@@ -357,3 +357,6 @@ UPDATE `gameobject_template` SET `flags` = 34 WHERE `entry` = 184281;
 
 -- Felfire Diemetradon 21408,Greater Felfire Diemetradon 21462
 UPDATE `creature_template` SET `InhabitType` = 3 WHERE `entry` IN (21408,21462);
+
+-- Remove Mini Model for Ashtongue Primalist 22847
+UPDATE `creature_model_info` SET `modelid_other_gender` = 0 WHERE `modelid` = 21117;
