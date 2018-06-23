@@ -20005,9 +20005,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2246101','22461','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Fel Cannon MKI - Prevent Movement and Prevent Melee on Spawn'),
 ('2246102','22461','0','0','100','1','0','1000','2500','2500','11','36238','1','0','0','0','0','0','0','0','0','0','Fel Cannon MKI - Combat - Cast Fel Cannon Blast'),
 -- Bubbling Slimer Bunny
-('2250501','22505','1','0','100','1','1000','5000','22000','27000','12','22506','0','25000','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Spawn Foul Purge'),
+('2250501','22505','11','0','100','1','0','0','0','0','11','39300','0','0','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Cast 39300 on Spawn'),
+('2250502','22505','1','0','100','1','1000','5000','22000','27000','12','22506','0','25000','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Spawn Foul Purge'),
 -- The Exorcism Lightning Cloud Bunny
-('2250801','22508','1','0','100','1','5000','6000','35000','45000','11','39381','0','1','0','0','0','0','0','0','0','0','The Exorcism Lightning Cloud Bunny - Cast The Exorcism Lightning Bunny Visual'),
+('2250801','22508','1','0','100','1','1000','1000','35000','35000','11','39380','0','1','0','0','0','0','0','0','0','0','The Exorcism Lightning Cloud Bunny - Cast The Exorcism Lightning Cloud Bunny Visual'),
+('2250802','22508','1','0','100','1','7000','7000','35000','35000','11','39381','0','1','0','0','0','0','0','0','0','0','The Exorcism Lightning Cloud Bunny - Cast The Exorcism Lightning Bunny Visual'),
 -- Felblood Initiate - spell_dummy_npc
 ('2491801','24918','9','0','100','1','0','5','5000','9000','11','14873','1','0','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Sinister Strike'),
 ('2491802','24918','9','0','100','1','0','5','12000','16000','11','35871','1','0','0','0','0','0','0','0','0','0','Felblood Initiate - Cast Spellbreaker'),
