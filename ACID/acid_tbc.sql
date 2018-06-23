@@ -9303,6 +9303,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('618001','6180','1','0','100','0','1000','1000','0','0','11','7165','0','32','0','0','0','0','0','0','0','0','Defias Raider - Cast Battle Stance OOC'),
 ('618002','6180','0','0','100','1','5000','7500','12500','15000','11','25710','1','0','0','0','0','0','0','0','0','0','Defias Raider - Cast Heroic Strike'),
 -- Daphne Stilwell 6182 - npc_daphne_stilwell
+-- Klaven Mortwake 7053
+('705301','7053','4','0','100','0','0','0','0','0','1','-11','0','0','0','0','0','0','0','0','0','0','Klaven Mortwake - Say on Aggro'), -- Class Rogue & Detect Stealth Condition?
+
+
 
 
 
@@ -34212,7 +34216,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
 ('-9','Hear the voices below the earth!  They call for your blood!','0','0','0','Darkscreecher Akkarai on Spawn','0'),
 ('-10','You capture Karrog!  Karrog smash you!','0','0','0','Karrog on Spawn','0'),
--- PLEASE RE-USE 11 classic>tbc>wotlk
+('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','Klaven Mortwake 7053','0'),
 ('-12','Consume $N, my children!','0','0','0','Darkscreecher Akkarai on Flock Call 40427','0'),
 -- PLEASE RE-USE 13 - 16 classic>tbc>wotlk
 ('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
