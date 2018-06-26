@@ -372,3 +372,22 @@ UPDATE creature_template SET UnitFlags=33554432, ModelId1=11686 WHERE Entry=2252
 
 -- Redeemed Avian 22326
 UPDATE `creature_template` SET `InhabitType` = 5 WHERE `entry` = 22326;
+
+-- Add Alliance / Horde loot-condition for item 30756 / item 30579
+UPDATE `creature_loot_template` SET `condition_id` = 1233 WHERE `entry` = 21499 AND `item` = 30756;
+UPDATE `creature_loot_template` SET `condition_id` = 1238 WHERE `entry` = 21499 AND `item` = 30579;
+
+DELETE FROM `conditions` WHERE `condition_entry` BETWEEN 1229 AND 1238;
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `comments`) VALUES
+-- item 30756
+(1229, 8, 10621, 0, 'Quest ID 10621 Rewarded'),
+(1230, 9, 10621, 0, 'Quest ID 10621 Taken'),
+(1231, -2, 1229, 1230, '(Quest ID 10621 Rewarded OR Quest ID 10621 Taken)'),
+(1232, -3, 1231, 0, 'NOT ((Quest ID 10621 Rewarded OR Quest ID 10621 Taken))'),
+(1233, -1, 1232, 4, 'NOT (Quest ID 10621 Rewarded OR Quest ID 10621 Taken) AND Alliance'),
+-- item 30579
+(1234, 8, 10623, 0, 'Quest ID 10623 Rewarded'),
+(1235, 9, 10623, 0, 'Quest ID 10623 Taken'),
+(1236, -2, 1233, 1234, '(Quest ID 10623 Rewarded OR Quest ID 10623 Taken)'),
+(1237, -3, 1236, 0, 'NOT ((Quest ID 10623 Rewarded OR Quest ID 10623 Taken))'),
+(1238, -1, 1237, 3, 'NOT (Quest ID 10623 Rewarded OR Quest ID 10623 Taken) AND Horde');
