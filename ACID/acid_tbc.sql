@@ -23141,6 +23141,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2306802','23068','0','0','100','1','3000','4000','30000','50000','11','32863','1','1','0','0','0','0','0','0','0','0','Talonpriest Zellek - Cast Seed of Corruption'),
 ('2306803','23068','9','0','100','1','0','5','8000','12000','11','15652','1','1','0','0','0','0','0','0','0','0','Talonpriest Zellek - Cast Head Smash'),
 ('2306804','23068','9','0','100','1','0','20','5000','7000','11','17173','1','0','0','0','0','0','0','0','0','0','Talonpriest Zellek - Cast Drain Life'),
+-- Flawless Arcane Elemental 23100
+('2310002','23100','11','0','100','0','0','0','0','0','11','34166','0','0','0','0','0','0','0','0','0','0','Flawless Arcane Elemental - Cast Coalesce on Spawn'),
 -- Darkscreecher Akkarai 23161
 ('2316101','23161','11','2','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Set Phase 0 on Spawn'),
 ('2316102','23161','29','2','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Spawn - Red Lightning on Generic Timer'),
