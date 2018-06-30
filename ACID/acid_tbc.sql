@@ -4777,6 +4777,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1436302','14363','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Thief Catcher Shadowdelve - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1436303','14363','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Thief Catcher Shadowdelve - Cast Hooked Net'),
 -- Thief Catcher Farmountain 14365
+('1436501','14365','1','0','100','0','1000','1000','0','0','11','41634','0','32','0','0','0','0','0','0','0','0','Thief Catcher Farmountain - Cast Invisibility and Stealth Detection OOC'),
+('1436502','14365','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Thief Catcher Farmountain - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1436503','14365','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Thief Catcher Farmountain - Cast Hooked Net'),
 -- Thief Catcher Thunderbrew 14367
 -- Mistina Steelshield 14723
 -- Bubulo Acerbus 14724
