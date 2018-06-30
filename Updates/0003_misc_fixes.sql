@@ -16,3 +16,6 @@ INSERT INTO pet_levelstats(creature_entry, level, hp, mana, armor, str, agi, sta
 ('19668', '70', '1296', '3155', '100', '0', '0', '0', '0', '0');
 
 
+-- Enchantress Volali 19251 - Remove Male Model Option
+UPDATE `creature_model_info` SET `modelid_other_gender` = 0 WHERE `modelid` = 18775;
+
