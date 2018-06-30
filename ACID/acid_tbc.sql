@@ -23083,7 +23083,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lost Torranche
 ('2280701','22807','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Lost Torranche - Flee at 15% HP'),
 -- Cenarion Sparrowhawk 22972 - npc_cenarion_sparrowhawk
--- Monstrous Kaliri Egg Trigger 22991 - s.39843
+-- Monstrous Kaliri Egg Trigger 22991
+('2299101','22991','11','0','100','0','0','0','0','0','11','39843','0','0','0','0','0','0','0','0','0','0','Monstrous Kaliri Egg Trigger - Cast Summon Monstrous Kaliri Egg on Spawn'),
 -- Guardian of the Hawk
 ('2299201','22992','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','18','2','0','0','Guardian of the Hawk - Set Unattackable on Spawn'),
 ('2299202','22992','11','0','100','0','0','0','0','0','5','27','0','0','0','0','0','0','0','0','0','0','Guardian of the Hawk - Emote Ready Unarmed on Spawn'),
