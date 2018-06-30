@@ -15530,6 +15530,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nelson the Nice 14536
 -- Creeping Doom 14761
 -- Emissary Roman'khan 14862
+('1486201','14862','0','0','100','1','4000','8000','7000','14000','11','23774','1','0','0','0','0','0','0','0','0','0','Emissary Roman\'khan - Cast System Shock'),
+('1486202','14862','0','0','100','1','0','0','3000','5000','11','23772','0','0','0','0','0','0','0','0','0','0','Emissary Roman\'khan - Cast Wilt'),
 -- Ralo'shan the Eternal Watcher 15169
 -- Rutgar Glyphshaper 15170 - npcs_rutgar_and_frankal
 -- Frankal Stonebridge 15171 - npcs_rutgar_and_frankal
