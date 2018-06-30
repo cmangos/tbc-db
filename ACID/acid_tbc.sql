@@ -765,7 +765,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1513001','15130','0','0','100','1','3000','5000','5000','7000','11','15284','1','0','0','0','0','0','0','0','0','0','League of Arathor Elite - Cast Cleave'),
 ('1513002','15130','9','0','100','1','0','5','13000','16000','11','11972','1','1','0','0','0','0','0','0','0','0','League of Arathor Elite - Cast Shield Bash'),
 -- Hammerfall Elite (15136) - NSR
--- Midsummer Celebrant
+-- Midsummer Celebrant 16781
 ('1678101','16781','1','0','100','1','0','20000','5000','20000','5','1','0','0','0','0','0','0','0','0','0','0','Midsummer Celebrant - Talk Emote'),
 ('1678102','16781','1','0','100','1','0','60000','5000','60000','5','4','0','0','0','0','0','0','0','0','0','0','Midsummer Celebrant - Cheer Emote'),
 -- Sir Maximus Adams (19855) - NSR
@@ -1015,7 +1015,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- 7:XT (3.1.1 Official Data)
 ('1422401','14224','1','0','100','1','10000','60000','120000','240000','1','-545','-546','-547','0','0','0','0','0','0','0','0','7:XT - Random Say OOC'),
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Sarophas (17097) - NSR
 -- Badlands Flame Keeper (25925) - NSR
 
@@ -1376,7 +1376,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1638003','16380','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Bone Witch - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('1638004','16380','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Bone Witch - Disable Dynamic Movement at 0-8 Yards'),
 ('1638005','16380','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bone Witch - Set Phase 0 on Evade'),
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Lumbering Horror 14697
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Sevel (16840) - NSR
 -- Watch Commander Relthorn Netherwane (16841) - NSR
 -- Warlord Dar'toon (19254) - NSR
@@ -1698,7 +1699,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit of the Damned (16379) - NSR
 -- Bone Witch (16380) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Void Zone (16697) - Should Be Scripted in SD2
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Anvilrage Taskmaster
 ('2481801','24818','9','0','100','1','0','5','6000','9000','11','11976','1','0','0','0','0','0','0','0','0','0','Anvilrage Taskmaster - Cast Strike'),
 ('2481802','24818','2','0','100','0','20','0','0','0','11','13589','0','1','0','0','0','0','0','0','0','0','Anvilrage Taskmaster - Cast Haste Aura at 20% HP'),
@@ -2124,7 +2125,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wonderform Operator (15732) - NSR
 -- Ironforge Reveler (15906) - NSR
 -- Lieutenant Nevell (16484) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Infernal Hound (19207) - NSR
 -- Hand of the Highlord (19214) - NSR
 -- Keiran Donoghue (23481) - NSR
@@ -2478,7 +2479,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1562505','15625','5','0','100','1','0','0','0','0','1','-1141','0','0','11','21307','0','1','0','0','0','0','Twilight Corrupter - Yell and Cast Swell of Souls on Player Kill'),
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Plagued Deathhound (16448) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Anchorite Delan (17104) - NSR
 -- Weakened Morbent Fel (24782) - NSR
 -- Duskwood Flame Warden (25896) - NSR
@@ -3341,7 +3342,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Maxima Blastenheimer (15303) - NSR
 -- Elder Stormbrow (15565) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Squire Rowe (17804) - npc_squire_rowe
 -- Bradford Bridenbecker (22985) - NSR
 -- Demon Fire (23069) - mob_demon_fire
@@ -3699,7 +3700,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1639709','16397','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ardeyn Riverwind - Set Phase 0 on Evade'),
 -- Zalene Firstlight (16443) - NSR
 -- Halis Dawnstrider (16444) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Eldinarcus (16854) - NSR
 -- Tregla (16855) - NSR
 -- Jilanne (16860) - NSR
@@ -4137,7 +4138,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dying Blood Elf (16601) - NSR
 -- Farstrider Dusking (16603) - NSR
 -- Paniar (16665) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Night Elf Corpse (16804) - NSR
 -- Sentinel Leader
 ('1721001','17210','9','0','100','1','0','5','5000','9000','11','14873','1','0','0','0','0','0','0','0','0','0','Sentinel Leader - Cast Sinister Strike'),
@@ -4584,7 +4585,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1519901','15199','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sergeant Hartman - Flee at 15% HP'),
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Rousch (16090) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Duskingdawn (17092) - NSR
 -- Forsaken Raider 17108
 ('1710801','17108','1','0','100','0','1000','8000','0','0','11','6718','0','32','11','8601','0','32','0','0','0','0','Forsaken Raider - Cast Phasing Stealth and Slowing Poison OOC'),
@@ -4840,7 +4841,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Argent Recruiter 16241
 -- Argent Dawn Paladin 16395
 -- Argent Dawn Champion 16434
--- Midsummer Celebrant 16781
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Festival Loremaster 16817
 -- Ironforge Firebreather
 ('1704801','17048','1','0','100','1','15000','30000','15000','30000','11','29403','0','1','0','0','0','0','0','0','0','0','Ironforge Firebreather - Cast Firebreath');
@@ -5857,7 +5858,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1669601','16696','0','0','100','1','60000','600000','1800000','2100000','11','17205','0','0','0','0','0','0','0','0','0','0','Krukk - Cast Winterfall Firewater'),
 -- Amin 16703
 -- Drathen 16780
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Yatheon 16782
 -- Grand Magister Rommath 16800
 ('1680001','16800','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Grand Magister Rommath - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -6349,7 +6350,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Silverpine Elite (15138) - NSR
 -- Elder Obsidian (15561) - NSR
 -- Advisor Sorrelon (16288) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Silverpine Forest Flame Keeper (25939) - NSR
 -- Flame Eater (25994) - NSR
 -- Prince Atherann (27616) - NSR
@@ -6764,7 +6765,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Argent Healer (27305) - NSR
 -- Plagued Roach (27845) - NSR
 -- Plagued Vermin (27855) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Firebreather
 ('1703801','17038','1','0','100','1','15000','30000','15000','30000','11','29403','0','1','0','0','0','0','0','0','0','0','SW Firebreather Firebreath Cast'),
 
@@ -7456,7 +7457,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1444703','14447','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gilmorian - Flee at 15% HP'),
 -- Molt Thorn
 ('1444801','14448','9','0','100','1','0','30','8000','11000','11','21748','0','0','0','0','0','0','0','0','0','0','Molt Thorn - Cast Thorn Volley'),
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Cersei Dusksinger (4.0.3a Official Data)
 ('1710901','17109','11','0','100','0','0','0','0','0','11','8722','0','0','0','0','0','0','0','0','0','0','Cersei Dusksinger - Cast Summon Succubus on Spawn'),
 ('1710902','17109','1','0','75','1','30000','60000','240000','300000','1','-975','-976','-977','0','0','0','0','0','0','0','0','Cersei Dusksinger - Random Say 1 OOC'),
@@ -7836,7 +7837,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit Shade 15261 - npc_spirit_shade
 -- Shade of Taerar (15302) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Elder Highpeak (15559) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Ambassador Rualeth (17223) - NSR
 -- Witch Doctor Mai'jin
 ('1723501','17235','0','0','100','1','6000','8000','25000','28000','11','8190','0','0','0','0','0','0','0','0','0','0','Witch Doctor Mai\'jin - Cast Magma Totem'),
@@ -9015,7 +9016,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1259601','12596','4','0','100','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Bibilfaz Featherwhistle - Spawn Enraged Gryphons and Yell on Aggro'),
 -- Leonard Porter (12942) - NSR
 -- Elder Meadowrun (15602) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Ghost of Uther Lightbringer (17233) - NSR
 -- Anchorite Truuen (17238) - npc_anchorite_truuen
 -- Western Plaguelands Flame Warden (25909) - NSR
@@ -10409,7 +10410,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit Shade (15261) - npc_spirit_shade
 -- Elder Riversong (15605) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Sunsworn (17100) - NSR
 -- 17106 Vindicator Palanaar
 -- Sentinel Luciel Starwhisper (17287) - NSR
@@ -10885,7 +10886,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Caregiver Chellan (16553) - npc_innkeeper
 -- Aeun (16554) - NSR
 -- Shalannius (16721) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Aurok (16917) - NSR
 -- Jel (16918) - NSR
 -- Mura (16919) - NSR
@@ -11895,7 +11896,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1232108','12321','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Stormscale Toxicologist - Set Phase 0 on Evade'),
 -- Elder Starweave (15601) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Captain Taldar Windsinger (24456) - NSR
 -- Galley Chief Mariss (24993) - NSR
 -- Merchant Fallel Stargazer (24995) - NSR
@@ -12560,7 +12561,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Giggler (14228) - NSR
 -- Accursed Slitherblade (14229) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Crusty
 ('1824101','18241','2','0','100','1','20','0','120000','120000','11','8599','0','1','1','-106','0','0','0','0','0','0','Crusty - Cast Enrage at 20% HP'),
 -- Desolace Flame Warden (25894) - NSR
@@ -12990,7 +12991,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wonderform Operator (15732) - NSR
 -- Orgrimmar Reveler (15908) - NSR
 -- Steamwheedle Bruiser (16096) - SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Wild Wolpertinger (23487) - NSR
 -- Brewfest Setup Crew
 ('2350401','23504','11','0','100','0','0','0','0','0','5','28','0','0','0','0','0','0','0','0','0','0','Brewfest Setup Crew - Working Emote on Spawn'),
@@ -13524,7 +13525,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1607202','16072','0','0','100','1','6000','9000','8000','12000','11','17207','0','0','0','0','0','0','0','0','0','0','Tidelord Rrurgaz - Cast Whirlwind'),
 ('1607203','16072','9','0','100','1','0','5','19000','22000','11','16509','4','1','0','0','0','0','0','0','0','0','Tidelord Rrurgaz - Cast Rend'),
 ('1607204','16072','9','0','100','1','0','8','14000','17000','11','15588','0','1','0','0','0','0','0','0','0','0','Tidelord Rrurgaz - Cast Thunderclap'),
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Balandar Brightstar
 ('1709501','17095','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Balandar Brightstar - Flee at 15% HP'),
 -- Ithania (17119) - NSR
@@ -14599,7 +14600,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shade of Taerar (15302) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Elder Grimtotem (15581) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Merchant Felagunne
 ('2501901','25019','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Merchant Felagunne - Flee at 15% HP'),
 -- Galley Chief Alunwea
@@ -15003,7 +15004,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Morja (14871) - NSR
 -- Elder Bloodhoof (15575) - NSR
 -- Pat's Firework Cluster Guy (ELUNE) (15918) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Kyle the Frenzied (23616) - npc_kyle_the_frenzied
 -- Ahab Wheathoof
 ('2361801','23618','10','0','100','1','1','10','120000','120000','1','-150','-151','-349','0','0','0','0','0','0','0','0','Ahab Wheathoof - Random Say on LOS'),
@@ -15231,6 +15232,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift Brown Wolf 14540
 -- Swift Gray Wolf 14541
 -- High Overlord Saurfang 14720
+('1472001','14720','0','0','100','1','10000','20000','25000','25000','11','16636','4','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Berserker Charge'),
+('1472002','14720','0','0','100','1','10000','20000','20000','40000','11','26339','1','1','1','-13','0','0','0','0','0','0','High Overlord Saurfang - Cast Saurfang\'s Rage'), -- on Recieve Critical Strike
+('1472003','14720','0','0','100','1','3000','9000','15000','15000','11','16508','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Intimidating Roar'),
+('1472004','14720','9','0','100','1','0','5','11000','15000','11','16856','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Mortal Strike'),
+('1472005','14720','0','0','100','1','5000','8000','7000','7000','11','16044','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Cleave'),
 -- Rashona Straglash 14726
 -- Vehena 14727
 -- Kruban Darkblade 14843
@@ -15286,7 +15292,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Argent Dawn Cleric 16435
 -- Argent Dawn Priest 16436
 -- Lieutenant Dagel 16493
--- Midsummer Celebrant 16781
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Argent Outfitter 16787
 -- Festival Talespinner 16818
 -- Orgrimmar Fireeater
@@ -16165,7 +16171,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Xen'Zilla
 ('1281601','12816','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Xen\'Zilla - Flee at 15% HP'),
 -- Innkeeper Faralia (16458) - npc_innkeeper
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Stonetalon Flame Keeper (25940) - NSR
 
 
@@ -16517,7 +16523,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit of the Damned (16379) - NSR
 -- Bone Witch (16380) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Rumsen Fizzlebrack (16417) - NSR
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Darkwater Crocolisk (17952) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Alexston Chrome (18542) - npc_innkeeper
 -- Max Luna (19859) - NSR
@@ -16849,7 +16855,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Forest Wisp 15624
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Darnassus Reveler 15905
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Festival Loremaster 16817
 -- Darnassus Firebreather
 ('1704901','17049','1','0','100','1','15000','30000','15000','30000','11','29403','0','1','0','0','0','0','0','0','0','0','Darn Firebreather Firebreath Cast'),
@@ -17816,6 +17822,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1446103','14461','0','0','100','1','3700','24100','6000','18300','11','15285','1','0','0','0','0','0','0','0','0','0','Baron Charr - Fireball Volley'),
 ('1446104','14461','1','0','100','1','10000','60000','300000','420000','1','-1503','0','0','0','0','0','0','0','0','0','0','Baron Charr - Random Yell OOC'),
 ('1446105','14461','6','0','100','0','0','0','0','0','1','-1504','0','0','0','0','0','0','0','0','0','0','Baron Charr - Yell on Death'),
+-- Simone the Inconspicuous 14527 - npc_simone_the_inconspicuous
+
 
 
 -- ============
@@ -18093,7 +18101,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit of the Damned 16379 NSR
 -- Bone Witch 16380 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Bronn Fitzwrench 16416
--- Midsummer Celebrant 16781 NSR
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Goblin Commoner 20102
 -- Winterspring Flame Warden 25917
 -- Winterspring Flame Keeper 25922
@@ -20279,7 +20287,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1822502','18225','29','0','100','1','1000','1000','1000','1000','11','31962','0','0','0','0','0','0','0','0','0','0','Fire Bomb Target - Cast Flames on Generic Timer'),
 -- Saurfang the Younger 18229
 ('1822901','18229','0','0','100','1','6000','8000','14000','16000','11','41097','0','0','0','0','0','0','0','0','0','0','Saurfang the Younger - Cast Whirlwind'),
-('1822902','18229','0','0','100','1','10000','20000','20000','40000','11','26339','1','1','0','0','0','0','0','0','0','0','Saurfang the Younger - Cast Saurfang\'s Rage'), -- on Recieve Critical Strike
+('1822902','18229','0','0','100','1','10000','20000','20000','40000','11','26339','1','1','1','-13','0','0','0','0','0','0','Saurfang the Younger - Cast Saurfang\'s Rage'), -- on Recieve Critical Strike
 ('1822903','18229','9','0','100','1','0','5','10000','15000','11','15708','1','0','0','0','0','0','0','0','0','0','Saurfang the Younger - Cast Mortal Strike'),
 ('1822904','18229','9','0','100','1','5','25','10000','20000','11','15749','1','1','0','0','0','0','0','0','0','0','Saurfang the Younger - Cast Shield Charge'),
 -- Murkblood Invader 18238
@@ -20557,7 +20565,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===========
 -- Spirit Healer (6491) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant - ALREADY SCRIPTED IN ANOTHER ZONE
+-- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Cyber-Rage Forgelord
 ('1694301','16943','9','0','100','1','0','8','19000','23000','11','36255','0','0','0','0','0','0','0','0','0','0','Cyber-Rage Forgelord - Cast Chaos Nova'),
 ('1694302','16943','2','0','100','0','30','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Cyber-Rage Forgelord - Cast Enrage at 30% HP'),
@@ -26830,6 +26838,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1450604','14506','0','0','100','3','9000','13000','14000','17000','11','20989','5','1','0','0','0','0','0','0','0','0','Lord Hel''nurath - Cast Sleep'),
 ('1450605','14506','4','0','100','2','0','0','0','0','1','-1461','0','0','0','0','0','0','0','0','0','0','Lord Hel''nurath - Yell on Aggro'),
 -- Ancient Equine Spirit 14566
+-- Revanchion 14690
 -- Spectral Stalker (16093) - NSR
 -- Falrin Treeshaper 16032
 -- Spectral Stalker 16093
@@ -27863,6 +27872,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('856704','8567','4','0','100','2','0','0','0','0','1','-1590','-1591','0','0','0','0','0','0','0','0','0','Glutton - Yell on Aggro'),
 -- Frost Spectre
 ('858501','8585','7','0','100','2','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Frost Spectre - Forced Despawn on Evade'),
+-- Lady Falther'ess 14686
+
 
 
 
@@ -28273,7 +28284,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Suffering Victim
 ('654701','6547','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Suffering Victim - Set Stand State to Stand on Aggro'),
 -- Scarlet Trainee (6575) - mob_scarlet_trainee
--- Scorn (SD2 Backport)
+-- Scorn 14693 (SD2 Backport)
 ('1469301','14693','0','0','100','3','45000','45000','45000','45000','11','28873','1','0','0','0','0','0','0','0','0','0','Scorn - Cast Lich Slap'),
 ('1469302','14693','0','0','100','3','30000','30000','20000','20000','11','8398','0','0','0','0','0','0','0','0','0','0','Scorn - Cast Frostbolt Volley'),
 ('1469303','14693','0','0','100','3','30000','30000','20000','20000','11','17313','4','0','0','0','0','0','0','0','0','0','Scorn - Cast Mind Flay'),
@@ -28499,22 +28510,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1162202','11622','0','0','100','3','6200','21800','7500','21300','11','18368','1','0','0','0','0','0','0','0','0','0','Rattlegore - Cast Strike'),
 ('1162203','11622','0','0','100','3','15800','21400','13100','26400','11','16727','0','1','0','0','0','0','0','0','0','0','Rattlegore - Cast War Stomp'),
 -- J'eevee (14500)
--- Shadowed Spirit (14511) - (Quest NPC?)
--- Corrupted Spirit (14512) - (Quest NPC?)
--- Malicious Spirit (14513) - (Quest NPC?)
--- Banal Spirit (14514) - (Quest NPC?)
+-- Shadowed Spirit (14511) - (Quest Judgment and Redemption 7647)
+-- Corrupted Spirit (14512) - (Quest Judgment and Redemption 7647)
+-- Malicious Spirit (14513) - (Quest Judgment and Redemption 7647)
+-- Banal Spirit (14514) - (Quest Judgment and Redemption 7647)
 -- Death Knight Darkreaver (SD2 Backport)
 ('1451601','14516','0','0','100','3','5000','7000','17000','19000','11','22644','0','0','0','0','0','0','0','0','0','0','Death Knight Darkreaver - Cast Blood Leech'),
 ('1451602','14516','0','0','100','3','5000','6000','8000','10000','11','15284','1','0','0','0','0','0','0','0','0','0','Death Knight Darkreaver - Cast Cleave'),
 ('1451603','14516','0','0','100','3','6000','7000','12000','14000','11','17393','4','0','0','0','0','0','0','0','0','0','Death Knight Darkreaver - Cast Shadow Bolt'),
 ('1451604','14516','0','0','100','3','18000','21000','32000','35000','11','7645','5','0','0','0','0','0','0','0','0','0','Death Knight Darkreaver - Cast Dominate Mind'),
 ('1451605','14516','6','0','100','2','0','0','0','0','11','23261','0','7','0','0','0','0','0','0','0','0','Death Knight Darkreaver - Cast Summon Darkreaver\'s Fallen Charger on Death'),
--- Aspect of Banality (14518) - (Quest NPC?)
--- Aspect of Corruption (14519) - (Quest NPC?)
--- Aspect of Malice (14520) - (Quest NPC?)
--- Aspect of Shadow (14521) - (Quest NPC?)
+-- Aspect of Banality (14518) - (Quest Judgment and Redemption 7647)
+-- Aspect of Corruption (14519) - (Quest Judgment and Redemption 7647)
+-- Aspect of Malice (14520) - (Quest Judgment and Redemption 7647)
+-- Aspect of Shadow (14521) - (Quest Judgment and Redemption 7647)
 -- Darkreaver's Fallen Charger (14568)
--- Lord Blackwood (14695)
+-- Lord Blackwood 14695
 -- Blood Steward of Kirtonos (3.0.3 Official Data - Logs Only)
 ('1486101','14861','0','0','100','3','19400','19700','4200','22900','11','22371','1','32','0','0','0','0','0','0','0','0','Blood Steward of Kirtonos - Cast Curse of Impotence'),
 ('1486102','14861','0','0','100','3','6100','18200','3600','22600','11','12493','1','32','0','0','0','0','0','0','0','0','Blood Steward of Kirtonos - Cast Curse of Weakness'),
@@ -28621,6 +28632,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wolfguard Worg (3.0.3 Official Data)
 ('505801','5058','2','0','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Wolfguard Worg - Flee at 15% HP'),
 -- Arugal 10000 - npc_arugal
+-- Sever 14682
 
 
 
@@ -34282,7 +34294,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10','You capture Karrog!  Karrog smash you!','0','0','0','Karrog on Spawn','0'),
 ('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','Klaven Mortwake 7053','0'),
 ('-12','Consume $N, my children!','0','0','0','Darkscreecher Akkarai on Flock Call 40427','0'),
--- PLEASE RE-USE 13 - 16 classic>tbc>wotlk
+('-13','%s\'s eyes glow red!','0','2','0','14720/18229','0'),
+-- PLEASE RE-USE 14 - 16 classic>tbc>wotlk
 ('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
 ('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
 ('-16','They might have run all the other farmers off, but the Saldean\'s will never leave Westfall.','0','0','7','Farmer Saldean 233','0'),
