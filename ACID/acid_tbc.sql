@@ -18025,6 +18025,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Izzy Coppergrab 13917
 -- Earthcaller Franzahl 14348
 -- Winterfall Ambusher 14372
+('1437201','14372','27','0','100','1','17205','1','60000','120000','11','17205','0','0','0','0','0','0','0','0','0','0','Winterfall Ambusher - Cast Winterfall Firewater on Missing Buff'),
 -- Princess Tempestria
 ('1445701','14457','11','0','100','0','0','0','0','0','1','-1498','0','0','0','0','0','0','0','0','0','0','Princess Tempestria - Random Yell on Spawn'),
 ('1445702','14457','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Princess Tempestria - Enable Dynamic Movement and Set Phase 1 on Aggro'),
