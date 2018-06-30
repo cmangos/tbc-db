@@ -16818,6 +16818,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1437801','14378','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Skymane - Invisibility and Stealth Detection OOC'),
 ('1437802','14378','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1437803','14378','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Hooked Net'),
+-- Huntress Ravenoak 14379
+('1437901','14379','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Ravenoak - Invisibility and Stealth Detection OOC'),
+('1437902','14379','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1437903','14379','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Hooked Net'),
 -- Uruson
 ('1442801','14428','0','0','100','1','3000','6000','30000','38000','11','15971','0','0','0','0','0','0','0','0','0','0','Uruson - Cast Demoralizing Roar'),
 -- Grimmaw 14429
