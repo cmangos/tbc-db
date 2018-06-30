@@ -17649,8 +17649,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Whulwert Copperpinch 13431
 -- Seersa Copperpinch 13432
 -- Hunter Sagewind 14440
+('1444001','14440','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Sagewind - Invisibility and Stealth Detection OOC'),
 -- Hunter Ragetotem 14441
+('1444101','14441','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Ragetotem - Invisibility and Stealth Detection OOC'),
 -- Hunter Thunderhorn 14442
+('1444201','14442','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Thunderhorn - Invisibility and Stealth Detection OOC'),
 -- Rumstag Proudstrider 14728
 -- Defilers Emissary
 ('1499001','14990','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','Defilers Emissary - Random Laugh or Cry Emote'),
