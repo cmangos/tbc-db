@@ -8493,7 +8493,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1383907','13839','13','0','100','1','8000','12000','0','0','11','11972','1','1','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Shield Bash on Target Casting'),
 ('1383908','13839','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Royal Dreadguard - Set Melee Weapon Model on Evade'),
 -- Seeker Cromwell 14402
-('1440201','14402','1','0','100','0','1000','1000','0','0','11','41634','0','32','0','0','0','0','0','0','0','0','Seeker Cromwell - Invisibility and Stealth Detection OOC'),
+('1440201','14402','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Seeker Cromwell - Invisibility and Stealth Detection OOC'),
 ('1440202','14402','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Cromwell - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1440203','14402','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Cromwell - Cast Hooked Net'),
 -- Seeker Nahr 14403
@@ -8501,6 +8501,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1440302','14403','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Nahr - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1440303','14403','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Nahr - Cast Hooked Net'),
 -- Seeker Thompson 14404
+('1440401','14404','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Seeker Thompson - Invisibility and Stealth Detection OOC'),
+('1440402','14404','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1440403','14404','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Hooked Net'),
 -- Ralston Farnsley 14729
 -- Defilers Emissary (14990) - NSR
 -- Sir Malory Wheeler 15007
