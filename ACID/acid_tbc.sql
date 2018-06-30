@@ -15209,6 +15209,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scout Manslayer 14376
 ('1437601','14376','1','0','100','0','1000','1000','0','0','11','41634','0','32','0','0','0','0','0','0','0','0','Scout Manslayer - Cast Invisibility and Stealth Detection OOC'),
 -- Scout Tharr 14377
+('1437701','14377','1','0','100','0','1000','1000','0','0','11','41634','0','32','0','0','0','0','0','0','0','0','Scout Tharr - Cast Invisibility and Stealth Detection OOC'),
 -- Overlord Runthak
 ('1439201','14392','0','0','100','1','3000','6000','5000','7000','11','15580','1','0','0','0','0','0','0','0','0','0','Overlord Runthak - Cast Strike'),
 ('1439202','14392','0','0','100','1','6000','10000','9000','17000','11','16509','4','32','0','0','0','0','0','0','0','0','Overlord Runthak - Cast Rend'),
