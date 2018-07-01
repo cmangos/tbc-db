@@ -7216,6 +7216,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Booty Bay Bruiser 4624 - guard_contested
 ('462401','4624','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Booty Bay Bruiser - Cast Net'),
 -- Se'Jib 7871 - npc_prof_leather
+-- High Priestess Hai'watna 11383
+('1138301','11383','14','0','100','1','1000','40','10000','20000','11','15982','6','0','0','0','0','0','0','0','0','0','High Priestess Hai\'watna - Cast Healing Wave on Friendly Missing HP'),
+('1138302','11383','0','0','100','1','0','10000','15000','30000','11','18503','4','0','0','0','0','0','0','0','0','0','High Priestess Hai\'watna - Cast Hex'),
 -- Gluggle
 ('1448701','14487','0','0','100','1','15600','15600','32000','35000','11','6306','0','0','0','0','0','0','0','0','0','0','Gluggle - Cast Acid Splash'),
 ('1448702','14487','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gluggle - Flee at 15% HP'),
@@ -33200,6 +33203,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1137401','11374','0','0','75','3','1000','3000','3000','5000','11','12097','1','32','0','0','0','0','0','0','0','0','Hooktooth Frenzy - Cast Pierce Armor'),
 -- Jin'do the Hexxer 11380 - boss_jindo
 -- Bloodlord Mandokir 11382 - boss_mandokir
+-- Witherbark Speaker 11388 - NSR
 -- Vilebranch Speaker
 ('1139101','11391','0','0','100','3','2000','2500','30500','31500','11','13730','0','0','0','0','0','0','0','0','0','0','Vilebranch Speaker - Demoralizing Shout'),
 ('1139102','11391','0','0','100','3','3000','3500','5500','11500','11','15284','1','0','0','0','0','0','0','0','0','0','Vilebranch Speaker - Cast Cleave'),
