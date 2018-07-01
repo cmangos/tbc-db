@@ -10812,7 +10812,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rayan Dawnrisen (11705) - NSR
 -- Joy Ar'nareth (11707) - NSR
 -- Coral Moongale (11708) - NSR
--- Mammoth Shark (12125) - NSR
+-- Mammoth Shark 12125
+('1212501','12125','1','0','100','0','1000','1000','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Mammoth Shark - Cast Thrash OOC'),
 -- Spitelash Raider
 ('1220401','12204','0','0','100','1','40','1000','6500','9000','11','12545','1','33','0','0','0','0','0','0','0','0','Spitelash Raider - Cast Spitelash'),
 ('1220402','12204','0','0','100','1','1000','2500','11000','15000','11','12548','1','0','0','0','0','0','0','0','0','0','Spitelash Raider - Cast Frost Shock'),
