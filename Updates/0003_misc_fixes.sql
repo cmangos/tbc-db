@@ -43,3 +43,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (58933,59463,3),(58934,59463,3),
 (192331,192332,3);
 
+-- Gug 23144
+UPDATE `creature_template` SET `VendorTemplateId` = 116 WHERE `entry` = 23144;
+
