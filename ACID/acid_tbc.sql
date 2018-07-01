@@ -28365,14 +28365,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Unstable Corpse (3.0.3 Official Data - Logs Only)
 ('1048001','10480','0','0','100','3','7000','19000','18000','35000','11','18270','1','0','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Dark Plague'),
 ('1048002','10480','6','0','100','2','0','0','0','0','11','17689','0','7','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Disease Burst on Death'),
--- Reanimated Corpse
-('1048101','10481','4','0','100','2','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Invicibility at 1 HP on Aggro'),
+-- Reanimated Corpse 10481
+('1048101','10481','4','0','100','2','0','0','0','0','42','1','0','0','22','0','0','0','0','0','0','0','Reanimated Corpse - Set Invicibility at 1 HP and Set Phase 0 on Aggro'),
 ('1048102','10481','0','0','100','3','3600','17300','10300','18200','11','18270','1','32','0','0','0','0','0','0','0','0','Reanimated Corpse - Cast Dark Plague'),
 ('1048103','10481','2','0','100','2','10','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Phase 1 at 10% HP'),
-('1048104','10481','0','1','100','2','1000','1000','0','0','47','7','0','0','21','0','0','0','0','0','0','0','Reanimated Corpse - Lies Down and Stop Melee Combat (Phase 1)'),
-('1048105','10481','0','1','100','2','10000','11000','0','0','11','23965','0','2','21','1','1','0','47','0','0','0','Reanimated Corpse - Cast Instant Heal, Stands Up and Resumes Combat Movement (Phase 1)'),
-('1048106','10481','2','1','100','2','99','30','0','0','42','0','0','0','20','1','0','0','0','0','0','0','Reanimated Corpse - Removes Invicibility below 99%HP and Resume Melee Combat (Phase 1)'),
-('1048107','10481','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Phase 0 on Evade'),
+('1048104','10481','0','5','100','2','1000','1000','0','0','47','7','0','0','21','0','0','0','20','0','0','0','Reanimated Corpse - Lie Down and Stop Movement and Stop Melee (Phase 1)'),
+('1048105','10481','0','5','100','2','10000','11000','0','0','11','23965','0','2','22','2','0','0','0','0','0','0','Reanimated Corpse - Cast Instant Heal and Set Phase 2 (Phase 1)'),
+('1048106','10481','0','3','100','2','0','0','0','0','47','0','0','0','21','1','0','0','20','1','0','0','Reanimated Corpse - Stand Up and Start Movement and Start Melee (Phase 2)'),
+('1048107','10481','2','3','100','2','99','0','0','0','42','0','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Remove Invicibility and Resume Melee Combat below 99% HP (Phase 2)'),
+('1048108','10481','7','0','100','2','0','0','0','0','47','0','0','0','21','1','0','0','20','1','0','0','Reanimated Corpse - Stand Up and Start Movement and Start Melee on Evade'),
 -- Risen Lackey (10482)
 -- Risen Aberration (3.0.3 Official Data - Logs Only)
 ('1048501','10485','0','0','100','3','1500','8900','17300','33700','11','12021','1','0','0','0','0','0','0','0','0','0','Risen Aberration - Cast Fixate'),
