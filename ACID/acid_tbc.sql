@@ -16832,6 +16832,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gnarlpine Instigator 11690
 -- Orenthil Whisperwind 11942
 -- Shadowglen Sentinel 12160
+('1216001','12160','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Shadowglen Sentinel - Invisibility and Stealth Detection OOC'),
 -- Sentinel Shaya (12429) - npc_garments_of_quests
 -- Huntress Skymane 14378
 ('1437801','14378','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Skymane - Invisibility and Stealth Detection OOC'),
