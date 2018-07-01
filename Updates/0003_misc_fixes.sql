@@ -46,3 +46,11 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Gug 23144
 UPDATE `creature_template` SET `VendorTemplateId` = 116 WHERE `entry` = 23144;
 
+-- High Admiral "Shelly" Jorrik 26081
+UPDATE `creature_template` SET `VendorTemplateId` = 116 WHERE `entry` = 26081;
+DELETE FROM `npc_vendor` WHERE `entry` = 26081;
+INSERT INTO `npc_vendor` VALUES (26081, 10858, 1, 7200, 0, 0, 'Plans: Solid Iron Maul');
+
+-- Jannos Ironwill 1471
+UPDATE `npc_vendor` SET `maxcount` = 1, `incrtime` = 7200 WHERE `entry` = 1471 AND `item` = 10858;
+
