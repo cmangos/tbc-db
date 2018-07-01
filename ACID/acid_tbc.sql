@@ -19990,6 +19990,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1955808','19558','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Amilya Airheart - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Peon Bolgar 19562
 ('1956201','19562','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Peon Bolgar - Cast Invisibility and Stealth Detection OOC'),
+-- Bleeding Hollow Riding Worg 19640
 -- Bonechewer Evoker (3.0.3 Official Data - Logs Only)
 ('1970101','19701','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bonechewer Evoker - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1970102','19701','9','13','100','1','0','40','3400','4800','11','9053','1','0','0','0','0','0','0','0','0','0','Bonechewer Evoker - Cast Fireball (Phase 1)'),
@@ -27237,8 +27238,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1652302','16523','2','0','100','7','30','0','120000','120000','11','30485','0','1','1','-106','0','0','0','0','0','0','Shattered Hand Savage - Cast Enrage at 30% HP'),
 ('1652303','16523','6','0','100','2','0','0','0','0','11','36023','1','7','0','0','0','0','0','0','0','0','Shattered Hand Savage (Normal) - Cast Deathblow on Death'),
 ('1652304','16523','6','0','100','4','0','0','0','0','11','36054','1','7','0','0','0','0','0','0','0','0','Shattered Hand Savage (Heroic) - Cast Deathblow on Death'),
--- Shattered Hand Brawler
-('1659301','16593','4','0','100','6','0','0','0','0','11','8876','0','34','0','0','0','0','0','0','0','0','Shattered Hand Brawler - Cast Thrash on Aggro'),
+-- Shattered Hand Brawler 16593
+('1659301','16593','4','0','100','6','0','0','0','0','11','8876','0','34','28','0','16093','0','0','0','0','0','Shattered Hand Brawler - Cast Thrash and Remove Self Visual - Sleep Until Cancelled (DND) on Aggro'),
 ('1659302','16593','9','0','100','7','0','5','12000','21000','11','36020','1','32','13','100','1','0','0','0','0','0','Shattered Hand Brawler - Cast Curse of Shattered Hand'),
 ('1659303','16593','13','0','100','7','12000','15000','0','0','11','36033','1','1','0','0','0','0','0','0','0','0','Shattered Hand Brawler - Cast Kick on Target Casting'),
 -- Shadowmoon Acolyte
