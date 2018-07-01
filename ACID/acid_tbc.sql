@@ -22338,9 +22338,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2326902','23269','2','0','100','1','75','0','10000','15000','11','33810','0','0','0','0','0','0','0','0','0','0','Barash the Den Mother - Cast Rock Shell at 75% HP'),
 ('2326903','23269','0','0','100','1','4000','8000','15000','25000','11','36922','0','0','0','0','0','0','0','0','0','0','Barash the Den Mother - Cast Bellowing Roar'),
 -- Nethermine Burster (23285) - npc_burster_worm
--- Black Blood of Draenor
+-- Black Blood of Draenor 23286
 ('2328601','23286','0','0','100','1','8000','14000','18000','25000','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
-('2328602','23286','2','0','100','0','40','0','0','0','11','7279','1','1','25','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Black Sludge and Flee at 40% HP'),
+('2328602','23286','2','0','100','0','40','0','0','0','11','7279','1','1','25','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Black Sludge and Flee at 40% HP'), -- Fleeing related to trying to merge with other Black Blood of Draenor 23286 to create Draenor Blood Terror 23290
+-- Draenor Blood Terror 23290
 -- Crazed Murkblood Foreman 23305
 ('2330501','23305','2','0','100','0','30','0','0','0','11','40743','0','0','54','-106','0','0','0','0','0','0','Crazed Murkblood Foreman - Cast Enrage at 30% HP'),
 -- Disobedient Dragonmaw Peon 23311 - npc_disobedient_dragonmaw_peon
