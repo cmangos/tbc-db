@@ -9985,7 +9985,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('383302','3833','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Cenarion Vindicator - Flee at 15% HP'),
 -- Crazed Ancient (3.3.0 Official Data)
 ('383401','3834','9','0','100','1','0','5','30500','80000','11','6909','1','32','0','0','0','0','0','0','0','0','Crazed Ancient - Cast Curse of Thorns'),
--- Healing Ward IV (3844) - NSR
 -- Shindrell Swiftfire
 ('384501','3845','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Shindrell Swiftfire - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('384502','3845','9','0','100','1','5','30','2300','3900','11','15547','1','0','40','2','0','0','0','0','0','0','Shindrell Swiftfire - Cast Shoot and Set Ranged Weapon Model'),
@@ -33043,6 +33042,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Amani Bear Mount
 ('2421701','24217','0','0','100','3','0','3000','10000','15000','11','42747','1','0','0','0','0','0','0','0','0','0','Amani Bear Mount - Cast Crunch Armor'),
 ('2421702','24217','0','0','100','3','2000','3000','15000','25000','11','42745','0','0','0','0','0','0','0','0','0','0','Amani Bear Mount - Cast Enrage'),
+-- Corrupted Lightning Totem 24224 - TotemAI
 -- Amani'shi Warrior 24225
 ('2422501','24225','9','0','100','2','8','25','0','0','11','43519','1','0','0','0','0','0','0','0','0','0','Amani\'shi Warrior - Cast Charge'),
 ('2422502','24225','13','0','100','3','10000','15000','0','0','11','43518','1','1','0','0','0','0','0','0','0','0','Amani\'shi Warrior - Cast Kick on Target Casting'),
@@ -33178,6 +33178,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Son of Hakkar
 ('1135701','11357','0','0','100','3','8000','15000','11000','16000','11','16790','4','0','0','0','0','0','0','0','0','0','Son of Hakkar - Cast Knockdown'),
 ('1135702','11357','6','0','100','2','0','0','0','0','11','24319','0','7','0','0','0','0','0','0','0','0','Son of Hakkar - Cast Summon Poison Cloud on Death'),
+-- Soulflayer 11359
 -- Zulian Cub
 ('1136001','11360','2','0','100','2','15','0','0','0','25','0','0','0','1','-145','0','0','0','0','0','0','Zulian Cub - Flee at 15% HP'),
 -- Zulian Panther
@@ -33949,8 +33950,77 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   Unknown/Misc Zones   |
 -- ==========================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
+-- Searing Totem 2523 - TotemAI
+-- Earthbind Totem 2630 - TotemAI
+-- Ward of Laze 2667 - TotemAI
+-- Healing Ward V 2992 - TotemAI
+-- Healing Stream Totem 3527 - TotemAI
+-- Healing Ward 3560 - TotemAI
+-- Mana Spring Totem 3573 - TotemAI
+-- Stoneclaw Totem 3579 - TotemAI
+-- Healing Ward IV 3844 - TotemAI
+-- Searing Totem II 3902 - TotemAI
+-- Searing Totem III 3903 - TotemAI
+-- Searing Totem IV 3904 - TotemAI
+-- Healing Stream Totem II 3906 - TotemAI
+-- Healing Stream Totem III 3907 - TotemAI
+-- Healing Stream Totem IV 3908 - TotemAI
+-- Healing Stream Totem V 3909 - TotemAI
+-- Stoneclaw Totem II 3911 - TotemAI
+-- Stoneclaw Totem III 3912 - TotemAI
+-- Stoneclaw Totem IV 3913 - TotemAI
 -- Archery Target
 ('520201','5202','11','0','100','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
+-- Stoneskin Totem 5873 - TotemAI
+-- Strength of Earth Totem 5874 - TotemAI
+-- Fire Nova Totem 5879 - TotemAI
+-- Tremor Totem 5913 - TotemAI
+-- Stoneskin Totem II 5919 - TotemAI
+-- Stoneskin Totem III 5920 - TotemAI
+-- Strength of Earth Totem II 5921 - TotemAI
+-- Strength of Earth Totem III 5922 - TotemAI
+-- Poison Cleansing Totem 5923 - TotemAI
+-- Disease Cleansing Totem 5924 - TotemAI
+-- Grounding Totem 5925 - TotemAI
+-- Frost Resistance Totem 5926 - TotemAI
+-- Fire Resistance Totem 5927 - TotemAI
+-- Magma Totem 5929 - TotemAI
+-- Flametongue Totem 5950 - TotemAI
+-- Flametongue Totem II 6012 - TotemAI
+-- Elemental Protection Totem 6016 - TotemAI
+-- Lava Spout Totem 6017 - TotemAI
+-- Fire Nova Totem II 6110 - TotemAI
+-- Fire Nova Totem III 6111 - TotemAI
+-- Windfury Totem 6112 - TotemAI
+-- Stoneskin Totem IV 7366 - TotemAI
+-- Stoneskin Totem V 7367 - TotemAI
+-- Stoneskin Totem VI 7368 - TotemAI
+-- Stoneclaw Totem V 7398 - TotemAI
+-- Stoneclaw Totem VI 7399 - TotemAI
+-- Searing Totem V 7400 - TotemAI
+-- Searing Totem VI 7402 - TotemAI
+-- Strength of Earth Totem IV 7403 - TotemAI
+-- Frost Resistance Totem II 7412 - TotemAI
+-- Frost Resistance Totem III 7413 - TotemAI
+-- Mana Spring Totem II 7414 - TotemAI
+-- Mana Spring Totem III 7415 - TotemAI
+-- Mana Spring Totem IV 7416 - TotemAI
+-- Flametongue Totem III 7423 - TotemAI
+-- Fire Resistance Totem II 7424 - TotemAI
+-- Fire Resistance Totem III 7425 - TotemAI
+-- Magma Totem II 7464 - TotemAI
+-- Magma Totem III 7465 - TotemAI
+-- Magma Totem IV 7466 - TotemAI
+-- Nature Resistance Totem 7467 - TotemAI
+-- Nature Resistance Totem II 7468 - TotemAI
+-- Nature Resistance Totem III 7469 - TotemAI
+-- Windfury Totem II 7483 - TotemAI
+-- Windfury Totem III 7484 - TotemAI
+-- Grace of Air Totem 7486 - TotemAI
+-- Grace of Air Totem II 7487 - TotemAI
+-- Fire Nova Totem IV 7844 - TotemAI
+-- Fire Nova Totem V 7845 - TotemAI
+-- Greater Healing Ward 8179 - TotemAI
 -- Eranikus the Chained
 ('850601','8506','11','0','100','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
 -- Battle Chicken 8836
@@ -33960,8 +34030,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('929701','9297','1','0','100','0','1000','1000','0','0','11','7276','0','32','0','0','0','0','0','0','0','0','Enraged Wyvern - Cast Poison Proc OOC'),
 -- Enraged Gryphon
 ('952601','9526','0','0','100','1','3000','6000','12000','15000','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Gryphon - Cast Rend'),
+-- Scorching Totem 9637 - TotemAI
+-- Windwall Totem 9687 - TotemAI
+-- Windwall Totem II 9688 - TotemAI
+-- Windwall Totem III 9689 - TotemAI
+-- Moonflare Totem 10183 - TotemAI
+-- Flame Buffet Totem 10217 - TotemAI
+-- Superior Healing Ward 10218 - TotemAI
+-- Mana Tide Totem 10467 - TotemAI
+-- Flametongue Totem IV 10557 - TotemAI
 -- Doomguard
 ('1185901','11859','9','0','100','31','0','30','30100','34900','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard - Cast Cripple'),
+-- Ice Totem 12141 - TotemAI
 -- Imp Minion
 ('1292201','12922','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Imp Minion - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1292202','12922','0','0','100','1','1000','2000','2300','2800','11','20801','1','0','0','0','0','0','0','0','0','0','Imp Minion - Cast Firebolt'),
@@ -33970,6 +34050,35 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1292205','12922','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Imp Minion - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1292206','12922','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Imp Minion - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1292207','12922','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Imp Minion - Set Phase 0 on Evade'),
+-- Dire Maul Crystal Totem 13916 - TotemAI
+-- Corrupted Fire Nova Totem V 14662 - TotemAI
+-- Corrupted Stoneskin Totem VI 14663 - TotemAI
+-- Corrupted Healing Stream Totem V 14664 - TotemAI
+-- Corrupted Windfury Totem III 14666 - TotemAI
+-- Brain Wash Totem 15112 - TotemAI
+-- Ancient Mana Spring Totem 15304 - TotemAI
+-- Earth Elemental Totem 15430 - TotemAI
+-- Fire Elemental Totem 15439 - TotemAI
+-- Wrath of Air Totem 15447 - TotemAI
+-- Grace of Air Totem III 15463 - TotemAI
+-- Strength of Earth Totem V 15464 - TotemAI
+-- Stoneskin Totem VII 15470 - TotemAI
+-- Stoneskin Totem VIII 15474 - TotemAI
+-- Stoneclaw Totem VII 15478 - TotemAI
+-- Strength of Earth Totem VI 15479 - TotemAI
+-- Searing Totem VII 15480 - TotemAI
+-- Fire Nova Totem VI 15482 - TotemAI
+-- Fire Nova Totem VII 15483 - TotemAI
+-- Magma Totem V 15484 - TotemAI
+-- Flametongue Totem V 15485 - TotemAI
+-- Frost Resistance Totem IV 15486 - TotemAI
+-- Fire Resistance Totem IV 15487 - TotemAI
+-- Healing Stream Totem VI 15488 - TotemAI
+-- Mana Spring Totem V 15489 - TotemAI
+-- Nature Resistance Totem IV 15490 - TotemAI
+-- Windwall Totem IV 15492 - TotemAI
+-- Windfury Totem IV 15496 - TotemAI
+-- Windfury Totem V 15497 - TotemAI
 -- Timbermaw Ancestor
 ('1572001','15720','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Timbermaw Ancestor - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1572002','15720','0','5','100','1','0','40','3400','4800','11','9532','1','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Chain Lightning (Phase 1)'),
@@ -33979,6 +34088,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1572006','15720','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Timbermaw Ancestor - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
 ('1572007','15720','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1572008','15720','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Set Phase 0 on Evade'),
+-- Tranquil Air Totem 15803 - TotemAI
+-- Totem of Wrath 17539 - TotemAI
+-- Tainted Earthgrab Totem 18176 - TotemAI
+-- Tainted Stoneskin Totem 18177 - TotemAI
+-- Corrupted Healing Stream Totem 18235 - TotemAI
+-- Corrupted Air Totem 18236 - TotemAI
+-- Magma Flow Totem 19222 - TotemAI
+-- Strength of the Storm Totem 19225 - TotemAI
 -- Flame Wave
 ('1938101','19381','11','0','100','0','0','0','0','0','11','33800','0','0','0','0','0','0','0','0','0','0','Flame Wave - Cast Flame Wave on Spawn'),
 ('1938102','19381','29','0','100','0','500','500','0','0','11','33799','0','0','0','0','0','0','0','0','0','0','Flame Wave - Cast Flame Wave on Generic Timer'),
@@ -33998,6 +34115,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1964404','19644','22','0','100','1','80','0','0','0','5','23','0','0','0','0','0','0','0','0','0','0','Image of Archmage Vargoth - Sexy on Receive Emote Flex'),
 ('1964405','19644','22','0','100','1','72','0','0','0','5','6','0','0','0','0','0','0','0','0','0','0','Image of Archmage Vargoth - Ponder on Receive Emote Point'),
 ('1964406','19644','22','0','100','1','130','0','0','0','5','274','0','0','0','0','0','0','0','0','0','0','Image of Archmage Vargoth - No on Receive Emote Slap'),
+-- Mennu's Healing Ward 20208 - TotemAI
+-- Charming Totem 20343 - TotemAI
+-- Strength of Earth Totem 21992 - TotemAI
+-- Searing Totem 21995 - TotemAI
+-- Spitfire Totem 22091 - TotemAI
 -- Flame Wave II 22228
 ('2222801','22228','11','0','100','0','0','0','0','0','11','38608','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Spawn'),
 ('2222802','22228','29','0','100','0','500','500','0','0','11','38610','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Generic Timer'),
@@ -34010,9 +34132,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2222809','22228','29','0','100','0','4000','4000','0','0','11','38610','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Generic Timer'),
 ('2222810','22228','29','0','100','0','4500','4500','0','0','11','38610','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Generic Timer'),
 ('2222811','22228','29','0','100','0','5000','5000','0','0','11','38610','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Generic Timer'),
+-- Water Elemental Totem 22236 - TotemAI
+-- Spirit Calling Totem 22318 - TotemAI
 -- Legion Fel Cannon MKII 22451
 ('2245101','22451','11','0','100','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Prevent Movement and Prevent Melee on Spawn'),
 ('2245102','22451','0','0','100','1','0','1000','2500','2500','11','36238','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Cast Fel Cannon Blast'),
+-- Greater Earthbind Totem 22486 - TotemAI
+-- Greater Poison Cleansing Totem 22487 - TotemAI
+-- Cyclone Totem 22894 - TotemAI
+-- Summoned Searing Totem 22895 - TotemAI
+-- Ashtongue Searing Totem 22896 - TotemAI
+-- Summoned Windfury Totem 22897 - TotemAI
+-- Captured Totem 23811 - TotemAI
 -- D.I.S.C.O.
 ('2798901','27989','11','0','100','0','0','0','0','0','11','50487','0','0','0','0','0','0','0','0','0','0','D.I.S.C.O. - Cast Create Disco Ball Visual Object on Spawn');
 
