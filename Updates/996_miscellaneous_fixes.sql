@@ -23,7 +23,7 @@ UPDATE `creature_template` SET `UnitFlags` = `UnitFlags`|32768 WHERE `entry` IN 
 
 -- Crudely Written Log should drop if player has already turned in 5121
 -- http://www.wowhead.com/item=12842/crudely-written-log#comments:id=219726
-DELETE FROM conditions WHERE condition_entry IN (3000,3001);
+DELETE FROM conditions WHERE condition_entry IN (3000,3001,552,553);
 INSERT INTO conditions (condition_entry, type, value1, value2, comments) VALUES
 (3001,-2,3000,211,'Quest ID 5121 Taken OR Rewarded'),
 (3000,8,5121,0,'Quest ID 5121 Rewarded');
