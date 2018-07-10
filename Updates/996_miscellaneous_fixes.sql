@@ -232,3 +232,50 @@ INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, positi
 (170014, 180035, 530, 1, -5031.66, 637.0347, 25.39388, 2.216565, 0, 0, 0.8949337, 0.4461992, 120, 120, 255, 1), -- Fence
 (170015, 180035, 530, 1, -5024.21, 625.4202, 25.38931, 2.199115, 0, 0, 0.8910065, 0.4539906, 120, 120, 255, 1); -- Fence
 
+-- Corrections to game event times
+UPDATE game_event SET start_time='2012-06-21 02:00:00', end_time='2020-12-31 00:00:00' WHERE entry=1; -- Midsummer Fire Festival
+UPDATE game_event SET start_time='2012-12-15 08:00:00', end_time='2020-12-31 00:00:00' WHERE entry=2; -- Feast of Winter Veil - Main Event
+UPDATE game_event SET start_time='2010-12-31 12:00:00', end_time='2020-12-31 00:00:00' WHERE entry=6; -- New Year's Eve
+UPDATE game_event SET start_time='2018-02-17 00:00:00', end_time='2020-12-31 00:00:00', length=21600 WHERE entry=7; -- Lunar Festival
+UPDATE game_event SET start_time='2012-02-05 02:00:00', end_time='2020-12-31 00:00:00' WHERE entry=8; -- Love is in the Air
+UPDATE game_event SET start_time='2010-12-25 08:00:00', end_time='2020-12-31 08:00:00' WHERE entry=9; -- Feast of Winter Veil - Presents Event
+UPDATE game_event SET start_time='2012-04-29 02:00:00', end_time='2020-12-31 00:00:00' WHERE entry=10; -- Children's Week
+UPDATE game_event SET start_time='2012-09-24 02:00:00', end_time='2020-12-31 00:00:00' WHERE entry=11; -- Harvest Festival
+UPDATE game_event SET start_time='2012-10-18 02:00:00', end_time='2020-12-31 00:00:00' WHERE entry=12; -- Hallow's End
+UPDATE game_event SET start_time='2007-08-04 14:00:00', end_time='2020-12-31 00:00:00' WHERE entry=16; -- Gurubashi Arena Booty Run
+UPDATE game_event SET start_time='2011-01-28 02:00:00', end_time='2020-12-31 00:00:00', occurence=40320, length=6240 WHERE entry=18; -- Call to Arms: Alterac Valley!
+UPDATE game_event SET start_time='2011-01-14 02:00:00', end_time='2020-12-31 00:00:00', occurence=40320, length=6240 WHERE entry=19; -- Call to Arms: Warsong Gulch!
+UPDATE game_event SET start_time='2011-01-21 02:00:00', end_time='2020-12-31 00:00:00', occurence=40320, length=6240 WHERE entry=20; -- Call to Arms: Arathi Basin!
+UPDATE game_event SET start_time='2011-01-07 02:00:00', end_time='2020-12-31 00:00:00', occurence=40320, length=6240 WHERE entry=21; -- Call to Arms: Eye of the Storm!
+UPDATE game_event SET start_time='2011-01-01 21:00:00', end_time='2020-12-31 00:00:00' WHERE entry=23; -- Pyrewood Village - Night Time Scourge Curse
+UPDATE game_event SET start_time='2011-01-01 00:58:00', end_time='2020-12-31 00:00:00' WHERE entry=24; -- Stormwind City - Stockades Jail Break
+UPDATE game_event SET start_time='2012-09-20 02:00:00', end_time='2020-12-31 00:00:00' WHERE entry=26; -- Brewfest
+UPDATE game_event SET start_time='2011-01-01 21:00:00', end_time='2020-12-31 00:00:00' WHERE entry=27; -- Night Time
+UPDATE game_event SET start_time='2012-04-08 02:00:00', end_time='2020-12-31 00:00:00' WHERE entry=28; -- Noblegarden
+UPDATE game_event SET start_time='2010-12-27 21:00:00', end_time='2020-12-31 00:00:00' WHERE entry=29; -- Zul'Gurub - Edge of Madness (Gri'lek)
+UPDATE game_event SET start_time='2011-01-10 21:00:00', end_time='2020-12-31 00:00:00' WHERE entry=30; -- Zul'Gurub - Edge of Madness (Hazza'rah)
+UPDATE game_event SET start_time='2011-01-24 21:00:00', end_time='2020-12-31 00:00:00' WHERE entry=31; -- Zul'Gurub - Edge of Madness (Renataki)
+UPDATE game_event SET start_time='2010-12-13 21:00:00', end_time='2020-12-31 00:00:00' WHERE entry=32; -- Zul'Gurub - Edge of Madness (Wushoolay)
+UPDATE game_event SET start_time='2009-01-04 10:00:00', end_time='2020-12-31 00:00:00' WHERE entry=34; -- Stranglethorn Fishing Extravaganza - Announce
+UPDATE game_event SET start_time='2009-01-04 14:00:00', end_time='2020-12-31 00:00:00' WHERE entry=35; -- Stranglethorn Fishing Extravaganza
+UPDATE game_event SET start_time='2009-01-04 14:00:00', end_time='2020-12-31 00:00:00' WHERE entry=36; -- Stranglethorn Fishing Extravaganza - Turn-in
+UPDATE game_event SET start_time='2011-01-01 02:48:00', end_time='2020-12-31 00:00:00' WHERE entry=57; -- World's End Tavern - Perry Gatner Announce
+UPDATE game_event SET start_time='2011-01-01 03:00:00', end_time='2020-12-31 00:00:00' WHERE entry=58; -- World's End Tavern - Perry Gatner Standup Comedy
+UPDATE game_event SET start_time='2011-01-01 03:48:00', end_time='2020-12-31 00:00:00' WHERE entry=59; -- World's End Tavern - L70ETC Concert Announce
+UPDATE game_event SET start_time='2011-01-01 01:00:00', end_time='2020-12-31 00:00:00' WHERE entry=60; -- World's End Tavern - L70ETC Concert
+UPDATE game_event SET start_time='2011-01-01 19:48:00', end_time='2020-12-31 00:00:00' WHERE entry=61; -- Grim Guzzler - L70ETC Pre-Concert
+UPDATE game_event SET start_time='2011-01-01 20:00:00', end_time='2020-12-31 00:00:00' WHERE entry=62; -- Grim Guzzler - L70ETC Concert
+UPDATE game_event SET start_time='2011-10-22 00:00:00', end_time='2011-10-24 00:00:00' WHERE entry=63; -- L70ETC Concert - Terrokar Forest (Blizzcon Event)
+UPDATE game_event SET start_time='2011-01-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=64; -- Brew of the Month - January
+UPDATE game_event SET start_time='2011-02-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=65; -- Brew of the Month - February
+UPDATE game_event SET start_time='2011-03-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=66; -- Brew of the Month - March
+UPDATE game_event SET start_time='2011-04-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=67; -- Brew of the Month - April
+UPDATE game_event SET start_time='2011-05-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=68; -- Brew of the Month - May
+UPDATE game_event SET start_time='2011-06-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=69; -- Brew of the Month - June
+UPDATE game_event SET start_time='2011-07-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=70; -- Brew of the Month - July
+UPDATE game_event SET start_time='2011-08-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=71; -- Brew of the Month - August
+UPDATE game_event SET start_time='2011-09-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=72; -- Brew of the Month - September
+UPDATE game_event SET start_time='2011-10-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=73; -- Brew of the Month - October
+UPDATE game_event SET start_time='2011-11-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=74; -- Brew of the Month - November
+UPDATE game_event SET start_time='2011-12-01 00:00:00', end_time='2020-12-30 23:00:00' WHERE entry=75; -- Brew of the Month - December
+
