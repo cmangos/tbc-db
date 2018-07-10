@@ -54,3 +54,9 @@ INSERT INTO `npc_vendor` VALUES (26081, 10858, 1, 7200, 0, 0, 'Plans: Solid Iron
 -- Jannos Ironwill 1471
 UPDATE `npc_vendor` SET `maxcount` = 1, `incrtime` = 7200 WHERE `entry` = 1471 AND `item` = 10858;
 
+-- correct positions for Legion Hold teleporter and the return routes
+REPLACE INTO spell_target_position(id, target_map, target_position_x, target_position_y, target_position_z, target_orientation) VALUES
+('37387', '530', '-2742.77', '2727', '124.81', '5.29');
+UPDATE areatrigger_teleport SET target_position_x=-3277.86,target_position_y=2831.64,target_position_z=123.02,target_orientation=1.5708 WHERE id IN(4561,4562);
+
+
