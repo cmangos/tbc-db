@@ -20040,7 +20040,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2227308','22273','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Fel Warden - Set Phase 1 at 15% MP (Phase 2)'),
 ('2227309','22273','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Fel Warden - Set Phase 0 on Evade'),
 -- Deathforge Automaton 22295 - Pre 2.4 - NSR
--- Throne-Guard Highlord 22297  - Pre 2.4 - guessed values
+-- Throne-Guard Highlord 22297 - Pre 2.4 - guessed values
 ('2229701','22297','0','0','100','1','9400','15400','12000','16000','11','24193','4','0','14','-99','0','0','0','0','0','0','Throne-Guard Highlord - Cast Charge and Reset Threat'),
 ('2229702','22297','9','0','100','1','0','5','9000','12000','11','34996','1','0','0','0','0','0','0','0','0','0','Throne-Guard Highlord - Cast Uppercut'),
 -- Throne-Guard Sentinel 22301 - Pre 2.4 - guessed values
@@ -23217,41 +23217,42 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flawless Arcane Elemental 23100
 ('2310002','23100','11','0','100','0','0','0','0','0','11','34166','0','0','0','0','0','0','0','0','0','0','Flawless Arcane Elemental - Cast Coalesce on Spawn'),
 -- Darkscreecher Akkarai 23161
-('2316101','23161','11','2','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Set Phase 0 on Spawn'),
-('2316102','23161','29','2','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Spawn - Red Lightning on Generic Timer'),
-('2316103','23161','29','2','100','0','4500','4500','0','0','1','-9','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Say on Generic Timer'),
-('2316104','23161','29','2','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Darkscreecher Akkarai - Set Phase 1 and Remove Immune flag and Attack Spawner on Generic Timer'),
-('2316105','23161','0','5','100','1','8000','12000','8000','12000','11','40429','1','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Frostbolt (Phase 1)'),
-('2316106','23161','0','0','100','0','14000','14000','0','0','11','40427','0','0','54','-12','1','0','0','0','0','0','Darkscreecher Akkarai - Cast Flock Call and Yell and Set Phase 2'),
-('2316107','23161','0','0','100','0','15500','15500','0','0','12','23206','0','20000','12','23206','0','20000','12','23206','0','20000','Darkscreecher Akkarai - Summon Akkarai Hatchling (Spell 40426)'),
-('2316108','23161','0','0','100','0','15500','15500','0','0','12','23206','0','20000','12','23206','0','20000','12','23206','0','20000','Darkscreecher Akkarai - Summon Akkarai Hatchling (Spell 40426)'),
-('2316109','23161','0','3','100','1','2000','6000','2000','6000','11','40430','1','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Frostbolt (Phase 2)'),
-('2316110','23161','0','5','100','1','10000','10000','15000','20000','11','40428','0','1','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Shadow Bolt Volley'),
-('2316111','23161','2','0','100','1','30','0','5000','10000','11','15730','1','32','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Curse of Mending at 30% HP'),
-('2316112','23161','0','0','100','1','15000','20000','15000','20000','11','13341','1','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Fire Blast'),
--- Vakkiz the Windrager
-('2316201','23162','11','6','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Set Phase 0 on Spawn'),
-('2316202','23162','29','6','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Cast Spawn - Red Lightning on Generic Timer'),
-('2316203','23162','29','6','100','0','4500','4500','0','0','1','-234','0','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Emote on Generic Timer'),
-('2316204','23162','29','6','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Vakkiz the Windrager - Set Phase 1 and Remove Immune flag and Attack Spawner on Generic Timer'),
-('2316205','23162','0','5','100','1','6500','9500','8500','11500','11','40420','1','1','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Cast Lightning Breath (Phase 1)'),
-('2316206','23162','2','5','100','0','40','0','0','0','3','23204','0','0','1','-235','0','0','22','2','0','0','Vakkiz the Windrager - Transform into Bone Form and Emote and Set Phase 2 at 40% HP (Phase 1)'),
-('2316207','23162','0','3','100','1','3000','7000','4000','7000','11','40419','8','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Cast Bone Spray (Phase 2)'),
-('2316208','23162','6','0','100','0','0','0','0','0','3','0','0','0','22','0','0','0','0','0','0','0','Vakkiz the Windrager - Transform into Serpant Form and Set Phase 0 on Evade'),
--- Gezzarak the Huntress
-('2316301','23163','11','2','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Set Phase 0 on Spawn'),
-('2316302','23163','29','2','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Cast Spawn - Red Lightning on Generic Timer'),
-('2316303','23163','29','2','100','0','4500','4500','0','0','1','-236','0','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Emote on Generic Timer'),
-('2316304','23163','29','2','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Gezzarak the Huntress - Set Phase 1 and Remove Immune flag and Attack Spawner on Generic Timer'),
-('2316305','23163','0','1','100','1','1000','1000','15000','21000','11','40542','0','1','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Cast Warped Armor'),
-('2316306','23163','0','1','100','1','4000','7000','17500','20000','11','40434','1','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Cast Knock Away'),
-('2316307','23163','0','1','100','1','16000','19000','22000','25000','14','-99','0','0','11','40432','2','1','1','-237','0','0','Gezzarak the Huntress - Cast Warp combo I'),
-('2316308','23163','0','1','100','1','13000','17800','21000','26000','11','40542','0','1','11','40433','2','0','0','0','0','0','Gezzarak the Huntress - Cast Warp Rift Combo II'),
--- Karrog
-('2316501','23165','11','2','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Karrog - Set Phase 0 on Spawn'),
-('2316502','23165','29','2','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Karrog - Cast Spawn - Red Lightning on Generic Timer'),
-('2316503','23165','29','2','100','0','4500','4500','0','0','1','-10','0','0','0','0','0','0','0','0','0','0','Karrog - Say on Generic Timer'),
-('2316504','23165','29','2','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Karrog - Set Phase 1 and Remove Immune flag and Attack Spawner on Generic Timer'),
+('2316101','23161','11','0','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Spawn - Red Lightning on Spawn'),
+('2316102','23161','29','0','100','0','4500','4500','0','0','1','-1581','0','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Say on Generic Timer'),
+('2316103','23161','29','0','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Darkscreecher Akkarai - Set Phase 1 and Remove IMMUNE_TO_PLAYER and Attack Spawner on Generic Timer'),
+('2316104','23161','0','5','100','1','8000','12000','8000','12000','11','40429','1','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Frostbolt (Phase 1)'),
+('2316105','23161','0','0','100','0','14000','14000','0','0','11','40427','0','1','54','-1582','1','0','22','2','0','0','Darkscreecher Akkarai - Cast Flock Call and Yell and Set Phase 2'),
+('2316106','23161','0','0','100','0','15500','15500','0','0','12','23206','0','20000','12','23206','0','20000','12','23206','0','20000','Darkscreecher Akkarai - Summon Akkarai Hatchling'), -- s.40426
+('2316107','23161','0','0','100','0','15500','15500','0','0','12','23206','0','20000','12','23206','0','20000','12','23206','0','20000','Darkscreecher Akkarai - Summon Akkarai Hatchling'), -- s.40426
+('2316108','23161','0','3','100','1','2000','6000','2000','6000','11','40430','1','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Frostbolt (Phase 2)'),
+('2316109','23161','0','0','100','1','10000','10000','15000','20000','11','40428','0','1','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Shadow Bolt Volley'),
+('2316110','23161','2','0','100','1','30','0','5000','10000','11','15730','1','32','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Curse of Mending at 30% HP'),
+('2316111','23161','0','0','100','1','15000','20000','15000','20000','11','13341','1','0','0','0','0','0','0','0','0','0','Darkscreecher Akkarai - Cast Fire Blast'),
+-- Vakkiz the Windrager 23162
+('2316201','23162','11','0','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Cast Spawn - Red Lightning on Spawn'),
+('2316202','23162','29','0','100','0','4500','4500','0','0','1','-234','0','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Emote on Generic Timer'),
+('2316203','23162','29','0','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Vakkiz the Windrager - Set Phase 1 and Remove IMMUNE_TO_PLAYER and Attack Spawner on Generic Timer'),
+('2316204','23162','0','5','100','1','6500','9500','8500','11500','11','40420','1','1','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Cast Lightning Breath (Phase 1)'),
+('2316205','23162','2','5','100','0','40','0','0','0','3','23204','0','0','1','-235','0','0','22','2','0','0','Vakkiz the Windrager - Transform into Bone Form and Emote and Set Phase 2 at 40% HP (Phase 1)'),
+('2316206','23162','0','3','100','1','3000','7000','4000','7000','11','40419','1','0','0','0','0','0','0','0','0','0','Vakkiz the Windrager - Cast Bone Spray (Phase 2)'),
+('2316207','23162','6','0','100','0','0','0','0','0','3','0','0','0','22','0','0','0','0','0','0','0','Vakkiz the Windrager - Transform into Serpant Form and Set Phase 0 on Evade'),
+-- Gezzarak the Huntress 23163
+('2316301','23163','11','0','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Cast Spawn - Red Lightning on Spawn'),
+('2316302','23163','29','0','100','0','4500','4500','0','0','1','-236','0','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Emote on Generic Timer'),
+('2316303','23163','29','0','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Gezzarak the Huntress - Set Phase 1 and Remove IMMUNE_TO_PLAYER and Attack Spawner on Generic Timer'),
+('2316304','23163','0','1','100','1','1000','1000','15000','21000','11','40542','1','0','0','0','0','0','0','0','0','0','Gezzarak the Huntress - Cast Warped Armor (Phase 1)'),
+('2316305','23163','0','1','100','1','4000','7000','17500','20000','11','40434','1','0','13','-25','1','0','0','0','0','0','Gezzarak the Huntress - Cast Knock Away and Reduce Threat (Phase 1)'),
+('2316306','23163','0','1','100','1','16000','19000','22000','25000','13','-99','1','0','11','40432','2','1','54','-237','2','0','Gezzarak the Huntress - Cast Warp combo I (Phase 1)'),
+('2316307','23163','0','1','100','1','13000','17800','21000','26000','11','40542','1','2','11','40433','2','2','0','0','0','0','Gezzarak the Huntress - Cast Warp Rift Combo II (Phase 1)'),
+-- Karrog 23165
+('2316501','23165','11','0','100','0','0','0','0','0','11','24240','0','0','0','0','0','0','0','0','0','0','Karrog - Cast Spawn - Red Lightning on Spawn'),
+('2316502','23165','29','0','100','0','4500','4500','0','0','1','-1583','0','0','0','0','0','0','0','0','0','0','Karrog - Say on Generic Timer'),
+('2316503','23165','29','0','100','0','5500','5500','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Karrog - Set Phase 1 and Remove IMMUNE_TO_PLAYER and Attack Spawner on Generic Timer'),
+('2316504','23165','0','5','100','1','8000','16000','8000','40000','11','40488','0','0','0','0','0','0','0','0','0','0','Karrog - Cast Trample (Phase 1)'),
+('2316505','23165','0','5','100','1','22000','22000','22000','22000','13','-99','1','0','11','40416','9','0','22','2','0','0','Karrog - Reset Threat and Cast Fixated Rage and Set Phase 2 (Phase 1)'), -- script ss.40415 Fixated
+('2316506','23165','0','3','100','1','1000','1000','1000','1000','54','-1584','1','0','22','1','0','0','0','0','0','0','Karrog - Emote and Set Phase 1 (Phase 2)'),
+('2316507','23165','6','0','100','0','0','0','0','0','12','23205','0','10000','12','23205','0','10000','12','23205','0','10000','Karrog - Spawn Karrog Shardling on Death'), -- ss.40422
+-- Karrog Shardling 23205
 -- Akkarai Hatchling 23206
 -- Blackwind Warp Chaser
 ('2321901','23219','1','0','100','0','1000','1000','0','0','11','32942','0','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Cast Phasing Invisibility OOC'),
@@ -34434,12 +34435,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-6','Grrrr... fresh meat!','0','0','0','Common Gnoll Text','0'),
 ('-7','You no take candle!','0','0','0','Common Kobold Text','0'),
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
-('-9','Hear the voices below the earth!  They call for your blood!','0','0','0','Darkscreecher Akkarai on Spawn','0'),
-('-10','You capture Karrog!  Karrog smash you!','0','0','0','Karrog on Spawn','0'),
+-- PLEASE RE-USE 9 - 10 classic>tbc>wotlk
 ('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','Klaven Mortwake 7053','0'),
-('-12','Consume $N, my children!','0','0','0','Darkscreecher Akkarai on Flock Call 40427','0'),
+-- PLEASE RE-USE 12 classic>tbc>wotlk
 ('-13','%s\'s eyes glow red!','0','2','0','14720/18229','0'),
--- PLEASE RE-USE 14 - 16 classic>tbc>wotlk
 ('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
 ('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
 ('-16','They might have run all the other farmers off, but the Saldean\'s will never leave Westfall.','0','0','7','Farmer Saldean 233','0'),
@@ -35869,7 +35868,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1578','I love to bathe in the blood of my enemies!','0','0','0','18677','0'),
 ('-1579','I crave your death!','0','0','0','18677','0'),
 ('-1580','Let me give you my regards for Greatfather Winter, scum.','0','0','0','15692','0'),
--- PLEASE RE-USE 1581 - 1586 classic>tbc>wotlk
+('-1581','Hear the voices below the earth!  They call for your blood!','0','0','0','Darkscreecher Akkarai 23161 on Spawn','0'),
+('-1582','Consume $N, my children!','0','0','0','Darkscreecher Akkarai 23161 on Flock Call 40427','0'),
+('-1583','You capture Karrog!  Karrog smash you!','0','0','0','Karrog 23165 on Spawn','0'),
+('-1584','%s fixates on $N.','0','2','0','Karrog 23165 on Fixated Rage 40416','0'),
+-- PLEASE RE-USE 1585 - 1586 classic>tbc>wotlk
 ('-1587','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0'),
 ('-1588','KILL THEM ALL!','0','1','0','23440/23441','0'),
 ('-1589','BURN IT DOWN!','0','1','0','23440/23441','0'),
