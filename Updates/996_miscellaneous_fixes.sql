@@ -387,7 +387,7 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `commen
 -- item 30579
 (1234, 8, 10623, 0, 'Quest ID 10623 Rewarded'),
 (1235, 9, 10623, 0, 'Quest ID 10623 Taken'),
-(1236, -2, 1233, 1234, '(Quest ID 10623 Rewarded OR Quest ID 10623 Taken)'),
+(1236, -2, 1234, 1235, '(Quest ID 10623 Rewarded OR Quest ID 10623 Taken)'),
 (1237, -3, 1236, 0, 'NOT ((Quest ID 10623 Rewarded OR Quest ID 10623 Taken))'),
 (1238, -1, 1237, 3, 'NOT (Quest ID 10623 Rewarded OR Quest ID 10623 Taken) AND Horde');
 
