@@ -17516,6 +17516,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1075601','10756','9','0','100','1','0','20','15000','18000','11','17276','4','1','0','0','0','0','0','0','0','0','Scalding Elemental - Cast Scald'),
 -- Boiling Elemental
 ('1075701','10757','9','0','100','1','0','5','12000','15000','11','11983','0','1','0','0','0','0','0','0','0','0','Boiling Elemental - Cast Steam Jet'),
+-- Grimtotem Stomper 10759
+('1075901','10759','13','0','100','1','8000','16000','0','0','11','13281','1','0','0','0','0','0','0','0','0','0','Grimtotem Stomper - Cast Earth Shock on Target Casting'),
+('1075902','10759','0','0','100','1','6000','12000','28000','30000','11','5605','0','0','0','0','0','0','0','0','0','0','Grimtotem Stomper - Cast Healing Ward'),
 -- Grimtotem Geomancer
 ('1076001','10760','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Grimtotem Geomancer - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1076002','10760','9','5','100','1','0','40','3400','4800','11','20811','1','0','0','0','0','0','0','0','0','0','Grimtotem Geomancer - Cast Fireball (Phase 1)'),
