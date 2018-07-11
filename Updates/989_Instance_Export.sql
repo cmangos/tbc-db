@@ -199,7 +199,6 @@ UPDATE creature_template SET UnitFlags=32832 WHERE entry=20857;
 -- -------------------------------------------------------------------------
 -- Arcatraz Warder (20859)
 UPDATE creature_template SET UnitFlags=32832 WHERE entry=20859;
-UPDATE spell_template SET MaxAffectedTargets=1 WHERE id=36327; -- Shoot Arcane Explosion Arrow
 -- is 36293 arcane shot OOC cast even doing anything?
 -- missing spells: Charged Arcane Shot (38808 H/36608 N)
 
