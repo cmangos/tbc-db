@@ -25489,6 +25489,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1068104','10681','0','0','100','3','10000','15000','6000','18000','11','11972','5','0','0','0','0','0','0','0','0','0','Summoned Blackhand Veteran - Shield Bash'),
 ('1068105','10681','1','0','100','3','10000','10000','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Summoned Blackhand Dreadweaver - Forced Despawn on Evade'),
 -- Rookery Hatcher (10683) - Handled in SD2
+-- Blackhand Dragon Handler 10742 - s.16637 for 10442,10447 maybe more, timers guessed
+-- ('1074201','10742','0','0','100','1','4000','8000','15000','20000','11','16637','0','0','0','0','0','0','0','0','0','0','Blackhand Dragon Handler - Cast Mend Dragon'),
 -- Finkle Einhorn
 ('1077601','10776','11','0','100','2','0','0','0','0','1','-1540','0','0','0','0','0','0','0','0','0','0','Finkle Einhorn - Say on Spawn'),
 -- Chromatic Elite Guard
