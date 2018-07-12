@@ -4,7 +4,8 @@ DELETE FROM spell_script_target WHERE entry IN(37142,37143,37147,37149,37150,322
 DELETE FROM spell_script_target WHERE entry IN(37469,37775);
 DELETE FROM spell_script_target WHERE entry IN(37465);
 
-INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) -- spells that should hit alliance pieces
+-- spells that should hit alliance pieces
+INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) VALUES
 (32228, 1, 17211, 0),	
 (32228, 1, 21160, 0),	
 (32228, 1, 21664, 0),	
@@ -84,7 +85,8 @@ INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) -- 
 (37502, 1, 21683, 0),	
 (37502, 1, 21684, 0);
 
-INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) -- spells that should hit horde pieces
+-- spells that should hit horde pieces
+INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) VALUES
 (32227, 1, 17469, 0),	
 (32227, 1, 21726, 0),	
 (32227, 1, 21747, 0),	
@@ -164,7 +166,8 @@ INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) -- 
 (37498, 1, 21750, 0),	
 (37498, 1, 21752, 0);
 
-INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) -- spells that should hit alliance pieces AA
+-- spells that should hit alliance pieces AA
+INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) VALUES
 (37469, 1, 17469, 0),	
 (37469, 1, 21726, 0),	
 (37469, 1, 21747, 0),	
@@ -178,7 +181,8 @@ INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) -- 
 (37775, 1, 21750, 0),	
 (37775, 1, 21752, 0);
 
-INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) -- spells that should hit horde pieces AA
+-- spells that should hit horde pieces AA
+INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) VALUES
 (37465, 1, 17469, 0),	
 (37465, 1, 21726, 0),	
 (37465, 1, 21747, 0),	
