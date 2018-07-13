@@ -25,4 +25,4 @@ you are making redistributable copies.
 
 CONTENT COPYRIGHT
 -----------------
-Game content is Copyright © 2004-2017 Blizzard Entertainment
+Game content is Copyright © 2004-2018 Blizzard Entertainment
