@@ -27,6 +27,7 @@ INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, positi
 
 -- Power Source Invisible Bunny
 UPDATE `creature_template` SET `InhabitType`=7 WHERE `Entry`=17984;
+DELETE FROM creature_addon WHERE guid IN(SELECT guid FROM creature WHERE id=17984);
 DELETE FROM creature WHERE id=17984;
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
 (152540,17984,530,1,0,0,9324.713,-7874.516,161.5673,5.568625,300,300,0,0,1000,0,0,0),

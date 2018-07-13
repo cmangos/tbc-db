@@ -40,7 +40,7 @@ INSERT INTO creature_movement_template (entry,point,position_x,position_y,positi
 -- Added scripts to make the NPC run and despawn after some time
 DELETE FROM dbscripts_on_creature_movement WHERE id=1353301;
 INSERT INTO `dbscripts_on_creature_movement` (id, delay, command, datalong, datalong2, data_flags, comments) VALUES
-(1353301, 0, 32, 1, 0, 8, 'Spewed Larva - pause WP movement'),
+(1353301, 0, 32, 1, 0, 0, 'Spewed Larva - pause WP movement'),
 (1353301, 1, 20, 1, 8, 8, 'Spewed Larva - movement changed to random'),
 (1353301, 30, 20, 2, 8, 8, 'Spewed Larva - movement changed to WP'),
 (1353301, 30, 18, 0, 0, 0, 'Spewed Larva - despawn self');

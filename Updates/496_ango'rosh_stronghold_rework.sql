@@ -6,6 +6,7 @@ UPDATE creature_template SET SpeedWalk=(2.5/2.5), SpeedRun=(8/7) WHERE entry IN(
 -- ---------------------------
 -- Spawns
 -- ---------------------------
+DELETE FROM creature_addon WHERE guid IN(SELECT guid FROM creature WHERE id IN(18121,18120,20444));
 DELETE FROM creature WHERE id IN(18121,18120,20444);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
 -- Ango'rosh Shadowmage

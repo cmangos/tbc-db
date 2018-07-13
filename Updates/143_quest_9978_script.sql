@@ -13,7 +13,7 @@ DELETE FROM conditions WHERE condition_entry IN (62,3167);
 DELETE FROM dbscripts_on_gossip WHERE id=7704;
 UPDATE creature_template SET NpcFlags=3 WHERE entry=18482; -- suppress DB error
 
-UPDATE `creature_linking` SET `flag`=1|128|512|8192|16384 WHERE `guid`=66606; -- FLAG_DESPAWN_ON_DESPAWN, FLAG_RESPAWN_ON_RESPAWN, FLAG_FOLLOW, FLAG_AGGRO_ON_AGGRO, FLAG_EVADE_ON_EVADE
+UPDATE `creature_linking` SET `flag`=1|128|512|8192 WHERE `guid`=66606; -- FLAG_AGGRO_ON_AGGRO, FLAG_RESPAWN_ON_RESPAWN, FLAG_FOLLOW, FLAG_DESPAWN_ON_DESPAWN
 UPDATE `creature` SET `spawntimesecs`=60 WHERE `id`=18482;
 
 -- Empoor 18482
