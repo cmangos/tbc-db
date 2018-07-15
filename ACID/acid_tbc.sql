@@ -17512,6 +17512,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pao'ka Swiftmountain 10427 - npc_paoka_swiftmountain
 -- Kanati Greycloud 10638 - npc_kanati
 -- Lakota Windsong 10646 - npc_lakota_windsong
+-- Galak Assassin 10720
+('1072001','10720','0','0','100','1','6500','14200','20500','31100','11','6533','1','32','0','0','0','0','0','0','0','0','Galak Assassin - Cast Net'),
 -- Scalding Elemental
 ('1075601','10756','9','0','100','1','0','20','15000','18000','11','17276','4','1','0','0','0','0','0','0','0','0','Scalding Elemental - Cast Scald'),
 -- Boiling Elemental
