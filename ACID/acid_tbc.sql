@@ -21271,7 +21271,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2061004','20610','8','0','100','0','35771','1','0','0','41','10000','0','0','47','7','0','0','22','1','0','0','Talbuk Doe - Set Stand State and Set Phase 1 and Delayed Despawn on Tag Subbued Talbuk Spellhit'),
 ('2061005','20610','8','0','100','0','35771','1','0','0','50','0','0','0','21','0','0','0','0','0','0','0','Talbuk Doe - Set React State and Prevent Combat Movement on Tag Subbued Talbuk Spellhit'),
 ('2061006','20610','0','0','100','0','1000','1000','0','0','1','-949','0','0','45','5','35','1','0','0','0','0','Talbuk Doe - Text Emote and Send AI Event Custom A on Aggro'),
-('2061007','20610','11','0','100','0','0','0','0','0','47','0','0','0','19','256','0','0','0','0','0','0','Talbuk Doe - Set Stand State and Remove UnitFlag on Spawn'),
+('2061007','20610','11','0','100','0','0','0','0','0','47','0','0','0','19','256','0','0','50','1','0','0','Talbuk Doe - Set Stand State, Remove UnitFlag, and Set React State on Spawn'),
 -- Shimmerwing Moth
 ('2061101','20611','0','0','100','1','9000','15000','16000','24000','11','36592','0','0','0','0','0','0','0','0','0','0','Shimmerwing Moth - Cast Shimmerwing Dust'),
 ('2061102','20611','0','0','100','1','3000','5000','11000','16000','11','32914','0','0','0','0','0','0','0','0','0','0','Shimmerwing Moth - Cast Wing Buffet'),
@@ -21325,7 +21325,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2077704','20777','8','0','100','0','35771','1','0','0','11','40347','6','2','11','14915','0','0','18','256','0','0','Talbuk Sire - Cast Talbuk Tagging Credit, Cast Self Visual - Sleep Until Cancelled (DND), and Set UnitFlag on Tag Subbued Talbuk Spellhit'),
 ('2077705','20777','8','0','100','0','35771','1','0','0','41','10000','0','0','47','7','0','0','22','1','0','0','Talbuk Sire - Set Stand State and Set Phase 1 and Delayed Despawn on Tag Subbued Talbuk Spellhit'),
 ('2077706','20777','8','0','100','0','35771','1','0','0','50','0','0','0','21','0','0','0','0','0','0','0','Talbuk Sire - Set React State and Prevent Combat Movement on Tag Subbued Talbuk Spellhit'),
-('2077707','20777','11','0','100','0','0','0','0','0','47','0','0','0','19','256','0','0','0','0','0','0','Talbuk Sire - Set Stand State and Remove UnitFlag on Spawn'),
+('2077707','20777','11','0','100','0','0','0','0','0','47','0','0','0','19','256','0','0','50','2','0','0','Talbuk Sire - Set Stand State, Remove UnitFlag, and Set React State on Spawn'),
 ('2077708','20777','30','0','100','0','5','20610','0','0','1','-950','0','0','55','6','0','0','0','0','0','0','Talbuk Sire - Text Emote and Attack Start on Receive AI Event Custom A'),
 -- Void Waste
 ('2077801','20778','0','0','100','1','2000','6000','7000','10000','11','36519','0','32','0','0','0','0','0','0','0','0','Void Waste - Cast Toxic Burst'),
