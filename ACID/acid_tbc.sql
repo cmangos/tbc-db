@@ -30685,7 +30685,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2304903','23049','0','13','100','3','12000','18000','12000','16000','11','18813','1','0','0','0','0','0','0','0','0','0','Shadowmoon Weapon Master - Cast Knock Away (Phase 1)'),
 ('2304904','23049','2','13','100','2','66','0','0','0','11','41101','0','0','11','41105','0','0','22','2','0','0','Shadowmoon Weapon Master - Cast Defensive Stance and Defensive Aura and Set Phase 2 at 66% HP (Phase 1)'),
 ('2304905','23049','0','11','100','3','7000','16000','21000','30000','11','41104','0','0','0','0','0','0','0','0','0','0','Shadowmoon Weapon Master - Cast Shield Wall (Phase 2)'),
-('2304906','23049','2','11','100','2','33','0','0','0','1','-378','0','0','11','41100','0','0','11','41107','0','0','Shadowmoon Weapon Master - Say and Cast Set Berserker Stance and Berseker Aura at 33% HP (Phase 2)'),
+('2304906','23049','2','11','100','2','33','0','0','0','0','0','0','0','11','41100','0','0','11','41107','0','0','Shadowmoon Weapon Master - Say and Cast Set Berserker Stance and Berseker Aura at 33% HP (Phase 2)'),
 ('2304907','23049','2','11','100','2','33','0','0','0','22','3','0','0','0','0','0','0','0','0','0','0','Shadowmoon Weapon Master - Set Phase 3 at 33% HP (Phase 2)'),
 ('2304908','23049','0','7','100','3','12000','15000','18000','23000','11','41097','0','0','0','0','0','0','0','0','0','0','Shadowmoon Weapon Master - Cast Whirlwind (Phase 3)'),
 -- Demon Fire
@@ -34816,7 +34816,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-375','%s\'s eyes glow red as he lights his dynamite and begins to cackle madly!','0','2','0','1222','0'),
 ('-376','[Orcish] Ogg kaz ko zugas kil mog Tov\'nokaz Kagg','0','0','0','Orc Common Text','0'),
 ('-377','[Orcish] Tago mog regas gi mog Tov\'nokaz Kagg','0','0','0','Orc Common Text','0'),
-('-378','Berserker stance! Attack them recklessly!','0','0','0','23049','0'),
+-- PLEASE RE-USE 378 classic>tbc>wotlk
 ('-379','Mine! You shall not take this place!','0','0','33','24960','0'),
 ('-380','Get away, this place is ours!','0','0','33','24966','0'),
 ('-381','ATTENTION!','0','0','0','25162','0'),
