@@ -23752,7 +23752,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shirrak the Dead Watcher (18371) - boss_shirrak
 -- Exarch Maladaar (18373) - boss_exarch_maladaar
 -- Focus Fire
-('1837401','18374','1','0','100','6','5000','5000','0','0','11','32301','0','0','0','0','0','0','0','0','0','0','Focus Fire - Cast Ping Shirrak on OOC Timer'),
+('1837401','18374','29','0','100','0','0','0','0','0','11','26262','0','0','11','32286','0','2','50','0','0','0','Focus Fire - Cast Birth and Focus Target Visual and react state passive'),
 -- Stolen Soul (18441) - mob_stolen_soul
 -- Avatar of the Martyred (4.3.4 Official Data - Normal/Heroic)
 ('1847801','18478','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Set Phase 1 on Aggro'),
