@@ -203,8 +203,8 @@ UPDATE creature_template SET ExtraFlags=ExtraFlags|0x00041000 WHERE entry IN (12
 -- half instance faction set to 1620, should be 16
 UPDATE creature_template SET FactionAlliance=16, FactionHorde=16 WHERE entry IN (20045,18805,18928,19514,19516,19551,19622,20031,20032,20033,20034,20035,20036,20037,20038,20039,20040,20041,20042,20043,20044,20046,20047,20048,20049,20050,20052,20060,20063,20064,18806,18925); 
 
--- Al'ar - fire immunity and far sight
-UPDATE creature_template SET SchoolImmuneMask=4, ExtraFlags=ExtraFlags|262144 WHERE entry=19514;
+-- Al'ar - fire immunity
+UPDATE creature_template SET SchoolImmuneMask=4 WHERE entry=19514;
 UPDATE creature_template SET ModelId1=16946,AIName='NullAI' WHERE entry=20602; -- Correct modelId and NullAI to prevent On Evade aura removal
 UPDATE creature_template SET SchoolImmuneMask=4 WHERE entry=19551; -- embers immune to fire damage
 
@@ -245,8 +245,6 @@ UPDATE creature_model_info SET bounding_radius=1.75,combat_reach=15 WHERE modeli
 DELETE FROM creature_equip_template WHERE entry=2123201;
 INSERT INTO creature_equip_template (entry, equipentry1, equipentry2, equipentry3) VALUES
 (2123201, 2028, 31805, 0);
-
-UPDATE `gameobject_template` SET `ExtraFlags`=262144 WHERE `entry` IN (184203,184204,184205); -- Add GAMEOBJECT_EXTRA_FLAG_FAR_VIEW to bridge objects
 
 DELETE FROM `creature_model_info` WHERE `modelid` IN (21101,20216,20748,20739,5286,1773,20671,391, 20672,5243,20662,20670,5293,20636,20560,20514,20638,20641,20637,20470,20212,20640,20635,20200,20639,20205,20201,20642,20812);
 INSERT INTO `creature_model_info` (`modelid`, `bounding_radius`, `combat_reach`, `gender`, `modelid_other_gender`) VALUES
