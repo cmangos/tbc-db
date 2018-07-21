@@ -1,15 +1,15 @@
 -- missing from public
 INSERT INTO gameobject_loot_template(entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES
-(2179,4532,100,0,1,1,0,'Trelane\'s Ember Agate'),
-(2177,4531,100,0,1,1,0,'Trelane\'s Orb'),
+-- (2179,4532,100,0,1,1,0,'Trelane\'s Ember Agate'),
+-- (2177,4531,100,0,1,1,0,'Trelane\'s Orb'),
 (21764,49000,2,0,-49000,1,0,'NPC LOOT (World Drop) - Darkmoon Cards (Ace Cards) - Heroic Dungeon Bosses Only'),
 (21762,49000,1,0,-49000,1,0,'NPC LOOT (World Drop) - Darkmoon Cards (Ace Cards) - Heroic Dungeon Bosses Only'),
-(18361,12004,1,1,-12004,1,0,''),
+-- (18361,12004,1,1,-12004,1,0,''),
 (21260,42002,100,0,-42002,1,0,'Solid Fel Iron and Bound Fel Iron Chests - Green and Blue Items'),
 (21260,42001,10,0,-42001,1,0,'Solid Fel Iron and Bound Fel Iron Chests - Gems'),
-(21260,42000,100,0,-42000,1,0,'Solid Fel Iron and Bound Fel Iron Chests - Potions and Scrolls'),
-(22070,0,4,2,-12004,2,0,''),
-(18361,0,4,2,-12004,2,0,'');
+(21260,42000,100,0,-42000,1,0,'Solid Fel Iron and Bound Fel Iron Chests - Potions and Scrolls');
+-- (22070,0,4,2,-12004,2,0,''),
+-- (18361,0,4,2,-12004,2,0,'');
 -- different chances
 UPDATE gameobject_loot_template SET ChanceOrQuestChance=100 WHERE entry IN(1570) and item IN(3706);
 UPDATE gameobject_loot_template SET ChanceOrQuestChance=100 WHERE entry IN(2178) and item IN(4530);
