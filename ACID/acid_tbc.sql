@@ -18007,6 +18007,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Glacier 10619
 -- Malyfous Darkhammer 10637
 -- Cobalt Whelp 10659
+('1065901','10659','0','0','100','33','3000','3000','15000','20000','11','13443','1','0','11','15089','1','0','0','0','0','0','Cobalt Whelp - Random Cast Rend or Frost Shock'),
 -- Cobalt Broodling 10660
 -- Spell Eater 10661
 ('1066101','10661','0','0','100','1','5000','7000','5000','15000','11','16340','1','0','0','0','0','0','0','0','0','0','Spell Eater - Cast Frost Breath'),
