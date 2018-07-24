@@ -31495,8 +31495,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2225003','22250','0','0','100','2','20000','20000','0','0','11','38652','0','7','37','0','0','0','0','0','0','0','Rancid Mushroom - Cast Spore Cloud and Die'),
 -- Mushrom Spell Effect
 ('2233501','22335','11','0','100','2','0','0','0','0','11','38730','0','0','0','0','0','0','0','0','0','0','Mushrom Spell Effect - Cast Refreshing Mist on Spawn'),
--- Colossus Lurker (22347) - NSR
--- Colossus Rager (22352) - NSR
+-- Colossus Lurker (22347)
+('2234701','22347','11','0','100','3','0','0','0','0','11','38931','0','0','0','0','0','0','0','0','0','0','Colossus Lurker - Cast Colossus Spawn Confuse on Spawn'),
+-- Colossus Rager (22352)
+('2235201','22352','11','0','100','3','0','0','0','0','11','38931','0','0','0','0','0','0','0','0','0','0','Colossus Rager - Cast Colossus Spawn Confuse on Spawn'),
 -- Serpentshrine Parasite (22379) - NSR
 -- Seer Olum (22820) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
