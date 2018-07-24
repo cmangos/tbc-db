@@ -18009,6 +18009,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cobalt Whelp 10659
 -- Cobalt Broodling 10660
 -- Spell Eater 10661
+('1066101','10661','0','0','100','1','5000','7000','5000','15000','11','16340','1','0','0','0','0','0','0','0','0','0','Spell Eater - Cast Frost Breath'),
 -- Spellmaw
 ('1066201','10662','1','0','100','0','1000','1000','0','0','11','34304','0','32','0','0','0','0','0','0','0','0','Spellmaw - Cast Damage Immunity: Arcane OOC'),
 ('1066202','10662','0','0','100','1','4000','8000','12000','16000','11','16099','1','0','0','0','0','0','0','0','0','0','Spellmaw - Cast Frost Breath'),
