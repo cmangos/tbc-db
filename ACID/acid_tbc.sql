@@ -17840,8 +17840,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1004003','10040','24','5','100','1','14120','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Gorishi Hive Guard - Set Phase 2 on Target Max Tunneler Acid Aura Stack (Phase 1)'),
 ('1004004','10040','28','3','100','1','14120','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Gorishi Hive Guard - Set Phase 1 on Target Missing Tunneler Acid Aura Stack (Phase 2)'),
 -- Gorishi Hive Queen 10041
-('1004101','10041','4','0','100','0','0','0','0','0','11','8601','0','34','0','0','0','0','0','0','0','0','Gorishi Hive Queen - Cast Slowing Poison on Aggro'),
-('1004102','10041','0','0','100','1','10000','22000','12700','24800','11','8137','1','32','0','0','0','0','0','0','0','0','Gorishi Hive Queen - Cast Silithid Pox'),
+('1004101','10041','11','0','100','0','0','0','0','0','54','-12','0','0','0','0','0','0','0','0','0','0','Gorishi Hive Queen - Emote on Spawn'),
+('1004102','10041','4','0','100','0','0','0','0','0','11','8601','0','34','0','0','0','0','0','0','0','0','Gorishi Hive Queen - Cast Slowing Poison on Aggro'),
+('1004103','10041','0','0','100','1','10000','22000','12700','24800','11','8137','1','32','0','0','0','0','0','0','0','0','Gorishi Hive Queen - Cast Silithid Pox'),
 -- Captured Felwood Ooze
 ('1029001','10290','29','0','100','0','1000','1000','0','0','45','5','40','0','41','2000','0','0','0','0','0','0','Captured Felwood Ooze - Send AI Event "A" and Delayed Despawn on Generic Timer (Q.4642)'),
 -- Blazing Invader
@@ -34479,7 +34480,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-8','Yiieeeee! Me run!','0','0','0','Common Kobold Text','0'),
 -- PLEASE RE-USE 9 - 10 classic>tbc>wotlk
 ('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','Klaven Mortwake 7053','0'),
--- PLEASE RE-USE 12 classic>tbc>wotlk
+('-12','%s is lured out into the open!','0','2','0','Gorishi Hive Queen 10041 on Spawn','0'),
 ('-13','%s\'s eyes glow red!','0','2','0','14720/18229','0'),
 ('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
 ('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
