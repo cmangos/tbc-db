@@ -2175,7 +2175,6 @@ UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask|33554432 WHER
 19389, -- Lair Brute
 18834, -- Olm the Summoner
 
-18829, -- Hellfire Warder
 17257, -- Magtheridon
 
 21221, -- Coilfang Beast-Tamer
