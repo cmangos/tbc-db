@@ -17967,6 +17967,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('746002','7460','0','0','100','1','1500','7800','10800','20500','11','3131','1','1','0','0','0','0','0','0','0','0','Ice Thistle Patriarch - Cast Frost Breath'),
 -- Hederine Initiate 7461
 -- Hederine Manastalker 7462
+('746201','7462','18','0','100','1','100','1','10000','20000','11','15980','1','0','0','0','0','0','0','0','0','0','Hederine Manastalker - Cast Mana Burn on Target Mana User'),
+('746202','7462','9','0','100','1','0','5','15000','25000','11','13738','1','0','0','0','0','0','0','0','0','0','Hederine Manastalker - Cast Rend'),
 -- Hederine Slayer 7463
 ('746301','7463','12','0','100','1','20','0','30000','30000','11','7160','1','0','0','0','0','0','0','0','0','0','Hederine Slayer - Cast Execute when Target HP at 20%'),
 ('746302','7463','9','0','100','33','0','5','8000','12000','11','15284','1','0','11','16856','1','0','0','0','0','0','Hederine Slayer - Random Cast Cleave or Mortal Strike'),
