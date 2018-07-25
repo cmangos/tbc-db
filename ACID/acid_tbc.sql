@@ -17968,6 +17968,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hederine Initiate 7461
 -- Hederine Manastalker 7462
 -- Hederine Slayer 7463
+('746301','7463','12','0','100','1','20','0','30000','30000','11','7160','1','0','0','0','0','0','0','0','0','0','Hederine Slayer - Cast Execute when Target HP at 20%'),
+('746302','7463','9','0','100','33','0','5','8000','12000','11','15284','1','0','11','16856','1','0','0','0','0','0','Hederine Slayer - Random Cast Cleave or Mortal Strike'),
 -- Suffering Highborne
 ('752301','7523','9','0','100','1','0','30','13000','20000','11','14868','4','32','0','0','0','0','0','0','0','0','Suffering Highborne - Cast Curse of Agony'),
 -- Anguished Highborne
