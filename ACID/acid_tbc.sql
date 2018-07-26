@@ -27295,6 +27295,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1659414','16594','2','0','100','6','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Shadowmoon Acolyte - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('1659415','16594','2','7','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowmoon Acolyte - Flee at 15% HP (Phase 3)'),
 ('1659416','16594','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte - Set Phase 0 on Evade'),
+('1659417','16594','30','0','100','7','7','16700','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte - Bow Emote on Receive AI Event C'),
+('1659418','16594','30','0','100','7','8','16700','0','0','5','71','0','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte - Cheer Emote on Receive AI Event D'),
+('1659419','16594','6','0','50','6','0','0','0','0','45','6','50','0','5','36','0','0','0','0','0','0','Shadowmoon Acolyte - Send AI Event B on Death'),
 -- Shattered Hand Reaver
 ('1669901','16699','9','0','100','7','0','5','5000','9000','11','15496','1','0','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Cast Cleave'),
 ('1669902','16699','0','0','100','7','8000','12000','9000','13000','11','30471','1','1','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Cast Uppercut'),
@@ -27302,6 +27305,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shattered Hand Legionnaire
 ('1670001','16700','2','0','100','6','30','0','0','0','11','30485','0','0','0','0','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Enrage on 30% HP'),
 ('1670002','16700','13','0','100','7','15000','15000','0','0','11','15615','1','0','0','0','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Pummel on Target Casting'),
+('1670003','16700','30','0','100','7','6','17420','0','0','11','30485','0','0','1','-1606','0','0','0','0','0','0','Shattered Hand Legionnaire - Say and Cast Enrage on Receive AI Event B'),
 -- Shattered Hand Sharpshooter
 ('1670401','16704','4','0','100','6','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Shattered Hand Sharpshooter - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1670402','16704','9','0','100','3','5','30','2300','5000','11','15620','1','0','40','2','0','0','0','0','0','0','Shattered Hand Sharpshooter (Normal) - Cast Shoot and Set Ranged Weapon Model'),
@@ -27327,6 +27331,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1742001','17420','9','0','100','3','0','5','12000','16000','11','30474','1','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen (Normal) - Cast Bloodthirst'),
 ('1742002','17420','9','0','100','5','0','5','10000','12000','11','35949','1','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen (Heroic) - Cast Bloodthirst'),
 ('1742003','17420','2','0','100','7','30','0','120000','120000','11','30485','0','1','1','-106','0','0','0','0','0','0','Shattered Hand Heathen - Cast Enrage at 30% HP'),
+('1742004','17420','30','0','100','7','5','16700','0','0','4','1319','0','0','5','36','0','0','0','0','0','0','Shattered Hand Heathen - Emote and Play Sound on Receive AI Event A'),
+('1742005','17420','6','0','50','6','0','0','0','0','45','6','50','0','5','36','0','0','0','0','0','0','Shattered Hand Heathen - Send AI Event B on Death'),
+('1742006','17420','30','0','100','7','7','16700','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen - Bow Emote on Receive AI Event C'),
+('1742007','17420','30','0','100','7','8','16700','0','0','5','71','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen - Cheer Emote on Receive AI Event D'),
 -- Shattered Hand Archer
 ('1742701','17427','4','0','100','6','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Shattered Hand Archer - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('1742702','17427','9','0','100','3','5','30','2300','5000','11','16100','1','0','40','2','0','0','0','0','0','0','Shattered Hand Archer (Normal) - Cast Shoot and Set Ranged Weapon Model'),
@@ -27404,6 +27412,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1769412','17694','2','0','100','6','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Shadowmoon Darkcaster - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('1769413','17694','2','7','100','6','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowmoon Darkcaster - Flee at 15% HP (Phase 3)'),
 ('1769414','17694','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster - Set Phase 0 on Evade'),
+('1769415','17694','30','0','100','7','7','16700','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster - Bow Emote on Receive AI Event C'),
+('1769416','17694','30','0','100','7','8','16700','0','0','5','71','0','0','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster - Cheer Emote on Receive AI Event D'),
+('1769417','17694','6','0','50','6','0','0','0','0','45','6','50','0','5','36','0','0','0','0','0','0','Shadowmoon Darkcaster - Send AI Event B on Death'),
 -- Shattered Hand Assassin
 ('1769501','17695','1','0','100','6','1000','1000','0','0','11','30991','0','32','0','0','0','0','0','0','0','0','Shattered Hand Assassin - Cast Stealth OOC'),
 ('1769502','17695','33','0','100','7','0','0','4500','6500','11','30992','1','0','0','0','0','0','0','0','0','0','Shattered Hand Assassin - Cast Backstab on Facing Target Back'),
@@ -35940,7 +35951,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1602','Ew, boys are gross!','0','0','0','Julie Honeywell 18656','0'),
 ('-1603','Come any closer, and I\'ll scream.','0','0','0','Wanton Hostess 16459','0'),
 ('-1604','Shhh... I have a little secret I\'ve been keeping.','0','0','0','Night Mistress 16460','0'),
-('-1605','I\'ve been very, very naughty...','0','0','0','Concubine 16461','0');
+('-1605','I\'ve been very, very naughty...','0','0','0','Concubine 16461','0'),
+('-1606','%s goes into a rage after seeing a friend fall in battle!','0','2','0','16700','0');
 
 
 
