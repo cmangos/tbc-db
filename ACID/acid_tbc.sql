@@ -24113,7 +24113,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sethekk Spirit (4.3.4 Official Data - Normal/Heroic)
 ('1870301','18703','11','0','100','6','0','0','0','0','11','24051','0','1','0','0','0','0','0','0','0','0','Sethekk Spirit - Cast Spirit Burst on Spawn'),
 -- Lakka (18956) - GOSSIP and DB SCRIPT
--- Syth Fire Elemental (4.3.4 Official Data - Normal/Heroic)
+-- Syth Fire Elemental 19203 (4.3.4 Official Data - Normal/Heroic)
 ('1920301','19203','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Syth Fire Elemental - Set Phase 1 on Aggro'),
 ('1920302','19203','0','5','100','3','2400','9700','8400','18100','11','33526','1','0','0','0','0','0','0','0','0','0','Syth Fire Elemental (Normal) - Cast Flame Buffet (Phase 1)'),
 ('1920303','19203','0','5','100','5','1200','3600','6000','7200','11','38141','1','0','0','0','0','0','0','0','0','0','Syth Fire Elemental (Heroic) - Cast Flame Buffet (Phase 1)'),
@@ -24121,8 +24121,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1920305','19203','24','5','100','5','38141','5','3000','3000','22','2','0','0','0','0','0','0','0','0','0','0','Syth Fire Elemental (Heroic) - Set Phase 2 on Target Max Flame Buffet Aura Stack (Phase 1)'),
 ('1920306','19203','28','3','100','3','33526','1','3000','3000','22','1','0','0','0','0','0','0','0','0','0','0','Syth Fire Elemental (Normal) - Set Phase 1 on Target Missing Flame Buffet Aura Stack (Phase 2)'),
 ('1920307','19203','28','3','100','5','38141','1','3000','3000','22','1','0','0','0','0','0','0','0','0','0','0','Syth Fire Elemental (Heroic) - Set Phase 1 on Target Missing Flame Buffet Aura Stack (Phase 2)'),
-('1920308','19203','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Syth Fire Elemental - Set Phase 0 on Evade'),
--- Syth Frost Elemental (4.3.4 Official Data - Normal/Heroic)
+('1920308','19203','7','0','100','6','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Fire Elemental - Despawn on Evade'),
+-- Syth Frost Elemental 19204 (4.3.4 Official Data - Normal/Heroic)
 ('1920401','19204','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Syth Frost Elemental - Set Phase 1 on Aggro'),
 ('1920402','19204','0','5','100','3','1600','7600','8400','18100','11','33528','1','0','0','0','0','0','0','0','0','0','Syth Frost Elemental (Normal) - Cast Frost Buffet (Phase 1)'),
 ('1920403','19204','0','5','100','5','1200','3600','6000','7200','11','38142','1','0','0','0','0','0','0','0','0','0','Syth Frost Elemental (Heroic) - Cast Frost Buffet (Phase 1)'),
@@ -24130,8 +24130,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1920405','19204','24','5','100','5','38142','5','3000','3000','22','2','0','0','0','0','0','0','0','0','0','0','Syth Frost Elemental (Heroic) - Set Phase 2 on Target Max Frost Buffet Aura Stack (Phase 1)'),
 ('1920406','19204','28','3','100','3','33528','1','3000','3000','22','1','0','0','0','0','0','0','0','0','0','0','Syth Frost Elemental (Normal) - Set Phase 1 on Target Missing Frost Buffet Aura Stack (Phase 2)'),
 ('1920407','19204','28','3','100','5','38142','1','3000','3000','22','1','0','0','0','0','0','0','0','0','0','0','Syth Frost Elemental (Heroic) - Set Phase 1 on Target Missing Frost Buffet Aura Stack (Phase 2)'),
-('1920408','19204','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Syth Frost Elemental - Set Phase 0 on Evade'),
--- Syth Arcane Elemental (4.3.4 Official Data - Normal/Heroic)
+('1920408','19204','7','0','100','6','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Frost Elemental - Despawn on Evade'),
+-- Syth Arcane Elemental 19205 (4.3.4 Official Data - Normal/Heroic)
 ('1920501','19205','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental - Set Phase 1 on Aggro'),
 ('1920502','19205','0','5','100','3','1600','7600','8400','18100','11','33527','1','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental (Normal) - Cast Arcane Buffet (Phase 1)'),
 ('1920503','19205','0','5','100','5','1200','3600','6000','7200','11','38138','1','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental (Heroic) - Cast Arcane Buffet (Phase 1)'),
@@ -24139,8 +24139,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1920505','19205','24','5','100','5','38138','5','3000','3000','22','2','0','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental (Heroic) - Set Phase 2 on Target Max Arcane Buffet Aura Stack (Phase 1)'),
 ('1920506','19205','28','3','100','3','33527','1','3000','3000','22','1','0','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental (Normal) - Set Phase 1 on Target Missing Arcane Buffet Aura Stack (Phase 2)'),
 ('1920507','19205','28','3','100','5','38138','1','3000','3000','22','1','0','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental (Heroic) - Set Phase 1 on Target Missing Arcane Buffet Aura Stack (Phase 2)'),
-('1920508','19205','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental - Set Phase 0 on Evade'),
--- Syth Shadow Elemental (4.3.4 Official Data - Normal/Heroic)
+('1920508','19205','7','0','100','6','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Arcane Elemental - Despawn on Evade'),
+-- Syth Shadow Elemental 19206 (4.3.4 Official Data - Normal/Heroic)
 ('1920601','19206','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental - Set Phase 1 on Aggro'),
 ('1920602','19206','0','5','100','3','1600','7600','8400','18100','11','33529','1','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental (Normal) - Cast Shadow Buffet (Phase 1)'),
 ('1920603','19206','0','5','100','5','1200','3600','6000','7200','11','38143','1','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental (Heroic) - Cast Shadow Buffet (Phase 1)'),
@@ -24148,7 +24148,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1920605','19206','24','5','100','5','38143','5','3000','3000','22','2','0','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental (Heroic) - Set Phase 2 on Target Max Shadow Buffet Aura Stack (Phase 1)'),
 ('1920606','19206','28','3','100','3','33529','1','3000','3000','22','1','0','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental (Normal) - Set Phase 1 on Target Missing Shadow Buffet Aura Stack (Phase 2)'),
 ('1920607','19206','28','3','100','5','38143','1','3000','3000','22','1','0','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental (Heroic) - Set Phase 1 on Target Missing Shadow Buffet Aura Stack (Phase 2)'),
-('1920608','19206','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental - Set Phase 0 on Evade'),
+('1920608','19206','7','0','100','6','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Syth Shadow Elemental - Despawn on Evade'),
 -- Cobalt Serpent (4.3.4 Official Data - Normal/Heroic)
 ('1942801','19428','0','0','100','3','4800','14500','13300','22900','11','17503','1','0','0','0','0','0','0','0','0','0','Cobalt Serpent (Normal) - Cast Frostbolt'),
 ('1942802','19428','0','0','100','5','4800','14500','13300','22900','11','38238','1','0','0','0','0','0','0','0','0','0','Cobalt Serpent (Heroic) - Cast Frostbolt'),
