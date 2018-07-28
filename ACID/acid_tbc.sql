@@ -20925,7 +20925,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1965709','19657','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Summoner Kanthin - Set Phase 0 on Evade'),
 -- Nether Anomaly (19686) - NSR
 -- N. D. Meancamp (19690) - NSR
--- Boom Bot (19692) - NSR
+-- Boom Bot 19692 - Suicide 7, Boom 35132
+('1969201','19692','11','0','100','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Boom Bot - Set ReactState Passive on Spawn'),
 -- Master Daellis Dawnstrike
 ('1970501','19705','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Master Daellis Dawnstrike - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('1970502','19705','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Master Daellis Dawnstrike - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
@@ -21142,8 +21143,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2024812','20248','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Sunfury Nethermancer - Set Phase 0 on Evade'),
 -- Vixton Pinchwhistle (20278) - NSR
 -- Drijya (20281) - npc_drijya
--- Dr. Boom
-('2028401','20284','9','0','100','1','0','15','7000','13000','11','35276','1','0','0','0','0','0','0','0','0','0','Dr. Boom - Cast Throw Dynamite'),
+-- Dr. Boom 20284 - ss.35134 Boom Bot Rotation
+('2028401','20284','11','0','100','0','0','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','Dr. Boom - Cast Boom Bot Rotation and Stop Combat Movement on Spawn'), -- '11','35134','0','32'
+('2028402','20284','9','0','100','1','0','15','7000','13000','11','35276','1','0','0','0','0','0','0','0','0','0','Dr. Boom - Cast Throw Dynamite'),
 -- Gan'arg Warp-Tinker
 ('2028501','20285','9','0','100','1','0','5','11000','15000','11','36208','1','0','0','0','0','0','0','0','0','0','Gan\'arg Warp-Tinker - Cast Steal Weapon'),
 ('2028502','20285','0','0','100','1','6000','11000','9000','14000','11','36846','4','0','0','0','0','0','0','0','0','0','Gan\'arg Warp-Tinker - Cast Mana Bomb'),
