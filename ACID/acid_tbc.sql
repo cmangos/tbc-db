@@ -17939,6 +17939,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chillwind Chimaera
 ('744801','7448','0','0','100','1','8000','13000','12000','15000','11','15797','4','1','0','0','0','0','0','0','0','0','Chillwind Chimaera - Cast Lightning Breath'),
 -- Chillwind Ravager 7449
+('744901','7449','0','0','75','1','5000','15000','30000','45000','11','3132','1','0','0','0','0','0','0','0','0','0','Chillwind Ravager - Cast Chilling Breath'), -- Timer & SpellId guessed by bestiary
+('744902','7449','2','0','100','0','25','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Chillwind Ravager - Cast Enrage at 25% HP'),
 -- Ragged Owlbeast
 ('745001','7450','9','0','100','1','0','5','3000','6000','11','15848','1','32','0','0','0','0','0','0','0','0','Ragged Owlbeast - Cast Festering Rash'),
 -- Raging Owlbeast
