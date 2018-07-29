@@ -17510,6 +17510,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('431701','4317','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Nyse - Spawn Enraged Wyverns and Yell on Aggro'),
 -- Achellios the Banished 5933
 ('593301','5933','4','0','100','0','0','0','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Achellios the Banished - Cast Battle Shout on Aggro'),
+-- Vile Sting 5937
+('593701','5937','28','0','100','1','8257','3','25000','35000','11','8257','1','0','0','0','0','0','0','0','0','0','Vile Sting - Cast Venom Sting on Target Missing Aura Stack'),
 -- "Plucky" Johnson 6626 - npc_plucky_johnson
 -- Galak Flame Guard 7404
 ('740401','7404','0','0','100','1','2000','4000','27000','37000','11','13730','0','0','0','0','0','0','0','0','0','0','Galak Flame Guard - Cast Demoralizing Shout'),
