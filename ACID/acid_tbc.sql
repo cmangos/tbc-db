@@ -17263,6 +17263,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Twiggy Flathead 6248 - npc_twiggy_flathead
 -- Summoned Felhunter
 ('626801','6268','0','0','100','1','5000','11000','11000','17000','11','2691','1','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Mana Burn'),
+-- Tazan 6494
+('649401','6494','9','0','80','1','0','5','6500','10800','11','6253','1','0','0','0','0','0','0','0','0','0','Tazan - Cast Backhand'),
 -- Polly
 ('716701','7167','11','0','100','0','0','0','0','0','1','-628','0','0','0','0','0','0','0','0','0','0','Polly - Say on Spawn'),
 -- Polly
