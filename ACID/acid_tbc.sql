@@ -12902,6 +12902,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('588401','5884','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Mai\'ah - Flee at 15% HP'),
 -- Canaga Earthcaller
 ('588701','5887','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Canaga Earthcaller - Flee at 15% HP'),
+-- Redrock Earth Spirit 5890 - NSR
 -- Minor Manifestation of Earth (5891) - NSR
 -- Minor Manifestation of Fire (5893) - NSR
 -- Telf Joolam
