@@ -10836,7 +10836,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blimo Gadgetspring (12957) - NSR
 -- Duke Hydraxis (13278) - NSR
 -- Hydraxian Honor Guard (13322) - NSR
--- Scalebeard (13896) - NSR
+-- Scalebeard 13896
+('1389601','13896','12','0','100','1','20','0','10000','14000','11','7938','1','0','0','0','0','0','0','0','0','0','Scalebeard - Cast Fatal Bite at Target 20% HP'),
 -- Brinna Valanaar (14301) - NSR
 -- Thundering Invader
 ('1446201','14462','9','0','100','1','0','5','12000','16000','11','11428','1','0','0','0','0','0','0','0','0','0','Thundering Invader - Cast Knockdown'),
