@@ -33070,7 +33070,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Amani'shi Medicine Man
 ('2358101','23581','2','0','100','3','30','0','30000','30000','11','42477','0','0','0','0','0','0','0','0','0','0','Amani\'shi Medicine Man - Cast Chain Heal'),
 ('2358102','23581','2','0','100','3','40','0','50000','50000','11','42478','0','1','0','0','0','0','0','0','0','0','Amani\'shi Medicine Man - Cast Protective Ward'),
-('2358103','23581','0','0','100','3','7000','7000','25000','25000','11','42376','0','0','0','0','0','0','0','0','0','0','Amani\'shi Medicine Man - Cast Powerful Healing Ward'),
+('2358103','23581','0','0','100','3','7000','7000','25000','25000','11','42376','0','0','0','0','0','0','0','0','0','0','Amani\'shi Medicine Man - Cast Healing Ward'),
 ('2358104','23581','0','0','100','3','1000','1000','16000','16000','11','45075','1','0','0','0','0','0','0','0','0','0','Amani\'shi Medicine Man - Cast Lightning Bolt'),
 -- Amani'shi Tribesman
 ('2358201','23582','0','0','70','3','0','0','13000','13000','11','42495','0','0','0','0','0','0','0','0','0','0','Amani\'shi Tribesman - Cast Cyclone Strike'),
@@ -33094,6 +33094,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2359702','23597','0','0','100','3','5000','5000','12000','12000','11','43246','1','0','0','0','0','0','0','0','0','0','Amani\'shi Guardian - Cast Rend'),
 -- Amani Dragonhawk Hatchling
 ('2359801','23598','0','0','100','3','7000','9000','7000','9000','11','43299','4','0','0','0','0','0','0','0','0','0','Amani Dragonhawk Hatchling - Cast Flame Buffet'),
+-- Amani Healing Ward 23757 - TotemAI
 -- Amani'shi Trainer
 ('2377401','23774','4','0','15','2','0','0','0','0','54','0','0','10044','0','0','0','0','0','0','0','0','Amani\'shi Trainer - Random Say on Aggro'),
 ('2377402','23774','0','0','100','3','4000','8000','7000','14000','11','20989','4','0','0','0','0','0','0','0','0','0','Amani\'shi Trainer - Cast Sleep'),
@@ -33106,6 +33107,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2381501','23815','10','0','100','3','1','20','2000','2000','33','23815','6','0','0','0','0','0','0','0','0','0','Lynx God Invisman - Killed Moster at LOS'),
 -- Dragonhawk Egg 23817 - npc_dragonhawk_egg
 -- Amani'shi Hatcher 23818 - npc_amanishi_hatcher
+-- Amani Protective Ward 23822 - TotemAI
 -- Amani Dragonhawk
 ('2383401','23834','0','0','100','3','9000','9000','27500','27500','11','43294','1','0','0','0','0','0','0','0','0','0','Amani Dragonhawk - Cast Flame Breath'),
 -- Amani'shi Savage
@@ -33314,6 +33316,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jin'do the Hexxer 11380 - boss_jindo
 -- Bloodlord Mandokir 11382 - boss_mandokir
 -- Witherbark Speaker 11388 - NSR
+-- Bloodscalp Speaker 11389
+-- Skullsplitter Speaker 11390
 -- Vilebranch Speaker
 ('1139101','11391','0','0','100','3','2000','2500','30500','31500','11','13730','0','0','0','0','0','0','0','0','0','0','Vilebranch Speaker - Demoralizing Shout'),
 ('1139102','11391','0','0','100','3','3000','3500','5500','11500','11','15284','1','0','0','0','0','0','0','0','0','0','Vilebranch Speaker - Cast Cleave'),
