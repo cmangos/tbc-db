@@ -17509,6 +17509,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Achellios the Banished 5933
 ('593301','5933','4','0','100','0','0','0','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Achellios the Banished - Cast Battle Shout on Aggro'),
 -- "Plucky" Johnson 6626 - npc_plucky_johnson
+-- Galak Flame Guard 7404
+('740401','7404','0','0','100','1','2000','4000','27000','37000','11','13730','0','0','0','0','0','0','0','0','0','0','Galak Flame Guard - Cast Demoralizing Shout'),
 -- Pao'ka Swiftmountain 10427 - npc_paoka_swiftmountain
 -- Kanati Greycloud 10638 - npc_kanati
 -- Lakota Windsong 10646 - npc_lakota_windsong
