@@ -17228,6 +17228,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('584105','5841','0','0','100','1','1000','3000','180000','190000','11','7164','0','1','0','0','0','0','0','0','0','0','Rocklance - Cast Defensive Stance'),
 ('584106','5841','0','0','100','1','12000','17000','12000','17000','11','15496','1','1','0','0','0','0','0','0','0','0','Rocklance - Cast Cleave'),
 ('584107','5841','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Rocklance - Set Phase 0 on Evade'),
+-- Takk the Leaper 5842
+('584201','5842','1','0','100','0','1000','1000','0','0','11','2457','0','0','0','0','0','0','0','0','0','0','Takk the Leaper - Cast Battle Stance OOC'),
+('584202','5842','4','0','100','0','0','0','0','0','11','32021','1','0','0','0','0','0','0','0','0','0','Takk the Leaper - Cast Rushing Charge'),
 -- Heggin Stonewhisker
 ('584701','5847','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Heggin Stonewhisker - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('584702','5847','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Heggin Stonewhisker - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
@@ -17249,7 +17252,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('584907','5849','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Digger Flameforge - Flee at 15% HP (Phase 2)'),
 ('584908','5849','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Digger Flameforge - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Captain Gerogg Hammertoe 5851
-('585101','5851','0','0','100','0','1000','1000','0','0','11','3418','0','0','0','0','0','0','0','0','0','0','Captain Gerogg Hammertoe - Cast Improved Blocking OOC'),
+('585101','5851','1','0','100','0','1000','1000','0','0','11','3418','0','0','0','0','0','0','0','0','0','0','Captain Gerogg Hammertoe - Cast Improved Blocking OOC'),
 ('585102','5851','0','0','100','1','1200','5900','180000','180000','11','7164','0','0','0','0','0','0','0','0','0','0','Captain Gerogg Hammertoe - Cast Defensive Stance'),
 ('585103','5851','2','0','100','1','30','0','30000','40000','11','871','0','0','0','0','0','0','0','0','0','0','Captain Gerogg Hammertoe - Cast Shield Wall at 30% HP'),
 ('585104','5851','13','0','100','1','11900','13700','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Captain Gerogg Hammertoe - Cast Shield Bash on Target Casting'),
