@@ -17936,6 +17936,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('744601','7446','1','0','100','0','1000','1000','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Rabid Shardtooth - Cast Thrash OOC'),
 ('744602','7446','9','0','80','1','0','5','5000','8000','11','3150','1','32','0','0','0','0','0','0','0','0','Rabid Shardtooth - Cast Rabies'),
 -- Fledgling Chillwind 7447
+('744701','7447','28','0','100','1','16552','3','7000','10000','11','16552','1','0','0','0','0','0','0','0','0','0','Fledgling Chillwind - Cast Venom Spit on Target Missing Aura Stack'),
 -- Chillwind Chimaera
 ('744801','7448','0','0','100','1','8000','13000','12000','15000','11','15797','4','1','0','0','0','0','0','0','0','0','Chillwind Chimaera - Cast Lightning Breath'),
 -- Chillwind Ravager 7449
