@@ -26641,7 +26641,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1147605','11476','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Skeletal Highborne - Set Phase 0 on Evade'),
 -- Rotting Highborne (11477) - NSR
 -- Arcane Aberration (11480) - WILL BE SCRIPTED IN C++
--- Mana Remnant (11483) - WILL BE SCRIPTED IN C++
+-- Mana Remnant 11483 - SHOULD BE SCRIPTED IN C++
+('1148301','11483','0','0','100','0','1000','1000','0','0','11','14514','0','0','0','0','0','0','0','0','0','0','Mana Remnant - Cast Blink on Aggro'),
+('1148302','11483','0','0','100','1','3000','6000','8000','11000','11','15659','1','0','0','0','0','0','0','0','0','0','Mana Remnant - Cast Chain Lightning'),
 -- Residual Monstrosity (3.3.3 Official Data)
 ('1148401','11484','4','0','100','2','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Residual Monstrosity - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1148402','11484','9','5','100','3','0','40','2300','4600','11','15230','4','0','0','0','0','0','0','0','0','0','Residual Monstrosity - Cast Arcane Bolt (Phase 1)'),
