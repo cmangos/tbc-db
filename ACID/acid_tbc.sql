@@ -15171,7 +15171,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jes'rimon 8659
 -- Auctioneer Thathung 8673
 -- Auctioneer Wabang 8724
--- Emerald Dragon Whelp 8776
 -- Rilli Greasygob 9317
 -- Furmund 9550
 -- Auctioneer Grimful 9856
@@ -17872,7 +17871,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Captured Felwood Ooze
 ('1029001','10290','29','0','100','0','1000','1000','0','0','45','5','40','0','41','2000','0','0','0','0','0','0','Captured Felwood Ooze - Send AI Event "A" and Delayed Despawn on Generic Timer (Q.4642)'),
 -- Gryfe <Flight Master> 10583
-('1058301','10583','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','1','-548','0','0','Gryfe - Spawn Enraged Wyvern and Enraged Gryphon and Yell on Aggro'),
+('1058301','10583','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Gryfe - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 -- Blazing Invader
 ('1446001','14460','9','0','100','1','0','8','11000','14000','11','23113','0','1','0','0','0','0','0','0','0','0','Blazing Invader - Cast Blast Wave'),
 -- Baron Charr
@@ -34148,6 +34147,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Battle Chicken 8836
 ('883601','8836','0','0','70','1','5000','10000','15000','20000','11','13168','0','0','0','0','0','0','0','0','0','0','Battle Chicken - Cast Chicken Fury'),
 ('883602','8836','0','2','18','1','8000','8000','8000','8000','11','23060','0','0','22','1','0','0','0','0','0','0','Battle Chicken - Cast Battle Squawk and Set Phase 1'),
+-- Emerald Dragon Whelp 8776 - CasterMode?
+('877601','8776','0','0','100','1','0','0','5000','5000','11','9591','1','0','0','0','0','0','0','0','0','0','Emerald Dragon Whelp - Cast Acid Spit'),
 -- Enraged Wyvern
 ('929701','9297','1','0','100','0','1000','1000','0','0','11','7276','0','32','0','0','0','0','0','0','0','0','Enraged Wyvern - Cast Poison Proc OOC'),
 -- Enraged Gryphon
