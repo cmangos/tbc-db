@@ -710,8 +710,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnmask`, `position_x`, `posit
 DELETE FROM `game_event_gameobject` WHERE `guid` BETWEEN 190322 AND 190325;
 INSERT INTO game_event_gameobject (`guid`, `event`) VALUES
 (190322, 19),
-(190323, 18),
-(190324, 20),
+(190323, 20),
+(190324, 18),
 (190325, 21);
 
 -- Origrimmar NPC's
