@@ -5621,7 +5621,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('586211','5862','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Twilight Geomancer - Set Phase 0 on Evade'),
 -- Spirit Healer (6491) - NSR
 -- Sarah Tanner (7868) - npc_prof_leather
--- Rekk'tilac (8277) - NSR
+-- Rekk'tilac 8277
+('827701','8277','1','0','100','0','1000','1000','0','0','11','10022','0','32','0','0','0','0','0','0','0','0','Rekk\'tilac - Cast Deadly Poison OOC'),
 -- Smoldar
 ('827801','8278','9','0','100','1','0','5','17000','21000','11','5213','1','0','0','0','0','0','0','0','0','0','Smoldar - Cast Molten Metal'),
 -- Faulty War Golem (8279) - NSR
