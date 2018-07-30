@@ -1035,7 +1035,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('904406','9044','0','0','100','3','7000','12000','10000','16000','11','14897','1','1','0','0','0','0','0','0','0','0','Scarshield Sentry - Cast Slowing Poison'),
 ('904407','9044','7','0','100','2','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Scarshield Sentry - Set Melee Weapon Model on Evade'),
 -- Scarshield Legionnaire (9097) - ALREADY SCRIPTED IN BLACKROCK SPIRE
--- Rookery Whelp (10161) - NSR
 -- Lava Spawn (12265) - ALREADY SCRIPTED IN MOLTEN CORE
 
 
@@ -25403,6 +25402,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1008301','10083','0','0','100','3','3700','24100','6000','18300','11','15285','1','0','0','0','0','0','0','0','0','0','Rage Talon Flamescale - Fireball Volley'),
 ('1008302','10083','0','0','100','3','7400','15100','10800','22100','11','12470','0','0','0','0','0','0','0','0','0','0','Rage Talon Flamescale - Fire Nova'),
 ('1008303','10083','0','0','100','3','4000','14900','22800','32100','11','16102','4','0','0','0','0','0','0','0','0','0','Rage Talon Flamescale - Flamestrike'),
+-- Rookery Whelp 10161
+('1016101','10161','29','0','100','0','500','500','0','0','11','15750','0','0','0','0','0','0','0','0','0','0','Rookery Whelp - Cast Rookery Whelp Spawn-in Spell on Generic Timer'),
 -- Halycon (SD2 Backport)
 ('1022001','10220','1','0','100','0','1000','1000','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Halycon - Cast Thrash OOC'),
 ('1022002','10220','0','0','100','1','8000','10000','12000','14000','11','13738','1','0','0','0','0','0','0','0','0','0','Halycon - Cast Rend'),
@@ -25477,8 +25478,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spire Spider
 ('1037401','10374','0','0','100','3','15000','15000','15000','15000','11','16104','1','0','0','0','0','0','0','0','0','0','Spire Spider - Crystallize'),
 ('1037402','10374','6','0','100','2','0','0','0','0','11','16103','0','2','0','0','0','0','0','0','0','0','Spire Spider - Cast Summon Spire Spiderling on Death'),
--- Spire Spiderling 10375 NSR
--- Crystal Fang
+-- Spire Spiderling 10375 NSR - manual faster despawn as serverside summoning spell with correct duration by Crystal Fang 10376 is missing
+-- Crystal Fang 10376
 ('1037601','10376','0','0','100','3','5000','10000','5000','10000','12','10375','4','60000','0','0','0','0','0','0','0','0','Crystal Fang - Spawn Spire Spiderling'),
 -- Warchief Rend Blackhand (SD2 Backport)
 ('1042901','10429','0','0','100','3','20000','20000','18000','18000','11','13736','0','0','0','0','0','0','0','0','0','0','Warchief Rend Blackhand - Cast Whirlwind'),
