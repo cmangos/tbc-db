@@ -10710,7 +10710,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lingering Highborne
 ('786401','7864','9','0','100','1','0','30','9000','18000','11','11963','4','32','0','0','0','0','0','0','0','0','Lingering Highborne - Cast Enfeeble'),
 -- Peter Galen (7866) - npc_prof_leather
--- Spitelash Battlemaster (7885) - NSR
+-- Spitelash Battlemaster 7885
+('788501','7885','0','0','100','1','0','3000','16000','24000','11','12545','1','0','0','0','0','0','0','0','0','0','Spitelash Battlemaster - Cast Spitelash'),
 -- Spitelash Enchantress
 ('788601','7886','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Spitelash Enchantress - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('788602','7886','0','5','100','1','1000','5000','21000','27000','11','3443','0','0','0','0','0','0','0','0','0','0','Spitelash Enchantress - Cast Enchanted Quickness (Phase 1)'),
