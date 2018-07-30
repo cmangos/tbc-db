@@ -17535,6 +17535,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Galak Flame Guard 7404
 ('740401','7404','0','0','100','1','2000','4000','27000','37000','11','13730','0','0','0','0','0','0','0','0','0','0','Galak Flame Guard - Cast Demoralizing Shout'),
 -- Pao'ka Swiftmountain 10427 - npc_paoka_swiftmountain
+-- Galak Messenger 10617 - NSR
 -- Kanati Greycloud 10638 - npc_kanati
 -- Lakota Windsong 10646 - npc_lakota_windsong
 -- Galak Assassin 10720
@@ -17560,6 +17561,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grimtotem Reaver 10761
 ('1076101','10761','0','0','100','1','5900','16200','12100','19200','11','11976','1','0','0','0','0','0','0','0','0','0','Grimtotem Reaver - Cast Strike'),
 ('1076102','10761','9','0','100','1','0','5','6000','9000','11','15496','1','0','0','0','0','0','0','0','0','0','Grimtotem Reaver - Cast Cleave'),
+-- Arikara 10882 - NSR
 -- Arnak Grimtotem 10896
 ('1089601','10896','0','0','100','1','4000','7000','9000','12000','11','10966','1','0','0','0','0','0','0','0','0','0','Arnak Grimtotem - Cast Uppercut'),
 ('1089602','10896','9','0','100','1','0','5','8300','26900','11','11977','1','32','0','0','0','0','0','0','0','0','Arnak Grimtotem - Cast Rend'),
@@ -17870,6 +17872,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1004103','10041','0','0','100','1','10000','22000','12700','24800','11','8137','1','32','0','0','0','0','0','0','0','0','Gorishi Hive Queen - Cast Silithid Pox'),
 -- Captured Felwood Ooze
 ('1029001','10290','29','0','100','0','1000','1000','0','0','45','5','40','0','41','2000','0','0','0','0','0','0','Captured Felwood Ooze - Send AI Event "A" and Delayed Despawn on Generic Timer (Q.4642)'),
+-- Gryfe <Flight Master> 10583
+('1058301','10583','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','1','-548','0','0','Gryfe - Spawn Enraged Wyvern and Enraged Gryphon and Yell on Aggro'),
 -- Blazing Invader
 ('1446001','14460','9','0','100','1','0','8','11000','14000','11','23113','0','1','0','0','0','0','0','0','0','0','Blazing Invader - Cast Blast Wave'),
 -- Baron Charr
