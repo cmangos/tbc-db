@@ -5574,7 +5574,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('583910','5839','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Dark Iron Geologist - Set Phase 0 on Evade'),
 -- Dark Iron Steamsmith
 ('584001','5840','9','0','100','1','0','5','12000','15000','11','11983','0','1','0','0','0','0','0','0','0','0','Dark Iron Steamsmith - Cast Steam Jet'),
--- Slave Worker (5843) - NSR
+-- Slave Worker 5843
+('584301','5843','28','0','100','1','11971','5','12000','15000','11','11971','1','0','0','0','0','0','0','0','0','0','Slave Worker - Cast Sunder Armor on Target Missing Aura Stack'),
+('584302','5843','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Slave Worker - Flee at 15% HP'),
 -- Dark Iron Slaver
 ('584401','5844','4','0','100','0','0','0','0','0','39','15','0','0','0','0','0','0','0','0','0','0','Dark Iron Slaver - Call For Help on Aggro'),
 ('584402','5844','9','0','100','1','0','5','18000','21000','11','11977','1','0','0','0','0','0','0','0','0','0','Dark Iron Slaver - Cast Rend'),
@@ -9532,7 +9534,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('105202','1052','2','0','100','0','15','0','0','0','1','-364','0','0','1','-375','0','0','11','3204','0','1','Dark Iron Saboteur - Say and Text Emote then Cast Sapper Explode at 15% HP'),
 -- Dark Iron Tunneler 1053
 ('105301','1053','4','0','15','0','0','0','0','0','1','-357','-358','-406','0','0','0','0','0','0','0','0','Dark Iron Tunneler - Random Say on Aggro'),
-('105302','1053','28','0','100','1','13444','5','5400','9200','11','11971','1','0','0','0','0','0','0','0','0','0','Dark Iron Tunneler - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('105302','1053','28','0','100','1','11971','5','5400','9200','11','11971','1','0','0','0','0','0','0','0','0','0','Dark Iron Tunneler - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('105303','1053','0','0','100','1','1000','3000','1300','5000','11','7164','0','33','0','0','0','0','0','0','0','0','Dark Iron Tunneler - Cast Defensive Stance'),
 ('105304','1053','0','0','100','1','2000','8500','18000','22000','11','7891','1','0','0','0','0','0','0','0','0','0','Dark Iron Tunneler - Cast Gift of Ragnaros'),
 ('105305','1053','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dark Iron Tunneler - Flee at 15% HP'),
