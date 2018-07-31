@@ -7401,7 +7401,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Magtoor (1776) - NSR
 -- Grokor (3622) - NSR
 -- Moccasin (4953) - NSR
--- Murk Slitherer (5224) - NSR
+-- Murk Slitherer 5224
+('522401','5224','0','0','100','1','5000','7000','8000','11000','11','13518','1','0','0','0','0','0','0','0','0','0','Murk Slitherer - Cast Poison'),
 -- Murk Spitter
 ('522501','5225','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Murk Spitter - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('522502','5225','9','5','100','1','5','30','3400','4800','11','6917','1','0','0','0','0','0','0','0','0','0','Murk Spitter - Cast Venom Spit (Phase 1)'),
