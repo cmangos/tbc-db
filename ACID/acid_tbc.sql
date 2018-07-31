@@ -17774,8 +17774,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodpetal Trapper
 ('651201','6512','1','0','100','0','1000','1000','0','0','11','14111','0','32','0','0','0','0','0','0','0','0','Bloodpetal Trapper - Cast Bloodpetal Poison OOC'),
 ('651202','6512','0','0','100','1','4000','7000','9000','14000','11','11922','1','0','0','0','0','0','0','0','0','0','Bloodpetal Trapper - Cast Entangling Roots'),
--- Un'Goro Stomper
-('651301','6513','2','0','100','0','20','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Un\'Goro Stomper - Cast Enrage at 20% HP'),
+-- Un'Goro Stomper 6513
+('651301','6513','2','0','100','0','50','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Un\'Goro Stomper - Cast Enrage at 50% HP'),
+-- Un'Goro Gorilla 6514
+('651401','6514','2','0','100','0','25','0','0','0','39','20','0','0','1','-516','0','0','0','0','0','0','Gorishi Worker - Call for Help at 25% HP'),
 -- Un'Goro Thunderer
 ('651601','6516','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Un\'Goro Thunderer - Cast Set Stand State on Aggro'),
 ('651602','6516','0','0','100','1','5000','5000','9000','15000','11','12553','1','0','0','0','0','0','0','0','0','0','Un\'Goro Thunderer - Cast Shock'),
@@ -35066,7 +35068,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-513','You won\'t get away this time!','0','0','0','16238','0'),
 ('-514','More will take my place.','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
 ('-515','A minor victory...','0','0','0','17835/21137/17892/21136/18994/21138/21139/18995','0'),
--- PLEASE RE-USE 516 classic>tbc>wotlk
+('-516','%s pounds his chest, calling for help!','0','2','0','6514','0'),
 ('-517','The sands of time shall be scattered to the winds!','0','1','0','21148/21104/21140/17839','0'),
 ('-518','History is about to be rewritten!','0','1','0','21148/21104/21140/17839','0'),
 ('-519','Let the siege begin!','0','1','0','21148/21104/21140/17839','0'),
