@@ -17534,6 +17534,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('593301','5933','4','0','100','0','0','0','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Achellios the Banished - Cast Battle Shout on Aggro'),
 -- Heartrazor 5934
 ('593401','5934','0','0','100','1','10100','16500','12700','24800','11','8256','4','32','0','0','0','0','0','0','0','0','Heartrazor - Cast Lethal Toxin'),
+-- Ironeye the Invincible 5935
+('593501','5935','0','0','100','1','8000','12000','24000','28000','11','11020','4','32','0','0','0','0','0','0','0','0','Ironeye the Invincible - Cast Petrify'),
 -- Vile Sting 5937
 ('593701','5937','28','0','100','1','8257','3','25000','35000','11','8257','1','0','0','0','0','0','0','0','0','0','Vile Sting - Cast Venom Sting on Target Missing Aura Stack'),
 -- "Plucky" Johnson 6626 - npc_plucky_johnson
