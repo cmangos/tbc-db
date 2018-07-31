@@ -14104,7 +14104,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thyssiana
 ('431901','4319','4','0','100','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Thyssiana - Spawn Enraged Hippogryphs on Aggro'),
 -- Krueg Skullsplitter (4544) - NSR
--- Gordunni Ogre (5229) - NSR
+-- Gordunni Ogre 5229
+('522901','5229','4','0','10','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Gordunni Ogre - Say on Aggro'),
 -- Gordunni Brute
 ('523201','5232','9','0','100','1','0','8','12000','17000','11','10966','1','0','0','0','0','0','0','0','0','0','Gordunni Brute - Cast Uppercut'),
 -- Gordunni Mauler
