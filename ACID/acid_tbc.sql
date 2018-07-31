@@ -17277,6 +17277,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('586501','5865','4','0','100','0','0','0','0','0','11','8210','0','1','0','0','0','0','0','0','0','0','Dishu - Cast Savannah Cubs on Aggro'),
 -- Grunt Dogran
 ('590801','5908','4','0','100','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Grunt Dogran - Set Stand State to Stand on Aggro'),
+-- Razorfen Servitor 6132
+('613201','6132','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Razorfen Servitor - Flee at 15% HP'),
 -- Twiggy Flathead 6248 - npc_twiggy_flathead
 -- Summoned Felhunter
 ('626801','6268','0','0','100','1','5000','11000','11000','17000','11','2691','1','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Mana Burn'),
