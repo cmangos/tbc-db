@@ -18369,6 +18369,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1998803','19988','9','2','100','1','5','30','5000','8000','11','10277','1','0','40','2','0','0','22','1','0','0','Grishna Falconwing - Cast Throw and Set Ranged Weapon Model and Set Phase 1 (Phase 0)'),
 ('1998804','19988','9','1','100','1','0','5','0','0','40','1','0','0','22','0','0','0','0','0','0','0','Grishna Falconwing - Set Melee Weapon Model and Set Phase 0 at 0-5 Yards (Phase 1)'),
 ('1998805','19988','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','0','0','0','0','Grishna Falconwing - Set Phase 0 and Set Melee Weapon Model on Evade'),
+('1998806','19988','6','0','100','0','10083','0','0','0','53','10093','6','0','0','0','0','0','0','0','0','0','Grishna Falconwing - On Death: Killer casts s.37466 on Self if Has Aura 37475'),
 -- Grishna Harbinger
 ('1998901','19989','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Grishna Harbinger - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('1998902','19989','9','13','100','1','0','40','3000','4000','11','9532','1','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Cast Lighting Bolt (Phase 1)'),
@@ -18380,9 +18381,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1998908','19989','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Grishna Harbinger - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('1998909','19989','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grishna Harbinger - Flee at 15% HP (Phase 3)'),
 ('1998910','19989','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Grishna Harbinger - Set Phase 0 on Evade'),
+('1998911','19989','6','0','100','0','10083','0','0','0','53','10093','6','0','0','0','0','0','0','0','0','0','Grishna Harbinger - On Death: Killer casts s.37466 on Self if Has Aura 37475'),
 -- Grishna Scorncrow
 ('1999001','19990','0','0','100','1','10000','20000','20000','30000','11','35321','1','32','0','0','0','0','0','0','0','0','Grishna Scorncrow - Cast Gushing Wound'),
 ('1999002','19990','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grishna Scorncrow - Flee at 15% HP'),
+('1999003','19990','6','0','100','0','10083','0','0','0','53','10093','6','0','0','0','0','0','0','0','0','0','Grishna Scorncrow - On Death: Killer casts s.37466 on Self if Has Aura 37475'),
 -- Bloodmaul Brute (Missing normal combat texts)
 ('1999101','19991','22','0','100','1','3','8','11000','0','54','-1051','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999102','19991','22','0','100','1','34','8','11000','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Brute - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
