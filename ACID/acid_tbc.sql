@@ -10150,7 +10150,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('461903','4619','0','0','100','1','8000','14000','9000','16000','11','7098','4','33','0','0','0','0','0','0','0','0','Geltharis - Cast Curse of Mending'),
 ('461904','4619','2','0','100','1','20','0','15000','25000','11','6925','0','1','0','0','0','0','0','0','0','0','Geltharis - Cast Gift of the Xavian at 20% HP'),
 -- Illusionary Nightmare (4785) - NSR
--- Fallenroot Rogue 4789 - NSR
+-- Fallenroot Rogue 4789
+('478901','4789','1','0','100','0','1000','1000','0','0','11','30831','0','32','0','0','0','0','0','0','0','0','Fallenroot Rogue - Cast Stealth OOC'),
+('478902','4789','33','0','100','1','0','0','9000','12000','11','6595','1','0','0','0','0','0','0','0','0','0','Fallenroot Rogue - Cast Exploit Weakness on Facing Target Back'),
 -- Blackfathom Tide Priestess
 ('480201','4802','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Blackfathom Tide Priestess - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('480202','4802','9','13','100','1','0','40','3400','4800','11','9672','1','0','0','0','0','0','0','0','0','0','Blackfathom Tide Priestess - Cast Frostbolt (Phase 1)'),
