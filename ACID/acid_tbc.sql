@@ -17544,6 +17544,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('415001','4150','0','0','100','1','9000','14000','12000','16000','11','3635','1','0','0','0','0','0','0','0','0','0','Redstone Basilisk - Cast Crystal Gaze'),
 -- Saltstone Crystalhide
 ('415101','4151','0','0','100','1','8000','14000','15000','18000','11','8129','4','0','0','0','0','0','0','0','0','0','Saltstone Crystalhide - Cast Mana Burn'),
+-- Pesterhide Snarler 4249
+('424901','4249','0','0','100','1','5000','10000','12000','16000','11','6576','1','0','0','0','0','0','0','0','0','0','Pesterhide Snarler - Cast Intimidating Growl'),
 -- Nyse
 ('431701','4317','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Nyse - Spawn Enraged Wyverns and Yell on Aggro'),
 -- Minor Manifestation of Air 5902 - NSR
