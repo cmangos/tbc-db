@@ -17544,6 +17544,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('415001','4150','0','0','100','1','9000','14000','12000','16000','11','3635','1','0','0','0','0','0','0','0','0','0','Redstone Basilisk - Cast Crystal Gaze'),
 -- Saltstone Crystalhide
 ('415101','4151','0','0','100','1','8000','14000','15000','18000','11','8129','4','0','0','0','0','0','0','0','0','0','Saltstone Crystalhide - Cast Mana Burn'),
+-- Salt Flats Scavenger 4154
+('415401','4154','12','0','100','1','20','0','30000','30000','11','7160','1','0','0','0','0','0','0','0','0','0','Salt Flats Scavenger - Cast Execute when Target HP below 20%'),
 -- Salt Flats Vulture 4158
 ('415801','4158','12','0','100','1','20','0','30000','30000','11','7160','1','0','0','0','0','0','0','0','0','0','Salt Flats Vulture - Cast Execute when Target HP below 20%'),
 -- Pesterhide Snarler 4249
