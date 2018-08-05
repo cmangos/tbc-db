@@ -30109,7 +30109,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('486001','4860','0','0','100','3','12800','18100','14500','27700','11','6524','0','0','0','0','0','0','0','0','0','0','Stone Steward - Ground Tremor'),
 -- Shrike Bat (3.3.5a Official Data)
 ('486101','4861','0','0','100','3','11900','21700','15600','24900','11','8281','0','0','0','0','0','0','0','0','0','0','Shrike Bat - Cast Sonic Burst'),
--- Jadespine Basilisk (4863) - WRITE ACID SCRIPT FOR NEWLY REMOVED SD2 SCRIPT WITH COLLECTED OFFICIAL DATA
+-- Jadespine Basilisk 4863
+('486301','4863','9','0','100','3','0','5','12000','18000','11','3636','5','32','0','0','0','0','0','0','0','0','Jadespine Basilisk - Cast Crystalline Slumber'),
+('486302','4863','0','0','100','3','4000','8000','13000','19000','11','9906','0','0','0','0','0','0','0','0','0','0','Jadespine Basilisk - Cast Reflection'),
 -- Baelog
 ('690601','6906','4','0','100','2','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Baelog - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('690602','6906','9','5','100','3','5','30','2300','3900','11','15620','1','0','40','2','0','0','0','0','0','0','Baelog - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
