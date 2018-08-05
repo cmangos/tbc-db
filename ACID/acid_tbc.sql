@@ -8317,6 +8317,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- William Montague 4549
 -- Ophelia Montague 4550
 -- Michael Garrett 4551
+('455101','4551','4','0','100','0','0','0','0','0','12','9521','1','30000','12','9521','1','30000','1','-548','0','0','Michael Garrett - Spawn Enraged Felbats and Yell on Aggro'),
 -- Eunice Burch 4552
 -- Ronald Burch 4553
 -- Tawny Grisette 4554
