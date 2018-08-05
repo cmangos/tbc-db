@@ -19,3 +19,27 @@ INSERT INTO pet_levelstats(creature_entry, level, hp, mana, armor, str, agi, sta
 -- Enchantress Volali 19251 - Remove Male Model Option
 UPDATE `creature_model_info` SET `modelid_other_gender` = 0 WHERE `modelid` = 18775;
 
+DELETE FROM `creature_addon` WHERE `guid` IN (58922);
+DELETE FROM creature WHERE `guid` IN (192330,192331,192332);
+INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, currentwaypoint, curhealth, curmana, DeathState, MovementType) VALUES
+(192330, 16938, 530, 1, 0, 0, -567.9635, 4784.752, 36.39353, 0.2792527, 300, 300, 0, 0, 1, 1, 0, 0), 
+(192331, 16938, 530, 1, 0, 0, -553.8755, 4740.128, 36.71443, 2.356194, 300, 300, 0, 0, 1, 1, 0, 0), 
+(192332, 17058, 530, 1, 0, 0, -554.1119, 4746.274, 35.73817, 0.5762176, 300, 300, 5, 0, 1, 1, 0, 1);
+
+-- Dreghood Brute 16938 - Illidari Taskmaster 17058 Groups
+DELETE FROM `creature_linking` WHERE `master_guid` IN (59451,59452,59453,59454,59455,59456,59457,59458,59459,59460,59462,59463,192332);
+INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(58906,59451,3),(58907,59451,3),
+(58908,59452,3),(58909,59452,3),
+(58910,59453,3),(58911,59453,3),
+(58913,59454,3),(58919,59454,3),(192330,59454,3),
+(58916,59455,3),(58917,59455,3),(58918,59455,3),
+(58915,59456,3),(58921,59456,3),
+(58923,59457,3),(58924,59457,3),
+(58926,59458,3),(58927,59458,3),
+(58928,59459,3),(58929,59459,3),
+(58925,59460,3),(58930,59460,3),(58931,59460,3),
+(58920,59462,3),(58932,59462,3),
+(58933,59463,3),(58934,59463,3),
+(192331,192332,3);
+
