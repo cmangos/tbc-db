@@ -16815,6 +16815,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Darnassus Sentinel 4262 - guard_darnassus
 -- Nyoma 4265
 -- Danlyia 4266
+-- Darnassian Protector 4423
+('442301','4423','0','0','100','1','5000','5000','10000','10000','11','45','17','0','0','0','0','0','0','0','0','0','Darnassian Protector - Cast War Stomp'),
+('442302','4423','0','0','100','1','1500','5000','9500','17000','11','11922','1','32','0','0','0','0','0','0','0','0','Darnassian Protector - Cast Entangling Roots'),
 -- Dellylah 6091
 -- Byancie 6094
 -- Vorlus Vilehoof 6128
