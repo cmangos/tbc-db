@@ -1,5 +1,5 @@
 # Specify version format
-version: "1.6.{build}"
+version: "1.7.{build}"
 
 # specify custom environment variables
 environment:
