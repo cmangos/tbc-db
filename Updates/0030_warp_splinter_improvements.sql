@@ -15,3 +15,6 @@ INSERT INTO spell_target_position(id, target_map, target_position_x, target_posi
 -- Add Leash for Warp Splinter 17977,21582
 UPDATE `creature_template` SET `Leash` = 95 WHERE `entry` IN (17977,21582);
 
+-- Sapling 19949,21567
+UPDATE `creature_template` SET `UnitFlags` = 32768 WHERE `entry` IN (19949,21567);
+
