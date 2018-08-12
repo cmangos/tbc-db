@@ -12100,7 +12100,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('464402','4644','9','0','100','1','0','5','8000','12000','11','15496','1','1','0','0','0','0','0','0','0','0','Magram Marauder - Cast Cleave'),
 -- Magram Mauler
 ('464501','4645','1','0','100','0','1000','1000','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Magram Mauler - Cast Thrash OOC'),
--- Gelkis Outrunner (4646) - NSR
+-- Gelkis Outrunner 4646
+('464601','4646','2','0','100','0','20','0','0','0','39','30','0','0','0','0','0','0','0','0','0','0','Gelkis Outrunner - Call For Help at 20% HP'),
 -- Gelkis Scout
 ('464701','4647','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Gelkis Scout - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('464702','4647','9','0','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Gelkis Scout - Cast Shoot and Set Ranged Weapon Model'),
