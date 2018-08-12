@@ -7221,6 +7221,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('446101','4461','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Murkgill Warrior - Flee at 15% HP'),
 -- Bloodsail Deckhand
 ('450501','4505','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodsail Deckhand - Flee at 15% HP'),
+-- Bloodsail Swabby 4506
+('450601','4506','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodsail Swabby - Flee at 15% HP'),
 -- Booty Bay Bruiser 4624 - guard_contested
 ('462401','4624','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Booty Bay Bruiser - Cast Net'),
 -- Se'Jib 7871 - npc_prof_leather
