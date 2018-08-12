@@ -16068,7 +16068,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('419808','4198','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Braelyn Firehand - Flee at 15% HP (Phase 3)'),
 ('419809','4198','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Braelyn Firehand - Set Phase 0 on Evade'),
 -- Ziz Fizziks (4201) - NSR
--- Gerenzo Wrenchwhistle (4202) - NSR
+-- Gerenzo Wrenchwhistle 4202
+('420201','4202','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gerenzo Wrenchwhistle - Flee at 15% HP'),
 -- Deepmoss Hatchling
 ('426301','4263','2','0','50','0','30','0','0','0','11','6536','0','0','1','-551','0','0','0','0','0','0','Deepmoss Hatchling - Cast Summon Deepmoss Matriarch at 30% HP'),
 -- Deepmoss Matriarch (4264) - NSR
