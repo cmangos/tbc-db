@@ -1697,7 +1697,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Skeletal Shocktrooper (16299) - NSR
 -- Spirit of the Damned (16379) - NSR
 -- Bone Witch (16380) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Void Zone (16697) - Should Be Scripted in SD2
+-- Void Zone (16697) - npc_aoe_damage_trigger
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Anvilrage Taskmaster
 ('2481801','24818','9','0','100','1','0','5','6000','9000','11','11976','1','0','0','0','0','0','0','0','0','0','Anvilrage Taskmaster - Cast Strike'),
@@ -27451,7 +27451,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1746507','17465','28','3','100','5','16145','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Heroic) - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('1746508','17465','0','0','100','3','3000','7000','17000','21000','11','42246','0','1','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Cast Battle Shout (SPELL ID TEMP FIX)'),
 ('1746509','17465','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Set Phase 0 on Evade'),
--- Lesser Shadow Fissure 17471 - mob_lesser_shadow_fissure
+-- Lesser Shadow Fissure 17471 - npc_aoe_damage_trigger
 -- Heathen Guard
 ('1762101','17621','0','0','100','7','6000','10000','10000','14000','11','30474','1','0','0','0','0','0','0','0','0','0','Heathen Guard - Cast Bloodthirst'),
 ('1762102','17621','2','0','100','7','30','0','120000','120000','11','30485','0','1','1','-106','0','0','0','0','0','0','Heathen Guard - Cast Enrage at 30% HP'),
@@ -27509,6 +27509,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shattered Hand Assassin
 ('1769501','17695','1','0','100','6','1000','1000','0','0','11','30991','0','32','0','0','0','0','0','0','0','0','Shattered Hand Assassin - Cast Stealth OOC'),
 ('1769502','17695','33','0','100','7','0','0','4500','6500','11','30992','1','0','0','0','0','0','0','0','0','0','Shattered Hand Assassin - Cast Backstab on Facing Target Back'),
+-- Wild Shadow Fissure 18370 - NSR
 -- O'mrogg's Left Head 19523 - mob_omrogg_heads
 -- O'mrogg's Right Head 19524 - mob_omrogg_heads
 -- Blood Guard Porung
@@ -31975,7 +31976,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greater Fleshbeast
 ('1659601','16596','9','0','100','3','0','5','18000','21000','11','29935','0','1','0','0','0','0','0','0','0','0','Greater Fleshbeast - Cast Gaping Maw'),
 ('1659602','16596','0','0','100','3','5000','9000','7000','10000','11','29939','4','0','0','0','0','0','0','0','0','0','Greater Fleshbeast - Cast Infectious Poison'),
--- Void Zone
+-- Void Zone 16697 - npc_aoe_damage_trigger
 ('1669701','16697','11','0','100','2','0','0','0','0','11','28874','0','0','21','0','0','0','0','0','0','0','Void Zone (Netherspite) - Cast Consumption and Prevent Combat Movement on Spawn'),
 -- Ebonlocke (16806) - NSR
 -- Sebastian (16811) - NSR
