@@ -12078,7 +12078,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('463803','4638','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Magram Scout - Enable Dynamic Movement at 9-80 Yards'),
 ('463804','4638','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Magram Scout - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
 ('463805','4638','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Magram Scout - Set Melee Weapon Model on Evade'),
--- Magram Outrunner (4639) - NSR
+-- Magram Outrunner 4639
+('463901','4639','2','0','100','0','20','0','0','0','39','30','0','0','0','0','0','0','0','0','0','0','Magram Outrunner - Call For Help at 20% HP'),
 -- Magram Wrangler
 ('464001','4640','9','0','100','1','0','20','6000','9000','11','6533','1','0','0','0','0','0','0','0','0','0','Magram Wrangler - Cast Net'),
 -- Magram Windchaser
