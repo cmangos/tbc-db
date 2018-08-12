@@ -17537,6 +17537,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('413102','4131','0','0','100','0','10000','16000','0','0','11','8137','1','0','0','0','0','0','0','0','0','0','Silithid Invader - Cast Silithid Pox'),
 -- Silithid Ravager
 ('413201','4132','0','0','100','1','3000','8000','9000','15000','11','8255','1','0','0','0','0','0','0','0','0','0','Silithid Ravager - Cast Strong Cleave'),
+-- Silithid Hive Drone 4133
+('413301','4133','2','0','100','0','20','0','0','0','39','30','0','0','0','0','0','0','0','0','0','0','Silithid Hive Drone - Call for Help at 20% HP'),
 -- Scorpid Terror
 ('413901','4139','0','0','100','1','6000','9000','11000','17000','11','7399','4','0','0','0','0','0','0','0','0','0','Scorpid Terror - Cast Terrify'),
 -- Scorpid Reaver
