@@ -12046,7 +12046,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rat (4075) - NSR
 -- Roach (4076) - NSR
 -- Maurin Bonesplitter (4498) - NSR
--- Kolkar Centaur (4632) - NSR
+-- Kolkar Centaur 4632
+('463201','4632','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kolkar Centaur - Flee at 15% HP'),
 -- Kolkar Scout
 ('463301','4633','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Kolkar Scout - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('463302','4633','9','0','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Kolkar Scout - Cast Shoot and Set Ranged Weapon Model'),
