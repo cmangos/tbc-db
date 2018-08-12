@@ -28183,7 +28183,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tamed Hyena (4534) - NSR
 -- Tamed Battleboar
 ('453501','4535','4','0','100','2','0','0','0','0','11','8260','0','0','0','0','0','0','0','0','0','0','Tamed Battleboar - Cast Rushing Charge on Aggro'),
--- Kraul Bat (4538) - NSR
+-- Kraul Bat 4538
+('453801','4538','0','0','100','3','4000','8000','8000','13000','11','12553','1','0','0','0','0','0','0','0','0','0','Kraul Bat - Cast Shock'),
 -- Greater Kraul Bat
 ('453901','4539','9','0','100','3','0','10','8000','13000','11','8281','0','0','0','0','0','0','0','0','0','0','Greater Kraul Bat - Cast Sonic Burst'),
 -- Blood of Agamaggan
