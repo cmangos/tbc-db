@@ -15916,7 +15916,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('402001','4020','9','0','100','1','0','5','7000','16000','11','7997','4','32','0','0','0','0','0','0','0','0','Sap Beast - Cast Sap Might'),
 -- Corrosive Sap Beast
 ('402101','4021','9','0','100','1','0','30','5000','11000','11','3396','4','32','0','0','0','0','0','0','0','0','Corrosive Sap Beast - Cast Corrosive Poison'),
--- Bloodfury Harpy (4022) - NSR
+-- Bloodfury Harpy 4022
+('402201','4022','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bloodfury Harpy - Flee at 15% HP'),
 -- Bloodfury Roguefeather
 ('402301','4023','1','0','100','0','1000','1000','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Bloodfury Roguefeather - Cast Thrash OOC'),
 -- Bloodfury Slayer
