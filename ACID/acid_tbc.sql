@@ -17561,6 +17561,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('424901','4249','0','0','100','1','5000','10000','12000','16000','11','6576','1','0','0','0','0','0','0','0','0','0','Pesterhide Snarler - Cast Intimidating Growl'),
 -- Nyse
 ('431701','4317','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Nyse - Spawn Enraged Wyverns and Yell on Aggro'),
+-- Grenka Bloodscreech 4490
+('449001','4490','9','0','100','1','0','5','12000','15000','11','3589','0','0','0','0','0','0','0','0','0','0','Grenka Bloodscreech - Cast Deafening Screech'),
 -- Minor Manifestation of Air 5902 - NSR
 -- Achellios the Banished 5933
 ('593301','5933','4','0','100','0','0','0','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Achellios the Banished - Cast Battle Shout on Aggro'),
