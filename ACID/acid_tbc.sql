@@ -17163,6 +17163,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('341601','3416','0','0','60','1','0','0','14000','14000','11','6598','0','0','0','0','0','0','0','0','0','0','Savannah Matriarch - Cast Savannah Cub'),
 -- Thunderhawk Cloudscraper
 ('342401','3424','0','0','80','1','12000','21000','15000','25000','11','8078','0','0','0','0','0','0','0','0','0','0','Thunderhawk Cloudscraper - Cast Thunderclap'),
+-- Savannah Prowler 3425 - NSR
 -- Mangletooth
 ('343001','3430','0','0','100','0','0','0','0','0','27','5043','17013','0','0','0','0','0','0','0','0','0','Mangletooth - Cast Agamaggan\'s Agility on Quest Complete'),
 ('343002','3430','0','0','100','0','0','0','0','0','27','5042','16612','0','0','0','0','0','0','0','0','0','Mangletooth - Cast Agamaggan\'s Strength on Quest Complete'),
