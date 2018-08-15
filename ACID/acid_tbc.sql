@@ -17063,6 +17063,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('337406','3374','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bael\'dun Excavator - Set Phase 0 on Evade'),
 -- Bael'dun Foreman
 ('337501','3375','9','0','100','1','0','30','21000','29000','11','6257','1','0','0','0','0','0','0','0','0','0','Bael\'dun Foreman - Cast Torch Toss'),
+-- Bael'dun Soldier 3376
+('337601','3376','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Bael\'dun Soldier - Flee at 15% HP'),
 -- Bael'dun Rifleman
 ('337701','3377','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Bael\'dun Rifleman - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
 ('337702','3377','9','5','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Bael\'dun Rifleman - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
