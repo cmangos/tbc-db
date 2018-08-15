@@ -17185,6 +17185,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('350201','3502','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Ratchet Bruiser - Cast Net'),
 -- Devrak
 ('361501','3615','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Devrak - Spawn Enraged Wyverns and Yell on Aggro'),
+-- Minor Water Guardian 3950
+('395001','3950','11','0','100','0','0','0','0','0','11','6488','0','34','11','6498','0','34','0','0','0','0','Minor Water Guardian - Cast Sarilus\'s Elementals Passive and Feed Sarilus Passive on Spawn'),
 -- Hecklefang Hyena 4127 - NSR
 -- Silithid Creeper Egg
 ('578101','5781','1','0','100','0','2000','2000','0','0','1','-1318','0','0','0','0','0','0','0','0','0','0','Silithid Creeper Egg - Text Emote'),
