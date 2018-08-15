@@ -17162,6 +17162,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('345102','3451','1','0','100','0','12000','12000','0','0','1','-437','0','0','0','0','0','0','0','0','0','0','Pilot Wizzlecrank - Says (Quest: 863)'),
 -- Serena Bloodfeather
 ('345201','3452','0','0','100','1','7000','12000','18000','24000','11','3264','0','0','0','0','0','0','0','0','0','0','Serena Bloodfeather - Cast Blood Howl'),
+-- Cannoneer Smythe 3454 - ooc texts
+('345401','3454','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Cannoneer Smythe - Flee at 15% HP'),
+-- Cannoneer Whessan 3455 - ooc texts
+('345501','3455','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Cannoneer Whessan - Flee at 15% HP'),
 -- Razormane Pathfinder
 ('345601','3456','1','0','100','0','1000','1000','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Razormane Pathfinder - Cast Thrash OOC'),
 ('345602','3456','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','22','1','0','0','Razormane Pathfinder - Enable Dynamic Movement and Prevent Melee and Set Phase 1 on Aggro'),
