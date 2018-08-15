@@ -17179,6 +17179,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Oasis Snapjaw
 ('346101','3461','0','0','100','1','9000','18000','17000','24000','11','6530','1','0','0','0','0','0','0','0','0','0','Oasis Snapjaw - Cast Sling Dirt'),
 -- Gilthares Firebough 3465 - npc_gilthares
+-- Tinkerer Sniggles 3471
+('347101','3471','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Tinkerer Sniggles - Flee at 15% HP'),
 -- Owatanka
 ('347301','3473','0','0','100','1','7000','15000','10000','18000','11','6254','1','0','0','0','0','0','0','0','0','0','Owatanka - Cast Chained Bolt'),
 -- Ratchet Bruiser 3502 - guard_contested
