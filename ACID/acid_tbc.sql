@@ -12834,7 +12834,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('322801','3228','0','0','100','1','5000','12000','7000','21000','11','6951','4','32','0','0','0','0','0','0','0','0','Corrupted Surf Crawler - Cast Decayed Strength'),
 -- Corrupted Dreadmaw Crocolisk
 ('323101','3231','0','0','100','1','5000','12000','7000','21000','11','7901','4','32','0','0','0','0','0','0','0','0','Corrupted Dreadmaw Crocolisk - Cast Decayed Agility'),
--- Sarkoth
+-- Sarkoth 3281
 ('328101','3281','1','0','100','0','1000','1000','0','0','11','6752','0','32','0','0','0','0','0','0','0','0','Sarkoth - Cast Weak Poison Proc OOC'),
 -- Hana'zua (3287) - NSR
 -- Spirit of Minshina (3289) - NSR
@@ -17051,14 +17051,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('327803','3278','12','0','100','1','20','0','30000','30000','11','7160','1','0','0','0','0','0','0','0','0','0','Witchwing Slayer - Cast Execute when Target below 20% HP'),
 ('327804','3278','0','0','100','1','6000','8000','25000','28000','11','13730','15','0','0','0','0','0','0','0','0','0','Witchwing Slayer - Cast Demoralizing Shout'),
 -- Witchwing Ambusher 3279
-('327901','3279','1','0','100','0','1000','1000','0','0','11','30831','0','32','0','0','0','0','0','0','0','0','Witchwing Ambusher - Stealth OOC'),
+('327901','3279','1','0','100','0','1000','1000','0','0','11','30831','0','32','0','0','0','0','0','0','0','0','Witchwing Ambusher - Cast Stealth OOC'),
 ('327902','3279','4','0','20','0','0','0','0','0','1','-200','-201','-202','0','0','0','0','0','0','0','0','Witchwing Ambusher - Say on Aggro'),
 ('327903','3279','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Witchwing Ambusher - Flee at 15% HP'),
 -- Witchwing Windcaller 3280
 ('328001','3280','4','0','20','0','0','0','0','0','1','-200','-201','-202','0','0','0','0','0','0','0','0','Witchwing Windcaller - Say on Aggro'),
 ('328002','3280','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Witchwing Windcaller - Flee at 15% HP'),
 ('328003','3280','0','0','100','1','4000','7000','12000','15000','11','6728','4','32','0','0','0','0','0','0','0','0','Witchwing Windcaller - Cast Enveloping Winds (Rank 1)'),
--- Sarkoth 3281
 -- Venture Co. Mercenary
 ('328201','3282','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Venture Co Mercenary - Enable Dynamic Movement and Prevent Melee on Aggro'),
 ('328202','3282','9','0','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Venture Co Mercenary - Cast Shoot and Set Ranged Weapon Model'),
@@ -17229,7 +17228,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Devouring Ectoplasm 3638
 ('363801','3638','2','0','100','0','50','0','0','0','11','7952','0','0','0','0','0','0','0','0','0','0','Devouring Ectoplasm - Cast Clone at 50% HP'),
 -- Trigore the Lasher 3652
-('365201','3652','1','0','100','0','1000','1000','0','0','11','3417','0','32','0','0','0','0','0','0','0','0','Trigore the Lasher - Thrash OOC'),
+('365201','3652','1','0','100','0','1000','1000','0','0','11','3417','0','32','0','0','0','0','0','0','0','0','Trigore the Lasher - Cast Thrash OOC'),
 -- Razormane Wolf 3939 - NSR
 -- Minor Water Guardian 3950
 ('395001','3950','11','0','100','0','0','0','0','0','11','6488','0','34','11','6498','0','34','0','0','0','0','Minor Water Guardian - Cast Sarilus\'s Elementals Passive and Feed Sarilus Passive on Spawn'),
