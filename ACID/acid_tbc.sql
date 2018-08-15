@@ -17231,6 +17231,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('347101','3471','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Tinkerer Sniggles - Flee at 15% HP'),
 -- Owatanka
 ('347301','3473','0','0','100','1','7000','15000','10000','18000','11','6254','1','0','0','0','0','0','0','0','0','0','Owatanka - Cast Chained Bolt'),
+-- Echeyakee 3475 - NSR
 -- Ratchet Bruiser 3502 - guard_contested
 ('350201','3502','0','0','100','1','3000','7000','8500','10000','11','12024','1','0','0','0','0','0','0','0','0','0','Ratchet Bruiser - Cast Net'),
 -- Devrak
