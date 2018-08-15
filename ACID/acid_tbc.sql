@@ -17176,6 +17176,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Razormane Seer
 ('345801','3458','0','0','100','1','5000','11000','16000','24000','11','6363','0','0','0','0','0','0','0','0','0','0','Razormane Seer - Cast Searing Totem'),
 ('345802','3458','2','0','100','1','50','0','25000','35000','11','6274','0','1','0','0','0','0','0','0','0','0','Razormane Seer - Cast Healing Ward When Below 50% HP'),
+-- Razormane Warfrenzy 3459
+('345901','3459','2','0','100','0','15','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Razormane Warfrenzy - Flee at 15% HP'),
 -- Oasis Snapjaw
 ('346101','3461','0','0','100','1','9000','18000','17000','24000','11','6530','1','0','0','0','0','0','0','0','0','0','Oasis Snapjaw - Cast Sling Dirt'),
 -- Gilthares Firebough 3465 - npc_gilthares
