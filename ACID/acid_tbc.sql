@@ -16942,6 +16942,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('325301','3253','0','0','100','1','12000','18000','25000','35000','11','7278','0','0','0','0','0','0','0','0','0','0','Silithid Harvester - Cast Summon Harvester Swarm'),
 -- Sunscale Lashtail
 ('325401','3254','0','0','100','1','11000','21000','13000','19000','11','6607','1','0','0','0','0','0','0','0','0','0','Sunscale Lashtail - Cast Lash'),
+-- Sunscale Screecher 3255
+('325501','3255','2','0','100','0','30','0','0','0','39','30','0','0','1','-154','0','0','0','0','0','0','Sunscale Screecher - Call For Help and Emote at 30% HP'),
 -- Sunscale Scytheclaw
 ('325601','3256','1','0','100','0','1000','1000','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Sunscale Scytheclaw - Cast Thrash OOC'),
 -- Bristleback Hunter
@@ -34785,7 +34787,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-151','I miss my dog so much...','11798','0','0','23618','0'),
 ('-152','%s grows in size upon seeing $N!','0','2','0','17725','0'),
 ('-153','%s strength fades!','0','2','0','17725','0'),
--- PLEASE RE-USE 154 classic>tbc>wotlk
+('-154','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
 ('-155','%s begins to arm the Proximity Bomb!','0','2','0','17414','0'),
 ('-156','The blood is our power!','0','0','1','17264/17270/17271/17478/17491','0'),
 ('-157','Lok narash!','0','0','0','17370/17371/17455','0'),
@@ -34831,9 +34833,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-197','We can make it better, stronger, faster. We have the technology. We have the magic.','0','0','0','2922','0'),
 ('-198','You should not be here! Slay them!','5799','1','0','4831','0'),
 ('-199','Suffer you despicable insect!','11000','1','0','17842','0'),
-('-200','You will be easy prey, $c.','0','1','0','2015,2017,2018','0'),
-('-201','My talons will shred your puny body, $r.','0','0','0','2018/3277','0'),
-('-202','A fine trophy your head will make, $r.','0','0','0','2015,2017,2018','0'),
+('-200','You will be easy prey, $c.','0','1','0','Common Harpy Text','0'),
+('-201','My talons will shred your puny body, $r.','0','0','0','Common Harpy Text','0'),
+('-202','A fine trophy your head will make, $r.','0','0','0','Common Harpy Text','0'),
 ('-203','NO!!!  It puts the tannin in the basket, or it gets the mallet again!','0','1','0','14351','0'),
 ('-204','Fresh bread for sale!','0','0','0','3518','0'),
 ('-205','Freshly baked bread for sale!','0','0','0','3518','0'),
