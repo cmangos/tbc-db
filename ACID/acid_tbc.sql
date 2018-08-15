@@ -2438,7 +2438,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bliztik (2481) - NSR
 -- Danielle Zipstitch (2668) - NSR
 -- Sheri Zipstitch (2669) - NSR
--- Unseen (3094) - NSR
+-- Unseen 3094
+('309401','3094','1','0','100','0','1000','1000','0','0','11','4986','0','32','0','0','0','0','0','0','0','0','Unseen - Cast Unseen OOC'),
 -- Herble Baubbletump (3133) - NSR
 -- Kzixx (3134) - NSR
 -- Malissa (3135) - NSR
