@@ -17159,6 +17159,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('339703','3397','6','0','5','0','0','0','0','0','1','-769','0','0','32','3395','1','8','0','0','0','0','Kolkar Bloodcharger - Chance Say and Summon Verog the Dervish on Death'),
 -- Gesharahan 3398
 ('339801','3398','0','0','100','1','6000','9000','17000','23000','11','3583','4','32','0','0','0','0','0','0','0','0','Gesharahan - Cast Deadly Poison'),
+-- Savannah Huntress 3415 - NSR
 -- Savannah Matriarch
 ('341601','3416','0','0','60','1','0','0','14000','14000','11','6598','0','0','0','0','0','0','0','0','0','0','Savannah Matriarch - Cast Savannah Cub'),
 -- Thunderhawk Cloudscraper
