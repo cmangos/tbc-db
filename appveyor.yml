@@ -60,7 +60,7 @@ test_script:
             Write-Host "Creating tbcmangos DATABASE ..." -f Yellow;
             $env:MYSQL_PWD="Password12!";
             cmd /c 'mysql -u root < C:\projects\core\sql\create\db_create_mysql.sql';
-            cmd /c 'mysql -u root -tbcmangos < C:\projects\core\sql\base\mangos.sql';
+            cmd /c 'mysql -u root -Dtbcmangos < C:\projects\core\sql\base\mangos.sql';
             cd C:\projects\database;
             $EOF = "`n";
             $configs = 'DB_HOST="localhost"' + $EOF + 'DATABASE="tbcmangos"' + $EOF;
