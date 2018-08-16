@@ -63,7 +63,7 @@ test_script:
             cmd /c 'mysql -u root -Dmangos < C:\projects\core\sql\base\mangos.sql';
             cd C:\projects\database;
             $EOF = "`n";
-            $configs = 'DB_HOST="localhost"' + $EOF + 'DATABASE="mangos"' + $EOF;
+            $configs = 'DB_HOST="localhost"' + $EOF + 'DATABASE="tbcmangos"' + $EOF;
             $configs += 'USERNAME="mangos"' + $EOF + 'PASSWORD="mangos"' + $EOF;
             $configs += 'CORE_PATH="C:/projects/core"' + $EOF;
             $configs += 'MYSQL="mysql"' + $EOF + 'DEV_UPDATES="NO"' + $EOF;
