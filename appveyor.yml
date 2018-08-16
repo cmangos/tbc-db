@@ -57,10 +57,10 @@ test_script:
             $env:CORE_HASH = git rev-parse --short HEAD;
             $env:CORE_HASH = $env:COMMIT_URL + $env:CORE_HASH;
             $env:Path += ";C:\Program Files\MySql\MySQL Server 5.7\bin";
-            Write-Host "Creating mangos DATABASE ..." -f Yellow;
+            Write-Host "Creating tbcmangos DATABASE ..." -f Yellow;
             $env:MYSQL_PWD="Password12!";
             cmd /c 'mysql -u root < C:\projects\core\sql\create\db_create_mysql.sql';
-            cmd /c 'mysql -u root -Dmangos < C:\projects\core\sql\base\mangos.sql';
+            cmd /c 'mysql -u root -tbcmangos < C:\projects\core\sql\base\mangos.sql';
             cd C:\projects\database;
             $EOF = "`n";
             $configs = 'DB_HOST="localhost"' + $EOF + 'DATABASE="tbcmangos"' + $EOF;
@@ -74,7 +74,7 @@ test_script:
             $env:MYSQL_PWD="Password12!";
             if ($LastExitCode) { Write-Host "InstallFullDB.sh failed!"; throw "Build failed!"; }
             Write-Host "Dumping database ..." -f Yellow;
-            cmd /c 'mysqldump -u root mangos > C:\projects\database\mangos.sql';
+            cmd /c 'mysqldump -u root tbcmangos > C:\projects\database\mangos.sql';
             Write-Host "Packing dump into a zip file ..." -f Yellow;
             7z a C:\projects\database\$env:FINAL_SQL_NAME C:\projects\database\mangos.sql;
         }
