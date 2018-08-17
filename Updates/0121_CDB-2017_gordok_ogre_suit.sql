@@ -13,11 +13,11 @@ INSERT INTO conditions VALUES
 (@CONDITION, 1, 22736, 0, 'Has aura 22736');  -- Gordok Ogre Suit
 
 -- Made quest 1317 a 7703 (Unfinished Gordok Business) only available when player has King of the Gordok aura
-UPDATE quest_template SET RequiredCondition=976 WHERE entry IN (1318, 7703);
+UPDATE quest_template SET RequiredCondition=3159 WHERE entry IN (1318, 7703);
 
 -- Added conditions to make gossip related to King of the Gordok only display when aura is present
-UPDATE gossip_menu SET condition_id=976 WHERE entry=5739 AND text_id=6914;
-UPDATE gossip_menu_option SET condition_id=976 WHERE menu_id=5739 AND id=1;
+UPDATE gossip_menu SET condition_id=3159 WHERE entry=5739 AND text_id=6914;
+UPDATE gossip_menu_option SET condition_id=3159 WHERE menu_id=5739 AND id=1;
 
 -- Added missing gossip menus and options for Ogre Suit event
 DELETE FROM gossip_menu WHERE entry=5738 OR (entry=5739 AND text_id=6913);
