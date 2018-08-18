@@ -26,7 +26,7 @@ INSERT INTO gossip_menu VALUES
 (5739, 6913, 0, @CONDITION);
 
 DELETE FROM gossip_menu_option WHERE menu_id=5738 OR (menu_id=5739 AND id=0);
-INSERT INTO gossip_menu_option VALUES
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES
 (5739, 0, 0, 'Um, I\'m taking some prisoners we found outside before the king for punishment.', 1, 1, 5738, 0, 0, 0, 0, '', @CONDITION),
 (5738, 0, 0, 'Er... that\'s how I found them.  I wanted to show the king that they were a threat!  Say Captain... I overheard Guard Fengus calling you a fat, useless gnoll lover!', 1, 1, -1, 0, 573801, 0, 0, '', 0);
 

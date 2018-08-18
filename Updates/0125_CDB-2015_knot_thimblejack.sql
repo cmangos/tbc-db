@@ -25,7 +25,7 @@ INSERT INTO conditions VALUES
 
 -- Added missing gossip menu option for each pattern (tailoring & leatherworking)
 DELETE FROM gossip_menu_option WHERE menu_id=5667 AND id IN (2, 3);
-INSERT INTO gossip_menu_option VALUES
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES
 (5667, 2, 0, 'Please teach me how to make a Gordok Ogre Suit!', 1, 1, -1, 0, 566701, 0, 0, '', @COND + 7),  -- Tailoring
 (5667, 3, 0, 'Please teach me how to make a Gordok Ogre Suit!', 1, 1, -1, 0, 566702, 0, 0, '', @COND + 8);  -- Leatherworking
 
