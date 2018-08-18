@@ -14751,7 +14751,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bristleback Battleboar
 ('295401','2954','9','0','100','0','5','20','0','0','11','3385','0','0','0','0','0','0','0','0','0','0','Bristleback Battleboar - Cast Boar Charge'),
 -- Plainstrider (2955)- NSR
--- Adult Plainstrider (2956) - NSR
+-- Adult Plainstrider 2956
+('295601','2956','2','0','100','0','25','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Adult Plainstrider - Flee at 25% HP'),
 -- Elder Plainstrider
 ('295701','2957','0','0','100','1','6000','10000','19000','24000','11','7272','0','0','0','0','0','0','0','0','0','0','Elder Plainstrider - Cast Dust Cloud'),
 -- Prairie Wolf
@@ -16921,11 +16922,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('324001','3240','0','0','100','1','4000','9000','9000','16000','11','5401','1','0','0','0','0','0','0','0','0','0','Stormsnout - Cast Lizard Bolt'),
 -- Greater Plainstrider 3244
 ('324401','3244','0','0','100','1','7000','9000','17000','21000','11','7272','0','0','0','0','0','0','0','0','0','0','Greater Plainstrider - Cast Dust Cloud'),
-('324402','3244','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Greater Plainstrider - Flee at 15% HP'),
+('324402','3244','2','0','100','0','25','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Greater Plainstrider - Flee at 25% HP'),
 -- Ornery Plainstrider 3245
 ('324501','3245','2','0','100','0','40','0','0','0','11','3019','0','0','0','0','0','0','0','0','0','0','Ornery Plainstrider - Cast Enrage at 40% HP'),
 -- Fleeting Plainstrider 3246
-('324601','3246','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Fleeting Plainstrider - Flee at 15% HP'),
+('324601','3246','2','0','100','0','25','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Fleeting Plainstrider - Flee at 25% HP'),
 -- Thunderhawk Hatchling
 ('324701','3247','1','0','100','1','1000','1000','600000','600000','11','325','0','1','0','0','0','0','0','0','0','0','Thunderhawk Hatchling - Cast Lightning Shield on Spawn'),
 ('324702','3247','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Thunderhawk Hatchling - Enable Dynamic Movement and Set Phase 1 on Aggro'),
@@ -19543,9 +19544,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Debilitated Mag'har Grunt - spell_dummy_npc
 ('1684701','16847','8','0','100','0','29314','-1','0','0','48','1','2','0','1','-742','-743','-744','0','0','0','0','Debilitated Mag\'har Grunt - Set Random Movement and Random Yell on Spell Hit'),
 -- Marauding Crust Burster (16857) - npc_burster_worm
--- Deranged Helboar (3.0.3 Official Data - Logs Only)
-('1686301','16863','1','0','100','0','1000','1000','0','0','11','33908','0','0','0','0','0','0','0','0','0','0','Deranged Helboar - Cast Burning Spikes on Spawn'),
-('1686302','16863','2','0','100','0','30','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Deranged Helboar - Cast Enrage at 30% HP'),
+-- Deranged Helboar 16863 (3.0.3 Official Data - Logs Only)
+('1686301','16863','1','0','100','0','1000','1000','0','0','11','33908','0','0','0','0','0','0','0','0','0','0','Deranged Helboar - Cast Burning Spikes OOC'),
+('1686302','16863','2','0','100','0','30','0','0','0','11','8599','0','0','54','-46','0','0','0','0','0','0','Deranged Helboar - Cast Enrage at 30% HP'),
 ('1686303','16863','6','0','100','0','0','0','0','0','11','37689','0','7','0','0','0','0','0','0','0','0','Deranged Helboar - Cast Tell Dog I Just Died! on Death'),
 -- Shattered Hand Grunt (3.0.3 Official Data - Logs Only)
 ('1686701','16867','0','0','100','1','4200','6700','15600','20700','11','11976','1','0','0','0','0','0','0','0','0','0','Shattered Hand Grunt - Cast Strike'),
