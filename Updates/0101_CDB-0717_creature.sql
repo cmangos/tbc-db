@@ -5,6 +5,7 @@ SET @PROPHET := 160689;
 
 DELETE FROM `creature` WHERE `id`=15308;
 DELETE FROM `creature` WHERE `guid` IN (42969, 42983, 42984) AND id=11880;
+DELETE FROM `creature_addon` WHERE `guid` IN (42969, 42983, 42984);
 
 DELETE FROM `creature` WHERE `guid` BETWEEN @PROPHET + 00 AND @PROPHET + 05;
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
