@@ -7654,7 +7654,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('269308','2693','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Highvale Marksman - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Highvale Ranger
 ('269401','2694','9','0','100','1','0','30','30000','35000','11','6950','4','32','0','0','0','0','0','0','0','0','Highvale Ranger - Cast Faerie Fire'),
--- Shadra (2707) - NSR
+-- Shadra 2707
+('270701','2707','4','0','100','0','0','0','0','0','11','8601','0','34','11','13299','0','34','0','0','0','0','Shadra - Cast Slowing Poison and Poison Proc on Aggro'),
+('270702','2707','9','0','100','1','0','10','9000','10000','11','28991','4','32','0','0','0','0','0','0','0','0','Shadra - Cast Web'),
 -- Mangy Silvermane
 ('292301','2923','9','0','100','1','0','30','15000','45000','11','8139','4','32','0','0','0','0','0','0','0','0','Mangy Silvermane - Cast Fevered Fatigue'),
 -- Silvermane Wolf (2924) - NSR
