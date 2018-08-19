@@ -7147,7 +7147,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('246404','2464','2','0','100','0','30','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Commander Aggro\'gosh - Cast Enrage at 30% HP'),
 -- Skymane Gorilla
 ('252101','2521','0','0','100','1','8600','8600','16500','27700','11','5568','0','0','0','0','0','0','0','0','0','0','Skymane Gorilla - Cast Trample'),
--- Jaguero Stalker 2522 - NSR
+-- Jaguero Stalker 2522
+('252201','2522','1','0','100','0','1000','1000','0','0','11','12787','0','32','11','30831','0','32','0','0','0','0','Jaguero Stalker - Cast Trash and Stealth OOC'),
 -- Yenniku 2530 - mob_yenniku
 -- Zanzil the Outcast 2534
 ('253401','2534','0','0','100','0','5000','10000','0','0','11','8832','0','0','0','0','0','0','0','0','0','0','Zanzil the Outcast - Cast Ward of Zanzil'),
