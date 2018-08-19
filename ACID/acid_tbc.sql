@@ -7620,7 +7620,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('265409','2654','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Witherbark Caller - Flee at 15% HP (Phase 3)'),
 ('265410','2654','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Witherbark Caller - Set Phase 0 on Evade'),
 -- Green Sludge (2655) - NSR
--- Jade Ooze (2656) - NSR
+-- Jade Ooze 2656
+('265601','2656','0','0','100','1','6800','8300','37900','46300','11','6907','1','32','0','0','0','0','0','0','0','0','Jade Ooze - Cast Diseased Slime'),
 -- Trained Razorbeak
 ('265701','2657','9','0','100','1','0','5','15000','19000','11','3147','1','0','0','0','0','0','0','0','0','0','Trained Razorbeak - Cast Rend Flesh'),
 -- Razorbeak Gryphon (2658) - NSR
@@ -10050,7 +10051,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('392607','3926','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Thistlefur Pathfinder - Flee at 15% HP (Phase 2)'),
 ('392608','3926','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Thistlefur Pathfinder - Set Phase 1 and Set Melee Weapon Model on Evade'),
 -- Rotting Slime (3.3.0 Official Data)
-('392801','3928','0','0','100','1','6800','8300','37900','46300','11','6907','1','0','0','0','0','0','0','0','0','0','Rotting Slime - Cast Diseased Slime'),
+('392801','3928','0','0','100','1','6800','8300','37900','46300','11','6907','1','32','0','0','0','0','0','0','0','0','Rotting Slime - Cast Diseased Slime'),
 ('392802','3928','6','0','75','0','0','0','0','0','11','6464','0','7','0','0','0','0','0','0','0','0','Rotting Slime - Cast Summon Rusty Chest on Death'),
 -- Shadethicket Oracle (3931) - NSR
 -- Bloodtooth Guard
