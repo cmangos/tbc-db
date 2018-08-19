@@ -14760,7 +14760,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('295307','2953','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bristleback Shaman - Set Phase 0 on Evade'),
 -- Bristleback Battleboar
 ('295401','2954','9','0','100','0','5','20','0','0','11','3385','0','0','0','0','0','0','0','0','0','0','Bristleback Battleboar - Cast Boar Charge'),
--- Plainstrider (2955)- NSR
+-- Plainstrider 2955
+('295501','2955','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Plainstrider - Flee at 15% HP'),
 -- Adult Plainstrider 2956
 ('295601','2956','2','0','100','0','25','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Adult Plainstrider - Flee at 25% HP'),
 -- Elder Plainstrider
