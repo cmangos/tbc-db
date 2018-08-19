@@ -7619,7 +7619,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('265408','2654','2','0','100','0','15','0','0','0','49','0','0','0','22','3','0','0','0','0','0','0','Witherbark Caller - Disable Dynamic Movement and Set Phase 3 at 15% HP'),
 ('265409','2654','2','7','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Witherbark Caller - Flee at 15% HP (Phase 3)'),
 ('265410','2654','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Witherbark Caller - Set Phase 0 on Evade'),
--- Green Sludge (2655) - NSR
+-- Green Sludge 2655
+('265501','2655','11','0','100','0','0','0','0','0','11','9460','0','34','0','0','0','0','0','0','0','0','Green Sludge - Cast Corrosive Ooze on Spawn'),
 -- Jade Ooze 2656
 ('265601','2656','0','0','100','1','6800','8300','37900','46300','11','6907','1','32','0','0','0','0','0','0','0','0','Jade Ooze - Cast Diseased Slime'),
 -- Trained Razorbeak
@@ -27080,8 +27081,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Irradiated Slime (3.3.5a Official Data)
 ('621801','6218','1','0','100','2','1000','1000','0','0','11','21862','0','32','0','0','0','0','0','0','0','0','Irradiated Slime - Cast Radiation Visual OOC'),
 ('621802','6218','6','0','100','2','0','0','0','0','11','10341','0','7','0','0','0','0','0','0','0','0','Irradiated Slime - Cast Radiation Cloud on Death'),
--- Corrosive Lurker (NEED MORE DATA FOR SPELL CAST) - ??? Did not cast at all???
-('621901','6219','9','0','100','3','0','5','11000','17000','11','9459','1','0','0','0','0','0','0','0','0','0','Corrosive Lurker - Cast Corrosive Ooze'),
+-- Corrosive Lurker 6219
+('621901','6219','11','0','100','0','0','0','0','0','11','9460','0','34','0','0','0','0','0','0','0','0','Corrosive Lurker - Cast Corrosive Ooze on Spawn'),
 -- Irradiated Horror (3.3.5a Official Data)
 ('622001','6220','1','0','100','2','1000','1000','0','0','11','21862','0','32','0','0','0','0','0','0','0','0','Irradiated Horror - Cast Radiation Visual OOC'),
 ('622002','6220','0','0','100','3','15600','19300','9700','21700','11','8211','1','0','0','0','0','0','0','0','0','0','Irradiated Horror - Cast Chain Burn'),
