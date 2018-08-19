@@ -10,6 +10,7 @@ DBComment:
 * @CGUID+72 - @CGUID+75 were changed to 17940 at some point
 * changed position for @CGUID+75 spawn due to extreme desync pathing befor: -33.9556, -353.67, 78.0838, 0.242071, recheck spawns @CGUID+75 and @CGUID+74
 * path @CGUID+48 and @CGUID+52 are unused atm, check if legit
+* Core Issue: Pooling overwrites spawnmask making it possible to have heroic chest in normal, chests need some sort of chanced solution where the maxchance of a pool might be below 100%
 EndDBScriptData */
 
 SET @CGUID := 5470000; -- creatures
@@ -836,7 +837,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+71, 181278, 547, 3, 57.38564, -76.99403, -2.584514, 3.979355, 0, 0, -0.9135447, 0.4067384, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+72, 181556, 547, 3, -71.34264, -282.6859, -1.401498, 0.7330382, 0, 0, 0.3583679, 0.9335805, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+73, 181556, 547, 3, 0.00864, -186.6674, -1.555333, 3.944446, 0, 0, -0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+74, 181569, 547, 3, 0.00864, -186.6674, -1.555333, 3.944446, 0, 0, -0.9205046, 0.3907318, 86400, 86400, 255, 1); -- Rich Adamantite Deposit
+(@OGUID+74, 181569, 547, 3, 0.00864, -186.6674, -1.555333, 3.944446, 0, 0, -0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+75, 184933, 547, 1, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest -- guessed
+(@OGUID+76, 184937, 547, 2, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest -- guessed
 
 -- ======
 -- EVENTS
@@ -888,6 +891,7 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- POOLING
 -- =======
 
+DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN @PGUID AND @PGUID+99;
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 (@PGUID+54, @PGUID+53, 0, 'Ragveil / Flame Cap - Pool 1'),
 (@PGUID+55, @PGUID+53, 0, 'Ragveil / Flame Cap - Pool 2'),
@@ -916,6 +920,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+12, 1, 'Slave Pens - Coilfang Scale-Healer / Coilfang Soothsayer'),
 (@PGUID+13, 1, 'Slave Pens - Coilfang Soothsayer / Coilfang Scale-Healer'),
 (@PGUID+14, 1, 'Slave Pens - Coilfang Soothsayer / Coilfang Scale-Healer'),
+(@PGUID+49, 1, 'Slave Pens - Master Chest Pool'),
 (@PGUID+50, 4, 'Slave Pens - Master Mineral Pool'),
 (@PGUID+51, 4, 'Slave Pens - Master Anchient Lichen (181278) Pool'),
 (@PGUID+52, 3, 'Slave Pens - Master Felweed (181270) Pool'),
@@ -965,6 +970,8 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@OGUID+75, @PGUID+49, 0, 'Slave Pens - Solid Fel Iron Chest (184933)'),
+(@OGUID+76, @PGUID+49, 0, 'Slave Pens - Solid Adamantite Chest (184937)'),
 (@OGUID+1, @PGUID+52, 0, 'Slave Pens - Felweed (181270)'),
 (@OGUID+2, @PGUID+52, 0, 'Slave Pens - Felweed (181270)'),
 (@OGUID+3, @PGUID+54, 0, 'Slave Pens - Ragveil (181275) - Pool 1'),
