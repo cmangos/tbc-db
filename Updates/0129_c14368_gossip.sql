@@ -9,8 +9,8 @@ UPDATE creature_template SET GossipMenuId=5747, NpcFlags=NpcFlags|1 WHERE entry=
 DELETE FROM `gossip_menu` WHERE `entry`=5747 OR (entry BETWEEN 50004 AND 50008);
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES 
 (5747, 6925, 0, 0),
-(5747, 6926, 0, 1511), -- q.7481 (H) or q.7482 (A) Rewarded
-(5747, 50218, 0, 1512), -- q.7508 Available
+(5747, 6926, 0, 1156), -- q.7481 (H) or q.7482 (A) Rewarded
+(5747, 50218, 0, 1157), -- q.7508 Available
 (50004, 50219, 0, 0),
 (50005, 50220, 0, 0),
 (50006, 50221, 0, 0),
@@ -19,17 +19,16 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 
 DELETE FROM `gossip_menu_option` WHERE `menu_id` = 5747 OR (menu_id BETWEEN 50004 AND 50008);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES
-(5747, 0, 0, 'Fascinating, Lorekeeper. Continue please.', 1, 1, 50004, 0, 0, 0, 0, NULL, 1512),
+(5747, 0, 0, 'Fascinating, Lorekeeper. Continue please.', 1, 1, 50004, 0, 0, 0, 0, NULL, 1157),
 (50004, 0, 0, '(Continue.)', 1, 1, 50005, 0, 0, 0, 0, NULL, 0),
 (50005, 0, 0, '(Continue.)', 1, 1, 50006, 0, 0, 0, 0, NULL, 0),
 (50006, 0, 0, '(Continue.)', 1, 1, 50007, 0, 0, 0, 0, NULL, 0),
 (50007, 0, 0, 'Eh?', 1, 1, 50008, 0, 0, 0, 0, NULL, 0),
 (50008, 0, 0, 'Maybe... What do I do now?', 1, 1, -1, 0, 5000801, 0, 0, NULL, 0);
 
-DELETE FROM `conditions` WHERE `condition_entry` BETWEEN 1511 AND 1512;
+DELETE FROM `conditions` WHERE `condition_entry`=1157;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES 
-(1511, -2, 1154, 1155), -- q.7481 (H) or q.7482 (A) Rewarded
-(1512, 19, 7508, 0); -- q.7508 Available
+(1157, 19, 7508, 0); -- q.7508 Available
 
 DELETE FROM `dbscripts_on_gossip` WHERE `id` IN(5000801);
 INSERT INTO `dbscripts_on_gossip` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
