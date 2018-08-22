@@ -13686,10 +13686,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Major Mills (23905) - NSR
 -- Lurking Shark (23928) - NSR
 -- Gavis Greyshield
-('2394101','23941','2','0','100','0','20','0','0','0','1','-992','0','0','24','0','0','0','22','1','0','0','Gavis Greyshield - Say and Evade and Set Phase 1 at 20% HP'),
-('2394102','23941','21','5','100','0','0','0','0','0','11','42660','0','16','2','35','0','0','1','-993','0','0','Gavis Greyshield - Cast Gavis Greyshield Credit and Become Friendly and Say on Reached Home (Phase 1)'),
-('2394103','23941','21','5','100','0','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Gavis Greyshield - Set Phase 2 on Reached Home (Phase 1)'),
-('2394104','23941','1','3','100','1','120000','120000','120000','120000','2','54','0','0','22','0','0','0','0','0','0','0','Gavis Greyshield - Become Hostile After 2 Minutes OOC and Set Phase 0 (Phase 2)'),
+('2394101','23941','11','0','100','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Gavis Greyshield - Set Invincible at 1 HP on Spawn'),
+('2394102','23941','2','0','100','0','10','0','0','0','53','10124','0','0','0','0','0','0','0','0','0','0','Gavis Greyshield - Start Relay Script 10124 at 10% HP'),
 -- Andello Porter (23942) - NSR
 -- Lieutenant Nath (23949) - NSR
 -- Lieutenant Khand (23950) - NSR
@@ -35601,8 +35599,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-989','By the forehead signet of Velen, I am saved!','0','0','0','17681','0'),
 ('-990','Mommy!','0','0','0','Common Text','0'),
 ('-991','You might wanna stand back. Fish guttin\' is a dirty job.','0','0','0','23896','1'),
-('-992','I surrender! Stay your blade!','0','0','0','23941','1'),
-('-993','I will go with you. Just spare my men. They\'re good lads who\'ve only made a mistake...','0','0','0','23941','1'),
+-- Reuse 992-993
 ('-994','Death is the price you shall pay for this insolence!','0','0','0','16329','0'),
 ('-995','Mortal fools! The ghouls of Deatholme will feast on your remains!','0','0','0','16329','0'),
 ('-996','Your deaths shall be slow and painful!','0','0','0','16329','0'),
