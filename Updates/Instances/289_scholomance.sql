@@ -713,10 +713,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+67, 181288, 289, 95.8052, 65.1433, 97.7323, 0.462622, 0, 0, 0, 0, 180, 180, 100, 1), -- Midsummer Bonfire
 (@OGUID+68, 181349, 289, 95.8052, 65.1433, 97.7323, 0.462622, 0, 0, 0, 0, 180, 180, 100, 1), -- Flame of the Scholomance
 (@OGUID+69, 181376, 289, 95.8052, 65.1433, 97.7323, 0.462622, 0, 0, 0, 0, 180, 180, 100, 1), -- Midsummer Bonfire Campfire Damage Trap
-(@OGUID+70, 300031, 289, 133.69, 91.67, 101.73, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- TEMP Scholomance Viewing Room
-(@OGUID+71, 300062, 289, -3.82, 141.88, 83.9, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- TEMP Ras Frostwhisper's Chamber
-(@OGUID+72, 300064, 289, -3.82, 141.88, 83.9, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- TEMP Haunted Locus
-(@OGUID+73, 300144, 289, 139.496, 174.816, 95.5388, 3.60657, 0, 0, 0.973096, -0.2304, 300, 300, 0, 1); -- TEMP The Great Ossuary
+(@OGUID+70, 176111, 289, 133.69, 91.67, 101.73, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Scholomance Viewing Room Spell Focus (DND)
+(@OGUID+71, 181049, 289, -3.82, 141.88, 83.9, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Kormok Brazier Spell Focus
+(@OGUID+72, 181096, 289, -3.82, 141.88, 83.9, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Brazier of Invocation Spell Focus 20 yd
+(@OGUID+73, 179746, 289, 139.496, 174.816, 95.5388, 3.60657, 0, 0, 0.973096, -0.2304, 300, 300, 0, 1); -- The Great Ossuary
 
 -- ======
 -- EVENTS

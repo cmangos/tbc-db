@@ -1768,10 +1768,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+394, 181288, 229, -15.5284, -364.131, 49.6099, 6.23491, 0, 0, 0, 0, 180, 180, 100, 1), -- Midsummer Bonfire
 (@OGUID+395, 181347, 229, -15.5284, -364.131, 49.6099, 6.23491, 0, 0, 0, 0, 180, 180, 100, 1), -- Flame of Blackrock Spire
 (@OGUID+396, 181376, 229, -15.5284, -364.131, 49.6099, 6.23491, 0, 0, 0, 0, 180, 180, 100, 1), -- Midsummer Bonfire Campfire Damage Trap
-(@OGUID+397, 300059, 229, -23.97, -451.98, -18.64, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- TEMP Voone's Chamber
-(@OGUID+398, 300063, 229, 25.92, -537.7, 110.93, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- TEMP The Beast's Chamber
-(@OGUID+399, 300064, 229, -23.97, -451.98, -18.64, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- TEMP Haunted Locus
-(@OGUID+400, 300064, 229, 25.92, -537.7, 110.93, 0, 0, 0, 0, 0, 180, 180, 0, 1); -- TEMP Haunted Locus
+(@OGUID+397, 181046, 229, -23.97, -451.98, -18.64, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Mor Grayhoof Brazier Spell Focus
+(@OGUID+398, 181050, 229, 25.92, -537.7, 110.93, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Lord Valthalak Brazier Spell Focus
+(@OGUID+399, 181096, 229, -23.97, -451.98, -18.64, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Brazier of Invocation Spell Focus 20 yd
+(@OGUID+400, 181096, 229, 25.92, -537.7, 110.93, 0, 0, 0, 0, 0, 180, 180, 0, 1); -- Brazier of Invocation Spell Focus 20 yd
 
 -- ======
 -- EVENTS

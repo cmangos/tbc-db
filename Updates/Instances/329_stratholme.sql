@@ -1845,8 +1845,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+661, 181288, 329, 3685.87, -3163.12, 126.721, 3.79137, 0, 0, 0, 0, 180, 180, 100, 1), -- Midsummer Bonfire
 (@OGUID+662, 181348, 329, 3685.87, -3163.12, 126.721, 3.79137, 0, 0, 0, 0, 180, 180, 100, 1), -- Flame of Stratholme
 (@OGUID+663, 181376, 329, 3685.87, -3163.12, 126.721, 3.79137, 0, 0, 0, 0, 180, 180, 100, 1), -- Midsummer Bonfire Campfire Damage Trap
-(@OGUID+664, 300061, 329, 3423.47, -3055.73, 136.581, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- TEMP The Crimson Throne
-(@OGUID+665, 300064, 329, 3423.47, -3055.73, 136.581, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- TEMP Haunted Locus
+(@OGUID+664, 181048, 329, 3423.47, -3055.73, 136.581, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Jarien and Sothos Brazier Spell Focus
+(@OGUID+665, 181096, 329, 3423.47, -3055.73, 136.581, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Brazier of Invocation Spell Focus 20 yd
 
 -- TBC+ only (Paladin quest)
 (@OGUID+800, 182068, 329, 3688.13, -3643.51, 141.964, -2.80998, 0, 0, 0, 0, 180, 180, 100, 1),
