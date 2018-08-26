@@ -11488,7 +11488,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Moonstalker Matriarch
 ('207101','2071','11','0','100','0','0','0','0','0','11','8594','0','0','0','0','0','0','0','0','0','0','Moonstalker Matriarch - Cast Summon Moonstalker Runt on Spawn'),
 -- Cracked Golem (2156) - NSR
--- Stone Behemoth (2157) - NSR
+-- Stone Behemoth 2157
+('215701','2157','0','0','100','1','5000','11000','13000','16000','11','5810','0','0','0','0','0','0','0','0','0','0','Stone Behemoth - Cast Stone Skin'),
 -- Gravelflint Scout
 ('215801','2158','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gravelflint Scout - Flee at 15% HP'),
 -- Gravelflint Bonesnapper
