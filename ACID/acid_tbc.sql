@@ -11587,7 +11587,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Darkshore Thresher
 ('218701','2187','9','0','100','1','0','5','45000','50000','11','6016','1','0','0','0','0','0','0','0','0','0','Elder Darkshore Thresher - Cast Pierce Armor'),
 -- Deep Sea Threshadon (2188)- NSR
--- Vile Sprite (2189) - NSR
+-- Vile Sprite 2189
+('218901','2189','0','0','100','1','4000','9000','8000','17000','11','744','1','32','0','0','0','0','0','0','0','0','Vile Sprite - Cast Poison'),
 -- Wild Grell
 ('219001','2190','2','0','100','1','30','0','60000','65000','11','5915','0','0','0','0','0','0','0','0','0','0','Wild Grell - Cast Crazed at 30% HP'),
 -- Licillin
