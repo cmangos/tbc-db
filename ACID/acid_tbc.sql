@@ -4227,7 +4227,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('224901','2249','2','0','100','0','20','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Ferocious Yeti - Cast Enrage at 20% HP'),
 -- Syndicate Rogue
 ('226001','2260','33','0','100','1','0','0','8000','12000','11','37685','1','0','0','0','0','0','0','0','0','0','Syndicate Rogue - Cast Backstab on Facing Target Back'),
--- Syndicate Watchman (2261) - NSR
+-- Syndicate Watchman 2261
+('226101','2261','1','0','100','0','1000','1000','0','0','11','3582','0','32','0','0','0','0','0','0','0','0','Syndicate Watchman - Cast Torch Burst'),
+('226102','2261','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Watchman - Flee at 15% HP'),
 -- Marshal Redpath (2263) - NSR
 -- Hillsbrad Tailor
 ('226401','2264','33','0','100','1','0','0','7000','9000','11','2590','1','0','0','0','0','0','0','0','0','0','Hillsbrad Tailor - Cast Backstab on Facing Target Back'),
