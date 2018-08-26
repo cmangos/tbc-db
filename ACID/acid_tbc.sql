@@ -26309,10 +26309,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1799105','17991','2','0','100','7','20','0','120000','120000','11','34970','0','1','1','-46','0','0','0','0','0','0','Rokmar the Crackler - Cast Enrage at 20% HP'),
 -- Mennu Earthgrab Totem - TotemAI
 -- Mennu Stoneskin Totem - TotemAI
--- Mennu Fire Nova Totem (KEPT PREVENT COMBAT MOVEMENT ON PURPOSE - NEED BETTER SOLUTION IF AT ALL FOR THIS TO PREVENT TOTEM FROM CHASING PLAYERS)
-('1817901','18179','1','0','100','6','0','0','0','0','20','0','0','0','21','0','0','0','0','0','0','0','Mennu Fire Nova Totem - Prevent Combat Movement and Prevent Melee on Spawn'),
-('1817902','18179','0','0','100','6','5000','5000','0','0','11','30687','1','0','0','0','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Explode and Self Kill'),
-('1817903','18179','8','0','100','7','0','127','0','0','11','30687','1','0','0','0','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Explode When Hit By Spell and Self Kill'),
+-- Mennu Fire Nova Totem 18179 -- ss.33134
+('1817901','18179','11','0','100','6','0','0','0','0','20','0','0','0','21','0','0','0','42','1','0','0','Mennu Fire Nova Totem - Prevent Melee and Prevent Movement and Set Invicibility at 1 HP on Spawn'),
+('1817902','18179','29','0','100','6','18000','18000','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Generic Timer'),
+('1817903','18179','2','0','100','6','99','0','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Damage'),
 -- Wastewalker Captive
 ('1820601','18206','10','0','20','38','1','15','0','0','1','-674','-675','0','1','-676','-677','0','0','0','0','0','Wastewalker Captive - Random Say on OOC LOS'),
 -- Mennu Healing Ward - TotemAI
