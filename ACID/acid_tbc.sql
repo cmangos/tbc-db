@@ -24326,12 +24326,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2193101','21931','11','0','100','38','0','0','0','0','3','0','18933','0','3','0','4566','0','3','0','20588','0','Avian Flye - randomized model on Spawn'),
 -- Anzu (23035) - boss_anzu
 -- Brood of Anzu (23132) - NSR
--- Hawk Spirit (4.3.4 Official Data - Normal/Heroic)
-('2313401','23134','8','0','100','5','0','7','0','0','11','40237','0','0','0','0','0','0','0','0','0','0','Hawk Spirit (Heroic) - Cast Protection of the Hawk on SpellHit'),
--- Falcon Spirit (4.3.4 Official Data - Normal/Heroic)
-('2313501','23135','8','0','100','5','0','7','0','0','11','40241','0','0','0','0','0','0','0','0','0','0','Falcon Spirit (Heroic) - Cast Speed of the Falcon on SpellHit'),
--- Eagle Spirit (4.3.4 Official Data - Normal/Heroic)
-('2313601','23136','8','0','100','5','0','7','0','0','11','40240','0','0','0','0','0','0','0','0','0','0','Eagle Spirit (Heroic) - Cast Spite of the Eagle on SpellHit'),
+-- Hawk Spirit - npc_anzu_bird_spirit
+-- Falcon Spirit - npc_anzu_bird_spirit
+-- Eagle Spirit - npc_anzu_bird_spirit
 -- Dancing Flames (25305) - npc_dancing_flames
 
 
