@@ -2241,8 +2241,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blind Mary (302) - NSR
 -- Sven Yorgen (311) - NSR
 -- Eliza (3.0.3 Official Data)
-('31401','314','11','0','100','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Eliza - Cast Birth on Spawn'),
-('31402','314','4','0','100','0','0','0','0','0','1','-460','-461','0','49','1','0','0','22','1','0','0','Eliza - Say and Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('31401','314','1','0','100','0','4000','4000','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Eliza - Remove UnitFlags 256 on Generic Timer'),
+('31402','314','4','0','100','0','0','0','0','0','54','-460','6','0','49','1','0','0','22','1','0','0','Eliza - Say and Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('31403','314','9','5','100','1','0','40','3400','5000','11','20819','1','0','0','0','0','0','0','0','0','0','Eliza - Cast Frostbolt (Phase 1)'),
 ('31404','314','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Eliza - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
 ('31405','314','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Eliza - Disable Dynamic Movement at 0-8 Yards'),
@@ -35128,8 +35128,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-457','Our cause falls on deaf ears beyond the thick, stone walls of Stormwind.','0','0','0','271','0'),
 ('-458','The people of Darkshire expect more from the Council.  We cannot let them suffer from this unholy wrath which plagues us.','0','0','0','269','0'),
 ('-459','Undead are crawling all over the land.  Where is the Stormwind Army?','0','0','0','263','0'),
-('-460','Wait...you are not my husband.  But he must have sent you.  And you...look..delicious!','0','0','0','314','0'),
-('-461','Aber?  Is that you...?  Oh...I\'m so hungry, Aber!  SO HUNGRY!!','0','0','0','314','0'),
+('-460','Wait...you are not my husband.  But he must have sent you.  And you...look..delicious!','0','0','7','314','0'),
+-- Reuse 461
 ('-462','The Council of Duskwood must take action.  Evil lingers in the air.','0','0','0','269','0'),
 ('-463','I will end this quickly...','10385','1','0','17826','0'),
 ('-464','We fight to the death!','10384','1','0','17826','0'),
