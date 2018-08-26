@@ -11657,7 +11657,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tide Crawler (2232) - NSR
 -- Encrusted Tide Crawler
 ('223301','2233','9','0','100','1','0','5','7000','12000','11','3427','1','32','0','0','0','0','0','0','0','0','Encrusted Tide Crawler - Cast Infected Wound'),
--- Young Reef Crawler (2234) - NSR
+-- Young Reef Crawler 2234
+('223401','2234','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Young Reef Crawler - Flee at 15% HP'),
 -- Reef Crawler
 ('223501','2235','9','0','100','1','0','5','8000','13000','11','12166','1','0','0','0','0','0','0','0','0','0','Reef Crawler - Cast Muscle Tear'),
 -- Raging Reef Crawler
