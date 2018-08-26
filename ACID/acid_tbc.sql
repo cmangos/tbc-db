@@ -7609,7 +7609,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Witherbark Zealot
 ('265001','2650','2','0','100','1','30','0','120000','125000','11','8599','0','1','1','-106','0','0','0','0','0','0','Witherbark Zealot - Cast Enrage at 30% HP'),
 -- Witherbark Hideskinner
-('265101','2651','33','0','100','1','0','0','5000','9000','11','8721','1','0','0','0','0','0','0','0','0','0','Witherbark Hideskinner - Cast Backstab on Facing Target Back'),
+('265101','2651','33','0','100','1','0','0','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Witherbark Hideskinner - Cast Backstab on Facing Target Back'),
 ('265102','2651','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Witherbark Hideskinner - Flee at 15% HP'),
 -- Witherbark Venomblood
 ('265201','2652','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Witherbark Venomblood - Flee at 15% HP'),
@@ -16329,7 +16329,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Alchemist Pestlezugg (5594) - NSR
 -- Wastewander Rogue (4.0.3 Official Data)
 ('561501','5615','1','0','100','0','1000','1000','0','0','11','22766','0','32','0','0','0','0','0','0','0','0','Wastewander Rogue - Cast Sneak OOC'),
-('561502','5615','33','0','100','1','0','0','11500','18900','11','8721','1','0','0','0','0','0','0','0','0','0','Wastewander Rogue - Cast Backstab on Facing Target Back'),
+('561502','5615','33','0','100','1','0','0','11500','18900','11','7159','1','0','0','0','0','0','0','0','0','0','Wastewander Rogue - Cast Backstab on Facing Target Back'),
 ('561503','5615','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Wastewander Rogue - Flee at 15% HP'),
 -- Wastewander Thief (4.0.3 Official Data)
 ('561601','5616','0','0','100','1','10100','16800','18100','36200','11','6713','1','0','0','0','0','0','0','0','0','0','Wastewander Thief - Cast Disarm'),
@@ -30161,7 +30161,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('484904','4849','2','0','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowforge Archaeologist - Flee at 15% HP'),
 -- Stonevault Cave Lurker (4.0.1 Official Data) - Backstab Was Removed in 4.0.1
 ('485001','4850','1','0','100','2','1000','1000','0','0','11','10022','0','32','11','22766','0','32','0','0','0','0','Stonevault Cave Lurker - Cast Deadly Poison and Sneak OOC'),
-('485002','4850','33','0','100','3','0','0','4800','16900','11','8721','1','0','0','0','0','0','0','0','0','0','Stonevault Cave Lurker - Cast Backstab on Facing Target Back'),
+('485002','4850','33','0','100','3','0','0','4800','16900','11','7159','1','0','0','0','0','0','0','0','0','0','Stonevault Cave Lurker - Cast Backstab on Facing Target Back'),
 ('485003','4850','2','0','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Stonevault Cave Lurker - Flee at 15% HP'),
 -- Stonevault Rockchewer (3.1.1 Official Data)
 ('485101','4851','2','0','100','3','50','0','120000','120000','11','8599','0','0','1','-106','0','0','0','0','0','0','Stonevault Rockchewer - Cast Enrage at 50% HP'),
@@ -30281,7 +30281,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('709104','7091','2','0','100','2','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Shadowforge Ambusher - Flee at 15% HP'),
 -- Lore Keeper of Norgannon (7172) - NSR
 -- Stonevault Ambusher (3.3.5a Official Data)
-('717501','7175','33','0','100','3','0','0','5000','9000','11','8721','1','0','0','0','0','0','0','0','0','0','Stonevault Ambusher - Cast Backstab on Facing Target Back'),
+('717501','7175','33','0','100','3','0','0','5000','9000','11','7159','1','0','0','0','0','0','0','0','0','0','Stonevault Ambusher - Cast Backstab on Facing Target Back'),
 ('717502','7175','2','0','100','2','50','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Stonevault Ambusher - Cast Enrage at 50% HP'),
 -- Ancient Stone Keeper (4.0.1 Official Data)
 ('720601','7206','0','0','100','3','4300','7800','30100','45400','11','10132','0','0','0','0','0','0','0','0','0','0','Ancient Stone Keeper - Cast Sand Storms'),
