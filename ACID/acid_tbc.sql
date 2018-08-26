@@ -36184,17 +36184,15 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 ('34','57.58','-537.266','110.935','3.1','7200000','16042');
 
 -- =======================================================
--- Random Templates used by ACID
+-- Random Templates used by ACID (Check for ids used elsewhere)
+-- SELECT * FROM `dbscript_random_templates` WHERE `id` BETWEEN 0 AND 30000;
 -- =======================================================
 -- Classic IDs 0 - 9999
 REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
--- 1 IN-USE
--- 2 IN-USE
 (3,0,-853,0,'Varimathras 2425 - Random Aggro Texts'),
 (3,0,-854,0,'Varimathras 2425 - Random Aggro Texts'),
 (3,0,-855,0,'Varimathras 2425 - Random Aggro Texts'),
 (3,0,-856,0,'Varimathras 2425 - Random Aggro Texts'),
--- 4 - 5 RE-USE
 (6,0,-1559,0,'8506 - Random Spawn Texts'),
 (6,0,-1560,0,'8506 - Random Spawn Texts'),
 (6,0,-1561,0,'8506 - Random Spawn Texts'),
@@ -36205,12 +36203,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (6,0,-1566,0,'8506 - Random Spawn Texts'),
 (6,0,-1567,0,'8506 - Random Spawn Texts'),
 (6,0,-1568,0,'8506 - Random Spawn Texts');
--- 9000 IN-USE
 
 -- TBC IDs 10000 - 19999
 REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
--- 10000 - 10003 IN-USE
--- PLEASE RE-USE 10004
 (10005,0,-482,0,'5355/16769/1410 - Random Texts'),
 (10005,0,-483,0,'5355/16769/1410 - Random Texts'),
 (10005,0,-484,0,'5355/16769/1410 - Random Texts'),
@@ -36221,7 +36216,6 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10006,0,-280,0,'5355/16769/1410 - Random Aggro Texts'),
 (10006,0,-281,0,'5355/16769/1410 - Random Aggro Texts'),
 (10006,0,-282,0,'5355/16769/1410 - Random Aggro Texts'),
--- 10007 - 10008 IN-USE
 (10009,0,-650,0,'21044 - 16213 - Random OOC Text Emotes'),
 (10009,0,-651,0,'21044 - 16213 - Random OOC Text Emotes'),
 (10009,0,-652,0,'21044 - 16213 - Random OOC Text Emotes'),
@@ -36243,7 +36237,6 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10014,0,-695,0,'17899 - Random Death Texts'),
 (10014,0,-696,0,'17899 - Random Death Texts'),
 (10014,0,-697,0,'17899 - Random Death Texts'),
--- 10015 - 10016 IN-USE
 (10017,0,-77,0,'22465 - Random OOC Texts'),
 (10017,0,-78,0,'22465 - Random OOC Texts'),
 (10017,0,-79,0,'22465 - Random OOC Texts'),
@@ -36265,7 +36258,6 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10020,0,-804,0,'20216 - Random Yell on SpellHit'),
 (10020,0,-805,0,'20216 - Random Yell on SpellHit'),
 (10020,0,-806,0,'20216 - Random Yell on SpellHit'),
--- 10021 IN-USE
 (10022,0,-1507,0,'24393 - Random OOC Texts'),
 (10022,0,-1508,0,'24393 - Random OOC Texts'),
 (10022,0,-1509,0,'24393 - Random OOC Texts'),
@@ -36305,11 +36297,9 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10029,0,-498,0,'Generic Blades Edge Ogre On Death Text (If Player has Completed Quest 11000)'),
 (10029,0,-499,0,'Generic Blades Edge Ogre On Death Text (If Player has Completed Quest 11000)'),
 (10029,0,-500,0,'Generic Blades Edge Ogre On Death Text (If Player has Completed Quest 11000)'),
--- 10030 IN-USE
 (10031,0,-87,0,'18440 - Random Aggro Texts'),
 (10031,0,-88,0,'18440 - Random Aggro Texts'),
 (10031,0,-89,0,'18440 - Random Aggro Texts'),
--- 10032 IN-USE
 (10033,0,-334,0,'18683 - Random Aggro Texts'),
 (10033,0,-335,0,'18683 - Random Aggro Texts'),
 (10033,0,-336,0,'18683 - Random Aggro Texts'),
@@ -36376,7 +36366,6 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10046,0,-1242,0,'Generic Random Arakkoa Aggro Texts'),
 (10046,0,-1243,0,'Generic Random Arakkoa Aggro Texts'),
 (10046,0,-1244,0,'Generic Random Arakkoa Aggro Texts'),
--- 10047 - 10059 IN-USE
 (10060,0,-488,0,'17931 - Random Death Texts'),
 (10060,0,-489,0,'17931 - Random Death Texts'),
 (10061,0,-756,0,'17920 - Random Death Texts'),
@@ -36401,7 +36390,6 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10070,0,-789,0,'17932 - Random Death Texts'),
 (10071,0,-759,0,'17933 - Random Aggro Texts'),
 (10071,0,-760,0,'17933 - Random Aggro Texts'),
--- 10072 RE-USE
 (10073,0,-790,0,'3795 - Random Death Texts'),
 (10073,0,-791,0,'3795 - Random Death Texts'),
 (10074,0,-792,0,'17943 - Random Aggro Texts'),
@@ -36417,17 +36405,6 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10079,0,-850,0,'17905 - Random Death Texts'),
 (10079,0,-851,0,'17905 - Random Death Texts'),
 (10079,0,-852,0,'17905 - Random Death Texts');
--- 10080 - 10082 IN-USE
--- 10083 - 10099 RE-USE
--- 10100 - 10103 IN-USE
--- 10104 RE-USE
--- 10105 - 10112 IN-USE
--- 10113 - 10120 RE-USE
--- 10121 - 10125 IN-USE
--- 10126 - 10127 RE-USE
--- 10128 - 10129 IN-USE
--- 10130 - 10131 RE-USE
--- 10132 IN-USE
 
 -- WOTLK IDs 20000+
 -- REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
