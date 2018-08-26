@@ -16627,7 +16627,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Webwood Venomfang (1999) - NSR
 -- Webwood Silkspinner
 ('200001','2000','9','0','100','1','0','30','12000','17000','11','12023','1','0','0','0','0','0','0','0','0','0','Webwood Silkspinner - Cast Web'),
--- Giant Webwood Spider (2001) - NSR
+-- Giant Webwood Spider 2001
+('200101','2001','0','0','100','1','3000','7000','13000','17000','11','11918','1','0','0','0','0','0','0','0','0','0','Giant Webwood Spider - Cast Poison'),
 -- Rascal Sprite
 ('200201','2002','0','0','100','1','5000','12000','30000','40000','11','6950','1','0','0','0','0','0','0','0','0','0','Rascal Sprite - Cast Faerie Fire'),
 -- Shadow Sprite
