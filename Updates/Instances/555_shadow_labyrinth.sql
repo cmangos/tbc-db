@@ -943,7 +943,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+85, 181569, 555, 3, -413.6306, -150.9417, 12.3679, 1.7682, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+86, 181557, 555, 3, -343.0129, -289.6252, 18.65376, 3.926996, 0, 0, -0.9238787, 0.3826855, 86400, 86400, 255, 1), -- Khorium
 (@OGUID+87, 181557, 555, 3, -349.2330, -61.3079, 17.2363, 3.8378, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Khorium
-(@OGUID+88, 181557, 555, 3, -413.6306, -150.9417, 12.3679, 1.7682, 0, 0, 0, 0, 86400, 86400, 255, 1); -- Khorium
+(@OGUID+88, 181557, 555, 3, -413.6306, -150.9417, 12.3679, 1.7682, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Khorium
+(@OGUID+89, 184941, 555, 3, -130.2115, 5.795228, 8.072972, -2.44346, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+90, 184941, 555, 3, -176.5029, -352.9906, 17.08383, -0.4014249, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -970,7 +972,7 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Shadow Labyrinth - Malicious Instructor / Fel Overseer'),
-(@PGUID+21, 1, 'Shadow Labyrinth - Master Chest Pool'), -- gameobject
+(@PGUID+21, 2, 'Shadow Labyrinth - Master Chest Pool'), -- gameobject
 (@PGUID+22, 4, 'Shadow Labyrinth - Master Ancient Lichen (181278) Pool'),
 (@PGUID+23, 3, 'Shadow Labyrinth - Master Mineral Pool'),
 (@PGUID+24, 1, 'Shadow Labyrinth - Adamantite Deposit / Rich Adamantite Deposit / Khorium - Pool 1'),
@@ -1035,7 +1037,9 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+85, @PGUID+30, 0, 'Shadow Labyrinth - Rich Adamantite Deposit (181569) - Pool 7'),
 (@OGUID+86, @PGUID+24, 0, 'Shadow Labyrinth - Khorium (181557) - Pool 1'),
 (@OGUID+87, @PGUID+27, 0, 'Shadow Labyrinth - Khorium (181557) - Pool 4'),
-(@OGUID+88, @PGUID+30, 0, 'Shadow Labyrinth - Khorium (181557) - Pool 7');
+(@OGUID+88, @PGUID+30, 0, 'Shadow Labyrinth - Khorium (181557) - Pool 7'),
+(@OGUID+89, @PGUID+21, 0, 'Shadow Labyrinth - Solid Adamantite Chest (184941)'),
+(@OGUID+90, @PGUID+21, 0, 'Shadow Labyrinth - Solid Adamantite Chest (184941)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
