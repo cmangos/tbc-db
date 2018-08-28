@@ -18917,7 +18917,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2076808','20768','6','0','100','0','10040','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Gnosh Brognat - Say on Death if Killer Player has Completed Quest 11000'),
 ('2076809','20768','0','0','100','1','6000','6000','12000','16000','11','37597','1','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Cast Meat Slap'),
 ('2076810','20768','0','0','100','1','2500','5500','10000','11000','11','37596','1','0','0','0','0','0','0','0','0','0','Gnosh Brognat - Cast Tenderize'),
--- Solus the Eternal 20888 (missing combat ai at least)
+-- Solus the Eternal
+('2088801','20888','11','0','100','0','0','0','0','0','11','17467','0','1','0','0','0','0','0','0','0','0','Solus the Eternal - Cast Unholy Aura on Spawn'),
+('2088802','20888','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Solus the Eternal - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2088803','20888','9','5','100','1','0','40','3400','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Solus the Eternal - Cast Shadow Bolt (Phase 1)'),
+('2088804','20888','9','5','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Solus the Eternal - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2088805','20888','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Solus the Eternal - Disable Dynamic Movement at 0-8 Yards'),
+('2088806','20888','3','5','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Solus the Eternal - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('2088807','20888','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Solus the Eternal - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('2088808','20888','0','5','100','1','6000','15000','16000','22000','11','36786','0','0','0','0','0','0','0','0','0','0','Solus the Eternal - Cast Soul Chill (Phase 1)'),
+('2088809','20888','9','5','100','1','0','5','26000','32000','11','38770','1','1','0','0','0','0','0','0','0','0','Thuk the Defiant -  Cast Soul Steal (Phase 1)'),
+('2088810','20888','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Solus the Eternal - Set Phase to 0 on Evade'),
 -- Grishnath Basilisk
 ('2092401','20924','2','0','100','0','70','41','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Grishnath Basilisk - Cast Soften at 70% HP'),
 ('2092402','20924','2','0','100','0','40','11','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Grishnath Basilisk - Cast Soften at 40% HP'),
@@ -19399,10 +19409,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2249802','22498','0','0','100','1','3000','4000','25000','30000','11','20753','1','0','0','0','0','0','0','0','0','0','Misha - Cast Demoralizing Roar'),
 -- Lesser Wrath Hound
 ('2249901','22499','9','0','100','1','0','5','6000','10000','11','36406','0','0','0','0','0','0','0','0','0','0','Lesser Wrath Hound - Cast Double Breath'),
--- Matron Li-sahar 22825 (missing combat ai at least)
--- King Dorfbruiser 22826 (missing combat ai at least)
--- Gorgolon the All-Seeing 22827 (missing combat ai at least)
--- Trelopades 22828 (missing combat ai at least)
+-- Matron Li-sahar
+('2282501','22825','0','0','100','1','9600','16900','12000','18000','11','33501','0','0','0','0','0','0','0','0','0','0','Matron Li-sahar - Cast Shadow Nova'),
+('2282502','22825','9','0','100','1','0','8','36000','48000','11','33493','1','32','0','0','0','0','0','0','0','0','Matron Li-sahar -  Cast Mark of Malice'),
+-- King Dorfbruiser
+('2282601','22826','4','0','100','0','0','0','0','0','1','-1621','-1622','0','0','0','0','0','0','0','0','0','King Dorfbruiser - Random Say on Aggro'),
+('2282602','22826','9','0','100','1','0','45','36000','44000','11','33238','0','1','0','0','0','0','0','0','0','0','King Dorfbruiser -  Cast Whirlwind'),
+('2282603','22826','9','0','100','1','0','5','8000','12000','11','43673','1','0','0','0','0','0','0','0','0','0','King Dorfbruiser -  Cast Mighty Blow'),
+-- Trelopades <Legion Commander>
+('2282801','22828','9','0','100','1','0','5','7000','9800','11','22859','1','0','0','0','0','0','0','0','0','0','Trelopades - Cast Mortal Cleave'),
+('2282802','22828','9','0','100','1','0','30','19800','25300','11','11990','4','0','0','0','0','0','0','0','0','0','Trelopades - Cast Rain of Fire'),
+('2282803','22828','0','0','100','1','9000','12000','15000','19000','11','11876','0','1','0','0','0','0','0','0','0','0','Trelopades - Cast War Stomp'),
+('2282804','22828','21','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Trelopades - Set Sheath on reached Home'),
 -- Skulloc Soulgrinder
 ('2291001','22910','0','0','100','1','30000','30000','50000','50000','11','39622','5','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - In Combat - Cast Banish'),
 ('2291002','22910','0','0','100','1','10000','10000','16000','20000','11','39621','1','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - In Combat - Cast Corruption'),
@@ -36142,7 +36160,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1605','I\'ve been very, very naughty...','0','0','0','Concubine 16461','0'),
 ('-1606','%s goes into a rage after seeing a friend fall in battle!','0','2','0','16700','0'),
 -- Reuse 1607-1619
-('-1620','%s casts a spell to draw magical attacks away from his allies.','0','2','0','22242','0');
+('-1620','%s casts a spell to draw magical attacks away from his allies.','0','2','0','22242','0'),
+('-1621','WUT! DA KING IS BACK, BABY!','0','0','0','22826','0'),
+('-1622','In Outland, lunch open prison for you! What a world! Time to eat!','0','0','0','22826','0');
 
 
 
