@@ -19282,7 +19282,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2224101','22241','0','0','100','1','7000','12000','9000','15000','11','35922','0','0','0','0','0','0','0','0','0','0','Bash\'ir Raider - Cast Energy Flare'),
 ('2224102','22241','0','0','90','1','9000','18000','16000','24000','11','32920','0','0','0','0','0','0','0','0','0','0','Bash\'ir Raider - Cast Warp'),
 -- Bash'ir Spell-Thief
-('2224201','22242','4','0','100','0','0','0','0','0','11','38860','0','0','0','0','0','0','0','0','0','0','Bash\'ir Spell-Thief - Cast Damage Reduction on Aggro'),
+('2224201','22242','11','0','100','0','0','0','0','0','11','38857','0','0','40','1','0','0','0','0','0','0','Bash\'ir Spell-Thief - Cast Spell Ground And Set Sheath 1 on Spawn'),
+('2224202','22242','4','0','100','0','0','0','0','0','11','38860','0','0','0','0','0','0','0','0','0','0','Bash\'ir Spell-Thief - Cast Damage Reduction on Aggro'),
+('2224203','22242','21','0','100','0','0','0','0','0','11','38857','0','0','40','1','0','0','0','0','0','0','Bash\'ir Spell-Thief - Cast Spell Ground And Set Sheath on reached Home'),
+('2224204','22242','21','0','25','0','0','0','0','0','1','-1620','0','0','0','0','0','0','0','0','0','0','Bash\'ir Spell-Thief - Say on reached Home'),
 -- Bash'ir Arcanist
 ('2224301','22243','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Bash\'ir Arcanist - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2224302','22243','9','5','100','1','0','40','6800','9600','11','34446','1','0','0','0','0','0','0','0','0','0','Bash\'ir Arcanist - Cast Arcane Missiles (Phase 1)'),
@@ -36137,7 +36140,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1603','Come any closer, and I\'ll scream.','0','0','0','Wanton Hostess 16459','0'),
 ('-1604','Shhh... I have a little secret I\'ve been keeping.','0','0','0','Night Mistress 16460','0'),
 ('-1605','I\'ve been very, very naughty...','0','0','0','Concubine 16461','0'),
-('-1606','%s goes into a rage after seeing a friend fall in battle!','0','2','0','16700','0');
+('-1606','%s goes into a rage after seeing a friend fall in battle!','0','2','0','16700','0'),
+-- Reuse 1607-1619
+('-1620','%s casts a spell to draw magical attacks away from his allies.','0','2','0','22242','0');
 
 
 
