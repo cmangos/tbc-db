@@ -1183,7 +1183,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1, 153464, 329, 3555.39, -3424.3, 136.745, 2.3911, 0, 0, 0.930418, 0.366501, 7200, 7200, 100, 1), -- Large Solid Chest
-(@OGUID+2, 153469, 329, 4080.21, -3533.44, 124.622, -3.00197, 0, 0, 0.997564, -0.069756, 180, 180, 100, 1), -- Large Mithril Bound Chest
+(@OGUID+2, 153469, 329, 4080.21, -3533.44, 124.622, -3.00197, 0, 0, 0.997564, -0.069756, 86400, 86400, 100, 1), -- Large Mithril Bound Chest
 (@OGUID+3, 175350, 329, 3621.54, -3335.55, 123.501, 3.14159, 0, 0, 1, 0, 180, 180, 100, 0), -- Doodad_SmallPortcullis04
 (@OGUID+4, 175351, 329, 3603.04, -3335.24, 125.354, 3.14159, 0, 0, 1, 0, 180, 180, 100, 0), -- Doodad_SmallPortcullis03
 (@OGUID+5, 175352, 329, 3571.57, -3451.68, 136.357, 2.31256, 0, 0, 0.915311, 0.402747, 180, 180, 100, 1), -- King's Square Gate
