@@ -2174,146 +2174,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1318, 28227, 230, 868.815, -135.761, -49.759, 3.67615, 180, 180, 0, 0, 0, 0), -- Slobbermouth
 (@CGUID+1319, 26719, 230, 885.674, -162.749, -49.759, 1.86371, 180, 180, 0, 0, 0, 0); -- Brewfest Spy
 
-
--- =======
--- POOLING
--- =======
-
-INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+1, @PGUID+28, 0, 'Dark Keeper Nameplate'),
-(@PGUID+2, @PGUID+28, 0, 'Dark Keeper Nameplate'),
-(@PGUID+3, @PGUID+28, 0, 'Dark Keeper Nameplate'),
-(@PGUID+4, @PGUID+28, 0, 'Dark Keeper Nameplate'),
-(@PGUID+5, @PGUID+28, 0, 'Dark Keeper Nameplate'),
-(@PGUID+6, @PGUID+28, 0, 'Dark Keeper Nameplate'),
-(@PGUID+19, @PGUID+29, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+20, @PGUID+29, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+21, @PGUID+30, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+22, @PGUID+30, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct');
-
-INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 2, 'Dark Keeper Nameplate'),
-(@PGUID+2, 2, 'Dark Keeper Nameplate'),
-(@PGUID+3, 2, 'Dark Keeper Nameplate'),
-(@PGUID+4, 2, 'Dark Keeper Nameplate'),
-(@PGUID+5, 2, 'Dark Keeper Nameplate'),
-(@PGUID+6, 2, 'Dark Keeper Nameplate'),
-(@PGUID+7, 1, 'BRD - Molten War Golem / Panzor the Invincible'),
-(@PGUID+8, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+9, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+10, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+11, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+12, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+13, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+14, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+15, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+16, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+17, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+18, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+19, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+20, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+21, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+22, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+23, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+24, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+25, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+26, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@PGUID+27, 4, 'BRD - Shadowforge Flame Keeper'),
-(@PGUID+28, 1, 'MASTER - Dark Keeper Nameplate'),
-(@PGUID+29, 1, 'BRD - Master Ragereaver Golem/Wrath Hammer Construct'),
-(@PGUID+30, 1, 'BRD - Master Ragereaver Golem/Wrath Hammer Construct');
-
-INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+105, @PGUID+1, 100, 'Dark Keeper Nameplate'),
-(@OGUID+111, @PGUID+1, 100, 'Dark Keeper Nameplate'),
-(@OGUID+89, @PGUID+2, 100, 'Dark Keeper Nameplate'),
-(@OGUID+106, @PGUID+2, 100, 'Dark Keeper Nameplate'),
-(@OGUID+90, @PGUID+3, 100, 'Dark Keeper Nameplate'),
-(@OGUID+107, @PGUID+3, 100, 'Dark Keeper Nameplate'),
-(@OGUID+91, @PGUID+4, 100, 'Dark Keeper Nameplate'),
-(@OGUID+108, @PGUID+4, 100, 'Dark Keeper Nameplate'),
-(@OGUID+92, @PGUID+5, 100, 'Dark Keeper Nameplate'),
-(@OGUID+109, @PGUID+5, 100, 'Dark Keeper Nameplate'),
-(@OGUID+104, @PGUID+6, 100, 'Dark Keeper Nameplate'),
-(@OGUID+110, @PGUID+6, 100, 'Dark Keeper Nameplate');
-
--- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+699, @PGUID+7, 80, 'BRD - Molten War Golem / Panzor the Invincible'),
-(@CGUID+986, @PGUID+7, 20, 'BRD - Molten War Golem / Panzor the Invincible'),
-(@CGUID+351, @PGUID+8, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+859, @PGUID+8, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+352, @PGUID+9, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+860, @PGUID+9, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+353, @PGUID+10, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+861, @PGUID+10, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+354, @PGUID+11, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+862, @PGUID+11, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+355, @PGUID+12, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+863, @PGUID+12, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+356, @PGUID+13, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+864, @PGUID+13, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+357, @PGUID+14, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+865, @PGUID+14, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+358, @PGUID+15, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+866, @PGUID+15, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+679, @PGUID+16, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+687, @PGUID+16, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+680, @PGUID+17, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+688, @PGUID+17, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+681, @PGUID+18, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+689, @PGUID+18, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+682, @PGUID+19, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+690, @PGUID+19, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+683, @PGUID+20, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+691, @PGUID+20, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+684, @PGUID+21, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+692, @PGUID+21, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+685, @PGUID+22, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+693, @PGUID+22, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
-(@CGUID+360, @PGUID+23, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+878, @PGUID+23, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+361, @PGUID+24, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+880, @PGUID+24, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+362, @PGUID+25, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+881, @PGUID+25, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+363, @PGUID+26, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
-(@CGUID+883, @PGUID+26, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician');
-
-INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-(9956, @PGUID+27, 0, 'BRD - Shadowforge Flame Keeper');
-
--- ======
--- EVENTS
--- ======
-
-INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
-(@CGUID+1119, 7), -- Elder Morndeep (Lunar Festival)
-
--- TBC+ only
--- Grim Guzzler - L70ETC Concert
-(@CGUID+1300, 62),
-(@CGUID+1301, 62),
-(@CGUID+1302, 62),
-(@CGUID+1303, 62),
-(@CGUID+1304, 62),
-(@CGUID+1305, 62),
--- Grim Guzzler - L70ETC Pre-Concert
-(@CGUID+1313, 61),
--- Arena PvP Season 4
-(@CGUID+1316, 56),
-(@CGUID+1317, 56),
-(@CGUID+1318, 56),
--- Brewfest
-(@CGUID+1312, 26),
-(@CGUID+1319, 26);
-
-INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
-(@CGUID+998, 0, 15735, 0, 0, 0, 2); -- Emperor Dagran Thaurissan (Feast of Winter Veil)
-
--- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
-
 -- ===========
 -- GAMEOBJECTS
 -- ===========
@@ -2435,15 +2295,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+114, 164911, 230, 915.714, -149.289, -49.757, 0, 0, 0, -0.968147, 0.250381, 10800, 10800, 100, 1), -- Thunderbrew Lager Keg
 (@OGUID+115, 164911, 230, 917.027, -151.583, -49.7576, 0, 0, 0, -0.968147, 0.250381, 10800, 10800, 100, 1), -- Thunderbrew Lager Keg
 (@OGUID+116, 165554, 230, 802.907, -356.401, -48.9423, -0.785397, 0, 0, -0.382683, 0.92388, 120, 120, 255, 1), -- Heart of the Mountain
-(@OGUID+117, 165658, 230, 502.794, -191.522, -57.5144, -0.401426, 0, 0, -0.199368, 0.979925, 7200, 7200, 100, 1), -- Dark Iron Deposit
-(@OGUID+118, 165658, 230, 418.63, -158.696, -63.1528, 0.226893, 0, 0, 0.113203, 0.993572, 7200, 7200, 100, 1), -- Dark Iron Deposit
-(@OGUID+119, 165658, 230, 679.721, 102.181, -73.2564, -1.18682, 0, 0, -0.559191, 0.829039, 7200, 7200, 100, 1), -- Dark Iron Deposit
-(@OGUID+120, 165658, 230, 748.476, -53.7894, -71.278, 2.96706, 0, 0, 0.996195, 0.0871556, 7200, 7200, 100, 1), -- Dark Iron Deposit
-(@OGUID+121, 165658, 230, 1001.83, -395.972, -62.7024, 0.15708, 0, 0, 0.0784593, 0.996917, 7200, 7200, 100, 1), -- Dark Iron Deposit
-(@OGUID+122, 165658, 230, 545.169, -128.195, -60.3184, -1.72788, 0, 0, -0.760406, 0.649449, 7200, 7200, 100, 1), -- Dark Iron Deposit
-(@OGUID+123, 165658, 230, 977.641, -316.468, -69.4667, 1.79769, 0, 0, 0.782608, 0.622514, 7200, 7200, 100, 1), -- Dark Iron Deposit
-(@OGUID+124, 165658, 230, 291.891, -122.786, -69.1713, 1.41372, 0, 0, 0.649447, 0.760406, 7200, 7200, 100, 1), -- Dark Iron Deposit
-(@OGUID+125, 165658, 230, 640.727, 28.869, -74.0452, 1.8675, 0, 0, 0.803857, 0.594823, 7200, 7200, 100, 1), -- Dark Iron Deposit
+-- RE-USE 117 - 125
 (@OGUID+126, 165738, 230, 890.764, -182.514, -42.8079, 0.436332, 0, 0, 0.21644, 0.976296, 600, 600, 100, 1), -- Dark Iron Ale Mug
 (@OGUID+127, 165738, 230, 891.388, -182.913, -42.794, -1.20428, 0, 0, 0.566406, -0.824126, 600, 600, 100, 1), -- Dark Iron Ale Mug
 (@OGUID+128, 165738, 230, 891.448, -183.286, -42.794, -0.785398, 0, 0, 0.382683, -0.92388, 600, 600, 100, 1), -- Dark Iron Ale Mug
@@ -2775,7 +2627,199 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+454, 175739, 230, 768.508, -313.491, -42.3144, 1.309, 0, 0, 0.608761, 0.793353, 600, 600, 100, 1), -- War of the Three Hammers
 (@OGUID+455, 179552, 230, 839.6, 9.86411, -53.7335, 1.68579, 0, 0, 0.746574, 0.665303, 180, 180, 0, 1), -- Schematic: Field Repair Bot 74A
 (@OGUID+456, 179553, 230, 1128.01, -471.763, -104.032, 3.01942, 0, 0, 0.998135, 0.061049, 0, 0, 100, 1), -- Core Fragment
-(@OGUID+457, 300065, 230, 596.82, -188.77, -54.15, 0, 0, 0, 0, 0, 180, 180, 0, 1); -- TEMP Blackrock Depths Arena
+(@OGUID+457, 300065, 230, 596.82, -188.77, -54.15, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- TEMP Blackrock Depths Arena
+(@OGUID+458, 165658, 230, 643.3423, 144.61970, -73.82841, 0.5235979, 0, 0, 0.25881860, 0.96592590, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+459, 165658, 230, 503.1930, -190.1182, -59.3156, 5.8817610, 0, 0, -0.1993675, 0.97992480, 604800, 604800, 100, 1), -- Dark Iron Deposit - unreachable sniff 502.7941, -191.5217, -57.51442
+(@OGUID+460, 165658, 230, 291.8912, -122.7862, -69.17131, 1.4137150, 0, 0, 0.64944740, 0.76040640, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+461, 165658, 230, 748.4762, -53.78939, -71.27797, 2.9670410, 0, 0, 0.99619390, 0.08716504, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+462, 165658, 230, 918.9029, -447.0081, -53.89072, 0.2617982, 0, 0, 0.13052560, 0.99144490, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+463, 165658, 230, 1204.101, -350.1584, -93.63148, 0.5934101, 0, 0, 0.29237080, 0.95630500, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+464, 165658, 230, 327.1843, -58.57154, -71.36147, 0.7155849, 0, 0, 0.35020730, 0.93667220, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+465, 165658, 230, 634.7685, -56.40602, -72.39845, 2.9670410, 0, 0, 0.99619390, 0.08716504, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+466, 165658, 230, 679.7208, 102.18150, -73.25642, 5.0963620, 0, 0, -0.5591927, 0.82903770, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+467, 165658, 230, 636.5695, -274.7586, -80.90951, 4.0142600, 0, 0, -0.9063072, 0.42261950, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+468, 165658, 230, 977.6415, -316.4676, -69.46671, 1.7976890, 0, 0, 0.78260800, 0.62251480, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+469, 165658, 230, 545.1691, -128.1948, -60.31841, 4.5553110, 0, 0, -0.7604055, 0.64944850, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+470, 165658, 230, 637.9283, -162.7747, -69.09804, 3.5255720, 0, 0, -0.9816265, 0.19081240, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+471, 165658, 230, 1014.216, -356.3637, -64.38433, 1.1344630, 0, 0, 0.53729920, 0.84339170, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+472, 165658, 230, 313.6239, -211.4218, -77.35464, 5.6199620, 0, 0, -0.3255672, 0.94551890, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+473, 165658, 230, 673.0992, -21.66416, -73.76051, 2.7401620, 0, 0, 0.97992420, 0.19937040, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+474, 165658, 230, 670.7335, -201.3077, -74.56735, 3.7524620, 0, 0, -0.9537163, 0.30070790, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+475, 165658, 230, 646.0924, 193.6071, -72.1246, 0.5235979, 0, 0, 0.25881860, 0.96592590, 604800, 604800, 100, 1), -- Dark Iron Deposit - unreachable sniff 645.2601, 193.78720, -71.88757
+(@OGUID+476, 165658, 230, 1001.9347, -395.6677, -64.1092, 0.1570790, 0, 0, 0.07845879, 0.99691740, 604800, 604800, 100, 1), -- Dark Iron Deposit - unreachable sniff 1001.831, -395.9717, -62.70242
+(@OGUID+477, 165658, 230, 640.7274, 28.869010, -74.04519, 1.8675020, 0, 0, 0.80385680, 0.59482280, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+478, 165658, 230, 756.2069, 158.72650, -72.21693, 5.0440020, 0, 0, -0.5807028, 0.81411560, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+479, 165658, 230, 980.5562, -419.5924, -59.34340, 4.4854970, 0, 0, -0.7826080, 0.62251480, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+480, 165658, 230, 418.6297, -158.6955, -63.15283, 0.2268925, 0, 0, 0.11320300, 0.99357190, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+481, 165658, 230, 1215.014, -384.2355, -98.96942, 1.7976890, 0, 0, 0.78260800, 0.62251480, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+482, 165658, 230, 884.4476, -410.5084, -48.20438, 4.3458700, 0, 0, -0.8241262, 0.56640610, 604800, 604800, 100, 1), -- Dark Iron Deposit
+(@OGUID+483, 165658, 230, 964.4655, -436.6402, -54.68636, 5.9690270, 0, 0, -0.1564341, 0.98768840, 604800, 604800, 100, 1); -- Dark Iron Deposit
+
+-- ======
+-- EVENTS
+-- ======
+
+INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+(@CGUID+1119, 7), -- Elder Morndeep (Lunar Festival)
+
+-- TBC+ only
+-- Grim Guzzler - L70ETC Concert
+(@CGUID+1300, 62),
+(@CGUID+1301, 62),
+(@CGUID+1302, 62),
+(@CGUID+1303, 62),
+(@CGUID+1304, 62),
+(@CGUID+1305, 62),
+-- Grim Guzzler - L70ETC Pre-Concert
+(@CGUID+1313, 61),
+-- Arena PvP Season 4
+(@CGUID+1316, 56),
+(@CGUID+1317, 56),
+(@CGUID+1318, 56),
+-- Brewfest
+(@CGUID+1312, 26),
+(@CGUID+1319, 26);
+
+INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
+(@CGUID+998, 0, 15735, 0, 0, 0, 2); -- Emperor Dagran Thaurissan (Feast of Winter Veil)
+
+-- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
+
+-- =======
+-- POOLING
+-- =======
+
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+1, @PGUID+28, 0, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+2, @PGUID+28, 0, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+3, @PGUID+28, 0, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+4, @PGUID+28, 0, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+5, @PGUID+28, 0, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+6, @PGUID+28, 0, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+19, @PGUID+29, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+20, @PGUID+29, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+21, @PGUID+30, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+22, @PGUID+30, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct');
+
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+(@PGUID+1, 2, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+2, 2, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+3, 2, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+4, 2, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+5, 2, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+6, 2, 'BRD - Dark Keeper Nameplate'),
+(@PGUID+7, 1, 'BRD - Molten War Golem / Panzor the Invincible'),
+(@PGUID+8, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+9, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+10, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+11, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+12, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+13, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+14, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+15, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+16, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+17, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+18, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+19, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+20, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+21, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+22, 1, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+23, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+24, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+25, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+26, 1, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@PGUID+27, 4, 'BRD - Shadowforge Flame Keeper'),
+(@PGUID+28, 1, 'BRD - Master Dark Keeper Nameplate Pool'),
+(@PGUID+29, 1, 'BRD - Master Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+30, 1, 'BRD - Master Ragereaver Golem/Wrath Hammer Construct'),
+(@PGUID+51, 6, 'BRD - Master Dark Iron Deposit (165658) Pool');
+
+INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@OGUID+105, @PGUID+1, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+111, @PGUID+1, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+89, @PGUID+2, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+106, @PGUID+2, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+90, @PGUID+3, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+107, @PGUID+3, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+91, @PGUID+4, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+108, @PGUID+4, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+92, @PGUID+5, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+109, @PGUID+5, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+104, @PGUID+6, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+110, @PGUID+6, 100, 'BRD - Dark Keeper Nameplate'),
+(@OGUID+458, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+459, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+460, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+461, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+462, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+463, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+464, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+465, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+466, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+467, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+468, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+469, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+470, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+471, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+472, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+473, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+474, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+475, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+476, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+477, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+478, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+479, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+480, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+481, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+482, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)'),
+(@OGUID+483, @PGUID+51, '0', 'BRD - Dark Iron Deposit (165658)');
+
+-- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+
+INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@CGUID+699, @PGUID+7, 80, 'BRD - Molten War Golem / Panzor the Invincible'),
+(@CGUID+986, @PGUID+7, 20, 'BRD - Molten War Golem / Panzor the Invincible'),
+(@CGUID+351, @PGUID+8, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+859, @PGUID+8, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+352, @PGUID+9, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+860, @PGUID+9, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+353, @PGUID+10, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+861, @PGUID+10, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+354, @PGUID+11, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+862, @PGUID+11, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+355, @PGUID+12, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+863, @PGUID+12, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+356, @PGUID+13, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+864, @PGUID+13, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+357, @PGUID+14, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+865, @PGUID+14, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+358, @PGUID+15, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+866, @PGUID+15, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+679, @PGUID+16, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+687, @PGUID+16, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+680, @PGUID+17, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+688, @PGUID+17, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+681, @PGUID+18, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+689, @PGUID+18, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+682, @PGUID+19, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+690, @PGUID+19, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+683, @PGUID+20, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+691, @PGUID+20, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+684, @PGUID+21, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+692, @PGUID+21, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+685, @PGUID+22, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+693, @PGUID+22, 0, 'BRD - Ragereaver Golem/Wrath Hammer Construct'),
+(@CGUID+360, @PGUID+23, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+878, @PGUID+23, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+361, @PGUID+24, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+880, @PGUID+24, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+362, @PGUID+25, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+881, @PGUID+25, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+363, @PGUID+26, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician'),
+(@CGUID+883, @PGUID+26, 0, 'BRD - Doomforge Arcanasmith/Weapon Technician');
+
+INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+(9956, @PGUID+27, 0, 'BRD - Shadowforge Flame Keeper');
 
 -- =========
 -- DBSCRIPTS
