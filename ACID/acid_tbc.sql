@@ -5714,6 +5714,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('891702','8917','9','0','100','1','0','5','5000','8000','11','14516','1','0','0','0','0','0','0','0','0','0','Quarry Slave - Cast Strike'),
 ('891703','8917','9','0','100','1','0','5','13000','16000','11','9080','1','1','0','0','0','0','0','0','0','0','Quarry Slave - Cast Hamstring'),
 ('891704','8917','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Quarry Slave - Flee at 15% HP'),
+-- The Behemoth 8924 - NSR
 -- Overmaster Pyron
 ('902601','9026','0','0','100','1','0','20','6000','12000','11','13341','1','0','0','0','0','0','0','0','0','0','Overmaster Pyron - Cast Fire Blast'),
 ('902602','9026','9','0','100','1','0','8','10000','15000','11','12470','0','1','0','0','0','0','0','0','0','0','Overmaster Pyron - Cast Fire Nova'),
@@ -24347,9 +24348,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2193101','21931','11','0','100','38','0','0','0','0','3','0','18933','0','3','0','4566','0','3','0','20588','0','Avian Flye - randomized model on Spawn'),
 -- Anzu (23035) - boss_anzu
 -- Brood of Anzu (23132) - NSR
--- Hawk Spirit - npc_anzu_bird_spirit
--- Falcon Spirit - npc_anzu_bird_spirit
--- Eagle Spirit - npc_anzu_bird_spirit
+-- Hawk Spirit 23134 - npc_anzu_bird_spirit
+-- Falcon Spirit 23135 - npc_anzu_bird_spirit
+-- Eagle Spirit 23136 - npc_anzu_bird_spirit
 -- Dancing Flames (25305) - npc_dancing_flames
 
 
