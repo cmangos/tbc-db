@@ -1245,8 +1245,8 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16530, 0, 0, 1, 0, 0, 0, NULL), -- Mana Warp
 (16539, 0, 0, 1, 0, 0, 0, NULL), -- Homunculus
 (16540, 0, 0, 1, 0, 69, 0, NULL), -- Shadow Pillager
-(16544, 0, 0, 1, 0, 0, 0, '29982'), -- Ethereal Thief
-(16545, 0, 0, 1, 0, 0, 0, '30007'), -- Ethereal Spellfilcher
+(16544, 0, 0, 1, 0, 0, 0, NULL), -- Ethereal Thief
+(16545, 0, 0, 1, 0, 0, 0, NULL), -- Ethereal Spellfilcher
 (16595, 0, 0, 1, 0, 0, 0, '3417'), -- Fleshbeast
 (16596, 0, 0, 1, 0, 0, 0, '8876 18950'), -- Greater Fleshbeast
 (16806, 0, 0, 1, 16, 0, 0, '28002'), -- Ebonlocke
