@@ -7937,8 +7937,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('152701','1527','9','0','100','1','0','5','9000','15000','11','3234','1','0','0','0','0','0','0','0','0','0','Hungering Dead - Cast Disease Touch'),
 -- Shambling Horror
 ('152801','1528','9','0','100','1','0','5','9000','15000','11','3234','1','0','0','0','0','0','0','0','0','0','Shambling Horror - Cast Disease Touch'),
--- Bleeding Horror (1529) - NSR
--- Rotting Ancestor (1530) - NSR
+-- Bleeding Horror 1529
+('152901','1529','1','0','100','0','1000','1000','0','0','11','3235','0','32','0','0','0','0','0','0','0','0','Bleeding Horror - Cast Rancid Blood OOC'),
+-- Rotting Ancestor 1530
+('153001','1530','1','0','100','0','1000','1000','0','0','11','3235','0','32','0','0','0','0','0','0','0','0','Rotting Ancestor - Cast Rancid Blood OOC'),
 -- Lost Soil
 ('153101','1531','9','0','100','1','0','8','12000','21000','11','7713','0','0','0','0','0','0','0','0','0','0','Lost Soil - Cast Wailing Dead'),
 -- Wandering Spirit
