@@ -16630,7 +16630,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Strigid Hunter (1997) - NSR
 -- Webwood Lurker
 ('199801','1998','9','0','100','1','0','30','40000','45000','11','4167','1','0','0','0','0','0','0','0','0','0','Webwood Lurker - Cast Web'),
--- Webwood Venomfang (1999) - NSR
+-- Webwood Venomfang 1999
+('199901','1999','1','0','100','0','1000','1000','0','0','11','11959','0','32','0','0','0','0','0','0','0','0','Webwood Venomfang - Cast Poison Proc OOC'),
 -- Webwood Silkspinner
 ('200001','2000','9','0','100','1','0','30','12000','17000','11','12023','1','0','0','0','0','0','0','0','0','0','Webwood Silkspinner - Cast Web'),
 -- Giant Webwood Spider 2001
