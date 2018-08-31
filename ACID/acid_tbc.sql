@@ -7082,6 +7082,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Negolash 1494 - NSR
 -- Enraged Silverback Gorilla
 ('151101','1511','2','0','100','0','10','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Enraged Silverback Gorilla - Cast Enrage at 10% HP'),
+-- Konda 1516
+('151601','1516','2','0','100','0','30','0','0','0','11','8599','0','1','54','-46','0','0','0','0','0','0','Konda - Cast Enrage at 30% HP'),
 -- Thrashtail Basilisk
 ('155001','1550','0','0','75','1','5000','5000','18000','18000','11','6607','4','0','0','0','0','0','0','0','0','0','Thrashtail Basilisk - Cast Lash'),
 -- Ironjaw Basilisk
