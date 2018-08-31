@@ -16616,7 +16616,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Treant (1964) - NSR
 -- Young Thistle Boar (1984) - NSR
 -- Thistle Boar (1985) - NSR
--- Webwood Spider (1986) - NSR
+-- Webwood Spider 1986
+('198601','1986','1','0','100','0','1000','1000','0','0','11','6752','0','32','0','0','0','0','0','0','0','0','Webwood Spider - Cast Weak Poison Proc OOC'),
 -- Grell (1988) - NSR
 -- Grellkin (1989) - NSR
 -- Tarindrella
