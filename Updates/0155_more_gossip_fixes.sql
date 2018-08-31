@@ -82,9 +82,9 @@ DELETE FROM npc_gossip WHERE npc_guid=68747;
 UPDATE creature_template SET GossipMenuId=7981 WHERE entry=19217;
 
 DELETE FROM gossip_menu WHERE entry=7981;
-INSERT INTO gossip_menu (entry, text_id) VALUES
-(7981, 9826),
-(7981, 9828);
+INSERT INTO gossip_menu (entry, text_id, condition_id) VALUES
+(7981, 9826, 0),
+(7981, 9828, 3706);
 
 DELETE FROM conditions WHERE condition_entry IN (3705,3706,3707,3708,3709,3710);
 INSERT INTO conditions (condition_entry, type, value1, value2, comments) VALUES
@@ -101,7 +101,7 @@ INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id
 
 DELETE FROM dbscripts_on_gossip WHERE id=7981;
 INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(7981, 0, 17, 31108, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Give Kor''kron Flare Gun');
+(7981, 0, 17, 28455, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Give Archmage Vargoth''s Staff');
 
 -- Eversong Partygoer (Entry: 17056)
 DELETE FROM npc_gossip WHERE npc_guid IN (SELECT guid FROM creature WHERE id=17056);
