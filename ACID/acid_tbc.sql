@@ -3250,7 +3250,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stormwind Guard (1423) - guard_elwynnforest
 -- Tomas (1430) - NSR
 -- Adele Fielder (1632) - NSR
--- Northshire Guard (1642) - NSR
+-- Northshire Guard 1642
+('164201','1642','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Northshire Guard - Cast Invisibility and Stealth Detection OOC'),
 -- Quartermaster Hicks (1645) - NSR
 -- Terry Palin (1650) - NSR
 -- Lee Brown (1651) - NSR
@@ -8531,15 +8532,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1383907','13839','13','0','100','1','8000','12000','0','0','11','11972','1','1','0','0','0','0','0','0','0','0','Royal Dreadguard - Cast Shield Bash on Target Casting'),
 ('1383908','13839','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Royal Dreadguard - Set Melee Weapon Model on Evade'),
 -- Seeker Cromwell 14402
-('1440201','14402','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Seeker Cromwell - Invisibility and Stealth Detection OOC'),
+('1440201','14402','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Seeker Cromwell - Cast Invisibility and Stealth Detection OOC'),
 ('1440202','14402','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Cromwell - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1440203','14402','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Cromwell - Cast Hooked Net'),
 -- Seeker Nahr 14403
-('1440301','14403','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Seeker Nahr - Invisibility and Stealth Detection OOC'),
+('1440301','14403','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Seeker Nahr - Cast Invisibility and Stealth Detection OOC'),
 ('1440302','14403','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Nahr - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1440303','14403','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Nahr - Cast Hooked Net'),
 -- Seeker Thompson 14404
-('1440401','14404','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Seeker Thompson - Invisibility and Stealth Detection OOC'),
+('1440401','14404','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Invisibility and Stealth Detection OOC'),
 ('1440402','14404','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1440403','14404','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Seeker Thompson - Cast Hooked Net'),
 -- Ralston Farnsley 14729
@@ -16875,18 +16876,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gnarlpine Instigator 11690
 -- Orenthil Whisperwind 11942
 -- Shadowglen Sentinel 12160
-('1216001','12160','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Shadowglen Sentinel - Invisibility and Stealth Detection OOC'),
+('1216001','12160','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Shadowglen Sentinel - Cast Invisibility and Stealth Detection OOC'),
 -- Sentinel Shaya (12429) - npc_garments_of_quests
 -- Huntress Skymane 14378
-('1437801','14378','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Skymane - Invisibility and Stealth Detection OOC'),
+('1437801','14378','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Invisibility and Stealth Detection OOC'),
 ('1437802','14378','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1437803','14378','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Skymane - Cast Hooked Net'),
 -- Huntress Ravenoak 14379
-('1437901','14379','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Ravenoak - Invisibility and Stealth Detection OOC'),
+('1437901','14379','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Invisibility and Stealth Detection OOC'),
 ('1437902','14379','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1437903','14379','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Ravenoak - Cast Hooked Net'),
 -- Huntress Leafrunner 14380
-('1438001','14380','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Leafrunner - Invisibility and Stealth Detection OOC'),
+('1438001','14380','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Invisibility and Stealth Detection OOC'),
 ('1438002','14380','28','0','100','1','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 ('1438003','14380','0','0','100','1','0','3000','9000','14000','11','14030','1','0','0','0','0','0','0','0','0','0','Huntress Leafrunner - Cast Hooked Net'),
 -- Uruson
@@ -17816,11 +17817,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Whulwert Copperpinch 13431
 -- Seersa Copperpinch 13432
 -- Hunter Sagewind 14440
-('1444001','14440','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Sagewind - Invisibility and Stealth Detection OOC'),
+('1444001','14440','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Sagewind - Cast Invisibility and Stealth Detection OOC'),
 -- Hunter Ragetotem 14441
-('1444101','14441','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Ragetotem - Invisibility and Stealth Detection OOC'),
+('1444101','14441','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Ragetotem - Cast Invisibility and Stealth Detection OOC'),
 -- Hunter Thunderhorn 14442
-('1444201','14442','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Thunderhorn - Invisibility and Stealth Detection OOC'),
+('1444201','14442','1','0','100','0','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Thunderhorn - Cast Invisibility and Stealth Detection OOC'),
 -- Rumstag Proudstrider 14728
 -- Defilers Emissary
 ('1499001','14990','1','0','100','1','10000','90000','20000','70000','10','11','18','0','0','0','0','0','0','0','0','0','Defilers Emissary - Random Laugh or Cry Emote'),
@@ -32261,7 +32262,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1167105','11671','7','0','100','2','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Core Hound - Set Phase 0 on Evade'),
 -- Core Rager (11672) - mob_core_rager
 -- Ancient Core Hound
-('1167301','11673','1','0','100','2','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Ancient Core Hound - Invisibility and Stealth Detection OOC'),
+('1167301','11673','1','0','100','2','1000','1000','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Ancient Core Hound - Cast Invisibility and Stealth Detection OOC'),
 ('1167302','11673','4','0','100','34','0','0','0','0','31','0','5','0','0','0','0','0','0','0','0','0','Ancient Core Hound - Set Random Phase 0-5 on Aggro'),
 ('1167303','11673','0','0','100','3','1000','1000','1000','1000','11','19319','1','0','0','0','0','0','0','0','0','0','Ancient Core Hound - Vicious Bite'),
 ('1167304','11673','0','0','100','3','8000','12000','9000','14000','11','19272','0','1','0','0','0','0','0','0','0','0','Ancient Core Hound - Lava Breath'),
