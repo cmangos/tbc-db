@@ -23334,6 +23334,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2219902','22199','6','0','100','0','0','0','0','0','11','39898','0','7','0','0','0','0','0','0','0','0','Slaag - Cast Summon Slaags Standard Chest on Death'),
 ('2219903','22199','0','0','100','1','27000','32000','27000','32000','11','21909','0','0','0','0','0','0','0','0','0','0','Slaag - Cast Dust Field'),
 -- Draenei Tomb Guardian 22285 - npc_draenei_tomb_guardian
+-- Terokkar Quest Target
+('2228801','22288','8','0','100','0','38729','-1','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Terokkar Quest Target - Despawn Self on Rod of Purification SpellHit'),
 -- Rotting Forest-Rager
 ('2230701','22307','9','0','100','1','0','5','12000','18000','11','15548','0','0','0','0','0','0','0','0','0','0','Rotting Forest-Rager - Cast Thunderclap'),
 ('2230702','22307','6','0','100','0','0','0','0','0','11','39130','0','7','0','0','0','0','0','0','0','0','Rotting Forest-Rager - Cast Summon Wood Mites on Death'),
