@@ -1299,7 +1299,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Marshal Maxwell (9560) - NSR
 -- Jalinda Sprig (9561) - NSR
 -- Helendis Riverhorn (9562) - NSR
--- Ragged John (9563) - npc_ragged_john
+-- Ragged John (9563) - NSR
 -- Mayara Brightwing (9565) - NSR
 -- Hahk'Zor (9602) - NSR
 -- Gorgon'och (3.1.3 Official Data)
@@ -6452,7 +6452,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lost One Rift Traveler (6913) - NSR
 -- Innkeeper Karakul (6930) - npc_innkeeper
 -- Swamp Spirit (6932) - NSR
--- Fallen Hero of the Horde (7572) - npc_fallen_hero_of_horde
+-- Fallen Hero of the Horde (7572) - NSR
 -- Dispatch Commander Ruag (7623) - NSR
 -- Bengor
 ('764301','7643','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Bengor - Set Stand State to Stand on Aggro'),
@@ -12878,7 +12878,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zor Lonetree 4047
 -- Belgrom Rockmaul 4485
 -- Kildar 4752
--- Thrall 4949 - npc_thrall_warchief
+-- Thrall 4949
 ('494901','4949','0','0','100','1','2000','2000','9000','9000','0','0','11','16033','1','0','0','0','0','0','0','0','0','0','Thrall - Cast Chain Lightning'),
 ('494902','4949','0','0','100','1','8000','8000','15000','15000','0','0','11','16034','1','0','0','0','0','0','0','0','0','0','Thrall - Cast Shock'),
 -- Garyl 5188
@@ -27152,7 +27152,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2340304','23403','0','5','100','1025','9000','30000','24000','34000','0','0','11','39667','0','0','22','2','0','0','0','0','0','0','Illidari Assassin - Cast Vanish and Set Phase 2 (Phase 1)'),
 ('2340305','23403','0','3','100','1025','4000','4000','4000','4000','0','0','11','41390','1','0','22','1','0','0','0','0','0','0','Illidari Assassin - Cast Ambush and Set Phase 1 (Phase 2)'),
 -- Spirit of Udalo (23410) - NSR
--- Spirit of Olum (23411) - npc_spirit_of_olum
+-- Spirit of Olum (23411) - NSR
 -- Essence of Suffering (23418) - boss_essence_of_suffering
 -- Essence of Desire (23419) - boss_essence_of_desire
 -- Essence of Anger (23420) - boss_essence_of_anger
