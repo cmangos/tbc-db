@@ -905,21 +905,6 @@ INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES
 (@OGUID+27, 2, 0), -- Farm - neutral
 (@OGUID+28, 3, 0), -- Lumber Mill - neutral
 (@OGUID+29, 4, 0), -- Gold Mine - neutral
-(@OGUID+30, 0, 3), -- Stables - alliance owned
-(@OGUID+31, 1, 3), -- Blacksmith - alliance owned
-(@OGUID+32, 2, 3), -- Farm - alliance owned
-(@OGUID+33, 3, 3), -- Lumber Mill - alliance owned
-(@OGUID+34, 4, 3), -- Gold Mine - alliance owned
-(@OGUID+35, 0, 4), -- Stables - horde owned
-(@OGUID+36, 1, 4), -- Blacksmith - horde owned
-(@OGUID+37, 2, 4), -- Farm - horde owned
-(@OGUID+38, 3, 4), -- Lumber Mill - horde owned
-(@OGUID+39, 4, 4), -- Gold Mine - horde owned
-(@OGUID+40, 0, 1), -- Stables - alliance contested
-(@OGUID+41, 1, 1), -- Blacksmith - alliance contested
-(@OGUID+42, 2, 1), -- Farm - alliance contested
-(@OGUID+43, 3, 1), -- Lumber Mill - alliance contested
-(@OGUID+44, 4, 1), -- Gold Mine - alliance contested
 (@OGUID+45, 2, 3), -- Farm - alliance owned
 (@OGUID+46, 2, 3), -- Farm - alliance owned
 (@OGUID+47, 2, 3), -- Farm - alliance owned
@@ -1161,21 +1146,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+27, 180089, 529, 806.182, 874.272, -55.9937, -2.30383, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Farm Banner
 (@OGUID+28, 180090, 529, 856.142, 1148.9, 11.1847, -2.30383, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Lumber Mill Banner
 (@OGUID+29, 180091, 529, 1146.92, 848.178, -110.917, -0.733038, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Mine Banner
-(@OGUID+30, 180100, 529, 1166.79, 1200.13, -56.7086, 0.907571, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Alliance Banner Aura
-(@OGUID+31, 180100, 529, 977.016, 1046.62, -44.8092, -2.60054, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Alliance Banner Aura
-(@OGUID+32, 180100, 529, 806.182, 874.272, -55.9937, -2.30383, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Alliance Banner Aura
-(@OGUID+33, 180100, 529, 856.142, 1148.9, 11.1847, -2.30383, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Alliance Banner Aura
-(@OGUID+34, 180100, 529, 1146.92, 848.178, -110.917, -0.733038, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Alliance Banner Aura
-(@OGUID+35, 180101, 529, 1166.79, 1200.13, -56.7086, 0.907571, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Horde Banner Aura
-(@OGUID+36, 180101, 529, 977.016, 1046.62, -44.8092, -2.60054, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Horde Banner Aura
-(@OGUID+37, 180101, 529, 806.182, 874.272, -55.9937, -2.30383, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Horde Banner Aura
-(@OGUID+38, 180101, 529, 856.142, 1148.9, 11.1847, -2.30383, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Horde Banner Aura
-(@OGUID+39, 180101, 529, 1146.92, 848.178, -110.917, -0.733038, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Horde Banner Aura
-(@OGUID+40, 180102, 529, 1166.79, 1200.13, -56.7086, 0.907571, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Neutral Banner Aura
-(@OGUID+41, 180102, 529, 977.016, 1046.62, -44.8092, -2.60054, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Neutral Banner Aura
-(@OGUID+42, 180102, 529, 806.182, 874.272, -55.9937, -2.30383, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Neutral Banner Aura
-(@OGUID+43, 180102, 529, 856.142, 1148.9, 11.1847, -2.30383, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Neutral Banner Aura
-(@OGUID+44, 180102, 529, 1146.92, 848.178, -110.917, -0.733038, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Neutral Banner Aura
 (@OGUID+45, 180218, 529, 812.468, 863.412, -57.8908, 2.61799, 0, 0, 0, 1, 7200, 7200, 255, 1), -- Arathi Basin Pumpkin
 (@OGUID+46, 180218, 529, 836.963, 843.832, -58.2549, 3.87463, 0, 0, 0, 1, 7200, 7200, 255, 1), -- Arathi Basin Pumpkin
 (@OGUID+47, 180218, 529, 830.999, 821.705, -57.9708, 1.06465, 0, 0, 0, 1, 7200, 7200, 255, 1), -- Arathi Basin Pumpkin

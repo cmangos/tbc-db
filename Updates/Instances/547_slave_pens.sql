@@ -874,8 +874,6 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
-(@OGUID+12, 1), -- Midsummer Bonfire Campfire Damage Trap (Midsummer Fire Festival)
-(@OGUID+13, 1), -- Midsummer Bonfire Campfire Damage Trap (Midsummer Fire Festival)
 (@OGUID+23, 1), -- Ice Stone (Midsummer Fire Festival)
 (@OGUID+24, 1), -- Ice Block (Midsummer Fire Festival)
 (@OGUID+25, 1), -- Ice Block (Midsummer Fire Festival)

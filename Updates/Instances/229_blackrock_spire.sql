@@ -1786,8 +1786,7 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 (@OGUID+394, 1), -- Midsummer Bonfire (Midsummer Fire Festival)
-(@OGUID+395, 1), -- Flame of Blackrock Spire (Midsummer Fire Festival)
-(@OGUID+396, 1); -- Midsummer Bonfire Campfire Damage Trap (Midsummer Fire Festival)
+(@OGUID+395, 1); -- Flame of Blackrock Spire (Midsummer Fire Festival)
 
 -- =======
 -- POOLING

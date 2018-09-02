@@ -728,8 +728,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 (@OGUID+67, 1), -- Midsummer Bonfire (Midsummer Fire Festival)
-(@OGUID+68, 1), -- Flame of the Scholomance (Midsummer Fire Festival)
-(@OGUID+69, 1); -- Midsummer Bonfire Campfire Damage Trap (Midsummer Fire Festival)
+(@OGUID+68, 1); -- Flame of the Scholomance (Midsummer Fire Festival)
 
 -- =======
 -- POOLING
