@@ -834,7 +834,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+3, 182539, 540, 3, 141.516, 266.366, -11.5682, 3.14159, 0, 0, 0, 0, 120, 120, 0, 1), -- Grand Warlock Chamber Door
 (@OGUID+4, 182540, 540, 3, 214.488, 266.167, -11.5181, 0, 0, 0, 0, 0, 120, 120, 0, 1), -- Grand Warlock Chamber Door
 (@OGUID+5, 184177, 540, 3, -42.0439, -26.523, -14.1031, -1.70302, 0, 0, 0, 0, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficulty01
-(@OGUID+6, 184178, 540, 3, -42.0505, -26.5066, -14.0962, -1.69993, 0, 0, 0, 0, 0, 0, 0, 0); -- Doodad_InstancePortal_PurpleDifficultyIcon01
+(@OGUID+6, 184178, 540, 3, -42.0505, -26.5066, -14.0962, -1.69993, 0, 0, 0, 0, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficultyIcon01
+(@OGUID+7, 184940, 540, 3, 473.4622, 144.0872, 0.594992, 0.06981169, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+8, 184941, 540, 3, 473.4622, 144.0872, 0.594992, 0.06981169, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- =======
 -- POOLING
@@ -843,7 +845,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- INSERT INTO `pool_pool` (`entry`, `max_limit`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 3, 'Shattered Halls - Shattered Hand Assassin (17695)');
+(@PGUID+1, 3, 'Shattered Halls - Shattered Hand Assassin (17695)'),
+(@PGUID+71, 1, 'Shattered Halls - Master Chest Pool'); -- gameobject
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+222, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
@@ -870,7 +873,11 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 (@CGUID+298, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)');
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+
+INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@OGUID+7, @PGUID+71, 0, 'Shadow Labyrinth - Bound Adamantite Chest (184940)'),
+(@OGUID+8, @PGUID+71, 0, 'Shadow Labyrinth - Solid Adamantite Chest (184941)');
+
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- ======

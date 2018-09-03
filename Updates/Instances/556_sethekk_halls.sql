@@ -716,10 +716,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+14, 183997, 556, 3, -85.9132, 288.405, 26.4832, 5.24018, 0, 0, 0, 0, 90, 90, 100, 1), -- The Saga of Terokk
 (@OGUID+15, 184189, 556, 3, -8.53784, -0.0184067, -1.0496, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
 (@OGUID+16, 184190, 556, 3, -8.53784, -0.0184067, -1.0496, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
-(@OGUID+17, 184936, 556, 3, -54.9579, 273.821, 26.9079, 2.33147, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+18, 184937, 556, 3, -70.5313, 73.0046, 0.0058196, 1.75418, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+19, 184938, 556, 3, -271.782, 188.947, 0.033852, -0.244346, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+20, 184939, 556, 3, -238.603, 341.626, 27.0639, -1.64061, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+-- RE-USE 17 - 20
 (@OGUID+21, 185554, 556, 2, -87.5742, 287.856, 26.4832, 0.0877018, 0, 0, 0, 0, 86400, 86400, 100, 1), -- The Raven's Claw
 (@OGUID+22, 187372, 556, 3, 81.7578, 287.085, 26.6293, 3.15018, 0, 0, 0, 0, 1, 1, 100, 1), -- The Talon King's Coffer
 (@OGUID+23, 181278, 556, 3, 87.8129, 116.0283, 0.353684, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Ancient Lichen
@@ -759,7 +756,39 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+57, 181569, 556, 3, -206.6533, 295.6982, 40.5272, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+58, 181569, 556, 3, -96.1982, 274.6970, 25.1646, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+59, 181569, 556, 3, -86.5056, 309.8940, 24.9889, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+60, 181557, 556, 3, 31.1373, 83.9662, -1.5649, 0, 0, 0, 0, 0, 86400, 86400, 255, 1); -- Khorium Vein
+(@OGUID+60, 181557, 556, 3, 31.1373, 83.9662, -1.5649, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Khorium Vein
+(@OGUID+61, 185590, 556, 2, -87.29815, 287.8307, 30.38595, 0.8552105, 0, 0, 0.4146929, 0.9099615, -300, -300, 255, 1), -- Sethekk Halls Moonstone
+(@OGUID+62, 185595, 556, 2, -87.19459, 287.7334, 29.96928, -2.775069, 0, 0, -0.9832544, 0.182238, -300, -300, 255, 1), -- Test Rift
+(@OGUID+63, 184936, 556, 1, -70.5313, 73.0046, 0.0058196, 1.75418, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+64, 184937, 556, 1, -70.5313, 73.0046, 0.0058196, 1.75418, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+65, 184938, 556, 1, -203.1812, 347.3034, 26.63613, -1.954766, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+66, 184939, 556, 1, -203.1812, 347.3034, 26.63613, -1.954766, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+67, 184938, 556, 1, -271.7818, 188.9468, 0.033852, -0.2443456, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+68, 184939, 556, 1, -271.7818, 188.9468, 0.033852, -0.2443456, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+69, 184938, 556, 1, -60.67723, 275.2422, 26.91605, 1.850049, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+70, 184939, 556, 1, -60.67723, 275.2422, 26.91605, 1.850049, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+71, 184938, 556, 1, 79.53025, 115.9064, 0.3618, -2.111848, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+72, 184939, 556, 1, 79.53025, 115.9064, 0.3618, -2.111848, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+73, 184938, 556, 1, -247.343, 151.882, 0.066447, 0.5934101, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+74, 184939, 556, 1, -247.343, 151.882, 0.066447, 0.5934101, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+75, 184938, 556, 1, -112.8691, 260.597, 26.62049, 2.286379, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+76, 184939, 556, 1, -112.8691, 260.597, 26.62049, 2.286379, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+77, 184938, 556, 1, -238.6028, 341.626, 27.06393, -1.64061, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+78, 184939, 556, 1, -238.6028, 341.626, 27.06393, -1.64061, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+79, 184940, 556, 2, -203.1812, 347.3034, 26.63613, -1.954766, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+80, 184941, 556, 2, -203.1812, 347.3034, 26.63613, -1.954766, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+81, 184940, 556, 2, -271.7818, 188.9468, 0.033852, -0.2443456, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+82, 184941, 556, 2, -271.7818, 188.9468, 0.033852, -0.2443456, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+83, 184940, 556, 2, -60.67723, 275.2422, 26.91605, 1.850049, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+84, 184941, 556, 2, -60.67723, 275.2422, 26.91605, 1.850049, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+85, 184940, 556, 2, 79.53025, 115.9064, 0.3618, -2.111848, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+86, 184941, 556, 2, 79.53025, 115.9064, 0.3618, -2.111848, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+87, 184940, 556, 2, -247.343, 151.882, 0.066447, 0.5934101, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+88, 184941, 556, 2, -247.343, 151.882, 0.066447, 0.5934101, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+89, 184940, 556, 2, -112.8691, 260.597, 26.62049, 2.286379, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+90, 184941, 556, 2, -112.8691, 260.597, 26.62049, 2.286379, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+91, 184940, 556, 2, -238.6028, 341.626, 27.06393, -1.64061, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+92, 184941, 556, 2, -238.6028, 341.626, 27.06393, -1.64061, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -796,7 +825,22 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+32, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 9'),
 (@PGUID+33, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 10'),
 (@PGUID+34, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 11'),
-(@PGUID+35, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 12');
+(@PGUID+35, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 12'),
+(@PGUID+36, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 1'),
+(@PGUID+37, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 2'),
+(@PGUID+38, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 3'),
+(@PGUID+39, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 4'),
+(@PGUID+40, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 5'),
+(@PGUID+41, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 6'),
+(@PGUID+42, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 7'),
+(@PGUID+43, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 8'),
+(@PGUID+44, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 1'),
+(@PGUID+45, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 2'),
+(@PGUID+46, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 3'),
+(@PGUID+47, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 4'),
+(@PGUID+48, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 5'),
+(@PGUID+49, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 6'),
+(@PGUID+50, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 7');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+28, @PGUID+1, 0, 'Sethekk Halls - Sethekk Talon Lord'),
@@ -827,10 +871,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+9, @PGUID+25, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 2'),
 (@OGUID+10, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit (181556)'),
 (@OGUID+11, @PGUID+26, 0, 'Sethekk Halls - Khorium Vein (181557) - Pool 3'),
-(@OGUID+17, @PGUID+21, 0, 'Sethekk Halls - Bound Adamantite Chest (184936)'),
-(@OGUID+18, @PGUID+21, 0, 'Sethekk Halls - Solid Adamantite Chest (184937)'),
-(@OGUID+19, @PGUID+21, 0, 'Sethekk Halls - Bound Adamantite Chest (184938)'),
-(@OGUID+20, @PGUID+21, 0, 'Sethekk Halls - Solid Adamantite Chest (184939)'),
 (@OGUID+23, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+24, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+25, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
@@ -868,21 +908,66 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+57, @PGUID+33, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 10'),
 (@OGUID+58, @PGUID+34, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 11'),
 (@OGUID+59, @PGUID+35, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 12'),
-(@OGUID+60, @PGUID+28, 0, 'Sethekk Halls - Khorium Vein (181557) - Pool 5');
+(@OGUID+60, @PGUID+28, 0, 'Sethekk Halls - Khorium Vein (181557) - Pool 5'),
+(@OGUID+63, @PGUID+36, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184936)'),
+(@OGUID+64, @PGUID+36, 0, 'Sethekk Halls (Normal) - Solid Adamantite Chest (184937)'),
+(@OGUID+65, @PGUID+37, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184938)'),
+(@OGUID+66, @PGUID+37, 0, 'Sethekk Halls (Normal) - Solid Adamantite Chest (184939)'),
+(@OGUID+67, @PGUID+38, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184938)'),
+(@OGUID+68, @PGUID+38, 0, 'Sethekk Halls (Normal) - Solid Adamantite Chest (184939)'),
+(@OGUID+69, @PGUID+39, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184938)'),
+(@OGUID+70, @PGUID+39, 0, 'Sethekk Halls (Normal) - Solid Adamantite Chest (184939)'),
+(@OGUID+71, @PGUID+40, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184938)'),
+(@OGUID+72, @PGUID+40, 0, 'Sethekk Halls (Normal) - Solid Adamantite Chest (184939)'),
+(@OGUID+73, @PGUID+41, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184938)'),
+(@OGUID+74, @PGUID+41, 0, 'Sethekk Halls (Normal) - Solid Adamantite Chest (184939)'),
+(@OGUID+75, @PGUID+42, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184938)'),
+(@OGUID+76, @PGUID+42, 0, 'Sethekk Halls (Normal) - Solid Adamantite Chest (184939)'),
+(@OGUID+77, @PGUID+43, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184938)'),
+(@OGUID+78, @PGUID+43, 0, 'Sethekk Halls (Normal) - Solid Adamantite Chest (184939)'),
+(@OGUID+79, @PGUID+44, 0, 'Sethekk Halls (Heroic) - Bound Adamantite Chest (184940)'),
+(@OGUID+80, @PGUID+44, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)'),
+(@OGUID+81, @PGUID+45, 0, 'Sethekk Halls (Heroic) - Bound Adamantite Chest (184940)'),
+(@OGUID+82, @PGUID+45, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)'),
+(@OGUID+83, @PGUID+46, 0, 'Sethekk Halls (Heroic) - Bound Adamantite Chest (184940)'),
+(@OGUID+84, @PGUID+46, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)'),
+(@OGUID+85, @PGUID+47, 0, 'Sethekk Halls (Heroic) - Bound Adamantite Chest (184940)'),
+(@OGUID+86, @PGUID+47, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)'),
+(@OGUID+87, @PGUID+48, 0, 'Sethekk Halls (Heroic) - Bound Adamantite Chest (184940)'),
+(@OGUID+88, @PGUID+48, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)'),
+(@OGUID+89, @PGUID+49, 0, 'Sethekk Halls (Heroic) - Bound Adamantite Chest (184940)'),
+(@OGUID+90, @PGUID+49, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)'),
+(@OGUID+91, @PGUID+50, 0, 'Sethekk Halls (Heroic) - Bound Adamantite Chest (184940)'),
+(@OGUID+92, @PGUID+50, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)');
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+24, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 1'),
-(@PGUID+25, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 2'),
-(@PGUID+26, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - Pool 3'),
-(@PGUID+27, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 4'),
-(@PGUID+28, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - Pool 5'),
-(@PGUID+29, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 6'),
-(@PGUID+30, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 7'),
-(@PGUID+31, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 8'),
-(@PGUID+32, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 9'),
-(@PGUID+33, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 10'),
-(@PGUID+34, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 11'),
-(@PGUID+35, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 12');
+(@PGUID+24, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 1'),
+(@PGUID+25, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 2'),
+(@PGUID+26, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - Pool 3'),
+(@PGUID+27, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 4'),
+(@PGUID+28, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - Pool 5'),
+(@PGUID+29, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 6'),
+(@PGUID+30, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 7'),
+(@PGUID+31, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 8'),
+(@PGUID+32, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 9'),
+(@PGUID+33, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 10'),
+(@PGUID+34, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 11'),
+(@PGUID+35, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 12'),
+(@PGUID+36, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 1'),
+(@PGUID+37, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 2'),
+(@PGUID+38, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 3'),
+(@PGUID+39, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 4'),
+(@PGUID+40, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 5'),
+(@PGUID+41, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 6'),
+(@PGUID+42, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 7'),
+(@PGUID+43, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 8'),
+(@PGUID+44, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 1'),
+(@PGUID+45, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 2'),
+(@PGUID+46, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 3'),
+(@PGUID+47, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 4'),
+(@PGUID+48, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 5'),
+(@PGUID+49, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 6'),
+(@PGUID+50, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 7');
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES

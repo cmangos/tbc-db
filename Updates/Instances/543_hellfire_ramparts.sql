@@ -1,10 +1,10 @@
 /* DBScriptData
 DBName: Hellfire Citadel - Hellfire Ramparts
 DBScriptName: instance_ramparts
-DB%Complete: 81
+DB%Complete: 85
 DBComment:
 * pat towards omor must be resniffed, they should walk in sync, current spawn position prevents this (need creature_groups for better pathing behavior)
-* Add Chance for no Chest to Spawn (Core/Pooling)
+* Add Chance for no Chest to Spawn (Core/Pooling) or Pool Normal and Heroic Spawns together and let spawnmask reduce the chance, also known issue is that heroic spawnmask can spawn in normal due to pooling bypassing it for normal mode.
 EndDBScriptData */
 
 SET @CGUID := 5430000; -- creatures
@@ -393,10 +393,14 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+2, 184180, 543, 3, -1357.4, 1636.72, 65.5564, 1.01896, 0, 0, 0, 0, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficultyIcon01
 (@OGUID+3, 185168, 543, 1, -1429.56, 1773.13, 82.0906, 1.94103, 0, 0, 0, 0, -600, -600, 100, 1), -- Reinforced Fel Iron Chest
 (@OGUID+4, 185169, 543, 2, -1429.56, 1773.13, 82.0906, 1.94103, 0, 0, 0, 0, -600, -600, 100, 1), -- Reinforced Fel Iron Chest
-(@OGUID+5, 184930, 543, 3, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+6, 184931, 543, 3, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+7, 184930, 543, 3, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+8, 184931, 543, 3, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Bound Fel Iron Chest
+(@OGUID+5, 184930, 543, 1, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+6, 184931, 543, 1, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+7, 184930, 543, 1, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+8, 184931, 543, 1, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+9, 184940, 543, 2, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+10, 184941, 543, 2, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+11, 184940, 543, 2, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+12, 184941, 543, 2, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -412,7 +416,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 (@PGUID+22, @PGUID+21, 0, 'Solid/Bound Fel Iron Chest - Pool 1'),
-(@PGUID+23, @PGUID+21, 0, 'Solid/Bound Fel Iron Chest - Pool 2');
+(@PGUID+23, @PGUID+21, 0, 'Solid/Bound Fel Iron Chest - Pool 2'),
+(@PGUID+24, @PGUID+21, 0, 'Solid/Bound Adamantite Chest - Pool 1'),
+(@PGUID+25, @PGUID+21, 0, 'Solid/Bound Adamantite Chest - Pool 2');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Hellfire Ramparts - Bleeding Hollow Archer/Darkcaster - Pool 1'),
@@ -423,7 +429,9 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+6, 1, 'Hellfire Ramparts - Bleeding Hollow Archer/Darkcaster - Pool 6'),
 (@PGUID+21, 1, 'Hellfire Ramparts - Master Chest Pool'),
 (@PGUID+22, 1, 'Hellfire Ramparts - Solid/Bound Fel Iron Chest - Pool 1'),
-(@PGUID+23, 1, 'Hellfire Ramparts - Solid/Bound Fel Iron Chest - Pool 2');
+(@PGUID+23, 1, 'Hellfire Ramparts - Solid/Bound Fel Iron Chest - Pool 2'),
+(@PGUID+24, 1, 'Hellfire Ramparts - Solid/Bound Adamantite Chest - Pool 1'),
+(@PGUID+25, 1, 'Hellfire Ramparts - Solid/Bound Adamantite Chest - Pool 2');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+27, @PGUID+1, 0, 'Hellfire Ramparts - Bleeding Hollow Darkcaster - Pool 1'),
@@ -445,7 +453,11 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+5, @PGUID+22, 0, 'Hellfire Ramparts - Solid Fel Iron Chest (184930)'),
 (@OGUID+6, @PGUID+22, 0, 'Hellfire Ramparts - Bound Fel Iron Chest (184931)'),
 (@OGUID+7, @PGUID+23, 0, 'Hellfire Ramparts - Solid Fel Iron Chest (184930)'),
-(@OGUID+8, @PGUID+23, 0, 'Hellfire Ramparts - Bound Fel Iron Chest (184931)');
+(@OGUID+8, @PGUID+23, 0, 'Hellfire Ramparts - Bound Fel Iron Chest (184931)'),
+(@OGUID+9, @PGUID+24, 0, 'Hellfire Ramparts - Bound Adamantite Chest (184940)'),
+(@OGUID+10, @PGUID+24, 0, 'Hellfire Ramparts - Solid Adamantite Chest (184941)'),
+(@OGUID+11, @PGUID+25, 0, 'Hellfire Ramparts - Bound Adamantite Chest (184940)'),
+(@OGUID+12, @PGUID+25, 0, 'Hellfire Ramparts - Solid Adamantite Chest (184941)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 

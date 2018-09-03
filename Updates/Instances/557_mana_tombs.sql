@@ -439,8 +439,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+10, 183877, 557, 3, -355.2968, -64.47669, 0.437066, 3.857183, 0, 0, -0.9366713, 0.3502098, 7200, 7200, 255, 1), -- Ethereal Transporter Control Panel
 (@OGUID+11, 184193, 557, 3, 6.65736, 1.04132, -2.00546, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
 (@OGUID+12, 184194, 557, 3, 6.65736, 1.04132, -2.00546, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
-(@OGUID+13, 184934, 557, 3, -259.626, -187.117, -0.687503, 0.593412, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+14, 184937, 557, 3, -7.03085, -221.217, 1.84915, 0.837758, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+13, 184934, 557, 1, -259.626, -187.117, -0.687503, 0.593412, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+14, 184937, 557, 1, -7.03085, -221.217, 1.84915, 0.837758, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
 (@OGUID+15, 185460, 557, 2, 7.909665, -223.0374, -0.934313, 1.97222, 0, 0, 0.8338852, 0.5519379, 7200, 7200, 255, 1), -- Ethereum Prison Base Group (Global)
 (@OGUID+16, 185460, 557, 2, -235.8613, -12.97968, 17.05966, 1.553341, 0, 0, 0.7009087, 0.7132511, 600000, 600000, 255, 1), -- Ethereum Prison Base Group (Global)
 (@OGUID+17, 185519, 557, 2, 7.941054, -223.0367, -0.936042, 6.03884, 0, 0, -0.1218691, 0.9925462, 86400, 86400, 0, 1), -- Mana-Tombs Stasis Chamber
@@ -480,7 +480,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+50, 181569, 557, 3, -329.1461, -69.73901, 0.956257, 3.316144, 0, 0, -0.9961939, 0.08716504, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+51, 181569, 557, 3, -309.1395, 18.4593, 16.1343, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+52, 181557, 557, 3, -269.036, 42.9415, 30.2597, -0.436333, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Khorium
-(@OGUID+53, 181557, 557, 3, -309.1395, 18.4593, 16.1343, 0, 0, 0, 0, 0, 86400, 86400, 255, 1); -- Khorium
+(@OGUID+53, 181557, 557, 3, -309.1395, 18.4593, 16.1343, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Khorium
+(@OGUID+54, 184936, 557, 1, -7.030846, -221.2169, 1.849148, 0.8377574, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -568,7 +569,8 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+50, @PGUID+28, 0, 'Mana-Tombs - Rich Adamantite Deposit (181569) - Pool 6'),
 (@OGUID+51, @PGUID+27, 0, 'Mana-Tombs - Rich Adamantite Deposit (181569) - Pool 5'),
 (@OGUID+52, @PGUID+23, 0, 'Mana-Tombs - Khorium (181557) - Pool 1'),
-(@OGUID+53, @PGUID+27, 0, 'Mana-Tombs - Khorium (181557) - Pool 5');
+(@OGUID+53, @PGUID+27, 0, 'Mana-Tombs - Khorium (181557) - Pool 5'),
+(@OGUID+54, @PGUID+21, 0, 'Mana-Tombs - Bound Adamantite Chest (184936)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
