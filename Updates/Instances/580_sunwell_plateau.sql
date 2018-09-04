@@ -9,7 +9,6 @@ Shadowsword Deathbringers 25485 spawned by spell 46245 cast by Shadowsword Comma
 This is complete in PATH 1 to be loaded by this npc on spawn.
 The Shadowsword Deathbringer will aggro to the closest player on spawn and run to him/her.
 Issues:
-dbscript_string entry values are made up. When changing make sure they are changes through out sript and comments.
 Spell 46319 http://www.wowhead.com/spell=46319/felblood-channel is a 15 second channelled spell which is not ending after 15 seconds.
 Doodad_Sunwell_Ice_Barrier01 Entry: 188119 Should activate when area trigger activates script for Brutallus. Brutallus should shatter the ice barrier in his script.
 Add Serverside Taunt Hit Chance 45210, ss.47067
@@ -1164,7 +1163,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2563901, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_KNEEL'),
 (2563901, 7, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_STAND'),
 (2563902, 0, 15, 45859, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Renew'),
-(2563902, 1, 0, 0, 0, 0, 0, 0, 0, 2000005676, 2000005677, 2000005678, 0, 0, 0, 0, 0, 'Say random text after casting Renew'),
+(2563902, 1, 0, 0, 0, 0, 0, 0, 0, 2000001527, 2000001528, 2000001529, 0, 0, 0, 0, 0, 'Say random text after casting Renew'),
 (2564401, 1, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_KNEEL'),
 (2564402, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_STAND'),
 (2536301, 0, 15, 46319, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Felblood Channel'),
@@ -1173,17 +1172,16 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2537001, 0, 15, 46319, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Felblood Channel'),
 (2537101, 0, 15, 46319, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Felblood Channel'),
 (2559701, 0, 15, 46219, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Fire Channeling'),
-(2548601, 0, 0, 0, 0, 0, 0, 0, 0, 2000005679, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Vanquisher Yell text before runing out'),
+(2548601, 0, 0, 0, 0, 0, 0, 0, 0, 2000001530, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Vanquisher Yell text before runing out'),
 (2583701, 0, 15, 46245, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Summon Shadowsword Deathbringer');
 
--- **** THESE ENTRY VALUES NEED TO BE PROPERLY DETERMINED ****
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000005676,2000005677,2000005678,2000005679,2000005680);
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000001527,2000001528,2000001529,2000001530,2000001531);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000005676, 'May the light bless you.', 0, 0, 0, 0, ''),
-(2000005677, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, ''), 
-(2000005678, 'Rest now, you have fought well today.', 0, 0, 0, 0, ''),
-(2000005679, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, ''),
-(2000005680, 'Bring forth the imps!', 0, 1, 0, 0, '');
+(2000001527, 'May the light bless you.', 0, 0, 0, 0, ''),
+(2000001528, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, ''), 
+(2000001529, 'Rest now, you have fought well today.', 0, 0, 0, 0, ''),
+(2000001530, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, ''),
+(2000001531, 'Bring forth the imps!', 0, 1, 0, 0, '');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -1221,7 +1219,7 @@ INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `lan
 (@CGUID+313, 25486, 580, 1, 1668.669, 547.4747, 85.24547, 2.408554, 7200,7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
 (@CGUID+314, 25486, 580, 1, 1685.173, 555.0667, 85.17554, 2.216568, 7200,7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
 (@CGUID+315, 25506, 580, 1, 1684.763, 548.5197, 85.23845, 2.199115, 7200,7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
-(@CGUID+316, 25837, 580, 1, 1682.332, 537.6241, 85.33395, 2.076942, 7200,7200, 0, 0, 0, 0), -- Shadowsword Commander YELLS 2000005680 on spawn. Run PATH 1
+(@CGUID+316, 25837, 580, 1, 1682.332, 537.6241, 85.33395, 2.076942, 7200,7200, 0, 0, 0, 0), -- Shadowsword Commander YELLS 2000001531 on spawn. Run PATH 1
 -- Group channelling spell 46174 Until Gauntlet Imp Trigger reached that stops spawning
 (@CGUID+317, 25373, 580, 1, 1681.45, 513.1183, 85.3565, 4.974188, 7200,7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
 (@CGUID+318, 25373, 580, 1, 1688.993, 510.2533, 85.35651, 3.735005, 7200,7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
