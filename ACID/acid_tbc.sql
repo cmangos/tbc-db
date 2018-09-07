@@ -23106,8 +23106,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mana Bomb Explosion Trigger 20767 - npc_mana_bomb_exp_trigger
 -- Gralga
 ('2119301','21193','1','0','100','1','418000','418000','418000','418000','1','-250','0','0','0','0','0','0','0','0','0','0','Gralga - Gossip'),
--- Deathtalon Spirit
-('2119801','21198','9','0','100','1','0','5','7000','9000','11','36093','1','0','0','0','0','0','0','0','0','0','Deathtalon Spirit - Cast Ghost Strike'),
+-- Deathtalon Spirit 21198
+('2119801','21198','11','0','100','0','0','0','0','0','11','17327','0','32','0','0','0','0','0','0','0','0','Deathtalon Spirit - Cast Spirit Particles on Spawn'),
+('2119802','21198','9','0','100','1','0','5','7000','9000','11','36093','1','0','0','0','0','0','0','0','0','0','Deathtalon Spirit - Cast Ghost Strike'),
 -- Screeching Spirit
 ('2120001','21200','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Screeching Spirit - Enable Dynamic Movement and Set Phase 1 on Aggro'),
 ('2120002','21200','9','5','100','1','0','40','3400','4800','11','9613','1','0','0','0','0','0','0','0','0','0','Screeching Spirit - Cast Shadow Bolt (Phase 1)'),
