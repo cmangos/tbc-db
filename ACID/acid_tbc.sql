@@ -7894,8 +7894,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Magistrate Sevren (1499) - NSR
 -- Coleman Farthing (1500) - NSR
 -- Mindless Zombie (1501) - NSR
--- Wretched Ghoul
-('150201','1502','11','0','100','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Wretched Ghoul - Cast Birth on Spawn'),
+-- Wretched Zombie 1502
+-- ('150201','1502','11','0','100','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Wretched Ghoul - Cast Birth on Spawn'),
 -- Young Night Web Spider
 ('150401','1504','1','0','100','0','1000','1000','0','0','11','6752','0','32','0','0','0','0','0','0','0','0','Young Night Web Spider - Cast Weak Poison Proc OOC'),
 -- Night Web Spider
