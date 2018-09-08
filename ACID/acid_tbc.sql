@@ -7048,9 +7048,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('109706','1097','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Venture Co Mechanic - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('109707','1097','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co Mechanic - Flee at 15% HP (Phase 2)'),
 ('109708','1097','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Venture Co Mechanic - Set Phase 1 and Set Melee Weapon Model on Evade'),
+-- Mosh'Ogg Brute 1142
+('114201','1142','4','0','10','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Mosh\'Ogg Brute - Say on Aggro'),
 -- Mosh'Ogg Witch Doctor 1144
-('114401','1144','0','0','100','1','1000','4000','7000','15000','11','11980','1','32','0','0','0','0','0','0','0','0','Mosh''Ogg Witch Doctor - Cast Curse of Weakness'),
-('114402','1144','0','0','100','0','4000','6000','0','0','11','3827','0','0','0','0','0','0','0','0','0','0','Mosh''Ogg Witch Doctor - Cast Ward of Laze'),
+('114401','1144','4','0','10','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Mosh\'Ogg Witch Doctor - Say on Aggro'),
+('114402','1144','0','0','100','1','1000','4000','7000','15000','11','11980','1','32','0','0','0','0','0','0','0','0','Mosh\'Ogg Witch Doctor - Cast Curse of Weakness'),
+('114403','1144','0','0','100','0','4000','6000','0','0','11','3827','0','0','0','0','0','0','0','0','0','0','Mosh\'Ogg Witch Doctor - Cast Ward of Laze'),
 -- River Crocolisk
 ('115001','1150','0','0','100','1','3000','8200','12900','24100','11','3604','1','0','0','0','0','0','0','0','0','0','River Crocolisk - Cast Tendon Rip'),
 -- Saltwater Crocolisk
@@ -35064,9 +35067,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-356','Weak $c! You are no match for the Stonesplinter Tribe!','0','0','0','1205 and 1399','0'),
 ('-357','Feel the power of the Dark Iron Dwarves!','0','0','0','1169','0'),
 ('-358','Time to die, $c!','0','0','0','1169','0'),
-('-359','I\'ll crush you!','0','0','0','Ogre Common Text','0'),
-('-360','Me smash! You die!','0','0','0','Ogre Common Text','0'),
-('-361','Raaar!!! Me smash $r!','0','0','0','Ogre Common Text','0'),
+('-359','I\'ll crush you!','0','0','0','Common Ogre Text','0'),
+('-360','Me smash! You die!','0','0','0','Common Ogre Text','0'),
+('-361','Raaar!!! Me smash $r!','0','0','0','Common Ogre Text','0'),
 ('-362','King Magni Bronzebeard is a fool and a charlatan!','0','0','0','1222','0'),
 ('-363','The Thandol Span fell to Ragnaros. So shall the Stonewrought Dam!','0','0','0','1222','0'),
 ('-364','Wahehe! I\'m taking you down with me!','0','0','0','1222','0'),
