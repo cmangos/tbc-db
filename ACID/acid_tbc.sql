@@ -19415,6 +19415,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2245501','22455','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','0','0','0','0','Sky-Master Maxxor - Spawn Enraged Wyverns on Aggro'),
 -- Natasha
 ('2246501','22465','1','0','100','1','60000','120000','60000','120000','54','0','0','10017','0','0','0','0','0','0','0','0','Natasha - Random Say OOC'),
+-- Baron Sablemane
+('2247301','22473','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Baron Sablemane - Set Phase 0 on Evade'),
+('2247302','22473','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Baron Sablemane - Set Phase 1 when Mana is above 15% (Phase 2)'),
+('2247303','22473','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Baron Sablemane - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
+('2247304','22473','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Baron Sablemane - Disable Dynamic Movement at 0-8 Yards'),
+('2247305','22473','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Baron Sablemane - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
+('2247306','22473','9','13','100','1','0','40','3300','5000','11','17290','1','0','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Fireball (Phase 1)'),
+('2247307','22473','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Baron Sablemane - Enable Dynamic Movement and Set Phase 1 on Aggro'),
+('2247308','22473','9','13','100','1','0','40','15400','23500','11','39268','1','1','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Chains of Ice (Phase 1)'),
+('2247309','22473','12','0','100','0','15','0','0','0','22','3','0','0','1','-1440','0','0','49','0','0','0','Baron Sablemane - Set Phase 3, Disable Dynamic Movement and speak at 15% HP'),
+('2247310','22473','12','0','100','0','15','0','0','0','11','39255','0','1','1','-1441','0','0','36','22496','0','0','Baron Sablemane - Play emote, Cast Black Dragon Form and Transform at 15% HP'),
+('2247311','22473','0','7','100','1','3000','4000','6500','7500','11','39263','1','0','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Flame Breath (Phase 3)'),
+('2247312','22473','0','0','100','1','1000','3000','5000','6000','11','34915','1','0','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Threat (Threat)'),
 -- Unstable Fel-Imp
 ('2247401','22474','11','0','100','0','0','0','0','0','20','0','0','0','11','39227','0','0','0','0','0','0','Unstable Fel-Imp - Disable melee and Cast transform spell on Spawn'),
 ('2247402','22474','9','0','100','1','0','5','0','0','11','39266','0','0','0','0','0','0','0','0','0','0','Unstable Fel-Imp - Cast Unstable Explosion'),
@@ -19450,6 +19463,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thuk the Defiant
 ('2292001','22920','32','0','100','1','8','40','5000','10000','11','38777','12','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Rock Rumble in Range'),
 ('2292002','22920','0','0','100','1','3000','6000','8000','16000','11','38770','1','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Mortal Wound'),
+-- Simon Game Bunny 22923 - npc_simon_game_bunny
 -- Felguard Degrader 23055
 -- Fel Imp Defender 23078
 -- Doomguard Punisher 23113
@@ -19529,20 +19543,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2341404','23414','9','0','100','1','0','8','25000','31000','11','40935','1','0','0','0','0','0','0','0','0','0','Bash\'ir Inquisitor - Cast Dematerialize Armor'),
 -- Skyguard Lieutenant 23430
 ('2343001','23430','0','0','100','1','3000','9000','10000','20000','11','38618','0','0','0','0','0','0','0','0','0','0','Skyguard Lieutenant - Cast Whirlwind'),
--- Baron Sablemane
-('2247301','22473','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Baron Sablemane - Set Phase 0 on Evade'),
-('2247302','22473','3','11','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Baron Sablemane - Set Phase 1 when Mana is above 15% (Phase 2)'),
-('2247303','22473','3','13','100','0','7','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Baron Sablemane - Disable Dynamic Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-('2247304','22473','9','0','100','1','0','8','1000','1000','49','0','0','0','0','0','0','0','0','0','0','0','Baron Sablemane - Disable Dynamic Movement at 0-8 Yards'),
-('2247305','22473','9','13','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Baron Sablemane - Enable Dynamic Movement at 9-80 Yards (Phase 1)'),
-('2247306','22473','9','13','100','1','0','40','3300','5000','11','17290','1','0','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Fireball (Phase 1)'),
-('2247307','22473','4','0','100','0','0','0','0','0','49','1','0','0','22','1','0','0','0','0','0','0','Baron Sablemane - Enable Dynamic Movement and Set Phase 1 on Aggro'),
-('2247308','22473','9','13','100','1','0','40','15400','23500','11','39268','1','1','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Chains of Ice (Phase 1)'),
-('2247309','22473','12','0','100','0','15','0','0','0','22','3','0','0','1','-1440','0','0','49','0','0','0','Baron Sablemane - Set Phase 3, Disable Dynamic Movement and speak at 15% HP'),
-('2247310','22473','12','0','100','0','15','0','0','0','11','39255','0','1','1','-1441','0','0','36','22496','0','0','Baron Sablemane - Play emote, Cast Black Dragon Form and Transform at 15% HP'),
-('2247311','22473','0','7','100','1','3000','4000','6500','7500','11','39263','1','0','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Flame Breath (Phase 3)'),
-('2247312','22473','0','0','100','1','1000','3000','5000','6000','11','34915','1','0','0','0','0','0','0','0','0','0','Baron Sablemane - Cast Threat (Threat)'),
--- Simon Game Bunny 22923 - npc_simon_game_bunny
 -- Sundered Ghost 24039
 ('2403901','24039','11','0','100','0','0','0','0','0','11','39916','0','0','11','28126','0','0','11','17321','0','0','Sundered Ghost - Cast Soulgrinder Ghost Transform and Cast Spirit Particles (purple) and Cast Spirit Spawn-in on Spawn'),
 
