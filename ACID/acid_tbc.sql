@@ -7095,6 +7095,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('155101','1551','0','0','85','1','8000','8000','30000','30000','11','5106','1','0','0','0','0','0','0','0','0','0','Ironjaw Basilisk - Cast Crystal Flash'),
 -- Scale Belly
 ('155201','1552','0','0','85','1','15000','15000','26000','26000','11','5106','1','0','0','0','0','0','0','0','0','0','Scale Belly - Cast Crystal Flash'),
+-- Elder Mistvale Gorilla 1557 - NSR
 -- Silverback Patriarch 1558
 ('155801','1558','0','0','80','1','1000','3600','6500','10800','11','6253','1','0','0','0','0','0','0','0','0','0','Silverback Patriarch - Cast Backhand'),
 -- King Mukla
