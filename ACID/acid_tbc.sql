@@ -7048,6 +7048,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('109706','1097','2','0','100','0','15','0','0','0','49','0','0','0','22','2','0','0','0','0','0','0','Venture Co Mechanic - Disable Dynamic Movement and Set Phase 2 at 15% HP'),
 ('109707','1097','2','3','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Venture Co Mechanic - Flee at 15% HP (Phase 2)'),
 ('109708','1097','7','0','100','0','0','0','0','0','22','1','0','0','40','1','0','0','0','0','0','0','Venture Co Mechanic - Set Phase 1 and Set Melee Weapon Model on Evade'),
+-- Jungle Thunderer 1114 - NSR
 -- Mosh'Ogg Brute 1142
 ('114201','1142','4','0','10','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Mosh\'Ogg Brute - Say on Aggro'),
 -- Mosh'Ogg Witch Doctor 1144
