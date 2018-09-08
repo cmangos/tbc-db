@@ -23495,6 +23495,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2316507','23165','6','0','100','0','0','0','0','0','12','23205','0','10000','12','23205','0','10000','12','23205','0','10000','Karrog - Spawn Karrog Shardling on Death'), -- ss.40422
 -- Karrog Shardling 23205
 -- Akkarai Hatchling 23206
+-- Skettis Assassin 23207
+('2320701','23207','4','0','100','0','0','0','0','0','49','1','0','0','20','0','0','0','0','0','0','0','Skettis Assassin - Enable Dynamic Movement and Prevent Melee on Aggro'),
+('2320702','23207','9','0','100','1','5','30','2300','3900','11','10277','1','0','40','2','0','0','0','0','0','0','Skettis Assassin - Cast Throw and Set Ranged Weapon Model'),
+('2320703','23207','9','0','100','1','9','80','1000','1000','49','1','0','0','0','0','0','0','0','0','0','0','Skettis Assassin - Enable Dynamic Movement at 9-80 Yards'),
+('2320704','23207','9','0','100','1','0','8','1000','1000','49','0','0','0','20','1','0','0','40','1','0','0','Skettis Assassin - Disable Dynamic Movement and Enable Melee and Set Melee Weapon Model at 0-8 Yards'),
+('2320705','23207','7','0','100','0','0','0','0','0','40','1','0','0','0','0','0','0','0','0','0','0','Skettis Assassin - Set Melee Weapon Model on Evade'),
 -- Blackwind Warp Chaser
 ('2321901','23219','1','0','100','0','1000','1000','0','0','11','32942','0','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Cast Phasing Invisibility OOC'),
 ('2321902','23219','4','0','100','0','0','0','0','0','28','0','32942','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Remove Phasing Invisibility on Aggro'),
