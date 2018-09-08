@@ -5247,6 +5247,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('122201','1222','4','0','100','0','0','0','0','0','1','-362','-363','-373','0','0','0','0','0','0','0','0','Dark Iron Sapper - Random Say on Aggro'),
 ('122202','1222','2','0','100','0','15','0','0','0','1','-364','0','0','1','-375','0','0','11','3204','0','1','Dark Iron Sapper - Say and Text Emote then Cast Sapper Explode at 15% HP'),
 ('122203','1222','2','0','100','0','15','0','0','0','5','11','0','0','5','11','0','0','11','3204','0','1','Dark Iron Sapper - Laugh Emote at 15% HP'),
+-- Young Threshadon 1224 - NSR
 -- Miran 1379 - npc_miran
 -- Berserk Trogg (2.4.3 Official Data)
 ('139301','1393','4','0','10','0','0','0','0','0','1','-213','-214','-215','0','0','0','0','0','0','0','0','Berserk Trogg - Random Say on Aggro'),
