@@ -6980,6 +6980,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('78405','784','7','0','100','0','0','0','0','0','22','0','0','0','40','1','0','0','56','0','0','0','Skullsplitter Beastmaster - Set Phase 0 and Set Melee Weapon Model and Despawn Guardians on Evade'),
 ('78406','784','9','13','100','1','5','30','2300','3900','11','6660','1','0','40','2','0','0','0','0','0','0','Skullsplitter Beastmaster - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 ('78407','784','0','0','100','1','5000','7000','23000','26000','11','3148','1','32','0','0','0','0','0','0','0','0','Skullsplitter Beastmaster - Cast Head Crack'),
+-- Colonel Kurzen 813
+('81301','813','4','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Colonel Kurzen - Set Phase 1 on Aggro'),
+('81302','813','0','5','100','1','8000','12000','18000','25000','11','8817','15','0','22','2','0','0','0','0','0','0','Colonel Kurzen - Cast Smoke Bomb (Phase 1)'),
+('81303','813','27','3','100','1','8822','1','100','100','11','8818','1','2','22','1','0','0','0','0','0','0','Colonel Kurzen - Cast Garrote (Rank 4) on Missing Stealth Buff (Phase 2)'),
 -- Sergeant Malthus
 ('81401','814','0','0','100','1','0','500','10900','18600','11','7068','1','32','0','0','0','0','0','0','0','0','Sergeant Malthus - Cast Veil of Shadow'),
 ('81402','814','2','0','100','0','15','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sergeant Malthus - Flee at 15% HP'),
