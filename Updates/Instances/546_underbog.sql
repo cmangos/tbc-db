@@ -6,6 +6,7 @@ DBComment:
 * Bog Giant & Underbog Lord Need to have their ACID Rechecked, its totally wrong. they should use 40318 and 32065 early on ~5sec and continue to use 40318 in 10-12sec interval
 * Murkblood might be pooled into different group compositions
 * some Underbog Frenzy have aura 31261
+* Spore Strider should have Delayed Despawn on The Black Stalker Death
 EndDBScriptData */
 
 SET @CGUID := 5460000; -- creatures
@@ -599,7 +600,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+94, @CGUID+119, 1679), -- Lykul Wasp -> Lykul Stinger
 (@CGUID+95, @CGUID+119, 1679); -- Lykul Wasp -> Lykul Stinger
 
--- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
+INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
+(17827, 546, 17826, 3, 0), -- Claw -> Swamplord Musel'ek
+(22299, 546, 17882, 16, 0); -- Spore Strider -> The Black Stalker
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 17723, 546, 3, 9.45653, -217.647, -4.535, 1.03342, 7200, 7200, 5, 0, 0, 1), -- Bog Giant
