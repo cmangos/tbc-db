@@ -3533,7 +3533,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Manawraith (3.0.3 Official Data)
 ('1564801','15648','0','0','100','1','5600','9400','11100','24100','11','25602','1','0','0','0','0','0','0','0','0','0','Manawraith - Cast Faerie Fire'),
 ('1564802','15648','6','0','100','0','0','0','0','0','11','29109','0','7','1','-111','0','0','0','0','0','0','Manawraith - Cast Arcane Residue on Death'),
--- Feral Dragonhawk Hatchling (15649) - NSR
+-- Feral Dragonhawk Hatchling 15649
+('1564901','15649','1','0','100','0','1000','1000','0','0','11','29119','0','32','0','0','0','0','0','0','0','0','Feral Dragonhawk Hatchling - Cast Feather Burst OOC'),
 -- Crazed Dragonhawk (15650) - NSR
 -- Springpaw Stalker (15651) - NSR
 -- Elder Springpaw (15652) - NSR
