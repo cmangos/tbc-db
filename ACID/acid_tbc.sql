@@ -13940,7 +13940,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('713202','7132','0','0','100','1','6000','9000','12000','18000','11','13582','4','32','0','0','0','0','0','0','0','0','Toxic Horror - Cast Deadly Poison'),
 -- Infernal Bodyguard
 ('713501','7135','0','0','100','1','5000','9000','10000','13000','11','10966','1','0','0','0','0','0','0','0','0','0','Infernal Bodyguard - Cast Uppercut'),
--- Infernal Sentry (7136) - NSR
+-- Infernal Sentry 7136
+('713601','7136','1','0','100','0','1000','1000','0','0','11','8279','0','32','0','0','0','0','0','0','0','0','Infernal Sentry - Cast Stealth Detection OOC'),
 -- Immolatus
 ('713701','7137','9','0','100','1','0','8','10000','14000','11','10101','1','0','0','0','0','0','0','0','0','0','Immolatus - Cast Knock Away'),
 -- Irontree Wanderer (7138) - NSR
