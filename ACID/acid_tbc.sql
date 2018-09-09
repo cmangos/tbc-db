@@ -17513,6 +17513,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1286506','12865','3','3','100','1','100','15','1000','1000','22','1','0','0','0','0','0','0','0','0','0','0','Ambassador Malcin - Set Phase 1 when Mana is above 15% (Phase 2)'),
 ('1286507','12865','0','0','100','1','5000','9000','15000','25000','11','8282','1','32','0','0','0','0','0','0','0','0','Ambassador Malcin - Cast Curse of Blood'),
 ('1286508','12865','7','0','100','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ambassador Malcin - Set Phase 0 on Evade'),
+-- Captain Shatterskull 14781 - NSR
 -- Bragok 16227
 ('1622701','16227','4','0','100','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Bragok - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 
