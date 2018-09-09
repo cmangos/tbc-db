@@ -3535,7 +3535,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1564802','15648','6','0','100','0','0','0','0','0','11','29109','0','7','1','-111','0','0','0','0','0','0','Manawraith - Cast Arcane Residue on Death'),
 -- Feral Dragonhawk Hatchling 15649
 ('1564901','15649','1','0','100','0','1000','1000','0','0','11','29119','0','32','0','0','0','0','0','0','0','0','Feral Dragonhawk Hatchling - Cast Feather Burst OOC'),
--- Crazed Dragonhawk (15650) - NSR
+-- Crazed Dragonhawk 15650
+('1565001','15650','1','0','100','0','1000','1000','0','0','11','29119','0','32','0','0','0','0','0','0','0','0','Crazed Dragonhawk - Cast Feather Burst OOC'),
 -- Springpaw Stalker (15651) - NSR
 -- Elder Springpaw (15652) - NSR
 -- Plaguebone Pillager (3.0.3 Official Data)
