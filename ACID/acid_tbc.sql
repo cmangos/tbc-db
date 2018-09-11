@@ -19685,9 +19685,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1687805','16878','6','3','100','0','0','0','0','0','11','39190','0','6','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Cast Send Vengeance on Death (Phase 2)'),
 -- Starving Helboar 16879
 ('1687901','16879','1','0','100','0','1000','1000','0','0','11','33908','0','32','0','0','0','0','0','0','0','0','Starving Helboar - Cast Burning Spikes OOC'),
--- Hulking Helboar - spell_dummy_npc
-('1688001','16880','4','0','100','0','0','0','0','0','11','33909','0','0','0','0','0','0','0','0','0','0','Hulking Helboar - Cast Hulk on Aggro'),
-('1688002','16880','8','0','100','0','34665','-1','0','0','16','16880','34665','6','0','0','0','0','0','0','0','0','Hulking Helboar - Quest Credit on Administer Antidote Spellhit (Quest: 10255)'),
+-- Hulking Helboar 16880 - spell_dummy_npc
+('1688001','16880','1','0','100','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Hulking Helboar - Set Phase 1 OOC'),
+('1688002','16880','2','0','100','1','60','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Hulking Helboar - Set Phase 2 at 60% HP'),
+('1688003','16880','27','3','100','1','33909','3','3000','5000','11','33909','0','0','54','-1585','0','0','0','0','0','0','Hulking Helboar - Cast Hulk and Emote on Missing Aura Stack (Phase 2)'), -- Recast on 33909 Procc
+('1688004','16880','8','0','100','0','34665','-1','0','0','16','16880','34665','6','0','0','0','0','0','0','0','0','Hulking Helboar - Quest Credit on Administer Antidote Spellhit (Quest: 10255)'),
 -- Father Malgor Devidicus
 ('1682501','16825','1','0','100','1','3000','10000','3000','10000','5','92','0','0','0','0','0','0','0','0','0','0','Father Malgor Devidicus - Drink emote'),
 -- Blistering Rot
@@ -36220,7 +36222,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1582','Consume $N, my children!','0','0','0','Darkscreecher Akkarai 23161 on Flock Call 40427','0'),
 ('-1583','You capture Karrog!  Karrog smash you!','0','0','0','Karrog 23165 on Spawn','0'),
 ('-1584','%s fixates on $N.','0','2','0','Karrog 23165 on Fixated Rage 40416','0'),
--- PLEASE RE-USE 1585 - 1586 classic>tbc>wotlk
+('-1585','%s begins to grow stronger.','0','2','0','16880','0'),
+-- PLEASE RE-USE 1586 classic>tbc>wotlk
 ('-1587','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0'),
 ('-1588','KILL THEM ALL!','0','1','0','23440/23441','0'),
 ('-1589','BURN IT DOWN!','0','1','0','23440/23441','0'),
