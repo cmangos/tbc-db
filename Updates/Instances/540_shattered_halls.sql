@@ -4,14 +4,11 @@ DBScriptName: instance_shattered_halls
 DB%Complete: 80
 DBComment:
 * reuse Freed GUIDs for Creature Group Pooling
-* sleepy orcs are getting pulled somehow by the Shattered Hand Legionnaire, while he is in combat.
 * gladiator fighting script to certain %threshold - Research
 * training dummy script like in garadar with hit animation on the dummy
 * groups need to be restructured and hallway scripts have to be made to substitute these static spawned groups
 * Shattered Hand Heathen at the entrance might be pooled with Shattered Hand Savage (1:1 pool, changed to 3:2 static atm)
 * Shattered Hand Legionnaire need "Substutite Dead Group Member Mechanic"
-!Evalute* Timed Event seems broken and doesnt end when timer runs out for the final time (Executioneer doesnt despawn)(cpp)
-!Evalute* Issues with Last Boss not resetting properly permanently calling aggro yells (maybe due to triggers)(cpp maybe)
 EndDBScriptData */
 
 SET @CGUID := 5400000; -- creatures
@@ -462,6 +459,12 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+129, @CGUID+93, 1679), -- Creeping Oozeling -> Creeping Ooze
 (@CGUID+130, @CGUID+95, 1679), -- Creeping Oozeling -> Creeping Ooze
 (@CGUID+131, @CGUID+92, 1679), -- Creeping Oozeling -> Creeping Ooze
+(@CGUID+146, @CGUID+148, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
+(@CGUID+147, @CGUID+148, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
+(@CGUID+150, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
+(@CGUID+151, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
+(@CGUID+152, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
+(@CGUID+149, @CGUID+143, 1), -- Shattered Hand Zealot -> Shattered Hand Archer
 (@CGUID+153, @CGUID+169, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
 (@CGUID+154, @CGUID+169, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
 (@CGUID+155, @CGUID+169, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
@@ -500,7 +503,10 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+306, @CGUID+305, 1167); -- Shattered Hand Champion -> Shattered Hand Champion
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(16809, 540, 16808, 1, 0); -- Warbringer O'mrogg -> Warchief Kargath Bladefist
+(16809, 540, 16808, 1, 0), -- Warbringer O'mrogg -> Warchief Kargath Bladefist
+(17427, 540, 17427, 3, 0), -- Shattered Hand Archer -> Shattered Hand Archer
+(17461, 540, 17427, 3, 0), -- Shattered Hand Blood Guard -> Shattered Hand Archer
+(20923, 540, 17427, 3, 0); -- Blood Guard Porung -> Shattered Hand Archer
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 2110, 540, 3, 115.869, 223.215, -47.7406, 1.51629, 86400, 86400, 5, 0, 0, 1), -- Black Rat
@@ -565,12 +571,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- (@CGUID+60, 16593, 540, 3, 68.6549, 200.035, -13.1973, 4.79336, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Brawler
 -- (@CGUID+61, 16593, 540, 3, 302.413, -78.5592, 1.9382, 0.0103457, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Brawler
 -- (@CGUID+62, 16593, 540, 3, 301.13, -91.7611, 1.9382, 0.0260537, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Brawler
-(@CGUID+63, 16593, 540, 3, 43.5588, 265.281, -10.7783, 1.65806, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Brawler
+(@CGUID+63, 16593, 540, 3, 43.5588, 265.281, -10.7783, 1.658063, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Brawler
 (@CGUID+64, 16593, 540, 3, 43.5914, 253.725, -10.9988, 1.58825, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Brawler
 (@CGUID+65, 16593, 540, 3, 69.6697, 286.034, -10.8391, 0.122173, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Brawler
 (@CGUID+66, 16594, 540, 3, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- Shadowmoon Acolyte
 (@CGUID+67, 16594, 540, 3, 63.3135, 84.0945, -13.1156, 4.66003, 7200, 7200, 0, 0, 0, 0), -- Shadowmoon Acolyte
-(@CGUID+68, 16594, 540, 3, 83.5451, 286.75, -10.8789, 3.03687, 7200, 7200, 0, 0, 0, 0), -- Shadowmoon Acolyte
+(@CGUID+68, 16594, 540, 3, 83.5451, 286.75, -10.8789, 3.036873, 7200, 7200, 0, 0, 0, 0), -- Shadowmoon Acolyte
 (@CGUID+69, 16594, 540, 3, 83.3397, 265.004, -13.1239, 3.66519, 7200, 7200, 0, 0, 0, 0), -- Shadowmoon Acolyte
 (@CGUID+70, 16699, 540, 3, 71.5349, 130.864, -13.1991, 4.62365, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Reaver
 (@CGUID+71, 16699, 540, 3, 63.2694, 185.208, -13.2393, 4.73753, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Reaver
@@ -645,9 +651,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+140, 17420, 540, 3, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+141, 17420, 540, 3, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+142, 17420, 540, 3, 65.4234, 84.6101, -13.1184, 4.60767, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
-(@CGUID+143, 17427, 540, 3, 516.599, 313.796, 3.14, 1.88519, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Archer
-(@CGUID+144, 17427, 540, 3, 515.545, 320.122, 3.14, 4.854, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Archer
-(@CGUID+145, 17461, 540, 1, 513.315, 316.846, 1.936, 3.17325, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Blood Guard
+(@CGUID+143, 17427, 540, 3, 514.5014, 319.6571, 2.042556, 3.368485, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Archer
+(@CGUID+144, 17427, 540, 3, 514.8049, 312.0412, 2.036432, 3.001966, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Archer
+(@CGUID+145, 17461, 540, 1, 512.6873, 315.6516, 2.040503, 2.984513, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Blood Guard
 (@CGUID+146, 17462, 540, 3, 338.854, 312.779, 1.91817, 1.46265, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Zealot
 (@CGUID+147, 17462, 540, 3, 336.91, 315.106, 1.91817, 0.17067, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Zealot
 (@CGUID+148, 17462, 540, 3, 339.462, 318.231, 1.91786, 4.66315, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Zealot
@@ -760,7 +766,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+255, 20709, 540, 3, 235.918, -83.9248, 5.02341, 1.81514, 86400, 86400, 0, 0, 0, 0), -- Blade Dance Target
 (@CGUID+256, 20709, 540, 3, 242.375, -63.7785, 5.02294, 3.05433, 86400, 86400, 0, 0, 0, 0), -- Blade Dance Target
 (@CGUID+257, 20709, 540, 3, 243.196, -104.702, 5.02294, 5.14872, 86400, 86400, 0, 0, 0, 0), -- Blade Dance Target
-(@CGUID+258, 20923, 540, 2, 513.24, 315.927, 1.93557, 3.1429, 86400, 86400, 0, 0, 0, 0), -- Blood Guard Porung
+(@CGUID+258, 20923, 540, 2, 512.6873, 315.6516, 2.040503, 2.984513, 86400, 86400, 0, 0, 0, 0), -- Blood Guard Porung
 (@CGUID+259, 17420, 540, 3, 517.953, 147.302, 1.92749, 1.28571, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+260, 17694, 540, 3, 524.261, 148.377, 1.92894, 2.05776, 7200, 7200, 0, 0, 0, 0), -- Shadowmoon Darkcaster
 (@CGUID+261, 16699, 540, 3, 521.292, 147.236, 1.92796, 1.67448, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Reaver
