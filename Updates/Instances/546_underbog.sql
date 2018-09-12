@@ -582,8 +582,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+68, @CGUID+72, 1167), -- Murkblood Tribesman -> Murkblood Spearman
 (@CGUID+69, @CGUID+72, 1167), -- Murkblood Tribesman -> Murkblood Spearman
 (@CGUID+100, @CGUID+72, 1167), -- Wrathfin Warrior -> Murkblood Spearman
-(@CGUID+130, @CGUID+129, 1167), -- Underbog Frenzy -> Underbog Frenzy
-(@CGUID+131, @CGUID+129, 1167), -- Underbog Frenzy -> Underbog Frenzy
 (@CGUID+77, @CGUID+76, 1679), -- Fen Ray -> Fen Ray
 (@CGUID+78, @CGUID+76, 1679), -- Fen Ray -> Fen Ray
 (@CGUID+85, @CGUID+79, 1167), -- Fen Ray -> Fen Ray
