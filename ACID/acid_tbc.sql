@@ -27614,8 +27614,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1746103','17461','7','0','100','6','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Shattered Hand Blood Guard - Fail Gauntlet on Evade'),
 -- Shattered Hand Zealot
 ('1746201','17462','9','0','100','7','0','5','10000','13000','11','30989','1','0','0','0','0','0','0','0','0','0','Shattered Hand Zealot - Cast Hamstring'),
--- Shattered Hand Gladiator
-('1746401','17464','9','0','100','7','0','5','7000','10000','11','16856','1','0','0','0','0','0','0','0','0','0','Shattered Hand Gladiator - Cast Mortal Strike'),
+-- Shattered Hand Gladiator 17464
+('1746401','17464','0','0','100','7','6000','18000','10000','20000','11','16856','1','0','0','0','0','0','0','0','0','0','Shattered Hand Gladiator - Cast Mortal Strike'),
 -- Shattered Hand Centurion
 ('1746501','17465','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Set Phase 1 on Aggro'),
 ('1746502','17465','9','5','100','3','0','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Normal) - Cast Sunder Armor (Phase 1)'),
