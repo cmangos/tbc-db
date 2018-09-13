@@ -27616,16 +27616,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1746201','17462','9','0','100','7','0','5','10000','13000','11','30989','1','0','0','0','0','0','0','0','0','0','Shattered Hand Zealot - Cast Hamstring'),
 -- Shattered Hand Gladiator 17464
 ('1746401','17464','0','0','100','7','6000','18000','10000','20000','11','16856','1','0','0','0','0','0','0','0','0','0','Shattered Hand Gladiator - Cast Mortal Strike'),
--- Shattered Hand Centurion
-('1746501','17465','4','0','100','6','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Set Phase 1 on Aggro'),
-('1746502','17465','9','5','100','3','0','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Normal) - Cast Sunder Armor (Phase 1)'),
-('1746503','17465','9','5','100','5','0','5','5000','9000','11','16145','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Heroic) - Cast Sunder Armor (Phase 1)'),
-('1746504','17465','24','5','100','3','15572','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Normal) - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('1746505','17465','24','5','100','5','16145','5','5000','5000','22','2','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Heroic) - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('1746506','17465','28','3','100','3','15572','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Normal) - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
-('1746507','17465','28','3','100','5','16145','1','5000','5000','22','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Heroic) - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
-('1746508','17465','0','0','100','3','3000','7000','17000','21000','11','42246','0','1','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Cast Battle Shout (SPELL ID TEMP FIX)'),
-('1746509','17465','7','0','100','6','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Set Phase 0 on Evade'),
+-- Shattered Hand Centurion 17465
+('1746501','17465','0','0','100','7','3000','7000','17000','21000','11','31403','0','1','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Cast Battle Shout'),
+('1746502','17465','28','0','100','3','15572','5','5000','9000','11','15572','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Normal) - Cast Sunder Armor on Target Missing Aura Stack'),
+('1746503','17465','28','0','100','5','16145','5','5000','9000','11','16145','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Heroic) - Cast Sunder Armor on Target Missing Aura Stack'),
 -- Lesser Shadow Fissure 17471 - npc_aoe_damage_trigger
 -- Heathen Guard
 ('1762101','17621','0','0','100','7','6000','10000','10000','14000','11','30474','1','0','0','0','0','0','0','0','0','0','Heathen Guard - Cast Bloodthirst'),
