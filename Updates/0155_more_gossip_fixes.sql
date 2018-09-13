@@ -129,7 +129,7 @@ INSERT INTO gossip_menu (entry, text_id, condition_id) VALUES
 
 DELETE FROM conditions WHERE condition_entry=3712;
 INSERT INTO conditions (condition_entry, type, value1, value2, comments) VALUES
-(3712, 8, 10771, 1, 'Quest 10771 From the Ashes rewarded');
+(3712, 8, 10771, 0, 'Quest 10771 From the Ashes rewarded');
 
 -- Chief Researcher Amereldine (Entry: 18816)
 UPDATE creature_template SET GossipMenuId=7838, NpcFlags=NpcFlags|1 WHERE entry=18816;
