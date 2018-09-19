@@ -2907,11 +2907,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2296502, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emote OneShotBow'),
 (2296503, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emotestate 69'),
 (2296503, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emotestate 0'),
-(2314701, 0, 15, 34664, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Grunt - Cast Sleep Visual - Flavor'),
-(2319601, 0, 20, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth -  Set MovementType 0 and Spawndist 0'), -- should be addable to creature_movement, which currently lacks pathId support
-(2319601, 60, 20, 2, 1, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 1'),
-(2319602, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth -  Set MovementType 1 and Spawndist 3'),
-(2319602, 60, 20, 2, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 0');
+(2314701, 0, 15, 34664, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Grunt - Cast Sleep Visual - Flavor');
+-- (2319601, 0, 20, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth -  Set MovementType 0 and Spawndist 0'), -- should be addable to creature_movement, which currently lacks pathId support
+-- (2319601, 60, 20, 2, 1, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 1'),
+-- (2319602, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth -  Set MovementType 1 and Spawndist 3'),
+-- (2319602, 60, 20, 2, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 0');
 
 -- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
