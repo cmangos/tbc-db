@@ -232,10 +232,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+70, @CGUID+118, 1167), -- Coilfang Myrmidon -> Coilfang Sorceress
 (@CGUID+71, @CGUID+118, 1167), -- Coilfang Myrmidon -> Coilfang Sorceress
 (@CGUID+108, @CGUID+118, 1167), -- Coilfang Oracle -> Coilfang Sorceress
-(@CGUID+121, @CGUID+42, 1167), -- Steamrigger Mechanic -> Mekgineer Steamrigger
-(@CGUID+122, @CGUID+42, 1167), -- Steamrigger Mechanic -> Mekgineer Steamrigger
-(@CGUID+123, @CGUID+42, 1167), -- Steamrigger Mechanic -> Mekgineer Steamrigger
-(@CGUID+125, @CGUID+42, 1167), -- Steamrigger Mechanic -> Mekgineer Steamrigger
+(@CGUID+121, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
+(@CGUID+122, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
+(@CGUID+123, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
 (@CGUID+63, @CGUID+62, 1167); -- Coilfang Myrmidon -> Coilfang Myrmidon
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
@@ -363,11 +362,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+118, 17722, 545, 3, -87.5288, -471.939, 8.0284, 1.51825, 7200, 7200, 0, 0, 0, 0), -- Coilfang Sorceress
 (@CGUID+119, 17917, 545, 3, 90.0419, -326.115, -7.78746, 3.00197, 7200, 7200, 0, 0, 0, 0), -- Coilfang Water Elemental
 (@CGUID+120, 17917, 545, 3, 91.3224, -306.508, -7.78735, 3.21141, 7200, 7200, 0, 0, 0, 0), -- Coilfang Water Elemental
-(@CGUID+121, 17951, 545, 3, -335.545, -122.596, -7.93522, 0.506145, 7200, 7200, 0, 0, 0, 0), -- Steamrigger Mechanic
-(@CGUID+122, 17951, 545, 3, -325.385, -120.199, -7.97289, 3.83972, 7200, 7200, 0, 0, 0, 0), -- Steamrigger Mechanic
-(@CGUID+123, 17951, 545, 3, -328.561, -126.069, -8.01361, 1.8675, 7200, 7200, 0, 0, 0, 0), -- Steamrigger Mechanic
-(@CGUID+124, 17951, 545, 3, -348.497, -161.719, -7.66667, 3.32255, 7200, 7200, 0, 0, 0, 0), -- Steamrigger Mechanic
-(@CGUID+125, 17951, 545, 3, -331.162, -112.213, -7.66667, 3.32255, 7200, 7200, 0, 0, 0, 0), -- Steamrigger Mechanic
+(@CGUID+121, 17951, 545, 3, -335.5449, -122.5956, -7.935218, 0.5061455, 7200, 7200, 0, 0, 0, 0), -- Steamrigger Mechanic
+(@CGUID+122, 17951, 545, 3, -325.3847, -120.199, -7.972894, 3.839724, 7200, 7200, 0, 0, 0, 0), -- Steamrigger Mechanic
+(@CGUID+123, 17951, 545, 3, -328.5612, -126.0686, -8.013614, 1.867502, 7200, 7200, 0, 0, 0, 0), -- Steamrigger Mechanic
+-- RE-USE 124-125
 (@CGUID+126, 17954, 545, 3, -106.371, -459.976, 7.80131, 0.296706, 7200, 7200, 0, 0, 0, 0), -- Naga Distiller
 (@CGUID+127, 17954, 545, 3, -83.6271, -461.426, 7.83904, 5.91667, 7200, 7200, 0, 0, 0, 0), -- Naga Distiller
 (@CGUID+128, 17954, 545, 3, -112.472, -486.254, 8.27487, 5.28835, 7200, 7200, 0, 0, 0, 0), -- Naga Distiller
