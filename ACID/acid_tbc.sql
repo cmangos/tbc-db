@@ -4252,6 +4252,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deliana 16013
 -- Garel Redrock 16070
 -- Kwee Q. Peddlefeet 16075
+('1607501','16075','22','0','100','1','58','0','0','0','0','0','11','27572','6','32','0','0','0','0','0','0','0','0','Kwee Q. Peddlefeet - Cast Smitten on Receive TEXTEMOTE_KISS'),
 -- Spectral Stalker 16093
 -- Argent Recruiter 16241
 -- Argent Dawn Paladin 16395
@@ -5970,7 +5971,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lunar Festival Harbinger (15895) - NSR
 -- Colara Dean 16002
 -- Lieutenant Jocryn Heldric 16005
--- Kwee Q. Peddlefeet (16075) - NSR
 -- Aristan Mottar 16105
 -- Evert Sorisam 16106
 -- Argent Recruiter
