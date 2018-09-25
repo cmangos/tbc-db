@@ -18592,7 +18592,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Krexcil (18938) - NSR
 -- Ravandwyr (19217) - NSR
 -- Netherstorm Crystal Target
-('1942101','19421','1','0','100','1','500','500','5000','5000','0','0','11','34397','0','0','0','0','0','0','0','0','0','0','Netherstorm Crystal Target - Cast Red Beam'),
 -- Sunfury Captain
 ('1945301','19453','0','0','100','0','3700','3700','0','0','0','0','11','32064','0','0','0','0','0','0','0','0','0','0','Sunfury Captain - Cast Battle Shout'),
 ('1945302','19453','0','0','100','0','3700','3700','0','0','0','0','11','35871','1','0','0','0','0','0','0','0','0','0','Sunfury Captain - Cast Spellbreaker'),
