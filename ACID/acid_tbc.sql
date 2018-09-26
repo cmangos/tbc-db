@@ -10413,6 +10413,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1232101','12321','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Stormscale Toxicologist - Enable Caster Mode on Aggro'),
 ('1232102','12321','14','0','100','1025','200','40','18000','21000','0','0','11','11642','12','0','0','0','0','0','0','0','0','0','Stormscale Toxicologist - Cast Heal on Friendly Missing HP'),
 ('1232103','12321','9','0','100','1025','0','40','3400','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Stormscale Toxicologist - Cast Holy Smite'),
+-- Thamarian 12656
+('1265601','12656','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Thamarian - Flee at 15% HP'),
 -- Elder Starweave (15601) - NSR
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
