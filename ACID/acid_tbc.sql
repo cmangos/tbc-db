@@ -28877,6 +28877,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1648804','16488','6','0','100','2','0','0','0','0','0','0','11','29882','0','7','0','0','0','0','0','0','0','0','Arcane Anomaly - Cast Loose Mana on Death'),
 -- Chaotic Sentience
 ('1648901','16489','0','0','100','3','1000','3000','30000','45000','0','0','11','29900','0','32','0','0','0','0','0','0','0','0','Chaotic Sentience - Cast Unstable Magic'),
+-- Mana Feeder 16491 - NSR
 -- Syphoner
 ('1649201','16492','9','0','100','3','0','20','9000','13000','0','0','11','29881','4','0','0','0','0','0','0','0','0','0','Syphoner - Cast Drain Mana'),
 -- Arcane Protector 16504
