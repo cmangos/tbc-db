@@ -17065,7 +17065,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2291002','22910','0','0','100','1','10000','10000','16000','20000','0','0','11','39621','1','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - In Combat - Cast Corruption'),
 ('2291003','22910','0','0','100','1','20000','20000','20000','20000','0','0','11','39620','4','0','11','39620','4','0','11','39620','4','0','Skulloc Soulgrinder - In Combat - Cast Summon Ogre Ghost 3x'),
 ('2291004','22910','6','0','100','0','0','0','0','0','0','0','11','39909','0','0','0','0','0','0','0','0','0','0','Skulloc Soulgrinder - Cast Summon Soul on Death'),
--- Vim'gol the Vile 22911
+-- Vim'gol the Vile 22911 - npc_vimgol
 -- Sundered Spirit 22912
 ('2291201','22912','0','0','100','1','6000','12000','6000','12000','0','0','11','20816','1','0','0','0','0','0','0','0','0','0','Sundered Spirit - Cast Shadow Bolt'),
 -- Thuk the Defiant
