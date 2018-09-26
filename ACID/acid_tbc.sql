@@ -26492,7 +26492,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==========================
 -- Tempest Keep: The Arcatraz - (Zone Script Revamp Complete)
 -- ==========================
--- Arcatraz Defender 20857 - moved to SD2
+-- Arcatraz Defender 20857 - npc_arcatraz_defender
 -- Arcatraz Warder 20859 (Needs Ranged Combat Movement Action 57)
 ('2085901','20859','1','0','100','7','1000','3000','4000','5000','0','0','11','36327','0','0','40','2','0','0','0','0','0','0','Arcatraz Warder - Cast Shoot Arcane Explosion Arrow and Set Ranged Weapon Model OOC'),
 ('2085902','20859','1','0','100','7','16000','16000','2000','4000','0','0','11','36293','0','0','40','2','0','0','0','0','0','0','Arcatraz Warder - Cast Arcane Shot and Set Ranged Weapon Model OOC'),
