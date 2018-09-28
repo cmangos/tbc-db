@@ -23627,10 +23627,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===================================
 -- Hellfire Citadel: The Blood Furnace
 -- ===================================
--- Laughing Skull Enforcer (3.0.3 Official Data - Normal Log Only)
+-- Laughing Skull Enforcer 17370 (3.0.3 Official Data - Normal Log Only)
 ('1737001','17370','4','0','10','6','0','0','0','0','0','0','1','-157','0','0','0','0','0','0','0','0','0','0','Laughing Skull Enforcer - Say on Aggro'),
 ('1737002','17370','9','0','100','7','0','5','9300','14700','0','0','11','14516','1','0','0','0','0','0','0','0','0','0','Laughing Skull Enforcer - Cast Strike'),
-('1737003','17370','0','0','100','7','4200','9500','9500','15300','0','0','11','15655','4','1','0','0','0','0','0','0','0','0','Laughing Skull Enforcer - Shield Slam'),
+('1737003','17370','0','0','100','7','4200','9500','9500','15300','0','0','11','15655','1','0','0','0','0','0','0','0','0','0','Laughing Skull Enforcer - Cast Shield Slam'),
 -- Shadowmoon Warlock 17371 (3.0.3 Official Data - Normal Log Only)
 ('1737101','17371','4','0','15','6','0','0','0','0','0','0','1','-157','-181','0','0','0','0','0','0','0','0','0','Shadowmoon Warlock - Say on Aggro'),
 ('1737102','17371','4','0','100','6','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Shadowmoon Warlock - Enable Caster Mode on Aggro'),
