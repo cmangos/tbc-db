@@ -23671,11 +23671,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1740101','17401','11','0','100','6','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Felhound Manastalker - Zone Combat Pulse on Spawn'),
 ('1740102','17401','0','0','100','7','1000','2500','11100','11300','0','0','11','13321','16','512','0','0','0','0','0','0','0','0','Felhound Manastalker - Cast Mana Burn on Random Player Mana User'),
 ('1740103','17401','0','0','100','7','3300','8700','12900','12900','0','0','11','30849','16','512','0','0','0','0','0','0','0','0','Felhound Manastalker - Cast Spell Lock on Random Player Mana User'),
--- Shadowmoon Technician (3.0.3 Official Data - Normal Log Only)
+-- Shadowmoon Technician 17414 (3.0.3 Official Data - Normal Log Only)
 ('1741401','17414','0','0','100','3','2800','4700','1400','23400','0','0','11','30846','4','1','1','-155','0','0','0','0','0','0','Shadowmoon Technician (Normal) - Throw Proximity Bomb'),
 ('1741402','17414','0','0','100','5','2800','4700','17700','23400','0','0','11','32784','4','1','1','-155','0','0','0','0','0','0','Shadowmoon Technician (Heroic) - Throw Proximity Bomb'),
-('1741403','17414','0','0','100','3','4400','10600','3600','6200','0','0','11','40062','4','0','0','0','0','0','0','0','0','0','Shadowmoon Technician (Normal) - Cast Throw Dynamite'),
-('1741404','17414','0','0','100','5','4400','10600','3600','6200','0','0','11','40064','4','0','0','0','0','0','0','0','0','0','Shadowmoon Technician (Heroic) - Cast Throw Dynamite'),
+('1741403','17414','0','0','100','3','4400','10600','3600','6200','0','0','11','40062','1','0','0','0','0','0','0','0','0','0','Shadowmoon Technician (Normal) - Cast Throw Dynamite'),
+('1741404','17414','0','0','100','5','4400','10600','3600','6200','0','0','11','40064','1','0','0','0','0','0','0','0','0','0','Shadowmoon Technician (Heroic) - Cast Throw Dynamite'),
 ('1741405','17414','0','0','100','7','5400','11600','24300','24300','0','0','11','6726','4','1','0','0','0','0','0','0','0','0','Shadowmoon Technician - Cast Silence'),
 ('1741406','17414','4','0','15','6','0','0','0','0','0','0','1','-159','0','0','0','0','0','0','0','0','0','0','Shadowmoon Technician - Say on Aggro'),
 -- Fel Orc Neophyte (3.0.3 Official Data - Normal Log Only)
