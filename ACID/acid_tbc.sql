@@ -3021,13 +3021,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1593805','15938','9','0','100','1025','5','30','3400','3700','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Eversong Ranger - Cast Shoot'),
 -- Ranger Degolien (15939) - NSR
 -- Ranger Selron (15940) - NSR
--- Apprentice Ralen (15941) - NSR
+-- Apprentice Ralen 15941
+('1594101','15941','8','2','100','1','27907','-1','15000','15000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Apprentice Ralen - Set Phase 1 on Disciplinary Rod Spellhit (Phase 0)'),
+('1594102','15941','1','1','100','1','3000','3000','3000','3000','0','0','54','-10134','0','0','22','0','0','0','0','0','0','0','Apprentice Ralen - Say and Set Phase 0 OOC (Phase 1)'),
 -- Ranger Sareyn (15942) - NSR
 -- Apprentice Meledor 15945
-('1594501','15945','8','0','100','1','27907','-1','0','0','0','0','33','15945','6','0','1','-10114','0','0','0','0','0','0','Apprentice Meledor - Say on Disciplinary Rod Spell Hit'),
-('1594502','15945','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Apprentice Meledor - Enable Caster Mode on Aggro'),
-('1594503','15945','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Apprentice Meledor - Flee at 15% HP'),
-('1594504','15945','9','0','100','1025','0','40','3400','4800','0','0','11','20811','1','256','0','0','0','0','0','0','0','0','Apprentice Meledor - Cast Fireball'),
+('1594501','15945','8','2','100','1','27907','-1','15000','15000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Apprentice Meledor - Set Phase 1 on Disciplinary Rod Spellhit (Phase 0)'),
+('1594502','15945','1','1','100','1','2500','2500','2500','2500','0','0','54','-10114','0','0','22','0','0','0','0','0','0','0','Apprentice Meledor - Say and Set Phase 0 OOC (Phase 1)'),
+('1594503','15945','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Apprentice Meledor - Enable Caster Mode on Aggro'),
+('1594504','15945','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Apprentice Meledor - Flee at 15% HP'),
+('1594505','15945','9','0','100','1025','0','40','3400','4800','0','0','11','20811','1','256','0','0','0','0','0','0','0','0','Apprentice Meledor - Cast Fireball'),
 -- Apprentice Veya (15946) - NSR
 -- Thaelis the Hungerer (15949) - NSR
 -- Grimscale Seer 15950 (3.0.3 Official Data)
@@ -31701,7 +31704,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10111','%s absorbs the arcane energy of the attack.','0','2','0','18683/18870/19527','0'),
 ('-10112','Haha... I gonna kill puny $r and make trophy of your skull!','0','0','0','16358','0'),
 ('-10113','What have you done to my life\'s work?!  DIE!!!','0','0','0','17359','0'),
-('-10114','You can''t do this to me! We had a deal!','0','0','0','15945','0'),
+('-10114','You can''t do this to me!  We had a deal!','0','0','0','15945','0'),
 ('-10115','Die, interloper! Your puny device cannot pierce the dark magics of Hellfire Citadel!','0','0','0','22273','0'),
 ('-10116','Death is the price you shall pay for this insolence!','0','0','0','16329','0'),
 ('-10117','Mortal fools! The ghouls of Deatholme will feast on your remains!','0','0','0','16329','0'),
@@ -31720,7 +31723,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10130','Battle Stance! Prepare for an offensive rush!','0','1','0','23049','0'),
 ('-10131','Defensive Stance! Shield yourself against their blows and strike back!','0','1','0','23049','0'),
 ('-10132','Berserker stance! Attack them recklessly!','0','1','0','23049','0'), -- Delete -378
-('-10133','%s goes into a killing frenzy!','0','2','0','Bonechewer Brawler 23222','0');
+('-10133','%s goes into a killing frenzy!','0','2','0','Bonechewer Brawler 23222','0'),
+('-10134','What?  Oh, not this again!','0','0','0','15941','0');
 -- WOTLK IDs 20000+
 
 
