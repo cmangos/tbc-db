@@ -618,6 +618,34 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14323, 0, 16, 573.506, 563.22, -25.4018, 0, 0, 0),
 (14323, 0, 17, 558.634, 549.916, -25.3991, 0, 0, 0),
 (14323, 0, 18, 550.942, 528.12, -25.4017, 0, 0, 0),
+-- Captain Kromcrush 14325
+(14325, 0, 1, 537.6137, 481.9839, 29.463390, 100, 0, 0),
+(14325, 0, 2, 492.9615, 482.6955, 29.462610, 100, 0, 0),
+(14325, 0, 3, 491.6125, 531.2999, 27.914310, 100, 0, 0),
+(14325, 0, 4, 540.2087, 535.6834, 27.918610, 100, 0, 0),
+(14325, 0, 5, 585.9129, 535.8292, 6.7701660, 100, 0, 0),
+(14325, 0, 6, 586.8547, 563.0961, -4.755411, 100, 0, 0),
+(14325, 0, 7, 587.0049, 593.8651, -4.755402, 100, 0, 0),
+(14325, 0, 8, 538.3655, 591.8546, -4.754774, 100, 0, 0),
+(14325, 0, 9, 491.1774, 591.8058, -21.82413, 100, 0, 0),
+(14325, 0, 10, 478.2634, 591.4266, -25.40611, 100, 0, 0),
+(14325, 0, 11, 478.0584, 579.1732, -25.40207, 100, 0, 0),
+(14325, 0, 12, 527.7573, 579.9644, -25.40256, 100, 0, 0),
+(14325, 0, 13, 558.3123, 582.1360, -25.40273, 100, 0, 0),
+(14325, 0, 14, 558.1668, 541.2151, -25.39999, 100, 0, 0),
+(14325, 0, 15, 512.6095, 542.4402, -25.39569, 100, 0, 0),
+(14325, 0, 16, 467.3795, 542.8689, -24.54045, 100, 0, 0),
+(14325, 0, 17, 431.9923, 543.8799, -18.33062, 100, 0, 0),
+(14325, 0, 18, 409.5372, 536.0345, -17.20103, 100, 0, 0),
+(14325, 0, 19, 390.5341, 511.5883, -12.77050, 100, 0, 0),
+(14325, 0, 20, 385.6642, 462.6257, -7.219532, 100, 0, 0),
+(14325, 0, 21, 385.2750, 413.1416, -1.672127, 100, 0, 0),
+(14325, 0, 22, 384.2351, 365.1471, 0.7192566, 100, 0, 0),
+(14325, 0, 23, 385.7366, 335.8043, 2.8715980, 100, 0, 0),
+(14325, 0, 24, 385.6665, 297.6332, 11.203720, 100, 0, 0),
+(14325, 0, 25, 384.4298, 255.9361, 11.439550, 100, 0, 1432501),
+(14325, 0, 26, 384.4298, 255.9361, 11.439550, 100, 0, 0),
+--
 (14327, 0, 1, -5.45062, -441.126, 16.4179, 0, 0, 0),
 (14327, 0, 2, 1.83788, -445.35, 16.4175, 0, 0, 0),
 (14327, 0, 3, 5.33627, -449.741, 16.4166, 0, 0, 0),
@@ -1698,7 +1726,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+913, 14322, 429, 491.231, 97.3879, -2.5004, 4.03171, 43200, 43200, 0, 0, 0, 0), -- Stomper Kreeg
 (@CGUID+914, 14323, 429, 550.38, 533.725, -25.3185, 3.92699, 43200, 43200, 0, 0, 0, 2), -- Guard Slip'kik
 (@CGUID+915, 14324, 429, 833.995, 489.543, 37.4015, 3.21141, 43200, 43200, 0, 1, 0, 0), -- Cho'Rush the Observer
-(@CGUID+916, 14325, 429, 627.59, 481.721, 29.4627, 3.13558, 43200, 43200, 0, 1, 0, 0), -- Captain Kromcrush
+(@CGUID+916, 14325, 429, 627.59, 481.721, 29.4627, 3.13558, 43200, 43200, 0, 0, 0, 0), -- Captain Kromcrush
 (@CGUID+917, 14326, 429, 410.711, -3.15041, -24.558, 5.28835, 43200, 43200, 3, 0, 0, 1), -- Guard Mol'dar
 (@CGUID+918, 14327, 429, -5.45062, -441.126, 16.4179, 0.531164, 1000000, 1000000, 0, 0, 0, 2), -- Lethtendris
 (@CGUID+919, 14338, 429, 581.082, 523.293, -25.3194, 2.72271, 7200, 7200, 0, 0, 0, 0), -- Knot Thimblejack
@@ -2761,7 +2789,7 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (179674, 40, 15, 23117, 0, 0, 14501, 40, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Ritual Bell Aura on Ritual Mob'),
 (179674, 45, 15, 23117, 0, 0, 14501, 40, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Ritual Bell Aura on Ritual Mob');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (14241,1149201,1149202,1435308,1435401,1435402);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (14241,1149201,1149202,1432501,1435308,1435401,1435402);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (14241, 1, 1, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'ironbark redeemed - emote'),
 (14241, 6, 1, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'ironbark redeemed - emote'),
@@ -2773,6 +2801,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1149201, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Dark Channeling'),
 (1149202, 0, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Switch to random movement around the current position'),
 (1149202, 75, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Switch back to waypoint movement'),
+
+(1432501, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - stop WP movement'),
+(1432501, 0, 2, 59, 32768, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Remove Unselectable UnitFlags'),
+(1432501, 0, 29, 3, 0x01, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - npcFlags added'),
+(1432501, 0, 22, 45, 0x01, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Change faction to Ogre'),
+(1432501, 0, 0, 0, 0, 0, 0, 0, 0, @TEXT + 1, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - 2st yell'),
 
 (1435308, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - pause WP Movement'),
 (1435308, 0, 9, @OGUID+331, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - spawn tribute chest'),
@@ -2821,7 +2855,7 @@ INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalon
 
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (570901,570902,570903,570904,570905);
+DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (570901,570902,570903,570904,570905,573801);
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Pusilin chase event
 (570901, 0, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'npc_flag removed'),
@@ -2847,7 +2881,15 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (570905, 3, 10, 13276, 120000, 0, 0, 0, 0, 0, 0, 0, 0, 18.8891, -697.389, -12.6426, 4.35271, 'summon - Wildspawn Imp'),
 (570905, 3, 10, 13276, 120000, 0, 0, 0, 0, 0, 0, 0, 0, 21.4274, -700.227, -12.6426, 4.06997, 'summon - Wildspawn Imp'),
 (570905, 3, 10, 13276, 120000, 0, 0, 0, 0, 0, 0, 0, 0, 22.2017, -705.459, -12.6426, 3.48092, 'summon - Wildspawn Imp'),
-(570905, 4, 22, 90, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'set DemonFaction');
+(570905, 4, 22, 90, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'set DemonFaction'),
+
+(573801, 0, 15, 8599, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - cast Enrage'),
+(573801, 0, 0, 0, 0, 0, 0, 0, 0, @TEXT, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - 1st yell'),
+(573801, 0, 2, 59, 32768+33554432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Set UnitFlags to Unselectable'),
+(573801, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - set active'),
+(573801, 1, 29, 3, 0x02, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - npcFlags removed'),
+(573801, 1, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Start WP movement'),
+(573801, 1, 14, 8599, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - remove Enrage aura');
 
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
@@ -2864,9 +2906,12 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 (5525, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500.42, 540.966, -25.3846, 2.72271, 'WP movement'),
 (5525, 15, 18, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'despawn');
 
-DELETE FROM dbscript_string WHERE entry IN (2000000543,2000007708,2000007709,2000007710,2000007711,2000007712);
+DELETE FROM dbscript_string WHERE entry IN (2000000268,2000000269,2000000543,2000007708,2000007709,2000007710,2000007711,2000007712);
 DELETE FROM dbscript_string WHERE entry IN (2000005460,2000005461,2000005462,2000005562,2000005563);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
+(2000000268, 'Hey, who Fengus callin\' a gnoll lover?!  Take da prisoners to da king; you smart to bring them with their weapons and show da king that they a threat.  I\'ll go see if Fengus talk smack when I give him da beatdown!  HAR!', 0, 6, 0, 0, 'Captain Kromcrush - Yell Fengus 1'),
+(2000000269, 'OK Fengus, where you at?!  You come call me a gnoll lover while I give you da hammer upside da head!', 0, 6, 0, 0, 'Captain Kromcrush - Yell Fengus 2'),
+
 (2000000543, '$N, I''ll make sure all my friends in the Cartel know that you''ve saved my life today. Here - I''m going to need to be able to travel light, so please help yourself to my cache of tailoring and leatherworking supplies! Thanks again - see ya!', 0, 0, 0, 4, 'Knot Thimblejack'),
 (2000007708, 'Ah, freedom! Although brief, so sweet it is...', 0, 1, 0, 0, 'J''eevee yell on spawn'),
 (2000007709, 'Well duties call, yes? First, the bell... to give you vigor!', 0, 0, 0, 0, 'J''eevee say 1'),
