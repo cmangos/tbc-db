@@ -9,4 +9,4 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 
 DELETE FROM `conditions` WHERE `condition_entry`=10090;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUES 
-(10090, 8, 8233, 0); -- q.8890 rewarded
+(10090, 8, 8890, 0); -- q.8890 rewarded
