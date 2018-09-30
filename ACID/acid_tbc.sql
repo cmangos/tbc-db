@@ -27842,8 +27842,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1767206','17672','7','0','100','2','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Deadwind Villager - Set Phase 0 on Evade'),
 -- The Crone (18168) - boss_crone
 -- Shadow of Aran 18254 - Need more Data for other Spells
-('1825401','18254','4','0','100','0','0','0','0','0','0','0','57','1','95','0','30','1','1','1','0','0','0','0','Shadow of Aran - Enable Caster Mode and Set Random Phase on Aggro'), -- Arcane Missles (Phase 2), Frostbolt Volley (Phase 3)
-('1825402','18254','9','13','100','1025','0','100','3000','3000','0','0','11','29978','15','0','0','0','0','0','0','0','0','0','Shadow of Aran - Cast Pyroblast (Phase 1)'),
+('1825401','18254','11','0','100','0','0','0','0','0','0','0','57','1','95','0','0','0','0','0','0','0','0','0','Shadow of Aran - Enable Caster Mode'),
+('1825402','18254','9','13','100','1057','0','100','3000','3000','0','0','11','29957','0','0','11','29958','0','0','11','29960','0','0','Shadow of Aran - Cast Fireball Volley, Frostbolt Volley or Arcane Missile Volley'),
 -- Lady Catriona Von'Indi 19872
 ('1987201','19872','0','0','100','1','1000','3000','15000','25000','0','0','11','29408','0','32','0','0','0','0','0','0','0','0','Lady Catriona Von\'Indi - Cast Power Word: Shield'),
 ('1987202','19872','14','0','100','1','0','40','4000','9000','0','0','11','29564','12','0','0','0','0','0','0','0','0','0','Lady Catriona Von\'Indi - Cast Greater Heal on Friendly Missing HP'),
