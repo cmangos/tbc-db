@@ -21652,7 +21652,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('944501','9445','9','0','100','3','0','5','5000','8000','0','0','11','15580','1','0','0','0','0','0','0','0','0','0','Dark Guard - Cast Strike'),
 -- Watchman Doomgrip
 ('947601','9476','11','0','100','2','0','0','0','0','0','0','1','-1325','0','0','22','1','0','0','0','0','0','0','Watchman Doomgrip - Say and Set Phase 1 on Spawn'),
-('947602','9476','9','5','100','3','0','5','5000','9000','0','0','11','11971','1','0','0','0','0','0','0','0','0','0','Watchman Doomgrip - Cast Sunder Armor'),
+('947602','9476','9','5','100','3','0','5','5000','9000','0','0','11','11971','1','0','0','0','0','0','0','0','0','0','Watchman Doomgrip - Cast Sunder Armor (Phase 1)'),
 ('947603','9476','24','5','100','3','11971','5','5000','5000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Watchman Doomgrip - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
 ('947604','9476','28','3','100','3','11971','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Watchman Doomgrip - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
 ('947605','9476','0','0','100','3','25000','30000','35000','40000','0','0','11','15504','0','0','0','0','0','0','0','0','0','0','Watchman Doomgrip - Cast Drink Healing Potion'),
@@ -26684,7 +26684,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2301808','23018','1','0','100','1','15000','15000','15000','15000','0','0','43','0','14334','0','0','0','0','0','0','0','0','0','Shadowmoon Houndmaster - Mount OOC'), -- Has to be done this way due to creature_linking=no evade
 -- Bonechewer Taskmaster 23028
 ('2302801','23028','1','0','100','33','30000','90000','120000','180000','0','0','1','-10126','-10127','0','1','-10128','-10129','0','0','0','0','0','Bonechewer Taskmaster - Yell OOC'),
-('2302802','23028','4','0','20','32','0','0','0','0','0','0','1','-10186','-10187','0','1','-10190','-10191','0','0','0','0','0','Bonechewer Taskmaster - Say on Aggro'), -- -156,-160 ?
+('2302802','23028','4','0','20','32','0','0','0','0','0','0','1','-10186','-10187','0','1','-10190','-10191','0','0','0','0','0','Bonechewer Taskmaster - Say on Aggro'), -- -10185,-10189 ?
 ('2302803','23028','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bonechewer Taskmaster - Set Phase 1 on Aggro'),
 ('2302804','23028','0','0','100','0','7000','13000','0','0','0','0','11','40851','0','2','0','0','0','0','0','0','0','0','Bonechewer Taskmaster - Cast Disgruntled'),
 ('2302805','23028','30','5','100','1','0','22963','0','0','0','0','11','40845','0','3','54','-10125','0','0','22','2','0','0','Bonechewer Taskmaster - Cast Fury and Emote and Set Phase 2 on Recieve AI Event 0 (Phase 1)'),
@@ -30922,8 +30922,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-856','For Sylvanas!','0','1','0','Varimathras 2425','0'),
 -- Classic PLEASE RE-USE 857 - 859
 ('-860','Vengeance will not be yours, $N!','0','0','0','22454','0'),
--- Classic PLEASE RE-USE 861 - 897
-
+-- Classic PLEASE RE-USE 861 - 894
 ('-895','There is no escape for you.  The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','Common Scarlet Text','0'),
 ('-896','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','Common Scarlet Text','0'),
 ('-897','The light condemns all who harbor evil.  Now you will die!','0','0','0','Common Scarlet Text','0'),
