@@ -13980,13 +13980,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Andre Firebeard (4.0.3 Official Data)
 ('788301','7883','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Andre Firebeard - Flee at 15% HP'),
 -- Treasure Hunting Pirate (4.0.3 Official Data)
-('789901','7899','4','0','100','6','0','0','0','0','0','0','1','-1056','-1057','0','0','0','0','0','0','0','0','0','Treasure Hunting Pirate - Random Say on Aggro'),
+('789901','7899','4','0','100','0','0','0','0','0','0','0','1','-1056','-1057','0','0','0','0','0','0','0','0','0','Treasure Hunting Pirate - Random Say on Aggro'),
 ('789902','7899','9','0','100','1','0','5','8200','18100','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Treasure Hunting Pirate - Cast Strike'),
 -- Treasure Hunting Swashbuckler (4.0.3 Official Data)
-('790101','7901','4','0','100','6','0','0','0','0','0','0','1','-1056','-1057','0','0','0','0','0','0','0','0','0','Treasure Hunting Swashbuckler - Random Say on Aggro'),
+('790101','7901','4','0','100','0','0','0','0','0','0','0','1','-1056','-1057','0','0','0','0','0','0','0','0','0','Treasure Hunting Swashbuckler - Random Say on Aggro'),
 ('790102','7901','0','0','100','1','10200','23100','21900','28400','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Treasure Hunting Swashbuckler - Cast Disarm'),
 -- Treasure Hunting Buccaneer (4.0.3 Official Data)
-('790201','7902','4','0','100','6','0','0','0','0','0','0','1','-1056','-1057','0','0','0','0','0','0','0','0','0','Treasure Hunting Buccaneer - Random Say on Aggro'),
+('790201','7902','4','0','100','0','0','0','0','0','0','0','1','-1056','-1057','0','0','0','0','0','0','0','0','0','Treasure Hunting Buccaneer - Random Say on Aggro'),
 ('790202','7902','9','0','100','1','0','5','8200','18100','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Treasure Hunting Buccaneer - Cast Strike'),
 -- Stone Watcher of Norgannon (7918) - npc_stone_watcher_of_norgannon
 -- Qizzik (8124) - NSR
@@ -14374,6 +14374,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lady Sathrah 7319
 -- Daryn Lightwind 7907
 -- Erelas Ambersky 7916
+-- Tyrande Whisperwind 7999
+('799901','7999','4','0','100','0','0','0','0','0','0','0','4','5885','0','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Play Sound 5885 on Aggro'),
+('799902','7999','0','0','100','1','5000','7000','6000','8000','0','0','11','20691','1','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Cleave'),
+('799903','7999','0','0','100','1','6000','8000','16000','21000','0','0','11','20687','0','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Starfall'),
+('799904','7999','0','0','100','1','9000','12000','17000','22000','0','0','11','20690','4','34','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Moonfire'),
+('799905','7999','0','0','100','1','11000','14000','9000','12000','0','0','11','20688','4','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Searing Arrow'),
 -- Dirania Silvershine 8583
 -- Iverron 8584
 -- Seriadne 10051
@@ -27139,12 +27145,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('379504','3795','14','0','100','1','10000','40','15000','18000','0','0','28','0','31792','0','11','31782','12','0','0','0','0','0','Druid of the Claw - Remove Bear Form (Shapeshift) and Cast Rejuvenation on Friendly Missing HP'),
 ('379505','3795','6','0','10','0','0','0','0','0','0','0','54','0','6','10073','0','0','0','0','0','0','0','0','Druid of the Claw - Random Say on Death'),
 -- Rat (4075) - NSR
--- Tyrande Whisperwind 7999
-('799901','7999','4','0','100','2','0','0','0','0','0','0','4','5885','0','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Play Sound 5885 on Aggro'),
-('799902','7999','0','0','100','3','5000','7000','6000','8000','0','0','11','20691','1','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Cleave'),
-('799903','7999','0','0','100','3','6000','8000','16000','21000','0','0','11','20687','0','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Starfall'),
-('799904','7999','0','0','100','3','9000','12000','17000','22000','0','0','11','20690','4','34','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Moonfire'),
-('799905','7999','0','0','100','3','11000','14000','9000','12000','0','0','11','20688','4','0','0','0','0','0','0','0','0','0','Tyrande Whisperwind - Cast Searing Arrow'),
 -- Echo of Archimonde
 ('1308301','13083','1','0','100','2','15000','15000','0','0','0','0','1','-10219','0','0','0','0','0','0','0','0','0','0','Echo of Archimonde - Yell 15 Seconds after Spawn'),
 -- Rage Winterchill
@@ -29921,11 +29921,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mana Tide Totem 10467 - TotemAI
 -- Flametongue Totem IV 10557 - TotemAI
 -- Doomguard 11859
-('1185901','11859','9','0','100','31','0','30','30100','34900','0','0','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard - Cast Cripple'),
+('1185901','11859','9','0','100','1','0','30','30100','34900','0','0','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard - Cast Cripple'),
 -- Ice Totem 12141 - TotemAI
 -- Imp Minion 12922
 ('1292201','12922','4','0','100','0','0','0','0','0','0','0','57','1','25','0','0','0','0','0','0','0','0','0','Imp Minion - Enable Caster Mode on Aggro'),
-('1292202','12922','0','0','100','1031','1000','2000','2300','2800','0','0','11','20801','1','256','0','0','0','0','0','0','0','0','Imp Minion - Cast Firebolt'),
+('1292202','12922','0','0','100','1025','1000','2000','2300','2800','0','0','11','20801','1','256','0','0','0','0','0','0','0','0','Imp Minion - Cast Firebolt'),
 -- Dire Maul Crystal Totem 13916 - TotemAI
 -- Corrupted Fire Nova Totem V 14662 - TotemAI
 -- Corrupted Stoneskin Totem VI 14663 - TotemAI
@@ -29962,8 +29962,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1571004','15710','22','0','100','1','94','0','0','0','0','0','5','5','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Talk Exclamation on receive talkex emote'),
 -- Timbermaw Ancestor 15720
 ('1572001','15720','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Enable Caster Mode on Aggro'),
-('1572002','15720','14','0','100','1031','1000','40','8000','10000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Healing Wave on Friendly Missing HP'),
-('1572003','15720','0','0','100','1031','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Chain Lightning'),
+('1572002','15720','14','0','100','1025','1000','40','8000','10000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Healing Wave on Friendly Missing HP'),
+('1572003','15720','0','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Chain Lightning'),
 -- Tranquil Air Totem 15803 - TotemAI
 -- Totem of Wrath 17539 - TotemAI
 -- Tainted Earthgrab Totem 18176 - TotemAI
