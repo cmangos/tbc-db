@@ -1455,7 +1455,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ragged Timber Wolf (704) - NSR
 -- Ragged Young Wolf (705)- NSR
 -- Frostmane Troll Whelp (2.4.3 Official Data)
-('70601','706','4','0','20','0','0','0','0','0','0','0','54','0','0','10044','0','0','0','0','0','0','0','0','Frostmane Troll Whelp - Random Say on Aggro'),
+('70601','706','4','0','20','0','0','0','0','0','0','0','54','0','0','8','0','0','0','0','0','0','0','0','Frostmane Troll Whelp - Random Say on Aggro'),
 -- Rockjaw Trogg (707) - NSR
 -- Small Crag Boar (708) - NSR
 -- Balir Frosthammer (713) - NSR
@@ -1498,7 +1498,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('111901','1119','4','0','70','0','0','0','0','0','0','0','1','-324','0','0','0','0','0','0','0','0','0','0','Hammerspine - Random Say on Aggro'),
 ('111902','1119','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Hammerspine - Flee at 15% HP'),
 -- Frostmane Troll (2.4.3 Official Data)
-('112001','1120','4','0','20','0','0','0','0','0','0','0','54','0','0','10044','0','0','0','0','0','0','0','0','Frostmane Troll - Random Say on Aggro'),
+('112001','1120','4','0','20','0','0','0','0','0','0','0','54','0','0','8','0','0','0','0','0','0','0','0','Frostmane Troll - Random Say on Aggro'),
 -- Frostmane Snowstrider (2.4.3 Official Data)
 ('112101','1121','4','0','100','0','0','0','0','0','0','0','11','467','0','0','0','0','0','0','0','0','0','0','Frostmane Snowstrider - Cast Thorns on Aggro'),
 ('112102','1121','9','0','100','1','0','20','4000','7000','0','0','11','6950','1','32','0','0','0','0','0','0','0','0','Frostmane Snowstrider - Cast Faerie Fire'),
@@ -1507,12 +1507,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('112201','1122','33','0','100','1','0','0','2000','4000','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Frostmane Hideskinner - Cast Backstab on Facing Target Back'),
 ('112202','1122','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Frostmane Hideskinner - Flee at 15% HP'),
 -- Frostmane Headhunter 1123 (2.4.3 Official Data)
-('112301','1123','4','0','10','0','0','0','0','0','0','0','54','0','0','10044','0','0','0','0','0','0','0','0','Frostmane Headhunter - Random Say on Aggro'),
+('112301','1123','4','0','10','0','0','0','0','0','0','0','54','0','0','8','0','0','0','0','0','0','0','0','Frostmane Headhunter - Random Say on Aggro'),
 ('112302','1123','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Frostmane Headhunter - Enable Hunter Mode on Aggro'),
 ('112303','1123','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Frostmane Headhunter - Flee at 15% HP'),
 ('112304','1123','9','0','100','1025','5','30','2300','3900','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Frostmane Headhunter - Cast Throw'),
 -- Frostmane Shadowcaster 1124 (2.4.3 Official Data)
-('112401','1124','4','0','15','0','0','0','0','0','0','0','1','-229','-321','0','0','0','0','0','0','0','0','0','Frostmane Shadowcaster - Say on Aggro'),
+('112401','1124','4','0','15','0','0','0','0','0','0','0','54','0','0','8','0','0','0','0','0','0','0','0','Frostmane Shadowcaster - Random Say on Aggro'),
 ('112402','1124','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Frostmane Shadowcaster - Enable Caster Mode on Aggro'),
 ('112403','1124','27','0','100','1','20798','1','15000','30000','0','0','11','20798','0','0','0','0','0','0','0','0','0','0','Frostmane Shadowcaster - Cast Demon Skin on Missing Buff'),
 ('112404','1124','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Frostmane Shadowcaster - Flee at 15% HP'),
@@ -1569,7 +1569,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Quarrymaster Thesten (1256) - NSR
 -- Great Father Arctikus (2.4.3 Official Data)
 ('126001','1260','1','0','50','0','1000','1000','0','0','0','0','11','465','0','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Cast Devotion Aura on Spawn'),
-('126002','1260','4','0','80','0','0','0','0','0','0','0','1','-323','0','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Random Say on Aggro'),
+('126002','1260','4','0','80','0','0','0','0','0','0','0','1','-323','-325','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Random Say on Aggro'),
 ('126003','1260','2','0','100','0','75','0','0','0','0','0','11','139','0','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Cast Renew when below 75% HP'),
 ('126004','1260','2','0','100','0','20','0','0','0','0','0','11','2053','0','0','0','0','0','0','0','0','0','0','Great Father Arctikus - Cast Lesser Heal when below 20% HP'),
 -- Veron Amberstill (1261) - npc_mount_vendor
@@ -2456,13 +2456,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1448402','14484','1','0','20','1','2000','6000','4000','8000','0','0','11','23072','0','0','0','0','0','0','0','0','0','0','Injured Peasant - Cast Seething Plague'),
 ('1448403','14484','1','0','50','1','2000','6000','4000','8000','0','0','11','23127','0','0','0','0','0','0','0','0','0','0','Injured Peasant - Cast Death''s Door'),
 ('1448404','14484','1','0','10','0','10000','15000','0','0','0','0','1','-1300','-1301','-1302','0','0','0','0','0','0','0','0','Injured Peasant - Random Yell'),
-('1448405','14484','8','0','25','32','23107','-1','0','0','0','0','1','-1296','-1297','-1298','1','-1296','-1298','-1299','1','-1297','-1298','-1299','Injured Peasant - Random Yell on Spell Hit'),
+('1448405','14484','8','0','25','0','23107','-1','0','0','0','0','54','0','0','7','0','0','0','0','0','0','0','0','Injured Peasant - Random Yell on Spell Hit'),
 -- Plagued Peasant
 ('1448501','14485','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Plagued Peasant - Set Combat Movement False on Spawn'),
 ('1448502','14485','1','0','60','1','2000','6000','4000','8000','0','0','11','23127','0','0','0','0','0','0','0','0','0','0','Plagued Peasant - Cast Death''s Door'),
 ('1448503','14485','1','0','20','1','2000','6000','4000','8000','0','0','11','23072','0','0','0','0','0','0','0','0','0','0','Plagued Peasant - Cast Seething Plague'),
 ('1448504','14485','1','0','10','0','10000','15000','0','0','0','0','1','-1300','-1301','-1302','0','0','0','0','0','0','0','0','Plagued Peasant - Random Yell'),
-('1448505','14485','8','0','25','32','23107','-1','0','0','0','0','1','-1296','-1297','-1298','1','-1296','-1298','-1299','1','-1297','-1298','-1299','Plagued Peasant - Random Yell on Spell Hit'),
+('1448505','14485','8','0','25','0','23107','-1','0','0','0','0','54','0','0','7','0','0','0','0','0','0','0','0','Plagued Peasant - Random Yell on Spell Hit'),
 -- Scourge Footsoldier (14486) - NSR
 -- Scourge Archer
 ('1448901','14489','4','0','100','0','0','0','0','0','0','0','20','0','0','0','40','2','0','0','21','0','0','0','Scourge Archer - Prevent Melee, Set Ranged Weapon Model and Prevent Combat Movement on Aggro'),
@@ -5700,7 +5700,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lillian Singh 8118
 -- Master Wood 8383 - (EMOTES NEED TO BE SCRIPTED)
 -- Lil Timmy (NEEDS SNIFF RESEARCH TO FIND PROPER SUMMON SPELL FOR THE KITTEN AS THIS IS NOT THE CORRECT SPELL MOST LIKELY)
-('866602','8666','1','0','100','33','0','0','180000','180000','0','0','1','-1311','-1312','-1313','1','-1314','-1315','-1316','0','0','0','0','Lil Timmy - Random Say OOC'),
+('866602','8666','1','0','100','1','0','0','180000','180000','0','0','54','0','0','4','0','0','0','0','0','0','0','0','Lil Timmy - Random Say OOC'),
 -- Auctioneer Chilton 8670
 -- Auctioneer Fitch 8719
 -- Tyrion's Spybot (8856) - NSR
@@ -6848,7 +6848,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('153803','1538','14','0','90','1','55','40','18000','29000','0','0','11','2052','12','1','0','0','0','0','0','0','0','0','Scarlet Friar - Cast Lesser Heal on Friendly Missing HP'),
 ('153804','1538','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Friar - Flee at 15% HP'),
 -- Scarlet Neophyte 1539
-('153901','1539','0','0','15','0','0','0','0','0','0','0','1','-1307','-1306','-1029','0','0','0','0','0','0','0','0','Scarlet Neophyte - Say on Aggro'),
+('153901','1539','0','0','15','0','0','0','0','0','0','0','1','-895','-896','-1029','0','0','0','0','0','0','0','0','Scarlet Neophyte - Say on Aggro'),
 ('153902','1539','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Scarlet Neophyte - Enable Caster Mode on Aggro'),
 ('153903','1539','27','0','100','1','12544','1','15000','30000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Scarlet Neophyte - Cast Frost Armor on Missing Buff'),
 ('153904','1539','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Neophyte - Flee at 15% HP'),
@@ -7145,7 +7145,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sharlindra 2227
 -- Andrew Brownell 2308
 -- Varimathras 2425
-('242501','2425','4','0','100','0','0','0','0','0','0','0','54','0','0','3','0','0','0','0','0','0','0','0','Varimathras - Yell on Aggro'),
+('242501','2425','4','0','100','0','0','0','0','0','0','0','54','0','0','1003','0','0','0','0','0','0','0','0','Varimathras - Yell on Aggro'),
 ('242502','2425','0','0','100','1','8000','8000','15000','15000','0','0','11','20740','4','512','0','0','0','0','0','0','0','0','Varimathras - Cast Dominate Mind'),
 ('242503','2425','9','0','100','1','0','30','7000','9000','0','0','11','20741','17','0','0','0','0','0','0','0','0','0','Varimathras - Cast Shadow Bolt Volley'),
 ('242504','2425','0','0','100','1','4000','4000','15000','15000','0','0','11','20743','17','0','0','0','0','0','0','0','0','0','Varimathras - Cast Drain Life'),
@@ -7724,8 +7724,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Magistrate Marduke (11286) - NSR
 -- Baker Masterson (11287) - NSR
 -- Darrowshire Poltergeist
-('1129601','11296','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Darrowshire Poltergeist - SET Passive State on Spawn'),
-('1129602','11296','11','0','100','32','0','0','0','0','0','0','1','-1474','-1475','-1476','1','-1477','-1478','-1479','1','-1480','0','0','Darrowshire Poltergeist - Random Say on Spawn'),
+('1129601','11296','11','0','100','0','0','0','0','0','0','0','50','0','0','0','54','0','0','5','0','0','0','0','Darrowshire Poltergeist - Set Passive State and Random Say on Spawn'),
 -- Joseph Dirte (11316) - NSR
 -- Alexia Ironknife (11609) - NSR
 -- Kirsta Deepshadow (11610) - NSR
@@ -18809,11 +18808,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1939403','19394','1','0','100','1','116000','116000','116000','116000','0','0','1','-330','0','0','5','5','0','0','0','0','0','0','Barimond Wildbeard - Gossip Event (Part 3) OOC'),
 ('1939404','19394','1','0','100','1','126000','126000','126000','126000','0','0','1','-329','0','0','5','5','0','0','0','0','0','0','Brimoke Wildbeard - Gossip Event (Part 4) OOC'),
 -- Bron Goldhammer
-('1939501','19395','1','0','100','1','105000','105000','105000','105000','0','0','1','-328','0','0','0','0','0','0','0','0','0','0','Bron Goldhammer - Gossip Event (Part 1) OOC'),
-('1939502','19395','1','0','100','1','108000','108000','108000','108000','0','0','1','-327','0','0','5','6','0','0','0','0','0','0','Bron Goldhammer - Gossip Event (Part 2) OOC'),
-('1939503','19395','1','0','100','1','114000','114000','114000','114000','0','0','1','-326','0','0','0','0','0','0','0','0','0','0','Bron Goldhammer - Gossip Event (Part 3) OOC'),
+('1939501','19395','1','0','100','1','105000','105000','105000','105000','0','0','1','-10281','0','0','0','0','0','0','0','0','0','0','Bron Goldhammer - Gossip Event (Part 1) OOC'),
+('1939502','19395','1','0','100','1','108000','108000','108000','108000','0','0','1','-10280','0','0','5','6','0','0','0','0','0','0','Bron Goldhammer - Gossip Event (Part 2) OOC'),
+('1939503','19395','1','0','100','1','114000','114000','114000','114000','0','0','1','-10279','0','0','0','0','0','0','0','0','0','0','Bron Goldhammer - Gossip Event (Part 3) OOC'),
 ('1939504','19395','1','0','100','1','118500','118500','118500','118500','0','0','11','33822','0','0','0','0','0','0','0','0','0','0','Bron Goldhammer - Gossip Event (Part 4) OOC'),
-('1939505','19395','1','0','100','1','125000','125000','125000','125000','0','0','1','-325','0','0','5','6','0','0','0','0','0','0','Bron Goldhammer - Gossip Event (Part 4 cont.) OOC'),
+('1939505','19395','1','0','100','1','125000','125000','125000','125000','0','0','1','-10278','0','0','5','6','0','0','0','0','0','0','Bron Goldhammer - Gossip Event (Part 4 cont.) OOC'),
 -- Scryer Guardian 19504
 ('1950401','19504','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Scryer Guardian - Enable Caster Mode on Aggro'),
 ('1950402','19504','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Scryer Guardian - Flee at 15% HP'),
@@ -23451,7 +23450,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Leprous Technician 6222 (3.3.5a Official Data) - OOC Tune Up Spell Casts are Rough Scripted
 ('622201','6222','8','0','100','0','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Leprous Technician - Emote on Radiation Spellhit'),
 ('622202','6222','1','0','100','1','10000','45000','30000','70000','0','0','11','10348','0','0','0','0','0','0','0','0','0','0','Leprous Technician - Cast Tune Up OOC'),
-('622203','6222','4','0','10','0','0','0','0','0','0','0','1','-188','-189','-190','1','-191','-188','-189','1','-190','-191','-188','Leprous Technician - Random Say on Aggro'),
+('622203','6222','4','0','10','0','0','0','0','0','0','0','54','0','0','3','0','0','0','0','0','0','0','0','Leprous Technician - Random Say on Aggro'),
 ('622204','6222','4','0','100','0','0','0','0','0','0','0','57','1','35','0','39','10','0','0','0','0','0','0','Leprous Technician - Enable Caster Mode and Call For Help on Aggro'),
 ('622205','6222','14','0','100','1057','1200','15','28900','28900','0','0','11','10732','12','0','11','10345','12','0','0','0','0','0','Leprous Technician - Random Cast Supercharge or Rebuild on Mechanical Friendly Missing HP'),
 ('622206','6222','9','0','100','1025','5','30','1200','2500','0','0','11','13398','1','256','0','0','0','0','0','0','0','0','Leprous Technician - Cast Throw Wrench'),
@@ -23463,7 +23462,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Leprous Machinesmith 6224 (3.3.5a Official Data) - OOC Tune Up Spell Casts are Rough Scripted
 ('622401','6224','8','0','100','0','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Leprous Machinesmith - Emote on Radiation Spellhit'),
 ('622402','6224','1','0','100','1','10000','45000','30000','70000','0','0','11','10348','0','0','0','0','0','0','0','0','0','0','Leprous Machinesmith - Cast Tune Up OOC'),
-('622403','6224','4','0','10','0','0','0','0','0','0','0','1','-188','-189','-190','1','-191','-188','-189','1','-190','-191','-188','Leprous Machinesmith - Random Say on Aggro'),
+('622403','6224','4','0','10','0','0','0','0','0','0','0','54','0','0','3','0','0','0','0','0','0','0','0','Leprous Machinesmith - Random Say on Aggro'),
 ('622404','6224','4','0','100','0','0','0','0','0','0','0','57','1','35','0','39','10','0','0','0','0','0','0','Leprous Machinesmith - Enable Caster Mode and Call For Help on Aggro'),
 ('622405','6224','14','0','100','1057','1200','15','28900','28900','0','0','11','10732','12','0','11','10345','12','0','0','0','0','0','Leprous Machinesmith - Random Cast Supercharge or Rebuild on Mechanical Friendly Missing HP'),
 ('622406','6224','9','0','100','1025','5','30','1200','2500','0','0','11','13398','1','256','0','0','0','0','0','0','0','0','Leprous Machinesmith - Cast Throw Wrench'),
@@ -23533,7 +23532,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grubbis (7361) - NSR
 -- Leprous Assistant (3.3.5a Official Data)
 ('760301','7603','4','0','100','2','0','0','0','0','0','0','39','10','0','0','0','0','0','0','0','0','0','0','Leprous Assistant - Call for Help on Aggro'),
-('760302','7603','4','0','20','2','0','0','0','0','0','0','1','-188','-189','-190','1','-191','-188','-189','1','-190','-191','-188','Leprous Assistant - Random Say on Aggro'),
+('760302','7603','4','0','20','2','0','0','0','0','0','0','54','0','0','3','0','0','0','0','0','0','0','0','Leprous Assistant - Random Say on Aggro'),
 ('760303','7603','8','0','100','2','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Leprous Assistant - Emote on Radiation Spellhit'),
 -- Burning Servant (Rough Scripted Data)
 ('773801','7738','11','0','100','2','0','0','0','0','0','0','11','10869','0','1','0','0','0','0','0','0','0','0','Burning Servant - Cast Summon Embers on Spawn'),
@@ -24442,23 +24441,23 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scarlet Sentry (4.3.4 Official Data)
 ('428301','4283','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Sentry - Flee at 15% HP'),
 -- Scarlet Soldier (4.3.4 Official Data)
-('428601','4286','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1306','-1308','Scarlet Soldier - Random Say on Aggro'),
+('428601','4286','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Soldier - Random Say on Aggro'),
 ('428602','4286','0','0','100','3','3100','7200','10800','21700','0','0','11','3639','0','0','0','0','0','0','0','0','0','0','Scarlet Soldier - Cast Improved Blocking'),
 ('428603','4286','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Soldier - Flee at 15% HP'),
 -- Scarlet Gallant (3.0.3 and 4.3.4 Official Data)
-('428701','4287','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1307','-1308','Scarlet Gallant - Random Say on Aggro'),
+('428701','4287','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Gallant - Random Say on Aggro'),
 ('428702','4287','9','0','100','3','0','5','4800','10900','0','0','11','14517','1','0','0','0','0','0','0','0','0','0','Scarlet Gallant - Cast Crusader Strike'),
 ('428703','4287','0','0','100','3','4600','9600','13300','22900','0','0','11','5589','1','1','0','0','0','0','0','0','0','0','Scarlet Gallant - Cast Hammer of Justice'),
 ('428704','4287','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Gallant - Flee at 15% HP'),
 -- Scarlet Beastmaster 4288 (3.0.3 and 4.3.4 Official Data)
-('428801','4288','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1306','-1308','Scarlet Beastmaster - Random Say on Aggro'),
+('428801','4288','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Beastmaster - Random Say on Aggro'),
 ('428802','4288','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Scarlet Beastmaster - Enable Hunter Mode on Aggro'),
 ('428803','4288','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Beastmaster - Flee at 15% HP'),
 ('428804','4288','0','0','100','1025','9200','11600','10900','18100','0','0','11','7896','1','0','0','0','0','0','0','0','0','0','Scarlet Beastmaster - Cast Exploding Shot'),
 ('428805','4288','9','0','100','1025','5','30','2400','3600','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Scarlet Beastmaster - Cast Shoot'),
 -- Scarlet Evoker 4289(4.3.4 Official Data)
 ('428901','4289','1','0','100','1','0','0','30000','60000','0','0','11','2601','0','0','0','0','0','0','0','0','0','0','Scarlet Evoker - Cast Fire Shield III OOC'),
-('428902','4289','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1307','-1308','Scarlet Evoker - Random Say on Aggro'),
+('428902','4289','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Evoker - Random Say on Aggro'),
 ('428903','4289','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Scarlet Evoker - Enable Caster Mode on Aggro'),
 ('428904','4289','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Evoker - Flee at 15% HP'),
 ('428905','4289','16','0','100','1025','2601','15','15700','19300','0','0','11','2601','12','0','0','0','0','0','0','0','0','0','Scarlet Evoker - Cast Fire Shield III on Friendly Missing Buff'),
@@ -24469,12 +24468,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('429002','4290','0','0','100','3','8400','14100','14200','25200','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Scarlet Guardsman - Cast Disarm'),
 ('429003','4290','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Guardsman - Flee at 15% HP'),
 -- Scarlet Diviner 4291 (4.3.4 Official Data)
-('429101','4291','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1307','-1308','Scarlet Diviner - Random Say on Aggro'),
+('429101','4291','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Diviner - Random Say on Aggro'),
 ('429102','4291','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Scarlet Diviner - Enable Caster Mode on Aggro'),
 ('429103','4291','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Diviner - Flee at 15% HP'),
 ('429104','4291','9','0','100','1025','0','40','3600','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Scarlet Diviner - Cast Fireball'),
 -- Scarlet Protector (4.3.4 Official Data)
-('429201','4292','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1306','-1308','Scarlet Protector - Random Say on Aggro'),
+('429201','4292','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Protector - Random Say on Aggro'),
 ('429202','4292','0','0','100','3','1000','3000','240000','250000','0','0','11','8258','0','1','0','0','0','0','0','0','0','0','Scarlet Protector - Cast Devotion Aura on Aggro'),
 ('429203','4292','14','0','100','3','1600','20','13300','22900','0','0','11','31713','12','1','0','0','0','0','0','0','0','0','Scarlet Protector - Cast Holy Light on Friendly Missing HP'),
 ('429204','4292','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Protector - Flee at 15% HP'),
@@ -24490,7 +24489,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('429403','4294','0','0','100','1025','18100','36200','16900','49600','0','0','11','6146','4','0','0','0','0','0','0','0','0','0','Scarlet Sorcerer - Cast Slow'),
 ('429404','4294','9','0','100','1025','0','40','3600','4800','0','0','11','9672','1','256','0','0','0','0','0','0','0','0','Scarlet Sorcerer - Cast Frostbolt'),
 -- Scarlet Myrmidon (3.0.3 and 4.3.4 Official Data)
-('429501','4295','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1307','-1308','Scarlet Myrmidon - Random Say on Aggro'),
+('429501','4295','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Myrmidon - Random Say on Aggro'),
 ('429502','4295','2','0','100','3','30','0','120000','125000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Scarlet Myrmidon - Cast Frenzy at 30% HP'),
 ('429503','4295','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Myrmidon - Flee at 15% HP'),
 -- Scarlet Adept 4296 (3.0.3 and 4.3.4 Official Data)
@@ -24504,14 +24503,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('429703','4297','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Conjuror - Flee at 15% HP'),
 ('429704','4297','9','0','100','1025','0','40','3600','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Scarlet Conjuror - Cast Fireball'),
 -- Scarlet Defender (3.0.3 and 4.3.4 Official Data)
-('429801','4298','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1307','-1308','Scarlet Defender - Random Say on Aggro'),
+('429801','4298','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Defender - Random Say on Aggro'),
 ('429802','4298','0','0','100','3','2300','6600','180000','186500','0','0','11','7164','0','1','0','0','0','0','0','0','0','0','Scarlet Defender - Cast Defensive Stance'),
 ('429803','4298','0','0','100','3','4200','14800','9600','18200','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Scarlet Defender - Cast Shield Bash'),
 ('429804','4298','0','0','100','3','8800','13300','8300','19200','0','0','11','3639','0','0','0','0','0','0','0','0','0','0','Scarlet Defender - Cast Improved Blocking'),
 ('429805','4298','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Defender - Flee at 15% HP'),
 -- Scarlet Chaplain (3.0.3 and 4.3.4 Official Data)
 ('429901','4299','1','0','100','3','1000','1000','1800000','1800000','0','0','11','1006','0','1','0','0','0','0','0','0','0','0','Scarlet Chaplain - Cast Inner Fire on Spawn'),
-('429902','4299','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1307','-1308','Scarlet Chaplain - Random Say on Aggro'),
+('429902','4299','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Chaplain - Random Say on Aggro'),
 ('429903','4299','0','0','100','3','1000','6300','40000','51000','0','0','11','6066','0','1','0','0','0','0','0','0','0','0','Scarlet Chaplain - Cast Power Word: Shield'),
 ('429904','4299','16','0','100','3','6066','15','9700','16900','0','0','11','6066','12','1','0','0','0','0','0','0','0','0','Scarlet Chaplain - Cast Power Word: Shield on Friendly Missing Buff Missing Aura'),
 ('429905','4299','14','0','100','3','1200','20','22900','28800','0','0','11','8362','12','1','0','0','0','0','0','0','0','0','Scarlet Chaplain - Cast Renew on Friendly Missing HP'),
@@ -24521,16 +24520,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('430002','4300','9','0','100','3','0','8','3600','12100','0','0','11','8439','0','0','0','0','0','0','0','0','0','0','Scarlet Wizard - Cast Arcane Explosion'),
 ('430003','4300','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Wizard - Flee at 15% HP'),
 -- Scarlet Centurion (3.0.3 and 4.3.4 Official Data)
-('430101','4301','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1307','-1308','Scarlet Centurion - Random Say on Aggro'),
+('430101','4301','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Centurion - Random Say on Aggro'),
 ('430102','4301','0','0','100','3','4800','13400','12100','24600','0','0','11','31403','0','0','0','0','0','0','0','0','0','0','Scarlet Centurion - Cast Battle Shout'),
 ('430103','4301','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Centurion - Flee at 15% HP'),
 -- Scarlet Champion (3.0.3 and 4.3.4 Official Data)
-('430201','4302','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1306','-1307','-1308','Scarlet Champion - Random Say on Aggro'),
+('430201','4302','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Champion - Random Say on Aggro'),
 ('430202','4302','0','0','100','3','8700','14200','18100','27300','0','0','11','17143','1','0','0','0','0','0','0','0','0','0','Scarlet Champion - Cast Holy Strike'),
 ('430203','4302','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Champion - Flee at 15% HP'),
 -- Scarlet Abbot (4.3.4 Official Data) - NEED MORE DATA (3.0.3 and 4.3.4 Data Do Not Show Power Word Shield Spell)
 ('430301','4303','1','0','100','3','1000','1000','1800000','1800000','0','0','11','1006','0','1','0','0','0','0','0','0','0','0','Scarlet Abbot - Cast Inner Fire on Spawn'),
-('430302','4303','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1305','-1307','-1308','Scarlet Abbot - Random Say on Aggro'),
+('430302','4303','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Abbot - Random Say on Aggro'),
 ('430303','4303','14','0','100','3','1800','40','13300','19300','0','0','11','6064','12','1','0','0','0','0','0','0','0','0','Scarlet Abbot - Cast Heal on Friendly Missing HP'),
 ('430304','4303','2','0','100','3','50','0','24100','30200','0','0','11','8362','0','1','0','0','0','0','0','0','0','0','Scarlet Abbot - Cast Renew at 50% HP'),
 ('430305','4303','2','0','100','3','30','0','120000','125000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Scarlet Abbot - Cast Enrage at 30% HP'),
@@ -24543,7 +24542,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Unfettered Spirit (4308) - NSR
 -- Scarlet Monk (3.0.3 and 4.3.4 Official Data)
 ('454001','4540','1','0','100','2','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Scarlet Monk - Cast Thrash OOC'),
-('454002','4540','4','0','10','32','0','0','0','0','0','0','1','-1305','-1306','-1307','1','-1306','-1307','-1308','1','-1306','-1307','-1308','Scarlet Monk - Random Say on Aggro'),
+('454002','4540','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Monk - Random Say on Aggro'),
 ('454003','4540','13','0','100','3','3600','12800','0','0','0','0','11','11978','1','0','0','0','0','0','0','0','0','0','Scarlet Monk - Cast Kick on Target Casting'),
 ('454004','4540','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Monk - Flee at 15% HP'),
 -- High Inquisitor Fairbanks (3.0.3 and 4.3.4 Official Data) - NEED MORE DATA (No Official Sleep or Fear Data)
@@ -28895,7 +28894,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2359801','23598','0','0','100','3','7000','9000','7000','9000','0','0','11','43299','4','0','0','0','0','0','0','0','0','0','Amani Dragonhawk Hatchling - Cast Flame Buffet'),
 -- Amani Healing Ward 23757 - TotemAI
 -- Amani'shi Trainer
-('2377401','23774','4','0','15','2','0','0','0','0','0','0','54','0','0','10044','0','0','0','0','0','0','0','0','Amani''shi Trainer - Random Say on Aggro'),
+('2377401','23774','4','0','15','2','0','0','0','0','0','0','54','0','0','8','0','0','0','0','0','0','0','0','Amani''shi Trainer - Random Say on Aggro'),
 ('2377402','23774','0','0','100','3','4000','8000','7000','14000','0','0','11','20989','4','0','0','0','0','0','0','0','0','0','Amani''shi Trainer - Cast Sleep'),
 ('2377403','23774','16','0','100','3','43292','15','5000','15000','0','0','11','43292','12','0','0','0','0','0','0','0','0','0','Amani''shi Trainer - Cast Incite Frenzy on Friendly Missing Buff'),
 -- Dragonhawk God Invisman
@@ -28945,7 +28944,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2417902','24179','0','0','100','3','0','0','9000','9000','0','0','11','43524','1','0','0','0','0','0','0','0','0','0','Amani''shi Wind Walker - Cast Frost Shock'),
 ('2417903','24179','0','0','100','3','5000','5000','17500','17500','0','0','11','43526','1','0','0','0','0','0','0','0','0','0','Amani''shi Wind Walker - Cast Lightning Bolt'),
 -- Amani'shi Protector
-('2418001','24180','4','0','15','2','0','0','0','0','0','0','54','0','0','10044','0','0','0','0','0','0','0','0','Amani''shi Protector - Random Say on Aggro'),
+('2418001','24180','4','0','15','2','0','0','0','0','0','0','54','0','0','8','0','0','0','0','0','0','0','0','Amani''shi Protector - Random Say on Aggro'),
 ('2418003','24180','0','0','100','3','0','5000','15000','25000','0','0','11','43529','1','0','0','0','0','0','0','0','0','0','Amani''shi Protector - Cast Mortal Strike'),
 ('2418002','24180','0','0','100','3','7000','10000','7000','10000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Amani''shi Protector - Cast Cleave'),
 ('2418004','24180','32','0','100','3','0','10','18000','40000','0','0','11','43530','0','0','0','0','0','0','0','0','0','0','Amani''shi Protector - Cast Piercing Howl in Range'),
@@ -30322,7 +30321,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-228','I gonna make you into mojo!','0','0','0','Common Troll Text','0'),
 ('-229','Killing you be easy.','0','0','0','Common Troll Text','0'),
 ('-230','You be dead soon!','0','0','0','Common Troll Text','0'),
-('-231','I\'ll cut you!','0','0','0','1211/8503','0'),
+('-231','I\'ll cut you!','0','0','0','Common Troll Text','0'),
 ('-232','The Brotherhood will not be hampered by insects.','0','0','0','6846','0'),
 ('-233','So much to do, so much to do! Where does the time go?','0','0','0','295','0'),
 ('-234','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','6911','0'),
@@ -30412,13 +30411,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-319','Maybe I should gather up some other agents and head out there after this shift?','0','0','0','19541','0'),
 -- PLEASE RE-USE 320
 ('-321','Iman m t\'ief fu Fus\'obeah italaf','0','0','0','Common Frostmane Troll Text','0'),
-('-322','Dim wha Siame cyaa fi so yudo','0','0','0','Common Frostmane Troll Text','0'),
-('-323','So ju weh siame is fus nehjo skam worl Uptfeel','0','0','0','1260','0'),
+('-322','All you $R want is my weed.','0','0','14','Common Frostmane Troll Text','0'),
+('-323','You dare defile Frostmane Hold, $r. Prepare to die!','0','0','14','1260','0'),
 ('-324','Time to bash!','0','0','0','1119','0'),
-('-325','Er... \'Moke?','0','0','0','19395','0'),
-('-326','I\'m... not sure that\'s a good idea, \'Moke. Ye might get hurt...','0','0','0','19395','0'),
-('-327','What, with me fists?','0','0','0','19395','0'),
-('-328','%s blinks, a perplexed expression crossing his face.','0','2','0','19395','0'),
+('-325','Oh, we are going to get along just fine, $N.','0','0','14','1260','0'),
+-- Classic PLEASE RE-USE 326 - 328
 ('-329','...THAT WAS GREAT!','0','0','0','19394','0'),
 ('-330','DO IT, YE PANSEY!','0','0','0','19394','0'),
 ('-331','Nae, that\'s fer wimps. Hit me with yer hammer!','0','0','0','19394','0'),
@@ -30633,7 +30630,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-547','Unknown life forms detected....assessing...','0','0','0','14224','0'),
 ('-548','Arrrhhh...Guards!','0','1','1','Common Horde Flight Master','0'),
 ('-549','Guards!','0','1','7','Common Alliance Flight Master','0'),
-('-550','%s goes into a rage after seeing a friend fall in battle!','0','2','0','2287','0'),
+('-550','%s goes into a rage after seeing a friend fall in battle!','0','2','0','Common Emote','0'),
 ('-551','%s calls for help!','0','2','0','Common Emote','0'),
 ('-552','Greetings citizen.','0','0','7','466','0'),
 ('-553','Who dares disrupt the sanctity of Eldre\'Thalas? Face me, cowards!','0','1','0','11486','0'),
@@ -31770,7 +31767,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10274','If you hear the whisper, you\'re dying...','0','0','0','Mana-Tombs','0'),
 ('-10275','Welcome to the Void...','0','0','0','Mana-Tombs','0'),
 ('-10276','You\'re far from home, stranger.','0','0','0','Mana-Tombs','0'),
-('-10277','What have the netherwinds brought us?','0','0','0','Mana-Tombs','0');
+('-10277','What have the netherwinds brought us?','0','0','0','Mana-Tombs','0'),
+('-10278','Er... \'Moke?','0','0','0','19395','0'),
+('-10279','I\'m... not sure that\'s a good idea, \'Moke. Ye might get hurt...','0','0','0','19395','0'),
+('-10280','What, with me fists?','0','0','0','19395','0'),
+('-10281','%s blinks, a perplexed expression crossing his face.','0','2','0','19395','0');
 
 -- WOTLK IDs 20000+
 
@@ -31821,20 +31822,50 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 -- =======================================================
 -- Classic IDs 0 - 9999
 REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
-(3,0,-853,0,'Varimathras 2425 - Random Aggro Texts'),
-(3,0,-854,0,'Varimathras 2425 - Random Aggro Texts'),
-(3,0,-855,0,'Varimathras 2425 - Random Aggro Texts'),
-(3,0,-856,0,'Varimathras 2425 - Random Aggro Texts'),
-(6,0,-1552,0,'8506 - Random Spawn Texts'),
-(6,0,-1553,0,'8506 - Random Spawn Texts'),
-(6,0,-1554,0,'8506 - Random Spawn Texts'),
-(6,0,-1555,0,'8506 - Random Spawn Texts'),
-(6,0,-1556,0,'8506 - Random Spawn Texts'),
-(6,0,-1557,0,'8506 - Random Spawn Texts'),
-(6,0,-1558,0,'8506 - Random Spawn Texts'),
-(6,0,-1559,0,'8506 - Random Spawn Texts'),
-(6,0,-1560,0,'8506 - Random Spawn Texts'),
-(6,0,-1561,0,'8506 - Random Spawn Texts');
+(2, 0, -1305, 0, 'Scarlet Monastery - Random Aggro Texts'),
+(2, 0, -1306, 0, 'Scarlet Monastery - Random Aggro Texts'),
+(2, 0, -1307, 0, 'Scarlet Monastery - Random Aggro Texts'),
+(2, 0, -1308, 0, 'Scarlet Monastery - Random Aggro Texts'),
+(3, 0, -188, 0, 'Gnomeregan - Random Aggro Texts'),
+(3, 0, -189, 0, 'Gnomeregan - Random Aggro Texts'),
+(3, 0, -190, 0, 'Gnomeregan - Random Aggro Texts'),
+(3, 0, -191, 0, 'Gnomeregan - Random Aggro Texts'),
+(4, 0, -1311, 0, 'Lil Timmy - Random OOC Texts'),
+(4, 0, -1312, 0, 'Lil Timmy - Random OOC Texts'),
+(4, 0, -1313, 0, 'Lil Timmy - Random OOC Texts'),
+(4, 0, -1314, 0, 'Lil Timmy - Random OOC Texts'),
+(4, 0, -1315, 0, 'Lil Timmy - Random OOC Texts'),
+(4, 0, -1316, 0, 'Lil Timmy - Random OOC Texts'),
+(5, 0, -1474, 0, 'Darrowshire Poltergeist - Random Spawn Texts'),
+(5, 0, -1475, 0, 'Darrowshire Poltergeist - Random Spawn Texts'),
+(5, 0, -1476, 0, 'Darrowshire Poltergeist - Random Spawn Texts'),
+(5, 0, -1477, 0, 'Darrowshire Poltergeist - Random Spawn Texts'),
+(5, 0, -1478, 0, 'Darrowshire Poltergeist - Random Spawn Texts'),
+(5, 0, -1479, 0, 'Darrowshire Poltergeist - Random Spawn Texts'),
+(5, 0, -1480, 0, 'Darrowshire Poltergeist - Random Spawn Texts'),
+(6, 0, -1552, 0, '8506 - Random Spawn Texts'),
+(6, 0, -1553, 0, '8506 - Random Spawn Texts'),
+(6, 0, -1554, 0, '8506 - Random Spawn Texts'),
+(6, 0, -1555, 0, '8506 - Random Spawn Texts'),
+(6, 0, -1556, 0, '8506 - Random Spawn Texts'),
+(6, 0, -1557, 0, '8506 - Random Spawn Texts'),
+(6, 0, -1558, 0, '8506 - Random Spawn Texts'),
+(6, 0, -1559, 0, '8506 - Random Spawn Texts'),
+(6, 0, -1560, 0, '8506 - Random Spawn Texts'),
+(6, 0, -1561, 0, '8506 - Random Spawn Texts'),
+(7, 0, -1296, 0, 'Plagued/Injured Peasant - Random Texts on event'),
+(7, 0, -1297, 0, 'Plagued/Injured Peasant - Random Texts on event'),
+(7, 0, -1298, 0, 'Plagued/Injured Peasant - Random Texts on event'),
+(7, 0, -1299, 0, 'Plagued/Injured Peasant - Random Texts on event'),
+(8, 0, -231, 0, 'Common Troll - Random Aggro Texts'),
+(8, 0, -230, 0, 'Common Troll - Random Aggro Texts'),
+(8, 0, -229, 0, 'Common Troll - Random Aggro Texts'),
+(8, 0, -228, 0, 'Common Troll - Random Aggro Texts'),
+--
+(1003,0,-853,0,'Varimathras 2425 - Random Aggro Texts'),
+(1003,0,-854,0,'Varimathras 2425 - Random Aggro Texts'),
+(1003,0,-855,0,'Varimathras 2425 - Random Aggro Texts'),
+(1003,0,-856,0,'Varimathras 2425 - Random Aggro Texts');
 
 -- TBC IDs 10000 - 19999
 REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
@@ -31984,10 +32015,6 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10043,0,-101,0,'Common Dragonmaw - Random Aggro Texts'),
 (10043,0,-102,0,'Common Dragonmaw - Random Aggro Texts'),
 (10043,0,-105,0,'Common Dragonmaw - Random Aggro Texts'),
-(10044,0,-228,0,'Common Troll - Random Aggro Texts'),
-(10044,0,-229,0,'Common Troll - Random Aggro Texts'),
-(10044,0,-230,0,'Common Troll - Random Aggro Texts'),
-(10044,0,-283,0,'Common Troll - Random Aggro Texts'),
 (10045,0,-658,0,'18340 - Random Spawn Texts'),
 (10045,0,-659,0,'18340 - Random Spawn Texts'),
 (10045,0,-660,0,'18340 - Random Spawn Texts'),
