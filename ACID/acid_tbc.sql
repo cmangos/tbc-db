@@ -29786,6 +29786,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flametongue Totem II 6012 - TotemAI
 -- Elemental Protection Totem 6016 - TotemAI
 -- Lava Spout Totem 6017 - TotemAI
+-- Earthgrab Totem 6066 - TotemAI
 -- Fire Nova Totem II 6110 - TotemAI
 -- Fire Nova Totem III 6111 - TotemAI
 -- Windfury Totem 6112 - TotemAI
@@ -29818,16 +29819,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fire Nova Totem IV 7844 - TotemAI
 -- Fire Nova Totem V 7845 - TotemAI
 -- Greater Healing Ward 8179 - TotemAI
--- Eranikus the Chained
+-- Eranikus the Chained 8506
 ('850601','8506','11','0','100','0','0','0','0','0','0','0','54','0','11','6','0','0','0','0','0','0','0','0','Eranikus the Chained - Random Say on Spawn'),
 -- Battle Chicken 8836
 ('883601','8836','0','0','70','1','5000','10000','15000','20000','0','0','11','13168','0','0','0','0','0','0','0','0','0','0','Battle Chicken - Cast Chicken Fury'),
 ('883602','8836','0','2','18','1','8000','8000','8000','8000','0','0','11','23060','0','0','22','1','0','0','0','0','0','0','Battle Chicken - Cast Battle Squawk and Set Phase 1'),
 -- Emerald Dragon Whelp 8776 - CasterMode?
 ('877601','8776','0','0','100','1','0','0','5000','5000','0','0','11','9591','1','0','0','0','0','0','0','0','0','0','Emerald Dragon Whelp - Cast Acid Spit'),
--- Enraged Wyvern
+-- Enraged Wyvern 9297
 ('929701','9297','1','0','100','0','1000','1000','0','0','0','0','11','7276','0','32','0','0','0','0','0','0','0','0','Enraged Wyvern - Cast Poison Proc OOC'),
--- Enraged Gryphon
+-- Enraged Gryphon 9526
 ('952601','9526','0','0','100','1','3000','6000','12000','15000','0','0','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Gryphon - Cast Rend'),
 -- Scorching Totem 9637 - TotemAI
 -- Windwall Totem 9687 - TotemAI
@@ -29838,7 +29839,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Superior Healing Ward 10218 - TotemAI
 -- Mana Tide Totem 10467 - TotemAI
 -- Flametongue Totem IV 10557 - TotemAI
--- Doomguard
+-- Doomguard 11859
 ('1185901','11859','9','0','100','31','0','30','30100','34900','0','0','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard - Cast Cripple'),
 -- Ice Totem 12141 - TotemAI
 -- Imp Minion 12922
@@ -29873,6 +29874,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Windwall Totem IV 15492 - TotemAI
 -- Windfury Totem IV 15496 - TotemAI
 -- Windfury Totem V 15497 - TotemAI
+-- Tiny Snowman 15710
+('1571001','15710','22','0','100','1','34','0','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Dance on receive dance emote'),
+('1571002','15710','22','0','100','1','101','0','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Wave on receive wave emote'),
+('1571003','15710','22','0','100','1','93','0','0','0','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Talk on receive talk emote'),
+('1571004','15710','22','0','100','1','94','0','0','0','0','0','5','5','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Talk Exclamation on receive talkex emote'),
 -- Timbermaw Ancestor 15720
 ('1572001','15720','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Enable Caster Mode on Aggro'),
 ('1572002','15720','14','0','100','1031','1000','40','8000','10000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Healing Wave on Friendly Missing HP'),
