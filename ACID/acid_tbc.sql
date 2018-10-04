@@ -1853,7 +1853,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sven Yorgen (311) - NSR
 -- Eliza 314 (3.0.3 Official Data)
 ('31401','314','29','0','100','0','4000','4000','0','0','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Eliza - Remove UnitFlags 256 on Generic Timer'),
-('31402','314','4','0','100','0','0','0','0','0','0','0','57','1','35','0','54','-460','6','0','0','0','0','0','Eliza - Enable Caster Mode and Say on Aggro'),
+('31402','314','4','0','100','0','0','0','0','0','0','0','57','1','35','0','1','-460','-461','0','0','0','0','0','Eliza - Enable Caster Mode and Say on Aggro'),
 ('31403','314','0','0','100','1025','4100','6400','72300','72300','0','0','11','3107','0','0','0','0','0','0','0','0','0','0','Eliza - Cast Summon Eliza\'s Guard'),
 ('31404','314','0','0','100','1025','2100','2900','12500','36300','0','0','11','11831','17','1024','0','0','0','0','0','0','0','0','Eliza - Cast Frost Nova'),
 ('31405','314','9','0','100','1025','0','40','3400','5000','0','0','11','20819','1','256','0','0','0','0','0','0','0','0','Eliza - Cast Frostbolt'),
@@ -30554,7 +30554,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-458','The people of Darkshire expect more from the Council.  We cannot let them suffer from this unholy wrath which plagues us.','0','0','0','269','0'),
 ('-459','Undead are crawling all over the land.  Where is the Stormwind Army?','0','0','0','263','0'),
 ('-460','Wait...you are not my husband.  But he must have sent you.  And you...look..delicious!','0','0','7','314','0'),
--- Classic PLEASE RE-USE 461
+('-461','Aber?  Is that you...?  Oh...I\'m so hungry, Aber!  SO HUNGRY!!','0','0','0','314','0'), -- maybe removed in wrath when the quest was redone
 ('-462','The Council of Duskwood must take action.  Evil lingers in the air.','0','0','0','269','0'),
 ('-463','I will end this quickly...','10385','1','0','17826','0'),
 ('-464','We fight to the death!','10384','1','0','17826','0'),
