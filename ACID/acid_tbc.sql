@@ -32992,6 +32992,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (904, 0, -1467, 0, 'Servant of 7668,7669,7670,7671 - Death'),
 (904, 0, -1468, 0, 'Servant of 7668,7669,7670,7671 - Death'),
 (904, 0, -1469, 0, 'Servant of 7668,7669,7670,7671 - Death'),
+-- 1001 Reserved by DBScripts
 (1003,0,-853,0,'Varimathras 2425 - Random Aggro Texts'),
 (1003,0,-854,0,'Varimathras 2425 - Random Aggro Texts'),
 (1003,0,-855,0,'Varimathras 2425 - Random Aggro Texts'),
