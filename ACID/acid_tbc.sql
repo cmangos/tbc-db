@@ -14457,7 +14457,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunscale Lashtail
 ('325401','3254','0','0','100','1','11000','21000','13000','19000','0','0','11','6607','1','0','0','0','0','0','0','0','0','0','Sunscale Lashtail - Cast Lash'),
 -- Sunscale Screecher 3255
-('325501','3255','2','0','100','0','30','0','0','0','0','0','39','30','0','0','1','-17','0','0','0','0','0','0','Sunscale Screecher - Call For Help and Emote at 30% HP'),
+('325501','3255','2','0','100','0','30','0','0','0','0','0','39','30','0','0','1','-1623','0','0','0','0','0','0','Sunscale Screecher - Call For Help and Emote at 30% HP'),
 -- Sunscale Scytheclaw
 ('325601','3256','1','0','100','0','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Sunscale Scytheclaw - Cast Thrash OOC'),
 -- Bristleback Hunter 3258
@@ -23359,7 +23359,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1438503','14385','0','0','100','1','7000','14000','17000','22000','0','0','11','15090','1','0','0','0','0','0','0','0','0','0','Doomguard Minion - Cast Dispel Magic'),
 ('1438504','14385','0','0','100','1','12000','15000','20000','25000','0','0','11','16727','0','1','0','0','0','0','0','0','0','0','Doomguard Minion - Cast War Stomp'),
 -- Wandering Eye of Kilrogg 14386 (%s senses your presence and opens a nether portal!) - NEED MORE DATA AS LOG DID NOT SHOW ANY SPELL CASTS
-('1438601','14386','0','0','100','3','1000','3000','12000','20000','0','0','11','22876','0','0','0','0','0','0','0','0','0','0','Wandering Eye of Kilrogg - Cast Summon Netherwalker'),
+('1438601','14386','4','0','100','0','0','0','0','0','0','0','1','-17','0','0','0','0','0','0','0','0','0','0','Wandering Eye of Kilrogg - Emote on Aggro'),
+('1438602','14386','0','0','100','1','1000','3000','12000','20000','11','22876','0','0','0','0','0','0','0','0','0','0','0','0','Wandering Eye of Kilrogg - Cast Summon Netherwalker'),
 -- Netherwalker 14389 (3.3.3 Official Data)
 ('1438901','14389','9','0','100','3','0','30','7300','14200','0','0','11','22878','1','0','0','0','0','0','0','0','0','0','Netherwalker - Cast Shadow Bolt Volley'),
 -- Eye of Immol'thar 14396 (3.3.3 Official Data)
@@ -30231,7 +30232,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
 ('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
 ('-16','They might have run all the other farmers off, but the Saldean\'s will never leave Westfall.','0','0','7','Farmer Saldean 233','0'),
-('-17','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
+('-17','%s senses your presence and opens a nether portal!','0','2','0','Wandering Eye of Kilrogg Emote','0'),
 ('-18','For Victory! For Agamaggan!','5812','1','0','4420','0'),
 -- Classic PLEASE RE-USE 19 - 21
 ('-22','VanCleef pay big for you heads!','5774','1','0','644','0'),
@@ -31496,6 +31497,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1620','%s casts a spell to draw magical attacks away from his allies.','0','2','0','22242','0'),
 ('-1621','WUT! DA KING IS BACK, BABY!','0','0','0','22826','0'),
 ('-1622','In Outland, lunch open prison for you! What a world! Time to eat!','0','0','0','22826','0'),
+('-1623','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
 
 -- =======================================================
 -- Cleanup from classic -> tbc -> wrath, separting texts for easier, less issue prone porting 1-100 done
