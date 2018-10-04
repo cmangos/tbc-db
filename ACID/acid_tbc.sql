@@ -8700,7 +8700,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Illusionary Nightmare (4785) - NSR
 -- Fallenroot Rogue 4789
 ('478901','4789','1','0','100','0','1000','1000','0','0','0','0','11','30831','0','32','0','0','0','0','0','0','0','0','Fallenroot Rogue - Cast Stealth OOC'),
-('478902','4789','33','0','100','1','0','0','9000','12000','0','0','11','6595','1','0','0','0','0','0','0','0','0','0','Fallenroot Rogue - Cast Exploit Weakness on Facing Target Back'),
+('478902','4789','33','0','100','1','0','0','10000','13000','0','0','11','6595','1','0','0','0','0','0','0','0','0','0','Fallenroot Rogue - Cast Exploit Weakness on Facing Target Back'),
 -- Blackfathom Tide Priestess 4802
 ('480201','4802','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Blackfathom Tide Priestess - Enable Caster Mode on Aggro'),
 ('480202','4802','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Blackfathom Tide Priestess - Flee at 15% HP'),
