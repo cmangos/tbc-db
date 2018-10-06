@@ -15617,14 +15617,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Earthcaller Franzahl 14348
 -- Winterfall Ambusher 14372
 ('1437201','14372','27','0','100','1','17205','1','60000','120000','0','0','11','17205','0','0','0','0','0','0','0','0','0','0','Winterfall Ambusher - Cast Winterfall Firewater on Missing Buff'),
--- Princess Tempestria 14457 - Death Yell
+-- Princess Tempestria 14457
 ('1445701','14457','11','0','100','0','0','0','0','0','0','0','1','-1483','0','0','0','0','0','0','0','0','0','0','Princess Tempestria - Random Yell on Spawn'),
 ('1445702','14457','1','0','100','1','10000','60000','300000','420000','0','0','1','-1484','0','0','0','0','0','0','0','0','0','0','Princess Tempestria - Random Yell OOC'),
-('1445703','14457','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Princess Tempestria - Enable Caster Mode on Aggro'),
-('1445704','14457','0','0','100','1025','9000','14000','16000','19000','0','0','11','14907','17','1024','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Frost Nova'),
-('1445705','14457','0','0','100','1025','9000','14000','15000','19000','0','0','11','22746','1','0','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Cone of Cold'),
-('1445706','14457','9','0','100','1025','0','5','11000','15000','0','0','11','10987','17','0','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Geyser'),
-('1445707','14457','9','0','100','1025','0','40','9000','11000','0','0','11','23102','1','256','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Frostbolt'),
+('1445703','14457','6','0','100','0','0','0','0','0','0','0','1','-1492','0','0','0','0','0','0','0','0','0','0','Princess Tempestria - Yell on Death'),
+('1445704','14457','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Princess Tempestria - Enable Caster Mode on Aggro'),
+('1445705','14457','0','0','100','1025','9000','14000','16000','19000','0','0','11','14907','17','1024','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Frost Nova'),
+('1445706','14457','0','0','100','1025','9000','14000','15000','19000','0','0','11','22746','1','0','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Cone of Cold'),
+('1445707','14457','9','0','100','1025','0','5','11000','15000','0','0','11','10987','17','0','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Geyser'),
+('1445708','14457','9','0','100','1025','0','40','9000','11000','0','0','11','23102','1','256','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Frostbolt'),
 -- Watery Invader
 ('1445801','14458','0','0','100','1','15000','20000','16000','19000','0','0','11','19133','4','0','0','0','0','0','0','0','0','0','Watery Invader - Cast Frost Shock'),
 -- Artorius the Amiable 14531
@@ -31226,7 +31227,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1489','You have not seen the last of me fools! All will be consumed in the end!','0','6','0','Baron Charr','0'),
 ('-1490','Tiny mortals - me HERE! Doom you meet!','0','6','0','Avalanchion','0'),
 ('-1491','Where you hiding? Me find you!','0','6','0','Avalanchion','0'),
--- Classic PLEASE RE-USE 1492 - 1506
+('-1492','You will all pay dearly when I return from the depths!','0','6','0','Princess Tempestria','0'),
+-- Classic PLEASE RE-USE 1493 - 1506
 ('-1507','Put a little elbow grease into it!  And maybe some regular grease, while you\'re at it.  Those mag\'har sure like the clefthoof fat.','0','0','0','24393','22'),
 ('-1508','Are those ingredients chopped up and cooked?  What\'s the hold up?!','0','0','0','24393','22'),
 ('-1509','We have a dozen more dishes to finish today!  Get a move on!','0','0','0','24393','22'),
