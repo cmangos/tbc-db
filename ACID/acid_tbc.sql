@@ -30274,8 +30274,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-135','You outsiders will pay for encroaching on our land!','5815','1','0','4421','0'),
 ('-136','Bah! My power rules here!','5816','1','0','4421','0'),
 ('-137','I will be reborn, mortals! Incendius shall raise me from these ashes!','0','0','0','9026','0'),
--- Classic PLEASE RE-USE 138
--- ('-139','You have come to play? Then let us play!','0','0','0','9520','0'), -- related to q.4122? npc_grark_lorkrub -1000890 - -1000873
+-- Classic PLEASE RE-USE 138 - 139
 ('-140','The coils of death... Will crush you.','5787','1','0','3670','0'),
 -- Classic PLEASE RE-USE 141
 ('-142','Get it while it\'s hot!','0','0','0','3518','0'),
