@@ -1470,7 +1470,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Adlin Pridedrift (829) - NSR
 -- Durnan Furcutter (836) - NSR
 -- Branstock Khalder (837) - NSR
--- Coldridge Mountaineer (853) - NSR
+-- Coldridge Mountaineer 853
+('85301','853','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Coldridge Mountaineer - Cast Invisibility and Stealth Detection OOC'),
 -- Thorgas Grimson (895) - NSR
 -- Thran Khorman (912) - NSR
 -- Solm Hargrin (916) - NSR
