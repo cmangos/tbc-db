@@ -4854,7 +4854,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Ironband (15567) - NSR
 -- Metzen the Reindeer (15664) - NSR
 -- Dark Iron Kidnapper 15692
-('1569201','15692','4','0','25','0','0','0','0','0','0','0','54','-1580','0','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Say on Aggro'),
+('1569201','15692','4','0','25','0','0','0','0','0','0','0','54','-1568','0','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Say on Aggro'),
 ('1569202','15692','0','0','100','1','4000','4000','9000','12000','0','0','11','6533','1','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Cast Net'),
 ('1569203','15692','0','0','100','1','1900','10800','9200','17200','0','0','11','11977','1','0','0','0','0','0','0','0','0','0','Dark Iron Kidnapper - Cast Rend'),
 -- Frigid Lieutenant (26214) - NSR
@@ -31466,7 +31466,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1565','Me smell stench of the living!','5823','1','0','8567','0'),
 ('-1566','Me feast on you all!','5824','1','0','8567','0'),
 ('-1567','I\'ll feast on your bones!','5860','1','0','8580','0'),
--- RE-USE 1568
+('-1568','Let me give you my regards for Greatfather Winter, scum.','0','0','0','15692','0'),
 ('-1571','Any intruders must be eliminated!','0','1','0','Tempest Keep','0'),
 ('-1572','Protect the Botanica at all costs!','0','1','0','17976','0'),
 ('-1573','Protect the Mechanar at all costs!','0','1','0','19166','0'),
@@ -31476,7 +31476,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1577','Once I have hacked off your limbs, I may hang your body from our battlements.','0','0','0','18677','0'),
 ('-1578','I love to bathe in the blood of my enemies!','0','0','0','18677','0'),
 ('-1579','I crave your death!','0','0','0','18677','0'),
-('-1580','Let me give you my regards for Greatfather Winter, scum.','0','0','0','15692','0'),
+-- Classic PLEASE RE-USE 1580
 ('-1581','Hear the voices below the earth!  They call for your blood!','0','0','0','Darkscreecher Akkarai 23161 on Spawn','0'),
 ('-1582','Consume $N, my children!','0','0','0','Darkscreecher Akkarai 23161 on Flock Call 40427','0'),
 ('-1583','You capture Karrog!  Karrog smash you!','0','0','0','Karrog 23165 on Spawn','0'),
