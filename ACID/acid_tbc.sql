@@ -28453,7 +28453,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vindicator Moorba (25632) - NSR
 -- Captain Selana (25638) - NSR
 -- Anchorite Elbadon 25639
-('2563901','25639','0','0','100','3','15000','30000','20000','45000','0','0','11','45859','0','0','1','-707','-708','-709','0','0','0','0','Anchorite Elbadon - Cast Renew'),
+('2563901','25639','0','0','100','3','15000','30000','20000','45000','0','0','11','45859','0','0','1','-19997','-19998','-19999','0','0','0','0','Anchorite Elbadon - Cast Renew'),
 -- Neophyte Narama (25644) - NSR
 -- Power of the Blue Flight 25653 - npc_power_blue_flight
 -- Shattered Sun Soldier 25661
@@ -30788,9 +30788,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-704','%s begs to be put out of his misery.','0','2','0','10117','0'),
 ('-705','%s groans.','0','2','0','10117','0'),
 ('-706','%s weeps pitifully.','0','2','0','10117','0'),
-('-707','May the light bless you.','0','0','0','25639','1'),
-('-708','Your wounds are severe, but you will live.','0','0','0','25639','1'),
-('-709','Rest now, you have fought well today.','0','0','0','25639','1'),
+-- Classic PLEASE RE-USE 707 - 709
 ('-710','Lunch has arrived, my beautiful children. Tear them to pieces!','0','1','0','8127','0'),
 ('-711','Rise and defend your master!','0','1','0','8127','0'),
 ('-712','The children of Sul will protect their master. Rise once more Sul\'lithuz!','0','1','0','8127','0'),
@@ -31785,7 +31783,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10278','Er... \'Moke?','0','0','0','19395','0'),
 ('-10279','I\'m... not sure that\'s a good idea, \'Moke. Ye might get hurt...','0','0','0','19395','0'),
 ('-10280','What, with me fists?','0','0','0','19395','0'),
-('-10281','%s blinks, a perplexed expression crossing his face.','0','2','0','19395','0');
+('-10281','%s blinks, a perplexed expression crossing his face.','0','2','0','19395','0'),
+('-19997','May the light bless you.','0','0','0','25639','1'),
+('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
+('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
 
 -- WOTLK IDs 20000+
 
