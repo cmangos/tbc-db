@@ -1,0 +1,2 @@
+UPDATE `creature_template` SET `InhabitType`='1' WHERE  `Entry`=21722;
+UPDATE `creature_template` SET `SpeedWalk`='2.2' WHERE `Entry`=21722; --Not really sure if this could be called Blizzlike. But it means we don't have to edit it in the C++ file, and it's not really noticeable.
