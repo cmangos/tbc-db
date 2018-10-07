@@ -5960,7 +5960,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- King Bangalsh 731 - CallForHelp on Aggro?
 ('73101','731','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','King Bangalsh - Despawn Guardians on OOC'),
 ('73102','731','2','0','100','0','50','0','0','0','0','0','11','8816','0','1','0','0','0','0','0','0','0','0','King Bangalsh - Cast Summon Panthers at 50% HP'),
--- Panther 736
+-- Panther 736 - NSR
 -- Skullsplitter Panther 756 - NSR
 -- Skullsplitter Tiger 758 - NSR
 -- Skullsplitter Mystic 780
