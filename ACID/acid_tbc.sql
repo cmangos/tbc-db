@@ -16916,7 +16916,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1687805','16878','6','3','100','0','0','0','0','0','0','0','11','39190','0','6','0','0','0','0','0','0','0','0','Shattered Hand Berserker - Cast Send Vengeance on Death (Phase 2)'),
 -- Starving Helboar 16879
 ('1687901','16879','1','0','100','0','1000','1000','0','0','0','0','11','33908','0','32','0','0','0','0','0','0','0','0','Starving Helboar - Cast Burning Spikes OOC'),
--- Hulking Helboar 16880 - spell_dummy_npc
+-- Hulking Helboar 16880 - spell_dummy_npc - 33909 is recast on 33909 procc
 ('1688001','16880','1','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Hulking Helboar - Set Phase 1 OOC'),
 ('1688002','16880','2','0','100','0','60','0','0','0','0','0','22','2','0','0','54','-10787','0','0','0','0','0','0','Hulking Helboar - Set Phase 2 and Emote at 60% HP'),
 ('1688003','16880','27','3','100','1','33909','3','3000','5000','0','0','11','33909','0','0','0','0','0','0','0','0','0','0','Hulking Helboar - Cast Hulk on Missing Aura Stack (Phase 2)'),
@@ -24270,7 +24270,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('735704','7357','9','0','100','1025','0','40','2400','3800','0','0','11','12466','1','256','0','0','0','0','0','0','0','0','Modresh Fire Eye - Cast Fireball'),
 -- Amnennar the Coldbringer 7358
 ('735801','7358','4','0','100','0','0','0','0','0','0','0','57','1','35','0','1','-1221','0','0','0','0','0','0','Amnennar the Coldbringer - Enable Caster Mode and Yell on Aggro'),
-('735802','7358','5','0','100','1025','5000','5000','1','0','0','0','54','-1225','0','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Yell on Player Kill'),
+('735802','7358','5','0','100','1025','5000','5000','0','0','0','0','54','-1225','0','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Say on Kill'),
 ('735803','7358','2','0','100','1024','80','0','0','0','0','0','54','-1224','0','0','0','0','0','0','0','0','0','0','Amnennar the Coldbringer - Yell at 80% HP'),
 ('735804','7358','2','0','100','1024','33','0','0','0','0','0','11','12642','0','2','54','-1223','0','0','54','-796','0','0','Amnennar the Coldbringer - Cast Summon Frost Spectres and Yell at 33% HP'),
 ('735805','7358','2','0','100','1024','66','0','0','0','0','0','11','12642','0','2','54','-1222','0','0','54','-796','0','0','Amnennar the Coldbringer - Cast Summon Frost Spectres and Yell at 66% HP'),
@@ -30765,7 +30765,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1222','To me, my servants!','5828','1','0','7358','0'),
 ('-1223','Come, spirits, attend your master!','5829','1','0','7358','0'),
 ('-1224','I am the hand of the Lich King!','5827','1','0','7358','0'),
-('-1225','Too...easy!','5826','1','0','7358','0'),
+('-1225','Too easy.','5826','0','0','7358','0'),
 ('-1226','Oh now you\'ve gone and angered me! Time to see the true force of the Stone of Tides!','0','0','0','2624','0'),
 ('-1227','This is sacred ground!','10530','1','0','18702','0'),
 ('-1228','This is sacred ground!','10533','1','0','18702','0'),
