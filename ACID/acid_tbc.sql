@@ -19115,9 +19115,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit Hunter
 ('2133201','21332','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Spirit Hunter - Set Defensive State on Spawn'),
 -- Veneratus Spawn Node 21334 - npc_veneratus_spawn_node
--- Illidari Shadowstalker
-('2133701','21337','33','0','100','1','0','0','4800','6100','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Illidari Shadowstalker - Cast Backstab on Facing Target Back'),
+-- Illidari Shadowstalker 21337
+('2133701','21337','1','0','100','0','1000','1000','0','0','0','0','11','5916','0','32','0','0','0','0','0','0','0','0','Illidari Shadowstalker - Cast Shadowstalker Stealth OOC'),
 ('2133702','21337','0','0','50','1','0','5000','9000','14000','0','0','11','30981','1','32','0','0','0','0','0','0','0','0','Illidari Shadowstalker - Cast Crippling Poison'),
+('2133703','21337','33','0','100','1','0','0','4800','6100','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Illidari Shadowstalker - Cast Backstab on Facing Target Back'),
 -- Shadowmoon Valley Tuber Node 21347 - npc_shadowmoon_tuber_node
 -- Dark Conclave Harbringer
 ('2138401','21384','9','0','100','1','0','5','6000','12000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Dark Conclave Harbringer - Cast Cleave'),
