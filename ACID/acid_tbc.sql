@@ -18132,7 +18132,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1888603','18886','2','0','100','0','25','0','0','0','0','0','11','36047','0','0','0','0','0','0','0','0','0','0','Farahlon Breaker - Cast Summon Farahlon Shardling at 25% HP'),
 -- Krexcil (18938) - NSR
 -- Ravandwyr (19217) - NSR
--- Netherstorm Crystal Target
+-- Netherstorm Crystal Target 19421
 -- Sunfury Captain
 ('1945301','19453','0','0','100','0','3700','3700','0','0','0','0','11','32064','0','0','0','0','0','0','0','0','0','0','Sunfury Captain - Cast Battle Shout'),
 ('1945302','19453','0','0','100','0','3700','3700','0','0','0','0','11','35871','1','0','0','0','0','0','0','0','0','0','Sunfury Captain - Cast Spellbreaker'),
