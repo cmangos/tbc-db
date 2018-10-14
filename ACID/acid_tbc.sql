@@ -15972,7 +15972,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2032904','20329','9','0','100','1025','0','40','4800','5200','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Grishna Matriarch - Cast Shadowbolt'),
 -- Bloodmaul Battle Worg
 ('2033001','20330','0','0','100','1','8000','8000','15000','30000','0','0','11','37776','0','0','0','0','0','0','0','0','0','0','Bloodmaul Battle Worg - Cast Blood Howl'),
--- Bladespire Cook
+-- Bladespire Cook 20334
 ('2033401','20334','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Set Phase 1 on Spawn'),
 ('2033402','20334','30','13','100','1','5','21241','0','0','0','0','22','2','0','0','5','16','0','0','0','0','0','0','Bladespire Cook - Set Phase 2 and Kneel on Received AI Event (Phase 1)'),
 ('2033403','20334','1','11','100','1','3000','3000','1000','1000','0','0','5','92','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Drink on OOC Timer (Phase 2)'),
@@ -15983,14 +15983,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2033408','20334','0','0','100','1','1000','3000','10000','20000','0','0','11','37596','1','0','0','0','0','0','0','0','0','0','Bladespire Cook - Cast Tenderize'),
 ('2033409','20334','7','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Set Phase 1 on Evade'),
 ('2033410','20334','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Set Phase 1 on Aggro'),
-('2033411','20334','22','0','100','1','3','10040','0','0','0','0','54','-10479','0','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
-('2033412','20334','22','0','100','1','34','10040','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
-('2033413','20334','22','0','100','1','39','10040','0','0','0','0','54','-10477','6','0','54','-10478','6','0','0','0','0','0','Bladespire Shaman - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
-('2033414','20334','22','0','100','1','58','10040','0','0','0','0','54','-10480','0','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Say on Receive TEXTEMOTE_KISS if Player has Completed Quest 11000'),
-('2033415','20334','22','0','100','1','72','10040','0','0','0','0','54','-10481','0','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Say on Receive TEXTEMOTE_POINT if Player has Completed Quest 11000'),
-('2033416','20334','22','0','100','1','75','10040','0','0','0','0','5','15','0','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
-('2033417','20334','22','0','100','1','101','10040','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
-('2033418','20334','6','0','100','0','10040','0','0','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Shaman - Say on Death if Killer Player has Completed Quest 11000'),
+('2033411','20334','22','0','100','1','3','10040','0','0','0','0','54','-10479','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
+('2033412','20334','22','0','100','1','34','10040','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
+('2033413','20334','22','0','100','1','39','10040','0','0','0','0','54','-10477','6','0','54','-10478','6','0','0','0','0','0','Bladespire Cook - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
+('2033414','20334','22','0','100','1','58','10040','0','0','0','0','54','-10480','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Say on Receive TEXTEMOTE_KISS if Player has Completed Quest 11000'),
+('2033415','20334','22','0','100','1','72','10040','0','0','0','0','54','-10481','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Say on Receive TEXTEMOTE_POINT if Player has Completed Quest 11000'),
+('2033416','20334','22','0','100','1','75','10040','0','0','0','0','5','15','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
+('2033417','20334','22','0','100','1','101','10040','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Bladespire Cook - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
+('2033418','20334','6','0','100','0','10040','0','0','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Cook - Say on Death if Killer Player has Completed Quest 11000'),
 -- Goc
 ('2055501','20555','0','0','100','1','6000','11000','10000','15000','0','0','11','38783','4','0','0','0','0','0','0','0','0','0','Goc - Cast Boulder Volley'),
 ('2055502','20555','0','0','100','1','8000','10000','15000','20000','0','0','11','38784','1','0','0','0','0','0','0','0','0','0','Goc - Cast Ground Smash'),
