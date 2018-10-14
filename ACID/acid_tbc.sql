@@ -19544,13 +19544,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2343503','23435','0','0','100','1025','10000','15000','15000','15000','0','0','11','38861','1','0','0','0','0','0','0','0','0','0','Sanctum Defender - Cast Aimed Shot'),
 ('2343504','23435','0','0','100','1025','0','0','3000','3000','0','0','11','41440','1','256','0','0','0','0','0','0','0','0','Sanctum Defender - Cast Shoot'),
 -- Dragonmaw Skybreaker 23440
-('2344001','23440','4','0','100','0','0','0','0','0','0','0','57','1','30','0','54','0','1','10049','0','0','0','0','Dragonmaw Skybreaker - Enable Caster Mode and Yell on Aggro'),
+('2344001','23440','4','0','75','0','0','0','0','0','0','0','57','1','30','0','54','0','1','10049','0','0','0','0','Dragonmaw Skybreaker - Enable Caster Mode and Yell on Aggro'),
 ('2344002','23440','0','0','100','1025','0','0','20000','20000','0','0','11','36732','1','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Scatter Shot'),
 ('2344003','23440','0','0','100','1025','15000','20000','20000','20000','0','0','11','41448','1','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Multi-Shot'),
 ('2344004','23440','0','0','100','1025','10000','15000','15000','15000','0','0','11','38861','1','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Aimed Shot'),
 ('2344005','23440','0','0','100','1025','0','0','3000','3000','0','0','11','41440','1','256','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Shoot'),
 -- Dragonmaw Skybreaker 23441
-('2344101','23441','4','0','100','0','0','0','0','0','0','0','57','1','30','0','54','0','1','10049','0','0','0','0','Dragonmaw Skybreaker - Enable Caster Mode sand Yell on Aggro'),
+('2344101','23441','4','0','75','0','0','0','0','0','0','0','57','1','30','0','54','0','1','10049','0','0','0','0','Dragonmaw Skybreaker - Enable Caster Mode sand Yell on Aggro'),
 ('2344102','23441','0','0','100','1025','0','0','20000','20000','0','0','11','36732','1','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Scatter Shot'),
 ('2344103','23441','0','0','100','1025','15000','20000','20000','20000','0','0','11','41448','1','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Multi-Shot'),
 ('2344104','23441','0','0','100','1025','10000','15000','15000','15000','0','0','11','38861','1','0','0','0','0','0','0','0','0','0','Dragonmaw Skybreaker - Cast Aimed Shot'),
@@ -31901,6 +31901,10 @@ INSERT INTO `creature_ai_summons` (`id`,`position_x`,`position_y`,`position_z`,`
 -- =======================================================
 -- Random Templates used by ACID (Check for ids used elsewhere)
 -- SELECT * FROM `dbscript_random_templates` WHERE `id` BETWEEN 0 AND 30000;
+
+-- Clear dbscript_random_templates which are populated with creature_ai_texts and are included in tbc-db release file
+DELETE FROM dbscript_random_templates WHERE `target_id` < 0;
+
 -- =======================================================
 -- Classic IDs 0 - 9999
 REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
@@ -31951,7 +31955,7 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (1003,0,-856,0,'Varimathras 2425 - Random Aggro Texts');
 
 -- TBC IDs 10000 - 19999
-REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+REPLACE INTO `dbscript_random_templates` (id, type, target_id, chance, comments) VALUES
 (10005,0,-10328,0,'5355/16769/1410 - Random Texts'),
 (10005,0,-10329,0,'5355/16769/1410 - Random Texts'),
 (10005,0,-10330,0,'5355/16769/1410 - Random Texts'),
@@ -32106,12 +32110,11 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (10046,0,-10908,0,'Common Arakkoa - Random Aggro Texts'),
 (10046,0,-10909,0,'Common Arakkoa - Random Aggro Texts'),
 (10046,0,-10910,0,'Common Arakkoa - Random Aggro Texts'),
-(10049, 0, -10789, 15, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
-(10049, 0, -10788, 15, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
-(10049, 0, -105, 15, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
-(10049, 0, -102, 15, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
-(10049, 0, -101, 15, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
-(10049, 0, 0, 25, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
+(10049, 0, -10789, 0, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
+(10049, 0, -10788, 0, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
+(10049, 0, -105, 0, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
+(10049, 0, -102, 0, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
+(10049, 0, -101, 0, 'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
 (10050,0,-10099,0,'18206 - Random OOC LOS Texts'),
 (10050,0,-10100,0,'18206 - Random OOC LOS Texts'),
 (10050,0,-10101,0,'18206 - Random OOC LOS Texts'),
