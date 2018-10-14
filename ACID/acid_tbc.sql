@@ -31955,7 +31955,7 @@ REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) V
 (1003,0,-856,0,'Varimathras 2425 - Random Aggro Texts');
 
 -- TBC IDs 10000 - 19999
-REPLACE INTO `dbscript_random_templates` (id, type, target_id, chance, comments) VALUES
+REPLACE INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 (10005,0,-10328,0,'5355/16769/1410 - Random Texts'),
 (10005,0,-10329,0,'5355/16769/1410 - Random Texts'),
 (10005,0,-10330,0,'5355/16769/1410 - Random Texts'),
