@@ -3,10 +3,16 @@ TBC-DB for CMaNGOS-TBC
 A Content Database for [CMaNGOS-TBC][10], and *World of Warcraft Client Patch
 2.4.3* - It Is Compatible Only With Client 2.4.3 (build 8606)
 
-**TBC-DB** is released under the GPL v2.  The file (`LICENSE.mdown`)
+**TBC-DB** is released under the GPL v3.  The file (`LICENSE.md`)
 **must** be a part of any redistributable packages made from this software.  No
 licenses should be removed from this software if you are making redistributable
 copies.
+
+**TBC-DB** contains copyrighted materials that are not part of the GPL v3.
+Informations about copyrighted materials are located in the file (`COPYRIGHT.md`).
+
+World of Warcraft content and materials are trademarks and copyrights of Blizzard or its licensors. All rights reserved.
+**TBC-DB** is part of CMaNGOS project and is not affiliated with Blizzard or its licensors.
 
 Compatibility
 -------------
