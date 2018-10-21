@@ -15958,7 +15958,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2021401','20214','11','0','100','0','0','0','0','0','0','0','20','0','0','0','21','0','0','0','0','0','0','0','Arakkoa Egg - Stop Melee and Stop Movement on Spawn'),
 ('2021402','20214','6','0','100','0','0','0','0','0','0','0','11','35788','0','0','0','0','0','0','0','0','0','0','Arakkoa Egg - Cast Arakkoa Egg Debuff On Death'),
 -- Grulloc
-('2021601','20216','0','0','100','1','10000','20000','18000','28000','0','0','11','38771','0','0','0','0','0','0','0','0','0','0','Grulloc - Cast Burning Rage'),
+('2021601','20216','0','0','100','1','10000','20000','18000','28000','0','0','11','38771','0','0','54','-11020','0','0','0','0','0','0','Grulloc - Cast Burning Rage and Text Emote'),
 ('2021602','20216','0','0','100','1','5000','9000','12000','17000','0','0','11','21055','1','0','0','0','0','0','0','0','0','0','Grulloc - Cast Crush Armor'),
 ('2021603','20216','0','0','100','1','6000','17000','5000','10000','0','0','11','38772','4','32','0','0','0','0','0','0','0','0','Grulloc - Cast Grievous Wound'),
 ('2021604','20216','6','0','100','0','0','0','0','0','0','0','11','39890','0','7','0','0','0','0','0','0','0','0','Grulloc - Cast Summon Grulloc''s Dragon Skull Chest on Death'),
@@ -31855,6 +31855,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11017','Congratulations. It smells worse in here than in the ruins.','0','0','0','20812','0'),
 ('-11018','%s flaps down from the ceiling...','0','2','0','16180','0'),
 ('-11019','%s howls through the halls...','0','2','0','16181','0'),
+('-11020','%s grows massively powerful!','0','2','0','20216','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
