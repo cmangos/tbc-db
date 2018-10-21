@@ -16727,6 +16727,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Felguard Degrader 23055
 -- Rivendark 23061
 -- Fel Imp Defender 23078
+-- Ogri'la Keg King c.23110
+('2311001','23110','1','0','100','1','30000','45000','30000','45000','0','0','5','92','0','0','11','35777','0','2','0','0','0','0','Ogri''la Keg King - Emote and Cast Bloodmaul Intoxication Visual OOC'),
 -- Doomguard Punisher 23113
 -- Ogri'la Peacekeeper 23115
 ('2311501','23115','0','0','100','1','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Ogri''la Peacekeeper - Cast Net'),
