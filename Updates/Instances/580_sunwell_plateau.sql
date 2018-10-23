@@ -1178,7 +1178,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000005676,2000005677,2000005678,2000001530); -- ,2000001531);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 (2000005676, 'May the light bless you.', 0, 0, 0, 0, ''),
-(2000005677, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, ''), 
+(2000005677, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, ''),
 (2000005678, 'Rest now, you have fought well today.', 0, 0, 0, 0, ''),
 (2000001530, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, '');
 -- (2000001531, 'Bring forth the imps!', 0, 1, 0, 0, '');
