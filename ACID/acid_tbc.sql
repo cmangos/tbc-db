@@ -22776,7 +22776,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1817902','18179','29','0','100','6','18000','18000','0','0','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Generic Timer'),
 ('1817903','18179','2','0','100','6','99','0','0','0','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Damage'),
 -- Wastewalker Captive 18206
-('1820601','18206','10','0','20','39','1','15','0','1','0','0','54','0','0','10050','0','0','0','0','0','0','0','0','Wastewalker Captive - Random Say on OOC LOS'),
+('1820601','18206','10','0','20','39','1','15','0','1','0','0','54','0','0','12003','0','0','0','0','0','0','0','0','Wastewalker Captive - Random Say on OOC LOS'),
 -- Mennu Healing Ward - TotemAI
 -- Coilfang Scale-Healer (3.0.3 and 4.3.3 Official Data - Normal Only)
 ('2112601','21126','0','0','100','3','3600','9200','12100','13400','0','0','11','34944','0','0','0','0','0','0','0','0','0','0','Coilfang Scale-Healer (Normal) - Cast Holy Nova'),
@@ -32175,10 +32175,6 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10049,0,-105,0,'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
 (10049,0,-102,0,'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
 (10049,0,-101,0,'Dragonmaw Skybreaker (23440/23441) - Random Aggro yell'),
-(10050,0,-10099,0,'18206 - Random OOC LOS Texts'),
-(10050,0,-10100,0,'18206 - Random OOC LOS Texts'),
-(10050,0,-10101,0,'18206 - Random OOC LOS Texts'),
-(10050,0,-10102,0,'18206 - Random OOC LOS Texts'),
 (10060,0,-10459,0,'17931 - Random Death Texts'),
 (10060,0,-10460,0,'17931 - Random Death Texts'),
 (10061,0,-10629,0,'17920 - Random Death Texts'),
@@ -32281,7 +32277,11 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (12002,0,-10274,0,'Mana-Tombs - Random Aggro Texts'),
 (12002,0,-10275,0,'Mana-Tombs - Random Aggro Texts'),
 (12002,0,-10276,0,'Mana-Tombs - Random Aggro Texts'),
-(12002,0,-10277,0,'Mana-Tombs - Random Aggro Texts');
+(12002,0,-10277,0,'Mana-Tombs - Random Aggro Texts'),
+(12003,0,-10099,0,'18206 - Random OOC LOS Texts'),
+(12003,0,-10100,0,'18206 - Random OOC LOS Texts'),
+(12003,0,-10101,0,'18206 - Random OOC LOS Texts'),
+(12003,0,-10102,0,'18206 - Random OOC LOS Texts');
 
 -- WOTLK IDs 20000+
 -- INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
