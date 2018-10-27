@@ -4,7 +4,7 @@ DBScriptName: instance_ramparts
 DB%Complete: 85
 DBComment:
 * pat towards omor must be resniffed, they should walk in sync, current spawn position prevents this (need creature_groups for better pathing behavior)
-* Add Chance for no Chest to Spawn (Core/Pooling) or Pool Normal and Heroic Spawns together and let spawnmask reduce the chance, also known issue is that heroic spawnmask can spawn in normal due to pooling bypassing it for normal mode.
+* Core Issue: Pooling overwrites spawnmask making it possible to have heroic chest in normal, chests need some sort of chanced solution where the maxchance of a pool might be below 100%
 EndDBScriptData */
 
 SET @CGUID := 5430000; -- creatures

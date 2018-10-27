@@ -838,8 +838,18 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+72, 181556, 547, 3, -71.34264, -282.6859, -1.401498, 0.7330382, 0, 0, 0.3583679, 0.9335805, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+73, 181556, 547, 3, 0.00864, -186.6674, -1.555333, 3.944446, 0, 0, -0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+74, 181569, 547, 3, 0.00864, -186.6674, -1.555333, 3.944446, 0, 0, -0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+75, 184933, 547, 1, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest -- guessed
-(@OGUID+76, 184937, 547, 2, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest -- guessed
+(@OGUID+75, 184932, 547, 1, -8.733916, -182.9387, -1.57517, 1.433549, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+76, 184932, 547, 1, -9.246671, -186.4323, -1.567523, -0.2268928, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+77, 184932, 547, 1, -9.452101, -209.0335, -1.579993, 1.675516, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+78, 184932, 547, 1, -15.10876, -328.1017, -1.58162, 0.2443461, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+79, 184932, 547, 1, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest -- guessed coords
+(@OGUID+80, 184933, 547, 1, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest -- guessed coords
+(@OGUID+81, 184932, 547, 1, 135.5916, -304.6217, 3.035721, -2.687807, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+82, 184933, 547, 1, 135.5916, -304.6217, 3.035721, -2.687807, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+83, 184932, 547, 1, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+84, 184933, 547, 1, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+85, 184932, 547, 1, -41.41404, -512.5812, -1.585812, -2.495821, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+86, 184932, 547, 1, -124.2653, -595.8683, 9.163177, 0.06981316, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Bound Fel Iron Chest
 
 -- ======
 -- EVENTS
@@ -893,6 +903,9 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
 DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN @PGUID AND @PGUID+99;
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+31, @PGUID+30, 0, 'Bound/Solid Fel Iron Chest - Pool 1'),
+(@PGUID+32, @PGUID+30, 0, 'Bound/Solid Fel Iron Chest - Pool 2'),
+(@PGUID+33, @PGUID+30, 0, 'Bound/Solid Fel Iron Chest - Pool 3'),
 (@PGUID+54, @PGUID+53, 0, 'Ragveil / Flame Cap - Pool 1'),
 (@PGUID+55, @PGUID+53, 0, 'Ragveil / Flame Cap - Pool 2'),
 (@PGUID+56, @PGUID+53, 0, 'Ragveil / Flame Cap - Pool 3'),
@@ -920,7 +933,11 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+12, 1, 'Slave Pens - Coilfang Scale-Healer / Coilfang Soothsayer'),
 (@PGUID+13, 1, 'Slave Pens - Coilfang Soothsayer / Coilfang Scale-Healer'),
 (@PGUID+14, 1, 'Slave Pens - Coilfang Soothsayer / Coilfang Scale-Healer'),
-(@PGUID+49, 1, 'Slave Pens - Master Chest Pool'),
+(@PGUID+30, 2, 'Slave Pens (Normal) - Master Chest Pool'),
+(@PGUID+31, 1, 'Slave Pens (Normal) - Bound/Solid Fel Iron Chest - Pool 1'),
+(@PGUID+32, 1, 'Slave Pens (Normal) - Bound/Solid Fel Iron Chest - Pool 2'),
+(@PGUID+33, 1, 'Slave Pens (Normal) - Bound/Solid Fel Iron Chest - Pool 3'),
+-- (@PGUID+40, 1, 'Slave Pens (Heroic) - Master Chest Pool'),
 (@PGUID+50, 4, 'Slave Pens - Master Mineral Pool'),
 (@PGUID+51, 4, 'Slave Pens - Master Anchient Lichen (181278) Pool'),
 (@PGUID+52, 3, 'Slave Pens - Master Felweed (181270) Pool'),
@@ -970,8 +987,17 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+75, @PGUID+49, 0, 'Slave Pens - Solid Fel Iron Chest (184933)'),
-(@OGUID+76, @PGUID+49, 0, 'Slave Pens - Solid Adamantite Chest (184937)'),
+(@OGUID+75, @PGUID+30, 0, 'Slave Pens - Bound Fel Iron Chest (184932)'),
+(@OGUID+77, @PGUID+30, 0, 'Slave Pens - Bound Fel Iron Chest (184932)'),
+(@OGUID+78, @PGUID+30, 0, 'Slave Pens - Bound Fel Iron Chest (184932)'),
+(@OGUID+79, @PGUID+31, 0, 'Slave Pens - Bound Fel Iron Chest (184932)'),
+(@OGUID+80, @PGUID+31, 0, 'Slave Pens - Solid Fel Iron Chest (184933)'),
+(@OGUID+81, @PGUID+32, 0, 'Slave Pens - Bound Fel Iron Chest (184932)'),
+(@OGUID+82, @PGUID+32, 0, 'Slave Pens - Solid Fel Iron Chest (184933)'),
+(@OGUID+83, @PGUID+33, 0, 'Slave Pens - Bound Fel Iron Chest (184932)'),
+(@OGUID+84, @PGUID+33, 0, 'Slave Pens - Solid Fel Iron Chest (184933)'),
+(@OGUID+85, @PGUID+30, 0, 'Slave Pens - Bound Fel Iron Chest (184932)'),
+(@OGUID+86, @PGUID+30, 0, 'Slave Pens - Bound Fel Iron Chest (184932)'),
 (@OGUID+1, @PGUID+52, 0, 'Slave Pens - Felweed (181270)'),
 (@OGUID+2, @PGUID+52, 0, 'Slave Pens - Felweed (181270)'),
 (@OGUID+3, @PGUID+54, 0, 'Slave Pens - Ragveil (181275) - Pool 1'),

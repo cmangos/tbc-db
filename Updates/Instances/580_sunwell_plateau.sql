@@ -1163,7 +1163,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2563901, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_KNEEL'),
 (2563901, 7, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_STAND'),
 (2563902, 0, 15, 45859, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Renew'),
-(2563902, 1, 0, 0, 0, 0, 0, 0, 0, 2000001527, 2000001528, 2000001529, 0, 0, 0, 0, 0, 'Say random text after casting Renew'),
+(2563902, 1, 0, 0, 0, 0, 0, 0, 0, 2000005676, 2000005677, 2000005678, 0, 0, 0, 0, 0, 'Say random text after casting Renew'),
 (2564401, 1, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_KNEEL'),
 (2564402, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_STAND'),
 (2536301, 0, 15, 46319, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Felblood Channel'),
@@ -1175,13 +1175,13 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2548601, 0, 0, 0, 0, 0, 0, 0, 0, 2000001530, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Vanquisher Yell text before runing out'),
 (2583701, 0, 15, 46245, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Summon Shadowsword Deathbringer');
 
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000001527,2000001528,2000001529,2000001530,2000001531);
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000005676,2000005677,2000005678,2000001530); -- ,2000001531);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000001527, 'May the light bless you.', 0, 0, 0, 0, ''),
-(2000001528, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, ''), 
-(2000001529, 'Rest now, you have fought well today.', 0, 0, 0, 0, ''),
-(2000001530, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, ''),
-(2000001531, 'Bring forth the imps!', 0, 1, 0, 0, '');
+(2000005676, 'May the light bless you.', 0, 0, 0, 0, ''),
+(2000005677, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, ''),
+(2000005678, 'Rest now, you have fought well today.', 0, 0, 0, 0, ''),
+(2000001530, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, '');
+-- (2000001531, 'Bring forth the imps!', 0, 1, 0, 0, '');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

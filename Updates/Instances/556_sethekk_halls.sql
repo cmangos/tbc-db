@@ -441,7 +441,8 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (18472, 0, 0, 1, 0, 0, 0, '18950'), -- Darkweaver Syth
-(18956, 0, 0, 1, 0, 0, 0, NULL); -- Lakka
+(18956, 0, 0, 1, 0, 0, 0, NULL), -- Lakka
+(23132, 0, 0, 1, 16, 0, 0, '9205'); -- Brood of Anzu
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+39, @CGUID+42, 1167), -- Sethekk Guard -> Sethekk Guard

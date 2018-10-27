@@ -4,6 +4,7 @@ DBScriptName: instance_blood_furnace
 DB%Complete: 80
 DBComment:
 * ai second boss adds aggro drop ability, spell scripting for second boss aoe ability (scaling)
+* Core Issue: Pooling overwrites spawnmask making it possible to have heroic chest in normal, chests need some sort of chanced solution where the maxchance of a pool might be below 100%
 EndDBScriptData */
 
 SET @CGUID := 5420000; -- creatures
@@ -578,9 +579,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+27, 181982, 542, 3, 456.555, 54.3522, 9.61573, 4.70899, 0, 0, 0, 0, 600, 600, 100, 1), -- Cell Door Lever
 (@OGUID+28, 184175, 542, 3, -0.626152, 25.2928, -45.1701, -1.9627, 0, 0, 0, 0, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficulty01
 (@OGUID+29, 184176, 542, 3, -0.629567, 25.3203, -45.1592, -1.95961, 0, 0, 0, 0, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficultyIcon01
-(@OGUID+30, 184932, 542, 3, 328.702, -197.719, -25.5089, 2.98451, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+31, 184933, 542, 1, 494.211, 10.8752, 9.54401, 3.14159, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+32, 184937, 542, 2, 498.092, 3.54075, 9.5534, 3.24531, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
+(@OGUID+30, 184932, 542, 1, 494.2115, 10.87523, 9.544005, 3.141593, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+31, 184933, 542, 1, 494.2115, 10.87523, 9.544005, 3.141593, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+32, 184932, 542, 1, 328.7021, -197.7191, -25.50888, 2.984499, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+33, 184933, 542, 1, 328.7021, -197.7191, -25.50888, 2.984499, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+34, 184937, 542, 2, 498.092, 3.54075, 9.5534, 3.24531, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -594,11 +597,16 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+31, @PGUID+30, 0, 'Bound/Solid Fel Iron Chest - Pool 1'),
+(@PGUID+32, @PGUID+30, 0, 'Bound/Solid Fel Iron Chest - Pool 2');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 4, 'Blood Furnace - Laughing Skull Rogues'),
-(@PGUID+21, 2, 'Blood Furnace - Master Chest Pool');
+(@PGUID+30, 1, 'Blood Furnace (Normal) - Master Chest Pool'),
+(@PGUID+31, 1, 'Blood Furnace (Normal) - Bound/Solid Fel Iron Chest - Pool 1'),
+(@PGUID+32, 1, 'Blood Furnace (Normal) - Bound/Solid Fel Iron Chest - Pool 2');
+-- (@PGUID+40, 1, 'Blood Furnace (Heroic) - Master Chest Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+171, @PGUID+1, 0, 'Blood Furnace - Laughing Skull Rogues - Pathing on Front Stairs'),
@@ -612,9 +620,11 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+30, @PGUID+21, 0, 'Blood Furnace - Bound Fel Iron Chest (184932)'),
-(@OGUID+31, @PGUID+21, 0, 'Blood Furnace - Solid Fel Iron Chest (184933)'),
-(@OGUID+32, @PGUID+21, 0, 'Blood Furnace - Solid Adamantite Chest (184937)');
+(@OGUID+30, @PGUID+31, 0, 'Blood Furnace - Bound Fel Iron Chest (184932)'),
+(@OGUID+31, @PGUID+31, 0, 'Blood Furnace - Solid Fel Iron Chest (184933)'),
+(@OGUID+32, @PGUID+32, 0, 'Blood Furnace - Bound Fel Iron Chest (184932)'),
+(@OGUID+33, @PGUID+32, 0, 'Blood Furnace - Solid Fel Iron Chest (184933)'),
+(@OGUID+34, @PGUID+30, 0, 'Blood Furnace - Solid Adamantite Chest (184937)'); -- @PGUID+40
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
