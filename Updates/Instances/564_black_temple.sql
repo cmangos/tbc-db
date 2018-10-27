@@ -1755,6 +1755,32 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+418, 0, 0, 1, 0, 234, 0, NULL), -- Bonechewer Worker
 (@CGUID+419, 0, 0, 1, 0, 234, 0, NULL), -- Bonechewer Worker
 (@CGUID+420, 0, 0, 1, 0, 173, 0, NULL), -- Bonechewer Worker
+(@CGUID+466, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+467, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+468, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+469, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+470, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+471, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+472, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+473, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+474, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+475, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+476, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+477, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+478, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+479, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+480, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+481, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+482, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+483, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+484, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+485, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+486, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+487, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+488, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+489, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+490, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
+(@CGUID+491, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
 (@CGUID+500, 0, 0, 1, 16, 0, 0, NULL), -- Shadowmoon Weapon Master
 (@CGUID+501, 0, 0, 1, 16, 0, 0, NULL), -- Black Temple Invis Stalker
 (@CGUID+516, 0, 0, 1, 16, 173, 0, NULL), -- Shadowmoon Grunt
@@ -1836,7 +1862,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (22960, 0, 0, 0, 0, 0, 0, '40899'),-- Dragonmaw Wyrmcaller
 (23018, 14334, 0, 1, 0, 0, 0, NULL), -- Shadowmoon Houndmaster
 (23030, 24725, 0, 1, 16, 0, 1024, NULL), -- Dragonmaw Sky Stalker
-(23033, 0, 0, 1, 0, 0, 0, '40155'), -- Invisible Stalker (Floating)
 (23047, 0, 0, 1, 16, 0, 0, NULL), -- Shadowmoon Soldier
 (23049, 0, 0, 1, 0, 0, 0, NULL), -- Shadowmoon Weapon Master -- ss.39664
 (23083, 0, 0, 1, 16, 0, 0, '18950'), -- Shadowmoon Riding Hound
