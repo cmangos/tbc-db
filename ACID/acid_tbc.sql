@@ -13401,7 +13401,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ironforge Brigade Footman 15442
 -- Janela Stouthammer 15443
 -- Arcanist Nozzlespring 15444
--- Hive'Zora Abomination 15449
+-- Hive'Zora Abomination 15449 - Timers guessed
+('1544901','15449','0','0','100','1025','9000','13000','14000','18000','0','0','11','25260','17','0','0','0','0','0','0','0','0','0','Hive''Zora Abomination - Cast Wings of Despair'),
+('1544902','15449','0','0','100','1025','8000','15000','18000','26000','0','0','11','25189','5','0','0','0','0','0','0','0','0','0','Hive''Zora Abomination - Cast Enveloping Winds'),
+('1544903','15449','0','0','100','1025','5000','9000','20000','40000','0','0','11','25198','15','0','0','0','0','0','0','0','0','0','Hive''Zora Abomination - Cast Poison Cloud'),
+('1544904','15449','0','0','100','1025','0','3000','6000','10000','0','0','11','25262','1','0','0','0','0','0','0','0','0','0','Hive''Zora Abomination - Cast Abomination Spit'),
 -- Windcaller Yessendra 15498
 -- Warden Haro 15499
 -- Keyl Swiftclaw 15500
