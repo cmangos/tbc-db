@@ -741,10 +741,10 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15952, 0, 0, 1, 16, 0, 0, '19818'), -- Maexxna
 (15953, 0, 0, 1, 16, 0, 0, NULL), -- Grand Widow Faerlina
 (15954, 0, 0, 1, 16, 0, 0, NULL), -- Noth the Plaguebringer
-(15956, 0, 0, 1, 16, 0, 0, NULL), -- Anub'Rekhan
+(15956, 0, 0, 1, 16, 0, 0, '18943'), -- Anub'Rekhan
 (15974, 0, 0, 1, 16, 0, 0, NULL), -- Dread Creeper
 (15975, 0, 0, 1, 16, 0, 0, NULL), -- Carrion Spinner
-(15976, 0, 0, 1, 16, 0, 0, NULL), -- Venom Stalker
+(15976, 0, 0, 1, 16, 0, 0, '18943'), -- Venom Stalker
 (15977, 0, 0, 1, 16, 0, 0, NULL), -- Poisonous Skitterer
 (15978, 0, 0, 1, 16, 0, 0, NULL), -- Crypt Reaver
 (15979, 0, 0, 1, 16, 0, 0, NULL), -- Tomb Horror
