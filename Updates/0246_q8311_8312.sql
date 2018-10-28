@@ -1,7 +1,7 @@
 -- Hallow's End Treats for Jesper! q.8311
 
 -- Spoops 15309
-DELETE FROM `creature` WHERE `guid` = 88292 AND `id` = 15309; 
+DELETE FROM `creature` WHERE `guid` = 88292;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (88292, 15309, 1, 1, 0, 0, 2060.53, -4682.64, 25.5492, 1.41372, 180, 180, 0, 0, 0, 0);
 
