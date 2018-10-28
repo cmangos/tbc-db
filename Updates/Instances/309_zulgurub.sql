@@ -464,7 +464,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (14821, 0, 0, 1, 16, 0, 0, '8876'), -- Razzashi Raptor
 (14825, 0, 0, 1, 16, 10, 0, NULL), -- Withered Mistress
 (14826, 0, 0, 1, 16, 10, 0, NULL), -- Sacrificed Troll
-(14834, 0, 0, 1, 16, 0, 0, NULL), -- Hakkar
+(14834, 0, 0, 1, 16, 0, 0, '19818 24692'), -- Hakkar
 (14880, 0, 0, 1, 16, 0, 0, NULL), -- Razzashi Skitterer
 (14882, 0, 0, 1, 16, 10, 0, '8876'), -- Atal'ai Mistress
 (14883, 0, 0, 1, 16, 10, 0, NULL), -- Voodoo Slave
