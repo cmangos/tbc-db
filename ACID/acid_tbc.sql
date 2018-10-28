@@ -14484,7 +14484,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunscale Lashtail
 ('325401','3254','0','0','100','1','11000','21000','13000','19000','0','0','11','6607','1','0','0','0','0','0','0','0','0','0','Sunscale Lashtail - Cast Lash'),
 -- Sunscale Screecher 3255
-('325501','3255','2','0','100','0','30','0','0','0','0','0','39','30','0','0','1','-10802','0','0','0','0','0','0','Sunscale Screecher - Call For Help and Emote at 30% HP'),
+('325501','3255','2','0','100','0','30','0','0','0','0','0','39','30','0','0','1','-154','0','0','0','0','0','0','Sunscale Screecher - Call For Help and Emote at 30% HP'),
 -- Sunscale Scytheclaw
 ('325601','3256','1','0','100','0','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Sunscale Scytheclaw - Cast Thrash OOC'),
 -- Bristleback Hunter 3258
@@ -30366,7 +30366,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-143','The Defias shall succeed! No meek adventurer will stop us!','0','0','0','1755','0'),
 ('-144','What? How dare you!','0','0','0','1754','0'),
 ('-145','%s flees toward safety or another tiger.','0','2','0','Zulian Cub fleeing text','0'),
--- Classic PLEASE RE-USE 146 - 160
+-- Classic PLEASE RE-USE 146 - 153
+('-154','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
+-- Classic PLEASE RE-USE 155 - 160
 ('-161','A living $r... soon to be a dead like me.','0','0','0','Common Undead Text','0'),
 ('-162','Mmm... I love my delicious Southshore stout.','0','0','0','2440','0'),
 ('-163','Slay them, my brethren! For the Scourge!','5822','1','0','7357','0'),
@@ -31665,7 +31667,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10799','%s casts a spell to draw magical attacks away from his allies.','0','2','0','22242','0'),
 ('-10800','WUT! DA KING IS BACK, BABY!','0','0','0','22826','0'),
 ('-10801','In Outland, lunch open prison for you! What a world! Time to eat!','0','0','0','22826','0'),
-('-10802','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
+-- tbc PLEASE RE-USE 10802
 ('-10803','Hey folks, go easy on me... it\'s my first time.','0','0','0','19228','24'),
 ('-10804','I never met a tauren I didn\'t like...','0','0','0','19228','1'),
 ('-10805','To eat!!','0','0','0','19228','5'),
