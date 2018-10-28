@@ -444,7 +444,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (11371, 0, 0, 1, 16, 0, 0, NULL), -- Razzashi Serpent
 (11372, 0, 0, 1, 16, 0, 0, '8876'), -- Razzashi Adder
 (11373, 0, 0, 1, 16, 0, 0, NULL), -- Razzashi Cobra
-(11374, 0, 0, 1, 16, 0, 0, '18950'), -- Hooktooth Frenzy
+(11374, 0, 0, 1, 16, 0, 0, '18943 18950'), -- Hooktooth Frenzy
 (11380, 0, 0, 1, 16, 10, 0, NULL), -- Jin'do the Hexxer
 (11382, 15271, 0, 1, 16, 0, 0, NULL), -- Bloodlord Mandokir
 (11387, 0, 0, 1, 16, 0, 0, NULL), -- Sandfury Speaker
