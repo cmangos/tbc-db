@@ -736,9 +736,9 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15929, 0, 0, 1, 16, 0, 0, NULL), -- Stalagg
 (15930, 0, 0, 1, 16, 0, 0, NULL), -- Feugen
 (15931, 0, 0, 1, 16, 0, 0, NULL), -- Grobbulus
-(15932, 0, 0, 1, 16, 0, 0, NULL), -- Gluth
+(15932, 0, 0, 1, 16, 0, 0, '19818'), -- Gluth
 (15936, 0, 0, 1, 16, 0, 0, NULL), -- Heigan the Unclean
-(15952, 0, 0, 1, 16, 0, 0, NULL), -- Maexxna
+(15952, 0, 0, 1, 16, 0, 0, '19818'), -- Maexxna
 (15953, 0, 0, 1, 16, 0, 0, NULL), -- Grand Widow Faerlina
 (15954, 0, 0, 1, 16, 0, 0, NULL), -- Noth the Plaguebringer
 (15956, 0, 0, 1, 16, 0, 0, NULL), -- Anub'Rekhan
@@ -750,6 +750,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15979, 0, 0, 1, 16, 0, 0, NULL), -- Tomb Horror
 (15980, 0, 8, 1, 16, 0, 0, NULL), -- Naxxramas Cultist
 (15981, 0, 8, 1, 16, 0, 0, NULL), -- Naxxramas Acolyte
+(15989, 0, 0, 1, 16, 0, 0, '19818'), -- Sapphiron
 (15990, 0, 0, 1, 16, 0, 0, NULL), -- Kel'Thuzad
 (16011, 0, 0, 1, 16, 0, 0, NULL), -- Loatheb
 (16017, 0, 0, 1, 16, 0, 0, '27793'), -- Patchwork Golem
@@ -803,7 +804,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16381, 0, 7, 1, 16, 0, 0, NULL), -- Archmage Tarsis Kir-Moldir
 (16400, 0, 0, 1, 16, 0, 0, '28370'), -- Toxic Tunnel
 (16446, 0, 0, 1, 16, 0, 0, NULL), -- Plagued Gargoyle
-(16447, 0, 0, 1, 16, 0, 0, NULL), -- Plagued Ghoul
+(16447, 0, 0, 1, 16, 0, 0, '19818'), -- Plagued Ghoul
 (16448, 0, 0, 1, 16, 0, 0, NULL), -- Plagued Deathhound
 (16449, 0, 0, 1, 16, 0, 0, NULL), -- Spirit of Naxxramas
 (16451, 0, 0, 1, 16, 0, 0, NULL), -- Deathknight Vindicator
