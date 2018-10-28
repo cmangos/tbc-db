@@ -706,6 +706,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+(11441, 0, 0, 1, 16, 0, 0, '19818'), -- Gordok Brute
 (11445, 0, 0, 1, 0, 0, 0, NULL), -- Gordok Captain
 (11446, 0, 0, 1, 0, 0, 0, NULL), -- Gordok Spirit
 (11451, 0, 0, 1, 0, 0, 0, NULL), -- Wildspawn Satyr
