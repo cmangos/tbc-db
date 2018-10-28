@@ -132,6 +132,7 @@ INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (15608, 0, 0, 0, 0, 0, 0, '31635 31556'), -- Medivh
 (17881, 0, 0, 1, 16, 0, 0, '19818'), -- Aeonus
+(18170, 0, 0, 0, 0, 0, 0, '19817'), -- Infinite Slayer
 (18982, 0, 0, 1, 0, 0, 0, '18950 22766'), -- Sable Jaguar
 (18983, 0, 0, 1, 0, 0, 0, '34365'), -- Blackfang Tarantula
 (21140, 0, 0, 1, 16, 0, 0, '19818'), -- Rift Lord
