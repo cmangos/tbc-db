@@ -20738,13 +20738,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Focus Fire
 ('1837401','18374','29','0','100','0','0','0','0','0','0','0','11','26262','0','0','11','32286','0','2','50','0','0','0','Focus Fire - Cast Birth and Focus Target Visual and react state passive'),
 -- Stolen Soul (18441) - mob_stolen_soul
--- Avatar of the Martyred (4.3.4 Official Data - Normal/Heroic)
-('1847801','18478','4','0','100','6','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Set Phase 1 on Aggro'),
-('1847802','18478','0','0','100','7','12100','16800','10900','24100','0','0','11','16856','1','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Cast Mortal Strike'),
-('1847803','18478','9','5','100','7','0','5','6200','15700','0','0','11','16145','1','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Cast Sunder Armor (Phase 1)'),
-('1847804','18478','24','5','100','7','16145','5','5000','5000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('1847805','18478','28','3','100','7','16145','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
-('1847806','18478','7','0','100','6','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Set Phase 0 on Evade'),
+-- Avatar of the Martyred 18478 (4.3.4 Official Data - Normal/Heroic)
+('1847801','18478','11','0','100','6','0','0','0','0','0','0','11','33422','0','32','38','0','0','0','0','0','0','0','Avatar of the Martyred - Cast Phase In and Zone Combat Pulse on Spawn'),
+('1847802','18478','0','0','100','1031','8500','16800','10900','24100','0','0','11','16856','1','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Cast Mortal Strike'),
+('1847803','18478','0','0','100','1031','6500','11500','6200','15700','0','0','11','16145','1','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Cast Sunder Armor'),
 -- Auchenai Soulpriest 18493 (4.3.4 Official Data - Normal/Heroic)
 ('1849301','18493','0','0','15','6','0','0','0','0','0','0','54','0','0','12001','0','0','0','0','0','0','0','0','Auchenai Soulpriest - Random Say on Aggro'),
 ('1849302','18493','30','0','100','6','5','18778','0','0','0','0','11','30662','10','0','0','0','0','0','0','0','0','0','Auchenai Soulpriest - Cast Demonic Summon Channel on Receive AI Event Custom A'),
