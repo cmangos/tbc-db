@@ -772,7 +772,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (9039, 0, 0, 1, 16, 0, 0, '13787'), -- Doom'rel
 (9040, 0, 0, 1, 16, 0, 0, '32199'), -- Dope'rel
 (9041, 0, 0, 1, 16, 0, 0, '12544'), -- Warder Stilgiss
-(9042, 0, 0, 1, 16, 0, 0, NULL), -- Verek
+(9042, 0, 0, 1, 16, 0, 0, '8876'), -- Verek
 (9056, 0, 0, 1, 16, 0, 0, NULL), -- Fineous Darkvire
 (9156, 0, 0, 1, 16, 0, 0, NULL), -- Ambassador Flamelash
 (9319, 0, 0, 1, 16, 0, 0, NULL), -- Houndmaster Grebmar
@@ -784,7 +784,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (9545, 0, 0, 1, 16, 0, 0, NULL), -- Grim Patron
 (9547, 0, 0, 1, 16, 0, 0, NULL), -- Guzzling Patron
 (9554, 0, 0, 1, 16, 10, 0, '14869'), -- Hammered Patron
-(9677, 0, 0, 1, 16, 0, 0, NULL), -- Ograbisi
+(9677, 0, 0, 1, 16, 0, 0, '8876'), -- Ograbisi
 (9678, 0, 0, 1, 16, 0, 0, NULL), -- Shill Dinger
 (9679, 0, 0, 1, 16, 0, 0, NULL), -- Tobias Seecher
 (9680, 0, 0, 1, 16, 0, 0, NULL), -- Crest Killer
