@@ -29160,7 +29160,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Son of Hakkar 11357
 ('1135701','11357','0','0','100','3','8000','15000','11000','16000','0','0','11','16790','4','0','0','0','0','0','0','0','0','0','Son of Hakkar - Cast Knockdown'),
 ('1135702','11357','6','0','100','2','0','0','0','0','0','0','11','24319','0','7','0','0','0','0','0','0','0','0','Son of Hakkar - Cast Summon Poison Cloud on Death'),
--- Soulflayer 11359
+-- Soulflayer 11359 - npc_soulflayer
 -- Zulian Cub 11360
 ('1136001','11360','2','0','100','2','15','0','0','0','0','0','25','0','0','0','1','-145','0','0','0','0','0','0','Zulian Cub - Flee at 15% HP'),
 -- Zulian Panther 11365
