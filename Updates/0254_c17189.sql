@@ -1,0 +1,2 @@
+-- Delete multiple duplicate Crazed Wildkin c.17189 in Stillpine Hold, Azuremyst Isle
+DELETE FROM creature WHERE guid IN(60772,60773,60774,60775,60776,60779,60781,60782,60790,60793,60794,60799,60800,60807,60808,60811) AND id=17189;
