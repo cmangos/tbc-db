@@ -476,7 +476,10 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (5058, 0, 0, 1, 16, 0, 0, NULL), -- Wolfguard Worg
 (10000, 0, 0, 1, 16, 0, 0, NULL); -- Arugal
 
--- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(@CGUID+86, @CGUID+74, 3), -- Lupine Horror -> Bleak Worg
+(@CGUID+77, @CGUID+74, 3), -- Slavering Worg -> Bleak Worg
+(@CGUID+143, @CGUID+74, 3); -- Wolfguard Worg -> Bleak Worg
 
 -- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
