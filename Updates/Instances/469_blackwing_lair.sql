@@ -288,7 +288,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+94, @CGUID+97, 1155), -- Blackwing Technician -> Blackwing Technician
 (@CGUID+95, @CGUID+89, 9344), -- Blackwing Technician -> Vaelastrasz the Corrupt
 (@CGUID+96, @CGUID+95, 1155), -- Blackwing Technician -> Blackwing Technician
-(@CGUID+97, @CGUID+89, 9344); -- Blackwing Technician -> Vaelastrasz the Corrupt
+(@CGUID+97, @CGUID+89, 9344), -- Blackwing Technician -> Vaelastrasz the Corrupt
+(@CGUID+42, @CGUID+41, 143), -- Death Talon Wyrmguard -> Death Talon Wyrmguard
+(@CGUID+43, @CGUID+41, 143); -- Death Talon Wyrmguard -> Death Talon Wyrmguard
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (12557, 469, 12435, 1159, 0), -- Grethok the Controller -> Razorgore the Untamed
