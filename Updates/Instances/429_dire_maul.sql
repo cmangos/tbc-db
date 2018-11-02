@@ -561,7 +561,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+1004, 24, 494.681, 542.877, -25.3873, 0, 0, 0),
 (@CGUID+1004, 25, 445.971, 542.539, -21.5652, 0, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (11492,13280,14321,14323,14327,14354,14483,14482,14241);
+DELETE FROM creature_movement_template WHERE entry IN (11492,13280,14321,14323,14327,14351,14354,14483,14482,14241);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 (11492, 0, 1, 274.844, -427.251, -119.962, 0, 30000, 1149201),
 (11492, 0, 2, 262.298, -445.57, -119.962, 0, 0, 1149202),
