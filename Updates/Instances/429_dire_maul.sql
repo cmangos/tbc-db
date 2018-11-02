@@ -645,7 +645,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14325, 0, 24, 385.6665, 297.6332, 11.203720, 100, 0, 0),
 (14325, 0, 25, 384.4298, 255.9361, 11.439550, 100, 0, 1432501),
 (14325, 0, 26, 384.4298, 255.9361, 11.439550, 100, 0, 0),
---
+-- Lethtendris
 (14327, 0, 1, -5.45062, -441.126, 16.4179, 0, 0, 0),
 (14327, 0, 2, 1.83788, -445.35, 16.4175, 0, 0, 0),
 (14327, 0, 3, 5.33627, -449.741, 16.4166, 0, 0, 0),
@@ -654,7 +654,21 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14327, 0, 6, -8.00382, -459.668, 16.4119, 0, 0, 0),
 (14327, 0, 7, -13.439, -455.717, 16.4125, 0, 0, 0),
 (14327, 0, 8, -14.4182, -446.394, 16.4152, 0, 0, 0),
-
+-- Gordok Bushwacker
+(14351, 0, 1, 545.955, 535.318, 25.501, 100, 0, 1435101),
+(14351, 0, 2, 545.955, 535.318, 25.501, 100, 0, 0),
+(14351, 0, 3, 587.617, 535.073, 6.77017, 100, 0, 0),
+(14351, 0, 4, 587.232, 554.754, -0.958358, 100, 0, 0),
+(14351, 0, 5, 590.866, 575.577, -4.75516, 100, 0, 0),
+(14351, 0, 6, 595.837, 594.918, -4.75486, 100, 0, 0),
+(14351, 0, 7, 591.18, 605.708, -4.75514, 100, 0, 0),
+(14351, 0, 8, 583.553, 591.997, -4.75561, 100, 0, 0),
+(14351, 0, 9, 571.02, 593.598, -4.75477, 100, 0, 0),
+(14351, 0, 10, 562.831, 605.769, -4.75477, 100, 0, 0),
+(14351, 0, 11, 546.671, 607.452, -4.75477, 100, 0, 0),
+(14351, 0, 12, 548.69, 592.682, -4.75477, 100, 0, 0),
+(14351, 0, 13, 557.799, 578.167, -4.75477, 100, 0, 0),
+(14351, 0, 14, 569.694, 583.972, -4.75477, 100, 0, 1435102),
 -- Pusilin chase event
 (14354, 0, 1, 86.1935, -197.888, -4.05657, 0, 1000, 1435401),
 (14354, 0, 2, 34.1275, -199.426, -4.13396, 0, 0, 0),
@@ -2789,7 +2803,7 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (179674, 40, 15, 23117, 0, 0, 14501, 40, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Ritual Bell Aura on Ritual Mob'),
 (179674, 45, 15, 23117, 0, 0, 14501, 40, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Ritual Bell Aura on Ritual Mob');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (14241,1149201,1149202,1432501,1435308,1435401,1435402);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (14241,1149201,1149202,1432501,1435308,1435401,1435402,1435101,1435102);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (14241, 1, 1, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'ironbark redeemed - emote'),
 (14241, 6, 1, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'ironbark redeemed - emote'),
@@ -2814,12 +2828,19 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1435401, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'PAUSE ON'),
 (1435401, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
 (1435402, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'PAUSE ON'),
-(1435402, 0, 29, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'npc_flag added');
+(1435402, 0, 29, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'npc_flag added'),
+
+(1435101, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Bushwacker - set run ON'),
+(1435102, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Bushwacker - set run OFF'),
+(1435102, 0, 20, 1, 8, 0, 0, 0, 0x08, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Bushwacker - set random movement');
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscripts_on_event` WHERE `id` IN (8420, 8428);
+DELETE FROM `dbscripts_on_event` WHERE `id` IN (8175, 8420, 8428);
 INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(8175, 5, 10, 14351, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 545.955, 535.318, 25.501, 0.00616291, ''),
+(8175, 0, 25, 1, 0, 0, 14351, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Bushwacker - set run ON'),
+(8175, 0, 20, 2, 0, 0, 14351, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Bushwacker - set WP movement'),
 -- Warlock ritual event start
 (8420, 0, 34, 3147, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Terminate if encounter is not in FAIL or NOT_STARTED status (SD2 condition)'),
 (8420, 0, 31, 14501, 100, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Terminate event if Ritual Mob is already spawned'),
