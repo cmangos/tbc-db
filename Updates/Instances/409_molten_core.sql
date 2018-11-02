@@ -592,7 +592,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (11662, 409, 12098, 1031, 0), -- Flamewaker Priest -> Sulfuron Harbinger
 (11663, 409, 12018, 7, 0), -- Flamewaker Healer -> Majordomo Executus
 (11664, 409, 12018, 7, 0), -- Flamewaker Elite -> Majordomo Executus
-(11672, 409, 11988, 1063, 0), -- Core Rager -> Golemagg the Incinerator
+(11672, 409, 11988, 1031, 0), -- Core Rager -> Golemagg the Incinerator
 (11673, 409, 11982, 1024, 0), -- Ancient Core Hound -> Magmadar
 (12099, 409, 12057, 1543, 0), -- Firesworn -> Garr
 (12101, 409, 12057, 1024, 0), -- Lava Surger -> Garr
