@@ -30982,7 +30982,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10114','You can''t do this to me!  We had a deal!','0','0','0','15945','0'),
 ('-10115','Die, interloper! Your puny device cannot pierce the dark magics of Hellfire Citadel!','0','0','0','22273','0'),
 ('-10116','Death is the price you shall pay for this insolence!','0','0','0','16329','0'),
-('-10117','Mortal fools! The ghouls of Deatholme will feast on your remains!','0','0','0','16329','0'),
+('-10117','Mortal fools!  The ghouls of Deatholme will feast on your remains!','0','0','0','16329','0'),
 ('-10118','Your deaths shall be slow and painful!','0','0','0','16329','0'),
 ('-10119','Insolence!','0','1','0','16329','0'),
 ('-10120','Return to your original form, $N!','0','1','0','Coilskar General 22873 on Free Friend','0'),
