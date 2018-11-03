@@ -477,6 +477,9 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (10000, 0, 0, 1, 16, 0, 0, NULL); -- Arugal
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(@CGUID+86, @CGUID+74, 3), -- Lupine Horror -> Bleak Worg
+(@CGUID+77, @CGUID+74, 3), -- Slavering Worg -> Bleak Worg
+(@CGUID+143, @CGUID+74, 3), -- Wolfguard Worg -> Bleak Worg
 (@CGUID+97, @CGUID+141, 3), -- Blood Seeker -> Odo the Blindwatcher
 (@CGUID+96, @CGUID+141, 3); -- Vile Bat -> Odo the Blindwatcher
 
