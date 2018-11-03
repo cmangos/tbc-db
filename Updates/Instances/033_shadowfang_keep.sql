@@ -477,9 +477,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (10000, 0, 0, 1, 16, 0, 0, NULL); -- Arugal
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+86, @CGUID+74, 3), -- Lupine Horror -> Bleak Worg
-(@CGUID+77, @CGUID+74, 3), -- Slavering Worg -> Bleak Worg
-(@CGUID+143, @CGUID+74, 3), -- Wolfguard Worg -> Bleak Worg
 (@CGUID+97, @CGUID+141, 3), -- Blood Seeker -> Odo the Blindwatcher
 (@CGUID+96, @CGUID+141, 3); -- Vile Bat -> Odo the Blindwatcher
 
@@ -562,7 +559,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+74, 3861, 33, -127.63, 2153.28, 155.762, 2.16421, 7200, 7200, 0, 0, 0, 0), -- Bleak Worg
 (@CGUID+75, 3861, 33, -204.481, 2139.15, 86.5832, 1.42291, 7200, 7200, 0, 0, 0, 0), -- Bleak Worg
 (@CGUID+76, 3861, 33, -197.316, 2111.16, 81.1401, 5.9909, 7200, 7200, 0, 0, 0, 0), -- Bleak Worg
-(@CGUID+77, 3862, 33, -139.407, 2182.91, 155.762, 5.09636, 7200, 7200, 2, 0, 0, 1), -- Slavering Worg
+(@CGUID+77, 3862, 33, -139.407, 2182.91, 155.762, 5.09636, 7200, 7200, 0, 0, 0, 0), -- Slavering Worg
 (@CGUID+78, 3862, 33, -205.823, 2213.78, 79.7605, 4.8275, 7200, 7200, 5, 0, 0, 2), -- Slavering Worg
 (@CGUID+79, 3862, 33, -220.82, 2153.53, 81.2106, 4.72984, 7200, 7200, 0, 0, 0, 0), -- Slavering Worg
 (@CGUID+80, 3862, 33, -214.404, 2146.14, 80.9466, 2.11928, 7200, 7200, 0, 0, 0, 2), -- Slavering Worg
@@ -571,7 +568,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+83, 3862, 33, -198.594, 2153.93, 79.8471, 4.46288, 7200, 7200, 5, 0, 0, 1), -- Slavering Worg
 (@CGUID+84, 3862, 33, -231.866, 2165.91, 79.8476, 2.68061, 7200, 7200, 0, 0, 0, 0), -- Slavering Worg
 (@CGUID+85, 3862, 33, -204.012, 2184.13, 79.8488, 4.31299, 7200, 7200, 0, 0, 0, 0), -- Slavering Worg
-(@CGUID+86, 3863, 33, -118.703, 2173.42, 155.762, 3.35103, 7200, 7200, 1, 0, 0, 1), -- Lupine Horror
+(@CGUID+86, 3863, 33, -118.703, 2173.42, 155.762, 3.35103, 7200, 7200, 0, 0, 0, 0), -- Lupine Horror
 (@CGUID+87, 3863, 33, -111.421, 2166.52, 101.603, 0.244346, 7200, 7200, 3, 0, 0, 1), -- Lupine Horror
 (@CGUID+88, 3863, 33, -120.756, 2183.02, 113.215, 4.13643, 7200, 7200, 2, 0, 0, 1), -- Lupine Horror
 (@CGUID+89, 3863, 33, -129.732, 2176.27, 94.1285, 2.54818, 7200, 7200, 2, 0, 0, 1), -- Lupine Horror
@@ -619,7 +616,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+131, 3877, 33, -251.156, 2175.53, 94.02, 1.61463, 7200, 7200, 2, 0, 0, 1), -- Wailing Guardsman
 (@CGUID+132, 3877, 33, -252.301, 2168.82, 93.9366, 1.09352, 7200, 7200, 2, 0, 0, 2), -- Wailing Guardsman
 (@CGUID+133, 3877, 33, -232.178, 2212.89, 97.3452, 4.49351, 7200, 7200, 2, 0, 0, 2), -- Wailing Guardsman
-(@CGUID+134, 3886, 33, -202.596, 2257.96, 76.2846, 3.97935, 43200, 43200, 0, 0, 0, 0), -- Razorclaw the Butcher
+(@CGUID+134, 3886, 33, -202.596, 2257.96, 76.2846, 3.97935, 43200, 43200, 5, 0, 0, 1), -- Razorclaw the Butcher
 (@CGUID+135, 3887, 33, -275.342, 2297.35, 76.2365, 5.89921, 43200, 43200, 0, 0, 0, 0), -- Baron Silverlaine
 (@CGUID+136, 3914, 33, -252.091, 2123.11, 81.1795, 0.919918, 43200, 43200, 0, 0, 0, 0), -- Rethilgore
 (@CGUID+137, 3927, 33, -120.725, 2162.03, 155.762, 2.67035, 43200, 43200, 0, 0, 0, 0), -- Wolf Master Nandos
