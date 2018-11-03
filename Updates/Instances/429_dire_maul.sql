@@ -2743,7 +2743,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+363, 179681, 429, -82.6964, 759.662, -28.6398, 0.890117, 0, 0, 0, 0, -900, -900, 0, 0), -- Dreadsteed Portal
 (@OGUID+364, 181288, 429, 536.586, 602.55, -4.75474, 5.74615, 0, 0, 0, 0, 180, 180, 100, 1), -- Midsummer Bonfire
 (@OGUID+365, 181346, 429, 536.586, 602.55, -4.75474, 5.74615, 0, 0, 0, 0, 180, 180, 100, 1), -- Flame of Dire Maul
-(@OGUID+366, 181376, 429, 536.586, 602.55, -4.75474, 5.74615, 0, 0, 0, 0, 180, 180, 100, 1), -- Midsummer Bonfire Campfire Damage Trap
+-- 366
 (@OGUID+367, 179701, 429, -38.94, 812.86, -29.53, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Circle Loc (spell focus)
 (@OGUID+368, 179675, 429, -38.94, 812.85, -29.53, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Warlock Mount Quest Portal Spell Focus
 (@OGUID+369, 181047, 429, 263.38, -452.69, -119.96, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Isalien Brazier Spell Focus

@@ -2825,7 +2825,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 31442, 532, 1, -11080.4, -1926.4, 74.5346, -2.97918, 0, 0, 0, 0, 43200, 43200, 100, 1), -- Basic Campfire
+-- 1
 (@OGUID+2, 175735, 532, 1, -11273, -1854.3, 137.112, -0.366518, 0, 0, 0, 0, 180, 180, 255, 1), -- The Guardians of Tirisfal
 (@OGUID+3, 175740, 532, 1, -11203.6, -1827.34, 137.35, 1.79769, 0, 0, 0, 0, 180, 180, 255, 1), -- The Last Guardian
 (@OGUID+4, 180991, 532, 1, -11111.3, -1911.47, 74.3922, 2.24275, 0, 0, 0, 0, 43200, 43200, 100, 1), -- Chair

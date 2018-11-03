@@ -964,9 +964,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 2061, 209, 1810.09, 673.184, 14.2178, 1.49916, -0.00027, 0.037908, 0.680317, 0.731937, 7200, 7200, 100, 1), -- Campfire
-(@OGUID+2, 2061, 209, 1909.48, 1016.13, 11.5157, 2.79253, 0, 0, 0.984808, 0.173648, 7200, 7200, 100, 1), -- Campfire
-(@OGUID+3, 2066, 209, 1646.76, 801.711, 8.88617, 3.14159, 0, 0, 1, 0, 7200, 7200, 100, 1), -- Bonfire Damage
+-- 1-3
 (@OGUID+4, 92426, 209, 1810.09, 673.184, 14.2178, 1.49916, -0.00027, 0.037908, 0.680317, 0.731937, 7200, 7200, 100, 1), -- Pickled Sludge
 (@OGUID+5, 128308, 209, 1876.14, 976.482, 9.05195, 1.01229, 0, 0, 0.48481, 0.87462, 7200, 7200, 100, 1), -- Shallow Grave
 (@OGUID+6, 128308, 209, 1897.08, 980.836, 8.95884, -2.98451, 0, 0, 0.996917, -0.078459, 7200, 7200, 100, 1), -- Shallow Grave
