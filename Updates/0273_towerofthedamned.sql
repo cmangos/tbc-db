@@ -15,13 +15,13 @@ DELETE FROM `creature` WHERE `guid` IN (82870, 82915);
 
 -- Add 3 Deatholme Necromancer and 3 Eyes of Dar'Khan
 DELETE FROM `creature` WHERE `guid` BETWEEN 85740 AND 85745;
-INSERT INTO `creature` (`guid`, `id`, `map`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `MovementType`) VALUES
-(85740, 16317, 530, 1, 6461.42, -6345.30, 41.233, 2.8408, 300, 300, 0),
-(85741, 16317, 530, 1, 6476.68, -6362.99, 27.201, 3.8813, 300, 300, 0),
-(85742, 16317, 530, 1, 6470.83, -6380.51, 27.202, 1.8361, 300, 300, 0),
-(85743, 16320, 530, 0, 6461.81, -6349.33, 55.178, 1.2652, 300, 300, 0),
-(85744, 16320, 530, 0, 6437.28, -6360.66, 41.276, 1.2629, 300, 300, 2),
-(85745, 16320, 530, 0, 6440.71, -6404.61, 48.678, 1.2039, 300, 300, 2);
+INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
+(85740, 16317, 530, 6461.42, -6345.30, 41.233, 2.8408, 300, 300, 0, 0),
+(85741, 16317, 530, 6476.68, -6362.99, 27.201, 3.8813, 300, 300, 0, 0),
+(85742, 16317, 530, 6470.83, -6380.51, 27.202, 1.8361, 300, 300, 0, 0),
+(85743, 16320, 530, 6461.81, -6349.33, 55.178, 1.2652, 300, 300, 0, 0),
+(85744, 16320, 530, 6437.28, -6360.66, 41.276, 1.2629, 300, 300, 0, 2),
+(85745, 16320, 530, 6440.71, -6404.61, 48.678, 1.2039, 300, 300, 0, 2);
 
 DELETE FROM `creature_movement` WHERE `id` IN (82937, 82897, 85744, 85745);
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`) VALUES
