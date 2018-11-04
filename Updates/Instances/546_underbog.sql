@@ -791,7 +791,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+3, 181270, 546, 3, -90.7205, -420.499, 36.0739, 0.488691, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Felweed
 (@OGUID+4, 181275, 546, 3, 376.429, -453.141, 33.1995, -2.25147, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ragveil
 (@OGUID+5, 181275, 546, 3, 278.9159, -236.0371, 29.17045, 2.705255, 0, 0, 0.9762955, 0.2164421, 86400, 86400, 100, 1), -- Ragveil
--- (@OGUID+6
+(@OGUID+6, 184935, 546, 3, 270.4417, -177.5935, 29.54572, 2.809975, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
 (@OGUID+7, 181278, 546, 3, 77.4358, -75.2255, -2.75669, 2.89724, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+8, 181278, 546, 3, 356.161, -519.471, 31.7733, -2.72271, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+9, 181278, 546, 3, 24.3616, -368.393, 27.2573, 1.37881, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
@@ -811,7 +811,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+24, 184200, 546, 3, 5.22929, -12.1156, -2.63621, 2.09439, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
 (@OGUID+25, 184935, 546, 3, 74.7062, -252.385, -4.50239, 2.04204, 0, 0, 0.85264, 0.522499, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
 (@OGUID+26, 184937, 546, 3, 258.718, -214.395, 27.9184, 5.81769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
--- (@OGUID+27
+(@OGUID+27, 184934, 546, 3, 237.7724, -380.0579, 48.28535, 3.019413, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
 (@OGUID+28, 181270, 546, 3, 203.8416, 27.02369, 27.56251, 1.954769, 0, 0, 0.8290377, 0.5591928, 86400, 86400, 100, 1), -- Felweed
 (@OGUID+29, 181270, 546, 3, 134.608, -84.8074, 26.6971, 6.1444, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Felweed
 (@OGUID+30, 181270, 546, 3, 281.435, -117.056, 29.773, 4.1416, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Felweed
@@ -989,7 +989,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+3, @PGUID+29, 0, 'The Underbog - Felweed (181270)'),
 (@OGUID+4, @PGUID+31, 0, 'The Underbog - Ragveil (181275) - Pool 1'),
 (@OGUID+5, @PGUID+32, 0, 'The Underbog - Ragveil (181275) - Pool 2'),
--- (@OGUID+6
 (@OGUID+7, @PGUID+28, 0, 'The Underbog - Ancient Lichen (181278)'),
 (@OGUID+8, @PGUID+28, 0, 'The Underbog - Ancient Lichen (181278)'),
 (@OGUID+9, @PGUID+28, 0, 'The Underbog - Ancient Lichen (181278)'),
@@ -1005,8 +1004,10 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+20, @PGUID+39, 0, 'The Underbog - Sanguine Hibiscus (183385) - Pool 2'), -- @PGUID+41
 -- (@OGUID+21, @PGUID+40, 0, 'The Underbog - Sanguine Hibiscus (183386) - Pool 1'),
 -- (@OGUID+22, @PGUID+41, 0, 'The Underbog - Sanguine Hibiscus (183386) - Pool 2'),
+(@OGUID+6, @PGUID+24, 0, 'The Underbog - Solid Fel Iron Chest (184935)'),
 (@OGUID+25, @PGUID+24, 0, 'The Underbog - Solid Fel Iron Chest (184935)'),
 (@OGUID+26, @PGUID+24, 0, 'The Underbog - Solid Adamantite Chest (184937)'),
+(@OGUID+27, @PGUID+24, 0, 'The Underbog - Bound Fel Iron Chest (184934)'),
 -- (@OGUID+27
 (@OGUID+28, @PGUID+29, 0, 'The Underbog - Master Pool - Felweed (181270)'),
 (@OGUID+29, @PGUID+29, 0, 'The Underbog - Master Pool - Felweed (181270)'),
