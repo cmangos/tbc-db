@@ -16509,9 +16509,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cavern Crawler 22044 - NSR
 -- Daggermaw Blackhide
 ('2205201','22052','0','0','100','1','3500','7000','10000','11000','0','0','11','35321','1','32','0','0','0','0','0','0','0','0','Daggermaw Blackhide - Cast Gushing Wound'),
--- Toshley Flying Machine 22089
-('2208901','22089','4','0','100','0','0','0','0','0','0','0','57','2','75','0','0','0','0','0','0','0','0','0','Toshley Flying Machine - Enable Hunter Mode on Aggro'),
-('2208902','22089','0','0','100','1025','0','5000','12000','18000','0','0','11','38083','1','256','0','0','0','0','0','0','0','0','Toshley Flying Machine - Cast Rocket Launcher'),
+-- Toshley Flying Machine 22089 - s.23973 Root Self -> s.38062 Invisible Dummy Attack
+('2208901','22089','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Toshley Flying Machine - Prevent Combat Movement on Spawn'),
+('2208902','22089','0','0','100','1','3000','3000','12000','18000','0','0','11','38083','1','256','0','0','0','0','0','0','0','0','Toshley Flying Machine - Cast Rocket Launcher'),
 -- Air Force Guard Post (Toshley's Station - Flying Machine) 22090 - npc_air_force_bots
 -- Wyrmcult Provisioner
 ('2209901','22099','13','0','100','1','12000','15000','0','0','0','0','11','34802','1','0','0','0','0','0','0','0','0','0','Wyrmcult Provisioner - Cast Kick on Target Casting'),
@@ -16831,9 +16831,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Air Force Alarm Bot (Alliance) 2614 - npc_air_force_bots
 -- Air Force Alarm Bot (Horde) 2615 - npc_air_force_bots
 -- Nazgrel 3230 - npc_nazgrel
--- Bat Rider Guard
+-- Bat Rider Guard 15242
 ('1524201','15242','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Bat Rider Guard - Prevent Combat Movement on Spawn'),
-('1524202','15242','0','0','100','1','0','5','12000','18000','0','0','11','38066','1','0','0','0','0','0','0','0','0','0','Bat Rider Guard - Cast Unstable Concoction'),
+('1524202','15242','0','0','100','1','3000','3000','12000','18000','0','0','11','38066','1','256','0','0','0','0','0','0','0','0','Bat Rider Guard - Cast Unstable Concoction'),
 -- Far Seer Regulkut 16574
 ('1657401','16574','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Far Seer Regulkut - Enable Caster Mode on Aggro'),
 ('1657402','16574','9','0','100','1025','0','5','45000','60000','0','0','11','15786','0','0','0','0','0','0','0','0','0','0','Far Seer Regulkut - Cast Earthbind Totem'),
@@ -18775,6 +18775,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2192504','21925','9','0','100','1025','0','30','3600','4800','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Avatar of Sathal - Cast Shadow Bolt'),
 -- Air Force Alarm Bot (Area 52) 21974 - npc_air_force_bots
 -- Area 52 Death Machine 21976
+('2197601','21976','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Area 52 Death Machine - Prevent Combat Movement on Spawn'),
+('2197602','21976','0','0','100','1','3000','3000','12000','18000','0','0','11','38083','1','256','0','0','0','0','0','0','0','0','Area 52 Death Machine - Cast Rocket Launcher'),
 -- Air Force Guard Post (Goblin - Area 52 - Zeppelin) 21997 - npc_air_force_bots
 -- Air Force Trip Wire - Rooftop (Goblin - Area 52) 22063 - npc_air_force_bots
 -- Stormspire Drake 22064
