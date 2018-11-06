@@ -32,7 +32,7 @@ REPLACE INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_fl
 (17937, 0, 0, 1, 16, 234, 0, NULL), -- Horde Peon
 (17945, 9991, 0, 1, 16, 0, 0, NULL), -- Night Elf Huntress
 (17948, 6080, 0, 1, 16, 0, 0, NULL), -- Tyrande Whisperwind
-(18036, 0, 0, 0, 0, 0, 0, '31761'); -- Horde Healing Ward
+(18036, 0, 0, 0, 0, 0, 0, NULL); -- Horde Healing Ward
 
 -- ------------------------------------------------------------------------------------------
 -- "Room" specific content added below:
