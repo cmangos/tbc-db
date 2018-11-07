@@ -26172,8 +26172,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stonevault Brawler (3.3.5a Official Data)
 ('485501','4855','1','0','100','2','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Stonevault Brawler - Cast Thrash OOC'),
 ('485502','4855','2','0','100','2','50','0','0','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Stonevault Brawler - Cast Enrage at 50% HP'),
--- Stone Keeper (4.0.1 Official Data)
-('485701','4857','1','0','100','2','1000','1000','0','0','0','0','11','10255','0','32','0','0','0','0','0','0','0','0','Stone Keeper - Cast Stoned OOC'),
+-- Stone Keeper 4857 (4.0.1 Official Data)
+('485701','4857','1','0','100','2','1000','1000','0','0','0','0','11','10255','0','34','11','18950','0','34','0','0','0','0','Stone Keeper - Cast Stoned and Invisibility and Stealth Detection OOC'),
 ('485702','4857','0','0','100','3','4300','10900','13300','22900','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Stone Keeper - Cast Trample'),
 ('485703','4857','6','0','100','2','0','0','0','0','0','0','11','9874','0','7','0','0','0','0','0','0','0','0','Stone Keeper - Cast Self Destruct on Death'),
 -- Stone Steward (3.3.5a Official Data)
