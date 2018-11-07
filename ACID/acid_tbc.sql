@@ -25870,12 +25870,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tempest Keep: The Mechanar - (4.3.4 Official Data - Normal/Heroic)
 -- ==================================================================
 -- Mercutio (12581) - NSR
--- Tempest-Forge Patroller (4.3.4 Official Data - Normal/Heroic)
+-- Tempest-Forge Patroller 19166 (4.3.4 Official Data - Normal/Heroic)
 ('1916601','19166','1','0','75','7','30000','120000','120000','240000','0','0','1','-10778','-10780','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller - Random Say OOC'),
 ('1916602','19166','0','0','100','3','6100','10400','6800','16900','0','0','11','35012','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller (Normal) - Cast Charged Arcane Missle'),
 ('1916603','19166','0','0','100','5','6100','10400','6800','16900','0','0','11','38941','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller (Heroic) - Cast Charged Arcane Missle'),
 ('1916604','19166','0','0','100','7','9700','16400','12500','20500','0','0','11','35011','1','0','0','0','0','0','0','0','0','0','Tempest-Forge Patroller - Cast Knockdown'),
-('1916605','19166','2','0','100','6','50','0','0','0','0','0','1','-551','0','0','39','25','0','0','0','0','0','0','Tempest-Forge Patroller - Emote and Call for Help at 50% HP'),
+('1916605','19166','2','0','100','6','50','0','0','0','0','0','1','-551','0','0','39','30','0','0','0','0','0','0','Tempest-Forge Patroller - Emote and Call for Help at 50% HP'),
 -- Bloodwarder Slayer (4.3.4 Official Data - Normal/Heroic)
 ('1916701','19167','11','0','100','6','0','0','0','0','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Bloodwarder Slayer - Random Phase on Spawn'),
 ('1916702','19167','0','13','100','7','7700','7700','10900','21700','0','0','11','15708','1','0','0','0','0','0','0','0','0','0','Bloodwarder Slayer - Cast Cast Mortal Strike (Phase 1)'),
