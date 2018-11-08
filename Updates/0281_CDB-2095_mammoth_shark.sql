@@ -1,7 +1,7 @@
 -- Add missing spawns of NPC 12125 (Mammoth Shark)
 -- Source: Project Silvermoon Database
 DELETE FROM creature WHERE guid BETWEEN 125167 AND 125175;
-INSERT INTO creature VALUES
+INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (125167, 12125, 1, 0, 0, 2247.58, -7314.71, -32.7716, 5.07837, 900, 900, 10, 0, 10796, 0, 0, 1),
 (125168, 12125, 1, 0, 0, 2141.54, -7237.98, -32.0054, 1.83467, 900, 900, 10, 0, 10796, 0, 0, 1),
 (125169, 12125, 1, 0, 0, 3575.07, -6375.8, -33.5823, 4.58606, 900, 900, 10, 0, 10796, 0, 0, 1),
