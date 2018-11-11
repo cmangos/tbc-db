@@ -290,10 +290,12 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (24047, 0, 0, 1, 16, 0, 0, NULL), -- Amani Crocolisk
 (24059, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Beast Tamer
 (24064, 0, 0, 1, 16, 0, 0, NULL), -- Amani Lynx Cub
+(24065, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
 (24175, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Lookout
 (24179, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Wind Walker
 (24180, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Protector
 (24217, 0, 0, 1, 16, 0, 0, NULL), -- Amani Bear Mount
+(24242, 0, 0, 1, 16, 0, 0, '43580'), -- Slither
 (24312, 0, 0, 1, 16, 0, 0, NULL), -- Dragonhawk Egg
 (24325, 0, 0, 1, 16, 0, 0, NULL), -- Eagle Troll Spawn Target
 (24358, 0, 0, 1, 16, 0, 0, NULL), -- Harrison Jones
