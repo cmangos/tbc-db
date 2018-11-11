@@ -1058,7 +1058,7 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`entry`, `max_limit`, `description`) VALUES
+-- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Gnomeregan - Dark Iron Ambassador (6228)'),

@@ -631,7 +631,7 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`entry`, `max_limit`, `description`) VALUES
+-- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES

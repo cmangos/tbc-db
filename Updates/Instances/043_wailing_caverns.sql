@@ -901,7 +901,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`entry`, `max_limit`, `description`) VALUES
+-- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Wailing Caverns - Deviate Faerie Dragon / Druid of the Fang'),
