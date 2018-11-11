@@ -517,7 +517,19 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+272, 42, 1682.1, 897.174, 9.00179, 100, 0, 0),
 (@CGUID+272, 43, 1686.92, 894.976, 9.00179, 100, 0, 0),
 (@CGUID+272, 44, 1691.19, 891.914, 9.00179, 100, 0, 0),
-(@CGUID+272, 45, 1698.88, 886.521, 9.00179, 100, 0, 0);
+(@CGUID+272, 45, 1698.88, 886.521, 9.00179, 100, 0, 0),
+(@CGUID+270, 1, 1534.288, 966.3132, 9.251768, 100, 0, 0),
+(@CGUID+270, 2, 1551.104, 978.8848, 9.751776, 100, 0, 0),
+(@CGUID+270, 3, 1558.765, 992.5928, 9.376776, 100, 0, 0),
+(@CGUID+270, 4, 1548.029, 999.1307, 9.001776, 100, 0, 0),
+(@CGUID+270, 5, 1551.857, 994.3583, 9.001776, 100, 0, 0),
+(@CGUID+270, 6, 1559.434, 997.0353, 9.001776, 100, 0, 0),
+(@CGUID+270, 7, 1561.864, 1008.586, 9.001776, 100, 0, 0),
+(@CGUID+270, 8, 1554.342, 1013.426, 9.001776, 100, 0, 0),
+(@CGUID+270, 9, 1546.021, 1007.769, 9.001776, 100, 0, 0),
+(@CGUID+270, 10, 1549.344, 1021.266, 9.001776, 100, 0, 0),
+(@CGUID+270, 11, 1538.99, 1027.237, 9.626776, 100, 0, 0),
+(@CGUID+270, 12, 1519.63, 1010.74, 10.48, 100, 0, 0); -- last point guessed to complete circle
 
 DELETE FROM creature_movement_template WHERE entry IN (7273,7604,7605,7606,7607,7608,7795,10082);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
@@ -954,10 +966,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+267, 8130, 209, 1817.61, 678.311, 14.2237, 3.9619, 18000, 18000, 0, 0, 0, 0), -- Sul'lithuz Hatchling
 (@CGUID+268, 8130, 209, 1819.85, 674.938, 14.5555, 3.83972, 18000, 18000, 0, 0, 0, 0), -- Sul'lithuz Hatchling
 (@CGUID+269, 8130, 209, 1812.14, 667.302, 15.8964, 1.62316, 18000, 18000, 0, 0, 0, 0), -- Sul'lithuz Hatchling
-(@CGUID+270, 10080, 209, 1546.25, 1017.14, 8.87683, 0.0109968, 43200, 86400, 0, 0, 0, 0), -- Sandarr Dunereaver
+(@CGUID+270, 10080, 209, 1518.592, 984.9248, 9.126776, 5.252151, 43200, 86400, 0, 0, 0, 2), -- Sandarr Dunereaver
 (@CGUID+271, 10081, 209, 1627.47, 1186.85, 8.87693, 0.647954, 43200, 86400, 15, 0, 0, 1), -- Dustwraith
 (@CGUID+272, 10082, 209, 1707.91, 881.421, 11.9567, 1.64026, 43200, 86400, 0, 0, 0, 2), -- Zerillis
-(@CGUID+273, 15578, 209, 1689.15, 1147.89, 8.87702, 2.41196, 25, 25, 0, 0, 0, 0); -- Elder Wildmane
+(@CGUID+273, 15578, 209, 1689.15, 1147.89, 8.87702, 2.41196, 25, 25, 0, 0, 0, 0), -- Elder Wildmane
+(@CGUID+274, 10080, 209, 1661.51, 900.463, 8.91101, 3.54889, 43200, 86400, 0, 0, 0, 0); -- Sandarr Dunereaver
 
 -- ===========
 -- GAMEOBJECTS
@@ -1033,20 +1046,26 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`entry`, `max_limit`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+4, @PGUID+1, 0, 'Zul''Farrak - Sandarr Dunereaver / Placeholder #1'),
+(@PGUID+5, @PGUID+1, 0, 'Zul''Farrak - Sandarr Dunereaver / Placeholder #2');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Zul''Farrak - Sandarr Dunereaver (10080)'),
 (@PGUID+2, 1, 'Zul''Farrak - Dustwraith (10081)'),
-(@PGUID+3, 1, 'Zul''Farrak - Zerillis (10082)');
+(@PGUID+3, 1, 'Zul''Farrak - Zerillis (10082)'),
+(@PGUID+4, 1, 'Zul''Farrak - Sandarr Dunereaver / Placeholder #1'),
+(@PGUID+5, 1, 'Zul''Farrak - Sandarr Dunereaver / Placeholder #2');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+233, @PGUID+1, 0, 'Zul''Farrak - Sandarr Dunereaver placeholder'),
-(@CGUID+270, @PGUID+1, 10, 'Zul''Farrak - Sandarr Dunereaver (10080)'),
 (@CGUID+234, @PGUID+2, 0, 'Zul''Farrak - Dustwraith placeholder'),
 (@CGUID+271, @PGUID+2, 10, 'Zul''Farrak - Dustwraith (10081)'),
 (@CGUID+124, @PGUID+3, 0, 'Zul''Farrak - Zerillis placeholder'),
-(@CGUID+272, @PGUID+3, 30, 'Zul''Farrak - Zerillis (10082)');
+(@CGUID+272, @PGUID+3, 30, 'Zul''Farrak - Zerillis (10082)'),
+(@CGUID+233, @PGUID+4, 0, 'Zul''Farrak - Sandarr Dunereaver Placeholder #1'),
+(@CGUID+270, @PGUID+4, 10, 'Zul''Farrak - Sandarr Dunereaver (10080) #1'),
+(@CGUID+21, @PGUID+5, 0, 'Zul''Farrak - Sandarr Dunereaver Placeholder #2'),
+(@CGUID+274, @PGUID+5, 10, 'Zul''Farrak - Sandarr Dunereaver (10080) #2');
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
