@@ -14640,8 +14640,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gesharahan 3398
 ('339801','3398','0','0','100','1','6000','9000','17000','23000','0','0','11','3583','4','32','0','0','0','0','0','0','0','0','Gesharahan - Cast Deadly Poison'),
 -- Savannah Huntress 3415 - NSR
--- Savannah Matriarch
-('341601','3416','0','0','60','1','0','0','14000','14000','0','0','11','6598','0','0','0','0','0','0','0','0','0','0','Savannah Matriarch - Cast Savannah Cub'),
+-- Savannah Matriarch 3416
+('341601','3416','11','0','100','0','0','0','0','0','0','0','11','6598','0','0','0','0','0','0','0','0','0','0','Savannah Matriarch - Cast Savannah Cub on Spawn'),
 -- Thunderhawk Cloudscraper
 ('342401','3424','0','0','80','1','12000','21000','15000','25000','0','0','11','8078','0','0','0','0','0','0','0','0','0','0','Thunderhawk Cloudscraper - Cast Thunderclap'),
 -- Savannah Prowler 3425 - NSR
