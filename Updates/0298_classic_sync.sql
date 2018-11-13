@@ -1,5 +1,5 @@
 -- Sync creatures with classic-db - 3k
-DELETE FROM `creature` WHERE `guid` IN (3262,3261,3258,3257,3255,3246,3243,3239,3137,2354,2353,1735,871,147);
+DELETE FROM `creature` WHERE `guid` IN (2354,2353,1735,871,147);
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `movementtype`) VALUES
 (147, 721, 0, -5184.31, -539.13, 397.053, 5.6955, 180, 180, 10, 1),
 (871, 706, 0, -6368.93, 806.56, 391.294, 5.08483, 180, 180, 0, 0),
