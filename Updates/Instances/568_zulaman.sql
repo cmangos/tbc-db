@@ -249,16 +249,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+263, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
 (@CGUID+264, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
 (@CGUID+265, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+266, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+314, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Handler
-(@CGUID+315, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
-(@CGUID+316, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
-(@CGUID+317, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
-(@CGUID+318, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
-(@CGUID+319, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
-(@CGUID+320, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
-(@CGUID+321, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
-(@CGUID+322, 0, 0, 1, 16, 0, 0, '18950'); -- Amani'shi Handler
+(@CGUID+266, 0, 0, 1, 16, 0, 0, '18950'); -- Amani'shi Savage
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (23542, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Axe Thrower
