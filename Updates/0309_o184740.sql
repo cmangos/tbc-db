@@ -29,3 +29,5 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (190525, 184740, 530, 1, -198.285, 7301.59, 22.8859, 5.80598, 120, 180, 100, 1),
 (190526, 184740, 530, 1, -114.853, 7168.38, 23.8405, 4.79597, 120, 180, 100, 1);
 
+UPDATE `pool_template` SET `max_limit` = 9 WHERE `entry` = 13997; -- Zangarmarsh - Wicker Chest (184740)
+
