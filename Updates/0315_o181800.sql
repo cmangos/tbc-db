@@ -1,15 +1,15 @@
 -- Heavy Fel Iron Chest 181800
 UPDATE `gameobject_template` SET `data1` = 22342, `mingold` = 1515, `maxgold` = 2997 WHERE `entry` = 181800;
-DELETE FROM `gameobject_loot_template` WHERE `entry` IN (22342, 181800); -- unique lootid, can use sniff version
+DELETE FROM `gameobject_loot_template` WHERE `entry` IN (22342, 181800);
 INSERT INTO `gameobject_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
 (22342, 18300, 43, 0, 1, 4, 0, 'Hyjal Nectar'),
-(22342, 27854, 14, 0, 1, 4, 0, 'Smoked Talbuk Venison'),
-(22342, 27855, 23, 0, 1, 2, 0, 'Mag\'har Grainbread'),
-(22342, 27856, 20, 0, 1, 3, 0, 'Skethyl Berries'),
-(22342, 27857, 19, 0, 1, 2, 0, 'Garadar Sharp'),
-(22342, 27859, 10, 0, 1, 4, 0, 'Zangar Caps'),
-(22342, 30458, 14, 0, 1, 3, 0, 'Stromgarde Muenster'),
-(22342, 25649, 12, 0, 3, 3, 0, 'Knothide Leather Scraps'),
+(22342, 27854, 16, 0, 1, 4, 0, 'Smoked Talbuk Venison'),
+(22342, 27855, 23, 0, 1, 4, 0, 'Mag\'har Grainbread'),
+(22342, 27856, 21.5, 0, 1, 4, 0, 'Skethyl Berries'),
+(22342, 27857, 19.5, 0, 1, 4, 0, 'Garadar Sharp'),
+(22342, 27859, 15, 0, 1, 4, 0, 'Zangar Caps'),
+(22342, 30458, 14, 0, 1, 4, 0, 'Stromgarde Muenster'),
+(22342, 25649, 12, 0, 2, 5, 0, 'Knothide Leather Scraps'),
 (22342, 21887, 5, 0, 1, 3, 0, 'Knothide Leather'),
 (22342, 23793, 2, 0, 1, 2, 0, 'Heavy Knothide Leather'),
 (22342, 14047, 1, 0, 2, 3, 0, 'Runecloth'),
@@ -17,22 +17,25 @@ INSERT INTO `gameobject_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 (22342, 21840, 7, 0, 1, 1, 0, 'Bolt of Netherweave'),
 (22342, 23424, 4, 0, 2, 3, 0, 'Fel Iron Ore'),
 (22342, 23425, 4, 0, 2, 3, 0, 'Adamantite Ore'),
-(22342, 23426, 4, 0, 2, 3, 0, 'Khorium Ore'),
+(22342, 23426, 2, 0, 2, 3, 0, 'Khorium Ore'),
 (22342, 23427, 4, 0, 2, 3, 0, 'Eternium Ore'),
 (22342, 23445, 4, 0, 1, 2, 0, 'Fel Iron Bar'),
 (22342, 23446, 4, 0, 1, 2, 0, 'Adamantite Bar'),
 (22342, 23447, 4, 0, 1, 2, 0, 'Eternium Bar'),
+(22342, 23449, 2, 0, 1, 1, 0, 'Khorium Bar'),
 (22342, 13468, 1, 0, 1, 1, 0, 'Black Lotus'),
-(22342, 22785, 3, 0, 2, 3, 0, 'Felweed'),
-(22342, 22786, 3, 0, 2, 3, 0, 'Dreaming Glory'),
-(22342, 22787, 3, 0, 2, 3, 0, 'Ragveil'),
+(22342, 22785, 4, 0, 2, 3, 0, 'Felweed'),
+(22342, 22786, 4, 0, 2, 3, 0, 'Dreaming Glory'),
+(22342, 22787, 4, 0, 2, 3, 0, 'Ragveil'),
 (22342, 22789, 5, 0, 2, 3, 0, 'Terocone'),
-(22342, 22791, 2, 0, 2, 3, 0, 'Netherbloom'),
+(22342, 22791, 4, 0, 2, 3, 0, 'Netherbloom'),
 (22342, 22792, 2, 0, 2, 3, 0, 'Nightmare Vine'),
-(22342, 22829, 30, 0, 2, 6, 0, 'Super Healing Potion'),
-(22342, 22832, 30, 0, 2, 6, 0, 'Super Mana Potion'),
-(22342, 61000, 3, 0, -61000, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 66-69) - (NPC Levels: 58-65) - TBC NPC ONLY'),
-(22342, 42005, 1, 0, -42005, 1, 0, 'Solid Adamantite Chest and Bound Adamantite Chests - Green and Blue Items');
+(22342, 22829, 25, 0, 2, 5, 0, 'Super Healing Potion'),
+(22342, 22832, 25, 0, 2, 5, 0, 'Super Mana Potion'),
+(22342, 61000, 4, 0, -61000, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 66-69) - (NPC Levels: 58-65) - TBC NPC ONLY'),
+(22342, 42005, 2, 0, -42005, 1, 0, 'Solid Adamantite Chest and Bound Adamantite Chests - Green and Blue Items'),
+(22342, 50604, 0.5, 0, -50604, 1, 0, 'Scrolls V - (NPC Levels 58-72) - TBC'),
+(22342, 4500, 0.1, 0, 1, 1, 0, 'Traveler''s Backpack');
 
 UPDATE `gameobject` SET `position_x` = -3810.469, `position_y` = 4721.011, `position_z` = -24.41835, `orientation` = 3.141593 WHERE `id` = 181800 AND `guid` = 56082;
 UPDATE `gameobject` SET `position_x` = -3669.574, `position_y` = 5720.745, `position_z` = -1.09585, `orientation` = 0.6806785 WHERE `id` = 181800 AND `guid` = 56093;
@@ -68,7 +71,7 @@ UPDATE `gameobject` SET `position_x` = 1258.494, `position_y` = 8482.281, `posit
 -- 27610
 
 SET @GUID := 190577;
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 190578 AND 190622;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 190578 AND 190609;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@GUID := @GUID + 1, 181800, 530, 1, -3499.341, 4017.229, 113.1059, -0.7679451, 7200, 7200, 100, 1),
 (@GUID := @GUID + 1, 181800, 530, 1, -3419.6, 4080.47, 62.6932, -2.094395, 7200, 7200, 100, 1),
@@ -104,7 +107,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@GUID := @GUID + 1, 181800, 530, 1, 3418.599, 5825.098, 2.314087, -1.832595, 7200, 7200, 100, 1);
 
 SET @GUID := 190577;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 190578 AND 190600;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 190578 AND 190609;
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@GUID := @GUID + 1, 39946, 0, 'Terokkar Forest - Heavy Fel Iron Chest (181800)'),
 (@GUID := @GUID + 1, 39946, 0, 'Terokkar Forest - Heavy Fel Iron Chest (181800)'),
