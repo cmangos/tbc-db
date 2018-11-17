@@ -21,7 +21,7 @@ DELETE FROM creature_movement WHERE id IN (69986,69991,69978,69999,69989,69979,6
 -- repurpose some existing spawns and add proper movement
 
 -- 0x203CB84240131C0000503C00006E2D62
-UPDATE creature SET position_x=4149.557, position_y=2042.097, position_z=149.9528 WHERE guid=69971;
+UPDATE creature SET position_x=4149.557, position_y=2042.097, position_z=149.9528, MovementType=2, spawndist=0 WHERE guid=69971;
 DELETE FROM creature_movement WHERE id=69971;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69971,1,4149.557,2042.097,149.9528,100,0,0),
@@ -32,7 +32,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (69971,6,4149.163,2042.004,249.0274,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E2D6B
-UPDATE creature SET position_x=4151.54, position_y=2042.445, position_z=255.5082 WHERE guid=69972;
+UPDATE creature SET position_x=4151.54, position_y=2042.445, position_z=255.5082, MovementType=2, spawndist=0 WHERE guid=69972;
 DELETE FROM creature_movement WHERE id=69972;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69972,1,4151.54,2042.445,255.5082,100,0,0),
@@ -43,7 +43,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (69972,6,4150.337,2041.994,173.4543,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E2D58
-UPDATE creature SET position_x=4024.672, position_y=2022.007, position_z=264.5558 WHERE guid=69998;
+UPDATE creature SET position_x=4024.672, position_y=2022.007, position_z=264.5558, MovementType=2, spawndist=0 WHERE guid=69998;
 DELETE FROM creature_movement WHERE id=69998;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69998,1,4024.672,2022.007,264.5558,100,0,0),
@@ -54,7 +54,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (69998,6,4114.268,2037.787,271.1436,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E2F83
-UPDATE creature SET position_x=3955.606, position_y=1899.995, position_z=262.7655 WHERE guid=69974;
+UPDATE creature SET position_x=3955.606, position_y=1899.995, position_z=262.7655, MovementType=2, spawndist=0 WHERE guid=69974;
 DELETE FROM creature_movement WHERE id=69974;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69974,1,3955.606,1899.995,262.7655,100,0,0),
@@ -69,7 +69,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (69974,10,3988.208,1743.379,272.2765,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E2F99
-UPDATE creature SET position_x=4002.096, position_y=1682.91, position_z=127.2685 WHERE guid=69975;
+UPDATE creature SET position_x=4002.096, position_y=1682.91, position_z=127.2685, MovementType=2, spawndist=0 WHERE guid=69975;
 DELETE FROM creature_movement WHERE id=69975;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69975,1,4002.096,1682.91,127.2685,100,0,0),
@@ -80,7 +80,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (69975,6,4000.325,1683.686,228.1769,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E2FC3
-UPDATE creature SET position_x=3990.387, position_y=1735.783, position_z=260.1908 WHERE guid=70004;
+UPDATE creature SET position_x=3990.387, position_y=1735.783, position_z=260.1908, MovementType=2, spawndist=0 WHERE guid=70004;
 DELETE FROM creature_movement WHERE id=70004;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (70004,1,3990.387,1735.783,260.1908,100,0,0),
@@ -95,7 +95,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (70004,10,3958.338,1895.213,274.3181,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E35A3
-UPDATE creature SET position_x=3696.044, position_y=1953.959, position_z=144.3007 WHERE guid=69993;
+UPDATE creature SET position_x=3696.044, position_y=1953.959, position_z=144.3007, MovementType=2, spawndist=0 WHERE guid=69993;
 DELETE FROM creature_movement WHERE id=69993;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69993,1,3696.044,1953.959,144.3007,100,0,0),
@@ -109,7 +109,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (69993,9,3552.659,1931.052,126.8722,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E35C1
-UPDATE creature SET position_x=3726.549, position_y=1962.258, position_z=259.9123 WHERE guid=69982;
+UPDATE creature SET position_x=3726.549, position_y=1962.258, position_z=259.9123, MovementType=2, spawndist=0 WHERE guid=69982;
 DELETE FROM creature_movement WHERE id=69982;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69982,1,3726.549,1962.258,259.9123,100,0,0),
@@ -120,7 +120,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (69982,6,3726.594,1962.199,171.9171,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E35DF
-UPDATE creature SET position_x=3827.917, position_y=1980.728, position_z=285.0202 WHERE guid=69994;
+UPDATE creature SET position_x=3827.917, position_y=1980.728, position_z=285.0202, MovementType=2, spawndist=0 WHERE guid=69994;
 DELETE FROM creature_movement WHERE id=69994;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69994,1,3827.917,1980.728,285.0202,100,0,0),
@@ -132,7 +132,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (69994,7,3759.935,1969.464,271.9074,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E362C
-UPDATE creature SET position_x=3917.337, position_y=2093.699, position_z=280.7384 WHERE guid=69987;
+UPDATE creature SET position_x=3917.337, position_y=2093.699, position_z=280.7384, MovementType=2, spawndist=0 WHERE guid=69987;
 DELETE FROM creature_movement WHERE id=69987;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69987,1,3917.337,2093.699,280.7384,100,0,0),
@@ -144,7 +144,7 @@ INSERT INTO creature_movement (id, point, position_x, position_y, position_z, or
 (69987,7,3897.602,2202.157,270.2776,100,0,1); -- despawn
 
 -- 0x203CB84240131C0000503C00006E3672
-UPDATE creature SET position_x=3886.262, position_y=2258.909, position_z=224.2961 WHERE guid=69983;
+UPDATE creature SET position_x=3886.262, position_y=2258.909, position_z=224.2961, MovementType=2, spawndist=0 WHERE guid=69983;
 DELETE FROM creature_movement WHERE id=69983;
 INSERT INTO creature_movement (id, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
 (69983,1,3886.262,2258.909,224.2961,100,0,0),
