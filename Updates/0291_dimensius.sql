@@ -4,7 +4,7 @@
 DELETE FROM dbscript_string WHERE entry IN (2000005780,2000005781,2000005782,2000005783,2000005784);
 UPDATE gossip_menu_option SET action_script_id=0 WHERE menu_id=8228;
 DELETE FROM dbscripts_on_gossip WHERE id IN (822801,822802);
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (2098536,2098541);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2098501,2098536,2098541);
 DELETE FROM creature_movement_template where entry=20985;
 DELETE FROM dbscripts_on_creature_death WHERE id=19554;
 
