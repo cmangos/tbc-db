@@ -1872,7 +1872,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (23158, 0, 0, 1, 0, 0, 0, NULL), -- Seer Kanai
 (23159, 0, 0, 1, 0, 0, 0, NULL), -- Okuno
 (23172, 0, 0, 1, 16, 0, 0, '18943'), -- Hand of Gorefiend
-(23191, 0, 0, 1, 16, 0, 0, '30831'), -- Akama
+(23191, 0, 0, 1, 16, 0, 0, '34189'), -- Akama
 (23196, 0, 0, 1, 16, 0, 0, '18943'), -- Bonechewer Behemoth
 (23232, 0, 0, 1, 16, 0, 0, '41290'), -- Mutant War Hound
 (23330, 21548, 0, 1, 16, 0, 1024, NULL), -- Dragonmaw Wind Reaver
