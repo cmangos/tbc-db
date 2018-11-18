@@ -463,10 +463,17 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+37, 184201, 545, 3, -23.7936, 4.42258, -2.84397, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
 (@OGUID+38, 184202, 545, 3, -23.7936, 4.42258, -2.84397, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
 (@OGUID+39, 184940, 545, 3, 39.4951, -244.041, -22.8052, -2.00713, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+40, 184940, 545, 3, -153.188, -275.258, -7.77509, 2.89725, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+41, 184940, 545, 3, 61.6757, -128.676, -22.7164, 2.70526, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+42, 184941, 545, 3, 4.36841, -259.654, -21.6164, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+43, 184941, 545, 3, -54.5296, -320.9142, -7.767337, -2.897245, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
+(@OGUID+40, 184941, 545, 3, 39.4951, -244.041, -22.8052, -2.00713, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+41, 184940, 545, 3, -153.1877, -275.2578, -7.775092, 2.897245, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+42, 184941, 545, 3, -153.1877, -275.2578, -7.775092, 2.897245, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+43, 184940, 545, 3, 61.67565, -128.6761, -22.71641, 2.705255, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+44, 184941, 545, 3, 61.67565, -128.6761, -22.71641, 2.705255, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+45, 184940, 545, 3, 4.36841, -259.654, -21.6164, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+46, 184941, 545, 3, 4.36841, -259.654, -21.6164, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+47, 184940, 545, 3, -54.5296, -320.9142, -7.767337, -2.897245, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+48, 184941, 545, 3, -54.5296, -320.9142, -7.767337, -2.897245, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+49, 184940, 545, 3, 4.538191, -156.8739, -22.02836, -0.4886912, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+50, 184941, 545, 3, 4.538191, -156.8739, -22.02836, -0.4886912, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -483,11 +490,16 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 (@PGUID+26, @PGUID+25, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 1'),
 (@PGUID+27, @PGUID+25, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 2'),
-(@PGUID+28, @PGUID+25, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 3');
+(@PGUID+28, @PGUID+25, 0, 'Adamantite Deposit / Rich Adamantite Deposit - Pool 3'),
+(@PGUID+41, @PGUID+40, 0, 'Steamvault - Bound / Solid Adamantite Chest #1'),
+(@PGUID+42, @PGUID+40, 0, 'Steamvault - Bound / Solid Adamantite Chest #2'),
+(@PGUID+43, @PGUID+40, 0, 'Steamvault - Bound / Solid Adamantite Chest #3'),
+(@PGUID+44, @PGUID+40, 0, 'Steamvault - Bound / Solid Adamantite Chest #4'),
+(@PGUID+45, @PGUID+40, 0, 'Steamvault - Bound / Solid Adamantite Chest #5'),
+(@PGUID+46, @PGUID+40, 0, 'Steamvault - Bound / Solid Adamantite Chest #6');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Steamvault - Swamp Gas (17378)'),
-(@PGUID+20, 2, 'Steamvault - Master Chest Pool'),
 (@PGUID+21, 1, 'Steamvault - Felweed (181270)'),
 (@PGUID+22, 1, 'Steamvault - Ragveil / Flame Cap - Pool 1'),
 (@PGUID+23, 1, 'Steamvault - Ragveil / Flame Cap - Pool 2'),
@@ -495,7 +507,14 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+25, 6, 'Steamvault - Master Mineral Pool'),
 (@PGUID+26, 1, 'Steamvault - Adamantite Deposit / Rich Adamantite Deposit - Pool 1'),
 (@PGUID+27, 1, 'Steamvault - Adamantite Deposit / Rich Adamantite Deposit - Pool 2'),
-(@PGUID+28, 1, 'Steamvault - Adamantite Deposit / Rich Adamantite Deposit - Pool 3');
+(@PGUID+28, 1, 'Steamvault - Adamantite Deposit / Rich Adamantite Deposit - Pool 3'),
+(@PGUID+40, 2, 'Steamvault - Master Chest Pool'),
+(@PGUID+41, 1, 'Steamvault - Bound / Solid Adamantite Chest #1'),
+(@PGUID+42, 1, 'Steamvault - Bound / Solid Adamantite Chest #2'),
+(@PGUID+43, 1, 'Steamvault - Bound / Solid Adamantite Chest #3'),
+(@PGUID+44, 1, 'Steamvault - Bound / Solid Adamantite Chest #4'),
+(@PGUID+45, 1, 'Steamvault - Bound / Solid Adamantite Chest #5'),
+(@PGUID+46, 1, 'Steamvault - Bound / Solid Adamantite Chest #6');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+6, @PGUID+1, 0, 'Steamvault - Crab (6827)'),
@@ -537,11 +556,18 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+31, @PGUID+26, 0, 'Steamvault - Adamantite Deposit (181556) - Pool 1'),
 (@OGUID+32, @PGUID+27, 0, 'Steamvault - Rich Adamantite Deposit (181569) - Pool 2'),
 (@OGUID+33, @PGUID+28, 0, 'Steamvault - Rich Adamantite Deposit (181569) - Pool 3'),
-(@OGUID+39, @PGUID+20, 0, 'Steamvault - Bound Adamantite Chest (184940)'),
-(@OGUID+40, @PGUID+20, 0, 'Steamvault - Bound Adamantite Chest (184940)'),
-(@OGUID+41, @PGUID+20, 0, 'Steamvault - Bound Adamantite Chest (184940)'),
-(@OGUID+42, @PGUID+20, 0, 'Steamvault - Solid Adamantite Chest (184941)'),
-(@OGUID+43, @PGUID+20, 0, 'Steamvault - Solid Adamantite Chest (184941)');
+(@OGUID+39, @PGUID+41, 0, 'Steamvault - Bound Adamantite Chest (184940)'),
+(@OGUID+40, @PGUID+41, 0, 'Steamvault - Solid Adamantite Chest (184941)'),
+(@OGUID+41, @PGUID+42, 0, 'Steamvault - Bound Adamantite Chest (184940)'),
+(@OGUID+42, @PGUID+42, 0, 'Steamvault - Solid Adamantite Chest (184941)'),
+(@OGUID+43, @PGUID+43, 0, 'Steamvault - Bound Adamantite Chest (184940)'),
+(@OGUID+44, @PGUID+43, 0, 'Steamvault - Solid Adamantite Chest (184941)'),
+(@OGUID+45, @PGUID+44, 0, 'Steamvault - Bound Adamantite Chest (184940)'),
+(@OGUID+46, @PGUID+44, 0, 'Steamvault - Solid Adamantite Chest (184941)'),
+(@OGUID+47, @PGUID+45, 0, 'Steamvault - Bound Adamantite Chest (184940)'),
+(@OGUID+48, @PGUID+45, 0, 'Steamvault - Solid Adamantite Chest (184941)'),
+(@OGUID+49, @PGUID+46, 0, 'Steamvault - Bound Adamantite Chest (184940)'),
+(@OGUID+50, @PGUID+46, 0, 'Steamvault - Solid Adamantite Chest (184941)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 

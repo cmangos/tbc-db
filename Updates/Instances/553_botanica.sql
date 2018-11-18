@@ -677,7 +677,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+13, 181277, 553, 3, -165.2932, 495.9111, -15.07489, 4.398232, 0, 0, -0.8090162, 0.5877863, 86400, 86400, 100, 1), -- Terocone
 (@OGUID+14, 181279, 553, 3, -0.459927, 256.7108, -4.356128, 3.822273, 0, 0, -0.9426413, 0.3338076, 86400, 86400, 100, 1), -- Netherbloom
 (@OGUID+15, 181279, 553, 3, 169.2339, 504.4491, 0.050639, 2.321287, 0, 0, 0.9170599, 0.3987495, 86400, 86400, 100, 1), -- Netherbloom
-(@OGUID+16, 181279, 553, 3, 115.8156, 450.6175, -3.823856, 0.2792516, 0, 0, 0.1391726, 0.9902682, 86400, 86400, 100, 1); -- Netherbloom
+(@OGUID+16, 181279, 553, 3, 115.8156, 450.6175, -3.823856, 0.2792516, 0, 0, 0.1391726, 0.9902682, 86400, 86400, 100, 1), -- Netherbloom
+(@OGUID+17, 184940, 553, 3, 154.0024, 377.8789, -5.386404, 1.902409, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+18, 184941, 553, 3, 154.0024, 377.8789, -5.386404, 1.902409, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -698,7 +700,8 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+21, 2, 'The Botanica - Master Felweed (181270) / Terocone (181277) Pool'), -- gameobject
 (@PGUID+22, 1, 'The Botanica - Master Dreaming Glory (181271) Pool'),
-(@PGUID+23, 1, 'The Botanica - Master Netherbloom (181279) Pool');
+(@PGUID+23, 1, 'The Botanica - Master Netherbloom (181279) Pool'),
+(@PGUID+24, 1, 'The Botanica - Bound / Solid Adamantite Chest');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
@@ -715,7 +718,9 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+13, @PGUID+21, 0, 'The Botanica - Terocone (181277)'),
 (@OGUID+14, @PGUID+23, 0, 'The Botanica - Netherbloom (181279)'),
 (@OGUID+15, @PGUID+23, 0, 'The Botanica - Netherbloom (181279)'),
-(@OGUID+16, @PGUID+23, 0, 'The Botanica - Netherbloom (181279)');
+(@OGUID+16, @PGUID+23, 0, 'The Botanica - Netherbloom (181279)'),
+(@OGUID+17, @PGUID+24, 0, 'The Botanica - Bound Adamantite Chest (184940)'),
+(@OGUID+18, @PGUID+24, 0, 'The Botanica - Solid Adamantite Chest (184941)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
