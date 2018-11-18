@@ -17,7 +17,7 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 (5743, 0, 0, 'Mourn the great loss.', 1, 1, -1, 0, 574301, 0, 0, NULL, @CONDITION),
 (5743, 1, 0, 'Mourn the great loss.', 1, 1, -1, 0, 574302, 0, 0, NULL, @CONDITION + 1);
 
-DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (5743, 574301, 574302);
+DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (5743, 5744, 574301, 574302);
 INSERT INTO `dbscripts_on_gossip` (id, delay, command, datalong, datalong2, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (574301, 0, 7, 7482, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (574301, 2, 3, 0, 0, 14368, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0.7, ''),
