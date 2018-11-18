@@ -31,7 +31,7 @@ DELETE FROM pool_gameobject WHERE guid IN (SELECT guid FROM tmp_gameobject);
 DELETE FROM pool_gameobject_template WHERE id IN (SELECT id FROM tmp_gameobject);
 
 DELETE FROM creature_movement WHERE id IN (SELECT guid FROM tmp_creature);
-DELETE FROM creature_movement_template WHERE entry IN (SELECT id FROM tmp_creature WHERE id NOT IN (12999,21075)); -- Exclude NPCs spawned in both instance and open world
+DELETE FROM creature_movement_template WHERE entry IN (SELECT id FROM tmp_creature WHERE id NOT IN (12999,21075,23033)); -- Exclude NPCs spawned in both instance and open world
 DELETE FROM creature_addon WHERE guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature_template_addon WHERE entry IN (SELECT id FROM tmp_creature WHERE id NOT IN(2267,9699,15475,17378,21075)); -- Exclude NPCs spawned in both instance and open world
 DELETE FROM game_event_creature WHERE guid IN (SELECT guid FROM tmp_creature);
