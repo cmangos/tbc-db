@@ -2876,7 +2876,7 @@ INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalon
 
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (570901,570902,570903,570904,570905,573801);
+DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (570901,570902,570903,570904,570905,573801,574301,574302);
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Pusilin chase event
 (570901, 0, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'npc_flag removed'),
@@ -2910,7 +2910,20 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (573801, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - set active'),
 (573801, 1, 29, 3, 0x02, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - npcFlags removed'),
 (573801, 1, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Start WP movement'),
-(573801, 1, 14, 8599, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - remove Enrage aura');
+(573801, 1, 14, 8599, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - remove Enrage aura'),
+
+(574301, 0, 7, 7482, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(574301, 2, 3, 0, 0, 0, 14368, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0.7, ''),
+(574301, 4, 0, 0, 0, 0, 14368, 20, 0, 2000000455, 0, 0, 0, 0, 0, 0, 0, ''),
+(574301, 7, 0, 0, 0, 0, 14368, 20, 0, 2000000456, 0, 0, 0, 0, 0, 0, 0, ''),
+(574301, 13, 0, 0, 0, 0, 14368, 20, 0, 2000000457, 0, 0, 0, 0, 0, 0, 0, ''),
+(574301, 20, 3, 0, 0, 0, 14368, 20, 0, 0, 0, 0, 0, 0, 0, 0, 3.07178, ''),
+(574302, 0, 7, 7481, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(574302, 2, 3, 0, 0, 0, 14368, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0.7, ''),
+(574302, 4, 0, 0, 0, 0, 14368, 20, 0, 2000000455, 0, 0, 0, 0, 0, 0, 0, ''),
+(574302, 7, 0, 0, 0, 0, 14368, 20, 0, 2000000456, 0, 0, 0, 0, 0, 0, 0, ''),
+(574302, 13, 0, 0, 0, 0, 14368, 20, 0, 2000000457, 0, 0, 0, 0, 0, 0, 0, ''),
+(574302, 20, 3, 0, 0, 0, 14368, 20, 0, 0, 0, 0, 0, 0, 0, 0, 3.07178, '');
 
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
@@ -2927,11 +2940,15 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 (5525, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500.42, 540.966, -25.3846, 2.72271, 'WP movement'),
 (5525, 15, 18, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'despawn');
 
-DELETE FROM dbscript_string WHERE entry IN (2000000268,2000000269,2000000543,2000007708,2000007709,2000007710,2000007711,2000007712);
+DELETE FROM dbscript_string WHERE entry IN (2000000268,2000000269,2000000455,2000000456,2000000457,2000000543,2000007708,2000007709,2000007710,2000007711,2000007712);
 DELETE FROM dbscript_string WHERE entry IN (2000005460,2000005461,2000005462,2000005562,2000005563);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 (2000000268, 'Hey, who Fengus callin\' a gnoll lover?!  Take da prisoners to da king; you smart to bring them with their weapons and show da king that they a threat.  I\'ll go see if Fengus talk smack when I give him da beatdown!  HAR!', 0, 6, 0, 0, 'Captain Kromcrush - Yell Fengus 1'),
 (2000000269, 'OK Fengus, where you at?!  You come call me a gnoll lover while I give you da hammer upside da head!', 0, 6, 0, 0, 'Captain Kromcrush - Yell Fengus 2'),
+
+(2000000455, 'I very much doubt that he will have anything to say, stranger...', 0, 0, 0, 1, 'Lorekeeper Lydros 14368 - Say 1 (q. 7481 & 7482)'),
+(2000000456, 'I personally didn\'t mind him. It was the Prince who took exception to a high elf in his domain. Alas, I am not one to question the Prince. In his defense, he did not incinerate Master Winthalus immediately.', 0, 0, 0, 1, 'Lorekeeper Lydros 14368 - Say 2 (q. 7481 & 7482)'),
+(2000000457, 'We most definitely do not need any more attention drawn to us, stranger. Return to those that sent you in search of the lost master and tell them that nothing could be found. When this is done - and I will know when it is so - return and I shall reveal the secrets of the deceased.', 0, 0, 0, 1, 'Lorekeeper Lydros 14368 - Say 3 (q. 7481 & 7482)'),
 
 (2000000543, '$N, I''ll make sure all my friends in the Cartel know that you''ve saved my life today. Here - I''m going to need to be able to travel light, so please help yourself to my cache of tailoring and leatherworking supplies! Thanks again - see ya!', 0, 0, 0, 4, 'Knot Thimblejack'),
 (2000007708, 'Ah, freedom! Although brief, so sweet it is...', 0, 1, 0, 0, 'J''eevee yell on spawn'),
