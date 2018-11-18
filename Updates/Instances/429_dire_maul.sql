@@ -2820,7 +2820,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1432501, 0, 2, 59, 32768, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Remove Unselectable UnitFlags'),
 (1432501, 0, 29, 3, 0x01, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - npcFlags added'),
 (1432501, 0, 22, 45, 0x01, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Change faction to Ogre'),
-(1432501, 0, 0, 0, 0, 0, 0, 0, 0, @TEXT + 1, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - 2st yell'),
+(1432501, 0, 0, 0, 0, 0, 0, 0, 0, 2000000269, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - 2st yell'),
 
 (1435308, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - pause WP Movement'),
 (1435308, 0, 9, @OGUID+331, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - spawn tribute chest'),
@@ -2905,7 +2905,7 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (570905, 4, 22, 90, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'set DemonFaction'),
 
 (573801, 0, 15, 8599, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - cast Enrage'),
-(573801, 0, 0, 0, 0, 0, 0, 0, 0, @TEXT, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - 1st yell'),
+(573801, 0, 0, 0, 0, 0, 0, 0, 0, 2000000268, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - 1st yell'),
 (573801, 0, 2, 59, 32768+33554432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Set UnitFlags to Unselectable'),
 (573801, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - set active'),
 (573801, 1, 29, 3, 0x02, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - npcFlags removed'),
