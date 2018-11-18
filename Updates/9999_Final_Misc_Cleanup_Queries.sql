@@ -11,7 +11,6 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (1, 36197, 1, 1, -36197, 1, 0, 'Hyjal Summit (Trash Loot) - Profession (-Pattern,-Plans)'),
 (1, 36198, 1, 1, -36198, 1, 0, 'Black Temple (Trash Loot) - Epic Items'),
 (1, 36199, 1, 1, -36199, 1, 0, 'Black Temple (Trash Loot) - Profession (-Pattern,-Plans)'),
-(1, 42006, 1, 0, -42006, 1, 0, 'Scrolls V & Super Healing/Mana Potion - TBC'),
 (1, 42009, 1, 0, -42009, 1, 0, 'Super Healing/Mana Potion (75%)(25%) - TBC'),
 (1, 49000, 1, 0, -49000, 1, 0, 'Darkmoon Cards (Blessings, Storms, Furies, Lunacy Ace) - Dungeon End Bosses (Levels: 70+)'),
 (1, 49001, 1, 0, -49001, 1, 0, 'Darkmoon Cards (Blessings, Storms, Furies, Lunacy 5-8) - Heroic Dungeon and Raids'),
