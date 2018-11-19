@@ -7756,7 +7756,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Attendant (11873) - NSR
 -- Artist Renfray 11936
 ('1193601','11936','1','0','100','1','30000','60000','60000','120000','0','0','1','-73','-981','-982','0','0','0','0','0','0','0','0','Artist Renfray - Random Say OOC'),
--- Lord Tirion Fordring - npc_tirion_fordring
+-- Lord Tirion Fordring 12126 - npc_tirion_fordring
 -- Crimson Elite 12128
 ('1212801','12128','1','0','100','0','1000','1000','0','0','0','0','11','8990','0','0','0','0','0','0','0','0','0','0','Crimson Elite - Cast Retribution Aura OOC'),
 ('1212802','12128','9','0','100','1','0','5','7000','10000','0','0','11','17143','1','0','0','0','0','0','0','0','0','0','Crimson Elite - Cast Holy Strike'),
@@ -8586,7 +8586,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('389701','3897','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Krolg - Flee at 15% HP'),
 -- Illiyana (3.3.0 Official Data)
 ('390101','3901','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Illiyana - Flee at 15% HP'),
--- Searing Totem II (3.3.0 Official Data) - TotemAI
+-- Searing Totem II 3902 (3.3.0 Official Data) - TotemAI
 -- Dagri (3915) - NSR
 -- Shael'dryn (3916) - NSR
 -- Befouled Water Elemental (3.3.0 Official Data)
