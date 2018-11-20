@@ -20267,8 +20267,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Guardian of the Falcon
 ('2299401','22994','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','18','2','0','0','Guardian of the Falcon - Set Unattackable on Spawn'),
 ('2299402','22994','11','0','100','0','0','0','0','0','0','0','5','27','0','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Emote Ready Unarmed on Spawn'),
-('2299403','22994','1','0','100','0','1000','1000','0','0','0','0','1','-10296','0','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Say 1 OOC'),
-('2299404','22994','1','0','100','0','7500','7500','0','0','0','0','1','-10297','0','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Say 2 OOC'),
+('2299403','22994','1','0','100','0','1000','1000','0','0','0','0','1','-11132','0','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Say 1 OOC'),
+('2299404','22994','1','0','100','0','7500','7500','0','0','0','0','1','-11133','0','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Say 2 OOC'),
 ('2299405','22994','1','0','100','0','12000','12000','0','0','0','0','21','1','0','0','20','1','0','0','19','2','0','0','Guardian of the Falcon - Set Attackable OOC'),
 ('2299406','22994','0','0','100','0','12000','12000','0','0','0','0','5','0','0','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Remove Emote'),
 ('2299407','22994','0','0','100','1','25000','25000','30000','30000','0','0','11','40367','1','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Cast Twisting Blast'),
@@ -20334,7 +20334,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2316503','23165','29','0','100','0','5500','5500','0','0','0','0','22','1','0','0','19','256','0','0','55','11','0','0','Karrog - Set Phase 1 and Remove IMMUNE_TO_PLAYER and Attack Spawner on Generic Timer'),
 ('2316504','23165','0','5','100','1','8000','16000','8000','40000','0','0','11','40488','0','0','0','0','0','0','0','0','0','0','Karrog - Cast Trample (Phase 1)'),
 ('2316505','23165','0','5','100','1','22000','22000','22000','22000','0','0','13','-99','1','0','11','40416','9','0','22','2','0','0','Karrog - Reset Threat and Cast Fixated Rage and Set Phase 2 (Phase 1)'),
-('2316506','23165','0','3','100','1','1000','1000','1000','1000','0','0','54','-10293','1','0','22','1','0','0','0','0','0','0','Karrog - Emote and Set Phase 1 (Phase 2)'),
+('2316506','23165','0','3','100','1','1000','1000','1000','1000','0','0','54','-10122','1','0','22','1','0','0','0','0','0','0','Karrog - Emote and Set Phase 1 (Phase 2)'),
 ('2316507','23165','6','0','100','0','0','0','0','0','0','0','12','23205','0','10000','12','23205','0','10000','12','23205','0','10000','Karrog - Spawn Karrog Shardling on Death'),
 -- Karrog Shardling 23205
 -- Akkarai Hatchling 23206
@@ -30984,7 +30984,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- tbc PLEASE RE-USE 10119
 ('-10120','Return to your original form, $N!','0','1','0','Coilskar General 22873 on Free Friend','0'),
 ('-10121','%s shells up defensively','0','2','0','Dragon Turtle 22885 on 40087','0'),
-('-10122','%s fixates on $n.','0','2','0','Dragon Turtle 22885 on 40084','0'),
+('-10122','%s fixates on $n.','0','2','0','Fixate Emote','0'),
 ('-10123','%s calls for an ally to assist her!','0','2','0','Dragonmaw Wyrmcaller 22960 on Force Assist 40888','0'),
 ('-10124','%s rushes away to attack $n!','0','2','0','Dragonmaw Wyrmcaller 22960 on Fixate 40892','0'),
 ('-10125','%s becomes increasingly enraged as he sees his allies fall in battle!','0','2','0','Bonechewer Taskmaster 23028 on Bonechewer Worker 22963 Death','0'),
@@ -31155,11 +31155,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10290','%s bares her fangs and hisses menacingly at those around her.','0','2','0','23163','0'),
 ('-10291','%s focuses on $N.','0','2','0','23163','0'),
 ('-10292','You capture Karrog!  Karrog smash you!','0','0','0','Karrog 23165 on Spawn','0'),
-('-10293','%s fixates on $N.','0','2','0','Karrog 23165 on Fixated Rage 40416','0'),
+-- TBC PLEASE RE-USE 10293
 ('-10294','Fool! The essence of the hawk will never be yours!','0','0','0','22992','0'),
 ('-10295','The time of the Raven is night, but yours will end here!','0','0','0','22992','0'),
-('-10296','You dare to disturb the loyal followers of the Raven?','0','0','0','22993/22994','0'),
-('-10297','You will die for your hubris, druid!','0','0','0','22993/22994','0'),
+('-10296','You dare to disturb the loyal followers of the Raven?','0','0','0','22993','0'),
+('-10297','You will die for your hubris, druid!','0','0','0','22993','0'),
 ('-10298','Someone come read this wanted poster to Grek. Grek can\'t read.','0','0','0','19606','0'),
 ('-10299','Grek get a drink.','0','0','0','19606','0'),
 ('-10300','Behold the power of the Light! Grace and glory to the Alliance!','0','1','0','18966','0'),
@@ -31931,6 +31931,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11129','The black dragonflight will conquer all!','0','1','0','Twilight Drakonaar 20910','0'),
 ('-11130','Pathetic, inferior mortals!','0','1','0','Blackwing Drakonaar 20911','0'),
 ('-11131','The dragonflight will... devour you.','0','1','0','Blackwing Drakonaar 20911','0'),
+('-11132','The falcon is vaniquished, doomed never to rise again! Your quest is futile!','0','0','0','22994','0'),
+('-11133','The raven will return to us as foretold in the prophecy and you are powerless to stop it!','0','0','0','22994','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
