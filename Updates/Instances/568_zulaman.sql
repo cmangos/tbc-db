@@ -296,7 +296,16 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (24549, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Tempest
 (25173, 0, 0, 1, 16, 0, 0, NULL); -- Zul'Aman Door Trigger
 
--- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(@CGUID+259, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+260, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+261, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+262, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+263, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+264, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+265, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+266, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+113, @CGUID+104, 3); -- Amani'shi Guardian -> Amani'shi Guardian
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (23598, 568, 23578, 4096, 0), -- Amani Dragonhawk Hatchling -> Jan'alai
