@@ -3,7 +3,6 @@ DBName: Coilfang Reservoir - The Underbog
 DBScriptName: -
 DB%Complete: 85
 DBComment:
-* Bog Giant & Underbog Lord Need to have their ACID Rechecked, its totally wrong. they should use 40318 and 32065 early on ~5sec and continue to use 40318 in 10-12sec interval
 * Murkblood might be pooled into different group compositions
 * Spore Strider should have Delayed Despawn on The Black Stalker Death
 EndDBScriptData */
