@@ -29084,12 +29084,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2453001','24530','2','0','100','3','30','0','90000','90000','0','0','11','34970','0','0','1','-46','0','0','0','0','0','0','Amani Elder Lynx - Cast Enrage at 30% HP'),
 ('2453002','24530','0','0','100','3','12000','12000','20000','25000','0','0','11','43357','1','0','0','0','0','0','0','0','0','0','Amani Elder Lynx - Cast Feral Swipe'),
 ('2453003','24530','0','0','100','3','1500','1500','9000','13000','0','0','11','43356','1','0','0','0','0','0','0','0','0','0','Amani Elder Lynx - Cast Pounce'),
--- Amani'shi Tempest [WIP] This creature is involved in the gauntlet type event that is currently not implemented. Once this creature is engaged and put below 99% hp the adds stop spawning.
--- This is mostly here as a development note.
-('2454901','24549','4','0','100','2','0','0','0','0','0','0','22','0','0','0','21','0','0','0','0','0','0','0','Amani''shi Tempest - Set Phase 1 and Stop Movement on Aggro'),
-('2454902','24549','0','5','100','3','0','0','25000','25000','0','0','11','43487','0','0','0','0','0','0','0','0','0','0','Amani''shi Tempest - Cast Summon Amani Eagle (Phase 1)'),
-('2454903','24549','0','5','100','3','25000','25000','40000','40000','0','0','11','43486','0','0','0','0','0','0','0','0','0','0','Amani''shi Tempest - Cast Summon Amani''shi Warriors (Phase 1)'),
-('2454904','24549','9','0','100','3','0','5','9000','11000','0','0','11','44033','0','0','22','0','0','0','21','1','0','0','Amani''shi Tempest - Cast Thunder Clap and Set Phase 0 and Start Movement'),
+-- Amani'shi Tempest 24549 - npc_amanishi_tempest
 -- Soaring Eagle 24858 - mob_soaring_eagle
 
 
