@@ -3127,13 +3127,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tregla (16855) - NSR
 -- Jilanne (16860) - NSR
 -- Silanna (16862) - NSR
--- Wretched Captive (3.0.3 Official Data)
-('1691601','16916','1','0','100','1','14000','14000','14000','14000','0','0','5','20','0','0','0','0','0','0','0','0','0','0','Wretched Captive - Begging Emote'),
-('1691602','16916','1','0','100','1','242000','242000','242000','242000','0','0','5','18','0','0','1','-10571','0','0','0','0','0','0','Wretched Captive - Begging Text - Cry'),
+-- Wretched Captive 16916 - NSR
 -- Novice Ranger (16923) - NSR
--- Sergent Kanren (3.0.3 Official Data)
-('1692401','16924','1','0','100','1','240000','240000','240000','240000','0','0','5','1','0','0','1','-10572','0','0','0','0','0','0','Sergent Kanren - Interrogating'),
-('1692402','16924','1','0','100','1','244000','244000','244000','244000','0','0','5','1','0','0','1','-10573','0','0','0','0','0','0','Sergent Kanren - Begging Response'),
+-- Sergent Kanren 16924 - NSR
 -- Duelist Larenis (17005) - NSR
 -- Eversong Partygoer
 ('1705601','17056','11','0','100','0','0','0','0','0','0','0','5','10','0','0','0','0','0','0','0','0','0','0','Eversong Partygoer - Dance State on Spawn'),
@@ -31428,9 +31424,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10568','%s glares at the guards.','0','2','0','16213','0'),
 ('-10569','%s sighs in apparent frustration.','0','2','0','16213','0'),
 ('-10570','%s peers inside the tower and then clenches his jaw.','0','2','0','16213','0'),
-('-10571','Please!  I must feed on something soon... A mana crystal.... a shard... anything!  The pain is unbearable!','0','0','0','16916','0'),
-('-10572','Tell us!  Where does your leader hide?','0','0','0','16924','0'),
-('-10573','You\'re not getting anything until you speak, scum!','0','0','0','16924','0'),
+-- TBC Please RE-USE 10571 - 10573
 ('-10574','I will show you not to cross us again!','0','0','0','18340','0'),
 ('-10575','I\'ll make you pay for that!','0','0','0','18340','0'),
 ('-10576','Warlord Kalithresh will hear of this insolence!','0','0','0','18340','0'),
