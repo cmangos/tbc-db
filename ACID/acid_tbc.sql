@@ -19641,7 +19641,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1928901','19289','11','0','50','0','0','0','0','0','0','0','10','12','65','68','0','0','0','0','0','0','0','0','Vagabond - Random State on Spawn'),
 -- Harbinger Haronem
 ('1947501','19475','1','0','100','1','6000','6000','6000','6000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Harbinger Haronem - Talk Emote OOC'),
-('1947502','19475','1','0','100','1','39000','39000','300000','300000','0','0','1','-10684','0','0','0','0','0','0','0','0','0','0','Harbinger Haronem - Say OOC (Part of Whirligig Wafflefry Conversation)'),
 -- Madame Ruby
 ('1966301','19663','1','2','100','1','40000','120000','40000','120000','0','0','47','1','0','0','22','1','0','0','0','0','0','0','Madame Ruby - Set Stand State Sit and Set Phase 1 OOC (Phase 0)'),
 ('1966302','19663','1','1','100','1','40000','120000','40000','120000','0','0','47','0','0','0','22','0','0','0','0','0','0','0','Madame Ruby - Set Stand State Stand and Set Phase 0 OOC (Phase 1)'),
@@ -31525,8 +31524,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10676','Ahhh!!','0','0','0','17944','0'),
 ('-10677','I tried.','0','0','0','17944','0'),
 ('-10678','%s shimmers and becomes intangible.','0','2','0','16325','0'),
--- TBC PLEASE RE-USE 10679 - 10683
-('-10684','It\'s coming along, Wafflefry. Haven\'t you got a product demonstration to do or something?','0','0','0','19475','1'),
+-- TBC PLEASE RE-USE 10679 - 10684
 ('-10685','Hey, $G man:lady;? Got some money?  I got five kids to feed!','0','0','0','19283','1'),
 ('-10686','Spare a copper, madame?','0','0','0','19283','1'),
 ('-10687','Please don\'t ignore us...','0','0','0','19283','1'),
