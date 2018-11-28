@@ -23827,7 +23827,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shattered Hand Legionnaire
 ('1670001','16700','2','0','100','6','30','0','0','0','0','0','11','30485','0','0','0','0','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Enrage on 30% HP'),
 ('1670002','16700','13','0','100','7','15000','15000','0','0','0','0','11','15615','1','0','0','0','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Pummel on Target Casting'),
-('1670003','16700','30','0','100','7','6','17420','0','0','0','0','11','30485','0','0','1','-10798','0','0','0','0','0','0','Shattered Hand Legionnaire - Say and Cast Enrage on Receive AI Event B'),
+('1670003','16700','30','0','100','7','6','17420','0','0','0','0','11','30485','0','0','1','-550','0','0','0','0','0','0','Shattered Hand Legionnaire - Say and Cast Enrage on Receive AI Event B'),
 -- Shattered Hand Sharpshooter 16704
 ('1670401','16704','4','0','100','6','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Shattered Hand Sharpshooter - Enable Hunter Mode on Aggro'),
 ('1670402','16704','9','0','100','1031','5','30','10000','14000','0','0','11','37551','16','544','0','0','0','0','0','0','0','0','Shattered Hand Sharpshooter - Cast Viper Sting'),
@@ -31638,7 +31638,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10795','Tag! You\'re it!','0','0','0','Jay Lemieux 18655','0'),
 ('-10796','Can I play?','0','0','0','Julie Honeywell 18656','0'),
 ('-10797','Ew, boys are gross!','0','0','0','Julie Honeywell 18656','0'),
-('-10798','%s goes into a rage after seeing a friend fall in battle!','0','2','0','16700','0'),
+-- TBC PLEASE RE-USE 10798
 ('-10799','%s casts a spell to draw magical attacks away from his allies.','0','2','0','22242','0'),
 ('-10800','WUT! DA KING IS BACK, BABY!','0','0','0','22826','0'),
 ('-10801','In Outland, lunch open prison for you! What a world! Time to eat!','0','0','0','22826','0'),
