@@ -16164,7 +16164,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2074701','20747','2','0','100','0','20','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Silkwing Larva - Set Phase 1 at 20%'),
 ('2074702','20747','0','5','100','0','0','0','0','0','0','0','54','-10397','0','0','21','0','0','0','20','0','0','0','Silkwing Larva - Emote and Stop Movement and Stop Melee at 20% (Phase 1)'),
 ('2074703','20747','0','5','100','0','3000','3000','0','0','0','0','11','36948','0','0','54','-10398','0','0','37','0','0','0','Silkwing Larva - Cast Silkwing and Die (Phase 1)'),
-('2074704','20747','7','0','100','0','0','0','0','0','0','0','22','0','0','0','21','0','0','0','20','0','0','0','Silkwing Larva - Set Phase 0 and Start Movement and Start Melee on Evade'),
+('2074704','20747','7','0','100','0','0','0','0','0','0','0','22','0','0','0','21','1','0','0','20','1','0','0','Silkwing Larva - Set Phase 0 and Start Movement and Start Melee on Evade'),
 -- Thunderlord Dire Wolf
 ('2074801','20748','8','0','50','1','32578','-1','0','0','0','0','55','6','0','0','0','0','0','0','0','0','0','0','Thunderlord Dire Wolf - 50% Chance to Attack Start on Gor''drek''s Ointment Spellhit'),
 ('2074802','20748','0','0','100','1','3000','10000','45000','60000','0','0','11','5781','1','32','0','0','0','0','0','0','0','0','Thunderlord Dire Wolf - Cast Threatening Growl'),
