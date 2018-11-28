@@ -19737,11 +19737,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2515502','25155','1','0','100','1','5000','25000','5000','25000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Shattered Sun Cleric - Talk Emote OOC'),
 -- Whirligig Wafflefry
 ('2588501','25885','11','0','100','0','0','0','0','0','0','0','40','2','0','0','0','0','0','0','0','0','0','0','Whirligig Wafflefry - Set Ranged Weapon Model on Spawn'),
-('2588502','25885','1','0','100','1','30000','30000','300000','300000','0','0','1','-10679','0','0','0','0','0','0','0','0','0','0','Whirligig Wafflefry - Say OOC'),
-('2588503','25885','1','0','100','1','82000','82000','300000','300000','0','0','1','-10680','0','0','0','0','0','0','0','0','0','0','Whirligig Wafflefry - Say OOC'),
-('2588504','25885','1','0','100','1','90000','90000','300000','300000','0','0','1','-10681','0','0','0','0','0','0','0','0','0','0','Whirligig Wafflefry - Say OOC'),
-('2588505','25885','1','0','100','1','98000','98000','300000','300000','0','0','1','-10682','0','0','0','0','0','0','0','0','0','0','Whirligig Wafflefry - Say OOC'),
-('2588506','25885','1','0','100','1','106000','106000','300000','300000','0','0','1','-10683','0','0','0','0','0','0','0','0','0','0','Whirligig Wafflefry - Say OOC'),
 -- Zephyr (25967) - npc_zephyr
 
 
@@ -31530,11 +31525,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10676','Ahhh!!','0','0','0','17944','0'),
 ('-10677','I tried.','0','0','0','17944','0'),
 ('-10678','%s shimmers and becomes intangible.','0','2','0','16325','0'),
-('-10679','Hey, harbringer, how\'s that research coming along? There might be an Ultra-Kinetic Waffle Iron in it for you if you\'re prompt with the results!','0','0','0','25885','1'),
-('-10680','Be the first on your block to own the incredible Electrostatic Maculation Blaster!','0','0','0','25885','1'),
-('-10681','Derived from cutting edge Shattered Sun Offensive military technology, it blasts away stubborn stains with ease!','0','0','0','25885','1'),
-('-10682','Wine stains, grass stains, even pet stains are no match for the Electrostatic Maculation Blaster!','0','0','0','25885','1'),
-('-10683','Don\'t wait! Order now and receive my Ultra-Kinetic Waffle Iron at no additional charge!','0','0','0','25885','1'),
+-- TBC PLEASE RE-USE 10679 - 10683
 ('-10684','It\'s coming along, Wafflefry. Haven\'t you got a product demonstration to do or something?','0','0','0','19475','1'),
 ('-10685','Hey, $G man:lady;? Got some money?  I got five kids to feed!','0','0','0','19283','1'),
 ('-10686','Spare a copper, madame?','0','0','0','19283','1'),
