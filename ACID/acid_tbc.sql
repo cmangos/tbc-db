@@ -19021,9 +19021,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2106102','21061','2','0','100','0','50','0','0','0','0','0','11','8599','0','1','54','-106','0','0','22','1','0','0','Enraged Fire Spirit - Cast Enrage and Set Phase 1 at 50% HP'),
 ('2106103','21061','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Enraged Fire Spirit - Set Phase 0 on Evade'),
 -- Totem of Spirits 21071 - npc_totem_of_spirits
--- Demon Hunter Supplicant
-('2117901','21179','2','0','100','0','40','0','0','0','0','0','1','-11006','0','0','11','37683','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Evasion at 40% HP'),
-('2117902','21179','2','0','100','0','25','0','0','0','0','0','11','32720','0','0','0','0','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Sprint at 25% HP'),
 -- Dormant Infernal 21080
 ('2108001','21080','4','0','100','0','0','0','0','0','0','0','3','19759','0','0','11','12743','0','32','28','0','36055','0','Dormant Infernal - Morph into Newly Crafted Infernal and Cast Immolation and Remove Stationary Infernal Ball on Aggro'),
 ('2108002','21080','1','0','100','0','0','0','0','0','0','0','3','0','0','0','28','0','12743','0','0','0','0','0','Dormant Infernal - Demorph and Remove Immolation OCC'),
@@ -19067,6 +19064,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2117807','21178','2','0','100','0','50','0','0','0','0','0','11','37905','0','2','22','1','0','0','0','0','0','0','Varedis - Cast Metamorphosis and Set Phase 1 at 50% HP'),
 ('2117808','21178','8','0','100','1','37906','-1','0','0','0','0','28','0','37905','0','22','0','0','0','0','0','0','0','Varedis - Remove Metamorphosis and Set Phase 0 on Book of Fel Names Spellhit'),
 ('2117809','21178','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Varedis - Set Phase 0 on Evade'),
+-- Demon Hunter Supplicant 21179
+('2117901','21179','2','0','100','0','40','0','0','0','0','0','1','-11006','0','0','11','37683','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Evasion at 40% HP'),
+('2117902','21179','2','0','100','0','25','0','0','0','0','0','11','32720','0','0','0','0','0','0','0','0','0','0','Demon Hunter Supplicant - Cast Sprint at 25% HP'),
 -- Demon Hunter Initiate
 ('2118001','21180','0','0','100','1','3000','10000','15000','25000','0','0','11','35871','1','32','0','0','0','0','0','0','0','0','Demon Hunter Initiate - Cast Spellbreaker'),
 -- Cyrukh the Firelord
