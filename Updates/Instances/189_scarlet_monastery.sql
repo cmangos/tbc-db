@@ -61,10 +61,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+189, 2, 1135.36, 1420.64, 30.3063, 0, 0, 0),
 (@CGUID+218, 1, 1134.68, 1338.78, 30.3007, 0, 0, 0),
 (@CGUID+218, 2, 1134.66, 1375.76, 30.3069, 0, 0, 0),
-(@CGUID+228, 1, 201.061, -230.432, 18.5307, 0, 0, 0),
-(@CGUID+228, 2, 200.959, -239.428, 19.2011, 0, 0, 0),
-(@CGUID+228, 3, 201.43, -286.052, 19.2011, 0, 0, 0),
-(@CGUID+228, 4, 200.959, -239.428, 19.2011, 0, 0, 0),
 (@CGUID+234, 1, 1759.54, 1121.24, 7.49103, 0, 0, 0),
 (@CGUID+234, 2, 1781.73, 1122.83, 7.49103, 0, 0, 0),
 (@CGUID+234, 3, 1782.84, 1160.14, 7.49103, 0, 0, 0),
@@ -89,7 +85,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+26, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Soldier
 (@CGUID+40, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Gallant
 (@CGUID+59, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Gallant
-(@CGUID+63, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Beastmaster
 (@CGUID+67, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Evoker
 (@CGUID+68, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Evoker
 (@CGUID+139, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Adept
@@ -102,7 +97,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+218, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Champion
 (@CGUID+222, 0, 0, 1, 16, 0, 0, '1006'), -- Scarlet Abbot
 (@CGUID+224, 0, 8, 1, 16, 0, 0, NULL), -- Scarlet Abbot
-(@CGUID+228, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Tracking Hound
 (@CGUID+234, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Torturer
 (@CGUID+288, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
 (@CGUID+289, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
@@ -153,7 +147,8 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (6489, 0, 0, 1, 16, 0, 0, NULL), -- Ironspine
 (6547, 0, 7, 1, 16, 0, 0, NULL); -- Suffering Victim
 
--- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(@CGUID+228, @CGUID+63, 515);
 
 INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 -- TBC+ only
@@ -222,7 +217,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+60, 4287, 189, 174.665, -312.681, 18.6126, 1.71042, 7200, 7200, 0, 0, 0, 0), -- Scarlet Gallant
 (@CGUID+61, 4288, 189, 181.396, -273.576, 18.6779, 0.837758, 7200, 7200, 0, 0, 0, 0), -- Scarlet Beastmaster
 (@CGUID+62, 4288, 189, 189.179, -259.118, 18.8245, 0.645772, 7200, 7200, 0, 0, 0, 0), -- Scarlet Beastmaster
-(@CGUID+63, 4288, 189, 201.223, -232.896, 18.5307, 3.14066, 7200, 7200, 1, 1, 0, 2), -- Scarlet Beastmaster
+(@CGUID+63, 4288, 189, 201.223, -232.896, 18.5307, 3.14066, 7200, 7200, 0, 0, 0, 2), -- Scarlet Beastmaster
 (@CGUID+64, 4288, 189, 166.937, -266.84, 18.6979, 0.733038, 7200, 7200, 0, 0, 0, 0), -- Scarlet Beastmaster
 (@CGUID+65, 4289, 189, 1717.25, -362.902, 18.6769, 3.15247, 7200, 7200, 0, 0, 0, 0), -- Scarlet Evoker
 (@CGUID+66, 4289, 189, 1803.07, -426.691, 8.01154, 2.85425, 7200, 7200, 1, 1, 0, 2), -- Scarlet Evoker
@@ -387,7 +382,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+225, 4303, 189, 1131.19, 1405.14, 30.3888, 6.14356, 7200, 7200, 0, 0, 0, 0), -- Scarlet Abbot
 (@CGUID+226, 4304, 189, 183.415, -275.71, 18.8943, 3.22886, 7200, 7200, 2, 0, 0, 1), -- Scarlet Tracking Hound
 (@CGUID+227, 4304, 189, 187.05, -257.972, 18.6737, 3.49066, 7200, 7200, 1, 0, 0, 1), -- Scarlet Tracking Hound
-(@CGUID+228, 4304, 189, 201.061, -230.432, 18.5307, 3.13901, 7200, 7200, 1, 1, 0, 2), -- Scarlet Tracking Hound
+(@CGUID+228, 4304, 189, 201.061, -230.432, 18.5307, 3.13901, 7200, 7200, 0, 0, 0, 0), -- Scarlet Tracking Hound
 (@CGUID+229, 4304, 189, 168.105, -268.833, 18.6996, 1.64061, 7200, 7200, 2, 0, 0, 1), -- Scarlet Tracking Hound
 (@CGUID+230, 4304, 189, 123.754, -261.435, 18.6299, 2.96706, 7200, 7200, 0, 0, 0, 0), -- Scarlet Tracking Hound
 (@CGUID+231, 4304, 189, 120.958, -257.75, 18.6299, 4.43314, 7200, 7200, 0, 0, 0, 0), -- Scarlet Tracking Hound
