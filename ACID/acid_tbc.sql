@@ -7316,8 +7316,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mennet Carkad 6467
 -- Spirit Healer (6491) - NSR
 -- Rift Spawn
-('649201','6492','1','0','100','0','1000','1000','0','0','0','0','11','9093','0','32','0','0','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Invisibility OOC'),
-('649202','6492','8','0','100','0','9095','-1','0','0','0','0','28','0','9093','0','2','16','1','0','13','100','1','0','Rift Spawn - Remove Rift Spawn Invisibility on Cantation of Manifestation Spellhit'),
+('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','0','0','0','0','Rift Spawn - Set Invincible at 1 HP and Set Phase 0 on Spawn'),
+('649202','6492','8','0','100','0','9095','-1','0','0','0','0','55','6','0','0','22','1','0','0','0','0','0','0','Rift Spawn - Attack Invoker and Set Phase 1 on Cantation of Manifestation Spellhit'),
+('649203','6492','4','6','100','0','0','0','0','0','0','0','11','9738','0','0','54','-988','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Becomes Visible and Text Emote on Aggro (Phase 0)'),
+('649204','6492','2','0','100','0','1','0','0','0','0','0','11','9032','0','0','18','33554432','0','0','22','2','0','0','Rift Spawn - Cast Self Stun - 30 seconds and Set NotSelectable and Set Phase 2 When Below 1% HP'),
+('649205','6492','29','3','100','0','29500','29500','0','0','0','0','54','-989','0','0','41','0','0','0','0','0','0','0','Rift Spawn - Text Emote and Despawn Self on Generic Timer (Phase 2)'),
+('649206','6492','21','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Set Phase 0 on Reached Home'),
+('649207','6492','8','0','100','0','9010','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Despawn Self on Create Filled Containment Coffer Spellhit'),
 -- Andron Gant 6522
 -- Estelle Gendry 6566
 -- Innkeeper Norman - npc_innkeeper
@@ -30648,7 +30653,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-985','Mistress!! They seek to destroy your work!','0','0','0','8581','0'),
 ('-986','You be too scared! Me find you!','0','0','0','14464','0'),
 ('-987','What? No you can\'t beat me! Me will return!','0','0','0','14464','0'),
--- Classic PLEASE RE-USE 988 - 989
+('-988','%s is angered and attacks!','0','2','0','6492','0'),
+('-989','%s escapes into the void!','0','2','0','6492','0'),
 ('-990','Mommy!','0','0','0','Common Text','0'),
 -- Classic PLEASE RE-USE 991 - 1018
 ('-1019','This will teach you to lay off the herb, $r.','0','0','0','11447','1'),
