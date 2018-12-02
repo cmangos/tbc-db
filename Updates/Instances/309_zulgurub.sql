@@ -476,7 +476,11 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15111, 0, 0, 1, 16, 0, 0, NULL), -- Mad Servant
 (15114, 0, 0, 1, 16, 0, 0, '8876'); -- Gahz'ranka
 
--- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(@CGUID+132, @CGUID+593, 7), -- Zealot Lor'Khan -> High Priest Thekal
+(@CGUID+133, @CGUID+593, 7), -- Zealot Zath -> High Priest Thekal
+(@CGUID+306, @CGUID+593, 7), -- Zulian Tiger -> High Priest Thekal
+(@CGUID+307, @CGUID+593, 7); -- Zulian Tiger -> High Priest Thekal
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (11373, 309, 14507, 7, 0), -- Razzashi Cobra -> High Priest Venoxis
