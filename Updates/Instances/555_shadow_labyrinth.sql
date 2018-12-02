@@ -488,7 +488,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (18642, 0, 0, 1, 16, 0, 0, NULL), -- Fel Guardhound
 (18667, 0, 0, 1, 16, 0, 0, NULL), -- Blackheart the Inciter
 (18708, 0, 0, 1, 16, 0, 0, NULL), -- Murmur
-(18731, 0, 0, 1, 16, 0, 0, '30231'), -- Ambassador Hellmaw
+(18731, 0, 0, 1, 16, 0, 0, '18950 30231'), -- Ambassador Hellmaw
 (18732, 0, 0, 1, 16, 0, 0, NULL), -- Grandmaster Vorpil
 (18793, 0, 0, 1, 0, 0, 0, NULL), -- Invisible Target
 (18796, 0, 0, 1, 16, 0, 0, NULL), -- Fel Overseer
