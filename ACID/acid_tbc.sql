@@ -16346,6 +16346,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2112401','21124','9','0','100','1','8','25','15000','21000','0','0','11','35570','1','0','0','0','0','0','0','0','0','0','Felsworn Daggermaw - Cast Charge'),
 ('2112402','21124','0','0','100','1','0','5000','10000','11000','0','0','11','7367','1','32','0','0','0','0','0','0','0','0','Felsworn Daggermaw - Cast Infected Bite'),
 -- Crystal Flayer 21189 NSR
+-- Blade's Edge Invisible Stalker 21234
+('2123401','21234','30','0','100','1','5','23256','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Blade''s Edge Invisible Stalker - Set Phase 1 on Receive AI Event 5 (A)'),
+('2123402','21234','30','0','100','1','6','23256','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Blade''s Edge Invisible Stalker - Set Phase 0 on Receive AI Event 6 (A)'),
+('2123403','21234','1','1','100','1','0','0','4000','7000','0','0','11','40114','0','0','0','0','0','0','0','0','0','0','Blade''s Edge Invisible Stalker - Cast Copy of Flame Wave (Phase 1)'),
 -- Bloodmaul Drudger
 ('2123801','21238','22','0','100','1','3','10040','0','0','0','0','54','-10479','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2123802','21238','22','0','100','1','34','10040','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
