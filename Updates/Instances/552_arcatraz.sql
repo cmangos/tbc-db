@@ -403,11 +403,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+30, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
 (@CGUID+31, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
 (@CGUID+32, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
-(@CGUID+41, @CGUID+42, 1027), -- Arcatraz Sentinel -> Arcatraz Sentinel
-(@CGUID+44, @CGUID+45, 1027), -- Arcatraz Sentinel -> Arcatraz Sentinel
-(@CGUID+53, @CGUID+54, 1027), -- Arcatraz Sentinel -> Arcatraz Sentinel
-(@CGUID+48, @CGUID+49, 1027), -- Arcatraz Sentinel -> Arcatraz Sentinel
-(@CGUID+50, @CGUID+51, 1027), -- Arcatraz Sentinel -> Arcatraz Sentinel
+
+(@CGUID+42, @CGUID+43, 1167), -- Arcatraz Sentinel -> Arcatraz Sentinel
+
 (@CGUID+72, @CGUID+73, 1167), -- Ethereum Slayer -> Ethereum Slayer
 (@CGUID+145, @CGUID+73, 1167), -- Ethereum Life-Binder -> Ethereum Slayer
 (@CGUID+76, @CGUID+73, 1167), -- Ethereum Wave-Caster -> Ethereum Slayer
@@ -463,8 +461,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+38, 20868, 552, 3, 254.91, -125.087, -10.1232, 2.89044, 7200, 7200, 10, 0, 0, 1), -- Entropic Eye
 (@CGUID+39, 20868, 552, 3, 266.335, -187.128, -10.1051, 4.02795, 7200, 7200, 10, 0, 0, 1), -- Entropic Eye
 (@CGUID+40, 20868, 552, 3, 244.258, -156.479, -10.104, 4.38315, 7200, 7200, 10, 0, 0, 1), -- Entropic Eye
--- Arcatraz Sentinel below due to set curhealth issue
--- 41-56 reserved
+(@CGUID+41, 20869, 552, 3, 264.2865, -61.32112, 22.45335, 5.288348, 7200, 7200, 0, 0, 0, 0), -- Arcatraz Sentinel
+(@CGUID+42, 20869, 552, 3, 253.942, 131.8811, 22.39496, 0.7679449, 7200, 7200, 0, 0, 0, 0), -- Arcatraz Sentinel
+(@CGUID+43, 20869, 552, 3, 255.4978, 158.9143, 22.36194, 5.410521, 7200, 7200, 0, 0, 0, 0), -- Arcatraz Sentinel
+(@CGUID+44, 20869, 552, 3, 336.5143, 27.42666, 48.42604, 3.839724, 7200, 7200, 0, 0, 0, 0), -- Arcatraz Sentinel
+(@CGUID+45, 20869, 552, 3, 395.413, 18.19484, 48.29602, 2.495821, 7200, 7200, 0, 0, 0, 0), -- Arcatraz Sentinel
+-- PLEASE RE-USE 46-56
 (@CGUID+57, 20870, 552, 3, 275.788, -123.343, -10.1232, 6.13695, 86400, 86400, 5, 0, 0, 1), -- Zereketh the Unbound
 (@CGUID+58, 20873, 552, 3, 292.552, 8.8547, 22.4412, 5.35439, 7200, 7200, 0, 0, 0, 2), -- Negaton Warp-Master
 (@CGUID+59, 20873, 552, 3, 274.324, 38.2864, 22.4412, 2.15167, 7200, 7200, 0, 0, 0, 2), -- Negaton Warp-Master
@@ -561,24 +563,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+150, 20882, 552, 3, 164.571, 164.083, 22.4412, 5.65782, 7200, 7200, 0, 0, 0, 2), -- Skulking Witch
 (@CGUID+151, 20882, 552, 3, 123.33, 146.789, 22.4412, 0.00192785, 7200, 7200, 0, 0, 0, 2), -- Skulking Witch
 (@CGUID+152, 20868, 552, 3, 259.678, -138.915, -10.1176, 2.33554, 7200, 7200, 0, 0, 0, 2); -- Entropic Eye
-
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `DeathState`, `MovementType`) VALUES
-(@CGUID+41, 20869, 552, 1, 203.401, 126.201, 22.5118, 1.52555, 7200, 7200, 0, 0, 46108, 0, 0), -- Arcatraz Sentinel
-(@CGUID+42, 20869, 552, 1, 195.709, 126.549, 22.4416, 1.52555, 7200, 7200, 0, 0, 46108, 0, 0), -- Arcatraz Sentinel
-(@CGUID+43, 20869, 552, 1, 264.286, -61.3211, 22.4534, 5.28835, 7200, 7200, 0, 0, 46108, 0, 0), -- Arcatraz Sentinel
-(@CGUID+44, 20869, 552, 1, 253.743, 131.448, 22.3164, 1.05009, 7200, 7200, 0, 0, 46108, 0, 0), -- Arcatraz Sentinel
-(@CGUID+45, 20869, 552, 1, 254.359, 160.747, 22.2955, 5.44126, 7200, 7200, 0, 0, 46108, 0, 0), -- Arcatraz Sentinel
-(@CGUID+46, 20869, 552, 1, 336.514, 27.4267, 48.426, 3.83972, 7200, 7200, 0, 0, 46108, 0, 0), -- Arcatraz Sentinel
-(@CGUID+47, 20869, 552, 1, 395.413, 18.1948, 48.296, 2.49582, 7200, 7200, 0, 0, 46108, 0, 0), -- Arcatraz Sentinel
-(@CGUID+48, 20869, 552, 2, 203.401, 126.201, 22.5118, 1.52555, 7200, 7200, 0, 0, 62315, 0, 0), -- Arcatraz Sentinel
-(@CGUID+49, 20869, 552, 2, 195.709, 126.549, 22.4416, 1.52555, 7200, 7200, 0, 0, 62315, 0, 0), -- Arcatraz Sentinel
-(@CGUID+50, 20869, 552, 2, 202.84, 46.4277, 48.3155, 2.42562, 7200, 7200, 0, 0, 62315, 0, 0), -- Arcatraz Sentinel
-(@CGUID+51, 20869, 552, 2, 196.555, 47.0605, 48.3239, 1.20301, 7200, 7200, 0, 0, 62315, 0, 0), -- Arcatraz Sentinel
-(@CGUID+52, 20869, 552, 2, 264.286, -61.3211, 22.4534, 5.28835, 7200, 7200, 0, 0, 62315, 0, 0), -- Arcatraz Sentinel
-(@CGUID+53, 20869, 552, 2, 253.743, 131.448, 22.3164, 1.05009, 7200, 7200, 0, 0, 62315, 0, 0), -- Arcatraz Sentinel
-(@CGUID+54, 20869, 552, 2, 254.359, 160.747, 22.2955, 5.44126, 7200, 7200, 0, 0, 62315, 0, 0), -- Arcatraz Sentinel
-(@CGUID+55, 20869, 552, 2, 336.514, 27.4267, 48.426, 3.83972, 7200, 7200, 0, 0, 62315, 0, 0), -- Arcatraz Sentinel
-(@CGUID+56, 20869, 552, 2, 395.413, 18.1948, 48.296, 2.49582, 7200, 7200, 0, 0, 62315, 0, 0); -- Arcatraz Sentinel
 
 -- ======
 -- EVENTS
