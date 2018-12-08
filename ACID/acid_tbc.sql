@@ -19364,6 +19364,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2197903','21979','9','0','100','1025','5','40','2300','3900','0','0','11','38094','1','256','0','0','0','0','0','0','0','0','Val''zareq the Conqueror - Cast Shoot'),
 -- Altar of Sha'tar Vindicator 21986
 ('2198601','21986','0','0','100','1','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Altar of Sha''tar Vindicator - Cast Net'),
+-- Kor'kron Wind Rider 21998
+('2199801','21998','29','0','100','0','3500','3500','0','0','0','0','54','-11134','11','0','0','0','0','0','0','0','0','0','Kor''kron Wind Rider - Say on Generic Timer'),
 -- Dragonmaw Nether Drake 22000
 ('2200001','22000','0','0','100','1','5000','10000','16000','20000','0','0','11','38344','1','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Arcane Blast'),
 ('2200002','22000','0','0','100','1','4000','8000','12000','16000','0','0','11','36513','0','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Intangible Presence'),
@@ -19395,6 +19397,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Smith Gorlunk
 ('2203701','22037','0','0','100','1','3000','9000','15000','20000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Smith Gorlunk - Cast Rend'),
 ('2203702','22037','28','0','100','1','13444','5','5000','9000','0','0','11','13444','1','0','0','0','0','0','0','0','0','0','Smith Gorlunk - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+-- Wildhammer Gryphon Rider 22059
+('2205901','22059','29','0','100','0','3500','3500','0','0','0','0','54','-11135','11','0','0','0','0','0','0','0','0','0','Wildhammer Gryphon Rider - Say on Generic Timer'),
 -- Air Force Guard Post (Scryer - Dragonhawk) 22066 - npc_air_force_bots
 -- Air Force Trip Wire - Rooftop (Scryer) 22070 - npc_air_force_bots
 -- Air Force Alarm Bot (Scryer) 22071 - npc_air_force_bots
@@ -31925,6 +31929,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11131','The dragonflight will... devour you.','0','1','0','Blackwing Drakonaar 20911','0'),
 ('-11132','The falcon is vaniquished, doomed never to rise again! Your quest is futile!','0','0','0','22994','0'),
 ('-11133','The raven will return to us as foretold in the prophecy and you are powerless to stop it!','0','0','0','22994','0'),
+('-11134','Speak quickly, $n. We haven\'t much time!','0','0','1','22994','1'),
+('-11135','What is it, $r? Have you gathered some new information?','0','0','7','22994','1'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
