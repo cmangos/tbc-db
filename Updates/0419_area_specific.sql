@@ -7,10 +7,14 @@ INSERT INTO spell_area (spell, area, quest_start, quest_start_active, quest_end,
 (41306, 3522, 0, 0, 0, 0, 0, 0, 2, 0),
 (41306, 3923, 0, 0, 0, 0, 0, 0, 2, 0);
 
--- Apexis Emanations
-DELETE FROM spell_area WHERE spell IN (40625);
+-- Swiftness trigger spells from Apexis Vibrations, Apexis Emanations, and Apexis Enlightenment
+DELETE FROM spell_area WHERE spell IN (40624,40627,40628);
 INSERT INTO spell_area (spell, area, quest_start, quest_start_active, quest_end, condition_id, aura_spell, racemask, gender, autocast) VALUES
-(40625, 3522, 0, 0, 0, 0, 0, 0, 2, 0),
-(40625, 3923, 0, 0, 0, 0, 0, 0, 2, 0);
+(40624, 3522, 0, 0, 0, 0, 0, 0, 2, 0),
+(40624, 3923, 0, 0, 0, 0, 0, 0, 2, 0),
+(40627, 3522, 0, 0, 0, 0, 0, 0, 2, 0),
+(40627, 3923, 0, 0, 0, 0, 0, 0, 2, 0),
+(40628, 3522, 0, 0, 0, 0, 0, 0, 2, 0),
+(40628, 3923, 0, 0, 0, 0, 0, 0, 2, 0);
 
 
