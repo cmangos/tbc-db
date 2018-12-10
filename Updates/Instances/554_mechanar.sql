@@ -205,7 +205,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+28, @CGUID+16, 1167); -- Bloodwarder Centurion -> Sunseeker Astromage
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(20481, 554, 19221, 4112, 0); -- Raging Flames -> Nethermancer Sepethrea
+(20481, 554, 19221, 4113, 0); -- Raging Flames -> Nethermancer Sepethrea
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 19166, 554, 3, 139.302, 79.2735, 9.5361, 3.14005, 7200, 7200, 0, 0, 0, 2), -- Tempest-Forge Patroller
