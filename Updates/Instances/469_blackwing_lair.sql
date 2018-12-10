@@ -223,22 +223,19 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (13996, 1, 13, -7529.9, -959.013, 427.93, 2.16926, 0, 1),
 
 -- Ebonroc
-(14601, 0, 1, -7358.19, -994.32, 477.35, 3.69, 5000, 0),
-(14601, 0, 2, -7356.27, -1004.66, 477.141, 4.87147, 0, 0),
-(14601, 0, 3, -7366.71, -1026.03, 477.058, 4.53924, 2000, 0),
-(14601, 0, 4, -7379.19, -1018.57, 477.166, 2.64643, 0, 0),
-(14601, 0, 5, -7396.89, -996.341, 477.166, 2.15712, 0, 0),
-(14601, 0, 6, -7397.89, -993.736, 475.328, 2.07073, 0, 0),
-(14601, 0, 7, -7404.27, -987.585, 474.138, 2.43987, 0, 0),
-(14601, 0, 8, -7413.77, -980.806, 471.304, 2.10607, 0, 0),
-(14601, 0, 9, -7413.4, -962.564, 466.14, 1.41885, 5000, 0),
-(14601, 0, 10, -7413.77, -980.806, 471.304, 2.10607, 0, 0),
-(14601, 0, 11, -7404.27, -987.585, 474.138, 2.43987, 0, 0),
-(14601, 0, 12, -7397.89, -993.736, 475.328, 2.07073, 0, 0),
-(14601, 0, 13, -7396.89, -996.341, 477.166, 2.15712, 0, 0),
-(14601, 0, 14, -7379.19, -1018.57, 477.166, 2.64643, 0, 0),
-(14601, 0, 15, -7366.71, -1026.03, 477.058, 4.53924, 2000, 0),
-(14601, 0, 16, -7356.27, -1004.66, 477.141, 4.87147, 0, 0);
+(14601, 0, 1, -7358.19, -994.32, 477.167, 3.72812, 0, 0),
+(14601, 0, 2, -7368.8, -983.092, 477.167, 2.40158, 0, 0),
+(14601, 0, 3, -7378.3, -977.789, 477.168, 3.53177, 0, 0),
+(14601, 0, 4, -7392.39, -983.383, 476.911, 3.53177, 0, 0),
+(14601, 0, 5, -7405.91, -987.83, 473.768, 2.80606, 0, 0),
+(14601, 0, 6, -7418.1, -976.627, 469.941, 1.4646, 0, 0),
+(14601, 0, 7, -7414.41, -963.303, 466.541, 2.05993, 180000, 0),
+(14601, 0, 8, -7418.1, -976.627, 469.941, 1.4646, 0, 0),
+(14601, 0, 9, -7405.91, -987.83, 473.768, 2.80606, 0, 0),
+(14601, 0, 10, -7392.39, -983.383, 476.911, 3.53177, 0, 0),
+(14601, 0, 11, -7378.3, -977.789, 477.168, 3.53177, 0, 0),
+(14601, 0, 12, -7368.8, -983.092, 477.167, 2.40158, 0, 0),
+(14601, 0, 13, -7358.19, -994.32, 477.167, 3.72812, 0, 1460101);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+1, 0, 5, 1, 0, 0, 0, NULL); -- Lord Victor Nefarius
@@ -298,7 +295,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 10162, 469, -7588.27, -1261.92, 482.03, 0.610865, 604800, 604800, 0, 0, 0, 0), -- Lord Victor Nefarius
-(@CGUID+2, 11981, 469, -7407.94, -1031.04, 477.35, 0.87, 604800, 604800, 0, 0, 0, 2), -- Flamegor
+(@CGUID+2, 11981, 469, -7407.94, -1031.04, 477.35, 0.87, 604800, 604800, 5, 0, 0, 1), -- Flamegor
 (@CGUID+3, 11983, 469, -7433.38, -923.829, 465.354, 2.16294, 604800, 604800, 0, 0, 0, 2), -- Firemaw
 (@CGUID+4, 12017, 469, -7573.89, -1035.25, 449.248, 3.76991, 604800, 604800, 0, 0, 0, 0), -- Broodlord Lashlayer
 (@CGUID+5, 12434, 469, -7623.09, -1094.06, 407.288, 1.44862, 300, 300, 0, 0, 0, 0), -- Monster Generator (Blackwing)
@@ -769,7 +766,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- DBSCRIPTS
 -- =========
 
--- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1460101);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1460101, 1, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Ebonroc - random movement'),
+(1460101, 300, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ebonroc - waypoint movement');
+
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
