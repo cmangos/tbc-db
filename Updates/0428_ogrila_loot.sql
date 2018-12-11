@@ -16,29 +16,29 @@
 -- Low chance for:
 -- * Class Codex
 
-DELETE FROM reference_loot_template_names WHERE entry=65278;
+DELETE FROM reference_loot_template_names WHERE entry=41300;
 INSERT INTO reference_loot_template_names (entry, name) VALUES
-(65278, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)');
-DELETE FROM reference_loot_template WHERE entry=65278;
+(41300, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)');
+DELETE FROM reference_loot_template WHERE entry=41300;
 INSERT INTO reference_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount) VALUES 
-(65278, 29563, 75, 1, 2, 4),
-(65278, 29564, 25, 1, 2, 4);
+(41300, 29563, 75, 1, 2, 4),
+(41300, 29564, 25, 1, 2, 4);
 
-DELETE FROM reference_loot_template_names WHERE entry=65279;
+DELETE FROM reference_loot_template_names WHERE entry=41301;
 INSERT INTO reference_loot_template_names (entry, name) VALUES
-(65279, 'Blade\'s Edge Mountains - Depleted Items');
-DELETE FROM reference_loot_template WHERE entry=65279;
+(41301, 'Blade\'s Edge Mountains - Depleted Items');
+DELETE FROM reference_loot_template WHERE entry=41301;
 INSERT INTO reference_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount) VALUES 
-(65279, 32676, 0, 1, 1, 1),
-(65279, 32675, 0, 1, 1, 1),
-(65279, 32672, 0, 1, 1, 1),
-(65279, 32677, 0, 1, 1, 1),
-(65279, 32673, 0, 1, 1, 1),
-(65279, 32671, 0, 1, 1, 1),
-(65279, 32678, 0, 1, 1, 1),
-(65279, 32679, 0, 1, 1, 1),
-(65279, 32674, 0, 1, 1, 1),
-(65279, 32670, 0, 1, 1, 1);
+(41301, 32676, 0, 1, 1, 1),
+(41301, 32675, 0, 1, 1, 1),
+(41301, 32672, 0, 1, 1, 1),
+(41301, 32677, 0, 1, 1, 1),
+(41301, 32673, 0, 1, 1, 1),
+(41301, 32671, 0, 1, 1, 1),
+(41301, 32678, 0, 1, 1, 1),
+(41301, 32679, 0, 1, 1, 1),
+(41301, 32674, 0, 1, 1, 1),
+(41301, 32670, 0, 1, 1, 1);
 
 -- Skinning loot for all 4 dragons
 DELETE FROM skinning_loot_template WHERE entry=70173;
@@ -55,8 +55,8 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23282, 50501, 0.2, 0, -50501, 1, 0, 'NPC LOOT - Profession (-Design,-Formula,-Pattern,-Plans,-Recipe,-Schematic)(Non-BoP) - NPC Level 64+ Non-Elite/Level 58+ Elite - TBC NPC ONLY!'),
 (23282, 61001, 10, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (23282, 61128, 100, 0, -61128, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 117-120) - (NPC Levels: 72) - TBC NPC ONLY'),
-(23282, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items'),
-(23282, 65278, 100, 0, -65278, 1, 0, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)'),
+(23282, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items'),
+(23282, 41300, 100, 0, -41300, 1, 0, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)'),
 (23282, 32569, 100, 0, 2, 3, 0, 'Apexis Shard'),
 (23282, 32682, 100, 0, 1, 1, 0, 'Obsidia Scale'),
 (23282, 32732, -100, 0, 1, 1, 0, 'Dragon Teeth');
@@ -70,8 +70,8 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23061, 50501, 0.2, 0, -50501, 1, 0, 'NPC LOOT - Profession (-Design,-Formula,-Pattern,-Plans,-Recipe,-Schematic)(Non-BoP) - NPC Level 64+ Non-Elite/Level 58+ Elite - TBC NPC ONLY!'),
 (23061, 61001, 10, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (23061, 61128, 100, 0, -61128, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 117-120) - (NPC Levels: 72) - TBC NPC ONLY'),
-(23061, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items'),
-(23061, 65278, 100, 0, -65278, 1, 0, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)'),
+(23061, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items'),
+(23061, 41300, 100, 0, -41300, 1, 0, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)'),
 (23061, 32569, 100, 0, 2, 3, 0, 'Apexis Shard'),
 (23061, 32681, 100, 0, 1, 1, 0, 'Onyx Scale of Rivendark'),
 (23061, 32732, -100, 0, 1, 1, 0, 'Dragon Teeth');
@@ -85,8 +85,8 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23261, 50501, 0.2, 0, -50501, 1, 0, 'NPC LOOT - Profession (-Design,-Formula,-Pattern,-Plans,-Recipe,-Schematic)(Non-BoP) - NPC Level 64+ Non-Elite/Level 58+ Elite - TBC NPC ONLY!'),
 (23261, 61001, 10, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (23261, 61128, 100, 0, -61128, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 117-120) - (NPC Levels: 72) - TBC NPC ONLY'),
-(23261, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items'),
-(23261, 65278, 100, 0, -65278, 1, 0, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)'),
+(23261, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items'),
+(23261, 41300, 100, 0, -41300, 1, 0, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)'),
 (23261, 32569, 100, 0, 2, 3, 0, 'Apexis Shard'),
 (23261, 32683, 100, 0, 1, 1, 0, 'Jet Scale of Furywing'),
 (23261, 32732, -100, 0, 1, 1, 0, 'Dragon Teeth');
@@ -100,8 +100,8 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23281, 50501, 0.2, 0, -50501, 1, 0, 'NPC LOOT - Profession (-Design,-Formula,-Pattern,-Plans,-Recipe,-Schematic)(Non-BoP) - NPC Level 64+ Non-Elite/Level 58+ Elite - TBC NPC ONLY!'),
 (23281, 61001, 10, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (23281, 61128, 100, 0, -61128, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 117-120) - (NPC Levels: 72) - TBC NPC ONLY'),
-(23281, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items'),
-(23281, 65278, 100, 0, -65278, 1, 0, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)'),
+(23281, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items'),
+(23281, 41300, 100, 0, -41300, 1, 0, 'Blade\'s Edge Mountains - Four Dragons - Dragon''s Claw/Dragon''s Fang (75%)(25%)'),
 (23281, 32569, 100, 0, 2, 3, 0, 'Apexis Shard'),
 (23281, 32684, 100, 0, 1, 1, 0, 'Insidion''s Ebony Scale'),
 (23281, 32732, -100, 0, 1, 1, 0, 'Dragon Teeth');
@@ -126,7 +126,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22281, 61001, 10, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (22281, 61124, 100, 0, -61124, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-117) - (NPC Levels: 70) - TBC NPC ONLY'),
 (22281, 61224, 0.1, 0, -61224, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70) - TBC NPC ONLY'),
-(22281, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22281, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Braxxus c.23353
 UPDATE creature_template SET MinLootGold=1945, MaxLootGold=2545 WHERE entry=23353; -- Was not dropping any money. Set to same values as Galvanoth
@@ -143,7 +143,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23353, 61001, 10, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (23353, 61124, 100, 0, -61124, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-117) - (NPC Levels: 70) - TBC NPC ONLY'),
 (23353, 61224, 0.1, 0, -61224, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70) - TBC NPC ONLY'),
-(23353, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23353, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Mo'arg Incinerator c.23354
 UPDATE creature_template SET MinLootGold=1945, MaxLootGold=2545 WHERE entry=23354; -- Was not dropping any money. Set to same values as Galvanoth
@@ -162,7 +162,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23354, 61001, 10, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (23354, 61124, 100, 0, -61124, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-117) - (NPC Levels: 70) - TBC NPC ONLY'),
 (23354, 61224, 0.1, 0, -61224, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70) - TBC NPC ONLY'),
-(23354, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23354, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Zarcsin c.23355
 UPDATE creature_template SET MinLootGold=1945, MaxLootGold=2545 WHERE entry=23355; -- Was not dropping any money. Set to same values as Galvanoth
@@ -181,7 +181,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23355, 61001, 10, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (23355, 61124, 100, 0, -61124, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-117) - (NPC Levels: 70) - TBC NPC ONLY'),
 (23355, 61224, 0.1, 0, -61224, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70) - TBC NPC ONLY'),
-(23355, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23355, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- ------------------------------------------------
 -- Apexis Guardian c.22275
@@ -200,7 +200,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22275, 61128, 100, 0, -61128, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 117-120) - (NPC Levels: 72) - TBC NPC ONLY'),
 (22275, 61228, 0.1, 0, -61228, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 72) - TBC NPC ONLY'),
 (22275, 60345, 0.01, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22275, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22275, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- ------------------------------------------------
 -- Shartuul c.23230
@@ -247,7 +247,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23390, 61128, 100, 0, -61128, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 117-120) - (NPC Levels: 72) - TBC NPC ONLY'),
 (23390, 61228, 0.1, 0, -61228, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 72) - TBC NPC ONLY'),
 (23390, 60345, 0.01, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(23390, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23390, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Bash'ir c.23391
 -- Hardly any data available for this npc due to how rare it is and how few players bothered to farm him. 
@@ -266,7 +266,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23391, 61128, 100, 0, -61128, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 117-120) - (NPC Levels: 72) - TBC NPC ONLY'),
 (23391, 61228, 0.1, 0, -61228, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 72) - TBC NPC ONLY'),
 (23391, 60345, 0.01, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(23391, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23391, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- The Grand Collector c.23350 (mirror image npc)
 -- Remove skinning(mining) loot
@@ -287,7 +287,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23333, 61128, 100, 0, -61128, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 117-120) - (NPC Levels: 72) - TBC NPC ONLY'),
 (23333, 61228, 0.1, 0, -61228, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 72) - TBC NPC ONLY'),
 (23333, 60345, 0.01, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(23333, 65279, 20, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23333, 41301, 20, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- ------------------------------------------------
 -- Other Ogri'la creatures
@@ -309,7 +309,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22304, 61001, 5, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (22304, 61126, 2, 0, -61126, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 114-120) - (NPC Levels: 71) - TBC NPC ONLY'),
 (22304, 61226, 0.05, 0, -61226, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 71) - TBC NPC ONLY'),
-(22304, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22304, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Crystalfused Miner c.23174
 UPDATE creature_template SET MinLootGold=1222, MaxLootGold=1425 WHERE entry=23174; -- Add missing money drop
@@ -328,7 +328,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23174, 61001, 5, 0, -61001, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 69-72) - (NPC Levels: 66-72) - TBC NPC ONLY'),
 (23174, 61124, 2, 0, -61124, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-117) - (NPC Levels: 70) - TBC NPC ONLY'),
 (23174, 61224, 0.05, 0, -61226, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70) - TBC NPC ONLY'),
-(23174, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23174, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Bash'ir Surveyor c.23153
 UPDATE creature_template SET MinLootGold=1222, MaxLootGold=1425 WHERE entry=23153; -- Add missing money drop
@@ -348,7 +348,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23153, 61128, 2, 0, -61128, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 117-120) - (NPC Levels: 72) - TBC NPC ONLY'),
 (23153, 61228, 0.05, 0, -61228, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 72) - TBC NPC ONLY'),
 (23153, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(23153, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23153, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Mana-debt Slave c.23154
 UPDATE creature_template SET MinLootGold=1222, MaxLootGold=1425 WHERE entry=23154; -- Add missing money drop
@@ -368,7 +368,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23154, 61124, 2, 0, -61124, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-117) - (NPC Levels: 70) - TBC NPC ONLY'),
 (23154, 61224, 0.05, 0, -61224, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70) - TBC NPC ONLY'),
 (23154, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(23154, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23154, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Gan'arg Analyzer c.23386
 UPDATE creature_template SET MinLootGold=1222, MaxLootGold=1425 WHERE entry=23386; -- Add missing money drop
@@ -387,7 +387,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (23386, 61124, 2, 0, -61124, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-117) - (NPC Levels: 70) - TBC NPC ONLY'),
 (23386, 61224, 0.05, 0, -61224, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70) - TBC NPC ONLY'),
 (23386, 60345, 0.0005, 1, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(23386, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(23386, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Bash'ir Arcanist c.22243
 DELETE FROM creature_loot_template WHERE entry=22243;
@@ -410,7 +410,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22243, 61127, 2, 0, -61127, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 114-120) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22243, 61227, 0.05, 0, -61227, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22243, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22243, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22243, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Bash'ir Spell-Thief c.22242
 DELETE FROM creature_loot_template WHERE entry=22242;
@@ -433,7 +433,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22242, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22242, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22242, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22242, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22242, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Bash'ir Raider c.22241
 DELETE FROM creature_loot_template WHERE entry=22241;
@@ -455,7 +455,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22241, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22241, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22241, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22241, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22241, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Unbound Ethereal c.22244
 DELETE FROM creature_loot_template WHERE entry=22244;
@@ -474,7 +474,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22244, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22244, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22244, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22244, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22244, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Apexis Flayer c.22175
 -- Remove skinning loot. They are not skinnable
@@ -496,7 +496,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22175, 61127, 2, 0, -61127, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 114-120) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22175, 61227, 0.05, 0, -61227, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22175, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22175, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22175, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Shard-Hide Boar c.22180
 DELETE FROM creature_loot_template WHERE entry=22180;
@@ -513,7 +513,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22180, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22180, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22180, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22180, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22180, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 -- And add correct skinning loot
 UPDATE creature_template SET SkinningLootId=70175 WHERE entry=22180;
 DELETE FROM skinning_loot_template WHERE entry=70175;
@@ -565,7 +565,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22181, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22181, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22181, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22181, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22181, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 -- And add correct skinning loot
 UPDATE creature_template SET SkinningLootId=70176 WHERE entry=22181;
 DELETE FROM skinning_loot_template WHERE entry=70176;
@@ -593,7 +593,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22291, 61127, 2, 0, -61127, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 114-120) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22291, 61227, 0.05, 0, -61227, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22291, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22291, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22291, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Wrath Speaker c.22195
 DELETE FROM creature_loot_template WHERE entry=22195;
@@ -615,7 +615,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22195, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22195, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22195, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22195, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22195, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Wrath Corruptor c.22254
 DELETE FROM creature_loot_template WHERE entry=22254;
@@ -637,7 +637,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22254, 61127, 2, 0, -61127, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 114-120) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22254, 61227, 0.05, 0, -61227, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22254, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22254, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22254, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Wrath Hound c.20557
 DELETE FROM creature_loot_template WHERE entry=20557;
@@ -654,7 +654,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (20557, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (20557, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (20557, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(20557, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(20557, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 -- And add correct skinning loot
 UPDATE creature_template SET SkinningLootId=70174 WHERE entry=20557;
 
@@ -677,7 +677,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22204, 61127, 2, 0, -61127, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 114-120) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22204, 61227, 0.05, 0, -61227, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 115) - (NPC Levels: 71-72) - TBC NPC ONLY'),
 (22204, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22204, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22204, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Abyssal Flamebringer c.19973
 DELETE FROM creature_loot_template WHERE entry=19973;
@@ -693,7 +693,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (19973, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (19973, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (19973, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(19973, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(19973, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Vile Fire-Soul c.22298
 DELETE FROM creature_loot_template WHERE entry=22298;
@@ -712,7 +712,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22298, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22298, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22298, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22298, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22298, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Phase Wyrm c.24917
 UPDATE creature_template SET MinLevel=70, MaxLevel=71, LootId=24917 WHERE entry=24917;
@@ -732,7 +732,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (24917, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (24917, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (24917, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(24917, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(24917, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
 -- Hemathion c.18692
 DELETE FROM creature_loot_template WHERE entry=18692;
@@ -771,5 +771,5 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (22182, 61125, 2, 0, -61125, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 111-120) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22182, 61225, 0.05, 0, -61225, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 112-115) - (NPC Levels: 70-71) - TBC NPC ONLY'),
 (22182, 60345, 0.0005, 0, -60345, 1, 0, 'NPC LOOT (Purple World Drop) - (Item Levels: 100) - (NPC Levels 70+) - (WORLD EPIC BOE) - TBC NPC ONLY'),
-(22182, 65279, 0.01, 0, -65279, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
+(22182, 41301, 0.01, 0, -41301, 1, 0, 'Blade\'s Edge Mountains - Depleted Items');
 
