@@ -506,8 +506,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('270601','2706','10','0','100','1','0','8','5000','5000','0','0','39','30','0','0','1','-551','0','0','0','0','0','0','Tor''gan - Call For Help OOC at 8 Yards LOS'),
 -- Quae (2712) - NSR
 -- Kinelory 2713 - npc_kinelory
-('271301','2713','0','0','100','1','1000','3000','30000','38000','0','0','11','4948','0','0','0','0','0','0','0','0','0','0','Kinelory - Cast Kinelory''s Bear Form'),
-('271302','2713','14','0','100','0','800','40','0','0','0','0','11','3627','12','1','0','0','0','0','0','0','0','0','Kinelory - Cast Rejuvenation on Friendly Missing HP'),
 -- Forsaken Courier (2714) - NSR
 -- Forsaken Bodyguard (2721) - NSR
 -- Apothecary Jorell (3.0.9 Official Data)
@@ -1359,8 +1357,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1439302','14393','9','0','100','1025','0','30','3100','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Expeditionary Priest - Cast Holy Smite'),
 -- Mor'zul Bloodbringer (14436) - NSR
 -- Gorzeeki Wildeyes (14437) - NSR
--- Franklin the Friendly
-('1452901','14529','9','0','100','1','0','20','10000','15000','0','0','11','23504','1','0','0','0','0','0','0','0','0','0','Franklin the Friendly - Cast Fool''s Plight'),
+-- Franklin the Friendly (14529) - npc_klinfran
 -- Klinfran the Crazed (14534) - NSR
 -- Lumbering Horror (14697) - NSR
 -- Elder Rumblerock (15557) - NSR
@@ -10551,8 +10548,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1155901','11559','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Outcast Necromancer - Enable Caster Mode on Aggro'),
 ('1155902','11559','0','0','100','1025','12000','18000','60000','75000','0','0','11','18166','0','0','0','0','0','0','0','0','0','0','Outcast Necromancer - Cast Summon Magram Ravager'),
 ('1155903','11559','9','0','100','1025','0','40','3400','4800','0','0','11','20298','1','256','0','0','0','0','0','0','0','0','Outcast Necromancer - Cast Shadow Bolt'),
--- Magrami Spectre
-('1156001','11560','0','0','100','1','5000','9000','15000','21000','0','0','11','18159','4','32','0','0','0','0','0','0','0','0','Magrami Spectre - Cast Curse of the Fallen Magram'),
+-- Magrami Spectre (11560) - npc_magrami_spectre
 -- Undead Ravager
 ('1156101','11561','13','0','100','1','7000','10000','0','0','0','0','11','11978','1','1','0','0','0','0','0','0','0','0','Undead Ravager - Cast Kick on Target Casting'),
 -- Drysnap Crawler 11562
@@ -15938,8 +15934,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999816','19998','9','0','100','1025','0','40','15000','20000','0','0','11','32062','0','0','0','0','0','0','0','0','0','0','Bladespire Shaman - Cast Fire Nova Totem'),
 ('1999817','19998','9','0','100','1025','0','40','3400','4800','0','0','11','26098','1','256','0','0','0','0','0','0','0','0','Bladespire Shaman - Cast Lightning Bolt'),
 -- Nether Whelp 20021 - mobs_nether_drake
--- Bloodmaul Dire Wolf
-('2005801','20058','0','0','100','1','0','5000','15000','20000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Bloodmaul Dire Wolf - Cast Rend'),
+-- Bloodmaul Dire Wolf (20058) - npc_bloodmaul_dire_wolf
 -- Grimnok Battleborn
 ('2009501','20095','22','0','100','1','3','10040','0','0','0','0','54','-10479','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2009502','20095','22','0','100','1','34','10040','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
@@ -19597,10 +19592,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2345304','23453','0','0','100','1025','0','0','3000','3000','0','0','11','41440','1','256','0','0','0','0','0','0','0','0','Altar Defender - Cast Shoot'),
 -- Illidan Stormrage 23467
 ('2346701','23467','11','0','100','0','0','0','0','0','0','0','11','24240','0','1','0','0','0','0','0','0','0','0','Lord Illidan - Cast Spawn - Red Lightning on Spawn'),
--- Netherwing Ray 23501
-('2350101','23501','9','0','100','1','0','20','7000','11000','0','0','11','35334','1','0','0','0','0','0','0','0','0','0','Netherwing Ray - Cast Nether Shock'),
-('2350102','23501','9','0','100','1','0','15','6000','9000','0','0','11','36659','4','32','0','0','0','0','0','0','0','0','Netherwing Ray - Cast Tail Sting'),
-('2350103','23501','9','0','100','1','0','10','11000','15000','0','0','11','17008','4','0','0','0','0','0','0','0','0','0','Netherwing Ray - Cast Drain Mana'),
+-- Netherwing Ray 23501 - npc_nether_ray 
 
 
 
@@ -19820,8 +19812,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1714304','17143','2','0','100','1','40','0','12000','20000','0','0','11','11642','0','0','0','0','0','0','0','0','0','0','Wrekt Seer - Cast Heal When Below 40% HP'),
 -- Boulderfist Invader
 ('1826001','18260','0','0','100','1','4000','7000','6000','20000','0','0','11','2676','1','0','0','0','0','0','0','0','0','0','Boulderfist Invader - Cast Pulverize'),
--- Unkor the Ruthless - mob_unkor_the_ruthless
-('1826201','18262','0','0','100','1','4000','7000','6000','20000','0','0','11','2676','1','0','0','0','0','0','0','0','0','0','Unkor the Ruthless - Cast Pulverize'),
+-- Unkor the Ruthless (18262) - mob_unkor_the_ruthless
 -- Rakoria
 ('1838501','18385','1','0','100','1','310000','310000','310000','310000','0','0','1','-10302','0','0','0','0','0','0','0','0','0','0','Rakoria - Gossip Speech'),
 ('1838502','18385','1','0','100','1','310200','310200','310200','310200','0','0','1','-10303','0','0','5','5','0','0','0','0','0','0','Rakoria - Gossip Speech and Emote'),
@@ -25957,10 +25948,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2047801','20478','11','0','100','6','0','0','0','0','0','0','11','35259','0','1','0','0','0','0','0','0','0','0','Arcane Servant - Cast Spotlight on Spawn'),
 ('2047802','20478','0','0','100','7','3600','10800','16900','26500','0','0','11','35255','1','0','0','0','0','0','0','0','0','0','Arcane Servant - Cast Arcane Volley'),
 ('2047803','20478','6','0','100','6','0','0','0','0','0','0','11','22271','0','7','0','0','0','0','0','0','0','0','Arcane Servant - Cast Arcane Explosion on Death'),
--- Raging Flames (4.3.4 Official Data - Normal/Heroic)
-('2048101','20481','11','0','100','6','0','0','0','0','0','0','11','35278','0','0','0','0','0','0','0','0','0','0','Raging Flames - Cast Raging Flames on Spawn'),
-('2048102','20481','0','0','100','3','15700','31300','15700','28900','0','0','11','35268','0','0','0','0','0','0','0','0','0','0','Raging Flames (Normal) - Cast Inferno'),
-('2048103','20481','0','0','100','5','15700','31300','15700','28900','0','0','11','39346','0','0','0','0','0','0','0','0','0','0','Raging Flames (Heroic) - Cast Inferno'),
+-- Raging Flames (20481) - npc_raging_flames
 -- Nether Charge (4.3.4 Official Data - Normal/Heroic) - Sniff Data
 ('2040501','20405','11','0','100','6','0','0','0','0','0','0','11','35150','0','0','11','37670','0','0','50','0','0','0','Nether Charge - Cast Nether Charge Passive, Cast Nether Charge Timer on Spawn and set React Passive'),
 ('2040502','20405','29','0','100','6','10500','10500','0','0','0','0','11','35151','0','2','0','0','0','0','0','0','0','0','Nether Charge - Prevent Combat Movement and Cast Nether Charge Pulse on Generic Timer'),
@@ -27473,9 +27461,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2180601','21806','1','0','100','2','10000','10000','0','0','0','0','11','37626','0','0','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Green Beam on OOC Timer'),
 ('2180602','21806','0','0','100','3','6800','10700','10300','13600','0','0','11','37531','4','0','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Mind Blast'),
 ('2180603','21806','13','0','100','3','8000','12000','0','0','0','0','11','39076','1','1','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Spell Shock on Target Casting'),
--- Inner Demon
-('2185701','21857','11','0','100','2','0','0','0','0','0','0','11','37713','0','1','0','0','0','0','0','0','0','0','Inner Demon - Cast Demonic Alignment on Spawn'),
-('2185702','21857','0','0','100','3','6100','8400','7900','12500','0','0','11','39309','1','0','0','0','0','0','0','0','0','0','Inner Demon - Cast Shadow Bolt'),
+-- Inner Demon (21857) - npc_inner_demon 
 -- Serpentshrine Lurker
 ('2186301','21863','4','0','100','2','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Serpentshrine Lurker - Set Phase 1 on Aggro'),
 ('2186302','21863','0','5','100','3','1000','3000','4000','8000','0','0','11','38655','1','0','0','0','0','0','0','0','0','0','Serpentshrine Lurker - Cast Poison Bolt Volley (Phase 1)'),
@@ -27505,10 +27491,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2200902','22009','0','0','100','3','0','0','2000','2000','0','0','11','38253','4','0','0','0','0','0','0','0','0','0','Tainted Elemental - Cast Poison Bolt'),
 -- Spore Drop Trigger
 ('2220701','22207','11','0','100','2','0','0','0','0','0','0','11','38575','0','0','50','0','0','0','0','0','0','0','Spore Drop Trigger - Cast Toxic Spores on Spawn and REACT_PASSIVE'),
--- Pure Spawn of Hydross
-('2203501','22035','11','0','100','2','0','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Pure Spawn of Hydross - Cast Elemental Spawn-in on Spawn'),
--- Tainted Spawn of Hydross
-('2203601','22036','11','0','100','2','0','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Tainted Spawn of Hydross - Cast Elemental Spawn-in on Spawn'),
+-- Pure Spawn of Hydross (22035) - npc_spawn_of_hydross
+-- Tainted Spawn of Hydross (22036) - npc_spawn_of_hydross
 -- Coilfang Elite
 ('2205501','22055','9','0','100','3','0','5','7000','11000','0','0','11','38260','1','0','0','0','0','0','0','0','0','0','Coilfang Elite - Cast Cleave'),
 ('2205502','22055','0','0','100','3','5000','9000','12000','15000','0','0','11','38262','1','1','0','0','0','0','0','0','0','0','Coilfang Elite - Cast Hamstring'),
@@ -27888,8 +27872,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Conjured Elemental 17167
 ('1716701','17167','4','0','100','0','0','0','0','0','0','0','57','1','40','0','0','0','0','0','0','0','0','0','Conjured Elemental - Enable Caster Mode on Aggro'),
 ('1716702','17167','0','0','100','1025','2500','2500','1900','2400','0','0','11','31012','1','256','0','0','0','0','0','0','0','0','Conjured Elemental - Cast Water Bolt'),
--- Human Footman - npc_human_footman
-('1721101','17211','9','0','100','3','0','8','5000','8000','0','0','11','37406','1','0','0','0','0','0','0','0','0','0','Human Footman - Cast Heroic Blow'),
+-- Human Footman (17211) - npc_human_footman
 -- Nightbane 17225 - boss_nightbane
 -- Kil'rek
 ('1722901','17229','0','0','100','3','4000','7000','9000','12000','0','0','11','30053','4','32','0','0','0','0','0','0','0','0','Kil''rek - Cast Amplify Flames'),
