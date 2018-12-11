@@ -14,6 +14,33 @@ SET @PGUID := 47300; -- pools
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(@CGUID+14, 1, -7514.660156, -915.672974, 457.576141, 3.736127, 0, 0),
+(@CGUID+14, 2, -7522.407227, -921.590881, 457.576141, 2.953870, 9*1000, 1247101),
+(@CGUID+14, 3, -7516.440918, -931.687744, 457.576141, 3.792673, 10*1000, 0),
+(@CGUID+14, 4, -7522.407227, -921.590881, 457.576141, 2.953870, 0, 0),
+(@CGUID+14, 5, -7505.688965, -910.193970, 457.576141, 1.669752, 8*1000, 0),
+(@CGUID+15, 1, -7490.720215, -880.021973, 464.983002, 5.248651, 10*1000, 0),
+(@CGUID+15, 2, -7481.521973, -874.042603, 464.983002, 0.481284, 0, 0),
+(@CGUID+15, 3, -7470.077148, -877.378235, 464.983002, 0.126284, 0, 0),
+(@CGUID+15, 4, -7458.394531, -869.081665, 464.983002, 0.715333, 0, 0),
+(@CGUID+15, 5, -7450.747559, -870.677246, 464.983856, 1.184211, 9*1000, 1247101),
+(@CGUID+15, 6, -7458.394531, -869.081665, 464.983002, 0.715333, 0, 0),
+(@CGUID+15, 7, -7470.077148, -877.378235, 464.983002, 0.126284, 0, 0),
+(@CGUID+15, 8, -7481.521973, -874.042603, 464.983002, 0.481284, 0, 0),
+(@CGUID+17, 1, -7413.560059, -900.291992, 464.983002, 0.223660, 0, 0),
+(@CGUID+17, 2, -7421.991211, -906.056030, 464.983002, 3.690406, 0, 0),
+(@CGUID+17, 3, -7403.992188, -930.876709, 464.983002, 5.342885, 0, 0),
+(@CGUID+17, 4, -7399.454102, -932.370972, 464.983002, 6.206038, 10*1000, 0),
+(@CGUID+17, 5, -7403.992188, -930.876709, 464.983002, 5.342885, 0, 0),
+(@CGUID+17, 6, -7421.991211, -906.056030, 464.983002, 3.690406, 0, 0),
+(@CGUID+17, 7, -7413.560059, -900.291992, 464.983002, 0.223660, 9*1000, 1247101),
+(@CGUID+19, 1, -7440.379883, -962.318970, 464.983978, 4.340725, 0, 0),
+(@CGUID+19, 2, -7436.921875, -954.072327, 464.984283, 1.303589, 0, 0),
+(@CGUID+19, 3, -7453.783203, -930.033630, 464.984283, 2.606565, 0, 0),
+(@CGUID+19, 4, -7463.512695, -931.216797, 464.984283, 3.183048, 10*1000, 0),
+(@CGUID+19, 5, -7453.783203, -930.033630, 464.984283, 2.606565, 0, 0),
+(@CGUID+19, 6, -7436.921875, -954.072327, 464.984283, 1.303589, 0, 0),
+(@CGUID+19, 7, -7440.379883, -962.318970, 464.983978, 4.340725, 9*1000, 1247101),
 (@CGUID+20, 1, -7701.18, -1089.75, 449.118, 100, 0, 0),
 (@CGUID+20, 2, -7693.23, -1096.28, 449.123, 100, 0, 0),
 (@CGUID+20, 3, -7687.57, -1104.84, 449.119, 100, 0, 0),
@@ -134,6 +161,26 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+26, 42, -7679.78, -1047.46, 440.219, 100, 0, 0),
 (@CGUID+26, 43, -7695.1, -1052.93, 440.674, 100, 0, 0),
 (@CGUID+26, 44, -7711.69, -1063.99, 445.176, 100, 0, 0),
+(@CGUID+44, 1, -7516.770020, -918.172974, 457.575989, 2.239943, 10*1000, 0),
+(@CGUID+44, 2, -7507.151855, -911.683411, 457.575989, 1.775773, 0, 1246101),
+(@CGUID+45, 1, -7459.910156, -871.228027, 464.983002, 0.594382, 0, 0),
+(@CGUID+45, 2, -7471.843262, -879.743896, 464.983002, 3.201117, 0, 0),
+(@CGUID+45, 3, -7476.855957, -879.560974, 464.983002, 3.524701, 10*1000, 0),
+(@CGUID+45, 5, -7471.843262, -879.743896, 464.983002, 3.201117, 0, 0),
+(@CGUID+45, 6, -7459.910156, -871.228027, 464.983002, 0.594382, 0, 0),
+(@CGUID+45, 7, -7456.350586, -866.346436, 464.984528, 1.374277, 0, 1246101),
+(@CGUID+46, 1, -7409.779785, -927.672974, 464.983002, 5.239215, 10*1000, 0),
+(@CGUID+46, 2, -7420.489746, -912.846130, 464.983002, 2.141603, 0, 1246101),
+(@CGUID+47, 1, -7449.359863, -932.479004, 464.983002, 1.968039, 10*1000, 0),
+(@CGUID+47, 2, -7437.153320, -949.930298, 464.983002, 5.298911, 0, 1246101),
+(@CGUID+48, 1, -7498.000000, -1037.510010, 449.242004, 3.782838, 0, 0),
+(@CGUID+48, 2, -7530.563965, -1058.321289, 449.242004, 0.583127, 5*1000, 0),
+(@CGUID+48, 3, -7498.000000, -1037.510010, 449.242004, 0.559570, 20*1000, 0),
+(@CGUID+48, 4, -7491.047363, -1032.294189, 449.242004, 0.559570, 0, 1246101),
+(@CGUID+52, 1, -7515.290039, -972.690002, 449.242004, 5.255889, 0, 0),
+(@CGUID+52, 2, -7526.435059, -972.025879, 449.242004, 2.119793, 20*1000, 0),
+(@CGUID+52, 3, -7530.816406, -983.255432, 449.242004, 3.828818, 20*1000, 0),
+(@CGUID+52, 4, -7515.290039, -972.690002, 449.242004, 5.255889, 0, 1246101),
 (@CGUID+65, 1, -7680.62, -1110.73, 449.126, 100, 0, 0),
 (@CGUID+65, 2, -7648.96, -1087.89, 449.164, 100, 0, 0),
 (@CGUID+66, 1, -7633.58, -1053.72, 449.164, 100, 0, 0),
@@ -165,7 +212,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+75, 1, -7664.98, -1005.61, 440.254, 100, 0, 0),
 (@CGUID+75, 2, -7684.11, -996.917, 440.204, 100, 0, 0),
 (@CGUID+75, 3, -7664.98, -1005.61, 440.254, 100, 0, 0),
-(@CGUID+75, 4, -7647.92, -1020.32, 440.232, 100, 0, 0);
+(@CGUID+75, 4, -7647.92, -1020.32, 440.232, 100, 0, 0),
+(@CGUID+343, 1, -7526.199707, -1055.150757, 449.242218, 5.39919, 10*1000, 0),
+(@CGUID+343, 2, -7505.534668, -1040.631714, 449.242218, 0.570566, 0, 0),
+(@CGUID+343, 3, -7501.283691, -1041.707275, 449.242218, 6.073851, 9*1000, 1247101),
+(@CGUID+343, 4, -7505.534668, -1040.631714, 449.242218, 0.570566, 0, 0),
+(@CGUID+344, 1, -7531.121094, -974.014465, 449.239990, 2.143344, 15*1000, 0),
+(@CGUID+344, 2, -7539.890137, -980.114990, 449.239990, 2.588665, 9*1000, 1247101);
 
 UPDATE creature_template SET MovementType=2 WHERE entry IN (11981,14601);
 DELETE FROM creature_movement_template WHERE entry IN (10162,11981,11983,13996,14601);
@@ -287,7 +340,52 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+96, @CGUID+95, 1155), -- Blackwing Technician -> Blackwing Technician
 (@CGUID+97, @CGUID+89, 9344), -- Blackwing Technician -> Vaelastrasz the Corrupt
 (@CGUID+42, @CGUID+41, 143), -- Death Talon Wyrmguard -> Death Talon Wyrmguard
-(@CGUID+43, @CGUID+41, 143); -- Death Talon Wyrmguard -> Death Talon Wyrmguard
+(@CGUID+43, @CGUID+41, 143), -- Death Talon Wyrmguard -> Death Talon Wyrmguard
+(@CGUID+339, @CGUID+136, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+340, @CGUID+136, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+143, @CGUID+142, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+144, @CGUID+142, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+145, @CGUID+142, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+146, @CGUID+142, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+147, @CGUID+142, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+148, @CGUID+142, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+149, @CGUID+142, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+150, @CGUID+142, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+48, @CGUID+142, 3), -- Death Talon Overseer -> Blackwing Technician
+(@CGUID+341, @CGUID+142, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+342, @CGUID+142, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+343, @CGUID+142, 3), -- Blackwing Spellbinder -> Blackwing Technician
+(@CGUID+151, @CGUID+159, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+152, @CGUID+159, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+153, @CGUID+159, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+154, @CGUID+159, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+158, @CGUID+159, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+155, @CGUID+159, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+157, @CGUID+159, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+156, @CGUID+159, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+160, @CGUID+159, 143), -- Blackwing Technician -> Blackwing Technician
+(@CGUID+52, @CGUID+159, 3), -- Death Talon Overseer -> Blackwing Technician
+(@CGUID+344, @CGUID+159, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+345, @CGUID+159, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+346, @CGUID+159, 3), -- Blackwing Spellbinder -> Blackwing Technician
+(@CGUID+30, @CGUID+105, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+29, @CGUID+105, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+44, @CGUID+105, 3), -- Death Talon Overseer -> Blackwing Technician
+(@CGUID+14, @CGUID+105, 3), -- Blackwing Spellbinder -> Blackwing Technician
+(@CGUID+31, @CGUID+114, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+32, @CGUID+114, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+45, @CGUID+114, 3), -- Death Talon Overseer -> Blackwing Technician
+(@CGUID+15, @CGUID+114, 3), -- Blackwing Spellbinder -> Blackwing Technician
+(@CGUID+18, @CGUID+134, 3), -- Blackwing Spellbinder -> Blackwing Technician
+(@CGUID+19, @CGUID+134, 3), -- Blackwing Spellbinder -> Blackwing Technician
+(@CGUID+35, @CGUID+134, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+36, @CGUID+134, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+47, @CGUID+134, 3), -- Death Talon Overseer -> Blackwing Technician
+(@CGUID+16, @CGUID+119, 3), -- Blackwing Spellbinder -> Blackwing Technician
+(@CGUID+17, @CGUID+119, 3), -- Blackwing Spellbinder -> Blackwing Technician
+(@CGUID+33, @CGUID+119, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+34, @CGUID+119, 3), -- Blackwing Warlock -> Blackwing Technician
+(@CGUID+46, @CGUID+119, 3); -- Death Talon Overseer -> Blackwing Technician
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (12557, 469, 12435, 1159, 0), -- Grethok the Controller -> Razorgore the Untamed
@@ -307,12 +405,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+11, 12434, 469, -7659.81, -1043.81, 407.282, 4.79965, 300, 300, 0, 0, 0, 0), -- Monster Generator (Blackwing)
 (@CGUID+12, 12434, 469, -7532.72, -1063.49, 407.282, 0.087266, 300, 300, 0, 0, 0, 0), -- Monster Generator (Blackwing)
 (@CGUID+13, 12435, 469, -7571.7, -1088.25, 413.465, 2.16421, 604800, 604800, 0, 0, 0, 0), -- Razorgore the Untamed
-(@CGUID+14, 12457, 469, -7514.66, -915.673, 457.743, 4.17682, 14400, 14400, 0, 0, 0, 0), -- Blackwing Spellbinder
-(@CGUID+15, 12457, 469, -7490.72, -880.022, 464.983, 5.32325, 14400, 14400, 0, 0, 0, 0), -- Blackwing Spellbinder
-(@CGUID+16, 12457, 469, -7411.74, -920.011, 464.983, 4.36365, 14400, 14400, 0, 0, 0, 0), -- Blackwing Spellbinder
-(@CGUID+17, 12457, 469, -7413.56, -900.292, 464.983, 0.753603, 14400, 14400, 5, 0, 0, 1), -- Blackwing Spellbinder
-(@CGUID+18, 12457, 469, -7448.26, -943.315, 464.983, 3.06753, 14400, 14400, 0, 0, 0, 0), -- Blackwing Spellbinder
-(@CGUID+19, 12457, 469, -7440.38, -962.319, 465.01, 4.3018, 14400, 14400, 0, 0, 0, 0), -- Blackwing Spellbinder
+(@CGUID+14, 12457, 469, -7514.66, -915.673, 457.743, 4.17682, 14400, 14400, 0, 0, 0, 2), -- Blackwing Spellbinder
+(@CGUID+15, 12457, 469, -7490.72, -880.022, 464.983, 5.32325, 14400, 14400, 0, 0, 0, 2), -- Blackwing Spellbinder
+(@CGUID+16, 12457, 469, -7411.74, -920.011, 464.983, 4.36365, 14400, 14400, 2, 0, 0, 1), -- Blackwing Spellbinder
+(@CGUID+17, 12457, 469, -7413.56, -900.292, 464.983, 0.753603, 14400, 14400, 0, 0, 0, 2), -- Blackwing Spellbinder
+(@CGUID+18, 12457, 469, -7448.26, -943.315, 464.983, 3.754815, 14400, 14400, 0, 0, 0, 0), -- Blackwing Spellbinder
+(@CGUID+19, 12457, 469, -7440.38, -962.319, 465.01, 4.3018, 14400, 14400, 0, 0, 0, 2), -- Blackwing Spellbinder
 (@CGUID+20, 12458, 469, -7710.56, -1074.25, 445.231, 5.25651, 600, 600, 0, 0, 0, 2), -- Blackwing Taskmaster
 (@CGUID+21, 12458, 469, -7711.3, -1076.48, 445.26, 2.37365, 600, 600, 0, 0, 0, 0), -- Blackwing Taskmaster
 (@CGUID+22, 12458, 469, -7714.44, -1074.78, 445.26, 5.88395, 600, 600, 0, 0, 0, 0), -- Blackwing Taskmaster
@@ -322,14 +420,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+26, 12458, 469, -7711.98, -1061.63, 445.257, 0.475976, 600, 600, 0, 0, 0, 2), -- Blackwing Taskmaster
 (@CGUID+27, 12458, 469, -7708.62, -1064.7, 445.26, 1.7658, 600, 600, 0, 0, 0, 0), -- Blackwing Taskmaster
 (@CGUID+28, 12458, 469, -7711.34, -1064.65, 445.26, 1.03316, 600, 600, 0, 0, 0, 0), -- Blackwing Taskmaster
-(@CGUID+29, 12459, 469, -7519.72, -924.978, 457.576, 4.17771, 14400, 14400, 0, 0, 0, 0), -- Blackwing Warlock
-(@CGUID+30, 12459, 469, -7506.75, -908.368, 457.576, 3.9809, 14400, 14400, 0, 0, 0, 0), -- Blackwing Warlock
-(@CGUID+31, 12459, 469, -7485.52, -879.601, 464.983, 4.68566, 14400, 14400, 0, 0, 0, 0), -- Blackwing Warlock
-(@CGUID+32, 12459, 469, -7453.46, -867.442, 464.983, 3.94111, 14400, 14400, 0, 0, 0, 0), -- Blackwing Warlock
-(@CGUID+33, 12459, 469, -7419.66, -900.648, 464.983, 3.17421, 14400, 14400, 0, 0, 0, 0), -- Blackwing Warlock
-(@CGUID+34, 12459, 469, -7399.84, -935.079, 464.983, 5.60629, 14400, 14400, 0, 0, 0, 0), -- Blackwing Warlock
-(@CGUID+35, 12459, 469, -7458.91, -926.418, 464.983, 2.81263, 14400, 14400, 0, 0, 0, 0), -- Blackwing Warlock
-(@CGUID+36, 12459, 469, -7435.58, -959.662, 465.011, 0.042043, 14400, 14400, 0, 0, 0, 0), -- Blackwing Warlock
+(@CGUID+29, 12459, 469, -7519.72, -924.978, 457.576, 4.17771, 14400, 14400, 2, 0, 0, 1), -- Blackwing Warlock
+(@CGUID+30, 12459, 469, -7506.75, -908.368, 457.576, 3.9809, 14400, 14400, 2, 0, 0, 1), -- Blackwing Warlock
+(@CGUID+31, 12459, 469, -7485.52, -879.601, 464.983, 4.68566, 14400, 14400, 2, 0, 0, 1), -- Blackwing Warlock
+(@CGUID+32, 12459, 469, -7453.46, -867.442, 464.983, 3.94111, 14400, 14400, 2, 0, 0, 1), -- Blackwing Warlock
+(@CGUID+33, 12459, 469, -7419.66, -900.648, 464.983, 3.17421, 14400, 14400, 2, 0, 0, 1), -- Blackwing Warlock
+(@CGUID+34, 12459, 469, -7399.84, -935.079, 464.983, 5.60629, 14400, 14400, 2, 0, 0, 1), -- Blackwing Warlock
+(@CGUID+35, 12459, 469, -7458.91, -926.418, 464.983, 2.81263, 14400, 14400, 1, 0, 0, 2), -- Blackwing Warlock
+(@CGUID+36, 12459, 469, -7435.58, -959.662, 465.011, 0.042043, 14400, 14400, 1, 0, 0, 2), -- Blackwing Warlock
 (@CGUID+37, 12460, 469, -7388.2, -955.983, 465.047, 2.33874, 14400, 14400, 0, 0, 0, 0), -- Death Talon Wyrmguard
 (@CGUID+38, 12460, 469, -7396.24, -961.435, 465.044, 2.25148, 14400, 14400, 0, 0, 0, 0), -- Death Talon Wyrmguard
 (@CGUID+39, 12460, 469, -7405.67, -964.438, 465.031, 2.00713, 14400, 14400, 0, 0, 0, 0), -- Death Talon Wyrmguard
@@ -337,15 +435,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+41, 12460, 469, -7435.86, -1052.22, 477.018, 0.750492, 14400, 14400, 0, 0, 0, 0), -- Death Talon Wyrmguard
 (@CGUID+42, 12460, 469, -7450.36, -1032.99, 476.981, 0.506145, 14400, 14400, 0, 0, 0, 0), -- Death Talon Wyrmguard
 (@CGUID+43, 12460, 469, -7446.95, -1044.77, 476.806, 0, 14400, 14400, 0, 0, 0, 0), -- Death Talon Wyrmguard
-(@CGUID+44, 12461, 469, -7516.77, -918.173, 457.576, 3.22554, 14400, 14400, 0, 0, 0, 0), -- Death Talon Overseer
-(@CGUID+45, 12461, 469, -7459.91, -871.228, 464.983, 0.829778, 14400, 14400, 0, 0, 0, 0), -- Death Talon Overseer
-(@CGUID+46, 12461, 469, -7409.78, -927.673, 464.983, 5.12372, 14400, 14400, 0, 0, 0, 0), -- Death Talon Overseer
-(@CGUID+47, 12461, 469, -7449.36, -932.479, 464.983, 1.94755, 14400, 14400, 0, 0, 0, 0), -- Death Talon Overseer
-(@CGUID+48, 12461, 469, -7498, -1037.51, 449.242, 3.75923, 14400, 14400, 5, 0, 0, 1), -- Death Talon Overseer
+(@CGUID+44, 12461, 469, -7516.77, -918.173, 457.576, 3.22554, 14400, 14400, 0, 0, 0, 2), -- Death Talon Overseer
+(@CGUID+45, 12461, 469, -7459.91, -871.228, 464.983, 0.829778, 14400, 14400, 0, 0, 0, 2), -- Death Talon Overseer
+(@CGUID+46, 12461, 469, -7409.78, -927.673, 464.983, 5.12372, 14400, 14400, 0, 0, 0, 2), -- Death Talon Overseer
+(@CGUID+47, 12461, 469, -7449.36, -932.479, 464.983, 1.94755, 14400, 14400, 0, 0, 0, 2), -- Death Talon Overseer
+(@CGUID+48, 12461, 469, -7498, -1037.51, 449.242, 3.75923, 14400, 14400, 0, 0, 0, 2), -- Death Talon Overseer
 (@CGUID+49, 12461, 469, -7461.63, -985.513, 449.782, 4.13643, 14400, 14400, 0, 0, 0, 0), -- Death Talon Overseer
 (@CGUID+50, 12461, 469, -7467.69, -995.597, 449.325, 0.453786, 14400, 14400, 0, 0, 0, 0), -- Death Talon Overseer
 (@CGUID+51, 12461, 469, -7459.26, -995.384, 449.785, 2.3911, 14400, 14400, 0, 0, 0, 0), -- Death Talon Overseer
-(@CGUID+52, 12461, 469, -7515.29, -972.69, 449.242, 6.00786, 14400, 14400, 0, 0, 0, 0), -- Death Talon Overseer
+(@CGUID+52, 12461, 469, -7515.29, -972.69, 449.242, 6.00786, 14400, 14400, 0, 0, 0, 2), -- Death Talon Overseer
 (@CGUID+53, 12463, 469, -7591.24, -941.373, 428.301, 1.27409, 14400, 14400, 0, 0, 0, 0), -- Death Talon Flamescale
 (@CGUID+54, 12463, 469, -7522.07, -924.434, 428.001, 2.07694, 14400, 14400, 0, 0, 0, 0), -- Death Talon Flamescale
 (@CGUID+55, 12463, 469, -7534.13, -924.27, 428.045, 0.855211, 14400, 14400, 0, 0, 0, 0), -- Death Talon Flamescale
@@ -631,7 +729,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+335, 16604, 469, -7592.7, -1029.95, 408.24, 5.32325, 10, 10, 0, 0, 0, 0), -- Blackwing Spell Marker
 (@CGUID+336, 16604, 469, -7626.67, -1009.63, 413.465, 3.19395, 10, 10, 0, 0, 0, 0), -- Blackwing Spell Marker
 (@CGUID+337, 16604, 469, -7599.65, -1077.8, 408.24, 3.54302, 10, 10, 0, 0, 0, 0), -- Blackwing Spell Marker
-(@CGUID+338, 16604, 469, -7583.24, -990.03, 407.282, 2.89725, 10, 10, 0, 0, 0, 0); -- Blackwing Spell Marker
+(@CGUID+338, 16604, 469, -7583.24, -990.03, 407.282, 2.89725, 10, 10, 0, 0, 0, 0), -- Blackwing Spell Marker
+-- Pack 1 (first room, entrance)
+(@CGUID+339, 12459, 469, -7547.44, -1041.23, 449.242, 3.03514, 604800, 604800, 2, 0, 0, 1), -- Blackwing Warlock
+(@CGUID+340, 12459, 469, -7547.4, -1017.41, 449.242, 1.7463, 604800, 604800, 2, 0, 0, 1), -- Blackwing Warlock
+-- Pack 2 (first room, wall on the right)
+(@CGUID+341, 12459, 469, -7494.59, -1037.94, 449.242, 3.61084, 604800, 604800, 2, 0, 0, 1), -- Blackwing Warlock
+(@CGUID+342, 12459, 469, -7519.54, -1055.8, 449.242, 4.25801, 604800, 604800, 0, 0, 0, 0), -- Blackwing Warlock
+(@CGUID+343, 12457, 469, -7526, -1055.04, 449.242, 5.39919, 604800, 604800, 0, 0, 0, 2), -- Blackwing Spellbinder
+-- Pack 3 (first room, alcove on the left)
+(@CGUID+344, 12457, 469, -7539.89, -980.115, 449.24, 2.57532, 604800, 604800, 0, 0, 0, 2), -- Blackwing Warlock
+(@CGUID+345, 12459, 469, -7518.77, -967.764, 449.24, 1.41136, 604800, 604800, 3, 0, 0, 1), -- Blackwing Warlock
+(@CGUID+346, 12459, 469, -7532.98, -978.992, 449.24, 5.66115, 604800, 604800, 3, 0, 0, 1); -- Blackwing Spellbinder
 
 -- ===========
 -- GAMEOBJECTS
@@ -766,8 +875,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1460101);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1246101,1247101,1460101);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1246101, 1, 20, 1, 2, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Death Talon Overseer - random movement'),
+(1246101, 21, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Death Talon Overseer - waypoint movement'),
+(1247101, 1, 15, 23017, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackwing Spellbinder - cast Arcane channeling'),
 (1460101, 1, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Ebonroc - random movement'),
 (1460101, 300, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ebonroc - waypoint movement');
 
