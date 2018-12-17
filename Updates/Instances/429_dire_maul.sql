@@ -561,16 +561,19 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+1004, 24, 494.681, 542.877, -25.3873, 0, 0, 0),
 (@CGUID+1004, 25, 445.971, 542.539, -21.5652, 0, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (11492,13280,14321,14323,14327,14351,14354,14483,14482,14241);
+DELETE FROM creature_movement_template WHERE entry IN (11492,13280,14321,14323,14325,14327,14351,14354,14483,14482,14241,14353);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- Alzzin the Wildshaper
 (11492, 0, 1, 274.844, -427.251, -119.962, 0, 30000, 1149201),
 (11492, 0, 2, 262.298, -445.57, -119.962, 0, 0, 1149202),
+-- Hydrospawn
 (13280, 0, 1, 4.57887, -438.407, -59.954, 0, 0, 0),
 (13280, 0, 2, -33.6927, -415.93, -59.9502, 0, 0, 0),
 (13280, 0, 3, -6.58793, -429.432, -59.9504, 0, 0, 0),
 (13280, 0, 4, 4.98108, -416.84, -59.9505, 0, 0, 0),
 (13280, 0, 5, -6.58793, -429.432, -59.9504, 0, 0, 0),
 (13280, 0, 6, -33.6927, -415.93, -59.9502, 0, 0, 0),
+-- Guard Fengus
 (14321, 0, 1, 316.544, 258.267, 11.224, 0, 0, 0),
 (14321, 0, 2, 287.744, 260.729, 2.86944, 0, 0, 0),
 (14321, 0, 3, 290.605, 280.1, 2.84881, 0, 0, 0),
@@ -600,6 +603,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14321, 0, 27, 407.48, 258.508, 12.2342, 0, 0, 0),
 (14321, 0, 28, 384.614, 256.412, 11.4396, 0, 0, 0),
 (14321, 0, 29, 358.866, 258.309, 12.2341, 0, 0, 0),
+-- Guard Slip'kik
 (14323, 0, 1, 558.634, 549.916, -25.3991, 0, 0, 0),
 (14323, 0, 2, 573.506, 563.22, -25.4018, 0, 0, 0),
 (14323, 0, 3, 573.226, 586.457, -25.4027, 0, 0, 0),
@@ -618,7 +622,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14323, 0, 16, 573.506, 563.22, -25.4018, 0, 0, 0),
 (14323, 0, 17, 558.634, 549.916, -25.3991, 0, 0, 0),
 (14323, 0, 18, 550.942, 528.12, -25.4017, 0, 0, 0),
--- Captain Kromcrush 14325
+-- Captain Kromcrush
 (14325, 0, 1, 537.6137, 481.9839, 29.463390, 100, 0, 0),
 (14325, 0, 2, 492.9615, 482.6955, 29.462610, 100, 0, 0),
 (14325, 0, 3, 491.6125, 531.2999, 27.914310, 100, 0, 0),
@@ -669,7 +673,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14351, 0, 12, 548.69, 592.682, -4.75477, 100, 0, 0),
 (14351, 0, 13, 557.799, 578.167, -4.75477, 100, 0, 0),
 (14351, 0, 14, 569.694, 583.972, -4.75477, 100, 0, 1435102),
--- Pusilin chase event
+-- Pusilin
 (14354, 0, 1, 86.1935, -197.888, -4.05657, 0, 1000, 1435401),
 (14354, 0, 2, 34.1275, -199.426, -4.13396, 0, 0, 0),
 (14354, 0, 3, -14.7334, -200.126, -4.12814, 0, 0, 0),
@@ -708,14 +712,25 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14354, 0, 36, 12.2961, -668.865, -12.6426, 0, 0, 0),
 (14354, 0, 37, 21.7663, -676.581, -12.6426, 0, 0, 0),
 (14354, 0, 38, 12.7601, -706.167, -12.6426, 0, 1000, 1435402),
-
+-- Dread Guard
 (14483, 0, 0, -38.48, 812.93, -29.535, 0, 0, 0),
+-- Xorothian Imp
 (14482, 0, 0, -38.48, 812.93, -29.535, 0, 0, 0),
+-- Ironbark the Redeemed
 (14241, 0, 1, -46.5029, -268.536, -57.4978, 0, 0, 0),
 (14241, 0, 2, -10.6115, -281.676, -53.7415, 0, 0, 0),
 (14241, 0, 3, 17.2824, -286.947, -52.2818, 0, 0, 0),
 (14241, 0, 4, 74.1724, -272.765, -54.8267, 0, 0, 0),
-(14241, 0, 5, 117.401, -277.83, -55.8552, 0, 30000, 14241);
+(14241, 0, 5, 117.401, -277.83, -55.8552, 0, 30000, 14241),
+-- Mizzle the Crafty
+(14353, 0, 1, 683.297, 484.384, 29.5445, 0.017, 0, 1435301),
+(14353, 0, 2, 728.943, 483.297, 28.1818, 0, 0, 0),
+(14353, 0, 3, 757.399, 482.508, 28.1779, 0, 0, 0),
+(14353, 0, 4, 768.05, 482.501, 29.5416, 0, 0, 0),
+(14353, 0, 5, 778.071, 482.738, 34.932, 0, 0, 0),
+(14353, 0, 6, 784.581, 481.701, 37.198, 0, 0, 0),
+(14353, 0, 7, 816.53, 482.302, 37.3182, 3.159, 1000, 1435307),
+(14353, 0, 8, 816.53, 482.302, 37.3182, 3.159, 10800000, 1435308);
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 
@@ -2803,7 +2818,7 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (179674, 40, 15, 23117, 0, 0, 14501, 40, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Ritual Bell Aura on Ritual Mob'),
 (179674, 45, 15, 23117, 0, 0, 14501, 40, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Ritual Bell Aura on Ritual Mob');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (14241,1149201,1149202,1432501,1435308,1435401,1435402,1435101,1435102);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (14241,1149201,1149202,1432501,1435301,1435307,1435308,1435401,1435402,1435101,1435102);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (14241, 1, 1, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'ironbark redeemed - emote'),
 (14241, 6, 1, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'ironbark redeemed - emote'),
@@ -2821,6 +2836,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1432501, 0, 29, 3, 0x01, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - npcFlags added'),
 (1432501, 0, 22, 45, 0x01, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Change faction to Ogre'),
 (1432501, 0, 0, 0, 0, 0, 0, 0, 0, 2000000269, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - 2st yell'),
+
+(1435301, 1, 0, 0, 0, 0, 0, 0, 0, 2000005822, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - say new king 1'),
+
+(1435307, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - pause WP Movement'),
+(1435307, 0, 0, 0, 0, 0, 0, 0, 0, 2000005823, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - say new king 2'),
+(1435307, 0, 29, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - npc_flag added'),
 
 (1435308, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - pause WP Movement'),
 (1435308, 0, 9, @OGUID+331, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - spawn tribute chest'),
@@ -2876,7 +2897,7 @@ INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalon
 
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (570901,570902,570903,570904,570905,573801,574301,574302);
+DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (570901,570902,570903,570904,570905,573801,574001,574301,574302,570801);
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Pusilin chase event
 (570901, 0, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'npc_flag removed'),
@@ -2912,6 +2933,9 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (573801, 1, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Start WP movement'),
 (573801, 1, 14, 8599, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - remove Enrage aura'),
 
+(574001, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - resume WP Movement'),
+(574001, 0, 29, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - npc_flag removed'),
+
 (574301, 0, 7, 7482, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (574301, 2, 3, 0, 0, 0, 14368, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0.7, ''),
 (574301, 4, 0, 0, 0, 0, 14368, 20, 0, 2000000455, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -2923,7 +2947,9 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (574302, 4, 0, 0, 0, 0, 14368, 20, 0, 2000000455, 0, 0, 0, 0, 0, 0, 0, ''),
 (574302, 7, 0, 0, 0, 0, 14368, 20, 0, 2000000456, 0, 0, 0, 0, 0, 0, 0, ''),
 (574302, 13, 0, 0, 0, 0, 14368, 20, 0, 2000000457, 0, 0, 0, 0, 0, 0, 0, ''),
-(574302, 20, 3, 0, 0, 0, 14368, 20, 0, 0, 0, 0, 0, 0, 0, 0, 3.07178, '');
+(574302, 20, 3, 0, 0, 0, 14368, 20, 0, 0, 0, 0, 0, 0, 0, 0, 3.07178, ''),
+
+(570801, 0, 15, 22799, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mizzle - cast King of the Gordok');
 
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
@@ -2940,7 +2966,7 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 (5525, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500.42, 540.966, -25.3846, 2.72271, 'WP movement'),
 (5525, 15, 18, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'despawn');
 
-DELETE FROM dbscript_string WHERE entry IN (2000000268,2000000269,2000000455,2000000456,2000000457,2000000543,2000007708,2000007709,2000007710,2000007711,2000007712);
+DELETE FROM dbscript_string WHERE entry IN (2000000268,2000000269,2000000455,2000000456,2000000457,2000000543,2000007708,2000007709,2000007710,2000007711,2000007712,2000005822,2000005823);
 DELETE FROM dbscript_string WHERE entry IN (2000005460,2000005461,2000005462,2000005562,2000005563);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 (2000000268, 'Hey, who Fengus callin\' a gnoll lover?!  Take da prisoners to da king; you smart to bring them with their weapons and show da king that they a threat.  I\'ll go see if Fengus talk smack when I give him da beatdown!  HAR!', 0, 6, 0, 0, 'Captain Kromcrush - Yell Fengus 1'),
@@ -2956,6 +2982,9 @@ INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `lan
 (2000007710, 'Next, I''ll place the wheel... to protect you from harm.', 0, 0, 0, 0, 'J''eevee say 2'),
 (2000007711, 'And finally the candle... to burn those who would thwart you!', 0, 0, 0, 0, 'J''eevee say 3'),
 (2000007712, '$N, my duties are complete and I shall now take my leave. Luck to you my fellow, and remember to keep the Bell, Wheel and Candle working!', 0, 0, 0, 0, 'J''eevee say 4'),
+
+(2000005822, 'OH NOES! Da king is dead! Uh... hail to da new king! Yeah!', 0, 1, 0, 0, 'mizzle the crafty - new king 1'),
+(2000005823, 'Yar, he\'s dead all right. That makes you da new king... well, all of you! Gordok is yours now, boss! You should talk to me so you can learn everything there is about being da king! I was... is his assistant! Yeah, that\'s why I\'m called da crafty one!', 0, 0, 0, 0, 'mizzle the crafty - new king 2'),
 
 (2000005460, 'If you want the key, you''ll have to catch me!', 0, 0, 0, 0, 'Pusilin 1'),
 (2000005461, 'Chase me if you dare! I run without a care!', 0, 0, 0, 0, 'Pusilin 2'),
