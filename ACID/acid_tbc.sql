@@ -18722,7 +18722,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Azurebeak (3.0.3 Official Data - Logs Only)
 ('2100501','21005','0','0','100','1','7100','11100','11000','14000','0','0','11','31273','1','0','0','0','0','0','0','0','0','0','Azurebeak - Cast Screech'),
 -- Disembodied Exarch
-('2105801','21058','1','0','100','1','1000','1000','300000','300000','0','0','11','36004','0','32','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Power Word: Fortitude OOC'),
+('2105801','21058','1','0','100','1','1000','1000','300000','300000','0','0','11','36004','15','32','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Power Word: Fortitude OOC'),
 ('2105802','21058','4','0','100','0','0','0','0','0','0','0','11','8258','0','0','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Devotion Aura on Aggro'),
 ('2105803','21058','14','0','100','1','2000','40','22000','22000','0','0','11','33910','12','1','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Heal Other on Friendly Missing HP'),
 -- Tormented Citizen 21065
