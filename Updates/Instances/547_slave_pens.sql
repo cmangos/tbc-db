@@ -390,128 +390,128 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (25973, 0, 0, 1, 0, 0, 0, NULL); -- Shaman Bonfire Bunny 002
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+12, @CGUID+30, 1679), -- Bogstrok -> Greater Bogstrok
-(@CGUID+13, @CGUID+30, 1679), -- Bogstrok -> Greater Bogstrok
-(@CGUID+9, @CGUID+29, 1679), -- Bogstrok -> Greater Bogstrok
-(@CGUID+14, @CGUID+29, 1679), -- Bogstrok -> Greater Bogstrok
-(@CGUID+132, @CGUID+84, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+133, @CGUID+84, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+134, @CGUID+84, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+145, @CGUID+84, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+118, @CGUID+85, 1167), -- Wastewalker Slave -> Coilfang Slavehandler
-(@CGUID+227, @CGUID+85, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+136, @CGUID+85, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+143, @CGUID+85, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+228, @CGUID+85, 1167), -- Wastewalker Slave -> Coilfang Slavehandler
-(@CGUID+69, @CGUID+60, 1679), -- Coilfang Champion -> Coilfang Champion
-(@CGUID+129, @CGUID+120, 1167), -- Wastewalker Worker -> Wastewalker Slave
-(@CGUID+225, @CGUID+120, 1167), -- Wastewalker Worker -> Wastewalker Slave
-(@CGUID+135, @CGUID+116, 1167), -- Wastewalker Worker -> Wastewalker Slave
-(@CGUID+226, @CGUID+116, 1167), -- Wastewalker Slave -> Wastewalker Slave
-(@CGUID+142, @CGUID+115, 1167), -- Wastewalker Worker -> Wastewalker Slave
-(@CGUID+142, @CGUID+229, 1167), -- Wastewalker Worker -> Wastewalker Slave
-(@CGUID+230, @CGUID+115, 1167), -- Wastewalker Worker -> Wastewalker Slave
-(@CGUID+230, @CGUID+229, 1167), -- Wastewalker Worker -> Wastewalker Slave
-(@CGUID+40, @CGUID+64, 1167), -- Coilfang Observer -> Coilfang Champion
-(@CGUID+96, @CGUID+64, 1167), -- Coilfang Enchantress -> Coilfang Champion
-(@CGUID+231, @CGUID+64, 1167), -- Coilfang Scale-Healer -> Coilfang Champion
-(@CGUID+207, @CGUID+64, 1167), -- Coilfang Ray -> Coilfang Champion
-(@CGUID+88, @CGUID+59, 1679), -- Coilfang Soothsayer -> Coilfang Champion
-(@CGUID+232, @CGUID+59, 1679), -- Coilfang Enchantress -> Coilfang Champion
-(@CGUID+95, @CGUID+59, 1679), -- Coilfang Enchantress -> Coilfang Champion
-(@CGUID+119, @CGUID+83, 1167), -- Wastewalker Slave -> Coilfang Slavehandler
-(@CGUID+140, @CGUID+83, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+141, @CGUID+83, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+233, @CGUID+83, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+5, @CGUID+22, 1167), -- Bogstrok -> Greater Bogstrok
-(@CGUID+6, @CGUID+22, 1167), -- Bogstrok -> Greater Bogstrok
-(@CGUID+7, @CGUID+22, 1167), -- Bogstrok -> Greater Bogstrok
-(@CGUID+25, @CGUID+22, 1167), -- Greater Bogstrok -> Greater Bogstrok
-(@CGUID+26, @CGUID+22, 1167), -- Greater Bogstrok -> Greater Bogstrok
-(@CGUID+15, @CGUID+31, 1167), -- Bogstrok -> Greater Bogstrok
-(@CGUID+16, @CGUID+31, 1167), -- Bogstrok -> Greater Bogstrok
-(@CGUID+17, @CGUID+31, 1167), -- Bogstrok -> Greater Bogstrok
-(@CGUID+32, @CGUID+31, 1167), -- Greater Bogstrok -> Greater Bogstrok
-(@CGUID+33, @CGUID+31, 1167), -- Greater Bogstrok -> Greater Bogstrok
-(@CGUID+2, @CGUID+1, 1167), -- Bogstrok -> Bogstrok
-(@CGUID+4, @CGUID+1, 1167), -- Bogstrok -> Bogstrok
-(@CGUID+24, @CGUID+1, 1167), -- Greater Bogstrok -> Bogstrok
-(@CGUID+87, @CGUID+68, 1679), -- Coilfang Soothsayer -> Coilfang Champion
-(@CGUID+91, @CGUID+68, 1679), -- Coilfang Enchantress -> Coilfang Champion
-(@CGUID+114, @CGUID+81, 1167), -- Wastewalker Slave -> Coilfang Slavehandler
-(@CGUID+234, @CGUID+81, 1167), -- Wastewalker Slave -> Coilfang Slavehandler
-(@CGUID+121, @CGUID+81, 1167), -- Wastewalker Slave -> Coilfang Slavehandler
-(@CGUID+144, @CGUID+81, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+122, @CGUID+82, 1167), -- Wastewalker Slave -> Coilfang Slavehandler
-(@CGUID+130, @CGUID+82, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+131, @CGUID+82, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+113, @CGUID+80, 1167), -- Wastewalker Slave -> Coilfang Slavehandler
-(@CGUID+123, @CGUID+80, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+235, @CGUID+80, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+124, @CGUID+80, 1167), -- Wastewalker Worker -> Coilfang Slavehandler
-(@CGUID+79, @CGUID+78, 1167), -- Coilfang Defender -> Coilfang Defender
-(@CGUID+43, @CGUID+44, 1679), -- Coilfang Technician -> Coilfang Technician
-(@CGUID+55, @CGUID+54, 1167), -- Coilfang Technician -> Coilfang Technician
-(@CGUID+98, @CGUID+54, 1167), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+104, @CGUID+54, 1167), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+99, @CGUID+52, 1167), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+102, @CGUID+52, 1167), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+100, @CGUID+48, 1167), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+101, @CGUID+48, 1167), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+200, @CGUID+48, 1167), -- Coilfang Technician -> Coilfang Technician
-(@CGUID+46, @CGUID+53, 1167), -- Coilfang Technician -> Coilfang Technician
-(@CGUID+103, @CGUID+53, 1167), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+110, @CGUID+53, 1167), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+106, @CGUID+42, 1679), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+112, @CGUID+42, 1679), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+72, @CGUID+73, 1679), -- Coilfang Defender -> Coilfang Defender
-(@CGUID+75, @CGUID+74, 1679), -- Coilfang Defender -> Coilfang Defender
-(@CGUID+70, @CGUID+71, 1679), -- Coilfang Defender -> Coilfang Defender
-(@CGUID+111, @CGUID+71, 1679), -- Coilfang Collaborator -> Coilfang Defender
-(@CGUID+105, @CGUID+56, 1679), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+107, @CGUID+56, 1679), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+108, @CGUID+45, 1679), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+109, @CGUID+45, 1679), -- Coilfang Collaborator -> Coilfang Technician
-(@CGUID+47, @CGUID+92, 1679), -- Coilfang Enchantress -> Coilfang Technician
-(@CGUID+50, @CGUID+92, 1679), -- Coilfang Technician -> Coilfang Technician
-(@CGUID+49, @CGUID+93, 1679), -- Coilfang Technician -> Coilfang Technician
-(@CGUID+51, @CGUID+93, 1679), -- Coilfang Enchantress -> Coilfang Technician
-(@CGUID+62, @CGUID+63, 1167), -- Coilfang Champion -> Coilfang Champion
-(@CGUID+3, @CGUID+8, 1167), -- Greater Bogstrok -> Bogstrok
-(@CGUID+20, @CGUID+8, 1167), -- Bogstrok -> Bogstrok
-(@CGUID+27, @CGUID+8, 1167), -- Greater Bogstrok -> Bogstrok
-(@CGUID+41, @CGUID+198, 1167), -- Coilfang Observer -> Coilfang Tempest
-(@CGUID+196, @CGUID+198, 1167), -- Coilfang Scale-Healer -> Coilfang Tempest
-(@CGUID+209, @CGUID+198, 1167), -- Coilfang Ray -> Coilfang Tempest
-(@CGUID+76, @CGUID+77, 1679), -- Coilfang Defender -> Coilfang Defender
-(@CGUID+38, @CGUID+195, 1167), -- Coilfang Observer -> Coilfang Scale-Healer
-(@CGUID+199, @CGUID+195, 1167), -- Coilfang Tempest -> Coilfang Scale-Healer
-(@CGUID+201, @CGUID+195, 1167), -- Coilfang Tempest -> Coilfang Scale-Healer
-(@CGUID+208, @CGUID+195, 1167), -- Coilfang Ray -> Coilfang Scale-Healer
-(@CGUID+66, @CGUID+65, 1167), -- Coilfang Champion -> Coilfang Champion
-(@CGUID+97, @CGUID+65, 1167), -- Coilfang Enchantress -> Coilfang Champion
-(@CGUID+194, @CGUID+65, 1167), -- Coilfang Scale-Healer -> Coilfang Champion
-(@CGUID+236, @CGUID+65, 1167), -- Coilfang Soothsayer -> Coilfang Champion
-(@CGUID+89, @CGUID+39, 1167), -- Coilfang Soothsayer -> Coilfang Observer
-(@CGUID+202, @CGUID+39, 1167), -- Coilfang Tempest -> Coilfang Observer
-(@CGUID+203, @CGUID+39, 1167), -- Coilfang Tempest -> Coilfang Observer
-(@CGUID+206, @CGUID+39, 1167), -- Coilfang Ray -> Coilfang Observer
-(@CGUID+237, @CGUID+39, 1167), -- Coilfang Scale-Healer -> Coilfang Observer
-(@CGUID+61, @CGUID+193, 1679), -- Coilfang Soothsayer -> Coilfang Champion
-(@CGUID+238, @CGUID+193, 1679), -- Coilfang Scale-Healer -> Coilfang Champion
-(@CGUID+94, @CGUID+193, 1679), -- Coilfang Champion -> Coilfang Champion
-(@CGUID+197, @CGUID+193, 1679), -- Coilfang Enchantress -> Coilfang Champion
-(@CGUID+127, @CGUID+128, 1167), -- Wastewalker Worker -> Wastewalker Worker
-(@CGUID+126, @CGUID+125, 1167), -- Wastewalker Worker -> Wastewalker Worker
-(@CGUID+18, @CGUID+34, 1679), -- Bogstrok -> Greater Bogstrok
-(@CGUID+19, @CGUID+34, 1679), -- Bogstrok -> Greater Bogstrok
-(@CGUID+35, @CGUID+34, 1679), -- Greater Bogstrok -> Greater Bogstrok
-(@CGUID+10, @CGUID+11, 1679), -- Bogstrok -> Bogstrok
-(@CGUID+21, @CGUID+11, 1679), -- Greater Bogstrok -> Bogstrok
-(@CGUID+28, @CGUID+11, 1679), -- Greater Bogstrok -> Bogstrok
-(@CGUID+67, @CGUID+205, 1167), -- Coilfang Observer -> Coilfang Defender
-(@CGUID+90, @CGUID+205, 1167), -- Coilfang Defender -> Coilfang Defender
-(@CGUID+204, @CGUID+205, 1167); -- Coilfang Observer -> Coilfang Defender
+(@CGUID+12, @CGUID+30, 1667), -- Bogstrok -> Greater Bogstrok
+(@CGUID+13, @CGUID+30, 1667), -- Bogstrok -> Greater Bogstrok
+(@CGUID+9, @CGUID+29, 1667), -- Bogstrok -> Greater Bogstrok
+(@CGUID+14, @CGUID+29, 1667), -- Bogstrok -> Greater Bogstrok
+(@CGUID+132, @CGUID+84, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+133, @CGUID+84, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+134, @CGUID+84, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+145, @CGUID+84, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+118, @CGUID+85, 1155), -- Wastewalker Slave -> Coilfang Slavehandler
+(@CGUID+227, @CGUID+85, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+136, @CGUID+85, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+143, @CGUID+85, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+228, @CGUID+85, 1155), -- Wastewalker Slave -> Coilfang Slavehandler
+(@CGUID+69, @CGUID+60, 1667), -- Coilfang Champion -> Coilfang Champion
+(@CGUID+129, @CGUID+120, 1155), -- Wastewalker Worker -> Wastewalker Slave
+(@CGUID+225, @CGUID+120, 1155), -- Wastewalker Worker -> Wastewalker Slave
+(@CGUID+135, @CGUID+116, 1155), -- Wastewalker Worker -> Wastewalker Slave
+(@CGUID+226, @CGUID+116, 1155), -- Wastewalker Slave -> Wastewalker Slave
+(@CGUID+142, @CGUID+115, 1155), -- Wastewalker Worker -> Wastewalker Slave
+(@CGUID+142, @CGUID+229, 1155), -- Wastewalker Worker -> Wastewalker Slave
+(@CGUID+230, @CGUID+115, 1155), -- Wastewalker Worker -> Wastewalker Slave
+(@CGUID+230, @CGUID+229, 1155), -- Wastewalker Worker -> Wastewalker Slave
+(@CGUID+40, @CGUID+64, 1155), -- Coilfang Observer -> Coilfang Champion
+(@CGUID+96, @CGUID+64, 1155), -- Coilfang Enchantress -> Coilfang Champion
+(@CGUID+231, @CGUID+64, 1155), -- Coilfang Scale-Healer -> Coilfang Champion
+(@CGUID+207, @CGUID+64, 1155), -- Coilfang Ray -> Coilfang Champion
+(@CGUID+88, @CGUID+59, 1667), -- Coilfang Soothsayer -> Coilfang Champion
+(@CGUID+232, @CGUID+59, 1667), -- Coilfang Enchantress -> Coilfang Champion
+(@CGUID+95, @CGUID+59, 1667), -- Coilfang Enchantress -> Coilfang Champion
+(@CGUID+119, @CGUID+83, 1155), -- Wastewalker Slave -> Coilfang Slavehandler
+(@CGUID+140, @CGUID+83, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+141, @CGUID+83, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+233, @CGUID+83, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+5, @CGUID+22, 1155), -- Bogstrok -> Greater Bogstrok
+(@CGUID+6, @CGUID+22, 1155), -- Bogstrok -> Greater Bogstrok
+(@CGUID+7, @CGUID+22, 1155), -- Bogstrok -> Greater Bogstrok
+(@CGUID+25, @CGUID+22, 1155), -- Greater Bogstrok -> Greater Bogstrok
+(@CGUID+26, @CGUID+22, 1155), -- Greater Bogstrok -> Greater Bogstrok
+(@CGUID+15, @CGUID+31, 1155), -- Bogstrok -> Greater Bogstrok
+(@CGUID+16, @CGUID+31, 1155), -- Bogstrok -> Greater Bogstrok
+(@CGUID+17, @CGUID+31, 1155), -- Bogstrok -> Greater Bogstrok
+(@CGUID+32, @CGUID+31, 1155), -- Greater Bogstrok -> Greater Bogstrok
+(@CGUID+33, @CGUID+31, 1155), -- Greater Bogstrok -> Greater Bogstrok
+(@CGUID+2, @CGUID+1, 1155), -- Bogstrok -> Bogstrok
+(@CGUID+4, @CGUID+1, 1155), -- Bogstrok -> Bogstrok
+(@CGUID+24, @CGUID+1, 1155), -- Greater Bogstrok -> Bogstrok
+(@CGUID+87, @CGUID+68, 1667), -- Coilfang Soothsayer -> Coilfang Champion
+(@CGUID+91, @CGUID+68, 1667), -- Coilfang Enchantress -> Coilfang Champion
+(@CGUID+114, @CGUID+81, 1155), -- Wastewalker Slave -> Coilfang Slavehandler
+(@CGUID+234, @CGUID+81, 1155), -- Wastewalker Slave -> Coilfang Slavehandler
+(@CGUID+121, @CGUID+81, 1155), -- Wastewalker Slave -> Coilfang Slavehandler
+(@CGUID+144, @CGUID+81, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+122, @CGUID+82, 1155), -- Wastewalker Slave -> Coilfang Slavehandler
+(@CGUID+130, @CGUID+82, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+131, @CGUID+82, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+113, @CGUID+80, 1155), -- Wastewalker Slave -> Coilfang Slavehandler
+(@CGUID+123, @CGUID+80, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+235, @CGUID+80, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+124, @CGUID+80, 1155), -- Wastewalker Worker -> Coilfang Slavehandler
+(@CGUID+79, @CGUID+78, 1155), -- Coilfang Defender -> Coilfang Defender
+(@CGUID+43, @CGUID+44, 1667), -- Coilfang Technician -> Coilfang Technician
+(@CGUID+55, @CGUID+54, 1155), -- Coilfang Technician -> Coilfang Technician
+(@CGUID+98, @CGUID+54, 1155), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+104, @CGUID+54, 1155), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+99, @CGUID+52, 1155), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+102, @CGUID+52, 1155), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+100, @CGUID+48, 1155), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+101, @CGUID+48, 1155), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+200, @CGUID+48, 1155), -- Coilfang Technician -> Coilfang Technician
+(@CGUID+46, @CGUID+53, 1155), -- Coilfang Technician -> Coilfang Technician
+(@CGUID+103, @CGUID+53, 1155), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+110, @CGUID+53, 1155), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+106, @CGUID+42, 1667), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+112, @CGUID+42, 1667), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+72, @CGUID+73, 1667), -- Coilfang Defender -> Coilfang Defender
+(@CGUID+75, @CGUID+74, 1667), -- Coilfang Defender -> Coilfang Defender
+(@CGUID+70, @CGUID+71, 1667), -- Coilfang Defender -> Coilfang Defender
+(@CGUID+111, @CGUID+71, 1667), -- Coilfang Collaborator -> Coilfang Defender
+(@CGUID+105, @CGUID+56, 1667), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+107, @CGUID+56, 1667), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+108, @CGUID+45, 1667), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+109, @CGUID+45, 1667), -- Coilfang Collaborator -> Coilfang Technician
+(@CGUID+47, @CGUID+92, 1667), -- Coilfang Enchantress -> Coilfang Technician
+(@CGUID+50, @CGUID+92, 1667), -- Coilfang Technician -> Coilfang Technician
+(@CGUID+49, @CGUID+93, 1667), -- Coilfang Technician -> Coilfang Technician
+(@CGUID+51, @CGUID+93, 1667), -- Coilfang Enchantress -> Coilfang Technician
+(@CGUID+62, @CGUID+63, 1155), -- Coilfang Champion -> Coilfang Champion
+(@CGUID+3, @CGUID+8, 1155), -- Greater Bogstrok -> Bogstrok
+(@CGUID+20, @CGUID+8, 1155), -- Bogstrok -> Bogstrok
+(@CGUID+27, @CGUID+8, 1155), -- Greater Bogstrok -> Bogstrok
+(@CGUID+41, @CGUID+198, 1155), -- Coilfang Observer -> Coilfang Tempest
+(@CGUID+196, @CGUID+198, 1155), -- Coilfang Scale-Healer -> Coilfang Tempest
+(@CGUID+209, @CGUID+198, 1155), -- Coilfang Ray -> Coilfang Tempest
+(@CGUID+76, @CGUID+77, 1667), -- Coilfang Defender -> Coilfang Defender
+(@CGUID+38, @CGUID+195, 1155), -- Coilfang Observer -> Coilfang Scale-Healer
+(@CGUID+199, @CGUID+195, 1155), -- Coilfang Tempest -> Coilfang Scale-Healer
+(@CGUID+201, @CGUID+195, 1155), -- Coilfang Tempest -> Coilfang Scale-Healer
+(@CGUID+208, @CGUID+195, 1155), -- Coilfang Ray -> Coilfang Scale-Healer
+(@CGUID+66, @CGUID+65, 1155), -- Coilfang Champion -> Coilfang Champion
+(@CGUID+97, @CGUID+65, 1155), -- Coilfang Enchantress -> Coilfang Champion
+(@CGUID+194, @CGUID+65, 1155), -- Coilfang Scale-Healer -> Coilfang Champion
+(@CGUID+236, @CGUID+65, 1155), -- Coilfang Soothsayer -> Coilfang Champion
+(@CGUID+89, @CGUID+39, 1155), -- Coilfang Soothsayer -> Coilfang Observer
+(@CGUID+202, @CGUID+39, 1155), -- Coilfang Tempest -> Coilfang Observer
+(@CGUID+203, @CGUID+39, 1155), -- Coilfang Tempest -> Coilfang Observer
+(@CGUID+206, @CGUID+39, 1155), -- Coilfang Ray -> Coilfang Observer
+(@CGUID+237, @CGUID+39, 1155), -- Coilfang Scale-Healer -> Coilfang Observer
+(@CGUID+61, @CGUID+193, 1667), -- Coilfang Soothsayer -> Coilfang Champion
+(@CGUID+238, @CGUID+193, 1667), -- Coilfang Scale-Healer -> Coilfang Champion
+(@CGUID+94, @CGUID+193, 1667), -- Coilfang Champion -> Coilfang Champion
+(@CGUID+197, @CGUID+193, 1667), -- Coilfang Enchantress -> Coilfang Champion
+(@CGUID+127, @CGUID+128, 1155), -- Wastewalker Worker -> Wastewalker Worker
+(@CGUID+126, @CGUID+125, 1155), -- Wastewalker Worker -> Wastewalker Worker
+(@CGUID+18, @CGUID+34, 1667), -- Bogstrok -> Greater Bogstrok
+(@CGUID+19, @CGUID+34, 1667), -- Bogstrok -> Greater Bogstrok
+(@CGUID+35, @CGUID+34, 1667), -- Greater Bogstrok -> Greater Bogstrok
+(@CGUID+10, @CGUID+11, 1667), -- Bogstrok -> Bogstrok
+(@CGUID+21, @CGUID+11, 1667), -- Greater Bogstrok -> Bogstrok
+(@CGUID+28, @CGUID+11, 1667), -- Greater Bogstrok -> Bogstrok
+(@CGUID+67, @CGUID+205, 1155), -- Coilfang Observer -> Coilfang Defender
+(@CGUID+90, @CGUID+205, 1155), -- Coilfang Defender -> Coilfang Defender
+(@CGUID+204, @CGUID+205, 1155); -- Coilfang Observer -> Coilfang Defender
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (25755, 547, 25740, 4112, 0), -- Ahunite Hailstone -> Ahune
