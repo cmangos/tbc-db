@@ -28959,10 +28959,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Amani Bear
 ('2358401','23584','0','0','100','3','1000','1000','28000','28000','0','0','11','42745','0','0','0','0','0','0','0','0','0','0','Amani Bear - Cast Frenzy'),
 ('2358402','23584','0','0','100','3','5000','5000','20000','20000','0','0','11','42747','1','0','0','0','0','0','0','0','0','0','Amani Bear - Cast Crunch Armor'),
--- Amani'shi Scout
-('2358601','23586','4','0','100','2','0','0','0','0','0','0','1','-10164','0','0','4','12104','0','0','11','42177','0','0','Amani''shi Scout - Yell and Sound and Cast Alert Drums on Aggro'),
-('2358602','23586','0','0','100','3','2000','2000','4000','5000','0','0','11','16496','1','0','0','0','0','0','0','0','0','0','Amani''shi Scout - Cast Shoot'),
-('2358603','23586','0','0','100','3','6000','6000','20000','24000','0','0','11','43205','1','0','0','0','0','0','0','0','0','0','Amani''shi Scout - Cast Multi-Shot'),
+-- Amani'shi Scout - npc_amanishi_scout
 -- Amani'shi Reinforcement
 ('2358701','23587','0','0','75','3','2000','2000','8000','8000','0','0','11','43298','1','0','0','0','0','0','0','0','0','0','Amani''shi Reinforcement - Cast Strike'),
 ('2358702','23587','4','0','75','2','0','0','0','0','0','0','11','32323','1','0','0','0','0','0','0','0','0','0','Amani''shi Reinforcement - Cast Charge on Aggro'),
@@ -31016,7 +31013,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10161','Your time is almost... up.','11002','1','0','17842','0'),
 ('-10162','%s defends himself in desperation.','0','2','0','Desperate Defense Text','0'),
 ('-10163','It\'s so cold, so dark.... I\'m not overacting, am I?','0','0','0','16473','0'),
-('-10164','Invaders! Sound the Alarm!','0','1','0','23586','0'),
+-- TBC PLEASE REUSE 10164
 ('-10165','You hear a faint unlocking sound...','0','2','0','Mechanar','0'),
 ('-10166','You have approximately five seconds to live.','11109','1','0','19710','0'),
 ('-10167','With the precise angle and velocity...','11112','1','0','19710','0'),
