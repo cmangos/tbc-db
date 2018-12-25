@@ -27667,10 +27667,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1640702','16407','6','0','20','2','0','0','0','0','0','0','1','-10015','-10016','-10017','0','0','0','0','0','0','0','0','Spectral Servant - Random Say on Death'),
 ('1640703','16407','1','0','10','3','300000','600000','300000','600000','0','0','1','-10091','-10092','-10093','0','0','0','0','0','0','0','0','Spectral Servant - Random Say Idle OOC'),
 ('1640704','16407','4','0','10','2','0','0','0','0','0','0','1','-10094','-10095','0','0','0','0','0','0','0','0','0','Spectral Servant - Random Say on Aggro'),
--- Phantom Valet 16408
-('1640801','16408','4','0','100','2','0','0','0','0','0','0','1','-10022','0','0','0','0','0','0','0','0','0','0','Phantom Valet - Yell on Aggro'),
-('1640802','16408','9','0','100','3','0','10','16000','25000','0','0','11','29584','0','0','0','0','0','0','0','0','0','0','Phantom Valet - Cast Demoralizing Shout'),
-('1640803','16408','6','0','20','2','0','0','0','0','0','0','1','-10021','0','0','0','0','0','0','0','0','0','0','Phantom Valet - Say on Death'),
+-- Phantom Valet 16408 - Need Detect Stealth Aura Check
+('1640801','16408','0','0','10','0','1000','1000','0','0','0','0','1','-11145','-11146','0','0','0','0','0','0','0','0','0','Phantom Valet - Say on Detect Stealth'),
+('1640802','16408','4','0','100','0','0','0','0','0','0','0','1','-11147','-11148','-11149','0','0','0','0','0','0','0','0','Phantom Valet - Random Say on Aggro'),
+('1640803','16408','6','0','100','0','0','0','0','0','0','0','1','-11150','-11151','-11152','0','0','0','0','0','0','0','0','Phantom Valet - Random Say on Death'),
+('1640804','16408','0','0','100','1','3000','6000','9000','15000','0','0','11','29584','15','0','0','0','0','0','0','0','0','0','Phantom Valet - Cast Demoralizing Shout'),
 -- Phantom Guest 16409
 ('1640901','16409','6','0','20','0','0','0','0','0','0','0','1','-10020','0','0','0','0','0','0','0','0','0','0','Phantom Guest - Say on Death'),
 ('1640902','16409','11','0','100','0','0','0','0','0','0','0','57','1','35','0','31','1','6','0','0','0','0','0','Phantom Guest - Enable Caster Mode and Set Random Phase 1-6 on Spawn'),
@@ -30868,8 +30869,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10018','You are spotted by the %s!','0','2','0','19440/22282/22134','0'),
 ('-10019','Wait... No! No!','0','0','0','16414','0'),
 ('-10020','Not... Fair...','0','0','0','16409','0'),
-('-10021','The fates have turned against me!','0','0','0','16408','0'),
-('-10022','Hey! Where do you think you are going, sneaking around like that?','0','1','0','16408','0'),
+-- TBC Please Re-USE 10021 - 10022
 ('-10023','Where am I? What...','0','0','0','16406','0'),
 ('-10024','What is happening?','0','0','0','16406','0'),
 ('-10025','You... will... pay...','0','0','0','16424','0'),
@@ -31922,6 +31922,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11142','You are not welcome here!','0','0','0',' Spectral Apprentice 16389','0'),
 ('-11143','You, hold there!','0','0','0',' Spectral Apprentice 16389','0'),
 ('-11144','I am lost...','0','0','0',' Spectral Apprentice 16389','0'),
+('-11145','Hey! Where do you think you are going, sneaking around like that?','0','1','0','Phantom Valet 16408 on Detect Stealth','0'),
+('-11146','Excuse me, are you trying to sneak by without an invitation?','0','0','0','Phantom Valet 16408 on Detect Stealth','0'),
+('-11147','We are besieged!','0','0','0','Phantom Valet 16408','0'),
+('-11148','You\'ll not ruin the celebration!','0','0','0','Phantom Valet 16408','0'),
+('-11149','Begone, outsider!','0','0','0','Phantom Valet 16408','0'),
+('-11150','The fates have turned against me!','0','0','0','Phantom Valet 16408','0'),
+('-11151','My time is done.','0','0','0','Phantom Valet 16408','0'),
+('-11152','No, not now! Not like this!','0','0','0','Phantom Valet 16408','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
