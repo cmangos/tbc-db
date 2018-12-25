@@ -27649,12 +27649,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1618101','16181','11','0','100','2','0','0','0','0','0','0','54','-11019','0','0','0','0','0','0','0','0','0','0','Rokad the Ravager - Emote on Spawn'),
 ('1618102','16181','9','0','100','3','0','5','12000','16000','0','0','11','29906','1','0','0','0','0','0','0','0','0','0','Rokad the Ravager - Cast Ravage'),
 -- Koren (16388) - NSR
--- Spectral Apprentice
-('1638901','16389','4','0','100','2','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Set Phase 1 on Aggro'),
-('1638902','16389','9','5','100','3','0','5','4000','7000','0','0','11','29618','1','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Cast Burning Brand (Phase 1)'),
-('1638903','16389','24','5','100','3','29618','10','5000','5000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Set Phase 2 on Target Max Burning Brand Aura Stack (Phase 1)'),
-('1638904','16389','28','3','100','3','29618','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Set Phase 1 on Target Missing Burning Brand Aura Stack (Phase 2)'),
-('1638905','16389','7','0','100','2','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Set Phase 0 on Evade'),
+-- Spectral Apprentice 16389
+('1638901','16389','4','0','100','0','0','0','0','0','0','0','1','-11142','-11143','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Say on Aggro'),
+('1638902','16389','6','0','100','0','0','0','0','0','0','0','1','-10945','-11144','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Say on Death'),
+('1638903','16389','0','0','100','1','0','3000','4000','7000','0','0','11','29618','1','0','0','0','0','0','0','0','0','0','Spectral Apprentice - Cast Burning Brand'),
 -- Vampiric Mistbat 16354
 ('1635401','16354','1','0','100','0','1000','1000','0','0','0','0','11','29363','0','32','0','0','0','0','0','0','0','0','Vampiric Mistbat - Cast Draining Touch OOC'),
 -- Lesser Scourgebat
@@ -31787,7 +31785,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10942','Halt!','0','0','0','Old Hillsbrad Foothills','0'),
 ('-10943','Surrender immediately!','0','0','0','Old Hillsbrad Foothills','0'),
 ('-10944','Stop them!','0','0','0','Old Hillsbrad Foothills','0'),
-('-10945','Why...?','0','0','0','Old Hillsbrad Foothills','0'),
+('-10945','Why...?','0','0','0','Old Hillsbrad Foothills/16389','0'),
 ('-10946','Blackmoore will have... your head!','0','0','0','Old Hillsbrad Foothills','0'),
 ('-10947','I was just... following orders.','0','0','0','Old Hillsbrad Foothills','0'),
 ('-10948','Cursed scum!','0','0','0','Old Hillsbrad Foothills','0'),
@@ -31921,6 +31919,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11139','We have waited forever for this day to come!','0','1','0','17964 17963','5'),
 ('-11140','I spit on the corpse of these filthy naga.','0','1','0','17964 17963','5'),
 ('-11141','Free at last!','0','1','0','17964 17963','5'),
+('-11142','You are not welcome here!','0','0','0',' Spectral Apprentice 16389','0'),
+('-11143','You, hold there!','0','0','0',' Spectral Apprentice 16389','0'),
+('-11144','I am lost...','0','0','0',' Spectral Apprentice 16389','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
