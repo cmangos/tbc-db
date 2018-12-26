@@ -22941,9 +22941,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Underbat 17724 (3.0.3 Official Data - Normal Logs Only)
 ('1772401','17724','33','0','100','3','0','0','4400','12900','0','0','11','34171','1','0','0','0','0','0','0','0','0','0','Underbat (Normal) - Cast Tentacle Lash on Facing Target Back'),
 ('1772402','17724','33','0','100','5','0','0','4000','8000','0','0','11','37956','1','0','0','0','0','0','0','0','0','0','Underbat (Heroic) - Cast Tentacle Lash on Facing Target Back'),
--- Underbog Lurker (3.0.3 Official Data - Normal Logs Only)
-('1772501','17725','4','0','100','6','0','0','0','0','0','0','11','34161','0','0','1','-10182','0','0','0','0','0','0','Underbog Lurker - Cast Wild Growth on Aggro'),
-('1772502','17725','0','0','100','6','5800','10800','0','0','0','0','28','0','34151','0','1','-10183','0','0','0','0','0','0','Underbog Lurker - Remove Wild Growth'),
+-- Underbog Lurker 17725 (3.0.3 Official Data - Normal Logs Only)
+('1772501','17725','4','0','100','0','0','0','0','0','0','0','11','34161','0','0','1','-10182','0','0','0','0','0','0','Underbog Lurker - Cast Wild Growth and Emote on Aggro'),
+('1772502','17725','0','0','100','0','10000','10000','0','0','0','0','28','0','34161','0','1','-10183','0','0','0','0','0','0','Underbog Lurker - Remove Wild Growth and Emote'),
 -- Wrathfin Myrmidon (3.0.3 Official Data - Normal Logs Only)
 ('1772601','17726','0','0','100','3','2300','8100','10600','20400','0','0','11','31410','1','0','0','0','0','0','0','0','0','0','Wrathfin Myrmidon (Normal) - Cast Coral Cut'),
 ('1772602','17726','0','0','100','5','2300','8100','10600','20400','0','0','11','37973','1','0','0','0','0','0','0','0','0','0','Wrathfin Myrmidon (Heroic) - Cast Coral Cut'),
