@@ -574,9 +574,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Graud (2820) - NSR
 -- Keena (2821) - NSR
 -- Cedrik Prose 2835
-('283501','2835','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Cedrik Prose - Spawn Enraged Gryphons and Yell on Aggro'),
+('283501','2835','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Cedrik Prose - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Urda 2851
-('285101','2851','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Urda - Spawn Enraged Wyverns and Yell on Aggro'),
+('285101','2851','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Urda - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Prismatic Exile 2887
 ('288701','2887','0','0','100','1','3300','3500','10500','16500','0','0','31','1','5','0','0','0','0','0','0','0','0','0','Prismatic Exile - Set random phase'),
 ('288702','2887','0','29','100','1','0','50','5500','5500','0','0','11','4933','0','1','57','1','35','0','0','0','0','0','Prismatic Exile - Cast Prismatic Form : Fire and Enable Caster Mode (Phase 1)'),
@@ -762,7 +762,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Broken Tooth (2850) - NSR
 -- Sigrun Ironhew (2860) - NSR
 -- Gorrik
-('286101','2861','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Gorrik - Spawn Enraged Wyverns and Yell on Aggro'),
+('286101','2861','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Gorrik - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Garek (2888) - NSR
 -- Stonevault Seer 2892 (3.1.1 Official Data)
 ('289201','2892','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Stonevault Seer - Enable Caster Mode on Aggro'),
@@ -1094,7 +1094,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('830402','8304','0','0','100','1','9000','12000','9000','12000','0','0','11','6253','1','0','0','0','0','0','0','0','0','0','Dreadscorn - Cast Backhand'),
 ('830403','8304','2','0','100','1','30','0','30000','35000','0','0','11','21049','0','1','0','0','0','0','0','0','0','0','Dreadscorn - Cast Bloodlust at 30% HP'),
 -- Alexandra Constantine
-('860901','8609','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Alexandra Constantine - Spawn Enraged Gryphons and Yell on Aggro'),
+('860901','8609','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Alexandra Constantine - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Infernal Servant (8616) - NSR
 -- Felbeast (3.3.0a Official Data)
 ('867501','8675','0','0','100','1','10100','16100','16800','24400','0','0','11','13321','1','0','0','0','0','0','0','0','0','0','Felbeast - Cast Mana Burn'),
@@ -1167,7 +1167,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jade (1063) - Scripted In Another Zone
 -- Felder Stover (1296) - NSR
 -- Borgus Stoutarm (3.1.3 Official Data)
-('229901','2299','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Borgus Stoutarm - Spawn Enraged Gryphons and Yell on Aggro'),
+('229901','2299','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Borgus Stoutarm - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Gabrielle Chase (3298) - NSR
 -- Gruna (3708) - NSR
 -- Spirit Healer (6491) - NSR
@@ -1346,7 +1346,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1026202','10262','1','0','100','1','60000','60000','180000','180000','0','0','1','-585','-586','-587','0','0','0','0','0','0','0','0','Opus - Random Say 2'),
 -- Tinkee Steamboil (10267) - NSR
 -- Vahgruk (3.1.3 Official Data)
-('1317701','13177','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Vahgruk - Spawn Enraged Wyverns and Yell on Aggro'),
+('1317701','13177','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Vahgruk - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Rogue Black Drake (3.1.3 Official Data)
 ('1438801','14388','0','0','100','1','6100','12800','7200','15700','0','0','11','8873','1','0','0','0','0','0','0','0','0','0','Rogue Black Drake - Cast Flame Breath'),
 -- Expeditionary Mountaineer 14390
@@ -2016,7 +2016,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Farrin Daris (2112) - NSR
 -- Watcher Callahan (2142) - NSR
 -- Felicia Maline
-('240901','2409','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Felicia Maline - Spawn Enraged Gryphons and Yell on Aggro'),
+('240901','2409','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Felicia Maline - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Flesh Eating Worm (2462) - NSR
 -- Watcher Fraizer (2470) - NSR
 -- Sloth
@@ -2454,9 +2454,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1235204','12352','14','0','100','1','1000','40','15000','20000','0','0','11','17233','12','1','0','0','0','0','0','0','0','0','Scarlet Trooper - Cast Holy Light on Friendly Missing HP'),
 -- Augustus the Touched (12384) - npc_augustus_the_touched
 -- Khaelyn Steelwing
-('1261701','12617','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Khaelyn Steelwing - Spawn Enraged Gryphons and Yell on Aggro'),
+('1261701','12617','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Khaelyn Steelwing - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Georgia
-('1263601','12636','4','0','100','0','0','0','0','0','0','0','12','9521','1','30000','12','9521','1','30000','1','-548','0','0','Georgia - Spawn Enraged Felbat on Aggro'),
+('1263601','12636','4','0','100','0','0','0','0','0','0','0','11','14252','0','0','1','-548','0','0','0','0','0','0','Georgia - Cast Summon Enraged Felbat on Aggro'),
 -- Jase Farlane (12941) - NSR
 -- Crimson Bodyguard
 ('1311801','13118','9','0','100','1','8','25','15000','25000','0','0','11','15749','4','0','0','0','0','0','0','0','0','0','Crimson Bodyguard - Cast Shield Charge'),
@@ -2544,7 +2544,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Emissary Whitebeard (17069) - NSR
 -- Emissary Gormok (17072) - NSR
 -- William Kielar
-('1720901','17209','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','William Kielar - Spawn Enraged Gryphons and Yell on Aggro'),
+('1720901','17209','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','William Kielar - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Lordaeron Commander (17635) - NSR
 -- Lordaeron Soldier (17647) - NSR
 -- Scourge Siege Engineer (17878) - NSR
@@ -2874,7 +2874,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- School of Fish (6145) - NSR
 -- Cat (6368) - NSR
 -- Spirit Healer (6491) - NSR
--- Enraged Felbat (9521) - SCRIPTED IN ANOTHER ZONE
 -- Crimson Cannon 11199
 ('1119901','11199','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Crimson Cannon - Prevent Movement and Prevent Melee on Spawn'),
 ('1119902','11199','9','0','100','1','0','40','1000','1500','0','0','11','17501','1','0','0','0','0','0','0','0','0','0','Crimson Cannon - Cast Cannon Fire'),
@@ -3076,7 +3075,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anathos (16185) - NSR
 -- Vara (16186) - NSR
 -- Skymistress Gloaming (3.0.3 Official Data)
-('1619201','16192','4','0','100','0','0','0','0','0','0','0','12','9521','1','30000','12','9521','1','30000','1','-548','0','0','Skymistress Gloaming - Spawn Enraged Felbat on Aggro'),
+('1619201','16192','4','0','100','0','0','0','0','0','0','0','11','14252','0','0','1','-548','0','0','0','0','0','0','Skymistress Gloaming - Cast Summon Enraged Felbat on Aggro'),
 -- Apothecary Thedra (16196) - NSR
 -- Magistrix Landra Dawnstrider (16210) - NSR
 -- Silvermoon Guardian (16221) - guard_eversong
@@ -3204,15 +3203,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('567602','5676','2','0','100','0','30','0','0','0','0','0','11','7750','0','1','0','0','0','0','0','0','0','0','Summoned Voidwalker - Cast Consuming Rage at 30% HP'),
 -- Spirit Healer (6491) - NSR
 -- Crab (6827) - NSR
--- Enraged Felbat
-('952101','9521','1','0','100','0','1000','1000','0','0','0','0','11','3616','0','32','0','0','0','0','0','0','0','0','Enraged Felbat - Cast Poison Proc OOC'),
 -- Frog (13321) - NSR
 -- Spider (14881) - NSR
 -- Maggot (16030) - NSR
 -- Larva (16068) - NSR
 -- Quartermaster Lymel (16187) - NSR
 -- Skymaster Sunwing
-('1618901','16189','4','0','100','0','0','0','0','0','0','0','12','9521','1','30000','12','9521','1','30000','1','-548','0','0','Skymaster Sunwing - Spawn Enraged Felbat on Aggro'),
+('1618901','16189','4','0','100','0','0','0','0','0','0','0','11','14252','0','0','1','-548','0','0','0','0','0','0','Skymaster Sunwing - Cast Summon Enraged Felbat on Aggro'),
 -- Arcanist Vandril (16197) - NSR
 -- Apothecary Renzithen (16198) - NSR
 -- Magister Darenis (16199) - NSR
@@ -3700,7 +3697,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('238705','2387','9','0','100','1025','0','40','3400','4800','0','0','11','20806','1','256','0','0','0','0','0','0','0','0','Hillsbrad Councilman - Cast Frostbolt'),
 -- Innkeeper Shay (2388) - npc_innkeeper
 -- Zarise
-('238901','2389','4','0','100','0','0','0','0','0','0','0','12','9521','1','30000','12','9521','1','30000','1','-548','0','0','Zarise - Spawn Enraged Felbat on Aggro'),
+('238901','2389','4','0','100','0','0','0','0','0','0','0','11','14252','0','0','1','-548','0','0','0','0','0','0','Zarise - Cast Summon Enraged Felbat on Aggro'),
 -- Aranae Venomblood (2390) - NSR
 -- Serge Hinott (2391) - NSR
 -- Delia Verana (2392) - NSR
@@ -3737,7 +3734,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Novice Thaivand (2429) - NSR
 -- Chef Jessen (2430) - NSR
 -- Darla Harris
-('243201','2432','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Darla Harris - Spawn Enraged Gryphons and Yell on Aggro'),
+('243201','2432','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Darla Harris - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Helcular's Remains
 ('243301','2433','11','0','100','0','0','0','0','0','0','0','1','-928','-929','-930','0','0','0','0','0','0','0','0','Helcular''s Remains - Yell on Spawn'),
 ('243302','2433','4','0','100','0','0','0','0','0','0','0','1','-931','0','0','11','4950','0','0','0','0','0','0','Helcular''s Remains - Yell and Cast Summon Helcular''s Puppets on Aggro'),
@@ -3817,7 +3814,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dun Garok Soldier
 ('736001','7360','0','0','100','1','1000','1000','180000','180000','0','0','11','7164','0','1','0','0','0','0','0','0','0','0','Dun Garok Soldier - Cast Defensive Stance'),
 ('736002','7360','9','0','100','1','0','5','9000','15000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Dun Garok Soldier - Cast Shield Bash'),
--- Enraged Felbat (9521) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Wesley
 ('997801','9978','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Wesley - Flee at 15% HP'),
 -- Theodore Mont Claire (10057) - NSR
@@ -3866,7 +3862,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Goli Krumn 1365
 -- Gretta Finespindle 1466
 -- Gryth Thurden
-('157301','1573','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Gryth Thurden - Spawn Enraged Gryphons and Yell on Aggro'),
+('157301','1573','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Gryth Thurden - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Uthrar Threx 1703
 -- Kelstrum Stonebreaker 1901
 -- Pilot Longbeard 2092
@@ -4470,7 +4466,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('142501','1425','14','0','100','1','235','40','20100','28100','0','0','11','6074','12','0','0','0','0','0','0','0','0','0','Grizlak - Cast Renew at Approx 150 HP Damage on Friendly Missing HP'),
 ('142502','1425','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Grizlak - Flee at 15% HP'),
 -- Thorgrum Borrelson (2.4.3 Official Data)
-('157201','1572','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Thorgrum Borrelson - Spawn Enraged Gryphons and Yell on Aggro'),
+('157201','1572','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Thorgrum Borrelson - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Ram (2.4.3 Official Data)
 ('209801','2098','2','0','100','0','99','0','0','0','0','0','25','0','0','0','0','0','0','0','0','0','0','0','Ram - Flee at 99% HP'),
 -- Dark Iron Raider (2.4.3 Official Data)
@@ -4653,7 +4649,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Servant of Ilgalar (2.4.3 Official Data)
 ('81901','819','0','0','100','1','600','8800','27300','37300','0','0','11','8129','4','0','0','0','0','0','0','0','0','0','Servant of Ilgalar - Cast Mana Burn'),
 -- Ariena Stormfeather (2.4.3 Official Data)
-('93101','931','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Ariena Stormfeather - Spawn Enraged Gryphons and Yell on Aggro'),
+('93101','931','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Ariena Stormfeather - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Rohh the Silent (2.4.3 Official Data)
 ('94701','947','1','0','100','0','1000','1000','0','0','0','0','11','3616','0','32','11','30831','0','32','0','0','0','0','Rohh the Silent - Cast Poison Proc and Cast Stealth OOC'),
 -- Murloc Shorestriker (2.4.3 Official Data)
@@ -4702,9 +4698,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Searing Gorge
 -- =============
 -- Lanie Reed
-('294101','2941','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Lanie Reed - Spawn Enraged Gryphons and Yell on Aggro'),
+('294101','2941','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Lanie Reed - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Grisha
-('330501','3305','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Grisha - Spawn Enraged Wyverns and Yell on Aggro'),
+('330501','3305','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Grisha - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Margol the Rager
 ('583301','5833','0','0','100','1','5000','8000','8000','14000','0','0','11','15549','1','1','0','0','0','0','0','0','0','0','Margol the Rager - Cast Chained Bolt'),
 ('583302','5833','9','0','100','1','0','8','16000','20000','0','0','11','8147','0','1','0','0','0','0','0','0','0','0','Margol the Rager - Cast Thunderclap'),
@@ -5352,7 +5348,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Edwin Harly (2140) - NSR
 -- Reef Frenzy (2173) - NSR
 -- Karos Razok
-('222601','2226','4','0','100','0','0','0','0','0','0','0','12','9521','1','30000','12','9521','1','30000','1','-548','0','0','Karos Razok - Spawn Enraged Felbat on Aggro'),
+('222601','2226','4','0','100','0','0','0','0','0','0','0','11','14252','0','0','1','-548','0','0','0','0','0','0','Karos Razok - Cast Summon Enraged Felbat on Aggro'),
 -- Ravenclaw Regent
 ('228301','2283','0','0','100','1','8000','16000','27000','38000','0','0','11','970','4','0','0','0','0','0','0','0','0','0','Ravenclaw Regent - Cast Shadow Word: Pain'),
 ('228302','2283','0','0','100','1','12000','18000','26000','31000','0','0','11','7645','5','1','0','0','0','0','0','0','0','0','Ravenclaw Regent - Cast Dominate Mind'),
@@ -5406,7 +5402,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tiev Mordune (7007) - NSR
 -- Silverpine Deathguard (7489) - NSR
 -- Mura Runetotem (8385) - NSR
--- Enraged Felbat (9521) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Nadia Vernon (9553) - NSR
 -- Sarah Goode (9979) - NSR
 -- Infected Squirrel (10779) - NSR
@@ -5445,7 +5440,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mazen Mac'Nadir 338
 -- Kendor Kabonka 340
 -- Dungar Longdrink
-('35201','352','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Dungar Longdrink - Spawn Enraged Gryphons and Yell on Aggro'),
+('35201','352','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Dungar Longdrink - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- High Priestess Laurena 376
 -- Demisette Cloyce 461
 -- General Marcus Jonathan
@@ -6099,7 +6094,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Snapjaw Crocolisk
 ('115201','1152','0','0','100','1','11200','12000','11200','12000','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Snapjaw Crocolisk - Cast Tendon Rip'),
 -- Thysta
-('138701','1387','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Thysta - Spawn Enraged Wyverns and Yell on Aggro'),
+('138701','1387','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Thysta - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Zanzil Zombie 1488
 ('148801','1488','0','0','75','0','4000','8000','0','0','0','0','11','7102','1','32','0','0','0','0','0','0','0','0','Zanzil Zombie - Cast Contagion of Rot'),
 -- Zanzil Hunter 1489
@@ -6213,9 +6208,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('263801','2638','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Syndicate Spectre - Enable Caster Mode on Aggro'),
 ('263802','2638','9','0','100','1025','0','40','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Syndicate Spectre - Cast Shadow Bolt'),
 -- Gringer 2858
-('285801','2858','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Gringer - Spawn Enraged Wyverns and Yell on Aggro'),
+('285801','2858','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Gringer - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Gyll 2859
-('285901','2859','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Gyll - Spawn Enraged Gryphons and Yell on Aggro'),
+('285901','2859','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Gyll - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Murkgill Forager 4457
 ('445701','4457','1','0','100','0','1000','1000','0','0','0','0','11','3616','0','32','0','0','0','0','0','0','0','0','Murkgill Forager - Cast Poison Proc OOC'),
 ('445702','4457','0','0','100','1','1000','2000','19900','30000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Murkgill Forager - Cast Rend'),
@@ -6271,7 +6266,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1609603','16096','9','0','100','1025','0','18','11000','18000','0','0','11','12024','1','1024','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Cast Net'),
 ('1609604','16096','9','0','100','1025','5','30','2200','3800','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Cast Shoot'),
 -- Nizzle
-('2436601','24366','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Nizzle - Spawn Enraged Gryphons and Yell on Aggro'),
+('2436601','24366','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Nizzle - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Rocket Chicken 25109
 ('2510901','25109','1','0','100','1','0','0','30000','30000','0','0','11','45252','0','0','0','0','0','0','0','0','0','0','Rocket Chicken - Cast Rocket Chicken OOC'),
 ('2510902','25109','1','0','15','1','5000','5000','30000','30000','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Rocket Chicken - Die OOC'),
@@ -6426,7 +6421,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Katar (5593) - NSR
 -- Ongeku (5622) - NSR
 -- Breyk
-('602601','6026','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Breyk - Spawn Enraged Wyverns and Yell on Aggro'),
+('602601','6026','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Breyk - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Spirit Healer (6491) - NSR
 -- Huge Toad (6653) - NSR
 -- Lost One Rift Traveler (6913) - NSR
@@ -6613,7 +6608,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('292801','2928','9','0','100','1','0','5','13000','16000','0','0','11','3252','1','0','0','0','0','0','0','0','0','0','Primitive Owlbeast - Cast Shred'),
 -- Savage Owlbeast (2929) - NSR
 -- Gorkas
-('431401','4314','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Gorkas - Spawn Enraged Wyverns and Yell on Aggro'),
+('431401','4314','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Gorkas - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Vilebranch Warrior
 ('446501','4465','9','0','100','1','0','5','5000','9000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Vilebranch Warrior - Cast Strike'),
 ('446502','4465','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Vilebranch Warrior - Flee at 15% HP'),
@@ -6666,7 +6661,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('799604','7996','9','0','100','1025','0','30','14000','20000','0','0','11','11639','4','32','0','0','0','0','0','0','0','0','Qiaga the Keeper - Cast Shadow Word: Pain'),
 ('799605','7996','9','0','100','1025','0','40','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Qiaga the Keeper - Cast Shadow Bolt'),
 -- Guthrum Thunderfist
-('801801','8018','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Guthrum Thunderfist - Spawn Enraged Gryphons and Yell on Aggro'),
+('801801','8018','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Guthrum Thunderfist - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Sharpbeak (8023) - NSR
 -- Sharpbeak's Father (8024) - NSR
 -- Sharpbeak's Mother (8025) - NSR
@@ -7171,7 +7166,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- William Montague 4549
 -- Ophelia Montague 4550
 -- Michael Garrett 4551
-('455101','4551','4','0','100','0','0','0','0','0','0','0','12','9521','1','30000','12','9521','1','30000','1','-548','0','0','Michael Garrett - Spawn Enraged Felbats and Yell on Aggro'),
+('455101','4551','4','0','100','0','0','0','0','0','0','0','11','14252','0','0','1','-548','0','0','0','0','0','0','Michael Garrett - Cast Summon Enraged Felbats and Yell on Aggro'),
 -- Eunice Burch 4552
 -- Ronald Burch 4553
 -- Tawny Grisette 4554
@@ -7336,7 +7331,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jeremiah Payson 8403
 -- Auctioneer Leeka 8672
 -- Auctioneer Epitwee 8721
--- Enraged Felbat (9521) - SCRIPTED IN ANOTHER ZONE
 -- Anya Maulray 10053
 -- Chemist Fuely 10136
 -- Lady Sylvanas Windrunner 10181 - npc_lady_sylvanas_windrunner
@@ -7771,7 +7765,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1242501','12425','33','0','100','1','1','0','7000','11000','0','0','11','12540','1','0','0','0','0','0','0','0','0','0','Flint Shadowmore - Cast Gouge on Facing Target'),
 ('1242502','12425','9','0','100','1','0','5','60000','60000','0','0','11','6434','0','1','0','0','0','0','0','0','0','0','Flint Shadowmore - Cast Slice and Dice'),
 -- Bibilfaz Featherwhistle 12596
-('1259601','12596','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Bibilfaz Featherwhistle - Spawn Enraged Gryphons and Yell on Aggro'),
+('1259601','12596','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Bibilfaz Featherwhistle - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Leonard Porter (12942) - NSR
 -- Elder Meadowrun (15602) - NSR
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
@@ -7928,7 +7922,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('52003','520','0','0','100','1','6400','11400','11500','25600','0','0','11','11976','1','1','0','0','0','0','0','0','0','0','Brack - Cast Strike'),
 ('52004','520','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Brack - Flee at 15% HP'),
 -- Thor (2.4.3 Official Data)
-('52301','523','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Thor - Spawn Enraged Gryphons and Yell on Aggro'),
+('52301','523','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Thor - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Defias Messenger (2.4.3 Official Data)
 ('55001','550','4','0','100','0','0','0','0','0','0','0','1','-209','-210','-211','0','0','0','0','0','0','0','0','Defias Messenger - Random Say on Aggro'),
 ('55002','550','2','0','100','0','30','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Messenger - Flee at 15% HP'),
@@ -8240,7 +8234,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('141803','1418','0','0','100','1025','11000','14300','16500','33300','0','0','11','12024','1','1024','0','0','0','0','0','0','0','0','Bluegill Raider - Cast Net'),
 ('141804','1418','9','0','100','1025','5','30','2700','3800','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Bluegill Raider - Cast Throw'),
 -- Shellei Brondir
-('157101','1571','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Shellei Brondir - Spawn Enraged Gryphons and Yell on Aggro'),
+('157101','1571','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Shellei Brondir - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Giant Wetlands Crocolisk
 ('208901','2089','0','0','90','1','6400','8000','20200','30200','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Giant Wetlands Crocolisk - Cast Tendon Rip'),
 -- Ma'ruk Wyrmscale
@@ -8689,7 +8683,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sentinel Thenysil
 ('407901','4079','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Sentinel Thenysil - Flee at 15% HP'),
 -- Daelyshia
-('426701','4267','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Daelyshia - Spawn Enraged Hippogryphs on Aggro'),
+('426701','4267','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Daelyshia - Cast Summon Enraged Hippogryph on Aggro'),
 -- Keeper Ordanus 4273 (3.3.0 Official Data)
 ('427301','4273','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Keeper Ordanus - Enable Caster Mode on Aggro'),
 ('427302','4273','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Keeper Ordanus - Flee at 15% HP'),
@@ -8739,8 +8733,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ashenvale Sentinel (8015) - NSR
 -- Alenndaar Lapidaar (8308) - NSR
 -- Voidwalker Minion (8996) - NSR
--- Enraged Hippogryph
-('952701','9527','0','0','100','1','3000','6000','12000','15000','0','0','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Hippogryph - Cast Rend'),
 -- Maluressian
 ('1005201','10052','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Maluressian - Flee at 15% HP'),
 -- Lady Vespia (3.3.0 Official Data)
@@ -8809,7 +8801,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1182001','11820','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Locke Okarr - Flee at 15% HP'),
 -- Fahrak (11829) - NSR
 -- Andruk
-('1190101','11901','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Andruk - Spawn Enraged Wyverns and Yell on Aggro'),
+('1190101','11901','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Andruk - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Ursol'lok
 ('1203701','12037','0','0','100','1','3000','5000','4000','7000','0','0','11','17156','1','0','0','0','0','0','0','0','0','0','Ursol''lok - Cast Maul'),
 -- Innkeeper Kaylisk (12196) - npc_innkeeper
@@ -8827,7 +8819,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1249801','12498','0','0','100','1','3000','6000','7000','10000','0','0','11','20667','1','0','0','0','0','0','0','0','0','0','Dreamstalker - Cast Corrosive Acid Breath'),
 ('1249802','12498','0','0','100','1','8000','11000','23000','30000','0','0','11','20669','4','1','0','0','0','0','0','0','0','0','Dreamstalker - Cast Sleep'),
 -- Vhulgra
-('1261601','12616','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Vhulgra - Spawn Enraged Wyverns and Yell on Aggro'),
+('1261601','12616','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Vhulgra - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Sharptalon (3.3.0 Official Data)
 ('1267601','12676','0','0','100','1','7400','9500','20200','28300','0','0','11','12097','1','0','0','0','0','0','0','0','0','0','Sharptalon - Cast Pierce Armor'),
 -- Shadumbra (3.3.0 Official Data)
@@ -8951,9 +8943,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Su'ura Swiftarrow (19908) - NSR
 -- Hutihu (19914) - NSR
 -- Suralais Farwind
-('2293501','22935','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Suralais Farwind - Spawn Enraged Hippogryphs on Aggro'),
+('2293501','22935','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Suralais Farwind - Cast Summon Enraged Hippogryph on Aggro'),
 -- Auhula
-('2293601','22936','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Auhula - Spawn Enraged Hippogryphs on Aggro'),
+('2293601','22936','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Auhula - Cast Summon Enraged Hippogryph on Aggro'),
 -- Rizzle Sprysprocket (23002) - npc_rizzle_sprysprocket
 -- Rizzle's Depth Charge (23025) - npc_depth_charge
 -- Aleanna Edune (3.3.0 Official Data)
@@ -9211,7 +9203,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jediga (8587) - NSR
 -- Angered Infernal (8608) - NSR
 -- Kroum
-('861001','8610','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Kroum - Spawn Enraged Wyverns and Yell on Aggro'),
+('861001','8610','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Kroum - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- The Evalcharr
 ('866001','8660','9','0','100','1','0','40','4000','6000','0','0','11','21549','1','0','0','0','0','0','0','0','0','0','The Evalcharr - Cast Fireball'),
 ('866002','8660','0','0','100','1','8000','13000','12000','15000','0','0','11','15797','4','1','0','0','0','0','0','0','0','0','The Evalcharr - Cast Lightning Breath'),
@@ -9249,7 +9241,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1220502','12205','27','0','100','1','12550','1','15000','30000','0','0','11','12550','0','0','0','0','0','0','0','0','0','0','Spitelash Witch - Cast Lightning Shield on Missing Buff'),
 ('1220503','12205','9','0','100','1025','0','40','3400','4800','0','0','11','9672','1','256','0','0','0','0','0','0','0','0','Spitelash Witch - Cast Frostbolt'),
 -- Jarrodenus
-('1257701','12577','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Jarrodenus - Spawn Enraged Hippogryphs on Aggro'),
+('1257701','12577','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Jarrodenus - Cast Summon Enraged Hippogryph on Aggro'),
 -- Blimo Gadgetspring (12957) - NSR
 -- Duke Hydraxis (13278) - NSR
 -- Hydraxian Honor Guard (13322) - NSR
@@ -9649,7 +9641,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Void Anomaly (17550) - NSR
 -- Caregiver Topher Loaal (17553) - npc_innkeeper
 -- Laando
-('1755401','17554','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Laando - Spawn Enraged Hippogryphs on Aggro'),
+('1755401','17554','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Laando - Cast Summon Enraged Hippogryph on Aggro'),
 -- Vorkhan the Elekk Herder (17586) - NSR
 -- Veridian Whelp 17588
 ('1758801','17588','0','0','100','1','1500','5000','10500','17000','0','0','11','31292','5','32','0','0','0','0','0','0','0','0','Veridian Whelp - Cast Sleep'),
@@ -10004,7 +9996,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tharnariun Treetender (3701) - NSR
 -- Alanndarian Nightsong (3702) - NSR
 -- Caylais Moonfeather
-('384101','3841','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Caylais Moonfeather - Spawn Enraged Hippogryphs on Aggro'),
+('384101','3841','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Caylais Moonfeather - Cast Summon Enraged Hippogryph on Aggro'),
 -- Anaya (3843) - NSR
 -- Aligar the Tormentor
 ('389801','3898','1','0','100','0','1000','1000','0','0','0','0','11','7165','0','32','0','0','0','0','0','0','0','0','Aligar the Tormentor - Cast Battle Stance OOC'),
@@ -10091,7 +10083,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('701702','7017','0','0','100','1','9000','12000','11000','16000','0','0','11','13586','0','1','0','0','0','0','0','0','0','0','Lord Sinslayer - Cast Aqua Jet'),
 -- Gershala Nightwhisper
 ('899701','8997','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gershala Nightwhisper - Flee at 15% HP'),
--- Enraged Hippogryph (9527) - SCRIPTED IN ANOTHER ZONE
 -- Jaelysia
 ('1008501','10085','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Jaelysia - Flee at 15% HP'),
 -- Moonkin Oracle
@@ -10515,9 +10506,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- School of Fish (6145) - NSR
 -- Spirit Healer (6491) - NSR
 -- Baritanas Skyriver
-('670601','6706','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Baritanas Skyriver - Spawn Enraged Hippogryphs on Aggro'),
+('670601','6706','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Baritanas Skyriver - Cast Summon Enraged Hippogryph on Aggro'),
 -- Thalon
-('672601','6726','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Thalon - Spawn Enraged Wyverns and Yell on Aggro'),
+('672601','6726','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Thalon - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Janet Hommers
 ('815001','8150','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Janet Hommers - Flee at 15% HP'),
 -- Nijel's Point Guard
@@ -11145,7 +11136,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Snake (2914) - NSR
 -- Dagun the Ravenous (2937) - NSR
 -- Baldruc
-('432101','4321','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Baldruc - Spawn Enraged Gryphons and Yell on Aggro'),
+('432101','4321','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Baldruc - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Searing Hatchling (4323) - NSR
 -- Searing Whelp
 ('432401','4324','9','0','100','1','0','15','5000','9000','0','0','11','11021','1','0','0','0','0','0','0','0','0','0','Searing Whelp - Cast Flamespit'),
@@ -11475,7 +11466,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Timothy Worthington
 ('1105201','11052','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Timothy Worthington - Flee at 15% HP'),
 -- Shardi
-('1189901','11899','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Shardi - Spawn Enraged Wyverns and Yell on Aggro'),
+('1189901','11899','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Shardi - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Chestnut Mare (12375) - NSR
 -- Brown Horse (12376) - NSR
 -- Decedra Willham
@@ -11559,7 +11550,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2360203','23602','2','0','100','2','10','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Deserter Agitator - Flee at 10% HP'),
 ('2360204','23602','30','0','100','1','5','23602','0','0','0','0','48','1','15','0','41','4000','0','0','0','0','0','0','Deserter Agitator - Set Waypoints and Despawn on Receive AI Event Custom A.(q.11126)'),
 -- Dyslix Silvergrub 23612
-('2361201','23612','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Dyslix Silvergrub - Spawn Enraged Wyvern and Gryphon on Aggro'),
+('2361201','23612','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Dyslix Silvergrub - Cast Summon Enraged Mounts on Aggro'),
 -- Privateer
 ('2362001','23620','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Privateer - Flee at 15% HP'),
 -- Mudsprocket Bruiser 23636
@@ -11919,9 +11910,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Meilosh (11557) - NSR
 -- Kernda (11558) - NSR
 -- Brakkar
-('1190001','11900','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Brakkar - Spawn Enraged Wyverns and Yell on Aggro'),
+('1190001','11900','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Brakkar - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Mishellena
-('1257801','12578','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Mishellena - Spawn Enraged Hippogryphs on Aggro'),
+('1257801','12578','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Mishellena - Cast Summon Enraged Hippogryph on Aggro'),
 -- Death Howl
 ('1433901','14339','9','0','100','1','0','5','8000','14000','0','0','11','3427','1','32','0','0','0','0','0','0','0','0','Death Howl - Cast Infected Wound'),
 ('1433902','14339','9','0','100','1','0','5','20000','24000','0','0','11','3604','1','1','0','0','0','0','0','0','0','0','Death Howl - Cast Tendon Rip'),
@@ -11970,7 +11961,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Falfindel Waywarder
 ('404801','4048','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Falfindel Waywarder - Flee at 15% HP'),
 -- Thyssiana
-('431901','4319','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Thyssiana - Spawn Enraged Hippogryphs on Aggro'),
+('431901','4319','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Thyssiana - Cast Summon Enraged Hippogryph on Aggro'),
 -- Krueg Skullsplitter (4544) - NSR
 -- Gordunni Ogre 5229
 ('522901','5229','4','0','10','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Gordunni Ogre - Say on Aggro'),
@@ -12256,9 +12247,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Captured Sprite Darter
 ('799701','7997','0','0','100','1','3000','6000','7000','10000','0','0','11','11981','4','0','0','0','0','0','0','0','0','0','Captured Sprite Darter - Cast Mana Burn'),
 -- Fyldren Moonfeather
-('801901','8019','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Fyldren Moonfeather - Spawn Enraged Hippogryphs on Aggro'),
+('801901','8019','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Fyldren Moonfeather - Cast Summon Enraged Hippogryph on Aggro'),
 -- Shyn
-('802001','8020','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Shyn - Spawn Enraged Wyverns and Yell on Aggro'),
+('802001','8020','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Shyn - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Orwin Gizzmick (8021) - NSR
 -- Edana Hatetalon 8075
 ('807501','8075','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Edana Hatetalon - Enable Caster Mode on Aggro'),
@@ -12286,7 +12277,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Worb Strongstitch (8159) - NSR
 -- Screecher Spirit (8612) - npc_screecher_spirit
 -- Miblon Snarltooth (9467) - NSR
--- Enraged Hippogryph (9527) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Raschal the Courier (9546) - NSR
 -- Cawind Trueaim 9548
 ('954801','9548','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Cawind Trueaim - Enable Hunter Mode on Aggro'),
@@ -12422,7 +12412,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Geenia Sunshadow (4184) - NSR
 -- Darnall (7940) - NSR
 -- Sindrayl
-('1089701','10897','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Sindrayl - Spawn Enraged Hippogryphs on Aggro'),
+('1089701','10897','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Sindrayl - Cast Summon Enraged Hippogryph on Aggro'),
 -- Celes Earthborne (11716) - NSR
 -- Mylentha Riverbend (11795) - NSR
 -- Bessany Plainswind (11796) - NSR
@@ -12447,7 +12437,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Narianna 12029
 -- Loganaar 12042
 -- Faustron
-('1274001','12740','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Faustron - Spawn Enraged Wyverns and Yell on Aggro'),
+('1274001','12740','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Faustron - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Malfurion Stormrage (15362) - npc_malfurion_stormrage
 -- Minion of Omen
 ('1546601','15466','8','0','100','1','26636','-1','0','0','0','0','11','25495','0','1','0','0','0','0','0','0','0','0','Minion of Omen - Cast Firework Effect, Lunar Festival Minion on Spell Hit'),
@@ -12776,7 +12766,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Orgrimmar Grunt 3296 - guard_orgrimmar
 -- Karus 3309
 -- Doras
-('331001','3310','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Doras - Spawn Enraged Wyverns and Yell on Aggro'),
+('331001','3310','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Doras - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Olvia 3312
 -- Trak'gen 3313
 -- Urtharo 3314
@@ -13258,9 +13248,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Khur Hornstriker 15175
 -- Vargus 15176
 -- Cloud Skydancer
-('1517701','15177','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Cloud Skydancer - Spawn Enraged Hippogryphs on Aggro'),
+('1517701','15177','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Cloud Skydancer - Cast Summon Enraged Hippogryph on Aggro'),
 -- Runk Windtamer
-('1517801','15178','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Runk Windtamer - Spawn Enraged Wyverns and Yell on Aggro'),
+('1517801','15178','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Runk Windtamer - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Mishta 15179
 -- Baristolth of the Shifting Sands 15180
 -- Commander Mar'alith 15181
@@ -13685,9 +13675,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deepmoss Matriarch (4264) - NSR
 -- Piznik (4276) - NSR
 -- Tharm
-('431201','4312','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Tharm - Spawn Enraged Wyverns and Yell on Aggro'),
+('431201','4312','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Tharm - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Teloren
-('440701','4407','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Teloren - Spawn Enraged Hippogryphs on Aggro'),
+('440701','4407','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Teloren - Cast Summon Enraged Hippogryph on Aggro'),
 -- Gatekeeper Kordurus
 ('440901','4409','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gatekeeper Kordurus - Flee at 15% HP'),
 -- Braug Dimspirit (4489) - npc_braug_dimspirit
@@ -13955,9 +13945,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Trenton Lighthammer (7804) - NSR
 -- Wastewander Scofflaw (7805) - NSR
 -- Bera Stonehammer
-('782301','7823','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Bera Stonehammer - Spawn Enraged Gryphons and Yell on Aggro'),
+('782301','7823','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Bera Stonehammer - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Bulkrek Ragefist
-('782401','7824','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Bulkrek Ragefist - Spawn Enraged Wyverns and Yell on Aggro'),
+('782401','7824','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Bulkrek Ragefist - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Caliph Scorpidsting (4.0.3 Official Data)
 ('784701','7847','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Caliph Scorpidsting - Flee at 15% HP'),
 -- Southsea Pirate (4.0.3 Official Data)
@@ -14340,7 +14330,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Meri Ironweave 3613
 -- Narret Shadowgrove 3614
 -- Vesprystus
-('383801','3838','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Vesprystus - Spawn Enraged Hippogryphs on Aggro'),
+('383801','3838','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Vesprystus - Cast Summon Enraged Hippogryph on Aggro'),
 -- Darnassus Sentinel 4262 - guard_darnassus
 -- Nyoma 4265
 -- Danlyia 4266
@@ -14721,7 +14711,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ratchet Bruiser 3502 - guard_contested
 ('350201','3502','0','0','100','1','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Ratchet Bruiser - Cast Net'),
 -- Devrak
-('361501','3615','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Devrak - Spawn Enraged Wyverns and Yell on Aggro'),
+('361501','3615','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Devrak - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Devouring Ectoplasm 3638
 ('363801','3638','2','0','100','0','50','0','0','0','0','0','11','7952','0','0','0','0','0','0','0','0','0','0','Devouring Ectoplasm - Cast Clone at 50% HP'),
 -- Trigore the Lasher 3652
@@ -14889,7 +14879,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('952402','9524','0','0','100','1','5000','8000','6000','10000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Kolkar Invader - Cast Strike'),
 ('952403','9524','9','0','100','1','0','5','8000','15000','0','0','11','8014','4','32','0','0','0','0','0','0','0','0','Kolkar Invader - Cast Tetanus'),
 -- Omusa Thunderhorn
-('1037801','10378','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Omusa Thunderhorn - Spawn Enraged Wyverns and Yell on Aggro'),
+('1037801','10378','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Omusa Thunderhorn - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Beaten Corpse 10668 - npc_beaten_corpse
 -- Manifestation of Water (11256) - NSR
 -- Lunaclaw
@@ -14909,7 +14899,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1286503','12865','9','0','100','1025','0','40','3800','5200','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Ambassador Malcin - Cast Shadow Bolt'),
 -- Captain Shatterskull 14781 - NSR
 -- Bragok 16227
-('1622701','16227','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Bragok - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
+('1622701','16227','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Bragok - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 
 
 
@@ -14918,7 +14908,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==========
 -- Exodar Peacekeeper 16733 - guard_exodar
 -- Stephanos
-('1755501','17555','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Stephanos - Spawn Enraged Hippogryphs on Aggro'),
+('1755501','17555','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Stephanos - Cast Summon Enraged Hippogryph on Aggro'),
 -- Camera Shaker - 30-90 seconds (18955)
 ('1895501','18955','1','0','100','1','0','0','0','0','0','0','11','33271','0','0','0','0','0','0','0','0','0','0','Camera Shaker - 30-90 - Cast Internal Shake Camera w/ rumble sound'),
 ('1895502','18955','10','0','100','1','1','10','30000','90000','0','0','11','33271','7','0','0','0','0','0','0','0','0','0','Camera Shaker - 30-90 - Cast Internal Shake Camera w/ rumble sound'),
@@ -15030,7 +15020,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pesterhide Snarler 4249
 ('424901','4249','0','0','100','1','5000','10000','12000','16000','0','0','11','6576','1','0','0','0','0','0','0','0','0','0','Pesterhide Snarler - Cast Intimidating Growl'),
 -- Nyse
-('431701','4317','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Nyse - Spawn Enraged Wyverns and Yell on Aggro'),
+('431701','4317','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Nyse - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Grenka Bloodscreech 4490
 ('449001','4490','9','0','100','1','0','5','12000','15000','0','0','11','3589','0','0','0','0','0','0','0','0','0','0','Grenka Bloodscreech - Cast Deafening Screech'),
 -- Minor Manifestation of Air 5902 - NSR
@@ -15089,7 +15079,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kodo Matriarch 2974
 -- Eyahn Eagletalon 2987
 -- Tal
-('299501','2995','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Tal - Spawn Enraged Wyverns and Yell on Aggro'),
+('299501','2995','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Tal - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Torn 2996
 -- Jyn Stonehoof 2997
 -- Karn Stonehoof 2998
@@ -15385,7 +15375,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Captured Felwood Ooze
 ('1029001','10290','29','0','100','0','1000','1000','0','0','0','0','45','5','40','0','41','2000','0','0','0','0','0','0','Captured Felwood Ooze - Send AI Event "A" and Delayed Despawn on Generic Timer (Q.4642)'),
 -- Gryfe <Flight Master> 10583
-('1058301','10583','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Gryfe - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
+('1058301','10583','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Gryfe - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 -- Blazing Invader
 ('1446001','14460','9','0','100','1','0','8','11000','14000','0','0','11','23113','0','1','0','0','0','0','0','0','0','0','Blazing Invader - Cast Blast Wave'),
 -- Baron Charr
@@ -15513,7 +15503,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('752402','7524','9','0','100','1025','0','30','3400','4800','0','0','11','13860','1','256','0','0','0','0','0','0','0','0','Anguished Highborne - Cast Mind Blast'),
 -- Umbranse the Spiritspeaker 8588
 -- Donova Snowden 9298
--- Enraged Hippogryph (9527) - SCRIPTED IN ANOTHER ZONE
 -- Auctioneer Grizzlin 9857
 -- General Colbatann
 ('1019601','10196','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','General Cobaltann - Set Phase 1 on Aggro'),
@@ -15603,9 +15592,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Innkeeper Vizzie 11118 - npc_innkeeper
 -- Azzleby 11119
 -- Maethrya 11138
-('1113801','11138','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Maethrya - Spawn Enraged Hippogryphs on Aggro'),
+('1113801','11138','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Maethrya - Cast Summon Enraged Hippogryph on Aggro'),
 -- Yugrek 11139
-('1113901','11139','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Yugrek - Spawn Enraged Wyverns and Yell on Aggro'),
+('1113901','11139','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Yugrek - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Nixxrak 11182
 -- Blixxrak 11183
 -- Wixxrak 11184
@@ -15715,9 +15704,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1869305','18693','0','0','100','1','4000','6000','4000','9000','0','0','11','15241','1','0','0','0','0','0','0','0','0','0','Speaker Mar''grom - Cast Scorch'),
 ('1869306','18693','0','0','100','1','8000','10000','5500','11000','0','0','11','12466','1','0','0','0','0','0','0','0','0','0','Speaker Mar''grom - Cast Fireball'),
 -- Amerun Leafshade
-('1893701','18937','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Amerun Leafshade - Spawn Enraged Hippogryphs on Aggro'),
+('1893701','18937','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Amerun Leafshade - Cast Summon Enraged Hippogryph on Aggro'),
 -- Unoke Tenderhoof
-('1895301','18953','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Unoke Tenderhoof - Spawn Enraged Wyverns and Yell on Aggro'),
+('1895301','18953','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Unoke Tenderhoof - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Thunderlord Grunt 19449
 ('1944901','19449','0','0','100','1','0','5000','6000','9000','0','0','11','40505','1','0','0','0','0','0','0','0','0','0','Thunderlord Grunt - Cast Cleave'),
 ('1944902','19449','2','0','100','0','30','0','0','0','0','0','11','8599','0','0','54','-106','0','0','0','0','0','0','Thunderlord Grunt - Cast Enrage at 30% HP'),
@@ -16327,7 +16316,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Living Grove Defender
 ('2107201','21072','0','0','100','1','6000','6000','12000','16000','0','0','11','12747','1','0','0','0','0','0','0','0','0','0','Living Grove Defender - Cast Entangling Roots'),
 -- Rip Pedalslam
-('2110701','21107','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Rip Pedalslam - Spawn Enraged Gryphons and Yell on Aggro'),
+('2110701','21107','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Rip Pedalslam - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Station Guard 21115
 ('2111501','21115','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Station Guard - Enable Caster Mode on Aggro'),
 ('2111502','21115','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Station Guard - Flee at 15% HP'),
@@ -16569,7 +16558,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2220401','22204','9','0','50','1','0','5','8000','16000','0','0','11','38356','0','0','0','0','0','0','0','0','0','0','Fear Fiend - Cast Fel Flames'),
 -- Expedition Druid 22206 - NSR
 -- Fhyn Leafshadow 22216
-('2221601','22216','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Fhyn Leafshadow - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
+('2221601','22216','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Fhyn Leafshadow - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 -- Felstorm Corruptor 22217 - Pre 2.1
 ('2221701','22217','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Felstorm Corruptor - Enable Caster Mode on Aggro'),
 ('2221702','22217','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Felstorm Corruptor - Flee at 15% HP'),
@@ -16696,7 +16685,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2244805','22448','25','0','100','0','22498','0','0','0','0','0','11','8602','0','1','0','0','0','0','0','0','0','0','Rexxar - Cast Vengeance on Misha Death'),
 ('2244806','22448','7','0','100','0','0','0','0','0','0','0','56','0','0','1','0','0','0','0','0','0','0','0','Rexxar - Despawn Guardians on Evade'),
 -- Sky-Master Maxxor 22455
-('2245501','22455','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','0','0','0','0','Sky-Master Maxxor - Spawn Enraged Wyverns on Aggro'),
+('2245501','22455','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','0','0','0','0','0','0','0','0','Sky-Master Maxxor - Cast Summon Enraged Wyvern on Aggro'),
 -- Natasha 22465
 ('2246501','22465','1','0','100','1','60000','120000','60000','120000','0','0','54','0','0','10017','0','0','0','0','0','0','0','0','Natasha - Random Say OOC'),
 -- Baron Sablemane 22473
@@ -16875,7 +16864,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1658501','16585','1','0','100','1','120000','120000','500000','500000','0','0','1','-10349','0','0','0','0','0','0','0','0','0','0','Cookie One-Eye - Gossip Speech (1)'),
 ('1658502','16585','1','0','100','1','125000','125000','505000','505000','0','0','1','-10350','0','0','0','0','0','0','0','0','0','0','Cookie One-Eye - Gossip Speech (2)'),
 -- Barley
-('1658701','16587','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Barley - Spawn Enraged Wyverns and Yell on Aggro'),
+('1658701','16587','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Barley - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Guard Captain Cragtar
 ('1658901','16589','1','0','100','1','450000','450000','450000','450000','0','0','1','-10341','0','0','0','0','0','0','0','0','0','0','Guard Captain Cragtar - Gossip Speech (1)'),
 ('1658902','16589','1','0','100','1','453000','453000','453000','453000','0','0','1','-10342','0','0','0','0','0','0','0','0','0','0','Guard Captain Cragtar - Gossip Speech (2)'),
@@ -16905,7 +16894,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1679904','16799','0','0','100','1025','7500','8500','12000','15000','0','0','11','11436','1','32','0','0','0','0','0','0','0','0','Ikan - Cast Slow'),
 ('1679905','16799','9','0','100','1025','0','40','3400','4700','0','0','11','20824','1','256','0','0','0','0','0','0','0','0','Ikan - Cast Lightning Bolt'),
 -- Flightmaster Krill Bitterhue
-('1682201','16822','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Flightmaster Krill Bitterhue - Spawn Enraged Gryphons and Yell on Aggro'),
+('1682201','16822','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Flightmaster Krill Bitterhue - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Makuru 16833
 ('1683301','16833','4','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Makuru - Enable Caster Mode on Aggro'),
 ('1683302','16833','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Makuru - Flee at 15% HP'),
@@ -17184,17 +17173,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1875801','18758','9','0','100','1','5','30','2300','3900','0','0','11','6660','1','0','40','2','0','0','0','0','0','0','Telhamat Protector - Cast Shoot and Set Ranged Weapon Model'),
 ('1875802','18758','0','0','100','0','5000','15000','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Telhamat Protector - Cast Dismounting Blast'),
 -- Kuma
-('1878501','18785','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Kuma - Spawn Enraged Hippogryphs on Aggro'),
+('1878501','18785','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Kuma - Cast Summon Enraged Hippogryph on Aggro'),
 -- Gan'arg Sapper
 ('1882701','18827','2','0','100','0','20','0','0','0','0','0','11','33974','0','0','54','-10340','0','0','0','0','0','0','Gan''arg Sapper - Cast Power Burn and Text Emote at 20% HP'),
 -- Camera Shaker
 ('1882801','18828','29','0','100','1','6000','11000','6000','11000','0','0','11','33016','0','0','0','0','0','0','0','0','0','0','Camera Shaker - Cast Internal Shake Camera on Generic Timer'),
 -- Vlagga Freyfeather
-('1893001','18930','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Vlagga Freyfeather - Spawn Enraged Wyverns and Yell on Aggro'),
+('1893001','18930','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Vlagga Freyfeather - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Amish Wildhammer
-('1893101','18931','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Amish Wildhammer - Spawn Enraged Gryphons and Yell on Aggro'),
+('1893101','18931','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Amish Wildhammer - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Innalia 18942
-('1894201','18942','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Innalia - Spawn Enraged Wyverns and Yell on Aggro'),
+('1894201','18942','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Innalia - Cast Summon Enraged Wyvern and Yell on Aggro'),
 ('1894202','18942','4','0','100','0','0','0','0','0','0','0','57','2','75','0','0','0','0','0','0','0','0','0','Innalia - Enable Hunter Mode on Aggro'),
 ('1894203','18942','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Innalia - Flee at 15% HP'),
 ('1894204','18942','9','0','100','1025','5','80','2300','3900','0','0','11','22121','1','256','0','0','0','0','0','0','0','0','Innalia - Cast Shoot'),
@@ -17489,7 +17478,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1952713','19527','0','223','100','1025','0','1000','2000','3000','0','0','11','34347','1','256','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Cast Frostball (Phase 5)'),
 ('1952714','19527','0','127','100','1025','0','1000','5000','6000','0','0','11','34446','1','256','0','0','0','0','0','0','0','0','Vacillating Voidcaller - Cast Arcane Missiles (Phase 7)'),
 -- Amilya Airheart 19558
-('1955801','19558','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Amilya Airheart - Spawn Enraged Wyverns and Yell on Aggro'),
+('1955801','19558','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Amilya Airheart - Cast Summon Enraged Wyvern and Yell on Aggro'),
 ('1955802','19558','4','0','100','0','0','0','0','0','0','0','57','2','75','0','0','0','0','0','0','0','0','0','Amilya Airheart - Enable Hunter Mode on Aggro'),
 ('1955803','19558','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Amilya Airheart - Flee at 15% HP'),
 ('1955804','19558','9','0','100','1025','5','80','2300','3900','0','0','11','22121','1','256','0','0','0','0','0','0','0','0','Amilya Airheart - Cast Shoot'),
@@ -17512,7 +17501,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Infernal Defender 20160
 ('2016001','20160','6','0','100','0','0','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Infernal Defender - Remove Immolation on Death'),
 -- Runetog Wildhammer
-('2023401','20234','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Runetog Wildhammer - Spawn Enraged Gryphons and Yell on Aggro'),
+('2023401','20234','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Runetog Wildhammer - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Razorsaw
 ('2079801','20798','11','0','100','0','0','0','0','0','0','0','3','0','0','0','0','0','0','0','0','0','0','0','Razorsaw - Demorph on Spawn'),
 ('2079802','20798','32','2','100','0','10','40','0','0','0','0','11','32735','12','0','22','1','0','0','3','0','19668','0','Razorsaw - Cast Saw Blade and Set Phase 1 and Transform in Range (Phase 0)'),
@@ -17922,9 +17911,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ancient Orc Ancestor
 ('1868801','18688','8','0','100','0','34063','-1','0','0','0','0','36','19480','1','0','0','0','0','0','0','0','0','0','Ancient Orc Ancestor - Changes Template to Darkened Spirit After Using Soul Mirror (Quest: 10168)'),
 -- Furgu
-('1878901','18789','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Furgu - Spawn Enraged Hippogryphs on Aggro'),
+('1878901','18789','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Furgu - Cast Summon Enraged Hippogryph on Aggro'),
 -- Gursha
-('1880801','18808','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Gursha - Spawn Enraged Wyverns and Yell on Aggro'),
+('1880801','18808','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Gursha - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Sunspring Post Credit Marker 18840 - npc_creditmarker_visit_with_ancestors
 -- Laughing Skull Clan Ruins Credit Marker 18841 - npc_creditmarker_visit_with_ancestors
 -- Garadar Credit Marker 18842 - npc_creditmarker_visit_with_ancestors
@@ -18867,9 +18856,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1869602','18696','0','0','100','1','5000','10000','20000','25000','0','0','11','39293','1','0','0','0','0','0','0','0','0','0','Kraator - Cast Conflagration'),
 ('1869603','18696','0','0','100','1','15000','15000','15000','30000','0','0','11','24670','1','2','0','0','0','0','0','0','0','0','Kraator - Cast Inferno'),
 -- Brubeck Stormfoot
-('1893901','18939','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Brubeck Stormfoot - Spawn Enraged Gryphons and Yell on Aggro'),
+('1893901','18939','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Brubeck Stormfoot - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Drek'Gol
-('1931701','19317','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Drek''Gol - Spawn Enraged Wyverns and Yell on Aggro'),
+('1931701','19317','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Drek''Gol - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Shadowmoon Peon 19355
 ('1935501','19355','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Shadowmoon Peon - Cast Invisibility and Stealth Detection OOC'),
 -- Kor'kron Defender
@@ -18896,7 +18885,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1950404','19504','0','0','100','1025','3000','15000','10000','30000','0','0','11','17195','1','0','0','0','0','0','0','0','0','0','Scryer Guardian - Cast Scorch'),
 ('1950405','19504','9','0','100','1025','0','30','3800','5200','0','0','11','15228','1','256','0','0','0','0','0','0','0','0','Scryer Guardian - Cast Fireball'),
 -- Maddix 19581
-('1958101','19581','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Maddix - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
+('1958101','19581','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Maddix - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 -- Wrathwalker 19740
 ('1974001','19740','0','0','75','1','5000','10000','15000','20000','0','0','11','33804','0','0','0','0','0','0','0','0','0','0','Wrathwalker - Cast Flame Wave'),
 -- Dreadwarden
@@ -19299,7 +19288,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2174302','21743','0','0','100','1','3000','9000','10000','12000','0','0','11','37577','1','0','0','0','0','0','0','0','0','0','Sunfury Blood Lord - Cast Debilitating Strike'),
 ('2174303','21743','32','0','100','1','0','8','9500','18000','0','0','11','36104','0','0','0','0','0','0','0','0','0','0','Sunfury Blood Lord - Cast Torrent of Flames in Range'),
 -- Alieshor 21766
-('2176601','21766','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9526','1','30000','0','0','0','0','Alieshor - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
+('2176601','21766','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Alieshor - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 -- Overlord Or'barokh
 ('2176901','21769','1','0','100','1','120000','120000','300000','300000','0','0','1','-10360','0','0','5','6','0','0','0','0','0','0','Overlord Or''barokh - Gossip and Emote (1)'),
 ('2176902','21769','1','0','100','1','123000','123000','303000','303000','0','0','1','-10361','0','0','5','6','0','0','0','0','0','0','Overlord Or''barokh - Gossip and Emote (2)'),
@@ -19976,9 +19965,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1872002','18720','9','0','100','1','0','5','6000','9000','0','0','11','32736','1','0','0','0','0','0','0','0','0','0','Shadowmaster Grieve - Cast Mortal Strike'),
 -- Isla Starmane 18760 - npc_isla_starmane
 -- Kerna
-('1880701','18807','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Kerna - Spawn Enraged Wyverns and Yell on Aggro'),
+('1880701','18807','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Kerna - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Furnan Skysoar
-('1880901','18809','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Furnan Skysoar - Spawn Enraged Gryphons and Yell on Aggro'),
+('1880901','18809','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Furnan Skysoar - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Bleeding Hollow Clan Ruins Credit Marker 18843 - npc_creditmarker_visit_with_ancestors
 -- Stonebreaker Grunt 18973
 ('1897301','18973','9','0','100','1','0','5','6000','9000','0','0','11','40505','1','0','0','0','0','0','0','0','0','0','Stonebreaker Grunt - Cast Cleave'),
@@ -19993,7 +19982,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stonebreaker Peon 19048
 ('1904801','19048','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Stonebreaker Peon - Cast Invisibility and Stealth Detection OOC'),
 -- Lemla Hopewing
-('1918101','19181','4','0','100','0','0','0','0','0','0','0','12','9526','1','30000','12','9526','1','30000','1','-549','0','0','Lemla Hopewing - Spawn Enraged Gryphons and Yell on Aggro'),
+('1918101','19181','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Lemla Hopewing - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Ancient Draenei Spirit
 ('1941601','19416','1','0','75','1','1000','6000','9000','14000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Ancient Draenei Spirit - Emote OOC'),
 -- Lower City Operative
@@ -20581,9 +20570,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1868201','18682','9','0','100','1','0','5','12000','16000','0','0','11','35238','1','0','0','0','0','0','0','0','0','0','Bog Lurker - Cast War Stomp'),
 ('1868202','18682','2','0','100','1','50','0','22000','26000','0','0','11','34163','0','1','0','0','0','0','0','0','0','0','Bog Lurker - Cast Fungal Regrowth at 50% HP'),
 -- Munci
-('1878801','18788','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Munci - Spawn Enraged Hippogryphs on Aggro'),
+('1878801','18788','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Munci - Cast Summon Enraged Hippogryph on Aggro'),
 -- Du'ga
-('1879101','18791','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Du''ga - Spawn Enraged Wyverns and Yell on Aggro'),
+('1879101','18791','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Du''ga - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Zabra'jin Guard
 ('1890901','18909','0','0','100','1','5000','7000','7000','10000','0','0','11','12169','0','0','0','0','0','0','0','0','0','0','Zabra''jin Guard - Cast Shield Block'),
 ('1890902','18909','0','0','100','1','7000','8500','8000','12000','0','0','11','12170','1','0','0','0','0','0','0','0','0','0','Zabra''jin Guard - Cast Revenge'),
@@ -20709,7 +20698,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Terrorclaw
 ('2047701','20477','9','0','100','1','0','5','5000','9000','0','0','11','40504','1','0','0','0','0','0','0','0','0','0','Terrorclaw - Cast Cleave'),
 -- Gur'zil
-('2076201','20762','4','0','100','0','0','0','0','0','0','0','12','9297','1','30000','12','9297','1','30000','1','-548','0','0','Gur''zil - Spawn Enraged Wyverns and Yell on Aggro'),
+('2076201','20762','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Gur''zil - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Xeleth
 ('2189401','21894','11','0','100','0','0','0','0','0','0','0','55','11','0','0','54','-10781','0','0','0','0','0','0','Xeleth - Attack Spawner (Player) and Yell on Spawn'),
 ('2189402','21894','0','0','100','1','0','0','12500','12500','0','0','11','36414','1','0','0','0','0','0','0','0','0','0','Xeleth - cast Focused Bursts'),
@@ -20725,7 +20714,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2208501','22085','4','0','100','0','0','0','0','0','0','0','57','2','75','0','0','0','0','0','0','0','0','0','Sporeggar Sporebat - Enable Hunter Mode on Aggro'),
 ('2208502','22085','0','0','100','1025','0','5000','15000','20000','0','0','11','38285','1','256','0','0','0','0','0','0','0','0','Sporeggar Sporebat - Cast Spore Splash'),
 -- Halu
-('2248501','22485','4','0','100','0','0','0','0','0','0','0','12','9527','1','30000','12','9527','1','30000','1','-549','0','0','Halu - Spawn Enraged Hippogryphs on Aggro');
+('2248501','22485','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Halu - Cast Summon Enraged Hippogryph on Aggro');
 
 
 
@@ -29894,9 +29883,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Emerald Dragon Whelp 8776 - CasterMode?
 ('877601','8776','0','0','100','1','0','0','5000','5000','0','0','11','9591','1','0','0','0','0','0','0','0','0','0','Emerald Dragon Whelp - Cast Acid Spit'),
 -- Enraged Wyvern 9297
-('929701','9297','1','0','100','0','1000','1000','0','0','0','0','11','7276','0','32','0','0','0','0','0','0','0','0','Enraged Wyvern - Cast Poison Proc OOC'),
+('929701','9297','4','0','100','0','0','0','0','0','0','0','11','7276','0','32','0','0','0','0','0','0','0','0','Enraged Wyvern - Cast Poison Proc on Aggro'),
+-- Enraged Felbat 9521
+('952101','9521','4','0','100','0','0','0','0','0','0','0','11','3616','0','32','0','0','0','0','0','0','0','0','Enraged Felbat - Cast Poison Proc on Aggro'),
 -- Enraged Gryphon 9526
 ('952601','9526','0','0','100','1','3000','6000','12000','15000','0','0','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Gryphon - Cast Rend'),
+-- Enraged Hippogryph 9527
+('952701','9527','0','0','100','1','3000','6000','12000','15000','0','0','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Hippogryph - Cast Rend'),
 -- Scorching Totem 9637 - TotemAI
 -- Windwall Totem 9687 - TotemAI
 -- Windwall Totem II 9688 - TotemAI
