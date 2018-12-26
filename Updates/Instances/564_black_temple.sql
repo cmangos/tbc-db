@@ -1959,6 +1959,30 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+159, @CGUID+160, 1167), -- Aqueous Spawn -> Aqueous Spawn
 (@CGUID+160, @CGUID+197, 1024), -- Aqueous Spawn -> High Warlord Naj'entus
 -- Supremus
+(@CGUID+291, @CGUID+198, 1024), -- Illidari Fearbringer -> Supremus
+(@CGUID+292, @CGUID+198, 1024), -- Illidari Fearbringer -> Supremus
+(@CGUID+293, @CGUID+198, 1024), -- Illidari Fearbringer -> Supremus
+(@CGUID+294, @CGUID+198, 1024), -- Illidari Fearbringer -> Supremus
+(@CGUID+398, @CGUID+442, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+399, @CGUID+442, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+400, @CGUID+442, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+401, @CGUID+442, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+402, @CGUID+442, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+403, @CGUID+442, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+442, @CGUID+198, 1024), -- Bonechewer Taskmaster -> Supremus
+(@CGUID+404, @CGUID+446, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+405, @CGUID+446, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+407, @CGUID+446, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+406, @CGUID+446, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+408, @CGUID+446, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+409, @CGUID+446, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+446, @CGUID+198, 1024), -- Bonechewer Taskmaster -> Supremus
+(@CGUID+416, @CGUID+443, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+417, @CGUID+443, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+418, @CGUID+443, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+419, @CGUID+443, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+420, @CGUID+443, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+443, @CGUID+198, 1024), -- Bonechewer Taskmaster -> Supremus
 (@CGUID+382, @CGUID+381, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
 (@CGUID+381, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
 (@CGUID+384, @CGUID+383, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
@@ -1969,8 +1993,19 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+388, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
 -- (@CGUID+389, @CGUID+390, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller not sure
 (@CGUID+390, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
+(@CGUID+393, @CGUID+444, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+394, @CGUID+444, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+395, @CGUID+444, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+396, @CGUID+444, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+397, @CGUID+444, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
 (@CGUID+445, @CGUID+444, 1679), -- Bonechewer Taskmaster -> Bonechewer Taskmaster
 (@CGUID+444, @CGUID+198, 1024), -- Bonechewer Taskmaster -> Supremus
+(@CGUID+410, @CGUID+447, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+411, @CGUID+447, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+412, @CGUID+447, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+413, @CGUID+447, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+414, @CGUID+447, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
+(@CGUID+415, @CGUID+447, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
 (@CGUID+448, @CGUID+447, 1679), -- Bonechewer Taskmaster -> Bonechewer Taskmaster
 (@CGUID+447, @CGUID+198, 1024), -- Bonechewer Taskmaster -> Supremus
 -- Needs Creature Groups or Node Sharing for Respawn/Linked Aggro to fully work, doesnt work when @CGUID+450 isnt spawned
