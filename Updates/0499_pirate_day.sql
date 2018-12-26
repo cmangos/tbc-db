@@ -11,6 +11,23 @@ INSERT INTO `creature_template` (`Entry`, `Name`, `SubName`, `IconName`, `MinLev
 (28058, 'Dread Cannon', '', '', 50, 50, 3146, 0, 0, 0, 35, 1, 0, 9, 3, 3, 0, 0, 33587200, 0, 0, 0, 1, 1.07143, 20, 0, 0, 0, 0, 1, 0, 0, 0.75, 1, 1, 1, 1, 1, 1661, 2036, 0, 0, 85, 112, 58, 86, 2966, 206, 20, 2000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16384, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', ''),
 (28060, 'Nyuni', 'Hapana\'s Pet', '', 53, 53, 25081, 0, 0, 0, 35, 1, 26, 1, 3, 3, 0, 0, 33536, 0, 0, 0, 1, 1.14286, 20, 0, 0, 0, 0, 1, 0, 0, 1.3, 1, 1, 1, 1, 1, 3189, 3839, 0, 0, 89, 119, 62, 91, 3128, 218, 22, 2000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '');
 
+DELETE FROM `creature_template_addon` WHERE `entry` IN (28048,28049,28050,28051,28052,28058,28060);
+INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(28048, 0, 0, 1, 0, 0, NULL),
+(28049, 0, 0, 2, 0, 0, NULL),
+(28050, 0, 0, 1, 0, 0, NULL),
+(28051, 0, 0, 2, 0, 0, NULL),
+(28052, 0, 0, 1, 0, 0, NULL),
+(28058, 0, 0, 1, 0, 0, NULL),
+(28060, 0, 0, 1, 0, 0, NULL);
+
+-- Add missing creature_equip_template
+DELETE FROM `creature_equip_template` WHERE `entry` IN (2323,2325,2327);
+INSERT INTO `creature_equip_template` (`entry`, `equipentry1`, `equipentry2`, `equipentry3`) VALUES
+(2323, 1925, 13862, 0),
+(2325, 1925, 0, 0),
+(2327, 851, 0, 5309);
+
 -- Morph spell 65528 doesnt work in tbc-client, use modelid change instead
 -- DELETE FROM `spell_template` WHERE `Id` = 65528;
 
@@ -351,19 +368,8 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 (91579, 0, 16412, 0, 0, 0, 0, 44),
 (91580, 0, 16412, 0, 0, 0, 0, 44);
 
--- Dont seem to do anything
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 89409;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 89410;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 89407;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 89408;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 89420;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 89421;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 91768;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 91769;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 91579;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 91580;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 91801;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 91794;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 91774;
-UPDATE `creature_addon` SET `auras` = '33207 33208 33209' WHERE `guid` = 91775;
+-- Dont seem to do anything, already present in creature_template_addon
+DELETE FROM `creature_addon` WHERE `guid` IN (89407,89408,89409,89410,89420,89421,91579,91580,91768,91769,91774,91775,91794,91801);
+
+
 
