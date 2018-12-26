@@ -26794,10 +26794,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Yell: "I will deal with these mongrels! Strike now, friends! Strike at the Betrayer!" - Illidan Encounter fighting incoming Illidari Elite 23226
 -- Supremus Punch Invis Stalker 23095 - molten_flame
 -- Vengeful Spirit (23109) - NSR
--- Shadowy Construct 23111
-('2311101','23111','11','0','100','0','0','0','0','0','0','0','11','40326','0','0','11','40334','0','0','38','0','0','0','Shadowy Construct - Cast Shadowy Construct and Shadow Strikes and Zone Combat Pulse on Spawn'),
-('2311102','23111','1','0','100','0','10000','10000','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Shadowy Construct - Forced Despawn OOC'),
-('2311103','23111','9','0','100','1025','0','5','2500','2500','0','0','11','40327','1','0','0','0','0','0','0','0','0','0','Shadowy Construct - Cast Atrophy'),
+-- Shadowy Construct 23111 - SD2
 -- Doom Blossom 23123
 ('2312301','23123','11','0','100','0','0','0','0','0','0','0','11','40186','0','0','21','0','0','0','38','0','0','0','Doom Blossom - Cast Summon Blossom Move Target and Stop Movement and Zone Combat Pulse on Spawn'),
 ('2312302','23123','1','0','100','0','10000','10000','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Doom Blossom - Forced Despawn OOC'),
