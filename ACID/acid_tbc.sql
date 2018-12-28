@@ -26724,7 +26724,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2296202','22962','0','0','100','1025','5000','10000','15000','18000','0','0','11','41334','5','544','0','0','0','0','0','0','0','0','Priestess of Delight - Cast Polymorph'),
 -- Bonechewer Worker 22963
 ('2296301','22963','4','0','15','32','0','0','0','0','0','0','1','-10185','-10186','-10187','1','-10189','-10190','-10191','0','0','0','0','Bonechewer Worker - Say on Aggro'),
-('2296302','22963','0','0','50','1024','0','2000','0','0','0','0','11','40844','4','544','0','0','0','0','0','0','0','0','Bonechewer Worker - Cast Throw Pick'),
+('2296302','22963','9','0','50','1024','8','35','0','0','0','0','11','40844','4','544','0','0','0','0','0','0','0','0','Bonechewer Worker - Cast Throw Pick'),
 ('2296303','22963','6','0','100','0','0','0','0','0','0','0','45','0','50','0','0','0','0','0','0','0','0','0','Bonechewer Worker - Send AI Event 0 on Death'),
 -- Sister of Pleasure 22964 - req spell script for 41363
 ('2296401','22964','4','0','100','0','0','0','0','0','0','0','11','41362','15','2','45','6','15','0','0','0','0','0','Sister of Pain - Cast Shared Bonds and Send AI Event 6 on Aggro'),
@@ -26865,7 +26865,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2323706','23237','16','3','100','1025','41231','30','15000','15000','0','0','11','41231','12','2','0','0','0','0','0','0','0','0','Bonechewer Blood Prophet - Cast Prophecy of Blood on Friendly Missing Buff (Phase 2)'),
 -- Bonechewer Combatant 23239 - Say: "I submit! You win this time..." to Bonechewer Spectator
 -- Faction 1813 fighting, normal 1692
-('2323901','23239','0','0','100','1025','5000','7000','2000','2500','0','0','11','41251','0','0','0','0','0','0','0','0','0','0','Bonechewer Combatant - Cast Combat Rage'),
+('2323901','23239','0','0','100','1025','5000','7000','15000','35000','0','0','11','41251','0','0','0','0','0','0','0','0','0','0','Bonechewer Combatant - Cast Combat Rage'),
 ('2323902','23239','2','0','100','1025','30','0','120000','120000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Combatant - Cast Enrage at 30% HP'),
 -- Cage Trap Disturb Trigger 23304 - mob_cage_trap_trigger
 -- Ashtongue Rogue 23318
