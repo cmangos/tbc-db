@@ -5,7 +5,6 @@ DB%Complete: 85
 DBComment:
 * @CGUID+51,@CGUID+61,@CGUID+75 need to be respawned, formation is far off
 * Path +440, +441
-* Remove Delete Querys when File is done, most, if not all Deleting is done by 000_setup.sql
 * Dragonmaw Wind Reaver, Sky Stalker RP Event
 * Test Promenade Sentinel Aggro Range
 * SD2 (Zone?, Sniff normal emote) Emotes for Entry: 22984 "You hear a loud rumble of metal grinding on stone..." - High Warlord Naj'entus Death, "The door to The Den of Mortal Delights has opened." - 6/9 Bosses Dead
@@ -1063,7 +1062,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+447,9,625.9684,963.7745,56.14234,0,0,0),
 (@CGUID+447,10,633.1401,963.168,55.85291,0,0,0),
 -- Pathing for Dragonmaw Sky Stalker Entry: 23030
-(@CGUID+449,1,617.2476,859.702,98.09756,0,0,0),
+(@CGUID+449,1,617.2476,859.702,98.09756,0,5,0), -- run on
 (@CGUID+449,2,615.2957,859.4429,97.69086,0,0,0),
 (@CGUID+449,3,586.1652,871.6057,97.05197,0,0,0),
 (@CGUID+449,4,583.9716,902.4149,90.85754,0,0,0),
@@ -1076,7 +1075,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+449,11,660.8712,871.7776,95.46863,0,0,0),
 (@CGUID+449,12,640.8623,860.3631,99.13529,0,0,0),
 -- Pathing for Dragonmaw Sky Stalker Entry: 23030
-(@CGUID+452,1,611.2323,772.1125,100.3375,0,0,0),
+(@CGUID+452,1,611.2323,772.1125,100.3375,0,5,0), -- run on
 (@CGUID+452,2,610.3099,773.2811,101.0543,0,0,0),
 (@CGUID+452,3,593.9789,761.1765,100.2642,0,0,0),
 (@CGUID+452,4,596.4754,741.2283,102.9648,0,0,0),
@@ -1089,7 +1088,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+452,11,642.2083,757.2476,103.1986,0,0,0),
 (@CGUID+452,12,624.1133,771.72,100.3653,0,0,0),
 -- Pathing for Dragonmaw Sky Stalker Entry: 23030
-(@CGUID+453,1,639.2408,817.2838,96.00954,0,0,0),
+(@CGUID+453,1,639.2408,817.2838,96.00954,0,5,0), -- run on
 (@CGUID+453,2,637.0174,831.9658,94.81514,0,0,0),
 (@CGUID+453,3,630.5756,845.7454,91.42623,0,0,0),
 (@CGUID+453,4,617.9464,853.2907,88.20402,0,0,0),
@@ -1108,7 +1107,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+453,17,630.8676,783.9254,95.29805,0,0,0),
 (@CGUID+453,18,635.1721,806.4858,96.52027,0,0,0),
 -- Pathing for Dragonmaw Sky Stalker Entry: 23030
-(@CGUID+457,1,716.7581,667.9764,171.9325,0,0,0),
+(@CGUID+457,1,716.7581,667.9764,171.9325,0,5,0), -- run on
 (@CGUID+457,2,721.9486,665.284,171.9325,0,0,0),
 (@CGUID+457,3,764.4177,663.7574,171.9325,0,0,0),
 (@CGUID+457,4,791.3472,677.6638,171.9325,0,0,0),
@@ -1132,7 +1131,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+457,22,661.7581,705.3063,171.9325,0,0,0),
 (@CGUID+457,23,684.738,681.9153,171.9325,0,0,0),
 -- Pathing for Dragonmaw Sky Stalker Entry: 23030
-(@CGUID+458,1,772.7885,654.1609,181.0927,0,0,0),
+(@CGUID+458,1,772.7885,654.1609,181.0927,0,5,0), -- run on
 (@CGUID+458,2,741.7479,664.2408,181.0927,0,0,0),
 (@CGUID+458,3,706.3735,660.1111,181.0927,0,0,0),
 (@CGUID+458,4,687.1923,657.1448,181.0927,0,0,0),
@@ -1153,7 +1152,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+458,19,795.8221,652.5587,181.0927,0,0,0),
 (@CGUID+458,20,778.0756,652.9412,181.0927,0,0,0),
 -- Pathing for Dragonmaw Sky Stalker Entry: 23030
-(@CGUID+462,1,748.5817,926.8765,169.7075,0,0,0),
+(@CGUID+462,1,748.5817,926.8765,169.7075,0,5,0), -- run on
 (@CGUID+462,2,754.8384,949.9673,169.7075,0,0,0),
 (@CGUID+462,3,743.052,964.9089,169.7075,0,0,0),
 (@CGUID+462,4,709.5197,973.5267,169.7075,0,0,0),
@@ -1176,7 +1175,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+462,21,751.462,892.9752,169.7075,0,0,0),
 (@CGUID+462,22,748.5466,920.3238,169.7075,0,0,0),
 -- Pathing for Dragonmaw Sky Stalker Entry: 23030
-(@CGUID+463,1,803.3759,932.4915,184.5064,0,0,0),
+(@CGUID+463,1,803.3759,932.4915,184.5064,0,5,0), -- run on
 (@CGUID+463,2,811.2745,897.108,184.5064,0,0,0),
 (@CGUID+463,3,791.5839,875.892,184.5064,0,0,0),
 (@CGUID+463,4,752.4867,868.6232,184.5064,0,0,0),
@@ -1250,6 +1249,56 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+542,16,921.5169,224.1364,85.64123,0,0,0),
 (@CGUID+542,17,897.392,207.5867,86.16047,0,0,0),
 (@CGUID+542,18,899.0332,197.8294,86.16059,0,0,0),
+-- Pathing for Dragonmaw Sky Stalker Entry: 23030
+(@CGUID+792, 1, 791.9598, 864.118, 93.93944, 0, 5, 100), -- run on
+(@CGUID+792, 2, 817.6236, 873.2053, 88.28783, 0, 0, 100),
+(@CGUID+792, 3, 828.5604, 901.0464, 87.28785, 0, 0, 100),
+(@CGUID+792, 4, 828.9747, 926.9236, 87.42671, 0, 0, 100),
+(@CGUID+792, 5, 814.5479, 959.9678, 88.26006, 0, 0, 100),
+(@CGUID+792, 6, 796.491, 966.5102, 86.59338, 0, 0, 100),
+(@CGUID+792, 7, 757.6725, 966.7218, 90.51004, 0, 0, 100),
+(@CGUID+792, 8, 739.4886, 948.179, 98.78782, 0, 0, 100),
+(@CGUID+792, 9, 736.3679, 918.2423, 107.4823, 0, 0, 100),
+(@CGUID+792, 10, 739.2999, 894.662, 107.0934, 0, 0, 100),
+(@CGUID+792, 11, 753.6536, 874.6035, 98.28783, 0, 0, 100),
+(@CGUID+792, 12, 790.0931, 864.1937, 94.56561, 0, 0, 100),
+-- Pathing for Dragonmaw Sky Stalker Entry: 23030
+(@CGUID+793, 1, 808.744, 752.8126, 93.69208, 0, 5, 100), -- run on
+(@CGUID+793, 2, 810.0982, 728.1007, 95.92642, 0, 0, 100),
+(@CGUID+793, 3, 809.3226, 709.2455, 101.5179, 0, 0, 100),
+(@CGUID+793, 4, 804.869, 691.9334, 103.6763, 0, 0, 100),
+(@CGUID+793, 5, 789.4135, 679.9703, 102.1762, 0, 0, 100),
+(@CGUID+793, 6, 772.5522, 683.7802, 99.09293, 0, 0, 100),
+(@CGUID+793, 7, 759.5066, 697.9881, 100.3707, 0, 0, 100),
+(@CGUID+793, 8, 752.4968, 727.6615, 106.1207, 0, 0, 100),
+(@CGUID+793, 9, 747.4766, 760.6776, 114.7874, 0, 0, 100),
+(@CGUID+793, 10, 751.5941, 805.2043, 104.7318, 0, 0, 100),
+(@CGUID+793, 11, 751.1071, 831.5707, 90.48182, 0, 0, 100),
+(@CGUID+793, 12, 768.2726, 846.9728, 96.42626, 0, 0, 100),
+(@CGUID+793, 13, 795.4689, 850.97, 102.3151, 0, 0, 100),
+(@CGUID+793, 14, 815.1022, 836.6889, 95.98182, 0, 0, 100),
+(@CGUID+793, 15, 812.1649, 811.0369, 99.09293, 0, 0, 100),
+(@CGUID+793, 16, 810.7905, 781.4119, 100.1485, 0, 0, 100),
+(@CGUID+793, 17, 808.2366, 755.0889, 94.70402, 0, 0, 100),
+-- Pathing for Dragonmaw Sky Stalker Entry: 23030
+(@CGUID+794, 1, 687.0418, 872.5399, 81.68005, 0, 5, 100), -- run on
+(@CGUID+794, 2, 672.4034, 852.6266, 80.60835, 0, 0, 100),
+(@CGUID+794, 3, 664.3254, 823.0761, 90.13865, 0, 0, 100),
+(@CGUID+794, 4, 675.2798, 803.8729, 91.80936, 0, 0, 100),
+(@CGUID+794, 5, 683.4824, 782.0359, 90.15625, 0, 0, 100),
+(@CGUID+794, 6, 680.5452, 754.212, 91.47352, 0, 0, 100),
+(@CGUID+794, 7, 687.6937, 739.1242, 94.63132, 0, 0, 100),
+(@CGUID+794, 8, 709.887, 737.9406, 97.90912, 0, 0, 100),
+(@CGUID+794, 9, 722.275, 749.9312, 99.65911, 0, 0, 100),
+(@CGUID+794, 10, 720.2606, 768.6862, 92.71466, 0, 0, 100),
+(@CGUID+794, 11, 720.647, 783.9854, 88.32578, 0, 0, 100),
+(@CGUID+794, 12, 720.858, 796.5645, 87.04801, 0, 0, 100),
+(@CGUID+794, 13, 731.3468, 814.0711, 81.68689, 0, 0, 100),
+(@CGUID+794, 14, 731.7731, 831.5212, 90.96468, 0, 0, 100),
+(@CGUID+794, 15, 734.43, 855.3979, 87.65915, 0, 0, 100),
+(@CGUID+794, 16, 717.5137, 875.2517, 88.3258, 0, 0, 100),
+(@CGUID+794, 17, 708.2299, 879.131, 86.40916, 0, 0, 100),
+(@CGUID+794, 18, 706.2591, 879.9013, 85.68813, 0, 0, 100),
 -- Pathing for Bonechewer Behemoth Entry: 23196 - Needs pathID for creature_movement due to MovementType Change for @CGUID+543
 (@CGUID+543, 1, 822.3735, 124.8126, 112.52, 12000, 0, 100), -- 2319601 idle
 (@CGUID+543, 2, 825.2758, 62.25126, 112.7349, 60000, 0, 100), -- 2319602 spawndist 3
@@ -1850,8 +1899,8 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (22886, 0, 1, 1, 16, 0, 8192, NULL), -- Black Temple Captive
 (22887, 0, 0, 1, 0, 0, 0, '19818'), -- High Warlord Naj'entus
 -- 22894 not found in sniff
--- 22896 has 32186 Fire Totem Transform as Aura serverside
--- 22897 has 32188 Air Totem Transform as Aura serverside
+(22896, 0, 0, 0, 0, 0, 0, '32186'), -- Ashtongue Searing Totem
+(22897, 0, 0, 0, 0, 0, 0, '32188'), -- Summoned Windfury Totem
 (22898, 0, 0, 1, 0, 0, 0, NULL), -- Supremus
 (22917, 0, 0, 0, 0, 0, 0, '39656'), -- Illidan Stormrage
 (22949, 0, 0, 0, 0, 0, 0, '41341'), -- Gathios the Shatterer
@@ -1859,7 +1908,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (22950, 0, 0, 0, 0, 0, 0, '41341'), -- High Nethermancer Zerevor
 (22951, 0, 0, 0, 0, 0, 0, '41341'), -- Lady Malande
 (22952, 0, 0, 0, 0, 0, 0, '41341'), -- Veras Darkshadow
-(22960, 0, 0, 0, 0, 0, 0, '40899'),-- Dragonmaw Wyrmcaller
+(22960, 0, 0, 1, 0, 0, 0, '40899'),-- Dragonmaw Wyrmcaller
 (23018, 14334, 0, 1, 0, 0, 0, NULL), -- Shadowmoon Houndmaster
 (23030, 24725, 0, 1, 16, 0, 1024, NULL), -- Dragonmaw Sky Stalker
 (23047, 0, 0, 1, 16, 0, 0, NULL), -- Shadowmoon Soldier
@@ -1983,14 +2032,46 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+419, @CGUID+443, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
 (@CGUID+420, @CGUID+443, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
 (@CGUID+443, @CGUID+198, 1024), -- Bonechewer Taskmaster -> Supremus
+(@CGUID+460, @CGUID+381, 1167), -- Dragonmaw Sky Stalker -> Dragonmaw Wyrmcaller
+(@CGUID+783, @CGUID+381, 1167), -- Dragonmaw Sky Stalker -> Dragonmaw Wyrmcaller
 (@CGUID+382, @CGUID+381, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
 (@CGUID+381, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
 (@CGUID+384, @CGUID+383, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
 (@CGUID+383, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
 (@CGUID+386, @CGUID+385, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
 (@CGUID+385, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
+(@CGUID+782, @CGUID+388, 1167), -- Dragonmaw Sky Stalker -> Dragonmaw Wyrmcaller
+(@CGUID+781, @CGUID+388, 1167), -- Dragonmaw Sky Stalker -> Dragonmaw Wyrmcaller
 (@CGUID+387, @CGUID+388, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
 (@CGUID+388, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
+(@CGUID+612, @CGUID+449, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+611, @CGUID+452, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+607, @CGUID+453, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+784, @CGUID+457, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+785, @CGUID+457, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+786, @CGUID+458, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+787, @CGUID+458, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+788, @CGUID+462, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+789, @CGUID+462, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+790, @CGUID+463, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+791, @CGUID+463, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+795, @CGUID+792, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+796, @CGUID+793, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+797, @CGUID+794, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+449, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+452, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+453, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+457, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+457, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+458, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+458, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+462, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+462, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+463, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+463, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+792, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+793, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+794, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
 -- (@CGUID+389, @CGUID+390, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller not sure
 (@CGUID+390, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
 (@CGUID+393, @CGUID+444, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
@@ -2008,11 +2089,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+415, @CGUID+447, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
 (@CGUID+448, @CGUID+447, 1679), -- Bonechewer Taskmaster -> Bonechewer Taskmaster
 (@CGUID+447, @CGUID+198, 1024), -- Bonechewer Taskmaster -> Supremus
--- Needs Creature Groups or Node Sharing for Respawn/Linked Aggro to fully work, doesnt work when @CGUID+450 isnt spawned
--- (@CGUID+452, @CGUID+450, 1167), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
--- (@CGUID+610, @CGUID+450, 1167), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
--- (@CGUID+611, @CGUID+450, 1167), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
--- (@CGUID+450, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
 -- Shade of Akama
 (@CGUID+061, @CGUID+051, 1679), -- Ashtongue Mystic -> Ashtongue Battlelord
 (@CGUID+075, @CGUID+051, 1679), -- Ashtongue Primalist -> Ashtongue Battlelord
@@ -2073,14 +2149,14 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (22997, 564, 22917, 4096, 0), -- Flame of Azzinoth -> Illidan Stormrage
 (23089, 564, 22917, 4096, 0), -- Akama -> Illidan Stormrage
 (23197, 564, 22917, 4096, 0), -- Maiev Shadowsong -> Illidan Stormrage
-(23215, 564, 22990, 4112, 0), -- Ashtongue Sorcerer -> Akama
-(23216, 564, 22990, 4112, 0), -- Ashtongue Defender -> Akama
+(23215, 564, 23191, 4112, 0), -- Ashtongue Sorcerer -> Akama
+(23216, 564, 23191, 4112, 0), -- Ashtongue Defender -> Akama
 (23226, 564, 22917, 4112, 0), -- Illidari Elite -> Illidan Stormrage
-(23318, 564, 22990, 4112, 0), -- Ashtongue Rogue -> Akama
+(23318, 564, 23191, 4112, 0), -- Ashtongue Rogue -> Akama
 (23375, 564, 22917, 4096, 0), -- Shadow Demon -> Illidan Stormrage
 (23498, 564, 22917, 4112, 0), -- Parasitic Shadowfiend -> Illidan Stormrage
-(23523, 564, 22990, 4112, 0), -- Ashtongue Elementalist -> Akama
-(23524, 564, 22990, 4112, 0); -- Ashtongue Spiritbinder -> Akama
+(23523, 564, 23191, 4112, 0), -- Ashtongue Elementalist -> Akama
+(23524, 564, 23191, 4112, 0); -- Ashtongue Spiritbinder -> Akama
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 1420, 564, 1, 411.252, 807.219, 13.0889, 3.84363, 7200, 7200, 5, 0, 0, 1), -- Toad
@@ -2253,16 +2329,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+168, 22883, 564, 1, 262.664, 722.705, -15.3866, 0.087266, 7200, 7200, 3, 0, 0, 1), -- Aqueous Spawn
 (@CGUID+169, 22883, 564, 1, 262.745, 740.508, -25.2831, 3.4383, 7200, 7200, 3, 0, 0, 1), -- Aqueous Spawn
 (@CGUID+170, 22883, 564, 1, 251.192, 741.957, -26.049, 0.541052, 7200, 7200, 3, 0, 0, 1), -- Aqueous Spawn
-(@CGUID+171, 22883, 564, 1, 348.612, 829.29, 1.47173, 6.21337, 900, 900, 0, 0, 0, 2), -- Aqueous Spawn
-(@CGUID+172, 22883, 564, 1, 347.247, 826.957, 0.960461, 0.017453, 900, 900, 0, 0, 0, 0), -- Aqueous Spawn
-(@CGUID+173, 22883, 564, 1, 302.576, 795.708, -17.7537, 2.96706, 900, 900, 0, 0, 0, 0), -- Aqueous Spawn
-(@CGUID+174, 22883, 564, 1, 305.727, 793.117, -16.0915, 3.24631, 900, 900, 0, 0, 0, 2), -- Aqueous Spawn
-(@CGUID+175, 22883, 564, 1, 471.542, 940.37, 14.4428, 4.72984, 900, 900, 0, 0, 0, 2), -- Aqueous Spawn
-(@CGUID+176, 22883, 564, 1, 469.634, 936.326, 14.4428, 4.39823, 900, 900, 0, 0, 0, 0), -- Aqueous Spawn
-(@CGUID+177, 22883, 564, 1, 307.713, 972.534, -59.657, 2.93215, 900, 900, 0, 0, 0, 2), -- Aqueous Spawn
-(@CGUID+178, 22883, 564, 1, 305.223, 975.352, -59.7491, 3.07178, 900, 900, 0, 0, 0, 0), -- Aqueous Spawn
-(@CGUID+179, 22883, 564, 1, 224.4053, 1088.673, -60.77443, 4.729842, 900, 900, 0, 0, 0, 0), -- Aqueous Spawn
-(@CGUID+180, 22883, 564, 1, 227.931, 1085.87, -60.7486, 4.69494, 900, 900, 0, 0, 0, 2), -- Aqueous Spawn
+(@CGUID+171, 22883, 564, 1, 348.612, 829.29, 1.47173, 6.21337, 900, 1800, 0, 0, 0, 2), -- Aqueous Spawn
+(@CGUID+172, 22883, 564, 1, 347.247, 826.957, 0.960461, 0.017453, 900, 1800, 0, 0, 0, 0), -- Aqueous Spawn
+(@CGUID+173, 22883, 564, 1, 302.576, 795.708, -17.7537, 2.96706, 900, 1800, 0, 0, 0, 0), -- Aqueous Spawn
+(@CGUID+174, 22883, 564, 1, 305.727, 793.117, -16.0915, 3.24631, 900, 1800, 0, 0, 0, 2), -- Aqueous Spawn
+(@CGUID+175, 22883, 564, 1, 471.542, 940.37, 14.4428, 4.72984, 900, 1800, 0, 0, 0, 2), -- Aqueous Spawn
+(@CGUID+176, 22883, 564, 1, 469.634, 936.326, 14.4428, 4.39823, 900, 1800, 0, 0, 0, 0), -- Aqueous Spawn
+(@CGUID+177, 22883, 564, 1, 307.713, 972.534, -59.657, 2.93215, 900, 1800, 0, 0, 0, 2), -- Aqueous Spawn
+(@CGUID+178, 22883, 564, 1, 305.223, 975.352, -59.7491, 3.07178, 900, 1800, 0, 0, 0, 0), -- Aqueous Spawn
+(@CGUID+179, 22883, 564, 1, 224.4053, 1088.673, -60.77443, 4.729842, 900, 1800, 0, 0, 0, 0), -- Aqueous Spawn
+(@CGUID+180, 22883, 564, 1, 227.931, 1085.87, -60.7486, 4.69494, 900, 1800, 0, 0, 0, 2), -- Aqueous Spawn
 (@CGUID+181, 22884, 564, 1, 247.985, 1078.24, -62.547, 5.70723, 7200, 7200, 0, 0, 0, 0), -- Leviathan
 (@CGUID+182, 22884, 564, 1, 435.851, 852.742, 12.324, 4.88692, 7200, 7200, 0, 0, 0, 0), -- Leviathan
 (@CGUID+183, 22884, 564, 1, 259.476, 1059.17, -62.4917, 2.74017, 7200, 7200, 0, 0, 0, 0), -- Leviathan
@@ -2517,7 +2593,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+432, 22965, 564, 1, 828.2432, 413.8264, 192.8021, 5.54488, 7200, 7200, 0, 0, 0, 2), -- Enslaved Servant
 (@CGUID+433, 22965, 564, 1, 951.1917, 402.9396, 112.768, 6.27485, 7200, 7200, 0, 0, 0, 2), -- Enslaved Servant
 (@CGUID+434, 22984, 564, 1, 785.456, 464.293, 164.169, 5.34071, 7200, 7200, 0, 0, 0, 0), -- Black Temple Trigger
-(@CGUID+435, 22990, 564, 1, 544.596, 400.677, 112.784, 3.11943, 604800, 604800, 0, 0, 0, 0), -- Akama
+(@CGUID+435, 23191, 564, 1, 544.596, 400.677, 112.784, 3.11943, 604800, 604800, 0, 0, 0, 0), -- Akama
 (@CGUID+436, 23018, 564, 1, 434.989, 261.706, 172.368, 4.70618, 7200, 7200, 0, 0, 0, 2), -- Shadowmoon Houndmaster
 (@CGUID+437, 23018, 564, 1, 439.994, 262.253, 172.612, 4.70577, 7200, 7200, 0, 0, 0, 0), -- Shadowmoon Houndmaster
 (@CGUID+438, 23018, 564, 1, 458.21, 170.244, 163.981, 6.27262, 7200, 7200, 0, 0, 0, 2), -- Shadowmoon Houndmaster
@@ -2532,22 +2608,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+447, 23028, 564, 1, 618.848, 967.643, 56.0339, 5.46778, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Taskmaster
 (@CGUID+448, 23028, 564, 1, 623.037, 970.488, 56.0675, 5.46771, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Taskmaster
 (@CGUID+449, 23030, 564, 1, 601.6918, 852.726, 64.19906, 5.602507, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
-(@CGUID+450, 23030, 564, 1, 604.0793, 772.6408, 71.25902, 1.099557, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
-(@CGUID+451, 23030, 564, 1, 622.4755, 743.4153, 182.0927, 1.643648, 7200, 7200, 150, 0, 0, 1), -- Dragonmaw Sky Stalker -- ~ 250spawndist
+-- @CGUID+450 -- REUSE
+-- @CGUID+451 -- REUSE
 (@CGUID+452, 23030, 564, 1, 623.2493, 779.8209, 71.35022, 2.740167, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
 (@CGUID+453, 23030, 564, 1, 625.8873, 814.3218, 67.75632, 0.2030302, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
-(@CGUID+454, 23030, 564, 1, 649.5335, 761.3539, 170.7075, 3.523889, 7200, 7200, 150, 0, 0, 1), -- Dragonmaw Sky Stalker -- ~ 250spawndist
-(@CGUID+455, 23030, 564, 1, 662.6966, 681.5464, 172.8637, 1.598467, 7200, 7200, 150, 0, 0, 1), -- Dragonmaw Sky Stalker -- ~ 250spawndist
-(@CGUID+456, 23030, 564, 1, 665.3629, 745.1495, 172.9325, 3.281955, 7200, 7200, 125, 0, 0, 1), -- Dragonmaw Sky Stalker
-(@CGUID+457, 23030, 564, 1, 678.7386, 879.4872, 171.9325, 3.150776, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
+-- @CGUID+454 -- REUSE
+-- @CGUID+455 -- REUSE
+-- @CGUID+456 -- REUSE
+(@CGUID+457, 23030, 564, 1, 716.7581, 667.9764, 171.9325, 3.150776, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
 (@CGUID+458, 23030, 564, 1, 697.834, 658.5719, 181.0927, 3.358212, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
-(@CGUID+459, 23030, 564, 1, 713.894, 738.3996, 182.0927, 6.11481, 7200, 7200, 150, 0, 0, 1), -- Dragonmaw Sky Stalker -- ~ 250spawndist
+-- @CGUID+459 -- REUSE
 (@CGUID+460, 23030, 564, 1, 745.0646, 920.3674, 54.02595, 2.687807, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
-(@CGUID+461, 23030, 564, 1, 752.6495, 947.2424, 164.2913, 2.762676, 7200, 7200, 150, 0, 0, 1), -- Dragonmaw Sky Stalker -- ~ 250spawndist
+-- @CGUID+461 -- REUSE
 (@CGUID+462, 23030, 564, 1, 756.7599, 921.978, 167.261, 2.632375, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
 (@CGUID+463, 23030, 564, 1, 758.653, 869.2677, 184.5064, 3.243881, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
-(@CGUID+464, 23030, 564, 1, 772.8409, 860.9445, 164.924, 3.110512, 7200, 7200, 150, 0, 0, 1), -- Dragonmaw Sky Stalker -- ~ 250spawndist
-(@CGUID+465, 23030, 564, 1, 781.2299, 855.3271, 161.4555, 3.155379, 7200, 7200, 150, 0, 0, 1), -- Dragonmaw Sky Stalker -- ~ 250spawndist
+-- @CGUID+464 -- REUSE
+-- @CGUID+465 -- REUSE
 (@CGUID+466, 23033, 564, 1, 564.068, 413.016, 211.713, 0.982765, 7200, 7200, 5, 0, 0, 1), -- Invisible Stalker (Floating)
 (@CGUID+467, 23033, 564, 1, 557.642, 404.766, 212.222, 4.1584, 7200, 7200, 5, 0, 0, 1), -- Invisible Stalker (Floating)
 (@CGUID+468, 23033, 564, 1, 569.017, 413.021, 211.276, 3.878, 7200, 7200, 5, 0, 0, 1), -- Invisible Stalker (Floating)
@@ -2688,11 +2764,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+603, 23239, 564, 1, 888.257, 273.772, 86.2442, 2.02458, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Combatant
 (@CGUID+604, 23239, 564, 1, 924.336, 191.349, 85.7246, 0.174533, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Combatant
 (@CGUID+605, 23288, 564, 1, 517.166, 416.095, 141.443, 4.76475, 7200, 7200, 0, 0, 0, 0), -- Invisible Stalker (Akama)
-(@CGUID+606, 23330, 564, 1, 795.613, 702.976, 101.393, 4.34564, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
-(@CGUID+607, 23330, 564, 1, 603.913, 788.877, 95.5409, 1.9333, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
-(@CGUID+608, 23330, 564, 1, 778.735, 851.111, 73.4507, 0.871723, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
-(@CGUID+609, 23330, 564, 1, 770.716, 878.097, 68.9106, 2.32999, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
-(@CGUID+610, 23330, 564, 1, 623.249, 779.821, 71.3502, 2.74017, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
+-- @CGUID+606 -- REUSE
+(@CGUID+607, 23330, 564, 1, 613.789, 817.147, 67.6669, 1.312755, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
+-- @CGUID+608 -- REUSE
+-- @CGUID+609 -- REUSE
+-- @CGUID+610 -- REUSE
 (@CGUID+611, 23330, 564, 1, 604.079, 772.641, 71.259, 1.09956, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
 (@CGUID+612, 23330, 564, 1, 626.741, 854.619, 64.869, 4.11898, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
 (@CGUID+613, 23337, 564, 1, 599.842, 387.937, 112.822, 0.401426, 7200, 7200, 0, 0, 0, 0), -- Illidari Centurion
@@ -2862,13 +2938,29 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+777, 23374, 564, 1, 742.5994, 290.4014, 125.2681, 0.05235988, 7200, 7200, 0, 0, 0, 0), -- Ashtongue Stalker
 (@CGUID+778, 23374, 564, 1, 702.7503, 352.3887, 125.2664, 1.972222, 7200, 7200, 0, 0, 0, 0), -- Ashtongue Stalker
 (@CGUID+779, 23374, 564, 1, 707.5325, 352.4765, 125.2653, 1.32645, 7200, 7200, 0, 0, 0, 0), -- Ashtongue Stalker
-(@CGUID+780, 23374, 564, 1, 751.6913, 380.0506, 112.7677, 1.570796, 7200, 7200, 0, 0, 0, 2); -- Ashtongue Stalker
+(@CGUID+780, 23374, 564, 1, 751.6913, 380.0506, 112.7677, 1.570796, 7200, 7200, 0, 0, 0, 2), -- Ashtongue Stalker
+(@CGUID+781, 23030, 564, 1, 663.321, 915.896, 55.944, 2.75762, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+782, 23030, 564, 1, 667.795, 938.849, 54.7873, 3.42085, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+783, 23030, 564, 1, 740.413, 946.561, 54.34, 3.54302, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+784, 23030, 564, 1, 717.615, 694.212, 171.9325, 6.25, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+785, 23030, 564, 1, 717.314, 637.741, 171.9325, 0.018406, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+786, 23030, 564, 1, 698.043, 670.68, 181.093, 6.265877, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+787, 23030, 564, 1, 697.539, 641.564, 181.093, 6.265877, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+788, 23030, 564, 1, 742.3175, 920.8049, 167.261, 1.651852, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+789, 23030, 564, 1, 781.6795, 922.1385, 167.261, 1.577239, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+790, 23030, 564, 1, 758.7187, 859.0482, 184.50599, 3.148018, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+791, 23030, 564, 1, 759.2268, 884.8674, 184.50599, 3.104822, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Sky Stalker
+(@CGUID+792, 23030, 564, 1, 791.9598, 864.118, 93.93944, 0, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
+(@CGUID+793, 23030, 564, 1, 808.744, 752.8126, 93.69208, 0, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
+(@CGUID+794, 23030, 564, 1, 687.0418, 872.5399, 81.68005, 0, 7200, 7200, 0, 0, 0, 2), -- Dragonmaw Sky Stalker
+(@CGUID+795, 23330, 564, 1, 792.3768, 876.2903, 93.939438, 6.272003, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
+(@CGUID+796, 23330, 564, 1, 798.21307, 755.11657, 93.692078, 4.497001, 7200, 7200, 0, 0, 0, 0), -- Dragonmaw Wind Reaver
+(@CGUID+797, 23330, 564, 1, 701.24536, 868.2406, 81.68005, 4.418467, 7200, 7200, 0, 0, 0, 0); -- Dragonmaw Wind Reaver
 
 -- ===========
 -- GAMEOBJECTS
 -- ===========
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN @OGUID+1 AND @OGUID+25;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1, 185478, 564, 1, 564.006, 400.553, 112.784, 1.56474, 0, 0, 0, 0, 180, 180, 100, 0), -- Door
 (@OGUID+2, 185479, 564, 1, 855.715, 392.976, 112.784, 1.56474, 0, 0, 0, 0, 180, 180, 100, 1), -- Door
@@ -2910,7 +3002,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
-DELETE FROM `pool_template` WHERE `entry` BETWEEN @PGUID+1 AND @PGUID+9;
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Black Temple - Spellbound Attendant/Enslaved Servant - Pool 1'),
 (@PGUID+2, 1, 'Black Temple - Spellbound Attendant/Enslaved Servant - Pool 2'),
@@ -2918,13 +3009,8 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+4, 1, 'Black Temple - Spellbound Attendant/Enslaved Servant - Pool 4'),
 (@PGUID+5, 1, 'Black Temple - Spellbound Attendant/Enslaved Servant - Pool 5'),
 (@PGUID+6, 1, 'Black Temple - Spellbound Attendant/Enslaved Servant - Pool 6'),
-(@PGUID+7, 1, 'Black Temple - Spellbound Attendant/Enslaved Servant - Pool 7'),
-(@PGUID+8, 1, 'Black Temple - Dragonmaw Sky Stalker/Dragonmaw Wind Reaver - Pool 1'),
-(@PGUID+9, 1, 'Black Temple - Dragonmaw Sky Stalker/Dragonmaw Wind Reaver - Pool 2');
+(@PGUID+7, 1, 'Black Temple - Spellbound Attendant/Enslaved Servant - Pool 7');
 
-DELETE FROM `pool_creature` WHERE `guid` BETWEEN @CGUID+372 AND @CGUID+378;
-DELETE FROM `pool_creature` WHERE `guid` BETWEEN @CGUID+427 AND @CGUID+433;
-DELETE FROM `pool_creature` WHERE `guid` IN(@CGUID+452,@CGUID+450,@CGUID+610,@CGUID+611);
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+372, @PGUID+1, 0, 'Black Temple - Spellbound Attendant'),
 (@CGUID+427, @PGUID+1, 0, 'Black Temple - Enslaved Servant'),
@@ -2939,11 +3025,7 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 (@CGUID+377, @PGUID+6, 0, 'Black Temple - Spellbound Attendant'),
 (@CGUID+432, @PGUID+6, 0, 'Black Temple - Enslaved Servant'),
 (@CGUID+378, @PGUID+7, 0, 'Black Temple - Spellbound Attendant'),
-(@CGUID+433, @PGUID+7, 0, 'Black Temple - Enslaved Servant'),
-(@CGUID+452, @PGUID+8, 0, 'Black Temple - Dragonmaw Sky Stalker'),
-(@CGUID+610, @PGUID+8, 0, 'Black Temple - Dragonmaw Wind Reaver'),
-(@CGUID+450, @PGUID+9, 0, 'Black Temple - Dragonmaw Sky Stalker'),
-(@CGUID+611, @PGUID+9, 0, 'Black Temple - Dragonmaw Wind Reaver');
+(@CGUID+433, @PGUID+7, 0, 'Black Temple - Enslaved Servant');
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
