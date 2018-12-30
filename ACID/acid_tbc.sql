@@ -26564,7 +26564,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ashtongue Mystic 22845
 ('2284501','22845','0','0','100','1025','3000','7000','18000','23000','0','0','11','39589','0','0','11','39586','0','0','0','0','0','0','Ashtongue Mystic - Random Cast Summon Cyclone Totem or Summon Windfury Totem'),
 ('2284502','22845','0','0','100','1025','8000','16000','40000','60000','0','0','11','39588','0','0','0','0','0','0','0','0','0','0','Ashtongue Mystic - Cast Summon Searing Totem'),
-('2284503','22845','0','0','100','1025','9000','12000','26000','32000','0','0','11','41185','0','0','0','0','0','0','0','0','0','0','Ashtongue Mystic - Cast Bloodlust'),
+('2284503','22845','0','0','100','1025','9000','12000','26000','32000','0','0','11','41185','0','32','0','0','0','0','0','0','0','0','Ashtongue Mystic - Cast Bloodlust'),
 ('2284504','22845','14','0','100','1025','20000','40','14000','19000','0','0','11','41114','12','0','0','0','0','0','0','0','0','0','Ashtongue Mystic - Cast Chain Heal on Friendly Missing HP'),
 ('2284505','22845','9','0','100','1057','0','20','3000','11000','0','0','11','41115','4','768','11','41116','4','768','0','0','0','0','Ashtongue Mystic - Random Cast Flame Shock or Frost Shock'),
 -- Ashtongue Stormcaller 22846 - Storm Fury 22848 seem static spawned, maybe spell = 39534 as combat action for resummon?
@@ -26604,9 +26604,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2286905','22869','9','0','100','1025','0','5','2000','2000','0','0','11','39665','1','0','0','0','0','0','0','0','0','0','Illidari Boneslicer - Cast Wound Poison'),
 -- Teron Gorefiend (22871) - boss_teron_gorefiend
 -- Coilskar General 22873 - 40081 needs core support
-('2287301','22873','0','0','100','1025','1000','3000','20000','40000','0','0','11','40080','0','0','0','0','0','0','0','0','0','0','Coilskar General - Cast Booming Voice'),
-('2287302','22873','15','0','100','1025','7','100','10000','20000','0','0','11','40081','12','1','54','-10120','0','0','22','1','0','0','Coilskar General - Cast Free Friend and Set Phase 1 on Friendly CC'),
-('2287303','22873','0','1','100','1025','0','0','1000','1000','0','0','11','40080','0','0','22','0','0','0','0','0','0','0','Coilskar General - Cast Booming Voice and Set Phase 0 (Phase 1)'),
+('2287301','22873','0','0','100','1025','1000','3000','20000','40000','0','0','11','40080','0','32','0','0','0','0','0','0','0','0','Coilskar General - Cast Booming Voice'),
+('2287302','22873','15','0','100','1025','7','100','10000','20000','0','0','11','40081','12','1','54','-10120','12','0','22','1','0','0','Coilskar General - Cast Free Friend and Set Phase 1 on Friendly CC'),
+('2287303','22873','0','1','100','1025','0','0','1000','1000','0','0','11','40080','0','32','22','0','0','0','0','0','0','0','Coilskar General - Cast Booming Voice and Set Phase 0 (Phase 1)'),
 -- Coilskar Harpooner 22874 - 40084 provides Force Attack Target for Dragon Turtle, (maybe self?!)
 ('2287401','22874','9','0','100','1025','0','80','12000','19000','0','0','11','40084','4','544','45','6','80','0','0','0','0','0','Coilskar Harpooner - Cast Harpooner''s Mark and Send AI Event 6'),
 ('2287402','22874','0','0','100','1025','8000','12000','9000','11000','0','0','11','40082','1','0','0','0','0','0','0','0','0','0','Coilskar Harpooner - Cast Hooked Net'),
