@@ -30,91 +30,265 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+50, 13, 160.9519, 1408.474, 4.574402, 100, 0, 0),
 (@CGUID+50, 14, 159.302, 1411.002, 4.045419, 100, 0, 0),
 
-(@CGUID+69, 1, -195.1887, 1319.176, 1.353913, 100, 0, 0), 
-(@CGUID+69, 2, -194.7753, 1288.607, 1.478035, 100, 0, 0), 
-(@CGUID+69, 3, -195.1887, 1319.176, 1.353913, 100, 0, 0), 
-(@CGUID+69, 4, -194.7753, 1288.607, 1.478035, 100, 0, 0), 
-(@CGUID+69, 5, -199.9926, 1259.637, 1.181962, 100, 0, 0), 
-(@CGUID+69, 6, -191.1317, 1241.622, 0.7102828, 100, 0, 0), 
-(@CGUID+69, 7, -148.2395, 1214.866, 0.9919434, 100, 0, 0), 
-(@CGUID+69, 8, -135.5854, 1173.052, 0.1290283, 100, 0, 0), 
-(@CGUID+69, 9, -141.5868, 1124.066, 0.1249994, 100, 0, 0), 
-(@CGUID+69, 10, -153.2677, 1218.847, 3.023193, 100, 0, 0), 
-(@CGUID+69, 11, -163.541, 1238.021, 1.875, 100, 0, 0), 
-(@CGUID+69, 12, -182.968, 1245.258, 2.638261, 100, 0, 0), 
-(@CGUID+69, 13, -198.5412, 1252.48, 0.5489058, 100, 0, 0), 
-(@CGUID+69, 14, -200.3488, 1263.651, 1.302935, 100, 0, 0), 
-(@CGUID+69, 15, -196.0485, 1276.635, 1.288582, 100, 0, 0), 
-(@CGUID+69, 16, -194.7303, 1299.047, 1.715461, 100, 0, 0), 
-(@CGUID+69, 17, -195.2259, 1319.58, 1.362702, 100, 0, 0), 
-(@CGUID+69, 18, -197.6909, 1338.085, 0.1685638, 100, 0, 0), 
-(@CGUID+69, 19, -207.5255, 1358.867, -0.005558491, 100, 0, 0), 
-(@CGUID+69, 20, -208.0637, 1379.98, 0.008210659, 100, 0, 0), 
-(@CGUID+69, 21, -207.2668, 1356.247, -0.005558491, 100, 0, 0), 
-(@CGUID+69, 22, -197.7613, 1336.673, 0.3465424, 100, 0, 0), 
-(@CGUID+69, 23, -195.1887, 1319.176, 1.353913, 100, 0, 0), 
-(@CGUID+69, 24, -194.7753, 1288.607, 1.478035, 100, 0, 0), 
-(@CGUID+69, 25, -199.9926, 1259.637, 1.181962, 100, 0, 0), 
-(@CGUID+69, 26, -191.1317, 1241.622, 0.7102828, 100, 0, 0), 
-(@CGUID+69, 27, -170.5444, 1241.329, 1.623613, 100, 0, 0), 
-(@CGUID+69, 28, -148.2395, 1214.866, 0.9919434, 100, 0, 0), 
-(@CGUID+69, 29, -141.0575, 1192.832, 0.125, 100, 0, 0), 
-(@CGUID+69, 30, -135.5854, 1173.052, 0.1290283, 100, 0, 0), 
-(@CGUID+69, 31, -141.5868, 1124.066, 0.1249994, 100, 0, 0), 
-(@CGUID+69, 32, -135.0329, 1192.962, 0.125, 100, 0, 0), 
-(@CGUID+69, 33, -153.2677, 1218.847, 3.023193, 100, 0, 0), 
-(@CGUID+69, 34, -163.541, 1238.021, 1.875, 100, 0, 0), 
-(@CGUID+69, 35, -182.968, 1245.258, 2.638261, 100, 0, 0), 
-(@CGUID+69, 36, -198.5412, 1252.48, 0.5489058, 100, 0, 0), 
-(@CGUID+69, 37, -200.3488, 1263.651, 1.302935, 100, 0, 0), 
-(@CGUID+69, 38, -196.0485, 1276.635, 1.288582, 100, 0, 0), 
-(@CGUID+69, 39, -194.7303, 1299.047, 1.715461, 100, 0, 0), 
-(@CGUID+69, 40, -195.5829, 1284.55, 1.439343, 100, 0, 0), 
-(@CGUID+69, 41, -187.3113, 1291.892, 2.203377, 100, 0, 0), 
-(@CGUID+69, 42, -190.7698, 1288.822, 1.862958, 100, 0, 0), 
+(@CGUID+69, 1, -195.189, 1319.18, 1.35391, 100, 0, 0),
+(@CGUID+69, 2, -194.775, 1288.61, 1.47803, 100, 0, 0),
+(@CGUID+69, 3, -199.993, 1259.64, 1.18196, 100, 0, 0),
+(@CGUID+69, 4, -191.132, 1241.62, 0.710283, 100, 0, 0),
+(@CGUID+69, 5, -148.24, 1214.87, 0.991943, 100, 0, 0),
+(@CGUID+69, 6, -135.585, 1173.05, 0.129028, 100, 0, 0),
+(@CGUID+69, 7, -141.587, 1124.07, 0.124999, 100, 0, 0),
+(@CGUID+69, 8, -134.82, 1172.32, 0.126417, 100, 0, 0),
+(@CGUID+69, 9, -147.959, 1214.69, 0.831413, 100, 0, 0),
+(@CGUID+69, 10, -155.308, 1236.18, 0.858378, 100, 0, 0),
+(@CGUID+69, 11, -161.586, 1246.2, 0.661539, 100, 0, 0),
+(@CGUID+69, 12, -167.165, 1244.97, 1.01697, 100, 0, 0),
+(@CGUID+69, 13, -191.041, 1241.64, 0.596749, 100, 0, 0),
+(@CGUID+69, 14, -198.541, 1252.48, 0.548906, 100, 0, 0),
+(@CGUID+69, 15, -200.349, 1263.65, 1.30294, 100, 0, 0),
+(@CGUID+69, 16, -196.048, 1276.64, 1.28858, 100, 0, 0),
+(@CGUID+69, 17, -194.73, 1299.05, 1.71546, 100, 0, 0),
+(@CGUID+69, 18, -195.226, 1319.58, 1.3627, 100, 0, 0),
+(@CGUID+69, 19, -197.691, 1338.08, 0.168564, 100, 0, 0),
+(@CGUID+69, 20, -207.525, 1358.87, -0.00555849, 100, 0, 0),
+(@CGUID+69, 21, -208.064, 1379.98, 0.00821066, 100, 0, 0),
+(@CGUID+69, 22, -207.267, 1356.25, -0.00555849, 100, 0, 0),
+(@CGUID+69, 23, -197.761, 1336.67, 0.346542, 100, 0, 0),
 
-(@CGUID+70, 1, -136.4357, 1188.629, 0.125, 100, 0, 0), 
-(@CGUID+70, 2, -130.6683, 1163.229, 0.5926514, 100, 0, 0), 
-(@CGUID+70, 3, -138.8937, 1149.043, 0.1249832, 100, 0, 0), 
-(@CGUID+70, 4, -134.65, 1118.2, 0.5295404, 100, 0, 0), 
-(@CGUID+70, 5, -201.9863, 1194.44, -0.2621117, 100, 0, 0), 
-(@CGUID+70, 6, -192.125, 1214.88, 0.6278254, 100, 0, 0), 
-(@CGUID+70, 7, -177.1632, 1235.759, 0.9326949, 100, 0, 0), 
-(@CGUID+70, 8, -142.5536, 1206.907, 1.04834, 100, 0, 0), 
-(@CGUID+70, 9, -136.4357, 1188.629, 0.125, 100, 0, 0), 
-(@CGUID+70, 10, -130.6683, 1163.229, 0.5926514, 100, 0, 0), 
-(@CGUID+70, 11, -138.8937, 1149.043, 0.1249832, 100, 0, 0), 
-(@CGUID+70, 12, -134.65, 1118.2, 0.5295404, 100, 0, 0), 
-(@CGUID+70, 13, -152.4376, 1100.244, 0.3881829, 100, 0, 0), 
-(@CGUID+70, 14, -174.2288, 1083.737, 0.08392616, 100, 0, 0), 
-(@CGUID+70, 15, -187.5354, 1094.549, 1.733951, 100, 0, 0), 
-(@CGUID+70, 16, -203.6665, 1117.767, 0.02158606, 100, 0, 0), 
-(@CGUID+70, 17, -215.368, 1135.62, -1.786696, 100, 0, 0), 
-(@CGUID+70, 18, -215.9582, 1155.653, -1.911696, 100, 0, 0), 
-(@CGUID+70, 19, -206.436, 1177.694, -0.5679001, 100, 0, 0), 
-(@CGUID+70, 20, -201.9863, 1194.44, -0.2621117, 100, 0, 0), 
-(@CGUID+70, 21, -192.125, 1214.88, 0.6278254, 100, 0, 0), 
-(@CGUID+70, 22, -177.1632, 1235.759, 0.9326949, 100, 0, 0), 
-(@CGUID+70, 23, -142.5536, 1206.907, 1.04834, 100, 0, 0), 
-(@CGUID+70, 24, -136.4357, 1188.629, 0.125, 100, 0, 0), 
-(@CGUID+70, 25, -130.6683, 1163.229, 0.5926514, 100, 0, 0), 
-(@CGUID+70, 26, -138.8937, 1149.043, 0.1249832, 100, 0, 0), 
-(@CGUID+70, 27, -134.65, 1118.2, 0.5295404, 100, 0, 0), 
-(@CGUID+70, 28, -152.4376, 1100.244, 0.3881829, 100, 0, 0), 
-(@CGUID+70, 29, -174.2288, 1083.737, 0.08392616, 100, 0, 0), 
-(@CGUID+70, 30, -187.5354, 1094.549, 1.733951, 100, 0, 0), 
-(@CGUID+70, 31, -203.6665, 1117.767, 0.02158606, 100, 0, 0), 
-(@CGUID+70, 32, -215.368, 1135.62, -1.786696, 100, 0, 0), 
-(@CGUID+70, 33, -215.9582, 1155.653, -1.911696, 100, 0, 0), 
-(@CGUID+70, 34, -206.436, 1177.694, -0.5679001, 100, 0, 0), 
-(@CGUID+70, 35, -201.9863, 1194.44, -0.2621117, 100, 0, 0), 
-(@CGUID+70, 36, -192.125, 1214.88, 0.6278254, 100, 0, 0), 
-(@CGUID+70, 37, -177.1632, 1235.759, 0.9326949, 100, 0, 0), 
-(@CGUID+70, 38, -185.7401, 1223.79, 0.8591486, 100, 0, 0), 
-(@CGUID+70, 39, -185.7401, 1223.79, 0.8591486, 100, 0, 0), 
+(@CGUID+70, 1, -130.668, 1163.23, 0.592651, 100, 0, 0),
+(@CGUID+70, 2, -138.894, 1149.04, 0.124983, 100, 0, 0),
+(@CGUID+70, 3, -134.65, 1118.2, 0.52954, 100, 0, 0),
+(@CGUID+70, 4, -152.438, 1100.24, 0.388183, 100, 0, 0),
+(@CGUID+70, 5, -174.229, 1083.74, 0.0839262, 100, 0, 0),
+(@CGUID+70, 6, -187.535, 1094.55, 1.73395, 100, 0, 0),
+(@CGUID+70, 7, -203.667, 1117.77, 0.0215861, 100, 0, 0),
+(@CGUID+70, 8, -215.368, 1135.62, -1.7867, 100, 0, 0),
+(@CGUID+70, 9, -215.958, 1155.65, -1.9117, 100, 0, 0),
+(@CGUID+70, 10, -206.436, 1177.69, -0.5679, 100, 0, 0),
+(@CGUID+70, 11, -201.986, 1194.44, -0.262112, 100, 0, 0),
+(@CGUID+70, 12, -192.125, 1214.88, 0.627825, 100, 0, 0),
+(@CGUID+70, 13, -177.163, 1235.76, 0.932695, 100, 0, 0),
+(@CGUID+70, 14, -142.554, 1206.91, 1.04834, 100, 0, 0),
+(@CGUID+70, 15, -136.436, 1188.63, 0.125, 100, 0, 0),
 
-(@CGUID+76, 1, -173.1074, 1214.088, 0.1278254, 100, 0, 0), 
-(@CGUID+76, 2, -180.9727, 1223.825, 0.9563166, 100, 0, 0);
+(@CGUID+72, 1, -197.325, 1276.6, 1.192, 100, 0, 0),
+(@CGUID+72, 2, -199.222, 1338.81, 0.2291, 100, 0, 0),
+(@CGUID+72, 3, -190.708, 1345.44, -0.1164, 100, 0, 0),
+(@CGUID+72, 4, -184.647, 1347.32, -0.1083, 100, 0, 0),
+(@CGUID+72, 5, -178.349, 1350.27, -0.023, 100, 1000, 1), -- despawn
+
+(@CGUID+73, 1, -114.673, 1156.13, 0.0009, 100, 0, 0),
+(@CGUID+73, 2, -123.171, 1152.65, 0.167, 100, 0, 0),
+(@CGUID+73, 3, -129.46, 1152.81, 0.0985, 100, 0, 0),
+(@CGUID+73, 4, -138.069, 1192.08, 0.0185, 100, 0, 0),
+(@CGUID+73, 5, -165.725, 1226.29, 0.2412, 100, 0, 0),
+(@CGUID+73, 6, -197.409, 1251.12, 0.2398, 100, 0, 0),
+(@CGUID+73, 7, -197.312, 1271.42, 1.1483, 100, 0, 0),
+(@CGUID+73, 8, -190.085, 1274.09, 1.0419, 100, 0, 0),
+(@CGUID+73, 9, -181.278, 1273.06, 1.6089, 100, 1000, 1), -- despawn
+
+(@CGUID+74, 1, -163.503, 1193.44, 0.7938, 100, 0, 0),
+(@CGUID+74, 2, -160.619, 1194.73, 0.5157, 100, 0, 0),
+(@CGUID+74, 3, -151.455, 1198.22, 0.1018, 100, 0, 0),
+(@CGUID+74, 4, -150.568, 1202.1, 0.2013, 100, 0, 0),
+(@CGUID+74, 5, -165.725, 1226.29, 0.2412, 100, 0, 0),
+(@CGUID+74, 6, -197.409, 1251.12, 0.2398, 100, 0, 0),
+(@CGUID+74, 7, -197.312, 1271.42, 1.1483, 100, 0, 0),
+(@CGUID+74, 8, -190.085, 1274.09, 1.0419, 100, 0, 0),
+(@CGUID+74, 9, -181.278, 1273.06, 1.6089, 100, 1000, 1), -- despawn
+
+(@CGUID+109, 1, 251.1337, 1022.682, 3.468341, 100, 0, 0),
+(@CGUID+109, 2, 248.586, 1024.29, 3.46834, 100, 0, 0),
+(@CGUID+109, 3, 243.0442, 1024.887, 3.468339, 100, 0, 0),
+(@CGUID+109, 4, 238.2943, 1022.22, 3.46834, 100, 0, 0),
+(@CGUID+109, 5, 237.21, 1019.413, 3.46834, 100, 0, 0),
+(@CGUID+109, 6, 236.6153, 1023.229, 3.468339, 100, 0, 0),
+(@CGUID+109, 7, 245.5168, 1027.601, 3.468338, 100, 0, 0),
+(@CGUID+109, 8, 254.8466, 1025.229, 3.468341, 100, 0, 0),
+
+(@CGUID+110, 1, 234.715, 1019.957, 16.38691, 100, 0, 0),
+(@CGUID+110, 2, 234.9416, 1020.931, 16.38691, 100, 0, 0),
+(@CGUID+110, 3, 235.8506, 1024.839, 16.38691, 100, 0, 0),
+(@CGUID+110, 4, 236.247, 1026.542, 16.44748, 100, 0, 0),
+(@CGUID+110, 5, 240.5494, 1030.18, 16.52458, 100, 0, 0),
+(@CGUID+110, 6, 241.1525, 1030.69, 16.55752, 100, 0, 0),
+(@CGUID+110, 7, 241.1525, 1030.69, 16.55752, 100, 0, 0),
+(@CGUID+110, 8, 249.1523, 1030.323, 16.47119, 100, 0, 0),
+(@CGUID+110, 9, 249.951, 1029.722, 16.47119, 100, 0, 0),
+(@CGUID+110, 10, 251.6198, 1028.464, 16.43502, 100, 0, 0),
+(@CGUID+110, 11, 253.802, 1026.82, 16.43087, 100, 0, 0),
+(@CGUID+110, 12, 254.9675, 1023.061, 16.46028, 100, 0, 0),
+(@CGUID+110, 13, 256.2155, 1019.037, 16.39985, 100, 0, 0),
+(@CGUID+110, 14, 256.2155, 1019.037, 16.39985, 100, 0, 0),
+(@CGUID+110, 15, 255.2299, 1015.058, 16.31987, 100, 0, 0),
+(@CGUID+110, 16, 254.9895, 1014.087, 16.31987, 100, 0, 0),
+(@CGUID+110, 17, 254.863, 1013.577, 16.31161, 100, 0, 0),
+(@CGUID+110, 18, 254.1115, 1010.543, 16.4279, 100, 0, 0),
+(@CGUID+110, 19, 254.863, 1013.577, 16.31161, 100, 0, 0),
+(@CGUID+110, 20, 254.9895, 1014.087, 16.31987, 100, 0, 0),
+(@CGUID+110, 21, 255.2299, 1015.058, 16.31987, 100, 0, 0),
+(@CGUID+110, 22, 256.2155, 1019.037, 16.39985, 100, 0, 0),
+(@CGUID+110, 23, 256.2155, 1019.037, 16.39985, 100, 0, 0),
+(@CGUID+110, 24, 254.9675, 1023.061, 16.46028, 100, 0, 0),
+(@CGUID+110, 25, 253.802, 1026.82, 16.43087, 100, 0, 0),
+(@CGUID+110, 26, 251.6198, 1028.464, 16.43502, 100, 0, 0),
+(@CGUID+110, 27, 249.951, 1029.722, 16.47119, 100, 0, 0),
+(@CGUID+110, 28, 249.1523, 1030.323, 16.47119, 100, 0, 0),
+(@CGUID+110, 29, 241.1525, 1030.69, 16.55752, 100, 0, 0),
+(@CGUID+110, 30, 241.1525, 1030.69, 16.55752, 100, 0, 0),
+(@CGUID+110, 31, 240.5494, 1030.18, 16.52458, 100, 0, 0),
+(@CGUID+110, 32, 236.247, 1026.542, 16.44748, 100, 0, 0),
+(@CGUID+110, 33, 235.8506, 1024.839, 16.38691, 100, 0, 0),
+(@CGUID+110, 34, 234.9416, 1020.931, 16.38691, 100, 0, 0),
+
+(@CGUID+186, 1, -225.5915, 1148.158, -1.878127, 100, 0, 0),
+(@CGUID+186, 2, -222.168, 1131.948, -1.628316, 100, 0, 0),
+(@CGUID+186, 3, -211.8286, 1136.833, -1.911696, 100, 0, 0),
+(@CGUID+186, 4, -210.5931, 1146.408, -1.918166, 100, 0, 0),
+
+(@CGUID+187, 1, -208.2356, 1120.899, -1.503316, 100, 0, 0),
+(@CGUID+187, 2, -217.0771, 1126.614, -1.850973, 100, 0, 0),
+(@CGUID+187, 3, -208.2074, 1130.927, -1.725973, 100, 0, 0),
+
+(@CGUID+188, 1, -200.4844, 1242.847, 1.069049, 0.2094395, 3000, 2377401),
+(@CGUID+188, 2, -190.551, 1236.19, 0.4961715, 100, 0, 0),
+(@CGUID+188, 3, -180.443, 1242.61, 2.128007, 100, 0, 0),
+(@CGUID+188, 4, -180.443, 1242.61, 2.128007, 4.729842, 3000, 1005),-- generic emote OneShotExclamation
+(@CGUID+188, 5, -204.0215, 1247.134, 1.448443, 100, 0, 0),
+(@CGUID+188, 6, -204.0215, 1247.134, 1.448443, 5.67232, 3000, 1006),-- generic emote OneShotQuestion
+
+(@CGUID+189, 1, -99.840042, 1104.764526, 5.265360, 100, 0, 0),
+(@CGUID+189, 2, -110.695038, 1095.095581, 0.000031, 100, 0, 0),
+(@CGUID+189, 3, -144.754333, 1093.926270, 0.001120, 100, 0, 0),
+(@CGUID+189, 4, -171.839706, 1084.924438, 0.008694, 100, 0, 0),
+(@CGUID+189, 5, -178.587753, 1074.971313, 0.007722, 100, 0, 0),
+(@CGUID+189, 6, -192.955521, 1076.615601, 0.394059, 100, 0, 0),
+(@CGUID+189, 7, -177.489594, 1074.831421, 0.002645, 100, 0, 0),
+(@CGUID+189, 8, -170.935013, 1085.655029, 0.000682, 100, 0, 0),
+(@CGUID+189, 9, -142.873123, 1094.053589, 0.001056, 100, 0, 0),
+(@CGUID+189, 10, -110.182007, 1094.374390, 0.000024, 100, 0, 0),
+(@CGUID+189, 11, -100.692924, 1103.613770, 5.554083, 100, 0, 0),
+(@CGUID+189, 12, -91.2099, 1115.253, 5.593988, 100, 0, 0),
+
+(@CGUID+190, 1, -203.0083, 1155.825, -0.9969013, 100, 0, 0),
+(@CGUID+190, 2, -197.7297, 1135.404, -0.9588605, 100, 0, 0),
+(@CGUID+190, 3, -184.3906, 1120.716, 0.1241473, 100, 0, 0),
+(@CGUID+190, 4, -165.233, 1113.89, 0.1249994, 100, 0, 0),
+(@CGUID+190, 5, -171.5941, 1116.702, 0.1241473, 100, 0, 0),
+(@CGUID+190, 6, -181.6393, 1117.889, 0.1241473, 100, 0, 0),
+(@CGUID+190, 7, -196.2499, 1109.335, 0.2491473, 100, 0, 0),
+(@CGUID+190, 8, -217.724, 1108.202, -0.1477255, 100, 0, 0),
+(@CGUID+190, 9, -213.7725, 1131.331, -1.850973, 100, 0, 0),
+(@CGUID+190, 10, -216.4485, 1156.311, -1.911696, 100, 0, 0),
+(@CGUID+190, 11, -206.4719, 1176.802, -0.5678997, 100, 5000, 0),
+
+(@CGUID+191, 1, -208.2986, 1163.731, -1.220046, 100, 0, 0),
+(@CGUID+191, 2, -208.1426, 1163.595, -1.161696, 100, 0, 0),
+(@CGUID+191, 3, -226.4392, 1159.941, -1.973594, 100, 0, 0),
+(@CGUID+191, 4, -233.9785, 1148.439, -0.9827178, 100, 0, 0),
+(@CGUID+191, 5, -226.8423, 1119.891, -0.3756307, 100, 0, 0),
+(@CGUID+191, 6, -209.1464, 1109.804, -0.6251425, 100, 0, 0),
+(@CGUID+191, 7, -187.0677, 1114.824, 0.1241473, 100, 0, 0),
+(@CGUID+191, 8, -197.6051, 1131.277, -0.8668195, 100, 0, 0),
+(@CGUID+191, 9, -198.4682, 1154.924, -0.3548566, 100, 0, 0),
+
+(@CGUID+291, 1, 95.7619, 1155.89, -3.16286, 100, 0, 0),
+(@CGUID+291, 2, 115.222, 1162.375, -3.26076, 100, 0, 0),
+(@CGUID+291, 3, 155.442, 1146.79, 0.243542, 100, 0, 0),
+(@CGUID+291, 4, 95.846, 1146.238, 2.339581, 100, 0, 0),
+(@CGUID+291, 5, 92.167, 1147.0637, -2.459943, 100, 0, 0),
+(@CGUID+291, 6, 87.357, 1148.1068, 1.462878, 100, 0, 0),
+(@CGUID+291, 7, 78.729, 1147.847, 0.111775, 100, 0, 0),
+
+(@CGUID+316, 1, 181.403, 1157.04, 0.021359, 100, 0, 0),
+(@CGUID+316, 2, 182.5, 1119.79, 0.000051, 100, 0, 0),
+(@CGUID+316, 3, 193.664, 1115.69, 0.000051, 100, 0, 0),
+(@CGUID+316, 4, 204.153, 1115.4, 0.000051, 100, 3000, 0),
+(@CGUID+316, 5, 193.324, 1115.59, 0.000051, 100, 0, 0),
+(@CGUID+316, 6, 182.534, 1119.94, 0.000051, 100, 0, 0),
+
+(@CGUID+320, 1, 230.1188, 1125.88, 0.125, 100, 0, 0),
+(@CGUID+320, 2, 231.0313, 1126.289, 0.125, 100, 0, 0),
+(@CGUID+320, 3, 235.5334, 1124.05, 0.125, 100, 0, 2405901),
+(@CGUID+320, 4, 236.4101, 1135.968, 0.125, 100, 0, 0),
+(@CGUID+320, 5, 235.4122, 1135.903, 0.125, 100, 0, 0),
+(@CGUID+320, 6, 231.6035, 1135.657, 0.125, 100, 0, 0),
+(@CGUID+320, 7, 227.6648, 1133.998, 0.125, 100, 0, 2405901),
+(@CGUID+320, 8, 243.7661, 1130.094, 0.125, 100, 0, 0),
+(@CGUID+320, 9, 244.0802, 1131.044, 0.125, 100, 0, 0),
+(@CGUID+320, 10, 244.7363, 1133.025, 0.125, 100, 0, 0),
+(@CGUID+320, 11, 248.9883, 1142.231, 0.125, 100, 0, 2405901),
+
+(@CGUID+411, 1, 316.735504, 1110.499023, 9.778799, 100, 0, 0),
+(@CGUID+411, 2, 316.778564, 1099.496582, 9.778799, 100, 0, 0),
+(@CGUID+411, 3, 317.912872, 1088.684937, 9.643740, 100, 0, 0),
+(@CGUID+411, 4, 325.497101, 1089.175171, 6.243667, 100, 0, 0),
+(@CGUID+411, 5, 337.640533, 1089.773438, 6.342419, 100, 0, 0),
+(@CGUID+411, 6, 352.318329, 1088.254517, 7.077081, 100, 0, 0),
+(@CGUID+411, 7, 369.580261, 1088.844971, 6.505006, 100, 0, 0),
+(@CGUID+411, 8, 387.861450, 1089.161377, 5.984543, 100, 0, 0),
+(@CGUID+411, 9, 399.621399, 1089.765503, 6.362093, 100, 0, 0),
+(@CGUID+411, 10, 419.689911, 1089.931030, 6.457973, 100, 0, 0),
+(@CGUID+411, 11, 397.346863, 1089.634033, 5.517794, 100, 0, 0),
+(@CGUID+411, 12, 388.032379, 1089.416992, 5.991150, 100, 0, 0),
+(@CGUID+411, 13, 369.139954, 1089.323242, 6.504972, 100, 0, 0),
+(@CGUID+411, 14, 351.489777, 1088.882080, 7.096010, 100, 0, 0),
+(@CGUID+411, 15, 336.392944, 1089.743408, 6.344761, 100, 0, 0),
+(@CGUID+411, 16, 325.545898, 1089.490601, 6.238661, 100, 0, 0),
+(@CGUID+411, 17, 318.035339, 1089.599854, 9.594583, 100, 0, 0),
+(@CGUID+411, 18, 317.626373, 1100.268677, 9.627099, 100, 0, 0),
+
+(@CGUID+425, 1, 278.120758, 1053.975342, 0.000062, 100, 0, 0),
+(@CGUID+425, 2, 285.773010, 1051.562256, 0.000062, 100, 0, 0),
+(@CGUID+425, 3, 295.393738, 1047.581665, 0.000917, 100, 0, 0),
+(@CGUID+425, 4, 306.933105, 1035.112183, 0.000917, 100, 0, 0),
+(@CGUID+425, 5, 312.957642, 1022.470703, 0.453238, 100, 0, 0),
+(@CGUID+425, 6, 317.283997, 1013.290833, 0.006239, 100, 0, 0),
+(@CGUID+425, 7, 325.110046, 1007.385437, 0.704946, 100, 0, 0),
+(@CGUID+425, 8, 338.325836, 1000.493958, 0.160388, 100, 0, 0),
+(@CGUID+425, 9, 346.569122, 991.140259, 0.000158,  100, 0, 0),
+(@CGUID+425, 10, 350.834442, 979.561646, 0.015103, 100, 0, 0),
+(@CGUID+425, 11, 355.971527, 967.672302, 0.000111, 100, 0, 0),
+(@CGUID+425, 12, 364.075836, 952.201172, 0.000111, 100, 0, 0),
+(@CGUID+425, 13, 372.180145, 936.730042, 0.000111, 100, 0, 0),
+(@CGUID+425, 14, 373.983765, 920.255493, 0.006441, 100, 0, 0),
+(@CGUID+425, 15, 376.182159, 906.238464, 0.000730, 100, 0, 0),
+(@CGUID+425, 16, 378.066772, 894.443481, 0.000029, 100, 0, 0),
+(@CGUID+425, 17, 376.672150, 908.051575, 0.000029, 100, 0, 0),
+(@CGUID+425, 18, 374.175201, 922.136780, 0.007623, 100, 0, 0),
+(@CGUID+425, 19, 372.294403, 937.305481, 0.001348, 100, 0, 0),
+(@CGUID+425, 20, 364.009949, 953.123535, 0.001348, 100, 0, 0),
+(@CGUID+425, 21, 355.937347, 968.495178, 0.001348, 100, 0, 0),
+(@CGUID+425, 22, 350.857025, 980.895996, 0.000110, 100, 0, 0),
+(@CGUID+425, 23, 346.637421, 992.121643, 0.000011, 100, 0, 0),
+(@CGUID+425, 24, 338.337158, 1001.000061, 0.195644, 100, 0, 0),
+(@CGUID+425, 25, 325.002472, 1007.324524, 0.671864, 100, 0, 0),
+(@CGUID+425, 26, 316.864716, 1014.077942, 0.015968, 100, 0, 0),
+(@CGUID+425, 27, 313.027557, 1023.474854, 0.465976, 100, 0, 0),
+(@CGUID+425, 28, 306.888062, 1035.589722, 0.001319, 100, 0, 0),
+(@CGUID+425, 29, 295.227905, 1047.646973, 0.001319, 100, 0, 0),
+(@CGUID+425, 30, 286.114868, 1051.570190, 0.001319, 100, 0, 0),
+
+(@CGUID+427, 1, 376.437897, 1016.336121, 0.000467, 100, 0, 0),
+(@CGUID+427, 2, 378.391144, 1007.516724, 0.001065, 100, 0, 0),
+(@CGUID+427, 3, 382.894836, 996.253113, 0.000846, 100, 0, 0),
+(@CGUID+427, 4, 392.150299, 990.951538, 0.001319, 100, 0, 0),
+(@CGUID+427, 5, 406.849121, 986.445068, 0.000067, 100, 0, 0),
+(@CGUID+427, 6, 391.715454, 990.840759, 0.000333, 100, 0, 0),
+(@CGUID+427, 7, 382.615723, 996.837158, 0.000704, 100, 0, 0),
+
+(@CGUID+429, 1, 422.279480, 987.468323, 0.000026, 100, 0, 0),
+(@CGUID+429, 2, 433.409912, 981.214966, 0.000026, 100, 0, 0),
+(@CGUID+429, 3, 441.798615, 970.064453, 0.000026, 100, 0, 0),
+(@CGUID+429, 4, 445.166718, 957.765320, 0.000026, 100, 0, 0),
+(@CGUID+429, 5, 446.148071, 944.259888, 0.000026, 100, 0, 0),
+(@CGUID+429, 6, 444.585144, 931.090210, 0.006091, 100, 0, 0),
+(@CGUID+429, 7, 443.088745, 917.095398, 0.000396, 100, 0, 0),
+(@CGUID+429, 8, 445.075317, 931.621033, 0.005899, 100, 0, 0),
+(@CGUID+429, 9, 446.868958, 944.646118, 0.000837, 100, 0, 0),
+(@CGUID+429, 10, 445.790100, 958.416992,0.000837, 100, 0, 0),
+(@CGUID+429, 11, 441.829346, 971.140137, 0.000064, 100, 0, 0),
+(@CGUID+429, 12, 432.675568, 981.687439, 0.000064, 100, 0, 0),
+(@CGUID+429, 13, 421.063110, 987.692993, 0.000064, 100, 0, 0);
 
 DELETE FROM creature_movement_template WHERE entry IN (24159,24225);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
@@ -153,163 +327,26 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (24225,0,14,339.1228,1396.293,74.28909,100,0,1); -- despawn
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+24, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger (Not Immune PC)
-(@CGUID+25, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger (Not Immune PC)
-(@CGUID+26, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger (Not Immune PC)
-(@CGUID+27, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger (Not Immune PC)
-(@CGUID+28, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+29, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+30, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+31, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+32, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+33, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+34, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+35, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+36, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+37, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+38, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger
-(@CGUID+39, 0, 0, 1, 16, 0, 0, NULL), -- World Trigger (Large AOI)
-(@CGUID+65, 0, 0, 0, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+66, 0, 1, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+67, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+68, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+69, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+70, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+71, 0, 0, 0, 16, 0, 0, '42350'), -- Amani'shi Scout
-(@CGUID+72, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+73, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+74, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+75, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+76, 0, 0, 0, 16, 0, 0, '42177'), -- Amani'shi Scout
-(@CGUID+77, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+78, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+79, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
-(@CGUID+80, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Scout
--- (@CGUID+81, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+82, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+83, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+84, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+85, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+86, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+87, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+88, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+89, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+90, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
--- (@CGUID+91, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Reinforcement
-(@CGUID+92, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+93, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+94, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+95, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
+(@CGUID+66, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
+(@CGUID+68, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
 (@CGUID+96, 0, 3, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+97, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+98, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+99, 0, 0, 0, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+100, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+101, 0, 0, 0, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+102, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+103, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+104, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+105, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+106, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+107, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+108, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+109, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+110, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+111, 0, 0, 0, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+112, 0, 0, 0, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+113, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+114, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+115, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+116, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+117, 0, 0, 0, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+118, 0, 0, 0, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+119, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
 (@CGUID+120, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+121, 0, 0, 0, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+122, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+123, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+124, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+125, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+126, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
 (@CGUID+127, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+128, 0, 0, 0, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+129, 0, 0, 0, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+130, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+131, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+132, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+133, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+134, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+135, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+136, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+137, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+138, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+139, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+140, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+141, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+142, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+143, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+144, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+145, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+146, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+147, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+148, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+149, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+150, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+151, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+152, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+153, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+154, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+155, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+156, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+157, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+158, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+159, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+160, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+161, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+162, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+163, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+164, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+165, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+166, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+167, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+168, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+169, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+170, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+171, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+172, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+173, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+174, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+175, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+176, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+177, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+178, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+179, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+180, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+181, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+182, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+183, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+184, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+185, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman Exterior InvisMan
-(@CGUID+193, 0, 7, 1, 16, 0, 0, '42726'), -- Tanzar
-(@CGUID+259, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+260, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+261, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+262, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+263, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+264, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+265, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+266, 0, 0, 1, 16, 0, 0, '18950'); -- Amani'shi Savage
+(@CGUID+319, 0, 1, 1, 16, 0, 0, '18950'); -- Amani'shi Handler
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (23542, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Axe Thrower
 (23574, 0, 0, 1, 16, 0, 0, NULL), -- Akil'zon
 (23576, 0, 0, 1, 16, 0, 0, NULL), -- Nalorakk
+(23597, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
 (23577, 0, 0, 1, 16, 0, 0, NULL), -- Halazzi
 (23578, 0, 0, 1, 16, 0, 0, NULL), -- Jan'alai
 (23580, 22467, 0, 1, 16, 0, 0, NULL), -- Amani'shi Warbringer
 (23581, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Medicine Man
 (23582, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Tribesman
 (23584, 0, 0, 1, 16, 0, 0, NULL), -- Amani Bear
+(23586, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
+(23587, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Reinforcement
 (23774, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Trainer
 (23790, 0, 0, 1, 0, 0, 0, NULL), -- Tanzar
 (23807, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman - Bear God Invisman
@@ -317,13 +354,14 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (23814, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman - Eagle God Invisman
 (23815, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman - Lynx God Invisman
 (23817, 0, 0, 1, 16, 0, 0, NULL), -- Dragonhawk Egg
-(23834, 0, 0, 1, 16, 0, 0, NULL), -- Amani Dragonhawk
+(23834, 0, 0, 1, 16, 0, 0, '18950'), -- Amani Dragonhawk
 (23877, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Lynx Spirit
 (23878, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Bear Spirit
 (23879, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Dragonhawk Spirit
 (23880, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Eagle Spirit
+(23889, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
 (23897, 0, 0, 1, 16, 0, 0, '42716'), -- Zungam
-(23999, 0, 0, 0, 0, 0, 0, NULL), -- Harkor
+(23999, 0, 0, 1, 0, 0, 0, NULL), -- Harkor
 (24001, 0, 0, 1, 0, 0, 0, NULL), -- Ashli
 (24024, 0, 0, 1, 0, 0, 0, NULL), -- Kraz
 (24043, 0, 0, 0, 0, 0, 0, '18950 16380'), -- Amani Lynx
@@ -359,7 +397,111 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+63, @CGUID+64, 3), -- Amani Bear -> Amani Bear
 (@CGUID+59, @CGUID+60, 3), -- Amani Bear -> Amani Bear
 (@CGUID+62, @CGUID+61, 3), -- Amani Bear -> Amani Bear
-(@CGUID+405, @CGUID+401, 3); -- Amani'shi Protector -> Amani'shi Wind Walker
+(@CGUID+405, @CGUID+401, 3), -- Amani'shi Protector -> Amani'shi Wind Walker
+
+(@CGUID+69, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
+(@CGUID+70, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
+(@CGUID+72, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
+(@CGUID+73, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
+(@CGUID+74, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
+
+(@CGUID+328, @CGUID+190, 515), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+327, @CGUID+190, 515), -- Amani Dragonhawk -> Amani'shi Trainer
+
+(@CGUID+329, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+243, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+245, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+244, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+330, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+242, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+
+(@CGUID+249, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+250, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+331, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+251, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+248, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+332, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+
+(@CGUID+241, @CGUID+188, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+238, @CGUID+188, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+239, @CGUID+188, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+240, @CGUID+188, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+
+(@CGUID+246, @CGUID+189, 515), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+247, @CGUID+189, 515), -- Amani Dragonhawk -> Amani'shi Trainer
+
+(@CGUID+103, @CGUID+291, 515), -- Amani'shi Flame Caster -> Amani'shi Beast Tamer
+
+(@CGUID+315, @CGUID+316, 515), -- Amani'shi Handler -> Amani'shi Handler
+(@CGUID+431, @CGUID+316, 515), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+433, @CGUID+316, 515), -- Amani Lynx Cub -> Amani'shi Handler
+
+(@CGUID+108, @CGUID+93, 3), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+107, @CGUID+93, 3), -- Amani'shi Guardian -> Amani'shi Flame Caster
+
+(@CGUID+280, @CGUID+282, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+284, @CGUID+282, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+281, @CGUID+282, 3), -- Amani Lynx -> Amani Lynx
+
+(@CGUID+272, @CGUID+283, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+274, @CGUID+283, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+273, @CGUID+283, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+271, @CGUID+283, 3), -- Amani Lynx -> Amani Lynx
+
+(@CGUID+277, @CGUID+276, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+278, @CGUID+276, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+275, @CGUID+276, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+279, @CGUID+276, 3), -- Amani Lynx -> Amani Lynx
+
+(@CGUID+320, @CGUID+319, 3), -- Amani'shi Handler -> Amani'shi Handler
+(@CGUID+298, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+305, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+309, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+306, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+307, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+304, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+297, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
+
+(@CGUID+293, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+296, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+432, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+294, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+295, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+
+(@CGUID+430, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+312, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+299, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+311, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+313, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+
+(@CGUID+322, @CGUID+321, 3), -- Amani'shi Handler -> Amani'shi Handler
+(@CGUID+292, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+300, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+301, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+302, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+303, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+308, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+310, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
+
+(@CGUID+128, @CGUID+126, 3), -- Amani'shi Guardian -> Amani'shi Guardian
+(@CGUID+102, @CGUID+126, 3), -- Amani'shi Flame Caster -> Amani'shi Guardian
+(@CGUID+71, @CGUID+126, 3), -- Amani'shi Scout -> Amani'shi Guardian
+(@CGUID+253, @CGUID+126, 3), -- Amani Dragonhawk -> Amani'shi Guardian
+
+(@CGUID+324, @CGUID+425, 515), -- Tamed Amani Crocolisk -> Amani'shi Beast Tamer
+(@CGUID+323, @CGUID+425, 515), -- Tamed Amani Crocolisk -> Amani'shi Beast Tamer
+
+(@CGUID+318, @CGUID+317, 3), -- Amani'shi Handler -> Amani'shi Handler
+(@CGUID+392, @CGUID+317, 3), -- Amani Elder Lynx -> Amani'shi Handler
+(@CGUID+393, @CGUID+317, 3), -- Amani Elder Lynx -> Amani'shi Handler
+
+(@CGUID+410, @CGUID+411, 515), -- Amani'shi Guardian -> Amani'shi Guardian
+
+(@CGUID+428, @CGUID+429, 515), -- Amani'shi Beast Tamer -> Amani'shi Beast Tamer
+
+(@CGUID+426, @CGUID+427, 515), -- Amani'shi Beast Tamer -> Amani'shi Beast Tamer
+
+(@CGUID+370, @CGUID+371, 3); -- Amani'shi Berserker -> Amani'shi Berserker
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (23598, 568, 23578, 4096, 0), -- Amani Dragonhawk Hatchling -> Jan'alai
@@ -381,11 +523,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+1, 1412, 568, 1, 43.882, 1356.5, 9.27985, 5.18073, 7200, 7200, 15, 0, 0, 1), -- Squirrel
 (@CGUID+2, 1412, 568, 1, 161.995, 1394.99, 5.89833, 0.362198, 7200, 7200, 15, 0, 0, 1), -- Squirrel
 (@CGUID+3, 1412, 568, 1, 69.0605, 1374.56, -3.80553, 5.2771, 7200, 7200, 15, 0, 0, 1), -- Squirrel
-(@CGUID+4, 1412, 568, 1, -223.361, 1422.71, 0.008211, 5.91084, 7200, 7200, 15, 0, 0, 1), -- Squirrel
+-- @CGUID+4 -- REUSE
 (@CGUID+5, 1412, 568, 1, 184.991, 1178.33, 2.055, 2.98865, 7200, 7200, 15, 0, 0, 1), -- Squirrel
 (@CGUID+6, 1412, 568, 1, -201.169, 1310.07, 1.4539, 5.77058, 7200, 7200, 15, 0, 0, 1), -- Squirrel
 (@CGUID+7, 1412, 568, 1, -193.244, 1216.61, 0.627825, 5.0293, 7200, 7200, 15, 0, 0, 1), -- Squirrel
-(@CGUID+8, 1412, 568, 1, 50.0498, 1422.87, 1.07552, 0.925025, 7200, 7200, 15, 0, 0, 1), -- Squirrel
+-- @CGUID+8 -- REUSE
 (@CGUID+9, 1412, 568, 1, -229.353, 1425.05, 0.94149, 0.488692, 7200, 7200, 15, 0, 0, 1), -- Squirrel
 (@CGUID+10, 1412, 568, 1, 55.5945, 1428.36, 1.0813, 4.24265, 7200, 7200, 15, 0, 0, 1), -- Squirrel
 (@CGUID+11, 14881, 568, 1, 169.649, 1722.02, 42.0216, 4.39576, 7200, 7200, 5, 0, 0, 1), -- Spider
@@ -405,17 +547,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+25, 21252, 568, 1, -53.6238, 1150.03, 18.7886, 0, 7200, 7200, 0, 0, 0, 0), -- World Trigger (Not Immune PC)
 (@CGUID+26, 21252, 568, 1, -33.4373, 1177.73, 18.7947, 4.66003, 7200, 7200, 0, 0, 0, 0), -- World Trigger (Not Immune PC)
 (@CGUID+27, 21252, 568, 1, -10.2896, 1149.98, 18.7947, 3.14159, 7200, 7200, 0, 0, 0, 0), -- World Trigger (Not Immune PC)
-(@CGUID+28, 22515, 568, 1, 117.27, 1289.97, -1.66894, 5.96903, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+29, 22515, 568, 1, -80.6288, 1150.35, 5.67736, 5.61996, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+30, 22515, 568, 1, -112.116, 1159.57, 0.083333, 3.56047, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+31, 22515, 568, 1, -173.463, 1212.12, 0.174226, 0.383972, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+32, 22515, 568, 1, -178.349, 1350.27, -0.023093, 5.46288, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+33, 22515, 568, 1, -177.929, 1274.98, 1.5615, 0.436332, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+34, 22515, 568, 1, -185.469, 1292.65, 1.96368, 2.05949, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+35, 22515, 568, 1, -166.024, 1191.63, 0.925669, 2.80998, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+36, 22515, 568, 1, -114.455, 1125.79, 0.083333, 3.33358, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+37, 22515, 568, 1, -127.524, 1167.95, 0.760725, 2.56563, 7200, 7200, 0, 0, 0, 0), -- World Trigger
-(@CGUID+38, 22515, 568, 1, -195.533, 1357.58, 0.427896, 2.58309, 7200, 7200, 0, 0, 0, 0), -- World Trigger
+(@CGUID+28, 22515, 568, 1, 117.27, 1289.97, -1.66894, 5.96903, 7200, 7200, 0, 0, 0, 0), -- World Trigger (way out of bounds, in center of map)
+(@CGUID+29, 22515, 568, 1, -80.6288, 1150.35, 5.67736, 5.61996, 7200, 7200, 0, 0, 0, 0), -- World Trigger (near stairs to Jan'alai platform)
+(@CGUID+30, 22515, 568, 1, -173.463, 1212.12, 0.174226, 0.383972, 7200, 7200, 0, 0, 0, 0), -- World Trigger (drum)
+(@CGUID+31, 22515, 568, 1, -185.469, 1292.65, 1.96368, 2.05949, 7200, 7200, 0, 0, 0, 0), -- World Trigger (drum)
+(@CGUID+32, 22515, 568, 1, -127.524, 1167.95, 0.760725, 2.56563, 7200, 7200, 0, 0, 0, 0), -- World Trigger (drum)
+(@CGUID+33, 22515, 568, 1, -195.533, 1357.58, 0.427896, 2.58309, 7200, 7200, 0, 0, 0, 0), -- World Trigger (drum)
+(@CGUID+34, 22515, 568, 1, -112.116, 1159.57, 0.083333, 3.56047, 7200, 7200, 0, 0, 0, 0), -- World Trigger (hut)
+(@CGUID+35, 22515, 568, 1, -178.349, 1350.27, -0.023093, 5.46288, 7200, 7200, 0, 0, 0, 0), -- World Trigger (hut)
+(@CGUID+36, 22515, 568, 1, -177.929, 1274.98, 1.5615, 3.436332, 7200, 7200, 0, 0, 0, 0), -- World Trigger (hut - blizzlike orientation modified to make it fit an easy pattern)
+(@CGUID+37, 22515, 568, 1, -166.024, 1191.63, 0.925669, 2.80998, 7200, 7200, 0, 0, 0, 0), -- World Trigger (hut)
+(@CGUID+38, 22515, 568, 1, -114.455, 1125.79, 0.083333, 3.33358, 7200, 7200, 0, 0, 0, 0), -- World Trigger (hut)
 (@CGUID+39, 22517, 568, 1, 370.78, 1119.51, 5.78472, 3.87463, 7200, 7200, 0, 0, 0, 0), -- World Trigger (Large AOI)
 (@CGUID+40, 23542, 568, 1, 17.3455, 1418.6, 11.9475, 6.02139, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Axe Thrower
 (@CGUID+41, 23542, 568, 1, -53.39, 1422.76, 27.367, 6.17846, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Axe Thrower
@@ -444,32 +586,32 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+64, 23584, 568, 1, 20.6921, 1482.15, 3.15478, 1.65682, 7200, 7200, 5, 0, 0, 1), -- Amani Bear
 (@CGUID+65, 23586, 568, 1, -186.455, 1323.15, -0.033457, 4.11898, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Scout
 (@CGUID+66, 23586, 568, 1, -198.805, 1227.37, 1.09097, 1.32645, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Scout
-(@CGUID+67, 23586, 568, 1, -179.821, 1347.53, -0.020919, 0.148083, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Scout
-(@CGUID+68, 23586, 568, 1, -207.987, 1376.99, 0.006258, 1.59629, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Scout
-(@CGUID+69, 23586, 568, 1, -197.946, 1325.93, 1.25821, 1.76407, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Scout
-(@CGUID+70, 23586, 568, 1, -134.575, 1189.24, 0.125, 1.69314, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Scout
+(@CGUID+67, 23586, 568, 1, -139.333, 1165, 3.26637, 1.88496, 7200, 7200, 0, 0, 0, 0),  -- Amani'shi Scout
+(@CGUID+68, 23586, 568, 1, -219.3753, 1380.724, 0.03532424, 1.047198, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Scout
+(@CGUID+69, 23586, 568, 1, -197.946, 1325.93, 1.25821, 1.76407, 180, 180, 0, 0, 0, 2), -- Amani'shi Scout
+(@CGUID+70, 23586, 568, 1, -134.575, 1189.24, 0.125, 1.69314, 180, 180, 0, 0, 0, 2), -- Amani'shi Scout
 (@CGUID+71, 23586, 568, 1, -143.626, 1144.37, 0.202364, 6.02139, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Scout
-(@CGUID+72, 23586, 568, 1, -200.669, 1253.68, 1.28333, 1.86412, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Scout
-(@CGUID+73, 23586, 568, 1, -170.374, 1239.39, 1.66798, 2.73909, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Scout
-(@CGUID+74, 23586, 568, 1, -212.178, 1161.06, -1.58448, 1.10716, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Scout
-(@CGUID+75, 23586, 568, 1, -154.766, 1196.84, 0.125, 0.829683, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Scout
-(@CGUID+76, 23586, 568, 1, -171.875, 1213.34, 0.127825, 3.7951, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Scout
-(@CGUID+77, 23586, 568, 1, -195.518, 1285.67, 1.43967, 1.51203, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Scout
-(@CGUID+78, 23586, 568, 1, -107.676, 1154.55, 0.083333, 3.94444, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Scout
-(@CGUID+79, 23586, 568, 1, -167.522, 1194.68, 0.642452, 5.3058, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Scout
-(@CGUID+80, 23586, 568, 1, -117.331, 1121.12, 0.0878, 2.26893, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Scout
--- (@CGUID+81, 23587, 568, 1, -182.005, 1346.86, 0.629187, 5.46288, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Reinforcement
--- (@CGUID+82, 23587, 568, 1, -156.947, 1195.31, 0.25, 0, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Reinforcement
--- (@CGUID+83, 23587, 568, 1, -114.15, 1164.14, 0.738333, 3.56047, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Reinforcement
--- (@CGUID+84, 23587, 568, 1, -107.549, 1161.6, 0.738333, 3.56047, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Reinforcement
--- (@CGUID+85, 23587, 568, 1, -175.816, 1270.45, 1.64483, 0.436332, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Reinforcement
--- (@CGUID+86, 23587, 568, 1, -182.46, 1272.87, 1.64483, 0.436332, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Reinforcement
--- (@CGUID+87, 23587, 568, 1, -181.759, 1353.93, 0.629187, 5.46288, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Reinforcement
--- (@CGUID+88, 23587, 568, 1, -158.279, 1213.58, 0.682461, 1.71346, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Reinforcement
--- (@CGUID+89, 23587, 568, 1, -161.563, 1212.92, 0.193758, 1.81578, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Reinforcement
--- (@CGUID+90, 23587, 568, 1, -161.297, 1190, 1.009, 2.80998, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Reinforcement
--- (@CGUID+91, 23587, 568, 1, -164.396, 1196.36, 1.009, 2.80998, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Reinforcement
-(@CGUID+92, 23596, 568, 1, 94.8123, 1158.76, -3.60433, 0.568136, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
+(@CGUID+72, 23586, 568, 1, -181.278, 1273.06, 1.6089, 3.0394, 120, 120, 0, 0, 0, 2), -- Amani'shi Scout (not confirmed by sniff)
+(@CGUID+73, 23586, 568, 1, -107.676, 1154.55, 0.083333, 3.94444, 120, 120, 0, 0, 0, 2), -- Amani'shi Scout (not confirmed by sniff)
+(@CGUID+74, 23586, 568, 1, -167.522, 1194.68, 0.642452, 5.3058, 120, 120, 0, 0, 0, 2), -- Amani'shi Scout (not confirmed by sniff)
+-- @CGUID+75 -- REUSE
+-- @CGUID+76 -- REUSE
+-- @CGUID+77 -- REUSE
+-- @CGUID+78 -- REUSE
+-- @CGUID+79 -- REUSE
+-- @CGUID+80 -- REUSE
+-- @CGUID+81 -- REUSE
+-- @CGUID+82 -- REUSE
+-- @CGUID+83 -- REUSE
+-- @CGUID+84 -- REUSE
+-- @CGUID+85 -- REUSE
+-- @CGUID+86 -- REUSE
+-- @CGUID+87 -- REUSE
+-- @CGUID+88 -- REUSE
+-- @CGUID+89 -- REUSE
+-- @CGUID+90 -- REUSE
+-- @CGUID+91 -- REUSE
+-- @CGUID+92 -- REUSE
 (@CGUID+93, 23596, 568, 1, 243.45, 1033.66, 3.55167, 1.8675, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+94, 23596, 568, 1, -78.6729, 1199.08, 5.63549, 1.16937, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+95, 23596, 568, 1, 364.306, 1112.51, 5.76931, 2.46091, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
@@ -486,8 +628,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+106, 23597, 568, 1, 338.112, 1051.79, 9.60488, 5.25344, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+107, 23597, 568, 1, 249.004, 1043.29, 3.57493, 1.79769, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+108, 23597, 568, 1, 234.088, 1039.92, 3.55883, 2.11185, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
-(@CGUID+109, 23597, 568, 1, 254.847, 1025.23, 3.46834, 5.57699, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Guardian
-(@CGUID+110, 23597, 568, 1, 243.167, 1032.67, 16.5783, 1.81514, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Guardian
+(@CGUID+109, 23597, 568, 1, 254.847, 1025.23, 3.46834, 5.57699, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Guardian
+(@CGUID+110, 23597, 568, 1, 234.715, 1019.957, 16.38691, 1.81514, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Guardian
 (@CGUID+111, 23597, 568, 1, -83.8267, 1196.94, 5.7285, 5.46288, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+112, 23597, 568, 1, -80.5356, 1197.13, 5.59467, 3.83972, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+113, 23597, 568, 1, 101.955, 1588.22, 43.6776, 4.93928, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
@@ -516,10 +658,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+136, 23746, 568, 1, 58.4526, 1695.63, 47.0572, 3.00197, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+137, 23746, 568, 1, -78.6888, 1164.77, 5.52694, 2.93215, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+138, 23746, 568, 1, 81.8456, 1648.21, 45.8278, 0.959931, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
-(@CGUID+139, 23746, 568, 1, 342.918, 1150.48, 7.06588, 4.39823, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
+(@CGUID+139, 23746, 568, 1, 342.918, 1150.48, 7.06588, 4.39823, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+140, 23746, 568, 1, 69.9182, 683.547, 57.1529, 4.41568, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+141, 23746, 568, 1, 182.828, 1695.28, 45.7485, 1.62316, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
-(@CGUID+142, 23746, 568, 1, 305.382, 1467.21, 81.5893, 4.18879, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
+(@CGUID+142, 23746, 568, 1, 305.382, 1467.21, 81.5893, 4.18879, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+143, 23746, 568, 1, 108.12, 659.957, 55.3927, 4.01426, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+144, 23746, 568, 1, 135.517, 720.719, 58.2989, 4.17134, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+145, 23746, 568, 1, 120.172, 1638.11, 42.3568, 6.23082, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
@@ -529,7 +671,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+149, 23746, 568, 1, 129.791, 1357.97, -24.0763, 6.0912, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+150, 23746, 568, 1, 115.099, 1245.86, -20.1063, 2.58309, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+151, 23746, 568, 1, 107.344, 1226.04, -23.9391, 0.837758, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
-(@CGUID+152, 23746, 568, 1, 390.18, 1080, 6.42698, 3.38594, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
+-- @CGUID+152 -- REUSE
 (@CGUID+153, 23746, 568, 1, 104.313, 1678.46, 45.7201, 0.383972, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+154, 23746, 568, 1, 77.9453, 1651.02, 46.739, 4.31096, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+155, 23746, 568, 1, 120.432, 766.113, 55.1054, 6.26573, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
@@ -542,7 +684,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+162, 23746, 568, 1, 108.058, 1371.94, -21.3731, 1.32645, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+163, 23746, 568, 1, 87.4132, 1703.16, 45.5562, 4.74729, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+164, 23746, 568, 1, 110.786, 734.368, 49.4926, 3.28122, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
-(@CGUID+165, 23746, 568, 1, -80.1067, 1125.27, 5.42039, 3.05433, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
+(@CGUID+165, 23746, 568, 1, -80.1067, 1125.27, 5.42039, 3.05433, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+166, 23746, 568, 1, 119.402, 1680.13, 47.6264, 5.68977, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+167, 23746, 568, 1, -149.192, 1350.13, 48.2572, 0.05236, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+168, 23746, 568, 1, -22.2064, 1350.52, 48.2573, 3.9619, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
@@ -555,20 +697,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+175, 23746, 568, 1, 133.719, 1631.77, 47.752, 4.08407, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+176, 23746, 568, 1, 130.362, 733.863, 49.7089, 4.34587, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+177, 23746, 568, 1, 119.427, 928.836, 64.3938, 4.66003, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
-(@CGUID+178, 23746, 568, 1, 333.131, 1085.87, 7.72835, 1.44862, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
+(@CGUID+178, 23746, 568, 1, 333.131, 1085.87, 7.72835, 1.44862, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+179, 23746, 568, 1, 63.9015, 1735.93, 47.6881, 5.8294, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+180, 23746, 568, 1, 78.3507, 733.04, 56.7177, 3.4383, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+181, 23746, 568, 1, 341.022, 1310.98, 81.6709, 3.33358, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+182, 23746, 568, 1, 133.822, 1759.53, 47.9103, 1.72788, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
-(@CGUID+183, 23746, 568, 1, 423.1, 1084.32, 7.31664, 2.54818, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
+(@CGUID+183, 23746, 568, 1, 423.1, 1084.32, 7.31664, 2.54818, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+184, 23746, 568, 1, 81.9872, 1648.87, 47.9493, 1.46608, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+185, 23746, 568, 1, 119.295, 1711.27, 47.2793, 2.04204, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
-(@CGUID+186, 23774, 568, 1, -205.011, 1122.03, -0.553194, 1.89687, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Trainer
-(@CGUID+187, 23774, 568, 1, -208.207, 1130.93, -1.72597, 0.452702, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Trainer
-(@CGUID+188, 23774, 568, 1, -193.362, 1242.08, 0.651445, 5.67232, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Trainer
-(@CGUID+189, 23774, 568, 1, -204.005, 1159.89, -0.738282, 2.41081, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Trainer
-(@CGUID+190, 23774, 568, 1, -213.016, 1159.9, -1.69267, 0.785406, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Trainer
-(@CGUID+191, 23774, 568, 1, -217.94, 1147.27, -1.9117, 3.02546, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Trainer
+(@CGUID+186, 23774, 568, 1, -225.5915, 1148.158, -1.878127, 1.89687, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Trainer
+(@CGUID+187, 23774, 568, 1, -208.2356, 1120.899, -1.503316, 0.452702, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Trainer
+(@CGUID+188, 23774, 568, 1, -200.4844, 1242.847, 1.069049, 0.2094395, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Trainer
+(@CGUID+189, 23774, 568, 1, -93.165, 1114.28, 5.59398, 1.22912, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Trainer
+(@CGUID+190, 23774, 568, 1, -203.0083, 1155.825, -0.9969013, 5.0395, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Trainer
+(@CGUID+191, 23774, 568, 1, -208.2986, 1163.731, -1.220046, 3.02546, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Trainer
 (@CGUID+192, 23774, 568, 1, -207.92, 1162.87, -0.997889, 4.66003, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Trainer
 (@CGUID+193, 23790, 568, 1, -147.696, 1333.27, 48.2572, 0.820305, 604800, 604800, 0, 0, 0, 0), -- Tanzar
 (@CGUID+194, 23807, 568, 1, -80.1, 1366.4, 40.8492, 4.64258, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman - Bear God Invisman
@@ -623,15 +765,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+243, 23834, 568, 1, -218.398, 1155.91, -1.9117, 3.07176, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
 (@CGUID+244, 23834, 568, 1, -204.363, 1143.33, -1.4117, 5.09194, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
 (@CGUID+245, 23834, 568, 1, -214.267, 1146.52, -1.9117, 0.585372, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
-(@CGUID+246, 23834, 568, 1, -95.9498, 1111.12, 5.63477, 0.965111, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
-(@CGUID+247, 23834, 568, 1, -90.4841, 1111.62, 5.59396, 0.962558, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
+(@CGUID+246, 23834, 568, 1, -95.9498, 1111.12, 5.63477, 0.965111, 7200, 7200, 0, 0, 0, 0), -- Amani Dragonhawk
+(@CGUID+247, 23834, 568, 1, -90.4841, 1111.62, 5.59396, 0.962558, 7200, 7200, 0, 0, 0, 0), -- Amani Dragonhawk
 (@CGUID+248, 23834, 568, 1, -212.318, 1106.67, -0.100973, 1.15832, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
 (@CGUID+249, 23834, 568, 1, -195.346, 1127.15, 0.249147, 2.81606, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
 (@CGUID+250, 23834, 568, 1, -204.952, 1127.64, -1.10097, 1.70847, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
 (@CGUID+251, 23834, 568, 1, -215.168, 1120.53, -1.78481, 6.08606, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
-(@CGUID+252, 23834, 568, 1, -132.169, 1140.14, 0.463024, 5.27626, 7200, 7200, 0, 0, 0, 0), -- Amani Dragonhawk
+-- @CGUID+252 -- REUSE
 (@CGUID+253, 23834, 568, 1, -142.093, 1141.8, 0.335745, 2.10754, 7200, 7200, 0, 0, 0, 0), -- Amani Dragonhawk
-(@CGUID+254, 23863, 568, 1, 120.132, 664.015, 51.7023, 1.5806, 259200, 259200, 0, 0, 0, 0), -- Zul'jin
+(@CGUID+254, 23863, 568, 1, 119.9806, 674.2449, 51.82448, 1.466077, 259200, 259200, 0, 0, 0, 0), -- Zul'jin
 (@CGUID+255, 23877, 568, 1, 149.657, 705.75, 45.1948, 3.10669, 604800, 604800, 0, 0, 0, 0), -- Amani Lynx Spirit
 (@CGUID+256, 23878, 568, 1, 134.6, 724.341, 45.1947, 4.06662, 604800, 604800, 0, 0, 0, 0), -- Amani Bear Spirit
 (@CGUID+257, 23879, 568, 1, 91.133, 705.753, 45.1947, 0.0174533, 604800, 604800, 0, 0, 0, 0), -- Amani Dragonhawk Spirit
@@ -667,8 +809,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+287, 24047, 568, 1, 284.695, 1033.79, -3.70402, 0.800363, 7200, 7200, 5, 0, 0, 1), -- Amani Crocolisk
 (@CGUID+288, 24047, 568, 1, 298.851, 1023.65, -1.39662, 5.41663, 7200, 7200, 5, 0, 0, 1), -- Amani Crocolisk
 (@CGUID+289, 24047, 568, 1, 303.241, 1008.27, -3.27641, 1.64086, 7200, 7200, 5, 0, 0, 1), -- Amani Crocolisk
-(@CGUID+290, 24059, 568, 1, 95.7619, 1155.89, -3.16286, 0.533555, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Beast Tamer
-(@CGUID+291, 24059, 568, 1, 81.1417, 1147.26, 0.197549, 3.02961, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Beast Tamer
+-- @CGUID+290 -- REUSE
+(@CGUID+291, 24059, 568, 1, 81.1417, 1147.26, 0.197549, 3.02961, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Beast Tamer
 (@CGUID+292, 24064, 568, 1, 248.641, 1084.97, 0.086787, 0.785398, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
 (@CGUID+293, 24064, 568, 1, 148.186, 1125.2, 2.13474, 3.19395, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
 (@CGUID+294, 24064, 568, 1, 169.462, 1130.48, 1.09778, 5.51524, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
@@ -676,7 +818,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+296, 24064, 568, 1, 155.335, 1130.25, 1.17472, 0.907571, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
 (@CGUID+297, 24064, 568, 1, 247.53, 1128.97, 0.33017, 3.19395, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
 (@CGUID+298, 24064, 568, 1, 221.965, 1130.85, 0.083334, 0.802851, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
-(@CGUID+299, 24064, 568, 1, 171.733, 1138.6, 0.125, 1.58028, 7200, 7200, 5, 0, 0, 1), -- Amani Lynx Cub
+(@CGUID+299, 24064, 568, 1, 186.722, 1164.87, 0.114171, 1.58028, 7200, 7200, 5, 0, 0, 1), -- Amani Lynx Cub
 (@CGUID+300, 24064, 568, 1, 236.318, 1088.26, 0.083335, 2.16421, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
 (@CGUID+301, 24064, 568, 1, 230.744, 1066.13, 0.178641, 3.87463, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
 (@CGUID+302, 24064, 568, 1, 221.048, 1057.69, 1.68041, 0.907571, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
@@ -692,24 +834,24 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+312, 24064, 568, 1, 179.434, 1167.02, 0.549227, 5.63265, 7200, 7200, 5, 0, 0, 1), -- Amani Lynx Cub
 (@CGUID+313, 24064, 568, 1, 193.293, 1173.71, 2.04923, 0.358979, 7200, 7200, 5, 0, 0, 1), -- Amani Lynx Cub
 (@CGUID+314, 24065, 568, 1, 337.652, 1043.24, 9.60488, 0.872665, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
-(@CGUID+315, 24065, 568, 1, 179.738, 1145.42, 0.125, 4.69055, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Handler
-(@CGUID+316, 24065, 568, 1, 183.726, 1144.8, 0.125, 4.69055, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Handler
+(@CGUID+315, 24065, 568, 1, 185.321060, 1127.515625, 0.000543, 1.786733, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
+(@CGUID+316, 24065, 568, 1, 181.651123, 1125.848511, 0.000543, 1.810300, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Handler
 (@CGUID+317, 24065, 568, 1, 372.493, 1044.07, 9.58696, 3.57792, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
 (@CGUID+318, 24065, 568, 1, 367.733, 1042.91, 9.58983, 0.034907, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
 (@CGUID+319, 24065, 568, 1, 236.597, 1115.74, 0.083333, 1.67552, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
-(@CGUID+320, 24065, 568, 1, 221.439, 1138.82, 0.125, 2.53465, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Handler
+(@CGUID+320, 24065, 568, 1, 221.439, 1138.82, 0.125, 2.53465, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Handler
 (@CGUID+321, 24065, 568, 1, 234.628, 1078.93, 0.125, 4.41342, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Handler
 (@CGUID+322, 24065, 568, 1, 221.267, 1067.83, 0.375, 1.69092, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Handler
 (@CGUID+323, 24138, 568, 1, 273.399, 1054.89, 0.000612732, 5.66519, 7200, 7200, 0, 0, 0, 0), -- Tamed Amani Crocolisk
 (@CGUID+324, 24138, 568, 1, 275.893, 1058.4, 0.00207663, 5.66519, 7200, 7200, 0, 0, 0, 0), -- Tamed Amani Crocolisk
 (@CGUID+325, 24175, 568, 1, 206.9213, 1473.42, 26.00007, 3.961897, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Lookout
 (@CGUID+326, 24179, 568, 1, 148.5265, 1418.595, 3.30332, 3.024379, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Wind Walker
--- @CGUID+327 -- REUSE
--- @CGUID+328 -- REUSE
--- @CGUID+329 -- REUSE
--- @CGUID+330 -- REUSE
--- @CGUID+331 -- REUSE
--- @CGUID+332 -- REUSE
+(@CGUID+327, 23834, 568, 1, -202.4418, 1158.546, -0.6538, 5.082749, 7200, 7200, 0, 0, 0, 0), -- Amani Dragonhawk
+(@CGUID+328, 23834, 568, 1, -205.1979, 1157.169, -1.2432, 5.039547, 7200, 7200, 0, 0, 0, 0), -- Amani Dragonhawk
+(@CGUID+329, 23834, 568, 1, -210.184, 1161.39, -1.2867, 0.96688, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
+(@CGUID+330, 23834, 568, 1, -194.592, 1151.05, 0.124147, 5.97311, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
+(@CGUID+331, 23834, 568, 1, -201.899, 1110.36, 0.223543, 5.9804, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
+(@CGUID+332, 23834, 568, 1, -219.674, 1112.36, -0.475973, 4.45835, 7200, 7200, 5, 0, 0, 1), -- Amani Dragonhawk
 (@CGUID+333, 24239, 568, 1, 117.883, 921.279, 33.8883, 1.5696, 259200, 259200, 0, 0, 0, 0), -- Hex Lord Malacrass
 (@CGUID+334, 24312, 568, 1, -204.928, 1136.49, 0.388893, 6.00393, 7200, 7200, 0, 0, 0, 0), -- Dragonhawk Egg
 (@CGUID+335, 24312, 568, 1, -222.574, 1124.88, -0.057337, 1.32645, 7200, 7200, 0, 0, 0, 0), -- Dragonhawk Egg
@@ -784,11 +926,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+404, 24180, 568, 1, 223.801, 1424.94, 29.4699, 1.16937, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Protector
 (@CGUID+405, 24180, 568, 1, 274.358, 1385.16, 49.405, 3.75246, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Protector
 (@CGUID+406, 24549, 568, 1, 114.859, 992.121, 30.5475, 0.610865, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tempest
-(@CGUID+407, 23596, 568, 1, 156.359, 1148.62, 0.141908, 4.14, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
+-- @CGUID+407 -- REUSE
 (@CGUID+408, 23596, 568, 1, 376.49, 1112.34, 6.0581, 1.01229, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+409, 23596, 568, 1, 121.923, 996.957, 30.7748, 3.42085, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+410, 23597, 568, 1, 320.225, 1112.26, 8.57705, 1.49896, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
-(@CGUID+411, 23597, 568, 1, 317.236, 1112.47, 9.69159, 1.50034, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
+(@CGUID+411, 23597, 568, 1, 317.236, 1112.47, 9.69159, 1.50034, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Guardian
 (@CGUID+412, 23597, 568, 1, 400.797, 1022.44, 9.60558, 4.66003, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+413, 23597, 568, 1, 397.708, 1048.77, 9.6045, 6.10865, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+414, 23597, 568, 1, 411.553, 1022.26, 9.60508, 4.7822, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
@@ -801,12 +943,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+421, 24047, 568, 1, 282.668, 902.15, -0.021615, 0.0530348, 7200, 7200, 5, 0, 0, 1), -- Amani Crocolisk
 (@CGUID+422, 24047, 568, 1, 286.638, 871.849, -1.4885, 3.8417, 7200, 7200, 5, 0, 0, 1), -- Amani Crocolisk
 (@CGUID+423, 24047, 568, 1, 281.055, 889.331, -0.646184, 0.331233, 7200, 7200, 5, 0, 0, 1), -- Amani Crocolisk
-(@CGUID+424, 24059, 568, 1, 155.442, 1146.79, 0.243542, 3.30256, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Beast Tamer
-(@CGUID+425, 24059, 568, 1, 339.464, 998.499, 0.110426, 5.78687, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Beast Tamer
+-- @CGUID+424 -- REUSE
+(@CGUID+425, 24059, 568, 1, 276.446, 1055.427, 0.125, 5.683601, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Beast Tamer
 (@CGUID+426, 24059, 568, 1, 383.674, 1011.67, 0.616024, 2.02671, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Beast Tamer
-(@CGUID+427, 24059, 568, 1, 377.369, 1012.85, 0.137483, 1.9491, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Beast Tamer
+(@CGUID+427, 24059, 568, 1, 377.369, 1012.85, 0.137483, 1.9491, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Beast Tamer
 (@CGUID+428, 24059, 568, 1, 413.688, 982.38, 0.125, 6.27607, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Beast Tamer
-(@CGUID+429, 24059, 568, 1, 413.723, 987.375, 0.125, 6.28032, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Beast Tamer
+(@CGUID+429, 24059, 568, 1, 413.723, 987.375, 0.125, 6.28032, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Beast Tamer
 (@CGUID+430, 24064, 568, 1, 178.214, 1174.38, 0.0957249, 4.90155, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
 (@CGUID+431, 24064, 568, 1, 188.975, 1129.25, 0.125, 1.54377, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
 (@CGUID+432, 24064, 568, 1, 162.531, 1135.59, 0.58252, 1.13446, 7200, 7200, 0, 0, 0, 0), -- Amani Lynx Cub
@@ -866,8 +1008,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+42, 186482, 568, 1, 294.252, 1457.96, 81.5059, -1.3439, 0, 0, 0, 0, 180, 180, 255, 0), -- Zul'Aman Dummy Cage - Open
 (@OGUID+43, 186482, 568, 1, -149.09, 1349.99, 48.1739, -2.19912, 0, 0, 0, 0, 180, 180, 255, 0), -- Zul'Aman Dummy Cage - Open
 (@OGUID+44, 186482, 568, 1, -22.0915, 1350.19, 48.1739, 2.26892, 0, 0, 0, 0, 180, 180, 255, 0), -- Zul'Aman Dummy Cage - Open
-(@OGUID+45, 186622, 568, 1, 305.514, 1467.34, 81.5059, -2.32129, 0, 0, 0, 0, 180, 180, 255, 1), -- Zul'Aman - Loot Box - Dwarf
-(@OGUID+46, 186623, 568, 1, 307.208, 1464.14, 81.6032, -0.104719, 0, 0, 0, 0, 180, 180, 255, 1), -- Zul'Aman - Dwarf Hammer
+(@OGUID+45, 186622, 568, 1, 305.514, 1467.34, 81.5059, -2.32129, 0, 0, 0, 0, 604800, 604800, 255, 1), -- Zul'Aman - Loot Box - Dwarf
+(@OGUID+46, 186623, 568, 1, 307.208, 1464.14, 81.6032, -0.104719, 0, 0, 0, 0, 604800, 604800, 255, 1), -- Zul'Aman - Dwarf Hammer
 (@OGUID+47, 186633, 568, 1, -79.2179, 1125.98, 5.53967, -1.93732, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Gold Coins
 (@OGUID+48, 186633, 568, 1, -80.7119, 1124.81, 5.59401, -1.95477, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Gold Coins
 (@OGUID+49, 186633, 568, 1, 332.322, 1084.61, 6.23159, -0.872664, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Gold Coins
@@ -888,14 +1030,14 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+64, 186634, 568, 1, -79.5859, 1124.89, 5.57584, 0.90757, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Gold Coins
 (@OGUID+65, 186634, 568, 1, -80.4313, 1126.02, 5.59401, -0.575957, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Gold Coins
 (@OGUID+66, 186634, 568, 1, 304.023, 1467.73, 81.5893, 0.750491, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Gold Coins
-(@OGUID+67, 186648, 568, 1, -135.194, 1333.05, 48.1739, 2.3911, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Tanzar's Trunk
-(@OGUID+68, 186658, 568, 1, -79.9851, 1125.34, 5.594, -3.05433, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Kraz's Chest
-(@OGUID+69, 186667, 568, 1, -80.0906, 1125.3, 5.594, -1.29154, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Kraz's Package
+(@OGUID+67, 186648, 568, 1, -135.194, 1333.05, 48.1739, 2.3911, 0, 0, 0, 0, 604800, 604800, 255, 1), -- Tanzar's Trunk
+(@OGUID+68, 186658, 568, 1, -79.9851, 1125.34, 5.594, -3.05433, 0, 0, 0, 0, 604800, 604800, 255, 1), -- Kraz's Chest
+(@OGUID+69, 186667, 568, 1, -80.0906, 1125.3, 5.594, -1.29154, 0, 0, 0, 0, 604800, 604800, 255, 1), -- Kraz's Package
 (@OGUID+70, 186671, 568, 1, 343.357, 1152.03, 6.34366, -2.93214, 0, 0, 0, 0, 180, 180, 255, 1), -- Ashli's Vase
 (@OGUID+71, 186671, 568, 1, 344.333, 1084.68, 6.96691, 2.96704, 0, 0, 0, 0, 180, 180, 255, 1), -- Ashli's Vase
 (@OGUID+72, 186671, 568, 1, 332.369, 1084.42, 6.28005, 3.07177, 0, 0, 0, 0, 180, 180, 255, 1), -- Ashli's Vase
 (@OGUID+73, 186671, 568, 1, 424.256, 1083.61, 6.60608, 1.09956, 0, 0, 0, 0, 180, 180, 255, 1), -- Ashli's Vase
-(@OGUID+74, 186672, 568, 1, 424.102, 1083.67, 6.60312, 0.680677, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Ashli's Bag
+(@OGUID+74, 186672, 568, 1, 424.102, 1083.67, 6.60312, 0.680677, 0, 0, 0, 0, 604800, 604800, 255, 1), -- Ashli's Bag
 (@OGUID+75, 186728, 568, 1, 120.294, 1605.67, 63.1804, 3.13883, 0, 0, 0, 0, 180, 180, 255, 1), -- Massive Gate
 (@OGUID+76, 186733, 568, 1, -150.912, 1343.15, 49.785, -1.02974, 0, 0, 0, 0, 25, 25, 255, 1), -- The Map of Zul'Aman
 (@OGUID+77, 186745, 568, 1, 120.146, 665.572, 51.7082, -0.453785, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Bonfire
@@ -905,7 +1047,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+81, 186859, 568, 1, 120.294, 732.008, 45.011, 1.56207, 0, 0, 0, 0, 180, 180, 255, 0), -- Doodad_ZulAman_FireDoor01
 (@OGUID+82, 186860, 568, 1, 99.9827, 1333.95, -9.39569, 0.59341, 0, 0, 0, 0, 180, 180, 255, 1), -- Zul'Aman - Altar Torch - Bear God
 (@OGUID+83, 186865, 568, 1, 92.7648, 707.518, 45.1114, 0.017452, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Amani Drum
-(@OGUID+84, 187021, 568, 1, 305.775, 1467.31, 81.5875, 1.53589, 0, 0, 0, 0, -604800, -604800, 255, 1), -- Harkor's Satchel
+(@OGUID+84, 187021, 568, 1, 305.775, 1467.31, 81.5875, 1.53589, 0, 0, 0, 0, 604800, 604800, 255, 1), -- Harkor's Satchel
 (@OGUID+85, 187035, 568, 1, 132.464, 1334.19, -9.37467, -2.53072, 0, 0, 0, 0, 180, 180, 255, 1), -- Zul'Aman - Altar Torch - Eagle God
 (@OGUID+86, 187036, 568, 1, 98.8152, 1245.41, -9.49482, 1.43117, 0, 0, 0, 0, 180, 180, 255, 1), -- Zul'Aman - Altar Torch - Dragonhawk God
 (@OGUID+87, 187037, 568, 1, 132.373, 1244.41, -9.6476, 0.296705, 0, 0, 0, 0, 180, 180, 255, 1), -- Zul'Aman - Altar Torch - Lynx God
@@ -939,7 +1081,13 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- DBSCRIPTS
 -- =========
 
--- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2377401,2405901);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(2377401, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Run on'),
+(2377401, 0, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Emote - OneShotNo'),
+
+(2405901, 0, 0, 0, 0, 0, 0, 0, 0, 2000002029, 2000002030, 2000002031, 0, 0, 0, 0, 0, 'Amani\'shi Handler - random say');
+
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -949,7 +1097,13 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
+
+DELETE FROM dbscript_string WHERE entry in (2000002029,2000002030,2000002031);
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
+(2000002029, 'Coo Yah! There ya be!', 0, 0, 0, 0, 'Amani\'shi Handler 1'),
+(2000002030, 'Here, kitty kitty.....', 0, 0, 0, 0, 'Amani\'shi Handler 2'),
+(2000002031, 'Where ya be mon? Ya dang kitty\'s are sneaky!', 0, 0, 0, 0, 'Amani\'shi Handler 3');
+
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
 
