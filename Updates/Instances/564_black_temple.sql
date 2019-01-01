@@ -1917,6 +1917,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (23084, 0, 0, 1, 0, 0, 0, NULL), -- Black Temple Invis Stalker
 (23086, 0, 0, 1, 16, 0, 0, NULL), -- Sewer Rat
 (23087, 0, 0, 1, 16, 0, 0, NULL), -- Sewer Crocolisk
+(23111, 0, 0, 1, 16, 0, 0, '40326 40334'), -- Shadowy Construct
 (23157, 0, 0, 1, 0, 0, 0, NULL), -- Aluyen
 (23158, 0, 0, 1, 0, 0, 0, NULL), -- Seer Kanai
 (23159, 0, 0, 1, 0, 0, 0, NULL), -- Okuno
