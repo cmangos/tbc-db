@@ -2113,6 +2113,36 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+089, @CGUID+092, 1679), -- Illidari Defiler -> Illidari Nightlord
 (@CGUID+102, @CGUID+092, 1679), -- Illidari Boneslicer -> Illidari Nightlord
 (@CGUID+092, @CGUID+045, 1024), -- Illidari Nightlord -> Shade of Akama
+(@CGUID+084, @CGUID+613, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+094, @CGUID+613, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+095, @CGUID+613, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+614, @CGUID+613, 1167), -- Illidari Centurion -> Illidari Centurion
+(@CGUID+623, @CGUID+613, 1167), -- Illidari Heartseeker -> Illidari Centurion
+(@CGUID+613, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+085, @CGUID+615, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+096, @CGUID+615, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+097, @CGUID+615, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+616, @CGUID+615, 1167), -- Illidari Centurion -> Illidari Centurion
+(@CGUID+624, @CGUID+615, 1167), -- Illidari Heartseeker -> Illidari Centurion
+(@CGUID+615, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+087, @CGUID+617, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+099, @CGUID+617, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+100, @CGUID+617, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+618, @CGUID+617, 1167), -- Illidari Centurion -> Illidari Centurion
+(@CGUID+625, @CGUID+617, 1167), -- Illidari Heartseeker -> Illidari Centurion
+(@CGUID+617, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+088, @CGUID+619, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+101, @CGUID+619, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+620, @CGUID+619, 1167), -- Illidari Centurion -> Illidari Centurion
+(@CGUID+626, @CGUID+619, 1167), -- Illidari Heartseeker -> Illidari Centurion
+(@CGUID+627, @CGUID+619, 1167), -- Illidari Heartseeker -> Illidari Centurion
+(@CGUID+619, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+090, @CGUID+621, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+103, @CGUID+621, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+104, @CGUID+621, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+622, @CGUID+621, 1167), -- Illidari Centurion -> Illidari Centurion
+(@CGUID+628, @CGUID+621, 1167), -- Illidari Heartseeker -> Illidari Centurion
+(@CGUID+621, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
 -- Teron Gorefiend
 (@CGUID+437, @CGUID+436, 1679), -- Shadowmoon Houndmaster -> Shadowmoon Houndmaster
 (@CGUID+436, @CGUID+105, 1024), -- Shadowmoon Houndmaster -> Teron Gorefiend
