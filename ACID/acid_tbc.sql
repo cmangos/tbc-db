@@ -26838,6 +26838,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2322204','23222','2','1','100','0','40','0','0','0','0','0','45','6','10','0','24','0','0','0','22','0','0','0','Bonechewer Brawler - Evade, Send AI Event B, and Set Phase 0 at 40% HP (Phase 1)'),
 ('2322205','23222','2','1','100','0','40','0','0','0','0','0','5','71','0','0','0','0','0','0','0','0','0','0','Bonechewer Brawler - Emote at 40% HP (Phase 1)'),
 ('2322206','23222','30','1','100','0','6','23239','0','0','0','0','0','24','0','0','0','22','0','0','5','71','0','0','Bonechewer Brawler - Evade, Set Phase 0, and Emote on Recieve AI Event B (Phase 1)'),
+('2322207','23222','30','1','100','0','6','23223','0','0','0','0','0','24','0','0','0','22','0','0','0','0','0','0','Bonechewer Brawler - Evade and Set Phase 0 on Recieve AI Event B (Phase 1)'),
 -- Bonechewer Spectator 23223
 ('2322301','23223','11','0','100','0','0','0','0','0','0','0','31','1','3','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Set Random Phase 1-3 on Spawn'),
 ('2322302','23223','2','0','100','1024','30','0','0','0','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Spectator - Cast Enrage at 30% HP'),
@@ -26848,6 +26849,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2322307','23223','28','0','100','1025','13444','5','5000','9000','0','0','11','13444','1','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Cast Sunder Armor on Target Missing Aura Stack'),
 ('2322308','23223','1','0','10','1','7000','9000','15000','25000','0','0','54','0','0','10155','0','0','0','0','0','0','0','0','Bonechewer Spectator - Random Text on Timer OOC'),
 ('2322309','23223','1','0','100','32','5000','8000','0','0','0','0','10','253','391','392','10','29','378','378','0','0','0','0','Bonechewer Spectator - Random Emote on Timer OOC'),
+('2322310','23223','4','0','100','0','0','0','0','0','0','0','45','6','40','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Send AI Event B on Aggro'),
 -- Illidari Elite (23226) - NSR
 -- Mutant War Hound 23232
 ('2323201','23232','1','0','100','0','1000','1000','0','0','0','0','11','41290','0','32','0','0','0','0','0','0','0','0','Mutant War Hound - Cast Disease Cloud OOC'),
@@ -26877,6 +26879,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2323906','23239','2','1','100','0','40','0','0','0','0','0','54','-11159','0','0','5','16','0','0','0','0','0','0','Bonechewer Combatant - Say Text and Emote at 40% HP (Phase 1)'),
 ('2323907','23239','30','1','100','0','6','23222','0','0','0','0','24','0','0','0','22','0','0','0','0','0','0','0','Bonechewer Combatant - Evade and Set Phase 0 on Recieve AI Event B (Phase 1)'),
 ('2323908','23239','30','1','100','0','6','23222','0','0','0','0','54','-11159','0','0','5','16','0','0','0','0','0','0','Bonechewer Combatant - Say Text and Emote on Recieve AI Event B (Phase 1)'),
+('2323909','23239','30','1','100','0','6','23223','0','0','0','0','24','0','0','0','22','0','0','0','0','0','0','0','Bonechewer Combatant - Evade and Set Phase 0 on Recieve AI Event B (Phase 1)'),
 -- Cage Trap Disturb Trigger 23304 - mob_cage_trap_trigger
 -- Ashtongue Rogue 23318
 ('2331801','23318','0','0','100','1025','5000','10000','10000','15000','0','0','11','41978','1','0','0','0','0','0','0','0','0','0','Ashtongue Rogue - Cast Debilitating Poison'),
