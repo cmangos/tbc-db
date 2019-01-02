@@ -14891,7 +14891,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1213802','12138','6','0','100','0','0','0','0','0','0','0','11','18986','0','7','0','0','0','0','0','0','0','0','Lunaclaw - Cast Lunaclaw Spirit on Death'),
 -- Sickly Gazelle 12296 - spell_dummy_npc
 -- Burning Blade Toxicologist
-('1231901','12319','4','0','100','0','0','0','0','0','0','0','11','696','0','0','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Demon Skin on Aggro'),
+('1231901','12319','4','0','100','0','0','0','0','0','0','0','11','696','0','0','54','-991','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Demon Skin and Say on Aggro'),
 ('1231902','12319','0','0','100','1','5000','11000','14000','25000','0','0','11','11962','1','0','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Immolate'),
 ('1231903','12319','0','0','100','1','9000','15000','18000','30000','0','0','11','980','4','33','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Bane of Agony'),
 ('1231904','12319','2','0','100','1','50','0','13000','18000','0','0','11','689','1','0','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Drain Life at 50% HP'),
@@ -30652,7 +30652,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-988','%s is angered and attacks!','0','2','0','6492','0'),
 ('-989','%s escapes into the void!','0','2','0','6492','0'),
 ('-990','Mommy!','0','0','0','Common Text','0'),
--- Classic PLEASE RE-USE 991 - 1018
+('-991','You\'ve interfered with our plans for the last time, foolish $c!','0','0','0','12319','0'),
+-- Classic PLEASE RE-USE 992 - 1018
 ('-1019','This will teach you to lay off the herb, $r.','0','0','0','11447','1'),
 ('-1020','Step right up! Step right up! Greetings my friend. I\'m Silas Darkmoon and I want to welcome you to the greatest show on Azeroth! It\'s the Darkmoon Faire friend, and it\'s your lucky day! Sparing no expense, we\'ve gathered wonders and treats from around the world for your delight. Whether you\'re young or old, rich or poor, the Darkmoon Faire has it all!','0','0','0','14823','1'),
 ('-1021','Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world! We have spared no expense in bringing you excitement that children of all ages will delight in!','0','0','0','14823','1'),
