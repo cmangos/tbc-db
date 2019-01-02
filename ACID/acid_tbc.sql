@@ -26832,17 +26832,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2321602','23216','13','0','100','1025','10000','15000','0','0','0','0','11','41180','1','1','0','0','0','0','0','0','0','0','Ashtongue Defender - Cast Shield Bash on Target Casting'),
 ('2321603','23216','0','0','100','1025','11000','16000','13000','17000','0','0','11','41975','5','0','0','0','0','0','0','0','0','0','Ashtongue Defender - Cast Heroic Strike'),
 -- Bonechewer Brawler 23222 - OOC Fighting Script until ~40% HP, Frenzy might be HP related still (12125 - 68016ms) Health Resetting Spell = 17683, related Emote "%s arises to fight once more!"
--- Faction 1813 fighting, normal 1693
 ('2322201','23222','0','0','100','1025','7000','14000','21000','28000','0','0','11','41254','0','0','1','-10133','0','0','0','0','0','0','Bonechewer Brawler - Cast Frenzy'),
 ('2322202','23222','2','0','100','1025','30','0','120000','120000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Brawler - Cast Enrage at 30% HP'),
--- Bonechewer Spectator 23223 - Reply Say: "Good fight!" to Bonechewer Combatant, Say: "Filthy animals!","Weak!","You see that final blow! Awesome!","Kill him!"
-('2322301','23223','11','0','100','0','0','0','0','0','0','0','31','1','3','0','0','0','0','0','0','0','0','0','Bonechewer Behemoth - Set Random Phase 1-3 on Spawn'),
+('2322203','23222','30','0','100','0','5','23239','0','0','0','0','2','1693','3','0','22','1','0','0','55','7','0','0','Bonechewer Brawler - Change Faction, Set Phase 1, and Attack on Recieve AI Event A'),
+('2322204','23222','2','1','100','0','40','0','0','0','0','0','45','6','10','0','24','0','0','0','22','0','0','0','Bonechewer Brawler - Evade, Send AI Event B, and Set Phase 0 at 40% HP (Phase 1)'),
+('2322205','23222','2','1','100','0','40','0','0','0','0','0','5','71','0','0','0','0','0','0','0','0','0','0','Bonechewer Brawler - Emote at 40% HP (Phase 1)'),
+('2322206','23222','30','1','100','0','6','23239','0','0','0','0','0','24','0','0','0','22','0','0','5','71','0','0','Bonechewer Brawler - Evade, Set Phase 0, and Emote on Recieve AI Event B (Phase 1)'),
+-- Bonechewer Spectator 23223
+('2322301','23223','11','0','100','0','0','0','0','0','0','0','31','1','3','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Set Random Phase 1-3 on Spawn'),
 ('2322302','23223','2','0','100','1024','30','0','0','0','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Spectator - Cast Enrage at 30% HP'),
 ('2322303','23223','0','13','100','1025','12000','15000','9000','12000','0','0','11','13446','1','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Cast Strike (Phase 1)'),
 ('2322304','23223','0','11','100','1025','3000','6000','5000','8000','0','0','11','25646','1','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Cast Mortal Wound (Phase 2)'),
 ('2322305','23223','0','7','100','1025','6000','12000','8500','12000','0','0','11','36140','4','512','0','0','0','0','0','0','0','0','Bonechewer Spectator - Cast Charge (Phase 3)'),
 ('2322306','23223','0','0','100','1025','6000','11000','12000','18000','0','0','11','40505','1','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Cast Cleave'),
 ('2322307','23223','28','0','100','1025','13444','5','5000','9000','0','0','11','13444','1','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Cast Sunder Armor on Target Missing Aura Stack'),
+('2322308','23223','1','0','10','1','7000','9000','15000','25000','0','0','54','0','0','10155','0','0','0','0','0','0','0','0','Bonechewer Spectator - Random Text on Timer OOC'),
+('2322309','23223','1','0','100','32','5000','8000','0','0','0','0','10','253','391','392','10','29','378','378','0','0','0','0','Bonechewer Spectator - Random Emote on Timer OOC'),
 -- Illidari Elite (23226) - NSR
 -- Mutant War Hound 23232
 ('2323201','23232','1','0','100','0','1000','1000','0','0','0','0','11','41290','0','32','0','0','0','0','0','0','0','0','Mutant War Hound - Cast Disease Cloud OOC'),
@@ -26864,10 +26869,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2323704','23237','0','0','100','1025','7000','9000','7000','10000','0','0','11','41229','1','0','0','0','0','0','0','0','0','0','Bonechewer Blood Prophet - Cast Bloodbolt'),
 ('2323705','23237','2','0','100','1025','50','0','12000','16000','0','0','11','41238','1','0','22','2','0','0','0','0','0','0','Bonechewer Blood Prophet - Cast Blood Drain and Set Phase 2 at 50% HP'),
 ('2323706','23237','16','3','100','1025','41231','30','15000','15000','0','0','11','41231','12','2','0','0','0','0','0','0','0','0','Bonechewer Blood Prophet - Cast Prophecy of Blood on Friendly Missing Buff (Phase 2)'),
--- Bonechewer Combatant 23239 - Say: "I submit! You win this time..." to Bonechewer Spectator
--- Faction 1813 fighting, normal 1692
+-- Bonechewer Combatant 23239
 ('2323901','23239','0','0','100','1025','5000','7000','15000','35000','0','0','11','41251','0','0','0','0','0','0','0','0','0','0','Bonechewer Combatant - Cast Combat Rage'),
 ('2323902','23239','2','0','100','1025','30','0','120000','120000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Combatant - Cast Enrage at 30% HP'),
+('2323904','23239','1','0','100','0','8000','10000','0','0','0','0','45','5','10','0','22','1','0','0','2','1692','3','0','Bonechewer Combatant - Send AI Event A, Set Phase 1, and Change Faction on Timer OOC'),
+('2323905','23239','2','1','100','0','40','0','0','0','0','0','45','6','10','0','24','0','0','0','22','0','0','0','Bonechewer Combatant - Evade, Send AI Event B, and Set Phase 0 at 40% HP (Phase 1)'),
+('2323906','23239','2','1','100','0','40','0','0','0','0','0','54','-11159','0','0','5','16','0','0','0','0','0','0','Bonechewer Combatant - Say Text and Emote at 40% HP (Phase 1)'),
+('2323907','23239','30','1','100','0','6','23222','0','0','0','0','24','0','0','0','22','0','0','0','0','0','0','0','Bonechewer Combatant - Evade and Set Phase 0 on Recieve AI Event B (Phase 1)'),
+('2323908','23239','30','1','100','0','6','23222','0','0','0','0','54','-11159','0','0','5','16','0','0','0','0','0','0','Bonechewer Combatant - Say Text and Emote on Recieve AI Event B (Phase 1)'),
 -- Cage Trap Disturb Trigger 23304 - mob_cage_trap_trigger
 -- Ashtongue Rogue 23318
 ('2331801','23318','0','0','100','1025','5000','10000','10000','15000','0','0','11','41978','1','0','0','0','0','0','0','0','0','0','Ashtongue Rogue - Cast Debilitating Poison'),
@@ -31920,6 +31929,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11150','The fates have turned against me!','0','0','0','Phantom Valet 16408','0'),
 ('-11151','My time is done.','0','0','0','Phantom Valet 16408','0'),
 ('-11152','No, not now! Not like this!','0','0','0','Phantom Valet 16408','0'),
+('-11153','Finish him off!','0','0','0','Bonechewer Spectator 23223','0'),
+('-11154','Filthy animals!','0','0','0','Bonechewer Spectator 23223','0'),
+('-11155','Weak!','0','0','0','Bonechewer Spectator 23223','0'),
+('-11156','Kill him!','0','0','0','Bonechewer Spectator 23223','0'),
+('-11157','Good fight!','0','0','0','Bonechewer Spectator 23223','0'),
+('-11158','You see that final blow! Awesome!','0','0','0','Bonechewer Spectator 23223','0'),
+('-11159','I submit! You win this time...','0','0','0','Bonechewer Combatant 23239','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
@@ -32269,7 +32285,12 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10153,0,-11058,0,'17944 - Random Kill Texts'),
 (10154,0,-11059,0,'17945 - Random Kill Texts'),
 (10154,0,-11060,0,'17945 - Random Kill Texts'),
---
+(10155,0,-11153,0,'23223 - Random OOC Texts'),
+(10155,0,-11154,0,'23223 - Random OOC Texts'),
+(10155,0,-11155,0,'23223 - Random OOC Texts'),
+(10155,0,-11156,0,'23223 - Random OOC Texts'),
+(10155,0,-11157,0,'23223 - Random OOC Texts'),
+(10155,0,-11158,0,'23223 - Random OOC Texts'),
 (12000,0,-10617,0,'Common Outland Nagas'),
 (12000,0,-10618,0,'Common Outland Nagas'),
 (12000,0,-10619,0,'Common Outland Nagas'),
