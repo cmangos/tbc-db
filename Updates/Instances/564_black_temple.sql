@@ -2150,6 +2150,26 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+438, @CGUID+105, 1024), -- Shadowmoon Houndmaster -> Teron Gorefiend
 (@CGUID+440, @CGUID+441, 1679), -- Shadowmoon Houndmaster -> Shadowmoon Houndmaster
 (@CGUID+441, @CGUID+105, 1024), -- Shadowmoon Houndmaster -> Teron Gorefiend
+-- Halls of Anguish
+(@CGUID+592, @CGUID+591, 1167), -- Bonechewer Shield Disciple -> Bonechewer Shield Disciple
+(@CGUID+600, @CGUID+591, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
+(@CGUID+599, @CGUID+591, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
+(@CGUID+583, @CGUID+591, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
+(@CGUID+584, @CGUID+591, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
+(@CGUID+577, @CGUID+591, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
+(@CGUID+578, @CGUID+591, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
+(@CGUID+590, @CGUID+589, 1167), -- Bonechewer Shield Disciple -> Bonechewer Shield Disciple
+(@CGUID+582, @CGUID+589, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
+(@CGUID+581, @CGUID+589, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
+(@CGUID+597, @CGUID+589, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
+(@CGUID+598, @CGUID+589, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
+(@CGUID+587, @CGUID+588, 1167), -- Bonechewer Shield Disciple -> Bonechewer Shield Disciple
+(@CGUID+595, @CGUID+588, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
+(@CGUID+596, @CGUID+588, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
+(@CGUID+580, @CGUID+588, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
+(@CGUID+579, @CGUID+588, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
+(@CGUID+572, @CGUID+588, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
+(@CGUID+573, @CGUID+588, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
 -- Gurtogg Bloodboil
 -- Reliquary of the Lost
 -- Mother Shahraz
