@@ -2171,6 +2171,34 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+572, @CGUID+588, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
 (@CGUID+573, @CGUID+588, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
 -- Gurtogg Bloodboil
+(@CGUID+548, @CGUID+551, 1165), -- Bonechewer Brawler -> Bonechewer Spectator 
+(@CGUID+603, @CGUID+551, 1165), -- Bonechewer Combatant -> Bonechewer Spectator
+(@CGUID+552, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+553, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+554, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+555, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+556, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+557, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+558, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+559, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+560, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+561, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+551, @CGUID+284, 1024), -- Bonechewer Spectator -> Gurtogg Bloodboil
+(@CGUID+549, @CGUID+570, 1165), -- Bonechewer Brawler -> Bonechewer Spectator
+(@CGUID+604, @CGUID+570, 1165), -- Bonechewer Combatant -> Bonechewer Spectator
+(@CGUID+569, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+562, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+563, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+568, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+564, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+571, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+565, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+566, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+550, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+567, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
+(@CGUID+570, @CGUID+284, 1024), -- Bonechewer Spectator -> Gurtogg Bloodboil
+(@CGUID+541, @CGUID+284, 1024), -- Bonechewer Behemoth -> Gurtogg Bloodboil
+(@CGUID+542, @CGUID+284, 1024), -- Bonechewer Behemoth -> Gurtogg Bloodboil
 -- Reliquary of the Lost
 -- Mother Shahraz
 (@CGUID+369, @CGUID+283, 1024), -- Priestess of Dementia -> Mother Shahraz
