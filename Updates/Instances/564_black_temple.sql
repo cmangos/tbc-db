@@ -9,6 +9,7 @@ DBComment:
 * Test Promenade Sentinel Aggro Range
 * SD2 (Zone?, Sniff normal emote) Emotes for Entry: 22984 "You hear a loud rumble of metal grinding on stone..." - High Warlord Naj'entus Death, "The door to The Den of Mortal Delights has opened." - 6/9 Bosses Dead
 * Add Serverside 34081,39664
+* Missing March script for Shadowmoon Weapon Master & Shadowmoon Soldiers
 EndDBScriptData */
 
 SET @CGUID := 5640000; -- creatures
@@ -1597,7 +1598,6 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-DELETE FROM `creature_addon` WHERE `guid` BETWEEN @CGUID+1 AND @CGUID+780;
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+45, 0, 0, 1, 16, 64, 0, '40973'), -- Shade of Akama
 (@CGUID+46, 0, 8, 1, 16, 0, 0, NULL), -- Ashtongue Battlelord
@@ -1943,7 +1943,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (23421, 0, 0, 1, 16, 0, 0, NULL), -- Ashtongue Channeler
 (23498, 0, 0, 1, 16, 0, 0, '34429 41913'); -- Parasitic Shadowfiend
 
-DELETE FROM `creature_linking` WHERE `guid` BETWEEN @CGUID+1 AND @CGUID+770;
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- High Warlord Naj'entus
 (@CGUID+113, @CGUID+127, 1679), -- Coilskar Sea-Caller -> Aqueous Lord
@@ -2143,6 +2142,75 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+622, @CGUID+621, 1167), -- Illidari Centurion -> Illidari Centurion
 (@CGUID+628, @CGUID+621, 1167), -- Illidari Heartseeker -> Illidari Centurion
 (@CGUID+621, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
+-- Gorefiend's Vigil
+(@CGUID+138, @CGUID+143, 1167), -- Shadowmoon Champion -> Shadowmoon Champion
+(@CGUID+131, @CGUID+143, 1167), -- Shadowmoon Reaver -> Shadowmoon Champion
+(@CGUID+135, @CGUID+143, 1167), -- Shadowmoon Reaver -> Shadowmoon Champion
+(@CGUID+143, @CGUID+105, 1024), -- Shadowmoon Champion -> Teron Gorefiend
+(@CGUID+282, @CGUID+132, 1167), -- Shadowmoon War Hound -> Shadowmoon Reaver
+(@CGUID+519, @CGUID+132, 1167), -- Shadowmoon Grunt -> Shadowmoon Reaver
+(@CGUID+276, @CGUID+132, 1167), -- Shadowmoon Blood Mage -> Shadowmoon Reaver
+(@CGUID+530, @CGUID+132, 1167), -- Shadowmoon Grunt -> Shadowmoon Reaver
+(@CGUID+281, @CGUID+132, 1167), -- Shadowmoon War Hound -> Shadowmoon Reaver
+(@CGUID+132, @CGUID+105, 1024), -- Shadowmoon Reaver -> Teron Gorefiend
+(@CGUID+267, @CGUID+144, 1167), -- Shadowmoon Blood Mage -> Shadowmoon Champion
+(@CGUID+268, @CGUID+144, 1167), -- Shadowmoon Blood Mage -> Shadowmoon Champion
+(@CGUID+277, @CGUID+144, 1167), -- Shadowmoon War Hound -> Shadowmoon Champion
+(@CGUID+278, @CGUID+144, 1167), -- Shadowmoon War Hound -> Shadowmoon Champion
+(@CGUID+144, @CGUID+105, 1024), -- Shadowmoon Champion -> Teron Gorefiend
+(@CGUID+279, @CGUID+140, 1167), -- Shadowmoon War Hound -> Shadowmoon Champion
+(@CGUID+280, @CGUID+140, 1167), -- Shadowmoon War Hound -> Shadowmoon Champion
+(@CGUID+136, @CGUID+140, 1167), -- Shadowmoon Reaver -> Shadowmoon Champion
+(@CGUID+137, @CGUID+140, 1167), -- Shadowmoon Reaver -> Shadowmoon Champion
+(@CGUID+518, @CGUID+140, 1167), -- Shadowmoon Grunt -> Shadowmoon Champion
+(@CGUID+520, @CGUID+140, 1167), -- Shadowmoon Grunt -> Shadowmoon Champion
+(@CGUID+140, @CGUID+105, 1024), -- Shadowmoon Champion -> Teron Gorefiend
+(@CGUID+270, @CGUID+289, 1167), -- Shadowmoon Blood Mage -> Wrathbone Flayer
+(@CGUID+269, @CGUID+289, 1167), -- Shadowmoon Blood Mage -> Wrathbone Flayer
+(@CGUID+145, @CGUID+289, 1167), -- Shadowmoon Deathshaper -> Wrathbone Flayer
+(@CGUID+146, @CGUID+289, 1167), -- Shadowmoon Deathshaper -> Wrathbone Flayer
+(@CGUID+289, @CGUID+105, 1024), -- Wrathbone Flayer -> Teron Gorefiend
+(@CGUID+492, @CGUID+500, 1167), -- Shadowmoon Soldier -> Shadowmoon Weapon Master
+(@CGUID+493, @CGUID+500, 1167), -- Shadowmoon Soldier -> Shadowmoon Weapon Master
+(@CGUID+494, @CGUID+500, 1167), -- Shadowmoon Soldier -> Shadowmoon Weapon Master
+(@CGUID+495, @CGUID+500, 1167), -- Shadowmoon Soldier -> Shadowmoon Weapon Master
+(@CGUID+496, @CGUID+500, 1167), -- Shadowmoon Soldier -> Shadowmoon Weapon Master
+(@CGUID+497, @CGUID+500, 1167), -- Shadowmoon Soldier -> Shadowmoon Weapon Master
+(@CGUID+498, @CGUID+500, 1167), -- Shadowmoon Soldier -> Shadowmoon Weapon Master
+(@CGUID+499, @CGUID+500, 1167), -- Shadowmoon Soldier -> Shadowmoon Weapon Master
+(@CGUID+500, @CGUID+105, 1024), -- Shadowmoon Weapon Master -> Teron Gorefiend
+(@CGUID+142, @CGUID+141, 1167), -- Shadowmoon Champion -> Shadowmoon Champion
+(@CGUID+133, @CGUID+141, 1167), -- Shadowmoon Reaver -> Shadowmoon Champion
+(@CGUID+134, @CGUID+141, 1167), -- Shadowmoon Reaver -> Shadowmoon Champion
+(@CGUID+141, @CGUID+105, 1024), -- Shadowmoon Champion -> Teron Gorefiend
+(@CGUID+531, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+516, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+521, @CGUID+529, 1167), -- Shadowmoon Grunt -> Shadowmoon Grunt
+(@CGUID+529, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+522, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+532, @CGUID+526, 1167), -- Shadowmoon Grunt -> Shadowmoon Grunt
+(@CGUID+526, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+525, @CGUID+523, 1167), -- Shadowmoon Grunt -> Shadowmoon Grunt
+(@CGUID+523, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+271, @CGUID+139, 1167), -- Shadowmoon Blood Mage -> Shadowmoon Champion
+(@CGUID+272, @CGUID+139, 1167), -- Shadowmoon Blood Mage -> Shadowmoon Champion
+(@CGUID+147, @CGUID+139, 1167), -- Shadowmoon Deathshaper -> Shadowmoon Champion
+(@CGUID+148, @CGUID+139, 1167), -- Shadowmoon Deathshaper -> Shadowmoon Champion
+(@CGUID+139, @CGUID+105, 1024), -- Shadowmoon Champion -> Teron Gorefiend
+(@CGUID+273, @CGUID+290, 1167), -- Shadowmoon Blood Mage -> Wrathbone Flayer
+(@CGUID+274, @CGUID+290, 1167), -- Shadowmoon Blood Mage -> Wrathbone Flayer
+(@CGUID+149, @CGUID+290, 1167), -- Shadowmoon Deathshaper -> Wrathbone Flayer
+(@CGUID+150, @CGUID+290, 1167), -- Shadowmoon Deathshaper -> Wrathbone Flayer
+(@CGUID+290, @CGUID+105, 1024), -- Wrathbone Flayer -> Teron Gorefiend
+(@CGUID+527, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+517, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+533, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+524, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+528, @CGUID+105, 1024), -- Shadowmoon Grunt -> Teron Gorefiend
+(@CGUID+539, @CGUID+540, 1167), -- Hand of Gorefiend -> Hand of Gorefiend
+(@CGUID+540, @CGUID+105, 1024), -- Hand of Gorefiend -> Teron Gorefiend
+(@CGUID+538, @CGUID+537, 1167), -- Hand of Gorefiend -> Hand of Gorefiend
+(@CGUID+537, @CGUID+105, 1024), -- Hand of Gorefiend -> Teron Gorefiend
 -- Teron Gorefiend
 (@CGUID+437, @CGUID+436, 1679), -- Shadowmoon Houndmaster -> Shadowmoon Houndmaster
 (@CGUID+436, @CGUID+105, 1024), -- Shadowmoon Houndmaster -> Teron Gorefiend
@@ -2158,11 +2226,13 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+584, @CGUID+591, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
 (@CGUID+577, @CGUID+591, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
 (@CGUID+578, @CGUID+591, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
+(@CGUID+591, @CGUID+284, 1024), -- Bonechewer Shield Disciple -> Gurtogg Bloodboil
 (@CGUID+590, @CGUID+589, 1167), -- Bonechewer Shield Disciple -> Bonechewer Shield Disciple
 (@CGUID+582, @CGUID+589, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
 (@CGUID+581, @CGUID+589, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
 (@CGUID+597, @CGUID+589, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
 (@CGUID+598, @CGUID+589, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
+(@CGUID+589, @CGUID+284, 1024), -- Bonechewer Shield Disciple -> Gurtogg Bloodboil
 (@CGUID+587, @CGUID+588, 1167), -- Bonechewer Shield Disciple -> Bonechewer Shield Disciple
 (@CGUID+595, @CGUID+588, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
 (@CGUID+596, @CGUID+588, 1167), -- Bonechewer Blood Prophet -> Bonechewer Shield Disciple
@@ -2170,6 +2240,10 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+579, @CGUID+588, 1167), -- Bonechewer Blade Fury -> Bonechewer Shield Disciple
 (@CGUID+572, @CGUID+588, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
 (@CGUID+573, @CGUID+588, 1167), -- Mutant War Hound -> Bonechewer Shield Disciple
+(@CGUID+588, @CGUID+284, 1024), -- Bonechewer Shield Disciple -> Gurtogg Bloodboil
+(@CGUID+543, @CGUID+284, 1024), -- Bonechewer Behemoth -> Gurtogg Bloodboil
+(@CGUID+544, @CGUID+284, 1024), -- Bonechewer Behemoth -> Gurtogg Bloodboil
+(@CGUID+545, @CGUID+284, 1024), -- Bonechewer Behemoth -> Gurtogg Bloodboil
 -- Gurtogg Bloodboil
 (@CGUID+548, @CGUID+551, 1165), -- Bonechewer Brawler -> Bonechewer Spectator 
 (@CGUID+603, @CGUID+551, 1165), -- Bonechewer Combatant -> Bonechewer Spectator
