@@ -404,8 +404,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+242, 6, -270.731, -85.5789, 8.07381, 2.95182, 0, 0),
 (@CGUID+247, 1, -90.6977, -92.3565, -1.04497, 0.715585, 12000, 1863305),
 (@CGUID+249, 1, -35.078, -81.0337, -1.04491, 5.18363, 10000, 1863502),
-(@CGUID+251, 1, -83.71878, 16.43961, -1.125295, 2.744005, 15000, 0),
-(@CGUID+251, 2, -92.58539, 6.675378, -1.128189, 2.902561, 15000, 0),
 (@CGUID+266, 1, -158.7901, -97.85062, 8.076064, 100, 0, 0),
 (@CGUID+266, 2, -124.1491, -145.636, 3.745104, 100, 0, 0),
 (@CGUID+266, 3, -72.33717, -125.9064, 1.172768, 100, 0, 0),
@@ -481,8 +479,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+214, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
 (@CGUID+215, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
 (@CGUID+216, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+217, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+251, 0, 0, 1, 16, 69, 0, NULL); -- creature_spawn_entry
+(@CGUID+217, 0, 0, 1, 16, 0, 0, NULL); -- Tortured Skeleton
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (18631, 0, 0, 1, 16, 0, 0, '8876'), -- Cabal Cultist
@@ -675,8 +672,7 @@ INSERT INTO creature_spawn_entry (guid, entry) VALUES
 (@CGUID+235, 18830), (@CGUID+235, 18631), -- Cabal Fanatic, Cabal Cultist
 (@CGUID+236, 18830), (@CGUID+236, 18631), -- Cabal Fanatic, Cabal Cultist
 (@CGUID+248, 18641), (@CGUID+248, 18642), (@CGUID+248, 18663), -- Cabal Familiar, Fel Guardhound, Maiden of Discipline
-(@CGUID+250, 18641), (@CGUID+250, 18642), (@CGUID+250, 18663), -- Cabal Familiar, Fel Guardhound, Maiden of Discipline
-(@CGUID+251, 18633), (@CGUID+251, 18635); -- Cabal Acolyte, Cabal Deathsworn
+(@CGUID+250, 18641), (@CGUID+250, 18642), (@CGUID+250, 18663); -- Cabal Familiar, Fel Guardhound, Maiden of Discipline
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 14881, 555, 3, -20.8387, -7.04335, -1.12801, 6.15025, 900, 900, 5, 0, 0, 1), -- Spider
@@ -929,7 +925,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+248, 0, 555, 3, -90.93845, -90.86178, -1.044974, 0.3665192, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+249, 18640, 555, 3, -35.07804, -81.03367, -1.044909, 5.183628, 7200, 7200, 0, 0, 0, 0), -- Cabal Warlock
 (@CGUID+250, 0, 555, 3, -33.50152, -80.52749, -1.044897, 4.921828, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
-(@CGUID+251, 0, 555, 3, -83.71878, 16.43961, -1.125295, 2.744005, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+-- (@CGUID+251, PLEASE RE-USE
 (@CGUID+252, 14881, 555, 3, -122.0181, -8.897035, 8.156389, 2.569682, 900, 900, 2, 0, 0, 1), -- Spider
 (@CGUID+253, 14881, 555, 3, -29.05714, -46.55113, -1.128195, 5.245015, 900, 900, 0, 0, 0, 0), -- Spider
 (@CGUID+254, 14881, 555, 3, -96.70205, -8.718884, -1.1282, 1.507909, 900, 900, 2, 0, 0, 1), -- Spider
