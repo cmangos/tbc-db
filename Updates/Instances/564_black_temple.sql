@@ -2032,48 +2032,61 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+419, @CGUID+443, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
 (@CGUID+420, @CGUID+443, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
 (@CGUID+443, @CGUID+198, 1024), -- Bonechewer Taskmaster -> Supremus
+
 (@CGUID+460, @CGUID+381, 1167), -- Dragonmaw Sky Stalker -> Dragonmaw Wyrmcaller
 (@CGUID+783, @CGUID+381, 1167), -- Dragonmaw Sky Stalker -> Dragonmaw Wyrmcaller
 (@CGUID+382, @CGUID+381, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
 (@CGUID+381, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
-(@CGUID+384, @CGUID+383, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
-(@CGUID+383, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
-(@CGUID+386, @CGUID+385, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
-(@CGUID+385, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
+
 (@CGUID+782, @CGUID+388, 1167), -- Dragonmaw Sky Stalker -> Dragonmaw Wyrmcaller
 (@CGUID+781, @CGUID+388, 1167), -- Dragonmaw Sky Stalker -> Dragonmaw Wyrmcaller
 (@CGUID+387, @CGUID+388, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
 (@CGUID+388, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
+
+(@CGUID+797, @CGUID+794, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+384, @CGUID+383, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
+(@CGUID+383, @CGUID+794, 1167), -- Dragonmaw Wyrmcaller -> Dragonmaw Sky Stalker
+(@CGUID+794, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+
 (@CGUID+612, @CGUID+449, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
-(@CGUID+611, @CGUID+452, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+379, @CGUID+449, 1167), -- Dragonmaw Wyrmcaller -> Dragonmaw Sky Stalker
+(@CGUID+449, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+
 (@CGUID+607, @CGUID+453, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+390, @CGUID+453, 1167), -- Dragonmaw Wyrmcaller -> Dragonmaw Sky Stalker
+(@CGUID+453, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+
+(@CGUID+611, @CGUID+452, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+389, @CGUID+452, 1167), -- Dragonmaw Wyrmcaller -> Dragonmaw Sky Stalker
+(@CGUID+452, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+
+(@CGUID+795, @CGUID+792, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+380, @CGUID+792, 1167), -- Dragonmaw Wyrmcaller -> Dragonmaw Sky Stalker
+(@CGUID+792, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+
+(@CGUID+796, @CGUID+793, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
+(@CGUID+386, @CGUID+385, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller
+(@CGUID+385, @CGUID+793, 1167), -- Dragonmaw Wyrmcaller -> Dragonmaw Sky Stalker
+(@CGUID+793, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+
+-- high flyers (should never aggro, unselectable)
+
 (@CGUID+784, @CGUID+457, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
 (@CGUID+785, @CGUID+457, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+457, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+
 (@CGUID+786, @CGUID+458, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
 (@CGUID+787, @CGUID+458, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+458, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+
 (@CGUID+788, @CGUID+462, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
 (@CGUID+789, @CGUID+462, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
+(@CGUID+462, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+
 (@CGUID+790, @CGUID+463, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
 (@CGUID+791, @CGUID+463, 1679), -- Dragonmaw Sky Stalker -> Dragonmaw Sky Stalker
-(@CGUID+795, @CGUID+792, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
-(@CGUID+796, @CGUID+793, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
-(@CGUID+797, @CGUID+794, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
-(@CGUID+449, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+452, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+453, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+457, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+457, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+458, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+458, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+462, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+462, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
 (@CGUID+463, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+463, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+792, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+793, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
-(@CGUID+794, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
--- (@CGUID+389, @CGUID+390, 1679), -- Dragonmaw Wyrmcaller -> Dragonmaw Wyrmcaller not sure
-(@CGUID+390, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
+
 (@CGUID+393, @CGUID+444, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
 (@CGUID+394, @CGUID+444, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
 (@CGUID+395, @CGUID+444, 1167), -- Bonechewer Worker -> Bonechewer Taskmaster
