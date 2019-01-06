@@ -2103,58 +2103,100 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+448, @CGUID+447, 1679), -- Bonechewer Taskmaster -> Bonechewer Taskmaster
 (@CGUID+447, @CGUID+198, 1024), -- Bonechewer Taskmaster -> Supremus
 -- Shade of Akama
-(@CGUID+061, @CGUID+051, 1679), -- Ashtongue Mystic -> Ashtongue Battlelord
-(@CGUID+075, @CGUID+051, 1679), -- Ashtongue Primalist -> Ashtongue Battlelord
-(@CGUID+051, @CGUID+045, 1024), -- Ashtongue Battlelord -> Shade of Akama
-(@CGUID+054, @CGUID+063, 1679), -- Ashtongue Battlelord -> Ashtongue Mystic
-(@CGUID+069, @CGUID+063, 1679), -- Ashtongue Stormcaller -> Ashtongue Mystic
-(@CGUID+063, @CGUID+045, 1024), -- Ashtongue Mystic -> Shade of Akama
-(@CGUID+073, @CGUID+072, 1679), -- Ashtongue Primalist -> Ashtongue Primalist
-(@CGUID+072, @CGUID+045, 1024), -- Ashtongue Primalist -> Shade of Akama
-(@CGUID+058, @CGUID+048, 1679), -- Ashtongue Mystic -> Ashtongue Battlelord
-(@CGUID+071, @CGUID+048, 1679), -- Ashtongue Primalist -> Ashtongue Battlelord
-(@CGUID+080, @CGUID+048, 1679), -- Ashtongue Feral Spirit -> Ashtongue Battlelord
-(@CGUID+048, @CGUID+045, 1024), -- Ashtongue Battlelord -> Shade of Akama
-(@CGUID+060, @CGUID+050, 1679), -- Ashtongue Mystic -> Ashtongue Battlelord
-(@CGUID+074, @CGUID+050, 1679), -- Ashtongue Primalist -> Ashtongue Battlelord
-(@CGUID+081, @CGUID+050, 1679), -- Ashtongue Feral Spirit -> Ashtongue Battlelord
-(@CGUID+050, @CGUID+045, 1024), -- Ashtongue Battlelord -> Shade of Akama
-(@CGUID+086, @CGUID+091, 1679), -- Illidari Defiler -> Illidari Nightlord
-(@CGUID+098, @CGUID+091, 1679), -- Illidari Boneslicer -> Illidari Nightlord
-(@CGUID+091, @CGUID+045, 1024), -- Illidari Nightlord -> Shade of Akama
-(@CGUID+089, @CGUID+092, 1679), -- Illidari Defiler -> Illidari Nightlord
-(@CGUID+102, @CGUID+092, 1679), -- Illidari Boneslicer -> Illidari Nightlord
-(@CGUID+092, @CGUID+045, 1024), -- Illidari Nightlord -> Shade of Akama
-(@CGUID+084, @CGUID+613, 1167), -- Illidari Defiler -> Illidari Centurion
-(@CGUID+094, @CGUID+613, 1167), -- Illidari Boneslicer -> Illidari Centurion
-(@CGUID+095, @CGUID+613, 1167), -- Illidari Boneslicer -> Illidari Centurion
+-- The Refectory
+(@CGUID+73, @CGUID+72, 1679), -- Ashtongue Primalist -> Ashtongue Primalist
+(@CGUID+72, @CGUID+45, 1024), -- Ashtongue Primalist -> Shade of Akama
+(@CGUID+58, @CGUID+48, 1679), -- Ashtongue Mystic -> Ashtongue Battlelord
+(@CGUID+71, @CGUID+48, 1679), -- Ashtongue Primalist -> Ashtongue Battlelord
+(@CGUID+80, @CGUID+48, 1679), -- Ashtongue Feral Spirit -> Ashtongue Battlelord
+(@CGUID+48, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
+(@CGUID+60, @CGUID+50, 1679), -- Ashtongue Mystic -> Ashtongue Battlelord
+(@CGUID+74, @CGUID+50, 1679), -- Ashtongue Primalist -> Ashtongue Battlelord
+(@CGUID+81, @CGUID+50, 1679), -- Ashtongue Feral Spirit -> Ashtongue Battlelord
+(@CGUID+50, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
+(@CGUID+66, @CGUID+49, 1167), -- Ashtongue Stormcaller -> Ashtongue Battlelord
+(@CGUID+67, @CGUID+49, 1167), -- Ashtongue Stormcaller -> Ashtongue Battlelord
+(@CGUID+59, @CGUID+49, 1167), -- Ashtongue Mystic -> Ashtongue Battlelord
+(@CGUID+49, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
+(@CGUID+47, @CGUID+46, 1167), -- Ashtongue Battlelord -> Ashtongue Battlelord
+(@CGUID+65, @CGUID+46, 1167), -- Ashtongue Stormcaller -> Ashtongue Battlelord
+(@CGUID+57, @CGUID+46, 1167), -- Ashtongue Mystic -> Ashtongue Battlelord
+(@CGUID+46, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
+(@CGUID+719, @CGUID+45, 1024), -- Ashtongue Channeler -> Shade of Akama
+(@CGUID+720, @CGUID+45, 1024), -- Ashtongue Channeler -> Shade of Akama
+(@CGUID+721, @CGUID+45, 1024), -- Ashtongue Channeler -> Shade of Akama
+(@CGUID+722, @CGUID+45, 1024), -- Ashtongue Channeler -> Shade of Akama
+(@CGUID+723, @CGUID+45, 1024), -- Ashtongue Channeler -> Shade of Akama
+(@CGUID+724, @CGUID+45, 1024), -- Ashtongue Channeler -> Shade of Akama
+-- Sanctuary of Shadows
+(@CGUID+61, @CGUID+51, 1679), -- Ashtongue Mystic -> Ashtongue Battlelord
+(@CGUID+75, @CGUID+51, 1679), -- Ashtongue Primalist -> Ashtongue Battlelord
+(@CGUID+51, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
+(@CGUID+54, @CGUID+63, 1679), -- Ashtongue Battlelord -> Ashtongue Mystic
+(@CGUID+69, @CGUID+63, 1679), -- Ashtongue Stormcaller -> Ashtongue Mystic
+(@CGUID+63, @CGUID+45, 1024), -- Ashtongue Mystic -> Shade of Akama
+(@CGUID+86, @CGUID+91, 1679), -- Illidari Defiler -> Illidari Nightlord
+(@CGUID+98, @CGUID+91, 1679), -- Illidari Boneslicer -> Illidari Nightlord
+(@CGUID+91, @CGUID+45, 1024), -- Illidari Nightlord -> Shade of Akama
+(@CGUID+89, @CGUID+92, 1679), -- Illidari Defiler -> Illidari Nightlord
+(@CGUID+102, @CGUID+92, 1679), -- Illidari Boneslicer -> Illidari Nightlord
+(@CGUID+92, @CGUID+45, 1024), -- Illidari Nightlord -> Shade of Akama
+(@CGUID+84, @CGUID+613, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+94, @CGUID+613, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+95, @CGUID+613, 1167), -- Illidari Boneslicer -> Illidari Centurion
 (@CGUID+614, @CGUID+613, 1167), -- Illidari Centurion -> Illidari Centurion
 (@CGUID+623, @CGUID+613, 1167), -- Illidari Heartseeker -> Illidari Centurion
-(@CGUID+613, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
-(@CGUID+085, @CGUID+615, 1167), -- Illidari Defiler -> Illidari Centurion
-(@CGUID+096, @CGUID+615, 1167), -- Illidari Boneslicer -> Illidari Centurion
-(@CGUID+097, @CGUID+615, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+613, @CGUID+45, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+85, @CGUID+615, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+96, @CGUID+615, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+97, @CGUID+615, 1167), -- Illidari Boneslicer -> Illidari Centurion
 (@CGUID+616, @CGUID+615, 1167), -- Illidari Centurion -> Illidari Centurion
 (@CGUID+624, @CGUID+615, 1167), -- Illidari Heartseeker -> Illidari Centurion
-(@CGUID+615, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
-(@CGUID+087, @CGUID+617, 1167), -- Illidari Defiler -> Illidari Centurion
-(@CGUID+099, @CGUID+617, 1167), -- Illidari Boneslicer -> Illidari Centurion
+(@CGUID+615, @CGUID+45, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+87, @CGUID+617, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+99, @CGUID+617, 1167), -- Illidari Boneslicer -> Illidari Centurion
 (@CGUID+100, @CGUID+617, 1167), -- Illidari Boneslicer -> Illidari Centurion
 (@CGUID+618, @CGUID+617, 1167), -- Illidari Centurion -> Illidari Centurion
 (@CGUID+625, @CGUID+617, 1167), -- Illidari Heartseeker -> Illidari Centurion
-(@CGUID+617, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
-(@CGUID+088, @CGUID+619, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+617, @CGUID+45, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+88, @CGUID+619, 1167), -- Illidari Defiler -> Illidari Centurion
 (@CGUID+101, @CGUID+619, 1167), -- Illidari Boneslicer -> Illidari Centurion
 (@CGUID+620, @CGUID+619, 1167), -- Illidari Centurion -> Illidari Centurion
 (@CGUID+626, @CGUID+619, 1167), -- Illidari Heartseeker -> Illidari Centurion
 (@CGUID+627, @CGUID+619, 1167), -- Illidari Heartseeker -> Illidari Centurion
-(@CGUID+619, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
-(@CGUID+090, @CGUID+621, 1167), -- Illidari Defiler -> Illidari Centurion
+(@CGUID+619, @CGUID+45, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+90, @CGUID+621, 1167), -- Illidari Defiler -> Illidari Centurion
 (@CGUID+103, @CGUID+621, 1167), -- Illidari Boneslicer -> Illidari Centurion
 (@CGUID+104, @CGUID+621, 1167), -- Illidari Boneslicer -> Illidari Centurion
 (@CGUID+622, @CGUID+621, 1167), -- Illidari Centurion -> Illidari Centurion
 (@CGUID+628, @CGUID+621, 1167), -- Illidari Heartseeker -> Illidari Centurion
-(@CGUID+621, @CGUID+045, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+621, @CGUID+45, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+629, @CGUID+630, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
+(@CGUID+630, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
+(@CGUID+772, @CGUID+773, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
+(@CGUID+773, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
+(@CGUID+774, @CGUID+775, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
+(@CGUID+775, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
+(@CGUID+776, @CGUID+777, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
+(@CGUID+777, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
+(@CGUID+778, @CGUID+779, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
+(@CGUID+779, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
+(@CGUID+55, @CGUID+56, 1167), -- Ashtongue Battlelord -> Ashtongue Battlelord
+(@CGUID+77, @CGUID+56, 1167), -- Ashtongue Primalist -> Ashtongue Battlelord
+(@CGUID+83, @CGUID+56, 1167), -- Ashtongue Feral Spirit -> Ashtongue Battlelord
+(@CGUID+70, @CGUID+56, 1167), -- Ashtongue Stormcaller -> Ashtongue Battlelord
+(@CGUID+64, @CGUID+56, 1167), -- Ashtongue Mystic -> Ashtongue Battlelord
+(@CGUID+79, @CGUID+56, 1167), -- Storm Fury -> Ashtongue Battlelord
+(@CGUID+771, @CGUID+56, 1167), -- Ashtongue Stalker -> Ashtongue Battlelord
+(@CGUID+56, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
+(@CGUID+52, @CGUID+53, 1167), -- Ashtongue Battlelord -> Ashtongue Battlelord
+(@CGUID+76, @CGUID+53, 1167), -- Ashtongue Primalist -> Ashtongue Battlelord
+(@CGUID+82, @CGUID+53, 1167), -- Ashtongue Feral Spirit -> Ashtongue Battlelord
+(@CGUID+68, @CGUID+53, 1167), -- Ashtongue Stormcaller -> Ashtongue Battlelord
+(@CGUID+62, @CGUID+53, 1167), -- Ashtongue Mystic -> Ashtongue Battlelord
+(@CGUID+78, @CGUID+53, 1167), -- Storm Fury -> Ashtongue Battlelord
+(@CGUID+780, @CGUID+53, 1167), -- Ashtongue Stalker -> Ashtongue Battlelord
+(@CGUID+53, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
 -- Gorefiend's Vigil
 (@CGUID+138, @CGUID+143, 1167), -- Shadowmoon Champion -> Shadowmoon Champion
 (@CGUID+131, @CGUID+143, 1167), -- Shadowmoon Reaver -> Shadowmoon Champion
