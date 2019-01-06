@@ -1,11 +1,10 @@
 /* DBScriptData
-DBName: Auchindoun - Sethekk Halls (SH)
+DBName: Auchindoun - Sethekk Halls
 DBScriptName: instance_sethekk_halls
-DB%Complete: 85
+DB%Complete: 90
 DBComment:
-* Recheck ACID
-* Figure out different Group Compositions related to Sethekk Shaman, Time-Lost Shadowmage, Sethekk Prophet and Time-Lost Scryer starting the room befor Anzu
-* Resolve Issue with Core Limitation for Sethekk Spirit 18703,20700 related to UNIT_FLAG_NOT_SELECTABLE 33554432 making them unable to attack - Creature.cpp CanInitiateAttack()
+* Time-Lost Controller 18327 - Summon Charming Totem 20343 (s.32764) AI not working
+* Check if quest=10097 is required for gossip option to free Lakka (gossip_menu_option 7868, should be condition "(???, 31, 252, 0, 'Dungeon Encounter (Darkweaver Syth) ID 252 Completed')"?
 EndDBScriptData */
 
 SET @CGUID := 5560000; -- creatures
@@ -383,39 +382,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+144, 17, -86.5034, 284.787, 63.0289, 0, 0, 0),
 (@CGUID+144, 18, -97.8593, 278.945, 26.2094, 0, 0, 0),
 (@CGUID+144, 19, -83.9472, 285.452, 63.0513, 0, 0, 0),
-(@CGUID+144, 20, -93.4871, 275.608, 26.8408, 0, 0, 0),
-(@CGUID+145, 1, -244.343, 329.097, 27.018, 0, 0, 0),
-(@CGUID+145, 2, -234.267, 324.206, 26.9965, 0, 0, 0),
-(@CGUID+145, 3, -225.315, 324.967, 27.1854, 0, 0, 0),
-(@CGUID+145, 4, -233.727, 323.955, 26.9942, 0, 0, 0),
-(@CGUID+146, 1, -211.275, 331.613, 26.6495, 0, 0, 0),
-(@CGUID+146, 2, -215.402, 342.433, 26.7657, 0, 0, 0),
-(@CGUID+146, 3, -199.718, 323.537, 26.4926, 0, 0, 0),
-(@CGUID+146, 4, -211.222, 331.704, 26.6486, 0, 0, 0),
-(@CGUID+146, 5, -214.794, 336.408, 26.7295, 0, 0, 0),
-(@CGUID+146, 6, -215.402, 342.433, 26.7657, 0, 0, 0),
-(@CGUID+147, 1, -189.365, 287.014, 26.5427, 0, 0, 0),
-(@CGUID+147, 2, -167.246, 288.853, 26.721, 0, 0, 0),
-(@CGUID+148, 1, -115.818, 272.955, 26.9893, 0, 0, 0),
-(@CGUID+148, 2, -125.805, 273.441, 27.4341, 0, 0, 0),
-(@CGUID+148, 3, -115.582, 272.844, 26.9539, 0, 0, 0),
-(@CGUID+148, 4, -108.995, 269.765, 26.3045, 0, 0, 0),
-(@CGUID+149, 1, -100.451, 296.802, 26.4832, 0, 0, 0),
-(@CGUID+149, 2, -107.547, 296.552, 26.5721, 0, 0, 0),
-(@CGUID+149, 3, -99.7536, 296.632, 26.4833, 0, 0, 0),
-(@CGUID+149, 4, -94.5788, 308.955, 25.7607, 0, 0, 0),
-(@CGUID+150, 1, -86.8076, 276.025, 26.6743, 0, 0, 0),
-(@CGUID+150, 2, -81.4167, 277.535, 26.7617, 0, 0, 0),
-(@CGUID+150, 3, -86.5522, 275.758, 26.6953, 0, 0, 0),
-(@CGUID+150, 4, -90.77, 269.08, 26.8831, 0, 0, 0),
-(@CGUID+151, 1, -74.8872, 314.959, 26.8931, 0, 0, 0),
-(@CGUID+151, 2, -66.5723, 309.872, 26.5173, 0, 0, 0),
-(@CGUID+151, 3, -61.8085, 298.518, 26.3884, 0, 0, 0),
-(@CGUID+151, 4, -65.9499, 309.213, 26.483, 0, 0, 0),
-(@CGUID+152, 1, -47.0272, 291.707, 26.803, 0, 0, 0),
-(@CGUID+152, 2, -61.6514, 289.355, 26.8504, 0, 0, 0),
-(@CGUID+152, 3, -64.575, 282.009, 26.8059, 0, 0, 0),
-(@CGUID+152, 4, -61.288, 289.461, 26.8628, 0, 0, 0);
+(@CGUID+144, 20, -93.4871, 275.608, 26.8408, 0, 0, 0);
 
 DELETE FROM creature_movement_template WHERE entry IN (18956);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
@@ -464,16 +431,16 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+3, @CGUID+95, 1167), -- Sethekk Initiate -> Avian Darkhawk
 (@CGUID+68, @CGUID+95, 1167), -- Time-Lost Controller -> Avian Darkhawk
 (@CGUID+49, @CGUID+48, 1167), -- Sethekk Guard -> Sethekk Guard
-(@CGUID+80, @CGUID+72, 1167), -- Sethekk Oracle -> Time-Lost Controller
-(@CGUID+10, @CGUID+72, 1167), -- Sethekk Initiate -> Time-Lost Controller
-(@CGUID+11, @CGUID+76, 1167), -- Sethekk Initiate -> Time-Lost Controller
-(@CGUID+83, @CGUID+76, 1167), -- Sethekk Oracle -> Time-Lost Controller
-(@CGUID+73, @CGUID+97, 1167), -- Time-Lost Controller -> Avian Darkhawk
-(@CGUID+79, @CGUID+97, 1167), -- Sethekk Oracle -> Avian Darkhawk
+(@CGUID+80, @CGUID+72, 1167), -- Sethekk Oracle -> creature_spawn_entry
+(@CGUID+10, @CGUID+72, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+11, @CGUID+76, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+83, @CGUID+76, 1167), -- Sethekk Oracle -> creature_spawn_entry
+(@CGUID+73, @CGUID+97, 1167), -- creature_spawn_entry -> Avian Darkhawk
+(@CGUID+79, @CGUID+97, 1167), -- creature_spawn_entry -> Avian Darkhawk
 (@CGUID+82, @CGUID+97, 1167), -- Sethekk Oracle -> Avian Darkhawk
 (@CGUID+51, @CGUID+50, 1167), -- Sethekk Guard -> Sethekk Guard
-(@CGUID+75, @CGUID+7, 1167), -- Time-Lost Controller -> Sethekk Initiate
-(@CGUID+81, @CGUID+7, 1167), -- Sethekk Oracle -> Sethekk Initiate
+(@CGUID+75, @CGUID+7, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+81, @CGUID+7, 1167), -- Sethekk Oracle -> creature_spawn_entry
 (@CGUID+41, @CGUID+40, 1167), -- Sethekk Guard -> Sethekk Guard
 (@CGUID+34, @CGUID+33, 1167), -- Sethekk Ravenguard -> Sethekk Ravenguard
 (@CGUID+111, @CGUID+113, 1167), -- Avian Ripper -> Avian Ripper
@@ -481,11 +448,11 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+114, @CGUID+113, 1167), -- Avian Ripper -> Avian Ripper
 (@CGUID+115, @CGUID+113, 1167), -- Avian Ripper -> Avian Ripper
 (@CGUID+8, @CGUID+14, 1167), -- Sethekk Initiate -> Time-Lost Scryer
-(@CGUID+77, @CGUID+14, 1167), -- Time-Lost Controller -> Time-Lost Scryer
-(@CGUID+84, @CGUID+14, 1167), -- Sethekk Oracle -> Time-Lost Scryer
-(@CGUID+74, @CGUID+12, 1167), -- Time-Lost Controller -> Sethekk Initiate
-(@CGUID+78, @CGUID+12, 1167), -- Time-Lost Controller -> Sethekk Initiate
-(@CGUID+85, @CGUID+12, 1167), -- Sethekk Oracle -> Sethekk Initiate
+(@CGUID+77, @CGUID+14, 1167), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+84, @CGUID+14, 1167), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+74, @CGUID+12, 1167), -- creature_spawn_entry -> Sethekk Initiate
+(@CGUID+78, @CGUID+12, 1167), -- creature_spawn_entry -> Sethekk Initiate
+(@CGUID+85, @CGUID+12, 1167), -- creature_spawn_entry -> Sethekk Initiate
 (@CGUID+38, @CGUID+35, 1167), -- Sethekk Ravenguard -> Sethekk Ravenguard
 (@CGUID+100, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
 (@CGUID+101, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
@@ -496,14 +463,12 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+120, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
 (@CGUID+121, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
 (@CGUID+122, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+28, @CGUID+15, 1167), -- Sethekk Talon Lord -> Time-Lost Scryer
-(@CGUID+54, @CGUID+15, 1167), -- Sethekk Prophet -> Time-Lost Scryer
+(@CGUID+28, @CGUID+15, 1167), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+54, @CGUID+15, 1167), -- creature_spawn_entry -> Time-Lost Scryer
 (@CGUID+56, @CGUID+15, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+145, @CGUID+15, 1167), -- Avian Warhawk -> Time-Lost Scryer
-(@CGUID+55, @CGUID+19, 1167), -- Sethekk Prophet -> Time-Lost Scryer
+(@CGUID+55, @CGUID+19, 1167), -- creature_spawn_entry -> Time-Lost Scryer
 (@CGUID+57, @CGUID+19, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+146, @CGUID+19, 1167), -- Sethekk Talon Lord -> Time-Lost Scryer
-(@CGUID+125, @CGUID+19, 1167), -- Avian Warhawk -> Time-Lost Scryer
+(@CGUID+125, @CGUID+19, 1167), -- creature_spawn_entry -> Time-Lost Scryer
 (@CGUID+103, @CGUID+105, 1167), -- Avian Ripper -> Avian Ripper
 (@CGUID+104, @CGUID+105, 1167), -- Avian Ripper -> Avian Ripper
 (@CGUID+106, @CGUID+105, 1167), -- Avian Ripper -> Avian Ripper
@@ -512,31 +477,25 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+109, @CGUID+124, 1167), -- Avian Ripper -> Avian Ripper
 (@CGUID+110, @CGUID+124, 1167), -- Avian Ripper -> Avian Ripper
 (@CGUID+123, @CGUID+124, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+126, @CGUID+20, 1167), -- Time-Lost Scryer -> Time-Lost Scryer
-(@CGUID+147, @CGUID+20, 1167), -- Sethekk Talon Lord -> Time-Lost Scryer
+(@CGUID+126, @CGUID+20, 1167), -- creature_spawn_entry -> Time-Lost Scryer
 (@CGUID+60, @CGUID+20, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+66, @CGUID+20, 1167), -- Sethekk Shaman -> Time-Lost Scryer
+(@CGUID+66, @CGUID+20, 1167), -- creature_spawn_entry -> Time-Lost Scryer
 (@CGUID+37, @CGUID+36, 1167), -- Sethekk Ravenguard -> Sethekk Ravenguard
-(@CGUID+127, @CGUID+16, 1167), -- Avian Warhawk -> Time-Lost Scryer
-(@CGUID+23, @CGUID+16, 1167), -- Time-Lost Shadowmage -> Time-Lost Scryer
-(@CGUID+58, @CGUID+16, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+148, @CGUID+16, 1167), -- Sethekk Talon Lord -> Time-Lost Scryer
-(@CGUID+30, @CGUID+21, 1167), -- Sethekk Talon Lord -> Time-Lost Scryer
-(@CGUID+25, @CGUID+21, 1167), -- Sethekk Prophet -> Time-Lost Scryer
+(@CGUID+127, @CGUID+16, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+23, @CGUID+16, 1167), -- Time-Lost Shadowmage -> creature_spawn_entry
+(@CGUID+58, @CGUID+16, 1167), -- Sethekk Prophet -> creature_spawn_entry
+(@CGUID+30, @CGUID+21, 1167), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+25, @CGUID+21, 1167), -- creature_spawn_entry -> Time-Lost Scryer
 (@CGUID+53, @CGUID+21, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+149, @CGUID+21, 1167), -- Avian Warhawk -> Time-Lost Scryer
-(@CGUID+31, @CGUID+17, 1167), -- Sethekk Talon Lord -> Time-Lost Scryer
-(@CGUID+22, @CGUID+17, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+61, @CGUID+17, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+150, @CGUID+17, 1167), -- Sethekk Talon Lord -> Time-Lost Scryer
-(@CGUID+26, @CGUID+62, 1167), -- Time-Lost Shadowmage -> Sethekk Prophet
-(@CGUID+128, @CGUID+62, 1167), -- Avian Warhawk -> Sethekk Prophet
-(@CGUID+63, @CGUID+62, 1167), -- Sethekk Prophet -> Sethekk Prophet
-(@CGUID+151, @CGUID+62, 1167), -- Sethekk Talon Lord -> Sethekk Prophet
-(@CGUID+32, @CGUID+18, 1167), -- Sethekk Talon Lord -> Time-Lost Scryer
-(@CGUID+27, @CGUID+18, 1167), -- Time-Lost Shadowmage -> Time-Lost Scryer
-(@CGUID+64, @CGUID+18, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+152, @CGUID+18, 1167), -- Avian Warhawk -> Time-Lost Scryer
+(@CGUID+31, @CGUID+17, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+22, @CGUID+17, 1167), -- Sethekk Prophet -> creature_spawn_entry
+(@CGUID+61, @CGUID+17, 1167), -- Sethekk Prophet -> creature_spawn_entry
+(@CGUID+26, @CGUID+62, 1167), -- Time-Lost Shadowmage -> creature_spawn_entry
+(@CGUID+63, @CGUID+62, 1167), -- Sethekk Prophet -> creature_spawn_entry
+(@CGUID+128, @CGUID+62, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+32, @CGUID+18, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+27, @CGUID+18, 1167), -- Time-Lost Shadowmage -> creature_spawn_entry
+(@CGUID+64, @CGUID+18, 1167), -- Sethekk Prophet -> creature_spawn_entry
 (@CGUID+24, @CGUID+129, 1167), -- Time-Lost Shadowmage -> Avian Warhawk
 (@CGUID+29, @CGUID+129, 1167), -- Sethekk Talon Lord -> Avian Warhawk
 (@CGUID+59, @CGUID+129, 1167), -- Sethekk Prophet -> Avian Warhawk
@@ -545,95 +504,127 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
+INSERT INTO creature_spawn_entry (guid, entry) VALUES
+(@CGUID+7, 18318), (@CGUID+7, 18327), -- Sethekk Initiate, Time-Lost Controller
+(@CGUID+10, 18318), (@CGUID+10, 18327), -- Sethekk Initiate, Time-Lost Controller
+(@CGUID+11, 18318), (@CGUID+11, 18327), -- Sethekk Initiate, Time-Lost Controller
+(@CGUID+16, 18319), (@CGUID+16, 18325), (@CGUID+16, 18326), -- Time-Lost Scryer, Sethekk Prophet, Sethekk Shaman
+(@CGUID+17, 18319), (@CGUID+17, 18320), -- Time-Lost Scryer, Time-Lost Shadowmage
+(@CGUID+18, 18319), (@CGUID+18, 18325), (@CGUID+18, 18326), -- Time-Lost Scryer, Sethekk Prophet, Sethekk Shaman
+(@CGUID+22, 18319), (@CGUID+22, 18325), (@CGUID+22, 18326), -- Time-Lost Scryer, Sethekk Prophet, Sethekk Shaman
+(@CGUID+25, 18319), (@CGUID+25, 18325), (@CGUID+25, 18326), -- Time-Lost Scryer, Sethekk Prophet, Sethekk Shaman
+(@CGUID+28, 18321), (@CGUID+28, 21904), -- Sethekk Talon Lord, Avian Warhawk
+(@CGUID+30, 18321), (@CGUID+30, 21904), -- Sethekk Talon Lord, Avian Warhawk
+(@CGUID+31, 18321), (@CGUID+31, 21904), -- Sethekk Talon Lord, Avian Warhawk
+(@CGUID+32, 18321), (@CGUID+32, 21904), -- Sethekk Talon Lord, Avian Warhawk
+(@CGUID+54, 18325), (@CGUID+54, 18326), -- Sethekk Prophet, Sethekk Shaman
+(@CGUID+55, 18325), (@CGUID+55, 18326), -- Sethekk Prophet, Sethekk Shaman
+(@CGUID+62, 18319), (@CGUID+62, 18325), (@CGUID+62, 18326), -- Time-Lost Scryer, Sethekk Prophet, Sethekk Shaman
+(@CGUID+66, 18325), (@CGUID+66, 18326), -- Sethekk Prophet, Sethekk Shaman
+(@CGUID+72, 18327), (@CGUID+72, 18328), -- Time-Lost Controller, Sethekk Oracle
+(@CGUID+73, 18318), (@CGUID+73, 18327), -- Sethekk Initiate, Time-Lost Controller
+(@CGUID+74, 18327), (@CGUID+74, 18328), -- Time-Lost Controller, Sethekk Oracle
+(@CGUID+75, 18327), (@CGUID+75, 18328), -- Time-Lost Controller, Sethekk Oracle
+(@CGUID+76, 18327), (@CGUID+76, 18328), -- Time-Lost Controller, Sethekk Oracle
+(@CGUID+77, 18327), (@CGUID+77, 18328), -- Time-Lost Controller, Sethekk Oracle
+(@CGUID+78, 18319), (@CGUID+78, 18327), -- Time-Lost Scryer, Time-Lost Controller
+(@CGUID+79, 18327), (@CGUID+79, 18328), -- Time-Lost Controller, Sethekk Oracle
+(@CGUID+84, 18319), (@CGUID+84, 18328), -- Time-Lost Scryer, Sethekk Oracle
+(@CGUID+85, 18319), (@CGUID+85, 18328), -- Time-Lost Scryer, Sethekk Oracle
+(@CGUID+125, 18321), (@CGUID+125, 21904), -- Sethekk Talon Lord, Avian Warhawk
+(@CGUID+126, 18321), (@CGUID+126, 21904), -- Sethekk Talon Lord, Avian Warhawk
+(@CGUID+127, 18321), (@CGUID+127, 21904), -- Sethekk Talon Lord, Avian Warhawk
+(@CGUID+128, 18321), (@CGUID+128, 21904); -- Sethekk Talon Lord, Avian Warhawk
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
-(@CGUID+1, 18318, 556, 3, 28.3451, 76.9916, 0.181705, 2.90441, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
-(@CGUID+2, 18318, 556, 3, 20.1954, 81.116, 0.0234405, 5.5017, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
-(@CGUID+3, 18318, 556, 3, 11.578, 103.391, 0.424489, 0.55369, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
-(@CGUID+4, 18318, 556, 3, 76.0441, 117.134, 0.288058, 5.08544, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
-(@CGUID+5, 18318, 556, 3, 58.9125, 83.4522, 0.141001, 4.08799, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
-(@CGUID+6, 18318, 556, 3, 49.7412, 98.8194, 0.150805, 3.03476, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
-(@CGUID+7, 18318, 556, 3, -65.3326, 166.729, 0.00840977, 2.47795, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
+(@CGUID+1, 18318, 556, 3, 27.66081, 76.76418, 0.2865473, 2.775074, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
+(@CGUID+2, 18318, 556, 3, 20.47257, 81.69563, 0.04849834, 5.51524, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
+(@CGUID+3, 18318, 556, 3, 11.92746, 102.4745, 0.5066513, 0.9599311, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
+(@CGUID+4, 18318, 556, 3, 75.8563, 116.0469, 0.3500043, 5.5676, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
+(@CGUID+5, 18318, 556, 3, 58.49207, 83.40495, 0.2274363, 4.328416, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
+(@CGUID+6, 18318, 556, 3, 50.9244, 98.99221, 0.2341383, 3.106686, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
+(@CGUID+7, 0, 556, 3, -65.7626, 167.7794, 0.09317733, 3.403392, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+8, 18318, 556, 3, -237.177, 160.469, -0.193011, 0.918937, 7200, 7200, 0, 0, 0, 2), -- Sethekk Initiate
 (@CGUID+9, 18318, 556, 3, 43.2081, 44.5756, 0.00649, 4.74067, 7200, 7200, 0, 0, 0, 2), -- Sethekk Initiate
-(@CGUID+10, 18318, 556, 3, -57.3641, 107.647, 0.00721832, 1.17967, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
-(@CGUID+11, 18318, 556, 3, -69.9291, 84.0796, 0.00720328, 2.6578, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
+(@CGUID+10, 0, 556, 3, -58.01656, 107.975, 0.09053233, 1.553343, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+11, 0, 556, 3, -69.13248, 83.74274, 0.09053633, 2.827433, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+12, 18318, 556, 3, -255.693, 189.136, 0.0414217, 4.77051, 7200, 7200, 0, 0, 0, 2), -- Sethekk Initiate
-(@CGUID+13, 18318, 556, 3, 38.2351, 99.2026, 0.150803, 6.1159, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
-(@CGUID+14, 18319, 556, 3, -241.377, 156.957, 0.0613401, 2.23368, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
-(@CGUID+15, 18319, 556, 3, -241.061, 335.814, 27.165, 5.40433, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
-(@CGUID+16, 18319, 556, 3, -121.408, 267.407, 27.1212, 1.32549, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
-(@CGUID+17, 18319, 556, 3, -82.039, 273.266, 26.8079, 3.34189, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
-(@CGUID+18, 18319, 556, 3, -48.8268, 280.532, 26.8482, 2.34443, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
-(@CGUID+19, 18319, 556, 3, -211.249, 344.734, 26.7096, 4.64092, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
-(@CGUID+20, 18319, 556, 3, -171.066, 283.28, 26.622, 2.29729, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
-(@CGUID+21, 18320, 556, 3, -92.966, 315.398, 26.4423, 3.91443, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
-(@CGUID+22, 18325, 556, 3, -86.2376, 266.389, 26.8079, 1.39253, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+23, 18320, 556, 3, -114.047, 267.32, 26.7602, 1.85511, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
-(@CGUID+24, 18320, 556, 3, -10.6373, 281.32, 26.7306, 3.08584, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
-(@CGUID+25, 18325, 556, 3, -100.165, 309.53, 26.3916, 5.54256, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+26, 18320, 556, 3, -66.3568, 315.249, 27.1083, 3.9113, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
-(@CGUID+27, 18320, 556, 3, -59.0407, 281.012, 26.9161, 1.57788, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
-(@CGUID+28, 18321, 556, 3, -233.519, 324.039, 27.0016, 2.93582, 7200, 7200, 0, 0, 0, 2), -- Sethekk Talon Lord
-(@CGUID+29, 18321, 556, 3, -10.8688, 292.38, 26.731, 3.13061, 7200, 7200, 0, 0, 0, 0), -- Sethekk Talon Lord
-(@CGUID+30, 18321, 556, 3, -94.815, 310.075, 25.8588, 3.9757, 7200, 7200, 0, 0, 0, 2), -- Sethekk Talon Lord
-(@CGUID+31, 18321, 556, 3, -91.2837, 268.721, 26.9007, 1.15062, 7200, 7200, 0, 0, 0, 2), -- Sethekk Talon Lord
-(@CGUID+32, 18321, 556, 3, -54.6136, 290.327, 26.8747, 6.19994, 7200, 7200, 0, 0, 0, 2), -- Sethekk Talon Lord
-(@CGUID+33, 18322, 556, 3, -204.519, 176.99, 0.0116269, 0.035346, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
-(@CGUID+34, 18322, 556, 3, -205.563, 168.766, 0.0116269, 6.17873, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
-(@CGUID+35, 18322, 556, 3, -239.009, 211.679, 26.8284, 4.52704, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
-(@CGUID+36, 18322, 556, 3, -141.171, 291.066, 26.7312, 3.14396, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
-(@CGUID+37, 18322, 556, 3, -141.044, 283.336, 26.7312, 2.01299, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
-(@CGUID+38, 18322, 556, 3, -246.056, 211.557, 26.7655, 4.59694, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
+(@CGUID+13, 18318, 556, 3, 36.52587, 99.33034, 0.2341393, 6.265732, 7200, 7200, 0, 0, 0, 0), -- Sethekk Initiate
+(@CGUID+14, 18319, 556, 3, -241.9152, 155.9921, 0.1455923, 1.780236, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
+(@CGUID+15, 18319, 556, 3, -240.9649, 336.1638, 27.24117, 5.218534, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
+(@CGUID+16, 0, 556, 3, -118.5634, 266.1424, 27.17125, 2.356194, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+17, 0, 556, 3, -82.05799, 273.0578, 26.89127, 3.822271, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+18, 0, 556, 3, -49.52324, 280.1748, 26.94647, 2.635447, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+19, 18319, 556, 3, -210.9452, 343.9079, 26.71947, 5.009095, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
+(@CGUID+20, 18319, 556, 3, -171.0809, 282.2864, 26.70496, 3.071779, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Scryer
+(@CGUID+21, 18320, 556, 3, -93.74298, 315.5412, 26.55769, 4.45059, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
+(@CGUID+22, 0, 556, 3, -84.30419, 266.6414, 26.89127, 3.001966, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+23, 18320, 556, 3, -114.001, 268.4881, 26.87618, 2.478368, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
+(@CGUID+24, 18320, 556, 3, -10.13334, 281.4788, 26.81394, 2.792527, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
+(@CGUID+25, 0, 556, 3, -101.3299, 309.8822, 26.60858, 5.811946, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+26, 18320, 556, 3, -66.5132, 314.6233, 27.11601, 4.572762, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
+(@CGUID+27, 18320, 556, 3, -58.93591, 280.0539, 26.99939, 1.727876, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Shadowmage
+(@CGUID+28, 0, 556, 3, -233.519, 324.039, 27.0016, 2.93582, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+29, 18321, 556, 3, -10.13046, 292.4032, 26.81396, 3.385939, 7200, 7200, 0, 0, 0, 0), -- Sethekk Talon Lord
+(@CGUID+30, 0, 556, 3, -94.815, 310.075, 25.8588, 3.9757, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+31, 0, 556, 3, -91.2837, 268.721, 26.9007, 1.15062, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+32, 0, 556, 3, -54.6136, 290.327, 26.8747, 6.19994, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+33, 18322, 556, 3, -205.418, 176.4368, 0.09436333, 6.073746, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
+(@CGUID+34, 18322, 556, 3, -205.5407, 169.5121, 0.09433134, 0.1570796, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
+(@CGUID+35, 18322, 556, 3, -239.3925, 211.8176, 26.90139, 4.537856, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
+(@CGUID+36, 18322, 556, 3, -141.1369, 291.2844, 26.81414, 3.787364, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
+(@CGUID+37, 18322, 556, 3, -141.666, 283.0464, 26.81415, 2.775074, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
+(@CGUID+38, 18322, 556, 3, -246.1623, 212.185, 26.82248, 4.764749, 7200, 7200, 0, 0, 0, 0), -- Sethekk Ravenguard
 (@CGUID+39, 18323, 556, 3, 39.6575, 23.2914, 0.00649, 4.75402, 7200, 7200, 0, 0, 0, 2), -- Sethekk Guard
-(@CGUID+40, 18323, 556, 3, -102.717, 170.086, 0.010068, 6.25648, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
-(@CGUID+41, 18323, 556, 3, -102.658, 177.944, 0.010068, 0.02435, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
+(@CGUID+40, 18323, 556, 3, -102.4809, 170.0606, 0.09323733, 0.4886922, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
+(@CGUID+41, 18323, 556, 3, -102.4285, 177.5863, 0.09321833, 6.161012, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
 (@CGUID+42, 18323, 556, 3, 43.6146, 22.894, 0.00647427, 4.70925, 7200, 7200, 0, 0, 0, 2), -- Sethekk Guard
 (@CGUID+43, 18323, 556, 3, 40.052, 54.2018, 0.00748827, 4.7281, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
 (@CGUID+44, 18323, 556, 3, 47.0133, 52.3834, 0.00748827, 4.01417, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
-(@CGUID+45, 18323, 556, 3, 41.0165, 130.745, 0.08101, 4.77836, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
-(@CGUID+46, 18323, 556, 3, 47.9049, 130.693, 0.0829321, 5.09724, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
-(@CGUID+47, 18323, 556, 3, 90.8233, 104.327, 0.103572, 3.16594, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
+(@CGUID+45, 18323, 556, 3, 41.98705, 130.147, 0.1861843, 5.113815, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
+(@CGUID+46, 18323, 556, 3, 47.76797, 130.4856, 0.1738263, 4.834562, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
+(@CGUID+47, 18323, 556, 3, 90.71933, 104.3212, 0.1860033, 3.560472, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
 (@CGUID+48, 18323, 556, 3, -2.37456, 97.6468, 0.00848962, 6.24628, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
 (@CGUID+49, 18323, 556, 3, -3.03972, 103.079, 0.00848962, 6.26277, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
-(@CGUID+50, 18323, 556, 3, -66.6027, 131.012, 0.00580438, 4.69904, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
-(@CGUID+51, 18323, 556, 3, -75.0627, 131.022, 0.00580438, 4.79329, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
-(@CGUID+52, 18323, 556, 3, 90.5185, 96.5259, 0.00799179, 3.17301, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
-(@CGUID+53, 18325, 556, 3, -102.994, 301.04, 26.5077, 0.786195, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+54, 18325, 556, 3, -234.855, 335.618, 27.2972, 4.16105, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+55, 18325, 556, 3, -202.212, 343.274, 26.6361, 3.26255, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet		//pooled with shaman maybe only nonheroic
-(@CGUID+56, 18325, 556, 3, -230.971, 330.685, 27.3506, 3.82097, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+57, 18325, 556, 3, -204.866, 335.853, 26.6361, 2.17634, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+58, 18325, 556, 3, -124.933, 270.834, 27.2959, 6.17559, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+59, 18325, 556, 3, -0.663798, 289.514, 26.6898, 3.23271, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+60, 18325, 556, 3, -185.794, 282.315, 26.5514, 0.0856124, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+61, 18325, 556, 3, -90.0859, 262.57, 26.839, 1.56924, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+62, 18325, 556, 3, -60.7047, 311.864, 27.1181, 3.9278, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+63, 18325, 556, 3, -61.083, 305.694, 26.5483, 2.79604, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+64, 18325, 556, 3, -51.7687, 285.552, 26.8965, 3.29633, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
-(@CGUID+65, 18326, 556, 3, -0.647923, 284.375, 26.6893, 3.03636, 7200, 7200, 0, 0, 0, 0), -- Sethekk Shaman
-(@CGUID+66, 18326, 556, 3, -179.296, 277.913, 26.6342, 1.49697, 7200, 7200, 0, 0, 0, 0), -- Sethekk Shaman		//pooled with Prophet
-(@CGUID+67, 18327, 556, 3, 22.4906, 72.9365, 0.590624, 0.428022, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+68, 18327, 556, 3, 16.9146, 106.801, 0.423325, 4.50817, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+69, 18327, 556, 3, 82.2538, 111.642, 0.309918, 2.1559, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+70, 18327, 556, 3, 56.4907, 78.122, 0.0110131, 1.17809, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+71, 18327, 556, 3, 43.9238, 105.848, 0.150805, 4.6998, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+72, 18327, 556, 3, -60.3031, 115.057, 0.007218, 5.25746, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+73, 18327, 556, 3, -80.6214, 108.614, 0.00721, 2.40961, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+74, 18327, 556, 3, -259.46, 192.472, 0.0380371, 4.47913, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+75, 18327, 556, 3, -68.2389, 174.427, 0.00939019, 4.82864, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+76, 18327, 556, 3, -76.1171, 84.2598, 0.00720769, 0.131176, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+77, 18327, 556, 3, -246.783, 160.008, 0.0692523, 5.95804, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+78, 18327, 556, 3, -265.526, 190.422, 0.0339229, 5.56219, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
-(@CGUID+79, 18328, 556, 3, -83.2097, 114.335, 0.00721343, 5.22212, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
-(@CGUID+80, 18328, 556, 3, -52.0194, 111.074, 0.00721832, 3.56964, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
-(@CGUID+81, 18328, 556, 3, -74.6281, 173.854, 0.00891793, 5.78997, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
-(@CGUID+82, 18328, 556, 3, -86.0627, 108.256, 0.00721343, 0.541152, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
-(@CGUID+83, 18328, 556, 3, -76.1437, 89.6367, 0.00720769, 4.91661, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
-(@CGUID+84, 18328, 556, 3, -243.316, 162.996, 0.0650751, 4.99436, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
-(@CGUID+85, 18328, 556, 3, -268.529, 185.028, 0.0339359, 0.304736, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
-(@CGUID+86, 18472, 556, 3, -144.332, 173.307, 1.68535, 6.28057, 86400, 86400, 0, 0, 0, 0), -- Darkweaver Syth
-(@CGUID+87, 18473, 556, 3, 44.4522, 286.902, 25.0132, 3.16829, 86400, 86400, 0, 0, 0, 0), -- Talon King Ikiss
-(@CGUID+88, 18956, 556, 3, -160.813, 157.043, 0.094095, 1.0821, 10800, 10800, 0, 0, 0, 0), -- Lakka
+(@CGUID+50, 18323, 556, 3, -66.45242, 131.136, 0.09054234, 4.852015, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
+(@CGUID+51, 18323, 556, 3, -75.21768, 130.8186, 0.09053633, 4.921828, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
+(@CGUID+52, 18323, 556, 3, 90.75338, 96.93393, 0.09051833, 2.949606, 7200, 7200, 0, 0, 0, 0), -- Sethekk Guard
+(@CGUID+53, 18325, 556, 3, -101.4639, 301.9133, 26.56783, 2.094395, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
+(@CGUID+54, 0, 556, 3, -234.5957, 335.9174, 27.37806, 4.18879, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+55, 0, 556, 3, -202.4095, 343.7246, 26.71947, 3.717551, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+56, 18325, 556, 3, -230.6168, 330.5182, 27.43822, 3.176499, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
+(@CGUID+57, 18325, 556, 3, -203.8424, 336.0542, 26.71949, 2.373648, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
+(@CGUID+58, 18325, 556, 3, -123.7711, 270.0428, 27.3312, 1.029744, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
+(@CGUID+59, 18325, 556, 3, -1.164886, 289.9058, 26.77532, 3.211406, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
+(@CGUID+60, 18325, 556, 3, -185.4364, 281.2479, 26.66565, 0.9948376, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
+(@CGUID+61, 18325, 556, 3, -89.96767, 262.7099, 26.91842, 2.111848, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
+(@CGUID+62, 0, 556, 3, -60.14425, 311.6657, 27.20292, 3.874631, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+63, 18325, 556, 3, -59.58767, 304.9102, 26.624, 3.176499, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
+(@CGUID+64, 18325, 556, 3, -51.7741, 285.914, 26.97911, 4.310963, 7200, 7200, 0, 0, 0, 0), -- Sethekk Prophet
+(@CGUID+65, 18326, 556, 3, -1.867487, 284.6055, 26.77968, 3.001966, 7200, 7200, 0, 0, 0, 0), -- Sethekk Shaman
+(@CGUID+66, 0, 556, 3, -178.8038, 276.9656, 26.74341, 1.815142, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+67, 18327, 556, 3, 21.73595, 73.69212, 0.5981853, 1.082104, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
+(@CGUID+68, 18327, 556, 3, 16.90912, 106.1443, 0.5066503, 4.45059, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
+(@CGUID+69, 18327, 556, 3, 81.90672, 112.3373, 0.4122343, 3.211406, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
+(@CGUID+70, 18327, 556, 3, 55.53506, 78.7888, -0.008387662, 1.291544, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
+(@CGUID+71, 18327, 556, 3, 43.636, 106.9156, 0.2341383, 4.764749, 7200, 7200, 0, 0, 0, 0), -- Time-Lost Controller
+(@CGUID+72, 0, 556, 3, -60.38334, 114.6635, 0.09053233, 5.689773, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+73, 0, 556, 3, -80.66582, 105.1362, 0.09053133, 2.321288, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+74, 0, 556, 3, -259.1928, 191.8271, 0.1199153, 5.410521, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+75, 0, 556, 3, -68.59539, 173.012, 0.09284733, 4.171337, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+76, 0, 556, 3, -76.56899, 83.73395, 0.09053534, 0.7853982, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+77, 0, 556, 3, -246.2185, 159.8743, 0.1512963, 0.3839724, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+78, 0, 556, 3, -266.1653, 190.0701, 0.1172313, 5.689773, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+79, 0, 556, 3, -83.86024, 113.5724, 0.09052934, 5.8294, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+80, 18328, 556, 3, -51.86545, 110.682, 0.09053233, 3.787364, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
+(@CGUID+81, 18328, 556, 3, -75.43511, 173.65, 0.09302533, 5.811946, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
+(@CGUID+82, 18328, 556, 3, -86.2176, 107.3568, 0.08998133, 0.7853982, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
+(@CGUID+83, 18328, 556, 3, -76.18745, 89.62844, 0.09053633, 5.689773, 7200, 7200, 0, 0, 0, 0), -- Sethekk Oracle
+(@CGUID+84, 0, 556, 3, -245.4007, 164.8066, 0.1527793, 0.03490658, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+85, 0, 556, 3, -268.4883, 184.286, 0.1172123, 0.6108652, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+86, 18472, 556, 3, -144.8268, 173.5574, 1.768646, 0.06981317, 86400, 86400, 0, 0, 0, 0), -- Darkweaver Syth
+(@CGUID+87, 18473, 556, 3, 44.72272, 286.9597, 25.1521, 3.979351, 86400, 86400, 0, 0, 0, 0), -- Talon King Ikiss
+(@CGUID+88, 18956, 556, 3, -160.8134, 157.0432, 0.09409533, 1.082104, 86400, 86400, 0, 0, 0, 0), -- Lakka
 (@CGUID+89, 19428, 556, 3, -272.322, 149.851, 13.5615, 1.54409, 7200, 7200, 0, 0, 0, 2), -- Cobalt Serpent
 (@CGUID+90, 19428, 556, 3, -237.134, 172.762, 0.0181006, 2.28234, 7200, 7200, 0, 0, 0, 2), -- Cobalt Serpent
 (@CGUID+91, 19428, 556, 3, -179.81, 285.767, 26.3917, 1.92497, 7200, 7200, 0, 0, 0, 2), -- Cobalt Serpent
@@ -670,10 +661,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+122, 21891, 556, 3, -239.695, 287.379, 27.2153, 4.52071, 7200, 7200, 4, 0, 0, 1), -- Avian Ripper
 (@CGUID+123, 21891, 556, 3, -191.23, 333.657, 24.7364, 0.735093, 7200, 7200, 4, 0, 0, 1), -- Avian Ripper
 (@CGUID+124, 21891, 556, 3, -190.052, 340.944, 26.2925, 1.62265, 7200, 7200, 4, 0, 0, 1), -- Avian Ripper
-(@CGUID+125, 21904, 556, 3, -215.155, 342.262, 26.7593, 4.89854, 7200, 7200, 0, 0, 0, 2), -- Avian Warhawk
-(@CGUID+126, 21904, 556, 3, -167.916, 288.879, 26.7049, 3.21935, 7200, 7200, 0, 0, 0, 2), -- Avian Warhawk
-(@CGUID+127, 21904, 556, 3, -109.943, 269.444, 26.1775, 2.6146, 7200, 7200, 0, 0, 0, 2), -- Avian Warhawk
-(@CGUID+128, 21904, 556, 3, -66.129, 309.003, 26.4486, 2.20699, 7200, 7200, 0, 0, 0, 2), -- Avian Warhawk
+(@CGUID+125, 0, 556, 3, -215.155, 342.262, 26.7593, 4.89854, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+126, 0, 556, 3, -167.916, 288.879, 26.7049, 3.21935, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+127, 0, 556, 3, -109.943, 269.444, 26.1775, 2.6146, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+128, 0, 556, 3, -66.129, 309.003, 26.4486, 2.20699, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+129, 21904, 556, 3, -17.9008, 286.656, 26.7308, 1.5873, 7200, 7200, 0, 0, 0, 2), -- Avian Warhawk
 (@CGUID+130, 21931, 556, 3, -69.078, 255.062, 27.6692, 2.23169, 7200, 7200, 0, 0, 0, 2), -- Avian Flyer
 (@CGUID+131, 21931, 556, 3, 84.9162, 251.397, 37.0668, 3.20414, 7200, 7200, 0, 0, 0, 2), -- Avian Flyer
@@ -690,77 +681,114 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+142, 21931, 556, 3, -68.3353, 281.741, 61.757, 3.84418, 7200, 7200, 0, 0, 0, 2), -- Avian Flyer
 (@CGUID+143, 21931, 556, 3, -71.9701, 272.574, 59.1446, 6.18433, 7200, 7200, 0, 0, 0, 2), -- Avian Flyer
 (@CGUID+144, 21931, 556, 3, -84.3563, 263.728, 27.8079, 4.52383, 7200, 7200, 0, 0, 0, 2), -- Avian Flyer
-(@CGUID+145, 21904, 556, 3, -233.519, 324.039, 27.0016, 2.93582, 7200, 7200, 0, 0, 0, 2), -- Avian Warhawk
-(@CGUID+146, 18321, 556, 3, -215.155, 342.262, 26.7593, 4.89854, 7200, 7200, 0, 0, 0, 2), -- Sethekk Talon Lord
-(@CGUID+147, 18321, 556, 3, -167.916, 288.879, 26.7049, 3.21935, 7200, 7200, 0, 0, 0, 2), -- Sethekk Talon Lord
-(@CGUID+148, 18321, 556, 3, -109.943, 269.444, 26.1775, 2.6146, 7200, 7200, 0, 0, 0, 2), -- Sethekk Talon Lord
-(@CGUID+149, 21904, 556, 3, -94.815, 310.075, 25.8588, 3.9757, 7200, 7200, 0, 0, 0, 2), -- Avian Warhawk
-(@CGUID+150, 21904, 556, 3, -91.2837, 268.721, 26.9007, 1.15062, 7200, 7200, 0, 0, 0, 2), -- Avian Warhawk
-(@CGUID+151, 18321, 556, 3, -66.129, 309.003, 26.4486, 2.20699, 7200, 7200, 0, 0, 0, 2), -- Sethekk Talon Lord
-(@CGUID+152, 21904, 556, 3, -54.6136, 290.327, 26.8747, 6.19994, 7200, 7200, 0, 0, 0, 2); -- Avian Warhawk
+(@CGUID+145, 2914, 556, 3, 18.34944, 3.317844, 0.005030937, 3.128841, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+146, 2914, 556, 3, 19.85151, 4.22377, 0.005034536, 2.546272, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+147, 4076, 556, 3, 47.09991, -1.774189, 0.00719931, 1.762909, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+148, 4076, 556, 3, 47.52857, -0.8663136, 0.007100739, 0.4959962, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+149, 2914, 556, 3, 47.52405, 29.75015, 0.007478316, 4.622515, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+150, 2914, 556, 3, 47.08457, 30.82057, 0.0074782, 1.709431, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+151, 2914, 556, 3, 69.47997, 96.77747, 0.04796847, 3.974787, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+152, 2914, 556, 3, 68.68884, 99.28603, 0.050988, 1.330361, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+153, 4076, 556, 3, 9.360594, 90.65035, 0.1148851, 3.979, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+154, 4076, 556, 3, 9.763619, 90.85147, 0.1218127, 0.7426011, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+155, 4076, 556, 3, -22.88695, 96.86929, 0.01015561, 3.572556, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+156, 4076, 556, 3, -25.10831, 95.73293, 0.09165333, 0.3916098, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+157, 4076, 556, 3, -43.80986, 93.62431, 0.09053434, 5.955339, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+158, 4075, 556, 3, -87.95236, 111.3751, 0.09052834, 0.7364417, 900, 900, 2, 0, 0, 1), -- Rat
+(@CGUID+159, 4076, 556, 3, -76.26178, 156.7113, 0.007168204, 5.428876, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+160, 2914, 556, 3, -67.24142, 179.7786, 0.01099795, 2.922914, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+161, 4076, 556, 3, -124.6319, 177.7088, 0.09410334, 5.224302, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+162, 4075, 556, 3, -152.1166, 197.2114, 0.01076556, 1.747644, 900, 900, 2, 0, 0, 1), -- Rat
+(@CGUID+163, 4075, 556, 3, -163.6763, 163.2817, 0.006914265, 1.122391, 900, 900, 2, 0, 0, 1), -- Rat
+(@CGUID+164, 4076, 556, 3, -237.5308, 226.5344, 26.72537, 6.195797, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+165, 14881, 556, 3, -248.3104, 246.8043, 26.80941, 4.625123, 900, 900, 2, 0, 0, 1), -- Spider
+(@CGUID+166, 3300, 556, 3, -251.7258, 292.515, 27.22821, 4.00411, 900, 900, 2, 0, 0, 1), -- Adder
+(@CGUID+167, 4075, 556, 3, -218.0481, 347.7653, 26.80424, 2.147044, 900, 900, 2, 0, 0, 1), -- Rat
+(@CGUID+168, 3300, 556, 3, -192.7862, 318.6047, 26.63689, 1.934175, 900, 900, 2, 0, 0, 1), -- Adder
+(@CGUID+169, 14881, 556, 3, -148.9483, 281.2049, 26.73199, 0.9655569, 900, 900, 2, 0, 0, 1), -- Spider
+(@CGUID+170, 2914, 556, 3, -116.0985, 279.9094, 26.94303, 3.903883, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+171, 4076, 556, 3, -78.48428, 320.0411, 27.49964, 4.101524, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+172, 4075, 556, 3, -51.81863, 270.6846, 26.81383, 3.283771, 900, 900, 2, 0, 0, 1), -- Rat
+(@CGUID+173, 14881, 556, 3, 9.683155, 264.4323, 26.36166, 3.88379, 900, 900, 2, 0, 0, 1), -- Spider
+(@CGUID+174, 2914, 556, 3, 26.18702, 293.4643, 25.08033, 0.9341962, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+175, 2914, 556, 3, 24.08882, 291.3755, 25.09153, 4.60654, 900, 900, 2, 0, 0, 1), -- Snake
+(@CGUID+176, 14881, 556, 3, 54.78128, 324.4642, 26.62394, 5.542425, 900, 900, 2, 0, 0, 1), -- Spider
+(@CGUID+177, 14881, 556, 3, 53.82113, 323.6956, 26.62394, 2.808715, 900, 900, 2, 0, 0, 1), -- Spider
+(@CGUID+178, 4076, 556, 3, 61.82289, 246.6528, 26.53621, 1.108926, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+179, 4076, 556, 3, 62.61628, 249.4474, 26.41748, 0.9678132, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+180, 4076, 556, 3, 61.46031, 248.1407, 26.59676, 1.593325, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+181, 4076, 556, 3, 31.15497, -1.884683, 0.005521166, 2.689678, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+182, 4076, 556, 3, -202.1051, 179.9077, 0.09477933, 2.164208, 900, 900, 2, 0, 0, 1), -- Roach
+(@CGUID+183, 4075, 556, 3, -224.8165, 180.5534, 1.73431, 4.782202, 900, 900, 2, 0, 0, 1), -- Rat
+(@CGUID+184, 3300, 556, 3, -254.6286, 170.1894, 0.1745483, 5.846853, 900, 900, 2, 0, 0, 1), -- Adder
+(@CGUID+185, 14881, 556, 3, -244.4173, 199.3081, 0.1475653, 2.565634, 900, 900, 2, 0, 0, 1), -- Spider
+(@CGUID+186, 14881, 556, 3, -213.7181, 177.5785, 27.0924, 0, 900, 900, 2, 0, 0, 1); -- Spider
 
 -- ===========
 -- GAMEOBJECTS
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 177203, 556, 3, 44.7867, 134.307, 0.00827081, 4.72703, 0, 0, 0, 0, 25, 25, 0, 1), -- Gate
-(@OGUID+2, 181278, 556, 3, -91.2256, 110.526, 0.005229, 2.63544, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+3, 181278, 556, 3, -175.854, 340.07, 27.4297, -0.122173, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+4, 181278, 556, 3, 7.98955, 112.229, 0.348708, -1.79769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+5, 181278, 556, 3, -58.4746, 314.138, 27.3705, -0.942477, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+6, 181278, 556, 3, -279.839, 193.427, 0.057562, 1.88495, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+1, 183398, 556, 3, 44.77156, 150.7211, -0.034146, 1.570796, 0, 0, 0.7071066, 0.7071069, 86400, 86400, 100, 1), -- Doodad_Auchindoun_Door_Swinging01
+(@OGUID+2, 181278, 556, 3, -91.22557, 110.5261, 0.005229, 2.635444, 0, 0, 0.9681473, 0.2503814, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+3, 181278, 556, 3, -175.8544, 340.0698, 27.42966, 6.161013, 0, 0, -0.06104851, 0.9981348, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+4, 181278, 556, 3, 7.989548, 112.2286, 0.348708, 4.485497, 0, 0, -0.782608, 0.6225148, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+5, 181278, 556, 3, -58.47458, 314.1384, 27.37047, 5.340709, 0, 0, -0.45399, 0.8910068, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+6, 181278, 556, 3, -279.8389, 193.4274, 0.057562, 1.884953, 0, 0, 0.8090162, 0.5877863, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+7, 181278, 556, 3, -200.026, 351.062, 26.6361, -0.663223, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+8, 181556, 556, 3, -230.139, 291.997, 32.156, 1.65806, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+9, 181556, 556, 3, -59.9727, 84.91, 1.11623, 2.84488, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+10, 181556, 556, 3, -194.833, 339.823, 25.4777, 1.95477, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+11, 181557, 556, 3, 24.3, 114.706, 0.058363, -1.58825, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Khorium Vein
+(@OGUID+10, 181556, 556, 3, -194.8327, 339.8233, 25.47767, 1.954769, 0, 0, 0.8290377, 0.5591928, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+11, 181557, 556, 3, 24.30001, 114.7062, 0.058363, 4.694937, 0, 0, -0.7132502, 0.7009096, 86400, 86400, 255, 1), -- Khorium Vein
 (@OGUID+12, 183050, 556, 3, -85.9132, 288.405, 26.4832, 5.24018, 0, 0, 0, 0, 90, 90, 100, 1), -- The Saga of Terokk
 (@OGUID+13, 183051, 556, 3, -161.007, 157.3161, 0.010762, 5.497789, 0, 0, -0.3826828, 0.9238798, 180, 180, 0, 1), -- Sethekk Cage
--- 14
+(@OGUID+14, 181556, 556, 3, -196.522, 294.8371, 30.82897, 4.852017, 0, 0, -0.6560583, 0.7547102, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+15, 184189, 556, 3, -8.53784, -0.0184067, -1.0496, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
 (@OGUID+16, 184190, 556, 3, -8.53784, -0.0184067, -1.0496, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
--- RE-USE 17 - 20
+(@OGUID+17, 181569, 556, 3, -114.9933, 103.7295, 2.625687, 5.777041, 0, 0, -0.2503796, 0.9681478, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
+(@OGUID+18, 181569, 556, 3, -194.8327, 339.8233, 25.47767, 1.954769, 0, 0, 0.8290377, 0.5591928, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
+(@OGUID+19, 181569, 556, 3, -233.4064, 200.3593, 1.841906, 0.5585039, 0, 0, 0.2756367, 0.9612619, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
+-- PLEASE RE-USE 20
 (@OGUID+21, 185554, 556, 2, -87.5742, 287.856, 26.4832, 0.0877018, 0, 0, 0, 0, 86400, 86400, 100, 1), -- The Raven's Claw
 (@OGUID+22, 187372, 556, 3, 81.7578, 287.085, 26.6293, 3.15018, 0, 0, 0, 0, 1, 1, 100, 1), -- The Talon King's Coffer
 (@OGUID+23, 181278, 556, 3, 87.8129, 116.0283, 0.353684, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+24, 181278, 556, 3, -75.0443, 76.0778, 0.0054, 0.7779, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+24, 181278, 556, 3, -75.17942, 75.93726, 0.006448, 4.834563, 0, 0, -0.6626196, 0.7489561, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+25, 181278, 556, 3, -63.2795, 178.5635, 0.01084, 1.256636, 0, 0, 0.5877848, 0.8090174, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+26, 181278, 556, 3, -241.197, 202.274, -0.0137, 5.3882, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+26, 181278, 556, 3, -237.4876, 203.7995, -0.051845, 1.850049, 0, 0, 0.7986355, 0.601815, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+27, 181278, 556, 3, -246.0827, 147.5636, 0.062782, 1.762782, 0, 0, 0.7716246, 0.6360782, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+28, 181278, 556, 3, -236.78, 345.499, 27.0003, 5.4275, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+29, 181278, 556, 3, -192.296, 271.119, 26.9074, 1.045, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+28, 181278, 556, 3, -242.4, 351.1923, 26.73693, 5.742135, 0, 0, -0.2672377, 0.9636307, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+29, 181278, 556, 3, -190.8164, 273.5332, 26.73239, 5.567601, 0, 0, -0.3502073, 0.9366722, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+30, 181278, 556, 3, -117.207, 260.63, 26.8428, 1.7911, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+31, 181278, 556, 3, -99.1734, 314.468, 26.5422, 4.3908, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+31, 181278, 556, 3, -99.08566, 314.5527, 26.552, 2.426008, 0, 0, 0.9366722, 0.3502074, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+32, 181278, 556, 3, -90.70419, 285.218, 26.48317, 2.565632, 0, 0, 0.9588194, 0.2840165, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+33, 181278, 556, 3, -78.8806, 277.413, 25.9685, 3.1302, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+34, 181278, 556, 3, -49.7114, 275.547, 26.8807, 1.6301, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+33, 181278, 556, 3, -74.5162, 270.9362, 26.70788, 2.91469, 0, 0, 0.9935713, 0.1132084, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+34, 181278, 556, 3, -49.68851, 275.3555, 26.88041, 0.4188786, 0, 0, 0.2079115, 0.9781476, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+35, 181556, 556, 3, 103.3805, 105.5609, 2.536037, 4.153885, 0, 0, -0.8746195, 0.4848101, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+36, 181556, 556, 3, -233.4064, 200.3593, 1.841906, 0.5585039, 0, 0, 0.2756367, 0.9612619, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+37, 181556, 556, 3, 24.3, 114.706, 0.058363, -1.58825, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+38, 181556, 556, 3, 31.1373, 83.9662, -1.5649, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+39, 181556, 556, 3, 57.2119, 115.3793, -3.0281, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+40, 181556, 556, 3, -86.4213, 84.9093, 3.1371, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+41, 181556, 556, 3, -114.2245, 98.9025, 0.0071, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+42, 181556, 556, 3, -221.2205, 151.8404, 1.6601, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+37, 181556, 556, 3, 24.30001, 114.7062, 0.058363, 4.694937, 0, 0, -0.7132502, 0.7009096, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+38, 181556, 556, 3, 28.60335, 84.79832, -1.420109, 6.073746, 0, 0, -0.1045284, 0.9945219, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+39, 181556, 556, 3, 57.1795, 115.4437, -3.004306, 2.879789, 0, 0, 0.9914446, 0.1305283, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+40, 181556, 556, 3, -84.14491, 83.75132, 1.94966, 2.33874, 0, 0, 0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+41, 181556, 556, 3, -114.9933, 103.7295, 2.625687, 5.777041, 0, 0, -0.2503796, 0.9681478, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+42, 181556, 556, 3, -221.7319, 151.3826, 1.69546, 1.570796, 0, 0, 0.7071066, 0.7071069, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+43, 181556, 556, 3, -270.7051, 196.0014, -0.2808, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+44, 181556, 556, 3, -225.3045, 195.8682, 21.8244, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+45, 181556, 556, 3, -206.6533, 295.6982, 40.5272, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+46, 181556, 556, 3, -96.1982, 274.6970, 25.1646, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+46, 181556, 556, 3, -100.6603, 273.1575, 23.1322, 3.560473, 0, 0, -0.9781475, 0.2079121, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+47, 181556, 556, 3, -86.5056, 309.8940, 24.9889, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+48, 181569, 556, 3, 103.3805, 105.5609, 2.536037, 4.153885, 0, 0, -0.8746195, 0.4848101, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+49, 181569, 556, 3, 31.1373, 83.9662, -1.5649, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+50, 181569, 556, 3, 57.2119, 115.3793, -3.0281, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+51, 181569, 556, 3, 24.3, 114.706, 0.058363, -1.58825, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+49, 181569, 556, 3, 28.60335, 84.79832, -1.420109, 6.073746, 0, 0, -0.1045284, 0.9945219, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+50, 181569, 556, 3, 57.1795, 115.4437, -3.004306, 2.879789, 0, 0, 0.9914446, 0.1305283, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+51, 181569, 556, 3, 24.30001, 114.7062, 0.058363, 4.694937, 0, 0, -0.7132502, 0.7009096, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+52, 181569, 556, 3, -59.9727, 84.91, 1.11623, 2.84488, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+53, 181569, 556, 3, -86.4213, 84.9093, 3.1371, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+53, 181569, 556, 3, -84.14491, 83.75132, 1.94966, 2.33874, 0, 0, 0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+54, 181569, 556, 3, -270.7051, 196.0014, -0.2808, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+55, 181569, 556, 3, -225.3045, 195.8682, 21.8244, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+56, 181569, 556, 3, -230.139, 291.997, 32.156, 1.65806, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+57, 181569, 556, 3, -206.6533, 295.6982, 40.5272, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+58, 181569, 556, 3, -96.1982, 274.6970, 25.1646, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+58, 181569, 556, 3, -100.6603, 273.1575, 23.1322, 3.560473, 0, 0, -0.9781475, 0.2079121, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+59, 181569, 556, 3, -86.5056, 309.8940, 24.9889, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+60, 181557, 556, 3, 31.1373, 83.9662, -1.5649, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Khorium Vein
+(@OGUID+60, 181557, 556, 3, 28.60335, 84.79832, -1.420109, 6.073746, 0, 0, -0.1045284, 0.9945219, 86400, 86400, 255, 1), -- Khorium Vein
 (@OGUID+61, 185590, 556, 2, -87.29815, 287.8307, 30.38595, 0.8552105, 0, 0, 0.4146929, 0.9099615, -300, -300, 255, 1), -- Sethekk Halls Moonstone
 (@OGUID+62, 185595, 556, 2, -87.19459, 287.7334, 29.96928, -2.775069, 0, 0, -0.9832544, 0.182238, -300, -300, 255, 1), -- Test Rift
 (@OGUID+63, 184936, 556, 1, -72.64229, 81.60601, 0.007203, 1.954769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
@@ -809,75 +837,59 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- =======
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 1, 'Sethekk Halls - Avian Warhawk / Sethekk Talon Lord'), -- creature
-(@PGUID+2, 1, 'Sethekk Halls - Avian Warhawk / Sethekk Talon Lord'),
-(@PGUID+3, 1, 'Sethekk Halls - Avian Warhawk / Sethekk Talon Lord'),
-(@PGUID+4, 1, 'Sethekk Halls - Avian Warhawk / Sethekk Talon Lord'),
-(@PGUID+5, 1, 'Sethekk Halls - Avian Warhawk / Sethekk Talon Lord'),
-(@PGUID+6, 1, 'Sethekk Halls - Avian Warhawk / Sethekk Talon Lord'),
-(@PGUID+7, 1, 'Sethekk Halls - Avian Warhawk / Sethekk Talon Lord'),
-(@PGUID+8, 1, 'Sethekk Halls - Avian Warhawk / Sethekk Talon Lord'),
+(@PGUID+1, 1, 'Sethekk Halls - Nonstatic Critter'), -- creature
 (@PGUID+21, 2, 'Sethekk Halls - Master Chest Pool'), -- gameobject
 (@PGUID+22, 3, 'Sethekk Halls - Master Mineral Pool'),
 (@PGUID+23, 4, 'Sethekk Halls - Master Anchient Lichen (181278) Pool'),
-(@PGUID+24, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 1'),
-(@PGUID+25, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 2'),
-(@PGUID+26, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - Pool 3'),
-(@PGUID+27, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 4'),
-(@PGUID+28, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - Pool 5'),
-(@PGUID+29, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 6'),
-(@PGUID+30, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 7'),
-(@PGUID+31, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 8'),
-(@PGUID+32, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 9'),
-(@PGUID+33, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 10'),
-(@PGUID+34, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 11'),
-(@PGUID+35, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 12'),
-(@PGUID+36, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 1'),
-(@PGUID+37, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 2'),
-(@PGUID+38, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 3'),
-(@PGUID+39, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 4'),
-(@PGUID+40, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 5'),
-(@PGUID+41, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 6'),
-(@PGUID+42, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 7'),
-(@PGUID+43, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 8'),
-(@PGUID+44, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 1'),
-(@PGUID+45, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 2'),
-(@PGUID+46, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 3'),
-(@PGUID+47, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 4'),
-(@PGUID+48, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 5'),
-(@PGUID+49, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 6'),
-(@PGUID+50, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 7'),
-(@PGUID+51, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 8');
+(@PGUID+24, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #1'),
+(@PGUID+25, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #2'),
+(@PGUID+26, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #3'),
+(@PGUID+27, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #4'),
+(@PGUID+28, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #5'),
+(@PGUID+29, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #6'),
+(@PGUID+30, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #7'),
+(@PGUID+31, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #8'),
+(@PGUID+32, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #9'),
+(@PGUID+33, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #10'),
+(@PGUID+34, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #11'),
+(@PGUID+35, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #12'),
+(@PGUID+36, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #1'),
+(@PGUID+37, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #2'),
+(@PGUID+38, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #3'),
+(@PGUID+39, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #4'),
+(@PGUID+40, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #5'),
+(@PGUID+41, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #6'),
+(@PGUID+42, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #7'),
+(@PGUID+43, 1, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #8'),
+(@PGUID+44, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #1'),
+(@PGUID+45, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #2'),
+(@PGUID+46, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #3'),
+(@PGUID+47, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #4'),
+(@PGUID+48, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #5'),
+(@PGUID+49, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #6'),
+(@PGUID+50, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #7'),
+(@PGUID+51, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #8'),
+(@PGUID+52, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #13'),
+(@PGUID+53, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #14'),
+(@PGUID+54, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #15');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+28, @PGUID+1, 0, 'Sethekk Halls - Sethekk Talon Lord'),
-(@CGUID+145, @PGUID+1, 0, 'Sethekk Halls - Avian Warhawk'),
-(@CGUID+146, @PGUID+2, 0, 'Sethekk Halls - Sethekk Talon Lord'),
-(@CGUID+125, @PGUID+2, 0, 'Sethekk Halls - Avian Warhawk'),
-(@CGUID+147, @PGUID+3, 0, 'Sethekk Halls - Sethekk Talon Lord'),
-(@CGUID+126, @PGUID+3, 0, 'Sethekk Halls - Avian Warhawk'),
-(@CGUID+148, @PGUID+4, 0, 'Sethekk Halls - Sethekk Talon Lord'),
-(@CGUID+127, @PGUID+4, 0, 'Sethekk Halls - Avian Warhawk'),
-(@CGUID+30, @PGUID+5, 0, 'Sethekk Halls - Sethekk Talon Lord'),
-(@CGUID+149, @PGUID+5, 0, 'Sethekk Halls - Avian Warhawk'),
-(@CGUID+31, @PGUID+6, 0, 'Sethekk Halls - Sethekk Talon Lord'),
-(@CGUID+150, @PGUID+6, 0, 'Sethekk Halls - Avian Warhawk'),
-(@CGUID+151, @PGUID+7, 0, 'Sethekk Halls - Sethekk Talon Lord'),
-(@CGUID+128, @PGUID+7, 0, 'Sethekk Halls - Avian Warhawk'),
-(@CGUID+32, @PGUID+8, 0, 'Sethekk Halls - Sethekk Talon Lord'),
-(@CGUID+152, @PGUID+8, 0, 'Sethekk Halls - Avian Warhawk');
+(@CGUID+181, @PGUID+1, 0, 'Sethekk Halls - Nonstatic Critter'),
+(@CGUID+182, @PGUID+1, 0, 'Sethekk Halls - Nonstatic Critter'),
+(@CGUID+183, @PGUID+1, 0, 'Sethekk Halls - Nonstatic Critter'),
+(@CGUID+184, @PGUID+1, 0, 'Sethekk Halls - Nonstatic Critter'),
+(@CGUID+185, @PGUID+1, 0, 'Sethekk Halls - Nonstatic Critter'),
+(@CGUID+186, @PGUID+1, 0, 'Sethekk Halls - Nonstatic Critter');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@OGUID+14, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit (181556)'),
+(@OGUID+42, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit (181556)'),
 (@OGUID+2, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+3, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+4, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+5, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+6, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+7, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
-(@OGUID+8, @PGUID+24, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 1'),
-(@OGUID+9, @PGUID+25, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 2'),
-(@OGUID+10, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit (181556)'),
-(@OGUID+11, @PGUID+26, 0, 'Sethekk Halls - Khorium Vein (181557) - Pool 3'),
 (@OGUID+23, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+24, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+25, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
@@ -890,32 +902,32 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+32, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+33, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+34, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
-(@OGUID+35, @PGUID+27, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 4'),
-(@OGUID+36, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit (181556)'),
-(@OGUID+37, @PGUID+26, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 3'),
-(@OGUID+38, @PGUID+28, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 5'),
-(@OGUID+39, @PGUID+29, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 6'),
-(@OGUID+40, @PGUID+30, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 7'),
-(@OGUID+41, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit (181556)'),
-(@OGUID+42, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit (181556)'),
-(@OGUID+43, @PGUID+31, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 8'),
-(@OGUID+44, @PGUID+32, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 9'),
-(@OGUID+45, @PGUID+33, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 10'),
-(@OGUID+46, @PGUID+34, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 11'),
-(@OGUID+47, @PGUID+35, 0, 'Sethekk Halls - Adamantite Deposit (181556) - Pool 12'),
-(@OGUID+48, @PGUID+27, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 4'),
-(@OGUID+49, @PGUID+28, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 5'),
-(@OGUID+50, @PGUID+29, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 6'),
-(@OGUID+51, @PGUID+26, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 3'),
-(@OGUID+52, @PGUID+25, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 2'),
-(@OGUID+53, @PGUID+30, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 7'),
-(@OGUID+54, @PGUID+31, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 8'),
-(@OGUID+55, @PGUID+32, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 9'),
-(@OGUID+56, @PGUID+24, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 1'),
-(@OGUID+57, @PGUID+33, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 10'),
-(@OGUID+58, @PGUID+34, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 11'),
-(@OGUID+59, @PGUID+35, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - Pool 12'),
-(@OGUID+60, @PGUID+28, 0, 'Sethekk Halls - Khorium Vein (181557) - Pool 5'),
+(@OGUID+8, @PGUID+24, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #1'),
+(@OGUID+56, @PGUID+24, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #1'),
+(@OGUID+9, @PGUID+25, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #2'),
+(@OGUID+52, @PGUID+25, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #2'),
+(@OGUID+11, @PGUID+26, 0, 'Sethekk Halls - Khorium Vein (181557) - #3'),
+(@OGUID+37, @PGUID+26, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #3'),
+(@OGUID+51, @PGUID+26, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #3'),
+(@OGUID+35, @PGUID+27, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #4'),
+(@OGUID+48, @PGUID+27, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #4'),
+(@OGUID+38, @PGUID+28, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #5'),
+(@OGUID+49, @PGUID+28, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #5'),
+(@OGUID+60, @PGUID+28, 0, 'Sethekk Halls - Khorium Vein (181557) - #5'),
+(@OGUID+39, @PGUID+29, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #6'),
+(@OGUID+50, @PGUID+29, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #6'),
+(@OGUID+40, @PGUID+30, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #7'),
+(@OGUID+53, @PGUID+30, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #7'),
+(@OGUID+43, @PGUID+31, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #8'),
+(@OGUID+54, @PGUID+31, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #8'),
+(@OGUID+44, @PGUID+32, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #9'),
+(@OGUID+55, @PGUID+32, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #9'),
+(@OGUID+45, @PGUID+33, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #10'),
+(@OGUID+57, @PGUID+33, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #10'),
+(@OGUID+46, @PGUID+34, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #11'),
+(@OGUID+58, @PGUID+34, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #11'),
+(@OGUID+47, @PGUID+35, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #12'),
+(@OGUID+59, @PGUID+35, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #12'),
 (@OGUID+63, @PGUID+36, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184936)'),
 (@OGUID+64, @PGUID+36, 0, 'Sethekk Halls (Normal) - Solid Adamantite Chest (184937)'),
 (@OGUID+65, @PGUID+37, 0, 'Sethekk Halls (Normal) - Bound Adamantite Chest (184938)'),
@@ -947,37 +959,43 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+91, @PGUID+50, 0, 'Sethekk Halls (Heroic) - Bound Adamantite Chest (184940)'),
 (@OGUID+92, @PGUID+50, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)'),
 (@OGUID+93, @PGUID+51, 0, 'Sethekk Halls (Heroic) - Bound Adamantite Chest (184940)'),
-(@OGUID+94, @PGUID+51, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)');
+(@OGUID+94, @PGUID+51, 0, 'Sethekk Halls (Heroic) - Solid Adamantite Chest (184941)'),
+(@OGUID+41, @PGUID+52, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #13'),
+(@OGUID+17, @PGUID+52, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #13'),
+(@OGUID+10, @PGUID+53, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #14'),
+(@OGUID+18, @PGUID+53, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #14'),
+(@OGUID+36, @PGUID+54, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #15'),
+(@OGUID+19, @PGUID+54, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #15');
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+24, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 1'),
-(@PGUID+25, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 2'),
-(@PGUID+26, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - Pool 3'),
-(@PGUID+27, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 4'),
-(@PGUID+28, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - Pool 5'),
-(@PGUID+29, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 6'),
-(@PGUID+30, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 7'),
-(@PGUID+31, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 8'),
-(@PGUID+32, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 9'),
-(@PGUID+33, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 10'),
-(@PGUID+34, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 11'),
-(@PGUID+35, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - Pool 12'),
-(@PGUID+36, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 1'),
-(@PGUID+37, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 2'),
-(@PGUID+38, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 3'),
-(@PGUID+39, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 4'),
-(@PGUID+40, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 5'),
-(@PGUID+41, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 6'),
-(@PGUID+42, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 7'),
-(@PGUID+43, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 8'),
-(@PGUID+44, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 1'),
-(@PGUID+45, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 2'),
-(@PGUID+46, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 3'),
-(@PGUID+47, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 4'),
-(@PGUID+48, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 5'),
-(@PGUID+49, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 6'),
-(@PGUID+50, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - Pool 7'),
-(@PGUID+51, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - Pool 8');
+(@PGUID+24, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #1'),
+(@PGUID+25, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #2'),
+(@PGUID+26, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #3'),
+(@PGUID+27, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #4'),
+(@PGUID+28, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #5'),
+(@PGUID+29, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #6'),
+(@PGUID+30, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #7'),
+(@PGUID+31, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #8'),
+(@PGUID+32, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #9'),
+(@PGUID+33, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #10'),
+(@PGUID+34, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #11'),
+(@PGUID+35, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #12'),
+(@PGUID+36, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #1'),
+(@PGUID+37, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #2'),
+(@PGUID+38, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #3'),
+(@PGUID+39, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #4'),
+(@PGUID+40, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #5'),
+(@PGUID+41, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #6'),
+(@PGUID+42, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #7'),
+(@PGUID+43, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #8'),
+(@PGUID+44, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #1'),
+(@PGUID+45, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #2'),
+(@PGUID+46, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #3'),
+(@PGUID+47, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #4'),
+(@PGUID+48, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #5'),
+(@PGUID+49, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #6'),
+(@PGUID+50, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #7'),
+(@PGUID+51, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #8');
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
@@ -988,28 +1006,28 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1895601,1895602,2193101,2193102);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1895601, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Lakka - active'),
-(1895602, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 0:idle'),
-(1895602, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Lakka - unactive'),
-(1895602, 3, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Lakka - despawn'),
-(2193101, 1, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
-(2193102, 1, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'despawn'),
-(2193102, 2, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn');
+(1895601, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Active'),
+(1895602, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Idle Movement'),
+(1895602, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Unactive'),
+(1895602, 3, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Despawn'),
+(2193101, 1, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - Run On'),
+(2193102, 1, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - despawn'),
+(2193102, 2, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - respawn');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(18472, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000009051, 0, 0, 0, 0, 0, 0, 0, '');
+(18472, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000009051, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Darkweaver Syth Death');
 
 DELETE FROM dbscripts_on_gossip WHERE id=7868;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(7868, 4, 20, 2, 0, 0, 18956, @CGUID+88, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 2:waypoint'),
-(7868, 4, 13, 0, 0, 0, 183051, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(7868, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000000398, 0, 0, 0, 0, 0, 0, 0, ''),
-(7868, 1, 8, 18956, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+(7868, 4, 20, 2, 0, 0, 18956, @CGUID+88, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Set Waypoint Movement'),
+(7868, 4, 13, 0, 0, 0, 183051, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Open Cage'),
+(7868, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000000398, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Say'),
+(7868, 1, 8, 18956, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Kill Credit');
 
 DELETE FROM dbscript_string WHERE entry IN (2000000398,2000009051);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000000398, 'Thank you for freeing me, $N! I''m going to make my way to Shattrath!', 0, 0, 0, 0, 'Lakka - Sethekk Halls'),
-(2000009051, 'Well done! Hurry, though, we don''t want to be caught!', 0, 1, 0, 0, '');
+(2000000398, 'Thank you for freeing me, $N! I''m going to make my way to Shattrath!', 0, 0, 0, 0, 'Sethekk Halls - Lakka on Gossip'),
+(2000009051, 'Well done! Hurry, though, we don''t want to be caught!', 0, 1, 0, 0, 'Sethekk Halls - Lakka on Darkweaver Syth Death');
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
