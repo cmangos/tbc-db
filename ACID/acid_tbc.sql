@@ -20856,6 +20856,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1870206','18702','14','0','100','5','2500','15','6100','8400','0','0','11','37367','0','1','0','0','0','0','0','0','0','0','Auchenai Necromancer (Heroic) - Cast Shadow Mend on Friendly Missing HP'),
 -- Flying Raging Soul 18726 - ss.32460
 ('1872601','18726','29','0','100','1','0','0','1000','1000','0','0','11','32459','0','0','0','0','0','0','0','0','0','0','Flying Raging Soul - Cast Raging Soul Visual on OOC Timer'),
+-- Pool of Souls 18766
+('1876601','18766','10','0','100','1','0','100','10000','10000','0','0','11','32889','6','0','0','0','0','0','0','0','0','0','Pool of Souls - Cast Grasp of Death on Hostile LOS'),
 -- Cosmetic Raging Soul 18778 - doesnt use 32460
 ('1877801','18778','29','0','100','1','0','0','1000','1000','0','0','11','32459','0','0','0','0','0','0','0','0','0','0','Cosmetic Raging Soul - Cast Raging Soul Visual on OOC Timer'),
 -- D'ore (4.3.4 Official Data - Normal/Heroic)
