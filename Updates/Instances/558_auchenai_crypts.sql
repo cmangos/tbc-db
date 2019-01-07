@@ -1,9 +1,11 @@
 /* DBScriptData
 DBName: Auchindoun - Auchenai Crypts
 DBScriptName: -
-DB%Complete: 80
+DB%Complete: 85
 DBComment:
-* Auchenai Soulpriest / Auchenai Vindicator / Auchenai Monk - Pooling
+* add ss.32460 for 18726, not for 18778 which casts 32459 by script in 1sec interval
+* @CGUID+23 and @CGUID+24 channeling should stack on @CGUID+158
+* Recheck Flying Raging Soul / Cosmetic Raging Soul - Spawns and Pathing 
 EndDBScriptData */
 
 SET @CGUID := 5580000; -- creatures
@@ -15,8 +17,6 @@ SET @PGUID := 49500; -- pools
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
-(@CGUID+1, 1, -26.24541, -162.7846, 26.09445, 0, 10000, 0),
-(@CGUID+1, 2, -63.11897, -162.7913, 26.52851, 0, 10000, 0),
 (@CGUID+9, 1, 70.4428, -5.52704, -0.081998, 3.14475, 0, 0),
 (@CGUID+9, 2, 68.8033, -9.17252, -0.095647, 3.96549, 0, 0),
 (@CGUID+9, 3, 68.5866, -26.2573, -0.063077, 4.69513, 0, 0),
@@ -85,8 +85,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+18, 7, 71.2453, 29.5185, -0.116317, 0.963682, 0, 0),
 (@CGUID+18, 8, 98.258, 28.9546, -0.120986, 6.23999, 0, 0),
 (@CGUID+18, 9, 100.633, 24.0382, -0.021694, 5.16242, 0, 0),
-(@CGUID+23, 1, 134.632, -22.7211, 7.64857, 6.22742, 5000, 8336701),
-(@CGUID+24, 1, 136.868, -27.2527, 10.0334, 6.18029, 5000, 8336701),
+(@CGUID+23, 1, 132.2567, -19.23857, 6.386281, 0.01745329, 5000, 8336701),
+(@CGUID+24, 1, 136.688, -26.0343, 9.386496, 0.6457718, 5000, 8336701),
 (@CGUID+32, 1, 148.445, 30.7565, -0.10329, 3.184, 0, 0),
 (@CGUID+32, 2, 144.748, 35.2066, 1.81657, 2.47164, 0, 0),
 (@CGUID+32, 3, 154.812, 37.0526, 3.32337, 0.671508, 0, 0),
@@ -338,59 +338,63 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+155, 1, -22.606, -431.96, 51.8957, 1.68544, 2000, 0),
 (@CGUID+155, 2, -23.1827, -343.781, 52.2056, 1.54015, 2000, 0),
 (@CGUID+156, 1, 25.3586, -432.834, 46.1591, 1.35559, 2000, 0),
-(@CGUID+156, 2, 25.9022, -344.431, 46.2485, 1.60691, 2000, 0);
+(@CGUID+156, 2, 25.9022, -344.431, 46.2485, 1.60691, 2000, 0),
+(@CGUID+158, 1, 141.6882, -17.80097, 9.308136, 2.129302, 1000, 1877801);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(18371, 0, 1, -24.40752, -163.4984, 26.1806, 0, 10000, 0),
+(18371, 0, 2, -63.11897, -162.7913, 26.52851, 0, 10000, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+3, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Soulpriest
-(@CGUID+4, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Soulpriest
-(@CGUID+5, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Soulpriest
-(@CGUID+6, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Soulpriest
-(@CGUID+7, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Soulpriest
-(@CGUID+8, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Soulpriest
+(@CGUID+3, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+4, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+5, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+6, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+7, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+8, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
 (@CGUID+12, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Soulpriest
-(@CGUID+15, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Soulpriest
-(@CGUID+19, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
-(@CGUID+20, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
-(@CGUID+21, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
-(@CGUID+22, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
+(@CGUID+15, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+19, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+20, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+21, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+22, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
 (@CGUID+25, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
 (@CGUID+26, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
-(@CGUID+28, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
-(@CGUID+29, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
-(@CGUID+30, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
+(@CGUID+28, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+29, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+30, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
 (@CGUID+31, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Monk
 (@CGUID+33, 0, 0, 1, 0, 375, 0, NULL), -- Auchenai Monk
 (@CGUID+36, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Monk
 (@CGUID+37, 0, 0, 1, 0, 375, 0, NULL), -- Auchenai Monk
 (@CGUID+38, 0, 0, 1, 0, 375, 0, NULL), -- Auchenai Monk
 (@CGUID+40, 0, 0, 1, 0, 375, 0, NULL), -- Auchenai Monk
-(@CGUID+41, 0, 8, 0, 0, 68, 0, NULL); -- Auchenai Monk
+(@CGUID+41, 0, 8, 0, 0, 68, 0, NULL); -- creature_spawn_entry
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+(18506,  0, 0, 1, 16, 0, 0, '35841 35850'), -- Raging Soul
 (18521, 0, 0, 1, 16, 0, 0, '10095'), -- Raging Skeleton
 (18524, 0, 0, 1, 16, 0, 0, '32885'), -- Angered Skeleton
 (18559, 0, 0, 0, 0, 0, 0, '31748'), -- Phasing Stalker
 (18700, 0, 0, 0, 0, 0, 0, '19818'); -- Reanimated Bones
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+3, @CGUID+4, 1167), -- Auchenai Soulpriest -> Auchenai Soulpriest
-(@CGUID+6, @CGUID+5, 1167), -- Auchenai Soulpriest -> Auchenai Soulpriest
-(@CGUID+20, @CGUID+8, 1167), -- Auchenai Vindicator -> Auchenai Soulpriest
-(@CGUID+19, @CGUID+22, 1167), -- Auchenai Vindicator -> Auchenai Vindicator
-(@CGUID+21, @CGUID+7, 1167), -- Auchenai Vindicator -> Auchenai Soulpriest
-(@CGUID+23, @CGUID+24, 1167), -- Auchenai Vindicator -> Auchenai Vindicator
-(@CGUID+29, @CGUID+28, 1167), -- Auchenai Vindicator -> Auchenai Vindicator
+(@CGUID+3, @CGUID+4, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+6, @CGUID+5, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+20, @CGUID+8, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+19, @CGUID+22, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+21, @CGUID+7, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+23, @CGUID+24, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+29, @CGUID+28, 1167), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+15, @CGUID+31, 1167), -- Auchenai Soulpriest -> Auchenai Monk
 (@CGUID+25, @CGUID+34, 1167), -- Auchenai Vindicator -> Auchenai Monk
 (@CGUID+41, @CGUID+30, 1167), -- Auchenai Monk -> Auchenai Vindicator
-(@CGUID+16, @CGUID+17, 1679), -- Auchenai Soulpriest -> Auchenai Soulpriest
-(@CGUID+35, @CGUID+11, 1679), -- Auchenai Monk -> Auchenai Soulpriest
+(@CGUID+16, @CGUID+17, 1679), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+35, @CGUID+11, 1679), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+12, @CGUID+36, 1167), -- Auchenai Soulpriest -> Auchenai Monk
 (@CGUID+26, @CGUID+36, 1167), -- Auchenai Vindicator -> Auchenai Monk
-(@CGUID+10, @CGUID+39, 1679), -- Auchenai Soulpriest -> Auchenai Vindicator
-(@CGUID+27, @CGUID+39, 1679), -- Auchenai Monk -> Auchenai Vindicator
+(@CGUID+10, @CGUID+39, 1679), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+27, @CGUID+39, 1679), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+40, @CGUID+38, 1167), -- Auchenai Monk -> Auchenai Monk
 (@CGUID+33, @CGUID+37, 1167), -- Auchenai Monk -> Auchenai Monk
 (@CGUID+46, @CGUID+51, 1167), -- Raging Skeleton -> Angered Skeleton
@@ -404,7 +408,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+53, @CGUID+43, 1167), -- Angered Skeleton -> Raging Skeleton
 (@CGUID+54, @CGUID+43, 1167), -- Angered Skeleton -> Raging Skeleton
 (@CGUID+55, @CGUID+43, 1167), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+14, @CGUID+13, 1679), -- Auchenai Soulpriest -> Auchenai Soulpriest
+(@CGUID+14, @CGUID+13, 1679), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+83, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
 (@CGUID+84, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
 (@CGUID+85, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
@@ -461,48 +465,109 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+3, 18493), (@CGUID+3, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+4, 18493), (@CGUID+4, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+5, 18493), (@CGUID+5, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+6, 18493), (@CGUID+6, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+7, 18493), (@CGUID+7, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+8, 18493), (@CGUID+8, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+9, 18493), (@CGUID+9, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+10, 18493), (@CGUID+10, 18495), (@CGUID+10, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@CGUID+11, 18493), (@CGUID+11, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+12, 18493), (@CGUID+12, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+13, 18493), (@CGUID+13, 18495), (@CGUID+13, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@CGUID+14, 18493), (@CGUID+14, 18495), (@CGUID+14, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@CGUID+15, 18493), (@CGUID+15, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+16, 18493), (@CGUID+16, 18495), (@CGUID+16, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@CGUID+17, 18493), (@CGUID+17, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+18, 18493), (@CGUID+18, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+19, 18493), (@CGUID+19, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+20, 18493), (@CGUID+20, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+21, 18493), (@CGUID+21, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+22, 18493), (@CGUID+22, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+23, 18493), (@CGUID+23, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+24, 18493), (@CGUID+24, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+25, 18493), (@CGUID+25, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+26, 18493), (@CGUID+26, 18495), (@CGUID+26, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@CGUID+27, 18493), (@CGUID+27, 18495), (@CGUID+27, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@CGUID+28, 18493), (@CGUID+28, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+29, 18493), (@CGUID+29, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+30, 18493), (@CGUID+30, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+35, 18495), (@CGUID+35, 18497), -- Auchenai Vindicator, Auchenai Monk
+(@CGUID+36, 18493), (@CGUID+36, 18495), (@CGUID+36, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@CGUID+39, 18493), (@CGUID+39, 18495), (@CGUID+39, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
+(@CGUID+41, 18493), (@CGUID+41, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
+(@CGUID+56, 18556), (@CGUID+56, 18557), (@CGUID+56, 18558), (@CGUID+56, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+57, 18556), (@CGUID+57, 18557), -- Phasing Soldier, Phasing Cleric
+(@CGUID+58, 18556), (@CGUID+58, 18557), (@CGUID+58, 18558), (@CGUID+58, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+59, 18556), (@CGUID+59, 18557), (@CGUID+59, 18558), (@CGUID+59, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+60, 18556), (@CGUID+60, 18557), (@CGUID+60, 18558), (@CGUID+60, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+61, 18556), (@CGUID+61, 18557), (@CGUID+61, 18558), (@CGUID+61, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+62, 18556), (@CGUID+62, 18557), (@CGUID+62, 18558), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer
+(@CGUID+63, 18556), (@CGUID+63, 18557), (@CGUID+63, 18558), (@CGUID+63, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+64, 18556), (@CGUID+64, 18557), (@CGUID+64, 18558), (@CGUID+64, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+65, 18556), (@CGUID+65, 18557), (@CGUID+65, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Stalker
+(@CGUID+66, 18556), (@CGUID+66, 18557), (@CGUID+66, 18558), (@CGUID+66, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+67, 18556), (@CGUID+67, 18557), (@CGUID+67, 18558), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer
+(@CGUID+68, 18556), (@CGUID+68, 18557), (@CGUID+68, 18558), (@CGUID+68, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+69, 18556), (@CGUID+69, 18557), (@CGUID+69, 18558), (@CGUID+69, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+70, 18556), (@CGUID+70, 18557), (@CGUID+70, 18558), (@CGUID+70, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+71, 18556), (@CGUID+71, 18557), (@CGUID+71, 18558), (@CGUID+71, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+72, 18556), (@CGUID+72, 18557), (@CGUID+72, 18558), (@CGUID+72, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+73, 18556), (@CGUID+73, 18557), (@CGUID+73, 18558), (@CGUID+73, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+74, 18556), (@CGUID+74, 18557), (@CGUID+74, 18558), (@CGUID+74, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+75, 18556), (@CGUID+75, 18557), (@CGUID+75, 18558), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer
+(@CGUID+76, 18556), (@CGUID+76, 18557), (@CGUID+76, 18558), (@CGUID+76, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+77, 18556), (@CGUID+77, 18557), (@CGUID+77, 18558), (@CGUID+77, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+78, 18556), (@CGUID+78, 18557), (@CGUID+78, 18558), (@CGUID+78, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+79, 18556), (@CGUID+79, 18557), (@CGUID+79, 18558), (@CGUID+79, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+80, 18556), (@CGUID+80, 18557), (@CGUID+80, 18558), (@CGUID+80, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+(@CGUID+81, 18556), (@CGUID+81, 18559), -- Phasing Soldier, Phasing Stalker
+(@CGUID+82, 18556), (@CGUID+82, 18557), (@CGUID+82, 18558), (@CGUID+82, 18559); -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 18371, 558, 3, -50.9133, -163.133, 26.3687, 0.0185413, 86400, 86400, 0, 0, 0, 2), -- Shirrak the Dead Watcher
-(@CGUID+2, 18373, 558, 3, 67.2791, -387.56, 26.5887, 2.96804, 86400, 86400, 0, 0, 0, 0), -- Exarch Maladaar
-(@CGUID+3, 18493, 558, 3, 82.1553, -8.35237, -0.061861, 4.76973, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+4, 18493, 558, 3, 77.8387, -8.15458, -0.06208, 4.49641, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+5, 18493, 558, 3, 84.6017, 8.65423, -0.062491, 1.51975, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+6, 18493, 558, 3, 89.855, 8.52477, -0.064318, 1.55353, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+7, 18493, 558, 3, 123.117, 4.0979, -0.129858, 3.88694, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+8, 18493, 558, 3, 87.7399, -39.3042, 4.26142, 4.67076, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+9, 18493, 558, 3, 79.825, -5.11753, -0.086953, 3.16281, 7200, 7200, 0, 0, 0, 2), -- Auchenai Soulpriest
-(@CGUID+10, 18493, 558, 3, 130.674, -160.664, 12.7517, 3.29239, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+11, 18493, 558, 3, 239.385, -49.6785, 26.5912, 4.59379, 7200, 7200, 0, 0, 0, 2), -- Auchenai Soulpriest
-(@CGUID+12, 18493, 558, 3, 225.272, -163.883, 26.592, 0.198709, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+13, 18493, 558, 3, -145.786, -376.33, 26.5915, 1.57631, 7200, 7200, 0, 0, 0, 2), -- Auchenai Soulpriest
-(@CGUID+14, 18493, 558, 3, -143.096, -376.454, 26.5918, 1.53389, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+15, 18493, 558, 3, 190.131, -3.65762, -0.0481654, 1.38544, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+16, 18493, 558, 3, 238.24, -31.651, 26.7127, 3.1251, 7200, 7200, 0, 0, 0, 0), -- Auchenai Soulpriest
-(@CGUID+17, 18493, 558, 3, 235.574, -31.607, 27.0868, 3.1251, 7200, 7200, 0, 0, 0, 2), -- Auchenai Soulpriest
-(@CGUID+18, 18495, 558, 3, 100.802, 17.3231, -0.08737, 4.59852, 7200, 7200, 0, 0, 0, 2), -- Auchenai Vindicator
-(@CGUID+19, 18495, 558, 3, 78.1336, 40.1341, 4.26168, 1.57158, 7200, 7200, 0, 0, 0, 0), -- Auchenai Vindicator
-(@CGUID+20, 18495, 558, 3, 93.0756, -39.5644, 4.26114, 4.83491, 7200, 7200, 0, 0, 0, 0), -- Auchenai Vindicator
-(@CGUID+21, 18495, 558, 3, 117.857, -3.94193, -0.0341318, 0.742203, 7200, 7200, 0, 0, 0, 0), -- Auchenai Vindicator
-(@CGUID+22, 18495, 558, 3, 84.7056, 40.5358, 4.26158, 1.50168, 7200, 7200, 0, 0, 0, 0), -- Auchenai Vindicator
-(@CGUID+23, 18495, 558, 3, 134.632, -22.7211, 7.64857, 6.22742, 7200, 7200, 0, 0, 0, 2), -- Auchenai Vindicator
-(@CGUID+24, 18495, 558, 3, 136.868, -27.2527, 10.0334, 6.18029, 7200, 7200, 0, 0, 0, 2), -- Auchenai Vindicator
-(@CGUID+25, 18495, 558, 3, 231.56, 19.6255, -0.063548, 1.47184, 7200, 7200, 0, 0, 0, 0), -- Auchenai Vindicator
-(@CGUID+26, 18495, 558, 3, 228.703, -170.708, 26.592, 0.574126, 7200, 7200, 0, 0, 0, 0), -- Auchenai Vindicator
-(@CGUID+27, 18497, 558, 3, 130.644, -164.902, 12.7534, 3.1251, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
-(@CGUID+28, 18495, 558, 3, 139.07, 40.0566, 4.26011, 1.58886, 7200, 7200, 0, 0, 0, 0), -- Auchenai Vindicator
-(@CGUID+29, 18495, 558, 3, 148.921, 40.2461, 4.25999, 1.5009, 7200, 7200, 0, 0, 0, 0), -- Auchenai Vindicator
-(@CGUID+30, 18495, 558, 3, 243.079, -14.5574, -0.0613293, 0.754769, 7200, 7200, 0, 0, 0, 0), -- Auchenai Vindicator
-(@CGUID+31, 18497, 558, 3, 187.665, 4.65824, -0.123336, 5.64701, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
+(@CGUID+2, 18373, 558, 3, 66.76575, -388.3454, 26.6733, 2.932153, 86400, 86400, 0, 0, 0, 0), -- Exarch Maladaar
+(@CGUID+3, 0, 558, 3, 81.64183, -8.102726, 0.01928834, 4.520403, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+4, 0, 558, 3, 77.84399, -8.144547, 0.02005134, 4.468043, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+5, 0, 558, 3, 85.36028, 8.430236, 0.01832034, 1.413717, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+6, 0, 558, 3, 89.77869, 8.615493, 0.01932934, 1.48353, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+7, 0, 558, 3, 122.3884, 3.71186, -0.04624767, 4.101524, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+8, 0, 558, 3, 87.4967, -38.87351, 4.34452, 4.537856, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+9, 0, 558, 3, 79.825, -5.11753, -0.086953, 3.16281, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+10, 0, 558, 3, 130.674, -160.664, 12.7517, 3.29239, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+11, 0, 558, 3, 239.385, -49.6785, 26.5912, 4.59379, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+12, 0, 558, 3, 225.4602, -163.3877, 26.67463, 6.056293, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+13, 0, 558, 3, -145.786, -376.33, 26.5915, 1.57631, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+14, 0, 558, 3, -143.096, -376.454, 26.5918, 1.53389, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+15, 0, 558, 3, 189.5546, -3.356299, 0.08177434, 1.58825, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+16, 0, 558, 3, 238.24, -31.651, 26.7127, 3.1251, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+17, 0, 558, 3, 235.574, -31.607, 27.0868, 3.1251, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+18, 0, 558, 3, 100.802, 17.3231, -0.08737, 4.59852, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+19, 0, 558, 3, 78.38407, 39.29659, 4.345016, 1.396263, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+20, 0, 558, 3, 92.49681, -39.03551, 4.344501, 4.520403, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+21, 0, 558, 3, 117.8884, -4.552255, 0.05047834, 0.8726646, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+22, 0, 558, 3, 85.71856, 39.33675, 4.344902, 1.48353, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+23, 0, 558, 3, 132.2567, -19.23857, 6.386281, 0.01745329, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+24, 0, 558, 3, 136.688, -26.0343, 9.386496, 0.6457718, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+25, 0, 558, 3, 230.3863, 19.43298, 0.01958133, 1.413717, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+26, 0, 558, 3, 227.6582, -170.5806, 26.67463, 0.5235988, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+27, 0, 558, 3, 130.644, -164.902, 12.7534, 3.1251, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+28, 0, 558, 3, 139.1312, 39.38498, 4.344155, 1.466077, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+29, 0, 558, 3, 148.6592, 39.4251, 4.344099, 1.308997, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+30, 0, 558, 3, 242.325, -15.56781, 0.02191534, 0.8203048, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+31, 18497, 558, 3, 187.0043, 4.800222, -0.03852867, 4.956735, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
 (@CGUID+32, 18497, 558, 3, 160.192, 30.6168, -0.106432, 2.94838, 7200, 7200, 0, 0, 0, 2), -- Auchenai Monk
-(@CGUID+33, 18497, 558, 3, -123.35, -166.807, 26.5891, 0.0534143, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
+(@CGUID+33, 18497, 558, 3, -122.5634, -166.7359, 26.67193, 0.06981317, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
 (@CGUID+34, 18497, 558, 3, 238.134, 14.236, -0.064787, 5.69414, 7200, 7200, 0, 0, 0, 2), -- Auchenai Monk
-(@CGUID+35, 18497, 558, 3, 239.401, -46.9768, 26.5912, 4.87575, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
-(@CGUID+36, 18497, 558, 3, 228.155, -155.341, 26.592, 5.60539, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
-(@CGUID+37, 18497, 558, 3, -127.816, -159.974, 26.5891, 6.27612, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
-(@CGUID+38, 18497, 558, 3, 24.1878, -160.623, 13.7844, 3.14474, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
-(@CGUID+39, 18495, 558, 3, 129.002, -162.865, 12.8844, 3.22092, 7200, 7200, 0, 0, 0, 2), -- Auchenai Vindicator
-(@CGUID+40, 18497, 558, 3, 28.2541, -167.18, 14.0739, 3.19029, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
-(@CGUID+41, 18497, 558, 3, 248.385, -9.51682, -0.0561865, 3.81547, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
+(@CGUID+35, 0, 558, 3, 239.401, -46.9768, 26.5912, 4.87575, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+36, 0, 558, 3, 227.6597, -155.1209, 26.67463, 5.358161, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+37, 18497, 558, 3, -127.4433, -159.4812, 26.6723, 6.056293, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
+(@CGUID+38, 18497, 558, 3, 21.78426, -160.7699, 13.6514, 3.071779, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
+(@CGUID+39, 0, 558, 3, 129.002, -162.865, 12.8844, 3.22092, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+40, 18497, 558, 3, 25.24369, -166.9502, 13.94017, 2.792527, 7200, 7200, 0, 0, 0, 0), -- Auchenai Monk
+(@CGUID+41, 0, 558, 3, 247.7906, -9.666943, 0.02644934, 3.926991, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+42, 18521, 558, 3, -130.67, -304.513, 26.3778, 4.64171, 7200, 7200, 3, 0, 0, 1), -- Raging Skeleton
 (@CGUID+43, 18521, 558, 3, -139.069, -300, 26.423, 2.3884, 7200, 7200, 3, 0, 0, 1), -- Raging Skeleton
 (@CGUID+44, 18521, 558, 3, -170.374, -276.212, 31.4869, 0.13509, 7200, 7200, 3, 0, 0, 1), -- Raging Skeleton
@@ -517,33 +582,33 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+53, 18524, 558, 3, -131.805, -313.267, 28.2328, 5.39962, 7200, 7200, 3, 0, 0, 1), -- Angered Skeleton
 (@CGUID+54, 18524, 558, 3, -127.905, -294.348, 27.0713, 3.02771, 7200, 7200, 3, 0, 0, 1), -- Angered Skeleton
 (@CGUID+55, 18524, 558, 3, -140.272, -310.587, 26.591, 6.26355, 7200, 7200, 3, 0, 0, 1), -- Angered Skeleton
-(@CGUID+56, 18556, 558, 3, 126.177, 27.9481, -0.0451297, 5.28835, 60, 60, 0, 0, 0, 2), -- Phasing Soldier
-(@CGUID+57, 18556, 558, 3, 170.213, -18.6788, 1.89394, 6.12611, 60, 60, 0, 0, 0, 2), -- Phasing Soldier
-(@CGUID+58, 18556, 558, 3, 234.88, -118.767, 26.6746, 0.628318, 60, 60, 0, 0, 0, 2), -- Phasing Soldier
-(@CGUID+59, 18556, 558, 3, 254.086, 16.2811, 1.2111, 3.9968, 60, 60, 0, 0, 0, 2), -- Phasing Soldier
-(@CGUID+60, 18556, 558, 3, 126.307, 33.2078, -0.113875, 4.8467, 60, 60, 0, 0, 0, 2), -- Phasing Soldier
-(@CGUID+61, 18556, 558, 3, 119.912, -167.935, 13.5053, 3.2492, 60, 60, 0, 0, 0, 2), -- Phasing Soldier
-(@CGUID+62, 18556, 558, 3, 218.466, 3.71303, 29.0994, 4.74537, 60, 60, 0, 0, 0, 2), -- Phasing Soldier
-(@CGUID+63, 18557, 558, 3, 103.51, -31.6612, 2.18704, 1.36136, 90, 90, 0, 0, 0, 2), -- Phasing Cleric
-(@CGUID+64, 18557, 558, 3, -138.909, -205.619, 26.6743, 2.75762, 90, 90, 0, 0, 0, 2), -- Phasing Cleric
-(@CGUID+65, 18557, 558, 3, 186.351, -184.605, 26.6173, 1.58635, 90, 90, 0, 0, 0, 2), -- Phasing Cleric
-(@CGUID+66, 18557, 558, 3, 265.723, -167.4, 26.6746, 3.64774, 90, 90, 0, 0, 0, 2), -- Phasing Cleric
-(@CGUID+67, 18557, 558, 3, 169.078, -17.6317, 2.71439, 0.86237, 90, 90, 0, 0, 0, 2), -- Phasing Cleric
-(@CGUID+68, 18557, 558, 3, 68.5056, -155.576, 15.346, 3.13688, 90, 90, 0, 0, 0, 2), -- Phasing Cleric
-(@CGUID+69, 18557, 558, 3, 249.466, -144.105, 29.6535, 2.93661, 90, 90, 0, 0, 0, 2), -- Phasing Cleric
-(@CGUID+70, 18558, 558, 3, 235.888, 37.0713, 26.69, 6.23082, 180, 180, 0, 0, 0, 2), -- Phasing Sorcerer
-(@CGUID+71, 18558, 558, 3, 127.675, -9.82014, 0.992616, 4.74729, 180, 180, 0, 0, 0, 2), -- Phasing Sorcerer
-(@CGUID+72, 18558, 558, 3, -150.584, -157.274, 26.6739, 2.11185, 180, 180, 0, 0, 0, 2), -- Phasing Sorcerer
-(@CGUID+73, 18558, 558, 3, 63.4074, -175.264, 15.4378, 6.14356, 180, 180, 0, 0, 0, 2), -- Phasing Sorcerer
-(@CGUID+74, 18558, 558, 3, 163.42, -22.1445, 3.9893, 3.50811, 180, 180, 0, 0, 0, 2), -- Phasing Sorcerer
-(@CGUID+75, 18558, 558, 3, 219.379, 0.330607, 28.4107, 3.90954, 180, 180, 0, 0, 0, 2), -- Phasing Sorcerer
-(@CGUID+76, 18558, 558, 3, 182.658, -140.555, 26.481, 2.25148, 180, 180, 0, 0, 0, 2), -- Phasing Sorcerer
-(@CGUID+77, 18559, 558, 3, 60.7609, 14.7143, 3.0138, 4.57276, 120, 120, 0, 0, 0, 2), -- Phasing Stalker
-(@CGUID+78, 18559, 558, 3, 108.474, -168.082, 14.7663, 4.03171, 120, 120, 0, 0, 0, 2), -- Phasing Stalker
-(@CGUID+79, 18559, 558, 3, 252.857, -143.331, 31.5224, 3.94444, 120, 120, 0, 0, 0, 2), -- Phasing Stalker
-(@CGUID+80, 18559, 558, 3, 244.796, -108.798, 26.6746, 5.41052, 120, 120, 0, 0, 0, 2), -- Phasing Stalker
-(@CGUID+81, 18559, 558, 3, -133.752, -394.29, 26.5895, 5.35807, 120, 120, 0, 0, 0, 2), -- Phasing Stalker
-(@CGUID+82, 18559, 558, 3, 61.6461, 14.3518, 2.72275, 3.56513, 120, 120, 0, 0, 0, 2), -- Phasing Stalker
+(@CGUID+56, 0, 558, 3, 126.177, 27.9481, -0.0451297, 5.28835, 60, 60, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+57, 0, 558, 3, 170.213, -18.6788, 1.89394, 6.12611, 60, 60, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+58, 0, 558, 3, 234.88, -118.767, 26.6746, 0.628318, 60, 60, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+59, 0, 558, 3, 254.086, 16.2811, 1.2111, 3.9968, 60, 60, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+60, 0, 558, 3, 126.307, 33.2078, -0.113875, 4.8467, 60, 60, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+61, 0, 558, 3, 119.912, -167.935, 13.5053, 3.2492, 60, 60, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+62, 0, 558, 3, 218.466, 3.71303, 29.0994, 4.74537, 60, 60, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+63, 0, 558, 3, 103.51, -31.6612, 2.18704, 1.36136, 90, 90, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+64, 0, 558, 3, -138.909, -205.619, 26.6743, 2.75762, 90, 90, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+65, 0, 558, 3, 186.351, -184.605, 26.6173, 1.58635, 90, 90, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+66, 0, 558, 3, 265.723, -167.4, 26.6746, 3.64774, 90, 90, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+67, 0, 558, 3, 169.078, -17.6317, 2.71439, 0.86237, 90, 90, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+68, 0, 558, 3, 68.5056, -155.576, 15.346, 3.13688, 90, 90, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+69, 0, 558, 3, 249.466, -144.105, 29.6535, 2.93661, 90, 90, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+70, 0, 558, 3, 235.888, 37.0713, 26.69, 6.23082, 180, 180, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+71, 0, 558, 3, 127.675, -9.82014, 0.992616, 4.74729, 180, 180, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+72, 0, 558, 3, -150.584, -157.274, 26.6739, 2.11185, 180, 180, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+73, 0, 558, 3, 63.4074, -175.264, 15.4378, 6.14356, 180, 180, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+74, 0, 558, 3, 163.42, -22.1445, 3.9893, 3.50811, 180, 180, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+75, 0, 558, 3, 219.379, 0.330607, 28.4107, 3.90954, 180, 180, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+76, 0, 558, 3, 182.658, -140.555, 26.481, 2.25148, 180, 180, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+77, 0, 558, 3, 60.7609, 14.7143, 3.0138, 4.57276, 120, 120, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+78, 0, 558, 3, 108.474, -168.082, 14.7663, 4.03171, 120, 120, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+79, 0, 558, 3, 252.857, -143.331, 31.5224, 3.94444, 120, 120, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+80, 0, 558, 3, 244.796, -108.798, 26.6746, 5.41052, 120, 120, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+81, 0, 558, 3, -133.752, -394.29, 26.5895, 5.35807, 120, 120, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+82, 0, 558, 3, 61.6461, 14.3518, 2.72275, 3.56513, 120, 120, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+83, 18700, 558, 3, -57.0486, -374.216, 26.5868, 1.60693, 7200, 7200, 3, 0, 0, 1), -- Reanimated Bones
 (@CGUID+84, 18700, 558, 3, -44.5335, -365.745, 26.5908, 5.09724, 7200, 7200, 3, 0, 0, 1), -- Reanimated Bones
 (@CGUID+85, 18700, 558, 3, -56.3714, -381.359, 26.5864, 3.30182, 7200, 7200, 3, 0, 0, 1), -- Reanimated Bones
@@ -599,9 +664,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+135, 18700, 558, 3, 22.9908, -361.364, 26.6062, 0.315742, 7200, 7200, 3, 0, 0, 1), -- Reanimated Bones
 (@CGUID+136, 18700, 558, 3, 31.5531, -364.96, 27.9252, 0.190078, 7200, 7200, 3, 0, 0, 1), -- Reanimated Bones
 (@CGUID+137, 18700, 558, 3, 35.8048, -367.576, 30.2166, 5.2339, 7200, 7200, 3, 0, 0, 1), -- Reanimated Bones
-(@CGUID+138, 18702, 558, 3, -23.6649, -410.292, 26.5929, 3.22013, 7200, 7200, 0, 0, 0, 0), -- Auchenai Necromancer
+(@CGUID+138, 18702, 558, 3, -23.3478, -410.1846, 26.6766, 2.984513, 7200, 7200, 0, 0, 0, 0), -- Auchenai Necromancer
 (@CGUID+139, 18702, 558, 3, -52.2851, -371.333, 26.586, 4.76973, 7200, 7200, 0, 0, 0, 2), -- Auchenai Necromancer
-(@CGUID+140, 18702, 558, 3, -19.7914, -365.723, 26.5833, 3.13374, 7200, 7200, 0, 0, 0, 0), -- Auchenai Necromancer
+(@CGUID+140, 18702, 558, 3, -20.65882, -365.6899, 26.66656, 2.96706, 7200, 7200, 0, 0, 0, 0), -- Auchenai Necromancer
 (@CGUID+141, 18702, 558, 3, 8.02662, -409.494, 26.5837, 0.0345117, 7200, 7200, 0, 0, 0, 2), -- Auchenai Necromancer
 (@CGUID+142, 18726, 558, 3, 72.2387, -139.227, 41.1505, 0.79309, 7200, 7200, 0, 0, 0, 2), -- Flying Raging Soul
 (@CGUID+143, 18726, 558, 3, 25.6421, -339.964, 45.4259, 4.85502, 7200, 7200, 0, 0, 0, 2), -- Flying Raging Soul
@@ -609,7 +674,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+145, 18726, 558, 3, 148.97, -195.776, 26.3242, 3.02073, 7200, 7200, 0, 0, 0, 2), -- Flying Raging Soul
 (@CGUID+146, 18726, 558, 3, 228.234, -154.235, 39.6051, 4.20328, 7200, 7200, 0, 0, 0, 2), -- Flying Raging Soul
 (@CGUID+147, 18726, 558, 3, -23.6042, -384.012, 52.4464, 1.56208, 7200, 7200, 0, 0, 0, 2), -- Flying Raging Soul
-(@CGUID+148, 18778, 558, 3, 143.019, -17.1798, 8.23266, 5.28964, 7200, 7200, 0, 0, 0, 2), -- Cosmetic Raging Soul
+(@CGUID+148, 18778, 558, 3, 146.9538, -43.67898, 25.32883, 4.657265, 7200, 7200, 0, 0, 0, 2), -- Cosmetic Raging Soul
 (@CGUID+149, 18506, 558, 3, 74.744, -156.728, 15.4168, 5.9299, 600, 600, 0, 0, 0, 0), -- Raging Soul
 (@CGUID+150, 18506, 558, 3, 18.5364, -169.422, 13.2419, 0.652, 600, 600, 0, 0, 0, 0), -- Raging Soul
 (@CGUID+151, 18506, 558, 3, 44.54099, -162.2908, 15.00108, 0.1835147, 600, 600, 0, 0, 0, 0), -- Raging Soul
@@ -617,7 +682,28 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+154, 18778, 558, 3, 163.575, -195.819, 44.6346, 3.10702, 7200, 7200, 0, 0, 0, 2), -- Cosmetic Raging Soul
 (@CGUID+155, 18778, 558, 3, 72.3599, -139.243, 43.314, 3.06775, 7200, 7200, 0, 0, 0, 2), -- Cosmetic Raging Soul
 (@CGUID+156, 18778, 558, 3, -22.606, -431.96, 51.8957, 1.68544, 7200, 7200, 0, 0, 0, 2), -- Cosmetic Raging Soul
-(@CGUID+157, 18778, 558, 3, 25.3586, -432.834, 46.1591, 1.35559, 7200, 7200, 0, 0, 0, 2); -- Cosmetic Raging Soul
+-- RE-USE 157
+(@CGUID+158, 18778, 558, 3, 141.6882, -17.80097, 9.308136, 2.129302, 7200, 7200, 0, 0, 0, 2), -- Cosmetic Raging Soul
+(@CGUID+159, 18506, 558, 3, 113.8355, -167.1436, 14.15542, 0.146318, 600, 600, 0, 0, 0, 0), -- Raging Soul
+(@CGUID+160, 18506, 558, 3, 59.21491, -162.1531, 15.33739, 2.990962, 600, 600, 0, 0, 0, 0), -- Raging Soul
+(@CGUID+161, 18766, 558, 3, 113.5894, -132.9443, -139.5885, 2.722714, 7200, 7200, 0, 0, 0, 0), -- Pool of Souls
+(@CGUID+162, 18766, 558, 3, 40.78951, -191.9622, -139.5885, 3.892084, 7200, 7200, 0, 0, 0, 0), -- Pool of Souls
+(@CGUID+163, 18766, 558, 3, 113.8102, -191.401, -139.5886, 2.9147, 7200, 7200, 0, 0, 0, 0), -- Pool of Souls
+(@CGUID+164, 18766, 558, 3, 40.49611, -134.3122, -139.5885, 5.742133, 7200, 7200, 0, 0, 0, 0), -- Pool of Souls
+(@CGUID+165, 14881, 558, 3, 47.92502, -19.67967, -0.1900515, 0.5066516, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+166, 14881, 558, 3, 99.90002, 41.08219, 4.300655, 3.753183, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+167, 14881, 558, 3, 248.7818, 26.70579, 0.01202033, 3.811768, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+168, 14881, 558, 3, 241.2808, -89.22566, 26.63534, 3.179858, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+169, 14881, 558, 3, 278.0475, -162.8453, 26.67462, 4.041707, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+170, 14881, 558, 3, 263.9539, -165.2596, 26.5913, 2.248354, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+171, 14881, 558, 3, 240.1609, -199.0526, 26.5913, 6.216994, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+172, 14881, 558, 3, -101.168, -171.1774, 26.66554, 3.085481, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+173, 14881, 558, 3, -140.7499, -227.4957, 26.59159, 6.24673, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+174, 14881, 558, 3, -174.0774, -309.9147, 26.77208, 3.826468, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+175, 14881, 558, 3, -125.2373, -320.5455, 28.96155, 5.428397, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+176, 14881, 558, 3, -100.257, -394.9611, 26.59012, 2.071474, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+177, 14881, 558, 3, 49.78981, -369.1593, 26.66824, 0.1211321, 7200, 7200, 2, 0, 0, 1), -- Spider
+(@CGUID+178, 14881, 558, 3, 38.73653, -427.7219, 30.96711, 3.599014, 7200, 7200, 2, 0, 0, 1); -- Spider
 
 -- ===========
 -- GAMEOBJECTS
@@ -626,47 +712,52 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1, 181278, 558, 3, 238.1105, -21.57134, -0.103546, 1.97222, 0, 0, 0.8338852, 0.5519379, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+2, 181278, 558, 3, -170.729, -270.2203, 31.63038, 4.607672, 0, 0, -0.743144, 0.6691315, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+3, 181278, 558, 3, 11.4308, -382.646, 19.4112, -2.60053, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+4, 181556, 558, 3, -153.854, -290.526, 24.5789, -0.855211, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+5, 181556, 558, 3, 254.377, -153.02, 30.985, 0.751633, 0, 0, 0.367032, 0.930208, 86400, 86400, 100, 1), -- Adamantite Deposit
+(@OGUID+3, 181278, 558, 3, 11.43081, -382.6463, 19.41117, 3.68265, 0, 0, -0.9636297, 0.267241, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+4, 181556, 558, 3, -153.854, -290.5263, 24.57888, 5.427975, 0, 0, -0.4146929, 0.9099615, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+5, 181556, 558, 3, 254.1934, -152.5304, 31.18292, 5.445428, 0, 0, -0.4067364, 0.9135455, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+6, 181569, 558, 3, 213.9826, -2.980433, 27.15875, 0.6632232, 0, 0, 0.3255672, 0.9455189, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+7, 183441, 558, 3, 62.69307, -398.407, 29.66395, 5.323256, 0, 0, -0.4617481, 0.8870111, 120, 120, 100, 1), -- Soul Mirror
 (@OGUID+8, 183441, 558, 3, 40.87143, 12.57517, 4.040081, 2.809975, 0, 0, 0.9862852, 0.1650499, 120, 120, 100, 1), -- Soul Mirror
-(@OGUID+9, 184191, 558, 3, -28.5773, 0.158444, -1.18062, 3.14159, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
-(@OGUID+10, 184192, 558, 3, -28.5773, 0.158444, -1.18062, 3.14159, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
+(@OGUID+9, 184191, 558, 2, -28.73179, 0.08934584, -0.1205667, 6.255642, 0, 0, -0.01377106, 0.9999052, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
+(@OGUID+10, 184192, 558, 1, -28.73179, 0.08934584, -0.1205667, 6.255642, 0, 0, -0.01377106, 0.9999052, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
 (@OGUID+11, 183441, 558, 3, -110.0298, -269.6933, 34.96054, 4.729844, 0, 0, -0.7009087, 0.7132511, 120, 120, 100, 1), -- Soul Mirror
 (@OGUID+12, 181278, 558, 3, 81.37183, 39.97037, 4.26169, 2.460913, 0, 0, 0.9426413, 0.3338076, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+13, 181278, 558, 3, 95.73, -40.309, 4.2611, 2.0468, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+13, 181278, 558, 3, 94.1284, -41.63251, 4.261362, 2.530723, 0, 0, 0.9537163, 0.3007079, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+14, 181278, 558, 3, 142.3764, 42.36301, 4.261193, 3.944446, 0, 0, -0.9205046, 0.3907318, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+15, 181278, 558, 3, 141.501, -21.506, 7.5809, 3.7197, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+16, 181278, 558, 3, 223.594, 23.4183, 4.0106, 4.9724, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+15, 181278, 558, 3, 147.044, -17.30462, 7.978113, 5.148723, 0, 0, -0.5372992, 0.8433917, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+16, 181278, 558, 3, 227.2913, 19.90919, -0.064963, 2.373644, 0, 0, 0.9271832, 0.3746083, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+17, 181278, 558, 3, 228.8909, -161.9393, 26.5913, 5.096362, 0, 0, -0.5591927, 0.8290377, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+18, 181278, 558, 3, -131.8954, -251.1024, 26.41008, 1.710422, 0, 0, 0.7547092, 0.6560594, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+19, 181278, 558, 3, -125.7593, -306.7307, 26.83068, 4.886924, 0, 0, -0.642787, 0.766045, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+20, 181278, 558, 3, -57.6584, -360.2921, 26.6024, 5.585054, 0, 0, -0.34202, 0.9396927, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+21, 181278, 558, 3, -47.5485, -411.308, 26.5996, 5.1334, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+21, 181278, 558, 3, -51.59011, -414.0334, 26.58849, 3.752462, 0, 0, -0.9537163, 0.3007079, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+22, 181278, 558, 3, -18.58161, -360.2785, 26.58882, 3.857183, 0, 0, -0.9366713, 0.3502098, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+23, 181278, 558, 3, 13.2697, -352.16, 30.7254, 4.3244, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+24, 181278, 558, 3, 31.1778, -409.218, 26.5868, 2.5102, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+23, 181278, 558, 3, 23.0257, -347.8315, 30.97245, 0.4014249, 0, 0, 0.1993675, 0.9799248, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+24, 181278, 558, 3, 29.30264, -409.0062, 26.58651, 5.427975, 0, 0, -0.4146929, 0.9099615, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+25, 181556, 558, 3, 93.35276, -393.1155, 27.12383, 5.270896, 0, 0, -0.4848089, 0.8746201, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+26, 181556, 558, 3, 177.4723, -9.883485, -0.765356, 6.108654, 0, 0, -0.08715534, 0.9961947, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+27, 181556, 558, 3, 213.9826, -2.980433, 27.15875, 0.6632232, 0, 0, 0.3255672, 0.9455189, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+28, 181556, 558, 3, -154.2153, -256.8246, 24.38399, 5.148723, 0, 0, -0.5372992, 0.8433917, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+29, 181556, 558, 3, 173.9158, 17.96067, -1.269871, 6.003934, 0, 0, -0.1391726, 0.9902682, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+30, 181556, 558, 3, 225.6951, -15.2342, 3.6775, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Adamantite Deposit
-(@OGUID+31, 181556, 558, 3, 118.1343, 11.8079, -2.4392, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Adamantite Deposit
+(@OGUID+31, 181556, 558, 3, 119.3374, 12.9238, -1.999392, 0.5235979, 0, 0, 0.2588186, 0.9659259, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+32, 181556, 558, 3, 241.2551, -184.8669, 28.4516, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Adamantite Deposit
-(@OGUID+33, 181556, 558, 3, -134.1614, -286.4577, 25.9570, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Adamantite Deposit
-(@OGUID+34, 181556, 558, 3, 218.5529, 22.2938, 2.4706, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Adamantite Deposit
+(@OGUID+33, 181556, 558, 3, -133.9016, -287.2106, 25.89139, 1.239183, 0, 0, 0.5807028, 0.8141156, 86400, 86400, 100, 1), -- Adamantite Deposit
+(@OGUID+34, 181556, 558, 3, 217.0418, 18.01212, 1.78935, 5.916668, 0, 0, -0.1822348, 0.983255, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+35, 181569, 558, 3, 173.9158, 17.96067, -1.269871, 6.003934, 0, 0, -0.1391726, 0.9902682, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+36, 181569, 558, 3, -154.2153, -256.8246, 24.38399, 5.148723, 0, 0, -0.5372992, 0.8433917, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+37, 181569, 558, 3, 241.2551, -184.8669, 28.4516, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
-(@OGUID+38, 181569, 558, 3, -134.1614, -286.4577, 25.9570, 0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
+(@OGUID+38, 181569, 558, 3, -133.9016, -287.2106, 25.89139, 1.239183, 0, 0, 0.5807028, 0.8141156, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
 (@OGUID+39, 181569, 558, 3, 177.4723, -9.883485, -0.765356, 6.108654, 0, 0, -0.08715534, 0.9961947, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+40, 181569, 558, 3, 218.5529, 22.2938, 2.4706, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+41, 181557, 558, 3, 218.5529, 22.2938, 2.4706, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Khorium
-(@OGUID+42, 184937, 558, 3, 230.8704, -165.3993, 26.5913, 2.705255, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+43, 184937, 558, 3, -58.44398, -414.7479, 26.58382, 2.565632, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
+(@OGUID+40, 181569, 558, 3, 217.0418, 18.01212, 1.78935, 5.916668, 0, 0, -0.1822348, 0.983255, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+41, 181557, 558, 3, 217.0418, 18.01212, 1.78935, 5.916668, 0, 0, -0.1822348, 0.983255, 86400, 86400, 255, 1), -- Khorium
+(@OGUID+42, 184936, 558, 3, 230.8704, -165.3993, 26.5913, 2.705255, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+43, 184937, 558, 3, 230.8704, -165.3993, 26.5913, 2.705255, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+44, 184936, 558, 3, -58.44398, -414.7479, 26.58382, 2.565632, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+45, 184937, 558, 3, -58.44398, -414.7479, 26.58382, 2.565632, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+46, 181569, 558, 3, 254.1934, -152.5304, 31.18292, 5.445428, 0, 0, -0.4067364, 0.9135455, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+47, 181569, 558, 3, -153.854, -290.5263, 24.57888, 5.427975, 0, 0, -0.4146929, 0.9099615, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+48, 181278, 558, 3, 31.04075, -359.3029, 26.59848, 5.619962, 0, 0, -0.3255672, 0.9455189, 86400, 86400, 100, 1); -- Ancient Lichen
 
 -- ======
 -- EVENTS
@@ -683,25 +774,33 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- =======
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+53, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 1'),
-(@PGUID+54, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 2'),
-(@PGUID+55, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 3'),
-(@PGUID+56, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 4'),
-(@PGUID+57, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 5'),
-(@PGUID+58, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 6'),
-(@PGUID+59, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit / Khorium - Pool 7');
+(@PGUID+53, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #1'),
+(@PGUID+54, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #2'),
+(@PGUID+55, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #3'),
+(@PGUID+56, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #4'),
+(@PGUID+57, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #5'),
+(@PGUID+58, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #6'),
+(@PGUID+59, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit / Khorium - #7'),
+(@PGUID+60, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #8'),
+(@PGUID+61, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #9'),
+(@PGUID+91, @PGUID+90, 0, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #1'),
+(@PGUID+92, @PGUID+90, 0, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #2');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+51, 5, 'Auchenai Crypts - Master Ancient Lichen (181278) Pool'),
 (@PGUID+52, 4, 'Auchenai Crypts - Master Mineral Pool'),
-(@PGUID+53, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 1'),
-(@PGUID+54, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 2'),
-(@PGUID+55, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 3'),
-(@PGUID+56, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 4'),
-(@PGUID+57, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 5'),
-(@PGUID+58, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - Pool 6'),
-(@PGUID+59, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit / Khorium - Pool 7'),
-(@PGUID+60, 1, 'Auchenai Crypts - Master Chest Pool');
+(@PGUID+53, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #1'),
+(@PGUID+54, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #2'),
+(@PGUID+55, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #3'),
+(@PGUID+56, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #4'),
+(@PGUID+57, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #5'),
+(@PGUID+58, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #6'),
+(@PGUID+59, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit / Khorium - #7'),
+(@PGUID+60, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #8'),
+(@PGUID+61, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #9'),
+(@PGUID+90, 1, 'Auchenai Crypts - Master Chest Pool'),
+(@PGUID+91, 1, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #1'),
+(@PGUID+92, 1, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #2');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
@@ -710,9 +809,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+1, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
 (@OGUID+2, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
 (@OGUID+3, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
-(@OGUID+4, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit (181556)'),
-(@OGUID+5, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit (181556)'),
-(@OGUID+6, @PGUID+53, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - Pool 1'),
 (@OGUID+12, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
 (@OGUID+13, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
 (@OGUID+14, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
@@ -726,25 +822,33 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+22, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
 (@OGUID+23, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
 (@OGUID+24, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
+(@OGUID+48, @PGUID+51, 0, 'Auchenai Crypts - Ancient Lichen (181278)'),
 (@OGUID+25, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit (181556)'),
-(@OGUID+26, @PGUID+54, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - Pool 2'),
-(@OGUID+27, @PGUID+53, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - Pool 1'),
-(@OGUID+28, @PGUID+55, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - Pool 3'),
-(@OGUID+29, @PGUID+56, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - Pool 4'),
 (@OGUID+30, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit (181556)'),
 (@OGUID+31, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit (181556)'),
-(@OGUID+32, @PGUID+57, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - Pool 5'),
-(@OGUID+33, @PGUID+58, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - Pool 6'),
-(@OGUID+34, @PGUID+59, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - Pool 7'),
-(@OGUID+35, @PGUID+56, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - Pool 4'),
-(@OGUID+36, @PGUID+55, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - Pool 3'),
-(@OGUID+37, @PGUID+57, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - Pool 5'),
-(@OGUID+38, @PGUID+58, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - Pool 6'),
-(@OGUID+39, @PGUID+54, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - Pool 2'),
-(@OGUID+40, @PGUID+59, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - Pool 7'),
-(@OGUID+41, @PGUID+59, 0, 'Auchenai Crypts - Khorium (181557) - Pool 7'),
-(@OGUID+42, @PGUID+60, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937)'),
-(@OGUID+43, @PGUID+60, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937)');
+(@OGUID+6, @PGUID+53, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #1'),
+(@OGUID+27, @PGUID+53, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #1'),
+(@OGUID+26, @PGUID+54, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #2'),
+(@OGUID+39, @PGUID+54, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #2'),
+(@OGUID+28, @PGUID+55, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #3'),
+(@OGUID+36, @PGUID+55, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #3'),
+(@OGUID+29, @PGUID+56, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #4'),
+(@OGUID+35, @PGUID+56, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #4'),
+(@OGUID+32, @PGUID+57, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #5'),
+(@OGUID+37, @PGUID+57, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #5'),
+(@OGUID+33, @PGUID+58, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #6'),
+(@OGUID+38, @PGUID+58, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #6'),
+(@OGUID+34, @PGUID+59, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #7'),
+(@OGUID+40, @PGUID+59, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #7'),
+(@OGUID+41, @PGUID+59, 0, 'Auchenai Crypts - Khorium (181557) - #7'),
+(@OGUID+5, @PGUID+60, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #8'),
+(@OGUID+46, @PGUID+60, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #8'),
+(@OGUID+4, @PGUID+61, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #9'),
+(@OGUID+47, @PGUID+61, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #9'),
+(@OGUID+42, @PGUID+91, 0, 'Auchenai Crypts - Bound Adamantite Chest (184936)'),
+(@OGUID+43, @PGUID+91, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937)'),
+(@OGUID+44, @PGUID+92, 0, 'Auchenai Crypts - Bound Adamantite Chest (184936)'),
+(@OGUID+45, @PGUID+91, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
@@ -752,18 +856,19 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1849701,1855601,1855701,1855801,1855901,8336004,8336007,8336701,8336903,8336907,8337007,8337013,8337403,8338003,8338309,8338313,10131510);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1877801,1849701,1855601,1855701,1855801,1855901,8336004,8336007,8336701,8336903,8336907,8337007,8337013,8337403,8338003,8338309,8338313,10131510);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1849701, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Auchenai Monk - Set Stand State Kneel'),
 (1849701, 29, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Auchenai Monk - Set Stand State Stand'),
-(1855601, 1, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1855601, 4, 14, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1855701, 1, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1855701, 4, 14, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1855801, 1, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1855801, 4, 14, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1855901, 1, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1855901, 4, 14, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(1855601, 1, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Phasing Soldier - Cast Phase In'),
+(1855601, 4, 14, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Phasing Soldier - Remove Phase In'),
+(1855701, 1, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Phasing Cleric - Cast Phase In'),
+(1855701, 4, 14, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Phasing Cleric - Remove Phase In'),
+(1855801, 1, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Phasing Sorcerer - Cast Phase In'),
+(1855801, 4, 14, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Phasing Sorcerer - Remove Phase In'),
+(1855901, 1, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Phasing Stalker - Cast Phase In'),
+(1855901, 4, 14, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Phasing Stalker - Remove Phase In'),
+(1877801, 0, 15, 32459, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cosmetic Raging Soul - Cast Raging Soul Visual'),
 (8336004, 0, 15, 10032, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Turn Phasing Stalker Invisible'),
 (8336004, 2, 22, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Temp Friendly Faction'),
 (8336004, 2, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 102.75, -32.9438, 2.43739, 1.5496, 'Teleport Phasing Stalker To New Location'),
@@ -776,7 +881,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (8336007, 26, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Restore Faction'),
 (8336007, 26, 15, 33422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Phase-In'),
 (8336007, 27, 14, 10032, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Turn Phasing Stalker Visible'),
-(8336701, 3, 15, 32930, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Blue Beam'),
+(8336701, 3, 15, 32930, 0, 0, 0, @CGUID+158, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Blue Beam'),
 (8336701, 5, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Pause Waypoints'),
 (8336903, 0, 15, 10032, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Turn Phasing Cleric Invisible'),
 (8336903, 2, 22, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Temp Friendly Faction'),
