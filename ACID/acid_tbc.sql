@@ -30978,7 +30978,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10116','Death is the price you shall pay for this insolence!','0','0','0','16329','0'),
 ('-10117','Mortal fools!  The ghouls of Deatholme will feast on your remains!','0','0','0','16329','0'),
 ('-10118','Your deaths shall be slow and painful!','0','0','0','16329','0'),
-('-10119','%s throws a mushroom spore at $n.','0','0','0','16329','0'),
+('-10119','%s throws a mushroom spore at $n.','0','2','0','18127/19734','0'),
 ('-10120','Return to your original form, $N!','0','1','0','Coilskar General 22873 on Free Friend','0'),
 ('-10121','%s shells up defensively','0','2','0','Dragon Turtle 22885 on 40087','0'),
 ('-10122','%s fixates on $n.','0','2','0','Fixate Emote','0'),
