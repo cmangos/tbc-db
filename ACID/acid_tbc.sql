@@ -20456,8 +20456,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1812401','18124','0','0','100','1','6000','11000','8000','14000','0','0','11','35235','0','0','0','0','0','0','0','0','0','0','Withered Giant - Cast Osmosis'),
 -- Starving Fungal Giant
 ('1812501','18125','9','0','100','1','0','15','6000','12000','0','0','11','35244','1','32','0','0','0','0','0','0','0','0','Starving Fungal Giant - Cast Choking Vines'),
--- Bog Lord
+-- Bog Lord 18127
 ('1812701','18127','9','0','100','1','0','10','8000','16000','0','0','11','32077','1','0','0','0','0','0','0','0','0','0','Bog Lord - Cast Boglord Bash'),
+('1812702','18127','0','0','100','1','8000','13000','16800','21000','0','0','11','35273','1','0','1','-10119','0','0','0','0','0','0','Bog Lord - Cast Unstable Mushroom Primer and Emote'),
 -- Spore Bat
 ('1812801','18128','9','0','100','1','0','5','15000','15000','0','0','11','35394','1','0','0','0','0','0','0','0','0','0','Spore Bat - Cast Spore Cloud'),
 ('1812802','18128','6','0','75','0','0','0','0','0','0','0','11','35336','1','7','0','0','0','0','0','0','0','0','Spore Bat - Cast Energizing Spores on Death'),
@@ -20625,6 +20626,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1973204','19732','9','0','100','1025','0','40','3400','4800','0','0','11','20825','1','256','0','0','0','0','0','0','0','0','Ango''rosh Warlock - Cast Shadow Bolt'),
 -- Daggerfen Servant
 ('1973301','19733','2','0','100','0','50','0','0','0','0','0','11','35207','0','0','0','0','0','0','0','0','0','0','Daggerfen Servant - Cast Bandage at 50% HP'),
+-- Fungal Giant 19734
+('1973401','19734','0','0','100','1','8000','13000','16800','21000','0','0','11','35273','1','0','1','-10119','0','0','0','0','0','0','Fungal Giant - Cast Unstable Mushroom Primer and Emote'),
 -- Darkcrest Slaver
 ('1994601','19946','9','0','100','1','0','5','22000','28000','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','Darkcrest Slaver - Cast Demoralizing Shout'),
 -- Darkcrest Sorceress 19947
@@ -20701,6 +20704,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Terror Totem 20455 - TotemAI
 -- Terrorclaw
 ('2047701','20477','9','0','100','1','0','5','5000','9000','0','0','11','40504','1','0','0','0','0','0','0','0','0','0','Terrorclaw - Cast Cleave'),
+-- Unstable Shroom 20479
+('2047901','20479','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Unstable Shroom - Stop Combat Movement and Stop Auto Attack on Spawn'),
+('2047902','20479','29','0','100','1','4000','4000','1000','1000','0','0','11','31698','0','0','0','0','0','0','0','0','0','0','Unstable Shroom - Cast Grow on Generic Timer'),
+('2047903','20479','29','0','100','0','12000','12000','0','0','0','0','11','35362','0','0','11','35252','0','0','0','0','0','0','Unstable Shroom - Cast Unstable Mushroom Visual and Unstable Cloud on Generic Timer'),
+('2047904','20479','29','0','100','0','18000','18000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Unstable Shroom - Despawn on Generic Timer'),
 -- Gur'zil
 ('2076201','20762','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Gur''zil - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Xeleth
@@ -30970,7 +30978,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10116','Death is the price you shall pay for this insolence!','0','0','0','16329','0'),
 ('-10117','Mortal fools!  The ghouls of Deatholme will feast on your remains!','0','0','0','16329','0'),
 ('-10118','Your deaths shall be slow and painful!','0','0','0','16329','0'),
--- tbc PLEASE RE-USE 10119
+('-10119','%s throws a mushroom spore at $n.','0','0','0','16329','0'),
 ('-10120','Return to your original form, $N!','0','1','0','Coilskar General 22873 on Free Friend','0'),
 ('-10121','%s shells up defensively','0','2','0','Dragon Turtle 22885 on 40087','0'),
 ('-10122','%s fixates on $n.','0','2','0','Fixate Emote','0'),
