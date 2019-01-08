@@ -991,16 +991,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('766407','7664','2','0','100','0','15','0','0','0','0','0','11','8269','0','1','0','0','0','0','0','0','0','0','Razelikh the Defiler - Cast Frenzy at 15% HP'),
 ('766408','7664','6','0','100','0','0','0','0','0','0','0','1','-716','0','0','0','0','0','0','0','0','0','0','Razelikh the Defiler - Yell on Death'),
 -- Grol the Destroyer (4.0.3 Official Data)
-('766501','7665','11','0','100','0','0','0','0','0','0','0','42','1','1','0','22','1','0','0','0','0','0','0','Grol the Destroyer - Set Invincible at 1% HP and Set Phase 1 on Spawn'),
-('766502','7665','8','5','100','0','12938','-1','0','0','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Grol the Destroyer - Remove Invincible and Set Phase 2 on Fel Curse Spellhit (Phase 1)'),
+('766501','7665','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Grol the Destroyer - Set Invincible and Set Phase 1 on Spawn'),
+('766502','7665','8','5','100','0','12938','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Grol the Destroyer - Remove Invincible and Set Phase 2 on Fel Curse Spellhit (Phase 1)'),
 ('766503','7665','0','0','100','1','7800','13400','16800','23200','0','0','11','12734','0','0','0','0','0','0','0','0','0','0','Grol the Destroyer - Cast Ground Smash'),
 ('766504','7665','0','0','100','1','19600','29800','32500','46700','0','0','11','10101','1','1','0','0','0','0','0','0','0','0','Grol the Destroyer - Cast Knock Away'),
-('766505','7665','7','0','100','0','0','0','0','0','0','0','42','1','1','0','22','1','0','0','0','0','0','0','Grol the Destroyer - Set Invincible at 1% HP and Set Phase 1 on Evade'),
+('766505','7665','7','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Grol the Destroyer - Set Invincible and Set Phase 1 on Evade'),
 -- Archmage Allistarj 7666
-('766601','7666','11','0','100','0','0','0','0','0','0','0','42','1','1','0','22','1','0','0','0','0','0','0','Archmage Allistarj - Set Invincible 1% HP and Set Phase 1 on Spawn'),
-('766602','7666','7','0','100','0','0','0','0','0','0','0','42','1','1','0','22','1','0','0','0','0','0','0','Archmage Allistarj - Set Invincible 1% HP and Set Phase 1 on Evade'),
+('766601','7666','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Archmage Allistarj - Set Invincible and Set Phase 1 on Spawn'),
+('766602','7666','7','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Archmage Allistarj - Set Invincible and Set Phase 1 on Evade'),
 ('766603','7666','4','0','100','0','0','0','0','0','0','0','57','2','35','0','22','2','0','0','0','0','0','0','Archmage Allistarj - Enable Range Mode and Set Phase 2 on Aggro'),
-('766604','7666','8','9','100','0','12938','-1','0','0','0','0','42','0','1','0','1','-1058','0','0','22','3','0','0','Archmage Allistarj - Remove Invincible and Emote and Set Phase 3 on Fel Curse Spellhit (Phase 1,2)'),
+('766604','7666','8','9','100','0','12938','-1','0','0','0','0','42','0','0','0','1','-1058','0','0','22','3','0','0','Archmage Allistarj - Remove Invincible and Emote and Set Phase 3 on Fel Curse Spellhit (Phase 1,2)'),
 ('766605','7666','27','9','100','1','12544','1','15000','30000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Archmage Allistarj - Cast Frost Armor on Missing Buff (Phase 1,2)'),
 ('766606','7666','0','11','100','1025','13000','16000','13000','16000','0','0','11','14145','4','0','0','0','0','0','0','0','0','0','Archmage Allistarj - Cast Fire Blast (Phase 2)'),
 ('766607','7666','0','11','100','1025','9000','12000','11000','14000','0','0','11','12737','0','0','0','0','0','0','0','0','0','0','Archmage Allistarj - Cast Frostbolt (Phase 2)'),
@@ -1008,35 +1008,35 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('766609','7666','0','11','100','1025','5000','7000','16000','20000','0','0','11','12738','1','0','0','0','0','0','0','0','0','0','Archmage Allistarj - Cast Amplify Damage (Phase 2)'),
 ('766610','7666','9','11','100','1025','0','40','3400','4800','0','0','11','12466','1','256','0','0','0','0','0','0','0','0','Archmage Allistarj - Cast Fireball (Phase 2)'),
 -- Lady Sevine 7667
-('766701','7667','11','0','100','0','0','0','0','0','0','0','42','1','1','0','22','1','0','0','0','0','0','0','Lady Sevine - Set Invincible 1% HP and Set Phase 1 on Spawn'),
-('766702','7667','7','0','100','0','0','0','0','0','0','0','42','1','1','0','22','1','0','0','0','0','0','0','Lady Sevine - Set Invincible 1% HP and Set Phase 1 on Evade'),
+('766701','7667','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Lady Sevine - Set Invincible and Set Phase 1 on Spawn'),
+('766702','7667','7','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Lady Sevine - Set Invincible and Set Phase 1 on Evade'),
 ('766703','7667','4','0','100','0','0','0','0','0','0','0','57','2','35','0','22','2','0','0','0','0','0','0','Lady Sevine - Enable Range Mode and Set Phase 2 on Aggro'),
-('766704','7667','8','9','100','0','12938','-1','0','0','0','0','42','0','1','0','1','-1058','0','0','22','3','0','0','Lady Sevine - Remove Invincible and Emote and Set Phase 3 on Fel Curse Spellhit (Phase 1,2)'),
+('766704','7667','8','9','100','0','12938','-1','0','0','0','0','42','0','0','0','1','-1058','0','0','22','3','0','0','Lady Sevine - Remove Invincible and Emote and Set Phase 3 on Fel Curse Spellhit (Phase 1,2)'),
 ('766705','7667','27','9','100','1','12544','1','15000','30000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Lady Sevine - Cast Frost Armor on Missing Buff (Phase 1,2)'),
 ('766706','7667','0','11','100','1025','9000','12000','24000','27000','0','0','11','12742','4','32','0','0','0','0','0','0','0','0','Lady Sevine - Cast Immolate (Phase 2)'),
 ('766707','7667','0','11','100','1025','7000','9000','15000','25000','0','0','11','12740','0','0','0','0','0','0','0','0','0','0','Lady Sevine - Cast Summon Infernal Servant (Phase 2)'),
 ('766708','7667','0','11','100','1025','2000','5000','30000','45000','0','0','11','12741','0','0','0','0','0','0','0','0','0','0','Lady Sevine - Cast Curse of Weakness (Phase 2)'),
 ('766709','7667','9','11','100','1025','0','40','3400','4800','0','0','11','12739','1','256','0','0','0','0','0','0','0','0','Lady Sevine - Cast Shadow Bolt (Phase 2)'),
 -- Servant of Razelikh
-('766801','7668','4','0','100','0','0','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Razelikh - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('766801','7668','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Razelikh - Set Invincible and Set Phase 1 on Aggro'),
 ('766802','7668','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Razelikh - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('766803','7668','8','5','100','0','10805','-1','0','0','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Razelikh - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('766804','7668','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Razelikh - Set Phase 0 and Set Invicibility at 5% HP on Evade'),
+('766803','7668','8','5','100','0','10805','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Razelikh - Remove Invincible and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('766804','7668','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Razelikh - Set Phase 0 and Set Invincible on Evade'),
 -- Servant of Grol
-('766901','7669','4','0','100','0','0','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Grol - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('766901','7669','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Grol - Set Invincible and Set Phase 1 on Aggro'),
 ('766902','7669','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Grol - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('766903','7669','8','5','100','0','10834','-1','0','0','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Grol - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('766904','7669','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Grol - Set Phase 0 and Set Invicibility at 5% HP on Evade'),
+('766903','7669','8','5','100','0','10834','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Grol - Remove Invincible and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('766904','7669','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Grol - Set Phase 0 and Set Invincible on Evade'),
 -- Servant of Allistarj
-('767001','7670','4','0','100','0','0','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Allistarj - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('767001','7670','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Allistarj - Set Invincible and Set Phase 1 on Aggro'),
 ('767002','7670','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Allistarj - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('767003','7670','8','5','100','0','10835','-1','0','0','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Allistarj - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('767004','7670','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Allistarj - Set Phase 0 and Set Invicibility at 5% HP on Evade'),
+('767003','7670','8','5','100','0','10835','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Allistarj - Remove Invincible and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('767004','7670','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Allistarj - Set Phase 0 and Set Invincible on Evade'),
 -- Servant of Sevine
-('767101','7671','4','0','100','0','0','0','0','0','0','0','42','5','1','0','22','1','0','0','0','0','0','0','Servant of Sevine - Set Invicibility at 5% HP and Set Phase 1 on Aggro'),
+('767101','7671','4','0','100','0','0','0','0','0','0','0','42','1','0','0','22','1','0','0','0','0','0','0','Servant of Sevine - Set Invincible and Set Phase 1 on Aggro'),
 ('767102','7671','2','5','100','1','5','0','10000','10000','0','0','11','10794','0','1','1','-1481','0','0','0','0','0','0','Servant of Sevine - Cast Spirit Shock and TextEmote at 5% HP (Phase 1)'),
-('767103','7671','8','5','100','0','10836','-1','0','0','0','0','42','0','1','0','22','2','0','0','0','0','0','0','Servant of Sevine - Remove Invicibility and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
-('767104','7671','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','5','1','0','0','0','0','0','Servant of Sevine - Set Phase 0 and Set Invicibility at 5% HP on Evade'),
+('767103','7671','8','5','100','0','10836','-1','0','0','0','0','42','0','0','0','22','2','0','0','0','0','0','0','Servant of Sevine - Remove Invincible and Set Phase 2 on Shackle Shatter Spellhit (Phase 1)'),
+('767104','7671','7','0','100','0','0','0','0','0','0','0','22','0','0','0','42','1','0','0','0','0','0','0','Servant of Sevine - Set Phase 0 and Set Invincible on Evade'),
 -- Kirith the Damned
 ('772801','7728','0','0','100','1','4000','6000','20000','26000','0','0','11','12097','1','0','0','0','0','0','0','0','0','0','Kirith the Damned - Cast Pierce Armor'),
 ('772802','7728','0','0','100','1','2000','4000','9000','13000','0','0','11','12745','0','1','0','0','0','0','0','0','0','0','Kirith the Damned - Cast Mana Burn'),
@@ -5063,7 +5063,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1874408','18744','1','0','100','1','10000','14000','10000','10000','0','0','10','274','5','0','0','0','0','0','0','0','0','0','Aurosalia - Random Emote OOC'),
 -- Darise 18761
 -- Blood Elf Warlock
-('1876301','18763','11','0','100','0','0','0','0','0','0','0','42','1','1','0','0','0','0','0','0','0','0','0','Blood Elf Warlock - Set Invinceability at 1% on Spawn'),
+('1876301','18763','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Blood Elf Warlock - Set Invincible on Spawn'),
 ('1876302','18763','4','0','100','0','0','0','0','0','0','0','11','32932','0','0','0','0','0','0','0','0','0','0','Blood Elf Warlock - Cast Sun Shield on Aggro'),
 -- Faenel the Drunkard (18781) - NSR
 -- Gatewatcher Aendor 18790
@@ -5140,11 +5140,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2515206','25152','22','0','100','1','328','0','0','0','0','0','5','11','0','0','0','0','0','0','0','0','0','0','Sig Nicious respond to emote Flirt with Laugh'),
 ('2515207','25152','22','0','100','1','21','0','0','0','0','0','5','4','0','0','0','0','0','0','0','0','0','0','Sig Nicious respond to emote Cheer with Cheer'),
 -- Steven Thomas
-('2520001','25200','11','0','100','0','0','0','0','0','0','0','42','1','1','0','0','0','0','0','0','0','0','0','Steven Thomas - Set Invinceability at 1% on Spawn'),
+('2520001','25200','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Steven Thomas - Set Invincible on Spawn'),
 -- Arcanist Myndimendez
-('2520201','25202','11','0','100','0','0','0','0','0','0','0','42','1','1','0','0','0','0','0','0','0','0','0','Arcanist Myndimendez - Set Invinceability at 1% on Spawn'),
+('2520201','25202','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Arcanist Myndimendez - Set Invincible on Spawn'),
 -- Roitau
-('2520701','25207','11','0','100','0','0','0','0','0','0','0','42','1','1','0','0','0','0','0','0','0','0','0','Roitau - Set Invinceability at 1% on Spawn'),
+('2520701','25207','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Roitau - Set Invincible on Spawn'),
 -- Lord Solanar Bloodwrath 25223
 -- Arena Organizer (26012) - NSR
 -- Master Flame Eater (26113) - NSR
@@ -5607,7 +5607,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Steven (3511) - NSR
 -- Jimmy (3512) - NSR
 -- Miss Danna 3513
-('351301','3513','2','0','100','1','2','1','1000','1000','0','0','42','1','-1','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible'),
+('351301','3513','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible on Spawn'),
 -- Thomas Miller
 ('351801','3518','1','0','100','1','0','0','120000','180000','0','0','1','-204','-205','-142','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
 -- Ol' Emma 3520
@@ -7315,7 +7315,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mennet Carkad 6467
 -- Spirit Healer (6491) - NSR
 -- Rift Spawn
-('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','0','0','0','0','Rift Spawn - Set Invincible at 1 HP and Set Phase 0 on Spawn'),
+('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','0','0','0','0','Rift Spawn - Set Invincible and Set Phase 0 on Spawn'),
 ('649202','6492','8','0','100','0','9095','-1','0','0','0','0','55','6','0','0','22','1','0','0','0','0','0','0','Rift Spawn - Attack Invoker and Set Phase 1 on Cantation of Manifestation Spellhit'),
 ('649203','6492','4','6','100','0','0','0','0','0','0','0','11','9738','0','0','54','-988','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Becomes Visible and Text Emote on Aggro (Phase 0)'),
 ('649204','6492','2','0','100','0','1','0','0','0','0','0','11','9032','0','0','18','33554432','0','0','22','2','0','0','Rift Spawn - Cast Self Stun - 30 seconds and Set NotSelectable and Set Phase 2 When Below 1% HP'),
@@ -11622,7 +11622,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Major Mills (23905) - NSR
 -- Lurking Shark (23928) - NSR
 -- Gavis Greyshield
-('2394101','23941','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Gavis Greyshield - Set Invincible at 1 HP on Spawn'),
+('2394101','23941','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Gavis Greyshield - Set Invincible on Spawn'),
 ('2394102','23941','2','0','100','0','10','0','0','0','0','0','53','10124','0','0','0','0','0','0','0','0','0','0','Gavis Greyshield - Start Relay Script 10124 at 10% HP'),
 -- Andello Porter (23942) - NSR
 -- Lieutenant Nath (23949) - NSR
@@ -17710,14 +17710,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Warmaul Brute
 ('1806501','18065','0','0','100','1','3500','5500','10000','12000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Warmaul Brute - Cast Uppercut'),
 -- Mogor
-('1806901','18069','11','0','100','0','0','0','0','0','0','0','22','1','0','0','19','570425344','0','0','42','1','1','0','Mogor - Set Phase 1 and Remove UnitFlag and Set Invincible on Spawn'),
+('1806901','18069','11','0','100','0','0','0','0','0','0','0','22','1','0','0','19','570425344','0','0','42','1','0','0','Mogor - Set Phase 1 and Remove UnitFlag and Set Invincible on Spawn'),
 ('1806902','18069','0','20','100','1','9400','13200','75000','80000','0','0','11','18975','1','1','0','0','0','0','0','0','0','0','Mogor - Cast Summon Ice Totem (Phase 1 and 3)'),
 ('1806903','18069','9','20','100','1','0','30','6000','8000','0','0','11','16033','4','0','0','0','0','0','0','0','0','0','Mogor - Cast Chain Lightning (Phase 1 and 3)'),
 ('1806904','18069','9','20','100','1','0','20','18000','21000','0','0','11','39529','4','0','0','0','0','0','0','0','0','0','Mogor - Cast Flame Shock (Phase 1 and 3)'),
 ('1806905','18069','2','20','100','1','50','0','26000','29000','0','0','11','15982','0','1','0','0','0','0','0','0','0','0','Mogor - Cast Healing Wave at 50% HP (Phase 1 and 3'),
 ('1806906','18069','2','13','100','0','5','0','0','0','0','0','11','31261','0','7','18','570425344','0','0','22','2','0','0','Mogor - Cast Permanent Feign Death (Root) and Set UnitFlag and Set Phase 2 at 5% HP (Phase 1)'),
 ('1806907','18069','29','11','100','0','6000','6000','0','0','0','0','28','0','31261','0','0','0','0','0','0','0','0','0','Mogor - Remove Permanent Feign Death (Root) on Generic Timer (Phase 2)'),
-('1806908','18069','29','11','100','0','6000','6000','0','0','0','0','11','32343','0','23','22','3','0','0','42','0','1','0','Mogor - Cast Revive Self and Remove Invincible and Set Phase 3 on Generic Timer (Phase 2)'),
+('1806908','18069','29','11','100','0','6000','6000','0','0','0','0','11','32343','0','23','22','3','0','0','42','0','0','0','Mogor - Cast Revive Self and Set Phase 3 and Remove Invincible on Generic Timer (Phase 2)'),
 ('1806909','18069','29','7','100','0','3000','3000','0','0','0','0','1','-10987','0','0','11','28747','0','23','19','570425344','0','0','Mogor - Yell and Cast Frenzy and Remove UnitFlag on Generic Timer (Phase 3)'),
 ('1806910','18069','21','0','100','0','0','0','0','0','0','0','41','2000','0','0','0','0','0','0','0','0','0','0','Mogor - Delayed Despawn on Reached Home'),
 -- Gordawg 18099
@@ -19876,10 +19876,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- A'dal 18481 - npc_adal
 -- Empoor 18482
 ('1848201','18482','11','0','100','0','0','0','0','0','0','0','17','168','1','0','0','0','0','0','0','0','0','0','Empoor - Set Gossip NpcFlag on Spawn'),
-('1848202','18482','4','0','100','0','0','0','0','0','0','0','42','1','1','0','0','0','0','0','0','0','0','0','Empoor - Set Invincibility at 1% on Aggro'),
+('1848202','18482','4','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Empoor - Set Invincible on Aggro'),
 ('1848203','18482','0','0','100','1','1000','2000','8000','9000','0','0','11','12548','1','0','0','0','0','0','0','0','0','0','Empoor - Cast Frost Shock'),
 ('1848204','18482','2','0','100','0','5','0','0','0','0','0','24','0','0','0','17','168','2','0','2','35','0','0','Empoor - Change Faction to Friendly, Set Questgiver NpcFlag, and Evade at 5% HP'),
-('1848205','18482','7','0','100','0','0','0','0','0','0','0','41','40000','0','0','42','1','1','0','0','0','0','0','Empoor - Delayed Despawn and Set Invincibility at 1% on Evade'),
+('1848205','18482','7','0','100','0','0','0','0','0','0','0','41','40000','0','0','42','1','0','0','0','0','0','0','Empoor - Delayed Despawn and Set Invincible on Evade'),
 ('1848206','18482','27','0','100','1','12550','1','15000','30000','0','0','11','12550','0','0','0','0','0','0','0','0','0','0','Empoor - Cast Lightning Shield on Missing Buff'),
 -- Empoor's Bodyguard
 ('1848301','18483','0','0','100','1','2000','2000','15000','16000','0','0','11','11977','1','0','0','0','0','0','0','0','0','0','Empoor''s Bodyguard - Cast Rend'),
@@ -22783,7 +22783,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mennu Earthgrab Totem - TotemAI
 -- Mennu Stoneskin Totem - TotemAI
 -- Mennu Fire Nova Totem 18179 -- ss.33134
-('1817901','18179','11','0','100','6','0','0','0','0','0','0','20','0','0','0','21','0','0','0','42','1','0','0','Mennu Fire Nova Totem - Prevent Melee and Prevent Movement and Set Invicibility at 1 HP on Spawn'),
+('1817901','18179','11','0','100','6','0','0','0','0','0','0','20','0','0','0','21','0','0','0','42','1','0','0','Mennu Fire Nova Totem - Prevent Melee and Prevent Movement and Set Invincible on Spawn'),
 ('1817902','18179','29','0','100','6','18000','18000','0','0','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Generic Timer'),
 ('1817903','18179','2','0','100','6','99','0','0','0','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Damage'),
 -- Wastewalker Captive 18206
@@ -24731,13 +24731,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1048001','10480','0','0','100','3','7000','19000','18000','35000','0','0','11','18270','1','0','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Dark Plague'),
 ('1048002','10480','6','0','100','2','0','0','0','0','0','0','11','17689','0','7','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Disease Burst on Death'),
 -- Reanimated Corpse 10481
-('1048101','10481','4','0','100','2','0','0','0','0','0','0','42','1','0','0','22','0','0','0','0','0','0','0','Reanimated Corpse - Set Invicibility at 1 HP and Set Phase 0 on Aggro'),
+('1048101','10481','4','0','100','2','0','0','0','0','0','0','42','1','0','0','22','0','0','0','0','0','0','0','Reanimated Corpse - Set Invincible and Set Phase 0 on Aggro'),
 ('1048102','10481','0','0','100','3','3600','17300','10300','18200','0','0','11','18270','1','32','0','0','0','0','0','0','0','0','Reanimated Corpse - Cast Dark Plague'),
 ('1048103','10481','2','0','100','2','10','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Set Phase 1 at 10% HP'),
 ('1048104','10481','0','5','100','2','1000','1000','0','0','0','0','47','7','0','0','21','0','0','0','20','0','0','0','Reanimated Corpse - Lie Down and Stop Movement and Stop Melee (Phase 1)'),
 ('1048105','10481','0','5','100','2','10000','11000','0','0','0','0','11','23965','0','2','22','2','0','0','0','0','0','0','Reanimated Corpse - Cast Instant Heal and Set Phase 2 (Phase 1)'),
 ('1048106','10481','0','3','100','2','0','0','0','0','0','0','47','0','0','0','21','1','0','0','20','1','0','0','Reanimated Corpse - Stand Up and Start Movement and Start Melee (Phase 2)'),
-('1048107','10481','2','3','100','2','99','0','0','0','0','0','42','0','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Remove Invicibility and Resume Melee Combat below 99% HP (Phase 2)'),
+('1048107','10481','2','3','100','2','99','0','0','0','0','0','42','0','0','0','0','0','0','0','0','0','0','0','Reanimated Corpse - Remove Invincible below 99% HP (Phase 2)'),
 ('1048108','10481','7','0','100','2','0','0','0','0','0','0','47','0','0','0','21','1','0','0','20','1','0','0','Reanimated Corpse - Stand Up and Start Movement and Start Melee on Evade'),
 -- Risen Lackey (10482)
 -- Risen Aberration (3.0.3 Official Data - Logs Only)
@@ -25429,7 +25429,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Oozeling (8257) - NSR
 -- Slime Maggot (8311) - NSR
 -- Atal'ai Deathwalker's Spirit
-('831701','8317','4','0','100','2','0','0','0','0','0','0','42','100','1','0','0','0','0','0','0','0','0','0','Atal''ai Deathwalker''s Spirit - Set Invinceable on Aggro'),
+('831701','8317','4','0','100','2','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Atal''ai Deathwalker''s Spirit - Set Invincible on Aggro'),
 ('831702','8317','0','0','100','2','15000','15000','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Atal''ai Deathwalker''s Spirit - Die after 15 Seconds'),
 -- Atal'ai Slave (8318) - NSR
 -- Nightmare Whelp (8319) - NSR
@@ -27815,7 +27815,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1652901','16529','0','0','100','3','5000','9000','12000','17000','0','0','11','29911','0','0','0','0','0','0','0','0','0','0','Magical Horror - Cast Power Distortion'),
 ('1652902','16529','6','0','100','2','0','0','0','0','0','0','11','37078','0','7','0','0','0','0','0','0','0','0','Magical Horror - Cast Arcane Volley on Death'),
 -- Mana Warp 16530
-('1653001','16530','11','0','100','2','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Mana Warp - Set Invincible at 1 HP on Spawn'),
+('1653001','16530','11','0','100','2','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Mana Warp - Set Invincible on Spawn'),
 ('1653002','16530','2','0','100','2','10','0','0','0','0','0','11','37079','0','2','11','29919','0','0','22','1','0','0','Mana Warp - Cast Warp Breach and Warp Breach Set Phase 1 at 10% HP'),
 ('1653003','16530','0','1','100','2','1500','1500','0','0','0','0','42','0','0','0','37','0','0','0','0','0','0','0','Mana Warp - Remove Invincible and Die (Phase 1)'),
 ('1653004','16530','7','0','100','2','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Mana Warp - Set Phase 0 on Evade'),
