@@ -6,7 +6,7 @@ UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='7102';
 UPDATE `quest_template` SET `RewMoneyMaxLevel`='390' WHERE `entry`='7121';
 UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='7122';
 UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='7124';
-UPDATE `quest_template` SET `requiredraces`='77', `RewMoneyMaxLevel`='5970' WHERE `entry`='7141';
+UPDATE `quest_template` SET `requiredraces`='1101', `RewMoneyMaxLevel`='5970' WHERE `entry`='7141';
 UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='7161';
 UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='7162';
 UPDATE `quest_template` SET `RewMoneyMaxLevel`='3960' WHERE `entry`='7163';
