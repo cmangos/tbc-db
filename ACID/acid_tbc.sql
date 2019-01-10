@@ -25735,7 +25735,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1797602','17976','4','0','100','0','0','0','0','0','0','0','1','-10004','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Aggro'),
 ('1797603','17976','6','0','100','0','0','0','0','0','0','0','1','-10006','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Death'),
 ('1797604','17976','5','0','100','1031','5000','5000','1','0','0','0','1','-10003','-10005','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Player Kill'),
-('1797605','17976','24','0','100','1025','34794','1','13300','17400','0','0','11','34799','1','0','1','-10008','0','0','0','0','0','0','Commander Sarannis - Cast Arcane Devastation and Yell on Target Arcane Resonance Aura Stack'),
+('1797605','17976','24','0','100','1025','34794','1','13300','17400','0','0','11','34799','1','0','1','-10007','-10008','0','0','0','0','0','Commander Sarannis - Cast Arcane Devastation and Yell on Target Arcane Resonance Aura Stack'),
 ('1797606','17976','2','0','100','1026','55','0','0','0','0','0','12','20078','4','1800000','12','19633','4','1800000','1','-10204','0','0','Commander Sarannis (Normal) - Spawn Bloodwarder Reservist and Bloodwarder Mender and Emote at 55% HP'),
 ('1797607','17976','2','0','100','1026','55','0','0','0','0','0','12','20078','4','1800000','12','20078','4','1800000','1','-10009','0','0','Commander Sarannis (Normal) - Spawn 2 Bloodwarder Reservists and Yell at 55% HP'),
 ('1797608','17976','0','0','100','1029','30000','30000','60000','60000','0','0','12','20078','4','1800000','12','19633','4','1800000','1','-10204','0','0','Commander Sarannis (Heroic) - Spawn Bloodwarder Reservist and Bloodwarder Mender and Emote'),
@@ -30867,7 +30867,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10004','Step forward.  I will see that you are properly welcomed!','11071','1','0','17976','0'),
 ('-10005','Oh stop your whimpering.','11072','1','0','17976','0'),
 ('-10006','I have not yet... begun to...','11079','1','0','17976','0'),
--- ('-10007','You are no longer dealing with some underling.','11076','1','0','17976','0'), -- confirm where this is used
+('-10007','You are no longer dealing with some underling.','11076','1','0','17976','0'),
 ('-10008','Band\'or shorel\'aran!','11077','1','0','17976','0'),
 ('-10009','Guards! Come and kill these intruders!','11078','1','0','17976','0'),
 ('-10010','Cipher of Damnation belongs to us now!','0','0','0','20427','0'),
