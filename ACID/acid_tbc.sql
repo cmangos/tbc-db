@@ -25731,16 +25731,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================================================================
 -- High Botanist Freywinn (17975) - boss_high_botanist_freywinn
 -- Commander Sarannis 17976 (4.3.4 Official Data - Normal/Heroic) - (Adds Summon Spell: 34803 / Casts - 34810 (NPC: 20083 5 Yards Behind) and 34817 / 34818 / 34819 (NPC: 20078 5 Yards Sides and Front)
-('1797601','17976','4','0','100','6','0','0','0','0','0','0','1','-10004','0','0','11','19818','0','32','0','0','0','0','Commander Sarannis - Yell and Cast Double Attack on Aggro'),
-('1797602','17976','9','0','100','3','0','10','3800','15300','0','0','11','34794','1','0','1','-10007','0','0','0','0','0','0','Commander Sarannis (Normal) - Cast Arcane Resonance and Yell'),
-('1797603','17976','9','0','100','5','0','10','2800','12900','0','0','11','34794','1','0','1','-10007','0','0','0','0','0','0','Commander Sarannis (Heroic) - Cast Arcane Resonance and Yell'),
-('1797604','17976','0','0','100','7','20400','20400','13300','37400','0','0','11','34799','1','1','1','-10008','0','0','0','0','0','0','Commander Sarannis - Cast Arcane Devastation on 3 Arcane Resonance Stack and Yell'),
-('1797605','17976','2','0','100','2','55','0','0','0','0','0','1','-10204','0','0','12','20078','4','1800000','12','19633','4','1800000','Commander Sarannis (Normal) - Emote and Spawn Bloodwarder Reservist and Bloodwarder Mender at 55% HP'),
-('1797606','17976','2','0','100','2','55','0','0','0','0','0','12','20078','4','1800000','12','20078','4','1800000','1','-10009','0','0','Commander Sarannis (Normal) - Spawn 2 Bloodwarder Reservists and Yell at 55% HP'),
-('1797607','17976','0','0','100','5','30000','30000','60000','60000','0','0','1','-10204','0','0','12','20078','4','1800000','12','19633','4','1800000','Commander Sarannis (Heroic) - Emote and Spawn Bloodwarder Reservist and Bloodwarder Mender'),
-('1797608','17976','0','0','100','5','30000','30000','60000','60000','0','0','12','20078','4','1800000','12','20078','4','1800000','1','-10009','0','0','Commander Sarannis (Heroic) - Spawn 2 Bloodwarder Reservists and Yell'),
-('1797609','17976','5','0','100','7','5000','5000','1','0','0','0','1','-10003','-10005','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Player Kill'),
-('1797610','17976','6','0','100','6','0','0','0','0','0','0','1','-10006','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Death'),
+('1797601','17976','11','0','100','0','0','0','0','0','0','0','11','19818','0','34','11','34792','0','34','0','0','0','0','Commander Sarannis - Cast Double Attack and Arcane Resonance on Spawn'),
+('1797602','17976','4','0','100','0','0','0','0','0','0','0','1','-10004','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Aggro'),
+('1797603','17976','6','0','100','0','0','0','0','0','0','0','1','-10006','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Death'),
+('1797604','17976','5','0','100','1031','5000','5000','1','0','0','0','1','-10003','-10005','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Player Kill'),
+('1797605','17976','24','0','100','1025','34794','1','13300','17400','0','0','11','34799','1','0','1','-10008','0','0','0','0','0','0','Commander Sarannis - Cast Arcane Devastation and Yell on Target Arcane Resonance Aura Stack'),
+('1797606','17976','2','0','100','1026','55','0','0','0','0','0','12','20078','4','1800000','12','19633','4','1800000','1','-10204','0','0','Commander Sarannis (Normal) - Spawn Bloodwarder Reservist and Bloodwarder Mender and Emote at 55% HP'),
+('1797607','17976','2','0','100','1026','55','0','0','0','0','0','12','20078','4','1800000','12','20078','4','1800000','1','-10009','0','0','Commander Sarannis (Normal) - Spawn 2 Bloodwarder Reservists and Yell at 55% HP'),
+('1797608','17976','0','0','100','1029','30000','30000','60000','60000','0','0','12','20078','4','1800000','12','19633','4','1800000','1','-10204','0','0','Commander Sarannis (Heroic) - Spawn Bloodwarder Reservist and Bloodwarder Mender and Emote'),
+('1797609','17976','0','0','100','1029','30000','30000','60000','60000','0','0','12','20078','4','1800000','12','20078','4','1800000','1','-10009','0','0','Commander Sarannis (Heroic) - Spawn 2 Bloodwarder Reservists and Yell'),
 -- Warp Splinter (17977) - boss_warp_splinter
 -- Thorngrin the Tender - boss_thorngrin
 -- Laj (17980) - boss_laj
@@ -30864,10 +30863,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10001','I\'m gonna cook ya, an\' then I\'m gonna eat ya!','0','1','0','Blazing Trickster 20905','1'),
 ('-10002','I hope you all... die in pain!','0','1','0','Blazing Trickster 20905','0'),
 ('-10003','Mission accomplished.','11073','1','0','17976','0'),
-('-10004','Step forward! I will see that you are properly welcomed.','11071','1','0','17976','0'),
+('-10004','Step forward.  I will see that you are properly welcomed!','11071','1','0','17976','0'),
 ('-10005','Oh stop your whimpering.','11072','1','0','17976','0'),
 ('-10006','I have not yet... begun to...','11079','1','0','17976','0'),
-('-10007','You are no longer dealing with some underling.','11076','1','0','17976','0'),
+-- ('-10007','You are no longer dealing with some underling.','11076','1','0','17976','0'), -- confirm where this is used
 ('-10008','Band\'or shorel\'aran!','11077','1','0','17976','0'),
 ('-10009','Guards! Come and kill these intruders!','11078','1','0','17976','0'),
 ('-10010','Cipher of Damnation belongs to us now!','0','0','0','20427','0'),
