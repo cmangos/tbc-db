@@ -197,6 +197,8 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+66, 0, 0, 1, 16, 13, 0, NULL), -- Nascent Fel Orc
 (@CGUID+68, 0, 0, 1, 16, 13, 0, NULL), -- Nascent Fel Orc
 (@CGUID+75, 0, 0, 1, 16, 13, 0, NULL), -- Nascent Fel Orc
+(@CGUID+79, 0, 0, 0, 0, 333, 0, NULL), -- Felguard Annihilator
+(@CGUID+81, 0, 0, 0, 0, 333, 0, NULL), -- Felguard Annihilator
 (@CGUID+85, 0, 0, 0, 16, 69, 0, NULL), -- Shadowmoon Technician
 (@CGUID+87, 0, 0, 1, 16, 0, 0, '31059'), -- Shadowmoon Technician
 (@CGUID+88, 0, 0, 0, 16, 69, 0, NULL), -- Shadowmoon Technician
@@ -217,123 +219,72 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+12, @CGUID+9, 1167), -- Laughing Skull Enforcer -> Laughing Skull Enforcer
--- (@CGUID+9, @CGUID+38, 1024), -- Laughing Skull Enforcer -> The Maker
 (@CGUID+52, @CGUID+166, 1167), -- Shadowmoon Adept -> Hellfire Imp
 (@CGUID+48, @CGUID+166, 1167), -- Shadowmoon Adept -> Hellfire Imp
--- (@CGUID+166, @CGUID+38, 1024), -- Hellfire Imp -> The Maker
 (@CGUID+47, @CGUID+167, 1167), -- Shadowmoon Adept -> Hellfire Imp
 (@CGUID+50, @CGUID+167, 1167), -- Shadowmoon Adept -> Hellfire Imp
--- (@CGUID+167, @CGUID+38, 1024), -- Hellfire Imp -> The Maker
 (@CGUID+51, @CGUID+165, 1167), -- Shadowmoon Adept -> Hellfire Imp
 (@CGUID+53, @CGUID+165, 1167), -- Shadowmoon Adept -> Hellfire Imp
--- (@CGUID+165, @CGUID+38, 1024), -- Hellfire Imp -> The Maker
 (@CGUID+7, @CGUID+10, 1167), -- Laughing Skull Enforcer -> Laughing Skull Enforcer
--- (@CGUID+10, @CGUID+38, 1024), -- Laughing Skull Enforcer -> The Maker
--- (@CGUID+171, @CGUID+38, 1024), -- Laughing Skull Rogue -> The Maker
--- (@CGUID+173, @CGUID+38, 1024), -- Laughing Skull Rogue -> The Maker
--- (@CGUID+174, @CGUID+38, 1024), -- Laughing Skull Rogue -> The Maker
 (@CGUID+11, @CGUID+6, 1167), -- Laughing Skull Enforcer -> Laughing Skull Enforcer
--- (@CGUID+6, @CGUID+38, 1024), -- Laughing Skull Enforcer -> The Maker
 (@CGUID+49, @CGUID+169, 1167), -- Shadowmoon Adept -> Hellfire Imp
 (@CGUID+54, @CGUID+169, 1167), -- Shadowmoon Adept -> Hellfire Imp
--- (@CGUID+169, @CGUID+38, 1024), -- Hellfire Imp -> The Maker
 (@CGUID+55, @CGUID+168, 1167), -- Shadowmoon Adept -> Hellfire Imp
 (@CGUID+56, @CGUID+168, 1167), -- Shadowmoon Adept -> Hellfire Imp
--- (@CGUID+168, @CGUID+38, 1024), -- Hellfire Imp -> The Maker
 (@CGUID+57, @CGUID+170, 1167), -- Shadowmoon Adept -> Hellfire Imp
 (@CGUID+58, @CGUID+170, 1167), -- Shadowmoon Adept -> Hellfire Imp
--- (@CGUID+170, @CGUID+38, 1024), -- Hellfire Imp -> The Maker
--- (@CGUID+21, @CGUID+38, 1024), -- Shadowmoon Warlock -> The Maker
 (@CGUID+8, @CGUID+183, 1167), -- Laughing Skull Enforcer -> Laughing Skull Legionnaire
--- (@CGUID+183, @CGUID+38, 1024), -- Laughing Skull Legionnaire -> The Maker
 (@CGUID+13, @CGUID+184, 1167), -- Laughing Skull Enforcer -> Laughing Skull Legionnaire
--- (@CGUID+184, @CGUID+38, 1024), -- Laughing Skull Legionnaire -> The Maker
--- (@CGUID+177, @CGUID+38, 1024), -- Laughing Skull Rogue -> The Maker
--- (@CGUID+22, @CGUID+38, 1024), -- Shadowmoon Warlock -> The Maker
 (@CGUID+59, @CGUID+40, 1167), -- Shadowmoon Adept -> Shadowmoon Summoner
 (@CGUID+60, @CGUID+40, 1167), -- Shadowmoon Adept -> Shadowmoon Summoner
--- (@CGUID+40, @CGUID+38, 1024), -- Shadowmoon Summoner -> The Maker
 (@CGUID+42, @CGUID+41, 1167), -- Shadowmoon Summoner -> Shadowmoon Summoner
 (@CGUID+61, @CGUID+41, 1167), -- Shadowmoon Adept -> Shadowmoon Summoner
--- (@CGUID+41, @CGUID+38, 1024), -- Shadowmoon Summoner -> The Maker
 (@CGUID+14, @CGUID+15, 1167), -- Laughing Skull Enforcer -> Laughing Skull Enforcer
--- (@CGUID+15, @CGUID+38, 1024), -- Laughing Skull Enforcer -> The Maker
 (@CGUID+188, @CGUID+181, 1679), -- Laughing Skull Legionnaire -> Laughing Skull Warden
--- (@CGUID+181, @CGUID+38, 1024), -- Laughing Skull Warden -> The Maker
 (@CGUID+187, @CGUID+20, 1679), -- Laughing Skull Legionnaire -> Shadowmoon Warlock
--- (@CGUID+20, @CGUID+38, 1024), -- Shadowmoon Warlock -> The Maker
 (@CGUID+96, @CGUID+46, 1167), -- Shadowmoon Technician -> Shadowmoon Summoner
--- (@CGUID+46, @CGUID+38, 1024), -- Shadowmoon Summoner -> The Maker
 (@CGUID+83, @CGUID+39, 1167), -- Shadowmoon Technician -> Shadowmoon Summoner
--- (@CGUID+39, @CGUID+38, 1024), -- Shadowmoon Summoner -> The Maker
 (@CGUID+84, @CGUID+82, 1167), -- Shadowmoon Technician -> Shadowmoon Technician
--- (@CGUID+82, @CGUID+38, 1024), -- Shadowmoon Technician -> The Maker
 (@CGUID+16, @CGUID+17, 1679), -- Laughing Skull Enforcer -> Laughing Skull Enforcer
--- (@CGUID+17, @CGUID+37, 1024), -- Laughing Skull Enforcer -> Broggok
--- (@CGUID+175, @CGUID+37, 1024), -- Laughing Skull Rogue -> Broggok
--- (@CGUID+179, @CGUID+37, 1024), -- Laughing Skull Rogue -> Broggok
 (@CGUID+65, @CGUID+85, 1167), -- Nascent Fel Orc -> Shadowmoon Technician
 (@CGUID+88, @CGUID+85, 1167), -- Shadowmoon Technician -> Shadowmoon Technician
--- (@CGUID+85, @CGUID+37, 1024), -- Shadowmoon Technician -> Broggok
 (@CGUID+67, @CGUID+92, 1167), -- Nascent Fel Orc -> Shadowmoon Technician
 (@CGUID+90, @CGUID+92, 1167), -- Shadowmoon Technician -> Shadowmoon Technician
--- (@CGUID+92, @CGUID+37, 1024), -- Shadowmoon Technician -> Broggok
 (@CGUID+32, @CGUID+68, 1167), -- Shadowmoon Warlock -> Nascent Fel Orc
 (@CGUID+45, @CGUID+68, 1167), -- Shadowmoon Summoner -> Nascent Fel Orc
--- (@CGUID+68, @CGUID+37, 1024), -- Nascent Fel Orc -> Broggok
 (@CGUID+33, @CGUID+75, 1167), -- Shadowmoon Warlock -> Nascent Fel Orc
 (@CGUID+34, @CGUID+75, 1167), -- Shadowmoon Warlock -> Nascent Fel Orc
--- (@CGUID+75, @CGUID+37, 1024), -- Nascent Fel Orc -> Broggok
 (@CGUID+18, @CGUID+19, 1679), -- Laughing Skull Enforcer -> Laughing Skull Enforcer
--- (@CGUID+19, @CGUID+37, 1024), -- Laughing Skull Enforcer -> Broggok
 (@CGUID+73, @CGUID+94, 1167), -- Nascent Fel Orc -> Shadowmoon Technician
 (@CGUID+95, @CGUID+94, 1167), -- Shadowmoon Technician -> Shadowmoon Technician
--- (@CGUID+94, @CGUID+37, 1024), -- Shadowmoon Technician -> Broggok
--- (@CGUID+178, @CGUID+37, 1024), -- Laughing Skull Rogue -> Broggok
 (@CGUID+185, @CGUID+182, 1679), -- Laughing Skull Legionnaire -> Laughing Skull Warden
 (@CGUID+186, @CGUID+182, 1679), -- Laughing Skull Legionnaire -> Laughing Skull Warden
--- (@CGUID+182, @CGUID+37, 1024), -- Laughing Skull Rogue -> Broggok
 (@CGUID+44, @CGUID+35, 1167), -- Shadowmoon Summoner -> Shadowmoon Warlock
 (@CGUID+86, @CGUID+35, 1167), -- Shadowmoon Technician -> Shadowmoon Warlock
--- (@CGUID+35, @CGUID+37, 1024), -- Shadowmoon Warlock -> Broggok
 (@CGUID+89, @CGUID+91, 1167), -- Shadowmoon Technician -> Shadowmoon Technician
 (@CGUID+93, @CGUID+91, 1167), -- Shadowmoon Technician -> Shadowmoon Technician
--- (@CGUID+91, @CGUID+37, 1024), -- Shadowmoon Technician -> Broggok
 (@CGUID+31, @CGUID+66, 1167), -- Shadowmoon Warlock -> Nascent Fel Orc
 (@CGUID+87, @CGUID+66, 1167), -- Shadowmoon Technician -> Nascent Fel Orc
--- (@CGUID+66, @CGUID+37, 1024), -- Nascent Fel Orc -> Broggok
 (@CGUID+26, @CGUID+144, 1167), -- Shadowmoon Warlock -> Fel Orc Neophyte
 (@CGUID+43, @CGUID+144, 1167), -- Shadowmoon Summoner -> Fel Orc Neophyte
--- (@CGUID+144, @CGUID+37, 1024), -- Nascent Fel Orc -> Broggok
 (@CGUID+28, @CGUID+30, 1679), -- Shadowmoon Warlock -> Shadowmoon Warlock
 (@CGUID+204, @CGUID+30, 1679), -- Hellfire Familiar -> Shadowmoon Warlock
 (@CGUID+205, @CGUID+30, 1679), -- Hellfire Familiar -> Shadowmoon Warlock
 (@CGUID+206, @CGUID+30, 1679), -- Hellfire Familiar -> Shadowmoon Warlock
--- (@CGUID+30, @CGUID+36, 1024), -- Shadowmoon Warlock -> Keli'dan the Breaker
 (@CGUID+27, @CGUID+197, 1679), -- Shadowmoon Warlock -> Felguard Brute
--- (@CGUID+197, @CGUID+36, 1024), -- Felguard Brute -> Keli'dan the Breaker
--- (@CGUID+172, @CGUID+36, 1024), -- Laughing Skull Rogue -> Keli'dan the Breaker
--- (@CGUID+176, @CGUID+36, 1024), -- Laughing Skull Rogue -> Keli'dan the Breaker
 (@CGUID+29, @CGUID+196, 1679), -- Shadowmoon Warlock -> Felguard Brute
--- (@CGUID+196, @CGUID+36, 1024), -- Felguard Brute -> Keli'dan the Breaker
 (@CGUID+195, @CGUID+194, 1167), -- Felguard Brute -> Felguard Brute
--- (@CGUID+194, @CGUID+36, 1024), -- Felguard Brute -> Keli'dan the Breaker
 (@CGUID+198, @CGUID+23, 1167), -- Hellfire Familiar -> Shadowmoon Warlock
 (@CGUID+199, @CGUID+23, 1167), -- Hellfire Familiar -> Shadowmoon Warlock
 (@CGUID+200, @CGUID+23, 1167), -- Hellfire Familiar -> Shadowmoon Warlock
 (@CGUID+201, @CGUID+23, 1167), -- Hellfire Familiar -> Shadowmoon Warlock
 (@CGUID+202, @CGUID+23, 1167), -- Hellfire Familiar -> Shadowmoon Warlock
 (@CGUID+203, @CGUID+23, 1167), -- Hellfire Familiar -> Shadowmoon Warlock
--- (@CGUID+23, @CGUID+36, 1024), -- Shadowmoon Warlock -> Keli'dan the Breaker
--- (@CGUID+180, @CGUID+36, 1024), -- Laughing Skull Rogue -> Keli'dan the Breaker
 (@CGUID+81, @CGUID+79, 1167), -- Felguard Annihilator -> Felguard Annihilator
--- (@CGUID+79, @CGUID+36, 1024), -- Felguard Annihilator -> Keli'dan the Breaker
 (@CGUID+77, @CGUID+25, 1167), -- Felguard Annihilator -> Shadowmoon Warlock
 (@CGUID+80, @CGUID+25, 1167), -- Felguard Annihilator -> Shadowmoon Warlock
--- (@CGUID+25, @CGUID+36, 1024), -- Shadowmoon Warlock -> Keli'dan the Breaker
 (@CGUID+76, @CGUID+24, 1167), -- Felguard Annihilator -> Shadowmoon Warlock
 (@CGUID+78, @CGUID+24, 1167); -- Felguard Annihilator -> Shadowmoon Warlock
--- (@CGUID+24, @CGUID+36, 1024); -- Shadowmoon Warlock -> Keli'dan the Breaker
 
 -- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
