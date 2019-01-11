@@ -1087,7 +1087,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (24558, 585, 24560, 11, 0), -- Ellrys Duskhallow -> Priestess Delrissa
 (24559, 585, 24560, 11, 0), -- Warlord Salaris -> Priestess Delrissa
 (24561, 585, 24560, 11, 0), -- Yazzai -> Priestess Delrissa
-(24722, 585, 24723, 36, 0); -- Fel Crystal -> Selin Fireheart
+(24722, 585, 24723, 32, 0); -- Fel Crystal -> Selin Fireheart
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 1412, 585, 3, 106.8108, -32.7257, 2.083333, 0.5340122, 7200, 7200, 15, 0, 0, 1), -- Squirrel
