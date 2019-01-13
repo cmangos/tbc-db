@@ -36,11 +36,25 @@ DELETE FROM `reference_loot_template` WHERE `item` IN (4810) AND `entry` != 6506
 
 -- Mosh'Ogg Butcher (rare elite ogre, Stranglethorn Vale)
 -- Source: http://www.wowwiki.com/Mosh%27Ogg_Butcher
-DELETE FROM `creature_loot_template` WHERE `entry` = 723 AND `item` = 1680; -- As this is no raremob anymore at some point, it doesnt have a unique reference_loot_template at the moment
-INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
-(723, 1680, 40, 0, 1, 1, 0, 'Headchopper'); -- uncommon Headchopper IL 44 [39] 2H-Axe
+DELETE FROM `creature_loot_template` WHERE `entry` = 723 AND `item` IN (1680,60172); -- As this is no raremob anymore at some point, it doesnt have a unique reference_loot_template at the moment
+
 -- Item 1680 (Headchopper) is not a world drop so removed it from reference_loot_template table
-DELETE FROM `reference_loot_template` WHERE `item` IN (1680);
+DELETE FROM `reference_loot_template` WHERE `item` IN (1680) AND `entry` != 65281;
 -- Updated rank of Mosh'Ogg Butcher (creature 723) as he is rare and elite
 -- UPDATE `creature_template` SET `rank` = 2 WHERE `entry` = 723; -- not legit via wotlk sniff (rank = 0), i guess they were changed with the Mosh'Ogg Lords in patch 2.3
+
+DELETE FROM `reference_loot_template_names` WHERE `entry` = 65281;
+INSERT INTO `reference_loot_template_names` (`entry`, `name`) VALUES
+(65281, 'NPC LOOT (Rare NPC Loot) - Mosh''Ogg Butcher - Special Items');
+
+-- Add Ref
+DELETE FROM `reference_loot_template` WHERE `entry` = 65281;
+INSERT INTO reference_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES
+(65281, 1680, 20, 0, 1, 1, 0, 'Headchopper'), -- uncommon Headchopper IL 44 [39] 2H-Axe
+(65281, 60172, 80, 0, -60172, 1, 0, 'NPC LOOT (Green World Drop) - (Item Levels: 43-47) - (NPC Levels: 44)');
+
+-- Add to creature
+DELETE FROM creature_loot_template WHERE entry='723' AND mincountOrRef='-65281';
+INSERT INTO creature_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES
+('723', '65281', '100', '0', '-65281', '1', '0', 'NPC LOOT (Rare NPC Loot) - Mosh''Ogg Butcher - Special Items');
 
