@@ -1,10 +1,17 @@
 -- Remove Rare Items from World Loot
 
+-- https://web.archive.org/web/20050226204818/http://wow.allakhazam.com:80/db/mob.html?wmob=61 - Chances flipped
+UPDATE `reference_loot_template` SET `ChanceOrQuestChance` = 70 WHERE `entry` = 65000 AND `item` = 6202; -- Fingerless Gloves
+UPDATE `reference_loot_template` SET `ChanceOrQuestChance` = 30 WHERE `entry` = 65000 AND `item` = 6203; -- Thuggish Shield
+
+-- 65004	NPC LOOT (Rare NPC Loot) - Vultros - Special Items
+DELETE FROM reference_loot_template WHERE `item` = 5971 AND `entry` != 65004;
+
 -- 65006	NPC LOOT (Rare NPC Loot) - Fedfennel - Special Items
 DELETE FROM reference_loot_template WHERE `item` = 5744 AND `entry` != 65006;
 
 -- 65007	NPC LOOT (Rare NPC Loot) - Lord Malathrom - Special Items
-DELETE FROM reference_loot_template WHERE `item` = 5971 AND `entry` != 65007;
+DELETE FROM reference_loot_template WHERE `item` IN (1187,4462) AND `entry` != 65007;
 
 -- 65008	NPC LOOT (Rare NPC Loot) - Sergeant Brashclaw - Special Items
 DELETE FROM reference_loot_template WHERE `item` IN (2203,2204) AND `entry` != 65008;
