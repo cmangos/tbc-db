@@ -3037,7 +3037,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ranger Selron (15940) - NSR
 -- Apprentice Ralen 15941
 ('1594101','15941','8','2','100','1','27907','-1','15000','15000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Apprentice Ralen - Set Phase 1 on Disciplinary Rod Spellhit (Phase 0)'),
-('1594102','15941','1','1','100','1','3000','3000','3000','3000','0','0','54','-10134','0','0','22','0','0','0','0','0','0','0','Apprentice Ralen - Say and Set Phase 0 OOC (Phase 1)'),
+('1594102','15941','1','1','100','1','3000','3000','3000','3000','0','0','54','-10164','0','0','22','0','0','0','0','0','0','0','Apprentice Ralen - Say and Set Phase 0 OOC (Phase 1)'),
 -- Ranger Sareyn (15942) - NSR
 -- Apprentice Meledor 15945
 ('1594501','15945','8','2','100','1','27907','-1','15000','15000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Apprentice Meledor - Set Phase 1 on Disciplinary Rod Spellhit (Phase 0)'),
@@ -31029,7 +31029,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10161','Your time is almost... up.','11002','1','0','17842','0'),
 ('-10162','%s defends himself in desperation.','0','2','0','Desperate Defense Text','0'),
 ('-10163','It\'s so cold, so dark.... I\'m not overacting, am I?','0','0','0','16473','0'),
--- TBC PLEASE REUSE 10164
+('-10164','What?  Oh, not this again!','0','0','0','15941','0'),
 ('-10165','You hear a faint unlocking sound...','0','2','0','Mechanar','0'),
 ('-10166','You have approximately five seconds to live.','11109','1','0','19710','0'),
 ('-10167','With the precise angle and velocity...','11112','1','0','19710','0'),
