@@ -1305,96 +1305,96 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+119, @CGUID+144, 1024), -- Spectral Charger -> Midnight
-(@CGUID+118, @CGUID+122, 1039), -- Spectral Charger -> Spectral Stallion
+(@CGUID+118, @CGUID+122, 1167), -- Spectral Charger -> Spectral Stallion
 (@CGUID+122, @CGUID+144, 1024), -- Spectral Stallion -> Midnight
-(@CGUID+129, @CGUID+136, 1551), -- Spectral Stallion -> Spectral Stable Hand
+(@CGUID+129, @CGUID+136, 1679), -- Spectral Stallion -> Spectral Stable Hand
 (@CGUID+136, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
-(@CGUID+123, @CGUID+126, 1039), -- Spectral Stallion -> Spectral Stallion
+(@CGUID+123, @CGUID+126, 1167), -- Spectral Stallion -> Spectral Stallion
 (@CGUID+126, @CGUID+144, 1024), -- Spectral Stallion -> Midnight
 (@CGUID+133, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
-(@CGUID+128, @CGUID+115, 1039), -- Spectral Stallion -> Spectral Charger
+(@CGUID+128, @CGUID+115, 1167), -- Spectral Stallion -> Spectral Charger
 (@CGUID+115, @CGUID+144, 1024), -- Spectral Charger -> Midnight
-(@CGUID+127, @CGUID+134, 1039), -- Spectral Stallion -> Spectral Stable Hand
+(@CGUID+127, @CGUID+134, 1167), -- Spectral Stallion -> Spectral Stable Hand
 (@CGUID+134, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
 (@CGUID+135, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
-(@CGUID+117, @CGUID+125, 1039), -- Spectral Charger -> Spectral Stallion
+(@CGUID+117, @CGUID+125, 1167), -- Spectral Charger -> Spectral Stallion
 (@CGUID+125, @CGUID+144, 1024), -- Spectral Stallion -> Midnight
-(@CGUID+137, @CGUID+138, 1039), -- Spectral Stable Hand -> Spectral Stable Hand
-(@CGUID+120, @CGUID+138, 1039), -- Spectral Charger -> Spectral Stable Hand
-(@CGUID+121, @CGUID+138, 1039), -- Spectral Charger -> Spectral Stable Hand
+(@CGUID+137, @CGUID+138, 1167), -- Spectral Stable Hand -> Spectral Stable Hand
+(@CGUID+120, @CGUID+138, 1167), -- Spectral Charger -> Spectral Stable Hand
+(@CGUID+121, @CGUID+138, 1167), -- Spectral Charger -> Spectral Stable Hand
 (@CGUID+138, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
-(@CGUID+130, @CGUID+116, 1039), -- Spectral Stable Hand -> Spectral Charger
-(@CGUID+131, @CGUID+116, 1039), -- Spectral Stable Hand -> Spectral Charger
-(@CGUID+132, @CGUID+116, 1039), -- Spectral Stable Hand -> Spectral Charger
-(@CGUID+124, @CGUID+116, 1039), -- Spectral Stallion -> Spectral Charger
+(@CGUID+130, @CGUID+116, 1167), -- Spectral Stable Hand -> Spectral Charger
+(@CGUID+131, @CGUID+116, 1167), -- Spectral Stable Hand -> Spectral Charger
+(@CGUID+132, @CGUID+116, 1167), -- Spectral Stable Hand -> Spectral Charger
+(@CGUID+124, @CGUID+116, 1167), -- Spectral Stallion -> Spectral Charger
 (@CGUID+116, @CGUID+144, 1024), -- Spectral Charger -> Midnight
-(@CGUID+212, @CGUID+208, 1039), -- Spectral Apprentice -> Spectral Apprentice
-(@CGUID+213, @CGUID+208, 1039), -- Spectral Apprentice -> Spectral Apprentice
-(@CGUID+239, @CGUID+208, 1039), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+240, @CGUID+208, 1039), -- Spectral Servant -> Spectral Apprentice
+(@CGUID+212, @CGUID+208, 1167), -- Spectral Apprentice -> Spectral Apprentice
+(@CGUID+213, @CGUID+208, 1167), -- Spectral Apprentice -> Spectral Apprentice
+(@CGUID+239, @CGUID+208, 1167), -- Spectral Servant -> Spectral Apprentice
+(@CGUID+240, @CGUID+208, 1167), -- Spectral Servant -> Spectral Apprentice
 (@CGUID+208, @CGUID+144, 1024), -- Spectral Apprentice -> Midnight
-(@CGUID+210, @CGUID+209, 1039), -- Spectral Apprentice -> Spectral Apprentice
-(@CGUID+211, @CGUID+209, 1039), -- Spectral Apprentice -> Spectral Apprentice
-(@CGUID+241, @CGUID+209, 1039), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+242, @CGUID+209, 1039), -- Spectral Servant -> Spectral Apprentice
+(@CGUID+210, @CGUID+209, 1167), -- Spectral Apprentice -> Spectral Apprentice
+(@CGUID+211, @CGUID+209, 1167), -- Spectral Apprentice -> Spectral Apprentice
+(@CGUID+241, @CGUID+209, 1167), -- Spectral Servant -> Spectral Apprentice
+(@CGUID+242, @CGUID+209, 1167), -- Spectral Servant -> Spectral Apprentice
 (@CGUID+209, @CGUID+144, 1024), -- Spectral Apprentice -> Midnight
-(@CGUID+276, @CGUID+278, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+279, @CGUID+278, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+280, @CGUID+278, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+281, @CGUID+278, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+282, @CGUID+278, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+283, @CGUID+278, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+284, @CGUID+278, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+276, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+279, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+280, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+281, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+282, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+283, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+284, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+278, @CGUID+139, 1024), -- Phantom Guest -> Moroes
 (@CGUID+244, @CGUID+139, 1024), -- Phantom Valet -> Moroes
 (@CGUID+230, @CGUID+139, 1024), -- Spectral Servant -> Moroes
-(@CGUID+222, @CGUID+358, 1039), -- Phantom Attendant -> Spectral Retainer
-(@CGUID+223, @CGUID+358, 1039), -- Phantom Attendant -> Spectral Retainer
-(@CGUID+224, @CGUID+358, 1039), -- Phantom Attendant -> Spectral Retainer
-(@CGUID+225, @CGUID+358, 1039), -- Phantom Attendant -> Spectral Retainer
+(@CGUID+222, @CGUID+358, 1167), -- Phantom Attendant -> Spectral Retainer
+(@CGUID+223, @CGUID+358, 1167), -- Phantom Attendant -> Spectral Retainer
+(@CGUID+224, @CGUID+358, 1167), -- Phantom Attendant -> Spectral Retainer
+(@CGUID+225, @CGUID+358, 1167), -- Phantom Attendant -> Spectral Retainer
 (@CGUID+358, @CGUID+139, 1024), -- Spectral Retainer -> Moroes
 (@CGUID+238, @CGUID+139, 1024), -- Spectral Servant -> Moroes
 (@CGUID+247, @CGUID+139, 1024), -- Phantom Valet -> Moroes
 (@CGUID+231, @CGUID+139, 1024), -- Spectral Servant -> Moroes
 (@CGUID+232, @CGUID+139, 1024), -- Spectral Servant -> Moroes
-(@CGUID+264, @CGUID+269, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+265, @CGUID+269, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+266, @CGUID+269, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+267, @CGUID+269, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+268, @CGUID+269, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+270, @CGUID+269, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+271, @CGUID+269, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+264, @CGUID+269, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+265, @CGUID+269, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+266, @CGUID+269, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+267, @CGUID+269, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+268, @CGUID+269, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+270, @CGUID+269, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+271, @CGUID+269, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+269, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+256, @CGUID+259, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+257, @CGUID+259, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+258, @CGUID+259, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+260, @CGUID+259, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+261, @CGUID+259, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+262, @CGUID+259, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+263, @CGUID+259, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+256, @CGUID+259, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+257, @CGUID+259, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+258, @CGUID+259, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+260, @CGUID+259, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+261, @CGUID+259, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+262, @CGUID+259, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+263, @CGUID+259, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+259, @CGUID+139, 1024), -- Phantom Guest -> Moroes
 (@CGUID+353, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+217, @CGUID+220, 1039), -- Phantom Attendant -> Phantom Attendant
-(@CGUID+218, @CGUID+220, 1039), -- Phantom Attendant -> Phantom Attendant
-(@CGUID+219, @CGUID+220, 1039), -- Phantom Attendant -> Phantom Attendant
-(@CGUID+356, @CGUID+220, 1039), -- Spectral Retainer -> Phantom Attendant
+(@CGUID+217, @CGUID+220, 1167), -- Phantom Attendant -> Phantom Attendant
+(@CGUID+218, @CGUID+220, 1167), -- Phantom Attendant -> Phantom Attendant
+(@CGUID+219, @CGUID+220, 1167), -- Phantom Attendant -> Phantom Attendant
+(@CGUID+356, @CGUID+220, 1167), -- Spectral Retainer -> Phantom Attendant
 (@CGUID+220, @CGUID+139, 1024), -- Phantom Attendant -> Moroes
-(@CGUID+345, @CGUID+344, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+346, @CGUID+344, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+347, @CGUID+344, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+348, @CGUID+344, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+349, @CGUID+344, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+350, @CGUID+344, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+351, @CGUID+344, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+345, @CGUID+344, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+346, @CGUID+344, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+347, @CGUID+344, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+348, @CGUID+344, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+349, @CGUID+344, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+350, @CGUID+344, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+351, @CGUID+344, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+344, @CGUID+139, 1024), -- Phantom Guest -> Moroes
 (@CGUID+352, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+251, @CGUID+255, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+252, @CGUID+255, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+253, @CGUID+255, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+254, @CGUID+255, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+274, @CGUID+255, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+275, @CGUID+255, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+319, @CGUID+255, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+251, @CGUID+255, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+252, @CGUID+255, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+253, @CGUID+255, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+254, @CGUID+255, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+274, @CGUID+255, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+275, @CGUID+255, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+319, @CGUID+255, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+255, @CGUID+139, 1024), -- Phantom Guest -> Moroes
 (@CGUID+354, @CGUID+139, 1024), -- Phantom Guest -> Moroes
 (@CGUID+245, @CGUID+139, 1024), -- Phantom Valet -> Moroes
@@ -1403,237 +1403,237 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+235, @CGUID+139, 1024), -- Spectral Servant -> Moroes
 (@CGUID+236, @CGUID+139, 1024), -- Spectral Servant -> Moroes
 (@CGUID+237, @CGUID+139, 1024), -- Spectral Servant -> Moroes
-(@CGUID+272, @CGUID+326, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+273, @CGUID+326, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+277, @CGUID+326, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+320, @CGUID+326, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+321, @CGUID+326, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+322, @CGUID+326, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+323, @CGUID+326, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+324, @CGUID+326, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+325, @CGUID+326, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+272, @CGUID+326, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+273, @CGUID+326, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+277, @CGUID+326, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+320, @CGUID+326, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+321, @CGUID+326, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+322, @CGUID+326, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+323, @CGUID+326, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+324, @CGUID+326, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+325, @CGUID+326, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+326, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+214, @CGUID+357, 1039), -- Phantom Attendant -> Spectral Retainer
-(@CGUID+216, @CGUID+357, 1039), -- Phantom Attendant -> Spectral Retainer
-(@CGUID+221, @CGUID+357, 1039), -- Phantom Attendant -> Spectral Retainer
-(@CGUID+226, @CGUID+357, 1039), -- Phantom Attendant -> Spectral Retainer
+(@CGUID+214, @CGUID+357, 1167), -- Phantom Attendant -> Spectral Retainer
+(@CGUID+216, @CGUID+357, 1167), -- Phantom Attendant -> Spectral Retainer
+(@CGUID+221, @CGUID+357, 1167), -- Phantom Attendant -> Spectral Retainer
+(@CGUID+226, @CGUID+357, 1167), -- Phantom Attendant -> Spectral Retainer
 (@CGUID+357, @CGUID+139, 1024), -- Spectral Retainer -> Moroes
-(@CGUID+327, @CGUID+336, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+333, @CGUID+336, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+334, @CGUID+336, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+335, @CGUID+336, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+338, @CGUID+336, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+340, @CGUID+336, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+341, @CGUID+336, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+343, @CGUID+336, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+327, @CGUID+336, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+333, @CGUID+336, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+334, @CGUID+336, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+335, @CGUID+336, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+338, @CGUID+336, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+340, @CGUID+336, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+341, @CGUID+336, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+343, @CGUID+336, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+336, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+215, @CGUID+228, 1039), -- Phantom Attendant -> Phantom Attendant
-(@CGUID+227, @CGUID+228, 1039), -- Phantom Attendant -> Phantom Attendant
-(@CGUID+229, @CGUID+228, 1039), -- Phantom Attendant -> Phantom Attendant
-(@CGUID+355, @CGUID+228, 1039), -- Spectral Retainer -> Phantom Attendant
+(@CGUID+215, @CGUID+228, 1167), -- Phantom Attendant -> Phantom Attendant
+(@CGUID+227, @CGUID+228, 1167), -- Phantom Attendant -> Phantom Attendant
+(@CGUID+229, @CGUID+228, 1167), -- Phantom Attendant -> Phantom Attendant
+(@CGUID+355, @CGUID+228, 1167), -- Spectral Retainer -> Phantom Attendant
 (@CGUID+228, @CGUID+139, 1024), -- Phantom Attendant -> Moroes
 (@CGUID+243, @CGUID+139, 1024), -- Ghostly Servant -> Moroes
 (@CGUID+246, @CGUID+139, 1024), -- Phantom Valet -> Moroes
 (@CGUID+248, @CGUID+139, 1024), -- Phantom Guest -> Moroes
 (@CGUID+249, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+297, @CGUID+298, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+299, @CGUID+298, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+300, @CGUID+298, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+301, @CGUID+298, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+302, @CGUID+298, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+308, @CGUID+298, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+309, @CGUID+298, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+297, @CGUID+298, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+299, @CGUID+298, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+300, @CGUID+298, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+301, @CGUID+298, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+302, @CGUID+298, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+308, @CGUID+298, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+309, @CGUID+298, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+298, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+294, @CGUID+296, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+295, @CGUID+296, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+303, @CGUID+296, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+304, @CGUID+296, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+305, @CGUID+296, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+306, @CGUID+296, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+307, @CGUID+296, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+294, @CGUID+296, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+295, @CGUID+296, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+303, @CGUID+296, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+304, @CGUID+296, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+305, @CGUID+296, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+306, @CGUID+296, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+307, @CGUID+296, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+296, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+286, @CGUID+285, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+287, @CGUID+285, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+288, @CGUID+285, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+289, @CGUID+285, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+290, @CGUID+285, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+291, @CGUID+285, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+292, @CGUID+285, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+293, @CGUID+285, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+286, @CGUID+285, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+287, @CGUID+285, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+288, @CGUID+285, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+289, @CGUID+285, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+290, @CGUID+285, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+291, @CGUID+285, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+292, @CGUID+285, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+293, @CGUID+285, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+285, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+311, @CGUID+310, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+312, @CGUID+310, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+313, @CGUID+310, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+314, @CGUID+310, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+315, @CGUID+310, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+316, @CGUID+310, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+317, @CGUID+310, 1039), -- Phantom Guest -> Phantom Guest
-(@CGUID+318, @CGUID+310, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+311, @CGUID+310, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+312, @CGUID+310, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+313, @CGUID+310, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+314, @CGUID+310, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+315, @CGUID+310, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+316, @CGUID+310, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+317, @CGUID+310, 1167), -- Phantom Guest -> Phantom Guest
+(@CGUID+318, @CGUID+310, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+310, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+371, @CGUID+370, 1039), -- Ghostly Steward -> Ghostly Steward
+(@CGUID+371, @CGUID+370, 1167), -- Ghostly Steward -> Ghostly Steward
 (@CGUID+370, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
 (@CGUID+380, @CGUID+139, 1024), -- Skeletal Waiter -> Moroes
 (@CGUID+381, @CGUID+139, 1024), -- Skeletal Waiter -> Moroes
 (@CGUID+382, @CGUID+139, 1024), -- Skeletal Waiter -> Moroes
-(@CGUID+369, @CGUID+368, 1039), -- Ghostly Steward -> Ghostly Steward
+(@CGUID+369, @CGUID+368, 1167), -- Ghostly Steward -> Ghostly Steward
 (@CGUID+368, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
-(@CGUID+331, @CGUID+330, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+331, @CGUID+330, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+330, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+342, @CGUID+339, 1039), -- Phantom Guest -> Phantom Guest
+(@CGUID+342, @CGUID+339, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+339, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+361, @CGUID+367, 1039), -- Spectral Chef -> Ghostly Baker
-(@CGUID+362, @CGUID+367, 1039), -- Spectral Chef -> Ghostly Baker
+(@CGUID+361, @CGUID+367, 1167), -- Spectral Chef -> Ghostly Baker
+(@CGUID+362, @CGUID+367, 1167), -- Spectral Chef -> Ghostly Baker
 (@CGUID+367, @CGUID+139, 1024), -- Ghostly Baker -> Moroes
-(@CGUID+363, @CGUID+359, 1039), -- Ghostly Baker -> Spectral Chef
-(@CGUID+364, @CGUID+359, 1039), -- Ghostly Baker -> Spectral Chef
+(@CGUID+363, @CGUID+359, 1167), -- Ghostly Baker -> Spectral Chef
+(@CGUID+364, @CGUID+359, 1167), -- Ghostly Baker -> Spectral Chef
 (@CGUID+359, @CGUID+139, 1024), -- Spectral Chef -> Moroes
-(@CGUID+365, @CGUID+360, 1039), -- Ghostly Baker -> Spectral Chef
-(@CGUID+366, @CGUID+360, 1039), -- Ghostly Baker -> Spectral Chef
+(@CGUID+365, @CGUID+360, 1167), -- Ghostly Baker -> Spectral Chef
+(@CGUID+366, @CGUID+360, 1167), -- Ghostly Baker -> Spectral Chef
 (@CGUID+360, @CGUID+139, 1024), -- Spectral Chef -> Moroes
-(@CGUID+373, @CGUID+372, 1039), -- Ghostly Steward -> Ghostly Steward
+(@CGUID+373, @CGUID+372, 1167), -- Ghostly Steward -> Ghostly Steward
 (@CGUID+372, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
-(@CGUID+375, @CGUID+374, 1039), -- Ghostly Steward -> Ghostly Steward
+(@CGUID+375, @CGUID+374, 1167), -- Ghostly Steward -> Ghostly Steward
 (@CGUID+374, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
-(@CGUID+377, @CGUID+376, 1039), -- Skeletal Waiter -> Skeletal Waiter
+(@CGUID+377, @CGUID+376, 1167), -- Skeletal Waiter -> Skeletal Waiter
 (@CGUID+376, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
-(@CGUID+379, @CGUID+378, 1039), -- Skeletal Waiter -> Skeletal Waiter
+(@CGUID+379, @CGUID+378, 1167), -- Skeletal Waiter -> Skeletal Waiter
 (@CGUID+378, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
-(@CGUID+386, @CGUID+385, 1039), -- Spectral Sentry -> Spectral Sentry
+(@CGUID+386, @CGUID+385, 1167), -- Spectral Sentry -> Spectral Sentry
 (@CGUID+385, @CGUID+139, 1024), -- Spectral Sentry -> Moroes
-(@CGUID+387, @CGUID+407, 1039), -- Spectral Sentry -> Phantom Guardsman
-(@CGUID+388, @CGUID+407, 1039), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+387, @CGUID+407, 1167), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+388, @CGUID+407, 1167), -- Spectral Sentry -> Phantom Guardsman
 (@CGUID+407, @CGUID+139, 1024), -- Spectral Sentry -> Moroes
 (@CGUID+409, @CGUID+139, 1024), -- Spectral Sentry -> Moroes
-(@CGUID+389, @CGUID+408, 1039), -- Spectral Sentry -> Phantom Guardsman
-(@CGUID+390, @CGUID+408, 1039), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+389, @CGUID+408, 1167), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+390, @CGUID+408, 1167), -- Spectral Sentry -> Phantom Guardsman
 (@CGUID+408, @CGUID+139, 1024), -- Phantom Guardsman -> Moroes
-(@CGUID+391, @CGUID+410, 1551), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+391, @CGUID+410, 1679), -- Spectral Sentry -> Phantom Guardsman
 (@CGUID+410, @CGUID+139, 1024), -- Phantom Guardsman -> Moroes
-(@CGUID+392, @CGUID+411, 1039), -- Spectral Sentry -> Phantom Guardsman
-(@CGUID+393, @CGUID+411, 1039), -- Spectral Sentry -> Phantom Guardsman
-(@CGUID+412, @CGUID+411, 1039), -- Phantom Guardsman -> Phantom Guardsman
+(@CGUID+392, @CGUID+411, 1167), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+393, @CGUID+411, 1167), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+412, @CGUID+411, 1167), -- Phantom Guardsman -> Phantom Guardsman
 (@CGUID+411, @CGUID+139, 1024), -- Phantom Guardsman -> Moroes
-(@CGUID+394, @CGUID+413, 1039), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+394, @CGUID+413, 1167), -- Spectral Sentry -> Phantom Guardsman
 (@CGUID+413, @CGUID+139, 1024), -- Phantom Guardsman -> Moroes
-(@CGUID+395, @CGUID+414, 1039), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+395, @CGUID+414, 1167), -- Spectral Sentry -> Phantom Guardsman
 (@CGUID+414, @CGUID+139, 1024), -- Phantom Guardsman -> Moroes
-(@CGUID+397, @CGUID+416, 1039), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+397, @CGUID+416, 1167), -- Spectral Sentry -> Phantom Guardsman
 (@CGUID+416, @CGUID+139, 1024), -- Phantom Guardsman -> Moroes
-(@CGUID+398, @CGUID+417, 1039), -- Spectral Sentry -> Phantom Guardsman
+(@CGUID+398, @CGUID+417, 1167), -- Spectral Sentry -> Phantom Guardsman
 (@CGUID+417, @CGUID+139, 1024), -- Phantom Guardsman -> Moroes
-(@CGUID+415, @CGUID+396, 1039), -- Phantom Guardsman -> Spectral Sentry
+(@CGUID+415, @CGUID+396, 1167), -- Phantom Guardsman -> Spectral Sentry
 (@CGUID+396, @CGUID+139, 1024), -- Spectral Sentry -> Moroes
-(@CGUID+418, @CGUID+399, 1039), -- Phantom Guardsman -> Spectral Sentry
+(@CGUID+418, @CGUID+399, 1167), -- Phantom Guardsman -> Spectral Sentry
 (@CGUID+399, @CGUID+139, 1024), -- Spectral Sentry -> Moroes
 (@CGUID+400, @CGUID+139, 1024), -- Spectral Sentry -> Moroes
-(@CGUID+402, @CGUID+401, 1039), -- Phantom Guardsman -> Phantom Guardsman
+(@CGUID+402, @CGUID+401, 1167), -- Phantom Guardsman -> Phantom Guardsman
 (@CGUID+401, @CGUID+420, 1024), -- Phantom Guardsman -> Maiden of Virtue
-(@CGUID+384, @CGUID+383, 1551), -- Spectral Sentry -> Spectral Sentry
+(@CGUID+384, @CGUID+383, 1679), -- Spectral Sentry -> Spectral Sentry
 (@CGUID+383, @CGUID+420, 1024), -- Spectral Sentry -> Maiden of Virtue
-(@CGUID+428, @CGUID+445, 1039), -- Wanton Hostess -> Concubine
-(@CGUID+433, @CGUID+445, 1039), -- Night Mistress -> Concubine
-(@CGUID+449, @CGUID+445, 1039), -- Concubine -> Concubine
+(@CGUID+428, @CGUID+445, 1167), -- Wanton Hostess -> Concubine
+(@CGUID+433, @CGUID+445, 1167), -- Night Mistress -> Concubine
+(@CGUID+449, @CGUID+445, 1167), -- Concubine -> Concubine
 (@CGUID+445, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+444, @CGUID+450, 1551), -- Night Mistress -> Concubine
+(@CGUID+444, @CGUID+450, 1679), -- Night Mistress -> Concubine
 (@CGUID+450, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+406, @CGUID+403, 1039), -- Phantom Guardsman -> Phantom Guardsman
+(@CGUID+406, @CGUID+403, 1167), -- Phantom Guardsman -> Phantom Guardsman
 (@CGUID+403, @CGUID+420, 1024), -- Phantom Guardsman -> Maiden of Virtue
-(@CGUID+423, @CGUID+442, 1039), -- Wanton Hostess -> Night Mistress
-(@CGUID+429, @CGUID+442, 1039), -- Wanton Hostess -> Night Mistress
-(@CGUID+458, @CGUID+442, 1039), -- Concubine -> Night Mistress
+(@CGUID+423, @CGUID+442, 1167), -- Wanton Hostess -> Night Mistress
+(@CGUID+429, @CGUID+442, 1167), -- Wanton Hostess -> Night Mistress
+(@CGUID+458, @CGUID+442, 1167), -- Concubine -> Night Mistress
 (@CGUID+442, @CGUID+420, 1024), -- Night Mistress -> Maiden of Virtue
-(@CGUID+431, @CGUID+441, 1039), -- Wanton Hostess -> Night Mistress
-(@CGUID+437, @CGUID+441, 1039), -- Night Mistress -> Night Mistress
-(@CGUID+451, @CGUID+441, 1039), -- Concubine -> Night Mistress
+(@CGUID+431, @CGUID+441, 1167), -- Wanton Hostess -> Night Mistress
+(@CGUID+437, @CGUID+441, 1167), -- Night Mistress -> Night Mistress
+(@CGUID+451, @CGUID+441, 1167), -- Concubine -> Night Mistress
 (@CGUID+441, @CGUID+420, 1024), -- Night Mistress -> Maiden of Virtue
-(@CGUID+405, @CGUID+404, 1039), -- Phantom Guardsman -> Phantom Guardsman
+(@CGUID+405, @CGUID+404, 1167), -- Phantom Guardsman -> Phantom Guardsman
 (@CGUID+404, @CGUID+420, 1024), -- Phantom Guardsman -> Maiden of Virtue
-(@CGUID+421, @CGUID+457, 1039), -- Wanton Hostess -> Concubine
-(@CGUID+434, @CGUID+457, 1039), -- Night Mistress -> Concubine
-(@CGUID+446, @CGUID+457, 1039), -- Concubine -> Concubine
+(@CGUID+421, @CGUID+457, 1167), -- Wanton Hostess -> Concubine
+(@CGUID+434, @CGUID+457, 1167), -- Night Mistress -> Concubine
+(@CGUID+446, @CGUID+457, 1167), -- Concubine -> Concubine
 (@CGUID+457, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+422, @CGUID+456, 1039), -- Wanton Hostess -> Concubine
-(@CGUID+435, @CGUID+456, 1039), -- Night Mistress -> Concubine
-(@CGUID+452, @CGUID+456, 1039), -- Concubine -> Concubine
+(@CGUID+422, @CGUID+456, 1167), -- Wanton Hostess -> Concubine
+(@CGUID+435, @CGUID+456, 1167), -- Night Mistress -> Concubine
+(@CGUID+452, @CGUID+456, 1167), -- Concubine -> Concubine
 (@CGUID+456, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+424, @CGUID+443, 1039), -- Wanton Hostess -> Night Mistress
-(@CGUID+436, @CGUID+443, 1039), -- Night Mistress -> Night Mistress
-(@CGUID+447, @CGUID+443, 1039), -- Concubine -> Night Mistress
+(@CGUID+424, @CGUID+443, 1167), -- Wanton Hostess -> Night Mistress
+(@CGUID+436, @CGUID+443, 1167), -- Night Mistress -> Night Mistress
+(@CGUID+447, @CGUID+443, 1167), -- Concubine -> Night Mistress
 (@CGUID+443, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+425, @CGUID+432, 1039), -- Wanton Hostess -> Wanton Hostess
-(@CGUID+438, @CGUID+432, 1039), -- Night Mistress -> Wanton Hostess
-(@CGUID+453, @CGUID+432, 1039), -- Concubine -> Wanton Hostess
+(@CGUID+425, @CGUID+432, 1167), -- Wanton Hostess -> Wanton Hostess
+(@CGUID+438, @CGUID+432, 1167), -- Night Mistress -> Wanton Hostess
+(@CGUID+453, @CGUID+432, 1167), -- Concubine -> Wanton Hostess
 (@CGUID+432, @CGUID+420, 1024), -- Wanton Hostess -> Maiden of Virtue
-(@CGUID+427, @CGUID+459, 1039), -- Wanton Hostess -> Concubine
-(@CGUID+440, @CGUID+459, 1039), -- Night Mistress -> Concubine
-(@CGUID+448, @CGUID+459, 1039), -- Concubine -> Concubine
+(@CGUID+427, @CGUID+459, 1167), -- Wanton Hostess -> Concubine
+(@CGUID+440, @CGUID+459, 1167), -- Night Mistress -> Concubine
+(@CGUID+448, @CGUID+459, 1167), -- Concubine -> Concubine
 (@CGUID+459, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+439, @CGUID+426, 1039), -- Night Mistress -> Wanton Hostess
-(@CGUID+454, @CGUID+426, 1039), -- Concubine -> Wanton Hostess
-(@CGUID+455, @CGUID+426, 1039), -- Concubine -> Wanton Hostess
+(@CGUID+439, @CGUID+426, 1167), -- Night Mistress -> Wanton Hostess
+(@CGUID+454, @CGUID+426, 1167), -- Concubine -> Wanton Hostess
+(@CGUID+455, @CGUID+426, 1167), -- Concubine -> Wanton Hostess
 (@CGUID+426, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
 -- Continue Grouped Linking Rework Opera
--- (@CGUID+522, @CGUID+881, 1039), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
-(@CGUID+526, @CGUID+523, 1039), -- Skeletal Usher -> Skeletal Usher
--- (@CGUID+523, @CGUID+881, 1039), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
-(@CGUID+525, @CGUID+524, 1039), -- Skeletal Usher -> Skeletal Usher
--- (CGUID+524, @CGUID+881, 1039), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
--- (@CGUID+527, @CGUID+881, 1039), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
--- (@CGUID+528, @CGUID+881, 1039), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
-(@CGUID+460, @CGUID+513, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+464, @CGUID+513, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+497, @CGUID+513, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+499, @CGUID+513, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+512, @CGUID+513, 1039), -- Ghostly Philanthropist -> Ghostly Philanthropist
-(@CGUID+461, @CGUID+509, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+462, @CGUID+509, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+463, @CGUID+509, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+515, @CGUID+509, 1039), -- Ghostly Philanthropist -> Spectral Patron
-(@CGUID+518, @CGUID+509, 1039), -- Ghostly Philanthropist -> Spectral Patron
-(@CGUID+465, @CGUID+516, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+500, @CGUID+516, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+466, @CGUID+510, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+517, @CGUID+510, 1039), -- Ghostly Philanthropist -> Spectral Patron
-(@CGUID+468, @CGUID+467, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+475, @CGUID+467, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+476, @CGUID+467, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+477, @CGUID+467, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+478, @CGUID+467, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+488, @CGUID+467, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+503, @CGUID+467, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+470, @CGUID+469, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+471, @CGUID+469, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+482, @CGUID+469, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+483, @CGUID+469, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+484, @CGUID+469, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+485, @CGUID+469, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+501, @CGUID+469, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+472, @CGUID+519, 1551), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+498, @CGUID+519, 1551), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+474, @CGUID+473, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+486, @CGUID+473, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+487, @CGUID+473, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+506, @CGUID+473, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+507, @CGUID+473, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+490, @CGUID+473, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+491, @CGUID+473, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+479, @CGUID+481, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+480, @CGUID+481, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+492, @CGUID+481, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+493, @CGUID+481, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+494, @CGUID+481, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+496, @CGUID+481, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+505, @CGUID+481, 1039), -- Spectral Patron -> Spectral Patron
-(@CGUID+489, @CGUID+521, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+508, @CGUID+521, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+495, @CGUID+520, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+504, @CGUID+520, 1039), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+502, @CGUID+514, 1551), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+511, @CGUID+514, 1551), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+536, @CGUID+535, 1039), -- Spectral Performer -> Spectral Performer
-(@CGUID+538, @CGUID+537, 1039), -- Spectral Performer -> Spectral Performer
-(@CGUID+539, @CGUID+533, 1039), -- Spectral Performer -> Spectral Performer
-(@CGUID+540, @CGUID+534, 1039), -- Spectral Performer -> Spectral Performer
+-- (@CGUID+522, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
+(@CGUID+526, @CGUID+523, 1167), -- Skeletal Usher -> Skeletal Usher
+-- (@CGUID+523, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
+(@CGUID+525, @CGUID+524, 1167), -- Skeletal Usher -> Skeletal Usher
+-- (CGUID+524, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
+-- (@CGUID+527, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
+-- (@CGUID+528, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
+(@CGUID+460, @CGUID+513, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+464, @CGUID+513, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+497, @CGUID+513, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+499, @CGUID+513, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+512, @CGUID+513, 1167), -- Ghostly Philanthropist -> Ghostly Philanthropist
+(@CGUID+461, @CGUID+509, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+462, @CGUID+509, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+463, @CGUID+509, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+515, @CGUID+509, 1167), -- Ghostly Philanthropist -> Spectral Patron
+(@CGUID+518, @CGUID+509, 1167), -- Ghostly Philanthropist -> Spectral Patron
+(@CGUID+465, @CGUID+516, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+500, @CGUID+516, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+466, @CGUID+510, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+517, @CGUID+510, 1167), -- Ghostly Philanthropist -> Spectral Patron
+(@CGUID+468, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+475, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+476, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+477, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+478, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+488, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+503, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+470, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+471, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+482, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+483, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+484, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+485, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+501, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+472, @CGUID+519, 1679), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+498, @CGUID+519, 1679), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+474, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+486, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+487, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+506, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+507, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+490, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+491, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+479, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+480, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+492, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+493, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+494, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+496, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+505, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
+(@CGUID+489, @CGUID+521, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+508, @CGUID+521, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+495, @CGUID+520, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+504, @CGUID+520, 1167), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+502, @CGUID+514, 1679), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+511, @CGUID+514, 1679), -- Spectral Patron -> Ghostly Philanthropist
+(@CGUID+536, @CGUID+535, 1167), -- Spectral Performer -> Spectral Performer
+(@CGUID+538, @CGUID+537, 1167), -- Spectral Performer -> Spectral Performer
+(@CGUID+539, @CGUID+533, 1167), -- Spectral Performer -> Spectral Performer
+(@CGUID+540, @CGUID+534, 1167), -- Spectral Performer -> Spectral Performer
 -- The Curator
 (@CGUID+550, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
 (@CGUID+551, @CGUID+143, 1024), -- Trapped Soul -> The Curator
@@ -1655,80 +1655,80 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+559, @CGUID+143, 1024), -- Trapped Soul -> The Curator
 (@CGUID+542, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
 (@CGUID+560, @CGUID+143, 1024), -- Trapped Soul -> The Curator
-(@CGUID+561, @CGUID+562, 1039), -- Arcane Watchman -> Arcane Watchman
+(@CGUID+561, @CGUID+562, 1167), -- Arcane Watchman -> Arcane Watchman
 (@CGUID+562, @CGUID+143, 1024), -- Arcane Watchman -> The Curator
-(@CGUID+631, @CGUID+565, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+632, @CGUID+565, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+633, @CGUID+565, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+634, @CGUID+565, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+635, @CGUID+565, 1551), -- Syphoner -> Arcane Anomaly
+(@CGUID+631, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+632, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+633, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+634, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+635, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+565, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+626, @CGUID+566, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+627, @CGUID+566, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+628, @CGUID+566, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+629, @CGUID+566, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+630, @CGUID+566, 1551), -- Syphoner -> Arcane Anomaly
+(@CGUID+626, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+627, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+628, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+629, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+630, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+566, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+606, @CGUID+567, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+607, @CGUID+567, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+608, @CGUID+567, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+609, @CGUID+567, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+610, @CGUID+567, 1551), -- Syphoner -> Arcane Anomaly
+(@CGUID+606, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+607, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+608, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+609, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+610, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+567, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+621, @CGUID+568, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+622, @CGUID+568, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+623, @CGUID+568, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+624, @CGUID+568, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+625, @CGUID+568, 1551), -- Syphoner -> Arcane Anomaly
+(@CGUID+621, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+622, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+623, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+624, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+625, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+568, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+616, @CGUID+569, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+617, @CGUID+569, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+618, @CGUID+569, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+619, @CGUID+569, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+620, @CGUID+569, 1551), -- Syphoner -> Arcane Anomaly
+(@CGUID+616, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+617, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+618, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+619, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+620, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+569, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+611, @CGUID+570, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+612, @CGUID+570, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+613, @CGUID+570, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+614, @CGUID+570, 1551), -- Syphoner -> Arcane Anomaly
-(@CGUID+615, @CGUID+570, 1551), -- Syphoner -> Arcane Anomaly
+(@CGUID+611, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+612, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+613, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+614, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
+(@CGUID+615, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+570, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+564, @CGUID+563, 1039), -- Arcane Watchman -> Arcane Watchman
+(@CGUID+564, @CGUID+563, 1167), -- Arcane Watchman -> Arcane Watchman
 (@CGUID+563, @CGUID+644, 1024), -- Arcane Watchman -> Shade of Aran
-(@CGUID+584, @CGUID+583, 1039), -- Mana Feeder -> Mana Feeder
-(@CGUID+585, @CGUID+583, 1039), -- Mana Feeder -> Mana Feeder
+(@CGUID+584, @CGUID+583, 1167), -- Mana Feeder -> Mana Feeder
+(@CGUID+585, @CGUID+583, 1167), -- Mana Feeder -> Mana Feeder
 (@CGUID+583, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+578, @CGUID+572, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+579, @CGUID+572, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+580, @CGUID+572, 1039), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+578, @CGUID+572, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+579, @CGUID+572, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+580, @CGUID+572, 1167), -- Mana Feeder -> Chaotic Sentience
 (@CGUID+572, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
-(@CGUID+603, @CGUID+575, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+604, @CGUID+575, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+605, @CGUID+575, 1039), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+603, @CGUID+575, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+604, @CGUID+575, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+605, @CGUID+575, 1167), -- Mana Feeder -> Chaotic Sentience
 (@CGUID+575, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
-(@CGUID+599, @CGUID+574, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+600, @CGUID+574, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+601, @CGUID+574, 1039), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+599, @CGUID+574, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+600, @CGUID+574, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+601, @CGUID+574, 1167), -- Mana Feeder -> Chaotic Sentience
 (@CGUID+574, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
-(@CGUID+577, @CGUID+590, 1039), -- Mana Feeder -> Mana Feeder
-(@CGUID+591, @CGUID+590, 1039), -- Mana Feeder -> Mana Feeder
+(@CGUID+577, @CGUID+590, 1167), -- Mana Feeder -> Mana Feeder
+(@CGUID+591, @CGUID+590, 1167), -- Mana Feeder -> Mana Feeder
 (@CGUID+590, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+593, @CGUID+592, 1039), -- Mana Feeder -> Mana Feeder
-(@CGUID+594, @CGUID+592, 1039), -- Mana Feeder -> Mana Feeder
+(@CGUID+593, @CGUID+592, 1167), -- Mana Feeder -> Mana Feeder
+(@CGUID+594, @CGUID+592, 1167), -- Mana Feeder -> Mana Feeder
 (@CGUID+592, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+597, @CGUID+596, 1039), -- Mana Feeder -> Mana Feeder
-(@CGUID+598, @CGUID+596, 1039), -- Mana Feeder -> Mana Feeder
+(@CGUID+597, @CGUID+596, 1167), -- Mana Feeder -> Mana Feeder
+(@CGUID+598, @CGUID+596, 1167), -- Mana Feeder -> Mana Feeder
 (@CGUID+596, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+576, @CGUID+571, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+581, @CGUID+571, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+595, @CGUID+571, 1039), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+576, @CGUID+571, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+581, @CGUID+571, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+595, @CGUID+571, 1167), -- Mana Feeder -> Chaotic Sentience
 (@CGUID+571, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
-(@CGUID+588, @CGUID+589, 1039), -- Mana Feeder -> Mana Feeder
-(@CGUID+602, @CGUID+589, 1039), -- Mana Feeder -> Mana Feeder
+(@CGUID+588, @CGUID+589, 1167), -- Mana Feeder -> Mana Feeder
+(@CGUID+602, @CGUID+589, 1167), -- Mana Feeder -> Mana Feeder
 (@CGUID+589, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+582, @CGUID+573, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+586, @CGUID+573, 1039), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+587, @CGUID+573, 1039), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+582, @CGUID+573, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+586, @CGUID+573, 1167), -- Mana Feeder -> Chaotic Sentience
+(@CGUID+587, @CGUID+573, 1167), -- Mana Feeder -> Chaotic Sentience
 (@CGUID+573, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
 (@CGUID+636, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
 (@CGUID+637, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
@@ -1744,55 +1744,55 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+654, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
 (@CGUID+655, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
 (@CGUID+656, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+679, @CGUID+673, 1551), -- Mana Warp -> Magical Horror
-(@CGUID+682, @CGUID+673, 1551), -- Mana Warp -> Magical Horror
+(@CGUID+679, @CGUID+673, 1679), -- Mana Warp -> Magical Horror
+(@CGUID+682, @CGUID+673, 1679), -- Mana Warp -> Magical Horror
 (@CGUID+673, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
-(@CGUID+677, @CGUID+675, 1039), -- Mana Warp -> Magical Horror
-(@CGUID+686, @CGUID+675, 1039), -- Mana Warp -> Magical Horror
-(@CGUID+687, @CGUID+675, 1039), -- Mana Warp -> Magical Horror
+(@CGUID+677, @CGUID+675, 1167), -- Mana Warp -> Magical Horror
+(@CGUID+686, @CGUID+675, 1167), -- Mana Warp -> Magical Horror
+(@CGUID+687, @CGUID+675, 1167), -- Mana Warp -> Magical Horror
 (@CGUID+675, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
-(@CGUID+680, @CGUID+672, 1039), -- Mana Warp -> Magical Horror
-(@CGUID+681, @CGUID+672, 1039), -- Mana Warp -> Magical Horror
+(@CGUID+680, @CGUID+672, 1167), -- Mana Warp -> Magical Horror
+(@CGUID+681, @CGUID+672, 1167), -- Mana Warp -> Magical Horror
 (@CGUID+672, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
-(@CGUID+678, @CGUID+676, 1551), -- Mana Warp -> Magical Horror
-(@CGUID+685, @CGUID+676, 1551), -- Mana Warp -> Magical Horror
+(@CGUID+678, @CGUID+676, 1679), -- Mana Warp -> Magical Horror
+(@CGUID+685, @CGUID+676, 1679), -- Mana Warp -> Magical Horror
 (@CGUID+676, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
-(@CGUID+683, @CGUID+674, 1551), -- Mana Warp -> Magical Horror
-(@CGUID+684, @CGUID+674, 1551), -- Mana Warp -> Magical Horror
+(@CGUID+683, @CGUID+674, 1679), -- Mana Warp -> Magical Horror
+(@CGUID+684, @CGUID+674, 1679), -- Mana Warp -> Magical Horror
 (@CGUID+674, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
-(@CGUID+649, @CGUID+646, 1039), -- Spell Shade -> Spell Shade
-(@CGUID+650, @CGUID+646, 1039), -- Spell Shade -> Spell Shade
-(@CGUID+651, @CGUID+646, 1039), -- Spell Shade -> Spell Shade
+(@CGUID+649, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
+(@CGUID+650, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
+(@CGUID+651, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
 (@CGUID+646, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+688, @CGUID+700, 1039), -- Homunculus -> Shadow Pillager
-(@CGUID+689, @CGUID+700, 1039), -- Homunculus -> Shadow Pillager
-(@CGUID+690, @CGUID+700, 1039), -- Homunculus -> Shadow Pillager
-(@CGUID+699, @CGUID+700, 1039), -- Shadow Pillager -> Shadow Pillager
-(@CGUID+701, @CGUID+700, 1039), -- Shadow Pillager -> Shadow Pillager
+(@CGUID+688, @CGUID+700, 1167), -- Homunculus -> Shadow Pillager
+(@CGUID+689, @CGUID+700, 1167), -- Homunculus -> Shadow Pillager
+(@CGUID+690, @CGUID+700, 1167), -- Homunculus -> Shadow Pillager
+(@CGUID+699, @CGUID+700, 1167), -- Shadow Pillager -> Shadow Pillager
+(@CGUID+701, @CGUID+700, 1167), -- Shadow Pillager -> Shadow Pillager
 (@CGUID+700, @CGUID+140, 1024), -- Shadow Pillager -> Terestian Illhoof
-(@CGUID+692, @CGUID+691, 1039), -- Homunculus -> Homunculus
-(@CGUID+693, @CGUID+691, 1039), -- Homunculus -> Homunculus
-(@CGUID+694, @CGUID+691, 1039), -- Homunculus -> Homunculus
-(@CGUID+695, @CGUID+691, 1039), -- Homunculus -> Homunculus
-(@CGUID+696, @CGUID+691, 1039), -- Homunculus -> Homunculus
-(@CGUID+697, @CGUID+691, 1039), -- Homunculus -> Homunculus
-(@CGUID+698, @CGUID+691, 1039), -- Homunculus -> Homunculus
+(@CGUID+692, @CGUID+691, 1167), -- Homunculus -> Homunculus
+(@CGUID+693, @CGUID+691, 1167), -- Homunculus -> Homunculus
+(@CGUID+694, @CGUID+691, 1167), -- Homunculus -> Homunculus
+(@CGUID+695, @CGUID+691, 1167), -- Homunculus -> Homunculus
+(@CGUID+696, @CGUID+691, 1167), -- Homunculus -> Homunculus
+(@CGUID+697, @CGUID+691, 1167), -- Homunculus -> Homunculus
+(@CGUID+698, @CGUID+691, 1167), -- Homunculus -> Homunculus
 (@CGUID+691, @CGUID+140, 1024), -- Homunculus -> Terestian Illhoof
-(@CGUID+645, @CGUID+648, 1039), -- Spell Shade -> Spell Shade
-(@CGUID+657, @CGUID+648, 1039), -- Spell Shade -> Spell Shade
-(@CGUID+658, @CGUID+648, 1039), -- Spell Shade -> Spell Shade
+(@CGUID+645, @CGUID+648, 1167), -- Spell Shade -> Spell Shade
+(@CGUID+657, @CGUID+648, 1167), -- Spell Shade -> Spell Shade
+(@CGUID+658, @CGUID+648, 1167), -- Spell Shade -> Spell Shade
 (@CGUID+648, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+659, @CGUID+668, 1039), -- Spell Shade -> Sorcerous Shade
-(@CGUID+660, @CGUID+668, 1039), -- Spell Shade -> Sorcerous Shade
-(@CGUID+662, @CGUID+668, 1039), -- Spell Shade -> Sorcerous Shade
+(@CGUID+659, @CGUID+668, 1167), -- Spell Shade -> Sorcerous Shade
+(@CGUID+660, @CGUID+668, 1167), -- Spell Shade -> Sorcerous Shade
+(@CGUID+662, @CGUID+668, 1167), -- Spell Shade -> Sorcerous Shade
 (@CGUID+668, @CGUID+142, 1024), -- Sorcerous Shade -> Prince Malchezaar
-(@CGUID+661, @CGUID+669, 1039), -- Spell Shade -> Sorcerous Shade
-(@CGUID+663, @CGUID+669, 1039), -- Spell Shade -> Sorcerous Shade
-(@CGUID+664, @CGUID+669, 1039), -- Spell Shade -> Sorcerous Shade
+(@CGUID+661, @CGUID+669, 1167), -- Spell Shade -> Sorcerous Shade
+(@CGUID+663, @CGUID+669, 1167), -- Spell Shade -> Sorcerous Shade
+(@CGUID+664, @CGUID+669, 1167), -- Spell Shade -> Sorcerous Shade
 (@CGUID+669, @CGUID+142, 1024), -- Sorcerous Shade -> Prince Malchezaar
-(@CGUID+665, @CGUID+670, 1039), -- Spell Shade -> Sorcerous Shade
-(@CGUID+666, @CGUID+670, 1039), -- Spell Shade -> Sorcerous Shade
-(@CGUID+667, @CGUID+670, 1039), -- Spell Shade -> Sorcerous Shade
+(@CGUID+665, @CGUID+670, 1167), -- Spell Shade -> Sorcerous Shade
+(@CGUID+666, @CGUID+670, 1167), -- Spell Shade -> Sorcerous Shade
+(@CGUID+667, @CGUID+670, 1167), -- Spell Shade -> Sorcerous Shade
 (@CGUID+670, @CGUID+142, 1024), -- Sorcerous Shade -> Prince Malchezaar
 (@CGUID+702, @CGUID+142, 1024), -- Ethereal Thief -> Prince Malchezaar
 (@CGUID+703, @CGUID+142, 1024), -- Ethereal Thief -> Prince Malchezaar
@@ -1805,59 +1805,59 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+711, @CGUID+142, 1024), -- Ethereal Spellfilcher -> Prince Malchezaar
 (@CGUID+708, @CGUID+141, 1024), -- Ethereal Thief -> Netherspite
 (@CGUID+712, @CGUID+141, 1024), -- Ethereal Spellfilcher -> Netherspite
-(@CGUID+720, @CGUID+721, 1039), -- Fleshbeast -> Fleshbeast
+(@CGUID+720, @CGUID+721, 1167), -- Fleshbeast -> Fleshbeast
 (@CGUID+721, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
-(@CGUID+713, @CGUID+715, 1039), -- Fleshbeast -> Fleshbeast
+(@CGUID+713, @CGUID+715, 1167), -- Fleshbeast -> Fleshbeast
 (@CGUID+715, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
 (@CGUID+725, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
-(@CGUID+719, @CGUID+722, 1039), -- Fleshbeast -> Fleshbeast
+(@CGUID+719, @CGUID+722, 1167), -- Fleshbeast -> Fleshbeast
 (@CGUID+722, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
 (@CGUID+724, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
-(@CGUID+716, @CGUID+714, 1039), -- Fleshbeast -> Fleshbeast
+(@CGUID+716, @CGUID+714, 1167), -- Fleshbeast -> Fleshbeast
 (@CGUID+714, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
-(@CGUID+718, @CGUID+717, 1039), -- Fleshbeast -> Fleshbeast
+(@CGUID+718, @CGUID+717, 1167), -- Fleshbeast -> Fleshbeast
 (@CGUID+717, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
 (@CGUID+723, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
 (@CGUID+726, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
 -- Servent' Quarters
-(@CGUID+148, @CGUID+168, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+149, @CGUID+168, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+162, @CGUID+168, 1039), -- Coldmist Widow -> Coldmist Widow
-(@CGUID+150, @CGUID+166, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+151, @CGUID+166, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+152, @CGUID+167, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+158, @CGUID+167, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+154, @CGUID+169, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+155, @CGUID+169, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+156, @CGUID+165, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+160, @CGUID+165, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+170, @CGUID+165, 1039), -- Coldmist Widow -> Coldmist Widow
-(@CGUID+159, @CGUID+163, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+161, @CGUID+163, 1039), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+164, @CGUID+163, 1039), -- Coldmist Widow -> Coldmist Widow
-(@CGUID+172, @CGUID+184, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+175, @CGUID+184, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+178, @CGUID+184, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+181, @CGUID+184, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+173, @CGUID+185, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+174, @CGUID+185, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+179, @CGUID+185, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+182, @CGUID+185, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+176, @CGUID+188, 1039), -- Shadowbat -> Vampiric Shadowbat
-(@CGUID+180, @CGUID+188, 1039), -- Shadowbat -> Vampiric Shadowbat
-(@CGUID+177, @CGUID+186, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+183, @CGUID+186, 1039), -- Shadowbat -> Greater Shadowbat
-(@CGUID+190, @CGUID+200, 1039), -- Shadowbeast -> Dreadbeast
-(@CGUID+196, @CGUID+200, 1039), -- Dreadbeast -> Dreadbeast
-(@CGUID+191, @CGUID+203, 1039), -- Shadowbeast -> Phase Hound
-(@CGUID+195, @CGUID+203, 1039), -- Dreadbeast -> Phase Hound
-(@CGUID+205, @CGUID+203, 1039), -- Phase Hound -> Phase Hound
-(@CGUID+192, @CGUID+198, 1039), -- Shadowbeast -> Dreadbeast
-(@CGUID+193, @CGUID+197, 1039), -- Shadowbeast -> Dreadbeast
-(@CGUID+194, @CGUID+199, 1039), -- Shadowbeast -> Dreadbeast
-(@CGUID+204, @CGUID+199, 1039), -- Phase Hound -> Dreadbeast
-(@CGUID+206, @CGUID+199, 1039), -- Phase Hound -> Dreadbeast
-(@CGUID+201, @CGUID+202, 1551); -- Phase Hound -> Phase Hound
+(@CGUID+148, @CGUID+168, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+149, @CGUID+168, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+162, @CGUID+168, 1167), -- Coldmist Widow -> Coldmist Widow
+(@CGUID+150, @CGUID+166, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+151, @CGUID+166, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+152, @CGUID+167, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+158, @CGUID+167, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+154, @CGUID+169, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+155, @CGUID+169, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+156, @CGUID+165, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+160, @CGUID+165, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+170, @CGUID+165, 1167), -- Coldmist Widow -> Coldmist Widow
+(@CGUID+159, @CGUID+163, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+161, @CGUID+163, 1167), -- Coldmist Stalker -> Coldmist Widow
+(@CGUID+164, @CGUID+163, 1167), -- Coldmist Widow -> Coldmist Widow
+(@CGUID+172, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+175, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+178, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+181, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+173, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+174, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+179, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+182, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+176, @CGUID+188, 1167), -- Shadowbat -> Vampiric Shadowbat
+(@CGUID+180, @CGUID+188, 1167), -- Shadowbat -> Vampiric Shadowbat
+(@CGUID+177, @CGUID+186, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+183, @CGUID+186, 1167), -- Shadowbat -> Greater Shadowbat
+(@CGUID+190, @CGUID+200, 1167), -- Shadowbeast -> Dreadbeast
+(@CGUID+196, @CGUID+200, 1167), -- Dreadbeast -> Dreadbeast
+(@CGUID+191, @CGUID+203, 1167), -- Shadowbeast -> Phase Hound
+(@CGUID+195, @CGUID+203, 1167), -- Dreadbeast -> Phase Hound
+(@CGUID+205, @CGUID+203, 1167), -- Phase Hound -> Phase Hound
+(@CGUID+192, @CGUID+198, 1167), -- Shadowbeast -> Dreadbeast
+(@CGUID+193, @CGUID+197, 1167), -- Shadowbeast -> Dreadbeast
+(@CGUID+194, @CGUID+199, 1167), -- Shadowbeast -> Dreadbeast
+(@CGUID+204, @CGUID+199, 1167), -- Phase Hound -> Dreadbeast
+(@CGUID+206, @CGUID+199, 1167), -- Phase Hound -> Dreadbeast
+(@CGUID+201, @CGUID+202, 1679); -- Phase Hound -> Phase Hound
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (15547, 532, 15550, 1024, 200), -- Spectral Charger -> Attumen the Huntsman
