@@ -2169,7 +2169,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+622, @CGUID+621, 1167), -- Illidari Centurion -> Illidari Centurion
 (@CGUID+628, @CGUID+621, 1167), -- Illidari Heartseeker -> Illidari Centurion
 (@CGUID+621, @CGUID+45, 1024), -- Illidari Centurion -> Shade of Akama
-(@CGUID+435, @CGUID+45, 1024), -- Illidari Centurion -> Akama -> Shade of Akama
+(@CGUID+435, @CGUID+45, 1024), -- Akama -> Shade of Akama
 (@CGUID+629, @CGUID+630, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
 (@CGUID+772, @CGUID+773, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
 (@CGUID+774, @CGUID+775, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
