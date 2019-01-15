@@ -2131,10 +2131,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Sanctuary of Shadows
 (@CGUID+61, @CGUID+51, 1679), -- Ashtongue Mystic -> Ashtongue Battlelord
 (@CGUID+75, @CGUID+51, 1679), -- Ashtongue Primalist -> Ashtongue Battlelord
-(@CGUID+51, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
 (@CGUID+54, @CGUID+63, 1679), -- Ashtongue Battlelord -> Ashtongue Mystic
 (@CGUID+69, @CGUID+63, 1679), -- Ashtongue Stormcaller -> Ashtongue Mystic
-(@CGUID+63, @CGUID+45, 1024), -- Ashtongue Mystic -> Shade of Akama
 (@CGUID+86, @CGUID+91, 1679), -- Illidari Defiler -> Illidari Nightlord
 (@CGUID+98, @CGUID+91, 1679), -- Illidari Boneslicer -> Illidari Nightlord
 (@CGUID+91, @CGUID+45, 1024), -- Illidari Nightlord -> Shade of Akama
@@ -2171,16 +2169,12 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+622, @CGUID+621, 1167), -- Illidari Centurion -> Illidari Centurion
 (@CGUID+628, @CGUID+621, 1167), -- Illidari Heartseeker -> Illidari Centurion
 (@CGUID+621, @CGUID+45, 1024), -- Illidari Centurion -> Shade of Akama
+(@CGUID+435, @CGUID+45, 1024), -- Illidari Centurion -> Akama -> Shade of Akama
 (@CGUID+629, @CGUID+630, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
-(@CGUID+630, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
 (@CGUID+772, @CGUID+773, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
-(@CGUID+773, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
 (@CGUID+774, @CGUID+775, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
-(@CGUID+775, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
 (@CGUID+776, @CGUID+777, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
-(@CGUID+777, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
 (@CGUID+778, @CGUID+779, 1167), -- Ashtongue Stalker -> Ashtongue Stalker
-(@CGUID+779, @CGUID+45, 1024), -- Ashtongue Stalker -> Shade of Akama
 (@CGUID+55, @CGUID+56, 1167), -- Ashtongue Battlelord -> Ashtongue Battlelord
 (@CGUID+77, @CGUID+56, 1167), -- Ashtongue Primalist -> Ashtongue Battlelord
 (@CGUID+83, @CGUID+56, 1167), -- Ashtongue Feral Spirit -> Ashtongue Battlelord
@@ -2188,7 +2182,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+64, @CGUID+56, 1167), -- Ashtongue Mystic -> Ashtongue Battlelord
 (@CGUID+79, @CGUID+56, 1167), -- Storm Fury -> Ashtongue Battlelord
 (@CGUID+771, @CGUID+56, 1167), -- Ashtongue Stalker -> Ashtongue Battlelord
-(@CGUID+56, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
 (@CGUID+52, @CGUID+53, 1167), -- Ashtongue Battlelord -> Ashtongue Battlelord
 (@CGUID+76, @CGUID+53, 1167), -- Ashtongue Primalist -> Ashtongue Battlelord
 (@CGUID+82, @CGUID+53, 1167), -- Ashtongue Feral Spirit -> Ashtongue Battlelord
@@ -2196,7 +2189,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+62, @CGUID+53, 1167), -- Ashtongue Mystic -> Ashtongue Battlelord
 (@CGUID+78, @CGUID+53, 1167), -- Storm Fury -> Ashtongue Battlelord
 (@CGUID+780, @CGUID+53, 1167), -- Ashtongue Stalker -> Ashtongue Battlelord
-(@CGUID+53, @CGUID+45, 1024), -- Ashtongue Battlelord -> Shade of Akama
 -- Gorefiend's Vigil
 (@CGUID+138, @CGUID+143, 1167), -- Shadowmoon Champion -> Shadowmoon Champion
 (@CGUID+131, @CGUID+143, 1167), -- Shadowmoon Reaver -> Shadowmoon Champion
