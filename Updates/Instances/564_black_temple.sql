@@ -2300,8 +2300,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+544, @CGUID+284, 1024), -- Bonechewer Behemoth -> Gurtogg Bloodboil
 (@CGUID+545, @CGUID+284, 1024), -- Bonechewer Behemoth -> Gurtogg Bloodboil
 -- Gurtogg Bloodboil
-(@CGUID+548, @CGUID+551, 1165), -- Bonechewer Brawler -> Bonechewer Spectator 
-(@CGUID+603, @CGUID+551, 1165), -- Bonechewer Combatant -> Bonechewer Spectator
+(@CGUID+603, @CGUID+548, 1167), -- Bonechewer Combatant -> Bonechewer Brawler
+(@CGUID+548, @CGUID+551, 1165), -- Bonechewer Brawler -> Bonechewer Spectator
 (@CGUID+552, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
 (@CGUID+553, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
 (@CGUID+554, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
@@ -2313,8 +2313,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+560, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
 (@CGUID+561, @CGUID+551, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
 (@CGUID+551, @CGUID+284, 1024), -- Bonechewer Spectator -> Gurtogg Bloodboil
+(@CGUID+604, @CGUID+549, 1167), -- Bonechewer Combatant -> Bonechewer Brawler
 (@CGUID+549, @CGUID+570, 1165), -- Bonechewer Brawler -> Bonechewer Spectator
-(@CGUID+604, @CGUID+570, 1165), -- Bonechewer Combatant -> Bonechewer Spectator
 (@CGUID+569, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
 (@CGUID+562, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
 (@CGUID+563, @CGUID+570, 1167), -- Bonechewer Spectator -> Bonechewer Spectator
