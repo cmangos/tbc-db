@@ -26839,14 +26839,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2321601','23216','0','0','100','1025','5000','10000','17000','17000','0','0','11','41178','1','0','0','0','0','0','0','0','0','0','Ashtongue Defender - Cast Debilitating Strike'),
 ('2321602','23216','13','0','100','1025','10000','15000','0','0','0','0','11','41180','1','1','0','0','0','0','0','0','0','0','Ashtongue Defender - Cast Shield Bash on Target Casting'),
 ('2321603','23216','0','0','100','1025','11000','16000','13000','17000','0','0','11','41975','5','0','0','0','0','0','0','0','0','0','Ashtongue Defender - Cast Heroic Strike'),
--- Bonechewer Brawler 23222 - OOC Fighting Script until ~40% HP, Frenzy might be HP related still (12125 - 68016ms) Health Resetting Spell = 17683, related Emote "%s arises to fight once more!"
-('2322201','23222','0','0','100','1025','7000','14000','21000','28000','0','0','11','41254','0','0','1','-10133','0','0','0','0','0','0','Bonechewer Brawler - Cast Frenzy'),
-('2322202','23222','2','0','100','1025','30','0','120000','120000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Brawler - Cast Enrage at 30% HP'),
-('2322203','23222','30','0','100','0','5','23239','0','0','0','0','2','1693','3','0','22','1','0','0','55','7','0','0','Bonechewer Brawler - Change Faction, Set Phase 1, and Attack on Receive AI Event A'),
-('2322204','23222','2','1','100','0','40','0','0','0','0','0','45','6','10','0','24','0','0','0','0','0','0','0','Bonechewer Brawler - Evade and Send AI Event B at 40% HP (Phase 1)'),
-('2322205','23222','30','1','100','0','6','23239','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Bonechewer Brawler - Evade on Receive AI Event B (Phase 1)'),
-('2322206','23222','30','1','100','0','6','23223','0','0','0','0','24','0','0','0','22','0','0','0','0','0','0','0','Bonechewer Brawler - Evade and Set Phase 0 on Receive AI Event B (Phase 1)'),
-('2322207','23222','21','1','100','0','0','0','0','0','0','0','5','71','0','0','22','0','0','0','0','0','0','0','Bonechewer Brawler - Emote and Set Phase 0 on Reached Home (Phase 1)'),
+-- Bonechewer Brawler 23222 - Should Drop Bonechewer Combatant from Threatlist (Combat Stop Mechanic, maybe Add Delay for EVENT_T_EVADE befor MoveHomeGen kicks in) and Add 23223 Event B Sender-Invoker on Threatlist for 2322205
+('2322201','23222','30','0','100','0','5','23239','0','0','0','0','2','1693','3','0','22','2','0','0','55','7','0','0','Bonechewer Brawler - Change Faction, Set Phase 2, and Attack on Receive AI Event A'),
+('2322202','23222','30','3','100','0','6','23239','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Bonechewer Brawler - Evade on Receive AI Event B (Phase 2)'),
+('2322203','23222','2','3','100','0','40','0','0','0','0','0','24','0','0','0','45','6','10','0','0','0','0','0','Bonechewer Brawler - Evade and Send AI Event B at 40% HP (Phase 2)'),
+('2322204','23222','21','3','100','0','0','0','0','0','0','0','11','17683','0','0','54','-11179','0','0','22','1','0','0','Bonechewer Brawler - Cast Full Heal and Emote and Set Phase 1 on Reached Home (Phase 2)'),
+('2322205','23222','30','3','100','0','6','23223','0','0','0','0','24','0','0','0','22','1','0','0','0','0','0','0','Bonechewer Brawler - Evade and Set Phase 1 on Receive AI Event B (Phase 2)'),
+('2322206','23222','0','5','100','1025','7000','14000','21000','28000','0','0','11','41254','0','0','1','-11180','0','0','0','0','0','0','Bonechewer Brawler - Cast Frenzy (Phase 1)'),
+('2322207','23222','2','5','100','1025','30','0','120000','120000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Brawler - Cast Enrage at 30% HP (Phase 1)'),
 -- Bonechewer Spectator 23223
 ('2322301','23223','11','0','100','0','0','0','0','0','0','0','31','1','3','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Set Random Phase 1-3 on Spawn'),
 ('2322302','23223','2','0','100','1024','30','0','0','0','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Spectator - Cast Enrage at 30% HP'),
@@ -26879,14 +26879,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2323704','23237','0','0','100','1025','7000','9000','7000','10000','0','0','11','41229','1','0','0','0','0','0','0','0','0','0','Bonechewer Blood Prophet - Cast Bloodbolt'),
 ('2323705','23237','2','0','100','1025','50','0','12000','16000','0','0','11','41238','1','0','22','2','0','0','0','0','0','0','Bonechewer Blood Prophet - Cast Blood Drain and Set Phase 2 at 50% HP'),
 ('2323706','23237','16','3','100','1025','41231','30','15000','15000','0','0','11','41231','12','2','0','0','0','0','0','0','0','0','Bonechewer Blood Prophet - Cast Prophecy of Blood on Friendly Missing Buff (Phase 2)'),
--- Bonechewer Combatant 23239
-('2323901','23239','0','0','100','1025','5000','7000','15000','35000','0','0','11','41251','0','0','0','0','0','0','0','0','0','0','Bonechewer Combatant - Cast Combat Rage'),
-('2323902','23239','2','0','100','1025','30','0','120000','120000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Combatant - Cast Enrage at 30% HP'),
-('2323904','23239','1','0','100','0','8000','10000','0','0','0','0','45','5','10','0','22','1','0','0','2','1692','3','0','Bonechewer Combatant - Send AI Event A, Set Phase 1, and Change Faction on Timer OOC'),
-('2323905','23239','2','1','100','0','40','0','0','0','0','0','45','6','10','0','24','0','0','0','0','0','0','0','Bonechewer Combatant - Evade and Send AI Event B at 40% HP (Phase 1)'),
-('2323906','23239','30','1','100','0','6','23222','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Bonechewer Combatant - Evade on Receive AI Event B (Phase 1)'),
-('2323907','23239','30','1','100','0','6','23223','0','0','0','0','24','0','0','0','22','0','0','0','0','0','0','0','Bonechewer Combatant - Evade and Set Phase 0 on Receive AI Event B (Phase 1)'),
-('2323908','23239','21','1','100','0','0','0','0','0','0','0','54','-11159','0','0','5','16','0','0','22','0','0','0','Bonechewer Combatant - Say Text, Emote, and Set Phase 0 on Reached Home (Phase 1)'),
+-- Bonechewer Combatant 23239 - Should Drop Bonechewer Brawler from Threatlist (Combat Stop Mechanic, maybe Add Delay for EVENT_T_EVADE befor MoveHomeGen kicks in) and Add 23223 Event B Sender-Invoker for 2323906, also Reduce Combat Rage Timer if this is resolved
+('2323901','23239','1','0','100','0','8000','10000','0','0','0','0','2','1692','3','0','45','5','10','0','22','2','0','0','Bonechewer Combatant - Change Faction, Set Phase 2 and Send AI Event A on Timer OOC'),
+('2323902','23239','2','3','100','0','40','0','0','0','0','0','24','0','0','0','45','6','10','0','0','0','0','0','Bonechewer Combatant - Evade and Send AI Event B at 40% HP (Phase 2)'),
+('2323903','23239','30','3','100','0','6','23222','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Bonechewer Combatant - Evade on Receive AI Event B (Phase 2)'),
+('2323904','23239','21','3','100','0','0','0','0','0','0','0','11','17683','0','0','54','-11179','0','0','22','1','0','0','Bonechewer Combatant - Cast Full Heal and Emote and Set Phase 1 on Reached Home (Phase 2)'),
+('2323905','23239','21','3','100','0','0','0','0','0','0','0','54','-11159','0','0','22','1','0','0','0','0','0','0','Bonechewer Combatant - Say and Set Phase 1 on Reached Home (Phase 2)'),
+('2323906','23239','30','3','100','0','6','23223','0','0','0','0','24','0','0','0','22','1','0','0','0','0','0','0','Bonechewer Combatant - Evade and Set Phase 1 on Receive AI Event B (Phase 2)'),
+('2323907','23239','2','5','100','1025','30','0','120000','120000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Combatant - Cast Enrage at 30% HP (Phase 1)'),
+('2323908','23239','0','5','100','1025','5000','7000','10000','10000','0','0','11','41251','0','0','0','0','0','0','0','0','0','0','Bonechewer Combatant - Cast Combat Rage (Phase 1)'),
 -- Cage Trap Disturb Trigger 23304 - mob_cage_trap_trigger
 -- Ashtongue Rogue 23318
 ('2331801','23318','0','0','100','1025','5000','10000','10000','15000','0','0','11','41978','1','0','0','0','0','0','0','0','0','0','Ashtongue Rogue - Cast Debilitating Poison'),
@@ -31005,7 +31006,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10130','Battle Stance! Prepare for an offensive rush!','0','1','0','23049','0'),
 ('-10131','Defensive Stance! Shield yourself against their blows and strike back!','0','1','0','23049','0'),
 ('-10132','Berserker stance! Attack them recklessly!','0','1','0','23049','0'),
-('-10133','%s goes into a killing frenzy!','0','2','0','Bonechewer Brawler 23222','0'),
+-- RE-USE 10133
 ('-10134','Protect the innocent!','0','0','0','15638','0'),
 ('-10135','Serve the Public Trust!','0','0','0','15638','0'),
 ('-10136','Uphold the Law!','0','0','0','15638','0'),
@@ -31961,7 +31962,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11156','Kill him!','0','0','0','Bonechewer Spectator 23223','0'),
 ('-11157','Good fight!','0','0','0','Bonechewer Spectator 23223','0'),
 ('-11158','You see that final blow! Awesome!','0','0','0','Bonechewer Spectator 23223','0'),
-('-11159','I submit! You win this time...','0','0','0','Bonechewer Combatant 23239','0'),
+('-11159','I submit! You win this time...','0','0','0','Bonechewer Combatant 23239','16'),
 ('-11160','Halt at once!','0','0','0','16485/16504','0'),
 ('-11161','Pillagers! Desecrators!','0','0','0','16485/16504','0'),
 ('-11162','Thieves! Stop them!','0','0','0','16485/16504','0'),
@@ -31981,6 +31982,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11176','The secrets of this place are not intended for the likes of you!','0','0','0','16544/16545','0'),
 ('-11177','The tower is no place for the uninitiated!','0','0','0','16544/16545','0'),
 ('-11178','You will succeed only in damning yourselves!','0','0','0','16544/16545','0'),
+('-11179','%s arises to fight once more!','0','2','0','23222/23239','71'),
+('-11180','%s goes into a killing frenzy!','0','2','0','Bonechewer Brawler 23222','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
