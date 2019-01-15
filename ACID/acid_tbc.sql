@@ -26846,8 +26846,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2322202','23222','2','0','100','1025','30','0','120000','120000','0','0','11','8269','0','1','1','-46','0','0','0','0','0','0','Bonechewer Brawler - Cast Enrage at 30% HP'),
 ('2322203','23222','30','0','100','0','5','23239','0','0','0','0','2','1693','3','0','22','1','0','0','55','7','0','0','Bonechewer Brawler - Change Faction, Set Phase 1, and Attack on Receive AI Event A'),
 ('2322204','23222','2','1','100','0','40','0','0','0','0','0','45','6','10','0','24','0','0','0','0','0','0','0','Bonechewer Brawler - Evade and Send AI Event B at 40% HP (Phase 1)'),
-('2322205','23222','30','1','100','0','6','23239','0','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','Bonechewer Brawler - Evade on Receive AI Event B (Phase 1)'),
-('2322206','23222','30','1','100','0','6','23223','0','0','0','0','0','24','0','0','0','22','0','0','0','0','0','0','Bonechewer Brawler - Evade and Set Phase 0 on Receive AI Event B (Phase 1)'),
+('2322205','23222','30','1','100','0','6','23239','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Bonechewer Brawler - Evade on Receive AI Event B (Phase 1)'),
+('2322206','23222','30','1','100','0','6','23223','0','0','0','0','24','0','0','0','22','0','0','0','0','0','0','0','Bonechewer Brawler - Evade and Set Phase 0 on Receive AI Event B (Phase 1)'),
 ('2322207','23222','21','1','100','0','0','0','0','0','0','0','5','71','0','0','22','0','0','0','0','0','0','0','Bonechewer Brawler - Emote and Set Phase 0 on Reached Home (Phase 1)'),
 -- Bonechewer Spectator 23223
 ('2322301','23223','11','0','100','0','0','0','0','0','0','0','31','1','3','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Set Random Phase 1-3 on Spawn'),
