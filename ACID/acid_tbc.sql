@@ -26721,14 +26721,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spellbound Attendant 22959
 ('2295901','22959','13','0','100','1025','11000','17000','0','0','0','0','11','41395','1','0','0','0','0','0','0','0','0','0','Spellbound Attendant - Cast Kick'),
 ('2295902','22959','0','0','100','1025','5000','9000','12000','16000','0','0','11','41396','5','544','0','0','0','0','0','0','0','0','Spellbound Attendant - Cast Sleep'),
--- Dragonmaw Wyrmcaller 22960 - Yell: "Scout the area and report anything you see!" - RP - ss.40893 Fixate player -> wyrmcaller
+-- Dragonmaw Wyrmcaller 22960 - Yell: "Scout the area and report anything you see!" - RP
 ('2296001','22960','11','0','100','0','0','0','0','0','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Dragonmaw Wyrmcaller - Set Random Phase on Spawn'),
 ('2296002','22960','1','0','100','0','1000','1000','0','0','0','0','11','40899','0','0','0','0','0','0','0','0','0','0','Dragonmaw Wyrmcaller - Cast Felfire Proc OOC'),
-('2296003','22960','0','29','100','1025','7000','27000','6900','15000','0','0','11','40895','1','0','13','-50','1','0','0','0','0','0','Dragonmaw Wyrmcaller - Cast Jab and Reduce Threat (Phase 1)'),
-('2296004','22960','0','27','100','1025','20000','20000','20000','20000','0','0','11','40888','0','0','54','-10123','0','0','45','5','100','0','Dragonmaw Wyrmcaller - Cast Force Assist and Emote and Send AI Event 5 (Phase 2)'),
-('2296005','22960','0','23','100','1025','8000','15000','16000','21000','0','0','11','40892','5','512','13','-99','1','0','22','4','0','0','Dragonmaw Wyrmcaller - Cast Fixate and Reduce Threat and Set Phase 4 (Phase 3)'),
-('2296006','22960','0','15','100','1025','1000','1000','1000','1000','0','0','54','-10124','1','0','22','3','0','0','0','0','0','0','Dragonmaw Wyrmcaller - Emote and Set Phase 3 (Phase 4)'),
-('2296007','22960','9','0','100','1025','0','5','8000','12000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Dragonmaw Wyrmcaller - Cast Cleave'),
+('2296003','22960','0','0','100','1025','7000','27000','6900','15000','0','0','11','40895','1','0','13','-100','1','0','0','0','0','0','Dragonmaw Wyrmcaller - Cast Jab and Reduce Threat'),
+('2296004','22960','0','0','100','1025','20000','20000','20000','20000','0','0','11','40888','5','0','54','-10123','0','0','0','0','0','0','Dragonmaw Wyrmcaller - Cast Force Assist and Emote'),
+('2296005','22960','30','0','100','1','5','0','0','0','0','0','54','-10124','6','0','0','0','0','0','0','0','0','0','Dragonmaw Wyrmcaller - Emote on Received AI Event 5'),
+('2296006','22960','9','0','100','1025','0','5','8000','12000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Dragonmaw Wyrmcaller - Cast Cleave'),
 -- Priestess of Delight 22962
 ('2296201','22962','0','0','100','1025','7500','12000','8000','16000','0','0','11','41351','4','32','0','0','0','0','0','0','0','0','Priestess of Delight - Cast Curse of Vitality'),
 ('2296202','22962','0','0','100','1025','5000','10000','15000','18000','0','0','11','41334','5','544','0','0','0','0','0','0','0','0','Priestess of Delight - Cast Polymorph'),
@@ -26767,8 +26766,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2303001','23030','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Dragonmaw Sky Stalker - Enable Range Mode on Aggro'),
 ('2303002','23030','9','0','100','1025','5','60','11000','16000','0','0','11','40872','4','544','0','0','0','0','0','0','0','0','Dragonmaw Sky Stalker - Cast Immolation Arrow'),
 ('2303003','23030','9','0','100','1025','5','40','5000','8000','0','0','11','40873','1','256','0','0','0','0','0','0','0','0','Dragonmaw Sky Stalker - Cast Shoot'),
-('2303004','23030','30','0','100','1025','5','22960','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Dragonmaw Sky Stalker - Attack Invoker on Receive AI Event 5'),
-('2303005','23030','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Sky Stalker - Set REACT_DEFENSIVE on Spawn'),
+('2303004','23030','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Sky Stalker - Set REACT_DEFENSIVE on Spawn'),
 -- Shadowmoon Soldier 23047 - RP: "Yes Sir!"
 ('2304701','23047','9','0','100','1025','0','5','5000','9000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Shadowmoon Soldier - Cast Strike'),
 ('2304702','23047','30','0','100','1','5','23049','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Shadowmoon Soldier - Attack Invoker on Receive AI Event 5'),
@@ -26899,8 +26897,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2333002','23330','0','0','100','1025','9000','14000','12000','16000','0','0','11','40876','4','512','0','0','0','0','0','0','0','0','Dragonmaw Wind Reaver - Cast Doom Bolt'),
 ('2333003','23330','0','0','100','1025','14000','18000','16000','21000','0','0','11','40875','17','1024','0','0','0','0','0','0','0','0','Dragonmaw Wind Reaver - Cast Freeze'),
 ('2333004','23330','9','0','100','1025','0','40','2400','2800','0','0','11','40877','1','256','0','0','0','0','0','0','0','0','Dragonmaw Wind Reaver - Cast Fireball'),
-('2333005','23330','30','0','100','1025','5','22960','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Dragonmaw Wind Reaver - Attack Invoker on Receive AI Event 5'),
-('2333006','23330','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Wind Reaver - Set REACT_DEFENSIVE on Spawn'),
+('2333005','23330','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Dragonmaw Wind Reaver - Set REACT_DEFENSIVE on Spawn'),
 -- Flame Crash (23336) - mob_flame_crash
 -- Illidari Centurion 23337
 ('2333701','23337','0','0','100','1025','3000','5000','10000','13500','0','0','11','41168','15','0','0','0','0','0','0','0','0','0','Illidari Centurion - Cast Sonic Strike'),
@@ -30998,7 +30995,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10120','Return to your original form, $N!','0','1','0','Coilskar General 22873 on Free Friend','0'),
 ('-10121','%s shells up defensively','0','2','0','Dragon Turtle 22885 on 40087','0'),
 ('-10122','%s fixates on $n.','0','2','0','Fixate Emote','0'),
-('-10123','%s calls for an ally to assist her!','0','2','0','Dragonmaw Wyrmcaller 22960 on Force Assist 40888','0'),
+('-10123','%s calls for an ally to assist $g him : her;!','0','2','0','Dragonmaw Wyrmcaller 22960 on Force Assist 40888','0'),
 ('-10124','%s rushes away to attack $n!','0','2','0','Dragonmaw Wyrmcaller 22960 on Fixate 40892','0'),
 ('-10125','%s becomes increasingly enraged as he sees his allies fall in battle!','0','2','0','Bonechewer Taskmaster 23028 on Bonechewer Worker 22963 Death','0'),
 ('-10126','You call that an offense? I\'ve seen more offensive tallstriders!','0','1','0','Bonechewer Taskmaster 23028','0'),
