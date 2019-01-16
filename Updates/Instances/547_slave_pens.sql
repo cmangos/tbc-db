@@ -409,9 +409,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+135, @CGUID+116, 1155), -- Wastewalker Worker -> Wastewalker Slave
 (@CGUID+226, @CGUID+116, 1155), -- Wastewalker Slave -> Wastewalker Slave
 (@CGUID+142, @CGUID+115, 1155), -- Wastewalker Worker -> Wastewalker Slave
-(@CGUID+142, @CGUID+229, 1155), -- Wastewalker Worker -> Wastewalker Slave
 (@CGUID+230, @CGUID+115, 1155), -- Wastewalker Worker -> Wastewalker Slave
-(@CGUID+230, @CGUID+229, 1155), -- Wastewalker Worker -> Wastewalker Slave
 (@CGUID+40, @CGUID+64, 1155), -- Coilfang Observer -> Coilfang Champion
 (@CGUID+96, @CGUID+64, 1155), -- Coilfang Enchantress -> Coilfang Champion
 (@CGUID+231, @CGUID+64, 1155), -- Coilfang Scale-Healer -> Coilfang Champion
