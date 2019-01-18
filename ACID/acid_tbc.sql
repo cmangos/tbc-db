@@ -27132,6 +27132,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1460501','14605','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Bone Construct - Set in Combat with Zone on Spawn'),
 ('1460502','14605','33','0','100','1','0','0','5000','8000','0','0','11','8355','1','0','0','0','0','0','0','0','0','0','Bone Construct - Cast Exploit Weakness on Facing Target Back'),
 ('1460503','14605','21','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Bone Construct - Forced Despawn on Reached Home'),
+-- Corrupted Fire Nova Totem V 14662 - TotemAI
+-- Corrupted Stoneskin Totem VI 14663 - TotemAI
+-- Corrupted Healing Stream Totem V 14664 - TotemAI
+-- Corrupted Windfury Totem III 14666 - TotemAI
+-- Corrupted Totem 14667 - TotemAI
 -- Corrupted Infernal
 ('1466801','14668','11','0','100','0','0','0','0','0','0','0','11','22703','0','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Cast Inferno Effect on Spawn'),
 ('1466802','14668','0','0','100','0','1000','1000','0','0','0','0','11','12743','0','0','0','0','0','0','0','0','0','0','Corrupted Infernal - Cast Immolation'),
@@ -29950,10 +29955,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1292201','12922','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Imp Minion - Enable Range Mode on Aggro'),
 ('1292202','12922','0','0','100','1025','1000','2000','2300','2800','0','0','11','20801','1','256','0','0','0','0','0','0','0','0','Imp Minion - Cast Firebolt'),
 -- Dire Maul Crystal Totem 13916 - TotemAI
--- Corrupted Fire Nova Totem V 14662 - TotemAI
--- Corrupted Stoneskin Totem VI 14663 - TotemAI
--- Corrupted Healing Stream Totem V 14664 - TotemAI
--- Corrupted Windfury Totem III 14666 - TotemAI
 -- Brain Wash Totem 15112 - TotemAI
 -- Ancient Mana Spring Totem 15304 - TotemAI
 -- Earth Elemental Totem 15430 - TotemAI
