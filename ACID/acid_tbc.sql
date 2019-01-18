@@ -6176,7 +6176,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Skymane Gorilla
 ('252101','2521','0','0','100','1','8600','8600','16500','27700','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Skymane Gorilla - Cast Trample'),
 -- Jaguero Stalker 2522
-('252201','2522','1','0','100','0','1000','1000','0','0','0','0','11','12787','0','32','11','30831','0','32','0','0','0','0','Jaguero Stalker - Cast Trash and Stealth OOC'),
+('252201','2522','1','0','100','0','1000','1000','0','0','0','0','11','6408','0','34','11','12787','0','34','0','0','0','0','Jaguero Stalker - Cast Faded and Trash OOC'),
 -- Yenniku 2530 - mob_yenniku
 -- Zanzil the Outcast 2534
 ('253401','2534','0','0','100','0','5000','10000','0','0','0','0','11','8832','0','0','0','0','0','0','0','0','0','0','Zanzil the Outcast - Cast Ward of Zanzil'),
@@ -14153,7 +14153,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Young Thistle Boar (1984) - NSR
 -- Thistle Boar (1985) - NSR
 -- Webwood Spider 1986
-('198601','1986','1','0','100','0','1000','1000','0','0','0','0','11','6752','0','32','0','0','0','0','0','0','0','0','Webwood Spider - Cast Weak Poison Proc OOC'),
+('198601','1986','11','0','100','0','0','0','0','0','0','0','11','6752','0','34','0','0','0','0','0','0','0','0','Webwood Spider - Cast Weak Poison Proc OOC'),
 -- Grell (1988) - NSR
 -- Grellkin (1989) - NSR
 -- Tarindrella
@@ -14721,7 +14721,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Devouring Ectoplasm 3638
 ('363801','3638','2','0','100','0','50','0','0','0','0','0','11','7952','0','0','0','0','0','0','0','0','0','0','Devouring Ectoplasm - Cast Clone at 50% HP'),
 -- Trigore the Lasher 3652
-('365201','3652','1','0','100','0','1000','1000','0','0','0','0','11','3417','0','32','0','0','0','0','0','0','0','0','Trigore the Lasher - Cast Thrash OOC'),
+('365201','3652','11','0','100','0','0','0','0','0','0','0','11','3417','0','34','0','0','0','0','0','0','0','0','Trigore the Lasher - Cast Thrash on Spawn'),
 -- Razormane Wolf 3939 - NSR
 -- Minor Water Guardian 3950
 ('395001','3950','11','0','100','0','0','0','0','0','0','0','11','6488','0','34','11','6498','0','34','0','0','0','0','Minor Water Guardian - Cast Sarilus''s Elementals Passive and Feed Sarilus Passive on Spawn'),
