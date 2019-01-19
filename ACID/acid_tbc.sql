@@ -19380,6 +19380,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2203702','22037','28','0','100','1','13444','5','5000','9000','0','0','11','13444','1','0','0','0','0','0','0','0','0','0','Smith Gorlunk - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
 -- Wildhammer Gryphon Rider 22059
 ('2205901','22059','29','0','100','0','3500','3500','0','0','0','0','54','-11135','11','0','0','0','0','0','0','0','0','0','Wildhammer Gryphon Rider - Say on Generic Timer'),
+-- Shadowmoon Soulstealer 22061 - mob_shadowmoon_soulstealer
 -- Air Force Guard Post (Scryer - Dragonhawk) 22066 - npc_air_force_bots
 -- Air Force Trip Wire - Rooftop (Scryer) 22070 - npc_air_force_bots
 -- Air Force Alarm Bot (Scryer) 22071 - npc_air_force_bots
