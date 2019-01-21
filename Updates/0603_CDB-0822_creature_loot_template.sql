@@ -16,6 +16,6 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (5649, 9523, -55, 0, 1, 1, 0, 'Troll Temper'),
 (5648, 9523, -55, 0, 1, 1, 0, 'Troll Temper'),
 (7267, 9523, -55, 0, 2, 5, 0, 'Troll Temper'),
-(7791, 9523, -55, 0, 1, 1, 0, 'Troll Temper'),
+-- (7791, 9523, -55, 0, 1, 1, 0, 'Troll Temper'), -- Theka the Martyr Shapeshift
 (8127, 9523, -55, 0, 2, 5, 0, 'Troll Temper');
 
