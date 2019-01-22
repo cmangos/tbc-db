@@ -27,7 +27,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 (12397, 14256, 34.9398, 0, 5, 8, 0, 'Felcloth'),
 (12397, 34002, 100, 1, -34002, 3, 0, ''),
 (12397, 34003, 100, 1, -34003, 2, 0, ''),
-(12397, 18665, 33, 3, 1, 1, 0, 'The Eye of Shadow'),
+(12397, 18665, 100, 3, 1, 1, 0, 'The Eye of Shadow'),
 (12397, 35032, 100, 1, -35032, 1, 0, '(World Boss Loot) - Lord Kazzak / Highlord Kruul - Epic Items (Group 1)'),
 (12397, 2, 100, 2, -35032, 1, 0, '(World Boss Loot) - Lord Kazzak / Highlord Kruul - Epic Items (Group 2)'),
 (12397, 190003, 100, 2, -34003, 1, 0, 'Sack of Gems (Blue/Green/Gray/Yellow/Red)'),
