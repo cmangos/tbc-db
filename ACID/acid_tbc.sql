@@ -26605,7 +26605,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2285302','22853','0','0','100','1025','8000','27000','25000','32000','0','0','11','39671','4','512','0','0','0','0','0','0','0','0','Illidari Defiler - Cast Rain of Chaos'),
 ('2285303','22853','0','0','100','1025','16000','25000','30000','38000','0','0','11','39672','4','0','0','0','0','0','0','0','0','0','Illidari Defiler - Cast Curse of Agony'),
 ('2285304','22853','0','0','100','1025','12000','25000','21000','28000','0','0','11','39674','5','544','0','0','0','0','0','0','0','0','Illidari Defiler - Cast Banish'),
--- Illidari Nightlord 22855 - 39649/41159 needs core support, summon 8-12 shadow fiends - AT REMOVE 39645 cast 39649
+-- Illidari Nightlord 22855
 ('2285501','22855','0','0','100','1025','3000','15000','14000','21000','0','0','11','41150','15','512','0','0','0','0','0','0','0','0','Illidari Nightlord - Cast Fear'),
 ('2285502','22855','0','0','100','1025','7000','21000','21000','33000','0','0','11','39645','0','0','22','1','0','0','0','0','0','0','Illidari Nightlord - Cast Shadow Inferno and Set Phase 1'),
 ('2285503','22855','0','0','100','1025','9000','15000','12000','15000','0','0','11','39647','1','32','0','0','0','0','0','0','0','0','Illidari Nightlord - Cast Curse of Mending'),
@@ -26807,7 +26807,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Supremus Volcano 23085 - npc_volcano
 -- Sewer Rat (23086) - NSR
 -- Sewer Crocolisk (23087) - NSR
--- Akama (23089) - npc_akama_illidan - (-1564135,'I thank you for your aid, brothers.  Our people will be redeemed!',0,0,0,0,'akama(illidan) SAY_OPEN_DOOR_5'),(-1564136,'Be wary, friends. The Betrayer meditates in the court just beyond.',0,0,0,0,'akama(illidan) SAY_OPEN_DOOR_6'),
+-- Akama (23089) - npc_akama_illidan - (-1564136,'Be wary, friends. The Betrayer meditates in the court just beyond.',0,0,0,0,'akama(illidan) SAY_OPEN_DOOR_6'),
 -- Yell: "I will deal with these mongrels! Strike now, friends! Strike at the Betrayer!" - Illidan Encounter fighting incoming Illidari Elite 23226
 -- Yell: "I will deal with these mongrels! Strike now, friends! Strike at the Betrayer!" - Illidan Encounter fighting incoming Illidari Elite 23226
 -- Supremus Punch Invis Stalker 23095 - molten_flame
@@ -26824,8 +26824,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Okuno (23159) - NSR
 -- Hand of Gorefiend 23172
 ('2317201','23172','0','0','100','1025','5000','9000','30000','30000','0','0','11','38166','0','0','0','0','0','0','0','0','0','0','Hand of Gorefiend - Cast Enrage'),
--- Akama 23191 - Yell: "I will not last much longer!"+Sound: 11385 <20% HP, Yell: "No! Not yet!"+spell:3617+sound:11386 befor death
--- Event Success Yells: "Broken of the Ashtongue tribe, your leader speaks!"+15 (OneShotRoar), "The Betrayer no longer holds sway over us.  His dark magic over the Ashtongue soul has been destroyed!"+1 (OneShotTalk)
+-- Akama 23191 - Yell: "No! Not yet!"+spell:3617+sound:11386 befor death
 -- "Come out from the shadows!  I've returned to lead you against our true enemy!  Shed your chains and raise your weapons against your Illidari masters!"+397 (OneShotPointNoSheathe)
 ('2319101','23191','1','0','100','0','1000','1000','0','0','0','0','11','34189','0','32','0','0','0','0','0','0','0','0','Akama - Cast Stealth OOC'),
 ('2319102','23191','9','0','100','1025','0','30','6000','8000','0','0','11','39945','4','0','0','0','0','0','0','0','0','0','Akama - Cast Chain Lightning'),
@@ -26898,7 +26897,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ashtongue Rogue 23318
 ('2331801','23318','0','0','100','1025','5000','10000','10000','15000','0','0','11','41978','1','0','0','0','0','0','0','0','0','0','Ashtongue Rogue - Cast Debilitating Poison'),
 ('2331802','23318','0','0','100','1025','5000','10000','10000','15000','0','0','11','41177','1','0','0','0','0','0','0','0','0','0','Ashtongue Rogue - Cast Eviscerate'),
--- Ashtongue Broken (23319) - Yell: 1 does "Hail our leader!  Hail Akama!", rest does "Hail Akama!"
+-- Ashtongue Broken (23319) - NSR
 -- Dragonmaw Wind Reaver 23330 - Yell: "Permission to buzz the tower!","Dragonriders mount up!", also Say Orcish: "Dogg kagg mog Ruk'ka'ha Kil ogg lok'mogul n " - Dragonmaw Wind Reaver 23330
 ('2333001','23330','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Dragonmaw Wind Reaver - Enable Range Mode on Aggro'),
 ('2333002','23330','0','0','100','1025','9000','14000','12000','16000','0','0','11','40876','4','512','0','0','0','0','0','0','0','0','Dragonmaw Wind Reaver - Cast Doom Bolt'),
@@ -26958,8 +26957,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2340201','23402','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Enable Range Mode on Aggro'),
 ('2340202','23402','0','0','100','1057','12000','24000','4000','20000','0','0','11','41379','1','0','11','41382','1','0','0','0','0','0','Illidari Battle-Mage - Random Cast Flamestrike or Blizzard'),
 ('2340203','23402','0','0','100','1057','1200','1200','1200','2400','0','0','11','41383','1','256','11','41384','1','256','0','0','0','0','Illidari Battle-Mage - Random Cast Fireball or Frostbolt'),
--- Illidari Assassin 23403 - Ambush on Vanish End if in Range of Selected Target, has shadowstep spelleffect, maybe temp taunt effect, add  -- ss.34081 OOC
-('2340301','23403','1','0','100','0','1000','1000','0','0','0','0','0','0','0','0','11','41393','0','32','0','0','0','0','Illidari Assassin - Cast Improved Parry and Riposte OOC'),
+-- Illidari Assassin 23403 - Ambush on Vanish End if in Range of Selected Target, has shadowstep spelleffect, maybe temp taunt effect
+('2340301','23403','11','0','100','0','0','0','0','0','0','0','11','34081','0','34','11','41393','0','34','0','0','0','0','Illidari Assassin - Cast Improved Parry and Riposte on Spawn'),
 ('2340302','23403','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Illidari Assassin - Set Phase 1 on Aggro'),
 ('2340303','23403','0','5','100','1025','10000','15000','10000','17000','0','0','11','3609','1','0','0','0','0','0','0','0','0','0','Illidari Assassin - Cast Paralyzing Poison (Phase 1)'),
 ('2340304','23403','0','5','100','1025','9000','30000','24000','34000','0','0','11','39667','0','0','22','2','0','0','0','0','0','0','Illidari Assassin - Cast Vanish and Set Phase 2 (Phase 1)'),
