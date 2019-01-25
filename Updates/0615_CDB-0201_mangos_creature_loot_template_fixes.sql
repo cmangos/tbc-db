@@ -24,7 +24,7 @@ INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `g
 
 -- Creating the reference group for the 2 tier 2 pants and the 2 other epics
 -- no race condition for paladin/shaman in tbc
-DELETE FROM `reference_loot_template` WHERE `entry` IN (34030, 34069, 34070);
+DELETE FROM `reference_loot_template` WHERE `entry` IN (34030, 34069, 34070, 34106); -- 34106 -> 34069
 INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES 
 (34030, 16901, 0, 1, 1, 1, 0, 'Stormrage Legguards'),
 (34030, 16909, 0, 1, 1, 1, 0, 'Bloodfang Pants'),
