@@ -3,7 +3,7 @@
 UPDATE `creature_template` SET `NpcFlags` = 385, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6.2 / 7) WHERE `entry` = 12246;
 
 -- Adjust Spawn for Super-Seller 680 - 12246 - 11625197
-UPDATE `dbscripts_on_creature_movement` SET `x` = -1926.604, `y` = 2412.792, `z` = 60.6956, `o` = 0.1745329 WHERE `id` = 11625197 AND `command` = 10 AND `datalong` = 12246
+UPDATE `dbscripts_on_creature_movement` SET `x` = -1926.604, `y` = 2412.792, `z` = 60.6956, `o` = 0.1745329 WHERE `id` = 11625197 AND `command` = 10 AND `datalong` = 12246;
 
 UPDATE `npc_vendor` SET `maxcount` = 3, `incrtime` = 7200 WHERE `entry` = 12246 AND `item` IN (
 1477, -- Scroll of Agility II
