@@ -2,10 +2,8 @@
 -- http://web.archive.org/web/20110615163640/http://www.wowhead.com:80/npc=12246#sells:0+1-2
 UPDATE `creature_template` SET `NpcFlags` = 385, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (6.2 / 7) WHERE `entry` = 12246;
 
--- Add Spawn for Super-Seller 680 - 12246
-DELETE FROM `creature` WHERE `guid` = 29119 AND `id` = 12246;
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
-(29119, 12246, 1, 1, -1926.604, 2412.792, 60.6956, 0.1745329, 300, 300, 0, 0);
+-- Adjust Spawn for Super-Seller 680 - 12246 - 11625197
+UPDATE `dbscripts_on_creature_movement` SET `x` = -1926.604, `y` = 2412.792, `z` = 60.6956, `o` = 0.1745329 WHERE `id` = 11625197 AND `command` = 10 AND `datalong` = 12246
 
 UPDATE `npc_vendor` SET `maxcount` = 3, `incrtime` = 7200 WHERE `entry` = 12246 AND `item` IN (
 1477, -- Scroll of Agility II
