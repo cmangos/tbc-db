@@ -16,7 +16,7 @@ World of Warcraft content and materials are trademarks and copyrights of Blizzar
 
 Compatibility
 -------------
-The *TBC-DB* database is compatible with [cmangos-tbc] core only.
+The *TBC-DB* database is compatible with [cmangos-tbc][10] core only.
 
 Getting started
 ---------------
@@ -31,17 +31,28 @@ Installation
 **TBC-DB** is the main content database for: `mangos` where the world is defined
 with creatures, items, objects, quests, etc.
 
-It must be applied after creating the `mangos` database from your CMaNGOS core distribution [cmangos-tbc] from [CMaNGOS Project].
+It must be applied after creating the `mangos` database from your CMaNGOS core distribution [cmangos-tbc][10] from [CMaNGOS Project][11].
 
-For Easy Installation Edit The Following Windows Batch File `./Windows_Install_Script.bat` if you are a Windows User and configure
-the Installation Options Setting Your MYSQL Database Names, Passwords and Source Folders.
+If you used the default values when installing your mangos core, simply run into a bash compatible shell (like Bash Git for Windows) the following command ./InstallFullDB.sh .
 
-It will provide you a Menu With Various Installation Options and Configurations That Have Greatly Simplified The Process.
+It will create a single file InstallFullDB.config .
+
+If you have modified the default values for connecting to the database, in order to use this database repository, you will have to open InstallFullDB.config , and edit in the desired database, username and password according to how you have configured your MySQL server. Default values for mangos core are username:mangos , password:mangos , database:mangos . For security reasons, it is strongly adviced to use different username and password.
+
+Once you have the desired database user and rights configured in MySQL, you may run again the ./InstallFullDB.sh command to load the individual data tables into your database, populate them and apply all updates since the last milestone.
+
 
 For a full installation guide, please refer to [CMaNGOS installation instructions][14].
 
 And if something goes wrong?
 ----------------------------
-The best way to submit an issue is to use tbc-db github.
+To submit an issue for **ACID** or **Database**. Pls use: [Issue Tracker:][1].
+
+To submit an issue for **Core** or **ScriptDev2**. Pls use: [Issue Tracker:][2].
 
 
+[1]: https://github.com/cmangos/tbc-db/issues/ "Issue Tracker"
+[2]: https://github.com/cmangos/issues/issues/ "Issue Tracker"
+[10]: https://github.com/cmangos/mangos-tbc "CMaNGOS-TBC"
+[11]: http://cmangos.net/ "CMaNGOS Project"
+[14]: https://github.com/cmangos/issues/wiki/Installation-Instructions "CMaNGOS installation instructions"
