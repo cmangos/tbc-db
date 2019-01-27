@@ -4,9 +4,10 @@
 UPDATE `creature_template` SET `LootId` = 1 WHERE `entry` = 1;
 DELETE FROM `creature_loot_template` WHERE `entry` = 1;
 INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
-(1, 10006, 1, 0, -10006, 1, 0, 'NPC LOOT - Profession (-Design,-Formula,-Pattern,-Plans,-Recipe,-Schematic) - NPC Level 68+ Elite (Dungeon,Lower Tier Raid?) - TBC NPC ONLY'),
+(1, 12004, 1, 1, -12004, 1, 0, 'Uncommon & Rare Gem - TBC'),
+(1, 12005, 1, 1, -12005, 1, 0, 'Epic Gem - TBC'),
 (1, 25030, 1, 1, -25030, 1, 0, 'Blade\'s Edge Mountains (Boss Loot) - Jewelcrafting Design'),
-(1, 34093, 1, 1, -34093, 1, 0, 'Epic Gem - TBC'),
+(1, 34010, 1, 1, -34010, 1, 0, ''),
 (1, 36196, 1, 1, -36196, 1, 0, 'Hyjal Summit (Trash Loot) - Epic Items'),
 (1, 36197, 1, 1, -36197, 1, 0, 'Hyjal Summit (Trash Loot) - Profession (-Pattern,-Plans)'),
 (1, 36198, 1, 1, -36198, 1, 0, 'Black Temple (Trash Loot) - Epic Items'),
