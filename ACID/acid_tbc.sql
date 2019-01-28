@@ -17432,12 +17432,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1942203','19422','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bleeding Hollow Necrolyte - Flee at 15% HP'),
 ('1942204','19422','0','0','100','1025','8000','12000','30000','45000','0','0','11','34073','4','32','0','0','0','0','0','0','0','0','Bleeding Hollow Necrolyte - Cast Curse of the Bleeding Hollow'),
 ('1942205','19422','9','0','100','1025','0','40','3400','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Bleeding Hollow Necrolyte - Cast Fireball'),
--- Bleeding Hollow Tormentor 19424
+-- Bleeding Hollow Tormentor 19424 - Needs different Phases for Mounted/NonMounted Version
 ('1942401','19424','4','0','100','0','0','0','0','0','0','0','11','34368','0','0','43','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Cast Summon Bleeding Hollow Riding Worg and Dismount on Aggro'),
-('1942402','19424','0','0','100','1','9000','16000','12000','18000','0','0','11','33924','2','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Cast Fear'),
-('1942403','19424','30','0','100','1','5','19640','0','0','0','0','11','33976','10','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Cast Mend Pet on Receive AI Event 5'),
-('1942404','19424','2','0','100','0','15','0','0','0','0','0','11','31553','1','0','1','-47','0','0','25','0','0','0','Bleeding Hollow Tormentor - Cast Hamstring and Flee at 15% HP'),
-('1942405','19424','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Despawn Guardians on Evade'),
+('1942402','19424','30','0','100','1','5','19640','0','0','0','0','11','33976','10','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Cast Mend Pet on Receive AI Event 5'),
+('1942403','19424','2','0','100','0','15','0','0','0','0','0','11','31553','1','0','1','-47','0','0','25','0','0','0','Bleeding Hollow Tormentor - Cast Hamstring and Flee at 15% HP'),
+('1942404','19424','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Bleeding Hollow Tormentor - Despawn Guardians on Evade'),
 -- Orgrimmar Peon 19425
 ('1942501','19425','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Orgrimmar Peon - Cast Invisibility and Stealth Detection OOC'),
 -- Peon Overseer 19426
