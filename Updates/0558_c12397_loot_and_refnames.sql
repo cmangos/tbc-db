@@ -2,10 +2,12 @@
 -- Based on loot table of creature 6109 (Azuregos) and similar raid bosses
 -- Source: http://wowd.org/creatures/12397.html
 -- https://web.archive.org/web/20070113051839/http://wow.allakhazam.com:80/db/mob.html?wmob=12397
-DELETE FROM `reference_loot_template_names` WHERE `entry` IN (34080,34081,35032);
+DELETE FROM `reference_loot_template_names` WHERE `entry` IN (35033,35034,35035,35036,35032);
 INSERT INTO `reference_loot_template_names` (`entry`, `name`) VALUES
-(34080, '(World Boss Loot) - Doomwalker - Epic Items'),
-(34081, '(World Boss Loot) - Doom Lord Kazzak - Epic Items'),
+(35033, '(World Boss Loot) - Doomwalker (17711) - Epic Items (Group 1)'),
+(35034, '(World Boss Loot) - Doomwalker (17711) - Epic Items (Group 2)'),
+(35035, '(World Boss Loot) - Doom Lord Kazzak (18728) - Epic Items (Group 1)'),
+(35036, '(World Boss Loot) - Doom Lord Kazzak (18728) - Epic Items (Group 2)'),
 (35032, '(World Boss Loot) - Lord Kazzak / Highlord Kruul - Epic Items');
 
 DELETE FROM `reference_loot_template` WHERE `entry` = 35032;
