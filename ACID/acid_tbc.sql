@@ -25478,6 +25478,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nightmare Suppressor
 ('849701','8497','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','1','-579','0','0','0','0','0','0','Nightmare Suppressor - Summoned Demon on Spawn'),
 ('849702','8497','1','0','100','1','10000','10000','10000','10000','0','0','11','12623','0','0','0','0','0','0','0','0','0','0','Nightmare Suppressor - Cast Suppression OOC'),
+-- Atal'ai Totem 8510 - TotemAI
 -- Atal'alarion (3.3.0 Official Data)
 ('858001','8580','11','0','100','0','0','0','0','0','0','0','1','-817','0','0','0','0','0','0','0','0','0','0','Atal''alarion - Yell on Spawn'),
 ('858002','8580','0','0','100','1','10700','14900','21600','41600','0','0','11','12887','1','0','0','0','0','0','0','0','0','0','Atal''alarion - Cast Sweeping Slam'),
