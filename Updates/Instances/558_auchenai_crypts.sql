@@ -757,7 +757,11 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+45, 184937, 558, 3, -58.44398, -414.7479, 26.58382, 2.565632, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
 (@OGUID+46, 181569, 558, 3, 254.1934, -152.5304, 31.18292, 5.445428, 0, 0, -0.4067364, 0.9135455, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+47, 181569, 558, 3, -153.854, -290.5263, 24.57888, 5.427975, 0, 0, -0.4146929, 0.9099615, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+48, 181278, 558, 3, 31.04075, -359.3029, 26.59848, 5.619962, 0, 0, -0.3255672, 0.9455189, 86400, 86400, 100, 1); -- Ancient Lichen
+(@OGUID+48, 181278, 558, 3, 31.04075, -359.3029, 26.59848, 5.619962, 0, 0, -0.3255672, 0.9455189, 86400, 86400, 100, 1), -- Ancient Lichen
+(@OGUID+49, 184936, 558, 3, 239.61, -19.80, -0.06, 1.58, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+50, 184937, 558, 3, 239.61, -19.80, -0.06, 1.58, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+51, 184936, 558, 3, 145.96, 41.68, 4.26, 4.70, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+52, 184937, 558, 3, 145.96, 41.68, 4.26, 4.70, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -784,7 +788,9 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+60, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #8'),
 (@PGUID+61, @PGUID+52, 0, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #9'),
 (@PGUID+91, @PGUID+90, 0, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #1'),
-(@PGUID+92, @PGUID+90, 0, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #2');
+(@PGUID+92, @PGUID+90, 0, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #2'),
+(@PGUID+93, @PGUID+90, 0, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #3'),
+(@PGUID+94, @PGUID+90, 0, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #4');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+51, 5, 'Auchenai Crypts - Master Ancient Lichen (181278) Pool'),
@@ -800,7 +806,9 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+61, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #9'),
 (@PGUID+90, 1, 'Auchenai Crypts - Master Chest Pool'),
 (@PGUID+91, 1, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #1'),
-(@PGUID+92, 1, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #2');
+(@PGUID+92, 1, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #2'),
+(@PGUID+93, 1, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #3'),
+(@PGUID+94, 1, 'Auchenai Crypts - Bound / Solid Adamantite Chest - #4');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
@@ -845,10 +853,14 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+46, @PGUID+60, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #8'),
 (@OGUID+4, @PGUID+61, 0, 'Auchenai Crypts - Adamantite Deposit (181556) - #9'),
 (@OGUID+47, @PGUID+61, 0, 'Auchenai Crypts - Rich Adamantite Deposit (181569) - #9'),
-(@OGUID+42, @PGUID+91, 0, 'Auchenai Crypts - Bound Adamantite Chest (184936)'),
-(@OGUID+43, @PGUID+91, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937)'),
-(@OGUID+44, @PGUID+92, 0, 'Auchenai Crypts - Bound Adamantite Chest (184936)'),
-(@OGUID+45, @PGUID+91, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937)');
+(@OGUID+42, @PGUID+91, 0, 'Auchenai Crypts - Bound Adamantite Chest (184936) - #1'),
+(@OGUID+43, @PGUID+91, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937) - #1'),
+(@OGUID+44, @PGUID+92, 0, 'Auchenai Crypts - Bound Adamantite Chest (184936) - #2'),
+(@OGUID+45, @PGUID+92, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937) - #2'),
+(@OGUID+49, @PGUID+93, 0, 'Auchenai Crypts - Bound Adamantite Chest (184936) - #3'),
+(@OGUID+50, @PGUID+93, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937) - #3'),
+(@OGUID+51, @PGUID+94, 0, 'Auchenai Crypts - Bound Adamantite Chest (184936) - #4'),
+(@OGUID+52, @PGUID+94, 0, 'Auchenai Crypts - Solid Adamantite Chest (184937) - #4');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
