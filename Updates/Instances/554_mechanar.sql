@@ -305,13 +305,23 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+8, 184465, 554, 1, 225.442, 83.4075, 0.002621, 4.74591, 0, 0, 0, 0, 10800, 10800, 100, 1), -- Cache of the Legion
 (@OGUID+9, 184632, 554, 3, 236.46, 52.3636, 1.65354, 3.14159, 0, 0, -1, 0, 43200, 43200, 0, 1), -- Mo'arg 1 Door
 (@OGUID+10, 184849, 554, 2, 225.442, 83.4075, 0.002621, 4.74591, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Cache of the Legion
-(@OGUID+11, 184936, 554, 3, 299.06, -46.0161, 25.3949, 6.1043, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+12, 184937, 554, 3, 143.472, 179.921, 25.5636, 1.36442, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+13, 184941, 554, 3, 243.344, 14.1168, -0.0019269, 0.50436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+-- RE-USE 11 - 13
 (@OGUID+14, 185015, 554, 3, 144.904, -44.3406, 1.01041, 0.543127, 0, 0, 0, 0, 120, 120, 100, 1), -- Overcharged Manacell
 (@OGUID+15, 185015, 554, 3, 146.76, -36.2917, 1.01041, 5.99065, 0, 0, 0, 0, 120, 120, 100, 1), -- Overcharged Manacell
 (@OGUID+16, 185015, 554, 3, 158.931, -26.9887, 1.00972, 4.98325, 0, 0, 0, 0, 120, 120, 100, 1), -- Overcharged Manacell
-(@OGUID+17, 185015, 554, 3, 151.858, -29.8824, 1.01041, 5.41365, 0, 0, 0, 0, 120, 120, 100, 1); -- Overcharged Manacell
+(@OGUID+17, 185015, 554, 3, 151.858, -29.8824, 1.01041, 5.41365, 0, 0, 0, 0, 120, 120, 100, 1), -- Overcharged Manacell
+(@OGUID+18, 184936, 554, 3, 221.32, -90.15, 0.00, 3.73, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+19, 184937, 554, 3, 221.32, -90.15, 0.00, 3.73, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+20, 184936, 554, 3, 131.80, -44.97, -0.00, 0.81, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+21, 184937, 554, 3, 131.80, -44.97, -0.00, 0.81, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+22, 184936, 554, 3, 129.97, 45.00, 0.00, 5.51, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+23, 184937, 554, 3, 129.97, 45.00, 0.00, 5.51, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+24, 184940, 554, 3, 243.344, 14.1168, -0.0019269, 0.50436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+25, 184941, 554, 3, 243.344, 14.1168, -0.0019269, 0.50436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+26, 184936, 554, 3, 299.06, -46.0161, 25.3949, 6.1043, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+27, 184937, 554, 3, 299.06, -46.0161, 25.3949, 6.1043, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+28, 184936, 554, 3, 143.472, 179.921, 25.5636, 1.36442, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+29, 184937, 554, 3, 143.472, 179.921, 25.5636, 1.36442, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -328,18 +338,39 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+41, @PGUID+40, 0, 'The Mechanar - Bound / Solid Adamantite Chest #1'),
+(@PGUID+42, @PGUID+40, 0, 'The Mechanar - Bound / Solid Adamantite Chest #2'),
+(@PGUID+43, @PGUID+40, 0, 'The Mechanar - Bound / Solid Adamantite Chest #3'),
+(@PGUID+44, @PGUID+40, 0, 'The Mechanar - Bound / Solid Adamantite Chest #4'),
+(@PGUID+45, @PGUID+40, 0, 'The Mechanar - Bound / Solid Adamantite Chest #5'),
+(@PGUID+46, @PGUID+40, 0, 'The Mechanar - Bound / Solid Adamantite Chest #6');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+21, 1, 'The Mechanar - Master Chest Pool'); -- gameobject
+(@PGUID+40, 1, 'The Mechanar - Master Chest Pool'), -- gameobject
+(@PGUID+41, 1, 'The Mechanar - Bound / Solid Adamantite Chest #1'),
+(@PGUID+42, 1, 'The Mechanar - Bound / Solid Adamantite Chest #2'),
+(@PGUID+43, 1, 'The Mechanar - Bound / Solid Adamantite Chest #3'),
+(@PGUID+44, 1, 'The Mechanar - Bound / Solid Adamantite Chest #4'),
+(@PGUID+45, 1, 'The Mechanar - Bound / Solid Adamantite Chest #5'),
+(@PGUID+46, 1, 'The Mechanar - Bound / Solid Adamantite Chest #6');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+11, @PGUID+21, 0, 'The Mechanar - Bound Adamantite Chest (184936)'),
-(@OGUID+12, @PGUID+21, 0, 'The Mechanar - Solid Adamantite Chest (184937)'),
-(@OGUID+13, @PGUID+21, 0, 'The Mechanar - Solid Adamantite Chest (184941)');
+(@OGUID+18, @PGUID+41, 0, 'The Mechanar - Bound Adamantite Chest (184936) - #1'),
+(@OGUID+19, @PGUID+41, 0, 'The Mechanar - Solid Adamantite Chest (184937) - #1'),
+(@OGUID+20, @PGUID+42, 0, 'The Mechanar - Bound Adamantite Chest (184936) - #2'),
+(@OGUID+21, @PGUID+42, 0, 'The Mechanar - Solid Adamantite Chest (184937) - #2'),
+(@OGUID+22, @PGUID+43, 0, 'The Mechanar - Bound Adamantite Chest (184936) - #3'),
+(@OGUID+23, @PGUID+43, 0, 'The Mechanar - Solid Adamantite Chest (184937) - #3'),
+(@OGUID+24, @PGUID+44, 0, 'The Mechanar - Solid Adamantite Chest (184940) - #4'),
+(@OGUID+25, @PGUID+44, 0, 'The Mechanar - Solid Adamantite Chest (184941) - #4'),
+(@OGUID+26, @PGUID+45, 0, 'The Mechanar - Bound Adamantite Chest (184936) - #5'),
+(@OGUID+27, @PGUID+45, 0, 'The Mechanar - Solid Adamantite Chest (184937) - #5'),
+(@OGUID+28, @PGUID+46, 0, 'The Mechanar - Bound Adamantite Chest (184936) - #6'),
+(@OGUID+29, @PGUID+46, 0, 'The Mechanar - Solid Adamantite Chest (184937) - #6');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
