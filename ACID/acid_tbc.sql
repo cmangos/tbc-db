@@ -24426,7 +24426,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('444202','4442','9','0','100','1','0','5','12000','17000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Razorfen Defender - Cast Shield Bash'),
 ('444203','4442','0','0','100','1','9000','14000','15000','18000','0','0','11','3248','0','0','0','0','0','0','0','0','0','0','Razorfen Defender - Cast Improved Blocking'),
 -- Willix the Importer (4508) - npc_willix_the_importer
--- Heralath Fallowbrook (4510) - NSR
+-- Heralath Fallowbrook 4510
+('451001','4510','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Heralath Fallowbrook - Disable Combat Movement and Melee on Spawn'),
 -- Agam'ar
 ('451101','4511','4','0','100','0','0','0','0','0','0','0','11','8260','0','0','0','0','0','0','0','0','0','0','Agam''ar - Cast Rushing Charge on Aggro'),
 -- Rotting Agam'ar
