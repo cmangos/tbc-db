@@ -29263,8 +29263,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1498602','14986','0','0','100','1','1000','1000','2000','2000','0','0','11','19460','1','0','0','0','0','0','0','0','0','0','Shade of Jin''do - Cast Shadow Shock'),
 -- Powerful Healing Ward 14987 - mob_healing_ward
 -- Ohgan 14988 - mob_ohgan
--- Poisonous Cloud
+-- Poisonous Cloud 14989
 ('1498901','14989','11','0','100','0','0','0','0','0','0','0','11','24320','0','0','0','0','0','0','0','0','0','0','Poisonous Cloud - Cast Poisonous Blood on Spawn'),
+-- Jungle Toad 15010
+('1501001','15010','8','0','100','1','24062','-1','0','0','0','0','11','24063','0','0','0','0','0','0','0','0','0','0','Jungle Toad - Cast Disease Cloud on Spell Hit'),
 -- Spawn of Mar'li
 ('1504101','15041','0','0','100','1','5000','15000','10000','20000','0','0','11','24097','1','0','0','0','0','0','0','0','0','0','Spawn of Mar''li - Cast Poison'),
 -- Zulian Crocolisk
