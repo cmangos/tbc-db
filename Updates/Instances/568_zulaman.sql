@@ -290,7 +290,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+429, 12, 432.675568, 981.687439, 0.000064, 100, 0, 0),
 (@CGUID+429, 13, 421.063110, 987.692993, 0.000064, 100, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (24159,24225);
+DELETE FROM creature_movement_template WHERE entry IN (24159,24225,23897);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 -- Amani Eagle
 (24159,0,1,376.353,1407.34,75.5313,100,0,0),
@@ -324,7 +324,14 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (24225,0,11,263.7092,1376.414,49.32307,100,0,0),
 (24225,0,12,283.0233,1379.272,49.44661,100,0,0),
 (24225,0,13,307.7617,1387.3,57.14774,100,0,0),
-(24225,0,14,339.1228,1396.293,74.28909,100,0,1); -- despawn
+(24225,0,14,339.1228,1396.293,74.28909,100,0,1), -- despawn
+-- Zungam
+(23897,0,1,248.2649,1005.764,11.11355,100,0,0),
+(23897,0,2,247.4608,1009.596,10.93663,100,0,0),
+(23897,0,3,251.8544,1010.953,10.20324,100,0,0),
+(23897,0,4,254.0334,1014.321,8.179676,100,0,0),
+(23897,0,5,254.0402,1022.262,3.468341,100,0,0),
+(23897,0,6,244.639,1025.133,3.468338,100,5000,2389701);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+66, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
@@ -360,7 +367,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (23879, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Dragonhawk Spirit
 (23880, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Eagle Spirit
 (23889, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(23897, 0, 0, 1, 16, 0, 0, '42716'), -- Zungam
+(23897, 0, 0, 1, 16, 0, 0, '25900'), -- Zungam
 (23999, 0, 0, 1, 0, 0, 0, NULL), -- Harkor
 (24001, 0, 0, 1, 0, 0, 0, NULL), -- Ashli
 (24024, 0, 0, 1, 0, 0, 0, NULL), -- Kraz
@@ -1081,16 +1088,26 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (2377401,2405901);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (2377401,2405901,2389701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (2377401, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Run on'),
 (2377401, 0, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Emote - OneShotNo'),
 
-(2405901, 0, 0, 0, 0, 0, 0, 0, 0, 2000002029, 2000002030, 2000002031, 0, 0, 0, 0, 0, 'Amani\'shi Handler - random say');
+(2405901, 0, 0, 0, 0, 0, 0, 0, 0, 2000002029, 2000002030, 2000002031, 0, 0, 0, 0, 0, 'Amani\'shi Handler - random say'),
+
+(2389701, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Set Idle Movement'),
+(2389701, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.780236, 'Zungam set facing'),
+(2389701, 2, 29, 4226, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - npcFlags added'),
+(2389701, 2, 0, 0, 0, 0, 0, 0, 0, 2000002033, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Say Text 2');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+
+INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(186430, 0, 14, 25900, 0, 0, 23897, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Remove Aura 25900'),
+(186430, 0, 0, 0, 0, 0, 23897, 10, 0, 2000002032, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Say Text 1'),
+(186430, 2, 20, 2, 0, 0, 23897, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Set Waypoint Movement');
+
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -1098,11 +1115,13 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM dbscript_string WHERE entry in (2000002029,2000002030,2000002031);
+DELETE FROM dbscript_string WHERE entry in (2000002029,2000002030,2000002031,2000002032,2000002033);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 (2000002029, 'Coo Yah! There ya be!', 0, 0, 0, 0, 'Amani\'shi Handler 1'),
 (2000002030, 'Here, kitty kitty.....', 0, 0, 0, 0, 'Amani\'shi Handler 2'),
-(2000002031, 'Where ya be mon? Ya dang kitty\'s are sneaky!', 0, 0, 0, 0, 'Amani\'shi Handler 3');
+(2000002031, 'Where ya be mon? Ya dang kitty\'s are sneaky!', 0, 0, 0, 0, 'Amani\'shi Handler 3'),
+(2000002032, 'Ya saved me, mon! I thought they be drownin\' me for sure.', 6400, 0, 0, 71, 'Zungam 1 (broadcast ID 23208)'),
+(2000002033, 'Just lemme know if there be anything I can help ya with, mon.', 0, 0, 0, 0, 'Zungam 2 (broadcast ID 23209)'); 
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
