@@ -1594,7 +1594,49 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+780,7,780.093,377.8317,112.7566,0,0,0),
 (@CGUID+780,8,777.8922,390.1339,112.7584,0,0,0),
 (@CGUID+780,9,768.4619,394.7663,112.757,0,0,0),
-(@CGUID+780,10,756.2557,390.515,112.7589,0,0,0);
+(@CGUID+780,10,756.2557,390.515,112.7589,0,0,0),
+-- Hungering Soul Fragment Entry: 23401
+(@CGUID+701,1,547.9556,92.59508,112.612,0,0,100),
+(@CGUID+701,2,541.5929,84.78826,112.3907,0,0,100),
+(@CGUID+701,3,537.2125,79.41367,113.1448,0,0,100),
+(@CGUID+701,4,536.0945,78.04199,113.0362,0,0,100),
+(@CGUID+701,5,534.9767,76.67038,112.9312,0,0,100),
+(@CGUID+701,6,536.0945,78.04199,113.0362,0,0,100),
+(@CGUID+701,7,537.2125,79.41367,113.1448,0,0,100),
+(@CGUID+701,8,541.5929,84.78826,112.3907,0,0,100),
+(@CGUID+701,9,547.9556,92.59508,112.612,0,0,100),
+(@CGUID+701,10,550.2753,95.44136,112.5936,0,0,100),
+(@CGUID+701,11,552.3234,97.95421,112.4849,0,0,100),
+(@CGUID+701,12,554.4448,98.50984,112.4766,0,0,100),
+(@CGUID+701,13,565.4874,101.4022,112.9024,0,0,100),
+(@CGUID+701,14,568.8529,102.2837,113.471,0,0,100),
+(@CGUID+701,15,573.4583,103.4899,113.1861,0,0,100),
+(@CGUID+701,16,568.8529,102.2837,113.471,0,0,100),
+(@CGUID+701,17,565.4874,101.4022,112.9024,0,0,100),
+(@CGUID+701,18,554.4448,98.50984,112.4766,0,0,100),
+(@CGUID+701,19,552.3234,97.95421,112.4849,0,0,100),
+(@CGUID+701,20,550.2753,95.44136,112.5936,0,0,100),
+-- Hungering Soul Fragment Entry: 23401
+(@CGUID+695,1,589.7239,39.63419,112.7313,0,0,100),
+(@CGUID+695,2,587.6489,36.75304,112.822,0,0,100),
+(@CGUID+695,3,607.5776,64.42328,111.7202,0,0,100),
+(@CGUID+695,4,625.7739,17.56272,112.7262,0,0,100),
+(@CGUID+695,5,607.7153,64.61448,111.7263,0,0,100),
+-- Hungering Soul Fragment Entry: 23401
+(@CGUID+699,1,473.2182,73.22733,111.8251,0,0,100),
+(@CGUID+699,2,520.1631,74.64678,112.8883,0,0,100),
+(@CGUID+699,3,483.0837,73.52563,112.141,0,0,100),
+-- Hungering Soul Fragment Entry: 23401
+(@CGUID+693,1,574.5044,102.8732,113.1449,0,0,100),
+(@CGUID+693,2,601.5496,73.97516,111.2432,0,0,100),
+(@CGUID+693,3,617.4402,102.7646,112.7507,0,0,100),
+(@CGUID+693,4,601.6309,74.0624,111.239,0,0,100),
+(@CGUID+693,5,581.9877,94.90571,112.8476,0,0,100),
+-- Hungering Soul Fragment Entry: 23401
+(@CGUID+697,1,486.4131,44.31189,112.2189,0,0,100),
+(@CGUID+697,2,512.1553,30.04926,113.553,0,0,100),
+(@CGUID+697,3,553.189,49.69274,112.4768,0,0,100),
+(@CGUID+697,4,512.1553,30.04926,113.553,0,0,100);
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
@@ -2321,6 +2363,22 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+541, @CGUID+284, 1024), -- Bonechewer Behemoth -> Gurtogg Bloodboil
 (@CGUID+542, @CGUID+284, 1024), -- Bonechewer Behemoth -> Gurtogg Bloodboil
 -- Reliquary of the Lost
+-- Shrine of Lost Souls
+(@CGUID+702, @CGUID+701, 1679), -- Hungering Soul Fragment -> Hungering Soul Fragment
+(@CGUID+696, @CGUID+695, 1679), -- Hungering Soul Fragment -> Hungering Soul Fragment
+(@CGUID+700, @CGUID+699, 1679), -- Hungering Soul Fragment -> Hungering Soul Fragment
+(@CGUID+694, @CGUID+693, 1679), -- Hungering Soul Fragment -> Hungering Soul Fragment
+(@CGUID+698, @CGUID+697, 1679), -- Hungering Soul Fragment -> Hungering Soul Fragment
+(@CGUID+701, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
+(@CGUID+695, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
+(@CGUID+699, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
+(@CGUID+693, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
+(@CGUID+697, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
+(@CGUID+688, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
+(@CGUID+685, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
+(@CGUID+684, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
+(@CGUID+686, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
+(@CGUID+687, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
 -- Mother Shahraz
 (@CGUID+369, @CGUID+283, 1024), -- Priestess of Dementia -> Mother Shahraz
 (@CGUID+370, @CGUID+283, 1024), -- Priestess of Dementia -> Mother Shahraz
@@ -3051,15 +3109,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+690, 23400, 564, 1, 558.363, 285.371, 271.746, 0.366519, 7200, 7200, 0, 0, 0, 2), -- Illidari Archon
 (@CGUID+691, 23400, 564, 1, 526.347, 262.832, 271.589, 0.907571, 7200, 7200, 0, 0, 0, 2), -- Illidari Archon
 (@CGUID+692, 23400, 564, 1, 576.823, 123.1, 258.216, 0.436332, 7200, 7200, 0, 0, 0, 2), -- Illidari Archon
-(@CGUID+693, 23401, 564, 1, 583.439, 93.3269, 112.575, 5.46468, 15, 15, 5, 0, 0, 1), -- Hungering Soul Fragment
-(@CGUID+694, 23401, 564, 1, 580.441, 89.2323, 111.168, 5.45932, 15, 15, 5, 0, 0, 1), -- Hungering Soul Fragment
-(@CGUID+695, 23401, 564, 1, 590.204, 40.2891, 112.716, 4.08324, 15, 15, 5, 0, 0, 1), -- Hungering Soul Fragment
-(@CGUID+696, 23401, 564, 1, 595.565, 39.1595, 112.715, 4.08327, 15, 15, 5, 0, 0, 1), -- Hungering Soul Fragment
-(@CGUID+697, 23401, 564, 1, 512.155, 30.0493, 113.605, 3.58807, 15, 15, 5, 0, 0, 1), -- Hungering Soul Fragment
-(@CGUID+698, 23401, 564, 1, 514.565, 25.6593, 113.5, 3.58806, 15, 15, 5, 0, 0, 1), -- Hungering Soul Fragment
-(@CGUID+699, 23401, 564, 1, 473.218, 73.2273, 111.846, 3.17182, 15, 15, 5, 0, 0, 1), -- Hungering Soul Fragment
-(@CGUID+700, 23401, 564, 1, 476.464, 78.3278, 111.853, 3.17182, 15, 15, 5, 0, 0, 1), -- Hungering Soul Fragment
-(@CGUID+701, 23401, 564, 1, 550.194, 95.3418, 112.567, 0.886959, 15, 15, 5, 0, 0, 1), -- Hungering Soul Fragment
+(@CGUID+693, 23401, 564, 1, 583.439, 93.3269, 112.575, 5.46468, 15, 15, 0, 0, 0, 2), -- Hungering Soul Fragment
+(@CGUID+694, 23401, 564, 1, 580.441, 89.2323, 111.168, 5.45932, 15, 15, 0, 0, 0, 0), -- Hungering Soul Fragment
+(@CGUID+695, 23401, 564, 1, 590.204, 40.2891, 112.716, 4.08324, 15, 15, 0, 0, 0, 2), -- Hungering Soul Fragment
+(@CGUID+696, 23401, 564, 1, 595.565, 39.1595, 112.715, 4.08327, 15, 15, 0, 0, 0, 0), -- Hungering Soul Fragment
+(@CGUID+697, 23401, 564, 1, 512.155, 30.0493, 113.605, 3.58807, 15, 15, 0, 0, 0, 2), -- Hungering Soul Fragment
+(@CGUID+698, 23401, 564, 1, 514.565, 25.6593, 113.5, 3.58806, 15, 15, 0, 0, 0, 0), -- Hungering Soul Fragment
+(@CGUID+699, 23401, 564, 1, 473.218, 73.2273, 111.846, 3.17182, 15, 15, 0, 0, 0, 2), -- Hungering Soul Fragment
+(@CGUID+700, 23401, 564, 1, 476.464, 78.3278, 111.853, 3.17182, 15, 15, 0, 0, 0, 0), -- Hungering Soul Fragment
+(@CGUID+701, 23401, 564, 1, 550.194, 95.3418, 112.567, 0.886959, 15, 15, 0, 0, 0, 2), -- Hungering Soul Fragment
 (@CGUID+702, 23401, 564, 1, 545.6, 97.619, 112.453, 0.886985, 15, 15, 0, 0, 0, 0), -- Hungering Soul Fragment
 (@CGUID+703, 23402, 564, 1, 553.594, 316.801, 271.601, 4.13643, 7200, 7200, 0, 0, 0, 0), -- Illidari Battle-mage
 (@CGUID+704, 23402, 564, 1, 548.835, 311.907, 271.467, 0.890118, 7200, 7200, 0, 0, 0, 2), -- Illidari Battle-mage
