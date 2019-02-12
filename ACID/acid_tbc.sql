@@ -19467,7 +19467,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2231501','22315','0','0','100','0','2000','2000','0','0','0','0','11','38108','0','1','37','0','0','0','0','0','0','0','Deathforge Mine - Cast Deathforge Mine Explosion and Die'),
 -- Dragonmaw Elite 22331
 ('2233101','22331','11','0','100','0','0','0','0','0','0','0','11','32121','0','0','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Choose Target (50 yd) on Spawn'),
-('2233102','22331','4','0','100','0','0','0','0','0','0','0','57','2','95','0','0','0','0','0','0','0','0','0','Dragonmaw Elite - Enable Range Mode on Aggro'),
+('2233102','22331','4','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Dragonmaw Elite - Disable Combat Movement on Aggro'),
 ('2233103','22331','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dragonmaw Elite - Flee at 15% HP'),
 ('2233104','22331','0','0','100','1025','4000','6000','12000','16000','0','0','11','38859','4','32','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Serpent Sting'),
 ('2233105','22331','0','0','100','1025','6000','9000','12000','16000','0','0','11','38861','4','0','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Aimed Shot'),
@@ -25554,8 +25554,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2087006','20870','0','0','100','5','12000','18000','12000','18000','0','0','11','36123','4','544','0','0','0','0','0','0','0','0','Zereketh The Unbound (Heroic) - Cast Seed of Corruption'),
 ('2087007','20870','0','0','100','3','15000','21000','35000','45000','0','0','11','36127','0','0','1','-10556','-10557','0','0','0','0','0','Zereketh The Unbound (Normal) - Cast Shadow Nova and Yell'),
 ('2087008','20870','0','0','100','5','15000','23000','30000','40000','0','0','11','39005','0','0','1','-10556','-10557','0','0','0','0','0','Zereketh The Unbound (Heroic) - Cast Shadow Nova and Yell'),
--- Negaton Warp-Master (NEED OFFICIAL DATA and PLAYER FEEDBACK TO BETTER SCRIPT NEGATON FIELD BEHAVIOR)
-('2087301','20873','2','0','100','1','50','0','34000','45000','0','0','11','36813','0','0','0','0','0','0','0','0','0','0','Negaton Warp-Master - Cast Summon Negaton Field at 50% HP'),
+-- Negaton Warp-Master 20873
+('2087301','20873','0','0','100','1025','10000','24000','10000','24000','0','0','11','36813','0','0','1','-10020','0','0','0','0','0','0','Negaton Warp-Master - Cast Summon Negaton Field and Emote'),
 -- Negaton Screamer
 ('2087501','20875','11','0','100','0','0','0','0','0','0','0','11','34302','0','1','0','0','0','0','0','0','0','0','Negaton Screamer - Cast Coalesce on Spawn'),
 ('2087502','20875','8','8190','100','1','0','2','1000','1000','0','0','11','34336','0','1','22','1','0','0','0','0','0','0','Negaton Screamer - Cast Damage Reduction: Holy and Set Phase 1 on Holy Spellhit'),
@@ -30914,7 +30914,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10017','The master... will be angry...','0','0','0','16407','0'),
 ('-10018','You are spotted by the %s!','0','2','0','19440/22282/22134','0'),
 ('-10019','Wait... No! No!','0','0','0','16414','0'),
--- RE-USE 10020
+('-10020','Void energy gathers at the base of the %s!','0','2','0','20873','0'),
 ('-10021','Your insolence will not be tolerated!','0','0','0','16470','0'),
 ('-10022','You were not invited!','0','0','0','16470','0'),
 ('-10023','Where am I? What...','0','0','0','16406','0'),
