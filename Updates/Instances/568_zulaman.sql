@@ -516,7 +516,15 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 (@CGUID+426, @CGUID+427, 515), -- Amani'shi Beast Tamer -> Amani'shi Beast Tamer
 
-(@CGUID+370, @CGUID+371, 3); -- Amani'shi Berserker -> Amani'shi Berserker
+(@CGUID+370, @CGUID+371, 3), -- Amani'shi Berserker -> Amani'shi Berserker
+
+(@CGUID+479, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
+(@CGUID+480, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
+(@CGUID+481, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
+(@CGUID+482, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
+(@CGUID+483, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
+(@CGUID+484, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
+(@CGUID+485, @CGUID+486, 3); -- Amani'shi Savage -> Amani'shi Savage
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (23598, 568, 23578, 4096, 0), -- Amani Dragonhawk Hatchling -> Jan'alai
