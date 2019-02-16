@@ -35,4 +35,5 @@ UPDATE `creature_template` SET `EquipmentTemplateId`='0' WHERE `entry`='15312'; 
 UPDATE `creature_template` SET `EquipmentTemplateId`='0' WHERE `entry`='16167'; -- Bony Construct
 
 DELETE FROM `creature_equip_template` WHERE `entry` IN (55439,55443,3754,4054,51074,55188,55280,55505,55023,51418,55071);
+DELETE FROM `creature_equip_template_raw` WHERE `entry` IN (51074,51418);
 
