@@ -791,7 +791,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (9681, 0, 0, 1, 16, 0, 0, NULL), -- Jaz
 (9938, 0, 0, 1, 16, 0, 0, NULL), -- Magmus
 (9956, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Flame Keeper
-(10043, 0, 0, 1, 16, 0, 0, NULL), -- Ribbly's Crony
+(10043, 0, 0, 1, 16, 0, 0, '13299'), -- Ribbly's Crony
 (10116, 0, 0, 1, 16, 0, 0, NULL), -- Slave
 (10117, 0, 7, 1, 16, 0, 0, NULL), -- Tortured Slave
 (12944, 0, 0, 1, 16, 0, 0, NULL), -- Lokhtos Darkbargainer

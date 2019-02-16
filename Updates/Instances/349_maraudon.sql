@@ -535,7 +535,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (11784, 0, 0, 1, 16, 0, 0, NULL), -- Theradrim Guardian
 (11789, 0, 0, 1, 16, 0, 0, '8876'), -- Deep Borer
 (11790, 0, 0, 1, 16, 0, 0, NULL), -- Putridus Satyr
-(11791, 0, 0, 1, 16, 0, 0, '3417'), -- Putridus Trickster
+(11791, 0, 0, 1, 16, 0, 0, '3417 13299'), -- Putridus Trickster
 (11792, 0, 33554432, 1, 16, 0, 0, '1785'), -- Putridus Shadowstalker
 (11793, 0, 0, 1, 16, 0, 0, NULL), -- Celebrian Dryad
 (11794, 0, 0, 1, 16, 0, 0, NULL), -- Sister of Celebrian
