@@ -26827,7 +26827,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Demon Fire 23069
 ('2306901','23069','11','0','100','0','0','0','0','0','0','0','11','40029','0','0','0','0','0','0','0','0','0','0','Demon Fire - Cast Demon Fire on Spawn'),
 -- Coilskar Geyser 23080
-('2308001','23080','29','0','100','0','2000','2000','0','0','0','0','11','40089','15','7','41','2000','0','0','0','0','0','0','Coilskar Geyser - Cast Geyser and Delayed Despawn on Spawn'),
+('2308001','23080','11','0','100','0','0','0','0','0','0','0','20','0','0','0','21','0','0','0','0','0','0','0','Coilskar Geyser - Stop Melee and Combat Movement on Spawn'),
+('2308002','23080','29','0','100','0','2000','2000','0','0','0','0','11','40089','15','7','41','2000','0','0','0','0','0','0','Coilskar Geyser - Cast Geyser and Delayed Despawn on Spawn'),
 -- Shadowmoon Riding Hound 23083 - Enrage 8599 on Shadowmoon Houndmaster (23018) Death
 ('2308301','23083','11','0','100','0','0','0','0','0','0','0','11','18950','0','2','0','0','0','0','0','0','0','0','Shadowmoon Riding Hound - Cast Invisibility and Stealth Detection on Spawn'),
 ('2308302','23083','0','0','100','1025','1000','6000','15000','21000','0','0','11','25821','4','512','0','0','0','0','0','0','0','0','Shadowmoon Riding Hound - Cast Charge'),
