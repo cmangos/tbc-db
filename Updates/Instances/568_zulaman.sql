@@ -701,7 +701,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+156, 23746, 568, 1, 130.957, 659.718, 57.0027, 5.41052, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+157, 23746, 568, 1, -74.4201, 1138.56, 5.28276, 0.767945, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+158, 23746, 568, 1, 92.4965, 698.917, 64.2503, 2.32129, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
-(@CGUID+159, 23746, 568, 1, 383.222, 1152.55, 6.42699, 4.55531, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
+(@CGUID+159, 23746, 568, 1, 383.222, 1152.55, 6.42699, 4.55531, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+160, 23746, 568, 1, 294.015, 1457.98, 81.5893, 3.26377, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+161, 23746, 568, 1, 124.88, 1225.51, -23.9887, 5.98648, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
 (@CGUID+162, 23746, 568, 1, 108.058, 1371.94, -21.3731, 1.32645, 7200, 7200, 5, 0, 0, 1), -- Zul'Aman Exterior InvisMan
