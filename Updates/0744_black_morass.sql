@@ -18,7 +18,7 @@ UPDATE `creature_template` SET `Faction` = 1720, `Leash` = 80 WHERE `entry` = 21
 
 -- Aeonus 17881,20737
 -- UPDATE `creature_template` SET  WHERE `entry` = 17881;
-UPDATE `creature_template` SET `Faction` = 1720 WHERE `entry` = 20737;
+UPDATE `creature_template` SET `Faction` = 1720, `ExtraFlags` = `ExtraFlags`&~256 WHERE `entry` = 20737;
 UPDATE `creature_model_info` SET `bounding_radius` = 0.3, `combat_reach` = 10 WHERE `modelid` = 20510;
 
 -- Rift Lord 17839, 20744, 21140, 22172 & Rift Keeper 21104, 22170, 21148, 22171
