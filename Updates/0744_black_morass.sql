@@ -1,7 +1,12 @@
 -- Temporus 17880,20745
-UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`|256, `Leash` = 80 WHERE `entry` = 17880;
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `ExtraFlags` = `ExtraFlags`|256, `Leash` = 80, `MechanicImmuneMask` = `MechanicImmuneMask`|(1024+33554432) WHERE `entry` = 17880;
 UPDATE `creature_template` SET `MinLevel` = 72, `MaxLevel` = 72, `Faction` = 1720, `ExtraFlags` = `ExtraFlags`|256, `Leash` = 80 WHERE `entry` = 20745;
 UPDATE `creature_model_info` SET `bounding_radius` = 0.525, `combat_reach` = 1.75 WHERE `modelid` = 19066;
+
+-- Infinite Timereaver 21698,22167
+UPDATE `creature_template` SET `UnitFlags` = 32832, `ExtraFlags` = 256, `Leash` = 80, `MechanicImmuneMask` = 646168407, `EquipmentTemplateId` = 0 WHERE `entry` = 21698;
+UPDATE `creature_template` SET `Faction` = 1720, `UnitFlags` = 32832, `ExtraFlags` = 256, `Leash` = 80, `MechanicImmuneMask` = 646168407 WHERE `entry` = 22167;
+DELETE FROM `creature_equip_template` WHERE `entry` = 21698;
 
 -- Chrono Lord Deja 17879,20738
 UPDATE `creature_template` SET `Leash` = 80 WHERE `entry` = 17879;
