@@ -9,7 +9,7 @@ UPDATE `creature_template` SET `Faction` = 1720, `UnitFlags` = 32832, `ExtraFlag
 DELETE FROM `creature_equip_template` WHERE `entry` = 21698;
 
 -- Chrono Lord Deja 17879,20738
-UPDATE `creature_template` SET `Leash` = 80 WHERE `entry` = 17879;
+UPDATE `creature_template` SET `Leash` = 80, `MeleeBaseAttackTime` = 2000 WHERE `entry` = 17879;
 UPDATE `creature_template` SET `MinLevel` = 72, `MaxLevel` = 72, `Faction` = 1720, `Leash` = 80 WHERE `entry` = 20738;
 
 -- Infinite Chrono-Lord 21697,21712
