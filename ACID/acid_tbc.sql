@@ -25734,9 +25734,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Warder Corpse 21304
 ('2130401','21304','4','0','100','0','0','0','0','0','0','0','11','36599','0','2','11','36593','0','2','41','0','0','0','Warder Corpse - Cast Bloody Explosion and Corpse Burst and Despawn on Aggro'),
 ('2130402','21304','10','0','100','0','0','8','0','0','0','0','11','36599','0','2','11','36593','0','2','41','0','0','0','Warder Corpse - Cast Bloody Explosion and Corpse Burst and Despawn on 8 Yards LOS'),
--- Sightless Eye
-('2134601','21346','9','0','100','3','0','5','9000','15000','0','0','11','36646','4','0','0','0','0','0','0','0','0','0','Sightless Eye (Normal) - Cast Sightless Touch'),
-('2134602','21346','9','0','100','5','0','5','9000','15000','0','0','11','38815','4','0','0','0','0','0','0','0','0','0','Sightless Eye (Heroic) - Cast Sightless Touch'),
+-- Sightless Eye 21346 - Threat: 1000000 on Random "Pet/Player - NOT Totem!" on Spawn
+('2134601','21346','11','0','100','0','0','0','0','0','0','0','11','36649','0','34','38','0','0','0','0','0','0','0','Sightless Eye - Cast Sightless Eye Visual and Zone Combat Pulse on Spawn'),
+('2134602','21346','9','0','100','1027','0','5','2400','2400','0','0','11','36646','1','0','0','0','0','0','0','0','0','0','Sightless Eye (Normal) - Cast Sightless Touch'),
+('2134603','21346','9','0','100','1029','0','5','2400','2400','0','0','11','38815','1','0','0','0','0','0','0','0','0','0','Sightless Eye (Heroic) - Cast Sightless Touch'),
 -- Protean Spawn 21395
 ('2139501','21395','9','0','100','1','0','5','8000','12000','0','0','11','36796','1','0','0','0','0','0','0','0','0','0','Protean Spawn - Cast Acidic Bite'),
 -- Negaton Field
