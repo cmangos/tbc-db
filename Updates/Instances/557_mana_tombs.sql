@@ -558,9 +558,9 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+28, @PGUID+22, 0, 'Mana-Tombs - Adamantite Deposit / Rich Adamantite Deposit - #6'),
 (@PGUID+31, @PGUID+30, 0, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #1'),
 (@PGUID+32, @PGUID+30, 0, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #2'),
-(@PGUID+34, @PGUID+30, 0, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #3'),
-(@PGUID+35, @PGUID+30, 0, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #4'),
-(@PGUID+41, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #1'),	-- 40 (Heroic)
+(@PGUID+33, @PGUID+30, 0, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #3'),
+(@PGUID+34, @PGUID+30, 0, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #4'),
+(@PGUID+41, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #1'), -- 40 (Heroic)
 (@PGUID+42, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #2'),
 (@PGUID+43, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #3'),
 (@PGUID+44, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #4'),
@@ -580,7 +580,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+32, 1, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #2'),
 (@PGUID+33, 1, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #3'),
 (@PGUID+34, 1, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #4'),
-(@PGUID+40, 1, 'Mana-Tombs (Heroic) - Master Chest Pool'),
+-- (@PGUID+40, 1, 'Mana-Tombs (Heroic) - Master Chest Pool'),
 (@PGUID+41, 1, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #1'),
 (@PGUID+42, 1, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #2'),
 (@PGUID+43, 1, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #3'),
