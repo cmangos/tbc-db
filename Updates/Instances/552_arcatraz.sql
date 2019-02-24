@@ -366,6 +366,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (21186, 0, 0, 1, 16, 0, 0, NULL), -- Arcane Warder Target
 (21303, 0, 0, 1, 16, 0, 0, '29266'), -- Defender Corpse
 (21304, 0, 0, 1, 16, 0, 0, '29266'), -- Warder Corpse
+(21346, 0, 0, 1, 16, 0, 0, '36649'), -- Sightless Eye
 (21436, 0, 0, 1, 16, 0, 0, NULL), -- Tempest Keep Prison Alpha Pod Target
 (21437, 0, 0, 1, 16, 0, 0, NULL), -- Tempest Keep Prison Beta Pod Target
 (21438, 0, 0, 1, 16, 0, 0, NULL), -- Tempest Keep Prison Delta Pod Target
