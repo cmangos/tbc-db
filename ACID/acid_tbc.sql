@@ -30785,7 +30785,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1119','Kill $N!','0','1','0','15392','25'),
 -- Classic PLEASE RE-USE 1120 - 1134
 ('-1135','None can stand against the serpent lords!','5786','1','0','3671','0'),
--- Classic PLEASE RE-USE 1136 - 1139
+-- PLEASE REUSE -1136 to -1139
 ('-1140','The Nightmare cannot be stopped!','0','0','0','15625','0'),
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','15625','0'),
 -- Classic PLEASE RE-USE 1142 - 1193
