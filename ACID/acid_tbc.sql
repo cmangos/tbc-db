@@ -13070,6 +13070,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grizzled Gladiator 22098
 -- Arena Promoter 22101
 -- Troll Roof Stalker 23090
+('2309001','23090','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Troll Roof Stalker - Enable Range Mode on Aggro'),
+('2309002','23090','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','1056','0','0','0','0','0','0','0','0','Troll Roof Stalker - Cast Net'),
+('2309003','23090','9','0','100','1025','5','30','2300','3900','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Troll Roof Stalker - Cast Shoot'),
 -- Master Pyreanor 23128
 -- Blood Knight Honor Guard 23131
 -- Lucky 23198
