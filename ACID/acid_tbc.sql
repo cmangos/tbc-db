@@ -5007,9 +5007,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blood Knight Stillblade (17768) - npc_redemption_target
 -- Blood Knight Adept 17769
 -- Blood Elf Magister 17845
--- Arcane Guardian
-('1810301','18103','9','0','100','1','0','30','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Arcane Guardian - Cast Hooked Net'),
+-- Arcane Guardian 18103
+('1810301','18103','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Arcane Guardian - Cast Invisibility and Stealth Detection on Spawn'),
 ('1810302','18103','1','0','75','33','5000','10000','90000','100000','0','0','1','-10891','-10892','-10893','1','-10894','-10895','-10896','0','0','0','0','Arcane Guardian - Random Say OOC'),
+('1810303','18103','9','0','100','1025','0','30','9000','14000','0','0','11','14030','1','0','0','0','0','0','0','0','0','0','Arcane Guardian - Cast Hooked Net'),
 -- Champion Vranesh 18146
 -- Silvermoon Ranger
 ('1814701','18147','9','0','100','1','0','60','7000','12000','0','0','11','29120','1','0','0','0','0','0','0','0','0','0','Silvermoon Ranger - Cast Shoot Bow'),
