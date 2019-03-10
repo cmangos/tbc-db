@@ -18535,7 +18535,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2045301','20453','0','0','100','1','10000','60000','10000','60000','0','0','54','0','0','10037','0','0','0','0','0','0','0','0','Ethereum Shocktrooper - Random Say'),
 ('2045302','20453','0','0','100','1','0','2500','5000','9000','0','0','11','36500','1','0','0','0','0','0','0','0','0','0','Ethereum Shocktrooper - Cast Glaive'),
 ('2045303','20453','0','0','100','1','0','5000','11000','15000','0','0','11','31553','1','0','0','0','0','0','0','0','0','0','Ethereum Shocktrooper - Cast Hamstring'),
--- Nexus-King Salhadaar 20454
+-- Nexus-King Salhadaar 20454 - Bestiary: Stasis, Gravity Flux, Backstab, Sinister Strike, Warp
 -- Ethereum Researcher 20456
 ('2045601','20456','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Enable Range Mode on Aggro'),
 ('2045602','20456','2','0','100','1025','50','0','16000','20000','0','0','11','36506','0','0','0','0','0','0','0','0','0','0','Ethereum Researcher - Cast Energy Charge at 50% HP'),
