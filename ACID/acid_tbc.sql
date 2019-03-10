@@ -1133,7 +1133,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Damaged Necrotic Shard (16172) - NSR
 -- Cultist Engineer (16230) - NSR
 -- Spectral Soldier (16298) - NSR
--- Skeletal Shocktrooper (16299) - NSR
 -- Spirit of the Damned (16379) - NSR
 -- Bone Witch 16380 - Scourge Strike 28265
 ('1638001','16380','4','0','100','0','0','0','0','0','0','0','57','2','35','0','11','32900','0','34','0','0','0','0','Bone Witch - Enable Range Mode and Cast Bone Shards Proc on Aggro'),
@@ -1374,7 +1373,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Damaged Necrotic Shard (16172) - NSR
 -- Cultist Engineer (16230) - NSR
 -- Spectral Soldier (16298) - NSR
--- Skeletal Shocktrooper (16299) - NSR
 -- Spirit of the Damned (16379) - NSR
 -- Bone Witch (16380) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
@@ -2536,7 +2534,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1628401','16284','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Argent Medic - Flee at 15% HP'),
 -- Argent Emissary (16285) - NSR
 -- Spectral Soldier (16298) - NSR
--- Skeletal Shocktrooper (16299) - NSR
+-- Skeletal Shocktrooper 16299 - Bestiary: Bone Shards, Scourge Strike
 -- Commander Thomas Helleran (16361) - NSR
 -- Craftsman Wilhelm (16376) - NSR
 -- Argent Sentry
@@ -14115,7 +14113,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Damaged Necrotic Shard (16172) - NSR
 -- Cultist Engineer (16230) - NSR
 -- Spectral Soldier (16298) - NSR
--- Skeletal Shocktrooper (16299) - NSR
 -- Spirit of the Damned (16379) - NSR
 -- Bone Witch (16380) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Rumsen Fizzlebrack (16417) - NSR
@@ -15686,7 +15683,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Damaged Necrotic Shard 16172 NSR
 -- Cultist Engineer 16230 NSR
 -- Spectral Soldier 16298 NSR
--- Skeletal Shocktrooper 16299 NSR
 -- Spirit of the Damned 16379 NSR
 -- Bone Witch 16380 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Bronn Fitzwrench 16416
