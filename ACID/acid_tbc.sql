@@ -2535,6 +2535,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Argent Emissary (16285) - NSR
 -- Spectral Soldier (16298) - NSR
 -- Skeletal Shocktrooper 16299 - Bestiary: Bone Shards, Scourge Strike
+-- Skeletal Soldier 16422 - Bestiary: Scourge Strike
 -- Commander Thomas Helleran (16361) - NSR
 -- Craftsman Wilhelm (16376) - NSR
 -- Argent Sentry
