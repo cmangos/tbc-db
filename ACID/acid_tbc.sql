@@ -25211,9 +25211,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1043703','10437','0','0','100','1','0','0','4000','5000','0','0','11','31591','0','0','0','0','0','0','0','0','0','0','Nerub''enkan - Cast Crypt Scarabs'),
 ('1043704','10437','0','0','100','1','10000','10000','17000','20000','0','0','11','17235','0','0','0','0','0','0','0','0','0','0','Nerub''enkan - Cast Raise Undead Scarab'),
 -- Maleki the Pallid (10438) - boss_maleki_the_pallid
--- Ramstein the Gorger 10439 - aggro text: "Ramstein hunger for flesh!" (yell) Bestiary: Flurry
-('1043901','10439','0','0','100','1025','3000','4000','7000','8000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Ramstein the Gorger - Cast Trample'),
-('1043902','10439','0','0','100','1025','12000','12000','10000','10000','0','0','11','17307','1','0','0','0','0','0','0','0','0','0','Ramstein the Gorger - Cast Knockout'),
+-- Ramstein the Gorger 10439
+('1043901','10439','11','0','100','0','0','0','0','0','0','0','11','15088','0','34','0','0','0','0','0','0','0','0','Ramstein the Gorger - Cast Flurry on Spawn'),
+('1043902','10439','29','0','100','0','4000','4000','0','0','0','0','54','-1193','0','0','0','0','0','0','0','0','0','0','Ramstein the Gorger - Yell on Generic Timer'),
+('1043903','10439','0','0','100','1025','3000','4000','7000','8000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Ramstein the Gorger - Cast Trample'),
+('1043904','10439','0','0','100','1025','12000','12000','10000','10000','0','0','11','17307','1','0','0','0','0','0','0','0','0','0','Ramstein the Gorger - Cast Knockout'),
 -- Baron Rivendare 10440
 ('1044001','10440','0','0','100','1','12000','12000','10000','25000','0','0','11','15708','4','0','0','0','0','0','0','0','0','0','Baron Rivendare - Cast Mortal Strike'),
 ('1044002','10440','0','0','100','1','8000','8000','7000','17000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Baron Rivendare - Cast Cleave'),
@@ -30789,7 +30791,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- PLEASE REUSE -1136 to -1139
 ('-1140','The Nightmare cannot be stopped!','0','0','0','15625','0'),
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','15625','0'),
--- Classic PLEASE RE-USE 1142 - 1193
+-- Classic PLEASE RE-USE 1142 - 1192
+('-1193','Ramstein hunger for flesh!','0','1','0','10439','0'),
 ('-1194','Emperor Thaurissan does not wish to be disturbed! Turn back now or face your doom, weak mortals!','0','1','0','9938','0'),
 ('-1195','Prepare to be Malowned!','0','1','0','11143','0'),
 ('-1196','You just got MALOWNED!','0','1','0','11143','0'),
