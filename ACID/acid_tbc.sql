@@ -24412,7 +24412,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Frost Spectre
 ('858501','8585','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Frost Spectre - Forced Despawn on Evade'),
 -- Lady Falther'ess 14686
-
+-- Master Sandoval 14688 - NSR (MODIFIED FOR PRE WOTLK)
 
 
 
