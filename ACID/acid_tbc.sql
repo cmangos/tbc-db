@@ -16527,6 +16527,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Air Force Guard Post (Alliance - Gryphon) 21996 - npc_air_force_bots
 -- Air Force Trip Wire - Rooftop (Alliance) 21999 - npc_air_force_bots
 -- Air Force Trip Wire - Rooftop (Horde) 22001 - npc_air_force_bots
+-- Leoroxx 22004 - Bestiary: Thrash, Sundering Cleave, Puncture, Knockaway, Cleave, Enrage
 -- Tree Warden Chawn
 ('2200701','22007','1','0','100','1','6000','9000','6000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Tree Warden Chawn - Talk Emote OOC'),
 -- Kolphis Darkscale
