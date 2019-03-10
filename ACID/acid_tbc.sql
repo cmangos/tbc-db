@@ -29258,9 +29258,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1137301','11373','0','0','100','1','5000','8000','7000','11000','0','0','11','24097','1','0','0','0','0','0','0','0','0','0','Razzashi Cobra - Cast Poison'),
 ('1137302','11373','0','0','100','1','8000','13000','10000','15000','0','0','11','27919','4','0','0','0','0','0','0','0','0','0','Razzashi Cobra - Cast Spit'),
 -- Hooktooth Frenzy 11374
-('1137401','11374','0','0','75','1','1000','3000','3000','5000','0','0','11','12097','1','32','0','0','0','0','0','0','0','0','Hooktooth Frenzy - Cast Pierce Armor'),
+('1137401','11374','11','0','100','0','0','0','0','0','0','0','11','18943','0','34','11','18950','0','34','0','0','0','0','Hooktooth Frenzy - Cast Double Attack and Invisibility and Stealth Detection on Spawn'),
+('1137402','11374','0','0','75','1025','1000','3000','3000','5000','0','0','11','12097','1','32','0','0','0','0','0','0','0','0','Hooktooth Frenzy - Cast Pierce Armor'),
 -- Jin'do the Hexxer 11380 - boss_jindo
 -- Bloodlord Mandokir 11382 - boss_mandokir
+-- Sandfury Speaker 11387 - Emotes missing
+('1138701','11387','11','0','100','0','0','0','0','0','0','0','11','3417','0','34','0','0','0','0','0','0','0','0','Sandfury Speaker - Cast Thrash on Spawn'),
 -- Witherbark Speaker 11388 - s.15801 confirmed, rest guessed from bestiary
 ('1138801','11388','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Witherbark Speaker - Enable Range Mode on Spawn'),
 ('1138802','11388','0','0','100','1025','8000','12000','30000','35000','0','0','11','15869','0','0','0','0','0','0','0','0','0','0','Witherbark Speaker - Superior Healing Ward'),
