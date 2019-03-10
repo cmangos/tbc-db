@@ -2495,7 +2495,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Terrordale Spirit
 ('1456401','14564','0','0','100','1','1000','3000','8000','11000','0','0','11','7713','0','0','0','0','0','0','0','0','0','0','Crimson Bodyguard - Cast Wailing Dead'),
 -- Lumbering Horror (14697) - NSR
--- Scarlet Inquisitor (15162) - NSR
+-- Scarlet Inquisitor 15162
+('1516201','15162','11','0','100','0','0','0','0','0','0','0','11','11984','0','34','0','0','0','0','0','0','0','0','Scarlet Inquisitor - Cast Immolate'),
 -- Elder Snowcrown (15566) - NSR
 -- Elder Windrun (15592) - NSR
 -- Korfax','Champion of the Light
