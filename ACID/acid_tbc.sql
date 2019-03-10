@@ -17047,6 +17047,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Quillfang Ravager
 ('1693401','16934','0','0','100','1','4000','9000','19000','26000','0','0','11','33968','1','0','0','0','0','0','0','0','0','0','Quillfang Ravager - Cast Corrosive Mist'),
 ('1693402','16934','0','0','100','1','8000','13000','8000','12000','0','0','11','33781','1','0','0','0','0','0','0','0','0','0','Quillfang Ravager - Cast Ravage'),
+-- Dreghood Wanderer 16936 - Bestiary: Disarm
 -- Dreghood Geomancer 16937 - Freed RP Movement
 ('1693701','16937','30','0','100','1','6','17058','0','0','0','0','20','0','0','0','21','0','0','0','22','2','0','0','Dreghood Geomancer - Stop Melee and Stop Movement and Set Phase 2 on Receive AI Event 6'),
 ('1693702','16937','29','3','100','0','0','0','0','0','0','0','36','20157','0','0','5','0','0','0','41','10000','0','0','Fleeing Dreghood Geomancer - Change Template and Stop Emote and Delayed Despawn on Generic Timer (Phase 2)'),
