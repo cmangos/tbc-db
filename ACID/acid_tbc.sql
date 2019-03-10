@@ -9197,6 +9197,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('839701','8397','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Sentinel Keldara Sunblade - Prevent Combat Movement and Prevent Melee on Spawn'),
 -- Nyrill (8399) - NSR
 -- Ogtinc (8405) - NSR
+-- Makron the Corrupt 8407 - NSR
 -- Warlord Krellian
 ('840801','8408','9','0','100','1','0','5','5000','9000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Warlord Krellian - Cast Strike'),
 ('840802','8408','0','0','100','1','4000','8000','12000','17000','0','0','11','10968','0','1','0','0','0','0','0','0','0','0','Warlord Krellian - Cast Demoralizing Roar'),
