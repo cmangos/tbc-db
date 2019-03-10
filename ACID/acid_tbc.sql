@@ -21839,7 +21839,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lokhtos Darkbargainer (12944) - npc_lokhtos_darkbargainer
 -- Elder Morndeep (15549)
 -- Lefty (16049)
--- Rotfang (16050)
+-- Rotfang 16050 - Bestiary: Sinister Strike, Eviscerate, Vanish, Slowing Poison, Kick, Kidney Shot, Gouge, Drink Healing Potion
 -- Snokh Blackspine (16051)
 -- Malgen Longspear 16052 - Freezing Trap?
 ('1605201','16052','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Malgen Longspear - Enable Range Mode on Aggro'),
