@@ -16783,6 +16783,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Crystalfused Miner
 ('2317401','23174','0','0','100','1','6000','12000','15000','20000','0','0','11','32614','0','0','0','0','0','0','0','0','0','0','Crystalfused Miner - Cast Arcane Explosion'),
 -- Mo'arg Tormenter 23212
+-- Shivan Assassin 23220 - Shartuul
+-- Shivan Assassin (Red) 23474 - NSR
+-- Shivan Assassin (Blue) 23475 - NSR
+-- Shivan Assassin (Black) 23476 - NSR
 -- Eye of Shartuul 23228
 -- Shartuul 23230
 -- Skyguard Ranger 23242 - npc_skyguard_ranger
