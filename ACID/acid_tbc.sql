@@ -21740,7 +21740,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('905606','9056','2','0','100','0','20','0','0','0','0','0','11','15346','0','1','0','0','0','0','0','0','0','0','Fineous Darkvire - Cast Seal of Reckoning at 20% HP'),
 -- Ambassador Flamelash (9156) - boss_ambassador_flamelash
 -- Burning Spirit (9178)
--- Houndmaster Grebmar (9319)
+-- Houndmaster Grebmar (9319) - Bestiary: Bloodlust, Demo Shout, Pummel
 -- Twilight's Hammer Executioner
 ('939801','9398','0','0','100','1','1000','16300','250000','255000','0','0','11','3631','0','0','0','0','0','0','0','0','0','0','Twilight''s Hammer Executioner - Cast Battle Fury'),
 ('939802','9398','0','0','100','1','3000','5000','13000','24000','0','0','11','13459','1','33','0','0','0','0','0','0','0','0','Twilight''s Hammer Executioner - Cast Decimate'),
