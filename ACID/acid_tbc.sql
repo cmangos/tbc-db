@@ -26279,11 +26279,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('702203','7022','24','5','100','1','8257','3','5000','5000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Venomlash Scorpid - Set Phase 2 on Target Max Venom Sting Aura Stack (Phase 1)'),
 ('702204','7022','28','3','100','1','8257','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Venomlash Scorpid - Set Phase 1 on Target Missing Venom Sting Aura Stack (Phase 2)'),
 ('702205','7022','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Venomlash Scorpid - Set Phase 0 on Evade'),
--- Obsidian Sentinel (3.3.5a Official Data)
-('702301','7023','2','0','100','0','80','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','-694','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Cast Splintered Obsidian at 80% HP'),
-('702302','7023','2','0','100','0','60','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','-694','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Cast Splintered Obsidian at 60% HP'),
-('702303','7023','2','0','100','0','40','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','-694','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Cast Splintered Obsidian at 40% HP'),
-('702304','7023','2','0','100','0','20','0','0','0','0','0','11','10061','0','0','11','10072','0','0','1','-694','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Cast Splintered Obsidian at 20% HP'),
+-- Obsidian Sentinel 7023
+('702301','7023','1','0','100','0','5000','5000','0','0','0','0','11','9941','0','34','56','0','0','0','0','0','0','0','Obsidian Sentinel - Cast Spell Reflection and Despawn Guardians OOC'),
+('702302','7023','2','0','100','1024','20','0','0','0','0','0','11','10061','0','0','11','10072','0','2','1','-694','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Splintered Obsidian at 20% HP'),
+('702303','7023','2','0','100','1024','40','0','0','0','0','0','11','10061','0','0','11','10072','0','2','1','-694','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Splintered Obsidian at 40% HP'),
+('702304','7023','2','0','100','1024','60','0','0','0','0','0','11','10061','0','0','11','10072','0','2','1','-694','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Splintered Obsidian at 60% HP'),
+('702305','7023','2','0','100','1024','80','0','0','0','0','0','11','10061','0','0','11','10072','0','2','1','-694','0','0','Obsidian Sentinel - Cast Summon Obsidian Shard and Splintered Obsidian at 80% HP'),
 -- Shadowforge Geologist (4.0.1 Official Data)
 ('703001','7030','0','0','100','1','8900','13900','22500','34900','0','0','11','3356','1','1','0','0','0','0','0','0','0','0','Shadowforge Geologist - Cast Flame Lash'),
 ('703002','7030','0','0','100','1','11100','22200','33700','54200','0','0','11','8814','1','0','0','0','0','0','0','0','0','0','Shadowforge Geologist - Cast Flame Spike'),
@@ -26311,7 +26312,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('717502','7175','2','0','100','0','50','0','0','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Stonevault Ambusher - Cast Enrage at 50% HP'),
 -- Ancient Stone Keeper (4.0.1 Official Data)
 ('720601','7206','0','0','100','1','4300','7800','30100','45400','0','0','11','10132','0','0','0','0','0','0','0','0','0','0','Ancient Stone Keeper - Cast Sand Storms'),
--- Obsidian Shard (7209) - NSR
+-- Obsidian Shard 7209
+('720901','7209','11','0','100','0','0','0','0','0','0','0','11','10074','0','34','0','0','0','0','0','0','0','0','Obsidian Shard - Cast Spell Reflection on Spawn'),
 -- Sand Storm (3.3.5a Official Data)
 ('722601','7226','1','0','100','0','1000','1000','0','0','0','0','11','10092','0','32','0','0','0','0','0','0','0','0','Sand Storm - Cast Sand Storm OOC'),
 -- Ironaya (3.3.5a Official Data)
