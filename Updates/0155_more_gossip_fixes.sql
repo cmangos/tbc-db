@@ -37,7 +37,7 @@ INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id
 
 DELETE FROM conditions WHERE condition_entry IN (3693,3694,3695,3696,3697,3698);
 INSERT INTO conditions (condition_entry, type, value1, value2, comments) VALUES
-(3693, 24, 31110, 1, 'Player does not have item Wildhammer Flare Gun'),
+(3693, 24, 31310, 1, 'Player does not have item Wildhammer Flare Gun'),
 (3694, 8, 10772, 0, 'Quest 10772 The Path of Conquest rewarded'),
 (3695, 8, 10776, 0, 'Quest 10776 Dissension Amongst the Ranks rewarded'),
 (3696, -3, 3695, 0, 'Not 3695'),
@@ -46,7 +46,7 @@ INSERT INTO conditions (condition_entry, type, value1, value2, comments) VALUES
 
 DELETE FROM dbscripts_on_gossip WHERE id=8457;
 INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
-(8457, 0, 17, 31110, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Give Wildhammer Flare Gun');
+(8457, 0, 17, 31310, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Give Wildhammer Flare Gun');
 
 -- Overlord Or'barokh (Entry: 21769)
 -- Lost item option thanks to TrinityCore
