@@ -2380,6 +2380,155 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+686, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
 (@CGUID+687, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
 -- Mother Shahraz
+(@CGUID+263, @CGUID+262, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+264, @CGUID+262, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+265, @CGUID+262, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+266, @CGUID+262, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+358, @CGUID+262, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+359, @CGUID+262, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+360, @CGUID+262, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+361, @CGUID+262, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+362, @CGUID+262, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+262, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+258, @CGUID+257, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+259, @CGUID+257, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+260, @CGUID+257, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+261, @CGUID+257, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+353, @CGUID+257, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+354, @CGUID+257, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+355, @CGUID+257, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+356, @CGUID+257, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+357, @CGUID+257, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+257, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+201, @CGUID+200, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+202, @CGUID+200, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+203, @CGUID+200, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+204, @CGUID+200, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+295, @CGUID+200, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+296, @CGUID+200, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+297, @CGUID+200, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+298, @CGUID+200, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+299, @CGUID+200, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+200, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+243, @CGUID+242, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+244, @CGUID+242, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+245, @CGUID+242, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+246, @CGUID+242, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+336, @CGUID+242, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+337, @CGUID+242, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+338, @CGUID+242, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+339, @CGUID+242, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+340, @CGUID+242, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+242, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+248, @CGUID+247, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+249, @CGUID+247, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+250, @CGUID+247, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+251, @CGUID+247, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+343, @CGUID+247, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+344, @CGUID+247, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+345, @CGUID+247, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+346, @CGUID+247, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+347, @CGUID+247, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+247, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+237, @CGUID+236, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+238, @CGUID+236, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+239, @CGUID+236, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+240, @CGUID+236, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+330, @CGUID+236, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+331, @CGUID+236, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+332, @CGUID+236, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+333, @CGUID+236, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+334, @CGUID+236, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+236, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+212, @CGUID+211, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+213, @CGUID+211, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+214, @CGUID+211, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+215, @CGUID+211, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+305, @CGUID+211, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+306, @CGUID+211, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+307, @CGUID+211, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+308, @CGUID+211, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+309, @CGUID+211, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+211, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+207, @CGUID+206, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+208, @CGUID+206, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+209, @CGUID+206, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+210, @CGUID+206, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+300, @CGUID+206, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+301, @CGUID+206, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+302, @CGUID+206, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+303, @CGUID+206, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+304, @CGUID+206, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+206, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+232, @CGUID+231, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+233, @CGUID+231, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+234, @CGUID+231, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+235, @CGUID+231, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+325, @CGUID+231, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+326, @CGUID+231, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+327, @CGUID+231, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+328, @CGUID+231, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+329, @CGUID+231, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+231, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+253, @CGUID+252, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+254, @CGUID+252, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+255, @CGUID+252, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+256, @CGUID+252, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+348, @CGUID+252, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+349, @CGUID+252, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+350, @CGUID+252, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+351, @CGUID+252, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+352, @CGUID+252, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+252, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+227, @CGUID+226, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+228, @CGUID+226, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+229, @CGUID+226, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+230, @CGUID+226, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+320, @CGUID+226, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+321, @CGUID+226, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+322, @CGUID+226, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+323, @CGUID+226, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+324, @CGUID+226, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+226, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+222, @CGUID+221, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+223, @CGUID+221, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+224, @CGUID+221, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+225, @CGUID+221, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+315, @CGUID+221, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+316, @CGUID+221, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+317, @CGUID+221, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+318, @CGUID+221, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+319, @CGUID+221, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+221, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+217, @CGUID+216, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+218, @CGUID+216, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+219, @CGUID+216, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+220, @CGUID+216, 1167), -- Temple Concubine -> Temple Concubine
+(@CGUID+310, @CGUID+216, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+311, @CGUID+216, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+312, @CGUID+216, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+313, @CGUID+216, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+314, @CGUID+216, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+216, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+335, @CGUID+241, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+241, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+341, @CGUID+205, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+342, @CGUID+205, 1167), -- Charming Courtesan -> Temple Concubine
+(@CGUID+205, @CGUID+283, 1024), -- Charming Courtesan -> Mother Shahraz
+(@CGUID+372, @CGUID+283, 1024), -- Spellbound Attendant -> Mother Shahraz
+(@CGUID+373, @CGUID+283, 1024), -- Spellbound Attendant -> Mother Shahraz
+(@CGUID+374, @CGUID+283, 1024), -- Spellbound Attendant -> Mother Shahraz
+(@CGUID+375, @CGUID+283, 1024), -- Spellbound Attendant -> Mother Shahraz
+(@CGUID+376, @CGUID+283, 1024), -- Spellbound Attendant -> Mother Shahraz
+(@CGUID+377, @CGUID+283, 1024), -- Spellbound Attendant -> Mother Shahraz
+(@CGUID+378, @CGUID+283, 1024), -- Spellbound Attendant -> Mother Shahraz
+(@CGUID+427, @CGUID+283, 1024), -- Enslaved Servant -> Mother Shahraz
+(@CGUID+428, @CGUID+283, 1024), -- Enslaved Servant -> Mother Shahraz
+(@CGUID+429, @CGUID+283, 1024), -- Enslaved Servant -> Mother Shahraz
+(@CGUID+430, @CGUID+283, 1024), -- Enslaved Servant -> Mother Shahraz
+(@CGUID+431, @CGUID+283, 1024), -- Enslaved Servant -> Mother Shahraz
+(@CGUID+432, @CGUID+283, 1024), -- Enslaved Servant -> Mother Shahraz
+(@CGUID+433, @CGUID+283, 1024), -- Enslaved Servant -> Mother Shahraz
 (@CGUID+369, @CGUID+283, 1024), -- Priestess of Dementia -> Mother Shahraz
 (@CGUID+370, @CGUID+283, 1024), -- Priestess of Dementia -> Mother Shahraz
 (@CGUID+371, @CGUID+283, 1024), -- Priestess of Dementia -> Mother Shahraz
@@ -2396,8 +2545,38 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+425, @CGUID+367, 1679), -- Sister of Pleasure -> Sister of Pain
 (@CGUID+367, @CGUID+283, 1024), -- Sister of Pain -> Mother Shahraz
 (@CGUID+426, @CGUID+368, 1679), -- Sister of Pleasure -> Sister of Pain
-(@CGUID+368, @CGUID+283, 1024); -- Sister of Pain -> Mother Shahraz
+(@CGUID+368, @CGUID+283, 1024), -- Sister of Pain -> Mother Shahraz
 -- The Illidari Council
+(@CGUID+631, @CGUID+285, 1024), -- Promenade Sentinel -> Gathios the Shatterer
+(@CGUID+632, @CGUID+285, 1024), -- Promenade Sentinel -> Gathios the Shatterer
+(@CGUID+633, @CGUID+285, 1024), -- Promenade Sentinel -> Gathios the Shatterer
+(@CGUID+634, @CGUID+285, 1024), -- Promenade Sentinel -> Gathios the Shatterer
+(@CGUID+635, @CGUID+285, 1024), -- Promenade Sentinel -> Gathios the Shatterer
+(@CGUID+636, @CGUID+285, 1024), -- Promenade Sentinel -> Gathios the Shatterer
+(@CGUID+644, @CGUID+643, 1167), -- Illidari Blood Lord -> Illidari Blood Lord
+(@CGUID+692, @CGUID+643, 1167), -- Illidari Archon -> Illidari Blood Lord
+(@CGUID+708, @CGUID+643, 1167), -- Illidari Battle-mage -> Illidari Blood Lord
+(@CGUID+713, @CGUID+643, 1167), -- Illidari Assassin -> Illidari Blood Lord
+(@CGUID+714, @CGUID+643, 1167), -- Illidari Assassin -> Illidari Blood Lord
+(@CGUID+643, @CGUID+285, 1024), -- Illidari Blood Lord -> Gathios the Shatterer
+(@CGUID+642, @CGUID+641, 1167), -- Illidari Blood Lord -> Illidari Blood Lord
+(@CGUID+691, @CGUID+641, 1167), -- Illidari Archon -> Illidari Blood Lord
+(@CGUID+706, @CGUID+641, 1167), -- Illidari Battle-mage -> Illidari Blood Lord
+(@CGUID+707, @CGUID+641, 1167), -- Illidari Battle-mage -> Illidari Blood Lord
+(@CGUID+712, @CGUID+641, 1167), -- Illidari Assassin -> Illidari Blood Lord
+(@CGUID+641, @CGUID+285, 1024), -- Illidari Blood Lord -> Gathios the Shatterer
+(@CGUID+640, @CGUID+639, 1167), -- Illidari Blood Lord -> Illidari Blood Lord
+(@CGUID+690, @CGUID+639, 1167), -- Illidari Archon -> Illidari Blood Lord
+(@CGUID+705, @CGUID+639, 1167), -- Illidari Battle-mage -> Illidari Blood Lord
+(@CGUID+710, @CGUID+639, 1167), -- Illidari Assassin -> Illidari Blood Lord
+(@CGUID+711, @CGUID+639, 1167), -- Illidari Assassin -> Illidari Blood Lord
+(@CGUID+639, @CGUID+285, 1024), -- Illidari Blood Lord -> Gathios the Shatterer
+(@CGUID+638, @CGUID+637, 1167), -- Illidari Blood Lord -> Illidari Blood Lord
+(@CGUID+689, @CGUID+637, 1167), -- Illidari Archon -> Illidari Blood Lord
+(@CGUID+703, @CGUID+637, 1167), -- Illidari Battle-mage -> Illidari Blood Lord
+(@CGUID+704, @CGUID+637, 1167), -- Illidari Battle-mage -> Illidari Blood Lord
+(@CGUID+709, @CGUID+637, 1167), -- Illidari Assassin -> Illidari Blood Lord
+(@CGUID+637, @CGUID+285, 1024); -- Illidari Blood Lord -> Gathios the Shatterer
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (22950, 564, 22949, 143, 0), -- High Nethermancer Zerevor -> Gathios the Shatterer
