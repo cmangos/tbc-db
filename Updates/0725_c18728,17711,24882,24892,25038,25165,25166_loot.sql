@@ -1,41 +1,43 @@
+-- overlapping with go.id.179564 loot tables
 -- (35033, '(World Boss Loot) - Doomwalker (17711) - Epic Items (Group 1)'),
 -- (35034, '(World Boss Loot) - Doomwalker (17711) - Epic Items (Group 2)'),
 -- (35035, '(World Boss Loot) - Doom Lord Kazzak (18728) - Epic Items (Group 1)'),
 -- (35036, '(World Boss Loot) - Doom Lord Kazzak (18728) - Epic Items (Group 2)'),
 
-DELETE FROM `creature_loot_template` WHERE `entry` IN (17711,18728) AND `item` IN (34080,34081,35033,35034,35035,35036);
+DELETE FROM `creature_loot_template` WHERE `entry` IN (17711,18728) AND `item` IN (34080,34081,35033,35034,35035,35036,36202,36203,36204,36205);
 INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
-(17711, 35033, 100, 1, -35033, 1, 0, '(World Boss Loot) - Doomwalker (17711) - Epic Items (Group 1)'),
-(17711, 35034, 100, 1, -35034, 1, 0, '(World Boss Loot) - Doomwalker (17711) - Epic Items (Group 2)'),
-(18728, 35035, 100, 1, -35035, 1, 0, 'World Boss Loot) - Doom Lord Kazzak (18728) - Epic Items (Group 1)'),
-(18728, 35036, 100, 1, -35036, 1, 0, 'World Boss Loot) - Doom Lord Kazzak (18728) - Epic Items (Group 2)');
+(17711, 36202, 100, 1, -36202, 1, 0, '(World Boss Loot) - Doomwalker (17711) - Epic Items (Group 1)'),
+(17711, 36203, 100, 1, -36203, 1, 0, '(World Boss Loot) - Doomwalker (17711) - Epic Items (Group 2)'),
+(18728, 36204, 100, 1, -36204, 1, 0, 'World Boss Loot) - Doom Lord Kazzak (18728) - Epic Items (Group 1)'),
+(18728, 36205, 100, 1, -36205, 1, 0, 'World Boss Loot) - Doom Lord Kazzak (18728) - Epic Items (Group 2)');
 
 -- Reused for classic content
-DELETE FROM `reference_loot_template` WHERE `entry` BETWEEN 35033 AND 35036;
+DELETE FROM `reference_loot_template` WHERE `entry` BETWEEN 35033 AND 35036 AND `item` > 30000;
+DELETE FROM `reference_loot_template` WHERE `entry` BETWEEN 36202 AND 36205;
 INSERT INTO `reference_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
-(35033, 30729, 0, 1, 1, 1, 0, 'Black-Iron Battlecloak'),
-(35033, 30726, 0, 1, 1, 1, 0, 'Archaic Charm of Presence'),
-(35033, 30723, 0, 1, 1, 1, 0, 'Talon of the Tempest'),
-(35033, 30722, 0, 1, 1, 1, 0, 'Ethereum Nexus-Reaver'),
-(35033, 30724, 0, 1, 1, 1, 0, 'Barrel-Blade Longrifle'),
+(36202, 30729, 0, 1, 1, 1, 0, 'Black-Iron Battlecloak'),
+(36202, 30726, 0, 1, 1, 1, 0, 'Archaic Charm of Presence'),
+(36202, 30723, 0, 1, 1, 1, 0, 'Talon of the Tempest'),
+(36202, 30722, 0, 1, 1, 1, 0, 'Ethereum Nexus-Reaver'),
+(36202, 30724, 0, 1, 1, 1, 0, 'Barrel-Blade Longrifle'),
 
-(35034, 30725, 0, 1, 1, 1, 0, 'Anger-Spark Gloves'),
-(35034, 30727, 0, 1, 1, 1, 0, 'Gilded Trousers of Benediction'),
-(35034, 30728, 0, 1, 1, 1, 0, 'Fathom-Helm of the Deeps'),
-(35034, 30730, 0, 1, 1, 1, 0, 'Terrorweave Tunic'),
-(35034, 30731, 0, 1, 1, 1, 0, 'Faceguard of the Endless Watch'),
+(36203, 30725, 0, 1, 1, 1, 0, 'Anger-Spark Gloves'),
+(36203, 30727, 0, 1, 1, 1, 0, 'Gilded Trousers of Benediction'),
+(36203, 30728, 0, 1, 1, 1, 0, 'Fathom-Helm of the Deeps'),
+(36203, 30730, 0, 1, 1, 1, 0, 'Terrorweave Tunic'),
+(36203, 30731, 0, 1, 1, 1, 0, 'Faceguard of the Endless Watch'),
 
-(35035, 30735, 0, 1, 1, 1, 0, 'Ancient Spellcloak of the Highborne'),
-(35035, 30736, 0, 1, 1, 1, 0, 'Ring of Flowing Light'),
-(35035, 30738, 0, 1, 1, 1, 0, 'Ring of Reciprocity'),
-(35035, 30733, 0, 1, 1, 1, 0, 'Hope Ender'),
-(35035, 30732, 0, 1, 1, 1, 0, 'Exodar Life-Staff'),
+(36204, 30735, 0, 1, 1, 1, 0, 'Ancient Spellcloak of the Highborne'),
+(36204, 30736, 0, 1, 1, 1, 0, 'Ring of Flowing Light'),
+(36204, 30738, 0, 1, 1, 1, 0, 'Ring of Reciprocity'),
+(36204, 30733, 0, 1, 1, 1, 0, 'Hope Ender'),
+(36204, 30732, 0, 1, 1, 1, 0, 'Exodar Life-Staff'),
 
-(35036, 30734, 0, 1, 1, 1, 0, 'Leggings of the Seventh Circle'),
-(35036, 30737, 0, 1, 1, 1, 0, 'Gold-Leaf Wildboots'),
-(35036, 30739, 0, 1, 1, 1, 0, 'Scaled Greaves of the Marksman'),
-(35036, 30740, 0, 1, 1, 1, 0, 'Ripfiend Shoulderplates'),
-(35036, 30741, 0, 1, 1, 1, 0, 'Topaz-Studded Battlegrips');
+(36205, 30734, 0, 1, 1, 1, 0, 'Leggings of the Seventh Circle'),
+(36205, 30737, 0, 1, 1, 1, 0, 'Gold-Leaf Wildboots'),
+(36205, 30739, 0, 1, 1, 1, 0, 'Scaled Greaves of the Marksman'),
+(36205, 30740, 0, 1, 1, 1, 0, 'Ripfiend Shoulderplates'),
+(36205, 30741, 0, 1, 1, 1, 0, 'Topaz-Studded Battlegrips');
 
 DELETE FROM `creature_loot_template` WHERE `entry` IN (24882,24892,25038,25165,25166) AND `item` IN (34082,34083,34084,34085,36171,36173,36175,36176,36178);
 INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES 
