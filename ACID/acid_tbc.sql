@@ -11922,7 +11922,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodvenom Post Brave (11180) - NSR
 -- Shi'alune (11181) - NSR
 -- Timbermaw Warder (11516) - NSR
--- Timbermaw Mystic (11552) - NSR
+-- Timbermaw Mystic 11552
+('1155201','11552','9','0','100','1','0','30','3000','6000','0','0','11','10946','1','0','0','0','0','0','0','0','0','0','Timbermaw Mystic - Cast Mind Blast'),
+('1155202','11552','9','0','100','1','0','30','4000','8000','0','0','11','10934','1','0','0','0','0','0','0','0','0','0','Timbermaw Mystic - Cast Smite'),
 -- Timbermaw Woodbender (11553) - NSR
 -- Grazle (11554) - NSR
 -- Gorn One Eye (11555) - NSR
