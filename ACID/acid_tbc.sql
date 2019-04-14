@@ -11275,8 +11275,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Murk Thresher
 ('439001','4390','1','0','100','0','1000','1000','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Elder Murk Thresher - Cast Thrash OOC'),
 -- Swamp Ooze (4391) - NSR
--- Corrosive Swamp Ooze
-('439201','4392','9','0','100','1','0','5','5000','11000','0','0','11','9459','1','0','0','0','0','0','0','0','0','0','Corrosive Swamp Ooze - Cast Corrosive Ooze'),
+-- Corrosive Swamp Ooze 4392
+('439201','4392','2','0','100','1','15','0','0','0','0','0','11','9461','0','0','0','0','0','0','0','0','0','0','Corrosive Swamp Ooze - Cast Summon Swamp Ooze at 15% HP'),
 -- Acidic Swamp Ooze
 ('439301','4393','9','0','100','1','0','5','5000','11000','0','0','11','9459','1','0','0','0','0','0','0','0','0','0','Acidic Swamp Ooze - Cast Corrosive Ooze'),
 ('439302','4393','6','0','100','0','0','0','0','0','0','0','11','43135','0','7','0','0','0','0','0','0','0','0','Acidic Swamp Ooze - Cast Bubbling Ooze on Death'),
