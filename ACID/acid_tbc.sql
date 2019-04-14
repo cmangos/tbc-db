@@ -3797,7 +3797,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('398001','3980','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Raleigh the Devout - Flee at 15% HP'),
 -- Monika Sengutz (3982) - NSR
 -- Rat (4075) - NSR
--- Hammerhead Shark (5185) - NSR
 -- Pinto (5405) - NSR
 -- Spirit Healer (6491) - NSR
 -- Ravenholdt Guard (6766) - NSR
@@ -5415,7 +5414,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sarah Goode (9979) - NSR
 -- Infected Squirrel (10779) - NSR
 -- Infected Deer (10780) - NSR
--- Reef Shark (12123) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Gorefang (3.3.5a Official Data)
 ('1243101','12431','0','0','100','1','5700','9200','16300','19600','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Gorefang - Cast Rend'),
 -- Old Vicejaw (3.3.5a Official Data)
@@ -6731,8 +6729,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Howin Kindfeather (11810) - NSR
 -- Claira Kindfeather (11812) - NSR
 -- Kerr Ironsight (11813) - NSR
--- Great Shark
-('1212401','12124','1','0','100','0','1000','1000','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Great Shark - Cast Thrash OOC'),
 -- Verdantine Boughguard
 ('1247701','12477','9','0','100','1','0','5','9000','13000','0','0','11','20666','1','0','0','0','0','0','0','0','0','0','Verdantine Boughguard - Cast Cleave'),
 ('1247702','12477','9','0','100','1','0','5','11000','15000','0','0','11','15708','1','1','0','0','0','0','0','0','0','0','Verdantine Boughguard - Cast Mortal Strike'),
@@ -9250,8 +9246,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Rayan Dawnrisen (11705) - NSR
 -- Joy Ar'nareth (11707) - NSR
 -- Coral Moongale (11708) - NSR
--- Mammoth Shark 12125
-('1212501','12125','1','0','100','0','1000','1000','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Mammoth Shark - Cast Thrash OOC'),
 -- Spitelash Raider 12204
 ('1220401','12204','11','0','100','0','0','0','0','0','0','0','11','12546','0','33','0','0','0','0','0','0','0','0','Spitelash Raider - Cast Spitelash on Spawn'),
 ('1220402','12204','0','0','100','1','1000','2500','11000','15000','0','0','11','12548','1','0','0','0','0','0','0','0','0','0','Spitelash Raider - Cast Frost Shock'),
@@ -10154,8 +10148,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Krah'ranik (11817) - NSR
 -- Jory Zaga (11819) - NSR
 -- Captured Rabid Thistle Bear (11836) - NSR
--- Reef Shark
-('1212301','12123','1','0','100','0','1000','1000','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Reef Shark - Cast Thrash OOC'),
 -- Lunaclaw (12138) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Lunaclaw Spirit (12144) - npc_lunaclaw_spirit
 -- Sickly Deer (12298) - spell_dummy_npc
@@ -10921,8 +10913,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('393302','3933','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Hai''zan - Flee at 15% HP'),
 -- Holgar Stormaxe
 ('431101','4311','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Holgar Stormaxe - Flee at 15% HP'),
--- Sand Shark
-('543501','5435','1','0','100','0','1000','1000','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Sand Shark - Cast Thrash OOC'),
 -- Ruzan
 ('576501','5765','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ruzan - Flee at 15% HP'),
 -- Warlord Kolkanis
@@ -11456,8 +11446,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ingo Woolybush
 ('538801','5388','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Ingo Woolybush - Flee at 15% HP'),
 -- Pinto (5405) - NSR
--- Coral Shark
-('543401','5434','1','0','100','0','1000','1000','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Coral Shark - Cast Thrash OOC'),
 -- School of Fish (6145) - NSR
 -- Innkeeper Janene (6272) - npc_innkeeper
 -- Spirit Healer (6491) - NSR
@@ -12354,7 +12342,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1182501','11825','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Paige Felixe - Flee at 15% HP'),
 -- Kristy Grant
 ('1182601','11826','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Kristy Grant - Flee at 15% HP'),
--- Great Shark (12124) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Gordok Hyena
 ('1241801','12418','9','0','100','1','0','5','17000','21000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Gordok Hyena - Cast Rend'),
 -- Dreamroarer
@@ -14090,7 +14077,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1204601','12046','0','0','100','1','9400','16200','8200','20100','0','0','11','15496','4','0','0','0','0','0','0','0','0','0','Gor''marok the Ravager - Cast Cleave'),
 ('1204602','12046','0','0','100','1','12100','17600','7200','21600','0','0','11','16856','1','1','0','0','0','0','0','0','0','0','Gor''marok the Ravager - Cast Mortal Strike'),
 ('1204603','12046','2','0','100','0','50','0','0','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Gor''marok the Ravager - Cast Enrage at 50% HP'),
--- Great Shark (12124) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Ivory Raptor (12348) - NSR
 -- Riding Nightsaber (12361) - NSR
 -- Steeljaw Snapper (14123) - NSR
@@ -29953,8 +29939,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stoneclaw Totem II 3911 - TotemAI
 -- Stoneclaw Totem III 3912 - TotemAI
 -- Stoneclaw Totem IV 3913 - TotemAI
+-- Hammerhead Shark 5185 - NSR
 -- Archery Target
 ('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
+-- Coral Shark 5434
+('543401','5434','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Coral Shark - Cast Thrash on Spawn'),
+-- Sand Shark 5435
+('543501','5435','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Sand Shark - Cast Thrash on Spawn'),
 -- Stoneskin Totem 5873 - TotemAI
 -- Strength of Earth Totem 5874 - TotemAI
 -- Fire Nova Totem 5879 - TotemAI
@@ -30032,6 +30023,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flametongue Totem IV 10557 - TotemAI
 -- Doomguard 11859
 ('1185901','11859','9','0','100','1','0','30','30100','34900','0','0','11','89','1','32','0','0','0','0','0','0','0','0','Doomguard - Cast Cripple'),
+-- Reef Shark 12123
+('1212301','12123','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Reef Shark - Cast Thrash on Spawn'),
+-- Great Shark 12124
+('1212401','12124','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Great Shark - Cast Thrash on Spawn'),
+-- Mammoth Shark 12125
+('1212501','12125','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Mammoth Shark - Cast Thrash on Spawn'),
 -- Ice Totem 12141 - TotemAI
 -- Imp Minion 12922
 ('1292201','12922','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Imp Minion - Enable Range Mode on Aggro'),
@@ -30061,6 +30058,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Windwall Totem IV 15492 - TotemAI
 -- Windfury Totem IV 15496 - TotemAI
 -- Windfury Totem V 15497 - TotemAI
+-- Baby Shark 15661 - NSR
 -- Tiny Snowman 15710
 ('1571001','15710','22','0','100','1','34','0','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Dance on receive dance emote'),
 ('1571002','15710','22','0','100','1','101','0','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Wave on receive wave emote'),
