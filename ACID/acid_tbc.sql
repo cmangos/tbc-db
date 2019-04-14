@@ -11266,7 +11266,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('438201','4382','0','0','100','1','3000','7000','12000','16000','0','0','11','43130','4','32','0','0','0','0','0','0','0','0','Withervine Creeper - Cast Creeping Vines'),
 -- Withervine Rager
 ('438501','4385','2','0','100','1','30','0','120000','120000','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Withervine Rager - Cast Enrage at 30% HP'),
--- Withervine Bark Ripper (4386) - NSR
+-- Withervine Bark Ripper 4386
+('438601','4386','9','0','100','1','0','5','5000','8000','0','0','11','6016','1','0','0','0','0','0','0','0','0','0','Withervine Bark Ripper - Cast Pierce Armor'),
 -- Withervine Mire Beast
 ('438701','4387','9','0','100','1','0','5','11000','15000','0','0','11','5337','1','0','0','0','0','0','0','0','0','0','Withervine Mire Beast - Cast Wither Strike'),
 -- Young Murk Thresher (4388) - NSR
