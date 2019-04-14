@@ -481,9 +481,16 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+77, @CGUID+74, 3), -- Slavering Worg -> Bleak Worg
 (@CGUID+143, @CGUID+74, 3), -- Wolfguard Worg -> Bleak Worg
 (@CGUID+97, @CGUID+141, 3), -- Blood Seeker -> Odo the Blindwatcher
-(@CGUID+96, @CGUID+141, 3); -- Vile Bat -> Odo the Blindwatcher
+(@CGUID+96, @CGUID+141, 3), -- Vile Bat -> Odo the Blindwatcher
+(@CGUID+93, @CGUID+95, 3), -- Fel Steed/Shadow Charger -> Fel Steed/Shadow Charger
+(@CGUID+94, @CGUID+95, 3); -- Fel Steed/Shadow Charger -> Fel Steed/Shadow Charger
 
 -- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
+
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+93, 3864), (@CGUID+93, 3865), -- Fel Steed, Shadow Charger
+(@CGUID+94, 3864), (@CGUID+94, 3865), -- Fel Steed, Shadow Charger
+(@CGUID+95, 3864), (@CGUID+95, 3865); -- Fel Steed, Shadow Charger
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 2110, 33, -212.2, 2295.34, 96.0127, 1.76915, 7200, 7200, 2, 0, 0, 1), -- Black Rat
@@ -578,9 +585,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+90, 3863, 33, -128.064, 2186.77, 113.215, 2.67035, 7200, 7200, 2, 0, 0, 1), -- Lupine Horror
 (@CGUID+91, 3863, 33, -150.907, 2182.17, 99.9595, 1.01229, 7200, 7200, 2, 0, 0, 1), -- Lupine Horror
 (@CGUID+92, 3863, 33, -118.109, 2152.18, 101.603, 5.72468, 7200, 7200, 2, 0, 0, 1), -- Lupine Horror
-(@CGUID+93, 3864, 33, -234.131, 2236.26, 79.8619, 0.296706, 7200, 7200, 0, 0, 0, 0), -- Fel Steed
-(@CGUID+94, 3864, 33, -223.612, 2245.72, 79.8583, 5.13127, 7200, 7200, 0, 0, 0, 0), -- Fel Steed
-(@CGUID+95, 3864, 33, -217.135, 2247.13, 79.8579, 4.88692, 7200, 7200, 0, 0, 0, 0), -- Fel Steed
+(@CGUID+93, 0, 33, -234.131, 2236.26, 79.8619, 0.296706, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+94, 0, 33, -223.612, 2245.72, 79.8583, 5.13127, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+95, 0, 33, -217.135, 2247.13, 79.8579, 4.88692, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
 (@CGUID+96, 3866, 33, -243.174, 2126.93, 100.112, 6.07375, 7200, 7200, 0, 0, 0, 0), -- Vile Bat
 (@CGUID+97, 3868, 33, -248.788, 2122.86, 100.112, 1.58825, 7200, 7200, 0, 0, 0, 0), -- Blood Seeker
 (@CGUID+98, 3872, 33, -192.012, 2124.54, 97.3899, 4.29002, 3600, 86400, 0, 0, 0, 2), -- Deathsworn Captain
