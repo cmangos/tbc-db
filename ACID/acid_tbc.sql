@@ -13445,6 +13445,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Colossus of Ashi 15742
 -- Colossal Anubisath Warbringer 15743
 -- Imperial Qiraji Destroyer 15744
+('1574401','15744','0','0','100','1025','10000','30000','25000','35000','0','0','11','19408','17','0','0','0','0','0','0','0','0','0','Imperial Qiraji Destroyer - Cast Panic'),
 -- Greater Anubisath Warbringer 15754
 -- Greater Silithid Flayer 15756
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
