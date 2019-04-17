@@ -4,8 +4,8 @@ SET @CGUID := 26081;  -- original TDB spawn
 
 -- new spawn location (sniff)
 DELETE FROM `creature` WHERE `guid`=@GUID;
-INSERT INTO `creature` (`guid`, `id`, `map`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES
-(@GUID, 5786, 1, 1, -2780.27, -702.809, 6.526313, 0.1570796, 3600, 7200);
+INSERT INTO `creature` (`guid`, `id`, `map`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`) VALUES
+(@GUID, 5786, 1, 0, -2780.27, -702.809, 6.526313, 0.1570796, 3600, 7200, 0);
 
 DELETE FROM `pool_template` WHERE `entry`=@POOLENTRY;
 INSERT INTO `pool_template` (`entry`,`max_limit`,`description`) VALUES
@@ -17,6 +17,6 @@ INSERT INTO `pool_creature` (`guid`,`pool_entry`,`chance`,`description`) VALUES
 (@GUID, @POOLENTRY, 0, 'Snagglespear Spawn 2');
 
 -- set to proper "uncommon" rare spawn time
-UPDATE `creature` SET `spawntimesecsmin`=3600, `spawntimesecsmax`=7200 WHERE `guid`=@CGUID;
+UPDATE `creature` SET `spawntimesecsmin`=3600, `spawntimesecsmax`=7200, `modelid`=0 WHERE `guid`=@CGUID;
 
 
