@@ -440,6 +440,9 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+41, 0, 0, 1, 0, 333, 0, NULL); -- Sethekk Guard
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+(18319, 0, 0, 1, 16, 0, 0, '37509'), -- Time-Lost Scryer
+(18320, 0, 0, 1, 16, 0, 0, '37509'), -- Time-Lost Shadowmage
+(18327, 0, 0, 1, 16, 0, 0, '37509'), -- Time-Lost Scryer
 (18472, 0, 0, 1, 0, 0, 0, '18950'), -- Darkweaver Syth
 (18956, 0, 0, 1, 0, 0, 0, NULL), -- Lakka
 (23132, 0, 0, 1, 16, 0, 0, '9205'); -- Brood of Anzu
