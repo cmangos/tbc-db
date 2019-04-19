@@ -5705,6 +5705,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tyrion 7766
 -- Hank the Hammer 7798
 -- Brother Sarno 7917
+('791701','7917','10','0','100','1','1','5','30000','60000','1','0','59','6','0','0','54','-199','6','0','0','0','0','0','Brother Sarno - Set Facing and Say OOC LOS'),
 -- Lillian Singh 8118
 -- Master Wood 8383 - (EMOTES NEED TO BE SCRIPTED)
 -- Lil Timmy (NEEDS SNIFF RESEARCH TO FIND PROPER SUMMON SPELL FOR THE KITTEN AS THIS IS NOT THE CORRECT SPELL MOST LIKELY)
@@ -30492,7 +30493,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-196','It is dangerous here, master. But I shall help stand guard.','0','0','0','2922','0'),
 ('-197','We can make it better, stronger, faster. We have the technology. We have the magic.','0','0','0','2922','0'),
 ('-198','You should not be here! Slay them!','5799','1','0','4831','0'),
--- Classic PLEASE RE-USE 199
+('-199','Greetings, $c!  Welcome to the Cathedral of Light!','0','0','7','Brother Sarno 7917','3'),
 ('-200','You will be easy prey, $c.','0','1','0','Common Harpy Text','0'),
 ('-201','My talons will shred your puny body, $r.','0','0','0','Common Harpy Text','0'),
 ('-202','A fine trophy your head will make, $r.','0','0','0','Common Harpy Text','0'),
