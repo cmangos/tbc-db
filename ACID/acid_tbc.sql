@@ -12977,10 +12977,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift Brown Wolf 14540
 -- Swift Gray Wolf 14541
 -- High Overlord Saurfang 14720
-('1472001','14720','0','0','100','1','10000','20000','25000','25000','0','0','11','16636','4','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Berserker Charge'),
-('1472002','14720','0','0','100','1','10000','20000','20000','40000','0','0','11','26339','1','1','1','-13','0','0','0','0','0','0','High Overlord Saurfang - Cast Saurfang''s Rage'),
-('1472003','14720','0','0','100','1','3000','9000','15000','15000','0','0','11','16508','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Intimidating Roar'),
-('1472004','14720','9','0','100','1','0','5','11000','15000','0','0','11','16856','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Mortal Strike'),
+('1472001','14720','11','0','100','0','0','0','0','0','0','0','9347','0','34','0','11','26341','0','34','0','0','0','0','High Overlord Saurfang - Cast Mortal Strike and Saurfang''s Rage on Spawn'),
+('1472002','14720','5','0','100','1','5000','5000','0','0','0','0','1','-13','0','0','0','0','0','0','0','0','0','0','Highlord Overlord Saurfang - Say on Unit Kill'),
+('1472003','14720','32','0','100','1','8','25','25000','25000','0','0','11','15749','12','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Shield Charge'),
+('1472004','14720','0','0','100','1','3000','9000','15000','15000','0','0','11','16508','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Intimidating Roar'),
 ('1472005','14720','0','0','100','1','5000','8000','7000','7000','0','0','11','16044','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Cleave'),
 -- Rashona Straglash 14726
 -- Vehena 14727
@@ -17806,7 +17806,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1822502','18225','29','0','100','1','1000','1000','1000','1000','0','0','11','31962','0','0','0','0','0','0','0','0','0','0','Fire Bomb Target - Cast Flames on Generic Timer'),
 -- Saurfang the Younger 18229
 ('1822901','18229','0','0','100','1','6000','8000','14000','16000','0','0','11','41097','0','0','0','0','0','0','0','0','0','0','Saurfang the Younger - Cast Whirlwind'),
-('1822902','18229','0','0','100','1','10000','20000','20000','40000','0','0','11','26339','1','1','1','-13','0','0','0','0','0','0','Saurfang the Younger - Cast Saurfang''s Rage'),
+('1822902','18229','0','0','100','1','10000','20000','20000','40000','0','0','11','26339','1','1','1','-10133','0','0','0','0','0','0','Saurfang the Younger - Cast Saurfang''s Rage'),
 ('1822903','18229','9','0','100','1','0','5','10000','15000','0','0','11','15708','1','0','0','0','0','0','0','0','0','0','Saurfang the Younger - Cast Mortal Strike'),
 ('1822904','18229','9','0','100','1','8','25','10000','20000','0','0','11','15749','1','1','0','0','0','0','0','0','0','0','Saurfang the Younger - Cast Shield Charge'),
 -- Murkblood Brute 18211 - NSR
@@ -30399,7 +30399,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Classic PLEASE RE-USE 9 - 10
 ('-11','You cannot hide from me, rogue. I can smell your fear.','0','0','0','Klaven Mortwake 7053','0'),
 ('-12','%s is lured out into the open!','0','2','0','Gorishi Hive Queen 10041 on Spawn','0'),
-('-13','%s\'s eyes glow red!','0','2','0','14720/18229','0'),
+('-13','Is that the best you can do?','0','0','0','High Lord Saurfang','0'),
 ('-14','Now how am I supposed to get those mechanical wretches out of my fields?','0','0','7','Farmer Saldean 233','0'),
 ('-15','A bunch of thugs and thieves aren\'t going to get me to leave my land!','0','0','7','Farmer Saldean 233','0'),
 ('-16','They might have run all the other farmers off, but the Saldean\'s will never leave Westfall.','0','0','7','Farmer Saldean 233','0'),
@@ -31087,7 +31087,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10130','Battle Stance! Prepare for an offensive rush!','0','1','0','23049','0'),
 ('-10131','Defensive Stance! Shield yourself against their blows and strike back!','0','1','0','23049','0'),
 ('-10132','Berserker stance! Attack them recklessly!','0','1','0','23049','0'),
--- RE-USE 10133
+('-10133','%s\'s eyes glow red!','0','2','0','18229','0'),
 ('-10134','Protect the innocent!','0','0','0','15638','0'),
 ('-10135','Serve the Public Trust!','0','0','0','15638','0'),
 ('-10136','Uphold the Law!','0','0','0','15638','0'),
