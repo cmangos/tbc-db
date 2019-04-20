@@ -1182,8 +1182,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 153464, 329, 3555.39, -3424.3, 136.745, 2.3911, 0, 0, 0.930418, 0.366501, 7200, 7200, 100, 1), -- Large Solid Chest
-(@OGUID+2, 153469, 329, 4080.21, -3533.44, 124.622, -3.00197, 0, 0, 0.997564, -0.069756, 86400, 86400, 100, 1), -- Large Mithril Bound Chest
+-- 1 - 2
 (@OGUID+3, 175350, 329, 3621.54, -3335.55, 123.501, 3.14159, 0, 0, 1, 0, 180, 180, 100, 0), -- Doodad_SmallPortcullis04
 (@OGUID+4, 175351, 329, 3603.04, -3335.24, 125.354, 3.14159, 0, 0, 1, 0, 180, 180, 100, 0), -- Doodad_SmallPortcullis03
 (@OGUID+5, 175352, 329, 3571.57, -3451.68, 136.357, 2.31256, 0, 0, 0.915311, 0.402747, 180, 180, 100, 1), -- King's Square Gate
@@ -1243,7 +1242,21 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+59, 175481, 329, 3830.23, -3704.26, 153.273, -0.261799, 0, 0, -0.130526, 0.991445, 180, 180, 100, 1), -- Cash & Sons - Pawn Brokers
 (@OGUID+60, 175483, 329, 3477.52, -3359.29, 151.06, -1.5708, 0, 0, -0.707107, 0.707107, 180, 180, 100, 1), -- The Orphanage
 (@OGUID+61, 175484, 329, 3473.01, -3294.13, 147.507, -1.13446, 0, 0, -0.5373, 0.843391, 180, 180, 100, 1), -- Fras Siabi's Premium Tobacco
--- 62-301
+(@OGUID+62, 153464, 329, 3555.388, -3424.295, 136.7455, 2.391098, 0, 0, 0.9304171, 0.3665025, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+63, 153469, 329, 3555.388, -3424.295, 136.7455, 2.391098, 0, 0, 0.9304171, 0.3665025, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+64, 153464, 329, 3471.283, -3311.513, 132.5644, 0.6981315, 0, 0, 0.34202, 0.9396927, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+65, 153469, 329, 3471.283, -3311.513, 132.5644, 0.6981315, 0, 0, 0.34202, 0.9396927, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+66, 153464, 329, 3607.98, -3519.02, 138.1113, 1.151916, 0, 0, 0.5446386, 0.8386708, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+67, 153469, 329, 3607.98, -3519.02, 138.1113, 1.151916, 0, 0, 0.5446386, 0.8386708, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+68, 153464, 329, 3736.932, -3273.183, 130.0494, 1.97222, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+69, 153469, 329, 3736.932, -3273.183, 130.0494, 1.97222, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+70, 153464, 329, 3816.499, -3715.445, 143.0882, 1.239183, 0, 0, 0.5807028, 0.8141156, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+71, 153469, 329, 3816.499, -3715.445, 143.0882, 1.239183, 0, 0, 0.5807028, 0.8141156, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+72, 153464, 329, 4022.236, -3610.676, 131.6547, -2.35619, 0, 0, -0.9238787, 0.3826855, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+73, 153469, 329, 4022.236, -3610.676, 131.6547, -2.35619, 0, 0, -0.9238787, 0.3826855, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+74, 153464, 329, 4080.211, -3533.44, 124.6223, -3.001947, 0, 0, 0.997564, -0.069756, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+75, 153469, 329, 4080.211, -3533.44, 124.6223, -3.001947, 0, 0, 0.997564, -0.069756, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+-- 76-301
 (@OGUID+302, 175737, 329, 3614.39, -3125.01, 137.009, 2.35619, 0, 0, 0.92388, 0.382683, 180, 180, 100, 1), -- The Seven Kingdoms
 (@OGUID+303, 175741, 329, 3615.47, -3125.96, 137.01, -0.523599, 0, 0, 0.258819, -0.965926, 180, 180, 100, 1), -- Kil'jaeden and the Shadow Pact
 (@OGUID+304, 175748, 329, 3479.83, -3089.39, 137.671, 2.98451, 0, 0, 0.996917, 0.078459, 180, 180, 100, 1), -- The Birth of the Lich King
@@ -1647,7 +1660,14 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+91, @PGUID+90, 0, 'Stratholme - Large Solid Chest / Large Mithril Bound Chest - #1'),
+(@PGUID+92, @PGUID+90, 0, 'Stratholme - Large Solid Chest / Large Mithril Bound Chest - #2'),
+(@PGUID+93, @PGUID+90, 0, 'Stratholme - Large Solid Chest / Large Mithril Bound Chest - #3'),
+(@PGUID+94, @PGUID+90, 0, 'Stratholme - Large Solid Chest / Large Mithril Bound Chest - #4'),
+(@PGUID+95, @PGUID+90, 0, 'Stratholme - Large Solid Chest / Large Mithril Bound Chest - #5'),
+(@PGUID+96, @PGUID+90, 0, 'Stratholme - Large Solid Chest / Large Mithril Bound Chest - #6'),
+(@PGUID+97, @PGUID+90, 0, 'Stratholme - Large Solid Chest / Large Mithril Bound Chest - #7');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 2, 'Enchanted Scarlet Thread (175966) - Stratholme'),
@@ -1724,7 +1744,14 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+72, 1, 'Stratholme Supply Crate'),
 (@PGUID+73, 1, 'Stratholme Supply Crate'),
 (@PGUID+74, 1, 'Stratholme Supply Crate'),
-(@PGUID+99, 1, 'Stratholme - Master Chest Pool');
+(@PGUID+90, 3, 'Stratholme - Master Chest Pool'),
+(@PGUID+91, 1, 'Stratholme - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #1'),
+(@PGUID+92, 1, 'Stratholme - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #2'),
+(@PGUID+93, 1, 'Stratholme - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #3'),
+(@PGUID+94, 1, 'Stratholme - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #4'),
+(@PGUID+95, 1, 'Stratholme - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #5'),
+(@PGUID+96, 1, 'Stratholme - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #6'),
+(@PGUID+97, 1, 'Stratholme - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #7');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+196, @PGUID+2, 10, 'Stratholme - Plague Ghoul / Skul'),
@@ -2060,8 +2087,20 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+517, @PGUID+74, 0, 'Stratholme Supply Crate'),
 (@OGUID+577, @PGUID+74, 0, 'Stratholme Supply Crate'),
 (@OGUID+637, @PGUID+74, 0, 'Stratholme Supply Crate'),
-(@OGUID+1, @PGUID+99, 0, 'Stratholme - Large Solid Chest (153464)'),
-(@OGUID+2, @PGUID+99, 0, 'Stratholme - Large Mithril Bound Chest (153469)');
+(@OGUID+62, @PGUID+91, 0, 'Stratholme - Large Solid Chest (153464)'),
+(@OGUID+63, @PGUID+91, 0, 'Stratholme - Large Mithril Bound Chest (153469)'),
+(@OGUID+64, @PGUID+92, 0, 'Stratholme - Large Solid Chest (153464)'),
+(@OGUID+65, @PGUID+92, 0, 'Stratholme - Large Mithril Bound Chest (153469)'),
+(@OGUID+66, @PGUID+93, 0, 'Stratholme - Large Solid Chest (153464)'),
+(@OGUID+67, @PGUID+93, 0, 'Stratholme - Large Mithril Bound Chest (153469)'),
+(@OGUID+68, @PGUID+94, 0, 'Stratholme - Large Solid Chest (153464)'),
+(@OGUID+69, @PGUID+94, 0, 'Stratholme - Large Mithril Bound Chest (153469)'),
+(@OGUID+70, @PGUID+95, 0, 'Stratholme - Large Solid Chest (153464)'),
+(@OGUID+71, @PGUID+95, 0, 'Stratholme - Large Mithril Bound Chest (153469)'),
+(@OGUID+72, @PGUID+96, 0, 'Stratholme - Large Solid Chest (153464)'),
+(@OGUID+73, @PGUID+96, 0, 'Stratholme - Large Mithril Bound Chest (153469)'),
+(@OGUID+74, @PGUID+97, 0, 'Stratholme - Large Solid Chest (153464)'),
+(@OGUID+75, @PGUID+97, 0, 'Stratholme - Large Mithril Bound Chest (153469)');
 
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (175966, @PGUID+1, 0, 'Enchanted Scarlet Thread (175966)'),

@@ -1909,8 +1909,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 (@PGUID+17, @PGUID+84, 0, 'Dire Maul pod, 1603'),
 (@PGUID+18, @PGUID+84, 0, 'Dire Maul pod, 1604'),
@@ -1976,7 +1974,13 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+78, @PGUID+84, 0, 'Dire Maul pod, 1664'),
 (@PGUID+79, @PGUID+84, 0, 'Dire Maul pod, 1665'),
 (@PGUID+80, @PGUID+84, 0, 'Dire Maul pod, 1666'),
-(@PGUID+81, @PGUID+84, 0, 'Dire Maul pod, 1667');
+(@PGUID+81, @PGUID+84, 0, 'Dire Maul pod, 1667'),
+(@PGUID+92, @PGUID+91, 0, 'DM East - Large Solid Chest / Large Mithril Bound Chest - #1'),
+(@PGUID+93, @PGUID+91, 0, 'DM East - Large Solid Chest / Large Mithril Bound Chest - #2'),
+(@PGUID+95, @PGUID+94, 0, 'DM West - Large Solid Chest / Large Mithril Bound Chest - #1'),
+(@PGUID+96, @PGUID+94, 0, 'DM West - Large Solid Chest / Large Mithril Bound Chest - #2'),
+(@PGUID+98, @PGUID+97, 0, 'DM North - Large Solid Chest / Large Mithril Bound Chest - #1'),
+(@PGUID+99, @PGUID+97, 0, 'DM North - Large Solid Chest / Large Mithril Bound Chest - #2');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Phase Lasher or Fel Lash, The Hidden Reach, near entrance'),
@@ -2063,10 +2067,17 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+82, 1, 'DM - Dusty Tome'),
 (@PGUID+83, 1, 'DM - Tsu''zee / Eldreth Apparition'),
 (@PGUID+84, 20, 'Dire Maul pods MASTER'),
-(@PGUID+96, 2, 'DM East - Master Ghost Mushroom (142144) Pool'),
-(@PGUID+97, 1, 'DM East - Master Chest Pool'),
-(@PGUID+98, 1, 'DM West - Master Chest Pool'),
-(@PGUID+99, 1, 'DM North - Master Chest Pool');
+(@PGUID+85, 2, 'DM East - Master Ghost Mushroom (142144) Pool'),
+-- 86 - 90
+(@PGUID+91, 1, 'DM East - Master Chest Pool'),
+(@PGUID+92, 1, 'DM East - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #1'),
+(@PGUID+93, 1, 'DM East - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #2'),
+(@PGUID+94, 1, 'DM West - Master Chest Pool'),
+(@PGUID+95, 1, 'DM West - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #1'),
+(@PGUID+96, 1, 'DM West - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #2'),
+(@PGUID+97, 1, 'DM North - Master Chest Pool'),
+(@PGUID+98, 1, 'DM North - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #1'),
+(@PGUID+99, 1, 'DM North - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #2');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+834, @PGUID+1, 0, 'Phase Lasher'),
@@ -2373,17 +2384,23 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+181, @PGUID+81, 0, 'Dire Maul pod, node 1667'),
 (@OGUID+246, @PGUID+81, 0, 'Dire Maul pod, node 1667'),
 (@OGUID+311, @PGUID+81, 0, 'Dire Maul pod, node 1667'),
-(@OGUID+1, @PGUID+96, 0, 'DM East - Ghost Mushroom (142144)'),
-(@OGUID+2, @PGUID+96, 0, 'DM East - Ghost Mushroom (142144)'),
-(@OGUID+3, @PGUID+96, 0, 'DM East - Ghost Mushroom (142144)'),
-(@OGUID+4, @PGUID+96, 0, 'DM East - Ghost Mushroom (142144)'),
-(@OGUID+5, @PGUID+96, 0, 'DM East - Ghost Mushroom (142144)'),
-(@OGUID+13, @PGUID+97, 0, 'DM East - Large Solid Chest (153464)'),
-(@OGUID+18, @PGUID+97, 0, 'DM East - Large Mithril Bound Chest (153469)'),
-(@OGUID+14, @PGUID+98, 0, 'DM West - Large Solid Chest (153464)'),
-(@OGUID+16, @PGUID+98, 0, 'DM West - Large Solid Chest (153464)'),
-(@OGUID+15, @PGUID+99, 0, 'DM North - Large Solid Chest (153464)'),
-(@OGUID+17, @PGUID+99, 0, 'DM North - Large Solid Chest (153464)');
+(@OGUID+1, @PGUID+85, 0, 'DM East - Ghost Mushroom (142144)'),
+(@OGUID+2, @PGUID+85, 0, 'DM East - Ghost Mushroom (142144)'),
+(@OGUID+3, @PGUID+85, 0, 'DM East - Ghost Mushroom (142144)'),
+(@OGUID+4, @PGUID+85, 0, 'DM East - Ghost Mushroom (142144)'),
+(@OGUID+5, @PGUID+85, 0, 'DM East - Ghost Mushroom (142144)'),
+(@OGUID+371, @PGUID+92, 0, 'DM East - Large Solid Chest (153464)'),
+(@OGUID+372, @PGUID+92, 0, 'DM East - Large Mithril Bound Chest (153469)'),
+(@OGUID+373, @PGUID+93, 0, 'DM East - Large Solid Chest (153464)'),
+(@OGUID+374, @PGUID+93, 0, 'DM East - Large Mithril Bound Chest (153469)'),
+(@OGUID+375, @PGUID+95, 0, 'DM West - Large Solid Chest (153464)'),
+(@OGUID+376, @PGUID+95, 0, 'DM West - Large Mithril Bound Chest (153469)'),
+(@OGUID+377, @PGUID+96, 0, 'DM West - Large Solid Chest (153464)'),
+(@OGUID+378, @PGUID+96, 0, 'DM West - Large Mithril Bound Chest (153469)'),
+(@OGUID+379, @PGUID+98, 0, 'DM North - Large Solid Chest (153464)'),
+(@OGUID+380, @PGUID+98, 0, 'DM North - Large Mithril Bound Chest (153469)'),
+(@OGUID+381, @PGUID+99, 0, 'DM North - Large Solid Chest (153464)'),
+(@OGUID+382, @PGUID+99, 0, 'DM North - Large Mithril Bound Chest (153469)');
 
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (179548, @PGUID+82, 0, 'DM - Dusty Tome (179548)');
@@ -2405,12 +2422,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+10, 142145, 429, -77.444, -438.764, -58.612, 2.79252, 0, 0, 0.984807, 0.173652, 7200, 7200, 255, 1), -- Gromsblood
 (@OGUID+11, 142145, 429, 39.6528, -322.045, -52.2932, 1.25664, 0, 0, 0.587786, 0.809016, 7200, 7200, 255, 1), -- Gromsblood
 (@OGUID+12, 142145, 429, 38.4777, -391.213, -58.6108, 1.32645, 0, 0, 0.615661, 0.788011, 7200, 7200, 255, 1), -- Gromsblood
-(@OGUID+13, 153464, 429, 43.2012, -383.143, -58.6196, -1.72787, 0, 0, -0.760404, 0.64945, 7200, 7200, 255, 1), -- Large Solid Chest
-(@OGUID+14, 153464, 429, 122.562, 392.1, 28.601, 3.07177, 0, 0, 0.999391, 0.0349043, 7200, 7200, 255, 1), -- Large Solid Chest
-(@OGUID+15, 153464, 429, 582.929, 608.082, -25.4027, -2.56563, 0, 0, -0.958819, 0.284017, 7200, 7200, 255, 1), -- Large Solid Chest
-(@OGUID+16, 153464, 429, -95.0448, 367.08, -3.48702, -1.32645, 0, 0, -0.615661, 0.788011, 7200, 7200, 255, 1), -- Large Solid Chest
-(@OGUID+17, 153464, 429, 335.605, 366.155, 2.85293, -2.61799, 0, 0, -0.965925, 0.258821, 7200, 7200, 255, 1), -- Large Solid Chest
-(@OGUID+18, 153469, 429, -16.1474, -383.786, -58.62, -1.32645, 0, 0, -0.615661, 0.788011, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+-- 13 - 18
 (@OGUID+19, 175404, 429, 263.743, -266.911, -59.9769, 2.94959, 0, 0, 0.995396, 0.0958512, 7200, 7200, 255, 1), -- Rich Thorium Vein
 (@OGUID+20, 175404, 429, 255.189, -358.638, -107.365, 2.61799, 0, 0, 0.965925, 0.258821, 7200, 7200, 255, 1), -- Rich Thorium Vein
 (@OGUID+21, 175404, 429, 277.033, -348.927, -101.016, 0.750491, 0, 0, 0.366501, 0.930418, 7200, 7200, 255, 1), -- Rich Thorium Vein
@@ -2762,7 +2774,19 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+367, 179701, 429, -38.94, 812.86, -29.53, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Circle Loc (spell focus)
 (@OGUID+368, 179675, 429, -38.94, 812.85, -29.53, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Warlock Mount Quest Portal Spell Focus
 (@OGUID+369, 181047, 429, 263.38, -452.69, -119.96, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Isalien Brazier Spell Focus
-(@OGUID+370, 181096, 429, 263.38, -452.69, -119.96, 0, 0, 0, 0, 0, 180, 180, 0, 1); -- Brazier of Invocation Spell Focus 20 yd
+(@OGUID+370, 181096, 429, 263.38, -452.69, -119.96, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Brazier of Invocation Spell Focus 20 yd
+(@OGUID+371, 153464, 429, 43.20124, -383.1431, -58.6196, -1.727875, 0, 0, -0.7604055, 0.6494485, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+372, 153469, 429, 43.20124, -383.1431, -58.6196, -1.727875, 0, 0, -0.7604055, 0.6494485, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+373, 153464, 429, -16.1474, -383.786, -58.62, -1.32645, 0, 0, -0.615661, 0.788011, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+374, 153469, 429, -16.1474, -383.786, -58.62, -1.32645, 0, 0, -0.615661, 0.788011, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+375, 153464, 429, 122.5737, 366.941, -3.483817, 2.897245, 0, 0, 0.9925461, 0.12187, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+376, 153469, 429, 122.5737, 366.941, -3.483817, 2.897245, 0, 0, 0.9925461, 0.12187, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+377, 153464, 429, -95.0448, 367.08, -3.48702, -1.32645, 0, 0, -0.615661, 0.788011, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+378, 153469, 429, -95.0448, 367.08, -3.48702, -1.32645, 0, 0, -0.615661, 0.788011, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+379, 153464, 429, 582.9288, 608.0823, -25.40273, -2.565632, 0, 0, -0.9588194, 0.2840165, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+380, 153469, 429, 582.9288, 608.0823, -25.40273, -2.565632, 0, 0, -0.9588194, 0.2840165, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+381, 153464, 429, 335.605, 366.155, 2.85293, -2.61799, 0, 0, -0.965925, 0.258821, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+382, 153469, 429, 335.605, 366.155, 2.85293, -2.61799, 0, 0, -0.965925, 0.258821, 86400, 86400, 255, 1); -- Large Mithril Bound Chest
 
 -- ======
 -- EVENTS

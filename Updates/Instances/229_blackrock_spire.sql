@@ -1412,12 +1412,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+38, 136964, 229, 82.5879, -364.586, 116.859, 2.72271, 0, 0, 0, 0, 120, 120, 0, 1), -- Bonfire
 (@OGUID+39, 136965, 229, 215.773, -341.663, 76.8612, 1.92859, 0, 0, 0.821647, 0.569997, 120, 120, 0, 1), -- Bonfire
 (@OGUID+40, 136966, 229, 229.028, -307.81, 76.9668, 2.72271, 0, 0, 0.978148, 0.207912, 120, 120, 0, 1), -- Bonfire
-(@OGUID+41, 153464, 229, -36.1176, -583.828, -18.8201, 1.97222, 0, 0, 0, 0, 86400, 86400, 0, 1), -- Large Solid Chest
-(@OGUID+42, 153464, 229, 183.647, -369.15, 117.143, 2.44346, 0, 0, 0.939692, 0.342021, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+43, 153469, 229, -73.9985, -453.335, -18.935, -3.08918, 0, 0, 0, 0, 86400, 86400, 0, 1), -- Large Mithril Bound Chest
-(@OGUID+44, 153469, 229, -84.2677, -350.104, 70.9524, 1.91986, 0, 0, 0, 0, 86400, 86400, 0, 1), -- Large Mithril Bound Chest
-(@OGUID+45, 153469, 229, 86.8551, -587.501, 30.6085, 2.63544, 0, 0, 0, 0, 86400, 86400, 0, 1), -- Large Mithril Bound Chest
-(@OGUID+46, 153469, 229, -20.2914, -361.811, 50.6356, -1.64061, 0, 0, -0.731354, 0.681998, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+-- 41 - 46
 (@OGUID+47, 164725, 229, 126.879, -319.109, 70.935, 3.14159, 0, 0, 1, 0, 180, 180, 100, 1), -- Dragonspine Door
 (@OGUID+48, 164726, 229, 108.036, -420.331, 110.954, 3.14159, 0, 0, 1, 0, 180, 180, 100, 0), -- Doodad_PortcullisActive01
 (@OGUID+49, 175124, 229, 208.798, -433.633, 110.888, -2.82743, 0, 0, 0, 1, 300, 300, 255, 1), -- Rookery Egg
@@ -1771,7 +1766,27 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+397, 181046, 229, -23.97, -451.98, -18.64, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Mor Grayhoof Brazier Spell Focus
 (@OGUID+398, 181050, 229, 25.92, -537.7, 110.93, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Lord Valthalak Brazier Spell Focus
 (@OGUID+399, 181096, 229, -23.97, -451.98, -18.64, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Brazier of Invocation Spell Focus 20 yd
-(@OGUID+400, 181096, 229, 25.92, -537.7, 110.93, 0, 0, 0, 0, 0, 180, 180, 0, 1); -- Brazier of Invocation Spell Focus 20 yd
+(@OGUID+400, 181096, 229, 25.92, -537.7, 110.93, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Brazier of Invocation Spell Focus 20 yd
+(@OGUID+401, 153464, 229, -36.1176, -583.828, -18.8201, 1.97222, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+402, 153469, 229, -36.1176, -583.828, -18.8201, 1.97222, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+403, 153464, 229, -39.64638, -472.5804, -18.76505, -1.466076, 0, 0, -0.6691303, 0.743145, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+404, 153469, 229, -39.64638, -472.5804, -18.76505, -1.466076, 0, 0, -0.6691303, 0.743145, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+405, 153464, 229, -73.9985, -453.335, -18.935, -3.08918, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+406, 153469, 229, -73.9985, -453.335, -18.935, -3.08918, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+407, 153464, 229, -110.6121, -423.6278, -18.935, -2.879789, 0, 0, -0.9914446, 0.1305283, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+408, 153469, 229, -110.6121, -423.6278, -18.935, -2.879789, 0, 0, -0.9914446, 0.1305283, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+409, 153464, 229, -64.86904, -586.8962, 29.19087, 0.8901166, 0, 0, 0.4305105, 0.9025856, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+410, 153469, 229, -64.86904, -586.8962, 29.19087, 0.8901166, 0, 0, 0.4305105, 0.9025856, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+411, 153464, 229, 86.8551, -587.501, 30.6085, 2.63544, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+412, 153469, 229, 86.8551, -587.501, 30.6085, 2.63544, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+413, 153464, 229, -20.29138, -361.8112, 50.63561, -1.64061, 0, 0, -0.7313538, 0.6819983, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+414, 153469, 229, -20.29138, -361.8112, 50.63561, -1.64061, 0, 0, -0.7313538, 0.6819983, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+415, 153464, 229, -84.2677, -350.104, 70.9524, 1.91986, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+416, 153469, 229, -84.2677, -350.104, 70.9524, 1.91986, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+417, 153464, 229, 171.163, -290.7762, 110.9421, 3.089183, 0, 0, 0.9996567, 0.02620165, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+418, 153469, 229, 171.163, -290.7762, 110.9421, 3.089183, 0, 0, 0.9996567, 0.02620165, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+419, 153464, 229, 183.6473, -369.1504, 117.1433, 2.44346, 0, 0, 0.9396925, 0.3420205, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+420, 153469, 229, 183.6473, -369.1504, 117.1433, 2.44346, 0, 0, 0.9396925, 0.3420205, 86400, 86400, 255, 1); -- Large Mithril Bound Chest
 
 -- ======
 -- EVENTS
@@ -1792,7 +1807,17 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+81, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #1'),
+(@PGUID+82, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #2'),
+(@PGUID+83, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #3'),
+(@PGUID+84, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #4'),
+(@PGUID+85, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #5'),
+(@PGUID+86, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #6'),
+(@PGUID+87, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #7'),
+(@PGUID+88, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #8'),
+(@PGUID+89, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #9'),
+(@PGUID+90, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #10');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Jed Runewatcher (10509) Blackrock Spire'),
@@ -1806,8 +1831,17 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+9, 1, 'Lower Blackrock Spire - Tazz Alaor patrol'),
 (@PGUID+10, 1, 'Lower Blackrock Spire - Tazz Alaor patrol'),
 (@PGUID+11, 1, 'LBRS - Bannok Grimaxe'),
-(@PGUID+98, 1, 'LBRS - Master Chest Pool'),
-(@PGUID+99, 2, 'UBRS - Master Chest Pool');
+(@PGUID+80, 3, 'Blackrock Spire - Master Chest Pool'),
+(@PGUID+81, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #1'),
+(@PGUID+82, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #2'),
+(@PGUID+83, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #3'),
+(@PGUID+84, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #4'),
+(@PGUID+85, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #5'),
+(@PGUID+86, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #6'),
+(@PGUID+87, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #7'),
+(@PGUID+88, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #8'),
+(@PGUID+89, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #9'),
+(@PGUID+90, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #10');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+395, @PGUID+1, 70, 'Alternate creature to Jed Runewatcher (10509) Blackrock Spire'),
@@ -1835,12 +1869,26 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+41, @PGUID+98, 0, 'LBRS - Large Solid Chest (153464)'),
-(@OGUID+42, @PGUID+98, 0, 'LBRS - Large Solid Chest (153464)'),
-(@OGUID+43, @PGUID+99, 0, 'UBRS - Large Mithril Bound Chest (153469)'),
-(@OGUID+44, @PGUID+99, 0, 'UBRS - Large Mithril Bound Chest (153469)'),
-(@OGUID+45, @PGUID+99, 0, 'UBRS - Large Mithril Bound Chest (153469)'),
-(@OGUID+46, @PGUID+99, 0, 'UBRS - Large Mithril Bound Chest (153469)');
+(@OGUID+401, @PGUID+81, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+402, @PGUID+81, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
+(@OGUID+403, @PGUID+82, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+404, @PGUID+82, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
+(@OGUID+405, @PGUID+83, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+406, @PGUID+83, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
+(@OGUID+407, @PGUID+84, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+408, @PGUID+84, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
+(@OGUID+409, @PGUID+85, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+410, @PGUID+85, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
+(@OGUID+411, @PGUID+86, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+412, @PGUID+86, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
+(@OGUID+413, @PGUID+87, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+414, @PGUID+87, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
+(@OGUID+415, @PGUID+88, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+416, @PGUID+88, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
+(@OGUID+417, @PGUID+89, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+418, @PGUID+89, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
+(@OGUID+419, @PGUID+90, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
+(@OGUID+420, @PGUID+90, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)');
 
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (175334, @PGUID+3, 0, 'Bijous Belongings'),
