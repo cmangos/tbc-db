@@ -355,6 +355,7 @@ DELETE FROM `creature_addon` WHERE `guid` IN (7803,7220,8193,8191,8189,8180,8176
 
 -- Move spawns to other guid
 DELETE FROM `creature` WHERE `id` IN (17071,23270);
+DELETE FROM `creature` WHERE `guid` IN (86137,84588);
 DELETE FROM `creature` WHERE `guid` IN (6090,9411,26009,34055);
 DELETE FROM `creature` WHERE `guid` IN (97116,97117,97118,97119,97120);
 DELETE FROM `creature` WHERE `guid` BETWEEN 8041 AND 8165; -- delete Squirels that arent overwritten
