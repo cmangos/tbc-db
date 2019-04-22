@@ -15950,7 +15950,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2009510','20095','0','0','100','1','8000','14000','20000','30000','0','0','11','37786','0','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Cast Bloodmaul Rage'),
 ('2009511','20095','8','0','100','1','37786','-1','0','0','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Grimnok Battleborn - Random Say on Bloodmaul Rage Spellhit'),
 ('2009512','20095','0','0','100','1','0','5000','10000','11000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Grimnok Battleborn - Cast Cleave'),
--- Lashh'an Kaliri 20109 NSR
+-- Lashh'an Kaliri 20109 - ss.37576 - 8602 - %s goes into a rage after seeing its master fall in battle!
 -- Lashh'an Matriarch 20113
 ('2011301','20113','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Lashh''an Matriarch - Enable Range Mode on Aggro'),
 ('2011302','20113','0','0','100','1025','3000','4600','10000','11000','0','0','11','37579','1','32','0','0','0','0','0','0','0','0','Lashh''an Matriarch - Cast Impending Doom'),
