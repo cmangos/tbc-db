@@ -1,5 +1,5 @@
 -- Correct Stats for Large Solid Chest 153464 & Large Mithril Bound Chest 153469
-UPDATE `gameobject_template` SET `Faction` = 94, `mingold` = 2100, `maxgold` = 2300 WHERE `entry` = 153464 OR 153469; -- Gold: 2273 in sniff
+UPDATE `gameobject_template` SET `Faction` = 94, `mingold` = 2100, `maxgold` = 2300 WHERE `entry` = 153464 OR `entry` = 153469; -- Gold: 2273 in sniff
 
 -- also Add "Locked" Flag for "Bound", which require lockpicking skill
 UPDATE `gameobject_template` SET `flags` = `flags`|2 WHERE `entry` IN (
