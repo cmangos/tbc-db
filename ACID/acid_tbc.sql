@@ -13439,14 +13439,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Primestone 15570
 -- Elder Bladesing 15599
 -- Cenarion Scout Landion 15609
-('1560901','15609','1','0','100','0','1000','8000','0','0','0','0','11','6718','0','34','0','0','0','0','0','0','0','0','Cenarion Scout Landion - Cast Phasing Stealth OOC'),
-('1560902','15609','4','0','100','0','0','0','0','0','0','0','28','0','6718','0','0','0','0','0','0','0','0','0','Cenarion Scout Landion - Remove Phasing Stealth on Aggro'),
+('1560901','15609','11','0','100','0','0','0','0','0','0','0','11','6718','0','34','0','0','0','0','0','0','0','0','Cenarion Scout Landion - Cast Phasing Stealth on Spawn'),
 -- Cenarion Scout Azenel 15610
-('1561001','15610','1','0','100','0','1000','8000','0','0','0','0','11','6718','0','34','0','0','0','0','0','0','0','0','Cenarion Scout Azenel - Cast Phasing Stealth OOC'),
-('1561002','15610','4','0','100','0','0','0','0','0','0','0','28','0','6718','0','0','0','0','0','0','0','0','0','Cenarion Scout Azenel - Remove Phasing Stealth on Aggro'),
+('1561001','15610','11','0','100','0','0','0','0','0','0','0','11','6718','0','34','0','0','0','0','0','0','0','0','Cenarion Scout Azenel - Cast Phasing Stealth on Spawn'),
 -- Cenarion Scout Jalia 15611
-('1561101','15611','1','0','100','0','1000','8000','0','0','0','0','11','6718','0','34','0','0','0','0','0','0','0','0','Cenarion Scout Jalia - Cast Phasing Stealth OOC'),
-('1561102','15611','4','0','100','0','0','0','0','0','0','0','28','0','6718','0','0','0','0','0','0','0','0','0','Cenarion Scout Jalia - Remove Phasing Stealth on Aggro'),
+('1561101','15611','11','0','100','0','0','0','0','0','0','0','11','6718','0','34','0','0','0','0','0','0','0','0','Cenarion Scout Jalia - Cast Phasing Stealth on Spawn'),
 -- Krug Skullsplit 15612
 -- Merok Longstride 15613
 -- J.D. Shadesong 15614
