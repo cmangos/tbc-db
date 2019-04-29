@@ -50,7 +50,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(5226, 0, 0, 1, 16, 0, 0, NULL), -- Murk Worm
+(5226, 0, 0, 1, 16, 0, 0, '8601'), -- Murk Worm
 (5228, 0, 0, 1, 16, 0, 0, NULL), -- Saturated Ooze
 (5256, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Warrior
 (5259, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Witch Doctor
@@ -60,7 +60,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (5270, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Corpse Eater
 (5271, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Deathwalker
 (5273, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai High Priest
-(5277, 0, 0, 1, 16, 0, 0, NULL), -- Nightmare Scalebane
+(5277, 0, 0, 1, 16, 0, 0, '12099'), -- Nightmare Scalebane
 (5280, 0, 0, 1, 16, 0, 0, NULL), -- Nightmare Wyrmkin
 (5283, 0, 0, 1, 16, 0, 0, NULL), -- Nightmare Wanderer
 (5291, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Frostwing

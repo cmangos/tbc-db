@@ -671,7 +671,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (7272, 0, 0, 1, 16, 0, 0, NULL), -- Theka the Martyr
 (7274, 0, 0, 1, 16, 0, 0, NULL), -- Sandfury Executioner
 (7604, 0, 0, 1, 16, 0, 0, NULL), -- Sergeant Bly
-(7605, 0, 0, 1, 16, 0, 0, '7276'), -- Raven
+(7605, 0, 0, 1, 16, 0, 0, '3616'), -- Raven
 (7606, 0, 0, 1, 16, 0, 0, NULL), -- Oro Eyegouge
 (7607, 0, 0, 1, 16, 0, 0, NULL), -- Weegli Blastfuse
 (7608, 0, 0, 1, 16, 0, 0, NULL), -- Murta Grimgut

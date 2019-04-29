@@ -743,7 +743,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (11453, 0, 0, 1, 0, 0, 0, NULL), -- Wildspawn Trickster
 (11454, 0, 0, 1, 0, 0, 0, NULL), -- Wildspawn Betrayer
 (11455, 0, 0, 1, 0, 0, 0, '22418'), -- Wildspawn Felsworn
-(11456, 0, 0, 1, 16, 0, 0, '22766'), -- Wildspawn Shadowstalker
+(11456, 0, 0, 1, 16, 0, 0, '8601 18950 22766'), -- Wildspawn Shadowstalker
 (11457, 0, 0, 1, 0, 0, 0, '13377'), -- Wildspawn Hellcaller
 (11458, 0, 0, 1, 0, 0, 0, NULL), -- Petrified Treant
 (11459, 0, 0, 1, 0, 0, 0, NULL), -- Ironbark Protector

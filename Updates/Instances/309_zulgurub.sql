@@ -458,7 +458,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (14509, 0, 0, 1, 16, 0, 0, NULL), -- High Priest Thekal
 (14510, 0, 0, 1, 16, 0, 0, NULL), -- High Priestess Mar'li
 (14517, 0, 0, 1, 16, 0, 0, NULL), -- High Priestess Jeklik
-(14532, 0, 0, 1, 16, 0, 0, NULL), -- Razzashi Venombrood
+(14532, 0, 0, 1, 16, 0, 0, '8601'), -- Razzashi Venombrood
 (14750, 0, 0, 1, 16, 0, 0, NULL), -- Gurubashi Bat Rider
 (14758, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Gurub Trigger
 (14821, 0, 0, 1, 16, 0, 0, '8876'), -- Razzashi Raptor

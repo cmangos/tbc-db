@@ -73,6 +73,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+39, 10, 8.187, -127.348, -123.845, 5.134, 0, 0),
 (@CGUID+39, 11, 62.416, -207.188, -109.659, 1.94569, 0, 0),
 (@CGUID+39, 12, 79.0383, -255.555, -108.677, 5.96536, 0, 0),
+(@CGUID+139, 1, 870.034, -329.385, -48.798, 0.279253, 1, 1179001),
 (@CGUID+162, 1, 742.923, -127.961, -56.2506, 3.29867, 1, 1179101),
 (@CGUID+163, 1, 739.91, -122.194, -56.5653, 3.97935, 1, 1179101),
 (@CGUID+164, 1, 758.122, -42.8355, -55.9574, 2.1293, 1, 1179101),
@@ -534,10 +535,10 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (11784, 0, 0, 1, 16, 0, 0, NULL), -- Theradrim Guardian
 (11789, 0, 0, 1, 16, 0, 0, '8876'), -- Deep Borer
-(11790, 0, 0, 1, 16, 0, 0, NULL), -- Putridus Satyr
-(11791, 0, 0, 1, 16, 0, 0, '3417 13299'), -- Putridus Trickster
+(11790, 0, 0, 1, 16, 0, 0, '21061'), -- Putridus Satyr
+(11791, 0, 0, 1, 16, 0, 0, '3417 13299 21061'), -- Putridus Trickster
 (11792, 0, 33554432, 1, 16, 0, 0, '1785'), -- Putridus Shadowstalker
-(11793, 0, 0, 1, 16, 0, 0, NULL), -- Celebrian Dryad
+(11793, 0, 0, 1, 16, 0, 0, '8601'), -- Celebrian Dryad
 (11794, 0, 0, 1, 16, 0, 0, NULL), -- Sister of Celebrian
 (12201, 0, 0, 1, 16, 0, 0, '8876'), -- Princess Theradras
 (12203, 0, 0, 1, 16, 0, 0, NULL), -- Landslide
@@ -719,7 +720,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+136, 11789, 349, -145.74, -339.411, -170.336, 1.97222, 7200, 7200, 2, 0, 0, 1), -- Deep Borer
 (@CGUID+137, 11789, 349, -147.693, -330.588, -170.336, 0.558505, 7200, 7200, 2, 0, 0, 1), -- Deep Borer
 (@CGUID+138, 11789, 349, -111.448, -320.95, -170.418, 1.83066, 7200, 7200, 2, 0, 0, 1), -- Deep Borer
-(@CGUID+139, 11790, 349, 870.034, -329.385, -48.798, 0.279253, 7200, 7200, 0, 0, 0, 0), -- Putridus Satyr
+(@CGUID+139, 11790, 349, 870.034, -329.385, -48.798, 0.279253, 7200, 7200, 0, 0, 0, 2), -- Putridus Satyr
 (@CGUID+140, 11790, 349, 805.145, -337.727, -51.5528, 3.83972, 7200, 7200, 0, 0, 0, 0), -- Putridus Satyr
 (@CGUID+141, 11790, 349, 834.136, -356.258, -51.9663, 0.890118, 7200, 7200, 0, 0, 0, 0), -- Putridus Satyr
 (@CGUID+142, 11790, 349, 899.811, -417.652, -52.9225, 2.60054, 7200, 7200, 0, 0, 0, 0), -- Putridus Satyr
@@ -1318,6 +1319,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1179101,1371601,1371602,1371603,1353301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1179001, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Putridus Satyr - Cast Dark Channeling'),
 (1179101, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Putridus Trickster - Cast Dark Channeling'),
 
 (1371601, 3, 0, 0, 0, 0, 0, 0, 0, 2000005649, 0, 0, 0, 0, 0, 0, 0, ''),

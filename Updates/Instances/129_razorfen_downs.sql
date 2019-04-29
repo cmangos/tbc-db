@@ -141,8 +141,8 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (7327, 0, 0, 1, 16, 0, 0, NULL), -- Withered Warrior
 (7328, 0, 0, 1, 16, 0, 0, NULL), -- Withered Reaver
-(7329, 0, 0, 1, 16, 0, 0, NULL), -- Withered Quilguard
-(7332, 0, 0, 1, 16, 0, 0, NULL), -- Withered Spearhide
+(7329, 0, 0, 1, 16, 0, 0, '11441'), -- Withered Quilguard
+(7332, 0, 0, 1, 16, 0, 0, '12246'), -- Withered Spearhide
 (7333, 0, 0, 1, 16, 0, 0, NULL), -- Withered Battle Boar
 (7334, 0, 0, 1, 16, 0, 0, NULL), -- Battle Boar Horror
 (7335, 0, 0, 1, 16, 0, 0, NULL), -- Death's Head Geomancer
@@ -153,16 +153,19 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (7344, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Warrior
 (7345, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Captain
 (7346, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Centurion
-(7347, 0, 0, 1, 16, 0, 0, NULL), -- Boneflayer Ghoul
-(7348, 0, 0, 1, 16, 0, 0, NULL), -- Thorn Eater Ghoul
-(7352, 0, 0, 1, 16, 0, 0, NULL), -- Frozen Soul
-(7353, 0, 0, 1, 16, 0, 0, NULL), -- Freezing Spirit
+(7347, 0, 0, 1, 16, 0, 0, '12539'), -- Boneflayer Ghoul
+(7348, 0, 0, 1, 16, 0, 0, '12539'), -- Thorn Eater Ghoul
+(7349, 0, 0, 1, 16, 0, 0, '3616'), -- Tomb Fiend
+(7351, 0, 0, 1, 16, 0, 0, '12254'), -- Tomb Reaver
+(7352, 0, 0, 1, 16, 0, 0, '12529'), -- Frozen Soul
+(7353, 0, 0, 1, 16, 0, 0, '12529'), -- Freezing Spirit
 (7354, 0, 0, 1, 16, 0, 0, NULL), -- Ragglesnout
 (7355, 0, 0, 1, 16, 0, 0, '8876 12254'), -- Tuten'kash
+(7356, 0, 0, 1, 16, 0, 0, '12947'), -- Plaguemaw the Rotting
 (7357, 0, 0, 1, 16, 10, 0, NULL), -- Mordresh Fire Eye
-(7358, 0, 0, 1, 16, 0, 0, NULL), -- Amnennar the Coldbringer
-(8516, 0, 0, 1, 16, 0, 0, NULL), -- Belnistrasz
-(8567, 0, 0, 1, 16, 0, 0, '12627'), -- Glutton
+(7358, 0, 0, 1, 16, 0, 0, '12556'), -- Amnennar the Coldbringer
+(8516, 0, 0, 1, 16, 0, 0, '13326'), -- Belnistrasz
+(8567, 0, 0, 1, 16, 0, 0, '8876 12627'), -- Glutton
 (8662, 0, 0, 1, 16, 0, 0, NULL), -- Idol Oven Fire Target
 (8696, 0, 0, 1, 16, 0, 0, NULL), -- Henry Stern
 (8767, 0, 0, 1, 16, 0, 0, NULL); -- Sah'rhee
