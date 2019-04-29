@@ -1957,7 +1957,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lars (893) - NSR
 -- Nightbane Worgen (898) - NSR
 -- Defias Night Blade 909 (3.0.3 Official Data)
-('90901','909','11','0','100','0','1000','1000','0','0','0','0','11','3616','0','34','11','8601','0','34','0','0','0','0','Defias Night Blade - Cast Poison Proc and Slowing Poison on Spawn'),
+('90901','909','11','0','100','0','0','0','0','0','0','0','11','3616','0','34','11','8601','0','34','0','0','0','0','Defias Night Blade - Cast Poison Proc and Slowing Poison on Spawn'),
 ('90902','909','33','0','70','1','0','0','3900','12700','0','0','11','2589','4','0','0','0','0','0','0','0','0','0','Defias Night Blade - Cast Backstab on Facing Target Back'),
 ('90903','909','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Night Blade - Flee at 15% HP'),
 -- Defias Enchanter 910 (3.0.3 Official Data)
