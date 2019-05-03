@@ -29441,7 +29441,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1167501','11675','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Snowblind Windcaller - Enable Range Mode on Aggro'),
 ('1167502','11675','0','0','100','1025','5000','8000','12000','16000','0','0','11','6728','5','0','0','0','0','0','0','0','0','0','Snowblind Windcaller - Cast Enveloping Winds'),
 ('1167503','11675','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Snowblind Windcaller - Cast Lightning Bolt'),
--- Taskmaster Snivvle
+-- Taskmaster Snivvle 11677
 ('1167701','11677','1','0','100','0','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Taskmaster Snivvle - Cast Thrash OOC'),
 ('1167702','11677','4','0','100','0','0','0','0','0','0','0','1','-654','0','0','0','0','0','0','0','0','0','0','Taskmaster Snivvle - Say on Aggro'),
 ('1167703','11677','0','0','100','1','3000','6000','6000','9000','0','0','11','14516','1','0','0','0','0','0','0','0','0','0','Taskmaster Snivvle - Cast Strike'),
@@ -30698,7 +30698,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-648','%s lets out a deep roar, alerting nearby allies and becoming enraged!','0','2','0','Dire Maul Guards','0'),
 ('-649','%s goes into a drunken rage!','0','2','0','14322','0'),
 -- Classic PLEASE RE-USE 650 - 653
-('-654','Snivvle is here! Snivvle claims the Coldtooth Mine!','0','0','0','11677','0'),
+('-654','Snivvle is here!  Snivvle claims the Coldtooth mine!','0','1','0','11677','0'),
 -- Classic PLEASE RE-USE 655 - 657
 ('-658','The numbers of my companions dwindles, goddess, and my own power shall soon be insufficient to hold back the demons of Felwood.','0','0','0','3946','0'),
 ('-659','Goddess, grant me the power to overcome my enemies! Hear me, please, my need is desperate and my cause is just!','0','0','0','3946','0'),
