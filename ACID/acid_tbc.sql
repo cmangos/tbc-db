@@ -29583,7 +29583,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1318106','13181','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Wing Commander Mulverick - Set Phase 0 on Evade'),
 -- Gaelden Hammersmith (13216) - NSR
 -- Grunnda Wolfheart (13218) - NSR
--- Primalist Thurloga 13236 - No Main Spell in Melee Range
+-- Primalist Thurloga 13236 - No Main Spell in Melee Range ss.21353 Mount Speed Buff DND (at the position after summoned boss?)
 ('1323601','13236','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Primalist Thurloga - Enable Range Mode on Aggro'),
 ('1323602','13236','2','0','100','1025','30','0','15000','22000','0','0','11','15982','0','0','0','0','0','0','0','0','0','0','Primalist Thurloga - Cast Healing Wave at 30% HP'),
 ('1323603','13236','2','0','100','1025','50','0','48000','60000','0','0','11','15786','0','0','0','0','0','0','0','0','0','0','Primalist Thurloga - Cast Earthbind Totem at 50% HP'),
