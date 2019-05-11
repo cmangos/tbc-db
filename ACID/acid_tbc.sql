@@ -23142,7 +23142,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1144502','11445','0','0','100','1','4200','9600','6100','16300','0','0','11','22574','1','0','0','0','0','0','0','0','0','0','Gordok Captain - Cast Dark Strike'),
 ('1144503','11445','0','0','100','1','8700','9500','11100','20600','0','0','11','16244','0','1','0','0','0','0','0','0','0','0','Gordok Captain - Cast Demoralizing Shout'),
 ('1144504','11445','0','0','100','1','9000','15000','16000','21000','0','0','11','12096','5','1','0','0','0','0','0','0','0','0','Gordok Captain - Cast Fear'),
--- Gordok Spirit (11446) - NSR
+-- Gordok Spirit 11446 - should have NullAI + Invincible
+('1144601','11446','11','0','100','0','0','0','0','0','0','0','20','0','0','0','21','0','0','0','42','1','0','0','Gordok Spirit - Stop Melee and Combat Movement and Set Invincible on Spawn'),
 -- Mushgog (11447)
 -- Gordok Warlock 11448 (3.3.3 Official Data)
 ('1144801','11448','11','0','100','0','0','0','0','0','0','0','11','22865','0','0','0','0','0','0','0','0','0','0','Gordok Warlock - Cast Summon Doomguard on Spawn'),
