@@ -31800,7 +31800,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10799','%s casts a spell to draw magical attacks away from his allies.','0','2','0','22242','0'),
 ('-10800','WUT! DA KING IS BACK, BABY!','0','0','0','22826','0'),
 ('-10801','In Outland, lunch open prison for you! What a world! Time to eat!','0','0','0','22826','0'),
-('-10802','The surface of the %s begins to bubble.','0','0','0','16901','0'),
+('-10802','The surface of the %s begins to bubble.','0','2','0','16901','0'),
 ('-10803','Hey folks, go easy on me... it\'s my first time.','0','0','0','19228','24'),
 ('-10804','I never met a tauren I didn\'t like...','0','0','0','19228','1'),
 ('-10805','To eat!!','0','0','0','19228','5'),
