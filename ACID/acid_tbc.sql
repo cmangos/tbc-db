@@ -17050,6 +17050,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1692904','16929','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Stonescythe Alpha - Set Phase 0 on Evade'),
 -- Razorfang Hatchling
 ('1693201','16932','0','0','100','1','4000','8000','8000','12000','0','0','11','33781','1','0','0','0','0','0','0','0','0','0','Razorfang Hatchling - Cast Ravage'),
+('1693202','16932','2','0','100','0','20','0','0','0','0','0','25','0','0','0','54','-11181','0','0','0','0','0','0','Razorfang Hatchling - Flee and Emote at 20% HP'),
 -- Razorfang Ravager
 ('1693301','16933','0','0','100','1','4000','8000','8000','12000','0','0','11','33781','1','0','0','0','0','0','0','0','0','0','Razorfang Ravager - Cast Ravage'),
 -- Quillfang Ravager 16934
@@ -32112,6 +32113,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11178','You will succeed only in damning yourselves!','0','0','0','16544/16545','0'),
 ('-11179','%s arises to fight once more!','0','2','0','23222/23239','71'),
 ('-11180','%s goes into a killing frenzy!','0','2','0','Bonechewer Brawler 23222','0'),
+('-11181','%s attempts to flee to a nearby ravager.','0','2','0','16932','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
