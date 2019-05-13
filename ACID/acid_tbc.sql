@@ -17019,6 +17019,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Unyielding Knight
 ('1690601','16906','9','0','100','0','8','25','0','0','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Unyielding Knight - Cast Charge'),
 ('1690602','16906','14','0','100','1','2000','40','22000','22000','0','0','11','33910','12','0','0','0','0','0','0','0','0','0','Unyielding Knight - Cast Heal Other on Friendly Missing HP'),
+('1690603','16906','2','0','100','0','30','0','0','0','0','0','39','40','0','0','1','-551','0','0','0','0','0','0','Unyielding Knight - Call for Help and Emote at 30% HP'),
 -- Bleeding Hollow Peon
 ('1690701','16907','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Bleeding Hollow Peon - Flee at 15% HP'),
 -- Mag'har Watcher
