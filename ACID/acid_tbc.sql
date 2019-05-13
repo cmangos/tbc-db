@@ -17007,7 +17007,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Father Malgor Devidicus
 ('1682501','16825','1','0','100','1','3000','10000','3000','10000','0','0','5','92','0','0','0','0','0','0','0','0','0','0','Father Malgor Devidicus - Drink emote'),
 -- Blistering Rot
-('1690101','16901','0','0','100','1','3000','7000','6000','11000','0','0','11','32722','0','0','0','0','0','0','0','0','0','0','Blistering Rot - Cast Blistering Rot'),
+('1690101','16901','0','2','100','1','3000','7000','6000','11000','0','0','11','32722','0','0','1','-10802','0','0','0','0','0','0','Blistering Rot - Cast Blistering Rot and Emote (Phase 0)'),
+('1690102','16901','2','0','100','0','30','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Blistering Rot - Set Phase 1 at 30% HP'),
+('1690103','16901','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Blistering Rot - Set Phase 0 on Evade'),
 -- Unyielding Footman
 ('1690401','16904','9','0','100','1','0','5','7000','11000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Unyielding Footman - Cast Strike'),
 ('1690402','16904','0','0','100','1','8000','12000','10000','14000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Unyielding Footman - Cast Shield Bash'),
@@ -31798,7 +31800,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10799','%s casts a spell to draw magical attacks away from his allies.','0','2','0','22242','0'),
 ('-10800','WUT! DA KING IS BACK, BABY!','0','0','0','22826','0'),
 ('-10801','In Outland, lunch open prison for you! What a world! Time to eat!','0','0','0','22826','0'),
--- tbc PLEASE RE-USE 10802
+('-10802','The surface of the %s begins to bubble.','0','0','0','16901','0'),
 ('-10803','Hey folks, go easy on me... it\'s my first time.','0','0','0','19228','24'),
 ('-10804','I never met a tauren I didn\'t like...','0','0','0','19228','1'),
 ('-10805','To eat!!','0','0','0','19228','5'),
