@@ -23201,8 +23201,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1145506','11455','9','0','100','1025','0','40','2900','3800','0','0','11','15537','1','256','0','0','0','0','0','0','0','0','Wildspawn Felsworn - Cast Shadow Bolt'),
 -- Wildspawn Shadowstalker 11456 (3.3.3 Official Data) - ss.7939 Sneak
 ('1145601','11456','1','0','100','0','1000','1000','0','0','0','0','11','8601','0','34','11','18950','0','34','11','22766','0','32','Wildspawn Shadowstalker - Cast Slowing Poison and Invisibility and Stealth Detection and Sneak (Rank 1) OOC'),
-('1145602','11456','9','0','100','1','0','30','11600','16400','0','0','11','7992','4','33','0','0','0','0','0','0','0','0','Wildspawn Shadowstalker - Cast Slowing Poison'),
-('1145603','11456','33','0','100','1','0','0','7200','9200','0','0','11','22416','1','0','0','0','0','0','0','0','0','0','Wildspawn Shadowstalker - Cast Backstab on Facing Target Back'),
+('1145602','11456','33','0','100','1','0','0','7200','9200','0','0','11','22416','1','0','0','0','0','0','0','0','0','0','Wildspawn Shadowstalker - Cast Backstab on Facing Target Back'),
 -- Wildspawn Hellcaller 11457 (3.3.3 Official Data)
 ('1145701','11457','1','0','100','0','1000','1000','0','0','0','0','11','13377','0','32','0','0','0','0','0','0','0','0','Wildspawn Hellcaller - Cast Fire Shield OOC'),
 ('1145702','11457','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Wildspawn Hellcaller - Enable Range Mode on Aggro'),
@@ -25174,7 +25173,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Venom Belcher 10417
 ('1041701','10417','11','0','100','0','0','0','0','0','0','0','11','8601','0','34','0','0','0','0','0','0','0','0','Venom Belcher - Cast Slowing Poison on Spawn'),
 ('1041702','10417','9','0','100','1','0','30','4000','7000','0','0','11','16866','1','0','0','0','0','0','0','0','0','0','Venom Belcher - Cast Venom Spit'),
-('1041703','10417','9','0','100','1','0','30','9000','15000','0','0','11','7992','4','33','0','0','0','0','0','0','0','0','Venom Belcher - Cast Slowing Poison'),
 -- Crimson Guardsman 10418 (NEED MORE DATA) - 3.0.8
 ('1041801','10418','0','0','100','0','1000','1000','0','0','0','0','11','15749','4','1','0','0','0','0','0','0','0','0','Crimson Guardsman - Cast Shield Charge on Aggro'),
 ('1041802','10418','0','0','100','1','0','5','12600','16100','0','0','11','6713','4','0','0','0','0','0','0','0','0','0','Crimson Guardsman - Cast Disarm'),
