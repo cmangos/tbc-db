@@ -244,23 +244,27 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Carlo Aurelius (8309) - NSR
 -- Salome (11776) - NSR
 -- Myrokos Silentform (13085) - NSR
--- Thanthaldis Snowgleam (UNOFFICIAL DATA) - NEED OFFICIAL DATA FOR THIS NPC
-('1321701','13217','0','0','100','1','5000','7000','8000','11000','0','0','11','19642','1','1','0','0','0','0','0','0','0','0','Thanthaldis Snowgleam - Cast Cleave'),
-('1321702','13217','0','0','100','1','3000','5000','5000','7000','0','0','11','19644','1','0','0','0','0','0','0','0','0','0','Thanthaldis Snowgleam - Cast Strike'),
--- Jekyll Flandring (UNOFFICIAL DATA) - NEED OFFICIAL DATA FOR THIS NPC
-('1321901','13219','0','0','80','1','1000','1000','7000','7000','0','0','11','11567','1','1','0','0','0','0','0','0','0','0','Jekyll Flandring - Cast Heroic Strike'),
+-- Thanthaldis Snowgleam 13217 (UNOFFICIAL DATA) - NEED OFFICIAL DATA FOR THIS NPC
+('1321701','13217','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Thanthaldis Snowgleam - Cast Thrash on Spawn'),
+('1321702','13217','0','0','100','1','5000','7000','8000','11000','0','0','11','19642','1','1','0','0','0','0','0','0','0','0','Thanthaldis Snowgleam - Cast Cleave'),
+('1321703','13217','0','0','100','1','3000','5000','5000','7000','0','0','11','19644','1','0','0','0','0','0','0','0','0','0','Thanthaldis Snowgleam - Cast Strike'),
+-- Jekyll Flandring 13219 (UNOFFICIAL DATA) - NEED OFFICIAL DATA FOR THIS NPC
+('1321901','13219','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Jekyll Flandring - Cast Thrash on Spawn'),
+('1321902','13219','0','0','80','1','1000','1000','7000','7000','0','0','11','11567','1','1','0','0','0','0','0','0','0','0','Jekyll Flandring - Cast Heroic Strike'),
 -- The Abominable Greench (UNOFFICIAL DATA) - NEED OFFICIAL DATA FOR THIS NPC
 ('1360201','13602','11','0','100','0','0','0','0','0','0','0','1','-366','0','0','0','0','0','0','0','0','0','0','The Abominable Greench - Yell on Spawn'),
 -- Strange Snowman (13636) - NSR
 -- Corporal Teeka Bloodsnarl (13776) - NSR
--- Sergeant Durgen Stormpike (13777) - NSR
+-- Sergeant Durgen Stormpike 13777
+('1377701','13777','11','0','100','0','0','0','0','0','0','0','11','5301','0','34','0','0','0','0','0','0','0','0','Sergeant Durgen Stormpike - Cast Defensive State (DND) on Spawn'),
 -- Prospector Stonehewer (13816) - NSR
 -- Voggah Deathgrip (13817) - NSR
 -- Warmaster Laggrond (UNOFFICIAL DATA) - NEED OFFICIAL DATA FOR THIS NPC
 ('1384001','13840','0','0','100','1','5000','7000','8000','11000','0','0','11','19642','1','1','0','0','0','0','0','0','0','0','Warmaster Laggrond - Cast Cleave'),
 -- Lieutenant Haggerdin (UNOFFICIAL DATA) - NEED OFFICIAL DATA FOR THIS NPC
-('1384101','13841','0','0','100','1','5000','7000','8000','11000','0','0','11','19130','1','0','0','0','0','0','0','0','0','0','Lieutenant Haggerdin - Cast Revenge'),
-('1384102','13841','0','0','100','1','1000','4000','9000','14000','0','0','11','12169','0','1','0','0','0','0','0','0','0','0','Lieutenant Haggerdin - Cast Shield Block'),
+('1384101','13841','11','0','100','0','0','0','0','0','0','0','11','5301','0','34','0','0','0','0','0','0','0','0','Lieutenant Haggerdin - Cast Defensive State (DND) on Spawn'),
+('1384102','13841','0','0','100','1','5000','7000','8000','11000','0','0','11','19130','1','0','0','0','0','0','0','0','0','0','Lieutenant Haggerdin - Cast Revenge'),
+('1384103','13841','0','0','100','1','1000','4000','9000','14000','0','0','11','12169','0','1','0','0','0','0','0','0','0','0','Lieutenant Haggerdin - Cast Shield Block'),
 -- Gravis Slipknot (3.1.1 Official Data)
 ('1422101','14221','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gravis Slipknot - Flee at 15% HP'),
 -- Araga (14222) - NSR
@@ -1106,12 +1110,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('871602','8716','0','0','100','1','9000','12000','18000','23000','0','0','11','13704','0','1','0','0','0','0','0','0','0','0','Dreadlord - Cast Psychic Scream'),
 ('871603','8716','0','0','100','1','7000','9000','30000','35000','0','0','11','12098','5','1','0','0','0','0','0','0','0','0','Dreadlord - Cast Sleep'),
 -- Felguard Elite 8717 (4.0.3 Official Data)
-('871701','8717','1','0','100','0','1000','1000','0','0','0','0','11','19818','0','32','0','0','0','0','0','0','0','0','Felguard Elite - Cast Double Attack OOC'),
+('871701','8717','11','0','100','0','0','0','0','0','0','0','11','19818','0','34','0','0','0','0','0','0','0','0','Felguard Elite - Cast Double Attack on Spawn'),
 ('871702','8717','0','0','100','1','3200','5800','8200','21700','0','0','11','15284','4','0','0','0','0','0','0','0','0','0','Felguard Elite - Cast Cleave'),
 ('871703','8717','0','0','100','1','4400','20700','8600','24500','0','0','11','13737','1','0','0','0','0','0','0','0','0','0','Felguard Elite - Cast Mortal Strike'),
 ('871704','8717','0','0','100','1','8800','15300','10800','29200','0','0','11','16046','0','1','0','0','0','0','0','0','0','0','Felguard Elite - Cast Blast Wave'),
--- Manahound (4.0.3 Official Data)
-('871801','8718','1','0','100','0','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Manahound - Cast Thrash OOC'),
+-- Manahound 8718 (4.0.3 Official Data)
+('871801','8718','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Manahound - Cast Thrash on Spawn'),
 ('871802','8718','9','0','100','1','0','5','21700','33900','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Manahound - Cast Tendon Rip'),
 ('871803','8718','0','0','100','1','2500','13700','6200','18100','0','0','11','20817','0','0','0','0','0','0','0','0','0','0','Manahound - Cast Mana Burn'),
 ('871804','8718','0','0','100','1','3400','8700','6100','20600','0','0','11','14331','1','0','0','0','0','0','0','0','0','0','Manahound - Cast Vicious Rend'),
@@ -9473,7 +9477,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vision of the Prophesied Hero (17452) - NSR
 -- Vision of the Kurken (17453) - NSR
 -- Skunk (17467) - NSR
--- Murgurgula (17475) - NSR
+-- Murgurgula 17475
+('1747501','17475','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Murgurgula - Cast Thrash on Spawn'),
 -- Ruada (17480) - NSR
 -- Semid (17481) - NSR
 -- Guvan (17482) - NSR
@@ -24464,10 +24469,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Skeletal Servant 8477 - NSR
 -- Belnistrasz 8516 - npc_belnistrasz
 -- Glutton 8567
-('856701','8567','11','0','100','0','0','0','0','0','0','0','11','8876','0','34','11','12627','0','34','0','0','0','0','Glutton - Cast Thrash and Disease Cloud on Spawn'),
-('856702','8567','2','0','100','0','50','0','0','0','0','0','11','12795','0','1','1','-539','0','0','0','0','0','0','Glutton - Cast Frenzy at 50% HP'),
-('856703','8567','2','0','100','0','15','0','0','0','0','0','11','12795','0','1','1','-540','0','0','0','0','0','0','Glutton - Cast Frenzy at 15% HP'),
-('856704','8567','4','0','100','0','0','0','0','0','0','0','1','-1565','-1566','0','0','0','0','0','0','0','0','0','Glutton - Yell on Aggro'),
+('856701','8567','1','0','100','0','0','0','0','0','0','0','11','8876','0','34','11','12627','0','34','28','0','12787','0','Glutton - Cast Thrash and Disease Cloud and Remove Thrash OOC'),
+('856702','8567','4','0','100','0','0','0','0','0','0','0','1','-1565','-1566','0','0','0','0','0','0','0','0','0','Glutton - Yell on Aggro'),
+('856703','8567','2','0','100','1024','15','0','0','0','0','0','11','12795','0','34','54','-540','0','0','0','0','0','0','Glutton - Cast Frenzy at 15% HP'),
+('856704','8567','2','0','100','1024','50','0','0','0','0','0','11','12787','0','34','28','0','8876','0','54','-539','0','0','Glutton - Cast Thrash and Remove Thrash at 50% HP'),
 -- Frost Spectre
 ('858501','8585','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Frost Spectre - Forced Despawn on Evade'),
 -- Idol Room Spawner 8611 - ss.12949
@@ -30718,7 +30723,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-531','Take that!  The Drywhiskers will prevail!','0','0','0','Drywhisker','0'),
 ('-532','Stop!  Foolish $c, we cannot let you summon the creature Myzrael!','0','1','0','2763','0'),
 -- Classic PLEASE RE-USE 533 - 538
-('-539','%s is getting hungry!','0','2','0','8567','0'),
+('-539','%s is getting really hungry!','0','2','0','8567','0'),
 ('-540','%s is getting VERY hungry!','0','2','0','8567','0'),
 -- Classic PLEASE RE-USE 541 - 544
 ('-545','Scanning life forms....target not found','0','0','0','14224','0'),

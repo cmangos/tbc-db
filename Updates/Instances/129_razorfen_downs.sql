@@ -3,7 +3,6 @@ DBName: Razorfen Downs
 DBScriptName: instance_razorfen_downs
 DB%Complete: 75
 DBComment:
-* Glutton 8567 has 8876 / 12787 in some sniffs, maybe script related to his "Enrage"
 EndDBScriptData */
 
 SET @CGUID := 1290000; -- creatures
