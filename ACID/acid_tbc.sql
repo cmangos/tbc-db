@@ -13497,12 +13497,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1776501','17765','4','0','100','0','0','30','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Dismounting Blast on Aggro'),
 ('1776502','17765','9','0','100','1','0','5','12000','14000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Mortal Strike'),
 ('1776503','17765','0','0','100','1','6000','8000','22000','24000','0','0','11','18328','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Incapacitating Shout'),
-('1776504','17765','13','0','100','1','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel -  Cast Shield Bash on Target Casting'),
+('1776504','17765','13','0','100','1','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Alliance Silithyst Sentinel - Cast Shield Bash on Target Casting'),
 -- Horde Silithyst Sentinel 17766
 ('1776601','17766','4','0','100','0','0','30','0','0','0','0','11','18396','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Dismounting Blast on Aggro'),
 ('1776602','17766','9','0','100','1','0','5','12000','14000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Mortal Strike'),
 ('1776603','17766','0','0','100','1','6000','8000','22000','24000','0','0','11','18328','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Incapacitating Shout'),
-('1776604','17766','13','0','100','1','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel -  Cast Shield Bash on Target Casting'),
+('1776604','17766','13','0','100','1','20000','30000','22000','24000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Horde Silithyst Sentinel - Cast Shield Bash on Target Casting'),
 -- Silithus Flame Warden 25914
 -- Silithus Flame Keeper 25919
 -- Glacial Lieutenant 26215
@@ -16255,7 +16255,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2088801','20888','1','0','100','0','0','0','0','0','0','0','11','17467','0','32','0','0','0','0','0','0','0','0','Solus the Eternal - Cast Unholy Aura OOC'),
 ('2088802','20888','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Solus the Eternal - Enable Range Mode on Aggro'),
 ('2088803','20888','0','0','100','1025','6000','15000','16000','22000','0','0','11','36786','17','0','0','0','0','0','0','0','0','0','Solus the Eternal - Cast Soul Chill'),
-('2088804','20888','9','0','100','1025','0','5','26000','32000','0','0','11','38770','1','0','0','0','0','0','0','0','0','0','Thuk the Defiant -  Cast Soul Steal'),
+('2088804','20888','9','0','100','1025','0','5','26000','32000','0','0','11','36778','1','0','0','0','0','0','0','0','0','0','Solus the Eternal - Cast Soul Steal'),
 ('2088805','20888','9','0','100','1025','0','40','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Solus the Eternal - Cast Shadow Bolt'),
 -- Grishnath Basilisk
 ('2092401','20924','2','0','100','0','70','41','0','0','0','0','11','37590','0','0','0','0','0','0','0','0','0','0','Grishnath Basilisk - Cast Soften at 70% HP'),
@@ -16738,11 +16738,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2249901','22499','9','0','100','1','0','5','6000','10000','0','0','11','36406','0','0','0','0','0','0','0','0','0','0','Lesser Wrath Hound - Cast Double Breath'),
 -- Matron Li-sahar
 ('2282501','22825','0','0','100','1','9600','16900','12000','18000','0','0','11','33501','0','0','0','0','0','0','0','0','0','0','Matron Li-sahar - Cast Shadow Nova'),
-('2282502','22825','9','0','100','1','0','8','36000','48000','0','0','11','33493','1','32','0','0','0','0','0','0','0','0','Matron Li-sahar -  Cast Mark of Malice'),
+('2282502','22825','9','0','100','1','0','8','36000','48000','0','0','11','33493','1','32','0','0','0','0','0','0','0','0','Matron Li-sahar - Cast Mark of Malice'),
 -- King Dorfbruiser
 ('2282601','22826','4','0','100','0','0','0','0','0','0','0','1','-10800','-10801','0','0','0','0','0','0','0','0','0','King Dorfbruiser - Random Say on Aggro'),
-('2282602','22826','9','0','100','1','0','45','36000','44000','0','0','11','33238','0','1','0','0','0','0','0','0','0','0','King Dorfbruiser -  Cast Whirlwind'),
-('2282603','22826','9','0','100','1','0','5','8000','12000','0','0','11','43673','1','0','0','0','0','0','0','0','0','0','King Dorfbruiser -  Cast Mighty Blow'),
+('2282602','22826','9','0','100','1','0','45','36000','44000','0','0','11','33238','0','1','0','0','0','0','0','0','0','0','King Dorfbruiser - Cast Whirlwind'),
+('2282603','22826','9','0','100','1','0','5','8000','12000','0','0','11','43673','1','0','0','0','0','0','0','0','0','0','King Dorfbruiser - Cast Mighty Blow'),
 -- Gorgolon the All-seeing 22827
 ('2282701','22827','0','0','100','1025','14000','18000','14000','21000','0','0','11','34322','0','0','0','0','0','0','0','0','0','0','Gorgolon the All-seeing - Cast Psychic Scream'),
 ('2282702','22827','0','0','100','1025','0','10000','10000','20000','0','0','11','17287','1','0','0','0','0','0','0','0','0','0','Gorgolon the All-seeing - Cast Mind Blast'),
@@ -17838,7 +17838,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Murkblood Brute 18211 - NSR
 -- Murkblood Invader 18238
 ('1823801','18238','28','0','100','1','11971','5','5000','9000','0','0','11','11971','1','0','0','0','0','0','0','0','0','0','Murkblood Invader - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
-('1823802','18238','0','0','100','1','7800','11500','8000','22100','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Murkblood Invader -  Cast Cleave'),
+('1823802','18238','0','0','100','1','7800','11500','8000','22100','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Murkblood Invader - Cast Cleave'),
 ('1823803','18238','1','0','100','1','5000','5000','15000','15000','0','0','43','0','17891','0','0','0','0','0','0','0','0','0','Murkblood Invader - Mount OOC'),
 -- Gutripper
 ('1825701','18257','0','0','100','1','3000','5000','3000','5000','0','0','11','32022','1','32','0','0','0','0','0','0','0','0','Gutripper - Cast Gut Rip'),
@@ -18588,7 +18588,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2048301','20483','0','0','100','0','15000','15000','0','0','0','0','11','36146','2','1','0','0','0','0','0','0','0','0','Naberius - Cast Chains of Naberius'),
 ('2048302','20483','0','0','100','1','0','5000','26000','26000','0','0','11','36147','4','1','0','0','0','0','0','0','0','0','Naberius - Cast Lesser Shadow Fissure'),
 ('2048303','20483','32','0','100','1','0','8','10000','15000','0','0','11','36148','0','1','0','0','0','0','0','0','0','0','Naberius - Cast Chill Nova'),
-('2048304','20483','9','0','100','1','0','40','5000','7000','0','0','11','15497','1','0','0','0','0','0','0','0','0','0','Naberius  - Cast Frostbolt'),
+('2048304','20483','9','0','100','1','0','40','5000','7000','0','0','11','15497','1','0','0','0','0','0','0','0','0','0','Naberius - Cast Frostbolt'),
 -- Area 52 Big Bruiser 20484
 ('2048401','20484','0','0','100','1','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Area 52 Big Bruiser - Cast Net'),
 -- Area 52 Bruiser 20485
@@ -26880,10 +26880,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shadowmoon Soldier 23047 - RP: "Yes Sir!"
 ('2304701','23047','9','0','100','1025','0','5','5000','9000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Shadowmoon Soldier - Cast Strike'),
 ('2304702','23047','30','0','100','1','5','23049','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Shadowmoon Soldier - Attack Invoker on Receive AI Event 5'),
--- Shadowmoon Weapon Master 23049 - ACTION_T_SET_UNIT_VIRTUAL_ITEM_SLOT_ID could substitute the SpellAuras.cpp Script, which misses Aura Remove on Stance Change - Knockaway Threat Reduce? - Add ss.39664 Wound Poison OOC
--- Battle Stance - s.41106 [0] UNIT_VIRTUAL_ITEM_SLOT_ID: 32615/4.570335E-41, [0] UNIT_VIRTUAL_ITEM_SLOT_ID + 2: 32615/4.570335E-41
--- Defensive Stance - s.41105 [0] UNIT_VIRTUAL_ITEM_SLOT_ID: 32604/4.568794E-41, [0] UNIT_VIRTUAL_ITEM_SLOT_ID + 2: 31467/4.409466E-41
--- Berserker Stance - s.41107 [3] UNIT_VIRTUAL_ITEM_SLOT_ID: 32614/4.570195E-41, 0
+-- Shadowmoon Weapon Master 23049 - Knockaway Threat Reduce? - Add ss.39664 Wound Poison OOC
 -- RP: dbscripts_on_creature_movement Say Receiver Name: Black Temple Invis Stalker, Texts: "Prepare to march!","Excellent!","At ease soldiers!"
 -- 1 (OneShotTalk), 21 (OneShotApplaud), 22 (OneShotShot), 36 (OneShotAttack1H), 37 (OneShotAttack2HTight), 38 (OneShotAttack2Loose), 66 (OneShotSalute), 397 (OneShotPointNoSheathe)
 ('2304901','23049','1','0','100','0','0','0','0','0','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Shadowmoon Weapon Master - Set Random Phase and Cast Wound Poison OOC'),
@@ -26912,9 +26909,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Supremus Volcano 23085 - npc_volcano
 -- Sewer Rat (23086) - NSR
 -- Sewer Crocolisk (23087) - NSR
--- Akama (23089) - npc_akama_illidan - (-1564136,'Be wary, friends. The Betrayer meditates in the court just beyond.',0,0,0,0,'akama(illidan) SAY_OPEN_DOOR_6'),
--- Yell: "I will deal with these mongrels! Strike now, friends! Strike at the Betrayer!" - Illidan Encounter fighting incoming Illidari Elite 23226
--- Yell: "I will deal with these mongrels! Strike now, friends! Strike at the Betrayer!" - Illidan Encounter fighting incoming Illidari Elite 23226
+-- Akama (23089) - npc_akama_illidan
 -- Supremus Punch Invis Stalker 23095 - molten_flame
 -- Vengeful Spirit (23109) - NSR
 -- Shadowy Construct 23111 - SD2
@@ -26930,7 +26925,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hand of Gorefiend 23172
 ('2317201','23172','0','0','100','1025','5000','9000','30000','30000','0','0','11','38166','0','0','0','0','0','0','0','0','0','0','Hand of Gorefiend - Cast Enrage'),
 -- Akama 23191 - Yell: "No! Not yet!"+spell:3617+sound:11386 befor death
--- "Come out from the shadows!  I've returned to lead you against our true enemy!  Shed your chains and raise your weapons against your Illidari masters!"+397 (OneShotPointNoSheathe)
 ('2319101','23191','1','0','100','0','1000','1000','0','0','0','0','11','34189','0','32','0','0','0','0','0','0','0','0','Akama - Cast Stealth OOC'),
 ('2319102','23191','9','0','100','1025','0','30','6000','8000','0','0','11','39945','4','0','0','0','0','0','0','0','0','0','Akama - Cast Chain Lightning'),
 ('2319103','23191','0','0','100','1025','5000','8000','3000','7000','0','0','11','40874','4','0','0','0','0','0','0','0','0','0','Akama - Cast Destructive Poison'),
