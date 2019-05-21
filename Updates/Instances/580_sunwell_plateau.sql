@@ -438,10 +438,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 -- Pathing for Shadowsword Commander Entry: 25837
 (@CGUID+316, 1, 1682.332, 537.6241, 85.33395, 2.076942, 50000, 2583701),
 -- Pathing for Shadowsword Manafiend Entry: 25483
-(@CGUID+326, 1, 1817.548, 593.4289, 50.8023, 100, 2000, 0), -- This NPC is 2 seconds behind the other two that run out.
-(@CGUID+326, 2, 1796.504, 565.1455, 53.83252, 0, 0, 0),
-(@CGUID+326, 3, 1778.31, 551.769, 61.84933, 0, 0, 0),
-(@CGUID+326, 4, 1779.731, 550.6721, 61.73279, 0, 0, 2548301), -- Emote state
+(@CGUID+326, 1, 1796.504, 565.1455, 53.83252, 100, 0, 2548301),
 -- Pathing for Shadowsword Vanquisher Entry: 25486
 (@CGUID+327, 1, 1812.618, 586.0417, 50.79887, 3.717551, 0, 2548601), -- Yell text
 (@CGUID+327, 2, 1806.641, 586.4019, 51.12543, 0, 0, 0),
@@ -886,9 +883,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Shadowsword Group #7
 (@CGUID+331, @CGUID+330, 1679), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
 -- Shadowsword Group #8
-(@CGUID+327, @CGUID+326, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+328, @CGUID+326, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+329, @CGUID+326, 1679); -- Shadowsword Assassin -> Shadowsword Manafiend
+(@CGUID+326, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+327, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+329, @CGUID+328, 1679); -- Shadowsword Assassin -> Shadowsword Manafiend
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (25319, 580, 25315, 4096, 0), -- Kalecgos -> Kil'jaeden
