@@ -8707,7 +8707,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1064703','10647','9','0','100','1025','0','8','12000','18000','0','0','11','11969','17','0','0','0','0','0','0','0','0','0','Prince Raze - Cast Fire Nova'),
 ('1064704','10647','9','0','35','1025','0','40','13000','16000','0','0','11','16570','4','0','0','0','0','0','0','0','0','0','Prince Raze - Cast Charged Arcane Bolt'),
 ('1064705','10647','9','0','100','1025','0','40','3400','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Prince Raze - Cast Fireball'),
--- Succubus Minion (10928) - NSR
 -- Xai'ander
 ('1113701','11137','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Xai''ander - Flee at 15% HP'),
 -- Liladris Moonriver (11219) - NSR
@@ -19946,8 +19945,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('535506','5355','30','0','30','1','5','20809','0','0','0','0','53','10023','0','0','0','0','0','0','0','0','0','0','Firewing Defender - Set Stand State Sit on Receive AI Event 5 (A) (30% chance)'),
 ('535507','5355','30','0','10','1','5','20809','0','0','0','0','54','0','0','10005','0','0','0','0','0','0','0','0','Firewing Defender - Random Say on Receive AI Event 5 (A) (10% chance)'),
 ('535508','5355','29','1','100','1','20500','20500','20500','20500','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Firewing Defender - Resume Waypoints and Set Phase 0 on Generic Timer (Phase 1)'),
--- Succubus Minion
-('1092801','10928','0','0','100','1025','2000','4000','4000','7000','0','0','11','32202','1','0','0','0','0','0','0','0','0','0','Succubus Minion - Cast Lash of Pain'),
 -- Shadowy Executioner
 ('1651901','16519','12','0','100','1025','20','0','30000','45000','0','0','11','7160','1','0','0','0','0','0','0','0','0','0','Shadowy Executioner - Cast Execute at 20% Player HP'),
 -- Firewing Warlock 16769
@@ -30807,6 +30804,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Superior Healing Ward 10218 - TotemAI
 -- Mana Tide Totem 10467 - TotemAI
 -- Flametongue Totem IV 10557 - TotemAI
+-- Succubus Minion 10928 - NSR
 -- Crimson Cannon 11199
 ('1119901','11199','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Crimson Cannon - Prevent Movement and Prevent Melee on Spawn'),
 ('1119902','11199','9','0','100','1025','0','40','1000','1500','0','0','11','17501','1','0','0','0','0','0','0','0','0','0','Crimson Cannon - Cast Cannon Fire'),
