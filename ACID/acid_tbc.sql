@@ -18722,6 +18722,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2077802','20778','8','0','100','0','35686','-1','0','0','0','0','36','20805','-1','0','0','0','0','0','0','0','0','0','Void Waste - Change Entry after (proc) Spell 35686'),
 -- Congealed Void Horror 20779
 -- Kaylaan 20780
+('2078001','20780','1','2','100','1','44000','73000','44000','73000','0','0','11','35746','0','0','1','-11185','-11186','-11187','22','1','0','0','Kaylaan - Cast Resurrection and Random Say and Set Phase 1 OOC (Phase 0)'),
+('2078002','20780','1','1','100','1','17000','17000','17000','17000','0','0','1','-11188','-11189','0','22','0','0','0','0','0','0','0','Kaylaan - Random Say and Set Phase 0 OOC (Phase 1)'),
 -- Porfus the Gem Gorger 20783 - 20520 should morph entry
 -- Armbreaker Huffaz 20784 - 20520 should morph entry
 -- Fel Tinkerer Zortan 20785 - 20520 should morph entry
@@ -32174,6 +32176,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11182','%s departs from the world and summons shades to do his bidding.','0','2','0','20445','0'),
 ('-11183','%s calls for a nearby slave to assist him!','0','2','0','18089/20088','0'),
 ('-11184','%s discards his weapons and reaches for a polearm!','0','2','0','18046','0'),
+('-11185','Do not die on me, vindicator!','0','0','0','20780','0'),
+('-11186','Light! Do not fail me!','0','0','0','20780','0'),
+('-11187','Kael\'thas and the Legion... just what we needed!','0','0','0','20780','0'),
+('-11188','I\'ve failed. The Light has abandoned me.','0','0','0','20780','0'),
+('-11189','It is hopeless... I\'ve done all I can.','0','0','0','20780','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
