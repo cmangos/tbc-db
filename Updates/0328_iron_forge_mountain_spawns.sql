@@ -44,18 +44,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID := @CGUID + 1, 727, 0, -4606.635, -1694.362, 503.5839, 2.80998, 300, 300, 0, 0), -- Ironforge Mountaineer
 (@CGUID := @CGUID + 1, 727, 0, -4496.515, -1584.708, 509.0884, 2.251475, 300, 300, 0, 0), -- Ironforge Mountaineer
 
-(@CGUID := @CGUID + 1, 5595, 0, -5211.036, -1625.782, 497.9607, 2.80998, 300, 300, 0, 0), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -5244.771, -1648.934, 497.9607, 1.466077, 300, 300, 1, 1), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -5251.19, -1646.215, 497.9607, 1.308997, 300, 300, 1, 1), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -4936.773, -1744.471, 503.3625, 1.151917, 300, 300, 0, 0), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -4857.375, -1685.337, 503.449, 1.570569, 300, 300, 3, 1), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -4904.202, -1733.512, 503.4074, 2.321288, 300, 300, 0, 0), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -4870.97, -1629.687, 503.4382, 4.642576, 300, 300, 0, 0), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -4751.842, -1645.538, 503.4073, 2.635447, 300, 300, 0, 0), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -4610.179, -1700.008, 503.7812, 1.954769, 300, 300, 0, 0), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -4557.151, -1652.197, 503.7763, 2.164208, 300, 300, 0, 0), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -4490.688, -1583.53, 509.0884, 0.8552113, 300, 300, 0, 0), -- Ironforge Guard
-(@CGUID := @CGUID + 1, 5595, 0, -4486.108, -1590.457, 509.0762, 5.201081, 300, 300, 0, 0), -- Ironforge Guard
+(@CGUID := @CGUID + 1, 727, 0, -5211.036, -1625.782, 497.9607, 2.80998, 300, 300, 0, 0), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -5244.771, -1648.934, 497.9607, 1.466077, 300, 300, 1, 1), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -5251.19, -1646.215, 497.9607, 1.308997, 300, 300, 1, 1), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -4936.773, -1744.471, 503.3625, 1.151917, 300, 300, 0, 0), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -4857.375, -1685.337, 503.449, 1.570569, 300, 300, 3, 1), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -4904.202, -1733.512, 503.4074, 2.321288, 300, 300, 0, 0), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -4870.97, -1629.687, 503.4382, 4.642576, 300, 300, 0, 0), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -4751.842, -1645.538, 503.4073, 2.635447, 300, 300, 0, 0), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -4610.179, -1700.008, 503.7812, 1.954769, 300, 300, 0, 0), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -4557.151, -1652.197, 503.7763, 2.164208, 300, 300, 0, 0), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -4490.688, -1583.53, 509.0884, 0.8552113, 300, 300, 0, 0), -- Ironforge Mountaineer
+(@CGUID := @CGUID + 1, 727, 0, -4486.108, -1590.457, 509.0762, 5.201081, 300, 300, 0, 0), -- Ironforge Mountaineer
 -- cave #1
 (@CGUID := @CGUID + 1, 1124, 0, -5227.94, -1470.97, 500.19, 0.05787661, 15, 15, 0, 2), -- Frostmane Shadowcaster
 (@CGUID := @CGUID + 1, 1121, 0, -5225.15, -1467.11, 500.22, 5.067023, 15, 15, 0, 0), -- Frostmane Snowstrider
@@ -101,7 +101,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID := @CGUID + 1, 1128, 0, -4294.106, -1422.675, 389.7455, 2.069106, 300, 300, 0, 0), -- Young Black Bear
 (@CGUID := @CGUID + 1, 1128, 0, -4294.64, -1426.574, 389.3705, 3.344834, 300, 300, 0, 0), -- Young Black Bear
 
-(@CGUID := @CGUID + 1, 5595, 0, -4552.388, -896.7822, 628.6335, 3.344834, 300, 300, 0, 2); -- Ironforge Guard
+(@CGUID := @CGUID + 1, 727, 0, -4552.388, -896.7822, 628.6335, 3.344834, 300, 300, 0, 2); -- Ironforge Mountaineer
 
 UPDATE `creature` SET `position_x` = -4101.77, `position_y` = -1261.851, `position_z` = 149.042, `orientation` = 4.869469 WHERE `id` = 12998 AND `guid` = 590039;
 
@@ -155,7 +155,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@GUID, 17, -4671.61, -1650.729, 503.699, 100, 0, 0),
 (@GUID, 18, -4698.264, -1650.24, 503.574, 100, 0, 0);
 
--- Pathing for Ironforge Guard Entry: 5595
+-- Pathing for Ironforge Mountaineer Entry: 727
 SET @GUID := 191202;
 DELETE FROM `creature_movement` WHERE `id`=@GUID;
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`orientation`,`waittime`,`script_id`) VALUES
