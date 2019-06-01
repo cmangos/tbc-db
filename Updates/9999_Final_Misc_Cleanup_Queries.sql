@@ -1,3 +1,9 @@
+-- ==============================
+-- Creature Health and Mana Fixes
+-- ==============================
+UPDATE creature SET curhealth=0;
+UPDATE creature SET curmana=0;
+
 -- ===============================================================================================
 -- TEMP FIX: APPLY WORLD LOOT TEMPLATES TO SINGLE NPC TO CLEAR ALL FALSE CONSOLE ERRORS ON STARTUP - WAYPOINT NPC HAS ALL REFERENCE LOOT TEMPLATES ASSIGNED
 -- ===============================================================================================
