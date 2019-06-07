@@ -889,7 +889,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+14, 0, 0, 1, 16, 0, 0, '32567'), -- Invisible Stalker
-(@CGUID+32, 0, 0, 1, 16, 69, 0, NULL), -- Sunblade Mage Guard
+(@CGUID+32, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
 (@CGUID+35, 0, 0, 1, 16, 69, 0, NULL), -- Sunblade Mage Guard
 (@CGUID+41, 0, 0, 1, 16, 69, 0, NULL), -- Sunblade Blood Knight
 (@CGUID+46, 0, 0, 1, 16, 28, 0, NULL), -- Sunblade Blood Knight
@@ -1066,8 +1066,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+35, @CGUID+24, 1024), -- Sunblade Mage Guard -> Priestess Delrissa
 (@CGUID+84, @CGUID+75, 1167), -- Sunblade Physician -> Sunblade Warlock
 (@CGUID+75, @CGUID+24, 1024), -- Sunblade Warlock -> Priestess Delrissa
-(@CGUID+63, @CGUID+32, 1167), -- Sunblade Magister -> Sunblade Mage Guard
-(@CGUID+32, @CGUID+24, 1024), -- Sunblade Mage Guard -> Priestess Delrissa
+(@CGUID+63, @CGUID+32, 1167), -- Sunblade Magister -> creature_spawn_entry
+(@CGUID+32, @CGUID+24, 1024), -- creature_spawn_entry -> Priestess Delrissa
 (@CGUID+83, @CGUID+46, 1167), -- Sunblade Physician -> Sunblade Blood Knight
 (@CGUID+46, @CGUID+24, 1024), -- Sunblade Blood Knight -> Priestess Delrissa
 -- Kael'thas Sunstrider
@@ -1088,6 +1088,9 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (24559, 585, 24560, 11, 0), -- Warlord Salaris -> Priestess Delrissa
 (24561, 585, 24560, 11, 0), -- Yazzai -> Priestess Delrissa
 (24722, 585, 24723, 32, 0); -- Fel Crystal -> Selin Fireheart
+
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+32, 24683), (@CGUID+32, 24686); -- Sunblade Mage Guard, Sunblade Warlock
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 1412, 585, 3, 106.8108, -32.7257, 2.083333, 0.5340122, 7200, 7200, 15, 0, 0, 1), -- Squirrel
@@ -1121,7 +1124,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+29, 24683, 585, 3, 144.0841, -107.0146, -20.37166, 4.24115, 7200, 7200, 0, 0, 0, 2), -- Sunblade Mage Guard
 (@CGUID+30, 24683, 585, 3, 146.1476, -25.44206, -21.19135, 0.5585054, 7200, 7200, 0, 0, 0, 2), -- Sunblade Mage Guard
 (@CGUID+31, 24683, 585, 3, 153.3955, 140.0584, -14.29825, 2.478368, 7200, 7200, 0, 0, 0, 2), -- Sunblade Mage Guard
-(@CGUID+32, 24683, 585, 3, 75.10069, 32.16884, -19.92152, 3.961897, 7200, 7200, 0, 0, 0, 0), -- Sunblade Mage Guard
+(@CGUID+32, 0, 585, 3, 75.10069, 32.16884, -19.92152, 3.961897, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+33, 24683, 585, 3, 75.68121, -7.432292, -2.629982, 1.605703, 7200, 7200, 0, 0, 0, 0), -- Sunblade Mage Guard
 (@CGUID+34, 24683, 585, 3, 76.28928, 7.97526, -2.616464, 4.764749, 7200, 7200, 0, 0, 0, 0), -- Sunblade Mage Guard
 (@CGUID+35, 24683, 585, 3, 82.44922, -43.14388, -19.91573, 3.246312, 7200, 7200, 0, 0, 0, 0), -- Sunblade Mage Guard
