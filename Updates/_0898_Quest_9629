@@ -1,0 +1,2 @@
+-- Quest 9629 "Catch and Release" Murloc Tagger worked but dont Count Tagged Murlocs
+UPDATE `quest_template` SET `ReqCreatureOrGOId2` = 17654 WHERE `entry` = 9629;
