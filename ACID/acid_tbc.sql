@@ -4224,8 +4224,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2503102','25031','0','0','100','1','7500','13000','15000','20000','0','0','11','19630','0','1','0','0','0','0','0','0','0','0','Pit Overlord - Cast Cone of Fire'),
 ('2503103','25031','0','0','100','1','5000','7000','12000','15000','0','0','11','32709','5','1','0','0','0','0','0','0','0','0','Pit Overlord - Cast Death Coil'),
 -- Eldara Dawnrunner (25032) - NSR
--- Eredar Sorcerer
-('2503301','25033','0','0','100','1','2000','4500','12000','20000','0','0','11','45046','1','0','0','0','0','0','0','0','0','0','Eredar Sorcerer - Cast Flames of Doom'),
+-- Eredar Sorcerer 25033
+('2503301','25033','29','0','100','1','0','0','12000','12000','0','0','11','45046','15','0','0','0','0','0','0','0','0','0','Eredar Sorcerer - Cast Flames of Doom on Generic Timer'),
 -- Tradesman Portanuus (25034) - NSR
 -- Tyrael Flamekissed (25035) - NSR
 -- Caregiver Inaara (25036) - npc_innkeeper
