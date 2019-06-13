@@ -8244,9 +8244,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sarltooth
 ('135301','1353','1','0','100','0','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Sarltooth - Cast Thrash OOC'),
 ('135302','1353','0','0','100','1','6700','8800','11100','28000','0','0','11','3427','1','32','0','0','0','0','0','0','0','0','Sarltooth - Cast Infected Wound'),
--- Balgaras the Foul
+-- Balgaras the Foul 1364
 ('136401','1364','11','0','100','0','0','0','0','0','0','0','11','12746','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Summon Voidwalker on Spawn'),
-('136402','1364','4','0','70','0','0','0','0','0','0','0','1','-104','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Say on Aggro'),
+('136402','1364','4','0','100','0','0','0','0','0','0','0','1','-174','-175','-176','0','0','0','0','0','0','0','0','Balgaras the Foul - Say on Aggro'),
 ('136403','1364','0','0','100','1','4800','7700','21100','21100','0','0','11','9081','1','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Shadow Bolt Volley'),
 ('136404','1364','0','0','100','1','6400','12500','19600','38000','0','0','11','11831','0','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Frost Nova'),
 ('136405','1364','0','0','100','1','13400','16400','182200','182400','0','0','11','3586','1','0','0','0','0','0','0','0','0','0','Balgaras the Foul - Cast Volatile Infection'),
@@ -30529,7 +30529,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-101','For the Dragonmaw!','0','0','1','Common Dragonmaw Text','0'),
 ('-102','Long live the Dragonmaw! Die you worthless $r!','0','0','1','Common Dragonmaw Text','0'),
 ('-103','Brains...','0','0','0','1158','0'),
-('-104','This land belongs to the Dark Iron Dwarves. Prepare to see the afterlife, $c!','0','0','6','1364','0'),
+-- Classic PLEASE RE-USE 104
 ('-105','Your bones will break under my boot, $r!','0','0','1','Common Dragonmaw Text','0'),
 ('-106','%s goes into a frenzy!','0','2','0','Enrage Text','0'),
 -- Classic PLEASE RE-USE 107 - 122
@@ -30563,7 +30563,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-171','Lapdogs, all of you!','5782','1','0','639','0'),
 ('-172','Fools! Our cause is righteous!','5783','1','0','639','0'),
 ('-173','The Brotherhood shall prevail!','5784','1','0','639','0'),
--- Classic PLEASE RE-USE 174 - 176
+('-174','This land belongs to the Dark Iron Dwarves. Prepare to see the afterlife, $c!','0','0','6','Balgaras the Foul 1364','0'),
+('-175','$N!  Prepare to meet your doom!','0','0','6','Balgaras the Foul 1364','0'),
+('-176','I am Balgaras the Foul.  And you, $N, are about to become nothing more than ash and dust.','0','0','6','Balgaras the Foul 1364','0'),
 ('-177','I\'m going to wear your skin as a smoking jacket! The stogies? You\'ll have to pry them from my cold dead... er... RAWR!!!!','0','0','0','11058','0'),
 ('-178','Looking for these???? You\'ll never have em!','0','0','0','11058','0'),
 -- Classic PLEASE RE-USE 179 - 181
