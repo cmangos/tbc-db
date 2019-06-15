@@ -16876,6 +16876,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2343001','23430','0','0','100','1','3000','9000','10000','20000','0','0','11','38618','0','0','0','0','0','0','0','0','0','0','Skyguard Lieutenant - Cast Whirlwind'),
 -- Sundered Ghost 24039
 ('2403901','24039','11','0','100','0','0','0','0','0','0','0','11','39916','0','0','11','28126','0','0','11','17321','0','0','Sundered Ghost - Cast Soulgrinder Ghost Transform and Cast Spirit Particles (purple) and Cast Spirit Spawn-in on Spawn'),
+-- Phase Wyrm 24917
+('2491701','24917','11','0','100','0','0','0','0','0','0','0','11','44855','0','34','0','0','0','0','0','0','0','0','Phase Wyrm - Cast Out of Phase on Spawn'),
+('2491702','24917','1','0','100','1','1000','1000','600000','600000','0','0','11','35319','0','32','0','0','0','0','0','0','0','0','Phase Wyrm - Cast Electric Skin OOC'),
+
 
 
 -- ==================
