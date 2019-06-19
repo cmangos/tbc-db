@@ -16792,6 +16792,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2315304','23153','2','0','100','1','40','0','38000','38000','0','0','11','11436','1','0','0','0','0','0','0','0','0','0','Bash''ir Surveyor - Cast Slow when below 40% Health'),
 -- Mana-debt Slave
 ('2315401','23154','13','0','100','1','11000','15000','0','0','0','0','11','12555','1','0','0','0','0','0','0','0','0','0','Mana-debt Slave - Cast Pummel on Target Casting'),
+('2315402','23154','30','0','100','0','5','19656','0','0','0','0','51','0','0','0','52','3','0','0','0','0','0','0','Mana-debt Slave - Resume Waypoints and Interrupt Channeling on Receive AI Event 5 (A)'),
 -- Crystalfused Miner
 ('2317401','23174','0','0','100','1','6000','12000','15000','20000','0','0','11','32614','0','0','0','0','0','0','0','0','0','0','Crystalfused Miner - Cast Arcane Explosion'),
 -- Mo'arg Tormenter 23212
