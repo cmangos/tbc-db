@@ -16778,6 +16778,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Felguard Degrader 23055
 -- Rivendark 23061
 -- Fel Imp Defender 23078
+-- Legion Ring Event InvisMan 23059
+('2305901','23059','30','0','100','1','5','23390','0','0','0','0','11','41302','6','0','0','0','0','0','0','0','0','0','Legion Ring Event InvisMan - Cast Cosmetic - Bash''ir Spawn Lightning on Receive AI Event 5 (A)'),
+('2305902','23059','30','0','100','1','5','23391','0','0','0','0','11','41302','6','0','0','0','0','0','0','0','0','0','Legion Ring Event InvisMan - Cast Cosmetic - Bash''ir Spawn Lightning on Receive AI Event 5 (A)'),
 -- Ogri'la Keg King c.23110
 ('2311001','23110','1','0','100','1','30000','45000','30000','45000','0','0','5','92','0','0','11','35777','0','2','0','0','0','0','Ogri''la Keg King - Emote and Cast Bloodmaul Intoxication Visual OOC'),
 -- Doomguard Punisher 23113
@@ -16861,15 +16864,36 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2336803','23368','2','0','100','1','40','0','21000','26000','0','0','11','32130','0','1','0','0','0','0','0','0','0','0','Bash''ir Controller - Cast Heal at 40% HP'),
 -- Simon Game Bunny Large 23378 - npc_simon_game_bunny
 -- Bash'ir's Harbinger
-('2339001','23390','4','0','100','0','0','0','0','0','0','0','11','30798','0','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Cast Dual Wield on Aggro'),
-('2339002','23390','9','0','100','1','8','20','16000','24000','0','0','11','35570','4','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Cast Charge'),
-('2339003','23390','0','0','100','1','12000','17000','15000','21000','0','0','11','23920','0','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Cast Spell Reflection'),
-('2339004','23390','9','0','100','1','0','8','25000','31000','0','0','11','40935','1','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Cast Dematerialize Armor'),
+('2339001','23390','11','0','100','0','0','0','0','0','0','0','11','34427','0','2','11','41365','0','2','0','0','0','0','Bash''ir''s Harbinger - Cast Ethereal Teleport and Cast Blade''s Edge - Bash''ir Materialization Beam 00 on Spawn'),
+('2339002','23390','1','0','100','1','100','100','1000','2000','0','0','45','5','12','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Throw AI Event 5 (A) OOC'),
+('2339003','23390','4','0','100','0','0','0','0','0','0','0','11','30798','0','0','54','0','6','10163','0','0','0','0','Bash''ir''s Harbinger - Cast Dual Wield and Random Say on Aggro'),
+('2339004','23390','9','0','100','1','8','20','16000','24000','0','0','11','35570','4','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Cast Charge'),
+('2339005','23390','0','0','100','1','12000','17000','15000','21000','0','0','11','23920','0','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Cast Spell Reflection'),
+('2339006','23390','9','0','100','1','0','8','25000','31000','0','0','11','40935','1','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Cast Dematerialize Armor'),
+('2339007','23390','30','0','100','1','8','23390','0','0','0','0','19','256','0','0','55','11','0','0','22','1','0','0','Bash''ir''s Harbinger - Remove UnitFlag 256 and Attack Spawner and Set Phase 1 on Receive AI Event 8 (C)'),
+('2339008','23390','30','0','100','1','9','23390','0','0','0','0','19','256','0','0','55','11','0','0','22','2','0','0','Bash''ir''s Harbinger - Remove UnitFlag 256 and Attack Spawner and Set Phase 2 on Receive AI Event 9 (D)'),
+('2339009','23390','30','0','100','1','10','23390','0','0','0','0','19','256','0','0','55','11','0','0','22','3','0','0','Bash''ir''s Harbinger - Remove UnitFlag 256 and Attack Spawner and Set Phase 3 on Receive AI Event 10 (E)'),
+('2339010','23390','30','0','100','1','11','23390','0','0','0','0','19','256','0','0','55','11','0','0','22','4','0','0','Bash''ir''s Harbinger - Remove UnitFlag 256 and Attack Spawner and Set Phase 4 on Receive AI Event 11 (F)'),
+('2339011','23390','6','29','100','0','0','0','0','0','0','0','53','10157','0','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Start Relay Script on Death (Phase 1)'),
+('2339012','23390','6','27','100','0','0','0','0','0','0','0','53','10158','0','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Start Relay Script on Death (Phase 2)'),
+('2339013','23390','6','23','100','0','0','0','0','0','0','0','53','10159','0','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Start Relay Script on Death (Phase 3)'),
+('2339014','23390','6','15','100','0','0','0','0','0','0','0','53','10160','0','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Start Relay Script on Death (Phase 4)'),
 -- Bash'ir
-('2339101','23391','0','0','90','1','12000','19000','21000','28000','0','0','11','36908','0','0','0','0','0','0','0','0','0','0','Bash''ir - Cast Warp'),
-('2339102','23391','9','0','100','1','0','8','16000','21000','0','0','11','41264','1','0','0','0','0','0','0','0','0','0','Bash''ir - Cast Energy Surge'),
-('2339103','23391','0','0','100','1','7000','14000','12000','18000','0','0','11','41266','0','0','0','0','0','0','0','0','0','0','Bash''ir - Cast Energy Flare (Closest Match But Low Damage)'),
-('2339104','23391','0','0','100','1','9000','15000','16000','21000','0','0','11','43433','5','0','0','0','0','0','0','0','0','0','Bash''ir - Cast Blind'),
+('2339101','23391','11','0','100','0','0','0','0','0','0','0','11','34427','0','2','11','41365','0','2','0','0','0','0','Bash''ir - Cast Ethereal Teleport and Cast Blade''s Edge - Bash''ir Materialization Beam 00 on Spawn'),
+('2339102','23391','1','0','100','1','100','100','1000','2000','0','0','45','5','12','0','0','0','0','0','0','0','0','0','Bash''ir - Throw AI Event 5 (A) OOC'),
+('2339103','23391','4','0','100','0','0','0','0','0','0','0','54','0','6','10164','0','0','0','0','0','0','0','0','Bash''ir - Random Say on Aggro'),
+('2339104','23391','0','0','90','1','12000','19000','21000','28000','0','0','11','36908','0','0','0','0','0','0','0','0','0','0','Bash''ir - Cast Warp'),
+('2339105','23391','9','0','100','1','0','8','16000','21000','0','0','11','41264','1','0','0','0','0','0','0','0','0','0','Bash''ir - Cast Energy Surge'),
+('2339106','23391','0','0','100','1','7000','14000','12000','18000','0','0','11','41266','0','0','0','0','0','0','0','0','0','0','Bash''ir - Cast Energy Flare (Closest Match But Low Damage)'),
+('2339107','23391','0','0','100','1','9000','15000','16000','21000','0','0','11','43433','5','0','0','0','0','0','0','0','0','0','Bash''ir - Cast Blind'),
+('2339108','23391','30','0','100','1','8','23391','0','0','0','0','19','256','0','0','55','11','0','0','22','1','0','0','Bash''ir - Remove UnitFlag 256 and Attack Spawner and Set Phase 1 on Receive AI Event 8 (C)'),
+('2339109','23391','30','0','100','1','9','23391','0','0','0','0','19','256','0','0','55','11','0','0','22','2','0','0','Bash''ir - Remove UnitFlag 256 and Attack Spawner and Set Phase 2 on Receive AI Event 9 (D)'),
+('2339110','23391','30','0','100','1','10','23391','0','0','0','0','19','256','0','0','55','11','0','0','22','3','0','0','Bash''ir - Remove UnitFlag 256 and Attack Spawner and Set Phase 3 on Receive AI Event 10 (E)'),
+('2339111','23391','30','0','100','1','11','23391','0','0','0','0','19','256','0','0','55','11','0','0','22','4','0','0','Bash''ir - Remove UnitFlag 256 and Attack Spawner and Set Phase 4 on Receive AI Event 11 (F)'),
+('2339112','23391','6','29','100','0','0','0','0','0','0','0','53','10157','0','0','0','0','0','0','0','0','0','0','Bash''ir - Start Relay Script on Death (Phase 1)'),
+('2339113','23391','6','27','100','0','0','0','0','0','0','0','53','10158','0','0','0','0','0','0','0','0','0','0','Bash''ir - Start Relay Script on Death (Phase 2)'),
+('2339114','23391','6','23','100','0','0','0','0','0','0','0','53','10159','0','0','0','0','0','0','0','0','0','0','Bash''ir - Start Relay Script on Death (Phase 3)'),
+('2339115','23391','6','15','100','0','0','0','0','0','0','0','53','10160','0','0','0','0','0','0','0','0','0','0','Bash''ir - Start Relay Script on Death (Phase 4)'),
 -- Bash'ir Inquisitor
 ('2341401','23414','4','0','100','0','0','0','0','0','0','0','11','30798','0','0','0','0','0','0','0','0','0','0','Bash''ir Inquisitor - Cast Dual Wield on Aggro'),
 ('2341402','23414','9','0','100','1','8','20','15000','21000','0','0','11','35570','4','0','0','0','0','0','0','0','0','0','Bash''ir Inquisitor - Cast Charge'),
@@ -32198,6 +32222,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11195','Woo hoo!  More rays for training!','0','0','0','23335','0'),
 ('-11196','Wow!  Thanks for bringing it all the way back here.  You didn''t have to do that.','0','0','0','23335','0'),
 ('-11197','You''re a peach!  I''ll make sure that the ray is properly cared for.','0','0','0','23335','0'),
+('-11198','And wheresoever did you find the module to activate that controller?  No matter, you won''t be doing that again.','0','0','0','23390','0'),
+('-11199','Bash''ir sends his regrets that he could not make it, but he sent me along to salve your disappointment.','0','0','0','23390','0'),
+('-11200','Did you really think that you could fool my master into falling for your sad, little trap, $n?','0','0','0','23390','0'),
+('-11201','Do you know what you''re playing with, $n?  Here, allow me to educate you and your friends.','0','0','0','23390','0'),
+('-11202','The master is busy, but I have time to come out and play!','0','0','0','23390','0'),
+('-11203','You activated the accelerator with only this motley assemblage to back you up?','0','0','0','23390','0'),
+('-11204','Don''t cry, $n.  It will all soon be over.  I promise not to spit upon your corpse.','0','0','0','23391','0'),
+('-11205','You were expecting one of my harbingers?','0','0','0','23391','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
@@ -32559,7 +32591,16 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10153,0,-11058,0,'17944 - Random Kill Texts'),
 (10154,0,-11059,0,'17945 - Random Kill Texts'),
 (10154,0,-11060,0,'17945 - Random Kill Texts'),
--- 10155-10167 reserved
+-- 10155-10162 reserved
+(10163,0,-11198,0,'23390 - Random Say'),
+(10163,0,-11199,0,'23390 - Random Say'),
+(10163,0,-11200,0,'23390 - Random Say'),
+(10163,0,-11201,0,'23390 - Random Say'),
+(10163,0,-11202,0,'23390 - Random Say'),
+(10163,0,-11203,0,'23390 - Random Say'),
+(10164,0,-11204,0,'23391 - Random Say'),
+(10164,0,-11205,0,'23391 - Random Say'),
+-- 10165-10167 reserved
 (10168,0,-11153,0,'23223 - Random OOC Texts'),
 (10168,0,-11154,0,'23223 - Random OOC Texts'),
 (10168,0,-11155,0,'23223 - Random OOC Texts'),
