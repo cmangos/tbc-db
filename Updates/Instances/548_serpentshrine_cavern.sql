@@ -699,11 +699,11 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- link "leaders" to bosses
-(@CGUID+63, @CGUID+38, 1024), -- Tidewalker Depth-Seer -> Morogrim Tidewalker
-(@CGUID+66, @CGUID+38, 1024), -- Tidewalker Depth-Seer -> Morogrim Tidewalker
-(@CGUID+69, @CGUID+38, 1024), -- Tidewalker Warrior -> Morogrim Tidewalker
-(@CGUID+70, @CGUID+38, 1024), -- Tidewalker Warrior -> Morogrim Tidewalker
-(@CGUID+72, @CGUID+38, 1024), -- Tidewalker Warrior -> Morogrim Tidewalker
+(@CGUID+63, @CGUID+38, 1024), -- Murloc Group 1 -> Morogrim Tidewalker
+(@CGUID+66, @CGUID+38, 1024), -- Murloc Group 2 -> Morogrim Tidewalker
+(@CGUID+69, @CGUID+38, 1024), -- Murloc Group 3 -> Morogrim Tidewalker
+(@CGUID+70, @CGUID+38, 1024), -- Murloc Group 4 -> Morogrim Tidewalker
+(@CGUID+72, @CGUID+38, 1024), -- Murloc Group 5 -> Morogrim Tidewalker
 (@CGUID+189, @CGUID+38, 1024), -- Coilfang Serpentguard -> Morogrim Tidewalker
 
 (@CGUID+127, @CGUID+39, 1024), -- Greyheart Shield-Bearer -> Fathom-Lord Karathress
@@ -817,32 +817,32 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+221, @CGUID+62, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
 (@CGUID+222, @CGUID+62, 1167), -- Coilfang Hate-Screamer -> Coilfang Beast-Tamer
 
-(@CGUID+67, @CGUID+63, 1679), -- Tidewalker Warrior -> Tidewalker Depth-Seer
-(@CGUID+68, @CGUID+63, 1679), -- Tidewalker Warrior -> Tidewalker Depth-Seer
-(@CGUID+76, @CGUID+63, 1679), -- Tidewalker Shaman -> Tidewalker Depth-Seer
-(@CGUID+83, @CGUID+63, 1679), -- Tidewalker Harpooner -> Tidewalker Depth-Seer
-(@CGUID+85, @CGUID+63, 1679), -- Tidewalker Hydromancer -> Tidewalker Depth-Seer
+(@CGUID+67, @CGUID+63, 1679), -- Murloc Group 1
+(@CGUID+68, @CGUID+63, 1679), -- Murloc Group 1
+(@CGUID+76, @CGUID+63, 1679), -- Murloc Group 1
+(@CGUID+83, @CGUID+63, 1679), -- Murloc Group 1
+(@CGUID+85, @CGUID+63, 1679), -- Murloc Group 1
 
-(@CGUID+74, @CGUID+66, 1679), -- Tidewalker Warrior -> Tidewalker Depth-Seer
-(@CGUID+75, @CGUID+66, 1679), -- Tidewalker Warrior -> Tidewalker Depth-Seer
-(@CGUID+81, @CGUID+66, 1679), -- Tidewalker Shaman -> Tidewalker Depth-Seer
+(@CGUID+74, @CGUID+66, 1679), -- Murloc Group 2
+(@CGUID+75, @CGUID+66, 1679), -- Murloc Group 2
+(@CGUID+81, @CGUID+66, 1679), -- Murloc Group 2
 
-(@CGUID+77, @CGUID+69, 1679), -- Tidewalker Shaman -> Tidewalker Warrior
-(@CGUID+78, @CGUID+69, 1679), -- Tidewalker Shaman -> Tidewalker Warrior
-(@CGUID+79, @CGUID+69, 1679), -- Tidewalker Shaman -> Tidewalker Warrior
-(@CGUID+86, @CGUID+69, 1679), -- Tidewalker Hydromancer -> Tidewalker Warrior
-(@CGUID+87, @CGUID+69, 1679), -- Tidewalker Hydromancer -> Tidewalker Warrior
+(@CGUID+77, @CGUID+69, 1679), -- Murloc Group 3
+(@CGUID+78, @CGUID+69, 1679), -- Murloc Group 3
+(@CGUID+79, @CGUID+69, 1679), -- Murloc Group 3
+(@CGUID+86, @CGUID+69, 1679), -- Murloc Group 3
+(@CGUID+87, @CGUID+69, 1679), -- Murloc Group 3
 
-(@CGUID+64, @CGUID+70, 1679), -- Tidewalker Depth-Seer -> Tidewalker Warrior
-(@CGUID+65, @CGUID+70, 1679), -- Tidewalker Depth-Seer -> Tidewalker Warrior
-(@CGUID+71, @CGUID+70, 1679), -- Tidewalker Warrior -> Tidewalker Warrior
-(@CGUID+84, @CGUID+70, 1679), -- Tidewalker Harpooner -> Tidewalker Warrior
-(@CGUID+88, @CGUID+70, 1679), -- Tidewalker Hydromancer -> Tidewalker Warrior
+(@CGUID+64, @CGUID+70, 1679), -- Murloc Group 4
+(@CGUID+65, @CGUID+70, 1679), -- Murloc Group 4
+(@CGUID+71, @CGUID+70, 1679), -- Murloc Group 4
+(@CGUID+84, @CGUID+70, 1679), -- Murloc Group 4
+(@CGUID+88, @CGUID+70, 1679), -- Murloc Group 4
 
-(@CGUID+73, @CGUID+72, 1679), -- Tidewalker Warrior -> Tidewalker Warrior
-(@CGUID+80, @CGUID+72, 1679), -- Tidewalker Shaman -> Tidewalker Warrior
-(@CGUID+82, @CGUID+72, 1679), -- Tidewalker Shaman -> Tidewalker Warrior
-(@CGUID+89, @CGUID+72, 1679), -- Tidewalker Hydromancer -> Tidewalker Warrior
+(@CGUID+73, @CGUID+72, 1679), -- Murloc Group 5
+(@CGUID+80, @CGUID+72, 1679), -- Murloc Group 5
+(@CGUID+82, @CGUID+72, 1679), -- Murloc Group 5
+(@CGUID+89, @CGUID+72, 1679), -- Murloc Group 5
 
 (@CGUID+115, @CGUID+94, 1167), -- Greyheart Nether-Mage -> Greyheart Tidecaller
 (@CGUID+133, @CGUID+94, 1167), -- Greyheart Skulker -> Greyheart Tidecaller
@@ -942,6 +942,36 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (22056, 548, 21212, 4096, 0), -- Coilfang Strider -> Lady Vashj
 (22140, 548, 21212, 4096, 0); -- Toxic Spore Bat -> Lady Vashj
 
+INSERT INTO creature_spawn_entry (guid, entry) VALUES
+-- Random between Tidewalker Depth-Seer (21224), Tidewalker Warrior (21225), Tidewalker Shaman (21226), Tidewalker Harpooner (21227), and Tidewalker Hydromancer (21228)
+(@CGUID+63, 21224), (@CGUID+63, 21225), (@CGUID+63, 21226), (@CGUID+63, 21227), (@CGUID+63, 21228),
+(@CGUID+64, 21224), (@CGUID+64, 21225), (@CGUID+64, 21226), (@CGUID+64, 21227), (@CGUID+64, 21228),
+(@CGUID+65, 21224), (@CGUID+65, 21225), (@CGUID+65, 21226), (@CGUID+65, 21227), (@CGUID+65, 21228),
+(@CGUID+66, 21224), (@CGUID+66, 21225), (@CGUID+66, 21226), (@CGUID+66, 21227), (@CGUID+66, 21228),
+(@CGUID+67, 21224), (@CGUID+67, 21225), (@CGUID+67, 21226), (@CGUID+67, 21227), (@CGUID+67, 21228),
+(@CGUID+68, 21224), (@CGUID+68, 21225), (@CGUID+68, 21226), (@CGUID+68, 21227), (@CGUID+68, 21228),
+(@CGUID+69, 21224), (@CGUID+69, 21225), (@CGUID+69, 21226), (@CGUID+69, 21227), (@CGUID+69, 21228),
+(@CGUID+70, 21224), (@CGUID+70, 21225), (@CGUID+70, 21226), (@CGUID+70, 21227), (@CGUID+70, 21228),
+(@CGUID+71, 21224), (@CGUID+71, 21225), (@CGUID+71, 21226), (@CGUID+71, 21227), (@CGUID+71, 21228),
+(@CGUID+72, 21224), (@CGUID+72, 21225), (@CGUID+72, 21226), (@CGUID+72, 21227), (@CGUID+72, 21228),
+(@CGUID+73, 21224), (@CGUID+73, 21225), (@CGUID+73, 21226), (@CGUID+73, 21227), (@CGUID+73, 21228),
+(@CGUID+74, 21224), (@CGUID+74, 21225), (@CGUID+74, 21226), (@CGUID+74, 21227), (@CGUID+74, 21228),
+(@CGUID+75, 21224), (@CGUID+75, 21225), (@CGUID+75, 21226), (@CGUID+75, 21227), (@CGUID+75, 21228),
+(@CGUID+76, 21224), (@CGUID+76, 21225), (@CGUID+76, 21226), (@CGUID+76, 21227), (@CGUID+76, 21228),
+(@CGUID+77, 21224), (@CGUID+77, 21225), (@CGUID+77, 21226), (@CGUID+77, 21227), (@CGUID+77, 21228),
+(@CGUID+78, 21224), (@CGUID+78, 21225), (@CGUID+78, 21226), (@CGUID+78, 21227), (@CGUID+78, 21228),
+(@CGUID+79, 21224), (@CGUID+79, 21225), (@CGUID+79, 21226), (@CGUID+79, 21227), (@CGUID+79, 21228),
+(@CGUID+80, 21224), (@CGUID+80, 21225), (@CGUID+80, 21226), (@CGUID+80, 21227), (@CGUID+80, 21228),
+(@CGUID+81, 21224), (@CGUID+81, 21225), (@CGUID+81, 21226), (@CGUID+81, 21227), (@CGUID+81, 21228),
+(@CGUID+82, 21224), (@CGUID+82, 21225), (@CGUID+82, 21226), (@CGUID+82, 21227), (@CGUID+82, 21228),
+(@CGUID+83, 21224), (@CGUID+83, 21225), (@CGUID+83, 21226), (@CGUID+83, 21227), (@CGUID+83, 21228),
+(@CGUID+84, 21224), (@CGUID+84, 21225), (@CGUID+84, 21226), (@CGUID+84, 21227), (@CGUID+84, 21228),
+(@CGUID+85, 21224), (@CGUID+85, 21225), (@CGUID+85, 21226), (@CGUID+85, 21227), (@CGUID+85, 21228),
+(@CGUID+86, 21224), (@CGUID+86, 21225), (@CGUID+86, 21226), (@CGUID+86, 21227), (@CGUID+86, 21228),
+(@CGUID+87, 21224), (@CGUID+87, 21225), (@CGUID+87, 21226), (@CGUID+87, 21227), (@CGUID+87, 21228),
+(@CGUID+88, 21224), (@CGUID+88, 21225), (@CGUID+88, 21226), (@CGUID+88, 21227), (@CGUID+88, 21228),
+(@CGUID+89, 21224), (@CGUID+89, 21225), (@CGUID+89, 21226), (@CGUID+89, 21227), (@CGUID+89, 21228);
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 15384, 548, 3, 386.299, -433.73, 29.6121, 4.08407, 7200, 7200, 0, 0, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
 (@CGUID+2, 15384, 548, 3, -2.90954, -840.206, 22.7373, 5.0091, 7200, 7200, 0, 0, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
@@ -997,33 +1027,33 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+60, 21221, 548, 3, -140.307, -132.247, -5.32407, 6.07375, 7200, 7200, 0, 0, 0, 0), -- Coilfang Beast-Tamer
 (@CGUID+61, 21221, 548, 3, -134.455, -223.091, 1.67257, 1.5708, 7200, 7200, 0, 0, 0, 0), -- Coilfang Beast-Tamer
 (@CGUID+62, 21221, 548, 3, -220.849, -245.84, -5.32409, 0.471239, 7200, 7200, 0, 0, 0, 0), -- Coilfang Beast-Tamer
-(@CGUID+63, 21224, 548, 3, 256.465, -706.843, -2.91503, 1.91573, 7200, 7200, 10, 0, 0, 2), -- Tidewalker Depth-Seer
-(@CGUID+64, 21224, 548, 3, 327.461, -739.088, -13.1582, 0.992802, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Depth-Seer
-(@CGUID+65, 21224, 548, 3, 330.757, -740.644, -13.1573, 1.0161, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Depth-Seer
-(@CGUID+66, 21224, 548, 1, 359.995, -758.373, -13.1581, 3.15712, 7200, 7200, 0, 0, 0, 2), -- Tidewalker Depth-Seer
-(@CGUID+67, 21225, 548, 3, 259.71, -707.203, -3.03324, 2.11181, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Warrior
-(@CGUID+68, 21225, 548, 3, 255.598, -709.889, -2.97907, 2.18041, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Warrior
-(@CGUID+69, 21225, 548, 3, 329.209, -696.847, -13.1581, 4.439, 7200, 7200, 10, 0, 0, 2), -- Tidewalker Warrior
-(@CGUID+70, 21225, 548, 3, 329.693, -738.226, -13.1582, 0.965313, 7200, 7200, 10, 0, 0, 2), -- Tidewalker Warrior
-(@CGUID+71, 21225, 548, 3, 331.874, -743.37, -13.1582, 1.05485, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Warrior
-(@CGUID+72, 21225, 548, 3, 406.254, -687.278, -7.17277, 3.29471, 7200, 7200, 10, 0, 0, 2), -- Tidewalker Warrior
-(@CGUID+73, 21225, 548, 3, 407.528, -685.157, -7.17769, 3.51838, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Warrior
-(@CGUID+74, 21225, 548, 3, 363.641, -755.815, -13.1582, 3.25842, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Warrior
-(@CGUID+75, 21225, 548, 3, 363.662, -760.779, -13.1582, 3.1681, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Warrior
-(@CGUID+76, 21226, 548, 3, 259.197, -711.107, -3.01371, 2.10187, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Shaman
-(@CGUID+77, 21226, 548, 3, 328.676, -695.094, -13.1582, 0.703951, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Shaman
-(@CGUID+78, 21226, 548, 3, 331.905, -694.395, -13.1581, 4.29763, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Shaman
-(@CGUID+79, 21226, 548, 3, 327.68, -689.369, -13.1581, 4.29371, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Shaman
-(@CGUID+80, 21226, 548, 3, 408.465, -688.941, -7.16796, 3.28355, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Shaman
-(@CGUID+81, 21226, 548, 3, 362.453, -759.324, -13.1581, 3.18853, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Shaman
-(@CGUID+82, 21226, 548, 3, 409.411, -689.852, -7.16332, 3.33303, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Shaman
-(@CGUID+83, 21227, 548, 3, 258.546, -713.563, -3.07589, 2.21576, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Harpooner
-(@CGUID+84, 21227, 548, 3, 325.463, -739.529, -13.1582, 0.995943, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Harpooner
-(@CGUID+85, 21228, 548, 3, 262.427, -710.641, -3.14544, 2.16863, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Hydromancer
-(@CGUID+86, 21228, 548, 3, 335.03, -694.12, -13.1581, 4.05652, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Hydromancer
-(@CGUID+87, 21228, 548, 3, 327.995, -692.257, -13.1581, 4.40366, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Hydromancer
-(@CGUID+88, 21228, 548, 3, 328.523, -741.876, -13.1573, 1.0161, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Hydromancer
-(@CGUID+89, 21228, 548, 3, 408.344, -683.768, -7.18061, 3.55373, 7200, 7200, 0, 0, 0, 0), -- Tidewalker Hydromancer
+(@CGUID+63, 0, 548, 3, 256.465, -706.843, -2.91503, 1.91573, 7200, 7200, 10, 0, 0, 2), -- see creature_spawn_entry
+(@CGUID+64, 0, 548, 3, 327.461, -739.088, -13.1582, 0.992802, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+65, 0, 548, 3, 330.757, -740.644, -13.1573, 1.0161, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+66, 0, 548, 1, 359.995, -758.373, -13.1581, 3.15712, 7200, 7200, 0, 0, 0, 2), -- see creature_spawn_entry
+(@CGUID+67, 0, 548, 3, 259.71, -707.203, -3.03324, 2.11181, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+68, 0, 548, 3, 255.598, -709.889, -2.97907, 2.18041, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+69, 0, 548, 3, 329.209, -696.847, -13.1581, 4.439, 7200, 7200, 10, 0, 0, 2), -- see creature_spawn_entry
+(@CGUID+70, 0, 548, 3, 329.693, -738.226, -13.1582, 0.965313, 7200, 7200, 10, 0, 0, 2), -- see creature_spawn_entry
+(@CGUID+71, 0, 548, 3, 331.874, -743.37, -13.1582, 1.05485, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+72, 0, 548, 3, 406.254, -687.278, -7.17277, 3.29471, 7200, 7200, 10, 0, 0, 2), -- see creature_spawn_entry
+(@CGUID+73, 0, 548, 3, 407.528, -685.157, -7.17769, 3.51838, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+74, 0, 548, 3, 363.641, -755.815, -13.1582, 3.25842, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+75, 0, 548, 3, 363.662, -760.779, -13.1582, 3.1681, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+76, 0, 548, 3, 259.197, -711.107, -3.01371, 2.10187, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+77, 0, 548, 3, 328.676, -695.094, -13.1582, 0.703951, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+78, 0, 548, 3, 331.905, -694.395, -13.1581, 4.29763, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+79, 0, 548, 3, 327.68, -689.369, -13.1581, 4.29371, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+80, 0, 548, 3, 408.465, -688.941, -7.16796, 3.28355, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+81, 0, 548, 3, 362.453, -759.324, -13.1581, 3.18853, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+82, 0, 548, 3, 409.411, -689.852, -7.16332, 3.33303, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+83, 0, 548, 3, 258.546, -713.563, -3.07589, 2.21576, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+84, 0, 548, 3, 325.463, -739.529, -13.1582, 0.995943, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+85, 0, 548, 3, 262.427, -710.641, -3.14544, 2.16863, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+86, 0, 548, 3, 335.03, -694.12, -13.1581, 4.05652, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+87, 0, 548, 3, 327.995, -692.257, -13.1581, 4.40366, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+88, 0, 548, 3, 328.523, -741.876, -13.1573, 1.0161, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+89, 0, 548, 3, 408.344, -683.768, -7.18061, 3.55373, 7200, 7200, 0, 0, 0, 0), -- see creature_spawn_entry
 (@CGUID+90, 21229, 548, 3, 214.584, -251.079, -1.94429, 5.23599, 7200, 7200, 0, 0, 0, 0), -- Greyheart Tidecaller
 (@CGUID+91, 21229, 548, 3, 232.172, -439.314, -4.34939, 3.26377, 7200, 7200, 0, 0, 0, 0), -- Greyheart Tidecaller
 (@CGUID+92, 21229, 548, 3, 214.859, -505.948, -11.4539, 2.80998, 7200, 7200, 0, 0, 0, 0), -- Greyheart Tidecaller
