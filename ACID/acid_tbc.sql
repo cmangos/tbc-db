@@ -16558,6 +16558,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2209902','22099','0','0','100','1','3000','7000','6000','9000','0','0','11','35857','1','0','0','0','0','0','0','0','0','0','Wyrmcult Provisioner - Cast Torch'),
 -- Baron Sablemane
 ('2210301','22103','30','0','100','33','5','22130','0','0','0','0','5','1','5','6','5','11','15','25','5','273','274','0','Baron Sablemane - Random Emote on Receive AI Event 5 (A)'),
+-- Huffer 22114 - NullAI
 -- Rip-Blade Ravager
 ('2212301','22123','0','0','100','1','3000','7000','9000','13000','0','0','11','3242','1','0','0','0','0','0','0','0','0','0','Rip-Blade Ravager - Cast Ravage'),
 -- Mature Cavern Crawler 22132
@@ -16775,6 +16776,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2292001','22920','32','0','100','1','8','40','5000','10000','0','0','11','38777','12','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Rock Rumble in Range'),
 ('2292002','22920','0','0','100','1','3000','6000','8000','16000','0','0','11','38770','1','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Mortal Wound'),
 -- Simon Game Bunny 22923 - npc_simon_game_bunny
+-- Soulgrinder Ritual Bunny 23037 - NullAI
 -- Felguard Degrader 23055
 -- Rivendark 23061
 -- Fel Imp Defender 23078
@@ -18544,6 +18546,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2028501','20285','9','0','100','1','0','5','11000','15000','0','0','11','36208','1','0','0','0','0','0','0','0','0','0','Gan''arg Warp-Tinker - Cast Steal Weapon'),
 ('2028502','20285','0','0','100','1025','6000','11000','9000','14000','0','0','11','36846','16','0','0','0','0','0','0','0','0','0','Gan''arg Warp-Tinker - Cast Mana Bomb on Random Mana User'),
 -- Zaxxis Ambusher (20287) - NSR
+-- Teleporter Explosion Trigger 20296 - NullAI
 -- Nova Terra (20297) - NSR
 -- Mo'arg Warp-Master
 ('2032601','20326','9','0','100','1','0','5','16000','20000','0','0','11','36486','4','0','0','0','0','0','0','0','0','0','Mo''arg Warp-Master - Cast Slime Spray'),
@@ -18878,7 +18881,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Karzo 21733
 -- Zixxy 21734
 -- Chubis 21751
--- Spawn of Dimensius 21780
+-- Spawn of Dimensius 21780 - NullAI
 -- Protectorate Regenerator 21783
 ('2178301','21783','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Protectorate Regenerator - Enable Range Mode on Aggro'),
 ('2178302','21783','9','0','100','1025','0','40','3400','4800','0','0','11','34232','1','256','0','0','0','0','0','0','0','0','Protectorate Regenerator - Cast Holy Bolt'),
@@ -19501,6 +19504,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Smith Gorlunk
 ('2203701','22037','0','0','100','1','3000','9000','15000','20000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Smith Gorlunk - Cast Rend'),
 ('2203702','22037','28','0','100','1','13444','5','5000','9000','0','0','11','13444','1','0','0','0','0','0','0','0','0','0','Smith Gorlunk - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+-- Heart of Fury Visual Trigger 22058 - NullAI
 -- Wildhammer Gryphon Rider 22059
 ('2205901','22059','29','0','100','0','3500','3500','0','0','0','0','54','-11135','11','0','0','0','0','0','0','0','0','0','Wildhammer Gryphon Rider - Say on Generic Timer'),
 -- Shadowmoon Soulstealer 22061 - mob_shadowmoon_soulstealer
@@ -19543,6 +19547,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Illidari Watcher 22093
 ('2209301','22093','11','0','100','0','0','0','0','0','0','0','11','37119','0','34','11','37816','0','34','0','0','0','0','Illidari Watcher - Cast Spirit Particles (Spawn) and Shadowform on Spawn'),
 ('2209302','22093','0','0','100','1025','1000','5000','6000','12000','0','0','11','32736','1','0','0','0','0','0','0','0','0','0','Illidari Watcher - Cast Mortal Strike'),
+-- Shadowlord Deathwail Visual Trigger 22096 - NullAI
 -- Shadowmoon Retainer 22102
 ('2210201','22102','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Shadowmoon Retainer - Enable Range Mode on Aggro'),
 ('2210202','22102','9','0','100','1025','5','30','2300','2600','0','0','11','15547','1','256','0','0','0','0','0','0','0','0','Shadowmoon Retainer - Cast Shoot'),
@@ -19557,6 +19562,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2211304','22113','9','0','100','1025','5','35','4500','5500','0','0','11','36623','1','0','0','0','0','0','0','0','0','0','Mordenai - Cast Arcane Shot'),
 ('2211305','22113','9','0','100','1025','5','40','6000','9000','0','0','11','38370','1','0','0','0','0','0','0','0','0','0','Mordenai - Cast Aimed Shot'),
 ('2211306','22113','9','0','100','1025','5','45','2200','2700','0','0','11','38372','1','256','0','0','0','0','0','0','0','0','Mordenai - Cast Shoot'),
+-- Felfire Summoner 22121 - NullAI
 -- Shadowmoon Eye of Kilrogg 22134
 ('2213401','22134','0','0','100','0','1','1','0','0','0','0','25','0','0','0','54','-10018','0','0','41','7000','0','0','Shadowmoon Eye of Kilrogg - Flee and Text Emote and Delayed Despawn on Aggro'),
 -- Dark Conclave Ritualist
@@ -24063,6 +24069,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1767101','17671','9','0','100','1','0','8','10000','14000','0','0','11','32588','1','0','0','0','0','0','0','0','0','0','Shattered Hand Champion - Cast Concussion Blow and Drop Aggro'),
 ('1767102','17671','0','0','100','1','3000','6000','12000','15000','0','0','11','32587','0','0','0','0','0','0','0','0','0','0','Shattered Hand Champion - Cast Shield Block'),
 ('1767103','17671','13','0','100','1','13000','16000','0','0','0','0','11','11972','1','1','0','0','0','0','0','0','0','0','Shattered Hand Champion - Cast Shield Bash on Target Casting'),
+-- Flame Arrow 17687 - NullAI
 -- Shadowmoon Darkcaster 17694
 ('1769401','17694','30','0','100','1','7','16700','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster - Bow Emote on Receive AI Event C'),
 ('1769402','17694','30','0','100','1','8','16700','0','0','0','0','5','71','0','0','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster - Cheer Emote on Receive AI Event D'),
@@ -25841,6 +25848,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2091106','20911','0','0','100','1025','6000','12000','5000','13000','0','0','11','39033','15','0','0','0','0','0','0','0','0','0','Blackwing Drakonaar - Cast Brood Power: Black'),
 -- Harbinger Skyriss (20912) - boss_harbinger_skyriss
 -- Millhouse Manastorm (20977) - npc_millhouse_manastorm
+-- Wrath-Scryer's Felfire 20978 - NullAI
+-- Wrath-Scryer's Charge Target 21030 - NullAI
 -- Unbound Void Zone (4.3.4 Official Data)
 ('2110101','21101','11','0','100','2','0','0','0','0','0','0','11','36120','0','0','0','0','0','0','0','0','0','0','Unbound Void Zone (Normal) - Cast Consumption on Spawn'),
 ('2110102','21101','11','0','100','4','0','0','0','0','0','0','11','39003','0','0','0','0','0','0','0','0','0','0','Unbound Void Zone (Heroic) - Cast Consumption on Spawn'),
@@ -27506,6 +27515,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Guardian Water Elemental (18001) - NSR
 -- Horde Healing Ward (18036) - TotemAI
 -- Doomfire Targeting 18104 - npc_doomfire_spirit
+-- Infernal Relay (Hyjal) 18242 - NullAI
 -- Night Elf Ancient of War (18485) - NSR
 -- Night Elf Ancient of Lore (18486) - NSR
 -- Night Elf Ancient Protector 18487
@@ -27513,7 +27523,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1848702','18487','9','0','100','1','0','5','8000','12000','0','0','11','45','0','1','0','0','0','0','0','0','0','0','Night Elf Ancient Protector - Cast War Stomp'),
 -- Night Elf Wisp 18502
 ('1850201','18502','0','0','100','1','0','1000','2000','3000','0','0','11','32110','1','0','0','0','0','0','0','0','0','0','Night Elf Wisp - Cast Spark'),
--- Infernal Target (Hyjal) 21075 - NSR
+-- Infernal Target (Hyjal) 21075 - NullAI
 -- Tydormu (23381) - NSR
 -- Indormi (23437) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
@@ -27732,6 +27742,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hellfire Channeler (17256) - mob_hellfire_channeler
 -- Magtheridon (17257) - boss_magtheridon
 -- Burning Abyssal (17454) - mob_abyssal
+-- Target Trigger 17474 - NullAI
 -- Magtheridon's Room 17516
 ('1751601','17516','11','0','100','0','0','0','0','0','0','0','11','30632','0','0','50','0','0','0','0','0','0','0','Magtheridon''s Room - Cast Debris and REACT_PASSIVE on Spawn'),
 -- Hellfire Warder
@@ -28064,6 +28075,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Conjured Elemental 17167
 ('1716701','17167','4','0','100','0','0','0','0','0','0','0','57','2','40','0','0','0','0','0','0','0','0','0','Conjured Elemental - Enable Range Mode on Aggro'),
 ('1716702','17167','0','0','100','1025','2500','2500','1900','2400','0','0','11','31012','1','256','0','0','0','0','0','0','0','0','Conjured Elemental - Cast Water Bolt'),
+-- Chess Square, WHITE (DND) 17208 - NullAI
 -- Human Footman (17211) - npc_human_footman
 -- Nightbane 17225 - boss_nightbane
 -- Kil'rek
@@ -28079,6 +28091,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1728301','17283','11','0','100','0','0','0','0','0','0','0','11','29876','0','0','0','0','0','0','0','0','0','0','Astral Spark - Cast Detonate on Spawn'),
 ('1728302','17283','0','0','100','1','500','500','1000','1000','0','0','11','29864','0','0','0','0','0','0','0','0','0','0','Astral Spark - Cast Sear'),
 ('1728303','17283','29','0','100','0','7000','7000','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Astral Spark - Die on Generic Timer'),
+-- Chess Square, BLACK (DND) 17305 - NullAI
+-- Chess Square, OUTSIDE BLACK (DND) 17316 - NullAI
+-- Chess Square, OUTSIDE WHITE (DND) 17317 - NullAI
 -- Nether Portal - Serenity 17367 - npc_netherspite_portal
 -- Nether Portal - Dominance 17368 - npc_netherspite_portal
 -- Nether Portal - Perseverence 17369 - npc_netherspite_portal
@@ -28097,7 +28112,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grandmother (17603) - npc_grandmother
 -- Infernal Target 17644 - npc_infernal_target
 -- Infernal Relay 17645 - npc_infernal_relay
--- Netherspite Infernal 17646 - npc_netherspite_infernal
+-- Netherspite Infernal 17646 - NullAI
 -- Prince Malchezaar's Axes 17650
 ('1765001','17650','0','0','100','1','10000','10000','10000','10000','0','0','14','-100','0','0','13','100','8','0','0','0','0','0','Prince Malchezaar''s Axes - Reset Threat and Attack New Target'),
 -- Image of Medivh (17651) - npc_image_of_medivh
@@ -28779,10 +28794,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- High Astromancer Solarian (18805) - boss_high_astromancer_solarian
 -- Solarium Priest (18806) - mob_solarium_priest
 -- Solarium Agent (18925) - NSR
+-- Astromancer Solarian Spotlight 18928 - NullAI
 -- Al'ar (19514) - boss_alar
 -- Void Reaver (19516) - boss_void_reaver
 -- Ember of Al'ar
 ('1955101','19551','6','0','100','0','0','0','0','0','0','0','11','34133','0','7','0','0','0','0','0','0','0','0','Ember of Al''ar - Cast Ember Blast on Death'),
+-- Arcane Orb Target 19577 - NullAI
 -- Kael'thas Sunstrider (19622) - boss_kaelthas
 -- Bloodwarder Legionnaire
 ('2003101','20031','4','0','100','0','0','0','0','0','0','0','11','42459','0','1','0','0','0','0','0','0','0','0','Bloodwarder Legionnaire - Cast Dual Wield on Aggro'),
@@ -28880,6 +28897,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grand Astromancer Capernian (20062) - boss_grand_astromancer_capernian
 -- Master Engineer Telonicus (20063) - boss_master_engineer_telonicus
 -- Thaladred the Darkener (20064) - boss_thaladred_the_darkener
+-- Flame Patch (Al'ar) 20602 - NullAI
+-- Nether Vapor 21002 - NullAI
 -- Netherstrand Longbow 21268
 ('2126801','21268','4','0','100','0','0','0','0','0','0','0','57','1','95','0','0','0','0','0','0','0','0','0','Netherstrand Longbow - Enable Caster Mode on Aggro'),
 ('2126802','21268','32','0','100','1025','0','8','5000','5000','0','0','14','-100','0','0','0','0','0','0','0','0','0','0','Netherstrand Longbow - Drop Aggro in Range'),
