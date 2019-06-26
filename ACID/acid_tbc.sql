@@ -16790,6 +16790,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ogri'la Peacekeeper 23115
 ('2311501','23115','0','0','100','1','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Ogri''la Peacekeeper - Cast Net'),
 -- Bombing Run Target Bunny 23118
+('2311801','23118','11','0','100','0','0','0','0','0','0','0','11','40182','0','0','11','40194','0','0','11','40196','0','0','Bombing Run Explosion Bunny - Cast Bombing Run: Summon Bombing Run Explosion Dummy and Bombing Run: Invisibility and Bombing Run: Hunter''s Mark on Spawn'),
 -- Bash'ir Surveyor 23153
 ('2315301','23153','11','0','100','0','0','0','0','0','0','0','11','34427','0','0','0','0','0','0','0','0','0','0','Bash''ir Surveyor - Cast Ethereal Teleport on Spawn'),
 ('2315302','23153','0','0','100','1','18000','28000','21000','29000','0','0','11','40835','4','0','0','0','0','0','0','0','0','0','Bash''ir Surveyor - Cast Stasis Field'),
