@@ -1,6 +1,4 @@
 -- Add static spawns of the Four Dragons in Ogri'la and script spawning them from their respective eggs
--- Core dependency: https://gitlab.com/vengeancewow/tbc-vengeance/commit/d8c196ac73cef7973d93d95761483af187ffa312
--- and https://gitlab.com/vengeancewow/tbc-vengeance/commit/82f2931bc0c10b20adbd3db4890c300eb968c5a5
 
 -- Involved Gameobjects:
 -- 185929 -- Dragonkin Nest 01
