@@ -842,6 +842,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+196, 0, 7, 1, 16, 0, 0, NULL); -- Tyrith
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+(24560, 0, 0, 1, 16, 0, 0, '46025'), -- Priestess Delrissa
 (24685, 0, 0, 1, 16, 0, 0, '44604'), -- Sunblade Magister
 (24722, 0, 0, 1, 16, 0, 0, '25900'), -- Fel Crystal
 (24723, 0, 0, 1, 16, 64, 0, '42459'), -- Selin Fireheart
