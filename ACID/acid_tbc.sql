@@ -24193,8 +24193,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2476204','24762','0','0','100','1025','9000','12000','12000','15000','0','0','11','44765','5','512','0','0','0','0','0','0','0','0','Sunblade Keeper - Cast Banish'),
 ('2476205','24762','9','0','100','1025','0','40','3400','4800','0','0','11','15232','1','256','0','0','0','0','0','0','0','0','Sunblade Keeper - Cast Shadow Bolt'),
 -- Sunblade Sentinel 24777
-('2477701','24777','1','0','100','2','0','0','0','0','0','0','11','44537','0','32','0','0','0','0','0','0','0','0','Sunblade Sentinel (Normal) - Cast Fel Lightning OOC'),
-('2477702','24777','1','0','100','4','0','0','0','0','0','0','11','46048','0','32','0','0','0','0','0','0','0','0','Sunblade Sentinel (Heroic) - Cast Fel Lightning OOC'),
+('2477701','24777','11','0','100','2','0','0','0','0','0','0','11','44537','0','34','0','0','0','0','0','0','0','0','Sunblade Sentinel (Normal) - Cast Fel Lightning on Spawn'),
+('2477702','24777','11','0','100','4','0','0','0','0','0','0','11','46048','0','34','0','0','0','0','0','0','0','0','Sunblade Sentinel (Heroic) - Cast Fel Lightning on Spawn'),
 -- Nether Energy 24781 -- ToDo Check why 44432 isnt removed (stun unitflag?) bypass with '41','60000','0','0', for now as event gets stuck
 ('2478101','24781','30','0','100','1','5','24762','0','0','0','0','28','0','44451','0','11','44432','15','0','41','60000','0','0','Nether Energy - Remove Purple Banish State, Cast Cube Ground State on Receive AI Event A'),
 ('2478102','24781','30','0','100','1','6','24762','0','0','0','0','28','0','44432','0','11','44451','15','0','0','0','0','0','Nether Energy - Remove Cube Ground State, Cast Purple Banish State on Receive AI Event B'),
