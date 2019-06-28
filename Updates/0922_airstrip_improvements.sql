@@ -5,7 +5,7 @@ INSERT INTO `creature_addon` (`guid`, `emote`) VALUES
 (191197, 10),
 (191184, 4);
 -- Make guards stationary
-UPDATE `creature` SET `MovementType`=0 WHERE `guid` IN (191158,191159);
+UPDATE `creature` SET `MovementType`=0, `spawndist` = 0 WHERE `guid` IN (191158,191159);
 -- Change Guard to Mountaineer, add emotes
 -- UPDATE `creature` SET `id`='727' WHERE `guid`=191164; -- already correct in tbc-db
 DELETE FROM `creature_addon` WHERE `guid` IN (191164,191196);
