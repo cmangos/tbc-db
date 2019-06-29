@@ -1386,7 +1386,7 @@ REPLACE INTO `creature_template_addon` VALUES
 (23409, 0, 0, 0, 0, 0, 0, '46907'), -- Invisible Stalker - Large AOI (Scale x3)
 (24938, 0, 0, 2, 16, 376, 0, ''), -- Shattered Sun Marksman emote 376/214 depending weapon it seems (befor emote 48)
 (24979, 0, 0, 2, 16, 376, 0, ''), -- Dawnblade Marksman
-(25001, 0, 0, 1, 16, 0, 0, '12743 45033'), -- Abyssal Flamewalker
+(25001, 0, 0, 1, 16, 0, 0, '12743'), -- Abyssal Flamewalker
 (25033, 0, 0, 1, 16, 333, 0, ''), -- Eredar Sorcerer
 (26253, 0, 0, 1, 16, 333, 0, '18950'), -- Shattered Sun Peacekeeper
 (25132, 0, 0, 2, 16, 0, 0, ''); -- Sunblade Lookout
