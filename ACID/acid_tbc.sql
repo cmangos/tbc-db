@@ -8398,7 +8398,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Forsaken Thug
 ('373401','3734','9','0','100','1','0','5','11000','18000','0','0','11','6253','1','0','0','0','0','0','0','0','0','0','Forsaken Thug - Cast Backhand'),
 -- Apothecary Falthis 3735
-('373501','3735','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Apothecary Falthis - Enable Range Mode on Aggro'),
+('373501','3735','11','0','100','0','0','0','0','0','0','0','57','2','35','0','11','12746','0','0','0','0','0','0','Apothecary Falthis - Enable Range Mode, Cast Summon Voidwalker on Spawn'),
 ('373502','3735','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Apothecary Falthis - Flee at 15% HP'),
 ('373503','3735','9','0','100','1025','0','40','3400','4800','0','0','11','20791','1','256','0','0','0','0','0','0','0','0','Apothecary Falthis - Cast Shadow Bolt'),
 -- Darkslayer Mordenthal 3736
