@@ -17352,7 +17352,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Justinius the Harbinger 18966
 ('1896601','18966','0','0','100','1','5000','15000','30000','50000','0','0','11','33564','0','0','0','0','0','0','0','0','0','0','Justinius the Harbinger - Cast Greater Blessing of Might'),
 ('1896602','18966','2','0','100','0','15','0','0','0','0','0','11','33581','0','1','0','0','0','0','0','0','0','0','Justinius the Harbinger - Cast Divine Shield at 15% HP'),
-('1896603','18966','0','0','100','1','5000','10000','10000','20000','0','0','11','33554','0','0','0','0','0','0','0','0','0','0','Justinius the Harbinger - Cast Judgement of Command'),
+('1896603','18966','0','0','100','1','5000','10000','10000','20000','0','0','11','33554','1','0','0','0','0','0','0','0','0','0','Justinius the Harbinger - Cast Judgement of Command'),
 ('1896604','18966','14','0','100','1','10000','40','10000','15000','0','0','11','33641','12','1','0','0','0','0','0','0','0','0','Justinius the Harbinger - Cast Flash of Light on Friendly Missing HP'),
 ('1896605','18966','4','0','25','32','0','0','0','0','0','0','4','9705','0','0','1','-10300','0','0','0','0','0','0','Justinius the Harbinger - Play Sound or Yell on Aggro'),
 -- Melgromm Highmountain 18969
