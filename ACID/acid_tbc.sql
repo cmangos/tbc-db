@@ -31601,12 +31601,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10450','The rift must be protected!','0','0','0','Black Morass','0'),
 ('-10451','You are running out of time!','0','0','0','Black Morass','0'),
 ('-10452','Victory or death!','0','0','0','Black Morass','0'),
-('-10453','I will end this quickly...','10385','1','0','17826','0'),
-('-10454','We fight to the death!','10384','1','0','17826','0'),
-('-10455','Well... done...','10389','1','0','17826','0'),
-('-10456','Beast! Obey me! Kill them at once!','10383','1','0','17826','0'),
-('-10457','Krypta!','10387','1','0','17826','0'),
-('-10458','It is finished.','10388','1','0','17826','0'),
+-- TBC PLEASE REUSE 10453 - 10458
 ('-10459','It\'s the end of the world!','0','0','0','17931','0'),
 ('-10460','We\'re doomed!','0','0','0','17931','0'),
 ('-10461','Puny $r... you were a... horrible $g king : queen;.','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)','0'),
