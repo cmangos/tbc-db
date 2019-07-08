@@ -28171,7 +28171,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Infernal Relay 17645 - npc_infernal_relay
 -- Netherspite Infernal 17646 - NullAI
 -- Prince Malchezaar's Axes 17650
-('1765001','17650','0','0','100','1','10000','10000','10000','10000','0','0','14','-100','0','0','13','100','8','0','0','0','0','0','Prince Malchezaar''s Axes - Reset Threat and Attack New Target'),
+('1765001','17650','0','0','100','1','10000','10000','10000','10000','0','0','14','-100','0','0','13','1000000','8','1','0','0','0','0','Prince Malchezaar''s Axes - Reset Threat and Attack New Target'),
 -- Image of Medivh (17651) - npc_image_of_medivh
 -- Image of Arcanagos (17652) - npc_image_arcanagos
 -- Skeletal Gryphon (17660) - NSR
