@@ -27017,10 +27017,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Supremus Punch Invis Stalker 23095 - molten_flame
 -- Vengeful Spirit (23109) - NSR
 -- Shadowy Construct 23111 - SD2
--- Doom Blossom 23123
-('2312301','23123','11','0','100','0','0','0','0','0','0','0','11','40186','0','0','21','0','0','0','38','0','0','0','Doom Blossom - Cast Summon Blossom Move Target and Stop Movement and Zone Combat Pulse on Spawn'),
-('2312302','23123','1','0','100','0','10000','10000','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Doom Blossom - Forced Despawn OOC'),
-('2312303','23123','0','0','100','1025','1200','1200','1200','1200','0','0','11','40185','4','0','0','0','0','0','0','0','0','0','Doom Blossom - Cast Shadow Bolt'),
+-- Doom Blossom 23123 - npc_doom_blossom
 -- Shadowmoon Grunt 23147
 ('2314701','23147','4','0','100','0','0','0','0','0','0','0','28','0','34664','0','0','0','0','0','0','0','0','0','Shadowmoon Grunt - Remove Sleep Visual - Flavor on Aggro'),
 -- Aluyen (23157) - NSR
