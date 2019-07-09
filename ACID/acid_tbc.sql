@@ -11619,9 +11619,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2376901','23769','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Jimmy Hyal - Flee at 15% HP'),
 -- Stonemaul Spirit
 ('2378601','23786','4','0','100','32','0','0','0','0','0','0','1','-359','-360','-361','1','-10884','-10885','-10886','0','0','0','0','Stonemaul Spirit - Random Say on Aggro'),
--- Smolderwing
-('2378901','23789','11','0','100','0','0','0','0','0','0','0','11','42433','1','0','0','0','0','0','0','0','0','0','Smolderwing - Cast Smolderwing Fire Breath on Spawn'),
-('2378902','23789','1','0','100','0','4000','4000','0','0','0','0','19','768','0','0','0','0','0','0','0','0','0','0','Smolderwing - Become Hostile after Smolderwing Fire Breath Spell Cast'),
+-- Smolderwing 23789 - npc_smolderwing
 -- Moxie Steelgrille (23797) - NSR
 -- Zeppelin Power Core
 ('2383201','23832','1','0','100','1','1000','1000','5000','5000','0','0','11','42491','0','32','0','0','0','0','0','0','0','0','Zeppelin Power Core - Cast Energized Periodic OOC'),
