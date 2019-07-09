@@ -19641,49 +19641,36 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Demon Portal (Zuluhed) 22336
 ('2233601','22336','29','0','100','0','30000','30000','0','0','0','0','11','38877','0','0','0','0','0','0','0','0','0','0','Demon Portal (Zuluhed) - Cast Summon Arcubus on Generic Timer'),
 -- Arcubus Destroyer 22338 - NSR
--- Illidari Ravager
-('2285701','22857','0','0','100','1','4000','7000','9500','12000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Illidari Ravager - Cast Cleave'),
-('2285702','22857','0','0','100','1','6000','6000','14000','16000','0','0','11','32009','1','0','0','0','0','0','0','0','0','0','Illidari Ravager - Cast Cutdown'),
-('2285703','22857','0','0','100','1','8000','8000','15000','18000','0','0','11','16244','0','0','0','0','0','0','0','0','0','0','Illidari Ravager - Cast Demoralizing Shout'),
--- Shadowhoof Assassin
-('2285801','22858','0','0','100','1','3500','4000','10000','12000','0','0','11','37577','1','0','0','0','0','0','0','0','0','0','Shadowhoof Assassin - Cast Debilitating Strike'),
-('2285802','22858','0','0','100','1','6000','8000','11000','18000','0','0','11','14873','1','0','0','0','0','0','0','0','0','0','Shadowhoof Assassin - Cast Sinister Strike'),
+-- Illidari Ravager 22857 - mob_bt_battle_fighter
+-- Shadowhoof Assassin 22858 - mob_bt_battle_fighter
 -- Shadowhoof Summoner 22859
 ('2285901','22859','1','0','100','1','1000','1000','0','0','0','0','11','39550','0','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Cast Arcane Channeling OOC'),
 ('2285902','22859','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Enable Range Mode on Aggro'),
 ('2285903','22859','9','0','100','1025','0','40','26000','35000','0','0','11','13338','16','544','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Curse of Tongues on Random Player Mana User'),
 ('2285904','22859','9','0','100','1025','0','40','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Shadowhoof Summoner - Cast Shadow Bolt'),
--- Illidari Succubus
-('2286001','22860','0','0','100','1','2000','4000','4000','7000','0','0','11','32202','1','0','0','0','0','0','0','0','0','0','Illidari Succubus - Cast Lash of Pain'),
-('2286002','22860','0','0','100','1','5000','11000','12000','18000','0','0','11','31865','5','1','0','0','0','0','0','0','0','0','Illidari Succubus - Cast Seduction'),
--- Lightsworn Vindicator - might use spell 39794 rp?
-('2286101','22861','0','0','100','1','3000','12000','15000','28000','0','0','11','33632','1','0','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Exorcism'),
-('2286102','22861','0','0','100','1','5000','15000','18000','24000','0','0','11','13005','1','32','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Hammer of Justice'),
-('2286103','22861','14','0','100','1','2500','40','12000','18000','0','0','11','13952','12','1','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Holy Light on Friendly Missing HP'),
-('2286104','22861','14','0','100','1','1000','40','30000','45000','0','0','11','13903','12','1','0','0','0','0','0','0','0','0','Lightsworn Vindicator - Cast Seal of Sacrifice on Friendly Missing HP'),
--- Anchorite Caalen 22862
-('2286201','22862','0','0','100','1','3000','9000','8000','13000','0','0','11','20696','1','0','0','0','0','0','0','0','0','0','Anchorite Caalen - Cast Holy Smite'),
-('2286202','22862','0','0','100','1','9000','12000','12000','15000','0','0','11','35943','0','1','0','0','0','0','0','0','0','0','Anchorite Caalen - Cast Prayer of Healing'),
--- Seasoned Magister 22863
-('2286301','22863','4','0','10','0','0','0','0','0','0','0','1','-10782','-10783','0','0','0','0','0','0','0','0','0','Seasoned Magister - Say on Aggro'),
-('2286302','22863','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Seasoned Magister - Enable Range Mode on Aggro'),
-('2286303','22863','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Seasoned Magister - Flee at 15% HP'),
-('2286304','22863','9','0','100','1025','0','40','3400','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Seasoned Magister - Cast Fireball'),
+-- Illidari Succubus 22860 - mob_bt_battle_fighter
+-- Lightsworn Vindicator 22861 - mob_bt_battle_fighter
+-- Anchorite Caalen 22862 - mob_bt_battle_fighter
+-- Seasoned Magister 22863 - mob_bt_battle_fighter
+-- Fyra Dawnstar 22864 - mob_bt_battle_fighter
 -- Lightsworn Elekk Rider
 ('2296601','22966','6','0','100','0','0','0','0','0','0','0','43','0','0','0','11','39782','0','0','0','0','0','0','Lightsworn Elekk Rider - Dismount and Cast Summon Lightsworn Elekk on Death'),
 -- Scryer Cavalier
 ('2296701','22967','0','0','100','1','1000','20000','20000','240000','0','0','11','30931','0','32','0','0','0','0','0','0','0','0','Scryer Cavalier - Cast Battle Shout'),
 ('2296702','22967','0','0','100','1','5000','15000','15000','25000','0','0','11','35871','1','32','0','0','0','0','0','0','0','0','Scryer Cavalier - Cast Spellbreaker'),
 ('2296703','22967','6','0','100','0','0','0','0','0','0','0','43','0','0','0','11','39783','0','0','0','0','0','0','Scryer Cavalier - Dismount and Cast Summon Eclipsion Hawkstrider on Death'),
--- Illidari Dreadlord 22988
-('2298801','22988','0','0','100','1','5000','10000','15000','25000','0','0','11','39941','1','0','0','0','0','0','0','0','0','0','Illidari Shadowlord - Cast Inferno'),
-('2298802','22988','9','0','100','1','0','20','10000','12000','0','0','11','39942','1','0','0','0','0','0','0','0','0','0','Illidari Shadowlord - Cast Carrion Swarm'),
-('2298803','22988','0','0','100','1','1500','5000','10000','16000','0','0','11','12098','2','32','0','0','0','0','0','0','0','0','Illidari Shadowlord - Cast Sleep'),
+-- Illidari Shadowlord 22988 - mob_bt_battle_fighter
 -- Maiev Shadowsong 22989
 ('2298901','22989','9','0','100','1','0','10','8000','16000','0','0','11','39954','0','0','0','0','0','0','0','0','0','0','Maiev Shadowsong - Cast Fan of Blades'),
 ('2298902','22989','0','0','100','1','9000','18000','16000','24000','0','0','11','32920','0','0','0','0','0','0','0','0','0','0','Maiev Shadowsong - Cast Warp'),
 -- Karabor Infernal 23044
 ('2304401','23044','6','0','100','0','0','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Karabor Infernal - Remove Immolation on Death'),
+-- Vagath 23152
+('2315201','23152','11','0','100','0','0','0','0','0','0','0','42','1','0','0','1','-10043','0','0','0','0','0','0','Vagath - Set Invincible at 1% and Yell on Spawn'),
+('2315202','23152','2','2','100','0','2','0','0','0','0','0','53','10136','0','0','22','2','0','0','0','0','0','0','Vagath - Start Relay Script and Set Phase 2 at 1% HP (Phase 0)'),
+('2315203','23152','30','0','100','0','2','0','0','0','0','0','42','0','1','0','0','0','0','0','0','0','0','0','Vagath - Remove Invincible on Received AI Event'),
+('2315204','23152','6','0','100','0','0','0','0','0','0','0','1','-10042','0','0','53','10134','0','0','0','0','0','0','Vagath - Yell and Start Relay Script on Death'),
+('2315205','23152','0','1','100','0','30000','30000','20000','20000','0','0','42','0','1','0','0','0','0','0','0','0','0','0','Vagath - Remove Invincible (Phase 2)'),
 -- Or'kaos the Insane 23168
 ('2316801','23168','0','0','100','1','5000','9000','10000','12000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Or''kaos the Insane - Cast Uppercut'),
 ('2316802','23168','0','0','100','1','3000','5000','6000','10000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Or''kaos the Insane - Cast Cleave'),
@@ -26956,7 +26943,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Enslaved Servant 22965 - Uppercut Threat Reduce?
 ('2296501','22965','0','0','100','1025','6000','10000','25000','25000','0','0','11','41389','1','0','0','0','0','0','0','0','0','0','Enslaved Servant - Cast Kidney Shot'),
 ('2296502','22965','0','0','100','1025','6000','10000','17000','17000','0','0','11','41388','1','0','0','0','0','0','0','0','0','0','Enslaved Servant - Cast Uppercut'),
--- Akama (22990) - npc_akama_shade
+-- Akama 22990
+('2299001','22990','0','0','100','1','2000','9000','7500','12000','0','0','11','39945','1','0','0','0','0','0','0','0','0','0','Akama - Cast Chain Lightning'),
+('2299002','22990','21','0','100','0','0','0','0','0','0','0','45','5','300','11','0','0','0','0','0','0','0','0','Akama - Send AI Event A on Reached Home'),
 -- Blade of Azzinoth (22996) - mob_blade_of_azzinoth
 -- Flame of Azzinoth (22997) - mob_flame_of_azzinoth
 -- Shadowmoon Houndmaster 23018
@@ -27023,10 +27012,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Okuno (23159) - NSR
 -- Hand of Gorefiend 23172
 ('2317201','23172','0','0','100','1025','5000','9000','30000','30000','0','0','11','38166','0','0','0','0','0','0','0','0','0','0','Hand of Gorefiend - Cast Enrage'),
--- Akama 23191 - Yell: "No! Not yet!"+spell:3617+sound:11386 befor death
-('2319101','23191','1','0','100','0','1000','1000','0','0','0','0','11','34189','0','32','0','0','0','0','0','0','0','0','Akama - Cast Stealth OOC'),
-('2319102','23191','9','0','100','1025','0','30','6000','8000','0','0','11','39945','4','0','0','0','0','0','0','0','0','0','Akama - Cast Chain Lightning'),
-('2319103','23191','0','0','100','1025','5000','8000','3000','7000','0','0','11','40874','4','0','0','0','0','0','0','0','0','0','Akama - Cast Destructive Poison'),
+-- Akama 23191 - npc_akama_shade
 -- Bonechewer Behemoth 23196
 ('2319601','23196','11','0','100','0','0','0','0','0','0','0','31','1','2','0','0','0','0','0','0','0','0','0','Bonechewer Behemoth - Set Random Phase 1-2 on Spawn'),
 ('2319602','23196','4','0','100','0','0','0','0','0','0','0','11','18943','0','34','0','0','0','0','0','0','0','0','Bonechewer Behemoth - Cast Double Attack on Aggro'),
@@ -31188,7 +31174,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10039','The secrets of the library are ours and ours alone!','0','0','0','16540','0'),
 ('-10040','Beware... the upper reaches.','0','0','0','16540','0'),
 ('-10041','Turn back while you can.','0','0','0','16540','0'),
--- RE-USE 10042 - 10043
+('-10042','You\'ve sealed your fate, Akama. The Master will learn of your betrayal!','0','1','0','Vagath','0'),
+('-10043','Pitiful wretches. You dared to assault Illidan\'s temple? Very well, I shall make it your death bed!','0','1','0','Vagath','0'),
 ('-10044','%s skitters out from the shadows...','0','2','0','16179','0'),
 ('-10045','Antelarion says I fell off a big bird, as I fell he caught me... He is so pretty!','0','0','0','22465','0'),
 ('-10046','Antelarion, is it safe to play in the forest yet?','0','0','0','22465','0'),
@@ -31922,8 +31909,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10779','Protect the Botanica at all costs!','0','1','0','17976','0'),
 ('-10780','Protect the Mechanar at all costs!','0','1','0','19166','0'),
 ('-10781','Who disturbs my slumber?  That spear... I still carry the scar!','0','1','0','Xeleth aggro yell','0'),
-('-10782','Come closer, demon! Death awaits!','0','0','0','22863','0'),
-('-10783','I\'ve a message for your master, scum!','0','0','0','22863','0'),
+-- TBC PLEASE REUSE 10782 - 10783
 ('-10784','Once I have hacked off your limbs, I may hang your body from our battlements.','0','0','0','18677','0'),
 ('-10785','I love to bathe in the blood of my enemies!','0','0','0','18677','0'),
 ('-10786','I crave your death!','0','0','0','18677','0'),
