@@ -18073,8 +18073,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1868401','18684','9','0','100','1','0','5','9000','13000','0','0','11','38313','1','0','0','0','0','0','0','0','0','0','Bro''Gaz the Clanless - Cast Pummel'),
 ('1868402','18684','0','0','100','1','6000','11000','16000','21000','0','0','11','12468','4','0','0','0','0','0','0','0','0','0','Bro''Gaz the Clanless - Cast Flamestrike'),
 ('1868403','18684','2','0','100','1','50','0','8000','12000','0','0','11','15586','0','1','0','0','0','0','0','0','0','0','Bro''Gaz the Clanless - Cast Heal at 50% HP'),
--- Ancient Orc Ancestor
-('1868801','18688','8','0','100','0','34063','-1','0','0','0','0','36','19480','1','0','0','0','0','0','0','0','0','0','Ancient Orc Ancestor - Changes Template to Darkened Spirit After Using Soul Mirror (Quest: 10168)'),
+-- Ancient Orc Ancestor 18688
+('1868801','18688','8','0','100','0','34063','-1','0','0','0','0','54','0','0','10170','0','0','0','0','0','0','0','0','Ancient Orc Ancestor - Random Say on Soul Mirror Spellhit'),
 -- Furgu
 ('1878901','18789','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Furgu - Cast Summon Enraged Hippogryph on Aggro'),
 -- Gursha
@@ -18110,8 +18110,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Clefthoof Calf
 ('1918301','19183','0','0','100','1','6000','18000','20000','28000','0','0','11','32023','0','0','0','0','0','0','0','0','0','0','Clefthoof Calf - Cast Hoof Stomp'),
 -- Fel Cannon: Fear 19210 - NSR
--- Deathshadow Acolyte
-('1948001','19480','0','0','100','1','5000','7000','11000','15000','0','0','11','31293','0','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Consuming Shadows'),
+-- Darkened Spirit 19480
+('1948001','19480','11','0','100','0','0','0','0','0','0','0','11','17321','0','0','0','0','0','0','0','0','0','0','Darkened Spirit - Cast Spirit Spawn-in on Spawn'),
+('1948002','19480','0','0','100','1','5000','7000','11000','15000','0','0','11','31293','0','0','0','0','0','0','0','0','0','0','Darkened Spirit - Cast Consuming Shadows'),
 -- Kor'kron Warrior
 ('1959201','19592','11','0','100','0','0','0','0','0','0','0','31','1','4','0','0','0','0','0','0','0','0','0','Kor''kron Warrior - Set Random Phase 1-4 on Spawn'),
 ('1959202','19592','1','29','100','0','0','0','0','0','0','0','43','0','207','0','0','0','0','0','0','0','0','0','Kor''kron Warrior - Mount up (Phase 1)'),
@@ -32277,6 +32278,11 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11211','I tire of interruptions from the insignificant.  Your time has come, $n!','7274','1','0','23282/23281/23261/23281','0'),
 ('-11212','I know you by your stench, little $n.  Here, in my perch, is where your bones shall finally rest.','7274','1','0','23282/23281/23261/23281','0'),
 ('-11213','I believe that I shall feast upon both $r and ogre flesh tonight.','7274','1','0','23282/23281/23261/23281','0'),
+('-11214','Ancestors watch over you, kind one...','0','0','0','Ancient Orc Ancestor 18688','0'),
+('-11215','What is this trickery? I... ARGH...','0','0','0','Ancient Orc Ancestor 18688','0'),
+('-11216','The cold embrace awaits...','0','0','0','Ancient Orc Ancestor 18688','0'),
+('-11217','Thank you...','0','0','0','Ancient Orc Ancestor 18688','0'),
+('-11218','It comes for you...','0','0','0','Ancient Orc Ancestor 18688','0'),
 ('-19997','May the light bless you.','0','0','0','25639','1'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','25639','1'),
 ('-19999','Rest now, you have fought well today.','0','0','0','25639','1');
@@ -32666,6 +32672,12 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10169,0,-10127,0,'23028 - Random Text on Cast Disgruntled'),
 (10169,0,-10128,0,'23028 - Random Text on Cast Disgruntled'),
 (10169,0,-10129,0,'23028 - Random Text on Cast Disgruntled'),
+(10170,0,-11214,0,'18688 - Random Text on Soul Mirror Spellhit'),
+(10170,0,-11215,0,'18688 - Random Text on Soul Mirror Spellhit'),
+(10170,0,-11216,0,'18688 - Random Text on Soul Mirror Spellhit'),
+(10170,0,-11217,0,'18688 - Random Text on Soul Mirror Spellhit'),
+(10170,0,-11218,0,'18688 - Random Text on Soul Mirror Spellhit'),
+(10170,0,0,0,'18688 - No Text on Soul Mirror Spellhit'),
 
 (12000,0,-10617,0,'Common Outland Nagas'),
 (12000,0,-10618,0,'Common Outland Nagas'),
