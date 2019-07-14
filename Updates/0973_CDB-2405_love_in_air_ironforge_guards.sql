@@ -89,7 +89,8 @@ INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALU
 -- Love Tokens
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12865, 8251, 0, 1316); -- condition 507 in classic-db
 -- Adding token menu option
-INSERT INTO gossip_menu_option VALUES (12865, 1, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 1286501, 0, 0, NULL, 1332); -- condition 523 in classic-db
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `condition_id`) VALUES
+(12865, 1, 0, 'Here, I\'d like to give you this token of my love.', 1, 1, 0, 0, 1286501, 0, 0, NULL, 1332); -- condition 523 in classic-db
 -- Heartbroken gossip
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (12865, 8283, 0, 1317); -- condition 508 in classic-db
 -- No Perfume gossip
