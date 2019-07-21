@@ -18074,7 +18074,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1868402','18684','0','0','100','1','6000','11000','16000','21000','0','0','11','12468','4','0','0','0','0','0','0','0','0','0','Bro''Gaz the Clanless - Cast Flamestrike'),
 ('1868403','18684','2','0','100','1','50','0','8000','12000','0','0','11','15586','0','1','0','0','0','0','0','0','0','0','Bro''Gaz the Clanless - Cast Heal at 50% HP'),
 -- Ancient Orc Ancestor 18688
-('1868801','18688','8','0','100','0','34063','-1','0','0','0','0','54','0','0','10170','0','0','0','0','0','0','0','0','Ancient Orc Ancestor - Random Say on Soul Mirror Spellhit'),
+('1868801','18688','8','0','80','0','34063','-1','0','0','0','0','54','0','0','10170','0','0','0','0','0','0','0','0','Ancient Orc Ancestor - Random Say on Soul Mirror Spellhit'),
 -- Furgu
 ('1878901','18789','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Furgu - Cast Summon Enraged Hippogryph on Aggro'),
 -- Gursha
@@ -27141,9 +27141,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hungering Soul Fragment 23401
 ('2340101','23401','1','0','100','0','0','0','0','0','0','0','11','41248','0','32','0','0','0','0','0','0','0','0','Hungering Soul Fragment - Cast Consuming Strikes OOC'),
 -- Illidari Battle-Mage 23402
-('2340201','23402','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Enable Range Mode on Aggro'),
-('2340202','23402','0','0','100','1057','12000','24000','1000','5000','0','0','11','41379','1','0','11','41382','1','0','0','0','0','0','Illidari Battle-Mage - Random Cast Flamestrike or Blizzard'),
-('2340203','23402','0','0','100','1057','1200','1200','1200','2400','0','0','11','41383','1','256','11','41384','1','256','0','0','0','0','Illidari Battle-Mage - Random Cast Fireball or Frostbolt'),
+('2340201','23402','4','0','100','0','0','0','0','0','0','0','57','2','30','0','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Enable Range Mode on Aggro'),
+('2340202','23402','0','0','100','1025','18000','30000','15000','20000','0','0','11','41379','1','0','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Cast Flamestrike'),
+('2340203','23402','0','0','100','1025','12000','24000','8000','16000','0','0','11','41382','1','0','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Cast Blizzard'),
+('2340204','23402','0','0','100','1057','1200','1200','1200','2400','0','0','11','41383','1','256','11','41384','1','256','0','0','0','0','Illidari Battle-Mage - Random Cast Fireball or Frostbolt'),
 -- Illidari Assassin 23403 - Ambush on Vanish End if in Range of Selected Target, has shadowstep spelleffect, maybe temp taunt effect
 ('2340301','23403','11','0','100','0','0','0','0','0','0','0','11','34081','0','34','11','41393','0','34','0','0','0','0','Illidari Assassin - Cast Improved Parry and Riposte on Spawn'),
 ('2340302','23403','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Illidari Assassin - Set Phase 1 on Aggro'),
@@ -32677,7 +32678,6 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10170,0,-11216,0,'18688 - Random Text on Soul Mirror Spellhit'),
 (10170,0,-11217,0,'18688 - Random Text on Soul Mirror Spellhit'),
 (10170,0,-11218,0,'18688 - Random Text on Soul Mirror Spellhit'),
-(10170,0,0,0,'18688 - No Text on Soul Mirror Spellhit'),
 
 (12000,0,-10617,0,'Common Outland Nagas'),
 (12000,0,-10618,0,'Common Outland Nagas'),
