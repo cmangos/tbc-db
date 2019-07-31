@@ -1,6 +1,5 @@
 -- classic-db creatures sync and improvements
-DELETE FROM `creature` WHERE `id` IN (599,14344,13602); -- respawned
-DELETE FROM `creature` WHERE `guid` IN (140783,140784,140785,140786,91752,91795,40727,140755,140756,140771,140772);
+DELETE FROM `creature` WHERE `guid` IN (51895,140780,140781,140782,140783,140784,140785,140786,91752,91795,40727,140755,140756,140771,140772,140773,89424,91750,91751);
 DELETE FROM `creature` WHERE `guid` BETWEEN 5301215 AND 5301219;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnmask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `movementtype`) VALUES
 -- NEW: 599 might be one spawn with movement between these points and random movement at these points
