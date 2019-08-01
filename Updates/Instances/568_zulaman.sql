@@ -596,6 +596,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (24245, 568, 24239, 3, 0), -- Fenstalker -> Hex Lord Malacrass
 (24246, 568, 24239, 3, 0), -- Darkheart -> Hex Lord Malacrass
 (24247, 568, 24239, 3, 0), -- Koragg -> Hex Lord Malacrass
+(23889, 568, 23863, 3, 30), -- Amani'shi Savage -> Zul'jin
 (24504, 568, 23578, 4112, 0), -- Amani'shi Hatcher -> Jan'alai
 (24858, 568, 23574, 4112, 0); -- Soaring Eagle -> Akil'zon
 
