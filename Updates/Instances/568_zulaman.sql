@@ -575,13 +575,14 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 (@CGUID+370, @CGUID+371, 3), -- Amani'shi Berserker -> Amani'shi Berserker
 
-(@CGUID+479, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
-(@CGUID+480, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
-(@CGUID+481, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
-(@CGUID+482, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
-(@CGUID+483, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
-(@CGUID+484, @CGUID+486, 3), -- Amani'shi Savage -> Amani'shi Savage
-(@CGUID+485, @CGUID+486, 3); -- Amani'shi Savage -> Amani'shi Savage
+(@CGUID+479, @CGUID+254, 3), -- Amani'shi Savage -> Zul'jin
+(@CGUID+480, @CGUID+254, 3), -- Amani'shi Savage -> Zul'jin
+(@CGUID+481, @CGUID+254, 3), -- Amani'shi Savage -> Zul'jin
+(@CGUID+482, @CGUID+254, 3), -- Amani'shi Savage -> Zul'jin
+(@CGUID+483, @CGUID+254, 3), -- Amani'shi Savage -> Zul'jin
+(@CGUID+484, @CGUID+254, 3), -- Amani'shi Savage -> Zul'jin
+(@CGUID+485, @CGUID+254, 3); -- Amani'shi Savage -> Zul'jin
+(@CGUID+486, @CGUID+254, 3), -- Amani'shi Savage -> Zul'jin
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (23598, 568, 23578, 4096, 0), -- Amani Dragonhawk Hatchling -> Jan'alai
@@ -596,7 +597,6 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (24245, 568, 24239, 3, 0), -- Fenstalker -> Hex Lord Malacrass
 (24246, 568, 24239, 3, 0), -- Darkheart -> Hex Lord Malacrass
 (24247, 568, 24239, 3, 0), -- Koragg -> Hex Lord Malacrass
-(23889, 568, 23863, 3, 30), -- Amani'shi Savage -> Zul'jin
 (24504, 568, 23578, 4112, 0), -- Amani'shi Hatcher -> Jan'alai
 (24858, 568, 23574, 4112, 0); -- Soaring Eagle -> Akil'zon
 
