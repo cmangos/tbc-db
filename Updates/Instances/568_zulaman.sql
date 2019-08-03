@@ -600,6 +600,9 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (24504, 568, 23578, 4112, 0), -- Amani'shi Hatcher -> Jan'alai
 (24858, 568, 23574, 4112, 0); -- Soaring Eagle -> Akil'zon
 
+INSERT INTO creature_spawn_entry (guid, entry) VALUES
+(@CGUID+57, 23542), (@CGUID+57, 23582); -- Amani'shi Axe Thrower, Amani'shi Tribesman
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 1412, 568, 1, 43.882, 1356.5, 9.27985, 5.18073, 300, 300, 15, 0, 0, 1), -- Squirrel
 (@CGUID+2, 1412, 568, 1, 161.995, 1394.99, 5.89833, 0.362198, 300, 300, 15, 0, 0, 1), -- Squirrel
@@ -657,7 +660,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- @CGUID+54 -- REUSE
 (@CGUID+55, 23582, 568, 1, 19.0948, 1420.57, 11.973, 5.8294, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tribesman
 (@CGUID+56, 23582, 568, 1, 14.5413, 1411.64, 11.982, 0.017453, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tribesman
-(@CGUID+57, 23582, 568, 1, -53.3283, 1416.59, 27.3666, 0.017453, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tribesman
+(@CGUID+57, 0, 568, 1, -53.3283, 1416.59, 27.3666, 0.017453, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+58, 23582, 568, 1, -50.7764, 1415.72, 27.4538, 0, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tribesman
 (@CGUID+59, 23584, 568, 1, -7.98126, 1482.39, 9.37306, 5.54282, 7200, 7200, 5, 0, 0, 1), -- Amani Bear
 (@CGUID+60, 23584, 568, 1, -18.8911, 1488.05, 13.9981, 0.540604, 7200, 7200, 5, 0, 0, 1), -- Amani Bear
