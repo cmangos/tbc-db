@@ -29219,8 +29219,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dragonhawk Egg 23817 - npc_dragonhawk_egg
 -- Amani'shi Hatcher 23818 - npc_amanishi_hatcher
 -- Amani Protective Ward 23822 - TotemAI
--- Amani Dragonhawk
-('2383401','23834','0','0','100','1','9000','9000','27500','27500','0','0','11','43294','1','0','0','0','0','0','0','0','0','0','Amani Dragonhawk - Cast Flame Breath'),
+-- Amani Dragonhawk 23834
+('2383401','23834','0','0','100','1025','8000','14000','12000','16000','0','0','11','43294','1','0','0','0','0','0','0','0','0','0','Amani Dragonhawk - Cast Flame Breath'),
 -- Amani'shi Savage
 ('2388901','23889','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Amani''shi Savage - Set Phase 1 on Aggro'),
 ('2388902','23889','9','5','100','1','0','5','5000','9000','0','0','11','11971','1','0','0','0','0','0','0','0','0','0','Amani''shi Savage - Cast Sunder Armor (Phase 1)'),
