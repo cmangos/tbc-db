@@ -17860,7 +17860,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1806403','18064','2','0','100','0','20','0','0','0','0','0','11','11986','0','1','0','0','0','0','0','0','0','0','Warmaul Shaman - Cast Healing Wave at 20% HP'),
 -- Warmaul Brute
 ('1806501','18065','0','0','100','1','3500','5500','10000','12000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Warmaul Brute - Cast Uppercut'),
--- Mogor
+-- Mogor 18069 - reset top threat on s.28747?
 ('1806901','18069','11','0','100','0','0','0','0','0','0','0','22','1','0','0','19','570425344','0','0','42','1','0','0','Mogor - Set Phase 1 and Remove UnitFlag and Set Invincible on Spawn'),
 ('1806902','18069','0','20','100','1','9400','13200','75000','80000','0','0','11','18975','1','1','0','0','0','0','0','0','0','0','Mogor - Cast Summon Ice Totem (Phase 1 and 3)'),
 ('1806903','18069','9','20','100','1','0','30','6000','8000','0','0','11','16033','4','0','0','0','0','0','0','0','0','0','Mogor - Cast Chain Lightning (Phase 1 and 3)'),
@@ -32115,7 +32115,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10984','ROKDAR SMASH PUNY $n!','0','1','0','18400','0'),
 ('-10985','Closer... Come closer... See what the void brings!','0','1','0','18401','0'),
 ('-10986','Piece by piece I will tear this challenger apart... PIECE BY PIECE!','0','0','0','18402','0'),
-('-10987','No more nice ogre! You hurt Mogor!','0','1','0','18069','0'),
+('-10987','No more nice ogre! You hurt Mogor!!','0','1','0','18069','0'),
 ('-10988','Who dares defile the statue of our beloved?','0','1','0','17715','0'),
 ('-10989','%s lets out a massive roar, calling for aid!','0','2','0','19389','15'),
 ('-10990','Petulant children, pray to your gods for you are about to meet them!','0','1','0','17678','0'),
