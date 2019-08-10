@@ -474,133 +474,259 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (25173, 0, 0, 1, 16, 0, 0, NULL); -- Zul'Aman Door Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+259, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+260, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+261, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+262, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+263, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+264, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+265, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+266, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+113, @CGUID+104, 3), -- Amani'shi Guardian -> Amani'shi Guardian
-(@CGUID+326, @CGUID+50, 515), -- Amani'shi Wind Walker -> Amani'shi Medicine Man
-(@CGUID+63, @CGUID+64, 3), -- Amani Bear -> Amani Bear
-(@CGUID+59, @CGUID+60, 3), -- Amani Bear -> Amani Bear
-(@CGUID+62, @CGUID+61, 3), -- Amani Bear -> Amani Bear
-(@CGUID+405, @CGUID+401, 3), -- Amani'shi Protector -> Amani'shi Wind Walker
+-- Hex Lord Malacrass
+(@CGUID+259, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+260, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+261, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+262, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+263, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+264, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+265, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+266, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+113, @CGUID+104, 1027), -- Amani'shi Guardian -> Amani'shi Guardian
+(@CGUID+104, @CGUID+333, 1024), -- Amani'shi Guardian -> Hex Lord Malacrass
 
+(@CGUID+326, @CGUID+50, 1679), -- Amani'shi Wind Walker -> Amani'shi Medicine Man
+(@CGUID+50, @CGUID+333, 1024), -- Amani'shi Medicine Man -> Hex Lord Malacrass
+
+(@CGUID+103, @CGUID+291, 1679), -- Amani'shi Flame Caster -> Amani'shi Beast Tamer
+(@CGUID+291, @CGUID+333, 1024), -- Amani'shi Beast Tamer -> Hex Lord Malacrass
+
+(@CGUID+368, @CGUID+369, 1167), -- Amani'shi Berserker -> Amani'shi Berserker
+(@CGUID+369, @CGUID+333, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass
+
+(@CGUID+409, @CGUID+406, 1167), -- Amani'shi Flame Caster -> Amani'shi Tempest
+(@CGUID+437, @CGUID+406, 1167), -- Amani'shi Handler -> Amani'shi Tempest
+(@CGUID+406, @CGUID+333, 1024), -- Amani'shi Tempest -> Hex Lord Malacrass
+
+(@CGUID+370, @CGUID+371, 1167), -- Amani'shi Berserker -> Amani'shi Berserker
+(@CGUID+371, @CGUID+333, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass
+
+-- Nalorakk
+(@CGUID+63, @CGUID+64, 1027), -- Amani Bear -> Amani Bear
+(@CGUID+64, @CGUID+43, 1024), -- Amani Bear -> Nalorakk
+
+(@CGUID+59, @CGUID+60, 1027), -- Amani Bear -> Amani Bear
+(@CGUID+60, @CGUID+43, 1024), -- Amani Bear -> Nalorakk
+
+(@CGUID+62, @CGUID+61, 1027), -- Amani Bear -> Amani Bear
+(@CGUID+61, @CGUID+43, 1024), -- Amani Bear -> Nalorakk
+
+(@CGUID+40, @CGUID+43, 1024), -- Amani'shi Axe Thrower -> Nalorakk
+(@CGUID+55, @CGUID+43, 1024), -- Amani'shi Tribesman -> Nalorakk
+(@CGUID+56, @CGUID+43, 1024), -- Amani'shi Tribesman -> Nalorakk
+
+(@CGUID+41, @CGUID+43, 1024), -- Amani'shi Axe Thrower -> Nalorakk
+(@CGUID+51, @CGUID+43, 1024), -- Amani'shi Medicine Man -> Nalorakk
+(@CGUID+57, @CGUID+43, 1024), -- creature_spawn_entry -> Nalorakk
+(@CGUID+58, @CGUID+43, 1024), -- Amani'shi Tribesman -> Nalorakk
+
+(@CGUID+46, @CGUID+43, 1024), -- Amani'shi Warbringer -> Nalorakk
+(@CGUID+47, @CGUID+43, 1024), -- Amani'shi Warbringer -> Nalorakk
+
+(@CGUID+48, @CGUID+43, 1024), -- Amani'shi Warbringer -> Nalorakk
+(@CGUID+49, @CGUID+43, 1024), -- Amani'shi Warbringer -> Nalorakk
+(@CGUID+52, @CGUID+43, 1024), -- Amani'shi Medicine Man -> Nalorakk
+(@CGUID+53, @CGUID+43, 1024), -- Amani'shi Medicine Man -> Nalorakk
+
+-- Akil'zon
+(@CGUID+325, @CGUID+42, 1027), -- Amani'shi Lookout -> Akil'zon
+(@CGUID+395, @CGUID+42, 1027), -- Amani'shi Tempest -> Akil'zon
+
+(@CGUID+404, @CGUID+398, 1027), -- Amani'shi Protector -> Amani'shi Wind Walker
+(@CGUID+398, @CGUID+42, 1024), -- Amani'shi Wind Walker -> Akil'zon
+
+(@CGUID+403, @CGUID+400, 1027), -- Amani'shi Protector -> Amani'shi Wind Walker
+(@CGUID+400, @CGUID+42, 1024), -- Amani'shi Wind Walker -> Akil'zon
+
+(@CGUID+402, @CGUID+399, 1027), -- Amani'shi Protector -> Amani'shi Wind Walker
+(@CGUID+399, @CGUID+42, 1024), -- Amani'shi Wind Walker -> Akil'zon
+
+(@CGUID+405, @CGUID+401, 1027), -- Amani'shi Protector -> Amani'shi Wind Walker
+(@CGUID+401, @CGUID+42, 1024), -- Amani'shi Wind Walker -> Akil'zon
+
+-- Jan'alai
+(@CGUID+67, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 (@CGUID+69, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 (@CGUID+70, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 (@CGUID+72, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 (@CGUID+73, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 (@CGUID+74, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 
-(@CGUID+328, @CGUID+190, 515), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+327, @CGUID+190, 515), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+100, @CGUID+65, 1167), -- Amani'shi Flame Caster -> Amani'shi Scout
+(@CGUID+119, @CGUID+65, 1167), -- Amani'shi Guardian -> Amani'shi Scout
+(@CGUID+129, @CGUID+65, 1167), -- Amani'shi Guardian -> Amani'shi Scout
+(@CGUID+65, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 
-(@CGUID+329, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+243, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+245, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+244, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+330, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+242, @CGUID+192, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+124, @CGUID+98, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+125, @CGUID+98, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+98, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
 
-(@CGUID+249, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+250, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+331, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+251, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+248, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+332, @CGUID+187, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+188, @CGUID+66, 1167), -- Amani'shi Trainer -> Amani'shi Scout
+(@CGUID+238, @CGUID+66, 1167), -- Amani Dragonhawk -> Amani'shi Scout
+(@CGUID+239, @CGUID+66, 1167), -- Amani Dragonhawk -> Amani'shi Scout
+(@CGUID+240, @CGUID+66, 1167), -- Amani Dragonhawk -> Amani'shi Scout
+(@CGUID+241, @CGUID+66, 1167), -- Amani Dragonhawk -> Amani'shi Scout
+(@CGUID+66, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 
-(@CGUID+241, @CGUID+188, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+238, @CGUID+188, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+239, @CGUID+188, 3), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+240, @CGUID+188, 3), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+102, @CGUID+71, 1167), -- Amani'shi Flame Caster -> Amani'shi Scout
+(@CGUID+126, @CGUID+71, 1167), -- Amani'shi Guardian -> Amani'shi Scout
+(@CGUID+128, @CGUID+71, 1167), -- Amani'shi Guardian -> Amani'shi Scout
+(@CGUID+253, @CGUID+71, 1167), -- Amani Dragonhawk -> Amani'shi Scout
+(@CGUID+71, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 
-(@CGUID+246, @CGUID+189, 515), -- Amani Dragonhawk -> Amani'shi Trainer
-(@CGUID+247, @CGUID+189, 515), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+186, @CGUID+45, 1024), -- Amani'shi Trainer -> Jan'alai
+(@CGUID+191, @CGUID+45, 1024), -- Amani'shi Trainer -> Jan'alai
 
-(@CGUID+103, @CGUID+291, 515), -- Amani'shi Flame Caster -> Amani'shi Beast Tamer
+(@CGUID+328, @CGUID+190, 1679), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+327, @CGUID+190, 1679), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+190, @CGUID+45, 1024), -- Amani'shi Trainer -> Jan'alai
 
-(@CGUID+315, @CGUID+316, 515), -- Amani'shi Handler -> Amani'shi Handler
-(@CGUID+431, @CGUID+316, 515), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+433, @CGUID+316, 515), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+329, @CGUID+192, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+243, @CGUID+192, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+245, @CGUID+192, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+244, @CGUID+192, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+330, @CGUID+192, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+242, @CGUID+192, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+192, @CGUID+45, 1024), -- Amani'shi Trainer -> Jan'alai
 
-(@CGUID+108, @CGUID+93, 3), -- Amani'shi Guardian -> Amani'shi Flame Caster
-(@CGUID+107, @CGUID+93, 3), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+249, @CGUID+187, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+250, @CGUID+187, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+331, @CGUID+187, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+251, @CGUID+187, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+248, @CGUID+187, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+332, @CGUID+187, 1167), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+187, @CGUID+45, 1024), -- Amani'shi Trainer -> Jan'alai
 
-(@CGUID+280, @CGUID+282, 3), -- Amani Lynx -> Amani Lynx
-(@CGUID+284, @CGUID+282, 3), -- Amani Lynx -> Amani Lynx
-(@CGUID+281, @CGUID+282, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+246, @CGUID+189, 1679), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+247, @CGUID+189, 1679), -- Amani Dragonhawk -> Amani'shi Trainer
+(@CGUID+189, @CGUID+45, 1024), -- Amani'shi Trainer -> Jan'alai
 
-(@CGUID+272, @CGUID+283, 3), -- Amani Lynx -> Amani Lynx
-(@CGUID+274, @CGUID+283, 3), -- Amani Lynx -> Amani Lynx
-(@CGUID+273, @CGUID+283, 3), -- Amani Lynx -> Amani Lynx
-(@CGUID+271, @CGUID+283, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+120, @CGUID+96, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+127, @CGUID+96, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+96, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
 
-(@CGUID+277, @CGUID+276, 3), -- Amani Lynx -> Amani Lynx
-(@CGUID+278, @CGUID+276, 3), -- Amani Lynx -> Amani Lynx
-(@CGUID+275, @CGUID+276, 3), -- Amani Lynx -> Amani Lynx
-(@CGUID+279, @CGUID+276, 3), -- Amani Lynx -> Amani Lynx
+(@CGUID+117, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+118, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+121, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+101, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
 
-(@CGUID+320, @CGUID+319, 3), -- Amani'shi Handler -> Amani'shi Handler
-(@CGUID+298, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+305, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+309, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+306, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+307, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+304, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+297, @CGUID+319, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+94, @CGUID+99, 1167), -- Amani'shi Flame Caster -> Amani'shi Flame Caster
+(@CGUID+111, @CGUID+99, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+112, @CGUID+99, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+99, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
 
-(@CGUID+293, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
-(@CGUID+296, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
-(@CGUID+432, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
-(@CGUID+294, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
-(@CGUID+295, @CGUID+394, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+-- Halazzi
+(@CGUID+293, @CGUID+394, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+296, @CGUID+394, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+432, @CGUID+394, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+294, @CGUID+394, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+295, @CGUID+394, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+394, @CGUID+44, 1024), -- Amani Elder Lynx -> Halazzi
 
-(@CGUID+430, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
-(@CGUID+312, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
-(@CGUID+299, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
-(@CGUID+311, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
-(@CGUID+313, @CGUID+391, 3), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+430, @CGUID+391, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+312, @CGUID+391, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+299, @CGUID+391, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+311, @CGUID+391, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+313, @CGUID+391, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
+(@CGUID+391, @CGUID+44, 1024), -- Amani Elder Lynx -> Halazzi
 
-(@CGUID+322, @CGUID+321, 3), -- Amani'shi Handler -> Amani'shi Handler
-(@CGUID+292, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+300, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+301, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+302, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+303, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+308, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
-(@CGUID+310, @CGUID+321, 3), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+315, @CGUID+316, 1679), -- Amani'shi Handler -> Amani'shi Handler
+(@CGUID+431, @CGUID+316, 1679), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+433, @CGUID+316, 1679), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+316, @CGUID+44, 1024), -- Amani'shi Handler -> Halazzi
 
-(@CGUID+128, @CGUID+126, 3), -- Amani'shi Guardian -> Amani'shi Guardian
-(@CGUID+102, @CGUID+126, 3), -- Amani'shi Flame Caster -> Amani'shi Guardian
-(@CGUID+71, @CGUID+126, 3), -- Amani'shi Scout -> Amani'shi Guardian
-(@CGUID+253, @CGUID+126, 3), -- Amani Dragonhawk -> Amani'shi Guardian
+(@CGUID+320, @CGUID+319, 1167), -- Amani'shi Handler -> Amani'shi Handler
+(@CGUID+298, @CGUID+319, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+305, @CGUID+319, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+309, @CGUID+319, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+306, @CGUID+319, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+307, @CGUID+319, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+304, @CGUID+319, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+297, @CGUID+319, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+319, @CGUID+44, 1024), -- Amani'shi Handler -> Halazzi
 
-(@CGUID+324, @CGUID+425, 515), -- Tamed Amani Crocolisk -> Amani'shi Beast Tamer
-(@CGUID+323, @CGUID+425, 515), -- Tamed Amani Crocolisk -> Amani'shi Beast Tamer
+(@CGUID+322, @CGUID+321, 1167), -- Amani'shi Handler -> Amani'shi Handler
+(@CGUID+292, @CGUID+321, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+300, @CGUID+321, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+301, @CGUID+321, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+302, @CGUID+321, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+303, @CGUID+321, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+308, @CGUID+321, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+310, @CGUID+321, 1167), -- Amani Lynx Cub -> Amani'shi Handler
+(@CGUID+321, @CGUID+44, 1024), -- Amani'shi Handler -> Halazzi
 
-(@CGUID+318, @CGUID+317, 3), -- Amani'shi Handler -> Amani'shi Handler
-(@CGUID+392, @CGUID+317, 3), -- Amani Elder Lynx -> Amani'shi Handler
-(@CGUID+393, @CGUID+317, 3), -- Amani Elder Lynx -> Amani'shi Handler
+(@CGUID+108, @CGUID+93, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+107, @CGUID+93, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+93, @CGUID+44, 1024), -- Amani'shi Flame Caster -> Halazzi
+(@CGUID+109, @CGUID+44, 1024), -- Amani'shi Guardian -> Halazzi
+(@CGUID+110, @CGUID+44, 1024), -- Amani'shi Guardian -> Halazzi
 
-(@CGUID+410, @CGUID+411, 515), -- Amani'shi Guardian -> Amani'shi Guardian
+(@CGUID+324, @CGUID+425, 1679), -- Tamed Amani Crocolisk -> Amani'shi Beast Tamer
+(@CGUID+323, @CGUID+425, 1679), -- Tamed Amani Crocolisk -> Amani'shi Beast Tamer
+(@CGUID+425, @CGUID+44, 1024), -- Amani'shi Beast Tamer -> Halazzi
 
-(@CGUID+428, @CGUID+429, 515), -- Amani'shi Beast Tamer -> Amani'shi Beast Tamer
+(@CGUID+280, @CGUID+282, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+284, @CGUID+282, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+281, @CGUID+282, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+282, @CGUID+44, 1024), -- Amani Lynx -> Halazzi
 
-(@CGUID+426, @CGUID+427, 515), -- Amani'shi Beast Tamer -> Amani'shi Beast Tamer
+(@CGUID+272, @CGUID+283, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+274, @CGUID+283, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+273, @CGUID+283, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+271, @CGUID+283, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+283, @CGUID+44, 1024), -- Amani Lynx -> Halazzi
 
-(@CGUID+370, @CGUID+371, 3), -- Amani'shi Berserker -> Amani'shi Berserker
+(@CGUID+277, @CGUID+276, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+278, @CGUID+276, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+275, @CGUID+276, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+279, @CGUID+276, 1167), -- Amani Lynx -> Amani Lynx
+(@CGUID+276, @CGUID+44, 1024), -- Amani Lynx -> Halazzi
 
-(@CGUID+479, @CGUID+254, 7), -- Amani'shi Savage -> Zul'jin
-(@CGUID+480, @CGUID+254, 7), -- Amani'shi Savage -> Zul'jin
-(@CGUID+481, @CGUID+254, 7), -- Amani'shi Savage -> Zul'jin
-(@CGUID+482, @CGUID+254, 7), -- Amani'shi Savage -> Zul'jin
-(@CGUID+483, @CGUID+254, 7), -- Amani'shi Savage -> Zul'jin
-(@CGUID+484, @CGUID+254, 7), -- Amani'shi Savage -> Zul'jin
-(@CGUID+485, @CGUID+254, 7), -- Amani'shi Savage -> Zul'jin
-(@CGUID+486, @CGUID+254, 7); -- Amani'shi Savage -> Zul'jin
+(@CGUID+428, @CGUID+429, 1679), -- Amani'shi Beast Tamer -> Amani'shi Beast Tamer
+(@CGUID+429, @CGUID+44, 1024), -- Amani'shi Beast Tamer -> Halazzi
+
+(@CGUID+426, @CGUID+427, 1679), -- Amani'shi Beast Tamer -> Amani'shi Beast Tamer
+(@CGUID+427, @CGUID+44, 1024), -- Amani'shi Beast Tamer -> Halazzi
+
+(@CGUID+318, @CGUID+317, 1167), -- Amani'shi Handler -> Amani'shi Handler
+(@CGUID+392, @CGUID+317, 1167), -- Amani Elder Lynx -> Amani'shi Handler
+(@CGUID+393, @CGUID+317, 1167), -- Amani Elder Lynx -> Amani'shi Handler
+(@CGUID+317, @CGUID+44, 1024), -- Amani'shi Handler -> Halazzi
+
+(@CGUID+105, @CGUID+314, 1167), -- Amani'shi Guardian -> Amani'shi Handler
+(@CGUID+106, @CGUID+314, 1167), -- Amani'shi Guardian -> Amani'shi Handler
+(@CGUID+314, @CGUID+44, 1024), -- Amani'shi Handler -> Halazzi
+
+(@CGUID+413, @CGUID+435, 1167), -- Amani'shi Guardian -> Amani'shi Handler
+(@CGUID+415, @CGUID+435, 1167), -- Amani'shi Guardian -> Amani'shi Handler
+(@CGUID+435, @CGUID+44, 1024), -- Amani'shi Handler -> Halazzi
+
+(@CGUID+114, @CGUID+44, 1024), -- Amani'shi Guardian -> Halazzi
+(@CGUID+115, @CGUID+44, 1024), -- Amani'shi Guardian -> Halazzi
+(@CGUID+412, @CGUID+44, 1024), -- Amani'shi Guardian -> Halazzi
+(@CGUID+414, @CGUID+44, 1024), -- Amani'shi Guardian -> Halazzi
+
+(@CGUID+410, @CGUID+411, 1679), -- Amani'shi Guardian -> Amani'shi Guardian
+(@CGUID+411, @CGUID+44, 1024), -- Amani'shi Guardian -> Halazzi
+
+(@CGUID+116, @CGUID+95, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+434, @CGUID+95, 1167), -- Amani'shi Handler -> Amani'shi Flame Caster
+(@CGUID+95, @CGUID+44, 1024), -- Amani'shi Flame Caster -> Halazzi
+
+(@CGUID+416, @CGUID+408, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+436, @CGUID+408, 1167), -- Amani'shi Handler -> Amani'shi Flame Caster
+(@CGUID+408, @CGUID+44, 1024), -- Amani'shi Flame Caster -> Halazzi
+
+-- Zul'jin
+(@CGUID+479, @CGUID+254, 1031), -- Amani'shi Savage -> Zul'jin
+(@CGUID+480, @CGUID+254, 1031), -- Amani'shi Savage -> Zul'jin
+(@CGUID+481, @CGUID+254, 1031), -- Amani'shi Savage -> Zul'jin
+(@CGUID+482, @CGUID+254, 1031), -- Amani'shi Savage -> Zul'jin
+(@CGUID+483, @CGUID+254, 1031), -- Amani'shi Savage -> Zul'jin
+(@CGUID+484, @CGUID+254, 1031), -- Amani'shi Savage -> Zul'jin
+(@CGUID+485, @CGUID+254, 1031), -- Amani'shi Savage -> Zul'jin
+(@CGUID+486, @CGUID+254, 1031); -- Amani'shi Savage -> Zul'jin
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (23598, 568, 23578, 4096, 0), -- Amani Dragonhawk Hatchling -> Jan'alai
@@ -987,8 +1113,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+363, 24312, 568, 1, -206.665, 1135.72, 0.211828, 3.35103, 7200, 7200, 0, 0, 0, 0), -- Dragonhawk Egg
 (@CGUID+364, 24325, 568, 1, 192.938, 1422.35, 15.7245, 5.91667, 7200, 7200, 0, 0, 0, 0), -- Eagle Troll Spawn Target
 (@CGUID+365, 24358, 568, 1, 120.687, 1674, 42.0217, 1.59044, 7200, 7200, 0, 0, 0, 0), -- Harrison Jones
-(@CGUID+366, 24363, 568, 1, 118.832, 1009.86, 67.8271, 4.86947, 7200, 7200, 5, 0, 0, 1), -- Hex Lord Malacrass
-(@CGUID+367, 24363, 568, 1, 116.286, 1277.44, -15.2687, 4.59022, 7200, 7200, 5, 0, 0, 1), -- Hex Lord Malacrass
+(@CGUID+366, 24363, 568, 1, 118.8317, 1009.857, 67.82713, 4.869469, 7200, 7200, 0, 0, 0, 0), -- Hex Lord Malacrass (Speech Trigger)
+(@CGUID+367, 24363, 568, 1, 116.2857, 1277.441, -15.26866, 4.590216, 7200, 7200, 0, 0, 0, 0), -- Hex Lord Malacrass (Speech Trigger)
 (@CGUID+368, 24374, 568, 1, 126.472, 1058.19, 24.8475, 1.60537, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Berserker
 (@CGUID+369, 24374, 568, 1, 110.95, 1057.65, 25.1551, 1.60537, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Berserker
 (@CGUID+370, 24374, 568, 1, 127.386, 974.192, 30.9888, 1.64699, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Berserker
@@ -1061,46 +1187,46 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+437, 24065, 568, 1, 116.216, 997.449, 30.5761, 5.39307, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
 (@CGUID+438, 24551, 568, 1, 409.009, 1417.03, 74.3915, 0.645772, 7200, 7200, 0, 0, 0, 0), -- Eagle Event Deactivation Trigger
 
-(@CGUID+439, 23889, 568, 1, 118.8996, 863.9178, 33.45926, 1.32645, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+440, 23889, 568, 1, 111.8493, 857.0572, 33.45926, 1.291544, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+441, 23889, 568, 1, 121.2045, 879.6914, 33.4736, 1.343904, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+442, 23889, 568, 1, 119.5603, 874.8582, 33.48911, 1.413717, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+443, 23889, 568, 1, 119.163, 883.8483, 33.51263, 1.448623, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+444, 23889, 568, 1, 128.9489, 856.4097, 33.45927, 1.308997, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+445, 23889, 568, 1, 117.2093, 859.3001, 33.45927, 1.396263, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+446, 23889, 568, 1, 121.2992, 869.9263, 33.45835, 1.291544, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+447, 23889, 568, 1, 121.4269, 889.0146, 33.48838, 1.361357, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+448, 23889, 568, 1, 123.2586, 859.0441, 33.45927, 1.37881, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+449, 23889, 568, 1, 127.4649, 806.6045, 33.37591, 0.7864234, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+450, 23889, 568, 1, 117.8466, 752.9828, 34.25359, 1.585744, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+451, 23889, 568, 1, 120.5805, 749.9258, 36.6992, 1.563146, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+452, 23889, 568, 1, 138.3711, 845.1761, 33.37591, 1.947892, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+453, 23889, 568, 1, 97.50719, 830.7831, 33.37591, 1.907842, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+454, 23889, 568, 1, 114.8797, 803.4038, 33.37591, 1.980439, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+455, 23889, 568, 1, 120.7178, 774.0556, 33.46918, 1.61485, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+456, 23889, 568, 1, 141.7733, 833.0228, 33.37591, 1.806737, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+457, 23889, 568, 1, 120.7964, 752.9783, 34.41016, 1.59902, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+458, 23889, 568, 1, 115.3785, 761.542, 33.74588, 1.57313, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+459, 23889, 568, 1, 120.2376, 784.9492, 33.43027, 1.61485, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+460, 23889, 568, 1, 103.1982, 845.444, 33.37591, 0.921255, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+461, 23889, 568, 1, 124.5724, 740.9375, 43.51482, 1.936757, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+462, 23889, 568, 1, 139.8544, 841.0043, 33.37591, 1.806738, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+463, 23889, 568, 1, 120.5641, 776.3828, 33.46091, 1.612646, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+464, 23889, 568, 1, 116.7438, 779.4268, 33.45065, 1.553077, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+465, 23889, 568, 1, 116.9139, 786.64, 33.42366, 1.556332, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+466, 23889, 568, 1, 120.6859, 752.9145, 34.60355, 1.849801, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+467, 23889, 568, 1, 122.0035, 779.5536, 33.44919, 1.612905, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+468, 23889, 568, 1, 101.0576, 843.1241, 33.37591, 1.208664, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+469, 23889, 568, 1, 123.7317, 767.8876, 33.55695, 1.953839, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+470, 23889, 568, 1, 141.1883, 828.5918, 33.37591, 1.225413, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+471, 23889, 568, 1, 116.7411, 767.7433, 33.51398, 1.563791, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+472, 23889, 568, 1, 119.3231, 791.1002, 33.40871, 1.538814, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+473, 23889, 568, 1, 141.0023, 836.2296, 33.37591, 1.806737, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+474, 23889, 568, 1, 120.6954, 763.8074, 33.64664, 1.562078, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+475, 23889, 568, 1, 99.90952, 838.633, 33.37591, 1.23856, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+476, 23889, 568, 1, 97.78031, 835.1678, 33.37591, 1.418589, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+477, 23889, 568, 1, 120.5933, 751.6091, 35.41208, 1.563146, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+478, 23889, 568, 1, 118.6378, 776.8748, 33.45955, 1.516155, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+439, 23889, 568, 1, 118.8996, 863.9178, 33.45926, 1.32645, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+440, 23889, 568, 1, 111.8493, 857.0572, 33.45926, 1.291544, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+441, 23889, 568, 1, 121.2045, 879.6914, 33.4736, 1.343904, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+442, 23889, 568, 1, 119.5603, 874.8582, 33.48911, 1.413717, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+443, 23889, 568, 1, 119.163, 883.8483, 33.51263, 1.448623, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+444, 23889, 568, 1, 128.9489, 856.4097, 33.45927, 1.308997, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+445, 23889, 568, 1, 117.2093, 859.3001, 33.45927, 1.396263, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+446, 23889, 568, 1, 121.2992, 869.9263, 33.45835, 1.291544, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+447, 23889, 568, 1, 121.4269, 889.0146, 33.48838, 1.361357, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+448, 23889, 568, 1, 123.2586, 859.0441, 33.45927, 1.37881, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+449, 23889, 568, 1, 127.4649, 806.6045, 33.37591, 0.7864234, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+450, 23889, 568, 1, 117.8466, 752.9828, 34.25359, 1.585744, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+451, 23889, 568, 1, 120.5805, 749.9258, 36.6992, 1.563146, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+452, 23889, 568, 1, 138.3711, 845.1761, 33.37591, 1.947892, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+453, 23889, 568, 1, 97.50719, 830.7831, 33.37591, 1.907842, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+454, 23889, 568, 1, 114.8797, 803.4038, 33.37591, 1.980439, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+455, 23889, 568, 1, 120.7178, 774.0556, 33.46918, 1.61485, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+456, 23889, 568, 1, 141.7733, 833.0228, 33.37591, 1.806737, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+457, 23889, 568, 1, 120.7964, 752.9783, 34.41016, 1.59902, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+458, 23889, 568, 1, 115.3785, 761.542, 33.74588, 1.57313, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+459, 23889, 568, 1, 120.2376, 784.9492, 33.43027, 1.61485, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+460, 23889, 568, 1, 103.1982, 845.444, 33.37591, 0.921255, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+461, 23889, 568, 1, 124.5724, 740.9375, 43.51482, 1.936757, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+462, 23889, 568, 1, 139.8544, 841.0043, 33.37591, 1.806738, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+463, 23889, 568, 1, 120.5641, 776.3828, 33.46091, 1.612646, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+464, 23889, 568, 1, 116.7438, 779.4268, 33.45065, 1.553077, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+465, 23889, 568, 1, 116.9139, 786.64, 33.42366, 1.556332, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+466, 23889, 568, 1, 120.6859, 752.9145, 34.60355, 1.849801, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+467, 23889, 568, 1, 122.0035, 779.5536, 33.44919, 1.612905, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+468, 23889, 568, 1, 101.0576, 843.1241, 33.37591, 1.208664, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+469, 23889, 568, 1, 123.7317, 767.8876, 33.55695, 1.953839, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+470, 23889, 568, 1, 141.1883, 828.5918, 33.37591, 1.225413, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+471, 23889, 568, 1, 116.7411, 767.7433, 33.51398, 1.563791, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+472, 23889, 568, 1, 119.3231, 791.1002, 33.40871, 1.538814, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+473, 23889, 568, 1, 141.0023, 836.2296, 33.37591, 1.806737, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+474, 23889, 568, 1, 120.6954, 763.8074, 33.64664, 1.562078, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+475, 23889, 568, 1, 99.90952, 838.633, 33.37591, 1.23856, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+476, 23889, 568, 1, 97.78031, 835.1678, 33.37591, 1.418589, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+477, 23889, 568, 1, 120.5933, 751.6091, 35.41208, 1.563146, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+478, 23889, 568, 1, 118.6378, 776.8748, 33.45955, 1.516155, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
 
 (@CGUID+479, 23889, 568, 1, 129.2538, 689.1514, 45.19472, 4.660029, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+480, 23889, 568, 1, 135.8311, 688.9501, 45.19472, 4.747295, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
