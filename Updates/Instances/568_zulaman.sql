@@ -4,6 +4,7 @@ DBScriptName: instance_zulaman
 DB%Complete: 60
 DBComment:
 * Add s.42350 RP Script
+* Add s.42220 RP Script (Issue: Npcs dont reset their position after being affected by the aura out of combat, needs to be handled in creature_movement)
 EndDBScriptData */
 
 SET @CGUID := 5680000; -- creatures
