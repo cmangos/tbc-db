@@ -496,6 +496,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+368, @CGUID+369, 1167), -- Amani'shi Berserker -> Amani'shi Berserker
 (@CGUID+369, @CGUID+333, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass
 
+(@CGUID+54, @CGUID+406, 1167), -- Amani'shi Medicine Man -> Amani'shi Tempest
 (@CGUID+409, @CGUID+406, 1167), -- Amani'shi Flame Caster -> Amani'shi Tempest
 (@CGUID+437, @CGUID+406, 1167), -- Amani'shi Handler -> Amani'shi Tempest
 (@CGUID+406, @CGUID+333, 1024), -- Amani'shi Tempest -> Hex Lord Malacrass
@@ -802,7 +803,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+51, 23581, 568, 1, -50.7096, 1423.47, 27.4899, 6.17846, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Medicine Man
 (@CGUID+52, 23581, 568, 1, -71.6538, 1315.07, 41.3016, 4.4855, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Medicine Man
 (@CGUID+53, 23581, 568, 1, -88.9147, 1314.97, 41.1013, 4.97419, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Medicine Man
--- @CGUID+54 -- REUSE
+(@CGUID+54, 23581, 568, 1, 120.3534, 992.8157, 30.74231, 2.373648, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Medicine Man
 (@CGUID+55, 23582, 568, 1, 19.0948, 1420.57, 11.973, 5.8294, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tribesman
 (@CGUID+56, 23582, 568, 1, 14.5413, 1411.64, 11.982, 0.017453, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tribesman
 (@CGUID+57, 0, 568, 1, -53.3283, 1416.59, 27.3666, 0.017453, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
