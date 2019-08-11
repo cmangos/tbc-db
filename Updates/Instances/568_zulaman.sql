@@ -577,6 +577,10 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+253, @CGUID+71, 1167), -- Amani Dragonhawk -> Amani'shi Scout
 (@CGUID+71, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 
+(@CGUID+122, @CGUID+97, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+123, @CGUID+97, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+97, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
+
 (@CGUID+186, @CGUID+45, 1024), -- Amani'shi Trainer -> Jan'alai
 (@CGUID+191, @CGUID+45, 1024), -- Amani'shi Trainer -> Jan'alai
 
@@ -744,7 +748,11 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (24246, 568, 24239, 3, 0), -- Darkheart -> Hex Lord Malacrass
 (24247, 568, 24239, 3, 0), -- Koragg -> Hex Lord Malacrass
 (24504, 568, 23578, 4112, 0), -- Amani'shi Hatcher -> Jan'alai
-(24858, 568, 23574, 4112, 0); -- Soaring Eagle -> Akil'zon
+(24858, 568, 23574, 4112, 0), -- Soaring Eagle -> Akil'zon
+(23877, 568, 23863, 1024, 0), -- Amani Lynx Spirit -> Zul'jin
+(23878, 568, 23863, 1024, 0), -- Amani Bear Spirit -> Zul'jin
+(23879, 568, 23863, 1024, 0), -- Amani Dragonhawk Spirit -> Zul'jin
+(23880, 568, 23863, 1024, 0); -- Amani Eagle Spirit -> Zul'jin
 
 INSERT INTO creature_spawn_entry (guid, entry) VALUES
 (@CGUID+57, 23542), (@CGUID+57, 23582); -- Amani'shi Axe Thrower, Amani'shi Tribesman
