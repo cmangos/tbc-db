@@ -532,20 +532,20 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+53, @CGUID+43, 1024), -- Amani'shi Medicine Man -> Nalorakk
 
 -- Akil'zon
-(@CGUID+325, @CGUID+42, 1027), -- Amani'shi Lookout -> Akil'zon
-(@CGUID+395, @CGUID+42, 1027), -- Amani'shi Tempest -> Akil'zon
-
 (@CGUID+404, @CGUID+398, 1027), -- Amani'shi Protector -> Amani'shi Wind Walker
-(@CGUID+398, @CGUID+42, 1024), -- Amani'shi Wind Walker -> Akil'zon
+(@CGUID+398, @CGUID+395, 1024), -- Amani'shi Wind Walker -> Amani'shi Tempest
 
 (@CGUID+403, @CGUID+400, 1027), -- Amani'shi Protector -> Amani'shi Wind Walker
-(@CGUID+400, @CGUID+42, 1024), -- Amani'shi Wind Walker -> Akil'zon
+(@CGUID+400, @CGUID+395, 1024), -- Amani'shi Wind Walker -> Amani'shi Tempest
 
 (@CGUID+402, @CGUID+399, 1027), -- Amani'shi Protector -> Amani'shi Wind Walker
-(@CGUID+399, @CGUID+42, 1024), -- Amani'shi Wind Walker -> Akil'zon
+(@CGUID+399, @CGUID+395, 1024), -- Amani'shi Wind Walker -> Amani'shi Tempest
 
 (@CGUID+405, @CGUID+401, 1027), -- Amani'shi Protector -> Amani'shi Wind Walker
-(@CGUID+401, @CGUID+42, 1024), -- Amani'shi Wind Walker -> Akil'zon
+(@CGUID+401, @CGUID+395, 1024), -- Amani'shi Wind Walker -> Amani'shi Tempest
+
+(@CGUID+325, @CGUID+395, 1024), -- Amani'shi Lookout -> Amani'shi Tempest
+(@CGUID+395, @CGUID+42, 1024), -- Amani'shi Tempest -> Akil'zon
 
 -- Jan'alai
 (@CGUID+67, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
@@ -1074,7 +1074,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+322, 24065, 568, 1, 221.267, 1067.83, 0.375, 1.69092, 7200, 7200, 5, 0, 0, 1), -- Amani'shi Handler
 (@CGUID+323, 24138, 568, 1, 273.399, 1054.89, 0.000612732, 5.66519, 7200, 7200, 0, 0, 0, 0), -- Tamed Amani Crocolisk
 (@CGUID+324, 24138, 568, 1, 275.893, 1058.4, 0.00207663, 5.66519, 7200, 7200, 0, 0, 0, 0), -- Tamed Amani Crocolisk
-(@CGUID+325, 24175, 568, 1, 206.9213, 1473.42, 26.00007, 3.961897, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Lookout
+(@CGUID+325, 24175, 568, 1, 206.9213, 1473.42, 26.00007, 3.961897, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Lookout
 (@CGUID+326, 24179, 568, 1, 148.5265, 1418.595, 3.30332, 3.024379, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Wind Walker
 (@CGUID+327, 23834, 568, 1, -202.4418, 1158.546, -0.6538, 5.082749, 7200, 7200, 0, 0, 0, 0), -- Amani Dragonhawk
 (@CGUID+328, 23834, 568, 1, -205.1979, 1157.169, -1.2432, 5.039547, 7200, 7200, 0, 0, 0, 0), -- Amani Dragonhawk
@@ -1144,17 +1144,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+392, 24530, 568, 1, 364.396, 1048.9, 9.58343, 4.76475, 7200, 7200, 0, 0, 0, 0), -- Amani Elder Lynx
 (@CGUID+393, 24530, 568, 1, 375.055, 1050.34, 9.58932, 4.60767, 7200, 7200, 0, 0, 0, 0), -- Amani Elder Lynx
 (@CGUID+394, 24530, 568, 1, 148.932, 1113.78, 1.30726, 0.122173, 7200, 7200, 0, 0, 0, 0), -- Amani Elder Lynx
-(@CGUID+395, 24549, 568, 1, 302.193, 1385.68, 57.4693, 3.4605, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tempest
+(@CGUID+395, 24549, 568, 1, 302.193, 1385.68, 57.4693, 3.4605, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Tempest
 (@CGUID+396, 25173, 568, 1, 121.179, 1605.34, 55.6535, 3.57792, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Door Trigger
 (@CGUID+397, 25173, 568, 1, 134.03, 1642.78, 42.2785, 4.53786, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Door Trigger
-(@CGUID+398, 24179, 568, 1, 232.749, 1428.7, 28.8242, 1.8326, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Wind Walker
-(@CGUID+399, 24179, 568, 1, 244.807, 1367.66, 48.9498, 2.61799, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Wind Walker
-(@CGUID+400, 24179, 568, 1, 231.797, 1393.42, 40.5887, 1.69297, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Wind Walker
-(@CGUID+401, 24179, 568, 1, 284.044, 1372.32, 49.405, 2.77507, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Wind Walker
-(@CGUID+402, 24180, 568, 1, 246.908, 1375.15, 49.405, 2.89725, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Protector
-(@CGUID+403, 24180, 568, 1, 224.069, 1394.26, 40.1985, 1.309, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Protector
-(@CGUID+404, 24180, 568, 1, 223.801, 1424.94, 29.4699, 1.16937, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Protector
-(@CGUID+405, 24180, 568, 1, 274.358, 1385.16, 49.405, 3.75246, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Protector
+(@CGUID+398, 24179, 568, 1, 232.749, 1428.7, 28.8242, 1.8326, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Wind Walker
+(@CGUID+399, 24179, 568, 1, 244.807, 1367.66, 48.9498, 2.61799, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Wind Walker
+(@CGUID+400, 24179, 568, 1, 231.797, 1393.42, 40.5887, 1.69297, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Wind Walker
+(@CGUID+401, 24179, 568, 1, 284.044, 1372.32, 49.405, 2.77507, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Wind Walker
+(@CGUID+402, 24180, 568, 1, 246.908, 1375.15, 49.405, 2.89725, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Protector
+(@CGUID+403, 24180, 568, 1, 224.069, 1394.26, 40.1985, 1.309, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Protector
+(@CGUID+404, 24180, 568, 1, 223.801, 1424.94, 29.4699, 1.16937, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Protector
+(@CGUID+405, 24180, 568, 1, 274.358, 1385.16, 49.405, 3.75246, 1800, 1800, 0, 0, 0, 0), -- Amani'shi Protector
 (@CGUID+406, 24549, 568, 1, 114.859, 992.121, 30.5475, 0.610865, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tempest
 -- @CGUID+407 -- REUSE
 (@CGUID+408, 23596, 568, 1, 376.49, 1112.34, 6.0581, 1.01229, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
