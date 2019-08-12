@@ -1,5 +1,5 @@
 -- Add missing Geoff 3509
-DELETE FROM `creature` WHERE `guid` = 87023 AND `id` = 3509;
+DELETE FROM `creature` WHERE `guid` = 87023;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnmask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (87023, 3509, 0, 1, -8839.57, 666.54, 97.95, 0.48, 300, 300, 0, 0); -- TDB guid
 
