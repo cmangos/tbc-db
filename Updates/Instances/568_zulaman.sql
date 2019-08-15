@@ -475,18 +475,18 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (25173, 0, 0, 1, 16, 0, 0, NULL); -- Zul'Aman Door Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
--- Hex Lord Malacrass
-(@CGUID+259, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+260, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+261, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+262, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+263, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+264, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+265, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+266, @CGUID+104, 1027), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+113, @CGUID+104, 1027), -- Amani'shi Guardian -> Amani'shi Guardian
-(@CGUID+104, @CGUID+333, 1024), -- Amani'shi Guardian -> Hex Lord Malacrass
+-- Entrance
+(@CGUID+259, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+260, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+261, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+262, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+263, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+264, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+265, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+266, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+113, @CGUID+104, 3), -- Amani'shi Guardian -> Amani'shi Guardian
 
+-- Hex Lord Malacrass
 (@CGUID+326, @CGUID+50, 1679), -- Amani'shi Wind Walker -> Amani'shi Medicine Man
 (@CGUID+50, @CGUID+333, 1024), -- Amani'shi Medicine Man -> Hex Lord Malacrass
 
@@ -861,7 +861,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+101, 23596, 568, 1, -82.871, 1147.99, 5.67737, 1.55334, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Flame Caster
 (@CGUID+102, 23596, 568, 1, -140.903, 1134.42, 0.167008, 1.22173, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+103, 23596, 568, 1, 81.7096, 1144.18, 0.197549, 3.3227, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
-(@CGUID+104, 23597, 568, 1, 138.816, 1587.09, 43.6489, 4.74729, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
+(@CGUID+104, 23597, 568, 1, 138.816, 1587.09, 43.6489, 4.74729, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+105, 23597, 568, 1, 346.195, 1046.09, 9.59506, 3.14159, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+106, 23597, 568, 1, 338.112, 1051.79, 9.60488, 5.25344, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+107, 23597, 568, 1, 249.004, 1043.29, 3.57493, 1.79769, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
@@ -870,7 +870,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+110, 23597, 568, 1, 234.715, 1019.957, 16.38691, 1.81514, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Guardian
 (@CGUID+111, 23597, 568, 1, -83.8267, 1196.94, 5.7285, 5.46288, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+112, 23597, 568, 1, -80.5356, 1197.13, 5.59467, 3.83972, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
-(@CGUID+113, 23597, 568, 1, 101.955, 1588.22, 43.6776, 4.93928, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
+(@CGUID+113, 23597, 568, 1, 101.955, 1588.22, 43.6776, 4.93928, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+114, 23597, 568, 1, 337.235, 1022.44, 9.60534, 4.5204, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+115, 23597, 568, 1, 327.933, 1030.54, 9.60501, 3.29867, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+116, 23597, 568, 1, 358.713, 1112.35, 5.87011, 0.733038, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
@@ -1016,14 +1016,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+256, 23878, 568, 1, 134.6, 724.341, 45.1947, 4.06662, 604800, 604800, 0, 0, 0, 0), -- Amani Bear Spirit
 (@CGUID+257, 23879, 568, 1, 91.133, 705.753, 45.1947, 0.0174533, 604800, 604800, 0, 0, 0, 0), -- Amani Dragonhawk Spirit
 (@CGUID+258, 23880, 568, 1, 105.526, 724.926, 45.1947, 5.35816, 604800, 604800, 0, 0, 0, 0), -- Amani Eagle Spirit
-(@CGUID+259, 23889, 568, 1, 81.7104, 1515.83, 21.2338, 0.091743, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+260, 23889, 568, 1, 121.549, 1525.11, 21.2338, 3.13302, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+261, 23889, 568, 1, 158.714, 1527.86, 21.2338, 0.158039, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+262, 23889, 568, 1, 102.504, 1523.64, 21.2338, 2.85248, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+263, 23889, 568, 1, 167.954, 1523.31, 21.2338, 1.51648, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+264, 23889, 568, 1, 136.024, 1525.09, 21.2338, 6.22001, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+265, 23889, 568, 1, 83.6504, 1527.7, 21.2338, 6.12353, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+266, 23889, 568, 1, 160.569, 1514.97, 21.2338, 2.20896, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+259, 23889, 568, 1, 81.7104, 1515.83, 21.2338, 0.091743, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+260, 23889, 568, 1, 121.549, 1525.11, 21.2338, 3.13302, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+261, 23889, 568, 1, 158.714, 1527.86, 21.2338, 0.158039, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+262, 23889, 568, 1, 102.504, 1523.64, 21.2338, 2.85248, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+263, 23889, 568, 1, 167.954, 1523.31, 21.2338, 1.51648, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+264, 23889, 568, 1, 136.024, 1525.09, 21.2338, 6.22001, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+265, 23889, 568, 1, 83.6504, 1527.7, 21.2338, 6.12353, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+266, 23889, 568, 1, 160.569, 1514.97, 21.2338, 2.20896, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+267, 23897, 568, 1, 250.141, 996.782, 10.9915, 2.00713, 7200, 7200, 0, 0, 0, 0), -- Zungam
 (@CGUID+268, 23999, 568, 1, 296.225, 1468.35, 81.5893, 5.37561, 604800, 604800, 0, 0, 0, 0), -- Harkor
 (@CGUID+269, 24001, 568, 1, 383.776, 1082.97, 6.04766, 1.58825, 604800, 604800, 0, 0, 0, 0), -- Ashli
