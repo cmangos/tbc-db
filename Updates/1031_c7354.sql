@@ -1,3 +1,3 @@
--- Correct Size & Faction for Idol of Hakkar 148838 - wotlk-db
-UPDATE `gameobject_template` SET `size` = 3, `faction` = 35 WHERE `entry` = 148838;
+-- Correct Faction & Speed for Ragglesnout 7354 - Strangly enough Elite not Rare Elite
+UPDATE `creature_template` SET `Faction` = 152, `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (8 / 7) WHERE `entry` = 7354;
 
