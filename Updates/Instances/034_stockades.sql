@@ -141,7 +141,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+3, 75295, 34, 165.322, 57.6663, -34.8562, 2.9147, 0, 0, 0.993572, 0.113203, 43200, 43200, 100, 1), -- Large Iron Bound Chest
 (@OGUID+4, 75298, 34, 188.603, 81.585, -33.9396, 2.47837, 0, 0, 0.945519, 0.325568, 86400, 86400, 100, 1), -- Large Solid Chest
 (@OGUID+5, 75298, 34, 90.5921, -145.882, -33.9396, 1.44862, 0, 0, 0.66262, 0.748956, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+6, 75298, 34, 151.69, -65.131, -34.8562, -1.18682, 0, 0, 0.559193, -0.829037, 86400, 86400, 100, 1); -- Large Solid Chest
+(@OGUID+6, 75298, 34, 151.69, -65.131, -34.8562, -1.18682, 0, 0, 0.559193, -0.829037, 86400, 86400, 100, 1), -- Large Solid Chest
+(@OGUID+7, 75298, 34, 173.185, 146.955, -33.9396, -2.05949, 0, 0, -0.857168, 0.515037, 86400, 86400, 100, 1); -- Large Solid Chest
 
 -- ======
 -- EVENTS
@@ -168,7 +169,8 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+3, @PGUID+1, 0, 'Stormwind Stockades - Large Iron Bound Chest (75295)'),
 (@OGUID+4, @PGUID+1, 0, 'Stormwind Stockades - Large Solid Chest Pool (75298)'),
 (@OGUID+5, @PGUID+1, 0, 'Stormwind Stockades - Large Solid Chest Pool (75298)'),
-(@OGUID+6, @PGUID+1, 0, 'Stormwind Stockades - Large Solid Chest Pool (75298)');
+(@OGUID+6, @PGUID+1, 0, 'Stormwind Stockades - Large Solid Chest Pool (75298)'),
+(@OGUID+7, @PGUID+1, 0, 'Stormwind Stockades - Large Solid Chest Pool (75298)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
