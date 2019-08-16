@@ -549,6 +549,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 -- Jan'alai
 (@CGUID+67, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
+(@CGUID+68, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 (@CGUID+69, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 (@CGUID+70, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 (@CGUID+72, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
