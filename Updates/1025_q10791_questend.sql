@@ -17,36 +17,34 @@ INSERT INTO `creature_movement_template` (`entry`,`point`,`position_x`,`position
 
 DELETE FROM `dbscripts_on_event` WHERE `id` = 12650;
 INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(12650, 1, 0, 0, 0, 0, 18384, 10, 4, 2000001565, 0, 0, 0, 0, 0, 0, 0, 'force Malukaz 18384 to: text_emote'),
-(12650, 1, 20, 2, 0, 0, 18384, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz 18384 - movement changed to 2:waypoint'),
+(12650, 1, 0, 0, 0, 0, 18384, 10, 4, 2000001565, 0, 0, 0, 0, 0, 0, 0, 'Force Malukaz - Text'),
+(12650, 1, 20, 2, 0, 0, 18384, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Force Malukaz - Wayoint Movement'),
 (12650, 15, 10, 19616, 100000, 0, 0, 0, 0, 0, 0, 0, 0, -2687.927, 4396.282, 32.17587, 0.6079453, 'Summon Terokkar Wolf Spirit 19616'),
 (12650, 44, 8, 18384, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Killcredit Quest 10791'),
-(12650, 45, 29, 3, 1, 0, 18384, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz 18384 - npc_flag added'),
-(12650, 46, 0, 0, 0, 0, 18384, 10, 4, 2000001572, 0, 0, 0, 0, 0, 0, 0, 'force Malukaz 18384 to: say text');
+(12650, 45, 29, 3, 1, 0, 18384, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Force Malukaz - npc_flag added'),
+(12650, 46, 0, 0, 0, 0, 18384, 10, 4, 2000001572, 0, 0, 0, 0, 0, 0, 0, 'Force Malukaz - Text');
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1838401,1838402,1961601,1961602);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1838401, 0, 15, 34317, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz  - Cast Transform Malukaz 34317'),
-(1838401, 2, 15, 28892, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz  - Cast Nature Channeling 28892'),
-(1838401, 5, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz  - Cast Nature Channeling 28892'),
-(1838401, 8, 0, 0, 0, 0, 18384, 10, 4, 2000001566, 0, 0, 0, 0, 0, 0, 0, 'Malukaz  - force 18384 to: say text'),
-(1838401, 11, 0, 0, 0, 0, 18384, 10, 4, 2000001567, 0, 0, 0, 0, 0, 0, 0, 'Malukaz  - force 18384 to: say text'),
-(1838401, 16, 0, 0, 0, 0, 18384, 10, 4, 2000001568, 0, 0, 0, 0, 0, 0, 0, 'Malukaz  - force 18384 to: say text'),
-(1838401, 20, 47, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz  - Interrupt Channelling'),
-(1838401, 20, 15, 34312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz  - Cast Summon Terokkar Wolf Spirit 34312'), -- dummy (12650, 15, 10
-(1838401, 38, 14, 34317, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Remove Transform Malukaz 34317'),
-(1838401, 39, 20, 0, 0, 0, 18384, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - movement chenged to 0:idle'),
+(1838401, 1, 15, 34317, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Cast Transform Malukaz 34317'),
+(1838401, 3, 15, 28892, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Cast Nature Channeling 28892'),
+(1838401, 6, 0, 0, 0, 0, 0, 0, 0, 2000001566, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Text'),
+(1838401, 9, 0, 0, 0, 0, 0, 0, 0, 2000001567, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Text'),
+(1838401, 14, 0, 0, 0, 0, 0, 0, 0, 2000001568, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Text'),
+(1838401, 18, 47, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Interrupt Channelling'),
+(1838401, 18, 15, 34312, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Cast Summon Terokkar Wolf Spirit 34312'), -- dummy (12650, 15, 10
+(1838401, 38, 14, 34317, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Remove Transform Malukaz 34317'),
+(1838401, 39, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Malukaz - Idle Movement'),
 
 (1961601, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Terokkar Wolf Spirit - RUN ON'),
 
 (1961602, 0, 1, 393, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Terokkar Wolf Spirit - Emote'),
-(1961602, 3, 1, 393, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Terokkar Wolf Spirit - Emote'),
-
+(1961602, 4, 1, 393, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Terokkar Wolf Spirit - Emote'),
 (1961602, 4, 0, 0, 0, 0, 0, 0, 0, 2000001569, 0, 0, 0, 0, 0, 0, 0, 'Terokkar Wolf Spirit - text_emote'),
 (1961602, 4, 0, 0, 0, 0, 0, 0, 0, 2000001570, 0, 0, 0, 0, 0, 0, 0, 'Terokkar Wolf Spirit - text_emote'),
-(1961602, 5, 1, 2, 0, 0, 18384, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'force 18384 to: emote'),
-(1961602, 8, 0, 0, 0, 0, 18384, 10, 4, 2000001571, 0, 0, 0, 0, 0, 0, 0, 'force 18384 to: say text'),
-(1961602, 17, 18, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'DESPAWN_SELF');
+(1961602, 5, 1, 2, 0, 0, 18384, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Force Malukaz - Emote'),
+(1961602, 8, 0, 0, 0, 0, 18384, 10, 4, 2000001571, 0, 0, 0, 0, 0, 0, 0, 'Force Malukaz - Text'),
+(1961602, 17, 18, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Terokkar Wolf Spirit - Despawn');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000000220,2000000223,2000000224,2000000225,2000000226);
 DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000001565 AND 2000001572;
