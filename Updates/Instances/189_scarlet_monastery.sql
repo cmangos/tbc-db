@@ -521,19 +521,13 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+13, 2046, 189, 1003.95, 1362.73, 27.3063, 2.75762, 0, 0, 0.981627, 0.190809, 7200, 7200, 100, 1), -- Goldthorn
 (@OGUID+14, 2046, 189, 944.069, 1421.18, 18.0233, 1.37881, 0, 0, 0.636078, 0.771625, 7200, 7200, 100, 1), -- Goldthorn
 (@OGUID+15, 2046, 189, 1037.43, 1401.24, 27.3085, -0.261798, 0, 0, -0.130525, 0.991445, 7200, 7200, 100, 1), -- Goldthorn
-(@OGUID+16, 3703, 189, 1771.76, -377.259, 8.01092, -1.51844, 0, 0, 0.688354, -0.725374, 7200, 7200, 100, 1), -- Armor Crate
-(@OGUID+17, 3704, 189, 1745.17, -357.994, 8.01148, -1.85005, 0, 0, 0.798635, -0.601815, 7200, 7200, 100, 1), -- Weapon Crate
+-- 16 - 17
 (@OGUID+18, 19283, 189, 277.481, -425.391, 20.0659, -1.69297, 0, 0, 0.748956, -0.66262, 300, 300, 100, 1), -- Compendium of the Fallen
 (@OGUID+19, 19284, 189, 281.39, -352.262, 20.4047, -0.610865, 0, 0, 0.300706, -0.953717, 50, 50, 100, 1), -- Mythology of the Titans
 (@OGUID+20, 20726, 189, 238.548, -307.686, 21.4263, 2.67035, 0, 0, 0.97237, 0.233445, 300, 300, 100, 1), -- Beginnings of the Undead Threat
 (@OGUID+21, 21581, 189, 280.905, -354.204, 20.4015, 2.93215, 0, 0, 0.994522, 0.104528, 7200, 7200, 100, 1), -- Aftermath of the Second War
 (@OGUID+22, 21582, 189, 244.774, -423.123, 19.8917, 2.1293, 0, 0, 0.87462, 0.48481, 7200, 7200, 100, 1), -- Beyond the Dark Portal
-(@OGUID+23, 75296, 189, 277.401, -365.671, 20.3969, 3.05433, 0, 0, 0.999048, 0.043619, 7200, 7200, 100, 1), -- Large Iron Bound Chest
-(@OGUID+24, 75297, 189, 1743.48, -407.254, 8.01026, 0.017452, 0, 0, 0.00872589, 0.999962, 86400, 86400, 255, 1), -- Large Iron Bound Chest
-(@OGUID+25, 75299, 189, 1762.11, 1153.56, 7.49028, -1.55334, 0, 0, 0.700909, -0.71325, 7200, 7200, 100, 1), -- Large Solid Chest
-(@OGUID+26, 75299, 189, 1847.77, 1276.34, 18.1573, 2.80998, 0, 0, 0.986286, 0.165048, 7200, 7200, 100, 1), -- Large Solid Chest
-(@OGUID+27, 75299, 189, 223.898, -292.728, 19.1996, 2.51327, 0, 0, 0.951057, 0.309017, 7200, 7200, 100, 1), -- Large Solid Chest
-(@OGUID+28, 75300, 189, 1684.87, -345.412, 18.0233, 0.034907, 0, 0, 0.017452, 0.999848, 7200, 7200, 100, 1), -- Large Solid Chest
+-- 23 - 28
 (@OGUID+29, 97700, 189, 1167.79, 1347.26, 31.5494, -1.5708, 0, 0, -0.707107, 0.707107, 7200, 7200, 100, 1), -- Secret Door
 (@OGUID+30, 97701, 189, 1169.03, 1345.63, 33.0456, 3.14159, 0, 0, 1, 0, 1, 1, 100, 1), -- Torch
 (@OGUID+31, 97801, 189, 1951.79, -436.72, 6.29011, 0.36652, 0, 0, 0.182236, 0.983255, 7200, 7200, 100, 1), -- Fine Chair
@@ -616,21 +610,34 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+108, 176693, 189, 175.142, -437.204, 18.8796, -0.445059, 0, 0, -0.220697, 0.975342, 7200, 7200, 100, 1), -- Chair
 (@OGUID+109, 181191, 189, 1778.06, 1349.17, 18.249, -0.628317, 0, 0, 0, 1, 180, 180, 255, 1), -- Skullpile 01
 (@OGUID+110, 181191, 189, 1775.75, 1350.25, 18.2316, 2.75761, 0, 0, 0, 1, 180, 180, 255, 1), -- Skullpile 01
+(@OGUID+111, 75299, 189, 1762.11, 1153.56, 7.49028, -1.55334, 0, 0, 0.700909, -0.71325, 86400, 86400, 100, 1), -- Large Solid Chest
+(@OGUID+112, 75299, 189, 1847.77, 1276.34, 18.1573, 2.80998, 0, 0, 0.986286, 0.165048, 86400, 86400, 100, 1), -- Large Solid Chest
+(@OGUID+113, 75299, 189, 1748.22, 1252.28, 18.1573, -0.575957, 0, 0, -0.284015, 0.95882, 86400, 86400, 100, 1), -- Large Solid Chest
+(@OGUID+114, 75296, 189, 1788.14, 1394.66, -0.455138, 2.63544, 0, 0, 0.968147, 0.250383, 86400, 86400, 100, 1), -- Large Iron Bound Chest
+-- 115 - 120
+(@OGUID+121, 75296, 189, 277.401, -365.671, 20.3969, 3.05433, 0, 0, 0.999048, 0.043619, 86400, 86400, 100, 1), -- Large Iron Bound Chest
+(@OGUID+122, 75299, 189, 223.898, -292.728, 19.1996, 2.51327, 0, 0, 0.951057, 0.309017, 86400, 86400, 100, 1), -- Large Solid Chest
+(@OGUID+123, 75299, 189, 278.514, -401.431, 20.3957, 3.03684, 0, 0, 0.998629, 0.0523524, 86400, 86400, 100, 1), -- Large Solid Chest
+-- 124 - 130
+(@OGUID+131, 3703, 189, 1771.76, -377.259, 8.01092, -1.51844, 0, 0, 0.688354, -0.725374, 86400, 86400, 100, 1), -- Armor Crate
+(@OGUID+132, 3704, 189, 1745.17, -357.994, 8.01148, -1.85005, 0, 0, 0.798635, -0.601815, 86400, 86400, 100, 1), -- Weapon Crate
+(@OGUID+133, 75297, 189, 1743.48, -407.254, 8.01026, 0.017452, 0, 0, 0.00872589, 0.999962, 86400, 86400, 100, 1), -- Large Iron Bound Chest
+(@OGUID+134, 75300, 189, 1684.87, -345.412, 18.0233, 0.034907, 0, 0, 0.017452, 0.999848, 86400, 86400, 100, 1), -- Large Solid Chest
 
 -- TBC+ only
-(@OGUID+111, 186267, 189, 1776.27, 1348.74, 20.4116, 6.27281, 0, 0, 0, 0, 25, 25, 0, 1), -- Pumpkin Shrine
-(@OGUID+112, 186269, 189, 1774.87, 1347.73, 17.9662, -2.87979, 0, 0, 0.991445, -0.130526, 180, 180, 100, 1), -- Headless Horseman Candle
-(@OGUID+113, 186269, 189, 1774.77, 1349.65, 18.0742, 2.33874, 0, 0, 0.920505, 0.390731, 180, 180, 100, 1), -- Headless Horseman Candle
-(@OGUID+114, 186269, 189, 1776.55, 1346.47, 17.9903, -1.46608, 0, 0, 0.669131, -0.743145, 180, 180, 100, 1), -- Headless Horseman Candle
-(@OGUID+115, 186269, 189, 1776.73, 1350.71, 18.2772, 1.5708, 0, 0, 0.707107, 0.707107, 180, 180, 100, 1), -- Headless Horseman Candle
-(@OGUID+116, 186269, 189, 1778.53, 1347.8, 18.1645, -0.575959, 0, 0, 0.284015, -0.95882, 180, 180, 100, 1), -- Headless Horseman Candle
-(@OGUID+117, 186269, 189, 1778.41, 1349.91, 18.2217, 0.331613, 0, 0, 0.165048, 0.986286, 180, 180, 100, 1), -- Headless Horseman Candle
-(@OGUID+118, 186269, 189, 1765.26, 1347.54, 17.5504, 0.069813, 0, 0, 0.034899, 0.999391, 180, 180, 41, 1), -- Headless Horseman Candle
-(@OGUID+119, 186314, 189, 1765.28, 1347.46, 17.5514, 0.100363, 0, 0, 0.0501604, 0.998741, 25, 25, 0, 1), -- Loosely Turned Soil
-(@OGUID+120, 186327, 189, 1775.85, 1348.62, 18.1307, 6.23924, 0, 0, 0.0219706, -0.999759, 25, 25, 0, 1), -- Headless Horseman Pumpkin Table
-(@OGUID+121, 186328, 189, 1777.72, 1349.6, 18.2638, 0.575959, 0, 0, 0.284015, 0.95882, 180, 180, 100, 1), -- Skull 01
-(@OGUID+122, 186328, 189, 1775.78, 1346.66, 18.0012, -1.55334, 0, 0, 0.700909, -0.71325, 180, 180, 100, 1), -- Skull 01
-(@OGUID+123, 186328, 189, 1777.65, 1347.4, 18.1198, 0.017453, 0, 0, 0.008727, 0.999962, 180, 180, 100, 1); -- Skull 01
+(@OGUID+200, 186267, 189, 1776.27, 1348.74, 20.4116, 6.27281, 0, 0, 0, 0, 25, 25, 0, 1), -- Pumpkin Shrine
+(@OGUID+201, 186269, 189, 1774.87, 1347.73, 17.9662, -2.87979, 0, 0, 0.991445, -0.130526, 180, 180, 100, 1), -- Headless Horseman Candle
+(@OGUID+202, 186269, 189, 1774.77, 1349.65, 18.0742, 2.33874, 0, 0, 0.920505, 0.390731, 180, 180, 100, 1), -- Headless Horseman Candle
+(@OGUID+203, 186269, 189, 1776.55, 1346.47, 17.9903, -1.46608, 0, 0, 0.669131, -0.743145, 180, 180, 100, 1), -- Headless Horseman Candle
+(@OGUID+204, 186269, 189, 1776.73, 1350.71, 18.2772, 1.5708, 0, 0, 0.707107, 0.707107, 180, 180, 100, 1), -- Headless Horseman Candle
+(@OGUID+205, 186269, 189, 1778.53, 1347.8, 18.1645, -0.575959, 0, 0, 0.284015, -0.95882, 180, 180, 100, 1), -- Headless Horseman Candle
+(@OGUID+206, 186269, 189, 1778.41, 1349.91, 18.2217, 0.331613, 0, 0, 0.165048, 0.986286, 180, 180, 100, 1), -- Headless Horseman Candle
+(@OGUID+207, 186269, 189, 1765.26, 1347.54, 17.5504, 0.069813, 0, 0, 0.034899, 0.999391, 180, 180, 41, 1), -- Headless Horseman Candle
+(@OGUID+208, 186314, 189, 1765.28, 1347.46, 17.5514, 0.100363, 0, 0, 0.0501604, 0.998741, 25, 25, 0, 1), -- Loosely Turned Soil
+(@OGUID+209, 186327, 189, 1775.85, 1348.62, 18.1307, 6.23924, 0, 0, 0.0219706, -0.999759, 25, 25, 0, 1), -- Headless Horseman Pumpkin Table
+(@OGUID+210, 186328, 189, 1777.72, 1349.6, 18.2638, 0.575959, 0, 0, 0.284015, 0.95882, 180, 180, 100, 1), -- Skull 01
+(@OGUID+211, 186328, 189, 1775.78, 1346.66, 18.0012, -1.55334, 0, 0, 0.700909, -0.71325, 180, 180, 100, 1), -- Skull 01
+(@OGUID+212, 186328, 189, 1777.65, 1347.4, 18.1198, 0.017453, 0, 0, 0.008727, 0.999962, 180, 180, 100, 1); -- Skull 01
 
 -- ======
 -- EVENTS
@@ -642,19 +649,19 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- TBC+ only
-(@OGUID+111, 12), -- Pumpkin Shrine (Hallow's End)
-(@OGUID+112, 12), -- Headless Horseman Candle (Hallow's End)
-(@OGUID+113, 12), -- Headless Horseman Candle (Hallow's End)
-(@OGUID+114, 12), -- Headless Horseman Candle (Hallow's End)
-(@OGUID+115, 12), -- Headless Horseman Candle (Hallow's End)
-(@OGUID+116, 12), -- Headless Horseman Candle (Hallow's End)
-(@OGUID+117, 12), -- Headless Horseman Candle (Hallow's End)
-(@OGUID+118, 12), -- Headless Horseman Candle (Hallow's End)
-(@OGUID+119, 12), -- Loosely Turned Soil (Hallow's End)
-(@OGUID+120, 12), -- Headless Horseman Pumpkin Table (Hallow's End)
-(@OGUID+121, 12), -- Skull 01 (Hallow's End)
-(@OGUID+122, 12), -- Skull 01 (Hallow's End)
-(@OGUID+123, 12); -- Skull 01 (Hallow's End)
+(@OGUID+200, 12), -- Pumpkin Shrine (Hallow's End)
+(@OGUID+201, 12), -- Headless Horseman Candle (Hallow's End)
+(@OGUID+202, 12), -- Headless Horseman Candle (Hallow's End)
+(@OGUID+203, 12), -- Headless Horseman Candle (Hallow's End)
+(@OGUID+204, 12), -- Headless Horseman Candle (Hallow's End)
+(@OGUID+205, 12), -- Headless Horseman Candle (Hallow's End)
+(@OGUID+206, 12), -- Headless Horseman Candle (Hallow's End)
+(@OGUID+207, 12), -- Headless Horseman Candle (Hallow's End)
+(@OGUID+208, 12), -- Loosely Turned Soil (Hallow's End)
+(@OGUID+209, 12), -- Headless Horseman Pumpkin Table (Hallow's End)
+(@OGUID+210, 12), -- Skull 01 (Hallow's End)
+(@OGUID+211, 12), -- Skull 01 (Hallow's End)
+(@OGUID+212, 12); -- Skull 01 (Hallow's End)
 
 -- =======
 -- POOLING
@@ -676,14 +683,17 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 (6490, @PGUID+1, 0, 'Scarlet Monastery Graveyard - Azshir the Sleepless (6490) - Rare Spawn');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+16, @PGUID+82, 0, 'Scarlet Monastery Armory - Armor Crate (3703)'),
-(@OGUID+17, @PGUID+82, 0, 'Scarlet Monastery Armory - Armor Crate (3704)'),
-(@OGUID+23, @PGUID+81, 0, 'Scarlet Monastery Library - Large Iron Bound Chest (75296)'),
-(@OGUID+24, @PGUID+82, 0, 'Scarlet Monastery Armory - Large Iron Bound Chest (75297)'),
-(@OGUID+25, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Solid Chest (75299)'),
-(@OGUID+26, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Solid Chest (75299)'),
-(@OGUID+27, @PGUID+81, 0, 'Scarlet Monastery Library - Large Solid Chest (75299)'),
-(@OGUID+28, @PGUID+82, 0, 'Scarlet Monastery Armory - Large Solid Chest (75300)');
+(@OGUID+111, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Solid Chest (75299)'),
+(@OGUID+112, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Solid Chest (75299)'),
+(@OGUID+113, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Solid Chest (75299)'),
+(@OGUID+114, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Iron Bound Chest (75296)'),
+(@OGUID+121, @PGUID+81, 0, 'Scarlet Monastery Library - Large Iron Bound Chest (75296)'),
+(@OGUID+122, @PGUID+81, 0, 'Scarlet Monastery Library - Large Solid Chest (75299)'),
+(@OGUID+123, @PGUID+81, 0, 'Scarlet Monastery Library - Large Solid Chest (75299)'),
+(@OGUID+131, @PGUID+82, 0, 'Scarlet Monastery Armory - Armor Crate (3703)'),
+(@OGUID+132, @PGUID+82, 0, 'Scarlet Monastery Armory - Weapon Crate (3704)'),
+(@OGUID+133, @PGUID+82, 0, 'Scarlet Monastery Armory - Large Iron Bound Chest (75297)'),
+(@OGUID+134, @PGUID+82, 0, 'Scarlet Monastery Armory - Large Solid Chest (75300)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
