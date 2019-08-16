@@ -31,5 +31,5 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 
 DELETE FROM `pool_gameobject_template` WHERE `pool_entry` IN (25517,25518,25519,25520);
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-(161557, 25518, 0, 161557 - 'Milly''s Harvest (161557)');
+(161557, 25518, 0, 'Milly''s Harvest (161557)');
 
