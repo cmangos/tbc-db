@@ -5,7 +5,6 @@ DB%Complete: 80
 DBComment:
 * probably movement missing e.g @CGUID+6, @CGUID+9, @CGUID+23, @CGUID+24, @CGUID+54, @CGUID+64, @CGUID+70, @CGUID+108
 * movement missing for entry 5720 + 5721 + 8580 in circle clockwise
-* go 148838 wrong scale and position
 * Hazzas (Leader) & Morphaz should fly nearly synchronized, so i guess they should share path and/or should be linked. Or Spawnpositions & Waypointorder or Speeds needs adjustments
 EndDBScriptData */
 
@@ -585,7 +584,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+10, 148834, 109, -443.855, 136.101, -148.74, 2.53073, 0, 0, 0.953717, 0.300706, 180, 180, 100, 1), -- Atal'ai Statue
 (@OGUID+11, 148835, 109, -443.417, 53.8312, -148.74, 0.471239, 0, 0, 0.233445, 0.97237, 180, 180, 100, 1), -- Atal'ai Statue
 (@OGUID+12, 148836, 109, -420.848, 94.7487, -174.196, 3.14159, 0, 0, 1, 0, 120, 120, 0, 1), -- Altar of Hakkar
-(@OGUID+13, 148838, 109, -497.789, 95.1423, -189.73, 0.306738, 0, 0, 0, 0, -43200, -43200, 0, 1), -- Idol of Hakkar
+(@OGUID+13, 148838, 109, -476.2693, 94.41199, -189.7297, 1.588249, 0, 0, 0, 0, -43200, -43200, 0, 1), -- Idol of Hakkar
 (@OGUID+14, 148883, 109, -515.68, 95.1875, -148.74, -0.139624, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
 (@OGUID+15, 148883, 109, -419.627, 94.2566, -148.74, 2.04204, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
 (@OGUID+16, 148883, 109, -491.417, 136.021, -148.74, 0.872664, 0, 0, 0, 1, -43200, -43200, 255, 1), -- Atal'ai Light SMALL (DND)
