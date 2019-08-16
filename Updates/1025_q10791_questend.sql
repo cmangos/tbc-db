@@ -48,7 +48,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1961602, 8, 0, 0, 0, 0, 18384, 10, 4, 2000001571, 0, 0, 0, 0, 0, 0, 0, 'force 18384 to: say text'),
 (1961602, 17, 18, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'DESPAWN_SELF');
 
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000000220,2000000223,2000000224,2000000225,2000001571);
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000000220,2000000223,2000000224,2000000225,2000000226);
 DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000001565 AND 2000001572;
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 (2000001565, '%s dons his wolf-fur vestments.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 0, 0, 'Malukaz 18384 - Quest 10791'),
