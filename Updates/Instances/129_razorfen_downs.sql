@@ -453,8 +453,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+34, 40199, 129, 2394.63, 886.028, 55.4499, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
 (@OGUID+35, 40200, 129, 2399.8, 893.103, 39.144, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
 (@OGUID+36, 40201, 129, 2361.76, 965.172, 39.826, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
-(@OGUID+37, 75300, 129, 2502.75, 944.867, 49.1772, -2.05949, 0, 0, 0.857167, -0.515038, 5400, 5400, 100, 1), -- Large Solid Chest
-(@OGUID+38, 75300, 129, 2358.62, 966.718, 40.2895, 1.309, 0, 0, 0.608761, 0.793353, 5400, 5400, 100, 1), -- Large Solid Chest
+(@OGUID+37, 75300, 129, 2502.75, 944.867, 49.1772, -2.05949, 0, 0, 0.857167, -0.515038, 86400, 86400, 100, 1), -- Large Solid Chest
+(@OGUID+38, 75300, 129, 2358.62, 966.718, 40.2895, 1.309, 0, 0, 0.608761, 0.793353, 86400, 86400, 100, 1), -- Large Solid Chest
 (@OGUID+39, 142141, 129, 2479.97, 1006.34, 24.0507, -2.32129, 0, 0, -0.91706, 0.398748, 7200, 7200, 100, 1), -- Arthas' Tears
 (@OGUID+40, 142141, 129, 2536.55, 736.053, 53.7239, 3.05433, 0, 0, 0.999048, 0.0436174, 7200, 7200, 100, 1), -- Arthas' Tears
 (@OGUID+41, 142141, 129, 2423.88, 1027.32, 38.2242, -2.3911, 0, 0, -0.930417, 0.366502, 7200, 7200, 100, 1), -- Arthas' Tears
@@ -490,7 +490,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+71, 157817, 129, 2605.48, 726.652, 55.132, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Holding Pen
 (@OGUID+72, 157818, 129, 2600.1, 709.109, 55.132, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Holding Pen
 (@OGUID+73, 157819, 129, 2581.85, 698.974, 55.132, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Holding Pen
-(@OGUID+74, 157820, 129, 2561.65, 692.778, 55.132, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1); -- Holding Pen
+(@OGUID+74, 157820, 129, 2561.65, 692.778, 55.132, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Holding Pen
+(@OGUID+75, 75300, 129, 2435.01, 995.961, 49.3044, 1.37881, 0, 0, 0.636078, 0.771625, 86400, 86400, 100, 1); -- Large Solid Chest
 
 -- ======
 -- EVENTS
@@ -520,7 +521,8 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@OGUID+37, @PGUID+23, 0, 'Razorfen Downs - Large Solid Chest (75300)'),
-(@OGUID+38, @PGUID+23, 0, 'Razorfen Downs - Large Solid Chest (75300)');
+(@OGUID+38, @PGUID+23, 0, 'Razorfen Downs - Large Solid Chest (75300)'),
+(@OGUID+75, @PGUID+23, 0, 'Razorfen Downs - Large Solid Chest (75300)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
