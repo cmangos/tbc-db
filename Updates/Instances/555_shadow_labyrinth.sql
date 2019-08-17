@@ -1319,9 +1319,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1864006, 13, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1864006, 20, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1864101, 1, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
-(1866701, 1, 0, 0, 0, 0, 0, 0, 0, 2000005220, 2000005235, 0, 0, 0, 0, 0, 0, ''),
-(1866702, 1, 0, 0, 0, 0, 0, 0, 0, 2000005043, 2000005230, 2000005236, 0, 0, 0, 0, 0, ''),
-(1866703, 1, 0, 0, 0, 0, 0, 0, 0, 2000005044, 2000005231, 0, 0, 0, 0, 0, 0, ''),
+(1866701, 1, 0, 0, 0, 0, 0, 0, 0, 2000020103, 2000020106, 0, 0, 0, 0, 0, 0, ''),
+(1866702, 1, 0, 0, 0, 0, 0, 0, 0, 2000020101, 2000020104, 2000020107, 0, 0, 0, 0, 0, ''),
+(1866703, 1, 0, 0, 0, 0, 0, 0, 0, 2000020102, 2000020105, 0, 0, 0, 0, 0, 0, ''),
 (1870801, 1, 35, 5, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'THROW_AI_EVENT'),
 (1870801, 4, 15, 33332, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Suppression Blast 33332'),
 (1870802, 1, 35, 5, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'THROW_AI_EVENT'),
@@ -1401,15 +1401,15 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (183295, 3, 20, 2, 0, 0, 18634, @CGUID+82, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 3, 20, 2, 0, 0, 18632, @CGUID+51, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement');
 
-DELETE FROM dbscript_string WHERE entry IN (2000005043,2000005044,2000005220,2000005230,2000005231,2000005235,2000005236);
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000020101,2000020102,2000020103,2000020104,2000020105,2000020106,2000020107);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000005043, 'I WILL DESTROY ALL', 0, 0, 0, 0, ''),
-(2000005044, 'US ALREADY ALL ANYMORE AND ANYMORE', 0, 0, 0, 0, ''),
-(2000005220, 'YOU PRAY SERVANTS MY', 0, 0, 0, 0, ''),
-(2000005230, 'I WICKED OGR', 0, 0, 0, 0, ''),
-(2000005231, 'I FEEL DEATH ALONGSIDE', 0, 0, 0, 0, ''),
-(2000005235, 'NOBODY WILL GET THROUGH ME', 0, 0, 0, 0, ''),
-(2000005236, 'I FEEL DEATH ALONGSIDE', 0, 0, 0, 0, '');
+(2000020101, 'I WILL DESTROY ALL', 0, 0, 0, 0, ''),
+(2000020102, 'US ALREADY ALL ANYMORE AND ANYMORE', 0, 0, 0, 0, ''),
+(2000020103, 'YOU PRAY SERVANTS MY', 0, 0, 0, 0, ''),
+(2000020104, 'I WICKED OGR', 0, 0, 0, 0, ''),
+(2000020105, 'I FEEL DEATH ALONGSIDE', 0, 0, 0, 0, ''),
+(2000020106, 'NOBODY WILL GET THROUGH ME', 0, 0, 0, 0, ''),
+(2000020107, 'I FEEL DEATH ALONGSIDE', 0, 0, 0, 0, '');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

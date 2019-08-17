@@ -1087,10 +1087,10 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1789301,1789302,1795701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1789301, 0, 0, 0, 0, 0, 0, 0, 0, 2000001313, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Say on orientation change'),
+(1789301, 0, 0, 0, 0, 0, 0, 0, 0, 2000020039, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Say on orientation change'),
 (1789302, 0, 29, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Add NPC Flag gossip'),
 (1789302, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Pause Waypoints'),
-(1795701, 0, 0, 0, 0, 0, 0, 0, 0, 2000001314, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - Say On Spawn');
+(1795701, 0, 0, 0, 0, 0, 0, 0, 0, 2000020040, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - Say On Spawn');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -1129,10 +1129,10 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000001313,2000001314);
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000020039,2000020040);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000001313,'Uh oh!  It would appear that all of the noise you''ve been making has attracted some unwanted attention!', '0', '0', '0', '0', 'Naturalist Bite on Waypoint 2'),
-(2000001314,'Intrudersss with the prisssoner!  Kill them!!!','0','1','0','0','Coilfang Champion on Releasing Naturalist Bite');
+(2000020039,'Uh oh!  It would appear that all of the noise you''ve been making has attracted some unwanted attention!', '0', '0', '0', '0', 'Naturalist Bite on Waypoint 2'),
+(2000020040,'Intrudersss with the prisssoner!  Kill them!!!','0','1','0','0','Coilfang Champion on Releasing Naturalist Bite');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 

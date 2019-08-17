@@ -743,14 +743,14 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501,1797601,1799301,1799302,1799303,1799304,1842001,1842002,1842003,1842004,1842005,1842006,1842101,1842201,1842202,1842203);
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1950501,1950502,1950503,1950504,1950505,1950506,8298601,8298602,8298603,8315101);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1797501, 0, 0, 0, 0, 0, 0, 0, 0, 2000005554, 2000005555, 2000005556, 2000005557, 0, 0, 0, 0, ''),
-(1797601, 0, 0, 0, 0, 0, 0, 0, 0, 2000005550, 0, 0, 0, 0, 0, 0, 0, ''),
+(1797501, 0, 0, 0, 0, 0, 0, 0, 0, 2000020095, 2000020096, 2000020097, 2000020098, 0, 0, 0, 0, ''),
+(1797601, 0, 0, 0, 0, 0, 0, 0, 0, 2000020091, 0, 0, 0, 0, 0, 0, 0, ''),
 (1799301, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Run Mode On'),
 (1799302, 0, 15, 37493, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Feign Death'),
 (1799302, 15, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Despawn'),
-(1799303, 0, 0, 0, 0, 0, 0, 0, 0, 2000005558, 0, 0, 0, 0, 0, 0, 0, ''),
-(1799304, 0, 0, 0, 0, 0, 0, 0, 0, 2000005559, 0, 0, 0, 0, 0, 0, 0, ''),
-(1842001, 1, 0, 0, 0, 0, 0, 0, 0, 2000005551, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - say'),
+(1799303, 0, 0, 0, 0, 0, 0, 0, 0, 2000020099, 0, 0, 0, 0, 0, 0, 0, ''),
+(1799304, 0, 0, 0, 0, 0, 0, 0, 0, 2000020100, 0, 0, 0, 0, 0, 0, 0, ''),
+(1842001, 1, 0, 0, 0, 0, 0, 0, 0, 2000020092, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - say'),
 (1842002, 1, 15, 34183, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1842003, 1, 15, 34185, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1842004, 1, 15, 34170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -760,8 +760,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1842006, 5, 15, 34169, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1842101, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1842101, 6, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1842201, 0, 0, 0, 0, 0, 0, 0, 0, 2000005552, 0, 0, 0, 0, 0, 0, 0, ''),
-(1842202, 0, 0, 0, 0, 0, 0, 0, 0, 2000005553, 0, 0, 0, 0, 0, 0, 0, ''),
+(1842201, 0, 0, 0, 0, 0, 0, 0, 0, 2000020093, 0, 0, 0, 0, 0, 0, 0, ''),
+(1842202, 0, 0, 0, 0, 0, 0, 0, 0, 2000020094, 0, 0, 0, 0, 0, 0, 0, ''),
 (1842203, 0, 15, 34254, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Botanist - Cast Rejuvenate Plant'),
 (1950501, 0, 15, 34221, 0, 0, 19555, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Crystal Channel TK Atrium Channel Target'),
 (1950502, 0, 15, 34200, 0, 0, 19511, @CGUID+122, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Crystal Channel Nethervine Inciter'),
@@ -786,18 +786,18 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (8315101, 3, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector (Botanica) - Ready For Combat'),
 (8315101, 3, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector (Botanica) - Disable Waypoint Movement');
 
-DELETE FROM dbscript_string WHERE entry BETWEEN 2000005550 AND 2000005559;
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000020091,2000020092,2000020093,2000020094,2000020095,2000020096,2000020097,2000020098,2000020099,2000020100);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000005550, 'We must not fail our leader!  Kael''thas will redeem us!', 0, 1, 0, 4, 'Commander Sarannis in Botanica'),
-(2000005551, 'Hmm...Frost, Fire, and Arcane defenses respond faster than Batch 7, but Nature defenses remain passive.', 0, 0, 0, 1, 'Sunseeker Geomancer in Botanica'),
-(2000005552, 'Hmm...', 0, 0, 0, 1, 'Sunseeker Botanist in Botanica'),
-(2000005553, 'Yes. That did the trick.', 0, 0, 0, 1, 'Sunseeker Botanist in Botanica'),
-(2000005554, '...mumble...Petals of Fire...mumble...', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
-(2000005555, '...mumble mumble...', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
-(2000005556, '...with the right mixture, perhaps...', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
-(2000005557, '...thorny vines...mumble...ouch!', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
-(2000005558, 'Get out of here, there are too many of them! Escape while you can!', 0, 1, 0, 0, 'Sunseeker Protector in Botanica'),
-(2000005559, 'Help! Someone help us!', 0, 1, 0, 0, 'Sunseeker Protector in Botanica');
+(2000020091, 'We must not fail our leader!  Kael''thas will redeem us!', 0, 1, 0, 4, 'Commander Sarannis in Botanica'),
+(2000020092, 'Hmm...Frost, Fire, and Arcane defenses respond faster than Batch 7, but Nature defenses remain passive.', 0, 0, 0, 1, 'Sunseeker Geomancer in Botanica'),
+(2000020093, 'Hmm...', 0, 0, 0, 1, 'Sunseeker Botanist in Botanica'),
+(2000020094, 'Yes. That did the trick.', 0, 0, 0, 1, 'Sunseeker Botanist in Botanica'),
+(2000020095, '...mumble...Petals of Fire...mumble...', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
+(2000020096, '...mumble mumble...', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
+(2000020097, '...with the right mixture, perhaps...', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
+(2000020098, '...thorny vines...mumble...ouch!', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
+(2000020099, 'Get out of here, there are too many of them! Escape while you can!', 0, 1, 0, 0, 'Sunseeker Protector in Botanica'),
+(2000020100, 'Help! Someone help us!', 0, 1, 0, 0, 'Sunseeker Protector in Botanica');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

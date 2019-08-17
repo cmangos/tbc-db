@@ -1015,19 +1015,19 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2193102, 2, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - respawn');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(18472, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000009051, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Darkweaver Syth Death');
+(18472, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000020109, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Darkweaver Syth Death');
 
 DELETE FROM dbscripts_on_gossip WHERE id=7868;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (7868, 4, 20, 2, 0, 0, 18956, @CGUID+88, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Set Waypoint Movement'),
 (7868, 4, 13, 0, 0, 0, 183051, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Open Cage'),
-(7868, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000000398, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Say'),
+(7868, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000020108, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Say'),
 (7868, 1, 8, 18956, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Kill Credit');
 
-DELETE FROM dbscript_string WHERE entry IN (2000000398,2000009051);
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000020108,2000020109);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000000398, 'Thank you for freeing me, $N! I''m going to make my way to Shattrath!', 0, 0, 0, 0, 'Sethekk Halls - Lakka on Gossip'),
-(2000009051, 'Well done! Hurry, though, we don''t want to be caught!', 0, 1, 0, 0, 'Sethekk Halls - Lakka on Darkweaver Syth Death');
+(2000020108, 'Thank you for freeing me, $N! I''m going to make my way to Shattrath!', 0, 0, 0, 0, 'Sethekk Halls - Lakka on Gossip'),
+(2000020109, 'Well done! Hurry, though, we don''t want to be caught!', 0, 1, 0, 0, 'Sethekk Halls - Lakka on Darkweaver Syth Death');
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

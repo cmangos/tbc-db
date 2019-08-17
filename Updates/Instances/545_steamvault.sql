@@ -684,13 +684,13 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 DELETE FROM `dbscripts_on_go_template_use` WHERE `id` IN (184125,184126);
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(184125, 0, 0, 0, 0, 0, 0, 0, 0, 2000004999, 0, 0, 0, 0, 0, 0, 0, 'Invisible Stalker Coilfang Doors 20926 - Emote on 184125 go template use'),
-(184126, 0, 0, 0, 0, 0, 0, 0, 0, 2000004999, 0, 0, 0, 0, 0, 0, 0, 'Invisible Stalker Coilfang Doors 20926 - Emote on 184126 go template use'),
-(184126, 0, 0, 0, 0, 0, 0, 0, 0, 2000005000, 0, 0, 0, 0, 0, 0, 0, 'Invisible Stalker Coilfang Doors 20926 - Emote on 184126 go template use'), -- should be conditioned to whichever go is activated last
-(184126, 12, 20, 2, 0, 0, 17722, @CGUID+174, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Sorceress 17722 - Change MovementType to 2 on 2000005000'),
-(184126, 12, 20, 2, 0, 0, 17803, @CGUID+175, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Oracle 17803 - Change MovementType to 2 on 2000005000'),
-(184126, 12, 20, 2, 0, 0, 17800, @CGUID+177, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000005000'),
-(184126, 12, 20, 2, 0, 0, 17800, @CGUID+176, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000005000');
+(184125, 0, 0, 0, 0, 0, 0, 0, 0, 2000020037, 0, 0, 0, 0, 0, 0, 0, 'Invisible Stalker Coilfang Doors 20926 - Emote on 184125 go template use'),
+(184126, 0, 0, 0, 0, 0, 0, 0, 0, 2000020037, 0, 0, 0, 0, 0, 0, 0, 'Invisible Stalker Coilfang Doors 20926 - Emote on 184126 go template use'),
+(184126, 0, 0, 0, 0, 0, 0, 0, 0, 2000020038, 0, 0, 0, 0, 0, 0, 0, 'Invisible Stalker Coilfang Doors 20926 - Emote on 184126 go template use'), -- should be conditioned to whichever go is activated last
+(184126, 12, 20, 2, 0, 0, 17722, @CGUID+174, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Sorceress 17722 - Change MovementType to 2 on 2000020038'),
+(184126, 12, 20, 2, 0, 0, 17803, @CGUID+175, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Oracle 17803 - Change MovementType to 2 on 2000020038'),
+(184126, 12, 20, 2, 0, 0, 17800, @CGUID+177, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038'),
+(184126, 12, 20, 2, 0, 0, 17800, @CGUID+176, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038');
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -699,10 +699,10 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000004999,2000005000);
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000020037,2000020038);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000004999, 'You hear a faint echo....', 0, 2, 0, 0, NULL),
-(2000005000, 'You hear a loud rumble of metal grinding on stone...', 0, 2, 0, 0, NULL);
+(2000020037, 'You hear a faint echo....', 0, 2, 0, 0, NULL),
+(2000020038, 'You hear a loud rumble of metal grinding on stone...', 0, 2, 0, 0, NULL);
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
