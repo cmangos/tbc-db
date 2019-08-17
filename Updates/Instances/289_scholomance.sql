@@ -129,17 +129,17 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (11551, 0, 8, 199.444, 69.7478, 104.716, 100, 0, 0),
 -- movement for J'eevee during q.7629 Imp Delivery
 (14500, 0, 1, 38.784, 160.639, 83.545, 100, 0, 0),
-(14500, 0, 2, 36.804, 160.705, 83.545, 100, 3000, 14500002),
+(14500, 0, 2, 36.804, 160.705, 83.545, 100, 3000, 1450002),
 (14500, 0, 3, 39.287, 160.044, 83.545, 100, 0, 0),
 (14500, 0, 4, 41.666, 154.591, 83.545, 100, 0, 0),
 (14500, 0, 5, 45.255, 155.014, 83.545, 100, 0, 0),
 (14500, 0, 6, 44.93, 161.186, 83.545, 100, 0, 0),
-(14500, 0, 7, 44.347, 161.12, 83.545, 100, 4000, 14500007),
+(14500, 0, 7, 44.347, 161.12, 83.545, 100, 4000, 1450007),
 (14500, 0, 8, 46.758, 157.877, 83.545, 100, 0, 0),
 (14500, 0, 9, 44.64, 154.405, 83.545, 100, 0, 0),
 (14500, 0, 10, 33.498, 156.046, 83.545, 100, 0, 0),
 (14500, 0, 11, 28.269, 160.792, 83.545, 100, 4000, 0),
-(14500, 0, 12, 33.294, 160.895, 83.545, 100, 10000, 14500012);
+(14500, 0, 12, 33.294, 160.895, 83.545, 100, 10000, 1450012);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+61, 0, 0, 1, 16, 0, 0, '12380'), -- Scholomance Adept
@@ -637,7 +637,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+396, 11582, 289, 243.487, 80.5749, 110.055, 0, 7200, 7200, 0, 0, 0, 0), -- Scholomance Dark Summoner
 (@CGUID+397, 11622, 289, 137.145, 171.676, 95.9664, 3.28122, 43200, 43200, 0, 0, 0, 0), -- Rattlegore
 (@CGUID+398, 14861, 289, 164.891, -1.12663, 115.791, 0.117518, 7200, 7200, 5, 0, 0, 2), -- Blood Steward of Kirtonos
-(@CGUID+399, 16047, 289, 7.959, 142.756, 83.9, 0.034907, 7200, 7200, 0, 0, 0, 0); -- Kormok Trigger
+(@CGUID+399, 16047, 289, -24.898, 141.2418, 84.04675, 0.8901179, 7200, 7200, 0, 0, 0, 0); -- Kormok Trigger
 
 -- ===========
 -- GAMEOBJECTS
@@ -768,16 +768,16 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1043201,14500002,14500007,14500012);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1043201,1450002,1450007,1450012);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1043201, 1, 0, 0, 0, 0, 0, 0, 0, 2000005027, 0, 0, 0, 0, 0, 0, 0, ''),
 (1043201, 10, 0, 0, 0, 0, 0, 0, 0, 2000005028, 0, 0, 0, 0, 0, 0, 0, ''),
 (1043201, 20, 0, 0, 0, 0, 0, 0, 0, 2000005029, 0, 0, 0, 0, 0, 0, 0, ''),
-(14500002, 0, 0, 0, 0, 0, 0, 0, 0, 2000007714, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 2 on reach wp 2 (Scholomance)'),
-(14500007, 0, 0, 0, 0, 0, 0, 0, 0, 2000007715, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 3 on reach wp 7 (Scholomance)'),
-(14500012, 4, 0, 0, 0, 0, 0, 0, 0, 2000007716, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 4 on reach wp 12 (Scholomance)'),
-(14500012, 7, 15, 41232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee cast teleport on reach wp 12 (Scholomance)'),
-(14500012, 8, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee despawn self on reach wp 12 (Scholomance)');
+(1450002, 0, 0, 0, 0, 0, 0, 0, 0, 2000007714, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 2 on reach wp 2 (Scholomance)'),
+(1450007, 0, 0, 0, 0, 0, 0, 0, 0, 2000007715, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 3 on reach wp 7 (Scholomance)'),
+(1450012, 4, 0, 0, 0, 0, 0, 0, 0, 2000007716, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 4 on reach wp 12 (Scholomance)'),
+(1450012, 7, 15, 41232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee cast teleport on reach wp 12 (Scholomance)'),
+(1450012, 8, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee despawn self on reach wp 12 (Scholomance)');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10503, 1, 0, 0, 0, 0, 0, 0, 0, 2000000612, 0, 0, 0, 0, 0, 0, 0, ''),
