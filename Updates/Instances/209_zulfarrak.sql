@@ -688,6 +688,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15578, 0, 0, 1, 16, 0, 0, '25824'); -- Elder Wildmane
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(@CGUID+275, @CGUID+154, 515), -- Sandfury Blood Drinker -> Sandfury Witch Doctor
 (@CGUID+131, @CGUID+130, 515), -- Sandfury Shadowhunter -> Sandfury Shadowhunter
 (@CGUID+162, @CGUID+161, 3), -- Sandfury Guardian -> Sandfury Guardian
 (@CGUID+163, @CGUID+161, 3), -- Sandfury Guardian -> Sandfury Guardian
@@ -933,8 +934,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+230, 7269, 209, 1581.4, 1018.43, 8.96011, 5.89921, 18000, 18000, 5, 0, 0, 1), -- Scarab
 (@CGUID+231, 7269, 209, 1521.26, 981.956, 8.98845, 3.57792, 18000, 18000, 5, 0, 0, 1), -- Scarab
 (@CGUID+232, 7269, 209, 1487.51, 962.706, 14.4566, 0.890118, 18000, 18000, 5, 0, 0, 1), -- Scarab
-(@CGUID+233, 7269, 209, 1546.25, 1017.14, 8.87683, 0.0109968, 60, 60, 5, 0, 0, 1), -- Scarab
-(@CGUID+234, 7269, 209, 1627.47, 1186.85, 8.87693, 0.647954, 60, 60, 5, 0, 0, 1), -- Scarab
+(@CGUID+233, 7269, 209, 1546.25, 1017.14, 8.87683, 0.0109968, 7200, 7200, 5, 0, 0, 1), -- Scarab
+(@CGUID+234, 7269, 209, 1627.47, 1186.85, 8.87693, 0.647954, 7200, 7200, 5, 0, 0, 1), -- Scarab
 (@CGUID+235, 7271, 209, 1912.17, 1016.11, 11.5988, 3.10669, 86400, 86400, 0, 0, 0, 0), -- Witch Doctor Zum'rah
 (@CGUID+236, 7272, 209, 1778.01, 859.671, 8.87682, 4.39971, 86400, 86400, 5, 1, 0, 2), -- Theka the Martyr
 (@CGUID+237, 7274, 209, 1886.8, 1289.89, 45.9625, 3.38594, 86400, 86400, 0, 0, 0, 0), -- Sandfury Executioner
@@ -974,7 +975,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+271, 10081, 209, 1627.47, 1186.85, 8.87693, 0.647954, 43200, 86400, 15, 0, 0, 1), -- Dustwraith
 (@CGUID+272, 10082, 209, 1707.91, 881.421, 11.9567, 1.64026, 43200, 86400, 0, 0, 0, 2), -- Zerillis
 (@CGUID+273, 15578, 209, 1689.15, 1147.89, 8.87702, 2.41196, 25, 25, 0, 0, 0, 0), -- Elder Wildmane
-(@CGUID+274, 10080, 209, 1661.51, 900.463, 8.91101, 3.54889, 43200, 86400, 0, 0, 0, 0); -- Sandarr Dunereaver
+(@CGUID+274, 10080, 209, 1661.51, 900.463, 8.91101, 3.54889, 43200, 86400, 0, 0, 0, 0), -- Sandarr Dunereaver
+(@CGUID+275, 5649, 209, 1775.91, 858.567, 8.87745, 3.8720, 7200, 7200, 0, 0, 0, 0); -- Sandfury Blood Drinker
 
 -- ===========
 -- GAMEOBJECTS
