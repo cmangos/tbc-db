@@ -1979,6 +1979,7 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+93, @PGUID+91, 0, 'DM East - Large Solid Chest / Large Mithril Bound Chest - #2'),
 (@PGUID+95, @PGUID+94, 0, 'DM West - Large Solid Chest / Large Mithril Bound Chest - #1'),
 (@PGUID+96, @PGUID+94, 0, 'DM West - Large Solid Chest / Large Mithril Bound Chest - #2'),
+(@PGUID+90, @PGUID+94, 0, 'DM West - Large Solid Chest / Large Mithril Bound Chest - #3'),
 (@PGUID+98, @PGUID+97, 0, 'DM North - Large Solid Chest / Large Mithril Bound Chest - #1'),
 (@PGUID+99, @PGUID+97, 0, 'DM North - Large Solid Chest / Large Mithril Bound Chest - #2');
 
@@ -2069,6 +2070,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+84, 20, 'Dire Maul pods MASTER'),
 (@PGUID+85, 2, 'DM East - Master Ghost Mushroom (142144) Pool'),
 -- 86 - 90
+(@PGUID+90, 1, 'DM West - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #3'),
 (@PGUID+91, 1, 'DM East - Master Chest Pool'),
 (@PGUID+92, 1, 'DM East - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #1'),
 (@PGUID+93, 1, 'DM East - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #2'),
@@ -2400,7 +2402,9 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+379, @PGUID+98, 0, 'DM North - Large Solid Chest (153464)'),
 (@OGUID+380, @PGUID+98, 0, 'DM North - Large Mithril Bound Chest (153469)'),
 (@OGUID+381, @PGUID+99, 0, 'DM North - Large Solid Chest (153464)'),
-(@OGUID+382, @PGUID+99, 0, 'DM North - Large Mithril Bound Chest (153469)');
+(@OGUID+382, @PGUID+99, 0, 'DM North - Large Mithril Bound Chest (153469)'),
+(@OGUID+383, @PGUID+90, 0, 'DM North - Large Solid Chest (153464)'),
+(@OGUID+384, @PGUID+90, 0, 'DM North - Large Mithril Bound Chest (153469)');
 
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (179548, @PGUID+82, 0, 'DM - Dusty Tome (179548)');
@@ -2786,7 +2790,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+379, 153464, 429, 582.9288, 608.0823, -25.40273, -2.565632, 0, 0, -0.9588194, 0.2840165, 86400, 86400, 255, 1), -- Large Solid Chest
 (@OGUID+380, 153469, 429, 582.9288, 608.0823, -25.40273, -2.565632, 0, 0, -0.9588194, 0.2840165, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
 (@OGUID+381, 153464, 429, 335.605, 366.155, 2.85293, -2.61799, 0, 0, -0.965925, 0.258821, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+382, 153469, 429, 335.605, 366.155, 2.85293, -2.61799, 0, 0, -0.965925, 0.258821, 86400, 86400, 255, 1); -- Large Mithril Bound Chest
+(@OGUID+382, 153469, 429, 335.605, 366.155, 2.85293, -2.61799, 0, 0, -0.965925, 0.258821, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
+(@OGUID+383, 153464, 429, 122.562, 392.1, 28.601, 3.07177, 0, 0, 0.999391, 0.0349043, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+384, 153469, 429, 122.562, 392.1, 28.601, 3.07177, 0, 0, 0.999391, 0.0349043, 86400, 86400, 255, 1); -- Large Mithril Bound Chest
 
 -- ======
 -- EVENTS
