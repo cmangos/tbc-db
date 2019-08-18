@@ -23035,7 +23035,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1779903','17799','30','0','25','1','6','17805','0','0','0','0','1','-10081','-10082','0','0','0','0','0','0','0','0','0','Dreghood Slave - Yell on Receive AI Event 6'),
 ('1779904','17799','30','0','100','0','0','17805','0','0','0','0','20','0','0','0','21','0','0','0','22','2','0','0','Dreghood Slave - Stop Melee and Stop Movement and Set Phase 2 on Receive AI Event 0'),
 ('1779905','17799','29','3','100','0','0','0','0','0','0','0','2','190','2','0','5','0','0','0','41','10000','0','0','Dreghood Slave - Set Faction and Stop Emote and Delayed Despawn on Generic Timer (Phase 2)'),
-('1779906','17799','29','3','5','0','2000','2000','0','0','0','0','5','5','0','0','54','0','0','10080','0','0','0','0','Dreghood Slave - Play Emote and Yell on Generic Timer (Phase 2)'),
+('1779906','17799','29','3','5','0','2000','2000','0','0','0','0','5','5','0','0','54','0','0','12004','0','0','0','0','Dreghood Slave - Play Emote and Yell on Generic Timer (Phase 2)'),
 ('1779907','17799','0','0','100','1025','10000','15000','10000','15000','0','0','14','-99','0','0','0','0','0','0','0','0','0','0','Dreghood Slave - Reset Threat'),
 ('1779908','17799','2','0','100','1024','30','0','0','0','0','0','11','8269','0','0','1','-106','0','0','0','0','0','0','Dreghood Slave - Cast Enrage at 30% HP'),
 -- Coilfang Myrmidon
@@ -32524,10 +32524,6 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10079,0,-10698,0,'17905 - Random Death Texts'),
 (10079,0,-10699,0,'17905 - Random Death Texts'),
 (10079,0,-10700,0,'17905 - Random Death Texts'),
-(10080,0,-10083,0,'Dreghood Slave 17799 - Random Evade Texts'),
-(10080,0,-10084,0,'Dreghood Slave 17799 - Random Evade Texts'),
-(10080,0,-10085,0,'Dreghood Slave 17799 - Random Evade Texts'),
-(10080,0,-10086,0,'Dreghood Slave 17799 - Random Evade Texts'),
 (10083,0,-11206,0,'23282/23281/23261/23281 - Random Texts'),
 (10083,0,-11207,0,'23282/23281/23261/23281 - Random Texts'),
 (10083,0,-11208,0,'23282/23281/23261/23281 - Random Texts'),
@@ -32628,7 +32624,11 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (12003,0,-10099,0,'18206 - Random OOC LOS Texts'),
 (12003,0,-10100,0,'18206 - Random OOC LOS Texts'),
 (12003,0,-10101,0,'18206 - Random OOC LOS Texts'),
-(12003,0,-10102,0,'18206 - Random OOC LOS Texts');
+(12003,0,-10102,0,'18206 - Random OOC LOS Texts'),
+(12004,0,-10083,0,'Dreghood Slave 17799 - Random Evade Texts'),
+(12004,0,-10084,0,'Dreghood Slave 17799 - Random Evade Texts'),
+(12004,0,-10085,0,'Dreghood Slave 17799 - Random Evade Texts'),
+(12004,0,-10086,0,'Dreghood Slave 17799 - Random Evade Texts');
 
 -- WOTLK IDs 20000+
 -- INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
