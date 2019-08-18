@@ -2940,10 +2940,10 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 
 (570904, 0, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'npc_flag removed'),
 (570904, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'UNPAUSE'),
-(570904, 1, 0, 0, 0, 0, 0, 0, 0, 2000005562, 0, 0, 0, 0, 0, 0, 0, 'Pusilin 4'),
+(570904, 1, 0, 0, 0, 0, 0, 0, 0, 2000005463, 0, 0, 0, 0, 0, 0, 0, 'Pusilin 4'),
 
 (570905, 0, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'npc_flag removed'),
-(570905, 1, 0, 0, 0, 0, 0, 0, 0, 2000005563, 0, 0, 0, 0, 0, 0, 0, 'Pusilin 5'),
+(570905, 1, 0, 0, 0, 0, 0, 0, 0, 2000005464, 0, 0, 0, 0, 0, 0, 0, 'Pusilin 5'),
 (570905, 4, 15, 22735, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'TRANSFORM'),
 (570905, 3, 10, 13276, 120000, 0, 0, 0, 0, 0, 0, 0, 0, 14.7965, -696.322, -12.6426, 4.4823, 'summon - Wildspawn Imp'),
 (570905, 3, 10, 13276, 120000, 0, 0, 0, 0, 0, 0, 0, 0, 18.8891, -697.389, -12.6426, 4.35271, 'summon - Wildspawn Imp'),
@@ -2992,8 +2992,7 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 (5525, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500.42, 540.966, -25.3846, 2.72271, 'WP movement'),
 (5525, 15, 18, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'despawn');
 
-DELETE FROM dbscript_string WHERE entry IN (2000000268,2000000269,2000000455,2000000456,2000000457,2000000543,2000007708,2000007709,2000007710,2000007711,2000007712,2000005822,2000005823);
-DELETE FROM dbscript_string WHERE entry IN (2000005460,2000005461,2000005462,2000005562,2000005563);
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000000268,2000000269,2000000455,2000000456,2000000457,2000000543,2000007708,2000007709,2000007710,2000007711,2000007712,2000005822,2000005823,2000005460,2000005461,2000005462,2000005463,2000005464);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
 (2000000268, 'Hey, who Fengus callin\' a gnoll lover?!  Take da prisoners to da king; you smart to bring them with their weapons and show da king that they a threat.  I\'ll go see if Fengus talk smack when I give him da beatdown!  HAR!', 0, 6, 0, 0, 'Captain Kromcrush - Yell Fengus 1'),
 (2000000269, 'OK Fengus, where you at?!  You come call me a gnoll lover while I give you da hammer upside da head!', 0, 6, 0, 0, 'Captain Kromcrush - Yell Fengus 2'),
@@ -3015,8 +3014,8 @@ INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `lan
 (2000005460, 'If you want the key, you''ll have to catch me!', 0, 0, 0, 0, 'Pusilin 1'),
 (2000005461, 'Chase me if you dare! I run without a care!', 0, 0, 0, 0, 'Pusilin 2'),
 (2000005462, 'Why would you ever want to harm me!? Come. Friends we can be!', 0, 0, 0, 0, 'Pusilin 3'),
-(2000005562, 'DIE?! You make Pusillin cry!', 0, 0, 0, 0, 'Pusilin 4'),
-(2000005563, 'Say hello to my little friends!', 0, 0, 0, 0, 'Pusilin 5');
+(2000005463, 'DIE?! You make Pusillin cry!', 0, 0, 0, 0, 'Pusilin 4'),
+(2000005464, 'Say hello to my little friends!', 0, 0, 0, 0, 'Pusilin 5');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
