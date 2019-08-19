@@ -42,7 +42,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+19, 8, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
 (@CGUID+19, 9, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
 (@CGUID+19, 10, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
-(@CGUID+19, 11, -1288.32, 1631.62, 91.7501, 2.00938, 7000, 3195701),
+(@CGUID+19, 11, -1288.32, 1631.62, 91.7501, 2.00938, 7000, 1726401),
 (@CGUID+19, 12, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
 (@CGUID+19, 13, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
 (@CGUID+19, 14, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
@@ -469,10 +469,10 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id=3195701;
+DELETE FROM dbscripts_on_creature_movement WHERE id=1726401;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(3195701, 0, 0, 0, 0, 0, 17269, @CGUID+29, 17, 2000020035, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Ravener (Hellfire Ramparts) - Yell At Bleeding Hollow Darkcaster'),
-(3195701, 4, 0, 0, 0, 0, 17269, @CGUID+29, 19, 2000020036, 0, 0, 0, 0, 0, 0, 0, 'Bleeding Hollow Darkcaster (Hellfire Ramparts) - Yell At Bonechewer Ravener');
+(1726401, 0, 0, 0, 0, 0, 17269, @CGUID+29, 17, 2000020035, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Ravener (Hellfire Ramparts) - Yell At Bleeding Hollow Darkcaster'),
+(1726401, 4, 0, 0, 0, 0, 17269, @CGUID+29, 19, 2000020036, 0, 0, 0, 0, 0, 0, 0, 'Bleeding Hollow Darkcaster (Hellfire Ramparts) - Yell At Bonechewer Ravener');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020035,2000020036);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
