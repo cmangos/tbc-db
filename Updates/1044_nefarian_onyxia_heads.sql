@@ -10,4 +10,7 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 UPDATE gameobject_template SET size=1.25 WHERE entry IN(179881);
 UPDATE gameobject_template SET size=1.15 WHERE entry IN(179882);
 
+-- in core now
+DELETE FROM dbscripts_on_quest_end WHERE command=15 AND datalong=22888;
+
 
