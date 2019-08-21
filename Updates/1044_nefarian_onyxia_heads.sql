@@ -7,4 +7,7 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 ('40150', '179881', '1', '1', '1537.892', '-4421.62', '7.553038', '-1.151916', '0', '0', '-0.5446386', '0.8386708', '-21600', '-21600', '255', '1'),
 ('40151', '179882', '0', '1', '-8926.29', '495.8559', '103.4651', '2.373644', '0', '0', '0.9271832', '0.3746083', '-21600', '-21600', '255', '1');
 
+UPDATE gameobject_template SET size=1.25 WHERE entry IN(179881);
+UPDATE gameobject_template SET size=1.15 WHERE entry IN(179882);
+
 
