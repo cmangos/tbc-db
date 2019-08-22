@@ -1978,7 +1978,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (973601, 1, 1, 1, 0, 0, 0, 0, 0, 273, 5, 274, 1, 0, 0, 0, 0, ''),
 (973601, 7, 1, 1, 0, 0, 0, 0, 0, 273, 5, 274, 1, 0, 0, 0, 0, ''),
 (973601, 16, 1, 1, 0, 0, 0, 0, 0, 273, 5, 274, 1, 0, 0, 0, 0, ''),
-(1031705, 0, 0, 0, 0, 0, 0, 0, 0, 2000000060, 0, 0, 0, 0, 0, 0, 0, 'Blackhand Elite yell'),
+(1031705, 0, 0, 0, 0, 0, 0, 0, 0, 2000010060, 0, 0, 0, 0, 0, 0, 0, 'Blackhand Elite yell'),
 (1031706, 0, 15, 8329, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Blackhand Elite - suicide'),
 (1043001, 0, 20, 1, 20, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Switch to random movement around the current position');
 
@@ -2013,9 +2013,9 @@ INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM dbscript_string WHERE entry=2000000060;
+DELETE FROM `dbscript_string` WHERE entry=2000010060;
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-('2000000060', 'We''re doomed!', '0', '1', '0', '0', NULL);
+('2000010060', 'We''re doomed!', '0', '1', '0', '0', NULL); -- classic-db 2000000060
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
