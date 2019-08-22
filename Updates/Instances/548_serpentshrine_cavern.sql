@@ -1336,7 +1336,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2121807, 0, 45, 0, 10111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 25% chance (speak to Priestess)'),
 (2121808, 0, 45, 0, 10112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Honor Guard - 25% chance (speak to Shatterer)'),
 (2125301, 0, 36, 0, 0, 0, 21216, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Face Hydross'),
-(2125301, 1, 15, 36461, 0, 0, 21216, 50, 11, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Force Hydross to cast Purify Elemental'),
+(2125301, 1, 15, 36461, 0, 0, 21216, 50, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Force Hydross to cast Purify Elemental'),
 (2125301, 2, 44, 21260, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tainted Water Elemental - Change to Purified'),
 (2126301, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Greyheart Technician - Pause waypoints'),
 (2126301, 0, 1, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Greyheart Technician - STATE_WORK'),
