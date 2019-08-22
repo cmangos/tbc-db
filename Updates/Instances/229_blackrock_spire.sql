@@ -3,7 +3,6 @@ DBName: Blackrock Spire
 DBScriptName: instance_blackrock_spire
 DB%Complete: 75
 DBComment:
-* @CGUID+165 (old 40154) seems to be leftover of older revision
 EndDBScriptData */
 
 SET @CGUID := 2290000; -- creatures
@@ -930,7 +929,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+162, 9239, 229, -108.768, -475.778, 24.2549, 1.60891, 7200, 7200, 0, 0, 0, 0), -- Smolderthorn Mystic
 (@CGUID+163, 9239, 229, -39.0271, -547.342, 16.1255, 4.97512, 7200, 7200, 0, 0, 0, 2), -- Smolderthorn Mystic
 (@CGUID+164, 9239, 229, -38.25, -514.12, -18.63, 4.72, 10800, 10800, 5, 0, 0, 1), -- Smolderthorn Mystic
-(@CGUID+165, 9240, 229, -47.73, -460.24, 16.58, 6, 10800, 10800, 0, 0, 0, 2), -- Smolderthorn Shadow Priest
+-- (@CGUID+165
 (@CGUID+166, 9240, 229, 0.02, -461.27, 16.28, 3.03, 10800, 10800, 0, 0, 0, 2), -- Smolderthorn Shadow Priest
 (@CGUID+167, 9240, 229, -33.19, -450.39, 16.67, 3.75, 10800, 10800, 0, 0, 0, 0), -- Smolderthorn Shadow Priest
 (@CGUID+168, 9240, 229, -53.5, -454.29, 16.54, 2.25, 10800, 10800, 0, 0, 0, 0), -- Smolderthorn Shadow Priest
