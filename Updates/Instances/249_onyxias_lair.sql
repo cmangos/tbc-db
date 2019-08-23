@@ -69,11 +69,11 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 -- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
-(@CGUID+1, 10184, 249, -4.8689, -217.171, -86.7104, 3.09123, 432000, 432000, 0, 0, 0, 0), -- Onyxia
+(@CGUID+1, 10184, 249, -4.868896, -217.1708, -86.71037, 3.141593, 604800, 604800, 0, 0, 0, 0), -- Onyxia
 (@CGUID+2, 12129, 249, -49.9299, -98.0713, -38.5961, 6.24828, 7200, 7200, 0, 0, 0, 2), -- Onyxian Warder
 (@CGUID+3, 12129, 249, -62.9558, -98.3516, -38.731, 3.19534, 7200, 7200, 0, 0, 0, 2), -- Onyxian Warder
 (@CGUID+4, 12129, 249, -154.478, -210.884, -66.4414, 2.70244, 7200, 7200, 0, 0, 0, 2), -- Onyxian Warder
-(@CGUID+5, 12129, 249, -200.143, -212.381, -68.6295, 0.855211, 7200, 7200, 0, 0, 0, 0), -- Onyxian Warder
+(@CGUID+5, 12129, 249, -200.1429, -212.3809, -68.62948, 0.8552113, 7200, 7200, 0, 0, 0, 0), -- Onyxian Warder
 (@CGUID+6, 12758, 249, -27.0481, -219.097, -89.2858, 4.76475, 180, 180, 0, 0, 0, 0); -- Onyxia Trigger
 
 -- ===========
