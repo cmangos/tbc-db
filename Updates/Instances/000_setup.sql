@@ -38,7 +38,7 @@ DELETE FROM game_event_creature WHERE guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM game_event_creature_data WHERE guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature_linking WHERE guid IN (SELECT guid FROM tmp_creature) OR master_guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature_linking_template WHERE map IN (SELECT map FROM tmp_creature);
-DELETE FROM dbscripts_on_creature_death WHERE id IN (SELECT id FROM tmp_creature);
+DELETE FROM dbscripts_on_creature_death WHERE id IN (SELECT id FROM tmp_creature WHERE id NOT IN (15214)); -- Exclude NPCs spawned in both instance and open world
 DELETE FROM npc_gossip WHERE npc_guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature_battleground WHERE guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature WHERE guid IN (SELECT guid FROM tmp_creature);
