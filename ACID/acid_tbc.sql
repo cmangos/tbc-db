@@ -30802,11 +30802,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-649','%s goes into a drunken rage!','0','2','0','14322','0'),
 -- Classic PLEASE RE-USE 650 - 653
 ('-654','Snivvle is here!  Snivvle claims the Coldtooth mine!','0','1','0','11677','0'),
--- Classic PLEASE RE-USE 655 - 657
-('-658','The numbers of my companions dwindles, goddess, and my own power shall soon be insufficient to hold back the demons of Felwood.','0','0','0','3946','0'),
-('-659','Goddess, grant me the power to overcome my enemies! Hear me, please, my need is desperate and my cause is just!','0','0','0','3946','0'),
-('-660','What... what is this? Could this be the answer to my prayers? Elune has granted me a weapon--this scythe--to defeat the demons.','0','0','0','3946','0'),
--- Classic PLEASE RE-USE 661 - 664
+-- Classic PLEASE RE-USE 655 - 664
 ('-665','Obsidion, Rise and Serve your Master!','0','1','0','8391','0'),
 ('-666','At last: one among you is worthy of my knowledge. Worry not: I have probed your thoughts, no harm will come to you.','0','0','0','Vaelan greetings','0'),
 ('-667','Listen carefully, for the lord of Blackrock will surely destroy you, should you not be prepared.','0','0','0','Vaelan greetings','0'),
