@@ -7719,6 +7719,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1102302','11023','9','0','100','1','0','5','6000','9000','0','0','11','15580','1','0','0','0','0','0','0','0','0','0','Weldon Barov - Cast Strike'),
 ('1102303','11023','9','0','100','1','0','5','13000','16000','0','0','11','9080','1','1','0','0','0','0','0','0','0','0','Weldon Barov - Cast Hamstring'),
 ('1102304','11023','0','0','100','1','8000','13000','13000','16000','0','0','11','15284','1','1','0','0','0','0','0','0','0','0','Weldon Barov - Cast Cleave'),
+('1102305','11023','4','0','100','0','0','0','0','0','0','0','1','-1354','0','0','0','0','0','0','0','0','0','0','Weldon Barov - Yell on Aggro'),
 -- Illusory Wraith (11027) - NSR
 -- High Priestess MacDonnell
 ('1105301','11053','16','0','100','0','10938','10','0','0','0','0','11','10938','12','1','0','0','0','0','0','0','0','0','High Priestess MacDonnell - Cast Power Word: Fortitude on Friendly Missing Buff'),
@@ -31010,7 +31011,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1325','What are you doing? Intruders!!','0','1','0','9476','0'),
 ('-1326','Intruders in the Manufactory? My constructs will destroy you!','0','0','0','8983','0'),
 ('-1327','%s gets really dizzy!','0','2','0','9554','0'),
--- Classic PLEASE RE-USE 1328 - 1388
+-- Classic PLEASE RE-USE 1328 - 1353
+('-1354','HELP! ASSASSINS HAVE COME TO KILL ME!','0','1','0','11023','0'),
+-- Classic PLEASE RE-USE 1355 - 1388
 ('-1389','%s belches out a disgusting Bile Slime!','0','2','0','0','0'),
 ('-1390','%s explodes and releases several Bile Slimes!','0','2','0','0','0'),
 ('-1391','$r flesh... Must feed!','0','0','0','11075','0'),
