@@ -34,8 +34,16 @@ DELETE FROM `game_event_gameobject` WHERE `event` IN (-39,-40);
 DELETE FROM `game_event` WHERE `entry` IN (39,40);
 
 -- remove references to specific dates in descriptions
-UPDATE `game_event` SET `description`=REPLACE(`description`,'June 2018 - ','') WHERE `entry` IN (76,77,78,79,80,81,82,83,84);
-UPDATE `game_event` SET `description`=REPLACE(`description`,'July 2018 - ','') WHERE `entry` IN (76,77,78,79,80,81,82,83,84);
-UPDATE `game_event` SET `description`=REPLACE(`description`,'August 2018 - ','') WHERE `entry` IN (76,77,78,79,80,81,82,83,84);
+DELETE FROM `game_event` WHERE `entry` IN (76,77,78,79,80,81,82,83,84);
+INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `linkedTo`, `EventGroup`, `description`) VALUES
+('76', '2018-06-01 00:00:01', '2030-12-31 23:59:00', '525600', '4320', '0', '0', '0', 'Darkmoon Faire (Terokkar Forest) - Building Stage 1'),
+('77', '2018-06-02 00:00:01', '2030-12-31 23:59:00', '525600', '2880', '0', '0', '0', 'Darkmoon Faire (Terokkar Forest) - Building Stage 2'),
+('78', '2018-06-04 00:00:01', '2030-12-31 23:59:00', '525600', '8640', '376', '0', '0', 'Darkmoon Faire (Terokkar Forest) - Darkmoon Faire Open'),
+('79', '2018-07-06 00:00:01', '2030-12-31 23:59:00', '525600', '4320', '0', '0', '0', 'Darkmoon Faire (Mulgore) - Building Stage 1'),
+('80', '2018-07-07 00:00:01', '2030-12-31 23:59:00', '525600', '2880', '0', '0', '0', 'Darkmoon Faire (Mulgore) - Building Stage 2'),
+('81', '2018-07-09 00:00:01', '2030-12-31 23:59:00', '525600', '8640', '375', '0', '0', 'Darkmoon Faire (Mulgore) - Darkmoon Faire Open'),
+('82', '2018-08-03 00:00:01', '2030-12-31 23:59:00', '525600', '4320', '0', '0', '0', 'Darkmoon Faire (Elwynn Forest) - Building Stage 1'),
+('83', '2018-08-04 00:00:01', '2030-12-31 23:59:00', '525600', '2880', '0', '0', '0', 'Darkmoon Faire (Elwynn Forest) - Building Stage 2'),
+('84', '2018-08-06 00:00:01', '2030-12-31 23:59:00', '525600', '8640', '374', '0', '0', 'Darkmoon Faire (Elwynn Forest) - Darkmoon Faire Open');
 
 
