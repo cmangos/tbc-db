@@ -28085,9 +28085,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nether Portal - Dominance 17368 - npc_netherspite_portal
 -- Nether Portal - Perseverence 17369 - npc_netherspite_portal
 -- Orc Grunt (17469) - npc_orc_grunt
--- Woeful Healer - Redemption of the Fallen book
-('1750301','17503','11','0','100','0','0','0','0','0','0','0','11','33900','15','0','0','0','0','0','0','0','0','0','Woeful Healer - Cast Shroud of Death on Spawn'),
-('1750302','17503','0','0','100','1025','5000','5000','14000','15000','0','0','11','30604','15','0','0','0','0','0','0','0','0','0','Woeful Healer - Cast Prayer of Healing'),
+-- Woeful Healer 17503 - Redemption of the Fallen book i.23862
+('1750301','17503','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','33900','15','0','0','0','0','0','Woeful Healer - ReactState Passive, Cast Shroud of Death on Spawn'),
+('1750302','17503','29','0','100','1','5000','7000','14000','15000','0','0','11','30604','15','0','0','0','0','0','0','0','0','0','Woeful Healer - Cast Prayer of Healing on Generic Timer'),
 -- Ythyar (17518) - NSR
 -- The Big Bad Wolf (17521) - boss_bigbadwolf
 -- Romulo (17533) - boss_romulo
