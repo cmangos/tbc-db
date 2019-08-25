@@ -30987,7 +30987,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1300','Should I live through this, I shall make it my life\'s sole ambition to destroy Arthas...','0','0','0','14484, 14485','0'),
 ('-1301','I won\'t make it... go... go on without me...','0','0','0','14484, 14485','0'),
 ('-1302','Death take me! I cannot go on! I have nothing left...','0','0','0','14484, 14485','0'),
--- Classic PLEASE RE-USE PLEASE RE-USE 1303 - 1308
+-- Classic PLEASE RE-USE 1303 - 1304
 ('-1305','The light condemns all who harbor evil.  Now you will die!','0','0','0','Scarlet Monastery','0'),
 ('-1306','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','Scarlet Monastery','0'),
 ('-1307','There is no escape for you.  The Crusade shall destroy all who carry the scourge\'s taint.','0','0','0','Scarlet Monastery','0'),
@@ -31025,7 +31025,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Classic PLEASE RE-USE 1398 - 1460
 ('-1461','Who dares steal my precious mount? You will pay for your insolence, mortal!','0','1','0','Lord Hel\'nurath - Yell on Aggro','0'),
 -- Classic PLEASE RE-USE 1462 - 1469
-('-1470','Ooo\,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
+('-1470','Ooo,so strong! Happy Hallow\'s End, $n!','0','0','0','6929','0'),
 ('-1471','Chugga-chugga,woo-woo! Happy Hallow\'s End, $n!','0','0','0','11814','0'),
 ('-1472','I may have ninety-nine problems, but dancin\' ain\'t one of them! Happy Hallow\'s End, $n!','0','0','0','6746','0'),
 ('-1473','Bawk,bawk,bawk! Happy Hallow\'s End, $n!','0','0','0','6741','0'),
