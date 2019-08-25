@@ -6,6 +6,7 @@ UPDATE creature_template SET NpcFlags=NpcFlags|128 WHERE entry=23897;
 UPDATE creature_template SET NpcFlags=NpcFlags|1 WHERE entry=20159;
 
 -- add missing gossip menu from Classic-DB
+UPDATE `creature_template` SET `GossipMenuId` = 347 WHERE `entry` = 6737; -- Innkeeper Shaussiy
 DELETE FROM gossip_menu WHERE entry=347;
 INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
 (347, 824, 0, 0);
