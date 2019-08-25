@@ -30553,7 +30553,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-30','%s blood sprays into the air!','0','2','0','Common Gnomeregan Emote','0'),
 ('-31','%s is splashed by the blood and becomes irradiated!','0','2','0','Common Gnomeregan Emote','0'),
 ('-32','Electric justice!','5811','1','0','6235','0'),
-('-33','Warning! Warning! Intruder alert! Intruder alert!','5805','1','0','7849','0'),
+('-33','Warning! Warning! Intruder alert! Intruder alert!','0','1','0','7849','0'),
 -- Classic PLEASE RE-USE 34 - 41
 ('-42','Time to join us, $c.','0','0','0','1157','0'),
 -- Classic PLEASE RE-USE 43 - 45
