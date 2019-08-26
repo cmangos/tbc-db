@@ -2573,8 +2573,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =============
 -- Elwynn Forest
 -- =============
--- Kobold Vermin (2.4.2 Official Data)
-('601','6','4','0','30','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Vermin - Random Say on Aggro'),
+-- Kobold Vermin 6 (2.4.2 Official Data)
+('601','6','4','0','10','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Vermin - Random Say on Aggro'),
 -- Forest Spider (2.4.2 Official Data)
 ('3001','30','1','0','100','0','1000','1000','0','0','0','0','11','11959','0','32','0','0','0','0','0','0','0','0','Forest Spider - Cast Poison Proc OOC'),
 -- Defias Thug (2.4.2 Official Data)
@@ -2602,8 +2602,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Narg the Taskmaster (2.4.2 Official Data)
 ('7901','79','4','0','30','0','0','0','0','0','0','0','1','-7','0','0','0','0','0','0','0','0','0','0','Narg the Taskmaster - Random Say on Aggro'),
 ('7902','79','0','0','100','1','2000','4000','18000','29000','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Narg the Taskmaster - Cast Battleshout'),
--- Kobold Labourer (2.4.2 Official Data)
-('8001','80','4','0','30','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Labourer - Random Say on Aggro'),
+-- Kobold Labourer 80 (2.4.2 Official Data)
+('8001','80','4','0','10','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Labourer - Random Say on Aggro'),
 -- Defias Cutpurse (2.4.2 Official Data)
 ('9401','94','33','0','100','1','0','0','2400','7900','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Defias Cutpurse - Cast Backstab on Facing Target Back'),
 -- Riverpaw Runt (2.4.2 Official Data)
@@ -2643,8 +2643,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tommy Joe Stonefield (252) - NSR
 -- William Pestle (253) - NSR
 -- Gerard Tiller (255) - NSR
--- Kobold Worker (2.4.2 Official Data)
-('25701','257','4','0','30','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Worker - Random Say on Aggro'),
+-- Kobold Worker 257 (2.4.2 Official Data)
+('25701','257','4','0','10','0','0','0','0','0','0','0','1','-7','-8','0','0','0','0','0','0','0','0','0','Kobold Worker - Random Say on Aggro'),
 -- Joshua Maclure (258) - NSR
 -- Guard Thomas (261) - NSR
 -- Sara Timberlain (278) - NSR
