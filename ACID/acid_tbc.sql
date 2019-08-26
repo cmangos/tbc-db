@@ -39,8 +39,6 @@ UPDATE db_version SET `creature_ai_version` = 'ACID 2.4.3 (The Burning Crusades)
 -- |   EASTERN KINGDOM   |
 -- =======================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
-
 -- =================
 -- Alterac Mountains
 -- =================
@@ -4158,9 +4156,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
-
-
 -- ==================
 -- Isle of Quel'Danas
 -- ==================
@@ -8334,7 +8329,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   KALIMDOR   |
 -- ================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- =========
 -- Ashenvale
 -- =========
@@ -12511,9 +12505,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
-
-
 -- =======
 -- Mulgore
 -- =======
@@ -15714,7 +15705,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |  OUTLANDS  |
 -- ==============
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- ======================
 -- Blade's Edge Mountains
 -- ======================
@@ -16089,7 +16079,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2071301','20713','0','0','100','1','6000','6000','12000','16000','0','0','11','36718','0','0','0','0','0','0','0','0','0','0','Fey Drake - Cast Blink'),
 ('2071302','20713','18','0','100','1','100','1','10000','11000','0','0','11','11981','1','0','0','0','0','0','0','0','0','0','Fey Drake - Cast Mana Burn on Target Mana User'),
 -- Ridgespine Stalker (20714) - NSR
--- Korgaah
+-- Korgaah 20723
 ('2072301','20723','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Korgaah - Set Phase 1 on Spawn'),
 ('2072302','20723','30','13','100','1','5','21241','0','0','0','0','22','2','0','0','5','16','0','0','0','0','0','0','Korgaah - Set Phase 2 and Kneel on Received AI Event (Phase 1)'),
 ('2072303','20723','1','11','100','1','3000','3000','1000','1000','0','0','5','92','0','0','0','0','0','0','0','0','0','0','Korgaah - Drink on OOC Timer (Phase 2)'),
@@ -16430,7 +16420,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2132601','21326','0','0','50','1','9000','12000','35000','42000','0','0','11','37696','0','0','0','0','0','0','0','0','0','0','Raven''s Wood Leafbeard - Cast Force of Nature'),
 ('2132602','21326','30','0','100','0','5','22226','0','0','0','0','2','35','1','0','24','0','0','0','1','-10964','0','0','Raven''s Wood Leafbeard - Set Faction and Evade and Emote on Receive AI Event'),
 ('2132603','21326','30','0','100','0','5','22226','0','0','0','0','41','15000','0','0','0','0','0','0','0','0','0','0','Raven''s Wood Leafbeard - Delayed Despawn on Receive AI Event'),
--- Ogre Building Bunny Large
+-- Ogre Building Bunny Large 21351
 ('2135101','21351','11','0','100','0','0','0','0','0','0','0','11','36952','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Large - Cast Ogre Building Bunny Curse Visual Large on Spawn'),
 -- Silkwing
 ('2137301','21373','0','0','100','1','3000','5000','11000','16000','0','0','11','32914','0','0','0','0','0','0','0','0','0','0','Silkwing - Cast Wing Buffet'),
@@ -16518,8 +16508,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Proto-Nether Drake 21821 - mobs_nether_drake
 -- Nihil the Banished 21823 - mobs_nether_drake
 -- Summoned Wrath Hound
-('2183701','21837','4','0','100','0','0','0','0','0','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Charge on Aggro'),
-('2183702','21837','9','0','100','1','0','5','6000','10000','0','0','11','36406','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Double Breath'),
+('2183701','21837','11','0','100','0','0','0','0','0','0','0','11','22578','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Glowy (Black) on Spawn'),
+('2183702','21837','4','0','100','0','0','0','0','0','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Charge on Aggro'),
+('2183703','21837','9','0','100','1','0','5','6000','10000','0','0','11','36406','0','0','0','0','0','0','0','0','0','0','Summoned Wrath Hound - Cast Double Breath'),
 -- Mature Silkwing
 ('2183901','21839','9','0','100','1','0','20','9000','15000','0','0','11','32914','0','0','0','0','0','0','0','0','0','0','Mature Silkwing - Cast Wing Buffet'),
 -- Multi-Spectrum Light Trap Bunny 21926 - npc_light_orb_collector
@@ -16681,8 +16672,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vile Fire-Soul
 ('2229801','22298','0','0','100','1','3000','10000','5000','12000','0','0','11','9053','1','0','0','0','0','0','0','0','0','0','Vile Fire-Soul - Cast Fireball'),
 -- Mo'arg Extractor
-('2230401','22304','0','0','100','1','5000','11000','16000','21000','0','0','11','40818','0','0','0','0','0','0','0','0','0','0','Mo''arg Extractor - Cast Toxic Slime'),
-('2230402','22304','0','0','100','1','12000','17000','12000','18000','0','0','11','40839','0','0','0','0','0','0','0','0','0','0','Mo''arg Extractor - Cast Drill'),
+('2230401','22304','11','0','100','0','0','0','0','0','0','0','11','40453','0','1','0','0','0','0','0','0','0','0','Mo''arg Extractor - Cast Aura of Fear on Spawn'),
+('2230402','22304','0','0','100','1','5000','11000','16000','21000','0','0','11','40818','0','0','0','0','0','0','0','0','0','0','Mo''arg Extractor - Cast Toxic Slime'),
+('2230403','22304','0','0','100','1','12000','17000','12000','18000','0','0','11','40839','0','0','0','0','0','0','0','0','0','0','Mo''arg Extractor - Cast Drill'),
 -- Vekh
 ('2230501','22305','9','0','100','1','0','8','8000','12000','0','0','11','37582','0','0','0','0','0','0','0','0','0','0','Vekh - Cast Whirlwind'),
 ('2230502','22305','2','0','100','1','50','0','15300','22900','0','0','11','11642','0','0','0','0','0','0','0','0','0','0','Vekh - Cast Heal When Below 50% HP'),
@@ -18005,6 +17997,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1840202','18402','9','0','100','1','8','25','23000','26000','0','0','11','32323','4','0','0','0','0','0','0','0','0','0','Warmaul Champion - Cast Charge'),
 ('1840203','18402','0','0','100','1','3000','6000','14000','17000','0','0','11','15708','4','1','0','0','0','0','0','0','0','0','Warmaul Champion - Cast Mortal Strike'),
 ('1840204','18402','9','0','75','1','0','5','9000','13000','0','0','11','17963','4','0','0','0','0','0','0','0','0','0','Warmaul Champion - Cast Sundering Cleave'),
+-- Warden Bullrok (18407) - NSR
 -- Durn the Hungerer
 ('1841101','18411','9','0','100','1','0','5','9000','15000','0','0','11','28168','1','0','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Arcing Smash'),
 ('1841102','18411','0','0','100','1','12000','24000','30000','50000','0','0','11','34771','0','0','0','0','0','0','0','0','0','0','Durn the Hungerer - Cast Force Punch'),
@@ -18089,6 +18082,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1905501','19055','9','0','100','1','0','5','12000','16000','0','0','11','30285','1','0','0','0','0','0','0','0','0','0','Windroc Matriarch - Cast Eagle Claw'),
 ('1905502','19055','0','0','100','1','3000','6000','22000','26000','0','0','11','32914','0','1','0','0','0','0','0','0','0','0','Windroc Matriarch - Cast Wing Buffet'),
 -- Fel Cannon: Hate 19067 - NSR
+-- Nagrand Target Dummy 19139 - NSR
 -- Mag'har Pitfighter
 ('1914001','19140','1','0','100','1','1000','1000','60000','60000','0','0','45','5','7','0','0','0','0','0','0','0','0','0','Mag''har Pitfighter - Send AI Event 5'),
 ('1914002','19140','1','0','100','1','1200','1200','1200','1200','0','0','0','0','0','0','30','1','2','3','0','0','0','0','Mag''har Pitfighter - Set Phase 1/2/3 randomly (Phase 0)'),
@@ -18177,9 +18171,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===========
 -- Netherstorm
 -- ===========
--- Spirit Healer (6491) - NSR
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Cyber-Rage Forgelord
 ('1694301','16943','9','0','100','1','0','8','19000','23000','0','0','11','36255','0','0','0','0','0','0','0','0','0','0','Cyber-Rage Forgelord - Cast Chaos Nova'),
 ('1694302','16943','2','0','100','0','30','0','0','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Cyber-Rage Forgelord - Cast Enrage at 30% HP'),
@@ -18241,7 +18232,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1886002','18860','9','0','100','1','0','30','120000','130000','0','0','11','36844','1','32','0','0','0','0','0','0','0','0','Daughter of Destiny - Cast Curse of Horrors'),
 -- Mana Wraith
 ('1886401','18864','9','0','100','1','0','30','9000','13000','0','0','11','29054','1','0','0','0','0','0','0','0','0','0','Mana Wraith - Cast Devour Mana'),
--- Warp Aberration
+-- Warp Aberration 18865
 ('1886501','18865','1','0','100','1','1000','1000','600000','600000','0','0','11','36640','0','1','0','0','0','0','0','0','0','0','Warp Aberration - Cast Arcane Shield on Spawn'),
 ('1886502','18865','0','0','100','1','2500','5000','20000','25000','0','0','11','36577','1','0','0','0','0','0','0','0','0','0','Warp Aberration - Cast Warp Storm'),
 ('1886503','18865','27','0','100','1','36640','1','5000','5000','0','0','11','36640','0','32','0','0','0','0','0','0','0','0','Warp Aberration - Cast Arcane Shield on Missing Buff'),
@@ -18300,7 +18291,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1888302','18883','0','0','100','1','1000','1000','14000','17000','0','0','11','36574','0','0','0','0','0','0','0','0','0','0','Mana Snapper - Cast Phase Slip'),
 ('1888303','18883','6','0','100','0','0','0','0','0','0','0','11','34814','0','7','0','0','0','0','0','0','0','0','Mana Snapper - Cast De-Materialize on Death'),
 -- Warp Chaser
-('1888401','18884','1','0','100','0','1000','1000','0','0','0','0','11','32942','0','32','0','0','0','0','0','0','0','0','Warp Chaser - Cast Phasing Invisibility on Spawn'),
+('1888401','18884','11','0','100','0','0','0','0','0','0','0','11','32942','0','0','0','0','0','0','0','0','0','0','Warp Chaser - Cast Phasing Invisibility on Spawn'),
 ('1888402','18884','9','0','100','1','8','25','14000','19000','0','0','11','37417','1','0','0','0','0','0','0','0','0','0','Warp Chaser - Cast Warp Charge'),
 ('1888403','18884','9','0','100','1','0','5','3000','6000','0','0','11','32739','1','0','0','0','0','0','0','0','0','0','Warp Chaser - Cast Venomous Bite'),
 -- Farahlon Giant
@@ -18577,7 +18568,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2022102','20221','9','0','100','1','0','5','13000','17000','0','0','11','33731','1','0','0','0','0','0','0','0','0','0','Sunfury Flamekeeper - Cast Judgement of the Flame'),
 ('2022103','20221','2','0','100','0','30','0','0','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Sunfury Flamekeeper - Cast Enrage at 30% HP'),
 -- Karaaz (20242) - NSR
--- Scrapped Fel Reaver - npc_scrapped_fel_reaver
+-- Scrapped Fel Reaver (20243) - npc_scrapped_fel_reaver
 -- Sunfury Nethermancer 20248
 ('2024801','20248','1','0','100','1','1000','1000','300000','300000','0','0','11','36477','0','0','0','0','0','0','0','0','0','0','Sunfury Nethermancer - Cast Summon Mana Beast OOC'),
 ('2024802','20248','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Sunfury Nethermancer - Enable Range Mode on Aggro'),
@@ -18676,7 +18667,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zephyrion 20470
 -- Nether-Stalker Nauthis 20471
 -- Ethereum Nexus-Stalker
-('2047401','20474','11','0','100','0','0','0','0','0','0','0','11','17673','0','0','0','0','0','0','0','0','0','0','Ethereum Overlord - Cast Shade Form Visual on Spawn'),
+('2047401','20474','11','0','100','0','0','0','0','0','0','0','11','17673','0','0','0','0','0','0','0','0','0','0','Ethereum Nexus-Stalker - Cast Shade Form Visual on Spawn'),
 ('2047402','20474','1','0','100','1','1000','1000','600000','600000','0','0','11','36515','0','32','0','0','0','0','0','0','0','0','Ethereum Nexus-Stalker - Cast Shadowtouched OOC'),
 ('2047403','20474','9','0','100','1','0','5','10000','11000','0','0','11','36517','1','0','0','0','0','0','0','0','0','0','Ethereum Nexus-Stalker - Cast Shadowsurge'),
 -- Kirin'Var Ghost 20480
@@ -18717,8 +18708,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2055401','20554','0','0','100','1','2000','8000','10000','15000','0','0','11','36473','0','0','0','0','0','0','0','0','0','0','Arconus the Insatiable - Cast Desecration'),
 ('2055402','20554','2','0','100','1','25','0','15300','22900','0','0','11','36472','0','1','0','0','0','0','0','0','0','0','Arconus the Insatiable - Cast Consume Shadows at 25% HP'),
 -- Withered Corpse
-('2056101','20561','4','0','100','0','0','0','0','0','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion and Summon Parasitic Fleshbeast and Delayed Despawn on Aggro'),
-('2056102','20561','10','0','100','0','0','4','0','0','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion and Summon Parasitic Fleshbeast and Delayed Despawn on OOC LOS'),
+('2056101','20561','4','0','100','0','0','0','0','0','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion and Spawn Parasitic Fleshbeast and Delayed Despawn on Aggro'),
+('2056102','20561','10','0','100','0','0','4','0','0','0','0','11','35309','0','6','12','20335','0','180000','41','1000','0','0','Withered Corpse - Cast Bloody Explosion and Spawn Parasitic Fleshbeast and Delayed Despawn on OOC LOS'),
 -- Image of Agent Ya-six <The Protectorate>
 ('2056401','20564','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Image of Agent Ya-six <The Protectorate> - Cast Simple Teleport on Spawn'),
 -- Shaleskin Ripper
@@ -18923,7 +18914,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2133501','21335','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Tentacle of Markaru - Stop Movement on Spawn'),
 ('2133502','21335','33','0','100','1','0','0','4400','12900','0','0','11','37956','1','0','0','0','0','0','0','0','0','0','Tentacle of Markaru - Cast Tentacle Lash on Facing Target Back'),
 ('2133503','21335','9','0','100','1','0','5','6000','8000','0','0','11','36664','4','256','0','0','0','0','0','0','0','0','Tentacle of Markaru - Cast Tentacle Cleave'),
--- Shadow Horror 21435 NSR
+-- Shadow Horror 21435 - NSR
 -- Kablamm Farflinger 21493
 -- Pathaleon the Calculator's Image 21504
 -- Nandirx 21732
@@ -19160,7 +19151,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2068403','20684','9','0','100','1025','0','40','3400','4800','0','0','11','13901','1','256','0','0','0','0','0','0','0','0','Lady Shav''rar - Cast Arcane Bolt'),
 -- Keeper of the Cistern
 ('2079501','20795','0','0','100','1','0','1000','2500','4700','0','0','11','32011','1','0','0','0','0','0','0','0','0','0','Keeper of the Cistern - Cast Water Bolt'),
-('2079502','20795','9','0','100','1','0','10','12000','16500','0','0','11','11831','0','0','0','0','0','0','0','0','0','0','Coilskar Waterkeeper - Cast Frost Nova'),
+('2079502','20795','9','0','100','1','0','10','12000','16500','0','0','11','11831','0','0','0','0','0','0','0','0','0','0','Keeper of the Cistern - Cast Frost Nova'),
 -- Deathforge Summoner 20872
 ('2087201','20872','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Deathforge Summoner - Enable Range Mode on Aggro'),
 ('2087202','20872','0','0','100','1025','7000','9000','17000','24000','0','0','11','37628','1','0','0','0','0','0','0','0','0','0','Deathforge Summoner - Cast Fel Immolate'),
@@ -19241,7 +19232,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Demon Hunter Initiate
 ('2118001','21180','0','0','100','1','3000','10000','15000','25000','0','0','11','35871','1','32','0','0','0','0','0','0','0','0','Demon Hunter Initiate - Cast Spellbreaker'),
 -- Cyrukh the Firelord
-('2118101','21181','11','0','100','0','0','0','0','0','0','0','1','-10192','-10193','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Yell on Spawn'),
+('2118101','21181','11','0','100','0','0','0','0','0','0','0','1','-10192','-10193','0','11','36329','0','34','0','0','0','0','Cyrukh the Firelord - Yell and Cast Cyrukh Fire Kit on Spawn'),
 ('2118102','21181','4','0','100','0','0','0','0','0','0','0','1','-10194','0','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Yell on Aggro'),
 ('2118103','21181','9','0','100','1','0','30','14000','18000','0','0','11','39429','8','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Cast Fel Flamestrike'),
 ('2118104','21181','9','0','100','1','0','5','16000','24000','0','0','11','18945','1','0','0','0','0','0','0','0','0','0','Cyrukh the Firelord - Cast Knock Away'),
@@ -19776,6 +19767,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Broken Refugee
 ('1912001','19120','30','2','100','0','5','18893','0','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Broken Refugee - Set Phase 1 on Receive AI Event 5 (A)'),
 ('1912002','19120','1','1','100','33','8000','16000','8000','16000','0','0','5','1','0','0','10','273','274','0','10','5','6','0','Broken Refugee - Random Emote OOC (Phase 1)'),
+-- Aldor Anchorite (19142) - NSR
 -- Mag'har Refugee
 ('1914401','19144','30','6','100','0','5','18893','0','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Mag''har Refugee - Set Phase 1 on Receive AI Event 5 (A)'),
 ('1914402','19144','30','6','100','0','6','19144','0','0','0','0','0','0','0','0','22','2','0','0','0','0','0','0','Mag''har Refugee - Set Phase 2 on Receive AI Event 6 (A)'),
@@ -19792,9 +19784,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Peasant Refugee
 ('1917001','19170','30','2','100','0','5','18893','0','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','Peasant Refugee - Set Phase 1 on Receive AI Event 5 (A)'),
 ('1917002','19170','1','1','100','33','8000','16000','8000','16000','0','0','5','1','0','0','10','273','274','0','10','5','6','0','Peasant Refugee - Random Emote OOC (Phase 1)'),
--- Cro Threadstrong (19196) NSR
+-- Cro Threadstrong (19196) - NSR
 -- Grand Anchorite Almonen (19216)
--- Granny Smith (19223) NSR
+-- Granny Smith (19223) - NSR
 -- Griftah
 ('1922701','19227','10','0','75','1','1','30','120000','120000','1','0','1','-10306','-10307','-10308','0','0','0','0','0','0','0','0','Griftah - Gossip Speech OOC'),
 ('1922702','19227','10','0','20','1','1','30','500000','500000','1','0','1','-10307','-10308','-10311','0','0','0','0','0','0','0','0','Griftah - Gossip Speech OOC'),
@@ -19806,6 +19798,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1928304','19283','1','0','100','1','30000','300000','240000','520000','0','0','1','-10685','-10686','-10687','0','0','0','0','0','0','0','0','Vagrant - Random Say OOC'),
 -- Vagabond
 ('1928901','19289','11','0','50','0','0','0','0','0','0','0','10','12','65','68','0','0','0','0','0','0','0','0','Vagabond - Random State on Spawn'),
+-- Harbinger Erothem 19346 - NSR
+-- Anchorite Nindumen 19378 - NSR
 -- Harbinger Haronem
 ('1947501','19475','1','0','100','1','6000','6000','6000','6000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Harbinger Haronem - Talk Emote OOC'),
 -- Madame Ruby
@@ -19891,7 +19885,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2485401','24854','1','0','100','0','1000','1000','0','0','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Sister of Torment Image - Cast Non-Heroic Image Channel OOC'),
 -- Kael'thas Sunstrider Image
 ('2485501','24855','1','0','100','0','1000','1000','0','0','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Kael''thas Sunstrider Image - Cast Heroic Image Channel OOC'),
-
 -- Commander Steele (25141)
 -- Shattered Sun Marksman
 ('2514201','25142','1','0','100','1','5000','30000','12000','35000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Shattered Sun Marksman - Talk Emote OOC'),
@@ -19908,7 +19901,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ===============
--- Terokkar Forest- (Final Zone Script Revamp Complete)
+-- Terokkar Forest
 -- ===============
 -- Firewing Bloodwarder
 ('141001','1410','4','0','20','0','0','0','0','0','0','0','54','0','0','10006','0','0','0','0','0','0','0','0','Firewing Bloodwarder - Random Say on Aggro'),
@@ -19949,7 +19942,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bonechewer Devastator
 ('1677201','16772','0','0','100','1','4000','7000','6000','8000','0','0','11','8646','1','0','0','0','0','0','0','0','0','0','Bonechewer Devastator - Cast Snap Kick'),
 -- Broken Skeleton
-('1680501','16805','1','0','100','0','1000','1000','0','0','0','0','11','32900','0','32','0','0','0','0','0','0','0','0','Broken Skeleton - Cast Bone Shards Proc OOC'),
+('1680501','16805','11','0','100','0','0','0','0','0','0','0','11','32900','0','34','0','0','0','0','0','0','0','0','Broken Skeleton - Cast Bone Shards Proc on Spawn'),
 -- Bonechewer Backbreaker 16810
 ('1681001','16810','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Bonechewer Backbreaker - Enable Range Mode on Aggro'),
 ('1681002','16810','2','0','100','1025','30','0','30000','30000','0','0','11','6742','0','0','0','0','0','0','0','0','0','0','Bonechewer Backbreaker - Cast Bloodlust at 30% HP'),
@@ -20948,7 +20941,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   DUNGEON INSTANCES   |
 -- =========================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- ===================================================================
 -- Auchindoun: Auchenai Crypts - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data
 -- ===================================================================
@@ -24121,7 +24113,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- ==================
 -- Magisters' Terrace
 -- ==================
@@ -26753,7 +26744,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   Raid Instances   |
 -- ======================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- ============
 -- Black Temple
 -- ============
@@ -29471,7 +29461,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   Battlegrounds   |
 -- =====================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- ==============
 -- Alterac Valley
 -- ==============
@@ -30251,7 +30240,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   Special Game Event Scripts   |
 -- ==================================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
-
 -- Lunar Festival
 ('1588201','15882','1','0','100','0','0','0','0','0','0','0','11','26347','0','1','0','0','0','0','0','0','0','0','Pat''s Firework Guy - RED'),
 ('1588301','15883','1','0','100','0','0','0','0','0','0','0','11','26349','0','1','0','0','0','0','0','0','0','0','Pat''s Firework Guy - YELLOW'),
@@ -30557,7 +30545,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Classic PLEASE RE-USE 34 - 41
 ('-42','Time to join us, $c.','0','0','0','1157','0'),
 -- Classic PLEASE RE-USE 43 - 45
-('-46','%s becomes enraged!','0','2','0','Common Text','0'),
+('-46','%s becomes enraged!','0','2','0','Enrage Text','0'),
 ('-47','%s attempts to run away in fear!','0','2','0','Common Text','0'),
 -- Classic PLEASE RE-USE 48 - 72
 ('-73','So dark...','0','0','0','11936','1'),
@@ -30570,7 +30558,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-103','Brains...','0','0','0','1158','0'),
 -- Classic PLEASE RE-USE 104
 ('-105','Your bones will break under my boot, $r!','0','0','1','Common Dragonmaw Text','0'),
-('-106','%s goes into a frenzy!','0','2','0','Enrage Text','0'),
+('-106','%s goes into a frenzy!','0','2','0','Frenzy Text','0'),
 -- Classic PLEASE RE-USE 107 - 122
 ('-123','I am the serpent king! I can do anything.','5788','1','0','3673','0'),
 -- Classic PLEASE RE-USE 124 - 132
