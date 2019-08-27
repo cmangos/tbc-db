@@ -3,10 +3,10 @@ DELETE FROM `npc_gossip` WHERE `npc_guid` IN (SELECT `guid` FROM `creature` WHER
 
 SET @COND := 872;
 DELETE FROM `conditions` WHERE `condition_entry` IN (@COND, @COND + 1, @COND + 2, @COND + 3, @COND + 4);
-INSERT INTO `conditions` VALUES
-(@COND, 78, 5, 0, 'Event ID 78 Active'),
-(@COND + 1, 81, 5, 0, 'Event ID 81 Active'),
-(@COND + 2, 84, 5, 0, 'Event ID 84 Active'),
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `comments`) VALUES
+(@COND, 12, 78, 0, 'Event ID 78 Active'),
+(@COND + 1, 12, 81, 0, 'Event ID 81 Active'),
+(@COND + 2, 12, 84, 0, 'Event ID 84 Active'),
 (@COND + 3, -2, @COND + 1, @COND, '(Event ID 81 Active OR Event 78 Active)'),
 (@COND + 4, -2, @COND + 3, @COND + 2, '(Event ID 81 Active OR Event ID 78 Active OR Event ID 84 Active)');
 
