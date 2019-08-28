@@ -13605,7 +13605,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodfury Ambusher
 ('402501','4025','9','0','100','1','0','20','8000','13000','0','0','11','2608','1','0','0','0','0','0','0','0','0','0','Bloodfury Ambusher - Cast Shock'),
 -- Bloodfury Windcaller
-('402601','4026','9','0','100','1','0','30','14000','20000','0','0','11','6728','1','0','0','0','0','0','0','0','0','0','Bloodfury Windcaller - Cast Enveloping Winds'),
+('402601','4026','9','0','100','1','0','30','14000','20000','0','0','11','6728','9','0','0','0','0','0','0','0','0','0','Bloodfury Windcaller - Cast Enveloping Winds'),
 -- Bloodfury Storm Witch 4027
 ('402701','4027','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Bloodfury Storm Witch - Enable Range Mode on Aggro'),
 ('402702','4027','0','0','100','1025','11000','16000','40000','45000','0','0','11','6535','4','0','0','0','0','0','0','0','0','0','Bloodfury Storm Witch - Cast Lightning Cloud'),
