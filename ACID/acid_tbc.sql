@@ -14608,8 +14608,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('328401','3284','2','0','100','0','25','0','0','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Venture Co. Drudger - Flee at 25% HP'),
 -- Venture Co. Peon 3285
 ('328501','3285','2','0','100','0','25','0','0','0','0','0','25','0','0','0','54','-47','0','0','0','0','0','0','Venture Co. Peon - Flee at 25% HP'),
--- Venture Co. Overseer
-('328601','3286','2','0','100','1','20','0','5000','10000','0','0','11','9080','1','33','0','0','0','0','0','0','0','0','Venture Co. Overseer - Cast Overseer''s Poison at 20% HP'),
+-- Venture Co. Overseer 3286
+('328601','3286','2','0','100','1025','20','0','5000','10000','0','0','11','6531','1','32','1','-155','0','0','0','0','0','0','Venture Co. Overseer - Cast Overseer''s Poison and Emote at 20% HP'),
 -- Sludge Beast
 ('329501','3295','9','0','100','1','0','5','9000','16000','0','0','11','7279','1','32','0','0','0','0','0','0','0','0','Sludge Beast - Cast Black Sludge'),
 -- Bael'dun Excavator
@@ -30581,7 +30581,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-145','%s flees toward safety or another tiger.','0','2','0','Zulian Cub fleeing text','0'),
 -- Classic PLEASE RE-USE 146 - 153
 ('-154','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
--- Classic PLEASE RE-USE 155 - 160
+('-155','%s grabs for his poisoned dagger!','0','2','0','3286','0'),
+-- Classic PLEASE RE-USE 156 - 160
 ('-161','A living $r... soon to be a dead like me.','0','0','0','Common Undead Text','0'),
 ('-162','Mmm... I love my delicious Southshore stout.','0','0','0','2440','0'),
 ('-163','Slay them, my brethren! For the Scourge!','5822','1','0','7357','0'),
@@ -30860,7 +30861,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-897','The light condemns all who harbor evil.  Now you will die!','0','0','0','Common Scarlet Text','0'),
 ('-898','Thieves! I shall smelt your remains!','0','0','0','Crimson Hammersmith 11120 on Spawn','0'),
 ('-899','Payment for those plans comes in bones - YOUR BONES!','0','0','0','Black Guard Swordsmith 11121 on Spawn','0'),
--- Classic PLEASE RE-USE 899 - 923
+-- Classic PLEASE RE-USE 900 - 923
 ('-924','More agents of the Syndicate I\'ll wager! You\'ll never take back Alterac... Or Southshore!','0','0','7','2276','0'),
 ('-925','This orchard is now as barren and lifeless as my rotting shell. Once these trees bloomed with fruit but now there is only rot.','0','0','1','2396','0'),
 ('-926','I spent my whole life caring for these trees. Pruning and nurturing them... only fitting that they have joined me in death.','0','0','1','2396','0'),
