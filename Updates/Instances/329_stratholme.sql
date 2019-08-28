@@ -671,7 +671,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (10398, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Shadowcaster
 (10399, 0, 0, 1, 16, 0, 0, NULL), -- Thuzadin Acolyte
 (10400, 0, 8, 1, 16, 0, 0, '12380'), -- Thuzadin Necromancer
-(10405, 0, 0, 1, 16, 0, 0, '18950'), -- Plague Ghoul
+(10405, 0, 0, 1, 16, 0, 0, '15088 15097 18950'), -- Plague Ghoul
 (10406, 0, 0, 1, 16, 0, 0, '18950'), -- Ghoul Ravener
 (10407, 0, 0, 1, 16, 0, 0, '8876 18950'), -- Fleshflayer Ghoul
 (10408, 0, 0, 1, 16, 0, 0, NULL), -- Rockwing Gargoyle
@@ -2174,9 +2174,9 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 DELETE FROM `dbscripts_on_event` WHERE `id` IN (5300, 5301, 5258, 11206);
 INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- q.5305 Sweet Serenity
-(5300, 5, 10, 11120, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 3584.41, -2998.57, 125, 1.892, 'Summon Crimson Hammersmith'),
+(5300, 0, 10, 11120, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 3571.19, -3003.701, 125.0014, 0.4708226, 'Summon Crimson Hammersmith'),
 -- q.5307 Corruption
-(5301, 5, 10, 11121, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 3820.95, -3695.15, 143.87, 1.825, 'Summon Black Guard Swordsmith'),
+(5301, 0, 10, 11121, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 3820.68, -3706.187, 143.5117, 1.523680, 'Summon Black Guard Swordsmith'), -- position guessed
 
 (5258, 1, 9, @OGUID+397, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn gobject'),
 
