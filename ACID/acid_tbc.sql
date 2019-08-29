@@ -5200,7 +5200,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mist Creeper (3.3.5a Official Data)
 ('178101','1781','1','0','100','0','1000','1000','0','0','0','0','11','7276','0','32','0','0','0','0','0','0','0','0','Mist Creeper - Cast Poison Proc OOC'),
 -- Moonrage Darksoul (3.3.5a Official Data)
-('178201','1782','2','0','100','0','50','0','0','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Moonrage Darksoul - Cast Enrage at 50% HP'),
+('178201','1782','2','0','100','0','30','0','0','0','0','0','11','8599','0','1','1','-46','0','0','0','0','0','0','Moonrage Darksoul - Cast Enrage at 30% HP'),
 -- Giant Grizzled Bear (1797) - NSR
 -- Ravenclaw Raider (3.3.5a Official Data)
 ('186501','1865','0','0','100','1','17900','26200','36100','58300','0','0','11','5271','1','0','0','0','0','0','0','0','0','0','Ravenclaw Raider - Cast Cursed Blade'),
