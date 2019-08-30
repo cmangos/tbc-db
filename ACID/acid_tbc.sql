@@ -14739,6 +14739,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Echeyakee 3475 - NSR
 -- Ratchet Bruiser 3502 - guard_contested
 ('350201','3502','0','0','100','1','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Ratchet Bruiser - Cast Net'),
+-- Silithid Protector
+('350301','3503','11','0','100','0','0','0','0','0','0','0','1','-1321','0','0','0','0','0','0','0','0','0','0','Silithid Protector - Emote on Spawn'),
 -- Devrak
 ('361501','3615','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Devrak - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Devouring Ectoplasm 3638
@@ -31002,7 +31004,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1318','Silithid Creeper Egg begins to crack and open...','0','2','0','5781','0'),
 ('-1319','Silithid Creeper Egg splits open!','0','2','0','5781','0'),
 ('-1320','%s splits into two new Lava Spawns!','0','2','0','Lava Spawn - Split Emote','0'),
--- Classic PLEASE RE-USE 1321 - 1322
+('-1321','digs its way out of the sand to protect its eggs.','0','2','0','Silithid Protector 3503','0'),
+-- Classic PLEASE RE-USE 1322
 ('-1323','Raaar!!! Me smash $R!','0','0','0','9196','1'),
 ('-1324','I cannot be destroyed! By the will of Ragnaros, I shall be reborn!','0','0','0','9017','0'),
 ('-1325','What are you doing? Intruders!!','0','1','0','9476','0'),
