@@ -14742,7 +14742,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Devrak
 ('361501','3615','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Devrak - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Devouring Ectoplasm 3638
-('363801','3638','2','0','100','0','50','0','0','0','0','0','11','7952','0','0','0','0','0','0','0','0','0','0','Devouring Ectoplasm - Cast Clone at 50% HP'),
+('363801','3638','2','0','100','0','30','0','0','0','0','0','11','7952','0','0','1','-156','0','0','0','0','0','0','Devouring Ectoplasm - Cast Clone at 30% HP'),
 -- Trigore the Lasher 3652
 ('365201','3652','11','0','100','0','0','0','0','0','0','0','11','3417','0','34','0','0','0','0','0','0','0','0','Trigore the Lasher - Cast Thrash on Spawn'),
 -- Razormane Wolf 3939 - NSR
@@ -30582,7 +30582,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Classic PLEASE RE-USE 146 - 153
 ('-154','%s lets out a shriek, calling for help!','0','2','0','3255','0'),
 ('-155','%s grabs for his poisoned dagger!','0','2','0','3286','0'),
--- Classic PLEASE RE-USE 156 - 160
+('-156','%s begins to make a copy of itself!','0','2','0','Devouring Ectoplasm - Clone','0'),
+-- Classic PLEASE RE-USE 157 - 160
 ('-161','A living $r... soon to be a dead like me.','0','0','0','Common Undead Text','0'),
 ('-162','Mmm... I love my delicious Southshore stout.','0','0','0','2440','0'),
 ('-163','Slay them, my brethren! For the Scourge!','5822','1','0','7357','0'),
