@@ -26497,7 +26497,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deviate Stalker 3634 - NSR
 -- Deviate Ravager
 ('363601','3636','1','0','100','0','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Deviate Ravager - Cast Thrash OOC'),
--- Deviate Guardian (3637) - NSR
+-- Deviate Guardian (3637)
+('363701','3637','2','0','100','0','30','0','0','0','0','0','39','40','0','0','1','-154','0','0','0','0','0','0','Deviate Guardian - Call for Help at 30% HP'),
 -- Evolving Ectoplasm (3640) - NSR
 -- Kresh (3653) - NSR
 -- Mutanus the Devourer
