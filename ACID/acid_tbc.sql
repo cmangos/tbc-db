@@ -12062,10 +12062,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grizzled Ironfur Bear (5272) - NSR
 -- Ironfur Patriarch
 ('527401','5274','9','0','100','1','0','8','12000','21000','0','0','11','10968','0','0','0','0','0','0','0','0','0','0','Ironfur Patriarch - Cast Demoralizing Roar'),
--- Sprite Dragon
-('527601','5276','9','0','100','1','0','30','9000','15000','0','0','11','17630','1','0','0','0','0','0','0','0','0','0','Sprite Dragon - Cast Mana Burn'),
--- Sprite Darter
-('527801','5278','9','0','100','1','0','30','7000','11000','0','0','11','17630','1','0','0','0','0','0','0','0','0','0','Sprite Darter - Cast Mana Burn'),
+-- Sprite Dragon 5276
+('527601','5276','18','0','100','1025','100','10','9000','15000','0','0','11','17630','1','0','0','0','0','0','0','0','0','0','Sprite Dragon - Cast Mana Burn on Target Mana User'),
+-- Sprite Darter 5278
+('527801','5278','18','0','100','1025','100','10','7000','11000','0','0','11','17630','1','0','0','0','0','0','0','0','0','0','Sprite Darter - Cast Mana Burn on Target Mana User'),
 -- Longtooth Runner (5286) - NSR
 -- Longtooth Howler
 ('528701','5287','2','0','100','0','20','0','0','0','0','0','4','1018','0','0','5','393','0','0','39','30','0','0','Longtooth Howler - Howl and Emote and Call For Help at 20% HP'),
@@ -13583,10 +13583,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Pridewing Consort (4014) - NSR
 -- Pridewing Patriarch
 ('401501','4015','1','0','100','0','1000','1000','0','0','0','0','11','3616','0','32','0','0','0','0','0','0','0','0','Pridewing Patriarch - Cast Poison Proc OOC'),
--- Fey Dragon
-('401601','4016','9','0','100','0','0','30','0','0','0','0','11','7994','1','0','0','0','0','0','0','0','0','0','Fey Dragon - Cast Nullify Mana'),
--- Wily Fey Dragon
-('401701','4017','9','0','100','1','0','30','8000','11000','0','0','11','17630','4','0','0','0','0','0','0','0','0','0','Wily Fey Dragon - Cast Mana Burn'),
+-- Fey Dragon 4016
+('401601','4016','18','0','100','1024','100','10','0','0','0','0','11','7994','1','0','0','0','0','0','0','0','0','0','Fey Dragon - Cast Nullify Mana on Target Mana User'),
+-- Wily Fey Dragon 4017
+('401701','4017','0','0','100','1025','0','0','8000','11000','0','0','11','17630','16','0','0','0','0','0','0','0','0','0','Wily Fey Dragon - Cast Mana Burn on Random Target Mana User'),
 -- Antlered Courser
 ('401801','4018','4','0','100','0','0','0','0','0','0','0','11','6268','0','0','0','0','0','0','0','0','0','0','Antlered Courser - Cast Rushing Charge on Aggro'),
 -- Great Courser
@@ -24963,11 +24963,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1049502','10495','4','0','100','0','0','0','0','0','0','0','11','8247','0','1','0','0','0','0','0','0','0','0','Diseased Ghoul - Cast Wandering Plague on Aggro'),
 ('1049503','10495','6','0','100','0','0','0','0','0','0','0','11','17742','0','7','0','0','0','0','0','0','0','0','Diseased Ghoul - Cast Cloud of Disease on Death'),
 -- Spectral Tutor (10498) - npc_spectral_tutor
--- Spectral Researcher (3.0.3 Official Data - Logs Only)
-('1049901','10499','0','0','100','1','2000','25700','7300','19400','0','0','11','17630','1','0','0','0','0','0','0','0','0','0','Spectral Researcher - Cast Mana Burn'),
+-- Spectral Researcher 10499 (3.0.3 Official Data - Logs Only)
+('1049901','10499','18','0','100','1025','100','10','7300','19400','0','0','11','17630','1','0','0','0','0','0','0','0','0','0','Spectral Researcher - Cast Mana Burn on Target Mana User'),
 ('1049902','10499','0','0','100','1','1000','9400','9400','22800','0','0','11','17631','1','1','0','0','0','0','0','0','0','0','Spectral Researcher - Cast Wail of Souls'),
--- Spectral Teacher (3.0.3 Official Data - Logs Only)
-('1050001','10500','0','0','100','1','13900','18100','10500','22400','0','0','11','17630','1','0','0','0','0','0','0','0','0','0','Spectral Teacher - Cast Mana Burn'),
+-- Spectral Teacher 10500 (3.0.3 Official Data - Logs Only)
+('1050001','10500','18','0','100','1025','100','10','10500','22400','0','0','11','17630','1','0','0','0','0','0','0','0','0','0','Spectral Teacher - Cast Mana Burn on Target Mana User'),
 ('1050002','10500','0','0','100','1','9900','19700','30900','39600','0','0','11','17633','0','1','0','0','0','0','0','0','0','0','Spectral Teacher - Cast Arcane Focus'),
 -- Lady Illucia Barov
 ('1050201','10502','0','0','100','1','5000','11000','12000','19000','0','0','11','12528','0','0','0','0','0','0','0','0','0','0','Lady Illucia Barov - Cast Silence'),
