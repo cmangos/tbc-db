@@ -21483,11 +21483,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('481303','4813','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Twilight Shadowmage - Flee at 15% HP'),
 ('481304','4813','0','0','100','1025','18000','26000','24000','30000','0','0','11','7645','5','512','0','0','0','0','0','0','0','0','Twilight Shadowmage - Cast Dominate Mind'),
 ('481305','4813','9','0','100','1025','0','40','2400','3800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Twilight Shadowmage - Cast Shadow Bolt'),
--- Twilight Elementalist
-('481401','4814','0','0','100','1','4000','7000','9000','12000','0','0','11','13728','4','0','0','0','0','0','0','0','0','0','Twilight Elementalist - Cast Earth Shock'),
-('481402','4814','0','0','100','1','5000','9000','13000','17000','0','0','11','15039','4','0','0','0','0','0','0','0','0','0','Twilight Elementalist - Cast Flame Shock'),
-('481403','4814','0','0','100','1','1000','2500','11000','15000','0','0','11','12548','1','0','0','0','0','0','0','0','0','0','Twilight Elementalist - Cast Frost Shock'),
-('481404','4814','0','0','100','1','3000','6000','7000','12000','0','0','11','11824','1','0','0','0','0','0','0','0','0','0','Twilight Elementalist - Cast Shock'),
+-- Twilight Elementalist 4814
+('481401','4814','4','0','15','0','0','0','0','0','0','0','1','-222','-223','0','0','0','0','0','0','0','0','0','Twilight Elementalist - Say on Aggro'),
+('481402','4814','0','0','100','1025','4000','7000','9000','12000','0','0','11','13728','4','0','0','0','0','0','0','0','0','0','Twilight Elementalist - Cast Earth Shock'),
+('481403','4814','0','0','100','1025','5000','9000','13000','17000','0','0','11','15039','4','0','0','0','0','0','0','0','0','0','Twilight Elementalist - Cast Flame Shock'),
+('481404','4814','0','0','100','1025','1000','2500','11000','15000','0','0','11','12548','1','0','0','0','0','0','0','0','0','0','Twilight Elementalist - Cast Frost Shock'),
+('481405','4814','0','0','100','1025','3000','6000','7000','12000','0','0','11','11824','1','0','0','0','0','0','0','0','0','0','Twilight Elementalist - Cast Shock'),
 -- Murkshallow Snapclaw
 ('481501','4815','0','0','100','1','5000','9000','16000','20000','0','0','11','8379','1','0','0','0','0','0','0','0','0','0','Murkshallow Snapclaw - Cast Disarm'),
 -- Blindlight Murloc
@@ -30648,7 +30649,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-219','How dare you!','0','0','0','Nathanos Text','0'),
 ('-220','If you run now, you may live.','0','0','0','Nathanos Text','0'),
 ('-221','You merely prolong the inevitable. Succumb. She will free your misguided soul.','0','0','0','Nathanos Text','0'),
--- Classic PLEASE RE-USE 222 - 227
+('-222','Intruders! The Hammer shall fall upon you.','0','0','0','Twilight Elementalist 4814','0'),
+('-223','Your blood shall be the catalyst for the Old Gods'' return!','0','0','0','Twilight Elementalist 4814','0'),
+-- Classic PLEASE RE-USE 224 - 227
 ('-228','I gonna make you into mojo!','0','0','0','Common Troll Text','0'),
 ('-229','Killing you be easy.','0','0','0','Common Troll Text','0'),
 ('-230','You be dead soon!','0','0','0','Common Troll Text','0'),
