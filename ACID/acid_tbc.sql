@@ -8615,9 +8615,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Searing Totem II 3902 (3.3.0 Official Data) - TotemAI
 -- Dagri (3915) - NSR
 -- Shael'dryn (3916) - NSR
--- Befouled Water Elemental (3.3.0 Official Data)
-('391701','3917','0','0','100','1','8100','10400','15500','18500','0','0','11','9672','1','0','0','0','0','0','0','0','0','0','Befouled Water Elemental - Cast Frostbolt'),
-('391702','3917','0','0','100','1','34200','36100','17100','38600','0','0','11','6873','1','1','0','0','0','0','0','0','0','0','Befouled Water Elemental - Cast Foul Chill'),
+-- Befouled Water Elemental 3917 (3.3.0 Official Data)
+('391701','3917','0','0','100','1025','34200','36100','17100','38600','0','0','11','6873','1','1','0','0','0','0','0','0','0','0','Befouled Water Elemental - Cast Foul Chill'),
+('391702','3917','0','0','100','1025','7000','14000','13000','16000','0','0','11','11831','17','1024','0','0','0','0','0','0','0','0','Befouled Water Elemental - Cast Frost Nova'),
+('391703','3917','0','0','100','1025','8100','10400','15500','18500','0','0','11','9672','1','0','0','0','0','0','0','0','0','0','Befouled Water Elemental - Cast Frostbolt'),
 -- Withered Ancient (3.3.0 Official Data)
 ('391901','3919','9','0','100','1','0','5','33700','77100','0','0','11','6909','1','32','0','0','0','0','0','0','0','0','Withered Ancient - Cast Curse of Thorns'),
 -- Anilia (3.3.0 Official Data)
