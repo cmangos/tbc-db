@@ -5204,8 +5204,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Giant Grizzled Bear (1797) - NSR
 -- Ravenclaw Raider (3.3.5a Official Data)
 ('186501','1865','0','0','100','1','17900','26200','36100','58300','0','0','11','5271','1','0','0','0','0','0','0','0','0','0','Ravenclaw Raider - Cast Cursed Blade'),
--- Ravenclaw Slave (3.3.5a Official Data)
-('186601','1866','0','0','100','1','6400','12200','33400','41700','0','0','11','7761','1','0','0','0','0','0','0','0','0','0','Ravenclaw Slave - Cast Shared Bondage'),
+-- Ravenclaw Slave 1866 (3.3.5a Official Data)
+('186601','1866','11','0','100','0','0','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Ravenclaw Slave - Cast Birth on Spawn'),
+('186602','1866','0','0','100','1025','6400','12200','33400','41700','0','0','11','7761','1','0','0','0','0','0','0','0','0','0','Ravenclaw Slave - Cast Shared Bondage'),
 -- Dalaran Apprentice 1867 (4.0.1 Official Data)
 ('186701','1867','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Dalaran Apprentice - Enable Range Mode on Aggro'),
 ('186702','1867','27','0','100','1','12544','1','5000','10000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Dalaran Apprentice - Cast Frost Armor on Missing Buff'),
