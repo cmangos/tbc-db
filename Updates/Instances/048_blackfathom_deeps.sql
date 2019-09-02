@@ -349,8 +349,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+6, 2045, 48, -328.711, 211.076, -69.6185, -0.715585, 0, 0, -0.350207, 0.936672, 7200, 7200, 100, 1), -- Stranglekelp
 (@OGUID+7, 2045, 48, -494.592, 106.927, -73.508, 1.76278, 0, 0, 0.771624, 0.636079, 7200, 7200, 100, 1), -- Stranglekelp
 (@OGUID+8, 2045, 48, -726.43, -159.34, -56.596, -0.593412, 0, 0, -0.292372, 0.956305, 7200, 7200, 100, 1), -- Stranglekelp
--- 9
-(@OGUID+10, 3689, 48, -614.864, 252.745, -49.4881, -1.46608, 0, 0, 0.669131, -0.743145, 7200, 7200, 100, 1), -- Weapon Crate
+(@OGUID+9, 3689, 48, -300.55, 320.14, -53.2449, 3.0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Weapon Crate
+(@OGUID+10, 3689, 48, -614.864, 252.745, -49.4881, -1.46608, 0, 0, 0.669131, -0.743145, 86400, 86400, 100, 1), -- Weapon Crate
 (@OGUID+11, 13949, 48, -330.544, 212.014, -69.706, 2.80998, 0, 0, 0.986286, 0.165048, 0, 0, 100, 1), -- Pitted Iron Chest
 (@OGUID+12, 19018, 48, -320.238, 65.9714, -63.7392, 0.628319, 0, 0, 0.309017, 0.951057, 180, 180, 100, 1), -- Giant Clam
 (@OGUID+13, 19018, 48, -347.471, 76.0812, -61.8706, -0.575959, 0, 0, 0.284015, -0.95882, 180, 180, 100, 1), -- Giant Clam
@@ -370,9 +370,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+27, 21120, 48, -823.955, -170.407, -24.5267, 2.82743, 0, 0, 0.987688, 0.156434, 7200, 7200, 100, 1), -- Fire of Aku'mai
 (@OGUID+28, 21121, 48, -823.88, -158.535, -24.5278, 0.925024, 0, 0, 0.446198, 0.894934, 7200, 7200, 100, 1), -- Fire of Aku'mai
 (@OGUID+29, 21327, 48, -534.789, 317.353, -49.8213, -3.13794, 0.019173, -0.021242, 0.99959, -0.00142, 7200, 7200, 100, 1), -- Campfire
-(@OGUID+30, 75295, 48, -743.061, -111.067, -30.0483, 1.48353, 0, 0, 0.67559, 0.737277, 43200, 43200, 100, 1), -- Large Iron Bound Chest
+(@OGUID+30, 75295, 48, -743.061, -111.067, -30.0483, 1.48353, 0, 0, 0.67559, 0.737277, 86400, 86400, 100, 1), -- Large Iron Bound Chest
 (@OGUID+31, 75298, 48, -450.61, -38.0686, -31.7772, 3.08923, 0, 0, 0.999657, 0.026177, 86400, 86400, 100, 1), -- Large Solid Chest
--- 32-33
+(@OGUID+32, 75295, 48, -470.10, -88.05, -39.3990, 2.9, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Iron Bound Chest		// xyz guessed
+(@OGUID+33, 75295, 48, -694.42, -47.27, -30.0332, 1.5, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Iron Bound Chest		// xyz guessed
 (@OGUID+34, 103015, 48, -413.324, 43.6505, -47.9681, 3.14159, 0, 0, 1, 0, 7200, 7200, 100, 1), -- Shrine of Gelihast
 (@OGUID+35, 103016, 48, -839.619, -477.904, -33.7343, 3.14159, 0, 0, 1, 0, 7200, 7200, 100, 1), -- Altar of the Deeps
 (@OGUID+36, 177964, 48, -782.021, -63.5876, -45.0935, -2.44346, 0, 0, 0.939693, -0.34202, 0, 0, 100, 1); -- Fathom Stone
@@ -394,16 +395,17 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+21, 1, 'Blackfathom Deeps - Master Chest Pool');
+(@PGUID+21, 2, 'Blackfathom Deeps - Master Chest Pool');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+10, @PGUID+21, 0, 'Blackfathom Deeps - Weapon Crate (3689)'),
 (@OGUID+30, @PGUID+21, 0, 'Blackfathom Deeps - Large Iron Bound Chest (75295)'),
-(@OGUID+31, @PGUID+21, 0, 'Blackfathom Deeps - Large Solid Chest (75298)');
+(@OGUID+31, @PGUID+21, 0, 'Blackfathom Deeps - Large Solid Chest (75298)'),
+(@OGUID+32, @PGUID+21, 0, 'Blackfathom Deeps - Large Iron Bound Chest (75295)'),
+(@OGUID+33, @PGUID+21, 0, 'Blackfathom Deeps - Large Iron Bound Chest (75295)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
