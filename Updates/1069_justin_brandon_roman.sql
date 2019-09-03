@@ -19,17 +19,17 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (901, 0, 2000001904, 0, 'Justin 1368 - Random Texts'), (901, 0, 2000001905, 0, 'Justin 1368 - Random Texts'),
 (901, 0, 2000001906, 0, 'Justin 1368 - Random Texts'), (901, 0, 2000001907, 0, 'Justin 1368 - Random Texts'),
 
-(902, 0, 2000001908, 0, 'Justin 1368 - Random Texts'), (902, 0, 2000001909, 0, 'Brandon 1370 - Random Texts'),
-(902, 0, 2000001910, 0, 'Justin 1368 - Random Texts'), (902, 0, 2000001911, 0, 'Brandon 1370 - Random Texts'),
-(902, 0, 2000001912, 0, 'Justin 1368 - Random Texts'), (902, 0, 2000001913, 0, 'Brandon 1370 - Random Texts'),
-(902, 0, 2000001914, 0, 'Justin 1368 - Random Texts'), (902, 0, 2000001915, 0, 'Brandon 1370 - Random Texts'),
+(902, 0, 2000001908, 0, 'Brandon 1370 - Random Texts'), (902, 0, 2000001909, 0, 'Brandon 1370 - Random Texts'),
+(902, 0, 2000001910, 0, 'Brandon 1370 - Random Texts'), (902, 0, 2000001911, 0, 'Brandon 1370 - Random Texts'),
+(902, 0, 2000001912, 0, 'Brandon 1370 - Random Texts'), (902, 0, 2000001913, 0, 'Brandon 1370 - Random Texts'),
+(902, 0, 2000001914, 0, 'Brandon 1370 - Random Texts'), (902, 0, 2000001915, 0, 'Brandon 1370 - Random Texts'),
 
-(903, 0, 2000001916, 0, 'Justin 1368 - Random Texts'), (903, 0, 2000001917, 0, 'Roman 1371 - Random Texts'),
-(903, 0, 2000001918, 0, 'Justin 1368 - Random Texts'), (903, 0, 2000001919, 0, 'Roman 1371 - Random Texts'),
-(903, 0, 2000001920, 0, 'Justin 1368 - Random Texts'), (903, 0, 2000001921, 0, 'Roman 1371 - Random Texts'),
-(903, 0, 2000001922, 0, 'Justin 1368 - Random Texts'), (903, 0, 2000001923, 0, 'Roman 1371 - Random Texts');
+(903, 0, 2000001916, 0, 'Roman 1371 - Random Texts'), (903, 0, 2000001917, 0, 'Roman 1371 - Random Texts'),
+(903, 0, 2000001918, 0, 'Roman 1371 - Random Texts'), (903, 0, 2000001919, 0, 'Roman 1371 - Random Texts'),
+(903, 0, 2000001920, 0, 'Roman 1371 - Random Texts'), (903, 0, 2000001921, 0, 'Roman 1371 - Random Texts'),
+(903, 0, 2000001922, 0, 'Roman 1371 - Random Texts'), (903, 0, 2000001923, 0, 'Roman 1371 - Random Texts');
 
-DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000001900 AND 2000001924;
+DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000001900 AND 2000001923;
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `language`, `comment`) VALUES
 (2000001900, 'And that''s how Lothar killed thirty six orcs with his bare hands!', 7, 'Justin 1368 - Random Texts (Broadcast Text ID 149)'),
 (2000001901, 'And so the knights stood before the charging Horde and held their ground as a thousand berserk orcs came through the valley.', 7, 'Justin 1368 - Random Texts (Broadcast Text ID 150)'),
@@ -64,8 +64,8 @@ DELETE FROM `creature_movement` WHERE `id` IN (79815,79816,79817);
 DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000005109 AND 2000005115;
 DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000005116 AND 2000005122;
 DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000005123 AND 2000005131;
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 136801 and 136807;
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 137001 and 137009;
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 137101 and 137107;
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 136801 AND 136807;
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 137001 AND 137009;
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 137101 AND 137107;
 
 
