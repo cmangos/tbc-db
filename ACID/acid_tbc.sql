@@ -15047,8 +15047,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('414402','4144','0','0','100','1','5000','8000','26000','30000','0','0','11','6016','1','0','0','0','0','0','0','0','0','0','Sparkleshell Borer - Pierce Armor'),
 -- Saltstone Basilisk
 ('414701','4147','0','0','100','1','8000','12000','30000','40000','0','0','11','3636','1','0','0','0','0','0','0','0','0','0','Saltstone Basilisk - Cast Crystalline Slumber'),
--- Redstone Basilisk
-('415001','4150','0','0','100','1','9000','14000','12000','16000','0','0','11','3635','1','0','0','0','0','0','0','0','0','0','Redstone Basilisk - Cast Crystal Gaze'),
+-- Saltstone Basilisk
+('415001','4150','0','0','100','1','9000','14000','12000','16000','0','0','11','3635','1','0','0','0','0','0','0','0','0','0','Saltstone Basilisk - Cast Crystal Gaze'),
 -- Saltstone Crystalhide 4151
 ('415101','4151','0','0','100','1025','8000','14000','15000','18000','0','0','11','8129','16','0','0','0','0','0','0','0','0','0','Saltstone Crystalhide - Cast Mana Burn on Random Mana User'),
 -- Salt Flats Scavenger 4154
