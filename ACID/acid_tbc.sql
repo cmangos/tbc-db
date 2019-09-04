@@ -30688,7 +30688,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-358','Time to die, $c!','0','0','0','1169','0'),
 ('-359','I\'ll crush you!','0','0','0','Common Ogre Text','0'),
 ('-360','Me smash! You die!','0','0','0','Common Ogre Text','0'),
-('-361','Raaar!!! Me smash $r!','0','0','0','Common Ogre Text','0'),
+('-361','Raaaaaaaaaaaaaaaaaaaaaaaaaaaaaar!!! Me smash $R!','0','0','0','Common Ogre Text','0'),
 ('-362','King Magni Bronzebeard is a fool and a charlatan!','0','0','0','1222','0'),
 ('-363','The Thandol Span fell to Ragnaros. So shall the Stonewrought Dam!','0','0','0','1222','0'),
 ('-364','Wahehe! I\'m taking you down with me!','0','0','0','1222','0'),
