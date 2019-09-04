@@ -10592,8 +10592,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1156306','11563','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Drysnap Pincer - Set Phase 0 on Evade'),
 -- Gizelton Caravan Kodo (11564) - NSR
 -- Whirlwind Ripper (11576) - NSR
--- Whirlwind Stormwalker
-('1157701','11577','9','0','100','1','0','20','7000','12000','0','0','11','11824','1','0','0','0','0','0','0','0','0','0','Whirlwind Stormwalker - Cast Shock'),
+-- Whirlwind Stormwalker 11577
+('1157701','11577','11','0','100','0','0','0','0','0','0','0','11','18148','0','34','0','0','0','0','0','0','0','0','Whirlwind Stormwalker - Cast Static Field on Spawn'),
+('1157702','11577','0','0','100','1025','5000','10000','7000','12000','0','0','11','11824','1','0','0','0','0','0','0','0','0','0','Whirlwind Stormwalker - Cast Shock'),
 -- Whirlwind Shredder
 ('1157801','11578','9','0','100','1','0','5','17000','21000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Whirlwind Shredder - Cast Rend'),
 -- Smeed Scrabblescrew (11596) - NSR
