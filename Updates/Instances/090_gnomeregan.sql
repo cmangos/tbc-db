@@ -3,6 +3,7 @@ DBName: Gnomeregan
 DBScriptName: instance_gnomeregan
 DB%Complete: 75
 DBComment:
+Add additional RP Scripts in The Clean Zone
 EndDBScriptData */
 
 SET @CGUID := 9000000; -- creatures
@@ -955,11 +956,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+4, 19020, 90, -541.045, 15.7146, -179.734, 2.30383, 0, 0, 0.913545, 0.406737, 3600, 3600, 100, 1), -- Box of Assorted Parts
 (@OGUID+5, 19020, 90, -466.196, 104.798, -150.114, 0.226893, 0, 0, 0.113203, 0.993572, 3600, 3600, 100, 1), -- Box of Assorted Parts
 (@OGUID+6, 19020, 90, -527.599, -134.657, -152.499, 0.174533, 0, 0, 0.087156, 0.996195, 3600, 3600, 100, 1), -- Box of Assorted Parts
-(@OGUID+7, 74447, 90, -830.873, 278.731, -272.596, 1.36136, 0, 0, 0.629322, 0.777145, 86400, 86400, 255, 1), -- Large Iron Bound Chest
-(@OGUID+8, 74448, 90, -754.344, 364, -272.596, 2.80998, 0, 0, 0.986286, 0.165048, 3600, 3600, 100, 1), -- Large Solid Chest
-(@OGUID+9, 74448, 90, -440.175, 81.8185, -151.476, 1.25664, 0, 0, 0.587786, 0.809016, 3600, 3600, 100, 1), -- Large Solid Chest
-(@OGUID+10, 74448, 90, -630.556, 66.5022, -183.275, 2.75762, 0, 0, 0.981627, 0.190809, 3600, 3600, 100, 1), -- Large Solid Chest
-(@OGUID+11, 74448, 90, -622.664, 51.5146, -199.646, 3.05433, 0, 0, 0.999048, 0.0436174, 86400, 86400, 255, 1), -- Large Solid Chest
+-- 7 - 11
 (@OGUID+12, 85556, 90, -806.887, 323.963, -271.656, 2.21308, 0, 0, 0.894154, 0.447759, 3600, 3600, 100, 1), -- Vator2
 (@OGUID+13, 90858, 90, -758.538, 260.386, -273.049, 2.22529, 0, 0, 0.896873, 0.442289, 3600, 3600, 100, 1), -- Workshop Door
 (@OGUID+14, 103820, 90, -511.33, -139.962, -152.476, 0.750491, 0, 0, 0.366501, 0.930418, -86400, -86400, 0, 1), -- Red Rocket
@@ -1045,7 +1042,17 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+94, 146085, 90, -505.096, -93.973, -147.814, -2.77507, 0, 0, 0.983255, -0.182235, 3600, 3600, 100, 1), -- Cave In
 (@OGUID+95, 146086, 90, -541.607, -105.434, -151.829, 0.767944, 0, 0, 0.374606, 0.927184, 3600, 3600, 100, 1), -- Cave In
 (@OGUID+96, 175084, 90, -550.033, 206.148, -193.723, -2.05949, 0, 0, 0.857167, -0.515038, 3600, 3600, 100, 1), -- The Sparklematic 5200
-(@OGUID+97, 175085, 90, -496.932, 185.134, -193.71, 0.977384, 0, 0, 0.469472, 0.882948, 3600, 3600, 100, 1); -- The Sparklematic 5200
+(@OGUID+97, 175085, 90, -496.932, 185.134, -193.71, 0.977384, 0, 0, 0.469472, 0.882948, 3600, 3600, 100, 1), -- The Sparklematic 5200
+(@OGUID+98, 74447, 90, -440.175, 81.8185, -151.476, 1.25664, 0, 0, 0.587786, 0.809016, 86400, 86400, 100, 1), -- Large Iron Bound Chest
+(@OGUID+99, 74448, 90, -440.175, 81.8185, -151.476, 1.25664, 0, 0, 0.587786, 0.809016, 86400, 86400, 100, 1), -- Large Solid Chest
+(@OGUID+100, 74447, 90, -630.556, 66.5022, -183.275, 2.75762, 0, 0, 0.981627, 0.190809, 86400, 86400, 100, 1), -- Large Iron Bound Chest
+(@OGUID+101, 74448, 90, -630.556, 66.5022, -183.275, 2.75762, 0, 0, 0.981627, 0.190809, 86400, 86400, 100, 1), -- Large Solid Chest
+(@OGUID+102, 74447, 90, -622.664, 51.5146, -199.646, 3.05433, 0, 0, 0.999048, 0.0436174, 86400, 86400, 255, 1), -- Large Iron Bound Chest
+(@OGUID+103, 74448, 90, -622.664, 51.5146, -199.646, 3.05433, 0, 0, 0.999048, 0.0436174, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+104, 74447, 90, -830.873, 278.731, -272.596, 1.36136, 0, 0, 0.629322, 0.777145, 86400, 86400, 255, 1), -- Large Iron Bound Chest
+(@OGUID+105, 74448, 90, -830.873, 278.731, -272.596, 1.36136, 0, 0, 0.629322, 0.777145, 86400, 86400, 255, 1), -- Large Solid Chest
+(@OGUID+106, 74447, 90, -754.344, 364, -272.596, 2.80998, 0, 0, 0.986286, 0.165048, 86400, 86400, 100, 1), -- Large Iron Bound Chest
+(@OGUID+107, 74448, 90, -754.344, 364, -272.596, 2.80998, 0, 0, 0.986286, 0.165048, 86400, 86400, 100, 1); -- Large Solid Chest
 
 -- ======
 -- EVENTS
@@ -1062,11 +1069,21 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+91, @PGUID+90, 0, 'Gnomeregan - Large Iron Bound/Solid Chest #1'),
+(@PGUID+92, @PGUID+90, 0, 'Gnomeregan - Large Iron Bound/Solid Chest #2'),
+(@PGUID+93, @PGUID+90, 0, 'Gnomeregan - Large Iron Bound/Solid Chest #3'),
+(@PGUID+94, @PGUID+90, 0, 'Gnomeregan - Large Iron Bound/Solid Chest #4'),
+(@PGUID+95, @PGUID+90, 0, 'Gnomeregan - Large Iron Bound/Solid Chest #5');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Gnomeregan - Dark Iron Ambassador (6228)'),
-(@PGUID+2, 2, 'Gnomeregan - Master Chest Pool');
+(@PGUID+90, 2, 'Gnomeregan - Master Chest Pool'),
+(@PGUID+91, 1, 'Gnomeregan - Large Iron Bound/Solid Chest #1'),
+(@PGUID+92, 1, 'Gnomeregan - Large Iron Bound/Solid Chest #2'),
+(@PGUID+93, 1, 'Gnomeregan - Large Iron Bound/Solid Chest #3'),
+(@PGUID+94, 1, 'Gnomeregan - Large Iron Bound/Solid Chest #4'),
+(@PGUID+95, 1, 'Gnomeregan - Large Iron Bound/Solid Chest #5');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+50, @PGUID+1, 70, 'Gnomeregan - Alternate creature to Dark Iron Ambassador (6228)'),
@@ -1075,11 +1092,16 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+7, @PGUID+2, 0, 'Gnomeregan - Large Iron Bound Chest (74447)'),
-(@OGUID+8, @PGUID+2, 0, 'Gnomeregan - Large Solid Chest (74448)'),
-(@OGUID+9, @PGUID+2, 0, 'Gnomeregan - Large Solid Chest (74448)'),
-(@OGUID+10, @PGUID+2, 0, 'Gnomeregan - Large Solid Chest (74448)'),
-(@OGUID+11, @PGUID+2, 0, 'Gnomeregan - Large Solid Chest (74448)');
+(@OGUID+98, @PGUID+91, 0, 'Gnomeregan - Large Iron Bound Chest (74447)'),
+(@OGUID+99, @PGUID+91, 0, 'Gnomeregan - Large Solid Chest (74448)'),
+(@OGUID+100, @PGUID+92, 0, 'Gnomeregan - Large Iron Bound Chest (74447)'),
+(@OGUID+101, @PGUID+92, 0, 'Gnomeregan - Large Solid Chest (74448)'),
+(@OGUID+102, @PGUID+93, 0, 'Gnomeregan - Large Iron Bound Chest (74447)'),
+(@OGUID+103, @PGUID+93, 0, 'Gnomeregan - Large Solid Chest (74448)'),
+(@OGUID+104, @PGUID+94, 0, 'Gnomeregan - Large Iron Bound Chest (74447)'),
+(@OGUID+105, @PGUID+94, 0, 'Gnomeregan - Large Solid Chest (74448)'),
+(@OGUID+106, @PGUID+95, 0, 'Gnomeregan - Large Iron Bound Chest (74447)'),
+(@OGUID+107, @PGUID+95, 0, 'Gnomeregan - Large Solid Chest (74448)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
