@@ -10488,7 +10488,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gritjaw Basilisk
 ('472801','4728','0','0','100','1','8000','14000','25000','35000','0','0','11','3636','4','0','0','0','0','0','0','0','0','0','Gritjaw Basilisk - Cast Crystalline Slumber'),
 -- Hulking Gritjaw Basilisk
-('472901','4729','0','0','100','1','8000','14000','25000','35000','0','0','11','3636','4','0','0','0','0','0','0','0','0','0','Hulking Gritjaw Basilisk - Cast Crystalline Slumber'),
+('472901','4729','0','0','100','1','8000','14000','25000','35000','0','0','11','3636','5','0','0','0','0','0','0','0','0','0','Hulking Gritjaw Basilisk - Cast Crystalline Slumber'),
 -- Felgur Twocuts (5395) - NSR
 -- Captain Pentigast
 ('539601','5396','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Captain Pentigast - Flee at 15% HP'),
