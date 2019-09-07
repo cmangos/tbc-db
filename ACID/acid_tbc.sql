@@ -1677,7 +1677,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('622107','6221','9','0','100','1025','5','30','2400','3700','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Addled Leper - Cast Shoot'),
 -- Dannie Fizzwizzle (6328) - NSR
 -- Wren Darkspring (6376) - NSR
--- Holdout Warrior - EventAI (Already Scripted in Gnomeregan)
 -- Spirit Healer (6491) - NSR
 -- Hands Springsprocket (6782) - NSR
 -- Tannok Frosthammer (6806) - NSR
@@ -23787,13 +23786,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('632903','6329','0','0','100','1','0','0','2400','3900','0','0','11','9770','0','0','0','0','0','0','0','0','0','0','Irradiated Pillager - Cast Radiation'),
 ('632904','6329','6','0','100','0','0','0','0','0','0','0','1','-30','0','0','11','9798','0','7','0','0','0','0','Irradiated Pillager - Emote and Cast Radiation on Death'),
 ('632905','6329','2','0','100','0','50','0','0','0','0','0','11','8269','0','1','1','-106','0','0','0','0','0','0','Irradiated Pillager - Cast Frenzy at 50% HP'),
--- Holdout Warrior
+-- Holdout Warrior 6391 - Aggro Texts
 ('639101','6391','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Holdout Warrior - Set Stand State to Stand on Aggro'),
 ('639102','6391','9','0','100','1','0','5','7000','10000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Holdout Warrior - Cast Strike'),
 ('639103','6391','13','0','100','1','11000','15000','0','0','0','0','11','12555','1','1','0','0','0','0','0','0','0','0','Holdout Warrior - Cast Pummel on Target Casting'),
 ('639104','6391','8','0','100','0','9798','-1','0','0','0','0','1','-31','0','0','0','0','0','0','0','0','0','0','Holdout Warrior - Emote on Radiation Spellhit'),
 ('639105','6391','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Holdout Warrior - Flee at 15% HP'),
--- Holdout Medic (Rough Scripted Data)
+-- Holdout Medic 6392 (Rough Scripted Data)
 ('639201','6392','1','0','100','1','20000','35000','30000','50000','0','0','11','22167','0','0','0','0','0','0','0','0','0','0','Holdout Medic - Cast Heal OOC'),
 ('639202','6392','1','0','100','1','1000','1000','1800000','1800000','0','0','11','13864','0','1','0','0','0','0','0','0','0','0','Holdout Medic - Cast Power Word: Fortitude on Spawn'),
 ('639203','6392','14','0','100','1','1000','40','12000','16000','0','0','11','22168','12','1','0','0','0','0','0','0','0','0','Holdout Medic - Cast Renew on Friendly Missing HP'),
@@ -24770,7 +24769,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('429001','4290','0','0','100','1','1000','3000','180000','190000','0','0','11','7164','0','1','0','0','0','0','0','0','0','0','Scarlet Guardsman - Cast Defensive Stance'),
 ('429002','4290','0','0','100','1','8400','14100','14200','25200','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Scarlet Guardsman - Cast Disarm'),
 ('429003','4290','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Guardsman - Flee at 15% HP'),
--- Scarlet Diviner 4291 (4.3.4 Official Data)
+-- Scarlet Diviner 4291 - Mana Burn Random Mana User (4.3.4 Official Data)
 ('429101','4291','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Diviner - Random Say on Aggro'),
 ('429102','4291','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Scarlet Diviner - Enable Range Mode on Aggro'),
 ('429103','4291','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Diviner - Flee at 15% HP'),
