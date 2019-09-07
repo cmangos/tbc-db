@@ -11337,6 +11337,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Darkfang Lurker 4411 - Stealth Aura
 -- Darkfang Creeper
 ('441201','4412','9','0','100','1','0','30','10000','13000','0','0','11','7992','1','32','0','0','0','0','0','0','0','0','Darkfang Creeper - Cast Slowing Poison'),
+-- Darkfang Spider 4413
 -- Darkfang Venomspitter 4414
 ('441401','4414','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Darkfang Venomspitter - Enable Range Mode on Aggro'),
 ('441402','4414','9','0','100','1025','5','30','3400','4800','0','0','11','7951','1','256','0','0','0','0','0','0','0','0','Darkfang Venomspitter - Cast Toxic Spit'),
