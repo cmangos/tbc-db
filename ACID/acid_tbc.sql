@@ -30811,7 +30811,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-532','Stop!  Foolish $c, we cannot let you summon the creature Myzrael!','0','1','0','2763','0'),
 -- Classic PLEASE RE-USE 533 - 538
 ('-539','%s is getting really hungry!','0','2','0','8567','0'),
-('-540','%s is getting VERY hungry!','0','2','0','8567','0'),
+('-540','%s is VERY HUNGRY!','0','2','0','8567','0'),
 -- Classic PLEASE RE-USE 541 - 544
 ('-545','Scanning life forms....target not found','0','0','0','14224','0'),
 ('-546','Target lost....resuming search patterns Delta','0','0','0','14224','0'),
