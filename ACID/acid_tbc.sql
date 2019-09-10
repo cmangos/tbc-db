@@ -31056,7 +31056,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1318','Silithid Creeper Egg begins to crack and open...','0','2','0','5781','0'),
 ('-1319','Silithid Creeper Egg splits open!','0','2','0','5781','0'),
 ('-1320','%s splits into two new Lava Spawns!','0','2','0','Lava Spawn - Split Emote','0'),
-('-1321','digs its way out of the sand to protect its eggs.','0','2','0','Silithid Protector 3503','0'),
+('-1321','%s digs its way out of the sand to protect its eggs.','0','2','0','Silithid Protector 3503','0'),
 -- Classic PLEASE RE-USE 1322
 ('-1323','Raaar!!! Me smash $R!','0','0','0','9196','1'),
 ('-1324','I cannot be destroyed! By the will of Ragnaros, I shall be reborn!','0','0','0','9017','0'),
