@@ -26707,7 +26707,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('727602','7276','6','0','100','0','0','0','0','0','0','0','11','10747','1','7','0','0','0','0','0','0','0','0','Zul''Farrak Dead Hero - Cast Announce Zul''Farrak Zombie on Death'),
 -- Zul'Farrak Zombie (4.0.1 Offical Data)
 ('728601','7286','6','0','100','0','0','0','0','0','0','0','11','10747','1','7','0','0','0','0','0','0','0','0','Zul''Farrak Zombie - Cast Announce Zul''Farrak Zombie on Death'),
--- Goblin Land Mine 7527 (4.0.1 Official Data) - NOT SCRIPTABLE CURRENTLY (REQUIRES DB OR CORE SUPPORT) - CLASSIFIED AS TOTEM IN CORE
+-- Goblin Land Mine 7527 (4.0.1 Official Data) - NOT SCRIPTABLE CURRENTLY due to GuardianAI not supporting ACID
 -- Sergeant Bly 7604
 ('760401','7604','11','0','100','0','0','0','0','0','0','0','11','3637','0','34','11','5301','0','34','0','0','0','0','Sergeant Bly - Cast Improved Blocking III and Defensive State (DND) on Spawn'),
 ('760402','7604','0','0','100','1','8000','10000','8000','10000','0','0','11','12170','1','0','0','0','0','0','0','0','0','0','Sergeant Bly - Cast Revenge'),
@@ -26726,7 +26726,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('760701','7607','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Weegli Blastfuse - Enable Range Mode on Aggro'),
 ('760702','7607','0','0','100','1025','5000','7000','6000','11000','0','0','11','8858','4','0','0','0','0','0','0','0','0','0','Weegli Blastfuse - Cast Bomb'),
 ('760703','7607','9','0','100','1025','5','30','3000','4000','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Weegli Blastfuse - Cast Shoot'),
--- ('760704','7607','0','0','100','1025','7000','11000','30000','35000','0','0','11','21688','0','0','0','0','0','0','0','0','0','0','Weegli Blastfuse - Cast Goblin Land Mine'),
+('760704','7607','0','0','100','1025','7000','11000','30000','35000','0','0','11','21688','0','0','0','0','0','0','0','0','0','0','Weegli Blastfuse - Cast Goblin Land Mine'),
 -- Murta Grimgut 7608 (4.0.1 Official Data) - Data is not complete but is as good as I could get after multiple runs on the Instance
 ('760801','7608','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Murta Grimgut - Enable Range Mode on Aggro'),
 ('760802','7608','16','0','100','1025','11974','40','30000','30000','0','0','11','11974','12','0','0','0','0','0','0','0','0','0','Murta Grimgut - Cast Power Word Shield on Friendly Missing Buff'),
