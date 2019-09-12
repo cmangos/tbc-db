@@ -11352,7 +11352,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('440401','4404','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Muckshell Scrabbler - Enable Range Mode on Aggro'),
 ('440402','4404','14','0','100','1025','900','40','16000','21000','0','0','11','8005','12','0','0','0','0','0','0','0','0','0','Muckshell Scrabbler - Cast Healing Wave on Friendly Missing HP'),
 ('440403','4404','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Muckshell Scrabbler - Cast Lightning Bolt'),
--- Darkfang Lurker 4411 - Stealth Aura
+-- Darkfang Lurker 4411
+('441101','4411','1','0','100','0','1000','1000','0','0','0','0','11','3616','0','34','11','22766','0','0','0','0','0','0','Darkfang Lurker - Cast Poison Proc, Stealth OOC'),
 -- Darkfang Creeper
 ('441201','4412','9','0','100','1','0','30','10000','13000','0','0','11','7992','1','32','0','0','0','0','0','0','0','0','Darkfang Creeper - Cast Slowing Poison'),
 -- Darkfang Spider 4413
