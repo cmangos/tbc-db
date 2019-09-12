@@ -692,7 +692,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+131, @CGUID+130, 515), -- Sandfury Shadowhunter -> Sandfury Shadowhunter
 (@CGUID+162, @CGUID+161, 3), -- Sandfury Guardian -> Sandfury Guardian
 (@CGUID+163, @CGUID+161, 3), -- Sandfury Guardian -> Sandfury Guardian
-(@CGUID+164, @CGUID+161, 3); -- Sandfury Guardian -> Sandfury Guardian
+(@CGUID+164, @CGUID+161, 3), -- Sandfury Guardian -> Sandfury Guardian
+(@CGUID+265, @CGUID+264, 3); -- Sul'lithuz Abomination -> Sul'lithuz Abomination
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (7268, 209, 7267, 1, 0), -- Sandfury Guardian -> Chief Ukorz Sandscalp
