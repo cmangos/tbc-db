@@ -6661,7 +6661,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mangy Silvermane
 ('292301','2923','9','0','100','1','0','30','15000','45000','0','0','11','8139','4','32','0','0','0','0','0','0','0','0','Mangy Silvermane - Cast Fevered Fatigue'),
 -- Silvermane Wolf (2924) - NSR
--- Silvermane Howler (2925) - NSR
+-- Silvermane Howler 2925
+('292501','2925','2','0','100','1024','50','0','0','0','0','0','39','25','0','0','1','-551','0','0','0','0','0','0','Silvermane Howler - Call for Help at 50% HP'),
 -- Silvermane Stalker
 ('292601','2926','9','0','100','1','0','5','12000','21000','0','0','11','7367','4','32','0','0','0','0','0','0','0','0','Silvermane Stalker - Cast Infected Bite'),
 -- Vicious Owlbeast
