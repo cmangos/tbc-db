@@ -1148,7 +1148,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bone Witch 16380 - Scourge Strike 28265
 ('1638001','16380','4','0','100','0','0','0','0','0','0','0','57','2','35','0','11','32900','0','34','0','0','0','0','Bone Witch - Enable Range Mode and Cast Bone Shards Proc on Aggro'),
 ('1638002','16380','9','0','100','1025','0','40','4000','8000','0','0','11','20720','1','256','0','0','0','0','0','0','0','0','Bone Witch - Cast Arcane Bolt'),
--- Lumbering Horror 14697
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Sevel (16840) - NSR
 -- Watch Commander Relthorn Netherwane (16841) - NSR
