@@ -1,0 +1,51 @@
+DELETE FROM creature_movement_template WHERE entry = "19435";
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '0', '-140.467', '982.053', '54.2479', '2.32129', '1000', '0', 'Dark Clearic Malod Spawn');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '1', '-135.922', '997.979', '54.1678', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '2', '-130.295', '1001.47', '54.1352', '6.19592', '6000', '1943501', 'Dark Clearic Malod first event');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '3', '-129.399', '1005.35', '54.1277', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '4', '-129.399', '1005.35', '54.1277', '5.70723', '3000', '0', 'Dark Clearic Malod Change Orientation');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '5', '-129.399', '1005.35', '54.1277', '0.383972', '3000', '0', 'Dark Clearic Malod Change Orientation');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '6', '-138.249', '1017.98', '54.1666', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '7', '-133.805', '1024.5', '54.1383', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '8', '-133.805', '1024.5', '54.1383', '0.261799', '3000', '0', 'Dark Clearic Malod Change Orientation');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '9', '-133.805', '1024.5', '54.1383', '1.69297', '3000', '0', 'Dark Clearic Malod Change Orientation');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '10', '-133.805', '1024.5', '54.1383', '0.925025', '28000', '1943502', 'Dark Clearic Malod Second Event');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '11', '-157.823', '1010.55', '54.1879', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '12', '-172.394', '1017.44', '54.238', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '13', '-201.42', '1016.82', '54.3039', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '14', '-226.246', '1016.51', '54.3208', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '15', '-237.851', '1023.36', '54.309', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '16', '-234.792', '1026.51', '54.3085', '0', '34000', '1943503', 'Dark Clearic Malod third Event');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '17', '-201.884', '1016.94', '54.3022', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '18', '-166.062', '1017.46', '54.2065', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '19', '-151.175', '1012.26', '54.183', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '20', '-145.295', '1000.05', '54.2113', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+INSERT INTO `creature_movement_template` VALUES ('19435', '0', '21', '-140.269', '982.351', '54.2018', '0', '0', '0', 'Dark Clearic Malod Waypoint');
+
+
+DELETE FROM dbscript_string WHERE entry BETWEEN 2000020130 AND 2000020134;
+INSERT INTO `dbscript_string` VALUES ('2000020130', 'AIEE! What are you doing?! I\'m still ALIVE, damn you!', null, null, null, null, null, null, null, null, '0', '0', '0', '1', 'Injured Grunt Text');
+INSERT INTO `dbscript_string` VALUES ('2000020131', 'Oh! So sorry. How terribly embarrassing! I didn\'t realize... ah... please, lie down, get some more rest.', null, null, null, null, null, null, null, null, '0', '0', '0', '1', 'Dark Clearic Malod Text 1');
+INSERT INTO `dbscript_string` VALUES ('2000020132', 'Ah, Lieutenant General Orion. I\'ve come to report that casualties are well within acceptable levels for this operation. In fact, the wounded are quite... ah... lively.', null, null, null, null, null, null, null, null, '0', '0', '0', '1', 'Dark Clearic Malod Talk 2');
+INSERT INTO `dbscript_string` VALUES ('2000020133', 'This is good news. Return to them, priest. But heed this: do not eat ANYONE.', null, null, null, null, null, null, null, null, '0', '0', '0', '1', 'Lieutnant Orion');
+INSERT INTO `dbscript_string` VALUES ('2000020134', 'Oh dear, Lieutenant General, how ghastly! I would most certainly never. I shall return to my charges now.', null, null, null, null, null, null, null, null, '0', '0', '0', '1', 'Dark Clearic Malod Text 3');
+
+
+DELETE FROM dbscripts_on_creature_movement WHERE id BETWEEN 1943501 AND 1943503;
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943502', '2', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod Emote Talk');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943502', '5', '15', '33963', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod Cast CANNIBALIZE');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943502', '8', '31', '19432', '5', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod search for buddy - 19432');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943502', '8', '21', '1', '0', '0', '19432', '5', '7', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod buddy active');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943502', '8', '28', '0', '0', '0', '19432', '5', '7', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod force buddy to stand up');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943502', '10', '0', '0', '0', '0', '19432', '5', '7', '2000020130', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod force buddy to say text');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943502', '19', '0', '0', '0', '0', '0', '0', '0', '2000020131', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod talk');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943502', '27', '28', '0', '0', '0', '19432', '5', '7', '3', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod force buddy to sit ');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943501', '0', '1', '68', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod Emote Kneel');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943501', '3', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod Emote Talk');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943503', '2', '1', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod Emote bow');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943503', '5', '0', '0', '0', '0', '0', '0', '0', '2000020132', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod say text');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943503', '18', '31', '19253', '5', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod search for buddy - 19253');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943503', '18', '21', '1', '0', '0', '19253', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod buddy active');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943503', '18', '0', '0', '0', '0', '19253', '5', '7', '2000020133', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod force buddy to say text');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943503', '22', '0', '0', '0', '0', '0', '0', '0', '2000020134', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod say text');
+INSERT INTO `dbscripts_on_creature_movement` VALUES ('1943503', '33', '1', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Dark Clearic Malod Emote bow');
