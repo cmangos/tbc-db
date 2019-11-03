@@ -19895,7 +19895,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1928301','19283','1','0','100','1','5000','30000','45000','45000','0','0','10','12','13','64','0','0','0','0','0','0','0','0','Vagrant - Random Emote State OOC'),
 ('1928302','19283','1','0','100','1','30000','60000','45000','90000','0','0','5','26','0','0','0','0','0','0','0','0','0','0','Vagrant - Stand State OOC'),
 ('1928303','19283','1','0','100','1','15000','40000','20000','40000','0','0','10','18','20','1','0','0','0','0','0','0','0','0','Vagrant - Random Emote OOC'),
-('1928304','19283','1','0','100','1','30000','300000','240000','520000','0','0','1','-10685','-10686','-10687','0','0','0','0','0','0','0','0','Vagrant - Random Say OOC'),
+('1928304','19283','10','0','100','1','1','20','60000','500000','1','0','54','0','10','12005','0','0','0','0','0','0','0','0','Vagrant - Random Say OOC'),
 -- Vagabond
 ('1928901','19289','11','0','50','0','0','0','0','0','0','0','10','12','65','68','0','0','0','0','0','0','0','0','Vagabond - Random State on Spawn'),
 -- Harbinger Erothem 19346 - NSR
@@ -32756,7 +32756,11 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (12004,0,-10083,0,'Dreghood Slave 17799 - Random Evade Texts'),
 (12004,0,-10084,0,'Dreghood Slave 17799 - Random Evade Texts'),
 (12004,0,-10085,0,'Dreghood Slave 17799 - Random Evade Texts'),
-(12004,0,-10086,0,'Dreghood Slave 17799 - Random Evade Texts');
+(12004,0,-10086,0,'Dreghood Slave 17799 - Random Evade Texts'),
+
+(12005,0,-10685,0,'19283 - Vagrant - Random OOC Texts'),
+(12005,0,-10686,0,'19283 - Vagrant - Random OOC Texts'),
+(12005,0,-10687,0,'19283 - Vagrant - Random OOC Texts');
 
 -- WOTLK IDs 20000+
 -- INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
