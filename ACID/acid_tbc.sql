@@ -30789,6 +30789,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-344','%s faces southeast and whimpers before looking back at you. ','0','2','0','0','0','3695'),
 ('-345','%s''s death cry has stirred the nearby silithid hive.','0','2','0','0','0','Tortured Druid/Sentinel death'),
 ('-346','%s begins to summon in reinforcements!','0','2','0','0','0','Common Emote'),
+('-347','%s springs forth to defend its hive!','0','2','0','0','0','Hive''Ashi Ambusher 13301'),
 -- Classic PLEASE RE-USE 348 - 352
 ('-353','Me no run from $c like you!','0','0','0','0','0','Trogg Common Text'),
 ('-354','Yip! Me kill!','0','0','0','0','0','Trogg Common Text'),
