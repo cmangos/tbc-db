@@ -14937,6 +14937,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('590801','5908','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Grunt Dogran - Set Stand State to Stand on Aggro'),
 -- Razorfen Servitor 6132
 ('613201','6132','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Razorfen Servitor - Flee at 15% HP'),
+-- Affray Challenger 6240
+('624001','6240','8','0','100','1','1160','-1','0','0','0','0','25','0','0','0','1','-146','0','0','0','0','0','0','Affray Challenger - Flee, Emote on Demoralizing Shout (Rank 1) Spellhit'),
+('624002','6240','8','0','100','1','6190','-1','0','0','0','0','25','0','0','0','1','-146','0','0','0','0','0','0','Affray Challenger - Flee, Emote on Demoralizing Shout (Rank 2) Spellhit'),
+('624003','6240','8','0','100','1','11554','-1','0','0','0','0','25','0','0','0','1','-146','0','0','0','0','0','0','Affray Challenger - Flee, Emote on Demoralizing Shout (Rank 3) Spellhit'),
+('624004','6240','8','0','100','1','11555','-1','0','0','0','0','25','0','0','0','1','-146','0','0','0','0','0','0','Affray Challenger - Flee, Emote on Demoralizing Shout (Rank 4) Spellhit'),
+('624005','6240','8','0','100','1','11556','-1','0','0','0','0','25','0','0','0','1','-146','0','0','0','0','0','0','Affray Challenger - Flee, Emote on Demoralizing Shout (Rank 5) Spellhit'),
+('624006','6240','8','0','100','1','25202','-1','0','0','0','0','25','0','0','0','1','-146','0','0','0','0','0','0','Affray Challenger - Flee, Emote on Demoralizing Shout (Rank 6) Spellhit'),
+('624007','6240','8','0','100','1','25203','-1','0','0','0','0','25','0','0','0','1','-146','0','0','0','0','0','0','Affray Challenger - Flee, Emote on Demoralizing Shout (Rank 7) Spellhit'),
 -- Twiggy Flathead 6248 - npc_twiggy_flathead
 -- Summoned Felhunter 6268
 ('626801','6268','18','0','100','1025','100','10','11000','17000','0','0','11','2691','1','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Mana Burn on Target Mana User'),
@@ -30688,7 +30696,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-143','The Defias shall succeed! No meek adventurer will stop us!','0','0','0','0','0','1755'),
 ('-144','What? How dare you!','0','0','0','0','0','1754'),
 ('-145','%s flees toward safety or another tiger.','0','2','0','0','0','Zulian Cub fleeing text'),
--- Classic PLEASE RE-USE 146 - 153
+('-146','%s is demoralized and runs!','0','2','0','0','0','Affray Challenger 6240'),
+-- Classic PLEASE RE-USE 147 - 153
 ('-154','%s lets out a shriek, calling for help!','0','2','0','0','0','3255'),
 ('-155','%s grabs for his poisoned dagger!','0','2','0','0','0','3286'),
 ('-156','%s begins to make a copy of itself!','0','2','0','0','0','3638,6557 - s.Clone'),
