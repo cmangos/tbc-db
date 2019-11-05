@@ -1,6 +1,8 @@
 -- TODO: investigate potential scale issues with these two particular objects in TBC client
 -- 180428 "G_WitchBroom_01 scale 0.5", 180429 "G_WitchHat_01 scale 0.5"
 
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 114000 AND 114009; -- clean up instance objects to make room
+
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 -- HangingSkullLight01 180471
 (10475,180471,0,1,-632.191,-4599.38,15.7388,3.4034,0,0,-0.991445,0.130528,120,120,255,1),
