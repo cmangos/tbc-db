@@ -3224,7 +3224,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Snake (2914) - NSR
 -- Rat (4075) - NSR
 -- Summoned Voidwalker
-('567601','5676','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','0','0','0','0','0','0','0','0','Summoned Voidwalker - Summoned Demon on Spawn'),
+('567601','5676','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','0','0','0','0','0','0','0','0','Summoned Voidwalker - Cast Summoned Demon on Spawn'),
 ('567602','5676','2','0','100','0','30','0','0','0','0','0','11','7750','0','1','0','0','0','0','0','0','0','0','Summoned Voidwalker - Cast Consuming Rage at 30% HP'),
 -- Spirit Healer (6491) - NSR
 -- Crab (6827) - NSR
