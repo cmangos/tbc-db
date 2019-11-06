@@ -3575,7 +3575,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ferocious Yeti
 ('224901','2249','2','0','100','0','20','0','0','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Ferocious Yeti - Cast Enrage at 20% HP'),
 -- Syndicate Rogue
-('226001','2260','33','0','100','1','0','0','8000','12000','0','0','11','37685','1','0','0','0','0','0','0','0','0','0','Syndicate Rogue - Cast Backstab on Facing Target Back'),
+('226001','2260','33','0','100','1','0','0','8000','12000','0','0','11','15657','1','0','0','0','0','0','0','0','0','0','Syndicate Rogue - Cast Backstab on Facing Target Back'),
 -- Syndicate Watchman 2261
 ('226101','2261','1','0','100','0','1000','1000','0','0','0','0','11','3582','0','32','0','0','0','0','0','0','0','0','Syndicate Watchman - Cast Torch Burst'),
 ('226102','2261','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Watchman - Flee at 15% HP'),
@@ -3749,8 +3749,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('240401','2404','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Blacksmith Verringtan - Flee at 15% HP'),
 -- Tarren Mill Deathguard
 ('240501','2405','4','0','30','0','0','0','0','0','0','0','1','-927','0','0','0','0','0','0','0','0','0','0','Tarren Mill Deathguard - Say on Aggro'),
--- Mountain Lion 2406 - NSR
--- Hulking Mountain Lion 2407 - NSR
 -- Snapjaw (2408) - NSR
 -- Magus Wordeen Voidglare (2410) - NSR
 -- Deathguard Samsa (2418) - NSR
