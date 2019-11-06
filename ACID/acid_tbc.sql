@@ -9792,7 +9792,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Prince Toreth (17674) - NSR
 -- Achelus (17676) - NSR
 -- Sironas
-('1767801','17678','1','0','100','0','2000','2000','0','0','0','0','45','5','70','0','11','31612','0','0','0','0','0','0','Sironas - Send Custom event and cast Sironas Channelling after Spawn'),
+('1767801','17678','1','0','100','0','2000','2000','0','0','0','0','45','5','70','0','11','31612','0','0','0','0','0','0','Sironas - Send Custom event and Cast Sironas Channelling after Spawn'),
 ('1767802','17678','4','0','100','0','0','0','0','0','0','0','1','-10990','0','0','0','0','0','0','0','0','0','0','Sironas - Yell on Aggro'),
 ('1767803','17678','0','0','100','1','8000','10000','15000','19000','0','0','11','13338','4','1','0','0','0','0','0','0','0','0','Sironas - Cast Curse of Tongues'),
 ('1767804','17678','0','0','100','1','4000','7000','16000','21000','0','0','11','8282','1','33','0','0','0','0','0','0','0','0','Sironas - Cast Curse of Blood'),
@@ -12575,8 +12575,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nighthaven Defender 15495
 -- Eranikus the Redeemed 15628
 -- Nightmare Phantasm
-('1562901','15629','0','0','100','1','15000','20000','15000','20000','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - cast Swell of Souls'),
-('1562902','15629','0','0','100','1','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - cast Shadowbolt Volley'),
+('1562901','15629','0','0','100','1','15000','20000','15000','20000','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Swell of Souls'),
+('1562902','15629','0','0','100','1','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley'),
 -- Tyrande 15633
 -- Stormwind Reveler 15694
 -- Thunder Bluff Reveler 15719
@@ -17800,7 +17800,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2244401','22444','1','0','100','1','1000','1000','0','0','0','0','11','39184','0','6','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - Cast Anchorite Contrition OOC'),
 ('2244402','22444','11','0','100','0','0','0','0','0','0','0','41','300000','0','0','0','0','0','0','0','0','0','0','Anchorite Relic Bunny - Delayed Despawn on Spawn'),
 -- Fel Spirit
-('2245401','22454','11','0','100','0','0','0','0','0','0','0','54','-10701','11','0','11','39205','15','32','0','0','0','0','Fel Spirit - Yell on Spawn and cast Fel Spirit Visual'),
+('2245401','22454','11','0','100','0','0','0','0','0','0','0','54','-10701','11','0','11','39205','15','32','0','0','0','0','Fel Spirit - Yell on Spawn and Cast Fel Spirit Visual'),
 ('2245402','22454','29','0','100','0','3000','3000','3000','3000','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Fel Spirit - Remove Immune To Player flag'),
 -- Fel Cannon MKI 22461
 ('2246101','22461','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Fel Cannon MKI - Prevent Movement and Prevent Melee on Spawn'),
@@ -21020,7 +21020,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2076201','20762','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','-548','0','0','0','0','0','0','Gur''zil - Cast Summon Enraged Wyvern and Yell on Aggro'),
 -- Xeleth
 ('2189401','21894','11','0','100','0','0','0','0','0','0','0','55','11','0','0','54','-10781','0','0','0','0','0','0','Xeleth - Attack Spawner (Player) and Yell on Spawn'),
-('2189402','21894','0','0','100','1','0','0','12500','12500','0','0','11','36414','1','0','0','0','0','0','0','0','0','0','Xeleth - cast Focused Bursts'),
+('2189402','21894','0','0','100','1','0','0','12500','12500','0','0','11','36414','1','0','0','0','0','0','0','0','0','0','Xeleth - Cast Focused Bursts'),
 -- Air Force Trip Wire - Ground (Horde) 22002 - npc_air_force_bots
 -- Air Force Trip Wire - Ground (Alliance) 22003 - npc_air_force_bots
 -- Air Force Alarm Bot (Sporeggar) 22086 - npc_air_force_bots
