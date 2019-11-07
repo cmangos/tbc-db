@@ -11644,7 +11644,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Apprentice Morlann (23600) - NSR
 -- Apprentice Garion (23601) - NSR
 -- Deserter Agitator
-('2360201','23602','11','0','100','0','0','0','0','0','0','0','17','168','1','0','0','0','0','0','0','0','0','0','Deserter Agitator - SET NpcFlag on Spawn(q.11126)'),
+('2360201','23602','11','0','100','0','0','0','0','0','0','0','17','168','1','0','0','0','0','0','0','0','0','0','Deserter Agitator - Set NpcFlag on Spawn(q.11126)'),
 ('2360202','23602','21','0','100','0','0','0','0','0','0','0','17','168','1','0','0','0','0','0','0','0','0','0','Deserter Agitator - Restore NpcFlag on Reached Home(q.11126)'),
 ('2360203','23602','2','0','100','0','10','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Deserter Agitator - Flee at 10% HP'),
 ('2360204','23602','30','0','100','1','5','23602','0','0','0','0','48','1','15','0','41','4000','0','0','0','0','0','0','Deserter Agitator - Set Waypoints and Despawn on Receive AI Event Custom A.(q.11126)'),
