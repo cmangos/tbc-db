@@ -7633,7 +7633,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('184805','1848','9','0','100','1025','0','40','3400','4800','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Lord Maldazzar - Cast Shadow Bolt'),
 -- Dreadwhisper
 ('184901','1849','0','0','100','1','1000','2000','2000','3000','0','0','11','11443','1','0','0','0','0','0','0','0','0','0','Dreadwhisper - Criple'),
-('184902','1849','0','0','100','1','15000','30000','30000','30000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Dreadwhisper - Shadow Bolt Volley '),
+('184902','1849','0','0','100','1','15000','30000','30000','30000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Dreadwhisper - Shadow Bolt Volley'),
 ('184903','1849','0','0','100','1','5000','15000','15000','15000','0','0','11','7068','1','0','0','0','0','0','0','0','0','0','Dreadwhisper - Veil of Shadow'),
 -- Putridius
 ('185001','1850','0','0','100','1','5000','9000','16000','21000','0','0','11','12946','0','1','0','0','0','0','0','0','0','0','Putridius - Cast Putrid Stench'),
@@ -8086,8 +8086,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Daphne Stilwell 6182 - npc_daphne_stilwell
 -- Klaven Mortwake 7053
 ('705301','7053','4','0','100','0','0','0','0','0','0','0','1','-11','0','0','0','0','0','0','0','0','0','0','Klaven Mortwake - Say on Aggro'),
-
-
 
 
 
@@ -9774,7 +9772,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deathclaw
 ('1766101','17661','9','0','100','1','0','5','5000','8000','0','0','11','31279','1','0','0','0','0','0','0','0','0','0','Deathclaw - Cast Swipe'),
 -- Jessera of Mac'Aree (17663) - NSR
--- Matis the Cruel  (KEPT PREVENT COMBAT MOVEMENT ON PURPOSE - NEED BETTER SOLUTION)
+-- Matis the Cruel 17664 (KEPT PREVENT COMBAT MOVEMENT ON PURPOSE - NEED BETTER SOLUTION)
 ('1766401','17664','1','0','100','0','0','0','0','0','0','0','47','0','0','0','43','0','2346','0','22','0','0','0','Matis the Cruel - Set Stand State Stand and Mount and Set Phase 0 OOC'),
 ('1766402','17664','1','0','100','0','0','0','0','0','0','0','20','1','0','0','21','1','0','0','0','0','0','0','Matis the Cruel - Start Combat Movement and Start Melee OOC'),
 ('1766403','17664','1','0','40','1','6000','50000','80000','135000','0','0','1','-10246','0','0','0','0','0','0','0','0','0','0','Matis the Cruel - Say OOC'),
