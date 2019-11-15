@@ -11690,7 +11690,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2384101','23841','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Razorspine - Flee at 15% HP'),
 -- Mordant Grimsby (23843) - NSR
 -- Restless Apparition (23861) - npc_restless_apparition
--- Zul'jin 23863 - boss_zuljin
 -- Zelfrax
 ('2386401','23864','1','0','100','0','1000','1000','0','0','0','0','1','-10326','0','0','0','0','0','0','0','0','0','0','Zelfrax - Yell 1 on Spawn'),
 ('2386402','23864','1','0','100','0','6000','6000','0','0','0','0','1','-10327','0','0','0','0','0','0','0','0','0','0','Zelfrax - Yell 2 on Spawn'),
@@ -29289,6 +29288,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Amani Protective Ward 23822 - TotemAI
 -- Amani Dragonhawk 23834
 ('2383401','23834','0','0','100','1025','8000','14000','12000','16000','0','0','11','43294','1','0','0','0','0','0','0','0','0','0','Amani Dragonhawk - Cast Flame Breath'),
+-- Zul'jin 23863 - boss_zuljin
 -- Amani'shi Savage 23889
 ('2388901','23889','11','0','100','0','0','0','0','0','0','0','31','1','2','0','0','0','0','0','0','0','0','0','Amani''shi Savage - Random Phase on Spawn'),
 ('2388902','23889','0','0','100','1025','2000','7000','1000','9000','0','0','11','9080','4','512','0','0','0','0','0','0','0','0','Amani''shi Savage - Cast Hamstring'),
