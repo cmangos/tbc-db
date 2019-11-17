@@ -827,7 +827,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16505, 0, 0, 1, 16, 0, 0, NULL), -- Naxxramas Follower
 (16506, 0, 0, 1, 16, 0, 0, NULL), -- Naxxramas Worshipper
 (16573, 0, 0, 1, 16, 0, 0, NULL), -- Crypt Guard
-(16803, 0, 0, 0, 0, 333, 0, '18950'), -- Deathknight Understudy
+(16803, 0, 0, 0, 0, 333, 0, '18950 29068'), -- Deathknight Understudy
 (16861, 0, 0, 1, 16, 0, 0, NULL), -- Death Lord
 (16980, 0, 0, 1, 16, 0, 0, NULL), -- The Lich King
 (16998, 0, 0, 1, 16, 0, 0, NULL); -- Mr. Bigglesworth
