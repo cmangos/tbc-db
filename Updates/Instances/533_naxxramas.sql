@@ -1034,6 +1034,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (16064, 533, 16062, 143, 0), -- Thane Korth'azz -> Highlord Mograine
 (16065, 533, 16062, 143, 0), -- Lady Blaumeux -> Highlord Mograine
 (16360, 533, 15932, 4112, 0), -- Zombie Chow -> Gluth
+(16505, 533, 15953, 7, 0), -- Naxxramas Follower -> Grand Widow Faerlina
 (16506, 533, 15953, 7, 0), -- Naxxramas Worshipper -> Grand Widow Faerlina
 (16573, 533, 15956, 1031, 0), -- Crypt Guard -> Anub'Rekhan
 (16775, 533, 16062, 256, 0), -- Spirit of Mograine -> Highlord Mograine
