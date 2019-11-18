@@ -12579,7 +12579,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Undercity Reveler 15907
 -- Fariel Starsong 15909
 -- Lunar Festival Sentinel 15961
--- Malfurion Stormrage
+-- Malfurion Stormrage 17949
 ('1794901','17949','11','0','100','0','0','0','0','0','0','0','11','17321','0','1','0','0','0','0','0','0','0','0','Malfurion Stormrage - Cast Spirit Spawn-in on Spawn'),
 -- Clintar Dreamwalker 22834
 -- Cenarion Dreamwarden 22835
@@ -13401,7 +13401,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1520304','15203','0','0','100','1','20000','20000','30000','30000','0','0','11','15128','1','0','0','0','0','0','0','0','0','0','Prince Skaldrenox - Mark of Flames'),
 -- High Marshal Whirlaxis
 ('1520401','15204','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','High Marshal Whirlaxis - Cast Elemental Spawn-In on Spawn'),
-('1520402','15204','9','0','100','1','0','30','3400','4800','0','0','11','20627','1','0','0','0','0','0','0','0','0','0','High Marshal Whirlaxis - Cast Lightning Breath'),
+('1520402','15204','9','0','100','1','8','30','3400','4800','0','0','11','20627','1','0','0','0','0','0','0','0','0','0','High Marshal Whirlaxis - Cast Lightning Breath'),
 ('1520403','15204','1','0','100','1','1000','1000','600000','600000','0','0','11','25020','0','0','0','0','0','0','0','0','0','0','High Marshal Whirlaxis - Cast Lightning Shield on Spawn'),
 ('1520404','15204','27','0','100','1','25020','1','15000','30000','0','0','11','25020','0','0','0','0','0','0','0','0','0','0','High Marshal Whirlaxis - Cast Lightning Shield on Missing Buff'),
 ('1520405','15204','0','0','100','1','9000','13000','16000','20000','0','0','11','25060','0','1','0','0','0','0','0','0','0','0','High Marshal Whirlaxis - Cast Updraft'),
@@ -13429,7 +13429,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Crimson Templar
 ('1520901','15209','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','Crimson Templar - Cast Elemental Spawn-In on Spawn'),
 ('1520902','15209','4','0','100','32','0','0','0','0','0','0','1','-1536','-1537','0','1','-1538','-1539','0','0','0','0','0','Crimson Templar - Random Say on Aggro'),
-('1520903','15209','9','0','100','1','0','40','3400','4800','0','0','11','11989','1','0','0','0','0','0','0','0','0','0','Crimson Templar - Cast Fireball Volley'),
+('1520903','15209','9','0','100','1','8','40','3400','4800','0','0','11','11989','1','0','0','0','0','0','0','0','0','0','Crimson Templar - Cast Fireball Volley'),
 ('1520904','15209','0','0','100','1','10800','10800','7300','12200','0','0','11','22713','1','0','0','0','0','0','0','0','0','0','Crimson Templar - Cast Flame Buffet'),
 -- Azure Templar
 ('1521101','15211','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','Azure Templar - Cast Elemental Spawn-In on Spawn'),
@@ -13462,7 +13462,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1522001','15220','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','The Duke of Zephyrs - Cast Elemental Spawn-In on Spawn'),
 ('1522002','15220','0','0','100','1','8700','13900','27300','33300','0','0','11','12882','0','1','0','0','0','0','0','0','0','0','The Duke of Zephyrs - Cast Wing Flap'),
 ('1522003','15220','9','0','100','1','0','30','2200','8500','0','0','11','25034','1','0','0','0','0','0','0','0','0','0','The Duke of Zephyrs - Cast Forked Lightning'),
-('1522004','15220','0','0','100','1','7000','12000','21000','26000','0','0','11','25033','4','0','0','0','0','0','0','0','0','0','The Duke of Zephyrs - Cast Lightning Butt'),
+('1522004','15220','0','0','100','1','7000','12000','21000','26000','0','0','11','25033','4','0','0','0','0','0','0','0','0','0','The Duke of Zephyrs - Cast Lightning Cloud'),
 -- Huum Wildmane 15270
 -- Aurel Goldleaf 15282
 -- Xil'xix
@@ -15328,13 +15328,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hunter Thunderhorn 14442
 ('1444201','14442','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Hunter Thunderhorn - Cast Invisibility and Stealth Detection OOC'),
 -- Rumstag Proudstrider 14728
--- Defilers Emissary
+-- Defilers Emissary 14990
 ('1499001','14990','1','0','100','1','10000','90000','20000','70000','0','0','10','11','18','0','0','0','0','0','0','0','0','0','Defilers Emissary - Random Laugh or Cry Emote'),
 ('1499002','14990','1','0','100','1','5000','25000','10000','30000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Defilers Emissary - Talk Emote OOC'),
--- Warsong Emissary
+-- Warsong Emissary 15105
 ('1510501','15105','1','0','100','1','10000','90000','20000','70000','0','0','10','11','18','0','0','0','0','0','0','0','0','0','Warsong Emissary - Random Laugh or Cry Emote'),
 ('1510502','15105','1','0','100','1','5000','25000','10000','30000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Warsong Emissary - Talk Emote OOC'),
--- Frostwolf Emissary
+-- Frostwolf Emissary 15106
 ('1510601','15106','1','0','100','1','10000','90000','20000','70000','0','0','10','11','18','0','0','0','0','0','0','0','0','0','Frostwolf Emissary - Random Laugh or Cry Emote'),
 ('1510602','15106','1','0','100','1','5000','25000','10000','30000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Frostwolf Emissary - Talk Emote OOC'),
 -- Maxima Blastenheimer 15303
@@ -15397,7 +15397,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Un'Goro Thunderer 6516
 ('651601','6516','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Un''Goro Thunderer - Cast Set Stand State on Aggro'),
 ('651602','6516','0','0','100','1','5000','5000','9000','15000','0','0','11','12553','1','0','0','0','0','0','0','0','0','0','Un''Goro Thunderer - Cast Shock'),
--- Tar Beas 6517
+-- Tar Beast 6517
 ('651701','6517','1','0','100','0','1000','1000','0','0','0','0','11','14178','0','32','0','0','0','0','0','0','0','0','Tar Beast - Cast Sticky Tar OOC'),
 -- Tar Lurker 6518
 ('651801','6518','1','0','100','0','1000','1000','0','0','0','0','11','14178','0','32','0','0','0','0','0','0','0','0','Tar Lurker - Cast Sticky Tar OOC'),
@@ -15494,13 +15494,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gorishi Hive Queen 10041
 ('1004101','10041','11','0','100','0','0','0','0','0','0','0','54','-12','0','0','11','8601','0','34','0','0','0','0','Gorishi Hive Queen - Emote and Cast Slowing Poison on Spawn'),
 ('1004102','10041','0','0','100','1','10000','22000','12700','24800','0','0','11','8137','1','32','0','0','0','0','0','0','0','0','Gorishi Hive Queen - Cast Silithid Pox'),
--- Captured Felwood Ooze
+-- Captured Felwood Ooze 10290
 ('1029001','10290','29','0','100','0','1000','1000','0','0','0','0','45','5','40','0','41','2000','0','0','0','0','0','0','Captured Felwood Ooze - Send AI Event "A" and Delayed Despawn on Generic Timer (Q.4642)'),
 -- Gryfe <Flight Master> 10583
-('1058301','10583','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Gryfe - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
--- Blazing Invader
+('1058301','10583','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Gryfe - Cast Summon Enraged Mounts on Aggro'),
+-- Blazing Invader 14460
 ('1446001','14460','9','0','100','1','0','8','11000','14000','0','0','11','23113','0','1','0','0','0','0','0','0','0','0','Blazing Invader - Cast Blast Wave'),
--- Baron Charr
+-- Baron Charr 14461
 ('1446101','14461','11','0','100','0','0','0','0','0','0','0','1','-1487','0','0','0','0','0','0','0','0','0','0','Baron Charr - Yell on Spawn'),
 ('1446102','14461','9','0','100','1','0','20','2400','4700','0','0','11','9574','1','0','0','0','0','0','0','0','0','0','Baron Charr - Cast Flame Buffet'),
 ('1446103','14461','0','0','100','1','3700','24100','6000','18300','0','0','11','15285','1','0','0','0','0','0','0','0','0','0','Baron Charr - Fireball Volley'),
@@ -15734,7 +15734,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Salfa 11556
 -- Jessica Redpath 11629
 -- Chal Fairwind 11696
--- Sar Browneye 11718
+-- Sar Browneye 11718 (FLEE at 15% HP)
 -- Rilan Howard 11751
 -- Gogo 11753
 -- Meggi Peppinrocker 11754
@@ -15756,7 +15756,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1445706','14457','0','0','100','1025','9000','14000','15000','19000','0','0','11','22746','1','0','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Cone of Cold'),
 ('1445707','14457','9','0','100','1025','0','5','11000','15000','0','0','11','10987','17','0','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Geyser'),
 ('1445708','14457','9','0','100','1025','0','40','9000','11000','0','0','11','23102','1','256','0','0','0','0','0','0','0','0','Princess Tempestria - Cast Frostbolt'),
--- Watery Invader
+-- Watery Invader 14458
 ('1445801','14458','0','0','100','1','15000','20000','16000','19000','0','0','11','19133','4','0','0','0','0','0','0','0','0','0','Watery Invader - Cast Frost Shock'),
 -- Artorius the Amiable 14531
 -- Artorius the Doombringer 14535
