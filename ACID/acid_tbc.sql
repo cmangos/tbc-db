@@ -18284,6 +18284,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1853801','18538','0','0','100','1','5000','10000','15000','25000','0','0','11','22187','0','1','0','0','0','0','0','0','0','0','Ishanah - Cast Power Word Shield'),
 ('1853802','18538','14','0','100','1','40','3000','10000','20000','0','0','11','35096','12','1','0','0','0','0','0','0','0','0','Ishanah - Cast Greater Heal on Friendly Missing HP'),
 ('1853803','18538','0','0','100','1','0','0','2500','2500','0','0','11','15238','1','0','0','0','0','0','0','0','0','0','Ishanah - Cast Holy Smite'),
+-- Veraku (18544) - NSR
 -- Scryer Retainer
 ('1859301','18593','1','0','100','1','5000','25000','30000','150000','0','0','5','14','0','0','0','0','0','0','0','0','0','0','Scryer Retainer - OOC Emote'),
 -- Chief Engineer Lorthander 18697
@@ -21645,7 +21646,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ================
--- Blackrock Depths (Anvilrage Overseer and Warden and Guardsman and Twilight Torturer do random Clap and Laugh Emotes OOC) - (Zone Script Revamp Complete)
+-- Blackrock Depths (Anvilrage Overseer and Warden and Guardsman and Twilight Torturer do random Clap and Laugh Emotes OOC)
 -- ================
 -- Anvilrage Overseer 8889
 ('888901','8889','2','0','100','0','30','0','0','0','0','0','11','13589','0','1','0','0','0','0','0','0','0','0','Anvilrage Overseer - Cast Haste Aura at 30% HP'),
@@ -21657,7 +21658,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('889004','8890','0','0','100','1025','11100','15300','10200','16800','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Anvilrage Warden - Cast Shield Bash'),
 -- Anvilrage Guardsman 8891
 ('889101','8891','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Anvilrage Guardsman - Flee at 15% HP'),
-('889102','8891','0','0','100','1025','5000','9000','5000','9000','0','0','11','11971','1','0','0','0','0','0','0','0','0','0','Anvilrage Guardsman - Cast Sunder Armor (Phase 1)'),
+('889102','8891','0','0','100','1025','5000','9000','5000','9000','0','0','11','11971','1','0','0','0','0','0','0','0','0','0','Anvilrage Guardsman - Cast Sunder Armor'),
 ('889105','8891','0','0','100','1025','4000','9000','9000','14000','0','0','11','6713','1','1','0','0','0','0','0','0','0','0','Anvilrage Guardsman - Cast Disarm'),
 ('889106','8891','0','0','100','1025','11000','15000','10000','15000','0','0','11','12169','0','1','0','0','0','0','0','0','0','0','Anvilrage Guardsman - Cast Shield Block'),
 -- Anvilrage Footman 8892
@@ -21906,6 +21907,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('903506','9035','0','0','100','1','11000','15000','10000','15000','0','0','11','12169','0','1','0','0','0','0','0','0','0','0','Anger''rel - Cast Shield Block'),
 ('903507','9035','0','0','100','1','1000','3000','20000','26000','0','0','11','15062','0','1','0','0','0','0','0','0','0','0','Anger''rel - Cast Shield Wall'),
 ('903508','9035','21','0','100','2','0','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Anger''rel - Set Instance Data on Reached Home'),
+('903509','9035','7','0','100','0','0','0','0','0','0','0','22','0','0','0','18','256','0','0','0','0','0','0','Anger''rel - Set Phase 0 and Unitflag added on Evade'),
 -- Vile'rel 9036
 ('903601','9036','4','0','100','0','0','0','0','0','0','0','57','2','25','0','19','256','0','0','0','0','0','0','Vile''rel - Enable Range Mode and Remove UnitFlag on Aggro'),
 ('903602','9036','21','0','100','2','0','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Vile''rel - Set Instance Data on Reached Home'),
@@ -21914,11 +21916,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('903605','9036','14','0','100','1025','2500','40','60000','120000','0','0','11','11974','12','0','0','0','0','0','0','0','0','0','Vile''rel - Cast Power Word: Shield on Friendly Missing HP'),
 ('903606','9036','9','0','100','1025','0','30','3400','4800','0','0','11','15587','1','256','0','0','0','0','0','0','0','0','Vile''rel - Cast Mind Blast'),
 -- Gloom'rel 9037
-('903701','9037','4','0','100','0','0','0','0','0','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Gloom''rel - Unitflag removed on Aggro'),
+('903701','9037','4','0','100','0','0','0','0','0','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Gloom''rel - Remove Unitflag on Aggro'),
 ('903702','9037','9','0','100','1','0','5','12000','15000','0','0','11','9080','1','1','0','0','0','0','0','0','0','0','Gloom''rel - Cast Hamstring'),
 ('903703','9037','0','0','100','1','5000','5000','6000','10000','0','0','11','13737','1','0','0','0','0','0','0','0','0','0','Gloom''rel - Mortal Strike'),
 ('903704','9037','0','0','100','1','13800','19200','8100','17800','0','0','11','15284','1','1','0','0','0','0','0','0','0','0','Gloom''rel - Cast Cleave'),
 ('903705','9037','21','0','100','2','0','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Gloom''rel - Set Instance Data on Reached Home'),
+('903706','9037','7','0','100','0','0','0','0','0','0','0','18','256','0','0','0','0','0','0','0','0','0','0','Gloom''rel - Add Unitflag on Evade'),
 -- Seeth'rel 9038
 ('903801','9038','4','0','100','0','0','0','0','0','0','0','57','2','35','0','19','256','0','0','0','0','0','0','Seeth''rel - Enable Range Mode and Remove UnitFlag on Aggro'),
 ('903802','9038','21','0','100','2','0','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Seeth''rel - Set Instance Data on Reached Home'),
@@ -21942,6 +21945,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('904006','9040','0','0','100','1','1000','5000','25000','35000','0','0','11','15087','0','1','0','0','0','0','0','0','0','0','Dope''rel - Cast Evasion'),
 ('904007','9040','33','0','100','1','0','0','5000','9000','0','0','11','15582','1','0','0','0','0','0','0','0','0','0','Dope''rel - Cast Backstab on Facing Target Back'),
 ('904008','9040','21','0','100','2','0','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Dope''rel - Set Instance Data on Reached Home'),
+('904009','9040','7','0','100','0','0','0','0','0','0','0','11','30991','0','1','18','256','0','0','0','0','0','0','Dope''rel - Cast Stealth and Add UnitFlag on Evade'),
 -- Warder Stilgiss 9041
 ('904101','9041','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Warder Stilgiss - Enable Range Mode on Aggro'),
 ('904102','9041','27','0','100','1','12544','1','15000','30000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Warder Stilgiss - Cast Frost Armor on Missing Buff'),
@@ -23324,7 +23328,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2229901','22299','11','0','100','4','0','0','0','0','0','0','57','2','35','0','38','0','0','0','0','0','0','0','Spore Strider (Heroic) - Enable Range Mode and Zone Combat Pulse on Spawn'),
 ('2229902','22299','7','0','100','4','0','0','0','0','0','0','41','30000','0','0','0','0','0','0','0','0','0','0','Spore Strider (Heroic) - Delayed Despawn on Evade'),
 ('2229903','22299','0','0','100','1029','1000','1000','3200','3600','0','0','11','20824','1','256','0','0','0','0','0','0','0','0','Spore Strider (Heroic) - Cast Lightning Bolt'),
-
 
 
 
@@ -24806,7 +24809,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scarlet Commander Mograine (3976) - boss_scarlet_commander_mograine
 -- High Inquisitor Whitemane (3977) - boss_high_inquisitor_whitemane
 -- Vorrel Sengutz
-('398101','3981','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Vorrel Sengutz - Set Stand State to Stand on Aggro'),
+('398101','3981','4','0','100','0','0','0','0','0','0','0','47','0','0','0','0','0','0','0','0','0','0','0','Vorrel Sengutz - Set Stand State on Aggro'),
 -- Interrogator Vishas (3.0.3 and 4.3.4 Official Data)
 ('398301','3983','1','0','100','0','1000','1000','0','0','0','0','11','8981','0','32','0','0','0','0','0','0','0','0','Interrogator Vishas - Cast Immolate OOC'),
 ('398302','3983','4','0','100','0','0','0','0','0','0','0','1','-1198','0','0','0','0','0','0','0','0','0','0','Interrogator Vishas - Yell on Aggro'),
@@ -24966,7 +24969,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1469304','14693','0','0','100','1','30000','30000','15000','15000','0','0','11','15531','0','0','0','0','0','0','0','0','0','0','Scorn - Cast Frost Nova'),
 -- Pumpkin Fiend (23545) - NSR
 -- Headless Horseman (23682) - boss_headless_horseman
--- Pulsing Pumpkin (23694) - NSR
+-- Pulsing Pumpkin 23694
+('2369401','23694','0','0','100','3','1000','3000','7000','10000','0','0','11','42514','1','0','0','0','0','0','0','0','0','0','Pulsing Pumpkin - Cast Squash Soul'),
 -- Head of the Horseman (23775) - boss_head_of_horseman
 -- Sir Thomas (23904) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
@@ -25120,7 +25124,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1050808','10508','9','0','100','1025','0','40','3400','4800','0','0','11','21369','1','256','0','0','0','0','0','0','0','0','Ras Frostwhisper - Cast Frostbolt'),
 ('1050809','10508','8','2','100','1','17190','-1','3000','3000','0','0','22','1','0','0','11','17189','0','1','0','0','0','0','Ras Frostwhisper - Set Phase 1 and Cast Frostwhisper''s Lifeblood on Spell Hit (Phase 0)'),
 ('1050810','10508','0','1','100','0','20000','20000','0','0','0','0','11','17186','0','1','22','0','0','0','0','0','0','0','Ras Frostwhisper - Cast Ras Becomes a Boy! and Set Phase 0 (Phase 1)'),
-('1050811','10508','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ras Frostwhisper - Set Phase to 0 on Evade'),
+('1050811','10508','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ras Frostwhisper - Set Phase 0 on Evade'),
 -- Plagued Hatchling (3.0.3 Official Data - Logs Only)
 ('1067801','10678','0','0','100','1','700','8200','4800','9700','0','0','11','17745','1','0','0','0','0','0','0','0','0','0','Plagued Hatchling - Cast Diseased Spit'),
 -- Lorekeeper Polkelt
@@ -25777,7 +25781,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ==========================
--- Tempest Keep: The Arcatraz - (Zone Script Revamp Complete)
+-- Tempest Keep: The Arcatraz
 -- ==========================
 -- Arcatraz Defender 20857 - npc_arcatraz_defender
 -- Arcatraz Warder 20859
@@ -26039,7 +26043,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1797608','17976','0','0','100','1029','30000','30000','60000','60000','0','0','12','20078','4','1800000','12','19633','4','1800000','1','-10204','0','0','Commander Sarannis (Heroic) - Spawn Bloodwarder Reservist and Bloodwarder Mender and Emote'),
 ('1797609','17976','0','0','100','1029','30000','30000','60000','60000','0','0','12','20078','4','1800000','12','20078','4','1800000','1','-10009','0','0','Commander Sarannis (Heroic) - Spawn 2 Bloodwarder Reservists and Yell'),
 -- Warp Splinter (17977) - boss_warp_splinter
--- Thorngrin the Tender - boss_thorngrin
+-- Thorngrin the Tender 17978 - boss_thorngrin
 -- Laj (17980) - boss_laj
 -- Bloodwarder Protector (4.3.4 Official Data - Normal/Heroic)
 ('1799301','17993','14','0','100','0','10000','25','0','0','0','0','11','34784','12','0','0','0','0','0','0','0','0','0','Bloodwarder Protector - Cast Intervene on Friendly Missing HP'),
@@ -26274,7 +26278,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 
-
 -- =============
 -- The Deadmines
 -- =============
@@ -26290,7 +26293,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('63401','634','0','0','100','1','4800','17000','24000','43100','0','0','11','5115','0','0','0','0','0','0','0','0','0','0','Defias Overseer - Cast Battle Command'),
 ('63402','634','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Defias Overseer - Flee at 15% HP'),
 -- Defias Blackguard (3.0.8a Official Data)
-('63601','636','1','0','100','0','0','0','0','0','0','0','11','6408','0','0','0','0','0','0','0','0','0','0','Defias Blackguard - Cast Faded when OOC'),
+('63601','636','1','0','100','0','0','0','0','0','0','0','11','6408','0','0','0','0','0','0','0','0','0','0','Defias Blackguard - Cast Faded OOC'),
 ('63602','636','4','0','100','0','0','0','0','0','0','0','28','0','6408','0','1','-341','0','0','0','0','0','0','Defias Blackguard - Remove Faded and Emote on Aggro'),
 -- Edwin VanCleef (3.0.8a Official Data)
 ('63901','639','1','0','100','0','1000','1000','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Edwin VanCleef - Cast Thrash OOC'),
@@ -26338,7 +26341,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('172903','1729','8','0','100','1','0','4','42600','63500','0','0','11','4979','0','1','0','0','0','0','0','0','0','0','Defias Evoker - Cast Quick Flame Ward on Fire Spellhit'),
 ('172904','1729','0','0','100','1','0','1200','3100','17100','0','0','11','11829','1','0','0','0','0','0','0','0','0','0','Defias Evoker - Cast Flamestrike'),
 -- Goblin Craftsman 1731 - (MODIFIED FOR PRE WOTLK)
-('173101','1731','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Goblin Craftsman - Flee at 15% HP'),
+('173101','1731','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Goblin Craftsman - Flee at 15% HP'),
 ('173102','1731','0','0','100','1025','5600','9700','25000','52300','0','0','11','5159','1','0','0','0','0','0','0','0','0','0','Goblin Craftsman - Cast Melt Ore'),
 -- Defias Squallshaper (3.0.8a Official Data)
 ('173201','1732','1','0','100','1','1000','1000','1800000','1800000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Defias Squallshaper - Cast Frost Armor on Aggro'),
@@ -27849,7 +27852,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ========
--- Karazhan - (Zone Script Revamp Complete)
+-- Karazhan
 -- ========
 -- Spectral Charger 15547
 ('1554701','15547','2','0','100','1025','75','0','21000','28000','0','0','45','5','40','0','0','0','0','0','0','0','0','0','Spectral Charger - Send AI Event 5 at 75% HP'),
