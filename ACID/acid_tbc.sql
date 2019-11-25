@@ -28035,7 +28035,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1647101','16471','9','0','100','1','0','20','11000','15000','0','0','11','29666','1','0','0','0','0','0','0','0','0','0','Skeletal Usher - Cast Frost Shock'),
 ('1647102','16471','0','0','100','1','9000','14000','16000','21000','0','0','11','29661','4','0','0','0','0','0','0','0','0','0','Skeletal Usher - Cast Magnetic Pull'),
 ('1647103','16471','0','0','100','1','11000','15000','13000','17000','0','0','11','29670','1','1','13','-99','1','0','0','0','0','0','Skeletal Usher - Cast Ice Tomb and Drop Threat'),
--- Phantom Stagehand
 -- Phantom Stagehand 16472
 ('1647201','16472','4','0','25','0','0','0','0','0','0','0','1','-10074','-10075','0','0','0','0','0','0','0','0','0','Phantom Stagehand - Say on Aggro'),
 ('1647202','16472','6','0','25','0','0','0','0','0','0','0','1','-10076','-10077','0','0','0','0','0','0','0','0','0','Phantom Stagehand - Say on Death'),
@@ -28280,7 +28279,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1165902','11659','0','0','100','1025','4000','6000','7000','10000','0','0','11','20276','4','512','0','0','0','0','0','0','0','0','Molten Destroyer - Cast Knockdown'),
 ('1165903','11659','0','0','100','1025','9000','12000','8000','11000','0','0','11','19129','17','0','0','0','0','0','0','0','0','0','Molten Destroyer - Cast Massive Tremor'),
 -- Flamewaker 11661
-('1166101','11661','0','0','100','1025','6000','6000','4000','8000','0','0','11','15502','1','0','0','0','0','0','0','0','0','0','Flamewaker - Cast Sunder Armor on Target Missing Sunder Armor Aura Stack'),
+('1166101','11661','0','0','100','1025','6000','6000','4000','8000','0','0','11','15502','1','0','0','0','0','0','0','0','0','0','Flamewaker - Cast Sunder Armor'),
 ('1166102','11661','0','0','100','1025','4000','8000','4000','8000','0','0','11','19730','4','512','0','0','0','0','0','0','0','0','Flamewaker - Cast Strike'),
 ('1166103','11661','0','0','100','1025','5000','5000','8000','13000','0','0','11','20277','17','0','0','0','0','0','0','0','0','0','Flamewaker - Cast Fist of Ragnaros'),
 -- Flamewaker Priest (11662) - mob_flamewaker_priest
@@ -28549,7 +28548,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- =================================
--- Onyxia's Lair (Pre 3.2.2a Client)
+-- Onyxia's Lair (Pre 3.2.2a Version)
 -- =================================
 -- Onyxia 10184 - boss_onyxia
 -- Onyxian Whelp
@@ -28696,7 +28695,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Buru Egg (15514) - npc_buru_egg
 -- Hive'Zara Hatchling 15521
 ('1552101','15521','21','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Hive''Zara Hatchling - Forced Despawn on Reached Home'),
--- Mana Fiend
+-- Mana Fiend 15527
 ('1552701','15527','0','0','100','1025','6000','6000','6000','6000','0','0','11','25679','17','0','0','0','0','0','0','0','0','0','Mana Fiend - Cast Arcane Explosion'),
 ('1552702','15527','13','0','100','1025','6000','10000','0','0','0','0','11','15122','1','0','0','0','0','0','0','0','0','0','Mana Fiend - Cast Counterspell on Target Casting'),
 -- Anubisath Warrior
@@ -29207,7 +29206,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anubisath Swarmguard (15538) - (ALREADY SCRIPTED IN RUINS OF AHN'QIRAJ)
 -- Princess Yauj (15543) - boss_yauj
 -- Vem (15544) - boss_vem
--- Hive'Zara Larva (15555) - UNKNOWN INFORMATION FOR THIS NPC and ITS SPECIAL ABILITY
+-- Hive'Zara Larva (15555) - npc_hive_zara_larva
 -- Eye of C'Thun (15589) - boss_eye_of_cthun
 -- Yauj Brood
 ('1562101','15621','9','0','100','1','0','5','9000','13000','0','0','11','25788','4','0','0','0','0','0','0','0','0','0','Yauj Brood - Cast Head Butt'),
@@ -30172,7 +30171,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stoneclaw Totem III 3912 - TotemAI
 -- Stoneclaw Totem IV 3913 - TotemAI
 -- Hammerhead Shark 5185 - NSR
--- Archery Target
+-- Archery Target 5202
 ('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
 -- Coral Shark 5434
 ('543401','5434','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Coral Shark - Cast Thrash on Spawn'),
@@ -30268,6 +30267,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dire Maul Crystal Totem 13916 - TotemAI
 -- Brain Wash Totem 15112 - TotemAI
 -- Ancient Mana Spring Totem 15304 - TotemAI
+-- Disgusting Oozeling 15429 - MiniPet
+('1542901','15429','11','0','100','0','0','0','0','0','0','0','11','25163','0','0','0','0','0','0','0','0','0','0','Disgusting Oozeling - Cast Oozeling''s Disgusting Aura on Spawn'),
 -- Earth Elemental Totem 15430 - TotemAI
 -- Fire Elemental Totem 15439 - TotemAI
 -- Wrath of Air Totem 15447 - TotemAI
