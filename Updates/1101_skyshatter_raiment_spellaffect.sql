@@ -1,0 +1,1 @@
+UPDATE spell_affect SET SpellFamilyMask = 256 WHERE entry IN(38435);
