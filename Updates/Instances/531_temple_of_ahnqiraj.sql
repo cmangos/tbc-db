@@ -868,6 +868,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15589, 0, 0, 1, 16, 0, 0, NULL), -- Eye of C'Thun
 (15727, 0, 0, 1, 16, 0, 0, NULL), -- C'Thun
 (15896, 0, 0, 1, 16, 0, 0, NULL), -- C'Thun Portal
+(15933, 0, 0, 1, 16, 0, 0, '25786'), -- Poison Cloud
 (15957, 0, 0, 1, 16, 0, 0, NULL), -- Ouro Spawner
 (15963, 0, 0, 1, 16, 0, 0, '18430'), -- The Master's Eye
 (15984, 0, 0, 1, 16, 0, 0, NULL); -- Sartura's Royal Guard
