@@ -487,7 +487,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (11988, 0, 0, 1, 16, 0, 0, NULL), -- Golemagg the Incinerator
 (12056, 0, 0, 1, 16, 0, 0, NULL), -- Baron Geddon
 (12057, 0, 0, 1, 16, 0, 0, NULL), -- Garr
-(12076, 0, 0, 1, 16, 0, 0, NULL), -- Lava Elemental
+(12076, 0, 0, 1, 16, 0, 0, '19640'), -- Lava Elemental
 (12098, 0, 0, 1, 16, 0, 0, NULL), -- Sulfuron Harbinger
 (12099, 0, 0, 1, 16, 0, 0, '8876 15733'), -- Firesworn
 (12100, 0, 0, 1, 16, 0, 0, '12787'), -- Lava Reaver

@@ -28326,7 +28326,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Baron Geddon (12056) - boss_baron_geddon
 -- Garr (12057) - boss_garr
 -- Lava Elemental 12076
-('1207601','12076','11','0','100','0','0','0','0','0','0','0','11','19640','0','2','0','0','0','0','0','0','0','0','Lava Elemental - Cast Pummel on Spawn'),
+('1207601','12076','11','0','100','0','0','0','0','0','0','0','11','19640','0','34','0','0','0','0','0','0','0','0','Lava Elemental - Cast Pummel on Spawn'),
 ('1207602','12076','0','0','100','1025','6000','9000','9000','14000','0','0','11','19641','15','0','0','0','0','0','0','0','0','0','Lava Elemental - Cast Pyroclast Barrage'),
 -- Sulfuron Harbinger (12098) - boss_sulfuron
 -- Firesworn (12099) - mob_firesworn
