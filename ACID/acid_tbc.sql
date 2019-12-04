@@ -20950,12 +20950,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2027902','20279','2','0','30','0','15','0','0','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Ragestone Threshalisk - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
 ('2027903','20279','0','5','100','0','5000','8500','0','0','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Ragestone Threshalisk - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
 ('2027904','20279','0','3','100','0','0','0','0','0','0','0','11','35385','1','0','54','-10777','0','0','0','0','0','0','Ragestone Threshalisk - Cast Threshalisk Charge and Emote (Phase 2)'),
--- Ragestone Trampler
-('2028001','20280','9','0','100','1','0','5','7000','12000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Ragestone Trampler - Cast Trample'),
-('2028002','20280','0','0','100','0','5000','11000','25000','27000','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Ragestone Trampler - Cast Enrage'),
-('2028003','20280','2','0','30','0','15','0','0','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Ragestone Trampler - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
-('2028004','20280','0','5','100','0','5000','8500','0','0','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Ragestone Trampler - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
-('2028005','20280','0','3','100','0','0','0','0','0','0','0','11','35385','1','0','54','-10777','0','0','0','0','0','0','Ragestone Trampler - Cast Threshalisk Charge and Emote (Phase 2)'),
+-- Ragestone Trampler 20280
+('2028001','20280','2','0','30','1024','15','0','0','0','0','0','11','31261','0','0','18','536870912','0','0','22','1','0','0','Ragestone Trampler - Cast Permanent Feign Death (Root) and Set UNIT_FLAG_UNK_29 and Set Phase 1 below 15% hp'),
+('2028002','20280','0','5','100','1024','5000','8500','0','0','0','0','28','0','31261','0','19','536870912','0','0','22','2','0','0','Ragestone Trampler - Remove Permanent Feign Death (Root) and Remove UNIT_FLAG_UNK_29 and Set Phase 2 (Phase 1)'),
+('2028003','20280','0','3','100','1024','0','0','0','0','0','0','11','35385','1','0','54','-10777','0','0','0','0','0','0','Ragestone Trampler - Cast Threshalisk Charge and Emote (Phase 2)'),
+('2028004','20280','0','0','100','1025','11000','20000','7000','12000','0','0','11','5568','17','0','0','0','0','0','0','0','0','0','Ragestone Trampler - Cast Trample'),
+('2028005','20280','0','0','100','1025','5000','11000','25000','28000','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Ragestone Trampler - Cast Enrage'),
 -- Marshrock Stomper
 ('2028301','20283','0','0','100','1','5000','10000','15000','30000','0','0','11','12612','0','0','0','0','0','0','0','0','0','0','Marshrock Stomper - Cast Stomp'),
 -- Lagoon Eel
