@@ -18190,6 +18190,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Interrogator Khan 19152 - NSR
 -- Clefthoof Calf
 ('1918301','19183','0','0','100','1','6000','18000','20000','28000','0','0','11','32023','0','0','0','0','0','0','0','0','0','0','Clefthoof Calf - Cast Hoof Stomp'),
+-- Mountain Gronn 19201 - NSR
 -- Fel Cannon: Fear 19210 - NSR
 -- Darkened Spirit 19480
 ('1948001','19480','11','0','100','0','0','0','0','0','0','0','11','17321','0','0','0','0','0','0','0','0','0','0','Darkened Spirit - Cast Spirit Spawn-in on Spawn'),
