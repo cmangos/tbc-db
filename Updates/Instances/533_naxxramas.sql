@@ -402,10 +402,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+730, 4, 2889.02, -3298.33, 298.146, 0, 0, 0),
 (@CGUID+730, 5, 2879.74, -3293.5, 298.146, 0, 0, 0),
 (@CGUID+730, 6, 2882.14, -3275.98, 298.141, 0, 0, 0),
-(@CGUID+759, 1, 3487.76, -2911.2, 319.406, 3.90954, 0, 0),
-(@CGUID+759, 2, 3487.76, -2911.2, 319.406, 3.90954, 0, 0),
-(@CGUID+760, 1, 3527.81, -2952.38, 319.326, 3.90954, 0, 0),
-(@CGUID+760, 2, 3527.81, -2952.38, 319.326, 3.90954, 0, 0),
 (@CGUID+844, 1, 3178.613, -3263.671, 316.428, 100, 0, 0),
 (@CGUID+844, 2, 3174.119, -3267.95, 316.7845, 100, 0, 0),
 (@CGUID+845, 1, 3196.852, -3246.524, 315.1048, 100, 0, 0),
@@ -743,7 +739,9 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+725, 0, 9, 1, 0, 0, 0, NULL), -- Stoneskin Gargoyle
 (@CGUID+726, 0, 9, 1, 0, 0, 0, NULL), -- Stoneskin Gargoyle
 (@CGUID+727, 0, 0, 1, 0, 173, 0, NULL), -- Skeletal Smith
-(@CGUID+728, 0, 0, 1, 0, 173, 0, NULL); -- Skeletal Smith
+(@CGUID+728, 0, 0, 1, 0, 173, 0, NULL), -- Skeletal Smith
+(@CGUID+759, 0, 0, 1, 16, 0, 0, '28097'), -- Tesla Coil
+(@CGUID+760, 0, 0, 1, 16, 0, 0, '28109'); -- Tesla Coil
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (15928, 0, 0, 1, 16, 0, 0, NULL), -- Thaddius
@@ -932,6 +930,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+691, @CGUID+670, 515), -- Death Touched Warrior -> Deathknight
 (@CGUID+709, @CGUID+704, 515), -- Necro Knight -> Shade of Naxxramas
 (@CGUID+710, @CGUID+704, 515), -- Necro Knight -> Shade of Naxxramas
+(@CGUID+759, @CGUID+143, 1+4+128+1024), -- Tesla Coil -> Stalagg
+(@CGUID+760, @CGUID+144, 1+4+128+1024), -- Tesla Coil -> Feugen
 (@CGUID+852, @CGUID+851, 3), -- Plagued Gargoyle -> Plagued Gargoyle
 (@CGUID+853, @CGUID+854, 3), -- Plagued Gargoyle -> Plagued Gargoyle
 (@CGUID+855, @CGUID+856, 3), -- Plagued Gargoyle -> Plagued Gargoyle
@@ -1804,8 +1804,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+756, 16216, 533, 2739.77, -3219.47, 267.539, 4.46863, 3600, 3600, 5, 0, 0, 1), -- Unholy Swords
 (@CGUID+757, 16216, 533, 2731.77, -3230.92, 267.679, 4.46872, 3600, 3600, 5, 0, 0, 1), -- Unholy Swords
 (@CGUID+758, 16216, 533, 2708.13, -3174.65, 267.605, 0.418879, 3600, 3600, 0, 0, 0, 0), -- Unholy Swords
-(@CGUID+759, 16218, 533, 3487.76, -2911.2, 319.406, 3.90954, 120, 120, 0, 0, 0, 2), -- Tesla Coil
-(@CGUID+760, 16218, 533, 3527.81, -2952.38, 319.326, 3.90954, 120, 120, 0, 0, 0, 2), -- Tesla Coil
+(@CGUID+759, 16218, 533, 3487.76, -2911.2, 319.406, 3.90954, 120, 120, 0, 0, 0, 0), -- Tesla Coil
+(@CGUID+760, 16218, 533, 3527.81, -2952.38, 319.326, 3.90954, 120, 120, 0, 0, 0, 0), -- Tesla Coil
 (@CGUID+761, 16236, 533, 2761.28, -3765.37, 275.08, 1.24, 46, 46, 0, 0, 0, 0), -- Eye Stalk
 (@CGUID+762, 16236, 533, 2770.17, -3782.11, 275.08, 1.33, 46, 46, 0, 0, 0, 0), -- Eye Stalk
 (@CGUID+763, 16236, 533, 2798.11, -3788.94, 275.08, 2.35, 46, 46, 0, 0, 0, 0), -- Eye Stalk
