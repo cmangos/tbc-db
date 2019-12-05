@@ -18251,8 +18251,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2239305','22393','9','0','100','1025','0','40','3400','7200','0','0','11','15228','1','256','0','0','0','0','0','0','0','0','Deathshadow Overlord - Cast Fireball'),
 -- Deathshadow Hound
 ('2239401','22394','9','0','100','1','0','5','18000','26000','0','0','11','30639','1','0','0','0','0','0','0','0','0','0','Deathshadow Hound - Cast Carnivorous Bite'),
--- Wild Sparrowhawk
+-- Wild Sparrowhawk 22979
 ('2297901','22979','8','0','100','1','39810','-1','1','1','0','0','11','39812','6','4','0','0','0','0','0','0','0','0','Wild Sparrowhawk - Cast Captured Sparrowhawk Once Player Affect It With Sparrowhawk Net'),
+('2297902','22979','4','0','100','0','0','0','0','0','0','0','25','0','0','0','1','-11220','0','0','24','0','0','0','Wild Sparrowhawk - Flee and Emote and Evade on Aggro'),
 -- Deathshadow Agent
 ('2339301','23393','0','0','100','1','3000','7000','8000','14000','0','0','11','36447','1','0','0','0','0','0','0','0','0','0','Deathshadow Agent - Cast Mind Sear'),
 
@@ -32352,6 +32353,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11217','Thank you...','0','0','0','0','0','Ancient Orc Ancestor 18688'),
 ('-11218','It comes for you...','0','0','0','0','0','Ancient Orc Ancestor 18688'),
 ('-11219','%s crushes a vial of green gas.','0','0','0','0','0','Daggerfen Assassin 18116'),
+('-11220','%s senses danger and flees.','0','0','0','0','0','Wild Sparrowhawk 22979'),
 ('-19997','May the light bless you.','0','0','0','1','0','25639'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','1','0','25639'),
 ('-19999','Rest now, you have fought well today.','0','0','0','1','0','25639');
