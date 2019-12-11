@@ -11267,11 +11267,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodfen Raptor 4351
 ('435101','4351','11','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Bloodfen Raptor - Set Aggressive State on Spawn'),
 ('435102','4351','8','0','100','1','42325','-1','0','0','0','0','50','0','0','0','33','23727','7','0','41','3000','0','0','Bloodfen Raptor - Set Passive state, kill credit and despawn self on Spell Hit'),
-('435103','4351','2','0','100','1024','20','0','0','0','0','0','1','-274','0','0','0','0','0','0','0','0','0','0','Bloodfen Raptor - Text Emote at 20% HP'),
+('435103','4351','2','0','100','1024','20','0','0','0','0','0','1','-11221','0','0','0','0','0','0','0','0','0','0','Bloodfen Raptor - Text Emote at 20% HP'),
 -- Bloodfen Screecher 4352
 ('435201','4352','11','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Bloodfen Screecher - Set Aggressive State on Spawn'),
 ('435202','4352','8','0','100','1','42325','-1','0','0','0','0','50','0','0','0','33','23727','7','0','41','3000','0','0','Bloodfen Screecher - Set Passive state, kill credit and despawn self on Spell Hit'),
-('435203','4352','2','0','100','1024','20','0','0','0','0','0','1','-274','0','0','0','0','0','0','0','0','0','0','Bloodfen Screecher - Text Emote at 20% HP'),
+('435203','4352','2','0','100','1024','20','0','0','0','0','0','1','-11221','0','0','0','0','0','0','0','0','0','0','Bloodfen Screecher - Text Emote at 20% HP'),
 ('435204','4352','2','0','100','1024','50','0','0','0','0','0','39','20','0','0','1','-100','0','0','0','0','0','0','Bloodfen Screecher - Call For Help, Emote at 50% HP'),
 -- Bloodfen Razormaw
 ('435601','4356','9','0','100','1','0','5','8000','14000','0','0','11','3427','4','32','0','0','0','0','0','0','0','0','Bloodfen Razormaw - Cast Infected Wound'),
@@ -30782,9 +30782,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-232','The Brotherhood will not be hampered by insects.','0','0','0','0','0','6846'),
 ('-233','So much to do, so much to do! Where does the time go?','0','0','0','0','0','295'),
 ('-234','We live only to serve the ancient one. DIE INTERLOPER!','0','0','0','0','0','6911'),
--- Classic PLEASE RE-USE 235 - 273
-('-274','%s looks weak enough to capture.','0','2','0','0','0','4351'),
--- Classic PLEASE RE-USE 275 - 310
+-- Classic PLEASE RE-USE 235 - 310
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','0','0','11582'),
 -- Classic PLEASE RE-USE 312 - 320
 ('-321','Iman m t''ief fu Fus''obeah italaf','0','0','0','0','0','Common Frostmane Troll Text'),
@@ -32354,6 +32352,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11218','It comes for you...','0','0','0','0','0','Ancient Orc Ancestor 18688'),
 ('-11219','%s crushes a vial of green gas.','0','0','0','0','0','Daggerfen Assassin 18116'),
 ('-11220','%s senses danger and flees.','0','0','0','0','0','Wild Sparrowhawk 22979'),
+('-11221','%s looks weak enough to capture.','0','2','0','0','0','4351/4352'),
 ('-19997','May the light bless you.','0','0','0','1','0','25639'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','1','0','25639'),
 ('-19999','Rest now, you have fought well today.','0','0','0','1','0','25639');
