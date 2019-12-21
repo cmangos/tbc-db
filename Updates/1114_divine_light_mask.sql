@@ -1,0 +1,4 @@
+-- tbc only mask - wotlk reworked it
+REPLACE INTO spell_proc_event(entry,SpellFamilyMask0) VALUES
+(37195,(0x0000000000100000 + 0x0000000000080000 + 0x0000000000000400 + 0x0000000020000000 + 0x0000000800000000));
+
