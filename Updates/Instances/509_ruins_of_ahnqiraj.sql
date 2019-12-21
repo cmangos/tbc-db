@@ -1446,14 +1446,24 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+310, 15514, 509, -9243.43, 1280.5, -63.5938, 3.82227, 3520, 3520, 0, 0, 0, 0), -- Buru Egg
 (@CGUID+311, 15514, 509, -9263.01, 1295.24, -63.8081, 1.79769, 3520, 3520, 0, 0, 0, 0), -- Buru Egg
 (@CGUID+312, 15514, 509, -9234.33, 1243.83, -63.5281, 3.49066, 3520, 3520, 0, 0, 0, 0), -- Buru Egg
-(@CGUID+313, 15590, 509, -9407.72, 1960.2, 85.6391, 1.11701, 300, 300, 0, 0, 0, 0); -- Ossirian Crystal Trigger
+(@CGUID+313, 15590, 509, -9407.72, 1960.2, 85.6391, 1.11701, 300, 300, 0, 0, 0, 0), -- Ossirian Crystal Trigger - must be first and only spawned
+(@CGUID+314, 15590, 509, -9383.292, 2012.681, 85.63906, 1.117011, 0, 0, 0, 0, 0, 0), -- Ossirian Crystal Trigger
+(@CGUID+315, 15590, 509, -9432.396, 1782.529, 85.63908, 5.864306, 0, 0, 0, 0, 0, 0), -- Ossirian Crystal Trigger
+(@CGUID+316, 15590, 509, -9367.171, 1780.888, 85.63908, 1.902409, 0, 0, 0, 0, 0, 0), -- Ossirian Crystal Trigger
+(@CGUID+317, 15590, 509, -9244.413, 1808.983, 85.63908, 5.637414, 0, 0, 0, 0, 0, 0), -- Ossirian Crystal Trigger
+(@CGUID+318, 15590, 509, -9248.413, 1974.83, 85.63908, 5.899213, 0, 0, 0, 0, 0, 0), -- Ossirian Crystal Trigger
+(@CGUID+319, 15590, 509, -9299.727, 1748.453, 85.63907, 1.448623, 0, 0, 0, 0, 0, 0), -- Ossirian Crystal Trigger
+(@CGUID+320, 15590, 509, -9357.861, 1929.079, 85.63907, 1.064651, 0, 0, 0, 0, 0, 0), -- Ossirian Crystal Trigger
+(@CGUID+321, 15590, 509, -9282.08, 1887.34, 85.63908, 2.007129, 0, 0, 0, 0, 0, 0), -- Ossirian Crystal Trigger
+(@CGUID+322, 15590, 509, -9506.192, 1865.572, 85.63909, 4.276057, 0, 0, 0, 0, 0, 0), -- Ossirian Crystal Trigger
+(@CGUID+323, 15590, 509, -9188.444, 1940.21, 85.63905, 3.176499, 0, 0, 0, 0, 0, 0); -- Ossirian Crystal Trigger
 
 -- ===========
 -- GAMEOBJECTS
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 180619, 509, -9407.72, 1960.21, 85.6391, 1.11701, 0, 0, 0.529919, 0.848048, -120, -120, 255, 1), -- Ossirian Crystal
+-- (@OGUID+1
 (@OGUID+2, 180691, 509, -8938.36, 1860.11, 3.23041, 3.75246, 0, 0, -0.953716, 0.300708, 21600, 21600, 100, 1), -- Scarab Coffer
 (@OGUID+3, 180691, 509, -9344.26, 1191.31, 22.0217, 1.309, 0, 0, 0.608761, 0.793354, 21600, 21600, 100, 1), -- Scarab Coffer
 (@OGUID+4, 180691, 509, -9541.15, 1585.01, 26.5581, 4.04917, 0, 0, -0.898793, 0.438373, 21600, 21600, 100, 1), -- Scarab Coffer
