@@ -7,4 +7,7 @@ INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,
 -- hack - this bypasses despawn prevention due to GO casting a hidden 6 second spell the GO should cast - note will be put down even in core
 UPDATE gameobject_template SET data3=65536*6 WHERE entry IN(180619);
 
+-- sand vortex - ossirian
+UPDATE creature_template SET Faction=114,UnitFlags=33554432 WHERE entry IN(15428);
+
 
