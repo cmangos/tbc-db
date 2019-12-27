@@ -3246,11 +3246,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1646801, 1, 1, 1, 0, 0, 0, 0, 0, 6, 273, 274, 11, 0, 0, 0, 0, 'Spectral Patron - EMOTE_ONESHOT_TALK'),
 (1647001, 1, 1, 274, 0, 0, 0, 0, 0, 1, 11, 6, 273, 0, 0, 0, 0, 'Ghostly Philanthropist - EMOTE_ONESHOT_NO'),
 (1640701, 0, 0, 0, 0, 0, 0, 0, 0, 2000020012, 2000020013, 2000020014, 0, 0, 0, 0, 0, 'Spectral Servant - Random Say'),
-(1640701, 5, 31, 16159, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spectral Servant - Search for 16159'),
+(1640701, 5, 31, 16159, 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spectral Servant - Search for 16159'),
 (1640701, 6, 0, 0, 0, 0, 16159, 60, 3, 2000020010, 2000020011, 0, 0, 0, 0, 0, 0, 'Force Calliard - Random Say'),
 (1555101, 0, 0, 0, 0, 0, 0, 0, 0, 2000020008, 2000020009, 2000020128, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Random Say'),
 (1555101, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spectral Stable Hand - STATE_USESTANDING'),
-(1555101, 5, 31, 16159, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Search for 16159'),
+(1555101, 5, 31, 16159, 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Search for 16159'),
 (1555101, 6, 0, 0, 0, 0, 16159, 60, 3, 2000020010, 2000020011, 0, 0, 0, 0, 0, 0, 'Force Calliard - Random Say');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020008,2000020009,2000020010,2000020011,2000020012,2000020013,2000020014,2000020015,2000020016,2000020017,2000020018,2000020019,2000020020,2000020021,2000020128);
