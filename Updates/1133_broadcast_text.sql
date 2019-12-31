@@ -27,3 +27,4 @@ ALTER TABLE gossip_menu_option ADD COLUMN box_broadcast_text INT(11) NOT NULL DE
 ALTER TABLE script_texts ADD COLUMN broadcast_text_id INT(11) NOT NULL DEFAULT '0' AFTER emote;
 -- ALTER TABLE creature_ai_texts ADD COLUMN broadcast_text_id INT(11) NOT NULL DEFAULT '0' AFTER emote;
 ALTER TABLE dbscript_string ADD COLUMN broadcast_text_id INT(11) NOT NULL DEFAULT '0' AFTER emote;
+ALTER TABLE custom_texts ADD COLUMN broadcast_text_id INT(11) NOT NULL DEFAULT '0' AFTER emote;
