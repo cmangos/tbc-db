@@ -318,6 +318,18 @@ then
   echo "  ScriptDev2 successfully applied"
   echo
   echo
+
+  # Apply spell.sql
+  echo "> Trying to apply $CORE_PATH/sql/scriptdev2/spell.sql ..."
+  $MYSQL_COMMAND < $CORE_PATH/sql/scriptdev2/spell.sql
+  if [[ $? != 0 ]]
+  then
+    echo "ERROR: cannot apply $CORE_PATH/sql/scriptdev2/spell.sql"
+    exit 1
+  fi
+  echo "  Spell scripts successfully applied"
+  echo
+  echo
 fi
 
 #
