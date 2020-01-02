@@ -16866,6 +16866,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Simon Game Bunny 22923 - npc_simon_game_bunny
 -- Soulgrinder Ritual Bunny 23037 - NullAI
 -- Felguard Degrader 23055
+-- Legion Ring Event InvisMan 23059
+('2305901','23059','30','0','100','1','5','23390','0','0','0','0','11','41302','6','0','0','0','0','0','0','0','0','0','Legion Ring Event InvisMan - Cast Cosmetic - Bash''ir Spawn Lightning on Receive AI Event 5 (A)'),
+('2305902','23059','30','0','100','1','5','23391','0','0','0','0','11','41302','6','0','0','0','0','0','0','0','0','0','Legion Ring Event InvisMan - Cast Cosmetic - Bash''ir Spawn Lightning on Receive AI Event 5 (A)'),
 -- Rivendark 23061
 ('2306101','23061','30','0','100','0','5','23061','0','0','0','0','54','0','11','10083','22','2','0','0','0','0','0','0','Rivendark - Random Yell and Set Phase 2 on Receive AI Event 5 (A)'),
 ('2306102','23061','29','3','100','0','2000','2000','0','0','0','0','19','256','0','0','55','11','0','0','22','1','0','0','Rivendark - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and Attack Spawner and Set Phase 1 on Generic Timer (Phase 2)'),
@@ -16877,10 +16880,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2306108','23061','0','5','100','1','10000','20000','40000','60000','0','0','11','41988','0','0','0','0','0','0','0','0','0','0','Rivendark - Cast Corruption (Phase 1)'),
 ('2306109','23061','6','5','100','0','0','0','0','0','0','0','53','10127','0','0','0','0','0','0','0','0','0','0','Rivendark - Start Relay Script on Death (Phase 1)'),
 ('2306110','23061','21','5','100','0','0','0','0','0','0','0','41','8000','0','0','53','10128','0','0','0','0','0','0','Rivendark - Delayed Despawn and Start Relay Script on Reached Home (Phase 1)'),
+-- Legion Flak Cannon 23076
+('2307601','23076','10','0','100','1','0','60','7000','10000','0','0','11','41598','6','2','0','0','0','0','0','0','0','0','Fel Flak Cannon - Cast Knockdown Felcannon: The Bolt Pair on Player Proximity'),
 -- Fel Imp Defender 23078
--- Legion Ring Event InvisMan 23059
-('2305901','23059','30','0','100','1','5','23390','0','0','0','0','11','41302','6','0','0','0','0','0','0','0','0','0','Legion Ring Event InvisMan - Cast Cosmetic - Bash''ir Spawn Lightning on Receive AI Event 5 (A)'),
-('2305902','23059','30','0','100','1','5','23391','0','0','0','0','11','41302','6','0','0','0','0','0','0','0','0','0','Legion Ring Event InvisMan - Cast Cosmetic - Bash''ir Spawn Lightning on Receive AI Event 5 (A)'),
+-- Legion Flak Cannon 23082 - mob_fel_flak_cannon
 -- Ogri'la Keg King c.23110
 ('2311001','23110','1','0','100','1','30000','45000','30000','45000','0','0','5','92','0','0','11','35777','0','2','0','0','0','0','Ogri''la Keg King - Emote and Cast Bloodmaul Intoxication Visual OOC'),
 -- Doomguard Punisher 23113
