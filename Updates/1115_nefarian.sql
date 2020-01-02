@@ -1,1 +1,0 @@
-UPDATE creature_movement_template SET waittime=1000 WHERE entry IN(11583) AND point = 9;

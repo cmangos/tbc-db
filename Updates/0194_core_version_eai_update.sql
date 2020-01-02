@@ -1,2 +1,0 @@
-ALTER TABLE db_version CHANGE COLUMN required_s2377_01_mangos_creature_conditional_spawn required_s2378_01_mangos_event_ai bit;
-

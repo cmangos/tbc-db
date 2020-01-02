@@ -7,8 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="TBCDB_1.7.0_ANewHope.sql"
-DB_TITLE="v1.7 'A New Hope'"
+FULLDB_FILE="TBCDB_1.8.0_VengeanceStrikesBack.sql"
+DB_TITLE="v1.8 'Vengeance Strikes Back'"
 NEXT_MILESTONES="0.12.4 0.13"
 
 #internal use
