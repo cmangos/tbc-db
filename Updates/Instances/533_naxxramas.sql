@@ -830,7 +830,8 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16803, 0, 0, 0, 0, 333, 0, '18950 29068'), -- Deathknight Understudy
 (16861, 0, 0, 1, 16, 0, 0, NULL), -- Death Lord
 (16980, 0, 0, 1, 16, 0, 0, NULL), -- The Lich King
-(16998, 0, 0, 1, 16, 0, 0, NULL); -- Mr. Bigglesworth
+(16998, 0, 0, 1, 16, 0, 0, NULL), -- Mr. Bigglesworth
+(17286, 0, 0, 1, 16, 0, 0, '28782');
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+168, @CGUID+821, 3), -- Dread Creeper -> Necropolis Acolyte
@@ -2075,7 +2076,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1029, 16803, 533, 2758.28, -3111.99, 267.86, 4.22, 4224, 4224, 0, 0, 0, 0), -- Deathknight Understudy
 (@CGUID+1030, 16861, 533, 2931.33, -3190.24, 273.371, 3.1229, 3520, 3520, 0, 0, 0, 2), -- Death Lord
 (@CGUID+1031, 16980, 533, 3762.38, -5115.86, 143.938, 0.191986, 300, 300, 0, 0, 0, 0), -- The Lich King
-(@CGUID+1032, 16998, 533, 2960.72, -3433.41, 298.227, 2.94052, 3600, 3600, 5, 0, 0, 1); -- Mr. Bigglesworth
+(@CGUID+1032, 16998, 533, 2960.72, -3433.41, 298.227, 2.94052, 3600, 3600, 5, 0, 0, 1), -- Mr. Bigglesworth
+(@CGUID+1033, 17286, 533, 3489.61, -3839.83, 322, 1.53865, 3600, 3600, 0, 0, 0, 0), -- Invisible Man
+(@CGUID+1034, 17286, 533, 3507.45, -3838.96, 322, 1.5198, 3600, 3600, 0, 0, 0, 0), -- Invisible Man
+(@CGUID+1035, 17286, 533, 3526.49, -3842.83, 322, 1.04228, 3600, 3600, 0, 0, 0, 0), -- Invisible Man
+(@CGUID+1036, 17286, 533, 3541.51, -3852.34, 322, 0.602457, 3600, 3600, 0, 0, 0, 0), -- Invisible Man
+(@CGUID+1037, 17286, 533, 3551.26, -3865.88, 322, 0.458729, 3600, 3600, 0, 0, 0, 0), -- Invisible Man
+(@CGUID+1038, 17286, 533, 3558.49, -3883.9, 321.5, 0.113154, 3600, 3600, 0, 0, 0, 0); -- Invisible Man
+
 
 -- ===========
 -- GAMEOBJECTS
