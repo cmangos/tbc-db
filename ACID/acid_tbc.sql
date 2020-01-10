@@ -5989,9 +5989,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('72901','729','1','0','100','0','1000','1000','0','0','0','0','11','7095','0','32','0','0','0','0','0','0','0','0','Sin''Dall - Cast Knockdown Proc OOC'),
 -- Tethis 730
 ('73001','730','0','0','100','1','0','5000','11000','14000','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Tethis - Cast Tendon Rip'),
--- King Bangalsh 731 - CallForHelp on Aggro?
-('73101','731','1','0','100','0','1000','1000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','King Bangalsh - Despawn Guardians on OOC'),
-('73102','731','2','0','100','0','50','0','0','0','0','0','11','8816','0','1','0','0','0','0','0','0','0','0','King Bangalsh - Cast Summon Panthers at 50% HP'),
+-- King Bangalsh 731
+('73101','731','1','0','100','0','10000','30000','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','King Bangalsh - Despawn Guardians OOC'),
+('73102','731','4','0','100','0','0','0','0','0','0','0','39','20','0','0','0','0','0','0','0','0','0','0','King Bangalsh - Call For Help on Aggro'),
+('73103','731','2','0','100','0','50','0','0','0','0','0','11','8816','0','2','1','-153','0','0','0','0','0','0','King Bangalsh - Cast Summon Panthers, Emote at 50% HP'),
 -- Panther 736 - NSR
 -- Skullsplitter Panther 756 - NSR
 -- Skullsplitter Tiger 758 - NSR
@@ -27852,12 +27853,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1938901','19389','0','0','100','1','5000','10000','8000','12000','0','0','11','39171','1','0','0','0','0','0','0','0','0','0','Lair Brute - Cast Mortal Strike'),
 ('1938902','19389','0','0','100','1','3000','8000','6000','11000','0','0','11','39174','1','0','0','0','0','0','0','0','0','0','Lair Brute - Cast Cleave'),
 ('1938903','19389','32','0','100','1','8','25','15000','15000','0','0','11','24193','12','0','14','-100','0','0','0','0','0','0','Lair Brute - Cast Charge in Range and Reset Threat'),
-('1938904','19389','2','0','100','0','15','0','0','0','0','0','39','50','0','0','1','-10989','0','0','0','0','0','0','Lair Brute - Call For Help, Emote at 15% HP'),
+('1938904','19389','2','0','100','0','15','0','0','0','0','0','39','50','0','0','1','-153','0','0','0','0','0','0','Lair Brute - Call For Help, Emote at 15% HP'),
 -- Gronn-Priest
 ('2135001','21350','9','0','100','1','0','8','12000','19000','0','0','11','22884','0','1','0','0','0','0','0','0','0','0','Gronn-Priest - Cast Psychic Scream'),
 ('2135002','21350','0','0','100','1','7000','16000','21000','27000','0','0','11','36679','0','1','0','0','0','0','0','0','0','0','Gronn-Priest - Cast Renew'),
 ('2135003','21350','14','0','100','1','140000','100','20000','25000','0','0','11','36678','12','1','0','0','0','0','0','0','0','0','Gronn-Priest - Cast Heal on Friendly Missing HP'),
-('2135004','21350','2','0','100','0','15','0','0','0','0','0','39','50','0','0','1','-10989','0','0','0','0','0','0','Gronn-Priest - Call For Help, Emote at 15% HP'),
+('2135004','21350','2','0','100','0','15','0','0','0','0','0','39','50','0','0','1','-153','0','0','0','0','0','0','Gronn-Priest - Call For Help, Emote at 15% HP'),
 -- Dancing Flames (25305) - npc_dancing_flames
 
 
@@ -30735,7 +30736,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-144','What? How dare you!','0','0','0','0','0','1754'),
 ('-145','%s flees toward safety or another tiger.','0','2','0','0','0','Zulian Cub fleeing text'),
 ('-146','%s is demoralized and runs!','0','2','0','0','0','Affray Challenger 6240'),
--- Classic PLEASE RE-USE 147 - 153
+-- Classic PLEASE RE-USE 147 - 152
+('-153','%s lets out a massive roar, calling for aid!','0','2','0','15','0','Call For Help'),
 ('-154','%s lets out a shriek, calling for help!','0','2','0','0','0','3255'),
 ('-155','%s grabs for his poisoned dagger!','0','2','0','0','0','3286'),
 ('-156','%s begins to make a copy of itself!','0','2','0','0','0','3638,6557 - s.Clone'),
@@ -32219,7 +32221,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10986','Piece by piece I will tear this challenger apart... PIECE BY PIECE!','0','0','0','0','0','18402'),
 ('-10987','No more nice ogre! You hurt Mogor!!','0','1','0','0','0','18069'),
 ('-10988','Who dares defile the statue of our beloved?','0','1','0','0','0','17715'),
-('-10989','%s lets out a massive roar, calling for aid!','0','2','0','15','0','19389'),
+-- RE-USE 10989
 ('-10990','Petulant children, pray to your gods for you are about to meet them!','0','1','0','0','0','17678'),
 ('-10991','Prepare yourself for eternal torture, mortal!','0','1','0','0','0','19747'),
 ('-10992','WHAT?! Who dares to disturb the Burning Legion?','0','1','0','0','0','19747'),
