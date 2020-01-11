@@ -31257,16 +31257,16 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1566','Me feast on you all!','5824','1','0','0','0','8567'),
 ('-1567','I''ll feast on your bones!','5860','1','0','0','0','8580'),
 ('-1568','Let me give you my regards for Greatfather Winter, scum.','0','0','0','0','0','15692'),
-
-('-9001','Have you come to save the world? To cleanse it?','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
-('-9002','And so it begins...','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
-('-9003','Ashbringer...','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
-('-9004','Kneel! Kneel before the Ashbringer!','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
-('-9005','My $g Lord:Lady;, please allow me to live long enough to see you purge this world of the infidels.','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
-('-9006','Take me with you, $g sir:miss;.','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
-('-9007','I am unworthy, $g sir:miss;.','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1569','Have you come to save the world? To cleanse it?','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1570','And so it begins...','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1571','Ashbringer...','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1572','Kneel! Kneel before the Ashbringer!','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1573','My $g Lord:Lady;, please allow me to live long enough to see you purge this world of the infidels.','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1574','Take me with you, $g sir:miss;.','0','0','0','0','Ashbringer Event - Scarlet Monastery','0'),
+('-1575','I am unworthy, $g sir:miss;.','0','0','0','0','Ashbringer Event - Scarlet Monastery','0');
 
 -- TBC IDs 10000 - 19999
+INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`language`,`emote`,`broadcast_text_id`,`comment`) VALUES
 ('-10000','Insolent fool! You thought to steal Zelemar''s blood? You shall pay with your own!','0','1','0','0','0','17830'),
 ('-10001','I''m gonna cook ya, an'' then I''m gonna eat ya!','0','1','0','1','0','Blazing Trickster 20905'),
 ('-10002','I hope you all... die in pain!','0','1','0','0','0','Blazing Trickster 20905'),
@@ -32495,7 +32495,14 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (1003,0,-853,0,'Varimathras 2425 - Random Aggro Texts'),
 (1003,0,-854,0,'Varimathras 2425 - Random Aggro Texts'),
 (1003,0,-855,0,'Varimathras 2425 - Random Aggro Texts'),
-(1003,0,-856,0,'Varimathras 2425 - Random Aggro Texts');
+(1003,0,-856,0,'Varimathras 2425 - Random Aggro Texts'),
+(9000,0,-1569,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1570,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1571,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1572,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1573,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1574,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1575,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)');
 
 -- TBC IDs 10000 - 19999
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
