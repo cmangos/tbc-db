@@ -30969,8 +30969,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-669','What the squawk??? Squawk, squawk, squawk? SQUAWK!','0','0','0','0','0','7168'),
 -- Classic PLEASE RE-USE 670 - 693
 ('-694','%s chips and splinters!','0','2','0','0','0','7023'),
--- Classic PLEASE RE-USE 695 - 700
-('-701','Impudent fools! I will kill you myself!','8609','1','0','0','0','15341'),
+-- Classic PLEASE RE-USE 695 - 701
 ('-702','Warriors! Captains! Continue the fight!','8613','1','0','0','0','15341'),
 ('-703','You are not worth my time, $n.','8614','1','0','0','0','15341'),
 ('-704','%s begs to be put out of his misery.','0','2','0','0','0','10117'),
