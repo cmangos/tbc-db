@@ -29248,8 +29248,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spawn of Fankriss
 ('1563001','15630','0','0','100','0','20000','20000','0','0','0','0','11','26662','0','0','1','-106','0','0','0','0','0','0','Spawn of Fankriss - Cast Berserk'),
 -- Glob of Viscidus (15667) - npc_glob_of_viscidus
--- Dirt Mound
--- Ouro Scarab - npc_ouro_scarab
+-- Dirt Mound 15712 - cpp
+-- Ouro Scarab 15718 - npc_ouro_scarab
 -- Claw Tentacle (SD2 Backport)
 ('1572501','15725','11','0','100','0','0','0','0','0','0','0','21','0','0','0','11','26139','0','0','0','0','0','0','Claw Tentacle - Set Combat Movement false and Cast Ground Rupture on Spawn'),
 ('1572502','15725','0','0','100','1','2000','3000','5000','6000','0','0','11','26211','1','0','0','0','0','0','0','0','0','0','Claw Tentacle - Cast Hamstring'),
@@ -29265,8 +29265,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- The Master's Eye
 ('1596301','15963','10','0','100','0','0','20','0','0','0','0','1','-1048','0','0','41','3000','0','0','0','0','0','0','The Master''s Eye - Emote and Delayed Despawn at 20 Yards LOS'),
 -- Sartura's Royal Guard (15984)
-('1598401','15984','0','0','100','1','10000','15000','20000','30000','0','0','11','26038','15','0','0','0','0','0','0','0','0','0','Sartura''s Royal Guard - cast Whirlwind'),
-('1598402','15984','0','0','100','1','15000','20000','20000','30000','0','0','11','26027','15','0','0','0','0','0','0','0','0','0','Sartura''s Royal Guard - cast Knockback'),
+('1598401','15984','0','0','100','1','10000','15000','20000','30000','0','0','11','26038','15','0','0','0','0','0','0','0','0','0','Sartura''s Royal Guard - Cast Whirlwind'),
+('1598402','15984','0','0','100','1','15000','20000','20000','30000','0','0','11','26027','15','0','0','0','0','0','0','0','0','0','Sartura''s Royal Guard - Cast Knockback'),
 -- Dancing Flames (25305) - npc_dancing_flames
 
 
