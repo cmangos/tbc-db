@@ -18594,10 +18594,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gahruj (20066) - NSR
 -- Zuben Elgenubi (20067) - NSR
 -- Zuben Eschamali (20068) - NSR
--- Wind Trader Marid (20071) - NSR
+-- Wind Trader Marid 20071
+('2007101','20071','11','0','100','0','0','0','0','0','0','0','53','20158','0','0','0','0','0','0','0','0','0','0','Wind Trader Marid - START_RELAY_SCRIPT on Spawn'),
+('2007102','20071','7','0','100','0','0','0','0','0','0','0','41','1000','0','0','0','0','0','0','0','0','0','0','Wind Trader Marid - Despawn Self on Evade'),
 -- Image of Nexus-Prince Haramad (20084) - NSR
 -- Dealer Hazzin (20092) - NSR
--- Nether-Stalker (20101) - NSR
+-- Nether-Stalker 20101
+('2010101','20101','11','0','50','0','0','0','0','0','0','0','1','-10276','0','0','0','0','0','0','0','0','0','0','Nether-Stalker - 50% Chance to Say on Spawn'),
 -- Goblin Commoner (20102) - NSR
 -- Tyri (20110) - NSR
 -- Jorad Mace (20111) - NSR
