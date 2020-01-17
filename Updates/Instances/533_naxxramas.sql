@@ -824,6 +824,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16451, 0, 0, 1, 16, 0, 0, NULL), -- Deathknight Vindicator
 (16452, 0, 0, 1, 16, 0, 0, NULL), -- Necro Knight Guardian
 (16453, 0, 0, 1, 16, 0, 0, NULL), -- Necro Stalker
+(16474, 0, 0, 1, 16, 0, 0, '28534'), -- Blizzard
 (16505, 0, 0, 1, 16, 0, 0, NULL), -- Naxxramas Follower
 (16506, 0, 0, 1, 16, 0, 0, NULL), -- Naxxramas Worshipper
 (16573, 0, 0, 1, 16, 0, 0, NULL), -- Crypt Guard
@@ -831,7 +832,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16861, 0, 0, 1, 16, 0, 0, NULL), -- Death Lord
 (16980, 0, 0, 1, 16, 0, 0, NULL), -- The Lich King
 (16998, 0, 0, 1, 16, 0, 0, NULL), -- Mr. Bigglesworth
-(17286, 0, 0, 1, 16, 0, 0, '28782');
+(17286, 0, 0, 1, 16, 0, 0, '28782'); -- Invisible Man
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+168, @CGUID+821, 3), -- Dread Creeper -> Necropolis Acolyte
