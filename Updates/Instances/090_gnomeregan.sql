@@ -493,8 +493,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+99, 0, 0, 1, 16, 173, 0, NULL), -- Leprous Technician
 (@CGUID+100, 0, 0, 1, 16, 173, 0, NULL), -- Leprous Technician
 (@CGUID+114, 0, 0, 1, 16, 173, 0, NULL), -- Leprous Technician
-(@CGUID+173, 0, 0, 1, 16, 0, 0, '10348'), -- Mechano-Frostwalker
-(@CGUID+178, 0, 0, 1, 16, 0, 0, '10348'), -- Mechano-Frostwalker
 (@CGUID+291, 0, 7, 1, 16, 0, 0, NULL), -- Holdout Warrior
 (@CGUID+292, 0, 7, 1, 16, 0, 0, NULL), -- Holdout Warrior
 (@CGUID+297, 0, 8, 1, 16, 0, 0, '13864'); -- Holdout Medic
