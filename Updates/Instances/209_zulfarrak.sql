@@ -1112,7 +1112,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (760802, 0, 1, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Murta Grimgut - Emote Cheer'),
 (760809, 0, 15, 11365, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Raven - Cast Bly''s Band''s Escape'),
 (727301, 0, 5, 46, 256, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gahzrilla - Remove Unit Flag IMMUNE_TO_PLAYER'),
-(727301, 0, 20, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gahzrilla - movement changed to 1:random');
+(727301, 0, 20, 1, 15, 0, 0, 0, 0x08, 0, 0, 0, 0, 0, 0, 0, 0, 'Gahzrilla - movement changed to 1:random');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
