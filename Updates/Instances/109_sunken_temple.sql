@@ -621,6 +621,12 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+47, 177485, 109, -444.4482, 136.1064, -148.7402, 0.3316107, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
 (@OGUID+48, 177485, 109, -443.55, 53.9243, -148.7402, 0.9075702, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
 (@OGUID+49, 148422, 109, -467.09, 276.58, -90.47, 0, 0, 0, 0, 0, 180, 180, 0, 1); -- Evil God Spell Focus (DND)
+(@OGUID+50, 148837, 109, -490.969, 135.714, -148.74, 0.226892, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+51, 148837, 109, -420.155, 94.3731, -148.74, -2.32129, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+52, 148837, 109, -515.046, 95.1471, -148.74, 2.74016, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+53, 148837, 109, -491.396, 53.5787, -148.74, -0.471238, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+54, 148837, 109, -443.55, 53.9243, -148.74, 0.90757, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+55, 148837, 109, -444.448, 136.106, -148.74, 0.331611, 0, 0, 0, 1, 180, 180, 255, 1); -- Atal'ai Statue
 
 -- ======
 -- EVENTS
@@ -637,10 +643,38 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- =======
 
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
--- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+(@PGUID+0, 1, 'Atal\'ai Statue (Group 1)'),
+(@PGUID+1, 1, 'Atal\'ai Statue (Group 2)'),
+(@PGUID+2, 1, 'Atal\'ai Statue (Group 3)'),
+(@PGUID+3, 1, 'Atal\'ai Statue (Group 4)'),
+(@PGUID+4, 1, 'Atal\'ai Statue (Group 5)'),
+(@PGUID+5, 1, 'Atal\'ai Statue (Group 6)');
+
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+
+INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@OGUID+37, @PGUID+0, 0, 'Atal\'ai Statue (Group 1)'),
+(@OGUID+43, @PGUID+0, 0, 'Atal\'ai Statue (Group 1)'),
+(@OGUID+52, @PGUID+0, 0, 'Atal\'ai Statue (Group 1)'),
+(@OGUID+38, @PGUID+1, 0, 'Atal\'ai Statue (Group 2)'),
+(@OGUID+44, @PGUID+1, 0, 'Atal\'ai Statue (Group 2)'),
+(@OGUID+51, @PGUID+1, 0, 'Atal\'ai Statue (Group 2)'),
+(@OGUID+39, @PGUID+2, 0, 'Atal\'ai Statue (Group 3)'),
+(@OGUID+45, @PGUID+2, 0, 'Atal\'ai Statue (Group 3)'),
+(@OGUID+50, @PGUID+2, 0, 'Atal\'ai Statue (Group 3)'),
+(@OGUID+40, @PGUID+3, 0, 'Atal\'ai Statue (Group 4)'),
+(@OGUID+46, @PGUID+3, 0, 'Atal\'ai Statue (Group 4)'),
+(@OGUID+53, @PGUID+3, 0, 'Atal\'ai Statue (Group 4)'),
+(@OGUID+41, @PGUID+4, 0, 'Atal\'ai Statue (Group 5)'),
+(@OGUID+47, @PGUID+4, 0, 'Atal\'ai Statue (Group 5)'),
+(@OGUID+55, @PGUID+4, 0, 'Atal\'ai Statue (Group 5)'),
+(@OGUID+42, @PGUID+5, 0, 'Atal\'ai Statue (Group 6)'),
+(@OGUID+48, @PGUID+5, 0, 'Atal\'ai Statue (Group 6)'),
+(@OGUID+54, @PGUID+5, 0, 'Atal\'ai Statue (Group 6)');
+
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- =========
