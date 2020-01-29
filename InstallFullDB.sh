@@ -307,27 +307,19 @@ then
   echo
   echo
 
-  # Apply scriptdev2.sql
-  echo "> Trying to apply $CORE_PATH/sql/scriptdev2/scriptdev2.sql ..."
-  $MYSQL_COMMAND < $CORE_PATH/sql/scriptdev2/scriptdev2.sql
-  if [[ $? != 0 ]]
-  then
-    echo "ERROR: cannot apply $CORE_PATH/sql/scriptdev2/scriptdev2.sql"
-    exit 1
-  fi
-  echo "  ScriptDev2 successfully applied"
-  echo
-  echo
-
-  # Apply spell.sql
-  echo "> Trying to apply $CORE_PATH/sql/scriptdev2/spell.sql ..."
-  $MYSQL_COMMAND < $CORE_PATH/sql/scriptdev2/spell.sql
-  if [[ $? != 0 ]]
-  then
-    echo "ERROR: cannot apply $CORE_PATH/sql/scriptdev2/spell.sql"
-    exit 1
-  fi
-  echo "  Spell scripts successfully applied"
+  # Apply ScriptDev2 data
+  echo "> Trying to apply $CORE_PATH/sql/scriptdev2 ..."
+  for f in "$CORE_PATH/sql/scriptdev2/"*.sql
+  do
+    echo "    Appending SD2 file update `basename $f` to database $DATABASE"
+    $MYSQL_COMMAND < $f
+    if [[ $? != 0 ]]
+    then
+      echo "ERROR: cannot apply $f"
+      exit 1
+    fi
+  done
+  echo "  ScriptDev2 data successfully applied"
   echo
   echo
 fi
