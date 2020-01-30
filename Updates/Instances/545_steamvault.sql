@@ -687,10 +687,10 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (184125, 0, 0, 0, 0, 0, 0, 0, 0, 2000020037, 0, 0, 0, 0, 0, 0, 0, 'Invisible Stalker Coilfang Doors 20926 - Emote on 184125 go template use'),
 (184126, 0, 0, 0, 0, 0, 0, 0, 0, 2000020037, 0, 0, 0, 0, 0, 0, 0, 'Invisible Stalker Coilfang Doors 20926 - Emote on 184126 go template use'),
 (184126, 0, 0, 0, 0, 0, 0, 0, 0, 2000020038, 0, 0, 0, 0, 0, 0, 0, 'Invisible Stalker Coilfang Doors 20926 - Emote on 184126 go template use'), -- should be conditioned to whichever go is activated last
-(184126, 12, 20, 2, 0, 0, 17722, @CGUID+174, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Sorceress 17722 - Change MovementType to 2 on 2000020038'),
-(184126, 12, 20, 2, 0, 0, 17803, @CGUID+175, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Oracle 17803 - Change MovementType to 2 on 2000020038'),
-(184126, 12, 20, 2, 0, 0, 17800, @CGUID+177, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038'),
-(184126, 12, 20, 2, 0, 0, 17800, @CGUID+176, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038');
+(184126, 12000, 20, 2, 0, 0, 17722, @CGUID+174, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Sorceress 17722 - Change MovementType to 2 on 2000020038'),
+(184126, 12000, 20, 2, 0, 0, 17803, @CGUID+175, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Oracle 17803 - Change MovementType to 2 on 2000020038'),
+(184126, 12000, 20, 2, 0, 0, 17800, @CGUID+177, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038'),
+(184126, 12000, 20, 2, 0, 0, 17800, @CGUID+176, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038');
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

@@ -235,10 +235,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1882901,1882902);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1882901, 1, 15, 33346, 0, 0, 15384, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Green Beam at Trigger'),
-(1882901, 2, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 0:idle'),
-(1882902, 1, 15, 33827, 0, 0, 15384, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Hellfire Warder Channel Visual at Trigger'),
-(1882902, 2, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 0:idle');
+(1882901, 1000, 15, 33346, 0, 0, 15384, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Green Beam at Trigger'),
+(1882901, 2000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 0:idle'),
+(1882902, 1000, 15, 33827, 0, 0, 15384, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Hellfire Warder Channel Visual at Trigger'),
+(1882902, 2000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 0:idle');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

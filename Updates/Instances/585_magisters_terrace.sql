@@ -1364,7 +1364,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2478101, 0, 15, 44434, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Cast Cube Explode'),
 (2478101, 0, 22, 1814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Set Faction'),
 (2478101, 0, 5, 46, 33554432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Remove UnitFlags UNIT_FLAG_NOT_SELECTABLE 33554432'),
-(2478101, 1, 15, 44447, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Cast Threat 44447 on Brightscale Wyrm 24761'),
+(2478101, 1000, 15, 44447, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Cast Threat 44447 on Brightscale Wyrm 24761'),
 (2595501, 0, 15, 46757, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hand of the Deceiver Sunwell - Cast Shadow Channelling');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020125,2000020126,2000020127);

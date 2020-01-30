@@ -417,15 +417,15 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Aku'mai
-(4829, 2, 31, 6729, 50, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 6729'),
-(4829, 3, 10, 6729, 300000, 0, 0, 0, 0, 0, 0, 0, 0, -857.158, -467.636, -33.9256, 5.90677, '');
+(4829, 2000, 31, 6729, 50, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 6729'),
+(4829, 3000, 10, 6729, 300000, 0, 0, 0, 0, 0, 0, 0, 0, -857.158, -467.636, -33.9256, 5.90677, '');
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(103016, 1, 31, 4829, 50, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 4829'),
-(103016, 2, 31, 6729, 50, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 6729'),
-(103016, 3, 10, 6729, 300000, 0, 0, 0, 0, 0, 0, 0, 0, -857.158, -467.636, -33.9256, 5.90677, '');
+(103016, 1000, 31, 4829, 50, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 4829'),
+(103016, 2000, 31, 6729, 50, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 6729'),
+(103016, 3000, 10, 6729, 300000, 0, 0, 0, 0, 0, 0, 0, 0, -857.158, -467.636, -33.9256, 5.90677, '');
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

@@ -2829,8 +2829,8 @@ INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description
 INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (@OGUID+93, 0, 11, @OGUID+95, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (@OGUID+93, 0, 11, @OGUID+94, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+93, 20, 12, @OGUID+33, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+93, 20, 11, @OGUID+97, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+(@OGUID+93, 20000, 12, @OGUID+33, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+93, 20000, 11, @OGUID+97, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
 
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (161456, 0, 10, 9437, 10800000, 0, 0, 0, 0, 0, 0, 0, 0, 815.276, -168.652, -49.6699, 6.23083, 'Spawn Dark Keeper Vorfalk and his guards'),
@@ -2853,14 +2853,14 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (164819, 0, 10, 9443, 10800000, 0, 0, 0, 0, 0, 0, 0, 0, 802.755, -245.25, -43.2198, 2.93215, 'Spawn Dark Keeper Pelver and his guards'),
 (164819, 0, 10, 9445, 10800000, 0, 0, 0, 0, 0, 0, 0, 0, 805.289, -243.172, -43.2198, 3.42085, 'Spawn Dark Keeper Pelver and his guards'),
 (164819, 0, 10, 9445, 10800000, 0, 0, 0, 0, 0, 0, 0, 0, 801.935, -248.841, -43.2198, 1.95477, 'Spawn Dark Keeper Pelver and his guards'),
-(170562, 1, 0, 0, 0, 0, 9023, 20, 3, 2000005099, 0, 0, 0, 0, 0, 0, 0, 'Windsor - say on Dughal door open'),
-(170567, 1, 0, 0, 0, 0, 9680, 20, 3, 2000005101, 0, 0, 0, 0, 0, 0, 0, 'Crest - say on Crest door open'),
-(170567, 1, 22, 54, 5, 0, 9680, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Crest - change faction to hostile'),
-(170568, 1, 0, 0, 0, 0, 9677, 20, 3, 2000005102, 0, 0, 0, 0, 0, 0, 0, 'Ograbisi - say on Jaz door open'),
-(170568, 2, 22, 54, 5, 0, 9681, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Jaz - change faction to hostile'),
-(170568, 2, 22, 54, 5, 0, 9677, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Ograbisi - change faction to hostile'),
-(170569, 1, 0, 0, 0, 0, 9678, 20, 3, 2000005100, 0, 0, 0, 0, 0, 0, 0, 'Shill - say on Shill door open'),
-(170569, 1, 22, 54, 5, 0, 9678, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Shill - change faction to hostile'),
+(170562, 1000, 0, 0, 0, 0, 9023, 20, 3, 2000005099, 0, 0, 0, 0, 0, 0, 0, 'Windsor - say on Dughal door open'),
+(170567, 1000, 0, 0, 0, 0, 9680, 20, 3, 2000005101, 0, 0, 0, 0, 0, 0, 0, 'Crest - say on Crest door open'),
+(170567, 1000, 22, 54, 5, 0, 9680, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Crest - change faction to hostile'),
+(170568, 1000, 0, 0, 0, 0, 9677, 20, 3, 2000005102, 0, 0, 0, 0, 0, 0, 0, 'Ograbisi - say on Jaz door open'),
+(170568, 2000, 22, 54, 5, 0, 9681, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Jaz - change faction to hostile'),
+(170568, 2000, 22, 54, 5, 0, 9677, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Ograbisi - change faction to hostile'),
+(170569, 1000, 0, 0, 0, 0, 9678, 20, 3, 2000005100, 0, 0, 0, 0, 0, 0, 0, 'Shill - say on Shill door open'),
+(170569, 1000, 22, 54, 5, 0, 9678, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Shill - change faction to hostile'),
 (174554, 0, 27, 8, 0, 0, 160836, @OGUID+78, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Relic Coffer Door - Access: Relic Coffer'),
 (174555, 0, 27, 8, 0, 0, 160836, @OGUID+87, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Relic Coffer Door - Access: Relic Coffer'),
 (174556, 0, 27, 8, 0, 0, 160836, @OGUID+85, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Relic Coffer Door - Access: Relic Coffer'),
@@ -2877,34 +2877,34 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (889101,902201,950001,950002,967901,4729401,905601,905602,905603,905604,9839501);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (889101, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN OFF'),
-(889101, 1, 25, 0, 0, 0, 8891, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN OFF'),
-(889101, 2, 20, 1, 5, 0, 8891, 40, 8, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(889101, 3, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(889101, 1000, 25, 0, 0, 0, 8891, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN OFF'),
+(889101, 2000, 20, 1, 5, 0, 8891, 40, 8, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(889101, 3000, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (902201, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Dughal on last waypoint'),
 (950001, 0, 31, 9545, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 9545'),
-(950001, 1, 0, 0, 0, 0, 9545, 20, 0, 2000000261, 2000000262, 2000000263, 2000000264, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
-(950001, 1, 36, 0, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - Face Nagmara'),
-(950001, 2, 36, 0, 0, 0, 9545, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Grim Patron'),
-(950001, 3, 0, 0, 0, 0, 0, 0, 0, 2000000265, 2000000266, 2000000267, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
-(950001, 5, 36, 1, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - restore orientation'),
-(950001, 6, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
+(950001, 1000, 0, 0, 0, 0, 9545, 20, 0, 2000000261, 2000000262, 2000000263, 2000000264, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
+(950001, 1000, 36, 0, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - Face Nagmara'),
+(950001, 2000, 36, 0, 0, 0, 9545, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Grim Patron'),
+(950001, 3000, 0, 0, 0, 0, 0, 0, 0, 2000000265, 2000000266, 2000000267, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
+(950001, 5000, 36, 1, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - restore orientation'),
+(950001, 6000, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
 (950002, 0, 31, 9547, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 9547'),
-(950002, 1, 0, 0, 0, 0, 9547, 20, 0, 2000000261, 2000000262, 2000000263, 2000000264, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
-(950002, 1, 36, 0, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - Face Nagmara'),
-(950002, 2, 36, 0, 0, 0, 9547, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Guzzling Patron'),
-(950002, 3, 0, 0, 0, 0, 0, 0, 0, 2000000265, 2000000266, 2000000267, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
-(950002, 5, 36, 1, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - restore orientation'),
-(950002, 6, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
+(950002, 1000, 0, 0, 0, 0, 9547, 20, 0, 2000000261, 2000000262, 2000000263, 2000000264, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
+(950002, 1000, 36, 0, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - Face Nagmara'),
+(950002, 2000, 36, 0, 0, 0, 9547, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Guzzling Patron'),
+(950002, 3000, 0, 0, 0, 0, 0, 0, 0, 2000000265, 2000000266, 2000000267, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
+(950002, 5000, 36, 1, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - restore orientation'),
+(950002, 6000, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
 (967901, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Tobias on last waypoint'),
 (4729401, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weapon Technician - state_usestanding'),
-(4729401, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weapon Technician - oneshot_none'),
-(905601, 3, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - state_usestanding_nosheathe'),
-(905601, 13, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_none'),
-(905602, 3, 1, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - state_work'),
-(905602, 13, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_none'),
-(905603, 1, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_kneel'),
+(4729401, 5000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weapon Technician - oneshot_none'),
+(905601, 3000, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - state_usestanding_nosheathe'),
+(905601, 13000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_none'),
+(905602, 3000, 1, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - state_work'),
+(905602, 13000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_none'),
+(905603, 1000, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_kneel'),
 (905604, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - movementtype_random'),
-(905604, 90, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - movementtype_waypoint'),
+(905604, 90000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - movementtype_waypoint'),
 
 -- TBC+ only
 (9839501, 0, 18, 744000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '[DND] L70ETC Drums - Grim Guzzler Despawn Drums on Drummer Spawn');
@@ -2916,14 +2916,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 
 DELETE FROM dbscripts_on_gossip WHERE id IN (194502,197001);
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(194502, 1, 9, @OGUID+112, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn Spectral Chalice'),
+(194502, 1000, 9, @OGUID+112, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn Spectral Chalice'),
 
 (197001, 0, 22, 21, 0, 0, 10043, @CGUID+1109, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly Crony - update faction'),
 (197001, 0, 22, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly - update faction'),
 (197001, 0, 22, 21, 0, 0, 10043, @CGUID+1110, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly Crony - update faction'),
 (197001, 0, 22, 21, 0, 0, 10043, @CGUID+1111, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly Crony - update faction'),
-(197001, 3, 0, 0, 0, 0, 0, 0, 0, 2000005626, 0, 0, 0, 0, 0, 0, 0, ''),
-(197001, 5, 26, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly  - attack player');
+(197001, 3000, 0, 0, 0, 0, 0, 0, 0, 2000005626, 0, 0, 0, 0, 0, 0, 0, ''),
+(197001, 5000, 26, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly  - attack player');
 
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

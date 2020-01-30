@@ -1378,9 +1378,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2405901, 0, 0, 0, 0, 0, 0, 0, 0, 2000020115, 2000020116, 2000020117, 0, 0, 0, 0, 0, 'Amani\'shi Handler - random say'),
 
 (2389701, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Set Idle Movement'),
-(2389701, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.780236, 'Zungam set facing'),
-(2389701, 2, 29, 4226, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - npcFlags added'),
-(2389701, 2, 0, 0, 0, 0, 0, 0, 0, 2000020119, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Say Text 2');
+(2389701, 1000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.780236, 'Zungam set facing'),
+(2389701, 2000, 29, 4226, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - npcFlags added'),
+(2389701, 2000, 0, 0, 0, 0, 0, 0, 0, 2000020119, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Say Text 2');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -1388,7 +1388,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (186430, 0, 14, 25900, 0, 0, 23897, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Remove Aura 25900'),
 (186430, 0, 0, 0, 0, 0, 23897, 10, 0, 2000020118, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Say Text 1'),
-(186430, 2, 20, 2, 0, 0, 23897, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Set Waypoint Movement');
+(186430, 2000, 20, 2, 0, 0, 23897, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Set Waypoint Movement');
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

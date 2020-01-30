@@ -1530,9 +1530,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1534301, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AQ20 - Qiraji Swarmguard');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(15338, 1, 15, 27627, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops small obsidian chunk'), -- Obsidian Destroyer
-(15340, 1, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops large obsidian chunk'), -- Moam
-(15355, 1, 15, 27627, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops small obsidian chunk'); -- Anubisath Guardian
+(15338, 1000, 15, 27627, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops small obsidian chunk'), -- Obsidian Destroyer
+(15340, 1000, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops large obsidian chunk'), -- Moam
+(15355, 1000, 15, 27627, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops small obsidian chunk'); -- Anubisath Guardian
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

@@ -1117,16 +1117,16 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(@OGUID+77, 1, 15, 11525, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+78, 1, 15, 11525, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+79, 1, 15, 11525, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+80, 1, 15, 11528, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+81, 1, 15, 11528, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+82, 1, 15, 11528, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+83, 1, 15, 11528, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+86, 1, 15, 11545, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+87, 1, 15, 11545, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+88, 1, 15, 11545, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, '');
+(@OGUID+77, 1000, 15, 11525, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+78, 1000, 15, 11525, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+79, 1000, 15, 11525, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+80, 1000, 15, 11528, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+81, 1000, 15, 11528, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+82, 1000, 15, 11528, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+83, 1000, 15, 11528, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+86, 1000, 15, 11545, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+87, 1000, 15, 11545, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(@OGUID+88, 1000, 15, 11545, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, '');
 
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

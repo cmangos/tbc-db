@@ -3570,20 +3570,20 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2288201, 0, 15, 40094, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Deathshaper - Cast Summon Channel'),
 (2294501, 0, 15, 40094, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Blood Mage - Cast Summon Channel'),
 (2295901, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spellbound Attendant - Emote OneShotQuestion'),
-(2295901, 4, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spellbound Attendant - Emote OneShotBow'),
-(2295902, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spellbound Attendant - Emote OneShotBow'),
+(2295901, 4000, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spellbound Attendant - Emote OneShotBow'),
+(2295902, 2000, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spellbound Attendant - Emote OneShotBow'),
 (2295903, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spellbound Attendant - Emotestate 69'),
-(2295903, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spellbound Attendant - Emotestate 0'),
+(2295903, 16000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spellbound Attendant - Emotestate 0'),
 (2296501, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emote OneShotQuestion'),
-(2296501, 4, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emote OneShotBow'),
-(2296502, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emote OneShotBow'),
+(2296501, 4000, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emote OneShotBow'),
+(2296502, 2000, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emote OneShotBow'),
 (2296503, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emotestate 69'),
-(2296503, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emotestate 0'),
+(2296503, 16000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emotestate 0'),
 (2314701, 0, 15, 34664, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Grunt - Cast Sleep Visual - Flavor');
 -- (2319601, 0, 20, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth -  Set MovementType 0 and Spawndist 0'), -- should be addable to creature_movement, which currently lacks pathId support
--- (2319601, 60, 20, 2, 1, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 1'),
+-- (2319601, 60000, 20, 2, 1, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 1'),
 -- (2319602, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth -  Set MovementType 1 and Spawndist 3'),
--- (2319602, 60, 20, 2, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 0');
+-- (2319602, 60000, 20, 2, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 0');
 
 -- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

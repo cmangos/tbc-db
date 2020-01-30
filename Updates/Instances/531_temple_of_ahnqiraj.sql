@@ -1705,13 +1705,13 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 DELETE FROM dbscripts_on_creature_movement WHERE id=1530001;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1530001, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Vekniss Drone - pause waypoint movement'),
-(1530001, 1, 20, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Vekniss Drone - random movement'),
-(1530001, 13, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Vekniss Drone - waypoint movement'),
-(1530001, 14, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Vekniss Drone - resume waypoint movement');
+(1530001, 1000, 20, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Vekniss Drone - random movement'),
+(1530001, 13000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Vekniss Drone - waypoint movement'),
+(1530001, 14000, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Vekniss Drone - resume waypoint movement');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(15264, 1, 15, 27627, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops small obsidian chunk'),
-(15277, 1, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops large obsidian chunk');
+(15264, 1000, 15, 27627, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops small obsidian chunk'),
+(15277, 1000, 15, 27630, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'drops large obsidian chunk');
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

@@ -770,36 +770,36 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1043201,1450002,1450007,1450012);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1043201, 1, 0, 0, 0, 0, 0, 0, 0, 2000005027, 0, 0, 0, 0, 0, 0, 0, ''),
-(1043201, 10, 0, 0, 0, 0, 0, 0, 0, 2000005028, 0, 0, 0, 0, 0, 0, 0, ''),
-(1043201, 20, 0, 0, 0, 0, 0, 0, 0, 2000005029, 0, 0, 0, 0, 0, 0, 0, ''),
+(1043201, 1000, 0, 0, 0, 0, 0, 0, 0, 2000005027, 0, 0, 0, 0, 0, 0, 0, ''),
+(1043201, 10000, 0, 0, 0, 0, 0, 0, 0, 2000005028, 0, 0, 0, 0, 0, 0, 0, ''),
+(1043201, 20000, 0, 0, 0, 0, 0, 0, 0, 2000005029, 0, 0, 0, 0, 0, 0, 0, ''),
 (1450002, 0, 0, 0, 0, 0, 0, 0, 0, 2000007714, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 2 on reach wp 2 (Scholomance)'),
 (1450007, 0, 0, 0, 0, 0, 0, 0, 0, 2000007715, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 3 on reach wp 7 (Scholomance)'),
-(1450012, 4, 0, 0, 0, 0, 0, 0, 0, 2000007716, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 4 on reach wp 12 (Scholomance)'),
-(1450012, 7, 15, 41232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee cast teleport on reach wp 12 (Scholomance)'),
-(1450012, 8, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee despawn self on reach wp 12 (Scholomance)');
+(1450012, 4000, 0, 0, 0, 0, 0, 0, 0, 2000007716, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 4 on reach wp 12 (Scholomance)'),
+(1450012, 7000, 15, 41232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee cast teleport on reach wp 12 (Scholomance)'),
+(1450012, 8000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee despawn self on reach wp 12 (Scholomance)');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(10503, 1, 0, 0, 0, 0, 0, 0, 0, 2000000612, 0, 0, 0, 0, 0, 0, 0, ''),
-(10503, 1, 15, 26096, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Jandice Barov - Summon Journal of Jandice Barov on Death');
+(10503, 1000, 0, 0, 0, 0, 0, 0, 0, 2000000612, 0, 0, 0, 0, 0, 0, 0, ''),
+(10503, 1000, 15, 26096, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Jandice Barov - Summon Journal of Jandice Barov on Death');
 
 INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (@OGUID+64, 0, 11, @OGUID+11, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (@OGUID+9, 0, 12, @OGUID+10, 600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(@OGUID+9, 5, 10, 10506, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 309.65, 93.47, 101.66, 0.03, '');
+(@OGUID+9, 5000, 10, 10506, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 309.65, 93.47, 101.66, 0.03, '');
 
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM dbscripts_on_event WHERE id IN (5438,5439,8438);
 INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(5438, 1, 9, @OGUID+46, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn gobject'),
-(5439, 1, 9, @OGUID+45, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn gobject'),
+(5438, 1000, 9, @OGUID+46, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn gobject'),
+(5439, 1000, 9, @OGUID+45, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn gobject'),
 -- q.7269 Imp Delivery
 (8438, 0, 10, 14500, 180000, 0, 0, 0, 0, 0, 0, 0, 0, 38.4345, 156.93, 83.545, 1.40746, 'Spawn J''eevee (Scholomance)'),
-(8438, 1, 0, 0, 0, 0, 14500, 40, 0, 2000007713, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 1 (Scholomance)'),
-(8438, 3, 20, 2, 0, 0, 14500, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee set waypoint movement (Scholomance)'),
-(8438, 40, 8, 14500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee give quest credit (Scholomance)');
+(8438, 1000, 0, 0, 0, 0, 14500, 40, 0, 2000007713, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 1 (Scholomance)'),
+(8438, 3000, 20, 2, 0, 0, 14500, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee set waypoint movement (Scholomance)'),
+(8438, 40000, 8, 14500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee give quest credit (Scholomance)');
 
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

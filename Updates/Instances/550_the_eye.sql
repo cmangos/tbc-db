@@ -1003,26 +1003,26 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (10121, 0, 45, 0, 10121, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Crystalcore Devastator - 10% chance (Tempest-Smith follower random say)'),
 (10122, 0, 45, 0, 10122, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest-Smith - 50% chance (run diagnostics on Crystalcore Sentinel)'),
 (10123, 0, 45, 0, 10123, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tempest-Smith - 50% chance (run diagnostics on Crystalcore Devastator)'),
-(10124, 3, 0, 10124, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Marshal Chat'),
-(10125, 116, 0, 10125, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad Three speaker'),
+(10124, 3000, 0, 10124, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Marshal Chat'),
+(10125, 116000, 0, 10125, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad Three speaker'),
 (10126, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Terminate'),
-(10127, 116, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad three salute'),
-(10128, 153, 0, 10128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'second squad speaker Round 2'),
-(10129, 178, 0, 10129, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'first squad speaker'),
-(10130, 153, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad two salute Round 2'),
-(10131, 178, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad one salute'),
-(10132, 20, 0, 10132, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'second squad speaker Round 1'),
-(10133, 20, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad two salute Round 1');
+(10127, 116000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad three salute'),
+(10128, 153000, 0, 10128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'second squad speaker Round 2'),
+(10129, 178000, 0, 10129, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'first squad speaker'),
+(10130, 153000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad two salute Round 2'),
+(10131, 178000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad one salute'),
+(10132, 20000, 0, 10132, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'second squad speaker Round 1'),
+(10133, 20000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Squad two salute Round 1');
 
 DELETE FROM dbscripts_on_relay WHERE id IN (10121,10122,10123);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10121,0,0,0,0,20042,20,0,2000020070,2000020071,2000020072,0,0,0,0,0,'Tempest-Smith to say random'),
-(10122,1,15,34946,0,0,0,0,0,0,0,0,0,0,0,0,'Tempest-Smith - Cast Repair Golem'),
-(10122,6,0,0,0,0,0,0,2000020073,0,0,0,0,0,0,0,'Tempest-Smith - say 1'),
-(10122,7,0,0,0,20041,20,0,2000020074,2000020075,2000020076,0,0,0,0,0,'Crystalcore Sentinel - say random'),
-(10123,1,15,34946,0,0,0,0,0,0,0,0,0,0,0,0,'Tempest-Smith - Cast Repair Golem'),
-(10123,6,0,0,0,0,20,0,2000020073,0,0,0,0,0,0,0,'Tempest-Smith - say 1'),
-(10123,7,0,0,0,20040,20,0,2000020074,2000020075,2000020076,0,0,0,0,0,'Crystalcore Devastator - say random');
+(10122,1000,15,34946,0,0,0,0,0,0,0,0,0,0,0,0,'Tempest-Smith - Cast Repair Golem'),
+(10122,6000,0,0,0,0,0,0,2000020073,0,0,0,0,0,0,0,'Tempest-Smith - say 1'),
+(10122,7000,0,0,0,20041,20,0,2000020074,2000020075,2000020076,0,0,0,0,0,'Crystalcore Sentinel - say random'),
+(10123,1000,15,34946,0,0,0,0,0,0,0,0,0,0,0,0,'Tempest-Smith - Cast Repair Golem'),
+(10123,6000,0,0,0,0,20,0,2000020073,0,0,0,0,0,0,0,'Tempest-Smith - say 1'),
+(10123,7000,0,0,0,20040,20,0,2000020074,2000020075,2000020076,0,0,0,0,0,'Crystalcore Devastator - say random');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020070,2000020071,2000020072,2000020073,2000020074,2000020075,2000020076,2000020077,2000020078,
 2000020079,2000020080,2000020081,2000020082,2000020083,2000020084,2000020085,2000020086,2000020087,2000020088,2000020089,2000020090);

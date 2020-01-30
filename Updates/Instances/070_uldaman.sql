@@ -708,10 +708,10 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(124371, 1, 10, 7228, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, -235.673, 309.639, -47.5976, 4.74317, 'Summon Ironaya'),
-(124371, 27, 11, @OGUID+165, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Open the Seal of Khaz''Mul'),
-(124371, 28, 0, 0, 0, 0, 7228, 100, 0, 2000000430, 0, 0, 0, 0, 0, 0, 0, 'Ironaya yell'),
-(124371, 28, 20, 2, 0, 0, 7228, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ironaya starts moving');
+(124371, 1000, 10, 7228, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, -235.673, 309.639, -47.5976, 4.74317, 'Summon Ironaya'),
+(124371, 27000, 11, @OGUID+165, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Open the Seal of Khaz''Mul'),
+(124371, 28000, 0, 0, 0, 0, 7228, 100, 0, 2000000430, 0, 0, 0, 0, 0, 0, 0, 'Ironaya yell'),
+(124371, 28000, 20, 2, 0, 0, 7228, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ironaya starts moving');
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

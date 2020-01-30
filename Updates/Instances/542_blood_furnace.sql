@@ -587,8 +587,8 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1737101,1889401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1737101, 2, 15, 33111, 0, 0, 17400, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Warlock Casts Fel Power on Felguard Annhilator'),
-(1889401, 2, 15, 33111, 0, 0, 17371, 8, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Warlock Casts Fel Power on Felguard Brute');
+(1737101, 2000, 15, 33111, 0, 0, 17400, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Warlock Casts Fel Power on Felguard Annhilator'),
+(1889401, 2000, 15, 33111, 0, 0, 17371, 8, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Warlock Casts Fel Power on Felguard Brute');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

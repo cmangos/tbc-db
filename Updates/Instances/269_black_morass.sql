@@ -450,9 +450,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id`=1702301;
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(1702301,15,0,0,0,0,2000020005,0,0,0,15608,20,0,'Medivh - Orcs of the Horde! This portal is the gateway to your new destiny! Azeroth lies before you, ripe for the taking!',0,0,0,0),
-(1702301,23,32,0,0,0,0,0,0,0,0,0,0,'Shadow Council Enforcer - Resume Waypoints',0,0,0,0),
-(1702301,24,0,0,0,0,2000020006,0,0,0,0,0,0,'Shadow Council Enforcer - Gul''dan speaks the truth! We should return at once to tell our brothers of the news! Retreat back through the portal!',0,0,0,0);
+(1702301,15000,0,0,0,0,2000020005,0,0,0,15608,20,0,'Medivh - Orcs of the Horde! This portal is the gateway to your new destiny! Azeroth lies before you, ripe for the taking!',0,0,0,0),
+(1702301,23000,32,0,0,0,0,0,0,0,0,0,0,'Shadow Council Enforcer - Resume Waypoints',0,0,0,0),
+(1702301,24000,0,0,0,0,2000020006,0,0,0,0,0,0,'Shadow Council Enforcer - Gul''dan speaks the truth! We should return at once to tell our brothers of the news! Retreat back through the portal!',0,0,0,0);
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020005,2000020006);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 

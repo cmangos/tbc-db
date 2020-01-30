@@ -1006,23 +1006,23 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1895601,1895602,2193101,2193102);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1895601, 1, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Active'),
-(1895602, 1, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Idle Movement'),
-(1895602, 2, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Unactive'),
-(1895602, 3, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Despawn'),
-(2193101, 1, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - Run On'),
-(2193102, 1, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - despawn'),
-(2193102, 2, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - respawn');
+(1895601, 1000, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Active'),
+(1895602, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Idle Movement'),
+(1895602, 2000, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Unactive'),
+(1895602, 3000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Despawn'),
+(2193101, 1000, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - Run On'),
+(2193102, 1000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - despawn'),
+(2193102, 2000, 41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Avian Flyer - respawn');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(18472, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000020109, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Darkweaver Syth Death');
+(18472, 1000, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000020109, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Darkweaver Syth Death');
 
 DELETE FROM dbscripts_on_gossip WHERE id=7868;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(7868, 4, 20, 2, 0, 0, 18956, @CGUID+88, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Set Waypoint Movement'),
-(7868, 4, 13, 0, 0, 0, 183051, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Open Cage'),
-(7868, 1, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000020108, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Say'),
-(7868, 1, 8, 18956, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Kill Credit');
+(7868, 4000, 20, 2, 0, 0, 18956, @CGUID+88, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Set Waypoint Movement'),
+(7868, 4000, 13, 0, 0, 0, 183051, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Open Cage'),
+(7868, 1000, 0, 0, 0, 0, 18956, @CGUID+88, 16, 2000020108, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Say'),
+(7868, 1000, 8, 18956, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sethekk Halls - Lakka - Kill Credit');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020108,2000020109);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES

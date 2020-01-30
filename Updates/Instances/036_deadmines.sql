@@ -824,7 +824,7 @@ INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalo
 
 -- Summon Defias Overseer when Defias Gunpowder object is used
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(17155, 2, 10, 634, 60000, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Summon Defias Overseer');
+(17155, 2000, 10, 634, 60000, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Summon Defias Overseer');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
