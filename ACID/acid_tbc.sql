@@ -20429,9 +20429,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hai'shulud (22038) - npc_burster_worm
 -- Vengeful Husk
 ('2204501','22045','0','0','100','1','4000','8000','13000','18000','0','0','11','38621','1','0','0','0','0','0','0','0','0','0','Vengeful Husk - Cast Debilitating Strike'),
--- Infested Root-Walker
-('2209501','22095','0','0','100','1','15000','20000','32000','38000','0','0','11','39000','0','0','0','0','0','0','0','0','0','0','Infested Root-Walker - Cast Regrowth'),
-('2209502','22095','6','0','100','0','0','0','0','0','0','0','11','39130','0','7','0','0','0','0','0','0','0','0','Infested Root-Walker - Cast Summon Wood Mites on Death'),
+-- Infested Root-Walker 22095
+('2209501','22095','6','0','100','0','0','0','0','0','0','0','11','39130','0','7','0','0','0','0','0','0','0','0','Infested Root-Walker - Cast Summon Wood Mites on Death'),
+('2209502','22095','14','0','100','1025','1450','40','28000','33000','0','0','11','39000','12','0','0','0','0','0','0','0','0','0','Infested Root-Walker - Cast Regrowth on Friendly Missing HP'),
 -- Scorpid Bonecrawler
 ('2210001','22100','0','0','100','1','4000','8000','9000','12000','0','0','11','5416','1','32','0','0','0','0','0','0','0','0','Scorpid Bonecrawler - Cast Venom Sting'),
 ('2210002','22100','2','0','100','0','90','80','0','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Scorpid Bonecrawler - Cast Toughen I at 90% HP'),
@@ -20466,9 +20466,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Draenei Tomb Guardian 22285 - npc_draenei_tomb_guardian
 -- Terokkar Quest Target
 ('2228801','22288','8','0','100','0','38729','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Terokkar Quest Target - Despawn Self on Rod of Purification SpellHit'),
--- Rotting Forest-Rager
-('2230701','22307','9','0','100','1','0','5','12000','18000','0','0','11','15548','0','0','0','0','0','0','0','0','0','0','Rotting Forest-Rager - Cast Thunderclap'),
-('2230702','22307','6','0','100','0','0','0','0','0','0','0','11','39130','0','7','0','0','0','0','0','0','0','0','Rotting Forest-Rager - Cast Summon Wood Mites on Death'),
+-- Rotting Forest-Rager 22307
+('2230701','22307','6','0','100','0','0','0','0','0','0','0','11','39130','0','7','0','0','0','0','0','0','0','0','Rotting Forest-Rager - Cast Summon Wood Mites on Death'),
+('2230702','22307','0','0','100','1025','9000','12000','12000','16000','0','0','11','15548','17','0','0','0','0','0','0','0','0','0','Rotting Forest-Rager - Cast Thunderclap'),
 -- Captive Child 22314 - npc_captive_child
 -- Malevolent Hatchling
 ('2233701','22337','9','0','100','1','8','25','15000','19000','0','0','11','36140','1','1','0','0','0','0','0','0','0','0','Malevolent Hatchling - Cast Charge at 8 - 25 Yards'),
