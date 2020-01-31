@@ -1,10 +1,5 @@
 -- q.10273 'Troublesome Distractions'
 
--- Nether-Stalker <Marid's Guardian> should aggro when Wind Trader Marid 20071 becomes hostile
-DELETE FROM `creature_linking_template` WHERE `entry` = 20101;
-INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(20101, 530, 20071, 3, 0);
-
 -- Improve Timers so Linking can actually work for them
 DELETE FROM dbscripts_on_creature_movement WHERE id = 2007101;
 INSERT INTO dbscripts_on_creature_movement (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
