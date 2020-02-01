@@ -269,16 +269,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+65, @CGUID+64, 1167), -- Coilfang Myrmidon -> Coilfang Myrmidon
 (@CGUID+33, @CGUID+64, 1167), -- Coilfang Sorceress -> Coilfang Myrmidon
 (@CGUID+79, @CGUID+64, 1167), -- Coilfang Siren -> Coilfang Myrmidon
-(@CGUID+49, @CGUID+50, 1167), -- Dreghood Slave -> Dreghood Slave
-(@CGUID+56, @CGUID+59, 1167), -- Dreghood Slave -> Dreghood Slave
-(@CGUID+57, @CGUID+55, 1167), -- Dreghood Slave -> Dreghood Slave
-(@CGUID+58, @CGUID+45, 1167), -- Dreghood Slave -> Dreghood Slave
-(@CGUID+46, @CGUID+47, 1167), -- Dreghood Slave -> Dreghood Slave
-(@CGUID+52, @CGUID+51, 1167), -- Dreghood Slave -> Dreghood Slave
-(@CGUID+53, @CGUID+51, 1167), -- Dreghood Slave -> Dreghood Slave
-(@CGUID+54, @CGUID+51, 1167), -- Dreghood Slave -> Dreghood Slave
-(@CGUID+115, @CGUID+48, 1167), -- Coilfang Slavemaster -> Dreghood Slave
-(@CGUID+116, @CGUID+48, 1167), -- Coilfang Slavemaster -> Dreghood Slave
 (@CGUID+136, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
 (@CGUID+137, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
 (@CGUID+138, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
