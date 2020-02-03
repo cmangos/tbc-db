@@ -1984,15 +1984,15 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 (@CGUID+538, 0, 8, 1, 0, 0, '18943'), -- Hand of Gorefiend
 (@CGUID+539, 0, 0, 1, 375, 0, '18943'), -- Hand of Gorefiend
 (@CGUID+540, 0, 0, 1, 375, 0, '18943'), -- Hand of Gorefiend
-(@CGUID+574, 0, 7, 1, 0, 0, '41290'), -- Mutant War Hound -- UNIT_FLAG_NOT_SELECTABLE
-(@CGUID+575, 0, 7, 1, 0, 0, '41290'), -- Mutant War Hound -- UNIT_FLAG_NOT_SELECTABLE
-(@CGUID+576, 0, 7, 1, 0, 0, '41290'), -- Mutant War Hound -- UNIT_FLAG_NOT_SELECTABLE
-(@CGUID+585, 0, 7, 1, 0, 0, NULL), -- Bonechewer Blade Fury -- UNIT_FLAG_NOT_SELECTABLE
-(@CGUID+586, 0, 7, 1, 0, 0, NULL), -- Bonechewer Blade Fury -- UNIT_FLAG_NOT_SELECTABLE
-(@CGUID+593, 0, 7, 1, 0, 0, NULL), -- Bonechewer Shield Disciple -- UNIT_FLAG_NOT_SELECTABLE
-(@CGUID+594, 0, 7, 1, 0, 0, NULL), -- Bonechewer Shield Disciple -- UNIT_FLAG_NOT_SELECTABLE
-(@CGUID+601, 0, 7, 1, 0, 0, NULL), -- Bonechewer Blood Prophet -- UNIT_FLAG_NOT_SELECTABLE
-(@CGUID+602, 0, 7, 1, 0, 0, NULL), -- Bonechewer Blood Prophet -- UNIT_FLAG_NOT_SELECTABLE
+(@CGUID+574, 0, 7, 1, 0, 0, '41290'), -- Mutant War Hound
+(@CGUID+575, 0, 7, 1, 0, 0, '41290'), -- Mutant War Hound
+(@CGUID+576, 0, 7, 1, 0, 0, '41290'), -- Mutant War Hound
+(@CGUID+585, 0, 7, 1, 0, 0, NULL), -- Bonechewer Blade Fury
+(@CGUID+586, 0, 7, 1, 0, 0, NULL), -- Bonechewer Blade Fury
+(@CGUID+593, 0, 7, 1, 0, 0, NULL), -- Bonechewer Shield Disciple
+(@CGUID+594, 0, 7, 1, 0, 0, NULL), -- Bonechewer Shield Disciple
+(@CGUID+601, 0, 7, 1, 0, 0, NULL), -- Bonechewer Blood Prophet
+(@CGUID+602, 0, 7, 1, 0, 0, NULL), -- Bonechewer Blood Prophet
 (@CGUID+703, 0, 0, 1, 0, 0, NULL), -- Illidari Battle-mage
 (@CGUID+704, 0, 0, 1, 0, 0, NULL), -- Illidari Battle-mage
 (@CGUID+705, 0, 0, 1, 0, 0, NULL), -- Illidari Battle-mage
@@ -2066,32 +2066,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (23417, 0, 0, 1, 0, 0, NULL), -- Reliquary Combat Trigger
 (23421, 0, 0, 1, 0, 0, NULL), -- Ashtongue Channeler
 (23498, 0, 0, 1, 0, 0, '34429 41913'); -- Parasitic Shadowfiend
-
-INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
-(@CGUID+449, 3), -- Dragonmaw Sky Stalker
-(@CGUID+452, 3), -- Dragonmaw Sky Stalker
-(@CGUID+453, 3), -- Dragonmaw Sky Stalker
-(@CGUID+457, 3), -- Dragonmaw Sky Stalker
-(@CGUID+458, 3), -- Dragonmaw Sky Stalker
-(@CGUID+462, 3), -- Dragonmaw Sky Stalker
-(@CGUID+463, 3), -- Dragonmaw Sky Stalker
-(@CGUID+610, 3), -- Dragonmaw Wind Reaver
-(@CGUID+611, 3), -- Dragonmaw Wind Reaver
-(@CGUID+612, 3), -- Dragonmaw Wind Reaver
-(@CGUID+784, 3), -- Dragonmaw Sky Stalker
-(@CGUID+785, 3), -- Dragonmaw Sky Stalker
-(@CGUID+786, 3), -- Dragonmaw Sky Stalker
-(@CGUID+787, 3), -- Dragonmaw Sky Stalker
-(@CGUID+788, 3), -- Dragonmaw Sky Stalker
-(@CGUID+789, 3), -- Dragonmaw Sky Stalker
-(@CGUID+790, 3), -- Dragonmaw Sky Stalker
-(@CGUID+791, 3), -- Dragonmaw Sky Stalker
-(@CGUID+792, 3), -- Dragonmaw Sky Stalker
-(@CGUID+793, 3), -- Dragonmaw Sky Stalker
-(@CGUID+794, 3), -- Dragonmaw Sky Stalker
-(@CGUID+795, 3), -- Dragonmaw Wind Reaver
-(@CGUID+796, 3), -- Dragonmaw Wind Reaver
-(@CGUID+797, 3); -- Dragonmaw Wind Reaver
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- High Warlord Naj'entus
@@ -2692,6 +2666,41 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (23523, 564, 23191, 4112, 0), -- Ashtongue Elementalist -> Akama
 (23524, 564, 23191, 4112, 0); -- Ashtongue Spiritbinder -> Akama
 
+INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
+(@CGUID+449, 3), -- Dragonmaw Sky Stalker
+(@CGUID+452, 3), -- Dragonmaw Sky Stalker
+(@CGUID+453, 3), -- Dragonmaw Sky Stalker
+(@CGUID+457, 3), -- Dragonmaw Sky Stalker
+(@CGUID+458, 3), -- Dragonmaw Sky Stalker
+(@CGUID+462, 3), -- Dragonmaw Sky Stalker
+(@CGUID+463, 3), -- Dragonmaw Sky Stalker
+(@CGUID+610, 3), -- Dragonmaw Wind Reaver
+(@CGUID+611, 3), -- Dragonmaw Wind Reaver
+(@CGUID+612, 3), -- Dragonmaw Wind Reaver
+(@CGUID+784, 3), -- Dragonmaw Sky Stalker
+(@CGUID+785, 3), -- Dragonmaw Sky Stalker
+(@CGUID+786, 3), -- Dragonmaw Sky Stalker
+(@CGUID+787, 3), -- Dragonmaw Sky Stalker
+(@CGUID+788, 3), -- Dragonmaw Sky Stalker
+(@CGUID+789, 3), -- Dragonmaw Sky Stalker
+(@CGUID+790, 3), -- Dragonmaw Sky Stalker
+(@CGUID+791, 3), -- Dragonmaw Sky Stalker
+(@CGUID+792, 3), -- Dragonmaw Sky Stalker
+(@CGUID+793, 3), -- Dragonmaw Sky Stalker
+(@CGUID+794, 3), -- Dragonmaw Sky Stalker
+(@CGUID+795, 3), -- Dragonmaw Wind Reaver
+(@CGUID+796, 3), -- Dragonmaw Wind Reaver
+(@CGUID+797, 3), -- Dragonmaw Wind Reaver
+(@CGUID+574, 10001), -- Mutant War Hound -> UNIT_FLAG_NOT_SELECTABLE
+(@CGUID+575, 10001), -- Mutant War Hound -> UNIT_FLAG_NOT_SELECTABLE
+(@CGUID+576, 10001), -- Mutant War Hound -> UNIT_FLAG_NOT_SELECTABLE
+(@CGUID+585, 10002), -- Bonechewer Blade Fury -> UNIT_FLAG_NOT_SELECTABLE
+(@CGUID+586, 10002), -- Bonechewer Blade Fury -> UNIT_FLAG_NOT_SELECTABLE
+(@CGUID+593, 10002), -- Bonechewer Shield Disciple -> UNIT_FLAG_NOT_SELECTABLE
+(@CGUID+594, 10002), -- Bonechewer Shield Disciple -> UNIT_FLAG_NOT_SELECTABLE
+(@CGUID+601, 10002), -- Bonechewer Blood Prophet -> UNIT_FLAG_NOT_SELECTABLE
+(@CGUID+602, 10002); -- Bonechewer Blood Prophet -> UNIT_FLAG_NOT_SELECTABLE
+
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+606, 23030),(@CGUID+606, 23330), -- Dragonmaw Sky Stalker, Dragonmaw Wind Reaver
 (@CGUID+607, 23030),(@CGUID+607, 23330), -- Dragonmaw Sky Stalker, Dragonmaw Wind Reaver
@@ -3272,9 +3281,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+571, 23223, 564, 1, 927.226, 177.336, 86.2362, 1.55334, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Spectator
 (@CGUID+572, 23232, 564, 1, 927.12, 99.1386, 112.81, 2.58309, 7200, 7200, 0, 0, 0, 0), -- Mutant War Hound
 (@CGUID+573, 23232, 564, 1, 930.852, 81.5219, 112.827, 5.41052, 7200, 7200, 0, 0, 0, 0), -- Mutant War Hound
-(@CGUID+574, 23232, 564, 1, 650.592, 81.9804, 112.802, 4.76475, 7200, 7200, 0, 0, 1, 0), -- Mutant War Hound -- DeathState Hack
-(@CGUID+575, 23232, 564, 1, 678.841, 84.4889, 113.469, 1.5708, 7200, 7200, 0, 0, 1, 0), -- Mutant War Hound -- DeathState Hack
-(@CGUID+576, 23232, 564, 1, 690.893, 47.7738, 113.511, 2.18166, 7200, 7200, 0, 0, 1, 0), -- Mutant War Hound -- DeathState Hack
+(@CGUID+574, 23232, 564, 1, 650.592, 81.9804, 112.802, 4.76475, 7200, 7200, 0, 0, 0, 0), -- Mutant War Hound
+(@CGUID+575, 23232, 564, 1, 678.841, 84.4889, 113.469, 1.5708, 7200, 7200, 0, 0, 0, 0), -- Mutant War Hound
+(@CGUID+576, 23232, 564, 1, 690.893, 47.7738, 113.511, 2.18166, 7200, 7200, 0, 0, 0, 0), -- Mutant War Hound
 (@CGUID+577, 23232, 564, 1, 808.419, 107.089, 112.659, 0.92698, 7200, 7200, 0, 0, 0, 2), -- Mutant War Hound
 (@CGUID+578, 23232, 564, 1, 797.713, 119.231, 112.187, 3.52653, 7200, 7200, 0, 0, 0, 2), -- Mutant War Hound
 (@CGUID+579, 23235, 564, 1, 918.546, 93.7091, 112.789, 4.64258, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blade Fury
@@ -3283,24 +3292,24 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+582, 23235, 564, 1, 664.082, 61.6576, 112.827, 5.23599, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blade Fury
 (@CGUID+583, 23235, 564, 1, 807.187, 112.013, 112.696, 3.735, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blade Fury
 (@CGUID+584, 23235, 564, 1, 798.155, 114.149, 112.45, 5.67232, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blade Fury
-(@CGUID+585, 23235, 564, 1, 709.456, 76.821, 113.03, 0.680678, 7200, 7200, 0, 0, 1, 0), -- Bonechewer Blade Fury -- DeathState Hack
-(@CGUID+586, 23235, 564, 1, 646.651, 61.5354, 121.632, 5.96903, 7200, 7200, 0, 0, 1, 0), -- Bonechewer Blade Fury -- DeathState Hack
+(@CGUID+585, 23235, 564, 1, 709.456, 76.821, 113.03, 0.680678, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Blade Fury
+(@CGUID+586, 23235, 564, 1, 646.651, 61.5354, 121.632, 5.96903, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Blade Fury
 (@CGUID+587, 23236, 564, 1, 919.687, 87.2138, 112.78, 1.97222, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Shield Disciple
 (@CGUID+588, 23236, 564, 1, 938.687, 89.5781, 112.783, 4.08407, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Shield Disciple
 (@CGUID+589, 23236, 564, 1, 660.156, 65.7201, 112.761, 0.680678, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Shield Disciple
 (@CGUID+590, 23236, 564, 1, 667.295, 57.295, 112.826, 0.872665, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Shield Disciple
 (@CGUID+591, 23236, 564, 1, 796.487, 106.6, 112.638, 2.9147, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Shield Disciple
 (@CGUID+592, 23236, 564, 1, 790.555, 108.106, 112.472, 6.14356, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Shield Disciple
-(@CGUID+593, 23236, 564, 1, 688.117, 70.6443, 112.836, 0.191986, 7200, 7200, 0, 0, 1, 0), -- Bonechewer Shield Disciple -- DeathState Hack
-(@CGUID+594, 23236, 564, 1, 644.341, 78.6736, 113.072, 0.401426, 7200, 7200, 0, 0, 1, 0), -- Bonechewer Shield Disciple -- DeathState Hack
+(@CGUID+593, 23236, 564, 1, 688.117, 70.6443, 112.836, 0.191986, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Shield Disciple
+(@CGUID+594, 23236, 564, 1, 644.341, 78.6736, 113.072, 0.401426, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Shield Disciple
 (@CGUID+595, 23237, 564, 1, 915.303, 87.4846, 112.778, 5.68977, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blood Prophet
 (@CGUID+596, 23237, 564, 1, 934.468, 91.0818, 112.788, 5.25344, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blood Prophet
 (@CGUID+597, 23237, 564, 1, 670.078, 66.4165, 112.832, 2.84489, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blood Prophet
 (@CGUID+598, 23237, 564, 1, 667.718, 72.8248, 112.813, 3.90954, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blood Prophet
 (@CGUID+599, 23237, 564, 1, 811.081, 102.158, 112.766, 2.68781, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blood Prophet
 (@CGUID+600, 23237, 564, 1, 789.627, 100.289, 112.793, 6.0912, 7200, 7200, 0, 0, 0, 2), -- Bonechewer Blood Prophet
-(@CGUID+601, 23237, 564, 1, 703.572, 61.1383, 112.836, 3.80482, 7200, 7200, 0, 0, 1, 0), -- Bonechewer Blood Prophet -- DeathState Hack
-(@CGUID+602, 23237, 564, 1, 687.661, 100.168, 112.813, 5.0091, 7200, 7200, 0, 0, 1, 0), -- Bonechewer Blood Prophet -- DeathState Hack
+(@CGUID+601, 23237, 564, 1, 703.572, 61.1383, 112.836, 3.80482, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Blood Prophet
+(@CGUID+602, 23237, 564, 1, 687.661, 100.168, 112.813, 5.0091, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Blood Prophet
 (@CGUID+603, 23239, 564, 1, 888.257, 273.772, 86.2442, 2.02458, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Combatant
 (@CGUID+604, 23239, 564, 1, 924.336, 191.349, 85.7246, 0.174533, 7200, 7200, 0, 0, 0, 0), -- Bonechewer Combatant
 (@CGUID+605, 23288, 564, 1, 517.166, 416.095, 141.443, 4.76475, 7200, 7200, 0, 0, 0, 0), -- Invisible Stalker (Akama)

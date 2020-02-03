@@ -3521,8 +3521,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Whisper (17314) - NSR
 -- Blacksmith Frances (17655) - NSR
 -- Heron Skygaze (17656) - NSR
--- Sangrias Stillblade
-('1771601','17716','9','0','100','1024','0','30','0','0','0','0','11','22120','1','0','0','0','0','0','0','0','0','0','Sangrias Stillblade - Cast Charge'),
+-- Sangrias Stillblade 17716
+('1771601','17716','11','0','100','0','0','0','0','0','0','0','1','14365','0','0','0','0','0','0','0','0','0','0','Sangrias Stillblade - Yell on Spawn'),
+('1771602','17716','9','0','100','1024','0','30','0','0','0','0','11','22120','1','0','0','0','0','0','0','0','0','0','Sangrias Stillblade - Cast Charge'),
 -- Blood Knight Dawnstar (17832) - npc_blood_knight_dawnstar
 -- Terellia (18426) - NSR
 -- Dr. Whitherlimb
