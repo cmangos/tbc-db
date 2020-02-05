@@ -1154,17 +1154,30 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Watch Commander Relthorn Netherwane (16841) - NSR
 -- Warlord Dar'toon (19254) - NSR
 -- Invading Felguard (19284) - NSR
--- Invading Infernal (19285) - NSR
+-- Invading Infernal 19285
+('1928501','19285','0','0','100','1','5000','20000','15000','25000','0','0','11','33710','15','0','0','0','0','0','0','0','0','0','Invading Infernal - Cast Disturb Infernaling Summoner (Portal Hound)'),
+('1928502','19285','6','0','20','0','0','0','0','0','0','0','11','33712','0','7','0','0','0','0','0','0','0','0','Invading Infernal - Cast Create Infernaling Summoner (Portal Hound) on Death'),
+('1928503','19285','11','0','100','0','0','0','0','0','0','0','11','19483','0','34','0','0','0','0','0','0','0','0','Invading Infernal - Cast Immolation on Spawn'),
 -- Invading Fel Stalker (19286) - NSR
--- Invading Voidwalker (19287) - NSR
--- Dreadknight (19288) - NSR
+-- Invading Voidwalker 19287
+('1928701','19287','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Invading Voidwalker - Enable Range Mode on Aggro'),
+('1928702','19287','9','0','100','1025','0','40','3000','5000','0','0','11','32860','1','256','0','0','0','0','0','0','0','0','Invading Voidwalker - Cast Shadow Bolt'),
+('1928703','19287','0','0','100','1025','5000','20000','15000','25000','0','0','11','33710','15','256','0','0','0','0','0','0','0','0','Invading Voidwalker - Cast Disturb Infernaling Summoner (Portal Hound)'),
+-- Dreadknight 19288
+('1928801','19288','0','0','100','1','5000','9000','15000','20000','0','0','11','34934','1','0','0','0','0','0','0','0','0','0','Dreadknight - Cast Shadow Bolt Volley'),
+('1928802','19288','0','0','100','1','10000','15000','15000','30000','0','0','11','33710','15','0','0','0','0','0','0','0','0','0','Dreadknight - Cast Disturb Infernaling Summoner (Portal Hound)'),
+('1928803','19288','11','0','100','0','0','0','0','0','0','0','1','-10453','0','0','0','0','0','0','0','0','0','0','Dreadknight - Yell on Spawn'),
 -- Invading Anguisher (19290) - NSR
--- Portal Hound (19311) - NSR
+-- Portal Hound 19311
+('1931101','19311','11','0','100','0','0','0','0','0','0','0','11','19483','0','34','11','33543','0','0','0','0','0','0','Portal Hound - Cast Infernaling Spawn-In and Immolation on Spawn'),
 -- Argent Protector (19320) - NSR
 -- Argent Guardian (19322) - NSR
--- Argent Bowman (19365) - NSR
+-- Argent Bowman 19365
+('1936501','19365','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Argent Bowman - Enable Range Mode on Aggro'),
+('1936502','19365','9','0','100','1025','5','35','2300','3900','0','0','11','6660','4','256','0','0','0','0','0','0','0','0','Argent Bowman - Cast Shoot'),
 -- Argent Hunter (19366) - NSR
--- Felguard Lieutenant (19391) - NSR
+-- Felguard Lieutenant 19391
+('1939101','19391','0','0','100','1','2000','3000','7000','10000','0','0','11','15621','1','0','0','0','0','0','0','0','0','0','Felguard Lieutenant - Cast Skull Crack'),
 -- Thunder Bluff Huntsman (19406) - NSR
 -- Azuremyst Vindicator (19407) - NSR
 -- Nethergarde Advisor (19566) - NSR
@@ -17360,18 +17373,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Caza'rez 17558
 ('1755801','17558','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Caza''rez - Cast Invisibility and Stealth Detection OOC'),
 ('1755802','17558','0','0','100','33','5000','10000','15000','20000','0','0','11','19643','1','0','11','15618','1','0','0','0','0','0','Caza''rez - Cast Mortal Strike or Cast Snap Kick'),
--- Highlord Kruul
-('1833801','18338','11','0','100','0','0','0','0','0','0','0','1','-10211','-10212','0','0','0','0','0','0','0','0','0','Highlord Kruul - Yell on Spawn'),
-('1833802','18338','4','0','100','0','0','0','0','0','0','0','1','-10213','-10214','-10215','0','0','0','0','0','0','0','0','Highlord Kruul - Yell on Aggro'),
-('1833803','18338','0','0','100','1','10000','14000','8000','12000','0','0','11','20677','1','0','0','0','0','0','0','0','0','0','Highlord Kruul - Cast Cleave'),
-('1833804','18338','0','0','100','1','18000','22000','10000','14000','0','0','11','23931','0','0','0','0','0','0','0','0','0','0','Highlord Kruul - Cast Thunderclap'),
-('1833805','18338','0','0','100','1','23000','27000','28000','32000','0','0','11','21063','0','0','0','0','0','0','0','0','0','0','Highlord Kruul - Cast Twisted Reflection'),
-('1833806','18338','0','0','100','1','28000','32000','14000','19000','0','0','11','21066','4','0','0','0','0','0','0','0','0','0','Highlord Kruul - Cast Void Bolt'),
-('1833807','18338','0','0','100','0','60000','60000','0','0','0','0','11','21340','0','1','0','0','0','0','0','0','0','0','Highlord Kruul - Cast Berserk'),
-('1833808','18338','0','0','100','1','8000','8000','45000','45000','0','0','11','33533','0','2','11','33533','0','2','11','33533','0','2','Highlord Kruul - Cast Summon Infernaling'),
-('1833809','18338','0','0','100','1','5000','10000','10000','30000','0','0','11','21341','0','0','0','0','0','0','0','0','0','0','Highlord Kruul - Cast Shadow Bolt Volley'),
-('1833810','18338','5','0','100','1','0','0','1','0','0','0','1','-10216','0','0','11','21054','0','0','0','0','0','0','Highlord Kruul - Cast Capture Soul and Yell on Player Kill'),
-('1833811','18338','6','0','100','0','0','0','0','0','0','0','1','-10217','0','0','0','0','0','0','0','0','0','0','Highlord Kruul - Yell on Death'),
+-- Highlord Kruul 18338 - boss_highlord_kruul
 -- Mekthorg the Wild
 ('1867701','18677','0','0','100','1','6000','11000','8000','14000','0','0','11','38875','1','0','0','0','0','0','0','0','0','0','Mekthorg the Wild - Cast Pike Vault'),
 ('1867702','18677','0','0','100','1','12000','15000','9000','13000','0','0','11','37704','0','0','0','0','0','0','0','0','0','0','Mekthorg the Wild - Cast Whirlwind'),
@@ -31488,13 +31490,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10208','Ruin finds us all!','0','0','0','0','0','Shadow Labyrinth'),
 ('-10209','In Sargeras'' name!','0','0','0','0','0','Shadow Labyrinth'),
 ('-10210','The Legion reigns!','0','0','0','0','0','Shadow Labyrinth'),
-('-10211','Azeroth has cowered too long under our shadow! Now, feel the power of the Burning Crusade, and despair!','0','1','0','0','0','18338'),
-('-10212','Your fate is sealed, Azeroth! I will find the Aspect Shards, and then you will not stand against our might!','0','1','0','0','0','18338'),
-('-10213','Cower, little worms! Your heroes are nothing! Your saviors will be our first feast!','0','1','0','0','0','18338'),
-('-10214','Where? Where are the Shards! You cannot hide them from us!','0','1','0','0','0','18338'),
-('-10215','Your world will die, mortals! Your doom is now at hand!','0','1','0','0','0','18338'),
-('-10216','Your own strength feeds me!','0','1','0','0','0','18338'),
-('-10217','Ha! This place is not yet worthy of my infliction.','0','1','0','0','0','18338'),
+-- RE-USE 10211 - 10217
 ('-10218','Skywing! I will free you from your curse over my dead body!','0','1','0','0','0','18533'),
 ('-10219','All of your efforts have been in vain, for the draining of the World Tree has already begun! Soon, the heart of your world shall beat no more!','10986','1','0','0','0','13083'),
 -- RE-USE 10220 - 10230
@@ -31720,7 +31716,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10450','The rift must be protected!','0','0','0','0','0','Black Morass'),
 ('-10451','You are running out of time!','0','0','0','0','0','Black Morass'),
 ('-10452','Victory or death!','0','0','0','0','0','Black Morass'),
--- TBC PLEASE REUSE 10453 - 10458
+('-10453','Quake, mortals!  Quake and kneel before your destroyer!','0','1','0','0','16437','19288'),
+-- TBC PLEASE REUSE 10454 - 10458
 ('-10459','It''s the end of the world!','0','0','0','0','0','17931'),
 ('-10460','We''re doomed!','0','0','0','0','0','17931'),
 ('-10461','Puny $r... you were a... horrible $g king : queen;.','0','0','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)'),
