@@ -218,18 +218,17 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+134, 10, 69.6013, 39.0919, -13.2298, 0, 0, 0),
 (@CGUID+134, 11, 65.8643, 14.4801, -13.2172, 0, 0, 0),
 (@CGUID+134, 12, 57.2744, 7.4202, -13.215, 0, 0, 0),
-(@CGUID+134, 13, 45.6987, 6.42616, -13.1906, 100, 2000, 7),
-(@CGUID+135, 1, 93.9537, 62.0803, -13.0053, 0, 1000, 5),
-(@CGUID+135, 2, 83.755, 57.2887, -13.114, 0, 0, 0),
-(@CGUID+135, 3, 73.5564, 52.4972, -13.2227, 0, 0, 0),
-(@CGUID+135, 4, 73.2092, 50.007, -13.2218, 0, 0, 0),
-(@CGUID+135, 5, 71.868, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+134, 13, 45.6987, 6.42616, -13.1906, 100, 2000, 1742000),
+(@CGUID+135, 1, 83.755, 57.2887, -13.114, 0, 1000, 5),
+(@CGUID+135, 2, 73.5564, 52.4972, -13.2227, 0, 0, 0),
+(@CGUID+135, 3, 73.2092, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+135, 4, 71.868, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+135, 5, 70.8613, 33.1676, -13.2132, 0, 0, 0),
 (@CGUID+135, 6, 70.8613, 33.1676, -13.2132, 0, 0, 0),
-(@CGUID+135, 7, 70.8613, 33.1676, -13.2132, 0, 0, 0),
-(@CGUID+135, 8, 63.0987, 2.38798, -13.1956, 0, 0, 0),
-(@CGUID+135, 9, 36.6416, -1.55471, -13.1958, 0, 0, 0),
-(@CGUID+135, 10, 25.2589, -4.47658, -13.1882, 0, 0, 0),
-(@CGUID+135, 11, 12.3784, -2.32701, -13.1913, 100, 2000, 7),
+(@CGUID+135, 7, 63.0987, 2.38798, -13.1956, 0, 0, 0),
+(@CGUID+135, 8, 36.6416, -1.55471, -13.1958, 0, 0, 0),
+(@CGUID+135, 9, 25.2589, -4.47658, -13.1882, 0, 0, 0),
+(@CGUID+135, 10, 12.3784, -2.32701, -13.1913, 100, 2000, 1742000),
 (@CGUID+136, 1, 53.5243, 60.0879, -13.0071, 0, 1000, 5),
 (@CGUID+136, 2, 56.8458, 57.6507, -13.1151, 0, 0, 0),
 (@CGUID+136, 3, 60.1673, 55.2135, -13.223, 0, 0, 0),
@@ -243,23 +242,21 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+136, 11, 64.0192, 12.3123, -13.219, 0, 0, 0),
 (@CGUID+136, 12, 46.6975, 4.63054, -13.1906, 0, 0, 0),
 (@CGUID+136, 13, 33.7657, 6.79465, -13.1942, 0, 0, 0),
-(@CGUID+136, 14, 22.7783, 7.14236, -13.1889, 100, 2000, 7),
-(@CGUID+137, 1, 106.598, 60.561, -12.978, 0, 1000, 5),
-(@CGUID+137, 2, 90.0297, 57.4987, -13.1003, 0, 0, 0),
+(@CGUID+136, 14, 22.7783, 7.14236, -13.1889, 100, 2000, 1742000),
+(@CGUID+137, 1, 90.0297, 57.4987, -13.1003, 0, 1000, 5),
+(@CGUID+137, 2, 73.4619, 54.4364, -13.2227, 0, 0, 0),
 (@CGUID+137, 3, 73.4619, 54.4364, -13.2227, 0, 0, 0),
-(@CGUID+137, 4, 73.4619, 54.4364, -13.2227, 0, 0, 0),
-(@CGUID+137, 5, 71.4676, 45.247, -13.2218, 0, 0, 0),
-(@CGUID+137, 6, 70.8612, 26.3303, -13.191, 0, 0, 0),
-(@CGUID+137, 7, 69.0497, 8.98774, -13.2077, 0, 0, 0),
-(@CGUID+137, 8, 62.9846, -0.321715, -13.1952, 0, 0, 0),
-(@CGUID+137, 9, 57.8027, -0.197392, -13.2067, 100, 2000, 7),
-(@CGUID+138, 1, 102.326, 62.6656, -12.9871, 0, 1000, 5),
-(@CGUID+138, 2, 87.9912, 57.5445, -13.1049, 0, 0, 0),
-(@CGUID+138, 3, 73.6565, 52.4234, -13.2226, 0, 0, 0),
-(@CGUID+138, 4, 71.5909, 37.8002, -13.2262, 0, 0, 0),
-(@CGUID+138, 5, 70.0568, 10.5743, -13.2209, 0, 0, 0),
-(@CGUID+138, 6, 52.6026, -0.81406, -13.2027, 0, 0, 0),
-(@CGUID+138, 7, 37.0071, -1.50796, -13.1959, 100, 2000, 7),
+(@CGUID+137, 4, 71.4676, 45.247, -13.2218, 0, 0, 0),
+(@CGUID+137, 5, 70.8612, 26.3303, -13.191, 0, 0, 0),
+(@CGUID+137, 6, 69.0497, 8.98774, -13.2077, 0, 0, 0),
+(@CGUID+137, 7, 62.9846, -0.321715, -13.1952, 0, 0, 0),
+(@CGUID+137, 8, 57.8027, -0.197392, -13.2067, 100, 2000, 1742000),
+(@CGUID+138, 1, 87.9912, 57.5445, -13.1049, 0, 1000, 5),
+(@CGUID+138, 2, 73.6565, 52.4234, -13.2226, 0, 0, 0),
+(@CGUID+138, 3, 71.5909, 37.8002, -13.2262, 0, 0, 0),
+(@CGUID+138, 4, 70.0568, 10.5743, -13.2209, 0, 0, 0),
+(@CGUID+138, 5, 52.6026, -0.81406, -13.2027, 0, 0, 0),
+(@CGUID+138, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742000),
 (@CGUID+169, 1, 488.894, 233.942, 0.326259, 0, 0, 0),
 (@CGUID+169, 2, 486.995, 226.79, 0.256551, 0, 0, 0),
 (@CGUID+169, 3, 478.431, 226.508, 0.262045, 0, 0, 0),
@@ -351,7 +348,58 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+291, 3, 282.0956, -88.32939, 2.11288, 100, 0, 0),
 (@CGUID+291, 4, 284.0128, -90.10754, 2.062754, 100, 0, 0),
 (@CGUID+303, 1, 517.5042, 110.2721, 1.933732, 100, 0, 0),
-(@CGUID+303, 2, 521.549011, 134.203003, 1.932780, 100, 0, 0);
+(@CGUID+303, 2, 521.549011, 134.203003, 1.932780, 100, 0, 0),
+(@CGUID+304, 1, 46.3248, 59.879, -12.9904, 0, 1000, 5),
+(@CGUID+304, 2, 53.246, 58.0863, -13.1067, 0, 0, 0),
+(@CGUID+304, 3, 60.1673, 56.2936, -13.223, 0, 0, 0),
+(@CGUID+304, 4, 62.0403, 55.8085, -13.2236, 0, 0, 0),
+(@CGUID+304, 5, 66.1605, 54.7413, -13.2229, 0, 0, 0),
+(@CGUID+304, 6, 66.8337, 51.6796, -13.2228, 0, 0, 0),
+(@CGUID+304, 7, 67.2014, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+304, 8, 69.3164, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+304, 9, 69.6013, 39.0919, -13.2298, 0, 0, 0),
+(@CGUID+304, 10, 69.6013, 39.0919, -13.2298, 0, 0, 0),
+(@CGUID+304, 11, 65.8643, 14.4801, -13.2172, 0, 0, 0),
+(@CGUID+304, 12, 57.2744, 7.4202, -13.215, 0, 0, 0),
+(@CGUID+304, 13, 45.6987, 6.42616, -13.1906, 100, 2000, 1742000),
+(@CGUID+305, 2, 83.755, 57.2887, -13.114, 0, 1000, 5),
+(@CGUID+305, 3, 73.5564, 52.4972, -13.2227, 0, 0, 0),
+(@CGUID+305, 4, 73.2092, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+305, 5, 71.868, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+305, 6, 70.8613, 33.1676, -13.2132, 0, 0, 0),
+(@CGUID+305, 7, 70.8613, 33.1676, -13.2132, 0, 0, 0),
+(@CGUID+305, 8, 63.0987, 2.38798, -13.1956, 0, 0, 0),
+(@CGUID+305, 9, 36.6416, -1.55471, -13.1958, 0, 0, 0),
+(@CGUID+305, 10, 25.2589, -4.47658, -13.1882, 0, 0, 0),
+(@CGUID+305, 11, 12.3784, -2.32701, -13.1913, 100, 2000, 1742000),
+(@CGUID+306, 1, 53.5243, 60.0879, -13.0071, 0, 1000, 5),
+(@CGUID+306, 2, 56.8458, 57.6507, -13.1151, 0, 0, 0),
+(@CGUID+306, 3, 60.1673, 55.2135, -13.223, 0, 0, 0),
+(@CGUID+306, 4, 61.37, 54.3309, -13.2237, 0, 0, 0),
+(@CGUID+306, 5, 64.9833, 51.6796, -13.2229, 0, 0, 0),
+(@CGUID+306, 6, 67.2627, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+306, 7, 67.693, 49.6913, -13.2218, 0, 0, 0),
+(@CGUID+306, 8, 67.8674, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+306, 9, 67.8932, 39.0141, -13.2296, 0, 0, 0),
+(@CGUID+306, 10, 67.8932, 39.0141, -13.2296, 0, 0, 0),
+(@CGUID+306, 11, 64.0192, 12.3123, -13.219, 0, 0, 0),
+(@CGUID+306, 12, 46.6975, 4.63054, -13.1906, 0, 0, 0),
+(@CGUID+306, 13, 33.7657, 6.79465, -13.1942, 0, 0, 0),
+(@CGUID+306, 14, 22.7783, 7.14236, -13.1889, 100, 2000, 1742000),
+(@CGUID+307, 1, 90.0297, 57.4987, -13.1003, 0, 1000, 5),
+(@CGUID+307, 2, 73.4619, 54.4364, -13.2227, 0, 0, 0),
+(@CGUID+307, 3, 73.4619, 54.4364, -13.2227, 0, 0, 0),
+(@CGUID+307, 4, 71.4676, 45.247, -13.2218, 0, 0, 0),
+(@CGUID+307, 5, 70.8612, 26.3303, -13.191, 0, 0, 0),
+(@CGUID+307, 6, 69.0497, 8.98774, -13.2077, 0, 0, 0),
+(@CGUID+307, 7, 62.9846, -0.321715, -13.1952, 0, 0, 0),
+(@CGUID+307, 8, 57.8027, -0.197392, -13.2067, 100, 2000, 1742000),
+(@CGUID+308, 1, 87.9912, 57.5445, -13.1049, 0, 1000, 5),
+(@CGUID+308, 2, 73.6565, 52.4234, -13.2226, 0, 0, 0),
+(@CGUID+308, 3, 71.5909, 37.8002, -13.2262, 0, 0, 0),
+(@CGUID+308, 4, 70.0568, 10.5743, -13.2209, 0, 0, 0),
+(@CGUID+308, 5, 52.6026, -0.81406, -13.2027, 0, 0, 0),
+(@CGUID+308, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742000);
 
 DELETE FROM creature_movement_template WHERE entry=16807;
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
@@ -378,11 +426,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+81, 0, 0, 2, 0, 214, 0, NULL), -- Shattered Hand Sharpshooter
 (@CGUID+132, 0, 0, 0, 0, 333, 0, NULL), -- creature_spawn_entry
 (@CGUID+133, 0, 0, 0, 0, 333, 0, NULL), -- Shattered Hand Heathen
-(@CGUID+134, 0, 0, 0, 0, 333, 0, NULL), -- Shattered Hand Heathen
-(@CGUID+135, 0, 0, 0, 0, 333, 0, NULL), -- creature_spawn_entry
-(@CGUID+136, 0, 0, 0, 0, 333, 0, NULL), -- creature_spawn_entry
-(@CGUID+137, 0, 0, 0, 0, 333, 0, NULL), -- Shattered Hand Heathen
-(@CGUID+138, 0, 0, 0, 0, 333, 0, NULL), -- Shattered Hand Heathen
 (@CGUID+265, 0, 0, 0, 0, 389, 0, NULL), -- creature_spawn_entry
 (@CGUID+266, 0, 0, 0, 0, 389, 0, NULL), -- Shattered Hand Savage
 (@CGUID+267, 0, 0, 0, 0, 389, 0, NULL), -- creature_spawn_entry
@@ -413,10 +456,18 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (20923, 0, 0, 0, 0, 0, 0, '18950'); -- Blood Guard Porung
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+134, @CGUID+74, 1024), -- Shattered Hand Savage -> Shattered Hand Legionnaire
+-- link "leaders" to bosses
+(@CGUID+74, @CGUID+82, 1024), -- Shattered Hand Legionnaire -> Grand Warlock Nethekurse
+(@CGUID+134, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+134, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+135, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+136, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+137, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+137, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+138, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+304, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+305, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+306, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+307, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+308, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+138, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+52, @CGUID+53, 1167), -- Shattered Hand Sentry -> Shattered Hand Sentry
 -- (@CGUID+219, @CGUID+139, 1167), -- Shadowmoon Darkcaster -> Shattered Hand Heathen -- or each side together
@@ -536,8 +587,11 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+73, 16523), (@CGUID+73, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+79, 16523), (@CGUID+79, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+132, 16593), (@CGUID+132, 16594), -- Shattered Hand Brawler, Shadowmoon Acolyte
+(@CGUID+134, 16523), (@CGUID+134, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+135, 16523), (@CGUID+135, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+136, 16523), (@CGUID+136, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
+(@CGUID+137, 16523), (@CGUID+137, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
+(@CGUID+138, 16523), (@CGUID+138, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 -- (@CGUID+140, 16594), (@CGUID+140, 17420), -- Shadowmoon Acolyte, Shattered Hand Heathen
 -- (@CGUID+141, 16594), (@CGUID+141, 17420), -- Shadowmoon Acolyte, Shattered Hand Heathen
 -- (@CGUID+220, 17420), (@CGUID+220, 17694), -- Shattered Hand Heathen, Shadowmoon Darkcaster
@@ -683,11 +737,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+131, 17357, 540, 3, 138.444, 191.164, -47.1833, 6.21809, 7200, 7200, 0, 0, 0, 0), -- Creeping Oozeling
 (@CGUID+132, 0, 540, 3, 66.2363, 130.973, -13.196, 4.80743, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+133, 16699, 540, 3, 67.1698, 183.923, -13.2365, 4.69381, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Reaver
-(@CGUID+134, 17420, 540, 3, 46.3248, 59.879, -12.9904, 0, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+135, 0, 540, 3, 12.37836, -2.327011, -13.19128, 2.976231, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
-(@CGUID+136, 0, 540, 3, 53.5243, 60.0879, -13.0071, 0, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
-(@CGUID+137, 17420, 540, 3, 106.598, 60.561, -12.978, 0, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+138, 17420, 540, 3, 102.326, 62.6656, -12.9871, 0, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+134, 0, 540, 1, 46.3248, 59.879, -12.9904, 0, 7200, 7200, 0, 0, 0, 2), --  creature_spawn_entry
+(@CGUID+135, 0, 540, 1, 83.755, 57.2887, -13.114, 3.15, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+136, 0, 540, 1, 53.5243, 60.0879, -13.0071, 0, 7200, 7200, 0, 0, 0, 2), --  creature_spawn_entry
+(@CGUID+137, 0, 540, 1, 90.0297, 57.4987, -13.1003, 3.261756, 7200, 7200, 0, 0, 0, 2), --  creature_spawn_entry
+(@CGUID+138, 0, 540, 1, 87.9912, 57.5445, -13.1049, 3.2617, 7200, 7200, 0, 0, 0, 2), --  creature_spawn_entry
 (@CGUID+139, 17420, 540, 3, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+140, 17420, 540, 3, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+141, 17420, 540, 3, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
@@ -853,7 +907,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+301, 17695, 540, 3, 274.497, 317.332, -0.3597, 6.27, 86400, 86400, 2, 0, 0, 1), -- Shattered Hand Assassin
 (@CGUID+302, 17695, 540, 3, 519.4913, 265.4981, 1.943648, 1.67471, 86400, 86400, 2, 0, 0, 1), -- Shattered Hand Assassin
 (@CGUID+303, 17695, 540, 3, 518.3307, 125.028, 1.981626, 4.529583, 86400, 86400, 0, 0, 0, 2); -- Shattered Hand Assassin
-
+(@CGUID+304, 17420, 540, 2, 46.3248, 59.879, -12.9904, 0, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+305, 17420, 540, 2, 83.755, 57.2887, -13.114, 3.15, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+306, 17420, 540, 2, 53.5243, 60.0879, -13.0071, 0, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+307, 17420, 540, 2,  90.0297, 57.4987, -13.1003, 3.261756, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+308, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
 -- ===========
 -- GAMEOBJECTS
 -- ===========
@@ -1011,7 +1069,9 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001,1670002);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1670001, 0, 45, 0, 10050, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - 10% chance to yell, 10% chance to talk'),
-(1670002, 0, 45, 0, 10054, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Legionnaire - 10% force bow/cheer, 10% talk event');
+(1670002, 0, 45, 0, 10054, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Legionnaire - 10% force bow/cheer, 10% talk event'),
+(1742000, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - Waypoint Pause'),
+(1742000, 3000, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - EMOTE_STATE_READY1H');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
