@@ -17021,6 +17021,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2336802','23368','0','0','100','1','32000','42000','42000','60000','0','0','11','10901','0','0','0','0','0','0','0','0','0','0','Bash''ir Controller - Cast Power Word Shield'),
 ('2336803','23368','2','0','100','1025','40','0','20000','25000','0','0','11','34945','0','0','0','0','0','0','0','0','0','0','Bash''ir Controller - Cast Heal at 40% HP'),
 -- Simon Game Bunny Large 23378 - npc_simon_game_bunny
+-- Gan'arg Analyzer 23386
+('2338601','23386','6','0','100','0','0','0','0','0','0','0','11','32614','0','0','0','0','0','0','0','0','0','0','Gan''arg Analyzer - Cast Arcane Explosion on Death'),
 -- Bash'ir's Harbinger
 ('2339001','23390','11','0','100','0','0','0','0','0','0','0','11','34427','0','2','11','41365','0','2','0','0','0','0','Bash''ir''s Harbinger - Cast Ethereal Teleport and Cast Blade''s Edge - Bash''ir Materialization Beam 00 on Spawn'),
 ('2339002','23390','1','0','100','1','100','100','1000','2000','0','0','45','5','12','0','0','0','0','0','0','0','0','0','Bash''ir''s Harbinger - Throw AI Event 5 (A) OOC'),
