@@ -20355,7 +20355,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2164904','21649','0','0','100','1281','0','0','3400','4800','0','0','11','13901','1','256','0','0','0','0','0','0','0','0','Skettis Windwalker - Cast Arcane Bolt (Range Mode)'),
 ('2164905','21649','0','0','100','1537','0','0','5000','20000','0','0','11','13901','1','256','0','0','0','0','0','0','0','0','Skettis Windwalker - Cast Arcane Bolt (Melee Mode)'),
 -- Skettis Talonite 21650
-('2165001','21650','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Skettis Talonite - Enable Range Mode on Aggro'),
+('2165001','21650','4','0','100','0','0','0','0','0','0','0','57','2','25','0','54','-10454','0','0','45','5','25','0','Skettis Talonite - Enable Range Mode, Emote, and Send AI Event 5 (A) on Aggro'),
 ('2165002','21650','0','0','100','1025','6000','10000','9000','14000','0','0','11','11428','1','0','0','0','0','0','0','0','0','0','Skettis Talonite - Cast Knockdown'),
 ('2165003','21650','9','0','100','1025','5','30','2300','3900','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Skettis Talonite - Cast Throw'),
 -- Time-Lost Skettis Reaver 21651
@@ -20398,6 +20398,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2178705','21787','9','0','100','1025','0','40','8000','12000','0','0','11','9734','1','0','0','0','0','0','0','0','0','0','Time-Lost Skettis High Priest - Cast Holy Smite'),
 -- Skettis Kaliri
 ('2180401','21804','9','0','100','1','0','5','5000','10000','0','0','11','5708','1','0','0','0','0','0','0','0','0','0','Skettis Kaliri - Cast Swoop'),
+('2180402','21804','30','0','100','1','5','21650','0','0','0','0','55','10','0','0','0','0','0','0','0','0','0','0','Skettis Kaliri - Attack Invoker on Receive AI Event 5 (A)'),
 -- Ironspine Chomper
 ('2181601','21816','9','0','100','1','0','5','5000','7000','0','0','11','32906','1','0','0','0','0','0','0','0','0','0','Ironspine Chomper - Cast Chomp'),
 -- Terokk 21838 - boss_terokk
@@ -31726,7 +31727,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10451','You are running out of time!','0','0','0','0','0','Black Morass'),
 ('-10452','Victory or death!','0','0','0','0','0','Black Morass'),
 ('-10453','Quake, mortals!  Quake and kneel before your destroyer!','0','1','0','0','16437','19288'),
--- TBC PLEASE REUSE 10454 - 10458
+('-10454','%s lets out a shrill shriek, calling for help from a nearby kaliri.','0','2','0','0','21260','21650'),
+-- TBC PLEASE REUSE 10455 - 10458
 ('-10459','It''s the end of the world!','0','0','0','0','0','17931'),
 ('-10460','We''re doomed!','0','0','0','0','0','17931'),
 ('-10461','Puny $r... you were a... horrible $g king : queen;.','0','0','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)'),
