@@ -20382,6 +20382,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2166102','21661','2','0','100','0','30','0','0','0','0','0','11','8599','0','1','1','-106','0','0','0','0','0','0','Cabal Skirmisher - Cast Enrage at 30% HP'),
 -- Cabal Tomb-Raider
 ('2166201','21662','33','0','100','1','0','0','3000','5000','0','0','11','37685','1','0','0','0','0','0','0','0','0','0','Cabal Tomb-Raider - Cast Backstab on Facing Target Back'),
+('2166202','21662','11','0','100','0','0','0','0','0','0','0','11','30982','0','34','0','0','0','0','0','0','0','0','Cabal Tomb-Raider - Cast Crippling Poison on Spawn'),
 -- Blackwind Sabercat
 ('2172301','21723','0','0','100','1','5000','9000','16000','19000','0','0','11','33912','1','0','0','0','0','0','0','0','0','0','Blackwind Sabercat - Cast Rip'),
 -- Hawkbane
