@@ -20252,10 +20252,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1871601','18716','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Shadowy Initiate - Enable Range Mode on Aggro'),
 ('1871602','18716','9','0','100','1025','0','40','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Shadowy Initiate - Cast Shadow Bolt'),
 ('1871603','18716','0','0','100','1025','10000','16000','14000','26000','0','0','11','32063','1','0','0','0','0','0','0','0','0','0','Shadowy Initiate - Cast Corruption'),
--- Shadowy Hunter
+-- Shadowy Hunter 18718
 ('1871801','18718','9','0','100','1','0','5','16000','21000','0','0','11','32908','1','0','0','0','0','0','0','0','0','0','Shadowy Hunter - Cast Wing Clip'),
 ('1871802','18718','0','0','100','1','4000','7000','4000','7000','0','0','11','32915','1','0','0','0','0','0','0','0','0','0','Shadowy Hunter - Cast Raptor Strike'),
 ('1871803','18718','24','0','100','1','32756','1','1000','1000','0','0','28','1','38080','0','28','1','38081','0','28','1','32756','0','Shadowy Hunter - Dispel Shadowy Disguise (Quest: 10040)'),
+('1871804','18718','4','0','100','0','0','0','0','0','0','0','54','-10455','0','0','0','0','0','0','0','0','0','0','Shadowy Hunter - Say on Aggro'),
 -- Shadowy Advisor 18719
 ('1871901','18719','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Shadowy Advisor - Enable Range Mode on Aggro'),
 ('1871902','18719','9','0','100','1025','0','40','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Shadowy Advisor - Cast Shadow Bolt'),
@@ -31738,7 +31739,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10452','Victory or death!','0','0','0','0','0','Black Morass'),
 ('-10453','Quake, mortals!  Quake and kneel before your destroyer!','0','1','0','0','16437','19288'),
 ('-10454','%s lets out a shrill shriek, calling for help from a nearby kaliri.','0','2','0','0','21260','21650'),
--- TBC PLEASE REUSE 10455 - 10458
+('-10455','You!  You don''t belong here!','0','0','0','0','15786','18718'),
+-- TBC PLEASE REUSE 10456 - 10458
 ('-10459','It''s the end of the world!','0','0','0','0','0','17931'),
 ('-10460','We''re doomed!','0','0','0','0','0','17931'),
 ('-10461','Puny $r... you were a... horrible $g king : queen;.','0','0','0','0','0','Generic Blades Edge Ogre Death Text (If Player has Completed Quest 11000)'),
