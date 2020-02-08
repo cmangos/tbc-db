@@ -16531,9 +16531,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2132502','21325','9','0','100','1','0','5','10000','15000','0','0','11','12612','0','0','0','0','0','0','0','0','0','0','Raven''s Wood Stonebark - Cast Stomp'),
 ('2132503','21325','2','0','100','1','50','0','15300','22900','0','0','11','37709','0','0','0','0','0','0','0','0','0','0','Raven''s Wood Stonebark - Cast Wild Regeneration at 50% HP'),
 -- Raven's Wood Leafbeard
-('2132601','21326','0','0','50','1','9000','12000','35000','42000','0','0','11','37696','0','0','0','0','0','0','0','0','0','0','Raven''s Wood Leafbeard - Cast Force of Nature'),
-('2132602','21326','30','0','100','0','5','22226','0','0','0','0','2','35','1','0','24','0','0','0','1','-10964','0','0','Raven''s Wood Leafbeard - Set Faction and Evade and Emote on Receive AI Event'),
-('2132603','21326','30','0','100','0','5','22226','0','0','0','0','41','15000','0','0','0','0','0','0','0','0','0','0','Raven''s Wood Leafbeard - Delayed Despawn on Receive AI Event'),
+('2132601','21326','0','0','50','1','9000','12000','35000','42000','0','0','11','37696','15','0','0','0','0','0','0','0','0','0','Raven''s Wood Leafbeard - Cast Force of Nature'),
 -- Ogre Building Bunny Large 21351
 ('2135101','21351','11','0','100','0','0','0','0','0','0','0','11','36952','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Large - Cast Ogre Building Bunny Curse Visual Large on Spawn'),
 -- Silkwing
@@ -16722,7 +16720,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2222103','22221','9','0','100','1025','0','40','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Felstorm Overseer - Cast Shadow Bolt'),
 -- Koi-Koi Spirit 22226
 ('2222601','22226','0','0','100','1','1000','3000','15000','17000','0','0','11','36093','1','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Cast Ghost Strike'),
-('2222602','22226','6','0','100','0','0','0','0','0','0','0','45','5','50','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Send AI Event on Death'),
+('2222602','22226','6','0','100','0','0','0','0','0','0','0','11','38640','15','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Cast Koi-Koi Death'),
 -- Grishna Arakkoa 22232 - NSR
 -- Bash'ir Raider 22241
 ('2224101','22241','0','0','100','1','7000','12000','9000','15000','0','0','11','35922','0','0','0','0','0','0','0','0','0','0','Bash''ir Raider - Cast Energy Flare'),
@@ -32240,7 +32238,6 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10961','You stay out of the regent lord''s way! I mean it!','0','0','0','0','0','18230'),
 ('-10962','No, no, no! Come back here!','0','0','0','0','0','18230'),
 ('-10963','Burn Burn Burn','0','0','12','0','0','18109'),
-('-10964','%s appears very grateful to be free of the koi-koi spirit''s influence.','0','2','0','34','0','21326'),
 ('-10965','AYYAYAAYAA!','0','0','0','0','0','22483'),
 ('-10966','AWOOOOGAAAA!','0','0','0','0','0','22483'),
 ('-10967','AAAAEEEEEEIIIIIIII!!!!!','0','0','0','0','0','22483'),
