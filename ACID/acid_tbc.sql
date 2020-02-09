@@ -18572,6 +18572,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Doctor Vomisa, Ph.T. (19832) - NSR
 -- Lariel Sunrunner (19839) - NSR
 -- Caledis Brightdawn (19840) - NSR
+-- Invis KV Defender 19842
+('1984201','19842','1','0','100','1','2000','2000','1000','1000','0','0','11','34627','0','0','0','0','0','0','0','0','0','0','Invis KV Defender - Cast Nuke Mana Creature II OOC'),
 -- Scrap Reaver X6000 (19849) - NSR
 -- Negatron
 ('1985101','19851','11','0','100','0','0','0','0','0','0','0','11','15742','0','0','0','0','0','0','0','0','0','0','Negatron - Cast Ashcrombe''s Teleport (Rank 1) on Spawn'),
