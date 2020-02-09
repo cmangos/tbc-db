@@ -19,9 +19,10 @@ DELETE FROM `gameobject` WHERE `guid`=101391;
 INSERT INTO `gameobject` (guid, id, `map`, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, `state`) VALUES
 (101391, 183955, 530, 1, 2173.88, 2302.671, 106.8105, 5.759588, 0, 0, -0.2588186, 0.9659259, -60, -60, 100, 1);
 
-UPDATE `quest_template` SET `CompleteScript`=10240 WHERE `entry`=10240;
+UPDATE `quest_template` SET `CompleteScript`=10240, `RewSpellCast`=0 WHERE `entry`=10240;
 DELETE FROM `dbscripts_on_quest_end` WHERE `id`=10240;
 INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(10240, 0, 0, 15, 34656, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Arcane Explosion (Cosmetic)'),
 -- 12:21:16.373 - SMSG_QUEST_GIVER_QUEST_COMPLETE QuestId: 10240
 -- 12:21:17.014
 (10240, 1000, 0, 10, 19842, 53000, 0, 0, 0, 0, 0, 0, 0, 0, 2314.31, 2208.68, 99.2333, 2.61799, 'Invis KV Defender'),
