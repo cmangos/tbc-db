@@ -18298,6 +18298,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gan'arg Mekgineer
 ('1694901','16949','9','0','100','1','0','5','13000','18000','0','0','11','36208','1','0','0','0','0','0','0','0','0','0','Gan''arg Mekgineer - Cast Steal Weapon'),
 ('1694902','16949','2','0','100','1','80','0','10000','14000','0','0','11','36825','1','1','0','0','0','0','0','0','0','0','Gan''arg Mekgineer - Cast Drain Life at 80% HP'),
+-- Arcane Vortex 17408
+('1740801','17408','11','0','100','0','0','0','0','0','0','0','11','30627','0','0','0','0','0','0','0','0','0','0','Arcane Vortex - Cast Arcane Surge Passive on Spawn'),
 -- Kalynna Lathred (17636) - NSR
 -- Angered Nether-wraith 17870
 ('1787001','17870','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Angered Nether-wraith - Enable Range Mode on Aggro'),
