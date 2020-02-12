@@ -998,20 +998,34 @@ INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `lan
 (2000020033,'Serve the Fel Horde!',0,0,0,5,'Shattered Hand Legionnaire'),
 (2000020034,'We''ll drink their blood and feast on their bones!',0,0,0,15,'Shattered Hand Legionnaire');
 
-DELETE FROM dbscripts_on_relay WHERE id IN (10113,10114,10115,10116,10117,10118,10119,10120);
+
+DELETE FROM dbscripts_on_relay WHERE id IN (10113,10114,10115,10116,10117,10118,10119,10120, 10121);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10113,0,0,10051,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
 (10113,0,35,5,50,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
-(10114,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
-(10114,3000,37,0,0,0,17420,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Heathen'),
+(10114, 0, 31, 17420, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - Search for Heaven'),
+(10114,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
+(10114,3000,37,0,0,1.5,17420,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Heathen'),
 (10114,4000,36,0,0,0,17420,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - face Legionnaire'),
 (10114,4000,36,0,0,0,17420,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Heathen'),
 (10114,5000,1,66,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - OneShotSalute'),
-(10114,6000,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotSalute'),
-(10114,7000,1,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - OneShotTalk'),
-(10114,8000,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
-(10114,9000,36,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - reset orientation'),
-(10114,10000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
+(10114,7000,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotSalute'),
+(10114,9000,1,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - OneShotTalk'),
+(10114,10000,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
+(10114,11000,36,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - reset orientation'),
+(10114,13000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
+
+(10121, 0, 31, 16523, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - Search for Savage'),
+(10121,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
+(10121,3000,37,0,0,1.5,16523,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Savage'),
+(10121,4000,36,0,0,0,16523,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - face Legionnaire'),
+(10121,4000,36,0,0,0,16523,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Savage'),
+(10121,5000,1,66,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - OneShotSalute'),
+(10121,7000,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotSalute'),
+(10121,9000,1,1,0,0,16523,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - OneShotTalk'),
+(10121,10000,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
+(10121,11000,36,1,0,0,16523,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - reset orientation'),
+(10121,13000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
 
 (10115,5000,45,0,10052,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% force bow, 50% force cheer'),
 
@@ -1047,7 +1061,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalon
 DELETE FROM dbscript_random_templates WHERE id IN (10050,10051,10052,10053,10054);
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 (10050, 1, 10113, 10, 'Shattered Hand Legionnaire - yell'),
-(10050, 1, 10114, 10, 'Shattered Hand Legionnaire - approach ally'),
+(10050, 1, 10114, 5, 'Shattered Hand Legionnaire - approach ally Heathen'),
+(10050, 1, 10121, 5, 'Shattered Hand Legionnaire - approach ally Savage'),
 (10050, 1, 0, 80, 'Shattered Hand Legionnaire - nothing'),
 
 (10051, 0, 2000020025, 0, 'Shattered Hand Legionnaire - random yell 1'),
@@ -1066,12 +1081,12 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10054, 1, 10116, 10, 'Shattered Hand Legionnaire - talk event'),
 (10054, 1, 0, 80, 'Shattered Hand Legionnaire - nothing');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001,1670002);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001,1670002, 1742001);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1670001, 0, 45, 0, 10050, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - 10% chance to yell, 10% chance to talk'),
 (1670002, 0, 45, 0, 10054, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Legionnaire - 10% force bow/cheer, 10% talk event'),
-(1742000, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - Waypoint Pause'),
-(1742000, 3000, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - EMOTE_STATE_READY1H');
+(1742001, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - Waypoint Pause'),
+(1742001, 3000, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - EMOTE_STATE_READY1H');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
