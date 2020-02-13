@@ -737,11 +737,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+131, 17357, 540, 3, 138.444, 191.164, -47.1833, 6.21809, 7200, 7200, 0, 0, 0, 0), -- Creeping Oozeling
 (@CGUID+132, 0, 540, 3, 66.2363, 130.973, -13.196, 4.80743, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+133, 16699, 540, 3, 67.1698, 183.923, -13.2365, 4.69381, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Reaver
-(@CGUID+134, 0, 540, 1, 46.3248, 59.879, -12.9904, 0, 7200, 7200, 0, 0, 0, 2), --  creature_spawn_entry
-(@CGUID+135, 0, 540, 1, 83.755, 57.2887, -13.114, 3.15, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
-(@CGUID+136, 0, 540, 1, 53.5243, 60.0879, -13.0071, 0, 7200, 7200, 0, 0, 0, 2), --  creature_spawn_entry
-(@CGUID+137, 0, 540, 1, 90.0297, 57.4987, -13.1003, 3.261756, 7200, 7200, 0, 0, 0, 2), --  creature_spawn_entry
-(@CGUID+138, 0, 540, 1, 87.9912, 57.5445, -13.1049, 3.2617, 7200, 7200, 0, 0, 0, 2), --  creature_spawn_entry
+(@CGUID+134, 0, 540, 1, 46.3248, 59.879, -12.9904, 0, 1000, 1000, 0, 0, 0, 2), --  creature_spawn_entry
+(@CGUID+135, 0, 540, 1, 83.755, 57.2887, -13.114, 3.15, 1000, 1000, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+136, 0, 540, 1, 53.5243, 60.0879, -13.0071, 0, 1000, 1000, 0, 0, 0, 2), --  creature_spawn_entry
+(@CGUID+137, 0, 540, 1, 90.0297, 57.4987, -13.1003, 3.261756, 1000, 1000, 0, 0, 0, 2), --  creature_spawn_entry
+(@CGUID+138, 0, 540, 1, 87.9912, 57.5445, -13.1049, 3.2617, 1000, 1000, 0, 0, 0, 2), --  creature_spawn_entry
 (@CGUID+139, 17420, 540, 3, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+140, 17420, 540, 3, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+141, 17420, 540, 3, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
@@ -907,11 +907,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+301, 17695, 540, 3, 274.497, 317.332, -0.3597, 6.27, 86400, 86400, 2, 0, 0, 1), -- Shattered Hand Assassin
 (@CGUID+302, 17695, 540, 3, 519.4913, 265.4981, 1.943648, 1.67471, 86400, 86400, 2, 0, 0, 1), -- Shattered Hand Assassin
 (@CGUID+303, 17695, 540, 3, 518.3307, 125.028, 1.981626, 4.529583, 86400, 86400, 0, 0, 0, 2); -- Shattered Hand Assassin
-(@CGUID+304, 17420, 540, 2, 46.3248, 59.879, -12.9904, 0, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+305, 17420, 540, 2, 83.755, 57.2887, -13.114, 3.15, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+306, 17420, 540, 2, 53.5243, 60.0879, -13.0071, 0, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+307, 17420, 540, 2,  90.0297, 57.4987, -13.1003, 3.261756, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+308, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+304, 17420, 540, 2, 46.3248, 59.879, -12.9904, 0, 1000, 1000, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+305, 17420, 540, 2, 83.755, 57.2887, -13.114, 3.15, 1000, 1000, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+306, 17420, 540, 2, 53.5243, 60.0879, -13.0071, 0, 1000, 1000, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+307, 17420, 540, 2,  90.0297, 57.4987, -13.1003, 3.261756, 1000, 1000, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+308, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 1000, 1000, 0, 0, 0, 2), -- Shattered Hand Heathen
 -- ===========
 -- GAMEOBJECTS
 -- ===========
@@ -1005,7 +1005,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalon
 (10113,0,35,5,50,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
 (10114, 0, 31, 17420, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - Search for Heaven'),
 (10114,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
-(10114,3000,37,0,0,1.5,17420,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Heathen'),
+(10114,3000,37,0,0,1,17420,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Heathen'),
 (10114,4000,36,0,0,0,17420,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - face Legionnaire'),
 (10114,4000,36,0,0,0,17420,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Heathen'),
 (10114,5000,1,66,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - OneShotSalute'),
@@ -1017,7 +1017,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalon
 
 (10121, 0, 31, 16523, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - Search for Savage'),
 (10121,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
-(10121,3000,37,0,0,1.5,16523,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Savage'),
+(10121,3000,37,0,0,1,16523,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Savage'),
 (10121,4000,36,0,0,0,16523,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - face Legionnaire'),
 (10121,4000,36,0,0,0,16523,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Savage'),
 (10121,5000,1,66,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - OneShotSalute'),
