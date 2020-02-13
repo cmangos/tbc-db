@@ -30351,6 +30351,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dire Maul Crystal Totem 13916 - TotemAI
 -- Brain Wash Totem 15112 - TotemAI
 -- Ancient Mana Spring Totem 15304 - TotemAI
+-- Darkmoon Steam Tonk 15328
+('1532801','15328','11','0','100','0','0','0','0','0','0','0','11','27749','0','2','11','24937','11','130','54','-1053','11','0','Darkmoon Steam Tonk - Cast Initialize Tank and Cast Using Control Console and Whisper Player on Spawn'),
+-- Tonk Mine 15368
+('1536801','15368','11','0','100','0','0','0','0','0','0','0','11','11816','0','2','54','-1060','0','0','0','0','0','0','Tonk Mine - Cast Land Mine Arming and Emote on Spawn'),
+('1536802','15368','1','0','100','0','4000','4000','0','0','0','0','11','27999','0','2','54','-1059','0','0','0','0','0','0','Tonk Mine - Cast Land Mine Periodic and Emote OOC'),
 -- Disgusting Oozeling 15429 - MiniPet
 ('1542901','15429','11','0','100','0','0','0','0','0','0','0','11','25163','0','0','0','0','0','0','0','0','0','0','Disgusting Oozeling - Cast Oozeling''s Disgusting Aura on Spawn'),
 -- Earth Elemental Totem 15430 - TotemAI
@@ -31134,13 +31139,15 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1050','It''s getting away!','0','0','0','0','10146','14860'),
 ('-1051','Hey, someone help me catch this thing!','0','0','0','0','10145','14860'),
 ('-1052','Frogs and leather balls for sale!','0','0','0','0','10148','14860'),
--- Classic PLEASE RE-USE 1053
+('-1053','Use your tonk action bar above your standard action bar to attack other tonks.','0','4','0','0','11929','15328'),
 ('-1054','%s collapses but the broken body rises again!','0','2','0','0','0','10381'),
 ('-1055','No tampering with the mail!','0','0','0','0','0','11142'),
 ('-1056','That''s our treasure, you lubber!','0','0','0','0','0','Treasure Hunting Common Text'),
 ('-1057','Hey!  Get away from our treasure!','0','0','0','0','0','Treasure Hunting Common Text'),
 ('-1058','%s seems to no longer be able to cast spells...','0','2','0','0','0','7666'),
--- Classic PlEASE RE-USE 1059 - 1118
+('-1059','%s is now armed!','0','2','0','0','3543','15368'),
+('-1060','%s will be armed in 3 seconds!','0','2','0','0','10894','15368'),
+-- Classic PlEASE RE-USE 1061 - 1118
 ('-1119','Kill $N!','0','1','0','25','0','15392'),
 -- Classic PLEASE RE-USE 1120 - 1134
 ('-1135','None can stand against the serpent lords!','5786','1','0','0','0','3671'),
