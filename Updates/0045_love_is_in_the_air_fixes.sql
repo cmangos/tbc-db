@@ -17,8 +17,8 @@ DELETE FROM creature_involvedrelation WHERE id=16075 AND quest=8993;
 INSERT INTO creature_involvedrelation (id, quest) VALUES
 (16075, 8993);
 
-UPDATE quest_template SET CompleteScript=8981 WHERE entry=8981;
-UPDATE quest_template SET CompleteScript=8993 WHERE entry=8993;
+UPDATE quest_template SET CompleteScript=8981, RewSpellCast=0 WHERE entry=8981;
+UPDATE quest_template SET CompleteScript=8993, RewSpellCast=0 WHERE entry=8993;
 DELETE FROM dbscripts_on_quest_end WHERE id IN (8981,8993);
 INSERT INTO dbscripts_on_quest_end (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 ('8981', '0', '0', '15', '27663', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Holiday - Valentine, gift given'),
