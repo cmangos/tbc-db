@@ -18742,6 +18742,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kirin'Var Apprentice
 ('2040901','20409','0','0','100','0','3000','9000','0','0','0','0','11','36099','1','0','0','0','0','0','0','0','0','0','Kirin''Var Apprentice - Cast Throw Hammer'),
 -- Rhonsus 20410
+('2041001','20410','11','0','100','0','0','0','0','0','0','0','11','36635','0','0','0','0','0','0','0','0','0','0','Rhonsus - Cast Fiery Weapon Proc on Spawn'),
 -- Spectral Bovine 20411
 -- Bessy 20415 - npc_bessy
 -- Overseer Theredis
