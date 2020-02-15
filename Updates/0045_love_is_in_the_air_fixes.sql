@@ -43,6 +43,15 @@ INSERT INTO gameobject (guid, id, map, spawnMask, position_x, position_y, positi
 (9808, 181091, 1, 1, 9670.28, 2534.94, 1360.08, 5.34071, 300, 300, 100, 1),
 (9809, 181093, 0, 1, 1302.19, 343.649, -64.944, 1.55334, 300, 300, 100, 1);
 
+DELETE FROM game_event_gameobject WHERE guid BETWEEN 9804 AND 9809;
+INSERT INTO game_event_gameobject (guid, event) VALUES
+(9804, 8),
+(9805, 8),
+(9806, 8),
+(9807, 8),
+(9808, 8),
+(9809, 8);
+
 -- 27663 Holiday - Valentine, gift given
 DELETE FROM spell_script_target WHERE entry=27663;
 INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
