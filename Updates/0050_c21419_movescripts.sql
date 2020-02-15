@@ -4,12 +4,6 @@
 -- Waypoint
 -- Targeted to creature Shadowmoon Scout (lowguid 76049) distance 0.000000 angle 0.000000 mode CHASE_MODE_NORMAL
 -- Both not being in combat with each other only being in chasemode without fighting
-DELETE FROM `dbscripts_on_creature_movement` WHERE `command` = 20 AND `id` BETWEEN 2141901 AND 2141904;
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `data_flags`, `comments`) VALUES
-(2141901, 4000, 0, 20, 2, 5, 8, 'Infernal Attacker - Random Movement'),
-(2141902, 7000, 0, 20, 2, 5, 8, 'Infernal Attacker - Random Movement'),
-(2141903, 4000, 0, 20, 2, 5, 8, 'Infernal Attacker - Random Movement'),
-(2141904, 7000, 0, 20, 2, 5, 8, 'Infernal Attacker - Random Movement');
 
 -- Add missing Infernal Spawnscripts for newly added Infernal Attackers 21419
 -- 2141901 to 2141904 seem to be for different delays could maybe be united into one script, randomizing for now
