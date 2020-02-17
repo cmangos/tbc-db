@@ -27835,7 +27835,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Coilfang Hate-Screamer
 ('2133901','21339','0','0','100','1','5000','9000','21000','38600','0','0','11','38491','4','0','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Silence'),
 ('2133902','21339','0','0','100','1','6100','11200','7000','12000','0','0','11','38496','4','0','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Sonic Scream'),
--- Coilfang Frenzy (21508) - NSR
+-- Coilfang Frenzy 21508
+('2150801','21508','11','0','100','0','0','0','0','0','0','0','55','11','0','0','0','0','0','0','0','0','0','0','Coilfang Frenzy - Attack Spawner on Spawn'),
 -- Greyheart Spellbinder
 ('2180601','21806','1','0','100','0','10000','10000','0','0','0','0','11','37626','0','0','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Green Beam on OOC Timer'),
 ('2180602','21806','0','0','100','1','6800','10700','10300','13600','0','0','11','37531','4','0','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Mind Blast'),
