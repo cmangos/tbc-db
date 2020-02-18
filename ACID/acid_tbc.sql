@@ -17758,6 +17758,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2079803','20798','0','1','100','1','5000','11000','12000','15000','0','0','11','36486','1','0','0','0','0','0','0','0','0','0','Razorsaw - Cast Slime Spray (Phase 1)'),
 ('2079804','20798','7','0','100','0','0','0','0','0','0','0','3','0','0','0','22','0','0','0','0','0','0','0','Razorsaw - Demorph and Set Phase 0 on Evade'),
 -- Eye of the Citadel 21134 - NSR
+-- Honor Hold Gryphon Brigadier, South 21170
+('2117001','21170','11','0','100','0','0','0','0','0','0','0','11','36350','0','0','0','0','0','0','0','0','0','0','Honor Hold Gryphon Brigadier, South - Cast They Must Burn Bomb Aura (self) on Spawn'),
 -- Cursed Scarab
 ('2130601','21306','11','0','100','0','0','0','0','0','0','0','48','1','15','0','0','0','0','0','0','0','0','0','Cursed Scarab - Set Random Movement on Spawn'),
 ('2130602','21306','1','0','30','0','5000','9000','0','0','0','0','2','14','1','0','0','0','0','0','0','0','0','0','Cursed Scarab - 30% Should Change Faction OOC'),
@@ -17802,6 +17804,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2237411','22374','2','0','100','0','30','0','0','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Hand of Kargath - Cast Toughen at 30% HP'),
 ('2237412','22374','2','0','100','0','20','0','0','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Hand of Kargath - Cast Toughen at 20% HP'),
 ('2237413','22374','2','0','100','0','10','0','0','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Hand of Kargath - Cast Toughen at 10% HP'),
+-- Honor Hold Gryphon Brigadier, North 22404
+('2240401','22404','11','0','100','0','0','0','0','0','0','0','11','36350','0','0','0','0','0','0','0','0','0','0','Honor Hold Gryphon Brigadier, North - Cast They Must Burn Bomb Aura (self) on Spawn'),
+-- Honor Hold Gryphon Brigadier, Forge 22405
+('2240501','22405','11','0','100','0','0','0','0','0','0','0','11','36350','0','0','0','0','0','0','0','0','0','0','Honor Hold Gryphon Brigadier, Forge - Cast They Must Burn Bomb Aura (self) on Spawn'),
+-- Honor Hold Gryphon Brigadier, Foothill 22406
+('2240601','22406','11','0','100','0','0','0','0','0','0','0','11','36350','0','0','0','0','0','0','0','0','0','0','Honor Hold Gryphon Brigadier, Foothill - Cast They Must Burn Bomb Aura (self) on Spawn'),
 -- Anchorite Barada 22431 - npc_anchorite_barada
 -- Colonel Jules 22432 - npc_colonel_jules
 -- Anchorite Relic Bunny
