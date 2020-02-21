@@ -21352,8 +21352,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1967201','19672','11','0','100','0','0','0','0','0','0','0','11','34427','0','1','0','0','0','0','0','0','0','0','Consortium Laborer - Cast Ethereal Teleport on Spawn'),
 -- Consortium Engineer (19673) - NSR
 -- Ambassador Pax'ivi (22928) - NSR
--- Yor (UNABLE TO ACCESS THIS BOSS YET TO GET OFFICIAL DATA)
-('2293001','22930','0','0','100','1','6000','10000','8000','15000','0','0','11','38361','0','0','0','0','0','0','0','0','0','0','Yor - Cast Double Breath'),
+-- Yor 22930 - boss_yor
 -- Dancing Flames (25305) - npc_dancing_flames
 
 
