@@ -29,6 +29,143 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (18553,0,9,-2018.632,7122.077,22.76468,100,0,0),
 (18553,0,10,-2020.478,7126.593,22.76468,100,0,0);
 
+-- 4 possible waypoint paths for each portal spawn type (one for each rift location)
+DELETE FROM creature_movement_template WHERE entry IN (21818,17835,17892,18994,18995,21137,21136,21138,21139);
+INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(21818,0,0,-2032.004,7004.983,23.5776,0,0,100),
+(21818,0,1,-2030.832,7024.944,23.02732,0,0,100),
+(21818,0,2,-2029.66,7044.905,22.47703,0,0,100),
+(21818,0,3,-2029.191,7052.89,23.10203,0,0,100),
+(21818,0,4,-2028.84,7058.878,23.72703,0,0,100),
+(21818,0,5,-2028.313,7067.86,22.99909,0,0,100),
+(21818,0,6,-2027.961,7073.849,22.37409,0,0,100),
+(21818,0,7,-2026.459,7099.615,22.59416,0,0,100),
+(21818,0,8,-2026.459,7099.615,22.59416,10000,2181801,100);
+INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(21818,1,0,-1937.535,6995.197,22.47705,0,0,100),
+(21818,1,1,-1961.734,7029.527,21.72704,0,0,100),
+(21818,1,2,-1985.934,7063.857,20.97702,0,0,100),
+(21818,1,3,-1987.662,7066.31,20.22702,0,0,100),
+(21818,1,4,-1988.814,7067.944,19.72692,0,0,100),
+(21818,1,5,-1991.119,7071.214,18.85192,0,0,100),
+(21818,1,6,-1992.848,7073.666,18.22692,0,0,100),
+(21818,1,7,-1995.152,7076.936,17.60192,0,0,100),
+(21818,1,8,-2006.676,7093.283,18.12409,0,0,100),
+(21818,1,9,-2008.98,7096.553,18.74909,0,0,100),
+(21818,1,10,-2010.709,7099.005,19.62409,0,0,100),
+(21818,1,11,-2012.438,7101.457,20.13968,0,0,100),
+(21818,1,12,-2013.59,7103.092,20.76468,0,0,100),
+(21818,1,13,-2013.59,7103.092,20.76468,10000,2181801,100);
+INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(21818,2,0,-1884.707,7106.275,22.81584,0,0,100),
+(21818,2,1,-1887.695,7106.557,21.94084,0,0,100),
+(21818,2,2,-1890.684,7106.838,21.06584,0,0,100),
+(21818,2,3,-1893.672,7107.119,20.44084,0,0,100),
+(21818,2,4,-1895.664,7107.307,19.69084,0,0,100),
+(21818,2,5,-1897.656,7107.494,19.06584,0,0,100),
+(21818,2,6,-1900.645,7107.775,18.25984,0,0,100),
+(21818,2,7,-1904.629,7108.15,17.63484,0,0,100),
+(21818,2,8,-1992.285,7116.4,18.32679,0,0,100),
+(21818,2,9,-1994.277,7116.588,18.95179,0,0,100),
+(21818,2,10,-1996.27,7116.775,19.70179,0,0,100),
+(21818,2,11,-1999.258,7117.057,20.45179,0,0,100),
+(21818,2,12,-2002.246,7117.338,21.01468,0,0,100),
+(21818,2,13,-2005.428,7117.637,21.5325,0,0,100),
+(21818,2,14,-2005.428,7117.637,21.5325,10000,2181801,100);
+INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(21818,3,0,-1927.559,7188.959,23.66119,0,0,100),
+(21818,3,1,-1932.836,7184.358,23.30664,0,0,100),
+(21818,3,2,-1938.113,7179.758,22.95208,0,0,100),
+(21818,3,3,-1940.541,7177.937,22.70208,0,0,100),
+(21818,3,4,-1941.666,7177.083,22.57708,0,0,100),
+(21818,3,5,-1945.834,7175.521,22.32708,0,0,100),
+(21818,3,6,-1946.875,7175.521,22.32708,0,0,100),
+(21818,3,7,-1947.916,7175.521,22.32708,0,0,100),
+(21818,3,8,-1948.959,7175.521,22.20208,0,0,100),
+(21818,3,9,-1950,7175,22.20208,0,0,100),
+(21818,3,10,-1958.334,7170.833,22.07708,0,0,100),
+(21818,3,11,-1964.334,7170.833,22.32708,0,0,100),
+(21818,3,12,-1966.666,7170.833,22.60204,0,0,100),
+(21818,3,13,-1970.244,7169.044,22.85204,0,0,100),
+(21818,3,14,-1975,7166.666,22.85203,0,0,100),
+(21818,3,15,-1977.684,7165.324,22.47703,0,0,100),
+(21818,3,16,-1979.473,7164.43,21.97703,0,0,100),
+(21818,3,17,-1981.262,7163.535,21.35203,0,0,100),
+(21818,3,18,-1983.051,7162.641,21.10203,0,0,100),
+(21818,3,19,-1983.334,7162.5,20.60203,0,0,100),
+(21818,3,20,-1983.826,7159.541,20.22703,0,0,100),
+(21818,3,21,-1984.154,7157.568,19.85203,0,0,100),
+(21818,3,22,-1984.482,7155.596,19.35203,0,0,100),
+(21818,3,23,-1984.646,7154.609,19.10203,0,0,100),
+(21818,3,24,-1984.975,7152.637,18.85203,0,0,100),
+(21818,3,25,-1985.303,7150.664,18.60203,0,0,100),
+(21818,3,26,-1985.416,7150,18.22703,0,0,100),
+(21818,3,27,-1986.758,7147.316,17.85203,0,0,100),
+(21818,3,28,-1987.5,7145.833,17.60203,0,0,100),
+(21818,3,29,-1991.035,7142.298,17.85203,0,0,100),
+(21818,3,30,-1991.666,7141.666,18.22703,0,0,100),
+(21818,3,31,-1993.08,7140.252,18.60203,0,0,100),
+(21818,3,32,-1993.787,7139.545,18.85203,0,0,100),
+(21818,3,33,-1995.201,7138.131,19.22703,0,0,100),
+(21818,3,34,-1995.908,7137.424,19.60203,0,0,100),
+(21818,3,35,-1997.322,7136.01,19.97703,0,0,100),
+(21818,3,36,-1998.029,7135.303,20.35203,0,0,100),
+(21818,3,37,-1999.443,7133.889,20.72703,0,0,100),
+(21818,3,38,-2000,7133.333,21.01468,0,0,100),
+(21818,3,39,-2001.758,7132.378,21.26468,0,0,100),
+(21818,3,40,-2003.516,7131.423,21.76468,0,0,100),
+(21818,3,41,-2004.395,7130.945,22.01468,0,0,100),
+(21818,3,42,-2007.031,7129.513,22.26468,0,0,100),
+(21818,3,43,-2007.727,7129.135,22.46266,0,0,100),
+(21818,3,44,-2007.727,7129.135,22.46266,10000,2181801,100);
+-- Infinite Assassin 1
+INSERT INTO creature_movement_template SELECT 17835 AS entry, pathId, `point`, position_x, position_y, position_z, orientation, waittime, script_id, `comment` FROM creature_movement_template WHERE entry=21818;
+-- Infinite Assassin 2
+INSERT INTO creature_movement_template SELECT 21137 AS entry, pathId, `point`, position_x, position_y, position_z, orientation, waittime, script_id, `comment` FROM creature_movement_template WHERE entry=21818;
+-- Infinite Chronomancer 1
+INSERT INTO creature_movement_template SELECT 17892 AS entry, pathId, `point`, position_x, position_y, position_z, orientation, waittime, script_id, `comment` FROM creature_movement_template WHERE entry=21818;
+-- Infinite Chronomancer 2
+INSERT INTO creature_movement_template SELECT 21136 AS entry, pathId, `point`, position_x, position_y, position_z, orientation, waittime, script_id, `comment` FROM creature_movement_template WHERE entry=21818;
+-- Infinite Executioner 1
+INSERT INTO creature_movement_template SELECT 18994 AS entry, pathId, `point`, position_x, position_y, position_z, orientation, waittime, script_id, `comment` FROM creature_movement_template WHERE entry=21818;
+-- Infinite Executioner 2
+INSERT INTO creature_movement_template SELECT 21138 AS entry, pathId, `point`, position_x, position_y, position_z, orientation, waittime, script_id, `comment` FROM creature_movement_template WHERE entry=21818;
+-- Infinite Vanquisher 1
+INSERT INTO creature_movement_template SELECT 18995 AS entry, pathId, `point`, position_x, position_y, position_z, orientation, waittime, script_id, `comment` FROM creature_movement_template WHERE entry=21818;
+-- Infinite Vanquisher 2
+INSERT INTO creature_movement_template SELECT 21139 AS entry, pathId, `point`, position_x, position_y, position_z, orientation, waittime, script_id, `comment` FROM creature_movement_template WHERE entry=21818;
+
+-- Dark Portal Beam Invisible Stalker
+UPDATE creature_template SET MovementType=2 WHERE entry=18555;
+DELETE FROM creature_movement_template WHERE entry=18555;
+INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(18555,0,0,-2015.482,7120.704,23.13793,0,0,100),
+(18555,0,1,-2025.422,7119.652,22.8304,0,1855501,100), -- Medivh's location
+(18555,0,2,-2028.342,7119.343,22.74003,0,0,100), -- become visible approximately here
+(18555,0,3,-2028.324,7115.846,24.32336,0,0,100),
+(18555,0,4,-2025.351,7113.387,26.40669,0,0,100),
+(18555,0,5,-2019.329,7115.124,28.12893,0,0,100),
+(18555,0,6,-2018.398,7120.879,28.68447,0,0,100),
+(18555,0,7,-2022.006,7125.569,27.93447,0,0,100),
+(18555,0,8,-2027.893,7125.918,28.44872,0,0,100),
+(18555,0,9,-2031.842,7121.833,30.53688,0,0,100),
+(18555,0,11,-2037.109,7123.207,32.26184,0,0,100),
+(18555,0,12,-2039.431,7129.749,35.7063,0,0,100),
+(18555,0,13,-2044.417,7130.989,37.17852,0,0,100),
+(18555,0,14,-2048.334,7126.048,38.53963,0,0,100),
+(18555,0,15,-2051.617,7118.515,35.03963,0,0,100),
+(18555,0,16,-2054.49,7115.438,37.01185,0,0,100),
+(18555,0,17,-2060.806,7114.031,39.03963,0,0,100),
+(18555,0,18,-2065.167,7119.386,36.65075,0,0,100),
+(18555,0,19,-2069.025,7123.637,34.78963,0,0,100),
+(18555,0,20,-2069.283,7129.011,39.12296,0,0,100),
+(18555,0,21,-2071.743,7134.357,41.73408,0,0,100),
+(18555,0,22,-2074.252,7132.56,44.28963,0,0,100),
+(18555,0,23,-2076.349,7127.46,46.67852,0,0,100),
+(18555,0,24,-2077.401,7122.225,48.26185,0,0,100),
+(18555,0,25,-2082.191,7118.193,42.18267,0,0,100),
+(18555,0,26,-2085.068,7123.927,40.7826,1000,1,100); -- despawn
+
 -- Shadow Council Enforcer (Spawned in SD2 in Post Event)
 DELETE FROM creature_movement_template WHERE entry IN(17023);
 INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
@@ -129,6 +266,7 @@ INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 
+DELETE FROM creature_template_addon WHERE entry=18555; -- previously added, but we need better control over it (no longer casted using addon)
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (15608, 0, 0, 0, 0, 0, 0, '31635 31556'), -- Medivh
 (17881, 0, 0, 1, 16, 0, 0, NULL), -- Aeonus
@@ -453,6 +591,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1702301,15000,0,0,0,0,2000020005,0,0,0,15608,20,0,'Medivh - Orcs of the Horde! This portal is the gateway to your new destiny! Azeroth lies before you, ripe for the taking!',0,0,0,0),
 (1702301,23000,32,0,0,0,0,0,0,0,0,0,0,'Shadow Council Enforcer - Resume Waypoints',0,0,0,0),
 (1702301,24000,0,0,0,0,2000020006,0,0,0,0,0,0,'Shadow Council Enforcer - Gul''dan speaks the truth! We should return at once to tell our brothers of the news! Retreat back through the portal!',0,0,0,0);
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (2181801,1855501);
+INSERT INTO `dbscripts_on_creature_movement` (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(2181801, 0, 0, 37, 19, 9, 0, 15608, 30, 9, 0, 0, 0, 0, 0, 0, 0, 0, 'Portal Spawn - move to position around Medivh'),
+(2181801, 1500, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Portal Spawn - Set Idle Movement'),
+(2181801, 1500, 1, 15, 31326, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Portal Spawn - Corrupt Medivh'),
+
+(1855501, 0, 0, 15, 32566, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Dark Portal Beam Invisible Stalker - Purple Banish State');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020005,2000020006);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 
