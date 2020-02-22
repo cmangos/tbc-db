@@ -1,4 +1,4 @@
 -- Ancestral Spirit Wolf
-UPDATE creature_template SET UnitFlags=768, Faction=2402 WHERE Entry=17077;
+UPDATE creature_template SET UnitFlags=768 WHERE Entry=17077;
 
 
