@@ -16429,7 +16429,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2104608','21046','6','0','100','0','10040','0','0','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Boulder''mok Brute - Say on Death if Killer Player has Completed Quest 11000'),
 ('2104609','21046','0','0','100','1','6000','6000','13000','14000','0','0','11','37577','1','0','0','0','0','0','0','0','0','0','Boulder''mok Brute - Cast Debilitating Strike'),
 ('2104610','21046','2','0','100','0','25','0','0','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Boulder''mok Brute - Cast Enrage at 25% HP'),
--- Boulder'mok Shaman
+-- Boulder''mok Shaman 21047
 ('2104701','21047','22','0','100','1','3','10040','0','0','0','0','54','-10479','0','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2104702','21047','22','0','100','1','34','10040','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2104703','21047','22','0','100','1','39','10040','0','0','0','0','54','-10477','6','0','54','-10478','6','0','0','0','0','0','Boulder''mok Shaman - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -16438,11 +16438,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2104706','21047','22','0','100','1','75','10040','0','0','0','0','5','15','0','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Roar on Receive TEXTEMOTE_ROAR if Player has Completed Quest 11000'),
 ('2104707','21047','22','0','100','1','101','10040','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2104708','21047','6','0','100','0','10040','0','0','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Say on Death if Killer Player has Completed Quest 11000'),
-('2104709','21047','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Set Phase 1 on Aggro'),
-('2104710','21047','27','0','100','1','12550','1','15000','30000','0','0','11','12550','0','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Cast Lightning Shield on Missing Buff'),
-('2104711','21047','16','1','100','1','28902','30','20000','40000','0','0','11','28902','12','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Cast Bloodlust on Friendly Missing Buff (Phase 1)'),
-('2104712','21047','14','0','100','1','2500','40','15300','22900','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Cast Healing Wave on Friendly Missing HP'),
-('2104713','21047','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Set Phase 0 on Evade'),
+('2104709','21047','27','0','100','1','12550','1','15000','30000','0','0','11','12550','0','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Cast Lightning Shield on Missing Buff'),
+('2104710','21047','16','0','100','1025','28902','30','20000','40000','0','0','11','28902','12','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Cast Bloodlust on Friendly Missing Buff'),
+('2104711','21047','14','0','100','1025','2500','40','15300','22900','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Boulder''mok Shaman - Cast Healing Wave on Friendly Missing HP'),
 -- Boulder'mok Chieftain 21048
 ('2104801','21048','22','0','100','1','3','10040','0','0','0','0','54','-10479','0','0','0','0','0','0','0','0','0','0','Boulder''mok Chieftain - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2104802','21048','22','0','100','1','34','10040','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Boulder''mok Chieftain - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
