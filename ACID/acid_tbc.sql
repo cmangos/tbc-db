@@ -16033,10 +16033,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1999607','19996','22','0','100','1','101','10040','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('1999608','19996','6','0','100','0','10040','0','0','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bladespire Battlemage - Say on Death if Killer Player has Completed Quest 11000'),
 ('1999609','19996','4','0','15','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Bladespire Battlemage - Random Say on Aggro'),
-('1999610','19996','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Set Phase 1 on Aggro'),
-('1999611','19996','16','1','100','1','6742','30','10900','18100','0','0','11','6742','12','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Cast Bloodlust on Friendly Missing Buff (Phase 1)'),
-('1999612','19996','9','1','100','1','0','30','14000','18000','0','0','11','16102','1','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Cast Flamestrike (Phase 1)'),
-('1999613','19996','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Set Phase 0 on Evade'),
+('1999610','19996','16','0','100','1025','6742','30','10900','18100','0','0','11','6742','12','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Cast Bloodlust on Friendly Missing Buff'),
+('1999611','19996','0','0','100','1025','13000','21000','18000','24000','0','0','11','16102','1','0','0','0','0','0','0','0','0','0','Bladespire Battlemage - Cast Flamestrike'),
 -- Bladespire Enforcer 19997
 ('1999701','19997','22','0','100','1','3','10040','0','0','0','0','54','-10479','0','0','0','0','0','0','0','0','0','0','Bladespire Enforcer - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1999702','19997','22','0','100','1','34','10040','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Bladespire Enforcer - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
