@@ -20444,8 +20444,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2184402','21844','2','0','100','0','40','0','0','0','0','0','11','39080','0','0','0','0','0','0','0','0','0','0','Mountain Colossus - Cast Summon Mountain Shardling at 40% HP'),
 -- Slain Auchenai Warrior (21846) - NSR
 -- Bone Crawler (21849) - npc_burster_worm
--- Auchenai Warrior
+-- Auchenai Warrior 21852
 ('2185201','21852','0','0','100','1','4000','8000','5000','9000','0','0','11','38618','0','0','0','0','0','0','0','0','0','0','Auchenai Warrior - Cast Whirlwind'),
+('2185202','21852','0','0','100','1','5000','20000','11000','25000','0','0','11','37592','1','0','0','0','0','0','0','0','0','0','Auchenai Warrior - Cast Knockdown'),
 -- Ironspine Petrifier
 ('2185401','21854','0','0','100','1','6000','9000','14000','18000','0','0','11','32905','4','0','0','0','0','0','0','0','0','0','Ironspine Petrifier - Cast Glare'),
 -- Sha'tar Vindicator
