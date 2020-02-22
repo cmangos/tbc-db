@@ -11,4 +11,8 @@ UPDATE creature_template SET Family=0 WHERE entry IN (15517,15630,15962);
 UPDATE gossip_menu_option SET npc_option_npcflag=128 WHERE menu_id=347 AND id=4;
 UPDATE creature_template SET NpcFlags=NpcFlags|128 WHERE entry IN (15350,15351);
 
+DELETE FROM spell_bonus_data WHERE entry IN (20154,21084);
+INSERT INTO spell_bonus_data (entry, direct_bonus, dot_bonus, ap_bonus, ap_dot_bonus, comments) VALUES
+(20154, 0, 0, 0, 0, '');
+
 
