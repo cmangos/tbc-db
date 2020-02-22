@@ -22887,7 +22887,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Harvey (21343) - NSR
 -- Phil (21344) - NSR
 -- Hugh (21345) - NSR
--- Durnholde Lookout 22128
+-- Durnholde Lookout 22128 - Implement ss.39424 Summon Durnholde Reinforcements
 ('2212801','22128','1','0','10','1','30000','180000','180000','360000','0','0','1','-10938','-10939','-10940','0','0','0','0','0','0','0','0','Durnholde Lookout - Say OOC'),
 ('2212802','22128','6','0','10','32','0','0','0','0','0','0','1','-10945','-10946','-10947','1','-10946','-10947','-10948','1','-10945','-10946','-10948','Durnholde Lookout - Random Say on Death'),
 ('2212803','22128','4','0','10','32','0','0','0','0','0','0','1','-10941','-10942','-10943','1','-10942','-10943','-10944','1','-10941','-10942','-10944','Durnholde Lookout - Random Say on Aggro'),
