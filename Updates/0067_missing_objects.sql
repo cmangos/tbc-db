@@ -35,10 +35,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (105360,183045,530,1,-393.172,7912.75,45.0216,2.60053,0,0,0.96363,0.267241,45,90,255,1); -- Dreaming Glory
 
 -- existing Flame Cap guid 142387 should be pooled with new Ragveil guid 105357
-DELETE FROM pool_gameobject WHERE guid=142387; -- remove Flame Cap from Master Herb Pool - Zangarmarsh
+-- DELETE FROM pool_gameobject WHERE guid=142387; -- remove Flame Cap from Master Herb Pool - Zangarmarsh
 
 -- existing Ragveil guid 142339 should be pooled with new Ragveil guid 105358
-DELETE FROM pool_gameobject WHERE guid=142339; -- remove Ragveil from Master Herb Pool - Zangarmarsh
+-- DELETE FROM pool_gameobject WHERE guid=142339; -- remove Ragveil from Master Herb Pool - Zangarmarsh
 
 UPDATE gameobject SET position_x=-1190.04, position_y=7048.17, position_z=32.6575 WHERE guid=23914; -- move existing nearby Bluefish School to a location that is reachable
 
@@ -46,21 +46,21 @@ UPDATE gameobject SET position_x=-1190.04, position_y=7048.17, position_z=32.657
 DELETE FROM pool_gameobject WHERE guid IN (190731,190730);
 
 -- pool these pairs of existing spawns
-DELETE FROM pool_gameobject WHERE guid IN (142383,142358);
-DELETE FROM pool_gameobject WHERE guid IN (142378,142389);
+-- DELETE FROM pool_gameobject WHERE guid IN (142383,142358);
+-- DELETE FROM pool_gameobject WHERE guid IN (142378,142389);
 
-DELETE FROM pool_template WHERE entry IN (16468,16469,16470,16471,16471,16472,16473,16474,16475);
+DELETE FROM pool_template WHERE entry IN (16468,16469,16470,16471,16471);
 INSERT INTO pool_template (entry, max_limit, description) VALUES
 (16468, 1, 'Zangarmarsh - Fishing Node'),
 (16469, 1, 'Zangarmarsh - Fishing Node'),
 (16470, 1, 'Nagrand - Fishing Node'),
-(16471, 1, 'Nagrand - Fishing Node'),
-(16472, 1, 'Zangarmarsh - Herb Node'),
-(16473, 1, 'Zangarmarsh - Herb Node'),
-(16474, 1, 'Zangarmarsh - Herb Node'),
-(16475, 1, 'Zangarmarsh - Herb Node');
+(16471, 1, 'Nagrand - Fishing Node');
+-- (16472, 1, 'Zangarmarsh - Herb Node'),
+-- (16473, 1, 'Zangarmarsh - Herb Node'),
+-- (16474, 1, 'Zangarmarsh - Herb Node'),
+-- (16475, 1, 'Zangarmarsh - Herb Node');
 
-DELETE FROM pool_gameobject WHERE pool_entry IN (16468,16469,16470,16471,16472,16473,16474,16475);
+DELETE FROM pool_gameobject WHERE pool_entry IN (16468,16469,16470,16471);
 INSERT INTO pool_gameobject (guid, pool_entry, chance, description) VALUES
 (23893, 16468, 0, 'Zangarmarsh - Brackish Mixed School'),
 (105349, 16468, 0, 'Zangarmarsh - Steam Pump Flotsam'),
@@ -73,34 +73,36 @@ INSERT INTO pool_gameobject (guid, pool_entry, chance, description) VALUES
 (190731, 16470, 0, 'Nagrand - Pure Water'),
 
 (190730, 16471, 0, 'Nagrand - Pure Water'),
-(105354, 16471, 0, 'Nagrand - Bluefish School'),
+(105354, 16471, 0, 'Nagrand - Bluefish School');
 
-(142387, 16472, 0, 'Zangarmarsh - Flame Cap'),
-(105357, 16472, 0, 'Zangarmarsh - Ragveil'),
+-- (142387, 16472, 0, 'Zangarmarsh - Flame Cap'),
+-- (105357, 16472, 0, 'Zangarmarsh - Ragveil'),
 
-(142339, 16473, 0, 'Zangarmarsh - Ragveil'),
-(105358, 16473, 0, 'Zangarmarsh - Ragveil'),
+-- (142339, 16473, 0, 'Zangarmarsh - Ragveil'),
+-- (105358, 16473, 0, 'Zangarmarsh - Ragveil'),
 
-(142383, 16474, 0, 'Zangarmarsh - Flame Cap'),
-(142358, 16474, 0, 'Zangarmarsh - Ragveil'),
+-- (142383, 16474, 0, 'Zangarmarsh - Flame Cap'),
+-- (142358, 16474, 0, 'Zangarmarsh - Ragveil'),
 
-(142389, 16475, 0, 'Zangarmarsh - Flame Cap'),
-(142378, 16475, 0, 'Zangarmarsh - Ragveil');
+-- (142389, 16475, 0, 'Zangarmarsh - Flame Cap'),
+-- (142378, 16475, 0, 'Zangarmarsh - Ragveil');
 
 -- adding a pool into the Zangarmarsh Master Herb Pool... this seems like it works okay
 -- Zangarmarsh Master Herb Pool contains mix of pools and gameobjects now
-DELETE FROM pool_pool WHERE pool_id IN (16472,16473,16474,16475);
-INSERT INTO pool_pool (pool_id, mother_pool, chance, description) VALUES
-(16472, 13049, 0, 'Zangarmarsh Herb Node -> Master Herb Pool'),
-(16473, 13049, 0, 'Zangarmarsh Herb Node -> Master Herb Pool'),
-(16474, 13049, 0, 'Zangarmarsh Herb Node -> Master Herb Pool'),
-(16475, 13049, 0, 'Zangarmarsh Herb Node -> Master Herb Pool');
+-- DELETE FROM pool_pool WHERE pool_id IN (16472,16473,16474,16475);
+-- INSERT INTO pool_pool (pool_id, mother_pool, chance, description) VALUES
+-- (16472, 13049, 0, 'Zangarmarsh Herb Node -> Master Herb Pool'),
+-- (16473, 13049, 0, 'Zangarmarsh Herb Node -> Master Herb Pool'),
+-- (16474, 13049, 0, 'Zangarmarsh Herb Node -> Master Herb Pool'),
+-- (16475, 13049, 0, 'Zangarmarsh Herb Node -> Master Herb Pool');
 
 -- Master Herb Pool - Zangarmarsh
 -- add some objects directly to the master pool (as is done currently everywhere)
-DELETE FROM pool_gameobject WHERE guid IN (105328,105359,105360);
+DELETE FROM pool_gameobject WHERE guid IN (105328,105357,105358,105359,105360);
 INSERT INTO pool_gameobject (guid, pool_entry, chance, description) VALUES
 (105328, 13049, 0, 'Zangarmarsh - Golden Sansam'),
+(105357, 13049, 0, 'Zangarmarsh - Ragveil'),
+(105358, 13049, 0, 'Zangarmarsh - Ragveil'),
 (105359, 13049, 0, 'Zangarmarsh - Felweed'),
 (105360, 13049, 0, 'Zangarmarsh - Dreaming Glory');
 
