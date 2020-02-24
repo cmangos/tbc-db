@@ -1,0 +1,60 @@
+-- double spawned herbs cleanup
+
+-- Felweed
+-- in addition to being double spawned, this one was a member of Terokkar pool despite being in SMV...
+DELETE FROM gameobject WHERE guid=142066;
+DELETE FROM pool_gameobject WHERE guid=142066;
+-- Dreaming Glory
+DELETE FROM gameobject WHERE guid=141875;
+DELETE FROM pool_gameobject WHERE guid=141875;
+DELETE FROM gameobject WHERE guid=141877;
+DELETE FROM pool_gameobject WHERE guid=141877;
+DELETE FROM gameobject WHERE guid=141886; -- this is in Terokkar, not SMV
+DELETE FROM pool_gameobject WHERE guid=141886;
+-- Terocone
+DELETE FROM gameobject WHERE guid=141901;
+DELETE FROM pool_gameobject WHERE guid=141901;
+-- Nightmare Vine
+DELETE FROM gameobject WHERE guid=141947;
+DELETE FROM pool_gameobject WHERE guid=141947;
+DELETE FROM gameobject WHERE guid=142222; -- member of Terokkar pool...
+DELETE FROM pool_gameobject WHERE guid=142222;
+-- Mana Thistle
+DELETE FROM gameobject WHERE guid=141953;
+DELETE FROM pool_gameobject WHERE guid=141953;
+DELETE FROM gameobject WHERE guid=141954;
+DELETE FROM pool_gameobject WHERE guid=141954;
+
+-- missing objects added
+
+DELETE FROM gameobject WHERE guid BETWEEN 105361 AND 105385;
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
+(105361,185129,530,1,-3728.71,464.655,104.201,3.11529,0.00855398,-0.0132017,0.999788,0.0132625,60,60,255,1), -- Campfire
+(105362,185132,530,1,-3695.99,360.271,91.091,2.87979,0,0,0.991445,0.130528,60,60,255,1), -- Campfire
+
+-- pooled using pool_gameobject_template (pool entry 13998)
+(105363,184716,530,1,-3105.58,1658.49,64.5913,6.14356,0,0,-0.0697555,0.997564,60,60,255,1), -- Coilskar Chest
+(105364,184716,530,1,-3012.27,1654.83,69.5433,2.04204,0,0,0.85264,0.522499,60,60,255,1), -- Coilskar Chest
+(105365,184716,530,1,-3020.69,1657.22,69.0071,0.226893,0,0,0.113203,0.993572,60,60,255,1), -- Coilskar Chest
+(105366,184716,530,1,-2927.68,1684.24,67.8598,4.53786,0,0,-0.766044,0.642789,60,60,255,1), -- Coilskar Chest
+(105367,184716,530,1,-2923.87,1719.33,67.7436,1.01229,0,0,0.484809,0.87462,60,60,255,1), -- Coilskar Chest
+(105368,184716,530,1,-2895.69,1685.15,59.4039,5.70723,0,0,-0.284015,0.95882,60,60,255,1), -- Coilskar Chest
+(105369,184716,530,1,-2879.01,1675.96,59.1885,1.91986,0,0,0.819152,0.573577,60,60,255,1), -- Coilskar Chest
+(105370,184716,530,1,-2784.61,1402.4,39.5078,4.32842,0,0,-0.829037,0.559194,60,60,255,1), -- Coilskar Chest
+(105371,184716,530,1,-2777.03,1402.02,39.3734,4.85202,0,0,-0.656058,0.75471,60,60,255,1), -- Coilskar Chest
+(105372,184716,530,1,-2940.44,1362.79,7.72196,0.785397,0,0,0.382683,0.92388,60,60,255,1), -- Coilskar Chest
+(105373,184716,530,1,-2939.84,1351.81,6.61668,5.68977,0,0,-0.292372,0.956305,60,60,255,1), -- Coilskar Chest
+(105374,184716,530,1,-2788.01,1147.29,7.48132,0.645772,0,0,0.317305,0.948324,60,60,255,1), -- Coilskar Chest
+(105375,184716,530,1,-2749.75,1165.3,6.78112,3.83973,0,0,-0.939692,0.342021,60,60,255,1), -- Coilskar Chest
+(105376,184716,530,1,-2711.34,1160.31,5.99704,3.14159,0,0,-1,0,60,60,255,1), -- Coilskar Chest
+(105377,184716,530,1,-2672.26,1177.22,5.25043,2.75761,0,0,0.981627,0.190812,60,60,255,1), -- Coilskar Chest
+(105378,184716,530,1,-2569.97,1386.19,41.1709,3.00195,0,0,0.997563,0.0697661,60,60,255,1), -- Coilskar Chest
+(105379,184716,530,1,-2652.86,1338.09,34.4453,2.32129,0,0,0.91706,0.39875,60,60,255,1), -- Coilskar Chest
+(105380,184716,530,1,-2630.52,1355.57,35.8475,4.17134,0,0,-0.870356,0.492424,60,60,255,1), -- Coilskar Chest
+(105381,184716,530,1,-2649.87,1295.34,28.6827,4.01426,0,0,-0.906307,0.422619,60,60,255,1), -- Coilskar Chest
+(105382,184716,530,1,-2694.7,1380.5,38.5802,4.60767,0,0,-0.743144,0.669132,60,60,255,1), -- Coilskar Chest
+(105383,184716,530,1,-2732.99,1277.77,33.3021,3.85718,0,0,-0.936671,0.35021,60,60,255,1), -- Coilskar Chest
+(105384,184716,530,1,-2728.53,1257.32,33.6659,2.3911,0,0,0.930417,0.366502,60,60,255,1), -- Coilskar Chest
+(105385,184716,530,1,-2842.13,1221.44,7.11321,0.59341,0,0,0.292371,0.956305,60,60,255,1); -- Coilskar Chest
+
+
