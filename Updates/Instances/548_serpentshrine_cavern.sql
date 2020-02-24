@@ -716,9 +716,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+191, @CGUID+39, 1024), -- Coilfang Serpentguard -> Fathom-Lord Karathress
 (@CGUID+192, @CGUID+39, 1024), -- Coilfang Serpentguard -> Fathom-Lord Karathress
 
-(@CGUID+281, @CGUID+39, 1159), -- Fathom-Guard Caribdis -> Fathom-Lord Karathress
-(@CGUID+282, @CGUID+39, 1159), -- Fathom-Guard Tidalvess -> Fathom-Lord Karathress
-(@CGUID+283, @CGUID+39, 1159), -- Fathom-Guard Sharkkis -> Fathom-Lord Karathress
+(@CGUID+281, @CGUID+39, 1159+4096), -- Fathom-Guard Caribdis -> Fathom-Lord Karathress
+(@CGUID+282, @CGUID+39, 1159+4096), -- Fathom-Guard Tidalvess -> Fathom-Lord Karathress
+(@CGUID+283, @CGUID+39, 1159+4096), -- Fathom-Guard Sharkkis -> Fathom-Lord Karathress
 
 (@CGUID+94, @CGUID+40, 1024), -- Greyheart Tidecaller -> Leotheras the Blind
 (@CGUID+96, @CGUID+40, 1024), -- Greyheart Tidecaller -> Leotheras the Blind
@@ -923,6 +923,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+273, @CGUID+275, 1167), -- Greyheart Spellbinder -> Greyheart Spellbinder
 (@CGUID+274, @CGUID+275, 1167); -- Greyheart Spellbinder -> Greyheart Spellbinder
 
+DELETE FROM creature_linking_template WHERE entry IN (21964,21965,21966);
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (21806, 548, 21806, 3, 0), -- Greyheart Spellbinder -> Greyheart Spellbinder
 (21857, 548, 21215, 4112, 0), -- Inner Demon -> Leotheras the Blind
@@ -932,9 +933,6 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (21913, 548, 21213, 4112, 0), -- Water Globule -> Morogrim Tidewalker
 (21920, 548, 21213, 4112, 0), -- Tidewalker Lurker -> Morogrim Tidewalker
 (21958, 548, 21212, 4096, 0), -- Enchanted Elemental -> Lady Vashj
-(21964, 548, 21214, 7, 0), -- Fathom-Guard Caribdis -> Fathom-Lord Karathress
-(21965, 548, 21214, 7, 0), -- Fathom-Guard Tidalvess -> Fathom-Lord Karathress
-(21966, 548, 21214, 7, 0), -- Fathom-Guard Sharkkis -> Fathom-Lord Karathress
 (22009, 548, 21212, 4096, 0), -- Tainted Elemental -> Lady Vashj
 (22035, 548, 21216, 4112, 0), -- Pure Spawn of Hydross -> Hydross the Unstable
 (22036, 548, 21216, 4112, 0), -- Tainted Spawn of Hydross -> Hydross the Unstable
