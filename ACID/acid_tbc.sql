@@ -18828,7 +18828,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sundered Shard 20498
 -- Seeping Sludge
 ('2050101','20501','2','0','100','1','50','0','30000','45000','0','0','11','36465','0','0','0','0','0','0','0','0','0','0','Seeping Sludge - Cast Seeping Split at 50% HP'),
-('2050102','20501','8','0','100','0','35686','-1','0','0','0','0','36','20806','-1','0','0','0','0','0','0','0','0','0','Seeping Sludge - Change Entry after (proc) Spell 35686'),
+('2050102','20501','8','0','100','0','35686','-1','0','0','0','0','11','3617','0','2','11','35687','0','2','0','0','0','0','Seeping Sludge - Cast Quiet Suicide and Summon Seeping Sludge Globule after (proc) Spell 35686'),
 -- Tormented Soul
 ('2051201','20512','4','0','100','0','0','0','0','0','0','0','36','20480','1','0','41','300000','0','0','0','0','0','0','Tormented Soul - Transform into Kirin''Var Ghost and Delayed Despawn on Aggro'),
 ('2051202','20512','0','0','100','1','6000','8000','15000','17000','0','0','11','36153','1','0','0','0','0','0','0','0','0','0','Tormented Soul - Cast Soulbind'),
@@ -18930,7 +18930,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2077708','20777','30','0','100','0','5','20610','0','0','0','0','1','-10739','0','0','55','6','0','0','0','0','0','0','Talbuk Sire - Text Emote and Attack Start on Receive AI Event Custom A'),
 -- Void Waste
 ('2077801','20778','0','0','100','1','2000','6000','7000','10000','0','0','11','36519','0','32','0','0','0','0','0','0','0','0','Void Waste - Cast Toxic Burst'),
-('2077802','20778','8','0','100','0','35686','-1','0','0','0','0','36','20805','-1','0','0','0','0','0','0','0','0','0','Void Waste - Change Entry after (proc) Spell 35686'),
+('2077802','20778','8','0','100','0','35686','-1','0','0','0','0','11','3617','0','2','11','35688','0','2','0','0','0','0','Void Waste - Cast Quiet Suicide and Summon Void Waste Globule after (proc) Spell 35686'),
 -- Congealed Void Horror 20779
 -- Kaylaan 20780
 ('2078001','20780','1','2','100','1','44000','73000','44000','73000','0','0','11','35746','0','0','1','-11185','-11186','-11187','22','1','0','0','Kaylaan - Cast Resurrection and Random Say and Set Phase 1 OOC (Phase 0)'),
@@ -18957,6 +18957,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2080301','20803','9','0','100','1','0','5','10000','18000','0','0','11','36487','0','0','0','0','0','0','0','0','0','0','Overmaster Grindgarr - Cast Fel Flames'),
 ('2080302','20803','9','0','100','1','0','5','15000','18000','0','0','11','35238','1','0','0','0','0','0','0','0','0','0','Overmaster Grindgarr - Cast War Stomp'),
 -- Void Waste Globule 20805
+('2080501','20805','11','0','100','0','0','0','0','0','0','0','11','35242','0','0','0','0','0','0','0','0','0','0','Void Waste Globule - Cast Darkstalker Birth on Spawn'),
 -- Seeping Sludge Globule 20806
 ('2080601','20806','11','0','100','0','0','0','0','0','0','0','11','35242','0','0','0','0','0','0','0','0','0','0','Seeping Sludge Globule - Cast Darkstalker Birth on Spawn'),
 -- Mehrdad 20810
