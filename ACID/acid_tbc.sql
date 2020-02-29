@@ -19305,6 +19305,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2088702','20887','9','0','100','1025','0','30','3800','5200','0','0','11','36227','1','256','0','0','0','0','0','0','0','0','Deathforge Imp - Cast Firebolt'),
 -- Earthmender Wilda 21027 - npc_wilda
 -- Captured Water Spirit 21029
+('2102901','21029','11','0','100','0','0','0','0','0','0','0','11','35929','0','0','0','0','0','0','0','0','0','0','Captured Water Spirit - Cast Water Bubble on Spawn'),
 -- Coilskar Assassin
 ('2104401','21044','4','0','100','0','0','0','0','0','0','0','1','-10268','-10269','0','0','0','0','0','0','0','0','0','Coilskar Assassin - Say on Aggro'),
 -- Enraged Earth Spirit 21050
