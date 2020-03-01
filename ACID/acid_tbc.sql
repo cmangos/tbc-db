@@ -19265,6 +19265,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Eclipsion Bloodwarder 19806
 ('1980601','19806','6','0','100','0','0','0','0','0','0','0','11','38311','1','7','43','0','0','0','0','0','0','0','Eclipsion Bloodwarder - Cast Summon Eclipsion Hawkstrider and Dismount on Death'),
 ('1980602','19806','2','0','100','1024','35','0','0','0','0','0','11','37838','4','0','0','0','0','0','0','0','0','0','Eclipsion Bloodwarder - Cast Blood Leech at 35% HP'),
+('1980603','19806','13','0','100','1','17000','18000','0','0','0','0','11','38313','1','0','0','0','0','0','0','0','0','0','Eclipsion Bloodwarder - Cast Pummel on Target Casting'),
 -- Crazed Colossus
 ('1982301','19823','6','0','100','0','0','0','0','0','0','0','11','38223','7','7','0','0','0','0','0','0','0','0','Crazed Colossus - Cast Quest Credit: Crazed Colossus on Death'),
 ('1982302','19823','2','0','100','0','75','0','0','0','0','0','11','37947','0','0','0','0','0','0','0','0','0','0','Crazed Colossus - Cast Summon Crazed Shardling at 75% HP'),
