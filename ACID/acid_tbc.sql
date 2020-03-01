@@ -18770,6 +18770,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Duro Control Console 20418 - npc_manaforge_control_console
 -- Overseer Athanel 20435
 ('2043501','20435','9','0','100','1','0','5','8000','11000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Overseer Athanel - Cast Cleave'),
+('2043502','20435','13','0','100','1','15000','15000','0','0','0','0','11','34802','1','0','0','0','0','0','0','0','0','0','Overseer Athanel - Cast Kick on Target Casting'),
+('2043503','20435','9','0','100','1','8','25','30000','30000','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Overseer Athanel - Cast Charge'),
 -- Sunfury Protector 20436
 -- Ara Technician 20438
 -- Ara Engineer 20439
