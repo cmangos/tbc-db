@@ -66,8 +66,14 @@ UPDATE gameobject_template SET Faction=114, `size`=2 WHERE entry=184661; -- Smok
 -- summoned by spell 36302 Summon Honor Hold Gryphon Brigadier South
 -- summon spells casted by 21173 Zeth'Gor Quest Credit Marker, They Must Burn
 -- cast 36325 They Must Burn Bomb Drop (DND) -> target 21182 Zeth'Gor Quest Credit Marker, They Must Burn, Tower South
--- object 183816 should not have static spawns... It is summoned by spell 36325
-DELETE FROM gameobject WHERE guid IN (24683,24684,24685,24686,32141,32142,32143);
+
+-- object 183816 should possibly not have static spawns... It is summoned by spell 36325 Spread Hellfire Fire
+-- associated with trap object 183929 Hellfire Hot Spot Spreader -> casts spell 34516
+-- DELETE FROM gameobject WHERE guid IN (24683,24684,24685,24686,32141,32142,32143);
+DELETE FROM spell_script_target WHERE entry=34516;
+INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
+(34516, 0, 183816, 0);
+UPDATE gameobject_template SET data8=1 WHERE entry=183929; -- set serverside so that it's not visible to players
 
 UPDATE creature_template SET ExtraFlags=ExtraFlags|4096 WHERE Entry=21173;
 
