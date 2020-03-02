@@ -452,7 +452,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (17671, 0, 0, 0, 0, 333, 0, '12782 18950'), -- Shattered Hand Champion
 (17693, 0, 0, 0, 0, 0, 0, '18950'), -- Shattered Hand Scout
 (17695, 0, 0, 1, 16, 0, 0, '30991'), -- Shattered Hand Assassin
-(18370, 0, 0, 0, 0, 0, 0, '32250'), -- Wild Shadow Fissure
+(18370, 0, 0, 0, 0, 0, 0, NULL), -- Wild Shadow Fissure
 (20923, 0, 0, 0, 0, 0, 0, '18950'); -- Blood Guard Porung
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
