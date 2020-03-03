@@ -73,7 +73,6 @@ UPDATE gameobject_template SET Faction=114, `size`=2 WHERE entry=184661; -- Smok
 DELETE FROM spell_script_target WHERE entry=34516;
 INSERT INTO spell_script_target (entry, type, targetEntry, inverseEffectMask) VALUES
 (34516, 0, 183816, 0);
-UPDATE gameobject_template SET data8=1 WHERE entry=183929; -- set serverside so that it's not visible to players
 
 UPDATE creature_template SET ExtraFlags=ExtraFlags|4096 WHERE Entry=21173;
 
