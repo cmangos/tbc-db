@@ -65,6 +65,8 @@ UPDATE gameobject_template SET data8=1221 WHERE entry IN (68865, 21530, 21277);
 -- ============================================================
 -- Hellfire Hot Spot Spreader
 UPDATE gameobject_template SET data8=1 WHERE entry=183929; -- set serverside so that it's not visible to players
+-- Sealed Tome traps
+UPDATE gameobject_template SET data8=1 WHERE entry IN (181831,181838,181840,181842,181844);
 
 -- -------------------------------
 -- Creature custom changes
