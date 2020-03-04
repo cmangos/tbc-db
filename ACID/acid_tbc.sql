@@ -27940,6 +27940,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Serpentshrine Tidecaller
 ('2223801','22238','0','0','100','1','2000','7000','11000','16000','0','0','11','38623','1','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Water Bolt Volley'),
 ('2223802','22238','9','0','100','1','0','8','16000','21000','0','0','11','39035','0','1','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Frost Nova'),
+('2223803','22238','7','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Forced Despawn on Evade'),
+('2223804','22238','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Zone Combat Pulse on Spawn'),
 -- Rancid Mushroom
 ('2225001','22250','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Rancid Mushroom - Stop Combat Movement and Stop Auto Attack on Spawn'),
 ('2225002','22250','0','0','100','1','1500','1500','1500','1500','0','0','11','31698','0','7','0','0','0','0','0','0','0','0','Rancid Mushroom - Cast Grow'),
