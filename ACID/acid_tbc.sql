@@ -1457,7 +1457,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Archmage Alturus (17613) - NSR
 -- Archmage Leryda (18253) - NSR
 -- Apprentice Darius (18255) - NSR
--- Voodoo Servant (24529) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
 
 
@@ -3551,7 +3550,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Marge (23764) - NSR
 -- Morgom (23766) - NSR
 -- Donna Brascoe (23858) - NSR
--- Voodoo Servant (24529) - NSR
 -- Kiz Coilspanner (24851) - NSR
 -- Budd\'s Bodyguard 25145
 ('2514501','25145','4','0','100','0','0','0','0','0','0','0','57','2','40','0','0','0','0','0','0','0','0','0','Budd''s Bodyguard - Enable Range Mode on Aggro'),
@@ -30556,6 +30554,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ashtongue Searing Totem 22896 - TotemAI
 -- Summoned Windfury Totem 22897 - TotemAI
 -- Captured Totem 23811 - TotemAI
+-- Voodoo Servant 24529
+('2452901','24529','0','0','100','1','1000','3000','3000','7000','0','0','11','19874','1','0','0','0','0','0','0','0','0','0','Voodoo Servant - Cast Lightning Bolt'),
 -- D.I.S.C.O.
 ('2798901','27989','11','0','100','0','0','0','0','0','0','0','11','50487','0','0','0','0','0','0','0','0','0','0','D.I.S.C.O. - Cast Create Disco Ball Visual Object on Spawn');
 
