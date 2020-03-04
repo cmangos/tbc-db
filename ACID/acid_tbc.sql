@@ -27943,9 +27943,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2223803','22238','7','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Forced Despawn on Evade'),
 ('2223804','22238','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Zone Combat Pulse on Spawn'),
 -- Rancid Mushroom
-('2225001','22250','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Rancid Mushroom - Stop Combat Movement and Stop Auto Attack on Spawn'),
-('2225002','22250','0','0','100','1','1500','1500','1500','1500','0','0','11','31698','0','7','0','0','0','0','0','0','0','0','Rancid Mushroom - Cast Grow'),
-('2225003','22250','0','0','100','0','20000','20000','0','0','0','0','11','38652','0','7','37','0','0','0','0','0','0','0','Rancid Mushroom - Cast Spore Cloud and Die'),
+('2225001','22250','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','50','0','0','0','Rancid Mushroom - Stop Combat Movement and Stop Auto Attack and Set React State Passive on Spawn'),
+('2225002','22250','29','0','100','1','1500','1500','1500','1500','0','0','11','31698','0','7','0','0','0','0','0','0','0','0','Rancid Mushroom - Cast Grow on Generic Timer'),
+('2225003','22250','29','0','100','0','20000','20000','0','0','0','0','11','38652','0','7','37','0','0','0','0','0','0','0','Rancid Mushroom - Cast Spore Cloud and Die on Generic Timer'),
 -- Mushrom Spell Effect
 ('2233501','22335','11','0','100','0','0','0','0','0','0','0','11','38730','0','0','0','0','0','0','0','0','0','0','Mushrom Spell Effect - Cast Refreshing Mist on Spawn'),
 -- Colossus Lurker (22347)
