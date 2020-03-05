@@ -458,15 +458,19 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- link "leaders" to bosses
 (@CGUID+74, @CGUID+82, 1024), -- Shattered Hand Legionnaire -> Grand Warlock Nethekurse
+
 (@CGUID+134, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+136, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+135, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+137, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+138, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
+
 (@CGUID+304, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+305, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+306, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+307, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+308, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+
 (@CGUID+52, @CGUID+53, 1167), -- Shattered Hand Sentry -> Shattered Hand Sentry
 
 -- Hall of the Fathers - first room
@@ -739,7 +743,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+132, 0, 540, 3, 66.2363, 130.973, -13.196, 4.80743, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+133, 16699, 540, 3, 67.1698, 183.923, -13.2365, 4.69381, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Reaver
 
--- First hallway in dungeon, Shattered Hand Heathen or Savage
+-- First hallway in dungeon, random between Shattered Hand Heathen or Savage in normal mode only
 (@CGUID+134, 0, 540, 1, 46.3248, 59.879, -12.9904, 0, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+135, 0, 540, 1, 83.755, 57.2887, -13.114, 3.15, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+136, 0, 540, 1, 53.5243, 60.0879, -13.0071, 0, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
@@ -911,11 +915,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+301, 17695, 540, 3, 274.497, 317.332, -0.3597, 6.27, 86400, 86400, 2, 0, 0, 1), -- Shattered Hand Assassin
 (@CGUID+302, 17695, 540, 3, 519.4913, 265.4981, 1.943648, 1.67471, 86400, 86400, 2, 0, 0, 1), -- Shattered Hand Assassin
 (@CGUID+303, 17695, 540, 3, 518.3307, 125.028, 1.981626, 4.529583, 86400, 86400, 0, 0, 0, 2), -- Shattered Hand Assassin
-(@CGUID+304, 17420, 540, 2, 46.3248, 59.879, -12.9904, 0, 1000, 1000, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+305, 17420, 540, 2, 83.755, 57.2887, -13.114, 3.15, 1000, 1000, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+306, 17420, 540, 2, 53.5243, 60.0879, -13.0071, 0, 1000, 1000, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+307, 17420, 540, 2,  90.0297, 57.4987, -13.1003, 3.261756, 1000, 1000, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+308, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 1000, 1000, 0, 0, 0, 2); -- Shattered Hand Heathen
+
+-- First hallway in dungeon, all Shattered Hand Heathen in heroic mode only
+(@CGUID+304, 17420, 540, 2, 46.3248, 59.879, -12.9904, 0, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+305, 17420, 540, 2, 83.755, 57.2887, -13.114, 3.15, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+306, 17420, 540, 2, 53.5243, 60.0879, -13.0071, 0, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+307, 17420, 540, 2,  90.0297, 57.4987, -13.1003, 3.261756, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+308, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 0, 0, 2); -- Shattered Hand Heathen
+
 -- ===========
 -- GAMEOBJECTS
 -- ===========
