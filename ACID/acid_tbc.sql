@@ -26256,6 +26256,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1950703','19507','0','0','100','1','22100','29400','34800','37700','0','0','11','34247','1','1','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer - Cast Summon Lasher Beast'),
 -- Sunseeker Herbalist (4.3.4 Official Data - Normal/Heroic)
 ('1950801','19508','0','0','100','1','6100','9600','12100','20500','0','0','11','22127','4','1','0','0','0','0','0','0','0','0','Sunseeker Herbalist - Cast Entangling Roots'),
+('1950802','19508','0','0','100','1','1000','4000','5000','8000','0','0','11','34641','4','0','0','0','0','0','0','0','0','0','Sunseeker Herbalist - Cast Spade Toss'),
 -- Sunseeker Harvester (4.3.4 Official Data - Normal/Heroic) - (No Polymorph Data Available)
 ('1950901','19509','0','0','100','1','3100','9700','8400','15700','0','0','11','34640','1','0','0','0','0','0','0','0','0','0','Sunseeker Harvester - Cast Wilting Touch'),
 ('1950902','19509','0','0','100','1','9000','15000','12000','18000','0','0','11','34639','5','1','0','0','0','0','0','0','0','0','Sunseeker Harvester - Cast Polymorph'),
