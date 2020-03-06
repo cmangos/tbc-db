@@ -1368,10 +1368,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2595501, 0, 15, 46757, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hand of the Deceiver Sunwell - Cast Shadow Channelling');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020125,2000020126,2000020127);
-INSERT INTO `dbscript_string` (`entry`,`content_default`,`sound`,`type`,`language`,`emote`,`comment`) VALUES
-(2000020125, 'I''ll never stop. Never...', 0, 0, 0, 0, ''),
-(2000020126, 'The power! More, more, more!', 0, 0, 0, 0, ''),
-(2000020127, 'It seethes and burns...', 0, 0, 0, 0, '');
+INSERT INTO `dbscript_string` (`entry`,`content_default`,`sound`,`type`,`language`,`emote`, `broadcast_text_id`, `comment`) VALUES
+(2000020125, 'I''ll never stop. Never...', 0, 0, 0, 0, 23842, ''),
+(2000020126, 'The power! More, more, more!', 0, 0, 0, 0, 23840, ''),
+(2000020127, 'It seethes and burns...', 0, 0, 0, 0, 23841, '');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

@@ -3328,22 +3328,22 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1555101, 6000, 0, 0, 0, 0, 16159, 60, 3, 2000020010, 2000020011, 0, 0, 0, 0, 0, 0, 'Force Calliard - Random Say');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020008,2000020009,2000020010,2000020011,2000020012,2000020013,2000020014,2000020015,2000020016,2000020017,2000020018,2000020019,2000020020,2000020021,2000020128);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000020008, '<sigh> Seems like I''ve been at this forever...', 0, 0, 0, 1, 'Spectral Stable Hand - Say 1'),
-(2000020009, 'Another day, another stable to muck out.', 0, 0, 0, 1, 'Spectral Stable Hand - Say 2'),
-(2000020010, 'Am I hearing things?', 0, 0, 0, 1, 'Calliard - Say 1'),
-(2000020011, 'Who goes there?', 0, 0, 0, 1, 'Calliard - Say 2'),
-(2000020012, 'They''ll never know we''re missing.', 0, 0, 0, 1, 'Spectral Servant - Say 1'),
-(2000020013, 'The rest are fine without us.', 0, 0, 0, 1, 'Spectral Servant - Say 2'),
-(2000020014, 'If we dawdle much longer, there''ll be hell to pay!', 0, 0, 0, 1, 'Spectral Servant - Say 3'),
-(2000020015, 'You had better straighten up, or you''ll answer to me!', 0, 0, 0, 5, 'Bennett'),
-(2000020016, 'Yes. sir!', 0, 0, 0, 66, 'Spectral Sentry or Phantom Guardsman'),
-(2000020017, 'Where is the master?', 0, 0, 0, 1, 'Moroes Adds Random Say 1'),
-(2000020018, 'Why can we not talk to the master?', 0, 0, 0, 1, 'Moroes Adds Random Say 2'),
-(2000020019, 'The Master is deep in study.', 0, 0, 0, 1, 'Moroes Random Say 1'),
-(2000020020, 'The Master will return from Stormwind soon...', 0, 0, 0, 1, 'Moroes Random Say 2'),
-(2000020021, 'The Master is meeting with his apprentice.', 0, 0, 0, 1, 'Moroes Random Say 3'),
-(2000020128, 'I grow tired of this routine.', 0, 0, 0, 1, 'Spectral Stable Hand - Say 3');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000020008, '<sigh> Seems like I''ve been at this forever...', 0, 0, 0, 1, 13806, 'Spectral Stable Hand - Say 1'),
+(2000020009, 'Another day, another stable to muck out.', 0, 0, 0, 1, 13804, 'Spectral Stable Hand - Say 2'),
+(2000020010, 'Am I hearing things?', 0, 0, 0, 1, 13252, 'Calliard - Say 1'),
+(2000020011, 'Who goes there?', 0, 0, 0, 1, 13251, 'Calliard - Say 2'),
+(2000020012, 'They''ll never know we''re missing.', 0, 0, 0, 1, 13828, 'Spectral Servant - Say 1'),
+(2000020013, 'The rest are fine without us.', 0, 0, 0, 1, 13827, 'Spectral Servant - Say 2'),
+(2000020014, 'If we dawdle much longer, there''ll be hell to pay!', 0, 0, 0, 1, 13826, 'Spectral Servant - Say 3'),
+(2000020015, 'You had better straighten up, or you''ll answer to me!', 0, 0, 0, 5, 13302, 'Bennett'),
+(2000020016, 'Yes, sir!', 0, 0, 0, 66, 13307, 'Spectral Sentry or Phantom Guardsman'),
+(2000020017, 'Where is the master?', 0, 0, 0, 1, 13198, 'Moroes Adds Random Say 1'),
+(2000020018, 'Why can we not talk to the master?', 0, 0, 0, 1, 13201, 'Moroes Adds Random Say 2'),
+(2000020019, 'The Master is deep in study.', 0, 0, 0, 1, 13202, 'Moroes Random Say 1'),
+(2000020020, 'The Master will return from Stormwind soon...', 0, 0, 0, 1, 13204, 'Moroes Random Say 2'),
+(2000020021, 'The Master is meeting with his apprentice.', 0, 0, 0, 1, 13206, 'Moroes Random Say 3'),
+(2000020128, 'I grow tired of this routine.', 0, 0, 0, 1, 13805, 'Spectral Stable Hand - Say 3');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

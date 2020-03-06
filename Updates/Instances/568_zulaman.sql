@@ -1398,12 +1398,12 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020115,2000020116,2000020117,2000020118,2000020119);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000020115, 'Coo Yah! There ya be!', 0, 0, 0, 0, 'Amani\'shi Handler 1'),
-(2000020116, 'Here, kitty kitty.....', 0, 0, 0, 0, 'Amani\'shi Handler 2'),
-(2000020117, 'Where ya be mon? Ya dang kitty\'s are sneaky!', 0, 0, 0, 0, 'Amani\'shi Handler 3'),
-(2000020118, 'Ya saved me, mon! I thought they be drownin\' me for sure.', 6400, 0, 0, 71, 'Zungam 1 (broadcast ID 23208)'),
-(2000020119, 'Just lemme know if there be anything I can help ya with, mon.', 0, 0, 0, 0, 'Zungam 2 (broadcast ID 23209)');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000020115, 'Coo Yah! There ya be!', 0, 0, 0, 0, 22726, 'Amani\'shi Handler 1'),
+(2000020116, 'Here, kitty kitty.....', 0, 0, 0, 0, 22724, 'Amani\'shi Handler 2'),
+(2000020117, 'Where ya be mon? Ya dang kitty\'s are sneaky!', 0, 0, 0, 0, 22725, 'Amani\'shi Handler 3'),
+(2000020118, 'Ya saved me, mon! I thought they be drownin\' me for sure.', 6400, 0, 0, 71, 23208, 'Zungam 1 (broadcast ID 23208)'),
+(2000020119, 'Just lemme know if there be anything I can help ya with, mon.', 0, 0, 0, 0, 23209, 'Zungam 2 (broadcast ID 23209)');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 

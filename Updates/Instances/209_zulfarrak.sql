@@ -1262,14 +1262,14 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000005547,2000005548,2000005549,2000005550,2000005551,2000005552,2000005553);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000005547, 'Oh no! Here they come!', 0, 0, 0, 0, 'Weegli Blastfuse - Say Event Start'),
-(2000005548, 'Ok, here I go!', 0, 0, 0, 0, 'Weegli Blastfuse - Say Blow Door Normal'),
-(2000005549, 'What? How dare you say that to me?!?', 0, 0, 0, 6, 'Sergeant Bly - Say Faction Change 1'),
-(2000005550, 'After all we''ve been through? Well, I didn''t like you anyway!!', 0, 0, 0, 5, 'Sergeant Bly - Say Faction Change 2'),
-(2000005551, 'I''m out of here!', 0, 0, 0, 0, 'Weegli Blastfuse - Say Blow Door Forced'),
-(2000005552, 'Who dares step into my domain! Come! Come, and be consumed!', 0, 6, 0, 0, 'Ukorz Sandscalp - Say After Door Blown'),
-(2000005553, 'Let''s move forward!', 0, 0, 0, 0, 'Sergeant Bly - Move Downstairs');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000005547, 'Oh no! Here they come!', 0, 0, 0, 0, 3744, 'Weegli Blastfuse - Say Event Start'),
+(2000005548, 'Ok, here I go!', 0, 0, 0, 0, 3785, 'Weegli Blastfuse - Say Blow Door Normal'),
+(2000005549, 'What?  How dare you say that to me?!?', 0, 0, 0, 6, 3882, 'Sergeant Bly - Say Faction Change 1'),
+(2000005550, 'After all we''ve been through?  Well, I didn''t like you anyway!!', 0, 0, 0, 5, 3884, 'Sergeant Bly - Say Faction Change 2'),
+(2000005551, 'I''m out of here!', 0, 0, 0, 0, 3811, 'Weegli Blastfuse - Say Blow Door Forced'),
+(2000005552, 'Who dares step into my domain!  Come!  Come, and be consumed!', 0, 6, 0, 0, 6067, 'Ukorz Sandscalp - Say After Door Blown'),
+(2000005553, 'Let''s move forward!', 0, 0, 0, 0, 3745, 'Sergeant Bly - Move Downstairs');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 

@@ -2848,12 +2848,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1809401, 2000, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Attack Thrall');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020110,2000020111,2000020112,2000020113,2000020114);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000020110, 'All that you know... will be undone.', 0, 0, 0, 0, ''),
-(2000020111, 'We have all the time in the world....', 0, 0, 0, 0, ''),
-(2000020112, 'You cannot escape us!', 0, 0, 0, 0, ''),
-(2000020113, 'Do not think you can win!', 0, 0, 0, 0, ''),
-(2000020114, 'You there, fetch water quickly! Get these flames out before they spread to the rest of the keep! Hurry, damn you!', 10428, 1, 0, 25, '17848');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000020110, 'All that you know... will be undone.', 0, 0, 0, 0, 19537, ''),
+(2000020111, 'We have all the time in the world....', 0, 0, 0, 0, 19536, ''),
+(2000020112, 'You cannot escape us!', 0, 0, 0, 0, 19538, ''),
+(2000020113, 'Do not think you can win!', 0, 0, 0, 0, 19534, ''),
+(2000020114, 'You there, fetch water quickly! Get these flames out before they spread to the rest of the keep! Hurry, damn you!', 10428, 1, 0, 25, 15737, '17848');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

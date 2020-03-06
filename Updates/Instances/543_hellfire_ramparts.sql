@@ -475,9 +475,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1726401, 4000, 0, 0, 0, 0, 17269, @CGUID+29, 19, 2000020036, 0, 0, 0, 0, 0, 0, 0, 'Bleeding Hollow Darkcaster (Hellfire Ramparts) - Yell At Bonechewer Ravener');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020035,2000020036);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000020035, 'You there!  Keep a close watch on these ramparts, intruders could approach at any time!', 0, 1, 0, 25, 'Bonechewer Ravener in Hellfire Ramparts'),
-(2000020036, 'Yes sir!  I will not fail the Fel Horde!', 0, 1, 0, 66, 'Bleeding Hollow Darkcaster in Hellfire Ramparts');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000020035, 'You there!  Keep a close watch on these ramparts, intruders could approach at any time!', 0, 1, 0, 25, 13695, 'Bonechewer Ravener in Hellfire Ramparts'),
+(2000020036, 'Yes sir!  I will not fail the Fel Horde!', 0, 1, 0, 66, 13989, 'Bleeding Hollow Darkcaster in Hellfire Ramparts');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

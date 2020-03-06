@@ -1418,12 +1418,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2584801, 0, 15, 46214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gauntlet Imp Trigger - Cast Summon Imp');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020120, 2000020121, 2000020122, 2000020123); -- , 2000020124);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000020120, 'May the light bless you.', 0, 0, 0, 0, ''),
-(2000020121, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, ''),
-(2000020122, 'Rest now, you have fought well today.', 0, 0, 0, 0, ''),
-(2000020123, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, '');
--- (2000020124, 'Bring forth the imps!', 0, 1, 0, 0, '');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000020120, 'May the light bless you.', 0, 0, 0, 0, 24856, ''),
+(2000020121, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, 24857, ''),
+(2000020122, 'Rest now, you have fought well today.', 0, 0, 0, 0, 24858, ''),
+(2000020123, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, 25482, '');
+-- (2000020124, 'Bring forth the imps!', 0, 1, 0, 0, 25050, '');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

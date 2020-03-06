@@ -284,7 +284,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+124, 3, -51.2688, -78.5158, -1.0449, 2.49582, 7000, 1864004),
 (@CGUID+124, 4, -51.2688, -78.5158, -1.0449, 2.49582, 7000, 1864005),
 (@CGUID+125, 1, -74.4987, -77.2237, -1.04497, 1.55334, 9000, 1864001),
-(@CGUID+126, 1, -259.324, 5.18744, 8.15627, 3.64774, 26000, 1864006),
+(@CGUID+126, 1, -259.324, 5.18744, 8.15627, 3.64774, 26000, 1  864006),
 (@CGUID+127, 1, -282.122, -76.7587, 8.15625, 2.72271, 26000, 1864006),
 (@CGUID+133, 1, -73.1844, -72.6354, -1.1283, 0, 2000, 1864101),
 (@CGUID+133, 2, -78.9781, -68.9761, -1.12973, 0, 0, 0),
@@ -293,9 +293,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+133, 5, -65.6294, -68.134, -1.1296, 0, 0, 0),
 (@CGUID+133, 6, -64.7255, -75.9003, -1.1296, 0, 0, 0),
 (@CGUID+133, 7, -70.5239, -77.2716, -1.1296, 0, 0, 0),
-(@CGUID+137, 1, -343.154, -16.6486, 12.6888, 0, 2000, 1866701),
-(@CGUID+137, 2, -323.331, -36.0149, 12.6888, 0, 8000, 1866702),
-(@CGUID+137, 3, -333.81, -60.0253, 12.6888, 0, 2000, 1866703),
+(@CGUID+137, 1, -343.154, -16.6486, 12.6888, 0, 2000, 0),
+(@CGUID+137, 2, -323.331, -36.0149, 12.6888, 0, 8000, 0),
+(@CGUID+137, 3, -333.81, -60.0253, 12.6888, 0, 2000, 0),
 (@CGUID+140, 1, -253.06, -264.024, 17.0864, 3.15559, 13000, 1873201),
 (@CGUID+171, 1, -429.292, -151.568, 12.7285, 1.08457, 0, 0),
 (@CGUID+171, 2, -421.039, -139.61, 13.5211, 1.40737, 0, 0),
@@ -1218,7 +1218,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1863101,1863102,1863103,1863201,1863202,1863301,1863302,1863303,1863304,1863305,1863306,1863401,1863402,1863403,1863501,1863502,1863503,1863701,1863801,1863901,1863902,1863903,1863904,1864001,1864002,1864003,1864004,1864005,1864006,1864101,1866701,1866702,1866703,1870801,1870802,1873201,1883001,1883002,1883003,1883004);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1863101,1863102,1863103,1863201,1863202,1863301,1863302,1863303,1863304,1863305,1863306,1863401,1863402,1863403,1863501,1863502,1863503,1863701,1863801,1863901,1863902,1863903,1863904,1864001,1864002,1864003,1864004,1864005,1864006,1864101,1870801,1870802,1873201,1883001,1883002,1883003,1883004);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1863101, 1000, 1, 1, 0, 0, 0, 0, 0, 5, 273, 11, 0, 0, 0, 0, 0, ''),
 (1863102, 1000, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -1299,9 +1299,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1864006, 13000, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1864006, 20000, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1864101, 1000, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
-(1866701, 1000, 0, 0, 0, 0, 0, 0, 0, 2000020103, 2000020106, 0, 0, 0, 0, 0, 0, ''),
-(1866702, 1000, 0, 0, 0, 0, 0, 0, 0, 2000020101, 2000020104, 2000020107, 0, 0, 0, 0, 0, ''),
-(1866703, 1000, 0, 0, 0, 0, 0, 0, 0, 2000020102, 2000020105, 0, 0, 0, 0, 0, 0, ''),
 (1870801, 1000, 35, 5, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'THROW_AI_EVENT'),
 (1870801, 4000, 15, 33332, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Suppression Blast 33332'),
 (1870802, 1000, 35, 5, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'THROW_AI_EVENT'),
@@ -1339,16 +1336,7 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (183295, 3000, 20, 2, 0, 0, 18634, @CGUID+82, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 3000, 20, 2, 0, 0, 18632, @CGUID+51, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement');
 
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000020101,2000020102,2000020103,2000020104,2000020105,2000020106,2000020107);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000020101, 'I WILL DESTROY ALL', 0, 0, 0, 0, ''),
-(2000020102, 'US ALREADY ALL ANYMORE AND ANYMORE', 0, 0, 0, 0, ''),
-(2000020103, 'YOU PRAY SERVANTS MY', 0, 0, 0, 0, ''),
-(2000020104, 'I WICKED OGR', 0, 0, 0, 0, ''),
-(2000020105, 'I FEEL DEATH ALONGSIDE', 0, 0, 0, 0, ''),
-(2000020106, 'NOBODY WILL GET THROUGH ME', 0, 0, 0, 0, ''),
-(2000020107, 'I FEEL DEATH ALONGSIDE', 0, 0, 0, 0, '');
-
+-- INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

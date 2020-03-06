@@ -397,10 +397,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`command`,`datalong`,
 (1777201,22000,35,6,0,0,0,0,0,0,0,0,0,'Lady Jaina Proudmoore - Throw AI Event 6 on Self',0,0,0,0);
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020022, 2000020023, 2000020024);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 
-(2000020022, 'Do you think the rumors about the Infinite Dragonflight are true?  I''ve sensed it... the familiarity.', 0, 0, 0, 1, 'Indormi (Entry: 23437)'),
-(2000020023, 'That is a dangerous train of thought.  If something was truly amiss, Soridormi would be the first to know.', 0, 0, 0, 274, 'Tydormu (Entry: 23381)'),
-(2000020024, '%s begins channelling a massive teleport spell.', 0, 7, 0, 0, 'Lady Jaina Proudmoore (Entry: 17772)');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES 
+(2000020022, 'Do you think the rumors about the Infinite Dragonflight are true?  I''ve sensed it... the familiarity.', 0, 0, 0, 1, 21646, 'Indormi (Entry: 23437)'),
+(2000020023, 'That is a dangerous train of thought.  If something was truly amiss, Soridormi would be the first to know.', 0, 0, 0, 274, 21645, 'Tydormu (Entry: 23381)'),
+(2000020024, '%s begins channelling a massive teleport spell.', 0, 7, 0, 0, 15310, 'Lady Jaina Proudmoore (Entry: 17772)');
 
 -- ----------------------------------
 -- creature_linking

@@ -803,17 +803,17 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1950701, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - MovementType 0');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020091,2000020092,2000020093,2000020094,2000020095,2000020096,2000020097,2000020098,2000020099,2000020100);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000020091, 'We must not fail our leader!  Kael''thas will redeem us!', 0, 1, 0, 4, 'Commander Sarannis in Botanica'),
-(2000020092, 'Hmm...Frost, Fire, and Arcane defenses respond faster than Batch 7, but Nature defenses remain passive.', 0, 0, 0, 1, 'Sunseeker Geomancer in Botanica'),
-(2000020093, 'Hmm...', 0, 0, 0, 1, 'Sunseeker Botanist in Botanica'),
-(2000020094, 'Yes. That did the trick.', 0, 0, 0, 1, 'Sunseeker Botanist in Botanica'),
-(2000020095, '...mumble...Petals of Fire...mumble...', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
-(2000020096, '...mumble mumble...', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
-(2000020097, '...with the right mixture, perhaps...', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
-(2000020098, '...thorny vines...mumble...ouch!', 0, 0, 0, 69, 'High Botanist Freywinn in Botanica'),
-(2000020099, 'Get out of here, there are too many of them! Escape while you can!', 0, 1, 0, 0, 'Sunseeker Protector in Botanica'),
-(2000020100, 'Help! Someone help us!', 0, 1, 0, 0, 'Sunseeker Protector in Botanica');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000020091, 'We must not fail our leader!  Kael''thas will redeem us!', 0, 1, 0, 4, 16861, 'Commander Sarannis in Botanica'),
+(2000020092, 'Hmm...Frost, Fire, and Arcane defenses respond faster than Batch 7, but Nature defenses remain passive.', 0, 0, 0, 1, 17178, 'Sunseeker Geomancer in Botanica'),
+(2000020093, 'Hmm...', 0, 0, 0, 1, 17000, 'Sunseeker Botanist in Botanica'),
+(2000020094, 'Yes. That did the trick.', 0, 0, 0, 1, 16999, 'Sunseeker Botanist in Botanica'),
+(2000020095, '...mumble...Petals of Fire...mumble...', 0, 0, 0, 69, 16945, 'High Botanist Freywinn in Botanica'),
+(2000020096, '...mumble mumble...', 0, 0, 0, 69, 16946, 'High Botanist Freywinn in Botanica'),
+(2000020097, '...with the right mixture, perhaps...', 0, 0, 0, 69, 16948, 'High Botanist Freywinn in Botanica'),
+(2000020098, '...thorny vines...mumble...ouch!', 0, 0, 0, 69, 16947, 'High Botanist Freywinn in Botanica'),
+(2000020099, 'Get out of here, there are too many of them! Escape while you can!', 0, 1, 0, 0, 16993, 'Sunseeker Protector in Botanica'),
+(2000020100, 'Help! Someone help us!', 0, 1, 0, 0, 16994, 'Sunseeker Protector in Botanica');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

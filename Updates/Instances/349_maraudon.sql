@@ -1372,15 +1372,15 @@ INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `d
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM dbscript_string WHERE entry IN (2000005646,2000005647,2000005648,2000005649,2000005650,2000005651,2000005652,2000005653);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000005646, 'You wish to learn of the stone? Follow me.', 0, 0, 0, 0, ''),
-(2000005647, 'For so long I have drifted in my cursed form. You have freed me... Your hard work shall be repaid.', 0, 0, 0, 0, ''),
-(2000005648, 'Please do as I instruct you, $N.', 0, 0, 0, 0, ''), 
-(2000005649, 'Read this tome I have placed before you, and speak the words aloud.', 0, 0, 0, 0, ''),
-(2000005650, '%s begins to channel his energy, focusing on the stone.', 0, 2, 0, 0, ''),
-(2000005651, 'Together, the two parts shall become one, once again.', 0, 0, 0, 0, ''),
-(2000005652, 'Shal myrinan ishnu daldorah...', 0, 0, 0, 0, ''),
-(2000005653, 'My scepter will once again become whole!', 0, 0, 0, 0, '');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000005646, 'You wish to learn of the stone? Follow me.', 0, 0, 0, 0, 8952, ''),
+(2000005647, 'For so long I have drifted in my cursed form. You have freed me... Your hard work shall be repaid.', 0, 0, 0, 0, 8953, ''),
+(2000005648, 'Please do as I instruct you, $N.', 0, 0, 0, 0, 8954, ''), 
+(2000005649, 'Read this tome I have placed before you, and speak the words aloud.', 0, 0, 0, 0, 8950, ''),
+(2000005650, '%s begins to channel his energy, focusing on the stone.', 0, 2, 0, 0, 8951, ''),
+(2000005651, 'Together, the two parts shall become one, once again.', 0, 0, 0, 0, 8948, ''),
+(2000005652, 'Shal myrinan ishnu daldorah...', 0, 0, 0, 0, 8949, ''),
+(2000005653, 'My scepter will once again become whole!', 0, 0, 0, 0, 8955, '');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 

@@ -2929,19 +2929,19 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM dbscript_string WHERE entry IN (2000000261,2000000262,2000000263,2000000264,2000000265,2000000266,2000000267,2000005099,2000005100,2000005101,2000005102,2000005626);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000000261, 'Hey Nagmara! How about a mug of Dark Iron Ale?', 0, 0, 0, 1, NULL),
-(2000000262, 'Nagmara! Have any mutton left?', 0, 0, 0, 0, NULL),
-(2000000263, 'Mistress, you tell Plugger that I want more of his ale. I can''t get enough!', 0, 0, 0, 1, NULL),
-(2000000264, 'Hey Nag, how about you slice me off a piece of that...', 0, 0, 0, 1, NULL),
-(2000000265, 'You got it!', 0, 0, 0, 1, NULL),
-(2000000266, 'Coming right up!', 0, 0, 0, 1, NULL),
-(2000000267, 'I''ll bring it right over, baby...', 0, 0, 0, 1, NULL),
-(2000005099, 'Get him out of there!', 0, 0, 0, 0, NULL),
-(2000005100, 'Perhaps Ograbisi will use your head as a tiny little hat when I''m through with you.', 0, 0, 0, 0, NULL),
-(2000005101, 'Where I come from, you get shanked for opening another inmate''s cell door!', 0, 0, 0, 0, NULL),
-(2000005102, 'Ograbisi needs new hat.', 0, 0, 0, 0, NULL),
-(2000005626, 'No! Get away from me! Help!!', 0, 0, 0, 0, '');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000000261, 'Hey Nagmara!  How about a mug of Dark Iron Ale?', 0, 0, 0, 1, 4984, NULL),
+(2000000262, 'Nagmara!  Have any mutton left?', 0, 0, 0, 0, 4985, NULL),
+(2000000263, 'Mistress, you tell Plugger that I want more of his ale.  I can''t get enough!', 0, 0, 0, 1, 4986, NULL),
+(2000000264, 'Hey Nag, how about you slice me off a piece of that...', 0, 0, 0, 1, 4987, NULL),
+(2000000265, 'You got it!', 0, 0, 0, 1, 4979, NULL),
+(2000000266, 'Coming right up!', 0, 0, 0, 1, 4980, NULL),
+(2000000267, 'I''ll bring it right over, baby...', 0, 0, 0, 1, 4981, NULL),
+(2000005099, 'Get him out of there!', 0, 0, 0, 0, 5230, NULL),
+(2000005100, 'Perhaps Ograbisi will use your head as a tiny little hat when I''m through with you.', 0, 0, 0, 0, 5203, NULL),
+(2000005101, 'Where I come from, you get shanked for opening another inmate''s cell door!', 0, 0, 0, 0, 5258, NULL),
+(2000005102, 'Ograbisi needs new hat!', 0, 0, 0, 0, 5199, NULL),
+(2000005626, 'No!  Get away from me!  Help!!', 0, 0, 0, 0, 4973, '');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 

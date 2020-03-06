@@ -2990,29 +2990,29 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 (5525, 15000, 18, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'despawn');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000000268,2000000269,2000000455,2000000456,2000000457,2000000543,2000007708,2000007709,2000007710,2000007711,2000007712,2000005822,2000005823,2000005460,2000005461,2000005462,2000005463,2000005464);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000000268, 'Hey, who Fengus callin\' a gnoll lover?!  Take da prisoners to da king; you smart to bring them with their weapons and show da king that they a threat.  I\'ll go see if Fengus talk smack when I give him da beatdown!  HAR!', 0, 6, 0, 0, 'Captain Kromcrush - Yell Fengus 1'),
-(2000000269, 'OK Fengus, where you at?!  You come call me a gnoll lover while I give you da hammer upside da head!', 0, 6, 0, 0, 'Captain Kromcrush - Yell Fengus 2'),
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000000268, 'Hey, who Fengus callin\' a gnoll lover?!  Take da prisoners to da king; you smart to bring them with their weapons and show da king that they a threat.  I\'ll go see if Fengus talk smack when I give him da beatdown!  HAR!', 0, 6, 0, 0, 9416, 'Captain Kromcrush - Yell Fengus 1'),
+(2000000269, 'OK Fengus, where you at?!  You come call me a gnoll lover while I give you da hammer upside da head!', 0, 6, 0, 0, 9424, 'Captain Kromcrush - Yell Fengus 2'),
 
-(2000000455, 'I very much doubt that he will have anything to say, stranger...', 0, 0, 0, 1, 'Lorekeeper Lydros 14368 - Say 1 (q. 7481 & 7482)'),
-(2000000456, 'I personally didn\'t mind him. It was the Prince who took exception to a high elf in his domain. Alas, I am not one to question the Prince. In his defense, he did not incinerate Master Winthalus immediately.', 0, 0, 0, 1, 'Lorekeeper Lydros 14368 - Say 2 (q. 7481 & 7482)'),
-(2000000457, 'We most definitely do not need any more attention drawn to us, stranger. Return to those that sent you in search of the lost master and tell them that nothing could be found. When this is done - and I will know when it is so - return and I shall reveal the secrets of the deceased.', 0, 0, 0, 1, 'Lorekeeper Lydros 14368 - Say 3 (q. 7481 & 7482)'),
+(2000000455, 'I very much doubt that he will have anything to say, stranger...', 0, 0, 0, 1, 9446, 'Lorekeeper Lydros 14368 - Say 1 (q. 7481 & 7482)'),
+(2000000456, 'I personally didn''t mind him. It was the Prince who took exception to a high elf in his domain. Alas, I am not one to question the Prince. In his defense, he did not incinerate Master Winthalus immediately.', 0, 0, 0, 1, 9447, 'Lorekeeper Lydros 14368 - Say 2 (q. 7481 & 7482)'),
+(2000000457, 'We most definitely do not need anymore attention drawn to us, stranger. Return to those that sent you in search of the lost master and tell them that nothing could be found. When this is done - and I will know when it is so - return and I shall reveal the secrets of the deceased.', 0, 0, 0, 1, 9448, 'Lorekeeper Lydros 14368 - Say 3 (q. 7481 & 7482)'),
 
-(2000000543, '$N, I''ll make sure all my friends in the Cartel know that you''ve saved my life today. Here - I''m going to need to be able to travel light, so please help yourself to my cache of tailoring and leatherworking supplies! Thanks again - see ya!', 0, 0, 0, 4, 'Knot Thimblejack'),
-(2000007708, 'Ah, freedom! Although brief, so sweet it is...', 0, 1, 0, 0, 'J''eevee yell on spawn'),
-(2000007709, 'Well duties call, yes? First, the bell... to give you vigor!', 0, 0, 0, 0, 'J''eevee say 1'),
-(2000007710, 'Next, I''ll place the wheel... to protect you from harm.', 0, 0, 0, 0, 'J''eevee say 2'),
-(2000007711, 'And finally the candle... to burn those who would thwart you!', 0, 0, 0, 0, 'J''eevee say 3'),
-(2000007712, '$N, my duties are complete and I shall now take my leave. Luck to you my fellow, and remember to keep the Bell, Wheel and Candle working!', 0, 0, 0, 0, 'J''eevee say 4'),
+(2000000543, '$N, I''ll make sure all my friends in the Cartel know that you''ve saved my life today.  Here - I''m going to need to be able to travel light, so please help yourself to my cache of tailoring and leatherworking supplies!  Thanks again - see ya!', 0, 0, 0, 4, 9346, 'Knot Thimblejack'),
+(2000007708, 'Ah, freedom!  Although brief, so sweet it is...', 0, 1, 0, 0, 9705, 'J''eevee yell on spawn'),
+(2000007709, 'Well duties call, yes?  First, the bell... to give you vigor!', 0, 0, 0, 0, 9702, 'J''eevee say 1'),
+(2000007710, 'Next, I''ll place the wheel... to protect you from harm.', 0, 0, 0, 0, 9703, 'J''eevee say 2'),
+(2000007711, 'And finally the candle... to burn those who would thwart you!', 0, 0, 0, 0, 9704, 'J''eevee say 3'),
+(2000007712, '$N, my duties are complete and I shall now take my leave.  Luck to you my $gfellow:lady;, and remember to keep the Bell, Wheel and Candle working!', 0, 0, 0, 0, 9706, 'J''eevee say 4'),
 
-(2000005822, 'OH NOES! Da king is dead! Uh... hail to da new king! Yeah!', 0, 1, 0, 0, 'mizzle the crafty - new king 1'),
-(2000005823, 'Yar, he\'s dead all right. That makes you da new king... well, all of you! Gordok is yours now, boss! You should talk to me so you can learn everything there is about being da king! I was... is his assistant! Yeah, that\'s why I\'m called da crafty one!', 0, 0, 0, 0, 'mizzle the crafty - new king 2'),
+(2000005822, 'OH NOES!  Da king is dead!  Uh... hail to da new king!  Yeah!', 0, 1, 0, 0, 9348, 'mizzle the crafty - new king 1'),
+(2000005823, 'Yar, he''s dead all right.  That makes you da new king... well, all of you!  Gordok is yours now, boss!  You should talk to me so you can learn everything there is about being da king!  I was... is his assistant!  Yeah, that''s why I''m called da crafty one!', 0, 0, 0, 0, 9411, 'mizzle the crafty - new king 2'),
 
-(2000005460, 'If you want the key, you''ll have to catch me!', 0, 0, 0, 0, 'Pusilin 1'),
-(2000005461, 'Chase me if you dare! I run without a care!', 0, 0, 0, 0, 'Pusilin 2'),
-(2000005462, 'Why would you ever want to harm me!? Come. Friends we can be!', 0, 0, 0, 0, 'Pusilin 3'),
-(2000005463, 'DIE?! You make Pusillin cry!', 0, 0, 0, 0, 'Pusilin 4'),
-(2000005464, 'Say hello to my little friends!', 0, 0, 0, 0, 'Pusilin 5');
+(2000005460, 'If you want the key, you''ll have to catch me!', 0, 0, 0, 0, 9349, 'Pusilin 1'),
+(2000005461, 'Chase me if you dare! I run without a care!', 0, 0, 0, 0, 9353, 'Pusilin 2'),
+(2000005462, 'Why would you ever want to harm me!? Come. Friends we can be!', 0, 0, 0, 0, 9357, 'Pusilin 3'),
+(2000005463, 'DIE?! You make Pusillin cry!', 0, 0, 0, 0, 9360, 'Pusilin 4'),
+(2000005464, 'Say hello to my little friends!', 0, 0, 0, 0, 9363, 'Pusilin 5');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 

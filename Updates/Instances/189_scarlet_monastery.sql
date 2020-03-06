@@ -727,12 +727,12 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 (11405, 10000, 10, 23682, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1765.28, 1347.46, 17.5514, 0.100363, 'summon Headless Horseman'); -- player should summon so that we can use spawner guid in C++
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020001,2000020002,2000020003,2000020004);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
 -- TBC+ only
-(2000020001, 'Horseman rise...', 0, 0, 0, 0, 'horseman say_summon_horseman_1'),
-(2000020002, 'Your time is night...', 0, 0, 0, 0, 'horseman say_summon_horseman_2'),
-(2000020003, 'You felt death once...', 0, 0, 0, 0, 'horseman say_summon_horseman_3'),
-(2000020004, 'Now, know demise!', 0, 0, 0, 0, 'horseman say_summon_horseman_4');
+(2000020001, 'Horseman rise...', 0, 0, 0, 0, 22695, 'horseman say_summon_horseman_1'),
+(2000020002, 'Your time is nigh...', 0, 0, 0, 0, 22696, 'horseman say_summon_horseman_2'),
+(2000020003, 'You felt death once...', 0, 0, 0, 0, 22720, 'horseman say_summon_horseman_3'),
+(2000020004, 'Now, know demise!', 0, 0, 0, 0, 22721, 'horseman say_summon_horseman_4');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 

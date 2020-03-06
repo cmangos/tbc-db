@@ -995,19 +995,19 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- =========
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020025,2000020026,2000020027,2000020028,2000020029,2000020030,2000020031,2000020032,2000020033,2000020034);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000020025,'Show them no quarter! Form up!',10191,1,0,15,'Shattered Hand Legionnaire'),
-(2000020026,'Form ranks and make the intruders pay!',10190,1,0,15,'Shattered Hand Legionnaire'),
-(2000020027,'Get ready! This shouldn''t take long...',10189,1,0,15,'Shattered Hand Legionnaire'),
-(2000020028,'Form up! Let''s make quick work of them!',10188,1,0,15,'Shattered Hand Legionnaire'),
-(2000020029,'Line up and crush these fools!',10187,1,0,15,'Shattered Hand Legionnaire'),
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000020025,'Show them no quarter! Form up!',10191,1,0,15,16350,'Shattered Hand Legionnaire'),
+(2000020026,'Form ranks and make the intruders pay!',10190,1,0,15,17461,'Shattered Hand Legionnaire'),
+(2000020027,'Get ready! This shouldn''t take long...',10189,1,0,15,16349,'Shattered Hand Legionnaire'),
+(2000020028,'Form up! Let''s make quick work of them!',10188,1,0,15,16347,'Shattered Hand Legionnaire'),
+(2000020029,'Line up and crush these fools!',10187,1,0,15,16346,'Shattered Hand Legionnaire'),
 
-(2000020030,'Power to the Fel Horde!',0,0,0,5,'Shattered Hand Legionnaire'),
-(2000020031,'Break their bones!',0,0,0,5,'Shattered Hand Legionnaire'),
-(2000020032,'Know your master, you worthless mutts!',0,0,0,25,'Shattered Hand Legionnaire'),
+(2000020030,'Power to the Fel Horde!',0,0,0,5,12685,'Shattered Hand Legionnaire'),
+(2000020031,'Break their bones!',0,0,0,5,12686,'Shattered Hand Legionnaire'),
+(2000020032,'Know your master, you worthless mutts!',0,0,0,25,12687,'Shattered Hand Legionnaire'),
 
-(2000020033,'Serve the Fel Horde!',0,0,0,5,'Shattered Hand Legionnaire'),
-(2000020034,'We''ll drink their blood and feast on their bones!',0,0,0,15,'Shattered Hand Legionnaire');
+(2000020033,'Serve the Fel Horde!',0,0,0,5,12684,'Shattered Hand Legionnaire'),
+(2000020034,'We''ll drink their blood and feast on their bones!',0,0,0,15,12683,'Shattered Hand Legionnaire');
 
 DELETE FROM dbscripts_on_relay WHERE id IN (10113,10114,10115,10116,10117,10118,10119,10120,10121);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

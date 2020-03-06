@@ -601,9 +601,9 @@ INSERT INTO `dbscripts_on_creature_movement` (id, delay, priority, command, data
 (1855501, 0, 0, 15, 32566, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Dark Portal Beam Invisible Stalker - Purple Banish State');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020005,2000020006);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 
-(2000020005, 'Orcs of the Horde! This portal is the gateway to your new destiny! Azeroth lies before you, ripe for the taking!', 0, 1, 0, 5, 'Medivh (Entry: 15608)'),
-(2000020006, 'Gul''dan speaks the truth! We should return at once to tell our brothers of the news! Retreat back through the portal!', 0, 1, 0, 5, 'Shadow Council Enforcer (Entry: 17023)');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES 
+(2000020005, 'Orcs of the Horde! This portal is the gateway to your new destiny! Azeroth lies before you, ripe for the taking!', 0, 1, 0, 5, 19909, 'Medivh (Entry: 15608)'),
+(2000020006, 'Gul''dan speaks the truth! We should return at once to tell our brothers of the news! Retreat back through the portal!', 0, 1, 0, 5, 19911, 'Shadow Council Enforcer (Entry: 17023)');
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

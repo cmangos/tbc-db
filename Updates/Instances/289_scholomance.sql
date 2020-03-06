@@ -807,15 +807,15 @@ INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalon
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM dbscript_string WHERE entry IN (2000005027,2000005028,2000005029,2000000612,2000007713,2000007714,2000007715,2000007716);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES
-(2000005027, 'The Lich King''s forces are building. It is imperative that our timetable supports his plans.', 0, 0, 0, 0, NULL), 
-(2000005028, 'Tomorrow we will begin training of our promising dragons, so don''t forget your chew toys.', 0, 0, 0, 0, NULL),
-(2000005029, 'Our oldest clutch of dragons are still far from maturity, but with patience and study, we are confident the dragons will soon be ready.', 0, 0, 0, 0, NULL),
-(2000000612, '%s loosens her grasp on the journal she had been clutching.', 0, 2, 0, 0, NULL),
-(2000007713, 'Ah, here we are! Well let''s get to work, shall we...?', 0, 0, 0, 0, 'J''eevee say 1 (Scholomance)'),
-(2000007714, 'Oh, right! Over here now...', 0, 0, 0, 0, 'J''eevee say 2 (Scholomance)'),
-(2000007715, 'And now... the final step!', 0, 0, 0, 0, 'J''eevee say 3 (Scholomance)'),
-(2000007716, 'I''m finished. The parchment is made. Now, return to Gorzeeki...', 0, 0, 0, 0, 'J''eevee say 4 (Scholomance)');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
+(2000005027, 'The Lich King''s forces are building.  It is imperative that our timetable supports his plans.', 0, 0, 0, 0, 7194, NULL), 
+(2000005028, 'Tomorrow we will begin training of our promising dragons, so don''t forget your chew toys.', 0, 0, 0, 0, 7193, NULL),
+(2000005029, 'Our oldest clutch of dragons are still far from maturity, but with patience and study, we are confident the dragonflight will soon be ready.', 0, 0, 0, 0, 7191, NULL),
+(2000000612, '%s loosens her grasp on the journal she had been clutching.', 0, 2, 0, 0, 11408, NULL),
+(2000007713, 'Ah, here we are!  Well let''s get to work, shall we...?', 0, 0, 0, 0, 9769, 'J''eevee say 1 (Scholomance)'),
+(2000007714, 'Oh, right!  Over here now...', 0, 0, 0, 0, 9770, 'J''eevee say 2 (Scholomance)'),
+(2000007715, 'And now... the final step!', 0, 0, 0, 0, 9771, 'J''eevee say 3 (Scholomance)'),
+(2000007716, 'I''m finished.  The parchment is made.  Now, return to Gorzeeki...', 0, 0, 0, 0, 9742, 'J''eevee say 4 (Scholomance)');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
