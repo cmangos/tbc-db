@@ -21218,10 +21218,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1850301','18503','0','0','100','1','5000','10000','20000','30000','0','0','11','33401','1','0','0','0','0','0','0','0','0','0','Phantasmal Possessor - Cast Possess'),
 ('1850302','18503','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Phantasmal Possessor - Forced Despawn on Evade'),
 -- Raging Soul 18506 (BEST GUESS ON OFFICIAL DATA BASED ON WATCHING THEM)
-('1850601','18506','1','0','100','0','1000','1000','0','0','0','0','11','32811','0','32','0','0','0','0','0','0','0','0','Raging Soul - Cast Greater Invisibility OOC'),
+('1850601','18506','1','0','100','0','1000','1000','0','0','0','0','11','32811','0','32','20','0','0','0','0','0','0','0','Raging Soul - Cast Greater Invisibility and Prevent Melee OOC'),
 ('1850602','18506','4','0','100','0','0','0','0','0','0','0','28','0','32811','0','0','0','0','0','0','0','0','0','Raging Soul - Remove Greater Invisibility on Aggro'),
-('1850603','18506','0','0','100','2','2000','5000','0','0','0','0','11','32888','1','0','41','4500','0','0','0','0','0','0','Raging Soul (Normal) - Cast Rage and Delayed Despawn'),
-('1850604','18506','0','0','100','4','2000','5000','0','0','0','0','11','38380','1','0','41','4500','0','0','0','0','0','0','Raging Soul (Heroic) - Cast Rage and Delayed Despawn'),
+('1850603','18506','0','0','100','2','0','2000','0','0','0','0','11','32888','1','0','41','4500','0','0','0','0','0','0','Raging Soul (Normal) - Cast Rage and Delayed Despawn'),
+('1850604','18506','0','0','100','4','0','2000','0','0','0','0','11','38380','1','0','41','4500','0','0','0','0','0','0','Raging Soul (Heroic) - Cast Rage and Delayed Despawn'),
 -- Raging Skeleton 18521 - NSR
 -- Angered Skeleton (18524) - NSR
 -- Phasing Soldier (4.3.4 Official Data - Normal/Heroic)
