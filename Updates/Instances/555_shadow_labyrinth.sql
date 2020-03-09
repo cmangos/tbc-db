@@ -30,22 +30,26 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+37, 1, -287.804, -96.3896, 8.15635, 5.48033, 8000, 1863101),
 (@CGUID+38, 1, -276.704, 22.5176, 8.15633, 0.017453, 8000, 1863101),
 (@CGUID+39, 1, -286.707, -99.5, 8.15633, 1.32645, 6000, 1863101),
-(@CGUID+45, 1, -172.173, -325.754, 17.1697, 5.53269, 2000, 1863201),
-(@CGUID+45, 2, -160.339, -328.603, 17.0869, 4.72687, 5000, 1863202),
-(@CGUID+46, 1, -168.532, -352.302, 17.1662, 4.83456, 2000, 1863201),
-(@CGUID+46, 2, -162.415, -350.568, 17.0835, 4.74318, 5000, 1863202),
-(@CGUID+47, 1, -135.771, -329.128, 17.1687, 3.50811, 2000, 1863201),
-(@CGUID+47, 2, -152.625, -325.811, 17.0865, 4.68167, 5000, 1863202),
-(@CGUID+48, 1, -174.082, -354.553, 17.1667, 5.35816, 2000, 1863201),
-(@CGUID+48, 2, -149.628, -355.988, 17.0834, 4.65396, 5000, 1863202),
-(@CGUID+49, 1, -171.642, -370.791, 17.0818, 0.523599, 2000, 1863201),
-(@CGUID+49, 2, -150.133, -378.117, 17.0814, 4.64736, 5000, 1863202),
-(@CGUID+50, 1, -173.133, -366.97, 17.0828, 5.91667, 2000, 1863201),
-(@CGUID+50, 2, -163.108, -374.718, 17.0811, 4.75488, 5000, 1863202),
-(@CGUID+51, 1, -142.203, -390.029, 17.0806, 4.4855, 2000, 1863201),
-(@CGUID+51, 2, -148.384, -417.065, 17.0784, 4.59443, 5000, 1863202),
-(@CGUID+52, 1, -140.54, -410.52, 17.079, 1.44862, 2000, 1863201),
-(@CGUID+52, 2, -162.943, -421.588, 17.0776, 4.77894, 5000, 1863202),
+
+-- Cabal Executioner Murmur Hallway Movements
+(@CGUID+45, 1, -172.173, -325.754, 17.1697, 5.53269, 2000, 5),
+(@CGUID+45, 2, -160.339, -328.603, 17.0869, 4.72687, 5000, 1863201),
+(@CGUID+46, 1, -168.532, -352.302, 17.1662, 4.83456, 2000, 5),
+(@CGUID+46, 2, -162.415, -350.568, 17.0835, 4.74318, 5000, 1863201),
+(@CGUID+47, 1, -135.771, -329.128, 17.1687, 3.50811, 2000, 5),
+(@CGUID+47, 2, -152.625, -325.811, 17.0865, 4.68167, 5000, 1863201),
+(@CGUID+48, 1, -174.082, -354.553, 17.1667, 5.35816, 2000, 5),
+(@CGUID+48, 2, -149.628, -355.988, 17.0834, 4.65396, 5000, 1863201),
+(@CGUID+49, 1, -171.642, -370.791, 17.0818, 0.523599, 2000, 5),
+(@CGUID+49, 2, -150.133, -378.117, 17.0814, 4.64736, 5000, 1863201),
+(@CGUID+50, 1, -173.133, -366.97, 17.0828, 5.91667, 2000, 5),
+(@CGUID+50, 2, -163.108, -374.718, 17.0811, 4.75488, 5000, 1863201),
+(@CGUID+51, 1, -142.203, -390.029, 17.0806, 4.4855, 2000, 5),
+(@CGUID+51, 2, -148.384, -417.065, 17.0784, 4.59443, 5000, 1863201),
+(@CGUID+52, 1, -140.54, -410.52, 17.079, 1.44862, 2000, 5),
+(@CGUID+52, 2, -162.943, -421.588, 17.0776, 4.77894, 5000, 1863201),
+-- ----------------------------------------------
+
 (@CGUID+53, 1, -73.9905, -56.6604, -1.12827, 1.30588, 0, 0),
 (@CGUID+53, 2, -73.2549, -45.9498, -1.12827, 1.65538, 0, 0),
 (@CGUID+53, 3, -75.0944, -30.1813, -1.12822, 1.58469, 0, 0),
@@ -98,30 +102,42 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+73, 1, -265.829, 0.056211, 8.15626, 3.68265, 26000, 1863306),
 (@CGUID+74, 1, -272.845, -76.4279, 8.15625, 2.6529, 26000, 1863306),
 (@CGUID+75, 1, -454.315, -183.092, 12.7725, 5.06145, 11000, 1863305),
-(@CGUID+76, 1, -175.894, -349.783, 17.166, 5.61996, 4000, 1863401),
-(@CGUID+76, 2, -156.496, -325.849, 17.0865, 4.73628, 5000, 1863403),
-(@CGUID+77, 1, -156.498, -328.007, 17.1696, 3.14159, 1000, 0),
-(@CGUID+77, 2, -156.498, -328.007, 17.1696, 3.14159, 2000, 1863403),
-(@CGUID+78, 1, -135.201, -360.271, 17.0819, 3.49066, 2000, 1863401),
-(@CGUID+78, 2, -157.038, -354.905, 17.0836, 4.70637, 5000, 1863402),
-(@CGUID+79, 1, -136.037, -343.41, 17.1648, 3.1765, 2000, 1863401),
-(@CGUID+79, 2, -162.127, -345.104, 17.084, 4.74018, 15000, 0),
-(@CGUID+79, 3, -149.744, -341.401, 17.0847, 4.66016, 15000, 0),
-(@CGUID+79, 4, -154.979, -338.741, 17.0853, 4.66635, 15000, 0),
-(@CGUID+79, 5, -162.127, -345.104, 17.084, 4.74018, 15000, 0),
-(@CGUID+79, 6, -149.744, -341.401, 17.0847, 4.66016, 15000, 0),
-(@CGUID+79, 7, -154.979, -338.741, 17.0853, 4.66635, 15000, 0),
-(@CGUID+79, 8, -162.127, -345.104, 17.084, 4.74018, 15000, 1863402),
-(@CGUID+80, 1, -141.612, -363.212, 17.0827, 4.2586, 2000, 1863401),
-(@CGUID+80, 2, -157.923, -374.597, 17.0818, 4.71262, 5000, 1863402),
-(@CGUID+81, 1, -171.826, -401.41, 17.0799, 0.890118, 2000, 1863401),
-(@CGUID+81, 2, -158.9, -420.073, 17.0777, 4.7254, 5000, 1863402),
-(@CGUID+82, 1, -134.274, -388.795, 17.1657, 3.14159, 2000, 1863401),
-(@CGUID+82, 2, -145.634, -396.327, 17.0802, 3.72706, 15000, 0),
-(@CGUID+82, 3, -164.682, -401.259, 17.0797, 5.26035, 15000, 0),
-(@CGUID+82, 4, -155.47, -402.097, 17.0795, 5.04987, 15000, 1863403),
-(@CGUID+84, 1, -143.49, -443.834, 17.078, 3.15222, 20000, 1863401),
-(@CGUID+84, 2, -154.002, -443.803, 17.0779, 4.60457, 5000, 1863403),
+
+-- Cabal Summoner Murmur Hallway Movements
+-- flavor when door opens
+(@CGUID+76, 1, -175.894, -349.783, 17.166, 5.61996, 4000, 5),
+(@CGUID+76, 2, -156.498, -328.007, 17.1696, 1.6034, 0, 0),
+(@CGUID+76, 3, -156.496, -325.849, 17.0865, 4.73628, 5000, 1863402), -- die permanently
+-- flavor when door opens
+(@CGUID+77, 1, -156.498, -328.007, 17.1696, 3.14159, 2000, 5),
+(@CGUID+77, 2, -156.466, -314.34, 17.0849, 1.6034, 5000, 1863402), -- die permanently
+
+-- stationary pack 1
+(@CGUID+78, 1, -135.201, -360.271, 17.0819, 3.49066, 2000, 5),
+(@CGUID+78, 2, -157.038, -354.905, 17.0836, 4.70637, 5000, 1863401), -- idle
+
+-- runner #1 (fast respawn)
+(@CGUID+79, 1, -136.037, -343.41, 17.1648, 3.1765, 1000, 5),
+(@CGUID+79, 2, -162.127, -345.104, 17.084, 4.74018, 10000, 0),
+(@CGUID+79, 3, -149.744, -341.401, 17.0847, 4.66016, 10000, 0),
+(@CGUID+79, 4, -154.979, -338.741, 17.0853, 4.66635, 10000, 0),
+(@CGUID+79, 5, -162.127, -345.104, 17.084, 4.74018, 10000, 0),
+
+-- stationary pack 2
+(@CGUID+80, 1, -141.612, -363.212, 17.0827, 4.2586, 2000, 5),
+(@CGUID+80, 2, -157.923, -374.597, 17.0818, 4.71262, 5000, 1863401), -- idle
+
+-- stationary pack 3
+(@CGUID+81, 1, -171.826, -401.41, 17.0799, 0.890118, 2000, 5),
+(@CGUID+81, 2, -158.9, -420.073, 17.0777, 4.7254, 5000, 1863401), -- idle
+
+-- runner #2 (fast respawn)
+(@CGUID+82, 1, -134.274, -388.795, 17.1657, 3.14159, 1000, 5),
+(@CGUID+82, 2, -145.634, -396.327, 17.0802, 4.61994, 10000, 0),
+(@CGUID+82, 3, -164.682, -401.259, 17.0797, 4.61994, 10000, 0),
+(@CGUID+82, 4, -155.47, -402.097, 17.0795, 4.61994, 10000, 0),
+-- ----------------------------------------------
+
 (@CGUID+85, 1, -62.1643, -18.331, -1.12955, 0.231035, 0, 0),
 (@CGUID+85, 2, -58.8384, -12.529, -1.12955, 1.52616, 0, 0),
 (@CGUID+85, 3, -58.4549, 6.17609, -1.12955, 1.26383, 0, 0),
@@ -260,25 +276,36 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+108, 2, -313.295, -263.085, 12.6835, 0.0211422, 0, 0),
 (@CGUID+108, 3, -323.666718, -263.655304, 12.685335, 100, 0, 0),
 (@CGUID+108, 4, -322.766266, -263.664520, 12.685326, 100, 18000, 1863801),
-(@CGUID+112, 1, -139.912, -353.917, 17.1665, 5.75959, 4000, 1863901),
-(@CGUID+112, 2, -153.403, -352.024, 17.0838, 4.70338, 7000, 1863902),
-(@CGUID+113, 1, -140.42, -369.956, 17.0815, 3.03687, 2000, 1863901),
-(@CGUID+113, 2, -153.032, -375.78, 17.0816, 4.6724, 7000, 1863902),
-(@CGUID+115, 1, -143.33, -397.343, 17.0801, 2.37365, 2000, 1863901),
-(@CGUID+115, 2, -153.364, -417.684, 17.078, 4.65555, 7000, 1863902),
-(@CGUID+116, 1, -179.281, -350.271, 17.1665, 5.98648, 2000, 1863901),
-(@CGUID+116, 2, -164.621, -364.47, 17.0824, 4.77388, 20000, 0),
-(@CGUID+116, 3, -149.681, -366.439, 17.0824, 4.61994, 5000, 1863903),
-(@CGUID+118, 1, -134.274, -388.795, 17.1657, 3.72706, 17000, 1863901),
-(@CGUID+118, 2, -134.274, -388.795, 17.1657, 3.72706, 1000, 1863904),
-(@CGUID+118, 3, -164.751, -400.857, 17.0797, 4.51183, 5000, 1863902),
-(@CGUID+122, 1, -176.776, -434.265, 17.1622, 0.279253, 30000, 1863901),
-(@CGUID+122, 2, -165.452, -432.216, 17.0783, 4.61994, 20000, 0),
-(@CGUID+122, 3, -157.677, -431.365, 17.0778, 4.61994, 20000, 0),
-(@CGUID+122, 4, -151.013, -429.674, 17.0777, 4.61994, 12000, 0),
-(@CGUID+122, 5, -151.013, -429.674, 17.0777, 4.61994, 5000, 1863903),
-(@CGUID+123, 1, -130.551, -443.696, 17.164, 3.14527, 60000, 1863901),
-(@CGUID+123, 2, -149.68, -443.899, 17.0779, 4.60428, 2000, 1863904),
+
+-- Cabal Spellbinder Murmur Hallway Movement
+-- stationary pack 1
+(@CGUID+112, 1, -139.912, -353.917, 17.1665, 5.75959, 2000, 5),
+(@CGUID+112, 2, -153.403, -352.024, 17.0838, 4.70338, 5000, 1863401),
+
+-- stationary pack 2
+(@CGUID+113, 1, -140.42, -369.956, 17.0815, 3.03687, 2000, 5),
+(@CGUID+113, 2, -153.032, -375.78, 17.0816, 4.6724, 5000, 1863401),
+
+-- stationary pack 3
+(@CGUID+115, 1, -143.33, -397.343, 17.0801, 2.37365, 2000, 5),
+(@CGUID+115, 2, -153.364, -417.684, 17.078, 4.65555, 5000, 1863401),
+
+-- runner #3 (fast respawn)
+(@CGUID+116, 1, -179.281, -350.271, 17.1665, 5.98648, 1000, 5),
+(@CGUID+116, 2, -164.621, -364.47, 17.0824, 4.77388, 10000, 0),
+(@CGUID+116, 3, -149.681, -366.439, 17.0824, 4.61994, 10000, 0),
+
+-- runner #4 (fast respawn)
+(@CGUID+122, 1, -176.776, -434.265, 17.1622, 0.279253, 1000, 5),
+(@CGUID+122, 2, -165.452, -432.216, 17.0783, 4.61994, 10000, 0),
+(@CGUID+122, 3, -157.677, -431.365, 17.0778, 4.61994, 10000, 0),
+(@CGUID+122, 4, -151.013, -429.674, 17.0777, 4.61994, 10000, 0),
+
+-- runner #5 (fast respawn)
+(@CGUID+123, 1, -130.551, -443.696, 17.164, 3.14527, 1000, 5),
+(@CGUID+123, 2, -149.68, -443.899, 17.0779, 4.60428, 10000, 0),
+-- ----------------------------------------------
+
 (@CGUID+124, 1, -51.2688, -78.5158, -1.0449, 2.49582, 7000, 1864002),
 (@CGUID+124, 2, -51.2688, -78.5158, -1.0449, 2.49582, 7000, 1864003),
 (@CGUID+124, 3, -51.2688, -78.5158, -1.0449, 2.49582, 7000, 1864004),
@@ -412,10 +439,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+266, 6, -60.185101, -97.755898, -1.128300, 100, 0, 0),
 (@CGUID+266, 7, -129.5516, -134.2706, 4.218479, 100, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (18708,18731);
+DELETE FROM creature_movement_template WHERE entry IN (18731);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
-(18708, 0, 1, -157.895, -497.322, 15.8651, 1.5708, 5000, 1870801),
-(18708, 0, 2, -157.895, -497.322, 15.8651, 1.5708, 5000, 1870802),
 (18731, 0, 1, -157.366, 2.177, 8.073, 0, 0, 0),
 (18731, 0, 2, -172.266, -18.28, 8.073, 0, 0, 0),
 (18731, 0, 3, -171.051, -38.748, 8.073, 0, 0, 0),
@@ -487,7 +512,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (18633, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Acolyte
 (18634, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Summoner
 (18635, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Deathsworn
-(18636, 0, 0, 1, 16, 0, 0, '32199'), -- Cabal Assassin
+(18636, 0, 0, 1, 16, 0, 0, ''), -- Cabal Assassin
 (18637, 0, 0, 1, 16, 0, 0, '16592'), -- Cabal Shadow Priest
 (18638, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Zealot
 (18639, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Spellbinder
@@ -597,20 +622,37 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+43, @CGUID+238, 1679), -- Cabal Cultist -> Cabal Fanatic
 (@CGUID+44, @CGUID+238, 1679), -- Cabal Cultist -> Cabal Fanatic
 (@CGUID+233, @CGUID+238, 1679), -- Cabal Fanatic -> Cabal Fanatic
--- Murmur Hallway - WIP
+-- Murmur Hallway
+-- group 1
 (@CGUID+45, @CGUID+47, 3), -- Cabal Executioner -> Cabal Executioner
-(@CGUID+48, @CGUID+46, 1167), -- Cabal Executioner -> Cabal Executioner
-(@CGUID+78, @CGUID+46, 1167), -- Cabal Summoner -> Cabal Executioner
-(@CGUID+79, @CGUID+46, 1167), -- Cabal Summoner -> Cabal Executioner
-(@CGUID+112, @CGUID+46, 1167), -- Cabal Spellbinder -> Cabal Executioner
-(@CGUID+50, @CGUID+49, 1167), -- Cabal Executioner -> Cabal Executioner
-(@CGUID+80, @CGUID+49, 1167), -- Cabal Summoner -> Cabal Executioner
-(@CGUID+113, @CGUID+49, 1167), -- Cabal Spellbinder -> Cabal Executioner
-(@CGUID+52, @CGUID+51, 1167), -- Cabal Executioner -> Cabal Executioner
-(@CGUID+81, @CGUID+51, 1167), -- Cabal Summoner -> Cabal Executioner
-(@CGUID+115, @CGUID+51, 1167), -- Cabal Spellbinder -> Cabal Executioner
-(@CGUID+120, @CGUID+119, 1167), -- Cabal Spellbinder -> Cabal Spellbinder
-(@CGUID+121, @CGUID+119, 1167); -- Cabal Spellbinder -> Cabal Spellbinder
+
+-- group 2
+(@CGUID+48, @CGUID+46, 3), -- Cabal Executioner -> Cabal Executioner
+(@CGUID+78, @CGUID+46, 3), -- Cabal Summoner -> Cabal Executioner
+(@CGUID+112, @CGUID+46, 3), -- Cabal Spellbinder -> Cabal Executioner
+-- runner 1
+(@CGUID+79, @CGUID+46, 1024), -- Cabal Summoner/Spellbinder -> Cabal Executioner
+
+-- group 3
+(@CGUID+50, @CGUID+49, 3), -- Cabal Executioner -> Cabal Executioner
+(@CGUID+80, @CGUID+49, 3), -- Cabal Summoner -> Cabal Executioner
+(@CGUID+113, @CGUID+49, 3), -- Cabal Spellbinder -> Cabal Executioner
+-- runner 2
+(@CGUID+116, @CGUID+49, 1024), -- Cabal Summoner/Spellbinder -> Cabal Executioner
+
+-- group 4
+(@CGUID+52, @CGUID+51, 3), -- Cabal Executioner -> Cabal Executioner
+(@CGUID+81, @CGUID+51, 3), -- Cabal Summoner -> Cabal Executioner
+(@CGUID+115, @CGUID+51, 3), -- Cabal Spellbinder -> Cabal Executioner
+-- runner 3
+(@CGUID+82, @CGUID+51, 1024), -- Cabal Summoner/Spellbinder -> Cabal Executioner
+
+-- group 5
+(@CGUID+120, @CGUID+119, 3), -- Cabal Spellbinder -> Cabal Spellbinder
+(@CGUID+121, @CGUID+119, 3), -- Cabal Spellbinder -> Cabal Spellbinder
+-- runners 4 & 5
+(@CGUID+123, @CGUID+119, 1024), -- Cabal Summoner/Spellbinder -> Cabal Spellbinder
+(@CGUID+122, @CGUID+119, 1024); -- Cabal Summoner/Spellbinder -> Cabal Spellbinder
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (19224, 555, 18732, 4112, 0), -- Void Portal -> Grandmaster Vorpil
@@ -651,6 +693,8 @@ INSERT INTO creature_spawn_entry (guid, entry) VALUES
 (@CGUID+70, 18633), (@CGUID+70, 18637), -- Cabal Acolyte, Cabal Shadow Priest
 (@CGUID+71, 18633), (@CGUID+71, 18637), -- Cabal Acolyte, Cabal Shadow Priest
 (@CGUID+75, 18633), (@CGUID+75, 18635), -- Cabal Acolyte, Cabal Deathsworn
+(@CGUID+79, 18634), (@CGUID+79, 18639), -- Cabal Summoner, Cabal Spellbinder
+(@CGUID+82, 18634), (@CGUID+82, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+85, 18633), (@CGUID+85, 18635), -- Cabal Acolyte, Cabal Deathsworn
 (@CGUID+86, 18633), (@CGUID+86, 18635), -- Cabal Acolyte, Cabal Deathsworn
 (@CGUID+87, 18633), (@CGUID+87, 18635), -- Cabal Acolyte, Cabal Deathsworn
@@ -666,6 +710,9 @@ INSERT INTO creature_spawn_entry (guid, entry) VALUES
 (@CGUID+109, 18830), (@CGUID+109, 18638), -- Cabal Fanatic, Cabal Zealot
 (@CGUID+110, 18631), (@CGUID+110, 18638), -- Cabal Cultist, Cabal Zealot
 (@CGUID+111, 18830), (@CGUID+111, 18638), -- Cabal Fanatic, Cabal Zealot
+(@CGUID+116, 18634), (@CGUID+116, 18639), -- Cabal Summoner, Cabal Spellbinder
+(@CGUID+122, 18634), (@CGUID+122, 18639), -- Cabal Summoner, Cabal Spellbinder
+(@CGUID+123, 18634), (@CGUID+123, 18639), -- Cabal Summoner, Cabal Spellbinder
 (@CGUID+134, 18641), (@CGUID+134, 18642), (@CGUID+134, 18663), -- Cabal Familiar, Fel Guardhound, Maiden of Discipline
 (@CGUID+136, 18641), (@CGUID+136, 18642), (@CGUID+136, 18663), -- Cabal Familiar, Fel Guardhound, Maiden of Discipline
 (@CGUID+233, 18830), (@CGUID+233, 18631), -- Cabal Fanatic, Cabal Cultist
@@ -719,6 +766,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+42, 0, 555, 3, -313.634, -259.705, 12.6837, 3.13859, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+43, 0, 555, 3, -276.84, -268.582, 12.6808, 0.0211422, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+44, 0, 555, 3, -277.14, -263.29, 12.6806, 0.0211422, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+
 (@CGUID+45, 18632, 555, 3, -172.173, -325.754, 17.1697, 5.53269, 7200, 7200, 0, 0, 0, 0), -- Cabal Executioner
 (@CGUID+46, 18632, 555, 3, -168.532, -352.302, 17.1662, 4.83456, 7200, 7200, 0, 0, 0, 0), -- Cabal Executioner
 (@CGUID+47, 18632, 555, 3, -135.771, -329.128, 17.1687, 3.50811, 7200, 7200, 0, 0, 0, 0), -- Cabal Executioner
@@ -727,6 +775,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+50, 18632, 555, 3, -173.133, -366.97, 17.0828, 5.91667, 7200, 7200, 0, 0, 0, 0), -- Cabal Executioner
 (@CGUID+51, 18632, 555, 3, -142.203, -390.029, 17.0806, 4.4855, 7200, 7200, 0, 0, 0, 0), -- Cabal Executioner
 (@CGUID+52, 18632, 555, 3, -140.54, -410.52, 17.079, 1.44862, 7200, 7200, 0, 0, 0, 0), -- Cabal Executioner
+
 (@CGUID+53, 0, 555, 3, -91.1616, -63.4688, -1.12825, 0.31254, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+54, 0, 555, 3, -47.365, -33.8044, -1.04484, 0.331613, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+55, 0, 555, 3, -41.8571, -33.4506, -1.04484, 2.87979, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
@@ -750,15 +799,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+73, 18633, 555, 3, -265.829, 0.056211, 8.15626, 3.68265, 7200, 7200, 0, 0, 0, 2), -- Cabal Acolyte
 (@CGUID+74, 18633, 555, 3, -272.845, -76.4279, 8.15625, 2.6529, 7200, 7200, 0, 0, 0, 2), -- Cabal Acolyte
 (@CGUID+75, 0, 555, 3, -454.315, -183.092, 12.7725, 5.06145, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+
 (@CGUID+76, 18634, 555, 3, -175.894, -349.783, 17.166, 5.61996, 7200, 7200, 0, 0, 0, 0), -- Cabal Summoner
 (@CGUID+77, 18634, 555, 3, -156.498, -328.007, 17.1696, 3.14159, 7200, 7200, 0, 0, 0, 0), -- Cabal Summoner
 (@CGUID+78, 18634, 555, 3, -135.201, -360.271, 17.0819, 3.49066, 7200, 7200, 0, 0, 0, 0), -- Cabal Summoner
-(@CGUID+79, 18634, 555, 3, -136.037, -343.41, 17.1648, 3.1765, 7200, 7200, 0, 0, 0, 0), -- Cabal Summoner
+(@CGUID+79, 0, 555, 3, -136.037, -343.41, 17.1648, 3.1765, 5, 10, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+80, 18634, 555, 3, -141.612, -363.212, 17.0827, 4.2586, 7200, 7200, 0, 0, 0, 0), -- Cabal Summoner
 (@CGUID+81, 18634, 555, 3, -171.826, -401.41, 17.0799, 0.890118, 7200, 7200, 0, 0, 0, 0), -- Cabal Summoner
-(@CGUID+82, 18634, 555, 3, -134.274, -388.795, 17.1657, 3.14159, 7200, 7200, 0, 0, 0, 0), -- Cabal Summoner
-(@CGUID+83, 18634, 555, 3, -154.559, -394.581, 17.0796, 4.69674, 7200, 7200, 0, 0, 0, 0), -- Cabal Summoner					//RP Event?
-(@CGUID+84, 18634, 555, 3, -143.49, -443.834, 17.0779, 3.15222, 7200, 7200, 0, 0, 0, 0), -- Cabal Summoner
+(@CGUID+82, 0, 555, 3, -134.274, -388.795, 17.1657, 3.14159, 5, 10, 0, 0, 0, 2), -- creature_spawn_entry
+-- REUSE @CGUID+83
+-- REUSE @CGUID+84
+
 (@CGUID+85, 0, 555, 3, -91.7096, -19.436, -1.12819, 0.0386012, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+86, 0, 555, 3, -44.641, -34.6061, -1.04484, 1.44862, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+87, 0, 555, 3, -35.078, -81.0337, -1.04491, 5.18363, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
@@ -786,18 +837,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+109, 0, 555, 3, -270.873, -268.766, 12.7638, 0.287388, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+110, 0, 555, 3, -270.18, -258.579, 12.7637, 5.98751, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+111, 0, 555, 3, -313.244, -268.244, 12.6837, 3.25697, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+
 (@CGUID+112, 18639, 555, 3, -139.912, -353.917, 17.1665, 5.75959, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
 (@CGUID+113, 18639, 555, 3, -140.42, -369.956, 17.0815, 3.03687, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
-(@CGUID+114, 18639, 555, 3, -136.037, -343.41, 17.1648, 3.1765, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder					//RP Event?
+-- REUSE @CGUID+114
 (@CGUID+115, 18639, 555, 3, -143.33, -397.343, 17.0801, 2.37365, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
-(@CGUID+116, 18639, 555, 3, -179.281, -350.271, 17.1665, 5.98648, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
-(@CGUID+117, 18639, 555, 3, -149.674, -394.487, 17.0796, 4.69282, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder					//RP Event?
-(@CGUID+118, 18639, 555, 3, -134.274, -388.795, 17.1657, 3.72706, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
+(@CGUID+116, 0, 555, 3, -179.281, -350.271, 17.1665, 5.98648, 5, 10, 0, 0, 0, 2), -- creature_spawn_entry
+-- REUSE @CGUID+117
+-- REUSE @CGUID+118
 (@CGUID+119, 18639, 555, 3, -151.682, -461.163, 17.1606, 4.57276, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
 (@CGUID+120, 18639, 555, 3, -156.284, -461.871, 17.1606, 4.69494, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
 (@CGUID+121, 18639, 555, 3, -160.956, -461.858, 17.1606, 4.90438, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
-(@CGUID+122, 18639, 555, 3, -176.776, -434.265, 17.1622, 0.279253, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
-(@CGUID+123, 18639, 555, 3, -130.551, -443.696, 17.164, 3.14527, 7200, 7200, 0, 0, 0, 0), -- Cabal Spellbinder
+(@CGUID+122, 0, 555, 3, -176.776, -434.265, 17.1622, 0.279253, 5, 10, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+123, 0, 555, 3, -130.551, -443.696, 17.164, 3.14527, 5, 10, 0, 0, 0, 2), -- creature_spawn_entry
+
 (@CGUID+124, 18640, 555, 3, -51.2688, -78.5158, -1.0449, 2.49582, 7200, 7200, 0, 0, 0, 2), -- Cabal Warlock
 (@CGUID+125, 18640, 555, 3, -74.4987, -77.2237, -1.04497, 1.55334, 7200, 7200, 0, 0, 0, 2), -- Cabal Warlock
 (@CGUID+126, 18640, 555, 3, -259.324, 5.18744, 8.15627, 3.64774, 7200, 7200, 0, 0, 0, 2), -- Cabal Warlock
@@ -1218,7 +1271,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1863101,1863102,1863103,1863201,1863202,1863301,1863302,1863303,1863304,1863305,1863306,1863401,1863402,1863403,1863501,1863502,1863503,1863701,1863801,1863901,1863902,1863903,1863904,1864001,1864002,1864003,1864004,1864005,1864006,1864101,1870801,1870802,1873201,1883001,1883002,1883003,1883004);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1863101,1863102,1863103,1863201,1863301,1863302,1863303,1863304,1863305,1863306,1863401,1863402,1863501,1863502,1863503,1863701,1863801,1864001,1864002,1864003,1864004,1864005,1864006,1864101,1873201,1883001,1883002,1883003,1883004);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1863101, 1000, 1, 1, 0, 0, 0, 0, 0, 5, 273, 11, 0, 0, 0, 0, 0, ''),
 (1863102, 1000, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -1227,9 +1280,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1863102, 20000, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1863103, 6000, 35, 5, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Send EVENT A'),
 (1863103, 15000, 35, 6, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Send EVENT B'),
-(1863201, 1000, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
-(1863202, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 0:idle'),
-(1863202, 1000, 1, 376, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+
+-- Murmur room event
+(1863201, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - movement changed to 0:idle'),
+(1863201, 1000, 1, 376, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Exeuctioner - emote'),
+
 (1863301, 2000, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1863301, 57000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1863302, 3000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -1243,9 +1298,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1863306, 7000, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1863306, 13000, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1863306, 20000, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1863401, 1000, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
-(1863402, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 0:idle'),
-(1863403, 1000, 15, 33331, 1, 0, 18708, @CGUID+138, 19, 0, 0, 0, 0, 0, 0, 0, 0, 'force buddy to cast 33329'),
+
+-- Murmur room event
+(1863401, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - movement changed to 0:idle'),
+(1863401, 1000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner/Spellbinder - emote'),
+(1863402, 0, 15, 33331, 1, 0, 18708, @CGUID+138, 19, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - force Murmur to cast 33329'),
+
 (1863501, 2000, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_KNEEL'),
 (1863501, 4000, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1863501, 8000, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'STATE_STAND'),
@@ -1260,11 +1318,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1863701, 20000, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1863801, 6000, 35, 5, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Send EVENT A'),
 (1863801, 15000, 35, 6, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Send EVENT B'),
-(1863901, 1000, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
-(1863902, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 0:idle'),
-(1863902, 1000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1863903, 1000, 15, 33331, 1, 0, 18708, @CGUID+138, 19, 0, 0, 0, 0, 0, 0, 0, 0, 'force buddy to cast 33329'),
-(1863904, 4000, 15, 33331, 1, 0, 18708, @CGUID+138, 19, 0, 0, 0, 0, 0, 0, 0, 0, 'force buddy to cast 33329'),
 (1864001, 1000, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1864002, 1000, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1864002, 2000, 3, 0, 0, 0, 18641, @CGUID+129, 23, 0, 0, 0, 0, -53.6404, -76.4585, -1.12736, 0.0800861, ''),
@@ -1299,9 +1352,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1864006, 13000, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1864006, 20000, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1864101, 1000, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
-(1870801, 1000, 35, 5, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'THROW_AI_EVENT'),
-(1870801, 4000, 15, 33332, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Suppression Blast 33332'),
-(1870802, 1000, 35, 5, 500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'THROW_AI_EVENT'),
 (1873201, 1000, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1873201, 5000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (1873201, 9000, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
@@ -1311,7 +1361,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 DELETE FROM dbscripts_on_go_template_use WHERE id IN (182942,183295);
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (182942, 1000, 3, 0, 0, 0, 18891, @CGUID+243, 23, 0, 0, 0, 0, -63.5416, 42.9283, 0.206252, 2.42972, ''),
-(183295, 8000, 20, 2, 0, 0, 18708, @CGUID+138, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Murmur - Change MovementType to Waypoint Movement'),
+-- Murmur room event
 (183295, 1000, 20, 2, 0, 0, 18634, @CGUID+76, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 1000, 20, 2, 0, 0, 18634, @CGUID+78, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 1000, 20, 2, 0, 0, 18632, @CGUID+45, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
@@ -1322,18 +1372,16 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (183295, 1000, 20, 2, 0, 0, 18632, @CGUID+46, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
 (183295, 1000, 20, 2, 0, 0, 18639, @CGUID+115, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 2000, 20, 2, 0, 0, 18632, @CGUID+48, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18639, @CGUID+118, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 2000, 20, 2, 0, 0, 18632, @CGUID+50, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18639, @CGUID+123, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
+-- (183295, 2000, 20, 2, 0, 0, 18639, @CGUID+123, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 2000, 20, 2, 0, 0, 18634, @CGUID+80, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18639, @CGUID+116, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Spellbinder - Change MovementType to Waypoint Movement'),
+-- (183295, 2000, 20, 2, 0, 0, 18639, @CGUID+116, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Spellbinder - Change MovementType to Waypoint Movement'),
 (183295, 2000, 20, 2, 0, 0, 18632, @CGUID+49, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18639, @CGUID+122, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Spellbinder - Change MovementType to Waypoint Movement'),
-(183295, 2000, 20, 2, 0, 0, 18634, @CGUID+79, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
+-- (183295, 2000, 20, 2, 0, 0, 18639, @CGUID+122, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Spellbinder - Change MovementType to Waypoint Movement'),
+-- (183295, 2000, 20, 2, 0, 0, 18634, @CGUID+79, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 2000, 20, 2, 0, 0, 18634, @CGUID+81, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
-(183295, 3000, 20, 2, 0, 0, 18634, @CGUID+84, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 3000, 20, 2, 0, 0, 18632, @CGUID+52, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement'),
-(183295, 3000, 20, 2, 0, 0, 18634, @CGUID+82, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
+-- (183295, 3000, 20, 2, 0, 0, 18634, @CGUID+82, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Summoner - Change MovementType to Waypoint Movement'),
 (183295, 3000, 20, 2, 0, 0, 18632, @CGUID+51, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Cabal Executioner - Change MovementType to Waypoint Movement');
 
 -- INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES

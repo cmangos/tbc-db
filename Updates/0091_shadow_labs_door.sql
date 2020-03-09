@@ -1,0 +1,3 @@
+UPDATE gameobject_template SET flags=32 WHERE entry=183295;
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1863202,1863403,1863901,1863902,1863903,1863904,1870801,1870802);
+
