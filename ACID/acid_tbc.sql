@@ -16481,7 +16481,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2123401','21234','30','0','100','1','5','23256','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Blade''s Edge Invisible Stalker - Set Phase 1 on Receive AI Event 5 (A)'),
 ('2123402','21234','30','0','100','1','6','23256','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Blade''s Edge Invisible Stalker - Set Phase 0 on Receive AI Event 6 (A)'),
 ('2123403','21234','1','1','100','1','0','0','4000','7000','0','0','11','40114','0','0','0','0','0','0','0','0','0','0','Blade''s Edge Invisible Stalker - Cast Copy of Flame Wave (Phase 1)'),
--- Bloodmaul Drudger
+-- Bloodmaul Drudger 21238
 ('2123801','21238','22','0','100','1','3','10040','0','0','0','0','54','-10479','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('2123802','21238','22','0','100','1','34','10040','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
 ('2123803','21238','22','0','100','1','39','10040','0','0','0','0','54','-10477','6','0','54','-10478','6','0','0','0','0','0','Bloodmaul Drudger - Say and Text Emote on Receive TEXTEMOTE_FART if Player has Completed Quest 11000'),
@@ -16491,8 +16491,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2123807','21238','22','0','100','1','101','10040','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('2123808','21238','6','0','100','0','10040','0','0','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Say on Death if Killer Player has Completed Quest 11000'),
 ('2123809','21238','4','0','15','0','0','0','0','0','0','0','1','-359','-360','-361','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Random Say on Aggro'),
-('2123810','21238','9','0','100','1','0','5','4000','7000','0','0','11','35918','1','32','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Cast Puncture Armor'),
-('2123811','21238','2','0','100','0','30','0','0','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Cast Enrage at 30% HP'),
+('2123810','21238','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Cast Enrage at 30% HP'),
+('2123811','21238','0','0','100','1025','10000','20000','32000','35000','0','0','11','35918','1','0','0','0','0','0','0','0','0','0','Bloodmaul Drudger - Cast Puncture Armor'),
 -- Bloodmaul Brutebane Stout Trigger 21241 - npc_bloodmaul_stout_trigger
 -- Dullgrom Dredger
 ('2125401','21254','0','0','100','0','2000','3000','0','0','0','0','28','0','36661','0','0','0','0','0','0','0','0','0','Dullgrom Dredger - Remove Confused Ogre'),
