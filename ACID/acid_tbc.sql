@@ -15888,7 +15888,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1995207','19952','22','0','100','1','101','10040','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Wave on Receive TEXTEMOTE_WAVE if Player has Completed Quest 11000'),
 ('1995208','19952','6','0','100','0','10040','0','0','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Say on Death if Killer Player has Completed Quest 11000'),
 ('1995209','19952','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Enable Range Mode on Aggro'),
-('1995210','19952','27','0','100','1','12544','1','5000','5000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Cast Frost Armor on Missing Buff'),
+('1995210','19952','27','0','100','1','12544','1','10000','10000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Cast Frost Armor on Missing Buff'),
 ('1995211','19952','0','0','100','1281','0','0','3400','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Cast Fireball (Range Mode)'),
 ('1995212','19952','0','0','100','1537','0','0','5000','20000','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Cast Fireball (Melee Mode)'),
 -- Bloodmaul Brewmaster
