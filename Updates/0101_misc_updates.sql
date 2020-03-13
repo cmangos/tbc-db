@@ -12,6 +12,8 @@ UPDATE gameobject SET spawntimesecsmin=2700, spawntimesecsmax=4500 WHERE id=1765
 
 -- remove faulty condition on Golnir Bouldertoe and Chepi vendor option
 UPDATE gossip_menu_option SET condition_id=0 WHERE menu_id IN (12851,12856) AND id=0;
+-- additional NPCs with the same problem - this gossip menu option should not have a condition
+UPDATE gossip_menu_option SET condition_id=0 WHERE menu_id IN (12850,12852,12853,12855,12857,12858,12859,12868) AND id=0 AND condition_id=474;
 
 UPDATE creature_template SET ExtraFlags=ExtraFlags|4096 WHERE Entry=21417; -- Invis Infernal Caster
 
