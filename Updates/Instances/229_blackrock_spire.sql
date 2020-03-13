@@ -748,6 +748,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+269, @CGUID+185, 515), -- Smolderthorn Shadow Hunter -> Smolderthorn Headhunter
 (@CGUID+290, @CGUID+185, 515), -- Smolderthorn Berserker -> Smolderthorn Headhunter
 (@CGUID+293, @CGUID+194, 515), -- Smolderthorn Berserker -> Smolderthorn Headhunter
+(@CGUID+315, @CGUID+209, 3), -- Scarshield Worg -> Scarshield Raider
+(@CGUID+316, @CGUID+209, 3), -- Scarshield Worg -> Scarshield Raider
 (@CGUID+351, @CGUID+338, 515), -- Bloodaxe Worg -> Bloodaxe Raider
 (@CGUID+354, @CGUID+335, 515), -- Bloodaxe Worg -> Bloodaxe Raider
 (@CGUID+355, @CGUID+338, 515), -- Bloodaxe Worg -> Bloodaxe Raider

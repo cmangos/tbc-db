@@ -437,7 +437,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 -- Pathing for Shadowsword Commander Entry: 25837
 (@CGUID+316, 1, 1682.332, 537.6241, 85.33395, 2.076942, 50000, 2583701),
 -- Pathing for Shadowsword Manafiend Entry: 25483
-(@CGUID+326, 1, 1796.504, 565.1455, 53.83252, 100, 0, 2548301),
+(@CGUID+326, 1, 1796.504, 565.1455, 53.83252, 100, 5000, 2548301), -- emote and set idle movement
 -- Pathing for Shadowsword Vanquisher Entry: 25486
 (@CGUID+327, 1, 1812.618, 586.0417, 50.79887, 3.717551, 0, 2548601), -- Yell text
 (@CGUID+327, 2, 1806.641, 586.4019, 51.12543, 0, 0, 0),
