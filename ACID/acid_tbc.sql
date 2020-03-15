@@ -30349,6 +30349,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Searing Totem 2523 - TotemAI
 -- Earthbind Totem 2630 - TotemAI
 -- Ward of Laze 2667 - TotemAI
+-- Advanced Target Dummy 2674
+('267401','2674','11','0','100','0','0','0','0','0','0','0','11','4507','0','0','50','0','0','0','0','0','0','0','Advanced Target Dummy - Cast Target Dummy Spawn Effect and Set ReactState Passive on Spawn'),
+('267402','2674','29','0','100','0','15000','15000','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Advanced Target Dummy - Die on Generic Timer'),
 -- Healing Ward V 2992 - TotemAI
 -- Healing Stream Totem 3527 - TotemAI
 -- Healing Ward 3560 - TotemAI
