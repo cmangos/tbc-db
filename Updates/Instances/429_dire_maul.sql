@@ -1016,6 +1016,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16045, 0, 0, 1, 0, 0, 0, NULL); -- Isalien Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(@CGUID+232, @CGUID+233, 3), -- Gordok Reaver -> Gordok Reaver
 (@CGUID+335, @CGUID+367, 515), -- Warpwood Guardian -> Warpwood Stomper
 (@CGUID+336, @CGUID+367, 515), -- Warpwood Guardian -> Warpwood Stomper
 (@CGUID+337, @CGUID+368, 515), -- Warpwood Guardian -> Warpwood Stomper
