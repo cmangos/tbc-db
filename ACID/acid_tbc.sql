@@ -13371,7 +13371,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1447902','14479','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Twilight Lord Everun - Flee at 15% HP'),
 ('1447903','14479','0','0','100','1025','0','0','5400','25300','0','0','11','17439','1','0','0','0','0','0','0','0','0','0','Twilight Lord Everun - Cast Shadow Shock'),
 ('1447904','14479','9','0','100','1025','0','40','2400','3800','0','0','11','19816','1','256','0','0','0','0','0','0','0','0','Twilight Lord Everun - Cast Fireball'),
--- Solenor the Slayer 14530
+-- Solenor the Slayer 14530 - npc_solenor
 -- Nelson the Nice 14536
 -- Creeping Doom 14761
 -- Emissary Roman'khan 14862
