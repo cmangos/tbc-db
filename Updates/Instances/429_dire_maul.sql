@@ -1,7 +1,7 @@
 /* DBScriptData
 DBName: Dire Maul
 DBScriptName: instance_dire_maul
-DB%Complete: 75
+DB%Complete: 80
 DBComment:
 EndDBScriptData */
 
@@ -14,20 +14,34 @@ SET @PGUID := 47200; -- pools
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
-(@CGUID+146, 1, 310.8415, -13.01986, -3.887124, 3.473205, 30000, 0),
+(@CGUID+144, 1, 468.33, 3.67, -3.9162, 100, 0, 0),
+(@CGUID+144, 2, 469.788, 46.4686, -3.91727, 100, 0, 0),
+(@CGUID+144, 3, 478.84, 75.12, -3.88, 100, 0, 0),
+(@CGUID+144, 4, 460.19, 121.48, -3.88, 100, 0, 0),
+(@CGUID+144, 5, 337.87, 121.03, -3.88, 100, 0, 0),
+(@CGUID+144, 6, 310.87, 107.01, -3.88, 100, 0, 0),
+(@CGUID+144, 7, 307.35, 30.51, -3.91, 100, 0, 0),
+(@CGUID+144, 8, 303.7117, -25.2759, -3.8869, 100, 0, 0),
+(@CGUID+144, 9, 301.4661, -86.08256, -3.888566, 100, 0, 0),
+(@CGUID+144, 10, 303.9529, -103.7906, -3.886538, 100, 0, 0),
+(@CGUID+144, 11, 328.6918, -108.4514, -3.886415, 100, 0, 0),
+(@CGUID+144, 12, 349.4499, -113.0719, -3.885886, 100, 0, 0),
+(@CGUID+144, 13, 373.62, -108.48, -3.8861, 100, 0, 0),
+(@CGUID+144, 14, 349.4499, -113.0719, -3.885886, 100, 0, 0),
+(@CGUID+144, 15, 328.6918, -108.4514, -3.886415, 100, 0, 0),
+(@CGUID+144, 16, 303.9529, -103.7906, -3.886538, 100, 0, 0),
+(@CGUID+144, 17, 301.4661, -86.08256, -3.888566, 100, 0, 0),
+(@CGUID+144, 18, 303.7117, -25.2759, -3.8869, 100, 0, 0),
+(@CGUID+144, 19, 309.03, 4.14, -3.8842, 100, 0, 0),
+(@CGUID+144, 20, 336.8683, 3.981493, -20.15593, 100, 0, 0),
+(@CGUID+144, 21, 354.146, 1.931919, -24.60496, 100, 0, 0),
+(@CGUID+144, 22, 390.2945, 2.087241, -25.32607, 100, 0, 0),
+(@CGUID+144, 23, 417.5935, 2.578588, -24.45984, 100, 0, 0),
+(@CGUID+144, 24, 440.9338, 3.172982, -13.66713, 100, 0, 0),
+(@CGUID+146, 1, 310.8415, -13.01986, -3.887124, 3.473205, 28000, 0),
 (@CGUID+146, 2, 303.7117, -25.2759, -3.8869, 100, 0, 0),
-(@CGUID+146, 3, 301.4661, -86.08256, -3.888566, 100, 0, 0),
-(@CGUID+146, 4, 303.9529, -103.7906, -3.886538, 100, 0, 0),
-(@CGUID+146, 5, 328.6918, -108.4514, -3.886415, 100, 0, 0),
-(@CGUID+146, 6, 349.4499, -113.0719, -3.885886, 100, 0, 0),
-(@CGUID+146, 7, 466.92, -113.09, -3.8857, 100, 0, 0),
-(@CGUID+146, 8, 468.33, 3.67, -3.9162, 100, 0, 0),
-(@CGUID+146, 9, 440.9338, 3.172982, -13.66713, 100, 0, 0),
-(@CGUID+146, 10, 417.5935, 2.578588, -24.45984, 100, 0, 0),
-(@CGUID+146, 11, 390.2945, 2.087241, -25.32607, 100, 0, 0),
-(@CGUID+146, 12, 354.146, 1.931919, -24.60496, 100, 0, 0),
-(@CGUID+146, 13, 336.8683, 3.981493, -20.15593, 100, 0, 0),
-(@CGUID+146, 14, 309.03, 4.14, -3.8842, 100, 0, 0),
+(@CGUID+146, 3, 296.9958, -63.9747, -3.8885, 3.9112, 28000, 0),
+(@CGUID+146, 4, 310.9867, -46.0561, -3.8871, 100, 0, 0),
 (@CGUID+153, 1, 316.9453, 239.888, 11.20933, 6.2792, 30000, 0),
 (@CGUID+153, 2, 331.7433, 276.5974, 11.21585, 100, 0, 0),
 (@CGUID+153, 3, 342.327, 289.1291, 11.21128, 100, 0, 0),
@@ -46,7 +60,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+161, 8, 421.0791, 298.05, 11.19867, 100, 0, 0),
 (@CGUID+161, 9, 436.7516, 277.5142, 11.20312, 100, 0, 0),
 (@CGUID+161, 10, 435.6283, 231.2509, 11.21427, 100, 0, 0),
-(@CGUID+164, 1, 290.0000, 43.9366, -3.8463, 4.8869, 30000, 0),
+(@CGUID+164, 1, 298.47, 45.13, -3.9662, 4.0173, 30000, 0),
 (@CGUID+164, 2, 301.6180, 48.9438, -3.8854, 100, 0, 0),
 (@CGUID+164, 3, 310.5084, 66.3251, -3.95944, 100, 0, 0),
 (@CGUID+164, 4, 304.0981, 100.2223, -3.945702, 100, 0, 0),
@@ -1039,7 +1053,8 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14566, 0, 27, -18.00219, 278.0495, -8.436031, 100, 0, 0),
 (14566, 0, 29, -23.79626, 286.6538, -7.955163, 100, 0, 3); -- Waypoint Pause as incomplete
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+181, 0, 0, 0, 0, 400, 0, NULL);
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (11441, 0, 0, 1, 16, 0, 0, '19818'), -- Gordok Brute
@@ -1124,8 +1139,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+159, @CGUID+158, 3), -- Gordok Brute -> Gordok Brute
 (@CGUID+188, @CGUID+158, 3), -- Gordok Mage-Lord -> Gordok Brute
 (@CGUID+193, @CGUID+158, 3), -- Gordok Mage-Lord -> Gordok Brute
-(@CGUID+171, @CGUID+163, 3), -- creature_spawn_entry -> Gordok Brute
-(@CGUID+190, @CGUID+163, 3), -- Gordok Mage-Lord -> Gordok Brute
+(@CGUID+163, @CGUID+148, 3), -- Gordok Brute -> Gordok Brute
+(@CGUID+171, @CGUID+148, 3), -- creature_spawn_entry -> Gordok Brute
+(@CGUID+190, @CGUID+148, 3), -- Gordok Mage-Lord -> Gordok Brute
 (@CGUID+746, @CGUID+132, 3), -- Gordok Mastiff -> Gordok Brute
 (@CGUID+765, @CGUID+132, 3), -- Gordok Mastiff -> Gordok Brute
 (@CGUID+766, @CGUID+132, 3), -- Gordok Mastiff -> Gordok Brute
@@ -1153,10 +1169,12 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+189, @CGUID+198, 3), -- Gordok Mage-Lord -> Gordok Captain
 (@CGUID+760, @CGUID+759, 515), -- Gordok Mastiff -> Gordok Mastiff
 (@CGUID+761, @CGUID+759, 515), -- Gordok Mastiff -> Gordok Mastiff
+(@CGUID+743, @CGUID+180, 515), -- Gordok Mastiff -> creature_spawn_entry
 (@CGUID+744, @CGUID+180, 515), -- Gordok Mastiff -> creature_spawn_entry
-(@CGUID+745, @CGUID+180, 515), -- Gordok Mastiff -> creature_spawn_entry
 (@CGUID+762, @CGUID+165, 515), -- Gordok Mastiff -> creature_spawn_entry
 (@CGUID+763, @CGUID+165, 515), -- Gordok Mastiff -> creature_spawn_entry
+(@CGUID+770, @CGUID+144, 515), -- Gordok Mastiff -> Gordok Brute
+(@CGUID+771, @CGUID+144, 515), -- Gordok Mastiff -> Gordok Brute
 (@CGUID+335, @CGUID+367, 515), -- Warpwood Guardian -> Warpwood Stomper
 (@CGUID+336, @CGUID+367, 515), -- Warpwood Guardian -> Warpwood Stomper
 (@CGUID+337, @CGUID+368, 515), -- Warpwood Guardian -> Warpwood Stomper
@@ -1188,6 +1206,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (14483, 429, 14501, 8192, 0); -- Dread Guard -> Warlock Mount Ritual Mob Type 3, Infernal (DND)
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+139, 11441),(@CGUID+139, 13036), -- Gordok Brute, Gordok Mastiff
 (@CGUID+140, 11441),(@CGUID+140, 11444), -- Gordok Brute, Gordok Mage-Lord
 (@CGUID+152, 11441),(@CGUID+152, 11444), -- Gordok Brute, Gordok Mage-Lord
 (@CGUID+157, 11441),(@CGUID+157, 11444), -- Gordok Brute, Gordok Mage-Lord
@@ -1343,16 +1362,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+136, 11441, 429, 289.2883, -75.33929, -3.803657, 0.8552113, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+137, 11441, 429, 297.3685, -66.73808, -3.803757, 3.926991, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+138, 11441, 429, 404.4417, 180.2827, 2.935195, 5.393067, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
-(@CGUID+139, 11441, 429, 367.0829, 36.71098, -24.71184, 4.642576, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
+(@CGUID+139, 0, 429, 367.0829, 36.71098, -24.71184, 4.642576, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+140, 0, 429, 375.4648, 26.51105, -25.88804, 3.054326, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+141, 11441, 429, 417.915, 292.252, 11.1982, 3.60941, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+142, 11441, 429, 312.0857, 182.9168, 2.936266, 4.363323, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+143, 11441, 429, 326.9124, 360.9676, 2.936264, 4.747295, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
--- (@CGUID+144, 11441, 429, 398.872, 167.834, 2.85043, 6.04776, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
-(@CGUID+145, 11441, 429, 469.788, 46.4686, -3.91727, 1.44576, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
+(@CGUID+144, 11441, 429, 468.33, 3.67, -3.9162, 0, 7200, 7200, 0, 0, 0, 2), -- Gordok Brute
+-- (@CGUID+145, 11441, 429, 469.788, 46.4686, -3.91727, 1.44576, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+146, 11441, 429, 310.688, -12.7194, -3.80129, 6.19592, 7200, 7200, 0, 0, 0, 2), -- Gordok Brute
 (@CGUID+147, 11441, 429, 387.5461, 135.5619, -2.500082, 2.007129, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
--- (@CGUID+148, 11441, 429, 301.618, 48.9438, -3.88544, 0.541052, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
+(@CGUID+148, 11441, 429, 290.0000, 43.9366, -3.8463, 4.8869, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+149, 11441, 429, 391.7116, 102.5856, -3.803625, 0.541052, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+150, 11441, 429, 262.4022, 94.82716, -2.476256, 3.211406, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+151, 11441, 429, 431.2707, 75.95171, -23.55553, 3.769911, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
@@ -1920,7 +1939,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+719, 13036, 429, 730.857, 454.202, 28.1818, 4.64055, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+720, 13036, 429, 735.317, 444.417, 28.1823, 0.813315, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+721, 13036, 429, 340.884, -22.1709, -25.0456, 5.84685, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
-(@CGUID+722, 13036, 429, 357.606, -31.0619, -25.3087, 1.57987, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
+-- (@CGUID+722, 13036, 429, 357.606, -31.0619, -25.3087, 1.57987, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff x3 patrol
 (@CGUID+723, 13036, 429, 349.138, -36.2457, -25.3775, 0.750492, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+724, 13036, 429, 341.746, -30.117, -25.1938, 3.12414, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+725, 13036, 429, 382.306, -69.0369, -23.5575, 1.91986, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
@@ -1968,8 +1987,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+767, 13036, 429, 412.695, -61.5281, -25.3884, 6.03884, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+768, 13036, 429, 420.648, -49.2333, -23.81, 0.958851, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+769, 13036, 429, 334.235, 357.029, 2.93627, 3.4383, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
-(@CGUID+770, 13036, 429, 464.224, 26.2598, -3.9254, 1.44948, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
-(@CGUID+771, 13036, 429, 466.826, 22.9091, -3.9267, 1.52329, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
+(@CGUID+770, 13036, 429, 472.56, 0.70, -3.9256, 3.1376, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
+(@CGUID+771, 13036, 429, 464.83, 0.76, -3.90, 3.1376, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+772, 13036, 429, 434.5, 304.634, 11.2862, 1.8326, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+773, 13036, 429, 386.18, -59.6284, -23.0857, 3.68265, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+774, 13036, 429, 404.756, 9.16734, -24.9806, 5.37936, 7200, 7200, 5, 0, 0, 1), -- Gordok Mastiff
