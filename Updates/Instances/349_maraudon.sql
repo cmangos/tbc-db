@@ -571,6 +571,11 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15556, 0, 0, 1, 16, 0, 0, '25824'); -- Elder Splitrock
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+(@CGUID+205, @CGUID+204, 3), -- Primordial Behemoth -> Primordial Behemoth
+(@CGUID+211, @CGUID+209, 3), -- Primordial Behemoth -> Primordial Behemoth
+(@CGUID+214, @CGUID+212, 3), -- Primordial Behemoth -> Primordial Behemoth
+(@CGUID+215, @CGUID+213, 3), -- Primordial Behemoth -> Primordial Behemoth
+(@CGUID+218, @CGUID+217, 3), -- Primordial Behemoth -> Primordial Behemoth
 (@CGUID+179, @CGUID+484, 3), -- Putridus Shadowstalker -> Lord Vyletongue
 (@CGUID+180, @CGUID+484, 3), -- Putridus Shadowstalker -> Lord Vyletongue
 (@CGUID+573, @CGUID+576, 512), -- Stolid Snapjaw -> Stolid Snapjaw
