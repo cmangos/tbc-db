@@ -73,7 +73,7 @@ REPLACE INTO `mangos_string` VALUES
 (1545,'[Tickets]: [%s] has been escalated (L%u) by %s',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (1546,'[Tickets]: [%s] has been de-escalated by the author\'s edits',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (1547,'[Tickets]: [%s] has been closed by %s',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-(1548,'[Tickets]: [%s] has been successfuly surveyed',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
+(1548,'[Tickets]: [%s] has been successfully surveyed',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (1549,'RESERVED',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (1550,'Open',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 (1551,'New',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
