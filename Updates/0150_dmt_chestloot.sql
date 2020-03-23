@@ -21,6 +21,19 @@ UPDATE `item_template` SET `SellPrice` = 15149 WHERE `entry` = 18476; -- Mud Sta
 UPDATE `item_template` SET `SellPrice` = 30986 WHERE `entry` = 18482; -- Ogre Toothpick Shooter
 UPDATE `item_template` SET `SellPrice` = 51451 WHERE `entry` = 18481; -- Skullcracking Mace
 
+UPDATE `item_template` SET `SellPrice` = 37362 WHERE `entry` = 18483; -- Mana Channeling Wand
+UPDATE `item_template` SET `SellPrice` = 53822 WHERE `entry` = 18484; -- Cho'Rush's Blade
+UPDATE `item_template` SET `SellPrice` = 34569 WHERE `entry` = 18485; -- Observer's Shield
+UPDATE `item_template` SET `SellPrice` = 18655 WHERE `entry` = 18490; -- Insightful Hood
+UPDATE `item_template` SET `SellPrice` = 73101 WHERE `entry` = 18520; -- Barbarous Blade
+UPDATE `item_template` SET `SellPrice` = 17606 WHERE `entry` = 18521; -- Grimy Metal Boots
+UPDATE `item_template` SET `SellPrice` = 36253 WHERE `entry` = 18522; -- Band of the Ogre King
+UPDATE `item_template` SET `SellPrice` = 34810 WHERE `entry` = 18523; -- Brightly Glowing Stone
+UPDATE `item_template` SET `SellPrice` = 35596 WHERE `entry` = 18524; -- Leggings of Destruction
+UPDATE `item_template` SET `SellPrice` = 13730 WHERE `entry` = 18525; -- Bracers of Prosperity
+UPDATE `item_template` SET `SellPrice` = 17924 WHERE `entry` = 18526; -- Crown of the Ogre King
+UPDATE `item_template` SET `SellPrice` = 17988 WHERE `entry` = 18527; -- Harmonious Gauntlets
+
 -- Add missing Schematic: Major Recombobulator 18655
 -- Included in refloot 35037
 
