@@ -1133,18 +1133,18 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16045, 0, 0, 1, 0, 0, 0, NULL); -- Isalien Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+168, @CGUID+152, 3), -- Gordok Brute -> creature_spawn_entry
-(@CGUID+184, @CGUID+152, 3), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+192, @CGUID+152, 3), -- Gordok Mage-Lord -> creature_spawn_entry
-(@CGUID+159, @CGUID+158, 3), -- Gordok Brute -> Gordok Brute
-(@CGUID+188, @CGUID+158, 3), -- Gordok Mage-Lord -> Gordok Brute
-(@CGUID+193, @CGUID+158, 3), -- Gordok Mage-Lord -> Gordok Brute
 (@CGUID+163, @CGUID+148, 3), -- Gordok Brute -> Gordok Brute
 (@CGUID+171, @CGUID+148, 3), -- creature_spawn_entry -> Gordok Brute
 (@CGUID+190, @CGUID+148, 3), -- Gordok Mage-Lord -> Gordok Brute
-(@CGUID+746, @CGUID+132, 3), -- Gordok Mastiff -> Gordok Brute
+(@CGUID+168, @CGUID+152, 3), -- Gordok Brute -> creature_spawn_entry
+(@CGUID+184, @CGUID+152, 3), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+192, @CGUID+152, 3), -- Gordok Mage-Lord -> creature_spawn_entry
+(@CGUID+159, @CGUID+158, 3), -- creature_spawn_entry -> Gordok Mage-Lord
+(@CGUID+188, @CGUID+158, 3), -- Gordok Mage-Lord -> Gordok Brute
+(@CGUID+193, @CGUID+158, 3), -- Gordok Mage-Lord -> Gordok Brute
 (@CGUID+765, @CGUID+132, 3), -- Gordok Mastiff -> Gordok Brute
 (@CGUID+766, @CGUID+132, 3), -- Gordok Mastiff -> Gordok Brute
+(@CGUID+767, @CGUID+132, 3), -- Gordok Mastiff -> Gordok Brute
 (@CGUID+753, @CGUID+135, 3), -- Gordok Mastiff -> Gordok Brute
 (@CGUID+754, @CGUID+135, 3), -- Gordok Mastiff -> Gordok Brute
 (@CGUID+755, @CGUID+135, 3), -- Gordok Mastiff -> Gordok Brute
@@ -1167,6 +1167,13 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+201, @CGUID+197, 3), -- Gordok Captain -> Gordok Captain
 (@CGUID+244, @CGUID+198, 3), -- Gordok Reaver -> Gordok Captain
 (@CGUID+189, @CGUID+198, 3), -- Gordok Mage-Lord -> Gordok Captain
+(@CGUID+713, @CGUID+712, 3), -- Gordok Mastiff -> Gordok Mastiff
+(@CGUID+714, @CGUID+712, 3), -- Gordok Mastiff -> Gordok Mastiff
+(@CGUID+715, @CGUID+712, 3), -- Gordok Mastiff -> Gordok Mastiff
+(@CGUID+716, @CGUID+712, 3), -- Gordok Mastiff -> Gordok Mastiff
+(@CGUID+717, @CGUID+712, 3), -- Gordok Mastiff -> Gordok Mastiff
+(@CGUID+718, @CGUID+720, 515), -- Gordok Mastiff -> Gordok Mastiff
+(@CGUID+719, @CGUID+720, 515), -- Gordok Mastiff -> Gordok Mastiff
 (@CGUID+760, @CGUID+759, 515), -- Gordok Mastiff -> Gordok Mastiff
 (@CGUID+761, @CGUID+759, 515), -- Gordok Mastiff -> Gordok Mastiff
 (@CGUID+743, @CGUID+180, 515), -- Gordok Mastiff -> creature_spawn_entry
@@ -1196,7 +1203,43 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+353, @CGUID+363, 515), -- Warpwood Treant -> Warpwood Tangler
 (@CGUID+354, @CGUID+363, 515), -- Warpwood Treant -> Warpwood Tangler
 (@CGUID+355, @CGUID+364, 515), -- Warpwood Treant -> Warpwood Tangler
-(@CGUID+356, @CGUID+364, 515); -- Warpwood Treant -> Warpwood Tangler
+(@CGUID+356, @CGUID+364, 515), -- Warpwood Treant -> Warpwood Tangler
+(@CGUID+785, @CGUID+784, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+786, @CGUID+784, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+787, @CGUID+784, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+788, @CGUID+784, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+789, @CGUID+784, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+790, @CGUID+784, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+791, @CGUID+784, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+792, @CGUID+784, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+793, @CGUID+784, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+795, @CGUID+794, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+796, @CGUID+794, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+797, @CGUID+794, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+798, @CGUID+794, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+799, @CGUID+794, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+800, @CGUID+794, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+801, @CGUID+794, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+802, @CGUID+794, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+803, @CGUID+794, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+805, @CGUID+804, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+806, @CGUID+804, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+807, @CGUID+804, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+808, @CGUID+804, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+809, @CGUID+804, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+810, @CGUID+804, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+811, @CGUID+804, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+812, @CGUID+804, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+813, @CGUID+804, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+1065, @CGUID+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+1066, @CGUID+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+1067, @CGUID+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+1068, @CGUID+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+1069, @CGUID+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+1070, @CGUID+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+1071, @CGUID+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+1072, @CGUID+1064, 3), -- Carrion Swarmer -> Carrion Swarmer
+(@CGUID+1073, @CGUID+1064, 3); -- Carrion Swarmer -> Carrion Swarmer
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (11459, 429, 11489, 1, 0), -- Ironbark Protector -> Tendris Warpwood
@@ -1210,6 +1253,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+140, 11441),(@CGUID+140, 11444), -- Gordok Brute, Gordok Mage-Lord
 (@CGUID+152, 11441),(@CGUID+152, 11444), -- Gordok Brute, Gordok Mage-Lord
 (@CGUID+157, 11441),(@CGUID+157, 11444), -- Gordok Brute, Gordok Mage-Lord
+(@CGUID+159, 11441),(@CGUID+159, 13036), -- Gordok Brute, Gordok Mastiff
 (@CGUID+165, 11441),(@CGUID+165, 11444), -- Gordok Brute, Gordok Mage-Lord
 (@CGUID+167, 11441),(@CGUID+167, 11444), -- Gordok Brute, Gordok Mage-Lord
 (@CGUID+171, 11441),(@CGUID+171, 11444), -- Gordok Brute, Gordok Mage-Lord
@@ -1382,7 +1426,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+156, 11441, 429, 469.7606, 66.34957, -3.80288, 4.276057, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+157, 0, 429, 352.2921, 219.2057, 11.28707, 4.607669, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+158, 11441, 429, 484.7899, 192.5361, 2.936266, 3.228859, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
-(@CGUID+159, 11441, 429, 480.492, 171.572, 2.93626, 0.855211, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
+(@CGUID+159, 0, 429, 480.492, 171.572, 2.93626, 0.855211, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+160, 11441, 429, 357.1012, -105.2332, -3.803097, 3.735005, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
 (@CGUID+161, 11441, 429, 420.708, 212.934, 11.2148, 4.02882, 7200, 7200, 0, 0, 0, 2), -- Gordok Brute
 (@CGUID+162, 11441, 429, 253.919, 101.484, -2.47626, 4.79965, 7200, 7200, 0, 0, 0, 0), -- Gordok Brute
@@ -1935,8 +1979,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+715, 13036, 429, 724.21, 464.514, 28.2634, 0.925025, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+716, 13036, 429, 715.356, 492.574, 28.2628, 4.74729, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+717, 13036, 429, 729.782, 497.977, 28.1809, 1.0012, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
-(@CGUID+718, 13036, 429, 731.356, 440.905, 28.1809, 3.69297, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
-(@CGUID+719, 13036, 429, 730.857, 454.202, 28.1818, 4.64055, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
+(@CGUID+718, 13036, 429, 731.356, 440.905, 28.1809, 0.813315, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
+(@CGUID+719, 13036, 429, 733.43, 442.60, 28.17, 0.813315, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+720, 13036, 429, 735.317, 444.417, 28.1823, 0.813315, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+721, 13036, 429, 340.884, -22.1709, -25.0456, 5.84685, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 -- (@CGUID+722, 13036, 429, 357.606, -31.0619, -25.3087, 1.57987, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff x3 patrol
@@ -1962,7 +2006,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- (@CGUID+742, 13036, 429, 396.615, 171.46, 2.85139, 6.04776, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+743, 13036, 429, 435.91, 168.07, 2.8522, 3.27681, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+744, 13036, 429, 435.82, 174.59, 2.8522, 3.38357, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
-(@CGUID+745, 13036, 429, 409.139, 327.11, 2.93415, 6.0912, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
+(@CGUID+745, 13036, 429, 412.695, -61.5281, -25.3884, 6.03884, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+746, 13036, 429, 408.077, 23.4038, -25.356, 5.84685, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+747, 13036, 429, 413.974, 15.749, -25.0879, 2.54818, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+748, 13036, 429, 347.183, -67.9546, -25.8799, 0.77538, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
@@ -1977,14 +2021,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+757, 13036, 429, 318.378, 360.432, 2.85293, 5.02763, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+758, 13036, 429, 325.075, 351.874, 2.93626, 1.3439, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+759, 13036, 429, 780.872, 483.796, 36.0493, 4.05614, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
-(@CGUID+760, 13036, 429, 792.718, 495.528, 37.3182, 3.61377, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
-(@CGUID+761, 13036, 429, 778.848, 490.062, 35.1498, 3.45469, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
+(@CGUID+760, 13036, 429, 783.33, 486.98, 36.58, 4.05614, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
+(@CGUID+761, 13036, 429, 785.77, 489.81, 37.13, 4.05614, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+762, 13036, 429, 389.837, 212.823, 11.2058, 4.08073, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+763, 13036, 429, 389.994, 207.727, 11.2114, 4.61475, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+764, 13036, 429, 355.238, -18.4445, -25.1449, 2.0674, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+765, 13036, 429, 409.935, 335.965, 2.84705, 3.19855, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+766, 13036, 429, 404.258, 342.263, 2.84682, 0.80796, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
-(@CGUID+767, 13036, 429, 412.695, -61.5281, -25.3884, 6.03884, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
+(@CGUID+767, 13036, 429, 409.139, 327.11, 2.93415, 6.0912, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+768, 13036, 429, 420.648, -49.2333, -23.81, 0.958851, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+769, 13036, 429, 334.235, 357.029, 2.93627, 3.4383, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
 (@CGUID+770, 13036, 429, 472.56, 0.70, -3.9256, 3.1376, 7200, 7200, 0, 0, 0, 0), -- Gordok Mastiff
