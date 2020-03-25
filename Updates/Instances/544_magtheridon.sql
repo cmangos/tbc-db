@@ -146,7 +146,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (17256, 544, 17256, 15, 0), -- Hellfire Channeler -> Hellfire Channeler
-(17454, 544, 17256, 4112, 0), -- Burning Abyssal -> Hellfire Channeler
 (18829, 544, 18829, 15, 40); -- Hellfire Warder -> Hellfire Warder
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
