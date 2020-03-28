@@ -17772,8 +17772,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2117001','21170','11','0','100','0','0','0','0','0','0','0','11','36350','0','0','0','0','0','0','0','0','0','0','Honor Hold Gryphon Brigadier, South - Cast They Must Burn Bomb Aura (self) on Spawn'),
 -- Cursed Scarab
 ('2130601','21306','11','0','100','0','0','0','0','0','0','0','48','1','15','0','0','0','0','0','0','0','0','0','Cursed Scarab - Set Random Movement on Spawn'),
-('2130602','21306','1','0','30','0','5000','9000','0','0','0','0','2','14','1','0','0','0','0','0','0','0','0','0','Cursed Scarab - 30% Should Change Faction OOC'),
-('2130603','21306','1','0','100','0','18000','24000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Cursed Scarab - Forced Despawn OOC'),
 -- Fel Guard Hound 21847 - npc_fel_guard_hound
 -- Demoniac Scryer 22258 - npc_demoniac_scryer
 -- Hellfire Wardling 22259
