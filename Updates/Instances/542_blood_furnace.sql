@@ -5,6 +5,7 @@ DB%Complete: 80
 DBComment:
 * ai second boss adds aggro drop ability, spell scripting for second boss aoe ability (scaling)
 * Sniff shows different id for @CGUID+35 = 17395, +44 = 17414, +86 = 17395, +46 = 17414
+* Second Boss Trash Adds do 15 (OneShotRoar), 22 (OneShotShot), 53 (OneShotBattleRoar) in specific groups it seems
 EndDBScriptData */
 
 SET @CGUID := 5420000; -- creatures
