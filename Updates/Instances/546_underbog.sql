@@ -858,7 +858,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+3, 181270, 546, 3, -90.72054, -420.4993, 36.07394, 0.4886912, 0, 0, 0.2419214, 0.9702958, 86400, 86400, 100, 1), -- Felweed
 (@OGUID+4, 181275, 546, 3, 376.4293, -453.1408, 33.19949, 4.031712, 0, 0, -0.902585, 0.4305117, 86400, 86400, 100, 1), -- Ragveil
 (@OGUID+5, 181275, 546, 3, 278.9159, -236.0371, 29.17045, 2.705255, 0, 0, 0.9762955, 0.2164421, 86400, 86400, 100, 1), -- Ragveil
-(@OGUID+6, 184935, 546, 3, 270.4417, -177.5935, 29.54572, 2.809975, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+-- (@OGUID+6,
 (@OGUID+7, 181278, 546, 3, 77.43577, -75.22554, -2.756693, 2.897245, 0, 0, 0.9925461, 0.12187, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+8, 181278, 546, 3, 356.161, -519.4705, 31.77328, 3.560473, 0, 0, -0.9781475, 0.2079121, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+9, 181278, 546, 3, 24.36164, -368.393, 27.25731, 1.378809, 0, 0, 0.6360779, 0.7716249, 86400, 86400, 100, 1), -- Ancient Lichen
@@ -877,9 +877,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+22, 181278, 546, 3, -91.54044, -300.0656, -4.535956, 2.635444, 0, 0, 0.9681473, 0.2503814, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+23, 184199, 546, 2, 4.613999, -12.32211, -3.214006, 5.228889, 0, 0, -0.5030708, 0.8642452, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
 (@OGUID+24, 184200, 546, 1, 4.613999, -12.32211, -3.214006, 5.228889, 0, 0, -0.5030708, 0.8642452, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
-(@OGUID+25, 184935, 546, 3, 74.7062, -252.385, -4.50239, 2.04204, 0, 0, 0.85264, 0.522499, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+26, 184937, 546, 3, 258.718, -214.395, 27.9184, 5.81769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+27, 184934, 546, 3, 237.7724, -380.0579, 48.28535, 3.019413, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+-- (@OGUID+25,
+-- (@OGUID+26,
+-- (@OGUID+27,
 (@OGUID+28, 181270, 546, 3, 203.8416, 27.02369, 27.56251, 1.954769, 0, 0, 0.8290377, 0.5591928, 86400, 86400, 100, 1), -- Felweed
 (@OGUID+29, 181270, 546, 3, 134.608, -84.8074, 26.6971, 6.1444, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Felweed
 (@OGUID+30, 181270, 546, 3, 272.366, -119.9198, 29.85154, 3.246347, 0, 0, -0.9986286, 0.05235322, 86400, 86400, 100, 1), -- Felweed
@@ -954,7 +954,23 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+103, 181556, 546, 3, -93.78931, -248.9611, 27.40, 3.176533, 0, 0, -0.9998474, 0.01746928, 86400, 86400, 255, 1), -- Adamantite Deposit			// Z = 26.10961
 (@OGUID+104, 181569, 546, 3, -93.78931, -248.9611, 27.40, 3.176533, 0, 0, -0.9998474, 0.01746928, 86400, 86400, 100, 1), -- Rich Adamantite Deposite	// Z = 26.10961
 (@OGUID+105, 181556, 546, 3, -36.64338, -199.1346, -4.535348, 3.979355, 0, 0, -0.9135447, 0.4067384, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+106, 181557, 546, 3, -36.64338, -199.1346, -4.535348, 3.979355, 0, 0, -0.9135447, 0.4067384, 86400, 86400, 255, 1); -- Khorium Vein
+(@OGUID+106, 181557, 546, 3, -36.64338, -199.1346, -4.535348, 3.979355, 0, 0, -0.9135447, 0.4067384, 86400, 86400, 255, 1), -- Khorium Vein
+(@OGUID+107, 184934, 546, 1, 74.7062, -252.385, -4.50239, 2.04204, 0, 0, 0.85264, 0.522499, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+108, 184935, 546, 1, 74.7062, -252.385, -4.50239, 2.04204, 0, 0, 0.85264, 0.522499, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+109, 184936, 546, 2, 74.7062, -252.385, -4.50239, 2.04204, 0, 0, 0.85264, 0.522499, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+110, 184937, 546, 2, 74.7062, -252.385, -4.50239, 2.04204, 0, 0, 0.85264, 0.522499, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+111, 184934, 546, 1, 237.7724, -380.0579, 48.28535, 3.019413, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+112, 184935, 546, 1, 237.7724, -380.0579, 48.28535, 3.019413, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+113, 184936, 546, 2, 237.7724, -380.0579, 48.28535, 3.019413, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+114, 184937, 546, 2, 237.7724, -380.0579, 48.28535, 3.019413, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+115, 184934, 546, 1, 258.718, -214.395, 27.9184, 5.81769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+116, 184935, 546, 1, 258.718, -214.395, 27.9184, 5.81769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+117, 184936, 546, 2, 258.718, -214.395, 27.9184, 5.81769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+118, 184937, 546, 2, 258.718, -214.395, 27.9184, 5.81769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+119, 184934, 546, 1, 270.4417, -177.5935, 29.54572, 2.809975, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+120, 184935, 546, 1, 270.4417, -177.5935, 29.54572, 2.809975, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+121, 184936, 546, 2, 270.4417, -177.5935, 29.54572, 2.809975, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+122, 184937, 546, 2, 270.4417, -177.5935, 29.54572, 2.809975, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -987,12 +1003,15 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+65, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #6'),
 (@PGUID+66, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #7'),
 (@PGUID+67, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - #8'),
-(@PGUID+68, @PGUID+22, 0, 'Adamantite Deposit / Khorium Vein - #9');
+(@PGUID+68, @PGUID+22, 0, 'Adamantite Deposit / Khorium Vein - #9'),
+(@PGUID+91, @PGUID+90, 0, 'The Underbog - Chest - #1'),
+(@PGUID+92, @PGUID+90, 0, 'The Underbog - Chest - #2'),
+(@PGUID+93, @PGUID+90, 0, 'The Underbog - Chest - #3'),
+(@PGUID+94, @PGUID+90, 0, 'The Underbog - Chest - #4');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 -- (@PGUID+21, 1, 'The Underbog - Master Herb Pool'), -- gameobject
 (@PGUID+22, 5, 'The Underbog - Master Mineral Pool'),
-(@PGUID+24, 1, 'The Underbog - Master Chest Pool'),
 (@PGUID+28, 2, 'The Underbog - Master Ancient Lichen (181278) Pool'),
 (@PGUID+29, 2, 'The Underbog - Master Felweed (181270) Pool'),
 (@PGUID+30, 2, 'The Underbog - Master Ragveil (181275) / Flame Cap (181276) Pool'),
@@ -1012,7 +1031,12 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+65, 1, 'The Underbog - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #6'),
 (@PGUID+66, 1, 'The Underbog - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #7'),
 (@PGUID+67, 1, 'The Underbog - Adamantite Deposit / Rich Adamantite Deposit - #8'),
-(@PGUID+68, 1, 'The Underbog - Adamantite Deposit / Khorium Vein - #9');
+(@PGUID+68, 1, 'The Underbog - Adamantite Deposit / Khorium Vein - #9'),
+(@PGUID+90, 1, 'The Underbog - Master Chest Pool'),
+(@PGUID+91, 1, 'The Underbog - Chest - #1'),
+(@PGUID+92, 1, 'The Underbog - Chest - #2'),
+(@PGUID+93, 1, 'The Underbog - Chest - #3'),
+(@PGUID+94, 1, 'The Underbog - Chest - #4');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@OGUID+14, @PGUID+22, 0, 'The Underbog - Adamantite Deposit (181556)'),
@@ -1022,10 +1046,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+90, @PGUID+22, 0, 'The Underbog - Adamantite Deposit (181556)'),
 (@OGUID+94, @PGUID+22, 0, 'The Underbog - Adamantite Deposit (181556)'),
 (@OGUID+95, @PGUID+22, 0, 'The Underbog - Adamantite Deposit (181556)'),
-(@OGUID+6, @PGUID+24, 0, 'The Underbog - Solid Fel Iron Chest (184935)'),
-(@OGUID+25, @PGUID+24, 0, 'The Underbog - Solid Fel Iron Chest (184935)'),
-(@OGUID+26, @PGUID+24, 0, 'The Underbog - Solid Adamantite Chest (184937)'),
-(@OGUID+27, @PGUID+24, 0, 'The Underbog - Bound Fel Iron Chest (184934)'),
 (@OGUID+7, @PGUID+28, 0, 'The Underbog - Ancient Lichen (181278)'),
 (@OGUID+8, @PGUID+28, 0, 'The Underbog - Ancient Lichen (181278)'),
 (@OGUID+9, @PGUID+28, 0, 'The Underbog - Ancient Lichen (181278)'),
@@ -1109,7 +1129,23 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+103, @PGUID+67, 0, 'The Underbog - Adamantite Deposit (181556) - #8'),
 (@OGUID+104, @PGUID+67, 0, 'The Underbog - Rich Adamantite Deposit (181569) - #8'),
 (@OGUID+105, @PGUID+68, 0, 'The Underbog - Adamantite Deposit (181556) - #9'),
-(@OGUID+106, @PGUID+68, 20, 'The Underbog - Khorium Vein (181557) - #9');
+(@OGUID+106, @PGUID+68, 20, 'The Underbog - Khorium Vein (181557) - #9'),
+(@OGUID+107, @PGUID+91, 0, 'The Underbog - Bound Fel Iron Chest (184934) - #1'),
+(@OGUID+108, @PGUID+91, 0, 'The Underbog - Solid Fel Iron Chest (184935) - #1'),
+(@OGUID+109, @PGUID+91, 0, 'The Underbog - Bound Adamantite Chest (184936) - #1'),
+(@OGUID+110, @PGUID+91, 0, 'The Underbog - Solid Adamantite Chest (184937) - #1'),
+(@OGUID+111, @PGUID+92, 0, 'The Underbog - Bound Fel Iron Chest (184934) - #2'),
+(@OGUID+112, @PGUID+92, 0, 'The Underbog - Solid Fel Iron Chest (184935) - #2'),
+(@OGUID+113, @PGUID+92, 0, 'The Underbog - Bound Adamantite Chest (184936) - #2'),
+(@OGUID+114, @PGUID+92, 0, 'The Underbog - Solid Adamantite Chest (184937) - #2'),
+(@OGUID+115, @PGUID+93, 0, 'The Underbog - Bound Fel Iron Chest (184934) - #3'),
+(@OGUID+116, @PGUID+93, 0, 'The Underbog - Solid Fel Iron Chest (184935) - #3'),
+(@OGUID+117, @PGUID+93, 0, 'The Underbog - Bound Adamantite Chest (184936) - #3'),
+(@OGUID+118, @PGUID+93, 0, 'The Underbog - Solid Adamantite Chest (184937) - #3'),
+(@OGUID+119, @PGUID+94, 0, 'The Underbog - Bound Fel Iron Chest (184934) - #4'),
+(@OGUID+120, @PGUID+94, 0, 'The Underbog - Solid Fel Iron Chest (184935) - #4'),
+(@OGUID+121, @PGUID+94, 0, 'The Underbog - Bound Adamantite Chest (184936) - #4'),
+(@OGUID+122, @PGUID+94, 0, 'The Underbog - Solid Adamantite Chest (184937) - #4');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
