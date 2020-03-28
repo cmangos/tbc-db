@@ -23208,8 +23208,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mennu Earthgrab Totem - TotemAI
 -- Mennu Stoneskin Totem - TotemAI
 -- Mennu Fire Nova Totem 18179 -- ss.33134
-('1817901','18179','11','0','100','0','0','0','0','0','0','0','20','0','0','0','21','0','0','0','42','1','0','0','Mennu Fire Nova Totem - Prevent Melee and Prevent Movement and Set Invincible on Spawn'),
-('1817902','18179','29','0','100','0','18000','18000','0','0','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Generic Timer'),
+('1817901','18179','11','0','100','0','0','0','0','0','0','0','50','0','0','0','42','1','0','0','0','0','0','0','Mennu Fire Nova Totem - Set ReactState Passive and Set Invincible on Spawn'),
+('1817902','18179','29','0','100','0','8000','8000','0','0','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Generic Timer'),
 ('1817903','18179','2','0','100','0','99','0','0','0','0','0','11','33132','15','7','41','1400','0','0','0','0','0','0','Mennu Fire Nova Totem - Cast Fire Nova and Delayed Despawn on Damage'),
 -- Wastewalker Captive 18206
 ('1820601','18206','10','0','20','1','1','15','0','1','0','0','54','0','0','12003','0','0','0','0','0','0','0','0','Wastewalker Captive - Random Say on OOC LOS'),
