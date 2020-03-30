@@ -17637,7 +17637,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1935403','19354','0','0','100','1025','10000','20000','12000','14000','0','0','11','15245','1','0','0','0','0','0','0','0','0','0','Arzeth the Merciless - Cast Shadow Bolt Volley'),
 ('1935404','19354','0','0','100','1025','8000','12000','8000','14000','0','0','11','16856','1','0','0','0','0','0','0','0','0','0','Arzeth the Merciless - Cast Mortal Strike'),
 -- Fel Cannon 19399
-('1939901','19399','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Fel Cannon - Prevent Movement and Prevent Melee on Spawn'),
+('1939901','19399','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Fel Cannon - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
 ('1939902','19399','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','0','0','0','0','0','0','0','0','0','Fel Cannon - Combat - Cast Fel Cannon Blast'),
 -- Maiden of Pain 19408
 ('1940801','19408','1','0','100','1','15000','30000','45000','60000','0','0','11','34086','15','0','0','0','0','0','0','0','0','0','Maiden of Pain - Cast Whipped Frenzy OOC'),
@@ -17827,7 +17827,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2245401','22454','11','0','100','0','0','0','0','0','0','0','54','-10701','11','0','11','39205','15','32','0','0','0','0','Fel Spirit - Yell on Spawn and Cast Fel Spirit Visual'),
 ('2245402','22454','29','0','100','0','3000','3000','3000','3000','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Fel Spirit - Remove Immune To Player flag'),
 -- Fel Cannon MKI 22461
-('2246101','22461','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Fel Cannon MKI - Prevent Movement and Prevent Melee on Spawn'),
+('2246101','22461','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Fel Cannon MKI - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
 ('2246102','22461','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','0','0','0','0','0','0','0','0','0','Fel Cannon MKI - Combat - Cast Fel Cannon Blast'),
 -- Bubbling Slimer Bunny 22505
 ('2250501','22505','11','0','100','0','0','0','0','0','0','0','11','39300','0','0','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Cast 39300 on Spawn'),
@@ -18250,7 +18250,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Corki
 ('2081201','20812','1','0','100','1','70000','90000','70000','90000','0','0','54','0','0','10024','45','5','17','0','0','0','0','0','Corki - Random Say and Throw AI Event 5 (A) OOC'),
 -- Legion Fel Cannon 21233
-('2123301','21233','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Legion Fel Cannon - Prevent Movement and Prevent Melee on Spawn'),
+('2123301','21233','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Legion Fel Cannon - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
 ('2123302','21233','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
 -- Crashing Wave-Spirit
 ('2230901','22309','0','0','100','1025','0','1000','10000','18000','0','0','11','34425','1','0','0','0','0','0','0','0','0','0','Crashing Wave-Spirit - Cast Water Bolt'),
@@ -30565,7 +30565,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Water Elemental Totem 22236 - TotemAI
 -- Spirit Calling Totem 22318 - TotemAI
 -- Legion Fel Cannon MKII 22451
-('2245101','22451','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Prevent Movement and Prevent Melee on Spawn'),
+('2245101','22451','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Legion Fel Cannon MKII - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
 ('2245102','22451','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Cast Fel Cannon Blast'),
 -- Greater Earthbind Totem 22486 - TotemAI
 -- Greater Poison Cleansing Totem 22487 - TotemAI
