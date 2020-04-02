@@ -622,6 +622,49 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+43, @CGUID+238, 1679), -- Cabal Cultist -> Cabal Fanatic
 (@CGUID+44, @CGUID+238, 1679), -- Cabal Cultist -> Cabal Fanatic
 (@CGUID+233, @CGUID+238, 1679), -- Cabal Fanatic -> Cabal Fanatic
+
+-- Sanctum of Shadows
+-- group 1
+(@CGUID+194, @CGUID+203, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+195, @CGUID+203, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+196, @CGUID+203, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+197, @CGUID+203, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+198, @CGUID+203, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+199, @CGUID+203, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+200, @CGUID+203, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+201, @CGUID+203, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+202, @CGUID+203, 3), -- Tortured Skeleton -> Tortured Skeleton
+-- group 2
+(@CGUID+186, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+188, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+189, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+190, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+191, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+192, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+193, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+205, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+206, @CGUID+187, 3), -- Tortured Skeleton -> Tortured Skeleton
+-- group 3
+(@CGUID+219, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+220, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+221, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+222, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+223, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+224, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+225, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+226, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+227, @CGUID+218, 3), -- Tortured Skeleton -> Tortured Skeleton
+-- group 4
+(@CGUID+208, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+209, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+210, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+211, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+212, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+213, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+214, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+215, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
+(@CGUID+217, @CGUID+216, 3), -- Tortured Skeleton -> Tortured Skeleton
+
 -- Murmur Hallway
 -- group 1
 (@CGUID+45, @CGUID+47, 3), -- Cabal Executioner -> Cabal Executioner
