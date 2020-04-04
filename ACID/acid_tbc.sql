@@ -28809,9 +28809,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Toxic Tunnel 16400
 ('1640001','16400','11','0','100','0','0','0','0','0','0','0','11','28370','0','34','0','0','0','0','0','0','0','0','Toxic Tunnel - Cast Toxic Gas on Spawn'),
 -- Soldier of the Frozen Wastes 16427
-('1642701','16427','11','0','100','0','0','0','0','0','0','0','11','28458','2','0','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Cast Dark Blast on Spawn'),
-('1642702','16427','4','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Set ReactState Aggressive on Aggro'),
-('1642703','16427','10','0','100','1','0','20','2000','2000','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Set ReactState Aggressive at 20 Yards LOS'),
+('1642701','16427','4','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Set ReactState Aggressive on Aggro'),
+('1642702','16427','10','0','100','1','0','20','2000','2000','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Soldier of the Frozen Wastes - Set ReactState Aggressive at 20 Yards LOS'),
 -- Unstoppable Abomination 16428
 ('1642801','16428','4','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Unstoppable Abomination - Set ReactState Aggressive on Aggro'),
 ('1642802','16428','10','0','100','1','0','20','2000','2000','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Unstoppable Abomination - Set ReactState Aggressive at 20 Yards LOS'),
