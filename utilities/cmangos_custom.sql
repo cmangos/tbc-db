@@ -65,6 +65,9 @@ UPDATE gameobject_template SET data1=3701 WHERE entry=153556;
 
 UPDATE `gameobject` SET `position_z` = 133.60325 WHERE `guid` = 132224 AND `id` = 176589; -- Black Lotus Sniff Z = -61.28984
 
+-- Make object 181444 (Kel'Thuzad Trigger) despawnable on usage
+UPDATE gameobject_template SET data4=1 WHERE entry=181444;
+
 -- ============================================================
 -- TBC section
 -- ============================================================
