@@ -18425,10 +18425,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1887903','18879','2','0','100','1024','35','0','0','0','0','0','1','-10253','0','0','0','0','0','0','0','0','0','0','Phase Hunter - Emote at 35% HP'),
 ('1887904','18879','0','0','100','1025','8000','16000','20000','31000','0','0','11','37176','16','512','0','0','0','0','0','0','0','0','Phase Hunter - Cast Mana Burn on Random Player Mana User'),
 -- Nether Ray 18880 - npc_nether_ray
--- Sunderer Rumbler
-('1888101','18881','8','0','100','0','34520','-1','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Sunderer Rumbler - Set Phase 2 on Spellhit: Elemental Power Extractor'),
-('1888102','18881','2','0','100','1024','15','0','0','0','0','0','11','35310','0','0','0','0','0','0','0','0','0','0','Sunderer Rumbler - Cast Summon Sundered Shard at 15% HP'),
-('1888103','18881','6','1','100','0','0','0','0','0','0','0','11','34525','0','7','0','0','0','0','0','0','0','0','Sunderer Rumbler - Create Elemental Power on Death (Phase 2)'),
+-- Sundered Rumbler 18881
+('1888101','18881','8','0','100','0','34520','-1','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Sundered Rumbler - Set Phase 2 on Spellhit: Elemental Power Extractor'),
+('1888102','18881','6','0','100','0','0','0','0','0','0','0','11','35310','0','7','1','-10090','0','0','0','0','0','0','Sundered Rumbler - Cast Summon Sundered Shard and Emote on Death'),
+('1888103','18881','6','1','100','0','0','0','0','0','0','0','11','34525','0','7','0','0','0','0','0','0','0','0','Sundered Rumbler - Create Elemental Power on Death (Phase 2)'),
 -- Sundered Thunderer
 ('1888201','18882','9','0','100','1025','0','8','16000','19000','0','0','11','8078','0','0','0','0','0','0','0','0','0','0','Sundered Thunderer - Cast Thunderclap'),
 ('1888202','18882','6','0','100','0','0','0','0','0','0','0','11','35007','0','7','0','0','0','0','0','0','0','0','Sundered Thunderer - Cast Summon Sundered Shards on Death'),
@@ -31565,7 +31565,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10087','Assist me slaves!','0','1','0','0','18972','17805/17959 on Aggro'),
 ('-10088','You cannot stop us!','0','1','0','0','19397','Shattered Hand Houndmaster 17670 on 37437'),
 ('-10089','Intruders!','0','0','0','0','1727','15551 on Aggro'),
--- RE-USE 10090
+('-10090','%s shatters into shards.','0','2','0','0','0','Sundered Rumbler 18881'),
 ('-10091','The rest are fine without us.','0','0','0','0','13827','16407 idle'),
 ('-10092','They''ll never know we''re missing.','0','0','0','0','13828','16407 idle'),
 ('-10093','If we dawdle much longer, there''ll be hell to pay!','0','0','0','0','13826','16407 idle'),
