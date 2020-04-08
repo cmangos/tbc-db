@@ -18217,6 +18217,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fel Cannon: Hate 19067 - NSR
 -- Garadar Wolf Rider 19068
 ('1906801','19068','1','0','100','1','5000','5000','15000','15000','0','0','43','0','18509','0','0','0','0','0','0','0','0','0','Garadar Wolf Rider - Mount OOC'),
+-- Telaari Elekk Rider 19071
+('1907101','19071','1','0','100','1','5000','5000','15000','15000','0','0','43','0','18511','0','0','0','0','0','0','0','0','0','Telaari Elekk Rider - Mount OOC'),
 -- Nagrand Target Dummy 19139 - NSR
 -- Mag'har Pitfighter
 ('1914001','19140','1','0','100','1','1000','1000','60000','60000','0','0','45','5','7','0','0','0','0','0','0','0','0','0','Mag''har Pitfighter - Send AI Event 5'),
