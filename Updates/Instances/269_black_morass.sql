@@ -32,7 +32,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 -- 4 possible waypoint paths for each portal spawn type (one for each rift location)
 DELETE FROM creature_movement_template WHERE entry IN (21818,17835,17892,18994,18995,21137,21136,21138,21139);
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(21818,0,0,-2032.004,7004.983,23.5776,0,0,100),
+-- (21818,0,0,-2032.004,7004.983,23.5776,0,0,100),
 (21818,0,1,-2030.832,7024.944,23.02732,0,0,100),
 (21818,0,2,-2029.66,7044.905,22.47703,0,0,100),
 (21818,0,3,-2029.191,7052.89,23.10203,0,0,100),
@@ -42,7 +42,7 @@ INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,
 (21818,0,7,-2026.459,7099.615,22.59416,0,0,100),
 (21818,0,8,-2026.459,7099.615,22.59416,10000,2181801,100);
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(21818,1,0,-1937.535,6995.197,22.47705,0,0,100),
+-- (21818,1,0,-1937.535,6995.197,22.47705,0,0,100),
 (21818,1,1,-1961.734,7029.527,21.72704,0,0,100),
 (21818,1,2,-1985.934,7063.857,20.97702,0,0,100),
 (21818,1,3,-1987.662,7066.31,20.22702,0,0,100),
@@ -57,7 +57,7 @@ INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,
 (21818,1,12,-2013.59,7103.092,20.76468,0,0,100),
 (21818,1,13,-2013.59,7103.092,20.76468,10000,2181801,100);
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(21818,2,0,-1884.707,7106.275,22.81584,0,0,100),
+-- (21818,2,0,-1884.707,7106.275,22.81584,0,0,100),
 (21818,2,1,-1887.695,7106.557,21.94084,0,0,100),
 (21818,2,2,-1890.684,7106.838,21.06584,0,0,100),
 (21818,2,3,-1893.672,7107.119,20.44084,0,0,100),
@@ -73,7 +73,7 @@ INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,
 (21818,2,13,-2005.428,7117.637,21.5325,0,0,100),
 (21818,2,14,-2005.428,7117.637,21.5325,10000,2181801,100);
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(21818,3,0,-1927.559,7188.959,23.66119,0,0,100),
+-- (21818,3,0,-1927.559,7188.959,23.66119,0,0,100),
 (21818,3,1,-1932.836,7184.358,23.30664,0,0,100),
 (21818,3,2,-1938.113,7179.758,22.95208,0,0,100),
 (21818,3,3,-1940.541,7177.937,22.70208,0,0,100),
