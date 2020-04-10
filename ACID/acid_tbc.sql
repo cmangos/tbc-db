@@ -19813,6 +19813,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anchorite Caalen 22862 - mob_bt_battle_fighter
 -- Seasoned Magister 22863 - mob_bt_battle_fighter
 -- Fyra Dawnstar 22864 - mob_bt_battle_fighter
+-- Illidan's Presence 22865
+('2286501','22865','11','0','100','0','0','0','0','0','0','0','11','39663','0','0','0','0','0','0','0','0','0','0','Illidan''s Presence - Cast Summon Cosmetic Fel Fire on Spawn'),
 -- Lightsworn Elekk Rider
 ('2296601','22966','6','0','100','0','0','0','0','0','0','0','43','0','0','0','11','39782','0','0','0','0','0','0','Lightsworn Elekk Rider - Dismount and Cast Summon Lightsworn Elekk on Death'),
 -- Scryer Cavalier
