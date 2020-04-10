@@ -6341,6 +6341,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1609602','16096','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Steamwheedle Bruiser - Flee at 15% HP'),
 ('1609603','16096','9','0','100','1025','0','18','11000','18000','0','0','11','12024','1','1024','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Cast Net'),
 ('1609604','16096','9','0','100','1025','5','30','2200','3800','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Cast Shoot'),
+-- Naias 17207
+('1720701','17207','11','0','100','0','0','0','0','0','0','0','54','-104','11','0','0','0','0','0','0','0','0','0','Naias - Say on Spawn'),
 -- Nizzle
 ('2436601','24366','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Nizzle - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Rocket Chicken 25109
@@ -31012,7 +31014,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-101','For the Dragonmaw!','0','0','1','0','1937','Common Dragonmaw Text'),
 ('-102','Long live the Dragonmaw! Die you worthless $r!','0','0','1','0','1939','Common Dragonmaw Text'),
 ('-103','Brains...','0','0','0','0','1940','1158'),
--- Classic PLEASE RE-USE 104
+('-104','Who challenges Naias? Puny $r, you are little better than those mindless trolls I have played against each other like so many pieces on a game board!','0','0','0','0','0','17207'),
 ('-105','Your bones will break under my boot, $r!','0','0','1','0','1938','Common Dragonmaw Text'),
 ('-106','%s goes into a frenzy!','0','2','0','0','1191','Frenzy Text'),
 -- Classic PLEASE RE-USE 107 - 122
