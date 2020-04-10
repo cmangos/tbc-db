@@ -5,10 +5,10 @@ UPDATE creature SET spawntimesecsmin=30, spawntimesecsmax=30 WHERE id IN(19763,1
 
 -- Add texts
 DELETE FROM `dbscript_string` WHERE entry IN (2000001618,2000001619,2000001620);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`) VALUES 
-(2000001618, 'Thank goodness you got here, it was almost dinner time!', 0, 0, 0, 0, 'Manni 19763'),
-(2000001619, 'I thought I was a goner for sure.', 0, 0, 0, 0, 'Moh 19764'),
-(2000001620, 'I don''t know which is worse, getting eaten by fel orcs or working for that slave master Razelcraz! Oh well, thanks anyways!', 0, 0, 0, 0, 'Jakk 19766');
+INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`, `broadcast_text_id`) VALUES 
+(2000001618, 'Thank goodness you got here, it was almost dinner time!', 0, 0, 0, 0, 'Manni 19763', 17407),
+(2000001619, 'I thought I was a goner for sure.', 0, 0, 0, 0, 'Moh 19764', 17409),
+(2000001620, 'I don''t know which is worse, getting eaten by fel orcs or working for that slave master Razelcraz! Oh well, thanks anyways!', 0, 0, 0, 0, 'Jakk 19766', 17410);
 
 -- Add scripts
 DELETE FROM `dbscripts_on_go_template_use` WHERE `id` IN(183936,183940,183941);
