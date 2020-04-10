@@ -16467,6 +16467,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2107201','21072','0','0','100','1025','6000','6000','12000','16000','0','0','11','12747','1','0','0','0','0','0','0','0','0','0','Living Grove Defender - Cast Entangling Roots'),
 -- Rip Pedalslam
 ('2110701','21107','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Rip Pedalslam - Cast Summon Enraged Gryphon and Yell on Aggro'),
+-- Station Technician 21114
+('2111401','21114','1','0','100','1','30000','300000','300000','600000','0','0','11','36301','0','0','54','0','0','10171','53','10164','0','0','Station Technician - Cast On Fire and Say Random Text amd Start Relay Script OOC'),
+('2111402','21114','1','0','100','33','30000','60000','30000','60000','0','0','10','273','274','-1','10','6','1','-1','0','0','0','0','Station Technician - Random Emote OOC'),
+('2111403','21114','21','0','100','0','0','0','0','0','0','0','5','133','0','0','0','0','0','0','0','0','0','0','Station Technician - Emote on Reached Home'),
 -- Station Guard 21115
 ('2111501','21115','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Station Guard - Enable Range Mode on Aggro'),
 ('2111502','21115','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Station Guard - Flee at 15% HP'),
@@ -32598,6 +32602,14 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11219','%s crushes a vial of green gas.','0','2','0','0','18163','Daggerfen Assassin 18116'),
 ('-11220','%s senses danger and flees.','0','2','0','0','20692','Wild Sparrowhawk 22979'),
 ('-11221','%s looks weak enough to capture!','0','2','0','0','22419','4351/4352'),
+('-11222','I''M ON FIRE!!!','0','0','0','0','18792','Station Technician 21114'),
+('-11223','I''M ON FIRE!!!  AGAIN!!','0','0','0','0','18793','Station Technician 21114'),
+('-11224','IT BURNS!!','0','0','0','0','18794','Station Technician 21114'),
+('-11225','Not again...','0','0','0','0','18795','Station Technician 21114'),
+('-11226','WHY ME!?!','0','0','0','0','18796','Station Technician 21114'),
+('-11227','This is going to hurt in the morning.','0','0','0','0','18797','Station Technician 21114'),
+('-11228','YEOW!!','0','0','0','0','18798','Station Technician 21114'),
+
 ('-19997','May the light bless you.','0','0','0','1','24856','25639'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','1','24857','25639'),
 ('-19999','Rest now, you have fought well today.','0','0','0','1','24858','25639');
@@ -33005,6 +33017,13 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10170,0,-11216,0,'18688 - Random Text on Soul Mirror Spellhit'),
 (10170,0,-11217,0,'18688 - Random Text on Soul Mirror Spellhit'),
 (10170,0,-11218,0,'18688 - Random Text on Soul Mirror Spellhit'),
+(10171,0,-11222,0,'21114 - Random OOC Texts'),
+(10171,0,-11223,0,'21114 - Random OOC Texts'),
+(10171,0,-11224,0,'21114 - Random OOC Texts'),
+(10171,0,-11225,0,'21114 - Random OOC Texts'),
+(10171,0,-11226,0,'21114 - Random OOC Texts'),
+(10171,0,-11227,0,'21114 - Random OOC Texts'),
+(10171,0,-11228,0,'21114 - Random OOC Texts'),
 
 (12000,0,-10617,0,'Common Outland Nagas'),
 (12000,0,-10618,0,'Common Outland Nagas'),
