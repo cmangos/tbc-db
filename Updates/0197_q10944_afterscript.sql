@@ -69,8 +69,8 @@ INSERT INTO `dbscripts_on_quest_end` (`id`,`delay`,`priority`,`command`,`datalon
 (10944,106281,0,1,1,0,0,0,0,0,0,22820,10,0,'Seer Olum - OneShotTalk',0,0,0,0),
 (10944,109922,0,3,0,0,0,0,0,0,0,0,0,0,'Akama - Move',-3718.6228,1030.651,55.958855,100),
 (10944,111953,0,15,39552,0,0,0,0,0,0,0,0,0,'Akama - Cast Olum''s Sacrifice',0,0,0,0),
-(10944,112109,0,45,10164,0,0,0,0,0,0,21701,75730,16,'Ashtongue Deathsworn - Face Seer Olum',0,0,0,0),
-(10944,112109,0,45,10164,0,0,0,0,0,0,21701,75729,16,'Ashtongue Deathsworn - Face Seer Olum',0,0,0,0),
+(10944,112109,0,45,10165,0,0,0,0,0,0,21701,75730,16,'Ashtongue Deathsworn - Face Seer Olum',0,0,0,0),
+(10944,112109,0,45,10165,0,0,0,0,0,0,21701,75729,16,'Ashtongue Deathsworn - Face Seer Olum',0,0,0,0),
 (10944,112359,1,28,8,0,0,0,0,0,0,21701,75730,16,'Ashtongue Deathsworn - UNIT_STAND_STATE_KNEEL',0,0,0,0),
 (10944,112359,1,28,8,0,0,0,0,0,0,21701,75729,16,'Ashtongue Deathsworn - UNIT_STAND_STATE_KNEEL',0,0,0,0),
 (10944,118047,0,28,7,0,0,0,0,0,0,22820,5,0,'Seer Olum - UNIT_STAND_STATE_DEAD',0,0,0,0),
@@ -102,9 +102,9 @@ INSERT INTO `dbscripts_on_quest_end` (`id`,`delay`,`priority`,`command`,`datalon
 (10944,231562,0,32,0,0,0,0,0,0,0,21699,20,0,'Maiev - Resume Waypoints',0,0,0,0),
 (10944,231562,1,21,0,0,0,0,0,0,0,0,0,0,'Akama - Set Active object off',0,0,0,0);
 
-DELETE FROM `dbscripts_on_relay` WHERE `id` IN(10164) AND command=36;
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN(10165) AND command=36;
 INSERT INTO `dbscripts_on_relay` (`id`,`delay`,`priority`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(10164,0,0,36,0,0,0,0,0,0,0,22820,20,1,'Ashtongue Deathsworn - Face Seer Olum',0,0,0,0);
+(10165,0,0,36,0,0,0,0,0,0,0,22820,20,1,'Ashtongue Deathsworn - Face Seer Olum',0,0,0,0);
 
 DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000001621 AND 2000001636;
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `comment`, `broadcast_text_id`) VALUES 
