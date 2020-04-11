@@ -24305,13 +24305,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shattered Hand Zealot
 ('1746201','17462','9','0','100','1025','0','5','10000','13000','0','0','11','30989','1','0','0','0','0','0','0','0','0','0','Shattered Hand Zealot - Cast Hamstring'),
 -- Shattered Hand Gladiator 17464
-('1746401','17464','1','0','100','0','1000','1000','0','0','0','0','11','19818','0','32','0','0','0','0','0','0','0','0','Shattered Hand Gladiator - Cast Double Attack OOC'),
+('1746401','17464','11','0','100','0','0','0','0','0','0','0','11','19818','0','34','0','0','0','0','0','0','0','0','Shattered Hand Gladiator - Cast Double Attack on Spawn'),
 ('1746402','17464','0','0','100','1025','6000','18000','10000','20000','0','0','11','16856','1','0','0','0','0','0','0','0','0','0','Shattered Hand Gladiator - Cast Mortal Strike'),
 -- Shattered Hand Centurion 17465
 ('1746501','17465','0','0','100','1025','3000','7000','17000','21000','0','0','11','31403','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Cast Battle Shout'),
 ('1746502','17465','28','0','100','1027','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Normal) - Cast Sunder Armor on Target Missing Aura Stack'),
 ('1746503','17465','28','0','100','1029','16145','5','5000','9000','0','0','11','16145','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Heroic) - Cast Sunder Armor on Target Missing Aura Stack'),
 -- Lesser Shadow Fissure 17471 - npc_aoe_damage_trigger
+-- Training Dummy 17578
+('1757801','17578','11','0','100','0','0','0','0','0','0','0','61','1','0','0','42','1','0','0','20','0','0','0','Training Dummy - Set Immobilized State and Set Invincible and Prevent Melee on Spawn'),
 -- Heathen Guard
 ('1762101','17621','0','0','100','1025','6000','10000','10000','14000','0','0','11','30474','1','0','0','0','0','0','0','0','0','0','Heathen Guard - Cast Bloodthirst'),
 ('1762102','17621','2','0','100','1025','30','0','120000','120000','0','0','11','30485','0','0','1','-106','0','0','0','0','0','0','Heathen Guard - Cast Enrage at 30% HP'),
