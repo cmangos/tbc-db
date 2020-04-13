@@ -244,7 +244,7 @@ INSERT INTO `dbscripts_on_quest_end` (`id`,`delay`,`priority`,`command`,`datalon
 -- Relay script to be used in ACID for various NPCs in Area 52
 DELETE FROM `dbscripts_on_relay` WHERE `id` IN(10166,10167,10168,10169) AND command=1;
 INSERT INTO `dbscripts_on_relay` (`id`,`delay`,`priority`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
-(10166,0,0,1,75,0,0,0,0,0,0,0,0,0,'Area 52 - Random Emote - OneShotRoar',0,0,0,0),
+(10166,0,0,1,15,0,0,0,0,0,0,0,0,0,'Area 52 - Random Emote - OneShotRoar',0,0,0,0),
 (10167,0,0,1,11,0,0,0,0,0,0,0,0,0,'Area 52 - Random Emote - OneShotLaugh',0,0,0,0),
 (10168,0,0,1,21,0,0,0,0,0,0,0,0,0,'Area 52 - Random Emote - OneShotApplaud',0,0,0,0),
 (10169,0,0,1,4,0,0,0,0,0,0,0,0,0,'Area 52 - Random Emote - OneShotCheer',0,0,0,0);
