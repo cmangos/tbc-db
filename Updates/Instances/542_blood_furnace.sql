@@ -4,7 +4,6 @@ DBScriptName: instance_blood_furnace
 DB%Complete: 80
 DBComment:
 * ai second boss adds aggro drop ability, spell scripting for second boss aoe ability (scaling)
-* Core Issue: Pooling overwrites spawnmask making it possible to have heroic chest in normal, chests need some sort of chanced solution where the maxchance of a pool might be below 100%
 * Sniff shows different id for @CGUID+35 = 17395, +44 = 17414, +86 = 17395, +46 = 17414
 EndDBScriptData */
 
@@ -534,9 +533,16 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+29, 184176, 542, 2, -0.556658, 25.56831, -44.79747, 4.324618, 0, 0, -0.8300982, 0.5576173, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficultyIcon01
 (@OGUID+30, 184932, 542, 1, 494.2115, 10.87523, 9.544005, 3.141593, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
 (@OGUID+31, 184933, 542, 1, 494.2115, 10.87523, 9.544005, 3.141593, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+32, 184932, 542, 1, 328.7021, -197.7191, -25.50888, 2.984499, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+33, 184933, 542, 1, 328.7021, -197.7191, -25.50888, 2.984499, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+34, 184937, 542, 2, 498.092, 3.54075, 9.5534, 3.24531, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
+(@OGUID+32, 184936, 542, 2, 494.2115, 10.87523, 9.544005, 3.141593, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+33, 184937, 542, 2, 494.2115, 10.87523, 9.544005, 3.141593, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+34, 184932, 542, 1, 328.7021, -197.7191, -25.50888, 2.984499, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+35, 184933, 542, 1, 328.7021, -197.7191, -25.50888, 2.984499, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+36, 184936, 542, 2, 328.7021, -197.7191, -25.50888, 2.984499, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+37, 184937, 542, 2, 328.7021, -197.7191, -25.50888, 2.984499, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+38, 184932, 542, 1, 498.092, 3.54075, 9.5534, 3.24531, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+39, 184933, 542, 1, 498.092, 3.54075, 9.5534, 3.24531, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+40, 184936, 542, 2, 498.092, 3.54075, 9.5534, 3.24531, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+41, 184937, 542, 2, 498.092, 3.54075, 9.5534, 3.24531, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -551,15 +557,16 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- =======
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+31, @PGUID+30, 0, 'Bound/Solid Fel Iron Chest - Pool 1'),
-(@PGUID+32, @PGUID+30, 0, 'Bound/Solid Fel Iron Chest - Pool 2');
+(@PGUID+91, @PGUID+90, 0, 'Blood Furnace - Chest - #1'),
+(@PGUID+92, @PGUID+90, 0, 'Blood Furnace - Chest - #2'),
+(@PGUID+93, @PGUID+90, 0, 'Blood Furnace - Chest - #3');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 4, 'Blood Furnace - Laughing Skull Rogues'),
-(@PGUID+30, 1, 'Blood Furnace (Normal) - Master Chest Pool'),
-(@PGUID+31, 1, 'Blood Furnace (Normal) - Bound/Solid Fel Iron Chest - Pool 1'),
-(@PGUID+32, 1, 'Blood Furnace (Normal) - Bound/Solid Fel Iron Chest - Pool 2');
--- (@PGUID+40, 1, 'Blood Furnace (Heroic) - Master Chest Pool');
+(@PGUID+90, 1, 'Blood Furnace - Master Chest Pool'),
+(@PGUID+91, 1, 'Blood Furnace - Chest - #1'),
+(@PGUID+92, 1, 'Blood Furnace - Chest - #2'),
+(@PGUID+93, 1, 'Blood Furnace - Chest - #3');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+171, @PGUID+1, 0, 'Blood Furnace - Laughing Skull Rogues - Pathing on Front Stairs'),
@@ -573,11 +580,18 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+30, @PGUID+31, 0, 'Blood Furnace - Bound Fel Iron Chest (184932)'),
-(@OGUID+31, @PGUID+31, 0, 'Blood Furnace - Solid Fel Iron Chest (184933)'),
-(@OGUID+32, @PGUID+32, 0, 'Blood Furnace - Bound Fel Iron Chest (184932)'),
-(@OGUID+33, @PGUID+32, 0, 'Blood Furnace - Solid Fel Iron Chest (184933)'),
-(@OGUID+34, @PGUID+30, 0, 'Blood Furnace - Solid Adamantite Chest (184937)'); -- @PGUID+40
+(@OGUID+30, @PGUID+91, 0, 'Blood Furnace - Bound Fel Iron Chest (184932)'),
+(@OGUID+31, @PGUID+91, 0, 'Blood Furnace - Solid Fel Iron Chest (184933)'),
+(@OGUID+32, @PGUID+91, 0, 'Blood Furnace - Bound Adamantite Chest (184936)'),
+(@OGUID+33, @PGUID+91, 0, 'Blood Furnace - Solid Adamantite Chest (184937)'),
+(@OGUID+34, @PGUID+92, 0, 'Blood Furnace - Bound Fel Iron Chest (184932)'),
+(@OGUID+35, @PGUID+92, 0, 'Blood Furnace - Solid Fel Iron Chest (184933)'),
+(@OGUID+36, @PGUID+92, 0, 'Blood Furnace - Bound Adamantite Chest (184936)'),
+(@OGUID+37, @PGUID+92, 0, 'Blood Furnace - Solid Adamantite Chest (184937)'),
+(@OGUID+38, @PGUID+93, 0, 'Blood Furnace - Bound Fel Iron Chest (184932)'),
+(@OGUID+39, @PGUID+93, 0, 'Blood Furnace - Solid Fel Iron Chest (184933)'),
+(@OGUID+40, @PGUID+93, 0, 'Blood Furnace - Bound Adamantite Chest (184936)'),
+(@OGUID+41, @PGUID+93, 0, 'Blood Furnace - Solid Adamantite Chest (184937)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 

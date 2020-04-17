@@ -1,10 +1,8 @@
 /* DBScriptData
 DBName: Auchindoun - Mana-Tombs
 DBScriptName: -
-DB%Complete: 80
+DB%Complete: 85
 DBComment:
-* Core Issue: Pooling overwrites spawnmask making it possible to have heroic chest in normal, chests need some sort of chanced solution where the maxchance of a pool might be below 100%
-* setting certain spawnmask (1/2) also seems to ignore pooling atm, when you enter map in certain difficulty
 EndDBScriptData */
 
 SET @CGUID := 5570000; -- creatures
@@ -518,24 +516,24 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+54, 181278, 557, 3, -379.9556, -41.42834, -0.967236, 4.084071, 0, 0, -0.8910065, 0.4539906, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+55, 181278, 557, 3, -256.0322, -152.7793, -0.953339, 0.6457717, 0, 0, 0.3173046, 0.9483237, 86400, 86400, 100, 1), -- Ancient Lichen
 (@OGUID+56, 181278, 557, 3, -95.34675, -108.3567, -0.842384, 1.623156, 0, 0, 0.7253742, 0.6883547, 86400, 86400, 100, 1), -- Ancient Lichen
-(@OGUID+57, 184934, 557, 3, -31.40896, -99.78729, 0.923387, 2.303831, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+58, 184935, 557, 3, -31.40896, -99.78729, 0.923387, 2.303831, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+59, 184934, 557, 3, -99.06686, -55.79686, -0.919465, -0.8726639, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+60, 184935, 557, 3, -99.06686, -55.79686, -0.919465, -0.8726639, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+61, 184934, 557, 3, -259.6258, -187.1173, -0.687503, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+62, 184935, 557, 3, -259.6258, -187.1173, -0.687503, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+63, 184934, 557, 3, -396.6851, -172.0011, -0.976236, 0.4363316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+64, 184935, 557, 3, -396.6851, -172.0011, -0.976236, 0.4363316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+65, 184936, 557, 3, -259.6258, -187.1173, -0.687503, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+66, 184937, 557, 3, -259.6258, -187.1173, -0.687503, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+67, 184936, 557, 3, -7.030846, -221.2169, 1.849148, 0.8377574, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+68, 184937, 557, 3, -7.030846, -221.2169, 1.849148, 0.8377574, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+69, 184936, 557, 3, -104.1061, -245.6414, -0.189249, 1.117009, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+70, 184937, 557, 3, -104.1061, -245.6414, -0.189249, 1.117009, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+71, 184936, 557, 3, -227.9113, -225.7269, -0.952425, 0.2443456, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+72, 184937, 557, 3, -227.9113, -225.7269, -0.952425, 0.2443456, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+73, 184936, 557, 3, -393.554, -60.86067, -0.982428, 6.03884, 0, 0, -0.1218691, 0.9925462, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+74, 184937, 557, 3, -393.554, -60.86067, -0.982428, 6.03884, 0, 0, -0.1218691, 0.9925462, 86400, 86400, 100, 1); -- Solid Adamantite Chest
+(@OGUID+57, 184934, 557, 1, -31.40896, -99.78729, 0.923387, 2.303831, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+58, 184935, 557, 1, -31.40896, -99.78729, 0.923387, 2.303831, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+59, 184934, 557, 1, -99.06686, -55.79686, -0.919465, -0.8726639, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+60, 184935, 557, 1, -99.06686, -55.79686, -0.919465, -0.8726639, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+61, 184934, 557, 1, -259.6258, -187.1173, -0.687503, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+62, 184935, 557, 1, -259.6258, -187.1173, -0.687503, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+63, 184934, 557, 1, -396.6851, -172.0011, -0.976236, 0.4363316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+64, 184935, 557, 1, -396.6851, -172.0011, -0.976236, 0.4363316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+65, 184936, 557, 2, -259.6258, -187.1173, -0.687503, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+66, 184937, 557, 2, -259.6258, -187.1173, -0.687503, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+67, 184936, 557, 2, -7.030846, -221.2169, 1.849148, 0.8377574, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+68, 184937, 557, 2, -7.030846, -221.2169, 1.849148, 0.8377574, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+69, 184936, 557, 2, -104.1061, -245.6414, -0.189249, 1.117009, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+70, 184937, 557, 2, -104.1061, -245.6414, -0.189249, 1.117009, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+71, 184936, 557, 2, -227.9113, -225.7269, -0.952425, 0.2443456, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+72, 184937, 557, 2, -227.9113, -225.7269, -0.952425, 0.2443456, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+73, 184936, 557, 2, -393.554, -60.86067, -0.982428, 6.03884, 0, 0, -0.1218691, 0.9925462, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+74, 184937, 557, 2, -393.554, -60.86067, -0.982428, 6.03884, 0, 0, -0.1218691, 0.9925462, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -560,11 +558,11 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+32, @PGUID+30, 0, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #2'),
 (@PGUID+33, @PGUID+30, 0, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #3'),
 (@PGUID+34, @PGUID+30, 0, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #4'),
-(@PGUID+41, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #1'), -- 40 (Heroic)
-(@PGUID+42, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #2'),
-(@PGUID+43, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #3'),
-(@PGUID+44, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #4'),
-(@PGUID+45, @PGUID+30, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #5');
+(@PGUID+41, @PGUID+40, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #1'),
+(@PGUID+42, @PGUID+40, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #2'),
+(@PGUID+43, @PGUID+40, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #3'),
+(@PGUID+44, @PGUID+40, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #4'),
+(@PGUID+45, @PGUID+40, 0, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #5');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+20, 4, 'Mana-Tombs - Ancient Lichen (181278)'),
@@ -580,7 +578,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+32, 1, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #2'),
 (@PGUID+33, 1, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #3'),
 (@PGUID+34, 1, 'Mana-Tombs (Normal) - Bound / Solid Adamantite Chest #4'),
--- (@PGUID+40, 1, 'Mana-Tombs (Heroic) - Master Chest Pool'),
+(@PGUID+40, 1, 'Mana-Tombs (Heroic) - Master Chest Pool'),
 (@PGUID+41, 1, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #1'),
 (@PGUID+42, 1, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #2'),
 (@PGUID+43, 1, 'Mana-Tombs (Heroic) - Bound / Solid Adamantite Chest #3'),

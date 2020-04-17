@@ -9,7 +9,6 @@ DBComment:
 * redo/sniff path/spawns for @CGUID+76 and @CGUID+77, its currently not as long/wide as it should be
 * @CGUID+72 - @CGUID+75 were changed to 17940 at some point
 * changed position for @CGUID+75 spawn due to extreme desync pathing befor: -33.9556, -353.67, 78.0838, 0.242071, recheck spawns @CGUID+75 and @CGUID+74
-* Core Issue: Pooling overwrites spawnmask making it possible to have heroic chest in normal, chests need some sort of chanced solution where the maxchance of a pool might be below 100% Set Master Pools to 2 when this is resolved
 EndDBScriptData */
 
 SET @CGUID := 5470000; -- creatures
@@ -828,43 +827,44 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+72, 181556, 547, 3, -71.34264, -282.6859, -1.401498, 0.7330382, 0, 0, 0.3583679, 0.9335805, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+73, 181556, 547, 3, 0.00864, -186.6674, -1.555333, 3.944446, 0, 0, -0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+74, 181569, 547, 3, 0.00864, -186.6674, -1.555333, 3.944446, 0, 0, -0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+75, 184932, 547, 1, -8.733916, -182.9387, -1.57517, 1.433549, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+76, 184933, 547, 1, -8.733916, -182.9387, -1.57517, 1.433549, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+77, 184932, 547, 1, -8.92, -209.92, -1.57, 1.93, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+78, 184933, 547, 1, -8.92, -209.92, -1.57, 1.93, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+79, 184932, 547, 1, -9.452101, -209.0335, -1.579993, 1.675516, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+80, 184933, 547, 1, -9.452101, -209.0335, -1.579993, 1.675516, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+81, 184932, 547, 1, -15.10876, -328.1017, -1.58162, 0.2443461, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+82, 184933, 547, 1, -15.10876, -328.1017, -1.58162, 0.2443461, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+83, 184932, 547, 1, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest				// guessed coords
-(@OGUID+84, 184933, 547, 1, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest				// guessed coords
-(@OGUID+85, 184932, 547, 1, 135.5916, -304.6217, 3.035721, -2.687807, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+86, 184933, 547, 1, 135.5916, -304.6217, 3.035721, -2.687807, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+87, 184932, 547, 1, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+88, 184933, 547, 1, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+89, 184932, 547, 1, -41.41404, -512.5812, -1.585812, -2.495821, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+90, 184933, 547, 1, -41.41404, -512.5812, -1.585812, -2.495821, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+91, 184932, 547, 1, -124.2653, -595.8683, 9.163177, 0.06981316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+92, 184933, 547, 1, -124.2653, -595.8683, 9.163177, 0.06981316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+93, 184940, 547, 2, -8.733916, -182.9387, -1.57517, 1.433549, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+94, 184941, 547, 2, -8.733916, -182.9387, -1.57517, 1.433549, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+95, 184940, 547, 2, -8.92, -209.92, -1.57, 1.93, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+96, 184941, 547, 2, -8.92, -209.92, -1.57, 1.93, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+97, 184940, 547, 2, -9.452101, -209.0335, -1.579993, 1.675516, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+98, 184941, 547, 2, -9.452101, -209.0335, -1.579993, 1.675516, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+99, 184940, 547, 2, -15.10876, -328.1017, -1.58162, 0.2443461, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+100, 184941, 547, 2, -15.10876, -328.1017, -1.58162, 0.2443461, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+101, 184940, 547, 2, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest				// guessed coords
-(@OGUID+102, 184941, 547, 2, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest				// guessed coords
+(@OGUID+75, 181569, 547, 3, -136.8079, -128.9627, -1.692187, 1.919862, 0, 0, 0.8191519, 0.5735767, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+-- 76 - 80
+(@OGUID+81, 184932, 547, 1, -8.733916, -182.9387, -1.57517, 1.433549, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+82, 184933, 547, 1, -8.733916, -182.9387, -1.57517, 1.433549, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+83, 184940, 547, 2, -8.733916, -182.9387, -1.57517, 1.433549, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+84, 184941, 547, 2, -8.733916, -182.9387, -1.57517, 1.433549, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+85, 184932, 547, 1, -8.92, -209.92, -1.57, 1.93, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+86, 184933, 547, 1, -8.92, -209.92, -1.57, 1.93, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+87, 184940, 547, 2, -8.92, -209.92, -1.57, 1.93, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+88, 184941, 547, 2, -8.92, -209.92, -1.57, 1.93, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+89, 184932, 547, 1, -9.452101, -209.0335, -1.579993, 1.675516, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+90, 184933, 547, 1, -9.452101, -209.0335, -1.579993, 1.675516, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+91, 184940, 547, 2, -9.452101, -209.0335, -1.579993, 1.675516, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+92, 184941, 547, 2, -9.452101, -209.0335, -1.579993, 1.675516, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+93, 184932, 547, 1, -15.10876, -328.1017, -1.58162, 0.2443461, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+94, 184933, 547, 1, -15.10876, -328.1017, -1.58162, 0.2443461, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+95, 184940, 547, 2, -15.10876, -328.1017, -1.58162, 0.2443461, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+96, 184941, 547, 2, -15.10876, -328.1017, -1.58162, 0.2443461, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+97, 184932, 547, 1, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest				// guessed coords
+(@OGUID+98, 184933, 547, 1, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest				// guessed coords
+(@OGUID+99, 184940, 547, 2, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest				// guessed coords
+(@OGUID+100, 184941, 547, 2, -84.90, -294.53, -1.48, 5.39, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest				// guessed coords
+(@OGUID+101, 184932, 547, 1, 135.5916, -304.6217, 3.035721, -2.687807, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+102, 184933, 547, 1, 135.5916, -304.6217, 3.035721, -2.687807, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
 (@OGUID+103, 184940, 547, 2, 135.5916, -304.6217, 3.035721, -2.687807, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
 (@OGUID+104, 184941, 547, 2, 135.5916, -304.6217, 3.035721, -2.687807, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+105, 184940, 547, 2, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+106, 184941, 547, 2, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+107, 184940, 547, 2, -41.41404, -512.5812, -1.585812, -2.495821, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+108, 184941, 547, 2, -41.41404, -512.5812, -1.585812, -2.495821, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+109, 184940, 547, 2, -124.2653, -595.8683, 9.163177, 0.06981316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+110, 184941, 547, 2, -124.2653, -595.8683, 9.163177, 0.06981316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+111, 181569, 547, 3, -136.8079, -128.9627, -1.692187, 1.919862, 0, 0, 0.8191519, 0.5735767, 86400, 86400, 255, 1); -- Rich Adamantite Deposit
+(@OGUID+105, 184932, 547, 1, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+106, 184933, 547, 1, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+107, 184940, 547, 2, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+108, 184941, 547, 2, 134.5852, -446.5189, 3.035388, 2.775068, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+109, 184932, 547, 1, -41.41404, -512.5812, -1.585812, -2.495821, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+110, 184933, 547, 1, -41.41404, -512.5812, -1.585812, -2.495821, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+111, 184940, 547, 2, -41.41404, -512.5812, -1.585812, -2.495821, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+112, 184941, 547, 2, -41.41404, -512.5812, -1.585812, -2.495821, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+113, 184932, 547, 1, -124.2653, -595.8683, 9.163177, 0.06981316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
+(@OGUID+114, 184933, 547, 1, -124.2653, -595.8683, 9.163177, 0.06981316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
+(@OGUID+115, 184940, 547, 2, -124.2653, -595.8683, 9.163177, 0.06981316, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
+(@OGUID+116, 184941, 547, 2, -124.2653, -595.8683, 9.163177, 0.06981316, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -915,24 +915,6 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- =======
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+31, @PGUID+30, 0, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #1'),
-(@PGUID+32, @PGUID+30, 0, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #2'),
-(@PGUID+33, @PGUID+30, 0, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #3'),
-(@PGUID+34, @PGUID+30, 0, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #4'),
-(@PGUID+35, @PGUID+30, 0, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #5'),
-(@PGUID+36, @PGUID+30, 0, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #6'),
-(@PGUID+37, @PGUID+30, 0, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #7'),
-(@PGUID+38, @PGUID+30, 0, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #8'),
-(@PGUID+39, @PGUID+30, 0, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #9'),
-(@PGUID+41, @PGUID+40, 0, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #1'),
-(@PGUID+42, @PGUID+40, 0, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #2'),
-(@PGUID+43, @PGUID+40, 0, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #3'),
-(@PGUID+44, @PGUID+40, 0, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #4'),
-(@PGUID+45, @PGUID+40, 0, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #5'),
-(@PGUID+46, @PGUID+40, 0, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #6'),
-(@PGUID+47, @PGUID+40, 0, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #7'),
-(@PGUID+48, @PGUID+40, 0, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #8'),
-(@PGUID+49, @PGUID+40, 0, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #9'),
 (@PGUID+54, @PGUID+53, 0, 'Ragveil / Flame Cap - #1'),
 (@PGUID+55, @PGUID+53, 0, 'Ragveil / Flame Cap - #2'),
 (@PGUID+56, @PGUID+53, 0, 'Ragveil / Flame Cap - #3'),
@@ -945,29 +927,18 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+63, @PGUID+50, 0, 'Adamantite Deposit / Rich Adamantite Deposit - #2'),
 (@PGUID+64, @PGUID+50, 0, 'Adamantite Deposit / Rich Adamantite Deposit - #3'),
 (@PGUID+65, @PGUID+50, 0, 'Adamantite Deposit / Rich Adamantite Deposit / Khorium - #4'),
-(@PGUID+66, @PGUID+50, 0, 'Adamantite Deposit / Rich Adamantite Deposit - #5');
+(@PGUID+66, @PGUID+50, 0, 'Adamantite Deposit / Rich Adamantite Deposit - #5'),
+(@PGUID+91, @PGUID+90, 0, 'Slave Pens - Chest - #1'),
+(@PGUID+92, @PGUID+90, 0, 'Slave Pens - Chest - #2'),
+(@PGUID+93, @PGUID+90, 0, 'Slave Pens - Chest - #3'),
+(@PGUID+94, @PGUID+90, 0, 'Slave Pens - Chest - #4'),
+(@PGUID+95, @PGUID+90, 0, 'Slave Pens - Chest - #5'),
+(@PGUID+96, @PGUID+90, 0, 'Slave Pens - Chest - #6'),
+(@PGUID+97, @PGUID+90, 0, 'Slave Pens - Chest - #7'),
+(@PGUID+98, @PGUID+90, 0, 'Slave Pens - Chest - #8'),
+(@PGUID+99, @PGUID+90, 0, 'Slave Pens - Chest - #9');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+30, 1, 'Slave Pens (Normal) - Master Chest Pool'),
-(@PGUID+31, 1, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #1'),
-(@PGUID+32, 1, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #2'),
-(@PGUID+33, 1, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #3'),
-(@PGUID+34, 1, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #4'),
-(@PGUID+35, 1, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #5'),
-(@PGUID+36, 1, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #6'),
-(@PGUID+37, 1, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #7'),
-(@PGUID+38, 1, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #8'),
-(@PGUID+39, 1, 'Slave Pens (Normal) - Bound / Solid Fel Iron Chest - #9'),
-(@PGUID+40, 1, 'Slave Pens (Heroic) - Master Chest Pool'),
-(@PGUID+41, 1, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #1'),
-(@PGUID+42, 1, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #2'),
-(@PGUID+43, 1, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #3'),
-(@PGUID+44, 1, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #4'),
-(@PGUID+45, 1, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #5'),
-(@PGUID+46, 1, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #6'),
-(@PGUID+47, 1, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #7'),
-(@PGUID+48, 1, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #8'),
-(@PGUID+49, 1, 'Slave Pens (Heroic) - Bound / Solid Adamantite Chest - #9'),
 (@PGUID+50, 4, 'Slave Pens - Master Mineral Pool'),
 (@PGUID+51, 4, 'Slave Pens - Master Anchient Lichen (181278) Pool'),
 (@PGUID+52, 3, 'Slave Pens - Master Felweed (181270) Pool'),
@@ -984,49 +955,23 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+63, 1, 'Slave Pens - Adamantite Deposit / Rich Adamantite Deposit - #2'),
 (@PGUID+64, 1, 'Slave Pens - Adamantite Deposit / Rich Adamantite Deposit - #3'),
 (@PGUID+65, 1, 'Slave Pens - Adamantite Deposit / Rich Adamantite Deposit / Khorium - #4'),
-(@PGUID+66, 1, 'Slave Pens - Adamantite Deposit / Rich Adamantite Deposit - #5');
+(@PGUID+66, 1, 'Slave Pens - Adamantite Deposit / Rich Adamantite Deposit - #5'),
+(@PGUID+90, 1, 'Slave Pens - Master Chest Pool'),
+(@PGUID+91, 1, 'Slave Pens - Chest - #1'),
+(@PGUID+92, 1, 'Slave Pens - Chest - #2'),
+(@PGUID+93, 1, 'Slave Pens - Chest - #3'),
+(@PGUID+94, 1, 'Slave Pens - Chest - #4'),
+(@PGUID+95, 1, 'Slave Pens - Chest - #5'),
+(@PGUID+96, 1, 'Slave Pens - Chest - #6'),
+(@PGUID+97, 1, 'Slave Pens - Chest - #7'),
+(@PGUID+98, 1, 'Slave Pens - Chest - #8'),
+(@PGUID+99, 1, 'Slave Pens - Chest - #9');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+75, @PGUID+31, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #1'),
-(@OGUID+76, @PGUID+31, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #1'),
-(@OGUID+77, @PGUID+32, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #2'),
-(@OGUID+78, @PGUID+32, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #2'),
-(@OGUID+79, @PGUID+33, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #3'),
-(@OGUID+80, @PGUID+33, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #3'),
-(@OGUID+81, @PGUID+34, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #4'),
-(@OGUID+82, @PGUID+34, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #4'),
-(@OGUID+83, @PGUID+35, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #5'),
-(@OGUID+84, @PGUID+35, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #5'),
-(@OGUID+85, @PGUID+36, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #6'),
-(@OGUID+86, @PGUID+36, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #6'),
-(@OGUID+87, @PGUID+37, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #7'),
-(@OGUID+88, @PGUID+37, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #7'),
-(@OGUID+89, @PGUID+38, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #8'),
-(@OGUID+90, @PGUID+38, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #8'),
-(@OGUID+91, @PGUID+39, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #9'),
-(@OGUID+92, @PGUID+39, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #9'),
-(@OGUID+93, @PGUID+41, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #1'),
-(@OGUID+94, @PGUID+41, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #1'),
-(@OGUID+95, @PGUID+42, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #2'),
-(@OGUID+96, @PGUID+42, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #2'),
-(@OGUID+97, @PGUID+43, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #3'),
-(@OGUID+98, @PGUID+43, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #3'),
-(@OGUID+99, @PGUID+44, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #4'),
-(@OGUID+100, @PGUID+44, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #4'),
-(@OGUID+101, @PGUID+45, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #5'),
-(@OGUID+102, @PGUID+45, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #5'),
-(@OGUID+103, @PGUID+46, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #6'),
-(@OGUID+104, @PGUID+46, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #6'),
-(@OGUID+105, @PGUID+47, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #7'),
-(@OGUID+106, @PGUID+47, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #7'),
-(@OGUID+107, @PGUID+48, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #8'),
-(@OGUID+108, @PGUID+48, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #8'),
-(@OGUID+109, @PGUID+49, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #9'),
-(@OGUID+110, @PGUID+49, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #9'),
 (@OGUID+7, @PGUID+51, 0, 'Slave Pens - Anchient Lichen (181278)'),
 (@OGUID+8, @PGUID+51, 0, 'Slave Pens - Anchient Lichen (181278)'),
 (@OGUID+9, @PGUID+51, 0, 'Slave Pens - Anchient Lichen (181278)'),
@@ -1077,7 +1022,43 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+12, @PGUID+65, 0, 'Slave Pens - Rich Adamantite Deposit (181569) - #4'),
 (@OGUID+13, @PGUID+65, 0, 'Slave Pens - Khorium (181557) - #4'),
 (@OGUID+14, @PGUID+66, 0, 'Slave Pens - Adamantite Deposit (181556) - #5'),
-(@OGUID+111, @PGUID+66, 0, 'Slave Pens - Rich Adamantite Deposit (181569) - #5');
+(@OGUID+75, @PGUID+66, 0, 'Slave Pens - Rich Adamantite Deposit (181569) - #5'),
+(@OGUID+81, @PGUID+91, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #1'),
+(@OGUID+82, @PGUID+91, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #1'),
+(@OGUID+83, @PGUID+91, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #1'),
+(@OGUID+84, @PGUID+91, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #1'),
+(@OGUID+85, @PGUID+92, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #2'),
+(@OGUID+86, @PGUID+92, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #2'),
+(@OGUID+87, @PGUID+92, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #2'),
+(@OGUID+88, @PGUID+92, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #2'),
+(@OGUID+89, @PGUID+93, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #3'),
+(@OGUID+90, @PGUID+93, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #3'),
+(@OGUID+91, @PGUID+93, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #3'),
+(@OGUID+92, @PGUID+93, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #3'),
+(@OGUID+93, @PGUID+94, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #4'),
+(@OGUID+94, @PGUID+94, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #4'),
+(@OGUID+95, @PGUID+94, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #4'),
+(@OGUID+96, @PGUID+94, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #4'),
+(@OGUID+97, @PGUID+95, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #5'),
+(@OGUID+98, @PGUID+95, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #5'),
+(@OGUID+99, @PGUID+95, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #5'),
+(@OGUID+100, @PGUID+95, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #5'),
+(@OGUID+101, @PGUID+96, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #6'),
+(@OGUID+102, @PGUID+96, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #6'),
+(@OGUID+103, @PGUID+96, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #6'),
+(@OGUID+104, @PGUID+96, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #6'),
+(@OGUID+105, @PGUID+97, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #7'),
+(@OGUID+106, @PGUID+97, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #7'),
+(@OGUID+107, @PGUID+97, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #7'),
+(@OGUID+108, @PGUID+97, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #7'),
+(@OGUID+109, @PGUID+98, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #8'),
+(@OGUID+110, @PGUID+98, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #8'),
+(@OGUID+111, @PGUID+98, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #8'),
+(@OGUID+112, @PGUID+98, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #8'),
+(@OGUID+113, @PGUID+99, 0, 'Slave Pens (Normal) - Bound Fel Iron Chest (184932) - #9'),
+(@OGUID+114, @PGUID+99, 0, 'Slave Pens (Normal) - Solid Fel Iron Chest (184933) - #9'),
+(@OGUID+115, @PGUID+99, 0, 'Slave Pens (Heroic) - Bound Adamantite Chest (184940) - #9'),
+(@OGUID+116, @PGUID+99, 0, 'Slave Pens (Heroic) - Solid Adamantite Chest (184941) - #9');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
