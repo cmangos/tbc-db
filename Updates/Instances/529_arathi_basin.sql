@@ -1358,21 +1358,21 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+254, 180256, 529, 708.09, 708.448, -17.8342, -2.3911, 0, 0, 0, 0, 86400, 86400, 100, 1), -- HORDE DOOR
 
 -- TBC+ only?
-(@OGUID+300, 179871, 529, 807.46, 1189.16, 11.92, 5.44, 0, 0, 0, 0, 180, 180, 100, 1), -- Speed Buff
-(@OGUID+301, 179871, 529, 817.66, 843.34, -56.54, 3.01, 0, 0, 0, 0, 180, 180, 100, 1), -- Speed Buff
-(@OGUID+302, 179871, 529, 990.75, 1008.18, -42.6, 2.43, 0, 0, 0, 0, 180, 180, 100, 1), -- Speed Buff
-(@OGUID+303, 179871, 529, 1185.71, 1185.24, -56.36, 2.56, 0, 0, 0, 0, 180, 180, 100, 1), -- Speed Buff
-(@OGUID+304, 179871, 529, 1146.62, 816.94, -98.49, 6, 0, 0, 0, 0, 180, 180, 100, 1), -- Speed Buff
-(@OGUID+305, 179904, 529, 807.46, 1189.16, 11.92, 5.44, 0, 0, 0, 0, 180, 180, 100, 1), -- Food Buff
-(@OGUID+306, 179904, 529, 817.66, 843.34, -56.54, 3.01, 0, 0, 0, 0, 180, 180, 100, 1), -- Food Buff
-(@OGUID+307, 179904, 529, 990.75, 1008.18, -42.6, 2.43, 0, 0, 0, 0, 180, 180, 100, 1), -- Food Buff
-(@OGUID+308, 179904, 529, 1185.71, 1185.24, -56.36, 2.56, 0, 0, 0, 0, 180, 180, 100, 1), -- Food Buff
-(@OGUID+309, 179904, 529, 1146.62, 816.94, -98.49, 6, 0, 0, 0, 0, 180, 180, 100, 1), -- Food Buff
-(@OGUID+310, 179905, 529, 817.66, 843.34, -56.54, 3.01, 0, 0, 0, 0, 180, 180, 100, 1), -- Berserk Buff
-(@OGUID+311, 179905, 529, 990.75, 1008.18, -42.6, 2.43, 0, 0, 0, 0, 180, 180, 100, 1), -- Berserk Buff
-(@OGUID+312, 179905, 529, 1185.71, 1185.24, -56.36, 2.56, 0, 0, 0, 0, 180, 180, 100, 1), -- Berserk Buff
-(@OGUID+313, 179905, 529, 807.46, 1189.16, 11.92, 5.44, 0, 0, 0, 0, 180, 180, 100, 1), -- Berserk Buff
-(@OGUID+314, 179905, 529, 1146.62, 816.94, -98.49, 6, 0, 0, 0, 0, 180, 180, 100, 1); -- Berserk Buff
+(@OGUID+300, 179871, 529, 1185.71, 1185.24, -56.36, 2.56, 0, 0, 0.0223384, 0.99975, 180, 180, 100, 1), -- Speed Buff
+(@OGUID+301, 179904, 529, 1185.71, 1185.24, -56.36, 2.56, 0, 0, 0.0223384, 0.99975, 180, 180, 100, 1), -- Food Buff
+(@OGUID+302, 179905, 529, 1185.71, 1185.24, -56.36, 2.56, 0, 0, 0.0223384, 0.99975, 180, 180, 100, 1), -- Berserk Buff
+(@OGUID+303, 179871, 529, 1146.62, 816.94, -98.49, 6, 0, 0, 0.053556, 0.998565, 180, 180, 100, 1), -- Speed Buff
+(@OGUID+304, 179904, 529, 1146.62, 816.94, -98.49, 6, 0, 0, 0.053556, 0.998565, 180, 180, 100, 1), -- Food Buff
+(@OGUID+305, 179905, 529, 1146.62, 816.94, -98.49, 6, 0, 0, 0.053556, 0.998565, 180, 180, 100, 1), -- Berserk Buff
+(@OGUID+306, 179871, 529, 990.75, 1008.18, -42.6, 2.43, 0, 0, 0.0212042, 0.999775, 180, 180, 100, 1), -- Speed Buff
+(@OGUID+307, 179904, 529, 990.75, 1008.18, -42.6, 2.43, 0, 0, 0.0212042, 0.999775, 180, 180, 100, 1), -- Food Buff
+(@OGUID+308, 179905, 529, 990.75, 1008.18, -42.6, 2.43, 0, 0, 0.0212042, 0.999775, 180, 180, 100, 1), -- Berserk Buff
+(@OGUID+309, 179871, 529, 807.46, 1189.16, 11.92, 5.44, 0, 0, 0.0474551, 0.998873, 180, 180, 100, 1), -- Speed Buff
+(@OGUID+310, 179904, 529, 807.46, 1189.16, 11.92, 5.44, 0, 0, 0.0474551, 0.998873, 180, 180, 100, 1), -- Food Buff
+(@OGUID+311, 179905, 529, 807.46, 1189.16, 11.92, 5.44, 0, 0, 0.0474551, 0.998873, 180, 180, 100, 1), -- Berserk Buff
+(@OGUID+312, 179871, 529, 817.66, 843.34, -56.54, 3.01, 0, 0, 0.0262642, 0.999655, 180, 180, 100, 1), -- Speed Buff
+(@OGUID+313, 179904, 529, 817.66, 843.34, -56.54, 3.01, 0, 0, 0.0262642, 0.999655, 180, 180, 100, 1), -- Food Buff
+(@OGUID+314, 179905, 529, 817.66, 843.34, -56.54, 3.01, 0, 0, 0.0262642, 0.999655, 180, 180, 100, 1); -- Berserk Buff
 
 -- ======
 -- EVENTS
@@ -1387,10 +1387,34 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- =======
 
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
--- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+(@PGUID+1, 1, 'Arathi Basin - Speed/Food/Berserk Buff - Stables'),
+(@PGUID+2, 1, 'Arathi Basin - Speed/Food/Berserk Buff - Gold Mine'),
+(@PGUID+3, 1, 'Arathi Basin - Speed/Food/Berserk Buff - Blacksmith'),
+(@PGUID+4, 1, 'Arathi Basin - Speed/Food/Berserk Buff - Lumber Mill'),
+(@PGUID+5, 1, 'Arathi Basin - Speed/Food/Berserk Buff - Farm');
+
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+
+INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@OGUID+300, @PGUID+1, 0, 'Arathi Basin - Speed Buff - Stables'),
+(@OGUID+301, @PGUID+1, 0, 'Arathi Basin - Food Buff - Stables'),
+(@OGUID+302, @PGUID+1, 0, 'Arathi Basin - Berserk Buff - Stables'),
+(@OGUID+303, @PGUID+2, 0, 'Arathi Basin - Speed Buff - Gold Mine'),
+(@OGUID+304, @PGUID+2, 0, 'Arathi Basin - Food Buff - Gold Mine'),
+(@OGUID+305, @PGUID+2, 0, 'Arathi Basin - Berserk Buff - Gold Mine'),
+(@OGUID+306, @PGUID+3, 0, 'Arathi Basin - Speed Buff - Blacksmith'),
+(@OGUID+307, @PGUID+3, 0, 'Arathi Basin - Food Buff - Blacksmith'),
+(@OGUID+308, @PGUID+3, 0, 'Arathi Basin - Berserk Buff - Blacksmith'),
+(@OGUID+309, @PGUID+4, 0, 'Arathi Basin - Speed Buff - Lumber Mill'),
+(@OGUID+310, @PGUID+4, 0, 'Arathi Basin - Food Buff - Lumber Mill'),
+(@OGUID+311, @PGUID+4, 0, 'Arathi Basin - Berserk Buff - Lumber Mill'),
+(@OGUID+312, @PGUID+5, 0, 'Arathi Basin - Speed Buff - Farm'),
+(@OGUID+313, @PGUID+5, 0, 'Arathi Basin - Food Buff - Farm'),
+(@OGUID+314, @PGUID+5, 0, 'Arathi Basin - Berserk Buff - Farm');
+
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- =========
