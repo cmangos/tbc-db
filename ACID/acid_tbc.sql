@@ -26476,7 +26476,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2099002','20990','0','0','100','1029','8400','19300','7200','19300','0','0','11','38921','1','0','0','0','0','0','0','0','0','0','Bloodwarder Physician (Heroic) - Cast Holy Shock'),
 ('2099003','20990','14','0','100','1027','6300','15','10000','16000','0','0','11','36348','12','0','0','0','0','0','0','0','0','0','Bloodwarder Physician (Normal) - Cast Bandage on Friendly Missing HP'),
 ('2099004','20990','14','0','100','1029','7100','15','10000','16000','0','0','11','38919','12','0','0','0','0','0','0','0','0','0','Bloodwarder Physician (Heroic) - Cast Bandage on Friendly Missing HP'),
-('2099005','20990','0','0','100','1025','9000','14000','12000','16000','0','0','11','36333','5','0','0','0','0','0','0','0','0','0','Bloodwarder Physician - Cast Anesthetic'),
+('2099005','20990','0','0','100','1025','9000','14000','12000','16000','0','0','11','36333','5','512','0','0','0','0','0','0','0','0','Bloodwarder Physician - Cast Anesthetic'),
 -- Nether Wraith (21062) - mob_nether_wraith
 -- Lucky (23198) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
