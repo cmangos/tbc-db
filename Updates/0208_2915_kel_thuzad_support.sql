@@ -4,14 +4,16 @@ SET @OGUID := 5330000; -- gameobjects
 SET @CGUID := 5330000; -- creatures
 
 -- Spawn trigger GO in center of Kel'Thuzad Chamber
+/*
 DELETE FROM gameobject WHERE guid = @OGUID+202;
 INSERT INTO gameobject (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+202, 181444, 533, 3716.38, -5106.47, 134.99, 3.31536, 0, 0, -0.681998, 0.731354, 604800, 604800, 100, 1);
+(@OGUID+202, 181444, 533, 3716.38, -5106.47, 134.99, 3.31536, 0, 0, -0.681998, 0.731354, 604800, 604800, 100, 1);*/
 
 -- Update visual trigger to proper size and flags
 UPDATE gameobject_template SET size=1.5, flags=4 WHERE entry=181444;
 
 -- Add missing triggers
+/*
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1040 AND @CGUID+1046;
 INSERT INTO creature (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1040,15384,533,0,0,3654.74,-5093.97,143.338,6.1081,25,25,0,0,0,0,0,0),
@@ -20,7 +22,7 @@ INSERT INTO creature (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_
 (@CGUID+1043,15384,533,0,0,3767.32,-5073.84,143.184,0.514501,25,25,0,0,0,0,0,0),
 (@CGUID+1044,15384,533,0,0,3749.48,-5158.37,143.183,5.25909,25,25,0,0,0,0,0,0),
 (@CGUID+1045,15384,533,0,0,3704.3,-5169.33,143.364,4.48233,25,25,0,0,0,0,0,0),
-(@CGUID+1046,15384,533,0,0,3665.75,-5140.24,143.184,3.7527,25,25,0,0,0,0,0,0);
+(@CGUID+1046,15384,533,0,0,3665.75,-5140.24,143.184,3.7527,25,25,0,0,0,0,0,0);*/
 
 -- Add missing targets for summoning spells in Kel'Thuzad encounters
 DELETE FROM spell_script_target WHERE entry IN (28415, 28416, 28417);
