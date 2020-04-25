@@ -97,6 +97,9 @@ UPDATE gameobject_template SET data1 = 5 WHERE entry BETWEEN 176094 AND 176097;
 -- Make PX-238 Winter Wondervolt TRAP GO server-side (visible by GM only)
 UPDATE gameobject_template SET `data8`=1 WHERE entry=180797; 
 
+-- Temporary fix data6 for GO 178559 (Larva Spewer) in prevision of coming core update
+UPDATE gameobject_template SET data6=0 WHERE entry=178559;
+
 -- ============================================================
 -- TBC section
 -- ============================================================
