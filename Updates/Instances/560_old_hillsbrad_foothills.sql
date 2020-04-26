@@ -1860,7 +1860,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+384, @CGUID+408, 3), -- Durnholde Sentry -> Durnholde Warden
 (@CGUID+385, @CGUID+370, 3), -- Durnholde Sentry -> Durnholde Sentry
 (@CGUID+386, @CGUID+362, 3), -- Durnholde Rifleman -> Durnholde Sentry
-(@CGUID+389, @CGUID+388, 3), -- Durnholde Rifleman -> Durnholde Rifleman
+(@CGUID+389, @CGUID+388, 3), -- Durnholde Rifleman -> creature_spawn_entry
 (@CGUID+390, @CGUID+404, 3), -- Durnholde Rifleman -> Durnholde Rifleman
 (@CGUID+391, @CGUID+408, 3), -- Durnholde Rifleman -> Durnholde Warden
 (@CGUID+393, @CGUID+409, 3), -- Durnholde Rifleman -> Durnholde Warden
@@ -1900,6 +1900,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (28163, 560, 28132, 515, 15); -- Guerrero -> Don Carlos
+
+INSERT INTO `creature_spawn_entry` (guid, `entry`) VALUES
+(@CGUID+388, 17819), (@CGUID+388, 17820); -- Durnholde Sentry, Durnholde Rifleman
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 20434, 560, 3, 1889.295, 992.3798, 15.2348, 2.251475, 7200, 7200, 0, 0, 0, 0), -- Horse
@@ -2274,7 +2277,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+385, 17819, 560, 3, 2055.22, 83.8672, 52.4861, 3.67686, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
 (@CGUID+386, 17820, 560, 3, 2109.01, 189.145, 66.2221, 2.57525, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
 (@CGUID+387, 17820, 560, 3, 2124.23, 182.621, 69.4139, 5.70349, 7200, 7200, 0, 0, 0, 2), -- Durnholde Rifleman
-(@CGUID+388, 17820, 560, 3, 2141.53, 174.744, 66.2217, 2.54227, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+388, 0, 560, 3, 2141.53, 174.744, 66.2217, 2.54227, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
 (@CGUID+389, 17820, 560, 3, 2137.49, 168.56, 66.2217, 2.4598, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
 (@CGUID+390, 17820, 560, 3, 2072.27, 105.922, 53.2948, 5.89137, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
 (@CGUID+391, 17820, 560, 3, 2117.43, 54.716, 52.5916, 1.17158, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
@@ -2513,9 +2516,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- GROUP 4 - stands on small mound near flight path
 (@CGUID+617, 18094, 560, 3, 2642.453, 750.0003, 63.31877, 5.078908, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Lookout
 (@CGUID+618, 18094, 560, 3, 2645.466, 753.4458, 63.13852, 2.338741, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Lookout
-
 (@CGUID+619, 28132, 560, 3, 2280.83, 814.708, 54.5895, 4.14046, 86400, 86400, 0, 0, 0, 2), -- Don Carlos
-(@CGUID+620, 17819, 560, 3, 2141.53, 174.744, 66.2217, 2.54227, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+-- (@CGUID+620
 (@CGUID+621, 18657, 560, 3, 2404.2, 740.2278, 54.41904, 4.258604, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Fisherman
 (@CGUID+622, 18657, 560, 3, 2399.983, 744.4286, 54.37799, 3.926991, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Fisherman
 (@CGUID+623, 18657, 560, 3, 2397, 747.5125, 54.26937, 4.18879, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Fisherman
@@ -2789,12 +2791,9 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+2, 1, 'Old Hillsbrad Foothills - Orc Hut 2'),
 (@PGUID+3, 1, 'Old Hillsbrad Foothills - Orc Hut 3'),
 (@PGUID+4, 1, 'Old Hillsbrad Foothills - Orc Hut 4'),
-(@PGUID+5, 1, 'Old Hillsbrad Foothills - Orc Hut 5'),
-(@PGUID+6, 1, 'Old Hillsbrad Foothills - Durnholde Rifleman / Durnholde Sentry');
+(@PGUID+5, 1, 'Old Hillsbrad Foothills - Orc Hut 5');
 
-INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+388, @PGUID+6, 0, 'Old Hillsbrad Foothills - Durnholde Rifleman'),
-(@CGUID+618, @PGUID+6, 0, 'Old Hillsbrad Foothills - Durnholde Sentry');
+-- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
