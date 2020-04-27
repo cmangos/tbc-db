@@ -16774,8 +16774,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2225711','22257','2','0','100','1024','5','0','0','0','0','0','11','33962','0','0','0','0','0','0','0','0','0','0','Deathlash Stinger - Cast Toughen IX at 5% HP'),
 -- Bladespire Elder 22262 - Pre 2.1
 ('2226201','22262','27','0','100','1','12550','1','15000','30000','0','0','11','12550','0','0','0','0','0','0','0','0','0','0','Bladespire Elder - Cast Lightning Shield on Missing Buff'),
+-- Ogri'la Steelshaper 22264
+('2226401','22264','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Ogri''la Steelshaper - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Ogri'la Grubgiver 22266
 ('2226601','22266','1','0','100','1','60000','75000','60000','75000','0','0','5','92','0','0','0','0','0','0','0','0','0','0','Ogri''la Grubgiver - Emote OOC'),
+('2226602','22266','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Ogri''la Grubgiver - Random Say on Revered Ogri''la Aura Effect Spellhit'),
+-- Ogri'la Merchant 22270
+('2227001','22270','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Ogri''la Merchant - Random Say on Revered Ogri''la Aura Effect Spellhit'),
+-- Ogri'la Trader 22271
+('2227101','22271','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Ogri''la Trader - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Apexis Guardian 22275
 ('2227501','22275','11','0','100','0','0','0','0','0','0','0','11','17321','0','0','0','0','0','0','0','0','0','0','Apexis Guardian - Cast Spirit Spawn-in on Spawn'),
 ('2227502','22275','0','0','100','1025','5000','10000','20000','20000','0','0','11','40843','1','0','0','0','0','0','0','0','0','0','Apexis Guardian - Cast Throw'),
@@ -16903,7 +16910,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2292001','22920','32','0','100','1025','8','40','5000','10000','0','0','11','38777','12','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Rock Rumble in Range'),
 ('2292002','22920','0','0','100','1025','3000','6000','8000','16000','0','0','11','38770','1','0','0','0','0','0','0','0','0','0','Thuk the Defiant - Cast Mortal Wound'),
 -- Simon Game Bunny 22923 - npc_simon_game_bunny
+-- Skyguard Navigator 22982
+('2298201','22982','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Skyguard Navigator - Random Say on Revered Skyguard Aura Effect Spellhit'),
 -- Soulgrinder Ritual Bunny 23037 - NullAI
+-- Severin 23042
+('2304201','23042','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Severin - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Felguard Degrader 23055
 -- Legion Ring Event InvisMan 23059
 ('2305901','23059','30','0','100','1','5','23390','0','0','0','0','11','41302','6','0','0','0','0','0','0','0','0','0','Legion Ring Event InvisMan - Cast Cosmetic - Bash''ir Spawn Lightning on Receive AI Event 5 (A)'),
@@ -16925,12 +16936,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Legion Flak Cannon 23082 - mob_fel_flak_cannon
 -- Ogri'la Keg King c.23110
 ('2311001','23110','1','0','100','1','30000','45000','30000','45000','0','0','5','92','0','0','11','35777','0','2','0','0','0','0','Ogri''la Keg King - Emote and Cast Bloodmaul Intoxication Visual OOC'),
+('2311002','23110','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Ogri''la Keg King - Random Say on Revered Ogri''la Aura Effect Spellhit'),
+-- Mingo 23112
+('2311201','23112','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Mingo - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Doomguard Punisher 23113
 ('2311301','23113','11','0','100','0','0','0','0','0','0','0','11','37816','0','34','0','0','0','0','0','0','0','0','Doomguard Punisher - Cast Shadowform on Spawn'),
 -- Ogri'la Peacekeeper 23115
 ('2311501','23115','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Ogri''la Peacekeeper - Cast Net'),
+('2311502','23115','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Ogri''la Peacekeeper - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Bombing Run Target Bunny 23118
 ('2311801','23118','11','0','100','0','0','0','0','0','0','0','11','40182','0','0','11','40194','0','0','11','40196','0','0','Bombing Run Explosion Bunny - Cast Bombing Run: Summon Bombing Run Explosion Dummy and Bombing Run: Invisibility and Bombing Run: Hunter''s Mark on Spawn'),
+-- Sky Sergeant Vanderlip 23120
+('2312001','23120','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Sky Sergeant Vanderlip - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Bash'ir Surveyor 23153
 ('2315301','23153','11','0','100','0','0','0','0','0','0','0','11','34427','0','0','0','0','0','0','0','0','0','0','Bash''ir Surveyor - Cast Ethereal Teleport on Spawn'),
 ('2315302','23153','0','0','100','1025','18000','28000','21000','29000','0','0','11','40835','4','0','0','0','0','0','0','0','0','0','Bash''ir Surveyor - Cast Stasis Field'),
@@ -16941,6 +16958,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2315402','23154','30','0','100','0','5','19656','0','0','0','0','51','0','0','0','52','3','0','0','0','0','0','0','Mana-debt Slave - Resume Waypoints and Interrupt Channelling on Receive AI Event 5 (A)'),
 -- Crystalfused Miner
 ('2317401','23174','0','0','100','1025','6000','12000','15000','20000','0','0','11','32614','0','0','0','0','0','0','0','0','0','0','Crystalfused Miner - Cast Arcane Explosion'),
+-- Skyguard Pyrotechnician 23208
+('2320801','23208','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Skyguard Pyrotechnician - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Mo'arg Tormenter 23212
 -- Shivan Assassin 23220 - Shartuul
 -- Shivan Assassin (Red) 23474 - NSR
@@ -16948,6 +16967,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shivan Assassin (Black) 23476 - NSR
 -- Eye of Shartuul 23228
 -- Shartuul 23230
+-- Chu'a'lor 23233
+('2323301','23233','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Chu''a''lor - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Skyguard Ranger 23242 - npc_skyguard_ranger
 ('2324201','23242','0','0','100','1025','3000','9000','10000','20000','0','0','11','38618','0','0','0','0','0','0','0','0','0','0','Skyguard Ranger - Cast Whirlwind'),
 -- Slavering Slave
@@ -16959,8 +16980,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bash'ir Flesh Fiend 23249 - npc_bashir_flesh_fiend
 ('2324901','23249','0','0','100','1025','9000','15000','12000','19000','0','0','11','29939','1','32','0','0','0','0','0','0','0','0','Bash''ir Flesh Fiend - Cast Infectious Poison'),
 ('2324902','23249','2','0','100','1025','20','0','31000','31000','0','0','11','29935','4','0','0','0','0','0','0','0','0','0','Bash''ir Flesh Fiend - Cast Gaping Maw at 20% Health'),
+-- Kronk 23253
+('2325301','23253','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Kronk - Random Say on Revered Ogri''la Aura Effect Spellhit'),
+-- Ogri'la Storyteller 23256
+('2325601','23256','8','2','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Ogri''la Storyteller - Random Say on Revered Ogri''la Aura Effect Spellhit (Phase 0)'),
+('2325602','23256','30','0','100','1','5','23256','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Ogri''la Storyteller - Set Phase 1 on Received AI Event 5'),
+('2325603','23256','30','0','100','1','6','23256','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Ogri''la Storyteller - Set Phase 0 on Received AI Event 6'),
 -- Skyguard Windcharger
 ('2325701','23257','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Skyguard Windcharger - Cast Net'),
+('2325702','23257','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Skyguard Windcharger - Random Say on Revered Skyguard Aura Effect Spellhit'),
 -- Furywing 23261
 ('2326101','23261','30','0','100','0','5','23261','0','0','0','0','54','0','11','10083','22','2','0','0','0','0','0','0','Furywing - Random Yell and Set Phase 2 on Receive AI Event 5 (A)'),
 ('2326102','23261','29','3','100','0','2000','2000','0','0','0','0','19','256','0','0','55','11','0','0','22','1','0','0','Furywing - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and Attack Spawner and Set Phase 1 on Generic Timer (Phase 2)'),
@@ -16996,6 +17024,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2328208','23282','0','5','100','1025','5000','7000','20000','30000','0','0','11','40717','0','0','0','0','0','0','0','0','0','0','Obsidia - Cast Hellfire (Phase 1)'),
 ('2328209','23282','6','5','100','0','0','0','0','0','0','0','53','10125','0','0','0','0','0','0','0','0','0','0','Obsidia - Start Relay Script on Death (Phase 1)'),
 ('2328210','23282','21','5','100','0','0','0','0','0','0','0','41','8000','0','0','53','10126','0','0','0','0','0','0','Obsidia - Delayed Despawn and Start Relay Script on Reached Home (Phase 1)'),
+-- Gahk 23300
+('2330001','23300','8','0','50','1','41557','-1','180000','900000','0','0','22','1','0','0','59','6','0','0','53','-10177','6','0','Gahk - Set Phase 1 and Set Facing and Random Say/Random Emote on Revered Ogri''la Aura Effect Spellhit'),
+('2330002','23300','1','1','100','1','6000','6000','6000','6000','0','0','59','0','1','0','22','0','0','0','0','0','0','0','Gahk - Reset Facing and Set Phase 0 OOC (Phase 1)'),
+-- Torkus 23316
+('2331601','23316','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Torkus - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Fel Eye Stalk 23323
 ('2332301','23323','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Fel Eye Stalk - Prevent Movement on Spawn'),
 ('2332302','23323','9','0','100','1025','0','25','9000','10000','0','0','11','40842','1','0','0','0','0','0','0','0','0','0','Fel Eye Stalk - Cast Mind Flay'),
@@ -17004,8 +17037,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2333202','23332','0','0','100','1025','10000','10000','18000','24000','0','0','11','35570','4','0','0','0','0','0','0','0','0','0','Bash''ir Reckoner - Cast Charge'),
 ('2333203','23332','0','0','90','1025','9000','18000','16000','24000','0','0','11','40949','1','0','0','0','0','0','0','0','0','0','Bash''ir Reckoner - Cast Warp'),
 ('2333204','23332','0','0','100','1025','5000','10000','15000','20000','0','0','11','40935','1','0','0','0','0','0','0','0','0','0','Bash''ir Reckoner - Cast Dematerialize Armor'),
+-- Sky Commander Keller 23334
+('2333401','23334','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Sky Commander Keller - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Skyguard Khatie 23335
 ('2333501','23335','10','0','100','1','1','8','5000','5000','1','10120','45','5','20','0','54','0','0','10084','0','0','0','0','Skyguard Khatie - Throw AI Event A and Say OOC at 8 Yards Player With Aura 40926 LOS'),
+('2333502','23335','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Skyguard Khatie - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Wrangled Aether Ray 23343
 ('2334301','23343','29','0','100','0','0','0','0','0','0','0','11','40926','11','0','33','23343','11','0','0','0','0','0','Wrangled Aether Ray - Cast Wrangle Aether Rays: Wrangling Rope Channel and Give Kill Credit on Spawn'),
 ('2334302','23343','30','0','100','0','5','23335','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Wrangled Aether Ray - Forced Despawn on Receive AI Event A'),
@@ -17070,11 +17106,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2339113','23391','6','27','100','0','0','0','0','0','0','0','53','10158','0','0','0','0','0','0','0','0','0','0','Bash''ir - Start Relay Script on Death (Phase 2)'),
 ('2339114','23391','6','23','100','0','0','0','0','0','0','0','53','10159','0','0','0','0','0','0','0','0','0','0','Bash''ir - Start Relay Script on Death (Phase 3)'),
 ('2339115','23391','6','15','100','0','0','0','0','0','0','0','53','10160','0','0','0','0','0','0','0','0','0','0','Bash''ir - Start Relay Script on Death (Phase 4)'),
+-- Skyguard Stable Master 23392
+('2339201','23392','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Skyguard Stable Master - Random Say on Revered Ogri''la Aura Effect Spellhit'),
+-- Skyguard Handler Irena 23413
+('2341301','23413','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Skyguard Handler Irena - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Bash'ir Inquisitor
 ('2341401','23414','4','0','100','0','0','0','0','0','0','0','11','30798','0','0','0','0','0','0','0','0','0','0','Bash''ir Inquisitor - Cast Dual Wield on Aggro'),
 ('2341402','23414','9','0','100','1025','8','20','15000','21000','0','0','11','35570','4','0','0','0','0','0','0','0','0','0','Bash''ir Inquisitor - Cast Charge'),
 ('2341403','23414','0','0','100','1025','10000','15000','18000','26000','0','0','11','33961','0','0','0','0','0','0','0','0','0','0','Bash''ir Inquisitor - Cast Spell Reflection'),
 ('2341404','23414','0','0','100','1025','15000','25000','20000','25000','0','0','11','40935','1','0','0','0','0','0','0','0','0','0','Bash''ir Inquisitor - Cast Dematerialize Armor'),
+-- Jho'nass 23428
+('2342801','23428','8','0','50','1','41557','-1','180000','900000','0','0','54','0','6','10165','0','0','0','0','0','0','0','0','Jho''nass - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Skyguard Lieutenant 23430 - npc_skyguard_lieutenant
 ('2343001','23430','0','0','100','1025','3000','9000','10000','20000','0','0','11','38618','0','0','0','0','0','0','0','0','0','0','Skyguard Lieutenant - Cast Whirlwind'),
 -- Sundered Ghost 24039
@@ -20648,6 +20690,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2299406','22994','0','0','100','0','12000','12000','0','0','0','0','5','0','0','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Remove Emote'),
 ('2299407','22994','0','0','100','1025','25000','25000','30000','30000','0','0','11','40367','1','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Cast Twisting Blast'),
 ('2299408','22994','0','0','100','1025','29000','29000','30000','30000','0','0','11','9613','1','0','0','0','0','0','0','0','0','0','Guardian of the Falcon - Cast Shadow Bolt'),
+-- Skyguard Handler 23016
+('2301601','23016','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Skyguard Handler - Random Say on Revered Skyguard Aura Effect Spellhit'),
 -- Gordunni Soulreaper 23022
 ('2302201','23022','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Gordunni Soulreaper - Enable Range Mode on Aggro'),
 ('2302202','23022','2','0','100','1025','50','0','30000','35000','0','0','11','20743','1','0','0','0','0','0','0','0','0','0','Gordunni Soulreaper - Cast Drain Life at 50% HP'),
@@ -20656,6 +20700,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2302205','23022','0','0','100','1537','0','0','5000','20000','0','0','11','15232','1','256','0','0','0','0','0','0','0','0','Gordunni Soulreaper - Cast Shadow Bolt (Melee Mode)'),
 -- Talonsworn Forest-Rager 23029
 ('2302901','23029','0','0','100','1025','8000','13000','13000','19000','0','0','11','15548','17','0','0','0','0','0','0','0','0','0','Talonsworn Forest-Rager - Cast Thunderclap'),
+-- Sky Sergeant Doryn 23048
+('2304801','23048','8','0','50','1','41575','-1','180000','900000','0','0','22','1','0','0','59','6','0','0','53','-10176','6','0','Sky Sergeant Doryn - Set Phase 1 and Set Facing and Random Emote or Random Say on Revered Skyguard Aura Effect Spellhit'),
+('2304802','23048','1','1','100','1','6000','6000','6000','6000','0','0','59','0','1','0','22','0','0','0','0','0','0','0','Sky Sergeant Doryn - Reset Facing and Set Phase 0 OOC (Phase 1)'),
 -- Monstrous Kaliri
 ('2305101','23051','9','0','100','1025','0','5','11000','14000','0','0','11','31553','1','0','0','0','0','0','0','0','0','0','Monstrous Kaliri - Cast Hamstring'),
 ('2305102','23051','0','0','100','1025','7000','9000','17000','20000','0','0','11','13738','1','0','0','0','0','0','0','0','0','0','Monstrous Kaliri - Cast Rend'),
@@ -20724,7 +20771,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2321903','23219','0','0','100','1025','12000','16000','19000','28000','0','0','11','32920','1','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Cast Warp'),
 ('2321904','23219','0','0','100','1025','8000','18000','15000','24000','0','0','11','32739','4','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Cast Venomous Bite'),
 ('2321905','23219','0','0','100','1025','2000','8000','10000','20000','0','0','11','37417','4','0','0','0','0','0','0','0','0','0','Blackwind Warp Chaser - Cast Warp Charge'),
+-- Grella 23367
+('2336701','23367','8','0','50','1','41575','-1','180000','900000','0','0','22','1','0','0','59','6','0','0','53','-10176','6','0','Grella - Set Phase 1 and Set Facing and Random Emote or Random Say on Revered Ogri''la Aura Effect Spellhit'),
+('2336702','23367','1','1','100','1','6000','6000','6000','6000','0','0','59','0','1','0','22','0','0','0','0','0','0','0','Grella - Reset Facing and Set Phase 0 OOC (Phase 1)'),
 -- Skyguard Prisoner 23383 - npc_skyguard_prisoner
+-- Skyguard Handler Deesak 23415
+('2341501','23415','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Skyguard Handler Deesak - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Hungry Nether Ray 23439 - npc_hungry_nether_ray
 -- Gordunni Proxy 23450
 ('2345001','23450','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Gordunni Proxy - Cast Enrage at 30% HP'),
@@ -32527,7 +32579,73 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11058','Take that!','0','0','0','0','12544','17944'),
 ('-11059','Ehrin''delumina shorinel!','0','0','0','0','18523','17945'),
 ('-11060','Begone forever!','0','0','0','0','18524','17945'),
--- -11061 - -11124 - reserved
+-- -11061 - -11124 - reserved,
+
+
+('-11061','$n is our $g hero : heroine;!','0','0','0','0',21841,'Ogri''la Revered Aura Reaction'),
+('-11062','$n! The crystals sing your praises!','0','0','0','0',21929,'Ogri''la Revered Aura Reaction'),
+('-11063','$n, $g king : queen; of the ogres, is here!','0','0','0','0',21839,'Ogri''la Revered Aura Reaction'),
+('-11064','$n, how are you today?','0','0','0','0',21842,'Ogri''la Revered Aura Reaction'),
+('-11065','$n, how are you?','0','0','0','0',21844,'Ogri''la Revered Aura Reaction'),
+('-11066','$n, how many hundreds of demons have you banished?','0','0','0','0',21847,'Ogri''la Revered Aura Reaction'),
+('-11067','$n, slay any dragons today?','0','0','0','0',21835,'Ogri''la Revered Aura Reaction'),
+('-11068','Hey look, it''s $n!','0','0','0','0',21834,'Ogri''la Revered Aura Reaction'),
+('-11069','If it weren''t for $n, where would we be now?','0','0','0','0',21846,'Ogri''la Revered Aura Reaction'),
+('-11070','It''s $n, mighty $c and $g brother : sister; to ogres everywhere!','0','0','0','0',21946,'Ogri''la Revered Aura Reaction'),
+('-11071','Now that $n is here, we won''t need to worry about the Burning Legion any longer.','0','0','0','0',21838,'Ogri''la Revered Aura Reaction'),
+('-11072','Thank you for helping us, $n.','0','0','0','0',21840,'Ogri''la Revered Aura Reaction'),
+('-11073','The crystals sing a sweeter song when $n is around.','0','0','0','0',21926,'Ogri''la Revered Aura Reaction'),
+('-11074','The gronn... the Legion... is there nothing you can''t handle, $n?','0','0','0','0',21925,'Ogri''la Revered Aura Reaction'),
+('-11075','Three cheers for $n!','0','0','0','0',21843,'Ogri''la Revered Aura Reaction'),
+('-11076','Truly $n has been enlightened by the crystals.','0','0','0','0',21928,'Ogri''la Revered Aura Reaction'),
+('-11077','We are honored by your presence, little $g brother : sister; $n.','0','0','0','0',21836,'Ogri''la Revered Aura Reaction'),
+('-11078','We hear that the dragons tremble in fear at the mere mention of $n.','0','0','0','0',21927,'Ogri''la Revered Aura Reaction'),
+('-11079','We heard that $n figured out how to use the apexis relics and monuments!','0','0','0','0',21848,'Ogri''la Revered Aura Reaction'),
+('-11080','We heard that $n single-handedly took out a forge camp!','0','0','0','0',21837,'Ogri''la Revered Aura Reaction'),
+('-11081','We hope you''re staying for a while, $n.  Stop by later and we''ll catch up on old times.','0','0','0','0',21845,'Ogri''la Revered Aura Reaction'),
+('-11082','We owe you a debt of gratitude $n.','0','0','0','0',21930,'Ogri''la Revered Aura Reaction'),
+('-11083','We still stand here only because of $n''s help.','0','0','0','0',21945,'Ogri''la Revered Aura Reaction'),
+('-11084','You could all learn a lot from $n!','0','0','0','0',21849,'Ogri''la Revered Aura Reaction'),
+('-11085','Yous all listen ta $n!','0','0','0','0',21869,'Gahk c.23300 Revered Aura Reaction'),
+('-11086','We glad, little $g brother : sister; $n here.','0','0','0','0',21856,'Gahk c.23300 Revered Aura Reaction'),
+('-11087','Look, it $n!','0','0','0','0',21854,'Gahk c.23300 Revered Aura Reaction'),
+('-11088','Little $n crush all da demons.','0','0','0','0',21867,'Gahk c.23300 Revered Aura Reaction'),
+('-11089','How $n today?','0','0','0','0',21862,'Gahk c.23300 Revered Aura Reaction'),
+('-11090','Gahk owe little $n much thanks.','0','0','0','0',21936,'Gahk c.23300 Revered Aura Reaction'),
+('-11091','Gahk like $n!','0','0','0','0',21863,'Gahk c.23300 Revered Aura Reaction'),
+('-11092','Gahk hope $n stay a while.  $n visit Gahk later.','0','0','0','0',21865,'Gahk c.23300 Revered Aura Reaction'),
+('-11093','Da Gronn... da Legion... $n beat dem all!','0','0','0','0',21931,'Gahk c.23300 Revered Aura Reaction'),
+('-11094','Da dragons get scared when yous say $n''s name.','0','0','0','0',21933,'Gahk c.23300 Revered Aura Reaction'),
+('-11095','Da crystals sing da perdy song when little $n here.','0','0','0','0',21932,'Gahk c.23300 Revered Aura Reaction'),
+('-11096','Da crystals make $n smarter.','0','0','0','0',21934,'Gahk c.23300 Revered Aura Reaction'),
+('-11097','$n, slay dragon?','0','0','0','0',21855,'Gahk c.23300 Revered Aura Reaction'),
+('-11098','$n, Gahk''s friend.','0','0','0','0',21864,'Gahk c.23300 Revered Aura Reaction'),
+('-11099','$n!  Da crystals sing about you!','0','0','0','0',21935,'Gahk c.23300 Revered Aura Reaction'),
+('-11100','$n take out forge camp all by $g himself : herself;!','0','0','0','0',21857,'Gahk c.23300 Revered Aura Reaction'),
+('-11101','$n here... we not worry ''bout Burning Legion any more.','0','0','0','0',21858,'Gahk c.23300 Revered Aura Reaction'),
+('-11102','$n da mighty $c is my little $g brother : sister;!','0','0','0','0',21948,'Gahk c.23300 Revered Aura Reaction'),
+('-11103','Thanks, $n.','0','0','0','0',21860,'Gahk c.23300 Revered Aura Reaction'),
+('-11104','$G Mister : Lady; $n, what an unexpected pleasure, $g sir : ma''am;.','0','0','0','0',21890,'Skyguard Revered Aura Reaction'),
+('-11105','$n is an officer and a $g gentleman : gentlewoman;.','0','0','0','0',21940,'Skyguard Revered Aura Reaction'),
+('-11106','$n, do you feel the need -- the need for speed?','0','0','0','0',21886,'Skyguard Revered Aura Reaction'),
+('-11107','$n, how''s your mount holding up?  Pretty rough up there these days?','0','0','0','0',21897,'Skyguard Revered Aura Reaction'),
+('-11108','$n, you are the Skyguard''s best; make us proud!','0','0','0','0',21944,'Skyguard Revered Aura Reaction'),
+('-11109','Ace pilot $n, 12 o''clock!','0','0','0','0',21941,'Skyguard Revered Aura Reaction'),
+('-11110','A-TEN-HUT, officer $n on the deck!','0','0','0','0',21891,'Skyguard Revered Aura Reaction'),
+('-11111','Buzz the landing pad lately, $n?','0','0','0','0',21889,'Skyguard Revered Aura Reaction'),
+('-11112','Good hunting up there, $n!','0','0','0','0',21888,'Skyguard Revered Aura Reaction'),
+('-11113','Heh, the skies aren''t so friendly with $n flying them!','0','0','0','0',21895,'Skyguard Revered Aura Reaction'),
+('-11114','Hey, it''s our ace flyer, $n!','0','0','0','0',21883,'Skyguard Revered Aura Reaction'),
+('-11115','I heard that $n is gunning to be the captain of the air group.','0','0','0','0',21884,'Skyguard Revered Aura Reaction'),
+('-11116','I''d be honored to have you on my wing anytime, $n.','0','0','0','0',21943,'Skyguard Revered Aura Reaction'),
+('-11117','Look who''s here.  It''s $n, our top gun.','0','0','0','0',21885,'Skyguard Revered Aura Reaction'),
+('-11118','Maybe one day $n will teach us a few of $g his : her; tricks?','0','0','0','0',21942,'Skyguard Revered Aura Reaction'),
+('-11119','Rider $n, good to see you.','0','0','0','0',21882,'Skyguard Revered Aura Reaction'),
+('-11120','The list of Skyguard members is long and distinguished.  $n tops that list.','0','0','0','0',21939,'Skyguard Revered Aura Reaction'),
+('-11121','They say that $n has never been shot down.','0','0','0','0',21894,'Skyguard Revered Aura Reaction'),
+('-11122','Well one thing''s for sure, $n''s not a nugget any more!','0','0','0','0',21896,'Skyguard Revered Aura Reaction'),
+('-11123','Well, if it isn''t our resident $g flyboy : flygirl;, $n.  How''s it going, ace?','0','0','0','0',21898,'Skyguard Revered Aura Reaction'),
+('-11124','With $n on the job, we have nothing to worry about.','0','0','0','0',21892,'Skyguard Revered Aura Reaction'),
 ('-11125','You dare imprison me? You will die!','0','1','0','0','19831','Akkiris Lightning-Waker 20908'),
 ('-11126','You are... nothing!','0','1','0','0','19832','Akkiris Lightning-Waker 20908'),
 ('-11127','You shall be consumed by flame!','0','1','0','0','19833','Sulfuron Magma-Thrower 20909'),
@@ -33024,7 +33142,70 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10163,0,-11203,0,'23390 - Random Say'),
 (10164,0,-11204,0,'23391 - Random Say'),
 (10164,0,-11205,0,'23391 - Random Say'),
--- 10165-10167 reserved
+(10165,0,-11061,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11062,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11063,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11064,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11065,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11066,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11067,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11068,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11069,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11070,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11071,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11072,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11073,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11074,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11075,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11076,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11077,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11078,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11079,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11080,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11081,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11082,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11083,0,'Ogri''la Revered Aura Reaction'),
+(10165,0,-11084,0,'Ogri''la Revered Aura Reaction'),
+(10166,0,-11085,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11086,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11087,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11088,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11089,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11090,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11091,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11092,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11093,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11094,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11095,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11096,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11097,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11098,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11099,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11100,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11101,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11102,0,'Gahk c.23300 Revered Aura Reaction'),
+(10166,0,-11103,0,'Gahk c.23300 Revered Aura Reaction'),
+(10167,0,-11104,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11105,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11106,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11107,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11108,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11109,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11110,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11111,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11112,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11113,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11114,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11115,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11116,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11117,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11118,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11119,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11120,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11121,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11122,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11123,0,'Skyguard Revered Aura Reaction'),
+(10167,0,-11124,0,'Skyguard Revered Aura Reaction'),
 (10168,0,-11153,0,'23223 - Random OOC Texts'),
 (10168,0,-11154,0,'23223 - Random OOC Texts'),
 (10168,0,-11155,0,'23223 - Random OOC Texts'),
