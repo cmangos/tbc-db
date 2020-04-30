@@ -4,6 +4,7 @@ DBScriptName: instance_steam_vault
 DB%Complete: 90
 DBComment:
 * Dreghood Slave Post RP Event - Movement
+@CGUID+177 stops at point 2 instead of 3 due to unknown reasons
 EndDBScriptData */
 
 SET @CGUID := 5450000; -- creatures
@@ -286,9 +287,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+21, @CGUID+74, 1167), -- Coilfang Engineer -> Coilfang Myrmidon
 (@CGUID+22, @CGUID+74, 1167), -- Coilfang Engineer -> Coilfang Myrmidon
 (@CGUID+39, @CGUID+74, 1167), -- Coilfang Sorceress -> Coilfang Myrmidon
-(@CGUID+174, @CGUID+177, 1679), -- Coilfang Engineer -> Coilfang Myrmidon
-(@CGUID+175, @CGUID+177, 1679), -- Coilfang Engineer -> Coilfang Myrmidon
-(@CGUID+176, @CGUID+177, 1679), -- Coilfang Sorceress -> Coilfang Myrmidon
+(@CGUID+174, @CGUID+177, 1167), -- Coilfang Engineer -> Coilfang Myrmidon
+(@CGUID+175, @CGUID+177, 1167), -- Coilfang Engineer -> Coilfang Myrmidon
+(@CGUID+176, @CGUID+177, 1167), -- Coilfang Sorceress -> Coilfang Myrmidon
 (@CGUID+38, @CGUID+72, 1167), -- Coilfang Sorceress -> Coilfang Myrmidon
 (@CGUID+82, @CGUID+72, 1167), -- Coilfang Siren -> Coilfang Myrmidon
 (@CGUID+109, @CGUID+72, 1167), -- Coilfang Oracle -> Coilfang Myrmidon
