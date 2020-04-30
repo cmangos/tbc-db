@@ -28472,7 +28472,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grandmother (17603) - npc_grandmother
 -- Infernal Target 17644 - npc_infernal_target
 -- Infernal Relay 17645 - npc_infernal_relay
--- Netherspite Infernal 17646 - NullAI
+-- Netherspite Infernal 17646
+('1764601','17646','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Netherspite Infernal - Set ReactState Passive on Spawn'),
+('1764602','17646','29','0','100','0','4000','5000','0','0','0','0','11','30859','0','34','0','0','0','0','0','0','0','0','Netherspite Infernal - Cast Hellfire on Generic Timer'),
 -- Prince Malchezaar's Axes 17650
 ('1765001','17650','0','0','100','1','10000','10000','10000','10000','0','0','14','-100','0','0','13','1000000','8','1','0','0','0','0','Prince Malchezaar''s Axes - Reset Threat and Attack New Target'),
 -- Image of Medivh (17651) - npc_image_of_medivh
