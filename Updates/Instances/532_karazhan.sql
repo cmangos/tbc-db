@@ -1003,18 +1003,20 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (15690, 0, 8, -10966.6, -2022.58, 275.275, 0, 0, 0),
 (15690, 0, 9, -10948.3, -2023.49, 275.584, 0, 0, 0),
 (15690, 0, 10, -10933.5, -2017.54, 275.742, 0, 0, 0),
-(15691, 0, 1, -11173.1, -1901.89, 165.766, 2.24672, 0, 0),
-(15691, 0, 2, -11191.4, -1878.79, 153.672, 2.22708, 0, 0),
-(15691, 0, 3, -11194.1, -1875.5, 153.544, 2.18781, 0, 0),
-(15691, 0, 4, -11191, -1879.08, 153.846, 5.40009, 0, 0),
-(15691, 0, 5, -11172.9, -1902.04, 165.766, 5.37653, 0, 0),
-(15691, 0, 6, -11168.4, -1907.76, 165.766, 0.851978, 0, 0),
-(15691, 0, 7, -11136.8, -1882.43, 165.766, 0.632851, 0, 0),
-(15691, 0, 8, -11120.4, -1869.84, 165.766, 0.715318, 0, 0),
-(15691, 0, 9, -11104.6, -1856.86, 165.766, 0.664268, 0, 0),
-(15691, 0, 10, -11120, -1869.51, 165.766, 3.81371, 0, 0),
-(15691, 0, 11, -11136.7, -1882.52, 165.766, 3.80193, 0, 0),
-(15691, 0, 12, -11168.8, -1908.21, 165.766, 3.83335, 0, 0),
+(15691, 0, 1, -11194.23, -1875.336, 153.5438, 100, 0, 0),
+(15691, 0, 2, -11184.44, -1887.795, 158.3639, 100, 0, 0),
+(15691, 0, 3, -11174.51, -1900.141, 164.9139, 100, 0, 0),
+(15691, 0, 4, -11169.11, -1908.556, 165.7654, 100, 0, 0),
+(15691, 0, 5, -11153.45, -1896.067, 165.7654, 100, 0, 0),
+(15691, 0, 6, -11137.02, -1882.737, 165.7654, 100, 0, 0),
+(15691, 0, 7, -11120.71, -1870.045, 165.7654, 100, 0, 0),
+(15691, 0, 8, -11104.56, -1856.968, 165.7654, 100, 0, 0),
+(15691, 0, 9, -11120.71, -1870.045, 165.7654, 100, 0, 0),
+(15691, 0, 10, -11137.02, -1882.737, 165.7654, 100, 0, 0),
+(15691, 0, 11, -11153.45, -1896.067, 165.7654, 100, 0, 0),
+(15691, 0, 12, -11169.11, -1908.556, 165.7654, 100, 0, 0),
+(15691, 0, 13, -11174.51, -1900.141, 164.9139, 100, 0, 0),
+(15691, 0, 14, -11184.44, -1887.795, 158.3639, 100, 0, 0),
 (16159, 0, 1, -11096.7, -1928.49, 49.8893, 0, 0, 0),
 (16159, 0, 2, -11097.4, -1933.38, 49.8893, 0, 0, 0),
 (16159, 0, 3, -11103.4, -1941.87, 49.8893, 0, 0, 0),
@@ -1304,40 +1306,40 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (22524, 0, 0, 1, 0, 0, 0, NULL); -- Karazhan - Chess, Victory Controller
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+119, @CGUID+144, 1024), -- Spectral Charger -> Midnight
+(@CGUID+119, @CGUID+144, 1025), -- Spectral Charger -> Midnight
 (@CGUID+118, @CGUID+122, 1167), -- Spectral Charger -> Spectral Stallion
-(@CGUID+122, @CGUID+144, 1024), -- Spectral Stallion -> Midnight
+(@CGUID+122, @CGUID+144, 1025), -- Spectral Stallion -> Midnight
 (@CGUID+129, @CGUID+136, 1679), -- Spectral Stallion -> Spectral Stable Hand
-(@CGUID+136, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
+(@CGUID+136, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
 (@CGUID+123, @CGUID+126, 1167), -- Spectral Stallion -> Spectral Stallion
-(@CGUID+126, @CGUID+144, 1024), -- Spectral Stallion -> Midnight
-(@CGUID+133, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
+(@CGUID+126, @CGUID+144, 1025), -- Spectral Stallion -> Midnight
+(@CGUID+133, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
 (@CGUID+128, @CGUID+115, 1167), -- Spectral Stallion -> Spectral Charger
-(@CGUID+115, @CGUID+144, 1024), -- Spectral Charger -> Midnight
+(@CGUID+115, @CGUID+144, 1025), -- Spectral Charger -> Midnight
 (@CGUID+127, @CGUID+134, 1167), -- Spectral Stallion -> Spectral Stable Hand
-(@CGUID+134, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
-(@CGUID+135, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
+(@CGUID+134, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
+(@CGUID+135, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
 (@CGUID+117, @CGUID+125, 1167), -- Spectral Charger -> Spectral Stallion
-(@CGUID+125, @CGUID+144, 1024), -- Spectral Stallion -> Midnight
+(@CGUID+125, @CGUID+144, 1025), -- Spectral Stallion -> Midnight
 (@CGUID+137, @CGUID+138, 1167), -- Spectral Stable Hand -> Spectral Stable Hand
 (@CGUID+120, @CGUID+138, 1167), -- Spectral Charger -> Spectral Stable Hand
 (@CGUID+121, @CGUID+138, 1167), -- Spectral Charger -> Spectral Stable Hand
-(@CGUID+138, @CGUID+144, 1024), -- Spectral Stable Hand -> Midnight
+(@CGUID+138, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
 (@CGUID+130, @CGUID+116, 1167), -- Spectral Stable Hand -> Spectral Charger
 (@CGUID+131, @CGUID+116, 1167), -- Spectral Stable Hand -> Spectral Charger
 (@CGUID+132, @CGUID+116, 1167), -- Spectral Stable Hand -> Spectral Charger
 (@CGUID+124, @CGUID+116, 1167), -- Spectral Stallion -> Spectral Charger
-(@CGUID+116, @CGUID+144, 1024), -- Spectral Charger -> Midnight
+(@CGUID+116, @CGUID+144, 1025), -- Spectral Charger -> Midnight
 (@CGUID+212, @CGUID+208, 1167), -- Spectral Apprentice -> Spectral Apprentice
 (@CGUID+213, @CGUID+208, 1167), -- Spectral Apprentice -> Spectral Apprentice
 (@CGUID+239, @CGUID+208, 1167), -- Spectral Servant -> Spectral Apprentice
 (@CGUID+240, @CGUID+208, 1167), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+208, @CGUID+144, 1024), -- Spectral Apprentice -> Midnight
+(@CGUID+208, @CGUID+144, 1025), -- Spectral Apprentice -> Midnight
 (@CGUID+210, @CGUID+209, 1167), -- Spectral Apprentice -> Spectral Apprentice
 (@CGUID+211, @CGUID+209, 1167), -- Spectral Apprentice -> Spectral Apprentice
 (@CGUID+241, @CGUID+209, 1167), -- Spectral Servant -> Spectral Apprentice
 (@CGUID+242, @CGUID+209, 1167), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+209, @CGUID+144, 1024), -- Spectral Apprentice -> Midnight
+(@CGUID+209, @CGUID+144, 1025), -- Spectral Apprentice -> Midnight
 (@CGUID+276, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+279, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+280, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
@@ -1860,9 +1862,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+201, @CGUID+202, 1679); -- Phase Hound -> Phase Hound
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(15547, 532, 15550, 1024, 200), -- Spectral Charger -> Attumen the Huntsman
-(15548, 532, 15550, 1024, 200), -- Spectral Stallion -> Attumen the Huntsman
-(15551, 532, 15550, 1024, 200), -- Spectral Stable Hand -> Attumen the Huntsman
 (16389, 532, 15687, 1024, 300), -- Spectral Apprentice -> Moroes
 (16406, 532, 15687, 1024, 300), -- Phantom Attendant -> Moroes
 (16407, 532, 15687, 1024, 300), -- Spectral Servant -> Moroes
@@ -2036,7 +2035,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+140, 15688, 532, 1, -11240.61, -1704.266, 179.3202, 0.6632251, 604800, 604800, 0, 0, 0, 0), -- Terestian Illhoof
 (@CGUID+141, 15689, 532, 1, -11089.4, -1615.26, 279.362, 3.60391, 604800, 604800, 0, 0, 0, 2), -- Netherspite
 (@CGUID+142, 15690, 532, 1, -10926.3, -2011.54, 275.686, 1.05809, 604800, 604800, 0, 0, 0, 2), -- Prince Malchezaar
-(@CGUID+143, 15691, 532, 1, -11196.2, -1872.98, 153.551, 2.22801, 604800, 604800, 0, 0, 0, 2), -- The Curator
+(@CGUID+143, 15691, 532, 1, -11194.23, -1875.336, 153.5438, 2.22801, 604800, 604800, 0, 0, 0, 2), -- The Curator
 (@CGUID+144, 16151, 532, 1, -11126.3, -1929.11, 49.329, 1.69297, 604800, 604800, 0, 0, 0, 0), -- Midnight
 (@CGUID+145, 16153, 532, 1, -11060.2, -1967.07, 53.1487, 3.33358, 7200, 7200, 0, 0, 0, 0), -- Berthold
 (@CGUID+146, 16159, 532, 1, -11097.1, -1932.95, 49.8893, 1.46162, 7200, 7200, 0, 0, 0, 2), -- Calliard
