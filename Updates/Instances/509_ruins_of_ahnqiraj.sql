@@ -945,7 +945,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+196, 49, -9320.13, 1941.71, 85.652, 0, 0, 0),
 (@CGUID+196, 50, -9334.3, 1916.92, 85.6798, 0, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- Ayamiss the Hunter - Landing Path
+(15369, 1, 0, -9689.981, 1548.296, 33.27733, 100, 0, 0),
+(15369, 1, 1, -9682.716, 1554.252, 31.41621, 100, 0, 0),
+(15369, 1, 2, -9677.917, 1558.839, 27.24953, 100, 1000, 0);
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 
@@ -1536,12 +1540,6 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-
--- ayamiss landing path
-INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(15369,1,0,-9689.981,1548.296,33.27733,0,0,100),
-(15369,1,1,-9682.716,1554.252,31.41621,0,0,100),
-(15369,1,2,-9677.917,1558.839,27.24953,1000,0,100);
 
 -- =========
 -- DBSCRIPTS
