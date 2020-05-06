@@ -26213,7 +26213,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2090804','20908','0','0','100','1025','3000','8000','16000','21000','0','0','11','36912','0','0','13','-80','1','0','0','0','0','0','Akkiris Lightning-Waker - Cast Lightning Jump and Reduce Threat of Top Threat Target'),
 ('2090805','20908','0','0','100','1027','5000','9000','8000','12000','0','0','11','36915','0','0','0','0','0','0','0','0','0','0','Akkiris Lightning-Waker (Normal) - Cast Lightning Discharge'),
 ('2090806','20908','0','0','100','1029','5000','9000','8000','12000','0','0','11','39028','0','0','0','0','0','0','0','0','0','0','Akkiris Lightning-Waker (Heroic) - Cast Lightning Discharge'),
-('2090807','20908','0','0','100','1025','16000','23000','75000','90000','0','0','11','36914','4','0','0','0','0','0','0','0','0','0','Akkiris Lightning-Waker - Cast Lightning-Waker''s Curse'),
+('2090807','20908','0','0','100','1025','16000','23000','75000','90000','0','0','11','36914','4','512','0','0','0','0','0','0','0','0','Akkiris Lightning-Waker - Cast Lightning-Waker''s Curse'),
 ('2090808','20908','8','0','100','1','0','127','30000','30000','0','0','11','19714','0','1','0','0','0','0','0','0','0','0','Akkiris Lightning-Waker - Cast Magic Grounding on Spell Hit'),
 ('2090809','20908','13','0','100','1025','10000','10000','0','0','0','0','11','32691','1','0','0','0','0','0','0','0','0','0','Akkiris Lightning-Waker - Cast Spell Shock on Target Casting'),
 -- Sulfuron Magma-Thrower 20909
