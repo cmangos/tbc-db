@@ -31389,7 +31389,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1141','%s squeezes the last bit of life out of $n and swallows their soul.','0','2','0','0','11270','15625'),
 -- Classic PLEASE RE-USE 1142 - 1192
 ('-1193','Ramstein hunger for flesh!','0','1','0','0','6425','10439'),
-('-1194','Emperor Thaurissan does not wish to be disturbed! Turn back now or face your doom, weak mortals!','0','1','0','0','5430','9938'),
+-- Classic PLEASE RE-USE 1194
 ('-1195','Prepare to be Malowned!','0','1','0','0','6504','11143'),
 ('-1196','You''ve been MALOWNED!','0','1','0','0','6530','11143'),
 ('-1197','TIMMY!','0','1','0','0','6150','10808'),
