@@ -24316,6 +24316,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1652303','16523','6','0','100','2','0','0','0','0','0','0','11','36023','1','7','0','0','0','0','0','0','0','0','Shattered Hand Savage (Normal) - Cast Deathblow on Death'),
 ('1652304','16523','6','0','100','4','0','0','0','0','0','0','11','36054','1','7','0','0','0','0','0','0','0','0','Shattered Hand Savage (Heroic) - Cast Deathblow on Death'),
 ('1652305','16523','30','0','100','1','5','16700','0','0','0','0','4','1319','0','0','5','36','0','0','0','0','0','0','Shattered Hand Savage - Emote and Play Sound on Receive AI Event A'),
+('1652306','16523','6','0','100','0','0','0','0','0','0','0','60','6','00','0','0','0','0','0','0','0','0','0','Shattered Hand Savage - Send AI Event B on Death'),
 -- Shattered Hand Brawler 16593
 ('1659301','16593','4','0','100','0','0','0','0','0','0','0','11','8876','0','34','28','0','16093','0','0','0','0','0','Shattered Hand Brawler - Cast Thrash and Remove Self Visual - Sleep Until Cancelled (DND) on Aggro'),
 ('1659302','16593','9','0','100','1025','0','5','12000','21000','0','0','11','36020','1','32','13','100','1','0','0','0','0','0','Shattered Hand Brawler - Cast Curse of Shattered Hand'),
@@ -24337,11 +24338,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1669901','16699','9','0','100','1025','0','5','5000','9000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Cast Cleave'),
 ('1669902','16699','0','0','100','1025','8000','12000','9000','13000','0','0','11','30471','1','0','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Cast Uppercut'),
 ('1669903','16699','2','0','100','1025','30','0','120000','120000','0','0','11','30485','0','0','1','-106','0','0','0','0','0','0','Shattered Hand Reaver - Cast Enrage at 30% HP'),
--- Shattered Hand Legionnaire 16700
-('1670001','16700','1','0','100','1','0','0','240000','240000','0','0','11','30472','0','0','0','0','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Aura of Discipline OOC'),
-('1670002','16700','2','0','100','1024','30','0','0','0','0','0','11','30485','0','32','0','0','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Enrage on 30% HP'),
-('1670003','16700','30','0','100','1025','6','17420','0','0','0','0','11','30485','0','0','1','-550','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Enrage and Say on Receive AI Event B'),
-('1670004','16700','13','0','100','1025','15000','15000','0','0','0','0','11','15615','1','0','0','0','0','0','0','0','0','0','Shattered Hand Legionnaire - Cast Pummel on Target Casting'),
+-- Shattered Hand Legionnaire 16700 - mob_shattered_hand_legionnaire
 -- Shattered Hand Sharpshooter 16704
 ('1670401','16704','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Shattered Hand Sharpshooter - Enable Range Mode on Aggro'),
 ('1670402','16704','9','0','100','1025','5','30','10000','14000','0','0','11','37551','16','544','0','0','0','0','0','0','0','0','Shattered Hand Sharpshooter - Cast Viper Sting'),
@@ -24365,7 +24362,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1742002','17420','0','0','100','1029','6000','13000','10000','12000','0','0','11','35949','1','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen (Heroic) - Cast Bloodthirst'),
 ('1742003','17420','2','0','100','1025','30','0','120000','120000','0','0','11','30485','0','0','1','-106','0','0','0','0','0','0','Shattered Hand Heathen - Cast Enrage at 30% HP'),
 ('1742004','17420','30','0','100','1','5','16700','0','0','0','0','4','1319','0','0','5','36','0','0','0','0','0','0','Shattered Hand Heathen - Emote and Play Sound on Receive AI Event A'),
-('1742005','17420','6','0','50','0','0','0','0','0','0','0','45','6','50','0','5','36','0','0','0','0','0','0','Shattered Hand Heathen - Send AI Event B on Death'),
+('1742005','17420','6','0','100','0','0','0','0','0','0','0','60','6','00','0','5','36','0','0','0','0','0','0','Shattered Hand Heathen - Send AI Event B on Death'),
 ('1742006','17420','30','0','100','1','7','16700','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen - Bow Emote on Receive AI Event C'),
 ('1742007','17420','30','0','100','1','8','16700','0','0','0','0','5','71','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen - Cheer Emote on Receive AI Event D'),
 -- Shattered Hand Archer 17427
