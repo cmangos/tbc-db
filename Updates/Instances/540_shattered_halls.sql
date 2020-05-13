@@ -475,15 +475,10 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+52, @CGUID+53, 1167), -- Shattered Hand Sentry -> Shattered Hand Sentry
 
 -- Hall of the Fathers - first room
-(@CGUID+219, @CGUID+139, 1167), -- Shadowmoon Darkcaster -> Shattered Hand Heathen
-(@CGUID+67, @CGUID+142, 1167), -- Shadowmoon Acolyte -> Shattered Hand Heathen
-(@CGUID+220, @CGUID+141, 1167), -- Shadowmoon Darkcaster -> Shattered Hand Heathen
-(@CGUID+66, @CGUID+140, 1167), -- Shadowmoon Acolyte -> Shattered Hand Heathen
-
 (@CGUID+139, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+140, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+141, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+142, @CGUID+7, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+142, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+219, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+67, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+220, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
@@ -491,7 +486,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+305, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+306, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+307, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
-(@CGUID+308, @CGUID+7, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+308, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 
 (@CGUID+54, @CGUID+55, 1167), -- Shattered Hand Sentry -> Shattered Hand Sentry
 (@CGUID+79, @CGUID+75, 1167), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
