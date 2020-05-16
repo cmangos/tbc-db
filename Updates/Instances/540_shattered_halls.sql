@@ -1038,7 +1038,7 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 (@CGUID+300, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
 (@CGUID+301, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
 (@CGUID+302, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+303, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)');
+(@CGUID+303, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
 (@CGUID+219, @PGUID+3, 0, 'Shattered Halls - creature_spawn_entry - Group 1'),
 (@CGUID+139, @PGUID+3, 0, 'Shattered Halls - creature_spawn_entry - Group 1'),
 (@CGUID+309, @PGUID+3, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 1'),
@@ -1062,7 +1062,7 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 (@CGUID+310, @PGUID+12, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 4'),
 (@CGUID+322, @PGUID+13, 0, 'Shattered Halls - creature_spawn_entry - Group 4'),
 (@CGUID+323, @PGUID+13, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 4'),
-(@CGUID+324, @PGUID+13, 0, 'Shattered Halls - creature_spawn_entry - Group 4'),
+(@CGUID+324, @PGUID+13, 0, 'Shattered Halls - creature_spawn_entry - Group 4');
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
