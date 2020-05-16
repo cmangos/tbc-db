@@ -487,6 +487,18 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+306, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+307, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+308, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+313, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+314, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+315, @CGUID+77, 1024), -- -- -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+316, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+317, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+318, @CGUID+77, 1024), -- -- -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+319, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+320, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+321, @CGUID+77, 1024), -- -- -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+322, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+323, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+324, @CGUID+77, 1024), -- -- -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+54, @CGUID+55, 1167), -- Shattered Hand Sentry -> Shattered Hand Sentry
 (@CGUID+79, @CGUID+75, 1167), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
 (@CGUID+80, @CGUID+75, 1167), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
@@ -618,7 +630,15 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+262, 16523), (@CGUID+262, 16699), -- Shattered Hand Savage, Shattered Hand Reaver
 (@CGUID+265, 16523), (@CGUID+265, 16593), -- Shattered Hand Savage, Shattered Hand Brawler
 (@CGUID+267, 16523), (@CGUID+267, 16699), (@CGUID+267, 17420), -- Shattered Hand Savage, Shattered Hand Reaver, Shattered Hand Heathen
-(@CGUID+274, 16523), (@CGUID+274, 16699); -- Shattered Hand Savage, Shattered Hand Reaver
+(@CGUID+274, 16523), (@CGUID+274, 16699), -- Shattered Hand Savage, Shattered Hand Reaver
+(@CGUID+313, 16523), (@CGUID+313, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
+(@CGUID+314, 16593), (@CGUID+314, 16594), (@CGUID+314, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+316, 16523), (@CGUID+316, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
+(@CGUID+318, 16593), (@CGUID+318, 16594), (@CGUID+318, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+320, 16523), (@CGUID+320, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
+(@CGUID+319, 16593), (@CGUID+319, 16594), (@CGUID+319, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+322, 16523), (@CGUID+322, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
+(@CGUID+324, 16593), (@CGUID+324, 16594); (@CGUID+324, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 2110, 540, 3, 115.869, 223.215, -47.7406, 1.51629, 900, 900, 5, 0, 0, 1), -- Black Rat
@@ -933,12 +953,24 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+305, 17420, 540, 2, 83.755, 57.2887, -13.114, 3.15, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
 (@CGUID+306, 17420, 540, 2, 53.5243, 60.0879, -13.0071, 0, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
 (@CGUID+307, 17420, 540, 2,  90.0297, 57.4987, -13.1003, 3.261756, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
-(@CGUID+308, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 0, 0, 2); -- Shattered Hand Heathen
+(@CGUID+308, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
 -- Hall of the Fathers, random between Shattered Hand Heathen in heroic mode only
 (@CGUID+309, 17420, 540, 2, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+310, 17420, 540, 2, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+311, 17420, 540, 2, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+312, 17420, 540, 2, 63.3135, 84.0945, -13.1156, 4.66003, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
+(@CGUID+313, 0, 540, 3, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+314, 0, 540, 1, 56.461, 79.2481, -13.0995, 5.46288, 7200, 7200, 0, 0, 0, 0),  -- creature_spawn_entry
+(@CGUID+315, 17420, 540, 2, 56.461, 79.2481, -13.0995, 5.46288, 7200, 7200, 0, 0, 0, 0),  -- Shattered Hand Heathen
+(@CGUID+316, 0, 540, 1, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+317, 17420, 540, 2, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
+(@CGUID+318, 0, 540, 3, 63.3135, 84.0945, -13.1156, 4.66003, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+319, 0, 540, 3, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+320, 17420, 540, 2, 77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+321, 0, 540, 1, 77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
+(@CGUID+322, 0, 540, 1, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+323, 0, 540, 1, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+324, 17420, 540, 2, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0); -- Shattered Hand Heathen
 
 -- ===========
 -- GAMEOBJECTS
@@ -968,10 +1000,30 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+3, @PGUID+2, 0, 'Shattered Halls - Halls of Father Group 1'),
+(@PGUID+4, @PGUID+2, 0, 'Shattered Halls - Halls of Father Group 1'),
+(@PGUID+6, @PGUID+5, 0, 'Shattered Halls - Halls of Father Group 2'),
+(@PGUID+7, @PGUID+5, 0, 'Shattered Halls - Halls of Father Group 2'),
+(@PGUID+9, @PGUID+8, 0, 'Shattered Halls - Halls of Father Group 3'),
+(@PGUID+10, @PGUID+8, 0, 'Shattered Halls - Halls of Father Group 3'),
+(@PGUID+12, @PGUID+11, 0, 'Shattered Halls - Halls of Father Group 4'),
+(@PGUID+13, @PGUID+11, 0, 'Shattered Halls - Halls of Father Group 4');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 4, 'Shattered Halls - Shattered Hand Assassin (17695)'),
+(@PGUID+2, 1, 'Shattered Halls - Halls of Father Group 1 (Master)'),
+(@PGUID+3, 3, 'Shattered Halls - Halls of Father Group 1'),
+(@PGUID+4, 3, 'Shattered Halls - Halls of Father Group 1'),
+(@PGUID+5, 1, 'Shattered Halls - Halls of Father Group 2 (Master)'),
+(@PGUID+6, 3, 'Shattered Halls - Halls of Father Group 2'),
+(@PGUID+7, 3, 'Shattered Halls - Halls of Father Group 2'),
+(@PGUID+8, 1, 'Shattered Halls - Halls of Father Group 3 (Master)'),
+(@PGUID+9, 3, 'Shattered Halls - Halls of Father Group 3'),
+(@PGUID+10, 3, 'Shattered Halls - Halls of Father Group 3'),
+(@PGUID+11, 1, 'Shattered Halls - Halls of Father Group 4 (Master)'),
+(@PGUID+12, 3, 'Shattered Halls - Halls of Father Group 4'),
+(@PGUID+13, 3, 'Shattered Halls - Halls of Father Group 4'),
 (@PGUID+71, 1, 'Shattered Halls - Master Chest Pool'); -- gameobject
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
@@ -987,6 +1039,30 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 (@CGUID+301, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
 (@CGUID+302, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
 (@CGUID+303, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)');
+(@CGUID+219, @PGUID+3, 0, 'Shattered Halls - creature_spawn_entry - Group 1'),
+(@CGUID+139, @PGUID+3, 0, 'Shattered Halls - creature_spawn_entry - Group 1'),
+(@CGUID+309, @PGUID+3, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 1'),
+(@CGUID+313, @PGUID+4, 0, 'Shattered Halls - creature_spawn_entry - Group 1'),
+(@CGUID+314, @PGUID+4, 0, 'Shattered Halls - creature_spawn_entry - Group 1'),
+(@CGUID+315, @PGUID+4, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 1'),
+(@CGUID+67, @PGUID+6, 0, 'Shattered Halls - creature_spawn_entry - Group 2'),
+(@CGUID+142, @PGUID+6, 0, 'Shattered Halls - creature_spawn_entry - Group 2'),
+(@CGUID+312, @PGUID+6, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 2'),
+(@CGUID+316, @PGUID+7, 0, 'Shattered Halls - creature_spawn_entry - Group 2'),
+(@CGUID+317, @PGUID+7, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 2'),
+(@CGUID+318, @PGUID+7, 0, 'Shattered Halls - creature_spawn_entry - Group 2'),
+(@CGUID+220, @PGUID+9, 0, 'Shattered Halls - creature_spawn_entry - Group 3'),
+(@CGUID+141, @PGUID+9, 0, 'Shattered Halls - creature_spawn_entry - Group 3'),
+(@CGUID+311, @PGUID+9, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 3'),
+(@CGUID+319, @PGUID+10, 0, 'Shattered Halls - creature_spawn_entry - Group 3'),
+(@CGUID+320, @PGUID+10, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 3'),
+(@CGUID+321, @PGUID+10, 0, 'Shattered Halls - creature_spawn_entry - Group 3'),
+(@CGUID+66, @PGUID+12, 0, 'Shattered Halls - creature_spawn_entry - Group 4'),
+(@CGUID+140, @PGUID+12, 0, 'Shattered Halls - creature_spawn_entry - Group 4'),
+(@CGUID+310, @PGUID+12, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 4'),
+(@CGUID+322, @PGUID+13, 0, 'Shattered Halls - creature_spawn_entry - Group 4'),
+(@CGUID+323, @PGUID+13, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 4'),
+(@CGUID+324, @PGUID+13, 0, 'Shattered Halls - creature_spawn_entry - Group 4'),
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
