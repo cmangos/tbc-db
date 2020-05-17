@@ -1334,12 +1334,12 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+213, @CGUID+208, 1167), -- Spectral Apprentice -> Spectral Apprentice
 (@CGUID+239, @CGUID+208, 1167), -- Spectral Servant -> Spectral Apprentice
 (@CGUID+240, @CGUID+208, 1167), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+208, @CGUID+144, 1025), -- Spectral Apprentice -> Midnight
+(@CGUID+208, @CGUID+144, 1024), -- Spectral Apprentice -> Midnight
 (@CGUID+210, @CGUID+209, 1167), -- Spectral Apprentice -> Spectral Apprentice
 (@CGUID+211, @CGUID+209, 1167), -- Spectral Apprentice -> Spectral Apprentice
 (@CGUID+241, @CGUID+209, 1167), -- Spectral Servant -> Spectral Apprentice
 (@CGUID+242, @CGUID+209, 1167), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+209, @CGUID+144, 1025), -- Spectral Apprentice -> Midnight
+(@CGUID+209, @CGUID+144, 1024), -- Spectral Apprentice -> Midnight
 (@CGUID+276, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+279, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+280, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
