@@ -20389,6 +20389,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Furnan Skysoar
 ('1880901','18809','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Furnan Skysoar - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Bleeding Hollow Clan Ruins Credit Marker 18843 - npc_creditmarker_visit_with_ancestors
+-- Furious Mr. Pinchy 18846
+('1884601','18846','11','0','100','0','0','0','0','0','0','0','55','11','0','0','0','0','0','0','0','0','0','0','Furious Mr. Pinchy - Attack Start on Spawner on Spawn'),
+('1884602','18846','28','0','100','1','13444','5','5000','9000','0','0','11','13444','1','0','0','0','0','0','0','0','0','0','Furious Mr. Pinchy - Cast Sunder Armor on Target Missing Aura Stack'),
 -- Stonebreaker Grunt 18973
 ('1897301','18973','9','0','100','1025','0','5','6000','9000','0','0','11','40505','1','0','0','0','0','0','0','0','0','0','Stonebreaker Grunt - Cast Cleave'),
 ('1897302','18973','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','-106','0','0','0','0','0','0','Stonebreaker Grunt - Cast Enrage at 30% HP'),
