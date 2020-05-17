@@ -465,7 +465,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+135, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+137, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+138, @CGUID+74, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-
 (@CGUID+304, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+305, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+306, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
@@ -483,10 +482,10 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+67, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+220, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+66, @CGUID+77, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+305, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
-(@CGUID+306, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
-(@CGUID+307, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
-(@CGUID+308, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+309, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+310, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+311, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+312, @CGUID+77, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+313, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+314, @CGUID+77, 1024), -- -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+315, @CGUID+77, 1024), -- -- -- Shattered Hand Heathen -> Shattered Hand Legionnaire
