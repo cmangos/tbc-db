@@ -622,7 +622,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+141, 16523), (@CGUID+141, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+142, 16523), (@CGUID+142, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+219, 16593), (@CGUID+219, 16594), (@CGUID+219, 17694),  -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
-(@CGUID+220, 16593)(@CGUID+220, 16594), (@CGUID+220, 17694),  -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+220, 16593), (@CGUID+220, 16594), (@CGUID+220, 17694),  -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
 (@CGUID+259, 16523), (@CGUID+259, 16699), (@CGUID+259, 17420), -- Shattered Hand Savage, Shattered Hand Reaver, Shattered Hand Heathen
 (@CGUID+260, 16523), (@CGUID+260, 17694), -- Shattered Hand Savage, Shadowmoon Darkcaster
 (@CGUID+261, 16593), (@CGUID+261, 16699), -- Shattered Hand Brawler, Shattered Hand Reaver
@@ -634,10 +634,10 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+314, 16593), (@CGUID+314, 16594), (@CGUID+314, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
 (@CGUID+316, 16523), (@CGUID+316, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+318, 16593), (@CGUID+318, 16594), (@CGUID+318, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
-(@CGUID+320, 16523), (@CGUID+320, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+319, 16593), (@CGUID+319, 16594), (@CGUID+319, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+321, 16523), (@CGUID+321, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+322, 16523), (@CGUID+322, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
-(@CGUID+324, 16593), (@CGUID+324, 16594); (@CGUID+324, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+324, 16593), (@CGUID+324, 16594), (@CGUID+324, 17694); -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 2110, 540, 3, 115.869, 223.215, -47.7406, 1.51629, 900, 900, 5, 0, 0, 1), -- Black Rat
@@ -965,8 +965,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+317, 17420, 540, 2, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+318, 0, 540, 3, 63.3135, 84.0945, -13.1156, 4.66003, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+319, 0, 540, 3, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
-(@CGUID+320, 17420, 540, 2, 77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
-(@CGUID+321, 0, 540, 1, 77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
+(@CGUID+320, 17420, 540, 2, 77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
+(@CGUID+321, 0, 540, 1, 77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+322, 0, 540, 1, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+323, 0, 540, 1, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+324, 17420, 540, 2, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0); -- Shattered Hand Heathen
