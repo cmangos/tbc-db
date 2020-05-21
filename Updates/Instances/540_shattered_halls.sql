@@ -630,10 +630,10 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+265, 16523), (@CGUID+265, 16593), -- Shattered Hand Savage, Shattered Hand Brawler
 (@CGUID+267, 16523), (@CGUID+267, 16699), (@CGUID+267, 17420), -- Shattered Hand Savage, Shattered Hand Reaver, Shattered Hand Heathen
 (@CGUID+274, 16523), (@CGUID+274, 16699), -- Shattered Hand Savage, Shattered Hand Reaver
-(@CGUID+313, 16523), (@CGUID+313, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
-(@CGUID+314, 16593), (@CGUID+314, 16594), (@CGUID+314, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
-(@CGUID+316, 16523), (@CGUID+316, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
-(@CGUID+318, 16593), (@CGUID+318, 16594), (@CGUID+318, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+313, 16593), (@CGUID+313, 16594), (@CGUID+313, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+314, 16523), (@CGUID+314, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
+(@CGUID+316, 16593), (@CGUID+316, 16594), (@CGUID+316, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+318, 16523), (@CGUID+318, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+319, 16593), (@CGUID+319, 16594), (@CGUID+319, 17694), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
 (@CGUID+321, 16523), (@CGUID+321, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+322, 16523), (@CGUID+322, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
@@ -958,18 +958,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+310, 17420, 540, 2, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+311, 17420, 540, 2, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+312, 17420, 540, 2, 63.3135, 84.0945, -13.1156, 4.66003, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
-(@CGUID+313, 0, 540, 3, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+313, 0, 540, 3, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry 
 (@CGUID+314, 0, 540, 1, 56.461, 79.2481, -13.0995, 5.46288, 7200, 7200, 0, 0, 0, 0),  -- creature_spawn_entry
-(@CGUID+315, 17420, 540, 2, 56.461, 79.2481, -13.0995, 5.46288, 7200, 7200, 0, 0, 0, 0),  -- Shattered Hand Heathen
-(@CGUID+316, 0, 540, 1, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
-(@CGUID+317, 17420, 540, 2, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
-(@CGUID+318, 0, 540, 3, 63.3135, 84.0945, -13.1156, 4.66003, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+315, 17420, 540, 2,  56.461, 79.2481, -13.0995, 5.46288, 7200, 7200, 0, 0, 0, 0),  -- Shattered Hand Heathen
+(@CGUID+316, 0, 540, 3, 63.3135, 84.0945, -13.1156, 4.66003, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+317, 17420, 540, 2, 65.4234, 84.6101, -13.1184, 4.60767, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
+(@CGUID+318, 0, 540, 1, 65.4234, 84.6101, -13.1184, 4.60767, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+319, 0, 540, 3, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+320, 17420, 540, 2, 77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
 (@CGUID+321, 0, 540, 1, 77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+322, 0, 540, 1, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
-(@CGUID+323, 0, 540, 1, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
-(@CGUID+324, 17420, 540, 2, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0); -- Shattered Hand Heathen
+(@CGUID+323, 17420, 540, 2, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Heathen
+(@CGUID+324, 0, 540, 1, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0); -- creature_spawn_entry
 
 -- ===========
 -- GAMEOBJECTS
