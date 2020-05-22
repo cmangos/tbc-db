@@ -1637,26 +1637,16 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+539, @CGUID+533, 1167), -- Spectral Performer -> Spectral Performer
 (@CGUID+540, @CGUID+534, 1167), -- Spectral Performer -> Spectral Performer
 -- The Curator
-(@CGUID+550, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+551, @CGUID+143, 1024), -- Trapped Soul -> The Curator
-(@CGUID+549, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+552, @CGUID+143, 1024), -- Trapped Soul -> The Curator
-(@CGUID+546, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+553, @CGUID+143, 1024), -- Trapped Soul -> The Curator
-(@CGUID+548, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+554, @CGUID+143, 1024), -- Trapped Soul -> The Curator
-(@CGUID+547, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+555, @CGUID+143, 1024), -- Trapped Soul -> The Curator
-(@CGUID+543, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+556, @CGUID+143, 1024), -- Trapped Soul -> The Curator
-(@CGUID+544, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+557, @CGUID+143, 1024), -- Trapped Soul -> The Curator
-(@CGUID+545, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+558, @CGUID+143, 1024), -- Trapped Soul -> The Curator
 (@CGUID+541, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+559, @CGUID+143, 1024), -- Trapped Soul -> The Curator
 (@CGUID+542, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+560, @CGUID+143, 1024), -- Trapped Soul -> The Curator
+(@CGUID+543, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
+(@CGUID+544, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
+(@CGUID+545, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
+(@CGUID+546, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
+(@CGUID+547, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
+(@CGUID+548, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
+(@CGUID+549, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
+(@CGUID+550, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
 (@CGUID+561, @CGUID+562, 1167), -- Arcane Watchman -> Arcane Watchman
 (@CGUID+562, @CGUID+143, 1024), -- Arcane Watchman -> The Curator
 (@CGUID+631, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
@@ -1891,6 +1881,18 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (19874, 532, 15687, 3, 0), -- Baron Rafe Dreuger -> Moroes
 (19875, 532, 15687, 3, 0), -- Baroness Dorothea Millstipe -> Moroes
 (19876, 532, 15687, 3, 0); -- Lord Robin Daris -> Moroes
+
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+541, 16481),(@CGUID+541, 16482), -- Ghastly Haunt, Trapped Soul
+(@CGUID+542, 16481),(@CGUID+542, 16482), -- Ghastly Haunt, Trapped Soul
+(@CGUID+543, 16481),(@CGUID+543, 16482), -- Ghastly Haunt, Trapped Soul
+(@CGUID+544, 16481),(@CGUID+544, 16482), -- Ghastly Haunt, Trapped Soul
+(@CGUID+545, 16481),(@CGUID+545, 16482), -- Ghastly Haunt, Trapped Soul
+(@CGUID+546, 16481),(@CGUID+546, 16482), -- Ghastly Haunt, Trapped Soul
+(@CGUID+547, 16481),(@CGUID+547, 16482), -- Ghastly Haunt, Trapped Soul
+(@CGUID+548, 16481),(@CGUID+548, 16482), -- Ghastly Haunt, Trapped Soul
+(@CGUID+549, 16481),(@CGUID+549, 16482), -- Ghastly Haunt, Trapped Soul
+(@CGUID+550, 16481),(@CGUID+550, 16482); -- Ghastly Haunt, Trapped Soul
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 4075, 532, 1, -11069, -1978.83, 124.565, 2.95465, 7200, 7200, 10, 0, 0, 1), -- Rat
@@ -2433,26 +2435,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+538, 16473, 532, 1, -10871.7, -1727.13, 90.5517, 2.11185, 7200, 7200, 0, 0, 0, 0), -- Spectral Performer
 (@CGUID+539, 16473, 532, 1, -10854.4, -1748.07, 89.4742, 0.911856, 7200, 7200, 0, 0, 0, 0), -- Spectral Performer
 (@CGUID+540, 16473, 532, 1, -10890.5, -1738.73, 90.5533, 4.53786, 7200, 7200, 0, 0, 0, 0), -- Spectral Performer
-(@CGUID+541, 16481, 532, 1, -11045.2, -1973.17, 143.078, 5.76862, 3600, 3600, 5, 0, 0, 1), -- Ghastly Haunt
-(@CGUID+542, 16481, 532, 1, -11063.7, -1948.29, 124.578, 1.1929, 3600, 3600, 5, 0, 0, 1), -- Ghastly Haunt
-(@CGUID+543, 16481, 532, 1, -11061.9, -2032.53, 115.17, 5.24006, 3600, 3600, 5, 0, 0, 1), -- Ghastly Haunt
-(@CGUID+544, 16481, 532, 1, -11010.5, -1964.66, 110.077, 0.268507, 3600, 3600, 5, 0, 0, 1), -- Ghastly Haunt
-(@CGUID+545, 16481, 532, 1, -11038, -1948.52, 113.32, 2.59801, 3600, 3600, 5, 0, 0, 1), -- Ghastly Haunt
-(@CGUID+546, 16481, 532, 1, -11053, -1949.28, 96.472, 2.12436, 3600, 3600, 5, 0, 0, 1), -- Ghastly Haunt
-(@CGUID+547, 16481, 532, 1, -11060.2, -2014.64, 97.019, 5.98857, 3600, 3600, 5, 0, 0, 1), -- Ghastly Haunt
-(@CGUID+548, 16481, 532, 1, -11090.5, -1969.23, 92.6019, 1.52474, 3600, 3600, 5, 0, 0, 1), -- Ghastly Haunt
-(@CGUID+549, 16481, 532, 1, -11057.7, -1997.75, 115.226, 2.9081, 3600, 3600, 5, 0, 0, 1), -- Ghastly Haunt
-(@CGUID+550, 16481, 532, 1, -11051.3, -1982.27, 158.296, 4.31096, 3600, 3600, 0, 0, 0, 0), -- Ghastly Haunt
-(@CGUID+551, 16482, 532, 1, -11051.2, -1982.32, 158.191, 4.91253, 3600, 3600, 5, 0, 0, 1), -- Trapped Soul
-(@CGUID+552, 16482, 532, 1, -11057.4, -1997.93, 115.226, 3.16662, 3600, 3600, 5, 0, 0, 1), -- Trapped Soul
-(@CGUID+553, 16482, 532, 1, -11052.8, -1949.66, 96.4722, 2.09848, 3600, 3600, 5, 0, 0, 1), -- Trapped Soul
-(@CGUID+554, 16482, 532, 1, -11090.3, -1968.85, 92.5991, 2.20059, 3600, 3600, 5, 0, 0, 1), -- Trapped Soul
-(@CGUID+555, 16482, 532, 1, -11060.5, -2014.54, 97.014, 5.07515, 3600, 3600, 5, 0, 0, 1), -- Trapped Soul
-(@CGUID+556, 16482, 532, 1, -11061.9, -2032.95, 115.235, 4.92807, 3600, 3600, 5, 0, 0, 1), -- Trapped Soul
-(@CGUID+557, 16482, 532, 1, -11010.4, -1964.47, 110.108, 0.797895, 3600, 3600, 5, 0, 0, 1), -- Trapped Soul
-(@CGUID+558, 16482, 532, 1, -11038.1, -1948.53, 113.325, 1.8208, 3600, 3600, 5, 0, 0, 1), -- Trapped Soul
-(@CGUID+559, 16482, 532, 1, -11044.9, -1973.42, 143.162, 4.18879, 3600, 3600, 0, 0, 0, 0), -- Trapped Soul
-(@CGUID+560, 16482, 532, 1, -11063.4, -1947.76, 124.578, 1.14371, 3600, 3600, 5, 0, 0, 1), -- Trapped Soul
+(@CGUID+541, 0, 532, 1, -11045.2, -1973.17, 143.078, 5.76862, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+542, 0, 532, 1, -11063.7, -1948.29, 124.578, 1.1929, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+543, 0, 532, 1, -11061.9, -2032.53, 115.17, 5.24006, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+544, 0, 532, 1, -11010.5, -1964.66, 110.077, 0.268507, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+545, 0, 532, 1, -11038, -1948.52, 113.32, 2.59801, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+546, 0, 532, 1, -11053, -1949.28, 96.472, 2.12436, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+547, 0, 532, 1, -11060.2, -2014.64, 97.019, 5.98857, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+548, 0, 532, 1, -11090.5, -1969.23, 92.6019, 1.52474, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+549, 0, 532, 1, -11057.7, -1997.75, 115.226, 2.9081, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+550, 0, 532, 1, -11051.3, -1982.27, 158.296, 4.31096, 3600, 3600, 5, 0, 0, 1), -- creature_spawn_entry
+-- Reuse 551 - 560
 (@CGUID+561, 16485, 532, 1, -11041.2, -1896.44, 161.35, 5.22602, 2700, 2700, 0, 0, 0, 0), -- Arcane Watchman
 (@CGUID+562, 16485, 532, 1, -11001, -1902.44, 161.351, 4.06049, 2700, 2700, 0, 0, 0, 0), -- Arcane Watchman
 (@CGUID+563, 16485, 532, 1, -11218.5, -1850.08, 152.055, 5.59558, 7200, 7200, 0, 0, 0, 0), -- Arcane Watchman
@@ -3197,17 +3190,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- =======
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 1'),
-(@PGUID+2, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 2'),
-(@PGUID+3, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 3'),
-(@PGUID+4, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 4'),
-(@PGUID+5, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 5'),
-(@PGUID+6, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 6'),
-(@PGUID+7, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 7'),
-(@PGUID+8, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 8'),
-(@PGUID+9, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 9'),
-(@PGUID+10, 1, 'Karazhan - Trapped Soul/Ghastly Haunt - Pool 10'),
-
 (@PGUID+11, 1, 'Karazhan - Sealed Tome - Pool 1'),
 (@PGUID+12, 1, 'Karazhan - Sealed Tome - Pool 2'),
 (@PGUID+13, 1, 'Karazhan - Sealed Tome - Pool 3'),
@@ -3216,28 +3198,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+16, 1, 'Karazhan - Sealed Tome - Pool 6'),
 (@PGUID+17, 1, 'Karazhan - Sealed Tome - Pool 7');
 
-INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+550, @PGUID+1, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+551, @PGUID+1, 0, 'Karazhan - Trapped Soul'),
-(@CGUID+549, @PGUID+2, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+552, @PGUID+2, 0, 'Karazhan - Trapped Soul'),
-(@CGUID+546, @PGUID+3, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+553, @PGUID+3, 0, 'Karazhan - Trapped Soul'),
-(@CGUID+548, @PGUID+4, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+554, @PGUID+4, 0, 'Karazhan - Trapped Soul'),
-(@CGUID+547, @PGUID+5, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+555, @PGUID+5, 0, 'Karazhan - Trapped Soul'),
-(@CGUID+543, @PGUID+6, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+556, @PGUID+6, 0, 'Karazhan - Trapped Soul'),
-(@CGUID+544, @PGUID+7, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+557, @PGUID+7, 0, 'Karazhan - Trapped Soul'),
-(@CGUID+545, @PGUID+8, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+558, @PGUID+8, 0, 'Karazhan - Trapped Soul'),
-(@CGUID+541, @PGUID+9, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+559, @PGUID+9, 0, 'Karazhan - Trapped Soul'),
-(@CGUID+542, @PGUID+10, 0, 'Karazhan - Ghastly Haunt'),
-(@CGUID+560, @PGUID+10, 0, 'Karazhan - Trapped Soul');
-
+-- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
