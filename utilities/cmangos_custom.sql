@@ -63,6 +63,8 @@ UPDATE gameobject_template SET data8=1221 WHERE entry IN (68865, 21530, 21277);
 -- Thaurissan Relic - original tbc-db value 0, classic-db (and classic sniff) value 3702 - the quest which involves actually using this object is 3701
 UPDATE gameobject_template SET data1=3701 WHERE entry=153556;
 
+UPDATE `gameobject` SET `position_z` = 133.60325 WHERE `guid` = 132224 AND `id` = 176589; -- Black Lotus Sniff Z = -61.28984
+
 -- ============================================================
 -- TBC section
 -- ============================================================
