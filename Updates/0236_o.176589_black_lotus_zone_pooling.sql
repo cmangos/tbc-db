@@ -33,7 +33,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (138611, 176589, 1, -3715.259, 1084.904, 132.0633, -0.1919852, 0, 0, -0.09584522, 0.9953963, 3600, 7200, 100, 1), -- Dire Maul
 (138613, 176589, 0, 2511.816, -5151.868, 74.3906, -2.44346, 0, 0, -0.9396925, 0.3420205, 2700, 4500, 100, 1); -- Eastern Plaguelands
 
-UPDATE `gameobject` SET `spawntimesecsmin` = 1800, `spawntimesecsmax` = 3600, `animprogress` = 100 WHERE `id` = 176589 AND `guid` NOT IN (138610,138611);
+UPDATE `gameobject` SET `spawntimesecsmin` = 2700, `spawntimesecsmax` = 4500, `animprogress` = 100 WHERE `id` = 176589 AND `guid` NOT IN (138610,138611);
 
 DELETE FROM `pool_template` WHERE `entry` IN (942,943,944,945,946);
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
