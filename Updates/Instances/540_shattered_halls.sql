@@ -639,6 +639,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (16809, 540, 16808, 1, 0), -- Warbringer O'mrogg -> Warchief Kargath Bladefist
+(17693, 540, 17427, 1, 0), -- Shattered Hand Scout -> Shattered Hand Archer				-- Abuse Prevention (void Aggro, npc_Shattered_Hand_Scout)
 (17427, 540, 17427, 3, 0), -- Shattered Hand Archer -> Shattered Hand Archer
 (17461, 540, 17427, 3, 0), -- Shattered Hand Blood Guard -> Shattered Hand Archer
 (20923, 540, 17427, 3, 0); -- Blood Guard Porung -> Shattered Hand Archer
