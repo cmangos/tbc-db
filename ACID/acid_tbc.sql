@@ -19139,6 +19139,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2132201','21322','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','0','0','0','0','Warp Storm - Set Immobilized State and Disable Melee on Spawn'),
 ('2132202','21322','29','0','100','1','1000','1000','1000','1000','0','0','11','36580','15','0','0','0','0','0','0','0','0','0','Warp Storm - Cast Warp Storm on Generic Timer'),
 -- Netherock Crumbler 21323
+('2132301','21323','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Netherock Crumbler - Forced Despawn on Evade'),
 -- Apex Crumbler 21328
 -- Thorny Growth 21331
 -- Tentacle of Markaru 21335
