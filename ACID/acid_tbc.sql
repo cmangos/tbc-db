@@ -18842,9 +18842,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2041001','20410','11','0','100','0','0','0','0','0','0','0','11','36635','0','0','0','0','0','0','0','0','0','0','Rhonsus - Cast Fiery Weapon Proc on Spawn'),
 -- Spectral Bovine 20411
 -- Bessy 20415 - npc_bessy
--- Overseer Theredis
-('2041601','20416','0','0','100','1025','4000','9000','20000','30000','0','0','11','6713','1','0','54','-10407','0','0','0','0','0','0','Overseer Theredis - Cast Disarm and Text Emote'),
-('2041602','20416','0','0','100','1025','5000','15000','15000','25000','0','0','11','35871','1','0','0','0','0','0','0','0','0','0','Overseer Theredis - Cast Spellbreaker'),
+-- Overseer Theredis 20416
+('2041601','20416','0','0','100','1025','10000','20000','28000','32000','0','0','11','6713','1','0','54','-10407','0','0','0','0','0','0','Overseer Theredis - Cast Disarm and Text Emote'),
+('2041602','20416','0','0','100','1025','9000','17000','12000','15000','0','0','11','35871','1','0','0','0','0','0','0','0','0','0','Overseer Theredis - Cast Spellbreaker'),
 -- Coruu Control Console 20417 - npc_manaforge_control_console
 -- Duro Control Console 20418 - npc_manaforge_control_console
 -- Overseer Athanel 20435
