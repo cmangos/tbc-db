@@ -18918,9 +18918,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Seeping Sludge
 ('2050101','20501','2','0','100','1025','50','0','30000','45000','0','0','11','36465','0','0','0','0','0','0','0','0','0','0','Seeping Sludge - Cast Seeping Split at 50% HP'),
 ('2050102','20501','8','0','100','0','35686','-1','0','0','0','0','11','3617','0','2','11','35687','0','2','0','0','0','0','Seeping Sludge - Cast Quiet Suicide and Summon Seeping Sludge Globule after (proc) Spell 35686'),
--- Tormented Soul
-('2051201','20512','4','0','100','0','0','0','0','0','0','0','36','20480','1','0','41','300000','0','0','0','0','0','0','Tormented Soul - Transform into Kirin''Var Ghost and Delayed Despawn on Aggro'),
-('2051202','20512','0','0','100','1025','6000','8000','15000','17000','0','0','11','36153','1','0','0','0','0','0','0','0','0','0','Tormented Soul - Cast Soulbind'),
+-- Tormented Soul 20512
+('2051201','20512','4','0','100','0','0','0','0','0','0','0','21','0','0','0','5','15','0','0','0','0','0','0','Tormented Soul - Stop Combat Movement and OneShotRoar on Aggro'),
+('2051202','20512','0','0','100','1024','1000','1000','0','0','0','0','21','1','0','0','36','20480','1','0','0','0','0','0','Tormented Soul - Start Combat Movement and Transform into Kirin''Var Ghost'),
+('2051203','20512','0','0','100','1025','6000','8000','15000','17000','0','0','11','36153','1','0','0','0','0','0','0','0','0','0','Tormented Soul - Cast Soulbind'),
+('2051204','20512','7','0','100','0','0','0','0','0','0','0','36','20512','1','0','0','0','0','0','0','0','0','0','Tormented Soul - Transform into Tormented Soul on Evade'),
 -- Harpax 20515 - NSR
 -- Warp Monstrosity 20516
 ('2051601','20516','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Warp Monstrosity - Enable Range Mode on Aggro'),
