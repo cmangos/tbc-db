@@ -19112,12 +19112,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2105802','21058','4','0','100','0','0','0','0','0','0','0','11','8258','0','0','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Devotion Aura on Aggro'),
 ('2105803','21058','14','0','100','1025','2000','40','22000','22000','0','0','11','33910','12','0','0','0','0','0','0','0','0','0','Disembodied Exarch - Cast Heal Other on Friendly Missing HP'),
 -- Tormented Citizen 21065
-('2106501','21065','4','0','100','0','0','0','0','0','0','0','31','1','2','0','0','0','0','0','0','0','0','0','Tormented Citizen - Set Random Phase 1-2 on Aggro'),
-('2106502','21065','0','5','100','1024','500','500','0','0','0','0','57','0','0','0','36','20480','1','0','41','300000','0','0','Tormented Citizen - Enable Melee Mode and Update Template to Kirin''Var Ghost and Delayed Despawn (Phase 1)'),
-('2106503','21065','0','3','100','1024','500','500','0','0','0','0','57','2','35','0','36','20496','1','0','41','300000','0','0','Tormented Citizen - Enable Range Mode and Update Template to Kirin''Var Spectre and Delayed Despawn (Phase 2)'),
+('2106501','21065','4','0','100','0','0','0','0','0','0','0','31','1','2','0','21','0','0','0','5','15','0','0','Tormented Soul - Set Random Phase 1-2, Stop Combat Movement and OneShotRoar on Aggro'),
+('2106502','21065','0','5','100','1024','1000','1000','0','0','0','0','57','0','0','0','36','20480','1','0','21','1','0','0','Tormented Citizen - Enable Melee Mode, Update Template to Kirin''Var Ghost and Start Combat Movement (Phase 1)'),
+('2106503','21065','0','3','100','1024','1000','1000','0','0','0','0','57','2','35','0','36','20496','1','0','21','1','0','0','Tormented Citizen - Enable Range Mode, Update Template to Kirin''Var Spectre and Start Combat Movement (Phase 2)'),
 ('2106504','21065','0','0','100','1537','6000','12000','27000','29000','0','0','11','36153','1','0','0','0','0','0','0','0','0','0','Kirin''Var Ghost - Cast Soulbind (Melee Mode)'),
 ('2106505','21065','0','0','100','1281','9000','13000','120000','124000','0','0','11','11980','1','32','0','0','0','0','0','0','0','0','Kirin''Var Spectre - Cast Curse of Weakness (Range Mode)'),
-('2106506','21065','9','0','100','1281','0','40','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Kirin''Var Spectre - Cast Shadow Bolt (Range Mode)'),
+('2106506','21065','0','0','100','1281','1000','1000','3400','4800','0','0','11','9613','1','256','0','0','0','0','0','0','0','0','Kirin''Var Spectre - Cast Shadow Bolt (Range Mode)'),
+('2106507','21065','7','0','100','0','0','0','0','0','0','0','36','21065','1','0','0','0','0','0','0','0','0','0','Tormented Citizen - Transform into Tormented Citizen on Evade'),
 -- Farahlon Crumbler 21077
 ('2107701','21077','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Farahlon Crumbler - Forced Despawn on Evade'),
 -- Farahlon Shardling 21078
