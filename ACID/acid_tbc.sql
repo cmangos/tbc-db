@@ -4187,7 +4187,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Madrigosa (25160)
 -- Shattered Sun Marksman
 ('2493801','24938','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Shattered Sun Marksman - Stop Combat Movement on Spawn'),
-('2493802','24938','10','0','100','1','0','70','4500','8000','0','0','11','38858','6','0','0','0','0','0','0','0','0','0','Shattered Sun Marksman - Shoot at Attacking Dawnblade Hawkriders'),
 -- Wretched Devourer
 ('2496001','24960','4','0','10','0','0','0','0','0','0','0','1','-10510','-10511','-10512','0','0','0','0','0','0','0','0','Wretched Devourer - Random Say on Aggro'),
 ('2496002','24960','0','0','100','1025','9000','12000','120000','180000','0','0','11','33483','4','0','0','0','0','0','0','0','0','0','Wretched Devourer - Cast Mana Tap'),
@@ -4272,8 +4271,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2506005','25060','0','0','100','1025','4000','7000','15000','19000','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Cast Demoralizing Shout'),
 ('2506006','25060','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Set Phase 0 on Evade'),
 -- Harbinger Inuuro (25061) - NSR
--- Dawnblade Hawkrider
-('2506301','25063','10','0','100','1','0','70','3000','6500','0','0','11','45189','6','0','40','2','0','0','0','0','0','0','Dawnblade Hawkrider - Cast Dawnblade Attack and Set Ranged Weapon Model OOC LOS'),
+-- Dawnblade Hawkrider (25063)
+('2506301','25063','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Dawnblade Hawkrider - Stop Combat Movement on Spawn'),
 -- Magister Ilastar (25069) - NSR
 -- Darkspine Siren 25073
 ('2507301','25073','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Darkspine Siren - Enable Range Mode on Aggro'),
