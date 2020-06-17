@@ -28,10 +28,10 @@ have to create and add the right SQL file. This helps tracking what changes are 
 
 Installation
 ------------
-**TBC-DB** is the main content database for: `mangos` where the world is defined
+**TBC-DB** is the main content database for: `tbcmangos` where the world is defined
 with creatures, items, objects, quests, etc.
 
-It must be applied after creating the `mangos` database from your CMaNGOS core distribution [mangos-tbc][10] from [CMaNGOS Project][13].
+It must be applied after creating the `tbcmangos` database from your CMaNGOS core distribution [mangos-tbc][10] from [CMaNGOS Project][13].
 
 If you used the default values when installing your mangos core, simply run into a bash compatible shell (like Bash Git for Windows) the following command `./InstallFullDB.sh`.
 
@@ -62,7 +62,7 @@ But as this is a community project, the developers will always try to help you m
 [10]: https://github.com/cmangos/mangos-tbc/ "mangos tbc"
 [12]: https://github.com/cmangos/tbc-db/ "content database"
 [13]: http://www.cmangos.net/ "CMaNGOS Project"
-[14]: https://github.com/cmangos/issues/wiki/Installation-Instructions/ "Installation Instructions"
+[14]: https://github.com/cmangos/issues/wiki/Installation-Instructions "CMaNGOS installation instructions"
 [15]: https://github.com/cmangos/issues/issues/ "CMaNGOS issue tracker"
 [16]: https://github.com/cmangos/issues/wiki/mangosdb_struct
 [17]: https://help.github.com/articles/fork-a-repo/
