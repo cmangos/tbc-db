@@ -28036,7 +28036,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Coilfang Guardian
 ('2187301','21873','9','0','100','1025','0','8','6000','8400','0','0','11','28168','1','0','0','0','0','0','0','0','0','0','Coilfang Guardian - Cast Arcing Smash'),
 ('2187302','21873','9','0','100','1025','0','5','10000','14400','0','0','11','9080','1','0','0','0','0','0','0','0','0','0','Coilfang Guardian - Cast Hamstring'),
--- Shadow of Leotheras (SD2 Backport)
+-- Shadow of Leotheras 21875
 ('2187501','21875','11','0','100','0','0','0','0','0','0','0','1','-10934','0','0','20','0','0','0','0','0','0','0','Shadow of Leotheras - Yell, Stop Auto Attack on Spawn'),
 ('2187502','21875','5','0','100','1','0','0','1','0','0','0','1','-10935','-10936','-10937','0','0','0','0','0','0','0','0','Shadow of Leotheras - Yell on Player Kill'),
 ('2187503','21875','0','0','100','1025','2000','3000','3000','3000','0','0','11','37674','1','0','0','0','0','0','0','0','0','0','Shadow of Leotheras - Cast Chaos Blast'),
@@ -32479,7 +32479,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10934','At last I am liberated. It has been too long since I have tasted true freedom!','11309','1','0','0','19502','21875'),
 ('-10935','I have no equal!','11306','1','0','0','19993','21875'),
 ('-10936','Perish, mortal!','11307','1','0','0','19994','21875'),
-('-10937','Yes... yes!','11308','1','0','0','11308','21875'),
+('-10937','Yes... yes!','11308','1','0','0','19995','21875'),
 ('-10938','I''m thinking of a vacation. I hear Hearthglen is nice.','0','0','0','0','19561','Old Hillsbrad Foothills'),
 ('-10939','Quitting time can''t come too soon.','0','0','0','0','19562','Old Hillsbrad Foothills'),
 ('-10940','I hear that Blackmoore has been acting strange.','0','0','0','0','19560','Old Hillsbrad Foothills'),
