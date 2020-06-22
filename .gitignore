@@ -42,3 +42,4 @@ InstallFullDB.config
 
 # hum big boss file that we hopfully have to ignore.
 Killerwife_Windows_Install_Script.bat
+/.vs
