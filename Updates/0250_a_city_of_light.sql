@@ -1,0 +1,2 @@
+--A city of light
+INSERT INTO tbcmangos.script_waypoint (entry, pathId, pointid, position_x, position_y, position_z, orientation, waittime, script_id, comment) VALUES ('19685', '0', '77', '-1848.4', '5476.07', '0.856', '0', '40000', '0', 'end -fix for quest not completing');
