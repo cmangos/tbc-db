@@ -28020,7 +28020,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2150801','21508','11','0','100','0','0','0','0','0','0','0','55','11','0','0','0','0','0','0','0','0','0','0','Coilfang Frenzy - Attack Spawner on Spawn'),
 -- Greyheart Spellbinder
 ('2180601','21806','1','0','100','0','10000','10000','0','0','0','0','11','37626','0','0','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Green Beam on OOC Timer'),
-('2180602','21806','0','0','100','1025','6800','10700','10300','13600','0','0','11','37531','4','0','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Mind Blast'),
+('2180602','21806','0','0','100','1025','6800','10700','10300','13600','0','0','11','37531','4','512','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Mind Blast'),
 ('2180603','21806','13','0','100','1025','8000','12000','0','0','0','0','11','39076','1','0','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Spell Shock on Target Casting'),
 -- Inner Demon (21857) - npc_inner_demon 
 -- Serpentshrine Lurker
