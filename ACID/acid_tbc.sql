@@ -2012,12 +2012,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Watcher Thayer (1101) - NSR
 -- Skeletal Raider 1110 (3.0.3 Official Data)
 ('111001','1110','11','0','100','0','0','0','0','0','0','0','11','8601','0','34','0','0','0','0','0','0','0','0','Skeletal Raider - Cast Slowing Poison on Spawn'),
--- Morbent Fel 1200 (3.0.3 Official Data) - spell_dummy_npc
+-- Morbent Fel 1200
 ('120001','1200','1','0','100','0','0','0','0','0','0','0','11','8909','0','32','22','1','0','0','0','0','0','0','Morbent Fel - Cast Unholy Shield and Set Phase 1 OOC'),
-('120002','1200','27','5','100','1','8909','1','3000','3000','0','0','11','8909','0','1','0','0','0','0','0','0','0','0','Morbent Fel - Cast Unholy Shield on Missing Buff (Phase 1)'),
+('120002','1200','27','13','100','1','8909','1','3000','3000','0','0','11','8909','0','1','0','0','0','0','0','0','0','0','Morbent Fel - Cast Unholy Shield on Missing Aura (Phase 1)'),
 ('120003','1200','0','0','100','1025','0','0','3700','13300','0','0','11','3108','1','0','0','0','0','0','0','0','0','0','Morbent Fel - Cast Touch of Death'),
 ('120004','1200','0','0','100','1025','0','0','24000','24000','0','0','11','3109','1','0','0','0','0','0','0','0','0','0','Morbent Fel - Cast Presence of Death'),
 ('120005','1200','2','0','100','0','15','0','0','0','0','0','28','0','8909','0','22','2','0','0','0','0','0','0','Morbent Fel - Remove Unholy Shield and Set Phase 2 at 15% HP'),
+('120006','1200','8','13','100','1','8913','-1','0','0','0','0','36','24782','0','0','22','3','0','0','0','0','0','0','Morbent Fel - Change Template on Spellhit (Phase 1)(Quest: 55)'),
+('120007','1200','21','7','100','0','0','0','0','0','0','0','36','1200','0','0','22','1','0','0','0','0','0','0','Morbent Fel - Change Template and Set Phase 1 on Reached Home (Phase 3)(Quest: 55)');
 -- Watcher Sarys (1203) - NSR
 -- Watcher Corwin (1204) - NSR
 -- Splinter Fist Firemonger (3.0.3 Official Data)
