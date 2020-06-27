@@ -1,0 +1,1 @@
+UPDATE creature_template SET InhabitType=4,AIName='' WHERE entry IN(21002);
