@@ -2019,7 +2019,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('120004','1200','0','0','100','1025','0','0','24000','24000','0','0','11','3109','1','0','0','0','0','0','0','0','0','0','Morbent Fel - Cast Presence of Death'),
 ('120005','1200','2','0','100','0','15','0','0','0','0','0','28','0','8909','0','22','2','0','0','0','0','0','0','Morbent Fel - Remove Unholy Shield and Set Phase 2 at 15% HP'),
 ('120006','1200','8','13','100','1','8913','-1','0','0','0','0','36','24782','0','0','22','3','0','0','0','0','0','0','Morbent Fel - Change Template on Spellhit (Phase 1)(Quest: 55)'),
-('120007','1200','21','7','100','0','0','0','0','0','0','0','36','1200','0','0','22','1','0','0','0','0','0','0','Morbent Fel - Change Template and Set Phase 1 on Reached Home (Phase 3)(Quest: 55)');
+('120007','1200','21','7','100','0','0','0','0','0','0','0','36','1200','0','0','22','1','0','0','0','0','0','0','Morbent Fel - Change Template and Set Phase 1 on Reached Home (Phase 3)(Quest: 55)'),
 -- Watcher Sarys (1203) - NSR
 -- Watcher Corwin (1204) - NSR
 -- Splinter Fist Firemonger (3.0.3 Official Data)
