@@ -508,71 +508,71 @@ INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`
 (20465, 0, 0, 1, 16, 0, 0, '18943 18950'); -- Underbog Frenzy
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+42, @CGUID+37, 1167), -- Underbog Lurker -> Underbog Lurker
-(@CGUID+110, @CGUID+37, 1167), -- Underbog Shambler -> Underbog Lurker
-(@CGUID+43, @CGUID+112, 1167), -- Underbog Lurker -> Underbog Shambler
-(@CGUID+44, @CGUID+112, 1167), -- Underbog Lurker -> Underbog Shambler
-(@CGUID+38, @CGUID+17, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+39, @CGUID+17, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+42, @CGUID+37, 1155), -- Underbog Lurker -> Underbog Lurker
+(@CGUID+110, @CGUID+37, 1155), -- Underbog Shambler -> Underbog Lurker
+(@CGUID+43, @CGUID+112, 1155), -- Underbog Lurker -> Underbog Shambler
+(@CGUID+44, @CGUID+112, 1155), -- Underbog Lurker -> Underbog Shambler
+(@CGUID+38, @CGUID+17, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+39, @CGUID+17, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+36, @CGUID+35, 1679), -- Underbat -> Underbat
 (@CGUID+16, @CGUID+13, 1679), -- Underbat -> Underbat
 (@CGUID+19, @CGUID+13, 1679), -- Underbat -> Underbat
 (@CGUID+15, @CGUID+14, 1679), -- Underbat -> Underbat
 (@CGUID+18, @CGUID+14, 1679), -- Underbat -> Underbat
-(@CGUID+24, @CGUID+40, 1167), -- Underbat -> Underbog Lurker
-(@CGUID+111, @CGUID+40, 1167), -- Underbog Shambler -> Underbog Lurker
+(@CGUID+24, @CGUID+40, 1155), -- Underbat -> Underbog Lurker
+(@CGUID+111, @CGUID+40, 1155), -- Underbog Shambler -> Underbog Lurker
 (@CGUID+34, @CGUID+33, 1679), -- Underbat -> Underbat
-(@CGUID+41, @CGUID+33, 1167), -- Underbog Lurker -> Underbat
-(@CGUID+25, @CGUID+45, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+113, @CGUID+45, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+41, @CGUID+33, 1155), -- Underbog Lurker -> Underbat
+(@CGUID+25, @CGUID+45, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+113, @CGUID+45, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+27, @CGUID+26, 1679), -- Underbat -> Underbat
-(@CGUID+46, @CGUID+26, 1167), -- Underbog Lurker -> Underbat
-(@CGUID+47, @CGUID+114, 1167), -- Underbog Lurker -> Underbog Shambler
-(@CGUID+48, @CGUID+114, 1167), -- Underbog Lurker -> Underbog Shambler
+(@CGUID+46, @CGUID+26, 1155), -- Underbog Lurker -> Underbat
+(@CGUID+47, @CGUID+114, 1155), -- Underbog Lurker -> Underbog Shambler
+(@CGUID+48, @CGUID+114, 1155), -- Underbog Lurker -> Underbog Shambler
 (@CGUID+28, @CGUID+49, 1679), -- creature_spawn_entry -> Underbog Lurker
 (@CGUID+29, @CGUID+49, 1679), -- creature_spawn_entry -> Underbog Lurker
 (@CGUID+31, @CGUID+30, 1679), -- Underbat -> Underbat
 (@CGUID+32, @CGUID+30, 1679), -- Underbat -> Underbat
-(@CGUID+8, @CGUID+7, 1167), -- Bog Giant -> Bog Giant
+(@CGUID+8, @CGUID+7, 1155), -- Bog Giant -> Bog Giant
 (@CGUID+20, @CGUID+23, 1679), -- Underbat -> Underbat
 (@CGUID+21, @CGUID+23, 1679), -- Underbat -> Underbat
 (@CGUID+22, @CGUID+23, 1679), -- Underbat -> Underbat
 (@CGUID+50, @CGUID+51, 1679), -- Wrathfin Myrmidon -> Wrathfin Myrmidon
-(@CGUID+57, @CGUID+56, 1167), -- Wrathfin Sentry -> Wrathfin Sentry
-(@CGUID+96, @CGUID+58, 1167), -- Wrathfin Warrior -> creature_spawn_entry
-(@CGUID+102, @CGUID+58, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+103, @CGUID+58, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+57, @CGUID+56, 1155), -- Wrathfin Sentry -> Wrathfin Sentry
+(@CGUID+96, @CGUID+58, 1155), -- Wrathfin Warrior -> creature_spawn_entry
+(@CGUID+102, @CGUID+58, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+103, @CGUID+58, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+53, @CGUID+52, 1679), -- Wrathfin Myrmidon -> Wrathfin Myrmidon
-(@CGUID+59, @CGUID+104, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+60, @CGUID+104, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+67, @CGUID+75, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+71, @CGUID+75, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+59, @CGUID+104, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+60, @CGUID+104, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+67, @CGUID+75, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+71, @CGUID+75, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+61, @CGUID+97, 1679), -- creature_spawn_entry -> Wrathfin Warrior
 (@CGUID+62, @CGUID+97, 1679), -- creature_spawn_entry -> Wrathfin Warrior
 (@CGUID+70, @CGUID+97, 1679), -- creature_spawn_entry -> Wrathfin Warrior
-(@CGUID+63, @CGUID+98, 1167), -- Murkblood Tribesman -> Wrathfin Warrior
-(@CGUID+64, @CGUID+98, 1167), -- Murkblood Tribesman -> Wrathfin Warrior
-(@CGUID+73, @CGUID+98, 1167), -- Murkblood Healer -> Wrathfin Warrior
-(@CGUID+65, @CGUID+105, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+74, @CGUID+105, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+63, @CGUID+98, 1155), -- Murkblood Tribesman -> Wrathfin Warrior
+(@CGUID+64, @CGUID+98, 1155), -- Murkblood Tribesman -> Wrathfin Warrior
+(@CGUID+73, @CGUID+98, 1155), -- Murkblood Healer -> Wrathfin Warrior
+(@CGUID+65, @CGUID+105, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+74, @CGUID+105, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+55, @CGUID+54, 1679), -- Wrathfin Myrmidon -> Wrathfin Myrmidon
-(@CGUID+66, @CGUID+99, 1167), -- creature_spawn_entry -> Wrathfin Warrior
-(@CGUID+106, @CGUID+99, 1167), -- creature_spawn_entry -> Wrathfin Warrior
-(@CGUID+107, @CGUID+99, 1167), -- creature_spawn_entry -> Wrathfin Warrior
-(@CGUID+68, @CGUID+72, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+69, @CGUID+72, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+100, @CGUID+72, 1167), -- Wrathfin Warrior -> creature_spawn_entry
+(@CGUID+66, @CGUID+99, 1155), -- creature_spawn_entry -> Wrathfin Warrior
+(@CGUID+106, @CGUID+99, 1155), -- creature_spawn_entry -> Wrathfin Warrior
+(@CGUID+107, @CGUID+99, 1155), -- creature_spawn_entry -> Wrathfin Warrior
+(@CGUID+68, @CGUID+72, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+69, @CGUID+72, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+100, @CGUID+72, 1155), -- Wrathfin Warrior -> creature_spawn_entry
 (@CGUID+77, @CGUID+76, 1679), -- Fen Ray -> Fen Ray
 (@CGUID+78, @CGUID+76, 1679), -- Fen Ray -> Fen Ray
-(@CGUID+85, @CGUID+79, 1167), -- Fen Ray -> Fen Ray
-(@CGUID+86, @CGUID+79, 1167), -- Fen Ray -> Fen Ray
+(@CGUID+85, @CGUID+79, 1155), -- Fen Ray -> Fen Ray
+(@CGUID+86, @CGUID+79, 1155), -- Fen Ray -> Fen Ray
 (@CGUID+91, @CGUID+118, 1679), -- Lykul Wasp -> Lykul Stinger
 (@CGUID+92, @CGUID+118, 1679), -- Lykul Wasp -> Lykul Stinger
-(@CGUID+88, @CGUID+87, 1167), -- Fen Ray -> Fen Ray
-(@CGUID+89, @CGUID+87, 1167), -- Fen Ray -> Fen Ray
-(@CGUID+83, @CGUID+84, 1167), -- Fen Ray -> creature_spawn_entry
-(@CGUID+80, @CGUID+90, 1167), -- Fen Ray -> Lykul Wasp
-(@CGUID+81, @CGUID+90, 1167), -- Fen Ray -> Lykul Wasp
+(@CGUID+88, @CGUID+87, 1155), -- Fen Ray -> Fen Ray
+(@CGUID+89, @CGUID+87, 1155), -- Fen Ray -> Fen Ray
+(@CGUID+83, @CGUID+84, 1155), -- Fen Ray -> creature_spawn_entry
+(@CGUID+80, @CGUID+90, 1155), -- Fen Ray -> Lykul Wasp
+(@CGUID+81, @CGUID+90, 1155), -- Fen Ray -> Lykul Wasp
 (@CGUID+94, @CGUID+119, 1679), -- Lykul Wasp -> Lykul Stinger
 (@CGUID+95, @CGUID+119, 1679); -- Lykul Wasp -> Lykul Stinger
 

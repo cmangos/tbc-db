@@ -3,7 +3,6 @@ DBName: Tempest Keep - The Mechanar (Mecha)
 DBScriptName: instance_mechanar
 DB%Complete: 80
 DBComment:
-* ACID Recheck
 EndDBScriptData */
 
 SET @CGUID := 5540000; -- creatures
@@ -157,52 +156,52 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 -- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+25, @CGUID+63, 1167), -- Bloodwarder Centurion -> Sunseeker Netherbinder
-(@CGUID+76, @CGUID+63, 1167), -- Bloodwarder Physician -> Sunseeker Netherbinder
-(@CGUID+10, @CGUID+64, 1167), -- Bloodwarder Slayer -> Sunseeker Netherbinder
-(@CGUID+77, @CGUID+64, 1167), -- Bloodwarder Physician -> Sunseeker Netherbinder
-(@CGUID+75, @CGUID+9, 1167), -- Bloodwarder Physician -> Bloodwarder Slayer
-(@CGUID+81, @CGUID+13, 1167), -- Bloodwarder Physician -> Bloodwarder Slayer
-(@CGUID+74, @CGUID+8, 1167), -- Bloodwarder Physician -> Bloodwarder Slayer
-(@CGUID+80, @CGUID+12, 1167), -- Bloodwarder Physician -> Bloodwarder Slayer
-(@CGUID+39, @CGUID+68, 1167), -- Mechanar Wrecker -> Sunseeker Engineer
-(@CGUID+40, @CGUID+68, 1167), -- Mechanar Wrecker -> Sunseeker Engineer
-(@CGUID+58, @CGUID+68, 1167), -- Mechanar Tinkerer -> Sunseeker Engineer
-(@CGUID+56, @CGUID+23, 1167), -- Mechanar Tinkerer -> Mechanar Crusher
-(@CGUID+57, @CGUID+23, 1167), -- Mechanar Tinkerer -> Mechanar Crusher
-(@CGUID+37, @CGUID+71, 1167), -- Mechanar Driller -> Sunseeker Engineer
-(@CGUID+38, @CGUID+71, 1167), -- Mechanar Driller -> Sunseeker Engineer
-(@CGUID+7, @CGUID+73, 1167), -- Bloodwarder Slayer -> Bloodwarder Physician
-(@CGUID+79, @CGUID+11, 1167), -- Bloodwarder Physician -> Bloodwarder Slayer
-(@CGUID+62, @CGUID+24, 1167), -- Sunseeker Netherbinder -> Bloodwarder Centurion
-(@CGUID+72, @CGUID+24, 1167), -- Bloodwarder Physician -> Bloodwarder Centurion
-(@CGUID+65, @CGUID+26, 1167), -- Sunseeker Netherbinder -> Bloodwarder Centurion
-(@CGUID+78, @CGUID+26, 1167), -- Bloodwarder Physician -> Bloodwarder Centurion
-(@CGUID+48, @CGUID+47, 1167), -- Mechanar Tinkerer -> Mechanar Tinkerer
-(@CGUID+49, @CGUID+47, 1167), -- Mechanar Tinkerer -> Mechanar Tinkerer
-(@CGUID+51, @CGUID+47, 1167), -- Mechanar Tinkerer -> Mechanar Tinkerer
-(@CGUID+33, @CGUID+55, 1167), -- Mechanar Driller -> Mechanar Tinkerer
-(@CGUID+34, @CGUID+55, 1167), -- Mechanar Driller -> Mechanar Tinkerer
-(@CGUID+54, @CGUID+55, 1167), -- Mechanar Tinkerer -> Mechanar Tinkerer
-(@CGUID+45, @CGUID+32, 1167), -- Mechanar Tinkerer -> Mechanar Driller
-(@CGUID+46, @CGUID+32, 1167), -- Mechanar Tinkerer -> Mechanar Driller
-(@CGUID+50, @CGUID+32, 1167), -- Mechanar Tinkerer -> Mechanar Driller
-(@CGUID+67, @CGUID+32, 1167), -- Sunseeker Engineer -> Mechanar Driller
-(@CGUID+35, @CGUID+70, 1167), -- Mechanar Driller -> Sunseeker Engineer
-(@CGUID+36, @CGUID+70, 1167), -- Mechanar Driller -> Sunseeker Engineer
-(@CGUID+41, @CGUID+53, 1167), -- Mechanar Wrecker -> Mechanar Tinkerer
-(@CGUID+42, @CGUID+53, 1167), -- Mechanar Wrecker -> Mechanar Tinkerer
-(@CGUID+52, @CGUID+53, 1167), -- Mechanar Tinkerer -> Mechanar Tinkerer
-(@CGUID+43, @CGUID+69, 1167), -- Mechanar Tinkerer -> Sunseeker Engineer
-(@CGUID+44, @CGUID+69, 1167), -- Mechanar Tinkerer -> Sunseeker Engineer
-(@CGUID+66, @CGUID+69, 1167), -- Sunseeker Engineer -> Sunseeker Engineer
-(@CGUID+15, @CGUID+14, 1167), -- Sunseeker Astromage -> Sunseeker Astromage
-(@CGUID+19, @CGUID+18, 1167), -- Sunseeker Astromage -> Sunseeker Astromage
-(@CGUID+29, @CGUID+18, 1167), -- Bloodwarder Centurion -> Sunseeker Astromage
-(@CGUID+30, @CGUID+18, 1167), -- Bloodwarder Centurion -> Sunseeker Astromage
-(@CGUID+17, @CGUID+16, 1167), -- Sunseeker Astromage -> Sunseeker Astromage
-(@CGUID+27, @CGUID+16, 1167), -- Bloodwarder Centurion -> Sunseeker Astromage
-(@CGUID+28, @CGUID+16, 1167); -- Bloodwarder Centurion -> Sunseeker Astromage
+(@CGUID+25, @CGUID+63, 1155), -- Bloodwarder Centurion -> Sunseeker Netherbinder
+(@CGUID+76, @CGUID+63, 1155), -- Bloodwarder Physician -> Sunseeker Netherbinder
+(@CGUID+10, @CGUID+64, 1155), -- Bloodwarder Slayer -> Sunseeker Netherbinder
+(@CGUID+77, @CGUID+64, 1155), -- Bloodwarder Physician -> Sunseeker Netherbinder
+(@CGUID+75, @CGUID+9, 1155), -- Bloodwarder Physician -> Bloodwarder Slayer
+(@CGUID+81, @CGUID+13, 1155), -- Bloodwarder Physician -> Bloodwarder Slayer
+(@CGUID+74, @CGUID+8, 1155), -- Bloodwarder Physician -> Bloodwarder Slayer
+(@CGUID+80, @CGUID+12, 1155), -- Bloodwarder Physician -> Bloodwarder Slayer
+(@CGUID+39, @CGUID+68, 1155), -- Mechanar Wrecker -> Sunseeker Engineer
+(@CGUID+40, @CGUID+68, 1155), -- Mechanar Wrecker -> Sunseeker Engineer
+(@CGUID+58, @CGUID+68, 1155), -- Mechanar Tinkerer -> Sunseeker Engineer
+(@CGUID+56, @CGUID+23, 1155), -- Mechanar Tinkerer -> Mechanar Crusher
+(@CGUID+57, @CGUID+23, 1155), -- Mechanar Tinkerer -> Mechanar Crusher
+(@CGUID+37, @CGUID+71, 1155), -- Mechanar Driller -> Sunseeker Engineer
+(@CGUID+38, @CGUID+71, 1155), -- Mechanar Driller -> Sunseeker Engineer
+(@CGUID+7, @CGUID+73, 1155), -- Bloodwarder Slayer -> Bloodwarder Physician
+(@CGUID+79, @CGUID+11, 1155), -- Bloodwarder Physician -> Bloodwarder Slayer
+(@CGUID+62, @CGUID+24, 1155), -- Sunseeker Netherbinder -> Bloodwarder Centurion
+(@CGUID+72, @CGUID+24, 1155), -- Bloodwarder Physician -> Bloodwarder Centurion
+(@CGUID+65, @CGUID+26, 1155), -- Sunseeker Netherbinder -> Bloodwarder Centurion
+(@CGUID+78, @CGUID+26, 1155), -- Bloodwarder Physician -> Bloodwarder Centurion
+(@CGUID+48, @CGUID+47, 1155), -- Mechanar Tinkerer -> Mechanar Tinkerer
+(@CGUID+49, @CGUID+47, 1155), -- Mechanar Tinkerer -> Mechanar Tinkerer
+(@CGUID+51, @CGUID+47, 1155), -- Mechanar Tinkerer -> Mechanar Tinkerer
+(@CGUID+33, @CGUID+55, 1155), -- Mechanar Driller -> Mechanar Tinkerer
+(@CGUID+34, @CGUID+55, 1155), -- Mechanar Driller -> Mechanar Tinkerer
+(@CGUID+54, @CGUID+55, 1155), -- Mechanar Tinkerer -> Mechanar Tinkerer
+(@CGUID+45, @CGUID+32, 1155), -- Mechanar Tinkerer -> Mechanar Driller
+(@CGUID+46, @CGUID+32, 1155), -- Mechanar Tinkerer -> Mechanar Driller
+(@CGUID+50, @CGUID+32, 1155), -- Mechanar Tinkerer -> Mechanar Driller
+(@CGUID+67, @CGUID+32, 1155), -- Sunseeker Engineer -> Mechanar Driller
+(@CGUID+35, @CGUID+70, 1155), -- Mechanar Driller -> Sunseeker Engineer
+(@CGUID+36, @CGUID+70, 1155), -- Mechanar Driller -> Sunseeker Engineer
+(@CGUID+41, @CGUID+53, 1155), -- Mechanar Wrecker -> Mechanar Tinkerer
+(@CGUID+42, @CGUID+53, 1155), -- Mechanar Wrecker -> Mechanar Tinkerer
+(@CGUID+52, @CGUID+53, 1155), -- Mechanar Tinkerer -> Mechanar Tinkerer
+(@CGUID+43, @CGUID+69, 1155), -- Mechanar Tinkerer -> Sunseeker Engineer
+(@CGUID+44, @CGUID+69, 1155), -- Mechanar Tinkerer -> Sunseeker Engineer
+(@CGUID+66, @CGUID+69, 1155), -- Sunseeker Engineer -> Sunseeker Engineer
+(@CGUID+15, @CGUID+14, 1155), -- Sunseeker Astromage -> Sunseeker Astromage
+(@CGUID+19, @CGUID+18, 1155), -- Sunseeker Astromage -> Sunseeker Astromage
+(@CGUID+29, @CGUID+18, 1155), -- Bloodwarder Centurion -> Sunseeker Astromage
+(@CGUID+30, @CGUID+18, 1155), -- Bloodwarder Centurion -> Sunseeker Astromage
+(@CGUID+17, @CGUID+16, 1155), -- Sunseeker Astromage -> Sunseeker Astromage
+(@CGUID+27, @CGUID+16, 1155), -- Bloodwarder Centurion -> Sunseeker Astromage
+(@CGUID+28, @CGUID+16, 1155); -- Bloodwarder Centurion -> Sunseeker Astromage
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (20481, 554, 19221, 4113, 0); -- Raging Flames -> Nethermancer Sepethrea

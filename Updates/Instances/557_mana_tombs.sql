@@ -147,88 +147,88 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (19307, 0, 0, 1, 16, 0, 0, NULL); -- Nexus Terror
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+41, @CGUID+48, 1167), -- Ethereal Scavenger -> Ethereal Crypt Raider
+(@CGUID+41, @CGUID+48, 1155), -- Ethereal Scavenger -> Ethereal Crypt Raider
 (@CGUID+40, @CGUID+47, 1679), -- Ethereal Scavenger -> Ethereal Crypt Raider
-(@CGUID+49, @CGUID+50, 1167), -- Ethereal Crypt Raider -> Ethereal Crypt Raider
-(@CGUID+51, @CGUID+74, 1167), -- Ethereal Crypt Raider -> Ethereal Sorcerer
-(@CGUID+52, @CGUID+74, 1167), -- Ethereal Crypt Raider -> Ethereal Sorcerer
+(@CGUID+49, @CGUID+50, 1155), -- Ethereal Crypt Raider -> Ethereal Crypt Raider
+(@CGUID+51, @CGUID+74, 1155), -- Ethereal Crypt Raider -> Ethereal Sorcerer
+(@CGUID+52, @CGUID+74, 1155), -- Ethereal Crypt Raider -> Ethereal Sorcerer
 (@CGUID+74, @CGUID+135, 1), -- Ethereal Sorcerer -> Pandemonius
-(@CGUID+43, @CGUID+54, 1167), -- Ethereal Scavenger -> Ethereal Crypt Raider
-(@CGUID+76, @CGUID+54, 1167), -- Ethereal Sorcerer -> Ethereal Crypt Raider
+(@CGUID+43, @CGUID+54, 1155), -- Ethereal Scavenger -> Ethereal Crypt Raider
+(@CGUID+76, @CGUID+54, 1155), -- Ethereal Sorcerer -> Ethereal Crypt Raider
 (@CGUID+54, @CGUID+135, 1), -- Ethereal Crypt Raider -> Pandemonius
-(@CGUID+42, @CGUID+73, 1167), -- creature_spawn_entry -> Ethereal Sorcerer
+(@CGUID+42, @CGUID+73, 1155), -- creature_spawn_entry -> Ethereal Sorcerer
 (@CGUID+73, @CGUID+135, 1), -- Ethereal Sorcerer -> Pandemonius
 (@CGUID+56, @CGUID+75, 1679), -- Ethereal Crypt Raider -> Ethereal Sorcerer
 (@CGUID+75, @CGUID+135, 1), -- Ethereal Sorcerer -> Pandemonius
-(@CGUID+53, @CGUID+77, 1167), -- Ethereal Crypt Raider -> Ethereal Sorcerer
-(@CGUID+55, @CGUID+77, 1167), -- Ethereal Crypt Raider -> Ethereal Sorcerer
+(@CGUID+53, @CGUID+77, 1155), -- Ethereal Crypt Raider -> Ethereal Sorcerer
+(@CGUID+55, @CGUID+77, 1155), -- Ethereal Crypt Raider -> Ethereal Sorcerer
 (@CGUID+77, @CGUID+135, 1), -- Ethereal Sorcerer -> Pandemonius
-(@CGUID+60, @CGUID+90, 1167), -- Ethereal Crypt Raider -> creature_spawn_entry
-(@CGUID+46, @CGUID+89, 1167), -- Ethereal Scavenger -> Ethereal Sorcerer
-(@CGUID+59, @CGUID+89, 1167), -- Ethereal Crypt Raider -> Ethereal Sorcerer
-(@CGUID+119, @CGUID+89, 1167), -- Ethereal Priest -> Ethereal Sorcerer
-(@CGUID+121, @CGUID+92, 1167), -- Ethereal Priest -> Ethereal Sorcerer
-(@CGUID+122, @CGUID+92, 1167), -- Ethereal Priest -> Ethereal Sorcerer
-(@CGUID+84, @CGUID+112, 1167), -- Ethereal Sorcerer -> Ethereal Priest
-(@CGUID+85, @CGUID+112, 1167), -- Ethereal Sorcerer -> Ethereal Priest
+(@CGUID+60, @CGUID+90, 1155), -- Ethereal Crypt Raider -> creature_spawn_entry
+(@CGUID+46, @CGUID+89, 1155), -- Ethereal Scavenger -> Ethereal Sorcerer
+(@CGUID+59, @CGUID+89, 1155), -- Ethereal Crypt Raider -> Ethereal Sorcerer
+(@CGUID+119, @CGUID+89, 1155), -- Ethereal Priest -> Ethereal Sorcerer
+(@CGUID+121, @CGUID+92, 1155), -- Ethereal Priest -> Ethereal Sorcerer
+(@CGUID+122, @CGUID+92, 1155), -- Ethereal Priest -> Ethereal Sorcerer
+(@CGUID+84, @CGUID+112, 1155), -- Ethereal Sorcerer -> Ethereal Priest
+(@CGUID+85, @CGUID+112, 1155), -- Ethereal Sorcerer -> Ethereal Priest
 (@CGUID+120, @CGUID+91, 1679), -- Ethereal Priest -> Ethereal Sorcerer
-(@CGUID+155, @CGUID+154, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+156, @CGUID+154, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+157, @CGUID+154, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+158, @CGUID+154, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+160, @CGUID+159, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+161, @CGUID+159, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+88, @CGUID+45, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+116, @CGUID+45, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+155, @CGUID+154, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+156, @CGUID+154, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+157, @CGUID+154, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+158, @CGUID+154, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+160, @CGUID+159, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+161, @CGUID+159, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+88, @CGUID+45, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+116, @CGUID+45, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+118, @CGUID+117, 1679), -- creature_spawn_entry -> Ethereal Priest
-(@CGUID+83, @CGUID+110, 1167), -- creature_spawn_entry -> Ethereal Priest
-(@CGUID+111, @CGUID+110, 1167), -- Ethereal Priest -> Ethereal Priest
-(@CGUID+87, @CGUID+86, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+115, @CGUID+86, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+44, @CGUID+106, 1167), -- Ethereal Scavenger -> Ethereal Priest
-(@CGUID+80, @CGUID+106, 1167), -- Ethereal Sorcerer -> Ethereal Priest
-(@CGUID+127, @CGUID+106, 1167), -- Ethereal Darkcaster -> Ethereal Priest
+(@CGUID+83, @CGUID+110, 1155), -- creature_spawn_entry -> Ethereal Priest
+(@CGUID+111, @CGUID+110, 1155), -- Ethereal Priest -> Ethereal Priest
+(@CGUID+87, @CGUID+86, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+115, @CGUID+86, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+44, @CGUID+106, 1155), -- Ethereal Scavenger -> Ethereal Priest
+(@CGUID+80, @CGUID+106, 1155), -- Ethereal Sorcerer -> Ethereal Priest
+(@CGUID+127, @CGUID+106, 1155), -- Ethereal Darkcaster -> Ethereal Priest
 (@CGUID+128, @CGUID+129, 1679), -- creature_spawn_entry -> Ethereal Darkcaster
-(@CGUID+82, @CGUID+132, 1167), -- Ethereal Sorcerer -> Ethereal Darkcaster
-(@CGUID+109, @CGUID+132, 1167), -- Ethereal Priest -> Ethereal Darkcaster
-(@CGUID+134, @CGUID+114, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+152, @CGUID+151, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+153, @CGUID+151, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+81, @CGUID+108, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+131, @CGUID+108, 1167), -- Ethereal Darkcaster -> creature_spawn_entry
-(@CGUID+130, @CGUID+107, 1167), -- Ethereal Darkcaster -> creature_spawn_entry
-(@CGUID+126, @CGUID+125, 1167), -- Ethereal Darkcaster -> Ethereal Darkcaster
+(@CGUID+82, @CGUID+132, 1155), -- Ethereal Sorcerer -> Ethereal Darkcaster
+(@CGUID+109, @CGUID+132, 1155), -- Ethereal Priest -> Ethereal Darkcaster
+(@CGUID+134, @CGUID+114, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+152, @CGUID+151, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+153, @CGUID+151, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+81, @CGUID+108, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+131, @CGUID+108, 1155), -- Ethereal Darkcaster -> creature_spawn_entry
+(@CGUID+130, @CGUID+107, 1155), -- Ethereal Darkcaster -> creature_spawn_entry
+(@CGUID+126, @CGUID+125, 1155), -- Ethereal Darkcaster -> Ethereal Darkcaster
 (@CGUID+93, @CGUID+105, 1679), -- Nexus Stalker -> creature_spawn_entry
 (@CGUID+94, @CGUID+105, 1679), -- Nexus Stalker -> creature_spawn_entry
-(@CGUID+163, @CGUID+162, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+164, @CGUID+162, 1167), -- Mana Leech -> Mana Leech
+(@CGUID+163, @CGUID+162, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+164, @CGUID+162, 1155), -- Mana Leech -> Mana Leech
 (@CGUID+97, @CGUID+133, 1679), -- creature_spawn_entry -> Nexus Stalker
-(@CGUID+78, @CGUID+123, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+79, @CGUID+124, 1167), -- Ethereal Sorcerer -> Ethereal Darkcaster
-(@CGUID+95, @CGUID+101, 1167), -- Nexus Stalker -> creature_spawn_entry
-(@CGUID+96, @CGUID+101, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+64, @CGUID+99, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+66, @CGUID+65, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+100, @CGUID+65, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+63, @CGUID+62, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+98, @CGUID+62, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+58, @CGUID+57, 1167), -- Ethereal Crypt Raider -> Ethereal Crypt Raider
-(@CGUID+61, @CGUID+57, 1167), -- Ethereal Spellbinder -> Ethereal Crypt Raider
-(@CGUID+113, @CGUID+57, 1167), -- Ethereal Priest -> Ethereal Crypt Raider
+(@CGUID+78, @CGUID+123, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+79, @CGUID+124, 1155), -- Ethereal Sorcerer -> Ethereal Darkcaster
+(@CGUID+95, @CGUID+101, 1155), -- Nexus Stalker -> creature_spawn_entry
+(@CGUID+96, @CGUID+101, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+64, @CGUID+99, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+66, @CGUID+65, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+100, @CGUID+65, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+63, @CGUID+62, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+98, @CGUID+62, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+58, @CGUID+57, 1155), -- Ethereal Crypt Raider -> Ethereal Crypt Raider
+(@CGUID+61, @CGUID+57, 1155), -- Ethereal Spellbinder -> Ethereal Crypt Raider
+(@CGUID+113, @CGUID+57, 1155), -- Ethereal Priest -> Ethereal Crypt Raider
 (@CGUID+69, @CGUID+70, 1679), -- Ethereal Spellbinder -> Ethereal Spellbinder
-(@CGUID+72, @CGUID+71, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+104, @CGUID+71, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+67, @CGUID+102, 1167), -- Ethereal Spellbinder -> Ethereal Theurgist
-(@CGUID+68, @CGUID+102, 1167), -- Ethereal Spellbinder -> Ethereal Theurgist
-(@CGUID+103, @CGUID+102, 1167), -- Ethereal Theurgist -> Ethereal Theurgist
-(@CGUID+147, @CGUID+146, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+148, @CGUID+146, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+149, @CGUID+146, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+150, @CGUID+146, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+142, @CGUID+141, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+143, @CGUID+141, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+144, @CGUID+141, 1167), -- Mana Leech -> Mana Leech
-(@CGUID+145, @CGUID+141, 1167), -- Mana Leech -> Mana Leech
+(@CGUID+72, @CGUID+71, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+104, @CGUID+71, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+67, @CGUID+102, 1155), -- Ethereal Spellbinder -> Ethereal Theurgist
+(@CGUID+68, @CGUID+102, 1155), -- Ethereal Spellbinder -> Ethereal Theurgist
+(@CGUID+103, @CGUID+102, 1155), -- Ethereal Theurgist -> Ethereal Theurgist
+(@CGUID+147, @CGUID+146, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+148, @CGUID+146, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+149, @CGUID+146, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+150, @CGUID+146, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+142, @CGUID+141, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+143, @CGUID+141, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+144, @CGUID+141, 1155), -- Mana Leech -> Mana Leech
+(@CGUID+145, @CGUID+141, 1155), -- Mana Leech -> Mana Leech
 (@CGUID+169, @CGUID+137, 1), -- Nexus Terror -> Nexus-Prince Shaffar
 (@CGUID+170, @CGUID+137, 1), -- Nexus Terror -> Nexus-Prince Shaffar
 (@CGUID+146, @CGUID+137, 1), -- Mana Leech -> Nexus-Prince Shaffar

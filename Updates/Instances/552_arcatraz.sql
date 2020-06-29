@@ -406,16 +406,16 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+31, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
 (@CGUID+32, @CGUID+27, 1679), -- Protean Horror -> Protean Horror
 
-(@CGUID+42, @CGUID+43, 1167), -- Arcatraz Sentinel -> Arcatraz Sentinel
+(@CGUID+42, @CGUID+43, 1155), -- Arcatraz Sentinel -> Arcatraz Sentinel
 
-(@CGUID+72, @CGUID+73, 1167), -- Ethereum Slayer -> Ethereum Slayer
-(@CGUID+145, @CGUID+73, 1167), -- Ethereum Life-Binder -> Ethereum Slayer
-(@CGUID+76, @CGUID+73, 1167), -- Ethereum Wave-Caster -> Ethereum Slayer
+(@CGUID+72, @CGUID+73, 1155), -- Ethereum Slayer -> Ethereum Slayer
+(@CGUID+145, @CGUID+73, 1155), -- Ethereum Life-Binder -> Ethereum Slayer
+(@CGUID+76, @CGUID+73, 1155), -- Ethereum Wave-Caster -> Ethereum Slayer
 (@CGUID+75, @CGUID+74, 1679), -- Ethereum Slayer -> Ethereum Slayer
 (@CGUID+77, @CGUID+74, 1679), -- Ethereum Wave-Caster -> Ethereum Slayer
 (@CGUID+146, @CGUID+74, 1679), -- Ethereum Life-Binder -> Ethereum Slayer
-(@CGUID+82, @CGUID+84, 1167), -- Sargeron Archer -> Sargeron Hellcaller
-(@CGUID+83, @CGUID+85, 1167); -- Sargeron Archer -> Sargeron Hellcaller
+(@CGUID+82, @CGUID+84, 1155), -- Sargeron Archer -> Sargeron Hellcaller
+(@CGUID+83, @CGUID+85, 1155); -- Sargeron Archer -> Sargeron Hellcaller
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 -- (20859, 552, 20857, 1, 0), -- Arcatraz Warder -> Arcatraz Defender

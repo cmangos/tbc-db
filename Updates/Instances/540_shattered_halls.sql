@@ -471,36 +471,36 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+307, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 (@CGUID+308, @CGUID+74, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
 
-(@CGUID+52, @CGUID+53, 1167), -- Shattered Hand Sentry -> Shattered Hand Sentry
+(@CGUID+52, @CGUID+53, 1155), -- Shattered Hand Sentry -> Shattered Hand Sentry
 
 -- Hall of the Fathers - first room
-(@CGUID+219, @CGUID+139, 1167), -- Shadowmoon Darkcaster -> Shattered Hand Heathen
-(@CGUID+67, @CGUID+142, 1167), -- Shadowmoon Acolyte -> Shattered Hand Heathen
-(@CGUID+220, @CGUID+141, 1167), -- Shadowmoon Darkcaster -> Shattered Hand Heathen
-(@CGUID+66, @CGUID+140, 1167), -- Shadowmoon Acolyte -> Shattered Hand Heathen
+(@CGUID+219, @CGUID+139, 1155), -- Shadowmoon Darkcaster -> Shattered Hand Heathen
+(@CGUID+67, @CGUID+142, 1155), -- Shadowmoon Acolyte -> Shattered Hand Heathen
+(@CGUID+220, @CGUID+141, 1155), -- Shadowmoon Darkcaster -> Shattered Hand Heathen
+(@CGUID+66, @CGUID+140, 1155), -- Shadowmoon Acolyte -> Shattered Hand Heathen
 
-(@CGUID+54, @CGUID+55, 1167), -- Shattered Hand Sentry -> Shattered Hand Sentry
-(@CGUID+79, @CGUID+75, 1167), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
-(@CGUID+80, @CGUID+75, 1167), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
-(@CGUID+132, @CGUID+75, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+70, @CGUID+75, 1167), -- Shattered Hand Reaver -> Shattered Hand Legionnaire
-(@CGUID+81, @CGUID+76, 1167), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
-(@CGUID+71, @CGUID+76, 1167), -- Shattered Hand Reaver -> Shattered Hand Legionnaire
-(@CGUID+72, @CGUID+76, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+133, @CGUID+76, 1167), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
-(@CGUID+275, @CGUID+282, 1167), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
-(@CGUID+279, @CGUID+282, 1167), -- Shattered Hand Reaver -> Shattered Hand Legionnaire
-(@CGUID+277, @CGUID+282, 1167), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
-(@CGUID+278, @CGUID+282, 1167), -- Shattered Hand Reaver -> Shattered Hand Legionnaire
-(@CGUID+276, @CGUID+282, 1167), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
-(@CGUID+69, @CGUID+78, 1167), -- Shadowmoon Acolyte -> Shattered Hand Legionnaire
-(@CGUID+73, @CGUID+78, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+221, @CGUID+78, 1167), -- Shadowmoon Darkcaster -> Shattered Hand Legionnaire
-(@CGUID+90, @CGUID+78, 1167), -- Fel Orc Convert -> Shattered Hand Legionnaire
-(@CGUID+56, @CGUID+78, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+89, @CGUID+78, 1167), -- Fel Orc Convert -> Shattered Hand Legionnaire
-(@CGUID+187, @CGUID+189, 1167), -- Rabid Warhound -> Shattered Hand Houndmaster
-(@CGUID+188, @CGUID+189, 1167), -- Rabid Warhound -> Shattered Hand Houndmaster
+(@CGUID+54, @CGUID+55, 1155), -- Shattered Hand Sentry -> Shattered Hand Sentry
+(@CGUID+79, @CGUID+75, 1155), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
+(@CGUID+80, @CGUID+75, 1155), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
+(@CGUID+132, @CGUID+75, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+70, @CGUID+75, 1155), -- Shattered Hand Reaver -> Shattered Hand Legionnaire
+(@CGUID+81, @CGUID+76, 1155), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
+(@CGUID+71, @CGUID+76, 1155), -- Shattered Hand Reaver -> Shattered Hand Legionnaire
+(@CGUID+72, @CGUID+76, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+133, @CGUID+76, 1155), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+(@CGUID+275, @CGUID+282, 1155), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
+(@CGUID+279, @CGUID+282, 1155), -- Shattered Hand Reaver -> Shattered Hand Legionnaire
+(@CGUID+277, @CGUID+282, 1155), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
+(@CGUID+278, @CGUID+282, 1155), -- Shattered Hand Reaver -> Shattered Hand Legionnaire
+(@CGUID+276, @CGUID+282, 1155), -- Shattered Hand Sharpshooter -> Shattered Hand Legionnaire
+(@CGUID+69, @CGUID+78, 1155), -- Shadowmoon Acolyte -> Shattered Hand Legionnaire
+(@CGUID+73, @CGUID+78, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+221, @CGUID+78, 1155), -- Shadowmoon Darkcaster -> Shattered Hand Legionnaire
+(@CGUID+90, @CGUID+78, 1155), -- Fel Orc Convert -> Shattered Hand Legionnaire
+(@CGUID+56, @CGUID+78, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+89, @CGUID+78, 1155), -- Fel Orc Convert -> Shattered Hand Legionnaire
+(@CGUID+187, @CGUID+189, 1155), -- Rabid Warhound -> Shattered Hand Houndmaster
+(@CGUID+188, @CGUID+189, 1155), -- Rabid Warhound -> Shattered Hand Houndmaster
 (@CGUID+98, @CGUID+93, 1679), -- Creeping Oozeling -> Creeping Ooze
 (@CGUID+99, @CGUID+92, 1679), -- Creeping Oozeling -> Creeping Ooze
 (@CGUID+100, @CGUID+94, 1679), -- Creeping Oozeling -> Creeping Ooze
@@ -537,40 +537,40 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+151, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
 (@CGUID+152, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
 (@CGUID+149, @CGUID+143, 1), -- Shattered Hand Zealot -> Shattered Hand Archer
-(@CGUID+153, @CGUID+169, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+154, @CGUID+169, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+155, @CGUID+169, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+156, @CGUID+169, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+157, @CGUID+170, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+158, @CGUID+170, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+159, @CGUID+170, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+160, @CGUID+170, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+161, @CGUID+171, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+162, @CGUID+171, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+163, @CGUID+171, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+164, @CGUID+171, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+165, @CGUID+172, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+166, @CGUID+172, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+167, @CGUID+172, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+168, @CGUID+172, 1167), -- Shattered Hand Gladiator -> Shattered Hand Centurion
-(@CGUID+57, @CGUID+62, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+58, @CGUID+62, 1167), -- Shadowmoon Acolyte -> Shattered Hand Legionnaire
-(@CGUID+59, @CGUID+62, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+60, @CGUID+62, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+61, @CGUID+62, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+153, @CGUID+169, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+154, @CGUID+169, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+155, @CGUID+169, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+156, @CGUID+169, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+157, @CGUID+170, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+158, @CGUID+170, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+159, @CGUID+170, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+160, @CGUID+170, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+161, @CGUID+171, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+162, @CGUID+171, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+163, @CGUID+171, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+164, @CGUID+171, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+165, @CGUID+172, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+166, @CGUID+172, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+167, @CGUID+172, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+168, @CGUID+172, 1155), -- Shattered Hand Gladiator -> Shattered Hand Centurion
+(@CGUID+57, @CGUID+62, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+58, @CGUID+62, 1155), -- Shadowmoon Acolyte -> Shattered Hand Legionnaire
+(@CGUID+59, @CGUID+62, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+60, @CGUID+62, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+61, @CGUID+62, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+269, @CGUID+268, 1679), -- Rabid Warhound -> Shattered Hand Houndmaster
 (@CGUID+270, @CGUID+268, 1679), -- Rabid Warhound -> Shattered Hand Houndmaster
-(@CGUID+259, @CGUID+264, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+260, @CGUID+264, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+261, @CGUID+264, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+263, @CGUID+264, 1167), -- Shadowmoon Acolyte -> Shattered Hand Legionnaire
-(@CGUID+262, @CGUID+264, 1167), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+259, @CGUID+264, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+260, @CGUID+264, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+261, @CGUID+264, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
+(@CGUID+263, @CGUID+264, 1155), -- Shadowmoon Acolyte -> Shattered Hand Legionnaire
+(@CGUID+262, @CGUID+264, 1155), -- creature_spawn_entry -> Shattered Hand Legionnaire
 (@CGUID+284, @CGUID+283, 1679), -- Rabid Warhound -> Shattered Hand Houndmaster
 (@CGUID+285, @CGUID+283, 1679), -- Rabid Warhound -> Shattered Hand Houndmaster
-(@CGUID+190, @CGUID+191, 1167), -- Shattered Hand Champion -> Shattered Hand Champion
-(@CGUID+192, @CGUID+193, 1167), -- Shattered Hand Champion -> Shattered Hand Champion
-(@CGUID+194, @CGUID+195, 1167), -- Shattered Hand Champion -> Shattered Hand Champion
-(@CGUID+196, @CGUID+197, 1167), -- Shattered Hand Champion -> Shattered Hand Champion
+(@CGUID+190, @CGUID+191, 1155), -- Shattered Hand Champion -> Shattered Hand Champion
+(@CGUID+192, @CGUID+193, 1155), -- Shattered Hand Champion -> Shattered Hand Champion
+(@CGUID+194, @CGUID+195, 1155), -- Shattered Hand Champion -> Shattered Hand Champion
+(@CGUID+196, @CGUID+197, 1155), -- Shattered Hand Champion -> Shattered Hand Champion
 (@CGUID+272, @CGUID+271, 1679), -- Rabid Warhound -> Shattered Hand Houndmaster
 (@CGUID+273, @CGUID+271, 1679); -- Rabid Warhound -> Shattered Hand Houndmaster
 

@@ -356,119 +356,119 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (19843, 0, 0, 1, 16, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+15, @CGUID+16, 1167), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+17, @CGUID+18, 1167), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+6, @CGUID+19, 1167), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+48, @CGUID+51, 1167), -- Bloodwarder Greenkeeper -> Bloodwarder Greenkeeper
-(@CGUID+180, @CGUID+51, 1167), -- Bloodwarder Mender -> Bloodwarder Greenkeeper
-(@CGUID+46, @CGUID+47, 1167), -- Bloodwarder Greenkeeper -> Bloodwarder Greenkeeper
-(@CGUID+178, @CGUID+47, 1167), -- Bloodwarder Mender -> Bloodwarder Greenkeeper
-(@CGUID+44, @CGUID+177, 1167), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+45, @CGUID+177, 1167), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+8, @CGUID+7, 1167), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+49, @CGUID+179, 1167), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+50, @CGUID+179, 1167), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+30, @CGUID+28, 1167), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+31, @CGUID+28, 1167), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+32, @CGUID+28, 1167), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+9, @CGUID+10, 1167), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+11, @CGUID+36, 1167), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+12, @CGUID+36, 1167), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+33, @CGUID+29, 1167), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+34, @CGUID+29, 1167), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+35, @CGUID+29, 1167), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+20, @CGUID+37, 1167), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+21, @CGUID+37, 1167), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+24, @CGUID+39, 1167), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+25, @CGUID+39, 1167), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+22, @CGUID+38, 1167), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+23, @CGUID+38, 1167), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+63, @CGUID+54, 1167), -- Sunseeker Botanist -> Sunseeker Researcher
-(@CGUID+86, @CGUID+54, 1167), -- Sunseeker Chemist -> Sunseeker Researcher
-(@CGUID+144, @CGUID+54, 1167), -- Greater Frayer -> Sunseeker Researcher
+(@CGUID+15, @CGUID+16, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
+(@CGUID+17, @CGUID+18, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
+(@CGUID+6, @CGUID+19, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
+(@CGUID+48, @CGUID+51, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Greenkeeper
+(@CGUID+180, @CGUID+51, 1155), -- Bloodwarder Mender -> Bloodwarder Greenkeeper
+(@CGUID+46, @CGUID+47, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Greenkeeper
+(@CGUID+178, @CGUID+47, 1155), -- Bloodwarder Mender -> Bloodwarder Greenkeeper
+(@CGUID+44, @CGUID+177, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
+(@CGUID+45, @CGUID+177, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
+(@CGUID+8, @CGUID+7, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
+(@CGUID+49, @CGUID+179, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
+(@CGUID+50, @CGUID+179, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
+(@CGUID+30, @CGUID+28, 1155), -- Bloodfalcon -> Bloodwarder Falconer
+(@CGUID+31, @CGUID+28, 1155), -- Bloodfalcon -> Bloodwarder Falconer
+(@CGUID+32, @CGUID+28, 1155), -- Bloodfalcon -> Bloodwarder Falconer
+(@CGUID+9, @CGUID+10, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
+(@CGUID+11, @CGUID+36, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
+(@CGUID+12, @CGUID+36, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
+(@CGUID+33, @CGUID+29, 1155), -- Bloodfalcon -> Bloodwarder Falconer
+(@CGUID+34, @CGUID+29, 1155), -- Bloodfalcon -> Bloodwarder Falconer
+(@CGUID+35, @CGUID+29, 1155), -- Bloodfalcon -> Bloodwarder Falconer
+(@CGUID+20, @CGUID+37, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
+(@CGUID+21, @CGUID+37, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
+(@CGUID+24, @CGUID+39, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
+(@CGUID+25, @CGUID+39, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
+(@CGUID+22, @CGUID+38, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
+(@CGUID+23, @CGUID+38, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
+(@CGUID+63, @CGUID+54, 1155), -- Sunseeker Botanist -> Sunseeker Researcher
+(@CGUID+86, @CGUID+54, 1155), -- Sunseeker Chemist -> Sunseeker Researcher
+(@CGUID+144, @CGUID+54, 1155), -- Greater Frayer -> Sunseeker Researcher
 (@CGUID+145, @CGUID+64, 1679), -- Greater Frayer -> Sunseeker Botanist
-(@CGUID+57, @CGUID+89, 1167), -- Sunseeker Researcher -> Sunseeker Chemist
-(@CGUID+58, @CGUID+89, 1167), -- Sunseeker Researcher -> Sunseeker Chemist
-(@CGUID+67, @CGUID+89, 1167), -- Sunseeker Botanist -> Sunseeker Chemist
-(@CGUID+148, @CGUID+89, 1167), -- Greater Frayer -> Sunseeker Chemist
+(@CGUID+57, @CGUID+89, 1155), -- Sunseeker Researcher -> Sunseeker Chemist
+(@CGUID+58, @CGUID+89, 1155), -- Sunseeker Researcher -> Sunseeker Chemist
+(@CGUID+67, @CGUID+89, 1155), -- Sunseeker Botanist -> Sunseeker Chemist
+(@CGUID+148, @CGUID+89, 1155), -- Greater Frayer -> Sunseeker Chemist
 (@CGUID+147, @CGUID+66, 1679), -- Greater Frayer -> Sunseeker Botanist
-(@CGUID+56, @CGUID+87, 1167), -- Sunseeker Researcher -> Sunseeker Chemist
-(@CGUID+62, @CGUID+87, 1167), -- Sunseeker Researcher -> Sunseeker Chemist
-(@CGUID+55, @CGUID+88, 1167), -- Sunseeker Researcher -> Sunseeker Chemist
-(@CGUID+59, @CGUID+88, 1167), -- Sunseeker Researcher -> Sunseeker Chemist
-(@CGUID+65, @CGUID+88, 1167), -- Sunseeker Botanist -> Sunseeker Chemist
-(@CGUID+146, @CGUID+88, 1167), -- Greater Frayer -> Sunseeker Chemist
-(@CGUID+70, @CGUID+52, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+71, @CGUID+52, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+72, @CGUID+52, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+73, @CGUID+52, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+74, @CGUID+52, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+75, @CGUID+52, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+76, @CGUID+52, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+77, @CGUID+52, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+60, @CGUID+68, 1167), -- Sunseeker Researcher -> Sunseeker Botanist
-(@CGUID+149, @CGUID+68, 1167), -- Greater Frayer -> Sunseeker Botanist
-(@CGUID+69, @CGUID+90, 1167), -- Sunseeker Botanist -> Sunseeker Chemist
-(@CGUID+150, @CGUID+90, 1167), -- Greater Frayer -> Sunseeker Chemist
-(@CGUID+78, @CGUID+53, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+79, @CGUID+53, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+80, @CGUID+53, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+81, @CGUID+53, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+82, @CGUID+53, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+83, @CGUID+53, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+84, @CGUID+53, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+85, @CGUID+53, 1167), -- Frayer -> Sunseeker Geomancer
-(@CGUID+92, @CGUID+93, 1167), -- Sunseeker Channeler -> Sunseeker Channeler
-(@CGUID+94, @CGUID+95, 1167), -- Sunseeker Channeler -> Sunseeker Channeler
-(@CGUID+114, @CGUID+120, 1167), -- Sunseeker Herbalist -> Sunseeker Harvester
-(@CGUID+115, @CGUID+120, 1167), -- Sunseeker Herbalist -> Sunseeker Harvester
+(@CGUID+56, @CGUID+87, 1155), -- Sunseeker Researcher -> Sunseeker Chemist
+(@CGUID+62, @CGUID+87, 1155), -- Sunseeker Researcher -> Sunseeker Chemist
+(@CGUID+55, @CGUID+88, 1155), -- Sunseeker Researcher -> Sunseeker Chemist
+(@CGUID+59, @CGUID+88, 1155), -- Sunseeker Researcher -> Sunseeker Chemist
+(@CGUID+65, @CGUID+88, 1155), -- Sunseeker Botanist -> Sunseeker Chemist
+(@CGUID+146, @CGUID+88, 1155), -- Greater Frayer -> Sunseeker Chemist
+(@CGUID+70, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+71, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+72, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+73, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+74, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+75, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+76, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+77, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+60, @CGUID+68, 1155), -- Sunseeker Researcher -> Sunseeker Botanist
+(@CGUID+149, @CGUID+68, 1155), -- Greater Frayer -> Sunseeker Botanist
+(@CGUID+69, @CGUID+90, 1155), -- Sunseeker Botanist -> Sunseeker Chemist
+(@CGUID+150, @CGUID+90, 1155), -- Greater Frayer -> Sunseeker Chemist
+(@CGUID+78, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+79, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+80, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+81, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+82, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+83, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+84, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+85, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
+(@CGUID+92, @CGUID+93, 1155), -- Sunseeker Channeler -> Sunseeker Channeler
+(@CGUID+94, @CGUID+95, 1155), -- Sunseeker Channeler -> Sunseeker Channeler
+(@CGUID+114, @CGUID+120, 1155), -- Sunseeker Herbalist -> Sunseeker Harvester
+(@CGUID+115, @CGUID+120, 1155), -- Sunseeker Herbalist -> Sunseeker Harvester
 (@CGUID+128, @CGUID+133, 1679), -- Nethervine Inciter -> Nethervine Reaper
-(@CGUID+126, @CGUID+125, 1167), -- Nethervine Inciter -> Nethervine Inciter
-(@CGUID+131, @CGUID+125, 1167), -- Nethervine Reaper -> Nethervine Inciter
-(@CGUID+132, @CGUID+125, 1167), -- Nethervine Reaper -> Nethervine Inciter
-(@CGUID+124, @CGUID+123, 1167), -- Nethervine Inciter -> Nethervine Inciter
-(@CGUID+129, @CGUID+123, 1167), -- Nethervine Reaper -> Nethervine Inciter
-(@CGUID+130, @CGUID+123, 1167), -- Nethervine Reaper -> Nethervine Inciter
-(@CGUID+98, @CGUID+117, 1167), -- Sunseeker Gene-Splicer -> Sunseeker Harvester
-(@CGUID+118, @CGUID+117, 1167), -- Sunseeker Harvester -> Sunseeker Harvester
-(@CGUID+153, @CGUID+117, 1167), -- Mutate Fleshlasher -> Sunseeker Harvester
-(@CGUID+154, @CGUID+117, 1167), -- Mutate Fleshlasher -> Sunseeker Harvester
-(@CGUID+97, @CGUID+151, 1167), -- Sunseeker Gene-Splicer -> Mutate Fleshlasher
-(@CGUID+112, @CGUID+151, 1167), -- Sunseeker Herbalist -> Mutate Fleshlasher
-(@CGUID+116, @CGUID+151, 1167), -- Sunseeker Harvester -> Mutate Fleshlasher
-(@CGUID+152, @CGUID+151, 1167), -- Mutate Fleshlasher -> Mutate Fleshlasher
-(@CGUID+99, @CGUID+155, 1167), -- Sunseeker Gene-Splicer -> Mutate Fleshlasher
-(@CGUID+113, @CGUID+155, 1167), -- Sunseeker Herbalist -> Mutate Fleshlasher
-(@CGUID+119, @CGUID+155, 1167), -- Sunseeker Harvester -> Mutate Fleshlasher
-(@CGUID+156, @CGUID+155, 1167), -- Mutate Fleshlasher -> Mutate Fleshlasher
-(@CGUID+13, @CGUID+14, 1167), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+134, @CGUID+183, 1167), -- Mutate Fear-Shrieker -> Mutate Horror
-(@CGUID+135, @CGUID+183, 1167), -- Mutate Fear-Shrieker -> Mutate Horror
-(@CGUID+184, @CGUID+183, 1167), -- Mutate Horror -> Mutate Horror
-(@CGUID+137, @CGUID+136, 1167), -- Mutate Fear-Shrieker -> Mutate Fear-Shrieker
-(@CGUID+185, @CGUID+136, 1167), -- Mutate Horror -> Mutate Fear-Shrieker
-(@CGUID+186, @CGUID+136, 1167), -- Mutate Horror -> Mutate Fear-Shrieker
-(@CGUID+138, @CGUID+187, 1167), -- Mutate Fear-Shrieker -> Mutate Horror
-(@CGUID+139, @CGUID+187, 1167), -- Mutate Fear-Shrieker -> Mutate Horror
-(@CGUID+188, @CGUID+187, 1167), -- Mutate Horror -> Mutate Horror
-(@CGUID+157, @CGUID+158, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+159, @CGUID+158, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+160, @CGUID+158, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+161, @CGUID+158, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+162, @CGUID+158, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+163, @CGUID+158, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+164, @CGUID+158, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+165, @CGUID+158, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+166, @CGUID+158, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+167, @CGUID+175, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+168, @CGUID+175, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+169, @CGUID+175, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+170, @CGUID+175, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+171, @CGUID+175, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+172, @CGUID+175, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+173, @CGUID+175, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+174, @CGUID+175, 1167), -- Frayer Wildling -> Frayer Wildling
-(@CGUID+176, @CGUID+175, 1167); -- Frayer Wildling -> Frayer Wildling
+(@CGUID+126, @CGUID+125, 1155), -- Nethervine Inciter -> Nethervine Inciter
+(@CGUID+131, @CGUID+125, 1155), -- Nethervine Reaper -> Nethervine Inciter
+(@CGUID+132, @CGUID+125, 1155), -- Nethervine Reaper -> Nethervine Inciter
+(@CGUID+124, @CGUID+123, 1155), -- Nethervine Inciter -> Nethervine Inciter
+(@CGUID+129, @CGUID+123, 1155), -- Nethervine Reaper -> Nethervine Inciter
+(@CGUID+130, @CGUID+123, 1155), -- Nethervine Reaper -> Nethervine Inciter
+(@CGUID+98, @CGUID+117, 1155), -- Sunseeker Gene-Splicer -> Sunseeker Harvester
+(@CGUID+118, @CGUID+117, 1155), -- Sunseeker Harvester -> Sunseeker Harvester
+(@CGUID+153, @CGUID+117, 1155), -- Mutate Fleshlasher -> Sunseeker Harvester
+(@CGUID+154, @CGUID+117, 1155), -- Mutate Fleshlasher -> Sunseeker Harvester
+(@CGUID+97, @CGUID+151, 1155), -- Sunseeker Gene-Splicer -> Mutate Fleshlasher
+(@CGUID+112, @CGUID+151, 1155), -- Sunseeker Herbalist -> Mutate Fleshlasher
+(@CGUID+116, @CGUID+151, 1155), -- Sunseeker Harvester -> Mutate Fleshlasher
+(@CGUID+152, @CGUID+151, 1155), -- Mutate Fleshlasher -> Mutate Fleshlasher
+(@CGUID+99, @CGUID+155, 1155), -- Sunseeker Gene-Splicer -> Mutate Fleshlasher
+(@CGUID+113, @CGUID+155, 1155), -- Sunseeker Herbalist -> Mutate Fleshlasher
+(@CGUID+119, @CGUID+155, 1155), -- Sunseeker Harvester -> Mutate Fleshlasher
+(@CGUID+156, @CGUID+155, 1155), -- Mutate Fleshlasher -> Mutate Fleshlasher
+(@CGUID+13, @CGUID+14, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
+(@CGUID+134, @CGUID+183, 1155), -- Mutate Fear-Shrieker -> Mutate Horror
+(@CGUID+135, @CGUID+183, 1155), -- Mutate Fear-Shrieker -> Mutate Horror
+(@CGUID+184, @CGUID+183, 1155), -- Mutate Horror -> Mutate Horror
+(@CGUID+137, @CGUID+136, 1155), -- Mutate Fear-Shrieker -> Mutate Fear-Shrieker
+(@CGUID+185, @CGUID+136, 1155), -- Mutate Horror -> Mutate Fear-Shrieker
+(@CGUID+186, @CGUID+136, 1155), -- Mutate Horror -> Mutate Fear-Shrieker
+(@CGUID+138, @CGUID+187, 1155), -- Mutate Fear-Shrieker -> Mutate Horror
+(@CGUID+139, @CGUID+187, 1155), -- Mutate Fear-Shrieker -> Mutate Horror
+(@CGUID+188, @CGUID+187, 1155), -- Mutate Horror -> Mutate Horror
+(@CGUID+157, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+159, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+160, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+161, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+162, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+163, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+164, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+165, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+166, @CGUID+158, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+167, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+168, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+169, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+170, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+171, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+172, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+173, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+174, @CGUID+175, 1155), -- Frayer Wildling -> Frayer Wildling
+(@CGUID+176, @CGUID+175, 1155); -- Frayer Wildling -> Frayer Wildling
 
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 

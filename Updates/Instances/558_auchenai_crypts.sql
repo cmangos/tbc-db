@@ -379,89 +379,89 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (18700, 0, 0, 0, 0, 0, 0, '19818'); -- Reanimated Bones
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+3, @CGUID+4, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+6, @CGUID+5, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+20, @CGUID+8, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+19, @CGUID+22, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+21, @CGUID+7, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+23, @CGUID+24, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+29, @CGUID+28, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+15, @CGUID+31, 1167), -- Auchenai Soulpriest -> Auchenai Monk
-(@CGUID+25, @CGUID+34, 1167), -- Auchenai Vindicator -> Auchenai Monk
-(@CGUID+41, @CGUID+30, 1167), -- Auchenai Monk -> Auchenai Vindicator
+(@CGUID+3, @CGUID+4, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+6, @CGUID+5, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+20, @CGUID+8, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+19, @CGUID+22, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+21, @CGUID+7, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+23, @CGUID+24, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+29, @CGUID+28, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+15, @CGUID+31, 1155), -- Auchenai Soulpriest -> Auchenai Monk
+(@CGUID+25, @CGUID+34, 1155), -- Auchenai Vindicator -> Auchenai Monk
+(@CGUID+41, @CGUID+30, 1155), -- Auchenai Monk -> Auchenai Vindicator
 (@CGUID+16, @CGUID+17, 1679), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+35, @CGUID+11, 1679), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+12, @CGUID+36, 1167), -- Auchenai Soulpriest -> Auchenai Monk
-(@CGUID+26, @CGUID+36, 1167), -- Auchenai Vindicator -> Auchenai Monk
+(@CGUID+12, @CGUID+36, 1155), -- Auchenai Soulpriest -> Auchenai Monk
+(@CGUID+26, @CGUID+36, 1155), -- Auchenai Vindicator -> Auchenai Monk
 (@CGUID+10, @CGUID+39, 1679), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+27, @CGUID+39, 1679), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+40, @CGUID+38, 1167), -- Auchenai Monk -> Auchenai Monk
-(@CGUID+33, @CGUID+37, 1167), -- Auchenai Monk -> Auchenai Monk
-(@CGUID+46, @CGUID+51, 1167), -- Raging Skeleton -> Angered Skeleton
-(@CGUID+47, @CGUID+51, 1167), -- Raging Skeleton -> Angered Skeleton
-(@CGUID+50, @CGUID+51, 1167), -- Angered Skeleton -> Angered Skeleton
-(@CGUID+45, @CGUID+44, 1167), -- Raging Skeleton -> Raging Skeleton
-(@CGUID+48, @CGUID+44, 1167), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+49, @CGUID+44, 1167), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+52, @CGUID+44, 1167), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+42, @CGUID+43, 1167), -- Raging Skeleton -> Raging Skeleton
-(@CGUID+53, @CGUID+43, 1167), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+54, @CGUID+43, 1167), -- Angered Skeleton -> Raging Skeleton
-(@CGUID+55, @CGUID+43, 1167), -- Angered Skeleton -> Raging Skeleton
+(@CGUID+40, @CGUID+38, 1155), -- Auchenai Monk -> Auchenai Monk
+(@CGUID+33, @CGUID+37, 1155), -- Auchenai Monk -> Auchenai Monk
+(@CGUID+46, @CGUID+51, 1155), -- Raging Skeleton -> Angered Skeleton
+(@CGUID+47, @CGUID+51, 1155), -- Raging Skeleton -> Angered Skeleton
+(@CGUID+50, @CGUID+51, 1155), -- Angered Skeleton -> Angered Skeleton
+(@CGUID+45, @CGUID+44, 1155), -- Raging Skeleton -> Raging Skeleton
+(@CGUID+48, @CGUID+44, 1155), -- Angered Skeleton -> Raging Skeleton
+(@CGUID+49, @CGUID+44, 1155), -- Angered Skeleton -> Raging Skeleton
+(@CGUID+52, @CGUID+44, 1155), -- Angered Skeleton -> Raging Skeleton
+(@CGUID+42, @CGUID+43, 1155), -- Raging Skeleton -> Raging Skeleton
+(@CGUID+53, @CGUID+43, 1155), -- Angered Skeleton -> Raging Skeleton
+(@CGUID+54, @CGUID+43, 1155), -- Angered Skeleton -> Raging Skeleton
+(@CGUID+55, @CGUID+43, 1155), -- Angered Skeleton -> Raging Skeleton
 (@CGUID+14, @CGUID+13, 1679), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+83, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+84, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+85, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+86, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+88, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+89, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+90, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+91, @CGUID+139, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+92, @CGUID+94, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+93, @CGUID+94, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+96, @CGUID+94, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+98, @CGUID+94, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+99, @CGUID+94, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+100, @CGUID+94, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+101, @CGUID+94, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+102, @CGUID+94, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+103, @CGUID+94, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+87, @CGUID+138, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+95, @CGUID+138, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+97, @CGUID+138, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+105, @CGUID+138, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+125, @CGUID+138, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+126, @CGUID+138, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+127, @CGUID+138, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+104, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+106, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+107, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+108, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+109, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+110, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+111, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+112, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+113, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+114, @CGUID+140, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+115, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+116, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+117, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+118, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+119, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+120, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+121, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+122, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+123, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+124, @CGUID+141, 1167), -- Reanimated Bones -> Auchenai Necromancer
-(@CGUID+129, @CGUID+128, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+130, @CGUID+128, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+131, @CGUID+128, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+132, @CGUID+128, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+133, @CGUID+128, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+134, @CGUID+128, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+135, @CGUID+128, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+136, @CGUID+128, 1167), -- Reanimated Bones -> Reanimated Bones
-(@CGUID+137, @CGUID+128, 1167); -- Reanimated Bones -> Reanimated Bones
+(@CGUID+83, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+84, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+85, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+86, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+88, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+89, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+90, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+91, @CGUID+139, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+92, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+93, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+96, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+98, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+99, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+100, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+101, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+102, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+103, @CGUID+94, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+87, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+95, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+97, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+105, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+125, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+126, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+127, @CGUID+138, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+104, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+106, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+107, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+108, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+109, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+110, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+111, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+112, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+113, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+114, @CGUID+140, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+115, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+116, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+117, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+118, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+119, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+120, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+121, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+122, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+123, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+124, @CGUID+141, 1155), -- Reanimated Bones -> Auchenai Necromancer
+(@CGUID+129, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+130, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+131, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+132, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+133, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+134, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+135, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+136, @CGUID+128, 1155), -- Reanimated Bones -> Reanimated Bones
+(@CGUID+137, @CGUID+128, 1155); -- Reanimated Bones -> Reanimated Bones
 
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 

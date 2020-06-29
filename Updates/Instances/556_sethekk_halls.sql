@@ -3,7 +3,6 @@ DBName: Auchindoun - Sethekk Halls
 DBScriptName: instance_sethekk_halls
 DB%Complete: 90
 DBComment:
-* Time-Lost Controller 18327 - Summon Charming Totem 20343 (s.32764) AI not working
 * Check if quest=10097 is required for gossip option to free Lakka (gossip_menu_option 7868, should be condition "(???, 31, 252, 0, 'Dungeon Encounter (Darkweaver Syth) ID 252 Completed')"?
 EndDBScriptData */
 
@@ -415,91 +414,91 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (23132, 0, 0, 1, 16, 0, 0, '9205'); -- Brood of Anzu
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+39, @CGUID+42, 1167), -- Sethekk Guard -> Sethekk Guard
+(@CGUID+39, @CGUID+42, 1155), -- Sethekk Guard -> Sethekk Guard
 (@CGUID+93, @CGUID+9, 1679), -- Avian Darkhawk -> Sethekk Initiate
-(@CGUID+44, @CGUID+43, 1167), -- Sethekk Guard -> Sethekk Guard
-(@CGUID+70, @CGUID+99, 1167), -- Time-Lost Controller -> Avian Darkhawk
-(@CGUID+5, @CGUID+99, 1167), -- Sethekk Initiate -> Avian Darkhawk
-(@CGUID+2, @CGUID+1, 1167), -- Sethekk Initiate -> Sethekk Initiate
-(@CGUID+67, @CGUID+1, 1167), -- Time-Lost Controller -> Sethekk Initiate
-(@CGUID+6, @CGUID+13, 1167), -- Sethekk Initiate -> Sethekk Initiate
-(@CGUID+71, @CGUID+13, 1167), -- Time-Lost Controller -> Sethekk Initiate
-(@CGUID+47, @CGUID+52, 1167), -- Sethekk Guard -> Sethekk Guard
-(@CGUID+4, @CGUID+69, 1167), -- Sethekk Initiate -> Time-Lost Controller
-(@CGUID+96, @CGUID+69, 1167), -- Avian Darkhawk -> Time-Lost Controller
-(@CGUID+45, @CGUID+46, 1167), -- Sethekk Guard -> Sethekk Guard
-(@CGUID+3, @CGUID+95, 1167), -- Sethekk Initiate -> Avian Darkhawk
-(@CGUID+68, @CGUID+95, 1167), -- Time-Lost Controller -> Avian Darkhawk
-(@CGUID+49, @CGUID+48, 1167), -- Sethekk Guard -> Sethekk Guard
-(@CGUID+80, @CGUID+72, 1167), -- Sethekk Oracle -> creature_spawn_entry
-(@CGUID+10, @CGUID+72, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+11, @CGUID+76, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+83, @CGUID+76, 1167), -- Sethekk Oracle -> creature_spawn_entry
-(@CGUID+73, @CGUID+97, 1167), -- creature_spawn_entry -> Avian Darkhawk
-(@CGUID+79, @CGUID+97, 1167), -- creature_spawn_entry -> Avian Darkhawk
-(@CGUID+82, @CGUID+97, 1167), -- Sethekk Oracle -> Avian Darkhawk
-(@CGUID+51, @CGUID+50, 1167), -- Sethekk Guard -> Sethekk Guard
-(@CGUID+75, @CGUID+7, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+81, @CGUID+7, 1167), -- Sethekk Oracle -> creature_spawn_entry
-(@CGUID+41, @CGUID+40, 1167), -- Sethekk Guard -> Sethekk Guard
-(@CGUID+34, @CGUID+33, 1167), -- Sethekk Ravenguard -> Sethekk Ravenguard
-(@CGUID+111, @CGUID+113, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+112, @CGUID+113, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+114, @CGUID+113, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+115, @CGUID+113, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+8, @CGUID+14, 1167), -- Sethekk Initiate -> Time-Lost Scryer
-(@CGUID+77, @CGUID+14, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+84, @CGUID+14, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+74, @CGUID+12, 1167), -- creature_spawn_entry -> Sethekk Initiate
-(@CGUID+78, @CGUID+12, 1167), -- creature_spawn_entry -> Sethekk Initiate
-(@CGUID+85, @CGUID+12, 1167), -- creature_spawn_entry -> Sethekk Initiate
-(@CGUID+38, @CGUID+35, 1167), -- Sethekk Ravenguard -> Sethekk Ravenguard
-(@CGUID+100, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+101, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+102, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+116, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+117, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+119, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+120, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+121, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+122, @CGUID+118, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+28, @CGUID+15, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+54, @CGUID+15, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+56, @CGUID+15, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+55, @CGUID+19, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+57, @CGUID+19, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+125, @CGUID+19, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+103, @CGUID+105, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+104, @CGUID+105, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+106, @CGUID+105, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+107, @CGUID+105, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+108, @CGUID+124, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+109, @CGUID+124, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+110, @CGUID+124, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+123, @CGUID+124, 1167), -- Avian Ripper -> Avian Ripper
-(@CGUID+126, @CGUID+20, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+60, @CGUID+20, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+66, @CGUID+20, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+37, @CGUID+36, 1167), -- Sethekk Ravenguard -> Sethekk Ravenguard
-(@CGUID+127, @CGUID+16, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+23, @CGUID+16, 1167), -- Time-Lost Shadowmage -> creature_spawn_entry
-(@CGUID+58, @CGUID+16, 1167), -- Sethekk Prophet -> creature_spawn_entry
-(@CGUID+30, @CGUID+21, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+25, @CGUID+21, 1167), -- creature_spawn_entry -> Time-Lost Scryer
-(@CGUID+53, @CGUID+21, 1167), -- Sethekk Prophet -> Time-Lost Scryer
-(@CGUID+31, @CGUID+17, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+22, @CGUID+17, 1167), -- Sethekk Prophet -> creature_spawn_entry
-(@CGUID+61, @CGUID+17, 1167), -- Sethekk Prophet -> creature_spawn_entry
-(@CGUID+26, @CGUID+62, 1167), -- Time-Lost Shadowmage -> creature_spawn_entry
-(@CGUID+63, @CGUID+62, 1167), -- Sethekk Prophet -> creature_spawn_entry
-(@CGUID+128, @CGUID+62, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+32, @CGUID+18, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+27, @CGUID+18, 1167), -- Time-Lost Shadowmage -> creature_spawn_entry
-(@CGUID+64, @CGUID+18, 1167), -- Sethekk Prophet -> creature_spawn_entry
-(@CGUID+24, @CGUID+129, 1167), -- Time-Lost Shadowmage -> Avian Warhawk
-(@CGUID+29, @CGUID+129, 1167), -- Sethekk Talon Lord -> Avian Warhawk
-(@CGUID+59, @CGUID+129, 1167), -- Sethekk Prophet -> Avian Warhawk
-(@CGUID+65, @CGUID+129, 1167), -- Sethekk Prophet -> Avian Warhawk
+(@CGUID+44, @CGUID+43, 1155), -- Sethekk Guard -> Sethekk Guard
+(@CGUID+70, @CGUID+99, 1155), -- Time-Lost Controller -> Avian Darkhawk
+(@CGUID+5, @CGUID+99, 1155), -- Sethekk Initiate -> Avian Darkhawk
+(@CGUID+2, @CGUID+1, 1155), -- Sethekk Initiate -> Sethekk Initiate
+(@CGUID+67, @CGUID+1, 1155), -- Time-Lost Controller -> Sethekk Initiate
+(@CGUID+6, @CGUID+13, 1155), -- Sethekk Initiate -> Sethekk Initiate
+(@CGUID+71, @CGUID+13, 1155), -- Time-Lost Controller -> Sethekk Initiate
+(@CGUID+47, @CGUID+52, 1155), -- Sethekk Guard -> Sethekk Guard
+(@CGUID+4, @CGUID+69, 1155), -- Sethekk Initiate -> Time-Lost Controller
+(@CGUID+96, @CGUID+69, 1155), -- Avian Darkhawk -> Time-Lost Controller
+(@CGUID+45, @CGUID+46, 1155), -- Sethekk Guard -> Sethekk Guard
+(@CGUID+3, @CGUID+95, 1155), -- Sethekk Initiate -> Avian Darkhawk
+(@CGUID+68, @CGUID+95, 1155), -- Time-Lost Controller -> Avian Darkhawk
+(@CGUID+49, @CGUID+48, 1155), -- Sethekk Guard -> Sethekk Guard
+(@CGUID+80, @CGUID+72, 1155), -- Sethekk Oracle -> creature_spawn_entry
+(@CGUID+10, @CGUID+72, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+11, @CGUID+76, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+83, @CGUID+76, 1155), -- Sethekk Oracle -> creature_spawn_entry
+(@CGUID+73, @CGUID+97, 1155), -- creature_spawn_entry -> Avian Darkhawk
+(@CGUID+79, @CGUID+97, 1155), -- creature_spawn_entry -> Avian Darkhawk
+(@CGUID+82, @CGUID+97, 1155), -- Sethekk Oracle -> Avian Darkhawk
+(@CGUID+51, @CGUID+50, 1155), -- Sethekk Guard -> Sethekk Guard
+(@CGUID+75, @CGUID+7, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+81, @CGUID+7, 1155), -- Sethekk Oracle -> creature_spawn_entry
+(@CGUID+41, @CGUID+40, 1155), -- Sethekk Guard -> Sethekk Guard
+(@CGUID+34, @CGUID+33, 1155), -- Sethekk Ravenguard -> Sethekk Ravenguard
+(@CGUID+111, @CGUID+113, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+112, @CGUID+113, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+114, @CGUID+113, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+115, @CGUID+113, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+8, @CGUID+14, 1155), -- Sethekk Initiate -> Time-Lost Scryer
+(@CGUID+77, @CGUID+14, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+84, @CGUID+14, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+74, @CGUID+12, 1155), -- creature_spawn_entry -> Sethekk Initiate
+(@CGUID+78, @CGUID+12, 1155), -- creature_spawn_entry -> Sethekk Initiate
+(@CGUID+85, @CGUID+12, 1155), -- creature_spawn_entry -> Sethekk Initiate
+(@CGUID+38, @CGUID+35, 1155), -- Sethekk Ravenguard -> Sethekk Ravenguard
+(@CGUID+100, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+101, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+102, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+116, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+117, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+119, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+120, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+121, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+122, @CGUID+118, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+28, @CGUID+15, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+54, @CGUID+15, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+56, @CGUID+15, 1155), -- Sethekk Prophet -> Time-Lost Scryer
+(@CGUID+55, @CGUID+19, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+57, @CGUID+19, 1155), -- Sethekk Prophet -> Time-Lost Scryer
+(@CGUID+125, @CGUID+19, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+103, @CGUID+105, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+104, @CGUID+105, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+106, @CGUID+105, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+107, @CGUID+105, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+108, @CGUID+124, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+109, @CGUID+124, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+110, @CGUID+124, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+123, @CGUID+124, 1155), -- Avian Ripper -> Avian Ripper
+(@CGUID+126, @CGUID+20, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+60, @CGUID+20, 1155), -- Sethekk Prophet -> Time-Lost Scryer
+(@CGUID+66, @CGUID+20, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+37, @CGUID+36, 1155), -- Sethekk Ravenguard -> Sethekk Ravenguard
+(@CGUID+127, @CGUID+16, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+23, @CGUID+16, 1155), -- Time-Lost Shadowmage -> creature_spawn_entry
+(@CGUID+58, @CGUID+16, 1155), -- Sethekk Prophet -> creature_spawn_entry
+(@CGUID+30, @CGUID+21, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+25, @CGUID+21, 1155), -- creature_spawn_entry -> Time-Lost Scryer
+(@CGUID+53, @CGUID+21, 1155), -- Sethekk Prophet -> Time-Lost Scryer
+(@CGUID+31, @CGUID+17, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+22, @CGUID+17, 1155), -- Sethekk Prophet -> creature_spawn_entry
+(@CGUID+61, @CGUID+17, 1155), -- Sethekk Prophet -> creature_spawn_entry
+(@CGUID+26, @CGUID+62, 1155), -- Time-Lost Shadowmage -> creature_spawn_entry
+(@CGUID+63, @CGUID+62, 1155), -- Sethekk Prophet -> creature_spawn_entry
+(@CGUID+128, @CGUID+62, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+32, @CGUID+18, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+27, @CGUID+18, 1155), -- Time-Lost Shadowmage -> creature_spawn_entry
+(@CGUID+64, @CGUID+18, 1155), -- Sethekk Prophet -> creature_spawn_entry
+(@CGUID+24, @CGUID+129, 1155), -- Time-Lost Shadowmage -> Avian Warhawk
+(@CGUID+29, @CGUID+129, 1155), -- Sethekk Talon Lord -> Avian Warhawk
+(@CGUID+59, @CGUID+129, 1155), -- Sethekk Prophet -> Avian Warhawk
+(@CGUID+65, @CGUID+129, 1155), -- Sethekk Prophet -> Avian Warhawk
 (@CGUID+129, @CGUID+87, 1); -- Avian Warhawk -> Talon King Ikiss
 
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES

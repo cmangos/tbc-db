@@ -4,9 +4,7 @@ DBScriptName: instance_shadow_labyrinth
 DB%Complete: 81
 DBComment:
 * Murmur Suppression Blast 33332 - Only RP Event, not used on targets which fight players - UPDATE `spell_template` SET `AttributesEx` = `AttributesEx`|256 WHERE `Id` = 33332; doesnt work
-* npcs in murmur pre bossfight event need movement for proper positioning
-* Murmur Hallway Door should open on proximity of players towards it, dbscripts_on_go_template_use doesnt activate when door is opened with DoUseDoorOrButton();
-* 184940 and 184941 are probably pooled
+* 184940 and 184941 are probably pooled in sections of the dungeon
 EndDBScriptData */
 
 SET @CGUID := 5550000; -- creatures
@@ -536,93 +534,93 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (21159, 0, 0, 1, 0, 0, 0, NULL); -- Containment Beam
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+55, @CGUID+54, 1167), -- Cabal Acolyte -> Cabal Acolyte
-(@CGUID+86, @CGUID+54, 1167), -- Cabal Deathsworn -> Cabal Acolyte
-(@CGUID+88, @CGUID+60, 1167), -- Cabal Deathsworn -> Cabal Acolyte
-(@CGUID+66, @CGUID+89, 1167), -- Cabal Acolyte -> Cabal Deathsworn
-(@CGUID+61, @CGUID+89, 1167), -- Cabal Acolyte -> Cabal Deathsworn
-(@CGUID+64, @CGUID+65, 1167), -- Cabal Acolyte -> Cabal Acolyte
-(@CGUID+56, @CGUID+57, 1167), -- Cabal Acolyte -> Cabal Acolyte
-(@CGUID+62, @CGUID+57, 1167), -- Cabal Acolyte -> Cabal Acolyte
-(@CGUID+63, @CGUID+57, 1167), -- Cabal Acolyte -> Cabal Acolyte
-(@CGUID+59, @CGUID+58, 1167), -- Cabal Acolyte -> Cabal Deathsworn
-(@CGUID+87, @CGUID+58, 1167), -- Cabal Acolyte -> Cabal Deathsworn
-(@CGUID+249, @CGUID+58, 1167), -- Cabal Acolyte -> Cabal Deathsworn
-(@CGUID+250, @CGUID+249, 1167), -- Cabal Acolyte -> Cabal Deathsworn
-(@CGUID+128, @CGUID+124, 1167), -- Cabal Familiar -> Cabal Warlock
-(@CGUID+129, @CGUID+124, 1167), -- Cabal Familiar -> Cabal Warlock
-(@CGUID+130, @CGUID+124, 1167), -- Cabal Familiar -> Cabal Warlock
-(@CGUID+131, @CGUID+124, 1167), -- Cabal Familiar -> Cabal Warlock
-(@CGUID+132, @CGUID+124, 1167), -- Cabal Familiar -> Cabal Warlock
+(@CGUID+55, @CGUID+54, 1155), -- Cabal Acolyte -> Cabal Acolyte
+(@CGUID+86, @CGUID+54, 1155), -- Cabal Deathsworn -> Cabal Acolyte
+(@CGUID+88, @CGUID+60, 1155), -- Cabal Deathsworn -> Cabal Acolyte
+(@CGUID+66, @CGUID+89, 1155), -- Cabal Acolyte -> Cabal Deathsworn
+(@CGUID+61, @CGUID+89, 1155), -- Cabal Acolyte -> Cabal Deathsworn
+(@CGUID+64, @CGUID+65, 1155), -- Cabal Acolyte -> Cabal Acolyte
+(@CGUID+56, @CGUID+57, 1155), -- Cabal Acolyte -> Cabal Acolyte
+(@CGUID+62, @CGUID+57, 1155), -- Cabal Acolyte -> Cabal Acolyte
+(@CGUID+63, @CGUID+57, 1155), -- Cabal Acolyte -> Cabal Acolyte
+(@CGUID+59, @CGUID+58, 1155), -- Cabal Acolyte -> Cabal Deathsworn
+(@CGUID+87, @CGUID+58, 1155), -- Cabal Acolyte -> Cabal Deathsworn
+(@CGUID+249, @CGUID+58, 1155), -- Cabal Acolyte -> Cabal Deathsworn
+(@CGUID+250, @CGUID+249, 1155), -- Cabal Acolyte -> Cabal Deathsworn
+(@CGUID+128, @CGUID+124, 1155), -- Cabal Familiar -> Cabal Warlock
+(@CGUID+129, @CGUID+124, 1155), -- Cabal Familiar -> Cabal Warlock
+(@CGUID+130, @CGUID+124, 1155), -- Cabal Familiar -> Cabal Warlock
+(@CGUID+131, @CGUID+124, 1155), -- Cabal Familiar -> Cabal Warlock
+(@CGUID+132, @CGUID+124, 1155), -- Cabal Familiar -> Cabal Warlock
 (@CGUID+135, @CGUID+133, 1679), -- Fel Guardhound -> Cabal Familiar
-(@CGUID+125, @CGUID+133, 1167), -- Cabal Familiar -> Cabal Warlock
-(@CGUID+68, @CGUID+90, 1167), -- Cabal Deathsworn -> Cabal Acolyte
-(@CGUID+91, @CGUID+90, 1167), -- Cabal Deathsworn -> Cabal Acolyte
-(@CGUID+247, @CGUID+90, 1167), -- Cabal Deathsworn -> Cabal Acolyte
-(@CGUID+248, @CGUID+247, 1167), -- Cabal Familiar -> Cabal Acolyte
-(@CGUID+154, @CGUID+155, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+156, @CGUID+155, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+166, @CGUID+155, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+159, @CGUID+158, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+160, @CGUID+158, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+165, @CGUID+158, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+150, @CGUID+151, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+152, @CGUID+151, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+167, @CGUID+151, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+148, @CGUID+147, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+149, @CGUID+147, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+168, @CGUID+147, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+163, @CGUID+157, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+164, @CGUID+157, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+169, @CGUID+157, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+161, @CGUID+153, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+162, @CGUID+153, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+170, @CGUID+153, 1167), -- Cabal Ritualist -> Cabal Ritualist
-(@CGUID+31, @CGUID+69, 1167), -- Cabal Cultist -> Cabal Acolyte
-(@CGUID+30, @CGUID+69, 1167), -- Cabal Cultist -> Cabal Acolyte
-(@CGUID+92, @CGUID+69, 1167), -- Cabal Deathsworn -> Cabal Acolyte
+(@CGUID+125, @CGUID+133, 1155), -- Cabal Familiar -> Cabal Warlock
+(@CGUID+68, @CGUID+90, 1155), -- Cabal Deathsworn -> Cabal Acolyte
+(@CGUID+91, @CGUID+90, 1155), -- Cabal Deathsworn -> Cabal Acolyte
+(@CGUID+247, @CGUID+90, 1155), -- Cabal Deathsworn -> Cabal Acolyte
+(@CGUID+248, @CGUID+247, 1155), -- Cabal Familiar -> Cabal Acolyte
+(@CGUID+154, @CGUID+155, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+156, @CGUID+155, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+166, @CGUID+155, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+159, @CGUID+158, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+160, @CGUID+158, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+165, @CGUID+158, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+150, @CGUID+151, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+152, @CGUID+151, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+167, @CGUID+151, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+148, @CGUID+147, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+149, @CGUID+147, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+168, @CGUID+147, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+163, @CGUID+157, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+164, @CGUID+157, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+169, @CGUID+157, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+161, @CGUID+153, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+162, @CGUID+153, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+170, @CGUID+153, 1155), -- Cabal Ritualist -> Cabal Ritualist
+(@CGUID+31, @CGUID+69, 1155), -- Cabal Cultist -> Cabal Acolyte
+(@CGUID+30, @CGUID+69, 1155), -- Cabal Cultist -> Cabal Acolyte
+(@CGUID+92, @CGUID+69, 1155), -- Cabal Deathsworn -> Cabal Acolyte
 (@CGUID+69, @CGUID+137, 1), -- Cabal Acolyte -> Blackheart the Inciter
-(@CGUID+32, @CGUID+70, 1167), -- Cabal Cultist -> Cabal Acolyte
-(@CGUID+33, @CGUID+70, 1167), -- Cabal Cultist -> Cabal Acolyte
-(@CGUID+94, @CGUID+70, 1167), -- Cabal Deathsworn -> Cabal Acolyte
-(@CGUID+104, @CGUID+70, 1167), -- Cabal Shadow Priest -> Cabal Acolyte
+(@CGUID+32, @CGUID+70, 1155), -- Cabal Cultist -> Cabal Acolyte
+(@CGUID+33, @CGUID+70, 1155), -- Cabal Cultist -> Cabal Acolyte
+(@CGUID+94, @CGUID+70, 1155), -- Cabal Deathsworn -> Cabal Acolyte
+(@CGUID+104, @CGUID+70, 1155), -- Cabal Shadow Priest -> Cabal Acolyte
 (@CGUID+70, @CGUID+137, 1), -- Cabal Acolyte -> Blackheart the Inciter
-(@CGUID+34, @CGUID+102, 1167), -- Cabal Cultist -> Cabal Shadow Priest
-(@CGUID+71, @CGUID+102, 1167), -- Cabal Acolyte -> Cabal Shadow Priest
-(@CGUID+72, @CGUID+102, 1167), -- Cabal Acolyte -> Cabal Shadow Priest
-(@CGUID+95, @CGUID+102, 1167), -- Cabal Deathsworn -> Cabal Shadow Priest
+(@CGUID+34, @CGUID+102, 1155), -- Cabal Cultist -> Cabal Shadow Priest
+(@CGUID+71, @CGUID+102, 1155), -- Cabal Acolyte -> Cabal Shadow Priest
+(@CGUID+72, @CGUID+102, 1155), -- Cabal Acolyte -> Cabal Shadow Priest
+(@CGUID+95, @CGUID+102, 1155), -- Cabal Deathsworn -> Cabal Shadow Priest
 (@CGUID+102, @CGUID+137, 1), -- Cabal Shadow Priest -> Blackheart the Inciter
-(@CGUID+127, @CGUID+36, 1167), -- Cabal Warlock -> Cabal Cultist
-(@CGUID+136, @CGUID+36, 1167), -- Fel Guardhound -> Cabal Cultist
-(@CGUID+74, @CGUID+36, 1167), -- Cabal Acolyte -> Cabal Cultist
-(@CGUID+93, @CGUID+36, 1167), -- Cabal Deathsworn -> Cabal Cultist
-(@CGUID+103, @CGUID+36, 1167), -- Cabal Shadow Priest -> Cabal Cultist
+(@CGUID+127, @CGUID+36, 1155), -- Cabal Warlock -> Cabal Cultist
+(@CGUID+136, @CGUID+36, 1155), -- Fel Guardhound -> Cabal Cultist
+(@CGUID+74, @CGUID+36, 1155), -- Cabal Acolyte -> Cabal Cultist
+(@CGUID+93, @CGUID+36, 1155), -- Cabal Deathsworn -> Cabal Cultist
+(@CGUID+103, @CGUID+36, 1155), -- Cabal Shadow Priest -> Cabal Cultist
 (@CGUID+36, @CGUID+137, 1), -- Cabal Cultist -> Blackheart the Inciter
-(@CGUID+39, @CGUID+37, 1167), -- Cabal Cultist -> Cabal Cultist
+(@CGUID+39, @CGUID+37, 1155), -- Cabal Cultist -> Cabal Cultist
 (@CGUID+37, @CGUID+137, 1), -- Cabal Cultist -> Blackheart the Inciter
-(@CGUID+35, @CGUID+73, 1167), -- Cabal Cultist -> Cabal Acolyte
-(@CGUID+96, @CGUID+73, 1167), -- Cabal Deathsworn -> Cabal Acolyte
-(@CGUID+126, @CGUID+73, 1167), -- Cabal Warlock -> Cabal Acolyte
-(@CGUID+134, @CGUID+73, 1167), -- Cabal Familiar -> Cabal Acolyte
-(@CGUID+105, @CGUID+73, 1167), -- Cabal Shadow Priest -> Cabal Acolyte
+(@CGUID+35, @CGUID+73, 1155), -- Cabal Cultist -> Cabal Acolyte
+(@CGUID+96, @CGUID+73, 1155), -- Cabal Deathsworn -> Cabal Acolyte
+(@CGUID+126, @CGUID+73, 1155), -- Cabal Warlock -> Cabal Acolyte
+(@CGUID+134, @CGUID+73, 1155), -- Cabal Familiar -> Cabal Acolyte
+(@CGUID+105, @CGUID+73, 1155), -- Cabal Shadow Priest -> Cabal Acolyte
 (@CGUID+73, @CGUID+137, 1), -- Cabal Acolyte -> Blackheart the Inciter
-(@CGUID+97, @CGUID+38, 1167), -- Cabal Deathsworn -> Cabal Cultist
+(@CGUID+97, @CGUID+38, 1155), -- Cabal Deathsworn -> Cabal Cultist
 (@CGUID+38, @CGUID+137, 1), -- Cabal Cultist -> Blackheart the Inciter
 (@CGUID+240, @CGUID+137, 1), -- Malicious Instructor -> Blackheart the Inciter
 (@CGUID+241, @CGUID+137, 1), -- Malicious Instructor -> Blackheart the Inciter
 (@CGUID+242, @CGUID+137, 1), -- Malicious Instructor -> Blackheart the Inciter
-(@CGUID+41, @CGUID+40, 1167), -- Cabal Cultist -> Cabal Cultist
-(@CGUID+75, @CGUID+98, 1167), -- Cabal Acolyte -> Cabal Deathsworn
-(@CGUID+99, @CGUID+98, 1167), -- Cabal Deathsworn -> Cabal Deathsworn
+(@CGUID+41, @CGUID+40, 1155), -- Cabal Cultist -> Cabal Cultist
+(@CGUID+75, @CGUID+98, 1155), -- Cabal Acolyte -> Cabal Deathsworn
+(@CGUID+99, @CGUID+98, 1155), -- Cabal Deathsworn -> Cabal Deathsworn
 (@CGUID+106, @CGUID+29, 1679), -- Cabal Zealot -> Cabal Cultist
 (@CGUID+107, @CGUID+29, 1679), -- Cabal Zealot -> Cabal Cultist
 (@CGUID+234, @CGUID+29, 1679), -- Cabal Fanatic -> Cabal Cultis
 (@CGUID+42, @CGUID+108, 1679), -- Cabal Cultist -> Cabal Zealot
 (@CGUID+111, @CGUID+108, 1679), -- Cabal Zealot -> Cabal Zealot
 (@CGUID+235, @CGUID+108, 1679), -- Cabal Fanatic -> Cabal Zealot
-(@CGUID+109, @CGUID+236, 1167), -- Cabal Zealot -> Cabal Fanatic
-(@CGUID+110, @CGUID+236, 1167), -- Cabal Zealot -> Cabal Fanatic
-(@CGUID+237, @CGUID+236, 1167), -- Cabal Fanatic -> Cabal Fanatic
+(@CGUID+109, @CGUID+236, 1155), -- Cabal Zealot -> Cabal Fanatic
+(@CGUID+110, @CGUID+236, 1155), -- Cabal Zealot -> Cabal Fanatic
+(@CGUID+237, @CGUID+236, 1155), -- Cabal Fanatic -> Cabal Fanatic
 (@CGUID+43, @CGUID+238, 1679), -- Cabal Cultist -> Cabal Fanatic
 (@CGUID+44, @CGUID+238, 1679), -- Cabal Cultist -> Cabal Fanatic
 (@CGUID+233, @CGUID+238, 1679), -- Cabal Fanatic -> Cabal Fanatic

@@ -217,34 +217,34 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (21694, 0, 0, 0, 0, 0, 0, '18950'); -- Bog Overlord
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+90, @CGUID+91, 1167), -- Coilfang Warrior -> Coilfang Warrior
+(@CGUID+90, @CGUID+91, 1155), -- Coilfang Warrior -> Coilfang Warrior
 (@CGUID+92, @CGUID+75, 1679), -- Coilfang Warrior -> Coilfang Siren
-(@CGUID+26, @CGUID+100, 1167), -- Coilfang Engineer -> Coilfang Warrior
-(@CGUID+27, @CGUID+100, 1167), -- Coilfang Engineer -> Coilfang Warrior
-(@CGUID+25, @CGUID+103, 1167), -- Coilfang Engineer -> Coilfang Engineer
-(@CGUID+30, @CGUID+103, 1167), -- Coilfang Engineer -> Coilfang Engineer
-(@CGUID+179, @CGUID+103, 1167), -- creature_spawn_entry -> Coilfang Engineer
-(@CGUID+20, @CGUID+93, 1167), -- Coilfang Engineer -> Coilfang Warrior
-(@CGUID+181, @CGUID+93, 1167), -- creature_spawn_entry -> Coilfang Warrior
-(@CGUID+31, @CGUID+93, 1167), -- Coilfang Engineer -> Coilfang Warrior
-(@CGUID+24, @CGUID+101, 1167), -- Coilfang Engineer -> Coilfang Engineer
-(@CGUID+84, @CGUID+101, 1167), -- Coilfang Siren -> Coilfang Engineer
-(@CGUID+111, @CGUID+101, 1167), -- Coilfang Oracle -> Coilfang Engineer
-(@CGUID+76, @CGUID+94, 1167), -- Coilfang Warrior -> Coilfang Oracle
-(@CGUID+106, @CGUID+94, 1167), -- Coilfang Siren -> Coilfang Oracle
-(@CGUID+85, @CGUID+94, 1167), -- Coilfang Siren -> Coilfang Oracle
-(@CGUID+23, @CGUID+102, 1167), -- Coilfang Engineer -> Coilfang Warrior
-(@CGUID+28, @CGUID+102, 1167), -- Coilfang Engineer -> Coilfang Warrior
-(@CGUID+180, @CGUID+102, 1167), -- creature_spawn_entry -> Coilfang Warrior
+(@CGUID+26, @CGUID+100, 1155), -- Coilfang Engineer -> Coilfang Warrior
+(@CGUID+27, @CGUID+100, 1155), -- Coilfang Engineer -> Coilfang Warrior
+(@CGUID+25, @CGUID+103, 1155), -- Coilfang Engineer -> Coilfang Engineer
+(@CGUID+30, @CGUID+103, 1155), -- Coilfang Engineer -> Coilfang Engineer
+(@CGUID+179, @CGUID+103, 1155), -- creature_spawn_entry -> Coilfang Engineer
+(@CGUID+20, @CGUID+93, 1155), -- Coilfang Engineer -> Coilfang Warrior
+(@CGUID+181, @CGUID+93, 1155), -- creature_spawn_entry -> Coilfang Warrior
+(@CGUID+31, @CGUID+93, 1155), -- Coilfang Engineer -> Coilfang Warrior
+(@CGUID+24, @CGUID+101, 1155), -- Coilfang Engineer -> Coilfang Engineer
+(@CGUID+84, @CGUID+101, 1155), -- Coilfang Siren -> Coilfang Engineer
+(@CGUID+111, @CGUID+101, 1155), -- Coilfang Oracle -> Coilfang Engineer
+(@CGUID+76, @CGUID+94, 1155), -- Coilfang Warrior -> Coilfang Oracle
+(@CGUID+106, @CGUID+94, 1155), -- Coilfang Siren -> Coilfang Oracle
+(@CGUID+85, @CGUID+94, 1155), -- Coilfang Siren -> Coilfang Oracle
+(@CGUID+23, @CGUID+102, 1155), -- Coilfang Engineer -> Coilfang Warrior
+(@CGUID+28, @CGUID+102, 1155), -- Coilfang Engineer -> Coilfang Warrior
+(@CGUID+180, @CGUID+102, 1155), -- creature_spawn_entry -> Coilfang Warrior
 (@CGUID+77, @CGUID+96, 1679), -- Coilfang Siren -> Coilfang Warrior
 (@CGUID+78, @CGUID+96, 1679), -- Coilfang Siren -> Coilfang Warrior
-(@CGUID+86, @CGUID+98, 1167), -- Coilfang Siren -> Coilfang Siren
-(@CGUID+87, @CGUID+98, 1167), -- Coilfang Warrior -> Coilfang Warrior
-(@CGUID+107, @CGUID+98, 1167), -- Coilfang Warrior -> Coilfang Warrior
-(@CGUID+29, @CGUID+99, 1167), -- Coilfang Engineer -> Coilfang Warrior
-(@CGUID+178, @CGUID+99, 1167), -- creature_spawn_entry -> Coilfang Warrior
-(@CGUID+88, @CGUID+112, 1167), -- Coilfang Siren -> Coilfang Oracle
-(@CGUID+89, @CGUID+112, 1167), -- Coilfang Siren -> Coilfang Oracle
+(@CGUID+86, @CGUID+98, 1155), -- Coilfang Siren -> Coilfang Siren
+(@CGUID+87, @CGUID+98, 1155), -- Coilfang Warrior -> Coilfang Warrior
+(@CGUID+107, @CGUID+98, 1155), -- Coilfang Warrior -> Coilfang Warrior
+(@CGUID+29, @CGUID+99, 1155), -- Coilfang Engineer -> Coilfang Warrior
+(@CGUID+178, @CGUID+99, 1155), -- creature_spawn_entry -> Coilfang Warrior
+(@CGUID+88, @CGUID+112, 1155), -- Coilfang Siren -> Coilfang Oracle
+(@CGUID+89, @CGUID+112, 1155), -- Coilfang Siren -> Coilfang Oracle
 (@CGUID+160, @CGUID+157, 1679), -- Steam Surger -> Tidal Surger
 (@CGUID+161, @CGUID+157, 1679), -- Steam Surger -> Tidal Surger
 (@CGUID+162, @CGUID+157, 1679), -- Steam Surger -> Tidal Surger
@@ -257,52 +257,52 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+168, @CGUID+159, 1679), -- Steam Surger -> Tidal Surger
 (@CGUID+169, @CGUID+159, 1679), -- Steam Surger -> Tidal Surger
 (@CGUID+170, @CGUID+159, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+60, @CGUID+61, 1167), -- Coilfang Myrmidon -> Coilfang Myrmidon
+(@CGUID+60, @CGUID+61, 1155), -- Coilfang Myrmidon -> Coilfang Myrmidon
 (@CGUID+40, @CGUID+97, 1679), -- Coilfang Sorceress -> Coilfang Warrior
 (@CGUID+41, @CGUID+97, 1679), -- Coilfang Sorceress -> Coilfang Warrior
 (@CGUID+95, @CGUID+32, 1679), -- Coilfang Warrior -> Coilfang Sorceress
 (@CGUID+104, @CGUID+32, 1679), -- Coilfang Warrior -> Coilfang Sorceress
 (@CGUID+66, @CGUID+34, 1679), -- Coilfang Myrmidon-> Coilfang Sorceress
 (@CGUID+67, @CGUID+34, 1679), -- Coilfang Myrmidon-> Coilfang Sorceress
-(@CGUID+35, @CGUID+81, 1167), -- Coilfang Sorceress -> Coilfang Siren
-(@CGUID+80, @CGUID+81, 1167), -- Coilfang Siren -> Coilfang Siren
-(@CGUID+68, @CGUID+81, 1167), -- Coilfang Myrmidon -> Coilfang Siren
-(@CGUID+65, @CGUID+64, 1167), -- Coilfang Myrmidon -> Coilfang Myrmidon
-(@CGUID+33, @CGUID+64, 1167), -- Coilfang Sorceress -> Coilfang Myrmidon
-(@CGUID+79, @CGUID+64, 1167), -- Coilfang Siren -> Coilfang Myrmidon
-(@CGUID+136, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+137, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+138, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+139, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+141, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+142, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+143, @CGUID+140, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+144, @CGUID+148, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+145, @CGUID+148, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+146, @CGUID+148, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+147, @CGUID+148, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+149, @CGUID+148, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+150, @CGUID+148, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+151, @CGUID+148, 1167), -- Coilfang Leper -> Coilfang Leper
-(@CGUID+21, @CGUID+74, 1167), -- Coilfang Engineer -> Coilfang Myrmidon
-(@CGUID+22, @CGUID+74, 1167), -- Coilfang Engineer -> Coilfang Myrmidon
-(@CGUID+39, @CGUID+74, 1167), -- Coilfang Sorceress -> Coilfang Myrmidon
-(@CGUID+174, @CGUID+177, 1167), -- Coilfang Engineer -> Coilfang Myrmidon
-(@CGUID+175, @CGUID+177, 1167), -- Coilfang Engineer -> Coilfang Myrmidon
-(@CGUID+176, @CGUID+177, 1167), -- Coilfang Sorceress -> Coilfang Myrmidon
-(@CGUID+38, @CGUID+72, 1167), -- Coilfang Sorceress -> Coilfang Myrmidon
-(@CGUID+82, @CGUID+72, 1167), -- Coilfang Siren -> Coilfang Myrmidon
-(@CGUID+109, @CGUID+72, 1167), -- Coilfang Oracle -> Coilfang Myrmidon
-(@CGUID+37, @CGUID+73, 1167), -- Coilfang Sorceress -> Coilfang Myrmidon
-(@CGUID+83, @CGUID+73, 1167), -- Coilfang Siren -> Coilfang Myrmidon
-(@CGUID+110, @CGUID+73, 1167), -- Coilfang Oracle -> Coilfang Myrmidon
-(@CGUID+70, @CGUID+118, 1167), -- Coilfang Myrmidon -> Coilfang Siren
-(@CGUID+71, @CGUID+118, 1167), -- Coilfang Myrmidon -> Coilfang Siren
-(@CGUID+108, @CGUID+118, 1167), -- Coilfang Oracle -> Coilfang Siren
+(@CGUID+35, @CGUID+81, 1155), -- Coilfang Sorceress -> Coilfang Siren
+(@CGUID+80, @CGUID+81, 1155), -- Coilfang Siren -> Coilfang Siren
+(@CGUID+68, @CGUID+81, 1155), -- Coilfang Myrmidon -> Coilfang Siren
+(@CGUID+65, @CGUID+64, 1155), -- Coilfang Myrmidon -> Coilfang Myrmidon
+(@CGUID+33, @CGUID+64, 1155), -- Coilfang Sorceress -> Coilfang Myrmidon
+(@CGUID+79, @CGUID+64, 1155), -- Coilfang Siren -> Coilfang Myrmidon
+(@CGUID+136, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+137, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+138, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+139, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+141, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+142, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+143, @CGUID+140, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+144, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+145, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+146, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+147, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+149, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+150, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+151, @CGUID+148, 1155), -- Coilfang Leper -> Coilfang Leper
+(@CGUID+21, @CGUID+74, 1155), -- Coilfang Engineer -> Coilfang Myrmidon
+(@CGUID+22, @CGUID+74, 1155), -- Coilfang Engineer -> Coilfang Myrmidon
+(@CGUID+39, @CGUID+74, 1155), -- Coilfang Sorceress -> Coilfang Myrmidon
+(@CGUID+174, @CGUID+177, 1155), -- Coilfang Engineer -> Coilfang Myrmidon
+(@CGUID+175, @CGUID+177, 1155), -- Coilfang Engineer -> Coilfang Myrmidon
+(@CGUID+176, @CGUID+177, 1155), -- Coilfang Sorceress -> Coilfang Myrmidon
+(@CGUID+38, @CGUID+72, 1155), -- Coilfang Sorceress -> Coilfang Myrmidon
+(@CGUID+82, @CGUID+72, 1155), -- Coilfang Siren -> Coilfang Myrmidon
+(@CGUID+109, @CGUID+72, 1155), -- Coilfang Oracle -> Coilfang Myrmidon
+(@CGUID+37, @CGUID+73, 1155), -- Coilfang Sorceress -> Coilfang Myrmidon
+(@CGUID+83, @CGUID+73, 1155), -- Coilfang Siren -> Coilfang Myrmidon
+(@CGUID+110, @CGUID+73, 1155), -- Coilfang Oracle -> Coilfang Myrmidon
+(@CGUID+70, @CGUID+118, 1155), -- Coilfang Myrmidon -> Coilfang Siren
+(@CGUID+71, @CGUID+118, 1155), -- Coilfang Myrmidon -> Coilfang Siren
+(@CGUID+108, @CGUID+118, 1155), -- Coilfang Oracle -> Coilfang Siren
 (@CGUID+121, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
 (@CGUID+122, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
 (@CGUID+123, @CGUID+42, 1159), -- Steamrigger Mechanic -> Mekgineer Steamrigger
-(@CGUID+63, @CGUID+62, 1167); -- Coilfang Myrmidon -> Coilfang Myrmidon
+(@CGUID+63, @CGUID+62, 1155); -- Coilfang Myrmidon -> Coilfang Myrmidon
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (17917, 545, 17797, 1159, 0), -- Coilfang Water Elemental -> Hydromancer Thespia

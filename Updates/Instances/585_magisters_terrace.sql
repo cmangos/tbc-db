@@ -859,41 +859,28 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Selin Fireheart
 (@CGUID+48, @CGUID+13, 512), -- creature_spawn_entry -> Invisible Stalker
 (@CGUID+74, @CGUID+13, 512), -- creature_spawn_entry -> Invisible Stalker
-(@CGUID+33, @CGUID+34, 1167), -- Sunblade Mage Guard -> Sunblade Mage Guard
-(@CGUID+34, @CGUID+117, 1024), -- Sunblade Mage Guard -> Selin Fireheart
-(@CGUID+27, @CGUID+78, 1167), -- Sunblade Mage Guard -> Sunblade Physician
-(@CGUID+40, @CGUID+78, 1167), -- Sunblade Blood Knight -> Sunblade Physician
-(@CGUID+57, @CGUID+78, 1167), -- Sunblade Magister -> Sunblade Physician
-(@CGUID+78, @CGUID+117, 1024), -- Sunblade Physician -> Selin Fireheart
-(@CGUID+28, @CGUID+79, 1167), -- Sunblade Mage Guard -> Sunblade Physician
-(@CGUID+42, @CGUID+79, 1167), -- Sunblade Blood Knight -> Sunblade Physician
-(@CGUID+68, @CGUID+79, 1167), -- Sunblade Warlock -> Sunblade Physician
-(@CGUID+79, @CGUID+117, 1024), -- Sunblade Physician -> Selin Fireheart
-(@CGUID+49, @CGUID+85, 1167), -- creature_spawn_entry -> Sunblade Physician
-(@CGUID+61, @CGUID+85, 1167), -- creature_spawn_entry -> Sunblade Physician
-(@CGUID+76, @CGUID+85, 1167), -- Sunblade Warlock -> Sunblade Physician
-(@CGUID+85, @CGUID+117, 1024), -- Sunblade Physician -> Selin Fireheart
-(@CGUID+94, @CGUID+99, 1167), -- creature_spawn_entry -> Wretched Husk
-(@CGUID+99, @CGUID+117, 1024), -- Wretched Husk -> Selin Fireheart
-(@CGUID+86, @CGUID+98, 1167), -- Wretched Skulker -> Wretched Husk
-(@CGUID+87, @CGUID+98, 1167), -- creature_spawn_entry -> Wretched Husk
-(@CGUID+90, @CGUID+98, 1167), -- Wretched Bruiser -> Wretched Husk
-(@CGUID+93, @CGUID+98, 1167), -- creature_spawn_entry -> Wretched Husk
-(@CGUID+97, @CGUID+98, 1167), -- Wretched Husk -> Wretched Husk
-(@CGUID+98, @CGUID+117, 1024), -- Wretched Husk -> Selin Fireheart
-(@CGUID+88, @CGUID+96, 1167), -- Wretched Skulker -> Wretched Husk
-(@CGUID+89, @CGUID+96, 1167), -- Wretched Skulker -> Wretched Husk
-(@CGUID+91, @CGUID+96, 1167), -- Wretched Bruiser -> Wretched Husk
-(@CGUID+92, @CGUID+96, 1167), -- Wretched Bruiser -> Wretched Husk
-(@CGUID+95, @CGUID+96, 1167), -- Wretched Husk -> Wretched Husk
-(@CGUID+96, @CGUID+117, 1024), -- Wretched Husk -> Selin Fireheart
+(@CGUID+33, @CGUID+34, 1155), -- Sunblade Mage Guard -> Sunblade Mage Guard
+(@CGUID+27, @CGUID+78, 1155), -- Sunblade Mage Guard -> Sunblade Physician
+(@CGUID+40, @CGUID+78, 1155), -- Sunblade Blood Knight -> Sunblade Physician
+(@CGUID+57, @CGUID+78, 1155), -- Sunblade Magister -> Sunblade Physician
+(@CGUID+28, @CGUID+79, 1155), -- Sunblade Mage Guard -> Sunblade Physician
+(@CGUID+42, @CGUID+79, 1155), -- Sunblade Blood Knight -> Sunblade Physician
+(@CGUID+68, @CGUID+79, 1155), -- Sunblade Warlock -> Sunblade Physician
+(@CGUID+49, @CGUID+85, 1155), -- creature_spawn_entry -> Sunblade Physician
+(@CGUID+61, @CGUID+85, 1155), -- creature_spawn_entry -> Sunblade Physician
+(@CGUID+76, @CGUID+85, 1155), -- Sunblade Warlock -> Sunblade Physician
+(@CGUID+94, @CGUID+99, 1155), -- creature_spawn_entry -> Wretched Husk
+(@CGUID+86, @CGUID+98, 1155), -- Wretched Skulker -> Wretched Husk
+(@CGUID+87, @CGUID+98, 1155), -- creature_spawn_entry -> Wretched Husk
+(@CGUID+90, @CGUID+98, 1155), -- Wretched Bruiser -> Wretched Husk
+(@CGUID+93, @CGUID+98, 1155), -- creature_spawn_entry -> Wretched Husk
+(@CGUID+97, @CGUID+98, 1155), -- Wretched Husk -> Wretched Husk
+(@CGUID+88, @CGUID+96, 1155), -- Wretched Skulker -> Wretched Husk
+(@CGUID+89, @CGUID+96, 1155), -- Wretched Skulker -> Wretched Husk
+(@CGUID+91, @CGUID+96, 1155), -- Wretched Bruiser -> Wretched Husk
+(@CGUID+92, @CGUID+96, 1155), -- Wretched Bruiser -> Wretched Husk
+(@CGUID+95, @CGUID+96, 1155), -- Wretched Husk -> Wretched Husk
 -- Vexallus
-(@CGUID+119, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
-(@CGUID+120, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
-(@CGUID+121, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
-(@CGUID+122, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
-(@CGUID+123, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
-(@CGUID+124, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
 (@CGUID+125, @CGUID+124, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+126, @CGUID+124, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+127, @CGUID+124, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
@@ -903,7 +890,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+131, @CGUID+124, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+132, @CGUID+124, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+133, @CGUID+124, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
-(@CGUID+134, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
 (@CGUID+135, @CGUID+134, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+136, @CGUID+134, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+137, @CGUID+134, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
@@ -913,7 +899,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+141, @CGUID+134, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+142, @CGUID+134, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+143, @CGUID+134, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
-(@CGUID+144, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
 (@CGUID+145, @CGUID+144, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+146, @CGUID+144, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+147, @CGUID+144, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
@@ -923,7 +908,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+151, @CGUID+144, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+152, @CGUID+144, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+153, @CGUID+144, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
-(@CGUID+154, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
 (@CGUID+155, @CGUID+154, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+156, @CGUID+154, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+157, @CGUID+154, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
@@ -933,7 +917,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+161, @CGUID+154, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+162, @CGUID+154, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+163, @CGUID+154, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
-(@CGUID+164, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
 (@CGUID+165, @CGUID+164, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+166, @CGUID+164, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+167, @CGUID+164, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
@@ -943,7 +926,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+171, @CGUID+164, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+172, @CGUID+164, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+173, @CGUID+164, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
-(@CGUID+174, @CGUID+118, 1024), -- Brightscale Wyrm -> Vexallus
 (@CGUID+175, @CGUID+174, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+176, @CGUID+174, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+177, @CGUID+174, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
@@ -954,60 +936,42 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+182, @CGUID+174, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+183, @CGUID+174, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 -- Priestess Delrissa
-(@CGUID+184, @CGUID+24, 1024), -- Sunblade Sentinel -> Priestess Delrissa
-(@CGUID+185, @CGUID+24, 1024), -- Sunblade Sentinel -> Priestess Delrissa
-(@CGUID+186, @CGUID+24, 1024), -- Sunblade Sentinel -> Priestess Delrissa
-(@CGUID+29, @CGUID+24, 1024), -- Sunblade Mage Guard -> Priestess Delrissa
-(@CGUID+69, @CGUID+29, 1167), -- Sunblade Warlock -> Sunblade Mage Guard
-(@CGUID+81, @CGUID+29, 1167), -- Sunblade Physician -> Sunblade Mage Guard
-(@CGUID+100, @CGUID+29, 1167), -- Coilskar Witch -> Sunblade Mage Guard
-(@CGUID+105, @CGUID+29, 1167), -- Sister of Torment -> Sunblade Mage Guard
-(@CGUID+37, @CGUID+24, 1024), -- Sunblade Blood Knight -> Priestess Delrissa
-(@CGUID+54, @CGUID+37, 1167), -- Sunblade Magister -> Sunblade Blood Knight
-(@CGUID+65, @CGUID+37, 1167), -- Sunblade Warlock -> Sunblade Blood Knight
-(@CGUID+103, @CGUID+37, 1167), -- Sister of Torment -> Sunblade Blood Knight
-(@CGUID+108, @CGUID+37, 1167), -- Ethereum Smuggler -> Sunblade Blood Knight
-(@CGUID+39, @CGUID+24, 1024), -- Sunblade Blood Knight -> Priestess Delrissa
-(@CGUID+53, @CGUID+39, 1167), -- Sunblade Magister -> Sunblade Blood Knight
-(@CGUID+66, @CGUID+39, 1167), -- Sunblade Warlock -> Sunblade Blood Knight
-(@CGUID+104, @CGUID+39, 1167), -- Sister of Torment -> Sunblade Blood Knight
-(@CGUID+109, @CGUID+39, 1167), -- Ethereum Smuggler -> Sunblade Blood Knight
-(@CGUID+41, @CGUID+24, 1024), -- creature_spawn_entry -> Priestess Delrissa
-(@CGUID+55, @CGUID+41, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+67, @CGUID+41, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+80, @CGUID+41, 1167), -- Sunblade Physician -> creature_spawn_entry
-(@CGUID+43, @CGUID+24, 1024), -- Sunblade Blood Knight -> Priestess Delrissa
-(@CGUID+58, @CGUID+43, 1167), -- Sunblade Magister -> Sunblade Blood Knight
-(@CGUID+70, @CGUID+43, 1167), -- Sunblade Warlock -> Sunblade Blood Knight
-(@CGUID+82, @CGUID+43, 1167), -- Sunblade Physician -> Sunblade Blood Knight
-(@CGUID+30, @CGUID+24, 1024), -- Sunblade Mage Guard -> Priestess Delrissa
-(@CGUID+45, @CGUID+30, 1167), -- Sunblade Blood Knight -> Sunblade Mage Guard
-(@CGUID+60, @CGUID+30, 1167), -- Sunblade Magister -> Sunblade Mage Guard
-(@CGUID+72, @CGUID+30, 1167), -- Sunblade Warlock -> Sunblade Mage Guard
-(@CGUID+26, @CGUID+24, 1024), -- Sunblade Mage Guard -> Priestess Delrissa
-(@CGUID+38, @CGUID+26, 1167), -- Sunblade Blood Knight -> Sunblade Mage Guard
-(@CGUID+52, @CGUID+26, 1167), -- Sunblade Magister -> Sunblade Mage Guard
-(@CGUID+64, @CGUID+26, 1167), -- Sunblade Warlock -> Sunblade Mage Guard
-(@CGUID+102, @CGUID+26, 1167), -- Sister of Torment -> Sunblade Mage Guard
-(@CGUID+36, @CGUID+24, 1024), -- Sunblade Mage Guard -> Priestess Delrissa
-(@CGUID+50, @CGUID+36, 1167), -- Sunblade Blood Knight -> Sunblade Mage Guard
-(@CGUID+51, @CGUID+36, 1167), -- Sunblade Magister -> Sunblade Mage Guard
-(@CGUID+77, @CGUID+36, 1167), -- Sunblade Warlock -> Sunblade Mage Guard
-(@CGUID+47, @CGUID+24, 1024), -- Sunblade Blood Knight -> Priestess Delrissa
-(@CGUID+59, @CGUID+47, 1167), -- Sunblade Magister -> Sunblade Blood Knight
-(@CGUID+73, @CGUID+47, 1167), -- Sunblade Warlock -> Sunblade Blood Knight
-(@CGUID+107, @CGUID+47, 1167), -- Sister of Torment -> Sunblade Blood Knight
-(@CGUID+111, @CGUID+47, 1167), -- Ethereum Smuggler -> Sunblade Blood Knight
-(@CGUID+62, @CGUID+35, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+35, @CGUID+24, 1024), -- creature_spawn_entry -> Priestess Delrissa
-(@CGUID+84, @CGUID+75, 1167), -- Sunblade Physician -> creature_spawn_entry
-(@CGUID+75, @CGUID+24, 1024), -- creature_spawn_entry -> Priestess Delrissa
-(@CGUID+63, @CGUID+32, 1167), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+32, @CGUID+24, 1024), -- creature_spawn_entry -> Priestess Delrissa
-(@CGUID+83, @CGUID+46, 1167), -- Sunblade Physician -> creature_spawn_entry
-(@CGUID+46, @CGUID+24, 1024), -- creature_spawn_entry -> Priestess Delrissa
--- Kael'thas Sunstrider
-(@CGUID+31, @CGUID+25, 1024), -- Sunblade Mage Guard -> Kael'thas Sunstrider
+(@CGUID+69, @CGUID+29, 1155), -- Sunblade Warlock -> Sunblade Mage Guard
+(@CGUID+81, @CGUID+29, 1155), -- Sunblade Physician -> Sunblade Mage Guard
+(@CGUID+100, @CGUID+29, 1155), -- Coilskar Witch -> Sunblade Mage Guard
+(@CGUID+105, @CGUID+29, 1155), -- Sister of Torment -> Sunblade Mage Guard
+(@CGUID+54, @CGUID+37, 1155), -- Sunblade Magister -> Sunblade Blood Knight
+(@CGUID+65, @CGUID+37, 1155), -- Sunblade Warlock -> Sunblade Blood Knight
+(@CGUID+103, @CGUID+37, 1155), -- Sister of Torment -> Sunblade Blood Knight
+(@CGUID+108, @CGUID+37, 1155), -- Ethereum Smuggler -> Sunblade Blood Knight
+(@CGUID+53, @CGUID+39, 1155), -- Sunblade Magister -> Sunblade Blood Knight
+(@CGUID+66, @CGUID+39, 1155), -- Sunblade Warlock -> Sunblade Blood Knight
+(@CGUID+104, @CGUID+39, 1155), -- Sister of Torment -> Sunblade Blood Knight
+(@CGUID+109, @CGUID+39, 1155), -- Ethereum Smuggler -> Sunblade Blood Knight
+(@CGUID+55, @CGUID+41, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+67, @CGUID+41, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+80, @CGUID+41, 1155), -- Sunblade Physician -> creature_spawn_entry
+(@CGUID+58, @CGUID+43, 1155), -- Sunblade Magister -> Sunblade Blood Knight
+(@CGUID+70, @CGUID+43, 1155), -- Sunblade Warlock -> Sunblade Blood Knight
+(@CGUID+82, @CGUID+43, 1155), -- Sunblade Physician -> Sunblade Blood Knight
+(@CGUID+45, @CGUID+30, 1155), -- Sunblade Blood Knight -> Sunblade Mage Guard
+(@CGUID+60, @CGUID+30, 1155), -- Sunblade Magister -> Sunblade Mage Guard
+(@CGUID+72, @CGUID+30, 1155), -- Sunblade Warlock -> Sunblade Mage Guard
+(@CGUID+38, @CGUID+26, 1155), -- Sunblade Blood Knight -> Sunblade Mage Guard
+(@CGUID+52, @CGUID+26, 1155), -- Sunblade Magister -> Sunblade Mage Guard
+(@CGUID+64, @CGUID+26, 1155), -- Sunblade Warlock -> Sunblade Mage Guard
+(@CGUID+102, @CGUID+26, 1155), -- Sister of Torment -> Sunblade Mage Guard
+(@CGUID+50, @CGUID+36, 1155), -- Sunblade Blood Knight -> Sunblade Mage Guard
+(@CGUID+51, @CGUID+36, 1155), -- Sunblade Magister -> Sunblade Mage Guard
+(@CGUID+77, @CGUID+36, 1155), -- Sunblade Warlock -> Sunblade Mage Guard
+(@CGUID+59, @CGUID+47, 1155), -- Sunblade Magister -> Sunblade Blood Knight
+(@CGUID+73, @CGUID+47, 1155), -- Sunblade Warlock -> Sunblade Blood Knight
+(@CGUID+107, @CGUID+47, 1155), -- Sister of Torment -> Sunblade Blood Knight
+(@CGUID+111, @CGUID+47, 1155), -- Ethereum Smuggler -> Sunblade Blood Knight
+(@CGUID+62, @CGUID+35, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+84, @CGUID+75, 1155), -- Sunblade Physician -> creature_spawn_entry
+(@CGUID+63, @CGUID+32, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+83, @CGUID+46, 1155), -- Sunblade Physician -> creature_spawn_entry
 (@CGUID+44, @CGUID+31, 1167), -- Sunblade Blood Knight -> Sunblade Mage Guard
 (@CGUID+71, @CGUID+31, 1167), -- Sunblade Warlock -> Sunblade Mage Guard
 (@CGUID+101, @CGUID+31, 1167), -- Coilskar Witch -> Sunblade Mage Guard
