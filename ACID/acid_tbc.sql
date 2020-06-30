@@ -27958,6 +27958,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greyheart Tidecaller
 ('2122901','21229','0','0','100','1025','1000','3000','120000','135000','0','0','11','39027','0','0','0','0','0','0','0','0','0','0','Greyheart Tidecaller - Cast Poison Shield'),
 ('2122902','21229','0','0','100','1025','3200','7900','35700','43700','0','0','11','38624','0','0','0','0','0','0','0','0','0','0','Greyheart Tidecaller - Cast Water Elemental Totem'),
+('2122902','21229','11','0','100','0','0','0','0','0','0','0','62','3','0','0','0','0','0','0','0','0','0','0','Greyheart Tidecaller - Enable Despawn Aggregation on Evade'),
 -- Greyheart Nether-Mage 21230 - No Main Spell in Melee Range
 ('2123001','21230','4','0','100','0','0','0','0','0','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Greyheart Nether-Mage - Random Phase Select on Aggro'),
 ('2123002','21230','9','13','100','1025','5','40','3400','4800','0','0','11','38645','1','0','0','0','0','0','0','0','0','0','Greyheart Nether-Mage - Cast Frostbolt (Phase 1)'),
