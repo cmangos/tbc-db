@@ -26536,9 +26536,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2047802','20478','0','0','100','1025','3600','10800','16900','26500','0','0','11','35255','1','0','0','0','0','0','0','0','0','0','Arcane Servant - Cast Arcane Volley'),
 ('2047803','20478','6','0','100','0','0','0','0','0','0','0','11','22271','0','7','0','0','0','0','0','0','0','0','Arcane Servant - Cast Arcane Explosion on Death'),
 -- Raging Flames (20481) - npc_raging_flames
--- Nether Charge (4.3.4 Official Data - Normal/Heroic) - Sniff Data
+-- Nether Charge 20405 (4.3.4 Official Data - Normal/Heroic) - Sniff Data
 ('2040501','20405','11','0','100','0','0','0','0','0','0','0','11','35150','0','0','11','37670','0','0','50','0','0','0','Nether Charge - Cast Nether Charge Passive, Cast Nether Charge Timer on Spawn and set React Passive'),
-('2040502','20405','29','0','100','0','10500','10500','0','0','0','0','11','35151','0','2','0','0','0','0','0','0','0','0','Nether Charge - Prevent Combat Movement and Cast Nether Charge Pulse on Generic Timer'),
+('2040502','20405','29','0','100','0','10500','10500','0','0','0','0','11','35151','0','2','61','1','0','0','0','0','0','0','Nether Charge - Cast Nether Charge Pulse and Set Immobilized State on Generic Timer'),
 ('2040503','20405','29','0','100','0','12500','12500','0','0','0','0','11','35151','0','2','0','0','0','0','0','0','0','0','Nether Charge - Cast Nether Charge Pulse on Generic Timer'),
 ('2040504','20405','29','0','100','0','14500','14500','0','0','0','0','11','35151','0','2','0','0','0','0','0','0','0','0','Nether Charge - Cast Nether Charge Pulse on Generic Timer'),
 -- Sunseeker Engineer (4.3.4 Official Data - Normal/Heroic)
