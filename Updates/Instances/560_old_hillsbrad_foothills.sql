@@ -34,6 +34,36 @@ SET @PGUID := 49600; -- pools
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(@CGUID+321, 1, 2112.395, 49.795464, 53.86632, 100, 0, 0),
+(@CGUID+321, 2, 2116.2764, 49.749023, 53.842293, 100, 0, 0),
+(@CGUID+321, 3, 2119.165, 51.97732, 53.83542, 100, 0, 0),
+(@CGUID+321, 4, 2115.989, 50.291813, 53.846695, 100, 0, 0),
+(@CGUID+321, 5, 2112.395, 49.795464, 53.86632, 100, 0, 0),
+(@CGUID+321, 6, 2108.2795, 49.783096, 53.74777, 100, 0, 0),
+(@CGUID+321, 7, 2105.007, 48.66352, 53.64801, 100, 0, 0),
+(@CGUID+321, 8, 2102.9553, 46.27409, 53.61472, 100, 0, 0),
+(@CGUID+321, 9, 2100.4917, 45.43674, 53.539524, 100, 0, 0),
+(@CGUID+321, 10, 2098.6775, 46.957573, 53.447086, 100, 0, 0),
+(@CGUID+321, 11, 2096.8335, 50.638237, 53.387196, 100, 0, 0),
+(@CGUID+321, 12, 2096.4756, 53.981228, 53.428577, 100, 0, 0),
+(@CGUID+321, 13, 2091.025, 51.800346, 53.509926, 100, 0, 0),
+(@CGUID+321, 14, 2089.375, 49.77268, 53.498997, 100, 0, 0),
+(@CGUID+323, 1, 2061.9016, 161.73117, 65.252426, 100, 0, 0),
+(@CGUID+323, 2, 2051.0134, 145.70901, 65.04503, 100, 0, 0),
+(@CGUID+323, 3, 2045.1321, 124.61867, 64.54904, 100, 0, 0),
+(@CGUID+323, 4, 2037.3037, 111.27539, 64.79469, 100, 0, 0),
+(@CGUID+323, 5, 2033.6324, 90.28155, 64.49413, 100, 0, 0),
+(@CGUID+323, 6, 2036.8689, 82.16157, 64.579094, 100, 0, 0),
+(@CGUID+323, 7, 2035.87, 64.30219, 64.948975, 100, 0, 0),
+(@CGUID+323, 8, 2054.299, 47.52474, 64.800415, 100, 0, 0),
+(@CGUID+323, 9, 2081.9385, 29.203396, 64.808334, 100, 0, 0),
+(@CGUID+323, 10, 2054.299, 47.52474, 64.800415, 100, 0, 0),
+(@CGUID+323, 11, 2035.87, 64.30219, 64.948975, 100, 0, 0),
+(@CGUID+323, 12, 2036.8689, 82.16157, 64.579094, 100, 0, 0),
+(@CGUID+323, 13, 2033.6324, 90.28155, 64.49413, 100, 0, 0),
+(@CGUID+323, 14, 2037.3037, 111.27539, 64.79469, 100, 0, 0),
+(@CGUID+323, 15, 2045.1321, 124.61867, 64.54904, 100, 0, 0),
+(@CGUID+323, 16, 2051.0134, 145.70901, 65.04503, 100, 0, 0),
 (@CGUID+325, 1, 1802.79, 1019.27, 14.9106, 1.54089, 0, 0),
 (@CGUID+325, 2, 1802.86, 1028.15, 11.0651, 4.68249, 0, 0),
 (@CGUID+325, 3, 1802.64, 1019.01, 14.911, 6.27291, 0, 0),
@@ -1804,8 +1834,8 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (18672, 0, 156, 2640.84, 691.622, 55.4653, 4.53882, 0, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+361, 0, 3, 0, 0, 0, 0, NULL), -- Durnholde Sentry
-(@CGUID+401, 0, 3, 0, 0, 0, 0, NULL), -- Durnholde Rifleman
+(@CGUID+361, 0, 3, 0, 0, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+401, 0, 3, 0, 0, 0, 0, NULL), -- creature_spawn_entry
 (@CGUID+436, 0, 1, 0, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+437, 0, 1, 0, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+438, 0, 1, 0, 0, 0, 0, NULL), -- Orc Prisoner
@@ -1853,40 +1883,41 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+349, @CGUID+351, 515), -- Lordaeron Watchman -> Lordaeron Sentry
 (@CGUID+350, @CGUID+351, 515), -- Lordaeron Watchman -> Lordaeron Sentry
 (@CGUID+363, @CGUID+364, 3), -- Durnholde Sentry -> Durnholde Sentry
-(@CGUID+372, @CGUID+409, 3), -- Durnholde Sentry -> Durnholde Warden
+(@CGUID+365, @CGUID+366, 3), -- Durnholde Sentry -> Durnholde Sentry
 (@CGUID+373, @CGUID+374, 3), -- Durnholde Sentry -> Durnholde Sentry
-(@CGUID+380, @CGUID+412, 3), -- Durnholde Sentry -> Durnholde Warden
-(@CGUID+383, @CGUID+382, 3), -- Durnholde Sentry -> Durnholde Sentry
-(@CGUID+384, @CGUID+408, 3), -- Durnholde Sentry -> Durnholde Warden
-(@CGUID+385, @CGUID+370, 3), -- Durnholde Sentry -> Durnholde Sentry
-(@CGUID+386, @CGUID+362, 3), -- Durnholde Rifleman -> Durnholde Sentry
-(@CGUID+389, @CGUID+388, 3), -- Durnholde Rifleman -> creature_spawn_entry
-(@CGUID+390, @CGUID+404, 3), -- Durnholde Rifleman -> Durnholde Rifleman
-(@CGUID+391, @CGUID+408, 3), -- Durnholde Rifleman -> Durnholde Warden
-(@CGUID+393, @CGUID+409, 3), -- Durnholde Rifleman -> Durnholde Warden
-(@CGUID+398, @CGUID+412, 3), -- Durnholde Rifleman -> Durnholde Warden
-(@CGUID+400, @CGUID+381, 3), -- Durnholde Rifleman -> Durnholde Sentry
-(@CGUID+401, @CGUID+361, 3), -- Durnholde Rifleman -> Durnholde Sentry
-(@CGUID+402, @CGUID+408, 3), -- Durnholde Rifleman -> Durnholde Warden
-(@CGUID+403, @CGUID+370, 3), -- Durnholde Rifleman -> Durnholde Sentry
-(@CGUID+406, @CGUID+404, 3), -- Durnholde Warden -> Durnholde Rifleman
-(@CGUID+407, @CGUID+370, 3), -- Durnholde Warden -> Durnholde Sentry
 (@CGUID+410, @CGUID+374, 3), -- Durnholde Warden -> Durnholde Sentry
 (@CGUID+411, @CGUID+374, 3), -- Durnholde Warden -> Durnholde Sentry
+(@CGUID+383, @CGUID+382, 3), -- Durnholde Sentry -> Durnholde Sentry
+(@CGUID+395, @CGUID+396, 3), -- creature_spawn_entry -> Durnholde Rifleman
+(@CGUID+372, @CGUID+409, 3), -- Durnholde Sentry -> creature_spawn_entry
+(@CGUID+393, @CGUID+409, 3), -- Durnholde Rifleman -> creature_spawn_entry
+(@CGUID+433, @CGUID+409, 3), -- Durnholde Veteran -> creature_spawn_entry
+(@CGUID+380, @CGUID+412, 3), -- Durnholde Sentry -> Durnholde Warden
+(@CGUID+398, @CGUID+412, 3), -- Durnholde Rifleman -> Durnholde Warden
 (@CGUID+413, @CGUID+412, 3), -- Durnholde Warden -> Durnholde Warden
+(@CGUID+391, @CGUID+408, 3), -- Durnholde Rifleman -> Durnholde Warden
+(@CGUID+402, @CGUID+384, 3), -- creature_spawn_entry -> Durnholde Sentry
+(@CGUID+407, @CGUID+370, 3), -- Durnholde Warden -> Durnholde Sentry
+(@CGUID+386, @CGUID+362, 3), -- Durnholde Rifleman -> Durnholde Sentry
+(@CGUID+389, @CGUID+388, 3), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+390, @CGUID+406, 3), -- Durnholde Rifleman -> Durnholde Warden
+(@CGUID+400, @CGUID+381, 3), -- Durnholde Rifleman -> Durnholde Sentry
 (@CGUID+414, @CGUID+381, 3), -- Durnholde Warden -> Durnholde Sentry
 (@CGUID+415, @CGUID+381, 3), -- Durnholde Warden -> Durnholde Sentry
+(@CGUID+401, @CGUID+361, 3), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+403, @CGUID+385, 3), -- Durnholde Rifleman -> Durnholde Sentry
 (@CGUID+416, @CGUID+399, 3), -- Durnholde Warden -> Durnholde Rifleman
-(@CGUID+418, @CGUID+397, 3), -- Durnholde Warden -> Durnholde Rifleman
+(@CGUID+432, @CGUID+399, 3), -- creature_spawn_entry -> Durnholde Rifleman
+(@CGUID+434, @CGUID+399, 3), -- creature_spawn_entry -> Durnholde Rifleman
+(@CGUID+405, @CGUID+418, 3), -- Durnholde Rifleman -> Durnholde Warden
+(@CGUID+322, @CGUID+323, 515), -- Durnholde Tracking Hound -> Durnholde Rifleman
 (@CGUID+419, @CGUID+387, 515), -- Durnholde Tracking Hound -> Durnholde Rifleman
 (@CGUID+420, @CGUID+368, 515), -- Durnholde Tracking Hound -> Durnholde Sentry
 (@CGUID+421, @CGUID+392, 515), -- Durnholde Tracking Hound -> Durnholde Rifleman
 (@CGUID+422, @CGUID+394, 515), -- Durnholde Tracking Hound -> Durnholde Rifleman
 (@CGUID+423, @CGUID+375, 515), -- Durnholde Tracking Hound -> Durnholde Sentry
 (@CGUID+424, @CGUID+379, 515), -- Durnholde Tracking Hound -> Durnholde Sentry
-(@CGUID+432, @CGUID+399, 3), -- Durnholde Veteran -> Durnholde Rifleman
-(@CGUID+433, @CGUID+409, 3), -- Durnholde Veteran -> Durnholde Warden
-(@CGUID+434, @CGUID+399, 3), -- Durnholde Veteran -> Durnholde Rifleman
+
 (@CGUID+471, @CGUID+470, 515), -- Dalaran Sorceress -> Aged Dalaran Wizard
 
 (@CGUID+601, @CGUID+602, 515), -- Tarren Mill Lookout -> Tarren Mill Guardsman
@@ -1902,7 +1933,19 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (28163, 560, 28132, 515, 15); -- Guerrero -> Don Carlos
 
 INSERT INTO `creature_spawn_entry` (guid, `entry`) VALUES
-(@CGUID+388, 17819), (@CGUID+388, 17820); -- Durnholde Sentry, Durnholde Rifleman
+(@CGUID+361, 17819), (@CGUID+361, 17820), -- Durnholde Sentry, Durnholde Rifleman
+(@CGUID+371, 17819), (@CGUID+371, 17820), -- Durnholde Sentry, Durnholde Rifleman
+(@CGUID+388, 17819), (@CGUID+388, 17820), -- Durnholde Sentry, Durnholde Rifleman
+(@CGUID+389, 17820), (@CGUID+389, 17833), -- Durnholde Rifleman, Durnholde Warden
+(@CGUID+393, 17820), (@CGUID+393, 17833), -- Durnholde Rifleman, Durnholde Warden
+(@CGUID+395, 17819), (@CGUID+395, 17820), -- Durnholde Sentry, Durnholde Rifleman
+(@CGUID+397, 17819), (@CGUID+397, 17820), -- Durnholde Sentry, Durnholde Rifleman
+(@CGUID+401, 17819), (@CGUID+401, 17820), -- Durnholde Sentry, Durnholde Rifleman
+(@CGUID+402, 17819), (@CGUID+402, 17820), -- Durnholde Sentry, Durnholde Rifleman
+(@CGUID+404, 17819), (@CGUID+404, 17820), -- Durnholde Sentry, Durnholde Rifleman
+(@CGUID+409, 17820), (@CGUID+409, 17833), -- Durnholde Rifleman, Durnholde Warden
+(@CGUID+432, 17819), (@CGUID+432, 17860), -- Durnholde Sentry, Durnholde Veteran
+(@CGUID+434, 17819), (@CGUID+434, 17860); -- Durnholde Sentry, Durnholde Veteran
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 20434, 560, 3, 1889.295, 992.3798, 15.2348, 2.251475, 7200, 7200, 0, 0, 0, 0), -- Horse
@@ -2212,7 +2255,19 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+305, 2385, 560, 3, 1788.73, 150.698, 55.2145, 3.4428, 180, 180, 3, 0, 0, 1), -- Feral Mountain Lion
 (@CGUID+306, 2385, 560, 3, 1717.28, 338.181, 54.6755, 3.42709, 180, 180, 3, 0, 0, 1), -- Feral Mountain Lion
 (@CGUID+307, 2385, 560, 3, 1971.06, 431.124, 60.9672, 0.948781, 180, 180, 3, 0, 0, 1), -- Feral Mountain Lion
--- REUSE 308 - 323
+(@CGUID+308, 17846, 560, 3, 2189.5898, 43.910698, 64.89853, 3.752457857131958007, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+309, 17846, 560, 3, 2150.3008, 12.65587, 66.20103, 0.733038306236267089, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+310, 17846, 560, 3, 2196.4656, 26.607693, 64.91118, 2.984513044357299804, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+311, 17846, 560, 3, 2192.601, 17.840494, 64.917725, 2.600540637969970703, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+312, 17846, 560, 3, 2190.3147, 6.240343, 66.24289, 2.234021425247192382, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+313, 17846, 560, 3, 2188.562, 2.351346, 66.24475, 2.129301786422729492, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+314, 17846, 560, 3, 2164.1348, 55.429146, 64.89349, 4.991641521453857421, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+315, 17846, 560, 3, 2200.4507, 30.2315, 66.17768, 3.124139308929443359, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+-- REUSE 316 - 318
+(@CGUID+319, 12999, 560, 3, 2381.441, 715.7634, 42.083565, 0.174532920122146606, 7200, 7200, 0, 0, 0, 0), -- World Invisible Trigger
+(@CGUID+321, 17819, 560, 3, 2104.2727, 47.808395, 53.636097, 0.86128, 7200, 7200, 0, 0, 0, 2), -- Durnholde Rifleman
+(@CGUID+322, 17840, 560, 3, 2064.28, 164.43, 64.89, 0, 7200, 7200, 0, 0, 0, 0), -- Durnholde Tracking Hound
+(@CGUID+323, 17820, 560, 3, 2061.9016, 161.73117, 65.252426, 1.12480, 7200, 7200, 0, 0, 0, 2), -- Durnholde Rifleman
 (@CGUID+324, 8883, 560, 3, 1891.65, 994.035, 15.1516, 2.33433, 86400, 86400, 0, 0, 0, 0), -- Riding Horse
 (@CGUID+325, 17213, 560, 3, 1802.79, 1019.27, 14.9106, 1.5998, 86400, 86400, 0, 0, 0, 2), -- Broom
 (@CGUID+326, 17814, 560, 3, 2329.58, 909.306, 57.6643, 1.24327, 7200, 7200, 0, 0, 0, 0), -- Lordaeron Watchman
@@ -2250,64 +2305,64 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+358, 17815, 560, 3, 2065.35, 536.648, 65.4449, 2.63777, 7200, 7200, 0, 0, 0, 0), -- Lordaeron Sentry
 (@CGUID+359, 17815, 560, 3, 2069.56, 533.01, 100.531, 5.98592, 7200, 7200, 0, 0, 0, 0), -- Lordaeron Sentry
 (@CGUID+360, 17815, 560, 3, 2321.19, 886.26, 92.7589, 5.98453, 7200, 7200, 0, 0, 0, 2), -- Lordaeron Sentry
-(@CGUID+361, 17819, 560, 3, 2230.5, 96.335, 91.7194, 1.13016, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+362, 17819, 560, 3, 2113.12, 195.772, 66.2218, 2.46529, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+363, 17819, 560, 3, 2119.32, 223.664, 64.8752, 4.99208, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+364, 17819, 560, 3, 2120.34, 218.721, 64.9435, 1.66828, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+365, 17819, 560, 3, 2076.55, 168.677, 65.1504, 3.72429, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+366, 17819, 560, 3, 2073.18, 166.098, 65.0422, 0.634532, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+367, 17819, 560, 3, 2076.81, 221.063, 64.874, 2.52515, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+361, 0, 560, 3, 2230.085, 95.804474, 90.17726, 0.92502, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+362, 17819, 560, 3, 2113.4456, 195.70581, 66.30493, 2.44346, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+363, 17819, 560, 3, 2119.5833, 222.98616, 64.95477, 5.02654, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+364, 17819, 560, 3, 2120.7683, 219.62674, 65.00113, 1.93731, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+365, 17819, 560, 3, 2076.4702, 168.23392, 65.216034, 3.83972, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+366, 17819, 560, 3, 2073.7869, 166.24257, 65.13218, 0.55850, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+367, 17819, 560, 3, 2076.1074, 221.00847, 64.95691, 2.42600, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
 (@CGUID+368, 17819, 560, 3, 2120.48, 234.527, 64.8737, 1.1796, 7200, 7200, 0, 0, 0, 2), -- Durnholde Sentry
-(@CGUID+369, 17819, 560, 3, 2066.64, 142.899, 53.259, 2.79768, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+370, 17819, 560, 3, 2084.96, 69.4752, 52.4764, 0.480697, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+371, 17819, 560, 3, 2070.83, 71.4879, 53.6836, 2.25856, 7200, 7200, 0, 0, 0, 2), -- Durnholde Sentry
-(@CGUID+372, 17819, 560, 3, 2186.96, 137.735, 88.2164, 2.71802, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+373, 17819, 560, 3, 2129.2, 177.595, 54.0843, 3.19294, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+374, 17819, 560, 3, 2126.44, 175.292, 53.516, 1.56167, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+369, 17819, 560, 3, 2067.1099, 142.9029, 53.271603, 2.98451, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+370, 17819, 560, 3, 2085.0088, 69.42405, 52.561478, 0.57595, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+371, 17819, 560, 3, 2070.83, 71.4879, 53.6836, 2.25856, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+372, 17819, 560, 3, 2189.9932, 136.32552, 88.299866, 2.46091, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+373, 17819, 560, 3, 2129.4326, 177.55392, 54.198532, 3.24631, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+374, 17819, 560, 3, 2127.1814, 175.42535, 53.871033, 1.5882, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
 (@CGUID+375, 17819, 560, 3, 2166.98, 217.204, 52.8188, 0.32192, 7200, 7200, 0, 0, 0, 2), -- Durnholde Sentry
-(@CGUID+376, 17819, 560, 3, 2228.4, 258.271, 53.1448, 1.23575, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+376, 17819, 560, 3, 2228.49, 258.5586, 53.3031, 1.27409, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
 (@CGUID+377, 17819, 560, 3, 2224.24, 261.027, 52.8709, 1.08338, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+378, 17819, 560, 3, 2170.79, 268.471, 52.9163, 2.42404, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+378, 17819, 560, 3, 2170.8162, 268.7205, 53.047005, 2.49582, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
 (@CGUID+379, 17819, 560, 3, 2186.06, 272.098, 52.7956, 3.30242, 7200, 7200, 0, 0, 0, 2), -- Durnholde Sentry
-(@CGUID+380, 17819, 560, 3, 2231.95, 184.198, 102.564, 3.22859, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+381, 17819, 560, 3, 2207.86, 125.212, 103.378, 1.09756, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+382, 17819, 560, 3, 2257.46, 259.449, 65.0975, 1.53443, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+383, 17819, 560, 3, 2256.79, 264.135, 64.8945, 4.74278, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+380, 17819, 560, 3, 2231.158, 185.02083, 102.6132, 3.47320, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+381, 17819, 560, 3, 2207.5837, 125.05024, 103.461845, 1.50098, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+382, 17819, 560, 3, 2257.8013, 259.87036, 65.17412, 1.37881, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
+(@CGUID+383, 17819, 560, 3, 2257.9175, 263.70966, 64.97887, 4.83456, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
 (@CGUID+384, 17819, 560, 3, 2090.35, 44.7203, 52.4421, 4.33673, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
 (@CGUID+385, 17819, 560, 3, 2055.22, 83.8672, 52.4861, 3.67686, 7200, 7200, 0, 0, 0, 0), -- Durnholde Sentry
-(@CGUID+386, 17820, 560, 3, 2109.01, 189.145, 66.2221, 2.57525, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+386, 17820, 560, 3, 2109.3005, 189.21585, 66.30494, 2.39110, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
 (@CGUID+387, 17820, 560, 3, 2124.23, 182.621, 69.4139, 5.70349, 7200, 7200, 0, 0, 0, 2), -- Durnholde Rifleman
-(@CGUID+388, 0, 560, 3, 2141.53, 174.744, 66.2217, 2.54227, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+389, 17820, 560, 3, 2137.49, 168.56, 66.2217, 2.4598, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+390, 17820, 560, 3, 2072.27, 105.922, 53.2948, 5.89137, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+391, 17820, 560, 3, 2117.43, 54.716, 52.5916, 1.17158, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+388, 0, 560, 3, 2142.372, 174.2907, 66.30494, 2.56563, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+389, 0, 560, 3, 2138.1775, 168.6046, 66.30494, 2.47836, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+390, 17820, 560, 3, 2072.6418, 105.68772, 53.317158, 5.93411, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+391, 17820, 560, 3, 2117.6218, 54.548504, 52.673676, 1.09955, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
 (@CGUID+392, 17820, 560, 3, 2110.67, 69.1812, 52.5041, 2.52167, 7200, 7200, 0, 0, 0, 2), -- Durnholde Rifleman
-(@CGUID+393, 17820, 560, 3, 2185.07, 146.42, 88.2164, 2.60806, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+393, 0, 560, 3, 2186.312, 146.63777, 88.299866, 2.89724, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
 (@CGUID+394, 17820, 560, 3, 2208.24, 106.283, 89.4549, 2.97721, 7200, 7200, 0, 0, 0, 2), -- Durnholde Rifleman
-(@CGUID+395, 17820, 560, 3, 2161.25, 232.944, 52.441, 5.44257, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+396, 17820, 560, 3, 2164.78, 235.551, 52.441, 5.23774, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+397, 17820, 560, 3, 2195.96, 258.857, 54.0546, 0.636878, 7200, 7200, 0, 0, 0, 2), -- Durnholde Rifleman
-(@CGUID+398, 17820, 560, 3, 2232.44, 179.266, 102.561, 3.24037, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+399, 17820, 560, 3, 2222.86, 120.352, 89.4549, 1.39547, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+400, 17820, 560, 3, 2214.79, 134.233, 103.379, 4.88579, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+401, 17820, 560, 3, 2222.57, 88.8884, 91.5915, 2.62988, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+402, 17820, 560, 3, 2085.48, 46.7439, 52.5225, 4.3745, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+403, 17820, 560, 3, 2053.22, 87.8803, 52.5469, 3.53099, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+404, 17820, 560, 3, 2068.6, 112.257, 54.68, 1.89859, 7200, 7200, 0, 0, 0, 2), -- Durnholde Rifleman
-(@CGUID+405, 17820, 560, 3, 2191.83, 256.39, 52.4411, 4.17236, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
-(@CGUID+406, 17833, 560, 3, 2074.58, 110.82, 53.3224, 5.9597, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+407, 17833, 560, 3, 2082.72, 73.9288, 52.442, 0.525837, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+408, 17833, 560, 3, 2122.75, 52.3503, 52.441, 1.11189, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+409, 17833, 560, 3, 2181.28, 139.613, 88.2164, 2.67875, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+410, 17833, 560, 3, 2121.65, 179.503, 53.1818, 0.586199, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+411, 17833, 560, 3, 2124.06, 183.332, 52.7799, 4.01682, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+412, 17833, 560, 3, 2220.92, 183.993, 98.3113, 3.23645, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+413, 17833, 560, 3, 2221.87, 176.493, 98.0355, 3.26786, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+414, 17833, 560, 3, 2215.29, 131.741, 103.379, 1.76776, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+415, 17833, 560, 3, 2209.42, 126.366, 103.378, 4.00668, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
-(@CGUID+416, 17833, 560, 3, 2224.62, 123.511, 89.4549, 4.14173, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+395, 0, 560, 3, 2160.455, 232.90962, 52.52424, 5.51524, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+396, 17820, 560, 3, 2164.3833, 236.65886, 52.52424, 5.44542, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+397, 0, 560, 3, 2195.96, 258.857, 54.0546, 0.636878, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+398, 17820, 560, 3, 2232.1191, 178.31557, 102.61417, 3.43829, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+399, 17820, 560, 3, 2223.4128, 120.82661, 89.53843, 0.48869, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+400, 17820, 560, 3, 2215.645, 133.40657, 103.46184, 4.76474, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+401, 0, 560, 3, 2222.5786, 88.64117, 91.684204, 2.68780, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+402, 0, 560, 3, 2085.2646, 46.59722, 52.632256, 4.39822, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+403, 17820, 560, 3, 2053.1458, 88.54264, 52.6012, 3.66519, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+404, 0, 560, 3, 2068.6, 112.257, 54.68, 1.89859, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+405, 17820, 560, 3, 2191.2456, 256.829, 52.524235, 4.31096, 7200, 7200, 0, 0, 0, 0), -- Durnholde Rifleman
+(@CGUID+406, 17833, 560, 3, 2075.1501, 110.61784, 53.322304, 5.91666, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+407, 17833, 560, 3, 2082.6824, 73.90994, 52.52425, 0.45378, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+408, 17833, 560, 3, 2122.4045, 52.18327, 52.52425, 1.30899, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+409, 0, 560, 3, 2181.9778, 138.92584, 88.299866, 2.37364, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+410, 17833, 560, 3, 2121.6597, 176.59029, 52.979218, 6.00393, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+411, 17833, 560, 3, 2124.713, 180.7857, 52.700176, 4.22369, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+412, 17833, 560, 3, 2221.5044, 183.5024, 98.41942, 3.47320, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+413, 17833, 560, 3, 2222.382, 177.5152, 98.49195, 3.45575, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+414, 17833, 560, 3, 2216.1875, 131.45964, 103.46182, 2.25147, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+415, 17833, 560, 3, 2209.2605, 126.33854, 103.461845, 3.64773, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+416, 17833, 560, 3, 2225.8706, 123.63248, 89.53844, 4.48549, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
 (@CGUID+417, 17833, 560, 3, 2160.93, 236.505, 53.8958, 2.18764, 7200, 7200, 0, 0, 0, 2), -- Durnholde Warden
-(@CGUID+418, 17833, 560, 3, 2195.78, 253.736, 52.441, 4.13466, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
+(@CGUID+418, 17833, 560, 3, 2196.0608, 253.82509, 52.524235, 4.11897, 7200, 7200, 0, 0, 0, 0), -- Durnholde Warden
 (@CGUID+419, 17840, 560, 3, 2122.54, 183.843, 69.253, 5.73098, 7200, 7200, 0, 0, 0, 0), -- Durnholde Tracking Hound
 (@CGUID+420, 17840, 560, 3, 2119.27, 231.822, 64.8737, 1.00681, 7200, 7200, 0, 0, 0, 0), -- Durnholde Tracking Hound
 (@CGUID+421, 17840, 560, 3, 2112.97, 67.542, 52.5256, 2.52167, 7200, 7200, 0, 0, 0, 0), -- Durnholde Tracking Hound
@@ -2315,16 +2370,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+423, 17840, 560, 3, 2164.4, 216.06, 52.6709, 0.424021, 7200, 7200, 0, 0, 0, 0), -- Durnholde Tracking Hound
 (@CGUID+424, 17840, 560, 3, 2187.73, 272.262, 52.7267, 3.14534, 7200, 7200, 0, 0, 0, 0), -- Durnholde Tracking Hound
 (@CGUID+425, 17846, 560, 3, 2179.47, 52.0018, 66.1858, 4.24249, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
-(@CGUID+426, 17846, 560, 3, 2175.08, 53.5078, 66.1419, 4.36501, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+426, 17846, 560, 3, 2175.2747, 53.019207, 66.19932, 4.50294, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
 (@CGUID+427, 17846, 560, 3, 2201.82, 33.1603, 66.1087, 2.70239, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
-(@CGUID+428, 17846, 560, 3, 2184.88, 50.1817, 66.2423, 4.20165, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+428, 17846, 560, 3, 2184.545, 49.956978, 66.30002, 4.08407, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
 (@CGUID+429, 17846, 560, 3, 2192.82, 12.869, 66.117, 2.70232, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
 (@CGUID+430, 17846, 560, 3, 2175.08, 1.13073, 66.1227, 1.26269, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
-(@CGUID+431, 17846, 560, 3, 2171.4, 5.17495, 64.8435, 1.23598, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
-(@CGUID+432, 17860, 560, 3, 2217.04, 123.922, 89.4549, 0.339619, 7200, 7200, 0, 0, 0, 0), -- Durnholde Veteran
-(@CGUID+433, 17860, 560, 3, 2189.84, 142.759, 88.2164, 2.71409, 7200, 7200, 0, 0, 0, 0), -- Durnholde Veteran
-(@CGUID+434, 17860, 560, 3, 2218.05, 125.937, 89.4549, 5.21223, 7200, 7200, 0, 0, 0, 0), -- Durnholde Veteran
-(@CGUID+435, 17876, 560, 3, 2231.89, 119.956, 82.2979, 4.21682, 86400, 86400, 0, 0, 0, 0), -- Thrall
+(@CGUID+431, 17846, 560, 3, 2171.1157, 5.220269, 64.9321, 1.57079, 7200, 7200, 0, 0, 0, 0), -- Pit Spectator
+(@CGUID+432, 0, 560, 3, 2216.64, 123.10775, 89.53843, 1.20427, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+433, 17860, 560, 3, 2192.899, 141.46053, 88.299866, 2.79252, 7200, 7200, 0, 0, 0, 0), -- Durnholde Veteran
+(@CGUID+434, 0, 560, 3, 2218.0603, 125.72494, 89.53843, 4.78220, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+435, 17876, 560, 3, 2231.5212, 119.13487, 82.38263, 4.18879, 86400, 86400, 0, 0, 0, 0), -- Thrall
 (@CGUID+436, 18598, 560, 3, 2105, 90.8334, 53.7094, 2.03389, 86400, 86400, 0, 0, 0, 0), -- Orc Prisoner
 (@CGUID+437, 18598, 560, 3, 2097.41, 96.3022, 53.1664, 6.25306, 86400, 86400, 0, 0, 0, 0), -- Orc Prisoner
 (@CGUID+438, 18598, 560, 3, 2106.53, 99.6178, 53.0049, 3.87722, 86400, 86400, 0, 0, 0, 0), -- Orc Prisoner
@@ -2356,18 +2411,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+464, 18644, 560, 3, 2568.66, 737.593, 55.1384, 0.332219, 86400, 86400, 0, 0, 0, 0), -- Tarren Mill Peasant
 (@CGUID+465, 18644, 560, 3, 2546.16, 668.104, 55.9482, 1.24199, 86400, 86400, 0, 0, 0, 0), -- Tarren Mill Peasant
 (@CGUID+466, 18649, 560, 3, 2655.61, 663.915, 57.1724, 2.98558, 86400, 86400, 0, 0, 0, 2), -- Innkeeper Monica
-(@CGUID+467, 18651, 560, 3, 2476.168, 689.8201, 55.86352, 1.518436, 86400, 86400, 0, 0, 0, 0), -- Young Blanchy
+(@CGUID+467, 18651, 560, 3, 2476.1685, 689.82007, 55.86352, 1.51843, 86400, 86400, 0, 0, 0, 0), -- Young Blanchy
 (@CGUID+468, 18655, 560, 3, 2533.74, 695.312, 55.2551, 2.12293, 86400, 86400, 0, 0, 0, 2), -- Jay Lemieux
 (@CGUID+469, 18656, 560, 3, 2613.65, 674.226, 55.4534, 3.20364, 86400, 86400, 0, 0, 0, 2), -- Julie Honeywell
 (@CGUID+470, 18664, 560, 3, 2471.25, 879.78, 62.9179, 0.0416174, 86400, 86400, 0, 0, 0, 2), -- Aged Dalaran Wizard
 (@CGUID+471, 18666, 560, 3, 2471.1, 881.491, 62.9147, 0.0848143, 86400, 86400, 0, 0, 0, 0), -- Dalaran Sorceress
 (@CGUID+472, 18672, 560, 3, 2634.42, 673.65, 54.4692, 1.18515, 86400, 86400, 0, 0, 0, 2), -- Thomas Yance
-(@CGUID+473, 18673, 560, 3, 2193.28, 20.9314, 64.789, 2.71024, 86400, 86400, 0, 0, 0, 0), -- Pit Announcer
-(@CGUID+474, 18723, 560, 3, 2375.47, 1175.48, 65.2881, 0.99379, 86400, 86400, 0, 0, 0, 0), -- Erozion
-(@CGUID+475, 18725, 560, 3, 2381.76, 1170.31, 66.4626, 1.38151, 86400, 86400, 0, 0, 0, 0), -- Brazen
+(@CGUID+473, 18673, 560, 3, 2194.58, 21.616755, 64.88534, 2.77507, 86400, 86400, 0, 0, 0, 0), -- Pit Announcer
+(@CGUID+474, 18723, 560, 3, 2375.5542, 1178.6508, 65.46421, 1.02974, 86400, 86400, 0, 0, 0, 0), -- Erozion
+(@CGUID+475, 18725, 560, 3, 2382.0925, 1172.2079, 66.58888, 1.37881, 86400, 86400, 0, 0, 0, 0), -- Brazen
 (@CGUID+476, 18764, 560, 3, 2185.32, 116.593, 89.4548, 0.981246, 86400, 86400, 0, 0, 0, 2), -- Durnholde Armorer
 (@CGUID+477, 18765, 560, 3, 2204.82, 160.47, 89.4549, 5.75757, 86400, 86400, 0, 0, 0, 2), -- Durnholde Cook
-(@CGUID+478, 18887, 560, 3, 2664.66, 657.596, 62.0213, 2.72271, 86400, 86400, 0, 0, 0, 0), -- Taretha
+(@CGUID+478, 18887, 560, 3, 2664.6575, 657.5964, 62.021294, 2.72271, 86400, 86400, 0, 0, 0, 0), -- Taretha
 (@CGUID+479, 20342, 560, 3, 1735.42, 1075.09, 6.87962, 3.17806, 86400, 86400, 0, 0, 0, 0), -- Hal McAllister
 (@CGUID+480, 20344, 560, 3, 1735.39, 1077.48, 6.87962, 3.1545, 86400, 86400, 0, 0, 0, 0), -- Nat Pagle
 (@CGUID+481, 20345, 560, 3, 1819.32, 1031.16, 11.0649, 3.18984, 86400, 86400, 0, 0, 0, 0), -- Commander Mograine
@@ -2389,9 +2444,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+497, 20365, 560, 3, 1876.32, 1087.69, 17.7383, 4.51089, 86400, 86400, 0, 0, 0, 0), -- Bartolo Ginsetti
 (@CGUID+498, 20368, 560, 3, 1851.88, 961.724, 12.0402, 1.78848, 86400, 86400, 0, 0, 0, 0), -- Farmer Kent
 (@CGUID+499, 20370, 560, 3, 1819.11, 1022.68, 18.546, 1.6269, 86400, 86400, 0, 0, 0, 0), -- Phin Odelic
-(@CGUID+500, 20372, 560, 3, 2332.28, 928.192, 54.9672, 4.9425, 86400, 86400, 0, 0, 0, 0), -- Jonathan Revah
+(@CGUID+500, 20372, 560, 3, 2335.806, 926.977, 54.91743, 4.62512, 86400, 86400, 0, 0, 0, 0), -- Jonathan Revah
 (@CGUID+501, 20373, 560, 3, 1815.75, 1122.7, 14.7145, 1.5303, 86400, 86400, 0, 0, 0, 0), -- Magistrate Henry Maleb
-(@CGUID+502, 20376, 560, 3, 2330.1, 927.302, 54.9747, 4.9425, 86400, 86400, 0, 0, 0, 0), -- Jerry Carter
+(@CGUID+502, 20376, 560, 3, 2334.0234, 926.92645, 54.954033, 4.83456, 86400, 86400, 0, 0, 0, 0), -- Jerry Carter
 (@CGUID+503, 20377, 560, 3, 1816.66, 1017.11, 11.6882, 1.63829, 86400, 86400, 0, 0, 0, 0), -- Barkeep Kelly
 (@CGUID+504, 20378, 560, 3, 1816.52, 1007.04, 11.6763, 6.27606, 86400, 86400, 0, 0, 0, 0), -- Chef Jessen
 (@CGUID+505, 20379, 560, 3, 1792.42, 1124.93, 13.3555, 3.48201, 86400, 86400, 0, 0, 0, 0), -- Bilger the Straight-laced
@@ -2518,20 +2573,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+618, 18094, 560, 3, 2645.466, 753.4458, 63.13852, 2.338741, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Lookout
 (@CGUID+619, 28132, 560, 3, 2280.83, 814.708, 54.5895, 4.14046, 86400, 86400, 0, 0, 0, 2), -- Don Carlos
 -- (@CGUID+620
-(@CGUID+621, 18657, 560, 3, 2404.2, 740.2278, 54.41904, 4.258604, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Fisherman
-(@CGUID+622, 18657, 560, 3, 2399.983, 744.4286, 54.37799, 3.926991, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Fisherman
-(@CGUID+623, 18657, 560, 3, 2397, 747.5125, 54.26937, 4.18879, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Fisherman
-(@CGUID+624, 18650, 560, 3, 2479.018, 689.6053, 55.84678, 1.518436, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Horse
-(@CGUID+625, 18650, 560, 3, 2486.815, 689.4572, 55.80313, 1.658063, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Horse
-(@CGUID+626, 18650, 560, 3, 2479.018, 689.6053, 55.84678, 1.518436, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Horse
-(@CGUID+627, 18646, 560, 3, 2484.259, 700.0792, 55.78487, 4.472738, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Horsehand
-(@CGUID+628, 20156, 560, 3, 2621.884, 684.1758, 55.37511, 3.752458, 7200, 7200, 0, 0, 0, 0), -- Thrall Quest Trigger
+(@CGUID+621, 18657, 560, 3, 2404.2, 740.22784, 54.419044, 4.25860, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Fisherman
+(@CGUID+622, 18657, 560, 3, 2399.983, 744.4286, 54.377995, 3.92699, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Fisherman
+(@CGUID+623, 18657, 560, 3, 2397, 747.51245, 54.26937, 4.18879, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Fisherman
+(@CGUID+624, 18650, 560, 3, 2478.6907, 688.9305, 55.761948, 0.50934, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Horse
+(@CGUID+625, 18650, 560, 3, 2486.8152, 689.45715, 55.803127, 1.65806, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Horse
+(@CGUID+626, 18650, 560, 3, 2479.0183, 689.6053, 55.84678, 1.51843, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Horse
+(@CGUID+627, 18646, 560, 3, 2484.259, 700.0792, 55.78487, 4.472738, 7200, 7200, 0, 0, 0, 0), -- Tarren Mill Horsehand // 2498.797, 695.22815, 55.559696, 0.02085 Movement
+(@CGUID+628, 20156, 560, 3, 2621.8838, 684.1758, 55.37511, 3.75245, 7200, 7200, 0, 0, 0, 0), -- Thrall Quest Trigger
 (@CGUID+629, 20391, 560, 3, 1815.177, 1035.551, 11.17216, 3.944444, 7200, 7200, 0, 0, 0, 0), -- Event Generator Old Hillsbrad
 (@CGUID+630, 20391, 560, 3, 1736.539, 1073.198, 6.962951, 2.181662, 7200, 7200, 0, 0, 0, 0), -- Event Generator Old Hillsbrad
 (@CGUID+631, 20391, 560, 3, 1816.784, 1031.313, 12.56942, 6.265732, 7200, 7200, 0, 0, 0, 0), -- Event Generator Old Hillsbrad
 (@CGUID+632, 20359, 560, 3, 1861.473, 1087.851, 17.66494, 4.719225, 7200, 7200, 0, 0, 0, 0), -- Little Jimmy Vishas
-(@CGUID+633, 20155, 560, 3, 2102.716, 95.3138, 53.06873, 3.316126, 7200, 7200, 0, 0, 0, 0), -- Hillsbrad Internment Lodge Quest Trigger
-(@CGUID+634, 19433, 560, 3, 2190.86, 156.6353, 88.52896, 1.448623, 7200, 7200, 0, 0, 0, 0), -- CoT Hillsbrad Despawn Trigger Unit
+(@CGUID+633, 20155, 560, 3, 2102.716, 95.313805, 53.068726, 3.31612, 7200, 7200, 0, 0, 0, 0), -- Hillsbrad Internment Lodge Quest Trigger
+(@CGUID+634, 19433, 560, 3, 2190.86, 156.63531, 88.52896, 1.44862, 7200, 7200, 0, 0, 0, 0), -- CoT Hillsbrad Despawn Trigger Unit
 (@CGUID+635, 2408, 560, 3, 2381.204, 502.0198, 34.41981, 2.336742, 180, 180, 5, 0, 0, 1), -- Snapjaw
 (@CGUID+636, 2408, 560, 3, 2580.77, 486.3224, 35.85488, 1.665609, 180, 180, 5, 0, 0, 1), -- Snapjaw
 (@CGUID+637, 2408, 560, 3, 2512.449, 477.9257, 34.55508, 2.853929, 180, 180, 5, 0, 0, 1), -- Snapjaw
@@ -2791,11 +2846,13 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+2, 1, 'Old Hillsbrad Foothills - Orc Hut 2'),
 (@PGUID+3, 1, 'Old Hillsbrad Foothills - Orc Hut 3'),
 (@PGUID+4, 1, 'Old Hillsbrad Foothills - Orc Hut 4'),
-(@PGUID+5, 1, 'Old Hillsbrad Foothills - Orc Hut 5');
+(@PGUID+5, 1, 'Old Hillsbrad Foothills - Orc Hut 5'),
+(@PGUID+11, 11, 'Old Hillsbrad Foothills - Pit Spectator (17846)');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
--- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+(17846, @PGUID+11, 0, 'Old Hillsbrad Foothills - Pit Spectator (17846)');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@OGUID+36, @PGUID+1, 0, 'Old Hillsbrad Foothills - Orc Hut 1 - Barrel'),
