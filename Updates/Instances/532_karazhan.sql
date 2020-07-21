@@ -1637,16 +1637,16 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+539, @CGUID+533, 1167), -- Spectral Performer -> Spectral Performer
 (@CGUID+540, @CGUID+534, 1167), -- Spectral Performer -> Spectral Performer
 -- The Curator
-(@CGUID+541, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+542, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+543, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+544, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+545, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+546, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+547, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+548, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+549, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
-(@CGUID+550, @CGUID+143, 1024), -- Ghastly Haunt -> The Curator
+(@CGUID+541, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
+(@CGUID+542, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
+(@CGUID+543, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
+(@CGUID+544, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
+(@CGUID+545, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
+(@CGUID+546, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
+(@CGUID+547, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
+(@CGUID+548, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
+(@CGUID+549, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
+(@CGUID+550, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
 (@CGUID+561, @CGUID+562, 1167), -- Arcane Watchman -> Arcane Watchman
 (@CGUID+562, @CGUID+143, 1024), -- Arcane Watchman -> The Curator
 (@CGUID+631, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
