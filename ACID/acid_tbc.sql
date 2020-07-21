@@ -27201,7 +27201,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Teron Gorefiend (22871) - boss_teron_gorefiend
 -- Coilskar General 22873 - 40081 needs core support
 ('2287301','22873','0','0','100','1025','1000','3000','20000','40000','0','0','11','40080','0','32','0','0','0','0','0','0','0','0','Coilskar General - Cast Booming Voice'),
-('2287302','22873','15','0','100','1025','7','100','10000','20000','0','0','11','40081','12','0','54','-10120','12','0','22','1','0','0','Coilskar General - Cast Free Friend and Set Phase 1 on Friendly CC'),
+('2287302','22873','15','0','100','1025','7','100','10000','15000','0','0','11','40081','12','0','54','-10120','12','0','22','1','0','0','Coilskar General - Cast Free Friend and Set Phase 1 on Friendly CC'),
 ('2287303','22873','0','1','100','1025','0','0','1000','1000','0','0','11','40080','0','32','22','0','0','0','0','0','0','0','Coilskar General - Cast Booming Voice and Set Phase 0 (Phase 1)'),
 -- Coilskar Harpooner 22874 - 40084 provides Force Attack Target for Dragon Turtle, (maybe self?!)
 ('2287401','22874','9','0','100','1025','0','80','12000','19000','0','0','11','40084','4','544','45','6','80','0','0','0','0','0','Coilskar Harpooner - Cast Harpooner''s Mark and Send AI Event 6'),
