@@ -32690,7 +32690,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11156','Kill him!','0','0','0','0','21256','Bonechewer Spectator 23223'),
 ('-11157','Good fight!','0','0','0','0','21254','Bonechewer Spectator 23223'),
 ('-11158','You see that final blow! Awesome!','0','0','0','0','21255','Bonechewer Spectator 23223'),
-('-11159','I submit! You win this time...','0','0','0','16','21253','Bonechewer Combatant 23239'),
+-- reuse
 ('-11160','Halt at once!','0','0','0','0','13952','16485/16504'),
 ('-11161','Pillagers! Desecrators!','0','0','0','0','13953','16485/16504'),
 ('-11162','Thieves! Stop them!','0','0','0','0','13951','16485/16504'),
