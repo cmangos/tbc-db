@@ -29208,7 +29208,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Al'ar (19514) - boss_alar
 -- Void Reaver (19516) - boss_void_reaver
 -- Ember of Al'ar
-('1955101','19551','6','0','100','0','0','0','0','0','0','0','11','34133','0','7','0','0','0','0','0','0','0','0','Ember of Al''ar - Cast Ember Blast on Death'),
+('1955101','19551','6','0','100','0','0','0','0','0','0','0','11','34133','15','0','0','0','0','0','0','0','0','0','Ember of Al''ar - Cast Ember Blast on Death'),
 -- Arcane Orb Target 19577 - NullAI
 -- Kael'thas Sunstrider (19622) - boss_kaelthas
 -- Bloodwarder Legionnaire
