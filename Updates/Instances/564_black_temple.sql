@@ -2184,8 +2184,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+794, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
 
 (@CGUID+612, @CGUID+449, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
-(@CGUID+379, @CGUID+449, 1167), -- Dragonmaw Wyrmcaller -> Dragonmaw Sky Stalker
-(@CGUID+449, @CGUID+198, 1024), -- Dragonmaw Sky Stalker -> Supremus
+(@CGUID+449, @CGUID+379, 1153), -- Dragonmaw Sky Stalker -> Dragonmaw Wyrmcaller
+(@CGUID+379, @CGUID+198, 1024), -- Dragonmaw Wyrmcaller -> Supremus
 
 (@CGUID+610, @CGUID+453, 1679), -- Dragonmaw Wind Reaver -> Dragonmaw Sky Stalker
 (@CGUID+390, @CGUID+453, 1167), -- Dragonmaw Wyrmcaller -> Dragonmaw Sky Stalker
