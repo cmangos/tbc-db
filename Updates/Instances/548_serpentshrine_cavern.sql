@@ -745,6 +745,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+148, @CGUID+154, 1024), -- Underbog Colossus -> World Trigger (Not Immune PC)
 (@CGUID+180, @CGUID+154, 1024), -- Coilfang Serpentguard -> World Trigger (Not Immune PC)
 (@CGUID+181, @CGUID+154, 1024), -- Coilfang Serpentguard -> World Trigger (Not Immune PC)
+(@CGUID+184, @CGUID+154, 1024), -- Coilfang Serpentguard -> World Trigger (Not Immune PC)
 (@CGUID+188, @CGUID+154, 1024), -- Coilfang Serpentguard -> World Trigger (Not Immune PC)
 
 -- individual trash groups
@@ -895,6 +896,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+112, @CGUID+184, 1167), -- Greyheart Nether-Mage -> Coilfang Serpentguard
 (@CGUID+113, @CGUID+184, 1167), -- Greyheart Nether-Mage -> Coilfang Serpentguard
 (@CGUID+131, @CGUID+184, 1167), -- Greyheart Skulker -> Coilfang Serpentguard
+(@CGUID+183, @CGUID+184, 1167), -- Coilfang Serpentguard -> Coilfang Serpentguard
 
 (@CGUID+185, @CGUID+186, 1167), -- Coilfang Serpentguard -> Coilfang Serpentguard
 (@CGUID+193, @CGUID+186, 1167), -- Coilfang Fathom-Witch -> Coilfang Serpentguard
