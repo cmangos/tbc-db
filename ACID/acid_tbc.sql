@@ -27895,16 +27895,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Leotheras the Blind (21215) - boss_leotheras_the_blind
 -- Hydross the Unstable (21216) - boss_hydross_the_unstable
 -- The Lurker Below (21217) - boss_lurker_below
--- Vashj'ir Honor Guard
-('2121801','21218','9','0','100','1025','0','5','11700','14900','0','0','11','38572','1','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Mortal Cleave'),
+-- Vashj'ir Honor Guard 21218
+('2121801','21218','0','0','100','1025','8000','10000','11000','17000','0','0','11','38572','1','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Mortal Cleave'),
 ('2121802','21218','0','0','100','1025','13600','18300','8700','14400','0','0','11','38576','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Knockback'),
 ('2121803','21218','0','0','100','1025','7000','12000','13000','17000','0','0','11','38945','5','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Frightening Shout'),
 ('2121804','21218','12','0','100','1025','20','0','30000','35000','0','0','11','38959','1','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Execute at 20% Player HP'),
 ('2121805','21218','2','0','100','1024','50','0','0','0','0','0','11','38947','0','0','1','-10697','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Enrage at 50% HP'),
 ('2121806','21218','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Instance Data64 (SD2) on Generic Timer'),
 ('2121807','21218','1','0','75','1','10000','60000','60000','60000','0','0','54','0','0','10027','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Random Say OOC'),
--- Coilfang Priestess
-('2122001','21220','9','0','100','1025','0','50','3400','4800','0','0','11','38582','1','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Holy Smite'),
+-- Coilfang Priestess 21220
+('2122001','21220','0','0','100','1025','6000','12000','8000','12000','0','0','11','38582','1','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Holy Smite'),
 ('2122002','21220','0','0','100','1025','3600','7800','10400','14200','0','0','11','38585','4','512','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Holy Fire'),
 ('2122003','21220','14','0','100','1025','70000','40','16000','21000','0','0','11','38580','12','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Greater Heal on Friendly Missing HP'),
 ('2122004','21220','2','0','100','1024','20','0','0','0','0','0','11','38580','0','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Greater Heal at 20% HP'),
@@ -27935,9 +27935,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2122801','21228','0','0','100','1025','15000','21000','15000','21000','0','0','11','39063','17','0','0','0','0','0','0','0','0','0','Tidewalker Hydromancer - Cast Frost Nova'),
 ('2122802','21228','0','0','100','1025','12000','16000','12000','16000','0','0','11','39062','1','0','0','0','0','0','0','0','0','0','Tidewalker Hydromancer - Cast Frost Shock'),
 ('2122803','21228','0','0','100','1025','8000','13000','9000','14000','0','0','11','39064','1','256','0','0','0','0','0','0','0','0','Tidewalker Hydromancer - Cast Frostbolt'),
--- Greyheart Tidecaller
+-- Greyheart Tidecaller 21229
 ('2122901','21229','0','0','100','1025','1000','3000','120000','135000','0','0','11','39027','0','0','0','0','0','0','0','0','0','0','Greyheart Tidecaller - Cast Poison Shield'),
-('2122902','21229','0','0','100','1025','3200','7900','35700','43700','0','0','11','38624','0','0','0','0','0','0','0','0','0','0','Greyheart Tidecaller - Cast Water Elemental Totem'),
+('2122902','21229','0','0','100','1025','5000','10000','35700','43700','0','0','11','38624','0','0','0','0','0','0','0','0','0','0','Greyheart Tidecaller - Cast Water Elemental Totem'),
 ('2122903','21229','11','0','100','0','0','0','0','0','0','0','62','3','0','0','0','0','0','0','0','0','0','0','Greyheart Tidecaller - Enable Despawn Aggregation on Evade'),
 -- Greyheart Nether-Mage 21230 - No Main Spell in Melee Range
 ('2123001','21230','4','0','100','0','0','0','0','0','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Greyheart Nether-Mage - Random Phase Select on Aggro'),
@@ -27956,8 +27956,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2123014','21230','27','7','100','1','38647','1','5000','5000','0','0','11','38647','0','1','0','0','0','0','0','0','0','0','Greyheart Nether-Mage - Cast Arcane Destruction on Missing Buff (Phase 3)'),
 ('2123015','21230','0','7','100','1025','18000','24000','17000','24000','0','0','11','38642','0','4','14','-100','0','0','0','0','0','0','Greyheart Nether-Mage - Cast Blink and Reset Threat (Phase 3)'),
 ('2123016','21230','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Greyheart Nether-Mage - Set Phase 0 on Evade'),
--- Greyheart Shield-Bearer
-('2123101','21231','9','0','100','1025','8','25','10800','12800','0','0','11','38630','5','0','0','0','0','0','0','0','0','0','Greyheart Shield-Bearer - Cast Shield Charge'),
+-- Greyheart Shield-Bearer 21231
+('2123101','21231','0','0','100','1025','0','10000','10800','12800','0','0','11','38630','4','512','0','0','0','0','0','0','0','0','Greyheart Shield-Bearer - Cast Shield Charge'),
 ('2123102','21231','0','0','100','1025','7300','11400','7600','12600','0','0','11','38631','4','512','0','0','0','0','0','0','0','0','Greyheart Shield-Bearer - Cast Avenger''s Shield'),
 -- Greyheart Skulker
 ('2123201','21232','9','0','100','1025','0','5','4800','7900','0','0','11','38625','4','512','0','0','0','0','0','0','0','0','Greyheart Skulker - Cast Kick'),
@@ -27981,8 +27981,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tainted Water Elemental
 ('2125301','21253','11','0','100','0','0','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Tainted Water Elemental - Cast Elemental Spawn-in on Spawn'),
 -- Purified Water Elemental (21260) - NSR
--- Greyheart Technician
-('2126301','21263','9','0','100','1025','0','5','7300','13300','0','0','11','38995','4','512','0','0','0','0','0','0','0','0','Greyheart Technician - Cast Hamstring'),
+-- Greyheart Technician 21263
+('2126301','21263','0','0','100','1025','8000','12000','8000','16000','0','0','11','38995','4','512','0','0','0','0','0','0','0','0','Greyheart Technician - Cast Hamstring'),
 ('2126302','21263','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Greyheart Technician - Set Instace Data64 (SD2) on Generic Timer'),
 ('2126303','21263','30','0','100','1','5','21218','0','0','0','0','5','26','0','0','51','0','0','0','0','0','0','0','Greyheart Technician - Emote and Set Waypoint Movement on Receive Custom AI Event A'),
 -- Coilfang Serpentguard
@@ -28048,7 +28048,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2211902','22119','6','0','100','0','0','0','0','0','0','0','11','38419','0','7','0','0','0','0','0','0','0','0','Fathom Lurker - Cast Spore Explosion on Death'),
 -- Fathom Sporebat
 ('2212001','22120','9','0','100','1025','0','8','14000','21000','0','0','11','25778','1','0','0','0','0','0','0','0','0','0','Fathom Sporebat - Cast Knock Away'),
--- Toxic Sporebat - handled through vashj script
+-- Toxic Spore Bat 22140 - boss_lady_vashj
+-- Water Elemental Totem 22236 - TotemAI
 -- Serpentshrine Tidecaller
 ('2223801','22238','0','0','100','1025','2000','7000','11000','16000','0','0','11','38623','1','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Water Bolt Volley'),
 ('2223802','22238','9','0','100','1025','0','8','16000','21000','0','0','11','39035','0','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Frost Nova'),
@@ -30659,7 +30660,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2222809','22228','29','0','100','0','4000','4000','0','0','0','0','11','38610','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Generic Timer'),
 ('2222810','22228','29','0','100','0','4500','4500','0','0','0','0','11','38610','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Generic Timer'),
 ('2222811','22228','29','0','100','0','5000','5000','0','0','0','0','11','38610','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Generic Timer'),
--- Water Elemental Totem 22236 - TotemAI
 -- Spirit Calling Totem 22318 - TotemAI
 -- Legion Fel Cannon MKII 22451
 ('2245101','22451','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Legion Fel Cannon MKII - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
