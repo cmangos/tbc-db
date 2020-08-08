@@ -16936,6 +16936,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Legion Flak Cannon 23076
 ('2307601','23076','10','0','100','1','0','60','7000','10000','0','0','11','41598','6','2','0','0','0','0','0','0','0','0','Fel Flak Cannon - Cast Knockdown Felcannon: The Bolt Pair on Player Proximity'),
 -- Fel Imp Defender 23078
+('2307801','23078','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Fel Imp Defender - Enable Range Mode on Spawn'),
+('2307802','23078','0','0','100','1025','20000','30000','20000','30000','0','0','11','40877','1','0','0','0','0','0','0','0','0','0','Fel Imp Defender - Cast Fireball'),
 -- Legion Flak Cannon 23082 - mob_fel_flak_cannon
 -- Ogri'la Keg King c.23110
 ('2311001','23110','1','0','100','1','30000','45000','30000','45000','0','0','5','92','0','0','11','35777','0','2','0','0','0','0','Ogri''la Keg King - Emote and Cast Bloodmaul Intoxication Visual OOC'),
@@ -16961,6 +16963,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2315402','23154','30','0','100','0','5','19656','0','0','0','0','51','0','0','0','52','3','0','0','0','0','0','0','Mana-debt Slave - Resume Waypoints and Interrupt Channelling on Receive AI Event 5 (A)'),
 -- Crystalfused Miner
 ('2317401','23174','0','0','100','1025','6000','12000','15000','20000','0','0','11','32614','0','0','0','0','0','0','0','0','0','0','Crystalfused Miner - Cast Arcane Explosion'),
+-- Gan'arg Underling - 23199
+('2319901','23199','0','0','100','1025','20000','30000','20000','30000','0','0','11','40675','15','0','0','0','0','0','0','0','0','0','Gan''arg Underling - Cast Build Portable Fel Cannon'),
 -- Skyguard Pyrotechnician 23208
 ('2320801','23208','8','0','50','1','41575','-1','180000','900000','0','0','54','0','6','10167','0','0','0','0','0','0','0','0','Skyguard Pyrotechnician - Random Say on Revered Ogri''la Aura Effect Spellhit'),
 -- Mo'arg Tormenter 23212
@@ -17005,6 +17009,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2326110','23261','21','5','100','0','0','0','0','0','0','0','41','8000','0','0','53','10130','0','0','0','0','0','0','Furywing - Delayed Despawn and Start Relay Script on Reached Home (Phase 1)'),
 -- Dreadmaw 23275
 -- Portable Fel Cannon 23278
+('2327802','23278','0','0','100','1025','0','1000','2500','2500','0','0','11','40672','1','0','0','0','0','0','0','0','0','0','Portable Fel Cannon - Combat - Cast Fel Cannon Blast'),
 -- Insidion 23281
 ('2328101','23281','30','0','100','0','5','23281','0','0','0','0','54','0','11','10083','22','2','0','0','0','0','0','0','Insidion - Random Yell and Set Phase 2 on Receive AI Event 5 (A)'),
 ('2328102','23281','29','3','100','0','2000','2000','0','0','0','0','19','256','0','0','55','11','0','0','22','1','0','0','Insidion - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and Attack Spawner and Set Phase 1 on Generic Timer (Phase 2)'),
