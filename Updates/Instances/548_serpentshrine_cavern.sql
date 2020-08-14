@@ -704,6 +704,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+69, @CGUID+38, 1024), -- Murloc Group 3 -> Morogrim Tidewalker
 (@CGUID+70, @CGUID+38, 1024), -- Murloc Group 4 -> Morogrim Tidewalker
 (@CGUID+72, @CGUID+38, 1024), -- Murloc Group 5 -> Morogrim Tidewalker
+(@CGUID+148, @CGUID+38, 1024), -- Underbog Colossus -> Morogrim Tidewalker
+(@CGUID+184, @CGUID+38, 1024), -- Coilfang Serpentguard -> Morogrim Tidewalker
+(@CGUID+188, @CGUID+38, 1024), -- Coilfang Serpentguard -> Morogrim Tidewalker
 (@CGUID+189, @CGUID+38, 1024), -- Coilfang Serpentguard -> Morogrim Tidewalker
 
 (@CGUID+127, @CGUID+39, 1024), -- Greyheart Shield-Bearer -> Fathom-Lord Karathress
@@ -726,6 +729,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+122, @CGUID+40, 1024), -- Greyheart Shield-Bearer -> Leotheras the Blind
 (@CGUID+123, @CGUID+40, 1024), -- Greyheart Shield-Bearer -> Leotheras the Blind
 (@CGUID+138, @CGUID+40, 1024), -- Greyheart Skulker -> Leotheras the Blind
+(@CGUID+147, @CGUID+40, 1024), -- Underbog Colossus -> Leotheras the Blind
+(@CGUID+180, @CGUID+40, 1024), -- Coilfang Serpentguard -> Leotheras the Blind
+(@CGUID+181, @CGUID+40, 1024), -- Coilfang Serpentguard -> Leotheras the Blind
 (@CGUID+186, @CGUID+40, 1024), -- Coilfang Serpentguard -> Leotheras the Blind
 (@CGUID+275, @CGUID+40, 1024), -- Greyheart Spellbinder -> Leotheras the Blind
 
@@ -741,12 +747,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+45, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
 (@CGUID+46, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
 (@CGUID+47, @CGUID+154, 1024), -- Vashj'ir Honor Guard -> World Trigger (Not Immune PC)
-(@CGUID+147, @CGUID+154, 1024), -- Underbog Colossus -> World Trigger (Not Immune PC)
-(@CGUID+148, @CGUID+154, 1024), -- Underbog Colossus -> World Trigger (Not Immune PC)
-(@CGUID+180, @CGUID+154, 1024), -- Coilfang Serpentguard -> World Trigger (Not Immune PC)
-(@CGUID+181, @CGUID+154, 1024), -- Coilfang Serpentguard -> World Trigger (Not Immune PC)
-(@CGUID+184, @CGUID+154, 1024), -- Coilfang Serpentguard -> World Trigger (Not Immune PC)
-(@CGUID+188, @CGUID+154, 1024), -- Coilfang Serpentguard -> World Trigger (Not Immune PC)
 
 -- individual trash groups
 (@CGUID+48, @CGUID+42, 1167), -- Coilfang Priestess -> Vashj'ir Honor Guard
