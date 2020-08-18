@@ -940,7 +940,8 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (22036, 548, 21216, 4112, 0), -- Tainted Spawn of Hydross -> Hydross the Unstable
 (22055, 548, 21212, 4096, 0), -- Coilfang Elite -> Lady Vashj
 (22056, 548, 21212, 4096, 0), -- Coilfang Strider -> Lady Vashj
-(22140, 548, 21212, 4096, 0); -- Toxic Spore Bat -> Lady Vashj
+(22140, 548, 21212, 4096, 0), -- Toxic Spore Bat -> Lady Vashj
+(22820, 548, 21214, 1024, 0); -- Seer Olum -> Fathom-Lord Karathress
 
 INSERT INTO creature_spawn_entry (guid, entry) VALUES
 -- Random between Tidewalker Depth-Seer (21224), Tidewalker Warrior (21225), Tidewalker Shaman (21226), Tidewalker Harpooner (21227), and Tidewalker Hydromancer (21228)
