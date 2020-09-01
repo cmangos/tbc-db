@@ -28446,8 +28446,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chess Square, WHITE (DND) 17208 - NullAI
 -- Human Footman (17211) - npc_human_footman
 -- Nightbane 17225 - boss_nightbane
--- Kil'rek
-('1722901','17229','0','0','100','1025','4000','7000','9000','12000','0','0','11','30053','4','32','0','0','0','0','0','0','0','0','Kil''rek - Cast Amplify Flames'),
+-- Kil'rek 17229
+('1722901','17229','0','0','100','1025','4000','7000','9000','12000','0','0','11','30053','4','544','0','0','0','0','0','0','0','0','Kil''rek - Cast Amplify Flames'),
 ('1722902','17229','6','0','100','0','0','0','0','0','0','0','11','30065','1','7','0','0','0','0','0','0','0','0','Kil''rek - Cast Broken Pact on Death'),
 -- Demon Chains (17248) - mob_demon_chain
 -- Restless Skeleton (17261) - NSR
