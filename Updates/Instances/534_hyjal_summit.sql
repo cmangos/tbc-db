@@ -3517,6 +3517,10 @@ INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,
 (17905,12,41,5536.944,-2639.985,1480.674,0,0,100),
 (17905,12,42,5546.523,-2637.094,1482.928,0,0,100);
 
+-- Giant Infernal
+INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(17908, 0, 1, 5450.54, -2723.97, 1485.59, 0, 0, 100);
+
 -- Fel Stalker
 INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (17916,7,1,5496.352,-2417.796,1463.525,0,0,100),
