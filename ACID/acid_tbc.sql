@@ -20821,9 +20821,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2492003','24920','2','0','100','1024','60','0','0','0','0','0','11','33896','0','0','54','-10162','0','0','22','1','0','0','Razorthorn Flayer - Cast Desperate Defense and Text Emote and Set Phase 1 at 60% HP'),
 ('2492004','24920','0','1','100','1024','30000','30000','0','0','0','0','11','33896','0','0','54','-10162','0','0','0','0','0','0','Razorthorn Flayer - Cast Desperate Defense and Text Emote (Phase 1)'),
 ('2492005','24920','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Razorthorn Flayer - Set Phase 0 on Evade'),
--- Razorthorn Ravager 24922 - spell_dummy_npc
-('2492201','24922','9','0','100','1025','0','5','15000','20000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Razorthorn Ravager - Cast Rend'),
-('2492202','24922','0','0','100','1025','5000','9000','8000','12000','0','0','11','33781','1','0','0','0','0','0','0','0','0','0','Razorthorn Ravager - Cast Ravage'),
+-- Razorthorn Ravager 24922 - npc_razorthorn_ravager
 
 
 
