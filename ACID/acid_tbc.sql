@@ -4274,7 +4274,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2506006','25060','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Set Phase 0 on Evade'),
 -- Harbinger Inuuro (25061) - NSR
 -- Dawnblade Hawkrider (25063)
-('2506301','25063','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Dawnblade Hawkrider - Stop Combat Movement on Spawn'),
+('2506301','25063','11','0','100','0','0','0','0','0','0','0','21','0','0','0','50','0','0','0','0','0','0','0','Dawnblade Hawkrider - Stop Combat Movement on Spawn and set REACT_PASSIVE'),
 -- Magister Ilastar (25069) - NSR
 -- Darkspine Siren 25073
 ('2507301','25073','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Darkspine Siren - Enable Range Mode on Aggro'),
