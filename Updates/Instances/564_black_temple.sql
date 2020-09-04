@@ -2078,6 +2078,32 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (23421, 0, 0, 1, 16, 0, 0, NULL), -- Ashtongue Channeler
 (23498, 0, 0, 1, 16, 0, 0, '34429 41913'); -- Parasitic Shadowfiend
 
+INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
+(@CGUID+449, 3), -- Dragonmaw Sky Stalker
+(@CGUID+452, 3), -- Dragonmaw Sky Stalker
+(@CGUID+453, 3), -- Dragonmaw Sky Stalker
+(@CGUID+457, 3), -- Dragonmaw Sky Stalker
+(@CGUID+458, 3), -- Dragonmaw Sky Stalker
+(@CGUID+462, 3), -- Dragonmaw Sky Stalker
+(@CGUID+463, 3), -- Dragonmaw Sky Stalker
+(@CGUID+610, 3), -- Dragonmaw Wind Reaver
+(@CGUID+611, 3), -- Dragonmaw Wind Reaver
+(@CGUID+612, 3), -- Dragonmaw Wind Reaver
+(@CGUID+784, 3), -- Dragonmaw Sky Stalker
+(@CGUID+785, 3), -- Dragonmaw Sky Stalker
+(@CGUID+786, 3), -- Dragonmaw Sky Stalker
+(@CGUID+787, 3), -- Dragonmaw Sky Stalker
+(@CGUID+788, 3), -- Dragonmaw Sky Stalker
+(@CGUID+789, 3), -- Dragonmaw Sky Stalker
+(@CGUID+790, 3), -- Dragonmaw Sky Stalker
+(@CGUID+791, 3), -- Dragonmaw Sky Stalker
+(@CGUID+792, 3), -- Dragonmaw Sky Stalker
+(@CGUID+793, 3), -- Dragonmaw Sky Stalker
+(@CGUID+794, 3), -- Dragonmaw Sky Stalker
+(@CGUID+795, 3), -- Dragonmaw Wind Reaver
+(@CGUID+796, 3), -- Dragonmaw Wind Reaver
+(@CGUID+797, 3); -- Dragonmaw Wind Reaver
+
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- High Warlord Naj'entus
 (@CGUID+113, @CGUID+127, 1679), -- Coilskar Sea-Caller -> Aqueous Lord
