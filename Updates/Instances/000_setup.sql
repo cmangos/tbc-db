@@ -42,6 +42,7 @@ DELETE FROM dbscripts_on_creature_death WHERE id IN (SELECT id FROM tmp_creature
 DELETE FROM npc_gossip WHERE npc_guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature_battleground WHERE guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature_spawn_entry WHERE guid IN (SELECT guid FROM tmp_creature);
+DELETE FROM creature_spawn_data WHERE guid IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature WHERE guid IN (SELECT guid FROM tmp_creature);
 
 DELETE FROM dbscripts_on_go_use WHERE id IN (SELECT guid FROM tmp_gameobject);
