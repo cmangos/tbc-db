@@ -1418,7 +1418,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- TODO:
 -- * Add special paths for certain Ghouls in the Invasion event
 -- ******************************************************************************************************************************************************************** --
-DELETE FROM creature_movement_template WHERE entry IN(17899,17898,17895,17905,17897,17906,17907,17916,17767,17808,17888,17842);
+DELETE FROM creature_movement_template WHERE entry IN(17899,17898,17895,17905,17897,17906,17907,17908,17916,17767,17808,17888,17842);
 -- Ghouls
 INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (17895,1,1,4895.428,-1590.809,1332.106,0,0,100),
@@ -4173,7 +4173,6 @@ INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,
 (17842,12,42,5546.523,-2637.094,1482.928,0,0,100);
 
 -- Frost Wyrm
-DELETE FROM creature_movement_template WHERE entry=17907;
 INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (17907,1,1,5730.103,-2705.805,1642.442,0,0,100), -- Spline waypoint to help our pathfinder get over the mountain
 (17907,1,2,5585.464,-2721.981,1521.024,0,0,100),
@@ -4186,7 +4185,6 @@ INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,
 (17907,2,4,5488.03,-2706.118,1505.735,1000,7,100);
 
 -- Gargoyle
-DELETE FROM `creature_movement_template` WHERE `entry`=17906;
 INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (17906,1,1,5761.943,-2873.926,1644.555,0,0,100), -- Spline waypoint to help our pathfinder get over the mountain
 (17906,1,2,5626.645,-2820.905,1576.665,0,1790601,100),
