@@ -27356,7 +27356,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2302804','23028','30','5','100','1025','0','22963','0','0','0','0','11','40845','0','3','54','-10125','0','0','22','2','0','0','Bonechewer Taskmaster - Cast Fury and Emote and Set Phase 2 on Receive AI Event 0 (Phase 1)'),
 ('2302805','23028','30','3','100','1025','0','22963','0','0','0','0','11','40845','0','3','0','0','0','0','0','0','0','0','Bonechewer Taskmaster - Cast Fury on Receive AI Event 0 (Phase 2)'),
 -- Dragonmaw Sky Stalker 23030
-('2303001','23030','11','0','100','0','0','0','0','0','0','0','57','2','35','0','50','1','0','0','0','0','0','0','Dragonmaw Sky Stalker - Enable Range Mode and Set REACT_DEFENSIVE on Spawn'),
+('2303001','23030','11','0','100','0','0','0','0','0','0','0','57','1','35','0','50','1','0','0','0','0','0','0','Dragonmaw Sky Stalker - Enable Range Mode and Set REACT_DEFENSIVE on Spawn'),
 ('2303002','23030','9','0','100','1025','5','60','11000','16000','0','0','11','40872','4','512','0','0','0','0','0','0','0','0','Dragonmaw Sky Stalker - Cast Immolation Arrow'),
 ('2303003','23030','9','0','100','1025','5','40','5000','8000','0','0','11','40873','1','256','0','0','0','0','0','0','0','0','Dragonmaw Sky Stalker - Cast Shoot'),
 -- Shadowmoon Soldier 23047 - RP: "Yes Sir!"
