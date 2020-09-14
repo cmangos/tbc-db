@@ -26497,10 +26497,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1923101','19231','0','0','100','1025','7800','13200','13300','21200','0','0','11','35055','1','0','0','0','0','0','0','0','0','0','Mechanar Crusher - Cast The Claw'),
 ('1923102','19231','0','0','100','1027','11100','19300','22900','28900','0','0','11','35056','1','0','0','0','0','0','0','0','0','0','Mechanar Crusher (Normal) - Cast Glob of Machine Fluid'),
 ('1923103','19231','0','0','100','1029','11100','19300','22900','28900','0','0','11','38923','1','0','0','0','0','0','0','0','0','0','Mechanar Crusher (Heroic) - Cast Glob of Machine Fluid'),
--- Bloodwarder Centurion (4.3.4 Official Data - Normal/Heroic) - NO UNSTABLE AFFLICTION DATA AVAILABLE
-('1951001','19510','1','0','100','32','1000','1000','0','0','0','0','11','35188','0','1','11','35186','0','1','0','0','0','0','Bloodwarder Centurion - Random Cast Chilling Touch or Melt Armor Proc OOC'),
+-- Bloodwarder Centurion 19510 (4.3.4 Official Data - Normal/Heroic)
+('1951001','19510','11','0','100','32','0','0','0','0','0','0','11','35184','0','34','11','35186','0','34','11','35188','0','34','Bloodwarder Centurion - Random Cast Unstable Affliction Proc or Melt Armor Proc or Chilling Touch on Spawn'),
 ('1951002','19510','0','0','100','1025','6200','19300','12100','16900','0','0','11','35178','1','0','0','0','0','0','0','0','0','0','Bloodwarder Centurion - Cast Shield Bash'),
-('1951003','19510','0','0','100','1025','11000','17000','19000','24000','0','0','11','34439','8','0','0','0','0','0','0','0','0','0','Bloodwarder Centurion - Cast Unstable Affliction'),
 -- Gatewatcher Iron-Hand 19710 (4.3.4 Official Data - Normal/Heroic) - (Normal Mode Yells on Every 3rd Cast)
 ('1971001','19710','4','0','100','0','0','0','0','0','0','0','1','-10166','0','0','0','0','0','0','0','0','0','0','Gatewatcher Iron-Hand - Yell on Aggro'),
 ('1971002','19710','6','0','100','0','0','0','0','0','0','0','1','-10172','0','0','1','-10165','0','0','0','0','0','0','Gatewatcher Iron-Hand - Yell and Emote on Death'),
