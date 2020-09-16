@@ -698,6 +698,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (24891, 0, 0, 1, 16, 0, 0, '44801'), -- Kalecgos
 (24892, 0, 0, 1, 16, 0, 0, '44800 44801'), -- Sathrovarr the Corruptor
 (24928, 0, 0, 1, 16, 0, 1024, NULL), -- Sunwell Daily Bunny x 1.00
+(25165, 0, 0, 1, 16, 0, 0, '42459'), -- Lady Sacrolash
 (25315, 0, 0, 1, 0, 0, 0, '45769 47113 46548'), -- Kil'jaeden
 (25357, 0, 0, 1, 16, 0, 1024, NULL), -- Felmyst Flight Target - Left
 (25358, 0, 0, 1, 16, 0, 1024, NULL), -- Felmyst Flight Target - Right
@@ -729,6 +730,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (25638, 0, 0, 1, 16, 0, 0, NULL), -- Captain Selana
 (25639, 0, 0, 1, 16, 0, 0, NULL), -- Anchorite Elbadon
 (25644, 0, 0, 1, 16, 0, 0, NULL), -- Neophyte Narama
+(25708, 0, 0, 1, 16, 0, 0, '42459'), -- Sinister Reflection
 (25744, 0, 0, 1, 0, 0, 0, '45769 45934'), -- Dark Fiend
 (25772, 0, 0, 1, 16, 0, 0, '45769 46086'), -- Void Sentinal
 (25798, 0, 0, 1, 16, 0, 0, '45769 42459'), -- Shadowsword Berserker
@@ -737,7 +739,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (25837, 0, 0, 1, 16, 0, 0, '45769'), -- Shadowsword Commander
 (25851, 0, 0, 1, 16, 0, 0, '45769 46308'), -- Volatile Fiend
 (25867, 0, 0, 1, 16, 0, 0, '45769'), -- Sunblade Dragonhawk
-(25948, 0, 0, 1, 16, 0, 0, '45769'), -- Doomfire Shard
+(25948, 0, 0, 1, 16, 0, 0, '45769 31722'), -- Doomfire Shard
 (25953, 0, 0, 1, 16, 0, 0, NULL), -- Fel Crystal Spell Target
 (26101, 0, 0, 1, 16, 0, 0, '45769'); -- Fire Fiend
 
