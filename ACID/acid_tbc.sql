@@ -4477,6 +4477,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('122203','1222','2','0','100','1024','15','0','0','0','0','0','5','11','0','0','5','11','0','0','11','3204','0','0','Dark Iron Sapper - Laugh Emote at 15% HP'),
 -- Young Threshadon 1224 - NSR
 -- Miran 1379 - npc_miran
+-- Saean 1380
+('138001','1380','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Saean - Flee at 15% HP'),
 -- Berserk Trogg (2.4.3 Official Data)
 ('139301','1393','4','0','10','0','0','0','0','0','0','0','1','-213','-214','-215','0','0','0','0','0','0','0','0','Berserk Trogg - Random Say on Aggro'),
 ('139302','1393','2','0','100','1024','40','0','0','0','0','0','11','3019','0','0','1','-46','0','0','0','0','0','0','Berserk Trogg - Cast Enrage at 40% HP'),
@@ -4496,6 +4498,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thorgrum Borrelson (2.4.3 Official Data)
 ('157201','1572','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Thorgrum Borrelson - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Loch Crocolisk 1693 - NSR
+-- Dark Iron Ambusher 1981
+('198101','1981','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dark Iron Ambusher - Flee at 15% HP'),
 -- Ram (2.4.3 Official Data)
 ('209801','2098','2','0','100','0','99','0','0','0','0','0','25','0','0','0','0','0','0','0','0','0','0','0','Ram - Flee at 99% HP'),
 -- Dark Iron Raider (2.4.3 Official Data)
