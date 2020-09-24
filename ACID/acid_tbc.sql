@@ -29165,9 +29165,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- M'uru (25741) - boss_muru
 -- Dark Fiend 25744
 ('2574401','25744','9','0','100','1024','0','5','0','0','0','0','11','45944','0','2','41','1000','0','0','0','0','0','0','Dark Fiend - Cast Dark Fiend and Delayed Despawn on Range Check'),
-('2574402','25744','8','0','100','0','988','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Dark Fiend - Forced Despawn on Dispel Magic (Rank 2) Hit'),
-('2574403','25744','8','0','100','0','8012','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Dark Fiend - Forced Despawn on Purge (Rank 2) Hit'),
-('2574404','25744','8','0','100','0','32592','-1','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Dark Fiend - Forced Despawn on Mass Dispel Hit'),
 -- M'uru Portal Target 25770 - npc_portal_target
 -- Void Sentinal 25772
 ('2577201','25772','9','0','100','1025','0','10','7000','11000','0','0','11','46087','0','0','0','0','0','0','0','0','0','0','Void Sentinal - Cast Shadow Pulse'),
