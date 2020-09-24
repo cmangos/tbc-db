@@ -27550,7 +27550,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blood Elf Council Voice Trigger 23499 - mob_blood_elf_council_voice_trigger
 -- Reliquary LoS Agro Trigger 23502
 -- Ashtongue Elementalist 23523
-('2352301','23523','4','0','100','0','0','0','0','0','0','0','57','2','45','0','0','0','0','0','0','0','0','0','Ashtongue Elementalist - Enable Range Mode on Aggro'),
+('2352301','23523','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Ashtongue Elementalist - Enable Range Mode on Aggro'),
 ('2352302','23523','0','0','100','1025','5000','18000','16000','21000','0','0','11','42023','4','512','0','0','0','0','0','0','0','0','Ashtongue Elementalist - Cast Rain of Fire'),
 ('2352303','23523','9','0','100','1025','0','50','1500','2500','0','0','11','42024','1','256','0','0','0','0','0','0','0','0','Ashtongue Elementalist - Cast Lightning Bolt'),
 -- Ashtongue Spiritbinder 23524
