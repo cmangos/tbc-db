@@ -27419,10 +27419,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2319608','23196','0','3','100','1025','6000','12000','16000','22000','0','0','11','41272','18','512','0','0','0','0','0','0','0','0','Bonechewer Behemoth - Cast Behemoth Charge on Furthest Player (Phase 2)'),
 -- Maiev Shadowsong (23197) - boss_maiev_shadowsong
 -- Ashtongue Sorcerer (23215) - mob_ashtongue_sorcerer
--- Ashtongue Defender 23216 - Heroic Strike only on npc target?
+-- Ashtongue Defender 23216
 ('2321601','23216','0','0','100','1025','5000','10000','17000','17000','0','0','11','41178','1','0','0','0','0','0','0','0','0','0','Ashtongue Defender - Cast Debilitating Strike'),
 ('2321602','23216','13','0','100','1025','10000','15000','0','0','0','0','11','41180','1','0','0','0','0','0','0','0','0','0','Ashtongue Defender - Cast Shield Bash on Target Casting'),
-('2321603','23216','0','0','100','1025','11000','16000','13000','17000','0','0','11','41975','5','0','0','0','0','0','0','0','0','0','Ashtongue Defender - Cast Heroic Strike'),
+('2321603','23216','0','0','100','1025','11000','16000','13000','17000','0','0','11','41975','15','0','0','0','0','0','0','0','0','0','Ashtongue Defender - Cast Heroic Strike on Akama (23191)'),
 -- Bonechewer Brawler 23222 - npc_bonechewer_brawler
 -- Bonechewer Spectator 23223
 ('2322301','23223','11','0','100','0','0','0','0','0','0','0','31','1','3','0','0','0','0','0','0','0','0','0','Bonechewer Spectator - Set Random Phase 1-3 on Spawn'),
