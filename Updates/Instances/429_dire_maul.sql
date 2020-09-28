@@ -2822,6 +2822,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+3, @PGUID+85, 0, 'DM East - Ghost Mushroom (142144)'),
 (@OGUID+4, @PGUID+85, 0, 'DM East - Ghost Mushroom (142144)'),
 (@OGUID+5, @PGUID+85, 0, 'DM East - Ghost Mushroom (142144)'),
+(@OGUID+13, @PGUID+85, 0, 'DM East - Ghost Mushroom (142144)'),
 (@OGUID+371, @PGUID+92, 0, 'DM East - Large Solid Chest (153464)'),
 (@OGUID+372, @PGUID+92, 0, 'DM East - Large Mithril Bound Chest (153469)'),
 (@OGUID+373, @PGUID+93, 0, 'DM East - Large Solid Chest (153464)'),
@@ -2857,7 +2858,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+10, 142145, 429, -77.444, -438.764, -58.612, 2.79252, 0, 0, 0.984807, 0.173652, 7200, 7200, 255, 1), -- Gromsblood
 (@OGUID+11, 142145, 429, 39.6528, -322.045, -52.2932, 1.25664, 0, 0, 0.587786, 0.809016, 7200, 7200, 255, 1), -- Gromsblood
 (@OGUID+12, 142145, 429, 38.4777, -391.213, -58.6108, 1.32645, 0, 0, 0.615661, 0.788011, 7200, 7200, 255, 1), -- Gromsblood
--- 13 - 18
+(@OGUID+13, 142144, 429, 80.78429412841796875, -420.521392822265625, -4.21279096603393554, 2.897245407104492187, 0, 0, 0.99254608154296875, 0.121869951486587524, 7200, 7200, 255, 1), -- Ghost Mushroom
+-- 14 - 18
 (@OGUID+19, 175404, 429, 263.743, -266.911, -59.9769, 2.94959, 0, 0, 0.995396, 0.0958512, 7200, 7200, 255, 1), -- Rich Thorium Vein
 (@OGUID+20, 175404, 429, 255.189, -358.638, -107.365, 2.61799, 0, 0, 0.965925, 0.258821, 7200, 7200, 255, 1), -- Rich Thorium Vein
 (@OGUID+21, 175404, 429, 277.033, -348.927, -101.016, 0.750491, 0, 0, 0.366501, 0.930418, 7200, 7200, 255, 1), -- Rich Thorium Vein
