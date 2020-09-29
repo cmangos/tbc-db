@@ -27406,7 +27406,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Seer Kanai (23158) - NSR
 -- Okuno (23159) - NSR
 -- Hand of Gorefiend 23172
-('2317201','23172','0','0','100','1025','5000','9000','30000','30000','0','0','11','38166','0','0','0','0','0','0','0','0','0','0','Hand of Gorefiend - Cast Enrage'),
+('2317201','23172','0','0','100','1025','5000','9000','10000','10000','0','0','11','38166','0','32','0','0','0','0','0','0','0','0','Hand of Gorefiend - Cast Frenzy'),
 -- Akama 23191 - npc_akama_shade
 -- Bonechewer Behemoth 23196
 ('2319601','23196','11','0','100','0','0','0','0','0','0','0','31','1','2','0','0','0','0','0','0','0','0','0','Bonechewer Behemoth - Set Random Phase 1-2 on Spawn'),
