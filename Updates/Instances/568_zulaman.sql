@@ -133,13 +133,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+74, 8, -190.085, 1274.09, 1.0419, 100, 0, 0),
 (@CGUID+74, 9, -181.278, 1273.06, 1.6089, 100, 1000, 1), -- despawn
 
-(@CGUID+101, 1, -82.871, 1147.99, 5.67737, 1.55334, 5000, 1006), -- urand(5,7) 1001,1005,1006
-(@CGUID+101, 2, -82.871, 1147.99, 5.67737, 1.55334, 6000, 1005),
-(@CGUID+101, 3, -82.871, 1147.99, 5.67737, 1.55334, 6000, 1006),
-(@CGUID+101, 4, -82.871, 1147.99, 5.67737, 1.55334, 5000, 1005),
-(@CGUID+101, 5, -82.871, 1147.99, 5.67737, 1.55334, 6000, 1001),
-(@CGUID+101, 6, -82.871, 1147.99, 5.67737, 1.55334, 7000, 1001),
-(@CGUID+101, 7, -82.871, 1147.99, 5.67737, 1.55334, 7000, 1001),
+(@CGUID+101, 1, -82.971, 1146.509, 5.677, 1.55334, 5000, 1006), -- urand(5,7) 1001,1005,1006
+(@CGUID+101, 2, -82.971, 1146.509, 5.677, 1.55334, 6000, 1005),
+(@CGUID+101, 3, -82.971, 1146.509, 5.677, 1.55334, 6000, 1006),
+(@CGUID+101, 4, -82.971, 1146.509, 5.677, 1.55334, 5000, 1005),
+(@CGUID+101, 5, -82.971, 1146.509, 5.677, 1.55334, 6000, 1001),
+(@CGUID+101, 6, -82.971, 1146.509, 5.677, 1.55334, 7000, 1001),
+(@CGUID+101, 7, -82.971, 1146.509, 5.677, 1.55334, 7000, 1001),
 
 (@CGUID+109, 1, 251.1337, 1022.682, 3.468341, 100, 0, 0),
 (@CGUID+109, 2, 248.586, 1024.29, 3.46834, 100, 0, 0),
@@ -438,6 +438,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (24504,4,1,-34.76778,1192.843,18.71136,100,1000,0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- (@CGUID+23, 0, 0, 1, 16, 0, 0, '46750'), -- World Trigger (Not Immune PC)
 (@CGUID+66, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
 (@CGUID+68, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
 (@CGUID+96, 0, 3, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
@@ -534,7 +535,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 (@CGUID+54, @CGUID+406, 1167), -- Amani'shi Medicine Man -> Amani'shi Tempest
 (@CGUID+409, @CGUID+406, 1167), -- Amani'shi Flame Caster -> Amani'shi Tempest
-(@CGUID+437, @CGUID+406, 1167), -- Amani'shi Handler -> Amani'shi Tempest
+(@CGUID+437, @CGUID+406, 1167), -- creature_spawn_entry -> Amani'shi Tempest
 (@CGUID+406, @CGUID+333, 1024), -- Amani'shi Tempest -> Hex Lord Malacrass
 
 (@CGUID+370, @CGUID+371, 1167), -- Amani'shi Berserker -> Amani'shi Berserker
@@ -550,21 +551,21 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+62, @CGUID+61, 1039), -- Amani Bear -> Amani Bear
 (@CGUID+61, @CGUID+43, 1024), -- Amani Bear -> Nalorakk
 
-(@CGUID+55, @CGUID+40, 1039), -- Amani'shi Tribesman -> Amani'shi Axe Thrower
-(@CGUID+56, @CGUID+40, 1039), -- Amani'shi Tribesman -> Amani'shi Axe Thrower
+(@CGUID+55, @CGUID+40, 1039), -- creature_spawn_entry -> Amani'shi Axe Thrower
+(@CGUID+56, @CGUID+40, 1039), -- creature_spawn_entry -> Amani'shi Axe Thrower
 (@CGUID+40, @CGUID+43, 1024), -- Amani'shi Axe Thrower -> Nalorakk
 
-(@CGUID+51, @CGUID+41, 1039), -- Amani'shi Medicine Man -> Amani'shi Axe Thrower
-(@CGUID+57, @CGUID+41, 1039), -- creature_spawn_entry -> Amani'shi Axe Thrower
-(@CGUID+58, @CGUID+41, 1039), -- Amani'shi Tribesman -> Amani'shi Axe Thrower
-(@CGUID+41, @CGUID+43, 1024), -- Amani'shi Tribesman -> Nalorakk
+(@CGUID+41, @CGUID+51, 1039), -- Amani'shi Axe Thrower -> Amani'shi Medicine Man
+(@CGUID+57, @CGUID+51, 1039), -- creature_spawn_entry -> Amani'shi Medicine Man
+(@CGUID+58, @CGUID+51, 1039), -- creature_spawn_entry -> Amani'shi Medicine Man
+(@CGUID+51, @CGUID+43, 1024), -- Amani'shi Medicine Man -> Nalorakk
 
 (@CGUID+47, @CGUID+46, 1039), -- Amani'shi Warbringer -> Amani'shi Warbringer
 (@CGUID+46, @CGUID+43, 1024), -- Amani'shi Warbringer -> Nalorakk
 
 (@CGUID+49, @CGUID+48, 1039), -- Amani'shi Warbringer -> Amani'shi Warbringer
-(@CGUID+52, @CGUID+48, 1039), -- Amani'shi Medicine Man -> Amani'shi Warbringer
-(@CGUID+53, @CGUID+48, 1039), -- Amani'shi Medicine Man -> Amani'shi Warbringer
+(@CGUID+52, @CGUID+48, 1039), -- creature_spawn_entry -> Amani'shi Warbringer
+(@CGUID+53, @CGUID+48, 1039), -- creature_spawn_entry -> Amani'shi Warbringer
 (@CGUID+48, @CGUID+43, 1024), -- Amani'shi Warbringer -> Nalorakk
 
 -- Akil'zon
@@ -594,7 +595,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 (@CGUID+100, @CGUID+65, 1167), -- Amani'shi Flame Caster -> Amani'shi Scout
 (@CGUID+119, @CGUID+65, 1167), -- Amani'shi Guardian -> Amani'shi Scout
-(@CGUID+129, @CGUID+65, 1167), -- Amani'shi Guardian -> Amani'shi Scout
+(@CGUID+129, @CGUID+65, 1167), -- creature_spawn_entry -> Amani'shi Scout
 (@CGUID+65, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 
 (@CGUID+124, @CGUID+98, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
@@ -609,7 +610,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+66, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
 
 (@CGUID+102, @CGUID+71, 1167), -- Amani'shi Flame Caster -> Amani'shi Scout
-(@CGUID+126, @CGUID+71, 1167), -- Amani'shi Guardian -> Amani'shi Scout
+(@CGUID+126, @CGUID+71, 1167), -- creature_spawn_entry -> Amani'shi Scout
 (@CGUID+128, @CGUID+71, 1167), -- Amani'shi Guardian -> Amani'shi Scout
 (@CGUID+253, @CGUID+71, 1167), -- Amani Dragonhawk -> Amani'shi Scout
 (@CGUID+71, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
@@ -650,7 +651,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+96, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
 
 (@CGUID+117, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
-(@CGUID+118, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
+(@CGUID+118, @CGUID+101, 1167), -- creature_spawn_entry -> Amani'shi Flame Caster
 (@CGUID+121, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
 (@CGUID+101, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
 
@@ -791,8 +792,20 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (23879, 568, 23863, 1024, 0), -- Amani Dragonhawk Spirit -> Zul'jin
 (23880, 568, 23863, 1024, 0); -- Amani Eagle Spirit -> Zul'jin
 
-INSERT INTO creature_spawn_entry (guid, entry) VALUES
-(@CGUID+57, 23542), (@CGUID+57, 23582); -- Amani'shi Axe Thrower, Amani'shi Tribesman
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+52, 23542), (@CGUID+52, 23581), -- Amani'shi Axe Thrower, Amani'shi Medicine Man
+(@CGUID+53, 23542), (@CGUID+53, 23581), -- Amani'shi Axe Thrower, Amani'shi Medicine Man
+
+(@CGUID+55, 23542), (@CGUID+55, 23582), -- Amani'shi Axe Thrower, Amani'shi Tribesman
+(@CGUID+56, 23542), (@CGUID+56, 23582), -- Amani'shi Axe Thrower, Amani'shi Tribesman
+(@CGUID+57, 23542), (@CGUID+57, 23582), -- Amani'shi Axe Thrower, Amani'shi Tribesman
+(@CGUID+58, 23542), (@CGUID+58, 23582), -- Amani'shi Axe Thrower, Amani'shi Tribesman
+
+(@CGUID+118, 23596), (@CGUID+118, 23597), -- Amani'shi Flame Caster, Amani'shi Guardian
+(@CGUID+126, 23596), (@CGUID+126, 23597), -- Amani'shi Flame Caster, Amani'shi Guardian
+(@CGUID+129, 23596), (@CGUID+129, 23597), -- Amani'shi Flame Caster, Amani'shi Guardian
+
+(@CGUID+437, 23597), (@CGUID+437, 24065); -- Amani'shi Guardian, Amani'shi Handler
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 1412, 568, 1, 43.006599, 1364.199951, 8.4893, 5.18073, 900, 900, 15, 0, 0, 1), -- Squirrel
@@ -809,7 +822,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+12, 14881, 568, 1, 90.1453, 1727.29, 42.0215, 3.45978, 900, 900, 5, 0, 0, 1), -- Spider
 (@CGUID+13, 14881, 568, 1, 96.2507, 1661.01, 42.0216, 1.96371, 900, 900, 5, 0, 0, 1), -- Spider
 (@CGUID+14, 14881, 568, 1, 73.3515, 1684.77, 42.0215, 0.79049, 900, 900, 5, 0, 0, 1), -- Spider
--- @CGUID+15 - 23 -- REUSE
+-- @CGUID+15 - 22 -- REUSE
+-- UNUSED - (@CGUID+23, 21252, 568, 1, -34.7192, 1149.69, 19.2253, 6.038839, 7200, 7200, 0, 0, 0, 0), -- World Trigger (Not Immune PC)
 (@CGUID+24, 21252, 568, 1, -33.8969, 1122.81, 18.7948, 1.58825, 7200, 7200, 0, 0, 0, 0), -- World Trigger (Not Immune PC)
 (@CGUID+25, 21252, 568, 1, -53.6238, 1150.03, 18.7886, 0, 7200, 7200, 0, 0, 0, 0), -- World Trigger (Not Immune PC)
 (@CGUID+26, 21252, 568, 1, -33.4373, 1177.73, 18.7947, 4.66003, 7200, 7200, 0, 0, 0, 0), -- World Trigger (Not Immune PC)
@@ -838,13 +852,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+49, 23580, 568, 1, -75.9265, 1315.24, 41.3016, 4.60767, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Warbringer
 (@CGUID+50, 23581, 568, 1, 148.4082, 1422.761, 2.824402, 3.024027, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Medicine Man
 (@CGUID+51, 23581, 568, 1, -50.7096, 1423.47, 27.4899, 6.17846, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Medicine Man
-(@CGUID+52, 23581, 568, 1, -71.6538, 1315.07, 41.3016, 4.4855, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Medicine Man
-(@CGUID+53, 23581, 568, 1, -88.9147, 1314.97, 41.1013, 4.97419, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Medicine Man
+(@CGUID+52, 0, 568, 1, -71.6538, 1315.07, 41.3016, 4.4855, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+53, 0, 568, 1, -88.9147, 1314.97, 41.1013, 4.97419, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+54, 23581, 568, 1, 120.3534, 992.8157, 30.74231, 2.373648, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Medicine Man
-(@CGUID+55, 23582, 568, 1, 19.0948, 1420.57, 11.973, 5.8294, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tribesman
-(@CGUID+56, 23582, 568, 1, 14.5413, 1411.64, 11.982, 0.017453, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tribesman
+(@CGUID+55, 0, 568, 1, 19.0948, 1420.57, 11.973, 5.8294, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+56, 0, 568, 1, 14.5413, 1411.64, 11.982, 0.017453, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+57, 0, 568, 1, -53.3283, 1416.59, 27.3666, 0.017453, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
-(@CGUID+58, 23582, 568, 1, -50.7764, 1415.72, 27.4538, 0, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Tribesman
+(@CGUID+58, 0, 568, 1, -50.7764, 1415.72, 27.4538, 0, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+59, 23584, 568, 1, -7.98126, 1482.39, 9.37306, 5.54282, 7200, 7200, 5, 0, 0, 1), -- Amani Bear
 (@CGUID+60, 23584, 568, 1, -18.8911, 1488.05, 13.9981, 0.540604, 7200, 7200, 5, 0, 0, 1), -- Amani Bear
 (@CGUID+61, 23584, 568, 1, -60.8165, 1485.24, 17.9836, 2.65171, 7200, 7200, 5, 0, 0, 1), -- Amani Bear
@@ -887,7 +901,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+98, 23596, 568, 1, -222.093, 1312.36, 2.4422, 1.64061, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+99, 23596, 568, 1, -80.9743, 1194.18, 5.6611, 2.28638, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+100, 23596, 568, 1, -190.82, 1325.56, -0.033457, 3.63029, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
-(@CGUID+101, 23596, 568, 1, -82.871, 1147.99, 5.67737, 1.55334, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Flame Caster
+(@CGUID+101, 23596, 568, 1, -82.971, 1146.509, 5.677, 1.55334, 7200, 7200, 0, 0, 0, 2), -- Amani'shi Flame Caster
 (@CGUID+102, 23596, 568, 1, -140.903, 1134.42, 0.167008, 1.22173, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+103, 23596, 568, 1, 81.7096, 1144.18, 0.197549, 3.3227, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+104, 23597, 568, 1, 138.816, 1587.09, 43.6489, 4.74729, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Guardian
@@ -904,18 +918,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+115, 23597, 568, 1, 327.933, 1030.54, 9.60501, 3.29867, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+116, 23597, 568, 1, 358.713, 1112.35, 5.87011, 0.733038, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+117, 23597, 568, 1, -86.4353, 1150.79, 5.67736, 6.24828, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
-(@CGUID+118, 23597, 568, 1, -78.7532, 1150.4, 5.49613, 3.07178, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
-(@CGUID+119, 23597, 568, 1, -195.045, 1323.84, 0.605175, 0.25652, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
+(@CGUID+118, 0, 568, 1, -78.7532, 1150.4, 5.49613, 3.07178, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+119, 23597, 568, 1, -193.4692, 1324.2583, 0.1332, 0.45378, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+120, 23597, 568, 1, -83.8775, 1081.24, 1.01608, 1.65806, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
-(@CGUID+121, 23597, 568, 1, -82.6712, 1153.38, 5.67735, 4.66003, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
+(@CGUID+121, 23597, 568, 1, -82.9617, 1155.3148, 5.6773, 4.66002, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+122, 23597, 568, 1, -181.866, 1158.57, 12.0392, 0.977384, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+123, 23597, 568, 1, -181.74, 1164.2, 12.0392, 5.13127, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+124, 23597, 568, 1, -225.5, 1314.84, 1.91045, 5.63741, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+125, 23597, 568, 1, -221.845, 1316.85, 1.17543, 3.89208, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
-(@CGUID+126, 23597, 568, 1, -130.566, 1137.6, 0.465736, 2.53073, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
+(@CGUID+126, 0, 568, 1, -130.566, 1137.6, 0.465736, 2.53073, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+127, 23597, 568, 1, -82.1988, 1084.49, 0.972757, 3.7001, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
 (@CGUID+128, 23597, 568, 1, -133.446, 1147.77, 0.247097, 4.24115, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
-(@CGUID+129, 23597, 568, 1, -189.317, 1319.33, -0.033457, 1.02974, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Guardian
+(@CGUID+129, 0, 568, 1, -189.317, 1319.33, -0.033457, 1.02974, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+130, 23746, 568, 1, 116.743, 1659.94, 42.1049, 1.3439, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+131, 23746, 568, 1, 91.4336, 1668.38, 42.1049, 4.79965, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+132, 23746, 568, 1, 89.9226, 1678.82, 42.1049, 5.86431, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
@@ -938,7 +952,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+149, 23746, 568, 1, 129.791, 1357.97, -24.0763, 6.0912, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+150, 23746, 568, 1, 115.099, 1245.86, -20.1063, 2.58309, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+151, 23746, 568, 1, 107.344, 1226.04, -23.9391, 0.837758, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
--- @CGUID+152 -- REUSE
+(@CGUID+152, 23746, 568, 1, 158.608, 1647.57, 45.8414, 2.879793, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+153, 23746, 568, 1, 104.313, 1678.46, 45.7201, 0.383972, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+154, 23746, 568, 1, 77.9453, 1651.02, 46.739, 4.31096, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
 (@CGUID+155, 23746, 568, 1, 120.432, 766.113, 55.1054, 6.26573, 7200, 7200, 0, 0, 0, 0), -- Zul'Aman Exterior InvisMan
@@ -1223,7 +1237,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+434, 24065, 568, 1, 361.707, 1117.68, 6.48402, 4.69494, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
 (@CGUID+435, 24065, 568, 1, 406.433, 1054.87, 9.60489, 4.5204, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
 (@CGUID+436, 24065, 568, 1, 379.436, 1117.04, 6.23295, 4.5204, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
-(@CGUID+437, 24065, 568, 1, 116.216, 997.449, 30.5761, 5.39307, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
+(@CGUID+437, 0, 568, 1, 116.216, 997.449, 30.5761, 5.39307, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+438, 24551, 568, 1, 409.009, 1417.03, 74.3915, 0.645772, 7200, 7200, 0, 0, 0, 0), -- Eagle Event Deactivation Trigger
 
 (@CGUID+439, 23889, 568, 1, 118.8996, 863.9178, 33.45926, 1.32645, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
