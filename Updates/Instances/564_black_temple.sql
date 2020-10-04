@@ -2672,9 +2672,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+637, @CGUID+285, 1024); -- Illidari Blood Lord -> Gathios the Shatterer
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(22950, 564, 22949, 143, 0), -- High Nethermancer Zerevor -> Gathios the Shatterer
-(22951, 564, 22949, 143, 0), -- Lady Malande -> Gathios the Shatterer
-(22952, 564, 22949, 143, 0), -- Veras Darkshadow -> Gathios the Shatterer
+(22950, 564, 22949, 16527, 0), -- High Nethermancer Zerevor -> Gathios the Shatterer
+(22951, 564, 22949, 16527, 0), -- Lady Malande -> Gathios the Shatterer
+(22952, 564, 22949, 16527, 0), -- Veras Darkshadow -> Gathios the Shatterer
 (22996, 564, 22917, 4096, 0), -- Blade of Azzinoth -> Illidan Stormrage
 (22997, 564, 22917, 4096, 0), -- Flame of Azzinoth -> Illidan Stormrage
 (23197, 564, 22917, 4096, 0), -- Maiev Shadowsong -> Illidan Stormrage
