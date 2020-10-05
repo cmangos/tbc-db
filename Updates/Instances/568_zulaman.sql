@@ -1,10 +1,11 @@
 /* DBScriptData
 DBName: Zul'Aman
 DBScriptName: instance_zulaman
-DB%Complete: 60
+DB%Complete: 70
 DBComment:
 * Add s.42350 RP Script
 * Add s.42220 RP Script (Issue: Npcs dont reset their position after being affected by the aura out of combat, needs to be handled in creature_movement)
+* c.entry 24375 is present in older data as event starter?
 EndDBScriptData */
 
 SET @CGUID := 5680000; -- creatures
@@ -660,7 +661,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+56, @CGUID+40, 1039), -- creature_spawn_entry -> Amani'shi Axe Thrower
 (@CGUID+40, @CGUID+43, 1024), -- Amani'shi Axe Thrower -> Nalorakk
 
-(@CGUID+41, @CGUID+51, 1039), -- Amani'shi Axe Thrower -> Amani'shi Medicine Man
+(@CGUID+41, @CGUID+51, 1039), -- creature_spawn_entry -> Amani'shi Medicine Man
 (@CGUID+57, @CGUID+51, 1039), -- creature_spawn_entry -> Amani'shi Medicine Man
 (@CGUID+58, @CGUID+51, 1039), -- creature_spawn_entry -> Amani'shi Medicine Man
 (@CGUID+51, @CGUID+43, 1024), -- Amani'shi Medicine Man -> Nalorakk
@@ -898,6 +899,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (23880, 568, 23863, 1024, 0); -- Amani Eagle Spirit -> Zul'jin
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+41, 23542), (@CGUID+41, 23582), -- Amani'shi Axe Thrower, Amani'shi Tribesman
 (@CGUID+52, 23542), (@CGUID+52, 23581), -- Amani'shi Axe Thrower, Amani'shi Medicine Man
 (@CGUID+53, 23542), (@CGUID+53, 23581), -- Amani'shi Axe Thrower, Amani'shi Medicine Man
 (@CGUID+55, 23542), (@CGUID+55, 23582), -- Amani'shi Axe Thrower, Amani'shi Tribesman
@@ -944,7 +946,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+38, 22515, 568, 1, -114.455, 1125.79, 0.083333, 3.33358, 7200, 7200, 0, 0, 0, 0), -- World Trigger (hut)
 (@CGUID+39, 22517, 568, 1, 370.78, 1119.51, 5.78472, 3.87463, 7200, 7200, 0, 0, 0, 0), -- World Trigger (Large AOI)
 (@CGUID+40, 23542, 568, 1, 17.3455, 1418.6, 11.9475, 6.02139, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Axe Thrower
-(@CGUID+41, 23542, 568, 1, -53.39, 1422.76, 27.367, 6.17846, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Axe Thrower
+(@CGUID+41, 0, 568, 1, -53.39, 1422.76, 27.367, 6.17846, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+42, 23574, 568, 1, 376.353, 1407.34, 75.5313, 3.45575, 259200, 259200, 0, 0, 0, 0), -- Akil'zon
 (@CGUID+43, 23576, 568, 1, 16.9616, 1414.6, 11.9265, 6.23082, 259200, 259200, 0, 0, 0, 0), -- Nalorakk
 (@CGUID+44, 23577, 568, 1, 370.257, 1135.74, 6.54913, 4.76475, 259200, 259200, 0, 0, 0, 0), -- Halazzi
@@ -978,24 +980,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+72, 23586, 568, 1, -181.278, 1273.06, 1.6089, 3.0394, 120, 120, 0, 0, 0, 2), -- Amani'shi Scout (not confirmed by sniff)
 (@CGUID+73, 23586, 568, 1, -107.676, 1154.55, 0.083333, 3.94444, 120, 120, 0, 0, 0, 2), -- Amani'shi Scout (not confirmed by sniff)
 (@CGUID+74, 23586, 568, 1, -167.522, 1194.68, 0.642452, 5.3058, 120, 120, 0, 0, 0, 2), -- Amani'shi Scout (not confirmed by sniff)
--- @CGUID+75 -- REUSE
--- @CGUID+76 -- REUSE
--- @CGUID+77 -- REUSE
--- @CGUID+78 -- REUSE
--- @CGUID+79 -- REUSE
--- @CGUID+80 -- REUSE
--- @CGUID+81 -- REUSE
-(@CGUID+82, 24223, 568, 1, 231.78559, 1477.33154, 26.00006, 0.54105, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+83, 24223, 568, 1, 227.65093, 1404.27600, 37.13388, 2.32128, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+84, 24223, 568, 1, 227.88835, 1452.76257, 26.00041, 3.00196, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+85, 24223, 568, 1, 228.48057, 1433.12622, 27.38742, 2.58308, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+86, 24223, 568, 1, 227.02995, 1417.47436, 32.81706, 2.75762, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+87, 24223, 568, 1, 245.92024, 1374.84924, 49.40488, 3.40339, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+88, 24223, 568, 1, 227.55110, 1382.41857, 44.78123, 0.17453, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+89, 24223, 568, 1, 229.57563, 1361.47460, 49.16213, 5.21853, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+90, 24223, 568, 1, 261.45507, 1402.29931, 49.40504, 2.02458, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+91, 24223, 568, 1, 253.92784, 1429.99121, 49.40504, 2.18166, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+92, 24223, 568, 1, 281.30252, 1430.99572, 61.60976, 0.08726, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+-- @CGUID+75 - 92 -- REUSE
 (@CGUID+93, 23596, 568, 1, 243.45, 1033.66, 3.55167, 1.8675, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+94, 23596, 568, 1, -78.6729, 1199.08, 5.63549, 1.16937, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
 (@CGUID+95, 23596, 568, 1, 364.306, 1112.51, 5.76931, 2.46091, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Flame Caster
@@ -1236,7 +1221,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+330, 23834, 568, 1, -194.592, 1151.05, 0.124147, 5.97311, 7200, 7200, 3, 0, 0, 1), -- Amani Dragonhawk
 (@CGUID+331, 23834, 568, 1, -201.899, 1110.36, 0.223543, 5.9804, 7200, 7200, 3, 0, 0, 1), -- Amani Dragonhawk
 (@CGUID+332, 23834, 568, 1, -219.674, 1112.36, -0.475973, 4.45835, 7200, 7200, 3, 0, 0, 1), -- Amani Dragonhawk
-(@CGUID+333, 24239, 568, 1, 117.883, 921.279, 33.8883, 1.5696, 259200, 259200, 0, 0, 0, 0), -- Hex Lord Malacrass
+(@CGUID+333, 24239, 568, 1, 117.8645, 923.6944, 33.9725, 1.588249, 259200, 259200, 0, 0, 0, 0), -- Hex Lord Malacrass
 (@CGUID+334, 24312, 568, 1, -204.928, 1136.49, 0.388893, 6.00393, 7200, 7200, 0, 0, 0, 0), -- Dragonhawk Egg
 (@CGUID+335, 24312, 568, 1, -222.574, 1124.88, -0.057337, 1.32645, 7200, 7200, 0, 0, 0, 0), -- Dragonhawk Egg
 (@CGUID+336, 24312, 568, 1, -208.865, 1116.26, 0.377559, 1.20428, 7200, 7200, 0, 0, 0, 0), -- Dragonhawk Egg
@@ -1342,7 +1327,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+436, 24065, 568, 1, 379.436, 1117.04, 6.23295, 4.5204, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Handler
 (@CGUID+437, 0, 568, 1, 116.216, 997.449, 30.5761, 5.39307, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+438, 24551, 568, 1, 409.009, 1417.03, 74.3915, 0.645772, 7200, 7200, 0, 0, 0, 0), -- Eagle Event Deactivation Trigger
-
+-- Malacrass
 (@CGUID+439, 23889, 568, 1, 118.8996, 863.9178, 33.45926, 1.32645, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+440, 23889, 568, 1, 111.8493, 857.0572, 33.45926, 1.291544, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+441, 23889, 568, 1, 121.2045, 879.6914, 33.4736, 1.343904, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
@@ -1383,7 +1368,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+476, 23889, 568, 1, 97.78031, 835.1678, 33.37591, 1.418589, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+477, 23889, 568, 1, 120.5933, 751.6091, 35.41208, 1.563146, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+478, 23889, 568, 1, 118.6378, 776.8748, 33.45955, 1.516155, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
-
+-- Zul'jin
 (@CGUID+479, 23889, 568, 1, 129.2538, 689.1514, 45.19472, 4.660029, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+480, 23889, 568, 1, 135.8311, 688.9501, 45.19472, 4.747295, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+481, 23889, 568, 1, 132.5362, 689.2184, 45.19472, 4.694936, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
@@ -1391,7 +1376,43 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+483, 23889, 568, 1, 109.5535, 689.0452, 45.19472, 4.642576, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+484, 23889, 568, 1, 125.9288, 689.121, 45.19471, 4.764749, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
 (@CGUID+485, 23889, 568, 1, 106.8334, 689.0573, 45.19471, 4.729842, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+486, 23889, 568, 1, 112.498, 689.1459, 45.19471, 4.660029, 7200, 7200, 0, 0, 0, 0); -- Amani'shi Savage
+(@CGUID+486, 23889, 568, 1, 112.498, 689.1459, 45.19471, 4.660029, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Savage
+-- Akil'zon
+(@CGUID+487, 24223, 568, 1, 231.78559, 1477.33154, 26.00006, 0.54105, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+488, 24223, 568, 1, 227.88835, 1452.76257, 26.00041, 3.00196, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+489, 24223, 568, 1, 228.48057, 1433.12622, 27.38742, 2.58308, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+490, 24223, 568, 1, 227.02995, 1417.47436, 32.81706, 2.75762, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+491, 24223, 568, 1, 227.65093, 1404.27600, 37.13388, 2.32128, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+492, 24223, 568, 1, 227.55110, 1382.41857, 44.78123, 0.17453, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+493, 24223, 568, 1, 229.57563, 1361.47460, 49.16213, 5.21853, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+494, 24223, 568, 1, 245.92024, 1374.84924, 49.40488, 3.40339, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+495, 24223, 568, 1, 246.97384, 1356.47290, 49.40504, 1.20427, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+496, 24223, 568, 1, 275.79699, 1377.73303, 49.40504, 6.26573, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+497, 24223, 568, 1, 261.45507, 1402.29931, 49.40504, 2.02458, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+498, 24223, 568, 1, 275.37564, 1356.63330, 49.40504, 5.27089, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+499, 24223, 568, 1, 253.92784, 1429.99121, 49.40504, 2.18166, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+500, 24223, 568, 1, 281.30252, 1430.99572, 61.60976, 0.08726, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+501, 24223, 568, 1, 309.03536, 1387.17980, 57.22312, 3.21140, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+502, 24223, 568, 1, 341.27062, 1397.21594, 74.39344, 1.72787, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+503, 24223, 568, 1, 306.07421, 1456.71643, 81.58925, 5.20108, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+504, 24223, 568, 1, 335.36468, 1432.14892, 74.35483, 3.94444, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+505, 24223, 568, 1, 368.42932, 1437.51135, 74.42020, 5.11381, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+506, 24223, 568, 1, 360.95129, 1370.61499, 74.47595, 5.21853, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+507, 24223, 568, 1, 400.64096, 1465.52502, 74.14740, 3.94444, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+508, 24223, 568, 1, 411.34463, 1496.05444, 81.72947, 3.96189, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+509, 24223, 568, 1, 365.31683, 1387.88220, 74.59626, 5.21853, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+510, 24223, 568, 1, 394.76638, 1447.50439, 74.33351, 4.22369, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+511, 24223, 568, 1, 365.43380, 1414.64916, 75.90121, 4.50294, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+512, 24223, 568, 1, 386.42221, 1432.32592, 74.42569, 6.26573, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+513, 24223, 568, 1, 400.44097, 1427.20446, 74.57354, 1.44862, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+514, 24223, 568, 1, 352.29486, 1354.96594, 74.24785, 1.53588, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+515, 24223, 568, 1, 345.74359, 1335.20104, 78.86997, 0.95993, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+516, 24223, 568, 1, 342.06933, 1323.62365, 81.67091, 3.05432, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+517, 24223, 568, 1, 411.62316, 1386.69812, 74.46613, 3.17649, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+518, 24223, 568, 1, 408.24572, 1405.53161, 74.59789, 1.15191, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+519, 24223, 568, 1, 394.94815, 1381.38928, 74.50968, 3.78736, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+520, 24223, 568, 1, 429.48010, 1371.66577, 74.41665, 5.46288, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+521, 24223, 568, 1, 446.02258, 1354.25329, 85.51732, 5.84685, 7200, 7200, 0, 0, 0, 0); -- Eagle Trash Aggro Trigger
 
 -- ===========
 -- GAMEOBJECTS
