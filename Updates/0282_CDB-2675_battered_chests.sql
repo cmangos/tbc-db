@@ -41,9 +41,10 @@ INSERT INTO gameobject_loot_template (entry, item, ChanceOrQuestChance, groupid,
 ('2277','774','4','2','1','2','0','Malachite'),
 ('2277','818','1.2','2','1','1','0','Tigerseye'),
 ('2277','5498','0.9','2','1','1','0','Small Lustrous Pearl'),
-('2277','50502','3','2','-50502','1','0', 'NPC LOOT (Green World Drop) - (Item Levels: 10-15 (Profession Recipes)) - (NPC Levels: 6-20)'),
+-- refloot can not be put in a grpid with normal items
+('2277','50502','3','0','-50502','1','0', 'NPC LOOT (Green World Drop) - (Item Levels: 10-15 (Profession Recipes)) - (NPC Levels: 6-20)'),
 -- group 3 armor and weapon
-('2277','60001','3','70','-60001','1','0', 'NPC LOOT (Grey World Drop) - (Item Levels: 6-10) - (NPC Levels: 6-10)');
+('2277','60001','70','0','-60001','1','0', 'NPC LOOT (Grey World Drop) - (Item Levels: 6-10) - (NPC Levels: 6-10)');
 
 -- add old data for reference
 -- (2265, 118, 25, 0, 1, 1, 0, 'Minor Healing Potion');
