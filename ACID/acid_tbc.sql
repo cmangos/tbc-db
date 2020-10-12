@@ -16485,6 +16485,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2111503','21115','9','0','100','1025','5','30','2300','3900','0','0','11','36246','1','256','0','0','0','0','0','0','0','0','Station Guard - Cast Shoot Tech Gun'),
 -- Gor'drek 21117
 ('2111701','21117','27','0','100','1','12550','1','15000','30000','0','0','11','12550','0','0','0','0','0','0','0','0','0','0','Gor''drek - Cast Lightning Shield on Missing Buff'),
+-- Razak Ironsides 21118
+('2111801','21118','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Razak Ironsides - Enable Range Mode on Spawn'),
+('2111802','21118','4','0','50','0','0','0','0','0','0','0','54','0','0','10172','0','0','0','0','0','0','0','0','Razak Ironsides - Random Say on Aggro'),
+('2111803','21118','9','0','100','1025','5','30','2300','3900','0','0','11','36246','1','256','0','0','0','0','0','0','0','0','Razak Ironsides - Cast Shoot Tech Gun'),
 -- Felsworn Scalewing
 ('2112301','21123','9','0','100','1025','0','30','14000','15000','0','0','11','32093','1','0','0','0','0','0','0','0','0','0','Felsworn Scalewing - Cast Poison Spit'),
 -- Felsworn Daggermaw
@@ -16583,6 +16587,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gore-Scythe Ravager
 ('2142301','21423','0','0','100','1025','0','5000','15000','20000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Gore-Scythe Ravager - Cast Rend'),
 ('2142302','21423','11','0','100','0','0','0','0','0','0','0','11','34343','0','34','0','0','0','0','0','0','0','0','Gore-Scythe Ravager - Cast Thorns on Spawn'),
+-- Gnome Defender - 209 21426
+('2142601','21426','30','0','100','1','6','0','0','0','0','0','51','0','0','0','0','0','0','0','0','0','0','0','Gnome Defender - 209 - Unpause Waypoint Movement on Receive AI Event Custom B'),
 -- Strider Jock 21427
 ('2142701','21427','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Strider Jock - Enable Range Mode on Aggro'),
 ('2142702','21427','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Strider Jock - Flee at 15% HP'),
@@ -16591,6 +16597,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2144101','21441','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Station Sharpshooter - Enable Range Mode on Aggro'),
 ('2144102','21441','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Station Sharpshooter - Flee at 15% HP'),
 ('2144103','21441','9','0','100','1025','5','30','2300','3900','0','0','11','36246','1','256','0','0','0','0','0','0','0','0','Station Sharpshooter - Cast Shoot Tech Gun'),
+('2144104','21441','30','0','100','1','5','0','0','0','0','0','51','0','0','0','0','0','0','0','0','0','0','0','Station Sharpshooter - Unpause Waypoint Movement on Receive AI Event Custom A'),
 -- Ogre Building Bunny Small
 ('2145601','21456','11','0','100','0','0','0','0','0','0','0','11','32582','0','0','0','0','0','0','0','0','0','0','Ogre Building Bunny Small - Cast Ogre Building Bunny Curse Visual on Spawn'),
 -- Daranelle 21469 - npc_daranelle
@@ -32778,6 +32785,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11226','WHY ME!?!','0','0','0','0','18796','Station Technician 21114'),
 ('-11227','This is going to hurt in the morning.','0','0','0','0','18797','Station Technician 21114'),
 ('-11228','YEOW!!','0','0','0','0','18798','Station Technician 21114'),
+('-11229','I only have one rule. Everyone fights. No one quits.','0','0','0','0','19093','Razak Ironsides 21118'),
+('-11230','You don''t do your job, I''ll shoot you myself.','0','0','0','0','19094','Razak Ironsides 21118'),
+('-11231','Come on you apes. You want to live forever?','0','0','0','0','19095','Razak Ironsides 21118'),
+('-11232','Warm it up and give ''em everything you''ve got.','0','0','0','0','19096','Razak Ironsides 21118'),
 
 ('-19997','May the light bless you.','0','0','0','1','24856','25639'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','1','24857','25639'),
@@ -33256,6 +33267,10 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10171,0,-11226,0,'21114 - Random OOC Texts'),
 (10171,0,-11227,0,'21114 - Random OOC Texts'),
 (10171,0,-11228,0,'21114 - Random OOC Texts'),
+(10172,0,-11229,0,'21118 - Random Aggro Texts'),
+(10172,0,-11230,0,'21118 - Random Aggro Texts'),
+(10172,0,-11231,0,'21118 - Random Aggro Texts'),
+(10172,0,-11232,0,'21118 - Random Aggro Texts'),
 
 (12000,0,-10617,0,'Common Outland Nagas'),
 (12000,0,-10618,0,'Common Outland Nagas'),
