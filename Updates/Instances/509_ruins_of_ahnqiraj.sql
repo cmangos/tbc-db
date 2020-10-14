@@ -947,9 +947,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 -- Ayamiss the Hunter - Landing Path
-(15369, 1, 0, -9689.981, 1548.296, 33.27733, 100, 0, 0),
-(15369, 1, 1, -9682.716, 1554.252, 31.41621, 100, 0, 0),
-(15369, 1, 2, -9677.917, 1558.839, 27.24953, 100, 1000, 0);
+(15369, 1, 1, -9689.981, 1548.296, 33.27733, 100, 0, 0),
+(15369, 1, 2, -9682.716, 1554.252, 31.41621, 100, 0, 0),
+(15369, 1, 3, -9677.917, 1558.839, 27.24953, 100, 1000, 0);
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 

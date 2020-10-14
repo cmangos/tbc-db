@@ -599,8 +599,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (25644, 0, 15, 1755.888, 924.1495, 15.58635, 100, 18000, 2564401),
 (25644, 0, 16, 1755.888, 924.1495, 15.58635, 100, 0, 2564402),
 -- Shadowsword Deathbringer 25485 - ZoneCombatPulse would pull all surrounding groups which is not intended - HACK
-(25485, 0, 0, 1680.382, 542.687, 85.27053, 0, 0, 5), -- spawnpoint - hack due to movementtype change and waypoint script execution delay
-(25485, 0, 1, 1680.382, 542.687, 85.27053, 0, 0, 5), -- spawnpoint - hack due to movementtype change and waypoint script execution delay
+(25485, 0, 1, 1676.9564, 547.49713, 85.14562, 0, 0, 0),
 (25485, 0, 2, 1666.52, 562.1425, 85.08298, 0, 0, 0),
 (25485, 0, 3, 1650.734, 568.0248, 85.12753, 0, 0, 0),
 (25485, 0, 4, 1632.968, 584.8542, 84.9715, 0, 0, 0),
@@ -624,10 +623,9 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (25485, 0, 22, 1572.274, 537.1907, 38.79183, 0, 0, 0),
 (25485, 0, 23, 1583.751, 521.8306, 32.67748, 0, 0, 0),
 (25485, 0, 24, 1588.915, 506.6923, 32.80248, 0, 0, 0),
-(25485, 0, 25, 1588.915, 506.6923, 32.80248, 0, 0, 1),
+(25485, 0, 25, 1588.915, 506.6923, 32.80248, 0, 1, 1),
 -- Pathing for Volatile Fiend Entry: 25851
-(25851, 0, 0, 1697.917, 502.315, 86.48821, 0, 0, 5), -- spawnpoint - hack due to movementtype change and waypoint script execution delay
-(25851, 0, 1, 1697.917, 502.315, 86.48821, 0, 0, 5), -- spawnpoint - hack due to movementtype change and waypoint script execution delay
+(25851, 0, 1, 1676.9564, 547.49713, 85.14562, 0, 0, 0),
 (25851, 0, 2, 1666.52, 562.1425, 85.08298, 0, 0, 0),
 (25851, 0, 3, 1650.734, 568.0248, 85.12753, 0, 0, 0),
 (25851, 0, 4, 1632.968, 584.8542, 84.9715, 0, 0, 0),
@@ -651,7 +649,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (25851, 0, 22, 1572.274, 537.1907, 38.79183, 0, 0, 0),
 (25851, 0, 23, 1583.751, 521.8306, 32.67748, 0, 0, 0),
 (25851, 0, 24, 1588.915, 506.6923, 32.80248, 0, 0, 0),
-(25851, 0, 25, 1588.915, 506.6923, 32.80248, 0, 0, 1);
+(25851, 0, 25, 1588.915, 506.6923, 32.80248, 0, 1, 1);
 
 -- shield orb
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
