@@ -2594,7 +2594,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- (@CGUID+1164, 14943, 30, 633.803, -299.425, 30.1336, 3.46924, 490, 490, 0, 0, 0, 0), -- Guse's War Rider
 
 -- TBC+
-UPDATE `creature` SET `spawnMask` = 7 WHERE `map` = 30;
+UPDATE `creature` SET `spawnMask` = 1 WHERE `map` = 30;
 
 -- WOTLK+
 
@@ -3129,7 +3129,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+999, 177411, 30, -1202.805, -271.5985, 72.58054, 0.3577935, 0, 0, 0, 0, 0, 0, 100, 1); -- Brazier -> Spawns Campfire 2061
 
 -- TBC+
-UPDATE `gameobject` SET `spawnMask` = 7 WHERE `map` = 30;
+UPDATE `gameobject` SET `spawnMask` = 1 WHERE `map` = 30;
 
 -- WOTLK+
 
