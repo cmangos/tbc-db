@@ -819,7 +819,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (24781, 0, 14, 231.2563, -149.6031, -8.246367, 100, 0, 0),
 (24781, 0, 15, 231.4618, -135.4703, -8.325504, 100, 0, 0),
 (24781, 0, 16, 231.7793, -135.2323, -2.05356, 100, 0, 2478101),
-(24781, 0, 17, 231.7793, -135.2578, -9.328548, 100, 0, 1); -- Despawn
+(24781, 0, 17, 231.7793, -135.2578, -9.328548, 100, 1, 1); -- Despawn
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+14, 0, 0, 1, 16, 0, 0, '32567'), -- Invisible Stalker
