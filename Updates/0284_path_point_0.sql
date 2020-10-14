@@ -401,7 +401,6 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 -- 2020-10-14 18:29:31 Table `creature_movement_template` has invalid point 0 for entry 23900 in path 10. Skipping.`
 -- 2020-10-14 18:29:31 Table `creature_movement_template` has invalid point 0 for entry 23900 in path 11. Skipping.`
 -- 2020-10-14 18:29:31 Table `creature_movement_template` has invalid point 0 for entry 19435 in path 0. Skipping.`
--- 2020-10-14 18:29:31 Table `creature_movement_template` has invalid point 0 for entry 25112 in path 0. Skipping.`
 -- 2020-10-14 18:29:31 Table `creature_movement_template` has invalid point 0 for entry 21426 in path 0. Skipping.`
 -- 2020-10-14 18:29:31 Table `creature_movement_template` has invalid point 0 for entry 22406 in path 3. Skipping.`
 -- 2020-10-14 18:29:31 Table `creature_movement_template` has invalid point 0 for entry 22406 in path 2. Skipping.`
@@ -422,7 +421,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 -- 2020-10-14 18:29:31 Table `creature_movement_template` has invalid point 0 for entry 19881 in path 2. Skipping.`
 -- 2020-10-14 18:29:31 Table `creature_movement_template` has invalid point 0 for entry 19881 in path 1. Skipping.`
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (23899,20845,10182,23900,19435,25112,21426,22406,22405,22404,21170,22403,22402,22401,21182,19881);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (23899,20845,10182,23900,19435,21426,22406,22405,22404,21170,22403,22402,22401,21182,19881);
 DELETE FROM `creature_movement_template` WHERE `entry` = 20535; -- Lieutenant Drake (1) Heroic Templates never hold path data
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`, `comment`) VALUES
 (10182, 0, 1, -3212.06, 2217.37, 33.8237, 100, 0, 0, NULL),
@@ -1326,13 +1325,6 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (23900, 11, 23, -3900.43, -4621.01, 9.22834, 0, 0, 0, ''),
 (23900, 11, 24, -3905.63, -4626.81, 9.28205, 0, 0, 0, ''),
 (23900, 11, 25, -3910.75, -4632.53, 9.12602, 0, 0, 0, ''),
-(23900, 11, 26, -3915.05, -4637.33, 8.99499, 5.37, 1000, 3, ''),
-(25112, 0, 1, 12730.3, -6917.3, 12.2406, 100, 0, 0, NULL),
-(25112, 0, 2, 12732.5, -6906.65, 12.2406, 100, 0, 0, NULL),
-(25112, 0, 3, 12745, -6905.25, 12.2757, 100, 0, 0, NULL),
-(25112, 0, 4, 12754.3, -6913.14, 12.2757, 100, 0, 0, NULL),
-(25112, 0, 5, 12751.8, -6922.52, 12.2757, 100, 0, 0, NULL),
-(25112, 0, 6, 12745.1, -6926.08, 12.2757, 100, 0, 0, NULL),
-(25112, 0, 7, 12737.3, -6925.34, 12.2757, 100, 0, 0, NULL);
+(23900, 11, 26, -3915.05, -4637.33, 8.99499, 5.37, 1000, 3, '');
 
 
