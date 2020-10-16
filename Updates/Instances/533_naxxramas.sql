@@ -1043,7 +1043,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (16776, 533, 16065, 256, 0), -- Spirit of Blaumeux -> Lady Blaumeux
 (16777, 533, 16063, 256, 0), -- Spirit of Zeliek -> Sir Zeliek
 (16778, 533, 16064, 256, 0), -- Spirit of Korth'azz -> Thane Korth'azz
-(16803, 533, 16061, 7, 0); -- Deathknight Understudy -> Instructor Razuvious
+(16803, 533, 16061, 7+16384, 0); -- Deathknight Understudy -> Instructor Razuvious
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 4075, 533, 2862.24, -3221.67, 274.281, 6.15288, 3600, 3600, 5, 0, 0, 1), -- Rat
