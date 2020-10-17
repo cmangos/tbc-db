@@ -2488,16 +2488,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+700, @CGUID+699, 1679), -- Hungering Soul Fragment -> Hungering Soul Fragment
 (@CGUID+694, @CGUID+693, 1679), -- Hungering Soul Fragment -> Hungering Soul Fragment
 (@CGUID+698, @CGUID+697, 1679), -- Hungering Soul Fragment -> Hungering Soul Fragment
-(@CGUID+701, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
-(@CGUID+695, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
-(@CGUID+699, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
-(@CGUID+693, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
-(@CGUID+697, @CGUID+93, 1024), -- Hungering Soul Fragment -> Reliquary of the Lost
-(@CGUID+688, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
-(@CGUID+685, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
-(@CGUID+684, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
-(@CGUID+686, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
-(@CGUID+687, @CGUID+93, 1024), -- Suffering Soul Fragment -> Reliquary of the Lost
 -- Mother Shahraz
 (@CGUID+263, @CGUID+262, 1167), -- Temple Concubine -> Temple Concubine
 (@CGUID+264, @CGUID+262, 1167), -- Temple Concubine -> Temple Concubine
