@@ -5125,7 +5125,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Loirea Galerunner (22237) - NSR
 -- Silvermoon Fireeater (22804) - NSR
 -- Black Cat
-('2281601','22816','6','0','100','0','0','0','0','0','0','0','11','39477','1','39','0','0','0','0','0','0','0','0','Black Cat - Cast Back Luck on Death'),
+('2281601','22816','6','0','100','0','0','0','0','0','0','0','11','39477','13','39','0','0','0','0','0','0','0','0','Black Cat - Cast Back Luck on Death'),
 -- Morshelz Copperpinch (23011) - NSR
 -- Hotoppik Copperpinch (23012) - NSR
 -- Bergrisst (23619) - SCRIPTED IN L70ETC CONCERT
