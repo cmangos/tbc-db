@@ -85,10 +85,11 @@ UPDATE gameobject_template SET data8=1221 WHERE entry IN (68865, 21530, 21277);
 -- Thaurissan Relic - original tbc-db value 0, classic-db (and classic sniff) value 3702 - the quest which involves actually using this object is 3701
 UPDATE gameobject_template SET data1=3701 WHERE entry=153556;
 
-UPDATE `gameobject` SET `position_z` = 133.60325 WHERE `guid` = 132224 AND `id` = 176589; -- Black Lotus Sniff Z = -61.28984
-
 -- Make object 181444 (Kel'Thuzad Trigger) despawnable on usage
 UPDATE gameobject_template SET data4=1 WHERE entry=181444;
+
+-- Disable a single spawn of GO (Black Lotus) as it is spawned under map and would break pooling in its zone
+UPDATE gameobject SET spawntimesecsmin=-3600, spawntimesecsmax=-3600 WHERE guid=86503 AND id=176589;
 
 -- Ritual Candle Aura
 UPDATE gameobject_template SET `data8`=1 WHERE entry=179688; -- add serverside attribute so that it's not visible to players
