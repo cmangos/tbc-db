@@ -1785,7 +1785,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anne Summers (23521) - NSR
 -- Arlen Lochlan (23522) - NSR
 -- Brother Cartwright (23525) - NSR
--- Shade of the Horseman (23543) - NSR
 -- Neill Ramstein (23558) - NSR
 -- Becan Barleybrew (23627) - NSR
 -- Daran Thunderbrew (23628) - NSR
@@ -1799,7 +1798,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thunderbrew Festive Keg (23702) - NSR
 -- Dark Iron Guzzler (23709) - NSR
 -- Belbi Quikswitch (23710) - NSR
--- Touring Orphan (23712) - NSR
 -- Self-Turning and Oscillating Utility Target (24108) - NSR
 -- Flynn Firebrew (24364) - NSR
 -- Racing Ram (24462) - NSR
@@ -1808,7 +1806,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Brewfest Reveler
 ('2448401','24484','1','0','75','1','3000','15000','12000','21000','0','0','10','92','153','1','0','0','0','0','0','0','0','0','Brewfest Reveler - Random Emotes OOC'),
 ('2448402','24484','22','0','100','1','35','0','0','0','0','0','11','41586','6','0','0','0','0','0','0','0','0','0','Brewfest Reveler - Cast Brewfest Toast on Receive Drink Emote'),
--- Costumed Orphan Matron (24519) - NSR
 -- Ipfelkofer Ironkeg (24710) - NSR
 -- Dun Morogh Flame Warden (25895) - NSR
 -- Fire Eater (25962) - NSR
@@ -2889,10 +2886,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elwynn Pink Elekk (23507) - NSR
 -- Thunderbrew Apprentice (23510) - NSR
 -- Gordok Brew Apprentice (23511) - NSR
--- Shade of the Horseman (23543) - NSR
--- Touring Orphan (23712) - NSR
 -- Brewfest Reveler (24484) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Costumed Orphan Matron (24519) - NSR
 -- Transport Bot D3 (24832) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Elwynn Forest Flame Warden (25898) - NSR
@@ -3219,10 +3213,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blood Elf Reveler (23045) - HOLIDAY SPECIFIC BUFFS FROM DOING EMOTES (NEED MORE INFORMATION)
 -- Eversong Pink Elekk (23531) - NSR
 -- T'chali's Voodoo Brewery Apprentice (23533) - NSR
--- Shade of the Horseman (23543) - NSR
--- Traveling Orphan
-('2397101','23971','1','0','100','1','60000','240000','180000','300000','0','0','5','11','0','0','0','0','0','0','0','0','0','0','Traveling Orphan - Laugh Emote OOC'),
--- Masked Orphan Matron (23973) - NSR
 -- Brewfest Reveler (24484) - SCRIPTED IN ANOTHER ZONE
 -- Drohn's Distillery Apprentice (24501) - NSR
 -- Eversong Woods Flame Keeper (25931) - NSR
@@ -5124,8 +5114,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Arena Promoter (22101) - NSR
 -- Loirea Galerunner (22237) - NSR
 -- Silvermoon Fireeater (22804) - NSR
--- Black Cat
-('2281601','22816','6','0','100','0','0','0','0','0','0','0','11','39477','13','39','0','0','0','0','0','0','0','0','Black Cat - Cast Back Luck on Death'),
 -- Morshelz Copperpinch (23011) - NSR
 -- Hotoppik Copperpinch (23012) - NSR
 -- Bergrisst (23619) - SCRIPTED IN L70ETC CONCERT
@@ -7183,9 +7171,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wonderform Operator (15732) - NSR
 -- Steamwheedle Bruiser (16096) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Mehlar Dawnblade (17099) - NSR
--- Shade of the Horseman (23543) - NSR
--- Traveling Orphan (23971) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Masked Orphan Matron (23973) - NSR
 -- Deathguard Florence (24491) - NSR
 -- Snack-O-Matic IV (24934) - NSR
 -- Vend-O-Tron D-Luxe (24935) - NSR
@@ -9602,9 +9587,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Great Purple Elekk (20850) - NSR
 -- Crusty Bob (21376) - NSR
 -- Arena Promoter (22101) - NSR
--- Shade of the Horseman (23543) - NSR
--- Touring Orphan (23712) - NSR
--- Costumed Orphan Matron (24519) - NSR
 -- Azuremyst Isle Flame Warden (25888) - NSR
 -- Fire Eater (25962) - NSR
 -- Paymaster (26075) - NSR
@@ -11146,7 +11128,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2350401','23504','11','0','100','0','0','0','0','0','0','0','5','28','0','0','0','0','0','0','0','0','0','0','Brewfest Setup Crew - Working Emote on Spawn'),
 -- Gordok Brew Apprentice (23511) - NSR
 -- T'chali's Voodoo Brewery Apprentice (23533) - NSR
--- Shade of the Horseman (23543) - NSR
 -- Uta Roughdough (23603) - NSR
 -- Agnes Farwithers (23604) - NSR
 -- Bron (23605) - NSR
@@ -11156,9 +11137,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Drunken Brewfest Reveler (23698) - NSR
 -- Gordok Festive Keg (23706) - NSR
 -- Dark Iron Guzzler (23709) - NSR
--- Traveling Orphan (23971) - SCRIPTED IN ANOTHER ZONE
--- Masked Orphan Matron
-('2397301','23973','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Masked Orphan Matron - Flee at 15% HP'),
 -- Self-Turning and Oscillating Utility Target (24108) - NSR
 -- Drohn's Distillery Festive Keg (24372) - NSR
 -- T'chali's Voodoo Brew Festive Keg (24373) - NSR
@@ -30713,6 +30691,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- |   Special Game Event Scripts   |
 -- ==================================
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
+-- Hallow's End
+-- Black Cat 22816
+('2281601','22816','6','0','100','0','0','0','0','0','0','0','11','39477','13','39','0','0','0','0','0','0','0','0','Black Cat - Cast Bad Luck on Death'),
+-- Shade of the Horseman 23543 - npc_shade_of_the_horseman
+-- Touring Orphan 23712 - npc_orphan
+-- Traveling Orphan 23971 - npc_orphan
+-- Masked Orphan Matron 23973 - npc_orphan_matron
+-- Costumed Orphan Matron 24519 - npc_orphan_matron
+
 -- Lunar Festival
 ('1588201','15882','1','0','100','0','0','0','0','0','0','0','11','26347','0','1','0','0','0','0','0','0','0','0','Pat''s Firework Guy - RED'),
 ('1588301','15883','1','0','100','0','0','0','0','0','0','0','11','26349','0','1','0','0','0','0','0','0','0','0','Pat''s Firework Guy - YELLOW'),
