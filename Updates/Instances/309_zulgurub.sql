@@ -14,6 +14,37 @@ SET @PGUID := 46700; -- pools
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(@CGUID+130, 1, -11835.700195, -1610.337646, 40.745636, 0, 0, 0),
+(@CGUID+130, 2, -11843.541992, -1594.495361, 40.751762, 5.385863, 30000, 0),
+(@CGUID+130, 3, -11835.700195, -1610.337646, 40.745636, 0, 0, 0),
+(@CGUID+130, 4, -11833.859375, -1669.224609, 37.000687, 0, 0, 0),
+(@CGUID+130, 5, -11833.910156, -1687.797241, 40.745869, 0, 0, 0),
+(@CGUID+130, 6, -11839.220703, -1702.403320, 40.748905, 0, 0, 0),
+(@CGUID+130, 7, -11827.687500, -1693.946289, 40.747974, 0, 0, 0),
+(@CGUID+130, 8, -11795.183594, -1693.995483, 52.903801, 0, 0, 0),
+(@CGUID+130, 9, -11791.017578, -1684.056519, 52.883823, 0, 0, 0),
+(@CGUID+130, 10, -11805.194336, -1673.667969, 52.919411, 0.7853981, 33000, 1134001),
+(@CGUID+130, 11, -11791.017578, -1684.056519, 52.883823, 0, 0, 0),
+(@CGUID+130, 12, -11795.183594, -1693.995483, 52.903801, 0, 0, 0),
+(@CGUID+130, 13, -11827.687500, -1693.946289, 40.747974, 0, 0, 0),
+(@CGUID+130, 14, -11839.220703, -1702.403320, 40.748905, 0, 0, 0),
+(@CGUID+130, 15, -11833.910156, -1687.797241, 40.745869, 0, 0, 0),
+(@CGUID+130, 16, -11833.859375, -1669.224609, 37.000687, 0, 0, 0),
+(@CGUID+131, 1, -11738.025391, -1659.748291, 36.999336, 0, 0, 0),
+(@CGUID+131, 2, -11742.348633, -1606.971558, 40.747501, 0, 0, 0),
+(@CGUID+131, 3, -11737.596680, -1593.075928, 40.752407, 4.262742, 30000, 0),
+(@CGUID+131, 4, -11744.348633, -1606.971558, 40.747501, 0, 0, 0),
+(@CGUID+131, 5, -11740.620117, -1627.335815, 37.001595, 0, 0, 0),
+(@CGUID+131, 6, -11738.025391, -1659.748291, 36.999336, 0, 0, 0),
+(@CGUID+131, 7, -11739.377930, -1681.274414, 40.739235, 100, 1000, 0),
+(@CGUID+131, 8, -11740.332031, -1692.514404, 40.748524, 100, 1000, 0),
+(@CGUID+131, 9, -11770.084961, -1691.659302, 52.917057, 0, 0, 0),
+(@CGUID+131, 10, -11780.092773, -1685.940063, 52.887684, 0, 0, 0),
+(@CGUID+131, 11, -11769.211914, -1670.690430, 52.920387, 2.3001194, 60000, 1134002),
+(@CGUID+131, 12, -11780.092773, -1685.940063, 52.887684, 0, 0, 0),
+(@CGUID+131, 13, -11770.084961, -1691.659302, 52.917057, 0, 0, 0),
+(@CGUID+131, 14, -11740.332031, -1692.514404, 40.748524, 0, 0, 0),
+(@CGUID+131, 15, -11739.377930, -1681.274414, 40.739235, 0, 0, 0),
 (@CGUID+169, 1, -12244.9, -1419.02, 130.601, 0, 0, 0),
 (@CGUID+169, 2, -12264.1, -1424.68, 130.601, 0, 0, 0),
 (@CGUID+169, 3, -12278.6, -1443.49, 130.601, 0, 0, 0),
@@ -270,6 +301,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+193, 25, -12124.5, -1817.67, 80.1857, 0, 0, 0),
 (@CGUID+193, 26, -12127.8, -1817.84, 80.5708, 0, 0, 0),
 (@CGUID+193, 27, -12144.6, -1818.65, 85.9227, 0, 0, 0),
+(@CGUID+253, 1, -11741.298828, -1587.655029, 40.752773, 100, 0, 0),
+(@CGUID+253, 2, -11738.204102, -1695.299194, 40.751648, 100, 0, 0),
+(@CGUID+254, 1, -11835.872070, -1593.121582, 40.749565, 100, 0, 0),
+(@CGUID+254, 2, -11833.505859, -1698.850852, 40.749474, 100, 0, 0),
+(@CGUID+281, 1, -11839.320703, -1702.403320, 40.748905, 100, 5000, 1135902),
+(@CGUID+282, 2, -11732.525391, -1693.093018, 40.746841, 100, 5000, 1135904),
 (@CGUID+286, 1, -11756.2, -1888.26, 55.7727, 2.16531, 0, 0),
 (@CGUID+286, 2, -11760.3, -1900.44, 56.4305, 4.55684, 0, 0),
 (@CGUID+286, 3, -11756.7, -1911.09, 56.6341, 5.27548, 0, 0),
@@ -419,7 +456,23 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+814, 9, -11933.9, -1842.97, 57.176, 6.24913, 0, 0),
 (@CGUID+814, 10, -11922.4, -1843.36, 58.4145, 6.24913, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(11359, 1, 1, -11833.910156, -1687.797241, 40.745869, 100, 0, 0),
+(11359, 1, 2, -11833.859375, -1669.224609, 37.000687, 100, 0, 0),
+(11359, 1, 3, -11835.700195, -1610.337646, 40.745636, 100, 0, 0),
+(11359, 1, 4, -11843.541992, -1594.495361, 40.751762, 100, 0, 1135901),
+(11359, 2, 1, -11835.700195, -1610.337646, 40.745636, 100, 0, 0),
+(11359, 2, 2, -11833.859375, -1669.224609, 37.000687, 100, 0, 0),
+(11359, 2, 3, -11833.910156, -1687.797241, 40.745869, 100, 0, 0),
+(11359, 2, 4, -11839.220703, -1702.403320, 40.748905, 100, 0, 1135902),
+(11359, 3, 1, -11739.369141, -1683.157837, 40.745827, 100, 0, 0),
+(11359, 3, 2, -11740.111328, -1622.715454, 37.001690, 100, 0, 0),
+(11359, 3, 3, -11742.010742, -1606.839600, 40.745846, 100, 0, 0),
+(11359, 3, 4, -11737.790039, -1593.216675, 40.750420, 100, 0, 1135903),
+(11359, 4, 1, -11742.034180, -1606.073975, 40.748543, 100, 0, 0),
+(11359, 4, 2, -11739.069336, -1668.112915, 36.996002, 100, 0, 0),
+(11359, 4, 3, -11739.987305, -1681.579712, 40.750183, 100, 0, 0),
+(11359, 4, 4, -11732.525391, -1693.093018, 40.746841, 100, 0, 1135904);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+127, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Blood Priest
@@ -538,6 +591,29 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15114, 0, 0, 1, 16, 0, 0, '8876'); -- Gahz'ranka
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+-- Hakkar temple northern soulflayer pack
+(@CGUID+270, @CGUID+282, 1539), -- Son of Hakkar -> Soulflayer
+(@CGUID+271, @CGUID+282, 1539), -- Son of Hakkar -> Soulflayer
+
+-- Hakkar temple northern troll pack
+(@CGUID+555, @CGUID+131, 1539), -- Hakkari Priest -> Hakkari Blood Priest
+(@CGUID+278, @CGUID+131, 1539), -- Soulflayer -> Hakkari Blood Priest
+(@CGUID+242, @CGUID+131, 1539), -- Gurubashi Champion -> Hakkari Blood Priest
+(@CGUID+556, @CGUID+131, 1539), -- Hakkari Priest -> Hakkari Blood Priest
+(@CGUID+279, @CGUID+131, 1539), -- Soulflayer -> Hakkari Blood Priest
+
+-- Hakkar temple southern soulflayer pack
+(@CGUID+268, @CGUID+281, 1539), -- Son of Hakkar -> Soulflayer
+(@CGUID+269, @CGUID+281, 1539), -- Son of Hakkar -> Soulflayer
+
+-- Hakkar temple southern troll pack
+(@CGUID+155, @CGUID+130, 1539), -- Gurubashi Axe Thrower -> Hakkari Blood Priest
+(@CGUID+276, @CGUID+130, 1539), -- Soulflayer -> Hakkari Blood Priest
+(@CGUID+110, @CGUID+130, 1539), -- Hakkari Shadowcaster -> Hakkari Blood Priest
+(@CGUID+571, @CGUID+130, 1539), -- Hakkari Witch Doctor -> Hakkari Blood Priest
+(@CGUID+263, @CGUID+130, 1539), -- Son of Hakkar -> Hakkari Blood Priest
+(@CGUID+156, @CGUID+130, 1539), -- Gurubashi Axe Thrower -> Hakkari Blood Priest
+
 (@CGUID+132, @CGUID+593, 7), -- Zealot Lor'Khan -> High Priest Thekal
 (@CGUID+133, @CGUID+593, 7), -- Zealot Zath -> High Priest Thekal
 (@CGUID+306, @CGUID+593, 7), -- Zulian Tiger -> High Priest Thekal
@@ -678,8 +754,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+127, 11340, 309, -11787.1, -1666.45, 21.2324, 4.72984, 7200, 7200, 0, 0, 0, 0), -- Hakkari Blood Priest
 (@CGUID+128, 11340, 309, -11806.8, -1629.93, 21.2326, 3.52556, 7200, 7200, 0, 0, 0, 0), -- Hakkari Blood Priest
 (@CGUID+129, 11340, 309, -11771.9, -1618.82, 21.2208, 4.29351, 7200, 7200, 0, 0, 0, 0), -- Hakkari Blood Priest
-(@CGUID+130, 11340, 309, -11835, -1689.55, 40.7472, 1.19462, 7200, 7200, 5, 0, 0, 1), -- Hakkari Blood Priest
-(@CGUID+131, 11340, 309, -11739.7, -1669.73, 36.9982, 1.60711, 7200, 7200, 5, 0, 0, 1), -- Hakkari Blood Priest
+(@CGUID+130, 11340, 309, -11835, -1689.55, 40.7472, 1.19462, 7200, 7200, 0, 0, 0, 2), -- Hakkari Blood Priest
+(@CGUID+131, 11340, 309, -11739.7, -1669.73, 36.9982, 1.60711, 7200, 7200, 0, 0, 0, 2), -- Hakkari Blood Priest
 (@CGUID+132, 11347, 309, -11702.6, -1992.61, 62.0147, 5.02655, 7200, 7200, 0, 0, 0, 0), -- Zealot Lor'Khan
 (@CGUID+133, 11348, 309, -11699.3, -1992.57, 61.9979, 4.43314, 7200, 7200, 0, 0, 0, 0), -- Zealot Zath
 (@CGUID+134, 11350, 309, -11882.7, -1316.07, 78.2369, 3.15905, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Axe Thrower
@@ -732,8 +808,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+181, 11352, 309, -11954.2, -1805.99, 53.222, 1.51931, 7200, 7200, 5, 0, 0, 2), -- Gurubashi Berserker
 (@CGUID+182, 11352, 309, -12329.9, -1870.84, 130.349, 0.978481, 7200, 7200, 5, 0, 0, 2), -- Gurubashi Berserker
 (@CGUID+183, 11352, 309, -12101, -1478.76, 128.789, 0.171365, 7200, 7200, 5, 0, 0, 2), -- Gurubashi Berserker
-(@CGUID+184, 11352, 309, -11767.9, -1581.04, 21.1237, 3.12374, 7200, 7200, 5, 0, 0, 1), -- Gurubashi Berserker
-(@CGUID+185, 11352, 309, -11814.6, -1581.56, 21.1734, 0.382538, 7200, 7200, 5, 0, 0, 1), -- Gurubashi Berserker
+(@CGUID+184, 11352, 309, -11767.9, -1581.04, 21.1237, 1.5707, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Berserker
+(@CGUID+185, 11352, 309, -11814.6, -1581.56, 21.1734, 1.5707, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Berserker
 (@CGUID+186, 11352, 309, -11842.7, -1640.89, 21.2108, 3.40339, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Berserker
 (@CGUID+187, 11352, 309, -11842, -1655.23, 21.2108, 2.94961, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Berserker
 (@CGUID+188, 11352, 309, -11871.3, -1811.38, 51.1542, 3.15686, 7200, 7200, 5, 0, 0, 2), -- Gurubashi Berserker
@@ -801,8 +877,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+250, 11356, 309, -12284, -1891.46, 131.061, 2.51327, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Champion
 (@CGUID+251, 11356, 309, -12251.9, -1959.7, 134.07, 0.925025, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Champion
 (@CGUID+252, 11356, 309, -12258.5, -1954.66, 131.734, 0.820305, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Champion
-(@CGUID+253, 11357, 309, -11742.7, -1620.51, 36.9983, 1.59794, 7200, 7200, 5, 0, 0, 1), -- Son of Hakkar
-(@CGUID+254, 11357, 309, -11834.4, -1667.85, 36.9993, 1.51519, 7200, 7200, 5, 0, 0, 1), -- Son of Hakkar
+(@CGUID+253, 11357, 309, -11742.7, -1620.51, 36.9983, 1.59794, 20, 20, 0, 0, 0, 2), -- Son of Hakkar (Hakkar temple northern, fast respawn intentional)
+(@CGUID+254, 11357, 309, -11834.4, -1667.85, 36.9993, 1.51519, 20, 20, 0, 0, 0, 2), -- Son of Hakkar (Hakkar temple southern, fast respawn intentional)
 (@CGUID+255, 11357, 309, -11778.4, -1670.83, 21.2324, 1.16937, 7200, 7200, 0, 0, 0, 0), -- Son of Hakkar
 (@CGUID+256, 11357, 309, -11795.4, -1670.86, 21.2324, 2.28638, 7200, 7200, 0, 0, 0, 0), -- Son of Hakkar
 (@CGUID+257, 11357, 309, -11712.7, -1699.62, 19.8865, 4.77213, 7200, 7200, 5, 0, 0, 1), -- Son of Hakkar
@@ -829,8 +905,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+278, 11359, 309, -11741.8, -1679.3, 40.6688, 1.60721, 7200, 7200, 5, 0, 0, 1), -- Soulflayer
 (@CGUID+279, 11359, 309, -11736.9, -1679.12, 40.6699, 1.60705, 7200, 7200, 5, 0, 0, 1), -- Soulflayer
 (@CGUID+280, 11359, 309, -11753.1, -1704.21, 21.1275, 0.047909, 7200, 7200, 5, 0, 0, 1), -- Soulflayer
-(@CGUID+281, 11359, 309, -11839.1, -1697.36, 40.7492, 1.72169, 7200, 7200, 5, 0, 0, 1), -- Soulflayer
-(@CGUID+282, 11359, 309, -11739.1, -1674.18, 37.5981, 1.83708, 7200, 7200, 5, 0, 0, 1), -- Soulflayer
+(@CGUID+281, 11359, 309, -11839.1, -1697.36, 40.7492, 1.72169, 7200, 7200, 0, 0, 0, 2), -- Soulflayer
+(@CGUID+282, 11359, 309, -11739.1, -1674.18, 37.5981, 1.83708, 7200, 7200, 0, 0, 0, 2), -- Soulflayer
 (@CGUID+283, 11360, 309, -11686, -1888.25, 57.0057, 2.93215, 7200, 7200, 0, 0, 0, 0), -- Zulian Cub
 (@CGUID+284, 11360, 309, -11718.4, -1917.09, 55.7326, 2.57413, 7200, 7200, 5, 0, 0, 1), -- Zulian Cub
 (@CGUID+285, 11360, 309, -11805.8, -1878.27, 45.4985, 5.96903, 7200, 7200, 0, 0, 0, 0), -- Zulian Cub
@@ -1595,7 +1671,28 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- DBSCRIPTS
 -- =========
 
--- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1134001,1134002,1135901,1135902,1135903,1135904);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1134001, 1, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - kneel'),
+(1134001, 1, 30000, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - stand up'),
+(1134001, 2, 30000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - salute Hakkar'),
+
+(1134002, 1, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - kneel'),
+(1134002, 1, 57000, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - stand up'),
+(1134002, 2, 57000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - salute Hakkar'),
+
+(1135901, 1000, 20, 1, 5, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 1'),
+(1135901, 45000, 20, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 2'),
+
+(1135902, 1000, 20, 1, 5, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 2'),
+(1135902, 40000, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 1'),
+
+(1135903, 1000, 20, 1, 5, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 3'),
+(1135903, 30000, 20, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 4'),
+
+(1135904, 1000, 20, 1, 5, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 4'),
+(1135904, 35000, 20, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 3');
+
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
