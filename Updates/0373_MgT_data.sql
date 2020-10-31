@@ -17,3 +17,8 @@ UPDATE creature_template SET SpeedRun=7/7,SpeedWalk=2.5/2.5 WHERE entry IN(24559
 UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask&~(33554432) WHERE entry IN(24664,24857);
 UPDATE spell_target_position SET target_orientation=4.79965 WHERE Id IN(44218);
 
+-- trash
+
+-- Brightscale Wyrm 24761,25545
+UPDATE `creature_template` SET `InhabitType` = 4 WHERE `entry` = 25545;
+
