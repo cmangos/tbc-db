@@ -491,6 +491,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+338, 2, 1758.39, 570.5671, 85.12949, 0, 0, 0),
 (@CGUID+338, 3, 1752.362, 564.8392, 85.1283, 0, 0, 0),
 (@CGUID+338, 4, 1758.39, 570.5671, 85.12949, 0, 0, 0),
+-- Gauntlet Imp Trigger
 (@CGUID+342, 1, 1697.917, 502.315, 86.48821, 1.658063, 10000, 2584801);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (25485,25502,25319); -- nonstatic spawns
@@ -936,6 +937,10 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+314, @CGUID+312, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
 (@CGUID+315, @CGUID+312, 1167), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
 (@CGUID+316, @CGUID+312, 1167), -- Shadowsword Commander -> Shadowsword Manafiend
+-- Gauntlet Spawn Control
+(@CGUID+342, @CGUID+316, 144), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+343, @CGUID+316, 144), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+344, @CGUID+316, 144), -- Gauntlet Imp Trigger -> Shadowsword Commander
 -- Shadowsword Group #5
 (@CGUID+318, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
 (@CGUID+319, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
@@ -1308,7 +1313,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+338, 25837, 580, 1, 1752.243, 564.6907, 85.20719, 0.7629684, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Commander PATH 2
 -- Imp Triggers not grouped "Imp spawning starts on spawn."
 (@CGUID+339, 25848, 580, 1, 1589.505, 514.9243, 33.22498, 2.164208, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "bottom - This is the trigger imps path to"
-(@CGUID+340, 25848, 580, 1, 1680.382, 542.687, 85.27053, 2.007129, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "When reached imp spawning stops"
+(@CGUID+340, 25848, 580, 1, 1680.382, 542.687, 85.27053, 2.007129, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger
 (@CGUID+341, 25848, 580, 1, 1684.981, 507.9774, 88.1204, 1.151917, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
 (@CGUID+342, 25848, 580, 1, 1697.917, 502.315, 86.48821, 1.658063, 7200, 7200, 0, 0, 0, 2), -- Gauntlet Imp Trigger "Spawner" every 10 seconds
 (@CGUID+343, 25848, 580, 1, 1698.092, 502.2403, 86.49195, 1.570796, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner" Summon Visual
