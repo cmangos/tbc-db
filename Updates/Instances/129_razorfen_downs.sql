@@ -162,7 +162,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (7355, 0, 0, 1, 16, 0, 0, '8876 12254'), -- Tuten'kash
 (7356, 0, 0, 1, 16, 0, 0, '12947'), -- Plaguemaw the Rotting
 (7357, 0, 0, 1, 16, 10, 0, NULL), -- Mordresh Fire Eye
-(7358, 0, 0, 1, 16, 0, 0, '12556'), -- Amnennar the Coldbringer
+(7358, 0, 0, 1, 16, 0, 0, NULL), -- Amnennar the Coldbringer
 (8516, 0, 0, 1, 16, 0, 0, '13326'), -- Belnistrasz
 (8567, 0, 0, 1, 16, 0, 0, '8876 12627'), -- Glutton
 (8662, 0, 0, 1, 16, 0, 0, NULL), -- Idol Oven Fire Target
