@@ -1322,23 +1322,23 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1179001,1179101,1371601,1371602,1371603,1353301);
+DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (1179001,1179101,1371601,1371602,1371603,1353301);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1179001, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Putridus Satyr - Cast Dark Channeling'),
 (1179101, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Putridus Trickster - Cast Dark Channeling'),
 
-(1371601, 3000, 0, 0, 0, 0, 0, 0, 0, 2000005649, 0, 0, 0, 0, 0, 0, 0, ''),
-(1371601, 4000, 9, @OGUID+62, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'summon book'),
-(1371601, 5000, 15, 21916, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Celebras Waiting'),
-(1371601, 6000, 0, 0, 0, 0, 0, 0, 0, 2000005650, 0, 0, 0, 0, 0, 0, 0, ''),
-(1371601, 7000, 0, 0, 0, 0, 0, 0, 0, 2000005651, 0, 0, 0, 0, 0, 0, 0, ''),
+(1371601, 3000, 0, 0, 0, 0, 0, 0, 0, 2000005649, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(1371601, 4000, 9, @OGUID+62, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - summon book'),
+(1371601, 5000, 15, 21916, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - cast Celebras Waiting'),
+(1371601, 6000, 0, 0, 0, 0, 0, 0, 0, 2000005650, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(1371601, 7000, 0, 0, 0, 0, 0, 0, 0, 2000005651, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
 
-(1371602, 1000, 15, 21950, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Recite Words of Celebras'),
-(1371602, 7000, 0, 0, 0, 0, 0, 0, 0, 2000005653, 0, 0, 0, 0, 0, 0, 0, ''),
+(1371602, 1000, 15, 21950, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - cast Recite Words of Celebras'),
+(1371602, 7000, 0, 0, 0, 0, 0, 0, 0, 2000005653, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
 
-(1371603, 1000, 29, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Add flags'),
-(1371603, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Stop WP movement'),
-(1371603, 1000, 3, 0, 700, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.06689, 'correct orient'),
+(1371603, 1000, 29, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Add flags Gossip Quest'),
+(1371603, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Stop WP movement'),
+(1371603, 1000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.06689, 'Celebras the Redeemed - correct orient'),
 
 (1353301, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spewed Larva - pause WP movement'),
 (1353301, 1000, 20, 1, 8, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Spewed Larva - movement changed to random'),
@@ -1353,26 +1353,31 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (178905, 0, 10, 13696, 60000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'summon Noxxious Scion'),
 (178905, 0, 10, 13696, 60000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'summon Noxxious Scion'),
 
-(178965, 0, 47, 3, 0, 0, 13716, 50, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'interrupt channeled spell (Celebras Waiting 21916)'),
-(178965, 0, 9, @OGUID+61, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'summon Celebras Blue Aura'),
-(178965, 1000, 0, 0, 0, 0, 0, 0, 0, 2000005652, 0, 0, 0, 0, 0, 0, 0, 'force Player to say'),
-(178965, 3000, 0, 0, 0, 0, 13716, 50, 7, 2000005652, 0, 0, 0, 0, 0, 0, 0, ''),
-(178965, 25000, 7, 7046, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Give quest completion');
+(178965, 0, 47, 3, 0, 0, 13716, 50, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Celebras interrupt channeled spell (Celebras Waiting 21916)'),
+(178965, 0, 9, @OGUID+61, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - summon Celebras Blue Aura'),
+(178965, 1000, 0, 0, 0, 0, 0, 0, 0, 2000005652, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - force Player to say'),
+(178965, 3000, 0, 0, 0, 0, 13716, 50, 7, 2000005652, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Celebras Say'),
+(178965, 3500, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Despawn Self on Use'); -- Not working at the moment, possibly requires core update
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+
+INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(21917, 25000, 7, 7046, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras Stone Trap - Give quest completion');
+
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM dbscripts_on_quest_start WHERE id=7046;
 INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(7046, 0, 0, 0, 0, 0, 0, 0, 0, 2000005646, 0, 0, 0, 0, 0, 0, 0, ''),
-(7046, 1000, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove flags'),
-(7046, 3000, 3, 0, 700, 0, 0, 0, 0, 0, 0, 0, 0, 654.905, 87.382, -86.8597, 5.06689, 'move'),
-(7046, 14000, 3, 0, 700, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.06689, 'correct orient'),
-(7046, 15000, 0, 0, 0, 0, 0, 0, 0, 2000005647, 0, 0, 0, 0, 0, 0, 0, ''),
-(7046, 17000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'movement changed to 2:waypoint'),
-(7046, 23000, 0, 0, 0, 0, 0, 0, 0, 2000005648, 0, 0, 0, 0, 0, 0, 0, '');
+(7046, 0, 0, 0, 0, 0, 0, 0, 0, 2000005646, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(7046, 1000, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Remove flags Quest Gossip'),
+(7046, 2000, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Set Run'),
+(7046, 3000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 654.905, 87.382, -86.8597, 5.06689, 'Celebras the Redeemed - move'),
+(7046, 14000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.06689, 'Celebras the Redeemed - correct orient'),
+(7046, 15000, 0, 0, 0, 0, 0, 0, 0, 2000005647, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(7046, 16000, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Set Walk'),
+(7046, 17000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - movement changed to 2:waypoint'),
+(7046, 23000, 0, 0, 0, 0, 0, 0, 0, 2000005648, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say');
 
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
