@@ -741,13 +741,13 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+11, 181557, 556, 3, 24.30001, 114.7062, 0.058363, 4.694937, 0, 0, -0.7132502, 0.7009096, 86400, 86400, 255, 1), -- Khorium Vein
 (@OGUID+12, 183050, 556, 3, -85.9132, 288.405, 26.4832, 5.24018, 0, 0, 0, 0, 90, 90, 100, 1), -- The Saga of Terokk
 (@OGUID+13, 183051, 556, 3, -161.007, 157.3161, 0.010762, 5.497789, 0, 0, -0.3826828, 0.9238798, 180, 180, 0, 1), -- Sethekk Cage
-(@OGUID+14, 181556, 556, 3, -196.522, 294.8371, 30.82897, 4.852017, 0, 0, -0.6560583, 0.7547102, 86400, 86400, 100, 1), -- Adamantite Deposit
+(@OGUID+14, 181556, 556, 3, -196.522003173828125, 294.837066650390625, 30.82897377014160156, -1.4311680793762207, 0, 0, -0.65605831146240234, 0.754710197448730468, 86400, 86400, 100, 1), -- Adamantite Deposit
 (@OGUID+15, 184189, 556, 3, -8.53784, -0.0184067, -1.0496, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
 (@OGUID+16, 184190, 556, 3, -8.53784, -0.0184067, -1.0496, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
 (@OGUID+17, 181569, 556, 3, -114.9933, 103.7295, 2.625687, 5.777041, 0, 0, -0.2503796, 0.9681478, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
 (@OGUID+18, 181569, 556, 3, -194.8327, 339.8233, 25.47767, 1.954769, 0, 0, 0.8290377, 0.5591928, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
 (@OGUID+19, 181569, 556, 3, -233.4064, 200.3593, 1.841906, 0.5585039, 0, 0, 0.2756367, 0.9612619, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
--- PLEASE RE-USE 20
+(@OGUID+20, 181569, 556, 3, -196.522003173828125, 294.837066650390625, 30.82897377014160156, -1.4311680793762207, 0, 0, -0.65605831146240234, 0.754710197448730468, 86400, 86400, 100, 1), -- Rich Adamantite Deposit
 (@OGUID+21, 185554, 556, 2, -87.5742, 287.856, 26.4832, 0.0877018, 0, 0, 0, 0, 86400, 86400, 100, 1), -- The Raven's Claw
 (@OGUID+22, 187372, 556, 3, 81.7578, 287.085, 26.6293, 3.15018, 0, 0, 0, 0, 1, 1, 100, 1), -- The Talon King's Coffer
 (@OGUID+23, 181278, 556, 3, 87.8129, 116.0283, 0.353684, 0.5934101, 0, 0, 0.2923708, 0.956305, 86400, 86400, 100, 1), -- Ancient Lichen
@@ -770,7 +770,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+40, 181556, 556, 3, -84.14491, 83.75132, 1.94966, 2.33874, 0, 0, 0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+41, 181556, 556, 3, -114.9933, 103.7295, 2.625687, 5.777041, 0, 0, -0.2503796, 0.9681478, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+42, 181556, 556, 3, -221.7319, 151.3826, 1.69546, 1.570796, 0, 0, 0.7071066, 0.7071069, 86400, 86400, 255, 1), -- Adamantite Deposit
-(@OGUID+43, 181556, 556, 3, -270.7051, 196.0014, -0.2808, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
+(@OGUID+43, 181556, 556, 3, -274.3609619140625, 195.8024749755859375, 3.654668092727661132, 2.268925428390502929, 0, 0, 0.906307220458984375, 0.422619491815567016, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+44, 181556, 556, 3, -225.3045, 195.8682, 21.8244, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+45, 181556, 556, 3, -206.6533, 295.6982, 40.5272, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+46, 181556, 556, 3, -100.6603, 273.1575, 23.1322, 3.560473, 0, 0, -0.9781475, 0.2079121, 86400, 86400, 255, 1), -- Adamantite Deposit
@@ -781,7 +781,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+51, 181569, 556, 3, 24.30001, 114.7062, 0.058363, 4.694937, 0, 0, -0.7132502, 0.7009096, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+52, 181569, 556, 3, -59.9727, 84.91, 1.11623, 2.84488, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+53, 181569, 556, 3, -84.14491, 83.75132, 1.94966, 2.33874, 0, 0, 0.9205046, 0.3907318, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
-(@OGUID+54, 181569, 556, 3, -270.7051, 196.0014, -0.2808, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
+(@OGUID+54, 181569, 556, 3, -274.3609619140625, 195.8024749755859375, 3.654668092727661132, 2.268925428390502929, 0, 0, 0.906307220458984375, 0.422619491815567016, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+55, 181569, 556, 3, -225.3045, 195.8682, 21.8244, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+56, 181569, 556, 3, -230.139, 291.997, 32.156, 1.65806, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
 (@OGUID+57, 181569, 556, 3, -206.6533, 295.6982, 40.5272, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Rich Adamantite Deposit
@@ -821,7 +821,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+91, 184940, 556, 2, -238.6028, 341.626, 27.06393, -1.64061, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
 (@OGUID+92, 184941, 556, 2, -238.6028, 341.626, 27.06393, -1.64061, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
 (@OGUID+93, 184940, 556, 2, -72.64229, 81.60601, 0.007203, 1.954769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+94, 184941, 556, 2, -72.64229, 81.60601, 0.007203, 1.954769, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
+(@OGUID+94, 184941, 556, 2, -72.64229, 81.60601, 0.007203, 1.954769, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
+(@OGUID+95, 181569, 556, 3, -221.7319, 151.3826, 1.69546, 1.570796, 0, 0, 0.7071066, 0.7071069, 86400, 86400, 255, 1); -- Rich Adamantite Deposit
 
 -- ======
 -- EVENTS
@@ -870,7 +871,9 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+51, 1, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #8'),
 (@PGUID+52, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #13'),
 (@PGUID+53, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #14'),
-(@PGUID+54, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #15');
+(@PGUID+54, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #15'),
+(@PGUID+55, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #16'),
+(@PGUID+56, 1, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #17');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+181, @PGUID+1, 0, 'Sethekk Halls - Nonstatic Critter'),
@@ -881,8 +884,6 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 (@CGUID+186, @PGUID+1, 0, 'Sethekk Halls - Nonstatic Critter');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+14, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit (181556)'),
-(@OGUID+42, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit (181556)'),
 (@OGUID+2, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+3, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
 (@OGUID+4, @PGUID+23, 0, 'Sethekk Halls - Anchient Lichen (181278)'),
@@ -964,7 +965,11 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+10, @PGUID+53, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #14'),
 (@OGUID+18, @PGUID+53, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #14'),
 (@OGUID+36, @PGUID+54, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #15'),
-(@OGUID+19, @PGUID+54, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #15');
+(@OGUID+19, @PGUID+54, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #15'),
+(@OGUID+14, @PGUID+55, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #16'),
+(@OGUID+20, @PGUID+55, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #16'),
+(@OGUID+42, @PGUID+56, 0, 'Sethekk Halls - Adamantite Deposit (181556) - #17'),
+(@OGUID+95, @PGUID+56, 0, 'Sethekk Halls - Rich Adamantite Deposit (181569) - #17');
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 (@PGUID+24, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #1'),
@@ -994,7 +999,12 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+48, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #5'),
 (@PGUID+49, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #6'),
 (@PGUID+50, @PGUID+21, 0, 'Sethekk Halls (Heroic) - Bound / Solid Adamantite Chest - #7'),
-(@PGUID+51, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #8');
+(@PGUID+51, @PGUID+21, 0, 'Sethekk Halls (Normal) - Bound / Solid Adamantite Chest - #8'),
+(@PGUID+52, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #13'),
+(@PGUID+53, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #14'),
+(@PGUID+54, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #15'),
+(@PGUID+55, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #16'),
+(@PGUID+56, @PGUID+22, 0, 'Sethekk Halls - Adamantite Deposit / Rich Adamantite Deposit - #17');
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
