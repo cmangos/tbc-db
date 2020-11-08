@@ -794,7 +794,7 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+51, 5, 'Auchenai Crypts - Master Ancient Lichen (181278) Pool'),
-(@PGUID+52, 4, 'Auchenai Crypts - Master Mineral Pool'),
+(@PGUID+52, 3, 'Auchenai Crypts - Master Mineral Pool'),
 (@PGUID+53, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #1'),
 (@PGUID+54, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #2'),
 (@PGUID+55, 1, 'Auchenai Crypts - Adamantite Deposit / Rich Adamantite Deposit - #3'),

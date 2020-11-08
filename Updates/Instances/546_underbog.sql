@@ -941,10 +941,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+90, 181556, 546, 3, 66.80, -203.41, 6.43, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
 -- (@OGUID+91,
 (@OGUID+92, 181556, 546, 3, -72.02172, -249.2874, -0.160408, 5.026549, 0, 0, -0.5877848, 0.8090174, 86400, 86400, 255, 1), -- Adamantite Deposit
--- (@OGUID+93,
+(@OGUID+93, 181569, 546, 3, -157.7457, -233.748, -3.594326, 5.253442, 0, 0, -0.4924231, 0.870356, 86400, 86400, 255, 1), -- Rich Adamantite Deposite
 (@OGUID+94, 181556, 546, 3, -157.7457, -233.748, -3.594326, 5.253442, 0, 0, -0.4924231, 0.870356, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+95, 181556, 546, 3, -98.63322, -297.4396, -4.551687, 4.66003, 0, 0, -0.7253742, 0.6883547, 86400, 86400, 255, 1), -- Adamantite Deposit
--- (@OGUID+96,
+(@OGUID+96, 181569, 546, 3, -36.64338, -199.1346, -4.535348, 3.979355, 0, 0, -0.9135447, 0.4067384, 86400, 86400, 255, 1), -- Rich Adamantite Deposite
 (@OGUID+97, 181556, 546, 3, 283.87, -315.44, 22.25, 0, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+98, 181556, 546, 3, 288.463, -222.0827, 34.20955, 3.857183, 0, 0, -0.9366713, 0.3502098, 86400, 86400, 255, 1), -- Adamantite Deposit
 (@OGUID+99, 181569, 546, 3, 288.463, -222.0827, 34.20955, 3.857183, 0, 0, -0.9366713, 0.3502098, 86400, 86400, 255, 1), -- Rich Adamantite Deposite
@@ -1004,6 +1004,7 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+66, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #7'),
 (@PGUID+67, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - #8'),
 (@PGUID+68, @PGUID+22, 0, 'Adamantite Deposit / Khorium Vein - #9'),
+(@PGUID+69, @PGUID+22, 0, 'Adamantite Deposit / Rich Adamantite Deposit - #10'),
 (@PGUID+91, @PGUID+90, 0, 'The Underbog - Chest - #1'),
 (@PGUID+92, @PGUID+90, 0, 'The Underbog - Chest - #2'),
 (@PGUID+93, @PGUID+90, 0, 'The Underbog - Chest - #3'),
@@ -1011,7 +1012,7 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 -- (@PGUID+21, 1, 'The Underbog - Master Herb Pool'), -- gameobject
-(@PGUID+22, 5, 'The Underbog - Master Mineral Pool'),
+(@PGUID+22, 4, 'The Underbog - Master Mineral Pool'),
 (@PGUID+28, 2, 'The Underbog - Master Ancient Lichen (181278) Pool'),
 (@PGUID+29, 2, 'The Underbog - Master Felweed (181270) Pool'),
 (@PGUID+30, 2, 'The Underbog - Master Ragveil (181275) / Flame Cap (181276) Pool'),
@@ -1032,6 +1033,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+66, 1, 'The Underbog - Adamantite Deposit / Rich Adamantite Deposit / Khorium Vein - #7'),
 (@PGUID+67, 1, 'The Underbog - Adamantite Deposit / Rich Adamantite Deposit - #8'),
 (@PGUID+68, 1, 'The Underbog - Adamantite Deposit / Khorium Vein - #9'),
+(@PGUID+69, 1, 'The Underbog - Adamantite Deposit / Rich Adamantite Deposit - #10'),
 (@PGUID+90, 1, 'The Underbog - Master Chest Pool'),
 (@PGUID+91, 1, 'The Underbog - Chest - #1'),
 (@PGUID+92, 1, 'The Underbog - Chest - #2'),
@@ -1044,7 +1046,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+76, @PGUID+22, 0, 'The Underbog - Adamantite Deposit (181556)'),
 (@OGUID+88, @PGUID+22, 0, 'The Underbog - Adamantite Deposit (181556)'),
 (@OGUID+90, @PGUID+22, 0, 'The Underbog - Adamantite Deposit (181556)'),
-(@OGUID+94, @PGUID+22, 0, 'The Underbog - Adamantite Deposit (181556)'),
 (@OGUID+95, @PGUID+22, 0, 'The Underbog - Adamantite Deposit (181556)'),
 (@OGUID+7, @PGUID+28, 0, 'The Underbog - Ancient Lichen (181278)'),
 (@OGUID+8, @PGUID+28, 0, 'The Underbog - Ancient Lichen (181278)'),
@@ -1128,8 +1129,11 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+84, @PGUID+66, 20, 'The Underbog - Khorium Vein (181557) - #7'),
 (@OGUID+103, @PGUID+67, 0, 'The Underbog - Adamantite Deposit (181556) - #8'),
 (@OGUID+104, @PGUID+67, 0, 'The Underbog - Rich Adamantite Deposit (181569) - #8'),
+(@OGUID+96, @PGUID+68, 0, 'The Underbog - Rich Adamantite Deposit (181569) - #9'),
 (@OGUID+105, @PGUID+68, 0, 'The Underbog - Adamantite Deposit (181556) - #9'),
 (@OGUID+106, @PGUID+68, 20, 'The Underbog - Khorium Vein (181557) - #9'),
+(@OGUID+93, @PGUID+69, 0, 'The Underbog - Rich Adamantite Deposit (181569) - #10'),
+(@OGUID+94, @PGUID+69, 0, 'The Underbog - Adamantite Deposit (181556) - #10'),
 (@OGUID+107, @PGUID+91, 0, 'The Underbog - Bound Fel Iron Chest (184934) - #1'),
 (@OGUID+108, @PGUID+91, 0, 'The Underbog - Solid Fel Iron Chest (184935) - #1'),
 (@OGUID+109, @PGUID+91, 0, 'The Underbog - Bound Adamantite Chest (184936) - #1'),

@@ -591,7 +591,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+22, 1, 'Steamvault - Ragveil / Flame Cap #1'),
 (@PGUID+23, 1, 'Steamvault - Ragveil / Flame Cap #2'),
 (@PGUID+24, 4, 'Steamvault - Ancient Lichen (181278)'),
-(@PGUID+25, 6, 'Steamvault - Master Mineral Pool'),
+(@PGUID+25, 4, 'Steamvault - Master Mineral Pool'),
 (@PGUID+26, 1, 'Steamvault - Adamantite Deposit / Rich Adamantite Deposit #1'),
 (@PGUID+27, 1, 'Steamvault - Adamantite Deposit / Rich Adamantite Deposit #2'),
 (@PGUID+28, 1, 'Steamvault - Adamantite Deposit / Rich Adamantite Deposit #3'),
