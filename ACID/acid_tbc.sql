@@ -29670,8 +29670,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2421702','24217','0','0','100','1025','3000','12000','15000','25000','0','0','11','42745','0','0','0','0','0','0','0','0','0','0','Amani Bear Mount - Cast Enrage'),
 ('2421703','24217','0','0','100','1025','3000','9000','10000','15000','0','0','11','42747','1','0','0','0','0','0','0','0','0','0','Amani Bear Mount - Cast Crunch Armor'),
 ('2421704','24217','1','0','100','0','1000','1000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Amani Bear Mount - Forced Despawn OOC'),
--- Eagle Trash Aggro Trigger 24223
-('2422301','24223','4','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Eagle Trash Aggro Trigger - Forced Despawn on Aggro'),
+-- Eagle Trash Aggro Trigger 24223 - npc_eagle_trash_aggro_trigger
 -- Corrupted Lightning Totem 24224 - TotemAI
 -- Amani'shi Warrior 24225
 ('2422501','24225','9','0','100','1024','8','25','0','0','0','0','11','43519','1','0','0','0','0','0','0','0','0','0','Amani''shi Warrior - Cast Charge'),
