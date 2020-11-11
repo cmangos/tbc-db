@@ -615,7 +615,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (24312, 0, 0, 1, 16, 0, 0, NULL), -- Dragonhawk Egg
 (24325, 0, 0, 1, 16, 0, 0, NULL), -- Eagle Troll Spawn Target
 (24358, 0, 0, 1, 16, 0, 0, NULL), -- Harrison Jones
-(24363, 0, 0, 1, 16, 0, 0, NULL), -- Hex Lord Malacrass
+(24363, 0, 0, 1, 16, 0, 0, NULL), -- Hex Lord Malacrass (Speech Trigger)
 (24396, 0, 0, 1, 16, 0, 0, NULL), -- Forest Frog
 (24530, 0, 0, 1, 16, 0, 0, NULL), -- Amani Elder Lynx
 (24549, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Tempest
@@ -634,24 +634,21 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+113, @CGUID+104, 3), -- Amani'shi Guardian -> Amani'shi Guardian
 
 -- Hex Lord Malacrass
-(@CGUID+326, @CGUID+50, 1679), -- Amani'shi Wind Walker -> Amani'shi Medicine Man
-(@CGUID+50, @CGUID+333, 1024), -- Amani'shi Medicine Man -> Hex Lord Malacrass
-
-(@CGUID+103, @CGUID+291, 1679), -- Amani'shi Flame Caster -> Amani'shi Beast Tamer
-(@CGUID+291, @CGUID+333, 1024), -- Amani'shi Beast Tamer -> Hex Lord Malacrass
-
 (@CGUID+368, @CGUID+369, 1167), -- Amani'shi Berserker -> Amani'shi Berserker
-(@CGUID+369, @CGUID+333, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass
+(@CGUID+369, @CGUID+366, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass
 
 (@CGUID+54, @CGUID+406, 1167), -- Amani'shi Medicine Man -> Amani'shi Tempest
 (@CGUID+409, @CGUID+406, 1167), -- Amani'shi Flame Caster -> Amani'shi Tempest
 (@CGUID+437, @CGUID+406, 1167), -- creature_spawn_entry -> Amani'shi Tempest
-(@CGUID+406, @CGUID+333, 1024), -- Amani'shi Tempest -> Hex Lord Malacrass
+(@CGUID+406, @CGUID+366, 1024), -- Amani'shi Tempest -> Hex Lord Malacrass
 
 (@CGUID+370, @CGUID+371, 1167), -- Amani'shi Berserker -> Amani'shi Berserker
-(@CGUID+371, @CGUID+333, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass
+(@CGUID+371, @CGUID+366, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass
 
 -- Nalorakk
+(@CGUID+326, @CGUID+50, 1679), -- Amani'shi Wind Walker -> Amani'shi Medicine Man
+(@CGUID+50, @CGUID+43, 1024), -- Amani'shi Medicine Man -> Nalorakk
+
 (@CGUID+63, @CGUID+64, 1039), -- Amani Bear -> Amani Bear
 (@CGUID+64, @CGUID+43, 1024), -- Amani Bear -> Nalorakk
 
@@ -763,7 +760,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+117, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
 (@CGUID+118, @CGUID+101, 1167), -- creature_spawn_entry -> Amani'shi Flame Caster
 (@CGUID+121, @CGUID+101, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
-(@CGUID+101, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
+(@CGUID+101, @CGUID+45, 1025), -- Amani'shi Flame Caster -> Jan'alai
 
 (@CGUID+94, @CGUID+99, 1167), -- Amani'shi Flame Caster -> Amani'shi Flame Caster
 (@CGUID+111, @CGUID+99, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
@@ -771,6 +768,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+99, @CGUID+45, 1024), -- Amani'shi Flame Caster -> Jan'alai
 
 -- Halazzi
+(@CGUID+103, @CGUID+291, 1679), -- Amani'shi Flame Caster -> Amani'shi Beast Tamer
+(@CGUID+291, @CGUID+44, 1024), -- Amani'shi Beast Tamer -> Halazzi
+
 (@CGUID+293, @CGUID+394, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
 (@CGUID+296, @CGUID+394, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
 (@CGUID+432, @CGUID+394, 1167), -- Amani Lynx Cub -> Amani Elder Lynx
@@ -887,6 +887,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (23817, 568, 23578, 4, 0), -- Dragonhawk Egg -> Jan'alai
 (23818, 568, 23578, 4112, 0), -- Amani'shi Hatcher -> Jan'alai
 (24143, 568, 23577, 4096, 0), -- Spirit of the Lynx -> Halazzi
+(24363, 568, 24239, 16, 0), -- Hex Lord Malacrass (Speech Trigger) -> Hex Lord Malacrass
 (24240, 568, 24239, 3, 0), -- Alyson Antille -> Hex Lord Malacrass
 (24241, 568, 24239, 3, 0), -- Thurg -> Hex Lord Malacrass
 (24242, 568, 24239, 3, 0), -- Slither -> Hex Lord Malacrass
