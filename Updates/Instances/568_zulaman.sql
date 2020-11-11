@@ -689,10 +689,10 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+399, @CGUID+401, 1157), -- Amani'shi Wind Walker -> Amani'shi Wind Walker
 
 (@CGUID+405, @CGUID+401, 1039), -- Amani'shi Protector -> Amani'shi Wind Walker
-(@CGUID+401, @CGUID+395, 1157), -- Amani'shi Wind Walker -> Amani'shi Wind Walker
+(@CGUID+401, @CGUID+395, 1157), -- Amani'shi Wind Walker -> Amani'shi Tempest
 
 (@CGUID+325, @CGUID+395, 1024), -- Amani'shi Lookout -> Amani'shi Tempest
-(@CGUID+395, @CGUID+42, 1024), -- Amani'shi Tempest -> Akil'zon
+(@CGUID+395, @CGUID+42, 1025), -- Amani'shi Tempest -> Akil'zon
 
 -- Jan'alai
 (@CGUID+67, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
