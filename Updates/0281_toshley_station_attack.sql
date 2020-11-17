@@ -292,7 +292,7 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, priority, command, datalo
 -- Strider Jock -> Gnome Defender - 209
 DELETE FROM creature_linking_template WHERE master_entry=21426;
 INSERT INTO creature_linking_template (entry, map, master_entry, flag, search_range) VALUES
-(21427, 530, 21426, 515, 0);
+(21427, 530, 21426, 515, 30);
 
 
 /*
