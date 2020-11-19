@@ -692,13 +692,13 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+395, @CGUID+42, 1025), -- Amani'shi Tempest -> Akil'zon
 
 -- Jan'alai
-(@CGUID+67, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
-(@CGUID+68, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
-(@CGUID+69, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
-(@CGUID+70, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
-(@CGUID+72, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
-(@CGUID+73, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
-(@CGUID+74, @CGUID+45, 1024), -- Amani'shi Scout -> Jan'alai
+(@CGUID+67, @CGUID+45, 1040), -- Amani'shi Scout -> Jan'alai
+(@CGUID+68, @CGUID+45, 1040), -- Amani'shi Scout -> Jan'alai
+(@CGUID+69, @CGUID+45, 1040), -- Amani'shi Scout -> Jan'alai
+(@CGUID+70, @CGUID+45, 1040), -- Amani'shi Scout -> Jan'alai
+(@CGUID+72, @CGUID+45, 1040), -- Amani'shi Scout -> Jan'alai
+(@CGUID+73, @CGUID+45, 1040), -- Amani'shi Scout -> Jan'alai
+(@CGUID+74, @CGUID+45, 1040), -- Amani'shi Scout -> Jan'alai
 
 (@CGUID+100, @CGUID+65, 1167), -- Amani'shi Flame Caster -> Amani'shi Scout
 (@CGUID+119, @CGUID+65, 1167), -- Amani'shi Guardian -> Amani'shi Scout
