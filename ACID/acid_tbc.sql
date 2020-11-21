@@ -18325,11 +18325,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Deathshadow Acolyte
 ('2234101','22341','9','0','100','1025','0','20','8000','14000','0','0','11','32000','1','0','0','0','0','0','0','0','0','0','Deathshadow Acolyte - Cast Mind Sear'),
 -- Deathshadow Spellbinder 22342
-('2234201','22342','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Deathshadow Spellbinder - Enable Range Mode on Aggro'),
+('2234201','22342','4','0','100','0','0','0','0','0','0','0','57','2','25','0','52','3','0','0','22','1','0','0','Deathshadow Spellbinder - Enable Range Mode and Interrupt Channeling and Set Phase 1 on Aggro'),
 ('2234202','22342','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Deathshadow Spellbinder - Flee at 15% HP'),
 ('2234203','22342','13','0','100','1025','7000','14000','0','0','0','0','11','31999','1','0','0','0','0','0','0','0','0','0','Deathshadow Spellbinder - Cast Counterspell on Target Casting'),
 ('2234204','22342','0','0','100','1025','9000','14000','14000','20000','0','0','11','22744','4','1024','0','0','0','0','0','0','0','0','Deathshadow Spellbinder - Cast Chains of Ice'),
 ('2234205','22342','9','0','100','1025','0','40','5800','6600','0','0','11','34446','1','256','0','0','0','0','0','0','0','0','Deathshadow Spellbinder - Cast Arcane Missiles'),
+('2234206','22342','30','2','100','1','5','22400','0','0','0','0','11','39123','10','0','22','1','0','0','50','1','0','0','Deathshadow Spellbinder - Cast Purple Beam and Set Phase 1 and Set React State on Receive AI Event A (Phase 0)'),
+('2234207','22342','1','1','100','1','7000','9000','0','0','0','0','52','3','0','0','22','0','0','0','50','2','0','0','Deathshadow Spellbinder - Interrupt Channeling and Set Phase 0 and Set React State on Timer OOC (Phase 1)'),
+('2234208','22342','4','0','100','0','0','0','0','0','0','0','50','2','0','0','0','0','0','0','0','0','0','0','Deathshadow Spellbinder - Set React State on Aggro'),
 -- Deathshadow Archon
 ('2234301','22343','9','0','100','1025','0','5','20000','26000','0','0','11','31996','1','0','0','0','0','0','0','0','0','0','Deathshadow Archon - Cast Bloodthirst'),
 ('2234302','22343','2','0','100','1024','20','0','0','0','0','0','11','8599','0','0','1','-46','0','0','0','0','0','0','Deathshadow Archon - Cast Enrage at 20% HP'),
@@ -18358,6 +18361,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2297902','22979','0','0','100','1024','7000','7000','0','0','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Wild Sparrowhawk - Evade after Flee'),
 -- Deathshadow Agent
 ('2339301','23393','0','0','100','1025','3000','7000','8000','14000','0','0','11','36447','1','0','0','0','0','0','0','0','0','0','Deathshadow Agent - Cast Mind Sear'),
+-- Twilight Ridge Target 22400
+('2240001','22400','29','0','100','1','1000','10000','10000','13000','0','0','45','5','40','0','0','0','0','0','0','0','0','0','Twilight Ridge Target - Throw AI Event A on Generic Timer'),
 
 
 
