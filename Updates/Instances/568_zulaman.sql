@@ -547,6 +547,8 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (24858, 4, 39, 364.2945, 1429.232, 99.35547, 100, 0, 0),
 (24858, 4, 40, 385.5457, 1429.076, 97.52219, 100, 0, 0);
 
+UPDATE creature SET equipment_id=5592 WHERE guid=@CGUID+104; -- Amanishi Guardian (starts holding a spear for gong event RP script)
+
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 -- (@CGUID+23, 0, 0, 1, 16, 0, 0, '46750'), -- World Trigger (Not Immune PC)
 (@CGUID+66, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
@@ -623,14 +625,14 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Entrance
-(@CGUID+259, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+260, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+261, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+262, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+263, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+264, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+265, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+266, @CGUID+104, 3), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+259, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+260, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+261, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+262, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+263, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+264, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+265, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+266, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
 (@CGUID+113, @CGUID+104, 3), -- Amani'shi Guardian -> Amani'shi Guardian
 
 -- Hex Lord Malacrass
