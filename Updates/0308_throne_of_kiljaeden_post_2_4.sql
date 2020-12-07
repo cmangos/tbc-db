@@ -1,7 +1,7 @@
 -- Respawn Throne of Kil'jaeden in Outland Guid Range Post 2.4
 SET @CGUID := 5301501;
 DELETE FROM `creature_addon` WHERE `guid` IN (SELECT `guid` FROM `creature` WHERE `id` IN (24918,24919,24921,24933,24959));
-DELETE FROM `creature` WHERE `id` IN (18728,22320,22323,24918,24919,24921,24933,24937,24955,24959);
+DELETE FROM `creature` WHERE `id` IN (18728,22320,22323,24918,24919,24921,24933,24937,24955,24959) AND `guid` NOT BETWEEN 5300041 AND 5300059; -- Generic Cosmetic Trigger - LAB 24921 on IoQD
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 -- Doom Lord Kazzak 18728
 (@CGUID + 01, 18728, 530, 1, 0, 0, 943.48980712890625, 2269.76904296875, 306.746673583984375, 3.281219005584716796, 172800, 345600, 0, 0, 0, 0, 0, 0),
