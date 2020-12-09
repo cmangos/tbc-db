@@ -833,16 +833,16 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (17286, 0, 0, 1, 16, 0, 0, '28782'); -- Invisible Man
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+168, @CGUID+821, 3), -- Dread Creeper -> Necropolis Acolyte
-(@CGUID+169, @CGUID+821, 3), -- Dread Creeper -> Necropolis Acolyte
+(@CGUID+168, @CGUID+273, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+169, @CGUID+273, 3), -- Dread Creeper -> Tomb Horror
 (@CGUID+170, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
 (@CGUID+171, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
 (@CGUID+175, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
 (@CGUID+176, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
 (@CGUID+177, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
 (@CGUID+178, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+179, @CGUID+821, 3), -- Dread Creeper -> Necropolis Acolyte
-(@CGUID+180, @CGUID+821, 3), -- Dread Creeper -> Necropolis Acolyte
+(@CGUID+179, @CGUID+273, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+180, @CGUID+273, 3), -- Dread Creeper -> Tomb Horror
 (@CGUID+181, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
 (@CGUID+182, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
 (@CGUID+229, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
