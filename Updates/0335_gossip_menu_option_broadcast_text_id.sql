@@ -1394,7 +1394,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 4259 WHERE id = 0 AND menu
 # ## tab 1186/1	=> "Paval Reethe."
 # -- mal [1714] "Paval Reethe! Found you at last. And consorting with ogres now? No fear, even deserters and traitors are afforded some mercy."
 
-# UPDATE gossip_menu_option SET broadcast_text_id = 1714 WHERE entry = 1;
+# UPDATE gossip_menu_option SET option_broadcast_text = 1714 WHERE id = 1 AND menu_id = 1186;
 
 # --------------------------------------------------------------------------------
 # ## tab 1201/0	=> "What's the worst that could happen?"
@@ -2200,7 +2200,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 4988 WHERE id = 0 AND menu
 # ## tab 2050/0	=> "Thanks, Ragged John. Your story was very uplifting and informative."
 # ++ mal [5038] "Thanks, Ragged John. Your story was very uplifting and informative. "
 
-UPDATE gossip_menu_option SET broadcast_text_id = 5038 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 5038 WHERE id = 0 AND menu_id = 2050;
 
 # --------------------------------------------------------------------------------
 # ## tab 2051/0	=> "Ahh... Ironfoe."
@@ -2254,7 +2254,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 5015 WHERE id = 0 AND menu
 # ## tab 2059/0	=> "Start making sense, dwarf. I don't want to have anything to do with your cracker, your pappy, or any sort of 'discreditin'."
 # ++ mal [5013] "Start making sense, dwarf. I don't want to have anything to do with your cracker, your pappy, or any sort of 'discreditin.'"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 5013 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 5013 WHERE id = 0 AND menu_id = 2059;
 
 # --------------------------------------------------------------------------------
 # ## tab 2060/0	=> "So what did you do?"
@@ -2266,7 +2266,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 5010 WHERE id = 0 AND menu
 # ## tab 2061/0	=> "Official business, John. I need some information about Marshal Windsor. Tell me about the last time you saw him"
 # ++ mal [5007] "Official business, John. I need some information about Marshal Windsor. Tell me about the last time you saw him."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 5007 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 5007 WHERE id = 0 AND menu_id = 2061;
 
 # --------------------------------------------------------------------------------
 # ## tab 2061/1	=> "Milk me, John."
@@ -3219,7 +3219,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 6085 WHERE id = 0 AND menu
 # ## tab 2949/0	=> "So let me get this straight. You were swimming, nay, doing backstrokes in molten lava with this... this lava suit of yours? Yes? And out of nowhere, this here beast swallowed you whole?"
 # ++ mal [6083] "So let me get this straight. You were swimming, nay, doing backstrokes in molten lava with this... this lava suit of yours? Yes? And out of nowhere, this here beast swallowed you whole? "
 
-UPDATE gossip_menu_option SET broadcast_text_id = 6083 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 6083 WHERE id = 0 AND menu_id = 2949;
 
 # --------------------------------------------------------------------------------
 # ## tab 2950/0	=> "I'm all ears."
@@ -3243,7 +3243,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 2583 WHERE id = 0 AND menu
 # ## tab 3049/0	=> "You will have to excuse me, Lorax, I do not speak 'crazy'."
 # ++ mal [6241] "You will have to excuse me, Lorax, I do not speak 'crazy.'"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 6241 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 6241 WHERE id = 0 AND menu_id = 3049;
 
 # --------------------------------------------------------------------------------
 # ## tab 3062/0	=> "Low spirits"
@@ -4915,7 +4915,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 7573 WHERE id = 0 AND menu
 # ## tab 4041/1	=> "Do you know where I can find Half Pendant of Aquatic Agility?"
 # -- mal [8035] "Do you know where I may find the Half Pendant of Aquatic Agility?"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 8035 WHERE entry = 1;
+UPDATE gossip_menu_option SET option_broadcast_text = 8035 WHERE id = 1 AND menu_id = 4041;
 
 # --------------------------------------------------------------------------------
 # ## tab 4042/0	=> "I'd like to fly to Thunder Bluff."
@@ -4927,7 +4927,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 12804 WHERE id = 0 AND men
 # ## tab 4042/1	=> "Do you know where I can find Half Pendant of Aquatic Endurance?"
 # -- mal [8036] "Do you know where I may find the Half Pendant of Aquatic Endurance?"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 8036 WHERE entry = 1;
+UPDATE gossip_menu_option SET option_broadcast_text = 8036 WHERE id = 1 AND menu_id = 4042;
 
 # --------------------------------------------------------------------------------
 # ## tab 4085/0	=> "Yes, Augustus. I would like to do business."
@@ -5197,19 +5197,19 @@ UPDATE gossip_menu_option SET option_broadcast_text = 3266 WHERE id = 0 AND menu
 # ## tab 4346/1	=> "What can you tell to me about a bear Ursangous's?"
 # -- mal [8229] "What can you tell me about the bear - Ursangous?"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 8229 WHERE entry = 1;
+UPDATE gossip_menu_option SET option_broadcast_text = 8229 WHERE id = 1 AND menu_id = 4346;
 
 # --------------------------------------------------------------------------------
 # ## tab 4346/2	=> "What can you tell to me about a nightsaber Shadumbra's?"
 # -- mal [8230] "What can you tell me about the nightsaber cat - Shadumbra?"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 8230 WHERE entry = 2;
+UPDATE gossip_menu_option SET option_broadcast_text = 8230 WHERE id = 2 AND menu_id = 4346;
 
 # --------------------------------------------------------------------------------
 # ## tab 4346/3	=> "What can you tell to me about a hippogryph Sharptalon's?"
 # -- mal [8231] "What can you tell me about the hippogryph - Sharptalon?"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 8231 WHERE entry = 3;
+UPDATE gossip_menu_option SET option_broadcast_text = 8231 WHERE id = 3 AND menu_id = 4346;
 
 # --------------------------------------------------------------------------------
 # ## tab 4348/0	=> "Train me."
@@ -6859,7 +6859,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 10621 WHERE id = 1 AND men
 # ## tab 4783/2	=> "I wish to train my pet."
 # -- mal [10621] "I wish to untrain my pet."
 
-# UPDATE gossip_menu_option SET broadcast_text_id = 10621 WHERE entry = 2;
+# UPDATE gossip_menu_option SET option_broadcast_text = 10621 WHERE id = 2 AND menu_id = 4783;
 
 # --------------------------------------------------------------------------------
 # ## tab 4822/0	=> "Please teach me."
@@ -7278,7 +7278,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 30181 WHERE id = 1 AND men
 # ## tab 5346/0	=> "Tell me more about Remulos and Zaetar."
 # -- mal [8961] "Tell me more about the history of Remulos and Zaetar."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 8961 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 8961 WHERE id = 0 AND menu_id = 5346;
 
 # --------------------------------------------------------------------------------
 # ## tab 5347/0	=> "Please tell me more about Zaetar."
@@ -7290,7 +7290,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 8940 WHERE id = 0 AND menu
 # ## tab 5349/0	=> "Please tell me more about Maraudon"
 # ++ mal [8938] "Please tell me more about Maraudon."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 8938 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 8938 WHERE id = 0 AND menu_id = 5349;
 
 # --------------------------------------------------------------------------------
 # ## tab 5382/0	=> "Teach me how to create and apply a Heavy Mageweave Bandage, Doctor."
@@ -7728,7 +7728,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 2583 WHERE id = 0 AND menu
 # NOT TBC
 # ++ mal [30181] "I'd like to stable my pet here."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 30181 WHERE entry = 1;
+UPDATE gossip_menu_option SET option_broadcast_text = 30181 WHERE id = 1 AND menu_id = 6088;
 
 # --------------------------------------------------------------------------------
 # ## tab 6092/0	=> "This Dimensional Imploder sounds dangerous! How can I make one?"
@@ -8135,31 +8135,31 @@ UPDATE gossip_menu_option SET option_broadcast_text = 10698 WHERE id = 0 AND men
 # ## tab 6542/1	=> "Duke of Cynders! I hold your signet! Heed my call"
 # ++ mal [10699] "Duke of Cynders! I hold your signet! Heed my call!"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 10699 WHERE entry = 1;
+UPDATE gossip_menu_option SET option_broadcast_text = 10699 WHERE id = 1 AND menu_id = 6542;
 
 # --------------------------------------------------------------------------------
 # ## tab 6542/2	=> "The Duke of Shards! I hold your signet! Heed my call!"
 # -- mal [10701] "Duke of Shards! I hold your signet! Heed my call!"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 10701 WHERE entry = 2;
+UPDATE gossip_menu_option SET option_broadcast_text = 10701 WHERE id = 2 AND menu_id = 6542;
 
 # --------------------------------------------------------------------------------
 # ## tab 6542/3	=> "The Duke of Zephyrs! I hold your signet! Heed my call!"
 # -- mal [10700] "Duke of Zephyrs! I hold your signet! Heed my call!"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 10700 WHERE entry = 3;
+UPDATE gossip_menu_option SET option_broadcast_text = 10700 WHERE id = 3 AND menu_id = 6542;
 
 # --------------------------------------------------------------------------------
 # ## tab 6542/4	=> "The Duke of Fathoms! I hold your signet! Heed my call!"
 # -- mal [10702] "Duke of Fathoms! I hold your signet! Heed my call!"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 10702 WHERE entry = 4;
+UPDATE gossip_menu_option SET option_broadcast_text = 10702 WHERE id = 4 AND menu_id = 6542;
 
 # --------------------------------------------------------------------------------
 # ## tab 6543/0	=> "The day of the judgement has come, fiend! I challenge you to battle!"
 # -- mal [10707] "The day of judgement has come, fiend! I challenge you to battle!"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 10707 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 10707 WHERE id = 0 AND menu_id = 6543;
 
 # --------------------------------------------------------------------------------
 # ## tab 6543/1	=> "Prince Skaldrenox! I hold your signet! Heed my call!"
@@ -8245,7 +8245,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 10737 WHERE id = 0 AND men
 # ## tab 6555/0	=> "I've been meaning to ask out about that monkey."
 # -- mal [10735] "I've been meaning to ask you about that monkey."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 10735 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 10735 WHERE id = 0 AND menu_id = 6555;
 
 # --------------------------------------------------------------------------------
 # ## tab 6556/0	=> "You couldn't handle a lone night elf priestess?"
@@ -12583,7 +12583,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 10182 WHERE id = 3 AND men
 # ## tab 7859/0	=> "Show me, Seer!"
 # -- mal [16026] "Show me, Seer."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 16026 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 16026 WHERE id = 0 AND menu_id = 7859;
 
 # --------------------------------------------------------------------------------
 # ## tab 7866/0	=> "Who is Talon King Ikiss?"
@@ -12847,7 +12847,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 16855 WHERE id = 0 AND men
 # ## tab 7978/0	=> "Greatmother, I never had the honor. Durotan died long before my time, but his heroics are known to all on my world. The orcs of Azeroth reside in a place known as Durotar, named after your son. And... (You take a moment to breathe and think through what you are about to tell the Greatmother.)"
 # -- mal [16853] "Greatmother, I never had the honor. Durotan died long before my time, but his heroics are known to all on my world. The orcs of Azeroth reside in a place known as Durotar, named after your son. And... <You take a moment to breathe and think through what you are about to tell the Greatmother.>"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 16853 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 16853 WHERE id = 0 AND menu_id = 7978;
 
 # --------------------------------------------------------------------------------
 # ## tab 7979/0	=> "Greatmother, you are the mother of Durotan?"
@@ -12883,37 +12883,37 @@ UPDATE gossip_menu_option SET option_broadcast_text = 2823 WHERE id = 3 AND menu
 # ## tab 7984/0	=> "Read on, if you dare..."
 # ++ mal [16928] "<Read on, if you dare...>"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 16928 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 16928 WHERE id = 0 AND menu_id = 7982;
 
 # --------------------------------------------------------------------------------
 # ## tab 7985/0	=> "Read on, if you dare..."
 # ++ mal [16928] "<Read on, if you dare...>"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 16928 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 16928 WHERE id = 0 AND menu_id = 7985;
 
 # --------------------------------------------------------------------------------
 # ## tab 7986/0	=> "Read on, if you dare..."
 # ++ mal [16928] "<Read on, if you dare...>"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 16928 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 16928 WHERE id = 0 AND menu_id = 7986;
 
 # --------------------------------------------------------------------------------
 # ## tab 7987/0	=> "Read on, if you dare..."
 # ++ mal [16928] "<Read on, if you dare...>"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 16928 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 16928 WHERE id = 0 AND menu_id = 7987;
 
 # --------------------------------------------------------------------------------
 # ## tab 7988/0	=> "Read on, if you dare..."
 # ++ mal [16928] "<Read on, if you dare...>"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 16928 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 16928 WHERE id = 0 AND menu_id = 7988;
 
 # --------------------------------------------------------------------------------
 # ## tab 7989/0	=> "Read on, if you dare..."
 # ++ mal [16928] "<Read on, if you dare...>"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 16928 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 16928 WHERE id = 0 AND menu_id = 7989;
 
 # --------------------------------------------------------------------------------
 # ## tab 7999/0	=> "Grek, will you try out this new weapon oil Rakoria made?"
@@ -14374,7 +14374,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 19730 WHERE id = 0 AND men
 # ## tab 8455/1	=> "Send me back to the Razaan's Landing."
 # -- mal [19731] "Send me back to Razaan's Landing."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 19731 WHERE entry = 1;
+UPDATE gossip_menu_option SET option_broadcast_text = 19731 WHERE id = 1 AND menu_id = 8455;
 
 # --------------------------------------------------------------------------------
 # ## tab 8455/2	=> "Send me back to the Ruuan Weald."
@@ -14579,7 +14579,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 20638 WHERE id = 0 AND men
 # ## tab 8617/0	=> "Yes elder. Tell me more of the book."
 # -- mal [20640] "Yes, elder. Tell me more of the book."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 20640 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 20640 WHERE id = 0 AND menu_id = 8617;
 
 # --------------------------------------------------------------------------------
 # ## tab 8622/0	=> "I seek training to ride a steed."
@@ -17152,14 +17152,14 @@ UPDATE gossip_menu_option SET option_broadcast_text = 28596 WHERE id = 2 AND men
 # NOT TBC
 # -- mal [28607] "Eastern Zeppelin Tower"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 28607 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 28607 WHERE id = 0 AND menu_id = 9727;
 
 # --------------------------------------------------------------------------------
 # ## tab 9727/1	=> "The western zeppelin tower"
 # NOT TBC
 # -- mal [28608] "Western Zeppelin Tower"
 
-UPDATE gossip_menu_option SET broadcast_text_id = 28608 WHERE entry = 1;
+UPDATE gossip_menu_option SET option_broadcast_text = 28608 WHERE id = 1 AND menu_id = 9727;
 
 # --------------------------------------------------------------------------------
 # ## tab 9728/0	=> "<Check for a pulse...>"
@@ -19658,7 +19658,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 7268 WHERE id = 1 AND menu
 # ## tab 20007/1	=> "Is there anything you would have of me? "
 # -- mal [7269] "If there is anything you would have of me..."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 7269 WHERE entry = 1;
+UPDATE gossip_menu_option SET option_broadcast_text = 7269 WHERE id = 1 AND menu_id = 20007;
 
 # --------------------------------------------------------------------------------
 # ## tab 20013/0	=> "Yes, please do."
@@ -19694,7 +19694,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 6249 WHERE id = 0 AND menu
 # ## tab 20019/0	=> "Perhaps I can be of some assistance. I will make a deal with you, Satyr. I shall recover this unforged breastplate and slay the beast. In exchange for this task, you will teach me how to create the breastplate."
 # -- mal [6251] "Perhaps I can be of some assistance. I will make a deal with you, Satyr. I shall recover this unforged breastplate and slay the beast, Goraluk Anvilcrack. In exchange for this task, you will teach me how to create the breastplate."
 
-UPDATE gossip_menu_option SET broadcast_text_id = 6251 WHERE entry = 0;
+UPDATE gossip_menu_option SET option_broadcast_text = 6251 WHERE id = 0 AND menu_id = 20019;
 
 # --------------------------------------------------------------------------------
 # ## tab 20022/0	=> "I need a Cenarion beacon."
@@ -19908,7 +19908,7 @@ UPDATE gossip_menu_option SET option_broadcast_text = 6264 WHERE id = 0 AND menu
 
 
 # --------------------------------------------------------------------------------
-# HAND FOR "box_broadcast_text_id" (8 fields)
+# HAND FOR "box_option_broadcast_text" (8 fields)
 # no "unlearn your tailoring specialty" (3 fields)
 # no "unlearn your alchemy specialty" (3 fields)
 
