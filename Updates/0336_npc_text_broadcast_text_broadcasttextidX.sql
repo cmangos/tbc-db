@@ -8,7 +8,7 @@
 
 # -------------------------------------------------------------------------------- [2]
 # ## txt 0 (0)	=> "Hey there, $N. How can I help you?"
-# ## NONE FOUND
+# oo fem[23436]	   "Hey there, good looking! What can I do to help you out?"
 
 # -------------------------------------------------------------------------------- [68]
 # ## txt 0 (0)	=> "Greetings $N"
@@ -108,11 +108,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [539]
 # ## txt 0 (1)	=> "Well met, $c. My advice to you is this: as you travel the world, be wary of magic for it will burn the untrained."
-# == mal[52379]	   "Well met, $c. My advice to you is this: As you travel the world, be wary of magic for it will burn the untrained."
+# == mal[2503]	   "Well met, $c. My advice to you is this: as you travel the world, be wary of magic for it will burn the untrained."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (539, 1, 52379);
+ VALUES (539, 1, 2503);
 
 # -------------------------------------------------------------------------------- [558]
 # ## txt 0 (1)	=> "Greetings. I'm a mage trainer, and you're a mage."
@@ -124,11 +124,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [559]
 # ## txt 0 (1)	=> "Well met, $c. My advice to you is this: as you travel the world, be wary of magic for it will burn the untrained."
-# == mal[52379]	   "Well met, $c. My advice to you is this: As you travel the world, be wary of magic for it will burn the untrained."
+# == mal[2503]	   "Well met, $c. My advice to you is this: as you travel the world, be wary of magic for it will burn the untrained."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (559, 1, 52379);
+ VALUES (559, 1, 2503);
 
 # -------------------------------------------------------------------------------- [560]
 # ## txt 0 (1)	=> "Greetings. I'm a gnome mage trainer, and you're a mage."
@@ -156,11 +156,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [563]
 # ## txt 0 (1)	=> "Well met, $c. My advice to you is this: as you travel the world, be wary of magic for it will burn the untrained."
-# == mal[52379]	   "Well met, $c. My advice to you is this: As you travel the world, be wary of magic for it will burn the untrained."
+# == mal[2503]	   "Well met, $c. My advice to you is this: as you travel the world, be wary of magic for it will burn the untrained."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (563, 1, 52379);
+ VALUES (563, 1, 2503);
 
 # -------------------------------------------------------------------------------- [564]
 # ## txt 0 (1)	=> "Greetings, $c. Are you here to learn of the hidden arts?"
@@ -192,7 +192,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (581, 100, 2546);
+ VALUES (581, 1, 2546);
 
 # -------------------------------------------------------------------------------- [623]
 # ## txt 0 (1)	=> "What do you want, $c? I'm running late, and my employer doesn't look kindly on tardiness."
@@ -443,11 +443,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [820]
 # ## txt 0 (100)	=> "Welcome to my Inn, weary traveler. What can I do for you?"
-# == mal[16967]	   "Welcome to my Inn, weary traveler. What can I do for you?"
+# == mal[2821]	   "Welcome to my Inn, weary traveler. What can I do for you?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (820, 100, 16967);
+ VALUES (820, 100, 2821);
 
 # -------------------------------------------------------------------------------- [821]
 # ## txt 0 (100)	=> "Rest your weary bones for a spell."
@@ -662,11 +662,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [918]
 # ## txt 0 (1)	=> "Which profession trainer are you looking for?"
-# == mal[15860]	   "Which profession trainer are you looking for?"
+# == mal[2941]	   "Which profession trainer are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (918, 1, 15860);
+ VALUES (918, 1, 2941);
 
 # -------------------------------------------------------------------------------- [919]
 # ## txt 0 (1)	=> "If you need training in alchemy, there is only one place in Stormwind you need to go... Alchemy Needs. You can find it in the Mage Quarter along the outer rim of shops."
@@ -1343,25 +1343,25 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [1231]
 # ## txt 0 (100)	=> "Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."
-# == mal[3374]	   "Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."
+# == mal[3368]	   "Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."
 
 # ## txt 1 (100)	=> "I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."
-# == mal[3375]	   "I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."
+# == mal[3369]	   "I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1)
- VALUES (1231, 100, 3374, 100, 3375);
+ VALUES (1231, 100, 3368, 100, 3369);
 
 # -------------------------------------------------------------------------------- [1232]
 # ## txt 0 (100)	=> "Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."
-# == mal[3374]	   "Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."
+# == mal[3368]	   "Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."
 
 # ## txt 1 (100)	=> "I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."
-# == mal[3375]	   "I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."
+# == mal[3369]	   "I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1)
- VALUES (1232, 100, 3374, 100, 3375);
+ VALUES (1232, 100, 3368, 100, 3369);
 
 # -------------------------------------------------------------------------------- [1233]
 # ## txt 0 (100)	=> "Made by the finest craftsmen in all of Teldrassil, carried by hand from Kalimdor to Azeroth as a sign of the growing alliance between the people of the Great Tree and the humans of this land. If there is anything you require, you have but to ask."
@@ -1373,80 +1373,80 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [1234]
 # ## txt 0 (100)	=> "Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."
-# == mal[3374]	   "Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."
+# == mal[3368]	   "Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."
 
 # ## txt 1 (100)	=> "I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."
-# == mal[3375]	   "I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."
+# == mal[3369]	   "I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1)
- VALUES (1234, 100, 3374, 100, 3375);
+ VALUES (1234, 100, 3368, 100, 3369);
 
 # -------------------------------------------------------------------------------- [1235]
 # ## txt 0 (100)	=> "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
-# == mal[3383]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
+# == mal[3376]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
 
 # ## txt 1 (100)	=> "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
-# == mal[3383]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
+# == mal[3376]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
 
 # ## txt 2 (100)	=> "Just browsing my wares or is there something specific I can help you find today?"
-# == mal[3384]	   "Just browsing my wares or is there something specific I can help you find today?"
+# == mal[3378]	   "Just browsing my wares or is there something specific I can help you find today?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (1235, 100, 3383, 100, 3383, 100, 3384);
+ VALUES (1235, 100, 3376, 100, 3376, 100, 3378);
 
 # -------------------------------------------------------------------------------- [1236]
 # ## txt 0 (100)	=> "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
-# == mal[3383]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
+# == mal[3376]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
 
 # ## txt 1 (100)	=> "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
-# == mal[3383]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
+# == mal[3376]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
 
 # ## txt 2 (100)	=> "Just browsing my wares or is there something specific I can help you find today?"
-# == mal[3384]	   "Just browsing my wares or is there something specific I can help you find today?"
+# == mal[3378]	   "Just browsing my wares or is there something specific I can help you find today?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (1236, 100, 3383, 100, 3383, 100, 3384);
+ VALUES (1236, 100, 3376, 100, 3376, 100, 3378);
 
 # -------------------------------------------------------------------------------- [1237]
 # ## txt 0 (100)	=> "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
-# == mal[3383]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
+# == mal[3376]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
 
 # ## txt 1 (100)	=> "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
-# == mal[3383]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
+# == mal[3376]	   "Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"
 
 # ## txt 2 (100)	=> "Just browsing my wares or is there something specific I can help you find today?"
-# == mal[3384]	   "Just browsing my wares or is there something specific I can help you find today?"
+# == mal[3378]	   "Just browsing my wares or is there something specific I can help you find today?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (1237, 100, 3383, 100, 3383, 100, 3384);
+ VALUES (1237, 100, 3376, 100, 3376, 100, 3378);
 
 # -------------------------------------------------------------------------------- [1238]
 # ## txt 0 (100)	=> "I sell only the best gear, tested and true. And the prices are set, so if you want to haggle then go find a Goblin."
-# == mal[3387]	   "I sell only the best gear, tested and true. And the prices are set, so if you want to haggle then go find a Goblin."
+# == mal[3385]	   "I sell only the best gear, tested and true. And the prices are set, so if you want to haggle then go find a Goblin."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1238, 100, 3387);
+ VALUES (1238, 100, 3385);
 
 # -------------------------------------------------------------------------------- [1239]
 # ## txt 0 (100)	=> "I sell only the best gear, tested and true. And the prices are set, so if you want to haggle then go find a Goblin."
-# == mal[3387]	   "I sell only the best gear, tested and true. And the prices are set, so if you want to haggle then go find a Goblin."
+# == mal[3385]	   "I sell only the best gear, tested and true. And the prices are set, so if you want to haggle then go find a Goblin."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1239, 100, 3387);
+ VALUES (1239, 100, 3385);
 
 # -------------------------------------------------------------------------------- [1240]
 # ## txt 0 (100)	=> "I sell only the best gear, tested and true. And the prices are set, so if you want to haggle then go find a Goblin."
-# == mal[3387]	   "I sell only the best gear, tested and true. And the prices are set, so if you want to haggle then go find a Goblin."
+# == mal[3385]	   "I sell only the best gear, tested and true. And the prices are set, so if you want to haggle then go find a Goblin."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1240, 100, 3387);
+ VALUES (1240, 100, 3385);
 
 # -------------------------------------------------------------------------------- [1241]
 # ## txt 0 (100)	=> "May the light guide your path and aid you in your journeys. If you need any assistance browsing, I will be right over here."
@@ -1552,19 +1552,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [1257]
 # ## txt 0 (100)	=> "Speak quietly and with great care, the wrong word in these parts could get your throat cut. Now, what is it you need from me?"
-# == mal[3411]	   "Speak quietly and with great care, the wrong word in these parts could get your throat cut. Now, what is it you need from me?"
+# == mal[3410]	   "Speak quietly and with great care, the wrong word in these parts could get your throat cut. Now, what is it you need from me?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1257, 100, 3411);
+ VALUES (1257, 100, 3410);
 
 # -------------------------------------------------------------------------------- [1258]
 # ## txt 0 (100)	=> "Speak quietly and with great care, the wrong word in these parts could get your throat cut. Now, what is it you need from me?"
-# == mal[3411]	   "Speak quietly and with great care, the wrong word in these parts could get your throat cut. Now, what is it you need from me?"
+# == mal[3410]	   "Speak quietly and with great care, the wrong word in these parts could get your throat cut. Now, what is it you need from me?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1258, 100, 3411);
+ VALUES (1258, 100, 3410);
 
 # -------------------------------------------------------------------------------- [1261]
 # ## txt 0 (100)	=> "I hope ye didn't come all the way to the Great Forge just to stay warm. Speak up $g lad : lass;, tell me what it is I can do for ye?"
@@ -1584,11 +1584,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [1272]
 # ## txt 0 (1)	=> "What are you looking for?"
-# == mal[21585]	   "What are you looking for?"
+# == mal[3425]	   "What are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1272, 1, 21585);
+ VALUES (1272, 1, 3425);
 
 # -------------------------------------------------------------------------------- [1291]
 # ## txt 0 (80)	=> "Krumn is the bull you are looking for. He can be found on the lower rise at Thunder Bluff Civic Information."
@@ -1691,19 +1691,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [1300]
 # ## txt 0 (1)	=> "Which trainer do you seek?"
-# == mal[6769]	   "Which trainer do you seek?"
+# == mal[3458]	   "Which trainer do you seek?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1300, 1, 6769);
+ VALUES (1300, 1, 3458);
 
 # -------------------------------------------------------------------------------- [1301]
 # ## txt 0 (1)	=> "Which profession?"
-# == mal[6775]	   "Which profession?"
+# == mal[3459]	   "Which profession?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1301, 1, 6775);
+ VALUES (1301, 1, 3459);
 
 # -------------------------------------------------------------------------------- [1302]
 # ## txt 0 (1)	=> "It's fascinating... I have heard orcs proclaim the odor of humans to be sickening and I have heard humans proclaim the odor of orcs to be wretched; yet, to me, all of the races of these lands give off the same odor: The foul, dizzying scent of greed.$B$BDo you doubt the validity of my claim? Do you not see these things that run your life as merely runoff from the greed which dictates your every decision?$B$BSo be it. As it was greed that displaced me from my home, it shall be greed that takes me back."
@@ -2168,11 +2168,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [1635]
 # ## txt 0 (100)	=> "What is it? Can't you see I'm busy?"
-# == mal[3983]	   "What is it? Can't you see I'm busy?"
+# == mal[3982]	   "What is it? Can't you see I'm busy?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1635, 100, 3983);
+ VALUES (1635, 100, 3982);
 
 # -------------------------------------------------------------------------------- [1637]
 # ## txt 0 (0)	=> "Back to learn more, $N? Come over here and show me you are ready."
@@ -2537,18 +2537,21 @@ INSERT INTO `npc_text_broadcast_text`
 # -------------------------------------------------------------------------------- [1820]
 # ## txt 0 (1)	=> "If Reethe is somehow involved with the burning of the Shady Rest Inn, you'll have to find him and get some answers out of him.$b$bI sent Ogron to track him down. He was headed off to the southeast, toward the main road through the marsh. Meet up with Ogron and then go find Reethe."
 # HAND [4262] 'If Reethe is somehow involved with the burning of the Shady Rest Inn, you\'ll have to find him and get some answers out of him.$b$bI sent Ogron to track him down. He was headed off to the southeast. Meet up with Ogron and then go find Reethe.
-
+ 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
  VALUES (1820, 1, 4262);
 
 # -------------------------------------------------------------------------------- [1833]
 # ## txt 0 (1)	=> "I don't care to hear it, $N. Nope, no way are you going to be let into the Searing Gorge. Impossible. Not going to happen. How many times do I have to tell you - I can't let you in! Do you not speak common? Are you an orc in disguise? N-O. NO!$B$BIf I let you in, then I have to let everybody in. Pretty soon your close friends will want in, then their distant relatives, then their friends, and so on and so forth. The last time that happened... well, we won't talk about the last time it happened."
+# ## FAR FOUND
 # ++ fem[4265]	   "I don't care to hear it, $N. Nope, no way are you going to be let into the Searing Gorge. Impossible. Not going to happen. How many times do I have to tell you - I can't let you in! Do you not speak common? Are you an orc in disguise? N-O. NO!$B$BIf I let you in, then I have to let everybody in. Pretty soon your close friends will want in, then their distant relatives, then their friends, and so on and so forth. The last time that happened... well, we won't talk about the last time it happened. "
+# NOT TBC
+# ++ fem[50744]	   "I don't care to hear it, $n. Nope, no way are you going to be let into the Searing Gorge. Impossible. Not going to happen. How many times do I have to tell you - I can't let you in! Do you not speak Common? Are you an orc in disguise? N-O. NO!$B$BIf I let you in, then I have to let everybody in. Pretty soon your close friends will want in, then their distant relatives, then their friends, and so on and so forth. The last time that happened... well, we won't talk about the last time it happened.$b$bI will NOT open that gate!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (1833, 1, 4265);
+ VALUES (1833, 0, 4265);
 
 # -------------------------------------------------------------------------------- [1834]
 # ## txt 0 (0)	=> "Are you mad? Do you know what manner of beast inhabit that place? The worst that can happen is that we'll have to scoop up your remains with a shovel. We've lost some good dwarves to those awful monsters.$B$BSo the answer is no. If you're bent on getting to the Searing Gorge, you'll have to find another way."
@@ -3008,11 +3011,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2193]
 # ## txt 0 (1)	=> "The arcane only corrupts those who are weak. Keep up on your training, or you may find a similar fate."
-# == mal[8267]	   "The arcane only corrupts those who are weak. Keep up on your training, or you may find a similar fate."
+# == mal[4584]	   "The arcane only corrupts those who are weak. Keep up on your training, or you may find a similar fate."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2193, 1, 8267);
+ VALUES (2193, 1, 4584);
 
 # -------------------------------------------------------------------------------- [2213]
 # ## txt 0 (1)	=> "I am bound eternally to this cursed world. What is it you desire, mortal?"
@@ -3129,11 +3132,11 @@ INSERT INTO `npc_text_broadcast_text`
 # == mal[4622]	   "So many years of battle and slavery, it feels good to have a home again. "
 
 # ## txt 1 (1)	=> "Tell me what you want, and make it quick."
-# == mal[4626]	   "Tell me what you want, and make it quick."
+# == mal[4623]	   "Tell me what you want, and make it quick."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1)
- VALUES (2278, 1, 4622, 1, 4626);
+ VALUES (2278, 1, 4622, 1, 4623);
 
 # -------------------------------------------------------------------------------- [2279]
 # ## txt 0 (1)	=> "I live only to serve the master."
@@ -3145,11 +3148,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2280]
 # ## txt 0 (1)	=> "Even in peace there is still war, and many clans still fight beneath the banner of the Warchief. Are you here to add your clan to those that fight for Orgrimmar?"
-# == mal[4630]	   "Even in peace there is still war, and many clans still fight beneath the banner of the Warchief. Are you here to add your clan to those that fight for Orgrimmar?"
+# == mal[4629]	   "Even in peace there is still war, and many clans still fight beneath the banner of the Warchief. Are you here to add your clan to those that fight for Orgrimmar?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2280, 1, 4630);
+ VALUES (2280, 1, 4629);
 
 # -------------------------------------------------------------------------------- [2282]
 # ## txt 0 (1)	=> "Hello, $N! I am master engineer, Scooty."
@@ -3779,19 +3782,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2593]
 # ## txt 0 (100)	=> "What are you looking for?"
-# == mal[21585]	   "What are you looking for?"
+# == mal[3425]	   "What are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2593, 100, 21585);
+ VALUES (2593, 100, 3425);
 
 # -------------------------------------------------------------------------------- [2594]
 # ## txt 0 (100)	=> "Which profession?"
-# == mal[6775]	   "Which profession?"
+# == mal[3459]	   "Which profession?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2594, 100, 6775);
+ VALUES (2594, 100, 3459);
 
 # -------------------------------------------------------------------------------- [2595]
 # ## txt 0 (1)	=> "The death of our flesh marked the birth of our spirit and our sacred task."
@@ -3827,11 +3830,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2599]
 # ## txt 0 (100)	=> "Which trainer do you seek?"
-# == mal[6769]	   "Which trainer do you seek?"
+# == mal[3458]	   "Which trainer do you seek?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2599, 100, 6769);
+ VALUES (2599, 100, 3458);
 
 # -------------------------------------------------------------------------------- [2600]
 # ## txt 0 (1)	=> "You may not pass. You are not our kin, nor have you issued the challenge."
@@ -4204,11 +4207,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2728]
 # ## txt 0 (1)	=> "Good idea!"
-# == mal[67132]	   "Good idea!"
+# == fem[5041]	   "Good idea!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2728, 1, 67132);
+ VALUES (2728, 1, 5041);
 
 # -------------------------------------------------------------------------------- [2729]
 # ## txt 0 (1)	=> "Thanks again, $N. Rocknot and I are really hitting it off!"
@@ -4270,11 +4273,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2760]
 # ## txt 0 (1)	=> "What do ye need directions to?"
-# == mal[6986]	   "What do ye need directions to?"
+# == mal[5077]	   "What do ye need directions to?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2760, 1, 6986);
+ VALUES (2760, 1, 5077);
 
 # -------------------------------------------------------------------------------- [2761]
 # ## txt 0 (50)	=> "Do ye have some new treasures that ye want to keep safe n' sound? Then ye'll be wanting to store them at The Vault with the Stonemantles. $B$BYe'll find The Vault just a hammer's throw northeast from the entrance to Ironforge."
@@ -4311,11 +4314,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2766]
 # ## txt 0 (1)	=> "Which class trainer might ye be looking for?"
-# == mal[7000]	   "Which class trainer might ye be looking for?"
+# == mal[5089]	   "Which class trainer might ye be looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2766, 1, 7000);
+ VALUES (2766, 1, 5089);
 
 # -------------------------------------------------------------------------------- [2768]
 # ## txt 0 (50)	=> "The Inn? Ah, ye looking to toss back some of the best ales Ironforge has to offer? The Stonefire Tavern is where ye'll want to go. $B$BYe'll find it just to the left of the entrance to Ironforge if ye be coming, or to the right if ye be going."
@@ -4418,11 +4421,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2793]
 # ## txt 0 (1)	=> "Which profession trainer would ye be looking for?"
-# == mal[7023]	   "Which profession trainer would ye be looking for?"
+# == mal[5113]	   "Which profession trainer would ye be looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2793, 1, 7023);
+ VALUES (2793, 1, 5113);
 
 # -------------------------------------------------------------------------------- [2794]
 # ## txt 0 (75)	=> "An Alchemy trainer is what you need? Well, I just came from there, I did. Ye'll find Ms. Berryfizz over in Tinker Town where the gnomes gather."
@@ -4706,11 +4709,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2842]
 # ## txt 0 (1)	=> "These once beautiful woods suffer under a terrible curse! Corrupting forces twist the life here into shadows of their former selves. If you are not an agent of this corruption, then perhaps you can aid me in reclaiming Felwood!"
-# == fem[5208]	   "These once beautiful woods suffer under a terrible curse! Corrupting forces twist the life here into shadows of their former selves. If you are not an agent of this corruption, then perhaps you can aid me in reclaiming Felwood!"
+# == fem[5204]	   "These once beautiful woods suffer under a terrible curse! Corrupting forces twist the life here into shadows of their former selves. If you are not an agent of this corruption, then perhaps you can aid me in reclaiming Felwood!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2842, 1, 5208);
+ VALUES (2842, 1, 5204);
 
 # -------------------------------------------------------------------------------- [2843]
 # ## txt 0 (1)	=> "Taurahe?$B$BThe tauren druid looks at you expectantly, but it is clear you cannot verbally communicate with her. Undaunted, she points to herself and smiles. She points at you and smiles once more. She finally motions several times down the path to the south.$B$BPerhaps she is indicating that there is a druid you can speak to further down the road?$b"
@@ -4722,11 +4725,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2844]
 # ## txt 0 (1)	=> "These once beautiful woods suffer under a terrible curse! Corrupting forces twist the life here into shadows of their former selves. If you are not an agent of this corruption, then perhaps you can aid me in reclaiming Felwood!"
-# == fem[5208]	   "These once beautiful woods suffer under a terrible curse! Corrupting forces twist the life here into shadows of their former selves. If you are not an agent of this corruption, then perhaps you can aid me in reclaiming Felwood!"
+# == fem[5204]	   "These once beautiful woods suffer under a terrible curse! Corrupting forces twist the life here into shadows of their former selves. If you are not an agent of this corruption, then perhaps you can aid me in reclaiming Felwood!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2844, 1, 5208);
+ VALUES (2844, 1, 5204);
 
 # -------------------------------------------------------------------------------- [2845]
 # ## txt 0 (1)	=> ""Darnassae?"$B$BThe night elf druid looks at you expectantly, but it is clear you cannot verbally communicate with her. Undaunted, she points to herself and smiles. She points at you and smiles once more. She finally motions several times down the path to the north.$B$BPerhaps she is indicating that there is a druid you can speak to further up the road?"
@@ -4738,11 +4741,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2846]
 # ## txt 0 (1)	=> "HELP!!!!"
-# == fem[13383]	   "HELP!!!"
+# == mal[5211]	   "HELP!!!!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2846, 1, 13383);
+ VALUES (2846, 1, 5211);
 
 # -------------------------------------------------------------------------------- [2847]
 # ## txt 0 (1)	=> "Did Crest send you?"
@@ -4754,19 +4757,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [2848]
 # ## txt 0 (1)	=> "There are plants in Felwood that may be saved from corruption when Cenarion plant salve is applied to them. I know how to make the salve from several different kinds of items; based on your skill set, you may find that you have multiple options to assist me.$B$BYou will also need a Cenarion beacon for your work here; it is a device that allows you to see the taint and corruption of nature that the naked eye will miss."
-# == fem[5241]	   "There are plants in Felwood that may be saved from corruption when Cenarion plant salve is applied to them. I know how to make the salve from several different kinds of items; based on your skill set, you may find that you have multiple options to assist me.$B$BYou will also need a Cenarion beacon for your work here; it is a device that allows you to see the taint and corruption of nature that the naked eye will miss."
+# == fem[5240]	   "There are plants in Felwood that may be saved from corruption when Cenarion plant salve is applied to them. I know how to make the salve from several different kinds of items; based on your skill set, you may find that you have multiple options to assist me.$B$BYou will also need a Cenarion beacon for your work here; it is a device that allows you to see the taint and corruption of nature that the naked eye will miss."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2848, 1, 5241);
+ VALUES (2848, 1, 5240);
 
 # -------------------------------------------------------------------------------- [2849]
 # ## txt 0 (1)	=> "There are plants in Felwood that may be saved from corruption when Cenarion plant salve is applied to them. I know how to make the salve from several different kinds of items; based on your skill set, you may find that you have multiple options to assist me.$B$BYou will also need a Cenarion beacon for your work here; it is a device that allows you to see the taint and corruption of nature that the naked eye will miss."
-# == fem[5241]	   "There are plants in Felwood that may be saved from corruption when Cenarion plant salve is applied to them. I know how to make the salve from several different kinds of items; based on your skill set, you may find that you have multiple options to assist me.$B$BYou will also need a Cenarion beacon for your work here; it is a device that allows you to see the taint and corruption of nature that the naked eye will miss."
+# == fem[5240]	   "There are plants in Felwood that may be saved from corruption when Cenarion plant salve is applied to them. I know how to make the salve from several different kinds of items; based on your skill set, you may find that you have multiple options to assist me.$B$BYou will also need a Cenarion beacon for your work here; it is a device that allows you to see the taint and corruption of nature that the naked eye will miss."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (2849, 1, 5241);
+ VALUES (2849, 1, 5240);
 
 # -------------------------------------------------------------------------------- [2850]
 # ## txt 0 (1)	=> "The remains are covered in flies and maggots."
@@ -5105,19 +5108,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3046]
 # ## txt 0 (1)	=> "I have observed four different kinds of plants that have been affected by the corruption: the songflower, the windblossom, the whipper root, and the night dragon plant. The songflower and windblossom are common plants in Felwood, while the whipper root and night dragon are seen less frequently. All are a vital part of Felwood's ecosystem."
-# == fem[5386]	   "I have observed four different kinds of plants that have been affected by the corruption: the songflower, the windblossom, the whipper root, and the night dragon plant. The songflower and windblossom are common plants in Felwood, while the whipper root and night dragon are seen less frequently. All are a vital part of Felwood's ecosystem."
+# == fem[5385]	   "I have observed four different kinds of plants that have been affected by the corruption: the songflower, the windblossom, the whipper root, and the night dragon plant. The songflower and windblossom are common plants in Felwood, while the whipper root and night dragon are seen less frequently. All are a vital part of Felwood's ecosystem."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3046, 1, 5386);
+ VALUES (3046, 1, 5385);
 
 # -------------------------------------------------------------------------------- [3047]
 # ## txt 0 (1)	=> "I have observed four different kinds of plants that have been affected by the corruption: the songflower, the windblossom, the whipper root, and the night dragon plant. The songflower and windblossom are common plants in Felwood, while the whipper root and night dragon are seen less frequently. All are a vital part of Felwood's ecosystem."
-# == fem[5386]	   "I have observed four different kinds of plants that have been affected by the corruption: the songflower, the windblossom, the whipper root, and the night dragon plant. The songflower and windblossom are common plants in Felwood, while the whipper root and night dragon are seen less frequently. All are a vital part of Felwood's ecosystem."
+# == fem[5385]	   "I have observed four different kinds of plants that have been affected by the corruption: the songflower, the windblossom, the whipper root, and the night dragon plant. The songflower and windblossom are common plants in Felwood, while the whipper root and night dragon are seen less frequently. All are a vital part of Felwood's ecosystem."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3047, 1, 5386);
+ VALUES (3047, 1, 5385);
 
 # -------------------------------------------------------------------------------- [3048]
 # ## txt 0 (1)	=> "This was the site of a great battle. Many great battles."
@@ -5153,11 +5156,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3061]
 # ## txt 0 (0)	=> "Do you prefer guns or bows?"
-# == mal[52385]	   "Do you prefer guns or bows?"
+# == mal[7647]	   "Do you prefer guns or bows?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3061, 0, 52385);
+ VALUES (3061, 0, 7647);
 
 # -------------------------------------------------------------------------------- [3073]
 # ## txt 0 (1)	=> "You'll have to give me a moment, $c, the naga are attacking us right now. I'll speak to you as soon as the attack is done!"
@@ -6443,11 +6446,11 @@ INSERT INTO `npc_text_broadcast_text`
 # == mal[5883]	   "Killian Hagey teach skinning in Rogues' Quarter on inner ring."
 
 # ## txt 1 (20)	=> "Us have skinning hook. We get it from Killian Hagey who teach us how to skin kills. You have nice skin. You find him on inner ring of Rogues' Quarter."
-# == fem[36281]	   "Us have skinning hook. We get it from Killian Hagey who teach us how to skin kills. You have nice skin. You find him on inner ring of Rogues' Quarter."
+# == mal[5884]	   "Us have skinning hook. We get it from Killian Hagey who teach us how to skin kills. You have nice skin. You find him on inner ring of Rogues' Quarter."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1)
- VALUES (3538, 80, 5883, 20, 36281);
+ VALUES (3538, 80, 5883, 20, 5884);
 
 # -------------------------------------------------------------------------------- [3539]
 # ## txt 0 (80)	=> "You look for Josef Gregorian. He in Magic Quarter on inner ring side of green canal."
@@ -6470,27 +6473,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3541]
 # ## txt 0 (100)	=> "Which profession?"
-# == mal[6775]	   "Which profession?"
+# == mal[3459]	   "Which profession?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3541, 100, 6775);
+ VALUES (3541, 100, 3459);
 
 # -------------------------------------------------------------------------------- [3542]
 # ## txt 0 (100)	=> "Which trainer do you seek?"
-# == mal[6769]	   "Which trainer do you seek?"
+# == mal[3458]	   "Which trainer do you seek?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3542, 100, 6769);
+ VALUES (3542, 100, 3458);
 
 # -------------------------------------------------------------------------------- [3543]
 # ## txt 0 (100)	=> "What are you looking for?"
-# == mal[21585]	   "What are you looking for?"
+# == mal[3425]	   "What are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3543, 100, 21585);
+ VALUES (3543, 100, 3425);
 
 # -------------------------------------------------------------------------------- [3545]
 # ## txt 0 (1)	=> "Listen to the stories of an elder. $N. I have many to speak of..."
@@ -6510,11 +6513,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3550]
 # ## txt 0 (1)	=> "Grrr..."
-# == mal[48704]	   "Grrrr..."
+# == mal[5935]	   "Grrr..."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3550, 1, 48704);
+ VALUES (3550, 1, 5935);
 
 # -------------------------------------------------------------------------------- [3553]
 # ## txt 0 (1)	=> "I came to the Crossroads from the south seeking help, $c, but I find only cowards who turn their backs on me--even the mighty Thork insults me so. He is a good leader, but his dismissal of my plea causes me greater anger.$B$BHe claims my rage makes me hasty--that it clouds my judgement--but I will not rest until I have vengeance!"
@@ -7400,19 +7403,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3939]
 # ## txt 0 (1)	=> "The time has come, my $g brother : sister; in arms, to take back the night from the Scourge!"
-# == fem[6480]	   "The time has come, my $g brother : sister; in arms, to take back the night from the Scourge!"
+# == fem[6479]	   "The time has come, my $g brother : sister; in arms, to take back the night from the Scourge!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3939, 1, 6480);
+ VALUES (3939, 1, 6479);
 
 # -------------------------------------------------------------------------------- [3940]
 # ## txt 0 (1)	=> "The time has come, my $g brother : sister; in arms, to take back the night from the Scourge!"
-# == fem[6480]	   "The time has come, my $g brother : sister; in arms, to take back the night from the Scourge!"
+# == fem[6479]	   "The time has come, my $g brother : sister; in arms, to take back the night from the Scourge!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3940, 1, 6480);
+ VALUES (3940, 1, 6479);
 
 # -------------------------------------------------------------------------------- [3942]
 # ## txt 0 (1)	=> "By the grace of Elune, I am pleased to offer you the finest steed found anywhere in Teldrassil, and perhaps the world - the nightsaber. For years, the Sentinel Army has relied on the value of these companions.$B$BTake your time friend and examine each one to your satisfaction. I am sure you will not be disappointed."
@@ -7456,11 +7459,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3959]
 # ## txt 0 (1)	=> "Greetings, $r."
-# == mal[56266]	   "Greetings, $r."
+# == mal[6498]	   "Greetings, $r."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3959, 1, 56266);
+ VALUES (3959, 1, 6498);
 
 # -------------------------------------------------------------------------------- [3960]
 # ## txt 0 (1)	=> "Hail, $c!"
@@ -7472,11 +7475,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3961]
 # ## txt 0 (1)	=> "What do you want?"
-# == mal[56291]	   "What do you want?"
+# == mal[2875]	   "What do you want?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3961, 1, 56291);
+ VALUES (3961, 1, 2875);
 
 # -------------------------------------------------------------------------------- [3974]
 # ## txt 0 (1)	=> "The Light be with ya, $c. How can I help ya?"
@@ -7520,11 +7523,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3979]
 # ## txt 0 (1)	=> "Well now $N, let's get to work on those cauldrons! If you're going to collect the components we need, then get a vitreous focuser from me. You'll need to have it on you to identify the necessary resources found on the Scourge that will turn those cauldrons.$B$BYou'll also need a dose of arcane quickener for the cauldrons. It's not cheap, nor is it stable. Once you have it, you'll only have thirty minutes to use it before it expires on you; be smart about buying it."
-# == mal[6525]	   "Well now $N, let's get to work on those cauldrons! If you're going to collect the components we need, then get a vitreous focuser from me. You'll need to have it on you to identify the necessary resources found on the Scourge that will turn those cauldrons.$B$BYou'll also need a dose of arcane quickener for the cauldrons. It's not cheap, nor is it stable. Once you have it, you'll only have thirty minutes to use it before it expires on you; be smart about buying it."
+# == mal[6515]	   "Well now $N, let's get to work on those cauldrons! If you're going to collect the components we need, then get a vitreous focuser from me. You'll need to have it on you to identify the necessary resources found on the Scourge that will turn those cauldrons.$B$BYou'll also need a dose of arcane quickener for the cauldrons. It's not cheap, nor is it stable. Once you have it, you'll only have thirty minutes to use it before it expires on you; be smart about buying it."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3979, 1, 6525);
+ VALUES (3979, 1, 6515);
 
 # -------------------------------------------------------------------------------- [3980]
 # ## txt 0 (1)	=> "Based on the sample of the toxin you provided for us, we think you will need the following: an arcane quickener, six osseous agitators, and four pieces of runecloth. With the vitreous focuser in tow, acquire the agitators from skeletal undead here in the Plaguelands!$B$BOnce you have these items, you should be able to load the counter agent into that cauldron."
@@ -7536,19 +7539,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3981]
 # ## txt 0 (1)	=> "Based on the sample of the toxin you provided for us, we think you will need the following: an arcane quickener, five somatic intensifiers, and and four pieces of runecloth. With the vitreous focuser in tow, acquire the intensifiers from zombie or ghoul undead here in the Plaguelands!$B$BOnce you have these items, you should be able to load the counter agent into that cauldron."
-# == mal[6522]	   "Based on the sample of the toxin you provided for us, we think you will need the following: an arcane quickener, five somatic intensifiers, and and four pieces of runecloth. With the vitreous focuser in tow, acquire the intensifiers from zombie or ghoul undead here in the Plaguelands!$B$BOnce you have these items, you should be able to load the counter agent into that cauldron."
+# == mal[6521]	   "Based on the sample of the toxin you provided for us, we think you will need the following: an arcane quickener, five somatic intensifiers, and and four pieces of runecloth. With the vitreous focuser in tow, acquire the intensifiers from zombie or ghoul undead here in the Plaguelands!$B$BOnce you have these items, you should be able to load the counter agent into that cauldron."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3981, 1, 6522);
+ VALUES (3981, 1, 6521);
 
 # -------------------------------------------------------------------------------- [3982]
 # ## txt 0 (1)	=> "Based on the sample of the toxin you provided for us, we think you will need the following: an arcane quickener, five somatic intensifiers, and and four pieces of runecloth. With the vitreous focuser in tow, acquire the intensifiers from zombie or ghoul undead here in the Plaguelands!$B$BOnce you have these items, you should be able to load the counter agent into that cauldron."
-# == mal[6522]	   "Based on the sample of the toxin you provided for us, we think you will need the following: an arcane quickener, five somatic intensifiers, and and four pieces of runecloth. With the vitreous focuser in tow, acquire the intensifiers from zombie or ghoul undead here in the Plaguelands!$B$BOnce you have these items, you should be able to load the counter agent into that cauldron."
+# == mal[6521]	   "Based on the sample of the toxin you provided for us, we think you will need the following: an arcane quickener, five somatic intensifiers, and and four pieces of runecloth. With the vitreous focuser in tow, acquire the intensifiers from zombie or ghoul undead here in the Plaguelands!$B$BOnce you have these items, you should be able to load the counter agent into that cauldron."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3982, 1, 6522);
+ VALUES (3982, 1, 6521);
 
 # -------------------------------------------------------------------------------- [3983]
 # ## txt 0 (1)	=> "Based on the sample of the toxin you provided for us, we think you will need the following: an arcane quickener, four ectoplasmic resonators, and four pieces of runecloth. With the vitreous focuser in tow, acquire the resonators from wraith and ghostly undead here in the Plaguelands!$B$BOnce you have these items, you should be able to load the counter agent into that cauldron."
@@ -7568,11 +7571,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [3985]
 # ## txt 0 (1)	=> "Well now $N, let's get to work on those cauldrons! If you're going to collect the components we need, then get a vitreous focuser from me. You'll need to have it on you to identify the necessary resources found on the Scourge that will turn those cauldrons.$B$BYou'll also need a dose of arcane quickener for the cauldrons. It's not cheap, nor is it stable. Once you have it, you'll only have thirty minutes to use it before it expires on you; be smart about buying it."
-# == mal[6525]	   "Well now $N, let's get to work on those cauldrons! If you're going to collect the components we need, then get a vitreous focuser from me. You'll need to have it on you to identify the necessary resources found on the Scourge that will turn those cauldrons.$B$BYou'll also need a dose of arcane quickener for the cauldrons. It's not cheap, nor is it stable. Once you have it, you'll only have thirty minutes to use it before it expires on you; be smart about buying it."
+# == mal[6515]	   "Well now $N, let's get to work on those cauldrons! If you're going to collect the components we need, then get a vitreous focuser from me. You'll need to have it on you to identify the necessary resources found on the Scourge that will turn those cauldrons.$B$BYou'll also need a dose of arcane quickener for the cauldrons. It's not cheap, nor is it stable. Once you have it, you'll only have thirty minutes to use it before it expires on you; be smart about buying it."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (3985, 1, 6525);
+ VALUES (3985, 1, 6515);
 
 # -------------------------------------------------------------------------------- [3996]
 # ## txt 0 (1)	=> "The Scourge's plague still dominates the zone, and we have a long way to go before the plague will be altered enough to affect them. Collect the necessary resources and help out the war effort!"
@@ -7850,27 +7853,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4035]
 # ## txt 0 (100)	=> "Which trainer do you seek?"
-# == mal[6769]	   "Which trainer do you seek?"
+# == mal[3458]	   "Which trainer do you seek?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4035, 100, 6769);
+ VALUES (4035, 100, 3458);
 
 # -------------------------------------------------------------------------------- [4036]
 # ## txt 0 (100)	=> "Which profession?"
-# == mal[6775]	   "Which profession?"
+# == mal[3459]	   "Which profession?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4036, 100, 6775);
+ VALUES (4036, 100, 3459);
 
 # -------------------------------------------------------------------------------- [4037]
 # ## txt 0 (100)	=> "What are you looking for?"
-# == mal[21585]	   "What are you looking for?"
+# == mal[3425]	   "What are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4037, 100, 21585);
+ VALUES (4037, 100, 3425);
 
 # -------------------------------------------------------------------------------- [4039]
 # ## txt 0 (1)	=> "With the cauldrons breeched, we are now able to introduce the counter agent into the environment. This should give the scourge a taste of their own medicine, as it were!$B$BCheck with Alchemist Arbington on information regarding the reagents needed to use in the cauldrons. I will be handling all information reports on how we are doing overall in turning the plague against the Scourge!"
@@ -8168,27 +8171,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4069]
 # ## txt 0 (100)	=> "Which trainer do you seek?"
-# == mal[6769]	   "Which trainer do you seek?"
+# == mal[3458]	   "Which trainer do you seek?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4069, 100, 6769);
+ VALUES (4069, 100, 3458);
 
 # -------------------------------------------------------------------------------- [4070]
 # ## txt 0 (100)	=> "Which profession?"
-# == mal[6775]	   "Which profession?"
+# == mal[3459]	   "Which profession?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4070, 100, 6775);
+ VALUES (4070, 100, 3459);
 
 # -------------------------------------------------------------------------------- [4072]
 # ## txt 0 (100)	=> "What are you looking for?"
-# == mal[21585]	   "What are you looking for?"
+# == mal[3425]	   "What are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4072, 100, 21585);
+ VALUES (4072, 100, 3425);
 
 # -------------------------------------------------------------------------------- [4074]
 # ## txt 0 (80)	=> "We don't have a bank here in Brill, you'll have to go to the Undercity for that. At the back of the Ruins of Lordaeron to the south are elevators that will take you down into the Undercity. Once there ask one of the Undercity Guardians for more precise directions."
@@ -8412,27 +8415,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4095]
 # ## txt 0 (100)	=> "Which trainer do you seek?"
-# == mal[6769]	   "Which trainer do you seek?"
+# == mal[3458]	   "Which trainer do you seek?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4095, 100, 6769);
+ VALUES (4095, 100, 3458);
 
 # -------------------------------------------------------------------------------- [4096]
 # ## txt 0 (100)	=> "Which profession?"
-# == mal[6775]	   "Which profession?"
+# == mal[3459]	   "Which profession?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4096, 100, 6775);
+ VALUES (4096, 100, 3459);
 
 # -------------------------------------------------------------------------------- [4097]
 # ## txt 0 (100)	=> "What are you looking for?"
-# == mal[21585]	   "What are you looking for?"
+# == mal[3425]	   "What are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4097, 100, 21585);
+ VALUES (4097, 100, 3425);
 
 # -------------------------------------------------------------------------------- [4113]
 # ## txt 0 (1)	=> "You've already done me a great service, $N. For that I thank you.$B$BThe least I can do now is tell you what brought me here: My long time friend Trey Lightforge and I came to Jaedenar to investigate the Shadow Council when they caught us unprepared. They took Trey deeper into Shadow Hold and put me in here after taking all of our equipment... I can still hear his screams from below, $N. They were... inhuman. I don't know what they've done to him, but they will pay for it."
@@ -8613,11 +8616,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4174]
 # ## txt 0 (1)	=> "Join the fight against evil! Accept a commission within the Argent Dawn today!"
-# == mal[6881]	   "Join the fight against evil! Accept a commission within the Argent Dawn today!"
+# == fem[6877]	   "Join the fight against evil! Accept a commission within the Argent Dawn today!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4174, 1, 6881);
+ VALUES (4174, 1, 6877);
 
 # -------------------------------------------------------------------------------- [4193]
 # ## txt 0 (1)	=> "The Argent Dawn salutes you, $c! The name's Lightspark, and I'm an authorized equipment and materiel quartermaster for the Dawn.$B$BAs you fight evil under our commission - all the while earning our respect and trust - you'll earn valor tokens from Officer Pureheart. Tokens serve two purposes: use them to gain increased standing within our ranks, or use them as tender in acquiring special items.$B$BAs you improve your standing with the Dawn, you'll discover that more items will be made available to you."
@@ -8629,11 +8632,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4194]
 # ## txt 0 (1)	=> "Join the fight against evil! Accept a commission within the Argent Dawn today!"
-# == mal[6881]	   "Join the fight against evil! Accept a commission within the Argent Dawn today!"
+# == fem[6877]	   "Join the fight against evil! Accept a commission within the Argent Dawn today!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4194, 1, 6881);
+ VALUES (4194, 1, 6877);
 
 # -------------------------------------------------------------------------------- [4233]
 # ## txt 0 (1)	=> "Greetings, $c.$B$BThose Sentinels over there have allowed me to share their camp as long as I promise no trouble will follow--I am sure you can appreciate the need for diplomacy while here, yes?$B$BI am here investigating disturbances to the land, and since it aids their cause also, they have agreed that my presence here could only aid the tenuous alliance between all of Azeroth's races. If you wish to aid me, then I would appreciate it, but regardless, please try not to cause any trouble."
@@ -8665,11 +8668,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4259]
 # ## txt 0 (1)	=> "What are you looking for?"
-# == mal[21585]	   "What are you looking for?"
+# == mal[3425]	   "What are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4259, 1, 21585);
+ VALUES (4259, 1, 3425);
 
 # -------------------------------------------------------------------------------- [4260]
 # ## txt 0 (1)	=> "A bank? Well, the closest bank around here is The Stormwind Counting House. It's just up the road in Stormwind not far from the gates."
@@ -8947,11 +8950,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4287]
 # ## txt 0 (1)	=> "What do ye need directions to?"
-# == mal[6986]	   "What do ye need directions to?"
+# == mal[5077]	   "What do ye need directions to?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4287, 1, 6986);
+ VALUES (4287, 1, 5077);
 
 # -------------------------------------------------------------------------------- [4288]
 # ## txt 0 (1)	=> "The nearest bank ye'll find is The Vault in Ironforge, $glad : lass;. "
@@ -8999,11 +9002,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4292]
 # ## txt 0 (1)	=> "Which class trainer might ye be looking for?"
-# == mal[7000]	   "Which class trainer might ye be looking for?"
+# == mal[5089]	   "Which class trainer might ye be looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4292, 1, 7000);
+ VALUES (4292, 1, 5089);
 
 # -------------------------------------------------------------------------------- [4293]
 # ## txt 0 (60)	=> "There's only one hunter around here I would have ye talk to, and that would be Grif Wildheart. Ye'll find him standing just outside the smithy in Kharanos."
@@ -9084,11 +9087,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4300]
 # ## txt 0 (1)	=> "Which profession trainer would ye be looking for?"
-# == mal[7023]	   "Which profession trainer would ye be looking for?"
+# == mal[5113]	   "Which profession trainer would ye be looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4300, 1, 7023);
+ VALUES (4300, 1, 5113);
 
 # -------------------------------------------------------------------------------- [4301]
 # ## txt 0 (1)	=> "Nope, no alchemists out here in Dun Morogh. Ye best take a look in Ironforge for them... try the gnomes in Tinker Town."
@@ -9555,11 +9558,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4435]
 # ## txt 0 (1)	=> "The Light protect you, $c."
-# == mal[43832]	   "The Light protect you, $c."
+# == mal[7158]	   "The Light protect you, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4435, 1, 43832);
+ VALUES (4435, 1, 7158);
 
 # -------------------------------------------------------------------------------- [4436]
 # ## txt 0 (1)	=> "I hope the Light is with you, $N. Is there anything I can do for you today?"
@@ -9571,11 +9574,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4437]
 # ## txt 0 (1)	=> "Elune be with you, $c."
-# == fem[11517]	   "Elune be with you, $c."
+# == mal[7165]	   "Elune be with you, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4437, 1, 11517);
+ VALUES (4437, 1, 7165);
 
 # -------------------------------------------------------------------------------- [4438]
 # ## txt 0 (1)	=> "My wisdom is yours, as is my knowledge. What can I do for you, $N?"
@@ -9587,11 +9590,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4439]
 # ## txt 0 (1)	=> "Yes, $c?"
-# == mal[35501]	   "Yes, $c?"
+# == mal[7163]	   "Yes, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4439, 1, 35501);
+ VALUES (4439, 1, 7163);
 
 # -------------------------------------------------------------------------------- [4440]
 # ## txt 0 (1)	=> "You be watchin' yerself, $c. Respect our ways, or a curse be on you and yours."
@@ -9603,11 +9606,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4441]
 # ## txt 0 (1)	=> "I do what me can to train you in the priestly ways, if that what you be here for."
-# == mal[11071]	   "I do what me can to train you in the priestly ways, if that what you be here for."
+# == mal[7162]	   "I do what me can to train you in the priestly ways, if that what you be here for."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4441, 1, 11071);
+ VALUES (4441, 1, 7162);
 
 # -------------------------------------------------------------------------------- [4442]
 # ## txt 0 (1)	=> "What can this insignificant servant do for you, $N? Training perhaps?"
@@ -9725,11 +9728,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4474]
 # ## txt 0 (1)	=> "Hello, $N."
-# == fem[70566]	   "Hello, $n."
+# == mal[7215]	   "Hello, $N."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4474, 1, 70566);
+ VALUES (4474, 1, 7215);
 
 # -------------------------------------------------------------------------------- [4475]
 # ## txt 0 (1)	=> "Please, feel free to speak to me anytime, $N. You have served Magatha well. I am sure she will call upon you in the future."
@@ -10095,11 +10098,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4779]
 # ## txt 0 (1)	=> "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BWe are the preservers of the balance, now and forever, as Malfurion lies in the Dreaming. Never forget this."
-# == mal[8323]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BWe are the preservers of the balance, now and forever, as Malfurion lies in the Dreaming. Never forget this."
+# == mal[7456]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BWe are the preservers of the balance, now and forever, as Malfurion lies in the Dreaming. Never forget this."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4779, 1, 8323);
+ VALUES (4779, 1, 7456);
 
 # -------------------------------------------------------------------------------- [4780]
 # ## txt 0 (0)	=> "Our master Malfurion remains lost in the Dreaming, $c. His is the light of a beacon that shows the way for us, and we must do everything in our power to preserve that light."
@@ -10135,11 +10138,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4784]
 # ## txt 0 (1)	=> "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BThere will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."
-# == mal[8270]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BThere will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."
+# == mal[7461]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BThere will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4784, 1, 8270);
+ VALUES (4784, 1, 7461);
 
 # -------------------------------------------------------------------------------- [4785]
 # ## txt 0 (1)	=> "We work to preserve the balance as Cenarius teaches, $c. His is the light of a beacon that shows the way for us, and we must do everything in our power to preserve that light."
@@ -10183,11 +10186,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4794]
 # ## txt 0 (1)	=> "We are but darkness and shadows. Eternal. Invisible."
-# == mal[7477]	   "We are but darkness and shadows. Eternal. Invisible."
+# == mal[3021]	   "We are but darkness and shadows. Eternal. Invisible."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4794, 1, 7477);
+ VALUES (4794, 1, 3021);
 
 # -------------------------------------------------------------------------------- [4795]
 # ## txt 0 (1)	=> "Greetings young rogue. What do you seek?"
@@ -10207,19 +10210,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4797]
 # ## txt 0 (1)	=> "Can't help ya, $n. I only train rogues."
-# == mal[7482]	   "Can't help ya, $n. I only train rogues."
+# == mal[7481]	   "Can't help ya, $n. I only train rogues."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4797, 1, 7482);
+ VALUES (4797, 1, 7481);
 
 # -------------------------------------------------------------------------------- [4798]
 # ## txt 0 (1)	=> "Can't help ya, $n. I only train rogues."
-# == mal[7482]	   "Can't help ya, $n. I only train rogues."
+# == mal[7481]	   "Can't help ya, $n. I only train rogues."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4798, 1, 7482);
+ VALUES (4798, 1, 7481);
 
 # -------------------------------------------------------------------------------- [4799]
 # ## txt 0 (1)	=> "Sorry, but I only train rogues."
@@ -10255,11 +10258,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4833]
 # ## txt 0 (1)	=> "Can't help ya, $n. I only train rogues."
-# == mal[7482]	   "Can't help ya, $n. I only train rogues."
+# == mal[7481]	   "Can't help ya, $n. I only train rogues."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4833, 1, 7482);
+ VALUES (4833, 1, 7481);
 
 # -------------------------------------------------------------------------------- [4834]
 # ## txt 0 (1)	=> "What kin I do for ye, $n?"
@@ -10271,19 +10274,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4835]
 # ## txt 0 (1)	=> "You look like the type I should watch my coin purse around. Something I can help you with?"
-# == mal[8717]	   "You look like the type I should watch my coin purse around. Something I can help you with?"
+# == mal[7492]	   "You look like the type I should watch my coin purse around. Something I can help you with?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4835, 1, 8717);
+ VALUES (4835, 1, 7492);
 
 # -------------------------------------------------------------------------------- [4837]
 # ## txt 0 (1)	=> "I don't think you want to learn anything I can teach. Might want to find a $c trainer to help you out."
-# == mal[8716]	   "I don't think you want to learn anything I can teach. Might want to find a $c trainer to help you out."
+# == mal[7493]	   "I don't think you want to learn anything I can teach. Might want to find a $c trainer to help you out."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4837, 1, 8716);
+ VALUES (4837, 1, 7493);
 
 # -------------------------------------------------------------------------------- [4838]
 # ## txt 0 (1)	=> "Come to learn from the master eh?"
@@ -10519,19 +10522,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4893]
 # ## txt 0 (1)	=> "Look at the wisdom and knowledge of the beast, and you will see yourself. Observe as the owl does, learn cleverness from the sabercat, embody the mighty spirit of the wolf."
-# == mal[8264]	   "Look at the wisdom and knowledge of the beast, and you will see yourself. Observe as the owl does, learn cleverness from the sabercat, embody the mighty spirit of the wolf."
+# == fem[7564]	   "Look at the wisdom and knowledge of the beast, and you will see yourself. Observe as the owl does, learn cleverness from the sabercat, embody the mighty spirit of the wolf."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4893, 1, 8264);
+ VALUES (4893, 1, 7564);
 
 # -------------------------------------------------------------------------------- [4913]
 # ## txt 0 (1)	=> "You're not a druid!"
-# == mal[7576]	   "You're not a druid!"
+# == fem[7572]	   "You're not a druid!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4913, 1, 7576);
+ VALUES (4913, 1, 7572);
 
 # -------------------------------------------------------------------------------- [4914]
 # ## txt 0 (1)	=> "Would you like a flight to Rut'theran Village, courtesy of the Cenarion Circle?"
@@ -10551,11 +10554,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4916]
 # ## txt 0 (1)	=> "You're not a druid!"
-# == mal[7576]	   "You're not a druid!"
+# == fem[7572]	   "You're not a druid!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4916, 1, 7576);
+ VALUES (4916, 1, 7572);
 
 # -------------------------------------------------------------------------------- [4917]
 # ## txt 0 (1)	=> "If you're looking for a flight back to Rut'theran Village, then you should talk to my night elven counterpart, Silva Fil'naveth."
@@ -10863,11 +10866,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [4997]
 # ## txt 0 (1)	=> "Do you prefer guns or bows?"
-# == mal[52385]	   "Do you prefer guns or bows?"
+# == mal[7647]	   "Do you prefer guns or bows?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (4997, 1, 52385);
+ VALUES (4997, 1, 7647);
 
 # -------------------------------------------------------------------------------- [4998]
 # ## txt 0 (1)	=> "I do not have the knowledge you seek."
@@ -10895,11 +10898,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5001]
 # ## txt 0 (1)	=> "What?"
-# == mal[72224]	   "What?"
+# == mal[1338]	   "What?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5001, 1, 72224);
+ VALUES (5001, 1, 1338);
 
 # -------------------------------------------------------------------------------- [5002]
 # ## txt 0 (1)	=> "Don't waste my time."
@@ -10935,11 +10938,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5006]
 # ## txt 0 (1)	=> "May the spirits be with you."
-# == mal[15446]	   "May the spirits be with you."
+# == mal[7660]	   "May the spirits be with you."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5006, 1, 15446);
+ VALUES (5006, 1, 7660);
 
 # -------------------------------------------------------------------------------- [5007]
 # ## txt 0 (1)	=> "Da spirits be strong wit you, mon. What kin dis troll do for ya?"
@@ -14119,11 +14122,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5565]
 # ## txt 0 (1)	=> "Good! I can tell that my efforts will not be wasted!"
-# == mal[8194]	   "Good! I can tell that my efforts will not be wasted!"
+# == mal[8189]	   "Good! I can tell that my efforts will not be wasted!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5565, 1, 8194);
+ VALUES (5565, 1, 8189);
 
 # -------------------------------------------------------------------------------- [5566]
 # ## txt 0 (1)	=> "Cloth is okay. Personally I prefer to work with human skin."
@@ -14151,11 +14154,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5570]
 # ## txt 0 (1)	=> "Good! I can tell that my efforts will not be wasted!"
-# == mal[8194]	   "Good! I can tell that my efforts will not be wasted!"
+# == mal[8189]	   "Good! I can tell that my efforts will not be wasted!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5570, 1, 8194);
+ VALUES (5570, 1, 8189);
 
 # -------------------------------------------------------------------------------- [5571]
 # ## txt 0 (1)	=> "I have outfitted kings. With the proper training, you can too."
@@ -14319,27 +14322,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5674]
 # ## txt 0 (1)	=> "If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure the more difficult it is to perform, and therefore the more expensive it becomes."
-# == fem[45480]	   "If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure the more difficult it is to perform, and therefore the more expensive it becomes."
+# == mal[8263]	   "If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure the more difficult it is to perform, and therefore the more expensive it becomes."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5674, 1, 45480);
+ VALUES (5674, 1, 8263);
 
 # -------------------------------------------------------------------------------- [5693]
 # ## txt 0 (1)	=> "The arcane only corrupts those who are weak. Keep up on your training, or you may find a similar fate."
-# == mal[8267]	   "The arcane only corrupts those who are weak. Keep up on your training, or you may find a similar fate."
+# == mal[4584]	   "The arcane only corrupts those who are weak. Keep up on your training, or you may find a similar fate."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5693, 1, 8267);
+ VALUES (5693, 1, 4584);
 
 # -------------------------------------------------------------------------------- [5694]
 # ## txt 0 (1)	=> "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BThere will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."
-# == mal[8270]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BThere will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."
+# == mal[7461]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BThere will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5694, 1, 8270);
+ VALUES (5694, 1, 7461);
 
 # -------------------------------------------------------------------------------- [5695]
 # ## txt 0 (1)	=> "What can I do for ya?"
@@ -14503,19 +14506,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5739]
 # ## txt 0 (1)	=> "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BWe are the preservers of the balance, now and forever, as Malfurion lies in the Dreaming. Never forget this."
-# == mal[8323]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BWe are the preservers of the balance, now and forever, as Malfurion lies in the Dreaming. Never forget this."
+# == mal[7456]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BWe are the preservers of the balance, now and forever, as Malfurion lies in the Dreaming. Never forget this."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5739, 1, 8323);
+ VALUES (5739, 1, 7456);
 
 # -------------------------------------------------------------------------------- [5740]
 # ## txt 0 (1)	=> "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BWe are the preservers of the balance, now and forever, as Malfurion lies in the Dreaming. Never forget this."
-# == mal[8323]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BWe are the preservers of the balance, now and forever, as Malfurion lies in the Dreaming. Never forget this."
+# == mal[7456]	   "Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you.$B$BWe are the preservers of the balance, now and forever, as Malfurion lies in the Dreaming. Never forget this."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5740, 1, 8323);
+ VALUES (5740, 1, 7456);
 
 # -------------------------------------------------------------------------------- [5753]
 # ## txt 0 (1)	=> "I see some interesting characters come and go here at the port. Watch yourself, $N. It's never clear who to trust, what with all of the shady activity that goes on here..."
@@ -14607,11 +14610,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5813]
 # ## txt 0 (1)	=> "I am an orc of medicine, $r. If you have come here to learn, I shall do my best to teach."
-# == mal[52087]	   "I am an orc of medicine, $r. If you have come here to learn, I shall do my best to teach."
+# == mal[8364]	   "I am an orc of medicine, $r. If you have come here to learn, I shall do my best to teach."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5813, 1, 52087);
+ VALUES (5813, 1, 8364);
 
 # -------------------------------------------------------------------------------- [5815]
 # ## txt 0 (1)	=> "Are you a student of the medical sciences?"
@@ -14863,115 +14866,115 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5873]
 # ## txt 0 (1)	=> "I do not believe you possess the mental acuity to grasp the nature of portal magic."
-# == mal[8456]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
+# == fem[8440]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5873, 1, 8456);
+ VALUES (5873, 1, 8440);
 
 # -------------------------------------------------------------------------------- [5874]
 # ## txt 0 (1)	=> "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
-# == mal[8457]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
+# == fem[8441]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5874, 1, 8457);
+ VALUES (5874, 1, 8441);
 
 # -------------------------------------------------------------------------------- [5875]
 # ## txt 0 (1)	=> "I do not believe you possess the mental acuity to grasp the nature of portal magic."
-# == mal[8456]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
+# == fem[8440]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5875, 1, 8456);
+ VALUES (5875, 1, 8440);
 
 # -------------------------------------------------------------------------------- [5876]
 # ## txt 0 (1)	=> "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
-# == mal[8457]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
+# == fem[8441]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5876, 1, 8457);
+ VALUES (5876, 1, 8441);
 
 # -------------------------------------------------------------------------------- [5877]
 # ## txt 0 (1)	=> "I do not believe you possess the mental acuity to grasp the nature of portal magic."
-# == mal[8456]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
+# == fem[8440]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5877, 1, 8456);
+ VALUES (5877, 1, 8440);
 
 # -------------------------------------------------------------------------------- [5878]
 # ## txt 0 (1)	=> "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
-# == mal[8457]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
+# == fem[8441]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5878, 1, 8457);
+ VALUES (5878, 1, 8441);
 
 # -------------------------------------------------------------------------------- [5879]
 # ## txt 0 (1)	=> "I do not believe you possess the mental acuity to grasp the nature of portal magic."
-# == mal[8456]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
+# == fem[8440]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5879, 1, 8456);
+ VALUES (5879, 1, 8440);
 
 # -------------------------------------------------------------------------------- [5880]
 # ## txt 0 (1)	=> "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
-# == mal[8457]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
+# == fem[8441]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5880, 1, 8457);
+ VALUES (5880, 1, 8441);
 
 # -------------------------------------------------------------------------------- [5881]
 # ## txt 0 (1)	=> "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
-# == mal[8457]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
+# == fem[8441]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5881, 1, 8457);
+ VALUES (5881, 1, 8441);
 
 # -------------------------------------------------------------------------------- [5882]
 # ## txt 0 (1)	=> "I do not believe you possess the mental acuity to grasp the nature of portal magic."
-# == mal[8456]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
+# == fem[8440]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5882, 1, 8456);
+ VALUES (5882, 1, 8440);
 
 # -------------------------------------------------------------------------------- [5883]
 # ## txt 0 (1)	=> "I do not believe you possess the mental acuity to grasp the nature of portal magic."
-# == mal[8456]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
+# == fem[8440]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5883, 1, 8456);
+ VALUES (5883, 1, 8440);
 
 # -------------------------------------------------------------------------------- [5884]
 # ## txt 0 (1)	=> "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
-# == mal[8457]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
+# == fem[8441]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5884, 1, 8457);
+ VALUES (5884, 1, 8441);
 
 # -------------------------------------------------------------------------------- [5885]
 # ## txt 0 (1)	=> "I do not believe you possess the mental acuity to grasp the nature of portal magic."
-# == mal[8456]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
+# == fem[8440]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5885, 1, 8456);
+ VALUES (5885, 1, 8440);
 
 # -------------------------------------------------------------------------------- [5886]
 # ## txt 0 (1)	=> "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
-# == mal[8457]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
+# == fem[8441]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5886, 1, 8457);
+ VALUES (5886, 1, 8441);
 
 # -------------------------------------------------------------------------------- [5894]
 # ## txt 0 (1)	=> "Monty be me name an' rats be me game."
@@ -15007,19 +15010,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5918]
 # ## txt 0 (1)	=> "Between the light and the dark, there is shadow... and those shadows have powers you have yet to see."
-# == fem[8474]	   "Between the light and the dark, there is shadow... and those shadows have powers you have yet to see."
+# == fem[8473]	   "Between the light and the dark, there is shadow... and those shadows have powers you have yet to see."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5918, 1, 8474);
+ VALUES (5918, 1, 8473);
 
 # -------------------------------------------------------------------------------- [5919]
 # ## txt 0 (1)	=> "Between the light and the dark, there is shadow... and those shadows have powers you have yet to see."
-# == fem[8474]	   "Between the light and the dark, there is shadow... and those shadows have powers you have yet to see."
+# == fem[8473]	   "Between the light and the dark, there is shadow... and those shadows have powers you have yet to see."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (5919, 1, 8474);
+ VALUES (5919, 1, 8473);
 
 # -------------------------------------------------------------------------------- [5920]
 # ## txt 0 (1)	=> "You'll find no finer rat kabob this side of Khaz Modan!"
@@ -15053,7 +15056,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [5934]
 # ## txt 0 (1)	=> "It is good to see you again, $N."
-# == mal[30419]	   "It is good to see you again, $n."
+# == mal[8481]	   "It is good to see you again, $N."
 
 # ## txt 1 (1)	=> "Greetings, $c. Have you spoken with Fahrad yet?"
 # == mal[8482]	   "Greetings, $c. Have you spoken with Fahrad yet?"
@@ -15063,7 +15066,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (5934, 1, 30419, 1, 8482, 1, 8483);
+ VALUES (5934, 1, 8481, 1, 8482, 1, 8483);
 
 # -------------------------------------------------------------------------------- [5938]
 # ## txt 0 (1)	=> "You dare set foot inside Ravenholdt Manor, worm?"
@@ -15309,11 +15312,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6073]
 # ## txt 0 (1)	=> "Our units are not upgraded, and I don't have enough supplies to upgrade them."
-# == mal[9164]	   "Our units are not upgraded, and I don't have enough supplies to upgrade them."
+# == mal[8802]	   "Our units are not upgraded, and I don't have enough supplies to upgrade them."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6073, 1, 9164);
+ VALUES (6073, 1, 8802);
 
 # -------------------------------------------------------------------------------- [6093]
 # ## txt 0 (1)	=> "The blood of our enemies shall be spilt upon the battlefield. The great elementals shall answer our call and crush all that stand in our way."
@@ -15528,19 +15531,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6164]
 # ## txt 0 (100)	=> "I don't think you want to learn anything I can teach. Might want to find a $c trainer to help you out."
-# == mal[8716]	   "I don't think you want to learn anything I can teach. Might want to find a $c trainer to help you out."
+# == mal[7493]	   "I don't think you want to learn anything I can teach. Might want to find a $c trainer to help you out."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6164, 100, 8716);
+ VALUES (6164, 100, 7493);
 
 # -------------------------------------------------------------------------------- [6165]
 # ## txt 0 (100)	=> "You look like the type I should watch my coin purse around. Something I can help you with?"
-# == mal[8717]	   "You look like the type I should watch my coin purse around. Something I can help you with?"
+# == mal[7492]	   "You look like the type I should watch my coin purse around. Something I can help you with?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6165, 100, 8717);
+ VALUES (6165, 100, 7492);
 
 # -------------------------------------------------------------------------------- [6167]
 # ## txt 0 (0)	=> "The All Seeing Eye must be recovered!"
@@ -15659,27 +15662,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6217]
 # ## txt 0 (1)	=> "Our units are upgraded to Seasoned, but I don't have enough supplies to upgrade them to Veteran."
-# == mal[9165]	   "Our units are upgraded to Seasoned, but I don't have enough supplies to upgrade them to Veteran."
+# == mal[8803]	   "Our units are upgraded to Seasoned, but I don't have enough supplies to upgrade them to Veteran."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6217, 1, 9165);
+ VALUES (6217, 1, 8803);
 
 # -------------------------------------------------------------------------------- [6218]
 # ## txt 0 (1)	=> "Our units are upgraded to Veteran, but I don't have enough supplies to upgrade them to Champion."
-# == mal[9166]	   "Our units are upgraded to Veteran, but I don't have enough supplies to upgrade them to Champion."
+# == mal[8804]	   "Our units are upgraded to Veteran, but I don't have enough supplies to upgrade them to Champion."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6218, 1, 9166);
+ VALUES (6218, 1, 8804);
 
 # -------------------------------------------------------------------------------- [6219]
 # ## txt 0 (1)	=> "I have enough supplies to upgrade our troops to seasoned."
-# == mal[9167]	   "I have enough supplies to upgrade our troops to seasoned."
+# == mal[8805]	   "I have enough supplies to upgrade our troops to seasoned."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6219, 1, 9167);
+ VALUES (6219, 1, 8805);
 
 # -------------------------------------------------------------------------------- [6222]
 # ## txt 0 (1)	=> "Our units are upgraded to Champions, but I can still collect more supplies."
@@ -15691,11 +15694,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6223]
 # ## txt 0 (1)	=> "I cannot store any more supplies. I have all I can handle!"
-# == mal[9170]	   "I cannot store any more supplies. I have all I can handle!"
+# == mal[8809]	   "I cannot store any more supplies. I have all I can handle!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6223, 1, 9170);
+ VALUES (6223, 1, 8809);
 
 # -------------------------------------------------------------------------------- [6233]
 # ## txt 0 (100)	=> "Here to learn how to wield a new weapon, or just to waste my time?"
@@ -15776,7 +15779,9 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6277]
 # ## txt 0 (100)	=> "What you want to learn, mon?"
-# ## NONE FOUND
+# ## FAR FOUND
+# -- mal[5615]	   "I'm flattered, but really I'm not interested... What? You want to know where to learn enchanting? Oh, how embarrassing! Well, you should... I'm sure you could... go see, um... Taladan! Yes, see Taladan over in the Craftsmen's Terrace!"
+# -- mal[7990]	   "Sorry, but you've reached the limit of what I can teach. If you want to learn more, go see Telonis in the Craftsmen's Terrace of Darnassus. He's pretty talented, so I hear."
 
 # -------------------------------------------------------------------------------- [6279]
 # ## txt 0 (100)	=> "I would be honored to train you in the use of the weapons that I have mastered should you have the ability to learn within you."
@@ -16350,19 +16355,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6735]
 # ## txt 0 (1)	=> "I need many more supplies in order to upgrade our units."
-# == mal[9159]	   "I need many more supplies in order to upgrade our units."
+# == mal[9132]	   "I need many more supplies in order to upgrade our units."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6735, 1, 9159);
+ VALUES (6735, 1, 9132);
 
 # -------------------------------------------------------------------------------- [6736]
 # ## txt 0 (0)	=> "I almost have enough supplies to upgrade our troops."
-# == mal[9155]	   "I almost have enough supplies to upgrade our troops."
+# == mal[9133]	   "I almost have enough supplies to upgrade our troops."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6736, 0, 9155);
+ VALUES (6736, 0, 9133);
 
 # -------------------------------------------------------------------------------- [6741]
 # ## txt 0 (1)	=> "Ugh... these pests keep me busy night and day! Haven't you seen them?$B$BI wish I could just jump down a pipe to get away from them..."
@@ -16374,135 +16379,135 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6755]
 # ## txt 0 (1)	=> "Yes, $c?"
-# == mal[35501]	   "Yes, $c?"
+# == mal[7163]	   "Yes, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6755, 1, 35501);
+ VALUES (6755, 1, 7163);
 
 # -------------------------------------------------------------------------------- [6775]
 # ## txt 0 (0)	=> "I have about half the supplies needed to upgrade to champion units."
-# == mal[9162]	   "I have about half the supplies needed to upgrade to champion units."
+# == mal[9153]	   "I have about half the supplies needed to upgrade to champion units."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6775, 0, 9162);
+ VALUES (6775, 0, 9153);
 
 # -------------------------------------------------------------------------------- [6777]
 # ## txt 0 (1)	=> "I need many more supplies in order to upgrade our units."
-# == mal[9159]	   "I need many more supplies in order to upgrade our units."
+# == mal[9132]	   "I need many more supplies in order to upgrade our units."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6777, 1, 9159);
+ VALUES (6777, 1, 9132);
 
 # -------------------------------------------------------------------------------- [6778]
 # ## txt 0 (1)	=> "I almost have enough supplies to upgrade our troops."
-# == mal[9155]	   "I almost have enough supplies to upgrade our troops."
+# == mal[9133]	   "I almost have enough supplies to upgrade our troops."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6778, 1, 9155);
+ VALUES (6778, 1, 9133);
 
 # -------------------------------------------------------------------------------- [6779]
 # ## txt 0 (1)	=> "I almost have enough supplies to upgrade to veteran units."
-# == mal[9158]	   "I almost have enough supplies to upgrade to veteran units."
+# == mal[9131]	   "I almost have enough supplies to upgrade to veteran units."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6779, 1, 9158);
+ VALUES (6779, 1, 9131);
 
 # -------------------------------------------------------------------------------- [6780]
 # ## txt 0 (1)	=> "I need many more supplies in order to upgrade our units."
-# == mal[9159]	   "I need many more supplies in order to upgrade our units."
+# == mal[9132]	   "I need many more supplies in order to upgrade our units."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6780, 1, 9159);
+ VALUES (6780, 1, 9132);
 
 # -------------------------------------------------------------------------------- [6781]
 # ## txt 0 (1)	=> "I have about half the supplies needed to upgrade to veteran units."
-# == mal[9160]	   "I have about half the supplies needed to upgrade to veteran units."
+# == mal[9134]	   "I have about half the supplies needed to upgrade to veteran units."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6781, 1, 9160);
+ VALUES (6781, 1, 9134);
 
 # -------------------------------------------------------------------------------- [6783]
 # ## txt 0 (0)	=> "I have about half the supplies needed to upgrade to champion units."
-# == mal[9162]	   "I have about half the supplies needed to upgrade to champion units."
+# == mal[9153]	   "I have about half the supplies needed to upgrade to champion units."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6783, 0, 9162);
+ VALUES (6783, 0, 9153);
 
 # -------------------------------------------------------------------------------- [6784]
 # ## txt 0 (1)	=> "I barely have any supplies for upgrades."
-# == mal[9163]	   "I barely have any supplies for upgrades."
+# == mal[9136]	   "I barely have any supplies for upgrades."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6784, 1, 9163);
+ VALUES (6784, 1, 9136);
 
 # -------------------------------------------------------------------------------- [6785]
 # ## txt 0 (1)	=> "Our units are not upgraded, and I don't have enough supplies to upgrade them."
-# == mal[9164]	   "Our units are not upgraded, and I don't have enough supplies to upgrade them."
+# == mal[8802]	   "Our units are not upgraded, and I don't have enough supplies to upgrade them."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6785, 1, 9164);
+ VALUES (6785, 1, 8802);
 
 # -------------------------------------------------------------------------------- [6786]
 # ## txt 0 (1)	=> "Our units are upgraded to Seasoned, but I don't have enough supplies to upgrade them to Veteran."
-# == mal[9165]	   "Our units are upgraded to Seasoned, but I don't have enough supplies to upgrade them to Veteran."
+# == mal[8803]	   "Our units are upgraded to Seasoned, but I don't have enough supplies to upgrade them to Veteran."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6786, 1, 9165);
+ VALUES (6786, 1, 8803);
 
 # -------------------------------------------------------------------------------- [6787]
 # ## txt 0 (1)	=> "Our units are upgraded to Veteran, but I don't have enough supplies to upgrade them to Champion."
-# == mal[9166]	   "Our units are upgraded to Veteran, but I don't have enough supplies to upgrade them to Champion."
+# == mal[8804]	   "Our units are upgraded to Veteran, but I don't have enough supplies to upgrade them to Champion."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6787, 1, 9166);
+ VALUES (6787, 1, 8804);
 
 # -------------------------------------------------------------------------------- [6788]
 # ## txt 0 (1)	=> "I have enough supplies to upgrade our troops to seasoned."
-# == mal[9167]	   "I have enough supplies to upgrade our troops to seasoned."
+# == mal[8805]	   "I have enough supplies to upgrade our troops to seasoned."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6788, 1, 9167);
+ VALUES (6788, 1, 8805);
 
 # -------------------------------------------------------------------------------- [6789]
 # ## txt 0 (0)	=> "I have enough supplies to upgrade our troops to veterans."
-# == mal[9168]	   "I have enough supplies to upgrade our troops to veterans."
+# == mal[8806]	   "I have enough supplies to upgrade our troops to veterans."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6789, 0, 9168);
+ VALUES (6789, 0, 8806);
 
 # -------------------------------------------------------------------------------- [6790]
 # ## txt 0 (1)	=> "I have enough supplies to upgrade our troops to champions."
-# == mal[9169]	   "I have enough supplies to upgrade our troops to champions."
+# == mal[8807]	   "I have enough supplies to upgrade our troops to champions."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6790, 1, 9169);
+ VALUES (6790, 1, 8807);
 
 # -------------------------------------------------------------------------------- [6791]
 # ## txt 0 (1)	=> "I cannot store any more supplies. I have all I can handle!"
-# == mal[9170]	   "I cannot store any more supplies. I have all I can handle!"
+# == mal[8809]	   "I cannot store any more supplies. I have all I can handle!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6791, 1, 9170);
+ VALUES (6791, 1, 8809);
 
 # -------------------------------------------------------------------------------- [6793]
 # ## txt 0 (1)	=> "Your skill exceeds mine, though I've heard that Old Man Heming in Booty Bay has copies of "The Bass and You". That is sure to help you increase your skill."
-# == mal[9219]	   "Your skill exceeds mine, though I've heard that Old Man Heming in Booty Bay has copies of "The Bass and You". That is sure to help you increase your skill."
+# == mal[9210]	   "Your skill exceeds mine, though I've heard that Old Man Heming in Booty Bay has copies of "The Bass and You". That is sure to help you increase your skill."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
@@ -16510,11 +16515,9 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6794]
 # ## txt 0 (0)	=> "Your skill exceeds mine, though I've heard that Old Man Heming in Booty Bay has copies of The Bass and You. That is sure to help you increase your skill."
+# ## FAR FOUND
+# -- mal[9210]	   "Your skill exceeds mine, though I've heard that Old Man Heming in Booty Bay has copies of "The Bass and You". That is sure to help you increase your skill."
 # -- mal[9219]	   "Your skill exceeds mine, though I've heard that Old Man Heming in Booty Bay has copies of "The Bass and You". That is sure to help you increase your skill."
-
-INSERT INTO `npc_text_broadcast_text`
- (Id, Prob0, BroadcastTextId0)
- VALUES (6794, 1, 9219);
 
 # -------------------------------------------------------------------------------- [6795]
 # ## txt 0 (1)	=> "Please, please, please tell me you are here to get me out of these shackles. There's got to be a key somewhere...$B$BAt the very least, maybe you can take out Guard Slip'kik. I think I might be able to help you out!$B$BSee that broken trap over yonder? The ogres are too stupid to figure out how to fix it. Clearly, it needs a thorium widget and some frost oil. If you fix it, I bet you could lure Slip'kik into it, and BLAMMO - trapped ogre guard!"
@@ -16574,11 +16577,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6838]
 # ## txt 0 (0)	=> "The West Frostwolf Tower protects the gate between Frostwolf Village and Frostwolf Keep.$B$BIt is controlled by the Horde."
-# == mal[9288]	   "The West Frostwolf Tower protects the gate between Frostwolf Village and Frostwolf Keep.$B$BIt is controlled by the Horde."
+# == mal[9276]	   "The West Frostwolf Tower protects the gate between Frostwolf Village and Frostwolf Keep.$B$BIt is controlled by the Horde."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6838, 0, 9288);
+ VALUES (6838, 0, 9276);
 
 # -------------------------------------------------------------------------------- [6842]
 # ## txt 0 (1)	=> "I know much, listen and be educated, $r."
@@ -17176,11 +17179,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6948]
 # ## txt 0 (1)	=> "Can I help you?"
-# == mal[45290]	   "Can I help you?"
+# == mal[9531]	   "Can I help you?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6948, 1, 45290);
+ VALUES (6948, 1, 9531);
 
 # -------------------------------------------------------------------------------- [6949]
 # ## txt 0 (1)	=> "Aye, but I know it by its true name - Eldre'Thalas. It was a bastion of magical power for the night elves many, many years ago.$B$BYou know of Eldre'Thalas, young one? One might say that is coincidental to my current plight... but I am one not to believe in coincidence."
@@ -17264,19 +17267,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [6959]
 # ## txt 0 (1)	=> "You will need to find Nat Pagle in Dustwallow Marsh to get any better than you are currently."
-# == mal[9556]	   "You will need to find Nat Pagle in Dustwallow Marsh to get any better than you are currently."
+# == mal[9555]	   "You will need to find Nat Pagle in Dustwallow Marsh to get any better than you are currently."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6959, 1, 9556);
+ VALUES (6959, 1, 9555);
 
 # -------------------------------------------------------------------------------- [6960]
 # ## txt 0 (1)	=> "You will need to find Nat Pagle in Dustwallow Marsh to get any better than you are currently."
-# == mal[9556]	   "You will need to find Nat Pagle in Dustwallow Marsh to get any better than you are currently."
+# == mal[9555]	   "You will need to find Nat Pagle in Dustwallow Marsh to get any better than you are currently."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (6960, 1, 9556);
+ VALUES (6960, 1, 9555);
 
 # -------------------------------------------------------------------------------- [6961]
 # ## txt 0 (1)	=> "I can teach you fishing skills."
@@ -18599,7 +18602,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [7354]
 # ## txt 0 (1)	=> "Can't you see I've got work to do here?"
-# == mal[21967]	   "Can't you see I've got work to do here?"
+# == mal[10058]	   "Can't you see I've got work to do here?"
 
 # ## txt 1 (1)	=> "Faire's a coming!"
 # == mal[10059]	   "Faire's a coming!"
@@ -18612,7 +18615,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (7354, 1, 21967, 1, 10059, 1, 10060, 1, 10061);
+ VALUES (7354, 1, 10058, 1, 10059, 1, 10060, 1, 10061);
 
 # -------------------------------------------------------------------------------- [7355]
 # ## txt 0 (1)	=> "Welcome to the Faire young one! We have collected wonders from all over the world for your perusal. Oh and please let me know if you manage to collect a set of the lesser darkmoon cards, as the master...I mean I would be keenly interested in them."
@@ -18704,54 +18707,54 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [7366]
 # ## txt 0 (1)	=> "The Darkmoon Faire is coming to town! Don't miss it!"
-# == mal[10097]	   "The Darkmoon Faire is coming to town! Don't miss it!"
+# == mal[10093]	   "The Darkmoon Faire is coming to town! Don't miss it!"
 
 # ## txt 1 (1)	=> "Be sure to catch all the amazing sights and wonders of the Darkmoon Faire when it comes to town!"
-# == mal[10100]	   "Be sure to catch all the amazing sights and wonders of the Darkmoon Faire when it comes to town!"
+# == mal[10094]	   "Be sure to catch all the amazing sights and wonders of the Darkmoon Faire when it comes to town!"
 
 # ## txt 2 (1)	=> "The Darkmoon Faire is coming! There is fun for children of ALL ages! Come one, come all!"
-# == mal[10098]	   "The Darkmoon Faire is coming! There is fun for children of ALL ages! Come one, come all!"
+# == mal[10095]	   "The Darkmoon Faire is coming! There is fun for children of ALL ages! Come one, come all!"
 
 # ## txt 3 (1)	=> "Step right up and hear about the most amazing spectacle in all of Azeroth - the Darkmoon Faire! Huzzah!"
-# == mal[10099]	   "Step right up and hear about the most amazing spectacle in all of Azeroth - the Darkmoon Faire! Huzzah!"
+# == mal[10096]	   "Step right up and hear about the most amazing spectacle in all of Azeroth - the Darkmoon Faire! Huzzah!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (7366, 1, 10097, 1, 10100, 1, 10098, 1, 10099);
+ VALUES (7366, 1, 10093, 1, 10094, 1, 10095, 1, 10096);
 
 # -------------------------------------------------------------------------------- [7374]
 # ## txt 0 (1)	=> "It's here! The Darkmoon Faire is now open for business! Be sure to see the most exciting show on all of Azeroth!"
-# == mal[10105]	   "It's here! The Darkmoon Faire is now open for business! Be sure to see the most exciting show on all of Azeroth!"
+# == mal[10101]	   "It's here! The Darkmoon Faire is now open for business! Be sure to see the most exciting show on all of Azeroth!"
 
 # ## txt 1 (1)	=> "The Darkmoon Faire has come to town! Be sure to experience the most thrilling show you'll ever see!"
 # == mal[10102]	   "The Darkmoon Faire has come to town! Be sure to experience the most thrilling show you'll ever see!"
 
 # ## txt 2 (1)	=> "The Darkmoon Faire will only be live for a short time before the curtains are drawn closed. Be sure to visit it today!"
-# == mal[10107]	   "The Darkmoon Faire will only be live for a short time before the curtains are drawn closed. Be sure to visit it today!"
+# == mal[10103]	   "The Darkmoon Faire will only be live for a short time before the curtains are drawn closed. Be sure to visit it today!"
 
 # ## txt 3 (1)	=> "Boys and girls - children of all ages - the Darkmoon Faire has arrived! Huzzah!"
-# == mal[10108]	   "Boys and girls - children of all ages - the Darkmoon Faire has arrived! Huzzah!"
+# == mal[10104]	   "Boys and girls - children of all ages - the Darkmoon Faire has arrived! Huzzah!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (7374, 1, 10105, 1, 10102, 1, 10107, 1, 10108);
+ VALUES (7374, 1, 10101, 1, 10102, 1, 10103, 1, 10104);
 
 # -------------------------------------------------------------------------------- [7375]
 # ## txt 0 (1)	=> "It's here! The Darkmoon Faire is now open for business! Be sure to see the most exciting show on all of Azeroth!"
-# == mal[10105]	   "It's here! The Darkmoon Faire is now open for business! Be sure to see the most exciting show on all of Azeroth!"
+# == mal[10101]	   "It's here! The Darkmoon Faire is now open for business! Be sure to see the most exciting show on all of Azeroth!"
 
 # ## txt 1 (1)	=> "The Darkmoon Faire has come to town! Be sure to experience the most thrilling show you'll ever see?"
 # == mal[10106]	   "The Darkmoon Faire has come to town! Be sure to experience the most thrilling show you'll ever see?"
 
 # ## txt 2 (1)	=> "The Darkmoon Faire will only be live for a short time before the curtains are drawn closed. Be sure to visit it today!"
-# == mal[10107]	   "The Darkmoon Faire will only be live for a short time before the curtains are drawn closed. Be sure to visit it today!"
+# == mal[10103]	   "The Darkmoon Faire will only be live for a short time before the curtains are drawn closed. Be sure to visit it today!"
 
 # ## txt 3 (1)	=> "Boys and girls - children of all ages - the Darkmoon Faire has arrived! Huzzah!"
-# == mal[10108]	   "Boys and girls - children of all ages - the Darkmoon Faire has arrived! Huzzah!"
+# == mal[10104]	   "Boys and girls - children of all ages - the Darkmoon Faire has arrived! Huzzah!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (7375, 1, 10105, 1, 10106, 1, 10107, 1, 10108);
+ VALUES (7375, 1, 10101, 1, 10106, 1, 10103, 1, 10104);
 
 # -------------------------------------------------------------------------------- [7376]
 # ## txt 0 (1)	=> "When the Darkmoon Faire opens, it will be located in Mulgore. We'll be pitching our tents just southwest of Thunder Bluff!"
@@ -18852,14 +18855,14 @@ INSERT INTO `npc_text_broadcast_text`
 # == mal[10146]	   "It's getting away!"
 
 # ## txt 2 (1)	=> "Get back here!"
-# == mal[21139]	   "Get back here!"
+# == mal[10147]	   "Get back here!"
 
 # ## txt 3 (1)	=> "Frogs and leather balls for sale!"
 # == mal[10148]	   "Frogs and leather balls for sale!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (7390, 1, 10145, 1, 10146, 1, 21139, 1, 10148);
+ VALUES (7390, 1, 10145, 1, 10146, 1, 10147, 1, 10148);
 
 # -------------------------------------------------------------------------------- [7393]
 # ## txt 0 (1)	=> "Alas... I am sorry to say I cannot currently give you your fortune, as you have recently received a fortune reading from me.$B$BReturn to me several hours from when you first received your fortune. The forces of Fate will have properly recalibrated themselves, and I will be able to see into your future."
@@ -18929,11 +18932,11 @@ INSERT INTO `npc_text_broadcast_text`
 # == fem[10177]	   "Tips are always graciously accepted, friend."
 
 # ## txt 3 (1)	=> "Just in... another batch of Darkmoon Special Reserve. Come get yours before they're all gone!"
-# == fem[10178]	   "Just in... another batch of Darkmoon Special Reserve. Come get yours before they're all gone!"
+# == fem[10131]	   "Just in... another batch of Darkmoon Special Reserve. Come get yours before they're all gone!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (7404, 1, 10175, 1, 10176, 1, 10177, 1, 10178);
+ VALUES (7404, 1, 10175, 1, 10176, 1, 10177, 1, 10131);
 
 # -------------------------------------------------------------------------------- [7406]
 # ## txt 0 (99)	=> "Ribbit."
@@ -19403,19 +19406,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [7535]
 # ## txt 0 (1)	=> "Greetings, $c. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us.$B$BPlease feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."
-# == mal[10430]	   "Greetings, $c. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us.$B$BPlease feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."
+# == mal[10428]	   "Greetings, $c. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us.$B$BPlease feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (7535, 1, 10430);
+ VALUES (7535, 1, 10428);
 
 # -------------------------------------------------------------------------------- [7536]
 # ## txt 0 (1)	=> "Greetings, $c. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us.$B$BPlease feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."
-# == mal[10430]	   "Greetings, $c. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us.$B$BPlease feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."
+# == mal[10428]	   "Greetings, $c. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us.$B$BPlease feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (7536, 1, 10430);
+ VALUES (7536, 1, 10428);
 
 # -------------------------------------------------------------------------------- [7554]
 # ## txt 0 (1)	=> "We must not allow the Alliance to expand their power base in Arathi! Even their miniscule Refuge Pointe may one day grow to threaten us."
@@ -20675,11 +20678,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [7796]
 # ## txt 0 (1)	=> "I highly recommend that you visit Sayge to get your fortune told. I know, I know... he's a gnoll. But he's a very special gnoll with the power to divine your future!$B$BAnd we are constantly expanding the faire with all manner of new attractions!"
-# == fem[22156]	   "I highly recommend that you visit Sayge to get your fortune told. I know, I know... he's a gnoll. But he's a very special gnoll with the power to divine your future!$B$BAnd we are constantly expanding the faire with all manner of new attractions!"
+# == fem[10780]	   "I highly recommend that you visit Sayge to get your fortune told. I know, I know... he's a gnoll. But he's a very special gnoll with the power to divine your future!$B$BAnd we are constantly expanding the faire with all manner of new attractions!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (7796, 1, 22156);
+ VALUES (7796, 1, 10780);
 
 # -------------------------------------------------------------------------------- [7797]
 # ## txt 0 (1)	=> "We have more than one enemy in Silithus, $N.$B$BWhile everyone's attention is focused on the silithid, my big brother and I have been keeping a close eye on the Twilight's Hammer crazies.$B$B"
@@ -20691,19 +20694,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [7799]
 # ## txt 0 (1)	=> "I highly recommend that you visit Sayge to get your fortune told. I know, I know... he's a gnoll. But he's a very special gnoll with the power to divine your future!$B$BAnd we are constantly expanding the faire with all manner of new attractions!"
-# == fem[22156]	   "I highly recommend that you visit Sayge to get your fortune told. I know, I know... he's a gnoll. But he's a very special gnoll with the power to divine your future!$B$BAnd we are constantly expanding the faire with all manner of new attractions!"
+# == fem[10780]	   "I highly recommend that you visit Sayge to get your fortune told. I know, I know... he's a gnoll. But he's a very special gnoll with the power to divine your future!$B$BAnd we are constantly expanding the faire with all manner of new attractions!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (7799, 1, 22156);
+ VALUES (7799, 1, 10780);
 
 # -------------------------------------------------------------------------------- [7800]
 # ## txt 0 (1)	=> "Greetings, $N."
-# == fem[56604]	   "Greetings, $n."
+# == mal[10783]	   "Greetings, $N."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (7800, 1, 56604);
+ VALUES (7800, 1, 10783);
 
 # -------------------------------------------------------------------------------- [7801]
 # ## txt 0 (1)	=> "Greetings, traveler. It was here, nearly 1,000 years past, that the Qiraji began their march of destruction across Kalimdor.$B$BThousands of lives were lost during the war, most in this cursed desert during the initial invasion.$B$BI am one of only a few that remain, chained to both the past and the present. I know not why I am to remain stationed here but I know that I must."
@@ -20755,27 +20758,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [7808]
 # ## txt 0 (1)	=> "I'm sad! It's Hallow's End, and I'm sick. I'm going to miss out on trick-or-treating because I can't go out!"
-# == mal[10812]	   "I'm sad! It's Hallow's End, and I'm sick. I'm going to miss out on trick-or-treating because I can't go out!"
+# == fem[10811]	   "I'm sad! It's Hallow's End, and I'm sick. I'm going to miss out on trick-or-treating because I can't go out!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (7808, 1, 10812);
+ VALUES (7808, 1, 10811);
 
 # -------------------------------------------------------------------------------- [7809]
 # ## txt 0 (1)	=> "You're the best, $N - thanks for going trick-or-treating for me!"
-# == mal[10814]	   "You're the best, $N - thanks for going trick-or-treating for me!"
+# == fem[10813]	   "You're the best, $N - thanks for going trick-or-treating for me!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (7809, 1, 10814);
+ VALUES (7809, 1, 10813);
 
 # -------------------------------------------------------------------------------- [7810]
 # ## txt 0 (1)	=> "I'm sad! It's Hallow's End, and I'm sick. I'm going to miss out on trick-or-treating because I can't go out!"
-# == mal[10812]	   "I'm sad! It's Hallow's End, and I'm sick. I'm going to miss out on trick-or-treating because I can't go out!"
+# == fem[10811]	   "I'm sad! It's Hallow's End, and I'm sick. I'm going to miss out on trick-or-treating because I can't go out!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (7810, 1, 10812);
+ VALUES (7810, 1, 10811);
 
 # -------------------------------------------------------------------------------- [7812]
 # ## txt 0 (1)	=> "What ISN'T there to do, you mean!$B$BEach of the innkeepers throughout the world are handing out trick-or-treat goodies, and many of the towns are decorated for the season! Also, there is the Wickerman Festival just outside the Undercity during the evenings.$B$BOne more thing - I've heard that a sick little girl at the orphanage here in Orgrimmar is looking for someone to help her gather treats for the holiday... maybe you could help her out?"
@@ -21853,11 +21856,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8070]
 # ## txt 0 (1)	=> "An Alliance Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Alliance. Various Commendation Officers for the factions of the Alliance are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets in lieu of reputation, seek out Field Marshal Snowfall."
-# == mal[11339]	   "An Alliance Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Alliance. Various Commendation Officers for the factions of the Alliance are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets in lieu of reputation, seek out Field Marshal Snowfall."
+# == fem[11337]	   "An Alliance Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Alliance. Various Commendation Officers for the factions of the Alliance are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets in lieu of reputation, seek out Field Marshal Snowfall."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8070, 1, 11339);
+ VALUES (8070, 1, 11337);
 
 # -------------------------------------------------------------------------------- [8071]
 # ## txt 0 (1)	=> "We are united in cause, $r. An ancient evil threatens to extinguish all life on Kalimdor and consume the world with its depravity... It's hatred of all things born of the great Shapers: The eternal Titans.$B$BWe are the first and the last lines of defense against the armies of C'Thun. If we do not rise up and strike at our enemy, our enemy will surely destroy us.$B$BThe war effort needs you!"
@@ -21869,27 +21872,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8072]
 # ## txt 0 (1)	=> "An Alliance Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Alliance. Various Commendation Officers for the factions of the Alliance are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets in lieu of reputation, seek out Field Marshal Snowfall."
-# == mal[11339]	   "An Alliance Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Alliance. Various Commendation Officers for the factions of the Alliance are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets in lieu of reputation, seek out Field Marshal Snowfall."
+# == fem[11337]	   "An Alliance Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Alliance. Various Commendation Officers for the factions of the Alliance are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets in lieu of reputation, seek out Field Marshal Snowfall."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8072, 1, 11339);
+ VALUES (8072, 1, 11337);
 
 # -------------------------------------------------------------------------------- [8073]
 # ## txt 0 (1)	=> "A Horde Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Horde. Various Commendation Officers for the factions of the Horde are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets instead of reputation, seek out Warlord Gorchuk."
-# == fem[11342]	   "A Horde Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Horde. Various Commendation Officers for the factions of the Horde are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets instead of reputation, seek out Warlord Gorchuk."
+# == mal[11341]	   "A Horde Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Horde. Various Commendation Officers for the factions of the Horde are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets instead of reputation, seek out Warlord Gorchuk."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8073, 1, 11342);
+ VALUES (8073, 1, 11341);
 
 # -------------------------------------------------------------------------------- [8074]
 # ## txt 0 (1)	=> "A Horde Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Horde. Various Commendation Officers for the factions of the Horde are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets instead of reputation, seek out Warlord Gorchuk."
-# == fem[11342]	   "A Horde Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Horde. Various Commendation Officers for the factions of the Horde are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets instead of reputation, seek out Warlord Gorchuk."
+# == mal[11341]	   "A Horde Commendation Signet is awarded to a $g hero : heroine; who goes above and beyond the call of duty to the Horde. Various Commendation Officers for the factions of the Horde are located in all of the major cities; speak with the one with whom you'd like to raise your reputation, and give them the number of signets they ask for!$B$BBy the way, during the war effort here, if you'd rather receive a material reward for your signets instead of reputation, seek out Warlord Gorchuk."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8074, 1, 11342);
+ VALUES (8074, 1, 11341);
 
 # -------------------------------------------------------------------------------- [8076]
 # ## txt 0 (1)	=> "Around this reindeer's neck is a tag with the Smokywood Pastures logo on it and a name - "Metzen".$B$BMetzen looks at you with sad, forlorn eyes. It is almost as if the reindeer has been immobilized by some unseen force."
@@ -21939,14 +21942,14 @@ INSERT INTO `npc_text_broadcast_text`
 # == mal[11358]	   "I don't know what they put in those kegs, but it goes down like honey!"
 
 # ## txt 2 (1)	=> "After the firework show, they'll put out goblets so we can raise a toast!"
-# == mal[20808]	   "After the firework show, they'll put out goblets so we can raise a toast!"
+# == mal[11359]	   "After the firework show, they'll put out goblets so we can raise a toast!"
 
 # ## txt 3 (1)	=> "Well met, friend!"
 # == mal[11360]	   "Well met, friend!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (8081, 1, 11357, 1, 11358, 1, 20808, 1, 11360);
+ VALUES (8081, 1, 11357, 1, 11358, 1, 11359, 1, 11360);
 
 # -------------------------------------------------------------------------------- [8082]
 # ## txt 0 (1)	=> "Greetings, $c. I am Field Marshal Snowfall, commander of the war effort here. We've a hard road to plow ahead of us, $g lad : lass;, so if you can help out, please do so. And feel free to ask questions."
@@ -22070,51 +22073,51 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8101]
 # ## txt 0 (1)	=> "Well met, $c. I hope you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Alliance and Horde to prepare for the upcoming war against the Silithid and their masters in Ahn'Qiraj. In the Military Ward of Ironforge, we are collecting all manner of goods to create our war materiel from, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about pitching in?"
-# == fem[18786]	   "Well met, $c. I hope you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Alliance and Horde to prepare for the upcoming war against the Silithid and their masters in Ahn'Qiraj. In the Military Ward of Ironforge, we are collecting all manner of goods to create our war materiel from, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about pitching in?"
+# == mal[11379]	   "Well met, $c. I hope you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Alliance and Horde to prepare for the upcoming war against the Silithid and their masters in Ahn'Qiraj. In the Military Ward of Ironforge, we are collecting all manner of goods to create our war materiel from, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about pitching in?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8101, 1, 18786);
+ VALUES (8101, 1, 11379);
 
 # -------------------------------------------------------------------------------- [8103]
 # ## txt 0 (1)	=> "Well met, $c. I hope you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Alliance and Horde to prepare for the upcoming war against the Silithid and their masters in Ahn'Qiraj. In the Military Ward of Ironforge, we are collecting all manner of goods to create our war materiel from, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about pitching in?"
-# == fem[18786]	   "Well met, $c. I hope you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Alliance and Horde to prepare for the upcoming war against the Silithid and their masters in Ahn'Qiraj. In the Military Ward of Ironforge, we are collecting all manner of goods to create our war materiel from, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about pitching in?"
+# == mal[11379]	   "Well met, $c. I hope you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Alliance and Horde to prepare for the upcoming war against the Silithid and their masters in Ahn'Qiraj. In the Military Ward of Ironforge, we are collecting all manner of goods to create our war materiel from, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about pitching in?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8103, 1, 18786);
+ VALUES (8103, 1, 11379);
 
 # -------------------------------------------------------------------------------- [8104]
 # ## txt 0 (1)	=> "Well met, $c. I hope you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Alliance and Horde to prepare for the upcoming war against the Silithid and their masters in Ahn'Qiraj. In the Military Ward of Ironforge, we are collecting all manner of goods to create our war materiel from, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about pitching in?"
-# == fem[18786]	   "Well met, $c. I hope you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Alliance and Horde to prepare for the upcoming war against the Silithid and their masters in Ahn'Qiraj. In the Military Ward of Ironforge, we are collecting all manner of goods to create our war materiel from, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about pitching in?"
+# == mal[11379]	   "Well met, $c. I hope you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Alliance and Horde to prepare for the upcoming war against the Silithid and their masters in Ahn'Qiraj. In the Military Ward of Ironforge, we are collecting all manner of goods to create our war materiel from, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about pitching in?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8104, 1, 18786);
+ VALUES (8104, 1, 11379);
 
 # -------------------------------------------------------------------------------- [8105]
 # ## txt 0 (1)	=> "Hail, $c. I trust you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Horde and Alliance to prepare for the impending war against the Silithid and their masters in Ahn'Qiraj. In Orgrimmar's Valley of Spirits, we are collecting a vast number of goods to create war materiel, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about helping out?"
-# == fem[18785]	   "Hail, $c. I trust you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Horde and Alliance to prepare for the impending war against the Silithid and their masters in Ahn'Qiraj. In Orgrimmar's Valley of Spirits, we are collecting a vast number of goods to create war materiel, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about helping out?"
+# == mal[11382]	   "Hail, $c. I trust you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Horde and Alliance to prepare for the impending war against the Silithid and their masters in Ahn'Qiraj. In Orgrimmar's Valley of Spirits, we are collecting a vast number of goods to create war materiel, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about helping out?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8105, 1, 18785);
+ VALUES (8105, 1, 11382);
 
 # -------------------------------------------------------------------------------- [8106]
 # ## txt 0 (1)	=> "Hail, $c. I trust you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Horde and Alliance to prepare for the impending war against the Silithid and their masters in Ahn'Qiraj. In Orgrimmar's Valley of Spirits, we are collecting a vast number of goods to create war materiel, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about helping out?"
-# == fem[18785]	   "Hail, $c. I trust you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Horde and Alliance to prepare for the impending war against the Silithid and their masters in Ahn'Qiraj. In Orgrimmar's Valley of Spirits, we are collecting a vast number of goods to create war materiel, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about helping out?"
+# == mal[11382]	   "Hail, $c. I trust you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Horde and Alliance to prepare for the impending war against the Silithid and their masters in Ahn'Qiraj. In Orgrimmar's Valley of Spirits, we are collecting a vast number of goods to create war materiel, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about helping out?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8106, 1, 18785);
+ VALUES (8106, 1, 11382);
 
 # -------------------------------------------------------------------------------- [8107]
 # ## txt 0 (1)	=> "Hail, $c. I trust you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Horde and Alliance to prepare for the impending war against the Silithid and their masters in Ahn'Qiraj. In Orgrimmar's Valley of Spirits, we are collecting a vast number of goods to create war materiel, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about helping out?"
-# == fem[18785]	   "Hail, $c. I trust you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Horde and Alliance to prepare for the impending war against the Silithid and their masters in Ahn'Qiraj. In Orgrimmar's Valley of Spirits, we are collecting a vast number of goods to create war materiel, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about helping out?"
+# == mal[11382]	   "Hail, $c. I trust you are here to inquire on the Ahn'Qiraj war effort. We are going to need a great deal of assistance.$B$BThe war effort is a united effort between the Horde and Alliance to prepare for the impending war against the Silithid and their masters in Ahn'Qiraj. In Orgrimmar's Valley of Spirits, we are collecting a vast number of goods to create war materiel, and these gathering tasks are what we need your help with.$B$BCan I convince you to speak with our commander about helping out?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8107, 1, 18785);
+ VALUES (8107, 1, 11382);
 
 # -------------------------------------------------------------------------------- [8108]
 # ## txt 0 (1)	=> "Greetings, $c. I am Leoren, stable master of Cenarion Hold."
@@ -22198,11 +22201,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8121]
 # ## txt 0 (1)	=> "The journal of Jandice Barov is filled with rantings and ravings about the undead. Towards the end of the book is what appears to be a tailoring pattern for the creation of a bag of some sort."
-# HAND fem[11406] 'The journal of Jandice Barov is filled with rantings and ravings about the undead. Towards the end of the book is what appears to be a tailoring pattern for the creation of a felcloth bag. This bag is used by warlocks to store soul shards. Do you wish to copy the pattern into your own journal?'
+# ++ fem[11405]	   "The journal of Jandice Barov is filled with rantings and ravings about the undead. Towards the end of the book is what appears to be a tailoring pattern for the creation of a bag of some sort. Your understanding of tailoring is insufficient to decipher the pattern."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8121, 1, 11406);
+ VALUES (8121, 1, 11405);
 
 # -------------------------------------------------------------------------------- [8122]
 # ## txt 0 (1)	=> "The journal of Jandice Barov is filled with rantings and ravings about the undead. Towards the end of the book is what appears to be a tailoring pattern for the creation of a bag of some sort. You already know its content."
@@ -22481,7 +22484,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8164]
 # ## txt 0 (1)	=> "Elune be with you, $c."
-# == fem[11517]	   "Elune be with you, $c."
+# == mal[7165]	   "Elune be with you, $c."
 
 # ## txt 1 (1)	=> "The High Priestess could not leave Darnassus. Fandral is in a very foul mood."
 # == fem[11518]	   "The High Priestess could not leave Darnassus. Fandral is in a very foul mood."
@@ -22491,7 +22494,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (8164, 1, 11517, 1, 11518, 1, 11519);
+ VALUES (8164, 1, 7165, 1, 11518, 1, 11519);
 
 # -------------------------------------------------------------------------------- [8166]
 # ## txt 0 (1)	=> "Elder Morndeep spends time at the Ring of Law in Blackrock Depths."
@@ -23037,11 +23040,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8235]
 # ## txt 0 (1)	=> "We've been so wrapped up in this war, some of us forgot to make time for love."
-# == mal[11745]	   "We've been so wrapped up in this war, some of us forgot to make time for love."
+# == mal[11724]	   "We've been so wrapped up in this war, some of us forgot to make time for love."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8235, 1, 11745);
+ VALUES (8235, 1, 11724);
 
 # -------------------------------------------------------------------------------- [8237]
 # ## txt 0 (1)	=> "That was quite a fight. Let us catch our breath for a bit."
@@ -23077,91 +23080,91 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8241]
 # ## txt 0 (1)	=> "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
-# == mal[11804]	   "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
+# == mal[11738]	   "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8241, 1, 11804);
+ VALUES (8241, 1, 11738);
 
 # -------------------------------------------------------------------------------- [8242]
 # ## txt 0 (1)	=> "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
-# == mal[11804]	   "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
+# == mal[11738]	   "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8242, 1, 11804);
+ VALUES (8242, 1, 11738);
 
 # -------------------------------------------------------------------------------- [8243]
 # ## txt 0 (1)	=> "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
-# == mal[11804]	   "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
+# == mal[11738]	   "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8243, 1, 11804);
+ VALUES (8243, 1, 11738);
 
 # -------------------------------------------------------------------------------- [8244]
 # ## txt 0 (1)	=> "We've been so wrapped up in this war, some of us forgot to make time for love."
-# == mal[11745]	   "We've been so wrapped up in this war, some of us forgot to make time for love."
+# == mal[11724]	   "We've been so wrapped up in this war, some of us forgot to make time for love."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8244, 1, 11745);
+ VALUES (8244, 1, 11724);
 
 # -------------------------------------------------------------------------------- [8245]
 # ## txt 0 (1)	=> "We've been so wrapped up in this war, some of us forgot to make time for love."
-# == mal[11745]	   "We've been so wrapped up in this war, some of us forgot to make time for love."
+# == mal[11724]	   "We've been so wrapped up in this war, some of us forgot to make time for love."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8245, 1, 11745);
+ VALUES (8245, 1, 11724);
 
 # -------------------------------------------------------------------------------- [8251]
 # ## txt 0 (1)	=> "I don't know what's come over me. My heart feels as hot as new steel."
-# == mal[11747]	   "I don't know what's come over me. My heart feels as hot as new steel."
+# == fem[11746]	   "I don't know what's come over me. My heart feels as hot as new steel."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8251, 1, 11747);
+ VALUES (8251, 1, 11746);
 
 # -------------------------------------------------------------------------------- [8254]
 # ## txt 0 (1)	=> "You work with machines for so long, sometimes you forget about real hearts."
-# == mal[11750]	   "You work with machines for so long, sometimes you forget about real hearts."
+# == fem[11748]	   "You work with machines for so long, sometimes you forget about real hearts."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8254, 1, 11750);
+ VALUES (8254, 1, 11748);
 
 # -------------------------------------------------------------------------------- [8255]
 # ## txt 0 (1)	=> "When you have lived as long as I, it becomes easy to forget about love for years. It is always good to be reminded."
-# == mal[11753]	   "When you have lived as long as I, it becomes easy to forget about love for years. It is always good to be reminded."
+# == fem[11751]	   "When you have lived as long as I, it becomes easy to forget about love for years. It is always good to be reminded."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8255, 1, 11753);
+ VALUES (8255, 1, 11751);
 
 # -------------------------------------------------------------------------------- [8263]
 # ## txt 0 (1)	=> "We orcs are usually a private people, but lately, no one's been hiding their feelings."
-# == mal[11762]	   "We orcs are usually a private people, but lately, no one's been hiding their feelings."
+# == mal[11759]	   "We orcs are usually a private people, but lately, no one's been hiding their feelings."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8263, 1, 11762);
+ VALUES (8263, 1, 11759);
 
 # -------------------------------------------------------------------------------- [8265]
 # ## txt 0 (1)	=> "We orcs are usually a private people, but lately, no one's been hiding their feelings."
-# == mal[11762]	   "We orcs are usually a private people, but lately, no one's been hiding their feelings."
+# == mal[11759]	   "We orcs are usually a private people, but lately, no one's been hiding their feelings."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8265, 1, 11762);
+ VALUES (8265, 1, 11759);
 
 # -------------------------------------------------------------------------------- [8266]
 # ## txt 0 (1)	=> "We orcs are usually a private people, but lately, no one's been hiding their feelings."
-# == mal[11762]	   "We orcs are usually a private people, but lately, no one's been hiding their feelings."
+# == mal[11759]	   "We orcs are usually a private people, but lately, no one's been hiding their feelings."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8266, 1, 11762);
+ VALUES (8266, 1, 11759);
 
 # -------------------------------------------------------------------------------- [8269]
 # ## txt 0 (1)	=> "Hail $c. Didn't I see you recently at an exclusive gathering? You look familiar, but then again this city is a busy place.$B$BIf you attended that convention, then surely you were given a secret code. Tell me your code and I will give you a special prize in return."
@@ -23189,83 +23192,83 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8282]
 # ## txt 0 (1)	=> "You look like you've had your heart broken. Come back when you're not so sad."
-# == mal[11808]	   "You look like you've had your heart broken. Come back when you're not so sad."
+# == fem[11790]	   "You look like you've had your heart broken. Come back when you're not so sad."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8282, 1, 11808);
+ VALUES (8282, 1, 11790);
 
 # -------------------------------------------------------------------------------- [8283]
 # ## txt 0 (1)	=> "You look like you've had your heart broken. Come back when you're not so sad."
-# == mal[11808]	   "You look like you've had your heart broken. Come back when you're not so sad."
+# == fem[11790]	   "You look like you've had your heart broken. Come back when you're not so sad."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8283, 1, 11808);
+ VALUES (8283, 1, 11790);
 
 # -------------------------------------------------------------------------------- [8284]
 # ## txt 0 (1)	=> "You look like you've had your heart broken. Come back when you're not so sad."
-# == mal[11808]	   "You look like you've had your heart broken. Come back when you're not so sad."
+# == fem[11790]	   "You look like you've had your heart broken. Come back when you're not so sad."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8284, 1, 11808);
+ VALUES (8284, 1, 11790);
 
 # -------------------------------------------------------------------------------- [8285]
 # ## txt 0 (1)	=> "I'd talk to you if you smelled better. Cologne would be nice."
-# == mal[11795]	   "I'd talk to you if you smelled better. Cologne would be nice."
+# == fem[11793]	   "I'd talk to you if you smelled better. Cologne would be nice."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8285, 1, 11795);
+ VALUES (8285, 1, 11793);
 
 # -------------------------------------------------------------------------------- [8286]
 # ## txt 0 (1)	=> "What, you don't have a token to give me? Don't you love me?"
-# == mal[11810]	   "What, you don't have a token to give me? Don't you love me?"
+# == fem[11794]	   "What, you don't have a token to give me? Don't you love me?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8286, 1, 11810);
+ VALUES (8286, 1, 11794);
 
 # -------------------------------------------------------------------------------- [8287]
 # ## txt 0 (1)	=> "I'd talk to you if you smelled better. Cologne would be nice."
-# == mal[11795]	   "I'd talk to you if you smelled better. Cologne would be nice."
+# == fem[11793]	   "I'd talk to you if you smelled better. Cologne would be nice."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8287, 1, 11795);
+ VALUES (8287, 1, 11793);
 
 # -------------------------------------------------------------------------------- [8288]
 # ## txt 0 (1)	=> "What, you don't have a token to give me? Don't you love me?"
-# == mal[11810]	   "What, you don't have a token to give me? Don't you love me?"
+# == fem[11794]	   "What, you don't have a token to give me? Don't you love me?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8288, 1, 11810);
+ VALUES (8288, 1, 11794);
 
 # -------------------------------------------------------------------------------- [8289]
 # ## txt 0 (1)	=> "I'd like you better if you would apply some perfume."
-# == mal[11809]	   "I'd like you better if you would apply some perfume."
+# == mal[11797]	   "I'd like you better if you would apply some perfume."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8289, 1, 11809);
+ VALUES (8289, 1, 11797);
 
 # -------------------------------------------------------------------------------- [8290]
 # ## txt 0 (1)	=> "I'd like you better if you would apply some perfume."
-# == mal[11809]	   "I'd like you better if you would apply some perfume."
+# == mal[11797]	   "I'd like you better if you would apply some perfume."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8290, 1, 11809);
+ VALUES (8290, 1, 11797);
 
 # -------------------------------------------------------------------------------- [8291]
 # ## txt 0 (1)	=> "What, you don't have a token to give me? Don't you love me?"
-# == mal[11810]	   "What, you don't have a token to give me? Don't you love me?"
+# == fem[11794]	   "What, you don't have a token to give me? Don't you love me?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8291, 1, 11810);
+ VALUES (8291, 1, 11794);
 
 # -------------------------------------------------------------------------------- [8292]
 # ## txt 0 (1)	=> "What?! How did you sneak past my jail...er, minion out there? Well, I suppose it's for the best. Sales have been a little slow lately.$B$BHow may I fulfill your infernal needs, $c?"
@@ -23286,27 +23289,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8296]
 # ## txt 0 (1)	=> "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
-# == mal[11804]	   "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
+# == mal[11738]	   "It looks like you've already found love. You can give me a love token, but I'm not giving you anything nice. I'm waiting for someone special."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8296, 1, 11804);
+ VALUES (8296, 1, 11738);
 
 # -------------------------------------------------------------------------------- [8298]
 # ## txt 0 (1)	=> "I'd like you better if you would apply some perfume."
-# == mal[11809]	   "I'd like you better if you would apply some perfume."
+# == mal[11797]	   "I'd like you better if you would apply some perfume."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8298, 1, 11809);
+ VALUES (8298, 1, 11797);
 
 # -------------------------------------------------------------------------------- [8301]
 # ## txt 0 (1)	=> "I'd like you better if you would apply some perfume."
-# == mal[11809]	   "I'd like you better if you would apply some perfume."
+# == mal[11797]	   "I'd like you better if you would apply some perfume."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8301, 1, 11809);
+ VALUES (8301, 1, 11797);
 
 # -------------------------------------------------------------------------------- [8303]
 # ## txt 0 (1)	=> "I'd talk to you if you smelled better. How about colonge? Maybe perfume?"
@@ -23358,27 +23361,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8309]
 # ## txt 0 (1)	=> "It seems like love is drifting on the wind. I hope that I won't be left out."
-# == fem[11760]	   "It seems like love is drifting on the wind. I hope that I won't be left out."
+# == mal[11754]	   "It seems like love is drifting on the wind. I hope that I won't be left out."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8309, 1, 11760);
+ VALUES (8309, 1, 11754);
 
 # -------------------------------------------------------------------------------- [8310]
 # ## txt 0 (1)	=> "It has been years since I have thought with my heart, but it's all flooding back."
-# == mal[11758]	   "It has been years since I have thought with my heart, but it's all flooding back."
+# == mal[11756]	   "It has been years since I have thought with my heart, but it's all flooding back."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8310, 1, 11758);
+ VALUES (8310, 1, 11756);
 
 # -------------------------------------------------------------------------------- [8311]
 # ## txt 0 (1)	=> "After all these years of fighting, now everyone's falling in love!"
-# == mal[11764]	   "After all these years of fighting, now everyone's falling in love!"
+# == mal[11763]	   "After all these years of fighting, now everyone's falling in love!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8311, 1, 11764);
+ VALUES (8311, 1, 11763);
 
 # -------------------------------------------------------------------------------- [8312]
 # ## txt 0 (1)	=> "Who's the most popular hero of the realm, you ask? Well here are the current standings!$B$BThrall: $2200w$BCairne: $2201w$BSylvanas: $2202w$BTotal Horde: $2207w$B$BBolvar: $2203w$BMagni: $2204w$BTyrande: $2205w$BTotal Alliance: $2206w$B$BIf you want to cast your vote, be sure to turn in your gift collections!"
@@ -23822,11 +23825,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8439]
 # ## txt 0 (1)	=> "It is very important that we find out what the the night elves are up to, $c! Please concentrate all of your efforts toward that end."
-# == fem[13392]	   "It is very important that we find out what the the night elves are up to, $c! Please concentrate all of your efforts toward that end."
+# == fem[12119]	   "It is very important that we find out what the the night elves are up to, $c! Please concentrate all of your efforts toward that end."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8439, 1, 13392);
+ VALUES (8439, 1, 12119);
 
 # -------------------------------------------------------------------------------- [8440]
 # ## txt 0 (1)	=> "We are most pleased with your actions against the night elves. When you uncovered their plot to use the ley-line nexi and their so-called moon crystals to spy upon us, you strengthened our position here by an order of magnitude.$B$BYou have our gratitude, $N."
@@ -23862,11 +23865,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8446]
 # ## txt 0 (1)	=> "Yes... what do you want, $r? Can't you see I am busy here?"
-# == mal[19752]	   "Yes... what do you want, $r? Can't you see I am busy here?"
+# == mal[12130]	   "Yes... what do you want, $r? Can't you see I am busy here?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8446, 1, 19752);
+ VALUES (8446, 1, 12130);
 
 # -------------------------------------------------------------------------------- [8447]
 # ## txt 0 (1)	=> "$R, report! What news of significance do you bring? Be quick about your business... Dame Auriferous and I are in the middle of a strategic discussion."
@@ -24006,11 +24009,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8469]
 # ## txt 0 (1)	=> "This sign contains various announcements and notices of rewards."
-# == mal[14941]	   "This sign contains various announcements and notices of rewards."
+# == mal[12177]	   "This sign contains various announcements and notices of rewards."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8469, 1, 14941);
+ VALUES (8469, 1, 12177);
 
 # -------------------------------------------------------------------------------- [8470]
 # ## txt 0 (1)	=> "We've important work to do, $N. Let us attack our enemies while their guard is down. Let us show them that sin'dorei vengeance never forgets nor forgives."
@@ -24742,11 +24745,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8645]
 # ## txt 0 (1)	=> "If you have lost a piece of your Zandalarian armor, I may be able to help."
-# == fem[12662]	   "If you have lost a piece of your Zandalarian armor, I may be able to help."
+# == mal[12639]	   "If you have lost a piece of your Zandalarian armor, I may be able to help."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8645, 1, 12662);
+ VALUES (8645, 1, 12639);
 
 # -------------------------------------------------------------------------------- [8650]
 # ## txt 0 (1)	=> "I am most grateful for your help, $c!"
@@ -24758,14 +24761,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8653]
 # ## txt 0 (1)	=> "Ah, you're the one who found the letter. Thank you for the... news, I suppose, about my family. You're welcome to what food and drink I can offer."
-# == fem[12739]	   "Ah, you're the one who found the letter. Thank you for the... news, I suppose, about my family. You're welcome to what food and drink I can offer."
+# == mal[12738]	   "Ah, you're the one who found the letter. Thank you for the... news, I suppose, about my family. You're welcome to what food and drink I can offer."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8653, 1, 12739);
+ VALUES (8653, 1, 12738);
 
 # -------------------------------------------------------------------------------- [8656]
 # ## txt 0 (1)	=> "Missing US text"
+# NONE FOUND
 
 # -------------------------------------------------------------------------------- [8658]
 # ## txt 0 (1)	=> "Sid's the name. It's nice to see some new faces around here. What can I do you for?"
@@ -24988,12 +24992,9 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8703]
 # ## txt 0 (1)	=> "Enjoying the festival, $c?$b$bWhile the Flame Wardens tend to the fires of the present, I am more of a historian, keeping close the festivals past. I'm also, of course, documenting this year's festivities. Things are going well thus far, don't you think?$b$bYou know, $n, there is power inherent in all festival fires burning throughout the holiday. We're taking care of ours, but I'm certain there are sacred flames burning deep within our enemy's cities..."
-# oo mal[25566]	   "Enjoying the festival, $c?$b$bWhile the Flame Keepers tend to the fires of the present, I am more of a historian, keeping close the festivals past. I'm also, of course, documenting this year's festivities. Things are going well thus far, don't you think?$b$bYou know, $n, there is power inherent in all festival fires burning throughout the holiday. We're taking care of ours, but I'm certain there are sacred flames burning deep within our enemy's cities..."
+# ## FAR FOUND
 # oo mal[12860]	   "Enjoying the festival, $c?$b$bWhile the Flamekeeper tends to the fires of the present, I am more of a historian, keeping close the festivals past. I'm also, of course, documenting this year's festivities. Things are going well thus far, don't you think?$b$bYou know, $n, there is power inherent in all festival fires burning throughout the holiday. We're taking care of ours, but I'm certain there are sacred flames burning deep within our enemy's cities..."
-
-INSERT INTO `npc_text_broadcast_text`
- (Id, Prob0, BroadcastTextId0)
- VALUES (8703, 1, 25566);
+# oo mal[25566]	   "Enjoying the festival, $c?$b$bWhile the Flame Keepers tend to the fires of the present, I am more of a historian, keeping close the festivals past. I'm also, of course, documenting this year's festivities. Things are going well thus far, don't you think?$b$bYou know, $n, there is power inherent in all festival fires burning throughout the holiday. We're taking care of ours, but I'm certain there are sacred flames burning deep within our enemy's cities..."
 
 # -------------------------------------------------------------------------------- [8712]
 # ## txt 0 (1)	=> "If you're looking for work, $c, grab yourself a pick and get to digging. There're ruins out there as far as the eye can see!"
@@ -25101,11 +25102,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8753]
 # ## txt 0 (1)	=> "Greetings, $c."
-# == mal[50721]	   "Greetings, $c."
+# == mal[7130]	   "Greetings, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8753, 1, 50721);
+ VALUES (8753, 1, 7130);
 
 # -------------------------------------------------------------------------------- [8754]
 # ## txt 0 (1)	=> "Walk always in the Light, $N."
@@ -25195,11 +25196,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8769]
 # ## txt 0 (1)	=> "It is very important that we find out what the the night elves are up to, $c! Please concentrate all of your efforts toward that end."
-# == fem[13392]	   "It is very important that we find out what the the night elves are up to, $c! Please concentrate all of your efforts toward that end."
+# == fem[12119]	   "It is very important that we find out what the the night elves are up to, $c! Please concentrate all of your efforts toward that end."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8769, 1, 13392);
+ VALUES (8769, 1, 12119);
 
 # -------------------------------------------------------------------------------- [8770]
 # ## txt 0 (1)	=> "Not long ago, this place was the site of a terrible battle. We of Nethergarde and the Argent Dawn held at bay a wave of demons, surging relentlessly from the Dark Portal.$B$BThose were dark days, full of bloodshed and despair...$B$BBut the Kingdoms of Azeroth soon joined us and pushed the monsters back! The fighting continues on the far side of the Portal...$B$BThis camp is now calm, but I fear the quiet here belies the madness found through that hellish gate."
@@ -25539,11 +25540,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8828]
 # ## txt 0 (1)	=> "Greetings, $r."
-# == mal[56266]	   "Greetings, $r."
+# == mal[6498]	   "Greetings, $r."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8828, 1, 56266);
+ VALUES (8828, 1, 6498);
 
 # -------------------------------------------------------------------------------- [8829]
 # ## txt 0 (1)	=> "It is a good day to be alive and one with the elements."
@@ -25651,11 +25652,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8850]
 # ## txt 0 (1)	=> "Need something?"
-# == fem[47298]	   "Need something?"
+# == fem[13644]	   "Need something?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8850, 1, 47298);
+ VALUES (8850, 1, 13644);
 
 # -------------------------------------------------------------------------------- [8851]
 # ## txt 0 (1)	=> "Light be with you, $c."
@@ -25759,11 +25760,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8867]
 # ## txt 0 (1)	=> "What are you lookin' at?"
-# == mal[51255]	   "What are you looking at?"
+# == mal[13729]	   "What are you lookin' at?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (8867, 1, 51255);
+ VALUES (8867, 1, 13729);
 
 # -------------------------------------------------------------------------------- [8868]
 # ## txt 0 (1)	=> "I am Adamant Ironheart of the great city of Ironforge. As you could probably guess by looking at my uniform, I was once part of the Ironforge elite guard. Yep, I was Magni's right hand man! At least until I retired. Now I dabble in archaeology. It's a hobby really; plus I figured it would be a great way to see the world!"
@@ -25871,26 +25872,26 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [8893]
 # ## txt 0 (1)	=> "All hail the exalted hero!"
-# == fem[13814]	   "All hail the exalted hero!"
+# == mal[13808]	   "All hail the exalted hero!"
 
 # ## txt 1 (1)	=> "The story of your journey will be told for years to come!"
-# == fem[13815]	   "The story of your journey will be told for years to come!"
+# == mal[13809]	   "The story of your journey will be told for years to come!"
 
 # ## txt 2 (1)	=> "I finally have a story to tell my grandchildren about... A traitor to the kingdom was living among us!$B"
 # == fem[13816]	   "I finally have a story to tell my grandchildren about... A traitor to the kingdom was living among us!$b"
 
 # ## txt 3 (1)	=> "Truth be told, I never liked that gnome..."
-# == fem[13817]	   "Truth be told, I never liked that gnome..."
+# == mal[13811]	   "Truth be told, I never liked that gnome..."
 
 # ## txt 4 (1)	=> "We are lucky to have survived this ordeal. If it wasn't for you, everyone on this island could have been killed!"
-# == fem[13818]	   "We are lucky to have survived this ordeal. If it wasn't for you, everyone on this island could have been killed!"
+# == mal[13812]	   "We are lucky to have survived this ordeal. If it wasn't for you, everyone on this island could have been killed!"
 
 # ## txt 5 (1)	=> "I wonder how many more of them live among us. I knew Spark for years - never could I have imagined that he was a traitor."
-# == fem[13819]	   "I wonder how many more of them live among us. I knew Spark for years - never could I have imagined that he was a traitor."
+# == mal[13813]	   "I wonder how many more of them live among us. I knew Spark for years - never could I have imagined that he was a traitor."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3, Prob4, BroadcastTextId4, Prob5, BroadcastTextId5)
- VALUES (8893, 1, 13814, 1, 13815, 1, 13816, 1, 13817, 1, 13818, 1, 13819);
+ VALUES (8893, 1, 13808, 1, 13809, 1, 13816, 1, 13811, 1, 13812, 1, 13813);
 
 # -------------------------------------------------------------------------------- [8934]
 # ## txt 0 (0)	=> "Hi there, $N. How may I help you?"
@@ -26209,19 +26210,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9006]
 # ## txt 0 (1)	=> "I can sense your desire for power, $c."
-# == mal[52382]	   "I can sense your desire for power, $c."
+# == mal[14190]	   "I can sense your desire for power, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9006, 1, 52382);
+ VALUES (9006, 1, 14190);
 
 # -------------------------------------------------------------------------------- [9007]
 # ## txt 0 (1)	=> "The Light gives us the strength and magic to triumph."
-# == mal[52381]	   "The Light gives us the strength and magic to triumph."
+# == mal[14192]	   "The Light gives us the strength and magic to triumph."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9007, 1, 52381);
+ VALUES (9007, 1, 14192);
 
 # -------------------------------------------------------------------------------- [9008]
 # ## txt 0 (1)	=> "Welcome to the Registrar of Guilds. How can I be of service to you?"
@@ -26449,11 +26450,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9051]
 # ## txt 0 (1)	=> "Please, sit and make yourself comfortable."
-# == mal[16966]	   "Please, sit and make yourself comfortable."
+# == mal[14352]	   "Please, sit and make yourself comfortable."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9051, 1, 16966);
+ VALUES (9051, 1, 14352);
 
 # -------------------------------------------------------------------------------- [9052]
 # ## txt 0 (1)	=> "Good day, $c. Are you in need of a reliable hippogryph?"
@@ -27227,11 +27228,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9179]
 # ## txt 0 (1)	=> "Greetings, $N."
-# == fem[56604]	   "Greetings, $n."
+# == mal[10783]	   "Greetings, $N."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9179, 1, 56604);
+ VALUES (9179, 1, 10783);
 
 # -------------------------------------------------------------------------------- [9180]
 # ## txt 0 (1)	=> "The spirits are restless, $r. Be mindful of your surroundings while in Nagrand lest you be consumed by their fury."
@@ -27267,43 +27268,43 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9184]
 # ## txt 0 (1)	=> "I can sense your desire for power, $c."
-# == mal[52382]	   "I can sense your desire for power, $c."
+# == mal[14190]	   "I can sense your desire for power, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9184, 1, 52382);
+ VALUES (9184, 1, 14190);
 
 # -------------------------------------------------------------------------------- [9185]
 # ## txt 0 (1)	=> "I apologize, $c. I mistook you for someone with a spine. Begone; our secrets are not for untrained ears."
-# == mal[52383]	   "I apologize, $c. I mistook you for someone with a spine. Begone; our secrets are not for untrained ears."
+# == mal[14763]	   "I apologize, $c. I mistook you for someone with a spine. Begone; our secrets are not for untrained ears."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9185, 1, 52383);
+ VALUES (9185, 1, 14763);
 
 # -------------------------------------------------------------------------------- [9186]
 # ## txt 0 (1)	=> "I have no time for a sermon now, $c. Seek your knowledge elsewhere."
-# == mal[52380]	   "I have no time for a sermon now, $c. Seek your knowledge elsewhere."
+# == mal[14765]	   "I have no time for a sermon now, $c. Seek your knowledge elsewhere."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9186, 1, 52380);
+ VALUES (9186, 1, 14765);
 
 # -------------------------------------------------------------------------------- [9187]
 # ## txt 0 (1)	=> "It appears you took a wrong turn, $c."
-# == mal[52392]	   "It appears you took a wrong turn, $c."
+# == mal[14766]	   "It appears you took a wrong turn, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9187, 1, 52392);
+ VALUES (9187, 1, 14766);
 
 # -------------------------------------------------------------------------------- [9188]
 # ## txt 0 (1)	=> "Greetings, $n. You were not followed here, I trust?"
-# == mal[52393]	   "Greetings, $n. You were not followed here, I trust?"
+# == mal[14767]	   "Greetings, $n. You were not followed here, I trust?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9188, 1, 52393);
+ VALUES (9188, 1, 14767);
 
 # -------------------------------------------------------------------------------- [9189]
 # ## txt 0 (1)	=> "We have little to discuss, $c. Perhaps you should seek other, more like-minded individuals."
@@ -27342,11 +27343,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9193]
 # ## txt 0 (1)	=> "Ours is a path for those with an iron will and unfaltering resolve. You seem to possess none of these traits, $c."
-# == mal[52388]	   "Ours is a path for those with an iron will and unfaltering resolve. You seem to possess none of these traits, $c."
+# == mal[14773]	   "Ours is a path for those with an iron will and unfaltering resolve. You seem to possess none of these traits, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9193, 1, 52388);
+ VALUES (9193, 1, 14773);
 
 # -------------------------------------------------------------------------------- [9194]
 # ## txt 0 (1)	=> "This land has been ravaged by the crash. While you may not follow our philosophies, $c, I urge you to do whatever you can to aid in the healing process."
@@ -27626,11 +27627,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9246]
 # ## txt 0 (1)	=> "This sign contains various announcements and notices of rewards."
-# == mal[14941]	   "This sign contains various announcements and notices of rewards."
+# == mal[12177]	   "This sign contains various announcements and notices of rewards."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9246, 1, 14941);
+ VALUES (9246, 1, 12177);
 
 # -------------------------------------------------------------------------------- [9248]
 # ## txt 0 (1)	=> "Welcome to Zabra'jin, $c. I am Shadow Hunter Denjai, overseer of this outpost and commander of the Darkspear forces in Zangarmarsh."
@@ -28478,11 +28479,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9397]
 # ## txt 0 (1)	=> "May the spirits be with you."
-# == mal[15446]	   "May the spirits be with you."
+# == mal[7660]	   "May the spirits be with you."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9397, 1, 15446);
+ VALUES (9397, 1, 7660);
 
 # -------------------------------------------------------------------------------- [9398]
 # ## txt 0 (1)	=> "Outstanding! Killing a Pit Lord such as Azgalor is no small feat, my friend. If we had more time, I would love to hear the story of you and your companions. Archimonde will not give us that pause, however. My scouts have already reported that the Legion is amassing an immense force outside our camp, and Archimonde is very close to the World Tree. We are evacuating with the help of Lady Proudmoore. You should head to the World Tree at once. The fate of our world is still undecided."
@@ -28660,11 +28661,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9431]
 # ## txt 0 (1)	=> "Twin Spire Ruins is not yet secure! My orders are to only give out battle standards when the two beacons are lit and the area is secure. Get out there and gain control of those beacons!"
-# == mal[15540]	   "Twin Spire Ruins is not yet secure! My orders are to only give out battle standards when the two beacons are lit and the area is secure. Get out there and gain control of those beacons!"
+# == mal[15536]	   "Twin Spire Ruins is not yet secure! My orders are to only give out battle standards when the two beacons are lit and the area is secure. Get out there and gain control of those beacons!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9431, 1, 15540);
+ VALUES (9431, 1, 15536);
 
 # -------------------------------------------------------------------------------- [9432]
 # ## txt 0 (0)	=> "The beacons are lit, now is the time to strike! Take one of these battle standards and plant it at the graveyard for the Alliance!"
@@ -28676,11 +28677,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9433]
 # ## txt 0 (1)	=> "Twin Spire Ruins is not yet secure! My orders are to only give out battle standards when the two beacons are lit and the area is secure. Get out there and gain control of those beacons!"
-# == mal[15540]	   "Twin Spire Ruins is not yet secure! My orders are to only give out battle standards when the two beacons are lit and the area is secure. Get out there and gain control of those beacons!"
+# == mal[15536]	   "Twin Spire Ruins is not yet secure! My orders are to only give out battle standards when the two beacons are lit and the area is secure. Get out there and gain control of those beacons!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9433, 1, 15540);
+ VALUES (9433, 1, 15536);
 
 # -------------------------------------------------------------------------------- [9435]
 # ## txt 0 (1)	=> "<Sal'salabim growls at you, then goes back to drinking his frothy beverage.>"
@@ -29281,11 +29282,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9555]
 # ## txt 0 (1)	=> "Which profession trainer are you looking for?"
-# == mal[15860]	   "Which profession trainer are you looking for?"
+# == mal[2941]	   "Which profession trainer are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9555, 1, 15860);
+ VALUES (9555, 1, 2941);
 
 # -------------------------------------------------------------------------------- [9556]
 # ## txt 0 (1)	=> "You will find a number of shaman trainers in the Crystal Hall. Perhaps you should visit Farseer Nobundo there, and show the Broken some pity. Light be with you."
@@ -29386,11 +29387,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9574]
 # ## txt 0 (1)	=> "Yes? What is it?"
-# == mal[26463]	   "Yes? What is it?"
+# == mal[15899]	   "Yes? What is it?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9574, 1, 26463);
+ VALUES (9574, 1, 15899);
 
 # -------------------------------------------------------------------------------- [9575]
 # ## txt 0 (1)	=> "I don't suppose you've come bearing news about the mines, have you?"
@@ -29847,19 +29848,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9686]
 # ## txt 0 (1)	=> "Greatfather Winter can be found in front of the Ironforge bank. The tree near him is where presents are given out."
-# == mal[16212]	   "Greatfather Winter can be found in front of the Ironforge bank. The tree near him is where presents are given out."
+# == mal[16176]	   "Greatfather Winter can be found in front of the Ironforge bank. The tree near him is where presents are given out."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9686, 1, 16212);
+ VALUES (9686, 1, 16176);
 
 # -------------------------------------------------------------------------------- [9688]
 # ## txt 0 (1)	=> "Go to Ironforge's Mystic Ward and speak with the night elf druids there. They can transport you to Moonglade to join in the Lunar Festival celebration."
-# == mal[16214]	   "Go to Ironforge's Mystic Ward and speak with the night elf druids there. They can transport you to Moonglade to join in the Lunar Festival celebration."
+# == mal[16174]	   "Go to Ironforge's Mystic Ward and speak with the night elf druids there. They can transport you to Moonglade to join in the Lunar Festival celebration."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9688, 1, 16214);
+ VALUES (9688, 1, 16174);
 
 # -------------------------------------------------------------------------------- [9692]
 # ## txt 0 (1)	=> "The celebration of the Lunar Festival is in full swing in Moonglade. You can make the trek, or the druids in the Cenarion Enclave are offering transport."
@@ -29895,11 +29896,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9702]
 # ## txt 0 (1)	=> "You'll find Greatfather Winter in the center of the Valley of Strength. Just look for the tree."
-# == mal[16215]	   "You'll find Greatfather Winter in the center of the Valley of Strength. Just look for the tree."
+# == mal[16191]	   "You'll find Greatfather Winter in the center of the Valley of Strength. Just look for the tree."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9702, 1, 16215);
+ VALUES (9702, 1, 16191);
 
 # -------------------------------------------------------------------------------- [9706]
 # ## txt 0 (1)	=> "The celebration of the feast of Winter Veil is a source of great warmth during the cold seasons, and its heart is in Orgrimmar."
@@ -29943,11 +29944,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9715]
 # ## txt 0 (1)	=> "Go to Ironforge's Mystic Ward and speak with the night elf druids there. They can transport you to Moonglade to join in the Lunar Festival celebration."
-# == mal[16214]	   "Go to Ironforge's Mystic Ward and speak with the night elf druids there. They can transport you to Moonglade to join in the Lunar Festival celebration."
+# == mal[16174]	   "Go to Ironforge's Mystic Ward and speak with the night elf druids there. They can transport you to Moonglade to join in the Lunar Festival celebration."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9715, 1, 16214);
+ VALUES (9715, 1, 16174);
 
 # -------------------------------------------------------------------------------- [9716]
 # ## txt 0 (1)	=> "The most amazing of the Lunar Festival parties is in Moonglade. Don't walk there, though, the druids in the Valley of Wisdom can transport you."
@@ -29959,19 +29960,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9717]
 # ## txt 0 (1)	=> "Greatfather Winter can be found in front of the Ironforge bank. The tree near him is where presents are given out."
-# == mal[16212]	   "Greatfather Winter can be found in front of the Ironforge bank. The tree near him is where presents are given out."
+# == mal[16176]	   "Greatfather Winter can be found in front of the Ironforge bank. The tree near him is where presents are given out."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9717, 1, 16212);
+ VALUES (9717, 1, 16176);
 
 # -------------------------------------------------------------------------------- [9718]
 # ## txt 0 (1)	=> "You'll find Greatfather Winter in the center of the Valley of Strength. Just look for the tree."
-# == mal[16215]	   "You'll find Greatfather Winter in the center of the Valley of Strength. Just look for the tree."
+# == mal[16191]	   "You'll find Greatfather Winter in the center of the Valley of Strength. Just look for the tree."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9718, 1, 16215);
+ VALUES (9718, 1, 16191);
 
 # -------------------------------------------------------------------------------- [9729]
 # ## txt 0 (1)	=> "The untamed plains of Nagrand offer some of the best hunting I've ever experienced. "
@@ -30031,19 +30032,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9749]
 # ## txt 0 (1)	=> "We already have control of Twin Spire Ruins! Get out there and defend it!"
-# == mal[16290]	   "We already have control of Twin Spire Ruins! Get out there and defend it!"
+# == mal[16289]	   "We already have control of Twin Spire Ruins! Get out there and defend it!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9749, 1, 16290);
+ VALUES (9749, 1, 16289);
 
 # -------------------------------------------------------------------------------- [9750]
 # ## txt 0 (1)	=> "We already have control of Twin Spire Ruins! Get out there and defend it!"
-# == mal[16290]	   "We already have control of Twin Spire Ruins! Get out there and defend it!"
+# == mal[16289]	   "We already have control of Twin Spire Ruins! Get out there and defend it!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9750, 1, 16290);
+ VALUES (9750, 1, 16289);
 
 # -------------------------------------------------------------------------------- [9751]
 # ## txt 0 (1)	=> "This old draenei board has been refurbished by the Kurenai and is now used to post announcements and bounties."
@@ -30527,11 +30528,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [9886]
 # ## txt 0 (1)	=> "What is it that you want, $r?"
-# == mal[17183]	   "What is it that you want, $r?"
+# == mal[15939]	   "What is it that you want, $r?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (9886, 1, 17183);
+ VALUES (9886, 1, 15939);
 
 # -------------------------------------------------------------------------------- [9894]
 # ## txt 0 (1)	=> "What's an "Ologist?" A better question might be what isn't an "Ologist." It means I study everything! In fact, I'm so well versed in "everything" that I'm guaranteed to be the most intelligent ethereal you'll ever meet - or your money back.$B$BApologies. That's the dealer in me talking..."
@@ -31237,11 +31238,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10024]
 # ## txt 0 (1)	=> "You are not yet strong enough to do battle in the Eye of the Storm. Return when you have gained more experience."
-# == mal[30333]	   "You are not yet strong enough to do battle in the Eye of the Storm. Return when you have gained more experience."
+# == mal[17961]	   "You are not yet strong enough to do battle in the Eye of the Storm. Return when you have gained more experience."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10024, 1, 30333);
+ VALUES (10024, 1, 17961);
 
 # -------------------------------------------------------------------------------- [10025]
 # ## txt 0 (1)	=> "Draenei forces and their Alliance allies are engaged with the Horde in the Eye of the Storm in Outland. Will you join them in an effort to turn the tide of battle in our favor?"
@@ -33117,11 +33118,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10405]
 # ## txt 0 (1)	=> "I'm listening."
-# == mal[19575]	   "I'm listening."
+# == mal[19261]	   "I'm listening."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10405, 1, 19575);
+ VALUES (10405, 1, 19261);
 
 # -------------------------------------------------------------------------------- [10406]
 # ## txt 0 (1)	=> "Oh? Of course you have papers documenting this request."
@@ -33757,11 +33758,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10519]
 # ## txt 0 (1)	=> "<The Arcane Guardian gestures towards the Seer's Library.>"
-# == mal[52733]	   "<The Arcane Guardian gestures towards the Seer's Library.>"
+# == mal[19646]	   "<The Arcane Guardian gestures towards the Seer's Library.>"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10519, 1, 52733);
+ VALUES (10519, 1, 19646);
 
 # -------------------------------------------------------------------------------- [10520]
 # ## txt 0 (1)	=> "<The Arcane Guardian gestures towards the northeastern section of the lower city.>"
@@ -33838,6 +33839,8 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10529]
 # ## txt 0 (1)	=> "Our grand master jewelcrafter, Hamanar, is here on the Aldor Rise."
+# ## FAR FOUND
+# oo mal[19246]	   "The draenei grand master jewelcrafter, Hamanar, may be found among his people on the Aldor Rise."
 # oo mal[19656]	   "A grand master jewelcrafter, Hamanar, may be found in northern Aldor Rise."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -33999,7 +34002,6 @@ INSERT INTO `npc_text_broadcast_text`
 # -------------------------------------------------------------------------------- [10551]
 # ## txt 0 (0)	=> "Hey there cutie, you looking for a ride to Grom'gol? I hear it gets mighty steamy down in those jungles, maybe I could join you for a short vacation, show you a real jungle cat."
 # ++ mal[7376]	   "$g Hey there cutie, you looking for a ride to Grom'gol? I hear it gets mighty steamy down in those jungles, maybe I could join you for a short vacation, show you a real jungle cat. : Come, take a trip to the wonderful, gorgeous, tropical jungles of Stranglethorn. That's right, you too can be spending your time sunbathing by the crystal blue waters while I stand here in this unbearable heat with nothing to look at but my brother Frezza all day! Enjoy your trip!;"
-# TO CHECK : 2 sentences in one field ?
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
@@ -34172,35 +34174,35 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10576]
 # ## txt 0 (1)	=> "The goblin Steamwheedle Fighting Circuit is beginning soon. They're holding practice matches in their arenas now, but ranking fights begin in $4262d."
-# == mal[19789]	   "The goblin Steamwheedle Fighting Circuit is beginning soon. They're holding practice matches in their arenas now, but ranking fights begin in $4262d."
+# == mal[19760]	   "The goblin Steamwheedle Fighting Circuit is beginning soon. They're holding practice matches in their arenas now, but ranking fights begin in $4262d."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10576, 1, 19789);
+ VALUES (10576, 1, 19760);
 
 # -------------------------------------------------------------------------------- [10578]
 # ## txt 0 (1)	=> "The goblin Steamwheedle Fighting Circuit has begun. You can find Arena Organizers selling arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
-# == mal[19787]	   "The goblin Steamwheedle Fighting Circuit has begun. You can find Arena Organizers selling arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
+# == mal[19767]	   "The goblin Steamwheedle Fighting Circuit has begun. You can find Arena Organizers selling arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10578, 1, 19787);
+ VALUES (10578, 1, 19767);
 
 # -------------------------------------------------------------------------------- [10579]
 # ## txt 0 (1)	=> "The goblin Steamwheedle Fighting Circuit has begun. You can find Arena Organizers selling arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
-# == mal[19787]	   "The goblin Steamwheedle Fighting Circuit has begun. You can find Arena Organizers selling arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
+# == mal[19767]	   "The goblin Steamwheedle Fighting Circuit has begun. You can find Arena Organizers selling arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10579, 1, 19787);
+ VALUES (10579, 1, 19767);
 
 # -------------------------------------------------------------------------------- [10595]
 # ## txt 0 (1)	=> "The goblin Steamwheedle Fighting Circuit has begun. You can find Arena Organizers selling arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
-# == mal[19787]	   "The goblin Steamwheedle Fighting Circuit has begun. You can find Arena Organizers selling arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
+# == mal[19767]	   "The goblin Steamwheedle Fighting Circuit has begun. You can find Arena Organizers selling arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10595, 1, 19787);
+ VALUES (10595, 1, 19767);
 
 # -------------------------------------------------------------------------------- [10597]
 # ## txt 0 (1)	=> "<The grizzled gladiator speaks in halting Common.> What? You have a problem with me? Take it to the arena. I don't waste my time with your little "hordes" and "alliances.""
@@ -34212,11 +34214,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10598]
 # ## txt 0 (1)	=> "Gladiators earn the right to wear equipment like mine by winning ranked arena matches."
-# == mal[19793]	   "Gladiators earn the right to wear equipment like mine by winning ranked arena matches."
+# == mal[19791]	   "Gladiators earn the right to wear equipment like mine by winning ranked arena matches."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10598, 1, 19793);
+ VALUES (10598, 1, 19791);
 
 # -------------------------------------------------------------------------------- [10599]
 # ## txt 0 (1)	=> "<The veteran gladiator speaks in halting Orcish.> What? You have a problem with me? Take it to the arena. I don't waste my time with your little "hordes" and "alliances.""
@@ -34228,11 +34230,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10600]
 # ## txt 0 (1)	=> "Gladiators earn the right to wear equipment like mine by winning ranked arena matches."
-# == mal[19793]	   "Gladiators earn the right to wear equipment like mine by winning ranked arena matches."
+# == mal[19791]	   "Gladiators earn the right to wear equipment like mine by winning ranked arena matches."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10600, 1, 19793);
+ VALUES (10600, 1, 19791);
 
 # -------------------------------------------------------------------------------- [10601]
 # ## txt 0 (1)	=> "Yo! Have you heard about the Steamwheedle Fighting Circuit?You can find Arena Organizers selling the arena team charters in Gadgetzan and outside the arenas in Nagrand and the Blade's Edge Mountains."
@@ -34420,11 +34422,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10649]
 # ## txt 0 (1)	=> "I can instruct you in alchemy. Interested?"
-# == mal[20130]	   "I can instruct you in alchemy. Interested?"
+# == mal[15414]	   "I can instruct you in alchemy. Interested?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10649, 1, 20130);
+ VALUES (10649, 1, 15414);
 
 # -------------------------------------------------------------------------------- [10650]
 # ## txt 0 (1)	=> "I can instruct you in engineering. Interested?"
@@ -34468,11 +34470,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10655]
 # ## txt 0 (1)	=> "It is good to see you again, friend."
-# == mal[44116]	   "It is good to see you again, friend."
+# == mal[20139]	   "It is good to see you again, friend."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10655, 1, 44116);
+ VALUES (10655, 1, 20139);
 
 # -------------------------------------------------------------------------------- [10657]
 # ## txt 0 (1)	=> "It feels good to walk about and stretch all four limbs. Is there something I can help you with, $c?"
@@ -34620,11 +34622,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10682]
 # ## txt 0 (1)	=> "May the Light guide you, $n."
-# == mal[20260]	   "May the Light guide you, $n."
+# == mal[17331]	   "May the Light guide you, $n."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10682, 1, 20260);
+ VALUES (10682, 1, 17331);
 
 # -------------------------------------------------------------------------------- [10683]
 # ## txt 0 (1)	=> "It is with solemn pride that I perform my services in Honor Hold."
@@ -34852,7 +34854,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10732]
 # ## txt 0 (1)	=> "Are we there yet?"
-# == fem[64242]	   "Are we there yet?"
+# == mal[1092]	   "Are we there yet?"
 
 # ## txt 1 (1)	=> "If the demons fell, where did they fall from?"
 # == fem[20465]	   "If the demons fell, where did they fall from?"
@@ -34877,7 +34879,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3, Prob4, BroadcastTextId4, Prob5, BroadcastTextId5, Prob6, BroadcastTextId6, Prob7, BroadcastTextId7)
- VALUES (10732, 1, 64242, 1, 20465, 1, 20677, 1, 20678, 1, 20679, 1, 20680, 1, 20681, 1, 20682);
+ VALUES (10732, 1, 1092, 1, 20465, 1, 20677, 1, 20678, 1, 20679, 1, 20680, 1, 20681, 1, 20682);
 
 # -------------------------------------------------------------------------------- [10733]
 # ## txt 0 (0)	=> "I am free! But the secret... is now in peril. Akama must be warned!"
@@ -35458,11 +35460,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10835]
 # ## txt 0 (1)	=> "Be wary, friends. The Betrayer meditates in the court just beyond."
-# == mal[21555]	   "Be wary, friends. The Betrayer meditates in the court just beyond."
+# == mal[20902]	   "Be wary, friends. The Betrayer meditates in the court just beyond."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10835, 1, 21555);
+ VALUES (10835, 1, 20902);
 
 # -------------------------------------------------------------------------------- [10837]
 # ## txt 0 (1)	=> "Shh! Keep your voice down. The babes are sleeping."
@@ -35676,11 +35678,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [10887]
 # ## txt 0 (0)	=> "How can I help you, $c?"
-# == mal[55940]	   "How can I help you, $c?"
+# == mal[21279]	   "How can I help you, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (10887, 0, 55940);
+ VALUES (10887, 0, 21279);
 
 # -------------------------------------------------------------------------------- [10888]
 # ## txt 0 (1)	=> "The pile of skulls reeks of foulness. You fear the arakkoa have made an addition to the pile fairly recently."
@@ -36388,11 +36390,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11000]
 # ## txt 0 (1)	=> "What are you looking for?"
-# == mal[21585]	   "What are you looking for?"
+# == mal[3425]	   "What are you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11000, 1, 21585);
+ VALUES (11000, 1, 3425);
 
 # -------------------------------------------------------------------------------- [11001]
 # ## txt 0 (1)	=> "You know, $N, it's such an honor to work with you!$B$BWhen you're not busy wrangling, maybe we could $g go out some place for dinner? : get together for a girl's night?;$B$BOh, did I mention that we can now get you to our base in the Skethyl Mountains real quick? If you want, speak with Skyguard Handler Irena about that."
@@ -36748,11 +36750,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11064]
 # ## txt 0 (1)	=> "Greetings, traveler."
-# == mal[64776]	   "Greetings, traveler."
+# == mal[21829]	   "Greetings, traveler."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11064, 1, 64776);
+ VALUES (11064, 1, 21829);
 
 # -------------------------------------------------------------------------------- [11065]
 # ## txt 0 (1)	=> "Our Aether-tech and his escort are heading to Bash'ir Landing. Meet them there and help with their mission!"
@@ -36952,11 +36954,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11167]
 # ## txt 0 (1)	=> "The zeppelin should have just arrived at Grom'gol... "
-# == mal[22101]	   "The zeppelin should have just arrived at Grom'gol... "
+# == mal[22071]	   "The zeppelin should have just arrived at Grom'gol... "
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11167, 1, 22101);
+ VALUES (11167, 1, 22071);
 
 # -------------------------------------------------------------------------------- [11169]
 # ## txt 0 (1)	=> "The zeppelin should have just arrived at Orgrimmar..."
@@ -36984,11 +36986,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11173]
 # ## txt 0 (1)	=> "The zeppelin should just have arrived at Undercity."
-# == mal[22092]	   "The zeppelin should just have arrived at Undercity."
+# == mal[22087]	   "The zeppelin should just have arrived at Undercity."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11173, 1, 22092);
+ VALUES (11173, 1, 22087);
 
 # -------------------------------------------------------------------------------- [11174]
 # ## txt 0 (1)	=> "The zeppelin should have just departed from Orgrimmar."
@@ -37016,11 +37018,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11179]
 # ## txt 0 (1)	=> "The zeppelin should just have arrived at Undercity."
-# == mal[22092]	   "The zeppelin should just have arrived at Undercity."
+# == mal[22087]	   "The zeppelin should just have arrived at Undercity."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11179, 1, 22092);
+ VALUES (11179, 1, 22087);
 
 # -------------------------------------------------------------------------------- [11180]
 # ## txt 0 (1)	=> "The zeppelin should just have arrived at Grom'gol."
@@ -37064,11 +37066,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11209]
 # ## txt 0 (1)	=> "You won't find a better brew in Azeroth."
-# == mal[23511]	   "You won't find a better brew in Azeroth."
+# == mal[22141]	   "You won't find a better brew in Azeroth."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11209, 1, 23511);
+ VALUES (11209, 1, 22141);
 
 # -------------------------------------------------------------------------------- [11210]
 # ## txt 0 (1)	=> "We Thunderbrews take pride knowing that we are the best brewhouse in all the realms."
@@ -37112,11 +37114,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11220]
 # ## txt 0 (1)	=> "I highly recommend that you visit Sayge to get your fortune told. I know, I know... he's a gnoll. But he's a very special gnoll with the power to divine your future!$B$BAnd we are constantly expanding the faire with all manner of new attractions!"
-# == fem[22156]	   "I highly recommend that you visit Sayge to get your fortune told. I know, I know... he's a gnoll. But he's a very special gnoll with the power to divine your future!$B$BAnd we are constantly expanding the faire with all manner of new attractions!"
+# == fem[10780]	   "I highly recommend that you visit Sayge to get your fortune told. I know, I know... he's a gnoll. But he's a very special gnoll with the power to divine your future!$B$BAnd we are constantly expanding the faire with all manner of new attractions!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11220, 1, 22156);
+ VALUES (11220, 1, 10780);
 
 # -------------------------------------------------------------------------------- [11221]
 # ## txt 0 (1)	=> "Yes, well, listen here, $c. I'm older than I look and wise beyond my years. You'd do well not to question me so much.$b$bLook, you don't need to take my word for it. Read the postings on any local bulletin board for yourself. I'm everywhere!$b$bJust do yourself a favor and ignore the ones with 'WANTED' in the title. Simple misunderstandings, I assure you."
@@ -37285,14 +37287,14 @@ INSERT INTO `npc_text_broadcast_text`
 # == mal[22297]	   "Say, you look familiar. Have we met?"
 
 # ## txt 1 (1)	=> "Do I know you?"
-# == mal[54704]	   "Do I know you?"
+# == mal[22298]	   "Do I know you?"
 
 # ## txt 2 (1)	=> "Lemme give you some advice: Never trust a gnome."
 # == mal[22299]	   "Lemme give you some advice: Never trust a gnome."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (11287, 1, 22297, 1, 54704, 1, 22299);
+ VALUES (11287, 1, 22297, 1, 22298, 1, 22299);
 
 # -------------------------------------------------------------------------------- [11289]
 # ## txt 0 (0)	=> "Ok mon, a deal be a deal....$b$bIt was night when we all snuck in to Zul'Aman fer a look around.$b$bAll was quiet, til we be hearin' a rustlin' sound, like the wind through the trees. Before we know it, we be surrounded by these savages and their pets! Next day, I be wakin' up here, stuck in a cage.$b$bDay an' night, one by one, prisoners be gettin' killed. Every time one be dyin', that bear-troll be lookin' stronger.$b$bThat be all I know 'bout this place, mon. And I don't wanna be knowin' any more!"
@@ -37468,10 +37470,10 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11356]
 # ## txt 0 (1)	=> "What's happening?"
-# == fem[57836]	   "What's happening?"
+# == mal[12176]	   "What's happening?"
 
 # ## txt 1 (1)	=> "I want to go back to the orphanage!"
-# == mal[22534]	   "I want to go back to the orphanage!"
+# == mal[22344]	   "I want to go back to the orphanage!"
 
 # ## txt 2 (1)	=> "Matron! Is that bad man going to eat us?"
 # == mal[22345]	   "Matron! Is that bad man going to eat us?"
@@ -37484,7 +37486,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3, Prob4, BroadcastTextId4)
- VALUES (11356, 1, 57836, 1, 22534, 1, 22345, 1, 22346, 1, 22347);
+ VALUES (11356, 1, 12176, 1, 22344, 1, 22345, 1, 22346, 1, 22347);
 
 # -------------------------------------------------------------------------------- [11358]
 # ## txt 0 (1)	=> "He's gone? Hooray!"
@@ -37508,7 +37510,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11359]
 # ## txt 0 (1)	=> "Hallow's End is a scary holiday, but I like it!"
-# == mal[22532]	   "Hallow's End is a scary holiday, but I like it!"
+# == mal[22374]	   "Hallow's End is a scary holiday, but I like it!"
 
 # ## txt 1 (1)	=> "Have you seen the Headless Horseman? The matron says if I look at him, then he'll turn me into a pumpkin!"
 # == mal[23025]	   "Have you seen the Headless Horseman? The matron says if I look at him, then he'll turn me into a pumpkin!"
@@ -37527,7 +37529,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3, Prob4, BroadcastTextId4, Prob5, BroadcastTextId5)
- VALUES (11359, 1, 22532, 1, 23025, 1, 23026, 1, 23028, 1, 23029, 1, 23030);
+ VALUES (11359, 1, 22374, 1, 23025, 1, 23026, 1, 23028, 1, 23029, 1, 23030);
 
 # -------------------------------------------------------------------------------- [11362]
 # ## txt 0 (1)	=> "For years beyond counting these woods have burned. They are fueled by an ancient magic and are the mating grounds for the brood mother and her proto-drake consorts.$B$BBut now a long-forgotten evil has reawakened and seeks once again to enslave the offspring of the brood mother for their own purposes.$B$BThese vrykul have caused a disturbance that is extending the boundary of the clutch, and threatens your people."
@@ -37659,11 +37661,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11469]
 # ## txt 0 (1)	=> "Pleased to meet you, $c."
-# == mal[31204]	   "Pleased to meet you, $c."
+# == mal[22523]	   "Pleased to meet you, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11469, 1, 31204);
+ VALUES (11469, 1, 22523);
 
 # -------------------------------------------------------------------------------- [11472]
 # ## txt 0 (1)	=> "There are eight types of Darkmoon Cards; Beasts, Blessings, Elementals, Furies, Lunacy, Portals, Storms and Warlords, with eight cards, Ace to Eight in each suit. If you collect all eight of one suit then you can turn them into a deck that you can give to our Professor Thaddeus Paleo in exchange for a powerful trinket.$B"
@@ -37707,7 +37709,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11477]
 # ## txt 0 (1)	=> "Hallow's End is a scary holiday, but I like it!"
-# == mal[22532]	   "Hallow's End is a scary holiday, but I like it!"
+# == mal[22374]	   "Hallow's End is a scary holiday, but I like it!"
 
 # ## txt 1 (1)	=> "Have you seen the Headless Horseman? If he comes here then I'll fight him and steal his pumpkin!"
 # == mal[23020]	   "Have you seen the Headless Horseman? If he comes here then I'll fight him and steal his pumpkin!"
@@ -37726,7 +37728,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3, Prob4, BroadcastTextId4, Prob5, BroadcastTextId5)
- VALUES (11477, 1, 22532, 1, 23020, 1, 23021, 1, 23022, 1, 23023, 1, 23024);
+ VALUES (11477, 1, 22374, 1, 23020, 1, 23021, 1, 23022, 1, 23023, 1, 23024);
 
 # -------------------------------------------------------------------------------- [11482]
 # ## txt 0 (1)	=> "Greetings my friend, and welcome to the greatest show in Outland!$B$BPlease, step right up and take in all we have to offer. Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world! We have spared no expense in bringing you excitement that children of all ages will delight in!"
@@ -38012,11 +38014,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11714]
 # ## txt 0 (1)	=> "Welcome to my Inn, weary traveler. What can I do for you?"
-# == mal[16967]	   "Welcome to my Inn, weary traveler. What can I do for you?"
+# == mal[2821]	   "Welcome to my Inn, weary traveler. What can I do for you?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11714, 1, 16967);
+ VALUES (11714, 1, 2821);
 
 # -------------------------------------------------------------------------------- [11724]
 # ## txt 0 (1)	=> "So many uses for the plague, so little time!"
@@ -38178,11 +38180,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [11912]
 # ## txt 0 (1)	=> "Of course."
-# == mal[66307]	   "Of course."
+# == mal[23157]	   "Of course."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (11912, 1, 66307);
+ VALUES (11912, 1, 23157);
 
 # -------------------------------------------------------------------------------- [11943]
 # ## txt 0 (1)	=> "Let me guess, another group of Budd's riff-raff?$b$bAway with you, $r, before you get hurt - or worse."
@@ -38298,11 +38300,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12049]
 # ## txt 0 (1)	=> "We set up this area to practice fire fighting. You never know when the town will be imperiled!"
-# == mal[23557]	   "We set up this area to practice fire fighting. You never know when the town will be imperiled!"
+# == mal[23339]	   "We set up this area to practice fire fighting. You never know when the town will be imperiled!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12049, 1, 23557);
+ VALUES (12049, 1, 23339);
 
 # -------------------------------------------------------------------------------- [12052]
 # ## txt 0 (1)	=> "I bet ya think you're tough, eh, kid? I guess I might have something for ya if ya can hold your own in the arena. Good stuff, not like Krixel's. That's so last season, ya know?$b$bOh, and have a nice day."
@@ -38434,11 +38436,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12104]
 # ## txt 0 (1)	=> "You won't find a better brew in Azeroth."
-# == mal[23511]	   "You won't find a better brew in Azeroth."
+# == mal[22141]	   "You won't find a better brew in Azeroth."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12104, 1, 23511);
+ VALUES (12104, 1, 22141);
 
 # -------------------------------------------------------------------------------- [12105]
 # ## txt 0 (1)	=> "Hey mon, you ready to try da best brew in all da realms?"
@@ -38775,11 +38777,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12185]
 # ## txt 0 (1)	=> "Welcome back, $N."
-# == mal[24110]	   "Welcome back, $n."
+# == mal[17298]	   "Welcome back, $n."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12185, 1, 24110);
+ VALUES (12185, 1, 17298);
 
 # -------------------------------------------------------------------------------- [12186]
 # ## txt 0 (1)	=> "That cursed Jonah Sterling will lead us right into doom. If he spent more time outside of his cave, he would realize the folly of attacking professional navies in a time of war."
@@ -39474,20 +39476,20 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12315]
 # ## txt 0 (1)	=> "Sorta busy."
-# == mal[32346]	   "Sorta busy."
+# == mal[24256]	   "Sorta busy."
 
 # ## txt 1 (1)	=> "What? I'm busy here."
-# == mal[32347]	   "What? I'm busy here."
+# == mal[24257]	   "What? I'm busy here."
 
 # ## txt 2 (1)	=> "On duty. GO. AWAY."
-# == mal[32348]	   "On duty. GO. AWAY."
+# == mal[24258]	   "On duty. GO. AWAY."
 
 # ## txt 3 (1)	=> "You need something fixed? Use the Vend-O-Tron D-Luxe."
 # == mal[24259]	   "You need something fixed? Use the Vend-O-Tron D-Luxe."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (12315, 1, 32346, 1, 32347, 1, 32348, 1, 24259);
+ VALUES (12315, 1, 24256, 1, 24257, 1, 24258, 1, 24259);
 
 # -------------------------------------------------------------------------------- [12316]
 # ## txt 0 (1)	=> "We protect this airship on its way from Orgrimmar to Grom'gol base camp in Stranglethorn Vale."
@@ -40382,11 +40384,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12539]
 # ## txt 0 (1)	=> "Sorry, but my services are only of use to hunters."
-# == mal[25286]	   "Sorry, but my services are only of use to hunters."
+# == mal[25277]	   "Sorry, but my services are only of use to hunters."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12539, 1, 25286);
+ VALUES (12539, 1, 25277);
 
 # -------------------------------------------------------------------------------- [12540]
 # ## txt 0 (1)	=> "Sorry, but my services are only of use to druids."
@@ -40398,11 +40400,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12541]
 # ## txt 0 (1)	=> "How may I help you, $c?"
-# == fem[33572]	   "How may I help you, $c?"
+# == mal[25280]	   "How may I help you, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12541, 1, 33572);
+ VALUES (12541, 1, 25280);
 
 # -------------------------------------------------------------------------------- [12542]
 # ## txt 0 (1)	=> "I can erase all your talents so that you may choose new ones.$b$bThis becomes more expensive each time you do it."
@@ -40414,11 +40416,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12543]
 # ## txt 0 (1)	=> "Sorry, but my services are only of use to hunters."
-# == mal[25286]	   "Sorry, but my services are only of use to hunters."
+# == mal[25277]	   "Sorry, but my services are only of use to hunters."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12543, 1, 25286);
+ VALUES (12543, 1, 25277);
 
 # -------------------------------------------------------------------------------- [12544]
 # ## txt 0 (1)	=> "Sorry, but my services are only of use to mages."
@@ -40486,11 +40488,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12554]
 # ## txt 0 (1)	=> "Huh?"
-# == mal[40198]	   "Huh?"
+# == mal[20787]	   "Huh?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12554, 1, 40198);
+ VALUES (12554, 1, 20787);
 
 # -------------------------------------------------------------------------------- [12555]
 # ## txt 0 (1)	=> "Dying for one's country is a soldier's duty. But if calling this war folly is treason, then I'm a traitor."
@@ -40611,11 +40613,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12587]
 # ## txt 0 (1)	=> "Then I am glad you came. Now that you know of our fires, and of honoring them... and of the fires of our enemies, and of extinguishing them... you may return to him and be rewarded."
-# == mal[25444]	   "Then I am glad you came. Now that you know of our fires, and of honoring them... and of the fires of our enemies, and of extinguishing them... you may return to him and be rewarded."
+# == mal[25443]	   "Then I am glad you came. Now that you know of our fires, and of honoring them... and of the fires of our enemies, and of extinguishing them... you may return to him and be rewarded."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12587, 1, 25444);
+ VALUES (12587, 1, 25443);
 
 # -------------------------------------------------------------------------------- [12590]
 # ## txt 0 (1)	=> "In a word, magic.$b$bIrresponsible mortals with their brief lifespans think nothing of the lasting effects of their actions.$b$bArcane energies have been tapped too liberally, disrupting the world's balance. If this is allowed to continue, Azeroth will soon be annihilated.$b$bOn this, both sides agree. But before a council could even be appointed, Malygos put his own plan into action.$b$bWe had no choice but to confront him."
@@ -40782,7 +40784,7 @@ INSERT INTO `npc_text_broadcast_text`
 # == mal[25646]	   "Go away, mon."
 
 # ## txt 3 (1)	=> "No time to be talkin', mon. I be needin' to rest now...."
-# == mal[25648]	   "No time to be talkin', mon. I be needin' to rest now...."
+# == mal[25647]	   "No time to be talkin', mon. I be needin' to rest now...."
 
 # ## txt 4 (1)	=> "Troll powah, mon!"
 # == mal[25679]	   "Troll powah, mon!"
@@ -40792,7 +40794,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3, Prob4, BroadcastTextId4, Prob5, BroadcastTextId5)
- VALUES (12617, 1, 25644, 1, 25645, 1, 25646, 1, 25648, 1, 25679, 1, 25680);
+ VALUES (12617, 1, 25644, 1, 25645, 1, 25646, 1, 25647, 1, 25679, 1, 25680);
 
 # -------------------------------------------------------------------------------- [12618]
 # ## txt 0 (1)	=> "Will the Horde grant me the chance to battle the Scourge?"
@@ -41605,11 +41607,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12812]
 # ## txt 0 (1)	=> "Yes? What is it?"
-# == mal[26463]	   "Yes? What is it?"
+# == mal[15899]	   "Yes? What is it?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12812, 1, 26463);
+ VALUES (12812, 1, 15899);
 
 # -------------------------------------------------------------------------------- [12819]
 # ## txt 0 (1)	=> "Every two years the Spirits of Competition grow especially fervent... and now is that time! We wear this tabard into the Battlegrounds to honor them, seeking to defeat our enemies and earn their favor."
@@ -42242,11 +42244,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12946]
 # ## txt 0 (1)	=> "Yes?"
-# == mal[71757]	   "Yes?"
+# == mal[2873]	   "Yes?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12946, 1, 71757);
+ VALUES (12946, 1, 2873);
 
 # -------------------------------------------------------------------------------- [12949]
 # ## txt 0 (1)	=> "The Infinite Dragonflight is attempting to alter the destiny of Prince Arthas Menethil. You know him now as the Lich King, but here and now he was still a Prince of Lordaeron trying to do what was best for his kingdom. Arthas makes a very fateful choice today, leading to something we Keepers of Time call an inflection point in the timeline."
@@ -42330,11 +42332,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [12965]
 # ## txt 0 (1)	=> "Awaiting orders!"
-# == mal[27122]	   "Awaiting orders!"
+# == fem[10340]	   "Awaiting orders!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (12965, 1, 27122);
+ VALUES (12965, 1, 10340);
 
 # -------------------------------------------------------------------------------- [12966]
 # ## txt 0 (1)	=> "Welcome to Granite Springs, friend.$b$bIf you manage to catch any of these ice trolls alive, be sure to let me know. We're paying well for 'em."
@@ -42632,7 +42634,7 @@ INSERT INTO `npc_text_broadcast_text`
 # == mal[27427]	   "Hey there, $c. We're in the middle of a battle here."
 
 # ## txt 2 (1)	=> "What are you doing out here?"
-# == mal[27428]	   "What are you doing out here?"
+# == mal[4644]	   "What are you doing out here?"
 
 # ## txt 3 (1)	=> "Aren't you $N? I'd heard you were dead."
 # == mal[27429]	   "Aren't you $n? I'd heard you were dead."
@@ -42651,7 +42653,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3, Prob4, BroadcastTextId4, Prob5, BroadcastTextId5, Prob6, BroadcastTextId6, Prob7, BroadcastTextId7)
- VALUES (13047, 1, 27426, 1, 27427, 1, 27428, 1, 27429, 1, 27430, 1, 27431, 1, 27432, 1, 27433);
+ VALUES (13047, 1, 27426, 1, 27427, 1, 4644, 1, 27429, 1, 27430, 1, 27431, 1, 27432, 1, 27433);
 
 # -------------------------------------------------------------------------------- [13048]
 # ## txt 0 (1)	=> "Little hairier out here than you expected, $r?$b$bCan't say I'm surprised. I hear that from most everyone who makes it this far."
@@ -42922,6 +42924,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13117]
 # ## txt 0 (1)	=> "The last thing that we needed was for the crazy Drakkari trolls to shoot down a Scourge necropolis in our backyard.$B$BHow did they manage to do that?!"
+# NOT TBC
 # == mal[27714]	   "The last thing that we needed was for the crazy Drakkari trolls to shoot down a Scourge necropolis in our backyard.$B$BHow did they manage to do that?!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -42930,6 +42933,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13118]
 # ## txt 0 (1)	=> "Ugh, I should never have volunteered to be a specialist. They always ask us to do the impossible!"
+# NOT TBC
 # == fem[27715]	   "Ugh, I should never have volunteered to be a specialist. They always ask us to do the impossible!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -42938,6 +42942,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13120]
 # ## txt 0 (1)	=> "<The captive crocolisk lets out a low growl as you approach.>"
+# NOT TBC
 # == mal[27723]	   "<The captive crocolisk lets out a low growl as you approach.>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -42946,6 +42951,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13121]
 # ## txt 0 (1)	=> "Excellent day for a foray into the field wouldn't you say, $g sir : ma'am;?"
+# NOT TBC
 # == fem[27725]	   "Excellent day for a foray into the field wouldn't you say, $g sir : ma'am;?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -42962,6 +42968,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13125]
 # ## txt 0 (1)	=> "You must be one of the brave soldiers who have been fighting the Scourge forces of Mal'Ganis. Well done."
+# NOT TBC
 # == mal[27742]	   "You must be one of the brave soldiers who have been fighting the Scourge forces of Mal'Ganis. Well done."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -42970,6 +42977,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13126]
 # ## txt 0 (1)	=> "Indeed. Mal'Ganis is commanding the Scourge from Crusaders' Square, but the gates leading there from the city entrance are closed. Little does he know that a small force can still reach the Square by moving through the Town Hall. Will you join me in this attack?"
+# NOT TBC
 # -- mal[27743]	   "Indeed. Mal'Ganis is commanding the Scourge from Crusaders' Square, but the gates leading there from the city entrance are closed.$B$BLittle does he know that a small force can still reach the Square by moving through the Town Hall. Will you join me in this attack?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -42978,6 +42986,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13132]
 # ## txt 0 (1)	=> "If you've got somewhere to go, I can get you there."
+# NOT TBC
 # == fem[27818]	   "If you've got somewhere to go, I can get you there."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -42986,6 +42995,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13134]
 # ## txt 0 (1)	=> "Bg'grrml brgl brm!"
+# NOT TBC
 # == mal[27827]	   "Bg'grrml brgl brm!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -42994,6 +43004,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13135]
 # ## txt 0 (1)	=> "Let me out of here, $r!"
+# NOT TBC
 # == mal[27828]	   "Let me out of here, $r!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43002,6 +43013,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13137]
 # ## txt 0 (1)	=> "Disgusting big-tongue friend, you no belong here. Go from Frenzyheart land or I call magic stuffs to kill you!"
+# NOT TBC
 # == mal[27835]	   "Disgusting big-tongue friend, you no belong here. Go from Frenzyheart land or I call magic stuffs to kill you!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43010,6 +43022,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13138]
 # ## txt 0 (1)	=> "Frenzyheart never be friends of big-tongues. You dumb to come back here traitor thing!"
+# NOT TBC
 # == mal[27836]	   "Frenzyheart never be friends of big-tongues. You dumb to come back here traitor thing!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43018,6 +43031,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13139]
 # ## txt 0 (1)	=> "You will be my salvation.$B$BYou may yet be my demise."
+# NOT TBC
 # == fem[27850]	   "You will be my salvation.$B$BYou may yet be my demise."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43026,6 +43040,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13147]
 # ## txt 0 (1)	=> "Have you ever seen drakes like the ones around here? Makes for perfect hunting."
+# NOT TBC
 # == mal[27900]	   "Have you ever seen drakes like the ones around here? Makes for perfect hunting."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43034,6 +43049,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13155]
 # ## txt 0 (1)	=> "I'm sorry, our brews are exclusive to members of the "Brew of the Month Club.""
+# NOT TBC
 # == mal[27930]	   "I'm sorry, our brews are exclusive to members of the "Brew of the Month Club.""
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43042,6 +43058,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13156]
 # ## txt 0 (1)	=> "This post is secure, $r.$b$bThe enemy has been cleared from the area for some time now."
+# NOT TBC
 # == mal[27931]	   "This post is secure, $r.$b$bThe enemy has been cleared from the area for some time now."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43054,6 +43071,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13172]
 # ## txt 0 (1)	=> "It is through the power of the unholy that we command death itself!"
+# NOT TBC
 # == fem[28019]	   "It is through the power of the unholy that we command death itself!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43062,6 +43080,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13173]
 # ## txt 0 (1)	=> "The blood is life... And as easily as the ebb and flow of blood is controlled, so too is the life of our enemies."
+# NOT TBC
 # == mal[28021]	   "The blood is life... And as easily as the ebb and flow of blood is controlled, so too is the life of our enemies."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43070,6 +43089,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13174]
 # ## txt 0 (1)	=> "We are what the cold wind carries. The icy chill of despair... The cold embrace of death..."
+# NOT TBC
 # == mal[28023]	   "We are what the cold wind carries. The icy chill of despair... The cold embrace of death..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43078,6 +43098,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13176]
 # ## txt 0 (1)	=> "It saddens all of us to see the Drakkari destroying themselves this way.$B$BThe power that they gain from killing the natural gods of the land is transitory.$B$BWhat is gained in the short run will be lost to them for all eternity."
+# NOT TBC
 # == mal[28031]	   "It saddens all of us to see the Drakkari destroying themselves this way.$B$BThe power that they gain from killing the natural gods of the land is transitory.$B$BWhat is gained in the short run will be lost to them for all eternity."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43086,6 +43107,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13177]
 # ## txt 0 (1)	=> "Gather your senses quickly, we must press on."
+# NOT TBC
 # == mal[28038]	   "Gather your senses quickly, we must press on."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43094,6 +43116,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13179]
 # ## txt 0 (1)	=> "This isn't getting any easier. Stratholme is burning. We must brave the Scourge and the flames to reach Mal'Ganis. Prepare yourselves."
+# NOT TBC
 # == mal[28043]	   "This isn't getting any easier. Stratholme is burning. We must brave the Scourge and the flames to reach Mal'Ganis. Prepare yourselves."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43102,6 +43125,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13180]
 # ## txt 0 (1)	=> "Zim'Torga is able to provide us with a certain level of protection, but she has been greatly weakened by the presence of the Scourge and the actions of the Drakkari.$B$BIt falls to me and Ahunae to see to the rest of our defenses."
+# NOT TBC
 # == fem[28046]	   "Zim'Torga is able to provide us with a certain level of protection, but she has been greatly weakened by the presence of the Scourge and the actions of the Drakkari.$B$BIt falls to me and Ahunae to see to the rest of our defenses."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43110,6 +43134,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13234]
 # ## txt 0 (1)	=> "Ahunae's axe will be the end of the Drakkari.$B$BYou be takin' care of any that get past my axe!"
+# NOT TBC
 # == mal[28072]	   "Ahunae's axe will be the end of the Drakkari.$B$BYou be takin' care of any that get past my axe!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43118,6 +43143,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13237]
 # ## txt 0 (1)	=> "The trickster Mage-Lord Urom protects the third ring. He will appear alone and defenseless, but do not be fooled by appearances! Urom is a powerful conjurer who commands a menagerie of Phantasmal creatures. Seek him out above.$B$BI can grant you the power to call upon a drake from the Red Fight. Speak to Eternos or Verdisa if you prefer to draw on the power of the Bronze or the Green."
+# NOT TBC
 # oo mal[28080]	   "The trickster Mage-Lord Urom protects the third ring. He will appear alone and defenseless, but do not be fooled by appearances! Urom is a powerful conjurer who commands a menagerie of Phantasmal creatures. Seek him out above.$bI can grant you the power to call upon a drake from the red flight. Speak to Eternos or Verdisa if you prefer to draw on the power of the bronze or the green."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43126,6 +43152,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13238]
 # ## txt 0 (1)	=> "Your greatest challenge lies ahead. Ley-Guardian Eregos is a Blue dragon of immense power. You will find him flying above the uppermost ring. $B$BThe full power of your drakes has been unlocked. Use their power to defeat Eregos!"
+# NOT TBC
 # -- mal[28081]	   "Your greatest challenge lies ahead. Ley-Guardian Eregos is a Blue dragon of immense power. You will find him flying above the uppermost ring. $bThe full power of your drakes has been unlocked. Use their power to defeat Eregos!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43134,6 +43161,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13239]
 # ## txt 0 (1)	=> "You have wrested control of the Oculus from the forces of Malygos. The Red Flight is in your debt."
+# NOT TBC
 # == mal[28082]	   "You have wrested control of the Oculus from the forces of Malygos. The red flight is in your debt."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43142,6 +43170,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13240]
 # ## txt 0 (1)	=> "The Bronze Flight is in your debt."
+# NOT TBC
 # == mal[28083]	   "The bronze flight is in your debt."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43150,6 +43179,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13241]
 # ## txt 0 (1)	=> "The Green Flight is in your debt."
+# NOT TBC
 # == fem[28084]	   "The green flight is in your debt."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43158,6 +43188,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13254]
 # ## txt 0 (1)	=> "Ruby Drakes excel at mitigating damage and protecting their allies.$B$BUsing Searing Wrath, they can breathe streams of liquid fire that jump from target to target, dealing increasing damage with each jump.$B$BWhenever a Ruby drake is damaged by an enemy attack, it gains an Evasive charge. These charges can be used to perform a series of evasive maneuvers, allowing the drake to dodge incoming attacks and spells for a time."
+# NOT TBC
 # -- mal[28091]	   "Ruby drakes excel at mitigating damage and protecting their allies.$bUsing searing wrath, they can breathe streams of liquid fire that jump from target to target, dealing increasing damage with each jump.$bWhenever a ruby drake is damaged by an enemy attack, it gains an evasive charge. These charges can be used to perform a series of evasive maneuvers, allowing the drake to dodge incoming attacks and spells for a time."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43166,6 +43197,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13255]
 # ## txt 0 (1)	=> "A Ruby Drake at full power can perform Martyr, which shields friendly targets by redirecting all hostile magic to the Ruby Drake for a short time. Evasive Maneuvers can still be performed during Martyr."
+# NOT TBC
 # == mal[28094]	   "A Ruby Drake at full power can perform Martyr, which shields friendly targets by redirecting all hostile magic to the Ruby Drake for a short time. Evasive Maneuvers can still be performed during Martyr."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43174,6 +43206,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13256]
 # ## txt 0 (1)	=> "Amber Drakes excel at dealing damage by manipulating time to their advantage.$B$BUsing Shock Lance, they can disrupt the flow of time around an enemy target, instantly damaging it. The power of this effect is dramatically increased by Shock Charges on the target.$B$BWhen threatened, an Amber Drake can briefly stop the flow of time for its enemies. This time disruption stores a large amount of Shock Energy on affected targets in the form of Shock Charges."
+# NOT TBC
 # -- mal[28092]	   "Amber drakes excel at dealing damage by manipulating time to their advantage.$bUsing shock lance, they can disrupt the flow of time around an enemy target, instantly damaging it. The power of this effect is dramatically increased by shock charges on the target.$bWhen threatened, an amber drake can briefly stop the flow of time for its enemies. This time disruption stores a large amount of shock energy on affected targets in the form of shock charges."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43182,6 +43215,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13257]
 # ## txt 0 (1)	=> "An Amber Drake at full power can perform Temporal Rift, which creates a bubble of compressed time around an enemy. Spells that pass through the bubble deal double damage and can generate Shock Charges on the target."
+# NOT TBC
 # == mal[28095]	   "An amber drake at full power can perform temporal rift, which creates a bubble of compressed time around an enemy. Spells that pass through the bubble deal double damage and can generate shock charges on the target."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43190,6 +43224,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13258]
 # ## txt 0 (1)	=> "Emerald Drakes excel at healing themselves while poisoning their enemies.$B$BUsing Leeching Poison, they can steal health from their enemies. Repeated applications of this poison can increase the effect.$B$BWith Touch the Nightmare, Emerald Drakes can reach into the Dream, converting a portion of their life energy into a highly damaging attack that leaves the target weakened, reducing its damage for a short time."
+# NOT TBC
 # -- fem[28093]	   "Emerald drakes excel at healing themselves while poisoning their enemies.$bUsing leeching poison, they can steal health from their enemies. Repeated applications of this poison can increase the effect.$bWith touch the nightmare, emerald drakes can reach into the Dream, converting a portion of their life energy into a highly damaging attack that leaves the target weakened, reducing its damage for a short time."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43198,6 +43233,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13259]
 # ## txt 0 (1)	=> "An Emerald Drake at full power can perform Dream Funnel, which transfers the drake's own life energy to a friendly target, healing it. Leeching Poison can be used to restore health lost when using this ability."
+# NOT TBC
 # == fem[28096]	   "An emerald drake at full power can perform dream funnel, which transfers the drake's own life energy to a friendly target, healing it. Leeching poison can be used to restore health lost when using this ability."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43206,6 +43242,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13261]
 # ## txt 0 (1)	=> "Welcome to the camp, $c."
+# NOT TBC
 # == mal[28251]	   "Welcome to the camp, $c."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43214,6 +43251,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13262]
 # ## txt 0 (1)	=> "What is it that you need from Corvus?"
+# NOT TBC
 # == mal[28252]	   "What is it that you need from Corvus?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43222,6 +43260,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13265]
 # ## txt 0 (1)	=> "Ponder on da thing you have witnessed this day, $n.$b$bDa future already be written. Only thing to decide be your part in it, mon."
+# NOT TBC
 # == mal[28425]	   "Ponder on da thing you have witnessed this day, $n.$b$bDa future already be written. Only thing to decide be your part in it, mon."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43230,6 +43269,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13267]
 # ## txt 0 (1)	=> "Malygos' most powerful agents protect the rings above. Alone, you cannot hope to defeat them. We can grant you power to call upon drakes from our dragon flights. Mounted on the back of a drake, you will be able to fly here in the Oculus and command powerful dragon magic."
+# NOT TBC
 # == mal[28426]	   "Malygos' most powerful agents protect the rings above. Alone, you cannot hope to defeat them. We can grant you power to call upon drakes from our dragon flights. Mounted on the back of a drake, you will be able to fly here in the Oculus and command powerful dragon magic."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43238,6 +43278,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13268]
 # ## txt 0 (1)	=> "Belgaristrasz speaks the truth; time is running out!$B$BThe full power of your drakes has been unlocked. Use their power to defeat Eregos!"
+# NOT TBC
 # -- mal[28428]	   "Belgaristrasz speaks the truth; time is running out!$bThe full power of your drakes has been unlocked. Use their power to defeat Eregos!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43246,6 +43287,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13269]
 # ## txt 0 (1)	=> "Belgaristrasz speaks the truth; the situation is grave indeed. $B$BThe full power of your drakes has been unlocked. Use their power to defeat Eregos!"
+# NOT TBC
 # -- fem[28429]	   "Belgaristrasz speaks the truth; the situation is grave indeed. $bThe full power of your drakes has been unlocked. Use their power to defeat Eregos!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43254,6 +43296,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13270]
 # ## txt 0 (1)	=> "None know the Scourge better than we death knights.$b$bBelieve me, $r, there's nothing more effective than fighting fire with fire...."
+# NOT TBC
 # == mal[28437]	   "None know the Scourge better than we death knights.$b$bBelieve me, $r, there's nothing more effective than fighting fire with fire...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43262,6 +43305,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13271]
 # ## txt 0 (1)	=> "Take it easy on old Nass. He's not as young and resilient as he once was."
+# NOT TBC
 # == mal[28438]	   "Take it easy on old Nass. He's not as young and resilient as he once was."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43270,6 +43314,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13282]
 # ## txt 0 (1)	=> "Though my compatriots would have you take an active role in what is transpiring in Zul'Drak, we Zandalari are primarily here to witness what is occurring and to chronicle the end of an empire."
+# NOT TBC
 # == mal[28480]	   "Though my compatriots would have you take an active role in what is transpiring in Zul'Drak, we Zandalari are primarily here to witness what is occurring and to chronicle the end of an empire."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43278,6 +43323,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13287]
 # ## txt 0 (1)	=> "Are you ready to face Mal'Ganis with me?"
+# NOT TBC
 # == mal[28506]	   "Are you ready to face Mal'Ganis with me?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43286,6 +43332,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13288]
 # ## txt 0 (1)	=> "Everything is set up and ready to go."
+# NOT TBC
 # == mal[28513]	   "Everything is set up and ready to go."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43294,6 +43341,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13289]
 # ## txt 0 (1)	=> "Move along. Nothing to see here."
+# NOT TBC
 # == fem[28525]	   "Move along. Nothing to see here."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43302,6 +43350,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13290]
 # ## txt 0 (1)	=> "<Bloodrose eyes you curiously.>$b$bI cannot help but wonder what makes you worthy of such attention.$b$bNo offense...."
+# NOT TBC
 # == fem[28526]	   "<Bloodrose eyes you curiously.>$b$bI cannot help but wonder what makes you worthy of such attention.$b$bNo offense...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43310,6 +43359,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13291]
 # ## txt 0 (1)	=> "The Drakkari are keeping my body close to death up in the altar building. They cannot see my spirit though.$B$BWe must work together to prevent them from getting my power."
+# NOT TBC
 # == mal[28531]	   "The Drakkari are keeping my body close to death up in the altar building. They cannot see my spirit though.$B$BWe must work together to prevent them from getting my power."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43318,6 +43368,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13293]
 # ## txt 0 (1)	=> "Please hurry, $N. I am in a great deal of pain and time is running out."
+# NOT TBC
 # == mal[28538]	   "Please hurry, $n. I am in a great deal of pain and time is running out."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43326,6 +43377,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13300]
 # ## txt 0 (1)	=> "Awww... look at da purty lil' gool.$b$bJump, lil' gool! Jump!$b$bHa, ha, ha.... Attsa guud lil' gool."
+# NOT TBC
 # == mal[28564]	   "Awww... look at da purty lil' gool.$b$bJump, lil' gool! Jump!$b$bHa, ha, ha.... Attsa guud lil' gool."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43334,6 +43386,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13301]
 # ## txt 0 (1)	=> "We're tryin' ta blow this wall so Wick's men can work on the new Harbor gatehouse and road beyond, but the clueless sod is cryin' about me using too much powder!$B$BTch. I've been sappin' since he was in diapers. This goes on much longer, I'll kick him into the canal and finish the whole blasted job meself!"
+# NOT TBC
 # == fem[28565]	   "We're tryin' ta blow this wall so Wick's men can work on the new Harbor gatehouse and road beyond, but the clueless sod is cryin' about me using too much powder!$B$BTch. I've been sappin' since he was in diapers. This goes on much longer, I'll kick him into the canal and finish the whole blasted job meself!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43342,6 +43395,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13302]
 # ## txt 0 (1)	=> "We're building another road down into Stormwind Harbor as soon as this wall has been removed... but this mad dwarf brought enough powder to level the entire quarter!$B$BI don't know what Master Alexston was thinking when he hired her... she's foul-mouthed, mean, and stubborn as an ox!"
+# NOT TBC
 # == mal[28566]	   "We're building another road down into Stormwind Harbor as soon as this wall has been removed... but this mad dwarf brought enough powder to level the entire quarter!$B$BI don't know what Master Alexston was thinking when he hired her... she's foul-mouthed, mean, and stubborn as an ox!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43350,6 +43404,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13303]
 # ## txt 0 (1)	=> "The Scourge are a blemish upon these pristine lands. By the might of my creators, I will crush every last one of their decrepit bones under my heel."
+# NOT TBC
 # == fem[28569]	   "The Scourge are a blemish upon these pristine lands. By the might of my creators, I will crush every last one of their decrepit bones under my heel."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43358,6 +43413,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13304]
 # ## txt 0 (1)	=> "The titans did not create life overnight. The process was gradual and required a great deal of experimentation and iteration.$B$BIt is for that reason that highly protected places such as Sholazar Basin exist.$B$BTo ensure the safety of their experimentation sites, the titans created a defense mechanism. Its destructive force is unparalleled however, and I will reveal no more unless you swear your fealty to my cause."
+# NOT TBC
 # == fem[28584]	   "The titans did not create life overnight. The process was gradual and required a great deal of experimentation and iteration.$B$BIt is for that reason that highly protected places such as Sholazar Basin exist.$B$BTo ensure the safety of their experimentation sites, the titans created a defense mechanism. Its destructive force is unparalleled however, and I will reveal no more unless you swear your fealty to my cause."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43366,6 +43422,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13305]
 # ## txt 0 (1)	=> "It borders on sacrilege that these secrets be revealed to a mortal such as yourself, but I have little choice.$B$BEver since Freya, daughter of the titans, left me here I've had but one task and I cannot fail. Life must be protected at any cost.$B$BThere is a waygate that links this place with another very much like this one. It is there that the weapon we seek can be found."
+# NOT TBC
 # == fem[28585]	   "It borders on sacrilege that these secrets be revealed to a mortal such as yourself, but I have little choice.$B$BEver since Freya, daughter of the titans, left me here I've had but one task and I cannot fail. Life must be protected at any cost.$B$BThere is a waygate that links this place with another very much like this one. It is there that the weapon we seek can be found."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43374,6 +43431,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13306]
 # ## txt 0 (1)	=> "This outpost is a cog-free zone. Persons employing cogs in the construction of mechanical devices will be subject to unrelenting mockery."
+# NOT TBC
 # == mal[28589]	   "This outpost is a cog-free zone. Persons employing cogs in the construction of mechanical devices will be subject to unrelenting mockery."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43382,6 +43440,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13307]
 # ## txt 0 (1)	=> "Looks like you had the same idea I did. Hunting for fruit, are you?"
+# NOT TBC
 # == mal[28590]	   "Looks like you had the same idea I did. Hunting for fruit, are you?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43390,6 +43449,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13308]
 # ## txt 0 (1)	=> "Loken?! That's downright bothersome... We might've neutralized the iron dwarves, but I'd lay odds there's another machine somewhere else churnin' out a whole mess o' these iron vrykul!"
+# NOT TBC
 # == mal[28591]	   "Loken?! That's downright bothersome... We might've neutralized the iron dwarves, but I'd lay odds there's another machine somewhere else churnin' out a whole mess o' these iron vrykul!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43398,6 +43458,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13310]
 # ## txt 0 (1)	=> "There are two zeppelin towers outside Orgrimmar. The eastern tower serves Tirisfal Glades and Stranglethorn Vale, while the western tower serves Northrend and Thunder Bluff."
+# NOT TBC
 # == mal[28606]	   "There are two zeppelin towers outside Orgrimmar. The eastern tower serves Tirisfal Glades and Stranglethorn Vale, while the western tower serves Northrend and Thunder Bluff."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43414,6 +43475,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13318]
 # ## txt 0 (1)	=> "The mosswalker looks severely injured."
+# NOT TBC
 # == mal[28632]	   "The mosswalker looks severely injured."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43422,6 +43484,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13321]
 # ## txt 0 (1)	=> "From this dock, The Bravery travels back and forth between Stormwind and Auberdine."
+# NOT TBC
 # oo fem[28636]	   "From this dock, The Bravery travels back and forth between Stormwind and Rut'theran Village."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43430,6 +43493,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13322]
 # ## txt 0 (1)	=> "My poor flying machine. She didn't survive the crash and without spare parts, I'll never get 'er up and running again!"
+# NOT TBC
 # == mal[28641]	   "My poor flying machine. She didn't survive the crash and without spare parts, I'll never get 'er up and running again!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43438,6 +43502,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13324]
 # ## txt 0 (1)	=> "Soon, $n!$b$bSoon ya be tastin' true power. Soon ya be rewarded for your dedication and service.$B"
+# NOT TBC
 # == mal[28644]	   "Soon, $n!$b$bSoon ya be tastin' true power. Soon ya be rewarded for your dedication and service.$b"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43446,6 +43511,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13325]
 # ## txt 0 (1)	=> "Ya be on da path, mortal....$b$bEndure, and ya be gettin' great power!"
+# NOT TBC
 # == mal[28645]	   "Ya be on da path, mortal....$b$bEndure, and ya be gettin' great power!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43454,23 +43520,28 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13326]
 # ## txt 0 (1)	=> "Mphmm rmphhimm rrhumghph?"
+# NOT TBC
 # == mal[28655]	   "Mphmm rmphhimm rrhumghph?"
 
 # ## txt 1 (1)	=> "Rmmurphum mmph hmrphum!"
+# NOT TBC
 # == mal[28657]	   "Rmmurphum mmph hmrphum!"
 
 # ## txt 2 (1)	=> "Umphrum mmphur, murruphru..."
+# NOT TBC
 # == mal[28658]	   "Umphrum mmphur, murruphru..."
 
 # ## txt 3 (1)	=> "Mhrrumph rummrhum phurr!"
-# == mal[28757]	   "Mhrrumph rummrhum phurr!"
+# NOT TBC
+# == mal[28710]	   "Mhrrumph rummrhum phurr!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (13326, 1, 28655, 1, 28657, 1, 28658, 1, 28757);
+ VALUES (13326, 1, 28655, 1, 28657, 1, 28658, 1, 28710);
 
 # -------------------------------------------------------------------------------- [13328]
 # ## txt 0 (1)	=> "Welcome. May I offer you rest or sustenance?"
+# NOT TBC
 # == mal[28673]	   "Welcome. May I offer you rest or sustenance?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43479,6 +43550,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13331]
 # ## txt 0 (1)	=> "Do you like the new home that I've carved out for my so-called worshippers?$B$BIn the throes of my death, I cursed them all and dragged them along with me into this special underworld of my own creation.$B$BI think that I shall delight in their eternal torment, but what I really want is to exact revenge upon my former prophet!"
+# NOT TBC
 # == fem[28682]	   "Do you like the new home that I've carved out for my so-called worshippers?$B$BIn the throes of my death, I cursed them all and dragged them along with me into this special underworld of my own creation.$B$BI think that I shall delight in their eternal torment, but what I really want is to exact revenge upon my former prophet!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43487,6 +43559,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13342]
 # ## txt 0 (1)	=> "Come to buy from Hargus, you have?"
+# NOT TBC
 # == mal[28761]	   "Come to buy from Hargus, you have?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43495,6 +43568,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13348]
 # ## txt 0 (1)	=> "Another supplicant seeking the favors of da Lich King?$b$bOnly da worthy be obtainin' da dark gifts...."
+# NOT TBC
 # == mal[28801]	   "Another supplicant seeking the favors of da Lich King?$b$bOnly da worthy be obtainin' da dark gifts...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43503,6 +43577,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13349]
 # ## txt 0 (1)	=> "Welcome to Dalaran's Guild Registry offices. How may I help you?"
+# NOT TBC
 # == mal[28804]	   "Welcome to Dalaran's Guild Registry offices. How may I help you?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43511,6 +43586,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13352]
 # ## txt 0 (1)	=> "I hope the archmage appreciates what I've gone through to uphold Hemet's end of the bargain."
+# NOT TBC
 # == mal[28834]	   "I hope the archmage appreciates what I've gone through to uphold Hemet's end of the bargain."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43519,6 +43595,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13353]
 # ## txt 0 (1)	=> "You should be sticking close to Arthas right now!"
+# NOT TBC
 # == fem[28836]	   "You should be sticking close to Arthas right now!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43527,6 +43604,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13355]
 # ## txt 0 (1)	=> "We will take everything from them, death knight."
+# NOT TBC
 # == mal[28861]	   "We will take everything from them, death knight."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43535,6 +43613,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13359]
 # ## txt 0 (1)	=> "Frenzyheart will take land for own. Big-tongues will leave or we kill them good."
+# NOT TBC
 # == mal[28883]	   "Frenzyheart will take land for own. Big-tongues will leave or we kill them good."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43543,6 +43622,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13360]
 # ## txt 0 (1)	=> "Frenzyheart can be vicious, but we good people. You see if you stay long, we friends with smart and strong just fine.$B$BWe just don't like dumb."
+# NOT TBC
 # == mal[28885]	   "Frenzyheart can be vicious, but we good people. You see if you stay long, we friends with smart and strong just fine.$B$BWe just don't like dumb."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43551,6 +43631,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13361]
 # ## txt 0 (1)	=> "This the Great Rain Stone. We keep it safe and bring it shinies and it take care of us.$B$BHave more shinies for stone maybe?"
+# NOT TBC
 # == mal[28886]	   "This the Great Rain Stone. We keep it safe and bring it shinies and it take care of us.$B$BHave more shinies for stone maybe?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43559,6 +43640,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13362]
 # ## txt 0 (1)	=> "What I not have in height I make up for in magics. I take care of Great Mist Stone good... most of time anyway.$B$BDumb puppy-men."
+# NOT TBC
 # == mal[28887]	   "What I not have in height I make up for in magics. I take care of Great Mist Stone good... most of time anyway.$B$BDumb puppy-men."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43567,6 +43649,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13363]
 # ## txt 0 (1)	=> "Puppy-men been attacking us for days now. Great Lightning Stone is still safe though.$B$BSoo-holu come to help us like many times before... puppy-men not stand a chance."
+# NOT TBC
 # == mal[28888]	   "Puppy-men been attacking us for days now. Great Lightning Stone is still safe though.$B$BSoo-holu come to help us like many times before... puppy-men not stand a chance."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43575,6 +43658,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13364]
 # ## txt 0 (1)	=> "Kartak comes for big-tongue meat. Frenzyheart make sure plenty is ready."
+# NOT TBC
 # == mal[28889]	   "Kartak comes for big-tongue meat. Frenzyheart make sure plenty is ready."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43583,49 +43667,61 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13365]
 # ## txt 0 (1)	=> "Hello, dryskin."
+# NOT TBC
 # == mal[28910]	   "Hello, dryskin."
 
 # ## txt 1 (1)	=> "What are you looking at?"
-# == mal[51255]	   "What are you looking at?"
+# NOT TBC
+# == mal[28923]	   "What are you looking at?"
 
 # ## txt 2 (1)	=> "Is there a reason we're still standing here?"
+# NOT TBC
 # == mal[28924]	   "Is there a reason we're still standing here?"
 
 # ## txt 3 (1)	=> "I assume you want something."
+# NOT TBC
 # == mal[28925]	   "I assume you want something."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (13365, 1, 28910, 1, 51255, 1, 28924, 1, 28925);
+ VALUES (13365, 1, 28910, 1, 28923, 1, 28924, 1, 28925);
 
 # -------------------------------------------------------------------------------- [13366]
 # ## txt 0 (1)	=> "Everything okay?"
+# NOT TBC
 # == mal[28912]	   "Everything okay?"
 
 # ## txt 1 (1)	=> "Yeah?"
-# == mal[54178]	   "Yeah?"
+# NOT TBC
+# == mal[28913]	   "Yeah?"
 
 # ## txt 2 (1)	=> "It nice having a good hunting partner."
+# NOT TBC
 # == mal[28914]	   "It nice having a good hunting partner."
 
 # ## txt 3 (1)	=> "Something wrong?"
+# NOT TBC
 # == mal[28915]	   "Something wrong?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2, Prob3, BroadcastTextId3)
- VALUES (13366, 1, 28912, 1, 54178, 1, 28914, 1, 28915);
+ VALUES (13366, 1, 28912, 1, 28913, 1, 28914, 1, 28915);
 
 # -------------------------------------------------------------------------------- [13367]
 # ## txt 0 (1)	=> "Hi! How you? We're good... yup, good good. Hi!"
+# NOT TBC
 # == mal[28919]	   "Hi! How you? We're good... yup, good good. Hi!"
 
 # ## txt 1 (1)	=> "Ever trip over own feet? We have. Kind of hurt. No do it, not fun. Nope."
+# NOT TBC
 # == mal[28920]	   "Ever trip over own feet? We have. Kind of hurt. No do it, not fun. Nope."
 
 # ## txt 2 (1)	=> "Hello! You're pretty strong and nice and stuff. I like you. Lets stay friends, okay?"
+# NOT TBC
 # == mal[28921]	   "Hello! You're pretty strong and nice and stuff. I like you. Lets stay friends, okay?"
 
 # ## txt 3 (1)	=> "Want us to help with something? What we help with? We good at helping."
+# NOT TBC
 # == mal[28922]	   "Want us to help with something? What we help with? We good at helping."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43634,6 +43730,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13368]
 # ## txt 0 (1)	=> "I am forever in your debt, $N."
+# NOT TBC
 # == fem[28926]	   "I am forever in your debt, $n."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43642,6 +43739,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13375]
 # ## txt 0 (1)	=> "Nice day for flying, isn't it?"
+# NOT TBC
 # == mal[28970]	   "Nice day for flying, isn't it?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43650,6 +43748,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13376]
 # ## txt 0 (1)	=> "I know an ace when I see one. Thanks again for saving my life!"
+# NOT TBC
 # == mal[28971]	   "I know an ace when I see one. Thanks again for saving my life!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43658,6 +43757,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13382]
 # ## txt 0 (1)	=> "Look at what you have done, death knight! You have brought glory to the Scourge!"
+# NOT TBC
 # == mal[29004]	   "Look at what you have done, death knight! You have brought glory to the Scourge!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43666,15 +43766,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13390]
 # ## txt 0 (1)	=> "Lemme outta here, mon!"
+# NOT TBC
 # == mal[29018]	   "Lemme outta here, mon!"
 
 # ## txt 1 (1)	=> "You're no Scourge. What you doin' here, mon?"
+# NOT TBC
 # == mal[29024]	   "You're no Scourge. What you doin' here, mon?"
 
 # ## txt 2 (1)	=> "Why da Scourge let you walk around in here, mon?"
+# NOT TBC
 # == mal[29025]	   "Why da Scourge let you walk around in here, mon?"
 
 # ## txt 3 (1)	=> "I think you be lost, mon...."
+# NOT TBC
 # == mal[29026]	   "I think you be lost, mon...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43683,18 +43787,23 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13391]
 # ## txt 0 (1)	=> "You Scourge not welcome in Zul'Drak!"
+# NOT TBC
 # == mal[29019]	   "You Scourge not welcome in Zul'Drak!"
 
 # ## txt 1 (1)	=> "Zul'Drak belongs to da Drakkari, mon. Always will!"
+# NOT TBC
 # == mal[29020]	   "Zul'Drak belongs to da Drakkari, mon. Always will!"
 
 # ## txt 2 (1)	=> "You Scourge gunna fail here, mon."
+# NOT TBC
 # == mal[29021]	   "You Scourge gunna fail here, mon."
 
 # ## txt 3 (1)	=> "Our people gunna kill every last one o' you Scourge!"
+# NOT TBC
 # == mal[29022]	   "Our people gunna kill every last one o' you Scourge!"
 
 # ## txt 4 (1)	=> "Get away from me, nasty Scourge!"
+# NOT TBC
 # == mal[29023]	   "Get away from me, nasty Scourge!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43703,6 +43812,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13395]
 # ## txt 0 (1)	=> "It might look like an ordinary pumpkin patch now, but once the plague cauldron is placed it will become a source of disease, rot and plague!"
+# NOT TBC
 # == mal[29062]	   "It might look like an ordinary pumpkin patch now, but once the plague cauldron is placed it will become a source of disease, rot and plague!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43711,18 +43821,23 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13396]
 # ## txt 0 (1)	=> "How dare you! Get out of my sight!"
+# NOT TBC
 # == mal[29064]	   "How dare you! Get out of my sight!"
 
 # ## txt 1 (1)	=> "That no good kiss-up is probably practicing ballet in his chambers."
+# NOT TBC
 # == mal[29065]	   "That no good kiss-up is probably practicing ballet in his chambers."
 
 # ## txt 2 (1)	=> "NEVER say that name around me! Consider this your one and only warning!"
+# NOT TBC
 # == mal[29066]	   "NEVER say that name around me! Consider this your one and only warning!"
 
 # ## txt 3 (1)	=> "I can tell you where he's not..."
+# NOT TBC
 # == mal[29067]	   "I can tell you where he's not..."
 
 # ## txt 4 (1)	=> "Heigan is probably performing maintenance on his slime and crap filled dance studio."
+# NOT TBC
 # == mal[29068]	   "Heigan is probably performing maintenance on his slime and crap filled dance studio."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43731,6 +43846,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13397]
 # ## txt 0 (1)	=> "It's only a matter of time before the plague overtakes New Avalon."
+# NOT TBC
 # == mal[29071]	   "It's only a matter of time before the plague overtakes New Avalon."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43739,6 +43855,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13402]
 # ## txt 0 (1)	=> "Fineous has what you need, friend."
+# NOT TBC
 # == mal[29094]	   "Fineous has what you need, friend."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43747,6 +43864,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13419]
 # ## txt 0 (1)	=> "Crusaders...$B$B<Rivendare shakes his head.>$B$BI am convinced that they are a unique lot amongst the humans. My theory is that they lack higher brain function, unable to logically assess a situation and calculate an outcome. One has only to make mention of the Light to get them frothing and battle ready - at which point they will rush headlong into any engagement with complete disregard for their own well being."
+# NOT TBC
 # == mal[29166]	   "Crusaders...$B$B<Rivendare shakes his head.>$B$BI am convinced that they are a unique lot amongst the humans. My theory is that they lack higher brain function, unable to logically assess a situation and calculate an outcome. One has only to make mention of the Light to get them frothing and battle ready - at which point they will rush headlong into any engagement with complete disregard for their own well being."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43755,6 +43873,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13422]
 # ## txt 0 (1)	=> "$n! I've been awaiting your return. What be takin' ya so long, mon?$b$bIt be time to complete da conversion of da Blightbloods.$b$bJoin me and witness the creation of our army!"
+# NOT TBC
 # == mal[29181]	   "$n! I've been awaiting your return. What be takin' ya so long, mon?$b$bIt be time to complete da conversion of da Blightbloods.$b$bJoin me and witness the creation of our army!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43763,6 +43882,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13425]
 # ## txt 0 (1)	=> "I'm badly injured, but I'll do what I can to help. Try and stay inside of my anti-magic barrier or the acolytes' magic will tear you apart."
+# NOT TBC
 # == mal[29204]	   "I'm badly injured, but I'll do what I can to help. Try and stay inside of my anti-magic barrier or the acolytes' magic will tear you apart."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43771,6 +43891,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13426]
 # ## txt 0 (1)	=> "What can I do for you, $r?"
+# NOT TBC
 # == mal[29209]	   "What can I do for you, $r?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43779,6 +43900,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13430]
 # ## txt 0 (1)	=> "<Koltira groans.>"
+# NOT TBC
 # == mal[29242]	   "<Koltira groans.>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43787,6 +43909,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13431]
 # ## txt 0 (1)	=> "This isn't quite what I signed up for, but hey... at least it's warm here."
+# NOT TBC
 # == fem[29244]	   "This isn't quite what I signed up for, but hey... at least it's warm here."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43795,6 +43918,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13432]
 # ## txt 0 (1)	=> "The Scarlet Crusade will serve a new master - in death..."
+# NOT TBC
 # == mal[29246]	   "The Scarlet Crusade will serve a new master - in death..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43803,6 +43927,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13433]
 # ## txt 0 (1)	=> "Are you challenging me, $g brother:sister;?"
+# NOT TBC
 # == mal[29254]	   "Are you challenging me, $g brother:sister;?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43811,6 +43936,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13438]
 # ## txt 0 (1)	=> "One day, Rejek be mighty warrior."
+# NOT TBC
 # == mal[29414]	   "One day, Rejek be mighty warrior."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43819,9 +43945,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13439]
 # ## txt 0 (1)	=> "Trying to reach Auberdine or Valiance Keep? You can find Stormwind Harbor if you head through the Canals, between the Cathedral District and the Park."
+# NOT TBC
 # == mal[29417]	   "Trying to reach Auberdine or Valiance Keep? You can find Stormwind Harbor if you head through the Canals, between the Cathedral District and the Park."
 
 # ## txt 1 (1)	=> "Stormwind Harbor is the fastest way to get to Auberdine or Valiance Keep. You can find it between the Cathedral District and the Park."
+# NOT TBC
 # == mal[29418]	   "Stormwind Harbor is the fastest way to get to Auberdine or Valiance Keep. You can find it between the Cathedral District and the Park."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43830,6 +43958,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13441]
 # ## txt 0 (1)	=> "Greetings, $c. I trust that you bring me good news concerning the Worldwide Invitational event? If you are, then surely that means you were given a secret code to tell me. In return for your code I will give you a gift, Tyrael's Hilt.$B$BJust whisper it in my ear when you are ready."
+# NOT TBC
 # == mal[29419]	   "Greetings, $c. I trust that you bring me good news concerning the Worldwide Invitational event? If you are, then surely that means you were given a secret code to tell me. In return for your code I will give you a gift, Tyrael's Hilt.$B$BJust whisper it in my ear when you are ready."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43838,6 +43967,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13444]
 # ## txt 0 (1)	=> "We are the chosen ones, $N. Death knights of the Scourge, sent to sow the seeds of the master's destruction."
+# NOT TBC
 # == mal[29444]	   "We are the chosen ones, $n. Death knights of the Scourge, sent to sow the seeds of the master's destruction."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43846,6 +43976,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13445]
 # ## txt 0 (1)	=> "These monsters killed my father and kidnapped my sister. They're going to pay for this!"
+# NOT TBC
 # == fem[29447]	   "These monsters killed my father and kidnapped my sister. They're going to pay for this!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43854,6 +43985,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13449]
 # ## txt 0 (1)	=> "Welcome to my kitchen! We prepare some of the finest food in Dalaran here."
+# NOT TBC
 # == fem[29482]	   "Welcome to my kitchen! We prepare some of the finest food in Dalaran here."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43862,6 +43994,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13451]
 # ## txt 0 (1)	=> "Hope you take it to big-tongues good. It about time they go away."
+# NOT TBC
 # == mal[29486]	   "Hope you take it to big-tongues good. It about time they go away."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43870,6 +44003,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13452]
 # ## txt 0 (1)	=> "Great battle still going on at Sparktouched Haven.$B$BMaybe you find time to help sometime?"
+# NOT TBC
 # == mal[29487]	   "Great battle still going on at Sparktouched Haven.$B$BMaybe you find time to help sometime?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43878,6 +44012,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13454]
 # ## txt 0 (1)	=> "Greetings, $c! Stormwind Harbor is quite a sight to behold. It's even better seen from the air. How would you like a bird's eye view of the harbor?"
+# NOT TBC
 # == mal[29488]	   "Greetings, $c! Stormwind Harbor is quite a sight to behold. It's even better seen from the air. How would you like a bird's eye view of the harbor?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43886,6 +44021,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13455]
 # ## txt 0 (1)	=> "I do not believe you possess the mental acuity to grasp the nature of portal magic.$B$BHowever, you can use the crystal behind me to teleport to the ruins below Dalaran in Crystalsong Forest."
+# NOT TBC
 # == fem[29490]	   "I do not believe you possess the mental acuity to grasp the nature of portal magic.$B$BHowever, you can use the crystal behind me to teleport to the ruins below Dalaran in Crystalsong Forest."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43894,6 +44030,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13456]
 # ## txt 0 (1)	=> "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready.$B$BAnd remember that you can always use the crystal behind me to teleport down to the ruins beneath Dalaran in Crystalsong Forest."
+# NOT TBC
 # == fem[29491]	   "As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready.$B$BAnd remember that you can always use the crystal behind me to teleport down to the ruins beneath Dalaran in Crystalsong Forest."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43902,6 +44039,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13457]
 # ## txt 0 (1)	=> "You have time? Soo-nee teach you good song!"
+# NOT TBC
 # == mal[29492]	   "You have time? Soo-nee teach you good song!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43910,14 +44048,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13458]
 # ## txt 0 (1)	=> "Greetings, $c."
-# == mal[50721]	   "Greetings, $c."
+# == mal[7130]	   "Greetings, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13458, 1, 50721);
+ VALUES (13458, 1, 7130);
 
 # -------------------------------------------------------------------------------- [13459]
 # ## txt 0 (1)	=> "Welcome, friend, to the barbershop! Come for a cut? A coloring? Something else, perhaps?$B$BWe can groom facial hair, perform piercings, ink night elf tattoos, and even reshape draenei horns and tendrils!$B$BHave a seat and we'll get right to work. You're only a few coins away from a new, more attractive you..."
+# NOT TBC
 # == mal[29495]	   "Welcome, friend, to the barbershop! Come for a cut? A coloring? Something else, perhaps?$B$BWe can groom facial hair, perform piercings, ink night elf tattoos, and even reshape draenei horns and tendrils!$B$BHave a seat and we'll get right to work. You're only a few coins away from a new, more attractive you..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43926,6 +44065,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13461]
 # ## txt 0 (1)	=> "Welcome, friend, to the barbershop! Come for a cut? A coloring? Something else, perhaps?$B$BWe can groom facial hair, perform piercings, reshape tusks and horns, and even modify undead features!$B$BHave a seat and we'll get right to work. You're only a few coins away from a new, more attractive you..."
+# NOT TBC
 # == mal[29498]	   "Welcome, friend, to the barbershop! Come for a cut? A coloring? Something else, perhaps?$B$BWe can groom facial hair, perform piercings, reshape tusks and horns, and even modify undead features!$B$BHave a seat and we'll get right to work. You're only a few coins away from a new, more attractive you..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43934,6 +44074,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13462]
 # ## txt 0 (1)	=> "Grab a pint!"
+# NOT TBC
 # == mal[29499]	   "Grab a pint!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43942,6 +44083,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13466]
 # ## txt 0 (1)	=> "Varos Cloudstrider and his ring guardians protect the second ring. Your drakes are more than a match for the Ring Guardians, but Varos stands behind an impenetrable shield created from the energy of the Oculus itself. Ten Centrifuge Constructs power the shield from the ring and platforms above. Destroy them and Varos will be vulnerable."
+# NOT TBC
 # == mal[29536]	   "Varos Cloudstrider and his ring guardians protect the second ring. Your drakes are more than a match for the ring guardians, but Varos stands behind an impenetrable shield created from the energy of the Oculus itself. Ten centrifuge constructs power the shield from the ring and platforms above. Destroy them and Varos will be vulnerable."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43950,14 +44092,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13468]
 # ## txt 0 (1)	=> "Your greatest challenge lies ahead. Ley-Guardian Eregos is a Blue dragon of immense power. You will find him flying above the uppermost ring."
-# == mal[29538]	   "Your greatest challenge lies ahead. Ley-Guardian Eregos is a Blue dragon of immense power. You will find him flying above the uppermost ring."
+# == mal[27389]	   "Your greatest challenge lies ahead. Ley-Guardian Eregos is a Blue dragon of immense power. You will find him flying above the uppermost ring."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13468, 1, 29538);
+ VALUES (13468, 1, 27389);
 
 # -------------------------------------------------------------------------------- [13469]
 # ## txt 0 (1)	=> "The Halls of Stone, a level 77-79 dungeon within Storm Peaks, is now available for testing. Please be in your full group before teleporting to the dungeon. Meeting Stones are not available for this dungeon yet.$B$BTo leave the Halls of Stone, simply exit through the normal exit inside the dungeon and you will be returned here. If you die and release, you should teleport back from this NPC."
+# NOT TBC
 # -- mal[29541]	   "The Halls of Stone, a level 77-79 dungeon within Storm Peaks, is now available for testing. Please be in your full group before teleporting to the dungeon. Meeting Stones are not available for this dungeon yet.$bTo leave the Halls of Stone, simply exit through the normal exit inside the dungeon and you will be returned here. If you die and release, you should teleport back from this NPC."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43966,6 +44109,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13470]
 # ## txt 0 (1)	=> "What are you doing all the way back here? You need to get back to Stratholme immediately! Shall I teleport you to Stratholme?"
+# NOT TBC
 # -- fem[29562]	   "What are you doing all the way back here? You need to get back to Stratholme immediately!$B$BShall I teleport you to Stratholme?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43974,6 +44118,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13471]
 # ## txt 0 (1)	=> "Go find those hidden plagued grain crates and use your Arcane Disruptor on them! Arthas will then have the evidence he needs to begin the culling of Stratholme."
+# NOT TBC
 # -- fem[29578]	   "Go find those hidden plagued grain crates and use your Arcane Disruptor on them!$B$BArthas will then have the evidence he needs to begin the culling of Stratholme."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43982,6 +44127,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13472]
 # ## txt 0 (1)	=> "What are you doing here? Arthas is at the entrance to Stratholme right now and you should be with him! Go!"
+# NOT TBC
 # -- fem[29581]	   "What are you doing here?$B$BArthas is at the entrance to Stratholme right now and you should be with him! Go!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -43998,6 +44144,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13475]
 # ## txt 0 (1)	=> "Are you certain?$B$BThere is no turning back once I wipe the knowledge of the talents you have learned from your mind."
+# NOT TBC
 # == mal[29631]	   "Are you certain?$B$BThere is no turning back once I wipe the knowledge of the talents you have learned from your mind."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44006,6 +44153,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13476]
 # ## txt 0 (1)	=> "Very well. It is done."
+# NOT TBC
 # == mal[29633]	   "Very well. It is done."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44018,6 +44166,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13482]
 # ## txt 0 (1)	=> "Here is where I sacrificed everything to free my father. Now I come to destroy it..."
+# NOT TBC
 # == mal[29690]	   "Here is where I sacrificed everything to free my father. Now I come to destroy it..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44026,6 +44175,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13485]
 # ## txt 0 (1)	=> "Here is where I sacrificied everything to free my father. Now I come to destroy it..."
+# NOT TBC
 # == mal[29703]	   "Here is where I sacrificied everything to free my father. Now I come to destroy it..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44034,6 +44184,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13501]
 # ## txt 0 (1)	=> "Here you are, $n.$b$bNow please, return your focus to the task at hand...."
+# NOT TBC
 # == mal[29853]	   "Here you are, $n.$b$bNow please, return your focus to the task at hand...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44042,6 +44193,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13502]
 # ## txt 0 (1)	=> "Our storehouses have been depleted. I have nothing to sell until we can get more supplies."
+# NOT TBC
 # == mal[29862]	   "Our storehouses have been depleted. I have nothing to sell until we can get more supplies."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44050,6 +44202,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13503]
 # ## txt 0 (1)	=> "Because you've managed to replenish some of our supplies I can get back to cooking. Now, what can I do for you?"
+# NOT TBC
 # == mal[29863]	   "Because you've managed to replenish some of our supplies I can get back to cooking. Now, what can I do for you?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44058,6 +44211,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13504]
 # ## txt 0 (1)	=> "Look sharp, $r.$b$bIt's life or death out here!"
+# NOT TBC
 # == fem[29866]	   "Look sharp, $r.$b$bIt's life or death out here!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44066,6 +44220,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13506]
 # ## txt 0 (1)	=> "Why is everyone looking at me as if I crashed the ship?"
+# NOT TBC
 # == fem[29877]	   "Why is everyone looking at me as if I crashed the ship?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44074,6 +44229,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13510]
 # ## txt 0 (1)	=> "Hmm... something familiar about your face $r... Give me a moment...$B$BAh ha! Westfall, that's where I recognize you from. You are $n! It's good to see you again. But, let's hope you can help us finish the job this time.$B$BNow we're a long way from Westfall up here, but if we don't win this battle, there may not be a home to return to."
+# NOT TBC
 # == mal[29906]	   "Hmm... something familiar about your face $r... Give me a moment...$B$BAh ha! Westfall, that's where I recognize you from. You are $n! It's good to see you again. But, let's hope you can help us finish the job this time.$B$BNow we're a long way from Westfall up here, but if we don't win this battle, there may not be a home to return to."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44082,6 +44238,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13511]
 # ## txt 0 (1)	=> "$N! I hardly recognized you in your new outfit. Still have that tunic... or did you take the chausses... or was it the staff? I can't recall, it was so long ago...$B$BWell, I'm glad you are here to help out again. We could use all the help we can get. $N, if you perform the way you did back in Westfall with the People's Militia, we have a chance.$B$BThese are dire times, if we don't win this battle, there may not be a Westfall to return to."
+# NOT TBC
 # == mal[29908]	   "$n! I hardly recognized you in your new outfit. Still have that tunic... or did you take the chausses... or was it the staff? I can't recall, it was so long ago...$B$BWell, I'm glad you are here to help out again. We could use all the help we can get. $n, if you perform the way you did back in Westfall with the People's Militia, we have a chance.$B$BThese are dire times, if we don't win this battle, there may not be a Westfall to return to."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44090,6 +44247,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13512]
 # ## txt 0 (1)	=> "With the Light's blessing and your help, $N, the Defias are no longer a threat.$B$BBut we're a long way from Westfall up here, and if we don't win this battle, there may not be a home to return to."
+# NOT TBC
 # == mal[29909]	   "With the Light's blessing and your help, $n, the Defias are no longer a threat.$B$BBut we're a long way from Westfall up here, and if we don't win this battle, there may not be a home to return to."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44098,6 +44256,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13517]
 # ## txt 0 (1)	=> "What can Korg do for you today?"
+# NOT TBC
 # == mal[29958]	   "What can Korg do for you today?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44106,14 +44265,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13519]
 # ## txt 0 (1)	=> "Greetings, friend."
-# == fem[70424]	   "Greetings, friend."
+# NOT TBC
+# == mal[29967]	   "Greetings, friend."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13519, 1, 70424);
+ VALUES (13519, 1, 29967);
 
 # -------------------------------------------------------------------------------- [13525]
 # ## txt 0 (1)	=> "Yes, the Lich King will fall to our might. We will have our final revenge.$B$BBut first, we will see to it that the plague known as the Scarlet Onslaught comes to an end once and for all!"
+# NOT TBC
 # == mal[30032]	   "Yes, the Lich King will fall to our might. We will have our final revenge.$B$BBut first, we will see to it that the plague known as the Scarlet Onslaught comes to an end once and for all!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44122,6 +44283,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13526]
 # ## txt 0 (1)	=> "Very well, but if I were you, I would pay attention and not just blindly nod my head at what I heard.$B$BIt begins, as all good stories do, with betrayal. Oh, it's not that we were betrayed... not at all. The Lich King raised us death knights above all others.$B$BRather, it was we who betrayed him with the help of Highlord Darion Mograine.$B$BIn the final fight at Light's Hope Chapel in the Plaguelands, with the simpletons moments away from annihilation, Tirion Fordring helped Mograine break the Lich King's hold upon him and all of the rest of us that were present."
+# NOT TBC
 # == mal[30034]	   "Very well, but if I were you, I would pay attention and not just blindly nod my head at what I heard.$B$BIt begins, as all good stories do, with betrayal. Oh, it's not that we were betrayed... not at all. The Lich King raised us death knights above all others.$B$BRather, it was we who betrayed him with the help of Highlord Darion Mograine.$B$BIn the final fight at Light's Hope Chapel in the Plaguelands, with the simpletons moments away from annihilation, Tirion Fordring helped Mograine break the Lich King's hold upon him and all of the rest of us that were present."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44130,6 +44292,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13527]
 # ## txt 0 (1)	=> "With the Lich King fleeing in fear of Fordring armed with the Ashbringer, we were able to easily wrest Ebon Hold from the remaining Scourge forces.$B$BThat didn't settle things between us and the Scarlet Crusade, however.$B$BAs the Forsaken have learned the hard way, the Scarlets cannot seem to differentiate between us and the Scourge.$B$BWe think on our own, we have our own motivations, we have almost all of the qualities of the living, and yet to them, we are no different than the mindless slaves of the Lich King.$B$BMistakenly they think we will roll over and play dead."
+# NOT TBC
 # == mal[30037]	   "With the Lich King fleeing in fear of Fordring armed with the Ashbringer, we were able to easily wrest Ebon Hold from the remaining Scourge forces.$B$BThat didn't settle things between us and the Scarlet Crusade, however.$B$BAs the Forsaken have learned the hard way, the Scarlets cannot seem to differentiate between us and the Scourge.$B$BWe think on our own, we have our own motivations, we have almost all of the qualities of the living, and yet to them, we are no different than the mindless slaves of the Lich King.$B$BMistakenly they think we will roll over and play dead."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44138,6 +44301,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13528]
 # ## txt 0 (1)	=> "<The lord-commander fixes you with a stare before going on.>$B$BI was getting to that. Indeed, when High General Abbendis landed her forces on Northrend, she changed their name to the Scarlet Onslaught.$B$BIt was not long before Admiral Barean Westwind presented himself to her at New Hearthglen in the Dragonblight. From all accounts, she wasn't expecting him. Nor was she expecting that he would undermine her authority and take the reins of command away from her.$B$BLikely you were involved with her demise, but no matter. Once she was dead, the admiral made a mysterious exit and we lost track of him."
+# NOT TBC
 # == mal[30040]	   "<The lord-commander fixes you with a stare before going on.>$B$BI was getting to that. Indeed, when High General Abbendis landed her forces on Northrend, she changed their name to the Scarlet Onslaught.$B$BIt was not long before Admiral Barean Westwind presented himself to her at New Hearthglen in the Dragonblight. From all accounts, she wasn't expecting him. Nor was she expecting that he would undermine her authority and take the reins of command away from her.$B$BLikely you were involved with her demise, but no matter. Once she was dead, the admiral made a mysterious exit and we lost track of him."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44146,6 +44310,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13529]
 # ## txt 0 (1)	=> "As I said, we lost track of him, but this is something that I'm sure you will be able to figure out for me. My suspicion is that he's down there somewhere, but my spies that have returned haven't been able to place him anywhere on the island.$B$BThe Forsaken at Venomspite did a good job of sabotaging New Hearthglen, but the Onslaught forces that are present down there are the battle-hardened remnant from that place. Unfortunately, they picked up better equipment along the way, as well as gryphons taken from fools somewhere.$B$BWhat I'm trying to say is that this isn't going to be a stroll in the countryside, $N, even for you."
+# NOT TBC
 # == mal[30046]	   "As I said, we lost track of him, but this is something that I'm sure you will be able to figure out for me. My suspicion is that he's down there somewhere, but my spies that have returned haven't been able to place him anywhere on the island.$B$BThe Forsaken at Venomspite did a good job of sabotaging New Hearthglen, but the Onslaught forces that are present down there are the battle-hardened remnant from that place. Unfortunately, they picked up better equipment along the way, as well as gryphons taken from fools somewhere.$B$BWhat I'm trying to say is that this isn't going to be a stroll in the countryside, $n, even for you."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44154,6 +44319,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13530]
 # ## txt 0 (1)	=> "We'll start in just a moment.$B$BI just want to be very clear -- we're not here to soften them up. We're not here to make a dent. We're here to put an end to the disease that calls itself the Scarlet Onslaught.$B$BIf you don't want any part of that, if you don't have the stomach, fly away now. I want someone with us who is going to be here every day until the job's done.$B$BAre you that $g man : woman;, $N?"
+# NOT TBC
 # == mal[30048]	   "We'll start in just a moment.$B$BI just want to be very clear -- we're not here to soften them up. We're not here to make a dent. We're here to put an end to the disease that calls itself the Scarlet Onslaught.$B$BIf you don't want any part of that, if you don't have the stomach, fly away now. I want someone with us who is going to be here every day until the job's done.$B$BAre you that $g man : woman;, $n?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44162,6 +44328,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13531]
 # ## txt 0 (1)	=> "<The lord-commander flashes a rictus grin, looking you up and down discerningly.>$B$BThat's what I wanted to hear."
+# NOT TBC
 # == mal[30050]	   "<The lord-commander flashes a rictus grin, looking you up and down discerningly.>$B$BThat's what I wanted to hear."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44170,6 +44337,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13534]
 # ## txt 0 (1)	=> "Consider all of the suffering that the Scarlets have caused over the years. The torture, the zealotry, the murder.$B$BI won't allow that to continue. Will you?"
+# NOT TBC
 # == fem[30094]	   "Consider all of the suffering that the Scarlets have caused over the years. The torture, the zealotry, the murder.$B$BI won't allow that to continue. Will you?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44178,6 +44346,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13540]
 # ## txt 0 (1)	=> "The Hyldsmeet is sacred. Whoever earns victory is assured a lifetime next to Thorim."
+# NOT TBC
 # == fem[30125]	   "The Hyldsmeet is sacred. Whoever earns victory is assured a lifetime next to Thorim."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44186,14 +44355,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13548]
 # ## txt 0 (1)	=> "Greetings, $N. "
-# == mal[30147]	   "Greetings, $n. "
+# == fem[12620]	   "Greetings, $n. "
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13548, 1, 30147);
+ VALUES (13548, 1, 12620);
 
 # -------------------------------------------------------------------------------- [13557]
 # ## txt 0 (1)	=> "Greetings, $c. I can help stable your pets or assist you in recovering lost companions."
+# NOT TBC
 # == mal[30178]	   "Greetings, $c. I can help stable your pets or assist you in recovering lost companions."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44202,15 +44372,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13565]
 # ## txt 0 (1)	=> "Icefang has carried me through countless battles.$b$bDon't let her lack of armor fool you. She's the toughest bear I know."
+# NOT TBC
 # == fem[30259]	   "Icefang has carried me through countless battles.$b$bDon't let her lack of armor fool you. She's the toughest bear I know."
 
 # ## txt 1 (1)	=> "Do not tarry here, wench!$b$bThere's fighting to be done!"
+# NOT TBC
 # == fem[30260]	   "Do not tarry here, wench!$b$bThere's fighting to be done!"
 
 # ## txt 2 (1)	=> "We fight for the glory of Brunnhildar!"
+# NOT TBC
 # == fem[30261]	   "We fight for the glory of Brunnhildar!"
 
 # ## txt 3 (1)	=> "Icefang shows great courage for entering the battlefield unarmored.$b$bPerhaps her example could instill some courage in you, $n."
+# NOT TBC
 # == fem[30285]	   "Icefang shows great courage for entering the battlefield unarmored.$b$bPerhaps her example could instill some courage in you, $n."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44219,6 +44393,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13572]
 # ## txt 0 (1)	=> "Hey $c, if you've lost a key I might be able to help you out."
+# NOT TBC
 # == mal[30314]	   "Hey $c, if you've lost a key I might be able to help you out."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44227,6 +44402,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13573]
 # ## txt 0 (1)	=> "You stand before a master of the Arcane. One would be unwise to challenge me. Many corpses have been left ablaze in my wake."
+# NOT TBC
 # == mal[30326]	   "You stand before a master of the Arcane. One would be unwise to challenge me. Many corpses have been left ablaze in my wake."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44235,6 +44411,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13574]
 # ## txt 0 (1)	=> "My life and spirit has been filled with memories of the insufferable Horde. Times of sorrow, desperation, and sacrifice have come to pass. The rage of battle could never leave my heart!"
+# NOT TBC
 # == fem[30327]	   "My life and spirit has been filled with memories of the insufferable Horde. Times of sorrow, desperation, and sacrifice have come to pass. The rage of battle could never leave my heart!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44243,6 +44420,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13575]
 # ## txt 0 (1)	=> "This is a portal to the Arathi Basin battleground."
+# NOT TBC
 # == mal[30330]	   "This is a portal to the Arathi Basin battleground."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44251,6 +44429,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13576]
 # ## txt 0 (1)	=> "This is a portal to the Alterac Valley battleground."
+# NOT TBC
 # == mal[30331]	   "This is a portal to the Alterac Valley battleground."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44259,6 +44438,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13577]
 # ## txt 0 (1)	=> "This is a portal to the Eye of the Storm battleground."
+# NOT TBC
 # == mal[30332]	   "This is a portal to the Eye of the Storm battleground."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44267,6 +44447,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13579]
 # ## txt 0 (1)	=> "This is a portal to the Warsong Gulch battleground."
+# NOT TBC
 # == mal[30334]	   "This is a portal to the Warsong Gulch battleground."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44275,6 +44456,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13581]
 # ## txt 0 (1)	=> "What be happening?$B$BYou here to eat, mon? Or maybe to learn cooking from the best, eh?"
+# NOT TBC
 # == mal[30345]	   "What be happening?$B$BYou here to eat, mon? Or maybe to learn cooking from the best, eh?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44283,6 +44465,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13583]
 # ## txt 0 (1)	=> "Looking for a tabard?"
+# NOT TBC
 # == mal[30353]	   "Looking for a tabard?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44291,6 +44474,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13584]
 # ## txt 0 (1)	=> "Greetings, $c. I can assist you in recovering lost companions."
+# NOT TBC
 # == mal[30361]	   "Greetings, $c. I can assist you in recovering lost companions."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44299,6 +44483,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13591]
 # ## txt 0 (1)	=> "Hello there! Care to buy some fishing supplies, or perhaps take a lesson or two?"
+# NOT TBC
 # == fem[30372]	   "Hello there! Care to buy some fishing supplies, or perhaps take a lesson or two?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44307,6 +44492,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13593]
 # ## txt 0 (1)	=> "Too long have I been gone, fighting my way across Azeroth to rediscover my past and reclaim my throne. With all the challenges that have tested the Alliance in my absence, it warms my heart to see heroes such as yourself defending our coalition."
+# NOT TBC
 # == mal[30379]	   "Too long have I been gone, fighting my way across Azeroth to rediscover my past and reclaim my throne. With all the challenges that have tested the Alliance in my absence, it warms my heart to see heroes such as yourself defending our coalition."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44315,6 +44501,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13607]
 # ## txt 0 (1)	=> "You're wasting time. Go kill the minions of the Lich King, $c!"
+# NOT TBC
 # == mal[30416]	   "You're wasting time. Go kill the minions of the Lich King, $c!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44323,6 +44510,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13608]
 # ## txt 0 (1)	=> "How fare your efforts against the Lich King, $c?"
+# NOT TBC
 # == mal[30417]	   "How fare your efforts against the Lich King, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44331,6 +44519,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13609]
 # ## txt 0 (1)	=> "It is good to see you again, $N. How could I ever forget the $g man : woman; who saved my sister's life?"
+# NOT TBC
 # == mal[30418]	   "It is good to see you again, $n. How could I ever forget the $g man : woman; who saved my sister's life?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44339,14 +44528,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13610]
 # ## txt 0 (1)	=> "It is good to see you again, $N."
-# == mal[30419]	   "It is good to see you again, $n."
+# == mal[8481]	   "It is good to see you again, $N."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13610, 1, 30419);
+ VALUES (13610, 1, 8481);
 
 # -------------------------------------------------------------------------------- [13611]
 # ## txt 0 (1)	=> "<The Frostborn Scout attempts to rise to his feet as you approach, but stumbles back to the ground, clenching an obviously painful wound in his side.>"
+# NOT TBC
 # == mal[30427]	   "<The Frostborn Scout attempts to rise to his feet as you approach, but stumbles back to the ground, clenching an obviously painful wound in his side.>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44355,6 +44545,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13612]
 # ## txt 0 (1)	=> "I don't think that's going to happen, $G lad:lass;. I've lost a lot of blood... there's no way I'm making it back."
+# NOT TBC
 # == mal[30428]	   "I don't think that's going to happen, $G lad:lass;. I've lost a lot of blood... there's no way I'm making it back."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44363,6 +44554,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13613]
 # ## txt 0 (1)	=> "A pack of harpies came up from the valley. A big one named Sirana led them... I didn't have anywhere to escape. They haven't been this aggressive for a long time... I didn't expect it... I let my guard down.... it's my own fault."
+# NOT TBC
 # == mal[30430]	   "A pack of harpies came up from the valley. A big one named Sirana led them... I didn't have anywhere to escape. They haven't been this aggressive for a long time... I didn't expect it... I let my guard down.... it's my own fault."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44371,6 +44563,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13614]
 # ## txt 0 (1)	=> "It's a little late... for that... $G lad:lass;.$B$B<The Frostborn Scout coughs up some blood on the snow.>$B$BGet... that wench in charge for me...$B$B<The Frostborn Scout slumps over as he breathes his last breath.>"
+# NOT TBC
 # == mal[30432]	   "It's a little late... for that... $G lad:lass;.$B$B<The Frostborn Scout coughs up some blood on the snow.>$B$BGet... that wench in charge for me...$B$B<The Frostborn Scout slumps over as he breathes his last breath.>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44379,6 +44572,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13615]
 # ## txt 0 (1)	=> "Look around and let the devastation sink in, $c. Every last troll that lived here is either dead or has fled to the upper levels.$B$BIt gets worse.$B$BIn an act of desperation, the living Drakkari trolls sacrificed their own animal gods so that they could drink from the blood of the gods and gain untold power. While they succeeded in keeping the Scourge at bay with their newfound strength, the results were catastrophic. The ancient empire of Zul'Drak lies in ruin as proof.$B"
+# NOT TBC
 # == mal[30433]	   "Look around and let the devastation sink in, $c. Every last troll that lived here is either dead or has fled to the upper levels.$B$BIt gets worse.$B$BIn an act of desperation, the living Drakkari trolls sacrificed their own animal gods so that they could drink from the blood of the gods and gain untold power. While they succeeded in keeping the Scourge at bay with their newfound strength, the results were catastrophic. The ancient empire of Zul'Drak lies in ruin as proof.$b"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44387,6 +44581,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13616]
 # ## txt 0 (1)	=> "Do keep out of sight, will you? I'm trying to pretend that I'm still under the Lich King's control!"
+# NOT TBC
 # == mal[30434]	   "Do keep out of sight, will you? I'm trying to pretend that I'm still under the Lich King's control!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44395,6 +44590,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13619]
 # ## txt 0 (1)	=> "Gerk, Burr, Dargath: all gone... It's just MacKellar and I left out here. I hope you've brought some good news."
+# NOT TBC
 # == mal[30449]	   "Gerk, Burr, Dargath: all gone... It's just MacKellar and I left out here. I hope you've brought some good news."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44403,6 +44599,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13628]
 # ## txt 0 (1)	=> "Please to be quiet! Pups asleeping!"
+# NOT TBC
 # == mal[30482]	   "Please to be quiet! Pups asleeping!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44411,6 +44608,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13637]
 # ## txt 0 (1)	=> "Be welcome amongst us, $c."
+# NOT TBC
 # == fem[30594]	   "Be welcome amongst us, $c."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44419,6 +44617,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13639]
 # ## txt 0 (1)	=> "With my freedom comes the vengeance of storm!"
+# NOT TBC
 # == mal[30609]	   "With my freedom comes the vengeance of storm!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44427,6 +44626,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13640]
 # ## txt 0 (1)	=> "Listen to what I have to tell you about our enemy before we start. You don't want to be unprepared while we're out smashing Scourge in the field."
+# NOT TBC
 # == mal[30610]	   "Listen to what I have to tell you about our enemy before we start. You don't want to be unprepared while we're out smashing Scourge in the field."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44435,6 +44635,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13641]
 # ## txt 0 (1)	=> "<Brann looks at you expectantly.>"
+# NOT TBC
 # == mal[30618]	   "<Brann looks at you expectantly.>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44443,6 +44644,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13642]
 # ## txt 0 (1)	=> "Imagine all the wisdom and knowledge locked away within Ulduar. The very secrets of life could be held there!"
+# NOT TBC
 # == mal[30619]	   "Imagine all the wisdom and knowledge locked away within Ulduar. The very secrets of life could be held there!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44451,6 +44653,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13646]
 # ## txt 0 (1)	=> "Boktar thinks this crash an unfortunate event, but I believe we're intended to learn something from it."
+# NOT TBC
 # == mal[30632]	   "Boktar thinks this crash an unfortunate event, but I believe we're intended to learn something from it."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44459,6 +44662,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13647]
 # ## txt 0 (1)	=> "The Ymirjar battle lord, Algar the Chosen, rouses his Vargul armies at the Reliquary of Pain, northeast of this cage.$B$BPrince Navarius is across the Dead Fields, east of here, near the great steps leading up to the second level of Zul'Drak.$B$BThrym's location is currently unknown, which is curious considering his size.$B$BAll must be dealt with!"
+# NOT TBC
 # == mal[30633]	   "The Ymirjar battle lord, Algar the Chosen, rouses his Vargul armies at the Reliquary of Pain, northeast of this cage.$B$BPrince Navarius is across the Dead Fields, east of here, near the great steps leading up to the second level of Zul'Drak.$B$BThrym's location is currently unknown, which is curious considering his size.$B$BAll must be dealt with!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44467,6 +44671,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13650]
 # ## txt 0 (1)	=> "Poison... my insides are churning..."
+# NOT TBC
 # == mal[30643]	   "Poison... my insides are churning..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44475,6 +44680,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13651]
 # ## txt 0 (1)	=> "Let me know when you're ready. I'd prefer sooner than later... what with the slowly dying from poison and all."
+# NOT TBC
 # == mal[30645]	   "Let me know when you're ready. I'd prefer sooner than later... what with the slowly dying from poison and all."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44483,6 +44689,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13654]
 # ## txt 0 (1)	=> "We must strike at Jotunheim continuously. Never give them a chance to catch their breath, never a chance to sleep, and never accept surrender!$B$BTirion Fordring with all the might of Ashbringer and the Argent Crusade behind him cannot hope to accomplish what you are doing!$B$BNow, be quick about your business, $N. There is too much occurring for idle chit-chat."
+# NOT TBC
 # == mal[30647]	   "We must strike at Jotunheim continuously. Never give them a chance to catch their breath, never a chance to sleep, and never accept surrender!$B$BTirion Fordring with all the might of Ashbringer and the Argent Crusade behind him cannot hope to accomplish what you are doing!$B$BNow, be quick about your business, $n. There is too much occurring for idle chit-chat."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44491,6 +44698,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13656]
 # ## txt 0 (1)	=> "When you are ready I will place you atop my head and we will march into the heart of the Scourge in Zul'Drak. You must direct me to smash and destroy our enemies!"
+# NOT TBC
 # == mal[30648]	   "When you are ready I will place you atop my head and we will march into the heart of the Scourge in Zul'Drak. You must direct me to smash and destroy our enemies!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44499,6 +44707,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13658]
 # ## txt 0 (1)	=> "We're in over our heads, $r! Watch your back!"
+# NOT TBC
 # == mal[30655]	   "We're in over our heads, $r! Watch your back!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44507,6 +44716,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13659]
 # ## txt 0 (1)	=> "The Ebon Blade is indebted to you for your help in taking The Shadow Vault. We are lucky to have you.$B$BWhile the Alliance and the Horde fight each other, doing the Lich King's job for him, we will stay focused on the task at hand.$B$BWhere the Argent Crusade might falter and think twice about how best to crush the enemy, we will have no such moral difficulties.$B$BYou shall be our instrument of vengeance, $N."
+# NOT TBC
 # == mal[30660]	   "The Ebon Blade is indebted to you for your help in taking The Shadow Vault. We are lucky to have you.$B$BWhile the Alliance and the Horde fight each other, doing the Lich King's job for him, we will stay focused on the task at hand.$B$BWhere the Argent Crusade might falter and think twice about how best to crush the enemy, we will have no such moral difficulties.$B$BYou shall be our instrument of vengeance, $n."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44515,15 +44725,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13660]
 # ## txt 0 (1)	=> "I will tear you limb from limb."
+# NOT TBC
 # == fem[30661]	   "I will tear you limb from limb."
 
 # ## txt 1 (1)	=> "You challenge?"
+# NOT TBC
 # == fem[30662]	   "You challenge?"
 
 # ## txt 2 (1)	=> "You don't look so tough."
+# NOT TBC
 # == fem[30663]	   "You don't look so tough."
 
 # ## txt 3 (1)	=> "You think you have what it takes?"
+# NOT TBC
 # == fem[30664]	   "You think you have what it takes?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44532,6 +44746,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13661]
 # ## txt 0 (1)	=> "Well met, Battle-Sister. I can assist you in recovering lost companions."
+# NOT TBC
 # == fem[30666]	   "Well met, Battle-Sister. I can assist you in recovering lost companions."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44540,6 +44755,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13663]
 # ## txt 0 (1)	=> "Come, Battle-Sister.$B$BFeast, sleep, so that you may fight with all your strength!"
+# NOT TBC
 # == fem[30669]	   "Come, Battle-Sister.$B$BFeast, sleep, so that you may fight with all your strength!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44548,6 +44764,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13671]
 # ## txt 0 (1)	=> "If there's nothing else that you can do, kill these things!"
+# NOT TBC
 # == mal[30719]	   "If there's nothing else that you can do, kill these things!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44556,6 +44773,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13673]
 # ## txt 0 (1)	=> "I can take care of myself, $N."
+# NOT TBC
 # == mal[30724]	   "I can take care of myself, $n."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44564,6 +44782,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13674]
 # ## txt 0 (1)	=> "What are YOU doing here?$B$BJust make sure that you stay out of my way. I didn't leave the Scarlet Onslaught to be distracted by the likes of you!"
+# NOT TBC
 # == mal[30741]	   "What are YOU doing here?$B$BJust make sure that you stay out of my way. I didn't leave the Scarlet Onslaught to be distracted by the likes of you!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44572,6 +44791,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13678]
 # ## txt 0 (1)	=> "Do not bother me, pest. I am studying the inept fighting of these so-called combatants.$B$BI will best them all, and then I will be elevated to serve the Lich King."
+# NOT TBC
 # == fem[30752]	   "Do not bother me, pest. I am studying the inept fighting of these so-called combatants.$B$BI will best them all, and then I will be elevated to serve the Lich King."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44580,6 +44800,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13679]
 # ## txt 0 (1)	=> "You look like you could make us some money. How about a spin inside the Amphitheater of Anguish, pal?"
+# NOT TBC
 # == mal[30754]	   "You look like you could make us some money. How about a spin inside the Amphitheater of Anguish, pal?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44588,6 +44809,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13680]
 # ## txt 0 (1)	=> "You're the champion now, buddy! Do you think you have what it takes to defend your title?"
+# NOT TBC
 # == mal[30756]	   "You're the champion now, buddy! Do you think you have what it takes to defend your title?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44596,6 +44818,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13681]
 # ## txt 0 (1)	=> "This unit is busy. Please inquire later."
+# NOT TBC
 # == mal[30758]	   "This unit is busy. Please inquire later."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44604,6 +44827,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13682]
 # ## txt 0 (1)	=> "Go back to work before the overseer sees us."
+# NOT TBC
 # == mal[30759]	   "Go back to work before the overseer sees us."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44612,6 +44836,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13685]
 # ## txt 0 (1)	=> "This likeness of the Horn of Hodir stands in memorial of King Arngrim and all others lost in the battle of Thunderfall."
+# NOT TBC
 # == mal[30792]	   "This likeness of the Horn of Hodir stands in memorial of King Arngrim and all others lost in the battle of Thunderfall."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44620,14 +44845,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13690]
 # ## txt 0 (1)	=> "What can I do for you?"
-# == mal[30951]	   "What can I do for you?"
+# == fem[1529]	   "What can I do for you?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13690, 1, 30951);
+ VALUES (13690, 1, 1529);
 
 # -------------------------------------------------------------------------------- [13691]
 # ## txt 0 (1)	=> "This puny green pup was of no use at the mines. No matter, he'll make for suitable warmup for battle."
+# NOT TBC
 # == fem[30805]	   "This puny green pup was of no use at the mines. No matter, he'll make for suitable warmup for battle."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44636,6 +44862,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13694]
 # ## txt 0 (1)	=> "Are you here to prove yourself to the Lich King as well?$B$BIt's kind of archaic, don't you think? Having to fight and survive?"
+# NOT TBC
 # == fem[30823]	   "Are you here to prove yourself to the Lich King as well?$B$BIt's kind of archaic, don't you think? Having to fight and survive?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44644,6 +44871,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13695]
 # ## txt 0 (1)	=> "Hey, I recognize you! I guess I have you to thanks for me being here. That teleport accident was the best thing that ever happened to me.$B$BIf you find yourself back in Borean Tundra, let my goody two-shoes nerd of a duplicate know that I've move up in the world quite a bit!"
+# NOT TBC
 # -- fem[30824]	   "Hey, I recognize you! I guess I have you to thanks for me being here. That teleport accident was the best thing that ever happened to me.$B$BIf you find yourself back in Borean Tundra, let my goody two-shoes nerd of a duplicate know that I've moved up in the world quite a bit!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44652,6 +44880,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13697]
 # ## txt 0 (1)	=> "Fjorn's Anvil now stands prominently in Dun Niffelem as a symbol of their victory over Fjorn and his armies.$b$bYou can't help but smile, knowing that your actions have had such a lasting impact on the world."
+# NOT TBC
 # == mal[30837]	   "Fjorn's Anvil now stands prominently in Dun Niffelem as a symbol of their victory over Fjorn and his armies.$b$bYou can't help but smile, knowing that your actions have had such a lasting impact on the world."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44660,6 +44889,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13699]
 # ## txt 0 (1)	=> "I no longer train Death Knights, having grown weary of cretinous Initiates and their constant questions.$B$BNow begone."
+# NOT TBC
 # == fem[30846]	   "I no longer train Death Knights, having grown weary of cretinous Initiates and their constant questions.$B$BNow begone."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44668,6 +44898,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13701]
 # ## txt 0 (1)	=> "Onu'zun here to challenge the vrykul and work himself up in the ranks.$B$BThen when Onu'zun fight in Valhalas and win, Onu'zun gonna be workin' for the Lich King!"
+# NOT TBC
 # == mal[30857]	   "Onu'zun here to challenge the vrykul and work himself up in the ranks.$B$BThen when Onu'zun fight in Valhalas and win, Onu'zun gonna be workin' for the Lich King!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44676,14 +44907,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13702]
 # ## txt 0 (1)	=> "How may I help you?"
-# == mal[62303]	   "How may I help you?"
+# NOT TBC
+# == mal[30864]	   "How may I help you?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13702, 1, 62303);
+ VALUES (13702, 1, 30864);
 
 # -------------------------------------------------------------------------------- [13703]
 # ## txt 0 (1)	=> "Greetings, $N. This is the workshop of Keeper Mimir."
+# NOT TBC
 # == mal[30865]	   "Greetings, $n. This is the workshop of Keeper Mimir."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44692,6 +44925,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13707]
 # ## txt 0 (1)	=> "I had it all, once. Fame, fortune, a full set of the very best gladiator's gear... and then I threw it all away.$B$BOnce the Cartel caught me rigging fights... trading wins... it was all over.$B$BNow I've got nothing but these rags and a bad liver."
+# NOT TBC
 # == mal[30897]	   "I had it all, once. Fame, fortune, a full set of the very best gladiator's gear... and then I threw it all away.$B$BOnce the Cartel caught me rigging fights... trading wins... it was all over.$B$BNow I've got nothing but these rags and a bad liver."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44700,6 +44934,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13709]
 # ## txt 0 (1)	=> "Who are you?$B$BGo away... I'm exhausted from working so hard on the Harbor Road. It's time to drink some dwarven ale, have a good cry, and take a nap."
+# NOT TBC
 # == mal[30908]	   "Who are you?$B$BGo away... I'm exhausted from working so hard on the Harbor Road. It's time to drink some dwarven ale, have a good cry, and take a nap."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44708,6 +44943,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13715]
 # ## txt 0 (1)	=> "Once, I had a home in the lush woods of Quel'Thalas. Once, I had a family, a husband... children. Once, I was alive and one with the world. The Lich King took all of that away from me in the blink of an eye.$B$BThough I have not the power to strike at him directly, I will pay him back threefold!"
+# NOT TBC
 # == fem[30919]	   "Once, I had a home in the lush woods of Quel'Thalas. Once, I had a family, a husband... children. Once, I was alive and one with the world. The Lich King took all of that away from me in the blink of an eye.$B$BThough I have not the power to strike at him directly, I will pay him back threefold!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44716,6 +44952,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13731]
 # ## txt 0 (1)	=> "What a landmark discovery! The Royal Apothecary Society has spent years working to break the secrets of the Lich King's plague, and I've finally done it!$B$BDespite this turning point in history, there is still so much to discover. I have more experiments to conduct... test subjects to acquire...$B$BAt least I don't have to worry about Scourge necropoli. The Alliance is dealing with that problem. This leaves me plenty of time to delve into the secrets of the plague and uncover what I can."
+# NOT TBC
 # == mal[30934]	   "What a landmark discovery! The Royal Apothecary Society has spent years working to break the secrets of the Lich King's plague, and I've finally done it!$B$BDespite this turning point in history, there is still so much to discover. I have more experiments to conduct... test subjects to acquire...$B$BAt least I don't have to worry about Scourge necropoli. The Alliance is dealing with that problem. This leaves me plenty of time to delve into the secrets of the plague and uncover what I can."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44724,6 +44961,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13733]
 # ## txt 0 (1)	=> "Where there are frostborn, there are eagles. They've been our allies for longer than I've walked the land... and I'm not exactly young anymore, $G laddy:lass;."
+# NOT TBC
 # == mal[30936]	   "Where there are frostborn, there are eagles. They've been our allies for longer than I've walked the land... and I'm not exactly young anymore, $G laddy:lass;."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44732,14 +44970,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13734]
 # ## txt 0 (1)	=> "What can I do for you?"
-# == mal[30951]	   "What can I do for you?"
+# == fem[1529]	   "What can I do for you?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13734, 1, 30951);
+ VALUES (13734, 1, 1529);
 
 # -------------------------------------------------------------------------------- [13735]
 # ## txt 0 (1)	=> "How you be doin' mon?"
+# NOT TBC
 # == mal[30954]	   "How you be doin' mon?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44748,6 +44987,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13737]
 # ## txt 0 (1)	=> "How may I serve you?"
+# NOT TBC
 # == mal[30958]	   "How may I serve you?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44756,14 +44996,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13738]
 # ## txt 0 (1)	=> "What do you want?"
-# == mal[56291]	   "What do you want?"
+# == mal[2875]	   "What do you want?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13738, 1, 56291);
+ VALUES (13738, 1, 2875);
 
 # -------------------------------------------------------------------------------- [13740]
 # ## txt 0 (1)	=> "You are welcome here, as a friend and ally of the earthen."
+# NOT TBC
 # == mal[30974]	   "You are welcome here, as a friend and ally of the earthen."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44772,6 +45013,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13747]
 # ## txt 0 (1)	=> "You are permitted to visit our stronghold, little $r.$b$bDo not bring us dishonor!"
+# NOT TBC
 # == mal[30981]	   "You are permitted to visit our stronghold, little $r.$b$bDo not bring us dishonor!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44780,6 +45022,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13748]
 # ## txt 0 (1)	=> "I do not trust you enough to speak of such things.$b$bYou must respect the trials our people have endured, the burdens we have borne...$b$bPerhaps, if you were to bring great honor to Dun Niffelem, I would be inclined to share with you the knowledge of our people."
+# NOT TBC
 # == mal[30983]	   "I do not trust you enough to speak of such things.$b$bYou must respect the trials our people have endured, the burdens we have borne...$b$bPerhaps, if you were to bring great honor to Dun Niffelem, I would be inclined to share with you the knowledge of our people."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44788,6 +45031,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13749]
 # ## txt 0 (1)	=> "Very well, little $c.$b$bWhile there is much left for you to do to mend our relations with Thorim, I am compelled to share with you this one secret.$b$bSpeak to me again when you are ready to be shown that which you seek."
+# NOT TBC
 # == mal[30984]	   "Very well, little $c.$b$bWhile there is much left for you to do to mend our relations with Thorim, I am compelled to share with you this one secret.$b$bSpeak to me again when you are ready to be shown that which you seek."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44796,6 +45040,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13759]
 # ## txt 0 (1)	=> "Hello, $r. How can I help you today?"
+# NOT TBC
 # == mal[31056]	   "Hello, $r. How can I help you today?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44804,6 +45049,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13761]
 # ## txt 0 (1)	=> "Sorry, friend. Only certified officers of the Horde can authorize the purchase of a vehicle."
+# NOT TBC
 # == mal[31066]	   "Sorry, friend. Only certified officers of the Horde can authorize the purchase of a vehicle."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44812,6 +45058,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13764]
 # ## txt 0 (1)	=> "Good to see ya again!$B$BKing Stormheart has informed me that he will be taking his leave for a time... a grim memory brought back to him has left him with a score to settle it seems. He was very insistent that we not join him, so we have respected his wishes as we always do.$B$BI have taken responsibility for our clan in the meantime. You are still welcome with us, of course."
+# NOT TBC
 # == mal[31081]	   "Good to see ya again!$B$BKing Stormheart has informed me that he will be taking his leave for a time... a grim memory brought back to him has left him with a score to settle it seems. He was very insistent that we not join him, so we have respected his wishes as we always do.$B$BI have taken responsibility for our clan in the meantime. You are still welcome with us, of course."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44820,6 +45067,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13776]
 # ## txt 0 (1)	=> "You are no taunka. Why have you come to the sacred burial grounds of our warriors?"
+# NOT TBC
 # == mal[31149]	   "You are no taunka. Why have you come to the sacred burial grounds of our warriors?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44828,6 +45076,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13777]
 # ## txt 0 (1)	=> "Look at them... all they care about is outdoing each other."
+# NOT TBC
 # == fem[31163]	   "Look at them... all they care about is outdoing each other."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44836,6 +45085,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13778]
 # ## txt 0 (1)	=> "You see, Thorim is not like these harpies. He's a worthy being of near godlike stature.$B$BHe served the titans as guardian of Ulduar and the Terrace of the Makers.$B$BThat is until his wife, Sif, was cowardly slain by his brother."
+# NOT TBC
 # == fem[31165]	   "You see, Thorim is not like these harpies. He's a worthy being of near godlike stature.$B$BHe served the titans as guardian of Ulduar and the Terrace of the Makers.$B$BThat is until his wife, Sif, was cowardly slain by his brother."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44844,6 +45094,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13779]
 # ## txt 0 (1)	=> "Thorim lost it. He lashed out against his most beloved allies, the frost giants.$B$BThat's one reason why to this day, this land is torn apart by the war between the Hyldnir and the Sons of Hodir... and why Thorim has exiled himself to the Temple of Storms."
+# NOT TBC
 # == fem[31167]	   "Thorim lost it. He lashed out against his most beloved allies, the frost giants.$B$BThat's one reason why to this day, this land is torn apart by the war between the Hyldnir and the Sons of Hodir... and why Thorim has exiled himself to the Temple of Storms."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44852,6 +45103,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13780]
 # ## txt 0 (1)	=> "What do I care if these she-wolves and the frost giants kill each other every day?$B$BNo, no... I want Thorim to break out of his stupor and rally all his allies to retake Ulduar.$B$BThe world will be torn asunder if he fails to accomplish this!$B$BAnd of course, I'll reward you appropriately."
+# NOT TBC
 # == fem[31169]	   "What do I care if these she-wolves and the frost giants kill each other every day?$B$BNo, no... I want Thorim to break out of his stupor and rally all his allies to retake Ulduar.$B$BThe world will be torn asunder if he fails to accomplish this!$B$BAnd of course, I'll reward you appropriately."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44860,6 +45112,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13782]
 # ## txt 0 (1)	=> "Leave me to my shame, $r."
+# NOT TBC
 # == mal[31174]	   "Leave me to my shame, $r."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44868,6 +45121,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13783]
 # ## txt 0 (1)	=> "Men -- can't live with them, can't live without them. Well, you can... but it's just really boring."
+# NOT TBC
 # == fem[31175]	   "Men -- can't live with them, can't live without them. Well, you can... but it's just really boring."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44876,6 +45130,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13784]
 # ## txt 0 (1)	=> "These mines are a dreadful place. Fortunately, I don't plan on being here long."
+# NOT TBC
 # == fem[31176]	   "These mines are a dreadful place. Fortunately, I don't plan on being here long."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44884,6 +45139,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13785]
 # ## txt 0 (1)	=> "Bears are beautiful creatures. Wild, strong and fierce in battle... much like us, sister."
+# NOT TBC
 # == fem[31177]	   "Bears are beautiful creatures. Wild, strong and fierce in battle... much like us, sister."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44892,6 +45148,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13786]
 # ## txt 0 (1)	=> "Sorry, friend. I'm afraid we've used all of the parts we can spare at the moment."
+# NOT TBC
 # == mal[31178]	   "Sorry, friend. I'm afraid we've used all of the parts we can spare at the moment."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44900,6 +45157,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13788]
 # ## txt 0 (1)	=> "Someone called for me...?"
+# NOT TBC
 # == fem[31190]	   "Someone called for me...?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44908,6 +45166,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13790]
 # ## txt 0 (1)	=> "Hello, hello!"
+# NOT TBC
 # == mal[31201]	   "Hello, hello!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44916,22 +45175,24 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13792]
 # ## txt 0 (1)	=> "Hello, peach - good to have your company!"
-# == fem[31203]	   "Hello, peach - good to have your company!"
+# NOT TBC
+# == fem[31202]	   "Hello, peach - good to have your company!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13792, 1, 31203);
+ VALUES (13792, 1, 31202);
 
 # -------------------------------------------------------------------------------- [13793]
 # ## txt 0 (1)	=> "Pleased to meet you, $c."
-# == mal[31204]	   "Pleased to meet you, $c."
+# == mal[22523]	   "Pleased to meet you, $c."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13793, 1, 31204);
+ VALUES (13793, 1, 22523);
 
 # -------------------------------------------------------------------------------- [13794]
 # ## txt 0 (1)	=> "The mountains are rich with history... don't forget to stop and take it all in, $c."
+# NOT TBC
 # == mal[31205]	   "The mountains are rich with history... don't forget to stop and take it all in, $c."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44940,14 +45201,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13795]
 # ## txt 0 (1)	=> "Hello, peach - good to have your company!"
-# == fem[31203]	   "Hello, peach - good to have your company!"
+# NOT TBC
+# == fem[31202]	   "Hello, peach - good to have your company!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13795, 1, 31203);
+ VALUES (13795, 1, 31202);
 
 # -------------------------------------------------------------------------------- [13797]
 # ## txt 0 (1)	=> "We discovered these proto-drakes at the Bronze Dragonshrine in the Dragonblight. We knew at once that they were kin - our blood from ages past.$B$BMy apologies, $c. You are probably confused. I am Penumbrius of the bronze dragonflight. I have taken this form out of convenience. It is much easier to communicate and live amongst mortals while in the mortal guise.$B$BHow can I help you?$B"
+# NOT TBC
 # == mal[31208]	   "We discovered these proto-drakes at the Bronze Dragonshrine in the Dragonblight. We knew at once that they were kin - our blood from ages past.$B$BMy apologies, $c. You are probably confused. I am Penumbrius of the bronze dragonflight. I have taken this form out of convenience. It is much easier to communicate and live amongst mortals while in the mortal guise.$B$BHow can I help you?$b"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44956,6 +45219,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13798]
 # ## txt 0 (1)	=> "Hello, $n! How can I help you today?"
+# NOT TBC
 # == mal[31214]	   "Hello, $n! How can I help you today?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44964,6 +45228,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13799]
 # ## txt 0 (1)	=> "Speak, $c."
+# NOT TBC
 # == mal[31217]	   "Speak, $c."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44972,6 +45237,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13800]
 # ## txt 0 (1)	=> "I've hidden from my destiny long enough. What I must do has never been clearer.$B$BLoken must be destroyed by my hand."
+# NOT TBC
 # == mal[31218]	   "I've hidden from my destiny long enough. What I must do has never been clearer.$B$BLoken must be destroyed by my hand."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44980,6 +45246,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13801]
 # ## txt 0 (1)	=> "For a moment I thought you were my beloved Sif... that strand of hair... but no! It can't be... Sif is dead....$B$BMy... my brother.... killed her!"
+# NOT TBC
 # == mal[31220]	   "For a moment I thought you were my beloved Sif... that strand of hair... but no! It can't be... Sif is dead....$B$BMy... my brother.... killed her!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44988,6 +45255,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13802]
 # ## txt 0 (1)	=> "Ulduar... I was sworn to protect Ulduar.$B$BSworn to protect the Terrace of the Makers.$B$BSworn to protect the pacts between the races of frost.$B$BBut I failed! I let my brother trick me. I let him turn me against my allies. He tricked me into blaming Sif's death on a dear friend, Arngrim, the king of the frost giants.$B$BAfter I realized what I'd done... I... gave in to despair."
+# NOT TBC
 # == mal[31222]	   "Ulduar... I was sworn to protect Ulduar.$B$BSworn to protect the Terrace of the Makers.$B$BSworn to protect the pacts between the races of frost.$B$BBut I failed! I let my brother trick me. I let him turn me against my allies. He tricked me into blaming Sif's death on a dear friend, Arngrim, the king of the frost giants.$B$BAfter I realized what I'd done... I... gave in to despair."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -44996,6 +45264,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13803]
 # ## txt 0 (1)	=> "Who are you, little one? To come speak these words to the mighty Thorim...$B$BI should... crush you!$B$BYet, you've delivered me from my stupor. Your presence here is a sign!$B$BIt was no accident that I mistook you for Sif. What would she think of me? I must prepare for battle.$B$BI must avenge her death and liberate the titans' sacred grounds from my brother's madness!"
+# NOT TBC
 # == mal[31224]	   "Who are you, little one? To come speak these words to the mighty Thorim...$B$BI should... crush you!$B$BYet, you've delivered me from my stupor. Your presence here is a sign!$B$BIt was no accident that I mistook you for Sif. What would she think of me? I must prepare for battle.$B$BI must avenge her death and liberate the titans' sacred grounds from my brother's madness!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45004,6 +45273,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13804]
 # ## txt 0 (1)	=> "Welcome to the Storm Peaks, $r."
+# NOT TBC
 # == mal[31228]	   "Welcome to the Storm Peaks, $r."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45012,6 +45282,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13806]
 # ## txt 0 (1)	=> "Elder Arp spends time at the D.E.H.T.A camp in Borean Tundra."
+# NOT TBC
 # == mal[31253]	   "Elder Arp spends time at the D.E.H.T.A camp in Borean Tundra."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45020,6 +45291,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13809]
 # ## txt 0 (1)	=> "You'll find Elder Northal inside the Transitus Shield in Coldarra."
+# NOT TBC
 # == mal[31269]	   "You'll find Elder Northal inside the Transitus Shield in Coldarra."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45028,6 +45300,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13816]
 # ## txt 0 (1)	=> "Elder Skywarden can be found near Agmar's Hammer in Dragonblight."
+# NOT TBC
 # == mal[31283]	   "Elder Skywarden can be found near Agmar's Hammer in Dragonblight."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45036,6 +45309,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13819]
 # ## txt 0 (1)	=> "Elder Chogan'gada can be found in Utgarde Pinnacle."
+# NOT TBC
 # == mal[31289]	   "Elder Chogan'gada can be found in Utgarde Pinnacle."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45044,6 +45318,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13820]
 # ## txt 0 (1)	=> "Elder Lunaro is at the Ruins of Tethys in Grizzly Hills."
+# NOT TBC
 # == mal[31291]	   "Elder Lunaro is at the Ruins of Tethys in Grizzly Hills."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45052,6 +45327,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13823]
 # ## txt 0 (1)	=> "Elder Kilias can be found inside Drak'Tharon Keep."
+# NOT TBC
 # == mal[31297]	   "Elder Kilias can be found inside Drak'Tharon Keep."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45060,6 +45336,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13828]
 # ## txt 0 (1)	=> "Elder Fargal looks over Frosthold in Storm Peaks."
+# NOT TBC
 # == mal[31307]	   "Elder Fargal looks over Frosthold in Storm Peaks."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45068,6 +45345,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13831]
 # ## txt 0 (1)	=> "Mrfrrmrfrmrrr!$B$B<The geist clears his throat.>$B$BYes?"
+# NOT TBC
 # == mal[31312]	   "Mrfrrmrfrmrrr!$B$B<The geist clears his throat.>$B$BYes?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45076,6 +45354,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13832]
 # ## txt 0 (1)	=> "You are not yet strong enough to do battle in the Strand of the Ancients. Return when you have gained more experience."
+# NOT TBC
 # == mal[31313]	   "You are not yet strong enough to do battle in the Strand of the Ancients. Return when you have gained more experience."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45084,6 +45363,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13833]
 # ## txt 0 (1)	=> "We cannot allow the Horde to turn the hidden secrets of the Strand of the Ancients against us. Will you join our brave soldiers there?"
+# NOT TBC
 # == mal[31315]	   "We cannot allow the Horde to turn the hidden secrets of the Strand of the Ancients against us. Will you join our brave soldiers there?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45092,6 +45372,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13834]
 # ## txt 0 (1)	=> "We cannot allow the Alliance to turn the hidden secrets of the Strand of the Ancients against us. Will you join our brave warriors there?"
+# NOT TBC
 # == mal[31316]	   "We cannot allow the Alliance to turn the hidden secrets of the Strand of the Ancients against us. Will you join our brave warriors there?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45100,6 +45381,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13838]
 # ## txt 0 (1)	=> "The Fleshwerks is the heart of the Scourge's ghoul, abomination, and flesh giant production. If we can take it out, the Lich King will be greatly weakened."
+# NOT TBC
 # == fem[31342]	   "The Fleshwerks is the heart of the Scourge's ghoul, abomination, and flesh giant production. If we can take it out, the Lich King will be greatly weakened."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45108,6 +45390,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13839]
 # ## txt 0 (1)	=> "I'M COOKIN HERE!"
+# NOT TBC
 # == mal[31357]	   "I'M COOKIN HERE!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45116,6 +45399,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13840]
 # ## txt 0 (1)	=> "Another hungry recruit?"
+# NOT TBC
 # == mal[31358]	   "Another hungry recruit?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45124,14 +45408,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13841]
 # ## txt 0 (1)	=> "What do you need?"
-# == mal[38869]	   "What do you need?"
+# == mal[6637]	   "What do you need?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13841, 1, 38869);
+ VALUES (13841, 1, 6637);
 
 # -------------------------------------------------------------------------------- [13842]
 # ## txt 0 (1)	=> "What brings you to me?"
+# NOT TBC
 # == mal[31360]	   "What brings you to me?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45140,6 +45425,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13843]
 # ## txt 0 (1)	=> "We serve Thorim, sister."
+# NOT TBC
 # == fem[31365]	   "We serve Thorim, sister."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45148,6 +45434,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13844]
 # ## txt 0 (1)	=> "It is always a pleasure to meet heroes such as yourself in this forsaken land. Is there some form of assistance that I can offer you?"
+# NOT TBC
 # == fem[31369]	   "It is always a pleasure to meet heroes such as yourself in this forsaken land. Is there some form of assistance that I can offer you?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45156,22 +45443,24 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13845]
 # ## txt 0 (1)	=> "Greetings, mage. Shall I provide you with further insight into the world of magic?"
-# == mal[52378]	   "Greetings, mage. Shall I provide you with further insight into the world of magic?"
+# NOT TBC
+# == mal[31370]	   "Greetings, mage. Shall I provide you with further insight into the world of magic?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13845, 1, 52378);
+ VALUES (13845, 1, 31370);
 
 # -------------------------------------------------------------------------------- [13846]
 # ## txt 0 (1)	=> "Well met, $c. My advice to you is this: as you travel the world, be wary of magic for it will burn the untrained."
-# == mal[52379]	   "Well met, $c. My advice to you is this: As you travel the world, be wary of magic for it will burn the untrained."
+# == mal[2503]	   "Well met, $c. My advice to you is this: as you travel the world, be wary of magic for it will burn the untrained."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13846, 1, 52379);
+ VALUES (13846, 1, 2503);
 
 # -------------------------------------------------------------------------------- [13847]
 # ## txt 0 (1)	=> "Of course! Go with Elune's blessing."
+# NOT TBC
 # == fem[31373]	   "Of course! Go with Elune's blessing."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45180,9 +45469,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13848]
 # ## txt 0 (1)	=> "Dis be a dark day in troll history, mon."
+# NOT TBC
 # == mal[31382]	   "Dis be a dark day in troll history, mon."
 
 # ## txt 1 (1)	=> "Dis be horrible, mon. I cannot bear to be watchin'."
+# NOT TBC
 # == mal[31383]	   "Dis be horrible, mon. I cannot bear to be watchin'."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45191,6 +45482,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13850]
 # ## txt 0 (1)	=> "It be my duty to record these tragic events for the good of generations to come."
+# NOT TBC
 # == fem[31392]	   "It be my duty to record these tragic events for the good of generations to come."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45199,6 +45491,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13851]
 # ## txt 0 (1)	=> "We mustn't lose our focus. The dangers inherent in getting lost in the moment could put us in peril. Alas, the soldiers need a respite from this madness.$B$BBask in the victory, $N. If not for you we might have lost the Vanguard."
+# NOT TBC
 # == mal[31393]	   "We mustn't lose our focus. The dangers inherent in getting lost in the moment could put us in peril. Alas, the soldiers need a respite from this madness.$B$BBask in the victory, $n. If not for you we might have lost the Vanguard."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45207,6 +45500,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13853]
 # ## txt 0 (1)	=> "Reinforcements, finally! The prison guards can't hold out against this invasion for much longer! You'll have to relieve my men and try to hold out for as long as you can. There's still some power in the defense system available. Use the activation crystals located around the prison to trigger a discharge if the situation worsens."
+# NOT TBC
 # == fem[31399]	   "Reinforcements, finally! The prison guards can't hold out against this invasion for much longer! You'll have to relieve my men and try to hold out for as long as you can. There's still some power in the defense system available. Use the activation crystals located around the prison to trigger a discharge if the situation worsens."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45215,6 +45509,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13854]
 # ## txt 0 (1)	=> "Is your entire party of adventurers ready to continue? I'll fire off a discharge from this activation crystal to cover the retreat of my guards."
+# NOT TBC
 # == fem[31424]	   "Is your entire party of adventurers ready to continue? I'll fire off a discharge from this activation crystal to cover the retreat of my guards."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45223,6 +45518,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13869]
 # ## txt 0 (1)	=> "Ancient magic swirls within the depths of the eye. It gives you a feeling of vertigo, as if you might accidentally tumble into its iris and fall forever."
+# NOT TBC
 # == mal[31491]	   "Ancient magic swirls within the depths of the eye. It gives you a feeling of vertigo, as if you might accidentally tumble into its iris and fall forever."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45231,6 +45527,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13871]
 # ## txt 0 (1)	=> "The vrykul rests peacefully in his magical slumbering."
+# NOT TBC
 # == mal[31503]	   "The vrykul rests peacefully in his magical slumbering."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45239,12 +45536,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13873]
 # ## txt 0 (1)	=> "<hic>$b$bIt be lonely in here without me mateys, $g lad:lass;."
+# NOT TBC
 # == mal[31520]	   "<hic>$b$bIt be lonely in here without me mateys, $g lad:lass;."
 
 # ## txt 1 (1)	=> "Yarr! Someone be needin' ta show these bloaks what fer!$b$b<hic>"
+# NOT TBC
 # == mal[31521]	   "Yarr! Someone be needin' ta show these bloaks what fer!$b$b<hic>"
 
 # ## txt 2 (3)	=> "It be time ta kick some arse an' drink double-rum!$b$bAn' I almost be outta double-rum...."
+# NOT TBC
 # == mal[31522]	   "It be time ta kick some arse an' drink double-rum!$b$bAn' I almost be outta double-rum...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45253,6 +45553,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13881]
 # ## txt 0 (1)	=> "Seek out Catarina Stanford in the canals southwest of The Stockade."
+# NOT TBC
 # == mal[31541]	   "Seek out Catarina Stanford in the canals southwest of The Stockade."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45261,6 +45562,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13882]
 # ## txt 0 (1)	=> "Jelinik's Barber Shop is in the northern section of the Trade District."
+# NOT TBC
 # == mal[31544]	   "Jelinik's Barber Shop is in the northern section of the Trade District."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45269,6 +45571,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13883]
 # ## txt 0 (1)	=> "There you are! I think I've just about got this door figured out. Let me know when you're ready and I'll open'er up!"
+# NOT TBC
 # == mal[31546]	   "There you are! I think I've just about got this door figured out. Let me know when you're ready and I'll open'er up!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45277,6 +45580,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13884]
 # ## txt 0 (1)	=> "Elise Brightletter is near the Great Forge adjacent to the Flight Master."
+# NOT TBC
 # == mal[31548]	   "Elise Brightletter is near the Great Forge adjacent to the Flight Master."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45285,6 +45589,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13885]
 # ## txt 0 (1)	=> "You can find the barber shop on the west portion of The Commons."
+# NOT TBC
 # == mal[31549]	   "You can find the barber shop on the west portion of The Commons."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45293,6 +45598,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13886]
 # ## txt 0 (1)	=> "Feyden Darkin is on the second floor in the center of the Craftsman's Terrace."
+# NOT TBC
 # == mal[31552]	   "Feyden Darkin is on the second floor in the center of the Craftsman's Terrace."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45301,6 +45607,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13887]
 # ## txt 0 (1)	=> "Thoth can teach you Inscription in The Crystal Hall."
+# NOT TBC
 # == mal[31557]	   "Thoth can teach you Inscription in The Crystal Hall."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45309,6 +45616,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13888]
 # ## txt 0 (1)	=> "Jo'mah is in a building on the second floor of The Drag."
+# NOT TBC
 # == mal[31558]	   "Jo'mah is in a building on the second floor of The Drag."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45317,6 +45625,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13889]
 # ## txt 0 (1)	=> "The barber is in the Cleft of Shadow."
+# NOT TBC
 # -- mal[31559]	   "The barber? She's moved shop, out of the Cleft of Shadow and into the cliffs above the Valley of Strength, where the fruit vendor used to be."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45325,6 +45634,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13890]
 # ## txt 0 (1)	=> "You go find Margaux Parchley. She pretty lady in The Apothecarium."
+# NOT TBC
 # == mal[31563]	   "You go find Margaux Parchley. She pretty lady in The Apothecarium."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45333,6 +45643,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13891]
 # ## txt 0 (1)	=> "Barber? That is Naznik! He on top floor of Trade Quarter, near bank."
+# NOT TBC
 # == mal[31564]	   "Barber? That is Naznik! He on top floor of Trade Quarter, near bank."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45341,6 +45652,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13892]
 # ## txt 0 (1)	=> "Seek out Poshken Hardbinder in The Pools of Vision, below the Spirit Rise."
+# NOT TBC
 # == mal[31565]	   "Seek out Poshken Hardbinder in The Pools of Vision, below the Spirit Rise."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45349,6 +45661,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13893]
 # ## txt 0 (1)	=> "You can find the scribe, Zantasia in the Court of the Sun."
+# NOT TBC
 # == mal[31566]	   "You can find the scribe, Zantasia in the Court of the Sun."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45357,6 +45670,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13896]
 # ## txt 0 (1)	=> "The taking of Crusaders' Pinnacle is only the first step in a long and dangerous journey. There is much left to do before we are able to assault Icecrown Citadel.$B$BIt can only be possible with help from you and others like you, hero."
+# NOT TBC
 # == mal[31592]	   "The taking of Crusaders' Pinnacle is only the first step in a long and dangerous journey. There is much left to do before we are able to assault Icecrown Citadel.$B$BIt can only be possible with help from you and others like you, hero."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45365,6 +45679,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13897]
 # ## txt 0 (1)	=> "Welcome to Dalaran, $c."
+# NOT TBC
 # == mal[31593]	   "Welcome to Dalaran, $c."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45373,6 +45688,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13901]
 # ## txt 0 (1)	=> "The Skybreaker patrols Icecrown. You will find no finer ship in all of the realms."
+# NOT TBC
 # == mal[31624]	   "The Skybreaker patrols Icecrown. You will find no finer ship in all of the realms."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45381,6 +45697,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13902]
 # ## txt 0 (1)	=> "Orgrim's Hammer is ready to strike in Icecrown. You will find no finer vessel."
+# NOT TBC
 # == mal[31626]	   "Orgrim's Hammer is ready to strike in Icecrown. You will find no finer vessel."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45389,6 +45706,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13903]
 # ## txt 0 (1)	=> "<Highlord Darion Mograine nods.>"
+# NOT TBC
 # == mal[31638]	   "<Highlord Darion Mograine nods.>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45397,6 +45715,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13905]
 # ## txt 0 (1)	=> "The only reason that you still live is because of my curiosity."
+# NOT TBC
 # == mal[31645]	   "The only reason that you still live is because of my curiosity."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45405,6 +45724,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13906]
 # ## txt 0 (1)	=> "The blood red pool within the eye swirls, betraying images of a massing army of Scourge. The eye seems to pull at you, willing its way into your mind and triggering you to pull back instinctively. You feel very uneasy in the presence of this object."
+# NOT TBC
 # == mal[31661]	   "The blood red pool within the eye swirls, betraying images of a massing army of Scourge. The eye seems to pull at you, willing its way into your mind and triggering you to pull back instinctively. You feel very uneasy in the presence of this object."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45413,6 +45733,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13908]
 # ## txt 0 (1)	=> "Whatever you're going to ask for, do it quickly."
+# NOT TBC
 # == fem[31674]	   "Whatever you're going to ask for, do it quickly."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45421,6 +45742,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13910]
 # ## txt 0 (1)	=> "We'll take over from here, you've earned quite a respite after that battle."
+# NOT TBC
 # == fem[31696]	   "We'll take over from here, you've earned quite a respite after that battle."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45429,14 +45751,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13911]
 # ## txt 0 (1)	=> "What is it?"
-# == mal[72223]	   "What is it?"
+# == mal[6796]	   "What is it?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13911, 1, 72223);
+ VALUES (13911, 1, 6796);
 
 # -------------------------------------------------------------------------------- [13915]
 # ## txt 0 (1)	=> "The Argent Dawn coordinates the Scourge's opposition at Light's Hope Chapel in the Eastern Plaguelands. Go there for instructions."
+# NOT TBC
 # == mal[31733]	   "The Argent Dawn coordinates the Scourge's opposition at Light's Hope Chapel in the Eastern Plaguelands. Go there for instructions."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45445,14 +45768,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13918]
 # ## txt 0 (1)	=> "Many have fallen within Valhalas and their corpses are a testament to the strength of our ways.$B$BWill your bones litter this place of honor and battle as well, $N?"
-# == fem[31758]	   "Many have fallen within Valhalas and their corpses are a testament to the strength of our ways.$B$BWill your bones litter this place of honor and battle as well, $n?"
+# NOT TBC
+# == fem[31742]	   "Many have fallen within Valhalas and their corpses are a testament to the strength of our ways.$B$BWill your bones litter this place of honor and battle as well, $n?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13918, 1, 31758);
+ VALUES (13918, 1, 31742);
 
 # -------------------------------------------------------------------------------- [13919]
 # ## txt 0 (1)	=> "I should kill you where you stand, $r!$B$BGet on with your inane prattling and then begone!"
+# NOT TBC
 # == mal[31743]	   "I should kill you where you stand, $r!$B$BGet on with your inane prattling and then begone!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45461,6 +45786,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13921]
 # ## txt 0 (1)	=> "You have not yet proven yourself worthy enough to issue a challenge within Valhalas, $N.$B$BReturn when you have earned a name for yourself."
+# NOT TBC
 # == fem[31757]	   "You have not yet proven yourself worthy enough to issue a challenge within Valhalas, $n.$B$BReturn when you have earned a name for yourself."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45469,14 +45795,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13922]
 # ## txt 0 (1)	=> "Many have fallen within Valhalas and their corpses are a testament to the strength of our ways.$B$BWill your bones litter this place of honor and battle as well, $N?"
-# == fem[31758]	   "Many have fallen within Valhalas and their corpses are a testament to the strength of our ways.$B$BWill your bones litter this place of honor and battle as well, $n?"
+# NOT TBC
+# == fem[31742]	   "Many have fallen within Valhalas and their corpses are a testament to the strength of our ways.$B$BWill your bones litter this place of honor and battle as well, $n?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (13922, 1, 31758);
+ VALUES (13922, 1, 31742);
 
 # -------------------------------------------------------------------------------- [13930]
 # ## txt 0 (1)	=> "Uhnhh.... Don't... bother with me.$b$bI am... finished..."
+# NOT TBC
 # == mal[31932]	   "Uhnhh.... Don't... bother with me.$b$bI am... finished..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45485,6 +45813,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13931]
 # ## txt 0 (1)	=> "Gathering... information... on the Scourge.$b$bAlliance forces appeared...$b$bWe took cover - waited until they attacked the gate... then, we hit them from the rear.$b$bPinched between us... and the Scourge... it was too much for them....$b$b$g Brother:Sister;... it was... glorious."
+# NOT TBC
 # == mal[31933]	   "Gathering... information... on the Scourge.$b$bAlliance forces appeared...$b$bWe took cover - waited until they attacked the gate... then, we hit them from the rear.$b$bPinched between us... and the Scourge... it was too much for them....$b$b$g Brother:Sister;... it was... glorious."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45493,6 +45822,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13932]
 # ## txt 0 (1)	=> "The time of judgement is nigh. In your heart, you know justice is the only true path."
+# NOT TBC
 # == mal[31947]	   "The time of judgement is nigh. In your heart, you know justice is the only true path."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45501,6 +45831,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13935]
 # ## txt 0 (1)	=> "I have given my all... for the Horde..."
+# NOT TBC
 # == mal[31960]	   "I have given my all... for the Horde..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45509,6 +45840,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13940]
 # ## txt 0 (1)	=> "Uhnhh.... It is too late for me, $g brother:sister;.$b$bI am... finished..."
+# NOT TBC
 # == mal[31992]	   "Uhnhh.... It is too late for me, $g brother:sister;.$b$bI am... finished..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45517,6 +45849,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13946]
 # ## txt 0 (1)	=> "Champion $N, it is good to see you again.$B$BHave you returned to Valhalas to assist a friend with their challenges?"
+# NOT TBC
 # == fem[32013]	   "Champion $n, it is good to see you again.$B$BHave you returned to Valhalas to assist a friend with their challenges?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45525,6 +45858,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13947]
 # ## txt 0 (1)	=> "We attacked under cover of a blizzard....$b$bThe Scourge were caught off guard... our victory was certain....$b$bThen... from behind us... the Horde came from nowhere.$b$bThey cost us... everything...."
+# NOT TBC
 # == mal[32014]	   "We attacked under cover of a blizzard....$b$bThe Scourge were caught off guard... our victory was certain....$b$bThen... from behind us... the Horde came from nowhere.$b$bThey cost us... everything...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45533,6 +45867,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13948]
 # ## txt 0 (1)	=> "Wait, $g brother:m'lady;....$b$bOne last thing..."
+# NOT TBC
 # == mal[32017]	   "Wait, $g brother:m'lady;....$b$bOne last thing..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45541,6 +45876,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13950]
 # ## txt 0 (1)	=> "Great job! Arthas is safely on his way to Northrend!"
+# NOT TBC
 # == fem[32023]	   "Great job! Arthas is safely on his way to Northrend!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45549,6 +45885,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13960]
 # ## txt 0 (1)	=> "The western sewers entrance is beneath the stairway to the Violet Citadel."
+# NOT TBC
 # == mal[32077]	   "The western sewers entrance is beneath the stairway to the Violet Citadel."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45557,6 +45894,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13961]
 # ## txt 0 (1)	=> "The eastern sewers entrance is just outside the entrance to Krasus' Landing."
+# NOT TBC
 # == mal[32078]	   "The eastern sewers entrance is just outside the entrance to Krasus' Landing."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45565,6 +45903,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13965]
 # ## txt 0 (1)	=> "The city's cemetery is just north of the Violet Citadel in western Dalaran."
+# NOT TBC
 # == mal[32084]	   "The city's cemetery is just north of the Violet Citadel in western Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45573,6 +45912,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13966]
 # ## txt 0 (1)	=> "The Eventide is a square in southern Dalaran. The enchanted fountain there is popular for fishing."
+# NOT TBC
 # == mal[32086]	   "The Eventide is a square in southern Dalaran. The enchanted fountain there is popular for fishing."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45581,6 +45921,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13967]
 # ## txt 0 (1)	=> "Runeweaver Square is a park at the very heart of Dalaran."
+# NOT TBC
 # == mal[32087]	   "Runeweaver Square is a park at the very heart of Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45589,6 +45930,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13968]
 # ## txt 0 (1)	=> "The memorial park to Antonidas is located in northern Dalaran."
+# NOT TBC
 # == mal[32088]	   "The memorial park to Antonidas is located in northern Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45597,6 +45939,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13969]
 # ## txt 0 (1)	=> "There is well in northern Dalaran that some of the city's more... adventurous... visitors use to enter the sewers."
+# NOT TBC
 # -- mal[32089]	   "There is a well in northern Dalaran that some of the city's more... adventurous... visitors use to enter the sewers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45605,6 +45948,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13970]
 # ## txt 0 (1)	=> "The Violet Hold, prison for the enemies of the Kirin Tor, is in southeast Dalaran."
+# NOT TBC
 # == mal[32093]	   "The Violet Hold, prison for the enemies of the Kirin Tor, is in southeast Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45613,6 +45957,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13971]
 # ## txt 0 (1)	=> "Do you see the massive spired tower in eastern Dalaran? That is the majestic Violet Citadel."
+# NOT TBC
 # == mal[32095]	   "Do you see the massive spired tower in eastern Dalaran? That is the majestic Violet Citadel."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45629,6 +45974,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13973]
 # ## txt 0 (1)	=> "Visiting members of the Alliance keep primarily to the Silver Enclave in southwestern Dalaran.$B$BThere is an inn there, as well as portals to the various Alliance cities and battlegrounds."
+# NOT TBC
 # == mal[32181]	   "Visiting members of the Alliance keep primarily to the Silver Enclave in southwestern Dalaran.$B$BThere is an inn there, as well as portals to the various Alliance cities and battlegrounds."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45637,6 +45983,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13974]
 # ## txt 0 (1)	=> "There are at least three ways beneath Dalaran: Sewer entrances in the east and west, and a well in the north."
+# NOT TBC
 # == mal[32098]	   "There are at least three ways beneath Dalaran: Sewer entrances in the east and west, and a well in the north."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45645,6 +45992,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13975]
 # ## txt 0 (1)	=> "There are many places of interest in Dalaran. Which do you seek?"
+# NOT TBC
 # == mal[32102]	   "There are many places of interest in Dalaran. Which do you seek?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45653,6 +46001,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13976]
 # ## txt 0 (1)	=> "Dalaran's arena and those who service it are found beneath the city, in the sewers.$B$BThere are at least three ways in: Entrances in the east and west, and a well in the north."
+# NOT TBC
 # == mal[32112]	   "Dalaran's arena and those who service it are found beneath the city, in the sewers.$B$BThere are at least three ways in: Entrances in the east and west, and a well in the north."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45661,6 +46010,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13977]
 # ## txt 0 (1)	=> "Portals to the various capitals and battlegrounds can be found in Dalaran's Alliance and Horde quarters: the Silver Enclave and the Sunreaver's Sancturary."
+# NOT TBC
 # oo mal[32113]	   "Portals to Stormwind and Orgrimmar and the various battlegrounds can be found in Dalaran's Alliance and Horde quarters: the Silver Enclave and the Sunreaver's Sancturary."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45669,6 +46019,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13978]
 # ## txt 0 (1)	=> "The Fleshwerks will never again produce soldiers for the Lich King's armies."
+# NOT TBC
 # == mal[32117]	   "The Fleshwerks will never again produce soldiers for the Lich King's armies."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45677,6 +46028,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13979]
 # ## txt 0 (1)	=> "Amongst the Kirin Tor, it is my duty to see to the strategic interests of the magocracy.$B$BThere is much yet to be done this week. Will you assist me, $N?"
+# NOT TBC
 # == mal[32119]	   "Amongst the Kirin Tor, it is my duty to see to the strategic interests of the magocracy.$B$BThere is much yet to be done this week. Will you assist me, $n?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45685,6 +46037,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13980]
 # ## txt 0 (1)	=> "The Magus Commerce Exchange is in northwest Dalaran, and holds most of the city's profession trainers."
+# NOT TBC
 # == mal[32120]	   "The Magus Commerce Exchange is in northwest Dalaran, and holds most of the city's profession trainers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45693,6 +46046,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13981]
 # ## txt 0 (1)	=> "The city's best tailors are in Talismanic Textiles in the Magus Commerce Exchange, northwest Dalaran."
+# NOT TBC
 # == mal[32122]	   "The city's best tailors are in Talismanic Textiles in the Magus Commerce Exchange, northwest Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45701,6 +46055,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13982]
 # ## txt 0 (1)	=> "Skinners and leatherworkers of all sorts may be found at Legendary Leathers in the Magus Commerce Exchange, northwest Dalaran."
+# NOT TBC
 # == mal[32123]	   "Skinners and leatherworkers of all sorts may be found at Legendary Leathers in the Magus Commerce Exchange, northwest Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45709,6 +46064,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13983]
 # ## txt 0 (1)	=> "Miners trainers and supplies are found in the All that Glitters Prospecting Co. in the Magus Commerce Exchange, northwest Dalaran."
+# NOT TBC
 # == mal[32124]	   "Miners trainers and supplies are found in the All that Glitters Prospecting Co. in the Magus Commerce Exchange, northwest Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45717,6 +46073,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13984]
 # ## txt 0 (1)	=> "That would be Cartier & Co. Fine Jewelry in the Magus Commerce Exchange, northwest Dalaran."
+# NOT TBC
 # == mal[32125]	   "That would be Cartier & Co. Fine Jewelry in the Magus Commerce Exchange, northwest Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45725,6 +46082,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13985]
 # ## txt 0 (1)	=> "Seek out The Scribe's Sacellum in the Magus Commerce Exchange, northwest Dalaran."
+# NOT TBC
 # == mal[32126]	   "Seek out The Scribe's Sacellum in the Magus Commerce Exchange, northwest Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45733,6 +46091,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13986]
 # ## txt 0 (1)	=> "There is a greenhouse attached to the Agronomical Apothecary in the Magus Commerce Exchange, northwest Dalaran. You'll find the city's best herbalists there."
+# NOT TBC
 # == mal[32127]	   "There is a greenhouse attached to the Agronomical Apothecary in the Magus Commerce Exchange, northwest Dalaran. You'll find the city's best herbalists there."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45741,6 +46100,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13987]
 # ## txt 0 (1)	=> "One can learn to fish near the enchanted fountain in the Eventide, a square in southern Dalaran."
+# NOT TBC
 # == mal[32128]	   "One can learn to fish near the enchanted fountain in the Eventide, a square in southern Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45749,6 +46109,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13988]
 # ## txt 0 (1)	=> "The city's premier urgent care center, First to your Aid, is located in the Magus Commerce Exchange, northwest Dalaran."
+# NOT TBC
 # == mal[32129]	   "The city's premier urgent care center, First to your Aid, is located in the Magus Commerce Exchange, northwest Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45757,6 +46118,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13989]
 # ## txt 0 (1)	=> "Engineers often train at Like Clockwork in the Magus Commerce Exchange, northwest Dalaran."
+# NOT TBC
 # == mal[32130]	   "Engineers often train at Like Clockwork in the Magus Commerce Exchange, northwest Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45765,6 +46127,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13990]
 # ## txt 0 (1)	=> "You'll want to visit Simply Enchanting, just outside the Magus Commerce Exchange in northwest Dalaran."
+# NOT TBC
 # == mal[32131]	   "You'll want to visit Simply Enchanting, just outside the Magus Commerce Exchange in northwest Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45773,6 +46136,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13991]
 # ## txt 0 (1)	=> "Cooking trainers are located in the kitchens of the Alliance and Horde inns in their respective quarters."
+# NOT TBC
 # == mal[32132]	   "Cooking trainers are located in the kitchens of the Alliance and Horde inns in their respective quarters."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45781,6 +46145,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13992]
 # ## txt 0 (1)	=> "A Hero's Welcome is located right beside the Silver Enclave in southwestern Dalaran.$B$BThe place boasts a beer garden and one of the city's finest cooking trainer in its kitchen."
+# NOT TBC
 # == mal[32136]	   "A Hero's Welcome is located right beside the Silver Enclave in southwestern Dalaran.$B$BThe place boasts a beer garden and one of the city's finest cooking trainer in its kitchen."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45789,6 +46154,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13993]
 # ## txt 0 (1)	=> "You're looking for The Filthy Animal in the Horde quarter of Sunreaver's Sanctuary, northeastern Dalaran.$B$BI am told it is a rather rough place, but with an excellent cooking trainer in its kitchen."
+# NOT TBC
 # == mal[32138]	   "You're looking for The Filthy Animal in the Horde quarter of Sunreaver's Sanctuary, northeastern Dalaran.$B$BI am told it is a rather rough place, but with an excellent cooking trainer in its kitchen."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45797,6 +46163,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13994]
 # ## txt 0 (1)	=> "There is a large smithy and forge in the Magus Commerce Exchange, northwest Dalaran.$B$BLook for the massive enchanted anvil and stained glass windows in he shapes of axes and shields."
+# NOT TBC
 # -- mal[32139]	   "There is a large smithy and forge in the Magus Commerce Exchange, northwest Dalaran.$B$BLook for the massive enchanted anvil and stained glass windows in the shapes of axes and shields."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45805,6 +46172,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13995]
 # ## txt 0 (1)	=> "Look for the potion-shaped door to the Agronomical Apothecary in the Magus Commerce Exchange, northwest Dalaran. It's quite impossible to miss!"
+# NOT TBC
 # == mal[32140]	   "Look for the potion-shaped door to the Agronomical Apothecary in the Magus Commerce Exchange, northwest Dalaran. It's quite impossible to miss!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45813,6 +46181,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13996]
 # ## txt 0 (1)	=> "Which profession trainer were you looking for?"
+# NOT TBC
 # == mal[32141]	   "Which profession trainer were you looking for?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45821,6 +46190,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13998]
 # ## txt 0 (1)	=> "The high elf Hira Snowdawn teaches Cold Weather Flying.$B$BShe can be found upon her dragonhawk at Krasus' Landing in eastern Dalaran."
+# NOT TBC
 # == mal[32149]	   "The high elf Hira Snowdawn teaches Cold Weather Flying.$B$BShe can be found upon her dragonhawk at Krasus' Landing in eastern Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45829,6 +46199,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [13999]
 # ## txt 0 (1)	=> "The city's mage and portal trainers may be found in a large building in eastern Dalaran, between Runeweaver Square at the heart of the city and Krasus' Landing."
+# NOT TBC
 # == mal[32150]	   "The city's mage and portal trainers may be found in a large building in eastern Dalaran, between Runeweaver Square at the heart of the city and Krasus' Landing."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45837,6 +46208,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14000]
 # ## txt 0 (1)	=> "What sort of trainer were you trying to find?"
+# NOT TBC
 # == mal[32151]	   "What sort of trainer were you trying to find?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45845,6 +46217,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14001]
 # ## txt 0 (1)	=> "Dalaran's stable master is located inside the Magical Menagerie in northeast Dalaran."
+# NOT TBC
 # == mal[32155]	   "Dalaran's stable master is located inside the Magical Menagerie in northeast Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45853,6 +46226,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14002]
 # ## txt 0 (1)	=> "The most popular inn in Dalaran is the Legerdemain Lounge, just north of the city's center.$B$BThe Alliance and Horde Quarters each have their own inns as well, and I am told there is one more beneath the city, in the sewers."
+# NOT TBC
 # == mal[32156]	   "The most popular inn in Dalaran is the Legerdemain Lounge, just north of the city's center.$B$BThe Alliance and Horde Quarters each have their own inns as well, and I am told there is one more beneath the city, in the sewers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45861,6 +46235,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14003]
 # ## txt 0 (1)	=> "The city's best-known barber shop is located in northern Dalaran."
+# NOT TBC
 # == mal[32157]	   "The city's best-known barber shop is located in northern Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45869,6 +46244,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14004]
 # ## txt 0 (1)	=> "You'll find the city's Flight Master at Krasus' Landing in eastern Dalaran."
+# NOT TBC
 # == mal[32158]	   "You'll find the city's Flight Master at Krasus' Landing in eastern Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45877,6 +46253,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14005]
 # ## txt 0 (1)	=> "The Bank of Dalaran is in the northern part of the city."
+# NOT TBC
 # == mal[32159]	   "The Bank of Dalaran is in the northern part of the city."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45885,6 +46262,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14006]
 # ## txt 0 (1)	=> "The Dalaran Merchants' Bank is in the southern part of the city, off the Eventide."
+# NOT TBC
 # == mal[32160]	   "The Dalaran Merchants' Bank is in the southern part of the city, off the Eventide."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45893,6 +46271,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14007]
 # ## txt 0 (1)	=> "There are three banks in the city: The Bank of Dalaran in the north, the Dalaran Merchants' Bank in the south, and one more beneath the city, in the sewers."
+# NOT TBC
 # == mal[32162]	   "There are three banks in the city: The Bank of Dalaran in the north, the Dalaran Merchants' Bank in the south, and one more beneath the city, in the sewers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45901,6 +46280,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14008]
 # ## txt 0 (1)	=> "There are many mailboxes in Dalaran: On many corners, outside nearly every inn and bank, even upon Krasus' Landing."
+# NOT TBC
 # == mal[32165]	   "There are many mailboxes in Dalaran: On many corners, outside nearly every inn and bank, even upon Krasus' Landing."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45909,6 +46289,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14009]
 # ## txt 0 (1)	=> "Krasus' Landing is in easternmost Dalaran.$B$BThe city's flight master is there, as well as the cold weather flying trainer."
+# NOT TBC
 # == mal[32169]	   "Krasus' Landing is in easternmost Dalaran.$B$BThe city's flight master is there, as well as the cold weather flying trainer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45917,6 +46298,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14010]
 # ## txt 0 (1)	=> "Dalaran has no auction house of its own. You must take a portal back to one of your capitals.$B$BThey can be found in Dalaran's Alliance and Horde quarters: the Silver Enclave and the Sunreaver's Sancturary."
+# NOT TBC
 # == mal[32170]	   "Dalaran has no auction house of its own. You must take a portal back to one of your capitals.$B$BThey can be found in Dalaran's Alliance and Horde quarters: the Silver Enclave and the Sunreaver's Sancturary."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45925,6 +46307,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14013]
 # ## txt 0 (1)	=> "Welcome to Dalaran, traveler.$B$BIs there something I might help you find?"
+# NOT TBC
 # == mal[32183]	   "Welcome to Dalaran, traveler.$B$BIs there something I might help you find?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45933,6 +46316,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14014]
 # ## txt 0 (1)	=> "Please respect the laws of Dalaran while you are here, stranger.$B$BWere you lost? Is there something I might help you find?"
+# NOT TBC
 # == mal[32184]	   "Please respect the laws of Dalaran while you are here, stranger.$B$BWere you lost? Is there something I might help you find?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45941,6 +46325,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14015]
 # ## txt 0 (1)	=> "Dalaran's guild master is found in the visitor center, just south of the city's center."
+# NOT TBC
 # == mal[32186]	   "Dalaran's guild master is found in the visitor center, just south of the city's center."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45949,6 +46334,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14017]
 # ## txt 0 (1)	=> "I foresee that you will speak with Archmage Lan'dalock, $N."
+# NOT TBC
 # == mal[32200]	   "I foresee that you will speak with Archmage Lan'dalock, $n."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45957,6 +46343,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14018]
 # ## txt 0 (1)	=> "Dalaran's only class trainers are mages. You must take a portal back to one of your capitals for others.$B$BThey can be found in Dalaran's Alliance and Horde quarters: the Silver Enclave and the Sunreaver's Sancturary."
+# NOT TBC
 # == mal[32201]	   "Dalaran's only class trainers are mages. You must take a portal back to one of your capitals for others.$B$BThey can be found in Dalaran's Alliance and Horde quarters: the Silver Enclave and the Sunreaver's Sancturary."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45965,6 +46352,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14019]
 # ## txt 0 (1)	=> "There is a black market of sorts in the northeastern portion of the sewers."
+# NOT TBC
 # == mal[32203]	   "There is a black market of sorts in the northeastern portion of the sewers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45973,6 +46361,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14020]
 # ## txt 0 (1)	=> "A tunnel leads out to the bottom of the city in the western sewers, just north of the Cantrips and Crows Tavern.$B$BSome of the more adventurous sorts use it to fly in and out of Dalaran."
+# NOT TBC
 # == mal[32204]	   "A tunnel leads out to the bottom of the city in the western sewers, just north of the Cantrips and Crows Tavern.$B$BSome of the more adventurous sorts use it to fly in and out of Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45981,6 +46370,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14021]
 # ## txt 0 (1)	=> "You're looking for the Cantrips and Crows Tavern in the western sewers."
+# NOT TBC
 # == mal[32205]	   "You're looking for the Cantrips and Crows Tavern in the western sewers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45989,6 +46379,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14022]
 # ## txt 0 (1)	=> "There is a goblin-run bank down here, just north of the Cantrips and Crows Tavern in the western sewers."
+# NOT TBC
 # == mal[32206]	   "There is a goblin-run bank down here, just north of the Cantrips and Crows Tavern in the western sewers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -45997,6 +46388,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14023]
 # ## txt 0 (1)	=> "The Steamwheedle Cartel hosts an entire arena circuit in the central sewers of Dalaran.$B$BYou'll find dueling rings there, too, at the Circle of Wills."
+# NOT TBC
 # == mal[32207]	   "The Steamwheedle Cartel hosts an entire arena circuit in the central sewers of Dalaran.$B$BYou'll find dueling rings there, too, at the Circle of Wills."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46005,6 +46397,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14024]
 # ## txt 0 (1)	=> "A ramp leads up to just outside Krasus' Landing in the eastern sewers."
+# NOT TBC
 # == mal[32208]	   "A ramp leads up to just outside Krasus' Landing in the eastern sewers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46013,6 +46406,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14025]
 # ## txt 0 (1)	=> "A ramp leads up to near the Violet Citadel in the western sewers."
+# NOT TBC
 # == mal[32209]	   "A ramp leads up to near the Violet Citadel in the western sewers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46021,6 +46415,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14026]
 # ## txt 0 (1)	=> "There are three ways out of the Underbelly: Ramps leading up to the east and west, and the tunnel that drops out of the bottom of Dalaran.$B$BBe certain you can fly before you take that tunnel, of course."
+# NOT TBC
 # == mal[32210]	   "There are three ways out of the Underbelly: Ramps leading up to the east and west, and the tunnel that drops out of the bottom of Dalaran.$B$BBe certain you can fly before you take that tunnel, of course."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46029,6 +46424,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14027]
 # ## txt 0 (1)	=> "Welcome to the Underbelly. Something I can help you find?"
+# NOT TBC
 # == mal[32212]	   "Welcome to the Underbelly. Something I can help you find?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46037,6 +46433,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14028]
 # ## txt 0 (1)	=> "The Scourge must be stopped at any cost. We cannot permit them to field the army they're constructing here."
+# NOT TBC
 # == mal[32213]	   "The Scourge must be stopped at any cost. We cannot permit them to field the army they're constructing here."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46045,6 +46442,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14033]
 # ## txt 0 (1)	=> "Our way is sacred. We will choose death before we abandon Thorim and join the likes of the Lich King."
+# NOT TBC
 # == fem[32253]	   "Our way is sacred. We will choose death before we abandon Thorim and join the likes of the Lich King."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46053,6 +46451,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14034]
 # ## txt 0 (1)	=> "For too long I tolerated my brother. It is time to set things right. It is time to destroy him and his followers."
+# NOT TBC
 # == mal[32254]	   "For too long I tolerated my brother. It is time to set things right. It is time to destroy him and his followers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46061,21 +46460,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14035]
 # ## txt 0 (1)	=> "Please, $r.$b$bRelease me..."
+# NOT TBC
 # == mal[32256]	   "Please, $r.$b$bRelease me..."
 
 # ## txt 1 (1)	=> "Don't think, $c.$b$bJust... do it...."
+# NOT TBC
 # == mal[32257]	   "Don't think, $c.$b$bJust... do it...."
 
 # ## txt 2 (1)	=> "Tell my family...$b$bMy last thoughts were of them..."
+# NOT TBC
 # == mal[32258]	   "Tell my family...$b$bMy last thoughts were of them..."
 
 # ## txt 3 (1)	=> "Send me on my way... I beg you..."
+# NOT TBC
 # == mal[32259]	   "Send me on my way... I beg you..."
 
 # ## txt 4 (1)	=> "Do it, $c...Then... avenge me!"
+# NOT TBC
 # == mal[32260]	   "Do it, $c...Then... avenge me!"
 
 # ## txt 5 (1)	=> "Please, $r...$b$bLeave nothing for the Scourge to raise!"
+# NOT TBC
 # == mal[32261]	   "Please, $r...$b$bLeave nothing for the Scourge to raise!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46084,6 +46489,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14037]
 # ## txt 0 (1)	=> "I can hardly believe the Cult was so careless as to leave these behind."
+# NOT TBC
 # == mal[32268]	   "I can hardly believe the Cult was so careless as to leave these behind."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46092,6 +46498,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14038]
 # ## txt 0 (1)	=> "Arthas's weakness is his pride. That weakness only grows as his power does. The Ebon Blade will have its chance to strike at the once-prince - of that I have no doubt."
+# NOT TBC
 # == mal[32285]	   "Arthas's weakness is his pride. That weakness only grows as his power does. The Ebon Blade will have its chance to strike at the once-prince - of that I have no doubt."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46100,14 +46507,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14040]
 # ## txt 0 (1)	=> "How can I help?"
-# == mal[62066]	   "How can I help?"
+# == mal[2466]	   "How can I help?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14040, 1, 62066);
+ VALUES (14040, 1, 2466);
 
 # -------------------------------------------------------------------------------- [14041]
 # ## txt 0 (1)	=> "What can I be helping you with?"
+# NOT TBC
 # == fem[32322]	   "What can I be helping you with?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46116,6 +46524,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14042]
 # ## txt 0 (1)	=> "Good Morning!"
+# NOT TBC
 # == mal[32323]	   "Good Morning!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46124,6 +46533,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14043]
 # ## txt 0 (1)	=> "Is there anything you can pay me to do?"
+# NOT TBC
 # == fem[32325]	   "Is there anything you can pay me to do?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46132,6 +46542,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14045]
 # ## txt 0 (1)	=> "Good day to you!"
+# NOT TBC
 # == mal[32336]	   "Good day to you!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46140,6 +46551,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14046]
 # ## txt 0 (1)	=> "The air battle rages close, $n. Both we and the Horde send bombers into the Bombardment and the Valley of Lost Hope. Will you enter the fray?"
+# NOT TBC
 # == fem[32343]	   "The air battle rages close, $n. Both we and the Horde send bombers into the Bombardment and the Valley of Lost Hope. Will you enter the fray?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46148,20 +46560,21 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14047]
 # ## txt 0 (1)	=> "Sorta busy."
-# == mal[32346]	   "Sorta busy."
+# == mal[24256]	   "Sorta busy."
 
 # ## txt 1 (1)	=> "What? I'm busy here."
-# == mal[32347]	   "What? I'm busy here."
+# == mal[24257]	   "What? I'm busy here."
 
 # ## txt 2 (1)	=> "On duty. GO. AWAY."
-# == mal[32348]	   "On duty. GO. AWAY."
+# == mal[24258]	   "On duty. GO. AWAY."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (14047, 1, 32346, 1, 32347, 1, 32348);
+ VALUES (14047, 1, 24256, 1, 24257, 1, 24258);
 
 # -------------------------------------------------------------------------------- [14050]
 # ## txt 0 (1)	=> "Are you ready to begin the assault and win back the Undercity for the Horde, $N?"
+# NOT TBC
 # == mal[32358]	   "Are you ready to begin the assault and win back the Undercity for the Horde, $n?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46170,6 +46583,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14051]
 # ## txt 0 (1)	=> "The elements are with us in force, $N. With their help, we will do all that is in our power to stop Varimathras and Putress! LOK'TAR OGAR!"
+# NOT TBC
 # == mal[32360]	   "The elements are with us in force, $n. With their help, we will do all that is in our power to stop Varimathras and Putress! LOK'TAR OGAR!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46178,6 +46592,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14052]
 # ## txt 0 (1)	=> "Oh my gosh! Keep your voice down, $N! What? Are you trying to get us killed?!$B$BOf course I know who you are! Who in the Alliance doesn't know the name, $N?!$B$BSay, what do you think of my jumpbot? She's based off of the mechagnome design. Sleek and aerodynamic!"
+# NOT TBC
 # == fem[32364]	   "Oh my gosh! Keep your voice down, $n! What? Are you trying to get us killed?!$B$BOf course I know who you are! Who in the Alliance doesn't know the name, $n?!$B$BSay, what do you think of my jumpbot? She's based off of the mechagnome design. Sleek and aerodynamic!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46194,6 +46609,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14055]
 # ## txt 0 (1)	=> "We don't have any easy path before us. If you've got a strong arm on you, stick around until one of my squads is ready to ascend to Ymirheim. They could use all the help they can get."
+# NOT TBC
 # == mal[32384]	   "We don't have any easy path before us. If you've got a strong arm on you, stick around until one of my squads is ready to ascend to Ymirheim. They could use all the help they can get."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46202,12 +46618,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14056]
 # ## txt 0 (1)	=> "The Assurance has somehow become inundated with bugs and we are unable to set sail to Northrend."
+# NOT TBC
 # == mal[32392]	   "The Assurance has somehow become inundated with bugs and we are unable to set sail to Northrend."
 
 # ## txt 1 (1)	=> "We were all set to sail into Northrend, but we've noticed a severe number of pests aboard our ship."
+# NOT TBC
 # == mal[32394]	   "We were all set to sail into Northrend, but we've noticed a severe number of pests aboard our ship."
 
 # ## txt 2 (1)	=> "Before we can set sail to Northrend, we've got to eliminate our pest problem aboard the Assurance."
+# NOT TBC
 # == mal[32395]	   "Before we can set sail to Northrend, we've got to eliminate our pest problem aboard the Assurance."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46216,6 +46635,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14061]
 # ## txt 0 (1)	=> "Well you're an ugly one! Don't mean you don't know how to fight though.$B$BOne of my squads should be geared and ready to march soon - get your sorry butt in line and make the climb with them!"
+# NOT TBC
 # == mal[32406]	   "Well you're an ugly one! Don't mean you don't know how to fight though.$B$BOne of my squads should be geared and ready to march soon - get your sorry butt in line and make the climb with them!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46224,6 +46644,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14062]
 # ## txt 0 (1)	=> "Ranked arena matches start again in $6318d.$B$BWould-be champions are already busy honing their skills and acquiring the best gear they can. Are you going to be ready?"
+# NOT TBC
 # == mal[32428]	   "Ranked arena matches start again in $6318d.$B$BWould-be champions are already busy honing their skills and acquiring the best gear they can. Are you going to be ready?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46232,6 +46653,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14063]
 # ## txt 0 (1)	=> "How I can guide your path, young one?"
+# NOT TBC
 # == mal[32429]	   "How I can guide your path, young one?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46240,12 +46662,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14064]
 # ## txt 0 (1)	=> "Lives depend on the actions we take here. Be quick with what you have to say, $c."
+# NOT TBC
 # == mal[32438]	   "Lives depend on the actions we take here. Be quick with what you have to say, $c."
 
 # ## txt 1 (1)	=> "Do you bring news of battle, $r?"
+# NOT TBC
 # == mal[32439]	   "Do you bring news of battle, $r?"
 
 # ## txt 2 (1)	=> "The best war is a swift war. The same can be said of conversation. What say you $r?"
+# NOT TBC
 # == mal[32440]	   "The best war is a swift war. The same can be said of conversation. What say you $r?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46254,6 +46679,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14065]
 # ## txt 0 (1)	=> "This portal leads to the Caverns of Time, deep beneath the earth in far-off Tanaris.$B$BI possess the power to send you there, should you so desire."
+# NOT TBC
 # == fem[32441]	   "This portal leads to the Caverns of Time, deep beneath the earth in far-off Tanaris.$B$BI possess the power to send you there, should you so desire."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46262,6 +46688,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14066]
 # ## txt 0 (1)	=> "This portal leads to the Caverns of Time, deep beneath the earth in far-off Tanaris.$B$BUntil you have grown stronger, though, I must ask you not to travel there."
+# NOT TBC
 # == fem[32442]	   "This portal leads to the Caverns of Time, deep beneath the earth in far-off Tanaris.$B$BUntil you have grown stronger, though, I must ask you not to travel there."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46270,6 +46697,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14067]
 # ## txt 0 (1)	=> "I can smell the gunpowder from all the bombs and rockets! You want to get out there and join the fun?"
+# NOT TBC
 # == fem[32443]	   "I can smell the gunpowder from all the bombs and rockets! You want to get out there and join the fun?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46278,27 +46706,35 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14068]
 # ## txt 0 (1)	=> "The voices are talking to me."
+# NOT TBC
 # == mal[32444]	   "The voices are talking to me."
 
 # ## txt 1 (1)	=> "I must obey."
+# NOT TBC
 # == mal[32445]	   "I must obey."
 
 # ## txt 2 (1)	=> "You have to get out of here before it gets to you, too!"
+# NOT TBC
 # == mal[32446]	   "You have to get out of here before it gets to you, too!"
 
 # ## txt 3 (1)	=> "It's all around us. It's in my head!"
+# NOT TBC
 # == mal[32450]	   "It's all around us. It's in my head!"
 
 # ## txt 4 (1)	=> "The saronite... there's something in it!"
+# NOT TBC
 # == mal[32452]	   "The saronite... there's something in it!"
 
 # ## txt 5 (1)	=> "There's something here. It's in the rocks and the earth!"
+# NOT TBC
 # == mal[32453]	   "There's something here. It's in the rocks and the earth!"
 
 # ## txt 6 (1)	=> "I have to get out of here! Can you get me free?"
+# NOT TBC
 # == mal[32456]	   "I have to get out of here! Can you get me free?"
 
 # ## txt 7 (1)	=> "Can you hear it speaking in your mind?"
+# NOT TBC
 # == mal[32457]	   "Can you hear it speaking in your mind?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46307,6 +46743,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14069]
 # ## txt 0 (1)	=> "We're still making preparations. We won't be ready to go for a while."
+# NOT TBC
 # == mal[32449]	   "We're still making preparations. We won't be ready to go for a while."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46315,6 +46752,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14070]
 # ## txt 0 (1)	=> "We're almost ready to depart. Just give us a little bit longer to finish our preparations."
+# NOT TBC
 # == mal[32448]	   "We're almost ready to depart. Just give us a little bit longer to finish our preparations."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46323,6 +46761,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14071]
 # ## txt 0 (1)	=> "My men are ready. Let's draw some Vrykul blood!"
+# NOT TBC
 # == mal[32451]	   "My men are ready. Let's draw some Vrykul blood!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46331,6 +46770,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14072]
 # ## txt 0 (1)	=> "In my travels I have learned the recipe for the Wispcloak.$B$BThis cloak is a tradeable Epic spellcasting cloak that grants Stamina, Spellpower, Intellect and Mana Recovery. I am looking for someone worthy to teach this recipe to.$B$BSomeone who had completed all the normal dungeons of Northrend and had the "Northrend Dungeonmaster" achievement would be worthy of learning the recipe for the Wispcloak."
+# NOT TBC
 # == mal[32454]	   "In my travels I have learned the recipe for the Wispcloak.$B$BThis cloak is a tradeable Epic spellcasting cloak that grants Stamina, Spellpower, Intellect and Mana Recovery. I am looking for someone worthy to teach this recipe to.$B$BSomeone who had completed all the normal dungeons of Northrend and had the "Northrend Dungeonmaster" achievement would be worthy of learning the recipe for the Wispcloak."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46339,6 +46779,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14074]
 # ## txt 0 (1)	=> "I have ventured to dark places and learned the tailoring recipe for the Deathchill Cloak.$B$BThis cloak is a tradeable Epic cloak for spellcasters that grants Spellpower, Haste and Critical Strike. I am looking for someone worthy to teach this recipe to.$B$BSomeone who had completed most of the quests across Northrend and had the "Loremaster of Northrend" achievement would be worthy of learning the recipe for the Deathchill Cloak."
+# NOT TBC
 # == mal[32463]	   "I have ventured to dark places and learned the tailoring recipe for the Deathchill Cloak.$B$BThis cloak is a tradeable Epic cloak for spellcasters that grants Spellpower, Haste and Critical Strike. I am looking for someone worthy to teach this recipe to.$B$BSomeone who had completed most of the quests across Northrend and had the "Loremaster of Northrend" achievement would be worthy of learning the recipe for the Deathchill Cloak."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46347,6 +46788,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14076]
 # ## txt 0 (1)	=> "Since you are a tailor of some skill, I can tell you that I know some special recipes. I know recipes for both the Wispcloak and the Deathchill Cloak."
+# NOT TBC
 # == mal[32475]	   "Since you are a tailor of some skill, I can tell you that I know some special recipes. I know recipes for both the Wispcloak and the Deathchill Cloak."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46355,6 +46797,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14077]
 # ## txt 0 (1)	=> "You! COME! Drink, feast, rest for the next battle.$B$BBut do not fight! Or I will feed you to my wolves."
+# NOT TBC
 # == mal[32493]	   "You! COME! Drink, feast, rest for the next battle.$B$BBut do not fight! Or I will feed you to my wolves."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46363,6 +46806,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14082]
 # ## txt 0 (1)	=> "Welcome to the Wonderworks!$B$BPlease take your time and browse the shop. We have wonderful toys for people young and old!"
+# NOT TBC
 # == mal[32767]	   "Welcome to the Wonderworks!$B$BPlease take your time and browse the shop. We have wonderful toys for people young and old!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46403,6 +46847,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14087]
 # ## txt 0 (1)	=> "Greetings, friend. Something I can do for ya?"
+# NOT TBC
 # == mal[32562]	   "Greetings, friend. Something I can do for ya?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46411,6 +46856,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14088]
 # ## txt 0 (1)	=> "Hey there, hold on just one second. I see you're not riding a flying mount of your own.$B$BYou probably won't be of much use to the other goblins here if you can't get around. They've paid me to loan my used mounts to people such as yourself -- at no cost to you.$B$BInterested?"
+# NOT TBC
 # == mal[32563]	   "Hey there, hold on just one second. I see you're not riding a flying mount of your own.$B$BYou probably won't be of much use to the other goblins here if you can't get around. They've paid me to loan my used mounts to people such as yourself -- at no cost to you.$B$BInterested?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46419,6 +46865,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14089]
 # ## txt 0 (1)	=> "I've got a lead on Norgannon's keystone, which guards access to Ulduar's archives, but the Titans divided it into two pieces and secreted them away.$B$BOne of the pieces, the keystone's shell, is held within the Inventor's Library on the northern coast, south of Ulduar itself. The first thing you'll need to do is retrieve the fragments of an access disk from the library's guardians."
+# NOT TBC
 # == mal[32577]	   "I've got a lead on Norgannon's keystone, which guards access to Ulduar's archives, but the Titans divided it into two pieces and secreted them away.$B$BOne of the pieces, the keystone's shell, is held within the Inventor's Library on the northern coast, south of Ulduar itself. The first thing you'll need to do is retrieve the fragments of an access disk from the library's guardians."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46427,12 +46874,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14090]
 # ## txt 0 (1)	=> "When it comes to treasure, never be lookin' sideways at lootin' someone else's junk. Stolen goods be much sweeter, ya? But free is free, no matta how it got that way!"
+# NOT TBC
 # == fem[32581]	   "When it comes to treasure, never be lookin' sideways at lootin' someone else's junk. Stolen goods be much sweeter, ya? But free is free, no matta how it got that way!"
 
 # ## txt 1 (1)	=> "I always be up for a nice three-finger discount. Stealin' be all in the wrist... and when that fails ya, then ya stick somethin' sharp in between the ribs, and that's all in the wrist too.$B$BSkilled hands be worth more than a steady paycheck, ya heard?"
+# NOT TBC
 # == fem[32586]	   "I always be up for a nice three-finger discount. Stealin' be all in the wrist... and when that fails ya, then ya stick somethin' sharp in between the ribs, and that's all in the wrist too.$B$BSkilled hands be worth more than a steady paycheck, ya heard?"
 
 # ## txt 2 (1)	=> "I don't be worryin' 'bout no Lich Kings. Seen a lotta big-shots come and go, dey always messin' somethin' up. It ain't long aftah that when a posse rolls on through and sends dem quick on dey way to da history books. Dis one ain't no different."
+# NOT TBC
 # == fem[32587]	   "I don't be worryin' 'bout no Lich Kings. Seen a lotta big-shots come and go, dey always messin' somethin' up. It ain't long aftah that when a posse rolls on through and sends dem quick on dey way to da history books. Dis one ain't no different."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46441,6 +46891,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14091]
 # ## txt 0 (1)	=> "Only a fool would mock the appearance of my battle-garb.$B$BThis raiment of well-worn steel is from an ancient place of learning!"
+# NOT TBC
 # == mal[32623]	   "Only a fool would mock the appearance of my battle-garb.$B$BThis raiment of well-worn steel is from an ancient place of learning!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46449,6 +46900,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14095]
 # ## txt 0 (1)	=> "You'll find what you are looking for at One More Glass in northern Dalaran."
+# NOT TBC
 # == mal[32650]	   "You'll find what you are looking for at One More Glass in northern Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46457,6 +46909,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14096]
 # ## txt 0 (1)	=> "The Militant Mystic in southern Dalaran should have what you desire."
+# NOT TBC
 # == mal[32651]	   "The Militant Mystic in southern Dalaran should have what you desire."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46465,6 +46918,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14097]
 # ## txt 0 (1)	=> "The Hunter's Reach in eastern Dalaran sells guns, bows, ammunition and the like."
+# NOT TBC
 # == mal[32652]	   "The Hunter's Reach in eastern Dalaran sells guns, bows, ammunition and the like."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46473,6 +46927,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14098]
 # ## txt 0 (1)	=> "The Arsenal Absolute in southeast Dalaran carries all manner of melee weapons."
+# NOT TBC
 # == mal[32653]	   "The Arsenal Absolute in southeast Dalaran carries all manner of melee weapons."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46481,6 +46936,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14100]
 # ## txt 0 (1)	=> "Jepetto Joybuzz's Wonderworks in western Dalaran carries such items."
+# NOT TBC
 # == mal[32656]	   "Jepetto Joybuzz's Wonderworks in western Dalaran carries such items."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46489,6 +46945,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14101]
 # ## txt 0 (1)	=> "Red at Glorious Goods in southeast Dalaran can provide most general trade supplies.$B$BIf you need something more specialized, try the Magus Commerce Exchange. Each trade shop there has its own supply vendor."
+# NOT TBC
 # == mal[32665]	   "Red at Glorious Goods in southeast Dalaran can provide most general trade supplies.$B$BIf you need something more specialized, try the Magus Commerce Exchange. Each trade shop there has its own supply vendor."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46497,6 +46954,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14102]
 # ## txt 0 (1)	=> "Aimee's cart can usually be found in northern Dalaran, near the Bank of Dalaran."
+# NOT TBC
 # == mal[32667]	   "Aimee's cart can usually be found in northern Dalaran, near the Bank of Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46505,6 +46963,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14103]
 # ## txt 0 (1)	=> "The Magical Menagerie is located in northeast Dalaran. Pet supplies, exotic mounts, and stables are all available there."
+# NOT TBC
 # == mal[32668]	   "The Magical Menagerie is located in northeast Dalaran. Pet supplies, exotic mounts, and stables are all available there."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46513,6 +46972,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14104]
 # ## txt 0 (1)	=> "You'll find reagants and more at the Sisters Sorcerous in western Dalaran.$B$BJust mind the Mooreheads' black cat..."
+# NOT TBC
 # == mal[32669]	   "You'll find reagants and more at the Sisters Sorcerous in western Dalaran.$B$BJust mind the Mooreheads' black cat..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46521,6 +46981,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14105]
 # ## txt 0 (1)	=> "Glorious Goods in southern Dalaran should have all the general goods you need."
+# NOT TBC
 # == mal[32671]	   "Glorious Goods in southern Dalaran should have all the general goods you need."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46529,6 +46990,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14106]
 # ## txt 0 (1)	=> "Applebough's fruit cart is usually in southwest Dalaran, near the Silver Enclave."
+# NOT TBC
 # == mal[32672]	   "Applebough's fruit cart is usually in southwest Dalaran, near the Silver Enclave."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46537,6 +46999,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14107]
 # ## txt 0 (1)	=> "You can normally find Miss Primrose's flower stand in southeast Dalaran."
+# NOT TBC
 # == mal[32673]	   "You can normally find Miss Primrose's flower stand in southeast Dalaran."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46549,6 +47012,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14109]
 # ## txt 0 (1)	=> "Tanks for Everything in northern Dalaran is the city's most popular plate armor and shield merchant."
+# NOT TBC
 # == mal[32675]	   "Tanks for Everything in northern Dalaran is the city's most popular plate armor and shield merchant."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46557,6 +47021,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14110]
 # ## txt 0 (1)	=> "The various merchants of Curiosities & Moore in southern Dalaran sell trinkets, relics, heirlooms, and off-hand items of all sorts."
+# NOT TBC
 # == mal[32676]	   "The various merchants of Curiosities & Moore in southern Dalaran sell trinkets, relics, heirlooms, and off-hand items of all sorts."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46565,6 +47030,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14111]
 # ## txt 0 (1)	=> "Langrom's Leather & Links in southern Dalaran should have what you seek."
+# NOT TBC
 # == mal[32677]	   "Langrom's Leather & Links in southern Dalaran should have what you seek."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46573,6 +47039,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14112]
 # ## txt 0 (1)	=> "The Threads of Fate in western Dalaran is the city's most popular supplier of clothing and cloth armor."
+# NOT TBC
 # == mal[32680]	   "The Threads of Fate in western Dalaran is the city's most popular supplier of clothing and cloth armor."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46581,6 +47048,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14113]
 # ## txt 0 (1)	=> "What sort of weapons?"
+# NOT TBC
 # == mal[32681]	   "What sort of weapons?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46589,6 +47057,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14114]
 # ## txt 0 (1)	=> "What sort of armor?"
+# NOT TBC
 # == mal[32685]	   "What sort of armor?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46597,22 +47066,25 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14115]
 # ## txt 0 (1)	=> "Come to make yourself useful?"
-# == mal[32696]	   "Come to make yourself useful?"
+# NOT TBC
+# == mal[32695]	   "Come to make yourself useful?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14115, 1, 32696);
+ VALUES (14115, 1, 32695);
 
 # -------------------------------------------------------------------------------- [14116]
 # ## txt 0 (1)	=> "Come to make yourself useful?"
-# == mal[32696]	   "Come to make yourself useful?"
+# NOT TBC
+# == mal[32695]	   "Come to make yourself useful?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14116, 1, 32696);
+ VALUES (14116, 1, 32695);
 
 # -------------------------------------------------------------------------------- [14117]
 # ## txt 0 (1)	=> "Which vendor where you seeking?"
+# NOT TBC
 # == mal[32701]	   "Which vendor where you seeking?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46621,6 +47093,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14118]
 # ## txt 0 (1)	=> "The secret to goblin engineering has nothing to do with keeping things from exploding. It has everything to do with directing the explosions exactly where you want them."
+# NOT TBC
 # == mal[32727]	   "The secret to goblin engineering has nothing to do with keeping things from exploding. It has everything to do with directing the explosions exactly where you want them."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46629,15 +47102,19 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14119]
 # ## txt 0 (1)	=> "I am Xarantaur, the Witness."
+# NOT TBC
 # == mal[32737]	   "I am Xarantaur, the Witness."
 
 # ## txt 1 (1)	=> "Would you like to hear a story?"
+# NOT TBC
 # == mal[32738]	   "Would you like to hear a story?"
 
 # ## txt 2 (1)	=> "Do you have a story for me?"
+# NOT TBC
 # == mal[32739]	   "Do you have a story for me?"
 
 # ## txt 3 (1)	=> "Ah yes, I have read of you, $N."
+# NOT TBC
 # == mal[32740]	   "Ah yes, I have read of you, $n."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46646,6 +47123,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14120]
 # ## txt 0 (1)	=> "I was one of the first tauren druids, of the last generation taught by Shan'do Cenarius, before the Legion, before the Sundering, when the world was still young. Before everything changed.$B$BWhile my brethren hunted great beasts, I hunted stories. I had been drawn to the druidic arts by this hunger, this lust for knowledge. For a time, that hunger was sated as I learned to talk to the trees, rocks, and beasts, and heard their stories.$B$BBut then, the time came when Cenarius walked among us no more and my brethren began to forget what he had taught us. I could not forget, though, and I still needed to learn more about our world.$B$BSo I said my farewells and travelled beyond the lands of my people."
+# NOT TBC
 # == mal[32742]	   "I was one of the first tauren druids, of the last generation taught by Shan'do Cenarius, before the Legion, before the Sundering, when the world was still young. Before everything changed.$B$BWhile my brethren hunted great beasts, I hunted stories. I had been drawn to the druidic arts by this hunger, this lust for knowledge. For a time, that hunger was sated as I learned to talk to the trees, rocks, and beasts, and heard their stories.$B$BBut then, the time came when Cenarius walked among us no more and my brethren began to forget what he had taught us. I could not forget, though, and I still needed to learn more about our world.$B$BSo I said my farewells and travelled beyond the lands of my people."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46654,6 +47132,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14123]
 # ## txt 0 (1)	=> "Only time will tell..."
+# NOT TBC
 # == fem[32765]	   "Only time will tell..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46662,20 +47141,24 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14128]
 # ## txt 0 (1)	=> "How may I help you?"
-# == mal[62303]	   "How may I help you?"
+# NOT TBC
+# == mal[30864]	   "How may I help you?"
 
 # ## txt 1 (1)	=> "How may I help you?"
-# == mal[62303]	   "How may I help you?"
+# NOT TBC
+# == mal[30864]	   "How may I help you?"
 
 # ## txt 2 (1)	=> "How may I help you?"
-# == mal[62303]	   "How may I help you?"
+# NOT TBC
+# == mal[30864]	   "How may I help you?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (14128, 1, 62303, 1, 62303, 1, 62303);
+ VALUES (14128, 1, 30864, 1, 30864, 1, 30864);
 
 # -------------------------------------------------------------------------------- [14131]
 # ## txt 0 (1)	=> "We must avoid another war with the Horde at all costs!"
+# NOT TBC
 # == fem[32797]	   "We must avoid another war with the Horde at all costs!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46684,6 +47167,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14134]
 # ## txt 0 (1)	=> "Got somethin' that needs tightening, $r?"
+# NOT TBC
 # == mal[32812]	   "Got somethin' that needs tightening, $r?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46692,6 +47176,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14137]
 # ## txt 0 (1)	=> "We've lost a few good people up here already. I'm beginning to doubt that this place is worth our attention."
+# NOT TBC
 # == fem[32819]	   "We've lost a few good people up here already. I'm beginning to doubt that this place is worth our attention."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46700,6 +47185,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14138]
 # ## txt 0 (1)	=> "Greetings, my $r friend. You honor me with your presence.$B$BHow may I help you?"
+# NOT TBC
 # == fem[32820]	   "Greetings, my $r friend. You honor me with your presence.$B$BHow may I help you?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46708,6 +47194,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14140]
 # ## txt 0 (1)	=> "Stand ready, $N. We attack when all of our forces have arrived!"
+# NOT TBC
 # == mal[32829]	   "Stand ready, $n. We attack when all of our forces have arrived!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46716,6 +47203,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14142]
 # ## txt 0 (1)	=> "The final battle will begin soon, $N. Stand at attention!"
+# NOT TBC
 # == mal[32837]	   "The final battle will begin soon, $n. Stand at attention!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46724,6 +47212,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14149]
 # ## txt 0 (1)	=> "You are welcome here, friend and ally of the Dragonflights. Take your rest here in our halls."
+# NOT TBC
 # == mal[32872]	   "You are welcome here, friend and ally of the Dragonflights. Take your rest here in our halls."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46732,6 +47221,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14150]
 # ## txt 0 (1)	=> "Ah, it's you, $N! Welcome into our sanctuary. Rest and refresh yourself; you have more than earned it."
+# NOT TBC
 # == mal[32873]	   "Ah, it's you, $n! Welcome into our sanctuary. Rest and refresh yourself; you have more than earned it."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46740,6 +47230,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14151]
 # ## txt 0 (1)	=> "<The queen's consort nods in acknowledgment of your presence.>"
+# NOT TBC
 # == mal[32915]	   "<The queen's consort nods in acknowledgment of your presence.>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46748,6 +47239,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14155]
 # ## txt 0 (1)	=> "It's been a busy day in the air, eh $N? Maybe you should take a moment to catch your breath before going back out."
+# NOT TBC
 # == fem[32919]	   "It's been a busy day in the air, eh $n? Maybe you should take a moment to catch your breath before going back out."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46756,6 +47248,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14159]
 # ## txt 0 (1)	=> "Careful, $N. Where are your cultist robes?"
+# NOT TBC
 # == mal[32931]	   "Careful, $n. Where are your cultist robes?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46764,6 +47257,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14160]
 # ## txt 0 (1)	=> "There you are. Are you ready then? Once we start, there is no turning back."
+# NOT TBC
 # == mal[32932]	   "There you are. Are you ready then? Once we start, there is no turning back."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46772,6 +47266,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14161]
 # ## txt 0 (1)	=> "Welcome to the home of the Kirin Tor."
+# NOT TBC
 # == mal[32523]	   "Welcome to the home of the Kirin Tor."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46780,6 +47275,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14162]
 # ## txt 0 (1)	=> "Welcome to the Legerdemain Lounge, $c. I do hope you'll enjoy your stay."
+# NOT TBC
 # == mal[32954]	   "Welcome to the Legerdemain Lounge, $c. I do hope you'll enjoy your stay."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46788,6 +47284,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14163]
 # ## txt 0 (1)	=> "Welcome to the Cantrips and Crows Tavern, $r.$B$BWatch your back while you're here, hmmm? Narisa doesn't like scrubbing blood off the floor."
+# NOT TBC
 # == mal[32955]	   "Welcome to the Cantrips and Crows Tavern, $r.$B$BWatch your back while you're here, hmmm? Narisa doesn't like scrubbing blood off the floor."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46796,6 +47293,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14165]
 # ## txt 0 (1)	=> "If you're shot down and caught, don't tell them your real name. Use a codename."
+# NOT TBC
 # == mal[32973]	   "If you're shot down and caught, don't tell them your real name. Use a codename."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46804,6 +47302,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14168]
 # ## txt 0 (1)	=> "Most dragons would fear to tread here, $r.$b$bWhat could possibly bring a mortal to such a treacherous place?"
+# NOT TBC
 # == fem[32986]	   "Most dragons would fear to tread here, $r.$b$bWhat could possibly bring a mortal to such a treacherous place?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46812,6 +47311,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14169]
 # ## txt 0 (1)	=> "Do you possess the courage to face Malygos' elite drakes in their own realm, $r?"
+# NOT TBC
 # == fem[32987]	   "Do you possess the courage to face Malygos' elite drakes in their own realm, $r?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46824,6 +47324,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14172]
 # ## txt 0 (1)	=> "Sorry, friend. Only certified officers of the Alliance can authorize the purchase of a vehicle."
+# NOT TBC
 # == mal[32997]	   "Sorry, friend. Only certified officers of the Alliance can authorize the purchase of a vehicle."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46832,6 +47333,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14174]
 # ## txt 0 (1)	=> "The ancient tomes are always found near inscription trainers."
+# NOT TBC
 # == mal[32999]	   "The ancient tomes are always found near inscription trainers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46840,6 +47342,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14176]
 # ## txt 0 (1)	=> "We did it! Can you believe what we're hearing? This is incredible!"
+# NOT TBC
 # == mal[33001]	   "We did it! Can you believe what we're hearing? This is incredible!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46848,9 +47351,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14177]
 # ## txt 0 (1)	=> "Isn't it just beautiful? Can you see the potential profit?"
+# NOT TBC
 # == mal[33005]	   "Isn't it just beautiful? Can you see the potential profit?"
 
 # ## txt 1 (0)	=> "Khit'rix the Dark Master skitters into Valhalas from the southeast!"
+# NOT TBC
 # == mal[32753]	   "Khit'rix the Dark Master skitters into Valhalas from the southeast!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46859,6 +47364,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14178]
 # ## txt 0 (1)	=> "It's a mighty good day, is it not? I do hope we see a few fireworks before this day is through."
+# NOT TBC
 # == mal[33006]	   "It's a mighty good day, is it not? I do hope we see a few fireworks before this day is through."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46867,6 +47373,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14179]
 # ## txt 0 (1)	=> "Hello, little $r."
+# NOT TBC
 # == mal[33007]	   "Hello, little $r."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46875,6 +47382,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14180]
 # ## txt 0 (1)	=> "Just because something isn't broke doesn't mean you can't fix it. You lookin' for something, sweety?"
+# NOT TBC
 # == fem[33008]	   "Just because something isn't broke doesn't mean you can't fix it. You lookin' for something, sweety?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46883,6 +47391,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14182]
 # ## txt 0 (1)	=> "The U.D.E.D. dispenser rumbles at you expectantly."
+# NOT TBC
 # == mal[33012]	   "The U.D.E.D. dispenser rumbles at you expectantly."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46891,6 +47400,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14197]
 # ## txt 0 (1)	=> "Treasure huntin' and some hearty ale - doesn't get no better than this, $G lad:lass;."
+# NOT TBC
 # == mal[33042]	   "Treasure huntin' and some hearty ale - doesn't get no better than this, $G lad:lass;."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46899,6 +47409,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14198]
 # ## txt 0 (1)	=> "The Emerald Dream has become a dangerous place. I grow increasingly concerned for those who have sacrificed their waking life in Azeroth in hopes of saving it."
+# NOT TBC
 # == mal[33044]	   "The Emerald Dream has become a dangerous place. I grow increasingly concerned for those who have sacrificed their waking life in Azeroth in hopes of saving it."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46907,6 +47418,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14203]
 # ## txt 0 (1)	=> "The hammers of the earthen stand united behind Bouldercrag. We will oppose Loken's minions to the end."
+# NOT TBC
 # == mal[33051]	   "The hammers of the earthen stand united behind Bouldercrag. We will oppose Loken's minions to the end."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46915,6 +47427,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14204]
 # ## txt 0 (1)	=> "Make it quick, $c."
+# NOT TBC
 # == mal[33054]	   "Make it quick, $c."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46923,6 +47436,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14205]
 # ## txt 0 (1)	=> "<The engine rumbles loudly.>"
+# NOT TBC
 # == mal[33057]	   "<The engine rumbles loudly.>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46931,6 +47445,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14206]
 # ## txt 0 (1)	=> "Gusty winds surround the altar. There is an open spot where a small orb may have once rested."
+# NOT TBC
 # == mal[33066]	   "Gusty winds surround the altar. There is an open spot where a small orb may have once rested."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46939,6 +47454,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14208]
 # ## txt 0 (1)	=> "Finally!$b$bDa $r $c foretold in da prophecies has arrived!"
+# NOT TBC
 # == mal[33070]	   "Finally!$b$bDa $r $c foretold in da prophecies has arrived!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46947,6 +47463,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14209]
 # ## txt 0 (1)	=> "Yes, little one?"
+# NOT TBC
 # == mal[33076]	   "Yes, little one?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46955,14 +47472,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14213]
 # ## txt 0 (1)	=> "Big, sparkly, magic book help make Glyphs for spells and abilities. Always find near inscription trainer, in The Apothecarium."
-# == mal[33081]	   "Big, sparkly, magic book help make Glyphs for spells and abilities. Always find near inscription trainer, in The Apothecarium."
+# NOT TBC
+# == mal[33078]	   "Big, sparkly, magic book help make Glyphs for spells and abilities. Always find near inscription trainer, in The Apothecarium."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14213, 1, 33081);
+ VALUES (14213, 1, 33078);
 
 # -------------------------------------------------------------------------------- [14215]
 # ## txt 0 (1)	=> "Make it quick, $r. I am weary and have no time for pleasantries.."
+# NOT TBC
 # == fem[33082]	   "Make it quick, $r. I am weary and have no time for pleasantries.."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46971,6 +47490,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14216]
 # ## txt 0 (1)	=> "Be wary, $r.$b$bThis is no place for the meek."
+# NOT TBC
 # == mal[33083]	   "Be wary, $r.$b$bThis is no place for the meek."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46979,6 +47499,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14218]
 # ## txt 0 (1)	=> "There you are!"
+# NOT TBC
 # == mal[33089]	   "There you are!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46987,6 +47508,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14221]
 # ## txt 0 (1)	=> "Lok'tar! Have you come to serve the Horde in battle?"
+# NOT TBC
 # == mal[33098]	   "Lok'tar! Have you come to serve the Horde in battle?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -46995,6 +47517,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14227]
 # ## txt 0 (1)	=> "Ah, Noblegarden. So amusing to watch others throw away their dignity in favor of hunting colored eggs. Still, they do have a curious magical aura to them..."
+# NOT TBC
 # == mal[33118]	   "Ah, Noblegarden. So amusing to watch others throw away their dignity in favor of hunting colored eggs. Still, they do have a curious magical aura to them..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47003,6 +47526,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14228]
 # ## txt 0 (1)	=> "The time has come for Noblegarden once again! Time to thank the Light for the rebirth of the world."
+# NOT TBC
 # == mal[33119]	   "The time has come for Noblegarden once again! Time to thank the Light for the rebirth of the world."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47011,6 +47535,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14229]
 # ## txt 0 (1)	=> "Candy! That's what I'm talking about; I just wish I didn't have to run around finding it!"
+# NOT TBC
 # == mal[33120]	   "Candy! That's what I'm talking about; I just wish I didn't have to run around finding it!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47019,6 +47544,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14231]
 # ## txt 0 (1)	=> "Hey, if people want to run around rooting in the dirt for colored eggs, who am I to judge? I still get a cut of the profits on paint, and I invested in chickens this year."
+# NOT TBC
 # == mal[33122]	   "Hey, if people want to run around rooting in the dirt for colored eggs, who am I to judge? I still get a cut of the profits on paint, and I invested in chickens this year."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47027,6 +47553,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14232]
 # ## txt 0 (1)	=> "Noblegarden time! I've already found a lot of eggs. Great weather for the hunt, eh?"
+# NOT TBC
 # == mal[33123]	   "Noblegarden time! I've already found a lot of eggs. Great weather for the hunt, eh?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47035,6 +47562,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14234]
 # ## txt 0 (1)	=> "We're celebrating spring during Noblegarden. Affirmation of life and all that."
+# NOT TBC
 # == mal[33125]	   "We're celebrating spring during Noblegarden. Affirmation of life and all that."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47043,6 +47571,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14235]
 # ## txt 0 (1)	=> "Now is the time in which we pay homage to the birth of life, and the eggs are symbols representing the spring and rebirth. May you enjoy the spring."
+# NOT TBC
 # == mal[33126]	   "Now is the time in which we pay homage to the birth of life, and the eggs are symbols representing the spring and rebirth. May you enjoy the spring."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47051,6 +47580,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14236]
 # ## txt 0 (1)	=> "Yah, mon, this be the time to be glad of life and spring. Ya collect lots of eggs yet?"
+# NOT TBC
 # == mal[33127]	   "Yah, mon, this be the time to be glad of life and spring. Ya collect lots of eggs yet?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47059,6 +47589,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14237]
 # ## txt 0 (1)	=> "This entire holiday is nonsensical. Colored eggs and "life affirmation," bah."
+# NOT TBC
 # == mal[33128]	   "This entire holiday is nonsensical. Colored eggs and "life affirmation," bah."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47067,6 +47598,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14238]
 # ## txt 0 (1)	=> "Hail, friend! Have you come to serve the sons of Azeroth in battle?"
+# NOT TBC
 # == mal[33132]	   "Hail, friend! Have you come to serve the sons of Azeroth in battle?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47075,6 +47607,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14239]
 # ## txt 0 (1)	=> "Well met, friend. Enjoying Noblegarden, I hope? Why not join in the fun?"
+# NOT TBC
 # == mal[33135]	   "Well met, friend. Enjoying Noblegarden, I hope? Why not join in the fun?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47083,6 +47616,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14240]
 # ## txt 0 (1)	=> "Greetings, $c.$B$BWhen the Alliance controls Wintergrasp Fortress, I will open a portal for those who wish to travel there.$B$BThe battle currently enues. Hurry to Wintergrasp and support our forces!"
+# NOT TBC
 # == mal[33136]	   "Greetings, $c.$B$BWhen the Alliance controls Wintergrasp Fortress, I will open a portal for those who wish to travel there.$B$BThe battle currently enues. Hurry to Wintergrasp and support our forces!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47091,6 +47625,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14241]
 # ## txt 0 (1)	=> "Greetings, $c.$B$BWhen the Horde controls Wintergrasp Fortress, I will open a portal for those who wish to travel there.$B$BThe battle currently ensues. Hurry to Wintergrasp to support our forces."
+# NOT TBC
 # == mal[33137]	   "Greetings, $c.$B$BWhen the Horde controls Wintergrasp Fortress, I will open a portal for those who wish to travel there.$B$BThe battle currently ensues. Hurry to Wintergrasp to support our forces."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47099,6 +47634,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14245]
 # ## txt 0 (1)	=> "With the help of our new taunka allies, the Northrend will belong to the Horde."
+# NOT TBC
 # == mal[33138]	   "With the help of our new taunka allies, the Northrend will belong to the Horde."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47107,6 +47643,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14248]
 # ## txt 0 (1)	=> "Greetings $c! Welcome aboard the Cloudkisser. Northrend can be a very harsh place. I hope you have prepared yourself."
+# NOT TBC
 # == fem[33140]	   "Greetings $c! Welcome aboard the Cloudkisser. Northrend can be a very harsh place. I hope you have prepared yourself."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47115,6 +47652,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14249]
 # ## txt 0 (1)	=> "You'll be after Benik Boltshear, then. He's located in the heart of the Dwarven District by the blacksmiths."
+# NOT TBC
 # == mal[33142]	   "You'll be after Benik Boltshear, then. He's located in the heart of the Dwarven District by the blacksmiths."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47123,6 +47661,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14250]
 # ## txt 0 (1)	=> "Him Walter Soref. Work in Rogue District. He make keys."
+# NOT TBC
 # == mal[33143]	   "Him Walter Soref. Work in Rogue District. He make keys."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47131,6 +47670,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14251]
 # ## txt 0 (1)	=> "If you are seeking a locksmith, might I suggest the sewers? That's where you'll find more... disreputable types."
+# NOT TBC
 # == mal[33144]	   "If you are seeking a locksmith, might I suggest the sewers? That's where you'll find more... disreputable types."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47139,9 +47679,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14254]
 # ## txt 0 (1)	=> "Vesprystus' hippogryphs will bear you swiftly to your destination."
+# NOT TBC
 # == mal[33166]	   "Vesprystus' hippogryphs will bear you swiftly to your destination."
 
 # ## txt 1 (1)	=> "It is Vesprystus that you seek. He watches over the hippogryphs that come and go from the base of Teldrassil."
+# NOT TBC
 # == mal[33168]	   "It is Vesprystus that you seek. He watches over the hippogryphs that come and go from the base of Teldrassil."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47150,6 +47692,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14266]
 # ## txt 0 (1)	=> "The frost leopard lays here tranquilized."
+# NOT TBC
 # == mal[33189]	   "The frost leopard lays here tranquilized."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47158,6 +47701,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14267]
 # ## txt 0 (1)	=> "The icepaw bear lays here tranquilized."
+# NOT TBC
 # == mal[33193]	   "The icepaw bear lays here tranquilized."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47166,6 +47710,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14271]
 # ## txt 0 (1)	=> "What are you doing out here? You should be inside fighting off the Blue Dragonflight!"
+# NOT TBC
 # == fem[33203]	   "What are you doing out here? You should be inside fighting off the Blue Dragonflight!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47174,6 +47719,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14272]
 # ## txt 0 (1)	=> "I know, I know... "fishing in a sewer?" But you'd be surprised by what you can catch down here. I've even heard stories of sharks, if you can believe it."
+# NOT TBC
 # == mal[33205]	   "I know, I know... "fishing in a sewer?" But you'd be surprised by what you can catch down here. I've even heard stories of sharks, if you can believe it."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47182,6 +47728,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14281]
 # ## txt 0 (1)	=> "I do not judge others by their stature, $r, but by their courage and loyalty."
+# NOT TBC
 # == mal[33230]	   "I do not judge others by their stature, $r, but by their courage and loyalty."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47190,6 +47737,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14284]
 # ## txt 0 (1)	=> "This is a fine mess we've gotten ourselves into. We're overdue to join up with our forces in Icecrown and now we're entangled in this debacle, stuck between the Scourge and the Drakkari.$B$BI told the highlord it was a mistake to come here.$B$BSee what you can do to help out there."
+# NOT TBC
 # == mal[33234]	   "This is a fine mess we've gotten ourselves into. We're overdue to join up with our forces in Icecrown and now we're entangled in this debacle, stuck between the Scourge and the Drakkari.$B$BI told the highlord it was a mistake to come here.$B$BSee what you can do to help out there."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47198,6 +47746,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14285]
 # ## txt 0 (1)	=> "Can you hear it, $c? The elements cry out that this land is almost dead. The Drakkari are stealing the power of their gods by killing them just to defend themselves against the Scourge.$B$BThey are short-sighted and will be their own undoing in the end."
+# NOT TBC
 # == mal[33235]	   "Can you hear it, $c? The elements cry out that this land is almost dead. The Drakkari are stealing the power of their gods by killing them just to defend themselves against the Scourge.$B$BThey are short-sighted and will be their own undoing in the end."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47206,6 +47755,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14286]
 # ## txt 0 (1)	=> "After the Plaguelands and the Battle for Light's Hope Chapel, I didn't think that we would witness anything more horrible.$B$BI was wrong."
+# NOT TBC
 # == fem[33236]	   "After the Plaguelands and the Battle for Light's Hope Chapel, I didn't think that we would witness anything more horrible.$B$BI was wrong."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47214,6 +47764,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14313]
 # ## txt 0 (1)	=> "Dig rats make some surprisingly tasty stew."
+# NOT TBC
 # == mal[33345]	   "Dig rats make some surprisingly tasty stew."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47222,6 +47773,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14317]
 # ## txt 0 (1)	=> "Welcome, champions! All of our attempts at bringing her down have failed. We could use a hand in bringing her down with these harpoon guns."
+# NOT TBC
 # == mal[33351]	   "Welcome, champions! All of our attempts at bringing her down have failed. We could use a hand in bringing her down with these harpoon guns."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47230,6 +47782,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14319]
 # ## txt 0 (1)	=> "I thought I'd never be free from that terrible curse. You have my gratitude, stranger."
+# NOT TBC
 # == fem[33362]	   "I thought I'd never be free from that terrible curse. You have my gratitude, stranger."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47238,6 +47791,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14320]
 # ## txt 0 (1)	=> "Take it with my gratitude, $c."
+# NOT TBC
 # == fem[33364]	   "Take it with my gratitude, $c."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47246,6 +47800,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14324]
 # ## txt 0 (1)	=> "What may I do for you, $GSir:Dame;?"
+# NOT TBC
 # == mal[33400]	   "What may I do for you, $GSir:Dame;?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47254,14 +47809,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14325]
 # ## txt 0 (1)	=> "Are you certain you want my help in the battle against Yogg-Saron?"
-# == fem[33415]	   "Are you certain you want my help in the battle against Yogg-Saron?"
+# NOT TBC
+# == mal[33407]	   "Are you certain you want my help in the battle against Yogg-Saron?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14325, 1, 33415);
+ VALUES (14325, 1, 33407);
 
 # -------------------------------------------------------------------------------- [14326]
 # ## txt 0 (1)	=> "Mortals, I am indebted to you for freeing me from the terrible corruption that besets this place. Though I have not yet recovered fully, I can help you battle Yogg-Saron.$B$BI can grant you and your friends the Fortitude of Frost, increasing your damage and reducing damage taken from enemy attacks. Should one of you be about to fall in battle, I can freeze you in a block of ice, protecting you from all damage for a short time. Know that this ability taxes my power, and I must rest after using it."
+# NOT TBC
 # -- mal[33408]	   "Mortals, I am indebted to you for freeing me from the terrible corruption that besets this place. Though I have not yet recovered fully, I can help you battle Yogg-Saron.$bI can grant you and your friends the Fortitude of Frost, increasing your damage and reducing damage taken from enemy attacks. Should one of you be about to fall in battle, I can freeze you in a block of ice, protecting you from all damage for a short time. Know that this ability taxes my power, and I must rest after using it."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47270,14 +47827,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14330]
 # ## txt 0 (1)	=> "Missing US text"
-# ## NONE FOUND
+# NONE FOUND
 
 # -------------------------------------------------------------------------------- [14332]
 # ## txt 0 (1)	=> "Missing US text"
-# ## NONE FOUND
+# NONE FOUND
 
 # -------------------------------------------------------------------------------- [14334]
 # ## txt 0 (1)	=> "Mortals, I am indebted to you for freeing me from the terrible corruption that besets this place. Though I have not yet recovered fully, I can help you battle Yogg-Saron.$B$BI can grant you and your friends the Speed of Invention, increasing your damage and movement speed. In addition, I can destabilize the matrices of certain Saronite based life-forms, reducing their attack and casting speeds."
+# NOT TBC
 # -- mal[33412]	   "Mortals, I am indebted to you for freeing me from the terrible corruption that besets this place. Though I have not yet recovered fully, I can help you battle Yogg-Saron.$bI can grant you and your friends the Speed of Invention, increasing your damage and movement speed. In addition, I can destabilize the matrices of certain Saronite based life-forms, reducing their attack and casting speeds."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47286,6 +47844,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14335]
 # ## txt 0 (1)	=> "Are you sure you are ready for mounted combat?"
+# NOT TBC
 # == mal[33429]	   "Are you sure you are ready for mounted combat?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47294,6 +47853,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14359]
 # ## txt 0 (1)	=> "Glory to Stormwind and King Wrynn!"
+# NOT TBC
 # == mal[33612]	   "Glory to Stormwind and King Wrynn!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47302,6 +47862,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14362]
 # ## txt 0 (1)	=> "My, my, I never thought I would have the chance to see Ulduar myself. Why, when Brann asked me to help fund this expedition, how could I refuse?!"
+# NOT TBC
 # == mal[33632]	   "My, my, I never thought I would have the chance to see Ulduar myself. Why, when Brann asked me to help fund this expedition, how could I refuse?!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47310,6 +47871,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14363]
 # ## txt 0 (1)	=> "I never thought we'd escape from that steamy jungle! Now I'm the lead engineer of this expedition. "
+# NOT TBC
 # == mal[33633]	   "I never thought we'd escape from that steamy jungle! Now I'm the lead engineer of this expedition. "
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47318,6 +47880,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14364]
 # ## txt 0 (1)	=> "These babies may look like scrap, but they can rush ahead, knocking enemies aside. The front ram has been overloaded with a electroscopic hyper capacitor, letting it discharge electrical blasts. $B$BEven the turret has been upgraded with anti-air rockets, providing it with a definitive edge over those blasted demolishers."
+# NOT TBC
 # == mal[33635]	   "These babies may look like scrap, but they can rush ahead, knocking enemies aside. The front ram has been overloaded with a electroscopic hyper capacitor, letting it discharge electrical blasts. $B$BEven the turret has been upgraded with anti-air rockets, providing it with a definitive edge over those blasted demolishers."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47326,6 +47889,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14365]
 # ## txt 0 (1)	=> "Here I have amassed what may well be the greatest depository of lore in all of Outland. Even the grand libraries of Silvermoon City pale in comparison.$B$BPlease... look, read, browse to your heart's content. You'll find everything organized and clearly labeled."
+# NOT TBC
 # == mal[33637]	   "Here I have amassed what may well be the greatest depository of lore in all of Outland. Even the grand libraries of Silvermoon City pale in comparison.$B$BPlease... look, read, browse to your heart's content. You'll find everything organized and clearly labeled."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47334,6 +47898,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14367]
 # ## txt 0 (1)	=> "We were in luck to find enough parts to get these babies working again!$BHow can I help you?"
+# NOT TBC
 # == mal[33648]	   "We were in luck to find enough parts to get these babies working again!$BHow can I help you?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47342,6 +47907,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14368]
 # ## txt 0 (1)	=> "These babies can hurl fire like none other. We've even attached a secondary cannon, a grappling hook and added a manual fuel injection system. If you can obtain liquid pyrite from the mechanognomes, you can use it to hurl high-density explosives, or turbo-boost your movement speed. $B$BLet's see those Explorer's League twirps beat that!"
+# NOT TBC
 # -- mal[33650]	   "These babies can hurl fire like none other. We've even attached a secondary cannon, a grappling hook and added a manual fuel injection system. If you can obtain liquid pyrite from the mechanognomes, you can use it to hurl high-density explosives, or turbo-boost your movement speed. $bLet's see those Explorers' League twirps beat that!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47350,6 +47916,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14369]
 # ## txt 0 (1)	=> "It's a good thing you guys showed up! The Iron Dwarves have pushed us back to this location, and we're barely managing to hold the line here. $B$BEven worse, they've begun to power up their magical defenses. If we don't attack soon, they'll be able to annihilate us in the blink of an eye!$B$BWe've managed to rebuild several siege machines, demolishers and motorcycles from the Alliance and Horde expeditions that were here before us. However, all of our pilots died in the last assault.$B$BYou must take the vehicles and storm the gates of Ulduar! $B$BPlease, $n! You're our last hope!"
+# NOT TBC
 # -- mal[33651]	   "It's a good thing you guys showed up! The Iron Dwarves have pushed us back to this location, and we're barely managing to hold the line here. $bEven worse, they've begun to power up their magical defenses. If we don't attack soon, they'll be able to annihilate us in the blink of an eye!$bWe've managed to rebuild several siege machines, demolishers and motorcycles from the Alliance and Horde expeditions that were here before us. However, all of our pilots died in the last assault.$bYou must take the vehicles and storm the gates of Ulduar! $bPlease, $n! You're our last hope!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47358,6 +47925,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14372]
 # ## txt 0 (1)	=> "Something I can do for you, Boss?"
+# NOT TBC
 # == mal[33680]	   "Something I can do for you, Boss?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47366,14 +47934,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14375]
 # ## txt 0 (1)	=> "Greetings."
-# == fem[67990]	   "Greetings."
+# NOT TBC
+# == mal[30620]	   "Greetings."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14375, 1, 67990);
+ VALUES (14375, 1, 30620);
 
 # -------------------------------------------------------------------------------- [14379]
 # ## txt 0 (1)	=> "The Silver Covenant welcomes you to the tournament. The Argent Crusade has asked us to register and train those interested in competing."
+# NOT TBC
 # == mal[33717]	   "The Silver Covenant welcomes you to the tournament. The Argent Crusade has asked us to register and train those interested in competing."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47382,6 +47952,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14383]
 # ## txt 0 (1)	=> "The console appears ancient though there is no sign of dilapidation or decay. A single slot appears to fit large circular discs."
+# NOT TBC
 # == mal[33745]	   "The console appears ancient though there is no sign of dilapidation or decay. A single slot appears to fit large circular discs."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47390,20 +47961,24 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14384]
 # ## txt 0 (1)	=> "Are you sure you are ready to fight a valiant?"
+# NOT TBC
 # == mal[33747]	   "Are you sure you are ready to fight a valiant?"
 
 # ## txt 1 (1)	=> "It would be unwise to assume that fighting a valiant would be a simple task. Are you sure you are ready?"
+# NOT TBC
 # == mal[33748]	   "It would be unwise to assume that fighting a valiant would be a simple task. Are you sure you are ready?"
 
 # ## txt 2 (1)	=> "Are you sure you are ready to fight me?"
-# == mal[33867]	   "Are you sure you are ready to fight me?"
+# NOT TBC
+# == mal[33749]	   "Are you sure you are ready to fight me?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (14384, 1, 33747, 1, 33748, 1, 33867);
+ VALUES (14384, 1, 33747, 1, 33748, 1, 33749);
 
 # -------------------------------------------------------------------------------- [14392]
 # ## txt 0 (1)	=> "Glory will be ours when we win this tournament in the name of Silvermoon."
+# NOT TBC
 # == fem[33780]	   "Glory will be ours when we win this tournament in the name of Silvermoon."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47416,6 +47991,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14395]
 # ## txt 0 (1)	=> "We have come to compete for honor, renown, and the right to fight the Scourge alongside the brothers of the Argent Crusade."
+# NOT TBC
 # == mal[33784]	   "We have come to compete for honor, renown, and the right to fight the Scourge alongside the brothers of the Argent Crusade."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47424,6 +48000,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14396]
 # ## txt 0 (1)	=> "King Magni expects us to win the tournament and make him proud. We will not fail."
+# NOT TBC
 # == fem[33785]	   "King Magni expects us to win the tournament and make him proud. We will not fail."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47432,6 +48009,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14398]
 # ## txt 0 (1)	=> "Gnomeregan's finest have come to compete in the tournament. Wish us luck!"
+# NOT TBC
 # == mal[33786]	   "Gnomeregan's finest have come to compete in the tournament. Wish us luck!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47440,6 +48018,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14399]
 # ## txt 0 (1)	=> "We of Darnassus look forward to competing in the tournament."
+# NOT TBC
 # == mal[33789]	   "We of Darnassus look forward to competing in the tournament."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47448,6 +48027,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14402]
 # ## txt 0 (1)	=> "When the tournament starts, all will see the Forsaken emerge triumphant."
+# NOT TBC
 # == mal[33794]	   "When the tournament starts, all will see the Forsaken emerge triumphant."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47456,6 +48036,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14403]
 # ## txt 0 (1)	=> "The competition will be fierce, but Orgrimmar's champions will decimate all who stand in our way."
+# NOT TBC
 # == mal[33795]	   "The competition will be fierce, but Orgrimmar's champions will decimate all who stand in our way."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47464,6 +48045,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14404]
 # ## txt 0 (1)	=> "We compete not only for glory, but to bring honor to our ancestors and to our people."
+# NOT TBC
 # == mal[33796]	   "We compete not only for glory, but to bring honor to our ancestors and to our people."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47472,6 +48054,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14405]
 # ## txt 0 (1)	=> "The Darkspears stand ready to face the competition and the enemy."
+# NOT TBC
 # == mal[33797]	   "The Darkspears stand ready to face the competition and the enemy."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47480,6 +48063,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14407]
 # ## txt 0 (1)	=> "Are you prepared to fight a valiant of the Argent Crusade?"
+# NOT TBC
 # == mal[33799]	   "Are you prepared to fight a valiant of the Argent Crusade?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47488,6 +48072,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14409]
 # ## txt 0 (1)	=> "This is the ring where the champions practice fighting each other. It's my job to summon the knights to their practice battles."
+# NOT TBC
 # == mal[33801]	   "This is the ring where the champions practice fighting each other. It's my job to summon the knights to their practice battles."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47496,6 +48081,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14420]
 # ## txt 0 (1)	=> "There are secrets contained within these halls that are beyond our wildest dreams."
+# NOT TBC
 # == mal[33859]	   "There are secrets contained within these halls that are beyond our wildest dreams."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47504,20 +48090,24 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14421]
 # ## txt 0 (1)	=> "Are you sure you are ready to fight a champion?"
+# NOT TBC
 # == mal[33865]	   "Are you sure you are ready to fight a champion?"
 
 # ## txt 1 (1)	=> "It would be unwise to assume that fighting a champion would be a simple task. Are you sure you are ready?"
+# NOT TBC
 # == mal[33866]	   "It would be unwise to assume that fighting a champion would be a simple task. Are you sure you are ready?"
 
 # ## txt 2 (1)	=> "Are you sure you are ready to fight me?"
-# == mal[33867]	   "Are you sure you are ready to fight me?"
+# NOT TBC
+# == mal[33749]	   "Are you sure you are ready to fight me?"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (14421, 1, 33865, 1, 33866, 1, 33867);
+ VALUES (14421, 1, 33865, 1, 33866, 1, 33749);
 
 # -------------------------------------------------------------------------------- [14424]
 # ## txt 0 (1)	=> "The teleporter appears to be active and stable."
+# NOT TBC
 # oo mal[33918]	   "The Displacement Pad appears to be active and stable."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47526,6 +48116,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14425]
 # ## txt 0 (1)	=> "On behalf of the Argent Crusade, I welcome you to the Argent Tournament."
+# NOT TBC
 # == fem[33929]	   "On behalf of the Argent Crusade, I welcome you to the Argent Tournament."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47534,6 +48125,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14426]
 # ## txt 0 (1)	=> "No one builds it faster, cheaper, and better than the Blastbolt brothers!"
+# NOT TBC
 # == mal[33930]	   "No one builds it faster, cheaper, and better than the Blastbolt brothers!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47542,6 +48134,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14428]
 # ## txt 0 (1)	=> "It's a real honor to be able to aid Brann in exploring ancient Ulduar."
+# NOT TBC
 # == mal[33946]	   "It's a real honor to be able to aid Brann in exploring ancient Ulduar."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47550,6 +48143,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14429]
 # ## txt 0 (1)	=> "Brann taught me everything I know about exploring."
+# NOT TBC
 # == mal[33947]	   "Brann taught me everything I know about exploring."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47558,6 +48152,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14431]
 # ## txt 0 (1)	=> "Well met, $c.$B$BI train Aspirants in the art of mounted close combat."
+# NOT TBC
 # == mal[33963]	   "Well met, $c.$B$BI train Aspirants in the art of mounted close combat."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47566,6 +48161,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14434]
 # ## txt 0 (1)	=> "The Melee Target trains Aspirants in both mounted attack and defense.$B$BApproach the Melee Target and strike it with a Thrust attack. The force of the blow often spins the target hard enough to injure you or your mount. This is where defense comes into play.$B$BBe certain to have at least one layer of Defend before attacking the target, and continue to stack and refresh Defend throughout the training exercise. Otherwise, you may well find yourself dismounted.$B$BThe same holds true in actual mounted combat: Balance attack and defense, Thrusting at every opportunity and maintaining your layers of Defend as best you can."
+# NOT TBC
 # == mal[33968]	   "The Melee Target trains Aspirants in both mounted attack and defense.$B$BApproach the Melee Target and strike it with a Thrust attack. The force of the blow often spins the target hard enough to injure you or your mount. This is where defense comes into play.$B$BBe certain to have at least one layer of Defend before attacking the target, and continue to stack and refresh Defend throughout the training exercise. Otherwise, you may well find yourself dismounted.$B$BThe same holds true in actual mounted combat: Balance attack and defense, Thrusting at every opportunity and maintaining your layers of Defend as best you can."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47574,6 +48170,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14436]
 # ## txt 0 (1)	=> "Hey there, how are ye?$B$BCome ta learn the art o' the Charge, $c?"
+# NOT TBC
 # == mal[33975]	   "Hey there, how are ye?$B$BCome ta learn the art o' the Charge, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47582,6 +48179,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14437]
 # ## txt 0 (1)	=> "Well then! A mounted Charge is about more than just kickin' yer mount ta full speed an' hollerin' yer lungs out... though that IS the fun part, heh! But the Charge Target will teach ye the finer points.$B$BA good Charge is all about distance and timing. Ye can't be TOO close, or ye won't get enough speed. But ye can't be too far away either or yer mount will tire! As for timin'...$B$BYe'll want ta make sure the Charge Target doesn't have a layer o' Defend up before ye rush in. If it does, use yer Shield Breaker ta make it vulnerable, and THEN Charge in!$B$BSame goes for the real thing: Try ta drop yer opponent defenses before ye Charge!"
+# NOT TBC
 # == mal[33977]	   "Well then! A mounted Charge is about more than just kickin' yer mount ta full speed an' hollerin' yer lungs out... though that IS the fun part, heh! But the Charge Target will teach ye the finer points.$B$BA good Charge is all about distance and timing. Ye can't be TOO close, or ye won't get enough speed. But ye can't be too far away either or yer mount will tire! As for timin'...$B$BYe'll want ta make sure the Charge Target doesn't have a layer o' Defend up before ye rush in. If it does, use yer Shield Breaker ta make it vulnerable, and THEN Charge in!$B$BSame goes for the real thing: Try ta drop yer opponent defenses before ye Charge!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47590,6 +48188,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14438]
 # ## txt 0 (1)	=> "Well. Another $c, come to learn the ways of the Shield-Breaker...?"
+# NOT TBC
 # == mal[33979]	   "Well. Another $c, come to learn the ways of the Shield-Breaker...?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47598,6 +48197,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14439]
 # ## txt 0 (1)	=> "The ranged Shield-Breaker attack is simple to learn, but difficult to master. Alone it may seem weak, but in conjunction with Thrusts and Charges the Shield-Breaker makes a successful jouster.$B$BFind a Ranged Target. Take a moment to understand the Shield-Breaker's range... how much space you need, and how far you can hurl the lance.$B$BAfter that? Well. Start throwing, and do not stop until you've broken every last layer of Defend and pierced the vulnerable target.$B$BThis tactic will serve you well in actual mounted combat: Break down your opponents' defenses... and then crush them!"
+# NOT TBC
 # == mal[33981]	   "The ranged Shield-Breaker attack is simple to learn, but difficult to master. Alone it may seem weak, but in conjunction with Thrusts and Charges the Shield-Breaker makes a successful jouster.$B$BFind a Ranged Target. Take a moment to understand the Shield-Breaker's range... how much space you need, and how far you can hurl the lance.$B$BAfter that? Well. Start throwing, and do not stop until you've broken every last layer of Defend and pierced the vulnerable target.$B$BThis tactic will serve you well in actual mounted combat: Break down your opponents' defenses... and then crush them!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47606,6 +48206,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14441]
 # ## txt 0 (1)	=> "All in good time, mon. I be havin' more work for you to do soon...."
+# NOT TBC
 # == mal[34003]	   "All in good time, mon. I be havin' more work for you to do soon...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47614,6 +48215,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14442]
 # ## txt 0 (1)	=> "Indeed you have, mon. Our stores of blight crystals be nearly sufficient!"
+# NOT TBC
 # == mal[34007]	   "Indeed you have, mon. Our stores of blight crystals be nearly sufficient!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47622,6 +48224,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14443]
 # ## txt 0 (1)	=> "Darmuk's incompetence be hinderin' us no more! Patience, mon. Dere soon be more for you to do...."
+# NOT TBC
 # == mal[34010]	   "Darmuk's incompetence be hinderin' us no more! Patience, mon. Dere soon be more for you to do...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47630,6 +48233,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14444]
 # ## txt 0 (1)	=> "With da chieftains out of da way, we be poised to make our assault! Soon, $n...."
+# NOT TBC
 # == mal[34019]	   "With da chieftains out of da way, we be poised to make our assault! Soon, $n...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47638,6 +48242,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14445]
 # ## txt 0 (1)	=> "Now ya be knowin' everything, mon! Prepare yourself... we attack soon!"
+# NOT TBC
 # == mal[34021]	   "Now ya be knowin' everything, mon! Prepare yourself... we attack soon!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47646,6 +48251,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14446]
 # ## txt 0 (1)	=> "I was here visiting relatives when Lordaeron fell, and then... well. I suppose I won't ever be returning to Westfall, now.$B$BSometimes I wonder if my family is still alive. More often, though, I wonder why I no longer care."
+# NOT TBC
 # == mal[34024]	   "I was here visiting relatives when Lordaeron fell, and then... well. I suppose I won't ever be returning to Westfall, now.$B$BSometimes I wonder if my family is still alive. More often, though, I wonder why I no longer care."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47654,6 +48260,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14453]
 # ## txt 0 (1)	=> "You must be riding a tournament mount before I can instruct you.$B$BEquip a lance and find a tournament mount outside your faction's pavilion."
+# NOT TBC
 # == mal[34089]	   "You must be riding a tournament mount before I can instruct you.$B$BEquip a lance and find a tournament mount outside your faction's pavilion."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47662,6 +48269,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14456]
 # ## txt 0 (1)	=> "Only champions of Stormwind may purchase what I have to offer."
+# NOT TBC
 # == mal[34104]	   "Only champions of Stormwind may purchase what I have to offer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47670,6 +48278,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14457]
 # ## txt 0 (1)	=> "Not so fast, $r!$B$BOnly champions of Ironforge can purchase what I got ta offer."
+# NOT TBC
 # == mal[34116]	   "Not so fast, $r!$B$BOnly champions of Ironforge can purchase what I got ta offer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47678,6 +48287,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14458]
 # ## txt 0 (1)	=> "Apologies, $r, but only champions of Thunder Bluff may purchase what I have to offer."
+# NOT TBC
 # == mal[34120]	   "Apologies, $r, but only champions of Thunder Bluff may purchase what I have to offer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47686,6 +48296,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14459]
 # ## txt 0 (1)	=> "Away with you, $c!$B$BOnly champions of Undercity may purchase what I have to offer."
+# NOT TBC
 # == fem[34122]	   "Away with you, $c!$B$BOnly champions of Undercity may purchase what I have to offer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47694,6 +48305,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14460]
 # ## txt 0 (1)	=> "Only champions of Orgrimmar may purchase what I have to offer."
+# NOT TBC
 # == fem[34127]	   "Only champions of Orgrimmar may purchase what I have to offer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47702,6 +48314,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14461]
 # ## txt 0 (1)	=> "Only champions of the Exodar may purchase what I have to offer."
+# NOT TBC
 # == fem[34128]	   "Only champions of the Exodar may purchase what I have to offer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47710,6 +48323,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14462]
 # ## txt 0 (1)	=> "Hi there!$B$BSorry, friend, but only champions of Gnomeregan can buy what I've got."
+# NOT TBC
 # == fem[34131]	   "Hi there!$B$BSorry, friend, but only champions of Gnomeregan can buy what I've got."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47718,6 +48332,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14463]
 # ## txt 0 (1)	=> "Alas, only champions of Darnassus may purchase what I have to offer."
+# NOT TBC
 # == mal[34134]	   "Alas, only champions of Darnassus may purchase what I have to offer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47726,6 +48341,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14464]
 # ## txt 0 (1)	=> "Samamba tinkin' joo be at da wrong quartermaster!$B$BWhat she got only for de Sen'jin champions..."
+# NOT TBC
 # == fem[34136]	   "Samamba tinkin' joo be at da wrong quartermaster!$B$BWhat she got only for de Sen'jin champions..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47734,6 +48350,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14465]
 # ## txt 0 (1)	=> "Alas, only the esteemed champions of Silvermoon City may purchase what I have to offer."
+# NOT TBC
 # == mal[34139]	   "Alas, only the esteemed champions of Silvermoon City may purchase what I have to offer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47742,6 +48359,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14472]
 # ## txt 0 (1)	=> "Welcome to the tournament, $N."
+# NOT TBC
 # == mal[34242]	   "Welcome to the tournament, $n."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47750,6 +48368,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14473]
 # ## txt 0 (1)	=> "It's good to see you here, $N."
+# NOT TBC
 # == fem[34243]	   "It's good to see you here, $n."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47758,6 +48377,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14474]
 # ## txt 0 (1)	=> "It takes a lot of dedication to train and ride a Venomhide."
+# NOT TBC
 # == mal[34297]	   "It takes a lot of dedication to train and ride a Venomhide."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47766,6 +48386,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14487]
 # ## txt 0 (1)	=> "Welcome to our little chapel of the Light. Please, take a seat. Enjoy a respite from the world's ills."
+# NOT TBC
 # == mal[34392]	   "Welcome to our little chapel of the Light. Please, take a seat. Enjoy a respite from the world's ills."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47774,6 +48395,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14489]
 # ## txt 0 (1)	=> "You've already bested one of our riders today, so I cannot accept your challenge."
+# NOT TBC
 # == mal[34395]	   "You've already bested one of our riders today, so I cannot accept your challenge."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47782,6 +48404,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14491]
 # ## txt 0 (1)	=> "Are you here for the confessor's sermon? Good luck findin' a place to sit..."
+# NOT TBC
 # == mal[34400]	   "Are you here for the confessor's sermon? Good luck findin' a place to sit..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47790,6 +48413,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14492]
 # ## txt 0 (1)	=> "You've already bested one of our riders today, so I cannot accept your challenge."
+# NOT TBC
 # == mal[34395]	   "You've already bested one of our riders today, so I cannot accept your challenge."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47798,6 +48422,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14495]
 # ## txt 0 (1)	=> "It is an honor to represent the Argent Crusade in this tournament."
+# NOT TBC
 # == mal[34423]	   "It is an honor to represent the Argent Crusade in this tournament."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47806,6 +48431,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14496]
 # ## txt 0 (1)	=> "Activating secondary defensive systems will result in the extermination of unauthorized life forms via orbital emplacements.$B$BYou are an unauthorized life form. Please confirm."
+# NOT TBC
 # == mal[34419]	   "Activating secondary defensive systems will result in the extermination of unauthorized life forms via orbital emplacements.$B$BYou are an unauthorized life form. Please confirm."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47814,6 +48440,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14497]
 # ## txt 0 (1)	=> "Security override permitted. Secondary defensive systems activated.$B$BBackup deactivation for secondary systems can be accessed via individual generators located on the concourse."
+# NOT TBC
 # == mal[34422]	   "Security override permitted. Secondary defensive systems activated.$B$BBackup deactivation for secondary systems can be accessed via individual generators located on the concourse."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47822,6 +48449,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14500]
 # ## txt 0 (1)	=> "The Argent Tournament has begun in the northern reaches of Icecrown, $c. If you've yet to find your way there, I can pay your way.$B$BThe more we have participating in the melee, the stronger we'll be when we strike against the Lich King."
+# NOT TBC
 # == mal[34426]	   "The Argent Tournament has begun in the northern reaches of Icecrown, $c. If you've yet to find your way there, I can pay your way.$B$BThe more we have participating in the melee, the stronger we'll be when we strike against the Lich King."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47830,6 +48458,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14527]
 # ## txt 0 (1)	=> "<The hatchling looks at you as if trying to determine whether or not you're its mother.>"
+# NOT TBC
 # == mal[34517]	   "<The hatchling looks at you as if trying to determine whether or not you're its mother.>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47838,6 +48467,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14534]
 # ## txt 0 (1)	=> "The Lich King's cruel reign has inflicted great suffering on all of Northrend's inhabitants, particularly the children. If you are a friend to the Oracles or Frenzyheart Tribe of Sholazar, perhaps you might consider caring for an orphan for a week."
+# NOT TBC
 # == fem[34554]	   "The Lich King's cruel reign has inflicted great suffering on all of Northrend's inhabitants, particularly the children. If you are a friend to the Oracles or Frenzyheart Tribe of Sholazar, perhaps you might consider caring for an orphan for a week."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47846,21 +48476,27 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14535]
 # ## txt 0 (1)	=> "We can has aged yolk?"
+# NOT TBC
 # == mal[34555]	   "We can has aged yolk?"
 
 # ## txt 1 (1)	=> "Do Great Ones ever run out of bag space for shinies?"
+# NOT TBC
 # == mal[34556]	   "Do Great Ones ever run out of bag space for shinies?"
 
 # ## txt 2 (1)	=> "Why you think puppy-man hatchlings keep asking if we pity Lafoo? Lafoo talks a lot, but he's our friend."
+# NOT TBC
 # == mal[34557]	   "Why you think puppy-man hatchlings keep asking if we pity Lafoo? Lafoo talks a lot, but he's our friend."
 
 # ## txt 3 (1)	=> "Soo-$n, maybe you give us whistle for when we need to call you. Oki?"
+# NOT TBC
 # == mal[34558]	   "Soo-$n, maybe you give us whistle for when we need to call you. Oki?"
 
 # ## txt 4 (1)	=> "Maybe we be a $r when we grow up. Think so?"
+# NOT TBC
 # == mal[34559]	   "Maybe we be a $r when we grow up. Think so?"
 
 # ## txt 5 (1)	=> "Are you alone because puppy-men killed your parents too?"
+# NOT TBC
 # == mal[34560]	   "Are you alone because puppy-men killed your parents too?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47869,6 +48505,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14536]
 # ## txt 0 (1)	=> "You should stay away from walrus-men. They could pup-nap you."
+# NOT TBC
 # == mal[34561]	   "You should stay away from walrus-men. They could pup-nap you."
 
 # ## txt 1 (1)	=> "UDB Missing US text"
@@ -47892,6 +48529,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14537]
 # ## txt 0 (1)	=> "The orphans we have taken in come from war torn Sholazar Basin. You can choose to care for either an orphaned Oracle hatchling or a Frenzyheart pup. Either will be happy to make a new friend, but you will only be able to care for one of them."
+# NOT TBC
 # == fem[34568]	   "The orphans we have taken in come from war torn Sholazar Basin. You can choose to care for either an orphaned Oracle hatchling or a Frenzyheart pup. Either will be happy to make a new friend, but you will only be able to care for one of them."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47900,6 +48538,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14543]
 # ## txt 0 (1)	=> "Can you feel it?$B$BThe spirit world draws close during the Day of the Dead. This is why we decorate the graves of our dearly departed with flowers and candles and offerings: To welcome them back, even if only for a time.$B$BSo come! Dance with me! Let us cherish and honor those we have lost in their ghostly presence, so that they might eat and drink and smile and know that they are loved."
+# NOT TBC
 # == fem[34612]	   "Can you feel it?$B$BThe spirit world draws close during the Day of the Dead. This is why we decorate the graves of our dearly departed with flowers and candles and offerings: To welcome them back, even if only for a time.$B$BSo come! Dance with me! Let us cherish and honor those we have lost in their ghostly presence, so that they might eat and drink and smile and know that they are loved."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47908,6 +48547,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14544]
 # ## txt 0 (1)	=> "During the Day of the Dead, people gather in graveyards to celebrate with and cherish the spirits of those they have lost.$B$BYou can find the festivities in the cemeteries of any major city, where you'll be able to cook, dance, don costumes, and more."
+# NOT TBC
 # == mal[34613]	   "During the Day of the Dead, people gather in graveyards to celebrate with and cherish the spirits of those they have lost.$B$BYou can find the festivities in the cemeteries of any major city, where you'll be able to cook, dance, don costumes, and more."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47916,6 +48556,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14552]
 # ## txt 0 (1)	=> "It's good to visit with friends and family again, celebrating and sharing stories of old."
+# NOT TBC
 # == mal[34684]	   "It's good to visit with friends and family again, celebrating and sharing stories of old."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47924,6 +48565,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14560]
 # ## txt 0 (1)	=> "Surely you've been a student once in your life, $c. You learned from an instructor, and you gained respect for them in some way, yes? Maybe not as a person, but at the least, as one who knew more than you and was willing to teach you. If not, use your imagination...$b$bWhat would you do if you came to realize your instructor may not know as much as you thought, and that you may have found a better path?"
+# NOT TBC
 # == mal[34757]	   "Surely you've been a student once in your life, $c. You learned from an instructor, and you gained respect for them in some way, yes? Maybe not as a person, but at the least, as one who knew more than you and was willing to teach you. If not, use your imagination...$b$bWhat would you do if you came to realize your instructor may not know as much as you thought, and that you may have found a better path?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47932,6 +48574,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14561]
 # ## txt 0 (1)	=> "This is awful! I shouldn't be sitting here, useless, when there's so much to be done! If only my arm hadn't gotten injured up in Northrend... No use dwelling on it, though! Tahu will have me patched up and cured eventually, and we'll still help around here in the meantime.$B$BJust because we're not at the front doesn't mean we can't help out somehow."
+# NOT TBC
 # -- fem[34758]	   "This is awful! I shouldn't be sitting here, useless, when there's so much to be done! If only my arm hadn't gotten injured up in Northrend... No use dwelling on it, though! Tahu will have me patched up and cured eventually, and we'll still help around here in the meantime.$bJust because we're not at the front doesn't mean we can't help out somehow."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47940,6 +48583,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14613]
 # ## txt 0 (1)	=> "I'm going deaf. That big green harpy won't shut up for five seconds. I know how to drive this thing, all right? I'm not an idiot!"
+# NOT TBC
 # == mal[35014]	   "I'm going deaf. That big green harpy won't shut up for five seconds. I know how to drive this thing, all right? I'm not an idiot!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47948,6 +48592,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14614]
 # ## txt 0 (1)	=> "Zippik would drive us straight into the Bluff if I wasn't here. Moron."
+# NOT TBC
 # == fem[35015]	   "Zippik would drive us straight into the Bluff if I wasn't here. Moron."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47956,12 +48601,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14615]
 # ## txt 0 (1)	=> "It's a pretty smooth ride if you don't mind the dust."
+# NOT TBC
 # == mal[35016]	   "It's a pretty smooth ride if you don't mind the dust."
 
 # ## txt 1 (1)	=> "Keep away from the edge there, champ. Don't want you falling."
+# NOT TBC
 # == mal[35017]	   "Keep away from the edge there, champ. Don't want you falling."
 
 # ## txt 2 (1)	=> "I'm workin', here."
+# NOT TBC
 # == mal[35018]	   "I'm workin', here."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47970,6 +48618,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14617]
 # ## txt 0 (1)	=> "Hey. I'm on break."
+# NOT TBC
 # == mal[35021]	   "Hey. I'm on break."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47978,6 +48627,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14618]
 # ## txt 0 (1)	=> "Welcome aboard the Zephyr, the smoothest ride you're likely to get across the Barrens. Sit back and enjoy the flight, eh, kid? Ain't nothing like that sweet, dry air mixed with the scent of oil."
+# NOT TBC
 # == mal[35022]	   "Welcome aboard the Zephyr, the smoothest ride you're likely to get across the Barrens. Sit back and enjoy the flight, eh, kid? Ain't nothing like that sweet, dry air mixed with the scent of oil."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47986,6 +48636,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14619]
 # ## txt 0 (1)	=> "I be Tolwe. Job be to keep da peace an' watch. So I be watchin'."
+# NOT TBC
 # == mal[35025]	   "I be Tolwe. Job be to keep da peace an' watch. So I be watchin'."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -47994,6 +48645,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14621]
 # ## txt 0 (1)	=> "Hey, sweetheart. The zeppelin that parks here'll take ya straight to Thunder Bluff, free of charge. Who needs wyverns when you got us goblins here, am I right?"
+# NOT TBC
 # == fem[35038]	   "Hey, sweetheart. The zeppelin that parks here'll take ya straight to Thunder Bluff, free of charge. Who needs wyverns when you got us goblins here, am I right?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48002,6 +48654,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14622]
 # ## txt 0 (1)	=> "Can you believe it? They finally opened this place up for us to fly a zeppelin through here! No fly zone no more, am I right? We only crashed one zeppelin into a cliff on the test run. I don't see why they were so worried."
+# NOT TBC
 # == mal[35040]	   "Can you believe it? They finally opened this place up for us to fly a zeppelin through here! No fly zone no more, am I right? We only crashed one zeppelin into a cliff on the test run. I don't see why they were so worried."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48010,6 +48663,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14627]
 # ## txt 0 (1)	=> "Hello, $N. If you're looking for cooking training, you've come to the right place. I usually get lots of new students when Pilgrim's Bounty rolls around."
+# NOT TBC
 # == mal[35055]	   "Hello, $n. If you're looking for cooking training, you've come to the right place. I usually get lots of new students when Pilgrim's Bounty rolls around."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48018,6 +48672,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14628]
 # ## txt 0 (1)	=> "If you're interested in learning more about the traditional Pilgrim's Bounty feast, speak to any of the hostesses."
+# NOT TBC
 # == mal[35061]	   "If you're interested in learning more about the traditional Pilgrim's Bounty feast, speak to any of the hostesses."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48026,6 +48681,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14630]
 # ## txt 0 (1)	=> "Are you here to celebrate Pilgrim's Bounty with us?"
+# NOT TBC
 # == mal[35069]	   "Are you here to celebrate Pilgrim's Bounty with us?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48034,22 +48690,25 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14633]
 # ## txt 0 (1)	=> "Welcome! Have you come to join us for a Pilgrim's Bounty feast? Please, have a seat at a Bountiful Table.$B$BTry everything! I'm certain you'll find something to your liking."
-# == fem[35088]	   "Welcome! Have you come to join us for a Pilgrim's Bounty feast? Please, have a seat at a Bountiful Table.$B$BTry everything! I'm certain you'll find something to your liking."
+# NOT TBC
+# == fem[35087]	   "Welcome! Have you come to join us for a Pilgrim's Bounty feast? Please, have a seat at a Bountiful Table.$B$BTry everything! I'm certain you'll find something to your liking."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14633, 1, 35088);
+ VALUES (14633, 1, 35087);
 
 # -------------------------------------------------------------------------------- [14634]
 # ## txt 0 (1)	=> "Welcome! Have you come to join us for a Pilgrim's Bounty feast? Please, have a seat at a Bountiful Table.$B$BTry everything! I'm certain you'll find something to your liking."
-# == fem[35088]	   "Welcome! Have you come to join us for a Pilgrim's Bounty feast? Please, have a seat at a Bountiful Table.$B$BTry everything! I'm certain you'll find something to your liking."
+# NOT TBC
+# == fem[35087]	   "Welcome! Have you come to join us for a Pilgrim's Bounty feast? Please, have a seat at a Bountiful Table.$B$BTry everything! I'm certain you'll find something to your liking."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14634, 1, 35088);
+ VALUES (14634, 1, 35087);
 
 # -------------------------------------------------------------------------------- [14635]
 # ## txt 0 (1)	=> ""Pilgrim's Bounty." Hrm. I can understand the tauren's eagerness to express their sense of gratitude and comraderie to the Horde's warchief, but the Forsaken?$B$BI imagined they would have dropped such sentimental traditions long ago."
+# NOT TBC
 # == mal[35091]	   ""Pilgrim's Bounty." Hrm. I can understand the tauren's eagerness to express their sense of gratitude and comraderie to the Horde's warchief, but the Forsaken?$B$BI imagined they would have dropped such sentimental traditions long ago."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48058,6 +48717,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14640]
 # ## txt 0 (1)	=> "Pilgrim's Bounty is a time to reflect upon one's good fortune and share with all around you.$B$BWe hope that all of our noble allies will join us in feasting and celebration."
+# NOT TBC
 # == mal[35096]	   "Pilgrim's Bounty is a time to reflect upon one's good fortune and share with all around you.$B$BWe hope that all of our noble allies will join us in feasting and celebration."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48066,6 +48726,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14641]
 # ## txt 0 (1)	=> "Such a stark contrast, this holiday, to typical human behavior. Who'd have thought such a relentlessly voracious people would make a celebration of giving and sharing?$B$BIt's pleasant to see. Darnassus should do its utmost to support and encourage it."
+# NOT TBC
 # == mal[35097]	   "Such a stark contrast, this holiday, to typical human behavior. Who'd have thought such a relentlessly voracious people would make a celebration of giving and sharing?$B$BIt's pleasant to see. Darnassus should do its utmost to support and encourage it."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48074,22 +48735,25 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14647]
 # ## txt 0 (1)	=> "A Bountiful Table is laid out with five Pilgrim's Bounty foods, one in front of each chair.$B$BWhile in a chair, you may eat as much of that food as you like, as well as pass servings of that food to the other chairs. Feast and share with friends!$B$BIf you eat enough of any one food, you'll gain benefits unique to that food.$B$BIn addition, if you eat enough of every food, you'll gain the Spirit of Sharing!"
-# == fem[35110]	   "A Bountiful Table is laid out with five Pilgrim's Bounty foods, one in front of each chair.$B$BWhile in a chair, you may eat as much of that food as you like, as well as pass servings of that food to the other chairs. Feast and share with friends!$B$BIf you eat enough of any one food, you'll gain benefits unique to that food.$B$BIn addition, if you eat enough of every food, you'll gain the Spirit of Sharing!"
+# NOT TBC
+# == fem[35109]	   "A Bountiful Table is laid out with five Pilgrim's Bounty foods, one in front of each chair.$B$BWhile in a chair, you may eat as much of that food as you like, as well as pass servings of that food to the other chairs. Feast and share with friends!$B$BIf you eat enough of any one food, you'll gain benefits unique to that food.$B$BIn addition, if you eat enough of every food, you'll gain the Spirit of Sharing!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14647, 1, 35110);
+ VALUES (14647, 1, 35109);
 
 # -------------------------------------------------------------------------------- [14648]
 # ## txt 0 (1)	=> "A Bountiful Table is laid out with five Pilgrim's Bounty foods, one in front of each chair.$B$BWhile in a chair, you may eat as much of that food as you like, as well as pass servings of that food to the other chairs. Feast and share with friends!$B$BIf you eat enough of any one food, you'll gain benefits unique to that food.$B$BIn addition, if you eat enough of every food, you'll gain the Spirit of Sharing!"
-# == fem[35110]	   "A Bountiful Table is laid out with five Pilgrim's Bounty foods, one in front of each chair.$B$BWhile in a chair, you may eat as much of that food as you like, as well as pass servings of that food to the other chairs. Feast and share with friends!$B$BIf you eat enough of any one food, you'll gain benefits unique to that food.$B$BIn addition, if you eat enough of every food, you'll gain the Spirit of Sharing!"
+# NOT TBC
+# == fem[35109]	   "A Bountiful Table is laid out with five Pilgrim's Bounty foods, one in front of each chair.$B$BWhile in a chair, you may eat as much of that food as you like, as well as pass servings of that food to the other chairs. Feast and share with friends!$B$BIf you eat enough of any one food, you'll gain benefits unique to that food.$B$BIn addition, if you eat enough of every food, you'll gain the Spirit of Sharing!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (14648, 1, 35110);
+ VALUES (14648, 1, 35109);
 
 # -------------------------------------------------------------------------------- [14659]
 # ## txt 0 (1)	=> "The true crusader is more than just a hero in the battle against evil... he is an exemplar, a rallier to the cause, a champion in the eyes of all his people.$B$BAs High Crusader, it is my duty to task such men and women with worthy quests."
+# NOT TBC
 # == mal[35142]	   "The true crusader is more than just a hero in the battle against evil... he is an exemplar, a rallier to the cause, a champion in the eyes of all his people.$B$BAs High Crusader, it is my duty to task such men and women with worthy quests."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48098,6 +48762,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14664]
 # ## txt 0 (1)	=> "Welcome, champion! Have you gathered your forces in preparation for the challenges of the Trials of the Crusader?"
+# NOT TBC
 # == mal[35171]	   "Welcome, champion! Have you gathered your forces in preparation for the challenges of the Trials of the Crusader?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48106,6 +48771,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14665]
 # ## txt 0 (1)	=> "Are you ready for the first challenge, then?"
+# NOT TBC
 # == mal[35173]	   "Are you ready for the first challenge, then?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48114,6 +48780,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14667]
 # ## txt 0 (1)	=> "Those beasts are amazing specimens. You should feel no shame at being bested by them."
+# NOT TBC
 # == mal[35213]	   "Those beasts are amazing specimens. You should feel no shame at being bested by them."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48122,6 +48789,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14668]
 # ## txt 0 (1)	=> "Excellent! Let me know when you are ready for the next attempt."
+# NOT TBC
 # == mal[35214]	   "Excellent! Let me know when you are ready for the next attempt."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48130,6 +48798,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14669]
 # ## txt 0 (1)	=> "You are not yet strong enough to do battle on the Isle of Conquest. Return when you have gained more experience."
+# NOT TBC
 # == mal[35217]	   "You are not yet strong enough to do battle on the Isle of Conquest. Return when you have gained more experience."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48138,6 +48807,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14670]
 # ## txt 0 (1)	=> "The Isle of Conquest is laden with valuable resources we cannot allow to fall into Horde hands. Will you join the fight?"
+# NOT TBC
 # == mal[35218]	   "The Isle of Conquest is laden with valuable resources we cannot allow to fall into Horde hands. Will you join the fight?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48146,6 +48816,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14671]
 # ## txt 0 (1)	=> "The Isle of Conquest is laden with valuable resources we cannot allow to fall into Alliance hands. Will you join the fight?"
+# NOT TBC
 # == mal[35219]	   "The Isle of Conquest is laden with valuable resources we cannot allow to fall into Alliance hands. Will you join the fight?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48154,6 +48825,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14672]
 # ## txt 0 (1)	=> "We want everyone to have fun at Brewfest. It would also help if we had some people remember it as well.$b$bThese goggles allow anyone to experience what it's like to be drunk, but without the drinking part. Put the goggles on, and you're drunk! Take them off, and you're sober!$b$bAre you interested in a pair?"
+# NOT TBC
 # -- mal[35221]	   "We want everyone to have fun at Brewfest. It would also help if we had some people remember it as well.$b$bThese goggles allow anyone to experience what it's like to be drunk, but without the drinking part. Put the goggles on, and it's like you're drunk! Take them off, and you're sober!$b$bAre you interested in a pair?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48162,6 +48834,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14673]
 # ## txt 0 (1)	=> "You are not yet seasoned enough to enter a battleground, $c. Return when you have gained more experience."
+# NOT TBC
 # == mal[35224]	   "You are not yet seasoned enough to enter a battleground, $c. Return when you have gained more experience."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48170,6 +48843,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14674]
 # ## txt 0 (1)	=> "Are you ready to fight for the Horde, $c?"
+# NOT TBC
 # == mal[35225]	   "Are you ready to fight for the Horde, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48178,6 +48852,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14675]
 # ## txt 0 (1)	=> "Are you ready to fight for the Alliance, $c?"
+# NOT TBC
 # == mal[35226]	   "Are you ready to fight for the Alliance, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48186,6 +48861,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14678]
 # ## txt 0 (1)	=> "Well done! Your fighting against all those beasts was splendid! I hear the next challenge should be even tougher!"
+# NOT TBC
 # == mal[35250]	   "Well done! Your fighting against all those beasts was splendid! I hear the next challenge should be even tougher!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48194,6 +48870,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14679]
 # ## txt 0 (1)	=> "We're holding Lord Jaraxxus back for now, but we can't keep him bound for much longer."
+# NOT TBC
 # == mal[35252]	   "We're holding Lord Jaraxxus back for now, but we can't keep him bound for much longer."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48202,6 +48879,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14680]
 # ## txt 0 (1)	=> "You'll find out soon enough. Are you ready for the next challenge?"
+# NOT TBC
 # == mal[35253]	   "You'll find out soon enough. Are you ready for the next challenge?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48210,6 +48888,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14682]
 # ## txt 0 (1)	=> "That's great, just give me the signal for when to drop the binding spells."
+# NOT TBC
 # == mal[35256]	   "That's great, just give me the signal for when to drop the binding spells."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48218,6 +48897,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14688]
 # ## txt 0 (1)	=> "Are you ready for your first challenge, $c?"
+# NOT TBC
 # == mal[35319]	   "Are you ready for your first challenge, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48226,6 +48906,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14689]
 # ## txt 0 (1)	=> "You come to learn how to ride?"
+# NOT TBC
 # == mal[35332]	   "You come to learn how to ride?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48234,6 +48915,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14692]
 # ## txt 0 (1)	=> "<The Hippogryph looks anxious and ready to go!>"
+# NOT TBC
 # == mal[35346]	   "<The Hippogryph looks anxious and ready to go!>"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48242,6 +48924,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14712]
 # ## txt 0 (1)	=> "Welcome to our shop. We have everything you need... if you need alchemy supplies."
+# NOT TBC
 # == fem[35401]	   "Welcome to our shop. We have everything you need... if you need alchemy supplies."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48250,6 +48933,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14713]
 # ## txt 0 (1)	=> "No, I'm the intellectual one, and I am not to be taken lightly. I could brew a healing potion from dishwater and dandelions, although that's not something I'll show you!$b$bAnyhow, if you'd like to make a purchase, please speak with Patricia."
+# NOT TBC
 # == fem[35404]	   "No, I'm the intellectual one, and I am not to be taken lightly. I could brew a healing potion from dishwater and dandelions, although that's not something I'll show you!$b$bAnyhow, if you'd like to make a purchase, please speak with Patricia."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48258,6 +48942,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14723]
 # ## txt 0 (1)	=> "The spirits of the elements are wise. They've been here long before us and will persist long after we're gone. When they speak to us, we must listen."
+# NOT TBC
 # == mal[35457]	   "The spirits of the elements are wise. They've been here long before us and will persist long after we're gone. When they speak to us, we must listen."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48266,6 +48951,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14724]
 # ## txt 0 (1)	=> "The spirits of the elements surround us. We must always listen. I have seen firsthand the consequences when we ignore their warnings..."
+# NOT TBC
 # == mal[35458]	   "The spirits of the elements surround us. We must always listen. I have seen firsthand the consequences when we ignore their warnings..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48274,6 +48960,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14736]
 # ## txt 0 (1)	=> "There are some who desire to stop gaining experience from their actions; to forever remain at the level of strength they are now, and never grow stronger.$B$BI can make this possible... for a fee, of course.$B$BBut understand this: Once you pay me, you will NO LONGER GAIN EXPERIENCE. None. Not one whit.$B$BShould you change your mind afterwards and want to start gaining experience again, I can undo the process for the same fee."
+# NOT TBC
 # == mal[35530]	   "There are some who desire to stop gaining experience from their actions; to forever remain at the level of strength they are now, and never grow stronger.$B$BI can make this possible... for a fee, of course.$B$BBut understand this: Once you pay me, you will NO LONGER GAIN EXPERIENCE. None. Not one whit.$B$BShould you change your mind afterwards and want to start gaining experience again, I can undo the process for the same fee."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48282,6 +48969,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14737]
 # ## txt 0 (1)	=> "That was an impressive display. But are you ready for your next challege?"
+# NOT TBC
 # oo mal[35536]	   "That was an impressive display. But are you ready for your next challenge?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48290,6 +48978,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14738]
 # ## txt 0 (1)	=> "You've impressed everyone here today with your skills in the arena. It is now time to be recognized before all as a champion of the tournament."
+# NOT TBC
 # == mal[35537]	   "You've impressed everyone here today with your skills in the arena. It is now time to be recognized before all as a champion of the tournament."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48298,6 +48987,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14751]
 # ## txt 0 (1)	=> "The wind fiercely cuts across this bluff, and most life has long since fled this corner of Icecrown. However, all it takes is a bit of coaxing for it to return, and that is why I walk these grounds. One day these trees will tower over us all."
+# NOT TBC
 # == mal[35814]	   "The wind fiercely cuts across this bluff, and most life has long since fled this corner of Icecrown. However, all it takes is a bit of coaxing for it to return, and that is why I walk these grounds. One day these trees will tower over us all."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48306,6 +48996,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14759]
 # ## txt 0 (1)	=> "The magnataur are not as stupid as they appear. Keeping Gormok until his time is a difficult task, but he is bound tightly enough that there is no danger."
+# NOT TBC
 # == mal[35840]	   "The magnataur are not as stupid as they appear. Keeping Gormok until his time is a difficult task, but he is bound tightly enough that there is no danger."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48314,6 +49005,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14760]
 # ## txt 0 (1)	=> "I tend these creatures of Gormok as he cannot. I do not fully agree with this slaughter, but at the least he will have his chance to fight."
+# NOT TBC
 # == mal[35841]	   "I tend these creatures of Gormok as he cannot. I do not fully agree with this slaughter, but at the least he will have his chance to fight."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48322,6 +49014,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14761]
 # ## txt 0 (1)	=> "The yeti is a fierce, cunning creature, and this one is one of the strongest of his kind. We keep him asleep through herbs in his food.$b$bDo not think he will be lethargic in the ring, however."
+# NOT TBC
 # == mal[35842]	   "The yeti is a fierce, cunning creature, and this one is one of the strongest of his kind. We keep him asleep through herbs in his food.$b$bDo not think he will be lethargic in the ring, however."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48330,6 +49023,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14764]
 # ## txt 0 (1)	=> "Good day, $N. If you require my services as an auctioneer, I regret to inform you: no. Only grand master engineers possess the minimum intellectual capacity to interface with my superior functions.$b$bMore importantly, why are you still talking to me?"
+# NOT TBC
 # == mal[35876]	   "Good day, $n. If you require my services as an auctioneer, I regret to inform you: no. Only grand master engineers possess the minimum intellectual capacity to interface with my superior functions.$b$bMore importantly, why are you still talking to me?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48338,6 +49032,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14771]
 # ## txt 0 (1)	=> "I will join in the assault upon Icecrown Citadel when the time to strike is upon us."
+# NOT TBC
 # == mal[35904]	   "I will join in the assault upon Icecrown Citadel when the time to strike is upon us."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48346,6 +49041,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14775]
 # ## txt 0 (1)	=> "Greetings, $c.$B$BThe Horde currently control Wintergrasp Fortress. When the battle is about to begin, talk to me to enter the battle.$B$BThe next battle begins in $4354k."
+# NOT TBC
 # == mal[35922]	   "Greetings, $c.$B$BThe Horde currently control Wintergrasp Fortress. When the battle is about to begin, talk to me to enter the battle.$B$BThe next battle begins in $4354k."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48354,6 +49050,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14777]
 # ## txt 0 (1)	=> "Greetings, $c.$B$BThe Horde currently control Wintergrasp Fortress, but the battle has begun. Hurry to Wintergrasp and support our forces!"
+# NOT TBC
 # == mal[35924]	   "Greetings, $c.$B$BThe Horde currently control Wintergrasp Fortress, but the battle has begun. Hurry to Wintergrasp and support our forces!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48362,6 +49059,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14779]
 # ## txt 0 (1)	=> "We have been tending these worms for some time. I hope they will be fit in time for the ring event of this organization. You must face not one, but two jormungar, after all."
+# NOT TBC
 # == mal[35843]	   "We have been tending these worms for some time. I hope they will be fit in time for the ring event of this organization. You must face not one, but two jormungar, after all."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48370,6 +49068,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14781]
 # ## txt 0 (1)	=> "Greetings, $c.$B$BThe Alliance currently control Wintergrasp Fortress, but the battle has begun! Hurry to Wintergrasp and support our forces!"
+# NOT TBC
 # == mal[35933]	   "Greetings, $c.$B$BThe Alliance currently control Wintergrasp Fortress, but the battle has begun! Hurry to Wintergrasp and support our forces!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48378,6 +49077,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14782]
 # ## txt 0 (1)	=> "Greetings, $c.$B$BThe Alliance currently control Wintergrasp Fortress. When the battle is about to begin, talk to me to enter the battle.$B$BThe next battle begins in $4354k."
+# NOT TBC
 # == mal[35934]	   "Greetings, $c.$B$BThe Alliance currently control Wintergrasp Fortress. When the battle is about to begin, talk to me to enter the battle.$B$BThe next battle begins in $4354k."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48386,6 +49086,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14783]
 # ## txt 0 (1)	=> "Good day, $gsir:madam;! How may I be of assistance?"
+# NOT TBC
 # == mal[35936]	   "Good day, $gsir:madam;! How may I be of assistance?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48394,6 +49095,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14785]
 # ## txt 0 (1)	=> "This tear in the fabric of time and space looks ominous. Different scenes flash by at terrifying speed. A very brave person might try to jump through at the right time..."
+# NOT TBC
 # == mal[35938]	   "This tear in the fabric of time and space looks ominous. Different scenes flash by at terrifying speed. A very brave person might try to jump through at the right time..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48402,6 +49104,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14787]
 # ## txt 0 (1)	=> "You! Yes, you!$b$bGaze upon me and treasure this moment of meeting, for soon the world will come to know and fear the name and stern visage of Wilfred Fizzlebang! Once my magnificent summoning is complete, no one will doubt my ability!"
+# NOT TBC
 # == mal[35845]	   "You! Yes, you!$b$bGaze upon me and treasure this moment of meeting, for soon the world will come to know and fear the name and stern visage of Wilfred Fizzlebang! Once my magnificent summoning is complete, no one will doubt my ability!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48410,6 +49113,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14790]
 # ## txt 0 (1)	=> "Greetings, $c.$B$BThe Horde currently control Wintergrasp Fortress, but the next battle starts soon. Get ready to head to Wintergrasp and support our forces!$B$BThe next battle begins in $4354k."
+# NOT TBC
 # == mal[35955]	   "Greetings, $c.$B$BThe Horde currently control Wintergrasp Fortress, but the next battle starts soon. Get ready to head to Wintergrasp and support our forces!$B$BThe next battle begins in $4354k."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48418,6 +49122,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14791]
 # ## txt 0 (1)	=> "Greetings, $c.$B$BThe Alliance currently control Wintergrasp Fortress, but the next battle starts soon. Get ready to head to Wintergrasp and support our forces!$B$BThe next battle begins in $4354k."
+# NOT TBC
 # == mal[35956]	   "Greetings, $c.$B$BThe Alliance currently control Wintergrasp Fortress, but the next battle starts soon. Get ready to head to Wintergrasp and support our forces!$B$BThe next battle begins in $4354k."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48426,6 +49131,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14804]
 # ## txt 0 (1)	=> "We may operate in the shadows of polite society, but out here on the battlefront our powers are properly respected at last."
+# NOT TBC
 # == mal[35844]	   "We may operate in the shadows of polite society, but out here on the battlefront our powers are properly respected at last."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48434,6 +49140,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14814]
 # ## txt 0 (1)	=> "Well then, I'll give the signal to Tirion when you are ready to go."
+# NOT TBC
 # == mal[35988]	   "Well then, I'll give the signal to Tirion when you are ready to go."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48442,6 +49149,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14815]
 # ## txt 0 (1)	=> "That fight was savage and brutal. I haven't seen a grand melee like that in many years! Amazing!"
+# NOT TBC
 # == mal[35990]	   "That fight was savage and brutal. I haven't seen a grand melee like that in many years! Amazing!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48450,6 +49158,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14816]
 # ## txt 0 (1)	=> "I can't wait to see it! They seem ready for another round now, so prepare yourselves!"
+# NOT TBC
 # == mal[35992]	   "I can't wait to see it! They seem ready for another round now, so prepare yourselves!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48458,6 +49167,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14819]
 # ## txt 0 (1)	=> "We suffered a lot of casualties when capturing your next challenge!"
+# NOT TBC
 # == mal[36019]	   "We suffered a lot of casualties when capturing your next challenge!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48466,6 +49176,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14820]
 # ## txt 0 (1)	=> "The Val'kyrs' teamwork is rather astounding. I now see why we had such problems capturing the two of them."
+# NOT TBC
 # == mal[36023]	   "The Val'kyrs' teamwork is rather astounding. I now see why we had such problems capturing the two of them."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48474,6 +49185,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14821]
 # ## txt 0 (1)	=> "You better believe it! You're going to face two of Arthas' most powerful Val'kyr lieutenants!"
+# NOT TBC
 # == mal[36026]	   "You better believe it! You're going to face two of Arthas' most powerful Val'kyr lieutenants!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48482,6 +49194,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14822]
 # ## txt 0 (1)	=> "Well I hope you improve quickly!"
+# NOT TBC
 # == mal[36028]	   "Well I hope you improve quickly!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48490,6 +49203,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14829]
 # ## txt 0 (1)	=> "The praise is well deserved. Tirion will want to praise you himself, shortly. Hey, have you noticed it getting a bit cold all of a sudden?"
+# NOT TBC
 # == mal[36048]	   "The praise is well deserved. Tirion will want to praise you himself, shortly. Hey, have you noticed it getting a bit cold all of a sudden?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48498,6 +49212,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14850]
 # ## txt 0 (1)	=> "Welcome, champion! Have you gathered your forces in preparation for the challenges of the Trial of the Grand Crusader? Only the most powerful and accomplished of combatants are able to participate in these trials. To participate in these trials, you must have completed the normal Trial of the Crusader."
+# NOT TBC
 # == mal[36080]	   "Welcome, champion! Have you gathered your forces in preparation for the challenges of the Trial of the Grand Crusader? Only the most powerful and accomplished of combatants are able to participate in these trials. To participate in these trials, you must have completed the normal Trial of the Crusader."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48506,6 +49221,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14853]
 # ## txt 0 (1)	=> "The Trial of the Grand Crusader is a more difficult version of the Trial of the Crusader. Each encounter is more difficult, and you will not be able to freely attempt the encounters until you win. After 50 unsuccessful attempts, the Trial of the Grand Crusader will end for the week. After successfully completing the Trial of the Grand Crusader, you will receive an additional tribute chest of rewards as compensation. Are you prepared for this trial?"
+# NOT TBC
 # == mal[36085]	   "The Trial of the Grand Crusader is a more difficult version of the Trial of the Crusader. Each encounter is more difficult, and you will not be able to freely attempt the encounters until you win. After 50 unsuccessful attempts, the Trial of the Grand Crusader will end for the week. After successfully completing the Trial of the Grand Crusader, you will receive an additional tribute chest of rewards as compensation. Are you prepared for this trial?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48514,6 +49230,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14865]
 # ## txt 0 (1)	=> "Now that you have completed the Trial of the Crusader, you should consider returning to take part in the Trial of the Grand Crusader. Only the strongest adventurers can hope to complete the Trial, but you will be rewarded well for your efforts."
+# NOT TBC
 # == mal[36135]	   "Now that you have completed the Trial of the Crusader, you should consider returning to take part in the Trial of the Grand Crusader. Only the strongest adventurers can hope to complete the Trial, but you will be rewarded well for your efforts."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48522,6 +49239,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14866]
 # ## txt 0 (1)	=> "Congratulations, please take the portal to Dalaran when you're ready!"
+# NOT TBC
 # == mal[36141]	   "Congratulations, please take the portal to Dalaran when you're ready!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48530,6 +49248,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14882]
 # ## txt 0 (1)	=> "Nice to see you again, $N."
+# NOT TBC
 # == fem[36197]	   "Nice to see you again, $n."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48538,9 +49257,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14899]
 # ## txt 0 (1)	=> "You'll find them in the Apothecarium. Names are Doctor Herbert Halsey and Doctor Marsh. Just watch your back."
+# NOT TBC
 # == mal[36210]	   "You'll find them in the Apothecarium. Names are Doctor Herbert Halsey and Doctor Marsh. Just watch your back."
 
 # ## txt 1 (1)	=> "Doctor Herbert Halsey is who you want. Just don't try anything funny. Any more of that plague nonsense and you'll find an axe in uncomfortable places."
+# NOT TBC
 # == mal[36211]	   "Doctor Herbert Halsey is who you want. Just don't try anything funny. Any more of that plague nonsense and you'll find an axe in uncomfortable places."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48549,9 +49270,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14900]
 # ## txt 0 (1)	=> "Head to the central ring; you'll find auctioneers stationed there."
+# NOT TBC
 # == mal[36216]	   "Head to the central ring; you'll find auctioneers stationed there."
 
 # ## txt 1 (1)	=> "If you want to access the market here, get to the central ring of the city."
+# NOT TBC
 # == mal[36217]	   "If you want to access the market here, get to the central ring of the city."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48560,9 +49283,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14901]
 # ## txt 0 (1)	=> "The bank? It's that tower in the middle of the Trade Quarter."
+# NOT TBC
 # == mal[36219]	   "The bank? It's that tower in the middle of the Trade Quarter."
 
 # ## txt 1 (1)	=> "It's right in the center of the city. The hub of the wheel."
+# NOT TBC
 # == mal[36227]	   "It's right in the center of the city. The hub of the wheel."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48571,6 +49296,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14902]
 # ## txt 0 (1)	=> "Naznik's the local barber. He set up shop on the top ring of the Trade Quarter."
+# NOT TBC
 # == mal[36228]	   "Naznik's the local barber. He set up shop on the top ring of the Trade Quarter."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48579,9 +49305,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14903]
 # ## txt 0 (1)	=> "Michael Garrett tends the Undercity's bats. He's in the upper ring of the Trade Quarter."
+# NOT TBC
 # == mal[36229]	   "Michael Garrett tends the Undercity's bats. He's in the upper ring of the Trade Quarter."
 
 # ## txt 1 (1)	=> "The bat handler has his roost on the upper ring of the Trade Quarter. You can't miss the smell."
+# NOT TBC
 # == mal[36230]	   "The bat handler has his roost on the upper ring of the Trade Quarter. You can't miss the smell."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48590,6 +49318,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14904]
 # ## txt 0 (1)	=> "The battlemasters are stationed in the Royal Quarter; you'll find them around the throne room."
+# NOT TBC
 # == mal[36231]	   "The battlemasters are stationed in the Royal Quarter; you'll find them around the throne room."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48598,9 +49327,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14905]
 # ## txt 0 (1)	=> "James Van Brunt runs a decent forge in the War Quarter. He's on the inner ring."
+# NOT TBC
 # == mal[36233]	   "James Van Brunt runs a decent forge in the War Quarter. He's on the inner ring."
 
 # ## txt 1 (1)	=> "The blacksmith here works in the War Quarter, close to where his weapons will be put to use. He's there on the inner ring."
+# NOT TBC
 # == mal[36234]	   "The blacksmith here works in the War Quarter, close to where his weapons will be put to use. He's there on the inner ring."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48609,9 +49340,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14906]
 # ## txt 0 (1)	=> "Eunice Burch cooks what passes for food here over in the Trade Quarter. It's your stomach, not mine."
+# NOT TBC
 # == mal[36235]	   "Eunice Burch cooks what passes for food here over in the Trade Quarter. It's your stomach, not mine."
 
 # ## txt 1 (1)	=> "The cook around here is in the Trade Quarter. Her name's Eunice Burch."
+# NOT TBC
 # == mal[36236]	   "The cook around here is in the Trade Quarter. Her name's Eunice Burch."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48620,9 +49353,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14907]
 # ## txt 0 (1)	=> "Lavinia Crowe's the local enchanter. She's set up shop on the inner ring of the Apothecarium."
+# NOT TBC
 # == mal[36237]	   "Lavinia Crowe's the local enchanter. She's set up shop on the inner ring of the Apothecarium."
 
 # ## txt 1 (1)	=> "If you want to learn enchanting, go find Lavinia Crowe on the inner ring of the Apothecarium."
+# NOT TBC
 # == mal[36238]	   "If you want to learn enchanting, go find Lavinia Crowe on the inner ring of the Apothecarium."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48631,9 +49366,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14908]
 # ## txt 0 (1)	=> "The engineer here is called Franklin Lloyd. He tinkers in the Rogues' Quarter, on the outer ring."
+# NOT TBC
 # == mal[36239]	   "The engineer here is called Franklin Lloyd. He tinkers in the Rogues' Quarter, on the outer ring."
 
 # ## txt 1 (1)	=> "Look, if you want to go talk to those engineers on the outer ring of the Rogues' Quarter, it's your hide."
+# NOT TBC
 # == mal[36240]	   "Look, if you want to go talk to those engineers on the outer ring of the Rogues' Quarter, it's your hide."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48642,9 +49379,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14909]
 # ## txt 0 (1)	=> "Mary Edras is the one you want. She's set up at the inner ring of the Rogues' Quarter."
+# NOT TBC
 # == mal[36241]	   "Mary Edras is the one you want. She's set up at the inner ring of the Rogues' Quarter."
 
 # ## txt 1 (1)	=> "Even the walking dead need to mend themselves. Mary Edras handles it here. She's in the Rogues' Quarter, on the inner ring."
+# NOT TBC
 # == mal[36251]	   "Even the walking dead need to mend themselves. Mary Edras handles it here. She's in the Rogues' Quarter, on the inner ring."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48653,9 +49392,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14910]
 # ## txt 0 (1)	=> "The crazy fisherman is on the dock in the Magic Quarter."
+# NOT TBC
 # == mal[36252]	   "The crazy fisherman is on the dock in the Magic Quarter."
 
 # ## txt 1 (1)	=> "I don't know what he's trying to catch there, but Armand Cromwell is on the dock in the Magic Quarter."
+# NOT TBC
 # == mal[36257]	   "I don't know what he's trying to catch there, but Armand Cromwell is on the dock in the Magic Quarter."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48664,9 +49405,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14911]
 # ## txt 0 (1)	=> "The guild master is Christopher Drakul. He's on the eastern platform in the Trade Quarter."
+# NOT TBC
 # == mal[36258]	   "The guild master is Christopher Drakul. He's on the eastern platform in the Trade Quarter."
 
 # ## txt 1 (1)	=> "The guild master handles his business in the Trade Quarter. He's up on the eastern platform."
+# NOT TBC
 # == mal[36259]	   "The guild master handles his business in the Trade Quarter. He's up on the eastern platform."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48675,9 +49418,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14912]
 # ## txt 0 (1)	=> "The herbalist around here is Martha Alliestar. She's over on the inner ring of the Apothecarium."
+# NOT TBC
 # == mal[36260]	   "The herbalist around here is Martha Alliestar. She's over on the inner ring of the Apothecarium."
 
 # ## txt 1 (1)	=> "Head to the Apothecarium's inner ring. Martha Alliestar is there, and she'll instruct you in herbalism."
+# NOT TBC
 # == mal[36261]	   "Head to the Apothecarium's inner ring. Martha Alliestar is there, and she'll instruct you in herbalism."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48686,9 +49431,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14913]
 # ## txt 0 (1)	=> "The inn - if you can call it that - is on the upper ring of the Trade Quarter. They don't even have beds."
+# NOT TBC
 # == mal[36262]	   "The inn - if you can call it that - is on the upper ring of the Trade Quarter. They don't even have beds."
 
 # ## txt 1 (1)	=> "Innkeeper Norman keeps a dusty crack in the wall he calls an inn on the upper ring of the Trade Quarter."
+# NOT TBC
 # == mal[36263]	   "Innkeeper Norman keeps a dusty crack in the wall he calls an inn on the upper ring of the Trade Quarter."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48697,6 +49444,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14914]
 # ## txt 0 (1)	=> "The scribe of the city is in the Apothecarium, someone named Margaux Parchley."
+# NOT TBC
 # == mal[36264]	   "The scribe of the city is in the Apothecarium, someone named Margaux Parchley."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48705,9 +49453,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14915]
 # ## txt 0 (1)	=> "The city's leatherworker is in the inner ring of the Rogues' Quarter."
+# NOT TBC
 # == mal[36265]	   "The city's leatherworker is in the inner ring of the Rogues' Quarter."
 
 # ## txt 1 (1)	=> "Arthur Moore is the leatherworker. He tends the trainees over in the Rogues' Quarter, on the inner ring."
+# NOT TBC
 # == mal[36266]	   "Arthur Moore is the leatherworker. He tends the trainees over in the Rogues' Quarter, on the inner ring."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48716,6 +49466,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14916]
 # ## txt 0 (1)	=> "If you need keys, talk to Walter Soref in the Rogues' Quarter, but watch yourself."
+# NOT TBC
 # == mal[36267]	   "If you need keys, talk to Walter Soref in the Rogues' Quarter, but watch yourself."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48724,9 +49475,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14917]
 # ## txt 0 (1)	=> "Mages? They're in the Magic Quarter, in the central building. Thought you'd be smart enough to figure that out."
+# NOT TBC
 # == mal[36268]	   "Mages? They're in the Magic Quarter, in the central building. Thought you'd be smart enough to figure that out."
 
 # ## txt 1 (1)	=> "On the outer ring of the Magic Quarter you'll find a large, stepped building. That's where the mages hide."
+# NOT TBC
 # == mal[36269]	   "On the outer ring of the Magic Quarter you'll find a large, stepped building. That's where the mages hide."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48735,9 +49488,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14918]
 # ## txt 0 (1)	=> "The mailbox is in the Trade Quarter by that coffin storage closet they call an inn."
+# NOT TBC
 # == mal[36270]	   "The mailbox is in the Trade Quarter by that coffin storage closet they call an inn."
 
 # ## txt 1 (1)	=> "Mailbox? You want to head to the inn in the center of the city's upper ring. It's right there."
+# NOT TBC
 # == mal[36271]	   "Mailbox? You want to head to the inn in the center of the city's upper ring. It's right there."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48746,9 +49501,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14919]
 # ## txt 0 (1)	=> "If you want to learn to mine, talk to Brom Killian at the inner ring of the War Quarter."
+# NOT TBC
 # == mal[36272]	   "If you want to learn to mine, talk to Brom Killian at the inner ring of the War Quarter."
 
 # ## txt 1 (1)	=> "The miner here works in the War Quarter on the inner ring. His name's Brom Killian."
+# NOT TBC
 # == mal[36273]	   "The miner here works in the War Quarter on the inner ring. His name's Brom Killian."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48757,6 +49514,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14920]
 # ## txt 0 (1)	=> "If you want to find a paladin, you'll have to go to the Royal Quarter. There's some elf there who can teach you."
+# NOT TBC
 # == mal[36274]	   "If you want to find a paladin, you'll have to go to the Royal Quarter. There's some elf there who can teach you."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48765,9 +49523,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14921]
 # ## txt 0 (1)	=> "The priests are located on the outer ring of the War Quarter."
+# NOT TBC
 # == mal[36275]	   "The priests are located on the outer ring of the War Quarter."
 
 # ## txt 1 (1)	=> "Head to the War Quarter. The priests are there on the outer ring making sure no limb remains unattached for long."
+# NOT TBC
 # == mal[36276]	   "Head to the War Quarter. The priests are there on the outer ring making sure no limb remains unattached for long."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48776,9 +49536,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14922]
 # ## txt 0 (1)	=> "The rogues are in the Rogues' Quarter. Simple as that. Look for them on the outer ring."
+# NOT TBC
 # == mal[36277]	   "The rogues are in the Rogues' Quarter. Simple as that. Look for them on the outer ring."
 
 # ## txt 1 (1)	=> "Go to the outer ring of the Rogues' Quarter if you want to find rogues."
+# NOT TBC
 # == mal[36278]	   "Go to the outer ring of the Rogues' Quarter if you want to find rogues."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48787,9 +49549,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14923]
 # ## txt 0 (1)	=> "The skinner here is named Killian Hagey. He works in the Rogues' Quarter on the inner ring."
+# NOT TBC
 # == mal[36279]	   "The skinner here is named Killian Hagey. He works in the Rogues' Quarter on the inner ring."
 
 # ## txt 1 (1)	=> "If you want to learn how to skin things, head to the Rogues' Quarter. The skinner has his place on the inner ring."
+# NOT TBC
 # == mal[36281]	   "If you want to learn how to skin things, head to the Rogues' Quarter. The skinner has his place on the inner ring."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48798,9 +49562,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14924]
 # ## txt 0 (1)	=> "If you really trust some undead with your pets, you can talk to Anya Maulray at the inn on the upper ring of the Trade Quarter."
+# NOT TBC
 # == mal[36282]	   "If you really trust some undead with your pets, you can talk to Anya Maulray at the inn on the upper ring of the Trade Quarter."
 
 # ## txt 1 (1)	=> "You can talk to Anya Maulray up by the inn on the upper ring of the Trade Quarter. I wouldn't recommend it, but they're your pets."
+# NOT TBC
 # == mal[36283]	   "You can talk to Anya Maulray up by the inn on the upper ring of the Trade Quarter. I wouldn't recommend it, but they're your pets."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48809,9 +49575,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14925]
 # ## txt 0 (1)	=> "The tailor here's Josef Gregorian. He's in the Magic Quarter on the inner ring."
+# NOT TBC
 # == mal[36284]	   "The tailor here's Josef Gregorian. He's in the Magic Quarter on the inner ring."
 
 # ## txt 1 (1)	=> "Go to the Magic Quarter and head to the inner ring. The tailor's there."
+# NOT TBC
 # == mal[36285]	   "Go to the Magic Quarter and head to the inner ring. The tailor's there."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48820,9 +49588,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14926]
 # ## txt 0 (1)	=> "You have guts asking me about warlocks. Go to the Magic Quarter's outer ring and get out of my sight."
+# NOT TBC
 # == mal[36286]	   "You have guts asking me about warlocks. Go to the Magic Quarter's outer ring and get out of my sight."
 
 # ## txt 1 (1)	=> "You'll find the warlocks in the Magic Quarter's main building, but I better not hear of any trouble that comes of this."
+# NOT TBC
 # == mal[36287]	   "You'll find the warlocks in the Magic Quarter's main building, but I better not hear of any trouble that comes of this."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48831,9 +49601,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14927]
 # ## txt 0 (1)	=> "The warriors are in the War Quarter, practicing on the outer ring."
+# NOT TBC
 # == mal[36288]	   "The warriors are in the War Quarter, practicing on the outer ring."
 
 # ## txt 1 (1)	=> "In the War Quarter is where you'll find the warriors. Head to the outer ring there."
+# NOT TBC
 # == mal[36289]	   "In the War Quarter is where you'll find the warriors. Head to the outer ring there."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48842,9 +49614,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14928]
 # ## txt 0 (1)	=> "If you want to learn how to wield weapons, go to Archibald on the inner ring of the War Quarter."
+# NOT TBC
 # == mal[36290]	   "If you want to learn how to wield weapons, go to Archibald on the inner ring of the War Quarter."
 
 # ## txt 1 (1)	=> "Good to see someone wanting to learn something useful. Head to Archibald on the inner ring of the War Quarter."
+# NOT TBC
 # == mal[36291]	   "Good to see someone wanting to learn something useful. Head to Archibald on the inner ring of the War Quarter."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48853,9 +49627,11 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14929]
 # ## txt 0 (1)	=> "I don't blame you for wanting to get out of here. Go up topside and head north of the ruins. The zeppelins leave from the two towers there."
+# NOT TBC
 # == mal[36292]	   "I don't blame you for wanting to get out of here. Go up topside and head north of the ruins. The zeppelins leave from the two towers there."
 
 # ## txt 1 (1)	=> "The zeppelin towers are just north of the Undercity."
+# NOT TBC
 # == mal[36293]	   "The zeppelin towers are just north of the Undercity."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48864,12 +49640,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14931]
 # ## txt 0 (1)	=> "Surprised to see an orc here? Don't be.$b$bThe forsaken need watching. If we'd been paying closer attention from the start, maybe the Wrath Gate wouldn't have happened."
+# NOT TBC
 # == mal[36294]	   "Surprised to see an orc here? Don't be.$b$bThe forsaken need watching. If we'd been paying closer attention from the start, maybe the Wrath Gate wouldn't have happened."
 
 # ## txt 1 (1)	=> "Hope you're not looking for those abominations. The apothecaries can't be trusted, and that means none of their little constructs patrolling the halls. We're here to keep things safe."
+# NOT TBC
 # == mal[36295]	   "Hope you're not looking for those abominations. The apothecaries can't be trusted, and that means none of their little constructs patrolling the halls. We're here to keep things safe."
 
 # ## txt 2 (1)	=> "Lok'tar. Don't try anything suspicious around here. If these undead are going to be part of the Horde, they're going to mind themselves under our watch."
+# NOT TBC
 # == mal[36296]	   "Lok'tar. Don't try anything suspicious around here. If these undead are going to be part of the Horde, they're going to mind themselves under our watch."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48878,12 +49657,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14933]
 # ## txt 0 (1)	=> "What's wrong, bonebag? Looking for someone else? I'm all you've got now, so if you want something, make it quick."
+# NOT TBC
 # == mal[36297]	   "What's wrong, bonebag? Looking for someone else? I'm all you've got now, so if you want something, make it quick."
 
 # ## txt 1 (1)	=> "I bet you rotters thought you were pretty clever at the Wrath Gate, didn't you? Playtime's over. We're here to make sure you don't try anything."
+# NOT TBC
 # == mal[36307]	   "I bet you rotters thought you were pretty clever at the Wrath Gate, didn't you? Playtime's over. We're here to make sure you don't try anything."
 
 # ## txt 2 (1)	=> "I'll tell you what you need to know, but I don't have to like it. We're watching you and your kind."
+# NOT TBC
 # == mal[36308]	   "I'll tell you what you need to know, but I don't have to like it. We're watching you and your kind."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48892,6 +49674,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14934]
 # ## txt 0 (1)	=> "This pit stinks and I'm surrounded by snakes, but I'm here to do a job.$b$bEver since Putress pulled his stunt at the Wrath Gate, the Warchief doesn't trust these people as far as he can throw them. That's why we're here. The apothecaries can't do a thing without me."
+# NOT TBC
 # == mal[36309]	   "This pit stinks and I'm surrounded by snakes, but I'm here to do a job.$b$bEver since Putress pulled his stunt at the Wrath Gate, the Warchief doesn't trust these people as far as he can throw them. That's why we're here. The apothecaries can't do a thing without me."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48900,6 +49683,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14940]
 # ## txt 0 (1)	=> "It's true our new... guests are limiting our work somewhat, but it is only natural to be wary when a genocidal attempt is made. Perhaps in time they will be convinced that Putress was an unfortunate anomaly and allow us to continue our work in peace."
+# NOT TBC
 # == mal[36321]	   "It's true our new... guests are limiting our work somewhat, but it is only natural to be wary when a genocidal attempt is made. Perhaps in time they will be convinced that Putress was an unfortunate anomaly and allow us to continue our work in peace."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48908,6 +49692,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [14984]
 # ## txt 0 (1)	=> "I suppose I should not be surprised at this cold reception. We have long been in hiding, and the separation from our brethren was necessary.$b$bThat time, however, is done. Whether the residents of this young tree come to accept us or not, the Highborne are returning to light, and we will not turn our backs on what we are."
+# NOT TBC
 # == mal[36456]	   "I suppose I should not be surprised at this cold reception. We have long been in hiding, and the separation from our brethren was necessary.$b$bThat time, however, is done. Whether the residents of this young tree come to accept us or not, the Highborne are returning to light, and we will not turn our backs on what we are."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48916,6 +49701,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15005]
 # ## txt 0 (1)	=> "You'll want to look in the Undercity. In the old Ruins of Lordaeron, south of here, you'll find an elevator down. Once you're there, ask an Undercity Guardian for further directions."
+# NOT TBC
 # == mal[36516]	   "You'll want to look in the Undercity. In the old Ruins of Lordaeron, south of here, you'll find an elevator down. Once you're there, ask an Undercity Guardian for further directions."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48924,6 +49710,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15037]
 # ## txt 0 (1)	=> "There are some who do not believe in the legendary Night Elf Mohawks.$B$BI pity the fools."
+# NOT TBC
 # == mal[36639]	   "There are some who do not believe in the legendary Night Elf Mohawks.$B$BI pity the fools."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48932,6 +49719,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15038]
 # ## txt 0 (1)	=> "Well met, fellow Mohawk $GBrother:Sister;."
+# NOT TBC
 # == mal[36642]	   "Well met, fellow Mohawk $GBrother:Sister;."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48944,6 +49732,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15066]
 # ## txt 0 (1)	=> "Are you surprised to see me here? Everyone needs clean laundry, and what better way to do it than with your own water elemental?$B$BSimply bring your laundry, pay a nominal fee, and before you know it, everything will be fresh and clean!"
+# NOT TBC
 # == mal[36759]	   "Are you surprised to see me here? Everyone needs clean laundry, and what better way to do it than with your own water elemental?$B$BSimply bring your laundry, pay a nominal fee, and before you know it, everything will be fresh and clean!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48952,6 +49741,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15074]
 # ## txt 0 (1)	=> "What is your business here, $c?"
+# NOT TBC
 # == mal[36822]	   "What is your business here, $c?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48960,6 +49750,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15076]
 # ## txt 0 (1)	=> "Never trust the Sunreavers. They are hard at work undermining us in the eyes of our Argent Crusade allies."
+# NOT TBC
 # == mal[36825]	   "Never trust the Sunreavers. They are hard at work undermining us in the eyes of our Argent Crusade allies."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48968,6 +49759,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15077]
 # ## txt 0 (1)	=> "There you are! I was beginning to think that the Sunreavers had intercepted you. Are you ready to deliver the tome to our representatives in Icecrown?"
+# NOT TBC
 # == mal[36828]	   "There you are! I was beginning to think that the Sunreavers had intercepted you. Are you ready to deliver the tome to our representatives in Icecrown?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48976,14 +49768,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15081]
 # ## txt 0 (1)	=> "I cannot hold him for long, we must leave at once!"
-# == fem[37169]	   "I cannot hold him for long, we must leave at once!"
+# NOT TBC
+# == fem[36886]	   "I cannot hold him for long, we must leave at once!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (15081, 1, 37169);
+ VALUES (15081, 1, 36886);
 
 # -------------------------------------------------------------------------------- [15101]
 # ## txt 0 (1)	=> "The old wounds still linger, $g lad:lass;. I can feel 'em in me bones, even now. Aye, I got a score to settle with Arthas and ye can believe I'm gonna give that boy the beatin' I shoulda given 'im when he was a wee lad. Always knew there was something wrong with 'im.$B$BTell me when yer crew is ready and we'll lift off for the top o' the citadel.$B$BArthas won't be expectin' this!"
+# NOT TBC
 # == mal[36919]	   "The old wounds still linger, $g lad:lass;. I can feel 'em in me bones, even now. Aye, I got a score to settle with Arthas and ye can believe I'm gonna give that boy the beatin' I shoulda given 'im when he was a wee lad. Always knew there was something wrong with 'im.$B$BTell me when yer crew is ready and we'll lift off for the top o' the citadel.$B$BArthas won't be expectin' this!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -48992,6 +49786,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15103]
 # ## txt 0 (1)	=> "This is our final stand. What happens here will echo through the ages. Regardless of outcome, they will know that we fought with honor. That we fought for the freedom and safety of our people.$B$BRemember, hero, fear is your greatest enemy in these befouled halls. Steel your heart and your soul will shine brighter than a thousand suns. The enemy will falter at the sight of you. They will fall as the light of righteousness envelops them!"
+# NOT TBC
 # == mal[36923]	   "This is our final stand. What happens here will echo through the ages. Regardless of outcome, they will know that we fought with honor. That we fought for the freedom and safety of our people.$B$BRemember, hero, fear is your greatest enemy in these befouled halls. Steel your heart and your soul will shine brighter than a thousand suns. The enemy will falter at the sight of you. They will fall as the light of righteousness envelops them!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49000,6 +49795,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15119]
 # ## txt 0 (1)	=> "Your jormungar can only move if you've submerged beneath the snow, but it cannot attack while submerged. Once your jormungar emerges, it can use its powerful acid attack to wear through the armor of the Iron Colossus. Be ready to submerge to escape from the Iron Colossus's most devastating attacks."
+# NOT TBC
 # == mal[36974]	   "Your jormungar can only move if you've submerged beneath the snow, but it cannot attack while submerged. Once your jormungar emerges, it can use its powerful acid attack to wear through the armor of the Iron Colossus. Be ready to submerge to escape from the Iron Colossus's most devastating attacks."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49008,6 +49804,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15123]
 # ## txt 0 (1)	=> "Lost your Rocket Pack? Have you checked your bags?"
+# NOT TBC
 # == mal[36986]	   "Lost your Rocket Pack? Have you checked your bags?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49020,6 +49817,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15134]
 # ## txt 0 (1)	=> "Why you're just the $c I was looking for! I'm testing a new rocket-powered flying device, and I need your help!$B$BJust take one of these harnesses and put it on under your armor. Hit the button on the side, and BOOM, off you go.$B$BDon't go trying to steal my work though. Each of these babies is fitted with a Transponster 8000 linked to the one in my hand. If you get too far from me the Transponster will shut down the main rocket and you'll be unable to lift off until you return.$B$BNow where did I put those liability forms?"
+# NOT TBC
 # -- mal[37025]	   "Why you're just the $c I was looking for! I'm testing a new rocket-powered flying device, and I need your help!$bJust take one of these harnesses and put it on under your armor. Hit the button on the side, and BOOM, off you go.$bDon't go trying to steal my work though. Each of these babies is fitted with a Transponster 8000 linked to the one in my hand. If you get too far from me the Transponster will shut down the main rocket and you'll be unable to lift off until you return.$bNow where did I put those liability forms?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49028,6 +49826,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15152]
 # ## txt 0 (1)	=> "I will delay here until more reinforcements arrive, but you have to keep moving. We won't have much time until Arthas realizes we're here."
+# NOT TBC
 # -- fem[37116]	   "I will delay here until more reinforcements arrive, but you have to keep moving.$B$BWe won't have much time until Arthas realizes we're here."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49036,6 +49835,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15155]
 # ## txt 0 (1)	=> "These appear to be the remains of Thalorien Dawnseeker, the last wielder of Quel'Delar."
+# NOT TBC
 # == mal[37148]	   "These appear to be the remains of Thalorien Dawnseeker, the last wielder of Quel'Delar."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49044,14 +49844,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15157]
 # ## txt 0 (1)	=> "I cannot hold him for long, we must leave at once!"
-# == fem[37169]	   "I cannot hold him for long, we must leave at once!"
+# NOT TBC
+# == fem[36886]	   "I cannot hold him for long, we must leave at once!"
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (15157, 1, 37169);
+ VALUES (15157, 1, 36886);
 
 # -------------------------------------------------------------------------------- [15158]
 # ## txt 0 (1)	=> "Ready yourself, $c.$b$bThe time has come for the Lich King's reign to come to an end."
+# NOT TBC
 # == mal[37179]	   "Ready yourself, $c.$b$bThe time has come for the Lich King's reign to come to an end."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49060,6 +49862,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15160]
 # ## txt 0 (1)	=> "Speak with Alchemist Finklestein, $c. He can set you on the path.$b$bDemonstrate your loyalty and their methods shall be made known to you."
+# NOT TBC
 # == mal[37183]	   "Speak with Alchemist Finklestein, $c. He can set you on the path.$b$bDemonstrate your loyalty and their methods shall be made known to you."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49068,6 +49871,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15166]
 # ## txt 0 (1)	=> "The Lich King is near, $n. His voice taunts me...$b$bLet us silence him at last!"
+# NOT TBC
 # == mal[37195]	   "The Lich King is near, $n. His voice taunts me...$b$bLet us silence him at last!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49076,6 +49880,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15170]
 # ## txt 0 (1)	=> "Yo! I'm here representing the Crown Chemical Company.$B$BYou looking for a gift? A job? Maybe a little something for yourself? Well, you've come to the right place, friend.$B$BIf I don't have what you need, our mascot Kwee or the Lovely Merchant beside me will."
+# NOT TBC
 # == mal[37227]	   "Yo! I'm here representing the Crown Chemical Company.$B$BYou looking for a gift? A job? Maybe a little something for yourself? Well, you've come to the right place, friend.$B$BIf I don't have what you need, our mascot Kwee or the Lovely Merchant beside me will."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49084,6 +49889,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15171]
 # ## txt 0 (1)	=> "We'll make use of these supplies to get everyone ready for a fight.$B$BContinue on. We'll meet you ahead."
+# NOT TBC
 # == mal[37229]	   "We'll make use of these supplies to get everyone ready for a fight.$B$BContinue on. We'll meet you ahead."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49092,6 +49898,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15172]
 # ## txt 0 (1)	=> "I'll gather up the rest of slaves and get them ready to fight. We'll catch up with you before you engage Scourgelord Tyrannus."
+# NOT TBC
 # == mal[37230]	   "I'll gather up the rest of slaves and get them ready to fight. We'll catch up with you before you engage Scourgelord Tyrannus."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49100,6 +49907,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15174]
 # ## txt 0 (1)	=> "We will follow your lead, heroes. The Scourgelord will die this eve."
+# NOT TBC
 # == mal[37235]	   "We will follow your lead, heroes. The Scourgelord will die this eve."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49108,6 +49916,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15188]
 # ## txt 0 (1)	=> "Hey, pal, I don't know who you are or why you've been following me around, but I'm about to board a ship and I want to be left alone, got it?"
+# NOT TBC
 # == mal[37366]	   "Hey, pal, I don't know who you are or why you've been following me around, but I'm about to board a ship and I want to be left alone, got it?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49116,6 +49925,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15189]
 # ## txt 0 (1)	=> "Forgive me, heroes. I should have listened to Uther. I... I just had to see for myself. To look into his eyes one last time. I am sorry."
+# NOT TBC
 # == fem[36990]	   "Forgive me, heroes. I should have listened to Uther. I... I just had to see for myself. To look into his eyes one last time. I am sorry."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49124,6 +49934,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15190]
 # ## txt 0 (1)	=> "We are safe... for now. His strength has increased tenfold since our last battle. It will take a mighty army to destroy the Lich King. An army greater than even the Horde can rouse."
+# NOT TBC
 # == fem[37171]	   "We are safe... for now. His strength has increased tenfold since our last battle. It will take a mighty army to destroy the Lich King. An army greater than even the Horde can rouse."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49132,6 +49943,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15191]
 # ## txt 0 (1)	=> "I will delay here until more reinforcements arrive, but you must keep moving. Arthas will soon realize that we're here."
+# NOT TBC
 # == fem[37397]	   "I will delay here until more reinforcements arrive, but you must keep moving. Arthas will soon realize that we're here."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49140,6 +49952,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15194]
 # ## txt 0 (1)	=> "'Twas a fierce battle, $N! Take a moment to rest and gather yer forces. Who knows what lies beyond that door?$B$BLet me know when yer ready and we'll begin our ascent into the upper reaches of the citadel."
+# NOT TBC
 # == mal[37445]	   "'Twas a fierce battle, $n! Take a moment to rest and gather yer forces. Who knows what lies beyond that door?$B$BLet me know when yer ready and we'll begin our ascent into the upper reaches of the citadel."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49148,6 +49961,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15195]
 # ## txt 0 (1)	=> "Are ye sure, $g lad:lass;? Ye don't need another minute or two?"
+# NOT TBC
 # == mal[37447]	   "Are ye sure, $g lad:lass;? Ye don't need another minute or two?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49156,6 +49970,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15206]
 # ## txt 0 (1)	=> "We have no time to waste, $c. Why do you delay here?"
+# NOT TBC
 # == fem[37548]	   "We have no time to waste, $c. Why do you delay here?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49164,6 +49979,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15207]
 # ## txt 0 (1)	=> "We do not have much time, hero. What do you need?"
+# NOT TBC
 # == fem[37550]	   "We do not have much time, hero. What do you need?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49172,6 +49988,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15209]
 # ## txt 0 (1)	=> "<He looks at the rocket and flashes a nervous grin.>$b$bOkay, yeah, so maybe I made a couple rockets for some guys. So what? The gold was good and I was paid for my work. It's not like anyone died. That's about as honest as work gets. What's it to you?"
+# NOT TBC
 # == mal[37554]	   "<He looks at the rocket and flashes a nervous grin.>$b$bOkay, yeah, so maybe I made a couple rockets for some guys. So what? The gold was good and I was paid for my work. It's not like anyone died. That's about as honest as work gets. What's it to you?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49180,6 +49997,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15210]
 # ## txt 0 (1)	=> "Look, I don't know, okay? I don't know!$b$bI just got paid to make rockets that deliver an airborne chemical payload, and that's what I did. Job's done, pal. They're all made, packaged, and sent off. I got the money and I was TRYING to enjoy myself a little when you started chasing me all over town. I don't have any more of that chemical and I don't know what it was."
+# NOT TBC
 # == mal[37556]	   "Look, I don't know, okay? I don't know!$b$bI just got paid to make rockets that deliver an airborne chemical payload, and that's what I did. Job's done, pal. They're all made, packaged, and sent off. I got the money and I was TRYING to enjoy myself a little when you started chasing me all over town. I don't have any more of that chemical and I don't know what it was."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49188,6 +50006,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15211]
 # ## txt 0 (1)	=> "You expect me to remember all that off the top of my head? Look. They didn't pay me enough to put up with this, and the contract only asked for my silence. So I'm just gonna drop my ledger on the floor here, and you're going to take it and leave me alone.$b$bGot it?"
+# NOT TBC
 # == mal[37558]	   "You expect me to remember all that off the top of my head? Look. They didn't pay me enough to put up with this, and the contract only asked for my silence. So I'm just gonna drop my ledger on the floor here, and you're going to take it and leave me alone.$b$bGot it?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49196,6 +50015,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15212]
 # ## txt 0 (1)	=> "Did you know about our "Charitable Charms" program?$B$BOfficial Crown event mascots like myself are authorized to distribute Lovely Charm Collector's Kits.$B$BYou can then use the Lovely Charms you gather to create Lovely Charm Bracelets for friends and loved ones, or turn them in to Lovely Merchants for Love Tokens!$B$BOne popular activity is making bracelets for your favorite leaders to let them know they're appreciated and adored..."
+# NOT TBC
 # == mal[37559]	   "Did you know about our "Charitable Charms" program?$B$BOfficial Crown event mascots like myself are authorized to distribute Lovely Charm Collector's Kits.$B$BYou can then use the Lovely Charms you gather to create Lovely Charm Bracelets for friends and loved ones, or turn them in to Lovely Merchants for Love Tokens!$B$BOne popular activity is making bracelets for your favorite leaders to let them know they're appreciated and adored..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49204,6 +50024,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15214]
 # ## txt 0 (1)	=> "Whatever you need, Brazie Getz! Get it?$B$BAnd I'm not just talkin' about the "legal" stuff, either. WHATEVER YOU NEED, PAL! Anything..."
+# NOT TBC
 # == mal[37563]	   "Whatever you need, Brazie Getz! Get it?$B$BAnd I'm not just talkin' about the "legal" stuff, either. WHATEVER YOU NEED, PAL! Anything..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49212,14 +50033,16 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15215]
 # ## txt 0 (1)	=> "Standing this close to the blade that ended my life... The pain... It is renewed."
-# == fem[37569]	   "Standing this close to the blade that ended my life... The pain... It is renewed."
+# NOT TBC
+# == fem[37564]	   "Standing this close to the blade that ended my life... The pain... It is renewed."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (15215, 1, 37569);
+ VALUES (15215, 1, 37564);
 
 # -------------------------------------------------------------------------------- [15217]
 # ## txt 0 (1)	=> "Brave soldier of the Horde, I salute you! We would have surely been destroyed by the Alliance gunship had it not been for you and your allies.$B$BTake a moment to rest before we begin our assault upon the upper reaches of the citadel."
+# NOT TBC
 # == mal[37630]	   "Brave soldier of the Horde, I salute you! We would have surely been destroyed by the Alliance gunship had it not been for you and your allies.$B$BTake a moment to rest before we begin our assault upon the upper reaches of the citadel."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49228,6 +50051,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15218]
 # ## txt 0 (1)	=> "Are you sure, $N? We must face the Scourge at full strength if we are to succeed. If you do not require more rest, we will begin."
+# NOT TBC
 # == mal[37632]	   "Are you sure, $n? We must face the Scourge at full strength if we are to succeed. If you do not require more rest, we will begin."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49236,6 +50060,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15219]
 # ## txt 0 (1)	=> "I have heard tale of my boy being here. That he's now a powerful death knight in service of the Lich King. If this is true, then it must be me that ends the bloodline.$B$BMy charge now is to command Orgrim's Hammer to the top of Icecrown Citadel and destroy all Scourge that get in our way. We leave when you and your allies are ready."
+# NOT TBC
 # == mal[37636]	   "I have heard tale of my boy being here. That he's now a powerful death knight in service of the Lich King. If this is true, then it must be me that ends the bloodline.$B$BMy charge now is to command Orgrim's Hammer to the top of Icecrown Citadel and destroy all Scourge that get in our way. We leave when you and your allies are ready."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49244,6 +50069,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15221]
 # ## txt 0 (1)	=> "The transporter glimmers with a crystalline light."
+# NOT TBC
 # == mal[37670]	   "The transporter glimmers with a crystalline light."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49252,6 +50078,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15240]
 # ## txt 0 (1)	=> "I will escort you into the Sunwell when you're ready."
+# NOT TBC
 # == mal[37804]	   "I will escort you into the Sunwell when you're ready."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49260,6 +50087,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15256]
 # ## txt 0 (1)	=> "I don't like the look of this 'Crown Chemical Co.' one bit."
+# NOT TBC
 # == mal[37929]	   "I don't like the look of this 'Crown Chemical Co.' one bit."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49268,6 +50096,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15282]
 # ## txt 0 (1)	=> "Don't you have some packages to move?"
+# NOT TBC
 # == mal[38025]	   "Don't you have some packages to move?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49276,6 +50105,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15284]
 # ## txt 0 (1)	=> "Something stinks, and for once it's not my socks."
+# NOT TBC
 # == mal[38037]	   "Something stinks, and for once it's not my socks."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49284,6 +50114,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15287]
 # ## txt 0 (1)	=> "Truly an amazing sword, don't you think? That's no weapon of dwarven make, no, it's far more ancient than that.$B$BThese Sunreaver and Silver Covenant representatives seem intent on getting to the bottom of the mystery. I'm already working on a report for Brann."
+# NOT TBC
 # == mal[38105]	   "Truly an amazing sword, don't you think? That's no weapon of dwarven make, no, it's far more ancient than that.$B$BThese Sunreaver and Silver Covenant representatives seem intent on getting to the bottom of the mystery. I'm already working on a report for Brann."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49292,6 +50123,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15290]
 # ## txt 0 (1)	=> "Long have I waited for this day, hero. Are you and your allies prepared to bring the Lich King to justice? We charge on your command!"
+# NOT TBC
 # == mal[38129]	   "Long have I waited for this day, hero. Are you and your allies prepared to bring the Lich King to justice? We charge on your command!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49329,6 +50161,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15297]
 # ## txt 0 (1)	=> "A self-inflicted wound, friend. I could not bear to look upon a world where I'd committed so many horrors under the Lich King's grasp.$B$BIt was my first step towards redemption, and if my sins are unforgivable, then I will attempt to atone for them for the rest of my life."
+# NOT TBC
 # == mal[38225]	   "A self-inflicted wound, friend. I could not bear to look upon a world where I'd committed so many horrors under the Lich King's grasp.$B$BIt was my first step towards redemption, and if my sins are unforgivable, then I will attempt to atone for them for the rest of my life."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49337,6 +50170,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15298]
 # ## txt 0 (1)	=> "I was once a paladin, $N. Now the Light shuns me, for my sins are too great.$B$BI will aid my allies as best I can, but never again will I wield the powers of darkness."
+# NOT TBC
 # == mal[38224]	   "I was once a paladin, $n. Now the Light shuns me, for my sins are too great.$B$BI will aid my allies as best I can, but never again will I wield the powers of darkness."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49345,6 +50179,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15310]
 # ## txt 0 (1)	=> "Finally, the backup I've been waiting for! I prepared the paperwork that Snagglebolt requested. All that remains is for someone to serve it."
+# NOT TBC
 # == mal[38293]	   "Finally, the backup I've been waiting for! I prepared the paperwork that Snagglebolt requested. All that remains is for someone to serve it."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49353,6 +50188,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15319]
 # ## txt 0 (1)	=> "Varimathras? No, he hasn't reported in for some time. No doubt he's off on an errand of importance for his queen."
+# NOT TBC
 # == mal[38319]	   "Varimathras? No, he hasn't reported in for some time. No doubt he's off on an errand of importance for his queen."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49361,6 +50197,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15320]
 # ## txt 0 (1)	=> "While Varimathras is, uh... away, I've been assigned to assist Captain Bragor in his duties."
+# NOT TBC
 # == mal[38320]	   "While Varimathras is, uh... away, I've been assigned to assist Captain Bragor in his duties."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49369,6 +50206,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15321]
 # ## txt 0 (1)	=> "With the bulk of Undercity's forces deployed to Vengeance Landing in Northrend, the Warchief has sent us to reinforce the city's defenses."
+# NOT TBC
 # == mal[38321]	   "With the bulk of Undercity's forces deployed to Vengeance Landing in Northrend, the Warchief has sent us to reinforce the city's defenses."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49377,6 +50215,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15339]
 # ## txt 0 (1)	=> "Frostmourne: the blade that destroyed our kingdom..."
+# NOT TBC
 # == fem[37593]	   "Frostmourne: the blade that destroyed our kingdom..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49385,6 +50224,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15340]
 # ## txt 0 (1)	=> "After countless failures of our agents to secure workable samples of Scourge blight for analysis, I've come up to the front lines myself to oversee the efforts. Like they say, if you want a job done right...."
+# NOT TBC
 # == fem[38385]	   "After countless failures of our agents to secure workable samples of Scourge blight for analysis, I've come up to the front lines myself to oversee the efforts. Like they say, if you want a job done right...."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49393,6 +50233,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15343]
 # ## txt 0 (1)	=> "This is incredible! You're covered in potent, virulent, fantastic blight! Please, allow me to harvest these pristine samples. I will remove any lingering infection from your allies as well, and reward you all for your bravery and self-sacrifice in the name of medicine! Let me know if you are ready to proceed.$B$B[Before proceeding, make sure that ALL raid members are nearby in order for them to receive credit for your accomplishment.]"
+# NOT TBC
 # -- fem[38390]	   "This is incredible! You're covered in potent, virulent, fantastic blight! Please, allow me to harvest these pristine samples. I will remove any lingering infection from your allies as well, and reward you all for your bravery and self-sacrifice in the name of medicine! Let me know if you are ready to proceed.$b[Before proceeding, make sure that ALL raid members are nearby in order for them to receive credit for your accomplishment.]"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49401,6 +50242,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15379]
 # ## txt 0 (1)	=> "Mortals, you have saved me from a fate worse than death. Left to their devices, the sorcerers of the Lich King would have broken my will eventually, and condemned me to a tortured eternity of unlife. Ahead of you lies one who was not so fortunate: the once-proud consort of Malygos, Sindragosa.$B$BMortally wounded after Neltharion's betrayal and left to die alone in the snows of Icecrown, she exists now as a being of pure hatred. And yet, beneath those layers of malevolence still remains the noble spirit of a dragon queen. I believe there is yet hope that Sindragosa's soul may find peaceful respite."
+# NOT TBC
 # == fem[38497]	   "Mortals, you have saved me from a fate worse than death. Left to their devices, the sorcerers of the Lich King would have broken my will eventually, and condemned me to a tortured eternity of unlife. Ahead of you lies one who was not so fortunate: the once-proud consort of Malygos, Sindragosa.$B$BMortally wounded after Neltharion's betrayal and left to die alone in the snows of Icecrown, she exists now as a being of pure hatred. And yet, beneath those layers of malevolence still remains the noble spirit of a dragon queen. I believe there is yet hope that Sindragosa's soul may find peaceful respite."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49409,6 +50251,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15400]
 # ## txt 0 (1)	=> "You are astute to ask, young $c. Scribes are capable of inscribing tarot cards of great power, although even they do not have full control of what they make. The fates decide for them.$b$bIf you manage to obtain a completed deck, please bring it to me for a magnificent reward."
+# NOT TBC
 # == mal[38604]	   "You are astute to ask, young $c. Scribes are capable of inscribing tarot cards of great power, although even they do not have full control of what they make. The fates decide for them.$b$bIf you manage to obtain a completed deck, please bring it to me for a magnificent reward."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49417,6 +50260,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15412]
 # ## txt 0 (1)	=> "We got the final barrier blockin' entry to Frostwing Halls down, $g lad:lass;. Only Sindragosa stands between the Lich King and divine retribution! What are ye waitin' for?!"
+# NOT TBC
 # == mal[38655]	   "We got the final barrier blockin' entry to Frostwing Halls down, $g lad:lass;. Only Sindragosa stands between the Lich King and divine retribution! What are ye waitin' for?!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49425,6 +50269,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15415]
 # ## txt 0 (1)	=> "All barriers are now down, $N! Only Sindragosa stands between the Lich King and us. Justice comes soon..."
+# NOT TBC
 # == mal[38658]	   "All barriers are now down, $n! Only Sindragosa stands between the Lich King and us. Justice comes soon..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49433,6 +50278,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15432]
 # ## txt 0 (1)	=> "Anywhere but here..."
+# NOT TBC
 # == mal[38735]	   "Anywhere but here..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49441,6 +50287,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15445]
 # ## txt 0 (1)	=> "Greetings, hero. I craft and sell Freya's Lasherweave armor for druids."
+# NOT TBC
 # == mal[38806]	   "Greetings, hero. I craft and sell Freya's Lasherweave armor for druids."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49449,6 +50296,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15446]
 # ## txt 0 (1)	=> "Greetings, hero. I craft and sell Frost Witch armor for shaman.$B"
+# NOT TBC
 # == mal[38809]	   "Greetings, hero. I craft and sell Frost Witch armor for shaman.$b"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49457,6 +50305,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15447]
 # ## txt 0 (1)	=> "Greetings, hero. I craft and sell Shadowblade armor for rogues.$B"
+# NOT TBC
 # == mal[38810]	   "Greetings, hero. I craft and sell Shadowblade armor for rogues.$b"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49465,6 +50314,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15449]
 # ## txt 0 (1)	=> "Greetings, hero. I craft and sell Ahn'kahar Blood Hunter armor for hunters."
+# NOT TBC
 # == mal[38811]	   "Greetings, hero. I craft and sell Ahn'kahar Blood Hunter armor for hunters."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49473,6 +50323,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15450]
 # ## txt 0 (1)	=> "Greetings, hero. I craft and sell Ymirjar Lord's armor for warriors."
+# NOT TBC
 # == mal[38812]	   "Greetings, hero. I craft and sell Ymirjar Lord's armor for warriors."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49481,6 +50332,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15451]
 # ## txt 0 (1)	=> "Greetings, hero. I craft and sell Lightsworn armor for paladins.$B"
+# NOT TBC
 # == mal[38813]	   "Greetings, hero. I craft and sell Lightsworn armor for paladins.$b"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49489,6 +50341,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15452]
 # ## txt 0 (1)	=> "Greetings, hero. I craft and sell Crimson Acolyte armor for priests.$B"
+# NOT TBC
 # == mal[38814]	   "Greetings, hero. I craft and sell Crimson Acolyte armor for priests.$b"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49497,6 +50350,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15453]
 # ## txt 0 (1)	=> "Greetings, hero. I craft and sell Bloodmage armor for magi.$B"
+# NOT TBC
 # == mal[38815]	   "Greetings, hero. I craft and sell Bloodmage armor for magi.$b"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49505,6 +50359,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15454]
 # ## txt 0 (1)	=> "Greetings, hero. I craft and sell Dark Coven armor for warlocks.$B"
+# NOT TBC
 # == mal[38816]	   "Greetings, hero. I craft and sell Dark Coven armor for warlocks.$b"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49513,6 +50368,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15532]
 # ## txt 0 (1)	=> "On behalf of the illustrious and still neutral Steamwheedle Cartel, I hope you enjoy your stay.$B$BRemember, everyone is welcome in Gadgetzan! Everyone except pirates."
+# NOT TBC
 # == mal[39180]	   "On behalf of the illustrious and still neutral Steamwheedle Cartel, I hope you enjoy your stay.$B$BRemember, everyone is welcome in Gadgetzan! Everyone except pirates."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49521,6 +50377,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15578]
 # ## txt 0 (1)	=> "At last it is time for the exiled gnomes to return.$B$BOnce again Gnomeregan will be our home!"
+# NOT TBC
 # == mal[39317]	   "At last it is time for the exiled gnomes to return.$B$BOnce again Gnomeregan will be our home!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49529,6 +50386,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15580]
 # ## txt 0 (1)	=> "The dwarves have kept us safe in their home for some time now, and for that we thank them. However, the traitorous Thermaplugg's occupation of our home must at last come to an end.$B$BGnomeregan has festered beneath the atomic weight of our ill-conceived plan for too long. The detonation of the radiation bombs drove us from our city, but we now possess the technology to take it back!$B$BWe will regain what is ours... and bring Thermaplugg to justice!"
+# NOT TBC
 # == mal[39324]	   "The dwarves have kept us safe in their home for some time now, and for that we thank them. However, the traitorous Thermaplugg's occupation of our home must at last come to an end.$B$BGnomeregan has festered beneath the atomic weight of our ill-conceived plan for too long. The detonation of the radiation bombs drove us from our city, but we now possess the technology to take it back!$B$BWe will regain what is ours... and bring Thermaplugg to justice!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49537,6 +50395,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15581]
 # ## txt 0 (1)	=> "Operation: Gnomeregan is divided into a number of phases:$B$BFirst, we must retake the air tower. This will allow our planes give us air support as we move towards Gnomeregan's main entrance.$B$BIn addition, a cache of mechanized Battle Suits was discovered in one of the nearby buildings. Once we have those suits, our assault on the entrance should be unstoppable.$B$BThen, we go straight for Thermaplugg in the heart of Gnomeregan!"
+# NOT TBC
 # == mal[39326]	   "Operation: Gnomeregan is divided into a number of phases:$B$BFirst, we must retake the air tower. This will allow our planes give us air support as we move towards Gnomeregan's main entrance.$B$BIn addition, a cache of mechanized Battle Suits was discovered in one of the nearby buildings. Once we have those suits, our assault on the entrance should be unstoppable.$B$BThen, we go straight for Thermaplugg in the heart of Gnomeregan!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49545,6 +50404,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15602]
 # ## txt 0 (1)	=> "The continued sacrifice of the Ashen Verdict and heroes such as yourself bring us all closer to final victory. Now I have come to Icecrown Citadel to lend aid to those who fight against the Scourge. Together we will end the tyranny of the Lich King!"
+# NOT TBC
 # == mal[39400]	   "The continued sacrifice of the Ashen Verdict and heroes such as yourself bring us all closer to final victory. Now I have come to Icecrown Citadel to lend aid to those who fight against the Scourge. Together we will end the tyranny of the Lich King!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49553,6 +50413,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15603]
 # ## txt 0 (1)	=> "You can do this alone, you say? Is this simple foolishness or misplaced confidence I see before me?$B$BNo, I can see it in your eyes. You have to know. You have to prove to yourself that you can do this alone. Very well. I will retreat from the battlefield if you so wish it."
+# NOT TBC
 # -- mal[39402]	   "You can do this alone, you say? Is this simple foolishness or misplaced confidence I see before me?$bNo, I can see it in your eyes. You have to know. You have to prove to yourself that you can do this alone. Very well. I will retreat from the battlefield if you so wish it."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49561,6 +50422,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15604]
 # ## txt 0 (1)	=> "You will need more than bravery to defeat the Lich King. Good luck."
+# NOT TBC
 # == mal[39406]	   "You will need more than bravery to defeat the Lich King. Good luck."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49569,6 +50431,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15605]
 # ## txt 0 (1)	=> "Your choice has been made. Whether you live or die by that choice is now up to you."
+# NOT TBC
 # == mal[39407]	   "Your choice has been made. Whether you live or die by that choice is now up to you."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49577,6 +50440,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15606]
 # ## txt 0 (1)	=> "With the Warsong Offensive here in Icecrown Citadel, victory is within our grasp! The death of the Lich King will bring glory to the Horde!"
+# NOT TBC
 # == mal[39417]	   "With the Warsong Offensive here in Icecrown Citadel, victory is within our grasp! The death of the Lich King will bring glory to the Horde!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49585,6 +50449,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15607]
 # ## txt 0 (1)	=> "Your choice was bold! I respect your desire for glory and honor! Die well, $N!"
+# NOT TBC
 # == mal[39423]	   "Your choice was bold! I respect your desire for glory and honor! Die well, $n!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49593,6 +50458,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15615]
 # ## txt 0 (1)	=> "Looks just powerful enough to carry one gnome. Maybe two."
+# NOT TBC
 # == mal[39463]	   "Looks just powerful enough to carry one gnome. Maybe two."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49601,6 +50467,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15704]
 # ## txt 0 (1)	=> "That's right, I've seen you here before! How could I forget? I can teleport you to Stratholme now, if you wish."
+# NOT TBC
 # -- fem[39668]	   "That's right, I've seen you here before! How could I forget?$B$BI can teleport you to Stratholme now, if you wish."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49609,6 +50476,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15779]
 # ## txt 0 (1)	=> "I'm only here in case someone faints. The new recruits get a little excited and occasionally overexert themselves.$B$B...well, that, and sometimes one of the new mechano-tank prototypes explode. Whoops!"
+# NOT TBC
 # -- mal[40012]	   "I'm only here in case someone faints. The new recruits get a little excited and occasionally overexert themselves.$b...well, that, and sometimes one of the new mechano-tank prototypes explode. Whoops!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49617,6 +50485,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15796]
 # ## txt 0 (1)	=> "I be one of da first to answer Vol'jin's call to arms. Will you be joinin' us?"
+# NOT TBC
 # == fem[40165]	   "I be one of da first to answer Vol'jin's call to arms. Will you be joinin' us?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49625,6 +50494,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15806]
 # ## txt 0 (1)	=> "If ya need a bat, ya come to da right place. I be handlin' all de bats for de scouts."
+# NOT TBC
 # == mal[40208]	   "If ya need a bat, ya come to da right place. I be handlin' all de bats for de scouts."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49633,6 +50503,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15846]
 # ## txt 0 (1)	=> "May de spirits guide ya, $c."
+# NOT TBC
 # == mal[40384]	   "May de spirits guide ya, $c."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49641,6 +50512,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15853]
 # ## txt 0 (1)	=> "I'm tellin' you, that Corin Direbrew's a madman.$B$BIt's not MY fault he didn't get invited to compete at Brewfest! But that didn't stop him and all his Dark Iron cronies from roughin' up my employees and drinking all my brew.$B$BSomeone's got to put an end to this!"
+# NOT TBC
 # oo mal[40421]	   "I'm tellin' you, that Coren Direbrew's a madman.$bIt's not MY fault he didn't get invited to compete at Brewfest! But that didn't stop him and all his Dark Iron cronies from roughin' up my employees and drinking all my brew.$bSomeone's got to put an end to this!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49649,6 +50521,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15855]
 # ## txt 0 (1)	=> "The Frost Lord, Ahune, must be stopped.$B$BEven now he is taking form, summoned from his elemental prison by the mad cultists of the Twilight's Hammer.$B$BIf he's allowed to enter our world completely, he'll bury us beneath an eternal winter."
+# NOT TBC
 # -- fem[40424]	   "The Frost Lord, Ahune, must be stopped.$bEven now he is taking form, summoned from his elemental prison by the mad cultists of the Twilight's Hammer.$bIf he's allowed to enter our world completely, he'll bury us beneath an eternal winter."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49657,6 +50530,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15858]
 # ## txt 0 (1)	=> "Ye've got some stones, $glad:lass;, comin' in here unannounced.$b$bWhat do ye want?"
+# NOT TBC
 # -- mal[40430]	   "Ye've got some stones, $glad:lass;, comin' in here unannounced.$bWhat do ye want?"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49665,6 +50539,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15859]
 # ## txt 0 (1)	=> "What?! What did ye say?! How dare ye! Me beer can stand up to any of that rot they serve at Brewfest!$B$BYou'll pay for this insult, $c!"
+# NOT TBC
 # -- mal[40432]	   "What?! What did ye say?! How dare ye! Me beer can stand up to any of that rot they serve at Brewfest!$bYou'll pay for this insult, $c!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49673,6 +50548,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15863]
 # ## txt 0 (1)	=> "Welcome to Tinker Town!"
+# NOT TBC
 # == mal[40441]	   "Welcome to Tinker Town!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49681,14 +50557,15 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15864]
 # ## txt 0 (1)	=> "This shard of ice echoes the deep, cracking rumble of invading glaciers. Its cold turns your thoughts to a lifeless, endless winter."
-# == mal[40442]	   "This shard of ice echoes the deep, cracking rumble of invading glaciers. Its cold turns your thoughts to a lifeless, endless winter."
+# == mal[25213]	   "This shard of ice echoes the deep, cracking rumble of invading glaciers. Its cold turns your thoughts to a lifeless, endless winter."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (15864, 1, 40442);
+ VALUES (15864, 1, 25213);
 
 # -------------------------------------------------------------------------------- [15865]
 # ## txt 0 (1)	=> "Zalazane's time be runnin' out. De Echo Isles will belong to de Darkspear Tribe again!"
+# NOT TBC
 # == mal[40448]	   "Zalazane's time be runnin' out. De Echo Isles will belong to de Darkspear Tribe again!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49697,6 +50574,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15866]
 # ## txt 0 (1)	=> "De Darkspears have a home again! An' we couldn't have done it wit'out ya helpin', $N. Now, we celebrate!"
+# NOT TBC
 # == mal[40449]	   "De Darkspears have a home again! An' we couldn't have done it wit'out ya helpin', $n. Now, we celebrate!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49705,6 +50583,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15868]
 # ## txt 0 (1)	=> "It's my job to ensure that this whole assault runs like clockwork.$B$BHigh Tinker Mekkatorque is out in the field now, but he's scheduled to come back to get some more troops any time now. $B$BHe's never late, so just stick around and he'll be here."
+# NOT TBC
 # == fem[40462]	   "It's my job to ensure that this whole assault runs like clockwork.$B$BHigh Tinker Mekkatorque is out in the field now, but he's scheduled to come back to get some more troops any time now. $B$BHe's never late, so just stick around and he'll be here."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49713,6 +50592,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15870]
 # ## txt 0 (1)	=> "Hurry! You should talk to Mekkatorque! If we don't start the assault soon, we're going to be late.$B$BAnd my boss HATES it when we're late!"
+# NOT TBC
 # == fem[40466]	   "Hurry! You should talk to Mekkatorque! If we don't start the assault soon, we're going to be late.$B$BAnd my boss HATES it when we're late!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49721,6 +50601,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15873]
 # ## txt 0 (1)	=> "Vol'jin told me ta keep hittin' da drum till he gets back. If ya be waitin' for him, he'd be back soon to take back da Isles.$B$BJust wait here and enjoy da music!"
+# NOT TBC
 # == mal[40471]	   "Vol'jin told me ta keep hittin' da drum till he gets back. If ya be waitin' for him, he'd be back soon to take back da Isles.$B$BJust wait here and enjoy da music!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49729,6 +50610,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15876]
 # ## txt 0 (1)	=> "We'd be gettin' ready to take back da Echo Isles. Zalazane has been workin' his voodoo magic for some time, convincing folks dat he be dead and performing ancient dark rituals.$B$BHe knows we'd be coming, so we have ta make sure we be prepared."
+# NOT TBC
 # == mal[40481]	   "We'd be gettin' ready to take back da Echo Isles. Zalazane has been workin' his voodoo magic for some time, convincing folks dat he be dead and performing ancient dark rituals.$B$BHe knows we'd be coming, so we have ta make sure we be prepared."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49737,6 +50619,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [15877]
 # ## txt 0 (1)	=> "We require da help of allies on da islands.$B$BZen'tabra has been watching over da animals of de Islands for some time now. We'd need her help and da help of da animal creatures.$B$BBwonsamdi is a powerful loa dat controls de spirits of de dead on da islands. His blessing is crucial for our attack.$B$BOnce our allies have joined us, Zalazane and his army of mind-controlled trolls will have no chance! Then, da Echo Isles will be de Darkspears!"
+# NOT TBC
 # == mal[40482]	   "We require da help of allies on da islands.$B$BZen'tabra has been watching over da animals of de Islands for some time now. We'd need her help and da help of da animal creatures.$B$BBwonsamdi is a powerful loa dat controls de spirits of de dead on da islands. His blessing is crucial for our attack.$B$BOnce our allies have joined us, Zalazane and his army of mind-controlled trolls will have no chance! Then, da Echo Isles will be de Darkspears!"
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49754,10 +50637,10 @@ INSERT INTO `npc_text_broadcast_text`
 # -------------------------------------------------------------------------------- [15906]
 # ## txt 0 (0)	=> "You will find a pair of draenei conversing with Tyrande Whisperwind in the upper level of The Temple of the Moon.$B$BThey will know how to help you."
 # ## NONE FOUND
-# 40591 ?
 
 # -------------------------------------------------------------------------------- [15921]
 # ## txt 0 (1)	=> "Dedicated to those that fell to the Scourge during the war in the frozen wastes."
+# NOT TBC
 # == mal[40657]	   "Dedicated to those that fell to the Scourge during the war in the frozen wastes."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49766,6 +50649,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [16211]
 # ## txt 0 (1)	=> "Ach, it's hard enough keeping order around here without all these new troubles popping up! I hope you have good news, $n..."
+# NOT TBC
 # == mal[42172]	   "Ach, it's hard enough keeping order around here without all these new troubles popping up! I hope you have good news, $n..."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49774,6 +50658,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [17880]
 # ## txt 0 (100)	=> "This teleporter will transport you to Grom'gol in Northern Stranglethorn.$B$BUsually.$B$BI mean, sometimes it'll just disintegrate you, or reduce all your soft tissues into a greenish, foul-smelling mist, but mostly it's safe!$B$B...mostly."
+# NOT TBC
 # == mal[50915]	   "This teleporter will transport you to Grom'gol in Northern Stranglethorn.$B$BUsually.$B$BI mean, sometimes it'll just disintegrate you, or reduce all your soft tissues into a greenish, foul-smelling mist, but mostly it's safe!$B$B...mostly."
 
 INSERT INTO `npc_text_broadcast_text`
@@ -49793,14 +50678,14 @@ INSERT INTO `npc_text_broadcast_text`
 # oo mal[18256]	   "I hope this damned thing works. *Araxes pounds on the portable transponder.*"
 
 # ## txt 1 (0)	=> "Weve located the mark, commander. Ya-six and i have been seperated. Requesting backup."
-# HAND mal [18268] 	'We\'ve located the mark, commander. Ya-six and I have been separated. Requesting backup.'
+# HAND mal[18268] 'We\'ve located the mark, commander. Ya-six and I have been separated. Requesting backup.'
 
 # ## txt 2 (0)	=> "I cant follow the tracers back out, too many flesh beasts in the way.Send someone in... Follow the tracers... Ya-Six out."
 # oo mal[18282]	   "I can't follow the tracers back out, too many flesh beasts in the way. Send someone in... Follow the tracers... Ya-six, out."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0, Prob1, BroadcastTextId1, Prob2, BroadcastTextId2)
- VALUES (20551, 0, 18256, 1, 18268, 0, 18282);
+ VALUES (20551, 0, 18256, 0, 18268, 0, 18282);
 
 # -------------------------------------------------------------------------------- [20564]
 # ## txt 0 (0)	=> "Araxes, come in....Are you there Araxes? Visibility is nil, Warp storms blocking us."
@@ -49824,15 +50709,14 @@ INSERT INTO `npc_text_broadcast_text`
 # -------------------------------------------------------------------------------- [22932]
 # ## txt 0 (0)	=> "Rokkaram, is that you?$B$BForgive me for questioning you, my son. My sight isn't what it once was, but the raven has blessed me with a long life. Soon it will be time for you to take my place. I have taught you all I know. $B$BMy only regret is that I didn't prove worthy enough to recover our sacred Book of the Raven.The true believers have lived in shame since the day our treacherous cousins in Skettis stole the book from us, shattered its tablet, and buried the fragments in their wretched city!$B$BPray that the raven will choose you to restore it, my son. Be faithful and remember always the prophecy, "From the dreams of his enemies shall the raven spring forth into the world.""
 # ## NONE FOUND
-# 20637 ? very short
 
 # -------------------------------------------------------------------------------- [22990]
 # ## txt 0 (1)	=> "Be wary, friends. The Betrayer meditates in the court just beyond."
-# == mal[21555]	   "Be wary, friends. The Betrayer meditates in the court just beyond."
+# == mal[20902]	   "Be wary, friends. The Betrayer meditates in the court just beyond."
 
 INSERT INTO `npc_text_broadcast_text`
  (Id, Prob0, BroadcastTextId0)
- VALUES (22990, 1, 21555);
+ VALUES (22990, 1, 20902);
 
 # -------------------------------------------------------------------------------- [24404]
 # ## txt 0 (0)	=> "Is this the best they could do?$B$B<Omarion musters the strength to laugh.>$B$BYou do not possess the resolve to face a monster like Kel'Thuzad. You will crumble before his minions - just like those that have come before you...$B$BLeave me here to die. I refuse to return to a world that champions the likes of you."
@@ -49980,11 +50864,7 @@ INSERT INTO `npc_text_broadcast_text`
 
 # -------------------------------------------------------------------------------- [31023]
 # ## txt 0 (1)	=> "Hello, $N. What can I do for you?"
-# -- mal[46117]	   "Oh, ahh... hello there, good traveler! What can this fine goblin do for you today?$b$bI'll assure you that I'm here in Light's Hope Chapel solely due to my hatred of the Scourge which I share with these Argent Crusaders, and definitely not because I'm running away from any sort of embrarassing zeppelin crash!$b$bI'll stop talking now, before I implicate myself any further!"
-
-INSERT INTO `npc_text_broadcast_text`
- (Id, Prob0, BroadcastTextId0)
- VALUES (31023, 1, 46117);
+# NONE FOUND
 
 # -------------------------------------------------------------------------------- [50216]
 # ## txt 0 (1)	=> "You're a one-$g man : woman; rescue machine. That's three of my Farstriders that you've saved now!"
@@ -50059,15 +50939,13 @@ INSERT INTO `npc_text_broadcast_text`
 # ## TOO MUCH
 
 
-# ################################################################################
-# some stats #
-# script :
-# 5956 lines (entries) for npc_text (total text ids: 6844 ; found, exact: 6471, near & far: 245)
+# script:
+# 5956 lines for npc_text (total text ids: 6844, exact: 6471, near & far: 245)
 # 6716 texts ok => 98.1% (entry can have several texts)
 #
-# after :
-# 5891 "INSERT" => 65 are missing (98.9% entries are ok)
-# 40 "# HAND"
-# 65 "# NONE FOUND" (32 "Missing US text")
-# 12 "# TOO MUCH"
+# after:
+# 5888 "INSERT" => 68 are missing (98.9% entries are ok)
+# 66 "# NONE FOUND" (33 "Missing US text")
+# 13 "# TOO MUCH"
+# 885 "# NOT TBC"
 
