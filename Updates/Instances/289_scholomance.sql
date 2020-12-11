@@ -117,7 +117,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+398, 8, 197.166, -0.002156, 115.708, 0, 0, 0),
 (@CGUID+398, 9, 172.25, -0.72485, 115.708, 0, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (11551,14500);
+DELETE FROM creature_movement_template WHERE entry IN (11551);
+DELETE FROM creature_movement_template WHERE entry IN (14500) AND `pathId`=0; -- Also has movement path in Dire Maul, map 429
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 (11551, 0, 1, 206.346, 80.7189, 104.244, 100, 0, 0),
 (11551, 0, 2, 221.189, 86.5182, 104.715, 100, 0, 0),
@@ -129,17 +130,17 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (11551, 0, 8, 199.444, 69.7478, 104.716, 100, 0, 0),
 -- movement for J'eevee during q.7629 Imp Delivery
 (14500, 0, 1, 38.784, 160.639, 83.545, 100, 0, 0),
-(14500, 0, 2, 36.804, 160.705, 83.545, 100, 3000, 1450002),
+(14500, 0, 2, 36.804, 160.705, 83.545, 100, 3000, 1450001),
 (14500, 0, 3, 39.287, 160.044, 83.545, 100, 0, 0),
 (14500, 0, 4, 41.666, 154.591, 83.545, 100, 0, 0),
 (14500, 0, 5, 45.255, 155.014, 83.545, 100, 0, 0),
 (14500, 0, 6, 44.93, 161.186, 83.545, 100, 0, 0),
-(14500, 0, 7, 44.347, 161.12, 83.545, 100, 4000, 1450007),
+(14500, 0, 7, 44.347, 161.12, 83.545, 100, 4000, 1450002),
 (14500, 0, 8, 46.758, 157.877, 83.545, 100, 0, 0),
 (14500, 0, 9, 44.64, 154.405, 83.545, 100, 0, 0),
 (14500, 0, 10, 33.498, 156.046, 83.545, 100, 0, 0),
 (14500, 0, 11, 28.269, 160.792, 83.545, 100, 4000, 0),
-(14500, 0, 12, 33.294, 160.895, 83.545, 100, 10000, 1450012);
+(14500, 0, 12, 33.294, 160.895, 83.545, 100, 10000, 1450003);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+61, 0, 0, 1, 16, 0, 0, '12380'), -- Scholomance Adept
@@ -768,16 +769,17 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1043201,1450002,1450007,1450012);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1043201);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1450001,1450002,1450003);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1043201, 1000, 0, 0, 0, 0, 0, 0, 0, 2000005027, 0, 0, 0, 0, 0, 0, 0, ''),
 (1043201, 10000, 0, 0, 0, 0, 0, 0, 0, 2000005028, 0, 0, 0, 0, 0, 0, 0, ''),
 (1043201, 20000, 0, 0, 0, 0, 0, 0, 0, 2000005029, 0, 0, 0, 0, 0, 0, 0, ''),
-(1450002, 0, 0, 0, 0, 0, 0, 0, 0, 2000007714, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 2 on reach wp 2 (Scholomance)'),
-(1450007, 0, 0, 0, 0, 0, 0, 0, 0, 2000007715, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 3 on reach wp 7 (Scholomance)'),
-(1450012, 4000, 0, 0, 0, 0, 0, 0, 0, 2000007716, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 4 on reach wp 12 (Scholomance)'),
-(1450012, 7000, 15, 41232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee cast teleport on reach wp 12 (Scholomance)'),
-(1450012, 8000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee despawn self on reach wp 12 (Scholomance)');
+(1450001, 0, 0, 0, 0, 0, 0, 0, 0, 2000007714, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 2 on reach wp 2 (Scholomance)'),
+(1450002, 0, 0, 0, 0, 0, 0, 0, 0, 2000007715, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 3 on reach wp 7 (Scholomance)'),
+(1450003, 4000, 0, 0, 0, 0, 0, 0, 0, 2000007716, 0, 0, 0, 0, 0, 0, 0, 'J''eevee say 4 on reach wp 12 (Scholomance)'),
+(1450003, 7000, 15, 41232, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee cast teleport on reach wp 12 (Scholomance)'),
+(1450003, 8000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J''eevee despawn self on reach wp 12 (Scholomance)');
 
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10503, 1000, 0, 0, 0, 0, 0, 0, 0, 2000000612, 0, 0, 0, 0, 0, 0, 0, ''),

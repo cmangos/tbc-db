@@ -68,6 +68,10 @@ UPDATE `gameobject` SET `position_z` = 133.60325 WHERE `guid` = 132224 AND `id` 
 -- Make object 181444 (Kel'Thuzad Trigger) despawnable on usage
 UPDATE gameobject_template SET data4=1 WHERE entry=181444;
 
+-- Ritual Candle Aura
+UPDATE gameobject_template SET `data8`=1 WHERE entry=179688; -- add serverside attribute so that it's not visible to players
+UPDATE gameobject_template SET `faction`=1375 WHERE entry=179688; -- "Treasure" faction 1375 here is guessed based on when patch 1.4 was released, and the fact that it's hostile to Demon faction 90
+
 -- ============================================================
 -- TBC section
 -- ============================================================
