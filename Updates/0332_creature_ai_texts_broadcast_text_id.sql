@@ -10,26 +10,39 @@ UPDATE creature_ai_texts SET broadcast_text_id = 13560 WHERE entry = -104;
 
 # --------------------------------------------------------------------------------
 # ## tab -321	=> "Iman m t'ief fu Fus'obeah italaf"
-# NONE FOUND
+# HAND mal[1910] 'Have a taste of Frostmane magics.' (from AnonXS)
+
+UPDATE creature_ai_texts SET broadcast_text_id = 1910 WHERE entry = -321;
 
 # --------------------------------------------------------------------------------
 # ## tab -374	=> "[Dwarvish] Dum mos"
-# NONE FOUND
+# https://classic.wowhead.com/npc=2149/dark-iron-raider
+# quotes : "Time to die, <class>."
+# HAND mal[1935] 'Time to die, $C.'
+
+UPDATE creature_ai_texts SET broadcast_text_id = 1935 WHERE entry = -374;
 
 # --------------------------------------------------------------------------------
 # ## tab -376	=> "[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg"
+# COMMENT : "Orc Common Text"
 # NONE FOUND
 
 # --------------------------------------------------------------------------------
 # ## tab -377	=> "[Orcish] Tago mog regas gi mog Tov'nokaz Kagg"
+# COMMENT : "Orc Common Text"
 # NONE FOUND
 
 # --------------------------------------------------------------------------------
 # ## tab -388	=> "Hearty Kill!"
-# TOO MUCH
+# https://classic.wowhead.com/npc=4831/lady-sarevess
+# quotes : "Paltry kill."
+# HAND fem[6170] 'Paltry kill.'
+
+UPDATE creature_ai_texts SET broadcast_text_id = 6170 WHERE entry = -388;
 
 # --------------------------------------------------------------------------------
 # ## tab -548	=> "Arrrhhh...Guards!"
+# COMMENT "Common Horde Flight Master"
 # NONE FOUND
 
 # --------------------------------------------------------------------------------
@@ -38,7 +51,11 @@ UPDATE creature_ai_texts SET broadcast_text_id = 13560 WHERE entry = -104;
 
 # --------------------------------------------------------------------------------
 # ## tab -817	=> "So or'manley fi siame Dim fus siame yudo"
-# NONE FOUND
+# https://60.wowfan.net/en/?npc=8580
+# quotes : "[Troll] My banishment is ended! Let the blood flow!"
+# HAND mal[4485] 'My banishment is ended! Let the blood flow!'
+
+UPDATE creature_ai_texts SET broadcast_text_id = 4485 WHERE entry = -817;
 
 # --------------------------------------------------------------------------------
 # ## tab -853	=> "Vanquish the weak!"
