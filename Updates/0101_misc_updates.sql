@@ -23,9 +23,6 @@ UPDATE creature_template SET ExtraFlags=ExtraFlags|4096 WHERE Entry=21417; -- In
 -- trinity broadcast text id 8106 (wotlk+ version): On the northern dock, you can board a ship that will carry you to Rut'theran Village and Darnassus.  From the southern dock, you can find passage across the Great Sea to Stormwind Harbor.  The dock to the west, at the end of the pier, leads to Azuremyst Isle, near the Exodar. Safe journeys to you!
 
 -- my hunch here is that broadcast text id 8106 content changed 2 times - once in TBC and once in WotLK, we don't know what the exact text should be for TBC era
--- UPDATE npc_text SET text0_0='On the northern dock, you can board a ship that will carry you to Rut''theran Village and Darnassus.  From the southern dock, you can find passage across the Great Sea to Menethil Harbor on Khaz Modan.  The dock to the west, at the end of the pier, leads to Azuremyst Isle, near the Exodar.  Safe journeys to you!' WHERE id=5480;
--- broadcast text 8106 updated to assumed TBC version in core SQL file
-DELETE FROM `npc_text` WHERE `Id`=5480;
-INSERT INTO `npc_text_broadcast_text` (`Id`, `Prob0`, `BroadcastTextId0`) VALUES (5480, 1, 8106);
+
 
 
