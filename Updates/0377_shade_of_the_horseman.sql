@@ -80,8 +80,9 @@ UPDATE creature_template SET UnitFlags=768+33554432, InhabitType=7 WHERE Entry=2
 -- -----------------------------
 -- these two texts were different before 3.0 changes were made to the event
 -- the npc_text and broadcast_text data in tbc-db incorrectly had the 3.0 version
-UPDATE broadcast_text SET text1='The Headless Horseman''s undead mind is obsessed!  During Hallow''s End, his attacks on this village are as rhythmic as his insane voice.  He will return in roughly $4676D.' WHERE id=22061; -- Alliance
-UPDATE broadcast_text SET text1='The Headless Horseman''s mind is plagued with dementia!  During Hallow''s End, his attacks on this village are as rhythmic as his insane voice.$B$BHe will return in roughly $4676D.' WHERE id=22528; -- Horde
+-- UPDATE broadcast_text SET text1='The Headless Horseman''s undead mind is obsessed!  During Hallow''s End, his attacks on this village are as rhythmic as his insane voice.  He will return in roughly $4676D.' WHERE id=22061; -- Alliance
+-- UPDATE broadcast_text SET text1='The Headless Horseman''s mind is plagued with dementia!  During Hallow''s End, his attacks on this village are as rhythmic as his insane voice.$B$BHe will return in roughly $4676D.' WHERE id=22528; -- Horde
+-- updates performed in core SQL file
 
 -- In WotLK, the Large Jack-o'-Lantern 186887 offers two daily quests:
 -- Smash the Pumpkin 12133 (Alliance) / 12155 (Horde)
