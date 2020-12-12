@@ -40,12 +40,12 @@ REPLACE INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 (9115,12322,0,10311); -- monument progress
 
 DELETE FROM gossip_menu_option WHERE menu_id IN(9303,9304,9305,9306,9307);
-INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id, promo_code_group_id) VALUES
-('9303', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0', '0'),
-('9304', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0', '0'),
-('9305', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0', '0'),
-('9306', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0', '0'),
-('9307', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0', '0');
+INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
+('9303', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
+('9304', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
+('9305', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
+('9306', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
+('9307', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0');
 
 DELETE FROM gossip_menu_option WHERE menu_id IN(9046) AND id IN(0,1,2,3);
 INSERT INTO gossip_menu_option(menu_id,id,option_text,option_broadcast_text,option_id,npc_option_npcflag,action_menu_id,condition_id) VALUES
