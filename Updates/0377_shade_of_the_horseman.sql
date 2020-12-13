@@ -136,7 +136,8 @@ INSERT INTO item_loot_template (entry, item, ChanceOrQuestChance, groupid, minco
 (34077, 20388, 0, 3, 1, 1, 0, 'Lollipop');
 
 -- the first text of the jack-o-lantern was slightly different in TBC
-UPDATE broadcast_text SET `text`="This large jack-o'-lantern rests in the middle of the village.  It eyes those who look up it, betraying a dark menace within." WHERE id=23650;
+-- UPDATE broadcast_text SET `text`="This large jack-o'-lantern rests in the middle of the village.  It eyes those who look up it, betraying a dark menace within." WHERE id=23650;
+-- update performed in core SQL file
 
 /*
 -- -----------------------------
