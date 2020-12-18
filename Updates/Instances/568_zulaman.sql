@@ -637,15 +637,15 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 -- Hex Lord Malacrass
 (@CGUID+368, @CGUID+369, 1167), -- Amani'shi Berserker -> Amani'shi Berserker
-(@CGUID+369, @CGUID+366, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass
+(@CGUID+369, @CGUID+366, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass (Speech Trigger)
 
 (@CGUID+54, @CGUID+406, 1167), -- Amani'shi Medicine Man -> Amani'shi Tempest
 (@CGUID+409, @CGUID+406, 1167), -- Amani'shi Flame Caster -> Amani'shi Tempest
 (@CGUID+437, @CGUID+406, 1167), -- creature_spawn_entry -> Amani'shi Tempest
-(@CGUID+406, @CGUID+366, 1024), -- Amani'shi Tempest -> Hex Lord Malacrass
+(@CGUID+406, @CGUID+366, 1024), -- Amani'shi Tempest -> Hex Lord Malacrass (Speech Trigger)
 
 (@CGUID+370, @CGUID+371, 1167), -- Amani'shi Berserker -> Amani'shi Berserker
-(@CGUID+371, @CGUID+366, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass
+(@CGUID+371, @CGUID+366, 1024), -- Amani'shi Berserker -> Hex Lord Malacrass (Speech Trigger)
 
 -- Nalorakk
 (@CGUID+326, @CGUID+50, 1679), -- Amani'shi Wind Walker -> Amani'shi Medicine Man
@@ -1261,8 +1261,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+363, 24312, 568, 1, -206.665, 1135.72, 0.211828, 3.35103, 7200, 7200, 0, 0, 0, 0), -- Dragonhawk Egg
 (@CGUID+364, 24325, 568, 1, 192.938, 1422.35, 15.7245, 5.91667, 7200, 7200, 0, 0, 0, 0), -- Eagle Troll Spawn Target
 (@CGUID+365, 24358, 568, 1, 120.687, 1674, 42.0217, 1.59044, 7200, 7200, 0, 0, 0, 0), -- Harrison Jones
-(@CGUID+366, 24363, 568, 1, 118.8317, 1009.857, 67.82713, 4.869469, 7200, 7200, 0, 0, 0, 0), -- Hex Lord Malacrass (Speech Trigger)
-(@CGUID+367, 24363, 568, 1, 116.2857, 1277.441, -15.26866, 4.590216, 7200, 7200, 0, 0, 0, 0), -- Hex Lord Malacrass (Speech Trigger)
+(@CGUID+366, 24363, 568, 1, 118.8317, 1009.857, 67.82713, 4.869469, 259200, 259200, 0, 0, 0, 0), -- Hex Lord Malacrass (Speech Trigger)
+(@CGUID+367, 24363, 568, 1, 116.2857, 1277.441, -15.26866, 4.590216, 259200, 259200, 0, 0, 0, 0), -- Hex Lord Malacrass (Speech Trigger)
 (@CGUID+368, 24374, 568, 1, 130.0015, 1071.3330, 24.10230, 1.531324, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Berserker					// Spawn Event with Movement?
 (@CGUID+369, 24374, 568, 1, 108.6336, 1069.8063, 24.35230, 1.637809, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Berserker					// Spawn Event with Movement?
 (@CGUID+370, 24374, 568, 1, 127.3527, 976.71862, 31.15251, 1.762782, 7200, 7200, 0, 0, 0, 0), -- Amani'shi Berserker
