@@ -864,15 +864,15 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+414, @CGUID+44, 1024), -- Amani'shi Guardian -> Halazzi
 
 (@CGUID+410, @CGUID+411, 1679), -- Amani'shi Guardian -> Amani'shi Guardian
-(@CGUID+411, @CGUID+44, 1024), -- Amani'shi Guardian -> Halazzi
+(@CGUID+411, @CGUID+44, 1025), -- Amani'shi Guardian -> Halazzi
 
 (@CGUID+116, @CGUID+95, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
 (@CGUID+434, @CGUID+95, 1167), -- Amani'shi Handler -> Amani'shi Flame Caster
-(@CGUID+95, @CGUID+44, 1024), -- Amani'shi Flame Caster -> Halazzi
+(@CGUID+95, @CGUID+44, 1025), -- Amani'shi Flame Caster -> Halazzi
 
 (@CGUID+416, @CGUID+408, 1167), -- Amani'shi Guardian -> Amani'shi Flame Caster
 (@CGUID+436, @CGUID+408, 1167), -- Amani'shi Handler -> Amani'shi Flame Caster
-(@CGUID+408, @CGUID+44, 1024), -- Amani'shi Flame Caster -> Halazzi
+(@CGUID+408, @CGUID+44, 1025), -- Amani'shi Flame Caster -> Halazzi
 
 -- Zul'jin
 (@CGUID+479, @CGUID+254, 17415), -- Amani'shi Savage -> Zul'jin
