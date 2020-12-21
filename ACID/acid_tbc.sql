@@ -29074,10 +29074,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2537101','25371','4','0','100','0','0','0','0','0','0','0','52','3','0','0','11','46565','0','3','0','0','0','0','Sunblade Dawn Priest - Interrupt Channelling and Cast Holyform on Aggro'),
 ('2537102','25371','0','0','100','1025','6000','10000','8000','17000','0','0','11','46564','0','0','0','0','0','0','0','0','0','0','Sunblade Dawn Priest - Cast Holy Nova'),
 ('2537103','25371','14','0','100','1025','50000','100','4000','5000','15000','17000','11','46563','12','0','0','0','0','0','0','0','0','0','Sunblade Dawn Priest - Cast Renew on Friendly Missing HP'),
--- Sunblade Scout 25372
-('2537201','25372','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','42459','0','34','0','0','0','0','Sunblade Slayer - Cast Invisibility and Stealth Detection and Dual Wield (Passive) on Spawn'),
-('2537202','25372','4','0','100','0','0','0','0','0','0','0','11','46475','0','1','0','0','0','0','0','0','0','0','Sunblade Scout - Cast Activate Sunblade Protector on Aggro'),
-('2537203','25372','9','0','100','1025','0','5','6000','9000','0','0','11','46558','1','0','0','0','0','0','0','0','0','0','Sunblade Scout - Cast Sinister Strike'),
+-- Sunblade Scout 25372 - npc_sunblade_scout
 -- Shadowsword Soulbinder 25373 - CoE only on Tank when everyone else is dead, 2537301 unconfirmed
 ('2537301','25373','4','0','66','32','0','0','0','0','0','0','11','46229','15','0','11','46241','15','0','0','0','0','0','Shadowsword Soulbinder - Random Cast Summon Blazing Infernal or Summon Felguard Slayer on Aggro'),
 ('2537302','25373','0','0','100','1025','17000','27000','15000','25000','0','0','11','46427','17','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Domination'),
@@ -29105,8 +29102,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shadowsword Lifeshaper 25506
 ('2550601','25506','0','0','100','1025','25000','35000','40000','70000','0','0','11','46466','1','0','0','0','0','0','0','0','0','0','Shadowsword Lifeshaper - Cast Drain Life'),
 ('2550602','25506','14','0','100','1025','75000','25','45000','60000','0','0','11','46467','12','0','0','0','0','0','0','0','0','0','Shadowsword Lifeshaper - Cast Health Funnel on Friendly Missing HP'),
--- Sunblade Protector 25507
-('2550701','25507','0','0','100','1025','3000','6000','2500','7500','0','0','11','46480','4','0','0','0','0','0','0','0','0','0','Sunblade Protector - Cast Fel Lightning'),
+-- Sunblade Protector 25507 - npc_sunblade_protector
 -- Shadowsword Guardian 25508
 ('2550801','25508','4','0','100','0','0','0','0','0','0','0','11','46932','0','34','0','0','0','0','0','0','0','0','Shadowsword Guardian - Cast Earthquake on Aggro'),
 ('2550802','25508','0','0','100','1025','15000','20000','15000','30000','0','0','11','46239','8','0','0','0','0','0','0','0','0','0','Shadowsword Guardian - Cast Bear Down'),
