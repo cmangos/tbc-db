@@ -28363,7 +28363,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shade of Aran (16524) - boss_shade_of_aran
 -- Spell Shade 16525
 ('1652501','16525','1','0','100','0','0','0','0','0','0','0','11','29920','0','0','0','0','0','0','0','0','0','0','Spell Shade - Cast Phasing Invisibility on OOC'),
-('1652502','16525','9','0','100','1025','0','40','2400','3200','0','0','11','29925','1','256','11','29926','1','256','11','29927','1','256','Spell Shade - Random Cast Fireball or Frostbolt or Shadowbolt'),
+('1652502','16525','9','0','100','1057','0','40','2400','3200','0','0','11','29925','1','256','11','29926','1','256','11','29927','1','256','Spell Shade - Random Cast Fireball or Frostbolt or Shadowbolt'),
 -- Sorcerous Shade
 ('1652601','16526','4','0','100','0','0','0','0','0','0','0','11','29923','0','0','0','0','0','0','0','0','0','0','Sorcerous Shade - Cast Frostbolt Volley on Aggro'),
 ('1652602','16526','0','0','100','1025','5000','8000','10000','15000','0','0','11','29923','0','0','0','0','0','0','0','0','0','0','Sorcerous Shade - Cast Frostbolt Volley'),
@@ -29078,11 +29078,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2537201','25372','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','11','42459','0','34','0','0','0','0','Sunblade Slayer - Cast Invisibility and Stealth Detection and Dual Wield (Passive) on Spawn'),
 ('2537202','25372','4','0','100','0','0','0','0','0','0','0','11','46475','0','1','0','0','0','0','0','0','0','0','Sunblade Scout - Cast Activate Sunblade Protector on Aggro'),
 ('2537203','25372','9','0','100','1025','0','5','6000','9000','0','0','11','46558','1','0','0','0','0','0','0','0','0','0','Sunblade Scout - Cast Sinister Strike'),
--- Shadowsword Soulbinder 25373
-('2537301','25373','4','0','66','32','0','0','0','0','0','0','11','46229','4','1','11','46241','4','1','0','0','0','0','Shadowsword Soulbinder - Cast Summon Blazing Infernal or Summon Felguard Slayer on Aggro'),
-('2537302','25373','9','0','100','1025','0','50','12000','16000','0','0','11','46434','1','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Curse of Exhaustion'),
-('2537303','25373','0','0','100','1025','9000','15000','14000','18000','0','0','11','46442','1','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Flash of Darkness'),
-('2537304','25373','0','0','100','1025','18000','23000','21000','25000','0','0','11','46427','0','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Domination'),
+-- Shadowsword Soulbinder 25373 - CoE only on Tank when everyone else is dead, 2537301 unconfirmed
+('2537301','25373','4','0','66','32','0','0','0','0','0','0','11','46229','15','0','11','46241','15','0','0','0','0','0','Shadowsword Soulbinder - Random Cast Summon Blazing Infernal or Summon Felguard Slayer on Aggro'),
+('2537302','25373','0','0','100','1025','17000','27000','15000','25000','0','0','11','46427','17','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Domination'),
+('2537303','25373','0','0','100','1025','9000','14000','9000','25000','0','0','11','46434','4','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Curse of Exhaustion'),
+('2537304','25373','0','0','100','1025','9000','15000','12000','19000','0','0','11','46442','1','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Flash of Darkness'),
 ('2537305','25373','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Despawn Guardians on Evade'),
 -- Shadowsword Manafiend 25483
 ('2548301','25483','9','0','100','1025','0','15','9000','15000','0','0','11','46457','0','0','0','0','0','0','0','0','0','0','Shadowsword Manafiend - Cast Arcane Explosion'),
