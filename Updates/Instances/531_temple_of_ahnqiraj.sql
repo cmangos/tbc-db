@@ -1191,32 +1191,32 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+470, @CGUID+460, 1671);
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(15229, 531, 15510, 1024, 0),
+(15229, 531, 15510, 1024, 0), -- Vekniss Soldier -> Fankriss the Unyielding
 (15233, 531, 15516, 1024, 0), -- Vekniss Guardian -> Battleguard Sartura
-(15235, 531, 15509, 1024, 0),
-(15236, 531, 15235, 1667, 8),
-(15246, 531, 15252, 1679, 7),
+(15235, 531, 15509, 1024, 0), -- Vekniss Stinger ->Princess Huhuran
+(15236, 531, 15235, 1667, 8), -- Vekniss Wasp -> Vekniss Stinger
+(15246, 531, 15252, 1679, 7), -- Qiraji Mindslayer -> Qiraji Champion
 (15247, 531, 15516, 1024, 0), -- Qiraji Brainwasher -> Battleguard Sartura
-(15249, 531, 15235, 1667, 8),
-(15250, 531, 15252, 1679, 7),
-(15262, 531, 15263, 1024, 0),
-(15264, 531, 15263, 1024, 0),
-(15276, 531, 15275, 143, 0),
-(15277, 531, 15276, 1025, 0),
-(15316, 531, 15276, 132, 0),
-(15317, 531, 15276, 132, 0),
-(15334, 531, 15727, 4128, 0),
-(15543, 531, 15511, 1167, 0),
-(15544, 531, 15511, 1167, 0),
-(15589, 531, 15727, 4, 0),
-(15725, 531, 15589, 4096, 0),
-(15726, 531, 15727, 4128, 0),
-(15728, 531, 15727, 4128, 0),
-(15802, 531, 15727, 4128, 0),
-(15904, 531, 15727, 4128, 0),
-(15910, 531, 15727, 4128, 0),
-(15922, 531, 15299, 4112, 0),
-(15984, 531, 15516, 1543, 0);
+(15249, 531, 15235, 1667, 8), -- Qiraji Lasher -> Vekniss Stinger
+(15250, 531, 15252, 1679, 7), -- Qiraji Slayer -> Qiraji Champion
+(15262, 531, 15263, 1024, 0), -- Obsidian Eradicator -> The Prophet Skeram
+(15264, 531, 15263, 1024, 0), -- Anubisath Sentinel -> The Prophet Skeram
+(15276, 531, 15275, 143, 0), -- Emperor Vek'lor -> Emperor Vek'nilash
+(15277, 531, 15276, 1025, 0), -- Anubisath Defender -> Emperor Vek'lor
+(15316, 531, 15276, 132, 0), -- Qiraji Scarab -> Emperor Vek'lor
+(15317, 531, 15276, 132, 0), -- Qiraji Scorpion -> Emperor Vek'lor
+(15334, 531, 15727, 4128, 0), -- Giant Eye Tentacle -> C'Thun
+(15543, 531, 15511, 1167, 0), -- Princess Yauj -> Lord Kri
+(15544, 531, 15511, 1167, 0), -- Vem -> Lord Kri
+(15589, 531, 15727, 4, 0), -- Eye of C'Thun -> C'Thun
+(15725, 531, 15589, 4096, 0), -- Claw Tentacle -> Eye of C'Thun
+(15726, 531, 15727, 4128, 0), -- Eye Tentacle -> C'Thun
+(15728, 531, 15727, 4128, 0), -- Giant Claw Tentacle -> C'Thun
+(15802, 531, 15727, 4128, 0), -- Flesh Tentacle -> C'Thun
+(15904, 531, 15727, 4128, 0), -- Tentacle Portal -> C'Thun
+(15910, 531, 15727, 4128, 0), -- Giant Tentacle Portal -> C'Thun
+(15922, 531, 15299, 4112, 0), -- Viscidus Trigger -> Viscidus
+(15984, 531, 15516, 1543, 0); -- Sartura's Royal Guard -> Battleguard Sartura
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+56, 15236),(@CGUID+56, 15249), -- Vekniss Wasp, Qiraji Lasher
@@ -1224,7 +1224,39 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+62, 15236),(@CGUID+62, 15249), -- Vekniss Wasp, Qiraji Lasher
 (@CGUID+65, 15236),(@CGUID+65, 15249), -- Vekniss Wasp, Qiraji Lasher
 (@CGUID+68, 15236),(@CGUID+68, 15249), -- Vekniss Wasp, Qiraji Lasher
-(@CGUID+71, 15236),(@CGUID+71, 15249); -- Vekniss Wasp, Qiraji Lasher
+(@CGUID+71, 15236),(@CGUID+71, 15249), -- Vekniss Wasp, Qiraji Lasher
+(@CGUID+78, 15246),(@CGUID+78, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+79, 15246),(@CGUID+79, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+80, 15246),(@CGUID+80, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+81, 15246),(@CGUID+81, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+82, 15246),(@CGUID+82, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+83, 15246),(@CGUID+83, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+84, 15246),(@CGUID+84, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+85, 15246),(@CGUID+85, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+86, 15246),(@CGUID+86, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+87, 15246),(@CGUID+87, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+88, 15246),(@CGUID+88, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+89, 15246),(@CGUID+89, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+90, 15246),(@CGUID+90, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+91, 15246),(@CGUID+91, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+92, 15246),(@CGUID+92, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+93, 15246),(@CGUID+93, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+94, 15246),(@CGUID+94, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+95, 15246),(@CGUID+95, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+96, 15246),(@CGUID+96, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+97, 15246),(@CGUID+97, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+98, 15246),(@CGUID+98, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+99, 15246),(@CGUID+99, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+100, 15246),(@CGUID+100, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+101, 15246),(@CGUID+101, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+102, 15246),(@CGUID+102, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+103, 15246),(@CGUID+103, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+104, 15246),(@CGUID+104, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+105, 15246),(@CGUID+105, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+106, 15246),(@CGUID+106, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+107, 15246),(@CGUID+107, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+108, 15246),(@CGUID+108, 15250), -- Qiraji Mindslayer, Qiraji Slayer
+(@CGUID+109, 15246),(@CGUID+109, 15250); -- Qiraji Mindslayer, Qiraji Slayer
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 15229, 531, -7955.62, 1322.46, -90.46, 4.38823, 600, 600, 0, 0, 0, 2), -- Vekniss Soldier
@@ -1304,77 +1336,45 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+75, 15240, 531, -8349.922, 1367.889, -65.33723, 3.5, 3520, 3520, 0, 0, 0, 0), -- Vekniss Hive Crawler (to be sniffed)
 (@CGUID+76, 15240, 531, -8573.124, 1395.751, -64.01164, 2.89, 3520, 3520, 0, 0, 0, 2), -- Vekniss Hive Crawler (to be sniffed)
 (@CGUID+77, 15240, 531, -8575.310, 1385.223, -65.88415, 2.89, 3520, 3520, 0, 0, 0, 0), -- Vekniss Hive Crawler (to be sniffed)
-(@CGUID+78, 15246, 531, -9072.41, 1389.85, -107.052, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+79, 15246, 531, -9084.55, 1388.07, -106.666, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+80, 15246, 531, -9077.59, 1382.89, -106.909, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+81, 15246, 531, -9079.37, 1395.03, -107.229, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+82, 15246, 531, -9091.69, 1426.73, -106.92, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+83, 15246, 531, -9103.83, 1424.95, -106.686, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+84, 15246, 531, -9096.87, 1419.77, -107.239, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+85, 15246, 531, -9098.65, 1431.91, -106.892, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+86, 15246, 531, -9087.33, 1351.39, -105.103, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+87, 15246, 531, -9099.47, 1349.61, -105.989, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+88, 15246, 531, -9092.51, 1344.43, -105.898, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+89, 15246, 531, -9094.29, 1356.57, -105.386, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+90, 15246, 531, -9170.3, 1576.85, -81.7027, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+91, 15246, 531, -9182.44, 1575.07, -79.3457, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+92, 15246, 531, -9175.48, 1569.89, -81.9331, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+93, 15246, 531, -9177.26, 1582.03, -79.5541, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+94, 15246, 531, -9220.46, 1587.96, -73.9311, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+95, 15246, 531, -9232.6, 1586.18, -74.2206, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+96, 15246, 531, -9225.64, 1581, -75.6661, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+97, 15246, 531, -9227.42, 1593.14, -73.3484, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+98, 15246, 531, -9122.7, 1748.77, -42.2098, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+99, 15246, 531, -9134.84, 1746.99, -42.339, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+100, 15246, 531, -9127.88, 1741.81, -42.3803, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+101, 15246, 531, -9129.66, 1753.95, -42.8341, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+102, 15246, 531, -9086.88, 1805.17, -43.6381, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+103, 15246, 531, -9099.02, 1803.39, -43.2975, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+104, 15246, 531, -9092.06, 1798.21, -42.8887, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+105, 15246, 531, -9093.84, 1810.35, -43.6871, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+106, 15246, 531, -9014.15, 1856.87, -43.8464, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+107, 15246, 531, -9026.29, 1855.09, -44.2295, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+108, 15246, 531, -9019.33, 1849.91, -43.8032, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
-(@CGUID+109, 15246, 531, -9021.11, 1862.05, -44.6123, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Mindslayer
+(@CGUID+78, 0, 531, -9072.41, 1389.85, -107.052, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+79, 0, 531, -9084.55, 1388.07, -106.666, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+80, 0, 531, -9077.59, 1382.89, -106.909, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+81, 0, 531, -9079.37, 1395.03, -107.229, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+82, 0, 531, -9091.69, 1426.73, -106.92, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+83, 0, 531, -9103.83, 1424.95, -106.686, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+84, 0, 531, -9096.87, 1419.77, -107.239, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+85, 0, 531, -9098.65, 1431.91, -106.892, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+86, 0, 531, -9087.33, 1351.39, -105.103, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+87, 0, 531, -9099.47, 1349.61, -105.989, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+88, 0, 531, -9092.51, 1344.43, -105.898, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+89, 0, 531, -9094.29, 1356.57, -105.386, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+90, 0, 531, -9170.3, 1576.85, -81.7027, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+91, 0, 531, -9182.44, 1575.07, -79.3457, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+92, 0, 531, -9175.48, 1569.89, -81.9331, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+93, 0, 531, -9177.26, 1582.03, -79.5541, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+94, 0, 531, -9220.46, 1587.96, -73.9311, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+95, 0, 531, -9232.6, 1586.18, -74.2206, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+96, 0, 531, -9225.64, 1581, -75.6661, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+97, 0, 531, -9227.42, 1593.14, -73.3484, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+98, 0, 531, -9122.7, 1748.77, -42.2098, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+99, 0, 531, -9134.84, 1746.99, -42.339, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+100, 0, 531, -9127.88, 1741.81, -42.3803, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+101, 0, 531, -9129.66, 1753.95, -42.8341, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+102, 0, 531, -9086.88, 1805.17, -43.6381, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+103, 0, 531, -9099.02, 1803.39, -43.2975, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+104, 0, 531, -9092.06, 1798.21, -42.8887, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+105, 0, 531, -9093.84, 1810.35, -43.6871, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+106, 0, 531, -9014.15, 1856.87, -43.8464, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+107, 0, 531, -9026.29, 1855.09, -44.2295, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+108, 0, 531, -9019.33, 1849.91, -43.8032, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+109, 0, 531, -9021.11, 1862.05, -44.6123, 4.86, 28800, 28800, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+110, 15247, 531, -8391.91, 2063.48, 116.203, 3.50811, 3520, 3520, 0, 0, 0, 0), -- Qiraji Brainwasher
 (@CGUID+111, 15247, 531, -8592.57, 1976.95, -1.21, 6.0912, 3520, 3520, 0, 0, 0, 0), -- Qiraji Brainwasher
 (@CGUID+112, 15247, 531, -8551.39, 2118.21, -1.73794, 1.22173, 3520, 3520, 0, 0, 0, 0), -- Qiraji Brainwasher
 (@CGUID+113, 15247, 531, -8548.23, 2130.36, -2.73022, 4.4855, 3520, 3520, 0, 0, 0, 0), -- Qiraji Brainwasher
 (@CGUID+114, 15247, 531, -8623.28, 2108.95, -2.67648, 3.78736, 3520, 3520, 0, 0, 0, 0), -- Qiraji Brainwasher
 (@CGUID+115, 15247, 531, -8631.83, 2101.62, -1.33052, 0.506145, 3520, 3520, 0, 0, 0, 0), -- Qiraji Brainwasher
--- (@CGUID+116 - 121
-(@CGUID+122, 15250, 531, -9072.41, 1389.85, -107.052, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+123, 15250, 531, -9084.55, 1388.07, -106.666, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+124, 15250, 531, -9077.59, 1382.89, -106.909, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+125, 15250, 531, -9079.37, 1395.03, -107.229, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+126, 15250, 531, -9091.69, 1426.73, -106.92, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+127, 15250, 531, -9103.83, 1424.95, -106.686, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+128, 15250, 531, -9096.87, 1419.77, -107.239, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+129, 15250, 531, -9098.65, 1431.91, -106.892, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+130, 15250, 531, -9087.33, 1351.39, -105.103, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+131, 15250, 531, -9099.47, 1349.61, -105.989, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+132, 15250, 531, -9092.51, 1344.43, -105.898, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+133, 15250, 531, -9094.29, 1356.57, -105.386, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+134, 15250, 531, -9170.3, 1576.85, -81.7027, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+135, 15250, 531, -9182.44, 1575.07, -79.3457, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+136, 15250, 531, -9175.48, 1569.89, -81.9331, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+137, 15250, 531, -9177.26, 1582.03, -79.5541, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+138, 15250, 531, -9220.46, 1587.96, -73.9311, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+139, 15250, 531, -9232.6, 1586.18, -74.2206, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+140, 15250, 531, -9225.64, 1581, -75.6661, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+141, 15250, 531, -9227.42, 1593.14, -73.3484, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+142, 15250, 531, -9122.7, 1748.77, -42.2098, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+143, 15250, 531, -9134.84, 1746.99, -42.339, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+144, 15250, 531, -9127.88, 1741.81, -42.3803, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+145, 15250, 531, -9129.66, 1753.95, -42.8341, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+146, 15250, 531, -9086.88, 1805.17, -43.6381, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+147, 15250, 531, -9099.02, 1803.39, -43.2975, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+148, 15250, 531, -9092.06, 1798.21, -42.8887, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+149, 15250, 531, -9093.84, 1810.35, -43.6871, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+150, 15250, 531, -9014.15, 1856.87, -43.8464, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+151, 15250, 531, -9026.29, 1855.09, -44.2295, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+152, 15250, 531, -9019.33, 1849.91, -43.8032, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
-(@CGUID+153, 15250, 531, -9021.11, 1862.05, -44.6123, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
+-- (@CGUID+116 - 153
 (@CGUID+154, 15252, 531, -9020.22, 1855.98, -44.2076, 4.86, 28800, 28800, 0, 0, 0, 2), -- Qiraji Champion
 (@CGUID+155, 15252, 531, -9078.48, 1388.96, -107.236, 4.86, 28800, 28800, 0, 0, 0, 2), -- Qiraji Champion
 (@CGUID+156, 15252, 531, -9226.53, 1587.07, -74.5633, 4.86, 28800, 28800, 0, 0, 0, 2), -- Qiraji Champion
@@ -1750,107 +1750,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- =======
 
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+2, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+3, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+4, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+5, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+6, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+7, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+8, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+9, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+10, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+11, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+12, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+13, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+14, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+15, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+16, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+17, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+18, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+19, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+20, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+21, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+22, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+23, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+24, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+25, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+26, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+27, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+28, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+29, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+30, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+31, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+32, 1, 'AQ40 - Qiraji Mindslayer / Slayer');
-
-INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+78, @PGUID+1, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+122, @PGUID+1, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+79, @PGUID+2, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+123, @PGUID+2, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+80, @PGUID+3, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+124, @PGUID+3, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+81, @PGUID+4, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+125, @PGUID+4, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+82, @PGUID+5, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+126, @PGUID+5, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+83, @PGUID+6, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+127, @PGUID+6, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+84, @PGUID+7, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+128, @PGUID+7, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+85, @PGUID+8, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+129, @PGUID+8, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+86, @PGUID+9, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+130, @PGUID+9, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+87, @PGUID+10, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+131, @PGUID+10, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+88, @PGUID+11, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+132, @PGUID+11, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+89, @PGUID+12, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+133, @PGUID+12, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+90, @PGUID+13, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+134, @PGUID+13, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+91, @PGUID+14, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+135, @PGUID+14, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+92, @PGUID+15, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+136, @PGUID+15, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+93, @PGUID+16, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+137, @PGUID+16, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+94, @PGUID+17, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+138, @PGUID+17, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+95, @PGUID+18, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+139, @PGUID+18, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+96, @PGUID+19, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+140, @PGUID+19, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+97, @PGUID+20, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+141, @PGUID+20, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+98, @PGUID+21, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+142, @PGUID+21, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+99, @PGUID+22, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+143, @PGUID+22, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+100, @PGUID+23, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+144, @PGUID+23, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+101, @PGUID+24, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+145, @PGUID+24, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+102, @PGUID+25, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+146, @PGUID+25, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+103, @PGUID+26, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+147, @PGUID+26, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+104, @PGUID+27, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+148, @PGUID+27, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+105, @PGUID+28, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+149, @PGUID+28, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+106, @PGUID+29, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+150, @PGUID+29, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+107, @PGUID+30, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+151, @PGUID+30, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+108, @PGUID+31, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+152, @PGUID+31, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+109, @PGUID+32, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+153, @PGUID+32, 50, 'AQ40 - Qiraji Mindslayer / Slayer');
-
+-- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+-- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
