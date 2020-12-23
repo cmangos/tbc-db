@@ -1218,6 +1218,14 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (15922, 531, 15299, 4112, 0),
 (15984, 531, 15516, 1543, 0);
 
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+56, 15236),(@CGUID+56, 15249), -- Vekniss Wasp, Qiraji Lasher
+(@CGUID+59, 15236),(@CGUID+59, 15249), -- Vekniss Wasp, Qiraji Lasher
+(@CGUID+62, 15236),(@CGUID+62, 15249), -- Vekniss Wasp, Qiraji Lasher
+(@CGUID+65, 15236),(@CGUID+65, 15249), -- Vekniss Wasp, Qiraji Lasher
+(@CGUID+68, 15236),(@CGUID+68, 15249), -- Vekniss Wasp, Qiraji Lasher
+(@CGUID+71, 15236),(@CGUID+71, 15249); -- Vekniss Wasp, Qiraji Lasher
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 15229, 531, -7955.62, 1322.46, -90.46, 4.38823, 600, 600, 0, 0, 0, 2), -- Vekniss Soldier
 (@CGUID+2, 15229, 531, -7903.95, 1411.55, -66.4528, 4.24687, 600, 600, 0, 0, 0, 2), -- Vekniss Soldier
@@ -1274,22 +1282,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+53, 15235, 531, -8685.76, 1457.88, -69.9058, 0, 3520, 3520, 0, 0, 0, 2), -- Vekniss Stinger
 (@CGUID+54, 15236, 531, -8619.53, 1774.94, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
 (@CGUID+55, 15236, 531, -8619.53, 1765.54, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
-(@CGUID+56, 15236, 531, -8621.82, 1770.24, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
+(@CGUID+56, 0, 531, -8621.82, 1770.24, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+57, 15236, 531, -8647.1, 1714.76, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
 (@CGUID+58, 15236, 531, -8647.1, 1705.36, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
-(@CGUID+59, 15236, 531, -8649.39, 1710.06, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
+(@CGUID+59, 0, 531, -8649.39, 1710.06, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+60, 15236, 531, -8719.25, 1455.5, -70.1568, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
 (@CGUID+61, 15236, 531, -8719.25, 1446.11, -70.1568, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
-(@CGUID+62, 15236, 531, -8721.54, 1450.8, -70.1568, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
+(@CGUID+62, 0, 531, -8721.54, 1450.8, -70.1568, 0, 3520, 3520, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+63, 15236, 531, -8669.4, 1476.09, -69.8897, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
 (@CGUID+64, 15236, 531, -8669.4, 1466.69, -69.8897, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
-(@CGUID+65, 15236, 531, -8671.69, 1471.39, -69.8897, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
+(@CGUID+65, 0, 531, -8671.69, 1471.39, -69.8897, 0, 3520, 3520, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+66, 15236, 531, -8603.93, 1424.84, -66.1638, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
 (@CGUID+67, 15236, 531, -8603.93, 1415.44, -66.1638, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
-(@CGUID+68, 15236, 531, -8606.22, 1420.14, -66.1638, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
+(@CGUID+68, 0, 531, -8606.22, 1420.14, -66.1638, 0, 3520, 3520, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+69, 15236, 531, -8687.47, 1462.58, -69.9058, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
 (@CGUID+70, 15236, 531, -8687.47, 1453.19, -69.9058, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
-(@CGUID+71, 15236, 531, -8689.76, 1457.88, -69.9058, 0, 3520, 3520, 0, 0, 0, 0), -- Vekniss Wasp
+(@CGUID+71, 0, 531, -8689.76, 1457.88, -69.9058, 0, 3520, 3520, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+72, 15240, 531, -8290.739, 1337.271, -79.84545, 5.33, 3520, 3520, 0, 0, 0, 2), -- Vekniss Hive Crawler (to be sniffed)
 (@CGUID+73, 15240, 531, -8289.662, 1327.307, -78.15253, 5.33, 3520, 3520, 0, 0, 0, 0), -- Vekniss Hive Crawler (to be sniffed)
 (@CGUID+74, 15240, 531, -8355.710, 1359.734, -65.14333, 3.5, 3520, 3520, 0, 0, 0, 2), -- Vekniss Hive Crawler (to be sniffed)
@@ -1334,12 +1342,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+113, 15247, 531, -8548.23, 2130.36, -2.73022, 4.4855, 3520, 3520, 0, 0, 0, 0), -- Qiraji Brainwasher
 (@CGUID+114, 15247, 531, -8623.28, 2108.95, -2.67648, 3.78736, 3520, 3520, 0, 0, 0, 0), -- Qiraji Brainwasher
 (@CGUID+115, 15247, 531, -8631.83, 2101.62, -1.33052, 0.506145, 3520, 3520, 0, 0, 0, 0), -- Qiraji Brainwasher
-(@CGUID+116, 15249, 531, -8621.82, 1770.24, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- Qiraji Lasher
-(@CGUID+117, 15249, 531, -8649.39, 1710.06, -90.0669, 0, 3520, 3520, 0, 0, 0, 0), -- Qiraji Lasher
-(@CGUID+118, 15249, 531, -8721.54, 1450.8, -70.1568, 0, 3520, 3520, 0, 0, 0, 0), -- Qiraji Lasher
-(@CGUID+119, 15249, 531, -8671.69, 1471.39, -69.8897, 0, 3520, 3520, 0, 0, 0, 0), -- Qiraji Lasher
-(@CGUID+120, 15249, 531, -8606.22, 1420.14, -66.1638, 0, 3520, 3520, 0, 0, 0, 0), -- Qiraji Lasher
-(@CGUID+121, 15249, 531, -8689.76, 1457.88, -69.9058, 0, 3520, 3520, 0, 0, 0, 0), -- Qiraji Lasher
+-- (@CGUID+116 - 121
 (@CGUID+122, 15250, 531, -9072.41, 1389.85, -107.052, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
 (@CGUID+123, 15250, 531, -9084.55, 1388.07, -106.666, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
 (@CGUID+124, 15250, 531, -9077.59, 1382.89, -106.909, 4.86, 28800, 28800, 0, 0, 0, 0), -- Qiraji Slayer
@@ -1780,13 +1783,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+29, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
 (@PGUID+30, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
 (@PGUID+31, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+32, 1, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@PGUID+33, 1, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@PGUID+34, 1, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@PGUID+35, 1, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@PGUID+36, 1, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@PGUID+37, 1, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@PGUID+38, 1, 'AQ40 - Vekniss Wasp / Qiraji Lasher');
+(@PGUID+32, 1, 'AQ40 - Qiraji Mindslayer / Slayer');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+78, @PGUID+1, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
@@ -1852,19 +1849,7 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 (@CGUID+108, @PGUID+31, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
 (@CGUID+152, @PGUID+31, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
 (@CGUID+109, @PGUID+32, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+153, @PGUID+32, 50, 'AQ40 - Qiraji Mindslayer / Slayer'),
-(@CGUID+56, @PGUID+33, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+116, @PGUID+33, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+59, @PGUID+34, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+117, @PGUID+34, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+62, @PGUID+35, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+118, @PGUID+35, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+65, @PGUID+36, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+119, @PGUID+36, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+68, @PGUID+37, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+120, @PGUID+37, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+71, @PGUID+38, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher'),
-(@CGUID+121, @PGUID+38, 50, 'AQ40 - Vekniss Wasp / Qiraji Lasher');
+(@CGUID+153, @PGUID+32, 50, 'AQ40 - Qiraji Mindslayer / Slayer');
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
