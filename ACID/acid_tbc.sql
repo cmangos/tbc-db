@@ -29091,9 +29091,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2548401','25484','4','0','100','0','0','0','0','0','0','0','11','46459','1','1','0','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Assassin''s Mark on Aggro'),
 ('2548402','25484','9','0','100','1025','0','5','25000','35000','0','0','11','46463','1','0','0','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Shadowstep'),
 ('2548403','25484','0','0','100','1025','1000','3000','7000','10000','0','0','11','46460','1','0','0','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Aimed Shot'),
--- Shadowsword Deathbringer 25485
+-- Shadowsword Deathbringer 25485 - Disease Buffet only on Tank when everyone else is dead
 ('2548501','25485','11','0','100','0','0','0','0','0','0','0','11','42459','0','34','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Cast Dual Wield (Passive) on Spawn'),
-('2548502','25485','9','0','100','1025','0','5','9000','15000','0','0','11','46481','1','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Cast Disease Buffet'),
+('2548502','25485','0','0','100','1025','8000','16000','12000','18000','0','0','11','46483','1','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Cast Volatile Disease'),
+('2548503','25485','0','0','100','1025','4000','12000','8000','16000','0','0','11','46481','4','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Cast Disease Buffet'),
 -- Shadowsword Vanquisher 25486
 ('2548601','25486','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Cast Invisibility and Stealth Detection on Spawn'),
 ('2548602','25486','0','0','100','1025','7000','14000','10000','20000','0','0','11','46468','1','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Cast Cleave'),
