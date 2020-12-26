@@ -29179,9 +29179,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Void Spawn 25824
 ('2582401','25824','9','0','100','1025','0','20','4000','7000','0','0','11','46082','4','0','0','0','0','0','0','0','0','0','Void Spawn - Cast Shadow Bolt Volley'),
 -- Shadowsword Commander 25837
-('2583702','25837','0','0','100','1025','1000','1000','15000','21000','0','0','11','46763','0','0','0','0','0','0','0','0','0','0','Shadowsword Commander - Cast Battle Shout'),
-('2583703','25837','9','0','100','1025','0','5','9000','12000','0','0','11','46762','1','0','0','0','0','0','0','0','0','0','Shadowsword Commander - Cast Shield Slam'),
-('2583704','25837','13','0','100','1025','5000','8000','0','0','0','0','11','46762','1','0','0','0','0','0','0','0','0','0','Shadowsword Commander - Cast Shield Slam on Target Casting'),
+('2583701','25837','0','0','100','1025','3000','9000','25000','28000','0','0','11','46763','0','0','0','0','0','0','0','0','0','0','Shadowsword Commander - Cast Battle Shout'),
+('2583702','25837','0','0','100','1025','8000','16000','12000','18000','0','0','11','46762','4','2048','0','0','0','0','0','0','0','0','Shadowsword Commander - Cast Shield Slam on Casting'),
 -- Entropius (25840) - boss_entropius
 -- Volatile Fiend 25851 - Version One: Gauntlet - s.46308 (Burning Winds) & s.45211 (Trigger 000 (If Summoned Only)) on Spawn and s.47287 on Aggro - Version Two Post Twins Trash using s.45779 on timer? Should cast s.46751 after s.46218 execution
 ('2585101','25851','4','0','100','0','0','0','0','0','0','0','11','47287','0','34','22','1','0','0','0','0','0','0','Volatile Fiend - Cast Burning Destruction on Aggro'),
