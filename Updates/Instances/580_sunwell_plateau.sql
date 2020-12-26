@@ -796,7 +796,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+104, @CGUID+71, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+119, @CGUID+71, 1167), -- Sunblade Dusk Priest -> Sunblade Cabalist
 (@CGUID+133, @CGUID+71, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
-(@CGUID+221, @CGUID+71, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
+(@CGUID+246, @CGUID+71, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
 (@CGUID+71, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
 -- Sunblade Group #2
 (@CGUID+83, @CGUID+70, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
@@ -804,7 +804,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+95, @CGUID+70, 1167), -- Sunblade Slayer -> Sunblade Cabalist
 (@CGUID+101, @CGUID+70, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+131, @CGUID+70, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
-(@CGUID+219, @CGUID+70, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
+(@CGUID+244, @CGUID+70, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
 (@CGUID+70, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
 -- Sunblade Group #3
 (@CGUID+89, @CGUID+73, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
@@ -820,7 +820,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+96, @CGUID+74, 1167), -- Sunblade Slayer -> Sunblade Cabalist
 (@CGUID+105, @CGUID+74, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+134, @CGUID+74, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
-(@CGUID+220, @CGUID+74, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
+(@CGUID+245, @CGUID+74, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
 (@CGUID+74, @CGUID+147, 1025), -- Sunblade Cabalist -> Sunblade Scout
 (@CGUID+147, @CGUID+61, 1024), -- Sunblade Scout -> Kalecgos
 -- Sunblade Group #5
@@ -889,28 +889,31 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+116, @CGUID+99, 1679), -- Sunblade Dusk Priest -> Sunblade Vindicator
 (@CGUID+128, @CGUID+99, 1679), -- Sunblade Dawn Priest -> Sunblade Vindicator
 (@CGUID+99, @CGUID+61, 1024), -- Sunblade Vindicator -> Kalecgos
--- Demon Group #1
+-- M'uru Trash
 (@CGUID+182, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
 (@CGUID+184, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
--- Demon Group #2
+(@CGUID+220, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+221, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+222, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+223, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+224, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+164, @CGUID+169, 1167), -- creature_spawn_entry -> Painbringer
 (@CGUID+165, @CGUID+169, 1167), -- creature_spawn_entry -> Painbringer
 (@CGUID+185, @CGUID+169, 1167), -- Oblivion Mage -> Painbringer
--- Demon Group #3
 (@CGUID+174, @CGUID+177, 1167), -- Apocalypse Guard -> Apocalypse Guard
--- Demon Group #4
 (@CGUID+187, @CGUID+173, 1167), -- Oblivion Mage -> Doomfire Destroyer
 (@CGUID+188, @CGUID+173, 1167), -- Oblivion Mage -> Doomfire Destroyer
--- Demon Group #5
 (@CGUID+166, @CGUID+170, 1167), -- Priestess of Torment -> creature_spawn_entry
 (@CGUID+167, @CGUID+170, 1167), -- Priestess of Torment -> creature_spawn_entry
 (@CGUID+186, @CGUID+170, 1167), -- creature_spawn_entry -> creature_spawn_entry
--- Demon Group #6
 (@CGUID+178, @CGUID+179, 1167), -- Apocalypse Guard -> Apocalypse Guard
--- Demon Group #7
 (@CGUID+163, @CGUID+168, 1167), -- Priestess of Torment -> Painbringer
 (@CGUID+183, @CGUID+168, 1167), -- Oblivion Mage -> Painbringer
--- Demon Group #8
+(@CGUID+226, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+227, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+228, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+229, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+230, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+175, @CGUID+176, 1167), -- Apocalypse Guard -> Apocalypse Guard
 -- Shadowsword Ungrouped
 (@CGUID+332, @CGUID+346, 1024), -- Shadowsword Soulbinder -> Lady Sacrolash
