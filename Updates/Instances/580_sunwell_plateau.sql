@@ -441,12 +441,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+327, 2, 1806.641, 586.4019, 51.12543, 0, 0, 0),
 (@CGUID+327, 3, 1800.891, 580.1519, 51.12543, 0, 0, 0),
 (@CGUID+327, 4, 1797.641, 568.9019, 53.12543, 0, 0, 0),
-(@CGUID+327, 5, 1795.163, 559.262, 55.45198, 0, 100, 2548602), -- Emote state
+(@CGUID+327, 5, 1795.163, 559.262, 55.45198, 100, 1000, 2548602), -- Emote state
 -- Pathing for Shadowsword Vanquisher Entry: 25486
 (@CGUID+328, 1, 1797.451, 588.6753, 51.14029, 0, 0, 0),
 (@CGUID+328, 2, 1798.701, 581.4253, 51.14029, 0, 0, 0),
 (@CGUID+328, 3, 1793.201, 573.4253, 53.14029, 0, 0, 0),
-(@CGUID+328, 4, 1782.493, 565.2297, 56.48238, 0, 100, 2548602), -- Emote state
+(@CGUID+328, 4, 1782.493, 565.2297, 56.48238, 100, 1000, 2548602), -- Emote state
+-- Pathing for Shadowsword Assassin
+(@CGUID+329, 1, 1792.0945, 568.5002, 53.796047, 4.266681, 5000, 2548401),
 -- Pathing for Shadowsword Manafiend Entry: 25483
 (@CGUID+330, 1, 1761.895, 511.8103, 80.35925, 0, 0, 0),
 (@CGUID+330, 2, 1770.5, 498.5753, 74.15498, 0, 0, 0),
@@ -953,7 +955,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Shadowsword Group #8
 (@CGUID+326, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
 (@CGUID+327, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+329, @CGUID+328, 1679); -- Shadowsword Assassin -> Shadowsword Manafiend
+(@CGUID+329, @CGUID+328, 1167); -- Shadowsword Assassin -> Shadowsword Manafiend
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (25319, 580, 25315, 4096, 0), -- Kalecgos -> Kil'jaeden
@@ -1296,7 +1298,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+326, 25483, 580, 1, 1817.548, 593.4289, 50.8023, 4.049164, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend Run PATH 1
 (@CGUID+327, 25486, 580, 1, 1812.618, 586.0417, 50.79887, 3.717551, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 1 "When a player reaches 55 yard distance from this npc run path non repeating for the 3 pathed in this group."
 (@CGUID+328, 25486, 580, 1, 1793.91, 593.6208, 50.79819, 5.51524, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 2
-(@CGUID+329, 25484, 580, 1, 1799.959, 584.9696, 50.69594, 4.765335, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
+(@CGUID+329, 25484, 580, 1, 1799.959, 584.9696, 50.69594, 4.765335, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
 -- Group pathing
 (@CGUID+330, 25483, 580, 1, 1744.354, 534.517, 85.32926, 5.428943, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend PATH 2
 (@CGUID+331, 25506, 580, 1, 1748.878, 538.0068, 85.26904, 4.803874, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
@@ -1433,7 +1435,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (2536301,2536701,2536901,2537001,2537101,2563901,2563902,2564401,2564402,2548601,2548301,2548602,2559701,2583701,2584801);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (2536301,2536701,2536901,2537001,2537101,2563901,2563902,2564401,2564402,2548601,2548301,2548401,2548602,2559701,2583701,2584801);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (2536301, 0, 15, 46319, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Cabalist - Cast Felblood Channel'),
 (2536701, 0, 15, 46319, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Arch Mage - Cast Felblood Channel'),
@@ -1449,6 +1451,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2548601, 0, 0, 0, 0, 0, 0, 0, 0, 2000020123, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Vanquisher - Yell on proximity'),
 (2548301, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Manafiend - Set MovementType 0'),
 (2548301, 0, 1, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Manafiend - Set EMOTE_STATE_READY2H'),
+(2548401, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Assassin - Set MovementType 0'),
+(2548401, 0, 1, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Assassin - Set EMOTE_STATE_READY2H'),
 (2548602, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Vanquisher - Set MovementType 0'),
 (2548602, 0, 1, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Vanquisher - Set EMOTE_STATE_READY2H'),
 (2559701, 0, 15, 46219, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Oblivion Mage - Cast Fire Channeling'),
