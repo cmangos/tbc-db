@@ -29101,7 +29101,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2548603','25486','0','0','100','1025','0','12000','1200','4800','0','0','11','46469','1','0','0','0','0','0','0','0','0','0','Shadowsword Vanquisher - Cast Melt Armor'),
 -- Shield Orb (25502) - npc_shield_orb
 -- Shadowsword Lifeshaper 25506
-('2550601','25506','0','0','100','1025','25000','35000','40000','70000','0','0','11','46466','1','0','0','0','0','0','0','0','0','0','Shadowsword Lifeshaper - Cast Drain Life'),
+('2550601','25506','2','0','100','1025','80','0','6000','12000','0','0','11','46466','4','512','0','0','0','0','0','0','0','0','Shadowsword Lifeshaper - Cast Drain Life at 80% HP'),
 ('2550602','25506','14','0','100','1025','75000','25','45000','60000','0','0','11','46467','12','0','0','0','0','0','0','0','0','0','Shadowsword Lifeshaper - Cast Health Funnel on Friendly Missing HP'),
 -- Sunblade Protector 25507 - npc_sunblade_protector
 -- Shadowsword Guardian 25508
