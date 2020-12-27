@@ -20140,6 +20140,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2485401','24854','1','0','100','0','1000','1000','0','0','0','0','11','43685','0','0','0','0','0','0','0','0','0','0','Sister of Torment Image - Cast Non-Heroic Image Channel OOC'),
 -- Kael'thas Sunstrider Image
 ('2485501','24855','1','0','100','0','1000','1000','0','0','0','0','11','43691','0','0','0','0','0','0','0','0','0','0','Kael''thas Sunstrider Image - Cast Heroic Image Channel OOC'),
+-- Sunwell Daily Bunny x 0.01 24936
+('2493601','24936','1','0','100','1','1000','30000','30000','120000','0','0','53','2493600','0','0','0','0','0','0','0','0','0','0','Sunwell Daily Bunny x 0.01 - Start Relay Script OOC'),
 -- Commander Steele (25141)
 -- Shattered Sun Marksman
 ('2514201','25142','1','0','100','1','5000','30000','12000','35000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Shattered Sun Marksman - Talk Emote OOC'),
