@@ -29194,7 +29194,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Felguard Slayer 25864
 ('2586401','25864','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Felguard Slayer - Zone Combat Pulse on Spawn'),
 -- Sunblade Dragonhawk 25867
-('2586701','25867','9','0','100','1025','0','5','8000','11000','0','0','11','47251','1','0','0','0','0','0','0','0','0','0','Sunblade Dragonhawk - Cast Flame Breath'),
+('2586701','25867','0','0','100','1025','4000','8000','4000','12000','0','0','11','47251','1','0','0','0','0','0','0','0','0','0','Sunblade Dragonhawk - Cast Flame Breath'),
 -- Darkness 25879 - npc_darkness
 -- Doomfire Shard 25948 - Cast s.46305 on c.25592 on Death
 ('2594801','25948','11','0','100','0','0','0','0','0','0','0','11','31722','0','34','0','0','0','0','0','0','0','0','Doomfire Shard - Cast Immolation on Spawn'),
