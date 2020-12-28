@@ -30731,6 +30731,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Masked Orphan Matron 23973 - npc_orphan_matron
 -- Costumed Orphan Matron 24519 - npc_orphan_matron
 
+-- Brewfest
+-- The Brewmaiden 27166
+('2716601','27166','11','0','100','0','0','0','0','0','0','0','11','48032','0','2','11','48186','0','2','11','51847','0','2','The Brewmaiden - Cast Brewmaiden Spotlight and Cast Brewmaiden Despawn Control Aura and Cast The Brewmaiden''s Blessing (Rank 6) on Spawn'),
+('2716602','27166','11','0','100','0','0','0','0','0','0','0','41','30000','0','0','21','0','0','0','1','-11233','0','0','The Brewmaiden - Delayed Despawn and Disable Combat Movement and Say Text on Spawn'),
 -- Lunar Festival
 ('1588201','15882','1','0','100','0','0','0','0','0','0','0','11','26347','0','1','0','0','0','0','0','0','0','0','Pat''s Firework Guy - RED'),
 ('1588301','15883','1','0','100','0','0','0','0','0','0','0','11','26349','0','1','0','0','0','0','0','0','0','0','Pat''s Firework Guy - YELLOW'),
@@ -32808,6 +32812,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11230','You don''t do your job, I''ll shoot you myself.','0','0','0','0','19094','Razak Ironsides 21118'),
 ('-11231','Come on you apes. You want to live forever?','0','0','0','0','19095','Razak Ironsides 21118'),
 ('-11232','Warm it up and give ''em everything you''ve got.','0','0','0','0','19096','Razak Ironsides 21118'),
+('-11233','Do ye want ta live forever?','0','0','0','0','26303','The Brewmaiden 27166'),
 
 ('-19997','May the light bless you.','0','0','0','1','24856','25639'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','1','24857','25639'),
