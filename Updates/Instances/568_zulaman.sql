@@ -625,15 +625,15 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Entrance
-(@CGUID+259, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+260, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+261, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+262, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+263, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+264, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+265, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+266, @CGUID+104, 1), -- Amani'shi Savage -> Amani'shi Guardian
-(@CGUID+113, @CGUID+104, 3), -- Amani'shi Guardian -> Amani'shi Guardian
+(@CGUID+259, @CGUID+104, 1165), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+260, @CGUID+104, 1165), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+261, @CGUID+104, 1165), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+262, @CGUID+104, 1165), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+263, @CGUID+104, 1165), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+264, @CGUID+104, 1165), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+265, @CGUID+104, 1165), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+266, @CGUID+104, 1165), -- Amani'shi Savage -> Amani'shi Guardian
+(@CGUID+113, @CGUID+104, 15), -- Amani'shi Guardian -> Amani'shi Guardian
 
 -- Hex Lord Malacrass
 (@CGUID+368, @CGUID+369, 1167), -- Amani'shi Berserker -> Amani'shi Berserker
@@ -1154,14 +1154,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+256, 23878, 568, 1, 134.6, 724.341, 45.1947, 4.06662, 604800, 604800, 0, 0, 0, 0), -- Amani Bear Spirit
 (@CGUID+257, 23879, 568, 1, 91.133, 705.753, 45.1947, 0.0174533, 604800, 604800, 0, 0, 0, 0), -- Amani Dragonhawk Spirit
 (@CGUID+258, 23880, 568, 1, 105.526, 724.926, 45.1947, 5.35816, 604800, 604800, 0, 0, 0, 0), -- Amani Eagle Spirit
-(@CGUID+259, 23889, 568, 1, 81.7104, 1515.83, 21.2338, 0.091743, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+260, 23889, 568, 1, 121.549, 1525.11, 21.2338, 3.13302, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+261, 23889, 568, 1, 158.714, 1527.86, 21.2338, 0.158039, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+262, 23889, 568, 1, 102.504, 1523.64, 21.2338, 2.85248, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+263, 23889, 568, 1, 167.954, 1523.31, 21.2338, 1.51648, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+264, 23889, 568, 1, 136.024, 1525.09, 21.2338, 6.22001, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+265, 23889, 568, 1, 83.6504, 1527.7, 21.2338, 6.12353, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
-(@CGUID+266, 23889, 568, 1, 160.569, 1514.97, 21.2338, 2.20896, 259200, 259200, 0, 0, 0, 0), -- Amani'shi Savage
+(@CGUID+259, 23889, 568, 1, 81.7104, 1515.83, 21.2338, 0.091743, 259200, 259200, 3, 0, 0, 1), -- Amani'shi Savage
+(@CGUID+260, 23889, 568, 1, 121.549, 1525.11, 21.2338, 3.13302, 259200, 259200, 3, 0, 0, 1), -- Amani'shi Savage
+(@CGUID+261, 23889, 568, 1, 158.714, 1527.86, 21.2338, 0.158039, 259200, 259200, 3, 0, 0, 1), -- Amani'shi Savage
+(@CGUID+262, 23889, 568, 1, 102.504, 1523.64, 21.2338, 2.85248, 259200, 259200, 3, 0, 0, 1), -- Amani'shi Savage
+(@CGUID+263, 23889, 568, 1, 167.954, 1523.31, 21.2338, 1.51648, 259200, 259200, 3, 0, 0, 1), -- Amani'shi Savage
+(@CGUID+264, 23889, 568, 1, 136.024, 1525.09, 21.2338, 6.22001, 259200, 259200, 3, 0, 0, 1), -- Amani'shi Savage
+(@CGUID+265, 23889, 568, 1, 83.6504, 1527.7, 21.2338, 6.12353, 259200, 259200, 3, 0, 0, 1), -- Amani'shi Savage
+(@CGUID+266, 23889, 568, 1, 160.569, 1514.97, 21.2338, 2.20896, 259200, 259200, 3, 0, 0, 1), -- Amani'shi Savage
 (@CGUID+267, 23897, 568, 1, 250.141, 996.782, 10.9915, 2.00713, 7200, 7200, 0, 0, 0, 0), -- Zungam
 (@CGUID+268, 23999, 568, 1, 296.225, 1468.35, 81.5893, 5.37561, 604800, 604800, 0, 0, 0, 0), -- Harkor
 (@CGUID+269, 24001, 568, 1, 383.776, 1082.97, 6.04766, 1.58825, 604800, 604800, 0, 0, 0, 0), -- Ashli
