@@ -4178,8 +4178,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit Healer (6491) - NSR
 -- Exarch Larethor (24813) - NSR
 -- Madrigosa (25160)
--- Shattered Sun Marksman
-('2493801','24938','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Shattered Sun Marksman - Stop Combat Movement on Spawn'),
+-- Shattered Sun Marksman 24938 - npc_shattered_sun_fighter
 -- Wretched Devourer
 ('2496001','24960','4','0','10','0','0','0','0','0','0','0','1','-10510','-10511','-10512','0','0','0','0','0','0','0','0','Wretched Devourer - Random Say on Aggro'),
 ('2496002','24960','0','0','100','1025','9000','12000','120000','180000','0','0','11','33483','4','0','0','0','0','0','0','0','0','0','Wretched Devourer - Cast Mana Tap'),
@@ -4281,7 +4280,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Captain Valindria (25088) - NSR
 -- Vindicator Kaalan (25108) - NSR
 -- Anchorite Ayuri (25112) - NSR
--- Shattered Sun Warrior (25115) - NSR
+-- Shattered Sun Warrior 25115 - npc_shattered_sun_fighter
 -- Sunblade Lookout 25132
 ('2513201','25132','1','0','10','1','25000','120000','50000','120000','0','0','1','-10427','0','0','0','0','0','0','0','0','0','0','Sunblade Lookout - Random Yell OOC'),
 ('2513202','25132','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Sunblade Lookout - Enable Range Mode on Aggro'),
