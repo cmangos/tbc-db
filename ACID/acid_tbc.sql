@@ -29090,9 +29090,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2548304','25483','0','3','100','1025','0','0','500','500','0','0','11','46457','17','0','0','0','0','0','0','0','0','0','Shadowsword Manafiend - Cast Arcane Explosion (Phase 2)'),
 ('2548305','25483','0','0','100','1025','7000','14000','12000','24000','0','0','11','46453','17','0','0','0','0','0','0','0','0','0','Shadowsword Manafiend - Cast Drain Mana'),
 -- Shadowsword Assassin 25484
-('2548401','25484','4','0','100','0','0','0','0','0','0','0','11','46459','1','1','0','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Assassin''s Mark on Aggro'),
-('2548402','25484','9','0','100','1025','0','5','25000','35000','0','0','11','46463','1','0','0','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Shadowstep'),
-('2548403','25484','0','0','100','1025','1000','3000','7000','10000','0','0','11','46460','1','0','0','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Aimed Shot'),
+('2548401','25484','4','0','100','0','0','0','0','0','0','0','11','46459','4','512','57','2','30','0','0','0','0','0','Shadowsword Assassin - Cast Assassin''s Mark and Enable Range Mode on Aggro'),
+('2548402','25484','0','0','100','1024','0','0','0','0','0','0','11','46460','4','512','57','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Aimed Shot and Enable Melee Mode'),
+('2548403','25484','9','0','100','1025','5000','10000','25000','35000','0','0','11','46463','1','0','0','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Shadowstep'),
 -- Shadowsword Deathbringer 25485 - Disease Buffet only on Tank when everyone else is dead
 ('2548501','25485','11','0','100','0','0','0','0','0','0','0','11','42459','0','34','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Cast Dual Wield (Passive) on Spawn'),
 ('2548502','25485','0','0','100','1025','8000','16000','12000','18000','0','0','11','46483','1','0','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Cast Volatile Disease'),
@@ -29184,6 +29184,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2583701','25837','0','0','100','1025','3000','9000','25000','28000','0','0','11','46763','0','0','0','0','0','0','0','0','0','0','Shadowsword Commander - Cast Battle Shout'),
 ('2583702','25837','0','0','100','1025','8000','16000','12000','18000','0','0','11','46762','4','2048','0','0','0','0','0','0','0','0','Shadowsword Commander - Cast Shield Slam on Casting'),
 -- Entropius (25840) - boss_entropius
+-- Gauntlet Imp Trigger 25848
+('2584801','25848','4','0','100','0','0','0','0','0','0','0','38','0','0','0','21','0','0','0','20','0','0','0','Gauntlet Imp Trigger - Zone Combat Pulse and Stop Movement and Stop Melee on Aggro'),
 -- Volatile Fiend 25851 - Version One: Gauntlet - s.46308 (Burning Winds) & s.45211 (Trigger 000 (If Summoned Only)) on Spawn and s.47287 on Aggro - Version Two Post Twins Trash using s.45779 on timer? Should cast s.46751 after s.46218 execution
 ('2585101','25851','4','0','100','0','0','0','0','0','0','0','11','47287','0','34','22','1','0','0','0','0','0','0','Volatile Fiend - Cast Burning Destruction on Aggro'),
 ('2585102','25851','29','1','100','0','2500','2500','0','0','0','0','11','46751','0','0','0','0','0','0','0','0','0','0','Volatile Fiend - Cast Suicide on Generic Timer (Phase 1)'),
