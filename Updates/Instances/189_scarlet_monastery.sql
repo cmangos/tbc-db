@@ -138,7 +138,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (4306, 0, 0, 1, 16, 0, 0, '9276'), -- Scarlet Torturer
 (4308, 0, 0, 1, 16, 0, 0, NULL), -- Unfettered Spirit
 (4540, 0, 0, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(4542, 0, 7, 1, 16, 0, 0, NULL), -- High Inquisitor Fairbanks
+(4542, 0, 0, 1, 16, 0, 0, NULL), -- High Inquisitor Fairbanks
 (4543, 0, 0, 1, 16, 0, 0, NULL), -- Bloodmage Thalnos
 (6426, 0, 0, 1, 16, 0, 0, NULL), -- Anguished Dead
 (6427, 0, 0, 1, 16, 0, 0, NULL), -- Haunting Phantasm
