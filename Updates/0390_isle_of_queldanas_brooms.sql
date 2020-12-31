@@ -15,7 +15,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 DELETE FROM `creature_movement` WHERE `id`=5300028; -- -11, +64
 DELETE FROM `creature_movement` WHERE `id`=5301212; -- -6, +76
 DELETE FROM `creature_movement` WHERE `id`=5301213; -- -9, +72
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`, `comment`) VALUES
 (5300028, 1, 12674.4, -6946.02, 23.48, 100, 0, 0, ''),
 (5300028, 2, 12699, -6981.91, 25.6017, 100, 0, 0, ''),
 (5300028, 3, 12700.8, -6982.29, 25.6017, 100, 5000, 1721303, 'random movement around around current position'),
