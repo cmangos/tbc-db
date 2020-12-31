@@ -741,7 +741,10 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+240, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
 (@CGUID+241, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
 (@CGUID+242, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+243, 0, 0, 1, 16, 0, 0, '45769'); -- Volatile Fiend
+(@CGUID+243, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
+(@CGUID+321, 0, 1, 1, 16, 0, 0, '45769 46744'), -- Shadowsword Manafiend
+(@CGUID+322, 0, 1, 1, 16, 0, 0, '45769 16380'), -- Shadowsword Assassin
+(@CGUID+325, 0, 1, 1, 16, 0, 0, '45769'); -- Shadowsword Lifeshaper
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (24850, 0, 3, 1, 16, 0, 0, NULL), -- Kalecgos
@@ -1323,11 +1326,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+319, 25373, 580, 1, 1705.695, 509.5072, 85.35654, 5.88176, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
 (@CGUID+320, 25373, 580, 1, 1712.088, 513.9833, 85.35654, 5.166174, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
 -- Group
-(@CGUID+321, 25483, 580, 1, 1770.917, 574.3668, 85.26621, 2.9147, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend UNIT_FIELD_BYTES_1: 1
+(@CGUID+321, 25483, 580, 1, 1770.917, 574.3668, 85.26621, 2.9147, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
 (@CGUID+322, 25484, 580, 1, 1767.513, 567.4114, 85.28456, 2.530727, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
 (@CGUID+323, 25486, 580, 1, 1752.69, 574.1627, 85.1591, 5.67232, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
 (@CGUID+324, 25486, 580, 1, 1762.069, 562.6295, 85.28138, 2.338741, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+325, 25506, 580, 1, 1759.415, 579.986, 85.16913, 5.689773, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper UNIT_FIELD_BYTES_1: 1
+(@CGUID+325, 25506, 580, 1, 1759.415, 579.986, 85.16913, 5.689773, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
 (@CGUID+326, 25483, 580, 1, 1817.548, 593.4289, 50.8023, 4.049164, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend Run PATH 1
 (@CGUID+327, 25486, 580, 1, 1812.618, 586.0417, 50.79887, 3.717551, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 1 "When a player reaches 55 yard distance from this npc run path non repeating for the 3 pathed in this group."
