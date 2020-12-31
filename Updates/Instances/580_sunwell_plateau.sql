@@ -470,22 +470,38 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+330, 18, 1756.622, 520.4323, 85.27325, 0, 0, 0),
 (@CGUID+330, 19, 1747.67, 535.4413, 85.28307, 0, 0, 0),
 (@CGUID+330, 20, 1756.622, 520.4323, 85.27325, 0, 0, 0),
+-- Pathing for Shadowsword Assassin - guessed
+(@CGUID+333, 1, 1594.18, 598.35, 50.65, 100, 0, 5), -- Run
+(@CGUID+333, 2, 1571.92, 574.28, 50.60, 100, 0, 0),
+(@CGUID+333, 3, 1645.72, 506.07, 50.57, 100, 0, 0),
+(@CGUID+333, 4, 1592.78, 550.92, 50.57, 100, 0, 0),
+(@CGUID+333, 5, 1601.34, 578.17, 50.57, 100, 0, 0),
+-- Pathing for Shadowsword Assassin - guessed
+(@CGUID+334, 1, 1628.58, 612.93, 85.14, 100, 0, 5), -- Run
+(@CGUID+334, 2, 1601.63, 620.05, 85.24, 100, 0, 0),
+(@CGUID+334, 3, 1601.81, 606.17, 85.12, 100, 0, 0),
+(@CGUID+334, 4, 1615.00, 593.94, 84.98, 100, 0, 0),
+-- Pathing for Shadowsword Assassin - guessed
+(@CGUID+335, 1, 1634.85, 559.47, 85.32, 100, 0, 5), -- Run
+(@CGUID+335, 2, 1679.34, 549.92, 85.12, 100, 0, 0),
+(@CGUID+335, 3, 1613.24, 588.43, 84.94, 100, 0, 0),
+(@CGUID+335, 4, 1633.22, 575.70, 85.04, 100, 0, 0),
 -- Pathing for Shadowsword Soulbinder Entry: 25373
-(@CGUID+336, 1, 1662.868, 524.444, 50.57551, 0, 0, 0),
-(@CGUID+336, 2, 1660.803, 507.3988, 50.57551, 0, 0, 0),
-(@CGUID+336, 3, 1655.291, 495.2188, 50.5755, 0, 0, 0),
-(@CGUID+336, 4, 1660.803, 507.3988, 50.57551, 0, 0, 0),
+(@CGUID+336, 1, 1662.8678, 524.444, 50.57551, 100, 0, 0),
+(@CGUID+336, 2, 1660.8033, 507.39877, 50.57551, 100, 0, 0),
+(@CGUID+336, 3, 1655.2913, 495.21875, 50.575504, 100, 0, 0),
+(@CGUID+336, 4, 1660.8033, 507.39877, 50.57551, 100, 0, 0),
 -- Pathing for Shadowsword Soulbinder Entry: 25373
-(@CGUID+337, 1, 1604.47, 571.6755, 80.41999, 0, 0, 0),
-(@CGUID+337, 2, 1614.62, 557.9446, 72.18298, 0, 0, 0),
-(@CGUID+337, 3, 1630.154, 541.5376, 62.27378, 0, 0, 0),
-(@CGUID+337, 4, 1648.82, 527.8489, 52.86671, 0, 0, 0),
-(@CGUID+337, 5, 1630.154, 541.5376, 62.27378, 0, 0, 0),
-(@CGUID+337, 6, 1614.62, 557.9446, 72.18298, 0, 0, 0),
-(@CGUID+337, 7, 1604.47, 571.6755, 80.41999, 0, 0, 0),
-(@CGUID+337, 8, 1598.747, 584.1803, 84.96148, 0, 0, 0),
-(@CGUID+337, 9, 1594.038, 597.8856, 85.12286, 0, 0, 0),
-(@CGUID+337, 10, 1598.747, 584.1803, 84.96148, 0, 0, 0),
+(@CGUID+337, 1, 1604.4705, 571.67554, 80.41999, 100, 0, 0),
+(@CGUID+337, 2, 1614.62, 557.94464, 72.18298, 100, 0, 0),
+(@CGUID+337, 3, 1630.1543, 541.5376, 62.273785, 100, 0, 0),
+(@CGUID+337, 4, 1648.82, 527.84894, 52.866707, 100, 0, 0),
+(@CGUID+337, 5, 1630.1543, 541.5376, 62.273785, 100, 0, 0),
+(@CGUID+337, 6, 1614.62, 557.94464, 72.18298, 100, 0, 0),
+(@CGUID+337, 7, 1604.4705, 571.67554, 80.41999, 100, 0, 0),
+(@CGUID+337, 8, 1598.7472, 584.1803, 84.96148, 100, 0, 0),
+(@CGUID+337, 9, 1594.0377, 597.88556, 85.122856, 100, 0, 0),
+(@CGUID+337, 10, 1598.7472, 584.1803, 84.96148, 100, 0, 0),
 -- Pathing for Shadowsword Commander Entry: 25837
 (@CGUID+338, 1, 1764.02, 578.5973, 85.12091, 0, 0, 0),
 (@CGUID+338, 2, 1758.39, 570.5671, 85.12949, 0, 0, 0),
@@ -779,13 +795,14 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (26101, 0, 0, 1, 16, 0, 0, '45769'); -- Fire Fiend
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
+-- Kalecgos
+-- Parhelion Plaza
 -- Sunblade Protectors
 (@CGUID+150, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
 (@CGUID+151, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
 (@CGUID+152, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
 (@CGUID+153, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
 (@CGUID+154, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
-(@CGUID+155, @CGUID+62, 1024), -- Sunblade Protector -> Brutallus
 (@CGUID+156, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
 (@CGUID+157, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
 (@CGUID+158, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
@@ -867,13 +884,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+125, @CGUID+79, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+144, @CGUID+79, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+79, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
--- Sunblade Group #11
-(@CGUID+86, @CGUID+75, 1167), -- creature_spawn_entry -> Sunblade Cabalist
-(@CGUID+103, @CGUID+75, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
-(@CGUID+118, @CGUID+75, 1167), -- creature_spawn_entry -> Sunblade Cabalist
-(@CGUID+135, @CGUID+75, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
-(@CGUID+136, @CGUID+75, 1167), -- creature_spawn_entry -> Sunblade Cabalist
-(@CGUID+75, @CGUID+62, 1024), -- Sunblade Cabalist -> Brutallus
 -- Sunblade Pathing Group #1
 (@CGUID+85, @CGUID+102, 1679), -- Sunblade Arch Mage -> Sunblade Vindicator
 (@CGUID+117, @CGUID+102, 1679), -- Sunblade Dusk Priest -> Sunblade Vindicator
@@ -889,6 +899,71 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+116, @CGUID+99, 1679), -- Sunblade Dusk Priest -> Sunblade Vindicator
 (@CGUID+128, @CGUID+99, 1679), -- Sunblade Dawn Priest -> Sunblade Vindicator
 (@CGUID+99, @CGUID+61, 1024), -- Sunblade Vindicator -> Kalecgos
+-- Brutallus
+(@CGUID+155, @CGUID+62, 1024), -- Sunblade Protector -> Brutallus
+-- Sunblade Group #11
+(@CGUID+86, @CGUID+75, 1167), -- creature_spawn_entry -> Sunblade Cabalist
+(@CGUID+103, @CGUID+75, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
+(@CGUID+118, @CGUID+75, 1167), -- creature_spawn_entry -> Sunblade Cabalist
+(@CGUID+135, @CGUID+75, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
+(@CGUID+136, @CGUID+75, 1167), -- creature_spawn_entry -> Sunblade Cabalist
+(@CGUID+75, @CGUID+62, 1024), -- Sunblade Cabalist -> Brutallus
+-- Sunwell Plateau Gauntlet
+-- Shadowsword Group #1
+(@CGUID+300, @CGUID+339, 1159), -- Shadowsword Manafiend -> Gauntlet Imp Trigger
+(@CGUID+301, @CGUID+339, 1159), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
+(@CGUID+302, @CGUID+339, 1159), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
+(@CGUID+303, @CGUID+339, 1159), -- Shadowsword Lifeshaper -> Gauntlet Imp Trigger
+(@CGUID+332, @CGUID+339, 1158), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
+(@CGUID+333, @CGUID+339, 1158), -- Shadowsword Assassin -> Gauntlet Imp Trigger
+-- Shadowsword Group #2
+(@CGUID+304, @CGUID+339, 1158), -- Shadowsword Manafiend -> Gauntlet Imp Trigger
+(@CGUID+305, @CGUID+339, 1158), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
+(@CGUID+306, @CGUID+339, 1158), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
+(@CGUID+307, @CGUID+339, 1158), -- Shadowsword Lifeshaper -> Gauntlet Imp Trigger
+(@CGUID+336, @CGUID+339, 1158), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
+(@CGUID+337, @CGUID+339, 1158), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
+-- Shadowsword Group #3
+(@CGUID+308, @CGUID+339, 1158), -- Shadowsword Manafiend -> Gauntlet Imp Trigger
+(@CGUID+309, @CGUID+339, 1158), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
+(@CGUID+310, @CGUID+339, 1158), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
+(@CGUID+311, @CGUID+339, 1158), -- Shadowsword Lifeshaper -> Gauntlet Imp Trigger
+(@CGUID+334, @CGUID+339, 1158), -- Shadowsword Assassin -> Gauntlet Imp Trigger
+-- Shadowsword Group #4
+(@CGUID+335, @CGUID+316, 1157), -- Shadowsword Assassin -> Shadowsword Commander
+(@CGUID+312, @CGUID+316, 1167), -- Shadowsword Manafiend -> Shadowsword Commander
+(@CGUID+313, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
+(@CGUID+314, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
+(@CGUID+315, @CGUID+316, 1167), -- Shadowsword Lifeshaper -> Shadowsword Commander
+-- Gauntlet Spawn Control
+(@CGUID+339, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+340, @CGUID+316, 1168), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+342, @CGUID+316, 1168), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+343, @CGUID+316, 1168), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+344, @CGUID+316, 1168), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+316, @CGUID+346, 1024), -- Shadowsword Commander -> Lady Sacrolash
+-- Sanguine Chamber
+-- Shadowsword Group #5
+(@CGUID+318, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
+(@CGUID+319, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
+(@CGUID+320, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
+(@CGUID+317, @CGUID+346, 1024), -- Shadowsword Soulbinder -> Lady Sacrolash
+-- Terrace of the Sun
+-- Shadowsword Group #6
+(@CGUID+322, @CGUID+321, 1167), -- Shadowsword Assassin -> Shadowsword Manafiend
+(@CGUID+323, @CGUID+321, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+324, @CGUID+321, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+325, @CGUID+321, 1167), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
+(@CGUID+338, @CGUID+321, 1167), -- Shadowsword Commander -> Shadowsword Manafiend
+(@CGUID+321, @CGUID+346, 1024), -- Shadowsword Manafiend -> Lady Sacrolash
+-- Shadowsword Group #7
+(@CGUID+331, @CGUID+330, 1679), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
+(@CGUID+330, @CGUID+346, 1024), -- Shadowsword Manafiend -> Lady Sacrolash
+-- Shadowsword Group #8
+(@CGUID+326, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+327, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+329, @CGUID+328, 1167), -- Shadowsword Assassin -> Shadowsword Manafiend
+(@CGUID+328, @CGUID+346, 1024), -- Shadowsword Manafiend -> Lady Sacrolash
 -- M'uru Trash
 (@CGUID+182, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
 (@CGUID+184, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
@@ -914,51 +989,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+228, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+229, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+230, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
-(@CGUID+175, @CGUID+176, 1167), -- Apocalypse Guard -> Apocalypse Guard
--- Shadowsword Ungrouped
-(@CGUID+332, @CGUID+346, 1024), -- Shadowsword Soulbinder -> Lady Sacrolash
-(@CGUID+333, @CGUID+346, 1024), -- Shadowsword Assassin -> Lady Sacrolash
-(@CGUID+334, @CGUID+346, 1024), -- Shadowsword Assassin -> Lady Sacrolash
-(@CGUID+335, @CGUID+346, 1024), -- Shadowsword Assassin -> Lady Sacrolash
-(@CGUID+336, @CGUID+346, 1024), -- Shadowsword Soulbinder -> Lady Sacrolash
-(@CGUID+337, @CGUID+346, 1024), -- Shadowsword Soulbinder -> Lady Sacrolash
--- Shadowsword Group #1
-(@CGUID+301, @CGUID+300, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+302, @CGUID+300, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+303, @CGUID+300, 1167), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
--- Shadowsword Group #2
-(@CGUID+305, @CGUID+304, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+306, @CGUID+304, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+307, @CGUID+304, 1167), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
--- Shadowsword Group #3
-(@CGUID+309, @CGUID+308, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+310, @CGUID+308, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+311, @CGUID+308, 1167), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
--- Shadowsword Group #4
-(@CGUID+313, @CGUID+312, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+314, @CGUID+312, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+315, @CGUID+312, 1167), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
-(@CGUID+316, @CGUID+312, 1167), -- Shadowsword Commander -> Shadowsword Manafiend
--- Gauntlet Spawn Control
-(@CGUID+342, @CGUID+316, 144), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+343, @CGUID+316, 144), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+344, @CGUID+316, 144), -- Gauntlet Imp Trigger -> Shadowsword Commander
--- Shadowsword Group #5
-(@CGUID+318, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
-(@CGUID+319, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
-(@CGUID+320, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
--- Shadowsword Group #6
-(@CGUID+322, @CGUID+321, 1167), -- Shadowsword Assassin -> Shadowsword Manafiend
-(@CGUID+323, @CGUID+321, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+324, @CGUID+321, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+325, @CGUID+321, 1167), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
-(@CGUID+338, @CGUID+321, 1167), -- Shadowsword Commander -> Shadowsword Manafiend
--- Shadowsword Group #7
-(@CGUID+331, @CGUID+330, 1679), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
--- Shadowsword Group #8
-(@CGUID+326, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+327, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+329, @CGUID+328, 1167); -- Shadowsword Assassin -> Shadowsword Manafiend
+(@CGUID+175, @CGUID+176, 1167); -- Apocalypse Guard -> Apocalypse Guard
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (25319, 580, 25315, 4096, 0), -- Kalecgos -> Kil'jaeden
@@ -1307,11 +1338,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+331, 25506, 580, 1, 1748.878, 538.0068, 85.26904, 4.803874, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Ungrouped
 (@CGUID+332, 25373, 580, 1, 1560.378, 561.6525, 50.65509, 4.991642, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
-(@CGUID+333, 25484, 580, 1, 1598.08, 572.8362, 50.65884, 0.8865389, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
-(@CGUID+334, 25484, 580, 1, 1628.587, 612.9368, 85.1436, 2.97489, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
-(@CGUID+335, 25484, 580, 1, 1634.864, 559.4721, 85.32404, 6.049571, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
-(@CGUID+336, 25373, 580, 1, 1655.469, 503.2426, 50.64834, 0.6618619, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 1
-(@CGUID+337, 25373, 580, 1, 1597.159, 590.0051, 85.11282, 4.978537, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 2
+(@CGUID+333, 25484, 580, 1, 1598.08, 572.8362, 50.65884, 0.8865389, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+334, 25484, 580, 1, 1628.587, 612.9368, 85.1436, 2.97489, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+335, 25484, 580, 1, 1634.864, 559.4721, 85.32404, 6.049571, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+336, 25373, 580, 1, 1662.8678, 524.444, 50.57551, 0.6618619, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 1
+(@CGUID+337, 25373, 580, 1, 1604.4705, 571.67554, 80.41999, 4.978537, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 2
 (@CGUID+338, 25837, 580, 1, 1752.243, 564.6907, 85.20719, 0.7629684, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Commander PATH 2
 -- Imp Triggers not grouped "Imp spawning starts on spawn."
 (@CGUID+339, 25848, 580, 1, 1589.505, 514.9243, 33.22498, 2.164208, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "bottom - This is the trigger imps path to"
