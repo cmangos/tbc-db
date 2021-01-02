@@ -29104,7 +29104,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shield Orb (25502) - npc_shield_orb
 -- Shadowsword Lifeshaper 25506
 ('2550601','25506','2','0','100','1025','80','0','6000','12000','0','0','11','46466','4','512','0','0','0','0','0','0','0','0','Shadowsword Lifeshaper - Cast Drain Life at 80% HP'),
-('2550602','25506','14','0','100','1025','75000','25','45000','60000','0','0','11','46467','12','0','0','0','0','0','0','0','0','0','Shadowsword Lifeshaper - Cast Health Funnel on Friendly Missing HP'),
+('2550602','25506','14','0','100','1025','50000','25','8000','16000','0','0','11','46467','12','0','0','0','0','0','0','0','0','0','Shadowsword Lifeshaper - Cast Health Funnel on Friendly Missing HP'),
 -- Sunblade Protector 25507 - npc_sunblade_protector
 -- Shadowsword Guardian 25508
 ('2550801','25508','4','0','100','0','0','0','0','0','0','0','11','46932','0','34','0','0','0','0','0','0','0','0','Shadowsword Guardian - Cast Earthquake on Aggro'),
