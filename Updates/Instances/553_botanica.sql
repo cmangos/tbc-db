@@ -716,7 +716,7 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
-INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+REPLACE INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+21, 2, 'The Botanica - Master Felweed (181270) / Terocone (181277) Pool'), -- gameobject
 (@PGUID+22, 1, 'The Botanica - Master Dreaming Glory (181271) Pool'),
 (@PGUID+23, 1, 'The Botanica - Master Netherbloom (181279) Pool'),

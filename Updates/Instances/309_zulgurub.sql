@@ -1681,16 +1681,16 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1134002, 57000, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - stand up'),
 (1134002, 57000, 2, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - salute Hakkar'),
 
-(1135901, 1000, 20, 1, 5, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 1'),
+(1135901, 1000, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 1'),
 (1135901, 45000, 20, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 2'),
 
-(1135902, 1000, 20, 1, 5, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 2'),
+(1135902, 1000, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 2'),
 (1135902, 40000, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 1'),
 
-(1135903, 1000, 20, 1, 5, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 3'),
+(1135903, 1000, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 3'),
 (1135903, 30000, 20, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 4'),
 
-(1135904, 1000, 20, 1, 5, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 4'),
+(1135904, 1000, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 4'),
 (1135904, 35000, 20, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 3');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

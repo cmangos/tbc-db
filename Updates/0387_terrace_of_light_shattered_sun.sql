@@ -28,14 +28,14 @@ INSERT INTO game_event_creature (guid, `event`) VALUES
 DELETE FROM creature WHERE guid IN (165102,165103,165104,165105,165106,165107,165108,165109);
 INSERT INTO creature (guid, id, map, spawnMask, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) VALUES
 (165102, 25115, 530, 1, -1983.31, 5491.89, -12.3448, 0.172585, 30, 120, 0, 2),
-(165103, 25115, 530, 1,  -1866.12, 5519.31, -12.3448, 3.35933, 30, 120, 0, 2),
-(165104, 25115, 530, 1,  -1955.07, 5432.4, -12.3448, 4.9826, 30, 120, 0, 2),
-(165105, 25115, 530, 1,  -1753.5, 5495.75, -12.3448, 3.78282, 30, 120, 0, 2),
+(165103, 25115, 530, 1, -1866.12, 5519.31, -12.3448, 3.35933, 30, 120, 0, 2),
+(165104, 25115, 530, 1, -1955.07, 5432.4, -12.3448, 4.9826, 30, 120, 0, 2),
+(165105, 25115, 530, 1, -1753.5, 5495.75, -12.3448, 3.78282, 30, 120, 0, 2),
 
-(165106, 24938, 530, 1,  -1941.19, 5486.9, -12.3448, 0.593412, 30, 120, 0, 2),
-(165107, 24938, 530, 1,  -1958.11, 5418.16, -12.3448, 5.06145, 30, 120, 0, 2),
-(165108, 24938, 530, 1,  -1771.48, 5424.38, -12.3448, 1.79769, 30, 120, 0, 2),
-(165109, 24938, 530, 1,  -1799.05, 5549.32, -12.3448, 5.02655, 30, 120, 0, 2);
+(165106, 24938, 530, 1, -1941.19, 5486.9, -12.3448, 0.593412, 30, 120, 0, 2),
+(165107, 24938, 530, 1, -1958.11, 5418.16, -12.3448, 5.06145, 30, 120, 0, 2),
+(165108, 24938, 530, 1, -1771.48, 5424.38, -12.3448, 1.79769, 30, 120, 0, 2),
+(165109, 24938, 530, 1, -1799.05, 5549.32, -12.3448, 5.02655, 30, 120, 0, 2);
 
 DELETE FROM creature_movement WHERE id IN (165102,165103,165104,165105,165106,165107,165108,165109);
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
@@ -104,15 +104,12 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (165109,5,-1844.8711,5471.938,-12.428152,0,0,100),
 (165109,6,-1840.0154,5499.118,-12.428037,5000,2511503,100);
 
-DELETE FROM dbscript_random_templates WHERE id IN (2493800,2493801);
-DELETE FROM dbscript_random_templates WHERE id IN (2511500,2511501);
-
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (2511501,2511502,2493801,2493802,2511503);
 INSERT INTO dbscripts_on_creature_movement (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
 (2511501, 0, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Warrior - Run on'),
-(2511501, 0, 0, 45, 0, 2511500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Warrior- Random Transform (Blood Elf)'),
+(2511501, 0, 0, 45, 0, 2511500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Warrior - Random Transform (Blood Elf)'),
 (2511502, 0, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Warrior - Run on'),
-(2511502, 0, 0, 45, 0, 2511501, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Warrior- Random Transform (Draenei)'),
+(2511502, 0, 0, 45, 0, 2511501, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Warrior - Random Transform (Draenei)'),
 
 (2493801, 0, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Marksman - Run on'),
 (2493801, 0, 0, 45, 0, 2493800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Sun Marksman - Random Transform (Blood Elf)'),
