@@ -29201,7 +29201,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Doomfire Shard 25948 - Cast s.46305 on c.25592 on Death
 ('2594801','25948','11','0','100','0','0','0','0','0','0','0','11','31722','0','34','0','0','0','0','0','0','0','0','Doomfire Shard - Cast Immolation on Spawn'),
 ('2594802','25948','29','0','100','0','1000','1000','0','0','0','0','11','32074','0','34','38','0','0','0','0','0','0','0','Doomfire Shard - Cast Doomfire Spawn and Zone Combat Pulse on Generic Timer'),
-('2594803','25948','6','0','100','0','0','0','0','0','0','0','45','0','100','0','0','0','0','0','0','0','0','0','Doomfire Shard - Send AI Event 0 on Death'),
+('2594803','25948','6','0','100','0','0','0','0','0','0','0','45','0','100','0','41','3000','0','0','0','0','0','0','Doomfire Shard - Send AI Event 0 and Delayed Despawn on Death'),
 -- Anveena 26046
 ('2604601','26046','11','0','100','0','0','0','0','0','0','0','11','46367','0','0','0','0','0','0','0','0','0','0','Anveena - Cast Anveena''s Prison on Spawn'),
 -- Fire Fiend 26101
