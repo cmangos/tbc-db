@@ -29584,7 +29584,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jan'alai 23578 - boss_janalai
 -- Amani'shi Warbringer 23580
 ('2358001','23580','11','0','100','0','0','0','0','0','0','0','11','23255','0','34','0','0','0','0','0','0','0','0','Amani''shi Warbringer - Cast Deep Wounds on Spawn'),
-('2358002','23580','2','0','100','1024','25','0','0','0','0','0','11','43274','0','2','11','40743','0','2','43','0','0','0','Amani''shi Warbringer - Cast Dismount Bear and Enrage, Dismount at 25% HP'),
+('2358002','23580','2','0','100','0','25','0','0','0','0','0','11','43274','0','2','11','40743','0','2','43','0','0','0','Amani''shi Warbringer - Cast Dismount Bear and Enrage, Dismount at 25% HP'),
 ('2358003','23580','0','0','100','1025','12000','18000','20000','20000','0','0','11','42496','15','0','0','0','0','0','0','0','0','0','Amani''shi Warbringer - Cast Furious Roar'),
 ('2358004','23580','0','0','100','1025','5000','10000','8000','12000','0','0','11','43273','1','0','0','0','0','0','0','0','0','0','Amani''shi Warbringer - Cast Cleave'),
 -- Amani'shi Medicine Man 23581
