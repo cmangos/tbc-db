@@ -31070,7 +31070,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-101','For the Dragonmaw!','0','0','1','0','1937','Common Dragonmaw Text'),
 ('-102','Long live the Dragonmaw! Die you worthless $r!','0','0','1','0','1939','Common Dragonmaw Text'),
 ('-103','Brains...','0','0','0','0','1940','1158'),
-('-104','Who challenges Naias? Puny $r, you are little better than those mindless trolls I have played against each other like so many pieces on a game board!','0','0','0','0','0','17207'),
+('-104','Who challenges Naias? Puny $r, you are little better than those mindless trolls I have played against each other like so many pieces on a game board!','0','0','0','0','13560','17207'),
 ('-105','Your bones will break under my boot, $r!','0','0','1','0','1938','Common Dragonmaw Text'),
 ('-106','%s goes into a frenzy!','0','2','0','0','1191','Frenzy Text'),
 -- Classic PLEASE RE-USE 107 - 122
@@ -31168,7 +31168,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 -- Classic PLEASE RE-USE 235 - 310
 ('-311','This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.','0','0','0','0','5952','11582'),
 -- Classic PLEASE RE-USE 312 - 320
-('-321','Iman m t''ief fu Fus''obeah italaf','0','0','0','0','0','Common Frostmane Troll Text'),
+('-321','Have a taste of Frostmane magics.','0','0','0','0','1910','Common Frostmane Troll Text'),
 ('-322','All you $R want is my weed.','0','0','14','0','1911','Common Frostmane Troll Text'),
 ('-323','You dare defile Frostmane Hold, $r. Prepare to die!','0','0','14','0','1918','1260'),
 ('-324','Time to bash!','0','0','0','0','1917','1119'),
@@ -31203,12 +31203,12 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-371','Die, $R!  These lands belong to the Stonesplinter Tribe!','0','0','0','0','446','1399'),
 ('-372','The Loch belongs to the Stonesplinter Tribe now, $N!  Now die!','0','0','0','0','448','1399'),
 ('-373','Die in the name of Ragnaros!','0','0','0','0','434','1222'),
-('-374','[Dwarvish] Dum mos','0','0','0','0','0','2149'),
+('-374','Time to die, $C.','0','0','0','0','1935','2149'),
 ('-375','%s''s eyes glow red as he lights his dynamite and begins to cackle madly!','0','2','0','0','637','1222'),
 ('-376','[Orcish] Ogg kaz ko zugas kil mog Tov''nokaz Kagg','0','0','0','0','0','Orc Common Text'),
 ('-377','[Orcish] Tago mog regas gi mog Tov''nokaz Kagg','0','0','0','0','0','Orc Common Text'),
 -- Classic PLEASE RE-USE 378 - 387
-('-388','Hearty Kill!','5801','1','0','0','0','4831'),
+('-388','Paltry kill.','5801','1','0','0','6170','4831'),
 -- Classic PLEASE RE-USE 389 - 403
 ('-404','I cannot permit you to enter the Temple!  I must destroy you for your own good!','0','0','0','0','9589','Common Green Dragon Text'),
 ('-405','%s seems much calmer now that it has eaten the remains of $N.','0','2','0','0','907','2931'),
@@ -31358,7 +31358,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-808','No one get past me and threaten da king!  Ungh, take it!!','0','0','0','0','9418','14325'),
 ('-809','Help me crush these punys!','0','1','0','0','9478','14325'),
 -- Classic PLEASE RE-USE 810 - 816
-('-817','So or''manley fi siame Dim fus siame yudo','5859','1','14','0','0','8580'),
+('-817','My banishment is ended! Let the blood flow!','5859','1','14','0','4485','8580'),
 ('-818','%s lets loose a guttural growl as her body collapses. A horrifying howl can be heard echoing through the halls of Blackrock Spire. Something is very, very angry.','0','2','0','0','5548','10220'),
 ('-819','Turn back! Do not wake the dreamer!','5866','1','0','0','6220','5721'),
 ('-820','You know not what you do!  We must destroy you for your own good.','0','1','0','0','4364','5721'),
@@ -31724,7 +31724,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10087','Assist me slaves!','0','1','0','0','18972','17805/17959 on Aggro'),
 ('-10088','You cannot stop us!','0','1','0','0','19397','Shattered Hand Houndmaster 17670 on 37437'),
 ('-10089','Intruders!','0','0','0','0','1727','15551 on Aggro'),
-('-10090','%s shatters into shards.','0','2','0','0','0','Sundered Rumbler 18881'),
+('-10090','%s shatters into shards.','0','2','0','0','19115','Sundered Rumbler 18881'),
 ('-10091','The rest are fine without us.','0','0','0','0','13827','16407 idle'),
 ('-10092','They''ll never know we''re missing.','0','0','0','0','13828','16407 idle'),
 ('-10093','If we dawdle much longer, there''ll be hell to pay!','0','0','0','0','13826','16407 idle'),
@@ -32447,7 +32447,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10848','The gnomes used to be a nice respectful people...','0','0','0','1','16669','19228'),
 ('-10849','The other day I saw one walking down the street shouting, "Once you go gnome, you never go home!"','0','0','0','1','16670','19228'),
 ('-10850','The comedian impersonates a female dwarf.','6106','2','0','5','0','19228'),
-('-10851','So this gnome tells a tauren he''s been to Molten Core.','0','0','0','1','0','19228'),
+('-10851','So this gnome tells a tauren he''s been to Molten Core.','0','0','0','1','16332','19228'),
 ('-10852','The tauren says, "That''s a load of bull."','0','0','0','5','16335','19228'),
 ('-10853','Is it just me, or is the Horde about the ugliest enemy we could find?','0','0','7','1','16678','19228'),
 ('-10854','Just so you guys don''t feel left out, all I said was how attractive the blood elves are.  It loses something in the translation.','0','0','1','1','16679','19228'),
