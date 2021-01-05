@@ -27522,8 +27522,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2340101','23401','1','0','100','0','0','0','0','0','0','0','11','41248','0','32','0','0','0','0','0','0','0','0','Hungering Soul Fragment - Cast Consuming Strikes OOC'),
 -- Illidari Battle-Mage 23402
 ('2340201','23402','4','0','100','0','0','0','0','0','0','0','57','2','30','0','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Enable Range Mode on Aggro'),
-('2340202','23402','0','0','100','1025','18000','30000','15000','20000','0','0','11','41379','1','0','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Cast Flamestrike'),
-('2340203','23402','0','0','100','1025','12000','24000','8000','16000','0','0','11','41382','1','0','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Cast Blizzard'),
+('2340202','23402','0','0','100','1025','18000','30000','15000','20000','0','0','11','41379','4','512','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Cast Flamestrike'),
+('2340203','23402','0','0','100','1025','12000','24000','8000','16000','0','0','11','41382','4','512','0','0','0','0','0','0','0','0','Illidari Battle-Mage - Cast Blizzard'),
 ('2340204','23402','0','0','100','1057','1200','1200','1200','2400','0','0','11','41383','1','256','11','41384','1','256','0','0','0','0','Illidari Battle-Mage - Random Cast Fireball or Frostbolt'),
 -- Illidari Assassin 23403 - Ambush on Vanish End if in Range of Selected Target, has shadowstep spelleffect, maybe temp taunt effect
 ('2340301','23403','11','0','100','0','0','0','0','0','0','0','11','34081','0','34','11','41393','0','34','0','0','0','0','Illidari Assassin - Cast Improved Parry and Riposte on Spawn'),
