@@ -24532,16 +24532,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2468702','24687','0','0','100','1029','5000','15000','12000','18000','0','0','11','46046','15','0','0','0','0','0','0','0','0','0','Sunblade Physician (Heroic) - Cast Inject Poison'),
 ('2468703','24687','14','0','100','1027','850','40','16000','22000','0','0','11','44583','12','32','0','0','0','0','0','0','0','0','Sunblade Physician (Normal) - Cast Prayer of Mending on Friendly Missing HP'),
 ('2468704','24687','14','0','100','1029','1150','40','16000','22000','0','0','11','46045','12','32','0','0','0','0','0','0','0','0','Sunblade Physician (Heroic) - Cast Prayer of Mending on Friendly Missing HP'),
--- Wretched Skulker
-('2468801','24688','0','0','100','1025','6200','14000','5000','12000','0','0','11','44533','1','0','0','0','0','0','0','0','0','0','Wretched Skulker - Cast Wretched Stab'),
-('2468802','24688','2','0','100','1024','20','0','0','0','0','0','11','44505','0','0','0','0','0','0','0','0','0','0','Wretched Skulker - Cast Drink Fel Infusion at 20% HP'),
--- Wretched Bruiser
-('2468901','24689','0','0','100','1025','3800','3800','6000','11000','0','0','11','44534','1','0','0','0','0','0','0','0','0','0','Wretched Bruiser - Cast Wretched Strike'),
-('2468902','24689','2','0','100','1024','20','0','0','0','0','0','11','44505','0','0','0','0','0','0','0','0','0','0','Wretched Bruiser - Cast Drink Fel Infusion at 20% HP'),
--- Wretched Husk
-('2469001','24690','0','0','50','1025','5000','5000','7000','17000','0','0','11','44503','1','0','0','0','0','0','0','0','0','0','Wretched Husk - Cast Wretched Fireball'),
-('2469002','24690','0','0','50','1025','6500','6500','14000','24000','0','0','11','44504','1','0','0','0','0','0','0','0','0','0','Wretched Husk - Cast Wretched Frostbolt'),
-('2469003','24690','2','0','100','1024','20','0','0','0','0','0','11','44505','0','0','0','0','0','0','0','0','0','0','Wretched Husk - Cast Drink Fel Infusion at 20% HP'),
+-- Wretched Skulker 24688
+('2468801','24688','4','0','15','0','0','0','0','0','0','0','54','0','0','12006','0','0','0','0','0','0','0','0','Wretched Skulker - Random Say on Aggro'),
+('2468802','24688','0','0','100','1027','20000','40000','30000','60000','0','0','11','44505','0','0','0','0','0','0','0','0','0','0','Wretched Skulker (Normal) - Cast Drink Fel Infusion'),
+('2468803','24688','0','0','100','1029','5000','15000','15000','30000','0','0','11','44505','0','0','0','0','0','0','0','0','0','0','Wretched Skulker (Heroic) - Cast Drink Fel Infusion'),
+('2468804','24688','0','0','100','1025','4000','12000','2000','6000','0','0','11','44533','1','0','0','0','0','0','0','0','0','0','Wretched Skulker - Cast Wretched Stab'),
+-- Wretched Bruiser 24689
+('2468901','24689','4','0','15','0','0','0','0','0','0','0','54','0','0','12006','0','0','0','0','0','0','0','0','Wretched Bruiser - Random Say on Aggro'),
+('2468902','24689','0','0','100','1027','20000','40000','30000','60000','0','0','11','44505','0','0','0','0','0','0','0','0','0','0','Wretched Bruiser (Normal) - Cast Drink Fel Infusion'),
+('2468903','24689','0','0','100','1029','5000','15000','15000','30000','0','0','11','44505','0','0','0','0','0','0','0','0','0','0','Wretched Bruiser (Heroic) - Cast Drink Fel Infusion'),
+('2468904','24689','0','0','100','1025','5000','15000','7000','17000','0','0','11','44534','1','0','0','0','0','0','0','0','0','0','Wretched Bruiser - Cast Wretched Strike'),
+-- Wretched Husk 24690
+('2469001','24690','11','0','100','0','0','0','0','0','0','0','57','1','35','0','0','0','0','0','0','0','0','0','Wretched Husk - Enable Range Mode on Spawn'),
+('2469002','24690','4','0','15','0','0','0','0','0','0','0','54','0','0','12006','0','0','0','0','0','0','0','0','Wretched Husk - Random Say on Aggro'),
+('2469003','24690','0','0','100','1027','20000','40000','30000','60000','0','0','11','44505','0','0','0','0','0','0','0','0','0','0','Wretched Bruiser (Normal) - Cast Drink Fel Infusion'),
+('2469004','24690','0','0','100','1029','5000','15000','15000','30000','0','0','11','44505','0','0','0','0','0','0','0','0','0','0','Wretched Bruiser (Heroic) - Cast Drink Fel Infusion'),
+('2469005','24690','0','0','100','1057','0','0','3000','3000','0','0','11','44503','1','0','11','44504','1','0','0','0','0','0','Wretched Husk - Random Cast Wretched Fireball or Wretched Frostbolt'),
 -- Coilskar Witch 24696
 ('2469601','24696','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Coilskar Witch - Enable Range Mode on Aggro'),
 ('2469602','24696','2','0','100','1025','50','0','70000','85000','0','0','11','17741','0','0','0','0','0','0','0','0','0','0','Coilskar Witch (Normal - Cast Mana Shield at 50% HP'),
@@ -32821,6 +32827,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11231','Come on you apes. You want to live forever?','0','0','0','0','19095','Razak Ironsides 21118'),
 ('-11232','Warm it up and give ''em everything you''ve got.','0','0','0','0','19096','Razak Ironsides 21118'),
 ('-11233','Do ye want ta live forever?','0','0','0','0','26303','The Brewmaiden 27166'),
+('-11234','It''s MINE!','0','0','0','0','23845','Magisters'' Terrace - Wretched'),
+('-11235','You wish to steal the power!  Die!','0','0','0','0','23846','Magisters'' Terrace - Wretched'),
+('-11236','Get away from my crystals!','0','0','0','0','23847','Magisters'' Terrace - Wretched'),
 
 ('-19997','May the light bless you.','0','0','0','1','24856','25639'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','1','24857','25639'),
@@ -33328,10 +33337,12 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (12004,0,-10084,0,'Dreghood Slave 17799 - Random Evade Texts'),
 (12004,0,-10085,0,'Dreghood Slave 17799 - Random Evade Texts'),
 (12004,0,-10086,0,'Dreghood Slave 17799 - Random Evade Texts'),
-
 (12005,0,-10685,0,'19283 - Vagrant - Random OOC Texts'),
 (12005,0,-10686,0,'19283 - Vagrant - Random OOC Texts'),
-(12005,0,-10687,0,'19283 - Vagrant - Random OOC Texts');
+(12005,0,-10687,0,'19283 - Vagrant - Random OOC Texts'),
+(12006, 0, -11234, 0, 'Magisters'' Terrace - Wretched - Random Aggro Texts'),
+(12006, 0, -11235, 0, 'Magisters'' Terrace - Wretched - Random Aggro Texts'),
+(12006, 0, -11236, 0, 'Magisters'' Terrace - Wretched - Random Aggro Texts');
 
 -- WOTLK IDs 20000+
 -- INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
