@@ -29202,7 +29202,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2583702','25837','0','0','100','1025','8000','16000','12000','18000','0','0','11','46762','4','2048','0','0','0','0','0','0','0','0','Shadowsword Commander - Cast Shield Slam on Casting'),
 -- Entropius (25840) - boss_entropius
 -- Gauntlet Imp Trigger 25848
-('2584801','25848','4','0','100','0','0','0','0','0','0','0','38','0','0','0','21','0','0','0','20','0','0','0','Gauntlet Imp Trigger - Zone Combat Pulse and Stop Movement and Stop Melee on Aggro'),
+('2584801','25848','4','0','100','0','0','0','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Gauntlet Imp Trigger - Die on Aggro'),
 -- Volatile Fiend 25851 - Version One: Gauntlet - s.46308 (Burning Winds) & s.45211 (Trigger 000 (If Summoned Only)) on Spawn and s.47287 on Aggro - Version Two Post Twins Trash using s.45779 on timer? Should cast s.46751 after s.46218 execution
 ('2585101','25851','4','0','100','0','0','0','0','0','0','0','11','47287','0','34','22','1','0','0','0','0','0','0','Volatile Fiend - Cast Burning Destruction on Aggro'),
 ('2585102','25851','29','1','100','0','2500','2500','0','0','0','0','11','46751','0','0','0','0','0','0','0','0','0','0','Volatile Fiend - Cast Suicide on Generic Timer (Phase 1)'),
