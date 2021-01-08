@@ -913,37 +913,37 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+75, @CGUID+62, 1024), -- Sunblade Cabalist -> Brutallus
 -- Sunwell Plateau Gauntlet
 -- Shadowsword Group #1
-(@CGUID+300, @CGUID+339, 1159), -- Shadowsword Manafiend -> Gauntlet Imp Trigger
-(@CGUID+301, @CGUID+339, 1159), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
-(@CGUID+302, @CGUID+339, 1159), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
-(@CGUID+303, @CGUID+339, 1159), -- Shadowsword Lifeshaper -> Gauntlet Imp Trigger
-(@CGUID+332, @CGUID+339, 1158), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
-(@CGUID+333, @CGUID+339, 1158), -- Shadowsword Assassin -> Gauntlet Imp Trigger
+(@CGUID+300, @CGUID+303, 1165), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
+(@CGUID+301, @CGUID+303, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+302, @CGUID+303, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+303, @CGUID+332, 1165), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
+(@CGUID+332, @CGUID+333, 1165), -- Shadowsword Soulbinder -> Shadowsword Assassin
+(@CGUID+333, @CGUID+307, 1165), -- Shadowsword Assassin -> Shadowsword Lifeshaper
 -- Shadowsword Group #2
-(@CGUID+304, @CGUID+339, 1158), -- Shadowsword Manafiend -> Gauntlet Imp Trigger
-(@CGUID+305, @CGUID+339, 1158), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
-(@CGUID+306, @CGUID+339, 1158), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
-(@CGUID+307, @CGUID+339, 1158), -- Shadowsword Lifeshaper -> Gauntlet Imp Trigger
-(@CGUID+336, @CGUID+339, 1158), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
-(@CGUID+337, @CGUID+339, 1158), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
+(@CGUID+304, @CGUID+307, 1165), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
+(@CGUID+305, @CGUID+307, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+306, @CGUID+307, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+307, @CGUID+336, 1165), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
+(@CGUID+336, @CGUID+337, 1165), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
+(@CGUID+337, @CGUID+311, 1165), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
 -- Shadowsword Group #3
-(@CGUID+308, @CGUID+339, 1158), -- Shadowsword Manafiend -> Gauntlet Imp Trigger
-(@CGUID+309, @CGUID+339, 1158), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
-(@CGUID+310, @CGUID+339, 1158), -- Shadowsword Vanquisher -> Gauntlet Imp Trigger
-(@CGUID+311, @CGUID+339, 1158), -- Shadowsword Lifeshaper -> Gauntlet Imp Trigger
-(@CGUID+334, @CGUID+339, 1158), -- Shadowsword Assassin -> Gauntlet Imp Trigger
+(@CGUID+308, @CGUID+311, 1165), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
+(@CGUID+309, @CGUID+311, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+310, @CGUID+311, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+311, @CGUID+334, 1165), -- Shadowsword Lifeshaper -> Shadowsword Assassin
+(@CGUID+334, @CGUID+335, 1165), -- Shadowsword Assassin -> Shadowsword Assassin
 -- Shadowsword Group #4
-(@CGUID+335, @CGUID+316, 1157), -- Shadowsword Assassin -> Shadowsword Commander
+(@CGUID+335, @CGUID+316, 1165), -- Shadowsword Assassin -> Shadowsword Commander
 (@CGUID+312, @CGUID+316, 1167), -- Shadowsword Manafiend -> Shadowsword Commander
 (@CGUID+313, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
 (@CGUID+314, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
 (@CGUID+315, @CGUID+316, 1167), -- Shadowsword Lifeshaper -> Shadowsword Commander
 -- Gauntlet Spawn Control
-(@CGUID+339, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+340, @CGUID+316, 1168), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+342, @CGUID+316, 1168), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+343, @CGUID+316, 1168), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+344, @CGUID+316, 1168), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+339, @CGUID+316, 1181), -- Gauntlet Imp Trigger "bottom" -> Shadowsword Commander
+(@CGUID+340, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+342, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+343, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
+(@CGUID+344, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
 (@CGUID+316, @CGUID+346, 1024), -- Shadowsword Commander -> Lady Sacrolash
 -- Sanguine Chamber
 -- Shadowsword Group #5
