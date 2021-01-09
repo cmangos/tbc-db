@@ -1,10 +1,10 @@
 -- Fix Repuation Reward for TBC Daily Quests
 
 -- Issue with Faction 946/947 due to only one template for both horde and alliance
-UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 946, `rewrepfaction3` = 947, `rewrepvalue1` = 350, `rewrepvalue2` = 0, `rewrepvalue3` = 0 WHERE `entry` = 11354; -- Wanted: Nazan\'s Riding Crop
-UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 946, `rewrepfaction3` = 947, `rewrepvalue1` = 350, `rewrepvalue2` = 0, `rewrepvalue3` = 0 WHERE `entry` = 11362; -- Wanted: Keli\'dan\'s Feathered Stave
-UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 946, `rewrepfaction3` = 947, `rewrepvalue1` = 350, `rewrepvalue2` = 0, `rewrepvalue3` = 0 WHERE `entry` = 11363; -- Wanted: Bladefist\'s Seal
-UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 946, `rewrepfaction3` = 947, `rewrepvalue1` = 250, `rewrepvalue2` = 0, `rewrepvalue3` = 0 WHERE `entry` = 11364; -- Wanted: Shattered Hand Centurions
+UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 0, `rewrepfaction3` = 0, `rewrepvalue1` = 350, `rewrepvalue2` = 0, `rewrepvalue3` = 0 WHERE `entry` = 11354; -- Wanted: Nazan\'s Riding Crop
+UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 0, `rewrepfaction3` = 0, `rewrepvalue1` = 350, `rewrepvalue2` = 0, `rewrepvalue3` = 0 WHERE `entry` = 11362; -- Wanted: Keli\'dan\'s Feathered Stave
+UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 0, `rewrepfaction3` = 0, `rewrepvalue1` = 350, `rewrepvalue2` = 0, `rewrepvalue3` = 0 WHERE `entry` = 11363; -- Wanted: Bladefist\'s Seal
+UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 0, `rewrepfaction3` = 0, `rewrepvalue1` = 250, `rewrepvalue2` = 0, `rewrepvalue3` = 0 WHERE `entry` = 11364; -- Wanted: Shattered Hand Centurions
 UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 942, `rewrepvalue1` = 350, `rewrepvalue2` = 350 WHERE `entry` = 11368; -- Wanted: The Heart of Quagmirran
 UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 942, `rewrepvalue1` = 350, `rewrepvalue2` = 350 WHERE `entry` = 11369; -- Wanted: A Black Stalker Egg
 UPDATE `quest_template` SET `rewrepfaction1` = 933, `rewrepfaction2` = 942, `rewrepvalue1` = 350, `rewrepvalue2` = 350 WHERE `entry` = 11370; -- Wanted: The Warlord\'s Treatise
