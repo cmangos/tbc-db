@@ -16692,8 +16692,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shard-Hide Boar
 ('2218001','22180','11','0','100','0','0','0','0','0','0','0','11','40773','0','0','0','0','0','0','0','0','0','0','Shard-Hide Boar - Cast Shard Hide on Spawn'),
 ('2218002','22180','0','0','100','1025','4700','15300','9700','16300','0','0','11','34783','0','0','0','0','0','0','0','0','0','0','Shard-Hide Boar - Cast Spell Reflection'),
--- Aether Ray
-('2218101','22181','0','0','100','1025','7900','13000','28000','36000','0','0','11','35333','1','0','0','0','0','0','0','0','0','0','Aether Ray - Cast Tail Swipe'),
+-- Aether Ray 22181
+('2218101','22181','2','0','100','1024','40','0','0','0','0','0','1','-10264','0','0','0','0','0','0','0','0','0','0','Aether Ray - Emote at 40% HP'),
+('2218102','22181','0','0','100','1025','7900','13000','28000','36000','0','0','11','35333','1','0','0','0','0','0','0','0','0','0','Aether Ray - Cast Tail Swipe'),
 -- Lightning Wasp - Pre 2.1
 ('2218201','22182','1','0','100','1','1000','1000','600000','600000','0','0','11','35319','0','32','0','0','0','0','0','0','0','0','Lightning Wasp - Cast Electric Skin OOC'),
 -- Bladespine Basilisk 22187 - Pre 2.1 - NSR
@@ -31871,7 +31872,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10261','%s groans in pain.','0','2','0','0','15158','18218'),
 ('-10262','%s winces when he touches the tender area around his scratch.','0','2','0','0','15161','18218'),
 ('-10263','Shifting, %s moans from the pain of his thorn scratch.','0','2','0','0','15157','18218'),
--- RE-USE 10264
+('-10264','The %s appears ready to be wrangled.','0','2','0','0','21366','Aether Ray 22181'),
 ('-10265','%s looks at his friends and then grunts painfully.','0','2','0','0','15159','18218'),
 ('-10266','%s wakes himself up snoring.','0','2','0','0','15160','18218'),
 ('-10267','%s''s hand begins to glow with Arcane energy!','0','2','0','0','19264','20041'),
