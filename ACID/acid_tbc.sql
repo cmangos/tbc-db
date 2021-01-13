@@ -17128,9 +17128,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Air Force Alarm Bot (Alliance) 2614 - npc_air_force_bots
 -- Air Force Alarm Bot (Horde) 2615 - npc_air_force_bots
 -- Nazgrel 3230 - npc_nazgrel
+-- Gryphon Rider Guard 15241
+('1524101','15241','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Gryphon Rider Guard - Prevent Combat Movement on Spawn'),
+('1524102','15241','0','0','100','1025','0','0','2000','3000','0','0','11','38182','1','256','0','0','0','0','0','0','0','0','Gryphon Rider Guard - Cast Stormhammer'),
 -- Bat Rider Guard 15242
 ('1524201','15242','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Bat Rider Guard - Prevent Combat Movement on Spawn'),
-('1524202','15242','0','0','100','1025','3000','3000','12000','18000','0','0','11','38066','1','256','0','0','0','0','0','0','0','0','Bat Rider Guard - Cast Unstable Concoction'),
+('1524202','15242','0','0','100','1025','0','0','2000','3000','0','0','11','38066','1','256','0','0','0','0','0','0','0','0','Bat Rider Guard - Cast Unstable Concoction'),
 -- Far Seer Regulkut 16574
 ('1657401','16574','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Far Seer Regulkut - Enable Range Mode on Aggro'),
 ('1657402','16574','9','0','100','1025','0','5','45000','60000','0','0','11','15786','0','0','0','0','0','0','0','0','0','0','Far Seer Regulkut - Cast Earthbind Totem'),
