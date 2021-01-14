@@ -24565,8 +24565,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sister of Torment 24697
 ('2469701','24697','0','0','100','1025','8000','18000','13000','18000','0','0','11','44547','4','512','0','0','0','0','0','0','0','0','Sister of Torment - Cast Deadly Embrace'),
 ('2469702','24697','0','0','100','1025','4000','12000','5000','17000','0','0','11','44640','1','0','0','0','0','0','0','0','0','0','Sister of Torment - Cast Lash of Pain'),
--- Ethereum Smuggler
-('2469801','24698','9','0','100','1025','0','8','12000','17000','0','0','11','44538','0','0','0','0','0','0','0','0','0','0','Ethereum Smuggler - Cast Arcane Explosion'),
+-- Ethereum Smuggler 24698
+('2469801','24698','29','7','100','1','600','600','600','600','0','0','21','1','0','0','22','0','0','0','11','44538','15','0','Ethereum Smuggler - Enable Combat Movement and Set Phase 0 and Cast Arcane Explosion on Generic Timer (Phase 3)'),
+('2469802','24698','29','11','100','1','600','600','600','600','0','0','22','3','0','0','11','44538','15','0','0','0','0','0','Ethereum Smuggler - Set Phase 3 and Cast Arcane Explosion on Generic Timer (Phase 2)'),
+('2469803','24698','29','13','100','1','0','0','0','0','0','0','22','2','0','0','11','44538','15','0','0','0','0','0','Ethereum Smuggler - Set Phase 2 and Cast Arcane Explosion on Generic Timer (Phase 1)'),
+('2469804','24698','0','0','100','1025','10000','20000','20000','30000','0','0','11','36967','4','512','22','1','0','0','21','0','0','0','Ethereum Smuggler - Cast Teleport to Player and Set Phase 1 and Disable Combat Movement'),
 -- Arcane Sphere 24708 - mob_arcane_sphere
 -- High Explosive Sheep
 ('2471501','24715','9','0','100','1024','0','5','0','0','0','0','11','44279','0','2','37','0','0','0','0','0','0','0','High Explosive Sheep - Cast High Explosive Sheep and Die on Range Check'),
