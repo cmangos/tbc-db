@@ -16615,8 +16615,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Electromental 21729 - spell_dummy_npc
 ('2172901','21729','11','0','100','0','0','0','0','0','0','0','57','1','35','0','11','37248','0','0','0','0','0','0','Electromental - Enable Caster Mode and Cast Power Converters: Electromental Visual on Spawn'),
 ('2172902','21729','9','0','100','1025','0','40','2000','2000','0','0','11','37273','1','256','0','0','0','0','0','0','0','0','Electromental - Cast Lightning Bolt'),
--- Wyrm from Beyond
-('2179601','21796','0','0','100','1025','4000','6000','5500','7000','0','0','11','13321','1','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Cast Mana Burn'),
+-- Wyrm from Beyond 21796
+('2179601','21796','11','0','100','0','0','0','0','0','0','0','11','37510','0','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Cast Summon Singing Ridge Void Storm on Spawn'),
+('2179602','21796','1','0','100','0','3000','3000','0','0','0','0','11','34876','0','0','19','33554432','0','0','19','256','0','0','Wyrm from Beyond - Cast Wyrm from Beyond Transform and Remove UntFlags on OOC timer'),
+('2179603','21796','1','0','100','0','4000','4000','0','0','0','0','55','11','0','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Attack summoner on OOC timer'),
+('2179604','21796','0','0','100','1025','4000','6000','5500','7000','0','0','11','13321','1','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Cast Mana Burn'),
 -- Wyrmcult Poacher 21809
 ('2180901','21809','11','0','100','0','0','0','0','0','0','0','11','37547','0','0','0','0','0','0','0','0','0','0','Wyrmcult Poacher - Cast Wyrmcult BroodlingCall on Spawn'),
 ('2180902','21809','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Wyrmcult Poacher - Enable Range Mode on Aggro'),
