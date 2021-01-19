@@ -1429,9 +1429,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+17, 187227, 580, 1, 1747.505, 844.6479, 15.60475, 1.557474, 0, 0, 0.7023811, 0.7118011, 7200, 7200, 100, 1), -- Bench
 (@OGUID+18, 187228, 580, 1, 1657.231, 846.2236, 15.60475, 1.557474, 0, 0, 0.7023811, 0.7118011, 7200, 7200, 100, 1), -- Bench
 (@OGUID+19, 187229, 580, 1, 1664.469, 846.0973, 15.60475, 1.557474, 0, 0, 0.7023811, 0.7118011, 7200, 7200, 100, 1), -- Bench
-(@OGUID+20, 187764, 580, 1, 1876.026, 616.9742, 44.64209, 1.466076, 0, 0, 0.6691303, 0.743145, 7200, 7200, 100, 0), -- Rohendor, The Second Gate
-(@OGUID+21, 187765, 580, 1, 1700.563, 711.3315, 85.44404, 6.091202, 0, 0, -0.09584427, 0.9953963, 7200, 7200, 100, 0), -- Archonisus, The Third Gate
-(@OGUID+22, 187766, 580, 1, 1709.935, 530.0915, 93.41187, 1.117009, 0, 0, 0.5299187, 0.8480484, 7200, 7200, 100, 0), -- Agamath, The First Gate
+(@OGUID+20, 187764, 580, 1, 1876.026, 616.9742, 44.64209, 1.466076, 0, 0, 0.6691303, 0.743145, 7200, 7200, 100, 1), -- Rohendor, The Second Gate
+(@OGUID+21, 187765, 580, 1, 1700.563, 711.3315, 85.44404, 6.091202, 0, 0, -0.09584427, 0.9953963, 7200, 7200, 100, 1), -- Archonisus, The Third Gate
+(@OGUID+22, 187766, 580, 1, 1709.935, 530.0915, 93.41187, 1.117009, 0, 0, 0.5299187, 0.8480484, 7200, 7200, 100, 1), -- Agamath, The First Gate
 (@OGUID+23, 187990, 580, 1, 1849.663, 597.861, 86.10498, 2.426003, 0, 0, 0.9366713, 0.3502098, 7200, 7200, 100, 0), -- Doodad_SunwellRaid_Gate_07
 (@OGUID+24, 188075, 580, 1, 1499.905, 558.4319, 39.33041, 4.084071, 0, 0, -0.8910065, 0.4539906, 7200, 7200, 100, 1), -- Doodad_Sunwell_Fire_Barrier_ext01
 (@OGUID+25, 188081, 580, 1, 2047.21, 813.7217, 19.26306, 1.06465, 0, 0, 0.5075378, 0.8616294, 7200, 7200, 100, 0), -- Sanctum Planetarium
@@ -1455,7 +1455,19 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 
 -- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
--- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
+(@OGUID+22, 316),  -- Spawn Agamath, The First Gate -> SWP All Gates Closed
+(@OGUID+20, 316),  -- Spawn Rohendor, The Second Gate -> SWP All Gates Closed
+(@OGUID+21, 316),  -- Spawn Archonisus, The Third Gate -> SWP All Gates Closed
+(@OGUID+22, -317), -- Despawn Agamath, The First Gate -> SWP First Gate Open
+(@OGUID+20, 317),  -- Spawn Rohendor, The Second Gate -> SWP First Gate Open
+(@OGUID+21, 317),  -- Spawn Archonisus, The Third Gate -> SWP First Gate Open
+(@OGUID+22, -318), -- Despawn Agamath, The First Gate -> SWP Second Gate Open
+(@OGUID+20, -318), -- Despawn Rohendor, The Second Gate -> SWP Second Gate Open
+(@OGUID+21, 318),  -- Spawn Archonisus, The Third Gate -> SWP Second Gate Open
+(@OGUID+22, -319), -- Despawn Agamath, The First Gate -> SWP All Gates Open
+(@OGUID+20, -319), -- Despawn Rohendor, The Second Gate -> SWP All Gates Open
+(@OGUID+21, -319); -- Despawn Archonisus, The Third Gate -> SWP All Gates Open
 
 -- =======
 -- POOLING
