@@ -83,11 +83,11 @@ Conditions / Game Events
 10317 Event ID 317 Active (SWP - First Gate Open)
 10318 Event ID 318 Active (SWP - Second Gate Open)
 10319 Event ID 319 Active (SWP - All Gates Open)
-10333 NOT Event ID 319 Active (SWP - All Gates Open)
+10333 Event ID 316 Active OR Event ID 317 Active OR Event ID 318 Active
 */
 DELETE FROM conditions WHERE condition_entry=10333;
 INSERT INTO conditions (condition_entry, `type`, value1, value2, value3, value4, flags, comments) VALUES
-(10333, -3, 10319, 0, 0, 0, 0, 'NOT Event ID 319 Active');
+(10333, -2, 10316, 10317, 10318, 0, 0, 'Event ID 316 Active OR Event ID 317 Active OR Event ID 318 Active');
 
 -- source of base template data: trinity
 DELETE FROM quest_template WHERE entry IN (11551,11552,11553);
@@ -102,26 +102,26 @@ INSERT INTO item_template (entry, class, subclass, `name`, displayid, Quality, F
 
 -- these texts are from PTR screenshots and various wowhead clones
 UPDATE quest_template SET Details="Archmage Ne'thul asked you to bring the Essence of the Immortals that will be used to deactivate Agamath, The First Gate",
-Objectives="The first barrier lies just beyond the path of destruction, where the fiendish Brutallus stands. The gateway, Agamath, prevents passage beyond the Dead Scar.
+RequestItemsText="The first barrier lies just beyond the path of destruction, where the fiendish Brutallus stands. The gateway, Agamath, prevents passage beyond the Dead Scar.
 
 <Ne'thul points to the magical replica of the Sunwell.>
 
 Bring to me the essence of immortals, found only on the most powerful beings of this world! With the essence in hand, my mages will be able to dismantle Agamath, ultimately collapsing the gateway and unlocking the way further into the sunwell.",
-RequestItemsText="Bring to me the essence of immortals, found only on the most powerful beings of this world! With the essence in hand, my mages will be able to dismantle Agamath, ultimately collapsing the gateway and unlocking the way further into the sunwell.",
+Objectives="Bring to me the essence of immortals, found only on the most powerful beings of this world! With the essence in hand, my mages will be able to dismantle Agamath, ultimately collapsing the gateway and unlocking the way further into the sunwell.",
 OfferRewardText="The destruction of Agamath commences. Soon, the barrier will crumble." WHERE entry=11551;
 
 UPDATE quest_template SET Details="Archmage Ne'thul asked you to bring the Essence of the Immortals that will be used to break Rohendor, the Second Gate",
-Objectives="Rohendor, the Second Gate, will let you go no further than the footsteps beyond the lair of the eredar twins, Sacrolash and Alythess. M'uru stands guard behind it, a twisted reflection of its former self.
+RequestItemsText="Rohendor, the Second Gate, will let you go no further than the footsteps beyond the lair of the eredar twins, Sacrolash and Alythess. M'uru stands guard behind it, a twisted reflection of its former self.
 
 Bring to me the essence of immortals, found only on the most powerful beings of this world! Rohendor cannot withstand the combined force of our mages!",
-RequestItemsText="Bring to me the essence of immortals, found only on the most powerful beings of this world! Rohendor cannot withstand the combined force of our mages!",
+Objectives="Bring to me the essence of immortals, found only on the most powerful beings of this world! Rohendor cannot withstand the combined force of our mages!",
 OfferRewardText="Good, our mages started to weaken Rohendor. The barrier must fall, sooner or later." WHERE entry=11552;
 
 UPDATE quest_template SET Details="Archmage Ne'thul asked you to bring the Essence of the Immortals that will be used to eventually dismantle Archonisus, the Final Gate",
-Objectives="The final gate, Archonisus, prevents passage to the Sunwell's inner chamber. The barrier is proving to be the most fortified of the lot! Difficult to crack, but not impossible...Alas, I would expect nothing less from Kil'jaeden!
+RequestItemsText="The final gate, Archonisus, prevents passage to the Sunwell's inner chamber. The barrier is proving to be the most fortified of the lot! Difficult to crack, but not impossible...Alas, I would expect nothing less from Kil'jaeden!
 
 Bring to me the essence of immortals — found only on the most powerful beings of this world — and Archonisus is sure to crumble!",
-RequestItemsText="Bring to me the essence of immortals — found only on the most powerful beings of this world — and Archonisus is sure to crumble!",
+Objectives="Bring to me the essence of immortals — found only on the most powerful beings of this world — and Archonisus is sure to crumble!",
 OfferRewardText="Great work.
 With more essences in hand, we can try to break down the last obstacle on our way to The Deceiver. Even this barrier will fall when enough power is gathered." WHERE entry=11553;
 
@@ -241,7 +241,13 @@ UPDATE gossip_menu_option SET option_broadcast_text=24231 WHERE menu_id=9046 AND
 24248 "The first gate, Agamath, has been dismantled! The second gate of Rohendor now blocks our passage.$B$BOur mages are $3255w percent through the defenses of the second gate, Rohendor."
 24249 "Rohendor has been obliterated.  Only the gateway, Archonisus, remains.$B$BOur mages are $3257w percent through the defenses of the final gate, Archonisus."
 24250 "Archonisus is no more. Alas, we are... we are too late...$B$BKil'jaeden is unleashed! The heroes of the world are now our only hope." -- alternate to 24247 when event fully completed?
-24247 "Should Kil'jaeden rise up through the Sunwell our world will be thrown into a war the likes of which has not been seen for 10,000 years!" -- default 2.4.3/current retail */
+24247 "Should Kil'jaeden rise up through the Sunwell our world will be thrown into a war the likes of which has not been seen for 10,000 years!" -- default 2.4.3/current retail
+
+NOTE: This is a custom modification to broadcast text
+append onto ID 24247 since we have nothing else to go on (either this or make a custom ID)
+source: https://warcraft.blizzplanet.com/blog/comments/wow_burning_crusade___patch_2_4___agamath_the_first_gate */
+UPDATE broadcast_text SET `text`="Should Kil'jaeden rise up through the Sunwell our world will be thrown into a war the likes of which has not been seen for 10,000 years!$B$BOur mages are $3253w percent through the defenses of the first gate, Agamath." WHERE id=24247;
+
 DELETE FROM npc_text WHERE ID IN (12309);
 DELETE FROM npc_text_broadcast_text WHERE ID IN (12309);
 INSERT INTO npc_text_broadcast_text (ID, Prob0, BroadcastTextId0) VALUES
@@ -258,7 +264,7 @@ INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
 (9105, 50224, 0, 10317),
 (9105, 50225, 0, 10318),
 (9105, 50226, 0, 10319);
--- missing text for all gates closed? Agamath/first gate health worldstate ID is missing? possibly should just use 24247?
+-- missing broadcast/status text for when all gates are currently closed? Not sure what the Agamath/first gate health worldstate ID is
 
 /*
 --------------------
@@ -308,4 +314,8 @@ UPDATE gossip_menu_option SET option_broadcast_text=25533 WHERE menu_id=9286;
 25534 "Agamath, the First Gate has been breached. Two of Kil'jaeden's most powerful lieutenants, Lady Sacrolash and Grand Warlock Alythess, are now vulnerable to attack." -- 317 SWP - First Gate Open
 25536 "Agamath, the First Gate and Rohendor, the Second Gate are now destroyed. Only Archonisus, the Third Gate remains." -- 318 SWP - Second Gate Open
 25537 "All of the barriers blocking you from reaching the Sunwell have been destroyed. Enter the Sunwell and stop Kil'jaeden from entering this world!" -- 319 SWP - All Gates Open (default 2.4.3/current retail gossip option response) */
+
+-- 25639 Anchorite Elbadon - should not have gossip flag
+UPDATE creature_template SET NpcFlags=0 WHERE Entry=25639;
+
 

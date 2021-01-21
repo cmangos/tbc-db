@@ -1457,17 +1457,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 (@OGUID+22, 316),  -- Spawn Agamath, The First Gate -> SWP All Gates Closed
-(@OGUID+20, 316),  -- Spawn Rohendor, The Second Gate -> SWP All Gates Closed
-(@OGUID+21, 316),  -- Spawn Archonisus, The Third Gate -> SWP All Gates Closed
-(@OGUID+22, -317), -- Despawn Agamath, The First Gate -> SWP First Gate Open
 (@OGUID+20, 317),  -- Spawn Rohendor, The Second Gate -> SWP First Gate Open
-(@OGUID+21, 317),  -- Spawn Archonisus, The Third Gate -> SWP First Gate Open
-(@OGUID+22, -318), -- Despawn Agamath, The First Gate -> SWP Second Gate Open
-(@OGUID+20, -318), -- Despawn Rohendor, The Second Gate -> SWP Second Gate Open
-(@OGUID+21, 318),  -- Spawn Archonisus, The Third Gate -> SWP Second Gate Open
-(@OGUID+22, -319), -- Despawn Agamath, The First Gate -> SWP All Gates Open
-(@OGUID+20, -319), -- Despawn Rohendor, The Second Gate -> SWP All Gates Open
-(@OGUID+21, -319); -- Despawn Archonisus, The Third Gate -> SWP All Gates Open
+(@OGUID+21, 318);  -- Spawn Archonisus, The Third Gate -> SWP Second Gate Open
 
 -- =======
 -- POOLING
