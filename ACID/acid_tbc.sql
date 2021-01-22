@@ -4176,6 +4176,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================
 -- Undercity Practice Dummy (5652) - NSR
 -- Spirit Healer (6491) - NSR
+-- Purple Ground Rune 18562
+('1856201','18562','30','4','100','1','5','24978','0','0','0','0','23','1','0','0','0','0','0','0','0','0','0','0','Purple Ground Rune - Increment Phase on Receive AI Event 5 (Phase 0 and 1)'),
+('1856202','18562','30','1','100','1','6','24978','0','0','0','0','23','-1','0','0','52','3','0','0','0','0','0','0','Purple Ground Rune - Decrement Phase and Interrupt Channel on Receive AI Event 6 (Phase 1 and 2)'),
+('1856203','18562','29','3','100','1','1000','1000','15000','15000','0','0','11','40927','0','0','0','0','0','0','0','0','0','0','Purple Ground Rune - Cast Akama Soul Expel Channel on Generic Timer (Phase 2)'),
 -- Exarch Larethor (24813) - NSR
 -- Madrigosa (25160)
 -- Shattered Sun Marksman 24938 - npc_shattered_sun_fighter
@@ -4207,11 +4211,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2497605','24976','2','0','100','1025','30','1','15000','25000','0','0','11','13952','0','0','0','0','0','0','0','0','0','0','Dawnblade Bloodknight - Cast Holy Light at 30% HP'),
 -- Dawnblade Summoner 24978
 ('2497801','24978','11','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Dawnblade Summoner - Cast Summon Imp on Spawn'),
-('2497802','24978','4','0','100','0','0','0','0','0','0','0','57','2','25','0','52','3','0','0','0','0','0','0','Dawnblade Summoner - Enable Range Mode and Interrupt Channelling on Aggro'),
+('2497802','24978','4','0','100','0','0','0','0','0','0','0','57','2','25','0','52','3','0','0','45','6','10','0','Dawnblade Summoner - Enable Range Mode, Interrupt Channelling, and Send AI Event B on Aggro'),
 ('2497803','24978','27','0','100','1','44977','1','15000','30000','0','0','11','44977','0','0','0','0','0','0','0','0','0','0','Dawnblade Summoner - Cast Fel Armor on Missing Buff'),
 ('2497804','24978','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dawnblade Summoner - Flee at 15% HP'),
 ('2497805','24978','0','0','100','1025','12000','18000','18000','21000','0','0','11','11962','4','0','0','0','0','0','0','0','0','0','Dawnblade Summoner - Cast Immolate'),
 ('2497806','24978','9','0','100','1025','0','30','3400','4800','0','0','11','32707','1','256','0','0','0','0','0','0','0','0','Dawnblade Summoner - Cast Incinerate'),
+('2497807','24978','1','0','100','1','1000','5000','15000','15000','0','0','45','5','10','0','0','0','0','0','0','0','0','0','Dawnblade Summoner - Send AI Event A on Timer OOC'),
 -- Dawnblade Marksman 24979
 ('2497901','24979','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Dawnblade Marksman - Enable Range Mode on Aggro'),
 ('2497902','24979','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Dawnblade Marksman - Flee at 15% HP'),
