@@ -4204,12 +4204,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2497203','24972','0','0','100','1025','12000','18000','15000','25000','0','0','11','45336','0','0','0','0','0','0','0','0','0','0','Erratic Sentry - Cast Electrical Overload'),
 ('2497204','24972','2','0','40','1024','50','35','0','0','0','0','11','45014','0','0','1','-10745','0','0','0','0','0','0','Erratic Sentry - Cast Capacitor Overload and Emote at 50% HP'),
 -- Mar'nah (24975) - NSR
--- Dawnblade Bloodknight
-('2497601','24976','4','0','100','0','0','0','0','0','0','0','11','45105','1','1','0','0','0','0','0','0','0','0','Dawnblade Bloodknight - Cast Joust on Aggro'),
-('2497602','24976','0','0','100','1025','5000','8000','35000','45000','0','0','11','45095','0','0','0','0','0','0','0','0','0','0','Dawnblade Bloodknight - Cast Seal of Wrath'),
-('2497603','24976','0','0','100','1025','8000','18000','25000','36000','0','0','11','45337','1','0','0','0','0','0','0','0','0','0','Dawnblade Bloodknight - Cast Judgement of Wrath'),
-('2497604','24976','14','0','100','1025','4000','250','5000','12000','0','0','11','13952','12','0','0','0','0','0','0','0','0','0','Dawnblade Bloodknight - Cast Holy Light on Friendly Missing HP'),
-('2497605','24976','2','0','100','1025','30','1','15000','25000','0','0','11','13952','0','0','0','0','0','0','0','0','0','0','Dawnblade Bloodknight - Cast Holy Light at 30% HP'),
+-- Dawnblade Blood Knight 24976 - npc_dawnblade_blood_knight
 -- Dawnblade Summoner 24978
 ('2497801','24978','11','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Dawnblade Summoner - Cast Summon Imp on Spawn'),
 ('2497802','24978','4','0','100','0','0','0','0','0','0','0','57','2','25','0','52','3','0','0','45','6','10','0','Dawnblade Summoner - Enable Range Mode, Interrupt Channelling, and Send AI Event B on Aggro'),
