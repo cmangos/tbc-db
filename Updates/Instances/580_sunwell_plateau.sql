@@ -832,8 +832,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+120, @CGUID+73, 1167), -- Sunblade Dusk Priest -> Sunblade Cabalist
 (@CGUID+137, @CGUID+73, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+138, @CGUID+73, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
-(@CGUID+73, @CGUID+146, 1025), -- Sunblade Cabalist -> Sunblade Scout
-(@CGUID+146, @CGUID+61, 1024), -- Sunblade Scout -> Kalecgos
+(@CGUID+146, @CGUID+73, 1167), -- Sunblade Scout -> Sunblade Cabalist
+(@CGUID+73, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
 -- Sunblade Group #4
 (@CGUID+87, @CGUID+74, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
 (@CGUID+88, @CGUID+74, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
@@ -841,24 +841,24 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+105, @CGUID+74, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+134, @CGUID+74, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+245, @CGUID+74, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
-(@CGUID+74, @CGUID+147, 1025), -- Sunblade Cabalist -> Sunblade Scout
-(@CGUID+147, @CGUID+61, 1024), -- Sunblade Scout -> Kalecgos
+(@CGUID+147, @CGUID+74, 1167), -- Sunblade Scout -> Sunblade Cabalist
+(@CGUID+74, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
 -- Sunblade Group #5
 (@CGUID+90, @CGUID+77, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
 (@CGUID+107, @CGUID+77, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+122, @CGUID+77, 1167), -- Sunblade Dusk Priest -> Sunblade Cabalist
 (@CGUID+140, @CGUID+77, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+141, @CGUID+77, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
-(@CGUID+77, @CGUID+148, 1025), -- Sunblade Cabalist -> Sunblade Scout
-(@CGUID+148, @CGUID+61, 1024), -- Sunblade Scout -> Kalecgos
+(@CGUID+148, @CGUID+77, 1167), -- Sunblade Scout -> Sunblade Cabalist
+(@CGUID+77, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
 -- Sunblade Group #6
 (@CGUID+91, @CGUID+76, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+108, @CGUID+76, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+109, @CGUID+76, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+121, @CGUID+76, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+139, @CGUID+76, 1167), -- creature_spawn_entry -> Sunblade Cabalist
-(@CGUID+76, @CGUID+149, 1025), -- Sunblade Cabalist -> Sunblade Scout
-(@CGUID+149, @CGUID+61, 1024), -- Sunblade Scout -> Kalecgos
+(@CGUID+149, @CGUID+76, 1167), -- Sunblade Scout -> Sunblade Cabalist
+(@CGUID+76, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
 -- Sunblade Group #7
 (@CGUID+93, @CGUID+78, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
 (@CGUID+112, @CGUID+78, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
