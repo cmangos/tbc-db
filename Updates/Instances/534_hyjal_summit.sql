@@ -19,6 +19,7 @@ SET @OGUID := 5340000; -- gameobjects
 -- All creature_template_addons go here:
 -- ----------------------------------
 REPLACE INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
+(17772, 0, 0, 1, 16, 0, 0, '31745'), -- Lady Jaina Proudmoore
 (17818, 0, 0, 1, 16, 0, 0, ''), -- Towering Infernal -- Immolation added in Boss Script
 (17852, 0, 0, 1, 16, 0, 0, '31745'), -- Thrall
 (17864, 0, 0, 1, 16, 0, 0, '12787'), -- Lesser Doomguard
