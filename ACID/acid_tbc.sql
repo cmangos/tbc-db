@@ -24597,6 +24597,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2478102','24781','30','0','100','1','5','24762','0','0','0','0','28','0','44451','0','11','44432','15','0','41','10000','0','0','Nether Energy - Remove Purple Banish State, Cast Cube Ground State on Receive AI Event A'),
 ('2478103','24781','30','0','100','1','6','24762','0','0','0','0','28','0','44432','0','11','44451','15','0','0','0','0','0','Nether Energy - Remove Cube Ground State, Cast Purple Banish State on Receive AI Event B'),
 ('2478104','24781','6','0','100','0','0','0','0','0','0','0','41','4000','0','0','0','0','0','0','0','0','0','0','Nether Energy - Delayed Despawn on Death'),
+('2478105','24781','4','0','100','0','0','0','0','0','0','0','28','0','44451','0','11','44432','15','0','41','0','0','0','Nether Energy - Remove Purple Banish State, Cast Cube Ground State, Forced Despawn on Aggro'),
 -- Sunblade Imp 24815
 ('2481501','24815','11','0','100','0','0','0','0','0','0','0','57','1','20','0','0','0','0','0','0','0','0','0','Sunblade Imp - Enable Range Mode on Spawn'),
 ('2481502','24815','9','0','100','1027','0','30','2000','2000','0','0','11','44577','1','256','0','0','0','0','0','0','0','0','Sunblade Imp (Normal) - Cast Firebolt'),
