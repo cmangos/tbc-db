@@ -4207,7 +4207,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mar'nah (24975) - NSR
 -- Dawnblade Blood Knight 24976 - npc_dawnblade_blood_knight
 -- Dawnblade Summoner 24978
-('2497801','24978','11','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Dawnblade Summoner - Cast Summon Imp on Spawn'),
+('2497801','24978','1','0','100','0','0','0','0','0','0','0','11','44977','0','34','56','0','0','0','11','11939','0','0','Dawnblade Summoner - Enable Range Mode, Despawn Guardians, Cast Summon Imp OOC'),
 ('2497802','24978','1','0','100','1','1000','5000','15000','15000','0','0','45','5','10','0','0','0','0','0','0','0','0','0','Dawnblade Summoner - Send AI Event A on Timer OOC'),
 ('2497803','24978','27','0','100','1','44977','1','20000','30000','0','0','11','44977','0','0','0','0','0','0','0','0','0','0','Dawnblade Summoner - Cast Fel Armor on Missing Buff'),
 ('2497804','24978','4','0','100','0','0','0','0','0','0','0','57','2','25','0','52','3','0','0','45','6','10','0','Dawnblade Summoner - Enable Range Mode, Interrupt Channelling, Send AI Event B on Aggro'),
