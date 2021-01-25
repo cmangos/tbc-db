@@ -4259,13 +4259,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dawnstar Charger (25049) - NSR
 -- Battlemage Arynna (25057) - NSR
 -- Ayren Cloudbreaker (25059) - npc_ayren_cloudbreaker
--- Darkspine Myrmidon
-('2506001','25060','4','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Set Phase 1 on Aggro'),
-('2506002','25060','9','5','100','1025','0','5','5000','9000','0','0','11','11971','1','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Cast Sunder Armor (Phase 1)'),
-('2506003','25060','24','5','100','1','11971','5','5000','5000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Set Phase 2 on Target Max Sunder Armor Aura Stack (Phase 1)'),
-('2506004','25060','28','3','100','1','11971','1','5000','5000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Set Phase 1 on Target Missing Sunder Armor Aura Stack (Phase 2)'),
-('2506005','25060','0','0','100','1025','4000','7000','15000','19000','0','0','11','13730','0','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Cast Demoralizing Shout'),
-('2506006','25060','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Set Phase 0 on Evade'),
+-- Darkspine Myrmidon 25060
+('2506001','25060','0','0','100','1025','8000','16000','22000','24000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Cast Demoralizing Shout'),
+('2506002','25060','0','0','100','1025','4000','12000','10000','12000','0','0','11','11971','1','0','0','0','0','0','0','0','0','0','Darkspine Myrmidon - Cast Sunder Armor'),
 -- Harbinger Inuuro (25061) - NSR
 -- Dawnblade Hawkrider (25063)
 ('2506301','25063','11','0','100','0','0','0','0','0','0','0','21','0','0','0','50','0','0','0','0','0','0','0','Dawnblade Hawkrider - Stop Combat Movement on Spawn and set REACT_PASSIVE'),
