@@ -24494,7 +24494,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Yazzai 24561 - npc_yazzai
 -- Fizzle 24656
 ('2465601','24656','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Fizzle - Enable Range Mode on Aggro'),
-('2465602','24656','9','0','100','1025','0','30','2400','3800','0','0','11','44164','1','256','0','0','0','0','0','0','0','0','Fizzle - Cast Firebolt'),
+('2465602','24656','0','0','100','1025','1000','1000','2000','3000','0','0','11','44164','1','256','0','0','0','0','0','0','0','0','Fizzle - Cast Firebolt'),
 -- Kael'thas Sunstrider 24664 - boss_felblood_kaelthas
 -- Phoenix 24674 - mob_felkael_phoenix
 -- Phoenix Egg 24675 - mob_felkael_phoenix_egg
