@@ -4273,6 +4273,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2507304','25073','0','0','100','1281','0','0','3400','3800','0','0','11','9672','1','256','0','0','0','0','0','0','0','0','Darkspine Siren - Cast Frostbolt (Range Mode)'),
 ('2507305','25073','0','0','100','1537','0','0','5000','20000','0','0','11','9672','1','256','0','0','0','0','0','0','0','0','Darkspine Siren - Cast Frostbolt (Melee Mode)'),
 -- Greengill Slave (25084) - spell_dummy_npc
+('2508401','25084','8','0','100','0','45111','-1','0','0','0','0','41','20000','0','0','0','0','0','0','0','0','0','0','Greengill Slave - Delayed Despawn on Enrage Spellhit'),
 -- Freed Greengill Slave (25085) - spell_dummy_npc
 -- Dawnblade Reservist
 ('2508701','25087','9','0','100','1025','0','5','3000','5000','0','0','11','32915','1','0','0','0','0','0','0','0','0','0','Dawnblade Reservist - Cast Raptor Strike'),
