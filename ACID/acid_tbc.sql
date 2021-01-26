@@ -4275,8 +4275,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greengill Slave (25084) - spell_dummy_npc
 ('2508401','25084','8','0','100','0','45111','-1','0','0','0','0','41','20000','0','0','0','0','0','0','0','0','0','0','Greengill Slave - Delayed Despawn on Enrage Spellhit'),
 -- Freed Greengill Slave (25085) - spell_dummy_npc
--- Dawnblade Reservist
-('2508701','25087','9','0','100','1025','0','5','3000','5000','0','0','11','32915','1','0','0','0','0','0','0','0','0','0','Dawnblade Reservist - Cast Raptor Strike'),
+-- Dawnblade Reservist 25087
+('2508701','25087','0','0','100','1025','2000','6000','2000','6000','0','0','11','32915','1','0','0','0','0','0','0','0','0','0','Dawnblade Reservist - Cast Raptor Strike'),
 -- Captain Valindria (25088) - NSR
 -- Vindicator Kaalan (25108) - NSR
 -- Anchorite Ayuri (25112) - NSR
