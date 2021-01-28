@@ -18361,6 +18361,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2339301','23393','0','0','100','1025','3000','7000','8000','14000','0','0','11','36447','1','0','0','0','0','0','0','0','0','0','Deathshadow Agent - Cast Mind Sear'),
 -- Twilight Ridge Target 22400
 ('2240001','22400','29','0','100','1','1000','10000','10000','13000','0','0','45','5','40','0','0','0','0','0','0','0','0','0','Twilight Ridge Target - Throw AI Event A on Generic Timer'),
+-- Multiphase Disturbance 25882
+('2588201','25882','8','0','100','1','46281','-1','0','0','0','0','41','2000','0','0','0','0','0','0','0','0','0','0','Multiphase Disturbance - Delayed Despawn on Take Multiphase Reading Spellhit'),
 
 
 
