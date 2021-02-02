@@ -105,7 +105,8 @@ UPDATE item_template SET class=0 WHERE entry=5514;
 -- Creature custom changes
 -- -------------------------------
 
--- None
+-- not blizzlike but how it actually should work - Brutallus Death Cloud - should always use 11686 ingame
+UPDATE creature_template SET ModelId1=169,ModelId2=11686 WHERE entry IN(25703);
 
 -- -------------------------------
 -- Quest custom changes
