@@ -30,3 +30,5 @@ UPDATE creature_template SET Scale=1 WHERE entry=15976;
 UPDATE creature_template SET Scale=1 WHERE entry=16453;
 -- Carrion Spinner
 UPDATE creature_template SET Scale=1 WHERE entry=15975;
+-- Infectious Skitterer (this one was actually too small)
+UPDATE creature_template SET Scale=1 WHERE entry=15977;
