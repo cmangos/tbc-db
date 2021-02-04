@@ -1,11 +1,11 @@
 -- Highlord Mograine
-UPDATE creature_template SET Leash=110, SpeedRun=2, Detection=90 WHERE entry=16062;
+UPDATE creature_template SET Leash=110, SpeedRun=1.71429, Detection=90 WHERE entry=16062;
 -- Sir Zeliek
-UPDATE creature_template SET Leash=110, SpeedRun=2, Detection=90 WHERE entry=16063;
+UPDATE creature_template SET Leash=110, SpeedRun=1.71429, Detection=90 WHERE entry=16063;
 -- Thane Korth'azz
-UPDATE creature_template SET Leash=110, SpeedRun=2, Detection=90 WHERE entry=16064;
+UPDATE creature_template SET Leash=110, SpeedRun=1.71429, Detection=90 WHERE entry=16064;
 -- Lady Blaumeux
-UPDATE creature_template SET Leash=110, SpeedRun=2, Detection=90 WHERE entry=16065;
+UPDATE creature_template SET Leash=110, SpeedRun=1.71429, Detection=90 WHERE entry=16065;
 -- Kel'Thuzad
 UPDATE creature_template SET Leash=130 WHERE entry=15990;
 -- Gothik the Harvester
