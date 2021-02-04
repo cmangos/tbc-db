@@ -29080,7 +29080,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunblade Arch Mage 25367
 ('2536701','25367','4','0','100','0','0','0','0','0','0','0','52','3','0','0','22','1','0','0','0','0','0','0','Sunblade Arch Mage - Interrupt Channelling and Set Phase 1 on Aggro'),
 ('2536702','25367','0','5','100','1025','4000','7000','6000','15000','0','0','11','46573','17','0','21','0','0','0','22','2','0','0','Sunblade Arch Mage - Cast Blink and Disable Combat Movement and Set Phase 2 (Phase 1)'),
-('2536703','25367','0','3','100','1025','1000','1000','1000','1000','0','0','11','46555','17','0','21','1','0','0','22','1','0','0','Sunblade Arch Mage - Cast Frost Nova and Enable Combat Movement and Set Phase 1 (Phase 2)'),
+('2536703','25367','0','3','100','1025','1000','1000','1000','1000','0','0','11','46555','15','0','21','1','0','0','22','1','0','0','Sunblade Arch Mage - Cast Frost Nova and Enable Combat Movement and Set Phase 1 (Phase 2)'),
 ('2536704','25367','0','0','100','1025','6000','12000','7000','14000','0','0','11','46553','17','0','0','0','0','0','0','0','0','0','Sunblade Arch Mage - Cast Arcane Explosion'),
 -- Sunblade Slayer 25368 - Scatter Shot should be used on TopAggro if more than 1 Player is in Melee Range
 ('2536801','25368','11','0','100','0','0','0','0','0','0','0','57','2','40','0','11','42459','0','34','0','0','0','0','Sunblade Slayer - Enable Range Mode and Dual Wield (Passive) on Spawn'),
