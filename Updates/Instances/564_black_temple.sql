@@ -2112,16 +2112,16 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+115, @CGUID+130, 1679), -- Coilskar Sea-Caller -> Aqueous Lord
 (@CGUID+116, @CGUID+130, 1679), -- Coilskar Sea-Caller -> Aqueous Lord
 (@CGUID+130, @CGUID+197, 1024), -- Aqueous Lord -> High Warlord Naj'entus
-(@CGUID+171, @CGUID+197, 1024), -- Aqueous Spawn -> High Warlord Naj'entus
-(@CGUID+172, @CGUID+171, 1679), -- Aqueous Spawn -> Aqueous Spawn
-(@CGUID+173, @CGUID+174, 1679), -- Aqueous Spawn -> Aqueous Spawn
-(@CGUID+174, @CGUID+197, 1024), -- Aqueous Spawn -> High Warlord Naj'entus
-(@CGUID+175, @CGUID+197, 1024), -- Aqueous Spawn -> High Warlord Naj'entus
-(@CGUID+176, @CGUID+175, 1679), -- Aqueous Spawn -> Aqueous Spawn
-(@CGUID+177, @CGUID+197, 1024), -- Aqueous Spawn -> High Warlord Naj'entus
-(@CGUID+178, @CGUID+177, 1679), -- Aqueous Spawn -> Aqueous Spawn
-(@CGUID+179, @CGUID+180, 1679), -- Aqueous Spawn -> Aqueous Spawn
-(@CGUID+180, @CGUID+197, 1024), -- Aqueous Spawn -> High Warlord Naj'entus
+(@CGUID+172, @CGUID+171, 9871), -- Aqueous Spawn -> Aqueous Spawn
+(@CGUID+171, @CGUID+197, 1040), -- Aqueous Spawn -> High Warlord Naj'entus
+(@CGUID+173, @CGUID+174, 9871), -- Aqueous Spawn -> Aqueous Spawn
+(@CGUID+174, @CGUID+197, 1040), -- Aqueous Spawn -> High Warlord Naj'entus
+(@CGUID+176, @CGUID+175, 9871), -- Aqueous Spawn -> Aqueous Spawn
+(@CGUID+175, @CGUID+197, 1040), -- Aqueous Spawn -> High Warlord Naj'entus
+(@CGUID+178, @CGUID+177, 9871), -- Aqueous Spawn -> Aqueous Spawn
+(@CGUID+177, @CGUID+197, 1040), -- Aqueous Spawn -> High Warlord Naj'entus
+(@CGUID+179, @CGUID+180, 9871), -- Aqueous Spawn -> Aqueous Spawn
+(@CGUID+180, @CGUID+197, 1040), -- Aqueous Spawn -> High Warlord Naj'entus
 (@CGUID+119, @CGUID+181, 1167), -- Coilskar Wrangler -> Leviathan
 (@CGUID+120, @CGUID+181, 1167), -- Coilskar Wrangler -> Leviathan
 (@CGUID+181, @CGUID+197, 1024), -- Leviathan -> High Warlord Naj'entus
