@@ -798,18 +798,18 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (26101, 0, 0, 1, 16, 0, 0, '45769'); -- Fire Fiend
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
--- Kalecgos
+-- Kalecgos & Sathrovarr the Corruptor
 -- Parhelion Plaza
 -- Sunblade Protectors
-(@CGUID+150, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
-(@CGUID+151, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
-(@CGUID+152, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
-(@CGUID+153, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
-(@CGUID+154, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
-(@CGUID+156, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
-(@CGUID+157, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
-(@CGUID+158, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
-(@CGUID+159, @CGUID+61, 1024), -- Sunblade Protector -> Kalecgos
+(@CGUID+150, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
+(@CGUID+151, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
+(@CGUID+152, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
+(@CGUID+153, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
+(@CGUID+154, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
+(@CGUID+156, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
+(@CGUID+157, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
+(@CGUID+158, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
+(@CGUID+159, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
 -- Sunblade Group #1
 (@CGUID+72, @CGUID+71, 1167), -- Sunblade Cabalist -> Sunblade Cabalist
 (@CGUID+97, @CGUID+71, 1167), -- Sunblade Slayer -> Sunblade Cabalist
@@ -817,7 +817,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+119, @CGUID+71, 1167), -- Sunblade Dusk Priest -> Sunblade Cabalist
 (@CGUID+133, @CGUID+71, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+246, @CGUID+71, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
-(@CGUID+71, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+71, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Group #2
 (@CGUID+83, @CGUID+70, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
 (@CGUID+84, @CGUID+70, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
@@ -825,7 +825,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+101, @CGUID+70, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+131, @CGUID+70, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+244, @CGUID+70, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
-(@CGUID+70, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+70, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Group #3
 (@CGUID+89, @CGUID+73, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
 (@CGUID+106, @CGUID+73, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
@@ -833,7 +833,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+137, @CGUID+73, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+138, @CGUID+73, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+146, @CGUID+73, 1167), -- Sunblade Scout -> Sunblade Cabalist
-(@CGUID+73, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+73, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Group #4
 (@CGUID+87, @CGUID+74, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
 (@CGUID+88, @CGUID+74, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
@@ -842,7 +842,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+134, @CGUID+74, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+245, @CGUID+74, 1167), -- Sunblade Dragonhawk -> Sunblade Cabalist
 (@CGUID+147, @CGUID+74, 1167), -- Sunblade Scout -> Sunblade Cabalist
-(@CGUID+74, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+74, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Group #5
 (@CGUID+90, @CGUID+77, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
 (@CGUID+107, @CGUID+77, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
@@ -850,7 +850,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+140, @CGUID+77, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+141, @CGUID+77, 1167), -- Sunblade Dawn Priest -> Sunblade Cabalist
 (@CGUID+148, @CGUID+77, 1167), -- Sunblade Scout -> Sunblade Cabalist
-(@CGUID+77, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+77, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Group #6
 (@CGUID+91, @CGUID+76, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+108, @CGUID+76, 1167), -- creature_spawn_entry -> Sunblade Cabalist
@@ -858,50 +858,50 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+121, @CGUID+76, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+139, @CGUID+76, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+149, @CGUID+76, 1167), -- Sunblade Scout -> Sunblade Cabalist
-(@CGUID+76, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+76, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Group #7
 (@CGUID+93, @CGUID+78, 1167), -- Sunblade Arch Mage -> Sunblade Cabalist
 (@CGUID+112, @CGUID+78, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+124, @CGUID+78, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+143, @CGUID+78, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+145, @CGUID+78, 1167), -- creature_spawn_entry -> Sunblade Cabalist
-(@CGUID+78, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+78, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Group #8
 (@CGUID+80, @CGUID+69, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+100, @CGUID+69, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+114, @CGUID+69, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+127, @CGUID+69, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+129, @CGUID+69, 1167), -- creature_spawn_entry -> Sunblade Cabalist
-(@CGUID+69, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+69, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Group #9
 (@CGUID+82, @CGUID+68, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+98, @CGUID+68, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+115, @CGUID+68, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+126, @CGUID+68, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+130, @CGUID+68, 1167), -- creature_spawn_entry -> Sunblade Cabalist
-(@CGUID+68, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+68, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Group #10
 (@CGUID+94, @CGUID+79, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+111, @CGUID+79, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+113, @CGUID+79, 1167), -- Sunblade Vindicator -> Sunblade Cabalist
 (@CGUID+125, @CGUID+79, 1167), -- creature_spawn_entry -> Sunblade Cabalist
 (@CGUID+144, @CGUID+79, 1167), -- creature_spawn_entry -> Sunblade Cabalist
-(@CGUID+79, @CGUID+61, 1024), -- Sunblade Cabalist -> Kalecgos
+(@CGUID+79, @CGUID+64, 1024), -- Sunblade Cabalist -> Sathrovarr the Corruptor
 -- Sunblade Pathing Group #1
 (@CGUID+85, @CGUID+102, 1679), -- Sunblade Arch Mage -> Sunblade Vindicator
 (@CGUID+117, @CGUID+102, 1679), -- Sunblade Dusk Priest -> Sunblade Vindicator
 (@CGUID+132, @CGUID+102, 1679), -- Sunblade Dawn Priest -> Sunblade Vindicator
-(@CGUID+102, @CGUID+61, 1024), -- Sunblade Vindicator -> Kalecgos
+(@CGUID+102, @CGUID+64, 1024), -- Sunblade Vindicator -> Sathrovarr the Corruptor
 -- Sunblade Pathing Group #2
 (@CGUID+92, @CGUID+110, 1679), -- Sunblade Arch Mage -> Sunblade Vindicator
 (@CGUID+123, @CGUID+110, 1679), -- Sunblade Dusk Priest -> Sunblade Vindicator
 (@CGUID+142, @CGUID+110, 1679), -- Sunblade Dawn Priest -> Sunblade Vindicator
-(@CGUID+110, @CGUID+61, 1024), -- Sunblade Vindicator -> Kalecgos
+(@CGUID+110, @CGUID+64, 1024), -- Sunblade Vindicator -> Sathrovarr the Corruptor
 -- Sunblade Pathing Group #3
 (@CGUID+81, @CGUID+99, 1679), -- Sunblade Arch Mage -> Sunblade Vindicator
 (@CGUID+116, @CGUID+99, 1679), -- Sunblade Dusk Priest -> Sunblade Vindicator
 (@CGUID+128, @CGUID+99, 1679), -- Sunblade Dawn Priest -> Sunblade Vindicator
-(@CGUID+99, @CGUID+61, 1024), -- Sunblade Vindicator -> Kalecgos
+(@CGUID+99, @CGUID+64, 1024), -- Sunblade Vindicator -> Sathrovarr the Corruptor
 -- Brutallus
 (@CGUID+155, @CGUID+62, 1024), -- Sunblade Protector -> Brutallus
 -- Sunblade Group #11
