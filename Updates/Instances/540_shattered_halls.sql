@@ -4,7 +4,24 @@ DBScriptName: instance_shattered_halls
 DB%Complete: 80
 DBComment:
 * need to rewrite existing rp scripts to function with creature_spawn_entry
-* gladiator fighting script to certain %threshold - Research
+
+* gladiator fighting script to certain %threshold
+
+combat faction 1692/1693 unitflags 557120
+~40-50% reset, faction 16 unitflags 557136 stop combat activity
+2500 emote 2
+3000 move to homeloc
+reset hp
+1000 change faction start fighting again
+1692 	Monster Spar
+1693 	Monster Spar Buddy
+
+(1746401, 0, 31, 0, 10, 0, 0, @CGUID+153, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Gladiator - Terminate Script if @CGUID+153 not found'),
+(1746401, 0, 22, 1692, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Gladiator - Set Faction Monster Spar'), -- make the oppsite have 1693 then both attack each other
+(1746401, 0, 35, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Gladiator - Send AI Event 5');
+
+Shattered Hand Centurion: 5 (OneShotExclamation), 11 (OneShotLaugh), 23 (OneShotFlex) - maybe handles the event
+
 * training dummy script like in garadar with hit animation on the dummy
 * groups need to be restructured and hallway scripts have to be made to substitute these static spawned groups
 * Shattered Hand Heathen at the entrance might be pooled with Shattered Hand Savage (1:1 pool, changed to 3:2 static atm)
@@ -257,6 +274,22 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+138, 4, 70.0568, 10.5743, -13.2209, 0, 0, 0),
 (@CGUID+138, 5, 52.6026, -0.81406, -13.2027, 0, 0, 0),
 (@CGUID+138, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001),
+-- (@CGUID+153, 1, 481.7353, 236.4454, 0.3345763, 5.550147, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+154, 1, 486.2533, 239.6326, 0.3367814, 3.595378, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+155, 1, 482.5505, 228.2457, 0.3459213, 0.8901179, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+156, 1, 488.321, 229.2469, 0.3715253, 2.478368, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+157, 1, 558.6774, 234.4561, 0.3471324, 3.333579, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+158, 1, 555.0992, 238.7755, 0.3294373, 3.839724, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+159, 1, 555.4427, 226.5396, 0.3495834, 1.815142, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+160, 1, 548.5923, 228.6846, 0.4044583, 1.27409, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+161, 1, 480.1908, 144.1539, 0.3408363, 6.161012, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+162, 1, 484.6209, 149.1361, 0.3307303, 5.288348, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+163, 1, 483.5475, 139.4899, 0.3403123, 1.012291, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+164, 1, 489.5807, 140.5721, 0.4669733, 1.884956, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+165, 1, 556.409, 145.1362, 0.3387693, 2.844887, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+166, 1, 552.132, 149.6014, 0.3331723, 3.403392, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+167, 1, 554.034, 141.1445, 0.3394863, 2.338741, 1000, 1746401), -- Shattered Hand Gladiator
+-- (@CGUID+168, 1, 549.194, 141.8354, 0.3548833, 1.884956, 1000, 1746401), -- Shattered Hand Gladiator
 (@CGUID+169, 1, 488.894, 233.942, 0.326259, 0, 0, 0),
 (@CGUID+169, 2, 486.995, 226.79, 0.256551, 0, 0, 0),
 (@CGUID+169, 3, 478.431, 226.508, 0.262045, 0, 0, 0),
@@ -445,7 +478,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16704, 0, 0, 2, 0, 0, 0, NULL), -- Shattered Hand Sharpshooter
 (16808, 0, 0, 0, 0, 0, 0, '19818'), -- Warchief Kargath Bladefist -- stealth detect?
 (17462, 0, 0, 0, 0, 0, 0, '18950'), -- Shattered Hand Zealot
-(17464, 0, 0, 0, 0, 389, 0, '19818'), -- Shattered Hand Gladiator -- Needs Script Faction 16, 1693 ~ 75-80% HP
+(17464, 0, 0, 0, 0, 389, 0, '19818'), -- Shattered Hand Gladiator
 (17471, 0, 0, 0, 0, 0, 0, NULL), -- Lesser Shadow Fissure
 (17578, 0, 0, 0, 0, 0, 0, '7056'), -- Training Dummy
 (17669, 0, 0, 0, 0, 0, 0, '18950'), -- Rabid Warhound
@@ -784,7 +817,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+131, 17357, 540, 3, 138.444, 191.164, -47.1833, 6.21809, 7200, 7200, 0, 0, 0, 0), -- Creeping Oozeling
 (@CGUID+132, 0, 540, 3, 66.2363, 130.973, -13.196, 4.80743, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+133, 16699, 540, 3, 67.1698, 183.923, -13.2365, 4.69381, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Reaver
-
 -- First hallway in dungeon, random between Shattered Hand Heathen or Savage in normal mode only
 (@CGUID+134, 0, 540, 1, 46.3248, 59.879, -12.9904, 0, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+135, 0, 540, 1, 83.755, 57.2887, -13.114, 3.15, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
@@ -819,6 +851,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+166, 17464, 540, 3, 480.1908, 144.1539, 0.3408363, 0.8439918, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
 (@CGUID+167, 17464, 540, 3, 484.6209, 149.1361, 0.3307303, 3.985587, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
 (@CGUID+168, 17464, 540, 3, 489.5807, 140.5721, 0.4669733, 3.319079, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
+-- (@CGUID+153, 17464, 540, 3, 481.7353, 236.4454, 0.3345763, 5.550147, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Gladiator
+-- (@CGUID+154, 17464, 540, 3, 486.2533, 239.6326, 0.3367814, 3.595378, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
+-- (@CGUID+155, 17464, 540, 3, 482.5505, 228.2457, 0.3459213, 0.8901179, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Gladiator
+-- (@CGUID+156, 17464, 540, 3, 488.321, 229.2469, 0.3715253, 2.478368, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
+-- (@CGUID+157, 17464, 540, 3, 558.6774, 234.4561, 0.3471324, 3.333579, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Gladiator
+-- (@CGUID+158, 17464, 540, 3, 555.0992, 238.7755, 0.3294373, 3.839724, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
+-- (@CGUID+159, 17464, 540, 3, 555.4427, 226.5396, 0.3495834, 1.815142, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Gladiator
+-- (@CGUID+160, 17464, 540, 3, 548.5923, 228.6846, 0.4044583, 1.27409, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
+-- (@CGUID+161, 17464, 540, 3, 480.1908, 144.1539, 0.3408363, 6.161012, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Gladiator
+-- (@CGUID+162, 17464, 540, 3, 484.6209, 149.1361, 0.3307303, 5.288348, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
+-- (@CGUID+163, 17464, 540, 3, 483.5475, 139.4899, 0.3403123, 1.012291, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Gladiator
+-- (@CGUID+164, 17464, 540, 3, 489.5807, 140.5721, 0.4669733, 1.884956, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
+-- (@CGUID+165, 17464, 540, 3, 556.409, 145.1362, 0.3387693, 2.844887, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Gladiator
+-- (@CGUID+166, 17464, 540, 3, 552.132, 149.6014, 0.3331723, 3.403392, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
+-- (@CGUID+167, 17464, 540, 3, 554.034, 141.1445, 0.3394863, 2.338741, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Gladiator
+-- (@CGUID+168, 17464, 540, 3, 549.194, 141.8354, 0.3548833, 1.884956, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Gladiator
 (@CGUID+169, 17465, 540, 3, 482.66, 233.56, 0.254553, 0.0431869, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Centurion
 (@CGUID+170, 17465, 540, 3, 555.097, 234.431, 0.254016, 3.13765, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Centurion
 (@CGUID+171, 17465, 540, 3, 552.912, 145.053, 0.250317, 2.98136, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Centurion
