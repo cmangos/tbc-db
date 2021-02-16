@@ -810,6 +810,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+157, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
 (@CGUID+158, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
 (@CGUID+159, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
+(@CGUID+160, @CGUID+64, 1024), -- Sunblade Protector -> Sathrovarr the Corruptor
 -- Sunblade Group #1
 (@CGUID+72, @CGUID+71, 1167), -- Sunblade Cabalist -> Sunblade Cabalist
 (@CGUID+97, @CGUID+71, 1167), -- Sunblade Slayer -> Sunblade Cabalist
