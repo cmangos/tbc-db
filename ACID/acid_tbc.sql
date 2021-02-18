@@ -11708,7 +11708,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2390002','23900','9','0','100','1025','0','100','2300','3900','0','0','11','42580','1','256','0','0','0','0','0','0','0','0','Theramore Marksman - Cast Shoot'),
 -- Major Mills (23905) - NSR
 -- Lurking Shark (23928) - NSR
--- Gavis Greyshield
+-- Gavis Greyshield 23941 - Also Clear Target at 10% HP to make him play Emotes
 ('2394101','23941','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Gavis Greyshield - Set Invincible on Spawn'),
 ('2394102','23941','2','0','100','0','10','0','0','0','0','0','53','10124','0','0','0','0','0','0','0','0','0','0','Gavis Greyshield - Start Relay Script 10124 at 10% HP'),
 -- Andello Porter (23942) - NSR
