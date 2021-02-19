@@ -2815,7 +2815,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Helene Peltskinner (6306) - NSR
 -- Donni Anthania (6367) - NSR
 -- Cat (6368) - NSR
--- Dane Winslow (6373) - NSR
+-- Dane Winslow 6373
+('637301','6373','11','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Dane Winslow - Cast Summon Imp on Spawn'),
 -- Cylina Darkheart
 ('637401','6374','11','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Cylina Darkheart - Cast Summon Imp on Spawn'),
 -- Spirit Healer (6491) - NSR
