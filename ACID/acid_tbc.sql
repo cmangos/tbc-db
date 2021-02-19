@@ -29063,7 +29063,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shadow Image 25214 - npc_shadow_image
 -- Demonic Vapor 25265 - npc_demonic_vapor
 -- Demonic Vapor 25267 (Trail)
-('2526701','25267','1','0','100','0','10000','10000','0','0','0','0','11','45400','0','0','0','0','0','0','0','0','0','0','Demonic Vapor (Trail) - Cast Summon Blazing Dead on OOC Timer'),
+('2526701','25267','29','0','100','0','5000','5000','0','0','0','0','11','45400','0','0','0','0','0','0','0','0','0','0','Demonic Vapor (Trail) - Cast Summon Blazing Dead on Timer'),
 -- Unyielding Dead 25268
 ('2526801','25268','11','0','100','0','0','0','0','0','0','0','38','0','0','0','11','45415','0','0','0','0','0','0','Unyielding Dead - Zone Combat Pulse and Cast Blazing Dead Passive on Spawn'),
 -- Dancing Flames (25305) - npc_dancing_flames
