@@ -1357,8 +1357,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+344, 25848, 580, 1, 1698.205, 501.5295, 95.85571, 1.780236, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner"
 (@CGUID+345, 25848, 580, 1, 1709.347, 510.2431, 90.95378, 2.932153, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
 -- Spawns after first Shadowsword Commander kill
-(@CGUID+346, 25165, 580, 1, 1814.271, 626.4523, 33.48701, 2.583087, 604800, 604800, 0, 0, 0, 0), -- Lady Sacrolash
-(@CGUID+347, 25166, 580, 1, 1818.212, 625.0439, 33.48701, 5.61996, 604800, 604800, 0, 0, 0, 0), -- Grand Warlock Alythess
+(@CGUID+346, 25165, 580, 0, 1814.271, 626.4523, 33.48701, 2.583087, 604800, 604800, 0, 0, 0, 0), -- Lady Sacrolash
+(@CGUID+347, 25166, 580, 0, 1818.212, 625.0439, 33.48701, 5.61996, 604800, 604800, 0, 0, 0, 0), -- Grand Warlock Alythess
 -- Spawns after Alythess & Sacrolash kill
 -- (@CGUID+348, 25741, 580, 1, 1816.401, 625.8939, 69.68857, 5.585053, 604800, 604800, 0, 0, 0, 0), -- M'uru
 -- Spawns after M'uru kill
