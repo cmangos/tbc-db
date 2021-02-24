@@ -1300,67 +1300,67 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- Spawns after Felmyst kill
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 -- Group
-(@CGUID+300, 25483, 580, 1, 1573.492, 532.9899, 36.59594, 5.637414, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+301, 25486, 580, 1, 1575.036, 526.2291, 33.05231, 5.532694, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+302, 25486, 580, 1, 1586.088, 532.1331, 32.50251, 5.061455, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+303, 25506, 580, 1, 1578.723, 536.3168, 36.57854, 5.462881, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+300, 25483, 580, 0, 1573.492, 532.9899, 36.59594, 5.637414, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+301, 25486, 580, 0, 1575.036, 526.2291, 33.05231, 5.532694, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+302, 25486, 580, 0, 1586.088, 532.1331, 32.50251, 5.061455, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+303, 25506, 580, 0, 1578.723, 536.3168, 36.57854, 5.462881, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
-(@CGUID+304, 25483, 580, 1, 1652.19, 508.852, 50.65884, 2.792527, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+305, 25486, 580, 1, 1642.618, 500.6479, 50.65885, 2.583087, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+306, 25486, 580, 1, 1646.262, 512.5404, 50.65884, 2.984513, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+307, 25506, 580, 1, 1648.737, 501.2914, 50.65884, 2.513274, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+304, 25483, 580, 0, 1652.19, 508.852, 50.65884, 2.792527, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+305, 25486, 580, 0, 1642.618, 500.6479, 50.65885, 2.583087, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+306, 25486, 580, 0, 1646.262, 512.5404, 50.65884, 2.984513, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+307, 25506, 580, 0, 1648.737, 501.2914, 50.65884, 2.513274, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
-(@CGUID+308, 25483, 580, 1, 1595.912, 580.5301, 85.02103, 5.358161, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+309, 25486, 580, 1, 1595.829, 574.9542, 83.80084, 4.974188, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+310, 25486, 580, 1, 1605.553, 577.98, 83.05595, 4.694936, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+311, 25506, 580, 1, 1602.719, 582.55, 85.00942, 5.148721, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+308, 25483, 580, 0, 1595.912, 580.5301, 85.02103, 5.358161, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+309, 25486, 580, 0, 1595.829, 574.9542, 83.80084, 4.974188, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+310, 25486, 580, 0, 1605.553, 577.98, 83.05595, 4.694936, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+311, 25506, 580, 0, 1602.719, 582.55, 85.00942, 5.148721, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
-(@CGUID+312, 25483, 580, 1, 1673.784, 546.5482, 85.23383, 2.164208, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+313, 25486, 580, 1, 1668.669, 547.4747, 85.24547, 2.408554, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+314, 25486, 580, 1, 1685.173, 555.0667, 85.17554, 2.216568, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+315, 25506, 580, 1, 1684.763, 548.5197, 85.23845, 2.199115, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
-(@CGUID+316, 25837, 580, 1, 1682.332, 537.6241, 85.33395, 2.076942, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Commander YELLS 2000020124 on spawn/event start. Run PATH 1
+(@CGUID+312, 25483, 580, 0, 1673.784, 546.5482, 85.23383, 2.164208, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+313, 25486, 580, 0, 1668.669, 547.4747, 85.24547, 2.408554, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+314, 25486, 580, 0, 1685.173, 555.0667, 85.17554, 2.216568, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+315, 25506, 580, 0, 1684.763, 548.5197, 85.23845, 2.199115, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+316, 25837, 580, 0, 1682.332, 537.6241, 85.33395, 2.076942, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Commander YELLS 2000020124 on spawn/event start. Run PATH 1
 -- Group channelling spell 46174 Until Gauntlet Imp Trigger reached that stops spawning
-(@CGUID+317, 25373, 580, 1, 1681.45, 513.1183, 85.3565, 4.974188, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
-(@CGUID+318, 25373, 580, 1, 1688.993, 510.2533, 85.35651, 3.735005, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+317, 25373, 580, 0, 1681.45, 513.1183, 85.3565, 4.974188, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+318, 25373, 580, 0, 1688.993, 510.2533, 85.35651, 3.735005, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
 -- Group channelling spell 46174 Until Gauntlet Imp Trigger reached that stops spawning
-(@CGUID+319, 25373, 580, 1, 1705.695, 509.5072, 85.35654, 5.88176, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
-(@CGUID+320, 25373, 580, 1, 1712.088, 513.9833, 85.35654, 5.166174, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+319, 25373, 580, 0, 1705.695, 509.5072, 85.35654, 5.88176, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+320, 25373, 580, 0, 1712.088, 513.9833, 85.35654, 5.166174, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
 -- Group
-(@CGUID+321, 25483, 580, 1, 1770.917, 574.3668, 85.26621, 2.9147, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+322, 25484, 580, 1, 1767.513, 567.4114, 85.28456, 2.530727, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
-(@CGUID+323, 25486, 580, 1, 1752.69, 574.1627, 85.1591, 5.67232, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+324, 25486, 580, 1, 1762.069, 562.6295, 85.28138, 2.338741, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+325, 25506, 580, 1, 1759.415, 579.986, 85.16913, 5.689773, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+321, 25483, 580, 0, 1770.917, 574.3668, 85.26621, 2.9147, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+322, 25484, 580, 0, 1767.513, 567.4114, 85.28456, 2.530727, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
+(@CGUID+323, 25486, 580, 0, 1752.69, 574.1627, 85.1591, 5.67232, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+324, 25486, 580, 0, 1762.069, 562.6295, 85.28138, 2.338741, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+325, 25506, 580, 0, 1759.415, 579.986, 85.16913, 5.689773, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
-(@CGUID+326, 25483, 580, 1, 1817.548, 593.4289, 50.8023, 4.049164, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend Run PATH 1
-(@CGUID+327, 25486, 580, 1, 1812.618, 586.0417, 50.79887, 3.717551, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 1 "When a player reaches 55 yard distance from this npc run path non repeating for the 3 pathed in this group."
-(@CGUID+328, 25486, 580, 1, 1793.91, 593.6208, 50.79819, 5.51524, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 2
-(@CGUID+329, 25484, 580, 1, 1799.959, 584.9696, 50.69594, 4.765335, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+326, 25483, 580, 0, 1817.548, 593.4289, 50.8023, 4.049164, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend Run PATH 1
+(@CGUID+327, 25486, 580, 0, 1812.618, 586.0417, 50.79887, 3.717551, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 1 "When a player reaches 55 yard distance from this npc run path non repeating for the 3 pathed in this group."
+(@CGUID+328, 25486, 580, 0, 1793.91, 593.6208, 50.79819, 5.51524, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 2
+(@CGUID+329, 25484, 580, 0, 1799.959, 584.9696, 50.69594, 4.765335, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
 -- Group pathing
-(@CGUID+330, 25483, 580, 1, 1744.354, 534.517, 85.32926, 5.428943, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend PATH 2
-(@CGUID+331, 25506, 580, 1, 1748.878, 538.0068, 85.26904, 4.803874, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+330, 25483, 580, 0, 1744.354, 534.517, 85.32926, 5.428943, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend PATH 2
+(@CGUID+331, 25506, 580, 0, 1748.878, 538.0068, 85.26904, 4.803874, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Ungrouped
-(@CGUID+332, 25373, 580, 1, 1560.378, 561.6525, 50.65509, 4.991642, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
-(@CGUID+333, 25484, 580, 1, 1598.08, 572.8362, 50.65884, 0.8865389, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
-(@CGUID+334, 25484, 580, 1, 1628.587, 612.9368, 85.1436, 2.97489, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
-(@CGUID+335, 25484, 580, 1, 1634.864, 559.4721, 85.32404, 6.049571, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
-(@CGUID+336, 25373, 580, 1, 1662.8678, 524.444, 50.57551, 0.6618619, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 1
-(@CGUID+337, 25373, 580, 1, 1604.4705, 571.67554, 80.41999, 4.978537, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 2
-(@CGUID+338, 25837, 580, 1, 1752.243, 564.6907, 85.20719, 0.7629684, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Commander PATH 2
+(@CGUID+332, 25373, 580, 0, 1560.378, 561.6525, 50.65509, 4.991642, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+333, 25484, 580, 0, 1598.08, 572.8362, 50.65884, 0.8865389, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+334, 25484, 580, 0, 1628.587, 612.9368, 85.1436, 2.97489, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+335, 25484, 580, 0, 1634.864, 559.4721, 85.32404, 6.049571, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+336, 25373, 580, 0, 1662.8678, 524.444, 50.57551, 0.6618619, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 1
+(@CGUID+337, 25373, 580, 0, 1604.4705, 571.67554, 80.41999, 4.978537, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 2
+(@CGUID+338, 25837, 580, 0, 1752.243, 564.6907, 85.20719, 0.7629684, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Commander PATH 2
 -- Imp Triggers not grouped "Imp spawning starts on spawn."
-(@CGUID+339, 25848, 580, 1, 1589.505, 514.9243, 33.22498, 2.164208, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "bottom - This is the trigger imps path to"
-(@CGUID+340, 25848, 580, 1, 1680.382, 542.687, 85.27053, 2.007129, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger
-(@CGUID+341, 25848, 580, 1, 1684.981, 507.9774, 88.1204, 1.151917, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
-(@CGUID+342, 25848, 580, 1, 1697.917, 502.315, 86.48821, 1.658063, 7200, 7200, 0, 0, 0, 2), -- Gauntlet Imp Trigger "Spawner" every 10 seconds
-(@CGUID+343, 25848, 580, 1, 1698.092, 502.2403, 86.49195, 1.570796, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner" Summon Visual
-(@CGUID+344, 25848, 580, 1, 1698.205, 501.5295, 95.85571, 1.780236, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner"
-(@CGUID+345, 25848, 580, 1, 1709.347, 510.2431, 90.95378, 2.932153, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
+(@CGUID+339, 25848, 580, 0, 1589.505, 514.9243, 33.22498, 2.164208, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "bottom - This is the trigger imps path to"
+(@CGUID+340, 25848, 580, 0, 1680.382, 542.687, 85.27053, 2.007129, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger
+(@CGUID+341, 25848, 580, 0, 1684.981, 507.9774, 88.1204, 1.151917, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
+(@CGUID+342, 25848, 580, 0, 1697.917, 502.315, 86.48821, 1.658063, 7200, 7200, 0, 0, 0, 2), -- Gauntlet Imp Trigger "Spawner" every 10 seconds
+(@CGUID+343, 25848, 580, 0, 1698.092, 502.2403, 86.49195, 1.570796, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner" Summon Visual
+(@CGUID+344, 25848, 580, 0, 1698.205, 501.5295, 95.85571, 1.780236, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner"
+(@CGUID+345, 25848, 580, 0, 1709.347, 510.2431, 90.95378, 2.932153, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
 -- Spawns after first Shadowsword Commander kill
 (@CGUID+346, 25165, 580, 0, 1814.271, 626.4523, 33.48701, 2.583087, 604800, 604800, 0, 0, 0, 0), -- Lady Sacrolash
 (@CGUID+347, 25166, 580, 0, 1818.212, 625.0439, 33.48701, 5.61996, 604800, 604800, 0, 0, 0, 0), -- Grand Warlock Alythess
--- Spawns after Alythess & Sacrolash kill
--- (@CGUID+348, 25741, 580, 1, 1816.401, 625.8939, 69.68857, 5.585053, 604800, 604800, 0, 0, 0, 0), -- M'uru
+-- Spawns after Alythess & Sacrolash kill - invisibility used
+(@CGUID+348, 25741, 580, 1, 1816.401, 625.8939, 69.68857, 5.585053, 604800, 604800, 0, 0, 0, 0), -- M'uru
 -- Spawns after M'uru kill
 (@CGUID+349, 25640, 580, 1, 1746.551, 621.9463, 28.13354, 2.094395, 7200, 7200, 0, 0, 0, 0), -- Orb Target
 (@CGUID+350, 25640, 580, 1, 1704.316, 582.7225, 28.25068, 5.009095, 7200, 7200, 0, 0, 0, 0), -- Orb Target
