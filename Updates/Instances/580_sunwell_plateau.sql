@@ -435,73 +435,73 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 -- Pathing for Shadowsword Commander Entry: 25837
 (@CGUID+316, 1, 1682.332, 537.6241, 85.33395, 2.076942, 50000, 2583701),
 -- Pathing for Shadowsword Manafiend Entry: 25483
-(@CGUID+326, 1, 1796.504, 565.1455, 53.83252, 100, 5000, 2548301), -- emote and set idle movement
+(@CGUID+332, 1, 1796.504, 565.1455, 53.83252, 100, 5000, 2548301), -- emote and set idle movement
 -- Pathing for Shadowsword Vanquisher Entry: 25486
-(@CGUID+327, 1, 1812.618, 586.0417, 50.79887, 3.717551, 0, 2548601), -- Yell text
-(@CGUID+327, 2, 1806.641, 586.4019, 51.12543, 0, 0, 0),
-(@CGUID+327, 3, 1800.891, 580.1519, 51.12543, 0, 0, 0),
-(@CGUID+327, 4, 1797.641, 568.9019, 53.12543, 0, 0, 0),
-(@CGUID+327, 5, 1795.163, 559.262, 55.45198, 100, 1000, 2548602), -- Emote state
+(@CGUID+333, 1, 1812.618, 586.0417, 50.79887, 3.717551, 0, 2548601), -- Yell text
+(@CGUID+333, 2, 1806.641, 586.4019, 51.12543, 0, 0, 0),
+(@CGUID+333, 3, 1800.891, 580.1519, 51.12543, 0, 0, 0),
+(@CGUID+333, 4, 1797.641, 568.9019, 53.12543, 0, 0, 0),
+(@CGUID+333, 5, 1795.163, 559.262, 55.45198, 100, 1000, 2548602), -- Emote state
 -- Pathing for Shadowsword Vanquisher Entry: 25486
-(@CGUID+328, 1, 1797.451, 588.6753, 51.14029, 0, 0, 0),
-(@CGUID+328, 2, 1798.701, 581.4253, 51.14029, 0, 0, 0),
-(@CGUID+328, 3, 1793.201, 573.4253, 53.14029, 0, 0, 0),
-(@CGUID+328, 4, 1782.493, 565.2297, 56.48238, 100, 1000, 2548602), -- Emote state
+(@CGUID+334, 1, 1797.451, 588.6753, 51.14029, 0, 0, 0),
+(@CGUID+334, 2, 1798.701, 581.4253, 51.14029, 0, 0, 0),
+(@CGUID+334, 3, 1793.201, 573.4253, 53.14029, 0, 0, 0),
+(@CGUID+334, 4, 1782.493, 565.2297, 56.48238, 100, 1000, 2548602), -- Emote state
 -- Pathing for Shadowsword Assassin
-(@CGUID+329, 1, 1792.0945, 568.5002, 53.796047, 4.266681, 5000, 2548401),
+(@CGUID+335, 1, 1792.0945, 568.5002, 53.796047, 4.266681, 5000, 2548401),
 -- Pathing for Shadowsword Manafiend Entry: 25483
-(@CGUID+330, 1, 1761.895, 511.8103, 80.35925, 0, 0, 0),
-(@CGUID+330, 2, 1770.5, 498.5753, 74.15498, 0, 0, 0),
-(@CGUID+330, 3, 1782.676, 498.8569, 74.14127, 0, 0, 0),
-(@CGUID+330, 4, 1790.207, 509.9032, 74.16136, 0, 0, 0),
-(@CGUID+330, 5, 1783.75, 522.1627, 69.59276, 0, 0, 0),
-(@CGUID+330, 6, 1774.792, 537.0277, 62.09303, 0, 0, 0),
-(@CGUID+330, 7, 1772.609, 545.9611, 62.09303, 0, 0, 0),
-(@CGUID+330, 8, 1781.791, 556.1232, 59.4439, 0, 0, 0),
-(@CGUID+330, 9, 1792.061, 567.6834, 53.97069, 0, 0, 0),
-(@CGUID+330, 10, 1781.791, 556.1232, 59.4439, 0, 0, 0),
-(@CGUID+330, 11, 1772.609, 545.9611, 62.09303, 0, 0, 0),
-(@CGUID+330, 12, 1774.792, 537.0277, 62.09303, 0, 0, 0),
-(@CGUID+330, 13, 1783.75, 522.1627, 69.59276, 0, 0, 0),
-(@CGUID+330, 14, 1790.207, 509.9032, 74.16136, 0, 0, 0),
-(@CGUID+330, 15, 1782.676, 498.8569, 74.14127, 0, 0, 0),
-(@CGUID+330, 16, 1770.5, 498.5753, 74.15498, 0, 0, 0),
-(@CGUID+330, 17, 1761.895, 511.8103, 80.35925, 0, 0, 0),
-(@CGUID+330, 18, 1756.622, 520.4323, 85.27325, 0, 0, 0),
-(@CGUID+330, 19, 1747.67, 535.4413, 85.28307, 0, 0, 0),
-(@CGUID+330, 20, 1756.622, 520.4323, 85.27325, 0, 0, 0),
+(@CGUID+336, 1, 1761.895, 511.8103, 80.35925, 0, 0, 0),
+(@CGUID+336, 2, 1770.5, 498.5753, 74.15498, 0, 0, 0),
+(@CGUID+336, 3, 1782.676, 498.8569, 74.14127, 0, 0, 0),
+(@CGUID+336, 4, 1790.207, 509.9032, 74.16136, 0, 0, 0),
+(@CGUID+336, 5, 1783.75, 522.1627, 69.59276, 0, 0, 0),
+(@CGUID+336, 6, 1774.792, 537.0277, 62.09303, 0, 0, 0),
+(@CGUID+336, 7, 1772.609, 545.9611, 62.09303, 0, 0, 0),
+(@CGUID+336, 8, 1781.791, 556.1232, 59.4439, 0, 0, 0),
+(@CGUID+336, 9, 1792.061, 567.6834, 53.97069, 0, 0, 0),
+(@CGUID+336, 10, 1781.791, 556.1232, 59.4439, 0, 0, 0),
+(@CGUID+336, 11, 1772.609, 545.9611, 62.09303, 0, 0, 0),
+(@CGUID+336, 12, 1774.792, 537.0277, 62.09303, 0, 0, 0),
+(@CGUID+336, 13, 1783.75, 522.1627, 69.59276, 0, 0, 0),
+(@CGUID+336, 14, 1790.207, 509.9032, 74.16136, 0, 0, 0),
+(@CGUID+336, 15, 1782.676, 498.8569, 74.14127, 0, 0, 0),
+(@CGUID+336, 16, 1770.5, 498.5753, 74.15498, 0, 0, 0),
+(@CGUID+336, 17, 1761.895, 511.8103, 80.35925, 0, 0, 0),
+(@CGUID+336, 18, 1756.622, 520.4323, 85.27325, 0, 0, 0),
+(@CGUID+336, 19, 1747.67, 535.4413, 85.28307, 0, 0, 0),
+(@CGUID+336, 20, 1756.622, 520.4323, 85.27325, 0, 0, 0),
 -- Pathing for Shadowsword Assassin - guessed
-(@CGUID+333, 1, 1594.18, 598.35, 50.65, 100, 0, 5), -- Run
-(@CGUID+333, 2, 1571.92, 574.28, 50.60, 100, 0, 0),
-(@CGUID+333, 3, 1645.72, 506.07, 50.57, 100, 0, 0),
-(@CGUID+333, 4, 1592.78, 550.92, 50.57, 100, 0, 0),
-(@CGUID+333, 5, 1601.34, 578.17, 50.57, 100, 0, 0),
+(@CGUID+318, 1, 1594.18, 598.35, 50.65, 100, 0, 5), -- Run
+(@CGUID+318, 2, 1571.92, 574.28, 50.60, 100, 0, 0),
+(@CGUID+318, 3, 1645.72, 506.07, 50.57, 100, 0, 0),
+(@CGUID+318, 4, 1592.78, 550.92, 50.57, 100, 0, 0),
+(@CGUID+318, 5, 1601.34, 578.17, 50.57, 100, 0, 0),
 -- Pathing for Shadowsword Assassin - guessed
-(@CGUID+334, 1, 1628.58, 612.93, 85.14, 100, 0, 5), -- Run
-(@CGUID+334, 2, 1601.63, 620.05, 85.24, 100, 0, 0),
-(@CGUID+334, 3, 1601.81, 606.17, 85.12, 100, 0, 0),
-(@CGUID+334, 4, 1615.00, 593.94, 84.98, 100, 0, 0),
+(@CGUID+319, 1, 1628.58, 612.93, 85.14, 100, 0, 5), -- Run
+(@CGUID+319, 2, 1601.63, 620.05, 85.24, 100, 0, 0),
+(@CGUID+319, 3, 1601.81, 606.17, 85.12, 100, 0, 0),
+(@CGUID+319, 4, 1615.00, 593.94, 84.98, 100, 0, 0),
 -- Pathing for Shadowsword Assassin - guessed
-(@CGUID+335, 1, 1634.85, 559.47, 85.32, 100, 0, 5), -- Run
-(@CGUID+335, 2, 1679.34, 549.92, 85.12, 100, 0, 0),
-(@CGUID+335, 3, 1613.24, 588.43, 84.94, 100, 0, 0),
-(@CGUID+335, 4, 1633.22, 575.70, 85.04, 100, 0, 0),
+(@CGUID+320, 1, 1634.85, 559.47, 85.32, 100, 0, 5), -- Run
+(@CGUID+320, 2, 1679.34, 549.92, 85.12, 100, 0, 0),
+(@CGUID+320, 3, 1613.24, 588.43, 84.94, 100, 0, 0),
+(@CGUID+320, 4, 1633.22, 575.70, 85.04, 100, 0, 0),
 -- Pathing for Shadowsword Soulbinder Entry: 25373
-(@CGUID+336, 1, 1662.8678, 524.444, 50.57551, 100, 0, 0),
-(@CGUID+336, 2, 1660.8033, 507.39877, 50.57551, 100, 0, 0),
-(@CGUID+336, 3, 1655.2913, 495.21875, 50.575504, 100, 0, 0),
-(@CGUID+336, 4, 1660.8033, 507.39877, 50.57551, 100, 0, 0),
+(@CGUID+321, 1, 1662.8678, 524.444, 50.57551, 100, 0, 0),
+(@CGUID+321, 2, 1660.8033, 507.39877, 50.57551, 100, 0, 0),
+(@CGUID+321, 3, 1655.2913, 495.21875, 50.575504, 100, 0, 0),
+(@CGUID+321, 4, 1660.8033, 507.39877, 50.57551, 100, 0, 0),
 -- Pathing for Shadowsword Soulbinder Entry: 25373
-(@CGUID+337, 1, 1604.4705, 571.67554, 80.41999, 100, 0, 0),
-(@CGUID+337, 2, 1614.62, 557.94464, 72.18298, 100, 0, 0),
-(@CGUID+337, 3, 1630.1543, 541.5376, 62.273785, 100, 0, 0),
-(@CGUID+337, 4, 1648.82, 527.84894, 52.866707, 100, 0, 0),
-(@CGUID+337, 5, 1630.1543, 541.5376, 62.273785, 100, 0, 0),
-(@CGUID+337, 6, 1614.62, 557.94464, 72.18298, 100, 0, 0),
-(@CGUID+337, 7, 1604.4705, 571.67554, 80.41999, 100, 0, 0),
-(@CGUID+337, 8, 1598.7472, 584.1803, 84.96148, 100, 0, 0),
-(@CGUID+337, 9, 1594.0377, 597.88556, 85.122856, 100, 0, 0),
-(@CGUID+337, 10, 1598.7472, 584.1803, 84.96148, 100, 0, 0),
+(@CGUID+322, 1, 1604.4705, 571.67554, 80.41999, 100, 0, 0),
+(@CGUID+322, 2, 1614.62, 557.94464, 72.18298, 100, 0, 0),
+(@CGUID+322, 3, 1630.1543, 541.5376, 62.273785, 100, 0, 0),
+(@CGUID+322, 4, 1648.82, 527.84894, 52.866707, 100, 0, 0),
+(@CGUID+322, 5, 1630.1543, 541.5376, 62.273785, 100, 0, 0),
+(@CGUID+322, 6, 1614.62, 557.94464, 72.18298, 100, 0, 0),
+(@CGUID+322, 7, 1604.4705, 571.67554, 80.41999, 100, 0, 0),
+(@CGUID+322, 8, 1598.7472, 584.1803, 84.96148, 100, 0, 0),
+(@CGUID+322, 9, 1594.0377, 597.88556, 85.122856, 100, 0, 0),
+(@CGUID+322, 10, 1598.7472, 584.1803, 84.96148, 100, 0, 0),
 -- Pathing for Shadowsword Commander Entry: 25837
 (@CGUID+338, 1, 1764.02, 578.5973, 85.12091, 0, 0, 0),
 (@CGUID+338, 2, 1758.39, 570.5671, 85.12949, 0, 0, 0),
@@ -742,9 +742,9 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+241, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
 (@CGUID+242, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
 (@CGUID+243, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+321, 0, 1, 1, 16, 0, 0, '45769 46744'), -- Shadowsword Manafiend
-(@CGUID+322, 0, 1, 1, 16, 0, 0, '45769 16380'), -- Shadowsword Assassin
-(@CGUID+325, 0, 1, 1, 16, 0, 0, '45769'); -- Shadowsword Lifeshaper
+(@CGUID+327, 0, 1, 1, 16, 0, 0, '45769 46744'), -- Shadowsword Manafiend
+(@CGUID+328, 0, 1, 1, 16, 0, 0, '45769 16380'), -- Shadowsword Assassin
+(@CGUID+331, 0, 1, 1, 16, 0, 0, '45769'); -- Shadowsword Lifeshaper
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (24850, 0, 3, 1, 16, 0, 0, NULL), -- Kalecgos
@@ -917,24 +917,24 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+300, @CGUID+303, 1165), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
 (@CGUID+301, @CGUID+303, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
 (@CGUID+302, @CGUID+303, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+303, @CGUID+332, 1165), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
-(@CGUID+332, @CGUID+333, 1165), -- Shadowsword Soulbinder -> Shadowsword Assassin
-(@CGUID+333, @CGUID+307, 1165), -- Shadowsword Assassin -> Shadowsword Lifeshaper
+(@CGUID+303, @CGUID+317, 1165), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
+(@CGUID+317, @CGUID+318, 1165), -- Shadowsword Soulbinder -> Shadowsword Assassin
+(@CGUID+318, @CGUID+307, 1165), -- Shadowsword Assassin -> Shadowsword Lifeshaper
 -- Shadowsword Group #2
 (@CGUID+304, @CGUID+307, 1165), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
 (@CGUID+305, @CGUID+307, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
 (@CGUID+306, @CGUID+307, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+307, @CGUID+336, 1165), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
-(@CGUID+336, @CGUID+337, 1165), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
-(@CGUID+337, @CGUID+311, 1165), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
+(@CGUID+307, @CGUID+321, 1165), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
+(@CGUID+321, @CGUID+322, 1165), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
+(@CGUID+322, @CGUID+311, 1165), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
 -- Shadowsword Group #3
 (@CGUID+308, @CGUID+311, 1165), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
 (@CGUID+309, @CGUID+311, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
 (@CGUID+310, @CGUID+311, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+311, @CGUID+334, 1165), -- Shadowsword Lifeshaper -> Shadowsword Assassin
-(@CGUID+334, @CGUID+335, 1165), -- Shadowsword Assassin -> Shadowsword Assassin
+(@CGUID+311, @CGUID+319, 1165), -- Shadowsword Lifeshaper -> Shadowsword Assassin
+(@CGUID+319, @CGUID+320, 1165), -- Shadowsword Assassin -> Shadowsword Assassin
 -- Shadowsword Group #4
-(@CGUID+335, @CGUID+316, 1165), -- Shadowsword Assassin -> Shadowsword Commander
+(@CGUID+320, @CGUID+316, 1165), -- Shadowsword Assassin -> Shadowsword Commander
 (@CGUID+312, @CGUID+316, 1167), -- Shadowsword Manafiend -> Shadowsword Commander
 (@CGUID+313, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
 (@CGUID+314, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
@@ -945,29 +945,24 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+342, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
 (@CGUID+343, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
 (@CGUID+344, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+316, @CGUID+346, 1024), -- Shadowsword Commander -> Lady Sacrolash
 -- Sanguine Chamber
 -- Shadowsword Group #5
-(@CGUID+318, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
-(@CGUID+319, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
-(@CGUID+320, @CGUID+317, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
-(@CGUID+317, @CGUID+346, 1024), -- Shadowsword Soulbinder -> Lady Sacrolash
+(@CGUID+324, @CGUID+323, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
+(@CGUID+325, @CGUID+323, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
+(@CGUID+326, @CGUID+323, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
 -- Terrace of the Sun
 -- Shadowsword Group #6
-(@CGUID+322, @CGUID+321, 1167), -- Shadowsword Assassin -> Shadowsword Manafiend
-(@CGUID+323, @CGUID+321, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+324, @CGUID+321, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+325, @CGUID+321, 1167), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
-(@CGUID+338, @CGUID+321, 1167), -- Shadowsword Commander -> Shadowsword Manafiend
-(@CGUID+321, @CGUID+346, 1024), -- Shadowsword Manafiend -> Lady Sacrolash
+(@CGUID+328, @CGUID+327, 1167), -- Shadowsword Assassin -> Shadowsword Manafiend
+(@CGUID+329, @CGUID+327, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+330, @CGUID+327, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+331, @CGUID+327, 1167), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
+(@CGUID+338, @CGUID+327, 1167), -- Shadowsword Commander -> Shadowsword Manafiend
 -- Shadowsword Group #7
-(@CGUID+331, @CGUID+330, 1679), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
-(@CGUID+330, @CGUID+346, 1024), -- Shadowsword Manafiend -> Lady Sacrolash
+(@CGUID+337, @CGUID+336, 1679), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
 -- Shadowsword Group #8
-(@CGUID+326, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+327, @CGUID+328, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+329, @CGUID+328, 1167), -- Shadowsword Assassin -> Shadowsword Manafiend
-(@CGUID+328, @CGUID+346, 1024), -- Shadowsword Manafiend -> Lady Sacrolash
+(@CGUID+332, @CGUID+334, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+333, @CGUID+334, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
+(@CGUID+335, @CGUID+334, 1167), -- Shadowsword Assassin -> Shadowsword Manafiend
 -- M'uru Trash
 (@CGUID+182, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
 (@CGUID+184, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
@@ -1297,62 +1292,63 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+250, 25953, 580, 1, 1802.698, 1017.151, 43.32138, 3.001966, 7200, 7200, 0, 0, 0, 0); -- Fel Crystal Spell Target
 
 -- SCRIPTED creature SPAWNS
--- Spawns after Felmyst kill
+-- Spawns after Felmyst kill - Gauntlet must come first uninterrupted
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 -- Group
-(@CGUID+300, 25483, 580, 0, 1573.492, 532.9899, 36.59594, 5.637414, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+301, 25486, 580, 0, 1575.036, 526.2291, 33.05231, 5.532694, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+302, 25486, 580, 0, 1586.088, 532.1331, 32.50251, 5.061455, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+303, 25506, 580, 0, 1578.723, 536.3168, 36.57854, 5.462881, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+300, 25483, 580, 0, 1573.492, 532.9899, 36.59594, 5.637414, 0, 0, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+301, 25486, 580, 0, 1575.036, 526.2291, 33.05231, 5.532694, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+302, 25486, 580, 0, 1586.088, 532.1331, 32.50251, 5.061455, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+303, 25506, 580, 0, 1578.723, 536.3168, 36.57854, 5.462881, 0, 0, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
-(@CGUID+304, 25483, 580, 0, 1652.19, 508.852, 50.65884, 2.792527, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+305, 25486, 580, 0, 1642.618, 500.6479, 50.65885, 2.583087, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+306, 25486, 580, 0, 1646.262, 512.5404, 50.65884, 2.984513, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+307, 25506, 580, 0, 1648.737, 501.2914, 50.65884, 2.513274, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+304, 25483, 580, 0, 1652.19, 508.852, 50.65884, 2.792527, 0, 0, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+305, 25486, 580, 0, 1642.618, 500.6479, 50.65885, 2.583087, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+306, 25486, 580, 0, 1646.262, 512.5404, 50.65884, 2.984513, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+307, 25506, 580, 0, 1648.737, 501.2914, 50.65884, 2.513274, 0, 0, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
-(@CGUID+308, 25483, 580, 0, 1595.912, 580.5301, 85.02103, 5.358161, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+309, 25486, 580, 0, 1595.829, 574.9542, 83.80084, 4.974188, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+310, 25486, 580, 0, 1605.553, 577.98, 83.05595, 4.694936, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+311, 25506, 580, 0, 1602.719, 582.55, 85.00942, 5.148721, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+308, 25483, 580, 0, 1595.912, 580.5301, 85.02103, 5.358161, 0, 0, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+309, 25486, 580, 0, 1595.829, 574.9542, 83.80084, 4.974188, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+310, 25486, 580, 0, 1605.553, 577.98, 83.05595, 4.694936, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+311, 25506, 580, 0, 1602.719, 582.55, 85.00942, 5.148721, 0, 0, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
-(@CGUID+312, 25483, 580, 0, 1673.784, 546.5482, 85.23383, 2.164208, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+313, 25486, 580, 0, 1668.669, 547.4747, 85.24547, 2.408554, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+314, 25486, 580, 0, 1685.173, 555.0667, 85.17554, 2.216568, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+315, 25506, 580, 0, 1684.763, 548.5197, 85.23845, 2.199115, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
-(@CGUID+316, 25837, 580, 0, 1682.332, 537.6241, 85.33395, 2.076942, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Commander YELLS 2000020124 on spawn/event start. Run PATH 1
+(@CGUID+312, 25483, 580, 0, 1673.784, 546.5482, 85.23383, 2.164208, 0, 0, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+313, 25486, 580, 0, 1668.669, 547.4747, 85.24547, 2.408554, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+314, 25486, 580, 0, 1685.173, 555.0667, 85.17554, 2.216568, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+315, 25506, 580, 0, 1684.763, 548.5197, 85.23845, 2.199115, 0, 0, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+316, 25837, 580, 0, 1682.332, 537.6241, 85.33395, 2.076942, 0, 0, 0, 0, 0, 2), -- Shadowsword Commander YELLS 2000020124 on spawn/event start. Run PATH 1
+-- Ungrouped in gauntlet
+(@CGUID+317, 25373, 580, 0, 1560.378, 561.6525, 50.65509, 4.991642, 0, 0, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+318, 25484, 580, 0, 1598.08, 572.8362, 50.65884, 0.8865389, 0, 0, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+319, 25484, 580, 0, 1628.587, 612.9368, 85.1436, 2.97489, 0, 0, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+320, 25484, 580, 0, 1634.864, 559.4721, 85.32404, 6.049571, 0, 0, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+321, 25373, 580, 0, 1662.8678, 524.444, 50.57551, 0.6618619, 0, 0, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 1
+(@CGUID+322, 25373, 580, 0, 1604.4705, 571.67554, 80.41999, 4.978537, 0, 0, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 2
 -- Group channelling spell 46174 Until Gauntlet Imp Trigger reached that stops spawning
-(@CGUID+317, 25373, 580, 0, 1681.45, 513.1183, 85.3565, 4.974188, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
-(@CGUID+318, 25373, 580, 0, 1688.993, 510.2533, 85.35651, 3.735005, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+323, 25373, 580, 0, 1681.45, 513.1183, 85.3565, 4.974188, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+324, 25373, 580, 0, 1688.993, 510.2533, 85.35651, 3.735005, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
 -- Group channelling spell 46174 Until Gauntlet Imp Trigger reached that stops spawning
-(@CGUID+319, 25373, 580, 0, 1705.695, 509.5072, 85.35654, 5.88176, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
-(@CGUID+320, 25373, 580, 0, 1712.088, 513.9833, 85.35654, 5.166174, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+325, 25373, 580, 0, 1705.695, 509.5072, 85.35654, 5.88176, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
+(@CGUID+326, 25373, 580, 0, 1712.088, 513.9833, 85.35654, 5.166174, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
 -- Group
-(@CGUID+321, 25483, 580, 0, 1770.917, 574.3668, 85.26621, 2.9147, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
-(@CGUID+322, 25484, 580, 0, 1767.513, 567.4114, 85.28456, 2.530727, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
-(@CGUID+323, 25486, 580, 0, 1752.69, 574.1627, 85.1591, 5.67232, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+324, 25486, 580, 0, 1762.069, 562.6295, 85.28138, 2.338741, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
-(@CGUID+325, 25506, 580, 0, 1759.415, 579.986, 85.16913, 5.689773, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+327, 25483, 580, 0, 1770.917, 574.3668, 85.26621, 2.9147, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend
+(@CGUID+328, 25484, 580, 0, 1767.513, 567.4114, 85.28456, 2.530727, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
+(@CGUID+329, 25486, 580, 0, 1752.69, 574.1627, 85.1591, 5.67232, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+330, 25486, 580, 0, 1762.069, 562.6295, 85.28138, 2.338741, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
+(@CGUID+331, 25506, 580, 0, 1759.415, 579.986, 85.16913, 5.689773, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
-(@CGUID+326, 25483, 580, 0, 1817.548, 593.4289, 50.8023, 4.049164, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend Run PATH 1
-(@CGUID+327, 25486, 580, 0, 1812.618, 586.0417, 50.79887, 3.717551, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 1 "When a player reaches 55 yard distance from this npc run path non repeating for the 3 pathed in this group."
-(@CGUID+328, 25486, 580, 0, 1793.91, 593.6208, 50.79819, 5.51524, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 2
-(@CGUID+329, 25484, 580, 0, 1799.959, 584.9696, 50.69594, 4.765335, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+332, 25483, 580, 0, 1817.548, 593.4289, 50.8023, 4.049164, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend Run PATH 1
+(@CGUID+333, 25486, 580, 0, 1812.618, 586.0417, 50.79887, 3.717551, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 1 "When a player reaches 55 yard distance from this npc run path non repeating for the 3 pathed in this group."
+(@CGUID+334, 25486, 580, 0, 1793.91, 593.6208, 50.79819, 5.51524, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 2
+(@CGUID+335, 25484, 580, 0, 1799.959, 584.9696, 50.69594, 4.765335, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
 -- Group pathing
-(@CGUID+330, 25483, 580, 0, 1744.354, 534.517, 85.32926, 5.428943, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend PATH 2
-(@CGUID+331, 25506, 580, 0, 1748.878, 538.0068, 85.26904, 4.803874, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
+(@CGUID+336, 25483, 580, 0, 1744.354, 534.517, 85.32926, 5.428943, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend PATH 2
+(@CGUID+337, 25506, 580, 0, 1748.878, 538.0068, 85.26904, 4.803874, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Ungrouped
-(@CGUID+332, 25373, 580, 0, 1560.378, 561.6525, 50.65509, 4.991642, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Soulbinder
-(@CGUID+333, 25484, 580, 0, 1598.08, 572.8362, 50.65884, 0.8865389, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
-(@CGUID+334, 25484, 580, 0, 1628.587, 612.9368, 85.1436, 2.97489, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
-(@CGUID+335, 25484, 580, 0, 1634.864, 559.4721, 85.32404, 6.049571, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
-(@CGUID+336, 25373, 580, 0, 1662.8678, 524.444, 50.57551, 0.6618619, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 1
-(@CGUID+337, 25373, 580, 0, 1604.4705, 571.67554, 80.41999, 4.978537, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Soulbinder PATH 2
 (@CGUID+338, 25837, 580, 0, 1752.243, 564.6907, 85.20719, 0.7629684, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Commander PATH 2
 -- Imp Triggers not grouped "Imp spawning starts on spawn."
 (@CGUID+339, 25848, 580, 0, 1589.505, 514.9243, 33.22498, 2.164208, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "bottom - This is the trigger imps path to"
 (@CGUID+340, 25848, 580, 0, 1680.382, 542.687, 85.27053, 2.007129, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger
 (@CGUID+341, 25848, 580, 0, 1684.981, 507.9774, 88.1204, 1.151917, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
-(@CGUID+342, 25848, 580, 0, 1697.917, 502.315, 86.48821, 1.658063, 7200, 7200, 0, 0, 0, 2), -- Gauntlet Imp Trigger "Spawner" every 10 seconds
+(@CGUID+342, 25848, 580, 0, 1697.917, 502.315, 86.48821, 1.658063, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner" every 10 seconds
 (@CGUID+343, 25848, 580, 0, 1698.092, 502.2403, 86.49195, 1.570796, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner" Summon Visual
 (@CGUID+344, 25848, 580, 0, 1698.205, 501.5295, 95.85571, 1.780236, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner"
 (@CGUID+345, 25848, 580, 0, 1709.347, 510.2431, 90.95378, 2.932153, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
