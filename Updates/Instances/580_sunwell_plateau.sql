@@ -1314,7 +1314,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+313, 25486, 580, 0, 1668.669, 547.4747, 85.24547, 2.408554, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
 (@CGUID+314, 25486, 580, 0, 1685.173, 555.0667, 85.17554, 2.216568, 0, 0, 0, 0, 0, 0), -- Shadowsword Vanquisher
 (@CGUID+315, 25506, 580, 0, 1684.763, 548.5197, 85.23845, 2.199115, 0, 0, 0, 0, 0, 0), -- Shadowsword Lifeshaper
-(@CGUID+316, 25837, 580, 0, 1682.332, 537.6241, 85.33395, 2.076942, 0, 0, 0, 0, 0, 2), -- Shadowsword Commander YELLS 2000020124 on spawn/event start. Run PATH 1
+(@CGUID+316, 25837, 580, 0, 1682.332, 537.6241, 85.33395, 2.076942, 0, 0, 0, 0, 0, 0), -- Shadowsword Commander YELLS 2000020124 on spawn/event start. Run PATH 1
 -- Ungrouped in gauntlet
 (@CGUID+317, 25373, 580, 0, 1560.378, 561.6525, 50.65509, 4.991642, 0, 0, 0, 0, 0, 0), -- Shadowsword Soulbinder
 (@CGUID+318, 25484, 580, 0, 1598.08, 572.8362, 50.65884, 0.8865389, 0, 0, 0, 0, 0, 2), -- Shadowsword Assassin
@@ -1335,10 +1335,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+330, 25486, 580, 0, 1762.069, 562.6295, 85.28138, 2.338741, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher
 (@CGUID+331, 25506, 580, 0, 1759.415, 579.986, 85.16913, 5.689773, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
 -- Group
-(@CGUID+332, 25483, 580, 0, 1817.548, 593.4289, 50.8023, 4.049164, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend Run PATH 1
-(@CGUID+333, 25486, 580, 0, 1812.618, 586.0417, 50.79887, 3.717551, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 1 "When a player reaches 55 yard distance from this npc run path non repeating for the 3 pathed in this group."
-(@CGUID+334, 25486, 580, 0, 1793.91, 593.6208, 50.79819, 5.51524, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Vanquisher Run PATH 2
-(@CGUID+335, 25484, 580, 0, 1799.959, 584.9696, 50.69594, 4.765335, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Assassin
+(@CGUID+332, 25483, 580, 0, 1817.548, 593.4289, 50.8023, 4.049164, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Manafiend Run PATH 1
+(@CGUID+333, 25486, 580, 0, 1812.618, 586.0417, 50.79887, 3.717551, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher Run PATH 1 "When a player reaches 55 yard distance from this npc run path non repeating for the 3 pathed in this group." - movement engaged in cpp
+(@CGUID+334, 25486, 580, 0, 1793.91, 593.6208, 50.79819, 5.51524, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Vanquisher Run PATH 2
+(@CGUID+335, 25484, 580, 0, 1799.959, 584.9696, 50.69594, 4.765335, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Assassin
 -- Group pathing
 (@CGUID+336, 25483, 580, 0, 1744.354, 534.517, 85.32926, 5.428943, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Manafiend PATH 2
 (@CGUID+337, 25506, 580, 0, 1748.878, 538.0068, 85.26904, 4.803874, 7200, 7200, 0, 0, 0, 0), -- Shadowsword Lifeshaper
