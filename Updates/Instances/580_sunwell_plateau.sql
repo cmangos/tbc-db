@@ -435,7 +435,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 -- Pathing for Shadowsword Commander Entry: 25837
 (@CGUID+316, 1, 1682.332, 537.6241, 85.33395, 2.076942, 50000, 2583701),
 -- Pathing for Shadowsword Manafiend Entry: 25483
-(@CGUID+332, 1, 1796.504, 565.1455, 53.83252, 100, 5000, 2548301), -- emote and set idle movement
+(@CGUID+332, 1, 1817.548, 593.4289, 50.8023, 100, 2000, 0),
+(@CGUID+332, 2, 1796.504, 565.1455, 53.83252, 100, 5000, 2548301), -- emote and set idle movement
 -- Pathing for Shadowsword Vanquisher Entry: 25486
 (@CGUID+333, 1, 1812.618, 586.0417, 50.79887, 3.717551, 0, 2548601), -- Yell text
 (@CGUID+333, 2, 1806.641, 586.4019, 51.12543, 0, 0, 0),
@@ -443,12 +444,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+333, 4, 1797.641, 568.9019, 53.12543, 0, 0, 0),
 (@CGUID+333, 5, 1795.163, 559.262, 55.45198, 100, 1000, 2548602), -- Emote state
 -- Pathing for Shadowsword Vanquisher Entry: 25486
-(@CGUID+334, 1, 1797.451, 588.6753, 51.14029, 0, 0, 0),
+(@CGUID+334, 1, 1797.451, 588.6753, 51.14029, 0, 100, 0),
 (@CGUID+334, 2, 1798.701, 581.4253, 51.14029, 0, 0, 0),
 (@CGUID+334, 3, 1793.201, 573.4253, 53.14029, 0, 0, 0),
 (@CGUID+334, 4, 1782.493, 565.2297, 56.48238, 100, 1000, 2548602), -- Emote state
 -- Pathing for Shadowsword Assassin
-(@CGUID+335, 1, 1792.0945, 568.5002, 53.796047, 4.266681, 5000, 2548401),
+(@CGUID+335, 1, 1799.959, 584.9696, 50.69594, 100, 3000, 0),
+(@CGUID+335, 2, 1792.0945, 568.5002, 53.796047, 4.266681, 5000, 2548401),
 -- Pathing for Shadowsword Manafiend Entry: 25483
 (@CGUID+336, 1, 1761.895, 511.8103, 80.35925, 0, 0, 0),
 (@CGUID+336, 2, 1770.5, 498.5753, 74.15498, 0, 0, 0),
@@ -960,9 +962,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Shadowsword Group #7
 (@CGUID+337, @CGUID+336, 1679), -- Shadowsword Lifeshaper -> Shadowsword Manafiend
 -- Shadowsword Group #8
-(@CGUID+332, @CGUID+334, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+333, @CGUID+334, 1167), -- Shadowsword Vanquisher -> Shadowsword Manafiend
-(@CGUID+335, @CGUID+334, 1167), -- Shadowsword Assassin -> Shadowsword Manafiend
+(@CGUID+332, @CGUID+333, 1167), -- Shadowsword Manafiend -> Shadowsword Vanquisher
+(@CGUID+334, @CGUID+333, 1167), -- Shadowsword Vanquisher -> Shadowsword Vanquisher
+(@CGUID+335, @CGUID+333, 1167), -- Shadowsword Assassin -> Shadowsword Vanquisher
 -- M'uru Trash
 (@CGUID+182, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
 (@CGUID+184, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
