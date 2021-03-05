@@ -20,3 +20,19 @@ UPDATE creature_template SET Leash=130 WHERE entry=15956;
 UPDATE creature_template SET Leash=180 WHERE entry=15931;
 -- Gluth
 UPDATE creature_template SET Detection=70 WHERE entry=15932;
+-- Noth
+UPDATE creature_template SET Detection=50 WHERE entry=15954;
+-- Anub'Rekhan
+UPDATE creature_template SET Detection=70 Where entry=15956;
+-- Faerlina
+UPDATE creature_template SET Detection=45 WHERE entry=15953;
+-- Maexxna
+UPDATE creature_template SET SpeedRun=1.68, Detection=60 WHERE entry=15952;
+-- Patchwerk
+UPDATE creature_template SET Detection=40 WHERE entry=16028;
+-- Grobbulus
+UPDATE creature_template SET Detection=35 WHERE entry=15931;
+-- Razuvious
+UPDATE creature_template SET SpeedRun=1.68, Detection=35 WHERE entry=16061;
+-- Loatheb
+UPDATE creature_template SET Detection=35 WHERE entry=16011;
