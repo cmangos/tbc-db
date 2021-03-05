@@ -20,4 +20,3 @@ UPDATE creature_template SET Leash=130 WHERE entry=15956;
 UPDATE creature_template SET Leash=180 WHERE entry=15931;
 -- Gluth
 UPDATE creature_template SET Detection=70 WHERE entry=15932;
-UPDATE creature SET position_x="3300.73", position_y="-3140.42", position_z="296.89", orientation="3.90" WHERE guid=5330146;
