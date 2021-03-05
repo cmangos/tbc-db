@@ -29192,10 +29192,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2573501','25735','11','0','100','0','0','0','0','0','0','0','11','45911','0','0','0','0','0','0','0','0','0','0','Armageddon Target - Cast Armageddon on Spawn'),
 ('2573502','25735','1','0','100','0','8000','8000','0','0','0','0','11','45909','0','0','0','0','0','0','0','0','0','0','Armageddon Target - Cast Armageddon on OOC Timer'),
 -- M'uru (25741) - boss_muru
--- Dark Fiend 25744
-('2574401','25744','11','0','100','0','0','0','0','0','0','0','11','45934','0','34','20','0','0','0','0','0','0','0','Dark Fiend - Cast Dark Fiend Disable Melee on Spawn'),
-('2574402','25744','29','0','100','0','1000','1000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Dark Fiend - Zone Combat Pulse on Generic Timer'),
-('2574403','25744','0','0','100','1024','0','0','0','0','0','0','11','45943','1','0','11','45944','17','0','41','5000','0','0','Dark Fiend - Cast Dark Fiend and Dark Fiend and Delayed Despawn'),
+-- Dark Fiend 25744 - npc_dark_fiend
 -- M'uru Portal Target 25770 - npc_portal_target
 -- Void Sentinal 25772
 ('2577201','25772','9','0','100','1025','0','10','7000','11000','0','0','11','46087','0','0','0','0','0','0','0','0','0','0','Void Sentinal - Cast Shadow Pulse'),
