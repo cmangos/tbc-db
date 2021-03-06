@@ -641,8 +641,8 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (25485, 0, 21, 1561.983, 553.1981, 47.47012, 0, 0, 0),
 (25485, 0, 22, 1572.274, 537.1907, 38.79183, 0, 0, 0),
 (25485, 0, 23, 1583.751, 521.8306, 32.67748, 0, 0, 0),
-(25485, 0, 24, 1588.915, 506.6923, 32.80248, 0, 0, 0),
-(25485, 0, 25, 1588.915, 506.6923, 32.80248, 0, 1, 1),
+(25485, 0, 24, 1588.915, 506.6923, 32.80248, 0, 1, 2585101),
+(25485, 0, 25, 1588.915, 506.6923, 32.80248, 0, 1000, 1),
 -- Pathing for Volatile Fiend Entry: 25851
 (25851, 0, 1, 1676.9564, 547.49713, 85.14562, 0, 0, 0),
 (25851, 0, 2, 1666.52, 562.1425, 85.08298, 0, 0, 0),
@@ -667,8 +667,8 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (25851, 0, 21, 1561.983, 553.1981, 47.47012, 0, 0, 0),
 (25851, 0, 22, 1572.274, 537.1907, 38.79183, 0, 0, 0),
 (25851, 0, 23, 1583.751, 521.8306, 32.67748, 0, 0, 0),
-(25851, 0, 24, 1588.915, 506.6923, 32.80248, 0, 0, 0),
-(25851, 0, 25, 1588.915, 506.6923, 32.80248, 0, 1, 1);
+(25851, 0, 24, 1588.915, 506.6923, 32.80248, 0, 1, 2585101),
+(25851, 0, 25, 1588.915, 506.6923, 32.80248, 0, 1000, 1);
 
 -- shield orb
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
@@ -941,12 +941,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+313, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
 (@CGUID+314, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
 (@CGUID+315, @CGUID+316, 1167), -- Shadowsword Lifeshaper -> Shadowsword Commander
--- Gauntlet Spawn Control
-(@CGUID+339, @CGUID+316, 1181), -- Gauntlet Imp Trigger "bottom" -> Shadowsword Commander
-(@CGUID+340, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+342, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+343, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
-(@CGUID+344, @CGUID+316, 1181), -- Gauntlet Imp Trigger -> Shadowsword Commander
 -- Sanguine Chamber
 -- Shadowsword Group #5
 (@CGUID+324, @CGUID+323, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
@@ -1345,13 +1339,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- Ungrouped
 (@CGUID+338, 25837, 580, 0, 1752.243, 564.6907, 85.20719, 0.7629684, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Commander PATH 2
 -- Imp Triggers not grouped "Imp spawning starts on spawn."
-(@CGUID+339, 25848, 580, 0, 1589.505, 514.9243, 33.22498, 2.164208, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "bottom - This is the trigger imps path to"
-(@CGUID+340, 25848, 580, 0, 1680.382, 542.687, 85.27053, 2.007129, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger
-(@CGUID+341, 25848, 580, 0, 1684.981, 507.9774, 88.1204, 1.151917, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
-(@CGUID+342, 25848, 580, 0, 1697.917, 502.315, 86.48821, 1.658063, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner" every 10 seconds
-(@CGUID+343, 25848, 580, 0, 1698.092, 502.2403, 86.49195, 1.570796, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner" Summon Visual
-(@CGUID+344, 25848, 580, 0, 1698.205, 501.5295, 95.85571, 1.780236, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner"
-(@CGUID+345, 25848, 580, 0, 1709.347, 510.2431, 90.95378, 2.932153, 7200, 7200, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
+(@CGUID+339, 25848, 580, 0, 1589.505, 514.9243, 33.22498, 2.164208, 0, 0, 0, 0, 0, 0), -- Gauntlet Imp Trigger "bottom - This is the trigger imps path to"
+(@CGUID+340, 25848, 580, 0, 1680.382, 542.687, 85.27053, 2.007129, 0, 0, 0, 0, 0, 0), -- Gauntlet Imp Trigger
+(@CGUID+341, 25848, 580, 0, 1684.981, 507.9774, 88.1204, 1.151917, 0, 0, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
+(@CGUID+342, 25848, 580, 0, 1697.917, 502.315, 86.48821, 1.658063, 0, 0, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner" every 10 seconds
+(@CGUID+343, 25848, 580, 0, 1698.092, 502.2403, 86.49195, 1.570796, 0, 0, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner" Summon Visual
+(@CGUID+344, 25848, 580, 0, 1698.205, 501.5295, 95.85571, 1.780236, 0, 0, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Spawner"
+(@CGUID+345, 25848, 580, 0, 1709.347, 510.2431, 90.95378, 2.932153, 0, 0, 0, 0, 0, 0), -- Gauntlet Imp Trigger "Channel"
 -- Spawns after first Shadowsword Commander kill
 (@CGUID+346, 25165, 580, 0, 1814.271, 626.4523, 33.48701, 2.583087, 0, 0, 0, 0, 0, 0), -- Lady Sacrolash
 (@CGUID+347, 25166, 580, 0, 1818.212, 625.0439, 33.48701, 5.61996, 0, 0, 0, 0, 0, 0), -- Grand Warlock Alythess
@@ -1497,7 +1491,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2548602, 0, 1, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Vanquisher - Set EMOTE_STATE_READY2H'),
 (2559701, 0, 15, 46219, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Oblivion Mage - Cast Fire Channeling'),
 (2583701, 0, 15, 46245, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Commander - Cast Summon Shadowsword Deathbringer'),
-(2584801, 0, 15, 46214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gauntlet Imp Trigger - Cast Summon Imp');
+(2584801, 0, 15, 46214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gauntlet Imp Trigger - Cast Summon Imp'),
+(2585101, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Volatile Imp / Shadowsword Deathbringer - Zone pulse');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020120, 2000020121, 2000020122, 2000020123); -- , 2000020124);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
