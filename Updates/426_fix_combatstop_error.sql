@@ -1,0 +1,1 @@
+UPDATE command SET name="combat stop", help='Syntax: .combat stop [$playername]\r\nStop combat for selected character. If selected non-player then command applied to self. If $playername provided then attempt applied to online player $playername.' WHERE name="combatstop";
