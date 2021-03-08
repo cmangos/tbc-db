@@ -1,14 +1,11 @@
 /* DBScriptData
 DBName: Sunwell Plateau
 DBScriptName: instance_sunwell_plateau
-DB%Complete: 85
+DB%Complete: 90
 DBComment:
-Shadowsword Deathbringers 25485 spawned by spell 46245 cast by Shadowsword Commander @CGUID+316 on spawn EVERY 50 seconds.
 The Shadowsword Deathbringer will aggro to the closest player on spawn and run to him/her.
-Issues:
 Spell 46319 http://www.wowhead.com/spell=46319/felblood-channel is a 15 second channelled spell which is not ending after 15 seconds.
-Doodad_Sunwell_Ice_Barrier01 Entry: 188119 Should activate when area trigger activates script for Brutallus. Brutallus should shatter the ice barrier in his script.
-Add Serverside Taunt Hit Chance 45210, ss.47067
+Add Serverside s.47067
 EndDBScriptData */
 
 SET @CGUID := 5800000; -- creatures
@@ -750,7 +747,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (24850, 0, 3, 1, 16, 0, 0, NULL), -- Kalecgos
-(24882, 0, 0, 1, 16, 27, 0, '45769 42459'), -- Brutallus ss.45210
+(24882, 0, 0, 1, 16, 27, 0, '45769 42459 45210'), -- Brutallus
 (24891, 0, 0, 1, 16, 0, 0, '44801'), -- Kalecgos
 (24892, 0, 0, 1, 16, 0, 0, '44800 44801'), -- Sathrovarr the Corruptor
 (24928, 0, 0, 1, 16, 0, 1024, NULL), -- Sunwell Daily Bunny x 1.00
@@ -1493,13 +1490,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2584801, 0, 15, 46214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gauntlet Imp Trigger - Cast Summon Imp'),
 (2585101, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Volatile Imp / Shadowsword Deathbringer - Zone pulse');
 
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000020120, 2000020121, 2000020122, 2000020123); -- , 2000020124);
+DELETE FROM `dbscript_string` WHERE `entry` IN (2000020120, 2000020121, 2000020122, 2000020123);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
 (2000020120, 'May the light bless you.', 0, 0, 0, 0, 24856, ''),
 (2000020121, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, 24857, ''),
 (2000020122, 'Rest now, you have fought well today.', 0, 0, 0, 0, 24858, ''),
 (2000020123, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, 25482, '');
--- (2000020124, 'Bring forth the imps!', 0, 1, 0, 0, 25050, '');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
