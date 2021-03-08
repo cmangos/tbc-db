@@ -944,8 +944,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Sanguine Chamber
 -- Shadowsword Group #5
 (@CGUID+324, @CGUID+323, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
-(@CGUID+325, @CGUID+323, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
-(@CGUID+326, @CGUID+323, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
+(@CGUID+326, @CGUID+325, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
 -- Terrace of the Sun
 -- Shadowsword Group #6
 (@CGUID+328, @CGUID+327, 1167), -- Shadowsword Assassin -> Shadowsword Manafiend
