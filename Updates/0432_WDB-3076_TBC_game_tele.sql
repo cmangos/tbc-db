@@ -27,11 +27,11 @@ DELETE FROM `game_tele` WHERE `id` IN (32,82,85,87,90,104,129,171,326,341,343,34
 -- 421	15.2235	-0.221107	-2.79687	0.007752	585	mgt
 DELETE FROM `game_tele` WHERE `id` BETWEEN 1000 AND 1026;
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES -- ORDER BY MAP
-(1000, -1496.24, 7034.7, 32.5619, 1.75699, 269, 'BM'), -- Caverns Of Time, Black Morass (Entrance)
-(1001, -248, 956, 85, 1.62, 530, 'Outland'), -- Dark Portal To Outland
-(1002, -11105.5, -2001.11, 49.8927, 0.6572, 532, 'KaraFront'), -- Karazhan, Main (Entrance)
+(1000, -1491.61, 7056.51, 32.1011, 1.74533, 269, 'BM'), -- Caverns Of Time, Black Morass (Entrance)
+(1001, -248.149, 921.875, 84.3885, 1.58415, 530, 'Outland'), -- Dark Portal To Outland
+(1002, -11101.8, -1998.31, 49.8927, 0.007069, 532, 'KaraFront'), -- Karazhan, Main (Entrance)
 (1003, -11040.1, -1996.85, 94.6837, 2.20224, 532, 'KaraBack'), -- Karazhan, Service (Entrance)
-(1004, 4259.61, -4233.77, 868.199, 2.53, 534, 'Hyjal'), -- Caverns Of Time, Battle Of Mount Hyjal (Entrance)
+(1004, 4252.72, -4226.16, 868.222, 2.35619, 534, 'Hyjal'), -- Caverns Of Time, Battle Of Mount Hyjal (Entrance)
 (1005, -40.8716, -19.7538, -13.8065, 1.11133, 540, 'SHH'), -- The Shattered Halls (Entrance)
 (1006, -3.9967, 14.6363, -44.8009, 4.88748, 542, ' 	BF'), -- The Blood Furnace (Entrance)
 (1007, -1355.24, 1641.12, 68.2491, 0.6687, 543, 'Ramps'), -- Hellfire Ramparts (Entrance)
@@ -48,7 +48,7 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 (1018, -4.6811, -0.0930796, 0.0062, 0.0353424, 556, 'SH'), -- Sethekk Halls (Entrance)
 (1019, 0.0191, 0.9478, -0.9543, 3.03164, 557, 'MT'), -- Mana Tombs (Entrance)
 (1020, -21.8975, 0.16, -0.1206, 0.0353412, 558, 'AC'), -- Auchenai Crypts (Entrance)
-(1021, 2741.87, 1315.25, 14.0423, 2.96016, 560, 'OHF'), -- Caverns Of Time, Old Hillsbrad Foothills (Entrance)
+(1021, 2741.68, 1312.64, 14.0413, 2.79253, 560, 'OHF'), -- Caverns Of Time, Old Hillsbrad Foothills (Entrance)
 (1022, 96.4462, 1002.35, -86.9984, 6.15675, 564, 'BT'), -- Black Temple (Entrance)
 (1023, 62.7842, 35.462, -3.9835, 1.41844, 565, 'Gruul'), -- Gruul\'s Lair (Entrance)
 (1024, 120.7, 1776, 43.46, 4.7713, 568, 'ZA'), -- Zul\'Aman (Entrance)
