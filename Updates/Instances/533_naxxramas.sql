@@ -881,7 +881,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15974, 0, 0, 1, 16, 0, 0, NULL), -- Dread Creeper
 (15975, 0, 0, 1, 16, 0, 0, NULL), -- Carrion Spinner
 (15976, 0, 0, 1, 16, 0, 0, '18943'), -- Venom Stalker
-(15977, 0, 0, 1, 16, 0, 0, NULL), -- Poisonous Skitterer
+(15977, 0, 0, 1, 16, 0, 0, NULL), -- Infectious Skitterer
 (15978, 0, 0, 1, 16, 0, 0, NULL), -- Crypt Reaver
 (15979, 0, 0, 1, 16, 0, 0, NULL), -- Tomb Horror
 (15980, 0, 8, 1, 16, 0, 0, NULL), -- Naxxramas Cultist
@@ -957,45 +957,41 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (17286, 0, 0, 1, 16, 0, 0, '28782'); -- Invisible Man
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+168, @CGUID+273, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+169, @CGUID+273, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+170, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+171, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+175, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+176, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+177, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+178, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+179, @CGUID+273, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+180, @CGUID+273, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+181, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+182, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
-(@CGUID+229, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+230, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+231, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+232, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+233, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+234, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+235, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+236, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+237, @CGUID+228, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+239, @CGUID+238, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+240, @CGUID+238, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+241, @CGUID+238, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+242, @CGUID+238, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+243, @CGUID+238, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+244, @CGUID+238, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+245, @CGUID+238, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+246, @CGUID+238, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+247, @CGUID+238, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+259, @CGUID+258, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+260, @CGUID+258, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+261, @CGUID+258, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+262, @CGUID+258, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+263, @CGUID+258, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+264, @CGUID+258, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+265, @CGUID+258, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+266, @CGUID+258, 515), -- Poisonous Skitterer -> Poisonous Skitterer
-(@CGUID+267, @CGUID+258, 515), -- Poisonous Skitterer -> Poisonous Skitterer
+(@CGUID+158, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+159, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+160, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+161, @CGUID+274, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+162, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+163, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+164, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+165, @CGUID+275, 3), -- Dread Creeper -> Tomb Horror
+(@CGUID+229, @CGUID+228, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+230, @CGUID+228, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+231, @CGUID+228, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+232, @CGUID+228, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+233, @CGUID+228, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+234, @CGUID+228, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+235, @CGUID+228, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+236, @CGUID+228, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+237, @CGUID+228, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+239, @CGUID+238, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+240, @CGUID+238, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+241, @CGUID+238, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+242, @CGUID+238, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+243, @CGUID+238, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+244, @CGUID+238, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+245, @CGUID+238, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+246, @CGUID+238, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+247, @CGUID+238, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+259, @CGUID+258, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+260, @CGUID+258, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+261, @CGUID+258, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+262, @CGUID+258, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+263, @CGUID+258, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+264, @CGUID+258, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+265, @CGUID+258, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+266, @CGUID+258, 515), -- Infectious Skitterer -> Infectious Skitterer
+(@CGUID+267, @CGUID+258, 515), -- Infectious Skitterer -> Infectious Skitterer
 (@CGUID+276, @CGUID+280, 3), -- Naxxramas Cultist -> Naxxramas Cultist
 (@CGUID+277, @CGUID+280, 3), -- Naxxramas Cultist -> Naxxramas Cultist
 (@CGUID+278, @CGUID+280, 3), -- Naxxramas Cultist -> Naxxramas Cultist
@@ -1326,31 +1322,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+155, 15974, 533, 3143.682, -3544.068, 287.1645, 5.951573, 3520, 3520, 3, 0, 0, 1), -- Dread Creeper
 (@CGUID+156, 15974, 533, 3186.273, -3470.939, 287.1594, 5.567600, 3520, 3520, 3, 0, 0, 1), -- Dread Creeper
 (@CGUID+157, 15974, 533, 3185.437, -3481.438, 287.1604, 5.602507, 3520, 3520, 3, 0, 0, 1), -- Dread Creeper
-(@CGUID+158, 15974, 533, 3221.97, -3610.85, 287.25, 3.92, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+159, 15974, 533, 3178.38, -3566.75, 287.26, 4.47, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+160, 15974, 533, 3136.36, -3605.87, 287.25, 0.75, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+161, 15974, 533, 3138.24, -3598.76, 287.26, 5.28, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+162, 15974, 533, 3208.67, -3570.83, 287.26, 3.87, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+163, 15974, 533, 3206.43, -3573.16, 287.26, 3.95, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+164, 15974, 533, 3142.42, -3638.35, 287.26, 0.66, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+165, 15974, 533, 3146.45, -3635.57, 287.26, 0.6, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+166, 15974, 533, 3246.75, -3684.86, 287.26, 2.49, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+167, 15974, 533, 3232.96, -3679.39, 287.27, 1.58, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+168, 15974, 533, 3193.05, -3792.78, 274.13, 5.61, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+169, 15974, 533, 3201.36, -3799.85, 274.13, 0.4, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+170, 15974, 533, 3135.72, -3794.43, 274.13, 1.4, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+171, 15974, 533, 3150.08, -3783.27, 274.13, 0.39, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+172, 15974, 533, 3223.31, -3749.29, 282.09, 2.68, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+173, 15974, 533, 3224.37, -3739.01, 283.82, 2.88, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+174, 15974, 533, 3213.58, -3735.34, 285.11, 2.75, 3520, 3520, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+175, 15974, 533, 3215.53, -3801.41, 273.951, 2.60437, 25, 25, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+176, 15974, 533, 3219.6, -3794.29, 273.948, 1.94464, 25, 25, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+177, 15974, 533, 3228.22, -3790.97, 273.838, 0.901626, 25, 25, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+178, 15974, 533, 3234.6, -3797.04, 273.798, 0.901626, 25, 25, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+179, 15974, 533, 3181.05, -3796.11, 273.951, 2.12921, 25, 25, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+180, 15974, 533, 3174.24, -3803.11, 273.95, 2.4308, 25, 25, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+181, 15974, 533, 3145.08, -3789.51, 273.949, 5.36505, 25, 25, 0, 0, 0, 0), -- Dread Creeper
-(@CGUID+182, 15974, 533, 3130.78, -3787.18, 273.943, 4.18695, 25, 25, 0, 0, 0, 0), -- Dread Creeper
+(@CGUID+158, 15974, 533, 3222.887939453125, -3793.636718750000, 274.030151367187500, 5.037112236022949218, 3600, 3600, 3, 0, 0, 1), -- Dread Creeper
+(@CGUID+159, 15974, 533, 3233.339111328125, -3798.622314453125, 273.921875000000000, 1.902543306350708007, 3600, 3600, 3, 0, 0, 1), -- Dread Creeper
+(@CGUID+160, 15974, 533, 3213.354248046875, -3803.715820312500, 274.034942626953125, 1.888780713081359863, 3600, 3600, 3, 0, 0, 1), -- Dread Creeper
+(@CGUID+161, 15974, 533, 3214.311767578125, -3794.026123046875, 274.034667968750000, 5.180711746215820312, 3600, 3600, 3, 0, 0, 1), -- Dread Creeper
+(@CGUID+162, 15974, 533, 3147.511474609375, -3784.048095703125, 273.940002441406250, 1.471575736999511718, 3600, 3600, 3, 0, 0, 1), -- Dread Creeper
+(@CGUID+163, 15974, 533, 3147.091552734375, -3776.596923828125, 273.939361572265625, 3.426468849182128906, 3600, 3600, 3, 0, 0, 1), -- Dread Creeper
+(@CGUID+164, 15974, 533, 3131.982666015625, -3786.307128906250, 273.933776855468750, 1.166608333587646484, 3600, 3600, 3, 0, 0, 1), -- Dread Creeper
+(@CGUID+165, 15974, 533, 3139.188720703125, -3789.750244140625, 273.939147949218750, 1.619171261787414550, 3600, 3600, 3, 0, 0, 1), -- Dread Creeper
+-- (@CGUID+166 - 182
 (@CGUID+183, 15975, 533, 3059.949, -3539.525, 287.1577, 6.021386, 3520, 3520, 3, 0, 0, 1), -- Carrion Spinner
 (@CGUID+184, 15975, 533, 3075.536, -3531.966, 287.1603, 5.986479, 3520, 3520, 3, 0, 0, 1), -- Carrion Spinner
 (@CGUID+185, 15975, 533, 3076.986, -3543.548, 287.1605, 6.021386, 3520, 3520, 3, 0, 0, 1), -- Carrion Spinner
@@ -1376,72 +1356,71 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+205, 15976, 533, 3186.85, -3653.02, 287.26, 2.48, 3520, 3520, 0, 0, 0, 0), -- Venom Stalker
 (@CGUID+206, 15976, 533, 3254.23, -3689.88, 286.82, 2.73, 3520, 3520, 0, 0, 0, 0), -- Venom Stalker
 (@CGUID+207, 15976, 533, 3220.66, -3727.5, 286.17, 5.56, 3520, 3520, 0, 0, 0, 0), -- Venom Stalker
-(@CGUID+208, 15977, 533, 3098.566, -3486.642, 287.1599, 5.811946, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+209, 15977, 533, 3131.474, -3494.231, 287.1504, 5.777040, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+210, 15977, 533, 3101.777, -3493.039, 287.1598, 5.829400, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+211, 15977, 533, 3107.021, -3487.885, 287.1584, 5.794493, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+212, 15977, 533, 3106.104, -3495.433, 287.1591, 5.829400, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+213, 15977, 533, 3112.024, -3489.449, 287.1578, 5.794493, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+214, 15977, 533, 3110.767, -3497.281, 287.1585, 5.829400, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+215, 15977, 533, 3116.012, -3498.698, 287.1593, 5.811946, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+216, 15977, 533, 3123.069, -3489.328, 287.1537, 5.777040, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+217, 15977, 533, 3123.978, -3496.283, 287.1547, 5.794493, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+218, 15977, 533, 3095.997, -3570.250, 287.1650, 6.108652, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+219, 15977, 533, 3107.898, -3562.923, 287.1628, 6.056293, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+220, 15977, 533, 3102.620, -3569.701, 287.1624, 6.091199, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+221, 15977, 533, 3095.397, -3580.164, 287.1652, 6.143559, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+222, 15977, 533, 3106.254, -3574.223, 287.1610, 6.108652, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+223, 15977, 533, 3102.285, -3580.110, 287.1612, 6.126106, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+224, 15977, 533, 3114.279, -3570.235, 287.1643, 6.091199, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+225, 15977, 533, 3109.648, -3584.535, 287.1620, 6.143559, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+226, 15977, 533, 3116.036, -3581.537, 287.1648, 6.126106, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+227, 15977, 533, 3097.775, -3560.323, 287.1650, 6.056293, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+228, 15977, 533, 3187.798, -3471.030, 287.1577, 4.311844, 3520, 3520, 0, 0, 0, 2), -- Poisonous Skitterer
-(@CGUID+229, 15977, 533, 3188.136, -3477.420, 287.1574, 5.128573, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+230, 15977, 533, 3187.197, -3484.212, 287.1584, 4.954122, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+231, 15977, 533, 3193.412, -3472.444, 287.1516, 3.954010, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+232, 15977, 533, 3193.483, -3477.563, 287.1515, 3.679136, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+233, 15977, 533, 3192.768, -3483.240, 287.1523, 4.912806, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+234, 15977, 533, 3195.058, -3477.695, 287.0673, 3.615518, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+235, 15977, 533, 3182.029, -3484.297, 287.1617, 3.112650, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+236, 15977, 533, 3181.970, -3470.768, 287.1642, 4.727794, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+237, 15977, 533, 3182.216, -3477.539, 287.1639, 5.441139, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+238, 15977, 533, 3384.41, -3687.79, 259.08, 1.86376, 3520, 3520, 0, 0, 0, 2), -- Poisonous Skitterer
-(@CGUID+239, 15977, 533, 3385.51, -3695.01, 259.077, 1.77501, 25, 25, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+240, 15977, 533, 3386.29, -3691.89, 259.078, 1.77501, 25, 25, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+241, 15977, 533, 3386.5, -3688.35, 259.078, 1.77501, 25, 25, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+242, 15977, 533, 3389.16, -3690.63, 259.075, 1.77501, 25, 25, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+243, 15977, 533, 3384.3, -3693.34, 259.078, 1.77501, 25, 25, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+244, 15977, 533, 3387.96, -3694.09, 259.076, 1.77501, 25, 25, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+245, 15977, 533, 3382.42, -3696.24, 259.08, 1.77501, 25, 25, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+246, 15977, 533, 3378.77, -3692.13, 259.081, 1.77501, 25, 25, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+247, 15977, 533, 3380.74, -3687.59, 259.081, 1.76873, 25, 25, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+248, 15977, 533, 3274.57, -3702.69, 280.1, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+249, 15977, 533, 3273.27, -3699.56, 280.639, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+250, 15977, 533, 3276.2, -3695.68, 280.195, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+251, 15977, 533, 3276.99, -3701.06, 278.638, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+252, 15977, 533, 3281.84, -3701.93, 276.436, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+253, 15977, 533, 3281.73, -3696.47, 278.567, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+254, 15977, 533, 3280.03, -3699.9, 278.042, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+255, 15977, 533, 3279.92, -3704.31, 276.803, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+256, 15977, 533, 3276.05, -3701.19, 279.173, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+257, 15977, 533, 3275.76, -3706.14, 278.677, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Poisonous Skitterer
-(@CGUID+258, 15977, 533, 3151.36, -3578.26, 284.089, 5.01007, 3520, 3520, 0, 0, 0, 2), -- Poisonous Skitterer
-(@CGUID+259, 15977, 533, 3158.52, -3584.62, 280.306, 4.84985, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+260, 15977, 533, 3153.02, -3584.27, 281.478, 4.84985, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+261, 15977, 533, 3153.91, -3578.73, 283.059, 4.84985, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+262, 15977, 533, 3151.64, -3580.62, 283.189, 4.84985, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+263, 15977, 533, 3154.72, -3579.15, 282.642, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+264, 15977, 533, 3157.14, -3582.89, 280.544, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+265, 15977, 533, 3156.44, -3579.35, 281.987, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+266, 15977, 533, 3152.07, -3583.19, 282.169, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
-(@CGUID+267, 15977, 533, 3154.64, -3582.76, 281.439, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Poisonous Skitterer
+(@CGUID+208, 15977, 533, 3098.566, -3486.642, 287.1599, 5.811946, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+209, 15977, 533, 3131.474, -3494.231, 287.1504, 5.777040, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+210, 15977, 533, 3101.777, -3493.039, 287.1598, 5.829400, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+211, 15977, 533, 3107.021, -3487.885, 287.1584, 5.794493, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+212, 15977, 533, 3106.104, -3495.433, 287.1591, 5.829400, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+213, 15977, 533, 3112.024, -3489.449, 287.1578, 5.794493, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+214, 15977, 533, 3110.767, -3497.281, 287.1585, 5.829400, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+215, 15977, 533, 3116.012, -3498.698, 287.1593, 5.811946, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+216, 15977, 533, 3123.069, -3489.328, 287.1537, 5.777040, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+217, 15977, 533, 3123.978, -3496.283, 287.1547, 5.794493, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+218, 15977, 533, 3095.997, -3570.250, 287.1650, 6.108652, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+219, 15977, 533, 3107.898, -3562.923, 287.1628, 6.056293, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+220, 15977, 533, 3102.620, -3569.701, 287.1624, 6.091199, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+221, 15977, 533, 3095.397, -3580.164, 287.1652, 6.143559, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+222, 15977, 533, 3106.254, -3574.223, 287.1610, 6.108652, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+223, 15977, 533, 3102.285, -3580.110, 287.1612, 6.126106, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+224, 15977, 533, 3114.279, -3570.235, 287.1643, 6.091199, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+225, 15977, 533, 3109.648, -3584.535, 287.1620, 6.143559, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+226, 15977, 533, 3116.036, -3581.537, 287.1648, 6.126106, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+227, 15977, 533, 3097.775, -3560.323, 287.1650, 6.056293, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+228, 15977, 533, 3187.798, -3471.030, 287.1577, 4.311844, 3520, 3520, 0, 0, 0, 2), -- Infectious Skitterer
+(@CGUID+229, 15977, 533, 3188.136, -3477.420, 287.1574, 5.128573, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+230, 15977, 533, 3187.197, -3484.212, 287.1584, 4.954122, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+231, 15977, 533, 3193.412, -3472.444, 287.1516, 3.954010, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+232, 15977, 533, 3193.483, -3477.563, 287.1515, 3.679136, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+233, 15977, 533, 3192.768, -3483.240, 287.1523, 4.912806, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+234, 15977, 533, 3195.058, -3477.695, 287.0673, 3.615518, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+235, 15977, 533, 3182.029, -3484.297, 287.1617, 3.112650, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+236, 15977, 533, 3181.970, -3470.768, 287.1642, 4.727794, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+237, 15977, 533, 3182.216, -3477.539, 287.1639, 5.441139, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+238, 15977, 533, 3384.41, -3687.79, 259.08, 1.86376, 3520, 3520, 0, 0, 0, 2), -- Infectious Skitterer
+(@CGUID+239, 15977, 533, 3385.51, -3695.01, 259.077, 1.77501, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+240, 15977, 533, 3386.29, -3691.89, 259.078, 1.77501, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+241, 15977, 533, 3386.5, -3688.35, 259.078, 1.77501, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+242, 15977, 533, 3389.16, -3690.63, 259.075, 1.77501, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+243, 15977, 533, 3384.3, -3693.34, 259.078, 1.77501, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+244, 15977, 533, 3387.96, -3694.09, 259.076, 1.77501, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+245, 15977, 533, 3382.42, -3696.24, 259.08, 1.77501, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+246, 15977, 533, 3378.77, -3692.13, 259.081, 1.77501, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+247, 15977, 533, 3380.74, -3687.59, 259.081, 1.76873, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+248, 15977, 533, 3274.57, -3702.69, 280.1, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+249, 15977, 533, 3273.27, -3699.56, 280.639, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+250, 15977, 533, 3276.2, -3695.68, 280.195, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+251, 15977, 533, 3276.99, -3701.06, 278.638, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+252, 15977, 533, 3281.84, -3701.93, 276.436, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+253, 15977, 533, 3281.73, -3696.47, 278.567, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+254, 15977, 533, 3280.03, -3699.9, 278.042, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+255, 15977, 533, 3279.92, -3704.31, 276.803, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+256, 15977, 533, 3276.05, -3701.19, 279.173, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+257, 15977, 533, 3275.76, -3706.14, 278.677, 2.29809, 3520, 3520, 3, 0, 0, 1), -- Infectious Skitterer
+(@CGUID+258, 15977, 533, 3151.36, -3578.26, 284.089, 5.01007, 3520, 3520, 0, 0, 0, 2), -- Infectious Skitterer
+(@CGUID+259, 15977, 533, 3158.52, -3584.62, 280.306, 4.84985, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+260, 15977, 533, 3153.02, -3584.27, 281.478, 4.84985, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+261, 15977, 533, 3153.91, -3578.73, 283.059, 4.84985, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+262, 15977, 533, 3151.64, -3580.62, 283.189, 4.84985, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+263, 15977, 533, 3154.72, -3579.15, 282.642, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+264, 15977, 533, 3157.14, -3582.89, 280.544, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+265, 15977, 533, 3156.44, -3579.35, 281.987, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+266, 15977, 533, 3152.07, -3583.19, 282.169, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
+(@CGUID+267, 15977, 533, 3154.64, -3582.76, 281.439, 5.28732, 3520, 3520, 0, 0, 0, 0), -- Infectious Skitterer
 (@CGUID+268, 15978, 533, 3191.487792968750, -3579.523437500000, 287.166870117187500, 3.926990747451782226, 3520, 3520, 0, 0, 0, 0), -- Crypt Reaver
 (@CGUID+269, 15978, 533, 3208.423095703125, -3595.834472656250, 287.172210693359375, 3.909537553787231445, 3520, 3520, 0, 0, 0, 0), -- Crypt Reaver
 (@CGUID+270, 15978, 533, 3149.306152343750, -3641.844238281250, 287.164520263671875, 0.872664630413055419, 3520, 3520, 0, 0, 0, 0), -- Crypt Reaver
 (@CGUID+271, 15978, 533, 3186.419433593750, -3650.817626953125, 287.160583496093750, 1.797689080238342285, 3520, 3520, 0, 0, 0, 0), -- Crypt Reaver
--- (@CGUID+272
-(@CGUID+273, 15979, 533, 3186.84, -3806.01, 273.951, 1.54722, 25, 25, 0, 0, 0, 0), -- Tomb Horror
+-- (@CGUID+272 - 273
 (@CGUID+274, 15979, 533, 3224.83, -3802.96, 274.032, 2.30383, 3600, 3600, 0, 0, 0, 0), -- Tomb Horror
 (@CGUID+275, 15979, 533, 3138.52, -3778.58, 274.032, 5.18363, 3600, 3600, 0, 0, 0, 0), -- Tomb Horror
 (@CGUID+276, 15980, 533, 3328.95, -3646.61, 259.081, 0.931593, 3250, 3250, 0, 0, 0, 0), -- Naxxramas Cultist
