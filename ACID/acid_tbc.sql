@@ -9504,19 +9504,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Timberstrider (17373) - NSR
 -- Greater Timberstrider (17374) - NSR
 -- Stillpine Captive (17375) - NSR
--- Stillpine Ancestor Akida
-('1737901','17379','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','3','0','16995','0','0','0','0','0','Stillpine Ancestor Akida - Cast Elemental Spawn-in and set correct modelid on Spawn'),
--- Stillpine Ancestor Coo
-('1739101','17391','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','3','0','16995','0','0','0','0','0','Stillpine Ancestor Coo - Cast Elemental Spawn-in ans set correct modelid on Spawn'),
--- Stillpine Ancestor Tikti
-('1739201','17392','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','0','0','0','0','0','0','0','0','Stillpine Ancestor Tikti - Cast Elemental Spawn-in on Spawn'),
--- Stillpine Ancestor Yor
-('1739301','17393','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','3','0','17002','0','0','0','0','0','Stillpine Ancestor Yor - Cast Elemental Spawn-in and set correct modelid on Spawn'),
+-- Stillpine Ancestor Akida 17379
+('1737901','17379','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','3','0','16995','0','53','19997','11','0','Stillpine Ancestor Akida - Cast Elemental Spawn-in and Set correct modelid and START_RELAY_SCRIPT on Spawn'),
+-- Stillpine Ancestor Coo 17391
+('1739101','17391','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','3','0','16995','0','53','19996','11','0','Stillpine Ancestor Coo - Cast Elemental Spawn-in ans Set correct modelid and START_RELAY_SCRIPT on Spawn'),
+-- Stillpine Ancestor Tikti 17392
+('1739201','17392','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','53','19995','11','0','0','0','0','0','Stillpine Ancestor Tikti - Cast Elemental Spawn-in and START_RELAY_SCRIPT on Spawn'),
+('1739202','17392','30','0','100','0','5','17392','0','0','0','0','11','30430','11','0','0','0','0','0','0','0','0','0','Stillpine Ancestor Tikti - Cast Embrace of the Serpent on Summoner on Receive AI Event Custom A'),
+-- Stillpine Ancestor Yor 17393
+('1739301','17393','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','3','0','17002','0','53','19994','11','0','Stillpine Ancestor Yor - Cast Elemental Spawn-in and set correct modelid and START_RELAY_SCRIPT on Spawn'),
+('1739302','17393','30','0','100','0','5','17393','0','0','0','0','11','30448','11','0','0','0','0','0','0','0','0','0','Stillpine Ancestor Yor - Cast Shadow of the Forest on Summoner on Receive AI Event Custom A'),
+('1739303','17393','30','0','100','0','6','17393','0','0','0','0','53','19993','11','0','0','0','0','0','0','0','0','0','Stillpine Ancestor Yor - START_RELAY_SCRIPT on Receive AI Event Custom B'),
 -- Stillpine Ancestor Vark
 ('1741001','17410','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','3','0','17109','0','0','0','0','0','Stillpine Ancestor Vark - Cast Elemental Spawn-in and set correct modelid on Spawn'),
 -- Vale Hunter (17425) - NSR
 -- Velaada (17431) - NSR
--- Stillpine Defender
+-- Stillpine Defender 17432
 ('1743201','17432','9','0','100','1025','0','5','7000','12000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Stillpine Defender - Cast Heroic Strike'),
 -- Susurrus (17435) - npc_susurrus
 -- Aspect of Air (17436) - NSR
