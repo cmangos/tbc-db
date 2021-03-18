@@ -295,7 +295,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14601, 0, 10, -7392.39, -983.383, 476.911, 3.53177, 0, 0),
 (14601, 0, 11, -7378.3, -977.789, 477.168, 3.53177, 0, 0),
 (14601, 0, 12, -7368.8, -983.092, 477.167, 2.40158, 0, 0),
-(14601, 0, 13, -7358.19, -994.32, 477.167, 3.72812, 0, 1460101);
+(14601, 0, 13, -7358.19, -994.32, 477.167, 3.72812, 10, 1460101);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+1, 0, 5, 1, 0, 0, 0, NULL); -- Lord Victor Nefarius

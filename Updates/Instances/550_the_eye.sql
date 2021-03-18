@@ -497,16 +497,16 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+173, 13, 617.546, 111.25, 45.619, 5.70748, 0, 0),
 (@CGUID+173, 14, 623.417, 107.439, 46.4887, 5.70748, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN(19514);
-INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
-(19514,0,1,383.0095,-0.892289,43.99946,0,0,100),
-(19514,0,2,370.5421,31.28668,43.80863,0,0,100),
-(19514,0,3,332.5465,45.77088,43.6697,0,0,100),
-(19514,0,4,294.3148,30.9292,43.8919,0,0,100),
-(19514,0,5,282.0638,-0.653615,43.91968,0,0,100),
-(19514,0,6,294.2132,-32.41557,43.61413,0,0,100),
-(19514,0,7,332.3423,-47.54061,43.69747,0,0,100),
-(19514,0,8,370.3282,-32.59526,44.08632,0,0,100);
+DELETE FROM creature_movement_template WHERE entry IN (19514);
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(19514, 0, 1, 370.328, -32.5953, 44.0863, 100, 0, 0),
+(19514, 0, 2, 383.009, -0.892289, 43.9995, 100, 0, 0),
+(19514, 0, 3, 370.542, 31.2867, 43.8086, 100, 0, 0),
+(19514, 0, 4, 332.547, 45.7709, 43.6697, 100, 0, 0),
+(19514, 0, 5, 294.315, 30.9292, 43.8919, 100, 0, 0),
+(19514, 0, 6, 282.064, -0.653615, 43.9197, 100, 0, 0),
+(19514, 0, 7, 294.213, -32.4156, 43.6141, 100, 0, 0),
+(19514, 0, 8, 332.342, -47.5406, 43.6975, 100, 0, 0);
 
 DELETE FROM creature_spawn_data WHERE guid IN(@CGUID+3);
 INSERT INTO creature_spawn_data(Guid,Id) VALUES
