@@ -1140,7 +1140,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (17848,0,8,2128.237,71.17936,64.4154,100,3000,1784801), -- You there, fetch water quickly! Get these flames out before they spread to the rest of the keep! Hurry, damn you!
 (17848,0,9,2125.521,89.0625,54.81591,100,0,0),
 (17848,0,10,2119.832,93.37251,52.56591,100,1,1784802), -- switch to path 1, run off
-(17848,1,1,2113.857,93.34234,52.59057,100,0,1784803), -- remove unattackable
+(17848,1,1,2113.857,93.34234,52.59057,100,1,1784803), -- remove unattackable
 (17848,1,2,2111.241,103.4289,52.56591,100,0,0),
 (17848,1,3,2109.172,113.1599,52.90283,100,0,0),
 (17848,1,4,2107.646,126.1786,52.56591,100,0,0),
