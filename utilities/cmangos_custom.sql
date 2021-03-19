@@ -99,6 +99,10 @@ UPDATE gameobject_template SET `faction`=1375 WHERE entry=179688; -- "Treasure" 
 -- SpellFocus radius reduced to 5 (sync with eff1 from spell:17016 that activates target there = 5y)
 UPDATE gameobject_template SET data1 = 5 WHERE entry BETWEEN 176094 AND 176097;
 
+-- Musty Tome 176150/176151
+-- must despawn after used (has that flag set up.. but with restock timer it will never happen)
+UPDATE gameobject_template SET data2=0 WHERE entry IN (176150,176151);
+
 -- Cannonball: set radius to zero so it is only triggered through spell
 UPDATE gameobject_template SET data2=0 WHERE entry=176211;
 
