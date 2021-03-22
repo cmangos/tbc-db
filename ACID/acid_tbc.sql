@@ -15872,7 +15872,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1994808','19948','6','0','100','0','10040','0','0','0','0','0','54','0','6','10029','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Say on Death if Killer Player has Completed Quest 11000'),
 ('1994809','19948','0','0','100','1025','9000','16000','25000','34000','0','0','11','37786','0','0','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Bloodmaul Rage'),
 ('1994810','19948','8','0','100','1025','37786','-1','0','0','0','0','54','0','0','10042','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Random Say on Bloodmaul Rage Spellhit'),
-('1994811','19948','13','0','100','1025','28000','33000','0','0','0','0','11','34802','1','0','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Kick'),
+('1994811','19948','0','0','100','1025','7000','14000','28000','33000','0','0','11','34802','1','2048','0','0','0','0','0','0','0','0','Bloodmaul Skirmisher - Cast Kick on Casting'),
 -- Bloodmaul Geomancer 19952
 ('1995201','19952','22','0','100','1','3','10040','0','0','0','0','54','-10479','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Text Emote on Receive TEXTEMOTE_ANGRY if Player has Completed Quest 11000'),
 ('1995202','19952','22','0','100','1','34','10040','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Bloodmaul Geomancer - Dance on Receive TEXTEMOTE_DANCE if Player has Completed Quest 11000'),
