@@ -3,7 +3,7 @@ UPDATE `creature` SET `position_x` = '1454.1995849609375', `position_y` = '-4701
 REPLACE INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 ('6501', '3204', '1', '0', '0', '1470.4882812500000', '-4706.10791015625', '2.220372200012207031', '0.820304751396179199', '300', '300', '2', '1'),
 ('6502', '3204', '1', '0', '0', '1497.5399169921875', '-4744.13720703125', '18.01207923889160156', '6.037305831909179687', '300', '300', '2', '1'),
-('6439', '3204', '1', '0', '0', '1465.78', '-4683.74', '6.62599', '5.71567', '300', '300', '2', '1'); -- wotlk-db "https://www.wowhead.com/npc=3204/gazzuz#screenshots:id=79639"
+('6503', '3204', '1', '0', '0', '1465.775390625', '-4683.74462890625', '6.625988483428955078', '5.715672969818115234', '300', '300', '2', '1'); -- wotlk-db "https://www.wowhead.com/npc=3204/gazzuz#screenshots:id=79639"
 
 REPLACE INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 ('1202', '1', 'Gazz\'uz (3204)'),
