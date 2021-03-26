@@ -19287,8 +19287,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1869503','18695','0','0','100','1025','9000','12000','14000','19000','0','0','11','38913','4','0','0','0','0','0','0','0','0','0','Ambassador Jerrikar - Cast Silence'),
 -- Kraator 18696
 ('1869601','18696','6','0','100','0','0','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Kraator - Remove Immolation on Death'),
-('1869602','18696','0','0','100','1025','5000','10000','20000','25000','0','0','11','39293','1','0','0','0','0','0','0','0','0','0','Kraator - Cast Conflagration'),
-('1869603','18696','0','0','100','1025','15000','15000','15000','30000','0','0','11','24670','1','2','0','0','0','0','0','0','0','0','Kraator - Cast Inferno'),
+('1869602','18696','0','0','100','1025','10000','20000','20000','25000','0','0','11','39293','1','0','0','0','0','0','0','0','0','0','Kraator - Cast Conflagration'),
+('1869603','18696','0','0','100','1025','15000','15000','15000','30000','0','0','11','24670','1','0','0','0','0','0','0','0','0','0','Kraator - Cast Inferno'),
 -- Brubeck Stormfoot
 ('1893901','18939','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','-549','0','0','0','0','0','0','Brubeck Stormfoot - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- Drek'Gol
@@ -19887,8 +19887,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Felfire Summoner 22121 - NullAI
 -- Shadowmoon Eye of Kilrogg 22134
 ('2213401','22134','0','0','100','0','1','1','0','0','0','0','25','0','0','0','54','-10018','0','0','41','7000','0','0','Shadowmoon Eye of Kilrogg - Flee and Text Emote and Delayed Despawn on Aggro'),
--- Dark Conclave Ritualist
-('2213801','22138','1','0','75','1','1000','1000','48000','55000','0','0','11','38469','0','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Dark Conclave Ritualist Channel OOC'),
+-- Dark Conclave Ritualist 22138
+('2213801','22138','11','0','100','0','0','0','0','0','0','0','11','38469','15','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Cast Dark Conclave Ritualist Channel OOC'),
+('2213802','22138','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Interrupt Channelling on Aggro'),
 -- Harbinger Saronen 22214
 -- Dragonmaw Peon (22252) - npc_dragonmaw_peon
 -- Dragonmaw Ascendant
