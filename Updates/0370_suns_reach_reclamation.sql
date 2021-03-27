@@ -4,55 +4,55 @@ UPDATE quest_template SET ReqItemId1=0,ReqItemCount1=0 WHERE entry IN(11542,1154
 INSERT INTO creature_template_addon(entry,auras) VALUES
 (24917,'35319 44855');
 
-DELETE FROM gossip_menu WHERE entry IN(9060,9303,9304,9305,9306,9307,9293,9052,9065,9063,9064,9127,9111,9087,9050,9115) AND condition_id > 0;
+DELETE FROM gossip_menu WHERE entry IN(9046,9307,51000,51001,51002,51003,51004,51005,51006,51007,51008,51009,51010,51011,51012,51013) AND condition_id > 0;
 REPLACE INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 -- 24932 - Exarch Nasuun
 (9046,12226,0,10304), -- portal progress
 -- ask about progress
-(9303,12300,0,10302), -- armory progress
-(9304,12301,0,10308), -- anvil progress
-(9305,12302,0,10306), -- harbor progress
-(9306,12303,0,10313), -- alchemy lab progress
+(51000,12300,0,10302), -- armory progress
+(51001,12301,0,10308), -- anvil progress
+(51002,12302,0,10306), -- harbor progress
+(51003,12303,0,10313), -- alchemy lab progress
 (9307,12304,0,10316), -- gate progress
 (9307,12305,0,10317), -- gate progress
 (9307,12306,0,10318), -- gate progress
 -- 25632 - Vindicator Moorba
-(9293,12602,0,10316), -- gate progress
-(9293,12603,0,10317), -- gate progress
-(9293,12605,0,10318), -- gate progress
+(51004,12602,0,10316), -- gate progress
+(51004,12603,0,10317), -- gate progress
+(51004,12605,0,10318), -- gate progress
 -- 24965 - Vindicator Xayann
-(9052,12240,0,10301), -- sanctum progress
+(51005,12240,0,10301), -- sanctum progress
 -- 24967 - Captain Theris Dawnheart
-(9065,12260,0,10301), -- sanctum progress
+(51006,12260,0,10301), -- sanctum progress
 -- 25061 - Harbinger Inuuro
-(9063,12255,0,10302), -- armory progress
+(51007,12255,0,10302), -- armory progress
 -- 25057 - Battlemage Arynna
-(9064,12257,0,10302), -- armory progress
+(51008,12257,0,10302), -- armory progress
 -- 25069 - Magister Ilastar
-(9127,12339,0,10306), -- harbor progress
+(51009,12339,0,10306), -- harbor progress
 -- 25108 - Vindicator Kaalan
-(9111,12319,0,10306), -- harbor progress
+(51010,12319,0,10306), -- harbor progress
 -- 25046 - Smith Hauthaa
-(9087,12285,0,10308), -- anvil progress
+(51011,12285,0,10308), -- anvil progress
 -- 24975 - Mar'nah
-(9050,12238,0,10313), -- alchemy lab progress
+(51012,12238,0,10313), -- alchemy lab progress
 -- 25112 - Anchorite Ayuri
-(9115,12322,0,10311); -- monument progress
+(51013,12322,0,10311); -- monument progress
 
-DELETE FROM gossip_menu_option WHERE menu_id IN(9303,9304,9305,9306,9307);
+DELETE FROM gossip_menu_option WHERE menu_id IN(51000,51001,51002,51003,9307);
 INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
-('9303', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
-('9304', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
-('9305', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
-('9306', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
+('51000', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
+('51001', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
+('51002', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
+('51003', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0'),
 ('9307', '0', '0', 'I have something else to ask you about.', '24226', '1', '1', '9046', '0', '0', '0', '0', '', '0', '0');
 
 DELETE FROM gossip_menu_option WHERE menu_id IN(9046) AND id IN(0,1,2,3);
 INSERT INTO gossip_menu_option(menu_id,id,option_text,option_broadcast_text,option_id,npc_option_npcflag,action_menu_id,condition_id) VALUES
-(9046,0,'',24222,1,1,9303,10302),
-(9046,1,'',24224,1,1,9305,10308),
-(9046,2,'',24227,1,1,9304,10306),
-(9046,3,'',24229,1,1,9306,10313);
+(9046,0,'',24222,1,1,51000,10302),
+(9046,1,'',24224,1,1,51002,10308),
+(9046,2,'',24227,1,1,51001,10306),
+(9046,3,'',24229,1,1,51003,10313);
 
 DELETE FROM npc_text WHERE id IN (12255,12257,12339,12319,12226,12260,12300,12301,12302,12303,12238,12240,12285,12322,12604,12304,12305);
 DELETE FROM npc_text_broadcast_text WHERE Id IN(12255,12257,12339,12319,12226,12260,12300,12301,12302,12303,12238,12240,12285,12322);
