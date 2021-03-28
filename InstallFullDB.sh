@@ -7,7 +7,8 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE="TBCDB_1.8.0_VengeanceStrikesBack.sql"
+FULLDB_FILE_ZIP="TBCDB_1.8.0_VengeanceStrikesBack.sql.gz"
+FULLDB_FILE=${FULLDB_FILE_ZIP%.gz}
 DB_TITLE="v1.8 'Vengeance Strikes Back'"
 NEXT_MILESTONES="0.12.4 0.13"
 
@@ -122,6 +123,15 @@ fi
 
 ## Full Database
 echo "> Processing TBC database $DB_TITLE ..."
+echo "  - Unziping $FULLDB_FILE_ZIP"
+gzip -kdf "${ADDITIONAL_PATH}Full_DB/$FULLDB_FILE_ZIP"
+if [[ $? != 0 ]]
+then
+  echo "ERROR: cannot unzip ${ADDITIONAL_PATH}Full_DB/$FULLDB_FILE_ZIP"
+  echo "GZIP 1.6 or greater should be installed"
+  exit 1
+fi
+echo "  - Applying $FULLDB_FILE"
 $MYSQL_COMMAND < "${ADDITIONAL_PATH}Full_DB/$FULLDB_FILE"
 if [[ $? != 0 ]]
 then
