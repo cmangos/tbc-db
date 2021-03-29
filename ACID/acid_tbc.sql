@@ -29131,7 +29131,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2537103','25371','14','0','100','1025','50000','100','4000','5000','15000','17000','11','46563','12','0','0','0','0','0','0','0','0','0','Sunblade Dawn Priest - Cast Renew on Friendly Missing HP'),
 -- Sunblade Scout 25372 - npc_sunblade_scout
 -- Shadowsword Soulbinder 25373 - CoE only on Tank when everyone else is dead, 2537301 unconfirmed
-('2537101','25371','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Sunblade Dawn Priest - Interrupt Channelling on Aggro'),
+('2537301','25373','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Interrupt Channelling on Aggro'),
 ('2537302','25373','4','0','66','32','0','0','0','0','0','0','11','46229','15','0','11','46241','15','0','0','0','0','0','Shadowsword Soulbinder - Random Cast Summon Blazing Infernal or Summon Felguard Slayer on Aggro'),
 ('2537303','25373','0','0','100','1025','17000','27000','15000','25000','0','0','11','46427','17','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Domination'),
 ('2537304','25373','0','0','100','1025','9000','14000','9000','25000','0','0','11','46434','4','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Curse of Exhaustion'),
