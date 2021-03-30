@@ -29132,11 +29132,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunblade Scout 25372 - npc_sunblade_scout
 -- Shadowsword Soulbinder 25373 - CoE only on Tank when everyone else is dead, 2537301 unconfirmed
 ('2537301','25373','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Interrupt Channelling on Aggro'),
-('2537302','25373','4','0','66','32','0','0','0','0','0','0','11','46229','15','0','11','46241','15','0','0','0','0','0','Shadowsword Soulbinder - Random Cast Summon Blazing Infernal or Summon Felguard Slayer on Aggro'),
-('2537303','25373','0','0','100','1025','17000','27000','15000','25000','0','0','11','46427','17','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Domination'),
-('2537304','25373','0','0','100','1025','9000','14000','9000','25000','0','0','11','46434','4','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Curse of Exhaustion'),
-('2537305','25373','0','0','100','1025','9000','15000','12000','19000','0','0','11','46442','1','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Flash of Darkness'),
-('2537306','25373','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Despawn Guardians on Evade'),
+('2537302','25373','0','0','100','1025','17000','27000','15000','25000','0','0','11','46427','17','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Domination'),
+('2537303','25373','0','0','100','1025','9000','14000','9000','25000','0','0','11','46434','4','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Curse of Exhaustion'),
+('2537304','25373','0','0','100','1025','9000','15000','12000','19000','0','0','11','46442','1','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Cast Flash of Darkness'),
+('2537305','25373','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Despawn Guardians on Evade'),
 -- Shadowsword Manafiend 25483
 ('2548301','25483','1','0','100','0','0','0','0','0','0','0','17','23','0','0','11','46744','0','34','22','1','0','0','Shadowsword Manafiend - Set Mana to 0 and Cast Chilling Touch and Set Phase 1 OOC'),
 ('2548302','25483','3','5','100','1025','100','50','1000','1000','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Shadowsword Manafiend - Set Phase 2 at 50% Mana (Phase 1)'),
