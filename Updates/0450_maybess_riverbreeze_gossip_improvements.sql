@@ -3,7 +3,7 @@ INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 ('2207', '2842', '0', '0'),
 ('2207', '2843', '0', '4'),
 ('2207', '2849', '0', '6'),
-(2361,3047,0,0);
+('2361', '3047', '0', '0');
 DELETE FROM dbscripts_on_gossip WHERE id IN(2208) AND command IN(0);
 INSERT INTO dbscripts_on_gossip VALUES
 ('2208', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2000002000', '0', '0', '0', '0', '0', '0', '0', '0', 'Say on cenarion beacon');
@@ -13,6 +13,5 @@ INSERT INTO dbscript_string(entry,content_default,broadcast_text_id) VALUES
 DELETE FROM gossip_menu_option WHERE menu_id IN(20022,2207);
 INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
 ('2207', '0', '0', 'I need a Cenarion beacon.', '5243', '1', '1', '-1', '0', '2208', '0', '0', NULL, '0', '132'),
-('2207', '0', '0', 'What plants are in Felwood that might be corrupted?', '5384', '1', '1', '2361', '0', '0', '0', '0', NULL, '0', '0');
-
+('2207', '1', '0', 'What plants are in Felwood that might be corrupted?', '5384', '1', '1', '2361', '0', '0', '0', '0', NULL, '0', '0');
 
