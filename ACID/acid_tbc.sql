@@ -29216,7 +29216,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dark Fiend 25744 - npc_dark_fiend
 -- M'uru Portal Target 25770 - npc_portal_target
 -- Void Sentinel 25772
-('2577201','25772','0','0','100','1025','15000','21000','14000','18000','0','0','11','46161','4','0','0','0','0','0','0','0','0','0','Void Sentinel - Cast Void Blase'),
+('2577201','25772','0','0','100','1025','15000','21000','14000','18000','0','0','11','46161','1','0','0','0','0','0','0','0','0','0','Void Sentinel - Cast Void Blast'),
 ('2577202','25772','6','0','100','0','0','0','0','0','0','0','11','46071','0','2','11','46071','0','2','11','46071','0','2','Void Sentinel - Cast Summon Void Spawn (three times) on Death'),
 ('2577203','25772','6','0','100','0','0','0','0','0','0','0','11','46071','0','2','11','46071','0','2','11','46071','0','2','Void Sentinel - Cast Summon Void Spawn (three times) on Death'),
 ('2577204','25772','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','46086','15','0','0','0','0','0','Void Sentinel - React passive on spawn And Cast Shadow Pulse Periodic'),
