@@ -15,7 +15,7 @@ REPLACE INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 DELETE FROM `creature_movement` WHERE (`id` = '15083');
 
 -- Move creatures which "block" classic-db :-I
-DELETE FROM `creature` WHERE `id` IN (23969,17092,17108)
+DELETE FROM `creature` WHERE `id` IN (23969,17092,17108);
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 (191361, 23969, 1, 1, 0, 0, -2591.74, -4873.2, 115.305, 0.656329, 360, 360, 0, 0, 0, 0, 0, 0),
 (191362, 23969, 1, 1, 0, 0, -2767.78, -4755.88, 51.1353, 1.79542, 360, 360, 0, 0, 0, 0, 0, 0),
@@ -30,6 +30,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_
 (191371, 17108, 0, 1, 0, 0, -344.927, -692.467, 57.8126, 1.65806, 300, 300, 0, 0, 0, 0, 0, 0);
 
 DELETE FROM `creature_addon` WHERE `guid` IN (15576,15577,15702,15703,15705);
+DELETE FROM `creature_addon` WHERE `guid` IN (SELECT `guid` FROM `creature` WHERE `id` = 17108);
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (191367, 0, 0, 1, 16, 0, 0, NULL),
 (191368, 0, 0, 1, 16, 173, 0, NULL),
