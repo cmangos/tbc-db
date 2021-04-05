@@ -509,6 +509,31 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 -- Gauntlet Imp Trigger
 (@CGUID+342, 1, 1697.917, 502.315, 86.48821, 1.658063, 10000, 2584801);
 
+-- scripted creature pathing
+INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(@CGUID+365,0,1713.7263,611.27783,28.296024,0,0,100),
+(@CGUID+365,1,1715.9276,617.83716,28.17087,0,0,100),
+(@CGUID+365,2,1718.1289,624.3965,28.045715,0,0,100),
+(@CGUID+365,3,1723.832,631.7539,28.05021,0,0,100),
+(@CGUID+365,4,1736.3258,637.7228,28.05021,0,0,100),
+(@CGUID+365,5,1736.3258,637.7228,28.05021,0,0,100);
+
+INSERT INTO `creature_movement_template` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(@CGUID+366,0,1686.1779,643.455,28.101889,0,0,100),
+(@CGUID+366,1,1689.5283,644.9798,28.043715,0,0,100),
+(@CGUID+366,2,1692.8788,646.5046,27.98554,0,0,100),
+(@CGUID+366,3,1700.1989,648.5011,28.17734,0,0,100),
+(@CGUID+366,4,1716.915,661.78375,28.050205,0,0,100),
+(@CGUID+366,5,1716.915,661.78375,28.050205,0,0,100);
+
+INSERT INTO `creature_movement_template` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(@CGUID+367,0,1734.2021,640.0855,32.966877,0,0,100),
+(@CGUID+367,1,1734.3353,640.16486,47.550198,0,0,100);
+
+INSERT INTO `creature_movement_template` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(@CGUID+368,0,1718.9419,659.2981,32.02243,0,0,100),
+(@CGUID+368,1,1719.1102,659.39856,48.716896,0,0,100);
+
 DELETE FROM `creature_movement_template` WHERE `entry` IN (25485,25502,25319); -- nonstatic spawns
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 -- Pathing for Anchorite Elbadon Entry: 25639
