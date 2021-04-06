@@ -516,7 +516,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+365,3,1718.1289,624.3965,28.045715,0,0,100),
 (@CGUID+365,4,1723.832,631.7539,28.05021,0,0,100),
 (@CGUID+365,5,1736.3258,637.7228,28.05021,0,0,100),
-(@CGUID+365,6,1736.3258,637.7228,28.05021,1000,0,100);
+(@CGUID+365,6,1736.3258,637.7228,28.05021,300000,0,100);
 
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (@CGUID+366,1,1686.1779,643.455,28.101889,0,0,100),
@@ -524,7 +524,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+366,3,1692.8788,646.5046,27.98554,0,0,100),
 (@CGUID+366,4,1700.1989,648.5011,28.17734,0,0,100),
 (@CGUID+366,5,1716.915,661.78375,28.050205,0,0,100),
-(@CGUID+366,6,1716.915,661.78375,28.050205,1000,0,100);
+(@CGUID+366,6,1716.915,661.78375,28.050205,300000,0,100);
 
 INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (@CGUID+367,1,1734.2021,640.0855,32.966877,0,0,100),
@@ -1403,10 +1403,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+363, 25508, 580, 0, 1655.103, 695.9481, 53.93951, 3.719032, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Guardian
 (@CGUID+364, 25508, 580, 0, 1659.125, 563.5895, 33.32103, 2.690366, 7200, 7200, 0, 0, 0, 2), -- Shadowsword Guardian
 -- outro spawns - ordered in the order they spawn
-(@CGUID+365, 26289, 580, 0, 1690.747, 645.5344, 28.02255, 0.4270831, 7200, 7200, 0, 0, 0, 0), -- Shattered Sun Riftwaker
-(@CGUID+366, 26289, 580, 0, 1716.353, 619.1049, 28.14668, 1.247009, 7200, 7200, 0, 0, 0, 0), -- Shattered Sun Riftwaker
-(@CGUID+367, 26251, 580, 0, 1719.097, 659.4465, 28.88354, 3.787364, 7200, 7200, 0, 0, 0, 0), -- Shattrath Portal Dummy
-(@CGUID+368, 26251, 580, 0, 1734.193, 640.066, 29.05021, 3.665191, 7200, 7200, 0, 0, 0, 0), -- Shattrath Portal Dummy
+(@CGUID+365, 26289, 580, 0, 1716.353, 619.1049, 28.14668, 1.247009, 7200, 7200, 0, 0, 0, 0), -- Shattered Sun Riftwaker
+(@CGUID+366, 26289, 580, 0, 1690.747, 645.5344, 28.02255, 0.4270831, 7200, 7200, 0, 0, 0, 0), -- Shattered Sun Riftwaker
+(@CGUID+367, 26251, 580, 0, 1734.193, 640.066, 29.05021, 3.665191, 7200, 7200, 0, 0, 0, 0), -- Shattrath Portal Dummy
+(@CGUID+368, 26251, 580, 0, 1719.097, 659.4465, 28.88354, 3.787364, 7200, 7200, 0, 0, 0, 0), -- Shattrath Portal Dummy
 (@CGUID+369, 26254, 580, 0, 1725.469, 650.9396, 30.31409, 3.787364, 7200, 7200, 0, 0, 0, 0), -- Inert Portal
 -- first formation
 (@CGUID+370, 26259, 580, 0, 1722.608, 640.4696, 28.13354, 3.543018, 7200, 7200, 0, 0, 0, 0), -- Shattered Sun Soldier - leader
