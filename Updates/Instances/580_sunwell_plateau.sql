@@ -545,7 +545,7 @@ INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,
 (26246,1,2,1718.538,645.8152,28.13354,0,0,100),
 (26246,1,3,1715.349,643.1483,28.50982,0,0,100),
 (26246,1,4,1710.397,639.1443,27.33064,0,0,100),
-(26246,1,5,1710.397,639.1443,27.33064,1000,0,100);
+(26246,1,5,1710.397,639.1443,27.33064,300000,0,100);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (25485,25502,25319); -- nonstatic spawns
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
