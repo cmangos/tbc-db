@@ -1,7 +1,6 @@
 
 DELETE FROM `gameobject` WHERE `id`='154357' AND `guid` NOT IN (89482,89481);
-DELETE FROM `pool_template` WHERE (`entry` = '1174'); -- delete old pool
-DELETE FROM `pool_gameobject_template` WHERE (`id` = '154357');
+UPDATE `pool_template` SET `max_limit`='2' WHERE (`entry` = '1174');
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (55731, 154357, 0, -9386.95703125, -2175.243408203125, 41.999664306640625, 3.52557229995727539, 0, 0, -0.98162651062011718, 0.190812408924102783, 2, 5, 255, 1), -- 55734
@@ -15,23 +14,4 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (5818, 154357, 0, -9360.5361328125, -2372.207763671875, 40.86644363403320312, 2.478367090225219726, 0, 0, 0.94551849365234375, 0.325568377971649169, 2, 5, 255, 1), -- 55741
 (31121, 154357, 0, -9324.1044921875, -1986.685546875, 43.58144378662109375, 5.95157480239868164, 0, 0, -0.16504669189453125, 0.986285746097564697, 2, 5, 255, 1), -- 55742
 (55733, 154357, 0, -9360.1650390625, -2243.552001953125, 45.4953765869140625, 5.637413978576660156, 0, 0, -0.31730461120605468, 0.948323667049407958, 2, 5, 255, 1); -- 55743
-
-REPLACE INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-('29931', '1', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 1'),
-('29932', '1', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 2');
-
-REPLACE INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-('55731', '29931', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 1'),
-('55730', '29931', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 1'),
-('55732', '29931', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 1'),
-('55729', '29931', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 1'),
-('20836', '29931', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 1'),
-('89481', '29931', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 1'),
-
-('89482', '29932', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 2'),
-('89483', '29932', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 2'),
-('89484', '29932', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 2'),
-('5818', '29932', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 2'),
-('31121', '29932', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 2'),
-('55733', '29932', '0', 'Redridge Mountains - Lake Everstill - Glinting Mud (154357) - Group 2');
 
