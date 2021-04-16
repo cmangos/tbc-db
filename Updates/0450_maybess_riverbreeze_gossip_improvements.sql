@@ -1,3 +1,5 @@
+-- Assign correct gossip_menu for Maybess Riverbreeze <Emerald Circle> 9529
+UPDATE `creature_template` SET `GossipMenuId` = 2207 WHERE `entry` = 9529; -- old 20022
 DELETE FROM gossip_menu WHERE entry IN(20022,2207,2361);
 INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 ('2207', '2842', '0', '0'),
