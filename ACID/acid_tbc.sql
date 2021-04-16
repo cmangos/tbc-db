@@ -29211,7 +29211,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sinister Reflection (25708) - REQUIRES C++ SCRIPTING (PART OF BOSS EVENT)
 -- Armageddon Target 25735
 ('2573501','25735','11','0','100','0','0','0','0','0','0','0','11','45911','0','0','0','0','0','0','0','0','0','0','Armageddon Target - Cast Armageddon on Spawn'),
-('2573502','25735','1','0','100','0','8000','8000','0','0','0','0','11','45909','0','0','0','0','0','0','0','0','0','0','Armageddon Target - Cast Armageddon on OOC Timer'),
 -- M'uru (25741) - boss_muru
 -- Dark Fiend 25744 - npc_dark_fiend
 -- M'uru Portal Target 25770 - npc_portal_target
