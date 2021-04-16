@@ -20,8 +20,8 @@ DELETE FROM gossip_menu WHERE entry IN(6029,7182);
 INSERT INTO gossip_menu(entry,text_id) VALUES
 (6029,7182);
 DELETE FROM `gossip_menu_option` WHERE `menu_id` IN (6029,7182);
-INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `box_broadcast_text`, `condition_id`, `promo_code_group_id`) VALUES
-(6029, 0, 0, '<Administer the restorative draught.>', 0, 1, 1, 7179, 0, 0, 0, 0, NULL, 0, 445, 0);
+INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`, `option_broadcast_text`, `option_id`, `npc_option_npcflag`, `action_menu_id`, `action_poi_id`, `action_script_id`, `box_coded`, `box_money`, `box_text`, `box_broadcast_text`, `condition_id`) VALUES
+(6029, 0, 0, '<Administer the restorative draught.>', 0, 1, 1, 7179, 0, 0, 0, 0, NULL, 0, 445);
 
 -- tbc+
 DELETE FROM gameobject WHERE guid IN(150001) AND id IN(182066);
