@@ -1,6 +1,7 @@
 
 DELETE FROM `creature` WHERE `guid` IN ('20264', '20327', '20328', '20323');
 DELETE FROM `creature_movement` WHERE `id` IN ('20327', '20328', '20323');
+DELETE FROM `creature_addon` WHERE `guid` IN ('20264', '20327', '20328', '20323');
 
 -- not identical see diff below
 REPLACE INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
