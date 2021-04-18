@@ -29191,8 +29191,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2559703','25597','0','0','100','1281','0','0','2000','2000','0','0','11','46279','1','256','0','0','0','0','0','0','0','0','Oblivion Mage - Cast Flame Buffet (Range Mode)'),
 ('2559704','25597','0','0','100','1537','0','0','5000','10000','0','0','11','46279','1','256','0','0','0','0','0','0','0','0','Oblivion Mage - Cast Flame Buffet (Melee Mode)'),
 -- Volatile Felfire Fiend 25598
-('2559801','25598','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Volatile Felfire Fiend - Zone Combat Pulse on Spawn'),
-('2559802','25598','6','0','100','0','0','0','0','0','0','0','11','45779','0','0','0','0','0','0','0','0','0','0','Volatile Felfire Fiend - Cast Felfire Fission on Death'),
+('2559801','25598','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Volatile Felfire Fiend - React passive on spawn'),
+('2559802','25598','29','0','100','0','2000','2000','0','0','0','0','50','2','0','0','38','0','0','0','0','0','0','0','Volatile Felfire Fiend - React Aggressive and Zone Combat Pulse on Timer'),
+('2559803','25598','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Volatile Felfire Fiend - Zone Combat Pulse on Spawn'),
+('2559804','25598','6','0','100','0','0','0','0','0','0','0','11','45779','0','0','0','0','0','0','0','0','0','0','Volatile Felfire Fiend - Cast Felfire Fission on Death'),
 -- Cataclysm Hound 25599
 ('2559901','25599','0','0','100','1024','10000','20000','10000','20000','0','0','11','47399','0','32','0','0','0','0','0','0','0','0','Cataclysm Hound - Cast Frenzy'),
 ('2559902','25599','0','0','100','1025','5000','15000','8000','16000','0','0','11','46292','4','512','0','0','0','0','0','0','0','0','Cataclysm Hound - Cast Cataclysm Breath'),
@@ -29210,7 +29212,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Brutallus Death Cloud 25703 - spell_dummy_npc_brutallus_cloud
 -- Sinister Reflection (25708) - REQUIRES C++ SCRIPTING (PART OF BOSS EVENT)
 -- Armageddon Target 25735
-('2573501','25735','11','0','100','0','0','0','0','0','0','0','11','45911','0','0','0','0','0','0','0','0','0','0','Armageddon Target - Cast Armageddon on Spawn'),
+('2573501','25735','11','0','100','0','0','0','0','0','0','0','11','45909','15','0','11','45911','15','0','0','0','0','0','Armageddon Target - Cast Armageddon on Spawn'),
 -- M'uru (25741) - boss_muru
 -- Dark Fiend 25744 - npc_dark_fiend
 -- M'uru Portal Target 25770 - npc_portal_target
