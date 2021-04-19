@@ -1149,6 +1149,16 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (16778, 533, 16064, 256, 0), -- Spirit of Korth'azz -> Thane Korth'azz
 (16803, 533, 16061, 7+16384, 0); -- Deathknight Understudy -> Instructor Razuvious
 
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+342, 16018), (@CGUID+342, 16029), -- Bile Retcher, Sludge Belcher
+(@CGUID+346, 16018), (@CGUID+346, 16029), -- Bile Retcher, Sludge Belcher
+(@CGUID+347, 16018), (@CGUID+347, 16029), -- Bile Retcher, Sludge Belcher
+(@CGUID+426, 16018), (@CGUID+426, 16029), -- Bile Retcher, Sludge Belcher
+(@CGUID+427, 16018), (@CGUID+427, 16029), -- Bile Retcher, Sludge Belcher
+(@CGUID+428, 16018), (@CGUID+428, 16029), -- Bile Retcher, Sludge Belcher
+(@CGUID+429, 16018), (@CGUID+429, 16029), -- Bile Retcher, Sludge Belcher
+(@CGUID+430, 16018), (@CGUID+430, 16029); -- Bile Retcher, Sludge Belcher
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 4075, 533, 2862.24, -3221.67, 274.281, 6.15288, 3600, 3600, 5, 0, 0, 1), -- Rat
 (@CGUID+2, 4075, 533, 2850.01, -3069.62, 273.745, 3.45795, 3600, 3600, 5, 0, 0, 1), -- Rat
@@ -1474,12 +1484,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+339, 16017, 533, 3159.19, -3270.79, 294.84, 3.97935, 3520, 3520, 0, 0, 0, 0), -- Patchwork Golem
 (@CGUID+340, 16017, 533, 3011.57, -3189.04, 294.146, 0.10472, 3520, 3520, 1, 0, 0, 1), -- Patchwork Golem
 (@CGUID+341, 16017, 533, 3023.06, -3187.8, 294.146, 3.05433, 3520, 3520, 1, 0, 0, 1), -- Patchwork Golem
-(@CGUID+342, 16018, 533, 3033.98, -3102.48, 294.063, 5.40988, 3520, 3520, 0, 0, 0, 2), -- Bile Retcher
+(@CGUID+342, 0, 533, 3033.98, -3102.48, 294.063, 5.40988, 3520, 3520, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+343, 16018, 533, 3110.31, -3333.07, 293.712, 5.49792, 3520, 3520, 0, 0, 0, 2), -- Bile Retcher
 (@CGUID+344, 16018, 533, 3096.72, -3292.51, 294.597, 5.60251, 3520, 3520, 0, 0, 0, 0), -- Bile Retcher
 (@CGUID+345, 16018, 533, 3149.04, -3345.12, 294.592, 2.46091, 3520, 3520, 0, 0, 0, 0), -- Bile Retcher
-(@CGUID+346, 16018, 533, 2999.21, -3144.77, 294.074, 5.82614, 3520, 3520, 0, 0, 0, 2), -- Bile Retcher
-(@CGUID+347, 16018, 533, 3124.71, -3120.88, 293.345, 3.18337, 3520, 3520, 0, 0, 0, 2), -- Bile Retcher
+(@CGUID+346, 0, 533, 2999.21, -3144.77, 294.074, 5.82614, 3520, 3520, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+347, 0, 533, 3124.71, -3120.88, 293.345, 3.18337, 3520, 3520, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+348, 16021, 533, 3000.666259765625, -3251.029785156250, 294.146118164062500, 0.663225114345550537, 7200, 7200, 0, 0, 0, 0), -- Living Monstrosity
 (@CGUID+349, 16020, 533, 3004.498291015625, -3250.782226562500, 294.146118164062500, 2.897246599197387695, 7200, 7200, 0, 0, 0, 0), -- Mad Scientist
 (@CGUID+350, 16020, 533, 2999.811767578125, -3246.632080078125, 294.146118164062500, 5.235987663269042968, 7200, 7200, 0, 0, 0, 0), -- Mad Scientist
@@ -1558,11 +1568,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+423, 16025, 533, 3331.97, -3300.31, 292.678, 2.84489, 3520, 3520, 0, 0, 0, 0), -- Stitched Spewer
 (@CGUID+424, 16025, 533, 3202.71, -3306.62, 292.678, 6.26573, 3520, 3520, 0, 0, 0, 0), -- Stitched Spewer
 (@CGUID+425, 16028, 533, 3308.46, -3232.08, 294.24, 3.01, 604800, 604800, 0, 0, 0, 2), -- Patchwerk
-(@CGUID+426, 16029, 533, 3086, -3070.58, 294.083, 5.02896, 3520, 3520, 0, 0, 0, 2), -- Sludge Belcher
-(@CGUID+427, 16029, 533, 3116.22, -3104.34, 294.069, 3.43068, 3520, 3520, 0, 0, 0, 2), -- Sludge Belcher
-(@CGUID+428, 16029, 533, 3165.05, -3325.43, 294.606, 0.942478, 3520, 3520, 0, 0, 0, 2), -- Sludge Belcher
-(@CGUID+429, 16029, 533, 3102.07, -3209.2, 294.146, 1.6057, 3520, 3520, 0, 0, 0, 2), -- Sludge Belcher
-(@CGUID+430, 16029, 533, 2990.63, -3227.04, 294.078, 5.82622, 3520, 3520, 0, 0, 0, 2), -- Sludge Belcher
+(@CGUID+426, 0, 533, 3086, -3070.58, 294.083, 5.02896, 3520, 3520, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+427, 0, 533, 3116.22, -3104.34, 294.069, 3.43068, 3520, 3520, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+428, 0, 533, 3165.05, -3325.43, 294.606, 0.942478, 3520, 3520, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+429, 0, 533, 3102.07, -3209.2, 294.146, 1.6057, 3520, 3520, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+430, 0, 533, 2990.63, -3227.04, 294.078, 5.82622, 3520, 3520, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+431, 16030, 533, 3318, -3335.55, 292.678, 1.18682, 3600, 3600, 0, 0, 0, 0), -- Maggot
 (@CGUID+432, 16030, 533, 3320.82, -3342.62, 292.678, 1.0472, 3600, 3600, 0, 0, 0, 0), -- Maggot
 (@CGUID+433, 16030, 533, 3315.06, -3348.81, 292.678, 3.05433, 3600, 3600, 0, 0, 0, 0), -- Maggot
