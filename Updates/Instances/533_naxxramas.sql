@@ -1168,7 +1168,16 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+427, 16018), (@CGUID+427, 16029), -- Bile Retcher, Sludge Belcher
 (@CGUID+428, 16018), (@CGUID+428, 16029), -- Bile Retcher, Sludge Belcher
 (@CGUID+429, 16018), (@CGUID+429, 16029), -- Bile Retcher, Sludge Belcher
-(@CGUID+430, 16018), (@CGUID+430, 16029); -- Bile Retcher, Sludge Belcher
+(@CGUID+430, 16018), (@CGUID+430, 16029), -- Bile Retcher, Sludge Belcher
+(@CGUID+1159, 16156), (@CGUID+1159, 16157), (@CGUID+1159, 16158),  -- Dark Touched Warrior, Doom Touched Warrior, Death Touched Warrior
+(@CGUID+1160, 16156), (@CGUID+1160, 16157), (@CGUID+1160, 16158),  -- Dark Touched Warrior, Doom Touched Warrior, Death Touched Warrior
+(@CGUID+1161, 16156), (@CGUID+1161, 16157), (@CGUID+1161, 16158),  -- Dark Touched Warrior, Doom Touched Warrior, Death Touched Warrior
+(@CGUID+1163, 16156), (@CGUID+1163, 16157), (@CGUID+1163, 16158),  -- Dark Touched Warrior, Doom Touched Warrior, Death Touched Warrior
+(@CGUID+1164, 16156), (@CGUID+1164, 16157), (@CGUID+1164, 16158),  -- Dark Touched Warrior, Doom Touched Warrior, Death Touched Warrior
+(@CGUID+1165, 16156), (@CGUID+1165, 16157), (@CGUID+1165, 16158),  -- Dark Touched Warrior, Doom Touched Warrior, Death Touched Warrior
+(@CGUID+1167, 16156), (@CGUID+1167, 16157), (@CGUID+1167, 16158),  -- Dark Touched Warrior, Doom Touched Warrior, Death Touched Warrior
+(@CGUID+1168, 16156), (@CGUID+1168, 16157), (@CGUID+1168, 16158),  -- Dark Touched Warrior, Doom Touched Warrior, Death Touched Warrior
+(@CGUID+1169, 16156), (@CGUID+1169, 16157), (@CGUID+1169, 16158);  -- Dark Touched Warrior, Doom Touched Warrior, Death Touched Warrior
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 4075, 533, 2862.24, -3221.67, 274.281, 6.15288, 3600, 3600, 5, 0, 0, 1), -- Rat
@@ -1834,23 +1843,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+678, 16165, 533, 2797.113769531250, -3392.165527343750, 267.768493652343750, 1.884955525398254394, 3520, 3520, 0, 0, 0, 0), -- Necro Knight
 (@CGUID+679, 16156, 533, 2887.81, -3315.24, 298.32, 2.19, 3520, 3520, 0, 0, 0, 0), -- Dark Touched Warrior
 (@CGUID+680, 16156, 533, 2872.29, -3210, 298.33, 0.97, 3520, 3520, 0, 0, 0, 0), -- Dark Touched Warrior
-(@CGUID+681, 16156, 533, 2847.91, -3113.41, 273.97, 4.76, 3520, 3520, 0, 0, 0, 0), -- Dark Touched Warrior
-(@CGUID+682, 16156, 533, 2795.27, -3159.02, 273.97, 4.47, 3520, 3520, 0, 0, 0, 0), -- Dark Touched Warrior
-(@CGUID+683, 16157, 533, 2792.61, -3170.52, 298.33, 0.96, 3520, 3520, 0, 0, 0, 0), -- Doom Touched Warrior
-(@CGUID+684, 16157, 533, 2807.78, -3146.75, 273.96, 1.25, 3520, 3520, 0, 0, 0, 0), -- Doom Touched Warrior
-(@CGUID+685, 16157, 533, 2818.17, -3142.82, 273.98, 2.7, 3520, 3520, 0, 0, 0, 0), -- Doom Touched Warrior
-(@CGUID+686, 16157, 533, 2813.48, -3133.52, 273.99, 4.25, 3520, 3520, 0, 0, 0, 0), -- Doom Touched Warrior
-(@CGUID+687, 16157, 533, 2837.26, -3121.87, 273.91, 6.16, 3520, 3520, 0, 0, 0, 0), -- Doom Touched Warrior
-(@CGUID+688, 16158, 533, 2888.83, -3308.23, 298.32, 3.84, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+689, 16158, 533, 2879.88, -3198.33, 298.33, 4.04, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+690, 16158, 533, 2809.91, -3172.91, 298.33, 5.88, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+691, 16158, 533, 2807.7, -3178.99, 298.33, 6.1, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+692, 16158, 533, 2799.42, -3159.93, 298.33, 3.85, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+693, 16158, 533, 2803.58, -3173.22, 273.97, 2.85, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+694, 16158, 533, 2790.82, -3182.31, 273.97, 1.38, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+695, 16158, 533, 2846.57, -3131.7, 273.99, 1.35, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+696, 16163, 533, 2793.06, -3169.94, 273.97, 6.16, 4224, 4224, 0, 0, 0, 0), -- Deathknight Cavalier
-(@CGUID+697, 16163, 533, 2810.07, -3140.06, 273.97, 6.1, 4224, 4224, 0, 0, 0, 0), -- Deathknight Cavalier
+(@CGUID+681, 16157, 533, 2792.61, -3170.52, 298.33, 0.96, 3520, 3520, 0, 0, 0, 0), -- Doom Touched Warrior
+(@CGUID+682, 16158, 533, 2888.83, -3308.23, 298.32, 3.84, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
+(@CGUID+683, 16158, 533, 2879.88, -3198.33, 298.33, 4.04, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
+(@CGUID+684, 16158, 533, 2809.91, -3172.91, 298.33, 5.88, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
+(@CGUID+685, 16158, 533, 2807.7, -3178.99, 298.33, 6.1, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
+(@CGUID+686, 16158, 533, 2799.42, -3159.93, 298.33, 3.85, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
+-- 687 - 697
 (@CGUID+698, 16163, 533, 2846.3574218750, -3158.352294921875, 273.912841796875000, 1.668867230415344238, 4224, 4224, 0, 0, 0, 2), -- Deathknight Cavalier
 (@CGUID+699, 16163, 533, 2842.3544921875, -3159.007812500000, 273.910919189453125, 1.695834755897521972, 4224, 4224, 0, 0, 0, 0), -- Deathknight Cavalier
 (@CGUID+700, 16163, 533, 2932.46, -3194.52, 273.55, 3.05, 4224, 4224, 0, 0, 0, 2), -- Deathknight Cavalier
@@ -2300,7 +2299,19 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1154, 16446, 533, 2806.552978515625, -2973.364746093750, 248.4248199462890625, 6.046481132507324218, 7200, 7200, 0, 0, 0, 0), -- Plagued Gargoyle
 (@CGUID+1155, 16446, 533, 2803.068359375000, -2968.684570312500, 246.6065673828125000, 4.007706642150878906, 7200, 7200, 0, 0, 0, 0), -- Plagued Gargoyle
 (@CGUID+1156, 16446, 533, 2536.435058593750, -3207.024658203125, 240.5500183105468750, 5.244814872741699218, 7200, 7200, 0, 0, 0, 0), -- Plagued Gargoyle
-(@CGUID+1157, 16446, 533, 2536.124023437500, -3205.715576171875, 240.5500183105468750, 0.057934690266847610, 7200, 7200, 0, 0, 0, 0); -- Plagued Gargoyle
+(@CGUID+1157, 16446, 533, 2536.124023437500, -3205.715576171875, 240.5500183105468750, 0.057934690266847610, 7200, 7200, 0, 0, 0, 0), -- Plagued Gargoyle
+(@CGUID+1158, 16163, 533, 2852.171142578125, -3139.29736328125, 273.88720703125, 3.124139308929443359, 7200, 7200, 0, 0, 0, 0), -- Deathknight Cavalier
+(@CGUID+1159, 16158, 533, 2847.039306640625, -3136.507080078125, 273.892791748046875, 6.091198921203613281, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+1160, 16158, 533, 2849.515625, -3144.970458984375, 273.875885009765625, 0.802851438522338867, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+1161, 16156, 533, 2853.455810546875, -3132.310546875, 273.88067626953125, 5.113814830780029296, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+1162, 16163, 533, 2805.091796875, -3140.47705078125, 273.851898193359375, 5.550147056579589843, 7200, 7200, 0, 0, 0, 0), -- Deathknight Cavalier
+(@CGUID+1163, 16157, 533, 2814.35107421875, -3141.518798828125, 273.882781982421875, 3.124139308929443359, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+1164, 16157, 533, 2800.921142578125, -3146.39892578125, 273.865020751953125, 1.518436431884765625, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+1165, 16157, 533, 2806.185791015625, -3131.4609375, 273.861968994140625, 4.660028934478759765, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+1166, 16163, 533, 2793.19921875, -3166.492431640625, 273.870361328125, 0.087266460061073303, 7200, 7200, 0, 0, 0, 0), -- Deathknight Cavalier
+(@CGUID+1167, 16158, 533, 2800.69482421875, -3165.990966796875, 273.870361328125, 3.281219005584716796, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+1168, 16157, 533, 2792.158935546875, -3173.482177734375, 273.870361328125, 1.954768776893615722, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+1169, 16156, 533, 2791.761962890625, -3159.798583984375, 273.870361328125, 5.131268024444580078, 7200, 7200, 0, 0, 0, 0); -- creature_spawn_entry
 
 -- ===========
 -- GAMEOBJECTS
