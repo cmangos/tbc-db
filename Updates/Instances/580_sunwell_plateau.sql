@@ -1025,7 +1025,6 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (25502, 580, 25315, 4112, 0), -- Shield Orb -> Kil'jaeden
 (25588, 580, 25588, 15, 0), -- Hand of the Deceiver -> Hand of the Deceiver
 (25598, 580, 25588, 4096, 0), -- Volatile Felfire Fiend -> Hand of the Deceiver
-(25603, 580, 25588, 4112, 0), -- Felfire Portal -> Hand of the Deceiver
 (25708, 580, 25315, 4112, 0), -- Sinister Reflection -> Kil'jaeden
 (25735, 580, 25315, 4112, 0), -- Armageddon Target -> Kil'jaeden
 (25744, 580, 25840, 4112, 0), -- Dark Fiend -> Entropius
