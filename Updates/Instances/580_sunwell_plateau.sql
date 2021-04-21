@@ -965,9 +965,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+321, @CGUID+322, 1165), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
 (@CGUID+322, @CGUID+311, 1165), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
 -- Shadowsword Group #3
-(@CGUID+308, @CGUID+311, 1165), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
-(@CGUID+309, @CGUID+311, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+310, @CGUID+311, 1165), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+308, @CGUID+311, 1167), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
+(@CGUID+309, @CGUID+311, 1167), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+310, @CGUID+311, 1167), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
 (@CGUID+311, @CGUID+319, 1165), -- Shadowsword Lifeshaper -> Shadowsword Assassin
 (@CGUID+319, @CGUID+320, 1165), -- Shadowsword Assassin -> Shadowsword Assassin
 -- Shadowsword Group #4
