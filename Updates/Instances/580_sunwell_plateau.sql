@@ -821,7 +821,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (25638, 0, 0, 1, 16, 0, 0, NULL), -- Captain Selana
 (25639, 0, 0, 1, 16, 0, 0, NULL), -- Anchorite Elbadon
 (25644, 0, 0, 1, 16, 0, 0, NULL), -- Neophyte Narama
-(25708, 0, 0, 1, 16, 0, 0, '42459'), -- Sinister Reflection
+(25708, 0, 0, 1, 16, 0, 0, NULL), -- Sinister Reflection
 (25744, 0, 0, 1, 0, 0, 0, '45769 45934'), -- Dark Fiend
 (25772, 0, 0, 1, 16, 0, 0, '45769 46086'), -- Void Sentinal
 (25798, 0, 0, 1, 16, 0, 0, '45769 42459'), -- Shadowsword Berserker
