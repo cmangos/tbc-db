@@ -1013,6 +1013,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+178, @CGUID+179, 1167), -- Apocalypse Guard -> Apocalypse Guard
 (@CGUID+163, @CGUID+168, 1167), -- Priestess of Torment -> Painbringer
 (@CGUID+183, @CGUID+168, 1167), -- Oblivion Mage -> Painbringer
+(@CGUID+353, @CGUID+355, 1167), -- Hand of the Deceiver -> Hand of the Deceiver
+(@CGUID+354, @CGUID+355, 1167), -- Hand of the Deceiver -> Hand of the Deceiver
 (@CGUID+226, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+227, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+228, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
@@ -1429,7 +1431,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+388, 26259, 580, 0, 1725.677, 642.4852, 28.13354, 3.438299, 7200, 7200, 0, 0, 0, 0), -- Shattered Sun Soldier
 (@CGUID+389, 26259, 580, 0, 1728.092, 637.1956, 28.13354, 3.159046, 7200, 7200, 0, 0, 0, 0), -- Shattered Sun Soldier
 -- leaders
-(@CGUID+390, 26246, 580, 0, 1717.803, 645.2012, 28.22018, 3.838117, 7200, 7200, 0, 0, 0, 0), -- Prophet Velen
+(@CGUID+390, 26246, 580, 0, 1721.7263, 648.4822, 27.757261, 3.838117, 7200, 7200, 0, 0, 0, 0), -- Prophet Velen
 (@CGUID+391, 26247, 580, 0, 1720.024, 643.2331, 28.13354, 3.769911, 7200, 7200, 0, 0, 0, 0), -- Lady Liadrin
 (@CGUID+392, 26262, 580, 0, 1698.946, 628.2066, 83.00361, 0.7679449, 7200, 7200, 0, 0, 0, 0); -- The Core of Entropius
 
