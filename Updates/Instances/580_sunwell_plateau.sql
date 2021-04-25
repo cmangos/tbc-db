@@ -1013,8 +1013,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+178, @CGUID+179, 1167), -- Apocalypse Guard -> Apocalypse Guard
 (@CGUID+163, @CGUID+168, 1167), -- Priestess of Torment -> Painbringer
 (@CGUID+183, @CGUID+168, 1167), -- Oblivion Mage -> Painbringer
-(@CGUID+353, @CGUID+355, 1167), -- Hand of the Deceiver -> Hand of the Deceiver
-(@CGUID+354, @CGUID+355, 1167), -- Hand of the Deceiver -> Hand of the Deceiver
+(@CGUID+353, @CGUID+355, 1027), -- Hand of the Deceiver -> Hand of the Deceiver
+(@CGUID+354, @CGUID+355, 1027), -- Hand of the Deceiver -> Hand of the Deceiver
 (@CGUID+226, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+227, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+228, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
