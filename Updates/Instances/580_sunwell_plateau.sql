@@ -828,7 +828,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (25799, 0, 0, 1, 16, 0, 0, '45769'), -- Shadowsword Fury Mage
 (25824, 0, 0, 1, 16, 0, 0, '45769'), -- Void Spawn
 (25837, 0, 0, 1, 16, 0, 0, '45769'), -- Shadowsword Commander
-(25851, 0, 0, 1, 16, 0, 0, '45769 46308'), -- Volatile Fiend
+(25851, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
 (25867, 0, 0, 1, 16, 0, 0, '45769'), -- Sunblade Dragonhawk
 (25948, 0, 0, 1, 16, 0, 0, '45769 31722'), -- Doomfire Shard
 (25953, 0, 0, 1, 16, 0, 0, NULL), -- Fel Crystal Spell Target
