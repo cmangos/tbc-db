@@ -4132,7 +4132,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Garel Redrock 16070
 -- Kwee Q. Peddlefeet 16075
 ('1607501','16075','22','0','100','1','58','0','0','0','0','0','11','27572','6','32','0','0','0','0','0','0','0','0','Kwee Q. Peddlefeet - Cast Smitten on Receive TEXTEMOTE_KISS'),
--- Spectral Stalker 16093
 -- Argent Recruiter 16241
 -- Argent Dawn Paladin 16395
 -- Argent Dawn Champion 16434
@@ -13170,7 +13169,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Orok Deathbane 16007
 -- Mokvar 16012
 -- Tharl Stonebleeder 16076
--- Spectral Stalker 16093
 -- Argent Scout 16255
 -- Argent Messenger 16359
 -- Argent Dawn Initiate 16384
@@ -24066,9 +24064,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ancient Equine Spirit 14566
 ('1456601','14566','11','0','100','0','0','0','0','0','0','0','1','-1462','0','0','0','0','0','0','0','0','0','0','Ancient Equine Spirit - Emote on Spawn'),
 -- Revanchion 14690
--- Spectral Stalker (16093) - NSR
 -- Falrin Treeshaper 16032
--- Spectral Stalker 16093
 -- Isalien
 ('1609701','16097','11','0','100','0','0','0','0','0','0','0','1','-1525','0','0','0','0','0','0','0','0','0','0','Isalien - Yell on Spawn'),
 ('1609702','16097','0','0','100','1024','10000','10000','0','0','0','0','11','27639','0','0','0','0','0','0','0','0','0','0','Isalien - Call Pet after 10 secs in fight'),
@@ -30700,6 +30696,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1572002','15720','14','0','100','1025','1000','40','8000','10000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Healing Wave on Friendly Missing HP'),
 ('1572003','15720','0','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Chain Lightning'),
 -- Tranquil Air Totem 15803 - TotemAI
+-- Spectral Stalker 16093
+('1609301','16093','29','0','100','0','5000','5000','0','0','0','0','19','768','0','0','0','0','0','0','0','0','0','0','Spectral Stalker - Remove UnitFlags on Generic Timer'),
 -- Totem of Wrath 17539 - TotemAI
 -- Tainted Earthgrab Totem 18176 - TotemAI
 -- Tainted Stoneskin Totem 18177 - TotemAI
