@@ -754,31 +754,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+204, 0, 3, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
 (@CGUID+205, 0, 3, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
 (@CGUID+206, 0, 3, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+219, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+220, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+221, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+222, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+223, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+224, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+225, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+226, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+227, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+228, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+229, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+230, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+231, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+232, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+233, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+234, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+235, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+236, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+237, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+238, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+239, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+240, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+241, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+242, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(@CGUID+243, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
 (@CGUID+327, 0, 1, 1, 16, 0, 0, '45769 46744'), -- Shadowsword Manafiend
 (@CGUID+328, 0, 1, 1, 16, 0, 0, '45769 16380'), -- Shadowsword Assassin
 (@CGUID+331, 0, 1, 1, 16, 0, 0, '45769'); -- Shadowsword Lifeshaper
