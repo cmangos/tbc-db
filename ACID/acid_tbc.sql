@@ -4189,7 +4189,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1856202','18562','30','1','100','1','6','24978','0','0','0','0','23','-1','0','0','52','3','0','0','0','0','0','0','Purple Ground Rune - Decrement Phase and Interrupt Channel on Receive AI Event 6 (Phase 1 and 2)'),
 ('1856203','18562','29','3','100','1','1000','1000','15000','15000','0','0','11','40927','0','0','0','0','0','0','0','0','0','0','Purple Ground Rune - Cast Akama Soul Expel Channel on Generic Timer (Phase 2)'),
 -- Exarch Larethor (24813) - NSR
--- Madrigosa (25160)
 -- Shattered Sun Marksman 24938 - npc_shattered_sun_fighter
 -- Wretched Devourer 24960
 ('2496001','24960','1','0','100','0','0','0','0','0','0','0','17','23','0','0','31','1','2','0','0','0','0','0','Wretched Devourer - Set Mana to 0 and Set Random Phase 1/2 OOC'),
@@ -4296,11 +4295,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Astromancer Darnarian (25133) - NSR
 -- Shattered Sun Bombardier
 ('2514401','25144','1','0','15','1','30000','40000','45000','60000','0','0','1','-10428','-10429','-10429','0','0','0','0','0','0','0','0','Shattered Sun Bombardier - Random Yell'),
--- Brutallus
-('2515801','25158','0','0','25','1','30000','40000','70000','80000','0','0','1','-10746','-10747','-10748','0','0','0','0','0','0','0','0','Brutallus - Random Yell 1'),
-('2515802','25158','0','0','25','1','80000','90000','70000','80000','0','0','1','-10747','-10749','-10750','0','0','0','0','0','0','0','0','Brutallus - Random Yell 2'),
-('2515803','25158','8','0','25','0','45065','-1','0','0','0','0','1','-10751','0','0','0','0','0','0','0','0','0','0','Brutallus - Yell on Frost Breath Spellhit'),
-('2515804','25158','8','0','50','0','45072','-1','0','0','0','0','1','-10752','0','0','0','0','0','0','0','0','0','0','Brutallus - Yell on Arcane Charges Spellhit'),
+-- Brutallus 25158
+('2515801','25158','29','0','100','1','10000','10000','30000','30000','0','0','54','0','0','12007','0','0','0','0','0','0','0','0','Brutallus - Random Yell on Generic Timer'),
+('2515802','25158','29','0','100','1','15000','15000','60000','60000','0','0','45','5','100','0','22','1','0','0','0','0','0','0','Brutallus - Send AI Event 5, Set Phase 1 on Generic Timer'),
+('2515803','25158','29','1','100','1','10000','10000','10000','10000','0','0','54','-10783','0','0','22','0','0','0','0','0','0','0','Brutallus - Yell, Set Phase 0 on Generic Timer (Phase 1)'),
+('2515804','25158','8','0','25','0','45065','-1','0','0','0','0','1','-10751','0','0','0','0','0','0','0','0','0','0','Brutallus - Yell on Frost Breath Spellhit'),
+('2515805','25158','8','0','50','0','45072','-1','0','0','0','0','54','-10752','6','0','0','0','0','0','0','0','0','0','Brutallus - Yell at Player on Arcane Charges Spellhit'),
+-- Madrigosa 25160 - Find out about "s.45065"
+('2516001','25160','30','0','100','1','5','25158','0','0','0','0','1','-10782','0','0','0','0','0','0','0','0','0','0','Madrigosa - Yell on Received AI Event 5'),
 -- Dawnblade Dragonhawk (25161) - NSR
 -- Drill Sergeant Bahduum
 ('2516201','25162','1','0','100','1','60000','60000','14400000','14400000','0','0','1','-10408','0','0','0','0','0','0','0','0','0','0','Drill Sergeant Bahduum - Speech 1 Say 1'),
@@ -32325,13 +32327,13 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10743','...victory.','0','0','0','15','17181','19635'),
 ('-10744','Looks like I picked the wrong day to quit mana tapping...','0','0','0','1','17571','19926'),
 ('-10745','Core overload detected. System malfunction detected...','0','2','0','0','24008','24972'),
-('-10746','Beat or be beaten! This is the way of the Legion!','0','1','0','1','24190','25158'),
-('-10747','Burn their bodies, shred their skins, crush their creaking carapaces!','0','1','0','1','24188','25158'),
-('-10748','Crush these stinking husks!','0','1','0','1','24185','25158'),
-('-10749','Smash them! Grind the bones into the dirt!','0','1','0','1','24186','25158'),
-('-10750','Harder, maggots! We must keep the sunwell clear for the master''s return!','0','1','0','1','24187','25158'),
+('-10746','Beat or be beaten! This is the way of the Legion!','0','1','0','15','24190','25158'),
+('-10747','Burn their bodies, shred their skins, crush their creaking carapaces!','0','1','0','15','24188','25158'),
+('-10748','Crush these stinking husks!','0','1','0','15','24185','25158'),
+('-10749','Smash them! Grind the bones into the dirt!','0','1','0','15','24186','25158'),
+('-10750','Harder, maggots! We must keep the sunwell clear for the master''s return!','0','1','0','15','24187','25158'),
 ('-10751','Grraaarrr! You think to make an icicle out of me? Come down, then I will add real fire to your life.','0','1','0','1','24205','25158'),
-('-10752','What is this pathetic magic? How about you come back with twenty-four of your best friends and try again, $r!','0','1','0','1','24206','25158'),
+('-10752','What is this pathetic magic? How about you come back with twenty-four of your best friends and try again, $r!','0','1','0','0','24206','25158'),
 ('-10753','Must you follow me everywhere? <sigh>','0','0','1','1','14102','17109'),
 ('-10754','Oh, would you please stop checking your nails and spanking yourself, for one moment?  Really, no one cares!','0','0','1','1','14098','17109'),
 ('-10755','Are you hungry?  I''m hungry.  I just can''t stand the thought of cured ham steak from Thultash again.  If only we could get some of that succulent roasted quail!','0','0','1','1','14099','17109'),
@@ -32361,7 +32363,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10779','Protect the Botanica at all costs!','0','1','0','0','16784','17976'),
 ('-10780','Protect the Mechanar at all costs!','0','1','0','0','17913','19166'),
 ('-10781','Who disturbs my slumber?  That spear... I still carry the scar!','0','1','0','0','19599','Xeleth aggro yell'),
--- TBC PLEASE REUSE 10782 - 10783
+('-10782','I hear Pit Lords are born from maggots, Brutallus!','0','1','0','0','24192','25160'),
+('-10783','Big talk from a blue birdie! How about you come down and see if you can pluck this maggot from the dirt!','0','1','0','0','24193','25158'),
 ('-10784','Once I''ve hacked off your limbs, I may hang your body from our battlements.','0','0','0','0','19902','18677'),
 ('-10785','I love to bathe in the blood of my enemies!','0','0','0','0','19900','18677'),
 ('-10786','I crave your death!','0','0','0','0','19903','18677'),
@@ -33325,7 +33328,12 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (12005,0,-10687,0,'19283 - Vagrant - Random OOC Texts'),
 (12006, 0, -11234, 0, 'Magisters'' Terrace - Wretched - Random Aggro Texts'),
 (12006, 0, -11235, 0, 'Magisters'' Terrace - Wretched - Random Aggro Texts'),
-(12006, 0, -11236, 0, 'Magisters'' Terrace - Wretched - Random Aggro Texts');
+(12006, 0, -11236, 0, 'Magisters'' Terrace - Wretched - Random Aggro Texts'),
+(12007, 0, -10746, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts'),
+(12007, 0, -10747, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts'),
+(12007, 0, -10748, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts'),
+(12007, 0, -10749, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts'),
+(12007, 0, -10750, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts');
 
 -- WOTLK IDs 20000+
 -- INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
