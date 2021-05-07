@@ -968,67 +968,66 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+332, @CGUID+333, 1167), -- Shadowsword Manafiend -> Shadowsword Vanquisher
 (@CGUID+334, @CGUID+333, 1167), -- Shadowsword Vanquisher -> Shadowsword Vanquisher
 (@CGUID+335, @CGUID+333, 1167), -- Shadowsword Assassin -> Shadowsword Vanquisher
--- M'uru Trash
+-- M'uru
 (@CGUID+182, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
 (@CGUID+184, @CGUID+172, 1167), -- Oblivion Mage -> Doomfire Destroyer
+(@CGUID+172, @CGUID+348, 1024), -- Doomfire Destroyer -> M'uru
 (@CGUID+220, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+221, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+222, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+223, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+224, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+219, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
 (@CGUID+164, @CGUID+169, 1167), -- creature_spawn_entry -> Painbringer
 (@CGUID+165, @CGUID+169, 1167), -- creature_spawn_entry -> Painbringer
 (@CGUID+185, @CGUID+169, 1167), -- Oblivion Mage -> Painbringer
+(@CGUID+169, @CGUID+348, 1024), -- Painbringer -> M'uru
 (@CGUID+174, @CGUID+177, 1167), -- Apocalypse Guard -> Apocalypse Guard
+(@CGUID+177, @CGUID+348, 1024), -- Apocalypse Guard -> M'uru
 (@CGUID+187, @CGUID+173, 1167), -- Oblivion Mage -> Doomfire Destroyer
 (@CGUID+188, @CGUID+173, 1167), -- Oblivion Mage -> Doomfire Destroyer
+(@CGUID+173, @CGUID+348, 1024), -- Doomfire Destroyer -> M'uru
 (@CGUID+166, @CGUID+170, 1167), -- Priestess of Torment -> creature_spawn_entry
 (@CGUID+167, @CGUID+170, 1167), -- Priestess of Torment -> creature_spawn_entry
 (@CGUID+186, @CGUID+170, 1167), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+170, @CGUID+348, 1024), -- creature_spawn_entry -> M'uru
 (@CGUID+178, @CGUID+179, 1167), -- Apocalypse Guard -> Apocalypse Guard
+(@CGUID+179, @CGUID+348, 1024), -- Apocalypse Guard -> M'uru
 (@CGUID+163, @CGUID+168, 1167), -- Priestess of Torment -> Painbringer
 (@CGUID+183, @CGUID+168, 1167), -- Oblivion Mage -> Painbringer
-(@CGUID+353, @CGUID+355, 1027), -- Hand of the Deceiver -> Hand of the Deceiver
-(@CGUID+354, @CGUID+355, 1027), -- Hand of the Deceiver -> Hand of the Deceiver
+(@CGUID+168, @CGUID+348, 1024), -- Painbringer -> M'uru
 (@CGUID+226, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+227, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+228, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+229, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+230, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
+(@CGUID+225, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
 (@CGUID+175, @CGUID+176, 1167), -- Apocalypse Guard -> Apocalypse Guard
+(@CGUID+176, @CGUID+348, 1024), -- Apocalypse Guard -> M'uru
+(@CGUID+171, @CGUID+348, 1024), -- Doomfire Destroyer -> M'uru
+(@CGUID+180, @CGUID+348, 1024), -- Chaos Gazer -> M'uru
+(@CGUID+181, @CGUID+348, 1024), -- Chaos Gazer -> M'uru
+(@CGUID+189, @CGUID+348, 1024), -- Cataclysm Hound -> M'uru
+(@CGUID+190, @CGUID+348, 1024), -- Cataclysm Hound -> M'uru
+(@CGUID+231, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+232, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+233, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+234, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+236, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+238, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+239, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+240, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+241, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+243, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+(@CGUID+242, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
+-- Kil'jaeden
+(@CGUID+363, @CGUID+191, 1024), -- Shadowsword Guardian -> Kil'jaeden (Controller)
+(@CGUID+364, @CGUID+191, 1024), -- Shadowsword Guardian -> Kil'jaeden (Controller)
+(@CGUID+353, @CGUID+355, 1027), -- Hand of the Deceiver -> Hand of the Deceiver
+(@CGUID+354, @CGUID+355, 1027), -- Hand of the Deceiver -> Hand of the Deceiver
+(@CGUID+355, @CGUID+191, 1024); -- Hand of the Deceiver -> Kil'jaeden (Controller)
 
-(@CGUID+168, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+169, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+170, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+171, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+172, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+173, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+176, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+177, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+180, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+181, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+189, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+190, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+219, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+225, @CGUID+348, 1024), --  -> M'uru
-(@CGUID+355, @CGUID+348, 1024); --  -> M'uru
-
-
-
-REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(25319, 580, 25315, 4096, 0), -- Kalecgos -> Kil'jaeden
-(25502, 580, 25315, 4112, 0), -- Shield Orb -> Kil'jaeden
-(25598, 580, 25588, 4096, 0), -- Volatile Felfire Fiend -> Hand of the Deceiver
-(25708, 580, 25315, 4112, 0), -- Sinister Reflection -> Kil'jaeden
-(25735, 580, 25315, 4112, 0), -- Armageddon Target -> Kil'jaeden
-(25744, 580, 25840, 4112, 0), -- Dark Fiend -> Entropius
-(25772, 580, 25741, 4112, 0), -- Void Sentinel -> M'uru
-(25798, 580, 25741, 4112, 0), -- Shadowsword Berserker -> M'uru
-(25799, 580, 25741, 4112, 0), -- Shadowsword Fury Mage -> M'uru
-(25824, 580, 25741, 4112, 0), -- Void Spawn -> M'uru
-(25855, 580, 25840, 4112, 0), -- Singularity -> Entropius
-(25879, 580, 25840, 4112, 0), -- Darkness -> Entropius
-(26046, 580, 25315, 4, 0); -- Anveena -> Kil'jaeden
+-- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+80, 25367), (@CGUID+80, 25371), -- Sunblade Arch Mage, Sunblade Dawn Priest
