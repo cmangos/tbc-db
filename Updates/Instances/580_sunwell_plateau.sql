@@ -995,7 +995,25 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+228, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+229, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+230, @CGUID+225, 1167), -- Volatile Fiend -> Volatile Fiend
-(@CGUID+175, @CGUID+176, 1167); -- Apocalypse Guard -> Apocalypse Guard
+(@CGUID+175, @CGUID+176, 1167), -- Apocalypse Guard -> Apocalypse Guard
+
+(@CGUID+168, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+169, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+170, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+171, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+172, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+173, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+176, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+177, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+180, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+181, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+189, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+190, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+219, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+225, @CGUID+348, 1024), --  -> M'uru
+(@CGUID+355, @CGUID+348, 1024); --  -> M'uru
+
+
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (25319, 580, 25315, 4096, 0), -- Kalecgos -> Kil'jaeden
