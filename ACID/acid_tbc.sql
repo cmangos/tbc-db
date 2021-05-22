@@ -17230,6 +17230,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1683603','16836','0','0','100','1025','3500','5500','11000','11000','0','0','11','20831','1','0','0','0','0','0','0','0','0','0','Escaped Dreghood - Cast Chain Lightning'),
 ('1683604','16836','0','0','100','1025','7500','8500','12000','15000','0','0','11','11436','1','32','0','0','0','0','0','0','0','0','Escaped Dreghood - Cast Slow'),
 ('1683605','16836','9','0','100','1025','0','40','3400','4700','0','0','11','20824','1','256','0','0','0','0','0','0','0','0','Escaped Dreghood - Cast Lightning Bolt'),
+-- Honor Hold Defender 16842
+('1684201','16842','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Honor Hold Defender - Cast Invisibility and Stealth Detection on Spawn'),
 -- Crust Burster (16844) - npc_burster_worm
 -- Stormwind Cavalryman
 ('1684301','16843','4','0','100','0','0','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Stormwind Cavalryman - Dismount on Aggro'),
