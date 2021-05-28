@@ -7333,14 +7333,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Velora Nitely 6411
 -- Mennet Carkad 6467
 -- Rift Spawn 6492
-('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','11','9093','0','0','Rift Spawn - Set Invincible and Set Phase 0 and cast Rift Spawn Invisibility on Spawn'),
-('649202','6492','27','0','100','1','9093','1','10000','10000','0','0','11','9093','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Invisibility on Missing Buff'),
-('649203','6492','4','5','100','0','0','0','0','0','0','0','11','9738','0','0','54','3074','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Becomes Visible and Text Emote on Aggro (Phase 1)'),
-('649204','6492','8','0','100','0','9095','-1','0','0','0','0','22','1','0','0','11','9096','0','0','55','6','0','0','Rift Spawn - Set Phase 1 and Cast Rift Spawn Manifestation and attack Player on Cantation of Manifestation Spellhit'),
-('649205','6492','2','0','100','1024','1','0','0','0','0','0','11','9032','0','0','18','33554432','0','0','22','2','0','0','Rift Spawn - Cast Self Stun - 30 seconds and Set NotSelectable and Set Phase 2 When Below 1% HP (Phase 1)'),
-('649206','6492','29','3','100','0','29500','29500','0','0','0','0','54','2564','0','0','41','0','0','0','0','0','0','0','Rift Spawn - Text Emote and Despawn Self on Generic Timer (Phase 2)'),
-('649207','6492','21','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Set Phase 0 on Reached Home'),
-('649208','6492','8','0','100','0','9012','-1','0','0','0','0','41','2200','0','0','54','2553','0','0','11','9010','0','2','Rift Spawn - Despawn Self on Attract Rift Spawn Spellhit'),
+('649201','6492','11','0','100','0','0','0','0','0','0','0','42','1','0','0','22','0','0','0','50','0','0','0','Rift Spawn - Set Invincible at 1 HP, Set Phase 0 and Set ReactState Passive on Spawn'),
+('649202','6492','8','0','100','0','9095','-1','0','0','0','0','50','2','0','0','22','1','0','0','54','3074','0','0','Rift Spawn - Set ReactState Agressive and Set Phase 1 and Text Emote on Cantation of Manifestation Spellhit'),
+('649203','6492','0','13','100','0','1000','1000','0','0','0','0','11','9096','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Cast Rift Spawn Manifestation (Phase 1)'),
+('649204','6492','2','0','100','1024','1','0','0','0','0','0','11','9032','0','0','18','33554432','0','0','22','2','0','0','Rift Spawn - Cast Self Stun - 30 seconds and Set NotSelectable and Set Phase 2 When Below 1% HP'),
+('649205','6492','8','11','100','0','9012','-1','0','0','0','0','54','2553','0','0','22','3','0','0','0','0','0','0','Rift Spawn - Text Emote and Set Phase 3 on Attract Rift Spawn Spellhit (Phase 2)'),
+('649206','6492','29','11','100','0','29500','29500','0','0','0','0','54','2564','0','0','41','0','0','0','0','0','0','0','Rift Spawn - Text Emote and Despawn Self on Generic Timer (Phase 2)'),
+('649207','6492','29','7','100','0','3500','3500','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Despawn Self on Generic Timer (Phase 3)'),
+('649208','6492','21','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Rift Spawn - Set Phase 0 on Reached Home'),
 -- Andron Gant 6522
 -- Estelle Gendry 6566
 -- Innkeeper Norman 6741 - npc_innkeeper
