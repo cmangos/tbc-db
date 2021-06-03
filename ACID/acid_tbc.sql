@@ -30505,6 +30505,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Earthbind Totem 2630 - TotemAI
 -- Ward of Laze 2667 - TotemAI
 -- Advanced Target Dummy 2674 - npc_advanced_target_dummy
+-- Explosive Sheep 2675
+('267501','2675','11','0','100','0','0','0','0','0','0','0','11','4051','0','2','11','8279','0','2','0','0','0','0','Explosive Sheep - Cast Explosive Sheep Passive and Stealth Detection on Spawn'),
 -- Healing Ward V 2992 - TotemAI
 -- Healing Stream Totem 3527 - TotemAI
 -- Healing Ward 3560 - TotemAI
