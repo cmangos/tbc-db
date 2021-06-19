@@ -11374,7 +11374,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('439401','4394','6','0','100','0','0','0','0','0','0','0','11','43135','0','7','0','0','0','0','0','0','0','0','Bubbling Swamp Ooze - Cast Bubbling Ooze on Death'),
 ('439402','4394','8','0','100','0','42485','-1','0','0','0','0','11','42486','6','0','11','3617','0','0','0','0','0','0','Bubbling Swamp Ooze - Cast Ooze Channel Credit and Quiet Suicide on End of Ooze Channel Spellhit'),
 -- Mudrock Spikeshell 4397
-('439701','4397','11','0','100','0','0','0','0','0','0','0','11','8393','0','34','0','0','0','0','0','0','0','0','Mudrock Spikeshell - Cast Barbs on Spawn'),
+('439701','4397','11','0','100','0','0','0','0','0','0','0','11','9464','0','34','0','0','0','0','0','0','0','0','Mudrock Spikeshell - Cast Barbs on Spawn'),
 -- Muckshell Clacker
 ('440101','4401','9','0','100','1025','0','5','20000','25000','0','0','11','3604','1','0','0','0','0','0','0','0','0','0','Muckshell Clacker - Cast Tendon Rip'),
 -- Muckshell Snapclaw 4402
