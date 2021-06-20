@@ -1,7 +1,7 @@
 -- Update more data for gameobjects based on wdb cache from classic.
 -- Also update data1 and data6 fields to be signed,
 -- since some entries have negative values in them. They are signed in Trinity's database too.
-UPDATE gameobject_template SET data0=2061, data2=0 WHERE entry=151951;
+-- UPDATE gameobject_template SET /*data0=2061,*/ data2=0 WHERE entry=151951;
 UPDATE gameobject_template SET data1=-1 WHERE entry=20352;
 UPDATE gameobject_template SET data1=-1 WHERE entry=3192;
 UPDATE gameobject_template SET data1=-1 WHERE entry=1761;
@@ -94,7 +94,7 @@ UPDATE gameobject_template SET data11=1, data13=1 WHERE entry=179564;
 UPDATE gameobject_template SET data1=-1 WHERE entry=1768;
 UPDATE gameobject_template SET data1=-1 WHERE entry=1769;
 UPDATE gameobject_template SET data8=0 WHERE entry=178932;
-UPDATE gameobject_template SET data0=2061 WHERE entry=126337;
+-- UPDATE gameobject_template SET data0=2061 WHERE entry=126337;
 UPDATE gameobject_template SET data1=-1 WHERE entry=3190;
 UPDATE gameobject_template SET data1=-1 WHERE entry=2704;
 UPDATE gameobject_template SET data1=-1 WHERE entry=61935;
@@ -105,7 +105,7 @@ UPDATE gameobject_template SET data1=-1 WHERE entry=3189;
 UPDATE gameobject_template SET data8=0 WHERE entry=178940;
 UPDATE gameobject_template SET data1=-1 WHERE entry=4072;
 UPDATE gameobject_template SET data15=0 WHERE entry=131978;
-UPDATE gameobject_template SET data0=2061 WHERE entry=126340;
+-- UPDATE gameobject_template SET data0=2061 WHERE entry=126340;
 UPDATE gameobject_template SET data1=-1 WHERE entry=61936;
 UPDATE gameobject_template SET data15=0 WHERE entry=75300;
 UPDATE gameobject_template SET data15=0 WHERE entry=75297;
@@ -118,11 +118,11 @@ UPDATE gameobject_template SET data6=-65536 WHERE entry=178559;
 UPDATE gameobject_template SET name='Meeting', data0=46, data1=55 WHERE entry=178827;
 UPDATE gameobject_template SET data8=0 WHERE entry=180419;
 UPDATE gameobject_template SET data8=0 WHERE entry=178956;
-UPDATE gameobject_template SET data0=2061 WHERE entry=126338;
-UPDATE gameobject_template SET data0=2061 WHERE entry=126339;
-UPDATE gameobject_template SET data0=2061 WHERE entry=126341;
-UPDATE gameobject_template SET data0=2061 WHERE entry=126342;
-UPDATE gameobject_template SET data0=2061 WHERE entry=126345;
+-- UPDATE gameobject_template SET data0=2061 WHERE entry=126338;
+-- UPDATE gameobject_template SET data0=2061 WHERE entry=126339;
+-- UPDATE gameobject_template SET data0=2061 WHERE entry=126341;
+-- UPDATE gameobject_template SET data0=2061 WHERE entry=126342;
+-- UPDATE gameobject_template SET data0=2061 WHERE entry=126345;
 UPDATE gameobject_template SET data8=0 WHERE entry=179454;
 UPDATE gameobject_template SET data8=0 WHERE entry=178936;
 UPDATE gameobject_template SET data8=0 WHERE entry=178948;
