@@ -705,7 +705,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (10809, 0, 0, 1, 16, 0, 0, NULL), -- Stonespine
 (10811, 0, 0, 1, 16, 0, 0, NULL), -- Archivist Galford
 (10812, 0, 0, 1, 16, 0, 0, NULL), -- Grand Crusader Dathrohan
-(10917, 0, 8, 1, 16, 0, 0, NULL), -- Aurius
+(10917, 0, 0, 1, 16, 0, 0, NULL), -- Aurius
 (10997, 0, 0, 1, 16, 0, 0, NULL), -- Cannon Master Willey
 (11032, 0, 0, 1, 16, 0, 0, NULL), -- Malor the Zealous
 (11043, 0, 0, 1, 16, 0, 0, '8876'), -- Crimson Monk
