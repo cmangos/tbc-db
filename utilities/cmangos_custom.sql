@@ -45,8 +45,8 @@ UPDATE gameobject_template SET data8=1 WHERE entry=181214; -- Necropolis critter
 UPDATE gameobject_template SET data8=1 WHERE entry=179324; -- Frostwolf Landmine
 UPDATE gameobject_template SET data8=1 WHERE entry=179325; -- Stormpike Landmine
 
--- Set radius of Supply Crate trap to zero to prevent trap from being triggered by nearby players (it should trigger on player usage of original GO)
-UPDATE gameobject_template SET data2=0 WHERE entry IN (175534, 175535, 175536, 175537);
+-- Make Supply Crate trap GO only visible by GM
+ UPDATE gameobject_template SET data8=1 WHERE entry IN (175534, 175535, 175536, 175537);
 
 -- Make Dawn's Gambit Trap only visible by GM
 UPDATE gameobject_template SET data2=5, data3=0, data8=0 WHERE entry=176110;
