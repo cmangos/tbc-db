@@ -9382,9 +9382,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mutated Root Lasher (16517) - NSR
 -- Nestlewood Owlkin (16518) - spell_dummy_npc
 -- Vale Moth (16520) - NSR
--- Blood Elf Scout
-('1652101','16521','4','0','15','0','0','0','0','0','0','0','1','-10704','-10705','-10706','0','0','0','0','0','0','0','0','Blood Elf Scout - Chance to Say on Aggro'),
-('1652102','16521','0','0','100','1025','4000','9000','30000','30000','0','0','11','25602','1','0','0','0','0','0','0','0','0','0','Blood Elf Scout - Cast Faerie Fire'),
+-- Blood Elf Scout 16521
+('1652101','16521','4','0','15','0','0','0','0','0','0','0','54','0','0','12008','0','0','0','0','0','0','0','0','Blood Elf Scout - Random Say on Aggro'),
+('1652102','16521','0','0','100','1025','4000','9000','30000','30000','0','0','11','25602','1','32','0','0','0','0','0','0','0','0','Blood Elf Scout - Cast Faerie Fire'),
 -- Surveyor Candress - (RangeMode not required)
 ('1652201','16522','1','0','100','0','2000','2000','0','0','0','0','11','31515','0','0','0','0','0','0','0','0','0','0','Surveyor Candress - Cast Red Beam on Spawn'),
 ('1652202','16522','4','0','100','0','0','0','0','0','0','0','28','0','31515','0','1','-10707','0','0','45','5','150','0','Surveyor Candress - Remove aura, Say and Send AI Event "A" on Aggro'),
@@ -32293,9 +32293,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10701','Vengeance will not be yours, $N!','0','0','0','0','20301','22454'),
 ('-10702','%s cackles maniacally as he combines the two mixtures in his hands.','0','2','0','153','13368','16464'),
 ('-10703','Drat!  This bloodthistle extract doesn''t seem to want to combine properly with my poison.  I''ll not be deterred - those trolls will be dealt with!  Perhaps a different mixture?','0','0','0','0','13369','16464'),
-('-10704','What a pity you survived the crash just to die here.','0','0','0','0','13427','16521'),
-('-10705','We won''t allow you to leave this valley!','0','0','0','0','13426','16521'),
-('-10706','I hope you''ve made your peace.','0','0','0','0','13428','16521'),
+-- RE-USE 10704 - 10706
 ('-10707','You''ll not take me alive, scum!','0','0','0','0','12767','16522'),
 ('-10708','The %s didn''t like what just happened.','0','2','0','18','12521','16534'),
 ('-10709','The %s looks confused.','0','2','0','6','12517','16534'),
@@ -32824,6 +32822,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-11234','It''s MINE!','0','0','0','0','23845','Magisters'' Terrace - Wretched'),
 ('-11235','You wish to steal the power!  Die!','0','0','0','0','23846','Magisters'' Terrace - Wretched'),
 ('-11236','Get away from my crystals!','0','0','0','0','23847','Magisters'' Terrace - Wretched'),
+('-11237','We won''t allow you to leave this valley!','0','0','0','0','13426','16521'),
+('-11238','What a pity you survived the crash just to die here.','0','0','0','0','13427','16521'),
+('-11239','I hope you''ve made your peace.','0','0','0','0','13428','16521'),
+('-11240','None of you are to leave this valley alive.','0','0','0','0','13429','16521'),
 
 ('-19997','May the light bless you.','0','0','0','1','24856','25639'),
 ('-19998','Your wounds are severe, but you will live.','0','0','0','1','24857','25639'),
@@ -33341,7 +33343,11 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (12007, 0, -10747, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts'),
 (12007, 0, -10748, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts'),
 (12007, 0, -10749, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts'),
-(12007, 0, -10750, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts');
+(12007, 0, -10750, 0, ' Isle of Quel''Danas - Brutallus 25158 - Random Yell Texts'),
+(12008, 0, -11237, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
+(12008, 0, -11238, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
+(12008, 0, -11239, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
+(12008, 0, -11240, 0, ' Blood Elf Scout 16521 - Random Aggro Texts');
 
 -- WOTLK IDs 20000+
 -- INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
