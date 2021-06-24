@@ -93,6 +93,7 @@ INSERT INTO pool_gameobject VALUES
 -- We don't add it to the pool to prevent the Black Lotus spawns from being stuck in the Eastern Plaguelands and we disable
 -- the node through custom code
 DELETE FROM gameobject WHERE guid IN (86503,132224); -- use classic guid
+DELETE FROM pool_gameobject WHERE guid = 132224;
 INSERT INTO gameobject (guid, id, map, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
 (86503, 176589, 0, 3151.6, -3727.88, -61.2898, 0.541051, 0, 0, 0.267238, 0.963631, 3600, 3600, 100, 1);
 
