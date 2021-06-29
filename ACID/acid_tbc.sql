@@ -9495,12 +9495,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Flaming Aspect (17272) - NSR
 -- Venture Co. Saboteur 17278
 ('1727801','17278','11','0','100','0','0','0','0','0','0','0','11','5680','0','34','0','0','0','0','0','0','0','0','Venture Co. Saboteur - Cast Torch Burn on Spawn'),
--- Venture Co. Gemologist (17279) - NSR
+-- Venture Co. Gemologist 17279
+('1727901','17279','11','0','100','0','0','0','0','0','0','0','11','5680','0','34','0','0','0','0','0','0','0','0','Venture Co. Gemologist - Cast Torch Burn on Spawn'),
 -- Ragnarose (17285) - NSR
 -- Warlord Sriss'tiz
 ('1729801','17298','9','0','100','1025','0','5','5000','9000','0','0','11','31275','1','0','0','0','0','0','0','0','0','0','Warlord Sriss''tiz - Cast Watery Strike'),
 -- Magwin (17312) - npc_magwin
--- Geezle (17318) - NSR
+-- Geezle 17318
+('1731801','17318','11','0','100','0','0','0','0','0','0','0','11','5680','0','34','0','0','0','0','0','0','0','0','Geezle - Cast Torch Burn on Spawn'),
 -- Totem of Akida (17360) - NSR
 -- Totem of Coo (17361) - NSR
 -- Totem of Tikti (17362) - NSR
