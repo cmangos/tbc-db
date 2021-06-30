@@ -9693,7 +9693,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1734901','17349','0','0','100','1025','7000','10000','15000','19000','0','0','11','36332','1','0','0','0','0','0','0','0','0','0','Blue Flutterer - Cast Rake'),
 -- Royal Blue Flutterer
 ('1735001','17350','0','0','100','1025','7000','10000','15000','19000','0','0','11','36332','1','0','0','0','0','0','0','0','0','0','Royal Blue Flutterer - Cast Rake'),
--- Corrupted Treant (17352) - NSR
+-- Corrupted Treant 17352
+('1735201','17352','11','0','100','0','0','0','0','0','0','0','11','5811','0','34','0','0','0','0','0','0','0','0','Corrupted Treant - Cast Stone Skin Passive on Spawn'),
 -- Corrupted Stomper
 ('1735301','17353','9','0','100','1025','0','8','9000','14000','0','0','11','31277','1','0','0','0','0','0','0','0','0','0','Corrupted Stomper - Cast Stomp'),
 -- Fouled Water Spirit 17358
@@ -9909,9 +9910,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Moonstalker Runt (2070) - NSR
 -- Moonstalker Matriarch
 ('207101','2071','11','0','100','0','0','0','0','0','0','0','11','8594','0','0','0','0','0','0','0','0','0','0','Moonstalker Matriarch - Cast Summon Moonstalker Runt on Spawn'),
--- Cracked Golem (2156) - NSR
+-- Cracked Golem 2156
+('215601','2156','11','0','100','0','0','0','0','0','0','0','11','5811','0','34','0','0','0','0','0','0','0','0','Cracked Golem - Cast Stone Skin Passive on Spawn'),
 -- Stone Behemoth 2157
-('215701','2157','0','0','100','1025','5000','11000','13000','16000','0','0','11','5810','0','0','0','0','0','0','0','0','0','0','Stone Behemoth - Cast Stone Skin'),
+('215701','2157','11','0','100','0','0','0','0','0','0','0','11','5811','0','34','0','0','0','0','0','0','0','0','Stone Behemoth - Cast Stone Skin Passive on Spawn'),
 -- Gravelflint Scout
 ('215801','2158','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Gravelflint Scout - Flee at 15% HP'),
 -- Gravelflint Bonesnapper
