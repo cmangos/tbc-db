@@ -15170,6 +15170,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('415401','4154','12','0','100','1025','20','0','30000','30000','0','0','11','7160','1','0','0','0','0','0','0','0','0','0','Salt Flats Scavenger - Cast Execute when Target HP below 20%'),
 -- Salt Flats Vulture 4158
 ('415801','4158','12','0','100','1025','20','0','30000','30000','0','0','11','7160','1','0','0','0','0','0','0','0','0','0','Salt Flats Vulture - Cast Execute when Target HP below 20%'),
+-- Pesterhide Hyena 4248
+('424801','4248','11','0','100','0','0','0','0','0','0','0','11','8247','0','34','0','0','0','0','0','0','0','0','Pesterhide Hyena - Cast Wandering Plague on Spawn'),
 -- Pesterhide Snarler 4249
 ('424901','4249','0','0','100','1025','5000','10000','12000','16000','0','0','11','6576','5','0','0','0','0','0','0','0','0','0','Pesterhide Snarler - Cast Intimidating Growl'),
 -- Nyse
