@@ -13723,7 +13723,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('402703','4027','9','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Bloodfury Storm Witch - Cast Lightning Bolt'),
 -- Charred Ancient
 ('402801','4028','9','0','100','1025','0','30','14000','20000','0','0','11','12747','1','0','0','0','0','0','0','0','0','0','Charred Ancient - Cast Entangling Roots'),
--- Blackened Ancient (4029) - NSR
+-- Blackened Ancient 4029
+('402901','4029','11','0','100','0','0','0','0','0','0','0','11','7999','0','34','0','0','0','0','0','0','0','0','Blackened Ancient - Cast Soot Covering on Spawn'),
 -- Vengeful Ancient
 ('403001','4030','9','0','100','1025','0','5','17000','25000','0','0','11','6909','4','32','0','0','0','0','0','0','0','0','Vengeful Ancient - Cast Curse of Thorns'),
 -- Fledgling Chimaera
