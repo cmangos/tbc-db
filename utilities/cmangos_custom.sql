@@ -127,6 +127,10 @@ UPDATE gameobject_template SET data15=1 WHERE entry IN(186648);
 UPDATE gameobject_template SET data8=1 WHERE entry=184718; -- Cauldron Summoner
 UPDATE gameobject_template SET data8=1 WHERE entry=184722; -- Cauldron Bug Summoner
 
+-- modelids with probability = 0
+UPDATE creature_template SET modelid2='0' WHERE entry='18095'; -- Doomfire
+UPDATE creature_template SET modelid2='0' WHERE entry='18104'; -- Doomfire Targeting
+
 -- -------------------------------
 -- Item custom changes
 -- -------------------------------
