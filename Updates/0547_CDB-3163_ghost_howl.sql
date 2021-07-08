@@ -1,9 +1,11 @@
 -- New spawn
 -- 1200	1	Ghost Howl (3056)
+DELETE FROM `creature` WHERE `id` = 22991; -- Monstrous Kaliri Egg Trigger respawned with skettis.sql
 DELETE FROM `creature` WHERE `guid` = 51854 AND `id` = 3056;
 INSERT INTO `creature` (`guid`, `id`, `map`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 ('51854', '3056', '1', '0', '0', '-1692.3270263671875', '-420.360351562500000', '-16.9224891662597656', '0', '9900', '9900', '0', '2');
 
+DELETE FROM `creature_movement` WHERE `id` = 51854;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 ('51854', '01', '-1678.5787353515625', '-377.307739257812500', '-24.6846218109130859', '100', '0', '0'),
 ('51854', '02', '-1688.3742675781250', '-342.489379882812500', '-18.4047183990478515', '100', '0', '0'),
