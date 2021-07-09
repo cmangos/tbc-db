@@ -927,6 +927,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (16368, 0, 0, 1, 16, 0, 0, NULL), -- Necropolis Acolyte
 (16381, 0, 7, 1, 16, 0, 0, NULL), -- Archmage Tarsis Kir-Moldir
 (16400, 0, 0, 1, 16, 0, 0, '28370'), -- Toxic Tunnel
+(16446, 0, 0, 1, 16, 0, 0, NULL), -- Plagued Gargoyle
 (16447, 0, 0, 1, 16, 0, 0, '19818'), -- Plagued Ghoul
 (16448, 0, 0, 1, 16, 0, 0, NULL), -- Plagued Deathhound
 (16449, 0, 0, 1, 16, 0, 0, NULL), -- Spirit of Naxxramas
