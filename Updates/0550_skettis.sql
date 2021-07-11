@@ -298,8 +298,8 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 
 -- slight adjustment to 11004 start script
 -- kneel stand state instead of emote for Severin
-UPDATE dbscripts_on_quest_start SET command=28, datalong=8 WHERE id=11004 AND delay=7;
-DELETE FROM dbscripts_on_quest_start WHERE id=11004 AND delay=12;
+UPDATE dbscripts_on_quest_start SET command=28, datalong=8 WHERE id=11004 AND delay=7000;
+DELETE FROM dbscripts_on_quest_start WHERE id=11004 AND delay=12000;
 INSERT INTO dbscripts_on_quest_start (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (11004, 12000, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Severin - stand state');
 
@@ -666,7 +666,7 @@ INSERT INTO `dbscripts_on_relay` (`id`,`delay`,`command`,`datalong`,`datalong2`,
 
 (10049,0,32,0,0,0,0,0,0,0,0,0,0,'Skettis Soulcaller - Resume Waypoints',0,0,0,0),
 
-(10050,1,0,0,0,0,2000001524,0,0,0,0,0,0,'Skettis Soulcaller - %s appears to be speaking with an unseen entity.',0,0,0,0);
+(10050,1000,0,0,0,0,2000001524,0,0,0,0,0,0,'Skettis Soulcaller - %s appears to be speaking with an unseen entity.',0,0,0,0);
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN 10081 AND 10082;
 INSERT INTO dbscript_random_templates (id,type,target_id,chance,comments) VALUES
