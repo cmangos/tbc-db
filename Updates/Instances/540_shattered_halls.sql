@@ -1179,7 +1179,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10113,0,0,35,5,50,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
 
 (10114,0,0,31,17420,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Heaven'),
-(10114,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
+(10114,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
 (10114,3000,0,37,0,0,2,17420,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Heathen'),
 (10114,4000,0,36,0,0,0,17420,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - face Legionnaire'),
 (10114,4000,0,36,0,0,0,17420,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Heathen'),
@@ -1191,7 +1191,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10114,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
 
 (10198,0,0,31,16523,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Savage'),
-(10198,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
+(10198,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
 (10198,3000,0,37,0,0,2,16523,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Savage'),
 (10198,4000,0,36,0,0,0,16523,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - face Legionnaire'),
 (10198,4000,0,36,0,0,0,16523,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Savage'),
@@ -1205,7 +1205,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10115,5000,0,45,0,10052,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% force bow, 50% force cheer'),
 
 (10116,0,0,31,17420,5,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - Search for Heaven'),
-(10116,1,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - pause waypoints'),
+(10116,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - pause waypoints'),
 (10116,3000,0,37,0,0,2,17420,20,2,0,0,0,0,0,0,0,0,'Legionnaire - move to Heathen'),
 (10116,5000,0,36,0,0,0,17420,3,0,0,0,0,0,0,0,0,0,'Heathen - face Legionnaire'),
 (10116,5000,0,36,0,0,0,17694,3,0,0,0,0,0,0,0,0,0,'Darkcaster - face Legionnaire'),
@@ -1216,7 +1216,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10116,14000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - unpause waypoints'),
 
 (10199,0,0,31,16523,5,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - Search for Savage'),
-(10199,1,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - pause waypoints'),
+(10199,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - pause waypoints'),
 (10199,3000,0,37,0,0,2,16523,20,2,0,0,0,0,0,0,0,0,'Legionnaire - move to Savage'),
 (10199,5000,0,36,0,0,0,16523,3,0,0,0,0,0,0,0,0,0,'Savage - face Legionnaire'),
 (10199,5000,0,36,0,0,0,17694,3,0,0,0,0,0,0,0,0,0,'Darkcaster - face Legionnaire'),
