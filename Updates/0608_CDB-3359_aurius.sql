@@ -4,11 +4,11 @@
 
 -- Add missing condition related to instance state and repeatable flags
 -- The Medallion of Faith
-UPDATE quest_template SET RequiredCondition=719, SpecialFlags=1 WHERE entry=5122;
+UPDATE quest_template SET RequiredCondition=721, SpecialFlags=1 WHERE entry=5122;
 -- Aurius' Reckoning
 UPDATE quest_template SET RequiredCondition=720 WHERE entry=5125;
 
-DELETE FROM conditions WHERE condition_entry=719; -- 745
+DELETE FROM conditions WHERE condition_entry=721; -- 745
 INSERT INTO conditions VALUES
 -- 720	18	0	0	0	0	0
-(719, -3, 720, 0, 0, 0, 0, ''); -- 733
+(721, -3, 720, 0, 0, 0, 0, ''); -- 733
