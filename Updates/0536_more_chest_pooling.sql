@@ -501,6 +501,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 -- Create New Area Pool Templates after wotlk-db schema in classic-db order
 -- 31008 - 31011 reuse at some point
+DELETE FROM `pool_template` WHERE `entry` IN (40000,40002,40003,40004,40005,40006,40007,40008,40009,40010,40011,40012,40014,40015,40016,40017,40018,40019,40020,40021,40022,40023,40024,40025,40026,40027,40028,40029,40030,40031,40032,40033,40034,40035,40036,40037,40038); -- Delete old pools
 DELETE FROM `pool_template` WHERE `entry` BETWEEN 31269 AND 31329;
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 -- Badlands
