@@ -25244,16 +25244,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('429601','4296','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Scarlet Adept - Enable Range Mode on Aggro'),
 ('429602','4296','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Adept - Flee at 15% HP'),
 ('429603','4296','14','0','100','1025','1450','40','14100','21700','0','0','11','6063','12','0','0','0','0','0','0','0','0','0','Scarlet Adept - Cast Heal on Friendly Missing HP'),
-('429604','4296','9','0','100','1025','0','40','3600','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0',''),
-('429605','4296','0','0','100','1281','0','0','3600','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Scarlet Adept - Cast Holy Smite (Range Mode)'),
-('429606','4296','0','0','100','1537','0','0','5000','20000','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Scarlet Adept - Cast Holy Smite (Melee Mode)'),
+('429604','4296','0','0','100','1281','0','0','3600','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Scarlet Adept - Cast Holy Smite (Range Mode)'),
+('429605','4296','0','0','100','1537','0','0','5000','20000','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Scarlet Adept - Cast Holy Smite (Melee Mode)'),
 -- Scarlet Conjuror 4297
 ('429701','4297','11','0','100','0','0','0','0','0','0','0','11','8985','0','0','0','0','0','0','0','0','0','0','Scarlet Conjuror - Cast Summon Fire Elemental on Spawn'),
 ('429702','4297','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Scarlet Conjuror - Enable Range Mode on Aggro'),
 ('429703','4297','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Scarlet Conjuror - Flee at 15% HP'),
-('429704','4297','9','0','100','1025','0','40','3600','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0',''),
-('429705','4297','0','0','100','1281','0','0','3600','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Scarlet Conjuror - Cast Fireball (Range Mode)'),
-('429706','4297','0','0','100','1537','0','0','5000','10000','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Scarlet Conjuror - Cast Fireball (Melee Mode)'),
+('429704','4297','0','0','100','1281','0','0','3600','4800','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Scarlet Conjuror - Cast Fireball (Range Mode)'),
+('429705','4297','0','0','100','1537','0','0','5000','10000','0','0','11','9053','1','256','0','0','0','0','0','0','0','0','Scarlet Conjuror - Cast Fireball (Melee Mode)'),
 -- Scarlet Defender (3.0.3 and 4.3.4 Official Data)
 ('429801','4298','4','0','10','0','0','0','0','0','0','0','54','0','0','2','0','0','0','0','0','0','0','0','Scarlet Defender - Random Say on Aggro'),
 ('429802','4298','0','0','100','1025','2300','6600','180000','186500','0','0','11','7164','0','0','0','0','0','0','0','0','0','0','Scarlet Defender - Cast Defensive Stance'),
@@ -32998,13 +32996,13 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (1003,0,-854,0,'Varimathras 2425 - Random Aggro Texts'),
 (1003,0,-855,0,'Varimathras 2425 - Random Aggro Texts'),
 (1003,0,-856,0,'Varimathras 2425 - Random Aggro Texts'),
-(9000,0,-1569,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
-(9000,0,-1570,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
-(9000,0,-1571,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
-(9000,0,-1572,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
-(9000,0,-1573,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
-(9000,0,-1574,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
-(9000,0,-1575,0,'4295/4298/4301/4294/4300/4540/4302/4299 - Random Texts (Ashbringer Event - Scarlet Monastery)');
+(9000,0,-1569,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1570,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1571,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1572,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1573,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1574,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
+(9000,0,-1575,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)');
 
 -- TBC IDs 10000 - 19999
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
