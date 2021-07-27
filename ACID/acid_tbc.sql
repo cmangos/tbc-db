@@ -663,7 +663,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2447704','24477','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','-47','0','0','0','0','0','0','Syndicate Thief - Flee at 15% HP'),
 -- Arathi Flame Warden (25887) - NSR
 -- Arathi Flame Keeper (25923) - NSR
--- Flame Eater (25994) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 
 
@@ -1815,7 +1814,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2448402','24484','22','0','100','1','35','0','0','0','0','0','11','41586','6','0','0','0','0','0','0','0','0','0','Brewfest Reveler - Cast Brewfest Toast on Receive Drink Emote'),
 -- Ipfelkofer Ironkeg (24710) - NSR
 -- Dun Morogh Flame Warden (25895) - NSR
--- Fire Eater (25962) - NSR
 -- High Admiral "Shelly" Jorrik (26081) - NSR
 -- Beastmaster (26307) - NSR
 -- Summer Scorchling (26401) - NSR
@@ -2105,7 +2103,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anchorite Delan (17104) - NSR
 -- Weakened Morbent Fel (24782) - NSR
 -- Duskwood Flame Warden (25896) - NSR
--- Fire Eater (25962) - NSR
 -- Summer Scorchling (26401) - NSR
 -- Watcher Blomberg (28987) - NSR
 
@@ -2903,7 +2900,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Transport Bot D3 (24832) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Elwynn Forest Flame Warden (25898) - NSR
--- Fire Eater (25962) - NSR
 -- Summer Scorchling (26401) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 -- Plague Zombie (27059) - NSR
@@ -3228,7 +3224,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Brewfest Reveler (24484) - SCRIPTED IN ANOTHER ZONE
 -- Drohn's Distillery Apprentice (24501) - NSR
 -- Eversong Woods Flame Keeper (25931) - NSR
--- Flame Eater (25994) - NSR
 -- Paymaster (26075) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
 -- Plagued Resident (27848) - NSR
@@ -3562,7 +3557,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2514503','25145','9','0','100','1025','0','45','2300','3900','0','0','11','23337','1','256','0','0','0','0','0','0','0','0','Budd''s Bodyguard - Cast Shoot'),
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Ghostlands Flame Keeper (25933) - NSR
--- Flame Eater (25994) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
 
 
@@ -3894,8 +3888,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Huraan (17218) - NSR
 -- Hillsbrad Flame Warden (25901) - NSR
 -- Hillsbrad Flame Keeper (25935) - NSR
--- Fire Eater (25962) - NSR
--- Flame Eater (25994) - NSR
 -- Summer Scorchling (26401) - NSR
 
 
@@ -5481,7 +5473,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Advisor Sorrelon (16288) - NSR
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Silverpine Forest Flame Keeper (25939) - NSR
--- Flame Eater (25994) - NSR
 -- Prince Atherann (27616) - NSR
 -- Prince Keleseth (27618) - NSR
 -- Prince Valanar (27619) - NSR
@@ -7864,7 +7855,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ghost of Uther Lightbringer (17233) - NSR
 -- Anchorite Truuen (17238) - npc_anchorite_truuen
 -- Western Plaguelands Flame Warden (25909) - NSR
--- Fire Eater (25962) - NSR
 -- Summer Scorchling (26401) - NSR
 
 
@@ -9071,9 +9061,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Twilight Speaker Viktor (25924) - NSR
 -- Ice Caller Briatha (25949) - NSR
 -- Heretic Emissary (25951) - NSR
--- Fire Eater (25962) - NSR
 -- Heretic Bodyguard (25980) - NSR
--- Flame Eater (25994) - NSR
 -- Frostwave Lieutenant (26116) - NSR
 -- Summer Scorchling (26401) - NSR
 -- Wisp of Ragnaros (26502) - NSR
@@ -9614,7 +9602,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Crusty Bob (21376) - NSR
 -- Arena Promoter (22101) - NSR
 -- Azuremyst Isle Flame Warden (25888) - NSR
--- Fire Eater (25962) - NSR
 -- Paymaster (26075) - NSR
 -- Summer Scorchling (26401) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
@@ -10319,7 +10306,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2505603','25056','9','0','100','1025','0','20','7000','10000','0','0','11','12024','1','1024','0','0','0','0','0','0','0','0','Mariner Stillglider - Cast Net'),
 ('2505604','25056','9','0','100','1025','0','45','2300','3900','0','0','11','23337','1','256','0','0','0','0','0','0','0','0','Mariner Stillglider - Cast Shoot'),
 -- Darkshore Flame Warden (25893) - NSR
--- Fire Eater (25962) - NSR
 -- Beastmaster (26307) - NSR
 -- Summer Scorchling (26401) - NSR
 -- Wisp of Ragnaros (26502) - NSR
@@ -11238,7 +11224,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2508303','25083','9','0','100','1025','0','45','2300','3900','0','0','11','23337','1','256','0','0','0','0','0','0','0','0','Deathguard Lawson - Cast Shoot'),
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Durotar Flame Keeper (25929) - NSR
--- Flame Eater (25994) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 
 
@@ -12912,7 +12897,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2361801','23618','10','0','100','1','1','10','120000','120000','0','0','1','-10179','-10180','-10181','0','0','0','0','0','0','0','0','Ahab Wheathoof - Random Say on LOS'),
 -- Kyle the Friendly (23622) - NSR
 -- Mulgore Flame Keeper (25936) - NSR
--- Flame Eater (25994) - NSR
 -- Paymaster (26075) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
 
@@ -14304,8 +14288,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Tanaris Flame Warden (25916) - NSR
 -- Tanaris Flame Keeper (25921) - NSR
--- Fire Eater (25962) - NSR
--- Flame Eater (25994) - NSR
 -- Summer Scorchling (26401) - NSR
 -- Don Carlos (28126) - NSR
 
@@ -14601,7 +14583,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mariner Evenmist 25007
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Teldrassil Flame Warden 25906
--- Fire Eater (25962) - NSR
 -- Master Fire Eater 25975
 -- Paymaster (26075) - NSR
 -- Midsummer Supplier 26123
@@ -31054,7 +31035,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('19228118','19228','1','7','100','0','259000','259000','0','0','0','0','1','-10810','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Text Emote (Phase 3)'),
 ('19228119','19228','1','7','100','0','263000','263000','0','0','0','0','1','-10859','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Male Undead Impersonation (Phase 3)'),
 ('19228120','19228','1','7','100','0','274000','274000','0','0','0','0','5','21','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Emote (Phase 3)'),
-('19228121','19228','1','7','100','0','281000','281000','0','0','0','0','1','-10831','-10833','-10842','0','0','0','0','0','0','0','0','Perry Gatner - Closing Random Say (Phase 3)');
+('19228121','19228','1','7','100','0','281000','281000','0','0','0','0','1','-10831','-10833','-10842','0','0','0','0','0','0','0','0','Perry Gatner - Closing Random Say (Phase 3)'),
+
+-- Midsummer Fire Festival
+-- Fire Eater 25962
+('2596201','25962','1','0','100','1','30000','45000','30000','45000','0','0','53','-10173','0','0','0','0','0','0','0','0','0','0','Fire Eater - Start Random Relay Script on Timer OOC'),
+-- Flame Eater 25994
+('2599401','25994','1','0','100','1','30000','45000','30000','45000','0','0','53','-10173','0','0','0','0','0','0','0','0','0','0','Flame Eater - Start Random Relay Script on Timer OOC');
 
 
 
@@ -33366,6 +33353,9 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10172,0,-11230,0,'21118 - Random Aggro Texts'),
 (10172,0,-11231,0,'21118 - Random Aggro Texts'),
 (10172,0,-11232,0,'21118 - Random Aggro Texts'),
+
+(10173,1,10202,0,'25962/25994 - Fire Breathing Script'),
+(10173,1,10203,0,'25962/25994 - Torch Juggling Script'),
 
 (12000,0,-10617,0,'Common Outland Nagas'),
 (12000,0,-10618,0,'Common Outland Nagas'),
