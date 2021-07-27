@@ -31039,9 +31039,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 -- Midsummer Fire Festival
 -- Fire Eater 25962
-('2596201','25962','1','0','100','1','30000','45000','30000','45000','0','0','53','-10173','0','0','0','0','0','0','0','0','0','0','Fire Eater - Start Random Relay Script on Timer OOC'),
+('2596201','25962','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Fire Eater - Start Random Relay Script on Timer OOC'),
 -- Flame Eater 25994
-('2599401','25994','1','0','100','1','30000','45000','30000','45000','0','0','53','-10173','0','0','0','0','0','0','0','0','0','0','Flame Eater - Start Random Relay Script on Timer OOC');
+('2599401','25994','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Flame Eater - Start Random Relay Script on Timer OOC');
 
 
 
@@ -33354,9 +33354,6 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10172,0,-11231,0,'21118 - Random Aggro Texts'),
 (10172,0,-11232,0,'21118 - Random Aggro Texts'),
 
-(10173,1,10202,0,'25962/25994 - Fire Breathing Script'),
-(10173,1,10203,0,'25962/25994 - Torch Juggling Script'),
-
 (12000,0,-10617,0,'Common Outland Nagas'),
 (12000,0,-10618,0,'Common Outland Nagas'),
 (12000,0,-10619,0,'Common Outland Nagas'),
@@ -33392,7 +33389,9 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (12008, 0, -11237, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
 (12008, 0, -11238, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
 (12008, 0, -11239, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
-(12008, 0, -11240, 0, ' Blood Elf Scout 16521 - Random Aggro Texts');
+(12008, 0, -11240, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
+(12009,1,10202,0,'25962/25994 - Fire Breathing Script'),
+(12009,1,10203,0,'25962/25994 - Torch Juggling Script');
 
 -- WOTLK IDs 20000+
 -- INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
