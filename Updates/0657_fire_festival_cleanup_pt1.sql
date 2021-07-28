@@ -158,4 +158,8 @@ INSERT INTO dbscripts_on_relay (id, delay, priority, command, datalong, datalong
 
 (10204, 3000, 0, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fire/Flame Eater and Midsummer Celebrant - Reset Orientation');
 
+DELETE FROM `dbscript_random_templates` WHERE `id` = 12009;
+INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+(12009,1,10202,0,'25962/25994 - Fire Breathing Script'),
+(12009,1,10203,0,'25962/25994 - Torch Juggling Script');
 

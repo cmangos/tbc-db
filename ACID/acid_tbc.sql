@@ -33392,9 +33392,8 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (12008, 0, -11237, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
 (12008, 0, -11238, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
 (12008, 0, -11239, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
-(12008, 0, -11240, 0, ' Blood Elf Scout 16521 - Random Aggro Texts'),
-(12009,1,10202,0,'25962/25994 - Fire Breathing Script'),
-(12009,1,10203,0,'25962/25994 - Torch Juggling Script');
+(12008, 0, -11240, 0, ' Blood Elf Scout 16521 - Random Aggro Texts');
+-- 12009 Reserved by DBScripts
 
 -- WOTLK IDs 20000+
 -- INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
