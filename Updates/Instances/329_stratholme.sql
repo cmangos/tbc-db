@@ -2162,12 +2162,12 @@ INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalo
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (176216, 1000, 13, 0, 0, 0, 176211, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Activate Cannonball trap'),
 (176217, 1000, 13, 0, 0, 0, 176211, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Activate Cannonball trap'),
-(176346, 0, 9, 23615, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
-(176349, 0, 9, 23616, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
-(176350, 0, 9, 23617, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
-(176351, 0, 9, 23618, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
-(176352, 0, 9, 23619, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
-(176353, 0, 9, 23620, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel');
+(176346, 0, 9, @OGUID+646, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
+(176349, 0, 9, @OGUID+647, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
+(176350, 0, 9, @OGUID+648, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
+(176351, 0, 9, @OGUID+649, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
+(176352, 0, 9, @OGUID+650, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel'),
+(176353, 0, 9, @OGUID+651, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'respawn Postbox Parcel');
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
