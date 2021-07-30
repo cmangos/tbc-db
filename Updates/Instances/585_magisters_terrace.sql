@@ -94,7 +94,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+43,2,146.191,-134.3537,-20.93017,0.7679449,13000,2468401),
 (@CGUID+43,3,146.191,-134.3537,-20.93017,0.7679449,18000,2468401),
 (@CGUID+43,4,146.191,-134.3537,-20.93017,0.7679449,16000,2468401),
--- Scripting for Sunblade Blood Knight Entry: 24684
 (@CGUID+44,1,151.4745,146.1255,-14.29825,4.502949,9000,1396),
 (@CGUID+44,2,151.4745,146.1255,-14.29825,4.502949,7000,1396),
 (@CGUID+44,5,151.4745,146.1255,-14.29825,4.502949,5000,1396),
@@ -130,22 +129,22 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+54,2,115.2049,-112.538,-21.11774,2.321288,6000,1001),
 (@CGUID+54,3,115.2049,-112.538,-21.11774,2.321288,11000,1001),
 -- Pathing for Sunblade Magister Entry: 24685
-(@CGUID+56,1,126.3029,-113.8252,-21.74248,0,0,0),
-(@CGUID+56,2,120.7826,-115.1834,-21.74248,0,0,0),
-(@CGUID+56,3,115.8551,-119.1613,-21.74248,0,0,0),
-(@CGUID+56,4,112.6779,-125.9572,-21.74248,0,0,0),
-(@CGUID+56,5,113.2127,-134.1264,-21.74248,0,0,0),
-(@CGUID+56,6,118.9533,-140.9369,-21.74248,0,0,0),
-(@CGUID+56,7,126.1441,-143.1216,-21.74248,0,0,0),
-(@CGUID+56,8,126.7938,-160.6909,-21.74248,100,5000,0),
-(@CGUID+56,9,126.7536,-143.1005,-21.74248,0,0,0),
-(@CGUID+56,10,132.9791,-141.7437,-21.74248,0,0,0),
-(@CGUID+56,11,138.256,-137.1655,-21.74248,0,0,0),
-(@CGUID+56,12,141.2333,-130.8463,-21.74248,0,0,0),
-(@CGUID+56,13,140.5631,-123.5274,-21.74248,0,0,0),
-(@CGUID+56,14,135.9167,-117.2681,-21.74248,0,0,0),
-(@CGUID+56,15,127.0309,-113.8366,-21.74248,0,0,0),
-(@CGUID+56,16,126.8719,-90.38792,-21.74248,100,5000,0),
+(@CGUID+56, 1, 126.7938, -160.69092, -21.742477, 100, 5000, 0),
+(@CGUID+56, 2, 126.75357, -143.1005, -21.742477, 100, 0, 0),
+(@CGUID+56, 3, 132.97911, -141.74371, -21.742476, 100, 0, 0),
+(@CGUID+56, 4, 138.256, -137.16545, -21.742477, 100, 0, 0),
+(@CGUID+56, 5, 141.23332, -130.84633, -21.742477, 100, 0, 0),
+(@CGUID+56, 6, 140.56306, -123.5274, -21.742477, 100, 0, 0),
+(@CGUID+56, 7, 135.91673, -117.2681, -21.742477, 100, 0, 0),
+(@CGUID+56, 8, 127.0309, -113.83658, -21.742476, 100, 0, 0),
+(@CGUID+56, 9, 126.87186, -90.38792, -21.742476, 100, 5000, 0),
+(@CGUID+56, 10, 126.30286, -113.82516, -21.742476, 100, 0, 0),
+(@CGUID+56, 11, 120.78259, -115.18343, -21.742477, 100, 0, 0),
+(@CGUID+56, 12, 115.85514, -119.16132, -21.742477, 100, 0, 0),
+(@CGUID+56, 13, 112.67792, -125.95721, -21.742477, 100, 0, 0),
+(@CGUID+56, 14, 113.21269, -134.12642, -21.742477, 100, 0, 0),
+(@CGUID+56, 15, 118.95335, -140.93686, -21.742477, 100, 0, 0),
+(@CGUID+56, 16, 126.14413, -143.12163, -21.742477, 100, 0, 0),
 -- Scripting for Sunblade Magister Entry: 24685
 (@CGUID+57,1,127.1523,19.62066,-2.73584,2.844887,18000,1001),
 (@CGUID+57,2,127.1523,19.62066,-2.73584,2.844887,31000,1001),
@@ -261,7 +260,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+94,2,231.616,-1.85525,-2.8658,1.02974,42000,2468902),
 (@CGUID+94,3,231.616,-1.85525,-2.8658,1.02974,61000,2468902),
 (@CGUID+94,4,231.616,-1.85525,-2.8658,1.02974,22000,2468902),
--- Scripting for Wretched Husk Entry: 24690
 (@CGUID+99,1,231.695,2.63455,-2.88275,5.61996,42000,2469002),
 (@CGUID+99,2,231.695,2.63455,-2.88275,5.61996,21000,2469002),
 (@CGUID+99,3,231.695,2.63455,-2.88275,5.61996,61000,2469002),
@@ -271,7 +269,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+100,2,139.101,-104.6437,-20.92453,5.602507,13000,1001),
 (@CGUID+100,3,139.101,-104.6437,-20.92453,5.602507,4000,1001),
 (@CGUID+100,4,139.101,-104.6437,-20.92453,5.602507,11000,1001),
--- Scripting for Sunblade Physician Entry: 24687
 (@CGUID+101,1,148.2014,145.5804,-14.29825,5.340707,29000,1396),
 (@CGUID+101,2,148.2014,145.5804,-14.29825,5.340707,17000,1396),
 (@CGUID+101,3,148.2014,145.5804,-14.29825,5.340707,34000,1396),
@@ -800,26 +797,51 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+206,9,97.64323,-449.1096,-46.1077,0,0,0),
 (@CGUID+206,10,112.4766,-436.349,-42.15494,0,0,0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (24781);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (24762,24781);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
--- Pathing for Nether Energy Entry: 24781 / Sunblade Keeper Entry: 24762
-(24781, 0, 1, 230.4191, -255.7199, -5.429756, 100, 0, 0),
-(24781, 0, 2, 230.9848, -249.7425, -5.342481, 100, 0, 0),
-(24781, 0, 3, 229.5737, -246.4032, -5.268515, 100, 0, 0),
-(24781, 0, 4, 226.1196, -245.4208, -5.270037, 100, 0, 0),
-(24781, 0, 5, 221.1804, -244.629, -4.863599, 100, 0, 0),
-(24781, 0, 6, 220.0283, -240.2868, -4.795782, 100, 0, 0),
-(24781, 0, 7, 227.0118, -239.5519, -5.342481, 100, 0, 0),
-(24781, 0, 8, 230.7509, -234.7132, -5.342481, 100, 0, 0),
-(24781, 0, 9, 226.8401, -228.8834, -5.342481, 100, 0, 0),
-(24781, 0, 10, 220.9454, -217.475, -5.342481, 100, 0, 0),
-(24781, 0, 11, 223.4224, -203.9738, -5.342481, 100, 0, 0),
-(24781, 0, 12, 231.4333, -191.54, -8.345167, 100, 0, 0),
-(24781, 0, 13, 231.6621, -166.9854, -8.342498, 100, 0, 0),
-(24781, 0, 14, 231.2563, -149.6031, -8.246367, 100, 0, 0),
-(24781, 0, 15, 231.4618, -135.4703, -8.325504, 100, 0, 0),
-(24781, 0, 16, 231.7793, -135.2323, -2.05356, 100, 0, 2478101),
-(24781, 0, 17, 231.7793, -135.2578, -9.328548, 100, 1, 1); -- Despawn
+-- Sunblade Keeper 24762 - handled by creature_linking_template FLAG_FOLLOW atm
+-- (24762, 0, 1, 231.5867, -141.90886, -9.290644, 100, 0, 0),
+-- (24762, 0, 2, 232.50551, -157.80933, -9.297567, 100, 0, 0),
+-- (24762, 0, 3, 232.14069, -172.21246, -9.353727, 100, 0, 0),
+-- (24762, 0, 4, 231.80626, -192.30945, -9.375409, 100, 0, 0),
+-- (24762, 0, 5, 225.66975, -204.59773, -6.342481, 100, 0, 0),
+-- (24762, 0, 6, 221.6135, -215.39893, -6.342481, 100, 0, 0),
+-- (24762, 0, 7, 226.18652, -226.44984, -6.342481, 100, 0, 0),
+-- (24762, 0, 8, 229.17464, -235.99648, -6.3424807, 100, 0, 0),
+-- (24762, 0, 9, 227.92003, -239.52887, -6.245849, 100, 0, 0),
+-- (24762, 0, 10, 221.04224, -239.69154, -5.844395, 100, 0, 0),
+-- (24762, 0, 11, 221.1894, -245.72404, -5.890924, 100, 0, 0),
+-- (24762, 0, 12, 230.49236, -245.70107, -6.2319875, 100, 0, 0),
+-- (24762, 0, 13, 227.90315, -260.1953, -7.287868, 100, 0, 0),
+-- (24762, 0, 14, 227.0436, -267.96893, -8.293717, 100, 0, 1),
+
+-- Pathing for Nether Energy Entry: 24781
+(24781, 0, 1, 230.41905, -255.71986, -5.4297557, 100, 0, 0),
+(24781, 0, 2, 230.98476, -249.74254, -5.3424807, 100, 0, 0),
+(24781, 0, 3, 229.57373, -246.40321, -5.2685146, 100, 0, 0),
+(24781, 0, 4, 226.11958, -245.42079, -5.270037, 100, 0, 0),
+(24781, 0, 5, 221.18037, -244.62898, -4.863599, 100, 0, 0),
+(24781, 0, 6, 220.02832, -240.28676, -4.7957816, 100, 0, 0),
+(24781, 0, 7, 227.01181, -239.55186, -5.3424807, 100, 0, 0),
+(24781, 0, 8, 230.75093, -234.71324, -5.342481, 100, 0, 0),
+(24781, 0, 9, 226.84007, -228.8834, -5.342481, 100, 0, 0),
+(24781, 0, 10, 220.94539, -217.47504, -5.342481, 100, 0, 0),
+(24781, 0, 11, 223.42242, -203.97375, -5.342481, 100, 0, 0),
+(24781, 0, 12, 231.43335, -191.53998, -8.345167, 100, 0, 0),
+(24781, 0, 13, 231.66206, -166.9854, -8.342498, 100, 0, 0),
+(24781, 0, 14, 231.25632, -149.60307, -8.246367, 100, 0, 0),
+(24781, 0, 15, 231.46184, -135.47028, -8.325504, 100, 0, 0),
+(24781, 0, 16, 231.77934, -135.23232, -2.0535603, 100, 1, 2478101);
+-- (24781, 0, 17, 231.77934, -135.25781, -9.328548, 100, 1, 1); -- Falls to Ground on Death
+
+DELETE FROM `creature_movement_template` WHERE `entry` IN (24844);
+INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(24844,1,1,165.9681,-408.1578,-11.50428,0,0,100),
+(24844,1,2,164.3802,-397.1771,2.083333,0,0,100),
+(24844,1,3,162.7923,-386.1964,15.67094,0,0,100),
+(24844,1,4,151.5555,-345.349,5.92646,0,0,100),
+(24844,1,5,162.2416,-299.8032,-5.436685,0,0,100),
+(24844,1,7,199.7482,-272.3315,-8.186677,1000,0,100); -- make it -7.186677 from wotlk onwards because hoverheight
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+14, 0, 0, 1, 16, 0, 0, '32567'), -- Invisible Stalker
@@ -839,7 +861,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_fl
 (@CGUID+92, 0, 1, 1, 16, 0, 0, NULL), -- Wretched Bruiser
 (@CGUID+93, 0, 1, 1, 16, 0, 0, NULL), -- creature_spawn_entry
 (@CGUID+94, 0, 0, 1, 16, 398, 0, NULL), -- creature_spawn_entry
-(@CGUID+99, 0, 0, 1, 16, 398, 0, NULL), -- Wretched Husk
+(@CGUID+99, 0, 0, 1, 16, 398, 0, NULL), -- creature_spawn_entry
 (@CGUID+196, 0, 7, 1, 16, 0, 0, NULL); -- Tyrith
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
@@ -869,17 +891,20 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+49, @CGUID+85, 1155), -- creature_spawn_entry -> Sunblade Physician
 (@CGUID+61, @CGUID+85, 1155), -- creature_spawn_entry -> Sunblade Physician
 (@CGUID+76, @CGUID+85, 1155), -- Sunblade Warlock -> Sunblade Physician
-(@CGUID+94, @CGUID+99, 1155), -- creature_spawn_entry -> Wretched Husk
+(@CGUID+94, @CGUID+99, 1155), -- creature_spawn_entry -> creature_spawn_entry
+(@CGUID+99, @CGUID+117, 1), -- creature_spawn_entry -> Selin Fireheart
 (@CGUID+86, @CGUID+98, 1155), -- Wretched Skulker -> Wretched Husk
 (@CGUID+87, @CGUID+98, 1155), -- creature_spawn_entry -> Wretched Husk
 (@CGUID+90, @CGUID+98, 1155), -- Wretched Bruiser -> Wretched Husk
 (@CGUID+93, @CGUID+98, 1155), -- creature_spawn_entry -> Wretched Husk
 (@CGUID+97, @CGUID+98, 1155), -- Wretched Husk -> Wretched Husk
+(@CGUID+98, @CGUID+117, 1), -- Wretched Husk -> Selin Fireheart
 (@CGUID+88, @CGUID+96, 1155), -- Wretched Skulker -> Wretched Husk
 (@CGUID+89, @CGUID+96, 1155), -- Wretched Skulker -> Wretched Husk
 (@CGUID+91, @CGUID+96, 1155), -- Wretched Bruiser -> Wretched Husk
 (@CGUID+92, @CGUID+96, 1155), -- Wretched Bruiser -> Wretched Husk
 (@CGUID+95, @CGUID+96, 1155), -- Wretched Husk -> Wretched Husk
+(@CGUID+96, @CGUID+117, 1), -- Wretched Husk -> Selin Fireheart
 -- Vexallus
 (@CGUID+125, @CGUID+124, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
 (@CGUID+126, @CGUID+124, 1679), -- Brightscale Wyrm -> Brightscale Wyrm
@@ -972,9 +997,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+84, @CGUID+75, 1155), -- Sunblade Physician -> creature_spawn_entry
 (@CGUID+63, @CGUID+32, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+83, @CGUID+46, 1155), -- Sunblade Physician -> creature_spawn_entry
-(@CGUID+44, @CGUID+31, 1167), -- Sunblade Blood Knight -> Sunblade Mage Guard
+(@CGUID+44, @CGUID+31, 1167), -- creature_spawn_entry -> Sunblade Mage Guard
 (@CGUID+71, @CGUID+31, 1167), -- Sunblade Warlock -> Sunblade Mage Guard
-(@CGUID+101, @CGUID+31, 1167), -- Coilskar Witch -> Sunblade Mage Guard
+(@CGUID+101, @CGUID+31, 1167), -- creature_spawn_entry -> Sunblade Mage Guard
 (@CGUID+106, @CGUID+31, 1167), -- Sister of Torment -> Sunblade Mage Guard
 (@CGUID+110, @CGUID+31, 1167); -- Ethereum Smuggler -> Sunblade Mage Guard
 
@@ -987,14 +1012,16 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (24558, 585, 24560, 11, 0), -- Ellrys Duskhallow -> Priestess Delrissa
 (24559, 585, 24560, 11, 0), -- Warlord Salaris -> Priestess Delrissa
 (24561, 585, 24560, 11, 0), -- Yazzai -> Priestess Delrissa
-(24722, 585, 24723, 32, 0), -- Fel Crystal -> Selin Fireheart
-(24762, 585, 24781, 9856, 0), -- Sunblade Keeper -> Nether Energy
-(24781, 585, 24744, 1024, 0); -- Sunblade Keeper -> Vexallus
+(24722, 585, 24723, 1184, 0), -- Fel Crystal -> Selin Fireheart
+(24762, 585, 24781, 9868, 0), -- Sunblade Keeper -> Nether Energy
+(24781, 585, 24744, 1041, 0), -- Nether Energy -> Vexallus
+(24675, 585, 24664, 4096, 0); -- Phoenix Egg -> Kael'thas Sunstrider
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+32, 24683), (@CGUID+32, 24684), (@CGUID+32, 24686), -- Sunblade Mage Guard, Sunblade Blood Knight, Sunblade Warlock
 (@CGUID+35, 24683), (@CGUID+35, 24684), -- Sunblade Mage Guard, Sunblade Blood Knight
 (@CGUID+41, 24683), (@CGUID+41, 24684), -- Sunblade Mage Guard, Sunblade Blood Knight
+(@CGUID+44, 24684), (@CGUID+44, 24685), -- Sunblade Blood Knight, Sunblade Magister
 (@CGUID+46, 24684), (@CGUID+46, 24686), -- Sunblade Blood Knight, Sunblade Warlock
 (@CGUID+48, 24684), (@CGUID+48, 24687), -- Sunblade Blood Knight, Sunblade Physician
 (@CGUID+49, 24684), (@CGUID+49, 24685), -- Sunblade Blood Knight, Sunblade Magister
@@ -1007,7 +1034,9 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+75, 24684), (@CGUID+75, 24686), -- Sunblade Blood Knight, Sunblade Warlock
 (@CGUID+87, 24688), (@CGUID+87, 24689), -- Wretched Skulker, Wretched Bruiser
 (@CGUID+93, 24688), (@CGUID+93, 24689), -- Wretched Skulker, Wretched Bruiser
-(@CGUID+94, 24688), (@CGUID+94, 24689); -- Wretched Skulker, Wretched Bruiser
+(@CGUID+94, 24688), (@CGUID+94, 24689), -- Wretched Skulker, Wretched Bruiser
+(@CGUID+99, 24688), (@CGUID+99, 24690), -- Wretched Skulker, Wretched Husk
+(@CGUID+101, 24687), (@CGUID+101, 24696); -- Sunblade Physician, Coilskar Witch
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 1412, 585, 3, 106.8108, -32.7257, 2.083333, 0.5340122, 7200, 7200, 15, 0, 0, 1), -- Squirrel
@@ -1053,7 +1082,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+41, 0, 585, 3, 123.0538, -133.2421, -20.46159, 1.012291, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+42, 24684, 585, 3, 134.47, -18.90777, -2.637789, 2.775074, 7200, 7200, 0, 0, 0, 2), -- Sunblade Blood Knight
 (@CGUID+43, 24684, 585, 3, 146.191, -134.3537, -20.93017, 0.7679449, 7200, 7200, 0, 0, 0, 2), -- Sunblade Blood Knight
-(@CGUID+44, 24684, 585, 3, 151.4745, 146.1255, -14.29825, 4.502949, 7200, 7200, 0, 0, 0, 2), -- Sunblade Blood Knight
+(@CGUID+44, 0, 585, 3, 151.4745, 146.1255, -14.29825, 4.502949, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+45, 24684, 585, 3, 151.5336, -28.70573, -21.3511, 1.27409, 7200, 7200, 0, 0, 0, 2), -- Sunblade Blood Knight
 (@CGUID+46, 0, 585, 3, 160.1445, 40.15039, -19.92153, 1.48353, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+47, 24684, 585, 3, 163.7176, 16.77892, -21.45707, 2.059489, 7200, 7200, 0, 0, 0, 2), -- Sunblade Blood Knight
@@ -1065,7 +1094,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+53, 24685, 585, 3, 113.574, -152.6129, -21.05598, 5.5676, 7200, 7200, 0, 0, 0, 2), -- Sunblade Magister
 (@CGUID+54, 24685, 585, 3, 115.2049, -112.538, -21.11774, 2.321288, 7200, 7200, 0, 0, 0, 2), -- Sunblade Magister
 (@CGUID+55, 0, 585, 3, 121.4358, -126.0185, -20.44426, 5.61996, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
-(@CGUID+56, 24685, 585, 3, 126.6123, -153.1866, -21.74248, 1.556787, 7200, 7200, 0, 0, 0, 2), -- Sunblade Magister
+(@CGUID+56, 24685, 585, 3, 126.7938, -160.69092, -21.742477, 1.556787, 7200, 7200, 0, 0, 0, 2), -- Sunblade Magister
 (@CGUID+57, 24685, 585, 3, 127.1523, 19.62066, -2.73584, 2.844887, 7200, 7200, 0, 0, 0, 2), -- Sunblade Magister
 (@CGUID+58, 24685, 585, 3, 146.7917, -125.1393, -21.11193, 5.707227, 7200, 7200, 0, 0, 0, 2), -- Sunblade Magister
 (@CGUID+59, 24685, 585, 3, 158.9377, 23.03212, -21.31738, 5.742133, 7200, 7200, 0, 0, 0, 2), -- Sunblade Magister
@@ -1108,9 +1137,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+96, 24690, 585, 3, 224.1339, 23.2921, -3.017883, 5.305801, 7200, 7200, 0, 0, 0, 2), -- Wretched Husk
 (@CGUID+97, 24690, 585, 3, 227.3105, -22.96918, -2.972695, 1.919862, 7200, 7200, 0, 0, 0, 2), -- Wretched Husk
 (@CGUID+98, 24690, 585, 3, 228.5601, -16.65473, -2.966641, 3.595378, 7200, 7200, 0, 0, 0, 2), -- Wretched Husk
-(@CGUID+99, 24690, 585, 3, 231.6949, 2.634549, -2.882751, 5.61996, 7200, 7200, 0, 0, 0, 2), -- Wretched Husk
+(@CGUID+99, 0, 585, 3, 231.6949, 2.634549, -2.882751, 5.61996, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+100, 24696, 585, 3, 139.101, -104.6437, -20.92453, 5.602507, 7200, 7200, 0, 0, 0, 2), -- Coilskar Witch
-(@CGUID+101, 24696, 585, 3, 148.2014, 145.5804, -14.29825, 5.340707, 7200, 7200, 0, 0, 0, 2), -- Coilskar Witch
+(@CGUID+101, 0, 585, 3, 148.2014, 145.5804, -14.29825, 5.340707, 7200, 7200, 0, 0, 0, 2), -- creature_spawn_entry
 (@CGUID+102, 24697, 585, 3, 105.2381, -33.20052, -21.29979, 1.413717, 7200, 7200, 0, 0, 0, 2), -- Sister of Torment
 (@CGUID+103, 24697, 585, 3, 116.1172, -107.2371, -20.94357, 3.752458, 7200, 7200, 0, 0, 0, 2), -- Sister of Torment
 (@CGUID+104, 24697, 585, 3, 118.4262, -151.4972, -21.08203, 4.08407, 7200, 7200, 0, 0, 0, 2), -- Sister of Torment
@@ -1238,7 +1267,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+232, 26057, 585, 3, -25.29362, -599.4757, -64.19142, 2.6529, 7200, 7200, 0, 0, 0, 0), -- Anveena Marker
 (@CGUID+233, 26579, 585, 3, -25.23611, -599.9462, -31.01963, 3.193953, 7200, 7200, 0, 0, 0, 0), -- Anveena Replica
 (@CGUID+234, 24762, 585, 3, 223.05, -274.40, -8.11, 1.395529, 120, 180, 0, 0, 0, 0), -- Sunblade Keeper		// not sniff due to formation pathing
-(@CGUID+235, 24781, 585, 3, 223.5966, -270.9579, -7.945513, 1.149835, 120, 180, 0, 0, 0, 2); -- Nether Energy
+(@CGUID+235, 24781, 585, 3, 223.5966, -270.9579, -7.945513, 1.149835, 120, 180, 0, 0, 0, 2), -- Nether Energy
+(@CGUID+236, 24848, 585, 0, 197.8629, -272.7441, -8.651634, 0, 120, 180, 0, 0, 0, 0); -- Kalecgos - spawned manually in script
 
 -- ===========
 -- GAMEOBJECTS
