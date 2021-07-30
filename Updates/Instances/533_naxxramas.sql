@@ -1044,8 +1044,8 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+337, @CGUID+340, 3), -- Patchwork Golem -> Patchwork Golem
 (@CGUID+341, @CGUID+340, 3), -- Patchwork Golem -> Patchwork Golem
 (@CGUID+651, @CGUID+650, 515), -- Deathknight Captain -> Deathknight Captain
-(@CGUID+690, @CGUID+670, 515), -- Death Touched Warrior -> Deathknight
-(@CGUID+691, @CGUID+670, 515), -- Death Touched Warrior -> Deathknight
+(@CGUID+684, @CGUID+670, 515), -- Death Touched Warrior -> Deathknight
+(@CGUID+685, @CGUID+670, 515), -- Death Touched Warrior -> Deathknight
 (@CGUID+709, @CGUID+704, 515), -- Necro Knight -> Shade of Naxxramas
 (@CGUID+710, @CGUID+704, 515), -- Necro Knight -> Shade of Naxxramas
 (@CGUID+759, @CGUID+143, 1+4+128+1024), -- Tesla Coil -> Stalagg
