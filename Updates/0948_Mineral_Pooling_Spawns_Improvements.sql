@@ -64,7 +64,6 @@ UPDATE `gameobject` SET `position_x` = -8750.47, `position_y` = -2257.78, `posit
 UPDATE `gameobject` SET `position_x` = -8688.65, `position_y` = -2169.98, `position_z` = 156.78 WHERE `guid` IN (75969,75970,75971); -- pool 6010
 UPDATE `gameobject` SET `position_x` = -9654.12, `position_y` = -2031.87, `position_z` = 60.49 WHERE `guid` IN (76071,76072,76073); -- pool 6044
 UPDATE `gameobject` SET `position_x` = -8810.44, `position_y` = -2136.56, `position_z` = 149.64 WHERE `guid` IN (75951,75952,75953); -- pool 6004
-UPDATE `gameobject` SET `position_z` = 161.03 WHERE `guid` = 105284; -- Tin Vein
 UPDATE `gameobject` SET `position_x` = 1627.8993, `position_y` = 5159.116, `position_z` = 267.28177, `orientation` = 5.8294005, `rotation2` = -0.22495079, `rotation3` = 0.9743701 WHERE `guid` IN (195747,195748,195749); -- Pool 11506
 UPDATE `gameobject` SET `position_x` = -3441.48, `position_y` = 2515.445, `position_z` = 57.70269, `orientation` = -1.396263 WHERE `guid` IN (195484,195485,195486,195487); -- Pool 11573
 
@@ -162,7 +161,7 @@ UPDATE pool_template SET max_limit=30 WHERE entry IN (2018);
 UPDATE pool_template SET max_limit=22 WHERE entry IN (2019);
 
 -- ('2020','4','Master Mineral Pool - Redridge Mountians (Rethban Caverns)') - 21 Total
-UPDATE pool_template SET max_limit=5 WHERE entry IN (2020);
+UPDATE pool_template SET max_limit=4 WHERE entry IN (2020);
 UPDATE gameobject SET spawntimesecsmin=180, spawntimesecsmax=360 WHERE guid IN (SELECT guid FROM pool_gameobject WHERE pool_entry IN (SELECT pool_id FROM pool_pool WHERE mother_pool IN (2020)));
 
 -- ('2021','17','Master Mineral Pool - Searing Gorge (West Section)') - 76 Total
