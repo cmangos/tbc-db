@@ -1216,7 +1216,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+152, 25507, 580, 1, 1670.692, 1083.329, 16.90164, 5.009095, 7200, 7200, 0, 0, 0, 0), -- Sunblade Protector
 (@CGUID+153, 25507, 580, 1, 1672.398, 891.0997, 14.62765, 2.164311, 7200, 7200, 0, 0, 0, 2), -- Sunblade Protector
 (@CGUID+154, 25507, 580, 1, 1689.932, 1016.3, 17.09456, 3.298672, 7200, 7200, 0, 0, 0, 0), -- Sunblade Protector
-(@CGUID+155, 25507, 580, 1, 1700.759, 746.3304, 53.51117, 1.692969, 7200, 7200, 0, 0, 0, 2), -- Sunblade Protector - On Kalecgos death remove aura 10255 and start pathing
+(@CGUID+155, 25507, 580, 1, 1700.759, 746.3304, 53.51117, 1.692969, 7200, 7200, 0, 0, 0, 0), -- Sunblade Protector - On Kalecgos death remove aura 10255 and start pathing
 (@CGUID+156, 25507, 580, 1, 1704.541, 982.2357, 53.07217, 1.50733, 7200, 7200, 0, 0, 0, 2), -- Sunblade Protector
 (@CGUID+157, 25507, 580, 1, 1720.031, 1022.798, 16.58696, 0.3839724, 7200, 7200, 0, 0, 0, 0), -- Sunblade Protector
 (@CGUID+158, 25507, 580, 1, 1764.875, 945.3754, 16.90821, 1.605703, 7200, 7200, 0, 0, 0, 0), -- Sunblade Protector - unconfirmed
