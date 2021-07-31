@@ -5659,8 +5659,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jimmy (3512) - NSR
 -- Miss Danna 3513
 ('351301','3513','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible on Spawn'),
--- Thomas Miller
-('351801','3518','1','0','100','1','0','0','120000','180000','0','0','54','0','0','9','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
+-- Thomas Miller 3518
+('351801','3518','1','0','100','1','20000','45000','20000','45000','0','0','54','0','0','9','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
 -- Ol' Emma 3520
 -- Sewer Beast (3581) - NSR
 -- Jenn Langston 3626
@@ -31129,8 +31129,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-137','I will be reborn, mortals! Incendius shall raise me from these ashes!','0','0','0','0','5059','9026'),
 -- Classic PLEASE RE-USE 138 - 139
 ('-140','The coils of death will crush you!','5787','1','0','0','6095','3670'),
-('-141','Rolls, buns and bread. Baked fresh!','0','0','0','0','1103','3518'),
-('-142','Warm, wholesome bread!','0','0','0','0','1102','3518'),
+('-141','Rolls, buns and bread. Baked fresh!','0','0','0','0','1103','Thomas Miller 3518'),
+('-142','Warm, wholesome bread!','0','0','0','0','1102','Thomas Miller 3518'),
 ('-143','The Defias shall succeed! No meek adventurer will stop us!','0','0','0','0','3936','1755'),
 ('-144','What?! How dare you!','0','0','0','0','3934','1754'),
 ('-145','%s flees toward the safety of another tiger.','0','2','0','0','10549','Zulian Cub fleeing text'),
@@ -31185,8 +31185,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-201','My talons will shred your puny body, $r.','0','0','0','0','2230','Common Harpy Text'),
 ('-202','A fine trophy your head will make, $r.','0','0','0','0','2229','Common Harpy Text'),
 ('-203','NO!!!  It puts the tannin in the basket, or it gets the mallet again!','0','1','0','0','9304','14351'),
-('-204','Fresh bread for sale!','0','0','0','0','1101','3518'),
-('-205','Freshly baked bread for sale!','0','0','0','0','1104','3518'),
+('-204','Fresh bread for sale!','0','0','0','0','1101','Thomas Miller 3518'),
+('-205','Freshly baked bread for sale!','0','0','0','0','1104','Thomas Miller 3518'),
 ('-206','Shine yer armor for a copper.','0','0','0','0','185','1402,1405'),
 ('-207','Help a poor bloke out?','0','0','0','0','183','1402,1405'),
 ('-208','Could ye spare some coin?','0','0','0','0','179','1402,1405'),
@@ -32980,10 +32980,10 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (8, 0, -229, 0, 'Common Troll - Random Aggro Texts'),
 (8, 0, -228, 0, 'Common Troll - Random Aggro Texts'),
 (8, 0, -10339, 0, 'Common Troll - Random Aggro Texts'),
-(9, 0, -141, 0, 'Thomas Miller - Random OOC Texts'),
-(9, 0, -142, 0, 'Thomas Miller - Random OOC Texts'),
-(9, 0, -204, 0, 'Thomas Miller - Random OOC Texts'),
-(9, 0, -205, 0, 'Thomas Miller - Random OOC Texts'),
+(9, 0, -141, 0, 'Thomas Miller 3518 - Random OOC Texts'),
+(9, 0, -142, 0, 'Thomas Miller 3518 - Random OOC Texts'),
+(9, 0, -204, 0, 'Thomas Miller 3518 - Random OOC Texts'),
+(9, 0, -205, 0, 'Thomas Miller 3518 - Random OOC Texts'),
 
 (899, 0, -1049, 0, 'Flik 14860 - Random OOC Texts'),
 (899, 0, -1050, 0, 'Flik 14860 - Random OOC Texts'),
