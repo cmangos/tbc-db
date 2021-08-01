@@ -4514,6 +4514,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('214901','2149','4','0','100','0','0','0','0','0','0','0','1','-374','-374','-374','0','0','0','0','0','0','0','0','Dark Iron Raider - Random Say on Aggro (Could be more Says but not 100% Sure)'),
 -- Large Loch Crocolisk (2.4.3 Official Data)
 ('247601','2476','0','0','85','1025','4100','13900','32200','46200','0','0','11','3427','1','32','0','0','0','0','0','0','0','0','Large Loch Crocolisk - Cast Infected Wound'),
+-- Greishan Ironstove 3291
+('329101','3291','1','0','100','1','1000','1000','60000','60000','0','0','54','0','0','896','0','0','0','0','0','0','0','0','Greishan Ironstove - Random Say OOC'),
 -- Mountaineer Pebblebitty 3836 - npc_mountaineer_pebblebitty
 -- Shanda the Spinner
 ('1426601','14266','1','0','100','0','1000','1000','0','0','0','0','11','11919','0','32','0','0','0','0','0','0','0','0','Shanda the Spinner - Cast Poison Proc OOC'),
@@ -5660,7 +5662,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Miss Danna 3513
 ('351301','3513','11','0','100','0','0','0','0','0','0','0','42','1','0','0','0','0','0','0','0','0','0','0','Miss Danna - Set Invincible on Spawn'),
 -- Thomas Miller 3518
-('351801','3518','1','0','100','1','20000','45000','20000','45000','0','0','54','0','0','9','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
+('351801','3518','1','0','100','1','20000','45000','20000','45000','0','0','54','0','0','10','0','0','0','0','0','0','0','0','Thomas Miller - Random Say OOC'),
 -- Ol' Emma 3520
 -- Sewer Beast (3581) - NSR
 -- Jenn Langston 3626
@@ -31210,7 +31212,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-221','You merely prolong the inevitable, $r. Succumb. She will free your misguided soul.','0','0','0','0','7462','Nathanos Text'),
 ('-222','Intruders!  The Hammer shall fall upon you.','0','0','0','0','2407','Twilight Elementalist 4814'),
 ('-223','Your blood shall be the catalyst for the Old Gods'' return!','0','0','0','0','2409','Twilight Elementalist 4814'),
--- Classic PLEASE RE-USE 224 - 227
+('-224','Fresh Bread! Get your oven fresh bread here!','0','0','6','0','995','Greishan Ironstove 3291'),
+('-225','Get\'em while they are nice and fresh! Loaves of bread here!','0','0','6','0','996','Greishan Ironstove 3291'),
+('-226','All kinds of bread here! Made fresh today. Get\'em while they last!','0','0','6','0','997','Greishan Ironstove 3291'),
+('-227','Bread here! Loaves of your favorites! Nice and fresh!','0','0','6','0','998','Greishan Ironstove 3291'),
 ('-228','I gonna make you into mojo!','0','0','0','0','10435','Common Troll Text'),
 ('-229','Killing you be easy.','0','0','0','0','1909','Common Troll Text'),
 ('-230','You be dead soon!','0','0','0','0','10434','Common Troll Text'),
@@ -32985,11 +32990,17 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (8, 0, -229, 0, 'Common Troll - Random Aggro Texts'),
 (8, 0, -228, 0, 'Common Troll - Random Aggro Texts'),
 (8, 0, -10339, 0, 'Common Troll - Random Aggro Texts'),
-(9, 0, -141, 0, 'Thomas Miller 3518 - Random OOC Texts'),
-(9, 0, -142, 0, 'Thomas Miller 3518 - Random OOC Texts'),
-(9, 0, -204, 0, 'Thomas Miller 3518 - Random OOC Texts'),
-(9, 0, -205, 0, 'Thomas Miller 3518 - Random OOC Texts'),
+-- 9 Reserved by DBScripts
+(10, 0, -141, 0, 'Thomas Miller 3518 - Random OOC Texts'),
+(10, 0, -142, 0, 'Thomas Miller 3518 - Random OOC Texts'),
+(10, 0, -204, 0, 'Thomas Miller 3518 - Random OOC Texts'),
+(10, 0, -205, 0, 'Thomas Miller 3518 - Random OOC Texts'),
 
+(896, 0, -224, 0, 'Greishan Ironstove 3291 - Random OOC Texts'),
+(896, 0, -225, 0, 'Greishan Ironstove 3291 - Random OOC Texts'),
+(896, 0, -226, 0, 'Greishan Ironstove 3291 - Random OOC Texts'),
+(896, 0, -227, 0, 'Greishan Ironstove 3291 - Random OOC Texts'),
+-- 897 - 898 Reserved by DBScripts
 (899, 0, -1049, 0, 'Flik 14860 - Random OOC Texts'),
 (899, 0, -1050, 0, 'Flik 14860 - Random OOC Texts'),
 (899, 0, -1051, 0, 'Flik 14860 - Random OOC Texts'),
@@ -32998,6 +33009,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (900, 0, -24, 0, 'Hargin Mundar 1476 - Random OOC Texts'),
 (900, 0, -25, 0, 'Hargin Mundar 1476 - Random OOC Texts'),
 (900, 0, -26, 0, 'Hargin Mundar 1476 - Random OOC Texts'),
+-- 901 - 903 Reserved by DBScripts
 (904, 0, -1466, 0, 'Servant of 7668,7669,7670,7671 - Death'),
 (904, 0, -1467, 0, 'Servant of 7668,7669,7670,7671 - Death'),
 (904, 0, -1468, 0, 'Servant of 7668,7669,7670,7671 - Death'),
