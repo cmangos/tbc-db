@@ -126,7 +126,7 @@ INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `posit
 (6577, 1, -5368.92, -3747.12, 304.661, 2.00713, 540000, 0),
 (6577, 2, -5375.95, -3731.8, 300.288, 100, 5000, 657701);
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 127601;
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 657701;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
 (657701, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2000009107, 0, 0, 0, 0, 0, 0, 0, 0, 'Bingles Blastenheimer 6577 - Say');
 
