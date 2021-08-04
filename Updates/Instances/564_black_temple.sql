@@ -1300,21 +1300,21 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+794, 16, 717.5137, 875.2517, 88.3258, 0, 0, 100),
 (@CGUID+794, 17, 708.2299, 879.131, 86.40916, 0, 0, 100),
 (@CGUID+794, 18, 706.2591, 879.9013, 85.68813, 0, 0, 100),
--- Pathing for Bonechewer Behemoth Entry: 23196 - Needs pathID for creature_movement due to MovementType Change for @CGUID+543
-(@CGUID+543, 1, 822.3735, 124.8126, 112.52, 12000, 0, 100), -- 2319601 idle
-(@CGUID+543, 2, 825.2758, 62.25126, 112.7349, 60000, 0, 100), -- 2319602 spawndist 3
--- Pathing for Bonechewer Behemoth Entry: 23196 - Needs pathID for creature_movement due to MovementType Change for @CGUID+544
+-- Pathing for Bonechewer Behemoth Entry: 23196
+(@CGUID+543, 1, 822.3735, 124.8126, 112.52, 12000, 0, 100), -- idle
+(@CGUID+543, 2, 825.2758, 62.25126, 112.7349, 1, 2319601, 100), -- MovementType 1 and Spawndist 3 (60secs)
+-- Pathing for Bonechewer Behemoth Entry: 23196
 (@CGUID+544, 1, 826.9479, 67.30523, 112.7356, 10000, 0, 100), -- orientation?
 (@CGUID+544, 2, 865.1921, 65.8309, 112.7388, 0, 0, 100),
-(@CGUID+544, 3, 869.4573, 71.47961, 112.7383, 10000, 0, 100), -- 2319603 spawndist 3 timer wrong
+(@CGUID+544, 3, 869.4573, 71.47961, 112.7383, 1, 2319602, 100), -- MovementType 1 and Spawndist 3 (10secs)
 (@CGUID+544, 4, 899.5973, 69.61382, 112.7418, 0, 0, 100),
 (@CGUID+544, 5, 927.8147, 64.82682, 112.7535, 10000, 0, 100),
-(@CGUID+544, 6, 869.4573, 71.47961, 112.7383, 10000, 0, 100), -- 2319604 spawndist 3 timer wrong
--- Pathing for Bonechewer Behemoth Entry: 23196 - Needs pathID for creature_movement due to MovementType Change for @CGUID+545
-(@CGUID+545, 1, 758.3943, 70.20664, 112.7369, 30000, 0, 100), -- 2319605 spawndist 3 timer wrong
+(@CGUID+544, 6, 869.4573, 71.47961, 112.7383, 1, 2319602, 100), -- MovementType 1 and Spawndist 3 (10secs)
+-- Pathing for Bonechewer Behemoth Entry: 23196
+(@CGUID+545, 1, 758.3943, 70.20664, 112.7369, 1, 2319603, 100), -- MovementType 1 and Spawndist 3 (30secs)
 (@CGUID+545, 2, 775.8292, 75.42676, 112.7386, 0, 0, 100),
 (@CGUID+545, 3, 772.0274, 107.9498, 112.7576, 0, 0, 100),
-(@CGUID+545, 4, 763.4602, 121.2597, 112.5469, 60000, 0, 100), -- 2319606 spawndist 5 timer wrong
+(@CGUID+545, 4, 763.4602, 121.2597, 112.5469, 1, 2319604, 100), -- MovementType 1 and Spawndist 5 (60secs)
 (@CGUID+545, 5, 735.6179, 101.9004, 112.7515, 0, 0, 100),
 (@CGUID+545, 6, 724.5951, 75.40408, 113.3959, 0, 0, 100),
 -- Pathing for Mutant War Hound Entry: 23232
@@ -3587,7 +3587,7 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (2288201,2294501,2295901,2295902,2295903,2296501,2296502,2296503,2314701,2319601,2319602);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (2288201,2294501,2295901,2295902,2295903,2296501,2296502,2296503,2314701,2319601,2319602,2319603,2319604);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (2288201, 0, 15, 40094, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Deathshaper - Cast Summon Channel'),
 (2294501, 0, 15, 40094, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Blood Mage - Cast Summon Channel'),
@@ -3601,11 +3601,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2296502, 2000, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emote OneShotBow'),
 (2296503, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emotestate 69'),
 (2296503, 16000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Enslaved Servant - Emotestate 0'),
-(2314701, 0, 15, 34664, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Grunt - Cast Sleep Visual - Flavor');
--- (2319601, 0, 20, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth -  Set MovementType 0 and Spawndist 0'), -- should be addable to creature_movement, which currently lacks pathId support
--- (2319601, 60000, 20, 2, 1, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 1'),
--- (2319602, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth -  Set MovementType 1 and Spawndist 3'),
--- (2319602, 60000, 20, 2, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - Set MovementType 2 and pathId 0');
+(2314701, 0, 15, 34664, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Grunt - Cast Sleep Visual - Flavor'),
+(2319601, 0, 20, 1, 3, 60000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - MovementType 1 and Spawndist 3 (60secs)'),
+(2319602, 0, 20, 1, 3, 10000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - MovementType 1 and Spawndist 3 (10secs)'),
+(2319603, 0, 20, 1, 3, 30000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - MovementType 1 and Spawndist 3 (30secs)'),
+(2319604, 0, 20, 1, 5, 60000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - MovementType 1 and Spawndist 5 (60secs)');
 
 -- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
