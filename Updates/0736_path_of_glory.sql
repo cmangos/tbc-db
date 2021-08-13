@@ -5,6 +5,17 @@ DELETE FROM creature_movement WHERE id IN(SELECT guid FROM creature WHERE id IN(
 DELETE FROM creature_movement_template WHERE entry IN(16867,19411,19410,16870,19312,19264);
 DELETE FROM creature_template_addon WHERE entry=16867; -- Not all should have STATE_READY1H
 DELETE FROM creature_addon WHERE `guid` IN(SELECT guid FROM creature WHERE id IN(16867,16870));
+
+-- 2021-08-13 21:53:52 Creature (GUID: 69300) does not exist but has a record in `creature_addon`
+-- 2021-08-13 21:53:52 Creature (GUID: 69302) does not exist but has a record in `creature_addon`
+-- 2021-08-13 21:53:52 Creature (GUID: 69306) does not exist but has a record in `creature_addon`
+-- 2021-08-13 21:53:52 Creature (GUID: 69308) does not exist but has a record in `creature_addon`
+-- 2021-08-13 21:53:52 Creature (GUID: 69311) does not exist but has a record in `creature_addon`
+-- 2021-08-13 21:53:52 Creature (GUID: 69313) does not exist but has a record in `creature_addon`
+-- 2021-08-13 21:53:52 Creature (GUID: 69317) does not exist but has a record in `creature_addon`
+-- 2021-08-13 21:53:52 Creature (GUID: 69319) does not exist but has a record in `creature_addon`
+DELETE FROM creature_addon WHERE `guid` IN (69300,69302,69306,69308,69311,69313,69317,69319); -- 19410,19411 (bytes1 = 1,3,8) static
+
 DELETE FROM creature WHERE id IN(16867,19411,19410,16870,19312,19264);
 INSERT INTO creature (guid, id, map, spawnMask, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, curhealth, curmana, MovementType) VALUES
 -- Shattered Hand Warlock
