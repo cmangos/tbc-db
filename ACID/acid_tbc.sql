@@ -5759,8 +5759,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('791701','7917','10','0','100','1','1','5','30000','60000','1','0','59','6','0','0','54','-199','6','0','0','0','0','0','Brother Sarno - Set Facing and Say OOC LOS'),
 -- Lillian Singh 8118
 -- Master Wood 8383 - (EMOTES NEED TO BE SCRIPTED)
--- Lil Timmy (NEEDS SNIFF RESEARCH TO FIND PROPER SUMMON SPELL FOR THE KITTEN AS THIS IS NOT THE CORRECT SPELL MOST LIKELY)
-('866601','8666','1','0','100','1','0','0','180000','180000','0','0','54','0','0','4','0','0','0','0','0','0','0','0','Lil Timmy - Random Say OOC'),
+-- Lil Timmy 8666
+('866601','8666','1','0','100','1','7000','7000','40000','60000','0','0','54','0','0','4','0','0','0','0','0','0','0','0','Lil Timmy - Random Say OOC'),
 -- Auctioneer Chilton 8670
 -- Auctioneer Fitch 8719
 -- Tyrion's Spybot (8856) - NSR
