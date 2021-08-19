@@ -1,3 +1,9 @@
+ALTER TABLE db_version CHANGE COLUMN required_s2427_01_mangos_command required_s2428_01_mangos_column_fix bit;
+
+ALTER TABLE creature_spawn_data_template MODIFY CurHealth INT UNSIGNED NOT NULL DEFAULT '0';
+
+ALTER TABLE db_version CHANGE COLUMN required_s2428_01_mangos_column_fix required_s2430_01_mangos_creature_immunity bit;
+
 DROP TABLE IF EXISTS creature_immunities;
 CREATE TABLE creature_immunities(
 `Entry` INT UNSIGNED NOT NULL COMMENT 'creature_template entry',
