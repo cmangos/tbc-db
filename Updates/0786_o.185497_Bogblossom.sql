@@ -1,6 +1,7 @@
--- Reinsert Bogblossom 185497 using wotlk-db guids (+112) & Add Pooling
+-- Reinsert Bogblossom 185497 (+115) & Add Pooling
 DELETE FROM `gameobject` WHERE `id` = 185497;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
+-- wotlk-db (+112)
 (20362, 185497, 530, 1, -1050.38, 5489.61, 82.7483, -1.78024, 0, 0, -0.777145, 0.629321, 180, 180, 100, 1),
 (89233, 185497, 530, 1, -1048.23, 5528.17, 170.484, -0.506145, 0, 0, -0.25038, 0.968148, 300, 300, 255, 1),
 (30427, 185497, 530, 1, -1032.1, 6037.93, 99.7431, -2.70526, 0, 0, -0.976296, 0.21644, 180, 180, 100, 1),
@@ -243,10 +244,14 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (91871, 185497, 530, 1, 1100.32, 8088.26, 95.2525, 0.157079, 0, 0, 0.0784588, 0.996917, 300, 300, 255, 1),
 (91876, 185497, 530, 1, 1126.81, 7976.09, 86.2454, -0.069812, 0, 0, -0.0348989, 0.999391, 300, 300, 255, 1),
 (91857, 185497, 530, 1, 1182.16, 8155.13, 75.1948, -0.488691, 0, 0, -0.241921, 0.970296, 300, 300, 255, 1),
-(91884, 185497, 530, 1, 1187.09, 7826.6, 122.819, -1.58825, 0, 0, -0.713251, 0.700909, 300, 300, 255, 1);
+(91884, 185497, 530, 1, 1187.09, 7826.6, 122.819, -1.58825, 0, 0, -0.713251, 0.700909, 300, 300, 255, 1),
+-- TDB (+3)
+(56422, 185497, 530, 1, -25.5586, 7378.9, 127.369, -0.628317, 0, 0, -0.309016, 0.951057, 300, 300, 255, 1),
+(56423, 185497, 530, 1, 74.3626, 7149.38, 104.988, 1.65806, 0, 0, 0.737276, 0.675591, 300, 300, 255, 1),
+(56424, 185497, 530, 1, 240.789, 6555.64, 64.7314, 3.14159, 0, 0, 1, 0.00000126759, 300, 300, 255, 1);
 
 UPDATE `gameobject` SET `spawntimesecsmin` = 180, `spawntimesecsmax` = 300, `animprogress` = 100, `state` = 1 WHERE `id` = 185497;
 
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES (185497, 14000, 0, 'Zangarmarsh - Bogblossom (185497)');
-INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (14000, 81, 'Zangarmarsh - Bogblossom (185497)'); -- 243 max
+INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (14000, 82, 'Zangarmarsh - Bogblossom (185497)'); -- 246 max
 
