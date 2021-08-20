@@ -799,7 +799,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+1051, 11, 3134.2990, -3294.8557, 293.75735, 100, 0, 0),
 (@CGUID+1051, 12, 3140.7144, -3302.6292, 293.75735, 100, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (16061,15931,15954);
+DELETE FROM creature_movement_template WHERE entry IN (16061,15931,15954,16998);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 (16061, 0, 1, 2765.25, -3088.47, 267.685, 0.38872, 0, 1606102),
 (16061, 0, 2, 2780, -3090.74, 267.685, 5.78048, 0, 1606102),
@@ -845,7 +845,23 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (15954, 0, 5, 2670.34, -3514.17, 261.239, 100, 0, 0),
 (15954, 0, 6, 2666.34, -3502.6, 261.293, 100, 0, 0),
 (15954, 0, 7, 2671.65, -3489.11, 261.348, 100, 0, 0),
-(15954, 0, 8, 2676.57, -3484.5, 261.376, 100, 0, 0);
+(15954, 0, 8, 2676.57, -3484.5, 261.376, 100, 0, 0),
+(16998, 0, 1, 3006.610107, -3414.669922, 297.135010, 100, 0, 0),
+(16998, 0, 2, 3005.110107, -3394.360107, 298.356995, 100, 1000, 1699801),
+(16998, 1, 1, 2996.110107, -3395.270020, 298.356995, 100, 0, 0),
+(16998, 1, 2, 2977.219971, -3405.250000, 298.295990, 100, 0, 0),
+(16998, 1, 3, 2969.010010, -3418.699951, 298.356995, 100, 0, 0),
+(16998, 1, 4, 2960.270020, -3433.889893, 299.557007, 100, 1000, 1699802),
+(16998, 2, 1, 2967.050049, -3442.959961, 298.356995, 100, 0, 0),
+(16998, 2, 2, 2983.290039, -3455.800049, 298.333008, 100, 0, 0),
+(16998, 2, 3, 2991.659912, -3448.949951, 302.016998, 100, 0, 0),
+(16998, 2, 4, 2997.919922, -3442.530029, 304.356995, 100, 0, 0),
+(16998, 2, 5, 3005.889893, -3434.280029, 304.415009, 100, 1000, 1699803),
+(16998, 3, 1, 3016.620117, -3445.300049, 303.045990, 100, 0, 0),
+(16998, 3, 2, 3026.830078, -3455.459961, 298.356995, 100, 0, 0),
+(16998, 3, 3, 3037.659912, -3452.389893, 298.356995, 100, 0, 0),
+(16998, 3, 4, 3040.889893, -3433.780029, 298.356995, 100, 1000, 1699804),
+(16998, 4, 1, 3006.790039, -3434.280029, 293.957001, 100, 1000, 1699805);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+664, 0, 0, 0, 0, 333, 0, '18950'), -- Deathknight
@@ -2175,7 +2191,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1029, 16803, 533, 2758.28, -3111.99, 267.86, 4.22, 4224, 4224, 0, 0, 0, 0), -- Deathknight Understudy
 (@CGUID+1030, 16861, 533, 2931.33, -3190.24, 273.371, 3.1229, 3520, 3520, 0, 0, 0, 2), -- Death Lord
 (@CGUID+1031, 16980, 533, 3762.38, -5115.86, 143.938, 0.191986, 300, 300, 0, 0, 0, 0), -- The Lich King
-(@CGUID+1032, 16998, 533, 2960.72, -3433.41, 298.227, 2.94052, 3600, 3600, 5, 0, 0, 1), -- Mr. Bigglesworth
+(@CGUID+1032, 16998, 533, 3007.709, -3432.561, 293.9755, 1.632283, 3600, 3600, 0, 0, 0, 2), -- Mr. Bigglesworth
 (@CGUID+1033, 17286, 533, 3489.61, -3839.83, 322, 1.53865, 3600, 3600, 0, 0, 0, 0), -- Invisible Man
 (@CGUID+1034, 17286, 533, 3507.45, -3838.96, 322, 1.5198, 3600, 3600, 0, 0, 0, 0), -- Invisible Man
 (@CGUID+1035, 17286, 533, 3526.49, -3842.83, 322, 1.04228, 3600, 3600, 0, 0, 0, 0), -- Invisible Man
@@ -2345,7 +2361,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+25, 181213, 533, 3019.93, -3420.31, 300.972, 3.14159, 0, 0, -1, 0, 180, 180, 0, 1), -- Abom Wing Eye Portal Ramp
 (@OGUID+26, 181225, 533, 3536.81, -5158.41, 142.862, -1.77151, 0, 0, -0.774392, 0.632706, 604800, 604800, 100, 1), -- Frostwyrm Waterfall Door
 (@OGUID+27, 181228, 533, 3635.36, -5090.29, 142.983, -1.77151, 0, 0, -0.774393, 0.632705, 180, 180, 255, 0), -- KelThuzad Door
-(@OGUID+28, 181229, 533, 3005.78, -3434.36, 300.328, 3.14159, 0, 0, 1, 0.00000126759, 180, 180, 0, 1), -- Portal
+(@OGUID+28, 181229, 533, 3005.78, -3434.36, 300.328, 3.14159, 0, 0, -1, 0, 180, 180, 0, 1), -- Portal
 (@OGUID+29, 181230, 533, 2493.02, -2921.78, 241.193, 3.14159, 0, 0, -1, 0, 180, 180, 0, 1), -- Deathknight Wing Eye Portal Boss
 (@OGUID+30, 181231, 533, 2909, -4025.02, 273.475, 3.14159, 0, 0, -1, 0, 180, 180, 0, 1), -- Plague Wing Eye Portal Boss
 (@OGUID+31, 181232, 533, 3539.02, -2936.82, 302.476, 3.14159, 0, 0, -1, 0, 180, 180, 0, 1), -- Abom Wing Eye Portal Boss
@@ -2867,7 +2883,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1614603,1614602,1593101,1606102,1606101);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1614603,1614602,1593101,1606102,1606101,1699801,1699802,1699803,1699804,1699805);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1614603,1000,1,36,0,0,16145,8,0,0,0,0,0,0,0,0,0,'Deathknight captain attacks'),
 (1614603,2000,1,43,0,0,0,0,0,0,0,0,0,0,0,0,0,'Deathknight parries'),
@@ -2895,7 +2911,18 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1606101,5000,1,1,0,0,16803,5,0,0,0,0,0,0,0,0,0,'talks'),
 (1606101,8000,1,66,0,0,16803,5,0,0,0,0,0,0,0,0,0,'salutes'),
 (1606101,11000,3,0,0,0,16803,5,0,0,0,0,0,0,0,0,2.03,'Turns toward dummy'),
-(1606101,11000,1,333,0,0,16803,5,0,0,0,0,0,0,0,0,0,'change emote state: train');
+(1606101,11000,1,333,0,0,16803,5,0,0,0,0,0,0,0,0,0,'change emote state: train'),
+
+(1699801,0,20,1,5,0,0,0,8,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - random movement after path 0'),
+(1699801,30000,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - continue on path 1'),
+(1699802,0,20,1,5,0,0,0,8,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - random movement after path 1'),
+(1699802,30000,20,2,2,0,0,0,0,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - continue on path 2'),
+(1699803,0,20,1,5,0,0,0,8,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - random movement after path 2'),
+(1699803,30000,20,2,3,0,0,0,0,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - continue on path 3'),
+(1699804,0,20,1,5,0,0,0,8,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - random movement after path 3'),
+(1699804,30000,20,2,4,0,0,0,0,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - continue on path 4'),
+(1699805,0,20,1,5,0,0,0,8,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - random movement after path 4'),
+(1699805,30000,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,'Mr. Bigglesworth - continue on path 0');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
