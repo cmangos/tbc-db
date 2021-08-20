@@ -33496,6 +33496,10 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 UPDATE creature_template SET AIName= '' WHERE AIName= 'EventAI';
 UPDATE creature_template SET ScriptName= '' WHERE ScriptName= 'generic_creature';
 
+-- Add special exception for Mr. Bigglesworth
+-- He has no AI events, however he must have EAI set in order to avoid fleeing when engaging nearby Maggot 16030
+-- This is the only known case so far of a critter attacking another critter
+UPDATE creature_template SET AIName='EventAI' WHERE Entry=16998;
 
 -- ================================================
 -- Define ACID Full Release Script Creature Entries
