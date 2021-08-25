@@ -242,11 +242,7 @@ UPDATE gossip_menu_option SET option_broadcast_text=24231 WHERE menu_id=9046 AND
 24249 "Rohendor has been obliterated.  Only the gateway, Archonisus, remains.$B$BOur mages are $3257w percent through the defenses of the final gate, Archonisus."
 24250 "Archonisus is no more. Alas, we are... we are too late...$B$BKil'jaeden is unleashed! The heroes of the world are now our only hope." -- alternate to 24247 when event fully completed?
 24247 "Should Kil'jaeden rise up through the Sunwell our world will be thrown into a war the likes of which has not been seen for 10,000 years!" -- default 2.4.3/current retail
-
-NOTE: This is a custom modification to broadcast text
-append onto ID 24247 since we have nothing else to go on (either this or make a custom ID)
-source: https://warcraft.blizzplanet.com/blog/comments/wow_burning_crusade___patch_2_4___agamath_the_first_gate */
-UPDATE broadcast_text SET `text`="Should Kil'jaeden rise up through the Sunwell our world will be thrown into a war the likes of which has not been seen for 10,000 years!$B$BOur mages are $3253w percent through the defenses of the first gate, Agamath." WHERE id=24247;
+*/
 
 DELETE FROM npc_text WHERE ID IN (12309);
 DELETE FROM npc_text_broadcast_text WHERE ID IN (12309);
