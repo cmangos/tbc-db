@@ -157,6 +157,7 @@ INSERT INTO reference_loot_template_names (entry, `name`) VALUES
 (50002, 'Cache of the Shattered Sun - Flasks and Mana/Wizard Oil');
 DELETE FROM reference_loot_template WHERE entry IN (50000,50001,50002);
 INSERT INTO reference_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES
+
 (50000, 32227, 0, 1, 1, 2, 0, 'Crimson Spinel'),
 (50000, 32228, 0, 1, 1, 2, 0, 'Empyrean Sapphire'),
 (50000, 32229, 0, 1, 1, 2, 0, 'Lionseye'),
@@ -177,9 +178,9 @@ DELETE FROM item_loot_template WHERE entry=34548;
 INSERT INTO item_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES
 (34548, 36201, 9.6, 0, -36201, 1, 0, 'Sunwell Plateau (Trash Loot) - Profession (-Design,-Pattern,-Plans,Study)'),
 (34548, 50000, 100, 1, -50000, 1, 0, 'Cache of the Shattered Sun - Red/Blue/Yellow TBC Epic Gems'),
-(34548, 50001, 100, 2, -50001, 1, 0, 'Cache of the Shattered Sun - Purple/Orangle/Green TBC Epic Gems'),
-(34548, 50002, 100, 3, -50002, 4, 0, 'Cache of the Shattered Sun - Flasks and Mana/Wizard Oil'), -- uses reference template repetition factor of 4 (maxcount)
-(34548, 0, 100, 4, 1, 4, 0, 'Heart of Darkness');
+(34548, 50001, 100, 1, -50001, 1, 0, 'Cache of the Shattered Sun - Purple/Orangle/Green TBC Epic Gems'),
+(34548, 50002, 100, 1, -50002, 4, 0, 'Cache of the Shattered Sun - Flasks and Mana/Wizard Oil'), -- uses reference template repetition factor of 4 (maxcount)
+(34548, 32428, 100, 4, 1, 4, 0, 'Heart of Darkness');
 
 -- Add 34544 Essence of the Immortals drop to each T5/T6 25 man raid end-boss loot table, in addition to every boss in SWP except KJ
 DELETE FROM creature_loot_template WHERE entry IN (17968,19622,21212,22917) AND item=34544; -- The Eye, Serpentshrine Cavern, Battle for Mount Hyjal, Black Temple
