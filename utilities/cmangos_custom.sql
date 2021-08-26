@@ -144,9 +144,6 @@ UPDATE creature_template SET modelid2='0' WHERE entry='18104'; -- Doomfire Targe
 -- Bogblossom 185497,185500 - consumable
 UPDATE `gameobject_template` SET `data5` = 1 WHERE `entry` IN (185497,185500);
 
--- Cache of the Shattered Sun 34548 - PTR only Item - lootable
-UPDATE `item_template` SET `Flags` = 4 WHERE `entry` = 34548;
-
 -- -------------------------------
 -- Item custom changes
 -- -------------------------------
