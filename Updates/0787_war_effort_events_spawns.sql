@@ -252,6 +252,7 @@ REPLACE INTO `game_event_creature` (guid, `event`) VALUES
 
 UPDATE creature_template SET Faction=64 WHERE entry=15707; -- Gnome has Silvermoon faction, should be gnomeregan exiles
 DELETE FROM creature WHERE guid=86424; -- Alliance Recruiter spawned in the wrong location
+DELETE FROM `npc_gossip` WHERE `npc_guid` = 86424; -- c.15708 2021-08-26 19:17:34 Table `npc_gossip` have nonexistent creature (GUID: 86424) entry, ignore.
 
 -- Add Horde NPCs
 
