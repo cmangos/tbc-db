@@ -184,20 +184,18 @@ INSERT INTO item_loot_template (entry, item, ChanceOrQuestChance, groupid, minco
 
 -- Add 34544 Essence of the Immortals drop to each T5/T6 25 man raid end-boss loot table, in addition to every boss in SWP except KJ
 DELETE FROM creature_loot_template WHERE entry IN (17968,19622,21212,22917) AND item=34544; -- The Eye, Serpentshrine Cavern, Battle for Mount Hyjal, Black Temple
-DELETE FROM creature_loot_template WHERE entry IN (24850,24882,24892,25038,25165,25166,25741,25840) AND item=34544; -- Sunwell Plateau (All except Kil'jaeden)
+DELETE FROM creature_loot_template WHERE entry IN (24882,24892,25038,25165,25166,25840) AND item=34544; -- Sunwell Plateau (All except Kil'jaeden)
 INSERT INTO creature_loot_template (entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES
 (17968, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Archimonde
 (19622, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Kael'thas Sunstrider
 (21212, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Lady Vashj
 (22917, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Illidan Stormrage
 
-(24850, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Kalecgos
 (24882, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Brutallus
 (24892, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Sathrovarr the Corruptor
 (25038, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Felmyst
 (25165, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Lady Sacrolash
 (25166, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- Grand Warlock Alythess
-(25741, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'), -- M'uru
 (25840, 34544, -100, 0, 1, 1, 10333, 'Essence of the Immortals'); -- Entropius
 
 -- npc 25169 Archmage Ne'thul is already involved with quest 11550 "Enter, the Deceiver..."
