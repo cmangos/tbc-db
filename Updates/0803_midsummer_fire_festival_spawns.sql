@@ -2291,9 +2291,9 @@ INSERT INTO gossip_menu(entry,text_id) VALUES
 
 DELETE FROM gossip_menu WHERE entry IN(9379,9357,9369);
 INSERT INTO gossip_menu(entry,text_id) VALUES
-(9384,12374),
-(9385,12374),
-(9401,12374);
+(9379,12374),
+(9357,12374),
+(9369,12374);
 
 -- fix state and animprogress
 UPDATE gameobject SET state=1,animprogress=255 WHERE Id IN(SELECT entry FROM gameobject_template WHERE name like 'Alliance Bonfire' OR name like 'Horde Bonfire');
