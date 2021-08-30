@@ -21325,7 +21325,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Halu
 ('2248501','22485','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','-549','0','0','0','0','0','0','Halu - Cast Summon Enraged Hippogryph on Aggro'),
 -- Bogblossom Bunny 23104
-('2310401','23104','11','0','100','0','0','0','0','0','0','0','11','40532','15','0','0','0','0','0','0','0','0','0','Bogblossom Bunny - Cast Bogblossom Knockback on Spawn');
+('2310401','23104','11','0','100','0','0','0','0','0','0','0','11','40532','15','0','1','-10989','0','0','0','0','0','0','Bogblossom Bunny - Cast Bogblossom Knockback, Emote on Spawn');
 
 
 
@@ -32684,7 +32684,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10986','Piece by piece I will tear this challenger apart... PIECE BY PIECE!','0','0','0','0','15476','18402'),
 ('-10987','No more nice ogre! You hurt Mogor!!','0','1','0','0','15483','18069'),
 ('-10988','Who dares defile the statue of our beloved?','0','1','0','0','14366','17715'),
--- RE-USE 10989
+('-10989','The bogblossom explodes, spraying pollen wildly.','0','2','0','0','20932','Bogblossom Bunny 23104'),
 ('-10990','Petulant children, pray to your gods for you are about to meet them!','0','1','0','0','14666','17678'),
 ('-10991','Prepare yourself for eternal torture, mortal!','0','1','0','0','20366','19747'),
 ('-10992','WHAT?!  Who dares to disturb the Burning Legion?','0','1','0','0','20365','19747'),
