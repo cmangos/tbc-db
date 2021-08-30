@@ -498,12 +498,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+1018, 3, 886.586, -174.894, -42.9624, 2.18518, 0, 0),
 (@CGUID+1018, 4, 878.133, -179.536, -42.9623, 3.6578, 0, 0),
 (@CGUID+1018, 5, 886.578, -174.768, -42.9623, 0.319856, 0, 0),
-(@CGUID+1018, 6, 888.454, -177.985, -42.9623, 5.24823, 0, 0),
+(@CGUID+1018, 6, 888.454, -177.985, -42.9623, 5.24823, 0, 0);
 
--- TBC+
-(@CGUID+1313, 1, 847.823, -181.144, -49.6707, 1.85005, 1440000, 9839501);
-
-DELETE FROM creature_movement_template WHERE entry IN (8891,8923,9022,9025,9056,9500,9679);
+DELETE FROM `creature_movement_template` WHERE entry IN (8891,8923,9022,9025,9056,9500,9679);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 (8891, 0, 1, 685.89, -279.73, -43.1944, 0.471239, 10, 889101),
 (8891, 0, 2, 685.89, -279.73, -43.1944, 0.471239, 10800000, 0),
@@ -610,6 +607,11 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (9679, 0, 3, 533.59, -249.38, -67.04, 0, 0, 0),
 (9679, 0, 4, 519.44, -217.02, -59.34, 0, 0, 0),
 (9679, 0, 5, 506.55, -153.49, -62.34, 0, 1, 967901);
+
+-- TBC only
+DELETE FROM `creature_movement_template` WHERE entry IN (28206);
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(28206, 0, 1, 847.823, -181.144, -49.6707, 1.85005, 1440000, 9839501);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+1, 0, 0, 1, 16, 0, 0, '13589'), -- Anvilrage Overseer
@@ -2717,7 +2719,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 (@CGUID+1119, 7), -- Elder Morndeep (Lunar Festival)
 
--- TBC+
+-- TBC only
 -- Grim Guzzler - L70ETC Concert
 (@CGUID+1300, 62),
 (@CGUID+1301, 62),
@@ -2727,10 +2729,13 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 (@CGUID+1305, 62),
 -- Grim Guzzler - L70ETC Pre-Concert
 (@CGUID+1313, 61),
+(@CGUID+1314, 61),
+(@CGUID+1315, 61),
 -- Arena PvP Season 4
 (@CGUID+1316, 56),
 (@CGUID+1317, 56),
 (@CGUID+1318, 56),
+-- TBC+
 -- Brewfest
 (@CGUID+1312, 26),
 (@CGUID+1319, 26);
