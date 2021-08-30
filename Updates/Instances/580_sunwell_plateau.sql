@@ -1427,33 +1427,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+391, 26247, 580, 0, 1720.024, 643.2331, 28.13354, 3.769911, 7200, 7200, 0, 0, 0, 0), -- Lady Liadrin
 (@CGUID+392, 26262, 580, 0, 1698.946, 628.2066, 83.00361, 0.7679449, 7200, 7200, 0, 0, 0, 0); -- The Core of Entropius
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 -- ===========
 -- GAMEOBJECTS
 -- ===========
@@ -1555,9 +1528,6 @@ INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `lan
 (2000020121, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, 24857, ''),
 (2000020122, 'Rest now, you have fought well today.', 0, 0, 0, 0, 24858, ''),
 (2000020123, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, 25482, '');
-
--- make dragon orbs on KJ use dynguid system - experimental tech
-UPDATE gameobject_template SET ExtraFlags=ExtraFlags|0x00000002 WHERE entry IN(188114,188115,188116,187869);
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
