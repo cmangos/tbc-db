@@ -3187,9 +3187,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- (@OGUID+XXX, 180422, 30, -572.3289, -262.4763, 88.64957, -0.5759585, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner Aura, Large
 -- (@OGUID+XXX, 178958, 30, -572.3289, -262.4763, 88.64957, -0.5759585, 0, 0, 0, 0, 0, 0, 100, 1), -- [PH] Horde H4 Tower Banner BIG
 
--- TBC+
-UPDATE `gameobject` SET `spawnMask` = 1 WHERE `map` = 30;
-
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1000,181355,30,1,480.259,-488.311,66.2366,1.65806,0,0,0.737277,0.675591,7200,7200,255,1), -- Standing, Exterior, Medium - MFF
 (@OGUID+1001,181355,30,1,465.63,-496.88,66.4395,2.74016,0,0,0.979924,0.19937,7200,7200,255,1), -- Standing, Exterior, Medium - MFF
@@ -3219,6 +3216,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+1025,181392,30,1,-134.165,-459.231,31.7696,-0.314158,0,0,-0.156434,0.987688,7200,7200,255,1), -- Hanging, Streamer - MFF
 (@OGUID+1026,181392,30,1,579.056,-76.7292,43.0804,0.488691,0,0,0.241921,0.970296,7200,7200,255,1), -- Hanging, Streamer - MFF
 (@OGUID+1027,181392,30,1,659.132,-122.51,54.9667,2.56563,0,0,0.958819,0.284016,7200,7200,255,1); -- Hanging, Streamer - MFF
+
+-- TBC+
+UPDATE `gameobject` SET `spawnMask` = 1 WHERE `map` = 30;
 
 -- WOTLK+
 

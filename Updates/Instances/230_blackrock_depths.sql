@@ -500,12 +500,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+1018, 5, 886.578, -174.768, -42.9623, 0.319856, 0, 0),
 (@CGUID+1018, 6, 888.454, -177.985, -42.9623, 5.24823, 0, 0),
 
--- TBC+ only
+-- TBC+
 (@CGUID+1313, 1, 847.823, -181.144, -49.6707, 1.85005, 1440000, 9839501);
 
 DELETE FROM creature_movement_template WHERE entry IN (8891,8923,9022,9025,9056,9500,9679);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
-(8891, 0, 1, 685.89, -279.73, -43.1944, 0.471239, 0, 889101),
+(8891, 0, 1, 685.89, -279.73, -43.1944, 0.471239, 10, 889101),
 (8891, 0, 2, 685.89, -279.73, -43.1944, 0.471239, 10800000, 0),
 (8923, 0, 1, 1165.66, -195.737, -65.4586, 0, 0, 0),
 (8923, 0, 2, 1150.4, -205.881, -65.5008, 0, 0, 0),
@@ -2206,7 +2206,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1119, 15549, 230, 592.67, -190.145, -54.0991, 0.222688, 25, 25, 0, 0, 0, 0), -- Elder Morndeep
 (@CGUID+1120, 16079, 230, 590.631, -181.061, -53.9102, 3.97935, 7200, 7200, 0, 0, 0, 0), -- Theldren Trigger
 
--- TBC+ only (The Tauren Chieftans, Brewfest, and Arena NPCs)
+-- TBC+ (The Tauren Chieftans, Brewfest, and Arena NPCs)
 (@CGUID+1300, 23619, 230, 851.272, -177.126, -49.6712, 2.16421, 180, 180, 0, 0, 0, 0), -- Bergrisst
 (@CGUID+1301, 23623, 230, 847.839, -181.115, -49.6707, 1.8675, 180, 180, 0, 0, 0, 0), -- Chief Thunder-Skins
 (@CGUID+1302, 23624, 230, 842.715, -181.571, -49.67, 2.04204, 180, 180, 0, 0, 0, 0), -- Mai'Kyl
@@ -2717,7 +2717,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 (@CGUID+1119, 7), -- Elder Morndeep (Lunar Festival)
 
--- TBC+ only
+-- TBC+
 -- Grim Guzzler - L70ETC Concert
 (@CGUID+1300, 62),
 (@CGUID+1301, 62),
@@ -2960,7 +2960,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (905604, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - movementtype_random'),
 (905604, 90000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - movementtype_waypoint'),
 
--- TBC+ only
+-- TBC+
 (9839501, 0, 18, 744000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '[DND] L70ETC Drums - Grim Guzzler Despawn Drums on Drummer Spawn');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
