@@ -583,3 +583,11 @@ UPDATE `gameobject` SET `spawntimesecsmin` = 300, `spawntimesecsmax` = 900 WHERE
 UPDATE `gameobject` SET `spawntimesecsmin` = 300, `spawntimesecsmax` = 900 WHERE `id` = 153468; -- Large Mithril Bound Chest (153468) 3600/7200
 -- Large Mithril Bound Chest (153469)
 
+-- Add another missing chest
+DELETE FROM `gameobject` WHERE `guid` = 300258 AND `id` = 2850;
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnmask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
+(300258, 2850, 0, 1, -9373.0693359375, -3168.828125, 83.51155853271484375, 1.797688722610473632, 0, 0, 0.7826080322265625, 0.622514784336090087, 300, 900, 100, 1);
+
+DELETE FROM `pool_gameobject` WHERE `guid` = 300258;
+INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(300258, 31200, 0, 'Redridge Mountains (Galardell Valley) - Solid Chest (2850)');
