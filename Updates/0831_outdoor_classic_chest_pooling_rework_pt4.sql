@@ -248,7 +248,7 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (31332, 39908, 0, 'Silverpine Forest (Beren''s Peril) - Chest Pool'),
 (31333, 39912, 0, 'Stonetalon Mountains (Camp Aparaje) - Chest Pool'),
 (31334, 39912, 0, 'Stonetalon Mountains (Cragpool Lake) - Chest Pool'),
-(31335, 39904, 0, 'Tirisfal Glades (Solliden Farmstead) - Chest Pool'),
+(31335, 39905, 0, 'Tirisfal Glades (Solliden Farmstead) - Chest Pool'),
 (31336, 39929, 0, 'Azshara (The Shattered Strand) - Chest Pool'),
 (31337, 39929, 0, 'Azshara (Thalassian Base Camp) - Chest Pool'),
 (31338, 39906, 0, 'Darkshore (Twilight Shore) - Chest Pool'),
