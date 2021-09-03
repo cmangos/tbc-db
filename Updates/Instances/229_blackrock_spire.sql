@@ -1384,6 +1384,27 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- GAMEOBJECTS
 -- ===========
 
+INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
+(@OGUID+401, 153464), (@OGUID+401, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+402, 153464), (@OGUID+402, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+403, 153464), (@OGUID+403, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+404, 153464), (@OGUID+404, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+405, 153464), (@OGUID+405, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+406, 153464), (@OGUID+406, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+407, 153464), (@OGUID+407, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+408, 153464), (@OGUID+408, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+409, 153464), (@OGUID+409, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+410, 153464), (@OGUID+410, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+411, 153464), (@OGUID+411, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+412, 153464), (@OGUID+412, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+413, 153464), (@OGUID+413, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+414, 153464), (@OGUID+414, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+415, 153464), (@OGUID+415, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+416, 153464), (@OGUID+416, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+417, 153464), (@OGUID+417, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+418, 153464), (@OGUID+418, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+419, 153464), (@OGUID+419, 153469); -- Large Solid Chest, Large Mithril Bound Chest
+
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1, 136922, 229, 88.2152, -415.1, 110.957, 2.72271, 0, 0, 0, 0, 120, 120, 0, 1), -- Bonfire
 (@OGUID+2, 136923, 229, 87.4498, -468.454, 116.887, 2.72271, 0, 0, 0, 0, 120, 120, 0, 1), -- Bonfire
@@ -1780,26 +1801,32 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+398, 181050, 229, 25.92, -537.7, 110.93, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Lord Valthalak Brazier Spell Focus
 (@OGUID+399, 181096, 229, -23.97, -451.98, -18.64, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Brazier of Invocation Spell Focus 20 yd
 (@OGUID+400, 181096, 229, 25.92, -537.7, 110.93, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Brazier of Invocation Spell Focus 20 yd
-(@OGUID+401, 153464, 229, -36.1176, -583.828, -18.8201, 1.97222, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+402, 153469, 229, -36.1176, -583.828, -18.8201, 1.97222, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
-(@OGUID+403, 153464, 229, -39.64638, -472.5804, -18.76505, -1.466076, 0, 0, -0.6691303, 0.743145, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+404, 153469, 229, -39.64638, -472.5804, -18.76505, -1.466076, 0, 0, -0.6691303, 0.743145, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
-(@OGUID+405, 153464, 229, -73.9985, -453.335, -18.935, -3.08918, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+406, 153469, 229, -73.9985, -453.335, -18.935, -3.08918, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
-(@OGUID+407, 153464, 229, -110.6121, -423.6278, -18.935, -2.879789, 0, 0, -0.9914446, 0.1305283, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+408, 153469, 229, -110.6121, -423.6278, -18.935, -2.879789, 0, 0, -0.9914446, 0.1305283, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
-(@OGUID+409, 153464, 229, -64.86904, -586.8962, 29.19087, 0.8901166, 0, 0, 0.4305105, 0.9025856, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+410, 153469, 229, -64.86904, -586.8962, 29.19087, 0.8901166, 0, 0, 0.4305105, 0.9025856, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
-(@OGUID+411, 153464, 229, 86.8551, -587.501, 30.6085, 2.63544, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+412, 153469, 229, 86.8551, -587.501, 30.6085, 2.63544, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
-(@OGUID+413, 153464, 229, -20.29138, -361.8112, 50.63561, -1.64061, 0, 0, -0.7313538, 0.6819983, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+414, 153469, 229, -20.29138, -361.8112, 50.63561, -1.64061, 0, 0, -0.7313538, 0.6819983, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
-(@OGUID+415, 153464, 229, -84.2677, -350.104, 70.9524, 1.91986, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+416, 153469, 229, -84.2677, -350.104, 70.9524, 1.91986, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
-(@OGUID+417, 153464, 229, 171.163, -290.7762, 110.9421, 3.089183, 0, 0, 0.9996567, 0.02620165, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+418, 153469, 229, 171.163, -290.7762, 110.9421, 3.089183, 0, 0, 0.9996567, 0.02620165, 86400, 86400, 255, 1), -- Large Mithril Bound Chest
-(@OGUID+419, 153464, 229, 183.6473, -369.1504, 117.1433, 2.44346, 0, 0, 0.9396925, 0.3420205, 86400, 86400, 255, 1), -- Large Solid Chest
-(@OGUID+420, 153469, 229, 183.6473, -369.1504, 117.1433, 2.44346, 0, 0, 0.9396925, 0.3420205, 86400, 86400, 255, 1); -- Large Mithril Bound Chest
+-- Lower Hordemar City
+(@OGUID+401, 0, 229, 62.9164, -471.06, 26.0547, 2.75761, 0, 0, 0.981627, 0.190812, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+402, 0, 229, 86.8551, -587.501, 30.6085, 2.63544, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+403, 0, 229, -64.86904, -586.8962, 29.19087, 0.8901166, 0, 0, 0.4305105, 0.9025856, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+404, 0, 229, -71.4806, -542.878, 29.1909, 0.453785, 0, 0, 0.224951, 0.97437, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+405, 0, 229, -73.9985, -453.335, -18.935, -3.08918, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+406, 0, 229, -110.6121, -423.6278, -18.935, -2.879789, 0, 0, -0.9914446, 0.1305283, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+-- Tazz'Alaor
+(@OGUID+407, 0, 229, -78.8378, -582.575, -18.8325, 0.837758, 0, 0, 0.406736, 0.913545, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+408, 0, 229, -36.1176, -583.828, -18.8201, 1.97222, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+409, 0, 229, -39.64638, -472.5804, -18.76505, -1.466076, 0, 0, -0.6691303, 0.743145, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+410, 0, 229, 1.77013, -476.38, -18.7952, 3.22886, 0, 0, -0.999048, 0.0436193, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+-- Skitterweb Tunnels
+(@OGUID+411, 0, 229, -161.149, -494.667, -18.4564, 5.65487, 0, 0, -0.309016, 0.951057, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+-- Upper Hordemar City
+(@OGUID+412, 0, 229, -20.2913837432861328, -361.8111572265625, 50.63561248779296875, -1.64060962200164794, 0, 0, -0.731353759765625, 0.681998312473297119, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+413, 0, 229, -84.2677, -350.104, 70.9524, 1.91986, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+414, 0, 229, -43.7227, -302.812, 70.9442, 3.21142, 0, 0, -0.999391, 0.0349061, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+-- The Storehouse
+(@OGUID+415, 0, 229, -211.487, -486.088, 87.3902, 0.0523589, 0, 0, 0.0261765, 0.999657, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+-- Hall of Blackhand
+(@OGUID+416, 0, 229, 171.163, -290.7762, 110.9421, 3.089183, 0, 0, 0.9996567, 0.02620165, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+417, 0, 229, 163.142, -241.759, 110.949, 4.2237, 0, 0, -0.857167, 0.515038, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+418, 0, 229, 170.919, -334.745, 110.951, 3.08918, 0, 0, 0.999657, 0.0262017, 86400, 86400, 100, 1), -- Large Solid Chest, Large Mithril Bound Chest
+-- Blackrock Stadium
+(@OGUID+419, 0, 229, 183.647308349609375, -369.150390625, 117.1433334350585937, 2.44346022605895996, 0, 0, 0.939692497253417968, 0.34202045202255249, 86400, 86400, 100, 1); -- Large Solid Chest, Large Mithril Bound Chest
 
 -- ======
 -- EVENTS
@@ -1821,16 +1848,13 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- =======
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+81, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #1'),
-(@PGUID+82, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #2'),
-(@PGUID+83, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #3'),
-(@PGUID+84, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #4'),
-(@PGUID+85, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #5'),
-(@PGUID+86, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #6'),
-(@PGUID+87, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #7'),
-(@PGUID+88, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #8'),
-(@PGUID+89, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #9'),
-(@PGUID+90, @PGUID+80, 0, 'Blackrock Spire - Large Solid Chest / Large Mithril Bound Chest - #10');
+(@PGUID+92, @PGUID+90, 0, 'LBRS (Lower Hordemar City) - Chest Pool'),
+(@PGUID+93, @PGUID+90, 0, 'LBRS (Tazz''Alaor) - Chest Pool'),
+(@PGUID+94, @PGUID+90, 0, 'LBRS (Skitterweb Tunnels) - Chest Pool'),
+(@PGUID+95, @PGUID+90, 0, 'LBRS (Upper Hordemar City) - Chest Pool'),
+(@PGUID+96, @PGUID+90, 0, 'LBRS (The Storehouse) - Chest Pool'),
+(@PGUID+97, @PGUID+91, 0, 'UBRS (Hall of Blackhand) - Chest Pool'),
+(@PGUID+98, @PGUID+91, 0, 'UBRS (Blackrock Stadium) - Chest Pool');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Jed Runewatcher (10509) Blackrock Spire'),
@@ -1844,17 +1868,15 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+9, 1, 'Lower Blackrock Spire - Tazz Alaor patrol'),
 (@PGUID+10, 1, 'Lower Blackrock Spire - Tazz Alaor patrol'),
 (@PGUID+11, 1, 'LBRS - Bannok Grimaxe'),
-(@PGUID+80, 3, 'Blackrock Spire - Master Chest Pool'),
-(@PGUID+81, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #1'),
-(@PGUID+82, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #2'),
-(@PGUID+83, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #3'),
-(@PGUID+84, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #4'),
-(@PGUID+85, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #5'),
-(@PGUID+86, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #6'),
-(@PGUID+87, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #7'),
-(@PGUID+88, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #8'),
-(@PGUID+89, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #9'),
-(@PGUID+90, 1, 'Blackrock Spire - Large Solid Chest (153464) / Large Mithril Bound Chest (153469) - #10');
+(@PGUID+90, 3, 'LBRS - Master Chest Pool'),
+(@PGUID+91, 1, 'UBRS - Master Chest Pool'),
+(@PGUID+92, 2, 'LBRS (Lower Hordemar City) - Chest Pool'),
+(@PGUID+93, 1, 'LBRS (Tazz''Alaor) - Chest Pool'),
+(@PGUID+94, 1, 'LBRS (Skitterweb Tunnels) - Chest Pool'),
+(@PGUID+95, 1, 'LBRS (Upper Hordemar City) - Chest Pool'),
+(@PGUID+96, 1, 'LBRS (The Storehouse) - Chest Pool'),
+(@PGUID+97, 1, 'UBRS (Hall of Blackhand) - Chest Pool'),
+(@PGUID+98, 1, 'UBRS (Blackrock Stadium) - Chest Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+395, @PGUID+1, 70, 'Alternate creature to Jed Runewatcher (10509) Blackrock Spire'),
@@ -1882,26 +1904,26 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+401, @PGUID+81, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+402, @PGUID+81, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
-(@OGUID+403, @PGUID+82, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+404, @PGUID+82, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
-(@OGUID+405, @PGUID+83, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+406, @PGUID+83, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
-(@OGUID+407, @PGUID+84, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+408, @PGUID+84, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
-(@OGUID+409, @PGUID+85, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+410, @PGUID+85, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
-(@OGUID+411, @PGUID+86, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+412, @PGUID+86, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
-(@OGUID+413, @PGUID+87, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+414, @PGUID+87, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
-(@OGUID+415, @PGUID+88, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+416, @PGUID+88, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
-(@OGUID+417, @PGUID+89, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+418, @PGUID+89, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)'),
-(@OGUID+419, @PGUID+90, 0, 'Blackrock Spire - Large Solid Chest (153464)'),
-(@OGUID+420, @PGUID+90, 0, 'Blackrock Spire - Large Mithril Bound Chest (153469)');
+(@OGUID+401, @PGUID+92, 0, 'LBRS (Lower Hordemar City) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+402, @PGUID+92, 0, 'LBRS (Lower Hordemar City) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+403, @PGUID+92, 0, 'LBRS (Lower Hordemar City) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+404, @PGUID+92, 0, 'LBRS (Lower Hordemar City) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+405, @PGUID+92, 0, 'LBRS (Lower Hordemar City) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+406, @PGUID+92, 0, 'LBRS (Lower Hordemar City) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+
+(@OGUID+407, @PGUID+93, 0, 'LBRS (Tazz''Alaor) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+408, @PGUID+93, 0, 'LBRS (Tazz''Alaor) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+409, @PGUID+93, 0, 'LBRS (Tazz''Alaor) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+410, @PGUID+93, 0, 'LBRS (Tazz''Alaor) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+411, @PGUID+94, 0, 'LBRS (Skitterweb Tunnels) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+412, @PGUID+95, 0, 'LBRS (Upper Hordemar City) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+413, @PGUID+95, 0, 'LBRS (Upper Hordemar City) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+414, @PGUID+95, 0, 'LBRS (Upper Hordemar City) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+415, @PGUID+96, 0, 'LBRS (The Storehouse) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+416, @PGUID+97, 0, 'UBRS (Hall of Blackhand) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+417, @PGUID+97, 0, 'UBRS (Hall of Blackhand) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+418, @PGUID+97, 0, 'UBRS (Hall of Blackhand) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)'),
+(@OGUID+419, @PGUID+98, 0, 'UBRS (Blackrock Stadium) - Large Solid Chest, Large Mithril Bound Chest (153464,153469)');
 
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (175334, @PGUID+3, 0, 'Bijous Belongings'),

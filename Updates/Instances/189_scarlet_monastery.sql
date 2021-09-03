@@ -1,7 +1,7 @@
 /* DBScriptData
 DBName: Scarlet Monastery (Graveyard & Library & Armory & Cathedral)
 DBScriptName: instance_scarlet_monastery
-DB%Complete: 80
+DB%Complete: 85
 DBComment:
 * Rare spawns in Graveyard should be pooled with the mob groups at their spawn location (should be more spawnlocations) and then be pooled together into masterpool to minimize spawnchance but have reduced respawntime - more research required
 EndDBScriptData */
@@ -151,7 +151,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+228, @CGUID+63, 515);
 
 INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
--- TBC+ only
+-- TBC+
 (23775, 189, 23682, 4096, 0); -- Head of the Horseman -> Headless Horseman
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
@@ -500,12 +500,30 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+343, 4293, 189, 1759.67, 1146.85, 7.49036, 3.19674, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
 (@CGUID+344, 4293, 189, 1788.68, 1145.46, 7.49084, 6.10664, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
 
--- TBC+ only
+-- TBC+
 (@CGUID+401, 23758, 189, 1767.034, 1348.685, 17.542156, 6.267, 7200, 7200, 0, 0, 0, 0); -- Headless Horseman - Earth Explosion Bunny - extrapolated sniff pos from cata+ SM
 
 -- ===========
 -- GAMEOBJECTS
 -- ===========
+
+INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
+(@OGUID+111, 75296), (@OGUID+111, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+112, 75296), (@OGUID+112, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+113, 75296), (@OGUID+113, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+114, 75296), (@OGUID+114, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+121, 75296), (@OGUID+121, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+122, 75296), (@OGUID+122, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+123, 75296), (@OGUID+123, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+124, 75296), (@OGUID+124, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+131, 75297), (@OGUID+131, 75300), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+132, 75297), (@OGUID+132, 75300), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+133, 3703), (@OGUID+133, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+134, 3703), (@OGUID+134, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+135, 3703), (@OGUID+135, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+136, 3703), (@OGUID+136, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+137, 3703), (@OGUID+137, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+138, 3703), (@OGUID+138, 3704); -- Armor Crate, Weapon Crate
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1, 1624, 189, 1776.21, 1224.47, 17.5028, 1.6057, 0, 0, 0.719339, 0.694659, 86400, 86400, 100, 1), -- Kingsblood
@@ -543,7 +561,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+33, 97803, 189, 1951.83, -426.404, 6.29011, -0.383973, 0, 0, -0.190809, 0.981627, 7200, 7200, 100, 1), -- Fine Chair
 (@OGUID+34, 101854, 189, 1933.69, -431.654, 18.671, 3.14159, 0, 0, 1, 0, 7200, 7200, 100, 1), -- Herod's Door
 (@OGUID+35, 101855, 189, 1939.48, -427.998, 17.0815, 3.14159, 0, 0, 1, 0, 7200, 7200, 100, 1), -- Lever
-(@OGUID+36, 103664, 189, 277.586, -429.488, 21.4194, -1.6057, 0, 0, 0.71934, -0.694658, 300, 300, 100, 1), -- Rituals of Power
+(@OGUID+36, 103664, 189, 277.586, -429.488, 21.4194, -1.6057, 0, 0, 0.71934, -0.694658, 5, 5, 100, 1), -- Rituals of Power
 (@OGUID+37, 103820, 189, 1895.6, -416.358, 19.2626, -1.78024, 0, 0, 0.777146, -0.62932, 7200, 7200, 100, 1), -- Red Rocket
 (@OGUID+38, 103820, 189, 1905.72, -414.568, 19.0876, -1.0821, 0, 0, 0.515038, -0.857167, 7200, 7200, 100, 1), -- Red Rocket
 (@OGUID+39, 103820, 189, 1899.35, -415.707, 19.2136, 2.63545, 0, 0, 0.968148, 0.25038, 7200, 7200, 100, 1), -- Red Rocket
@@ -618,24 +636,36 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+108, 176693, 189, 175.142, -437.204, 18.8796, -0.445059, 0, 0, -0.220697, 0.975342, 7200, 7200, 100, 1), -- Chair
 (@OGUID+109, 181191, 189, 1778.06, 1349.17, 18.249, -0.628317, 0, 0, 0, 1, 180, 180, 255, 1), -- Skullpile 01
 (@OGUID+110, 181191, 189, 1775.75, 1350.25, 18.2316, 2.75761, 0, 0, 0, 1, 180, 180, 255, 1), -- Skullpile 01
-(@OGUID+111, 75299, 189, 1762.11, 1153.56, 7.49028, -1.55334, 0, 0, 0.700909, -0.71325, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+112, 75299, 189, 1847.77, 1276.34, 18.1573, 2.80998, 0, 0, 0.986286, 0.165048, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+113, 75299, 189, 1748.22, 1252.28, 18.1573, -0.575957, 0, 0, -0.284015, 0.95882, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+114, 75296, 189, 1788.14, 1394.66, -0.455138, 2.63544, 0, 0, 0.968147, 0.250383, 86400, 86400, 100, 1), -- Large Iron Bound Chest
--- 115 - 120
-(@OGUID+121, 75296, 189, 277.401, -365.671, 20.3969, 3.05433, 0, 0, 0.999048, 0.043619, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+122, 75299, 189, 223.898, -292.728, 19.1996, 2.51327, 0, 0, 0.951057, 0.309017, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+123, 75299, 189, 278.514, -401.431, 20.3957, 3.03684, 0, 0, 0.998629, 0.0523524, 86400, 86400, 100, 1), -- Large Solid Chest
--- 124 - 130
-(@OGUID+131, 3703, 189, 1771.76, -377.259, 8.01092, -1.51844, 0, 0, 0.688354, -0.725374, 86400, 86400, 100, 1), -- Armor Crate
-(@OGUID+132, 3704, 189, 1745.17, -357.994, 8.01148, -1.85005, 0, 0, 0.798635, -0.601815, 86400, 86400, 100, 1), -- Weapon Crate
-(@OGUID+133, 75297, 189, 1743.48, -407.254, 8.01026, 0.017452, 0, 0, 0.00872589, 0.999962, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+134, 75300, 189, 1684.87, -345.412, 18.0233, 0.034907, 0, 0, 0.017452, 0.999848, 86400, 86400, 100, 1), -- Large Solid Chest
+-- Chamber of Atonement
+(@OGUID+111, 0, 189, 1762.11, 1153.56, 7.49028, -1.55334, 0, 0, 0.700909, -0.71325, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+-- Forlorn Cloister & Honor's Tomb
+(@OGUID+112, 0, 189, 1748.22, 1252.28, 18.1573, -0.575957, 0, 0, -0.284015, 0.95882, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+113, 0, 189, 1847.77, 1276.34, 18.1573, 2.80998, 0, 0, 0.986286, 0.165048, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+114, 0, 189, 1788.14, 1394.66, -0.455138, 2.63544, 0, 0, 0.968147, 0.250383, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+-- 115 - 120 Scarlet Monastery Graveyard
+-- Scarlet Monastery
+(@OGUID+121, 0, 189, 223.898, -292.728, 19.1996, 2.51327, 0, 0, 0.951057, 0.309017, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+122, 0, 189, 277.401, -365.671, 20.3969, 3.05433, 0, 0, 0.999048, 0.043619, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+123, 0, 189, 278.514, -401.431, 20.3957, 3.03684, 0, 0, 0.998629, 0.0523524, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+-- Athenaeum
+(@OGUID+124, 0, 189, 175.541, -418.852, 18.868, 6.21337, 0, 0, -0.0348988, 0.999391, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+-- 125 - 130 Scarlet Monastery Library
+-- Training Grounds
+(@OGUID+131, 0, 189, 1684.87, -345.412, 18.0233, 0.034907, 0, 0, 0.017452, 0.999848, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+-- Footman's Armory
+(@OGUID+132, 0, 189, 1743.48, -407.254, 8.01026, 0.017452, 0, 0, 0.00872589, 0.999962, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+133, 0, 189, 1771.76, -377.259, 8.01092, -1.51844, 0, 0, 0.688354, -0.725374, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
+(@OGUID+134, 0, 189, 1745.17, -357.994, 8.01148, -1.85005, 0, 0, 0.798635, -0.601815, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
+(@OGUID+135, 0, 189, 1795.07, -431.977, 8.01001, 0, 0, 0, 0, 1, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
+(@OGUID+136, 0, 189, 1803.25, -398.513, 8.01243, 3.12412, 0, 0, 0.999962, 0.00873464, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
+(@OGUID+137, 0, 189, 1743.97, -389.967, 8.00978, 0.0349062, 0, 0, 0.0174522, 0.999848, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
+(@OGUID+138, 0, 189, 1782.57, -414.356, 8.01169, 1.5708, 0, 0, 0.707107, 0.707107, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
+-- 139 - 140 Scarlet Monastery Armory
 (@OGUID+141, 2046, 189, 1008.59, 1436.93, 27.3057, 4.62512, 0, 0, -0.737277, 0.675591, 86400, 86400, 100, 1), -- Goldthorn
 (@OGUID+142, 2046, 189, 916.203, 1420.49, 17.9942, 0.244346, 0, 0, 0.121869, 0.992546, 86400, 86400, 100, 1), -- Goldthorn
 (@OGUID+143, 2046, 189, 914.922, 1401.31, 18.0233, 1.15192, 0, 0, 0.544639, 0.838671, 86400, 86400, 100, 1), -- Goldthorn
 
--- TBC+ only
+-- TBC+
 (@OGUID+200, 186267, 189, 1776.27, 1348.74, 20.4116, 6.27281, 0, 0, 0, 0, 25, 25, 0, 1), -- Pumpkin Shrine
 (@OGUID+201, 186269, 189, 1774.87, 1347.73, 17.9662, -2.87979, 0, 0, 0.991445, -0.130526, 180, 180, 100, 1), -- Headless Horseman Candle
 (@OGUID+202, 186269, 189, 1774.77, 1349.65, 18.0742, 2.33874, 0, 0, 0.920505, 0.390731, 180, 180, 100, 1), -- Headless Horseman Candle
@@ -659,7 +689,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
--- TBC+ only
+-- TBC+
 (@OGUID+200, 12), -- Pumpkin Shrine (Hallow's End)
 (@OGUID+201, 12), -- Headless Horseman Candle (Hallow's End)
 (@OGUID+202, 12), -- Headless Horseman Candle (Hallow's End)
@@ -678,18 +708,32 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+91, @PGUID+90, 0, 'Scarlet Monastery Graveyard (Chamber of Atonement) - Chest Pool'),
+(@PGUID+92, @PGUID+90, 0, 'Scarlet Monastery Graveyard (Forlorn Cloister & Honor''s Tomb) - Chest Pool'),
+(@PGUID+94, @PGUID+93, 0, 'Scarlet Monastery Library (Scarlet Monastery) - Chest Pool'),
+(@PGUID+95, @PGUID+93, 0, 'Scarlet Monastery Library (Athenaeum) - Chest Pool'),
+(@PGUID+97, @PGUID+96, 0, 'Scarlet Monastery Armory (Training Grounds) - Chest Pool'),
+(@PGUID+98, @PGUID+96, 0, 'Scarlet Monastery Armory (Footman''s Armory) - Chest Pool');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Scarlet Monastery Graveyard - Rare Spawn'),
 (@PGUID+51, 3, 'Scarlet Monastery Graveyard - Master Herb Pool'), -- gameobject
 (@PGUID+52, 1, 'Scarlet Monastery Library - Master Herb Pool'),
 (@PGUID+53, 1, 'Scarlet Monastery Armory - Master Herb Pool'),
-(@PGUID+54, 3, 'Scarlet Monastery Cathedral - Master Herb Pool'),
-
-(@PGUID+81, 1, 'Scarlet Monastery Library - Master Chest Pool'),
-(@PGUID+82, 2, 'Scarlet Monastery Armory - Master Chest Pool'),
-(@PGUID+83, 1, 'Scarlet Monastery Graveyard - Master Chest Pool');
+(@PGUID+87, 1, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn Pool'),
+(@PGUID+88, 1, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn Pool'),
+(@PGUID+89, 1, 'Scarlet Monastery Cathedral - Liferoot Pool'),
+(@PGUID+90, 2, 'Scarlet Monastery Graveyard - Master Chest Pool'),
+(@PGUID+91, 1, 'Scarlet Monastery Graveyard (Chamber of Atonement) - Chest Pool'),
+(@PGUID+92, 1, 'Scarlet Monastery Graveyard (Forlorn Cloister & Honor''s Tomb) - Chest Pool'),
+(@PGUID+93, 2, 'Scarlet Monastery Library - Master Chest Pool'),
+(@PGUID+94, 1, 'Scarlet Monastery Library (Scarlet Monastery) - Chest Pool'),
+(@PGUID+95, 1, 'Scarlet Monastery Library (Athenaeum) - Chest Pool'),
+(@PGUID+96, 1, 'Scarlet Monastery Armory - Master Chest Pool'),
+(@PGUID+97, 1, 'Scarlet Monastery Armory (Training Grounds) - Chest Pool'),
+(@PGUID+98, 1, 'Scarlet Monastery Armory (Footman''s Armory) - Chest Pool'),
+(@PGUID+99, 2, 'Scarlet Monastery Armory - Weapon Crate & Armor Crate Pool');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
@@ -716,30 +760,35 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+9, @PGUID+53, 0, 'Scarlet Monastery Armory - Fadeleaf (2042)'),
 (@OGUID+10, @PGUID+53, 0, 'Scarlet Monastery Armory - Fadeleaf (2042)'),
 
-(@OGUID+6, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Liferoot (2041)'),
-(@OGUID+12, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
-(@OGUID+13, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
-(@OGUID+14, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
-(@OGUID+15, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
-(@OGUID+19, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Liferoot (2041)'),
-(@OGUID+21, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
-(@OGUID+22, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
-(@OGUID+23, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
-(@OGUID+141, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
-(@OGUID+142, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
-(@OGUID+143, @PGUID+54, 0, 'Scarlet Monastery Cathedral - Goldthorn (2046)'),
+(@OGUID+12, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+14, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+22, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+142, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+143, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+13, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+15, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+21, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+23, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+141, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+6, @PGUID+89, 0, 'Scarlet Monastery Cathedral - Liferoot (2041)'),
+(@OGUID+19, @PGUID+89, 0, 'Scarlet Monastery Cathedral - Liferoot (2041)'),
 
-(@OGUID+111, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Solid Chest (75299)'),
-(@OGUID+112, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Solid Chest (75299)'),
-(@OGUID+113, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Solid Chest (75299)'),
-(@OGUID+114, @PGUID+83, 0, 'Scarlet Monastery Graveyard - Large Iron Bound Chest (75296)'),
-(@OGUID+121, @PGUID+81, 0, 'Scarlet Monastery Library - Large Iron Bound Chest (75296)'),
-(@OGUID+122, @PGUID+81, 0, 'Scarlet Monastery Library - Large Solid Chest (75299)'),
-(@OGUID+123, @PGUID+81, 0, 'Scarlet Monastery Library - Large Solid Chest (75299)'),
-(@OGUID+131, @PGUID+82, 0, 'Scarlet Monastery Armory - Armor Crate (3703)'),
-(@OGUID+132, @PGUID+82, 0, 'Scarlet Monastery Armory - Weapon Crate (3704)'),
-(@OGUID+133, @PGUID+82, 0, 'Scarlet Monastery Armory - Large Iron Bound Chest (75297)'),
-(@OGUID+134, @PGUID+82, 0, 'Scarlet Monastery Armory - Large Solid Chest (75300)');
+(@OGUID+111, @PGUID+91, 0, 'Scarlet Monastery Graveyard (Chamber of Atonement) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
+(@OGUID+112, @PGUID+92, 0, 'Scarlet Monastery Graveyard (Forlorn Cloister & Honor''s Tomb) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
+(@OGUID+113, @PGUID+92, 0, 'Scarlet Monastery Graveyard (Forlorn Cloister & Honor''s Tomb) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
+(@OGUID+114, @PGUID+92, 0, 'Scarlet Monastery Graveyard (Forlorn Cloister & Honor''s Tomb) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
+(@OGUID+121, @PGUID+94, 0, 'Scarlet Monastery Library (Scarlet Monastery) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
+(@OGUID+122, @PGUID+94, 0, 'Scarlet Monastery Library (Scarlet Monastery) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
+(@OGUID+123, @PGUID+94, 0, 'Scarlet Monastery Library (Scarlet Monastery) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
+(@OGUID+124, @PGUID+95, 0, 'Scarlet Monastery Library (Athenaeum) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
+(@OGUID+131, @PGUID+97, 0, 'Scarlet Monastery Armory (Training Grounds) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
+(@OGUID+132, @PGUID+98, 0, 'Scarlet Monastery Armory (Footman''s Armory) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
+(@OGUID+133, @PGUID+99, 0, 'Scarlet Monastery Armory (Footman''s Armory) - Armor Crate, Weapon Crate (3703,3704)'),
+(@OGUID+134, @PGUID+99, 0, 'Scarlet Monastery Armory (Footman''s Armory) - Armor Crate, Weapon Crate (3703,3704)'),
+(@OGUID+135, @PGUID+99, 0, 'Scarlet Monastery Armory (Footman''s Armory) - Armor Crate, Weapon Crate (3703,3704)'),
+(@OGUID+136, @PGUID+99, 0, 'Scarlet Monastery Armory (Footman''s Armory) - Armor Crate, Weapon Crate (3703,3704)'),
+(@OGUID+137, @PGUID+99, 0, 'Scarlet Monastery Armory (Footman''s Armory) - Armor Crate, Weapon Crate (3703,3704)'),
+(@OGUID+138, @PGUID+99, 0, 'Scarlet Monastery Armory (Footman''s Armory) - Armor Crate, Weapon Crate (3703,3704)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
@@ -764,7 +813,7 @@ INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalo
 
 DELETE FROM dbscripts_on_quest_end WHERE id=11405;
 INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- TBC+ only
+-- TBC+
 (11405, 1000, 0, 0, 0, 0, 0, 0, 2, 2000020001, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_1'),
 (11405, 3000, 0, 0, 0, 0, 0, 0, 2, 2000020002, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_2'),
 (11405, 5000, 0, 0, 0, 0, 0, 0, 2, 2000020003, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_3'),
@@ -774,7 +823,7 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020001,2000020002,2000020003,2000020004);
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
--- TBC+ only
+-- TBC+
 (2000020001, 'Horseman rise...', 0, 0, 0, 0, 22695, 'horseman say_summon_horseman_1'),
 (2000020002, 'Your time is nigh...', 0, 0, 0, 0, 22696, 'horseman say_summon_horseman_2'),
 (2000020003, 'You felt death once...', 0, 0, 0, 0, 22720, 'horseman say_summon_horseman_3'),

@@ -1,7 +1,7 @@
 /* DBScriptData
 DBName: Shadowfang Keep
 DBScriptName: instance_shadowfang_keep
-DB%Complete: 75
+DB%Complete: 80
 DBComment:
 EndDBScriptData */
 
@@ -662,7 +662,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+143, 5058, 33, -149.213, 2163.18, 155.762, 0.10472, 7200, 7200, 0, 0, 0, 0), -- Wolfguard Worg
 (@CGUID+144, 10000, 33, -219.345, 2154.02, 81.2098, 5.58505, 43200, 43200, 0, 0, 0, 0), -- Arugal
 
--- TBC+ only
+-- TBC+
 -- Landen Stilwell - q.9692 The Path of the Adept
 (@CGUID+200, 17822, 33, -239.492, 2132.84, 81.2629, 2.87979, 7200, 7200, 0, 0, 0, 0);
 
@@ -670,12 +670,28 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- GAMEOBJECTS
 -- ===========
 
+INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
+(@OGUID+12, 3659), (@OGUID+12, 3695), -- Barrel of Melon Juice, Food Crate
+(@OGUID+13, 3659), (@OGUID+13, 3695), -- Barrel of Melon Juice, Food Crate
+(@OGUID+14, 3659), (@OGUID+14, 3695), -- Barrel of Melon Juice, Food Crate
+(@OGUID+15, 3659), (@OGUID+15, 3695), -- Barrel of Melon Juice, Food Crate
+(@OGUID+38, 75293), (@OGUID+38, 75295), -- Large Battered Chest, Large Iron Bound Chest
+(@OGUID+39, 75293), (@OGUID+39, 75295), -- Large Battered Chest, Large Iron Bound Chest
+(@OGUID+40, 75293), (@OGUID+40, 75295), -- Large Battered Chest, Large Iron Bound Chest
+(@OGUID+41, 75293), (@OGUID+41, 75295), -- Large Battered Chest, Large Iron Bound Chest
+(@OGUID+42, 75295), (@OGUID+42, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+43, 75295), (@OGUID+43, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+44, 75295), (@OGUID+44, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+45, 75295), (@OGUID+45, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+46, 75295), (@OGUID+46, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+47, 75295), (@OGUID+47, 75298); -- Large Iron Bound Chest, Large Solid Chest
+
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 -- 1-11
-(@OGUID+12, 3659, 33, -197.138, 2268.28, 76.2013, -2.21657, 0, 0, 0.894934, -0.446198, 180, 180, 100, 1), -- Barrel of Melon Juice
-(@OGUID+13, 3659, 33, -232.514, 2290.86, 74.9993, -2.02458, 0, 0, 0.848048, -0.529919, 180, 180, 100, 1), -- Barrel of Melon Juice
-(@OGUID+14, 3695, 33, -206.19854736328125, 2249.477783203125, 76.2012786865234375, 1.169370651245117187, 0, 0, 0.551936984062194824, 0.833885848522186279, 180, 180, 100, 1), -- Food Crate
-(@OGUID+15, 3695, 33, -257.011, 2279.7, 74.9993, 1.23918, 0, 0, 0.580703, 0.814116, 180, 180, 100, 1), -- Food Crate
+(@OGUID+12, 0, 33, -197.138, 2268.28, 76.2013, -2.21657, 0, 0, 0.894934, -0.446198, 86400, 86400, 100, 1), -- Barrel of Melon Juice, Food Crate
+(@OGUID+13, 0, 33, -232.514, 2290.86, 74.9993, -2.02458, 0, 0, 0.848048, -0.529919, 86400, 86400, 100, 1), -- Barrel of Melon Juice, Food Crate
+(@OGUID+14, 0, 33, -206.19854736328125, 2249.477783203125, 76.2012786865234375, 1.169370651245117187, 0, 0, 0.551936984062194824, 0.833885848522186279, 86400, 86400, 100, 1), -- Barrel of Melon Juice, Food Crate
+(@OGUID+15, 0, 33, -257.011, 2279.7, 74.9993, 1.23918, 0, 0, 0.580703, 0.814116, 86400, 86400, 100, 1), -- Barrel of Melon Juice, Food Crate
 (@OGUID+16, 18895, 33, -242.581, 2159.05, 90.6226, -1.94604, 0, 0, -0.82659, 0.562805, 5400, 5400, 100, 1), -- Courtyard Door
 (@OGUID+17, 18899, 33, -113.762, 2165.08, 157.855, 4.71239, 0.694697, -0.131892, 0.694697, 0.131892, 5400, 5400, 100, 1), -- Lever
 (@OGUID+18, 18900, 33, -252.69586181640625, 2114.2236328125, 82.80517578125, 4.712388992309570312, -0.13189232349395751, -0.69469738006591796, -0.13189232349395751, 0.694697380065917968, 5400, 5400, 100, 1), -- Lever
@@ -698,21 +714,21 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+35, 35597, 33, -214.755, 2272.27, 77.338, -2.47837, 0, 0, 0.945518, -0.325569, 5400, 5400, 100, 1), -- Roaring Fire
 (@OGUID+36, 35598, 33, -213.2, 2273.37, 77.338, -3.12414, 0, 0, 0.999962, -0.008727, 5400, 5400, 100, 1), -- Roaring Fire
 (@OGUID+37, 36738, 33, -155.1708984375, 2185.612548828125, 130.6430206298828125, 0.78539818525314331, 0, 0, 0.382683455944061279, 0.923879504203796386, 2, 2, 100, 1), -- The Book of Ur
-(@OGUID+38, 74448, 33, -191.652, 2161.52, 79.7475, -0.453785, 0, 0, -0.224951, 0.97437, 5200, 5200, 255, 1), -- Large Solid Chest
-(@OGUID+39, 74448, 33, -214.509, 2150.94, 81.0577, 2.18365, 0, 0, 0.887469, 0.460867, 5200, 5200, 100, 1), -- Large Solid Chest
-(@OGUID+40, 74448, 33, -179.471, 2253.05, 86.6287, 5.7415, 0, 0, 0.267544, -0.963546, 5200, 5200, 100, 1), -- Large Solid Chest
-(@OGUID+41, 74448, 33, -236.728, 2299.61, 94.6765, 0.436332, 0, 0, 0.216439, 0.976296, 5200, 5200, 255, 1), -- Large Solid Chest
-(@OGUID+42, 74448, 33, -247.776, 2186.88, 93.9226, 4.30581, 0, 0, 0.835305, -0.549787, 5200, 5200, 100, 1), -- Large Solid Chest
-(@OGUID+43, 74448, 33, -254.871, 2166.57, 93.9367, 5.90488, 0, 0, 0.188027, -0.982164, 5200, 5200, 100, 1), -- Large Solid Chest
-(@OGUID+44, 74448, 33, -133.986, 2183.01, 113.132, -1.91986, 0, 0, -0.819151, 0.573577, 5200, 5200, 255, 1), -- Large Solid Chest
-(@OGUID+45, 75293, 33, -190.976211547851562, 2225.68359375, 79.758453369140625, -1.23918378353118896, 0, 0, 0.580702960491180419, -0.81411552429199218, 5200, 5200, 100, 1), -- Large Battered Chest
-(@OGUID+46, 75295, 33, -189.5677490234375, 2122.8818359375, 97.389923095703125, 1.3962632417678833, 0, 0, 0.642787575721740722, 0.766044437885284423, 5400, 5400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+47, 75298, 33, -106.541, 2164.01, 101.52, 3.03687, 0, 0, 0.99863, 0.052336, 86400, 86400, 100, 1), -- Large Solid Chest
+(@OGUID+38, 0, 33, -214.325, 2151.88, 81.1066, 2.3911, 0, 0, 0.930417, 0.366502, 86400, 86400, 100, 1), -- Large Battered Chest, Large Iron Bound Chest
+(@OGUID+39, 0, 33, -191.652, 2161.52, 79.7475, 5.8294, 0, 0, -0.224951, 0.97437, 86400, 86400, 100, 1), -- Large Battered Chest, Large Iron Bound Chest
+(@OGUID+40, 0, 33, -190.976211547851562, 2225.68359375, 79.758453369140625, -1.23918378353118896, 0, 0, 0.580702960491180419, -0.81411552429199218, 86400, 86400, 100, 1), -- Large Battered Chest
+(@OGUID+41, 0, 33, -178.815, 2252.85, 86.6049, 5.68977, 0, 0, -0.292372, 0.956305, 86400, 86400, 100, 1), -- Large Battered Chest, Large Iron Bound Chest
+(@OGUID+42, 0, 33, -247.776, 2186.88, 93.9226, 4.30581, 0, 0, 0.835305, -0.549787, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+43, 0, 33, -255.201, 2166.04, 93.9366, 5.88176, 0, 0, -0.199367, 0.979925, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+44, 0, 33, -189.5677490234375, 2122.8818359375, 97.389923095703125, 1.3962632417678833, 0, 0, 0.642787575721740722, 0.766044437885284423, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+45, 0, 33, -236.728, 2299.61, 94.6765, 0.436332, 0, 0, 0.216439, 0.976296, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+46, 0, 33, -133.986, 2183.01, 113.132, 4.36332, 0, 0, -0.819152, 0.573577, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+47, 0, 33, -106.541, 2164.01, 101.52, 3.03687, 0, 0, 0.99863, 0.052336, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
 (@OGUID+48, 91138, 33, -218.463592529296875, 2237.203857421875, 80.79766845703125, -2.18166136741638183, 0, 0, 0.887010812759399414, -0.46174865961074829, 300, 300, 100, 1), -- Jordan's Hammer
 (@OGUID+49, 101811, 33, -245.598464965820312, 2132.318115234375, 82.80517578125, 4.712388992309570312, -0.13189232349395751, -0.69469738006591796, -0.13189232349395751, 0.694697380065917968, 5400, 5400, 100, 1), -- Lever
 (@OGUID+50, 101812, 33, -236.251129150390625, 2164.044677734375, 91.15622711181640625, 1.570796370506286621, 0.584487318992614746, 0.397963404655456542, 0.584487020969390869, -0.39796313643455505, 5400, 5400, 100, 1), -- Lever
 
--- TBC+ only
+-- TBC+
 (@OGUID+51, 182011, 33, -207.395, 2245.31, 79.7689, -1.90241, 0, 0, 0.814116, -0.580703, 300, 300, 100, 1); -- Crate of Ingots
 
 -- ======
@@ -720,38 +736,47 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- ======
 
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
-
 -- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
-
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 
 -- =======
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+91, @PGUID+90, 0, 'Shadowfang Keep (Courtyard) - Chest Pool'),
+(@PGUID+92, @PGUID+90, 0, 'Shadowfang Keep (Wall) - Chest Pool'),
+(@PGUID+93, @PGUID+90, 0, 'Shadowfang Keep - Chest Pool');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 2, 'Shadowfang Keep - Master Chest Pool'),
-(@PGUID+2, 1, 'Shadowfang Keep - Deathsworn Captain Spawn Pool');
+(@PGUID+1, 1, 'Shadowfang Keep - Deathsworn Captain Spawn Pool'),
+(@PGUID+70, 2, 'Shadowfang Keep - Barrel of Melon Juice & Food Crate Pool'),
+(@PGUID+90, 3, 'Shadowfang Keep - Master Chest Pool'),
+(@PGUID+91, 1, 'Shadowfang Keep (Courtyard) - Chest Pool'),
+(@PGUID+92, 1, 'Shadowfang Keep (Wall) - Chest Pool'),
+(@PGUID+93, 1, 'Shadowfang Keep - Chest Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+98, @PGUID+2, 30, 'Shadowfang Keep - Deathsworn Captain (3872)'),
-(@CGUID+100, @PGUID+2, 70, 'Shadowfang Keep - Alternate creature to Deathsworn Captain (3872)');
+(@CGUID+98, @PGUID+1, 30, 'Shadowfang Keep - Deathsworn Captain (3872)'),
+(@CGUID+100, @PGUID+1, 70, 'Shadowfang Keep - Alternate creature to Deathsworn Captain (3872)');
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+38, @PGUID+1, 0, 'Shadowfang Keep - Large Solid Chest (74448)'),
-(@OGUID+39, @PGUID+1, 0, 'Shadowfang Keep - Large Solid Chest (74448)'),
-(@OGUID+40, @PGUID+1, 0, 'Shadowfang Keep - Large Solid Chest (74448)'),
-(@OGUID+41, @PGUID+1, 0, 'Shadowfang Keep - Large Solid Chest (74448)'),
-(@OGUID+42, @PGUID+1, 0, 'Shadowfang Keep - Large Solid Chest (74448)'),
-(@OGUID+43, @PGUID+1, 0, 'Shadowfang Keep - Large Solid Chest (74448)'),
-(@OGUID+44, @PGUID+1, 0, 'Shadowfang Keep - Large Solid Chest (74448)'),
-(@OGUID+45, @PGUID+1, 0, 'Shadowfang Keep - Large Battered Chest (75293)'),
-(@OGUID+46, @PGUID+1, 0, 'Shadowfang Keep - Large Iron Bound Chest (75295)'),
-(@OGUID+47, @PGUID+1, 0, 'Shadowfang Keep - Large Solid Chest (75298)');
+(@OGUID+12, @PGUID+70, 0, 'Shadowfang Keep - Barrel of Melon Juice & Food Crate (3659,3695)'),
+(@OGUID+13, @PGUID+70, 0, 'Shadowfang Keep - Barrel of Melon Juice & Food Crate (3659,3695)'),
+(@OGUID+14, @PGUID+70, 0, 'Shadowfang Keep - Barrel of Melon Juice & Food Crate (3659,3695)'),
+(@OGUID+15, @PGUID+70, 0, 'Shadowfang Keep - Barrel of Melon Juice & Food Crate (3659,3695)'),
+(@OGUID+38, @PGUID+91, 0, 'Shadowfang Keep (Courtyard) - Large Battered Chest, Large Iron Bound Chest (75293,75295)'),
+(@OGUID+39, @PGUID+91, 0, 'Shadowfang Keep (Courtyard) - Large Battered Chest, Large Iron Bound Chest (75293,75295)'),
+(@OGUID+40, @PGUID+91, 0, 'Shadowfang Keep (Courtyard) - Large Battered Chest, Large Iron Bound Chest (75293,75295)'),
+(@OGUID+41, @PGUID+91, 0, 'Shadowfang Keep (Courtyard) - Large Battered Chest, Large Iron Bound Chest (75293,75295)'),
+(@OGUID+42, @PGUID+92, 0, 'Shadowfang Keep (Wall) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+43, @PGUID+92, 0, 'Shadowfang Keep (Wall) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+44, @PGUID+92, 0, 'Shadowfang Keep (Wall) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+45, @PGUID+93, 0, 'Shadowfang Keep - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+46, @PGUID+93, 0, 'Shadowfang Keep - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+47, @PGUID+93, 0, 'Shadowfang Keep - Large Iron Bound Chest, Large Solid Chest (75295,75298)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 

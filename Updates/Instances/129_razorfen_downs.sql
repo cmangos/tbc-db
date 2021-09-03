@@ -1,7 +1,7 @@
 /* DBScriptData
 DBName: Razorfen Downs
 DBScriptName: instance_razorfen_downs
-DB%Complete: 75
+DB%Complete: 80
 DBComment:
 EndDBScriptData */
 
@@ -441,6 +441,13 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- GAMEOBJECTS
 -- ===========
 
+INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
+(@OGUID+75, 75297), (@OGUID+75, 75300), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+76, 75297), (@OGUID+76, 75300), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+77, 75297), (@OGUID+77, 75300), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+78, 75297), (@OGUID+78, 75300), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+81, 75297), (@OGUID+81, 75300); -- Large Iron Bound Chest, Large Solid Chest
+
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1, 1628, 129, 2422, 982.551, 48.5452, -0.20944, 0, 0, -0.104529, 0.994522, 7200, 7200, 100, 1), -- Grave Moss
 (@OGUID+2, 1628, 129, 2599.42, 701.18, 55.4969, 1.3439, 0, 0, 0.622513, 0.782609, 7200, 7200, 100, 1), -- Grave Moss
@@ -453,8 +460,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+34, 40199, 129, 2394.63, 886.028, 55.4499, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
 (@OGUID+35, 40200, 129, 2399.8, 893.103, 39.144, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
 (@OGUID+36, 40201, 129, 2361.76, 965.172, 39.826, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
-(@OGUID+37, 75300, 129, 2502.75, 944.867, 49.1772, -2.05949, 0, 0, 0.857167, -0.515038, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+38, 75300, 129, 2358.62, 966.718, 40.2895, 1.309, 0, 0, 0.608761, 0.793353, 86400, 86400, 100, 1), -- Large Solid Chest
+-- 37 - 38
 (@OGUID+39, 142141, 129, 2479.97, 1006.34, 24.0507, -2.32129, 0, 0, -0.91706, 0.398748, 7200, 7200, 100, 1), -- Arthas' Tears
 (@OGUID+40, 142141, 129, 2536.55, 736.053, 53.7239, 3.05433, 0, 0, 0.999048, 0.0436174, 7200, 7200, 100, 1), -- Arthas' Tears
 (@OGUID+41, 142141, 129, 2423.88, 1027.32, 38.2242, -2.3911, 0, 0, -0.930417, 0.366502, 7200, 7200, 100, 1), -- Arthas' Tears
@@ -491,7 +497,13 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+72, 157818, 129, 2600.1, 709.109, 55.132, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Holding Pen
 (@OGUID+73, 157819, 129, 2581.85, 698.974, 55.132, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Holding Pen
 (@OGUID+74, 157820, 129, 2561.65, 692.778, 55.132, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Holding Pen
-(@OGUID+75, 75300, 129, 2435.01, 995.961, 49.3044, 1.37881, 0, 0, 0.636078, 0.771625, 86400, 86400, 100, 1); -- Large Solid Chest
+-- Spiral of Thorns
+(@OGUID+75, 0, 129, 2502.75, 944.867, 49.1772, -2.05949, 0, 0, 0.857167, -0.515038, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+76, 0, 129, 2455.52, 956.494, 35.5014, 4.64258, 0, 0, -0.731354, 0.681998, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+77, 0, 129, 2358.62, 966.718, 40.2895, 1.309, 0, 0, 0.608761, 0.793353, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+78, 0, 129, 2435.01, 995.961, 49.3044, 1.37881, 0, 0, 0.636078, 0.771625, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+-- The Murder Pens
+(@OGUID+81, 0, 129, 2482.92, 774.274, 46.1014, 4.76475, 0, 0, -0.688354, 0.725375, 86400, 86400, 100, 1); -- Large Iron Bound Chest, Large Solid Chest
 
 -- ======
 -- EVENTS
@@ -507,11 +519,15 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+91, @PGUID+90, 0, 'Razorfen Downs (Spiral of Thorns) - Chest Pool'),
+(@PGUID+92, @PGUID+90, 0, 'Razorfen Downs (The Murder Pens) - Chest Pool');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Razorfen Downs - Ragglesnout (7354)'),
-(@PGUID+23, 1, 'Razorfen Downs - Master Chest Pool');
+(@PGUID+90, 2, 'Razorfen Downs - Master Chest Pool'),
+(@PGUID+91, 1, 'Razorfen Downs (Spiral of Thorns) - Chest Pool'),
+(@PGUID+92, 1, 'Razorfen Downs (The Murder Pens) - Chest Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+169, @PGUID+1, 70, 'Razorfen Downs - Alternate creature to Ragglesnout (7354)'),
@@ -520,9 +536,11 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+37, @PGUID+23, 0, 'Razorfen Downs - Large Solid Chest (75300)'),
-(@OGUID+38, @PGUID+23, 0, 'Razorfen Downs - Large Solid Chest (75300)'),
-(@OGUID+75, @PGUID+23, 0, 'Razorfen Downs - Large Solid Chest (75300)');
+(@OGUID+75, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
+(@OGUID+76, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
+(@OGUID+77, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
+(@OGUID+78, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
+(@OGUID+81, @PGUID+92, 0, 'Razorfen Downs (The Murder Pens) - Large Iron Bound Chest, Large Solid Chest (75297,75300)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 

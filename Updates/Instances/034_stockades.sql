@@ -1,7 +1,7 @@
 /* DBScriptData
 DBName: The Stockade
 DBScriptName: -
-DB%Complete: 85
+DB%Complete: 86
 DBComment:
 EndDBScriptData */
 
@@ -264,79 +264,55 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- GAMEOBJECTS
 -- ===========
 
+INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
+(@OGUID+01, 75295), (@OGUID+01, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+02, 75295), (@OGUID+02, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+03, 75295), (@OGUID+03, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+04, 75295), (@OGUID+04, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+11, 75295), (@OGUID+11, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+12, 75295), (@OGUID+12, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+13, 75295), (@OGUID+13, 75298); -- Large Iron Bound Chest, Large Solid Chest
+
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 75295, 34, 104.4551773071289062, 77.2554473876953125, -34.856231689453125, -0.36651757359504699, 0, 0, -0.18223476409912109, 0.98325502872467041, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+2, 75298, 34, 104.4551773071289062, 77.2554473876953125, -34.856231689453125, -0.36651757359504699, 0, 0, -0.18223476409912109, 0.98325502872467041, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+3, 75295, 34, 92.3032073974609375, -56.1772651672363281, -34.856231689453125, -0.20943944156169891, 0, 0, -0.10452842712402343, 0.994521915912628173, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+4, 75298, 34, 92.3032073974609375, -56.1772651672363281, -34.856231689453125, -0.20943944156169891, 0, 0, -0.10452842712402343, 0.994521915912628173, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+5, 75295, 34, 165.321533203125, 57.666259765625, -34.856231689453125, 2.914689540863037109, 0, 0, 0.993571281433105468, 0.113208353519439697, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+6, 75298, 34, 165.321533203125, 57.666259765625, -34.856231689453125, 2.914689540863037109, 0, 0, 0.993571281433105468, 0.113208353519439697, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+7, 75295, 34, 188.6029052734375, 81.584991455078125, -33.9395637512207031, 2.478367090225219726, 0, 0, 0.94551849365234375, 0.325568377971649169, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+8, 75298, 34, 188.6029052734375, 81.584991455078125, -33.9395637512207031, 2.478367090225219726, 0, 0, 0.94551849365234375, 0.325568377971649169, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+9, 75295, 34, 90.59210205078125, -145.882415771484375, -33.9395675659179687, 1.448622107505798339, 0, 0, 0.662619590759277343, 0.748956084251403808, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+10, 75298, 34, 90.59210205078125, -145.882415771484375, -33.9395675659179687, 1.448622107505798339, 0, 0, 0.662619590759277343, 0.748956084251403808, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+11, 75295, 34, 151.6896514892578125, -65.130950927734375, -34.856231689453125, -1.18682324886322021, 0, 0, -0.55919265747070312, 0.829037725925445556, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+12, 75298, 34, 151.6896514892578125, -65.130950927734375, -34.856231689453125, -1.18682324886322021, 0, 0, -0.55919265747070312, 0.829037725925445556, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+13, 75295, 34, 173.18524169921875, 146.954803466796875, -33.9395637512207031, -2.05948829650878906, 0, 0, -0.85716724395751953, 0.515038192272186279, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+14, 75298, 34, 173.18524169921875, 146.954803466796875, -33.9395637512207031, -2.05948829650878906, 0, 0, -0.85716724395751953, 0.515038192272186279, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+15, 75295, 34, 173.18524169921875, 146.954803466796875, -33.9395637512207031, -2.05948829650878906, 0, 0, -0.85716724395751953, 0.515038192272186279, 86400, 86400, 100, 1), -- Large Iron Bound Chest
-(@OGUID+16, 75298, 34, 173.18524169921875, 146.954803466796875, -33.9395637512207031, -2.05948829650878906, 0, 0, -0.85716724395751953, 0.515038192272186279, 86400, 86400, 100, 1); -- Large Solid Chest
+-- West Wing
+(@OGUID+01, 0, 34, 104.4551773071289062, 77.2554473876953125, -34.856231689453125, -0.36651757359504699, 0, 0, -0.18223476409912109, 0.98325502872467041, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+02, 0, 34, 165.321533203125, 57.666259765625, -34.856231689453125, 2.914689540863037109, 0, 0, 0.993571281433105468, 0.113208353519439697, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+03, 0, 34, 188.6029052734375, 81.584991455078125, -33.9395637512207031, 2.478367090225219726, 0, 0, 0.94551849365234375, 0.325568377971649169, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+04, 0, 34, 173.18524169921875, 146.954803466796875, -33.9395637512207031, -2.05948829650878906, 0, 0, -0.85716724395751953, 0.515038192272186279, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+-- East Wing
+(@OGUID+11, 0, 34, 92.3032073974609375, -56.1772651672363281, -34.856231689453125, -0.20943944156169891, 0, 0, -0.10452842712402343, 0.994521915912628173, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+12, 0, 34, 151.6896514892578125, -65.130950927734375, -34.856231689453125, -1.18682324886322021, 0, 0, -0.55919265747070312, 0.829037725925445556, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+13, 0, 34, 90.59210205078125, -145.882415771484375, -33.9395675659179687, 1.448622107505798339, 0, 0, 0.662619590759277343, 0.748956084251403808, 86400, 86400, 100, 1); -- Large Iron Bound Chest, Large Solid Chest
 
 -- ======
 -- EVENTS
 -- ======
 
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
-
 -- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
-
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 
 -- =======
 -- POOLING
 -- =======
 
-INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+91, @PGUID+90, 0, 'The Stockade - Chest #1'),
-(@PGUID+92, @PGUID+90, 0, 'The Stockade - Chest #2'),
-(@PGUID+93, @PGUID+90, 0, 'The Stockade - Chest #3'),
-(@PGUID+94, @PGUID+90, 0, 'The Stockade - Chest #4'),
-(@PGUID+95, @PGUID+90, 0, 'The Stockade - Chest #5'),
-(@PGUID+96, @PGUID+90, 0, 'The Stockade - Chest #6'),
-(@PGUID+97, @PGUID+90, 0, 'The Stockade - Chest #7'),
-(@PGUID+98, @PGUID+90, 0, 'The Stockade - Chest #8');
+-- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'The Stockade - Dextren Ward (1663)'),
 (@PGUID+2, 1, 'The Stockade - Targorr the Dread (1696)'),
 (@PGUID+3, 1, 'The Stockade - Bruegal Ironknuckle (1720)'), -- (All Substitute should be spawned if he is not spawned)
-(@PGUID+90, 4, 'The Stockade - Master Chest Pool'),
-(@PGUID+91, 1, 'The Stockade - Chest #1'),
-(@PGUID+92, 1, 'The Stockade - Chest #2'),
-(@PGUID+93, 1, 'The Stockade - Chest #3'),
-(@PGUID+94, 1, 'The Stockade - Chest #4'),
-(@PGUID+95, 1, 'The Stockade - Chest #5'),
-(@PGUID+96, 1, 'The Stockade - Chest #6'),
-(@PGUID+97, 1, 'The Stockade - Chest #7'),
-(@PGUID+98, 1, 'The Stockade - Chest #8');
+(@PGUID+91, 1, 'The Stockade (West Wing) - Chest Pool'),
+(@PGUID+92, 1, 'The Stockade (East Wing) - Chest Pool');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+1, @PGUID+91, 0, 'The Stockade - Large Iron Bound Chest (75295)'),
-(@OGUID+2, @PGUID+91, 0, 'The Stockade - Large Solid Chest Pool (75298)'),
-(@OGUID+3, @PGUID+92, 0, 'The Stockade - Large Iron Bound Chest (75295)'),
-(@OGUID+4, @PGUID+92, 0, 'The Stockade - Large Solid Chest Pool (75298)'),
-(@OGUID+5, @PGUID+93, 0, 'The Stockade - Large Iron Bound Chest (75295)'),
-(@OGUID+6, @PGUID+93, 0, 'The Stockade - Large Solid Chest Pool (75298)'),
-(@OGUID+7, @PGUID+94, 0, 'The Stockade - Large Iron Bound Chest (75295)'),
-(@OGUID+8, @PGUID+94, 0, 'The Stockade - Large Solid Chest Pool (75298)'),
-(@OGUID+9, @PGUID+95, 0, 'The Stockade - Large Iron Bound Chest (75295)'),
-(@OGUID+10, @PGUID+95, 0, 'The Stockade - Large Solid Chest Pool (75298)'),
-(@OGUID+11, @PGUID+96, 0, 'The Stockade - Large Iron Bound Chest (75295)'),
-(@OGUID+12, @PGUID+96, 0, 'The Stockade - Large Solid Chest Pool (75298)'),
-(@OGUID+13, @PGUID+97, 0, 'The Stockade - Large Iron Bound Chest (75295)'),
-(@OGUID+14, @PGUID+97, 0, 'The Stockade - Large Solid Chest Pool (75298)'),
-(@OGUID+15, @PGUID+98, 0, 'The Stockade - Large Iron Bound Chest (75295)'),
-(@OGUID+16, @PGUID+98, 0, 'The Stockade - Large Solid Chest Pool (75298)');
+(@OGUID+01, @PGUID+91, 0, 'The Stockade (West Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+02, @PGUID+91, 0, 'The Stockade (West Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+03, @PGUID+91, 0, 'The Stockade (West Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+04, @PGUID+91, 0, 'The Stockade (West Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+11, @PGUID+92, 0, 'The Stockade (East Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+12, @PGUID+92, 0, 'The Stockade (East Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)'),
+(@OGUID+13, @PGUID+92, 0, 'The Stockade (East Wing) - Large Iron Bound Chest, Large Solid Chest (75295,75298)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 

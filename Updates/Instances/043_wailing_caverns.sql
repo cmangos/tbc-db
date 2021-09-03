@@ -1,7 +1,7 @@
 /* DBScriptData
 DBName: Wailing Caverns
 DBScriptName: instance_wailing_caverns
-DB%Complete: 75
+DB%Complete: 80
 DBComment:
 EndDBScriptData */
 
@@ -911,20 +911,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- ======
 
 -- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
-
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
-
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
 -- =======
 -- POOLING
 -- =======
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+91, @PGUID+90, 0, 'Wailing Caverns (Pit of Fangs) - Chest Pool'),
+(@PGUID+92, @PGUID+90, 0, 'Wailing Caverns (Winding Chasm) - Chest Pool');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Wailing Caverns - Deviate Faerie Dragon / Druid of the Fang'),
-(@PGUID+21, 2, 'Wailing Caverns - Master Chest Pool');
+(@PGUID+90, 2, 'Wailing Caverns - Master Chest Pool'),
+(@PGUID+91, 1, 'Wailing Caverns (Pit of Fangs) - Chest Pool'),
+(@PGUID+92, 1, 'Wailing Caverns (Winding Chasm) - Chest Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+130, @PGUID+1, 65, 'Wailing Caverns - Druid of the Fang'),
@@ -933,10 +935,13 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+85, @PGUID+21, 0, 'Wailing Caverns - Large Battered Chest (75293)'),
-(@OGUID+86, @PGUID+21, 0, 'Wailing Caverns - Large Battered Chest (75293)'),
-(@OGUID+87, @PGUID+21, 0, 'Wailing Caverns - Large Battered Chest (75293)'),
-(@OGUID+88, @PGUID+21, 0, 'Wailing Caverns - Large Battered Chest (75293)');
+(@OGUID+94, @PGUID+91, 0, 'Wailing Caverns (Pit of Fangs) - Large Battered Chest (75293)'),
+(@OGUID+95, @PGUID+91, 0, 'Wailing Caverns (Pit of Fangs) - Large Battered Chest (75293)'),
+(@OGUID+96, @PGUID+92, 0, 'Wailing Caverns (Winding Chasm) - Large Battered Chest (75293)'),
+(@OGUID+97, @PGUID+92, 0, 'Wailing Caverns (Winding Chasm) - Large Battered Chest (75293)'),
+(@OGUID+98, @PGUID+92, 0, 'Wailing Caverns (Winding Chasm) - Large Battered Chest (75293)'),
+(@OGUID+99, @PGUID+92, 0, 'Wailing Caverns (Winding Chasm) - Large Battered Chest (75293)'),
+(@OGUID+100, @PGUID+92, 0, 'Wailing Caverns (Winding Chasm) - Large Battered Chest (75293)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
@@ -1003,15 +1008,21 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+82, 59530, 43, -69.809722900390625, -34.2418174743652343, -60.2395973205566406, 2.354784011840820312, 0.015678001567721366, 0.031800005584955215, 0.923059821128845214, 0.38301900029182434, 3600, 3600, 100, 1), -- Cauldron
 (@OGUID+83, 60393, 43, -228.116, 40.6489, -82.3157, -3.13179, -0.008465, -0.02245, 0.999699, -0.005094, 3600, 3600, 100, 1), -- Campfire
 (@OGUID+84, 60394, 43, -142.382308959960937, -64.6989669799804687, -77.6614227294921875, 3.133876562118530273, 0.01437698770314455, 0.13412293791770935, 0.990858495235443115, 0.00194595567882061, 3600, 3600, 100, 1), -- Campfire
-(@OGUID+85, 75293, 43, -49.9295082092285156, 370.574371337890625, -59.6855735778808593, 0.575958669185638427, 0, 0, 0.284015357494354248, 0.958819746971130371, 5200, 5200, 100, 1), -- Large Battered Chest
-(@OGUID+86, 75293, 43, -79.4619979858398437, -32.5999641418457031, -59.1091728210449218, -0.29670602083206176, 0, 0, 0.147809430956840515, -0.98901587724685668, 5200, 5200, 100, 1), -- Large Battered Chest
-(@OGUID+87, 75293, 43, -95.07183837890625, -311.131683349609375, -61.8035011291503906, 2.321287870407104492, 0, 0, 0.917060077190399169, 0.398749083280563354, 5200, 5200, 100, 1), -- Large Battered Chest
-(@OGUID+88, 75293, 43, -10.4679203033447265, -272.442047119140625, -66.1605606079101562, 0.715585052967071533, 0, 0, 0.350207388401031494, 0.936672210693359375, 5200, 5200, 100, 1), -- Large Battered Chest
+-- 85 - 88
 (@OGUID+89, 146088, 43, -70.0215301513671875, -31.7023143768310546, -60.1562042236328125, -1.85516905784606933, -0.02116399817168712, 0.000874998047947883, -0.8001258373260498, 0.599458038806915283, 3600, 3600, 100, 1), -- Bonfire
 (@OGUID+90, 146089, 43, -113.451255798339843, -313.3055419921875, -63.0295944213867187, 2.368527889251708984, 0.010149998590350151, -0.01859199628233909, 0.925931155681610107, 0.377097904682159423, 3600, 3600, 100, 1), -- Bonfire
 (@OGUID+91, 146090, 43, -300.35821533203125, -239.157669067382812, -63.8889846801757812, -0.75502669811248779, -0.02081099525094032, 0.0149629982188344, -0.3683447241783142, 0.92933589220046997, 3600, 3600, 100, 1), -- Bonfire
 (@OGUID+92, 146091, 43, -136.915817260742187, 414.704132080078125, -72.7370376586914062, -1.85516905784606933, -0.02116399817168712, 0.000874998047947883, -0.8001258373260498, 0.599458038806915283, 3600, 3600, 100, 1), -- Bonfire
-(@OGUID+93, 180055, 43, -97.6, 173.8, -79, 2.08, 0, 0, 0, 0, -300, -300, 100, 1); -- Mysterious Wailing Caverns Chest
+(@OGUID+93, 180055, 43, -97.6, 173.8, -79, 2.08, 0, 0, 0, 0, -300, -300, 100, 1), -- Mysterious Wailing Caverns Chest
+-- Pit of Fangs
+(@OGUID+94, 75293, 43, -49.9295082092285156, 370.574371337890625, -59.6855735778808593, 0.575958669185638427, 0, 0, 0.284015357494354248, 0.958819746971130371, 86400, 86400, 100, 1), -- Large Battered Chest
+(@OGUID+95, 75293, 43, 29.6232, 531.781, -56.9991, 5.58505, 0, 0, -0.34202, 0.939693, 86400, 86400, 100, 1), -- Large Battered Chest
+-- Winding Chasm
+(@OGUID+96, 75293, 43, -79.4619979858398437, -32.5999641418457031, -59.1091728210449218, -0.29670602083206176, 0, 0, 0.147809430956840515, -0.98901587724685668, 86400, 86400, 100, 1), -- Large Battered Chest
+(@OGUID+97, 75293, 43, 46.7143, -166.269, -82.1537, 5.34071, 0, 0, -0.45399, 0.891007, 86400, 86400, 100, 1), -- Large Battered Chest
+(@OGUID+98, 75293, 43, -10.4679203033447265, -272.442047119140625, -66.1605606079101562, 0.715585052967071533, 0, 0, 0.350207388401031494, 0.936672210693359375, 86400, 86400, 100, 1), -- Large Battered Chest
+(@OGUID+99, 75293, 43, -95.07183837890625, -311.131683349609375, -61.8035011291503906, 2.321287870407104492, 0, 0, 0.917060077190399169, 0.398749083280563354, 86400, 86400, 100, 1), -- Large Battered Chest
+(@OGUID+100, 75293, 43, -313.264, -235.066, -62.8271, 1.02974, 0, 0, 0.492423, 0.870356, 86400, 86400, 100, 1); -- Large Battered Chest
 
 -- =========
 -- DBSCRIPTS
