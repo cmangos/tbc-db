@@ -226,7 +226,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnmask`, `position_x`, `posit
 -- mostly zone pools without area identifier, keep them though as they do no harm and might be needed again
 DELETE FROM `pool_template` WHERE `entry` IN (31151,31330,31331,31332,31333,31334,31335,31336,31337,31338,31339,31340,31341);
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(31151, 1, 'Stonetalon Mountains (Windshear Mine)'),
+(31151, 1, 'Stonetalon Mountains (Windshear Mine) - Chest Pool'),
 (31330, 1, 'Dun Morogh (Shimmer Ridge) - Chest Pool'),
 (31331, 1, 'The Barrens (The Tidus Stair) - Chest Pool'),
 (31332, 1, 'Silverpine Forest (Beren''s Peril) - Chest Pool'),
@@ -237,7 +237,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (31337, 1, 'Azshara (Thalassian Base Camp) - Chest Pool'),
 (31338, 1, 'Darkshore (Twilight Shore) - Chest Pool'),
 (31339, 1, 'Darkshore (The Long Wash) - Chest Pool'),
-(31340, 1, 'Stonetalon Mountains (Windshear Crag)'),
+(31340, 1, 'Stonetalon Mountains (Windshear Crag) - Chest Pool'),
 (31341, 1, 'The Barrens (The Crossroads & Ratchet) - Chest Pool');
 
 DELETE FROM `pool_pool` WHERE `pool_id` IN (31151,31330,31331,31332,31333,31334,31335,31336,31337,31338,31339,31340,31341);
