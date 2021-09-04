@@ -29352,8 +29352,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Astromancer Solarian Spotlight 18928 - NullAI
 -- Al'ar (19514) - boss_alar
 -- Void Reaver (19516) - boss_void_reaver
--- Ember of Al'ar
+-- Ember of Al'ar 19551
 ('1955101','19551','6','0','100','0','0','0','0','0','0','0','11','34133','15','0','0','0','0','0','0','0','0','0','Ember of Al''ar - Cast Ember Blast on Death'),
+('1955102','19551','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Ember of Al''ar - React Passive on Spawn'),
+('1955103','19551','29','0','100','0','3000','3000','0','0','0','0','50','2','0','0','38','0','0','0','0','0','0','0','Ember of Al''ar - React Aggressive and Zone Combat Pulse on Timer'),
 -- Arcane Orb Target 19577 - NullAI
 -- Kael'thas Sunstrider (19622) - boss_kaelthas
 -- Bloodwarder Legionnaire
