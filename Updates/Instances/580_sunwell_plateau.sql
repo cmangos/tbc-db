@@ -1004,31 +1004,31 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+75, @CGUID+62, 1024), -- Sunblade Cabalist -> Brutallus
 -- Sunwell Plateau Gauntlet
 -- Shadowsword Group #1
-(@CGUID+300, @CGUID+303, 1167), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
-(@CGUID+301, @CGUID+303, 1167), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+302, @CGUID+303, 1167), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+303, @CGUID+317, 1165), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
-(@CGUID+317, @CGUID+318, 1165), -- Shadowsword Soulbinder -> Shadowsword Assassin
-(@CGUID+318, @CGUID+307, 1165), -- Shadowsword Assassin -> Shadowsword Lifeshaper
+(@CGUID+300, @CGUID+303, 1039), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
+(@CGUID+301, @CGUID+303, 1039), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+302, @CGUID+303, 1039), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+303, @CGUID+317, 1037), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
+(@CGUID+317, @CGUID+318, 1037), -- Shadowsword Soulbinder -> Shadowsword Assassin
+(@CGUID+318, @CGUID+307, 1037), -- Shadowsword Assassin -> Shadowsword Lifeshaper
 -- Shadowsword Group #2
-(@CGUID+304, @CGUID+307, 1167), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
-(@CGUID+305, @CGUID+307, 1167), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+306, @CGUID+307, 1167), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+307, @CGUID+321, 1165), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
-(@CGUID+321, @CGUID+322, 1165), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
-(@CGUID+322, @CGUID+311, 1165), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
+(@CGUID+304, @CGUID+307, 1039), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
+(@CGUID+305, @CGUID+307, 1039), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+306, @CGUID+307, 1039), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+307, @CGUID+321, 1037), -- Shadowsword Lifeshaper -> Shadowsword Soulbinder
+(@CGUID+321, @CGUID+322, 1037), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
+(@CGUID+322, @CGUID+311, 1037), -- Shadowsword Soulbinder -> Gauntlet Imp Trigger
 -- Shadowsword Group #3
-(@CGUID+308, @CGUID+311, 1167), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
-(@CGUID+309, @CGUID+311, 1167), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+310, @CGUID+311, 1167), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
-(@CGUID+311, @CGUID+319, 1165), -- Shadowsword Lifeshaper -> Shadowsword Assassin
-(@CGUID+319, @CGUID+320, 1165), -- Shadowsword Assassin -> Shadowsword Assassin
+(@CGUID+308, @CGUID+311, 1039), -- Shadowsword Manafiend -> Shadowsword Lifeshaper
+(@CGUID+309, @CGUID+311, 1039), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+310, @CGUID+311, 1039), -- Shadowsword Vanquisher -> Shadowsword Lifeshaper
+(@CGUID+311, @CGUID+319, 1037), -- Shadowsword Lifeshaper -> Shadowsword Assassin
+(@CGUID+319, @CGUID+320, 1037), -- Shadowsword Assassin -> Shadowsword Assassin
 -- Shadowsword Group #4
-(@CGUID+320, @CGUID+316, 1165), -- Shadowsword Assassin -> Shadowsword Commander
-(@CGUID+312, @CGUID+316, 1167), -- Shadowsword Manafiend -> Shadowsword Commander
-(@CGUID+313, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
-(@CGUID+314, @CGUID+316, 1167), -- Shadowsword Vanquisher -> Shadowsword Commander
-(@CGUID+315, @CGUID+316, 1167), -- Shadowsword Lifeshaper -> Shadowsword Commander
+(@CGUID+320, @CGUID+316, 1037), -- Shadowsword Assassin -> Shadowsword Commander
+(@CGUID+312, @CGUID+316, 1039), -- Shadowsword Manafiend -> Shadowsword Commander
+(@CGUID+313, @CGUID+316, 1039), -- Shadowsword Vanquisher -> Shadowsword Commander
+(@CGUID+314, @CGUID+316, 1039), -- Shadowsword Vanquisher -> Shadowsword Commander
+(@CGUID+315, @CGUID+316, 1039), -- Shadowsword Lifeshaper -> Shadowsword Commander
 -- Sanguine Chamber
 -- Shadowsword Group #5
 (@CGUID+324, @CGUID+323, 1167), -- Shadowsword Soulbinder -> Shadowsword Soulbinder
