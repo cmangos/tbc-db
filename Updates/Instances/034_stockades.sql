@@ -53,20 +53,20 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(1663, 0, 0, 1, 16, 0, 0, '7165'), -- Dextren Ward
-(1666, 0, 0, 1, 16, 0, 0, '3418'), -- Kam Deepfury
-(1696, 0, 0, 1, 16, 0, 0, '8876'), -- Targorr the Dread
-(1706, 0, 0, 1, 16, 0, 0, NULL), -- Defias Prisoner
-(1707, 0, 0, 1, 16, 0, 0, NULL), -- Defias Captive
-(1708, 0, 0, 1, 16, 0, 0, '7165'), -- Defias Inmate
-(1711, 0, 0, 1, 16, 0, 0, ''), -- Defias Convict
-(1715, 0, 0, 1, 16, 0, 0, NULL), -- Defias Insurgent
-(1716, 0, 0, 1, 16, 0, 0, ''), -- Bazil Thredd
-(1717, 0, 0, 1, 16, 0, 0, NULL), -- Hamhock
-(1720, 0, 0, 1, 16, 0, 0, NULL); -- Bruegal Ironknuckle
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(1663, 0, 0, 1, 0, 0, '7165'), -- Dextren Ward
+(1666, 0, 0, 1, 0, 0, '3418'), -- Kam Deepfury
+(1696, 0, 0, 1, 0, 0, '8876'), -- Targorr the Dread
+(1706, 0, 0, 1, 0, 0, NULL), -- Defias Prisoner
+(1707, 0, 0, 1, 0, 0, NULL), -- Defias Captive
+(1708, 0, 0, 1, 0, 0, '7165'), -- Defias Inmate
+(1711, 0, 0, 1, 0, 0, ''), -- Defias Convict
+(1715, 0, 0, 1, 0, 0, NULL), -- Defias Insurgent
+(1716, 0, 0, 1, 0, 0, ''), -- Bazil Thredd
+(1717, 0, 0, 1, 0, 0, NULL), -- Hamhock
+(1720, 0, 0, 1, 0, 0, NULL); -- Bruegal Ironknuckle
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 

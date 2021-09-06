@@ -1796,35 +1796,35 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (18672, 0, 155, 2640.62, 703.12, 56.0341, 4.91973, 0, 0),
 (18672, 0, 156, 2640.84, 691.622, 55.4653, 4.53882, 0, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+361, 0, 3, 0, 0, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+401, 0, 3, 0, 0, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+436, 0, 1, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+437, 0, 1, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+438, 0, 1, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+439, 0, 3, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+441, 0, 3, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+442, 0, 3, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+443, 0, 3, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+445, 0, 3, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+447, 0, 3, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+449, 0, 1, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+455, 0, 3, 0, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+456, 0, 1, 0, 0, 0, 0, NULL); -- Orc Prisoner
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+361, 0, 3, 0, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+401, 0, 3, 0, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+436, 0, 1, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+437, 0, 1, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+438, 0, 1, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+439, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+441, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+442, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+443, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+445, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+447, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+449, 0, 1, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+455, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+456, 0, 1, 0, 0, 0, NULL); -- Orc Prisoner
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(18092, 0, 0, 0, 0, 0, 0, '19817'), -- Tarren Mill Guardsman
-(18096, 0, 0, 0, 0, 0, 0, '19818'), -- Epoch Hunter
-(18170, 0, 0, 0, 0, 0, 0, '19817'), -- Infinite Slayer
-(18887, 0, 0, 0, 0, 0, 0, '33071'), -- Taretha
-(20342, 0, 0, 1, 16, 379, 0, NULL), -- Hal McAllister
-(20344, 0, 0, 1, 16, 379, 0, NULL), -- Nat Pagle
-(20345, 0, 5, 1, 16, 0, 0, NULL), -- Commander Mograine
-(20355, 0, 3, 1, 16, 0, 0, NULL), -- Stalvan Mistmantle
-(20419, 0, 0, 1, 16, 233, 0, NULL), -- Zixil
-(20420, 0, 7, 1, 16, 0, 0, NULL), -- Overwatch Mark 0
-(20422, 0, 0, 1, 16, 133, 0, NULL), -- Kirin Tor Mage
-(28132, 2410, 0, 1, 16, 0, 0, NULL); -- Don Carlos
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(18092, 0, 0, 0, 0, 0, '19817'), -- Tarren Mill Guardsman
+(18096, 0, 0, 0, 0, 0, '19818'), -- Epoch Hunter
+(18170, 0, 0, 0, 0, 0, '19817'), -- Infinite Slayer
+(18887, 0, 0, 0, 0, 0, '33071'), -- Taretha
+(20342, 0, 0, 1, 379, 0, NULL), -- Hal McAllister
+(20344, 0, 0, 1, 379, 0, NULL), -- Nat Pagle
+(20345, 0, 5, 1, 0, 0, NULL), -- Commander Mograine
+(20355, 0, 3, 1, 0, 0, NULL), -- Stalvan Mistmantle
+(20419, 0, 0, 1, 233, 0, NULL), -- Zixil
+(20420, 0, 7, 1, 0, 0, NULL), -- Overwatch Mark 0
+(20422, 0, 0, 1, 133, 0, NULL), -- Kirin Tor Mage
+(28132, 2410, 0, 1, 0, 0, NULL); -- Don Carlos
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+327, @CGUID+326, 3), -- Lordaeron Watchman -> Lordaeron Watchman
@@ -2845,25 +2845,25 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1784801,0,0,0,0,0,0,0,0,2000020114,0,0,0,0,0,0,0,'Lt. Drake - say 1'),
 (1784802,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - switch to path 1'),
 (1784802,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - run off'),
-(1784803,0,2,46,32832,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - become attackable'),
+(1784803,0,48,256,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - Remove UNIT_FLAG_IMMUNE_TO_PLAYER'),
 
 (1809201, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Pause Waypoints'),
 (1809201, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Cast Transform'),
 (1809201, 1000, 44, 18170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Morph to Infinite Slayer'),
-(1809201, 1000, 5, 46, 768, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Remove Unit Flag IMMUNE_TO_PLAYER and IMMUNE_TO_NPC'),
+(1809201, 1000, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
 (1809201, 2000, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Guardsman - Attack Thrall'),
 
 (1809301, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Pause Waypoints'),
 (1809301, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Cast Transform'),
 (1809301, 1000, 44, 18172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Morph to Infinite Saboteor'),
-(1809301, 1000, 5, 46, 768, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Remove Unit Flag IMMUNE_TO_PLAYER and IMMUNE_TO_NPC'),
+(1809301, 1000, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
 (1809301, 2000, 0, 0, 0, 0, 0, 0, 0, 2000020110, 2000020111, 2000020112, 2000020113, 0, 0, 0, 0, 'Tarren Mill Protector - Random Say'),
 (1809301, 2000, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Attack Thrall'),
 
 (1809401, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Pause Waypoints'),
 (1809401, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Cast Transform'),
 (1809401, 1000, 44, 18171, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Morph to Infinite Defiler'),
-(1809401, 1000, 5, 46, 768, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Remove Unit Flag IMMUNE_TO_PLAYER and IMMUNE_TO_NPC'),
+(1809401, 1000, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
 (1809401, 2000, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Attack Thrall');
 
 DELETE FROM `dbscript_string` WHERE `entry` IN (2000020110,2000020111,2000020112,2000020113,2000020114);

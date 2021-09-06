@@ -600,120 +600,120 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (10808, 0, 20, 3634.091, -3178.539, 128.8624, 100, 0, 0),
 (10808, 0, 21, 3623.951, -3180.231, 130.4562, 100, 0, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+96, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+100, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+102, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+104, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+105, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+108, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+110, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+111, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+114, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+115, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+116, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+118, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+119, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+120, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+126, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+127, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+128, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+129, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+132, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+134, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+135, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+136, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+138, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+139, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+143, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+144, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+146, 0, 0, 1, 16, 0, 0, '13787'), -- Skeletal Guardian
-(@CGUID+201, 0, 8, 1, 16, 0, 0, '12380'), -- Thuzadin Shadowcaster
-(@CGUID+202, 0, 8, 1, 16, 193, 0, '12380'), -- Thuzadin Shadowcaster
-(@CGUID+204, 0, 8, 1, 16, 0, 0, '12380'), -- Thuzadin Shadowcaster
-(@CGUID+210, 0, 8, 1, 16, 0, 0, '12380'), -- Thuzadin Shadowcaster
-(@CGUID+217, 0, 0, 1, 16, 0, 0, '17224'), -- Thuzadin Acolyte
-(@CGUID+218, 0, 0, 1, 16, 0, 0, '17224'), -- Thuzadin Acolyte
-(@CGUID+219, 0, 0, 1, 16, 0, 0, '17224'), -- Thuzadin Acolyte
-(@CGUID+220, 0, 0, 1, 16, 0, 0, '17224'), -- Thuzadin Acolyte
-(@CGUID+221, 0, 0, 1, 16, 0, 0, '17224'), -- Thuzadin Acolyte
-(@CGUID+222, 0, 262144, 1, 16, 0, 0, '28559'), -- Thuzadin Acolyte
-(@CGUID+230, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Necromancer
-(@CGUID+231, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Necromancer
-(@CGUID+233, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Necromancer
-(@CGUID+234, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Necromancer
-(@CGUID+235, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Necromancer
-(@CGUID+236, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Necromancer
-(@CGUID+237, 0, 8, 1, 16, 193, 0, '12380'), -- Thuzadin Necromancer
-(@CGUID+243, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Necromancer
-(@CGUID+244, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Necromancer
-(@CGUID+339, 0, 0, 1, 16, 0, 1024, NULL), -- Ash'ari Crystal
-(@CGUID+340, 0, 0, 1, 16, 0, 1024, NULL), -- Ash'ari Crystal
-(@CGUID+341, 0, 0, 1, 16, 0, 1024, NULL), -- Ash'ari Crystal
-(@CGUID+394, 0, 0, 1, 16, 0, 0, '17150'), -- Crimson Defender
-(@CGUID+400, 0, 0, 1, 16, 0, 0, '12544'), -- Crimson Sorcerer
-(@CGUID+405, 0, 0, 1, 16, 0, 0, '17150'), -- Crimson Priest
-(@CGUID+416, 0, 262144, 1, 16, 0, 0, '8990 28559'), -- Crimson Gallant
-(@CGUID+436, 0, 0, 1, 16, 0, 0, '17467'), -- Baron Rivendare
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+96, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+100, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+102, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+104, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+105, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+108, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+110, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+111, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+114, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+115, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+116, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+118, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+119, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+120, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+126, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+127, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+128, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+129, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+132, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+134, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+135, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+136, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+138, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+139, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+143, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+144, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+146, 0, 0, 1, 0, 0, '13787'), -- Skeletal Guardian
+(@CGUID+201, 0, 8, 1, 0, 0, '12380'), -- Thuzadin Shadowcaster
+(@CGUID+202, 0, 8, 1, 193, 0, '12380'), -- Thuzadin Shadowcaster
+(@CGUID+204, 0, 8, 1, 0, 0, '12380'), -- Thuzadin Shadowcaster
+(@CGUID+210, 0, 8, 1, 0, 0, '12380'), -- Thuzadin Shadowcaster
+(@CGUID+217, 0, 0, 1, 0, 0, '17224'), -- Thuzadin Acolyte
+(@CGUID+218, 0, 0, 1, 0, 0, '17224'), -- Thuzadin Acolyte
+(@CGUID+219, 0, 0, 1, 0, 0, '17224'), -- Thuzadin Acolyte
+(@CGUID+220, 0, 0, 1, 0, 0, '17224'), -- Thuzadin Acolyte
+(@CGUID+221, 0, 0, 1, 0, 0, '17224'), -- Thuzadin Acolyte
+(@CGUID+222, 0, 262144, 1, 0, 0, '28559'), -- Thuzadin Acolyte
+(@CGUID+230, 0, 8, 1, 0, 0, NULL), -- Thuzadin Necromancer
+(@CGUID+231, 0, 8, 1, 0, 0, NULL), -- Thuzadin Necromancer
+(@CGUID+233, 0, 8, 1, 0, 0, NULL), -- Thuzadin Necromancer
+(@CGUID+234, 0, 8, 1, 0, 0, NULL), -- Thuzadin Necromancer
+(@CGUID+235, 0, 8, 1, 0, 0, NULL), -- Thuzadin Necromancer
+(@CGUID+236, 0, 8, 1, 0, 0, NULL), -- Thuzadin Necromancer
+(@CGUID+237, 0, 8, 1, 193, 0, '12380'), -- Thuzadin Necromancer
+(@CGUID+243, 0, 8, 1, 0, 0, NULL), -- Thuzadin Necromancer
+(@CGUID+244, 0, 8, 1, 0, 0, NULL), -- Thuzadin Necromancer
+(@CGUID+339, 0, 0, 1, 0, 1024, NULL), -- Ash'ari Crystal
+(@CGUID+340, 0, 0, 1, 0, 1024, NULL), -- Ash'ari Crystal
+(@CGUID+341, 0, 0, 1, 0, 1024, NULL), -- Ash'ari Crystal
+(@CGUID+394, 0, 0, 1, 0, 0, '17150'), -- Crimson Defender
+(@CGUID+400, 0, 0, 1, 0, 0, '12544'), -- Crimson Sorcerer
+(@CGUID+405, 0, 0, 1, 0, 0, '17150'), -- Crimson Priest
+(@CGUID+416, 0, 262144, 1, 0, 0, '8990 28559'), -- Crimson Gallant
+(@CGUID+436, 0, 0, 1, 0, 0, '17467'), -- Baron Rivendare
 
 -- TBC+ (Paladin quest)
-(@CGUID+600, 0, 0, 1, 16, 0, 0, NULL); -- [PH] Invis Paladin Quest Credit
+(@CGUID+600, 0, 0, 1, 0, 0, NULL); -- [PH] Invis Paladin Quest Credit
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(10381, 0, 0, 1, 16, 0, 0, '16142 18950'), -- Ravaged Cadaver
-(10382, 0, 0, 1, 16, 0, 0, '16142 18950'), -- Mangled Cadaver
-(10384, 0, 0, 1, 16, 0, 0, NULL), -- Spectral Citizen
-(10385, 0, 0, 1, 16, 0, 0, NULL), -- Ghostly Citizen
-(10387, 0, 0, 1, 16, 0, 0, '22766'), -- Vengeful Phantom
-(10390, 0, 0, 1, 16, 0, 0, NULL), -- Skeletal Guardian
-(10391, 0, 0, 1, 16, 0, 0, NULL), -- Skeletal Berserker
-(10393, 0, 0, 1, 16, 0, 0, NULL), -- Skul
-(10398, 0, 8, 1, 16, 0, 0, NULL), -- Thuzadin Shadowcaster
-(10399, 0, 0, 1, 16, 0, 0, NULL), -- Thuzadin Acolyte
-(10400, 0, 8, 1, 16, 0, 0, '12380'), -- Thuzadin Necromancer
-(10405, 0, 0, 1, 16, 0, 0, '15088 15097 18950'), -- Plague Ghoul
-(10406, 0, 0, 1, 16, 0, 0, '18950'), -- Ghoul Ravener
-(10407, 0, 0, 1, 16, 0, 0, '8876 18950'), -- Fleshflayer Ghoul
-(10408, 0, 0, 1, 16, 0, 0, NULL), -- Rockwing Gargoyle
-(10409, 0, 0, 1, 16, 0, 0, NULL), -- Rockwing Screecher
-(10411, 0, 0, 1, 16, 0, 0, '16380'), -- Eye of Naxxramas
-(10412, 0, 0, 1, 16, 0, 0, NULL), -- Crypt Crawler
-(10413, 0, 0, 1, 16, 0, 0, '16428'), -- Crypt Beast
-(10414, 0, 0, 1, 16, 0, 0, '8876 16345'), -- Patchwork Horror
-(10415, 0, 0, 1, 16, 0, 0, NULL), -- Ash'ari Crystal
-(10416, 0, 0, 1, 16, 0, 0, '3417'), -- Bile Spewer
-(10417, 0, 0, 1, 16, 0, 0, '8601'), -- Venom Belcher
-(10418, 0, 0, 1, 16, 0, 0, NULL), -- Crimson Guardsman
-(10419, 0, 0, 1, 16, 0, 0, ''), -- Crimson Conjuror
-(10420, 0, 0, 1, 16, 0, 0, NULL), -- Crimson Initiate
-(10421, 0, 0, 1, 16, 0, 0, NULL), -- Crimson Defender
-(10422, 0, 0, 1, 16, 0, 0, '17150'), -- Crimson Sorcerer
-(10423, 0, 0, 1, 16, 0, 0, NULL), -- Crimson Priest
-(10424, 0, 0, 1, 16, 0, 0, '8990'), -- Crimson Gallant
-(10425, 0, 0, 1, 16, 0, 0, ''), -- Crimson Battle Mage
-(10426, 0, 0, 1, 16, 0, 0, '17151'), -- Crimson Inquisitor
-(10435, 0, 0, 1, 16, 0, 0, NULL), -- Magistrate Barthilas
-(10436, 0, 0, 1, 16, 0, 0, NULL), -- Baroness Anastari
-(10437, 0, 0, 1, 16, 0, 0, NULL), -- Nerub'enkan
-(10438, 0, 0, 1, 16, 0, 0, NULL), -- Maleki the Pallid
-(10440, 0, 0, 0, 0, 0, 0, '17467'), -- Baron Rivendare
-(10463, 0, 0, 1, 16, 0, 0, NULL), -- Shrieking Banshee
-(10464, 0, 0, 1, 16, 0, 0, NULL), -- Wailing Banshee
-(10516, 0, 0, 1, 16, 0, 0, '22766'), -- The Unforgiven
-(10558, 0, 0, 1, 16, 0, 0, NULL), -- Hearthsinger Forresten
-(10808, 0, 0, 1, 0, 0, 0, '12787'), -- Timmy the Cruel
-(10809, 0, 0, 1, 16, 0, 0, NULL), -- Stonespine
-(10811, 0, 0, 1, 16, 0, 0, NULL), -- Archivist Galford
-(10812, 0, 0, 1, 16, 0, 0, NULL), -- Grand Crusader Dathrohan
-(10917, 0, 0, 1, 16, 0, 0, NULL), -- Aurius
-(10997, 0, 0, 1, 16, 0, 0, NULL), -- Cannon Master Willey
-(11032, 0, 0, 1, 16, 0, 0, NULL), -- Malor the Zealous
-(11043, 0, 0, 1, 16, 0, 0, '8876'), -- Crimson Monk
-(11082, 0, 0, 1, 16, 0, 0, NULL), -- Stratholme Courier
-(11143, 0, 0, 1, 16, 0, 0, '3417'), -- Postmaster Malown
-(14646, 0, 0, 1, 16, 0, 0, NULL), -- Stratholme Trigger
-(16046, 0, 0, 1, 16, 0, 0, NULL), -- Jarien and Sothos Trigger
-(16100, 0, 0, 1, 16, 0, 0, NULL); -- Ysida's Trigger
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(10381, 0, 0, 1, 0, 0, '16142 18950'), -- Ravaged Cadaver
+(10382, 0, 0, 1, 0, 0, '16142 18950'), -- Mangled Cadaver
+(10384, 0, 0, 1, 0, 0, NULL), -- Spectral Citizen
+(10385, 0, 0, 1, 0, 0, NULL), -- Ghostly Citizen
+(10387, 0, 0, 1, 0, 0, '22766'), -- Vengeful Phantom
+(10390, 0, 0, 1, 0, 0, NULL), -- Skeletal Guardian
+(10391, 0, 0, 1, 0, 0, NULL), -- Skeletal Berserker
+(10393, 0, 0, 1, 0, 0, NULL), -- Skul
+(10398, 0, 8, 1, 0, 0, NULL), -- Thuzadin Shadowcaster
+(10399, 0, 0, 1, 0, 0, NULL), -- Thuzadin Acolyte
+(10400, 0, 8, 1, 0, 0, '12380'), -- Thuzadin Necromancer
+(10405, 0, 0, 1, 0, 0, '15088 15097 18950'), -- Plague Ghoul
+(10406, 0, 0, 1, 0, 0, '18950'), -- Ghoul Ravener
+(10407, 0, 0, 1, 0, 0, '8876 18950'), -- Fleshflayer Ghoul
+(10408, 0, 0, 1, 0, 0, NULL), -- Rockwing Gargoyle
+(10409, 0, 0, 1, 0, 0, NULL), -- Rockwing Screecher
+(10411, 0, 0, 1, 0, 0, '16380'), -- Eye of Naxxramas
+(10412, 0, 0, 1, 0, 0, NULL), -- Crypt Crawler
+(10413, 0, 0, 1, 0, 0, '16428'), -- Crypt Beast
+(10414, 0, 0, 1, 0, 0, '8876 16345'), -- Patchwork Horror
+(10415, 0, 0, 1, 0, 0, NULL), -- Ash'ari Crystal
+(10416, 0, 0, 1, 0, 0, '3417'), -- Bile Spewer
+(10417, 0, 0, 1, 0, 0, '8601'), -- Venom Belcher
+(10418, 0, 0, 1, 0, 0, NULL), -- Crimson Guardsman
+(10419, 0, 0, 1, 0, 0, ''), -- Crimson Conjuror
+(10420, 0, 0, 1, 0, 0, NULL), -- Crimson Initiate
+(10421, 0, 0, 1, 0, 0, NULL), -- Crimson Defender
+(10422, 0, 0, 1, 0, 0, '17150'), -- Crimson Sorcerer
+(10423, 0, 0, 1, 0, 0, NULL), -- Crimson Priest
+(10424, 0, 0, 1, 0, 0, '8990'), -- Crimson Gallant
+(10425, 0, 0, 1, 0, 0, ''), -- Crimson Battle Mage
+(10426, 0, 0, 1, 0, 0, '17151'), -- Crimson Inquisitor
+(10435, 0, 0, 1, 0, 0, NULL), -- Magistrate Barthilas
+(10436, 0, 0, 1, 0, 0, NULL), -- Baroness Anastari
+(10437, 0, 0, 1, 0, 0, NULL), -- Nerub'enkan
+(10438, 0, 0, 1, 0, 0, NULL), -- Maleki the Pallid
+(10440, 0, 0, 0, 0, 0, '17467'), -- Baron Rivendare
+(10463, 0, 0, 1, 0, 0, NULL), -- Shrieking Banshee
+(10464, 0, 0, 1, 0, 0, NULL), -- Wailing Banshee
+(10516, 0, 0, 1, 0, 0, '22766'), -- The Unforgiven
+(10558, 0, 0, 1, 0, 0, NULL), -- Hearthsinger Forresten
+(10808, 0, 0, 1, 0, 0, '12787'), -- Timmy the Cruel
+(10809, 0, 0, 1, 0, 0, NULL), -- Stonespine
+(10811, 0, 0, 1, 0, 0, NULL), -- Archivist Galford
+(10812, 0, 0, 1, 0, 0, NULL), -- Grand Crusader Dathrohan
+(10917, 0, 0, 1, 0, 0, NULL), -- Aurius
+(10997, 0, 0, 1, 0, 0, NULL), -- Cannon Master Willey
+(11032, 0, 0, 1, 0, 0, NULL), -- Malor the Zealous
+(11043, 0, 0, 1, 0, 0, '8876'), -- Crimson Monk
+(11082, 0, 0, 1, 0, 0, NULL), -- Stratholme Courier
+(11143, 0, 0, 1, 0, 0, '3417'), -- Postmaster Malown
+(14646, 0, 0, 1, 0, 0, NULL), -- Stratholme Trigger
+(16046, 0, 0, 1, 0, 0, NULL), -- Jarien and Sothos Trigger
+(16100, 0, 0, 1, 0, 0, NULL); -- Ysida's Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+365, @CGUID+377, 515), -- Crimson Guardsman -> Crimson Conjuror

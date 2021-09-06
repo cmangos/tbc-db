@@ -504,59 +504,59 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+3, 0, 0, 0, 0, 0, 0, NULL), -- Agathelos the Raging
-(@CGUID+22, 0, 0, 0, 0, 0, 0, NULL), -- Razorfen Warden
-(@CGUID+40, 0, 0, 0, 0, 0, 0, NULL), -- Razorfen Defender
-(@CGUID+48, 0, 0, 0, 0, 0, 0, NULL), -- Razorfen Defender
-(@CGUID+50, 0, 0, 0, 0, 0, 0, NULL), -- Razorfen Defender
-(@CGUID+95, 0, 0, 0, 0, 0, 0, NULL), -- Death's Head Adept
-(@CGUID+115, 0, 0, 0, 0, 0, 0, NULL), -- Razorfen Geomancer
-(@CGUID+163, 0, 0, 0, 0, 0, 0, NULL), -- Blood of Agamaggan
-(@CGUID+165, 0, 0, 0, 0, 0, 0, NULL), -- Blood of Agamaggan
-(@CGUID+166, 0, 0, 0, 0, 0, 0, NULL), -- Blood of Agamaggan
-(@CGUID+177, 0, 0, 0, 0, 0, 0, NULL), -- Quilguard Champion
-(@CGUID+178, 0, 0, 0, 0, 0, 0, NULL); -- Quilguard Champion
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+3, 0, 0, 0, 0, 0, NULL), -- Agathelos the Raging
+(@CGUID+22, 0, 0, 0, 0, 0, NULL), -- Razorfen Warden
+(@CGUID+40, 0, 0, 0, 0, 0, NULL), -- Razorfen Defender
+(@CGUID+48, 0, 0, 0, 0, 0, NULL), -- Razorfen Defender
+(@CGUID+50, 0, 0, 0, 0, 0, NULL), -- Razorfen Defender
+(@CGUID+95, 0, 0, 0, 0, 0, NULL), -- Death's Head Adept
+(@CGUID+115, 0, 0, 0, 0, 0, NULL), -- Razorfen Geomancer
+(@CGUID+163, 0, 0, 0, 0, 0, NULL), -- Blood of Agamaggan
+(@CGUID+165, 0, 0, 0, 0, 0, NULL), -- Blood of Agamaggan
+(@CGUID+166, 0, 0, 0, 0, 0, NULL), -- Blood of Agamaggan
+(@CGUID+177, 0, 0, 0, 0, 0, NULL), -- Quilguard Champion
+(@CGUID+178, 0, 0, 0, 0, 0, NULL); -- Quilguard Champion
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(4420, 0, 1114112, 1, 16, 0, 0, '7165'), -- Overlord Ramtusk
-(4421, 0, 0, 1, 16, 0, 0, NULL), -- Charlga Razorflank
-(4422, 0, 0, 1, 16, 0, 0, NULL), -- Agathelos the Raging
-(4424, 0, 0, 1, 16, 0, 0, NULL), -- Aggem Thorncurse
-(4425, 0, 0, 1, 16, 0, 0, NULL), -- Blind Hunter
-(4427, 0, 0, 1, 16, 0, 0, NULL), -- Ward Guardian
-(4428, 0, 0, 1, 16, 0, 0, NULL), -- Death Speaker Jargba
-(4435, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Warrior
-(4436, 0, 1114112, 1, 16, 0, 0, '7165'), -- Razorfen Quilguard
-(4437, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Warden
-(4438, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Spearhide
-(4440, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Totemic
-(4442, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Defender
-(4508, 0, 0, 1, 16, 0, 0, NULL), -- Willix the Importer
-(4510, 0, 7, 1, 16, 0, 0, NULL), -- Heralath Fallowbrook
-(4511, 0, 0, 1, 16, 0, 0, NULL), -- Agam'ar
-(4512, 0, 0, 1, 16, 0, 0, NULL), -- Rotting Agam'ar
-(4514, 0, 0, 1, 16, 0, 0, NULL), -- Raging Agam'ar
-(4515, 0, 0, 1, 16, 0, 0, NULL), -- Death's Head Acolyte
-(4516, 0, 0, 1, 16, 0, 0, NULL), -- Death's Head Adept
-(4517, 0, 0, 1, 16, 0, 0, NULL), -- Death's Head Priest
-(4518, 0, 0, 1, 16, 0, 0, NULL), -- Death's Head Sage
-(4519, 0, 0, 1, 16, 0, 0, NULL), -- Death's Head Seer
-(4520, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Geomancer
-(4522, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Dustweaver
-(4523, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Groundshaker
-(4525, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Earthbreaker
-(4530, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Handler
-(4531, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Beast Trainer
-(4532, 0, 0, 1, 16, 0, 0, NULL), -- Razorfen Beastmaster
-(4538, 0, 0, 1, 16, 0, 0, NULL), -- Kraul Bat
-(4539, 0, 0, 1, 16, 0, 0, NULL), -- Greater Kraul Bat
-(4541, 0, 0, 1, 16, 0, 0, NULL), -- Blood of Agamaggan
-(4623, 0, 0, 1, 16, 0, 0, NULL), -- Quilguard Champion
-(4625, 0, 0, 1, 16, 0, 0, '7083'), -- Death's Head Ward Keeper
-(4842, 0, 0, 1, 16, 0, 0, NULL), -- Earthcaller Halmgar
-(6035, 0, 33554432, 1, 16, 0, 0, NULL), -- Razorfen Stalker
-(6168, 0, 0, 1, 16, 0, 0, NULL); -- Roogug
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(4420, 0, 1114112, 1, 0, 0, '7165'), -- Overlord Ramtusk
+(4421, 0, 0, 1, 0, 0, NULL), -- Charlga Razorflank
+(4422, 0, 0, 1, 0, 0, NULL), -- Agathelos the Raging
+(4424, 0, 0, 1, 0, 0, NULL), -- Aggem Thorncurse
+(4425, 0, 0, 1, 0, 0, NULL), -- Blind Hunter
+(4427, 0, 0, 1, 0, 0, NULL), -- Ward Guardian
+(4428, 0, 0, 1, 0, 0, NULL), -- Death Speaker Jargba
+(4435, 0, 0, 1, 0, 0, NULL), -- Razorfen Warrior
+(4436, 0, 1114112, 1, 0, 0, '7165'), -- Razorfen Quilguard
+(4437, 0, 0, 1, 0, 0, NULL), -- Razorfen Warden
+(4438, 0, 0, 1, 0, 0, NULL), -- Razorfen Spearhide
+(4440, 0, 0, 1, 0, 0, NULL), -- Razorfen Totemic
+(4442, 0, 0, 1, 0, 0, NULL), -- Razorfen Defender
+(4508, 0, 0, 1, 0, 0, NULL), -- Willix the Importer
+(4510, 0, 7, 1, 0, 0, NULL), -- Heralath Fallowbrook
+(4511, 0, 0, 1, 0, 0, NULL), -- Agam'ar
+(4512, 0, 0, 1, 0, 0, NULL), -- Rotting Agam'ar
+(4514, 0, 0, 1, 0, 0, NULL), -- Raging Agam'ar
+(4515, 0, 0, 1, 0, 0, NULL), -- Death's Head Acolyte
+(4516, 0, 0, 1, 0, 0, NULL), -- Death's Head Adept
+(4517, 0, 0, 1, 0, 0, NULL), -- Death's Head Priest
+(4518, 0, 0, 1, 0, 0, NULL), -- Death's Head Sage
+(4519, 0, 0, 1, 0, 0, NULL), -- Death's Head Seer
+(4520, 0, 0, 1, 0, 0, NULL), -- Razorfen Geomancer
+(4522, 0, 0, 1, 0, 0, NULL), -- Razorfen Dustweaver
+(4523, 0, 0, 1, 0, 0, NULL), -- Razorfen Groundshaker
+(4525, 0, 0, 1, 0, 0, NULL), -- Razorfen Earthbreaker
+(4530, 0, 0, 1, 0, 0, NULL), -- Razorfen Handler
+(4531, 0, 0, 1, 0, 0, NULL), -- Razorfen Beast Trainer
+(4532, 0, 0, 1, 0, 0, NULL), -- Razorfen Beastmaster
+(4538, 0, 0, 1, 0, 0, NULL), -- Kraul Bat
+(4539, 0, 0, 1, 0, 0, NULL), -- Greater Kraul Bat
+(4541, 0, 0, 1, 0, 0, NULL), -- Blood of Agamaggan
+(4623, 0, 0, 1, 0, 0, NULL), -- Quilguard Champion
+(4625, 0, 0, 1, 0, 0, '7083'), -- Death's Head Ward Keeper
+(4842, 0, 0, 1, 0, 0, NULL), -- Earthcaller Halmgar
+(6035, 0, 33554432, 1, 0, 0, '7939 22766'), -- Razorfen Stalker
+(6168, 0, 0, 1, 0, 0, NULL); -- Roogug
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+89, @CGUID+8, 3), -- Death's Head Acolyte -> Death Speaker Jargba

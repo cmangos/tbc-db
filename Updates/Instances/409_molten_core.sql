@@ -468,35 +468,35 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (12264, 0, 7, 575.928, -805.535, -205.694, 1.50355, 0, 0),
 (12264, 0, 8, 577.295, -800.048, -205.749, 0.893291, 0, 0);
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(11658, 0, 0, 1, 16, 0, 0, '18943'), -- Molten Giant
-(11659, 0, 0, 1, 16, 0, 0, '18943'), -- Molten Destroyer
-(11661, 0, 0, 1, 16, 0, 0, NULL), -- Flamewaker
-(11662, 0, 0, 1, 16, 0, 0, NULL), -- Flamewaker Priest
-(11665, 0, 0, 1, 16, 0, 0, '19194 19195'), -- Lava Annihilator
-(11666, 0, 0, 1, 16, 0, 0, NULL), -- Firewalker
-(11667, 0, 0, 1, 16, 0, 0, NULL), -- Flameguard
-(11668, 0, 0, 1, 16, 0, 0, NULL), -- Firelord
-(11669, 0, 0, 1, 16, 0, 0, NULL), -- Flame Imp
-(11671, 0, 0, 1, 16, 0, 0, NULL), -- Core Hound
-(11672, 0, 0, 1, 16, 0, 0, '20553'), -- Core Rager
-(11673, 0, 0, 1, 16, 0, 0, '18950'), -- Ancient Core Hound
-(11982, 0, 0, 1, 16, 0, 0, NULL), -- Magmadar
-(11988, 0, 0, 1, 16, 0, 0, NULL), -- Golemagg the Incinerator
-(12056, 0, 0, 1, 16, 0, 0, NULL), -- Baron Geddon
-(12057, 0, 0, 1, 16, 0, 0, NULL), -- Garr
-(12076, 0, 0, 1, 16, 0, 0, '19640'), -- Lava Elemental
-(12098, 0, 0, 1, 16, 0, 0, NULL), -- Sulfuron Harbinger
-(12099, 0, 0, 1, 16, 0, 0, '8876 15733'), -- Firesworn
-(12100, 0, 0, 1, 16, 0, 0, '12787'), -- Lava Reaver
-(12101, 0, 0, 1, 16, 0, 0, NULL), -- Lava Surger
-(12118, 0, 0, 1, 16, 0, 0, NULL), -- Lucifron
-(12119, 0, 0, 1, 16, 0, 0, NULL), -- Flamewaker Protector
-(12143, 0, 0, 1, 16, 0, 0, '19818 21857'), -- Son of Flame
-(12259, 0, 0, 1, 16, 0, 0, NULL), -- Gehennas
-(12264, 0, 0, 1, 16, 0, 0, NULL); -- Shazzrah
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(11658, 0, 0, 1, 0, 0, '18943'), -- Molten Giant
+(11659, 0, 0, 1, 0, 0, '18943'), -- Molten Destroyer
+(11661, 0, 0, 1, 0, 0, NULL), -- Flamewaker
+(11662, 0, 0, 1, 0, 0, NULL), -- Flamewaker Priest
+(11665, 0, 0, 1, 0, 0, '19194 19195'), -- Lava Annihilator
+(11666, 0, 0, 1, 0, 0, NULL), -- Firewalker
+(11667, 0, 0, 1, 0, 0, NULL), -- Flameguard
+(11668, 0, 0, 1, 0, 0, NULL), -- Firelord
+(11669, 0, 0, 1, 0, 0, NULL), -- Flame Imp
+(11671, 0, 0, 1, 0, 0, NULL), -- Core Hound
+(11672, 0, 0, 1, 0, 0, '20553'), -- Core Rager
+(11673, 0, 0, 1, 0, 0, '18950'), -- Ancient Core Hound
+(11982, 0, 0, 1, 0, 0, NULL), -- Magmadar
+(11988, 0, 0, 1, 0, 0, NULL), -- Golemagg the Incinerator
+(12056, 0, 0, 1, 0, 0, NULL), -- Baron Geddon
+(12057, 0, 0, 1, 0, 0, NULL), -- Garr
+(12076, 0, 0, 1, 0, 0, '19640'), -- Lava Elemental
+(12098, 0, 0, 1, 0, 0, NULL), -- Sulfuron Harbinger
+(12099, 0, 0, 1, 0, 0, '8876 15733'), -- Firesworn
+(12100, 0, 0, 1, 0, 0, '12787'), -- Lava Reaver
+(12101, 0, 0, 1, 0, 0, NULL), -- Lava Surger
+(12118, 0, 0, 1, 0, 0, NULL), -- Lucifron
+(12119, 0, 0, 1, 0, 0, NULL), -- Flamewaker Protector
+(12143, 0, 0, 1, 0, 0, '19818 21857'), -- Son of Flame
+(12259, 0, 0, 1, 0, 0, NULL), -- Gehennas
+(12264, 0, 0, 1, 0, 0, NULL); -- Shazzrah
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+3, @CGUID+2, 3), -- Molten Giant -> Molten Giant

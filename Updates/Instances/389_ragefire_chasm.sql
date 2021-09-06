@@ -109,25 +109,25 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+9, 0, 0, 0, 0, 0, 0, NULL), -- Ragefire Trogg
-(@CGUID+15, 0, 0, 0, 0, 0, 0, NULL), -- Ragefire Trogg
-(@CGUID+41, 0, 0, 0, 0, 0, 0, NULL), -- Ragefire Shaman
-(@CGUID+107, 0, 0, 0, 0, 0, 0, NULL); -- Searing Blade Enforcer
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+9, 0, 0, 0, 0, 0, NULL), -- Ragefire Trogg
+(@CGUID+15, 0, 0, 0, 0, 0, NULL), -- Ragefire Trogg
+(@CGUID+41, 0, 0, 0, 0, 0, NULL), -- Ragefire Shaman
+(@CGUID+107, 0, 0, 0, 0, 0, NULL); -- Searing Blade Enforcer
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(11318, 0, 0, 1, 16, 0, 0, NULL), -- Ragefire Trogg
-(11319, 0, 0, 1, 16, 0, 0, NULL), -- Ragefire Shaman
-(11320, 0, 0, 1, 16, 0, 0, NULL), -- Earthborer
-(11321, 0, 0, 1, 16, 0, 0, NULL), -- Molten Elemental
-(11322, 0, 0, 1, 16, 0, 0, NULL), -- Searing Blade Cultist
-(11323, 0, 0, 1, 16, 0, 0, NULL), -- Searing Blade Enforcer
-(11324, 0, 0, 1, 16, 0, 0, NULL), -- Searing Blade Warlock
-(11517, 0, 0, 1, 16, 0, 0, NULL), -- Oggleflint
-(11518, 0, 0, 1, 16, 0, 0, NULL), -- Jergosh the Invoker
-(11519, 0, 0, 1, 16, 0, 0, NULL), -- Bazzalan
-(11520, 0, 0, 1, 16, 0, 0, NULL), -- Taragaman the Hungerer
-(11834, 0, 7, 1, 16, 0, 0, NULL); -- Maur Grimtotem
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(11318, 0, 0, 1, 0, 0, NULL), -- Ragefire Trogg
+(11319, 0, 0, 1, 0, 0, NULL), -- Ragefire Shaman
+(11320, 0, 0, 1, 0, 0, NULL), -- Earthborer
+(11321, 0, 0, 1, 0, 0, NULL), -- Molten Elemental
+(11322, 0, 0, 1, 0, 0, NULL), -- Searing Blade Cultist
+(11323, 0, 0, 1, 0, 0, NULL), -- Searing Blade Enforcer
+(11324, 0, 0, 1, 0, 0, NULL), -- Searing Blade Warlock
+(11517, 0, 0, 1, 0, 0, NULL), -- Oggleflint
+(11518, 0, 0, 1, 0, 0, NULL), -- Jergosh the Invoker
+(11519, 0, 0, 1, 0, 0, NULL), -- Bazzalan
+(11520, 0, 0, 1, 0, 0, NULL), -- Taragaman the Hungerer
+(11834, 0, 7, 1, 0, 0, NULL); -- Maur Grimtotem
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+1, @CGUID+34, 3), -- Ragefire Trogg -> Ragefire Shaman

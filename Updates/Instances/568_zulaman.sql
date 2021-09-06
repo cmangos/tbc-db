@@ -544,79 +544,79 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 
 UPDATE creature SET equipment_id=5592 WHERE guid=@CGUID+104; -- Amanishi Guardian (starts holding a spear for gong event RP script)
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
--- (@CGUID+23, 0, 0, 1, 16, 0, 0, '46750'), -- World Trigger (Not Immune PC)
-(@CGUID+66, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
-(@CGUID+68, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
-(@CGUID+96, 0, 3, 1, 16, 0, 0, NULL), -- Amani'shi Flame Caster
-(@CGUID+120, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+127, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(@CGUID+319, 0, 1, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
-(@CGUID+398, 0, 0, 1, 16, 375, 0, '18950'), -- Amani'shi Wind Walker
-(@CGUID+399, 0, 0, 1, 16, 375, 0, '18950'), -- Amani'shi Wind Walker
-(@CGUID+400, 0, 0, 1, 16, 375, 0, '18950'), -- Amani'shi Wind Walker
-(@CGUID+401, 0, 0, 1, 16, 375, 0, '18950'), -- Amani'shi Wind Walker
-(@CGUID+402, 0, 0, 1, 16, 375, 0, '18950'), -- Amani'shi Protector
-(@CGUID+403, 0, 0, 1, 16, 375, 0, '18950'), -- Amani'shi Protector
-(@CGUID+404, 0, 0, 1, 16, 375, 0, '18950'), -- Amani'shi Protector
-(@CGUID+405, 0, 0, 1, 16, 375, 0, '18950'), -- Amani'shi Protector
-(@CGUID+479, 0, 8, 0, 0, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+480, 0, 8, 0, 0, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+481, 0, 8, 0, 0, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+482, 0, 8, 0, 0, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+483, 0, 8, 0, 0, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+484, 0, 8, 0, 0, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+485, 0, 8, 0, 0, 0, 0, '18950'), -- Amani'shi Savage
-(@CGUID+486, 0, 8, 0, 0, 0, 0, '18950'); -- Amani'shi Savage
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+-- (@CGUID+23, 0, 0, 1, 0, 0, '46750'), -- World Trigger (Not Immune PC)
+(@CGUID+66, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Scout
+(@CGUID+68, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Scout
+(@CGUID+96, 0, 3, 1, 0, 0, NULL), -- Amani'shi Flame Caster
+(@CGUID+120, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Guardian
+(@CGUID+127, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Guardian
+(@CGUID+319, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Handler
+(@CGUID+398, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Wind Walker
+(@CGUID+399, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Wind Walker
+(@CGUID+400, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Wind Walker
+(@CGUID+401, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Wind Walker
+(@CGUID+402, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Protector
+(@CGUID+403, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Protector
+(@CGUID+404, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Protector
+(@CGUID+405, 0, 0, 1, 375, 0, '18950'), -- Amani'shi Protector
+(@CGUID+479, 0, 8, 0, 0, 0, '18950'), -- Amani'shi Savage
+(@CGUID+480, 0, 8, 0, 0, 0, '18950'), -- Amani'shi Savage
+(@CGUID+481, 0, 8, 0, 0, 0, '18950'), -- Amani'shi Savage
+(@CGUID+482, 0, 8, 0, 0, 0, '18950'), -- Amani'shi Savage
+(@CGUID+483, 0, 8, 0, 0, 0, '18950'), -- Amani'shi Savage
+(@CGUID+484, 0, 8, 0, 0, 0, '18950'), -- Amani'shi Savage
+(@CGUID+485, 0, 8, 0, 0, 0, '18950'), -- Amani'shi Savage
+(@CGUID+486, 0, 8, 0, 0, 0, '18950'); -- Amani'shi Savage
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(23542, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Axe Thrower
-(23574, 0, 0, 1, 16, 0, 0, NULL), -- Akil'zon
-(23576, 0, 0, 1, 16, 0, 0, NULL), -- Nalorakk
-(23597, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Guardian
-(23577, 0, 0, 1, 16, 0, 0, NULL), -- Halazzi
-(23578, 0, 0, 1, 16, 0, 0, NULL), -- Jan'alai
-(23580, 22467, 0, 1, 16, 0, 0, '23255'), -- Amani'shi Warbringer
-(23581, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Medicine Man
-(23582, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Tribesman
-(23584, 0, 0, 1, 16, 0, 0, NULL), -- Amani Bear
-(23586, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Scout
-(23587, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Reinforcement
-(23774, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Trainer
-(23790, 0, 0, 1, 0, 0, 0, NULL), -- Tanzar
-(23807, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman - Bear God Invisman
-(23813, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman - Dragonhawk God Invisman
-(23814, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman - Eagle God Invisman
-(23815, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Aman - Lynx God Invisman
-(23817, 0, 0, 1, 16, 0, 0, NULL), -- Dragonhawk Egg
-(23834, 0, 0, 1, 16, 0, 0, '18950'), -- Amani Dragonhawk
-(23877, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Lynx Spirit
-(23878, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Bear Spirit
-(23879, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Dragonhawk Spirit
-(23880, 0, 0, 1, 0, 0, 0, '42466'), -- Amani Eagle Spirit
-(23889, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Savage
-(23897, 0, 0, 1, 16, 0, 0, '25900'), -- Zungam
-(23999, 0, 0, 1, 0, 0, 0, NULL), -- Harkor
-(24001, 0, 0, 1, 0, 0, 0, NULL), -- Ashli
-(24024, 0, 0, 1, 0, 0, 0, NULL), -- Kraz
-(24043, 0, 0, 0, 0, 0, 0, '18950 16380'), -- Amani Lynx
-(24047, 0, 0, 1, 16, 0, 0, NULL), -- Amani Crocolisk
-(24059, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Beast Tamer
-(24064, 0, 0, 1, 16, 0, 0, NULL), -- Amani Lynx Cub
-(24065, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Handler
-(24175, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Lookout
-(24179, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Wind Walker
-(24180, 0, 0, 1, 16, 0, 0, '18950'), -- Amani'shi Protector
-(24217, 0, 0, 1, 16, 0, 0, NULL), -- Amani Bear Mount
-(24242, 0, 0, 1, 16, 0, 0, '43580'), -- Slither
-(24312, 0, 0, 1, 16, 0, 0, NULL), -- Dragonhawk Egg
-(24325, 0, 0, 1, 16, 0, 0, NULL), -- Eagle Troll Spawn Target
-(24358, 0, 0, 1, 16, 0, 0, NULL), -- Harrison Jones
-(24363, 0, 0, 1, 16, 0, 0, NULL), -- Hex Lord Malacrass (Speech Trigger)
-(24396, 0, 0, 1, 16, 0, 0, NULL), -- Forest Frog
-(24530, 0, 0, 1, 16, 0, 0, NULL), -- Amani Elder Lynx
-(24549, 0, 0, 1, 16, 0, 0, NULL), -- Amani'shi Tempest
-(25173, 0, 0, 1, 16, 0, 0, NULL); -- Zul'Aman Door Trigger
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(23542, 0, 0, 1, 0, 0, NULL), -- Amani'shi Axe Thrower
+(23574, 0, 0, 1, 0, 0, NULL), -- Akil'zon
+(23576, 0, 0, 1, 0, 0, NULL), -- Nalorakk
+(23597, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Guardian
+(23577, 0, 0, 1, 0, 0, NULL), -- Halazzi
+(23578, 0, 0, 1, 0, 0, NULL), -- Jan'alai
+(23580, 22467, 0, 1, 0, 0, '23255'), -- Amani'shi Warbringer
+(23581, 0, 0, 1, 0, 0, NULL), -- Amani'shi Medicine Man
+(23582, 0, 0, 1, 0, 0, NULL), -- Amani'shi Tribesman
+(23584, 0, 0, 1, 0, 0, NULL), -- Amani Bear
+(23586, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Scout
+(23587, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Reinforcement
+(23774, 0, 0, 1, 0, 0, NULL), -- Amani'shi Trainer
+(23790, 0, 0, 1, 0, 0, NULL), -- Tanzar
+(23807, 0, 0, 1, 0, 0, NULL), -- Zul'Aman - Bear God Invisman
+(23813, 0, 0, 1, 0, 0, NULL), -- Zul'Aman - Dragonhawk God Invisman
+(23814, 0, 0, 1, 0, 0, NULL), -- Zul'Aman - Eagle God Invisman
+(23815, 0, 0, 1, 0, 0, NULL), -- Zul'Aman - Lynx God Invisman
+(23817, 0, 0, 1, 0, 0, NULL), -- Dragonhawk Egg
+(23834, 0, 0, 1, 0, 0, '18950'), -- Amani Dragonhawk
+(23877, 0, 0, 1, 0, 0, '42466'), -- Amani Lynx Spirit
+(23878, 0, 0, 1, 0, 0, '42466'), -- Amani Bear Spirit
+(23879, 0, 0, 1, 0, 0, '42466'), -- Amani Dragonhawk Spirit
+(23880, 0, 0, 1, 0, 0, '42466'), -- Amani Eagle Spirit
+(23889, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Savage
+(23897, 0, 0, 1, 0, 0, '25900'), -- Zungam
+(23999, 0, 0, 1, 0, 0, NULL), -- Harkor
+(24001, 0, 0, 1, 0, 0, NULL), -- Ashli
+(24024, 0, 0, 1, 0, 0, NULL), -- Kraz
+(24043, 0, 0, 0, 0, 0, '18950 16380'), -- Amani Lynx
+(24047, 0, 0, 1, 0, 0, NULL), -- Amani Crocolisk
+(24059, 0, 0, 1, 0, 0, NULL), -- Amani'shi Beast Tamer
+(24064, 0, 0, 1, 0, 0, NULL), -- Amani Lynx Cub
+(24065, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Handler
+(24175, 0, 0, 1, 0, 0, NULL), -- Amani'shi Lookout
+(24179, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Wind Walker
+(24180, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Protector
+(24217, 0, 0, 1, 0, 0, NULL), -- Amani Bear Mount
+(24242, 0, 0, 1, 0, 0, '43580'), -- Slither
+(24312, 0, 0, 1, 0, 0, NULL), -- Dragonhawk Egg
+(24325, 0, 0, 1, 0, 0, NULL), -- Eagle Troll Spawn Target
+(24358, 0, 0, 1, 0, 0, NULL), -- Harrison Jones
+(24363, 0, 0, 1, 0, 0, NULL), -- Hex Lord Malacrass (Speech Trigger)
+(24396, 0, 0, 1, 0, 0, NULL), -- Forest Frog
+(24530, 0, 0, 1, 0, 0, NULL), -- Amani Elder Lynx
+(24549, 0, 0, 1, 0, 0, NULL), -- Amani'shi Tempest
+(25173, 0, 0, 1, 0, 0, NULL); -- Zul'Aman Door Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Entrance

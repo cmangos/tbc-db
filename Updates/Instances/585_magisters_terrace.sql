@@ -843,39 +843,39 @@ INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,
 (24844,1,5,162.2416,-299.8032,-5.436685,0,0,100),
 (24844,1,7,199.7482,-272.3315,-8.186677,1000,0,100); -- make it -7.186677 from wotlk onwards because hoverheight
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+14, 0, 0, 1, 16, 0, 0, '32567'), -- Invisible Stalker
-(@CGUID+32, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+35, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+41, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+46, 0, 0, 1, 16, 28, 0, NULL), -- creature_spawn_entry
-(@CGUID+55, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+62, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+63, 0, 1, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+67, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+75, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+80, 0, 0, 1, 16, 69, 0, NULL), -- Sunblade Physician
-(@CGUID+84, 0, 0, 1, 16, 69, 0, NULL), -- Sunblade Physician
-(@CGUID+88, 0, 1, 1, 16, 0, 0, NULL), -- Wretched Skulker
-(@CGUID+90, 0, 1, 1, 16, 0, 0, NULL), -- Wretched Bruiser
-(@CGUID+92, 0, 1, 1, 16, 0, 0, NULL), -- Wretched Bruiser
-(@CGUID+93, 0, 1, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+94, 0, 0, 1, 16, 398, 0, NULL), -- creature_spawn_entry
-(@CGUID+99, 0, 0, 1, 16, 398, 0, NULL), -- creature_spawn_entry
-(@CGUID+196, 0, 7, 1, 16, 0, 0, NULL); -- Tyrith
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+14, 0, 0, 1, 0, 0, '32567'), -- Invisible Stalker
+(@CGUID+32, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+35, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+41, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+46, 0, 0, 1, 28, 0, NULL), -- creature_spawn_entry
+(@CGUID+55, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+62, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+63, 0, 1, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+67, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+75, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+80, 0, 0, 1, 69, 0, NULL), -- Sunblade Physician
+(@CGUID+84, 0, 0, 1, 69, 0, NULL), -- Sunblade Physician
+(@CGUID+88, 0, 1, 1, 0, 0, NULL), -- Wretched Skulker
+(@CGUID+90, 0, 1, 1, 0, 0, NULL), -- Wretched Bruiser
+(@CGUID+92, 0, 1, 1, 0, 0, NULL), -- Wretched Bruiser
+(@CGUID+93, 0, 1, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+94, 0, 0, 1, 398, 0, NULL), -- creature_spawn_entry
+(@CGUID+99, 0, 0, 1, 398, 0, NULL), -- creature_spawn_entry
+(@CGUID+196, 0, 7, 1, 0, 0, NULL); -- Tyrith
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(24560, 0, 0, 1, 16, 0, 0, '46025'), -- Priestess Delrissa
-(24685, 0, 0, 1, 16, 0, 0, '44604'), -- Sunblade Magister
-(24722, 0, 0, 1, 16, 0, 0, '25900'), -- Fel Crystal
-(24723, 0, 0, 1, 16, 64, 0, '42459'), -- Selin Fireheart
-(24777, 0, 0, 1, 16, 0, 0, NULL), -- Sunblade Sentinel
-(24781, 0, 0, 0, 0, 0, 0, NULL), -- Nether Energy
-(24808, 0, 0, 1, 16, 0, 0, '29266'), -- Broken Sentinel
-(25955, 0, 0, 1, 16, 0, 0, NULL), -- Hand of the Deceiver Sunwell
-(25958, 0, 0, 1, 16, 0, 0, NULL), -- Volatile Felfire Fiend Sunwell -- ss.47067
-(26057, 0, 0, 1, 16, 0, 0, '46410'), -- Anveena Marker
-(26579, 0, 0, 1, 16, 0, 0, '46367'); -- Anveena Replica
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(24560, 0, 0, 1, 0, 0, '46025'), -- Priestess Delrissa
+(24685, 0, 0, 1, 0, 0, '44604'), -- Sunblade Magister
+(24722, 0, 0, 1, 0, 0, '25900'), -- Fel Crystal
+(24723, 0, 0, 1, 64, 0, '42459'), -- Selin Fireheart
+(24777, 0, 0, 1, 0, 0, NULL), -- Sunblade Sentinel
+(24781, 0, 0, 0, 0, 0, NULL), -- Nether Energy
+(24808, 0, 0, 1, 0, 0, '29266'), -- Broken Sentinel
+(25955, 0, 0, 1, 0, 0, NULL), -- Hand of the Deceiver Sunwell
+(25958, 0, 0, 1, 0, 0, NULL), -- Volatile Felfire Fiend Sunwell -- ss.47067
+(26057, 0, 0, 1, 0, 0, '46410'), -- Anveena Marker
+(26579, 0, 0, 1, 0, 0, '46367'); -- Anveena Replica
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Selin Fireheart
@@ -1357,7 +1357,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2478101, 0, 15, 44432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Cast Cube Ground State'),
 (2478101, 0, 15, 44434, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Cast Cube Explode'),
 (2478101, 0, 22, 1814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Set Faction'),
-(2478101, 0, 5, 46, 33554432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Remove UnitFlags UNIT_FLAG_NOT_SELECTABLE 33554432'),
+(2478101, 0, 48, 33554432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Remove UNIT_FLAG_NOT_SELECTABLE'),
 (2478101, 1000, 15, 44447, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Cast Threat 44447 on Brightscale Wyrm 24761'),
 (2595501, 0, 15, 46757, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hand of the Deceiver Sunwell - Cast Shadow Channelling');
 

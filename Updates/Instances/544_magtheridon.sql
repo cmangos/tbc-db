@@ -123,14 +123,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+40, 0, 0, 1, 16, 0, 0, NULL); -- World Trigger (Not Immune PC)
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+40, 0, 0, 1, 0, 0, NULL); -- World Trigger (Not Immune PC)
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(17256, 0, 0, 1, 16, 0, 0, NULL), -- Hellfire Channeler
-(17257, 0, 0, 1, 16, 0, 0, '30205'), -- Magtheridon
-(17376, 0, 0, 1, 16, 0, 0, NULL), -- Hellfire Raid Trigger
-(18829, 0, 0, 1, 16, 0, 0, NULL); -- Hellfire Warder
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(17256, 0, 0, 1, 0, 0, NULL), -- Hellfire Channeler
+(17257, 0, 0, 1, 0, 0, '30205'), -- Magtheridon
+(17376, 0, 0, 1, 0, 0, NULL), -- Hellfire Raid Trigger
+(18829, 0, 0, 1, 0, 0, NULL); -- Hellfire Warder
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+28, @CGUID+30, 3), -- Hellfire Warder -> Hellfire Warder

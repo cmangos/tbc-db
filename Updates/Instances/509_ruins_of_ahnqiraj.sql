@@ -951,44 +951,44 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (15369, 1, 2, -9682.716, 1554.252, 31.41621, 100, 0, 0),
 (15369, 1, 3, -9677.917, 1558.839, 27.24953, 100, 1000, 0);
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(15168, 0, 0, 1, 16, 0, 0, NULL), -- Vile Scarab
-(15318, 0, 0, 1, 16, 0, 0, '9205'), -- Hive'Zara Drone
-(15319, 0, 0, 1, 16, 0, 0, NULL), -- Hive'Zara Collector
-(15320, 0, 0, 1, 16, 0, 0, NULL), -- Hive'Zara Soldier
-(15323, 0, 0, 1, 16, 0, 0, '25592'), -- Hive'Zara Sandstalker
-(15324, 0, 0, 1, 16, 0, 0, '18950'), -- Qiraji Gladiator
-(15325, 0, 0, 1, 16, 0, 0, NULL), -- Hive'Zara Wasp
-(15327, 0, 0, 1, 16, 0, 0, NULL), -- Hive'Zara Stinger
-(15333, 0, 0, 1, 16, 0, 0, NULL), -- Silicate Feeder
-(15335, 0, 0, 1, 16, 0, 0, '8876 18950'), -- Flesh Hunter
-(15336, 0, 0, 1, 16, 0, 0, NULL), -- Hive'Zara Tail Lasher
-(15338, 0, 0, 1, 16, 0, 0, '19818'), -- Obsidian Destroyer
-(15339, 0, 0, 1, 16, 0, 0, '25176 19818'), -- Ossirian the Unscarred
-(15340, 0, 0, 1, 16, 0, 0, NULL), -- Moam
-(15341, 0, 0, 1, 16, 0, 0, '18943'), -- General Rajaxx
-(15343, 0, 0, 1, 16, 0, 0, NULL), -- Qiraji Swarmguard
-(15344, 0, 0, 1, 16, 0, 0, NULL), -- Swarmguard Needler
-(15348, 0, 0, 1, 16, 0, 0, NULL), -- Kurinnaxx
-(15355, 0, 0, 1, 16, 0, 0, NULL), -- Anubisath Guardian
-(15369, 0, 0, 1, 16, 0, 0, NULL), -- Ayamiss the Hunter
-(15370, 0, 0, 1, 16, 0, 0, NULL), -- Buru the Gorger
-(15385, 0, 0, 1, 16, 0, 0, NULL), -- Colonel Zerran
-(15386, 0, 0, 1, 16, 0, 0, NULL), -- Major Yeggeth
-(15387, 0, 0, 1, 16, 0, 0, '18950'), -- Qiraji Warrior
-(15388, 0, 0, 1, 16, 0, 0, NULL), -- Major Pakkon
-(15389, 0, 0, 1, 16, 0, 0, NULL), -- Captain Drenn
-(15390, 0, 0, 1, 16, 0, 0, NULL), -- Captain Xurrem
-(15391, 0, 0, 1, 16, 0, 0, NULL), -- Captain Qeez
-(15392, 0, 0, 1, 16, 0, 0, NULL), -- Captain Tuubid
-(15426, 0, 0, 1, 16, 0, 0, NULL), -- Ahn'Qiraj Trigger
-(15461, 0, 0, 1, 16, 0, 0, NULL), -- Shrieker Scarab
-(15462, 0, 0, 1, 16, 0, 0, NULL), -- Spitting Scarab
-(15505, 0, 0, 1, 16, 0, 0, '18943 18950'), -- Canal Frenzy
-(15514, 0, 0, 1, 16, 0, 0, NULL), -- Buru Egg
-(15590, 0, 0, 1, 16, 0, 0, NULL); -- Ossirian Crystal Trigger
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(15168, 0, 0, 1, 0, 0, NULL), -- Vile Scarab
+(15318, 0, 0, 1, 0, 0, '9205'), -- Hive'Zara Drone
+(15319, 0, 0, 1, 0, 0, NULL), -- Hive'Zara Collector
+(15320, 0, 0, 1, 0, 0, NULL), -- Hive'Zara Soldier
+(15323, 0, 0, 1, 0, 0, '25592'), -- Hive'Zara Sandstalker
+(15324, 0, 0, 1, 0, 0, '18950'), -- Qiraji Gladiator
+(15325, 0, 0, 1, 0, 0, NULL), -- Hive'Zara Wasp
+(15327, 0, 0, 1, 0, 0, NULL), -- Hive'Zara Stinger
+(15333, 0, 0, 1, 0, 0, NULL), -- Silicate Feeder
+(15335, 0, 0, 1, 0, 0, '8876 18950'), -- Flesh Hunter
+(15336, 0, 0, 1, 0, 0, NULL), -- Hive'Zara Tail Lasher
+(15338, 0, 0, 1, 0, 0, '19818'), -- Obsidian Destroyer
+(15339, 0, 0, 1, 0, 0, '25176 19818'), -- Ossirian the Unscarred
+(15340, 0, 0, 1, 0, 0, NULL), -- Moam
+(15341, 0, 0, 1, 0, 0, '18943'), -- General Rajaxx
+(15343, 0, 0, 1, 0, 0, NULL), -- Qiraji Swarmguard
+(15344, 0, 0, 1, 0, 0, NULL), -- Swarmguard Needler
+(15348, 0, 0, 1, 0, 0, NULL), -- Kurinnaxx
+(15355, 0, 0, 1, 0, 0, NULL), -- Anubisath Guardian
+(15369, 0, 0, 1, 0, 0, NULL), -- Ayamiss the Hunter
+(15370, 0, 0, 1, 0, 0, NULL), -- Buru the Gorger
+(15385, 0, 0, 1, 0, 0, NULL), -- Colonel Zerran
+(15386, 0, 0, 1, 0, 0, NULL), -- Major Yeggeth
+(15387, 0, 0, 1, 0, 0, '18950'), -- Qiraji Warrior
+(15388, 0, 0, 1, 0, 0, NULL), -- Major Pakkon
+(15389, 0, 0, 1, 0, 0, NULL), -- Captain Drenn
+(15390, 0, 0, 1, 0, 0, NULL), -- Captain Xurrem
+(15391, 0, 0, 1, 0, 0, NULL), -- Captain Qeez
+(15392, 0, 0, 1, 0, 0, NULL), -- Captain Tuubid
+(15426, 0, 0, 1, 0, 0, NULL), -- Ahn'Qiraj Trigger
+(15461, 0, 0, 1, 0, 0, NULL), -- Shrieker Scarab
+(15462, 0, 0, 1, 0, 0, NULL), -- Spitting Scarab
+(15505, 0, 0, 1, 0, 0, '18943 18950'), -- Canal Frenzy
+(15514, 0, 0, 1, 0, 0, NULL), -- Buru Egg
+(15590, 0, 0, 1, 0, 0, NULL); -- Ossirian Crystal Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+14, @CGUID+143, 1155), -- Hive'Zara Drone -> Hive'Zara Tail Lasher

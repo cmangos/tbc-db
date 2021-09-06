@@ -128,23 +128,23 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(18309, 0, 0, 1, 16, 0, 0, NULL), -- Ethereal Scavenger
-(18311, 0, 0, 1, 16, 0, 0, NULL), -- Ethereal Crypt Raider
-(18312, 0, 0, 1, 16, 0, 0, NULL), -- Ethereal Spellbinder
-(18313, 0, 0, 1, 16, 0, 0, NULL), -- Ethereal Sorcerer
-(18314, 0, 0, 1, 16, 0, 0, NULL), -- Nexus Stalker
-(18315, 0, 0, 1, 16, 0, 0, NULL), -- Ethereal Theurgist
-(18317, 0, 0, 1, 16, 0, 0, NULL), -- Ethereal Priest
-(18331, 0, 0, 1, 16, 0, 0, '16592'), -- Ethereal Darkcaster
-(18341, 0, 0, 1, 16, 0, 0, NULL), -- Pandemonius
-(18343, 0, 0, 1, 16, 0, 0, NULL), -- Tavarok
-(18344, 0, 0, 1, 16, 0, 0, NULL), -- Nexus-Prince Shaffar
-(18431, 0, 0, 1, 16, 0, 0, '32368'), -- Ethereal Beacon
-(19306, 0, 0, 1, 16, 0, 0, NULL), -- Mana Leech
-(19307, 0, 0, 1, 16, 0, 0, NULL); -- Nexus Terror
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(18309, 0, 0, 1, 0, 0, NULL), -- Ethereal Scavenger
+(18311, 0, 0, 1, 0, 0, NULL), -- Ethereal Crypt Raider
+(18312, 0, 0, 1, 0, 0, NULL), -- Ethereal Spellbinder
+(18313, 0, 0, 1, 0, 0, NULL), -- Ethereal Sorcerer
+(18314, 0, 0, 1, 0, 0, NULL), -- Nexus Stalker
+(18315, 0, 0, 1, 0, 0, NULL), -- Ethereal Theurgist
+(18317, 0, 0, 1, 0, 0, NULL), -- Ethereal Priest
+(18331, 0, 0, 1, 0, 0, '16592'), -- Ethereal Darkcaster
+(18341, 0, 0, 1, 0, 0, NULL), -- Pandemonius
+(18343, 0, 0, 1, 0, 0, NULL), -- Tavarok
+(18344, 0, 0, 1, 0, 0, NULL), -- Nexus-Prince Shaffar
+(18431, 0, 0, 1, 0, 0, '32368'), -- Ethereal Beacon
+(19306, 0, 0, 1, 0, 0, NULL), -- Mana Leech
+(19307, 0, 0, 1, 0, 0, NULL); -- Nexus Terror
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+41, @CGUID+48, 1155), -- Ethereal Scavenger -> Ethereal Crypt Raider

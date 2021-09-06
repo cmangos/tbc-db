@@ -133,27 +133,27 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+33, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Driller
-(@CGUID+34, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Driller
-(@CGUID+35, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Driller
-(@CGUID+36, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Driller
-(@CGUID+37, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Driller
-(@CGUID+38, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Driller
-(@CGUID+39, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Wrecker
-(@CGUID+40, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Wrecker
-(@CGUID+41, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Wrecker
-(@CGUID+42, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Wrecker
-(@CGUID+45, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Tinkerer
-(@CGUID+46, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Tinkerer
-(@CGUID+48, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Tinkerer
-(@CGUID+49, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Tinkerer
-(@CGUID+50, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Tinkerer
-(@CGUID+51, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Tinkerer
-(@CGUID+56, 0, 0, 1, 0, 28, 0, NULL), -- Mechanar Tinkerer
-(@CGUID+57, 0, 0, 1, 0, 28, 0, NULL); -- Mechanar Tinkerer
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+33, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller
+(@CGUID+34, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller
+(@CGUID+35, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller
+(@CGUID+36, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller
+(@CGUID+37, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller
+(@CGUID+38, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller
+(@CGUID+39, 0, 0, 1, 28, 0, NULL), -- Mechanar Wrecker
+(@CGUID+40, 0, 0, 1, 28, 0, NULL), -- Mechanar Wrecker
+(@CGUID+41, 0, 0, 1, 28, 0, NULL), -- Mechanar Wrecker
+(@CGUID+42, 0, 0, 1, 28, 0, NULL), -- Mechanar Wrecker
+(@CGUID+45, 0, 0, 1, 28, 0, NULL), -- Mechanar Tinkerer
+(@CGUID+46, 0, 0, 1, 28, 0, NULL), -- Mechanar Tinkerer
+(@CGUID+48, 0, 0, 1, 28, 0, NULL), -- Mechanar Tinkerer
+(@CGUID+49, 0, 0, 1, 28, 0, NULL), -- Mechanar Tinkerer
+(@CGUID+50, 0, 0, 1, 28, 0, NULL), -- Mechanar Tinkerer
+(@CGUID+51, 0, 0, 1, 28, 0, NULL), -- Mechanar Tinkerer
+(@CGUID+56, 0, 0, 1, 28, 0, NULL), -- Mechanar Tinkerer
+(@CGUID+57, 0, 0, 1, 28, 0, NULL); -- Mechanar Tinkerer
 
--- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+25, @CGUID+63, 1155), -- Bloodwarder Centurion -> Sunseeker Netherbinder

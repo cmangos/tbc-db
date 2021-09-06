@@ -671,31 +671,31 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (22140,6,7,29.98181,-923.3133,72.92973, 100, 0, 0),
 (22140,6,8,29.98181,-923.3133,72.92973, 100, 1000, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+93, 0, 0, 0, 0, 173, 0, NULL), -- Greyheart Tidecaller
-(@CGUID+95, 0, 0, 0, 0, 173, 0, NULL), -- Greyheart Tidecaller
-(@CGUID+108, 0, 0, 0, 0, 173, 0, NULL), -- Greyheart Nether-Mage
-(@CGUID+110, 0, 0, 0, 0, 173, 0, NULL), -- Greyheart Nether-Mage
-(@CGUID+119, 0, 0, 0, 0, 173, 0, NULL), -- Greyheart Nether-Mage
-(@CGUID+131, 0, 0, 0, 0, 173, 0, NULL), -- Greyheart Skulker
-(@CGUID+134, 0, 0, 0, 0, 173, 0, NULL), -- Greyheart Skulker
-(@CGUID+135, 0, 0, 0, 0, 173, 0, NULL), -- Greyheart Skulker
-(@CGUID+136, 0, 0, 0, 0, 69, 0, NULL), -- Greyheart Skulker
-(@CGUID+138, 0, 0, 0, 0, 173, 0, NULL); -- Greyheart Skulker
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+93, 0, 0, 0, 173, 0, NULL), -- Greyheart Tidecaller
+(@CGUID+95, 0, 0, 0, 173, 0, NULL), -- Greyheart Tidecaller
+(@CGUID+108, 0, 0, 0, 173, 0, NULL), -- Greyheart Nether-Mage
+(@CGUID+110, 0, 0, 0, 173, 0, NULL), -- Greyheart Nether-Mage
+(@CGUID+119, 0, 0, 0, 173, 0, NULL), -- Greyheart Nether-Mage
+(@CGUID+131, 0, 0, 0, 173, 0, NULL), -- Greyheart Skulker
+(@CGUID+134, 0, 0, 0, 173, 0, NULL), -- Greyheart Skulker
+(@CGUID+135, 0, 0, 0, 173, 0, NULL), -- Greyheart Skulker
+(@CGUID+136, 0, 0, 0, 69, 0, NULL), -- Greyheart Skulker
+(@CGUID+138, 0, 0, 0, 173, 0, NULL); -- Greyheart Skulker
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(21215, 0, 8, 0, 0, 0, 0, NULL), -- Leotheras the Blind
-(21229, 0, 0, 0, 0, 0, 0, '38620'), -- Greyheart Tidecaller
-(21689, 0, 0, 0, 0, 383, 0, NULL), -- Coilfang Frenzy Corpse
-(21934, 0, 0, 0, 0, 0, 0, '37935'), -- Hydross Cleansing Field Helper
-(21965, 0, 0, 0, 0, 0, 0, '38184'), -- Fathom-Guard Tidalvess
-(21508, 0, 0, 0, 0, 0, 0, '26567'), -- Coilfang Frenzy
-(22250, 0, 0, 0, 0, 0, 0, '31690'), -- Rancid Mushroom
-(22104, 0, 0, 0, 0, 0, 0, '38516 38497 38464 24780 38518'), -- Cyclone (Karathress)
-(21857, 0, 0, 0, 0, 0, 0, '37713 18950'), -- Inner Demon
-(21875, 0, 0, 0, 0, 0, 0, '37780'), -- Shadow of Leotheras
-(22379, 0, 0, 0, 0, 0, 0, '39057'), -- Serpentshrine Parasite
-(22347, 0, 0, 0, 0, 0, 0, '19818'); -- Colossus Lurker
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(21215, 0, 8, 0, 0, 0, NULL), -- Leotheras the Blind
+(21229, 0, 0, 0, 0, 0, '38620'), -- Greyheart Tidecaller
+(21689, 0, 0, 0, 383, 0, NULL), -- Coilfang Frenzy Corpse
+(21934, 0, 0, 0, 0, 0, '37935'), -- Hydross Cleansing Field Helper
+(21965, 0, 0, 0, 0, 0, '38184'), -- Fathom-Guard Tidalvess
+(21508, 0, 0, 0, 0, 0, '26567'), -- Coilfang Frenzy
+(22250, 0, 0, 0, 0, 0, '31690'), -- Rancid Mushroom
+(22104, 0, 0, 0, 0, 0, '38516 38497 38464 24780 38518'), -- Cyclone (Karathress)
+(21857, 0, 0, 0, 0, 0, '37713 18950'), -- Inner Demon
+(21875, 0, 0, 0, 0, 0, '37780'), -- Shadow of Leotheras
+(22379, 0, 0, 0, 0, 0, '39057'), -- Serpentshrine Parasite
+(22347, 0, 0, 0, 0, 0, '19818'); -- Colossus Lurker
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- link "leaders" to bosses

@@ -59,63 +59,63 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+6, 0, 0, 0, 0, 0, 0, NULL), -- Fallenroot Shadowstalker
-(@CGUID+14, 0, 0, 0, 0, 0, 0, NULL), -- Fallenroot Shadowstalker
-(@CGUID+24, 0, 0, 0, 0, 0, 0, NULL), -- Fallenroot Hellcaller
-(@CGUID+38, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+39, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+40, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+41, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+42, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+43, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+44, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+45, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+46, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+52, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+56, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Sea Witch
-(@CGUID+84, 0, 8, 1, 16, 0, 0, NULL), -- Twilight Acolyte
-(@CGUID+85, 0, 0, 0, 0, 0, 0, NULL), -- Twilight Acolyte
-(@CGUID+94, 0, 0, 0, 0, 0, 0, NULL), -- Twilight Reaver
-(@CGUID+95, 0, 8, 1, 16, 0, 0, NULL), -- Twilight Reaver
-(@CGUID+96, 0, 0, 1, 16, 0, 0, '8734'), -- Twilight Reaver
-(@CGUID+102, 0, 0, 1, 16, 0, 0, '8734'), -- Twilight Aquamancer
-(@CGUID+105, 0, 0, 1, 16, 0, 0, '8734'), -- Twilight Loreseeker
-(@CGUID+112, 0, 0, 1, 16, 0, 0, '8734'), -- Twilight Loreseeker
-(@CGUID+118, 0, 0, 0, 0, 0, 0, NULL), -- Twilight Shadowmage
-(@CGUID+120, 0, 0, 0, 0, 0, 0, NULL), -- Twilight Shadowmage
-(@CGUID+208, 0, 0, 0, 0, 0, 0, NULL); -- Old Serra'kis
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+6, 0, 0, 0, 0, 0, NULL), -- Fallenroot Shadowstalker
+(@CGUID+14, 0, 0, 0, 0, 0, NULL), -- Fallenroot Shadowstalker
+(@CGUID+24, 0, 0, 0, 0, 0, NULL), -- Fallenroot Hellcaller
+(@CGUID+38, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+39, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+40, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+41, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+42, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+43, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+44, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+45, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+46, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+52, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+56, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
+(@CGUID+84, 0, 8, 1, 0, 0, NULL), -- Twilight Acolyte
+(@CGUID+85, 0, 0, 0, 0, 0, NULL), -- Twilight Acolyte
+(@CGUID+94, 0, 0, 0, 0, 0, NULL), -- Twilight Reaver
+(@CGUID+95, 0, 8, 1, 0, 0, NULL), -- Twilight Reaver
+(@CGUID+96, 0, 0, 1, 0, 0, '8734'), -- Twilight Reaver
+(@CGUID+102, 0, 0, 1, 0, 0, '8734'), -- Twilight Aquamancer
+(@CGUID+105, 0, 0, 1, 0, 0, '8734'), -- Twilight Loreseeker
+(@CGUID+112, 0, 0, 1, 0, 0, '8734'), -- Twilight Loreseeker
+(@CGUID+118, 0, 0, 0, 0, 0, NULL), -- Twilight Shadowmage
+(@CGUID+120, 0, 0, 0, 0, 0, NULL), -- Twilight Shadowmage
+(@CGUID+208, 0, 0, 0, 0, 0, NULL); -- Old Serra'kis
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(4787, 0, 7, 1, 16, 0, 0, NULL), -- Argent Guard Thaelrid
-(4789, 0, 0, 1, 16, 0, 0, '30831'), -- Fallenroot Rogue
-(4798, 0, 33554432, 1, 16, 0, 0, NULL), -- Fallenroot Shadowstalker
-(4799, 0, 0, 1, 16, 0, 0, NULL), -- Fallenroot Hellcaller
-(4805, 0, 0, 1, 16, 0, 0, '12544'), -- Blackfathom Sea Witch
-(4807, 0, 0, 1, 16, 0, 0, NULL), -- Blackfathom Myrmidon
-(4809, 0, 0, 1, 16, 0, 0, NULL), -- Twilight Acolyte
-(4810, 0, 0, 1, 16, 0, 0, NULL), -- Twilight Reaver
-(4811, 0, 0, 1, 16, 0, 0, NULL), -- Twilight Aquamancer
-(4812, 0, 0, 1, 16, 0, 0, NULL), -- Twilight Loreseeker
-(4813, 0, 0, 1, 16, 0, 0, NULL), -- Twilight Shadowmage
-(4814, 0, 0, 1, 16, 0, 0, NULL), -- Twilight Elementalist
-(4815, 0, 0, 1, 16, 0, 0, NULL), -- Murkshallow Snapclaw
-(4818, 0, 0, 1, 16, 0, 0, NULL), -- Blindlight Murloc
-(4819, 0, 0, 1, 16, 0, 0, NULL), -- Blindlight Muckdweller
-(4820, 0, 0, 1, 16, 0, 0, NULL), -- Blindlight Oracle
-(4821, 0, 0, 1, 16, 0, 0, NULL), -- Skittering Crustacean
-(4822, 0, 0, 1, 16, 0, 0, NULL), -- Snapping Crustacean
-(4823, 0, 0, 1, 16, 0, 0, NULL), -- Barbed Crustacean
-(4824, 0, 0, 1, 16, 0, 0, NULL), -- Aku'mai Fisher
-(4825, 0, 0, 1, 16, 0, 0, NULL), -- Aku'mai Snapjaw
-(4827, 0, 0, 1, 16, 0, 0, NULL), -- Deep Pool Threshfin
-(4829, 0, 0, 1, 16, 0, 0, NULL), -- Aku'mai
-(4830, 0, 0, 1, 16, 0, 0, NULL), -- Old Serra'kis
-(4831, 0, 0, 1, 16, 0, 0, NULL), -- Lady Sarevess
-(4832, 0, 8, 1, 16, 0, 0, '8734'), -- Twilight Lord Kelris
-(4887, 0, 0, 1, 16, 0, 0, NULL), -- Ghamoo-ra
-(6243, 0, 1114112, 1, 16, 0, 0, '7165'), -- Gelihast
-(12902, 0, 0, 1, 16, 0, 0, '12550'); -- Lorgus Jett
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(4787, 0, 7, 1, 0, 0, NULL), -- Argent Guard Thaelrid
+(4789, 0, 0, 1, 0, 0, '30831'), -- Fallenroot Rogue
+(4798, 0, 33554432, 1, 0, 0, NULL), -- Fallenroot Shadowstalker
+(4799, 0, 0, 1, 0, 0, NULL), -- Fallenroot Hellcaller
+(4805, 0, 0, 1, 0, 0, '12544'), -- Blackfathom Sea Witch
+(4807, 0, 0, 1, 0, 0, NULL), -- Blackfathom Myrmidon
+(4809, 0, 0, 1, 0, 0, NULL), -- Twilight Acolyte
+(4810, 0, 0, 1, 0, 0, NULL), -- Twilight Reaver
+(4811, 0, 0, 1, 0, 0, NULL), -- Twilight Aquamancer
+(4812, 0, 0, 1, 0, 0, NULL), -- Twilight Loreseeker
+(4813, 0, 0, 1, 0, 0, NULL), -- Twilight Shadowmage
+(4814, 0, 0, 1, 0, 0, NULL), -- Twilight Elementalist
+(4815, 0, 0, 1, 0, 0, NULL), -- Murkshallow Snapclaw
+(4818, 0, 0, 1, 0, 0, NULL), -- Blindlight Murloc
+(4819, 0, 0, 1, 0, 0, NULL), -- Blindlight Muckdweller
+(4820, 0, 0, 1, 0, 0, NULL), -- Blindlight Oracle
+(4821, 0, 0, 1, 0, 0, NULL), -- Skittering Crustacean
+(4822, 0, 0, 1, 0, 0, NULL), -- Snapping Crustacean
+(4823, 0, 0, 1, 0, 0, NULL), -- Barbed Crustacean
+(4824, 0, 0, 1, 0, 0, NULL), -- Aku'mai Fisher
+(4825, 0, 0, 1, 0, 0, NULL), -- Aku'mai Snapjaw
+(4827, 0, 0, 1, 0, 0, NULL), -- Deep Pool Threshfin
+(4829, 0, 0, 1, 0, 0, NULL), -- Aku'mai
+(4830, 0, 0, 1, 0, 0, NULL), -- Old Serra'kis
+(4831, 0, 0, 1, 0, 0, NULL), -- Lady Sarevess
+(4832, 0, 8, 1, 0, 0, '8734'), -- Twilight Lord Kelris
+(4887, 0, 0, 1, 0, 0, NULL), -- Ghamoo-ra
+(6243, 0, 1114112, 1, 0, 0, '7165'), -- Gelihast
+(12902, 0, 0, 1, 0, 0, '12550'); -- Lorgus Jett
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 

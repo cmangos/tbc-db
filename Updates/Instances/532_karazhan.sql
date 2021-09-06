@@ -1089,228 +1089,228 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (18412, 0, 19, -10906.74, -1764.455, 90.47702, 0, 0, 0),
 (18412, 0, 20, -10911.01, -1767.946, 90.47708, 0, 0, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+136, 0, 0, 1, 0, 0, 0, NULL), -- Spectral Stable Hand
-(@CGUID+212, 0, 0, 1, 0, 173, 0, NULL), -- Spectral Apprentice
-(@CGUID+213, 0, 0, 1, 0, 173, 0, NULL), -- Spectral Apprentice
-(@CGUID+248, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+249, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+250, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+251, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+252, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+253, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+254, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+255, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+256, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+257, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+258, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+259, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+260, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+261, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+262, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+263, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+264, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+265, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+266, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+267, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+268, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+269, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+270, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+271, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+272, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+273, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+274, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+275, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+276, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+277, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+278, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+279, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+280, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+281, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+282, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+283, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+284, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+285, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+286, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+287, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+288, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+289, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+290, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+291, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+292, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+293, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+294, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+295, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+296, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+297, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+298, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+299, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+300, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+301, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+302, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+303, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+304, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+305, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+306, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+307, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+308, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+309, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+310, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+311, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+312, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+313, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+314, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+315, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+316, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+317, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+318, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+319, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+320, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+321, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+322, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+323, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+324, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+325, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+326, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+327, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+328, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+329, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+330, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+331, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+332, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+333, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+334, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+335, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+336, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+337, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+338, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+339, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+340, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+341, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+342, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+343, 0, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+344, 0, 0, 1, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+345, 0, 0, 1, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+346, 0, 0, 1, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+347, 0, 0, 1, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+348, 0, 0, 1, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+349, 0, 0, 1, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+350, 0, 0, 1, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+351, 0, 0, 1, 0, 400, 0, NULL), -- Phantom Guest
-(@CGUID+352, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+353, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+354, 0, 5, 1, 0, 0, 0, NULL), -- Phantom Guest
-(@CGUID+361, 0, 0, 0, 0, 173, 0, NULL), -- Spectral Chef
-(@CGUID+362, 0, 0, 0, 0, 173, 0, NULL), -- Spectral Chef
-(@CGUID+407, 0, 0, 0, 0, 0, 0, NULL), -- Phantom Guardsman
-(@CGUID+465, 0, 5, 1, 16, 0, 0, NULL), -- Spectral Patron
-(@CGUID+466, 0, 5, 1, 16, 0, 0, NULL), -- Spectral Patron
-(@CGUID+489, 0, 5, 1, 16, 0, 0, NULL), -- Spectral Patron
-(@CGUID+495, 0, 5, 1, 16, 0, 0, NULL), -- Spectral Patron
-(@CGUID+500, 0, 5, 1, 16, 0, 0, NULL), -- Spectral Patron
-(@CGUID+504, 0, 5, 1, 16, 0, 0, NULL), -- Spectral Patron
-(@CGUID+508, 0, 5, 1, 16, 0, 0, NULL), -- Spectral Patron
-(@CGUID+510, 0, 5, 1, 16, 0, 0, NULL), -- Spectral Patron
-(@CGUID+516, 0, 5, 1, 16, 0, 0, NULL), -- Ghostly Philanthropist
-(@CGUID+517, 0, 5, 1, 16, 0, 0, NULL), -- Ghostly Philanthropist
-(@CGUID+520, 0, 5, 1, 16, 0, 0, NULL), -- Ghostly Philanthropist
-(@CGUID+521, 0, 5, 1, 16, 0, 0, NULL), -- Ghostly Philanthropist
-(@CGUID+530, 0, 0, 1, 16, 0, 0, NULL), -- Phantom Stagehand
-(@CGUID+540, 0, 8, 1, 0, 0, 0, NULL); -- Spectral Performer
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+136, 0, 0, 1, 0, 0, NULL), -- Spectral Stable Hand
+(@CGUID+212, 0, 0, 1, 173, 0, NULL), -- Spectral Apprentice
+(@CGUID+213, 0, 0, 1, 173, 0, NULL), -- Spectral Apprentice
+(@CGUID+248, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+249, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+250, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+251, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+252, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+253, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+254, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+255, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+256, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+257, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+258, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+259, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+260, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+261, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+262, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+263, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+264, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+265, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+266, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+267, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+268, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+269, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+270, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+271, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+272, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+273, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+274, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+275, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+276, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+277, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+278, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+279, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+280, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+281, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+282, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+283, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+284, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+285, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+286, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+287, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+288, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+289, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+290, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+291, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+292, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+293, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+294, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+295, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+296, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+297, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+298, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+299, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+300, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+301, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+302, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+303, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+304, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+305, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+306, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+307, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+308, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+309, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+310, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+311, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+312, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+313, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+314, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+315, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+316, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+317, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+318, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+319, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+320, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+321, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+322, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+323, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+324, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+325, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+326, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+327, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+328, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+329, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+330, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+331, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+332, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+333, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+334, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+335, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+336, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+337, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+338, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+339, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+340, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+341, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+342, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+343, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
+(@CGUID+344, 0, 0, 1, 400, 0, NULL), -- Phantom Guest
+(@CGUID+345, 0, 0, 1, 400, 0, NULL), -- Phantom Guest
+(@CGUID+346, 0, 0, 1, 400, 0, NULL), -- Phantom Guest
+(@CGUID+347, 0, 0, 1, 400, 0, NULL), -- Phantom Guest
+(@CGUID+348, 0, 0, 1, 400, 0, NULL), -- Phantom Guest
+(@CGUID+349, 0, 0, 1, 400, 0, NULL), -- Phantom Guest
+(@CGUID+350, 0, 0, 1, 400, 0, NULL), -- Phantom Guest
+(@CGUID+351, 0, 0, 1, 400, 0, NULL), -- Phantom Guest
+(@CGUID+352, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+353, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+354, 0, 5, 1, 0, 0, NULL), -- Phantom Guest
+(@CGUID+361, 0, 0, 0, 173, 0, NULL), -- Spectral Chef
+(@CGUID+362, 0, 0, 0, 173, 0, NULL), -- Spectral Chef
+(@CGUID+407, 0, 0, 0, 0, 0, NULL), -- Phantom Guardsman
+(@CGUID+465, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
+(@CGUID+466, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
+(@CGUID+489, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
+(@CGUID+495, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
+(@CGUID+500, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
+(@CGUID+504, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
+(@CGUID+508, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
+(@CGUID+510, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
+(@CGUID+516, 0, 5, 1, 0, 0, NULL), -- Ghostly Philanthropist
+(@CGUID+517, 0, 5, 1, 0, 0, NULL), -- Ghostly Philanthropist
+(@CGUID+520, 0, 5, 1, 0, 0, NULL), -- Ghostly Philanthropist
+(@CGUID+521, 0, 5, 1, 0, 0, NULL), -- Ghostly Philanthropist
+(@CGUID+530, 0, 0, 1, 0, 0, NULL), -- Phantom Stagehand
+(@CGUID+540, 0, 8, 1, 0, 0, NULL); -- Spectral Performer
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(15547, 0, 0, 1, 0, 0, 0, '19817'), -- Spectral Charger
-(15548, 0, 0, 1, 0, 0, 0, NULL), -- Spectral Stallion
-(15687, 0, 0, 1, 16, 0, 0, NULL), -- Moroes
-(15688, 0, 0, 1, 16, 0, 0, NULL), -- Terestian Illhoof
-(15689, 0, 0, 0, 0, 0, 0, NULL), -- Netherspite
-(15690, 0, 0, 1, 16, 0, 0, NULL), -- Prince Malchezaar
-(15691, 0, 0, 1, 16, 0, 0, NULL), -- The Curator
-(16151, 0, 0, 1, 16, 0, 0, NULL), -- Midnight
-(16153, 0, 0, 1, 16, 0, 0, '28002'), -- Berthold
-(16159, 0, 0, 1, 16, 0, 0, '28002'), -- Calliard
-(16169, 0, 0, 1, 16, 0, 0, '28002'), -- Hastings
-(16170, 0, 0, 1, 16, 0, 0, '22766 29291'), -- Coldmist Stalker
-(16171, 0, 0, 1, 16, 0, 0, NULL), -- Coldmist Widow
-(16173, 0, 0, 1, 16, 0, 0, NULL), -- Shadowbat
-(16174, 0, 0, 1, 16, 0, 0, NULL), -- Greater Shadowbat
-(16175, 0, 0, 1, 16, 0, 0, '32429'), -- Vampiric Shadowbat
-(16176, 0, 0, 1, 16, 0, 0, NULL), -- Shadowbeast
-(16177, 0, 0, 1, 16, 0, 0, NULL), -- Dreadbeast
-(16178, 0, 0, 1, 16, 0, 0, '8273 29315'), -- Phase Hound
-(16179, 0, 0, 1, 16, 0, 0, '32199'), -- Hyakiss the Lurker
-(16388, 0, 0, 1, 16, 0, 0, '28002'), -- Koren
-(16406, 0, 0, 0, 0, 0, 0, NULL), -- Phantom Attendant
-(16407, 0, 0, 1, 0, 0, 0, NULL), -- Spectral Servant
-(16408, 0, 0, 1, 0, 0, 0, '18950'), -- Phantom Valet
-(16410, 0, 0, 0, 0, 0, 0, NULL), -- Spectral Retainer
-(16412, 0, 0, 1, 0, 0, 0, NULL), -- Ghostly Baker
-(16414, 0, 0, 1, 0, 0, 0, NULL), -- Ghostly Steward
-(16415, 0, 0, 1, 16, 0, 0, NULL), -- Skeletal Waiter
-(16424, 0, 0, 1, 16, 0, 0, '18950'), -- Spectral Sentry
-(16425, 0, 0, 1, 16, 0, 0, NULL), -- Phantom Guardsman
-(16426, 0, 0, 1, 16, 0, 0, '28002'), -- Bennett
-(16457, 0, 0, 1, 16, 0, 0, NULL), -- Maiden of Virtue
-(16459, 0, 0, 1, 16, 0, 0, NULL), -- Wanton Hostess
-(16460, 0, 0, 1, 16, 0, 0, NULL), -- Night Mistress
-(16461, 0, 0, 1, 16, 0, 0, NULL), -- Concubine
-(16468, 0, 0, 1, 16, 0, 0, NULL), -- Spectral Patron
-(16470, 0, 0, 1, 16, 0, 0, NULL), -- Ghostly Philanthropist
-(16471, 0, 0, 1, 16, 0, 0, NULL), -- Skeletal Usher
-(16472, 0, 0, 1, 16, 69, 0, NULL), -- Phantom Stagehand
-(16473, 0, 0, 1, 16, 0, 0, NULL), -- Spectral Performer
-(16481, 0, 0, 1, 16, 0, 0, NULL), -- Ghastly Haunt
-(16482, 0, 0, 1, 16, 0, 0, NULL), -- Trapped Soul
-(16485, 0, 0, 1, 0, 0, 0, '18950'), -- Arcane Watchman
-(16488, 0, 0, 1, 16, 0, 0, NULL), -- Arcane Anomaly
-(16489, 0, 0, 1, 0, 0, 0, '19818'), -- Chaotic Sentience
-(16491, 0, 0, 1, 0, 0, 0, '29908'), -- Mana Feeder
-(16492, 0, 0, 1, 0, 0, 0, NULL), -- Syphoner
-(16504, 0, 0, 1, 0, 0, 0, '18950 19818'), -- Arcane Protector
-(16524, 0, 0, 1, 16, 0, 0, NULL), -- Shade of Aran
-(16525, 0, 0, 1, 0, 0, 0, NULL), -- Spell Shade
-(16526, 0, 0, 1, 0, 0, 0, NULL), -- Sorcerous Shade
-(16529, 0, 0, 1, 0, 0, 0, NULL), -- Magical Horror
-(16530, 0, 0, 1, 0, 0, 0, NULL), -- Mana Warp
-(16539, 0, 0, 1, 0, 0, 0, NULL), -- Homunculus
-(16540, 0, 0, 1, 0, 69, 0, NULL), -- Shadow Pillager
-(16544, 0, 0, 1, 0, 0, 0, NULL), -- Ethereal Thief
-(16545, 0, 0, 1, 0, 0, 0, NULL), -- Ethereal Spellfilcher
-(16595, 0, 0, 1, 0, 0, 0, '3417'), -- Fleshbeast
-(16596, 0, 0, 1, 0, 0, 0, '8876 18950'), -- Greater Fleshbeast
-(16806, 0, 0, 1, 16, 0, 0, '28002'), -- Ebonlocke
-(16811, 0, 0, 1, 16, 0, 0, '28002'), -- Sebastian
-(16812, 0, 0, 1, 16, 0, 0, '28002'), -- Barnes
-(16813, 0, 0, 1, 0, 0, 0, '28002'), -- Wravien
-(16814, 0, 0, 1, 0, 0, 0, '28002'), -- Gradav
-(16815, 0, 0, 1, 0, 0, 0, '28002'), -- Kamsis
-(16816, 0, 0, 1, 0, 0, 0, '28002'), -- Echo of Medivh
-(17161, 0, 0, 1, 0, 0, 0, NULL), -- Blizzard (Shade of Aran)
-(17168, 0, 0, 1, 0, 0, 0, NULL), -- Shade of Aran Teleport N
-(17169, 0, 0, 1, 0, 0, 0, NULL), -- Shade of Aran Teleport S
-(17170, 0, 0, 1, 0, 0, 0, NULL), -- Shade of Aran Teleport E
-(17171, 0, 0, 1, 0, 0, 0, NULL), -- Shade of Aran Teleport W
-(17172, 0, 0, 1, 0, 0, 0, NULL), -- Shade of Aran Teleport NE
-(17173, 0, 0, 1, 0, 0, 0, NULL), -- Shade of Aran Teleport SE
-(17174, 0, 0, 1, 0, 0, 0, NULL), -- Shade of Aran Teleport SW
-(17175, 0, 0, 1, 0, 0, 0, NULL), -- Shade of Aran Teleport NW
-(17176, 0, 0, 1, 0, 0, 0, NULL), -- Shade of Aran Teleport Center
-(17208, 0, 0, 1, 0, 0, 0, NULL), -- Chess Square, WHITE (DND)
-(17225, 0, 3, 1, 16, 0, 0, NULL), -- Nightbane
-(17260, 0, 0, 1, 16, 0, 0, NULL), -- Nightbane Helper Target
-(17305, 0, 0, 1, 0, 0, 0, NULL), -- Chess Square, BLACK (DND)
-(17317, 0, 0, 1, 0, 0, 0, NULL), -- Chess Square, OUTSIDE WHITE (DND)
-(17459, 0, 0, 1, 0, 0, 0, NULL), -- Chess Waiting Room (DND)
-(17518, 0, 0, 1, 0, 0, 0, '28002'), -- Ythyar
-(17644, 0, 0, 1, 0, 0, 0, NULL), -- Infernal Target
-(17645, 0, 0, 1, 16, 0, 0, NULL), -- Infernal Relay
-(17660, 0, 0, 1, 0, 0, 0, NULL), -- Skeletal Gryphon
-(18654, 0, 0, 1, 16, 0, 0, NULL), -- Crowd Murmur Helper
-(21921, 0, 0, 1, 0, 0, 0, NULL), -- Chess - Sound Bunny
-(22519, 0, 0, 1, 0, 0, 0, NULL), -- Chess Piece: Karazhan Invisible Stalker
-(22520, 0, 0, 1, 0, 0, 0, NULL), -- Chess Piece: Status Bar
-(22523, 0, 0, 1, 0, 0, 0, NULL), -- Karazhan - Chess, Victory Dummy Tool
-(22524, 0, 0, 1, 0, 0, 0, NULL); -- Karazhan - Chess, Victory Controller
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(15547, 0, 0, 1, 0, 0, '19817'), -- Spectral Charger
+(15548, 0, 0, 1, 0, 0, NULL), -- Spectral Stallion
+(15687, 0, 0, 1, 0, 0, NULL), -- Moroes
+(15688, 0, 0, 1, 0, 0, NULL), -- Terestian Illhoof
+(15689, 0, 0, 0, 0, 0, NULL), -- Netherspite
+(15690, 0, 0, 1, 0, 0, NULL), -- Prince Malchezaar
+(15691, 0, 0, 1, 0, 0, NULL), -- The Curator
+(16151, 0, 0, 1, 0, 0, NULL), -- Midnight
+(16153, 0, 0, 1, 0, 0, '28002'), -- Berthold
+(16159, 0, 0, 1, 0, 0, '28002'), -- Calliard
+(16169, 0, 0, 1, 0, 0, '28002'), -- Hastings
+(16170, 0, 0, 1, 0, 0, '22766 29291'), -- Coldmist Stalker
+(16171, 0, 0, 1, 0, 0, NULL), -- Coldmist Widow
+(16173, 0, 0, 1, 0, 0, NULL), -- Shadowbat
+(16174, 0, 0, 1, 0, 0, NULL), -- Greater Shadowbat
+(16175, 0, 0, 1, 0, 0, '32429'), -- Vampiric Shadowbat
+(16176, 0, 0, 1, 0, 0, NULL), -- Shadowbeast
+(16177, 0, 0, 1, 0, 0, NULL), -- Dreadbeast
+(16178, 0, 0, 1, 0, 0, '8273 29315'), -- Phase Hound
+(16179, 0, 0, 1, 0, 0, '32199'), -- Hyakiss the Lurker
+(16388, 0, 0, 1, 0, 0, '28002'), -- Koren
+(16406, 0, 0, 0, 0, 0, NULL), -- Phantom Attendant
+(16407, 0, 0, 1, 0, 0, NULL), -- Spectral Servant
+(16408, 0, 0, 1, 0, 0, '18950'), -- Phantom Valet
+(16410, 0, 0, 0, 0, 0, NULL), -- Spectral Retainer
+(16412, 0, 0, 1, 0, 0, NULL), -- Ghostly Baker
+(16414, 0, 0, 1, 0, 0, NULL), -- Ghostly Steward
+(16415, 0, 0, 1, 0, 0, NULL), -- Skeletal Waiter
+(16424, 0, 0, 1, 0, 0, '18950'), -- Spectral Sentry
+(16425, 0, 0, 1, 0, 0, NULL), -- Phantom Guardsman
+(16426, 0, 0, 1, 0, 0, '28002'), -- Bennett
+(16457, 0, 0, 1, 0, 0, NULL), -- Maiden of Virtue
+(16459, 0, 0, 1, 0, 0, NULL), -- Wanton Hostess
+(16460, 0, 0, 1, 0, 0, NULL), -- Night Mistress
+(16461, 0, 0, 1, 0, 0, NULL), -- Concubine
+(16468, 0, 0, 1, 0, 0, NULL), -- Spectral Patron
+(16470, 0, 0, 1, 0, 0, NULL), -- Ghostly Philanthropist
+(16471, 0, 0, 1, 0, 0, NULL), -- Skeletal Usher
+(16472, 0, 0, 1, 69, 0, NULL), -- Phantom Stagehand
+(16473, 0, 0, 1, 0, 0, NULL), -- Spectral Performer
+(16481, 0, 0, 1, 0, 0, NULL), -- Ghastly Haunt
+(16482, 0, 0, 1, 0, 0, NULL), -- Trapped Soul
+(16485, 0, 0, 1, 0, 0, '18950'), -- Arcane Watchman
+(16488, 0, 0, 1, 0, 0, NULL), -- Arcane Anomaly
+(16489, 0, 0, 1, 0, 0, '19818'), -- Chaotic Sentience
+(16491, 0, 0, 1, 0, 0, '29908'), -- Mana Feeder
+(16492, 0, 0, 1, 0, 0, NULL), -- Syphoner
+(16504, 0, 0, 1, 0, 0, '18950 19818'), -- Arcane Protector
+(16524, 0, 0, 1, 0, 0, NULL), -- Shade of Aran
+(16525, 0, 0, 1, 0, 0, NULL), -- Spell Shade
+(16526, 0, 0, 1, 0, 0, NULL), -- Sorcerous Shade
+(16529, 0, 0, 1, 0, 0, NULL), -- Magical Horror
+(16530, 0, 0, 1, 0, 0, NULL), -- Mana Warp
+(16539, 0, 0, 1, 0, 0, NULL), -- Homunculus
+(16540, 0, 0, 1, 69, 0, NULL), -- Shadow Pillager
+(16544, 0, 0, 1, 0, 0, NULL), -- Ethereal Thief
+(16545, 0, 0, 1, 0, 0, NULL), -- Ethereal Spellfilcher
+(16595, 0, 0, 1, 0, 0, '3417'), -- Fleshbeast
+(16596, 0, 0, 1, 0, 0, '8876 18950'), -- Greater Fleshbeast
+(16806, 0, 0, 1, 0, 0, '28002'), -- Ebonlocke
+(16811, 0, 0, 1, 0, 0, '28002'), -- Sebastian
+(16812, 0, 0, 1, 0, 0, '28002'), -- Barnes
+(16813, 0, 0, 1, 0, 0, '28002'), -- Wravien
+(16814, 0, 0, 1, 0, 0, '28002'), -- Gradav
+(16815, 0, 0, 1, 0, 0, '28002'), -- Kamsis
+(16816, 0, 0, 1, 0, 0, '28002'), -- Echo of Medivh
+(17161, 0, 0, 1, 0, 0, NULL), -- Blizzard (Shade of Aran)
+(17168, 0, 0, 1, 0, 0, NULL), -- Shade of Aran Teleport N
+(17169, 0, 0, 1, 0, 0, NULL), -- Shade of Aran Teleport S
+(17170, 0, 0, 1, 0, 0, NULL), -- Shade of Aran Teleport E
+(17171, 0, 0, 1, 0, 0, NULL), -- Shade of Aran Teleport W
+(17172, 0, 0, 1, 0, 0, NULL), -- Shade of Aran Teleport NE
+(17173, 0, 0, 1, 0, 0, NULL), -- Shade of Aran Teleport SE
+(17174, 0, 0, 1, 0, 0, NULL), -- Shade of Aran Teleport SW
+(17175, 0, 0, 1, 0, 0, NULL), -- Shade of Aran Teleport NW
+(17176, 0, 0, 1, 0, 0, NULL), -- Shade of Aran Teleport Center
+(17208, 0, 0, 1, 0, 0, NULL), -- Chess Square, WHITE (DND)
+(17225, 0, 3, 1, 0, 0, NULL), -- Nightbane
+(17260, 0, 0, 1, 0, 0, NULL), -- Nightbane Helper Target
+(17305, 0, 0, 1, 0, 0, NULL), -- Chess Square, BLACK (DND)
+(17317, 0, 0, 1, 0, 0, NULL), -- Chess Square, OUTSIDE WHITE (DND)
+(17459, 0, 0, 1, 0, 0, NULL), -- Chess Waiting Room (DND)
+(17518, 0, 0, 1, 0, 0, '28002'), -- Ythyar
+(17644, 0, 0, 1, 0, 0, NULL), -- Infernal Target
+(17645, 0, 0, 1, 0, 0, NULL), -- Infernal Relay
+(17660, 0, 0, 1, 0, 0, NULL), -- Skeletal Gryphon
+(18654, 0, 0, 1, 0, 0, NULL), -- Crowd Murmur Helper
+(21921, 0, 0, 1, 0, 0, NULL), -- Chess - Sound Bunny
+(22519, 0, 0, 1, 0, 0, NULL), -- Chess Piece: Karazhan Invisible Stalker
+(22520, 0, 0, 1, 0, 0, NULL), -- Chess Piece: Status Bar
+(22523, 0, 0, 1, 0, 0, NULL), -- Karazhan - Chess, Victory Dummy Tool
+(22524, 0, 0, 1, 0, 0, NULL); -- Karazhan - Chess, Victory Controller
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+119, @CGUID+144, 1025), -- Spectral Charger -> Midnight

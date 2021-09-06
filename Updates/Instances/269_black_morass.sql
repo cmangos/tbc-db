@@ -136,7 +136,6 @@ INSERT INTO creature_movement_template SELECT 18995 AS entry, pathId, `point`, p
 INSERT INTO creature_movement_template SELECT 21139 AS entry, pathId, `point`, position_x, position_y, position_z, orientation, waittime, script_id, `comment` FROM creature_movement_template WHERE entry=21818;
 
 -- Dark Portal Beam Invisible Stalker
-UPDATE creature_template SET MovementType=2 WHERE entry=18555;
 DELETE FROM creature_movement_template WHERE entry=18555;
 INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
 (18555,0,1,-2015.482,7120.704,23.13793,0,0,100),
@@ -264,17 +263,16 @@ INSERT INTO `creature_movement_template` (`entry`,`pathID`,`point`,`position_x`,
 (17023,24,1,-2088.388,7119.204,34.53128,1000,7,6.213372),
 (17023,24,2,-2088.388,7119.204,34.53128,1000,1,6.213372);
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-DELETE FROM creature_template_addon WHERE entry=18555; -- previously added, but we need better control over it (no longer casted using addon)
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(15608, 0, 0, 0, 0, 0, 0, '31635 31556'), -- Medivh
-(17881, 0, 0, 1, 16, 0, 0, NULL), -- Aeonus
-(18170, 0, 0, 0, 0, 0, 0, '19817'), -- Infinite Slayer
-(18982, 0, 0, 1, 0, 0, 0, '18950 22766'), -- Sable Jaguar
-(18983, 0, 0, 1, 0, 0, 0, '34365'), -- Blackfang Tarantula
-(21140, 0, 0, 1, 16, 0, 0, '19818'), -- Rift Lord
-(21862, 0, 0, 0, 0, 0, 0, '32570'); -- Dark Portal Dummy 1.30
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(15608, 0, 0, 0, 0, 0, '31635 31556'), -- Medivh
+(17881, 0, 0, 1, 0, 0, NULL), -- Aeonus
+(18170, 0, 0, 0, 0, 0, '19817'), -- Infinite Slayer
+(18982, 0, 0, 1, 0, 0, '18950 22766'), -- Sable Jaguar
+(18983, 0, 0, 1, 0, 0, '34365'), -- Blackfang Tarantula
+(21140, 0, 0, 1, 0, 0, '19818'), -- Rift Lord
+(21862, 0, 0, 0, 0, 0, '32570'); -- Dark Portal Dummy 1.30
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 

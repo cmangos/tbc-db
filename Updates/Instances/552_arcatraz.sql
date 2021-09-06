@@ -337,42 +337,42 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (20864, 1, 1, 123.2132, 0.05693996, -10.1021, 100, 0, 0),
 (20864, 1, 2, 82.020, 0.306, -11.026, 100, 0, 0);
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(20857, 0, 0, 1, 16, 333, 0, '38805'), -- Arcatraz Defender - Immolate (previously in ACID)
-(20859, 0, 0, 2, 16, 376, 0, NULL), -- Arcatraz Warder
-(20864, 0, 0, 1, 16, 0, 0, NULL), -- Protean Nightmare
-(20865, 0, 0, 1, 16, 0, 0, NULL), -- Protean Horror
-(20866, 0, 0, 1, 16, 0, 0, NULL), -- Soul Devourer
-(20867, 0, 0, 1, 16, 0, 0, NULL), -- Death Watcher
-(20870, 0, 0, 1, 16, 0, 0, NULL), -- Zereketh the Unbound
-(20873, 0, 0, 1, 16, 0, 0, '19818'), -- Negaton Warp-Master
-(20875, 0, 0, 1, 16, 0, 0, NULL), -- Negaton Screamer
-(20880, 0, 0, 1, 16, 0, 0, ''), -- Eredar Deathbringer
-(20881, 0, 0, 1, 16, 0, 0, NULL), -- Unbound Devastator
-(20882, 0, 0, 1, 16, 0, 0, '16380'), -- Skulking Witch
-(20883, 0, 0, 1, 16, 0, 0, NULL), -- Spiteful Temptress
-(20885, 0, 0, 1, 16, 0, 0, NULL), -- Dalliah the Doomsayer
-(20896, 0, 0, 1, 16, 0, 0, NULL), -- Ethereum Slayer
-(20897, 0, 0, 1, 16, 0, 0, NULL), -- Ethereum Wave-Caster
-(20898, 0, 0, 1, 16, 0, 0, NULL), -- Gargantuan Abyssal
-(20900, 0, 0, 1, 16, 0, 0, NULL), -- Unchained Doombringer
-(20901, 0, 0, 1, 16, 0, 0, NULL), -- Sargeron Archer
-(20902, 0, 0, 1, 16, 0, 0, NULL), -- Sargeron Hellcaller
-(20904, 0, 0, 1, 16, 0, 0, '36852'), -- Warden Mellichar
-(20978, 0, 0, 1, 16, 0, 0, NULL), -- Wrath-Scryer's Felfire
-(21186, 0, 0, 1, 16, 0, 0, NULL), -- Arcane Warder Target
-(21303, 0, 0, 1, 16, 0, 0, '29266'), -- Defender Corpse
-(21304, 0, 0, 1, 16, 0, 0, '29266'), -- Warder Corpse
-(21346, 0, 0, 1, 16, 0, 0, '36649'), -- Sightless Eye
-(21436, 0, 0, 1, 16, 0, 0, NULL), -- Tempest Keep Prison Alpha Pod Target
-(21437, 0, 0, 1, 16, 0, 0, NULL), -- Tempest Keep Prison Beta Pod Target
-(21438, 0, 0, 1, 16, 0, 0, NULL), -- Tempest Keep Prison Delta Pod Target
-(21439, 0, 0, 1, 16, 0, 0, NULL), -- Tempest Keep Prison Gamma Pod Target
-(21440, 0, 0, 1, 16, 0, 0, '36852'), -- Tempest Keep Prison Boss Pod Target
-(21702, 0, 0, 1, 16, 0, 0, NULL), -- Ethereum Life-Binder
-(21962, 0, 0, 1, 16, 0, 0, '29266'); -- Udalo
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(20857, 0, 0, 1, 333, 0, '38805'), -- Arcatraz Defender - Immolate (previously in ACID)
+(20859, 0, 0, 2, 376, 0, NULL), -- Arcatraz Warder
+(20864, 0, 0, 1, 0, 0, NULL), -- Protean Nightmare
+(20865, 0, 0, 1, 0, 0, NULL), -- Protean Horror
+(20866, 0, 0, 1, 0, 0, NULL), -- Soul Devourer
+(20867, 0, 0, 1, 0, 0, NULL), -- Death Watcher
+(20870, 0, 0, 1, 0, 0, NULL), -- Zereketh the Unbound
+(20873, 0, 0, 1, 0, 0, '19818'), -- Negaton Warp-Master
+(20875, 0, 0, 1, 0, 0, NULL), -- Negaton Screamer
+(20880, 0, 0, 1, 0, 0, ''), -- Eredar Deathbringer
+(20881, 0, 0, 1, 0, 0, NULL), -- Unbound Devastator
+(20882, 0, 0, 1, 0, 0, '16380'), -- Skulking Witch
+(20883, 0, 0, 1, 0, 0, NULL), -- Spiteful Temptress
+(20885, 0, 0, 1, 0, 0, NULL), -- Dalliah the Doomsayer
+(20896, 0, 0, 1, 0, 0, NULL), -- Ethereum Slayer
+(20897, 0, 0, 1, 0, 0, NULL), -- Ethereum Wave-Caster
+(20898, 0, 0, 1, 0, 0, NULL), -- Gargantuan Abyssal
+(20900, 0, 0, 1, 0, 0, NULL), -- Unchained Doombringer
+(20901, 0, 0, 1, 0, 0, NULL), -- Sargeron Archer
+(20902, 0, 0, 1, 0, 0, NULL), -- Sargeron Hellcaller
+(20904, 0, 0, 1, 0, 0, '36852'), -- Warden Mellichar
+(20978, 0, 0, 1, 0, 0, NULL), -- Wrath-Scryer's Felfire
+(21186, 0, 0, 1, 0, 0, NULL), -- Arcane Warder Target
+(21303, 0, 0, 1, 0, 0, '29266'), -- Defender Corpse
+(21304, 0, 0, 1, 0, 0, '29266'), -- Warder Corpse
+(21346, 0, 0, 1, 0, 0, '36649'), -- Sightless Eye
+(21436, 0, 0, 1, 0, 0, NULL), -- Tempest Keep Prison Alpha Pod Target
+(21437, 0, 0, 1, 0, 0, NULL), -- Tempest Keep Prison Beta Pod Target
+(21438, 0, 0, 1, 0, 0, NULL), -- Tempest Keep Prison Delta Pod Target
+(21439, 0, 0, 1, 0, 0, NULL), -- Tempest Keep Prison Gamma Pod Target
+(21440, 0, 0, 1, 0, 0, '36852'), -- Tempest Keep Prison Boss Pod Target
+(21702, 0, 0, 1, 0, 0, NULL), -- Ethereum Life-Binder
+(21962, 0, 0, 1, 0, 0, '29266'); -- Udalo
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+6, @CGUID+5, 1155), -- Arcatraz Warder -> Arcatraz Warder
@@ -717,7 +717,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (7948501, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror (Arcatraz) RUN ON'),
 (7952001, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror (Arcatraz) RUN ON'),
 
-(2086501, 0, 2, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror - Set UnitFlags to 0');
+(2086501, 0, 48, 64+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Protean Horror - Remove UNIT_FLAG_UNK_6, UNIT_FLAG_IMMUNE_TO_NPC');
 
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

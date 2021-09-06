@@ -549,107 +549,107 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+13, 0, 0, 1, 0, 0, 0, ''), -- Arathi Farmer
-(@CGUID+14, 0, 0, 1, 0, 0, 0, ''), -- Arathi Farmer
-(@CGUID+15, 0, 0, 1, 0, 0, 0, ''), -- Arathi Farmer
-(@CGUID+16, 0, 0, 1, 0, 0, 0, ''), -- Arathi Farmer
-(@CGUID+17, 0, 0, 1, 0, 0, 0, ''), -- Arathi Farmer
-(@CGUID+18, 0, 0, 1, 0, 0, 0, ''), -- Arathi Farmer
-(@CGUID+19, 0, 0, 1, 0, 0, 0, ''), -- Arathi Farmer
-(@CGUID+20, 0, 0, 1, 0, 69, 0, ''), -- Arathi Farmer
-(@CGUID+21, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Farmer
-(@CGUID+22, 0, 0, 1, 0, 69, 0, ''), -- Forsaken Farmer
-(@CGUID+23, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Farmer
-(@CGUID+24, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Farmer
-(@CGUID+25, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Farmer
-(@CGUID+26, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Farmer
-(@CGUID+27, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Farmer
-(@CGUID+28, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Farmer
-(@CGUID+29, 0, 0, 1, 0, 233, 0, ''), -- Arathi Lumberjack
-(@CGUID+30, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+31, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+32, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+33, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+34, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+35, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+36, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+37, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+38, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+39, 0, 0, 1, 0, 234, 0, ''), -- Arathi Lumberjack
-(@CGUID+40, 0, 0, 1, 0, 233, 0, ''), -- Arathi Blacksmith
-(@CGUID+41, 0, 0, 1, 0, 233, 0, ''), -- Arathi Blacksmith
-(@CGUID+42, 0, 0, 1, 0, 233, 0, ''), -- Arathi Blacksmith
-(@CGUID+43, 0, 0, 1, 0, 233, 0, ''), -- Arathi Blacksmith
-(@CGUID+44, 0, 0, 1, 0, 69, 0, ''), -- Arathi Blacksmith
-(@CGUID+45, 0, 0, 1, 0, 69, 0, ''), -- Arathi Blacksmith
-(@CGUID+46, 0, 0, 1, 0, 233, 0, ''), -- Arathi Blacksmith
-(@CGUID+47, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Blacksmith
-(@CGUID+48, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Blacksmith
-(@CGUID+49, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Blacksmith
-(@CGUID+50, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Blacksmith
-(@CGUID+51, 0, 0, 1, 0, 69, 0, ''), -- Forsaken Blacksmith
-(@CGUID+52, 0, 1, 1, 0, 0, 0, ''), -- Lady
-(@CGUID+53, 0, 0, 1, 0, 0, 0, ''), -- Cleo
-(@CGUID+54, 0, 0, 1, 0, 0, 0, '24244'), -- Underfoot
-(@CGUID+55, 0, 0, 1, 0, 0, 0, ''), -- Spike
-(@CGUID+56, 0, 0, 1, 0, 233, 0, ''), -- Arathi Miner
-(@CGUID+57, 0, 0, 1, 0, 0, 0, ''), -- Arathi Miner
-(@CGUID+58, 0, 0, 1, 0, 233, 0, ''), -- Arathi Miner
-(@CGUID+59, 0, 0, 1, 0, 233, 0, ''), -- Arathi Miner
-(@CGUID+60, 0, 0, 1, 0, 0, 0, ''), -- Arathi Miner
-(@CGUID+61, 0, 0, 1, 0, 233, 0, ''), -- Arathi Miner
-(@CGUID+62, 0, 0, 1, 0, 233, 0, ''), -- Arathi Miner
-(@CGUID+63, 0, 0, 1, 0, 233, 0, ''), -- Arathi Miner
-(@CGUID+64, 0, 0, 1, 0, 233, 0, ''), -- Arathi Miner
-(@CGUID+65, 0, 0, 1, 0, 233, 0, ''), -- Arathi Miner
-(@CGUID+66, 0, 0, 1, 0, 0, 0, ''), -- Arathi Miner
-(@CGUID+67, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Miner
-(@CGUID+68, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Miner
-(@CGUID+69, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Miner
-(@CGUID+70, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Miner
-(@CGUID+71, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Miner
-(@CGUID+72, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Miner
-(@CGUID+73, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Miner
-(@CGUID+74, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Miner
-(@CGUID+75, 0, 0, 1, 0, 133, 0, ''), -- Forsaken Miner
-(@CGUID+76, 0, 0, 1, 0, 0, 0, ''), -- Arathi Stablehand
-(@CGUID+77, 0, 0, 1, 0, 69, 0, ''), -- Arathi Stablehand
-(@CGUID+78, 0, 0, 1, 0, 0, 0, ''), -- Arathi Stablehand
-(@CGUID+79, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Stablehand
-(@CGUID+80, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Stablehand
-(@CGUID+81, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Stablehand
-(@CGUID+82, 0, 0, 1, 0, 233, 0, ''), -- Forsaken Lumberjack
-(@CGUID+83, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+84, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+85, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+86, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+87, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+88, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+89, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+90, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+91, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+92, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+93, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+94, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+95, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+96, 0, 0, 1, 0, 234, 0, ''), -- Forsaken Lumberjack
-(@CGUID+97, 0, 0, 1, 0, 0, 0, ''), -- Arathi Horse
-(@CGUID+98, 0, 0, 1, 0, 0, 0, ''), -- Arathi Horse
-(@CGUID+99, 0, 0, 1, 0, 0, 0, ''), -- Arathi Horse
-(@CGUID+100, 0, 0, 1, 0, 0, 0, ''), -- Arathi Horse
-(@CGUID+101, 0, 0, 1, 0, 0, 0, ''), -- Arathi Horse
-(@CGUID+102, 0, 0, 1, 0, 0, 0, ''), -- Arathi Horse
-(@CGUID+103, 0, 0, 1, 0, 0, 0, ''), -- Arathi Horse
-(@CGUID+104, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Horse
-(@CGUID+105, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Horse
-(@CGUID+106, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Horse
-(@CGUID+107, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Horse
-(@CGUID+108, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Horse
-(@CGUID+109, 0, 0, 1, 0, 0, 0, ''), -- Forsaken Horse
-(@CGUID+110, 0, 0, 1, 0, 0, 0, ''); -- Forsaken Horse
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+13, 0, 0, 1, 0, 0, ''), -- Arathi Farmer
+(@CGUID+14, 0, 0, 1, 0, 0, ''), -- Arathi Farmer
+(@CGUID+15, 0, 0, 1, 0, 0, ''), -- Arathi Farmer
+(@CGUID+16, 0, 0, 1, 0, 0, ''), -- Arathi Farmer
+(@CGUID+17, 0, 0, 1, 0, 0, ''), -- Arathi Farmer
+(@CGUID+18, 0, 0, 1, 0, 0, ''), -- Arathi Farmer
+(@CGUID+19, 0, 0, 1, 0, 0, ''), -- Arathi Farmer
+(@CGUID+20, 0, 0, 1, 69, 0, ''), -- Arathi Farmer
+(@CGUID+21, 0, 0, 1, 0, 0, ''), -- Forsaken Farmer
+(@CGUID+22, 0, 0, 1, 69, 0, ''), -- Forsaken Farmer
+(@CGUID+23, 0, 0, 1, 0, 0, ''), -- Forsaken Farmer
+(@CGUID+24, 0, 0, 1, 0, 0, ''), -- Forsaken Farmer
+(@CGUID+25, 0, 0, 1, 0, 0, ''), -- Forsaken Farmer
+(@CGUID+26, 0, 0, 1, 0, 0, ''), -- Forsaken Farmer
+(@CGUID+27, 0, 0, 1, 0, 0, ''), -- Forsaken Farmer
+(@CGUID+28, 0, 0, 1, 0, 0, ''), -- Forsaken Farmer
+(@CGUID+29, 0, 0, 1, 233, 0, ''), -- Arathi Lumberjack
+(@CGUID+30, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+31, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+32, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+33, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+34, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+35, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+36, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+37, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+38, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+39, 0, 0, 1, 234, 0, ''), -- Arathi Lumberjack
+(@CGUID+40, 0, 0, 1, 233, 0, ''), -- Arathi Blacksmith
+(@CGUID+41, 0, 0, 1, 233, 0, ''), -- Arathi Blacksmith
+(@CGUID+42, 0, 0, 1, 233, 0, ''), -- Arathi Blacksmith
+(@CGUID+43, 0, 0, 1, 233, 0, ''), -- Arathi Blacksmith
+(@CGUID+44, 0, 0, 1, 69, 0, ''), -- Arathi Blacksmith
+(@CGUID+45, 0, 0, 1, 69, 0, ''), -- Arathi Blacksmith
+(@CGUID+46, 0, 0, 1, 233, 0, ''), -- Arathi Blacksmith
+(@CGUID+47, 0, 0, 1, 233, 0, ''), -- Forsaken Blacksmith
+(@CGUID+48, 0, 0, 1, 233, 0, ''), -- Forsaken Blacksmith
+(@CGUID+49, 0, 0, 1, 233, 0, ''), -- Forsaken Blacksmith
+(@CGUID+50, 0, 0, 1, 233, 0, ''), -- Forsaken Blacksmith
+(@CGUID+51, 0, 0, 1, 69, 0, ''), -- Forsaken Blacksmith
+(@CGUID+52, 0, 1, 1, 0, 0, ''), -- Lady
+(@CGUID+53, 0, 0, 1, 0, 0, ''), -- Cleo
+(@CGUID+54, 0, 0, 1, 0, 0, '24244'), -- Underfoot
+(@CGUID+55, 0, 0, 1, 0, 0, ''), -- Spike
+(@CGUID+56, 0, 0, 1, 233, 0, ''), -- Arathi Miner
+(@CGUID+57, 0, 0, 1, 0, 0, ''), -- Arathi Miner
+(@CGUID+58, 0, 0, 1, 233, 0, ''), -- Arathi Miner
+(@CGUID+59, 0, 0, 1, 233, 0, ''), -- Arathi Miner
+(@CGUID+60, 0, 0, 1, 0, 0, ''), -- Arathi Miner
+(@CGUID+61, 0, 0, 1, 233, 0, ''), -- Arathi Miner
+(@CGUID+62, 0, 0, 1, 233, 0, ''), -- Arathi Miner
+(@CGUID+63, 0, 0, 1, 233, 0, ''), -- Arathi Miner
+(@CGUID+64, 0, 0, 1, 233, 0, ''), -- Arathi Miner
+(@CGUID+65, 0, 0, 1, 233, 0, ''), -- Arathi Miner
+(@CGUID+66, 0, 0, 1, 0, 0, ''), -- Arathi Miner
+(@CGUID+67, 0, 0, 1, 233, 0, ''), -- Forsaken Miner
+(@CGUID+68, 0, 0, 1, 233, 0, ''), -- Forsaken Miner
+(@CGUID+69, 0, 0, 1, 233, 0, ''), -- Forsaken Miner
+(@CGUID+70, 0, 0, 1, 233, 0, ''), -- Forsaken Miner
+(@CGUID+71, 0, 0, 1, 233, 0, ''), -- Forsaken Miner
+(@CGUID+72, 0, 0, 1, 233, 0, ''), -- Forsaken Miner
+(@CGUID+73, 0, 0, 1, 0, 0, ''), -- Forsaken Miner
+(@CGUID+74, 0, 0, 1, 233, 0, ''), -- Forsaken Miner
+(@CGUID+75, 0, 0, 1, 133, 0, ''), -- Forsaken Miner
+(@CGUID+76, 0, 0, 1, 0, 0, ''), -- Arathi Stablehand
+(@CGUID+77, 0, 0, 1, 69, 0, ''), -- Arathi Stablehand
+(@CGUID+78, 0, 0, 1, 0, 0, ''), -- Arathi Stablehand
+(@CGUID+79, 0, 0, 1, 0, 0, ''), -- Forsaken Stablehand
+(@CGUID+80, 0, 0, 1, 233, 0, ''), -- Forsaken Stablehand
+(@CGUID+81, 0, 0, 1, 0, 0, ''), -- Forsaken Stablehand
+(@CGUID+82, 0, 0, 1, 233, 0, ''), -- Forsaken Lumberjack
+(@CGUID+83, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+84, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+85, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+86, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+87, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+88, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+89, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+90, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+91, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+92, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+93, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+94, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+95, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+96, 0, 0, 1, 234, 0, ''), -- Forsaken Lumberjack
+(@CGUID+97, 0, 0, 1, 0, 0, ''), -- Arathi Horse
+(@CGUID+98, 0, 0, 1, 0, 0, ''), -- Arathi Horse
+(@CGUID+99, 0, 0, 1, 0, 0, ''), -- Arathi Horse
+(@CGUID+100, 0, 0, 1, 0, 0, ''), -- Arathi Horse
+(@CGUID+101, 0, 0, 1, 0, 0, ''), -- Arathi Horse
+(@CGUID+102, 0, 0, 1, 0, 0, ''), -- Arathi Horse
+(@CGUID+103, 0, 0, 1, 0, 0, ''), -- Arathi Horse
+(@CGUID+104, 0, 0, 1, 0, 0, ''), -- Forsaken Horse
+(@CGUID+105, 0, 0, 1, 0, 0, ''), -- Forsaken Horse
+(@CGUID+106, 0, 0, 1, 0, 0, ''), -- Forsaken Horse
+(@CGUID+107, 0, 0, 1, 0, 0, ''), -- Forsaken Horse
+(@CGUID+108, 0, 0, 1, 0, 0, ''), -- Forsaken Horse
+(@CGUID+109, 0, 0, 1, 0, 0, ''), -- Forsaken Horse
+(@CGUID+110, 0, 0, 1, 0, 0, ''); -- Forsaken Horse
 
--- INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 

@@ -512,14 +512,14 @@ DELETE FROM creature_spawn_data WHERE guid IN(@CGUID+3);
 INSERT INTO creature_spawn_data(Guid,Id) VALUES
 (@CGUID+3, 1);
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(19514, 0, 0, 1, 16, 0, 33554432, NULL), -- Al'ar
-(19622, 0, 0, 1, 16, 0, 0, NULL), -- Kael'thas Sunstrider
-(20037, 0, 0, 0, 0, 0, 0, '37318'), -- Tempest Falconer
-(20039, 0, 0, 0, 0, 0, 0, '19818'), -- Phoenix-Hawk - Double Attack
-(21271, 0, 0, 1, 16, 0, 0, '12787'); -- Infinity Blades
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(19514, 0, 0, 1, 0, 33554432, NULL), -- Al'ar
+(19622, 0, 0, 1, 0, 0, NULL), -- Kael'thas Sunstrider
+(20037, 0, 0, 0, 0, 0, '37318'), -- Tempest Falconer
+(20039, 0, 0, 0, 0, 0, '19818'), -- Phoenix-Hawk - Double Attack
+(21271, 0, 0, 1, 0, 0, '12787'); -- Infinity Blades
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- link "leaders" to bosses

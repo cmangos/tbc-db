@@ -184,43 +184,43 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+20, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+23, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+24, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+25, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+26, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+27, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+28, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+29, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+30, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+31, 0, 0, 1, 16, 173, 0, NULL), -- Coilfang Engineer
-(@CGUID+45, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+46, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+47, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+49, 0, 0, 0, 16, 30, 0, NULL), -- Dreghood Slave
-(@CGUID+50, 0, 0, 0, 16, 30, 0, NULL), -- Dreghood Slave
-(@CGUID+51, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+52, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+53, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+54, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+55, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+56, 0, 0, 0, 16, 378, 0, NULL), -- Dreghood Slave
-(@CGUID+57, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+58, 0, 0, 1, 16, 173, 0, NULL), -- Dreghood Slave
-(@CGUID+59, 0, 0, 0, 16, 378, 0, NULL), -- Dreghood Slave
-(@CGUID+121, 0, 0, 0, 16, 69, 0, NULL), -- Steamrigger Mechanic
-(@CGUID+122, 0, 0, 0, 16, 69, 0, NULL), -- Steamrigger Mechanic
-(@CGUID+123, 0, 0, 0, 16, 69, 0, NULL), -- Steamrigger Mechanic
-(@CGUID+174, 0, 0, 1, 16, 375, 0, NULL), -- Coilfang Sorceress
-(@CGUID+175, 0, 0, 1, 16, 375, 0, NULL), -- Coilfang Oracle
-(@CGUID+176, 0, 0, 1, 16, 375, 0, NULL), -- Coilfang Myrmidon
-(@CGUID+177, 0, 0, 1, 16, 375, 0, NULL); -- Coilfang Myrmidon
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+20, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+23, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+24, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+25, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+26, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+27, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+28, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+29, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+30, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+31, 0, 0, 1, 173, 0, NULL), -- Coilfang Engineer
+(@CGUID+45, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+46, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+47, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+49, 0, 0, 0, 30, 0, NULL), -- Dreghood Slave
+(@CGUID+50, 0, 0, 0, 30, 0, NULL), -- Dreghood Slave
+(@CGUID+51, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+52, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+53, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+54, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+55, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+56, 0, 0, 0, 378, 0, NULL), -- Dreghood Slave
+(@CGUID+57, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+58, 0, 0, 1, 173, 0, NULL), -- Dreghood Slave
+(@CGUID+59, 0, 0, 0, 378, 0, NULL), -- Dreghood Slave
+(@CGUID+121, 0, 0, 0, 69, 0, NULL), -- Steamrigger Mechanic
+(@CGUID+122, 0, 0, 0, 69, 0, NULL), -- Steamrigger Mechanic
+(@CGUID+123, 0, 0, 0, 69, 0, NULL), -- Steamrigger Mechanic
+(@CGUID+174, 0, 0, 1, 375, 0, NULL), -- Coilfang Sorceress
+(@CGUID+175, 0, 0, 1, 375, 0, NULL), -- Coilfang Oracle
+(@CGUID+176, 0, 0, 1, 375, 0, NULL), -- Coilfang Myrmidon
+(@CGUID+177, 0, 0, 1, 375, 0, NULL); -- Coilfang Myrmidon
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(17796, 0, 0, 1, 16, 0, 0, '18950'), -- Mekgineer Steamrigger
-(17797, 0, 0, 1, 16, 0, 0, '18950'), -- Hydromancer Thespia
-(21694, 0, 0, 0, 0, 0, 0, '18950'); -- Bog Overlord
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(17796, 0, 0, 1, 0, 0, '18950'), -- Mekgineer Steamrigger
+(17797, 0, 0, 1, 0, 0, '18950'), -- Hydromancer Thespia
+(21694, 0, 0, 0, 0, 0, '18950'); -- Bog Overlord
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+90, @CGUID+91, 1155), -- Coilfang Warrior -> Coilfang Warrior

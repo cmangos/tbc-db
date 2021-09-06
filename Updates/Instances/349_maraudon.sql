@@ -293,7 +293,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+576, 9, 600.013, 21.6183, -96.3128, 2.22686, 0, 0),
 (@CGUID+576, 10, 575.202, 46.2133, -96.3128, 2.10748, 0, 0);
 
-UPDATE creature_template SET MovementType=2 WHERE entry IN (13533);
 DELETE FROM creature_movement_template WHERE entry IN (12237,12242,12243,13533,13716);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 (12237, 0, 1, 632.101, -92.409, -57.4999, 0.240159, 0, 0),
@@ -523,52 +522,52 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (13716, 0, 9, 657.399, 78.0873, -86.8283, 2.10044, 0, 0),
 (13716, 0, 10, 654.905, 87.382, -86.8597, 5.06689, 4000, 1371603);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+182, 0, 33554432, 0, 0, 0, 0, '1785'), -- Putridus Shadowstalker
-(@CGUID+188, 0, 0, 1, 16, 0, 0, '13236'), -- Celebrian Dryad
-(@CGUID+202, 0, 0, 0, 0, 0, 0, '8876'), -- Princess Theradras
-(@CGUID+207, 0, 0, 0, 0, 0, 0, NULL), -- Primordial Behemoth
-(@CGUID+474, 0, 0, 0, 0, 0, 0, NULL), -- Cavern Lurker
-(@CGUID+486, 0, 0, 0, 0, 0, 0, NULL), -- Spirit of Maraudos
-(@CGUID+569, 0, 0, 0, 0, 0, 0, NULL); -- Rotgrip
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+182, 0, 33554432, 0, 0, 0, '1785'), -- Putridus Shadowstalker
+(@CGUID+188, 0, 0, 1, 0, 0, '13236'), -- Celebrian Dryad
+(@CGUID+202, 0, 0, 0, 0, 0, '8876'), -- Princess Theradras
+(@CGUID+207, 0, 0, 0, 0, 0, NULL), -- Primordial Behemoth
+(@CGUID+474, 0, 0, 0, 0, 0, NULL), -- Cavern Lurker
+(@CGUID+486, 0, 0, 0, 0, 0, NULL), -- Spirit of Maraudos
+(@CGUID+569, 0, 0, 0, 0, 0, NULL); -- Rotgrip
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(11784, 0, 0, 1, 16, 0, 0, NULL), -- Theradrim Guardian
-(11789, 0, 0, 1, 16, 0, 0, '8876'), -- Deep Borer
-(11790, 0, 0, 1, 16, 0, 0, '21061'), -- Putridus Satyr
-(11791, 0, 0, 1, 16, 0, 0, '3417 13299 21061'), -- Putridus Trickster
-(11792, 0, 33554432, 1, 16, 0, 0, '1785'), -- Putridus Shadowstalker
-(11793, 0, 0, 1, 16, 0, 0, '8601'), -- Celebrian Dryad
-(11794, 0, 0, 1, 16, 0, 0, NULL), -- Sister of Celebrian
-(12201, 0, 0, 1, 16, 0, 0, '8876'), -- Princess Theradras
-(12203, 0, 0, 1, 16, 0, 0, NULL), -- Landslide
-(12206, 0, 0, 1, 16, 0, 0, NULL), -- Primordial Behemoth
-(12207, 0, 0, 1, 16, 0, 0, '3417'), -- Thessala Hydra
-(12216, 0, 0, 1, 16, 0, 0, NULL), -- Poison Sprite
-(12217, 0, 0, 1, 16, 0, 0, NULL), -- Corruptor
-(12218, 0, 0, 1, 16, 0, 0, NULL), -- Vile Larva
-(12219, 0, 0, 1, 16, 0, 0, '8876'), -- Barbed Lasher
-(12220, 0, 0, 1, 16, 0, 0, '8876'), -- Constrictor Vine
-(12221, 0, 0, 1, 16, 0, 0, NULL), -- Noxious Slime
-(12222, 0, 0, 1, 16, 0, 0, '22638'), -- Creeping Sludge
-(12223, 0, 0, 1, 16, 0, 0, NULL), -- Cavern Lurker
-(12224, 0, 0, 1, 16, 0, 0, NULL), -- Cavern Shambler
-(12225, 0, 0, 1, 16, 0, 0, NULL), -- Celebras the Cursed
-(12236, 0, 0, 1, 16, 0, 0, NULL), -- Lord Vyletongue
-(12237, 0, 0, 1, 16, 0, 0, NULL), -- Meshlok the Harvester
-(12242, 0, 0, 1, 16, 0, 0, NULL), -- Spirit of Maraudos
-(12243, 0, 0, 1, 16, 0, 0, NULL), -- Spirit of Veng
-(12258, 0, 0, 1, 16, 0, 0, '8876'), -- Razorlash
-(13141, 0, 0, 1, 16, 0, 0, NULL), -- Deeprot Stomper
-(13142, 0, 0, 1, 16, 0, 0, '21337'), -- Deeprot Tangler
-(13282, 0, 0, 1, 16, 0, 0, NULL), -- Noxxion
-(13323, 0, 0, 1, 16, 0, 0, NULL), -- Subterranean Diemetradon
-(13533, 0, 0, 1, 16, 0, 0, '21862'), -- Spewed Larva
-(13596, 0, 0, 1, 16, 0, 0, NULL), -- Rotgrip
-(13599, 0, 0, 1, 16, 0, 0, '14104'), -- Stolid Snapjaw
-(13601, 0, 0, 1, 16, 0, 0, NULL), -- Tinkerer Gizlock
-(13743, 0, 0, 1, 16, 0, 0, NULL), -- Corrupt Force of Nature
-(15556, 0, 0, 1, 16, 0, 0, '25824'); -- Elder Splitrock
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(11784, 0, 0, 1, 0, 0, NULL), -- Theradrim Guardian
+(11789, 0, 0, 1, 0, 0, '8876'), -- Deep Borer
+(11790, 0, 0, 1, 0, 0, '21061'), -- Putridus Satyr
+(11791, 0, 0, 1, 0, 0, '3417 13299 21061'), -- Putridus Trickster
+(11792, 0, 33554432, 1, 0, 0, '1785'), -- Putridus Shadowstalker
+(11793, 0, 0, 1, 0, 0, '8601'), -- Celebrian Dryad
+(11794, 0, 0, 1, 0, 0, NULL), -- Sister of Celebrian
+(12201, 0, 0, 1, 0, 0, '8876'), -- Princess Theradras
+(12203, 0, 0, 1, 0, 0, NULL), -- Landslide
+(12206, 0, 0, 1, 0, 0, NULL), -- Primordial Behemoth
+(12207, 0, 0, 1, 0, 0, '3417'), -- Thessala Hydra
+(12216, 0, 0, 1, 0, 0, NULL), -- Poison Sprite
+(12217, 0, 0, 1, 0, 0, NULL), -- Corruptor
+(12218, 0, 0, 1, 0, 0, NULL), -- Vile Larva
+(12219, 0, 0, 1, 0, 0, '8876'), -- Barbed Lasher
+(12220, 0, 0, 1, 0, 0, '8876'), -- Constrictor Vine
+(12221, 0, 0, 1, 0, 0, NULL), -- Noxious Slime
+(12222, 0, 0, 1, 0, 0, '22638'), -- Creeping Sludge
+(12223, 0, 0, 1, 0, 0, NULL), -- Cavern Lurker
+(12224, 0, 0, 1, 0, 0, NULL), -- Cavern Shambler
+(12225, 0, 0, 1, 0, 0, NULL), -- Celebras the Cursed
+(12236, 0, 0, 1, 0, 0, NULL), -- Lord Vyletongue
+(12237, 0, 0, 1, 0, 0, NULL), -- Meshlok the Harvester
+(12242, 0, 0, 1, 0, 0, NULL), -- Spirit of Maraudos
+(12243, 0, 0, 1, 0, 0, NULL), -- Spirit of Veng
+(12258, 0, 0, 1, 0, 0, '8876'), -- Razorlash
+(13141, 0, 0, 1, 0, 0, NULL), -- Deeprot Stomper
+(13142, 0, 0, 1, 0, 0, '21337'), -- Deeprot Tangler
+(13282, 0, 0, 1, 0, 0, NULL), -- Noxxion
+(13323, 0, 0, 1, 0, 0, NULL), -- Subterranean Diemetradon
+(13533, 0, 0, 1, 0, 0, '21862'), -- Spewed Larva
+(13596, 0, 0, 1, 0, 0, NULL), -- Rotgrip
+(13599, 0, 0, 1, 0, 0, '14104'), -- Stolid Snapjaw
+(13601, 0, 0, 1, 0, 0, NULL), -- Tinkerer Gizlock
+(13743, 0, 0, 1, 0, 0, NULL), -- Corrupt Force of Nature
+(15556, 0, 0, 1, 0, 0, '25824'); -- Elder Splitrock
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+205, @CGUID+204, 3), -- Primordial Behemoth -> Primordial Behemoth

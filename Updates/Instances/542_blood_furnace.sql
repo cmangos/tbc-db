@@ -174,48 +174,48 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (17380, 0, 6, 456.328, 78.3051, 9.61487, 100, 0, 0),
 (17380, 0, 7, 456.328, 78.3051, 9.61487, 1.53589, 0, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+26, 0, 0, 1, 16, 0, 0, '31059'), -- Shadowmoon Warlock
-(@CGUID+31, 0, 0, 1, 16, 0, 0, '31059'), -- Shadowmoon Warlock
-(@CGUID+32, 0, 0, 1, 16, 0, 0, '31059'), -- Shadowmoon Warlock
-(@CGUID+33, 0, 0, 1, 16, 0, 0, '31059'), -- Shadowmoon Warlock
-(@CGUID+34, 0, 0, 1, 16, 0, 0, '31059'), -- Shadowmoon Warlock
-(@CGUID+43, 0, 0, 1, 16, 0, 0, '31059'), -- Shadowmoon Summoner
-(@CGUID+45, 0, 0, 1, 16, 0, 0, '31059'), -- Shadowmoon Summoner
-(@CGUID+47, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+48, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+49, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+50, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+51, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+52, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+53, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+54, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+55, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+56, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+57, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+58, 0, 0, 1, 16, 0, 0, '8876 31059'), -- Shadowmoon Adept
-(@CGUID+66, 0, 0, 1, 16, 13, 0, NULL), -- Nascent Fel Orc
-(@CGUID+68, 0, 0, 1, 16, 13, 0, NULL), -- Nascent Fel Orc
-(@CGUID+75, 0, 0, 1, 16, 13, 0, NULL), -- Nascent Fel Orc
-(@CGUID+79, 0, 0, 0, 0, 333, 0, NULL), -- Felguard Annihilator
-(@CGUID+81, 0, 0, 0, 0, 333, 0, NULL), -- Felguard Annihilator
-(@CGUID+85, 0, 0, 0, 16, 69, 0, NULL), -- Shadowmoon Technician
-(@CGUID+87, 0, 0, 1, 16, 0, 0, '31059'), -- Shadowmoon Technician
-(@CGUID+88, 0, 0, 0, 16, 69, 0, NULL), -- Shadowmoon Technician
-(@CGUID+90, 0, 0, 0, 16, 69, 0, NULL), -- Shadowmoon Technician
-(@CGUID+92, 0, 0, 0, 16, 69, 0, NULL), -- Shadowmoon Technician
-(@CGUID+94, 0, 0, 0, 16, 69, 0, NULL), -- Shadowmoon Technician
-(@CGUID+95, 0, 0, 0, 16, 69, 0, NULL), -- Shadowmoon Technician
-(@CGUID+144, 0, 0, 1, 16, 13, 0, NULL); -- Fel Orc Neophyte
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+26, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Warlock
+(@CGUID+31, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Warlock
+(@CGUID+32, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Warlock
+(@CGUID+33, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Warlock
+(@CGUID+34, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Warlock
+(@CGUID+43, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Summoner
+(@CGUID+45, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Summoner
+(@CGUID+47, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+48, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+49, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+50, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+51, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+52, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+53, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+54, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+55, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+56, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+57, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+58, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
+(@CGUID+66, 0, 0, 1, 13, 0, NULL), -- Nascent Fel Orc
+(@CGUID+68, 0, 0, 1, 13, 0, NULL), -- Nascent Fel Orc
+(@CGUID+75, 0, 0, 1, 13, 0, NULL), -- Nascent Fel Orc
+(@CGUID+79, 0, 0, 0, 333, 0, NULL), -- Felguard Annihilator
+(@CGUID+81, 0, 0, 0, 333, 0, NULL), -- Felguard Annihilator
+(@CGUID+85, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
+(@CGUID+87, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Technician
+(@CGUID+88, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
+(@CGUID+90, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
+(@CGUID+92, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
+(@CGUID+94, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
+(@CGUID+95, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
+(@CGUID+144, 0, 0, 1, 13, 0, NULL); -- Fel Orc Neophyte
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(17370, 0, 0, 1, 16, 333, 0, NULL), -- Laughing Skull Enforcer
-(17380, 0, 0, 1, 16, 0, 0, NULL), -- Broggok
-(17397, 0, 0, 1, 16, 0, 0, '8876'), -- Shadowmoon Adept
-(17477, 0, 0, 1, 16, 0, 0, '35766'), -- Hellfire Imp
-(17491, 0, 0, 1, 16, 0, 0, '32199'), -- Laughing Skull Rogue
-(17653, 0, 0, 1, 16, 0, 0, NULL), -- Shadowmoon Channeler
-(21174, 0, 0, 1, 16, 0, 0, '30205'); -- Magtheridon
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(17370, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
+(17380, 0, 0, 1, 0, 0, NULL), -- Broggok
+(17397, 0, 0, 1, 0, 0, '8876'), -- Shadowmoon Adept
+(17477, 0, 0, 1, 0, 0, '35766'), -- Hellfire Imp
+(17491, 0, 0, 1, 0, 0, '32199'), -- Laughing Skull Rogue
+(17653, 0, 0, 1, 0, 0, NULL), -- Shadowmoon Channeler
+(21174, 0, 0, 1, 0, 0, '30205'); -- Magtheridon
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+12, @CGUID+9, 1155), -- Laughing Skull Enforcer -> Laughing Skull Enforcer

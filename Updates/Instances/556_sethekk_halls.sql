@@ -392,26 +392,26 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (18956, 0, 5, -71.2708, 164.192, 0.00886592, 4.81269, 0, 0),
 (18956, 0, 6, -69.2754, 127.699, 0.00747229, 5.26037, 5000, 1895602);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+1, 0, 0, 1, 16, 0, 0, NULL), -- Sethekk Initiate
-(@CGUID+2, 0, 0, 1, 16, 0, 0, NULL), -- Sethekk Initiate
-(@CGUID+3, 0, 0, 1, 16, 0, 0, NULL), -- Sethekk Initiate
-(@CGUID+4, 0, 0, 1, 16, 0, 0, NULL), -- Sethekk Initiate
-(@CGUID+5, 0, 0, 1, 16, 0, 0, NULL), -- Sethekk Initiate
-(@CGUID+6, 0, 0, 1, 16, 0, 0, NULL), -- Sethekk Initiate
-(@CGUID+33, 0, 0, 1, 0, 333, 0, NULL), -- Sethekk Ravenguard
-(@CGUID+34, 0, 0, 1, 0, 333, 0, NULL), -- Sethekk Ravenguard
-(@CGUID+39, 0, 0, 1, 16, 0, 0, NULL), -- Sethekk Guard
-(@CGUID+40, 0, 0, 1, 0, 333, 0, NULL), -- Sethekk Guard
-(@CGUID+41, 0, 0, 1, 0, 333, 0, NULL); -- Sethekk Guard
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+1, 0, 0, 1, 0, 0, NULL), -- Sethekk Initiate
+(@CGUID+2, 0, 0, 1, 0, 0, NULL), -- Sethekk Initiate
+(@CGUID+3, 0, 0, 1, 0, 0, NULL), -- Sethekk Initiate
+(@CGUID+4, 0, 0, 1, 0, 0, NULL), -- Sethekk Initiate
+(@CGUID+5, 0, 0, 1, 0, 0, NULL), -- Sethekk Initiate
+(@CGUID+6, 0, 0, 1, 0, 0, NULL), -- Sethekk Initiate
+(@CGUID+33, 0, 0, 1, 333, 0, NULL), -- Sethekk Ravenguard
+(@CGUID+34, 0, 0, 1, 333, 0, NULL), -- Sethekk Ravenguard
+(@CGUID+39, 0, 0, 1, 0, 0, NULL), -- Sethekk Guard
+(@CGUID+40, 0, 0, 1, 333, 0, NULL), -- Sethekk Guard
+(@CGUID+41, 0, 0, 1, 333, 0, NULL); -- Sethekk Guard
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(18319, 0, 0, 1, 16, 0, 0, '37509'), -- Time-Lost Scryer
-(18320, 0, 0, 1, 16, 0, 0, '37509'), -- Time-Lost Shadowmage
-(18327, 0, 0, 1, 16, 0, 0, '37509'), -- Time-Lost Scryer
-(18472, 0, 0, 1, 0, 0, 0, '18950'), -- Darkweaver Syth
-(18956, 0, 0, 1, 0, 0, 0, NULL), -- Lakka
-(23132, 0, 0, 1, 16, 0, 0, '9205'); -- Brood of Anzu
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(18319, 0, 0, 1, 0, 0, '37509'), -- Time-Lost Scryer
+(18320, 0, 0, 1, 0, 0, '37509'), -- Time-Lost Shadowmage
+(18327, 0, 0, 1, 0, 0, '37509'), -- Time-Lost Scryer
+(18472, 0, 0, 1, 0, 0, '18950'), -- Darkweaver Syth
+(18956, 0, 0, 1, 0, 0, NULL), -- Lakka
+(23132, 0, 0, 1, 0, 0, '9205'); -- Brood of Anzu
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+39, @CGUID+42, 1155), -- Sethekk Guard -> Sethekk Guard

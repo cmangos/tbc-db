@@ -50,40 +50,40 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (8497, 1, 1, -512.015, 276.134, -90.827, 6.2808, 0, 0),
 (8497, 1, 2, -489.960, 275.129, -90.751, 6.2808, 1000, 849701);
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(5226, 0, 0, 1, 16, 0, 0, '8601'), -- Murk Worm
-(5228, 0, 0, 1, 16, 0, 0, NULL), -- Saturated Ooze
-(5256, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Warrior
-(5259, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Witch Doctor
-(5263, 0, 0, 1, 16, 0, 0, NULL), -- Mummified Atal'ai
-(5267, 0, 0, 1, 16, 0, 0, '8876'), -- Unliving Atal'ai
-(5269, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Priest
-(5270, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Corpse Eater
-(5271, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Deathwalker
-(5273, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai High Priest
-(5277, 0, 0, 1, 16, 0, 0, '12099'), -- Nightmare Scalebane
-(5280, 0, 0, 1, 16, 0, 0, NULL), -- Nightmare Wyrmkin
-(5283, 0, 0, 1, 16, 0, 0, NULL), -- Nightmare Wanderer
-(5291, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Frostwing
-(5708, 0, 0, 1, 16, 0, 0, NULL), -- Spawn of Hakkar
-(5709, 0, 0, 1, 16, 0, 0, '8876'), -- Shade of Eranikus
-(5710, 0, 0, 1, 16, 0, 0, NULL), -- Jammal'an the Prophet
-(5711, 0, 0, 1, 16, 0, 0, NULL), -- Ogom the Wretched
-(5712, 0, 0, 1, 16, 0, 0, NULL), -- Zolo
-(5713, 0, 0, 1, 16, 0, 0, NULL), -- Gasher
-(5714, 0, 0, 1, 16, 0, 0, NULL), -- Loro
-(5715, 0, 0, 1, 16, 0, 0, NULL), -- Hukku
-(5716, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Lor
-(5717, 0, 0, 1, 16, 0, 0, NULL), -- Mijan
-(5719, 0, 0, 1, 16, 0, 0, NULL), -- Morphaz
-(5722, 0, 0, 1, 16, 0, 0, NULL), -- Hazzas
-(8311, 0, 0, 1, 16, 0, 0, NULL), -- Slime Maggot
-(8318, 0, 0, 1, 16, 0, 0, NULL), -- Atal'ai Slave
-(8319, 0, 0, 1, 16, 0, 0, NULL), -- Nightmare Whelp
-(8384, 0, 0, 1, 16, 0, 0, NULL), -- Deep Lurker
-(15593, 0, 0, 1, 16, 0, 0, '25824'); -- Elder Starsong
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(5226, 0, 0, 1, 0, 0, '8601'), -- Murk Worm
+(5228, 0, 0, 1, 0, 0, NULL), -- Saturated Ooze
+(5256, 0, 0, 1, 0, 0, NULL), -- Atal'ai Warrior
+(5259, 0, 0, 1, 0, 0, NULL), -- Atal'ai Witch Doctor
+(5263, 0, 0, 1, 0, 0, NULL), -- Mummified Atal'ai
+(5267, 0, 0, 1, 0, 0, '8876'), -- Unliving Atal'ai
+(5269, 0, 0, 1, 0, 0, NULL), -- Atal'ai Priest
+(5270, 0, 0, 1, 0, 0, NULL), -- Atal'ai Corpse Eater
+(5271, 0, 0, 1, 0, 0, NULL), -- Atal'ai Deathwalker
+(5273, 0, 0, 1, 0, 0, NULL), -- Atal'ai High Priest
+(5277, 0, 0, 1, 0, 0, '12099'), -- Nightmare Scalebane
+(5280, 0, 0, 1, 0, 0, NULL), -- Nightmare Wyrmkin
+(5283, 0, 0, 1, 0, 0, NULL), -- Nightmare Wanderer
+(5291, 0, 0, 1, 0, 0, NULL), -- Hakkari Frostwing
+(5708, 0, 0, 1, 0, 0, NULL), -- Spawn of Hakkar
+(5709, 0, 0, 1, 0, 0, '8876'), -- Shade of Eranikus
+(5710, 0, 0, 1, 0, 0, NULL), -- Jammal'an the Prophet
+(5711, 0, 0, 1, 0, 0, NULL), -- Ogom the Wretched
+(5712, 0, 0, 1, 0, 0, NULL), -- Zolo
+(5713, 0, 0, 1, 0, 0, NULL), -- Gasher
+(5714, 0, 0, 1, 0, 0, NULL), -- Loro
+(5715, 0, 0, 1, 0, 0, NULL), -- Hukku
+(5716, 0, 0, 1, 0, 0, NULL), -- Zul'Lor
+(5717, 0, 0, 1, 0, 0, NULL), -- Mijan
+(5719, 0, 0, 1, 0, 0, NULL), -- Morphaz
+(5722, 0, 0, 1, 0, 0, NULL), -- Hazzas
+(8311, 0, 0, 1, 0, 0, NULL), -- Slime Maggot
+(8318, 0, 0, 1, 0, 0, NULL), -- Atal'ai Slave
+(8319, 0, 0, 1, 0, 0, NULL), -- Nightmare Whelp
+(8384, 0, 0, 1, 0, 0, NULL), -- Deep Lurker
+(15593, 0, 0, 1, 0, 0, '25824'); -- Elder Starsong
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+113, @CGUID+103, 3), -- Nightmare Wyrmkin -> Nightmare Scalebane

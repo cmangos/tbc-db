@@ -557,52 +557,52 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (3671, 0, 1, 15.3449, 297.176, -87.7016, 2.80998, 1000, 367101); -- Lady Anacondra
 
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+68, 0, 0, 0, 0, 0, 0, '7940'), -- Evolving Ectoplasm
-(@CGUID+69, 0, 0, 0, 0, 0, 0, '7940'), -- Evolving Ectoplasm
-(@CGUID+76, 0, 0, 0, 0, 0, 0, NULL), -- Kresh
-(@CGUID+96, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+99, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+101, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+105, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+109, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+114, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+117, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+118, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+119, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+120, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+121, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+123, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+128, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+139, 0, 8, 1, 16, 0, 0, ''), -- Druid of the Fang
-(@CGUID+166, 0, 0, 0, 0, 0, 0, NULL), -- Deviate Crocolisk
-(@CGUID+264, 0, 0, 0, 0, 0, 0, NULL), -- Deviate Shambler
-(@CGUID+278, 0, 0, 0, 0, 0, 0, NULL); -- Deviate Shambler
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+68, 0, 0, 0, 0, 0, '7940'), -- Evolving Ectoplasm
+(@CGUID+69, 0, 0, 0, 0, 0, '7940'), -- Evolving Ectoplasm
+(@CGUID+76, 0, 0, 0, 0, 0, NULL), -- Kresh
+(@CGUID+96, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+99, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+101, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+105, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+109, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+114, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+117, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+118, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+119, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+120, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+121, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+123, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+128, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+139, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
+(@CGUID+166, 0, 0, 0, 0, 0, NULL), -- Deviate Crocolisk
+(@CGUID+264, 0, 0, 0, 0, 0, NULL), -- Deviate Shambler
+(@CGUID+278, 0, 0, 0, 0, 0, NULL); -- Deviate Shambler
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(3636, 0, 0, 1, 16, 0, 0, '8876'), -- Deviate Ravager
-(3637, 0, 0, 1, 16, 0, 0, NULL), -- Deviate Guardian
-(3640, 0, 0, 1, 16, 0, 0, '7940'), -- Evolving Ectoplasm
-(3653, 0, 0, 1, 16, 0, 0, NULL), -- Kresh
-(3669, 0, 0, 1, 16, 0, 0, '3616'), -- Lord Cobrahn
-(3670, 0, 0, 1, 16, 0, 0, NULL), -- Lord Pythas
-(3671, 0, 8, 1, 16, 0, 0, ''), -- Lady Anacondra
-(3673, 0, 0, 1, 16, 0, 0, NULL), -- Lord Serpentis
-(3674, 0, 0, 1, 16, 0, 0, NULL), -- Skum
-(3678, 0, 0, 1, 16, 0, 0, NULL), -- Disciple of Naralex
-(3679, 0, 3, 1, 16, 0, 0, NULL), -- Naralex
-(3835, 0, 0, 1, 16, 0, 0, NULL), -- Biletoad
-(3840, 0, 0, 1, 16, 0, 0, NULL), -- Druid of the Fang
-(5048, 0, 0, 1, 16, 0, 0, '3616'), -- Deviate Adder
-(5053, 0, 0, 1, 16, 0, 0, NULL), -- Deviate Crocolisk
-(5055, 0, 0, 1, 16, 0, 0, NULL), -- Deviate Lasher
-(5056, 0, 0, 1, 16, 0, 0, NULL), -- Deviate Dreadfang
-(5755, 0, 0, 1, 16, 0, 0, NULL), -- Deviate Viper
-(5756, 0, 0, 1, 16, 0, 0, NULL), -- Deviate Venomwing
-(5761, 0, 0, 1, 16, 0, 0, NULL), -- Deviate Shambler
-(5775, 0, 0, 1, 16, 0, 0, NULL), -- Verdan the Everliving
-(5912, 0, 0, 1, 16, 0, 0, NULL), -- Deviate Faerie Dragon
-(8886, 0, 0, 1, 16, 0, 0, NULL); -- Deviate Python
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(3636, 0, 0, 1, 0, 0, '8876'), -- Deviate Ravager
+(3637, 0, 0, 1, 0, 0, NULL), -- Deviate Guardian
+(3640, 0, 0, 1, 0, 0, '7940'), -- Evolving Ectoplasm
+(3653, 0, 0, 1, 0, 0, NULL), -- Kresh
+(3669, 0, 0, 1, 0, 0, '3616'), -- Lord Cobrahn
+(3670, 0, 0, 1, 0, 0, NULL), -- Lord Pythas
+(3671, 0, 8, 1, 0, 0, ''), -- Lady Anacondra
+(3673, 0, 0, 1, 0, 0, NULL), -- Lord Serpentis
+(3674, 0, 0, 1, 0, 0, NULL), -- Skum
+(3678, 0, 0, 1, 0, 0, NULL), -- Disciple of Naralex
+(3679, 0, 3, 1, 0, 0, NULL), -- Naralex
+(3835, 0, 0, 1, 0, 0, NULL), -- Biletoad
+(3840, 0, 0, 1, 0, 0, NULL), -- Druid of the Fang
+(5048, 0, 0, 1, 0, 0, '3616'), -- Deviate Adder
+(5053, 0, 0, 1, 0, 0, NULL), -- Deviate Crocolisk
+(5055, 0, 0, 1, 0, 0, NULL), -- Deviate Lasher
+(5056, 0, 0, 1, 0, 0, NULL), -- Deviate Dreadfang
+(5755, 0, 0, 1, 0, 0, NULL), -- Deviate Viper
+(5756, 0, 0, 1, 0, 0, NULL), -- Deviate Venomwing
+(5761, 0, 0, 1, 0, 0, NULL), -- Deviate Shambler
+(5775, 0, 0, 1, 0, 0, NULL), -- Verdan the Everliving
+(5912, 0, 0, 1, 0, 0, NULL), -- Deviate Faerie Dragon
+(8886, 0, 0, 1, 0, 0, NULL); -- Deviate Python
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 

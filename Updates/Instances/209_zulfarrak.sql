@@ -636,56 +636,56 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (10082, 0, 44, 1691.19, 891.914, 9.00179, 100, 0, 0),
 (10082, 0, 45, 1698.88, 886.521, 9.00179, 100, 0, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+6, 0, 1, 1, 16, 0, 0, NULL), -- Sandfury Shadowcaster
-(@CGUID+9, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Shadowcaster
-(@CGUID+11, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Shadowcaster
-(@CGUID+13, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Shadowcaster
-(@CGUID+19, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Shadowcaster
-(@CGUID+21, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Shadowcaster
-(@CGUID+32, 0, 0, 1, 16, 133, 0, NULL), -- Sandfury Blood Drinker
-(@CGUID+88, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Witch Doctor
-(@CGUID+89, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Witch Doctor
-(@CGUID+90, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Witch Doctor
-(@CGUID+91, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Witch Doctor
-(@CGUID+99, 0, 0, 0, 0, 0, 0, NULL), -- Sandfury Witch Doctor
-(@CGUID+105, 0, 8, 1, 16, 0, 0, NULL), -- Sandfury Witch Doctor
-(@CGUID+112, 0, 8, 1, 16, 0, 0, '8734'), -- Sandfury Witch Doctor
-(@CGUID+131, 0, 0, 0, 0, 0, 0, NULL), -- Sandfury Shadowhunter
-(@CGUID+139, 0, 0, 0, 0, 0, 0, NULL), -- Sandfury Shadowhunter
-(@CGUID+151, 0, 8, 1, 16, 0, 0, NULL), -- Sandfury Shadowhunter
-(@CGUID+153, 0, 8, 1, 16, 0, 0, NULL), -- Sandfury Soul Eater
-(@CGUID+158, 0, 0, 0, 0, 0, 0, NULL), -- Sandfury Soul Eater
-(@CGUID+236, 0, 0, 0, 0, 0, 0, NULL); -- Theka the Martyr
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+6, 0, 1, 1, 0, 0, NULL), -- Sandfury Shadowcaster
+(@CGUID+9, 0, 8, 1, 0, 0, '8734'), -- Sandfury Shadowcaster
+(@CGUID+11, 0, 8, 1, 0, 0, '8734'), -- Sandfury Shadowcaster
+(@CGUID+13, 0, 8, 1, 0, 0, '8734'), -- Sandfury Shadowcaster
+(@CGUID+19, 0, 8, 1, 0, 0, '8734'), -- Sandfury Shadowcaster
+(@CGUID+21, 0, 8, 1, 0, 0, '8734'), -- Sandfury Shadowcaster
+(@CGUID+32, 0, 0, 1, 133, 0, NULL), -- Sandfury Blood Drinker
+(@CGUID+88, 0, 8, 1, 0, 0, '8734'), -- Sandfury Witch Doctor
+(@CGUID+89, 0, 8, 1, 0, 0, '8734'), -- Sandfury Witch Doctor
+(@CGUID+90, 0, 8, 1, 0, 0, '8734'), -- Sandfury Witch Doctor
+(@CGUID+91, 0, 8, 1, 0, 0, '8734'), -- Sandfury Witch Doctor
+(@CGUID+99, 0, 0, 0, 0, 0, NULL), -- Sandfury Witch Doctor
+(@CGUID+105, 0, 8, 1, 0, 0, NULL), -- Sandfury Witch Doctor
+(@CGUID+112, 0, 8, 1, 0, 0, '8734'), -- Sandfury Witch Doctor
+(@CGUID+131, 0, 0, 0, 0, 0, NULL), -- Sandfury Shadowhunter
+(@CGUID+139, 0, 0, 0, 0, 0, NULL), -- Sandfury Shadowhunter
+(@CGUID+151, 0, 8, 1, 0, 0, NULL), -- Sandfury Shadowhunter
+(@CGUID+153, 0, 8, 1, 0, 0, NULL), -- Sandfury Soul Eater
+(@CGUID+158, 0, 0, 0, 0, 0, NULL), -- Sandfury Soul Eater
+(@CGUID+236, 0, 0, 0, 0, 0, NULL); -- Theka the Martyr
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(5648, 0, 0, 1, 16, 0, 0, NULL), -- Sandfury Shadowcaster
-(5649, 0, 0, 1, 16, 0, 0, NULL), -- Sandfury Blood Drinker
-(5650, 0, 0, 1, 16, 0, 0, NULL), -- Sandfury Witch Doctor
-(7246, 0, 0, 1, 16, 0, 0, NULL), -- Sandfury Shadowhunter
-(7247, 0, 0, 1, 16, 0, 0, NULL), -- Sandfury Soul Eater
-(7267, 0, 0, 1, 16, 0, 0, '11838'), -- Chief Ukorz Sandscalp
-(7268, 0, 0, 1, 16, 0, 0, '7276 8876'), -- Sandfury Guardian
-(7269, 0, 0, 1, 16, 0, 0, NULL), -- Scarab
-(7271, 0, 0, 1, 16, 193, 0, NULL), -- Witch Doctor Zum'rah
-(7272, 0, 0, 1, 16, 0, 0, NULL), -- Theka the Martyr
-(7274, 0, 0, 1, 16, 0, 0, NULL), -- Sandfury Executioner
-(7604, 0, 0, 1, 16, 0, 0, NULL), -- Sergeant Bly
-(7605, 0, 0, 1, 16, 0, 0, '3616'), -- Raven
-(7606, 0, 0, 1, 16, 0, 0, NULL), -- Oro Eyegouge
-(7607, 0, 0, 1, 16, 0, 0, NULL), -- Weegli Blastfuse
-(7608, 0, 0, 1, 16, 0, 0, NULL), -- Murta Grimgut
-(7795, 0, 0, 1, 16, 0, 0, NULL), -- Hydromancer Velratha
-(7797, 0, 0, 1, 16, 0, 0, NULL), -- Ruuzlu
-(8095, 0, 0, 1, 16, 0, 0, NULL), -- Sul'lithuz Sandcrawler
-(8120, 0, 0, 1, 16, 0, 0, NULL), -- Sul'lithuz Abomination
-(8127, 0, 0, 1, 16, 0, 0, NULL), -- Antu'sul
-(8130, 0, 0, 1, 16, 0, 0, NULL), -- Sul'lithuz Hatchling
-(8138, 0, 0, 1, 16, 0, 0, '8876'), -- Sul'lithuz Broodling
-(10080, 0, 0, 1, 16, 0, 0, NULL), -- Sandarr Dunereaver
-(10081, 0, 0, 1, 16, 0, 0, '12254'), -- Dustwraith
-(10082, 0, 0, 1, 16, 0, 0, NULL), -- Zerillis
-(15578, 0, 0, 1, 16, 0, 0, '25824'); -- Elder Wildmane
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(5648, 0, 0, 1, 0, 0, NULL), -- Sandfury Shadowcaster
+(5649, 0, 0, 1, 0, 0, NULL), -- Sandfury Blood Drinker
+(5650, 0, 0, 1, 0, 0, NULL), -- Sandfury Witch Doctor
+(7246, 0, 0, 1, 0, 0, NULL), -- Sandfury Shadowhunter
+(7247, 0, 0, 1, 0, 0, NULL), -- Sandfury Soul Eater
+(7267, 0, 0, 1, 0, 0, '11838'), -- Chief Ukorz Sandscalp
+(7268, 0, 0, 1, 0, 0, '7276 8876'), -- Sandfury Guardian
+(7269, 0, 0, 1, 0, 0, NULL), -- Scarab
+(7271, 0, 0, 1, 193, 0, NULL), -- Witch Doctor Zum'rah
+(7272, 0, 0, 1, 0, 0, NULL), -- Theka the Martyr
+(7274, 0, 0, 1, 0, 0, NULL), -- Sandfury Executioner
+(7604, 0, 0, 1, 0, 0, NULL), -- Sergeant Bly
+(7605, 0, 0, 1, 0, 0, '3616'), -- Raven
+(7606, 0, 0, 1, 0, 0, NULL), -- Oro Eyegouge
+(7607, 0, 0, 1, 0, 0, NULL), -- Weegli Blastfuse
+(7608, 0, 0, 1, 0, 0, NULL), -- Murta Grimgut
+(7795, 0, 0, 1, 0, 0, NULL), -- Hydromancer Velratha
+(7797, 0, 0, 1, 0, 0, NULL), -- Ruuzlu
+(8095, 0, 0, 1, 0, 0, NULL), -- Sul'lithuz Sandcrawler
+(8120, 0, 0, 1, 0, 0, NULL), -- Sul'lithuz Abomination
+(8127, 0, 0, 1, 0, 0, NULL), -- Antu'sul
+(8130, 0, 0, 1, 0, 0, NULL), -- Sul'lithuz Hatchling
+(8138, 0, 0, 1, 0, 0, '8876'), -- Sul'lithuz Broodling
+(10080, 0, 0, 1, 0, 0, NULL), -- Sandarr Dunereaver
+(10081, 0, 0, 1, 0, 0, '12254'), -- Dustwraith
+(10082, 0, 0, 1, 0, 0, NULL), -- Zerillis
+(15578, 0, 0, 1, 0, 0, '25824'); -- Elder Wildmane
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+275, @CGUID+154, 515), -- Sandfury Blood Drinker -> Sandfury Witch Doctor
@@ -1111,7 +1111,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (760801, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Murta Grimgut - Stop Movement'),
 (760802, 0, 1, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Murta Grimgut - Emote Cheer'),
 (760809, 0, 15, 11365, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Raven - Cast Bly''s Band''s Escape'),
-(727301, 0, 5, 46, 256, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gahzrilla - Remove Unit Flag IMMUNE_TO_PLAYER'),
+(727301, 0, 48, 256, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gahzrilla - Remove UNIT_FLAG_IMMUNE_TO_PLAYER'),
 (727301, 0, 20, 1, 15, 0, 0, 0, 0x08, 0, 0, 0, 0, 0, 0, 0, 0, 'Gahzrilla - movement changed to 1:random');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

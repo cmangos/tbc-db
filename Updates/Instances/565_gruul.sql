@@ -45,16 +45,16 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+13, 0, 1, 0, 0, 0, 0, NULL), -- Group 3
-(@CGUID+14, 0, 1, 0, 0, 0, 0, NULL), -- Group 3
-(@CGUID+16, 0, 0, 0, 0, 375, 0, NULL), -- Group 4
-(@CGUID+17, 0, 0, 0, 0, 375, 0, NULL), -- Group 4
-(@CGUID+18, 0, 0, 0, 0, 375, 0, NULL); -- Group 4
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+13, 0, 1, 0, 0, 0, NULL), -- Group 3
+(@CGUID+14, 0, 1, 0, 0, 0, NULL), -- Group 3
+(@CGUID+16, 0, 0, 0, 375, 0, NULL), -- Group 4
+(@CGUID+17, 0, 0, 0, 375, 0, NULL), -- Group 4
+(@CGUID+18, 0, 0, 0, 375, 0, NULL); -- Group 4
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(19389, 0, 0, 1, 16, 0, 0, NULL), -- Lair Brute
-(21350, 0, 0, 1, 16, 0, 0, NULL); -- Gronn-Priest
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(19389, 0, 0, 1, 0, 0, NULL), -- Lair Brute
+(21350, 0, 0, 1, 0, 0, NULL); -- Gronn-Priest
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+2, @CGUID+1, 1159), -- Krosh Firehand -> High King Maulgar

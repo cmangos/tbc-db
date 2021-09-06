@@ -81,71 +81,71 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+26, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Soldier
-(@CGUID+40, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Gallant
-(@CGUID+59, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Gallant
-(@CGUID+67, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Evoker
-(@CGUID+68, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Evoker
-(@CGUID+139, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Adept
-(@CGUID+167, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Chaplain
-(@CGUID+184, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Wizard
-(@CGUID+189, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Wizard
-(@CGUID+212, 0, 8, 1, 16, 0, 0, NULL), -- Scarlet Champion
-(@CGUID+215, 0, 8, 1, 16, 0, 0, NULL), -- Scarlet Champion
-(@CGUID+217, 0, 8, 1, 16, 0, 0, NULL), -- Scarlet Champion
-(@CGUID+218, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Champion
-(@CGUID+222, 0, 0, 1, 16, 0, 0, '1006'), -- Scarlet Abbot
-(@CGUID+224, 0, 8, 1, 16, 0, 0, NULL), -- Scarlet Abbot
-(@CGUID+234, 0, 0, 0, 0, 0, 0, NULL), -- Scarlet Torturer
-(@CGUID+288, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(@CGUID+289, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(@CGUID+290, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(@CGUID+291, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(@CGUID+292, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(@CGUID+293, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(@CGUID+294, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(@CGUID+295, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(@CGUID+296, 0, 8, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(@CGUID+335, 0, 0, 0, 0, 0, 0, NULL); -- Arcanist Doan
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+26, 0, 0, 0, 0, 0, NULL), -- Scarlet Soldier
+(@CGUID+40, 0, 0, 0, 0, 0, NULL), -- Scarlet Gallant
+(@CGUID+59, 0, 0, 0, 0, 0, NULL), -- Scarlet Gallant
+(@CGUID+67, 0, 0, 0, 0, 0, NULL), -- Scarlet Evoker
+(@CGUID+68, 0, 0, 0, 0, 0, NULL), -- Scarlet Evoker
+(@CGUID+139, 0, 0, 0, 0, 0, NULL), -- Scarlet Adept
+(@CGUID+167, 0, 0, 1, 0, 0, NULL), -- Scarlet Chaplain
+(@CGUID+184, 0, 0, 0, 0, 0, NULL), -- Scarlet Wizard
+(@CGUID+189, 0, 0, 0, 0, 0, NULL), -- Scarlet Wizard
+(@CGUID+212, 0, 8, 1, 0, 0, NULL), -- Scarlet Champion
+(@CGUID+215, 0, 8, 1, 0, 0, NULL), -- Scarlet Champion
+(@CGUID+217, 0, 8, 1, 0, 0, NULL), -- Scarlet Champion
+(@CGUID+218, 0, 0, 0, 0, 0, NULL), -- Scarlet Champion
+(@CGUID+222, 0, 0, 1, 0, 0, '1006'), -- Scarlet Abbot
+(@CGUID+224, 0, 8, 1, 0, 0, NULL), -- Scarlet Abbot
+(@CGUID+234, 0, 0, 0, 0, 0, NULL), -- Scarlet Torturer
+(@CGUID+288, 0, 8, 1, 0, 0, '8876'), -- Scarlet Monk
+(@CGUID+289, 0, 8, 1, 0, 0, '8876'), -- Scarlet Monk
+(@CGUID+290, 0, 8, 1, 0, 0, '8876'), -- Scarlet Monk
+(@CGUID+291, 0, 8, 1, 0, 0, '8876'), -- Scarlet Monk
+(@CGUID+292, 0, 8, 1, 0, 0, '8876'), -- Scarlet Monk
+(@CGUID+293, 0, 8, 1, 0, 0, '8876'), -- Scarlet Monk
+(@CGUID+294, 0, 8, 1, 0, 0, '8876'), -- Scarlet Monk
+(@CGUID+295, 0, 8, 1, 0, 0, '8876'), -- Scarlet Monk
+(@CGUID+296, 0, 8, 1, 0, 0, '8876'), -- Scarlet Monk
+(@CGUID+335, 0, 0, 0, 0, 0, NULL); -- Arcanist Doan
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(3974, 0, 0, 1, 16, 0, 0, NULL), -- Houndmaster Loksey
-(3975, 0, 0, 1, 16, 0, 0, NULL), -- Herod
-(3976, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Commander Mograine
-(3977, 0, 0, 1, 16, 0, 0, NULL), -- High Inquisitor Whitemane
-(3981, 0, 7, 1, 16, 0, 0, NULL), -- Vorrel Sengutz
-(3983, 0, 0, 1, 16, 0, 0, '8981'), -- Interrogator Vishas
-(4283, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Sentry
-(4286, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Soldier
-(4287, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Gallant
-(4288, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Beastmaster
-(4289, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Evoker
-(4290, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Guardsman
-(4291, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Diviner
-(4292, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Protector
-(4294, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Sorcerer
-(4295, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Myrmidon
-(4296, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Adept
-(4297, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Conjuror
-(4298, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Defender
-(4299, 0, 0, 1, 16, 0, 0, '1006'), -- Scarlet Chaplain
-(4300, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Wizard
-(4301, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Centurion
-(4302, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Champion
-(4303, 0, 8, 1, 16, 0, 0, '1006'), -- Scarlet Abbot
-(4304, 0, 0, 1, 16, 0, 0, NULL), -- Scarlet Tracking Hound
-(4306, 0, 0, 1, 16, 0, 0, '9276'), -- Scarlet Torturer
-(4308, 0, 0, 1, 16, 0, 0, NULL), -- Unfettered Spirit
-(4540, 0, 0, 1, 16, 0, 0, '8876'), -- Scarlet Monk
-(4542, 0, 0, 1, 16, 0, 0, NULL), -- High Inquisitor Fairbanks
-(4543, 0, 0, 1, 16, 0, 0, NULL), -- Bloodmage Thalnos
-(6426, 0, 0, 1, 16, 0, 0, NULL), -- Anguished Dead
-(6427, 0, 0, 1, 16, 0, 0, NULL), -- Haunting Phantasm
-(6487, 0, 0, 1, 16, 0, 0, NULL), -- Arcanist Doan
-(6488, 0, 0, 1, 16, 0, 0, NULL), -- Fallen Champion
-(6489, 0, 0, 1, 16, 0, 0, NULL), -- Ironspine
-(6547, 0, 7, 1, 16, 0, 0, NULL); -- Suffering Victim
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(3974, 0, 0, 1, 0, 0, NULL), -- Houndmaster Loksey
+(3975, 0, 0, 1, 0, 0, NULL), -- Herod
+(3976, 0, 0, 1, 0, 0, NULL), -- Scarlet Commander Mograine
+(3977, 0, 0, 1, 0, 0, NULL), -- High Inquisitor Whitemane
+(3981, 0, 7, 1, 0, 0, NULL), -- Vorrel Sengutz
+(3983, 0, 0, 1, 0, 0, '8981'), -- Interrogator Vishas
+(4283, 0, 0, 1, 0, 0, NULL), -- Scarlet Sentry
+(4286, 0, 0, 1, 0, 0, NULL), -- Scarlet Soldier
+(4287, 0, 0, 1, 0, 0, NULL), -- Scarlet Gallant
+(4288, 0, 0, 1, 0, 0, NULL), -- Scarlet Beastmaster
+(4289, 0, 0, 1, 0, 0, NULL), -- Scarlet Evoker
+(4290, 0, 0, 1, 0, 0, NULL), -- Scarlet Guardsman
+(4291, 0, 0, 1, 0, 0, NULL), -- Scarlet Diviner
+(4292, 0, 0, 1, 0, 0, NULL), -- Scarlet Protector
+(4294, 0, 0, 1, 0, 0, NULL), -- Scarlet Sorcerer
+(4295, 0, 0, 1, 0, 0, NULL), -- Scarlet Myrmidon
+(4296, 0, 0, 1, 0, 0, NULL), -- Scarlet Adept
+(4297, 0, 0, 1, 0, 0, NULL), -- Scarlet Conjuror
+(4298, 0, 0, 1, 0, 0, NULL), -- Scarlet Defender
+(4299, 0, 0, 1, 0, 0, '1006'), -- Scarlet Chaplain
+(4300, 0, 0, 1, 0, 0, NULL), -- Scarlet Wizard
+(4301, 0, 0, 1, 0, 0, NULL), -- Scarlet Centurion
+(4302, 0, 0, 1, 0, 0, NULL), -- Scarlet Champion
+(4303, 0, 8, 1, 0, 0, '1006'), -- Scarlet Abbot
+(4304, 0, 0, 1, 0, 0, NULL), -- Scarlet Tracking Hound
+(4306, 0, 0, 1, 0, 0, '9276'), -- Scarlet Torturer
+(4308, 0, 0, 1, 0, 0, NULL), -- Unfettered Spirit
+(4540, 0, 0, 1, 0, 0, '8876'), -- Scarlet Monk
+(4542, 0, 0, 1, 0, 0, NULL), -- High Inquisitor Fairbanks
+(4543, 0, 0, 1, 0, 0, NULL), -- Bloodmage Thalnos
+(6426, 0, 0, 1, 0, 0, NULL), -- Anguished Dead
+(6427, 0, 0, 1, 0, 0, NULL), -- Haunting Phantasm
+(6487, 0, 0, 1, 0, 0, NULL), -- Arcanist Doan
+(6488, 0, 0, 1, 0, 0, NULL), -- Fallen Champion
+(6489, 0, 0, 1, 0, 0, NULL), -- Ironspine
+(6547, 0, 7, 1, 0, 0, NULL); -- Suffering Victim
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+228, @CGUID+63, 515);

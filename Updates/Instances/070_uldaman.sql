@@ -100,71 +100,71 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+4, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Relic Hunter
-(@CGUID+6, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Relic Hunter
-(@CGUID+134, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+135, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+136, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+137, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+138, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+139, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+140, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+141, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+146, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+147, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+148, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+149, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+150, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+151, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+152, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+153, 0, 1114112, 1, 16, 233, 0, '7165'), -- Earthen Rocksmasher
-(@CGUID+158, 0, 0, 1, 16, 233, 0, NULL), -- Earthen Sculptor
-(@CGUID+159, 0, 0, 1, 16, 233, 0, NULL), -- Earthen Sculptor
-(@CGUID+162, 0, 0, 1, 16, 233, 0, NULL), -- Earthen Sculptor
-(@CGUID+163, 0, 0, 1, 16, 233, 0, NULL); -- Earthen Sculptor
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+4, 0, 0, 1, 0, 0, NULL), -- Shadowforge Relic Hunter
+(@CGUID+6, 0, 0, 1, 0, 0, NULL), -- Shadowforge Relic Hunter
+(@CGUID+134, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+135, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+136, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+137, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+138, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+139, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+140, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+141, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+146, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+147, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+148, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+149, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+150, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+151, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+152, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+153, 0, 1114112, 1, 233, 0, '7165'), -- Earthen Rocksmasher
+(@CGUID+158, 0, 0, 1, 233, 0, NULL), -- Earthen Sculptor
+(@CGUID+159, 0, 0, 1, 233, 0, NULL), -- Earthen Sculptor
+(@CGUID+162, 0, 0, 1, 233, 0, NULL), -- Earthen Sculptor
+(@CGUID+163, 0, 0, 1, 233, 0, NULL); -- Earthen Sculptor
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(2748, 0, 0, 1, 16, 0, 0, NULL), -- Archaedas
-(4847, 0, 0, 1, 16, 173, 0, NULL), -- Shadowforge Relic Hunter
-(4848, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Darkcaster
-(4849, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Archaeologist
-(4850, 0, 33554432, 1, 16, 0, 0, '10022 22766'), -- Stonevault Cave Lurker
-(4851, 0, 0, 1, 16, 0, 0, NULL), -- Stonevault Rockchewer
-(4852, 0, 0, 1, 16, 0, 0, NULL), -- Stonevault Oracle
-(4853, 0, 0, 1, 16, 0, 0, NULL), -- Stonevault Geomancer
-(4854, 0, 0, 1, 16, 0, 0, NULL), -- Grimlok
-(4855, 0, 0, 1, 16, 0, 0, '8876'), -- Stonevault Brawler
-(4857, 0, 0, 1, 16, 0, 0, '10255'), -- Stone Keeper
-(4860, 0, 0, 1, 16, 0, 0, NULL), -- Stone Steward
-(4861, 0, 0, 1, 16, 0, 0, NULL), -- Shrike Bat
-(4863, 0, 0, 1, 16, 0, 0, NULL), -- Jadespine Basilisk
-(6906, 0, 0, 1, 16, 0, 0, NULL), -- Baelog
-(6907, 0, 0, 1, 16, 0, 0, NULL), -- Eric "The Swift"
-(6908, 0, 0, 1, 16, 0, 0, NULL), -- Olaf
-(6910, 0, 0, 1, 16, 0, 0, NULL), -- Revelosh
-(6912, 0, 7, 1, 16, 0, 0, NULL), -- Remains of a Paladin
-(7011, 0, 1114112, 1, 16, 0, 0, '7165'), -- Earthen Rocksmasher
-(7012, 0, 0, 1, 16, 0, 0, NULL), -- Earthen Sculptor
-(7022, 0, 0, 1, 16, 0, 0, NULL), -- Venomlash Scorpid
-(7023, 0, 0, 1, 16, 0, 0, NULL), -- Obsidian Sentinel
-(7030, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Geologist
-(7076, 0, 0, 1, 16, 0, 0, '10255'), -- Earthen Guardian
-(7077, 0, 0, 1, 16, 0, 0, '10255'), -- Earthen Hallshaper
-(7078, 0, 0, 1, 16, 0, 0, '3616'), -- Cleft Scorpid
-(7175, 0, 0, 1, 16, 0, 0, NULL), -- Stonevault Ambusher
-(7206, 0, 0, 1, 16, 0, 0, NULL), -- Ancient Stone Keeper
-(7226, 0, 0, 1, 16, 0, 0, '10092'), -- Sand Storm
-(7290, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Sharpshooter
-(7291, 0, 0, 1, 16, 0, 0, NULL), -- Galgann Firehammer
-(7309, 0, 0, 1, 16, 0, 0, '10255'), -- Earthen Custodian
-(7320, 0, 0, 1, 16, 0, 0, '8876'), -- Stonevault Mauler
-(7321, 0, 0, 1, 16, 0, 0, NULL), -- Stonevault Flameweaver
-(7396, 0, 1114112, 1, 16, 0, 0, '7165'), -- Earthen Stonebreaker
-(7397, 0, 0, 1, 16, 0, 0, NULL), -- Earthen Stonecarver
-(7405, 0, 0, 1, 16, 0, 0, '3616'), -- Deadly Cleft Scorpid
-(10120, 0, 0, 1, 16, 0, 0, '10255'), -- Vault Warder
-(11073, 0, 0, 1, 16, 0, 0, NULL); -- Annora
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(2748, 0, 0, 1, 0, 0, NULL), -- Archaedas
+(4847, 0, 0, 1, 173, 0, NULL), -- Shadowforge Relic Hunter
+(4848, 0, 0, 1, 0, 0, NULL), -- Shadowforge Darkcaster
+(4849, 0, 0, 1, 0, 0, NULL), -- Shadowforge Archaeologist
+(4850, 0, 33554432, 1, 0, 0, '10022 22766'), -- Stonevault Cave Lurker
+(4851, 0, 0, 1, 0, 0, NULL), -- Stonevault Rockchewer
+(4852, 0, 0, 1, 0, 0, NULL), -- Stonevault Oracle
+(4853, 0, 0, 1, 0, 0, NULL), -- Stonevault Geomancer
+(4854, 0, 0, 1, 0, 0, NULL), -- Grimlok
+(4855, 0, 0, 1, 0, 0, '8876'), -- Stonevault Brawler
+(4857, 0, 0, 1, 0, 0, '10255'), -- Stone Keeper
+(4860, 0, 0, 1, 0, 0, NULL), -- Stone Steward
+(4861, 0, 0, 1, 0, 0, NULL), -- Shrike Bat
+(4863, 0, 0, 1, 0, 0, NULL), -- Jadespine Basilisk
+(6906, 0, 0, 1, 0, 0, NULL), -- Baelog
+(6907, 0, 0, 1, 0, 0, NULL), -- Eric "The Swift"
+(6908, 0, 0, 1, 0, 0, NULL), -- Olaf
+(6910, 0, 0, 1, 0, 0, NULL), -- Revelosh
+(6912, 0, 7, 1, 0, 0, NULL), -- Remains of a Paladin
+(7011, 0, 1114112, 1, 0, 0, '7165'), -- Earthen Rocksmasher
+(7012, 0, 0, 1, 0, 0, NULL), -- Earthen Sculptor
+(7022, 0, 0, 1, 0, 0, NULL), -- Venomlash Scorpid
+(7023, 0, 0, 1, 0, 0, NULL), -- Obsidian Sentinel
+(7030, 0, 0, 1, 0, 0, NULL), -- Shadowforge Geologist
+(7076, 0, 0, 1, 0, 0, '10255'), -- Earthen Guardian
+(7077, 0, 0, 1, 0, 0, '10255'), -- Earthen Hallshaper
+(7078, 0, 0, 1, 0, 0, '3616'), -- Cleft Scorpid
+(7175, 0, 0, 1, 0, 0, NULL), -- Stonevault Ambusher
+(7206, 0, 0, 1, 0, 0, NULL), -- Ancient Stone Keeper
+(7226, 0, 0, 1, 0, 0, '10092'), -- Sand Storm
+(7290, 0, 0, 1, 0, 0, NULL), -- Shadowforge Sharpshooter
+(7291, 0, 0, 1, 0, 0, NULL), -- Galgann Firehammer
+(7309, 0, 0, 1, 0, 0, '10255'), -- Earthen Custodian
+(7320, 0, 0, 1, 0, 0, '8876'), -- Stonevault Mauler
+(7321, 0, 0, 1, 0, 0, NULL), -- Stonevault Flameweaver
+(7396, 0, 1114112, 1, 0, 0, '7165'), -- Earthen Stonebreaker
+(7397, 0, 0, 1, 0, 0, NULL), -- Earthen Stonecarver
+(7405, 0, 0, 1, 0, 0, '3616'), -- Deadly Cleft Scorpid
+(10120, 0, 0, 1, 0, 0, '10255'), -- Vault Warder
+(11073, 0, 0, 1, 0, 0, NULL); -- Annora
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 

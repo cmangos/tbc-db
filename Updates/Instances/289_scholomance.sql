@@ -142,94 +142,94 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14500, 0, 11, 28.269, 160.792, 83.545, 100, 4000, 0),
 (14500, 0, 12, 33.294, 160.895, 83.545, 100, 10000, 1450003);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+61, 0, 0, 1, 16, 0, 0, '12380'), -- Scholomance Adept
-(@CGUID+73, 0, 0, 1, 16, 0, 0, '12380'), -- Scholomance Adept
-(@CGUID+113, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+114, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+115, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+116, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+117, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+118, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+120, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+121, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+122, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+123, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+125, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+126, 0, 0, 1, 16, 0, 0, '12380'), -- Scholomance Student
-(@CGUID+127, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+128, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+129, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+130, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+131, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+133, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+134, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+135, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+137, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+138, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+139, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+140, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+141, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+142, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Student
-(@CGUID+148, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Necrolyte
-(@CGUID+303, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+304, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+305, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+306, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+307, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+308, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+309, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+310, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+311, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+312, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+313, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+314, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+315, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+316, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+317, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+318, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+319, 0, 0, 1, 16, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+355, 0, 0, 1, 16, 0, 0, '17467'), -- Lord Alexei Barov
-(@CGUID+399, 0, 0, 1, 16, 0, 0, NULL); -- Kormok Trigger
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+61, 0, 0, 1, 0, 0, '12380'), -- Scholomance Adept
+(@CGUID+73, 0, 0, 1, 0, 0, '12380'), -- Scholomance Adept
+(@CGUID+113, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+114, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+115, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+116, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+117, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+118, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+120, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+121, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+122, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+123, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+125, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+126, 0, 0, 1, 0, 0, '12380'), -- Scholomance Student
+(@CGUID+127, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+128, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+129, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+130, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+131, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+133, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+134, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+135, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+137, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+138, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+139, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+140, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+141, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+142, 0, 0, 1, 0, 0, NULL), -- Scholomance Student
+(@CGUID+148, 0, 0, 1, 0, 0, NULL), -- Scholomance Necrolyte
+(@CGUID+303, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+304, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+305, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+306, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+307, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+308, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+309, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+310, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+311, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+312, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+313, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+314, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+315, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+316, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+317, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+318, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+319, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
+(@CGUID+355, 0, 0, 1, 0, 0, '17467'), -- Lord Alexei Barov
+(@CGUID+399, 0, 0, 1, 0, 0, NULL); -- Kormok Trigger
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(10432, 0, 0, 1, 16, 0, 0, NULL), -- Vectus
-(10433, 0, 0, 1, 16, 0, 0, NULL), -- Marduk Blackpool
-(10469, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Adept
-(10470, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Neophyte
-(10471, 0, 0, 1, 16, 0, 0, '16592'), -- Scholomance Acolyte
-(10472, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Occultist
-(10475, 0, 1, 1, 16, 0, 0, NULL), -- Scholomance Student
-(10476, 0, 0, 1, 16, 0, 0, '17151'), -- Scholomance Necrolyte
-(10477, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Necromancer
-(10478, 0, 0, 1, 16, 0, 0, NULL), -- Splintered Skeleton
-(10480, 0, 0, 1, 16, 0, 0, NULL), -- Unstable Corpse
-(10481, 0, 0, 1, 16, 0, 0, NULL), -- Reanimated Corpse
-(10485, 0, 0, 1, 16, 0, 0, NULL), -- Risen Aberration
-(10486, 0, 0, 1, 16, 0, 0, NULL), -- Risen Warrior
-(10487, 0, 0, 1, 16, 0, 0, NULL), -- Risen Protector
-(10488, 0, 0, 1, 16, 0, 0, '8876'), -- Risen Construct
-(10489, 0, 0, 1, 16, 0, 0, NULL), -- Risen Guard
-(10491, 0, 0, 1, 16, 0, 0, NULL), -- Risen Bonewarder
-(10495, 0, 0, 1, 16, 0, 0, NULL), -- Diseased Ghoul
-(10498, 0, 0, 1, 16, 0, 0, NULL), -- Spectral Tutor
-(10499, 0, 0, 1, 16, 0, 0, NULL), -- Spectral Researcher
-(10500, 0, 0, 1, 16, 0, 0, NULL), -- Spectral Teacher
-(10502, 0, 0, 1, 16, 0, 0, NULL), -- Lady Illucia Barov
-(10503, 0, 0, 1, 16, 0, 0, NULL), -- Jandice Barov
-(10504, 0, 0, 0, 0, 0, 0, '17467'), -- Lord Alexei Barov
-(10505, 0, 0, 1, 16, 0, 0, NULL), -- Instructor Malicia
-(10507, 0, 0, 1, 16, 0, 0, NULL), -- The Ravenian
-(10508, 0, 0, 1, 16, 0, 0, '18100'), -- Ras Frostwhisper
-(10678, 0, 0, 1, 16, 0, 0, NULL), -- Plagued Hatchling
-(10901, 0, 0, 1, 16, 0, 0, NULL), -- Lorekeeper Polkelt
-(11257, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Handler
-(11261, 0, 0, 1, 16, 69, 0, NULL), -- Doctor Theolen Krastinov
-(11551, 0, 0, 1, 16, 0, 0, '10022'), -- Necrofiend
-(11582, 0, 0, 1, 16, 0, 0, NULL), -- Scholomance Dark Summoner
-(11622, 0, 0, 1, 16, 0, 0, NULL), -- Rattlegore
-(14861, 0, 0, 1, 16, 0, 0, NULL), -- Blood Steward of Kirtonos
-(16047, 0, 0, 1, 0, 0, 0, NULL); -- Kormok Trigger
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(10432, 0, 0, 1, 0, 0, NULL), -- Vectus
+(10433, 0, 0, 1, 0, 0, NULL), -- Marduk Blackpool
+(10469, 0, 0, 1, 0, 0, NULL), -- Scholomance Adept
+(10470, 0, 0, 1, 0, 0, NULL), -- Scholomance Neophyte
+(10471, 0, 0, 1, 0, 0, '16592'), -- Scholomance Acolyte
+(10472, 0, 0, 1, 0, 0, NULL), -- Scholomance Occultist
+(10475, 0, 1, 1, 0, 0, NULL), -- Scholomance Student
+(10476, 0, 0, 1, 0, 0, '17151'), -- Scholomance Necrolyte
+(10477, 0, 0, 1, 0, 0, NULL), -- Scholomance Necromancer
+(10478, 0, 0, 1, 0, 0, NULL), -- Splintered Skeleton
+(10480, 0, 0, 1, 0, 0, NULL), -- Unstable Corpse
+(10481, 0, 0, 1, 0, 0, NULL), -- Reanimated Corpse
+(10485, 0, 0, 1, 0, 0, NULL), -- Risen Aberration
+(10486, 0, 0, 1, 0, 0, NULL), -- Risen Warrior
+(10487, 0, 0, 1, 0, 0, NULL), -- Risen Protector
+(10488, 0, 0, 1, 0, 0, '8876'), -- Risen Construct
+(10489, 0, 0, 1, 0, 0, NULL), -- Risen Guard
+(10491, 0, 0, 1, 0, 0, NULL), -- Risen Bonewarder
+(10495, 0, 0, 1, 0, 0, NULL), -- Diseased Ghoul
+(10498, 0, 0, 1, 0, 0, NULL), -- Spectral Tutor
+(10499, 0, 0, 1, 0, 0, NULL), -- Spectral Researcher
+(10500, 0, 0, 1, 0, 0, NULL), -- Spectral Teacher
+(10502, 0, 0, 1, 0, 0, NULL), -- Lady Illucia Barov
+(10503, 0, 0, 1, 0, 0, NULL), -- Jandice Barov
+(10504, 0, 0, 0, 0, 0, '17467'), -- Lord Alexei Barov
+(10505, 0, 0, 1, 0, 0, NULL), -- Instructor Malicia
+(10507, 0, 0, 1, 0, 0, NULL), -- The Ravenian
+(10508, 0, 0, 1, 0, 0, '18100'), -- Ras Frostwhisper
+(10678, 0, 0, 1, 0, 0, NULL), -- Plagued Hatchling
+(10901, 0, 0, 1, 0, 0, NULL), -- Lorekeeper Polkelt
+(11257, 0, 0, 1, 0, 0, NULL), -- Scholomance Handler
+(11261, 0, 0, 1, 69, 0, NULL), -- Doctor Theolen Krastinov
+(11551, 0, 0, 1, 0, 0, '10022'), -- Necrofiend
+(11582, 0, 0, 1, 0, 0, NULL), -- Scholomance Dark Summoner
+(11622, 0, 0, 1, 0, 0, NULL), -- Rattlegore
+(14861, 0, 0, 1, 0, 0, NULL), -- Blood Steward of Kirtonos
+(16047, 0, 0, 1, 0, 0, NULL); -- Kormok Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+289, @CGUID+355, 7), -- Risen Guard -> Lord Alexei Barov
@@ -687,7 +687,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+46, 176547, 289, 165.317, -81.145, 85.2284, 3.00197, 0, 0, 0.997564, 0.069757, -30, -30, 100, 1), -- Lucien Remains Ablaze
 (@OGUID+47, 176561, 289, 182.53, -100.098, 85.2284, 1.58825, 0, 0, 0.71325, 0.700909, 7200, 7200, 100, 1), -- Krastinov's Work Bench
 (@OGUID+48, 176944, 289, 167.378, 98.986, 104.727, 0.034907, 0, 0, 0.017452, 0.999848, 7200, 7200, 100, 1), -- Old Treasure Chest
-(@OGUID+49, 177370, 289, 57.4802, 142.856, 83.4796, -3.12414, 0, 0, 0.999962, -0.008727, 7200, 7200, 100, 1), -- Door
+(@OGUID+49, 177370, 289, 57.4802, 142.856, 83.4796, -3.12414, 0, 0, 0.999962, -0.008727, 7200, 7200, 255, 1), -- Door
 (@OGUID+50, 177371, 289, 204.326, 0.011124, 76.1678, -1.55334, 0, 0, -0.700909, 0.713251, 7200, 7200, 100, 0), -- Gate
 (@OGUID+51, 177372, 289, 159.746, -0.767021, 76.1678, -1.55334, 0, 0, -0.700909, 0.713251, 7200, 7200, 100, 0), -- Gate
 (@OGUID+52, 177373, 289, 181.054, -21.3466, 76.1317, 0.017453, 0, 0, 0.008727, 0.999962, 7200, 7200, 100, 0), -- Gate
@@ -790,7 +790,10 @@ INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalo
 (@OGUID+9, 0, 12, @OGUID+10, 600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (@OGUID+9, 5000, 10, 10506, 900000, 0, 0, 0, 0, 0, 0, 0, 0, 309.65, 93.47, 101.66, 0.03, '');
 
--- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM `dbscripts_on_go_template_use` WHERE `id` = 175617;
+INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(175617,5000,11,@OGUID+49,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'Open Door (177370)');
+
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
 DELETE FROM dbscripts_on_event WHERE id IN (5438,5439,8438);

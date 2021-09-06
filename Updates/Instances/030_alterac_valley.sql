@@ -295,69 +295,69 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+36, 0, 0, 1, 16, 0, 0, NULL), -- Irondeep Trogg
-(@CGUID+37, 0, 0, 1, 16, 0, 0, NULL), -- Irondeep Trogg
-(@CGUID+38, 0, 0, 1, 16, 0, 0, NULL), -- Irondeep Trogg
-(@CGUID+39, 0, 0, 1, 16, 0, 0, NULL), -- Irondeep Trogg
-(@CGUID+40, 0, 0, 1, 16, 0, 0, NULL), -- Irondeep Trogg
-(@CGUID+41, 0, 0, 1, 16, 0, 0, NULL), -- Irondeep Trogg
-(@CGUID+162, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+163, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+164, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+165, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+166, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+167, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+168, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+169, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+170, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+171, 0, 0, 1, 16, 0, 0, NULL), -- Whitewhisker Digger
-(@CGUID+644, 0, 0, 1, 16, 0, 0, NULL), -- Coldmine Peon
-(@CGUID+645, 0, 0, 1, 16, 0, 0, NULL), -- Coldmine Peon
-(@CGUID+696, 0, 0, 1, 16, 0, 0, NULL), -- Coldmine Miner
-(@CGUID+697, 0, 0, 1, 16, 0, 0, NULL), -- Coldmine Miner
-(@CGUID+698, 0, 0, 1, 16, 0, 0, NULL), -- Coldmine Miner
-(@CGUID+699, 0, 0, 1, 16, 0, 0, NULL), -- Coldmine Miner
-(@CGUID+700, 0, 0, 1, 16, 0, 0, NULL), -- Coldmine Miner
-(@CGUID+955, 0, 0, 1, 16, 0, 0, NULL), -- Irondeep Peon
-(@CGUID+956, 0, 0, 1, 16, 0, 0, NULL); -- Irondeep Peon
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+36, 0, 0, 1, 0, 0, NULL), -- Irondeep Trogg
+(@CGUID+37, 0, 0, 1, 0, 0, NULL), -- Irondeep Trogg
+(@CGUID+38, 0, 0, 1, 0, 0, NULL), -- Irondeep Trogg
+(@CGUID+39, 0, 0, 1, 0, 0, NULL), -- Irondeep Trogg
+(@CGUID+40, 0, 0, 1, 0, 0, NULL), -- Irondeep Trogg
+(@CGUID+41, 0, 0, 1, 0, 0, NULL), -- Irondeep Trogg
+(@CGUID+162, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+163, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+164, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+165, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+166, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+167, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+168, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+169, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+170, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+171, 0, 0, 1, 0, 0, NULL), -- Whitewhisker Digger
+(@CGUID+644, 0, 0, 1, 0, 0, NULL), -- Coldmine Peon
+(@CGUID+645, 0, 0, 1, 0, 0, NULL), -- Coldmine Peon
+(@CGUID+696, 0, 0, 1, 0, 0, NULL), -- Coldmine Miner
+(@CGUID+697, 0, 0, 1, 0, 0, NULL), -- Coldmine Miner
+(@CGUID+698, 0, 0, 1, 0, 0, NULL), -- Coldmine Miner
+(@CGUID+699, 0, 0, 1, 0, 0, NULL), -- Coldmine Miner
+(@CGUID+700, 0, 0, 1, 0, 0, NULL), -- Coldmine Miner
+(@CGUID+955, 0, 0, 1, 0, 0, NULL), -- Irondeep Peon
+(@CGUID+956, 0, 0, 1, 0, 0, NULL); -- Irondeep Peon
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(10987, 0, 0, 1, 16, 233, 0, NULL), -- Irondeep Trogg
-(10991, 0, 0, 1, 16, 0, 0, NULL), -- Wildpaw Gnoll
-(11603, 0, 0, 1, 16, 233, 0, NULL), -- Whitewhisker Digger
-(11677, 0, 0, 1, 16, 0, 0, NULL), -- Taskmaster Snivvle
-(12050, 0, 0, 1, 16, 0, 0, '5301'), -- Stormpike Defender
-(12053, 0, 0, 1, 16, 0, 0, '5301'), -- Frostwolf Guardian
-(13088, 0, 0, 1, 16, 0, 0, NULL), -- Masha Swiftcut
-(13116, 0, 0, 0, 0, 0, 0, ''), -- Alliance Spirit Guide s.22011 - npc_spirit_guide
-(13117, 0, 0, 0, 0, 0, 0, ''), -- Horde Spirit Guide s.22011 - npc_spirit_guide
-(13316, 0, 0, 1, 16, 233, 0, NULL), -- Coldmine Peon
-(13317, 0, 0, 1, 16, 233, 0, NULL), -- Coldmine Miner
-(13326, 0, 0, 1, 16, 0, 0, '5301'), -- Seasoned Defender
-(13328, 0, 0, 1, 16, 0, 0, '5301'), -- Seasoned Guardian
-(13331, 0, 0, 1, 16, 0, 0, '5301'), -- Veteran Defender
-(13332, 0, 0, 1, 16, 0, 0, '5301'), -- Veteran Guardian
-(13358, 0, 0, 2, 0, 0, 0, NULL), -- Stormpike Bowman
-(13359, 0, 0, 2, 0, 0, 0, NULL), -- Frostwolf Bowman
-(13396, 0, 0, 1, 16, 233, 0, NULL), -- Irondeep Miner
-(13397, 0, 0, 1, 16, 233, 0, NULL), -- Irondeep Peon
-(13421, 0, 0, 1, 16, 0, 0, '5301'), -- Champion Guardian - aura guessed
-(13422, 0, 0, 1, 16, 0, 0, '5301'), -- Champion Defender - aura guessed
-(13437, 0, 0, 1, 16, 0, 0, NULL), -- Wing Commander Ichman
-(13577, 2786, 0, 0, 0, 0, 0, NULL), -- Stormpike Ram Rider Commander
-(14282, 0, 0, 1, 16, 0, 0, '18950'), -- Frostwolf Bloodhound
-(14283, 0, 0, 1, 16, 0, 0, '18950'), -- Stormpike Owl
-(14284, 0, 0, 1, 16, 0, 0, '12782'), -- Stormpike Battleguard
-(14285, 0, 0, 1, 16, 0, 0, '12782'), -- Frostwolf Battleguard
-(14762, 0, 0, 1, 0, 0, 0, '45828'), -- Dun Baldar North Marshal
-(14763, 0, 0, 1, 0, 0, 0, '45829'), -- Dun Baldar South Marshal
-(14764, 0, 0, 1, 0, 0, 0, '45831'), -- Icewing Marshal
-(14765, 0, 0, 1, 0, 0, 0, '45830'), -- Stonehearth Marshal
-(14772, 0, 0, 1, 0, 0, 0, '45826'), -- East Frostwolf Warmaster
-(14773, 0, 0, 1, 0, 0, 0, '45822'), -- Iceblood Warmaster
-(14776, 0, 0, 1, 0, 0, 0, '45823'), -- Tower Point Warmaster
-(14777, 0, 0, 1, 0, 0, 0, '45824'); -- West Frostwolf Warmaster
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(10987, 0, 0, 1, 233, 0, NULL), -- Irondeep Trogg
+(10991, 0, 0, 1, 0, 0, NULL), -- Wildpaw Gnoll
+(11603, 0, 0, 1, 233, 0, NULL), -- Whitewhisker Digger
+(11677, 0, 0, 1, 0, 0, NULL), -- Taskmaster Snivvle
+(12050, 0, 0, 1, 0, 0, '5301'), -- Stormpike Defender
+(12053, 0, 0, 1, 0, 0, '5301'), -- Frostwolf Guardian
+(13088, 0, 0, 1, 0, 0, NULL), -- Masha Swiftcut
+(13116, 0, 0, 0, 0, 0, ''), -- Alliance Spirit Guide s.22011 - npc_spirit_guide
+(13117, 0, 0, 0, 0, 0, ''), -- Horde Spirit Guide s.22011 - npc_spirit_guide
+(13316, 0, 0, 1, 233, 0, NULL), -- Coldmine Peon
+(13317, 0, 0, 1, 233, 0, NULL), -- Coldmine Miner
+(13326, 0, 0, 1, 0, 0, '5301'), -- Seasoned Defender
+(13328, 0, 0, 1, 0, 0, '5301'), -- Seasoned Guardian
+(13331, 0, 0, 1, 0, 0, '5301'), -- Veteran Defender
+(13332, 0, 0, 1, 0, 0, '5301'), -- Veteran Guardian
+(13358, 0, 0, 2, 0, 0, NULL), -- Stormpike Bowman
+(13359, 0, 0, 2, 0, 0, NULL), -- Frostwolf Bowman
+(13396, 0, 0, 1, 233, 0, NULL), -- Irondeep Miner
+(13397, 0, 0, 1, 233, 0, NULL), -- Irondeep Peon
+(13421, 0, 0, 1, 0, 0, '5301'), -- Champion Guardian - aura guessed
+(13422, 0, 0, 1, 0, 0, '5301'), -- Champion Defender - aura guessed
+(13437, 0, 0, 1, 0, 0, NULL), -- Wing Commander Ichman
+(13577, 2786, 0, 0, 0, 0, NULL), -- Stormpike Ram Rider Commander
+(14282, 0, 0, 1, 0, 0, '18950'), -- Frostwolf Bloodhound
+(14283, 0, 0, 1, 0, 0, '18950'), -- Stormpike Owl
+(14284, 0, 0, 1, 0, 0, '12782'), -- Stormpike Battleguard
+(14285, 0, 0, 1, 0, 0, '12782'), -- Frostwolf Battleguard
+(14762, 0, 0, 1, 0, 0, '45828'), -- Dun Baldar North Marshal
+(14763, 0, 0, 1, 0, 0, '45829'), -- Dun Baldar South Marshal
+(14764, 0, 0, 1, 0, 0, '45831'), -- Icewing Marshal
+(14765, 0, 0, 1, 0, 0, '45830'), -- Stonehearth Marshal
+(14772, 0, 0, 1, 0, 0, '45826'), -- East Frostwolf Warmaster
+(14773, 0, 0, 1, 0, 0, '45822'), -- Iceblood Warmaster
+(14776, 0, 0, 1, 0, 0, '45823'), -- Tower Point Warmaster
+(14777, 0, 0, 1, 0, 0, '45824'); -- West Frostwolf Warmaster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+1120, @CGUID+327, 515), -- Frostwolf Bloodhound -> Frostwolf Legionnaire

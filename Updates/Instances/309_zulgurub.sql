@@ -474,121 +474,121 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (11359, 4, 3, -11739.987305, -1681.579712, 40.750183, 100, 0, 0),
 (11359, 4, 4, -11732.525391, -1693.093018, 40.746841, 100, 0, 1135904);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+127, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Blood Priest
-(@CGUID+129, 0, 1, 1, 16, 0, 0, NULL), -- Hakkari Blood Priest
-(@CGUID+130, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Blood Priest
-(@CGUID+131, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Blood Priest
-(@CGUID+196, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+197, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+204, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+205, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+210, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+211, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+212, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+213, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+219, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+220, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+221, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+222, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+227, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+228, 0, 0, 1, 16, 333, 0, NULL), -- Gurubashi Blood Drinker
-(@CGUID+295, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+296, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+297, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+298, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+299, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+300, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+301, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+302, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+303, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+304, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+305, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+306, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+307, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+308, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+309, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+310, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+311, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+312, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+313, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+314, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+315, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+316, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+317, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+318, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+319, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+320, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+321, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+322, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+323, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+324, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+325, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+326, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+327, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+328, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+329, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Tiger
-(@CGUID+344, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Panther
-(@CGUID+345, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Panther
-(@CGUID+346, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Panther
-(@CGUID+347, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Panther
-(@CGUID+379, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Panther
-(@CGUID+380, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Panther
-(@CGUID+381, 0, 3, 1, 16, 0, 0, NULL), -- Zulian Panther
-(@CGUID+382, 0, 3, 1, 16, 0, 0, NULL); -- Zulian Panther
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+127, 0, 0, 1, 0, 0, NULL), -- Hakkari Blood Priest
+(@CGUID+129, 0, 1, 1, 0, 0, NULL), -- Hakkari Blood Priest
+(@CGUID+130, 0, 0, 1, 0, 0, NULL), -- Hakkari Blood Priest
+(@CGUID+131, 0, 0, 1, 0, 0, NULL), -- Hakkari Blood Priest
+(@CGUID+196, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+197, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+204, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+205, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+210, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+211, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+212, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+213, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+219, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+220, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+221, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+222, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+227, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+228, 0, 0, 1, 333, 0, NULL), -- Gurubashi Blood Drinker
+(@CGUID+295, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+296, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+297, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+298, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+299, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+300, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+301, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+302, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+303, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+304, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+305, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+306, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+307, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+308, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+309, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+310, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+311, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+312, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+313, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+314, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+315, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+316, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+317, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+318, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+319, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+320, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+321, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+322, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+323, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+324, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+325, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+326, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+327, 0, 3, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+328, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+329, 0, 0, 1, 0, 0, NULL), -- Zulian Tiger
+(@CGUID+344, 0, 3, 1, 0, 0, NULL), -- Zulian Panther
+(@CGUID+345, 0, 3, 1, 0, 0, NULL), -- Zulian Panther
+(@CGUID+346, 0, 3, 1, 0, 0, NULL), -- Zulian Panther
+(@CGUID+347, 0, 3, 1, 0, 0, NULL), -- Zulian Panther
+(@CGUID+379, 0, 3, 1, 0, 0, NULL), -- Zulian Panther
+(@CGUID+380, 0, 3, 1, 0, 0, NULL), -- Zulian Panther
+(@CGUID+381, 0, 3, 1, 0, 0, NULL), -- Zulian Panther
+(@CGUID+382, 0, 3, 1, 0, 0, NULL); -- Zulian Panther
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(11338, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Shadowcaster
-(11339, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Shadow Hunter
-(11340, 0, 8, 1, 16, 0, 0, NULL), -- Hakkari Blood Priest
-(11347, 0, 8, 1, 16, 0, 0, '20545'), -- Zealot Lor'Khan
-(11348, 0, 8, 1, 16, 0, 0, NULL), -- Zealot Zath
-(11350, 0, 0, 1, 16, 0, 0, NULL), -- Gurubashi Axe Thrower
-(11351, 0, 0, 1, 16, 0, 0, NULL), -- Gurubashi Headhunter
-(11352, 0, 0, 1, 16, 0, 0, NULL), -- Gurubashi Berserker
-(11353, 0, 0, 1, 16, 0, 0, NULL), -- Gurubashi Blood Drinker
-(11356, 0, 0, 1, 16, 0, 0, NULL), -- Gurubashi Champion
-(11357, 0, 0, 1, 16, 0, 0, '8876'), -- Son of Hakkar
-(11359, 0, 0, 1, 16, 0, 0, NULL), -- Soulflayer
-(11360, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Cub
-(11361, 0, 1536, 1, 40, 0, 0, NULL), -- Zulian Tiger
-(11365, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Panther
-(11368, 0, 0, 1, 16, 0, 0, '18950'), -- Bloodseeker Bat
-(11370, 0, 0, 1, 16, 0, 0, NULL), -- Razzashi Broodwidow
-(11371, 0, 0, 1, 16, 0, 0, NULL), -- Razzashi Serpent
-(11372, 0, 0, 1, 16, 0, 0, '8876'), -- Razzashi Adder
-(11373, 0, 0, 1, 16, 0, 0, NULL), -- Razzashi Cobra
-(11374, 0, 0, 1, 16, 0, 0, '18943 18950'), -- Hooktooth Frenzy
-(11380, 0, 0, 1, 16, 10, 0, NULL), -- Jin'do the Hexxer
-(11382, 15271, 0, 1, 16, 0, 0, NULL), -- Bloodlord Mandokir
-(11387, 0, 0, 1, 16, 0, 0, NULL), -- Sandfury Speaker
-(11388, 0, 8, 1, 16, 0, 0, NULL), -- Witherbark Speaker
-(11389, 0, 8, 1, 16, 0, 0, NULL), -- Bloodscalp Speaker
-(11390, 0, 8, 1, 16, 0, 0, NULL), -- Skullsplitter Speaker
-(11391, 0, 8, 1, 16, 0, 0, NULL), -- Vilebranch Speaker
-(11830, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Priest
-(11831, 0, 0, 1, 16, 0, 0, NULL), -- Hakkari Witch Doctor
-(14507, 0, 8, 1, 16, 0, 0, '21157'), -- High Priest Venoxis
-(14509, 0, 0, 1, 16, 0, 0, NULL), -- High Priest Thekal
-(14510, 0, 0, 1, 16, 0, 0, NULL), -- High Priestess Mar'li
-(14517, 0, 0, 1, 16, 0, 0, NULL), -- High Priestess Jeklik
-(14532, 0, 0, 1, 16, 0, 0, '8601'), -- Razzashi Venombrood
-(14750, 0, 0, 1, 16, 0, 0, NULL), -- Gurubashi Bat Rider
-(14758, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Gurub Trigger
-(14821, 0, 0, 1, 16, 0, 0, '8876'), -- Razzashi Raptor
-(14825, 0, 0, 1, 16, 10, 0, NULL), -- Withered Mistress
-(14826, 0, 0, 1, 16, 10, 0, NULL), -- Sacrificed Troll
-(14834, 0, 0, 1, 16, 0, 0, '19818 24692'), -- Hakkar
-(14880, 0, 0, 1, 16, 0, 0, NULL), -- Razzashi Skitterer
-(14882, 0, 0, 1, 16, 10, 0, '8876'), -- Atal'ai Mistress
-(14883, 0, 0, 1, 16, 10, 0, NULL), -- Voodoo Slave
-(15042, 0, 0, 1, 16, 0, 0, NULL), -- Zanza the Restless
-(15043, 0, 0, 1, 16, 0, 0, NULL), -- Zulian Crocolisk
-(15067, 0, 0, 1, 16, 0, 0, '22766'), -- Zulian Stalker
-(15091, 0, 0, 1, 16, 0, 0, NULL), -- Zul'Gurub Panther Trigger
-(15101, 0, 0, 1, 16, 0, 0, '8876'), -- Zulian Prowler
-(15111, 0, 0, 1, 16, 0, 0, NULL), -- Mad Servant
-(15114, 0, 0, 1, 16, 0, 0, '8876'); -- Gahz'ranka
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(11338, 0, 0, 1, 0, 0, NULL), -- Hakkari Shadowcaster
+(11339, 0, 0, 1, 0, 0, NULL), -- Hakkari Shadow Hunter
+(11340, 0, 8, 1, 0, 0, NULL), -- Hakkari Blood Priest
+(11347, 0, 8, 1, 0, 0, '20545'), -- Zealot Lor'Khan
+(11348, 0, 8, 1, 0, 0, NULL), -- Zealot Zath
+(11350, 0, 0, 1, 0, 0, NULL), -- Gurubashi Axe Thrower
+(11351, 0, 0, 1, 0, 0, NULL), -- Gurubashi Headhunter
+(11352, 0, 0, 1, 0, 0, NULL), -- Gurubashi Berserker
+(11353, 0, 0, 1, 0, 0, NULL), -- Gurubashi Blood Drinker
+(11356, 0, 0, 1, 0, 0, NULL), -- Gurubashi Champion
+(11357, 0, 0, 1, 0, 0, '8876'), -- Son of Hakkar
+(11359, 0, 0, 1, 0, 0, NULL), -- Soulflayer
+(11360, 0, 0, 1, 0, 0, NULL), -- Zulian Cub
+(11361, 0, 1536, 1, 0, 0, NULL), -- Zulian Tiger
+(11365, 0, 0, 1, 0, 0, NULL), -- Zulian Panther
+(11368, 0, 0, 1, 0, 0, '18950'), -- Bloodseeker Bat
+(11370, 0, 0, 1, 0, 0, NULL), -- Razzashi Broodwidow
+(11371, 0, 0, 1, 0, 0, NULL), -- Razzashi Serpent
+(11372, 0, 0, 1, 0, 0, '8876'), -- Razzashi Adder
+(11373, 0, 0, 1, 0, 0, NULL), -- Razzashi Cobra
+(11374, 0, 0, 1, 0, 0, '18943 18950'), -- Hooktooth Frenzy
+(11380, 0, 0, 1, 10, 0, NULL), -- Jin'do the Hexxer
+(11382, 15271, 0, 1, 0, 0, NULL), -- Bloodlord Mandokir
+(11387, 0, 0, 1, 0, 0, NULL), -- Sandfury Speaker
+(11388, 0, 8, 1, 0, 0, NULL), -- Witherbark Speaker
+(11389, 0, 8, 1, 0, 0, NULL), -- Bloodscalp Speaker
+(11390, 0, 8, 1, 0, 0, NULL), -- Skullsplitter Speaker
+(11391, 0, 8, 1, 0, 0, NULL), -- Vilebranch Speaker
+(11830, 0, 0, 1, 0, 0, NULL), -- Hakkari Priest
+(11831, 0, 0, 1, 0, 0, NULL), -- Hakkari Witch Doctor
+(14507, 0, 8, 1, 0, 0, '21157'), -- High Priest Venoxis
+(14509, 0, 0, 1, 0, 0, NULL), -- High Priest Thekal
+(14510, 0, 0, 1, 0, 0, NULL), -- High Priestess Mar'li
+(14517, 0, 0, 1, 0, 0, NULL), -- High Priestess Jeklik
+(14532, 0, 0, 1, 0, 0, '8601'), -- Razzashi Venombrood
+(14750, 0, 0, 1, 0, 0, NULL), -- Gurubashi Bat Rider
+(14758, 0, 0, 1, 0, 0, NULL), -- Zul'Gurub Trigger
+(14821, 0, 0, 1, 0, 0, '8876'), -- Razzashi Raptor
+(14825, 0, 0, 1, 10, 0, NULL), -- Withered Mistress
+(14826, 0, 0, 1, 10, 0, NULL), -- Sacrificed Troll
+(14834, 0, 0, 1, 0, 0, '19818 24692'), -- Hakkar
+(14880, 0, 0, 1, 0, 0, NULL), -- Razzashi Skitterer
+(14882, 0, 0, 1, 10, 0, '8876'), -- Atal'ai Mistress
+(14883, 0, 0, 1, 10, 0, NULL), -- Voodoo Slave
+(15042, 0, 0, 1, 0, 0, NULL), -- Zanza the Restless
+(15043, 0, 0, 1, 0, 0, NULL), -- Zulian Crocolisk
+(15067, 0, 0, 1, 0, 0, '22766'), -- Zulian Stalker
+(15091, 0, 0, 1, 0, 0, NULL), -- Zul'Gurub Panther Trigger
+(15101, 0, 0, 1, 0, 0, '8876'), -- Zulian Prowler
+(15111, 0, 0, 1, 0, 0, NULL), -- Mad Servant
+(15114, 0, 0, 1, 0, 0, '8876'); -- Gahz'ranka
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Hakkar temple northern soulflayer pack

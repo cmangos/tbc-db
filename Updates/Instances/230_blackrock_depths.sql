@@ -613,238 +613,238 @@ DELETE FROM `creature_movement_template` WHERE entry IN (28206);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 (28206, 0, 1, 847.823, -181.144, -49.6707, 1.85005, 1440000, 9839501);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+1, 0, 0, 1, 16, 0, 0, '13589'), -- Anvilrage Overseer
-(@CGUID+2, 0, 0, 1, 16, 0, 0, '13589'), -- Anvilrage Overseer
-(@CGUID+3, 0, 0, 1, 16, 0, 0, '13589'), -- Anvilrage Overseer
-(@CGUID+4, 0, 0, 1, 16, 0, 0, '13589'), -- Anvilrage Overseer
-(@CGUID+98, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Footman
-(@CGUID+99, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Footman
-(@CGUID+100, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Footman
-(@CGUID+111, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Footman
-(@CGUID+112, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Footman
-(@CGUID+113, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Footman
-(@CGUID+127, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Footman
-(@CGUID+128, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Footman
-(@CGUID+156, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Soldier
-(@CGUID+166, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Soldier
-(@CGUID+167, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Soldier
-(@CGUID+175, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Soldier
-(@CGUID+194, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Medic
-(@CGUID+205, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Medic
-(@CGUID+210, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Medic
-(@CGUID+212, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Medic
-(@CGUID+223, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Officer
-(@CGUID+228, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Officer
-(@CGUID+229, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Officer
-(@CGUID+233, 0, 0, 1, 16, 0, 0, '15288'), -- Anvilrage Officer
-(@CGUID+237, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Officer
-(@CGUID+239, 0, 0, 1, 16, 0, 0, '15288'), -- Anvilrage Officer
-(@CGUID+243, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+244, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+245, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+246, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+249, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+250, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+251, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+252, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+253, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+254, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+255, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+256, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+257, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+258, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+259, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+260, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+261, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+262, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+267, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+268, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+269, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+270, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+271, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+272, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+273, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+274, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+275, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+276, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+277, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+278, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+279, 0, 0, 1, 16, 0, 0, '15288'), -- Shadowforge Peasant
-(@CGUID+280, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+281, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+282, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Peasant
-(@CGUID+284, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+285, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+286, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+287, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+288, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+289, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+290, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+291, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+292, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+293, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+294, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+295, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+296, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+297, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+298, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+299, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+300, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+301, 0, 0, 1, 16, 173, 0, NULL), -- Doomforge Craftsman
-(@CGUID+302, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+303, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+304, 0, 0, 1, 16, 0, 0, '13864'), -- Doomforge Craftsman
-(@CGUID+305, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+306, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Craftsman
-(@CGUID+309, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Marshal
-(@CGUID+310, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Marshal
-(@CGUID+311, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Marshal
-(@CGUID+312, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Marshal
-(@CGUID+315, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Marshal
-(@CGUID+316, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Marshal
-(@CGUID+318, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Marshal
-(@CGUID+321, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+322, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+323, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+324, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+325, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+326, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+327, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+329, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+331, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+332, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+333, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+334, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(@CGUID+613, 0, 0, 1, 16, 0, 0, '13864'), -- Shadowforge Citizen
-(@CGUID+614, 0, 0, 1, 16, 0, 0, '13864'), -- Shadowforge Citizen
-(@CGUID+619, 0, 0, 1, 16, 0, 0, '13864'), -- Shadowforge Citizen
-(@CGUID+620, 0, 0, 1, 16, 0, 0, '13864'), -- Shadowforge Citizen
-(@CGUID+670, 0, 0, 1, 16, 133, 0, NULL), -- Warbringer Construct
-(@CGUID+675, 0, 0, 1, 16, 133, 0, NULL), -- Warbringer Construct
-(@CGUID+726, 0, 0, 1, 16, 0, 0, '15288'), -- Blazing Fireguard
-(@CGUID+801, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+802, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+803, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+804, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+805, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+807, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+809, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+810, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+811, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+812, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+813, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+816, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Emissary
-(@CGUID+825, 0, 0, 1, 16, 0, 0, '12544'), -- Twilight's Hammer Ambassador
-(@CGUID+830, 0, 0, 1, 16, 0, 0, '12544'), -- Twilight's Hammer Ambassador
-(@CGUID+833, 0, 0, 1, 16, 0, 0, '12544'), -- Twilight's Hammer Ambassador
-(@CGUID+837, 0, 0, 1, 16, 0, 0, NULL), -- Arena Spectator
-(@CGUID+838, 0, 0, 1, 16, 0, 0, NULL), -- Arena Spectator
-(@CGUID+839, 0, 0, 1, 16, 0, 0, NULL), -- Arena Spectator
-(@CGUID+840, 0, 0, 1, 16, 0, 0, NULL), -- Arena Spectator
-(@CGUID+932, 0, 0, 1, 16, 0, 0, NULL), -- Bloodhound
-(@CGUID+941, 0, 0, 1, 16, 0, 0, NULL), -- Bloodhound
-(@CGUID+944, 0, 0, 1, 16, 0, 0, NULL), -- Bloodhound
-(@CGUID+950, 0, 0, 1, 16, 0, 0, NULL), -- Bloodhound
-(@CGUID+951, 0, 0, 1, 16, 0, 0, NULL), -- Bloodhound
-(@CGUID+955, 0, 0, 1, 16, 0, 0, NULL), -- Bloodhound
-(@CGUID+1028, 0, 0, 1, 16, 10, 0, NULL), -- Grim Patron
-(@CGUID+1039, 0, 0, 1, 16, 10, 0, NULL), -- Grim Patron
-(@CGUID+1059, 0, 0, 1, 16, 10, 0, NULL), -- Guzzling Patron
-(@CGUID+1075, 0, 0, 1, 16, 10, 0, NULL), -- Guzzling Patron
-(@CGUID+1080, 0, 0, 1, 16, 0, 0, '14869'), -- Hammered Patron
-(@CGUID+1081, 0, 0, 1, 16, 0, 0, '14869'), -- Hammered Patron
-(@CGUID+1082, 0, 0, 1, 16, 0, 0, '14869'), -- Hammered Patron
-(@CGUID+1083, 0, 0, 1, 16, 0, 0, '14869'), -- Hammered Patron
-(@CGUID+1084, 0, 0, 1, 16, 0, 0, '14869'), -- Hammered Patron
-(@CGUID+1085, 0, 0, 1, 16, 0, 0, '14869'), -- Hammered Patron
-(@CGUID+1087, 0, 0, 1, 16, 0, 0, '14869'), -- Hammered Patron
-(@CGUID+1089, 0, 0, 1, 16, 0, 0, '14869'), -- Hammered Patron
-(@CGUID+1090, 0, 0, 1, 16, 0, 0, '14869'), -- Hammered Patron
-(@CGUID+1115, 0, 1, 1, 16, 0, 0, NULL), -- Tortured Slave
-(@CGUID+1116, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Slave
-(@CGUID+1117, 0, 0, 1, 16, 93, 0, NULL); -- Tortured Slave
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+1, 0, 0, 1, 0, 0, '13589'), -- Anvilrage Overseer
+(@CGUID+2, 0, 0, 1, 0, 0, '13589'), -- Anvilrage Overseer
+(@CGUID+3, 0, 0, 1, 0, 0, '13589'), -- Anvilrage Overseer
+(@CGUID+4, 0, 0, 1, 0, 0, '13589'), -- Anvilrage Overseer
+(@CGUID+98, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Footman
+(@CGUID+99, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Footman
+(@CGUID+100, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Footman
+(@CGUID+111, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Footman
+(@CGUID+112, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Footman
+(@CGUID+113, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Footman
+(@CGUID+127, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Footman
+(@CGUID+128, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Footman
+(@CGUID+156, 0, 0, 1, 0, 0, NULL), -- Anvilrage Soldier
+(@CGUID+166, 0, 0, 1, 0, 0, NULL), -- Anvilrage Soldier
+(@CGUID+167, 0, 0, 1, 0, 0, NULL), -- Anvilrage Soldier
+(@CGUID+175, 0, 0, 1, 0, 0, NULL), -- Anvilrage Soldier
+(@CGUID+194, 0, 0, 1, 0, 0, NULL), -- Anvilrage Medic
+(@CGUID+205, 0, 0, 1, 0, 0, NULL), -- Anvilrage Medic
+(@CGUID+210, 0, 0, 1, 0, 0, NULL), -- Anvilrage Medic
+(@CGUID+212, 0, 0, 1, 0, 0, NULL), -- Anvilrage Medic
+(@CGUID+223, 0, 0, 1, 0, 0, NULL), -- Anvilrage Officer
+(@CGUID+228, 0, 0, 1, 0, 0, NULL), -- Anvilrage Officer
+(@CGUID+229, 0, 0, 1, 0, 0, NULL), -- Anvilrage Officer
+(@CGUID+233, 0, 0, 1, 0, 0, '15288'), -- Anvilrage Officer
+(@CGUID+237, 0, 0, 1, 0, 0, NULL), -- Anvilrage Officer
+(@CGUID+239, 0, 0, 1, 0, 0, '15288'), -- Anvilrage Officer
+(@CGUID+243, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+244, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+245, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+246, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+249, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+250, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+251, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+252, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+253, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+254, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+255, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+256, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+257, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+258, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+259, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+260, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+261, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+262, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+267, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+268, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+269, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+270, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+271, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+272, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+273, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+274, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+275, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+276, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+277, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+278, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+279, 0, 0, 1, 0, 0, '15288'), -- Shadowforge Peasant
+(@CGUID+280, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+281, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+282, 0, 0, 1, 0, 0, NULL), -- Shadowforge Peasant
+(@CGUID+284, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+285, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+286, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+287, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+288, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+289, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+290, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+291, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+292, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+293, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+294, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+295, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+296, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+297, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+298, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+299, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+300, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+301, 0, 0, 1, 173, 0, NULL), -- Doomforge Craftsman
+(@CGUID+302, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+303, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+304, 0, 0, 1, 0, 0, '13864'), -- Doomforge Craftsman
+(@CGUID+305, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+306, 0, 0, 1, 0, 0, NULL), -- Doomforge Craftsman
+(@CGUID+309, 0, 0, 1, 0, 0, NULL), -- Anvilrage Marshal
+(@CGUID+310, 0, 0, 1, 0, 0, NULL), -- Anvilrage Marshal
+(@CGUID+311, 0, 0, 1, 0, 0, NULL), -- Anvilrage Marshal
+(@CGUID+312, 0, 0, 1, 0, 0, NULL), -- Anvilrage Marshal
+(@CGUID+315, 0, 0, 1, 0, 0, NULL), -- Anvilrage Marshal
+(@CGUID+316, 0, 0, 1, 0, 0, NULL), -- Anvilrage Marshal
+(@CGUID+318, 0, 0, 1, 0, 0, NULL), -- Anvilrage Marshal
+(@CGUID+321, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+322, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+323, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+324, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+325, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+326, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+327, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+329, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+331, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+332, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+333, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+334, 0, 0, 1, 0, 0, NULL), -- Doomforge Dragoon
+(@CGUID+613, 0, 0, 1, 0, 0, '13864'), -- Shadowforge Citizen
+(@CGUID+614, 0, 0, 1, 0, 0, '13864'), -- Shadowforge Citizen
+(@CGUID+619, 0, 0, 1, 0, 0, '13864'), -- Shadowforge Citizen
+(@CGUID+620, 0, 0, 1, 0, 0, '13864'), -- Shadowforge Citizen
+(@CGUID+670, 0, 0, 1, 133, 0, NULL), -- Warbringer Construct
+(@CGUID+675, 0, 0, 1, 133, 0, NULL), -- Warbringer Construct
+(@CGUID+726, 0, 0, 1, 0, 0, '15288'), -- Blazing Fireguard
+(@CGUID+801, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+802, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+803, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+804, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+805, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+807, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+809, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+810, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+811, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+812, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+813, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+816, 0, 0, 1, 0, 0, '15288'), -- Twilight Emissary
+(@CGUID+825, 0, 0, 1, 0, 0, '12544'), -- Twilight's Hammer Ambassador
+(@CGUID+830, 0, 0, 1, 0, 0, '12544'), -- Twilight's Hammer Ambassador
+(@CGUID+833, 0, 0, 1, 0, 0, '12544'), -- Twilight's Hammer Ambassador
+(@CGUID+837, 0, 0, 1, 0, 0, NULL), -- Arena Spectator
+(@CGUID+838, 0, 0, 1, 0, 0, NULL), -- Arena Spectator
+(@CGUID+839, 0, 0, 1, 0, 0, NULL), -- Arena Spectator
+(@CGUID+840, 0, 0, 1, 0, 0, NULL), -- Arena Spectator
+(@CGUID+932, 0, 0, 1, 0, 0, NULL), -- Bloodhound
+(@CGUID+941, 0, 0, 1, 0, 0, NULL), -- Bloodhound
+(@CGUID+944, 0, 0, 1, 0, 0, NULL), -- Bloodhound
+(@CGUID+950, 0, 0, 1, 0, 0, NULL), -- Bloodhound
+(@CGUID+951, 0, 0, 1, 0, 0, NULL), -- Bloodhound
+(@CGUID+955, 0, 0, 1, 0, 0, NULL), -- Bloodhound
+(@CGUID+1028, 0, 0, 1, 10, 0, NULL), -- Grim Patron
+(@CGUID+1039, 0, 0, 1, 10, 0, NULL), -- Grim Patron
+(@CGUID+1059, 0, 0, 1, 10, 0, NULL), -- Guzzling Patron
+(@CGUID+1075, 0, 0, 1, 10, 0, NULL), -- Guzzling Patron
+(@CGUID+1080, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
+(@CGUID+1081, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
+(@CGUID+1082, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
+(@CGUID+1083, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
+(@CGUID+1084, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
+(@CGUID+1085, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
+(@CGUID+1087, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
+(@CGUID+1089, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
+(@CGUID+1090, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
+(@CGUID+1115, 0, 1, 1, 0, 0, NULL), -- Tortured Slave
+(@CGUID+1116, 0, 0, 1, 0, 0, NULL), -- Tortured Slave
+(@CGUID+1117, 0, 0, 1, 93, 0, NULL); -- Tortured Slave
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(8889, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Overseer
-(8890, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Warden
-(8891, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Guardsman
-(8892, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Footman
-(8893, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Soldier
-(8894, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Medic
-(8895, 0, 0, 1, 16, 0, 0, '13864'), -- Anvilrage Officer
-(8896, 0, 0, 1, 16, 0, 0, '13864'), -- Shadowforge Peasant
-(8897, 0, 0, 1, 16, 133, 0, NULL), -- Doomforge Craftsman
-(8898, 0, 8, 1, 16, 0, 0, NULL), -- Anvilrage Marshal
-(8899, 0, 8, 1, 16, 0, 0, NULL), -- Doomforge Dragoon
-(8900, 0, 0, 1, 16, 0, 0, NULL), -- Doomforge Arcanasmith
-(8901, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Reservist
-(8902, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Citizen
-(8903, 0, 0, 1, 16, 0, 0, NULL), -- Anvilrage Captain
-(8904, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Senator
-(8905, 0, 0, 1, 16, 0, 0, NULL), -- Warbringer Construct
-(8906, 0, 0, 1, 16, 0, 0, '15088'), -- Ragereaver Golem
-(8907, 0, 0, 1, 16, 0, 0, NULL), -- Wrath Hammer Construct
-(8908, 0, 0, 1, 16, 0, 0, '13377 15506'), -- Molten War Golem
-(8909, 0, 0, 1, 16, 0, 0, NULL), -- Fireguard
-(8910, 0, 0, 1, 16, 0, 0, NULL), -- Blazing Fireguard
-(8911, 0, 0, 1, 16, 0, 0, '3417'), -- Fireguard Destroyer
-(8912, 0, 0, 1, 16, 0, 0, '13616'), -- Twilight's Hammer Torturer
-(8913, 0, 0, 1, 16, 0, 0, '12544'), -- Twilight Emissary
-(8914, 0, 0, 1, 16, 0, 0, '15288'), -- Twilight Bodyguard
-(8915, 0, 0, 1, 16, 0, 0, NULL), -- Twilight's Hammer Ambassador
-(8916, 0, 0, 1, 16, 0, 0, '13864'), -- Arena Spectator
-(8920, 0, 0, 1, 16, 0, 0, NULL), -- Weapon Technician
-(8921, 0, 0, 1, 16, 0, 0, '8279'), -- Bloodhound
-(8922, 0, 0, 1, 16, 0, 0, '8279'), -- Bloodhound Mastiff
-(8923, 0, 0, 1, 16, 0, 0, NULL), -- Panzor the Invincible
-(8929, 0, 0, 1, 16, 0, 0, NULL), -- Princess Moira Bronzebeard
-(8982, 0, 0, 1, 16, 0, 0, '10255'), -- Ironhand Guardian
-(8983, 0, 0, 1, 16, 0, 0, NULL), -- Golem Lord Argelmach
-(9016, 0, 0, 1, 16, 0, 0, NULL), -- Bael'Gar
-(9017, 0, 0, 1, 16, 0, 0, NULL), -- Lord Incendius
-(9018, 0, 0, 1, 16, 0, 0, NULL), -- High Interrogator Gerstahn
-(9019, 0, 0, 1, 16, 0, 0, NULL), -- Emperor Dagran Thaurissan
-(9020, 0, 0, 1, 16, 0, 0, NULL), -- Commander Gor'shak
-(9021, 0, 0, 1, 16, 0, 0, NULL), -- Kharan Mighthammer
-(9022, 0, 0, 1, 16, 0, 0, NULL), -- Dughal Stormwing
-(9023, 0, 0, 1, 16, 0, 0, NULL), -- Marshal Windsor
-(9024, 0, 8, 1, 16, 0, 0, '15288'), -- Pyromancer Loregrain
-(9025, 0, 0, 1, 16, 0, 0, NULL), -- Lord Roccor
-(9033, 0, 0, 1, 16, 0, 0, NULL), -- General Angerforge
-(9034, 0, 0, 1, 16, 0, 0, NULL), -- Hate'rel
-(9035, 0, 0, 1, 16, 0, 0, NULL), -- Anger'rel
-(9036, 0, 0, 1, 16, 0, 0, NULL), -- Vile'rel
-(9037, 0, 0, 1, 16, 0, 0, NULL), -- Gloom'rel
-(9038, 0, 0, 1, 16, 0, 0, '12544'), -- Seeth'rel
-(9039, 0, 0, 1, 16, 0, 0, '13787'), -- Doom'rel
-(9040, 0, 0, 1, 16, 0, 0, '32199'), -- Dope'rel
-(9041, 0, 0, 1, 16, 0, 0, '12544'), -- Warder Stilgiss
-(9042, 0, 0, 1, 16, 0, 0, '8876'), -- Verek
-(9056, 0, 0, 1, 16, 0, 0, NULL), -- Fineous Darkvire
-(9156, 0, 0, 1, 16, 0, 0, NULL), -- Ambassador Flamelash
-(9319, 0, 0, 1, 16, 0, 0, NULL), -- Houndmaster Grebmar
-(9499, 0, 0, 1, 16, 0, 0, '13787'), -- Plugger Spazzring
-(9500, 0, 0, 1, 16, 0, 0, NULL), -- Mistress Nagmara
-(9502, 0, 0, 1, 16, 0, 0, NULL), -- Phalanx
-(9503, 0, 0, 1, 16, 0, 0, NULL), -- Private Rocknot
-(9543, 0, 0, 1, 16, 0, 0, NULL), -- Ribbly Screwspigot
-(9545, 0, 0, 1, 16, 0, 0, NULL), -- Grim Patron
-(9547, 0, 0, 1, 16, 0, 0, NULL), -- Guzzling Patron
-(9554, 0, 0, 1, 16, 10, 0, '14869'), -- Hammered Patron
-(9677, 0, 0, 1, 16, 0, 0, '8876'), -- Ograbisi
-(9678, 0, 0, 1, 16, 0, 0, NULL), -- Shill Dinger
-(9679, 0, 0, 1, 16, 0, 0, NULL), -- Tobias Seecher
-(9680, 0, 0, 1, 16, 0, 0, NULL), -- Crest Killer
-(9681, 0, 0, 1, 16, 0, 0, NULL), -- Jaz
-(9938, 0, 0, 1, 16, 0, 0, NULL), -- Magmus
-(9956, 0, 0, 1, 16, 0, 0, NULL), -- Shadowforge Flame Keeper
-(10043, 0, 0, 1, 16, 0, 0, '13299'), -- Ribbly's Crony
-(10116, 0, 0, 1, 16, 0, 0, NULL), -- Slave
-(10117, 0, 7, 1, 16, 0, 0, NULL), -- Tortured Slave
-(12944, 0, 0, 1, 16, 0, 0, NULL), -- Lokhtos Darkbargainer
-(15549, 0, 0, 1, 16, 0, 0, '25824'), -- Elder Morndeep
-(16079, 0, 0, 1, 16, 0, 0, NULL); -- Theldren Trigger
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(8889, 0, 0, 1, 0, 0, NULL), -- Anvilrage Overseer
+(8890, 0, 0, 1, 0, 0, NULL), -- Anvilrage Warden
+(8891, 0, 0, 1, 0, 0, NULL), -- Anvilrage Guardsman
+(8892, 0, 0, 1, 0, 0, NULL), -- Anvilrage Footman
+(8893, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Soldier
+(8894, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Medic
+(8895, 0, 0, 1, 0, 0, '13864'), -- Anvilrage Officer
+(8896, 0, 0, 1, 0, 0, '13864'), -- Shadowforge Peasant
+(8897, 0, 0, 1, 133, 0, NULL), -- Doomforge Craftsman
+(8898, 0, 8, 1, 0, 0, NULL), -- Anvilrage Marshal
+(8899, 0, 8, 1, 0, 0, NULL), -- Doomforge Dragoon
+(8900, 0, 0, 1, 0, 0, NULL), -- Doomforge Arcanasmith
+(8901, 0, 0, 1, 0, 0, NULL), -- Anvilrage Reservist
+(8902, 0, 0, 1, 0, 0, NULL), -- Shadowforge Citizen
+(8903, 0, 0, 1, 0, 0, NULL), -- Anvilrage Captain
+(8904, 0, 0, 1, 0, 0, NULL), -- Shadowforge Senator
+(8905, 0, 0, 1, 0, 0, NULL), -- Warbringer Construct
+(8906, 0, 0, 1, 0, 0, '15088'), -- Ragereaver Golem
+(8907, 0, 0, 1, 0, 0, NULL), -- Wrath Hammer Construct
+(8908, 0, 0, 1, 0, 0, '13377 15506'), -- Molten War Golem
+(8909, 0, 0, 1, 0, 0, NULL), -- Fireguard
+(8910, 0, 0, 1, 0, 0, NULL), -- Blazing Fireguard
+(8911, 0, 0, 1, 0, 0, '3417'), -- Fireguard Destroyer
+(8912, 0, 0, 1, 0, 0, '13616'), -- Twilight's Hammer Torturer
+(8913, 0, 0, 1, 0, 0, '12544'), -- Twilight Emissary
+(8914, 0, 0, 1, 0, 0, '15288'), -- Twilight Bodyguard
+(8915, 0, 0, 1, 0, 0, NULL), -- Twilight's Hammer Ambassador
+(8916, 0, 0, 1, 0, 0, '13864'), -- Arena Spectator
+(8920, 0, 0, 1, 0, 0, NULL), -- Weapon Technician
+(8921, 0, 0, 1, 0, 0, '8279'), -- Bloodhound
+(8922, 0, 0, 1, 0, 0, '8279'), -- Bloodhound Mastiff
+(8923, 0, 0, 1, 0, 0, NULL), -- Panzor the Invincible
+(8929, 0, 0, 1, 0, 0, NULL), -- Princess Moira Bronzebeard
+(8982, 0, 0, 1, 0, 0, '10255'), -- Ironhand Guardian
+(8983, 0, 0, 1, 0, 0, NULL), -- Golem Lord Argelmach
+(9016, 0, 0, 1, 0, 0, NULL), -- Bael'Gar
+(9017, 0, 0, 1, 0, 0, NULL), -- Lord Incendius
+(9018, 0, 0, 1, 0, 0, NULL), -- High Interrogator Gerstahn
+(9019, 0, 0, 1, 0, 0, NULL), -- Emperor Dagran Thaurissan
+(9020, 0, 0, 1, 0, 0, NULL), -- Commander Gor'shak
+(9021, 0, 0, 1, 0, 0, NULL), -- Kharan Mighthammer
+(9022, 0, 0, 1, 0, 0, NULL), -- Dughal Stormwing
+(9023, 0, 0, 1, 0, 0, NULL), -- Marshal Windsor
+(9024, 0, 8, 1, 0, 0, '15288'), -- Pyromancer Loregrain
+(9025, 0, 0, 1, 0, 0, NULL), -- Lord Roccor
+(9033, 0, 0, 1, 0, 0, NULL), -- General Angerforge
+(9034, 0, 0, 1, 0, 0, NULL), -- Hate'rel
+(9035, 0, 0, 1, 0, 0, NULL), -- Anger'rel
+(9036, 0, 0, 1, 0, 0, NULL), -- Vile'rel
+(9037, 0, 0, 1, 0, 0, NULL), -- Gloom'rel
+(9038, 0, 0, 1, 0, 0, '12544'), -- Seeth'rel
+(9039, 0, 0, 1, 0, 0, '13787'), -- Doom'rel
+(9040, 0, 0, 1, 0, 0, '32199'), -- Dope'rel
+(9041, 0, 0, 1, 0, 0, '12544'), -- Warder Stilgiss
+(9042, 0, 0, 1, 0, 0, '8876'), -- Verek
+(9056, 0, 0, 1, 0, 0, NULL), -- Fineous Darkvire
+(9156, 0, 0, 1, 0, 0, NULL), -- Ambassador Flamelash
+(9319, 0, 0, 1, 0, 0, NULL), -- Houndmaster Grebmar
+(9499, 0, 0, 1, 0, 0, '13787'), -- Plugger Spazzring
+(9500, 0, 0, 1, 0, 0, NULL), -- Mistress Nagmara
+(9502, 0, 0, 1, 0, 0, NULL), -- Phalanx
+(9503, 0, 0, 1, 0, 0, NULL), -- Private Rocknot
+(9543, 0, 0, 1, 0, 0, NULL), -- Ribbly Screwspigot
+(9545, 0, 0, 1, 0, 0, NULL), -- Grim Patron
+(9547, 0, 0, 1, 0, 0, NULL), -- Guzzling Patron
+(9554, 0, 0, 1, 10, 0, '14869'), -- Hammered Patron
+(9677, 0, 0, 1, 0, 0, '8876'), -- Ograbisi
+(9678, 0, 0, 1, 0, 0, NULL), -- Shill Dinger
+(9679, 0, 0, 1, 0, 0, NULL), -- Tobias Seecher
+(9680, 0, 0, 1, 0, 0, NULL), -- Crest Killer
+(9681, 0, 0, 1, 0, 0, NULL), -- Jaz
+(9938, 0, 0, 1, 0, 0, NULL), -- Magmus
+(9956, 0, 0, 1, 0, 0, NULL), -- Shadowforge Flame Keeper
+(10043, 0, 0, 1, 0, 0, '13299'), -- Ribbly's Crony
+(10116, 0, 0, 1, 0, 0, NULL), -- Slave
+(10117, 0, 7, 1, 0, 0, NULL), -- Tortured Slave
+(12944, 0, 0, 1, 0, 0, NULL), -- Lokhtos Darkbargainer
+(15549, 0, 0, 1, 0, 0, '25824'), -- Elder Morndeep
+(16079, 0, 0, 1, 0, 0, NULL); -- Theldren Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+364, @CGUID+1005, 1031), -- Anvilrage Reservist -> General Angerforge

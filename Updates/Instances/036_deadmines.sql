@@ -677,35 +677,35 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (647, 0, 12, -65.46484, -836.7028, 41.12366, 100, 0, 0),
 (647, 0, 13, -64.1282, -832.9458, 41.23405, 100, 2000, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+62, 0, 0, 1, 16, 0, 0, NULL), -- Goblin Woodcarver
-(@CGUID+64, 0, 0, 1, 16, 0, 0, NULL), -- Goblin Woodcarver
-(@CGUID+68, 0, 0, 1, 16, 0, 0, NULL), -- Goblin Woodcarver
-(@CGUID+70, 0, 0, 1, 16, 0, 0, NULL); -- Goblin Woodcarver
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+62, 0, 0, 1, 0, 0, NULL), -- Goblin Woodcarver
+(@CGUID+64, 0, 0, 1, 0, 0, NULL), -- Goblin Woodcarver
+(@CGUID+68, 0, 0, 1, 0, 0, NULL), -- Goblin Woodcarver
+(@CGUID+70, 0, 0, 1, 0, 0, NULL); -- Goblin Woodcarver
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(598, 0, 0, 1, 16, 233, 0, NULL), -- Defias Miner
-(622, 0, 0, 1, 16, 0, 0, NULL), -- Goblin Engineer
-(634, 0, 0, 1, 16, 0, 0, NULL), -- Defias Overseer
-(636, 0, 0, 1, 16, 0, 0, '6408'), -- Defias Blackguard
-(639, 0, 0, 1, 16, 0, 0, '12787'), -- Edwin VanCleef
-(641, 0, 0, 1, 16, 234, 0, NULL), -- Goblin Woodcarver
-(642, 0, 0, 1, 16, 0, 0, NULL), -- Sneed's Shredder
-(644, 0, 0, 1, 16, 0, 0, NULL), -- Rhahk'Zor
-(645, 0, 0, 1, 16, 0, 0, NULL), -- Cookie
-(646, 0, 0, 1, 16, 0, 0, NULL), -- Mr. Smite
-(647, 0, 0, 1, 16, 0, 0, NULL), -- Captain Greenskin
-(657, 0, 0, 1, 16, 0, 0, NULL), -- Defias Pirate
-(1725, 0, 0, 1, 16, 0, 0, NULL), -- Defias Watchman
-(1729, 0, 0, 1, 16, 0, 0, NULL), -- Defias Evoker
-(1731, 0, 0, 1, 16, 0, 0, NULL), -- Goblin Craftsman
-(1732, 0, 0, 1, 16, 0, 0, '12544'), -- Defias Squallshaper
-(1763, 0, 0, 1, 16, 0, 0, NULL), -- Gilnid
-(3586, 0, 0, 1, 16, 173, 0, NULL), -- Miner Johnson
-(3947, 0, 0, 1, 16, 0, 0, NULL), -- Goblin Shipbuilder
-(4416, 0, 0, 1, 16, 233, 0, NULL), -- Defias Strip Miner
-(4417, 0, 0, 1, 16, 0, 0, NULL), -- Defias Taskmaster
-(4418, 0, 0, 1, 16, 0, 0, NULL); -- Defias Wizard
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(598, 0, 0, 1, 233, 0, NULL), -- Defias Miner
+(622, 0, 0, 1, 0, 0, NULL), -- Goblin Engineer
+(634, 0, 0, 1, 0, 0, NULL), -- Defias Overseer
+(636, 0, 0, 1, 0, 0, '6408'), -- Defias Blackguard
+(639, 0, 0, 1, 0, 0, '12787'), -- Edwin VanCleef
+(641, 0, 0, 1, 234, 0, NULL), -- Goblin Woodcarver
+(642, 0, 0, 1, 0, 0, NULL), -- Sneed's Shredder
+(644, 0, 0, 1, 0, 0, NULL), -- Rhahk'Zor
+(645, 0, 0, 1, 0, 0, NULL), -- Cookie
+(646, 0, 0, 1, 0, 0, NULL), -- Mr. Smite
+(647, 0, 0, 1, 0, 0, NULL), -- Captain Greenskin
+(657, 0, 0, 1, 0, 0, NULL), -- Defias Pirate
+(1725, 0, 0, 1, 0, 0, NULL), -- Defias Watchman
+(1729, 0, 0, 1, 0, 0, NULL), -- Defias Evoker
+(1731, 0, 0, 1, 0, 0, NULL), -- Goblin Craftsman
+(1732, 0, 0, 1, 0, 0, '12544'), -- Defias Squallshaper
+(1763, 0, 0, 1, 0, 0, NULL), -- Gilnid
+(3586, 0, 0, 1, 173, 0, NULL), -- Miner Johnson
+(3947, 0, 0, 1, 0, 0, NULL), -- Goblin Shipbuilder
+(4416, 0, 0, 1, 233, 0, NULL), -- Defias Strip Miner
+(4417, 0, 0, 1, 0, 0, NULL), -- Defias Taskmaster
+(4418, 0, 0, 1, 0, 0, NULL); -- Defias Wizard
 
 INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
 (@CGUID+113, 1),(@CGUID+114, 1),(@CGUID+115, 1),(@CGUID+116, 1),(@CGUID+117, 1),(@CGUID+118, 1),(@CGUID+119, 1),(@CGUID+120, 1); -- Rat - SPAWN_FLAG_RUN_ON_SPAWN

@@ -289,71 +289,71 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (17976, 0, 33, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
 (17976, 0, 34, 159.54, 287.615, -4.10529, 5.3792, 10000, 1797601);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+6, 0, 0, 1, 0, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+7, 0, 0, 1, 0, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+8, 0, 0, 1, 0, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+9, 0, 0, 1, 0, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+10, 0, 0, 1, 0, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+11, 0, 0, 1, 0, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+12, 0, 0, 1, 0, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+15, 0, 0, 1, 0, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+16, 0, 0, 1, 0, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+17, 0, 0, 1, 0, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+18, 0, 0, 1, 0, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+19, 0, 0, 1, 0, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+44, 0, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+45, 0, 8, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+46, 0, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+47, 0, 8, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+49, 0, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+50, 0, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+51, 0, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+54, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Researcher
-(@CGUID+55, 0, 0, 1, 0, 0, 0, NULL), -- Sunseeker Researcher
-(@CGUID+56, 0, 0, 1, 0, 0, 0, NULL), -- Sunseeker Researcher
-(@CGUID+57, 0, 0, 1, 0, 0, 0, NULL), -- Sunseeker Researcher
-(@CGUID+58, 0, 0, 1, 0, 0, 0, NULL), -- Sunseeker Researcher
-(@CGUID+59, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Researcher
-(@CGUID+60, 0, 0, 1, 0, 69, 0, NULL), -- Sunseeker Researcher
-(@CGUID+61, 0, 0, 1, 0, 0, 0, NULL), -- Sunseeker Researcher
-(@CGUID+62, 0, 0, 1, 0, 0, 0, NULL), -- Sunseeker Researcher
-(@CGUID+63, 0, 8, 0, 0, 0, 0, NULL), -- Sunseeker Botanist
-(@CGUID+65, 0, 8, 0, 0, 0, 0, NULL), -- Sunseeker Botanist
-(@CGUID+67, 0, 8, 0, 0, 0, 0, NULL), -- Sunseeker Botanist
-(@CGUID+68, 0, 0, 1, 0, 0, 0, NULL), -- Sunseeker Botanist
-(@CGUID+69, 0, 0, 1, 0, 0, 0, NULL), -- Sunseeker Botanist
-(@CGUID+86, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Chemist
-(@CGUID+87, 0, 0, 1, 0, 69, 0, NULL), -- Sunseeker Chemist
-(@CGUID+88, 0, 0, 1, 0, 69, 0, NULL), -- Sunseeker Chemist
-(@CGUID+89, 0, 0, 1, 0, 69, 0, NULL), -- Sunseeker Chemist
-(@CGUID+90, 0, 0, 1, 0, 0, 0, NULL), -- Sunseeker Chemist
-(@CGUID+97, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+98, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+99, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+100, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+101, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+102, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+103, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+104, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+105, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+106, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+107, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+108, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+109, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+110, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+111, 0, 7, 1, 0, 0, 0, NULL), -- Sunseeker Gene-Splicer
-(@CGUID+112, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Herbalist
-(@CGUID+113, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Herbalist
-(@CGUID+116, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Harvester
-(@CGUID+117, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Harvester
-(@CGUID+118, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Harvester
-(@CGUID+119, 0, 0, 0, 0, 69, 0, NULL), -- Sunseeker Harvester
-(@CGUID+179, 0, 8, 0, 0, 0, 0, NULL); -- Bloodwarder Mender
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+6, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
+(@CGUID+7, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
+(@CGUID+8, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
+(@CGUID+9, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
+(@CGUID+10, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
+(@CGUID+11, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
+(@CGUID+12, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
+(@CGUID+15, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
+(@CGUID+16, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
+(@CGUID+17, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
+(@CGUID+18, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
+(@CGUID+19, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
+(@CGUID+44, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+45, 0, 8, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+46, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+47, 0, 8, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+49, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+50, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+51, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+54, 0, 0, 0, 69, 0, NULL), -- Sunseeker Researcher
+(@CGUID+55, 0, 0, 1, 0, 0, NULL), -- Sunseeker Researcher
+(@CGUID+56, 0, 0, 1, 0, 0, NULL), -- Sunseeker Researcher
+(@CGUID+57, 0, 0, 1, 0, 0, NULL), -- Sunseeker Researcher
+(@CGUID+58, 0, 0, 1, 0, 0, NULL), -- Sunseeker Researcher
+(@CGUID+59, 0, 0, 0, 69, 0, NULL), -- Sunseeker Researcher
+(@CGUID+60, 0, 0, 1, 69, 0, NULL), -- Sunseeker Researcher
+(@CGUID+61, 0, 0, 1, 0, 0, NULL), -- Sunseeker Researcher
+(@CGUID+62, 0, 0, 1, 0, 0, NULL), -- Sunseeker Researcher
+(@CGUID+63, 0, 8, 0, 0, 0, NULL), -- Sunseeker Botanist
+(@CGUID+65, 0, 8, 0, 0, 0, NULL), -- Sunseeker Botanist
+(@CGUID+67, 0, 8, 0, 0, 0, NULL), -- Sunseeker Botanist
+(@CGUID+68, 0, 0, 1, 0, 0, NULL), -- Sunseeker Botanist
+(@CGUID+69, 0, 0, 1, 0, 0, NULL), -- Sunseeker Botanist
+(@CGUID+86, 0, 0, 0, 69, 0, NULL), -- Sunseeker Chemist
+(@CGUID+87, 0, 0, 1, 69, 0, NULL), -- Sunseeker Chemist
+(@CGUID+88, 0, 0, 1, 69, 0, NULL), -- Sunseeker Chemist
+(@CGUID+89, 0, 0, 1, 69, 0, NULL), -- Sunseeker Chemist
+(@CGUID+90, 0, 0, 1, 0, 0, NULL), -- Sunseeker Chemist
+(@CGUID+97, 0, 0, 0, 69, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+98, 0, 0, 0, 69, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+99, 0, 0, 0, 69, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+100, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+101, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+102, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+103, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+104, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+105, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+106, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+107, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+108, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+109, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+110, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+111, 0, 7, 1, 0, 0, NULL), -- Sunseeker Gene-Splicer
+(@CGUID+112, 0, 0, 0, 69, 0, NULL), -- Sunseeker Herbalist
+(@CGUID+113, 0, 0, 0, 69, 0, NULL), -- Sunseeker Herbalist
+(@CGUID+116, 0, 0, 0, 69, 0, NULL), -- Sunseeker Harvester
+(@CGUID+117, 0, 0, 0, 69, 0, NULL), -- Sunseeker Harvester
+(@CGUID+118, 0, 0, 0, 69, 0, NULL), -- Sunseeker Harvester
+(@CGUID+119, 0, 0, 0, 69, 0, NULL), -- Sunseeker Harvester
+(@CGUID+179, 0, 8, 0, 0, 0, NULL); -- Bloodwarder Mender
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(17976, 0, 0, 1, 16, 0, 0, '19818 34792'), -- Commander Sarannis
-(19843, 0, 0, 1, 16, 0, 0, '30831'); -- Nethervine Trickster
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(17976, 0, 0, 1, 0, 0, '19818 34792'), -- Commander Sarannis
+(19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+15, @CGUID+16, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
@@ -767,7 +767,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1797604, 1000, 1, 66, 0, 0, 17993, @CGUID+23, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
 (1799301, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Run Mode On'),
 (1799301, 0, 22, 190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Set Faction 190'),
-(1799301, 0, 4, 46, 33587264, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - (UNIT_FLAG_UNK_6 + UNIT_FLAG_SWIMMING) + UNIT_FLAG_NOT_SELECTABLE'),
+(1799301, 0, 48, 33554432, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Add UNIT_FLAG_NOT_SELECTABLE'),
 (1799302, 0, 15, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Cast Suicide'),
 (1799302, 17000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Despawn'),
 (1799303, 300, 0, 0, 0, 0, 0, 0, 0, 2000020100, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Text'),
@@ -797,7 +797,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1950504, 2000, 15, 34222, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Cast Sunseeker Blessing AOE'),
 (1950505, 1000, 1, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Emote'),
 (1950506, 1000, 15, 34173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Cast Sunseeker Blessing'),
-(1950701, 0, 4, 46, 33587264, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - (UNIT_FLAG_UNK_6 + UNIT_FLAG_SWIMMING) + UNIT_FLAG_NOT_SELECTABLE'),
+(1950701, 0, 48, 33554432, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - Add UNIT_FLAG_NOT_SELECTABLE'),
 (1950701, 0, 22, 190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - Set Faction 190'),
 (1950701, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - MovementType 0');
 

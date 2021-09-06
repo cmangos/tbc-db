@@ -18,22 +18,22 @@ SET @OGUID := 5340000; -- gameobjects
 -- ----------------------------------
 -- All creature_template_addons go here:
 -- ----------------------------------
-REPLACE INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, b2_1_flags, emote, moveflags, auras) VALUES
-(17772, 0, 0, 1, 16, 0, 0, '31745'), -- Lady Jaina Proudmoore
-(17818, 0, 0, 1, 16, 0, 0, ''), -- Towering Infernal -- Immolation added in Boss Script
-(17852, 0, 0, 1, 16, 0, 0, '31745'), -- Thrall
-(17864, 0, 0, 1, 16, 0, 0, '12787'), -- Lesser Doomguard
-(17895, 0, 0, 1, 16, 0, 0, '8278'), -- Ghoul
-(17898, 0, 0, 1, 16, 0, 0, '31607'), -- Abomination
-(17902, 0, 0, 1, 16, 0, 0, '19818'), -- Skeleton Invader
-(17906, 0, 0, 1, 16, 0, 0, '8278'), -- Gargoyle
-(17908, 0, 0, 1, 16, 0, 0, ''), -- Giant Infernal
-(17932, 0, 0, 1, 16, 0, 0, '19818'), -- Horde Grunt also serverside s.31887
-(17933, 0, 0, 1, 16, 0, 0, '31757'), -- Tauren Warrior
-(17937, 0, 0, 1, 16, 234, 0, NULL), -- Horde Peon
-(17945, 9991, 0, 1, 16, 0, 0, NULL), -- Night Elf Huntress
-(17948, 6080, 0, 1, 16, 0, 0, NULL), -- Tyrande Whisperwind
-(18036, 0, 0, 0, 0, 0, 0, NULL); -- Horde Healing Ward
+REPLACE INTO creature_template_addon (entry, mount, bytes1, b2_0_sheath, emote, moveflags, auras) VALUES
+(17772, 0, 0, 1, 0, 0, '31745'), -- Lady Jaina Proudmoore
+(17818, 0, 0, 1, 0, 0, ''), -- Towering Infernal -- Immolation added in Boss Script
+(17852, 0, 0, 1, 0, 0, '31745'), -- Thrall
+(17864, 0, 0, 1, 0, 0, '12787'), -- Lesser Doomguard
+(17895, 0, 0, 1, 0, 0, '8278'), -- Ghoul
+(17898, 0, 0, 1, 0, 0, '31607'), -- Abomination
+(17902, 0, 0, 1, 0, 0, '19818'), -- Skeleton Invader
+(17906, 0, 0, 1, 0, 0, '8278'), -- Gargoyle
+(17908, 0, 0, 1, 0, 0, ''), -- Giant Infernal
+(17932, 0, 0, 1, 0, 0, '19818'), -- Horde Grunt also serverside s.31887
+(17933, 0, 0, 1, 0, 0, '31757'), -- Tauren Warrior
+(17937, 0, 0, 1, 234, 0, NULL), -- Horde Peon
+(17945, 9991, 0, 1, 0, 0, NULL), -- Night Elf Huntress
+(17948, 6080, 0, 1, 0, 0, NULL), -- Tyrande Whisperwind
+(18036, 0, 0, 0, 0, 0, NULL); -- Horde Healing Ward
 
 -- ------------------------------------------------------------------------------------------
 -- "Room" specific content added below:
@@ -774,8 +774,8 @@ INSERT INTO creature_linking (guid, master_guid, flag) VALUES
 -- ----------------------------------
 -- creature_addon
 -- ----------------------------------
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CHGUID+19, 0, 0, 0, 16, 69, 0, '31757');
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CHGUID+19, 0, 0, 0, 69, 0, '31757');
 
 -- ******************************************************************************************************************************************************************** --
 -- Night Elf Base .go 5183.781738 -3412.168701 1630.599487 534

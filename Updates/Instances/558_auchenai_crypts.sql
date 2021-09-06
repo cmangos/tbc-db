@@ -345,38 +345,38 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (18371, 0, 1, -24.40752, -163.4984, 26.1806, 0, 10000, 0),
 (18371, 0, 2, -63.11897, -162.7913, 26.52851, 0, 10000, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+3, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+4, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+5, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+6, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+7, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+8, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+12, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Soulpriest
-(@CGUID+15, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+19, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+20, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+21, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+22, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+25, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
-(@CGUID+26, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Vindicator
-(@CGUID+28, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+29, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+30, 0, 8, 0, 0, 68, 0, NULL), -- creature_spawn_entry
-(@CGUID+31, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Monk
-(@CGUID+33, 0, 0, 1, 0, 375, 0, NULL), -- Auchenai Monk
-(@CGUID+36, 0, 8, 0, 0, 68, 0, NULL), -- Auchenai Monk
-(@CGUID+37, 0, 0, 1, 0, 375, 0, NULL), -- Auchenai Monk
-(@CGUID+38, 0, 0, 1, 0, 375, 0, NULL), -- Auchenai Monk
-(@CGUID+40, 0, 0, 1, 0, 375, 0, NULL), -- Auchenai Monk
-(@CGUID+41, 0, 8, 0, 0, 68, 0, NULL); -- creature_spawn_entry
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+3, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+4, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+5, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+6, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+7, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+8, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+12, 0, 8, 0, 68, 0, NULL), -- Auchenai Soulpriest
+(@CGUID+15, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+19, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+20, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+21, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+22, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+25, 0, 8, 0, 68, 0, NULL), -- Auchenai Vindicator
+(@CGUID+26, 0, 8, 0, 68, 0, NULL), -- Auchenai Vindicator
+(@CGUID+28, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+29, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+30, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+31, 0, 8, 0, 68, 0, NULL), -- Auchenai Monk
+(@CGUID+33, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
+(@CGUID+36, 0, 8, 0, 68, 0, NULL), -- Auchenai Monk
+(@CGUID+37, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
+(@CGUID+38, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
+(@CGUID+40, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
+(@CGUID+41, 0, 8, 0, 68, 0, NULL); -- creature_spawn_entry
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(18506,  0, 0, 1, 16, 0, 0, '35841 35850'), -- Raging Soul
-(18521, 0, 0, 1, 16, 0, 0, '10095'), -- Raging Skeleton
-(18524, 0, 0, 1, 16, 0, 0, '32885'), -- Angered Skeleton
-(18559, 0, 0, 0, 0, 0, 0, '31748'), -- Phasing Stalker
-(18700, 0, 0, 0, 0, 0, 0, '19818'); -- Reanimated Bones
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(18506, 0, 0, 1, 0, 0, '35841 35850'), -- Raging Soul
+(18521, 0, 0, 1, 0, 0, '10095'), -- Raging Skeleton
+(18524, 0, 0, 1, 0, 0, '32885'), -- Angered Skeleton
+(18559, 0, 0, 0, 0, 0, '31748'), -- Phasing Stalker
+(18700, 0, 0, 0, 0, 0, '19818'); -- Reanimated Bones
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+3, @CGUID+4, 1155), -- creature_spawn_entry -> creature_spawn_entry

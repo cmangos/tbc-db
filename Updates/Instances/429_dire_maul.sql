@@ -1060,84 +1060,84 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14566, 0, 27, -18.00219, 278.0495, -8.436031, 100, 0, 0),
 (14566, 0, 29, -23.79626, 286.6538, -7.955163, 100, 100, 3); -- Waypoint Pause as incomplete
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+181, 0, 0, 0, 0, 400, 0, NULL);
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+181, 0, 0, 0, 400, 0, NULL);
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(11441, 0, 0, 1, 16, 0, 0, '19818'), -- Gordok Brute
-(11445, 0, 0, 1, 0, 0, 0, NULL), -- Gordok Captain
-(11446, 0, 0, 1, 0, 0, 0, NULL), -- Gordok Spirit
-(11451, 0, 0, 1, 0, 0, 0, NULL), -- Wildspawn Satyr
-(11452, 0, 0, 1, 0, 0, 0, '13299'), -- Wildspawn Rogue
-(11453, 0, 0, 1, 0, 0, 0, NULL), -- Wildspawn Trickster
-(11454, 0, 0, 1, 0, 0, 0, NULL), -- Wildspawn Betrayer
-(11455, 0, 0, 1, 0, 0, 0, '22418'), -- Wildspawn Felsworn
-(11456, 0, 0, 1, 16, 0, 0, '8601 18950 22766'), -- Wildspawn Shadowstalker
-(11457, 0, 0, 1, 0, 0, 0, '13377'), -- Wildspawn Hellcaller
-(11458, 0, 0, 1, 0, 0, 0, NULL), -- Petrified Treant
-(11459, 0, 0, 1, 0, 0, 0, NULL), -- Ironbark Protector
-(11461, 0, 0, 1, 0, 0, 0, NULL), -- Warpwood Guardian
-(11462, 0, 0, 1, 0, 0, 0, NULL), -- Warpwood Treant
-(11464, 0, 0, 1, 0, 0, 0, NULL), -- Warpwood Tangler
-(11465, 0, 0, 1, 0, 0, 0, '8876'), -- Warpwood Stomper
-(11466, 0, 0, 1, 0, 193, 0, NULL), -- Highborne Summoner
-(11469, 0, 0, 1, 0, 0, 0, '13377'), -- Eldreth Seether
-(11470, 0, 0, 1, 0, 0, 0, NULL), -- Eldreth Sorcerer
-(11471, 0, 0, 1, 0, 0, 0, '18100'), -- Eldreth Apparition
-(11472, 0, 0, 1, 0, 0, 0, NULL), -- Eldreth Spirit
-(11473, 0, 0, 1, 0, 0, 0, '18950'), -- Eldreth Spectre
-(11475, 0, 0, 1, 0, 0, 0, NULL), -- Eldreth Phantasm
-(11476, 0, 0, 1, 0, 0, 0, NULL), -- Skeletal Highborne
-(11477, 0, 0, 1, 0, 0, 0, NULL), -- Rotting Highborne
-(11480, 0, 0, 1, 0, 0, 0, NULL), -- Arcane Aberration
-(11483, 0, 0, 1, 0, 0, 0, NULL), -- Mana Remnant
-(11484, 0, 0, 1, 0, 0, 0, NULL), -- Residual Monstrosity
-(11486, 0, 0, 1, 0, 0, 0, '8876'), -- Prince Tortheldrin
-(11487, 0, 8, 1, 0, 0, 0, '21157'), -- Magister Kalendris
-(11488, 0, 0, 1, 0, 0, 0, NULL), -- Illyanna Ravenoak
-(11489, 0, 0, 1, 0, 0, 0, NULL), -- Tendris Warpwood
-(11490, 0, 0, 1, 0, 0, 0, NULL), -- Zevrim Thornhoof
-(11491, 0, 0, 1, 0, 0, 0, NULL), -- Old Ironbark
-(11492, 0, 0, 1, 0, 0, 0, '22128 21157'), -- Alzzin the Wildshaper
-(11496, 0, 0, 1, 0, 0, 0, NULL), -- Immol'thar
-(11501, 0, 0, 1, 0, 0, 0, NULL), -- King Gordok
-(13021, 0, 0, 1, 0, 0, 0, NULL), -- Warpwood Crusher
-(13022, 0, 0, 1, 0, 0, 0, NULL), -- Whip Lasher
-(13036, 0, 0, 1, 0, 0, 0, '18950'), -- Gordok Mastiff
-(13160, 0, 0, 1, 0, 0, 0, NULL), -- Carrion Swarmer
-(13196, 0, 0, 1, 0, 0, 0, NULL), -- Phase Lasher
-(13197, 0, 0, 1, 0, 0, 0, NULL), -- Fel Lash
-(13276, 0, 0, 1, 0, 0, 0, NULL), -- Wildspawn Imp
-(13280, 0, 0, 1, 0, 0, 0, NULL), -- Hydrospawn
-(13285, 0, 0, 1, 0, 0, 0, '8876 16428 25640'), -- Death Lash
-(13916, 0, 0, 1, 0, 0, 1024, NULL), -- Dire Maul Crystal Totem
-(14303, 0, 0, 1, 0, 0, 0, '22696'), -- Petrified Guardian
-(14308, 0, 0, 1, 0, 0, 0, NULL), -- Ferra
-(14321, 0, 0, 1, 0, 0, 0, NULL), -- Guard Fengus
-(14322, 0, 0, 1, 0, 10, 0, NULL), -- Stomper Kreeg
-(14323, 0, 0, 1, 0, 0, 0, NULL), -- Guard Slip'kik
-(14324, 0, 0, 1, 0, 0, 0, NULL), -- Cho'Rush the Observer
-(14325, 0, 0, 1, 0, 0, 0, NULL), -- Captain Kromcrush
-(14326, 0, 0, 1, 0, 0, 0, NULL), -- Guard Mol'dar
-(14327, 0, 0, 1, 0, 0, 0, NULL), -- Lethtendris
-(14338, 0, 0, 1, 0, 0, 0, NULL), -- Knot Thimblejack
-(14349, 0, 0, 1, 0, 0, 0, NULL), -- Pimgib
-(14354, 0, 0, 1, 0, 0, 0, NULL), -- Pusillin
-(14358, 0, 0, 1, 0, 0, 0, NULL), -- Shen'dralar Ancient
-(14361, 0, 0, 1, 0, 0, 0, NULL), -- Shen'dralar Wisp
-(14366, 0, 0, 1, 0, 0, 0, NULL), -- Warpwood Spores
-(14368, 0, 0, 1, 0, 0, 0, NULL), -- Lorekeeper Lydros
-(14371, 0, 0, 1, 0, 0, 0, NULL), -- Shen'dralar Provisioner
-(14381, 0, 0, 1, 0, 69, 0, NULL), -- Lorekeeper Javon
-(14382, 0, 0, 1, 0, 0, 0, NULL), -- Lorekeeper Mykos
-(14383, 0, 0, 1, 0, 69, 0, NULL), -- Lorekeeper Kildrath
-(14386, 0, 0, 1, 0, 0, 0, '18950'), -- Wandering Eye of Kilrogg
-(14398, 0, 0, 1, 0, 0, 0, NULL), -- Eldreth Darter
-(14399, 0, 0, 1, 0, 0, 0, NULL), -- Arcane Torrent
-(14400, 0, 0, 1, 0, 0, 0, '15507'), -- Arcane Feedback
-(14566, 0, 0, 1, 0, 0, 0, '17327'), -- Ancient Equine Spirit
-(16032, 0, 0, 1, 1, 0, 0, NULL), -- Falrin Treeshaper
-(16045, 0, 0, 1, 0, 0, 0, NULL); -- Isalien Trigger
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(11441, 0, 0, 1, 0, 0, '19818'), -- Gordok Brute
+(11445, 0, 0, 1, 0, 0, NULL), -- Gordok Captain
+(11446, 0, 0, 1, 0, 0, NULL), -- Gordok Spirit
+(11451, 0, 0, 1, 0, 0, NULL), -- Wildspawn Satyr
+(11452, 0, 0, 1, 0, 0, '13299'), -- Wildspawn Rogue
+(11453, 0, 0, 1, 0, 0, NULL), -- Wildspawn Trickster
+(11454, 0, 0, 1, 0, 0, NULL), -- Wildspawn Betrayer
+(11455, 0, 0, 1, 0, 0, '22418'), -- Wildspawn Felsworn
+(11456, 0, 0, 1, 0, 0, '8601 18950 22766'), -- Wildspawn Shadowstalker
+(11457, 0, 0, 1, 0, 0, '13377'), -- Wildspawn Hellcaller
+(11458, 0, 0, 1, 0, 0, NULL), -- Petrified Treant
+(11459, 0, 0, 1, 0, 0, NULL), -- Ironbark Protector
+(11461, 0, 0, 1, 0, 0, NULL), -- Warpwood Guardian
+(11462, 0, 0, 1, 0, 0, NULL), -- Warpwood Treant
+(11464, 0, 0, 1, 0, 0, NULL), -- Warpwood Tangler
+(11465, 0, 0, 1, 0, 0, '8876'), -- Warpwood Stomper
+(11466, 0, 0, 1, 193, 0, NULL), -- Highborne Summoner
+(11469, 0, 0, 1, 0, 0, '13377'), -- Eldreth Seether
+(11470, 0, 0, 1, 0, 0, NULL), -- Eldreth Sorcerer
+(11471, 0, 0, 1, 0, 0, '18100'), -- Eldreth Apparition
+(11472, 0, 0, 1, 0, 0, NULL), -- Eldreth Spirit
+(11473, 0, 0, 1, 0, 0, '18950'), -- Eldreth Spectre
+(11475, 0, 0, 1, 0, 0, NULL), -- Eldreth Phantasm
+(11476, 0, 0, 1, 0, 0, NULL), -- Skeletal Highborne
+(11477, 0, 0, 1, 0, 0, NULL), -- Rotting Highborne
+(11480, 0, 0, 1, 0, 0, NULL), -- Arcane Aberration
+(11483, 0, 0, 1, 0, 0, NULL), -- Mana Remnant
+(11484, 0, 0, 1, 0, 0, NULL), -- Residual Monstrosity
+(11486, 0, 0, 1, 0, 0, '8876'), -- Prince Tortheldrin
+(11487, 0, 8, 1, 0, 0, '21157'), -- Magister Kalendris
+(11488, 0, 0, 1, 0, 0, NULL), -- Illyanna Ravenoak
+(11489, 0, 0, 1, 0, 0, NULL), -- Tendris Warpwood
+(11490, 0, 0, 1, 0, 0, NULL), -- Zevrim Thornhoof
+(11491, 0, 0, 1, 0, 0, NULL), -- Old Ironbark
+(11492, 0, 0, 1, 0, 0, '22128 21157'), -- Alzzin the Wildshaper
+(11496, 0, 0, 1, 0, 0, NULL), -- Immol'thar
+(11501, 0, 0, 1, 0, 0, NULL), -- King Gordok
+(13021, 0, 0, 1, 0, 0, NULL), -- Warpwood Crusher
+(13022, 0, 0, 1, 0, 0, NULL), -- Whip Lasher
+(13036, 0, 0, 1, 0, 0, '18950'), -- Gordok Mastiff
+(13160, 0, 0, 1, 0, 0, NULL), -- Carrion Swarmer
+(13196, 0, 0, 1, 0, 0, NULL), -- Phase Lasher
+(13197, 0, 0, 1, 0, 0, NULL), -- Fel Lash
+(13276, 0, 0, 1, 0, 0, NULL), -- Wildspawn Imp
+(13280, 0, 0, 1, 0, 0, NULL), -- Hydrospawn
+(13285, 0, 0, 1, 0, 0, '8876 16428 25640'), -- Death Lash
+(13916, 0, 0, 1, 0, 1024, NULL), -- Dire Maul Crystal Totem
+(14303, 0, 0, 1, 0, 0, '22696'), -- Petrified Guardian
+(14308, 0, 0, 1, 0, 0, NULL), -- Ferra
+(14321, 0, 0, 1, 0, 0, NULL), -- Guard Fengus
+(14322, 0, 0, 1, 10, 0, NULL), -- Stomper Kreeg
+(14323, 0, 0, 1, 0, 0, NULL), -- Guard Slip'kik
+(14324, 0, 0, 1, 0, 0, NULL), -- Cho'Rush the Observer
+(14325, 0, 0, 1, 0, 0, NULL), -- Captain Kromcrush
+(14326, 0, 0, 1, 0, 0, NULL), -- Guard Mol'dar
+(14327, 0, 0, 1, 0, 0, NULL), -- Lethtendris
+(14338, 0, 0, 1, 0, 0, NULL), -- Knot Thimblejack
+(14349, 0, 0, 1, 0, 0, NULL), -- Pimgib
+(14354, 0, 0, 1, 0, 0, NULL), -- Pusillin
+(14358, 0, 0, 1, 0, 0, NULL), -- Shen'dralar Ancient
+(14361, 0, 0, 1, 0, 0, NULL), -- Shen'dralar Wisp
+(14366, 0, 0, 1, 0, 0, NULL), -- Warpwood Spores
+(14368, 0, 0, 1, 0, 0, NULL), -- Lorekeeper Lydros
+(14371, 0, 0, 1, 0, 0, NULL), -- Shen'dralar Provisioner
+(14381, 0, 0, 1, 69, 0, NULL), -- Lorekeeper Javon
+(14382, 0, 0, 1, 0, 0, NULL), -- Lorekeeper Mykos
+(14383, 0, 0, 1, 69, 0, NULL), -- Lorekeeper Kildrath
+(14386, 0, 0, 1, 0, 0, '18950'), -- Wandering Eye of Kilrogg
+(14398, 0, 0, 1, 0, 0, NULL), -- Eldreth Darter
+(14399, 0, 0, 1, 0, 0, NULL), -- Arcane Torrent
+(14400, 0, 0, 1, 0, 0, '15507'), -- Arcane Feedback
+(14566, 0, 0, 1, 0, 0, '17327'), -- Ancient Equine Spirit
+(16032, 0, 0, 1, 0, 0, NULL), -- Falrin Treeshaper
+(16045, 0, 0, 1, 0, 0, NULL); -- Isalien Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+163, @CGUID+148, 3), -- Gordok Brute -> Gordok Brute
@@ -3352,7 +3352,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1149202, 75000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Switch back to waypoint movement'),
 
 (1432501, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - stop WP movement'),
-(1432501, 0, 2, 46, 32768, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Remove Unselectable UnitFlags'),
+(1432501, 0, 48, 33554432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Remove UNIT_FLAG_NOT_SELECTABLE'),
 (1432501, 0, 29, 3, 0x01, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - npcFlags added'),
 (1432501, 0, 22, 45, 0x01, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Change faction to Ogre'),
 (1432501, 0, 0, 0, 0, 0, 0, 0, 0, 2000000269, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - 2st yell'),
@@ -3592,7 +3592,7 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 
 (573801, 0, 15, 8599, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - cast Enrage'),
 (573801, 0, 0, 0, 0, 0, 0, 0, 0, 2000000268, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - 1st yell'),
-(573801, 0, 2, 46, 32768+33554432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Set UnitFlags to Unselectable'),
+(573801, 0, 48, 33554432, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Add UNIT_FLAG_NOT_SELECTABLE'),
 (573801, 1000, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - set active'),
 (573801, 1000, 29, 3, 0x02, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - npcFlags removed'),
 (573801, 1000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Kromcrush - Start WP movement'),

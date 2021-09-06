@@ -330,25 +330,25 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (17961, 1, 15, -174.836, -772.934, 42.3143, 0, 0, 0),
 (17961, 1, 16, -180.41, -777.715, 43.8077, 0, 0, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+100, 0, 0, 1, 16, 69, 0, '5301'), -- Coilfang Collaborator
-(@CGUID+101, 0, 0, 1, 16, 69, 0, '5301'); -- Coilfang Collaborator
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+100, 0, 0, 1, 69, 0, '5301'), -- Coilfang Collaborator
+(@CGUID+101, 0, 0, 1, 69, 0, '5301'); -- Coilfang Collaborator
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(17890, 0, 0, 1, 1, 0, 0, '29266'), -- Weeder Greenthumb
-(17957, 0, 0, 1, 0, 0, 0, NULL), -- Coilfang Champion
-(17958, 0, 0, 1, 0, 0, 0, '18950'), -- Coilfang Defender
-(17962, 0, 0, 1, 16, 0, 0, '5301'), -- Coilfang Collaborator
-(17963, 0, 0, 0, 0, 173, 0, NULL), -- Wastewalker Slave
-(17964, 0, 0, 0, 0, 173, 0, NULL), -- Wastewalker Worker
-(25697, 0, 0, 1, 0, 0, 0, NULL), -- Luma Skymother
-(25745, 0, 0, 1, 0, 0, 0, NULL), -- [PH] Ahune Summon Loc Bunny
-(25746, 0, 0, 1, 0, 0, 0, NULL), -- [PH] Ahune Loot Loc Bunny
-(25754, 0, 0, 1, 0, 0, 0, NULL), -- Earthen Ring Flamecaller
-(25952, 0, 0, 1, 0, 0, 0, '46314'), -- Slippery Floor Bunny
-(25971, 0, 0, 1, 0, 0, 0, NULL), -- Shaman Bonfire Bunny 000
-(25972, 0, 0, 1, 0, 0, 0, NULL), -- Shaman Bonfire Bunny 001
-(25973, 0, 0, 1, 0, 0, 0, NULL); -- Shaman Bonfire Bunny 002
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(17890, 0, 0, 1, 0, 0, '29266'), -- Weeder Greenthumb
+(17957, 0, 0, 1, 0, 0, NULL), -- Coilfang Champion
+(17958, 0, 0, 1, 0, 0, '18950'), -- Coilfang Defender
+(17962, 0, 0, 1, 0, 0, '5301'), -- Coilfang Collaborator
+(17963, 0, 0, 0, 173, 0, NULL), -- Wastewalker Slave
+(17964, 0, 0, 0, 173, 0, NULL), -- Wastewalker Worker
+(25697, 0, 0, 1, 0, 0, NULL), -- Luma Skymother
+(25745, 0, 0, 1, 0, 0, NULL), -- [PH] Ahune Summon Loc Bunny
+(25746, 0, 0, 1, 0, 0, NULL), -- [PH] Ahune Loot Loc Bunny
+(25754, 0, 0, 1, 0, 0, NULL), -- Earthen Ring Flamecaller
+(25952, 0, 0, 1, 0, 0, '46314'), -- Slippery Floor Bunny
+(25971, 0, 0, 1, 0, 0, NULL), -- Shaman Bonfire Bunny 000
+(25972, 0, 0, 1, 0, 0, NULL), -- Shaman Bonfire Bunny 001
+(25973, 0, 0, 1, 0, 0, NULL); -- Shaman Bonfire Bunny 002
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+12, @CGUID+30, 1667), -- Bogstrok -> Greater Bogstrok
@@ -1067,8 +1067,8 @@ DELETE FROM dbscripts_on_gossip WHERE id IN(7540,7520);
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 ('7520', '0', '8', '17893', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Give Kill Credit to Group'),
 ('7520', '0', '13', '0', '0', '0', '182094', '5', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Open cage'),
-('7520', '0', '5', '46', '256', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Remove Unit Flag IMMUNE_TO_PLAYER'),
-('7520', '0', '5', '46', '512', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Remove Unit Flag IMMUNE_TO_NPC'),
+('7520', '0', '48', '256', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Remove UNIT_FLAG_IMMUNE_TO_PLAYER'),
+('7520', '0', '48', '512', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Remove UNIT_FLAG_IMMUNE_TO_NPC'),
 ('7520', '0', '22', '113', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Change faction'),
 ('7520', '0', '29', '1', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Remove NPC Gossip flag'),
 ('7520', '0', '20', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Move Waypoint'),

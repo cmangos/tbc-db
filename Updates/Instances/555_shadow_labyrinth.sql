@@ -453,85 +453,85 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (18731, 0, 11, -142.922, -18.95, 8.073, 0, 0, 0),
 (18731, 0, 12, -157.366, 2.177, 8.073, 0, 0, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+37, 0, 1, 1, 16, 0, 0, ''), -- creature_spawn_entry
-(@CGUID+38, 0, 0, 1, 16, 69, 0, ''), -- creature_spawn_entry
-(@CGUID+39, 0, 8, 1, 16, 0, 0, ''), -- creature_spawn_entry
-(@CGUID+40, 0, 0, 1, 16, 69, 0, ''), -- creature_spawn_entry
-(@CGUID+41, 0, 0, 1, 16, 69, 0, ''), -- creature_spawn_entry
-(@CGUID+54, 0, 1, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+55, 0, 8, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+56, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+57, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+58, 0, 1, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+59, 0, 8, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+60, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+61, 0, 1, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+62, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+63, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+64, 0, 8, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+66, 0, 8, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+88, 0, 0, 1, 16, 69, 0, NULL), -- creature_spawn_entry
-(@CGUID+97, 0, 8, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+98, 0, 1, 1, 16, 0, 0, NULL), -- Cabal Deathsworn
-(@CGUID+99, 0, 8, 1, 16, 0, 0, NULL), -- Cabal Deathsworn
-(@CGUID+136, 0, 8, 1, 16, 0, 0, NULL), -- creature_spawn_entry
-(@CGUID+150, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+151, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+152, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+154, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+156, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+157, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+158, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+160, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+161, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+163, 0, 0, 1, 16, 0, 0, '32958'), -- Cabal Ritualist
-(@CGUID+194, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+195, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+196, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+197, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+198, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+199, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+200, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+201, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+202, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+203, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+204, 0, 1, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+208, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+209, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+210, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+211, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+212, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+213, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+214, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+215, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+216, 0, 0, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(@CGUID+217, 0, 0, 1, 16, 0, 0, NULL); -- Tortured Skeleton
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+37, 0, 1, 1, 0, 0, ''), -- creature_spawn_entry
+(@CGUID+38, 0, 0, 1, 69, 0, ''), -- creature_spawn_entry
+(@CGUID+39, 0, 8, 1, 0, 0, ''), -- creature_spawn_entry
+(@CGUID+40, 0, 0, 1, 69, 0, ''), -- creature_spawn_entry
+(@CGUID+41, 0, 0, 1, 69, 0, ''), -- creature_spawn_entry
+(@CGUID+54, 0, 1, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+55, 0, 8, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+56, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+57, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+58, 0, 1, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+59, 0, 8, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+60, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+61, 0, 1, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+62, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+63, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+64, 0, 8, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+66, 0, 8, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+88, 0, 0, 1, 69, 0, NULL), -- creature_spawn_entry
+(@CGUID+97, 0, 8, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+98, 0, 1, 1, 0, 0, NULL), -- Cabal Deathsworn
+(@CGUID+99, 0, 8, 1, 0, 0, NULL), -- Cabal Deathsworn
+(@CGUID+136, 0, 8, 1, 0, 0, NULL), -- creature_spawn_entry
+(@CGUID+150, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+151, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+152, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+154, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+156, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+157, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+158, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+160, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+161, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+163, 0, 0, 1, 0, 0, '32958'), -- Cabal Ritualist
+(@CGUID+194, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+195, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+196, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+197, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+198, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+199, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+200, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+201, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+202, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+203, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+204, 0, 1, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+208, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+209, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+210, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+211, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+212, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+213, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+214, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+215, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+216, 0, 0, 1, 0, 0, NULL), -- Tortured Skeleton
+(@CGUID+217, 0, 0, 1, 0, 0, NULL); -- Tortured Skeleton
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(18631, 0, 0, 1, 16, 0, 0, '8876'), -- Cabal Cultist
-(18632, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Executioner
-(18633, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Acolyte
-(18634, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Summoner
-(18635, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Deathsworn
-(18636, 0, 0, 1, 16, 0, 0, ''), -- Cabal Assassin
-(18637, 0, 0, 1, 16, 0, 0, '16592'), -- Cabal Shadow Priest
-(18638, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Zealot
-(18639, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Spellbinder
-(18640, 0, 0, 1, 16, 0, 0, '13787'), -- Cabal Warlock
-(18641, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Familiar
-(18642, 0, 0, 1, 16, 0, 0, NULL), -- Fel Guardhound
-(18667, 0, 0, 1, 16, 0, 0, NULL), -- Blackheart the Inciter
-(18708, 0, 0, 1, 16, 0, 0, NULL), -- Murmur
-(18731, 0, 0, 1, 16, 0, 0, '18950 30231'), -- Ambassador Hellmaw
-(18732, 0, 0, 1, 16, 0, 0, NULL), -- Grandmaster Vorpil
-(18793, 0, 0, 1, 0, 0, 0, NULL), -- Invisible Target
-(18796, 0, 0, 1, 16, 0, 0, NULL), -- Fel Overseer
-(18797, 0, 7, 1, 16, 0, 0, NULL), -- Tortured Skeleton
-(18830, 0, 0, 1, 16, 0, 0, NULL), -- Cabal Fanatic
-(18848, 0, 0, 1, 16, 0, 0, '19818'), -- Malicious Instructor
-(18891, 0, 0, 1, 16, 0, 0, NULL), -- Spy To'gun
-(21159, 0, 0, 1, 0, 0, 0, NULL); -- Containment Beam
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(18631, 0, 0, 1, 0, 0, '8876'), -- Cabal Cultist
+(18632, 0, 0, 1, 0, 0, NULL), -- Cabal Executioner
+(18633, 0, 0, 1, 0, 0, NULL), -- Cabal Acolyte
+(18634, 0, 0, 1, 0, 0, NULL), -- Cabal Summoner
+(18635, 0, 0, 1, 0, 0, NULL), -- Cabal Deathsworn
+(18636, 0, 0, 1, 0, 0, ''), -- Cabal Assassin
+(18637, 0, 0, 1, 0, 0, '16592'), -- Cabal Shadow Priest
+(18638, 0, 0, 1, 0, 0, NULL), -- Cabal Zealot
+(18639, 0, 0, 1, 0, 0, NULL), -- Cabal Spellbinder
+(18640, 0, 0, 1, 0, 0, '13787'), -- Cabal Warlock
+(18641, 0, 0, 1, 0, 0, NULL), -- Cabal Familiar
+(18642, 0, 0, 1, 0, 0, NULL), -- Fel Guardhound
+(18667, 0, 0, 1, 0, 0, NULL), -- Blackheart the Inciter
+(18708, 0, 0, 1, 0, 0, NULL), -- Murmur
+(18731, 0, 0, 1, 0, 0, '18950 30231'), -- Ambassador Hellmaw
+(18732, 0, 0, 1, 0, 0, NULL), -- Grandmaster Vorpil
+(18793, 0, 0, 1, 0, 0, NULL), -- Invisible Target
+(18796, 0, 0, 1, 0, 0, NULL), -- Fel Overseer
+(18797, 0, 7, 1, 0, 0, NULL), -- Tortured Skeleton
+(18830, 0, 0, 1, 0, 0, NULL), -- Cabal Fanatic
+(18848, 0, 0, 1, 0, 0, '19818'), -- Malicious Instructor
+(18891, 0, 0, 1, 0, 0, NULL), -- Spy To'gun
+(21159, 0, 0, 1, 0, 0, NULL); -- Containment Beam
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+55, @CGUID+54, 1155), -- Cabal Acolyte -> Cabal Acolyte

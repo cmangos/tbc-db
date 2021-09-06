@@ -489,49 +489,49 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (7897, 0, 9, -572.2, 123.274, -202.141, 100, 0, 0),
 (7897, 0, 10, -570.78, 128.66, -202.141, 100, 0, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+99, 0, 0, 1, 16, 173, 0, NULL), -- Leprous Technician
-(@CGUID+100, 0, 0, 1, 16, 173, 0, NULL), -- Leprous Technician
-(@CGUID+114, 0, 0, 1, 16, 173, 0, NULL), -- Leprous Technician
-(@CGUID+291, 0, 7, 1, 16, 0, 0, NULL), -- Holdout Warrior
-(@CGUID+292, 0, 7, 1, 16, 0, 0, NULL), -- Holdout Warrior
-(@CGUID+297, 0, 8, 1, 16, 0, 0, '13864'); -- Holdout Medic
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+99, 0, 0, 1, 173, 0, NULL), -- Leprous Technician
+(@CGUID+100, 0, 0, 1, 173, 0, NULL), -- Leprous Technician
+(@CGUID+114, 0, 0, 1, 173, 0, NULL), -- Leprous Technician
+(@CGUID+291, 0, 7, 1, 0, 0, NULL), -- Holdout Warrior
+(@CGUID+292, 0, 7, 1, 0, 0, NULL), -- Holdout Warrior
+(@CGUID+297, 0, 8, 1, 0, 0, '13864'); -- Holdout Medic
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(6206, 0, 0, 1, 16, 0, 0, NULL), -- Caverndeep Burrower
-(6207, 0, 0, 1, 16, 0, 0, NULL), -- Caverndeep Ambusher
-(6211, 0, 0, 1, 16, 0, 0, NULL), -- Caverndeep Reaver
-(6212, 0, 0, 1, 16, 0, 0, NULL), -- Dark Iron Agent
-(6213, 0, 0, 1, 16, 0, 0, '21862'), -- Irradiated Invader
-(6218, 0, 0, 1, 16, 0, 0, '21862'), -- Irradiated Slime
-(6219, 0, 0, 1, 16, 0, 0, NULL), -- Corrosive Lurker
-(6220, 0, 0, 1, 16, 0, 0, '21862'), -- Irradiated Horror
-(6222, 0, 0, 1, 16, 0, 0, NULL), -- Leprous Technician
-(6223, 0, 0, 1, 16, 0, 0, NULL), -- Leprous Defender
-(6224, 0, 0, 1, 16, 0, 0, NULL), -- Leprous Machinesmith
-(6225, 0, 0, 1, 16, 0, 0, NULL), -- Mechano-Tank
-(6226, 0, 0, 1, 16, 0, 0, NULL), -- Mechano-Flamewalker
-(6227, 0, 0, 1, 16, 0, 0, NULL), -- Mechano-Frostwalker
-(6228, 0, 0, 1, 16, 0, 0, NULL), -- Dark Iron Ambassador
-(6229, 0, 0, 1, 16, 0, 0, NULL), -- Crowd Pummeler 9-60
-(6230, 0, 0, 1, 16, 0, 0, NULL), -- Peacekeeper Security Suit
-(6232, 0, 0, 1, 16, 0, 0, NULL), -- Arcane Nullifier X-21
-(6233, 0, 0, 1, 16, 0, 0, NULL), -- Mechanized Sentry
-(6234, 0, 0, 1, 16, 0, 0, NULL), -- Mechanized Guardian
-(6235, 0, 0, 1, 16, 0, 0, NULL), -- Electrocutioner 6000
-(6329, 0, 0, 1, 16, 0, 0, '21862'), -- Irradiated Pillager
-(6391, 0, 0, 1, 16, 0, 0, NULL), -- Holdout Warrior
-(6392, 0, 0, 1, 16, 0, 0, '13864'), -- Holdout Medic
-(6407, 0, 0, 1, 16, 0, 0, NULL), -- Holdout Technician
-(7079, 0, 0, 1, 16, 0, 0, NULL), -- Viscous Fallout
-(7603, 0, 0, 1, 16, 0, 0, NULL), -- Leprous Assistant
-(7800, 0, 0, 1, 16, 0, 0, NULL), -- Mekgineer Thermaplugg
-(7849, 0, 0, 1, 16, 0, 0, '8279'), -- Mobile Alert System
-(7850, 0, 7, 1, 16, 0, 0, NULL), -- Kernobee
-(7897, 0, 0, 1, 16, 0, 0, NULL), -- Alarm-a-bomb 2600
-(7998, 0, 0, 1, 16, 0, 0, NULL), -- Blastmaster Emi Shortfuse
-(9676, 0, 0, 1, 16, 0, 0, NULL), -- Tink Sprocketwhistle
-(13876, 0, 0, 1, 16, 0, 0, NULL); -- Mekgineer Trigger
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(6206, 0, 0, 1, 0, 0, NULL), -- Caverndeep Burrower
+(6207, 0, 0, 1, 0, 0, NULL), -- Caverndeep Ambusher
+(6211, 0, 0, 1, 0, 0, NULL), -- Caverndeep Reaver
+(6212, 0, 0, 1, 0, 0, NULL), -- Dark Iron Agent
+(6213, 0, 0, 1, 0, 0, '21862'), -- Irradiated Invader
+(6218, 0, 0, 1, 0, 0, '21862'), -- Irradiated Slime
+(6219, 0, 0, 1, 0, 0, NULL), -- Corrosive Lurker
+(6220, 0, 0, 1, 0, 0, '21862'), -- Irradiated Horror
+(6222, 0, 0, 1, 0, 0, NULL), -- Leprous Technician
+(6223, 0, 0, 1, 0, 0, NULL), -- Leprous Defender
+(6224, 0, 0, 1, 0, 0, NULL), -- Leprous Machinesmith
+(6225, 0, 0, 1, 0, 0, NULL), -- Mechano-Tank
+(6226, 0, 0, 1, 0, 0, NULL), -- Mechano-Flamewalker
+(6227, 0, 0, 1, 0, 0, NULL), -- Mechano-Frostwalker
+(6228, 0, 0, 1, 0, 0, NULL), -- Dark Iron Ambassador
+(6229, 0, 0, 1, 0, 0, NULL), -- Crowd Pummeler 9-60
+(6230, 0, 0, 1, 0, 0, NULL), -- Peacekeeper Security Suit
+(6232, 0, 0, 1, 0, 0, NULL), -- Arcane Nullifier X-21
+(6233, 0, 0, 1, 0, 0, NULL), -- Mechanized Sentry
+(6234, 0, 0, 1, 0, 0, NULL), -- Mechanized Guardian
+(6235, 0, 0, 1, 0, 0, NULL), -- Electrocutioner 6000
+(6329, 0, 0, 1, 0, 0, '21862'), -- Irradiated Pillager
+(6391, 0, 0, 1, 0, 0, NULL), -- Holdout Warrior
+(6392, 0, 0, 1, 0, 0, '13864'), -- Holdout Medic
+(6407, 0, 0, 1, 0, 0, NULL), -- Holdout Technician
+(7079, 0, 0, 1, 0, 0, NULL), -- Viscous Fallout
+(7603, 0, 0, 1, 0, 0, NULL), -- Leprous Assistant
+(7800, 0, 0, 1, 0, 0, NULL), -- Mekgineer Thermaplugg
+(7849, 0, 0, 1, 0, 0, '8279'), -- Mobile Alert System
+(7850, 0, 7, 1, 0, 0, NULL), -- Kernobee
+(7897, 0, 0, 1, 0, 0, NULL), -- Alarm-a-bomb 2600
+(7998, 0, 0, 1, 0, 0, NULL), -- Blastmaster Emi Shortfuse
+(9676, 0, 0, 1, 0, 0, NULL), -- Tink Sprocketwhistle
+(13876, 0, 0, 1, 0, 0, NULL); -- Mekgineer Trigger
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 

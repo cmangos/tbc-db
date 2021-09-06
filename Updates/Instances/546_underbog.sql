@@ -488,24 +488,24 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 ('17826', '0', '3', '274.581', '-120.976', '29.8414', '0.207275', '0', '0'),
 ('17826', '0', '4', '284.158', '-119.662', '29.772', '5.93676', '0', '0');
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+130, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+131, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+132, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+133, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+134, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+135, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+136, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+137, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+138, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+139, 0, 0, 1, 16, 0, 0, '31261'), -- Fen Ray
-(@CGUID+140, 0, 0, 1, 16, 0, 0, '31261'); -- Fen Ray
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+130, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+131, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+132, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+133, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+134, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+135, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+136, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+137, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+138, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+139, 0, 0, 1, 0, 0, '31261'), -- Fen Ray
+(@CGUID+140, 0, 0, 1, 0, 0, '31261'); -- Fen Ray
 
-INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(17727, 0, 0, 1, 16, 0, 0, '18950'), -- Wrathfin Sentry
-(17885, 0, 0, 1, 16, 0, 0, '30831'), -- Earthbinder Rayge
-(18105, 0, 0, 1, 16, 0, 0, ''), -- Ghaz'an
-(20465, 0, 0, 1, 16, 0, 0, '18943 18950'); -- Underbog Frenzy
+INSERT INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(17727, 0, 0, 1, 0, 0, '18950'), -- Wrathfin Sentry
+(17885, 0, 0, 1, 0, 0, '30831'), -- Earthbinder Rayge
+(18105, 0, 0, 1, 0, 0, ''), -- Ghaz'an
+(20465, 0, 0, 1, 0, 0, '18943 18950'); -- Underbog Frenzy
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+42, @CGUID+37, 1155), -- Underbog Lurker -> Underbog Lurker

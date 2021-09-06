@@ -297,41 +297,41 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14601, 0, 12, -7368.8, -983.092, 477.167, 2.40158, 0, 0),
 (14601, 0, 13, -7358.19, -994.32, 477.167, 3.72812, 10, 1460101);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+1, 0, 5, 1, 0, 0, 0, NULL); -- Lord Victor Nefarius
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+1, 0, 5, 1, 0, 0, NULL); -- Lord Victor Nefarius
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(10162, 0, 0, 1, 0, 0, 0, NULL), -- Lord Victor Nefarius
-(11981, 0, 0, 1, 16, 0, 0, NULL), -- Flamegor
-(11983, 0, 0, 1, 16, 0, 0, NULL), -- Firemaw
-(12017, 0, 0, 1, 16, 0, 0, NULL), -- Broodlord Lashlayer
-(12434, 0, 0, 1, 16, 0, 0, NULL), -- Monster Generator (Blackwing)
-(12435, 0, 0, 1, 0, 0, 0, '18943'), -- Razorgore the Untamed
-(12457, 0, 0, 1, 0, 0, 0, NULL), -- Blackwing Spellbinder
-(12458, 0, 0, 1, 16, 0, 0, NULL), -- Blackwing Taskmaster
-(12459, 0, 0, 1, 0, 0, 0, NULL), -- Blackwing Warlock
-(12460, 0, 0, 1, 0, 0, 0, '19818 22276 22282'), -- Death Talon Wyrmguard
-(12461, 0, 0, 1, 0, 0, 0, '22276'), -- Death Talon Overseer
-(12463, 0, 0, 1, 0, 0, 0, NULL), -- Death Talon Flamescale
-(12464, 0, 0, 1, 0, 0, 0, NULL), -- Death Talon Seether
-(12465, 0, 0, 1, 0, 0, 0, NULL), -- Death Talon Wyrmkin
-(12467, 0, 0, 1, 0, 0, 0, '22436 22440'), -- Death Talon Captain
-(12468, 0, 0, 1, 16, 0, 0, NULL), -- Death Talon Hatcher
-(12557, 0, 0, 1, 0, 0, 0, '18950'), -- Grethok the Controller
-(13020, 0, 0, 1, 0, 0, 0, NULL), -- Vaelastrasz the Corrupt
-(13976, 0, 7, 1, 16, 0, 0, NULL), -- Tortured Drake
-(13996, 0, 0, 1, 0, 133, 0, NULL), -- Blackwing Technician
-(14020, 0, 0, 1, 16, 0, 0, NULL), -- Chromaggus
-(14022, 0, 0, 1, 16, 0, 0, NULL), -- Corrupted Red Whelp
-(14023, 0, 0, 1, 16, 0, 0, NULL), -- Corrupted Green Whelp
-(14024, 0, 0, 1, 16, 0, 0, NULL), -- Corrupted Blue Whelp
-(14025, 0, 0, 1, 16, 0, 0, NULL), -- Corrupted Bronze Whelp
-(14401, 0, 0, 1, 0, 69, 0, NULL), -- Master Elemental Shaper Krixix
-(14449, 0, 0, 1, 16, 0, 0, NULL), -- Blackwing Orb Trigger
-(14456, 0, 0, 1, 0, 0, 0, NULL), -- Blackwing Guardsman
-(14459, 0, 0, 1, 16, 0, 0, NULL), -- Nefarian's Troops
-(14601, 0, 0, 1, 16, 0, 0, NULL), -- Ebonroc
-(16604, 0, 0, 1, 16, 0, 0, NULL); -- Blackwing Spell Marker
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(10162, 0, 0, 1, 0, 0, NULL), -- Lord Victor Nefarius
+(11981, 0, 0, 1, 0, 0, NULL), -- Flamegor
+(11983, 0, 0, 1, 0, 0, NULL), -- Firemaw
+(12017, 0, 0, 1, 0, 0, NULL), -- Broodlord Lashlayer
+(12434, 0, 0, 1, 0, 0, NULL), -- Monster Generator (Blackwing)
+(12435, 0, 0, 1, 0, 0, '18943'), -- Razorgore the Untamed
+(12457, 0, 0, 1, 0, 0, NULL), -- Blackwing Spellbinder
+(12458, 0, 0, 1, 0, 0, NULL), -- Blackwing Taskmaster
+(12459, 0, 0, 1, 0, 0, NULL), -- Blackwing Warlock
+(12460, 0, 0, 1, 0, 0, '19818 22276 22282'), -- Death Talon Wyrmguard
+(12461, 0, 0, 1, 0, 0, '22276'), -- Death Talon Overseer
+(12463, 0, 0, 1, 0, 0, NULL), -- Death Talon Flamescale
+(12464, 0, 0, 1, 0, 0, NULL), -- Death Talon Seether
+(12465, 0, 0, 1, 0, 0, NULL), -- Death Talon Wyrmkin
+(12467, 0, 0, 1, 0, 0, '22436 22440'), -- Death Talon Captain
+(12468, 0, 0, 1, 0, 0, NULL), -- Death Talon Hatcher
+(12557, 0, 0, 1, 0, 0, '18950'), -- Grethok the Controller
+(13020, 0, 0, 1, 0, 0, NULL), -- Vaelastrasz the Corrupt
+(13976, 0, 7, 1, 0, 0, NULL), -- Tortured Drake
+(13996, 0, 0, 1, 133, 0, NULL), -- Blackwing Technician
+(14020, 0, 0, 1, 0, 0, NULL), -- Chromaggus
+(14022, 0, 0, 1, 0, 0, NULL), -- Corrupted Red Whelp
+(14023, 0, 0, 1, 0, 0, NULL), -- Corrupted Green Whelp
+(14024, 0, 0, 1, 0, 0, NULL), -- Corrupted Blue Whelp
+(14025, 0, 0, 1, 0, 0, NULL), -- Corrupted Bronze Whelp
+(14401, 0, 0, 1, 69, 0, NULL), -- Master Elemental Shaper Krixix
+(14449, 0, 0, 1, 0, 0, NULL), -- Blackwing Orb Trigger
+(14456, 0, 0, 1, 0, 0, NULL), -- Blackwing Guardsman
+(14459, 0, 0, 1, 0, 0, NULL), -- Nefarian's Troops
+(14601, 0, 0, 1, 0, 0, NULL), -- Ebonroc
+(16604, 0, 0, 1, 0, 0, NULL); -- Blackwing Spell Marker
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+21, @CGUID+20, 512), -- Blackwing Taskmaster -> Blackwing Taskmaster

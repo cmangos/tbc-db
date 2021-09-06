@@ -1003,51 +1003,51 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (15544, 0, 34, -8566.11, 2157.76, -6.48814, 6.22261, 0, 0),
 (15544, 0, 35, -8550.37, 2166.34, -3.70582, 0.944732, 0, 0);
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(15229, 0, 0, 1, 16, 0, 0, '25801'), -- Vekniss Soldier
-(15230, 0, 0, 1, 16, 0, 0, NULL), -- Vekniss Warrior
-(15233, 0, 0, 1, 16, 0, 0, '18950'), -- Vekniss Guardian
-(15235, 0, 0, 1, 16, 0, 0, NULL), -- Vekniss Stinger
-(15236, 0, 0, 1, 16, 0, 0, NULL), -- Vekniss Wasp
-(15240, 0, 0, 1, 16, 0, 0, NULL), -- Vekniss Hive Crawler
-(15246, 0, 0, 1, 16, 0, 0, NULL), -- Qiraji Mindslayer
-(15247, 0, 0, 1, 16, 0, 0, '18950'), -- Qiraji Brainwasher
-(15249, 0, 0, 1, 16, 0, 0, NULL), -- Qiraji Lasher
-(15250, 0, 0, 1, 16, 0, 0, NULL), -- Qiraji Slayer
-(15252, 0, 0, 1, 16, 0, 0, NULL), -- Qiraji Champion
-(15262, 0, 0, 1, 16, 0, 0, '19818'), -- Obsidian Eradicator
-(15263, 0, 0, 1, 16, 0, 0, NULL), -- The Prophet Skeram
-(15264, 0, 0, 1, 16, 0, 0, NULL), -- Anubisath Sentinel
-(15275, 0, 0, 1, 16, 0, 0, '18943'), -- Emperor Vek'nilash
-(15276, 0, 0, 1, 16, 0, 0, NULL), -- Emperor Vek'lor
-(15277, 0, 0, 1, 16, 0, 0, NULL), -- Anubisath Defender
-(15299, 0, 0, 1, 16, 0, 0, NULL), -- Viscidus
-(15300, 0, 0, 1, 16, 0, 0, NULL), -- Vekniss Drone
-(15311, 0, 0, 1, 16, 0, 0, NULL), -- Anubisath Warder
-(15312, 0, 0, 1, 16, 0, 0, '19818'), -- Obsidian Nullifier
-(15316, 0, 0, 1, 16, 0, 0, NULL), -- Qiraji Scarab
-(15317, 0, 0, 1, 16, 0, 0, NULL), -- Qiraji Scorpion
-(15378, 0, 0, 1, 16, 0, 0, NULL), -- Merithra of the Dream
-(15379, 0, 0, 1, 16, 0, 0, NULL), -- Caelestrasz
-(15380, 0, 0, 1, 16, 0, 0, NULL), -- Arygos
-(15502, 0, 0, 1, 16, 0, 0, NULL), -- Andorgos
-(15503, 0, 0, 0, 16, 0, 0, NULL), -- Kandrostrasz
-(15504, 0, 0, 1, 16, 0, 0, NULL), -- Vethsera
-(15509, 0, 0, 1, 16, 0, 0, NULL), -- Princess Huhuran
-(15510, 0, 0, 1, 16, 0, 0, NULL), -- Fankriss the Unyielding
-(15511, 0, 0, 1, 16, 0, 0, NULL), -- Lord Kri
-(15516, 0, 0, 1, 16, 0, 0, NULL), -- Battleguard Sartura
-(15543, 0, 0, 1, 16, 0, 0, NULL), -- Princess Yauj
-(15544, 0, 0, 1, 16, 0, 0, NULL), -- Vem
-(15589, 0, 0, 1, 16, 0, 0, NULL), -- Eye of C'Thun
-(15727, 0, 0, 1, 16, 0, 0, NULL), -- C'Thun
-(15896, 0, 0, 1, 16, 0, 0, NULL), -- C'Thun Portal
-(15933, 0, 0, 1, 16, 0, 0, '25786 26575'), -- Poison Cloud
-(15957, 0, 0, 1, 16, 0, 0, NULL), -- Ouro Spawner
-(15963, 0, 0, 1, 16, 0, 0, '18430'), -- The Master's Eye
-(15984, 0, 0, 1, 16, 0, 0, NULL); -- Sartura's Royal Guard
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(15229, 0, 0, 1, 0, 0, '25801'), -- Vekniss Soldier
+(15230, 0, 0, 1, 0, 0, NULL), -- Vekniss Warrior
+(15233, 0, 0, 1, 0, 0, '18950'), -- Vekniss Guardian
+(15235, 0, 0, 1, 0, 0, NULL), -- Vekniss Stinger
+(15236, 0, 0, 1, 0, 0, NULL), -- Vekniss Wasp
+(15240, 0, 0, 1, 0, 0, NULL), -- Vekniss Hive Crawler
+(15246, 0, 0, 1, 0, 0, NULL), -- Qiraji Mindslayer
+(15247, 0, 0, 1, 0, 0, '18950'), -- Qiraji Brainwasher
+(15249, 0, 0, 1, 0, 0, NULL), -- Qiraji Lasher
+(15250, 0, 0, 1, 0, 0, NULL), -- Qiraji Slayer
+(15252, 0, 0, 1, 0, 0, NULL), -- Qiraji Champion
+(15262, 0, 0, 1, 0, 0, '19818'), -- Obsidian Eradicator
+(15263, 0, 0, 1, 0, 0, NULL), -- The Prophet Skeram
+(15264, 0, 0, 1, 0, 0, NULL), -- Anubisath Sentinel
+(15275, 0, 0, 1, 0, 0, '18943'), -- Emperor Vek'nilash
+(15276, 0, 0, 1, 0, 0, NULL), -- Emperor Vek'lor
+(15277, 0, 0, 1, 0, 0, NULL), -- Anubisath Defender
+(15299, 0, 0, 1, 0, 0, NULL), -- Viscidus
+(15300, 0, 0, 1, 0, 0, NULL), -- Vekniss Drone
+(15311, 0, 0, 1, 0, 0, NULL), -- Anubisath Warder
+(15312, 0, 0, 1, 0, 0, '19818'), -- Obsidian Nullifier
+(15316, 0, 0, 1, 0, 0, NULL), -- Qiraji Scarab
+(15317, 0, 0, 1, 0, 0, NULL), -- Qiraji Scorpion
+(15378, 0, 0, 1, 0, 0, NULL), -- Merithra of the Dream
+(15379, 0, 0, 1, 0, 0, NULL), -- Caelestrasz
+(15380, 0, 0, 1, 0, 0, NULL), -- Arygos
+(15502, 0, 0, 1, 0, 0, NULL), -- Andorgos
+(15503, 0, 0, 0, 0, 0, NULL), -- Kandrostrasz
+(15504, 0, 0, 1, 0, 0, NULL), -- Vethsera
+(15509, 0, 0, 1, 0, 0, NULL), -- Princess Huhuran
+(15510, 0, 0, 1, 0, 0, NULL), -- Fankriss the Unyielding
+(15511, 0, 0, 1, 0, 0, NULL), -- Lord Kri
+(15516, 0, 0, 1, 0, 0, NULL), -- Battleguard Sartura
+(15543, 0, 0, 1, 0, 0, NULL), -- Princess Yauj
+(15544, 0, 0, 1, 0, 0, NULL), -- Vem
+(15589, 0, 0, 1, 0, 0, NULL), -- Eye of C'Thun
+(15727, 0, 0, 1, 0, 0, NULL), -- C'Thun
+(15896, 0, 0, 1, 0, 0, NULL), -- C'Thun Portal
+(15933, 0, 0, 1, 0, 0, '25786 26575'), -- Poison Cloud
+(15957, 0, 0, 1, 0, 0, NULL), -- Ouro Spawner
+(15963, 0, 0, 1, 0, 0, '18430'), -- The Master's Eye
+(15984, 0, 0, 1, 0, 0, NULL); -- Sartura's Royal Guard
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+9, @CGUID+7, 1539), -- Vekniss Warrior -> Vekniss Warrior

@@ -442,51 +442,51 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (16807, 0, 3, 184.7897, 290.3699, -8.18139, 100, 0, 0),
 (16807, 0, 4, 178.5562, 288.1734, -7.933493, 100, 0, 0);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+52, 0, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
-(@CGUID+53, 0, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
-(@CGUID+54, 0, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
-(@CGUID+55, 0, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
-(@CGUID+63, 0, 0, 0, 0, 0, 0, '8876 16093'), -- Shattered Hand Brawler
-(@CGUID+64, 0, 0, 0, 0, 0, 0, '8876 16093'), -- Shattered Hand Brawler
-(@CGUID+65, 0, 0, 0, 0, 0, 0, '8876 16093'), -- Shattered Hand Brawler
-(@CGUID+68, 0, 0, 0, 0, 0, 0, '16093'), -- Shadowmoon Acolyte
-(@CGUID+70, 0, 0, 0, 0, 375, 0, NULL), -- Shattered Hand Reaver
-(@CGUID+71, 0, 0, 2, 0, 214, 0, NULL), -- Shattered Hand Sharpshooter
-(@CGUID+72, 0, 0, 0, 0, 333, 0, NULL), -- creature_spawn_entry
-(@CGUID+79, 0, 0, 0, 0, 333, 0, NULL), -- creature_spawn_entry
-(@CGUID+80, 0, 0, 2, 0, 214, 0, NULL), -- Shattered Hand Sharpshooter
-(@CGUID+81, 0, 0, 2, 0, 214, 0, NULL), -- Shattered Hand Sharpshooter
-(@CGUID+132, 0, 0, 0, 0, 333, 0, NULL), -- creature_spawn_entry
-(@CGUID+133, 0, 0, 0, 0, 333, 0, NULL), -- Shattered Hand Heathen
-(@CGUID+265, 0, 0, 0, 0, 389, 0, NULL), -- creature_spawn_entry
-(@CGUID+266, 0, 0, 0, 0, 389, 0, NULL), -- Shattered Hand Savage
-(@CGUID+267, 0, 0, 0, 0, 389, 0, NULL), -- creature_spawn_entry
-(@CGUID+274, 0, 0, 0, 0, 389, 0, NULL), -- creature_spawn_entry
-(@CGUID+275, 0, 0, 2, 0, 214, 0, NULL), -- Shattered Hand Sharpshooter
-(@CGUID+276, 0, 0, 2, 0, 214, 0, NULL), -- Shattered Hand Sharpshooter
-(@CGUID+277, 0, 0, 2, 0, 214, 0, NULL), -- Shattered Hand Sharpshooter
-(@CGUID+278, 0, 0, 0, 0, 375, 0, NULL), -- Shattered Hand Reaver
-(@CGUID+279, 0, 0, 0, 0, 375, 0, NULL), -- Shattered Hand Reaver
-(@CGUID+280, 0, 0, 0, 0, 389, 0, NULL), -- Shattered Hand Savage
-(@CGUID+281, 0, 0, 0, 0, 389, 0, NULL); -- Shattered Hand Savage
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+52, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
+(@CGUID+53, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
+(@CGUID+54, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
+(@CGUID+55, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
+(@CGUID+63, 0, 0, 0, 0, 0, '8876 16093'), -- Shattered Hand Brawler
+(@CGUID+64, 0, 0, 0, 0, 0, '8876 16093'), -- Shattered Hand Brawler
+(@CGUID+65, 0, 0, 0, 0, 0, '8876 16093'), -- Shattered Hand Brawler
+(@CGUID+68, 0, 0, 0, 0, 0, '16093'), -- Shadowmoon Acolyte
+(@CGUID+70, 0, 0, 0, 375, 0, NULL), -- Shattered Hand Reaver
+(@CGUID+71, 0, 0, 2, 214, 0, NULL), -- Shattered Hand Sharpshooter
+(@CGUID+72, 0, 0, 0, 333, 0, NULL), -- creature_spawn_entry
+(@CGUID+79, 0, 0, 0, 333, 0, NULL), -- creature_spawn_entry
+(@CGUID+80, 0, 0, 2, 214, 0, NULL), -- Shattered Hand Sharpshooter
+(@CGUID+81, 0, 0, 2, 214, 0, NULL), -- Shattered Hand Sharpshooter
+(@CGUID+132, 0, 0, 0, 333, 0, NULL), -- creature_spawn_entry
+(@CGUID+133, 0, 0, 0, 333, 0, NULL), -- Shattered Hand Heathen
+(@CGUID+265, 0, 0, 0, 389, 0, NULL), -- creature_spawn_entry
+(@CGUID+266, 0, 0, 0, 389, 0, NULL), -- Shattered Hand Savage
+(@CGUID+267, 0, 0, 0, 389, 0, NULL), -- creature_spawn_entry
+(@CGUID+274, 0, 0, 0, 389, 0, NULL), -- creature_spawn_entry
+(@CGUID+275, 0, 0, 2, 214, 0, NULL), -- Shattered Hand Sharpshooter
+(@CGUID+276, 0, 0, 2, 214, 0, NULL), -- Shattered Hand Sharpshooter
+(@CGUID+277, 0, 0, 2, 214, 0, NULL), -- Shattered Hand Sharpshooter
+(@CGUID+278, 0, 0, 0, 375, 0, NULL), -- Shattered Hand Reaver
+(@CGUID+279, 0, 0, 0, 375, 0, NULL), -- Shattered Hand Reaver
+(@CGUID+280, 0, 0, 0, 389, 0, NULL), -- Shattered Hand Savage
+(@CGUID+281, 0, 0, 0, 389, 0, NULL); -- Shattered Hand Savage
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(16507, 0, 0, 0, 0, 0, 0, '18950'), -- Shattered Hand Sentry
-(16593, 0, 0, 1, 16, 0, 0, '8876'), -- Shattered Hand Brawler
-(16700, 0, 0, 0, 0, 0, 0, '30472'), -- Shattered Hand Legionnaire
-(16704, 0, 0, 2, 0, 0, 0, NULL), -- Shattered Hand Sharpshooter
-(16808, 0, 0, 0, 0, 0, 0, '19818'), -- Warchief Kargath Bladefist -- stealth detect?
-(17462, 0, 0, 0, 0, 0, 0, '18950'), -- Shattered Hand Zealot
-(17464, 0, 0, 0, 0, 389, 0, '19818'), -- Shattered Hand Gladiator
-(17471, 0, 0, 0, 0, 0, 0, NULL), -- Lesser Shadow Fissure
-(17578, 0, 0, 0, 0, 0, 0, '7056'), -- Training Dummy
-(17669, 0, 0, 0, 0, 0, 0, '18950'), -- Rabid Warhound
-(17671, 0, 0, 0, 0, 333, 0, '12782 18950'), -- Shattered Hand Champion
-(17693, 0, 0, 0, 0, 0, 0, '18950'), -- Shattered Hand Scout
-(17695, 0, 0, 1, 16, 0, 0, '30991'), -- Shattered Hand Assassin
-(18370, 0, 0, 0, 0, 0, 0, NULL), -- Wild Shadow Fissure
-(20923, 0, 0, 0, 0, 0, 0, '18950'); -- Blood Guard Porung
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(16507, 0, 0, 0, 0, 0, '18950'), -- Shattered Hand Sentry
+(16593, 0, 0, 1, 0, 0, '8876'), -- Shattered Hand Brawler
+(16700, 0, 0, 0, 0, 0, '30472'), -- Shattered Hand Legionnaire
+(16704, 0, 0, 2, 0, 0, NULL), -- Shattered Hand Sharpshooter
+(16808, 0, 0, 0, 0, 0, '19818'), -- Warchief Kargath Bladefist -- stealth detect?
+(17462, 0, 0, 0, 0, 0, '18950'), -- Shattered Hand Zealot
+(17464, 0, 0, 0, 389, 0, '19818'), -- Shattered Hand Gladiator
+(17471, 0, 0, 0, 0, 0, NULL), -- Lesser Shadow Fissure
+(17578, 0, 0, 0, 0, 0, '7056'), -- Training Dummy
+(17669, 0, 0, 0, 0, 0, '18950'), -- Rabid Warhound
+(17671, 0, 0, 0, 333, 0, '12782 18950'), -- Shattered Hand Champion
+(17693, 0, 0, 0, 0, 0, '18950'), -- Shattered Hand Scout
+(17695, 0, 0, 1, 0, 0, '30991'), -- Shattered Hand Assassin
+(18370, 0, 0, 0, 0, 0, NULL), -- Wild Shadow Fissure
+(20923, 0, 0, 0, 0, 0, '18950'); -- Blood Guard Porung
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Entrance - Shattered Hand Legionnaire #1

@@ -119,55 +119,55 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+90, 0, 0, 0, 0, 0, 0, NULL), -- Withered Spearhide
-(@CGUID+104, 0, 0, 0, 0, 0, 0, NULL), -- Battle Boar Horror
-(@CGUID+105, 0, 0, 0, 0, 0, 0, NULL), -- Battle Boar Horror
-(@CGUID+121, 0, 0, 0, 0, 0, 0, NULL), -- Skeletal Frostweaver
-(@CGUID+124, 0, 0, 0, 0, 0, 0, NULL), -- Skeletal Frostweaver
-(@CGUID+133, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Skeleton
-(@CGUID+134, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Skeleton
-(@CGUID+157, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Skeleton
-(@CGUID+158, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Skeleton
-(@CGUID+159, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Skeleton
-(@CGUID+160, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Skeleton
-(@CGUID+219, 0, 0, 0, 0, 0, 0, NULL), -- Boneflayer Ghoul
-(@CGUID+236, 0, 0, 0, 0, 0, 0, NULL), -- Thorn Eater Ghoul
-(@CGUID+241, 0, 0, 0, 0, 0, 0, NULL), -- Frozen Soul
-(@CGUID+251, 0, 0, 0, 0, 0, 0, NULL), -- Freezing Spirit
-(@CGUID+259, 0, 0, 0, 0, 0, 0, NULL); -- Glutton
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+90, 0, 0, 0, 0, 0, NULL), -- Withered Spearhide
+(@CGUID+104, 0, 0, 0, 0, 0, NULL), -- Battle Boar Horror
+(@CGUID+105, 0, 0, 0, 0, 0, NULL), -- Battle Boar Horror
+(@CGUID+121, 0, 0, 0, 0, 0, NULL), -- Skeletal Frostweaver
+(@CGUID+124, 0, 0, 0, 0, 0, NULL), -- Skeletal Frostweaver
+(@CGUID+133, 0, 0, 1, 0, 0, NULL), -- Splinterbone Skeleton
+(@CGUID+134, 0, 0, 1, 0, 0, NULL), -- Splinterbone Skeleton
+(@CGUID+157, 0, 0, 1, 0, 0, NULL), -- Splinterbone Skeleton
+(@CGUID+158, 0, 0, 1, 0, 0, NULL), -- Splinterbone Skeleton
+(@CGUID+159, 0, 0, 1, 0, 0, NULL), -- Splinterbone Skeleton
+(@CGUID+160, 0, 0, 1, 0, 0, NULL), -- Splinterbone Skeleton
+(@CGUID+219, 0, 0, 0, 0, 0, NULL), -- Boneflayer Ghoul
+(@CGUID+236, 0, 0, 0, 0, 0, NULL), -- Thorn Eater Ghoul
+(@CGUID+241, 0, 0, 0, 0, 0, NULL), -- Frozen Soul
+(@CGUID+251, 0, 0, 0, 0, 0, NULL), -- Freezing Spirit
+(@CGUID+259, 0, 0, 0, 0, 0, NULL); -- Glutton
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(7327, 0, 0, 1, 16, 0, 0, NULL), -- Withered Warrior
-(7328, 0, 0, 1, 16, 0, 0, NULL), -- Withered Reaver
-(7329, 0, 0, 1, 16, 0, 0, '11441'), -- Withered Quilguard
-(7332, 0, 0, 1, 16, 0, 0, '12246'), -- Withered Spearhide
-(7333, 0, 0, 1, 16, 0, 0, NULL), -- Withered Battle Boar
-(7334, 0, 0, 1, 16, 0, 0, NULL), -- Battle Boar Horror
-(7335, 0, 0, 1, 16, 0, 0, NULL), -- Death's Head Geomancer
-(7337, 0, 0, 1, 16, 0, 0, NULL), -- Death's Head Necromancer
-(7341, 0, 0, 1, 16, 0, 0, NULL), -- Skeletal Frostweaver
-(7342, 0, 0, 1, 16, 0, 0, NULL), -- Skeletal Summoner
-(7343, 0, 0, 1, 16, 10, 0, NULL), -- Splinterbone Skeleton
-(7344, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Warrior
-(7345, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Captain
-(7346, 0, 0, 1, 16, 0, 0, NULL), -- Splinterbone Centurion
-(7347, 0, 0, 1, 16, 0, 0, '12539'), -- Boneflayer Ghoul
-(7348, 0, 0, 1, 16, 0, 0, '12539'), -- Thorn Eater Ghoul
-(7349, 0, 0, 1, 16, 0, 0, '3616'), -- Tomb Fiend
-(7351, 0, 0, 1, 16, 0, 0, '12254'), -- Tomb Reaver
-(7352, 0, 0, 1, 16, 0, 0, '12529'), -- Frozen Soul
-(7353, 0, 0, 1, 16, 0, 0, '12529'), -- Freezing Spirit
-(7354, 0, 0, 1, 16, 0, 0, NULL), -- Ragglesnout
-(7355, 0, 0, 1, 16, 0, 0, '8876 12254'), -- Tuten'kash
-(7356, 0, 0, 1, 16, 0, 0, '12947'), -- Plaguemaw the Rotting
-(7357, 0, 0, 1, 16, 10, 0, NULL), -- Mordresh Fire Eye
-(7358, 0, 0, 1, 16, 0, 0, NULL), -- Amnennar the Coldbringer
-(8516, 0, 0, 1, 16, 0, 0, '13326'), -- Belnistrasz
-(8567, 0, 0, 1, 16, 0, 0, '8876 12627'), -- Glutton
-(8662, 0, 0, 1, 16, 0, 0, NULL), -- Idol Oven Fire Target
-(8696, 0, 0, 1, 16, 0, 0, NULL), -- Henry Stern
-(8767, 0, 0, 1, 16, 0, 0, NULL); -- Sah'rhee
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(7327, 0, 0, 1, 0, 0, NULL), -- Withered Warrior
+(7328, 0, 0, 1, 0, 0, NULL), -- Withered Reaver
+(7329, 0, 0, 1, 0, 0, '11441'), -- Withered Quilguard
+(7332, 0, 0, 1, 0, 0, '12246'), -- Withered Spearhide
+(7333, 0, 0, 1, 0, 0, NULL), -- Withered Battle Boar
+(7334, 0, 0, 1, 0, 0, NULL), -- Battle Boar Horror
+(7335, 0, 0, 1, 0, 0, NULL), -- Death's Head Geomancer
+(7337, 0, 0, 1, 0, 0, NULL), -- Death's Head Necromancer
+(7341, 0, 0, 1, 0, 0, NULL), -- Skeletal Frostweaver
+(7342, 0, 0, 1, 0, 0, NULL), -- Skeletal Summoner
+(7343, 0, 0, 1, 10, 0, NULL), -- Splinterbone Skeleton
+(7344, 0, 0, 1, 0, 0, NULL), -- Splinterbone Warrior
+(7345, 0, 0, 1, 0, 0, NULL), -- Splinterbone Captain
+(7346, 0, 0, 1, 0, 0, NULL), -- Splinterbone Centurion
+(7347, 0, 0, 1, 0, 0, '12539'), -- Boneflayer Ghoul
+(7348, 0, 0, 1, 0, 0, '12539'), -- Thorn Eater Ghoul
+(7349, 0, 0, 1, 0, 0, '3616'), -- Tomb Fiend
+(7351, 0, 0, 1, 0, 0, '12254'), -- Tomb Reaver
+(7352, 0, 0, 1, 0, 0, '12529'), -- Frozen Soul
+(7353, 0, 0, 1, 0, 0, '12529'), -- Freezing Spirit
+(7354, 0, 0, 1, 0, 0, NULL), -- Ragglesnout
+(7355, 0, 0, 1, 0, 0, '8876 12254'), -- Tuten'kash
+(7356, 0, 0, 1, 0, 0, '12947'), -- Plaguemaw the Rotting
+(7357, 0, 0, 1, 10, 0, NULL), -- Mordresh Fire Eye
+(7358, 0, 0, 1, 0, 0, NULL), -- Amnennar the Coldbringer
+(8516, 0, 0, 1, 0, 0, '13326'), -- Belnistrasz
+(8567, 0, 0, 1, 0, 0, '8876 12627'), -- Glutton
+(8662, 0, 0, 1, 0, 0, NULL), -- Idol Oven Fire Target
+(8696, 0, 0, 1, 0, 0, NULL), -- Henry Stern
+(8767, 0, 0, 1, 0, 0, NULL); -- Sah'rhee
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 

@@ -57,12 +57,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
--- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
+-- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(10184, 0, 3, 1, 0, 0, 0, NULL), -- Onyxia
-(12129, 0, 0, 1, 16, 0, 0, '18950'), -- Onyxian Warder
-(12758, 0, 0, 1, 16, 0, 0, NULL); -- Onyxia Trigger
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(10184, 0, 3, 1, 0, 0, NULL), -- Onyxia
+(12129, 0, 0, 1, 0, 0, '18950'), -- Onyxian Warder
+(12758, 0, 0, 1, 0, 0, NULL); -- Onyxia Trigger
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 

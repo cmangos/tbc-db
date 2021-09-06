@@ -819,73 +819,73 @@ INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,
 (25319,1,7,1666.39,594.8594,139.1098,0,0,100),
 (25319,1,8,1704.55,579.4996,140.3171,0,0,100);
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+153, 0, 0, 1, 0, 0, 0, '45769 18950 18943'), -- Sunblade Protector
-(@CGUID+156, 0, 0, 1, 0, 0, 0, '45769 18950 18943'), -- Sunblade Protector
-(@CGUID+197, 0, 1, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+198, 0, 3, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+199, 0, 3, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+200, 0, 3, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+201, 0, 6, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+202, 0, 7, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+203, 0, 6, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+204, 0, 3, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+205, 0, 3, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+206, 0, 3, 1, 16, 0, 0, NULL), -- Shattered Sun Soldier
-(@CGUID+327, 0, 1, 1, 16, 0, 0, '45769 46744'), -- Shadowsword Manafiend
-(@CGUID+328, 0, 1, 1, 16, 0, 0, '45769 16380'), -- Shadowsword Assassin
-(@CGUID+331, 0, 1, 1, 16, 0, 0, '45769'); -- Shadowsword Lifeshaper
+INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+153, 0, 0, 1, 0, 0, '45769 18950 18943'), -- Sunblade Protector
+(@CGUID+156, 0, 0, 1, 0, 0, '45769 18950 18943'), -- Sunblade Protector
+(@CGUID+197, 0, 1, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+198, 0, 3, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+199, 0, 3, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+200, 0, 3, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+201, 0, 6, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+202, 0, 7, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+203, 0, 6, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+204, 0, 3, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+205, 0, 3, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+206, 0, 3, 1, 0, 0, NULL), -- Shattered Sun Soldier
+(@CGUID+327, 0, 1, 1, 0, 0, '45769 46744'), -- Shadowsword Manafiend
+(@CGUID+328, 0, 1, 1, 0, 0, '45769 16380'), -- Shadowsword Assassin
+(@CGUID+331, 0, 1, 1, 0, 0, '45769'); -- Shadowsword Lifeshaper
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `b2_1_flags`, `emote`, `moveflags`, `auras`) VALUES
-(24850, 0, 3, 1, 16, 0, 0, NULL), -- Kalecgos
-(24882, 0, 0, 1, 16, 27, 0, '45769 42459 45210'), -- Brutallus
-(24891, 0, 0, 1, 16, 0, 0, '44801'), -- Kalecgos
-(24892, 0, 0, 1, 16, 0, 0, '44800 44801'), -- Sathrovarr the Corruptor
-(24928, 0, 0, 1, 16, 0, 1024, NULL), -- Sunwell Daily Bunny x 1.00
-(25165, 0, 0, 1, 16, 0, 0, '42459'), -- Lady Sacrolash
-(25315, 0, 0, 1, 0, 0, 0, '45769 47113 46548'), -- Kil'jaeden
-(25357, 0, 0, 1, 16, 0, 1024, NULL), -- Felmyst Flight Target - Left
-(25358, 0, 0, 1, 16, 0, 1024, NULL), -- Felmyst Flight Target - Right
-(25363, 0, 0, 1, 16, 0, 0, '45769'), -- Sunblade Cabalist
-(25367, 0, 0, 1, 16, 0, 0, '45769'), -- Sunblade Arch Mage
-(25368, 0, 0, 1, 16, 0, 0, '45769 42459'), -- Sunblade Slayer
-(25369, 0, 0, 1, 16, 0, 0, '45769'), -- Sunblade Vindicator
-(25370, 0, 0, 1, 16, 0, 0, '45769'), -- Sunblade Dusk Priest
-(25371, 0, 0, 1, 16, 0, 0, '45769'), -- Sunblade Dawn Priest
-(25372, 0, 0, 1, 0, 0, 0, '18950 45769 42459'), -- Sunblade Scout
-(25373, 0, 0, 1, 16, 0, 0, '45769'), -- Shadowsword Soulbinder
-(25483, 0, 0, 1, 16, 0, 0, '45769 46744'), -- Shadowsword Manafiend
-(25484, 0, 0, 1, 16, 0, 0, '45769 16380'), -- Shadowsword Assassin
-(25485, 0, 0, 1, 16, 0, 0, '45769 42459'), -- Shadowsword Deathbringer
-(25486, 0, 0, 1, 16, 0, 0, '45769 18950'), -- Shadowsword Vanquisher
-(25506, 0, 0, 1, 16, 0, 0, '45769'), -- Shadowsword Lifeshaper
-(25507, 0, 0, 1, 0, 0, 0, '45769 18950 10255 18943'), -- Sunblade Protector
-(25508, 0, 0, 1, 16, 0, 0, '45769'), -- Shadowsword Guardian
-(25509, 0, 0, 1, 16, 0, 0, '45769 46267'), -- Priestess of Torment
-(25588, 0, 0, 1, 0, 0, 0, '45769'), -- Hand of the Deceiver
-(25591, 0, 0, 1, 16, 0, 0, '45769 46277'), -- Painbringer
-(25592, 0, 0, 1, 16, 0, 0, '45769 31722'), -- Doomfire Destroyer
-(25593, 0, 0, 1, 16, 0, 0, '45769'), -- Apocalypse Guard
-(25595, 0, 0, 1, 16, 0, 0, '45769'), -- Chaos Gazer
-(25597, 0, 0, 1, 16, 0, 0, '45769'), -- Oblivion Mage
-(25598, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Felfire Fiend ss.47067
-(25599, 0, 0, 1, 16, 0, 0, '45769'), -- Cataclysm Hound
-(25632, 0, 0, 1, 16, 0, 0, NULL), -- Vindicator Moorba
-(25638, 0, 0, 1, 16, 0, 0, NULL), -- Captain Selana
-(25639, 0, 0, 1, 16, 0, 0, NULL), -- Anchorite Elbadon
-(25644, 0, 0, 1, 16, 0, 0, NULL), -- Neophyte Narama
-(25708, 0, 0, 1, 16, 0, 0, NULL), -- Sinister Reflection
-(25744, 0, 0, 1, 0, 0, 0, '45769 45934'), -- Dark Fiend
-(25772, 0, 0, 1, 16, 0, 0, '45769 46086'), -- Void Sentinal
-(25798, 0, 0, 1, 16, 0, 0, '45769 42459'), -- Shadowsword Berserker
-(25799, 0, 0, 1, 16, 0, 0, '45769'), -- Shadowsword Fury Mage
-(25824, 0, 0, 1, 16, 0, 0, '45769'), -- Void Spawn
-(25837, 0, 0, 1, 16, 0, 0, '45769'), -- Shadowsword Commander
-(25851, 0, 0, 1, 16, 0, 0, '45769'), -- Volatile Fiend
-(25867, 0, 0, 1, 16, 0, 0, '45769'), -- Sunblade Dragonhawk
-(25948, 0, 0, 1, 16, 0, 0, '45769 31722'), -- Doomfire Shard
-(25953, 0, 0, 1, 16, 0, 0, NULL), -- Fel Crystal Spell Target
-(26101, 0, 0, 1, 16, 0, 0, '45769'); -- Fire Fiend
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+(24850, 0, 3, 1, 0, 0, NULL), -- Kalecgos
+(24882, 0, 0, 1, 27, 0, '45769 42459 45210'), -- Brutallus
+(24891, 0, 0, 1, 0, 0, '44801'), -- Kalecgos
+(24892, 0, 0, 1, 0, 0, '44800 44801'), -- Sathrovarr the Corruptor
+(24928, 0, 0, 1, 0, 1024, NULL), -- Sunwell Daily Bunny x 1.00
+(25165, 0, 0, 1, 0, 0, '42459'), -- Lady Sacrolash
+(25315, 0, 0, 1, 0, 0, '45769 47113 46548'), -- Kil'jaeden
+(25357, 0, 0, 1, 0, 1024, NULL), -- Felmyst Flight Target - Left
+(25358, 0, 0, 1, 0, 1024, NULL), -- Felmyst Flight Target - Right
+(25363, 0, 0, 1, 0, 0, '45769'), -- Sunblade Cabalist
+(25367, 0, 0, 1, 0, 0, '45769'), -- Sunblade Arch Mage
+(25368, 0, 0, 1, 0, 0, '45769 42459'), -- Sunblade Slayer
+(25369, 0, 0, 1, 0, 0, '45769'), -- Sunblade Vindicator
+(25370, 0, 0, 1, 0, 0, '45769'), -- Sunblade Dusk Priest
+(25371, 0, 0, 1, 0, 0, '45769'), -- Sunblade Dawn Priest
+(25372, 0, 0, 1, 0, 0, '18950 45769 42459'), -- Sunblade Scout
+(25373, 0, 0, 1, 0, 0, '45769'), -- Shadowsword Soulbinder
+(25483, 0, 0, 1, 0, 0, '45769 46744'), -- Shadowsword Manafiend
+(25484, 0, 0, 1, 0, 0, '45769 16380'), -- Shadowsword Assassin
+(25485, 0, 0, 1, 0, 0, '45769 42459'), -- Shadowsword Deathbringer
+(25486, 0, 0, 1, 0, 0, '45769 18950'), -- Shadowsword Vanquisher
+(25506, 0, 0, 1, 0, 0, '45769'), -- Shadowsword Lifeshaper
+(25507, 0, 0, 1, 0, 0, '45769 18950 10255 18943'), -- Sunblade Protector
+(25508, 0, 0, 1, 0, 0, '45769'), -- Shadowsword Guardian
+(25509, 0, 0, 1, 0, 0, '45769 46267'), -- Priestess of Torment
+(25588, 0, 0, 1, 0, 0, '45769'), -- Hand of the Deceiver
+(25591, 0, 0, 1, 0, 0, '45769 46277'), -- Painbringer
+(25592, 0, 0, 1, 0, 0, '45769 31722'), -- Doomfire Destroyer
+(25593, 0, 0, 1, 0, 0, '45769'), -- Apocalypse Guard
+(25595, 0, 0, 1, 0, 0, '45769'), -- Chaos Gazer
+(25597, 0, 0, 1, 0, 0, '45769'), -- Oblivion Mage
+(25598, 0, 0, 1, 0, 0, '45769'), -- Volatile Felfire Fiend ss.47067
+(25599, 0, 0, 1, 0, 0, '45769'), -- Cataclysm Hound
+(25632, 0, 0, 1, 0, 0, NULL), -- Vindicator Moorba
+(25638, 0, 0, 1, 0, 0, NULL), -- Captain Selana
+(25639, 0, 0, 1, 0, 0, NULL), -- Anchorite Elbadon
+(25644, 0, 0, 1, 0, 0, NULL), -- Neophyte Narama
+(25708, 0, 0, 1, 0, 0, NULL), -- Sinister Reflection
+(25744, 0, 0, 1, 0, 0, '45769 45934'), -- Dark Fiend
+(25772, 0, 0, 1, 0, 0, '45769 46086'), -- Void Sentinal
+(25798, 0, 0, 1, 0, 0, '45769 42459'), -- Shadowsword Berserker
+(25799, 0, 0, 1, 0, 0, '45769'), -- Shadowsword Fury Mage
+(25824, 0, 0, 1, 0, 0, '45769'), -- Void Spawn
+(25837, 0, 0, 1, 0, 0, '45769'), -- Shadowsword Commander
+(25851, 0, 0, 1, 0, 0, '45769'), -- Volatile Fiend
+(25867, 0, 0, 1, 0, 0, '45769'), -- Sunblade Dragonhawk
+(25948, 0, 0, 1, 0, 0, '45769 31722'), -- Doomfire Shard
+(25953, 0, 0, 1, 0, 0, NULL), -- Fel Crystal Spell Target
+(26101, 0, 0, 1, 0, 0, '45769'); -- Fire Fiend
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- Kalecgos & Sathrovarr the Corruptor
