@@ -189,8 +189,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 (@CGUID+317, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
 (@CGUID+318, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
 (@CGUID+319, 0, 0, 1, 0, 0, '12627'), -- Diseased Ghoul
-(@CGUID+355, 0, 0, 1, 0, 0, '17467'), -- Lord Alexei Barov
-(@CGUID+399, 0, 0, 1, 0, 0, NULL); -- Kormok Trigger
+(@CGUID+355, 0, 0, 1, 0, 0, '17467'); -- Lord Alexei Barov
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (10432, 0, 0, 1, 0, 0, NULL), -- Vectus

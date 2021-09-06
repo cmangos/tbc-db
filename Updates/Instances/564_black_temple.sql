@@ -1767,8 +1767,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 (@CGUID+75, 0, 0, 1, 0, 0, NULL), -- Ashtongue Primalist
 (@CGUID+76, 0, 8, 1, 0, 0, NULL), -- Ashtongue Primalist
 (@CGUID+77, 0, 0, 1, 0, 0, NULL), -- Ashtongue Primalist
-(@CGUID+93, 0, 3, 1, 0, 0, NULL), -- Reliquary of the Lost
-(@CGUID+105, 0, 0, 1, 0, 0, NULL), -- Teron Gorefiend
 (@CGUID+131, 0, 0, 1, 375, 0, NULL), -- Shadowmoon Reaver
 (@CGUID+132, 0, 0, 1, 0, 0, NULL), -- Shadowmoon Reaver
 (@CGUID+133, 0, 0, 1, 375, 0, NULL), -- Shadowmoon Reaver
@@ -1792,7 +1790,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 (@CGUID+194, 0, 1, 1, 0, 1024, NULL), -- Black Temple Captive
 (@CGUID+195, 0, 1, 1, 0, 1024, NULL), -- Black Temple Captive
 (@CGUID+196, 0, 1, 1, 0, 1024, NULL), -- Black Temple Captive
-(@CGUID+198, 0, 0, 1, 0, 0, NULL), -- Supremus
 (@CGUID+200, 0, 3, 1, 0, 0, NULL), -- Temple Concubine
 (@CGUID+201, 0, 3, 1, 0, 0, NULL), -- Temple Concubine
 (@CGUID+204, 0, 1, 1, 0, 0, NULL), -- Temple Concubine
@@ -1965,8 +1962,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 (@CGUID+489, 0, 0, 1, 0, 0, '40155'), -- Invisible Stalker (Floating)
 (@CGUID+490, 0, 0, 1, 0, 0, '40155'), -- Invisible Stalker (Floating)
 (@CGUID+491, 0, 0, 1, 0, 0, '40155'), -- Invisible Stalker (Floating)
-(@CGUID+500, 0, 0, 1, 0, 0, NULL), -- Shadowmoon Weapon Master
-(@CGUID+501, 0, 0, 1, 0, 0, NULL), -- Black Temple Invis Stalker
 (@CGUID+516, 0, 0, 1, 173, 0, NULL), -- Shadowmoon Grunt
 (@CGUID+517, 0, 3, 1, 0, 0, NULL), -- Shadowmoon Grunt
 (@CGUID+518, 0, 0, 1, 173, 0, NULL), -- Shadowmoon Grunt
@@ -1985,9 +1980,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 (@CGUID+531, 0, 0, 1, 173, 0, NULL), -- Shadowmoon Grunt
 (@CGUID+532, 0, 0, 1, 173, 0, NULL), -- Shadowmoon Grunt
 (@CGUID+533, 0, 3, 1, 0, 0, NULL), -- Shadowmoon Grunt
-(@CGUID+534, 0, 0, 1, 0, 0, NULL), -- Aluyen
-(@CGUID+535, 0, 0, 1, 0, 0, NULL), -- Seer Kanai
-(@CGUID+536, 0, 0, 1, 0, 0, NULL), -- Okuno
 (@CGUID+537, 0, 8, 1, 0, 0, '18943'), -- Hand of Gorefiend
 (@CGUID+538, 0, 8, 1, 0, 0, '18943'), -- Hand of Gorefiend
 (@CGUID+539, 0, 0, 1, 375, 0, '18943'), -- Hand of Gorefiend
@@ -2007,10 +1999,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 (@CGUID+706, 0, 0, 1, 0, 0, NULL), -- Illidari Battle-mage
 (@CGUID+707, 0, 0, 1, 0, 0, NULL), -- Illidari Battle-mage
 (@CGUID+708, 0, 0, 1, 69, 0, NULL), -- Illidari Battle-mage
-(@CGUID+715, 0, 0, 1, 0, 0, NULL), -- Spirit of Udalo
-(@CGUID+716, 0, 0, 1, 0, 0, NULL), -- Spirit of Olum
-(@CGUID+717, 0, 0, 1, 0, 1024, NULL), -- Illidan Door Trigger
-(@CGUID+718, 0, 0, 1, 0, 0, NULL); -- Reliquary Combat Trigger
+(@CGUID+717, 0, 0, 1, 0, 1024, NULL); -- Illidan Door Trigger
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (22841, 0, 0, 0, 0, 0, '39833'), -- Shade of Akama
