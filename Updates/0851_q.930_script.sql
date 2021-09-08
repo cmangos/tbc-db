@@ -21,8 +21,8 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `dat
 
 DELETE FROM `dbscript_string` WHERE `entry` BETWEEN 2000003337 AND 2000003340;
 INSERT INTO `dbscript_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
-(2000003337, 'Denalan removes the seeds from the Glowing Fruit...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 0, 0, 0, NULL), -- 2000000086
-(2000003338, 'Let\'s see how these seeds grow in my prepared soil...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 0, NULL), -- 2000000087
-(2000003339, 'Denalan plants fruit seeds.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 0, 0, 0, NULL), -- 2000000088
-(2000003340, 'Bogling rises from the soil!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 0, 0, 0, NULL); -- 2000000089
+(2000003337, '%s removes the seeds from the Glowing Fruit...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 0, 0, 1156, NULL), -- 2000000086
+(2000003338, 'Let''s see how these seeds grow in my prepared soil...', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, 0, 1157, NULL), -- 2000000087
+(2000003339, '%s plants the fruit seeds.', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 0, 0, 1158, NULL), -- 2000000088
+(2000003340, '%s rises from the soil!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 2, 0, 0, 1174, NULL); -- 2000000089 (also BCT 1175)
 
