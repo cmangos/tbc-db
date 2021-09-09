@@ -435,7 +435,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+259, 8567, 129, 2468.71, 1006.83, 23.7573, 6.11095, 36000, 36000, 0, 1, 0, 2), -- Glutton
 (@CGUID+260, 8662, 129, 2581.81, 942.588, 62.2902, 0.820305, 7200, 7200, 0, 0, 0, 0), -- Idol Oven Fire Target
 (@CGUID+261, 8696, 129, 2603.03, 705.568, 54.9087, 2.04204, 7200, 7200, 0, 0, 0, 0), -- Henry Stern
-(@CGUID+262, 8767, 129, 2567.37, 686.373, 55.2735, 2.23402, 7200, 7200, 0, 0, 0, 0); -- Sah'rhee
+(@CGUID+262, 8767, 129, 2567.37, 686.373, 55.2735, 2.23402, 7200, 7200, 0, 0, 0, 0), -- Sah'rhee
+(@CGUID+263, 14686, 129, 2583.18, 695.861, 56.8033, 1.8675, 604800, 604800, 0, 0, 0, 0); -- Lady Falther'ess
 
 -- ===========
 -- GAMEOBJECTS
@@ -509,7 +510,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- EVENTS
 -- ======
 
--- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+(@CGUID+263, 89); -- Lady Falther'ess
 
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 

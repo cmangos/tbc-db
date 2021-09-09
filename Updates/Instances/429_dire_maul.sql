@@ -2341,7 +2341,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1070, 13160, 429, 468.5847, 294.3693, 2.852882, 0.662907, 7200, 7200, 2, 0, 0, 1), -- Carrion Swarmer
 (@CGUID+1071, 13160, 429, 468.7993, 280.4746, 2.852868, 3.095573, 7200, 7200, 2, 0, 0, 1), -- Carrion Swarmer
 (@CGUID+1072, 13160, 429, 476.467, 291.735, 2.852862, 4.770678, 7200, 7200, 2, 0, 0, 1), -- Carrion Swarmer
-(@CGUID+1073, 13160, 429, 472.4048, 295.3147, 2.852875, 4.433242, 7200, 7200, 2, 0, 0, 1); -- Carrion Swarmer
+(@CGUID+1073, 13160, 429, 472.4048, 295.3147, 2.852875, 4.433242, 7200, 7200, 2, 0, 0, 1), -- Carrion Swarmer
+(@CGUID+1074, 14690, 429, -112.776, 583.823, -3.47887, 5.60251, 604800, 604800, 0, 0, 0, 0); -- Revanchion
 
 -- =======
 -- POOLING
@@ -3312,7 +3313,8 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 (@OGUID+364, 1), -- Midsummer Bonfire (Midsummer Fire Festival)
 (@OGUID+365, 1); -- Flame of Dire Maul (Midsummer Fire Festival)
 
--- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+(@CGUID+1074, 89); -- Revanchion
 
 INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 (@CGUID+556, 0, 15734, 0, 0, 0, 2); -- Prince Tortheldrin (Feast of Winter Veil)

@@ -661,6 +661,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+142, 4444, 33, -217.991, 2150.77, 81.1327, 2.79253, 7200, 7200, 0, 0, 0, 0), -- Deathstalker Vincent
 (@CGUID+143, 5058, 33, -149.213, 2163.18, 155.762, 0.10472, 7200, 7200, 0, 0, 0, 0), -- Wolfguard Worg
 (@CGUID+144, 10000, 33, -219.345, 2154.02, 81.2098, 5.58505, 43200, 43200, 0, 0, 0, 0), -- Arugal
+(@CGUID+145, 14682, 33, -225.131, 2302.95, 94.7599, 6.02139, 604800, 604800, 0, 0, 0, 0); -- Sever
 
 -- TBC+
 -- Landen Stilwell - q.9692 The Path of the Adept
@@ -736,7 +737,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- ======
 
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
--- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+
+INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+(@CGUID+145, 89); -- Sever
+
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 
 -- =======

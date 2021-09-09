@@ -1196,7 +1196,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+469, 16046, 329, 3423.47, -3055.73, 136.581, 1.15192, 7200, 7200, 0, 0, 0, 0), -- Jarien and Sothos Trigger
 (@CGUID+470, 16100, 329, 4042.35, -3335.88, 115.144, 1.48353, 7200, 7200, 0, 0, 0, 0), -- Ysida's Trigger
 
+(@CGUID+598, 14684, 329, 3733.27, -3480.11, 131.04, 3.05433, 604800, 604800, 0, 0, 0, 0), -- Balzaphon
 (@CGUID+599, 15607, 329, 3708.25, -3453.13, 130.554, 5.86195, 300, 300, 0, 0, 0, 0), -- Elder Farwhisper
+
 -- TBC+ (Paladin quest)
 (@CGUID+600, 17915, 329, 3664.08, -3602.07, 137.043, 3.735, 15, 15, 0, 0, 0, 0); -- [PH] Invis Paladin Quest Credit
 
@@ -1678,6 +1680,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- ======
 
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+(@CGUID+598, 89), -- Balzaphon
 (@CGUID+599, 7); -- Elder Farwhisper
 
 INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES

@@ -117,7 +117,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+398, 8, 197.166, -0.002156, 115.708, 0, 0, 0),
 (@CGUID+398, 9, 172.25, -0.72485, 115.708, 0, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (11551);
+DELETE FROM creature_movement_template WHERE entry IN (11551,14695);
 DELETE FROM creature_movement_template WHERE entry IN (14500) AND `pathId`=0; -- Also has movement path in Dire Maul, map 429
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 (11551, 0, 1, 206.346, 80.7189, 104.244, 100, 0, 0),
@@ -140,7 +140,25 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (14500, 0, 9, 44.64, 154.405, 83.545, 100, 0, 0),
 (14500, 0, 10, 33.498, 156.046, 83.545, 100, 0, 0),
 (14500, 0, 11, 28.269, 160.792, 83.545, 100, 4000, 0),
-(14500, 0, 12, 33.294, 160.895, 83.545, 100, 10000, 1450003);
+(14500, 0, 12, 33.294, 160.895, 83.545, 100, 10000, 1450003),
+-- Lord Blackwood
+(14695, 0, 1, 248.659, 153.031, 109.788, 100, 0, 0),
+(14695, 0, 2, 200.116, 150.961, 109.909, 100, 0, 0),
+(14695, 0, 3, 199.948, 127.819, 109.922, 100, 0, 0),
+(14695, 0, 4, 200.223, 151.043, 109.91, 100, 0, 0),
+(14695, 0, 5, 174.822, 152.469, 109.696, 100, 0, 0),
+(14695, 0, 6, 199.917, 151.078, 109.908, 100, 0, 0),
+(14695, 0, 7, 224.709, 133.206, 109.722, 100, 0, 0),
+(14695, 0, 8, 200.7, 151.368, 109.915, 100, 0, 0),
+(14695, 0, 9, 222.267, 166.311, 109.784, 100, 0, 0),
+(14695, 0, 10, 222.267, 166.311, 109.784, 100, 0, 0),
+(14695, 0, 11, 200.7, 151.368, 109.915, 100, 0, 0),
+(14695, 0, 12, 224.709, 133.206, 109.722, 100, 0, 0),
+(14695, 0, 13, 199.917, 151.078, 109.908, 100, 0, 0),
+(14695, 0, 14, 174.822, 152.469, 109.696, 100, 0, 0),
+(14695, 0, 15, 200.223, 151.043, 109.91, 100, 0, 0),
+(14695, 0, 16, 199.948, 127.819, 109.922, 100, 0, 0),
+(14695, 0, 17, 200.116, 150.961, 109.909, 100, 0, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+61, 0, 0, 1, 0, 0, '12380'), -- Scholomance Adept
@@ -637,7 +655,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+396, 11582, 289, 243.487, 80.5749, 110.055, 0, 7200, 7200, 0, 0, 0, 0), -- Scholomance Dark Summoner
 (@CGUID+397, 11622, 289, 137.145, 171.676, 95.9664, 3.28122, 43200, 43200, 0, 0, 0, 0), -- Rattlegore
 (@CGUID+398, 14861, 289, 164.891, -1.12663, 115.791, 0.117518, 7200, 7200, 5, 0, 0, 2), -- Blood Steward of Kirtonos
-(@CGUID+399, 16047, 289, -24.898, 141.2418, 84.04675, 0.8901179, 7200, 7200, 0, 0, 0, 0); -- Kormok Trigger
+(@CGUID+399, 16047, 289, -24.898, 141.2418, 84.04675, 0.8901179, 7200, 7200, 0, 0, 0, 0), -- Kormok Trigger
+(@CGUID+400, 14695, 289, 200.201, 150.839, 109.879, 5.06145, 604800, 604800, 0, 0, 0, 2); -- Lord Blackwood
 
 -- ===========
 -- GAMEOBJECTS
@@ -716,7 +735,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- EVENTS
 -- ======
 
--- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+(@CGUID+400, 89);
 
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 
