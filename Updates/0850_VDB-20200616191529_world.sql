@@ -135,7 +135,7 @@ INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `posit
 
 -- add matthew hooper waypoints
 UPDATE `creature` SET `movementtype` = 2 WHERE `id` = 1680;
-DELETE FROM `creature_movement_template` WHERE `entry` = 777;
+DELETE FROM `creature_movement_template` WHERE `entry` = 1680;
 INSERT INTO `creature_movement_template` (`entry`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 (1680, 1, -9315.3759765625, -2156.69482421875, 63.483245849609375, 4.839018821716308593, 45000, 0),
 (1680, 2, -9308.3359375, -2140.874755859375, 63.483245849609375, 1.219633817672729492, 30000, 5),
