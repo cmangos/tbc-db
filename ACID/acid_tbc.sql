@@ -13583,7 +13583,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1561701','15617','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower - Enable Range Mode on Aggro'),
 ('1561702','15617','9','0','100','1025','5','30','2300','3900','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Orgrimmar Legion Axe Thrower - Cast Throw'),
 -- Hive'Regal Hunter-Killer 15620
--- Priestess of the Moon 15634
 -- Jonathan the Revelator 15693
 -- Squire Leoren Mal'derath 15722
 -- Colossus of Zora 15740
@@ -30737,6 +30736,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Windwall Totem IV 15492 - TotemAI
 -- Windfury Totem IV 15496 - TotemAI
 -- Windfury Totem V 15497 - TotemAI
+-- Priestess of the Moon 15634
+('1563401','15634','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Priestess of the Moon - Enable Range Mode on Aggro'),
+('1563402','15634','0','0','100','1025','6000','12000','20000','30000','0','0','11','25839','0','0','0','0','0','0','0','0','0','0','Priestess of the Moon - Cast Mass Healing'),
 -- Baby Shark 15661 - NSR
 -- Tiny Snowman 15710
 ('1571001','15710','22','0','100','1','34','0','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Dance on receive dance emote'),
