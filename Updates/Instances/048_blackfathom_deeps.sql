@@ -328,71 +328,106 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+204, 4827, 48, -818.598, -54.6887, -38.2682, 0.907571, 7200, 7200, 3, 0, 0, 1), -- Deep Pool Threshfin
 (@CGUID+205, 4827, 48, -795.99, -156.208, -43.0987, 3.59538, 7200, 7200, 2, 0, 0, 1), -- Deep Pool Threshfin
 (@CGUID+206, 4827, 48, -843.467, -94.0556, -37.2355, 0.191986, 7200, 7200, 3, 0, 0, 1), -- Deep Pool Threshfin
-(@CGUID+207, 4829, 48, -848.446, -453.865, -33.8922, 1.5708, 36000, 36000, 0, 0, 0, 0), -- Aku'mai
-(@CGUID+208, 4830, 48, -746.744, -169.427, -50.6239, 5.49537, 36000, 36000, 5, 1, 0, 2), -- Old Serra'kis
-(@CGUID+209, 4831, 48, -299.917, 413.755, -57.1229, 3.60618, 36000, 36000, 0, 0, 0, 0), -- Lady Sarevess
-(@CGUID+210, 4832, 48, -818.832, -155.576, -25.7923, 4.74729, 36000, 36000, 0, 0, 0, 0), -- Twilight Lord Kelris
-(@CGUID+211, 4887, 48, -442.424, 211.822, -52.6367, 2.23402, 36000, 36000, 0, 0, 0, 0), -- Ghamoo-ra
-(@CGUID+212, 6243, 48, -412.653, 40.919, -48.1363, 4.31096, 36000, 36000, 0, 0, 0, 0), -- Gelihast
-(@CGUID+213, 12902, 48, -622.355, -10.3501, -22.777, 4.90438, 36000, 36000, 0, 0, 0, 0); -- Lorgus Jett
+(@CGUID+207, 4829, 48, -848.446, -453.865, -33.8922, 1.5708, 86400, 86400, 0, 0, 0, 0), -- Aku'mai
+(@CGUID+208, 4830, 48, -746.744, -169.427, -50.6239, 5.49537, 86400, 86400, 5, 1, 0, 2), -- Old Serra'kis
+(@CGUID+209, 4831, 48, -299.917, 413.755, -57.1229, 3.60618, 86400, 86400, 0, 0, 0, 0), -- Lady Sarevess
+(@CGUID+210, 4832, 48, -818.832, -155.576, -25.7923, 4.74729, 86400, 86400, 0, 0, 0, 0), -- Twilight Lord Kelris
+(@CGUID+211, 4887, 48, -442.424, 211.822, -52.6367, 2.23402, 86400, 86400, 0, 0, 0, 0), -- Ghamoo-ra
+(@CGUID+212, 6243, 48, -412.653, 40.919, -48.1363, 4.31096, 86400, 86400, 0, 0, 0, 0), -- Gelihast
+(@CGUID+213, 12902, 48, -622.355, -10.3501, -22.777, 4.90438, 86400, 86400, 0, 0, 0, 0); -- Lorgus Jett
 
 -- ===========
 -- GAMEOBJECTS
 -- ===========
 
 INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
+(@OGUID+11, 1732), (@OGUID+11, 1733), -- Tin Vein, Silver Vein
+(@OGUID+12, 1732), (@OGUID+12, 1733), -- Tin Vein, Silver Vein
+(@OGUID+13, 1732), (@OGUID+13, 1733), -- Tin Vein, Silver Vein
 (@OGUID+30, 3689), (@OGUID+30, 3702), -- Weapon Crate, Armor Crate
 (@OGUID+31, 3689), (@OGUID+31, 3702), -- Weapon Crate, Armor Crate
 (@OGUID+32, 3689), (@OGUID+32, 3702), -- Weapon Crate, Armor Crate
-(@OGUID+37, 75293), (@OGUID+37, 75295), -- Large Battered Chest, Large Iron Bound Chest
-(@OGUID+38, 75293), (@OGUID+38, 75295), -- Large Battered Chest, Large Iron Bound Chest
-(@OGUID+39, 75293), (@OGUID+39, 75295), -- Large Battered Chest, Large Iron Bound Chest
-(@OGUID+40, 75293), (@OGUID+40, 75295), -- Large Battered Chest, Large Iron Bound Chest
-(@OGUID+41, 75293), (@OGUID+41, 75295); -- Large Battered Chest, Large Iron Bound Chest
+(@OGUID+37, 75295), (@OGUID+37, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+38, 75295), (@OGUID+38, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+39, 75295), (@OGUID+39, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+40, 75295), (@OGUID+40, 75298), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+41, 75295), (@OGUID+41, 75298); -- Large Iron Bound Chest, Large Solid Chest
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 1622, 48, -331.144, 362.221, -52.3723, 2.40855, 0, 0, 0.93358, 0.35837, 7200, 7200, 100, 1), -- Bruiseweed
-(@OGUID+2, 1622, 48, -454.55, -34.1752, -31.5826, -0.767945, 0, 0, -0.374607, 0.927184, 7200, 7200, 100, 1), -- Bruiseweed
-(@OGUID+3, 1732, 48, -401.418, 46.9318, -47.7134, 2.26893, 0, 0, 0.906308, 0.422617, 7200, 7200, 100, 1), -- Tin Vein
-(@OGUID+4, 1733, 48, -351.981, 402.932, -53.4195, -0.855212, 0, 0, -0.414694, 0.909961, 7200, 7200, 100, 1), -- Silver Vein
-(@OGUID+5, 2045, 48, -345.151, -10.1984, -70.4985, 0.907571, 0, 0, 0.438371, 0.898794, 7200, 7200, 100, 1), -- Stranglekelp
-(@OGUID+6, 2045, 48, -328.711, 211.076, -69.6185, -0.715585, 0, 0, -0.350207, 0.936672, 7200, 7200, 100, 1), -- Stranglekelp
-(@OGUID+7, 2045, 48, -494.592, 106.927, -73.508, 1.76278, 0, 0, 0.771624, 0.636079, 7200, 7200, 100, 1), -- Stranglekelp
-(@OGUID+8, 2045, 48, -726.43, -159.34, -56.596, -0.593412, 0, 0, -0.292372, 0.956305, 7200, 7200, 100, 1), -- Stranglekelp
--- 9 - 10
-(@OGUID+11, 13949, 48, -330.544, 212.014, -69.706, 2.80998, 0, 0, 0.986286, 0.165048, 0, 0, 100, 1), -- Pitted Iron Chest
-(@OGUID+12, 19018, 48, -320.238, 65.9714, -63.7392, 0.628319, 0, 0, 0.309017, 0.951057, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+13, 19018, 48, -347.471, 76.0812, -61.8706, -0.575959, 0, 0, 0.284015, -0.95882, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+14, 19018, 48, -472.575, 130.778, -72.3319, 1.62316, 0, 0, 0.725374, 0.688355, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+15, 19018, 48, -400.427, 279.812, -71.1439, 2.74017, 0, 0, 0.979925, 0.199368, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+16, 19018, 48, -405.571, 319.074, -68.079, -2.02458, 0, 0, 0.848048, -0.529919, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+17, 19018, 48, -410.671, 348.695, -71.7385, 0.558505, 0, 0, 0.275637, 0.961262, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+18, 19018, 48, -753.173, -21.3254, -37.499, -1.27409, 0, 0, 0.594823, -0.803857, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+19, 19018, 48, -700.195, -100.683, -35.6787, -2.33874, 0, 0, 0.920505, -0.390731, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+20, 19018, 48, -727.025, -118.419, -37.0088, -2.98451, 0, 0, 0.996917, -0.078459, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+21, 19018, 48, -741.055, -152.381, -56.7611, 0.575959, 0, 0, 0.284015, 0.95882, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+22, 19018, 48, -807.617, -120.467, -37.3081, 1.29154, 0, 0, 0.601815, 0.798636, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+23, 19018, 48, -781.432, -165.561, -47.9078, -0.453786, 0, 0, 0.224951, -0.97437, 180, 180, 100, 1), -- Giant Clam
-(@OGUID+24, 21117, 48, -818.361, -200.647, -25.7911, -1.5708, 0, 0, -0.707107, 0.707107, 7200, 7200, 100, 1), -- Portal of Aku'Mai
+(@OGUID+1, 1622, 48, -331.144, 362.221, -52.3723, 2.40855, 0, 0, 0.93358, 0.35837, 86400, 86400, 100, 1), -- Bruiseweed
+(@OGUID+2, 1622, 48, -454.55, -34.1752, -31.5826, -0.767945, 0, 0, -0.374607, 0.927184, 86400, 86400, 100, 1), -- Bruiseweed
+(@OGUID+3, 1622, 48, -523.86688232421875, 348.583404541015625, -51.0341529846191406, 2.059488296508789062, 0, 0, 0.857167243957519531, 0.515038192272186279, 86400, 86400, 100, 1), -- Bruiseweed
+(@OGUID+4, 1622, 48, -625.515, 249.482, -48.4294, 5.21854, 0, 0, -0.507538, 0.861629, 86400, 86400, 100, 1), -- Bruiseweed
+(@OGUID+5, 1622, 48, -475.282867431640625, -89.999481201171875, -38.4008445739746093, 2.234017848968505859, 0, 0, 0.898793220520019531, 0.438372820615768432, 86400, 86400, 100, 1), -- Bruiseweed
+-- 1622 - 1732/1733
+(@OGUID+11, 0, 48, -401.417633056640625, 46.93177413940429687, -47.7133941650390625, 2.268925428390502929, 0, 0, 0.906307220458984375, 0.422619491815567016, 86400, 86400, 100, 1), -- Tin Vein, Silver Vein
+(@OGUID+12, 0, 48, -351.981, 402.932, -53.4195, 5.42798, 0, 0, -0.414693, 0.909962, 86400, 86400, 100, 1), -- Tin Vein, Silver Vein
+(@OGUID+13, 0, 48, -479.65679931640625, 295.416290283203125, -64.3415145874023437, 4.886923789978027343, 0, 0, -0.64278697967529296, 0.766044974327087402, 86400, 86400, 100, 1), -- Tin Vein, Silver Vein
+-- 1732/1733 - 2045
+(@OGUID+16, 2045, 48, -345.1505, -10.19844, -70.49845, 0.9075713, 0, 0, 0.438371, 0.898794, 86400, 86400, 100, 1), -- Stranglekelp (The Drowned Sacellum)
+(@OGUID+17, 2045, 48, -327.89556884765625, 75.12955474853515625, -61.5880393981933593, 2.687806606292724609, 0, 0, 0.974370002746582031, 0.224951311945915222, 86400, 86400, 100, 1), -- Stranglekelp (The Drowned Sacellum)
+(@OGUID+18, 2045, 48, -328.71136474609375, 211.0756378173828125, -69.6184844970703125, 5.567600727081298828, 0, 0, -0.35020732879638671, 0.936672210693359375, 86400, 86400, 100, 1), -- Stranglekelp (The Pool of Ask''ar)
+(@OGUID+19, 2045, 48, -494.5922, 106.9269, -73.50796, 1.762782, 0, 0, 0.771624, 0.636079, 86400, 86400, 100, 1), -- Stranglekelp (The Pool of Ask''ar)
+(@OGUID+20, 2045, 48, -517.09942626953125, 165.3185882568359375, -75.1650466918945312, 3.194002151489257812, 0, 0, -0.99965667724609375, 0.026201646775007247, 86400, 86400, 100, 1), -- Stranglekelp (The Pool of Ask''ar)
+(@OGUID+21, 2045, 48, -726.4299, -159.3403, -56.59599, -0.5934122, 0, 0, -0.292372, 0.956305, 86400, 86400, 100, 1), -- Stranglekelp (The Forgotten Pool)
+(@OGUID+22, 2045, 48, -805.26544189453125, -30.2196693420410156, -35.9841156005859375, 0.994837164878845214, 0, 0, 0.477158546447753906, 0.878817260265350341, 86400, 86400, 100, 1), -- Stranglekelp (Moonshrine Ruins)
+(@OGUID+23, 13949, 48, -330.544, 212.014, -69.706, 2.80998, 0, 0, 0.986286, 0.165048, 0, 0, 100, 1), -- Pitted Iron Chest
+(@OGUID+24, 21117, 48, -818.3607177734375, -200.647247314453125, -25.7910709381103515, 4.712389945983886718, 0, 0, -0.70710659027099609, 0.707106947898864746, 7200, 7200, 100, 1), -- Portal of Aku'Mai
 (@OGUID+25, 21118, 48, -813.47, -158.535, -24.5271, -1.51844, 0, 0, 0.688354, -0.725374, 7200, 7200, 100, 1), -- Fire of Aku'mai
 (@OGUID+26, 21119, 48, -813.578, -170.461, -24.5276, 0.10472, 0, 0, 0.052336, 0.99863, 7200, 7200, 100, 1), -- Fire of Aku'mai
 (@OGUID+27, 21120, 48, -823.955, -170.407, -24.5267, 2.82743, 0, 0, 0.987688, 0.156434, 7200, 7200, 100, 1), -- Fire of Aku'mai
 (@OGUID+28, 21121, 48, -823.88, -158.535, -24.5278, 0.925024, 0, 0, 0.446198, 0.894934, 7200, 7200, 100, 1), -- Fire of Aku'mai
-(@OGUID+29, 21327, 48, -534.789, 317.353, -49.8213, -3.13794, 0.019173, -0.021242, 0.99959, -0.00142, 7200, 7200, 100, 1), -- Campfire
+(@OGUID+29, 21327, 48, -534.78900146484375, 317.35284423828125, -49.8212776184082031, 3.145930051803588867, -0.01917314529418945, 0.021241188049316406, -0.9995889663696289, 0.001760523067787289, 7200, 7200, 100, 1), -- Campfire
 (@OGUID+30, 0, 48, -300.55, 320.14, -53.2449, 3.0, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Weapon Crate, Armor Crate
-(@OGUID+31, 0, 48, -614.864, 252.745, -49.4881, -1.46608, 0, 0, 0.669131, -0.743145, 86400, 86400, 100, 1), -- Weapon Crate, Armor Crate
+(@OGUID+31, 0, 48, -614.86407470703125, 252.7447967529296875, -49.4881477355957031, 4.817109584808349609, 0, 0, -0.66913032531738281, 0.74314504861831665, 86400, 86400, 100, 1), -- Weapon Crate, Armor Crate
 (@OGUID+32, 0, 48, -295.378, 316.711, -52.3953, 2.23402, 0, 0, 0.898793, 0.438373, 86400, 86400, 100, 1), -- Weapon Crate, Armor Crate
--- 3689/3702
+-- Weapon Crate, Armor Crate
 (@OGUID+34, 103015, 48, -413.324, 43.6505, -47.9681, 3.14159, 0, 0, 1, 0, 7200, 7200, 100, 1), -- Shrine of Gelihast
 (@OGUID+35, 103016, 48, -839.619, -477.904, -33.7343, 3.14159, 0, 0, 1, 0, 7200, 7200, 100, 1), -- Altar of the Deeps
 (@OGUID+36, 177964, 48, -782.021, -63.5876, -45.0935, -2.44346, 0, 0, 0.939693, -0.34202, 0, 0, 100, 1), -- Fathom Stone
 -- Blackfathom Deeps
 (@OGUID+37, 0, 48, -517.169, 34.4384, -46.3221, 5.14872, 0, 0, -0.537299, 0.843392, 86400, 86400, 100, 1), -- Large Solid Chest
 (@OGUID+38, 0, 48, -450.61, -38.0686, -31.7772, 3.08923, 0, 0, 0.999657, 0.026177, 86400, 86400, 100, 1), -- Large Solid Chest
-(@OGUID+39, 0, 48, -470.10, -88.05, -39.3990, 2.9, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Iron Bound Chest		// xyz guessed
+(@OGUID+39, 0, 48, -466.737579345703125, -87.5995712280273437, -39.1289024353027343, 2.932138919830322265, 0, 0, 0.994521141052246093, 0.104535527527332305, 86400, 86400, 100, 1), -- Large Iron Bound Chest
 -- Moonshrine Ruins
 (@OGUID+40, 0, 48, -694.42, -47.27, -30.0332, 1.5, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Large Iron Bound Chest		// xyz guessed
-(@OGUID+41, 0, 48, -743.061, -111.067, -30.0483, 1.48353, 0, 0, 0.67559, 0.737277, 86400, 86400, 100, 1); -- Large Iron Bound Chest
+(@OGUID+41, 0, 48, -743.06085205078125, -111.066947937011718, -30.0483303070068359, 1.48352813720703125, 0, 0, 0.675589561462402343, 0.737277925014495849, 86400, 86400, 100, 1), -- Large Iron Bound Chest
+-- The Drowned Sacellum
+(@OGUID+51, 19018, 48, -320.238067626953125, 65.97138214111328125, -63.7391891479492187, 0.628316879272460937, 0, 0, 0.309016227722167968, 0.95105677843093872, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+52, 19018, 48, -347.47064208984375, 76.08115386962890625, -61.8706207275390625, 5.70722818374633789, 0, 0, -0.28401470184326171, 0.958819925785064697, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+53, 19018, 48, -348.722, -34.5047, -68.4577, 3.45576, 0, 0, -0.987688, 0.156436, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+54, 19018, 48, -302.45355224609375, 48.7869415283203125, -67.427215576171875, 4.537858963012695312, 0, 0, -0.76604366302490234, 0.642788589000701904, 86400, 86400, 100, 1), -- Giant Clam
+-- The Pool of Ask''ar
+(@OGUID+55, 19018, 48, -472.57470703125, 130.778411865234375, -72.3318634033203125, 1.623155713081359863, 0, 0, 0.725374221801757812, 0.688354730606079101, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+56, 19018, 48, -400.427, 279.812, -71.1439, 2.74017, 0, 0, 0.979925, 0.199368, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+57, 19018, 48, -405.571, 319.074, -68.079, -2.02458, 0, 0, 0.848048, -0.529919, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+58, 19018, 48, -410.671, 348.695, -71.7385, 0.558505, 0, 0, 0.275637, 0.961262, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+59, 19018, 48, -526.051, 149.893, -79.707, 4.66003, 0, 0, -0.725374, 0.688355, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+60, 19018, 48, -489.734, 144.383, -72.4147, 1.58825, 0, 0, 0.71325, 0.70091, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+61, 19018, 48, -359.856, 279.128, -77.019, 2.61799, 0, 0, 0.965925, 0.258821, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+62, 19018, 48, -345.41, 222.052, -67.923, 4.5204, 0, 0, -0.771625, 0.636078, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+63, 19018, 48, -308.599395751953125, 198.4462890625, -65.0973892211914062, 4.520402908325195312, 0, 0, -0.77162456512451171, 0.636078238487243652, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+64, 19018, 48, -368.942352294921875, 256.857086181640625, -71.7872772216796875, 5.70722818374633789, 0, 0, -0.28401470184326171, 0.958819925785064697, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+65, 19018, 48, -346.6336669921875, 291.60455322265625, -70.7872161865234375, 3.106652259826660156, 0, 0, 0.999847412109375, 0.017469281330704689, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+66, 19018, 48, -450.11083984375, 130.31268310546875, -71.376007080078125, 3.612837791442871093, 0, 0, -0.97236919403076171, 0.233448356389999389, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+67, 19018, 48, -354.931182861328125, 308.108734130859375, -69.8227081298828125, 2.984498262405395507, 0, 0, 0.996916770935058593, 0.078466430306434631, 86400, 86400, 100, 1), -- Giant Clam
+-- Moonshrine Ruins
+(@OGUID+68, 19018, 48, -753.1727294921875, -21.32537841796875, -37.49896240234375, 5.009094715118408203, 0, 0, -0.59482288360595703, 0.80385679006576538, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+69, 19018, 48, -700.195, -100.683, -35.6787, -2.33874, 0, 0, 0.920505, -0.390731, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+70, 19018, 48, -727.025, -118.419, -37.0088, -2.98451, 0, 0, 0.996917, -0.078459, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+71, 19018, 48, -710.160400390625, -49.4720573425292968, -41.5957298278808593, 3.316144466400146484, 0, 0, -0.99619388580322265, 0.087165042757987976, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+72, 19018, 48, -766.48468017578125, -62.3091621398925781, -44.0026435852050781, 3.490667104721069335, 0, 0, -0.98480701446533203, 0.173652306199073791, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+73, 19018, 48, -784.3287353515625, -82.7393798828125, -43.0524787902832031, 0.558503925800323486, 0, 0, 0.275636672973632812, 0.961261868476867675, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+74, 19018, 48, -807.6165771484375, -120.466972351074218, -37.3080787658691406, 1.291541695594787597, 0, 0, 0.60181427001953125, 0.798636078834533691, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+75, 19018, 48, -730.435302734375, -31.5133304595947265, -41.4730644226074218, 2.111847877502441406, 0, 0, 0.870355606079101562, 0.492423713207244873, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+76, 19018, 48, -732.46661376953125, -67.330841064453125, -38.4371833801269531, 6.213373661041259765, 0, 0, -0.03489875793457031, 0.999390840530395507, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+77, 19018, 48, -734.4345703125, -96.0345306396484375, -36.9606475830078125, 1.204277276992797851, 0, 0, 0.56640625, 0.824126183986663818, 86400, 86400, 100, 1), -- Giant Clam
+-- The Forgotten Pool
+(@OGUID+78, 19018, 48, -741.0545654296875, -152.381240844726562, -56.7610855102539062, 0.575957298278808593, 0, 0, 0.284014701843261718, 0.958819925785064697, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+79, 19018, 48, -781.432, -165.561, -47.9078, -0.453786, 0, 0, 0.224951, -0.97437, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+80, 19018, 48, -760.68328857421875, -155.533584594726562, -51.5061683654785156, 0.471238493919372558, 0, 0, 0.233445167541503906, 0.972369968891143798, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+81, 19018, 48, -790.217041015625, -176.526947021484375, -45.1691703796386718, 2.199114561080932617, 0, 0, 0.8910064697265625, 0.453990638256072998, 86400, 86400, 100, 1), -- Giant Clam
+(@OGUID+82, 19018, 48, -770.51202392578125, -189.07220458984375, -48.8139495849609375, 5.777040958404541015, 0, 0, -0.25037956237792968, 0.968147754669189453, 86400, 86400, 100, 1); -- Giant Clam
 
 -- ======
 -- EVENTS
@@ -407,11 +442,25 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- =======
 
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
+(@PGUID+63, @PGUID+62, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Stranglekelp Pool'),
+(@PGUID+64, @PGUID+62, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp Pool'),
+(@PGUID+65, @PGUID+62, 0, 'Blackfathom Deeps (The Forgotten Pool) - Stranglekelp Pool'),
 (@PGUID+91, @PGUID+90, 0, 'Blackfathom Deeps - Chest Pool'),
 (@PGUID+92, @PGUID+90, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Chest Pool');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+(@PGUID+51, 2, 'Blackfathom Deeps - Master Mineral Pool'),
+(@PGUID+61, 2, 'Blackfathom Deeps - Bruiseweed (1622)'),
+(@PGUID+62, 4, 'Blackfathom Deeps - Master Stranglekelp Pool'),
+(@PGUID+63, 1, 'Blackfathom Deeps (The Drowned Sacellum) - Stranglekelp Pool'),
+(@PGUID+64, 2, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp Pool'),
+(@PGUID+65, 1, 'Blackfathom Deeps (The Forgotten Pool) - Stranglekelp Pool'),
+(@PGUID+66, 1, 'Blackfathom Deeps (Moonshrine Ruins) - Stranglekelp Pool'),
 (@PGUID+70, 1, 'Blackfathom Deeps - Weapon Crate & Armor Crate Pool'),
+(@PGUID+71, 2, 'Blackfathom Deeps (The Drowned Sacellum) - Giant Clam (19018)'),
+(@PGUID+72, 4, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@PGUID+73, 3, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@PGUID+74, 3, 'Blackfathom Deeps (The Forgotten Pool) - Giant Clam (19018)'),
 (@PGUID+90, 2, 'Blackfathom Deeps - Master Chest Pool'),
 (@PGUID+91, 1, 'Blackfathom Deeps - Chest Pool'),
 (@PGUID+92, 1, 'Blackfathom Deeps (Moonshrine Ruins) - Chest Pool');
@@ -421,9 +470,56 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@OGUID+11, @PGUID+51, 0, 'Blackfathom Deeps - Tin Vein, Silver Vein (1732,1733)'),
+(@OGUID+12, @PGUID+51, 0, 'Blackfathom Deeps - Tin Vein, Silver Vein (1732,1733)'),
+(@OGUID+13, @PGUID+51, 0, 'Blackfathom Deeps - Tin Vein, Silver Vein (1732,1733)'),
+(@OGUID+1, @PGUID+61, 0, 'Blackfathom Deeps - Bruiseweed (1622)'),
+(@OGUID+2, @PGUID+61, 0, 'Blackfathom Deeps - Bruiseweed (1622)'),
+(@OGUID+3, @PGUID+61, 0, 'Blackfathom Deeps - Bruiseweed (1622)'),
+(@OGUID+4, @PGUID+61, 0, 'Blackfathom Deeps - Bruiseweed (1622)'),
+(@OGUID+5, @PGUID+61, 0, 'Blackfathom Deeps - Bruiseweed (1622)'),
+(@OGUID+16, @PGUID+63, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Stranglekelp (2045)'),
+(@OGUID+17, @PGUID+63, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Stranglekelp (2045)'),
+(@OGUID+18, @PGUID+64, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp (2045)'),
+(@OGUID+19, @PGUID+64, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp (2045)'),
+(@OGUID+20, @PGUID+64, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Stranglekelp (2045)'),
+(@OGUID+21, @PGUID+65, 0, 'Blackfathom Deeps (The Forgotten Pool) - Stranglekelp (2045)'),
+(@OGUID+22, @PGUID+66, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Stranglekelp (2045)'),
 (@OGUID+30, @PGUID+70, 0, 'Blackfathom Deeps - Weapon Crate, Armor Crate (3689,3702)'),
 (@OGUID+31, @PGUID+70, 0, 'Blackfathom Deeps - Weapon Crate, Armor Crate (3689,3702)'),
 (@OGUID+32, @PGUID+70, 0, 'Blackfathom Deeps - Weapon Crate, Armor Crate (3689,3702)'),
+(@OGUID+51, @PGUID+71, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Giant Clam (19018)'),
+(@OGUID+52, @PGUID+71, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Giant Clam (19018)'),
+(@OGUID+53, @PGUID+71, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Giant Clam (19018)'),
+(@OGUID+54, @PGUID+71, 0, 'Blackfathom Deeps (The Drowned Sacellum) - Giant Clam (19018)'),
+(@OGUID+55, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+56, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+57, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+58, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+59, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+60, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+61, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+62, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+63, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+64, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+65, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+66, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+67, @PGUID+72, 0, 'Blackfathom Deeps (The Pool of Ask''ar) - Giant Clam (19018)'),
+(@OGUID+68, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+69, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+70, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+71, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+72, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+73, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+74, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+75, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+76, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+77, @PGUID+73, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Giant Clam (19018)'),
+(@OGUID+78, @PGUID+74, 0, 'Blackfathom Deeps (The Forgotten Pool) - Giant Clam (19018)'),
+(@OGUID+79, @PGUID+74, 0, 'Blackfathom Deeps (The Forgotten Pool) - Giant Clam (19018)'),
+(@OGUID+80, @PGUID+74, 0, 'Blackfathom Deeps (The Forgotten Pool) - Giant Clam (19018)'),
+(@OGUID+81, @PGUID+74, 0, 'Blackfathom Deeps (The Forgotten Pool) - Giant Clam (19018)'),
+(@OGUID+82, @PGUID+74, 0, 'Blackfathom Deeps (The Forgotten Pool) - Giant Clam (19018)'),
 (@OGUID+37, @PGUID+91, 0, 'Blackfathom Deeps - Large Battered Chest, Large Iron Bound Chest (75293,75295)'),
 (@OGUID+38, @PGUID+91, 0, 'Blackfathom Deeps - Large Battered Chest, Large Iron Bound Chest (75293,75295)'),
 (@OGUID+39, @PGUID+91, 0, 'Blackfathom Deeps - Large Battered Chest, Large Iron Bound Chest (75293,75295)'),
