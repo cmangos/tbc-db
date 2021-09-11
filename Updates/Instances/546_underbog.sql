@@ -848,8 +848,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+244, 20465, 546, 3, 34.37368, -286.1991, -30.45346, 2.115175, 7200, 7200, 3, 0, 0, 1), -- Underbog Frenzy
 (@CGUID+245, 20465, 546, 3, 208.0295, -314.826, -28.25239, 2.625107, 7200, 7200, 3, 0, 0, 1); -- Underbog Frenzy
 
-UPDATE `creature` SET `modelid` = 17758 WHERE `id` = 17734; -- Underbog Lord - modelid2 = 12293, chance = 0
-
 -- ===========
 -- GAMEOBJECTS
 -- ===========

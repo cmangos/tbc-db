@@ -17,13 +17,14 @@
 --	- Data or their parsing were wrong
 
 
+-- ============================================================
+-- Classic section
+-- ============================================================
+
 -- -------------------------------
 -- Gameobject custom changes
 -- -------------------------------
 
--- ============================================================
--- Classic section
--- ============================================================
 -- Make Moonwell GO server-side (visible by GM only)
 UPDATE gameobject_template SET data3=1 WHERE entry=177272;
 
@@ -89,11 +90,14 @@ UPDATE gameobject_template SET data1=3701 WHERE entry=153556;
 UPDATE gameobject_template SET data4=1 WHERE entry=181444;
 
 -- Disable a single spawn of GO (Black Lotus) as it is spawned under map and would break pooling in its zone
-UPDATE gameobject SET spawntimesecsmin=-3600, spawntimesecsmax=-3600 WHERE guid=86503 AND id=176589;
+UPDATE gameobject SET spawntimesecsmin=-3600, spawntimesecsmax=-3600 WHERE guid=86503;
 
 -- Ritual Candle Aura
 UPDATE gameobject_template SET `data8`=1 WHERE entry=179688; -- add serverside attribute so that it's not visible to players
 UPDATE gameobject_template SET `faction`=1375 WHERE entry=179688; -- "Treasure" faction 1375 here is guessed based on when patch 1.4 was released, and the fact that it's hostile to Demon faction 90
+
+-- Make PX-238 Winter Wondervolt TRAP GO server-side (visible by GM only)
+UPDATE gameobject_template SET `data8`=1 WHERE entry=180797;
 
 -- Andorhal Tower
 -- SpellFocus radius reduced to 5 (sync with eff1 from spell:17016 that activates target there = 5y)
@@ -106,9 +110,6 @@ UPDATE gameobject_template SET data2=0 WHERE entry IN (176150,176151);
 -- Cannonball: set radius to zero so it is only triggered through spell
 UPDATE gameobject_template SET data2=0 WHERE entry=176211;
 
--- Make PX-238 Winter Wondervolt TRAP GO server-side (visible by GM only)
-UPDATE gameobject_template SET `data8`=1 WHERE entry=180797;
-
 -- Verigan's Fist: must despawn during scripted quest
 UPDATE gameobject_template SET `data3`=0, `data5`=1 WHERE entry=102413;
 
@@ -116,14 +117,26 @@ UPDATE gameobject_template SET `data3`=0, `data5`=1 WHERE entry=102413;
 UPDATE gameobject_template SET data6=0 WHERE entry=178559;
 
 -- Drek'Thar's Scrolls 179004 - seemingly never used
-UPDATE `gameobject_template` SET `data1` = 0 WHERE `entry` = 179004;
+UPDATE gameobject_template SET data1=0 WHERE entry=179004;
 
 -- Inconspicuous Landmark 142189 - consumable, despawn on s.11462 expire
 UPDATE `gameobject_template` SET `data5` = 1 WHERE `entry` = 142189; -- 19660800 / 65536 = 300sec
 
+-- -------------------------------
+-- Item custom changes
+-- -------------------------------
+
+-- Mana Agate should have class=0 and subclass=3 like all other mana gems
+UPDATE item_template SET class=0, subclass=3 WHERE entry=5514;
+
 -- ============================================================
 -- TBC section
 -- ============================================================
+
+-- -------------------------------
+-- Gameobject custom changes
+-- -------------------------------
+
 -- Hellfire Hot Spot Spreader
 UPDATE gameobject_template SET data8=1 WHERE entry=183929; -- set serverside so that it's not visible to players
 -- Sealed Tome traps
@@ -139,10 +152,6 @@ UPDATE gameobject_template SET data15=1 WHERE entry IN(186648);
 -- Make some trap GO only visible by GM
 UPDATE gameobject_template SET data8=1 WHERE entry=184718; -- Cauldron Summoner
 UPDATE gameobject_template SET data8=1 WHERE entry=184722; -- Cauldron Bug Summoner
-
--- modelids with probability = 0
-UPDATE creature_template SET modelid2='0' WHERE entry='18095'; -- Doomfire
-UPDATE creature_template SET modelid2='0' WHERE entry='18104'; -- Doomfire Targeting
 
 -- Bogblossom 185497,185500 - consumable
 UPDATE `gameobject_template` SET `data5` = 1 WHERE `entry` IN (185497,185500);
@@ -169,21 +178,20 @@ UPDATE broadcast_text SET `text`="This large jack-o'-lantern rests in the middle
 -- source: https://warcraft.blizzplanet.com/blog/comments/wow_burning_crusade___patch_2_4___agamath_the_first_gate
 UPDATE broadcast_text SET `text`="Should Kil'jaeden rise up through the Sunwell our world will be thrown into a war the likes of which has not been seen for 10,000 years!$B$BOur mages are $3253w percent through the defenses of the first gate, Agamath." WHERE id=24247;
 
--- ============================================================
--- Classic section
--- ============================================================
-
--- Mana Agate should have class=0 like all other mana gems
-UPDATE item_template SET class=0 WHERE entry=5514;
-
 -- -------------------------------
 -- Creature custom changes
 -- -------------------------------
 
--- not blizzlike but how it actually should work - Brutallus Death Cloud - should always use 11686 ingame
-UPDATE creature_template SET ModelId1=169,ModelId2=11686 WHERE entry IN(25703);
-UPDATE creature_template SET ModelId1=1126,ModelId2=11686 WHERE entry IN(25267);
-UPDATE creature_template SET ModelId1=1126,ModelId2=11686 WHERE entry IN(25265);
+-- modelids with probability = 0
+UPDATE creature_template SET `modelid2` = 0 WHERE `entry` IN (
+17734, -- Underbog Lord
+17459, -- Chess Waiting Room (DND)
+18095, -- Doomfire
+18104, -- Doomfire Targeting
+25265, -- Demonic Vapor
+25267, -- Demonic Vapor (Trail)
+25703 -- Brutallus Death Cloud
+);
 
 -- -------------------------------
 -- Quest custom changes
