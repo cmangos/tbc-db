@@ -66,7 +66,6 @@ INSERT INTO dbscripts_on_quest_start (id, delay, priority, command, datalong, da
 (4321, 8000, 0, 0, 0, 0, 0, 0, 0, 0, 2000000541, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (4321, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 2000000542, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (4321, 12000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.872665, 0, ''),
-(4321, 12000, 0, 7, 4321, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (4321, 13000, 0, 21, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'J.D. Collie - unactive');
 -- from old start script
 INSERT INTO dbscripts_on_quest_start (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
@@ -74,10 +73,6 @@ INSERT INTO dbscripts_on_quest_start (id, delay, priority, command, datalong, da
 (4321, 12000, 0, 7, 4321, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (4321, 12000, 0, 29, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'npcFlags added');
 DELETE FROM dbscripts_on_quest_end WHERE id=4321;
-
--- custom text removed
-UPDATE dbscripts_on_creature_movement SET dataint4=0 WHERE id=1984701 AND delay=11000;
-DELETE FROM dbscript_string WHERE entry=2000019999;
 
 -- no text is actually used here
 DELETE FROM dbscripts_on_quest_start WHERE id=3982 AND dataint=2000000243;
