@@ -710,7 +710,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (124371, 1000, 10, 7228, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, -235.673, 309.639, -47.5976, 4.74317, 'Summon Ironaya'),
 (124371, 27000, 11, @OGUID+165, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Open the Seal of Khaz''Mul'),
-(124371, 28000, 0, 0, 0, 0, 7228, 100, 0, 2000000430, 0, 0, 0, 0, 0, 0, 0, 'Ironaya yell'),
+(124371, 28000, 0, 0, 0, 0, 7228, 100, 0, 3261, 0, 0, 0, 0, 0, 0, 0, 'Ironaya yell'),
 (124371, 28000, 20, 2, 0, 0, 7228, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ironaya starts moving');
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -719,11 +719,6 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-
-DELETE FROM dbscript_string WHERE entry=2000000430;
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
-(2000000430, 'None may steal the secrets of the Makers!', 5851, 1, 0, 0, 3261, 'Ironaya yell');
-
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
 

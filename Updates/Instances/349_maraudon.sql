@@ -1326,14 +1326,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1179001, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Putridus Satyr - Cast Dark Channeling'),
 (1179101, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Putridus Trickster - Cast Dark Channeling'),
 
-(1371601, 3000, 0, 0, 0, 0, 0, 0, 0, 2000005649, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(1371601, 3000, 0, 0, 0, 0, 0, 0, 0, 8950, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
 (1371601, 4000, 9, @OGUID+62, 3600, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - summon book'),
 (1371601, 5000, 15, 21916, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - cast Celebras Waiting'),
-(1371601, 6000, 0, 0, 0, 0, 0, 0, 0, 2000005650, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
-(1371601, 7000, 0, 0, 0, 0, 0, 0, 0, 2000005651, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(1371601, 6000, 0, 0, 0, 0, 0, 0, 0, 8951, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(1371601, 7000, 0, 0, 0, 0, 0, 0, 0, 8948, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
 
 (1371602, 1000, 15, 21950, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - cast Recite Words of Celebras'),
-(1371602, 7000, 0, 0, 0, 0, 0, 0, 0, 2000005653, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(1371602, 7000, 0, 0, 0, 0, 0, 0, 0, 8955, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
 
 (1371603, 1000, 29, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Add flags Gossip Quest'),
 (1371603, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Stop WP movement'),
@@ -1354,8 +1354,8 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 
 (178965, 0, 47, 3, 0, 0, 13716, 50, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Celebras interrupt channeled spell (Celebras Waiting 21916)'),
 (178965, 0, 9, @OGUID+61, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - summon Celebras Blue Aura'),
-(178965, 1000, 0, 0, 0, 0, 0, 0, 0, 2000005652, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - force Player to say'),
-(178965, 3000, 0, 0, 0, 0, 13716, 50, 7, 2000005652, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Celebras Say'),
+(178965, 1000, 0, 0, 0, 0, 0, 0, 0, 8949, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - force Player to say'),
+(178965, 3000, 0, 0, 0, 0, 13716, 50, 7, 8949, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Celebras Say'),
 (178965, 3500, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Incantation of Celebras - Despawn Self on Use'); -- Not working at the moment, possibly requires core update
 
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -1368,29 +1368,17 @@ INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalon
 
 DELETE FROM dbscripts_on_quest_start WHERE id=7046;
 INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(7046, 0, 0, 0, 0, 0, 0, 0, 0, 2000005646, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(7046, 0, 0, 0, 0, 0, 0, 0, 0, 8952, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
 (7046, 1000, 29, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Remove flags Quest Gossip'),
 (7046, 2000, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Set Run'),
 (7046, 3000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 654.905, 87.382, -86.8597, 5.06689, 'Celebras the Redeemed - move'),
 (7046, 14000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.06689, 'Celebras the Redeemed - correct orient'),
-(7046, 15000, 0, 0, 0, 0, 0, 0, 0, 2000005647, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
+(7046, 15000, 0, 0, 0, 0, 0, 0, 0, 8953, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say'),
 (7046, 16000, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Set Walk'),
 (7046, 17000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - movement changed to 2:waypoint'),
-(7046, 23000, 0, 0, 0, 0, 0, 0, 0, 2000005648, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say');
+(7046, 23000, 0, 0, 0, 0, 0, 0, 0, 8954, 0, 0, 0, 0, 0, 0, 0, 'Celebras the Redeemed - Say');
 
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-
-DELETE FROM dbscript_string WHERE entry IN (2000005646,2000005647,2000005648,2000005649,2000005650,2000005651,2000005652,2000005653);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
-(2000005646, 'You wish to learn of the stone? Follow me.', 0, 0, 0, 0, 8952, ''),
-(2000005647, 'For so long I have drifted in my cursed form. You have freed me... Your hard work shall be repaid.', 0, 0, 0, 0, 8953, ''),
-(2000005648, 'Please do as I instruct you, $N.', 0, 0, 0, 0, 8954, ''), 
-(2000005649, 'Read this tome I have placed before you, and speak the words aloud.', 0, 0, 0, 0, 8950, ''),
-(2000005650, '%s begins to channel his energy, focusing on the stone.', 0, 2, 0, 0, 8951, ''),
-(2000005651, 'Together, the two parts shall become one, once again.', 0, 0, 0, 0, 8948, ''),
-(2000005652, 'Shal myrinan ishnu daldorah...', 0, 0, 0, 0, 8949, ''),
-(2000005653, 'My scepter will once again become whole!', 0, 0, 0, 0, 8955, '');
-
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
 

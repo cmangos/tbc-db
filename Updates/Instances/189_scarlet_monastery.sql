@@ -814,20 +814,12 @@ INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalo
 DELETE FROM dbscripts_on_quest_end WHERE id=11405;
 INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- TBC+
-(11405, 1000, 0, 0, 0, 0, 0, 0, 2, 2000020001, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_1'),
-(11405, 3000, 0, 0, 0, 0, 0, 0, 2, 2000020002, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_2'),
-(11405, 5000, 0, 0, 0, 0, 0, 0, 2, 2000020003, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_3'),
-(11405, 8000, 0, 0, 0, 0, 0, 0, 2, 2000020004, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_4'),
+(11405, 1000, 0, 0, 0, 0, 0, 0, 2, 22695, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_1'),
+(11405, 3000, 0, 0, 0, 0, 0, 0, 2, 22696, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_2'),
+(11405, 5000, 0, 0, 0, 0, 0, 0, 2, 22720, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_3'),
+(11405, 8000, 0, 0, 0, 0, 0, 0, 2, 22721, 0, 0, 0, 0, 0, 0, 0, 'say_summon_horseman_4'),
 (11405, 8000, 15, 42909, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Headless Horseman Climax - Summoning Rhyme, Shake, Medium'),
 (11405, 10000, 10, 23682, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1765.28, 1347.46, 17.5514, 0.100363, 'summon Headless Horseman'); -- player should summon so that we can use spawner guid in C++
-
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000020001,2000020002,2000020003,2000020004);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
--- TBC+
-(2000020001, 'Horseman rise...', 0, 0, 0, 0, 22695, 'horseman say_summon_horseman_1'),
-(2000020002, 'Your time is nigh...', 0, 0, 0, 0, 22696, 'horseman say_summon_horseman_2'),
-(2000020003, 'You felt death once...', 0, 0, 0, 0, 22720, 'horseman say_summon_horseman_3'),
-(2000020004, 'Now, know demise!', 0, 0, 0, 0, 22721, 'horseman say_summon_horseman_4');
 
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
