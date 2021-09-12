@@ -31085,7 +31085,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('19228107','19228','1','7','100','0','189000','189000','0','0','0','0','1','-10854','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 15 (Phase 3)'),
 ('19228108','19228','1','7','100','0','195000','195000','0','0','0','0','1','-10855','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 16 (Phase 3)'),
 ('19228109','19228','1','7','100','0','202000','202000','0','0','0','0','1','-10856','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 17 (Phase 3)'),
-('19228110','19228','1','7','100','0','208000','208000','0','0','0','0','1','-10857','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 18 (Phase 3)'),
+('19228110','19228','1','7','100','0','208000','208000','0','0','0','0','1','-10825','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 18 (Phase 3)'),
 ('19228111','19228','1','7','100','0','216000','216000','0','0','0','0','1','-10810','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Text Emote (Phase 3)'),
 ('19228112','19228','1','7','100','0','220000','220000','0','0','0','0','1','-10826','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Female Blood Elf Impersonation (Phase 3)'),
 ('19228113','19228','1','7','100','0','228000','228000','0','0','0','0','5','21','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Emote (Phase 3)'),
@@ -32573,9 +32573,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10854','Just so you guys don''t feel left out, all I said was how attractive the blood elves are.  It loses something in the translation.','0','0','1','1','16679','19228'),
 ('-10855','My wife and I were happy for 23 years...','0','0','0','1','16370','19228'),
 ('-10856','And then we met!','0','0','0','5','16371','19228'),
-('-10857','I love night elf women. Especially when they say stuff like this...','0','0','0','1','0','19228'),
--- RE-USE 10858
--- RE-USE 10859
+-- RE-USE 10857 - 10859
 ('-10860','Look who''s here, it''s Raliq the drunk... His momma''s so fat dragons won''t eat her...','0','0','0','25','16665','19228'),
 ('-10861','They don''t know where to store the leftovers!','0','0','0','25','16666','19228'),
 ('-10862','Wow!  The laughs don''t drop very often here, do they?','0','0','0','6','16389','19228'),
