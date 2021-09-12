@@ -7227,10 +7227,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sharlindra 2227
 -- Andrew Brownell 2308
 -- Varimathras 2425
-('242501','2425','4','0','100','0','0','0','0','0','0','0','54','0','0','1003','0','0','0','0','0','0','0','0','Varimathras - Yell on Aggro'),
+('242501','2425','4','0','100','0','0','0','0','0','0','0','4','5887','0','0','0','0','0','0','0','0','0','0','Varimathras - Play Sound on Aggro'),
 ('242502','2425','0','0','100','1025','8000','8000','15000','15000','0','0','11','20740','4','512','0','0','0','0','0','0','0','0','Varimathras - Cast Dominate Mind'),
 ('242503','2425','9','0','100','1025','0','30','7000','9000','0','0','11','20741','17','0','0','0','0','0','0','0','0','0','Varimathras - Cast Shadow Bolt Volley'),
 ('242504','2425','0','0','100','1025','4000','4000','15000','15000','0','0','11','20743','17','0','0','0','0','0','0','0','0','0','Varimathras - Cast Drain Life'),
+('242505','2425','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','0','0','0','0','0','0','0','0','Varimathras - Cast Summoned Demon on Spawn'),
 -- Randolph Montague 2458
 -- Mortimer Montague 2459
 -- Lexington Mortaim 2492
@@ -21935,7 +21936,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Twilight Lord Kelris
 ('483201','4832','4','0','100','0','0','0','0','0','0','0','1','-566','0','0','0','0','0','0','0','0','0','0','Twilight Lord Kelris - Yell on Aggro'),
 ('483202','4832','0','0','100','1025','2000','5000','7000','9000','0','0','11','15587','1','0','0','0','0','0','0','0','0','0','Twilight Lord Kelris - Cast Mind Blast'),
-('483203','4832','0','0','100','1025','9000','12000','15000','20000','0','0','11','8399','5','0','1','-567','0','0','0','0','0','0','Twilight Lord Kelris - Cast Sleep and Yell'),
+('483203','4832','0','0','100','1025','9000','12000','15000','20000','0','0','11','8399','5','0','4','5804','0','0','0','0','0','0','Twilight Lord Kelris - Cast Sleep and Play Sound'),
 ('483204','4832','6','0','100','2','0','0','0','0','0','0','1','-568','0','0','34','1','3','0','0','0','0','0','Twilight Lord Kelris - Yell and Set Instance Data on Death'),
 -- Ghamoo-ra
 ('488701','4887','0','0','100','1025','5000','8000','9000','13000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Ghamoo-ra - Cast Trample'),
@@ -24290,8 +24291,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1745501','17455','4','0','100','0','0','0','0','0','0','0','1','-10195','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster - Yell on Aggro'),
 ('1745502','17455','0','0','100','1025','4200','12400','15200','20500','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster - Cast Battle Shout'),
 ('1745503','17455','0','0','100','1025','1200','10400','10800','21700','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster - Cast Uppercut'),
-('1745504','17455','0','0','100','2','20000','20000','0','0','0','0','1','-10196','-10197','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Normal) - Yell For Summon Shattered Hand Warhounds'),
-('1745505','17455','0','0','100','4','17000','17000','0','0','0','0','1','-10196','-10197','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Heroic) - Yell For Summon Shattered Hand Warhounds'),
+('1745504','17455','0','0','100','2','20000','20000','0','0','0','0','1','-10197','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Normal) - Yell For Summon Shattered Hand Warhounds'),
+('1745505','17455','0','0','100','4','17000','17000','0','0','0','0','1','-10197','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Heroic) - Yell For Summon Shattered Hand Warhounds'),
 ('1745506','17455','0','0','100','2','20100','20100','0','0','0','0','32','17280','1','101','32','17280','1','102','32','17280','1','103','Bonechewer Beastmaster (Normal) - Summon 3 Shattered Hand Warhounds'),
 ('1745507','17455','0','0','100','4','17100','17100','0','0','0','0','32','17280','1','101','32','17280','1','102','32','17280','1','103','Bonechewer Beastmaster (Heroic) - Summon 3 Shattered Hand Warhounds'),
 ('1745508','17455','0','0','25','2','20100','20100','0','0','0','0','32','17280','1','104','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Normal) - Summon 4th Shattered Hand Warhound'),
@@ -31024,7 +31025,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1922847','19228','1','11','100','0','62000','62000','0','0','0','0','1','-10808','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 5 (Phase 2)'),
 ('1922848','19228','1','11','100','0','70000','70000','0','0','0','0','1','-10809','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 6 (Phase 2)'),
 ('1922849','19228','1','11','100','0','75000','75000','0','0','0','0','1','-10810','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Text Emote (Phase 2)'),
-('1922850','19228','1','11','100','0','80000','80000','0','0','0','0','1','-10836','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Female Tauren Impersonation (Phase 2)'),
+('1922850','19228','1','11','100','0','80000','80000','0','0','0','0','1','-10811','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Male Tauren Impersonation (Phase 2)'),
 ('1922851','19228','1','11','100','0','86000','86000','0','0','0','0','5','21','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Emote (Phase 2)'),
 ('1922852','19228','1','11','100','0','93000','93000','0','0','0','0','5','21','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Emote (Phase 2)'),
 ('1922853','19228','1','11','100','0','97000','97000','0','0','0','0','1','-10837','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 7 (Phase 2)'),
@@ -31071,7 +31072,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1922894','19228','1','7','100','0','105000','105000','0','0','0','0','1','-10849','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 8 (Phase 3)'),
 ('1922895','19228','1','7','100','0','112000','112000','0','0','0','0','1','-10814','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 9 (Phase 3)'),
 ('1922896','19228','1','7','100','0','117000','117000','0','0','0','0','1','-10810','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Text Emote (Phase 3)'),
-('1922897','19228','1','7','100','0','121000','121000','0','0','0','0','1','-10850','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Female Dwarf Impersonation (Phase 3)'),
+('1922897','19228','1','7','100','0','121000','121000','0','0','0','0','1','-10815','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Female Human Impersonation (Phase 3)'),
 ('1922898','19228','1','7','100','0','128000','128000','0','0','0','0','5','21','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Emote (Phase 3)'),
 ('1922899','19228','1','7','100','0','136000','136000','0','0','0','0','1','-10816','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 10 (Phase 3)'),
 ('19228100','19228','1','7','100','0','143000','143000','0','0','0','0','1','-10810','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Text Emote (Phase 3)'),
@@ -31086,14 +31087,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('19228109','19228','1','7','100','0','202000','202000','0','0','0','0','1','-10856','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 17 (Phase 3)'),
 ('19228110','19228','1','7','100','0','208000','208000','0','0','0','0','1','-10857','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 18 (Phase 3)'),
 ('19228111','19228','1','7','100','0','216000','216000','0','0','0','0','1','-10810','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Text Emote (Phase 3)'),
-('19228112','19228','1','7','100','0','220000','220000','0','0','0','0','1','-10858','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Female Night Elf Impersonation (Phase 3)'),
+('19228112','19228','1','7','100','0','220000','220000','0','0','0','0','1','-10826','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Female Blood Elf Impersonation (Phase 3)'),
 ('19228113','19228','1','7','100','0','228000','228000','0','0','0','0','5','21','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Emote (Phase 3)'),
 ('19228114','19228','1','7','100','0','235000','235000','0','0','0','0','5','21','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Emote (Phase 3)'),
 ('19228115','19228','1','7','100','0','238000','238000','0','0','0','0','1','-10860','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 19 (Phase 3)'),
 ('19228116','19228','1','7','100','0','245000','245000','0','0','0','0','1','-10861','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 20 (Phase 3)'),
 ('19228117','19228','1','7','100','0','252000','252000','0','0','0','0','1','-10829','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Joke Say 21 (Phase 3)'),
 ('19228118','19228','1','7','100','0','259000','259000','0','0','0','0','1','-10810','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Text Emote (Phase 3)'),
-('19228119','19228','1','7','100','0','263000','263000','0','0','0','0','1','-10859','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Male Undead Impersonation (Phase 3)'),
+('19228119','19228','1','7','100','0','263000','263000','0','0','0','0','1','-10830','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Male Orc Impersonation (Phase 3)'),
 ('19228120','19228','1','7','100','0','274000','274000','0','0','0','0','5','21','0','0','0','0','0','0','0','0','0','0','Perry Gatner - Emote (Phase 3)'),
 ('19228121','19228','1','7','100','0','281000','281000','0','0','0','0','1','-10831','-10833','-10842','0','0','0','0','0','0','0','0','Perry Gatner - Closing Random Say (Phase 3)'),
 
@@ -31406,8 +31407,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-545','Scanning life forms....target not found','0','0','0','0','9091','14224'),
 ('-546','Target lost....resuming search patterns Delta','0','0','0','0','9093','14224'),
 ('-547','Unknown life forms detected....assessing...','0','0','0','0','9092','14224'),
-('-548','Arrrhhh...Guards!','0','1','1','0','0','Common Horde Flight Master'),
-('-549','Guards!','0','1','7','0','4561','Common Alliance Flight Master'),
+('-548','Guards!','0','1','1','0','4561','Common Horde Flight Master'),
+('-549','Guards! Help me!','0','1','7','0','4566','Common Alliance Flight Master'),
 ('-550','%s goes into a rage after seeing a friend fall in battle!','0','2','0','0','1151','Common Emote'),
 ('-551','%s calls for help!','0','2','0','0','1064','Common Emote'),
 ('-552','Greetings, citizen.','0','0','7','0','11389','466'),
@@ -31415,7 +31416,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-554','Finally, my soul may rest... Oh, dearest Cerellean...','0','0','0','0','1224','3667'),
 -- Classic PLEASE RE-USE 555 - 565
 ('-566','Who dares disturb my meditation?','5802','1','0','0','6171','4832'),
-('-567','Sleep...','5804','1','0','0','0','4832'),
+-- Classic PLEASE RE-USE 567
 ('-568','Dust to dust.','5803','1','0','0','6172','4832'),
 ('-569','Aku''mai is dead! At last, I can leave this wretched place.','0','1','0','0','2848','6729'),
 -- Classic PLEASE RE-USE 570 - 575
@@ -31492,12 +31493,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-827','No!  You cannot be stronger than the Foulweald!  No!!','0','0','0','0','8351','12918'),
 ('-828','%s attacks Karang''s Banner!','0','2','0','0','8398','12921'),
 ('-829','%s charges!','0','2','0','0','1254','Common Emote'),
--- Classic PLEASE RE-USE 830 - 852
-('-853','Vanquish the weak!','0','1','0','0','0','Varimathras 2425'),
-('-854','Time to die!','0','1','0','0','0','Varimathras 2425'),
-('-855','None can oppose me.','0','1','0','0','0','Varimathras 2425'),
-('-856','For Sylvanas!','0','1','0','0','47590','Varimathras 2425'),
--- Classic PLEASE RE-USE 857 - 894
+-- Classic PLEASE RE-USE 830 - 894
 ('-895','There is no escape for you.  The Crusade shall destroy all who carry the scourge''s taint.','0','0','0','0','2626','Common Scarlet Text'),
 ('-896','You carry the taint of the scourge.  Prepare to enter the twisting nether.','0','0','0','0','2625','Common Scarlet Text'),
 ('-897','The light condemns all who harbor evil.  Now you will die!','0','0','0','0','2627','Common Scarlet Text'),
@@ -31535,10 +31531,10 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-992','%s is sucked into the coffer!','0','2','0','0','2553','6492'),
 -- Classic PLEASE RE-USE 993 - 1018
 ('-1019','That will teach you to lay off the herb, $r.','0','0','0','1','9500','11447'),
-('-1020','Step right up! Step right up! Greetings my friend. I''m Silas Darkmoon and I want to welcome you to the greatest show on Azeroth! It''s the Darkmoon Faire friend, and it''s your lucky day! Sparing no expense, we''ve gathered wonders and treats from around the world for your delight. Whether you''re young or old, rich or poor, the Darkmoon Faire has it all!','0','0','0','1','0','14823'),
-('-1021','Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world! We have spared no expense in bringing you excitement that children of all ages will delight in!','0','0','0','1','0','14823'),
-('-1022','We have it all... delicious food, strong drink, exotic artifacts, fortunes read, amazing prizes and excitement without end!','0','0','0','1','0','14823'),
-('-1023','And, don''t forget to turn in your Darkmoon Faire Prize Tickets! All it takes is five or more and you''re on your way to the most wondrous prizes on all of Azeroth. Everybody is a winner!','0','0','0','1','0','14823'),
+('-1020','We''re back and better than ever!  It''s the Darkmoon Faire friend, and it''s your lucky day!  Sparing no expense, we''ve gathered wonders and treats from around the world for your delight.  Whether you''re young or old, rich or poor, the Darkmoon Faire has it all!  Be sure to turn in your Darkmoon Faire Prize Tickets to Gelvas Grimegate, and choose from several exotic and wondrous prizes!','0','0','0','1','10160','14823'),
+('-1021','Greetings my friend, and welcome to the greatest show on Azeroth!$B$BPlease, step right up and take in all we have to offer.  Amaze at the wonders that the Darkmoon Faire has uncovered in this vast and mysterious world!  We have spared no expense in bringing you excitement that children of all ages will delight in!','0','0','0','1','10033','14823'),
+('-1022','Welcome one and all to the Darkmoon Faire, the greatest event in all the world!  We have it all... delicious food, strong drink, exotic artifacts, fortunes read, amazing prizes and excitement without end!  Don''t forget to turn in your Darkmoon Faire Prize Tickets to Gelvas Grimegate!  All it takes is five or more and you''re on your way to the most wondrous prizes on all of Azeroth.  Everybody is a winner!','0','0','0','1','10155','14823'),
+('-1023','Welcome back to the greatest show on Azeroth, my friend!  It is truly a delight to see you once again.$B$BPlease, step right up and once more take in all we have to offer.  Be sure to check around, as we are always adding new and exciting things to the Darkmoon Faire!  Amaze at wonders old and new that we have uncovered!  We continue to spare no expense in bringing you excitement that children of all ages will delight in!','0','0','0','1','10034','14823'),
 ('-1024','Step right up!  Get your Red Hot Wings right here!','0','0','0','1','10133','14845'),
 ('-1025','You''ve got money and we''ve got food.  What are you waiting for?!','0','0','0','1','10135','14845'),
 ('-1026','Darkmoon Dogs fresh off the grill.  Come and get em while they''re hot!','0','0','0','1','10134','14845'),
@@ -31563,7 +31559,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1045','More of the Warden\'s errand boys!','0','0','0','0','1390','The Stockade - Aggro Text'),
 ('-1046','%s emerges from the plant, allowing it to heal.','0','2','0','0','8915','13696'),
 ('-1047','%s attacks!','0','2','0','0','8916','13696'),
-('-1048','You are in the presence of a god!','0','2','0','0','0','15963'),
+('-1048','The massive floating eyeball in the center of the chamber turns its gaze upon you. You stand before a god.','0','2','0','0','11700','15963'),
 ('-1049','Get back here!','0','0','0','0','10147','14860'),
 ('-1050','It''s getting away!','0','0','0','0','10146','14860'),
 ('-1051','Hey, someone help me catch this thing!','0','0','0','0','10145','14860'),
@@ -31739,9 +31735,9 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-1556','Foolish mortal, I will rend your soul in two once I am released!','0','4','0','0','4440','8506'),
 ('-1557','My charge to watch the temple has failed... my corrupted soul knows no peace...','0','4','0','0','4445','8506'),
 ('-1558','My soul is not a trinket!  Mortal, you must release me from these chains!','0','4','0','0','4442','8506'),
-('-1559','Foolish mortals you do not yet see the potential of that Artifact.','0','4','0','0','0','8506'),
+-- Classic PLEASE RE-USE 1559
 ('-1560','You are an agent of their wicked god, fool.  I will see you destroyed!','0','4','0','0','4441','8506'),
-('-1561','I sense my grip on the Dream twisting into chaos.','0','4','0','0','0','8506'),
+-- Classic PLEASE RE-USE 1561
 ('-1562','%s lets out a high pitched screech, calling for help.','0','2','0','0','506','1983'),
 ('-1563','I shall return in time..','0','0','0','0','500','1983'),
 ('-1564','The blood samples must be protected!  Destroy the intruders!','0','0','0','0','9969','12461'),
@@ -31941,7 +31937,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10193','You will suffer eternally!','0','1','0','0','19299','21181'),
 ('-10194','Little creature made of flesh, your wish is granted! Death comes for you!','0','1','0','0','19308','21181'),
 ('-10195','Intruders!  Hold them off until I can release the warhounds!','10160','1','0','0','14000','17455'),
-('-10196','My pets are hungry and they will dine on your flesh!','10161','1','0','0','0','17455'),
+-- RE-USE 10196
 ('-10197','You''re too late, now feel the wrath of my warhounds!','0','1','0','0','14001','17455'),
 ('-10198','%s calls for his worgs.','0','2','0','0','17593','19442'),
 ('-10199','Oh sweet, delicious, spotted eggs - you will be mine...','0','0','0','1','16139','19035'),
@@ -32556,7 +32552,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10833','Is it over already?  You''ve been great folks.  Walk safely and have a good night.','0','0','0','1','16343','19228'),
 ('-10834','Have you ever noticed that all those cute, orc kids look the same?','0','0','0','1','16331','19228'),
 ('-10835','It''s too bad they don''t stay cute.  There must be some rite of passage in the Barrens called, "Climb ugly tree and fall out."','0','0','0','5','16334','19228'),
-('-10836','The comedian impersonates a female tauren.','6377','2','0','5','0','19228'),
+-- RE-USE 10836
 ('-10837','Here''s a good one, why do watermelons have water in them?','0','0','0','1','16333','19228'),
 ('-10838','Because they are planted in the spring!','0','0','0','1','16336','19228'),
 ('-10839','Hey, it''s Raliq the drunk... His momma''s so fat, when she flies to Blade''s Edge they charge her by the pound!','0','0','0','25','16661','19228'),
@@ -32570,7 +32566,7 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10847','Twelve steps is more like it!','0','0','0','5','16683','19228'),
 ('-10848','The gnomes used to be a nice respectful people...','0','0','0','1','16669','19228'),
 ('-10849','The other day I saw one walking down the street shouting, "Once you go gnome, you never go home!"','0','0','0','1','16670','19228'),
-('-10850','The comedian impersonates a female dwarf.','6106','2','0','5','0','19228'),
+-- RE-USE 10850
 ('-10851','So this gnome tells a tauren he''s been to Molten Core.','0','0','0','1','16332','19228'),
 ('-10852','The tauren says, "That''s a load of bull."','0','0','0','5','16335','19228'),
 ('-10853','Is it just me, or is the Horde about the ugliest enemy we could find?','0','0','7','1','16678','19228'),
@@ -32578,8 +32574,8 @@ INSERT INTO `creature_ai_texts` (`entry`,`content_default`,`sound`,`type`,`langu
 ('-10855','My wife and I were happy for 23 years...','0','0','0','1','16370','19228'),
 ('-10856','And then we met!','0','0','0','5','16371','19228'),
 ('-10857','I love night elf women. Especially when they say stuff like this...','0','0','0','1','0','19228'),
-('-10858','The comedian impersonates a night elf.','6179','2','0','5','0','19228'),
-('-10859','The comedian impersonates an undead.','6422','2','0','5','0','19228'),
+-- RE-USE 10858
+-- RE-USE 10859
 ('-10860','Look who''s here, it''s Raliq the drunk... His momma''s so fat dragons won''t eat her...','0','0','0','25','16665','19228'),
 ('-10861','They don''t know where to store the leftovers!','0','0','0','25','16666','19228'),
 ('-10862','Wow!  The laughs don''t drop very often here, do they?','0','0','0','6','16389','19228'),
@@ -33044,9 +33040,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (6, 0, -1556, 0, '8506 - Random Spawn Texts'),
 (6, 0, -1557, 0, '8506 - Random Spawn Texts'),
 (6, 0, -1558, 0, '8506 - Random Spawn Texts'),
-(6, 0, -1559, 0, '8506 - Random Spawn Texts'),
 (6, 0, -1560, 0, '8506 - Random Spawn Texts'),
-(6, 0, -1561, 0, '8506 - Random Spawn Texts'),
 (7, 0, -1296, 0, 'Plagued/Injured Peasant - Random Texts on event'),
 (7, 0, -1297, 0, 'Plagued/Injured Peasant - Random Texts on event'),
 (7, 0, -1298, 0, 'Plagued/Injured Peasant - Random Texts on event'),
@@ -33089,10 +33083,6 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (904, 0, -1468, 0, 'Servant of 7668,7669,7670,7671 - Death'),
 (904, 0, -1469, 0, 'Servant of 7668,7669,7670,7671 - Death'),
 -- 1001 Reserved by DBScripts
-(1003,0,-853,0,'Varimathras 2425 - Random Aggro Texts'),
-(1003,0,-854,0,'Varimathras 2425 - Random Aggro Texts'),
-(1003,0,-855,0,'Varimathras 2425 - Random Aggro Texts'),
-(1003,0,-856,0,'Varimathras 2425 - Random Aggro Texts'),
 (9000,0,-1569,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
 (9000,0,-1570,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
 (9000,0,-1571,0,'4294/4295/4298/4299/4300/4301/4302/4303/4540 - Random Texts (Ashbringer Event - Scarlet Monastery)'),
