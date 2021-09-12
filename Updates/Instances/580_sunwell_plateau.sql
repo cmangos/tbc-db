@@ -1585,10 +1585,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2563901, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anchorite Elbadon - STATE_KNEEL'),
 (2563901, 7000, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anchorite Elbadon - STATE_STAND'),
 (2563902, 0, 15, 45859, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Anchorite Elbadon - Cast Renew'),
-(2563902, 1000, 0, 0, 0, 0, 0, 0, 0, 2000020120, 2000020121, 2000020122, 0, 0, 0, 0, 0, 'Anchorite Elbadon - Say random text after casting Renew'),
+(2563902, 1000, 0, 0, 0, 0, 0, 0, 0, 24856, 24857, 24858, 0, 0, 0, 0, 0, 'Anchorite Elbadon - Say random text after casting Renew'),
 (2564401, 1000, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Neophyte Narama - STATE_KNEEL'),
 (2564402, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Neophyte Narama - STATE_STAND'),
-(2548601, 0, 0, 0, 0, 0, 0, 0, 0, 2000020123, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Vanquisher - Yell on proximity'),
+(2548601, 0, 0, 0, 0, 0, 0, 0, 0, 25482, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Vanquisher - Yell on proximity'),
 (2548301, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Manafiend - Set MovementType 0'),
 (2548301, 0, 1, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Manafiend - Set EMOTE_STATE_READY2H'),
 (2548401, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Assassin - Set MovementType 0'),
@@ -1599,13 +1599,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2583701, 0, 15, 46245, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowsword Commander - Cast Summon Shadowsword Deathbringer'),
 (2584801, 0, 15, 46214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gauntlet Imp Trigger - Cast Summon Imp'),
 (2585101, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Volatile Imp / Shadowsword Deathbringer - Zone pulse');
-
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000020120, 2000020121, 2000020122, 2000020123);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
-(2000020120, 'May the light bless you.', 0, 0, 0, 0, 24856, ''),
-(2000020121, 'Your wounds are severe, but you will live.', 0, 0, 0, 0, 24857, ''),
-(2000020122, 'Rest now, you have fought well today.', 0, 0, 0, 0, 24858, ''),
-(2000020123, 'Intruders! Do not let them into the Sanctum!', 0, 1, 0, 0, 25482, '');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

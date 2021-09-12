@@ -1100,14 +1100,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (760701, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Stop Movement'),
 (760702, 0, 1, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Emote Cheer'),
 (760706, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Set Run On'),
-(760707, 0, 0, 0, 0, 0, 0, 0, 0, 2000005547, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Say Event Begin'),
+(760707, 0, 0, 0, 0, 0, 0, 0, 0, 3744, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Say Event Begin'),
 (760710, 0, 29, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Enable Gossip'),
 (760710, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Pause Movement'),
 (760711, 0, 29, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Disable Gossip'),
 (760713, 0, 15, 10772, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Cast Create Weegli''s Barrel'),
 (760713, 2000, 13, 0, 0, 0, 141612, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Use Weegli''s Barrel'),
 (760713, 3000, 40, 0, 0, 0, 141612, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Despawn Weegli''s Barrel'),
-(760713, 5000, 0, 0, 0, 0, 7267, @CGUID+160, 16, 2000005552, 0, 0, 0, 0, 0, 0, 0, 'Ukorz Sandscalp - Yell Intro'),
+(760713, 5000, 0, 0, 0, 0, 7267, @CGUID+160, 16, 6067, 0, 0, 0, 0, 0, 0, 0, 'Ukorz Sandscalp - Yell Intro'),
 (760801, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Murta Grimgut - Stop Movement'),
 (760802, 0, 1, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Murta Grimgut - Emote Cheer'),
 (760809, 0, 15, 11365, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Raven - Cast Bly''s Band''s Escape'),
@@ -1121,7 +1121,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 DELETE FROM dbscripts_on_relay WHERE id=3;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (3, 0, 25, 1, 0, 0, 7607, @CGUID+241, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Set Run On'),
-(3, 6000, 0, 0, 0, 0, 7607, @CGUID+241, 16, 2000005551, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Say Start Door Bombing'),
+(3, 6000, 0, 0, 0, 0, 7607, @CGUID+241, 16, 3811, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Say Start Door Bombing'),
 (3, 6000, 29, 1, 2, 0, 7607, @CGUID+241, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Remove Gossip Flag'),
 (3, 6000, 22, 0, 0, 0, 7607, @CGUID+241, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Update Faction to Default'),
 (3, 6000, 32, 0, 0, 0, 7607, @CGUID+241, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Start WP Movement');
@@ -1224,7 +1224,7 @@ INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalon
 (2609, 250000, 10, 8877, 9000000, 0, 0, 0, 0, 0, 0, 0, 0, 1878.94, 1200.57, 8.96, 2.6, 'Spawn Sandfury Zealot'),
 (2609, 250000, 25, 0, 0, 0, 7607, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Set Run Off'),
 (2609, 250000, 32, 0, 0, 0, 7604, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Start WP Movement'),
-(2609, 250000, 0, 0, 0, 0, 7604, 150, 4, 2000005553, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Yell At Movement Start'),
+(2609, 250000, 0, 0, 0, 0, 7604, 150, 4, 3745, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Yell At Movement Start'),
 (2609, 250000, 32, 0, 0, 0, 7605, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Raven - Start WP Movement'),
 (2609, 250000, 32, 0, 0, 0, 7606, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Oro Eyegouge - Start WP Movement'),
 (2609, 250000, 32, 0, 0, 0, 7607, 150, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Start WP Movement'),
@@ -1248,11 +1248,11 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (94001, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Set Run On'),
 (94001, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Update Faction to Default'),
 (94001, 0, 29, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Remove Gossip Flag'),
-(94001, 0, 0, 0, 0, 0, 0, 0, 0, 2000005548, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Say Start Door Bombing'),
-(94101, 0, 0, 0, 0, 0, 0, 0, 0, 2000005549, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Say Start Combat 1'),
+(94001, 0, 0, 0, 0, 0, 0, 0, 0, 3785, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - Say Start Door Bombing'),
+(94101, 0, 0, 0, 0, 0, 0, 0, 0, 3882, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Say Start Combat 1'),
 (94101, 0, 29, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Remove Gossip Flag'),
 (94101, 0, 45, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weegli Blastfuse - start bombing script'),
-(94101, 3000, 0, 0, 0, 0, 0, 0, 0, 2000005550, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Say Start Combat 2'),
+(94101, 3000, 0, 0, 0, 0, 0, 0, 0, 3884, 0, 0, 0, 0, 0, 0, 0, 'Sergeant Bly - Say Start Combat 2'),
 (94101, 6000, 22, 14, 0, 0, 7605, 30, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Raven - Update Faction'),
 (94101, 6000, 22, 14, 0, 0, 7606, 30, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Oro Eyegouge - Update Faction'),
 (94101, 6000, 22, 14, 0, 0, 7608, 30, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Murta Grimgut - Update Faction'),
@@ -1260,17 +1260,6 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000005547,2000005548,2000005549,2000005550,2000005551,2000005552,2000005553);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
-(2000005547, 'Oh no! Here they come!', 0, 0, 0, 0, 3744, 'Weegli Blastfuse - Say Event Start'),
-(2000005548, 'Ok, here I go!', 0, 0, 0, 0, 3785, 'Weegli Blastfuse - Say Blow Door Normal'),
-(2000005549, 'What?  How dare you say that to me?!?', 0, 0, 0, 6, 3882, 'Sergeant Bly - Say Faction Change 1'),
-(2000005550, 'After all we''ve been through?  Well, I didn''t like you anyway!!', 0, 0, 0, 5, 3884, 'Sergeant Bly - Say Faction Change 2'),
-(2000005551, 'I''m out of here!', 0, 0, 0, 0, 3811, 'Weegli Blastfuse - Say Blow Door Forced'),
-(2000005552, 'Who dares step into my domain!  Come!  Come, and be consumed!', 0, 6, 0, 0, 6067, 'Ukorz Sandscalp - Say After Door Blown'),
-(2000005553, 'Let''s move forward!', 0, 0, 0, 0, 3745, 'Sergeant Bly - Move Downstairs');
-
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
 

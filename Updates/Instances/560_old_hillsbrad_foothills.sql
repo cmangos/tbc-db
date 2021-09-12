@@ -2842,7 +2842,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1784801,1784802,1784803,1809201,1809301,1809401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1784801,0,0,0,0,0,0,0,0,2000020114,0,0,0,0,0,0,0,'Lt. Drake - say 1'),
+(1784801,0,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lt. Drake - say 1'),
 (1784802,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - switch to path 1'),
 (1784802,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - run off'),
 (1784803,0,48,256,0,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - Remove UNIT_FLAG_IMMUNE_TO_PLAYER'),
@@ -2857,7 +2857,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1809301, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Cast Transform'),
 (1809301, 1000, 44, 18172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Morph to Infinite Saboteor'),
 (1809301, 1000, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
-(1809301, 2000, 0, 0, 0, 0, 0, 0, 0, 2000020110, 2000020111, 2000020112, 2000020113, 0, 0, 0, 0, 'Tarren Mill Protector - Random Say'),
+(1809301, 2000, 0, 0, 0, 0, 0, 0, 0, 19537, 19536, 19538, 19534, 0, 0, 0, 0, 'Tarren Mill Protector - Random Say'),
 (1809301, 2000, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Protector - Attack Thrall'),
 
 (1809401, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Pause Waypoints'),
@@ -2865,14 +2865,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1809401, 1000, 44, 18171, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Morph to Infinite Defiler'),
 (1809401, 1000, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
 (1809401, 2000, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Attack Thrall');
-
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000020110,2000020111,2000020112,2000020113,2000020114);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
-(2000020110, 'All that you know... will be undone.', 0, 0, 0, 0, 19537, ''),
-(2000020111, 'We have all the time in the world....', 0, 0, 0, 0, 19536, ''),
-(2000020112, 'You cannot escape us!', 0, 0, 0, 0, 19538, ''),
-(2000020113, 'Do not think you can win!', 0, 0, 0, 0, 19534, ''),
-(2000020114, 'You there, fetch water quickly! Get these flames out before they spread to the rest of the keep! Hurry, damn you!', 10428, 1, 0, 25, 15737, '17848');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

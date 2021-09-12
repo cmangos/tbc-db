@@ -2912,13 +2912,13 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (164819, 0, 10, 9443, 10800000, 0, 0, 0, 0, 0, 0, 0, 0, 802.755, -245.25, -43.2198, 2.93215, 'Spawn Dark Keeper Pelver and his guards'),
 (164819, 0, 10, 9445, 10800000, 0, 0, 0, 0, 0, 0, 0, 0, 805.289, -243.172, -43.2198, 3.42085, 'Spawn Dark Keeper Pelver and his guards'),
 (164819, 0, 10, 9445, 10800000, 0, 0, 0, 0, 0, 0, 0, 0, 801.935, -248.841, -43.2198, 1.95477, 'Spawn Dark Keeper Pelver and his guards'),
-(170562, 1000, 0, 0, 0, 0, 9023, 20, 3, 2000005099, 0, 0, 0, 0, 0, 0, 0, 'Windsor - say on Dughal door open'),
-(170567, 1000, 0, 0, 0, 0, 9680, 20, 3, 2000005101, 0, 0, 0, 0, 0, 0, 0, 'Crest - say on Crest door open'),
+(170562, 1000, 0, 0, 0, 0, 9023, 20, 3, 5230, 0, 0, 0, 0, 0, 0, 0, 'Windsor - say on Dughal door open'),
+(170567, 1000, 0, 0, 0, 0, 9680, 20, 3, 5258, 0, 0, 0, 0, 0, 0, 0, 'Crest - say on Crest door open'),
 (170567, 1000, 22, 54, 5, 0, 9680, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Crest - change faction to hostile'),
-(170568, 1000, 0, 0, 0, 0, 9677, 20, 3, 2000005102, 0, 0, 0, 0, 0, 0, 0, 'Ograbisi - say on Jaz door open'),
+(170568, 1000, 0, 0, 0, 0, 9677, 20, 3, 5199, 0, 0, 0, 0, 0, 0, 0, 'Ograbisi - say on Jaz door open'),
 (170568, 2000, 22, 54, 5, 0, 9681, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Jaz - change faction to hostile'),
 (170568, 2000, 22, 54, 5, 0, 9677, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Ograbisi - change faction to hostile'),
-(170569, 1000, 0, 0, 0, 0, 9678, 20, 3, 2000005100, 0, 0, 0, 0, 0, 0, 0, 'Shill - say on Shill door open'),
+(170569, 1000, 0, 0, 0, 0, 9678, 20, 3, 5203, 0, 0, 0, 0, 0, 0, 0, 'Shill - say on Shill door open'),
 (170569, 1000, 22, 54, 5, 0, 9678, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Shill - change faction to hostile'),
 (174554, 0, 27, 8, 0, 0, 160836, @OGUID+78, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Relic Coffer Door - Access: Relic Coffer'),
 (174555, 0, 27, 8, 0, 0, 160836, @OGUID+87, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Relic Coffer Door - Access: Relic Coffer'),
@@ -2941,17 +2941,17 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (889101, 3000, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, ''),
 (902201, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Dughal on last waypoint'),
 (950001, 0, 31, 9545, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 9545'),
-(950001, 1000, 0, 0, 0, 0, 9545, 20, 0, 2000000261, 2000000262, 2000000263, 2000000264, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
+(950001, 1000, 0, 0, 0, 0, 9545, 20, 0, 4984, 4985, 4986, 4987, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
 (950001, 1000, 36, 0, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - Face Nagmara'),
 (950001, 2000, 36, 0, 0, 0, 9545, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Grim Patron'),
-(950001, 3000, 0, 0, 0, 0, 0, 0, 0, 2000000265, 2000000266, 2000000267, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
+(950001, 3000, 0, 0, 0, 0, 0, 0, 0, 4979, 4980, 4981, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
 (950001, 5000, 36, 1, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - restore orientation'),
 (950001, 6000, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
 (950002, 0, 31, 9547, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 9547'),
-(950002, 1000, 0, 0, 0, 0, 9547, 20, 0, 2000000261, 2000000262, 2000000263, 2000000264, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
+(950002, 1000, 0, 0, 0, 0, 9547, 20, 0, 4984, 4985, 4986, 4987, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
 (950002, 1000, 36, 0, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - Face Nagmara'),
 (950002, 2000, 36, 0, 0, 0, 9547, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Guzzling Patron'),
-(950002, 3000, 0, 0, 0, 0, 0, 0, 0, 2000000265, 2000000266, 2000000267, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
+(950002, 3000, 0, 0, 0, 0, 0, 0, 0, 4979, 4980, 4981, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
 (950002, 5000, 36, 1, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - restore orientation'),
 (950002, 6000, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
 (967901, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Tobias on last waypoint'),
@@ -2981,27 +2981,11 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (197001, 0, 22, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly - update faction'),
 (197001, 0, 22, 21, 0, 0, 10043, @CGUID+1110, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly Crony - update faction'),
 (197001, 0, 22, 21, 0, 0, 10043, @CGUID+1111, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly Crony - update faction'),
-(197001, 3000, 0, 0, 0, 0, 0, 0, 0, 2000005626, 0, 0, 0, 0, 0, 0, 0, ''),
+(197001, 3000, 0, 0, 0, 0, 0, 0, 0, 4973, 0, 0, 0, 0, 0, 0, 0, ''),
 (197001, 5000, 26, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly  - attack player');
 
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-
-DELETE FROM dbscript_string WHERE entry IN (2000000261,2000000262,2000000263,2000000264,2000000265,2000000266,2000000267,2000005099,2000005100,2000005101,2000005102,2000005626);
-INSERT INTO `dbscript_string` (`entry`, `content_default`, `sound`, `type`, `language`, `emote`, `broadcast_text_id`, `comment`) VALUES
-(2000000261, 'Hey Nagmara!  How about a mug of Dark Iron Ale?', 0, 0, 0, 1, 4984, NULL),
-(2000000262, 'Nagmara!  Have any mutton left?', 0, 0, 0, 0, 4985, NULL),
-(2000000263, 'Mistress, you tell Plugger that I want more of his ale.  I can''t get enough!', 0, 0, 0, 1, 4986, NULL),
-(2000000264, 'Hey Nag, how about you slice me off a piece of that...', 0, 0, 0, 1, 4987, NULL),
-(2000000265, 'You got it!', 0, 0, 0, 1, 4979, NULL),
-(2000000266, 'Coming right up!', 0, 0, 0, 1, 4980, NULL),
-(2000000267, 'I''ll bring it right over, baby...', 0, 0, 0, 1, 4981, NULL),
-(2000005099, 'Get him out of there!', 0, 0, 0, 0, 5230, NULL),
-(2000005100, 'Perhaps Ograbisi will use your head as a tiny little hat when I''m through with you.', 0, 0, 0, 0, 5203, NULL),
-(2000005101, 'Where I come from, you get shanked for opening another inmate''s cell door!', 0, 0, 0, 0, 5258, NULL),
-(2000005102, 'Ograbisi needs new hat!', 0, 0, 0, 0, 5199, NULL),
-(2000005626, 'No!  Get away from me!  Help!!', 0, 0, 0, 0, 4973, '');
-
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
 

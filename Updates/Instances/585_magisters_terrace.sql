@@ -1351,21 +1351,15 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2468701, 0, 15, 44574, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunblade Physician - Cast Fel Energy Cosmetic'),
 (2468801, 0, 15, 44374, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wretched Skulker - Cast Fel Crystal Cosmetic'),
 (2468901, 0, 15, 44374, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wretched Bruiser - Cast Fel Crystal Cosmetic'),
-(2468902, 0, 0, 0, 0, 0, 0, 0, 0, 2000020125, 2000020126, 2000020127, 0, 0, 0, 0, 0, 'Wretched Bruiser - Random Text'),
+(2468902, 0, 0, 0, 0, 0, 0, 0, 0, 23842, 23840, 23841, 0, 0, 0, 0, 0, 'Wretched Bruiser - Random Text'),
 (2469001, 0, 15, 44374, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wretched Husk - Cast Fel Crystal Cosmetic'),
-(2469002, 0, 0, 0, 0, 0, 0, 0, 0, 2000020125, 2000020126, 2000020127, 0, 0, 0, 0, 0, 'Wretched Husk - Random Text'),
+(2469002, 0, 0, 0, 0, 0, 0, 0, 0, 23842, 23840, 23841, 0, 0, 0, 0, 0, 'Wretched Husk - Random Text'),
 (2478101, 0, 15, 44432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Cast Cube Ground State'),
 (2478101, 0, 15, 44434, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Cast Cube Explode'),
 (2478101, 0, 22, 1814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Set Faction'),
 (2478101, 0, 48, 33554432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Remove UNIT_FLAG_NOT_SELECTABLE'),
 (2478101, 1000, 15, 44447, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nether Energy - Cast Threat 44447 on Brightscale Wyrm 24761'),
 (2595501, 0, 15, 46757, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hand of the Deceiver Sunwell - Cast Shadow Channelling');
-
-DELETE FROM `dbscript_string` WHERE `entry` IN (2000020125,2000020126,2000020127);
-INSERT INTO `dbscript_string` (`entry`,`content_default`,`sound`,`type`,`language`,`emote`, `broadcast_text_id`, `comment`) VALUES
-(2000020125, 'I''ll never stop. Never...', 0, 0, 0, 0, 23842, ''),
-(2000020126, 'The power! More, more, more!', 0, 0, 0, 0, 23840, ''),
-(2000020127, 'It seethes and burns...', 0, 0, 0, 0, 23841, '');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
