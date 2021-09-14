@@ -881,7 +881,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =============
 -- Bernie Heisten (3546) - NSR
 -- Watcher Mahar Ba (5385) - NSR
--- Quartermaster Lungertz (5393) - NSR
+-- Quartermaster Lungertz 5393
+('539301','5393','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Quartermaster Lungertz - Flee at 15% HP'),
 -- Strumner Flintheel (5508) - NSR
 -- Dreadmaul Ogre (4.0.3 Official Data)
 ('597401','5974','0','0','5','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Dreadmaul Ogre - Random Say on Aggro'),
@@ -959,6 +960,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nethergarde Officer
 ('600301','6003','9','0','100','1025','0','5','5000','7000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Nethergarde Officer - Cast Strike'),
 ('600302','6003','0','0','100','1025','8000','11000','18000','21000','0','0','11','11977','1','0','0','0','0','0','0','0','0','0','Nethergarde Officer - Cast Rend'),
+('600303','6003','2','0','100','0','50','0','0','0','0','0','39','40','0','0','1','1064','0','0','0','0','0','0','Nethergarde Officer - Call For Help at 50% HP'),
 -- Shadowsworn Cultist 6004 (4.0.3 Official Data)
 ('600401','6004','11','0','100','0','0','0','0','0','0','0','11','3616','0','34','0','0','0','0','0','0','0','0','Shadowsworn Cultist - Cast Poison Proc on Spawn'),
 ('600402','6004','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Shadowsworn Cultist - Enable Range Mode on Aggro'),
