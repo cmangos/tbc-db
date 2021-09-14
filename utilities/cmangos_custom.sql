@@ -188,6 +188,7 @@ UPDATE creature_template SET `modelid2` = 0 WHERE `entry` IN (
 17459, -- Chess Waiting Room (DND)
 18095, -- Doomfire
 18104, -- Doomfire Targeting
+20155, -- Hillsbrad Internment Lodge Quest Trigger
 25265, -- Demonic Vapor
 25267, -- Demonic Vapor (Trail)
 25703 -- Brutallus Death Cloud
