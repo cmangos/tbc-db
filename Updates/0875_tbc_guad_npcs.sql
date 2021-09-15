@@ -13,6 +13,9 @@ UPDATE `creature_template` SET `HealthMultiplier`='2', `MinLevelHealth` = 11828,
 UPDATE `creature_template` SET `HealthMultiplier`='2', `MinLevelHealth` = 11828, `MaxLevelHealth` = 11828 WHERE `entry`='15138'; -- Silverpine Elite
 UPDATE `creature_template` SET `HealthMultiplier`='329.505', `MinLevelHealth` = 1750001, `MaxLevelHealth` = 1750001 WHERE `entry`='4968'; -- Lady Jaina Proudmoore
 UPDATE `creature_template` SET `HealthMultiplier`='0.14059', `MinLevelHealth` = 700, `MaxLevelHealth` = 700 WHERE `entry`='12473'; -- Arcanite Dragonling
+UPDATE `creature_template` SET `HealthMultiplier`='2', `MinLevelHealth` = 11828, `MaxLevelHealth` = 11828 WHERE `entry`='16222'; -- Silvermoon City Guardian
+UPDATE `creature_template` SET `HealthMultiplier`='2', `MinLevelHealth` = 11828, `MaxLevelHealth` = 11828 WHERE `entry`='16733'; -- Exodar Peacekeeper
+UPDATE `creature_template` SET `Expansion`='1', `HealthMultiplier`='2', `MinLevelHealth` = 12652, `MaxLevelHealth` = 12652 WHERE `entry`='21448'; -- Gadgetzan Sniper
 
 -- TBC+
 -- Sen'jin Guards Mobs - needs additon in s.43783 switchcase
