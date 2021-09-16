@@ -292,9 +292,9 @@ DELETE FROM `creature_linking` WHERE `master_guid` IN (SELECT guid FROM creature
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES (76082, 76084, 1667),(76083, 76084, 1667),(76085, 76084, 1667);
 
 -- statics
-UPDATE `creature` SET `position_x` = -530.684, `position_y` = 4867.858, `position_z` = 34.206795, `orientation` = 2.356194496154785156 WHERE `guid` = 86006 AND `id` = 20679, -- Aylaan the Waterwaker
-UPDATE `creature` SET `position_x` = -541.78754, `position_y` = 4734.3203, `position_z` = 38.79606, `orientation` = 1.466076612472534179 WHERE `guid` = 86008 AND `id` = 20678, -- Akoru the Firecaller
-UPDATE `creature` SET `position_x` = -620.888, `position_y` = 4861.6294, `position_z` = 41.500984, `orientation` = 0.366519153118133544 WHERE `guid` = 86007 AND `id` = 20677, -- Morod the Windstirrer
+UPDATE `creature` SET `position_x` = -530.684, `position_y` = 4867.858, `position_z` = 34.206795, `orientation` = 2.356194496154785156 WHERE `guid` = 86006 AND `id` = 20679; -- Aylaan the Waterwaker
+UPDATE `creature` SET `position_x` = -541.78754, `position_y` = 4734.3203, `position_z` = 38.79606, `orientation` = 1.466076612472534179 WHERE `guid` = 86008 AND `id` = 20678; -- Akoru the Firecaller
+UPDATE `creature` SET `position_x` = -620.888, `position_y` = 4861.6294, `position_z` = 41.500984, `orientation` = 0.366519153118133544 WHERE `guid` = 86007 AND `id` = 20677; -- Morod the Windstirrer
 
 -- dbscripts_on_creature_movement
 -- Improve Autmatic Despawn for Goliathon <King of the Colossi>
