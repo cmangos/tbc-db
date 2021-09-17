@@ -194,6 +194,8 @@ UPDATE creature_template SET `modelid2` = 0 WHERE `entry` IN (
 25703 -- Brutallus Death Cloud
 );
 
+UPDATE `creature_template` SET `name` = 'Redeemed Spirit of Earth' WHERE `entry` = 21739; -- Redeemed Spriit of Earth
+
 -- -------------------------------
 -- Quest custom changes
 -- -------------------------------
