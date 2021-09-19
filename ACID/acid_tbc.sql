@@ -23086,7 +23086,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Herod the Bully (20360) - NSR
 -- Taelan (20361) - NSR
 -- Caretaker Smithers (20363) - NSR
--- Bartolo Ginsetti (20365) - NSR
+-- Bartolo Ginsetti (20365) - npc_bartolo_ginsetti
 -- Farmer Kent (20368) - NSR
 -- Phin Odelic (20370) - NSR
 -- Jonathan Revah (20372) - NSR
