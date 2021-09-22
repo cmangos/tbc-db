@@ -1798,7 +1798,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Barleybrew Festive Keg (23700) - NSR
 -- Thunderbrew Festive Keg (23702) - NSR
 -- Dark Iron Guzzler (23709) - NSR
--- Belbi Quikswitch (23710) - NSR
+-- Belbi Quikswitch (23710) - npc_belbi_quikswitch
 -- Self-Turning and Oscillating Utility Target (24108) - NSR
 -- Flynn Firebrew (24364) - NSR
 -- Racing Ram (24462) - NSR
