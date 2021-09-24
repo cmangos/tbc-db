@@ -608,10 +608,14 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (9679, 0, 4, 519.44, -217.02, -59.34, 0, 0, 0),
 (9679, 0, 5, 506.55, -153.49, -62.34, 0, 1, 967901);
 
--- TBC only
-DELETE FROM `creature_movement_template` WHERE entry IN (28206);
+DELETE FROM `creature_movement_template` WHERE entry IN (28206,23872);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
-(28206, 0, 1, 847.823, -181.144, -49.6707, 1.85005, 1440000, 9839501);
+-- TBC only
+(28206, 0, 1, 847.823, -181.144, -49.6707, 1.85005, 1440000, 9839501),
+-- TBC+
+-- Coren Direbrew
+(23872, 0, 1, 888.460999, -130.908997, -49.743698, 100, 0, 0),
+(23872, 0, 2, 895.405029, -126.959000, -49.749298, 100, 0, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+1, 0, 0, 1, 0, 0, '13589'), -- Anvilrage Overseer
@@ -763,7 +767,11 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 (@CGUID+1090, 0, 0, 1, 0, 0, '14869'), -- Hammered Patron
 (@CGUID+1115, 0, 1, 1, 0, 0, NULL), -- Tortured Slave
 (@CGUID+1116, 0, 0, 1, 0, 0, NULL), -- Tortured Slave
-(@CGUID+1117, 0, 0, 1, 93, 0, NULL); -- Tortured Slave
+(@CGUID+1117, 0, 0, 1, 93, 0, NULL), -- Tortured Slave
+
+(@CGUID+1320, 0, 0, 1, 69, 0, NULL), -- Dark Iron Antagonist
+(@CGUID+1321, 0, 0, 1, 69, 0, NULL), -- Dark Iron Antagonist
+(@CGUID+1322, 0, 0, 1, 69, 0, NULL); -- Dark Iron Antagonist
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (8889, 0, 0, 1, 0, 0, NULL), -- Anvilrage Overseer
@@ -844,7 +852,10 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (10117, 0, 7, 1, 0, 0, NULL), -- Tortured Slave
 (12944, 0, 0, 1, 0, 0, NULL), -- Lokhtos Darkbargainer
 (15549, 0, 0, 1, 0, 0, '25824'), -- Elder Morndeep
-(16079, 0, 0, 1, 0, 0, NULL); -- Theldren Trigger
+(16079, 0, 0, 1, 0, 0, NULL), -- Theldren Trigger
+
+-- TBC+
+(28067, 0, 0, 1, 69, 0, '50976'); -- Dark Iron Brewer
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+364, @CGUID+1005, 1031), -- Anvilrage Reservist -> General Angerforge
@@ -1075,7 +1086,12 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+921, @CGUID+18, 512), -- Bloodhound --> Anvilrage Warden
 (@CGUID+922, @CGUID+18, 512), -- Bloodhound --> Anvilrage Warden
 (@CGUID+924, @CGUID+923, 512), -- Bloodhound --> Bloodhound
-(@CGUID+925, @CGUID+923, 512); -- Bloodhound --> Bloodhound
+(@CGUID+925, @CGUID+923, 512), -- Bloodhound --> Bloodhound
+
+-- TBC+
+(@CGUID+1323, @CGUID+1312, 128), -- Dark Iron Antagonist -> Coren Direbrew
+(@CGUID+1324, @CGUID+1312, 128), -- Dark Iron Antagonist -> Coren Direbrew
+(@CGUID+1325, @CGUID+1312, 128); -- Dark Iron Antagonist -> Coren Direbrew
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (8900, 230, 8983, 1, 100), -- Doomforge Arcanasmith -> Golem Lord Argelmach
@@ -2221,14 +2237,25 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1309, 23853, 230, 847.645, -175.846, -49.6706, 2.07694, 180, 180, 0, 0, 0, 0), -- [DNT] L70ETC Samuro Controller
 (@CGUID+1310, 23854, 230, 843.406, -178.133, -49.67, 2.04204, 180, 180, 0, 0, 0, 0), -- [DNT] L70ETC Sig Controller
 (@CGUID+1311, 23855, 230, 847.554, -180.631, -49.6707, 2.04204, 180, 180, 0, 0, 0, 0), -- [DNT] L70ETC Chief Thunder-Skins Controller
-(@CGUID+1312, 23872, 230, 891.839, -129.183, -49.6599, 5.25344, 604800, 604800, 0, 0, 0, 0), -- Coren Direbrew
+(@CGUID+1312, 23872, 230, 891.839, -129.183, -49.6599, 5.25344, 604800, 604800, 0, 0, 0, 2), -- Coren Direbrew
 (@CGUID+1313, 28206, 230, 847.823, -181.144, -49.6707, 1.85005, 180, 180, 0, 0, 0, 2), -- [DND] L70ETC Drums
 (@CGUID+1314, 28209, 230, 849.49, -179.317, -49.671, 4.10152, 180, 180, 0, 0, 0, 0), -- Mizli Crankwheel
 (@CGUID+1315, 28210, 230, 845.881, -182.203, -49.6705, 1.18682, 180, 180, 0, 0, 0, 0), -- Ognip Blastbolt
 (@CGUID+1316, 28225, 230, 872.331, -135.744, -49.7576, 3.84395, 180, 180, 0, 0, 0, 0), -- Griz Gutshank
 (@CGUID+1317, 28226, 230, 870.685, -139.139, -49.7589, 3.64473, 180, 180, 0, 0, 0, 0), -- Snaggletooth
 (@CGUID+1318, 28227, 230, 868.815, -135.761, -49.759, 3.67615, 180, 180, 0, 0, 0, 0), -- Slobbermouth
-(@CGUID+1319, 26719, 230, 885.674, -162.749, -49.759, 1.86371, 180, 180, 0, 0, 0, 0); -- Brewfest Spy
+(@CGUID+1319, 26719, 230, 885.674, -162.749, -49.759, 1.86371, 180, 180, 0, 0, 0, 0), -- Brewfest Spy
+(@CGUID+1320, 23795, 230, 428.038, 7.31007, -71.0616, 1.98968, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (entrance portal)
+(@CGUID+1321, 23795, 230, 426.549, 2.64216, -70.9197, 2.04204, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (entrance portal)
+(@CGUID+1322, 23795, 230, 425.946, 12.8322, -70.9413, 4.86947, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (entrance portal)
+(@CGUID+1323, 23795, 230, 895.378, -132.172, -49.6642, 2.6529, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (respawned along with Coren Direbrew)
+(@CGUID+1324, 23795, 230, 893.984, -133.288, -49.6654, 2.58309, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (respawned along with Coren Direbrew)
+(@CGUID+1325, 23795, 230, 896.267, -130.483, -49.6625, 2.60054, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (respawned along with Coren Direbrew)
+(@CGUID+1326, 26774, 230, 843.234, -128.448, -54.0389, 4.06662, 7200, 7200, 0, 0, 0, 0), -- Direbrew Summon Loc bunny
+(@CGUID+1327, 26775, 230, 852.561, -145.327, -49.6707, 4.88692, 7200, 7200, 0, 0, 0, 0), -- Direbrew Goto Loc bunny
+(@CGUID+1328, 27890, 230, 418.818, 4.4148, -70.9833, 0.767945, 7200, 7200, 0, 0, 0, 0), -- Brewfest - Direbrew Mole Machine Loc bunny
+(@CGUID+1329, 27890, 230, 901.349, -143.915, -49.673, 0.436332, 7200, 7200, 0, 0, 0, 0), -- Brewfest - Direbrew Mole Machine Loc bunny
+(@CGUID+1330, 28067, 230, 891.229, -174.558, -43.8419, 0.401426, 7200, 7200, 0, 0, 0, 0); -- Dark Iron Brewer
 
 -- ===========
 -- GAMEOBJECTS
@@ -2710,7 +2737,26 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+481, 165658, 230, 418.6297, -158.6955, -63.15283, 0.2268925, 0, 0, 0.11320300, 0.99357190, 604800, 604800, 100, 1), -- Dark Iron Deposit
 (@OGUID+482, 165658, 230, 1215.014, -384.2355, -98.96942, 1.7976890, 0, 0, 0.78260800, 0.62251480, 604800, 604800, 100, 1), -- Dark Iron Deposit
 (@OGUID+483, 165658, 230, 884.4476, -410.5084, -48.20438, 4.3458700, 0, 0, -0.8241262, 0.56640610, 604800, 604800, 100, 1), -- Dark Iron Deposit
-(@OGUID+484, 165658, 230, 964.4655, -436.6402, -54.68636, 5.9690270, 0, 0, -0.1564341, 0.98768840, 604800, 604800, 100, 1); -- Dark Iron Deposit
+(@OGUID+484, 165658, 230, 964.4655, -436.6402, -54.68636, 5.9690270, 0, 0, -0.1564341, 0.98768840, 604800, 604800, 100, 1), -- Dark Iron Deposit
+
+-- TBC+
+(@OGUID+600, 188478, 230, 422.414, 7.88809, -71.1907, 0.767944, 0, 0, 0.374606, 0.927184, 7200, 7200, 100, 0), -- Dark Iron Mole Machine
+(@OGUID+601, 188478, 230, 905.88, -141.802, -49.7579, 0.436332, 0, 0, 0.216439, 0.976296, 7200, 7200, 100, 0), -- Dark Iron Mole Machine
+(@OGUID+602, 188498, 230, 417.741, 12.4861, -70.9043, 5.23599, 0, 0, -0.5, 0.866025, 7200, 7200, 100, 1), -- Mole Machine Console
+(@OGUID+603, 188498, 230, 422.238, 14.1072, -70.9194, 4.50295, 0, 0, -0.777145, 0.629321, 7200, 7200, 100, 1), -- Mole Machine Console
+(@OGUID+604, 188498, 230, 425.861, 11.4283, -71.086, 3.85718, 0, 0, -0.936671, 0.35021, 7200, 7200, 100, 1), -- Mole Machine Console
+(@OGUID+605, 188498, 230, 427.428, 8.26156, -71.1829, 3.31614, 0, 0, -0.996194, 0.087165, 7200, 7200, 100, 1), -- Mole Machine Console
+(@OGUID+606, 188498, 230, 425.845, 3.87212, -71.0512, 2.56563, 0, 0, 0.958819, 0.284016, 7200, 7200, 100, 1), -- Mole Machine Console
+(@OGUID+607, 190367, 230, 422.341, 7.8398, -70.9082, 4.69494, 0, 0, -0.71325, 0.70091, 7200, 7200, 100, 1), -- Steam Main
+(@OGUID+608, 190368, 230, 421.052, 7.45351, -71.2003, 3.71755, 0, 0, -0.958819, 0.284016, 7200, 7200, 100, 1), -- Steam small
+(@OGUID+609, 190368, 230, 422.779, 6.05404, -71.1546, 5.51524, 0, 0, -0.374606, 0.927184, 7200, 7200, 100, 1), -- Steam small
+(@OGUID+610, 190368, 230, 422.805, 8.58296, -71.1728, 5.0091, 0, 0, -0.594823, 0.803857, 7200, 7200, 100, 1), -- Steam small
+(@OGUID+611, 190386, 230, 422.916, 6.78027, -71.4137, 6.16101, 0, 0, -0.0610485, 0.998135, 7200, 7200, 100, 1), -- Rock Rubble
+(@OGUID+612, 190386, 230, 421.414, 7.64368, -71.2077, 4.39823, 0, 0, -0.809016, 0.587786, 7200, 7200, 100, 1), -- Rock Rubble
+(@OGUID+613, 190386, 230, 421.375, 9.14138, -71.3621, 3.82227, 0, 0, -0.942641, 0.333808, 7200, 7200, 100, 1), -- Rock Rubble
+(@OGUID+614, 190395, 230, 892.807, -173.295, -42.8627, 4.32842, 0, 0, -0.829037, 0.559194, 7200, 7200, 100, 1), -- Cauldron Smoke
+(@OGUID+615, 190395, 230, 893.581, -175.627, -42.9461, 4.36332, 0, 0, -0.819152, 0.573577, 7200, 7200, 100, 1), -- Cauldron Smoke
+(@OGUID+616, 188509, 230, 902.58, -160.198, -49.7587, 3.62823, 0, 0, -0.970544, 0.240925, 7200, 7200, 100, 1); -- Dark Iron Mole Machine (Minion Summoner Trap)
 
 -- ======
 -- EVENTS
@@ -2738,12 +2784,41 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- TBC+
 -- Brewfest
 (@CGUID+1312, 26),
-(@CGUID+1319, 26);
+(@CGUID+1319, 26),
+(@CGUID+1320, 26),
+(@CGUID+1321, 26),
+(@CGUID+1322, 26),
+(@CGUID+1323, 26),
+(@CGUID+1324, 26),
+(@CGUID+1325, 26),
+(@CGUID+1326, 26),
+(@CGUID+1327, 26),
+(@CGUID+1328, 26),
+(@CGUID+1329, 26),
+(@CGUID+1330, 26);
 
 INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 (@CGUID+998, 0, 15735, 0, 0, 0, 2); -- Emperor Dagran Thaurissan (Feast of Winter Veil)
 
--- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
+INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
+-- TBC+
+(@OGUID+600, 26),
+(@OGUID+601, 26),
+(@OGUID+602, 26),
+(@OGUID+603, 26),
+(@OGUID+604, 26),
+(@OGUID+605, 26),
+(@OGUID+606, 26),
+(@OGUID+607, 26),
+(@OGUID+608, 26),
+(@OGUID+609, 26),
+(@OGUID+610, 26),
+(@OGUID+611, 26),
+(@OGUID+612, 26),
+(@OGUID+613, 26),
+(@OGUID+614, 26),
+(@OGUID+615, 26),
+(@OGUID+616, 26);
 
 -- =======
 -- POOLING
@@ -2973,7 +3048,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM dbscripts_on_gossip WHERE id IN (194502,197001);
+DELETE FROM dbscripts_on_gossip WHERE id IN (194502,197001,964801);
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (194502, 1000, 9, @OGUID+112, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn Spectral Chalice'),
 
@@ -2982,7 +3057,10 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (197001, 0, 22, 21, 0, 0, 10043, @CGUID+1110, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly Crony - update faction'),
 (197001, 0, 22, 21, 0, 0, 10043, @CGUID+1111, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly Crony - update faction'),
 (197001, 3000, 0, 0, 0, 0, 0, 0, 0, 4973, 0, 0, 0, 0, 0, 0, 0, ''),
-(197001, 5000, 26, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly  - attack player');
+(197001, 5000, 26, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Ribbly  - attack player'),
+
+-- TBC+
+(964801, 0, 15, 50631, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Dark Iron Brewer - cast Dark Iron Brewer Drinks on player');
 
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

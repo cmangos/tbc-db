@@ -136,4 +136,34 @@ SELECT guid, 26 FROM creature WHERE guid BETWEEN 101270 AND 101292;
 INSERT INTO game_event_creature (guid, `event`)
 SELECT guid, 26 FROM creature WHERE guid BETWEEN 101293 AND 101308;
 
+-- Ipfelkofer Ironkeg 24710
+
+-- Maeve Barleybrew 23683
+-- gains aura 42271 Brewfest Barker Trap A
+
+-- Ita Thunderbrew 23684
+-- gains aura 42269 Brewfest Barker Trap B
+
+-- Gordok Brew Barker 23685
+-- gains aura 42272 Brewfest Barker Trap C
+
+-- Tapper Swindlekeg 24711
+
+-- Drohn's Distillery Barker 24492
+-- gains aura 43942 Brewfest Barker Trap D
+
+-- T'chali's Voodoo Brewery Barker 24493
+-- gains aura 43943 Brewfest Barker Trap E
+
+UPDATE broadcast_text SET ChatTypeID=0 WHERE id IN (22138, 22139, 22140); -- not yells
+
+-- Dark Iron Brewer (inside Blackrock Depths Grim Guzzler)
+-- casts 50631 Dark Iron Brewer Drinks on players
+UPDATE gossip_menu_option SET action_script_id=964801 WHERE menu_id IN (9648,9652);
+
+-- Brewfest - Direbrew Mole Machine Loc bunny
+-- Direbrew Summon Loc bunny
+-- Direbrew Goto Loc bunny
+UPDATE creature_template SET UnitFlags=33554432 WHERE Entry IN (27890,26774,26775);
+
 
