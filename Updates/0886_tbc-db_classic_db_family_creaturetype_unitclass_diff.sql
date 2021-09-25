@@ -95,8 +95,11 @@ UPDATE `creature_template` SET `UnitClass`='8' WHERE `entry`='12917'; -- Unkilla
 UPDATE `creature_template` SET `CreatureType` ='1' WHERE `entry`='12999'; -- World Invisible Trigger
 UPDATE `creature_template` SET `UnitClass`='1' WHERE `entry`='13496'; -- Risen Ancient
 UPDATE `creature_template` SET `UnitClass`='2' WHERE `entry`='13541'; -- Veteran Irondeep Explorer
+UPDATE `creature_template` SET `UnitClass`='2' WHERE `entry`='22774'; -- Veteran Irondeep Explorer (1)
 UPDATE `creature_template` SET `UnitClass`='2' WHERE `entry`='13542'; -- Champion Irondeep Explorer
+UPDATE `creature_template` SET `UnitClass`='2' WHERE `entry`='22534'; -- Champion Irondeep Explorer (1)
 UPDATE `creature_template` SET `UnitClass`='2' WHERE `entry`='13548'; -- Champion Coldmine Explorer
+UPDATE `creature_template` SET `UnitClass`='2' WHERE `entry`='22529'; -- Champion Coldmine Explorer (1)
 UPDATE `creature_template` SET `UnitClass`='2' WHERE `entry`='13956'; -- Winterax Mystic
 UPDATE `creature_template` SET `UnitClass`='2' WHERE `entry`='13958'; -- Winterax Seer
 UPDATE `creature_template` SET `UnitClass`='2' WHERE `entry`='14016'; -- Ushalac the Gloomdweller
