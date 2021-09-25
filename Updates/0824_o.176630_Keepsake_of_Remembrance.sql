@@ -13,9 +13,10 @@ UPDATE `gameobject` SET `spawntimesecsmin` = 30, `spawntimesecsmax` = 60, `animp
 
 DELETE FROM `pool_gameobject_template` WHERE `id` = 176630;
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-(176630, 1815, 0, 'Arathi Highlands - Keepsake of Remembrance (176630)');
+(176630, 1845, 0, 'Arathi Highlands - Keepsake of Remembrance (176630)');
 
-DELETE FROM `pool_template` WHERE `entry` = 1815;
+-- https://github.com/cmangos/tbc-db/commit/610686f23bbd0d1d20b1502c6e4008917be33b8a#r57010378
+DELETE FROM `pool_template` WHERE `entry` = 1845;
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(1815, 1, 'Arathi Highlands - Keepsake of Remembrance (176630)'); -- 5 max
+(1845, 1, 'Arathi Highlands - Keepsake of Remembrance (176630)'); -- 5 max
 
