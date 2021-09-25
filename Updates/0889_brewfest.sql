@@ -399,4 +399,66 @@ UPDATE creature_template SET UnitFlags=33587200 WHERE Entry=23894;
 -- (2, 186478, 1, 1192.02, -4295.66, 21.4374, 0.383971, 0, 0, 0.190808, 0.981627, -60, -60, 100, 1), -- Super Brew Stein
 -- (3, 186478, 1, 1177.98, -4286.28, 21.2707, 1.57963, 0, 0, 0.710222, 0.703978, -60, -60, 100, 1), -- Super Brew Stein
 
+-- 11318 Now This is Ram Racing... Almost. (Alliance)
+-- 11293 Bark for the Barleybrews!
+-- 11294 Bark for the Thunderbrews!
+-- 11409 Now This is Ram Racing... Almost. (Horde)
+-- 11407 Bark for Drohn's Distillery!
+-- 11408 Bark for T'chali's Voodoo Brewery!
+UPDATE quest_template SET StartScript=11318 WHERE entry IN (11318,11293,11294,11409,11407,11408);
+DELETE FROM dbscripts_on_quest_start WHERE id=11318;
+INSERT INTO dbscripts_on_quest_start (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
+(11318, 0, 0, 15, 42149, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Trigger Brewfest Racing Ram');
+
+-- Horde and Alliance both get lent "Ramstein's Personal Ram" for these quests
+-- 11122 There and Back Again
+-- 11412 There and Back Again
+UPDATE quest_template SET StartScript=11122 WHERE entry IN (11122,11412);
+DELETE FROM dbscripts_on_quest_start WHERE id=11122;
+INSERT INTO dbscripts_on_quest_start (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
+(11122, 0, 0, 15, 43720, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Trigger Brewfest Racing Ram - Relay Race - Intro');
+
+-- All Bark quests have a strict time limit of 4 minutes before they are automatically failed
+UPDATE quest_template SET LimitTime=240 WHERE entry IN (11293,11294,11407,11408);
+
+-- Quests in 2.4.3 reward Brewfest Prize Tokens instead of Brewfest Prize Tickets
+UPDATE quest_template SET RewItemId1=37829 WHERE entry IN (11122,11412) AND RewItemId1=33455;
+UPDATE quest_template SET RewItemId1=37829, RewItemCount1=15 WHERE entry IN (11293,11294,11407,11408) AND RewItemId1=33455;
+
+-- Mole Machine Console 188498
+-- 47674 Access Control Console - parent spell?
+-- 47512 Summon Mole Machine PoV Bunny
+DELETE FROM gossip_menu_option WHERE menu_id=9454;
+INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
+('9454', '0', '0', 'Pull the console''s levers.', '26084', '1', '1', '-1', '0', '945401', '0', '0', NULL, '0', '0');
+DELETE FROM dbscripts_on_gossip WHERE id=945401;
+INSERT INTO dbscripts_on_gossip (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
+(945401, 0, 0, 15, 47512, 1, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Summon Mole Machine PoV Bunny');
+-- 21:45:43.453 gossip selected, 47512 casted
+-- 21:45:43.453 summoned 26834 Mole Machine PoV Bunny casts 47489 Mole Machine Port Schedule on player
+UPDATE creature_template SET UnitFlags=33554432 WHERE Entry=26834;
+-- 21:45:43.453 player starts channeling 47513 on Mole Machine PoV Bunny - no data for this spell...
+-- 21:45:43.578 ACTIVE_PLAYER_FIELD_FARSIGHT, CMSG_FAR_SIGHT
+-- 21:45:44.453 player casts 49858 Make Bunny Summon Mole Machine, hits 27890 Brewfest - Direbrew Mole Machine Loc bunny
+DELETE FROM spell_script_target WHERE entry=49858;
+INSERT INTO spell_script_target (entry, `type`, targetEntry, inverseEffectMask) VALUES
+(49858, 1, 27890, 0);
+-- 21:45:44.453 27890 Brewfest - Direbrew Mole Machine Loc bunny casts 47514 Summon Mole Machine on self - summons GO 188478
+-- 21:45:48.469 player gains aura 47521 Mole Machine Player Hide and Root
+-- 21:45:56.453 player casts 47673 Move Bind Sight, hits target 26834 Mole Machine PoV Bunny, teleports it to X: 824.809 Y: -176.166 Z: -49.7551 O: 0.479868
+DELETE FROM spell_target_position WHERE id=47673;
+INSERT INTO spell_target_position (id, target_map, target_position_x, target_position_y, target_position_z, target_orientation) VALUES
+(47673, 230, 824.809, -176.166, -49.7551, 0.479868);
+-- 21:45:56.469 26834 Mole Machine PoV Bunny starts moving after teleport
+-- (MovementMonsterSpline) (MovementSpline) [0] Points: X: 846.6591 Y: -166.882 Z: -45.41986
+-- (MovementMonsterSpline) (MovementSpline) [1] Points: X: 861.3745 Y: -160.4283 Z: -46.94759
+-- (MovementMonsterSpline) (MovementSpline) [2] Points: X: 876.1157 Y: -154.3881 Z: -47.39205
+-- (MovementMonsterSpline) (MovementSpline) [3] Points: X: 901.6615 Y: -143.7775 Z: -49.22544
+-- 21:45:56.469 player casts 47523 Mole Machine Port to Grim Guzzler, hits self and teleports to X: 901.068 Y: -143.939 Z: -49.755 O: 0.436332
+DELETE FROM spell_target_position WHERE id=47523;
+INSERT INTO spell_target_position (id, target_map, target_position_x, target_position_y, target_position_z, target_orientation) VALUES
+(47523, 230, 901.068, -143.939, -49.755, 0.436332);
+-- 21:46:04.453 player casts 49858 Make Bunny Summon Mole Machine, hits 27890 Brewfest - Direbrew Mole Machine Loc bunny (triggers another cast of 47514 to summon drill GO)
+-- 21:46:07.453 player casts 47676 Mole Machine Player Land on self, at same time remove aura 47521
+
 

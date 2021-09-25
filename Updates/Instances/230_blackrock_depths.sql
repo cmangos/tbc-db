@@ -2740,8 +2740,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+484, 165658, 230, 964.4655, -436.6402, -54.68636, 5.9690270, 0, 0, -0.1564341, 0.98768840, 604800, 604800, 100, 1), -- Dark Iron Deposit
 
 -- TBC+
-(@OGUID+600, 188478, 230, 422.414, 7.88809, -71.1907, 0.767944, 0, 0, 0.374606, 0.927184, 7200, 7200, 100, 0), -- Dark Iron Mole Machine
-(@OGUID+601, 188478, 230, 905.88, -141.802, -49.7579, 0.436332, 0, 0, 0.216439, 0.976296, 7200, 7200, 100, 0), -- Dark Iron Mole Machine
+-- (@OGUID+600, 188478, 230, 422.414, 7.88809, -71.1907, 0.767944, 0, 0, 0.374606, 0.927184, 7200, 7200, 100, 0), -- Dark Iron Mole Machine (summoned by spell)
+-- (@OGUID+601, 188478, 230, 905.88, -141.802, -49.7579, 0.436332, 0, 0, 0.216439, 0.976296, 7200, 7200, 100, 0), -- Dark Iron Mole Machine (summoned by spell)
 (@OGUID+602, 188498, 230, 417.741, 12.4861, -70.9043, 5.23599, 0, 0, -0.5, 0.866025, 7200, 7200, 100, 1), -- Mole Machine Console
 (@OGUID+603, 188498, 230, 422.238, 14.1072, -70.9194, 4.50295, 0, 0, -0.777145, 0.629321, 7200, 7200, 100, 1), -- Mole Machine Console
 (@OGUID+604, 188498, 230, 425.861, 11.4283, -71.086, 3.85718, 0, 0, -0.936671, 0.35021, 7200, 7200, 100, 1), -- Mole Machine Console
@@ -2802,8 +2802,8 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- TBC+
-(@OGUID+600, 26),
-(@OGUID+601, 26),
+-- (@OGUID+600, 26),
+-- (@OGUID+601, 26),
 (@OGUID+602, 26),
 (@OGUID+603, 26),
 (@OGUID+604, 26),
