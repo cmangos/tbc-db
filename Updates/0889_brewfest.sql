@@ -461,4 +461,24 @@ INSERT INTO spell_target_position (id, target_map, target_position_x, target_pos
 -- 21:46:04.453 player casts 49858 Make Bunny Summon Mole Machine, hits 27890 Brewfest - Direbrew Mole Machine Loc bunny (triggers another cast of 47514 to summon drill GO)
 -- 21:46:07.453 player casts 47676 Mole Machine Player Land on self, at same time remove aura 47521
 
+DELETE FROM gossip_menu WHERE entry=8977;
+INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
+('8977', '12113', '0', '0');
+
+DELETE FROM conditions WHERE condition_entry=10334;
+INSERT INTO conditions VALUES
+('10334', '1', '44689', '0', '0', '0', '1', 'NOT Player Has Aura: 44689, EffectIndex: 0');
+
+-- condition aura 44689
+DELETE FROM gossip_menu_option WHERE menu_id IN(8976, 8977);
+INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
+('8976', '0', '0', 'Do you still need some help moving kegs from the crash site near Razor Hill?', '23546', '1', '1', '8976', '0', '0', '0', '0', '', '0', '10334'),
+('8977', '0', '0', 'I''m ready to work for you today!  Give me that ram!', '23545', '1', '1', '-1', '0', '8977', '0', '0', '', '0', '0');
+
+DELETE FROM dbscripts_on_gossip WHERE id=8977;
+INSERT INTO dbscripts_on_gossip(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
+('8977', '0', '0', '15', '44368', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Brewfest - Daily - Relay Race Accept - QUEST - DND'),
+('8977', '0', '0', '15', '44069', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast See Supplier Mark');
+
+
 
