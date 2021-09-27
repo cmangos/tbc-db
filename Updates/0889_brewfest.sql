@@ -470,15 +470,32 @@ INSERT INTO conditions VALUES
 ('10334', '1', '44689', '0', '0', '0', '1', 'NOT Player Has Aura: 44689, EffectIndex: 0');
 
 -- condition aura 44689
-DELETE FROM gossip_menu_option WHERE menu_id IN(8976, 8977);
+DELETE FROM gossip_menu_option WHERE menu_id IN(8976, 8977, 8934, 8953);
 INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
 ('8976', '0', '0', 'Do you still need some help moving kegs from the crash site near Razor Hill?', '23546', '1', '1', '8976', '0', '0', '0', '0', '', '0', '10334'),
 ('8977', '0', '0', 'I''m ready to work for you today!  Give me that ram!', '23545', '1', '1', '-1', '0', '8977', '0', '0', '', '0', '0');
+
+INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
+('8934', '0', '0', 'Do you still need some help shipping kegs from Kharanos?', '23546', '1', '1', '8953', '0', '0', '0', '0', '', '0', '10334'),
+('8953', '0', '0', 'I''m ready to work for you today!  Give me the good stuff!', '23545', '1', '1', '-1', '0', '8977', '0', '0', '', '0', '0');
 
 DELETE FROM dbscripts_on_gossip WHERE id=8977;
 INSERT INTO dbscripts_on_gossip(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
 ('8977', '0', '0', '15', '44368', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Brewfest - Daily - Relay Race Accept - QUEST - DND'),
 ('8977', '0', '0', '15', '44069', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast See Supplier Mark');
 
+DELETE FROM dbscripts_on_quest_start WHERE id IN(11318,11409);
+INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
+('11318', '0', '0', '15', '42149', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram'),
+('11409', '0', '0', '15', '42149', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram');
+UPDATE quest_template SET StartScript=entry WHERE entry IN(11318,11409);
+
+DELETE FROM dbscripts_on_quest_start WHERE id IN(11122,11412);
+INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
+('11122', '0', '0', '15', '43720', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram - Relay Race - Intro'),
+('11122', '0', '0', '15', '44069', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast See Supplier Mark'),
+('11412', '0', '0', '15', '43720', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram - Relay Race - Intro'),
+('11412', '0', '0', '15', '44069', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast See Supplier Mark');
+UPDATE quest_template SET StartScript=entry WHERE entry IN(11122,11412);
 
 
