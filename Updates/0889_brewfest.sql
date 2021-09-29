@@ -511,8 +511,20 @@ UPDATE quest_template SET StartScript=entry WHERE entry IN(11122,11412);
 
 UPDATE quest_template SET PrevQuestId=11409 WHERE entry IN(12194);
 
+INSERT INTO game_event_creature SELECT guid, 26 FROM creature WHERE id IN(19175,19169,19177,19176);
+
 INSERT INTO creature_questrelation VALUES
 ('28329', '12318');
+
+UPDATE quest_template SET PrevQuestId=11446 WHERE entry=11409;
+UPDATE quest_template SET PrevQuestId=11441 WHERE entry=11318;
+
+DELETE FROM creature_questrelation WHERE quest=11446;
+INSERT INTO creature_questrelation VALUES
+('19175', '11446'),
+('19169', '11446'),
+('19177', '11446'),
+('19176', '11446');
 
 -- TBC loot for coren direbrew - wotlk uses dungeon finder
 UPDATE creature_template SET LootId=entry WHERE entry IN(23872);
