@@ -498,4 +498,24 @@ INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, dat
 ('11412', '0', '0', '15', '44069', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast See Supplier Mark');
 UPDATE quest_template SET StartScript=entry WHERE entry IN(11122,11412);
 
+-- TBC loot for coren direbrew - wotlk uses dungeon finder
+UPDATE creature_template SET LootId=entry WHERE entry IN(23872);
+
+DELETE FROM creature_loot_template WHERE entry IN(23872);
+INSERT INTO creature_loot_template(entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES
+(23872,38289, 20, 1, 1, 1, 0, ''),
+(23872,38290, 20, 1, 1, 1, 0, ''),
+(23872,38288, 20, 1, 1, 1, 0, ''),
+(23872,38287, 20, 1, 1, 1, 0, ''),
+(23872,37128, 10, 1, 1, 1, 0, ''),
+(23872,37127, 10, 1, 1, 1, 0, ''),
+
+(23872,37863, 5, 2, 1, 1, 0, ''),
+(23872,37597, 4, 2, 1, 1, 0, ''),
+(23872,37828, 2, 2, 1, 1, 0, ''),
+(23872,33977, 2, 2, 1, 1, 0, ''),
+
+(23872,38280, 100, 3, 1, 1, 4, ''),
+(23872,38281, 100, 3, 1, 1, 3, '');
+
 
