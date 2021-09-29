@@ -399,25 +399,6 @@ UPDATE creature_template SET UnitFlags=33587200 WHERE Entry=23894;
 -- (2, 186478, 1, 1192.02, -4295.66, 21.4374, 0.383971, 0, 0, 0.190808, 0.981627, -60, -60, 100, 1), -- Super Brew Stein
 -- (3, 186478, 1, 1177.98, -4286.28, 21.2707, 1.57963, 0, 0, 0.710222, 0.703978, -60, -60, 100, 1), -- Super Brew Stein
 
--- 11318 Now This is Ram Racing... Almost. (Alliance)
--- 11293 Bark for the Barleybrews!
--- 11294 Bark for the Thunderbrews!
--- 11409 Now This is Ram Racing... Almost. (Horde)
--- 11407 Bark for Drohn's Distillery!
--- 11408 Bark for T'chali's Voodoo Brewery!
-UPDATE quest_template SET StartScript=11318 WHERE entry IN (11318,11293,11294,11409,11407,11408);
-DELETE FROM dbscripts_on_quest_start WHERE id=11318;
-INSERT INTO dbscripts_on_quest_start (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
-(11318, 0, 0, 15, 42149, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Trigger Brewfest Racing Ram');
-
--- Horde and Alliance both get lent "Ramstein's Personal Ram" for these quests
--- 11122 There and Back Again
--- 11412 There and Back Again
-UPDATE quest_template SET StartScript=11122 WHERE entry IN (11122,11412);
-DELETE FROM dbscripts_on_quest_start WHERE id=11122;
-INSERT INTO dbscripts_on_quest_start (id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
-(11122, 0, 0, 15, 43720, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Trigger Brewfest Racing Ram - Relay Race - Intro');
-
 -- All Bark quests have a strict time limit of 4 minutes before they are automatically failed
 UPDATE quest_template SET LimitTime=240 WHERE entry IN (11293,11294,11407,11408);
 
@@ -495,11 +476,21 @@ INSERT INTO dbscripts_on_gossip(id, delay, priority, command, datalong, datalong
 ('8977', '0', '0', '15', '44368', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Brewfest - Daily - Relay Race Accept - QUEST - DND'),
 ('8977', '0', '0', '15', '44069', '0', '0', '0', '0', '6', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast See Supplier Mark');
 
-DELETE FROM dbscripts_on_quest_start WHERE id IN(11318,11409);
+-- 11318 Now This is Ram Racing... Almost. (Alliance)
+-- 11293 Bark for the Barleybrews!
+-- 11294 Bark for the Thunderbrews!
+-- 11409 Now This is Ram Racing... Almost. (Horde)
+-- 11407 Bark for Drohn's Distillery!
+-- 11408 Bark for T'chali's Voodoo Brewery!
+DELETE FROM dbscripts_on_quest_start WHERE id IN(11318,11409,11293,11294,11407,11408);
 INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
 ('11318', '0', '0', '15', '42149', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram'),
-('11409', '0', '0', '15', '42149', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram');
-UPDATE quest_template SET StartScript=entry WHERE entry IN(11318,11409);
+('11409', '0', '0', '15', '42149', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram'),
+('11293', '0', '0', '15', '42149', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram'),
+('11294', '0', '0', '15', '42149', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram'),
+('11407', '0', '0', '15', '42149', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram'),
+('11408', '0', '0', '15', '42149', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Trigger Brewfest Racing Ram');
+UPDATE quest_template SET StartScript=entry WHERE entry IN(11318,11409,11293,11294,11407,11408);
 
 DELETE FROM dbscripts_on_quest_start WHERE id IN(11122,11412);
 INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
@@ -545,5 +536,9 @@ INSERT INTO creature_loot_template(entry, item, ChanceOrQuestChance, groupid, mi
 
 (23872,38280, 100, 0, 1, 1, 4, ''),
 (23872,38281, 100, 0, 1, 1, 3, '');
+
+-- Add mechanic immunities for Coren Direbrew
+UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask|1|2|4|16|64|256|512|4096|65536|8388608|33554432|536870912 WHERE Entry=23872;
+
 
 
