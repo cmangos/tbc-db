@@ -463,7 +463,7 @@ INSERT INTO conditions VALUES
 DELETE FROM gossip_menu_option WHERE menu_id IN(8976, 8977, 8934, 8953);
 -- horde quest complete 11412
 INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
-('8976', '0', '0', 'Do you still need some help moving kegs from the crash site near Razor Hill?', '23546', '1', '1', '8976', '0', '0', '0', '0', '', '0', '10337'),
+('8976', '0', '0', 'Do you still need some help moving kegs from the crash site near Razor Hill?', '23546', '1', '1', '8977', '0', '0', '0', '0', '', '0', '10337'),
 ('8977', '0', '0', 'I''m ready to work for you today!  Give me that ram!', '23545', '1', '1', '-1', '0', '8977', '0', '0', '', '0', '0');
 
 -- ally quest completed 11122
