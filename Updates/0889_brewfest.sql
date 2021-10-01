@@ -559,5 +559,11 @@ UPDATE creature_template SET GossipMenuId=0 WHERE entry IN(23872);
 UPDATE gameobject SET position_x=1094.778 ,position_y=-4409.1606,position_z=20.863832,orientation=5.98648 WHERE guid IN(31763) AND id IN(186331);
 DELETE FROM gameobject WHERE guid IN(31703) AND id IN(186331);
 
+UPDATE quest_template SET PrevQuestId=11441 WHERE entry IN(12022);
+UPDATE quest_template SET PrevQuestId=11446 WHERE entry IN(12191);
+
+UPDATE quest_template SET EndText='You''re from the Brewfest camp? Glory day!  Brewfest may yet be saved.$B$B$N, Coren Direbrew must be stopped!  We cannot let him sabotage our sacred holiday.  Our brews must flow!' WHERE entry IN(12318);
+
+
 
 
