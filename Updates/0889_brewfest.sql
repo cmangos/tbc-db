@@ -564,6 +564,14 @@ UPDATE quest_template SET PrevQuestId=11446 WHERE entry IN(12191);
 
 UPDATE quest_template SET EndText='You''re from the Brewfest camp? Glory day!  Brewfest may yet be saved.$B$B$N, Coren Direbrew must be stopped!  We cannot let him sabotage our sacred holiday.  Our brews must flow!' WHERE entry IN(12318);
 
+-- game events for starting scheduled events
+INSERT INTO game_event(entry, schedule_type, occurence, length, holiday, linkedTo, EventGroup, description) VALUES
+('86', '1', '30', '15', '0', '26', '0', 'Brewfest: Dark Iron Attack'),
+('87', '1', '1440', '15', '0', '26', '0', 'Brewfest: Keg tapping');
+
+INSERT INTO game_event_time VALUES
+('86', '2012-09-20 02:00:00', '2025-12-31 00:00:00'),
+('87', '2012-09-20 17:55:00', '2025-12-31 00:00:00');
 
 
 
