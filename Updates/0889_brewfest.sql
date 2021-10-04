@@ -573,5 +573,9 @@ INSERT INTO game_event_time VALUES
 ('86', '2012-09-20 02:00:00', '2025-12-31 00:00:00'),
 ('87', '2012-09-20 17:55:00', '2025-12-31 00:00:00');
 
+-- Coren Direbrew - make him use dynguid and add TBC respawntime (not applicable in wotlk)
+UPDATE creature_template SET ExtraFlags=ExtraFlags|0x00100000 WHERE entry IN(23872);
+UPDATE creature SET spawntimesecsmin=30000,spawntimesecsmax=30000 WHERE Id IN(23872);
+
 
 
