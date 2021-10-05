@@ -575,6 +575,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- GAMEOBJECTS
 -- ===========
 
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
+(@OGUID+38, 177484), (@OGUID+38, 177485), (@OGUID+38, 148837), -- Atal'ai Statue // ProcessEventId_event_antalarion_statue_activation
+(@OGUID+39, 177484), (@OGUID+39, 177485), (@OGUID+39, 148837), -- Atal'ai Statue // 148837 removed at some point? might also be static combination of 177484 & 177485
+(@OGUID+40, 177484), (@OGUID+40, 177485), (@OGUID+40, 148837), -- Atal'ai Statue
+(@OGUID+41, 177484), (@OGUID+41, 177485), (@OGUID+41, 148837), -- Atal'ai Statue
+(@OGUID+42, 177484), (@OGUID+42, 177485), (@OGUID+42, 148837), -- Atal'ai Statue
+(@OGUID+43, 177484), (@OGUID+43, 177485), (@OGUID+43, 148837); -- Atal'ai Statue
+
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1, 148418, 109, -435.417, 248.872, -90.8275, 2.40799, 0, 0, 0.933479, 0.358632, 180, 180, 100, 1), -- Eternal Flame
 (@OGUID+2, 148419, 109, -499.066, 248.605, -90.8275, 0.659252, 0, 0, 0.323689, 0.946163, 180, 180, 100, 1), -- Eternal Flame
@@ -612,25 +620,53 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+34, 149431, 109, -518.154, -85.2353, -74.488, 3.14159, 0, 0, 1, 0, 180, 180, 255, 1), -- forcefield
 (@OGUID+35, 149432, 109, -518.381, 276.621, -90.8977, 3.14159, 0, 0, 1, 0, 180, 180, 100, 0), -- DOOR1
 (@OGUID+36, 149433, 109, -415.713, 276.621, -90.8977, 3.14159, 0, 0, 1, 0, 180, 180, 100, 0), -- DOOR2
-(@OGUID+37, 177484, 109, -515.0457, 95.14713, -148.74, 2.740162, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+38, 177484, 109, -420.1555, 94.37312, -148.7402, -2.321287, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+39, 177484, 109, -490.9691, 135.7142, -148.74, 0.2268925, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+40, 177484, 109, -491.3964, 53.57865, -148.7404, -0.4712385, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+41, 177484, 109, -444.4482, 136.1064, -148.7402, 0.3316107, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+42, 177484, 109, -443.55, 53.9243, -148.7402, 0.9075702, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+43, 177485, 109, -515.0457, 95.14713, -148.74, 2.740162, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+44, 177485, 109, -420.1555, 94.37312, -148.7402, -2.321287, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+45, 177485, 109, -490.9691, 135.7142, -148.74, 0.2268925, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+46, 177485, 109, -491.3964, 53.57865, -148.7404, -0.4712385, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+47, 177485, 109, -444.4482, 136.1064, -148.7402, 0.3316107, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+48, 177485, 109, -443.55, 53.9243, -148.7402, 0.9075702, 0, 0, 0, 0, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+49, 148422, 109, -467.09, 276.58, -90.47, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Evil God Spell Focus (DND)
-(@OGUID+50, 148837, 109, -490.969, 135.714, -148.74, 0.226892, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+51, 148837, 109, -420.155, 94.3731, -148.74, -2.32129, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+52, 148837, 109, -515.046, 95.1471, -148.74, 2.74016, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+53, 148837, 109, -491.396, 53.5787, -148.74, -0.471238, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+54, 148837, 109, -443.55, 53.9243, -148.74, 0.90757, 0, 0, 0, 1, 180, 180, 255, 1), -- Atal'ai Statue
-(@OGUID+55, 148837, 109, -444.448, 136.106, -148.74, 0.331611, 0, 0, 0, 1, 180, 180, 255, 1); -- Atal'ai Statue
+(@OGUID+37, 148422, 109, -467.09, 276.58, -90.47, 0, 0, 0, 0, 0, 180, 180, 0, 1), -- Evil God Spell Focus (DND)
+(@OGUID+38, 0, 109, -515.04571533203125, 95.14713287353515625, -148.740005493164062, 2.740161895751953125, 0, 0, 0.979924201965332031, 0.199370384216308593, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+39, 0, 109, -420.155487060546875, 94.37311553955078125, -148.740234375, -2.32128691673278808, 0, 0, -0.91705989837646484, 0.398749500513076782, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+40, 0, 109, -490.969085693359375, 135.7142181396484375, -148.739974975585937, 0.226892471313476562, 0, 0, 0.113203048706054687, 0.993571877479553222, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+41, 0, 109, -491.39642333984375, 53.57865142822265625, -148.7403564453125, -0.47123849391937255, 0, 0, -0.2334451675415039, 0.972369968891143798, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+42, 0, 109, -444.448211669921875, 136.1064300537109375, -148.740158081054687, 0.331610709428787231, 0, 0, 0.16504669189453125, 0.986285746097564697, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+43, 0, 109, -443.54998779296875, 53.92429733276367187, -148.740249633789062, 0.907570242881774902, 0, 0, 0.438370704650878906, 0.898794233798980712, 180, 180, 255, 1), -- Atal'ai Statue
+(@OGUID+44, 37099, 109, -590.276, 53.4409, -69.3528, 3.76991, 0, 0, -0.951056, 0.309017, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+45, 37099, 109, -585.906, 188.365, -69.4014, 5.46288, 0, 0, -0.398748, 0.91706, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+46, 37099, 109, -583.927, 69.2769, -148.601, 3.78737, 0, 0, -0.948323, 0.317306, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+47, 37099, 109, -578.523, 46.9005, -106.908, 4.46804, 0, 0, -0.788011, 0.615662, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+48, 37099, 109, -577.409, 165.478, -108.99, 4.46804, 0, 0, -0.788011, 0.615662, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+49, 37099, 109, -570.776, 119.907, -126.777, 1.71042, 0, 0, 0.754709, 0.656059, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+50, 37099, 109, -557.521, 9.70738, -126.737, 1.48353, 0, 0, 0.67559, 0.737278, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+51, 37099, 109, -549.985, 9.30037, -87.0857, 1.79769, 0, 0, 0.782608, 0.622515, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+52, 37099, 109, -547.305, 183.819, -148.65, 3.194, 0, 0, -0.999657, 0.0262017, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+53, 37099, 109, -534.25, 99.083, -148.744, 2.23402, 0, 0, 0.898793, 0.438373, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+54, 37099, 109, -531.942, 302.219, -88.2248, 0.087266, 0, 0, 0.0436192, 0.999048, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+55, 37099, 109, -523.658, 76.2831, -172.939, 2.54818, 0, 0, 0.956305, 0.292372, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+56, 37099, 109, -503.776, 150.692, -148.745, 4.34587, 0, 0, -0.824126, 0.566406, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+57, 37099, 109, -502.805, -4.15319, -90.8701, 3.31614, 0, 0, -0.996194, 0.087165, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+58, 37099, 109, -490.689, 149.079, -172.939, 5.32326, 0, 0, -0.461748, 0.887011, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+59, 37099, 109, -486.417, 10.0704, -52.8439, 1.53589, 0, 0, 0.694658, 0.71934, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+60, 37099, 109, -484.216, 35.7172, -148.745, 2.04204, 0, 0, 0.85264, 0.522499, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+61, 37099, 109, -475.412, 163.7, -90.843, 5.23599, 0, 0, -0.5, 0.866025, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+62, 37099, 109, -468.021, -9.47424, -147.576, 1.5708, 0, 0, 0.707107, 0.707107, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+63, 37099, 109, -426.643, 41.3277, -148.745, 2.94959, 0, 0, 0.995396, 0.0958512, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+64, 37099, 109, -424.793, 174.483, -147.576, 2.47837, 0, 0, 0.945518, 0.325568, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+65, 37099, 109, -423.546, 174.254, -52.814, 2.65289, 0, 0, 0.970295, 0.241925, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+66, 37099, 109, -406.957, 126.944, -90.106, 3.87463, 0, 0, -0.93358, 0.358368, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+67, 37099, 109, -400.783, 105.583, -148.744, 0.383971, 0, 0, 0.190808, 0.981627, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+68, 37099, 109, -396.752, 77.0496, -90.8448, 3.01941, 0, 0, 0.998135, 0.0610518, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+69, 37099, 109, -383.566, 154.874, -128.892, 0.802851, 0, 0, 0.390731, 0.920505, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+70, 37099, 109, -383.352, 1.71788, -148.687, 4.15388, 0, 0, -0.874619, 0.48481, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+71, 37099, 109, -381.556, 168.785, -89.2412, 2.68781, 0, 0, 0.97437, 0.224951, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+72, 37099, 109, -375.578, 56.7683, -87.1112, 6.16101, 0, 0, -0.0610485, 0.998135, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+73, 37099, 109, -362.301, 243.166, -90.8326, 4.24115, 0, 0, -0.85264, 0.522499, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+74, 37099, 109, -360.427, 59.1012, -128.814, 5.18363, 0, 0, -0.522498, 0.852641, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+75, 37099, 109, -354.166, 150.352, -67.6015, 4.93928, 0, 0, -0.622514, 0.782609, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+76, 37099, 109, -351.316, 76.8959, -130.942, 0.261798, 0, 0, 0.130526, 0.991445, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+77, 37099, 109, -344.04, 119.619, -148.781, 4.71239, 0, 0, -0.707107, 0.707107, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+78, 37099, 109, -340.648, 162.695, -107.085, 3.6652, 0, 0, -0.965925, 0.258821, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+79, 37099, 109, -335.893, 118.901, -49.023, 2.54818, 0, 0, 0.956305, 0.292372, 3600, 4800, 100, 1), -- Atal'ai Tablet	//out of bounds
+(@OGUID+80, 37099, 109, -335.355, 15.4481, -69.3923, 4.11898, 0, 0, -0.882947, 0.469473, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+81, 37099, 109, -307.398, 121.213, -170.13, 5.46288, 0, 0, -0.398748, 0.91706, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+82, 37099, 109, -290.904, 90.1863, -170.107, 2.67035, 0, 0, 0.972369, 0.233448, 3600, 4800, 100, 1), -- Atal'ai Tablet
+(@OGUID+83, 37099, 109, -279.371, 85.9247, -88.5831, 4.45059, 0, 0, -0.793353, 0.608762, 3600, 4800, 100, 1); -- Atal'ai Tablet
 
 -- ======
 -- EVENTS
@@ -647,47 +683,21 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- =======
 
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+0, 1, 'Atal\'ai Statue (Group 1)'),
-(@PGUID+1, 1, 'Atal\'ai Statue (Group 2)'),
-(@PGUID+2, 1, 'Atal\'ai Statue (Group 3)'),
-(@PGUID+3, 1, 'Atal\'ai Statue (Group 4)'),
-(@PGUID+4, 1, 'Atal\'ai Statue (Group 5)'),
-(@PGUID+5, 1, 'Atal\'ai Statue (Group 6)');
-
+-- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+37, @PGUID+0, 0, 'Atal\'ai Statue (Group 1)'),
-(@OGUID+43, @PGUID+0, 0, 'Atal\'ai Statue (Group 1)'),
-(@OGUID+52, @PGUID+0, 0, 'Atal\'ai Statue (Group 1)'),
-(@OGUID+38, @PGUID+1, 0, 'Atal\'ai Statue (Group 2)'),
-(@OGUID+44, @PGUID+1, 0, 'Atal\'ai Statue (Group 2)'),
-(@OGUID+51, @PGUID+1, 0, 'Atal\'ai Statue (Group 2)'),
-(@OGUID+39, @PGUID+2, 0, 'Atal\'ai Statue (Group 3)'),
-(@OGUID+45, @PGUID+2, 0, 'Atal\'ai Statue (Group 3)'),
-(@OGUID+50, @PGUID+2, 0, 'Atal\'ai Statue (Group 3)'),
-(@OGUID+40, @PGUID+3, 0, 'Atal\'ai Statue (Group 4)'),
-(@OGUID+46, @PGUID+3, 0, 'Atal\'ai Statue (Group 4)'),
-(@OGUID+53, @PGUID+3, 0, 'Atal\'ai Statue (Group 4)'),
-(@OGUID+41, @PGUID+4, 0, 'Atal\'ai Statue (Group 5)'),
-(@OGUID+47, @PGUID+4, 0, 'Atal\'ai Statue (Group 5)'),
-(@OGUID+55, @PGUID+4, 0, 'Atal\'ai Statue (Group 5)'),
-(@OGUID+42, @PGUID+5, 0, 'Atal\'ai Statue (Group 6)'),
-(@OGUID+48, @PGUID+5, 0, 'Atal\'ai Statue (Group 6)'),
-(@OGUID+54, @PGUID+5, 0, 'Atal\'ai Statue (Group 6)');
-
+-- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- =========
 -- DBSCRIPTS
 -- =========
 
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (849701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (849701, 0, 20, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Nightmare Suppressor - Switch to idle movement'),
 (849701, 2000, 15, 12623, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nightmare Suppressor - Cast Suppression on Shade of Hakkar');
+
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -695,7 +705,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM dbscripts_on_gossip WHERE id=1288;
+DELETE FROM `dbscripts_on_gossip` WHERE `id` = 1288;
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1288, 1000, 9, @OGUID+14, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AtalarionStatues S - rough script, details missing'),
 (1288, 11000, 9, @OGUID+15, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'AtalarionStatues N'),
