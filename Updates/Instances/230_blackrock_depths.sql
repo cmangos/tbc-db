@@ -2248,9 +2248,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1320, 23795, 230, 428.038, 7.31007, -71.0616, 1.98968, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (entrance portal)
 (@CGUID+1321, 23795, 230, 426.549, 2.64216, -70.9197, 2.04204, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (entrance portal)
 (@CGUID+1322, 23795, 230, 425.946, 12.8322, -70.9413, 4.86947, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (entrance portal)
-(@CGUID+1323, 23795, 230, 895.378, -132.172, -49.6642, 2.6529, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (respawned along with Coren Direbrew)
-(@CGUID+1324, 23795, 230, 893.984, -133.288, -49.6654, 2.58309, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (respawned along with Coren Direbrew)
-(@CGUID+1325, 23795, 230, 896.267, -130.483, -49.6625, 2.60054, 7200, 7200, 0, 0, 0, 0), -- Dark Iron Antagonist (respawned along with Coren Direbrew)
+(@CGUID+1323, 23795, 230, 895.378, -132.172, -49.6642, 2.6529, 30, 30, 0, 0, 0, 0), -- Dark Iron Antagonist (respawned along with Coren Direbrew)
+(@CGUID+1324, 23795, 230, 893.984, -133.288, -49.6654, 2.58309, 30, 30, 0, 0, 0, 0), -- Dark Iron Antagonist (respawned along with Coren Direbrew)
+(@CGUID+1325, 23795, 230, 896.267, -130.483, -49.6625, 2.60054, 30, 30, 0, 0, 0, 0), -- Dark Iron Antagonist (respawned along with Coren Direbrew)
 (@CGUID+1326, 26774, 230, 843.234, -128.448, -54.0389, 4.06662, 7200, 7200, 0, 0, 0, 0), -- Direbrew Summon Loc bunny
 (@CGUID+1327, 26775, 230, 852.561, -145.327, -49.6707, 4.88692, 7200, 7200, 0, 0, 0, 0), -- Direbrew Goto Loc bunny
 (@CGUID+1328, 27890, 230, 418.818, 4.4148, -70.9833, 0.767945, 7200, 7200, 0, 0, 0, 0), -- Brewfest - Direbrew Mole Machine Loc bunny
@@ -3065,5 +3065,13 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+
+-- Dark Iron Antagonists at entrance have different unitflags and faction
+INSERT INTO creature_spawn_data VALUES
+(@CGUID+1322,10000),
+(@CGUID+1321,10000),
+(@CGUID+1320,10000);
+INSERT INTO creature_spawn_data_template(entry,UnitFlags,Faction) VALUES
+(10000,54,32768);
 
 
