@@ -3071,7 +3071,5 @@ INSERT INTO creature_spawn_data VALUES
 (@CGUID+1322,10000),
 (@CGUID+1321,10000),
 (@CGUID+1320,10000);
-INSERT INTO creature_spawn_data_template(entry,UnitFlags,Faction) VALUES
-(10000,54,32768);
 
 
