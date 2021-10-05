@@ -27620,7 +27620,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2339703','23397','2','0','100','1025','50','0','25000','35000','0','0','11','41367','0','0','0','0','0','0','0','0','0','0','Illidari Blood Lord - Cast Divine Shield at 50% HP'),
 -- Angered Soul Fragment 23398
 ('2339801','23398','11','0','100','0','0','0','0','0','0','0','11','35841','0','0','11','35850','0','0','0','0','0','0','Angered Soul Fragment - Cast Draenei Spirit Visual and Draenei Spirit Visual 2 on Spawn'),
-('2339802','23398','0','0','100','1025','1000','1000','7000','11000','0','0','11','41986','17','0','0','0','0','0','0','0','0','0','Angered Soul Fragment - Cast Anger'),
+('2339802','23398','9','0','100','1025','0','8','7000','11000','0','0','11','41986','17','0','0','0','0','0','0','0','0','0','Angered Soul Fragment - Cast Anger'),
 ('2339803','23398','1','2','100','1','5000','35000','5000','10000','0','0','11','41253','0','0','22','1','0','0','0','0','0','0','Angered Soul Fragment - Cast Greater Invisibility and Set Phase 1 on Timer OOC (Phase 0)'),
 ('2339804','23398','1','1','100','1','40000','45000','40000','45000','0','0','28','0','41253','0','22','0','0','0','0','0','0','0','Angered Soul Fragment - Remove Greater Invisibility and Set Phase 0 on Timer OOC (Phase 1)'),
 -- Suffering Soul Fragment 23399
