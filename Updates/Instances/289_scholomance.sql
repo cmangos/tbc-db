@@ -120,14 +120,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 DELETE FROM creature_movement_template WHERE entry IN (11551,14695);
 DELETE FROM creature_movement_template WHERE entry IN (14500) AND `pathId`=0; -- Also has movement path in Dire Maul, map 429
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
-(11551, 0, 1, 206.346, 80.7189, 104.244, 100, 0, 0),
-(11551, 0, 2, 221.189, 86.5182, 104.715, 100, 0, 0),
-(11551, 0, 3, 207.384, 91.5904, 104.244, 100, 0, 0),
-(11551, 0, 4, 199.815, 104.765, 104.715, 100, 0, 0),
-(11551, 0, 5, 192.953, 90.7216, 104.244, 100, 0, 0),
-(11551, 0, 6, 178.803, 86.621, 104.716, 100, 0, 0),
-(11551, 0, 7, 192.998, 81.0231, 104.244, 100, 0, 0),
-(11551, 0, 8, 199.444, 69.7478, 104.716, 100, 0, 0),
+-- Necrofiend 11551 - DoRespawnEntranceRoom()
+(11551, 0, 1, 206.34576, 80.71886, 104.24367, 100, 0, 0),
+(11551, 0, 2, 221.18945, 86.518196, 104.71484, 100, 0, 0),
+(11551, 0, 3, 207.38437, 91.59038, 104.24367, 100, 0, 0),
+(11551, 0, 4, 199.815, 104.76532, 104.71487, 100, 0, 0),
+(11551, 0, 5, 192.9527, 90.72162, 104.24368, 100, 0, 0),
+(11551, 0, 6, 178.8029, 86.62103, 104.716156, 100, 0, 0),
+(11551, 0, 7, 192.99811, 81.023056, 104.24368, 100, 0, 0),
+(11551, 0, 8, 199.44392, 69.74783, 104.716034, 100, 0, 0),
 -- movement for J'eevee during q.7629 Imp Delivery
 (14500, 0, 1, 38.784, 160.639, 83.545, 100, 0, 0),
 (14500, 0, 2, 36.804, 160.705, 83.545, 100, 3000, 1450001),
@@ -255,6 +256,16 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (10433, 289, 10432, 1, 0), -- Marduk Blackpool -> Vectus
 (10475, 289, 10433, 1, 0); -- Scholomance Student -> Marduk Blackpool
+
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+215, 10481), (@CGUID+215, 10495), -- Reanimated Corpse, Diseased Ghoul
+(@CGUID+216, 10481), (@CGUID+216, 10495), -- Reanimated Corpse, Diseased Ghoul
+(@CGUID+217, 10481), (@CGUID+217, 10495), -- Reanimated Corpse, Diseased Ghoul
+(@CGUID+218, 10481), (@CGUID+218, 10495), -- Reanimated Corpse, Diseased Ghoul
+(@CGUID+219, 10481), (@CGUID+219, 10495), -- Reanimated Corpse, Diseased Ghoul
+(@CGUID+220, 10481), (@CGUID+220, 10495), -- Reanimated Corpse, Diseased Ghoul
+(@CGUID+221, 10481), (@CGUID+221, 10495), -- Reanimated Corpse, Diseased Ghoul
+(@CGUID+222, 10481), (@CGUID+222, 10495); -- Reanimated Corpse, Diseased Ghoul
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 2110, 289, 197.831, -30.3793, 95.3396, 1.65806, 7200, 7200, 0, 0, 0, 0), -- Black Rat
@@ -471,14 +482,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+212, 10481, 289, 277.144, 149.866, 95.9059, 1.11701, 7200, 7200, 0, 0, 0, 0), -- Reanimated Corpse
 (@CGUID+213, 10481, 289, 241.345, 4.23123, 84.9242, 5.06145, 7200, 7200, 0, 0, 0, 0), -- Reanimated Corpse
 (@CGUID+214, 10481, 289, 251.031, 7.45606, 85.1254, 1.44862, 7200, 7200, 0, 0, 0, 0), -- Reanimated Corpse
-(@CGUID+215, 10481, 289, 191.343, 83.4603, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Reanimated Corpse
-(@CGUID+216, 10481, 289, 211.313, 88.8732, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Reanimated Corpse
-(@CGUID+217, 10481, 289, 179.126, 94.6681, 104.8, 0, 7200, 7200, 3, 0, 0, 1), -- Reanimated Corpse
-(@CGUID+218, 10481, 289, 185.034, 80.1398, 104.799, 0, 7200, 7200, 3, 0, 0, 1), -- Reanimated Corpse
-(@CGUID+219, 10481, 289, 215.996, 91.7486, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Reanimated Corpse
-(@CGUID+220, 10481, 289, 196.721, 91.9017, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Reanimated Corpse
-(@CGUID+221, 10481, 289, 222.002, 82.2615, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Reanimated Corpse
-(@CGUID+222, 10481, 289, 197.559, 79.5891, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Reanimated Corpse
+(@CGUID+215, 0, 289, 191.343, 83.4603, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+216, 0, 289, 211.313, 88.8732, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+217, 0, 289, 179.126, 94.6681, 104.8, 0, 7200, 7200, 3, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+218, 0, 289, 185.034, 80.1398, 104.799, 0, 7200, 7200, 3, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+219, 0, 289, 215.996, 91.7486, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+220, 0, 289, 196.721, 91.9017, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+221, 0, 289, 222.002, 82.2615, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- creature_spawn_entry
+(@CGUID+222, 0, 289, 197.559, 79.5891, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- creature_spawn_entry
 (@CGUID+223, 10485, 289, 249.692, 98.6988, 95.9062, 2.74121, 7200, 7200, 5, 0, 0, 1), -- Risen Aberration
 (@CGUID+224, 10485, 289, 257.031, 101.056, 95.9061, 5.5676, 7200, 7200, 0, 0, 0, 0), -- Risen Aberration
 (@CGUID+225, 10485, 289, 256.427, 124.66, 95.9059, 4.32302, 7200, 7200, 5, 0, 0, 1), -- Risen Aberration
@@ -577,21 +588,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+318, 10495, 289, 272.368, 114.152, 95.9059, 4.41568, 7200, 7200, 0, 0, 0, 0), -- Diseased Ghoul
 (@CGUID+319, 10495, 289, 269.97, 139.975, 95.9059, 6.19592, 7200, 7200, 0, 0, 0, 0), -- Diseased Ghoul
 (@CGUID+320, 10495, 289, 191.688, 90.8574, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+321, 10495, 289, 191.343, 83.4603, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+322, 10495, 289, 206.582, 85.9061, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+323, 10495, 289, 211.313, 88.8732, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+324, 10495, 289, 187.086, 92.537, 104.767, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+325, 10495, 289, 179.126, 94.6681, 104.8, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+326, 10495, 289, 179.885, 73.8904, 104.799, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+327, 10495, 289, 185.034, 80.1398, 104.799, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+328, 10495, 289, 217.536, 99.4131, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+329, 10495, 289, 215.996, 91.7486, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+330, 10495, 289, 197.118, 98.0816, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+331, 10495, 289, 196.721, 91.9017, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+332, 10495, 289, 215.633, 79.811, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+333, 10495, 289, 222.002, 82.2615, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+334, 10495, 289, 203.869, 80.8282, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
-(@CGUID+335, 10495, 289, 197.559, 79.5891, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
+(@CGUID+321, 10495, 289, 206.582, 85.9061, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
+(@CGUID+322, 10495, 289, 187.086, 92.537, 104.767, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
+(@CGUID+323, 10495, 289, 179.885, 73.8904, 104.799, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
+(@CGUID+324, 10495, 289, 217.536, 99.4131, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
+(@CGUID+325, 10495, 289, 197.118, 98.0816, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
+(@CGUID+326, 10495, 289, 215.633, 79.811, 104.798, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
+(@CGUID+327, 10495, 289, 203.869, 80.8282, 104.327, 0, 7200, 7200, 3, 0, 0, 1), -- Diseased Ghoul
+-- 328 - 335
 (@CGUID+336, 10498, 289, 171.983, 172.568, 109.667, 5.74213, 7200, 7200, 0, 0, 0, 0), -- Spectral Tutor
 (@CGUID+337, 10498, 289, 276.712, 153.875, 109.869, 3.14159, 7200, 7200, 0, 0, 0, 0), -- Spectral Tutor
 (@CGUID+338, 10498, 289, 187.714, 173.996, 109.791, 4.64258, 7200, 7200, 0, 0, 0, 0), -- Spectral Tutor
@@ -644,8 +648,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+385, 11257, 289, 129.537, 166.542, 109.543, 4.11946, 7200, 7200, 5, 0, 0, 1), -- Scholomance Handler
 (@CGUID+386, 11257, 289, 112.373, 178.641, 109.518, 1.13787, 7200, 7200, 5, 0, 0, 1), -- Scholomance Handler
 (@CGUID+387, 11261, 289, 182.246, -95.4371, 85.3117, 4.72984, 43200, 43200, 0, 0, 0, 0), -- Doctor Theolen Krastinov
-(@CGUID+388, 11551, 289, 247.555, 91.3432, 110.055, 3.16881, 7200, 7200, 5, 0, 0, 2), -- Necrofiend
-(@CGUID+389, 11551, 289, 219.244, 134.258, 109.723, 6.26573, 7200, 7200, 5, 0, 0, 2), -- Necrofiend
+(@CGUID+388, 11551, 289, 247.555, 91.3432, 110.055, 3.16881, 7200, 7200, 0, 0, 0, 2), -- Necrofiend
+(@CGUID+389, 11551, 289, 219.244, 134.258, 109.723, 6.26573, 7200, 7200, 0, 0, 0, 2), -- Necrofiend
 (@CGUID+390, 11551, 289, 209.233, 73.2819, 104.798, 0, 7200, 7200, 0, 0, 0, 2), -- Necrofiend
 (@CGUID+391, 11582, 289, 279.979, 78.9085, 109.842, 2.44346, 7200, 7200, 0, 0, 0, 0), -- Scholomance Dark Summoner
 (@CGUID+392, 11582, 289, 249.179, 99.3561, 109.806, 2.68781, 7200, 7200, 0, 0, 0, 0), -- Scholomance Dark Summoner
@@ -749,39 +753,10 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- =======
 
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 1, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@PGUID+2, 1, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@PGUID+3, 1, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@PGUID+4, 1, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@PGUID+5, 1, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@PGUID+6, 1, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@PGUID+7, 1, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@PGUID+8, 1, 'Scholomance - Diseased Ghould / Reanimated Corpse');
-
-INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+215, @PGUID+1, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+321, @PGUID+1, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+216, @PGUID+2, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+323, @PGUID+2, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+217, @PGUID+3, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+325, @PGUID+3, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+218, @PGUID+4, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+327, @PGUID+4, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+219, @PGUID+5, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+329, @PGUID+5, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+220, @PGUID+6, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+331, @PGUID+6, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+221, @PGUID+7, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+333, @PGUID+7, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+222, @PGUID+8, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse'),
-(@CGUID+335, @PGUID+8, 0, 'Scholomance - Diseased Ghould / Reanimated Corpse');
-
+-- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+-- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- =========
