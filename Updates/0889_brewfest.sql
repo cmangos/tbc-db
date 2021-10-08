@@ -585,4 +585,11 @@ INSERT INTO creature_spawn_data_template(entry,UnitFlags,Faction) VALUES
 DELETE FROM creature_involvedrelation WHERE quest IN(11442,11447);
 DELETE FROM creature_questrelation WHERE quest IN(11442,11447);
 
+-- BRD Console PoV Bunny pathing
+INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+(26834,1,0,846.65906,-166.88196,-45.419857,0,0,100),
+(26834,1,1,861.37445,-160.42833,-46.94759,0,0,100),
+(26834,1,2,876.1157,-154.38808,-47.39205,0,0,100),
+(26834,1,3,901.6615,-143.77754,-49.225437,1000,0,100);
+
 
