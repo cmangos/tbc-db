@@ -474,6 +474,8 @@ INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_bro
 ('8958', '6', '0', 'That all sounds very complicated...', '23448', '1', '1', '8963', '0', '0', '0', '0', '', '0', '0'),
 ('8958', '7', '0', 'Say, you wouldn\'t happen to have an extra set of reins...', '23654', '1', '1', '-1', '0', '8958', '0', '0', '', '0', '475');
 
+UPDATE creature_template SET VendorTemplateId=601 WHERE entry IN(24468);
+
 
 -- condition aura 44689
 DELETE FROM gossip_menu_option WHERE menu_id IN(8976, 8977, 8934, 8953);
