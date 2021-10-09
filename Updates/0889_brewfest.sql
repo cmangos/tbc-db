@@ -450,13 +450,29 @@ DELETE FROM gossip_menu WHERE entry=8977;
 INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 ('8977', '12113', '0', '0');
 
-DELETE FROM conditions WHERE condition_entry=10334;
+DELETE FROM conditions WHERE condition_entry IN(10334,10335,10336,10337,10338);
 INSERT INTO conditions VALUES
 ('10334', '1', '44689', '0', '0', '0', '1', 'NOT Player Has Aura: 44689, EffectIndex: 0'),
 ('10335', '8', '11412', '0', '0', '0', '0', 'Quest ID 11412 Rewarded'),
 ('10336', '8', '11122', '0', '0', '0', '0', 'Quest ID 11122 Rewarded'),
 ('10337', '-1', '10335', '10334', '0', '0', '0', ''),
 ('10338', '-1', '10336', '10334', '0', '0', '0', '');
+
+DELETE FROM conditions WHERE condition_entry IN(10339,10340,10341);
+INSERT INTO conditions VALUES
+('10339', '8', '11400', '0', '0', '0', '0', 'Quest ID 11400 Rewarded'),
+('10340', '8', '11419', '0', '0', '0', '0', 'Quest ID 11419 Rewarded'),
+('10341', '-2', '10339', '10340', '0', '0', '0', '');
+
+DELETE FROM gossip_menu_option WHERE menu_id IN(8958);
+INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
+('8958', '1', '0', 'I''d like to purchase a Brewfest riding ram.', '23463', '3', '128', '0', '0', '0', '0', '0', '', '0', '10341'),
+('8958', '2', '0', 'Do I get a free mount?', '23444', '1', '1', '8959', '0', '0', '0', '0', '', '0', '0'),
+('8958', '3', '0', 'How do I make my ram go faster?', '23445', '1', '1', '8960', '0', '0', '0', '0', '', '0', '0'),
+('8958', '4', '0', 'What\'s with the different speeds?', '23446', '1', '1', '8961', '0', '0', '0', '0', '', '0', '0'),
+('8958', '5', '0', 'Can I tire my ram out?', '23447', '1', '1', '8962', '0', '0', '0', '0', '', '0', '0'),
+('8958', '6', '0', 'That all sounds very complicated...', '23448', '1', '1', '8963', '0', '0', '0', '0', '', '0', '0'),
+('8958', '7', '0', 'Say, you wouldn\'t happen to have an extra set of reins...', '23654', '1', '1', '-1', '0', '8958', '0', '0', '', '0', '475');
 
 
 -- condition aura 44689
