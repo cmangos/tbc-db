@@ -475,6 +475,8 @@ INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_bro
 ('8958', '7', '0', 'Say, you wouldn\'t happen to have an extra set of reins...', '23654', '1', '1', '-1', '0', '8958', '0', '0', '', '0', '475');
 
 UPDATE creature_template SET VendorTemplateId=601 WHERE entry IN(24468);
+-- mounts with stamp should only cost gold
+UPDATE npc_vendor_template SET ExtendedCost=0 WHERE item IN(33976,33977);
 
 
 -- condition aura 44689
