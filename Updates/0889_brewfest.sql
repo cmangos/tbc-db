@@ -623,4 +623,15 @@ INSERT INTO npc_vendor_template VALUES
 ('602', '33978', '0', '0', '2273', '10343', '\"Honorary Brewer\" Hand Stamp'),
 ('602', '34028', '0', '0', '2273', '10344', '\"Honorary Brewer\" Hand Stamp');
 
+-- Dark Iron Attack Event daily relations
+DELETE FROM gameobject_questrelation WHERE quest IN(12020,12192);
+INSERT INTO gameobject_questrelation VALUES
+('189989', '12020'),
+('189990', '12192');
+
+DELETE FROM creature_involvedrelation WHERE quest IN(12020,12192);
+INSERT INTO creature_involvedrelation VALUES
+('27215', '12020'),
+('27216', '12192');
+
 
