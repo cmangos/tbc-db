@@ -4,8 +4,7 @@ DBScriptName: instance_sunken_temple
 DB%Complete: 80
 DBComment:
 * probably movement missing e.g @CGUID+6, @CGUID+9, @CGUID+23, @CGUID+24, @CGUID+54, @CGUID+64, @CGUID+70, @CGUID+108
-* movement missing for entry 5720 + 5721 + 8580 in circle clockwise
-* Hazzas (Leader) & Morphaz should fly nearly synchronized, so i guess they should share path and/or should be linked. Or Spawnpositions & Waypointorder or Speeds needs adjustments
+* movement missing for entry 8580 in circle clockwise
 EndDBScriptData */
 
 SET @CGUID := 1090000; -- creatures
@@ -18,7 +17,7 @@ SET @PGUID := 45800; -- pools
 
 -- INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
-DELETE FROM creature_movement_template WHERE entry IN (5708,5719,5722,8497);
+DELETE FROM creature_movement_template WHERE entry IN (5708,5720,5721,5722,8497);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 (5708, 0, 1, -369.26, 94.5071, -148.802, 100, 0, 0),
 (5708, 0, 2, -375.62, 119.789, -148.802, 100, 0, 0),
@@ -35,16 +34,64 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (5708, 0, 13, -418.226, 10.4559, -148.755, 100, 0, 0),
 (5708, 0, 14, -382.245, 46.9143, -148.802, 100, 0, 0),
 (5708, 0, 15, -374.001, 71.9398, -148.802, 100, 0, 0),
-(5719, 0, 1, -644.219, 58.4874, -90.8341, 1.57404, 0, 5),
-(5719, 0, 2, -644.331, 136.016, -90.8297, 3.20482, 0, 0),
-(5719, 0, 3, -674.273, 134.121, -90.8297, 4.72107, 0, 0),
-(5719, 0, 4, -673.602, 56.772, -90.8339, 6.27551, 0, 0),
-(5719, 0, 5, -643.732, 56.5426, -90.8339, 6.27551, 0, 0),
-(5722, 0, 1, -644.27, 74.3273, -90.8327, 1.57404, 0, 5),
-(5722, 0, 2, -644.468, 135.471, -90.8296, 3.22119, 0, 0),
-(5722, 0, 3, -673.758, 133.936, -90.8296, 4.71017, 0, 0),
-(5722, 0, 4, -673.928, 57.2586, -90.8338, 6.27006, 0, 0),
-(5722, 0, 5, -643.802, 56.8631, -90.8338, 1.57403, 0, 0),
+-- Spline Mode: 1 (CatmullRom) - falling
+-- (5720, 0, 1, -413.70477, 125.85509, -66.66063, 100, 0, 0),
+-- (5720, 0, 2, -414.67508, 125.61317, -66.66063, 100, 0, 0),
+-- (5720, 0, 3, -413.86295, 125.32849, -62.58182, 100, 0, 0),
+-- (5720, 0, 4, -416.85086, 124.24681, -59.998432, 100, 0, 0),
+-- (5720, 0, 5, -422.49094, 120.95675, -59.192963, 100, 0, 0),
+-- (5720, 0, 6, -428.0579, 117.68626, -57.276245, 100, 0, 0),
+-- (5720, 0, 7, -433.82428, 114.44847, -79.74847, 100, 0, 0),
+-- (5720, 0, 8, -439.89642, 110.98086, -85.22085, 100, 0, 0),
+-- (5720, 0, 9, -447.7986, 106.22495, -90.942986, 100, 0, 0),
+(5720, 0, 10, -455.27783, 101.90881, -91.1929, 100, 0, 0),
+(5720, 0, 11, -455.119, 101.936, -94.5187, 3.664992809295654296, 0, 0),
+(5720, 0, 12, -458.52356, 102.71765, -94.52078, 100, 1, 572001),
+-- (5720, 1, 1, -441.48523, 94.42815, -92.98178, 100, 0, 0),
+(5720, 1, 2, -428.70865, 75.63319, -90.75833, 100, 0, 0),
+(5720, 1, 3, -443.8896, 64.24854, -91.11068, 100, 0, 0),
+(5720, 1, 4, -470.57764, 54.71567, -90.94792, 100, 0, 0),
+(5720, 1, 5, -495.19, 67.01, -91.10, 100, 0, 0), -- guessed
+(5720, 1, 6, -505.58, 84.87, -91.09, 100, 0, 0),
+(5720, 1, 7, -505.55, 105.62, -91.10, 100, 0, 0),
+(5720, 1, 8, -495.27, 123.49, -91.09, 100, 0, 0),
+(5720, 1, 9, -473.27, 130.46, -91.35, 100, 0, 0),
+(5720, 1, 10, -456.93, 133.82, -91.09, 100, 0, 0),
+(5720, 1, 11, -438.84, 123.49, -91.10, 100, 0, 0),
+(5720, 1, 12, -428.44, 105.54, -91.09, 100, 0, 0),
+-- Spline Mode: 1 (CatmullRom) - falling
+-- (5721, 0, 1, -410.41855, 61.729176, -66.984474, 100, 0, 0),
+-- (5721, 0, 2, -411.28458, 62.229176, -66.984474, 100, 0, 0),
+-- (5721, 0, 3, -407.57104, 60.537224, -63.790043, 100, 0, 0),
+-- (5721, 0, 4, -413.59158, 64.09144, -59.484444, 100, 0, 0),
+-- (5721, 0, 5, -418.76453, 67.275375, -58.65112, 100, 0, 0),
+-- (5721, 0, 6, -425.1723, 70.304214, -58.73442, 100, 0, 0),
+-- (5721, 0, 7, -431.19595, 74.37412, -70.56781, 100, 0, 0),
+-- (5721, 0, 8, -435.16385, 77.40635, -82.23453, 100, 0, 0),
+-- (5721, 0, 9, -442.12958, 81.53304, -87.45673, 100, 0, 0),
+(5721, 0, 10, -454.91425, 88.44565, -90.623405, 100, 0, 0),
+(5721, 0, 11, -454.222, 87.8212, -94.4498, 2.645920991897583007, 0, 0),
+(5721, 0, 12, -450.55096, 82.19909, -93.527275, 100, 1, 572101),
+-- (5721, 1, 1, -467.5771, 60.71298, -91.40983, 100, 0, 0),
+(5721, 1, 2, -495.19, 67.01, -91.10, 100, 0, 0), -- guessed
+(5721, 1, 3, -505.58, 84.87, -91.09, 100, 0, 0),
+(5721, 1, 4, -505.55, 105.62, -91.10, 100, 0, 0),
+(5721, 1, 5, -495.27, 123.49, -91.09, 100, 0, 0),
+(5721, 1, 6, -473.27, 130.46, -91.35, 100, 0, 0),
+(5721, 1, 7, -456.93, 133.82, -91.09, 100, 0, 0),
+(5721, 1, 8, -438.84, 123.49, -91.10, 100, 0, 0),
+(5721, 1, 9, -428.44, 105.54, -91.09, 100, 0, 0),
+(5721, 1, 10, -428.70865, 75.63319, -90.75833, 100, 0, 0),
+(5721, 1, 11, -443.8896, 64.24854, -91.11068, 100, 0, 0),
+(5721, 1, 12, -470.57764, 54.71567, -90.94792, 100, 0, 0),
+(5722, 0, 1, -649.6785, 131.59596, -90.82902, 100, 0, 0),
+(5722, 0, 2, -665.83405, 131.50317, -90.82939, 100, 0, 0),
+(5722, 0, 3, -673.3382, 107.93626, -90.83093, 100, 0, 0),
+(5722, 0, 4, -673.3691, 83.96611, -90.83232, 100, 0, 0),
+(5722, 0, 5, -665.69635, 60.20914, -90.83353, 100, 0, 0),
+(5722, 0, 6, -649.8461, 60.03304, -90.833176, 100, 0, 0),
+(5722, 0, 7, -641.7433, 84.016106, -90.834, 100, 0, 0),
+(5722, 0, 8, -641.6724, 107.88358, -90.82973, 100, 0, 0),
 (8497, 0, 1, -420.629, 276.682, -90.827, 3.1722, 0, 0),
 (8497, 0, 2, -446.197, 275.329, -90.674, 3.1722, 1000, 849701),
 (8497, 1, 1, -512.015, 276.134, -90.827, 6.2808, 0, 0),
@@ -58,7 +105,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (5256, 0, 0, 1, 0, 0, NULL), -- Atal'ai Warrior
 (5259, 0, 0, 1, 0, 0, NULL), -- Atal'ai Witch Doctor
 (5263, 0, 0, 1, 0, 0, NULL), -- Mummified Atal'ai
-(5267, 0, 0, 1, 0, 0, '8876'), -- Unliving Atal'ai
+(5267, 0, 0, 1, 0, 0, '8247 8876'), -- Unliving Atal'ai
 (5269, 0, 0, 1, 0, 0, NULL), -- Atal'ai Priest
 (5270, 0, 0, 1, 0, 0, NULL), -- Atal'ai Corpse Eater
 (5271, 0, 0, 1, 0, 0, NULL), -- Atal'ai Deathwalker
@@ -69,14 +116,14 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (5291, 0, 0, 1, 0, 0, NULL), -- Hakkari Frostwing
 (5708, 0, 0, 1, 0, 0, NULL), -- Spawn of Hakkar
 (5709, 0, 0, 1, 0, 0, '8876'), -- Shade of Eranikus
-(5710, 0, 0, 1, 0, 0, NULL), -- Jammal'an the Prophet
+(5710, 0, 0, 1, 0, 0, '13540'), -- Jammal'an the Prophet
 (5711, 0, 0, 1, 0, 0, NULL), -- Ogom the Wretched
-(5712, 0, 0, 1, 0, 0, NULL), -- Zolo
-(5713, 0, 0, 1, 0, 0, NULL), -- Gasher
-(5714, 0, 0, 1, 0, 0, NULL), -- Loro
-(5715, 0, 0, 1, 0, 0, NULL), -- Hukku
-(5716, 0, 0, 1, 0, 0, NULL), -- Zul'Lor
-(5717, 0, 0, 1, 0, 0, NULL), -- Mijan
+(5712, 0, 0, 1, 0, 0, '13540'), -- Zolo
+(5713, 0, 0, 1, 0, 0, '13540'), -- Gasher
+(5714, 0, 0, 1, 0, 0, '9205 12782 13540'), -- Loro
+(5715, 0, 0, 1, 0, 0, '13540'), -- Hukku
+(5716, 0, 0, 1, 0, 0, '13540'), -- Zul'Lor
+(5717, 0, 0, 1, 0, 0, '13540'), -- Mijan
 (5719, 0, 0, 1, 0, 0, NULL), -- Morphaz
 (5722, 0, 0, 1, 0, 0, NULL), -- Hazzas
 (8311, 0, 0, 1, 0, 0, NULL), -- Slime Maggot
@@ -84,6 +131,10 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (8319, 0, 0, 1, 0, 0, NULL), -- Nightmare Whelp
 (8384, 0, 0, 1, 0, 0, NULL), -- Deep Lurker
 (15593, 0, 0, 1, 0, 0, '25824'); -- Elder Starsong
+
+INSERT INTO `creature_spawn_data` (`guid`, `id`) VALUES
+(@CGUID+143, 1), -- Morphaz - SPAWN_FLAG_RUN_ON_SPAWN
+(@CGUID+144, 1); -- Hazzas - SPAWN_FLAG_RUN_ON_SPAWN
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+113, @CGUID+103, 3), -- Nightmare Wyrmkin -> Nightmare Scalebane
@@ -255,11 +306,12 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (5277, 109, 5709, 1, 0), -- Nightmare Scalebane -> Shade of Eranikus
 (5280, 109, 5709, 1, 0), -- Nightmare Wyrmkin -> Shade of Eranikus
 (5283, 109, 5709, 1, 0), -- Nightmare Wanderer -> Shade of Eranikus
-(5711, 109, 5710, 3, 0), -- Ogom the Wretched -> Jammal'an the Prophet
-(5719, 109, 5709, 1, 0), -- Morphaz -> Shade of Eranikus
-(5719, 109, 5722, 3, 0), -- Morphaz -> Hazzas
+(5720, 109, 5709, 1, 0), -- Weaver -> Shade of Eranikus
+(5721, 109, 5709, 1, 0), -- Dreamscythe -> Shade of Eranikus
 (5722, 109, 5709, 1, 0), -- Hazzas -> Shade of Eranikus
-(8319, 109, 5709, 1, 0); -- Nightmare Whelp -> Shade of Eranikus
+(8319, 109, 5709, 1, 0), -- Nightmare Whelp -> Shade of Eranikus
+(5711, 109, 5710, 3, 0), -- Ogom the Wretched -> Jammal'an the Prophet
+(5719, 109, 5722, 515, 0); -- Morphaz -> Hazzas
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 5226, 109, -491.134, 141.045, -148.742, 2.54743, 7200, 7200, 0, 0, 0, 0), -- Murk Worm
@@ -404,8 +456,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+140, 5715, 109, -405.506, 60.4569, -67.0678, 2.57409, 1000000, 1000000, 0, 0, 0, 0), -- Hukku
 (@CGUID+141, 5716, 109, -467.396, 165.997, -66.7027, 4.7096, 1000000, 1000000, 0, 0, 0, 0), -- Zul'Lor
 (@CGUID+142, 5717, 109, -406.189, 131.068, -66.9138, 3.68072, 1000000, 1000000, 0, 0, 0, 0), -- Mijan
-(@CGUID+143, 5719, 109, -667.59, 103.111, -90.8313, 6.18358, 1000000, 1000000, 0, 0, 0, 2), -- Morphaz
-(@CGUID+144, 5722, 109, -667.359, 80.803, -90.8326, 0.112455, 1000000, 1000000, 0, 0, 0, 2), -- Hazzas
+(@CGUID+143, 5719, 109, -646.4796142578125, 122.121429443359375, -90.829498291015625, 1.896414637565612792, 86400, 86400, 0, 0, 0, 0), -- Morphaz
+(@CGUID+144, 5722, 109, -649.67852783203125, 131.5959625244140625, -90.8290176391601562, 1.896413564682006835, 86400, 86400, 0, 0, 0, 2), -- Hazzas
 (@CGUID+145, 8311, 109, -506.616, 183.867, -147.307, 1.93089, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
 (@CGUID+146, 8311, 109, -490.377, 149.741, -147.768, 3.69646, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
 (@CGUID+147, 8311, 109, -510.948, 181.021, -148.802, 6.10999, 7200, 7200, 0, 0, 0, 0), -- Slime Maggot
@@ -693,10 +745,20 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (849701);
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(849701, 0, 20, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Nightmare Suppressor - Switch to idle movement'),
-(849701, 2000, 15, 12623, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nightmare Suppressor - Cast Suppression on Shade of Hakkar');
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (572001,572101,849701);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(849701, 0, 0, 20, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Nightmare Suppressor - Switch to idle movement'),
+(849701, 2000, 0, 15, 12623, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nightmare Suppressor - Cast Suppression on Shade of Hakkar'),
+
+(572001, 0, 0, 39, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Weaver 5720 - Set Hover Off'),
+(572001, 0, 1, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weaver 5720 - Set Run On'),
+(572001, 0, 2, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weaver 5720 - Set Path 1'),
+(572001, 0, 3, 48, 256, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weaver 5720 - Remove UNIT_FLAG_IMMUNE_TO_PLAYER'),
+
+(572101, 0, 0, 39, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Dreamscythe 5721 - Set Hover Off'),
+(572101, 0, 1, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Dreamscythe 5721 - Set Run On'),
+(572101, 0, 2, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Dreamscythe 5721 - Set Path 1'),
+(572101, 0, 3, 48, 256, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Dreamscythe 5721 - Remove UNIT_FLAG_IMMUNE_TO_PLAYER');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
