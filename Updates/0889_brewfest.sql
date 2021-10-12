@@ -491,7 +491,7 @@ INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_bro
 ('8934', '0', '0', 'Do you still need some help shipping kegs from Kharanos?', '23245', '1', '1', '8953', '0', '0', '0', '0', '', '0', '10338'),
 ('8953', '0', '0', 'I''m ready to work for you today!  Give me the good stuff!', '23378', '1', '1', '-1', '0', '8977', '0', '0', '', '0', '0');
 
-DELETE FROM dbscripts_on_gossip WHERE id=8977;
+DELETE FROM dbscripts_on_gossip WHERE id IN(8977,8953);
 INSERT INTO dbscripts_on_gossip(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, condition_id, comments) VALUES
 ('8977', '0', '0', '15', '44368', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast Brewfest - Daily - Relay Race Accept - QUEST - DND'),
 ('8977', '0', '0', '15', '44069', '0', '0', '0', '0', '6', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Cast See Supplier Mark');
