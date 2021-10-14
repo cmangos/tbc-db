@@ -1,9 +1,8 @@
 /* DBScriptData
 DBName: Uldaman
 DBScriptName: instance_uldaman
-DB%Complete: 75
+DB%Complete: 81
 DBComment:
-* pooling for minerals seems wrong, only 1 object is in pool #1
 EndDBScriptData */
 
 SET @CGUID := 7000000; -- creatures
@@ -506,19 +505,40 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 1735, 70, -179.772, 95.0592, -48.8041, 2.77507, 0, 0, 0.983255, 0.182237, 7200, 7200, 100, 1), -- Iron Deposit
-(@OGUID+2, 1735, 70, -23.9125, 326.636, -44.5684, -1.97222, 0, 0, -0.833885, 0.551938, 7200, 7200, 100, 1), -- Iron Deposit
-(@OGUID+3, 2040, 70, 26.3165, 209.089, -29.7314, 2.68781, 0, 0, 0.97437, 0.22495, 7200, 7200, 100, 1), -- Mithril Deposit
-(@OGUID+4, 2040, 70, -360.646, 141.757, -48.4138, -0.174533, 0, 0, -0.0871558, 0.996195, 7200, 7200, 100, 1), -- Mithril Deposit
--- 5-33
-(@OGUID+34, 3707, 70, -101.293, 329.776, -47.5239, -2.61799, 0, 0, 0.965926, -0.258819, 180, 180, 100, 1), -- Food Crate
-(@OGUID+35, 3707, 70, -247.885, 236.192, -46.4701, -0.10472, 0, 0, 0.052336, -0.99863, 180, 180, 100, 1), -- Food Crate
-(@OGUID+36, 3707, 70, -117.284, 235.933, -51.811, -0.401426, 0, 0, 0.199368, -0.979925, 180, 180, 100, 1), -- Food Crate
-(@OGUID+37, 3707, 70, 54.6041, 348.621, -40.4473, -3.10669, 0, 0, 0.999848, -0.017452, 180, 180, 100, 1), -- Food Crate
-(@OGUID+38, 3707, 70, 37.0305, 227.32, -32.1131, -2.67035, 0, 0, 0.97237, -0.233445, 180, 180, 100, 1), -- Food Crate
-(@OGUID+39, 19903, 70, -119.96, 269.695, -45.7821, -2.11185, 0, 0, 0.870356, -0.492423, 1800, 1800, 100, 1), -- Indurium Mineral Vein
-(@OGUID+40, 19903, 70, -143.01, 210.889, -46.4858, -0.383972, 0, 0, 0.190809, -0.981627, 1800, 1800, 100, 1), -- Indurium Mineral Vein
-(@OGUID+41, 19903, 70, -14.075, 300.25, -46.1978, -0.907571, 0, 0, 0.438371, -0.898794, 1800, 1800, 100, 1), -- Indurium Mineral Vein
+(@OGUID+1, 1734, 70, -60.9316, 199.971, -47.0473, 4.39823, 0, 0, -0.809016, 0.587786, 86400, 86400, 100, 1), -- Gold Vein
+-- 1734
+(@OGUID+5, 1735, 70, -179.772, 95.0592, -48.8041, 2.77507, 0, 0, 0.983255, 0.182237, 86400, 86400, 100, 1), -- Iron Deposit
+(@OGUID+6, 1735, 70, -23.9125, 326.636, -44.5684, -1.97222, 0, 0, -0.833885, 0.551938, 86400, 86400, 100, 1), -- Iron Deposit
+(@OGUID+7, 1735, 70, -258.41, 252.235, -49.326, 6.10865, 0, 0, -0.0871553, 0.996195, 86400, 86400, 100, 1), -- Iron Deposit
+(@OGUID+8, 1735, 70, 70.1267, 443.334, -41.0286, 0.331611, 0, 0, 0.165047, 0.986286, 86400, 86400, 100, 1), -- Iron Deposit
+(@OGUID+9, 1735, 70, -143.264, 251.363, -47.2695, 6.19592, 0, 0, -0.0436192, 0.999048, 86400, 86400, 100, 1), -- Iron Deposit
+(@OGUID+10, 1735, 70, -0.98445, 400.035, -45.7788, 2.80997, 0, 0, 0.986285, 0.16505, 86400, 86400, 100, 1), -- Iron Deposit
+-- 1735
+(@OGUID+15, 2040, 70, 26.3165, 209.089, -29.7314, 2.68781, 0, 0, 0.97437, 0.22495, 86400, 86400, 100, 1), -- Mithril Deposit
+(@OGUID+16, 2040, 70, -360.646, 141.757, -48.4138, -0.174533, 0, 0, -0.0871558, 0.996195, 86400, 86400, 100, 1), -- Mithril Deposit
+(@OGUID+17, 2040, 70, -136.189, 281.179, -52.1819, 2.68781, 0, 0, 0.97437, 0.224951, 86400, 86400, 100, 1), -- Mithril Deposit
+(@OGUID+18, 2040, 70, -259.822, 272.068, -50.1133, 5.61996, 0, 0, -0.325567, 0.945519, 86400, 86400, 100, 1), -- Mithril Deposit
+-- 2040
+(@OGUID+21, 19903, 70, -119.96, 269.695, -45.7821, -2.11185, 0, 0, 0.870356, -0.492423, 86400, 86400, 100, 1), -- Indurium Mineral Vein
+(@OGUID+22, 19903, 70, -143.01, 210.889, -46.4858, -0.383972, 0, 0, 0.190809, -0.981627, 86400, 86400, 100, 1), -- Indurium Mineral Vein
+(@OGUID+23, 19903, 70, -14.075, 300.25, -46.1978, -0.907571, 0, 0, 0.438371, -0.898794, 86400, 86400, 100, 1), -- Indurium Mineral Vein
+(@OGUID+24, 19903, 70, -248.926, 220.846, -46.6074, 5.89921, 0, 0, -0.190808, 0.981627, 86400, 86400, 100, 1), -- Indurium Mineral Vein
+(@OGUID+25, 19903, 70, -89.2856, 190.29, -48.1824, 2.67035, 0, 0, 0.972369, 0.233448, 86400, 86400, 100, 1), -- Indurium Mineral Vein
+(@OGUID+26, 19903, 70, -133.767, 358.587, -42.5509, 4.13643, 0, 0, -0.878817, 0.47716, 86400, 86400, 100, 1), -- Indurium Mineral Vein
+(@OGUID+27, 19903, 70, -52.2933, 271.083, -46.7186, 5.60251, 0, 0, -0.333807, 0.942641, 86400, 86400, 100, 1), -- Indurium Mineral Vein
+-- 19903 - 3707
+(@OGUID+30, 3707, 70, -101.293, 329.776, -47.5239, -2.61799, 0, 0, 0.965926, -0.258819, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+31, 3707, 70, -247.885, 236.192, -46.4701, -0.10472, 0, 0, 0.052336, -0.99863, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+32, 3707, 70, -117.284, 235.933, -51.811, -0.401426, 0, 0, 0.199368, -0.979925, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+33, 3707, 70, 54.6041, 348.621, -40.4473, -3.10669, 0, 0, 0.999848, -0.017452, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+34, 3707, 70, 37.0305, 227.32, -32.1131, -2.67035, 0, 0, 0.97237, -0.233445, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+35, 3707, 70, -346.995, 105.85, -53.3132, 4.20625, 0, 0, -0.861628, 0.507539, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+36, 3707, 70, -150.741, 215.673, -46.1308, 0.383971, 0, 0, 0.190808, 0.981627, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+37, 3707, 70, -3.95842, 279.67, -48.8676, 0, 0, 0, 0, 1, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+38, 3707, 70, -77.3072, 200.739, -49.7122, 1.39626, 0, 0, 0.642787, 0.766045, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+39, 3707, 70, 7.23665, 389.231, -43.7525, 1.71042, 0, 0, 0.754709, 0.656059, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+40, 3707, 70, -208.706, 224.748, -46.9613, 2.46091, 0, 0, 0.942641, 0.333808, 86400, 86400, 100, 1), -- Food Crate
+(@OGUID+41, 3707, 70, 12.4986, 217.998, -31.1776, 1.18682, 0, 0, 0.559193, 0.829038, 86400, 86400, 100, 1), -- Food Crate
 (@OGUID+42, 48403, 70, 29.6978, 372.833, -40.6615, 3.14159, 0, 0, 1, 0, 3600, 3600, 100, 1), -- Short Wooden Seat
 (@OGUID+43, 48405, 70, -215.523, 7.14708, -48.1857, 0.071304, -0.022407, -0.016676, 0.035266, 0.998988, 3600, 3600, 100, 1), -- Short Wooden Seat
 (@OGUID+44, 48406, 70, -247.478, -7.58863, -48.3038, -0.797098, 0.08282, 0.05369, -0.390378, 0.915349, 3600, 3600, 100, 1), -- Short Wooden Seat
@@ -644,19 +664,19 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+164, 124371, 70, -234.688, 239.619, -50.9083, 3.14159, 0, 0, 1, 0, 3600, 3600, 100, 1), -- Keystone
 (@OGUID+165, 124372, 70, -234.567, 294.81, -47.596, -1.5708, 0, 0, -0.707107, 0.707107, 3600, 3600, 100, 1), -- Seal of Khaz'Mul
 (@OGUID+166, 125477, 70, -350.81, 82.6264, -51.2318, 1.93731, 0, 0, 0.824126, 0.566406, 300, 300, 100, 1), -- Conspicuous Urn
-(@OGUID+167, 126049, 70, -203.678, 214.625, -46.4376, 2.23402, 0, 0, 0.898794, 0.438371, 300, 300, 100, 1), -- Magenta Cap Clusters
-(@OGUID+168, 126049, 70, 57.257, 322.762, -41.8984, -0.418879, 0, 0, 0.207912, -0.978148, 300, 300, 100, 1), -- Magenta Cap Clusters
-(@OGUID+169, 126049, 70, 1.60166, 236.356, -32.3796, -2.63545, 0, 0, 0.968148, -0.25038, 300, 300, 100, 1), -- Magenta Cap Clusters
-(@OGUID+170, 126049, 70, -95.1379, 337.393, -47.0908, -1.43117, 0, 0, 0.656059, -0.75471, 300, 300, 100, 1), -- Magenta Cap Clusters
-(@OGUID+171, 126049, 70, -112.397, 230.632, -52.1536, -0.471239, 0, 0, 0.233445, -0.97237, 300, 300, 100, 1), -- Magenta Cap Clusters
-(@OGUID+172, 126049, 70, -129.112, 384.45, -39.9942, -2.04204, 0, 0, 0.85264, -0.522498, 300, 300, 100, 1), -- Magenta Cap Clusters
--- 173-178
-(@OGUID+179, 128293, 70, -358.599, 100.755, -53.1931, 1.0472, 0, 0, 0.5, 0.866025, 300, 300, 100, 1), -- Magenta Cap Clusters
-(@OGUID+180, 128293, 70, -164.64, 301.678, -53.1613, -1.71042, 0, 0, 0.75471, -0.656059, 300, 300, 100, 1), -- Magenta Cap Clusters
+(@OGUID+167, 0, 70, -203.678, 214.626, -46.4375, 2.23402, 0, 0, 0.898793, 0.438373, 300, 600, 100, 1), -- Magenta Cap Clusters
+(@OGUID+168, 0, 70, 57.257, 322.762, -41.8984, 5.86431, 0, 0, -0.207912, 0.978148, 300, 600, 100, 1), -- Magenta Cap Clusters
+(@OGUID+169, 0, 70, 1.60166, 236.356, -32.3796, 3.64774, 0, 0, -0.968147, 0.250381, 300, 600, 100, 1), -- Magenta Cap Clusters
+(@OGUID+170, 0, 70, -95.1379, 337.393, -47.0908, 4.85202, 0, 0, -0.656058, 0.75471, 300, 600, 100, 1), -- Magenta Cap Clusters
+(@OGUID+171, 0, 70, -112.397, 230.632, -52.1536, 5.81195, 0, 0, -0.233445, 0.97237, 300, 600, 100, 1), -- Magenta Cap Clusters
+(@OGUID+172, 0, 70, -129.112, 384.45, -39.9942, 4.24115, 0, 0, -0.85264, 0.522499, 300, 600, 100, 1), -- Magenta Cap Clusters
+(@OGUID+173, 0, 70, -358.599, 100.756, -53.1931, 1.0472, 0, 0, 0.5, 0.866025, 300, 600, 100, 1), -- Magenta Cap Clusters
+(@OGUID+174, 0, 70, -164.64, 301.678, -53.1614, 4.57276, 0, 0, -0.754709, 0.656059, 300, 600, 100, 1), -- Magenta Cap Clusters
+-- 175-180
 (@OGUID+181, 130511, 70, 104.845, 272.453, -26.5322, -2.67035, 0, 0, 0.97237, -0.233445, 3600, 3600, 100, 1), -- Altar of The Keepers
 (@OGUID+182, 131474, 70, 161.826, 298.283, -51.3698, -0.174533, 0, 0, -0.087156, 0.996195, 3600, 3600, 100, 1), -- The Discs of Norgannon
-(@OGUID+183, 131978, 70, -150.166, 201.764, -49.9121, -2.98451, 0, 0, 0.996917, -0.078459, 3600, 3600, 100, 1), -- Large Mithril Bound Chest
-(@OGUID+184, 131978, 70, -73.5079, 265.315, -47.6291, 2.82743, 0, 0, 0.987688, 0.156434, 3600, 3600, 100, 1), -- Large Mithril Bound Chest
+(@OGUID+183, 131978, 70, -150.166, 201.764, -49.9121, -2.98451, 0, 0, 0.996917, -0.078459, 86400, 86400, 100, 1), -- Large Mithril Bound Chest
+(@OGUID+184, 131978, 70, -73.5079, 265.315, -47.6291, 2.82743, 0, 0, 0.987688, 0.156434, 86400, 86400, 100, 1), -- Large Mithril Bound Chest
 (@OGUID+185, 133234, 70, 96.4808, 269.052, -52.1487, -2.70526, 0, 0, 0.976296, -0.21644, 3600, 3600, 100, 1), -- Altar of Archaedas
 (@OGUID+186, 141869, 70, 70.701, 256.905, -52.0584, -2.70526, 0, 0, 0.976296, -0.21644, 3600, 3600, 100, 1), -- Temple Door
 (@OGUID+187, 141979, 70, 153.39, 289.091, -52.2262, 2.68781, 0, 0, 0, 0, -14400, -14400, 255, 1), -- Ancient Treasure
@@ -664,14 +684,15 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+189, 142488, 70, 150.495, 305.928, -52.2261, 0.436333, 0, 0, 0.21644, 0.976296, 3600, 3600, 100, 1), -- Doodad_G_HologramTrogg01
 (@OGUID+190, 170353, 70, 150.495, 305.928, -52.2261, 0.436333, 0, 0, 0.21644, 0.976296, 3600, 3600, 100, 1); -- Doodad_G_HologramDwarf01
 
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 126049 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+167 AND @OGUID+174; -- Magenta Cap Clusters
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 128293 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+167 AND @OGUID+174; -- Magenta Cap Clusters
+
 -- ======
 -- EVENTS
 -- ======
 
 -- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
-
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
-
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
 -- =======
@@ -681,21 +702,48 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 1, 'Uldaman - Mineral nodes - subzone 197'),
-(@PGUID+2, 1, 'Uldaman - Mineral nodes - subzone 198'),
-(@PGUID+21, 1, 'Uldaman - Master Chest Pool');
+(@PGUID+51, 4, 'Uldaman - Mineral Pool'),
+(@PGUID+52, 3, 'Uldaman - Indurium Mineral Vein (19903)'),
+(@PGUID+61, 5, 'Uldaman - Food Crate (3707)'),
+(@PGUID+91, 1, 'Uldaman - Master Chest Pool');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+4, @PGUID+1, 0, 'Uldaman - Mithril Deposit - subzone 197'),
-(@OGUID+1, @PGUID+2, 0, 'Uldaman - Iron Deposit - subzone 198'),
-(@OGUID+2, @PGUID+2, 0, 'Uldaman - Iron Deposit - subzone 198'),
-(@OGUID+3, @PGUID+2, 0, 'Uldaman - Mithril Deposit - subzone 198'),
-(@OGUID+183, @PGUID+21, 0, 'Uldaman - Large Mithril Bound Chest (131978)'),
-(@OGUID+184, @PGUID+21, 0, 'Uldaman - Large Mithril Bound Chest (131978)');
+(@OGUID+1, @PGUID+51, 0, 'Uldaman - Gold Vein (1734)'),
+(@OGUID+5, @PGUID+51, 0, 'Uldaman - Iron Deposit (1735)'),
+(@OGUID+6, @PGUID+51, 0, 'Uldaman - Iron Deposit (1735)'),
+(@OGUID+7, @PGUID+51, 0, 'Uldaman - Iron Deposit (1735)'),
+(@OGUID+8, @PGUID+51, 0, 'Uldaman - Iron Deposit (1735)'),
+(@OGUID+9, @PGUID+51, 0, 'Uldaman - Iron Deposit (1735)'),
+(@OGUID+10, @PGUID+51, 0, 'Uldaman - Iron Deposit (1735)'),
+(@OGUID+15, @PGUID+51, 0, 'Uldaman - Mithril Deposit (2040)'),
+(@OGUID+16, @PGUID+51, 0, 'Uldaman - Mithril Deposit (2040)'),
+(@OGUID+17, @PGUID+51, 0, 'Uldaman - Mithril Deposit (2040)'),
+(@OGUID+18, @PGUID+51, 0, 'Uldaman - Mithril Deposit (2040)'),
+(@OGUID+21, @PGUID+52, 0, 'Uldaman - Indurium Mineral Vein (19903)'),
+(@OGUID+22, @PGUID+52, 0, 'Uldaman - Indurium Mineral Vein (19903)'),
+(@OGUID+23, @PGUID+52, 0, 'Uldaman - Indurium Mineral Vein (19903)'),
+(@OGUID+24, @PGUID+52, 0, 'Uldaman - Indurium Mineral Vein (19903)'),
+(@OGUID+25, @PGUID+52, 0, 'Uldaman - Indurium Mineral Vein (19903)'),
+(@OGUID+26, @PGUID+52, 0, 'Uldaman - Indurium Mineral Vein (19903)'),
+(@OGUID+27, @PGUID+52, 0, 'Uldaman - Indurium Mineral Vein (19903)'),
+(@OGUID+30, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+31, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+32, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+33, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+34, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+35, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+36, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+37, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+38, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+39, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+40, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+41, @PGUID+61, 0, 'Uldaman - Food Crate (3707)'),
+(@OGUID+183, @PGUID+91, 0, 'Uldaman - Large Mithril Bound Chest (131978)'),
+(@OGUID+184, @PGUID+91, 0, 'Uldaman - Large Mithril Bound Chest (131978)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
