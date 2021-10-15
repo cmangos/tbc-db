@@ -1,8 +1,9 @@
 /* DBScriptData
 DBName: Scarlet Monastery (Graveyard & Library & Armory & Cathedral)
 DBScriptName: instance_scarlet_monastery
-DB%Complete: 85
+DB%Complete: 86
 DBComment:
+* Find Chance for Kingsblood, Grave Moss Nodes 2:1?
 * Rare spawns in Graveyard should be pooled with the mob groups at their spawn location (should be more spawnlocations) and then be pooled together into masterpool to minimize spawnchance but have reduced respawntime - more research required
 EndDBScriptData */
 
@@ -490,65 +491,33 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+333, 6427, 189, 1814.89, 1417.88, 8.4461, 3.00822, 7200, 7200, 2, 0, 0, 1), -- Haunting Phantasm
 (@CGUID+334, 6427, 189, 1811.35, 1401.03, 8.52722, 2.98451, 7200, 7200, 2, 0, 0, 1), -- Haunting Phantasm
 (@CGUID+335, 6487, 189, 148.32, -428.692, 18.4864, 6.24828, 43200, 43200, 2, 1, 0, 2), -- Arcanist Doan
-(@CGUID+336, 6488, 189, 1756.17, 1345.45, 19.3719, 5.03576, 86400, 86400, 0, 0, 0, 0), -- Fallen Champion
-(@CGUID+337, 6489, 189, 1749.61, 1247.4, 18.1576, 0.051613, 86400, 86400, 0, 0, 0, 0), -- Ironspine
-(@CGUID+338, 6547, 189, 1757.23, 1146.14, 8.76122, 0.785398, 7200, 7200, 0, 0, 0, 0), -- Suffering Victim
-(@CGUID+339, 6547, 189, 1794.24, 1144.93, 8.71928, 5.63741, 7200, 7200, 0, 0, 0, 0), -- Suffering Victim
-(@CGUID+340, 6490, 189, 1817.84, 1352.25, 18.417, 3.70824, 86400, 86400, 0, 0, 0, 0), -- Azshir the Sleepless
-(@CGUID+341, 4293, 189, 1805.176, 1167.855, 6.820, 0.162434, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
-(@CGUID+342, 4293, 189, 1782.416, 1118.755, 7.490, 5.97183, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
-(@CGUID+343, 4293, 189, 1759.67, 1146.85, 7.49036, 3.19674, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
-(@CGUID+344, 4293, 189, 1788.68, 1145.46, 7.49084, 6.10664, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
+(@CGUID+336, 6547, 189, 1757.23, 1146.14, 8.76122, 0.785398, 7200, 7200, 0, 0, 0, 0), -- Suffering Victim
+(@CGUID+337, 6547, 189, 1794.24, 1144.93, 8.71928, 5.63741, 7200, 7200, 0, 0, 0, 0), -- Suffering Victim
+(@CGUID+338, 4293, 189, 1805.176, 1167.855, 6.820, 0.162434, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
+(@CGUID+339, 4293, 189, 1782.416, 1118.755, 7.490, 5.97183, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
+(@CGUID+340, 4293, 189, 1759.67, 1146.85, 7.49036, 3.19674, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
+(@CGUID+341, 4293, 189, 1788.68, 1145.46, 7.49084, 6.10664, 7200, 7200, 0, 0, 0, 0), -- Scarlet Scryer
+(@CGUID+342, 0, 189, 1749.6, 1309.9, 18.525, 3.89208, 86400, 86400, 3, 0, 0, 1), -- Fallen Champion, Azshir the Sleepless, Ironspine
+(@CGUID+343, 0, 189, 1837.61, 1314.56, 19.0921, 1.13864, 86400, 86400, 3, 0, 0, 1), -- Fallen Champion, Azshir the Sleepless, Ironspine
+(@CGUID+344, 0, 189, 1848.62, 1340.43, 18.631, 4.55218, 86400, 86400, 3, 0, 0, 1), -- Fallen Champion, Azshir the Sleepless, Ironspine
+(@CGUID+345, 0, 189, 1755.72, 1347.81, 19.4921, 5.04108, 86400, 86400, 3, 0, 0, 1), -- Fallen Champion, Azshir the Sleepless, Ironspine
+(@CGUID+346, 0, 189, 1744.47, 1405.73, 21.7225, 1.34533, 86400, 86400, 3, 0, 0, 1), -- Fallen Champion, Azshir the Sleepless, Ironspine
+(@CGUID+347, 0, 189, 1812.3, 1418.14, 8.49211, 5.07929, 86400, 86400, 3, 0, 0, 1); -- Fallen Champion, Azshir the Sleepless, Ironspine
 
 -- TBC+
+INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+401, 23758, 189, 1767.034, 1348.685, 17.542156, 6.267, 7200, 7200, 0, 0, 0, 0); -- Headless Horseman - Earth Explosion Bunny - extrapolated sniff pos from cata+ SM
+
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) SELECT `guid`, 6488 FROM `creature` WHERE `guid` BETWEEN @CGUID+342 AND @CGUID+347; -- Fallen Champion
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) SELECT `guid`, 6489 FROM `creature` WHERE `guid` BETWEEN @CGUID+342 AND @CGUID+347; -- Ironspine
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) SELECT `guid`, 6490 FROM `creature` WHERE `guid` BETWEEN @CGUID+342 AND @CGUID+347; -- Azshir the Sleepless
 
 -- ===========
 -- GAMEOBJECTS
 -- ===========
 
-INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
-(@OGUID+111, 75296), (@OGUID+111, 75299), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+112, 75296), (@OGUID+112, 75299), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+113, 75296), (@OGUID+113, 75299), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+114, 75296), (@OGUID+114, 75299), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+121, 75296), (@OGUID+121, 75299), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+122, 75296), (@OGUID+122, 75299), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+123, 75296), (@OGUID+123, 75299), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+124, 75296), (@OGUID+124, 75299), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+131, 75297), (@OGUID+131, 75300), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+132, 75297), (@OGUID+132, 75300), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+133, 3703), (@OGUID+133, 3704), -- Armor Crate, Weapon Crate
-(@OGUID+134, 3703), (@OGUID+134, 3704), -- Armor Crate, Weapon Crate
-(@OGUID+135, 3703), (@OGUID+135, 3704), -- Armor Crate, Weapon Crate
-(@OGUID+136, 3703), (@OGUID+136, 3704), -- Armor Crate, Weapon Crate
-(@OGUID+137, 3703), (@OGUID+137, 3704), -- Armor Crate, Weapon Crate
-(@OGUID+138, 3703), (@OGUID+138, 3704); -- Armor Crate, Weapon Crate
-
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 1624, 189, 1776.21, 1224.47, 17.5028, 1.6057, 0, 0, 0.719339, 0.694659, 86400, 86400, 100, 1), -- Kingsblood
-(@OGUID+2, 1624, 189, 1746.37, 1410.68, 22.1887, 0.226892, 0, 0, 0.113203, 0.993572, 86400, 86400, 100, 1), -- Kingsblood
-(@OGUID+3, 1624, 189, 1739.89, 1377.57, 17.521, -1.06465, 0, 0, -0.507538, 0.861629, 86400, 86400, 100, 1), -- Kingsblood
-(@OGUID+4, 1628, 189, 1756.58, 1345.03, 19.7123, 0.174533, 0, 0, 0.0871558, 0.996195, 86400, 86400, 100, 1), -- Grave Moss
-(@OGUID+5, 1628, 189, 1796.03, 1417.5, 14.4893, -2.68781, 0, 0, -0.97437, 0.22495, 86400, 86400, 100, 1), -- Grave Moss (1624 too)
-(@OGUID+6, 2041, 189, 997.603, 1402.26, 27.1362, 0.401426, 0, 0, 0.199368, 0.979925, 86400, 86400, 100, 1), -- Liferoot
-(@OGUID+7, 2041, 189, 120.013, -263.813, 18.5465, -2.47837, 0, 0, -0.945519, 0.325567, 86400, 86400, 100, 1), -- Liferoot
-(@OGUID+8, 2042, 189, 191.442, -254.219, 18.7887, 2.00713, 0, 0, 0.843392, 0.537299, 86400, 86400, 100, 1), -- Fadeleaf
-(@OGUID+9, 2042, 189, 1651.94, -371.805, 18.0233, 0.453786, 0, 0, 0.224951, 0.97437, 86400, 86400, 100, 1), -- Fadeleaf
-(@OGUID+10, 2042, 189, 1651.27, -346.265, 18.1489, -1.20428, 0, 0, -0.566407, 0.824125, 86400, 86400, 100, 1), -- Fadeleaf
-(@OGUID+11, 2042, 189, 166.831, -253.104, 19.0757, -0.593412, 0, 0, -0.292372, 0.956305, 86400, 86400, 100, 1), -- Fadeleaf
-(@OGUID+12, 2046, 189, 914.585, 1382.04, 18.0142, 0.645772, 0, 0, 0.317305, 0.948324, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+13, 2046, 189, 1003.95, 1362.73, 27.3063, 2.75762, 0, 0, 0.981627, 0.190809, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+14, 2046, 189, 944.069, 1421.18, 18.0233, 1.37881, 0, 0, 0.636078, 0.771625, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+15, 2046, 189, 1037.43, 1401.24, 27.3085, -0.261798, 0, 0, -0.130525, 0.991445, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+16, 1624, 189, 1775.33, 1288.49, 17.5497, 3.73501, 0, 0, -0.956305, 0.292372, 86400, 86400, 100, 1), -- Kingsblood
-(@OGUID+17, 1624, 189, 1818.8, 1241, 17.5499, 3.90954, 0, 0, -0.927183, 0.374608, 86400, 86400, 100, 1), -- Kingsblood
-(@OGUID+18, 1624, 189, 1836.24, 1408.23, 21.7179, 2.51327, 0, 0, 0.951056, 0.309017, 86400, 86400, 100, 1), -- Kingsblood
-(@OGUID+19, 2041, 189, 938.935, 1398.88, 18.34, 2.42601, 0, 0, 0.936672, 0.350207, 86400, 86400, 100, 1), -- Liferoot
-(@OGUID+20, 2042, 189, 187.977, -277.975, 18.7038, 5.34071, 0, 0, -0.45399, 0.891007, 86400, 86400, 100, 1), -- Fadeleaf
-(@OGUID+21, 2046, 189, 1034.54, 1368.88, 27.3046, 2.23402, 0, 0, 0.898793, 0.438373, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+22, 2046, 189, 937.827, 1377.36, 18.0233, 4.71239, 0, 0, -0.707107, 0.707107, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+23, 2046, 189, 1034.61, 1432.18, 27.3034, 6.10865, 0, 0, -0.0871553, 0.996195, 86400, 86400, 100, 1), -- Goldthorn
+-- 1-23
 (@OGUID+24, 19283, 189, 277.481, -425.391, 20.0659, -1.69297, 0, 0, 0.748956, -0.66262, 300, 300, 100, 1), -- Compendium of the Fallen
 (@OGUID+25, 19284, 189, 281.39, -352.262, 20.4047, -0.610865, 0, 0, 0.300706, -0.953717, 50, 50, 100, 1), -- Mythology of the Titans
 (@OGUID+26, 20726, 189, 238.548, -307.686, 21.4263, 2.67035, 0, 0, 0.97237, 0.233445, 300, 300, 100, 1), -- Beginnings of the Undead Threat
@@ -636,36 +605,68 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+108, 176693, 189, 175.142, -437.204, 18.8796, -0.445059, 0, 0, -0.220697, 0.975342, 7200, 7200, 100, 1), -- Chair
 (@OGUID+109, 181191, 189, 1778.06, 1349.17, 18.249, -0.628317, 0, 0, 0, 1, 180, 180, 255, 1), -- Skullpile 01
 (@OGUID+110, 181191, 189, 1775.75, 1350.25, 18.2316, 2.75761, 0, 0, 0, 1, 180, 180, 255, 1), -- Skullpile 01
+-- Scarlet Monastery Graveyard 111 - 120
 -- Chamber of Atonement
 (@OGUID+111, 0, 189, 1762.11, 1153.56, 7.49028, -1.55334, 0, 0, 0.700909, -0.71325, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
 -- Forlorn Cloister & Honor's Tomb
-(@OGUID+112, 0, 189, 1748.22, 1252.28, 18.1573, -0.575957, 0, 0, -0.284015, 0.95882, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+113, 0, 189, 1847.77, 1276.34, 18.1573, 2.80998, 0, 0, 0.986286, 0.165048, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+114, 0, 189, 1788.14, 1394.66, -0.455138, 2.63544, 0, 0, 0.968147, 0.250383, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
--- 115 - 120 Scarlet Monastery Graveyard
--- Scarlet Monastery
-(@OGUID+121, 0, 189, 223.898, -292.728, 19.1996, 2.51327, 0, 0, 0.951057, 0.309017, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+122, 0, 189, 277.401, -365.671, 20.3969, 3.05433, 0, 0, 0.999048, 0.043619, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
-(@OGUID+123, 0, 189, 278.514, -401.431, 20.3957, 3.03684, 0, 0, 0.998629, 0.0523524, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+112, 0, 189, 1748.22, 1252.28, 18.1573, 5.70723, 0, 0, -0.284015, 0.95882, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+113, 0, 189, 1847.77, 1276.34, 18.1573, 2.80997, 0, 0, 0.986285, 0.16505, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+114, 0, 189, 1788.14, 1394.66, -0.455138, 2.63544, 0, 0, 0.968147, 0.250381, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+-- Scarlet Monastery Library 121 - 130
+(@OGUID+121, 0, 189, 223.898, -292.728, 19.1996, 2.51327, 0, 0, 0.951056, 0.309017, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+122, 0, 189, 277.401, -365.671, 20.3969, 3.05433, 0, 0, 0.999048, 0.0436193, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+123, 0, 189, 278.514, -401.431, 20.3957, 3.03684, 0, 0, 0.998629, 0.0523532, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
 -- Athenaeum
 (@OGUID+124, 0, 189, 175.541, -418.852, 18.868, 6.21337, 0, 0, -0.0348988, 0.999391, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
--- 125 - 130 Scarlet Monastery Library
+-- Scarlet Monastery Armory 131 - 140
 -- Training Grounds
-(@OGUID+131, 0, 189, 1684.87, -345.412, 18.0233, 0.034907, 0, 0, 0.017452, 0.999848, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+131, 0, 189, 1684.86, -345.412, 18.0233, 0.0349062, 0, 0, 0.0174522, 0.999848, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
 -- Footman's Armory
-(@OGUID+132, 0, 189, 1743.48, -407.254, 8.01026, 0.017452, 0, 0, 0.00872589, 0.999962, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+132, 0, 189, 1743.48, -407.254, 8.01026, 0.0174525, 0, 0, 0.00872612, 0.999962, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
 (@OGUID+133, 0, 189, 1771.76, -377.259, 8.01092, -1.51844, 0, 0, 0.688354, -0.725374, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
 (@OGUID+134, 0, 189, 1745.17, -357.994, 8.01148, -1.85005, 0, 0, 0.798635, -0.601815, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
 (@OGUID+135, 0, 189, 1795.07, -431.977, 8.01001, 0, 0, 0, 0, 1, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
 (@OGUID+136, 0, 189, 1803.25, -398.513, 8.01243, 3.12412, 0, 0, 0.999962, 0.00873464, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
 (@OGUID+137, 0, 189, 1743.97, -389.967, 8.00978, 0.0349062, 0, 0, 0.0174522, 0.999848, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
 (@OGUID+138, 0, 189, 1782.57, -414.356, 8.01169, 1.5708, 0, 0, 0.707107, 0.707107, 86400, 86400, 100, 1), -- Armor Crate, Weapon Crate
--- 139 - 140 Scarlet Monastery Armory
-(@OGUID+141, 2046, 189, 1008.59, 1436.93, 27.3057, 4.62512, 0, 0, -0.737277, 0.675591, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+142, 2046, 189, 916.203, 1420.49, 17.9942, 0.244346, 0, 0, 0.121869, 0.992546, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+143, 2046, 189, 914.922, 1401.31, 18.0233, 1.15192, 0, 0, 0.544639, 0.838671, 86400, 86400, 100, 1), -- Goldthorn
+-- Graveyard Herbs - 3
+(@OGUID+151, 0, 189, 1776.21, 1224.47, 17.5028, 1.6057, 0, 0, 0.719339, 0.694659, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+152, 0, 189, 1818.8, 1241, 17.5499, 3.90954, 0, 0, -0.927183, 0.374608, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+153, 0, 189, 1813.73, 1274.33, 17.622, 4.41568, 0, 0, -0.803857, 0.594823, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+154, 0, 189, 1775.33, 1288.49, 17.5497, 3.73501, 0, 0, -0.956305, 0.292372, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+155, 0, 189, 1833.85, 1318.35, 19.6896, 2.49582, 0, 0, 0.948323, 0.317306, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+156, 0, 189, 1840.29, 1347.77, 18.0907, 0, 0, 0, 0, 1, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+157, 0, 189, 1756.58, 1345.03, 19.7123, 0.174532, 0, 0, 0.0871553, 0.996195, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+158, 0, 189, 1839.61, 1377.49, 18.6989, 4.29351, 0, 0, -0.83867, 0.54464, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+159, 0, 189, 1739.89, 1377.57, 17.521, 5.21854, 0, 0, -0.507538, 0.861629, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+160, 0, 189, 1746.37, 1410.68, 22.1887, 0.226893, 0, 0, 0.113203, 0.993572, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+161, 0, 189, 1836.24, 1408.23, 21.7179, 2.51327, 0, 0, 0.951056, 0.309017, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+(@OGUID+162, 0, 189, 1796.03, 1417.5, 14.4893, 3.59538, 0, 0, -0.97437, 0.224951, 86400, 86400, 100, 1), -- Kingsblood, Grave Moss
+-- Library Herbs - 2
+(@OGUID+165, 2041, 189, 120.013, -263.813, 18.5465, -2.47837, 0, 0, -0.945519, 0.325567, 86400, 86400, 100, 1), -- Liferoot
+(@OGUID+166, 2042, 189, 191.442, -254.219, 18.7887, 2.00713, 0, 0, 0.843392, 0.537299, 86400, 86400, 100, 1), -- Fadeleaf
+(@OGUID+167, 2042, 189, 166.831, -253.104, 19.0757, -0.593412, 0, 0, -0.292372, 0.956305, 86400, 86400, 100, 1), -- Fadeleaf
+(@OGUID+168, 2042, 189, 187.977, -277.975, 18.7038, 5.34071, 0, 0, -0.45399, 0.891007, 86400, 86400, 100, 1), -- Fadeleaf
+-- Armory Herbs - 1
+(@OGUID+170, 2042, 189, 1651.94, -371.805, 18.0233, 0.453786, 0, 0, 0.224951, 0.97437, 86400, 86400, 100, 1), -- Fadeleaf
+(@OGUID+171, 2042, 189, 1651.27, -346.265, 18.1489, -1.20428, 0, 0, -0.566407, 0.824125, 86400, 86400, 100, 1), -- Fadeleaf
+(@OGUID+172, 2042, 189, 1701.49, -346.695, 18.0501, 1.16937, 0, 0, 0.551936, 0.833886, 86400, 86400, 100, 1), -- Fadeleaf
+-- Cathedral Herbs - 3
+(@OGUID+175, 2041, 189, 938.935, 1398.88, 18.34, 2.42601, 0, 0, 0.936672, 0.350207, 86400, 86400, 100, 1), -- Liferoot
+(@OGUID+176, 2041, 189, 997.603, 1402.26, 27.1362, 0.401426, 0, 0, 0.199368, 0.979925, 86400, 86400, 100, 1), -- Liferoot
+(@OGUID+177, 2046, 189, 914.585, 1382.04, 18.0142, 0.645772, 0, 0, 0.317305, 0.948324, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+178, 2046, 189, 914.922, 1401.31, 18.0233, 1.15192, 0, 0, 0.544639, 0.838671, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+179, 2046, 189, 916.203, 1420.49, 17.9942, 0.244346, 0, 0, 0.121869, 0.992546, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+180, 2046, 189, 937.827, 1377.36, 18.0233, 4.71239, 0, 0, -0.707107, 0.707107, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+181, 2046, 189, 944.069, 1421.18, 18.0233, 1.37881, 0, 0, 0.636078, 0.771625, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+182, 2046, 189, 1003.95, 1362.73, 27.3063, 2.75762, 0, 0, 0.981627, 0.190809, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+183, 2046, 189, 1008.59, 1436.93, 27.3057, 4.62512, 0, 0, -0.737277, 0.675591, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+184, 2046, 189, 1034.54, 1368.88, 27.3046, 2.23402, 0, 0, 0.898793, 0.438373, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+185, 2046, 189, 1034.61, 1432.18, 27.3034, 6.10865, 0, 0, -0.0871553, 0.996195, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+186, 2046, 189, 1037.43, 1401.24, 27.3085, -0.261798, 0, 0, -0.130525, 0.991445, 86400, 86400, 100, 1); -- Goldthorn
 
 -- TBC+
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+200, 186267, 189, 1776.27, 1348.74, 20.4116, 6.27281, 0, 0, 0, 0, 25, 25, 0, 1), -- Pumpkin Shrine
 (@OGUID+201, 186269, 189, 1774.87, 1347.73, 17.9662, -2.87979, 0, 0, 0.991445, -0.130526, 180, 180, 100, 1), -- Headless Horseman Candle
 (@OGUID+202, 186269, 189, 1774.77, 1349.65, 18.0742, 2.33874, 0, 0, 0.920505, 0.390731, 180, 180, 100, 1), -- Headless Horseman Candle
@@ -679,6 +680,26 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+210, 186328, 189, 1777.72, 1349.6, 18.2638, 0.575959, 0, 0, 0.284015, 0.95882, 180, 180, 100, 1), -- Skull 01
 (@OGUID+211, 186328, 189, 1775.78, 1346.66, 18.0012, -1.55334, 0, 0, 0.700909, -0.71325, 180, 180, 100, 1), -- Skull 01
 (@OGUID+212, 186328, 189, 1777.65, 1347.4, 18.1198, 0.017453, 0, 0, 0.008727, 0.999962, 180, 180, 100, 1); -- Skull 01
+
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 1624 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+151 AND @OGUID+162; -- Kingsblood
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 1628 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+151 AND @OGUID+162; -- Grave Moss
+INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
+(@OGUID+111, 75296), (@OGUID+111, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+112, 75296), (@OGUID+112, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+113, 75296), (@OGUID+113, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+114, 75296), (@OGUID+114, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+121, 75296), (@OGUID+121, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+122, 75296), (@OGUID+122, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+123, 75296), (@OGUID+123, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+124, 75296), (@OGUID+124, 75299), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+131, 75297), (@OGUID+131, 75300), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+132, 75297), (@OGUID+132, 75300), -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+133, 3703), (@OGUID+133, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+134, 3703), (@OGUID+134, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+135, 3703), (@OGUID+135, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+136, 3703), (@OGUID+136, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+137, 3703), (@OGUID+137, 3704), -- Armor Crate, Weapon Crate
+(@OGUID+138, 3703), (@OGUID+138, 3704); -- Armor Crate, Weapon Crate
 
 -- ======
 -- EVENTS
@@ -719,7 +740,7 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Scarlet Monastery Graveyard - Rare Spawn'),
 (@PGUID+51, 3, 'Scarlet Monastery Graveyard - Master Herb Pool'), -- gameobject
-(@PGUID+52, 1, 'Scarlet Monastery Library - Master Herb Pool'),
+(@PGUID+52, 2, 'Scarlet Monastery Library - Master Herb Pool'),
 (@PGUID+53, 1, 'Scarlet Monastery Armory - Master Herb Pool'),
 (@PGUID+87, 1, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn Pool'),
 (@PGUID+88, 1, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn Pool'),
@@ -735,44 +756,49 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+98, 1, 'Scarlet Monastery Armory (Footman''s Armory) - Chest Pool'),
 (@PGUID+99, 2, 'Scarlet Monastery Armory - Weapon Crate & Armor Crate Pool');
 
--- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@CGUID+263, @PGUID+1, 70, 'Scarlet Monastery Graveyard Rare Spawn - (Substitute)'), -- this single spawn indicates that no rare spawn was active
+(@CGUID+342, @PGUID+1, 0, 'Scarlet Monastery Graveyard Rare Spawn - Fallen Champion, Ironspine, Azshir the Sleepless (6488,6489,6490)'),
+(@CGUID+343, @PGUID+1, 0, 'Scarlet Monastery Graveyard Rare Spawn - Fallen Champion, Ironspine, Azshir the Sleepless (6488,6489,6490)'),
+(@CGUID+344, @PGUID+1, 0, 'Scarlet Monastery Graveyard Rare Spawn - Fallen Champion, Ironspine, Azshir the Sleepless (6488,6489,6490)'),
+(@CGUID+345, @PGUID+1, 0, 'Scarlet Monastery Graveyard Rare Spawn - Fallen Champion, Ironspine, Azshir the Sleepless (6488,6489,6490)'),
+(@CGUID+346, @PGUID+1, 0, 'Scarlet Monastery Graveyard Rare Spawn - Fallen Champion, Ironspine, Azshir the Sleepless (6488,6489,6490)'),
+(@CGUID+347, @PGUID+1, 0, 'Scarlet Monastery Graveyard Rare Spawn - Fallen Champion, Ironspine, Azshir the Sleepless (6488,6489,6490)');
 
-INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-(6488, @PGUID+1, 0, 'Scarlet Monastery Graveyard - Fallen Champion (6488) - Rare Spawn'),
-(6489, @PGUID+1, 0, 'Scarlet Monastery Graveyard - Ironspine (6489) - Rare Spawn'),
-(6490, @PGUID+1, 0, 'Scarlet Monastery Graveyard - Azshir the Sleepless (6490) - Rare Spawn');
+-- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+1, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood (1624)'),
-(@OGUID+2, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood (1624)'),
-(@OGUID+3, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood (1624)'),
-(@OGUID+4, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Grave Moss (1628)'),
-(@OGUID+5, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Grave Moss (1628)'),
-(@OGUID+16, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood (1624)'),
-(@OGUID+17, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood (1624)'),
-(@OGUID+18, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood (1624)'),
-
-(@OGUID+7, @PGUID+52, 0, 'Scarlet Monastery Library - Liferoot (2041)'),
-(@OGUID+8, @PGUID+52, 0, 'Scarlet Monastery Library - Fadeleaf (2042)'),
-(@OGUID+11, @PGUID+52, 0, 'Scarlet Monastery Library - Fadeleaf (2042)'),
-(@OGUID+20, @PGUID+52, 0, 'Scarlet Monastery Library - Fadeleaf (2042)'),
-
-(@OGUID+9, @PGUID+53, 0, 'Scarlet Monastery Armory - Fadeleaf (2042)'),
-(@OGUID+10, @PGUID+53, 0, 'Scarlet Monastery Armory - Fadeleaf (2042)'),
-
-(@OGUID+12, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+14, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+22, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+142, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+143, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+13, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+15, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+21, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+23, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+141, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
-(@OGUID+6, @PGUID+89, 0, 'Scarlet Monastery Cathedral - Liferoot (2041)'),
-(@OGUID+19, @PGUID+89, 0, 'Scarlet Monastery Cathedral - Liferoot (2041)'),
-
+(@OGUID+151, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+152, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+153, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+154, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+155, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+156, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+157, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+158, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+159, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+160, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+161, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+162, @PGUID+51, 0, 'Scarlet Monastery Graveyard - Kingsblood, Grave Moss (1624,1628)'),
+(@OGUID+165, @PGUID+52, 0, 'Scarlet Monastery Library - Liferoot (2041)'),
+(@OGUID+166, @PGUID+52, 0, 'Scarlet Monastery Library - Fadeleaf (2042)'),
+(@OGUID+167, @PGUID+52, 0, 'Scarlet Monastery Library - Fadeleaf (2042)'),
+(@OGUID+168, @PGUID+52, 0, 'Scarlet Monastery Library - Fadeleaf (2042)'),
+(@OGUID+170, @PGUID+53, 0, 'Scarlet Monastery Armory - Fadeleaf (2042)'),
+(@OGUID+171, @PGUID+53, 0, 'Scarlet Monastery Armory - Fadeleaf (2042)'),
+(@OGUID+172, @PGUID+53, 0, 'Scarlet Monastery Armory - Fadeleaf (2042)'),
+(@OGUID+177, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+178, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+179, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+180, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+181, @PGUID+87, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+182, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+183, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+184, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+185, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+186, @PGUID+88, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Goldthorn (2046)'),
+(@OGUID+175, @PGUID+89, 0, 'Scarlet Monastery Cathedral (Lower Chapel Gardens) - Liferoot (2041)'),
+(@OGUID+176, @PGUID+89, 0, 'Scarlet Monastery Cathedral (Upper Chapel Gardens) - Liferoot (2041)'),
 (@OGUID+111, @PGUID+91, 0, 'Scarlet Monastery Graveyard (Chamber of Atonement) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
 (@OGUID+112, @PGUID+92, 0, 'Scarlet Monastery Graveyard (Forlorn Cloister & Honor''s Tomb) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
 (@OGUID+113, @PGUID+92, 0, 'Scarlet Monastery Graveyard (Forlorn Cloister & Honor''s Tomb) - Large Iron Bound Chest, Large Solid Chest (75296,75299)'),
