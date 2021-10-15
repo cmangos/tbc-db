@@ -1,7 +1,7 @@
 /* DBScriptData
 DBName: Razorfen Downs
 DBScriptName: instance_razorfen_downs
-DB%Complete: 80
+DB%Complete: 81
 DBComment:
 EndDBScriptData */
 
@@ -450,21 +450,33 @@ INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
 (@OGUID+81, 75297), (@OGUID+81, 75300); -- Large Iron Bound Chest, Large Solid Chest
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 1628, 129, 2422, 982.551, 48.5452, -0.20944, 0, 0, -0.104529, 0.994522, 7200, 7200, 100, 1), -- Grave Moss
-(@OGUID+2, 1628, 129, 2599.42, 701.18, 55.4969, 1.3439, 0, 0, 0.622513, 0.782609, 7200, 7200, 100, 1), -- Grave Moss
-(@OGUID+3, 1628, 129, 2501.06, 666.093, 53.2512, 0.314159, 0, 0, 0.156434, 0.987688, 7200, 7200, 100, 1), -- Grave Moss
-(@OGUID+4, 1628, 129, 2459.58, 673.032, 63.7238, 0.349066, 0, 0, 0.173648, 0.984808, 7200, 7200, 100, 1), -- Grave Moss
-(@OGUID+5, 2046, 129, 2413.38, 939.964, 45.2382, -0.663225, 0, 0, -0.325568, 0.945519, 7200, 7200, 100, 1), -- Goldthorn
-(@OGUID+6, 2046, 129, 2582.36, 693.47, 56.6378, -0.645772, 0, 0, -0.317305, 0.948324, 7200, 7200, 100, 1), -- Goldthorn
--- 7-32
-(@OGUID+33, 40198, 129, 2409.97, 954.724, 54.7089, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
-(@OGUID+34, 40199, 129, 2394.63, 886.028, 55.4499, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
-(@OGUID+35, 40200, 129, 2399.8, 893.103, 39.144, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
-(@OGUID+36, 40201, 129, 2361.76, 965.172, 39.826, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
--- 37 - 38
-(@OGUID+39, 142141, 129, 2479.97, 1006.34, 24.0507, -2.32129, 0, 0, -0.91706, 0.398748, 7200, 7200, 100, 1), -- Arthas' Tears
-(@OGUID+40, 142141, 129, 2536.55, 736.053, 53.7239, 3.05433, 0, 0, 0.999048, 0.0436174, 7200, 7200, 100, 1), -- Arthas' Tears
-(@OGUID+41, 142141, 129, 2423.88, 1027.32, 38.2242, -2.3911, 0, 0, -0.930417, 0.366502, 7200, 7200, 100, 1), -- Arthas' Tears
+(@OGUID+1, 1628, 129, 2422, 982.551, 48.5452, -0.20944, 0, 0, -0.104529, 0.994522, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+2, 1628, 129, 2599.42, 701.18, 55.4969, 1.3439, 0, 0, 0.622513, 0.782609, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+3, 1628, 129, 2501.06, 666.093, 53.2512, 0.314159, 0, 0, 0.156434, 0.987688, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+4, 1628, 129, 2459.58, 673.032, 63.7238, 0.349066, 0, 0, 0.173648, 0.984808, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+5, 1628, 129, 2565.25, 770.484, 55.8443, 1.91986, 0, 0, 0.819152, 0.573577, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+6, 1628, 129, 2464.41, 674.253, 63.8792, 0.85521, 0, 0, 0.414693, 0.909962, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+7, 1628, 129, 2613.1, 732.625, 54.4634, 1.41372, 0, 0, 0.649447, 0.760406, 86400, 86400, 100, 1), -- Grave Moss
+-- 1628
+(@OGUID+11, 2046, 129, 2413.38, 939.964, 45.2382, -0.663225, 0, 0, -0.325568, 0.945519, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+12, 2046, 129, 2582.36, 693.47, 56.6378, -0.645772, 0, 0, -0.317305, 0.948324, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+13, 2046, 129, 2515.09, 882.079, 46.5672, 4.34587, 0, 0, -0.824126, 0.566406, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+14, 2046, 129, 2413.05, 978.766, 57.781, 3.99681, 0, 0, -0.909961, 0.414694, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+15, 2046, 129, 2596.79, 764.006, 53.793, 0.994837, 0, 0, 0.477158, 0.878817, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+16, 2046, 129, 2492.94, 854.192, 49.0885, 5.06146, 0, 0, -0.573576, 0.819152, 86400, 86400, 100, 1), -- Goldthorn
+-- 2046
+(@OGUID+21, 142141, 129, 2479.97, 1006.34, 24.0507, -2.32129, 0, 0, -0.91706, 0.398748, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+22, 142141, 129, 2536.55, 736.053, 53.7239, 3.05433, 0, 0, 0.999048, 0.0436174, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+23, 142141, 129, 2423.88, 1027.32, 38.2242, -2.3911, 0, 0, -0.930417, 0.366502, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+24, 142141, 129, 2485.72, 782.397, 46.0727, 0.872664, 0, 0, 0.422618, 0.906308, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+25, 142141, 129, 2459.53, 661.903, 56.6654, 2.35619, 0, 0, 0.92388, 0.382683, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+26, 142141, 129, 2366.41, 968.678, 40.2011, 4.29351, 0, 0, -0.83867, 0.54464, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+27, 142141, 129, 2532.19, 804.245, 46.0493, 1.95477, 0, 0, 0.829038, 0.559193, 86400, 86400, 100, 1), -- Arthas' Tears
+-- 142141
+(@OGUID+38, 40198, 129, 2409.97, 954.724, 54.7089, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
+(@OGUID+39, 40199, 129, 2394.63, 886.028, 55.4499, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
+(@OGUID+40, 40200, 129, 2399.8, 893.103, 39.144, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
+(@OGUID+41, 40201, 129, 2361.76, 965.172, 39.826, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
 (@OGUID+42, 148843, 129, 2436.99, 1058.62, 59.6726, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
 (@OGUID+43, 148844, 129, 2427.53, 1051.77, 40.9434, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
 (@OGUID+44, 148845, 129, 2416.99, 1032.8, 39.0779, 3.13659, -0.024268, -0.079424, 0.996545, 0.000572, 5400, 5400, 100, 1), -- Fire
@@ -527,6 +539,9 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Razorfen Downs - Ragglesnout (7354)'),
+(@PGUID+51, 4, 'Razorfen Downs - Grave Moss (1628)'),
+(@PGUID+52, 2, 'Razorfen Downs - Goldthorn (2046)'),
+(@PGUID+53, 3, 'Razorfen Downs - Arthas'' Tears (142141)'),
 (@PGUID+90, 2, 'Razorfen Downs - Master Chest Pool'),
 (@PGUID+91, 1, 'Razorfen Downs (Spiral of Thorns) - Chest Pool'),
 (@PGUID+92, 1, 'Razorfen Downs (The Murder Pens) - Chest Pool');
@@ -538,6 +553,26 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@OGUID+1, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
+(@OGUID+2, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
+(@OGUID+3, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
+(@OGUID+4, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
+(@OGUID+5, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
+(@OGUID+6, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
+(@OGUID+7, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
+(@OGUID+11, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
+(@OGUID+12, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
+(@OGUID+13, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
+(@OGUID+14, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
+(@OGUID+15, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
+(@OGUID+16, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
+(@OGUID+21, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
+(@OGUID+22, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
+(@OGUID+23, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
+(@OGUID+24, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
+(@OGUID+25, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
+(@OGUID+26, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
+(@OGUID+27, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
 (@OGUID+75, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
 (@OGUID+76, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
 (@OGUID+77, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
