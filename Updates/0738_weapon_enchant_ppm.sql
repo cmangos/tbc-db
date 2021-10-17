@@ -16,7 +16,8 @@ INSERT INTO `spell_proc_item_enchant` (`entry`, `ppmRate`) VALUES
 DELETE FROM `spell_proc_item_enchant` WHERE `entry` IN (2674,27996,27997); -- 2674 dbc
 -- INSERT INTO `spell_proc_item_enchant` (`entry`, `ppmRate`) VALUES
 -- (27996, 1); -- doesnt work with spell_proc_item_enchant as 27997 is aura passive trigger spell (SPELL_AURA_PROC_TRIGGER_SPELL) which proccs s.27996
-INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `procFlags`, `ppmRate`) VALUES (27997, 127, 0x00014000, 1);
+-- Spell 27997 listed in `spell_proc_event` has exactly same proc flags as in spell.dbc, field value redundant
+-- INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `procFlags`, `ppmRate`) VALUES (27997, 127, 0x00014000, 1);
 
 -- Battlemaster
 DELETE FROM `spell_proc_item_enchant` WHERE `entry` IN (2675,28005); -- 2675 dbc
