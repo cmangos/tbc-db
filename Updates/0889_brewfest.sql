@@ -2,6 +2,18 @@
 UPDATE creature SET position_x=-5176.9, position_y=-624.369, position_z=397.947, orientation=0.715585 WHERE id=23710;
 UPDATE broadcast_text SET SoundEntriesID1=10033 WHERE Id BETWEEN 22170 AND 22175; -- Belbi Quikswitch texts
 
+-- used by dbscripts in this file but in 926 updatefile
+ALTER TABLE dbscripts_on_creature_death MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE dbscripts_on_creature_movement MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE dbscripts_on_event MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE dbscripts_on_gossip MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE dbscripts_on_go_template_use MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE dbscripts_on_go_use MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE dbscripts_on_quest_end MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE dbscripts_on_quest_start MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE dbscripts_on_relay MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE dbscripts_on_spell MODIFY data_flags INT UNSIGNED NOT NULL DEFAULT '0';
+
 DELETE FROM creature_template_addon WHERE entry IN (23527,23528,23487);
 INSERT INTO creature_template_addon (entry, auras) VALUES
 (23527, 36440), -- Teldrassil Pink Elekk

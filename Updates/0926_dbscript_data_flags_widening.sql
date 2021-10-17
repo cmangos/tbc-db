@@ -1,0 +1,2 @@
+ALTER TABLE db_version CHANGE COLUMN required_s2433_01_mangos_anticheat required_s2434_01_mangos_dbscript_data_flags_widening bit;
+
