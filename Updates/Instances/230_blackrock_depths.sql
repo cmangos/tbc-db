@@ -611,11 +611,13 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 DELETE FROM `creature_movement_template` WHERE entry IN (28206,23872);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 -- TBC only
-(28206, 0, 1, 847.823, -181.144, -49.6707, 1.85005, 1440000, 9839501),
+(28206, 0, 1, 847.823, -181.144, -49.6707, 1.85005, 1440000, 2820601),
 -- TBC+
 -- Coren Direbrew
-(23872, 0, 1, 888.460999, -130.908997, -49.743698, 100, 0, 0),
-(23872, 0, 2, 895.405029, -126.959000, -49.749298, 100, 0, 0);
+(23872, 0, 1, 895.40485, -126.95865, -49.741978, 100, 0, 0),
+(23872, 0, 2, 888.4606, -130.90901, -49.7434, 100, 0, 0),
+(23872, 0, 3, 895.40485, -126.95865, -49.741978, 100, 0, 0),
+(23872, 0, 4, 891.081, -129.41835, -49.742863, 5.427973747253417968, 26000, 2387201);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+1, 0, 0, 1, 0, 0, '13589'), -- Anvilrage Overseer
@@ -3027,47 +3029,70 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (174564, 0, 27, 8, 0, 0, 160836, @OGUID+77, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Relic Coffer Door - Access: Relic Coffer'),
 (174565, 0, 27, 8, 0, 0, 160845, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (889101,902201,950001,950002,967901,4729401,905601,905602,905603,905604,9839501);
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(889101, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN OFF'),
-(889101, 1000, 25, 0, 0, 0, 8891, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN OFF'),
-(889101, 2000, 20, 1, 5, 0, 8891, 40, 8, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(889101, 3000, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(902201, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Dughal on last waypoint'),
-(950001, 0, 31, 9545, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 9545'),
-(950001, 1000, 0, 0, 0, 0, 9545, 20, 0, 4984, 4985, 4986, 4987, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
-(950001, 1000, 36, 0, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - Face Nagmara'),
-(950001, 2000, 36, 0, 0, 0, 9545, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Grim Patron'),
-(950001, 3000, 0, 0, 0, 0, 0, 0, 0, 4979, 4980, 4981, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
-(950001, 5000, 36, 1, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - restore orientation'),
-(950001, 6000, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
-(950002, 0, 31, 9547, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 9547'),
-(950002, 1000, 0, 0, 0, 0, 9547, 20, 0, 4984, 4985, 4986, 4987, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
-(950002, 1000, 36, 0, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - Face Nagmara'),
-(950002, 2000, 36, 0, 0, 0, 9547, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Guzzling Patron'),
-(950002, 3000, 0, 0, 0, 0, 0, 0, 0, 4979, 4980, 4981, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
-(950002, 5000, 36, 1, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - restore orientation'),
-(950002, 6000, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
-(967901, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Tobias on last waypoint'),
-(4729401, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weapon Technician - state_usestanding'),
-(4729401, 5000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weapon Technician - oneshot_none'),
-(905601, 3000, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - state_usestanding_nosheathe'),
-(905601, 13000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_none'),
-(905602, 3000, 1, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - state_work'),
-(905602, 13000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_none'),
-(905603, 1000, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_kneel'),
-(905604, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - movementtype_random'),
-(905604, 90000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - movementtype_waypoint'),
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (889101,902201,950001,950002,967901,4729401,905601,905602,905603,905604,2820601,2387201);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(889101, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN OFF'),
+(889101, 1000, 0, 25, 0, 0, 0, 8891, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN OFF'),
+(889101, 2000, 0, 20, 1, 5, 0, 8891, 40, 8, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(889101, 3000, 0, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(902201, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Dughal on last waypoint'),
+(950001, 0, 0, 31, 9545, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 9545'),
+(950001, 1000, 0, 36, 0, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - Face Nagmara'),
+(950001, 1000, 1, 0, 0, 0, 0, 9545, 20, 0, 4984, 4985, 4986, 4987, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
+(950001, 2000, 0, 36, 0, 0, 0, 9545, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Grim Patron'),
+(950001, 3000, 0, 0, 0, 0, 0, 0, 0, 0, 4979, 4980, 4981, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
+(950001, 5000, 0, 36, 1, 0, 0, 9545, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Grim Patron - restore orientation'),
+(950001, 6000, 0, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
+(950002, 0, 0, 31, 9547, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 9547'),
+(950002, 1000, 0, 36, 0, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - Face Nagmara'),
+(950002, 1000, 1, 0, 0, 0, 0, 9547, 20, 0, 4984, 4985, 4986, 4987, 0, 0, 0, 0, 'Grim Patron - Say 1, 2, 3 or 4'),
+(950002, 2000, 0, 36, 0, 0, 0, 9547, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - Face Guzzling Patron'),
+(950002, 3000, 0, 0, 0, 0, 0, 0, 0, 0, 4979, 4980, 4981, 0, 0, 0, 0, 0, 'Mistress Nagmara - Say 1, 2 or 3'),
+(950002, 5000, 0, 36, 1, 0, 0, 9547, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Guzzling Patron - restore orientation'),
+(950002, 6000, 0, 36, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mistress Nagmara - restore orientation'),
+(967901, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Tobias on last waypoint'),
+(4729401, 0, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weapon Technician - state_usestanding'),
+(4729401, 5000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Weapon Technician - oneshot_none'),
+(905601, 3000, 0, 1, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - state_usestanding_nosheathe'),
+(905601, 13000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_none'),
+(905602, 3000, 0, 1, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - state_work'),
+(905602, 13000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_none'),
+(905603, 1000, 0, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - oneshot_kneel'),
+(905604, 0, 0, 20, 1, 3, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - movementtype_random'),
+(905604, 90000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fineous Darkvire - movementtype_waypoint'),
 
 -- TBC+
-(9839501, 0, 18, 744000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '[DND] L70ETC Drums - Grim Guzzler Despawn Drums on Drummer Spawn');
+(2820601, 0, 0, 18, 744000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '[DND] L70ETC Drums - Grim Guzzler Despawn Drums on Drummer Spawn'),
+(2387201, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22376, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Say Text'), -- 20:03:26.000
+(2387201, 0, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - EMOTE_ONESHOT_EXCLAMATION'),
+(2387201, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 22388, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Say Text'), -- 20:03:32.000
+(2387201, 6000, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - EMOTE_ONESHOT_EXCLAMATION'),
+(2387201, 10000, 0, 0, 0, 0, 0, 23795, @CGUID+1323, 16, 22397, 22398, 22399, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - Say Negative'), -- 20:03:36.000
+(2387201, 10000, 1, 0, 0, 0, 0, 23795, @CGUID+1324, 16, 22397, 22398, 22399, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - Say Negative'),
+(2387201, 10000, 2, 0, 0, 0, 0, 23795, @CGUID+1325, 16, 22397, 22398, 22399, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - Say Negative'),
+(2387201, 10000, 3, 1, 274, 0, 0, 23795, @CGUID+1323, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - EMOTE_ONESHOT_NO'),
+(2387201, 10000, 4, 1, 274, 0, 0, 23795, @CGUID+1324, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - EMOTE_ONESHOT_NO'),
+(2387201, 10000, 5, 1, 274, 0, 0, 23795, @CGUID+1325, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - EMOTE_ONESHOT_NO'),
+(2387201, 13000, 0, 0, 0, 0, 0, 0, 0, 0, 22389, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Say Text'), -- 20:03:39.000
+(2387201, 13000, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - EMOTE_ONESHOT_EXCLAMATION'),
+(2387201, 17000, 0, 0, 0, 0, 0, 23795, @CGUID+1323, 16, 22393, 22394, 22395, 22396, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - Say Positive'), -- 20:03:43.000
+(2387201, 17000, 1, 0, 0, 0, 0, 23795, @CGUID+1324, 16, 22393, 22394, 22395, 22396, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - Say Positive'),
+(2387201, 17000, 2, 0, 0, 0, 0, 23795, @CGUID+1325, 16, 22393, 22394, 22395, 22396, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - Say Positive'),
+(2387201, 17000, 3, 1, 273, 0, 0, 23795, @CGUID+1323, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - EMOTE_ONESHOT_YES'),
+(2387201, 17000, 4, 1, 273, 0, 0, 23795, @CGUID+1324, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - EMOTE_ONESHOT_YES'),
+(2387201, 17000, 5, 1, 273, 0, 0, 23795, @CGUID+1325, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - EMOTE_ONESHOT_YES'),
+(2387201, 20000, 0, 0, 0, 0, 0, 0, 0, 0, 22391, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Say Text'), -- 20:03:46.000
+(2387201, 20000, 1, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - EMOTE_ONESHOT_EXCLAMATION'),
+(2387201, 22000, 0, 1, 71, 0, 0, 23795, @CGUID+1323, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - EMOTE_ONESHOT_CHEER_NOSHEATHE'), -- 20:03:48.000
+(2387201, 22000, 0, 1, 71, 0, 0, 23795, @CGUID+1324, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - EMOTE_ONESHOT_CHEER_NOSHEATHE'),
+(2387201, 22000, 0, 1, 71, 0, 0, 23795, @CGUID+1325, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Coren Direbrew - Dark Iron Antagonist - EMOTE_ONESHOT_CHEER_NOSHEATHE');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM dbscripts_on_gossip WHERE id IN (194502,197001,964801);
+DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (194502,197001,964801);
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (194502, 1000, 9, @OGUID+112, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn Spectral Chalice'),
 
