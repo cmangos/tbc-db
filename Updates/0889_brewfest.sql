@@ -585,7 +585,7 @@ UPDATE creature_template SET MechanicImmuneMask=MechanicImmuneMask|1|2|4|16|64|2
 UPDATE quest_template SET SpecialFlags=SpecialFlags&~2 WHERE entry IN(11293,11122);
 
 -- Coren Direbrew does not have gossip in tbc
-UPDATE creature_template SET GossipMenuId=0 WHERE entry IN(23872);
+UPDATE creature_template SET `NpcFlags` = `NpcFlags`&~1, GossipMenuId=0 WHERE entry IN(23872);
 
 -- Apple Trap corrections
 UPDATE gameobject SET position_x=1094.778 ,position_y=-4409.1606,position_z=20.863832,orientation=5.98648 WHERE guid IN(31763) AND id IN(186331);
