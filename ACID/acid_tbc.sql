@@ -22206,7 +22206,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mai'Kyl (23624) - ALREADY SCRIPTED IN ACID AS PART OF L70ETC EVENT
 -- Samuro (23625) - ALREADY SCRIPTED IN ACID AS PART OF L70ETC EVENT
 -- Sig Nicious (23626) - ALREADY SCRIPTED IN ACID AS PART OF L70ETC EVENT
--- Dark Iron Antagonist (23795)
+-- Dark Iron Antagonist 23795
+('2379501','23795','4','0','15','0','0','0','0','0','0','0','1','1934','1935','1936','0','0','0','0','0','0','0','0','Dark Iron Antagonist - Say on Aggro'),
 -- Coren Direbrew 23872 - boss_coren_direbrew
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Brewfest Spy (26719)
