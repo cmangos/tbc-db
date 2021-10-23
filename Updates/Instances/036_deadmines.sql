@@ -1176,6 +1176,7 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (642, 3500, 15, 5141, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sneed''s Shredder - Cast Eject Sneed on Death'); -- 3 - 4secs
 
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (64501);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (64501, 0, 20, 1, 1, 60000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 'Cookie - MovementType 1 and Spawndist 1 (60secs)');
 
