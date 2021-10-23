@@ -2,7 +2,9 @@
 -- https://github.com/vmangos/core/commit/d4d8fdb3738728e4502e9fe1ede5477783a6cc63
 
 -- Reimplement Path for Twilight Marauder Morna & Twilight Marauder
-UPDATE `creature` SET `MovementType` = 0 WHERE `guid` IN (43202,43203);
+-- Table `creature` have creature (GUID: 43202 Entry: 15542) with `MovementType`=0 (idle) have `spawndist`<>0, set to 0.
+-- Table `creature` have creature (GUID: 43203 Entry: 15542) with `MovementType`=0 (idle) have `spawndist`<>0, set to 0.
+UPDATE `creature` SET `MovementType` = 0, `spawndist` = 0 WHERE `guid` IN (43202,43203);
 DELETE FROM `creature_movement` WHERE `id` IN (43202,43203);
 REPLACE INTO `creature_spawn_data` (`guid`, `id`) VALUES (43201, 1),(43202, 1),(43203, 1);
 UPDATE `creature_linking_template` SET `flag` = `flag`|512|1024|16384 WHERE `master_entry` = 15541; -- FLAG_FOLLOW + FLAG_CANT_SPAWN_IF_BOSS_DEAD + FLAG_EVADE_ON_EVADE (currently needed not sure why)

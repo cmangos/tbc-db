@@ -121,6 +121,9 @@ DELETE FROM `creature_loot_template` WHERE `item` IN (
 22794 -- https://tbc.wowhead.com/item=22794/fel-lotus - all mobs have Herbalism Loot
 );
 
+-- Table 'creature_loot_template' entry 18201 (creature entry) not exist but used as loot id in DB.
+UPDATE `creature_template` SET `lootid` = 0 WHERE `entry` = 18201; -- Tamed Sporebat had Ragveil only (which was corrupted data)
+
 -- Part of Herbalism Loot Template (skinning_loot_template = 80002)
 -- Underbog Colossus 21251
 -- Talonsworn Forest-Rager 23029

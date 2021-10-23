@@ -89,11 +89,12 @@ INSERT INTO creature_movement_template (entry, point, position_x, position_y, po
 (3220,23,-2123.01,-434.328,-8.21845,100,0,0),
 (3220,24,-2137.24,-431.42,-6.79462,100,0,0),
 (3220,25,-2144.59,-424.52,-4.8653,100,0,0),
-(3220,26,-2148.51,-416.498,-3.65111,100,15000,21);
+(3220,26,-2148.51,-416.498,-3.65111,100,15000,322001);
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 21; -- wotlk-db generic 24secs then follow path, comment says 30secs
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 21; -- dont use generic script if the script gets altered afterwards
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` = 322001; -- wotlk-db generic 24secs then follow path, comment says 30secs (gets changed all the time)
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
-(21, 0, 0, 20, 1, 5, 24000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GENERIC - Change Movement To 1 - Random (30secs TEMP) (around current location)');
+(322001, 0, 0, 20, 1, 5, 24000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'GENERIC - Change Movement To 1 - Random (30secs TEMP) (around current location)');
 
 -- Brave Rockhorn 3221
 UPDATE creature SET position_x = -2420.237061, position_y = -535.265320, position_z = -8.944574, spawndist = 10, MovementType = 1 WHERE guid = 25946;
