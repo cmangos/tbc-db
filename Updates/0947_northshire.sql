@@ -476,6 +476,7 @@ DELETE FROM `creature_loot_template` WHERE `entry` = 62; -- Gug Fatcandle introd
 UPDATE `creature_template` SET `lootid` = 0 WHERE `entry` = 62;
 
 -- 60400 and 60441 are the same
+DELETE FROM `creature_loot_template` WHERE `entry` = 1 AND `mincountOrRef` = -60441; -- has both assigned (todo: remove, most of these as we now have reference_loot_template_names, but opens can of worms due to progression changes)
 UPDATE `creature_loot_template` SET `item` = 60441, `ChanceOrQuestChance` = 0.5, `mincountOrRef` = -60441 WHERE `mincountOrRef` = -60400; -- 
 UPDATE `gameobject_loot_template` SET `item` = 60441, `mincountOrRef` = -60441, `comments` = 'NPC LOOT (White World Drop) - (Item Levels: 5 (6 Slot Bag)) - (NPC Levels: 1-10)' WHERE `mincountOrRef` = -60400; -- Tattered Chest 2845 / Battered Chest 106318
 UPDATE `reference_loot_template_names` SET `name` = 'NPC LOOT (White World Drop) - (Item Levels: 5 (6 Slot Bag)) - (NPC Levels: 1-10)' WHERE `entry` = 60441;
