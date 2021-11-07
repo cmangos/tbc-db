@@ -7,6 +7,7 @@ DBComment:
 * Fix Whip Lasher 2x-4x, Groups, creature_groups min/max
 * herbs might also have minmax values for spawns
 * Death Lash 13285 - s.22351 instead of s.25640, changed at some point?
+* 14690 movement, spawns at supposedly old position of Magister Kalendris
 EndDBScriptData */
 
 SET @CGUID := 4290000; -- creatures
@@ -2203,7 +2204,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1071, 13160, 429, 468.7993, 280.4746, 2.852868, 3.095573, 7200, 7200, 2, 0, 0, 1), -- Carrion Swarmer
 (@CGUID+1072, 13160, 429, 476.467, 291.735, 2.852862, 4.770678, 7200, 7200, 2, 0, 0, 1), -- Carrion Swarmer
 (@CGUID+1073, 13160, 429, 472.4048, 295.3147, 2.852875, 4.433242, 7200, 7200, 2, 0, 0, 1), -- Carrion Swarmer
-(@CGUID+1074, 14690, 429, -112.776, 583.823, -3.47887, 5.60251, 604800, 604800, 0, 0, 0, 0); -- Revanchion
+(@CGUID+1074, 14690, 429, -106.303, 551.276, -4.39701, 6.08718, 604800, 604800, 0, 0, 0, 0); -- Revanchion
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+139, 11441),(@CGUID+139, 13036), -- Gordok Brute, Gordok Mastiff

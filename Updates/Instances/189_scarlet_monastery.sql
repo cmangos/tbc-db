@@ -5,6 +5,7 @@ DB%Complete: 86
 DBComment:
 * Find Chance for Kingsblood, Grave Moss Nodes 2:1?
 * Rare spawns in Graveyard should be pooled with the mob groups at their spawn location (should be more spawnlocations) and then be pooled together into masterpool to minimize spawnchance but have reduced respawntime - more research required
+* Scorn 14693 misses its correct path "He patrols to Thalnos' crypt then back to his spawn point, always following the right side of the fountain"
 EndDBScriptData */
 
 SET @CGUID := 1890000; -- creatures
@@ -80,7 +81,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+335, 3, 148.32, -428.692, 18.4864, 0, 0, 0),
 (@CGUID+335, 4, 147.167, -442.784, 18.5027, 0, 4000, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+DELETE FROM `creature_movement_template` WHERE `entry` IN (14693);
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+(14693, 1, 1, 1798.01, 1312.39, 18.69, 100, 0, 0),
+(14693, 1, 2, 1805.39, 1323.66, 18.91, 100, 0, 0),
+(14693, 1, 3, 1797.70, 1383.27, 18.76, 100, 0, 0),
+(14693, 1, 4, 1805.39, 1323.66, 18.91, 100, 0, 0),
+(14693, 1, 5, 1798.01, 1312.39, 18.69, 100, 0, 0),
+(14693, 1, 6, 1798.01, 1223.17, 18.274, 100, 0, 0); -- spawn point
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+26, 0, 0, 0, 0, 0, NULL), -- Scarlet Soldier
@@ -823,7 +831,10 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- =========
 
 -- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+
+DELETE FROM `dbscripts_on_creature_death` WHERE `id` IN (4543);
+INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
+(4543, 1000, 0, 10, 14693, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1798.01, 1223.17, 18.274, 4.71161, 6089, 'Bloodmage Thalnos - Spawn Scorn on Death (Event 89');
 
 INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (@OGUID+43, 0, 11, @OGUID+44, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
