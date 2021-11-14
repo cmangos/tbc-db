@@ -29145,7 +29145,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2559901','25599','0','0','100','1024','10000','20000','10000','20000','0','0','11','47399','0','32','0','0','0','0','0','0','0','0','Cataclysm Hound - Cast Frenzy'),
 ('2559902','25599','0','0','100','1025','5000','15000','8000','16000','0','0','11','46292','4','512','0','0','0','0','0','0','0','0','Cataclysm Hound - Cast Cataclysm Breath'),
 -- Felfire Portal 25603
-('2560301','25603','11','0','100','0','0','0','0','0','0','0','11','46464','0','0','0','0','0','0','0','0','0','0','Felfire Portal - Cast Summon Felfire Fiend on Spawn'),
+('2560301','25603','11','0','100','0','0','0','0','0','0','0','11','46464','0','0','50','0','0','0','0','0','0','0','Felfire Portal - Cast Summon Felfire Fiend and React Passive on Spawn'),
 ('2560302','25603','11','0','100','0','0','0','0','0','0','0','62','7','0','0','0','0','0','0','0','0','0','0','Felfire Portal - Enable Despawn Aggregation on Evade and Death'),
 -- Kil'jaeden 25608 - npc_kiljaeden_controller
 -- Vindicator Moorba (25632) - NSR
