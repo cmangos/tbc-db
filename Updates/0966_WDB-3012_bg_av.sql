@@ -47,12 +47,12 @@ UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22650;
 -- Rarck
 UPDATE creature_template SET HeroicEntry = 22654 WHERE entry = 3625;
 UPDATE creature_template SET MinLevel = 55, MaxLevel = 55 WHERE entry = 3625;
-UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22654;
+UPDATE creature_template SET MinLevel = 65, MaxLevel = 65, `NpcFlags` = 384 WHERE entry = 22654; -- 2021-11-26 21:42:31 Creature (Entry: 3625) has different `npcflag` in heroic mode (Entry: 22654).
 
 -- Brogus Thunderbrew
 UPDATE creature_template SET HeroicEntry = 22646 WHERE entry = 4255;
 UPDATE creature_template SET MinLevel = 55, MaxLevel = 55 WHERE entry = 4255;
-UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22646;
+UPDATE creature_template SET MinLevel = 65, MaxLevel = 65, `NpcFlags` = 640 WHERE entry = 22646; -- 2021-11-26 21:42:31 Creature (Entry: 4255) has different `npcflag` in heroic mode (Entry: 22646).
 
 -- Lana Thunderbrew
 UPDATE creature_template SET HeroicEntry = 22653 WHERE entry = 4257;
@@ -62,7 +62,7 @@ UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22653;
 -- Jonivera Farmountain
 UPDATE creature_template SET HeroicEntry = 22651 WHERE entry = 5134;
 UPDATE creature_template SET MinLevel = 55, MaxLevel = 55 WHERE entry = 5134;
-UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22651;
+UPDATE creature_template SET MinLevel = 65, MaxLevel = 65, `NpcFlags` = 384 WHERE entry = 22651; -- 2021-11-26 21:42:31 Creature (Entry: 5134) has different `npcflag` in heroic mode (Entry: 22651).
 
 -- Svalbrad Farmountain
 UPDATE creature_template SET HeroicEntry = 22659 WHERE entry = 5135;
@@ -72,17 +72,17 @@ UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22659;
 -- Kurdrum Barleybeard
 UPDATE creature_template SET HeroicEntry = 22652 WHERE entry = 5139;
 UPDATE creature_template SET MinLevel = 55, MaxLevel = 55 WHERE entry = 5139;
-UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22652;
+UPDATE creature_template SET MinLevel = 65, MaxLevel = 65, `NpcFlags` = 3200 WHERE entry = 22652; -- 2021-11-26 21:42:31 Creature (Entry: 5139) has different `npcflag` in heroic mode (Entry: 22652).
 
 -- Yaelika Farclaw
 UPDATE creature_template SET HeroicEntry = 22660 WHERE entry = 10364;
 UPDATE creature_template SET MinLevel = 55, MaxLevel = 55 WHERE entry = 10364;
-UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22660;
+UPDATE creature_template SET MinLevel = 65, MaxLevel = 65, `NpcFlags` = 3200 WHERE entry = 22660; -- 2021-11-26 21:42:31 Creature (Entry: 10364) has different `npcflag` in heroic mode (Entry: 22660).
 
 -- Shrye Ragefist
 UPDATE creature_template SET HeroicEntry = 22655 WHERE entry = 10367;
 UPDATE creature_template SET MinLevel = 55, MaxLevel = 55 WHERE entry = 10367;
-UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22655;
+UPDATE creature_template SET MinLevel = 65, MaxLevel = 65, `NpcFlags` = 640 WHERE entry = 22655; -- 2021-11-26 21:42:31 Creature (Entry: 10367) has different `npcflag` in heroic mode (Entry: 22655).
 
 -- Frostwolf
 UPDATE creature_template SET HeroicEntry = 22737 WHERE entry = 10981;
@@ -159,7 +159,7 @@ UPDATE creature_template SET MinLevel = 71, MaxLevel = 71 WHERE entry = 22606;
 
 -- Vanndar Stormpike
 UPDATE creature_template SET HeroicEntry = 22644 WHERE entry = 11948;
-UPDATE creature_template SET MinLevel = 72, MaxLevel = 72 WHERE entry = 22644; -- [28] (34) UNIT_FIELD_LEVEL: 72
+UPDATE creature_template SET MinLevel = 72, MaxLevel = 72, `NpcFlags` = 1 WHERE entry = 22644; -- [28] (34) UNIT_FIELD_LEVEL: 72 - 2021-11-26 21:42:31 Creature (Entry: 11948) has different `npcflag` in heroic mode (Entry: 22644).
 
 -- Captain Balinda Stonehearth
 UPDATE creature_template SET HeroicEntry = 22605 WHERE entry = 11949;
@@ -188,12 +188,12 @@ UPDATE creature_template SET HeroicEntry = 22674 WHERE entry = 12053;
 -- Stormpike Quartermaster
 UPDATE creature_template SET HeroicEntry = 22658 WHERE entry = 12096;
 UPDATE creature_template SET MinLevel = 55, MaxLevel = 55 WHERE entry = 12096;
-UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22658;
+UPDATE creature_template SET MinLevel = 65, MaxLevel = 65, `NpcFlags` = 3715 WHERE entry = 22658; -- 2021-11-26 21:42:31 Creature (Entry: 12096) has different `npcflag` in heroic mode (Entry: 22658).
 
 -- Frostwolf Quartermaster
 UPDATE creature_template SET HeroicEntry = 22648 WHERE entry = 12097;
 UPDATE creature_template SET MinLevel = 55, MaxLevel = 55 WHERE entry = 12097;
-UPDATE creature_template SET MinLevel = 65, MaxLevel = 65 WHERE entry = 22648;
+UPDATE creature_template SET MinLevel = 65, MaxLevel = 65, `NpcFlags` = 3715 WHERE entry = 22648; -- 2021-11-26 21:42:31 Creature (Entry: 12097) has different `npcflag` in heroic mode (Entry: 22648).
 
 -- Drakan
 UPDATE creature_template SET HeroicEntry = 22540 WHERE entry = 12121;
@@ -262,7 +262,7 @@ UPDATE creature_template SET MinLevel = 69, MaxLevel = 69 WHERE entry = 22721;
 -- Wing Commander Jeztor
 UPDATE creature_template SET HeroicEntry = 22697 WHERE entry = 13180;
 UPDATE creature_template SET MinLevel = 58, MaxLevel = 58 WHERE entry = 13180;
-UPDATE creature_template SET MinLevel = 68, MaxLevel = 68 WHERE entry = 22697;
+UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, `NpcFlags` = 3 WHERE entry = 22697; -- 2021-11-26 21:42:31 Creature (Entry: 13180) has different `npcflag` in heroic mode (Entry: 22697).
 
 -- Gaelden Hammersmith
 UPDATE creature_template SET HeroicEntry = 22680 WHERE entry = 13216;
@@ -282,7 +282,7 @@ UPDATE creature_template SET MinLevel = 70, MaxLevel = 70 WHERE entry = 22568;
 -- Murgot Deepforge
 UPDATE creature_template SET HeroicEntry = 22567 WHERE entry = 13257;
 UPDATE creature_template SET MinLevel = 58, MaxLevel = 58 WHERE entry = 13257;
-UPDATE creature_template SET MinLevel = 70, MaxLevel = 70 WHERE entry = 22567;
+UPDATE creature_template SET MinLevel = 70, MaxLevel = 70, `NpcFlags` = 3 WHERE entry = 22567; -- 2021-11-26 21:42:31 Creature (Entry: 13257) has different `npcflag` in heroic mode (Entry: 22567).
 
 -- Frostwolf Shaman
 UPDATE creature_template SET HeroicEntry = 22678 WHERE entry = 13284;
@@ -357,7 +357,7 @@ UPDATE creature_template SET MinLevel = 70, MaxLevel = 70 WHERE entry = 22597;
 -- Wing Commander Slidore
 UPDATE creature_template SET HeroicEntry = 22698 WHERE entry = 13438;
 UPDATE creature_template SET MinLevel = 58, MaxLevel = 58 WHERE entry = 13438;
-UPDATE creature_template SET MinLevel = 68, MaxLevel = 68 WHERE entry = 22698;
+UPDATE creature_template SET MinLevel = 68, MaxLevel = 68, `NpcFlags` = 3 WHERE entry = 22698; -- 2021-11-26 21:42:31 Creature (Entry: 13438) has different `npcflag` in heroic mode (Entry: 22698).
 
 -- Wing Commander Vipore
 UPDATE creature_template SET HeroicEntry = 22722 WHERE entry = 13439;
@@ -402,7 +402,7 @@ UPDATE creature_template SET MinLevel = 70, MaxLevel = 70 WHERE entry = 22551;
 -- Stormpike Stable Master
 UPDATE creature_template SET HeroicEntry = 22577 WHERE entry = 13617;
 UPDATE creature_template SET MinLevel = 60, MaxLevel = 60 WHERE entry = 13617;
-UPDATE creature_template SET MinLevel = 70, MaxLevel = 70 WHERE entry = 22577;
+UPDATE creature_template SET MinLevel = 70, MaxLevel = 70, `NpcFlags` = 4194307 WHERE entry = 22577; -- 2021-11-26 21:42:31 Creature (Entry: 13617) has different `npcflag` in heroic mode (Entry: 22577).
 
 -- Mountaineer Boombellow
 UPDATE creature_template SET HeroicEntry = 22724 WHERE entry = 13797;
@@ -493,4 +493,18 @@ UPDATE creature_template SET MinLevel = 70, MaxLevel = 70 WHERE entry = 22580;
 UPDATE creature_template SET HeroicEntry = 22596 WHERE entry = 14777;
 UPDATE creature_template SET MinLevel = 60, MaxLevel = 60 WHERE entry = 14777;
 UPDATE creature_template SET MinLevel = 70, MaxLevel = 70 WHERE entry = 22596;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
