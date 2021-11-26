@@ -345,6 +345,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (13421, 0, 0, 1, 0, 0, '5301'), -- Champion Guardian - aura guessed
 (13422, 0, 0, 1, 0, 0, '5301'), -- Champion Defender - aura guessed
 (13437, 0, 0, 1, 0, 0, NULL), -- Wing Commander Ichman
+(13441, 10278, 0, 1, 0, 0, NULL), -- Frostwolf Wolf Rider Commander
 (13577, 2786, 0, 0, 0, 0, NULL), -- Stormpike Ram Rider Commander
 (14282, 0, 0, 1, 0, 0, '18950'), -- Frostwolf Bloodhound
 (14283, 0, 0, 1, 0, 0, '18950'), -- Stormpike Owl
