@@ -11,7 +11,7 @@ UPDATE `gameobject` SET `id` = 181249 WHERE `guid` IN (75100,75025,75106,75091,7
 
 DELETE FROM `pool_template` WHERE `entry` IN (2070,4694,4695,4696,4697,4698,4699);
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES (2070, 3, 'Master Mineral Pool - Ghostlands (Underlight Mines)'),(4694, 1, ''),(4695, 1, ''),(4696, 1, ''),(4697, 1, ''),(4698, 1, ''),(4699, 1, '');
-UPDATE `pool_template` SET `description` = 'Ghostlands (Underlight Mines) - Mineral' WHERE `entry` IN (4698,4699,4708,4717,4730,4733,4735);
+UPDATE `pool_template` SET `description` = 'Ghostlands (Underlight Mines) - Mineral' WHERE `entry` IN (4694,4695,4696,4697,4698,4699,4708,4717,4730,4733,4735);
 DELETE FROM `pool_pool` WHERE `pool_id` IN (4694,4695,4696,4697,4698,4699);
 INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES (4694, 2070, 0, ''),(4695, 2070, 0, ''),(4696, 2070, 0, ''),(4697, 2070, 0, ''),(4698, 2070, 0, ''),(4699, 2070, 0, '');
 UPDATE `pool_pool` SET `mother_pool` = 2070, `description` = 'Ghostlands (Underlight Mines) - Mineral' WHERE `pool_id` IN (4694,4695,4696,4697,4698,4699,4708,4717,4730,4733,4735);
