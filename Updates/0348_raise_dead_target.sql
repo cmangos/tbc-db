@@ -1,8 +1,0 @@
-DELETE FROM spell_script_target WHERE entry IN(33981,34011,34012,34019,41071);
-INSERT INTO spell_script_target VALUES
-(34019, 2, 19422, 0),
-(34019, 2, 16871, 0),
-
-(41071, 2, 23147, 0);
-
-

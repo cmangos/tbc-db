@@ -7,7 +7,7 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE_ZIP="TBCDB_1.8.0_VengeanceStrikesBack.sql.gz"
+FULLDB_FILE_ZIP="TBCDB_1.9.0_TheLastVengeance.sql.gz"
 FULLDB_FILE=${FULLDB_FILE_ZIP%.gz}
 DB_TITLE="v1.8 'Vengeance Strikes Back'"
 NEXT_MILESTONES="0.12.4 0.13"

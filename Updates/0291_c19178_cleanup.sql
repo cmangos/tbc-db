@@ -1,4 +1,0 @@
-DELETE FROM creature WHERE guid IN (11001,11002,11003,11004);
-DELETE FROM game_event_creature WHERE guid IN (11001,11002,11003,11004);
-
-
