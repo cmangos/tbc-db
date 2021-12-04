@@ -10,6 +10,6 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 ('737', '5000', '0', '0', '0', '0', '0', '934', '0', '0', '0', '0', 'Forbidden Knowledge: Theldurin the Lost - Say Text'),
 ('737', '5000', '21', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Forbidden Knowledge: Theldurin the Lost - Remove ActiveObject');
 
-
 UPDATE `quest_template` SET `CompleteScript`=737 WHERE `entry`=737;
-
+-- Update broadcast text, id 923 is an emote 
+UPDATE `broadcast_text` SET `ChatTypeID`='2' WHERE (`Id`='923');
