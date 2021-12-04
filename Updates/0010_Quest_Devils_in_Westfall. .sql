@@ -3,5 +3,5 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 ('1076', '0', '15', '6671', '0', '0', '4', '0', '0', '0', '0', '0', 'Devils in Westfall: Collin Mauren - Cast Spell Create Scroll'),
 ('1076', '1000', '0', '0', '0', '0', '0', '1437', '0', '0', '0', '0', 'Devils in Westfall: Collin Mauren - Say Text');
 
-UPDATE `quest_template` SET `CompleteScript`=8412 WHERE `entry`=1076;
+UPDATE `quest_template` SET `CompleteScript`=1076 WHERE `entry`=1076;
 
