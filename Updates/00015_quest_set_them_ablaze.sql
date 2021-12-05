@@ -12,7 +12,7 @@ INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `d
 ('3463', '16000', '0', '0', '0', '0', '0', '0', '0', '4459', '0', '0', '0','0', 'Set Them Ablaze!: Squire Maltrake - Say Text'), 
 ('3463', '16000', '3', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1.59286', 'Set Them Ablaze!: Squire Maltrake - Set Orientation'), 
 ('3463', '16000', '1', '6', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Set Them Ablaze!: Squire Maltrake - Emote OneShotQuestion'), 
-('3463', '20000', '1', '35', '0', '0', '8480', '´30', '0', '0', '0', '0', '0','0', 'Set Them Ablaze!: Kalaran the Deceiver - Emote OneShotAttackUnarmed'), 
+('3463', '20000', '1', '35', '0', '0', '8480', '30', '0', '0', '0', '0', '0','0', 'Set Them Ablaze!: Kalaran the Deceiver - Emote OneShotAttackUnarmed'), 
 ('3463', '20000', '3', '0', '0', '0', '8480', '30', '0', '0', '0', '0', '0', '4.73446', 'Set Them Ablaze!: Kalaran the Deceiver - Set Orientation'), 
 ('3463', '22000', '1', '35', '0', '0', '8480', '30', '0', '0', '0', '0', '0', '0', 'Set Them Ablaze!: Kalaran the Deceiver - Emote OneShotAttackUnarmed'), 
 ('3463', '23000', '1', '35', '0', '0', '8480', '30', '0', '0', '0', '0', '0', '0', 'Set Them Ablaze!: Kalaran the Deceiver - Emote OneShotAttackUnarmed'), 
