@@ -16,3 +16,5 @@ UPDATE `quest_template` SET `StartScript`=2992 WHERE `entry`=2992;
 DELETE FROM gameobject WHERE guid = '10079';
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES 
 ('10079', '144069', '0', '1', '-10999.1', '-3484.59', '104.045', '1.18682', '0', '0', '0.559193', '0.829038', '-120', '-120', '100', '0');
+
+UPDATE `quest_template` SET `SpecialFlags`='2' WHERE (`entry`='2992');
