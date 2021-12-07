@@ -1,13 +1,14 @@
 DELETE FROM dbscripts_on_quest_end WHERE id = '7461';
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES 
-('7461', '0', '10', '14364', '600000', '0', '8', '0', '0', '0', '7464', '9.86833', '399.483', '25.1394', '0.645772', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
-('7461', '0', '10', '14364', '600000', '0', '8', '0', '0', '0', '7461', '16.5058', '396.353', '25.1394', '0.366519', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
-('7461', '0', '10', '14364', '600000', '0', '8', '0', '0', '0', '7461', '14.0871', '394.116', '25.1394', '5.67232', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
-('7461', '0', '10', '14364', '600000', '0', '8', '0', '0', '0', '7463', '13.378', '398.393', '25.1394', '3.87463', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
-('7461', '0', '10', '14364', '600000', '0', '8', '0', '0', '0', '7462', '4.33656', '395.79', '25.1394', '6.26573', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
-('7461', '0', '10', '14364', '600000', '0', '8', '0', '0', '0', '7467', '6.27106', '393.316', '25.1394', '0.0174533', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
-('7461', '0', '10', '14364', '600000', '0', '8', '0', '0', '0', '7465', '6.21175', '398.111', '25.1394', '0.541052', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
-('7461', '0', '10', '14364', '600000', '0', '8', '0', '0', '0', '7466', '9.8532', '392.825', '25.1394', '4.4855', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit');
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES 
+('7461', '0', '0', '31', '14364', '10', '0', '8', '0', '0', '0', '0', '0', '0', '0', '0', 'The Madness Within: Abort Script if Shen\'dralar Ancient is spawned'),
+('7461', '0', '1', '10', '14364', '600000', '0', '8', '0', '0', '0', '7464', '9.86833', '399.483', '25.1394', '0.645772', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
+('7461', '0', '1', '10', '14364', '600000', '0', '8', '0', '0', '0', '7461', '16.5058', '396.353', '25.1394', '0.366519', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
+('7461', '0', '1', '10', '14364', '600000', '0', '8', '0', '0', '0', '7461', '14.0871', '394.116', '25.1394', '5.67232', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
+('7461', '0', '1', '10', '14364', '600000', '0', '8', '0', '0', '0', '7463', '13.378', '398.393', '25.1394', '3.87463', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
+('7461', '0', '1', '10', '14364', '600000', '0', '8', '0', '0', '0', '7462', '4.33656', '395.79', '25.1394', '6.26573', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
+('7461', '0', '1', '10', '14364', '600000', '0', '8', '0', '0', '0', '7467', '6.27106', '393.316', '25.1394', '0.0174533', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
+('7461', '0', '1', '10', '14364', '600000', '0', '8', '0', '0', '0', '7465', '6.21175', '398.111', '25.1394', '0.541052', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit'),
+('7461', '0', '1', '10', '14364', '600000', '0', '8', '0', '0', '0', '7466', '9.8532', '392.825', '25.1394', '4.4855', 'The Madness Within: Shen\'dralar Ancient - Summon Creature Shen\'dralar Spirit');
 
 UPDATE `quest_template` SET `CompleteScript`=7461 WHERE `entry`=7461;
 
