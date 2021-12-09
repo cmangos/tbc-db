@@ -1,15 +1,32 @@
 -- Start script for quest The Binding.
 DELETE FROM dbscripts_on_quest_start WHERE id = '1795';
-INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `data_flags`, `dataint`, `x`, `y`, `z`, `o`, `comments`) VALUES 
-('1795 ', '0', '21', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Set ActiveObject'),
-('1795 ', '1000', '29', '51', '2', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Toggle Npc Flags'),
-('1795 ', '1000', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Emote OneShotTalk'),
-('1795 ', '1000', '0', '0', '0', '0', '0', '2370', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Say Text'),
-('1795 ', '4000', '3', '0', '0', '0', '0', '0', '-780.438', '-3718.21', '42.1855', '0', 'The Binding: Strahad Farsan - Move'),
-('1795 ', '6000', '3', '0', '0', '0', '0', '0', '-769.382', '-3721.35', '42.4199', '0', 'The Binding: Strahad Farsan - Move'),
-('1795 ', '14000', '15', '8677', '0', '0', '4', '0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Cast Spell Summon Effect');
+INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
+('1795 ', '0', '51', '1795', '300', '0', '0', '0', '17950', '0', '17951', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Start Scripted Map Event'),
+('1795 ', '1000', '29', '51', '2', '0', '0', '0', '0', '0', '0', '0','0', '0', '0', 'The Binding: Strahad Farsan - Toggle Npc Flags'),
+('1795 ', '1000', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0','0', '0', 'The Binding: Strahad Farsan - Emote OneShotTalk'),
+('1795 ', '1000', '0', '0', '0', '0', '0', '2370', '0', '0', '0', '0','0', '0', '0', 'The Binding: Strahad Farsan - Say Text'),
+('1795 ', '4000', '3', '0', '0', '0', '0', '0', '0', '0','0', '-780.438', '-3718.21', '42.1855', '0', 'The Binding: Strahad Farsan - Move'),
+('1795 ', '6000', '3', '0', '0', '0', '0', '0', '0', '0','0', '-769.382', '-3721.35', '42.4199', '0', 'The Binding: Strahad Farsan - Move'),
+('1795 ', '14000', '15', '8677', '0', '0', '4', '0', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Cast Spell Summon Effect');
 
 UPDATE `quest_template` SET `StartScript`=1795 WHERE `entry`=1795;
+
+-- Success script for quest The Binding.
+DELETE FROM dbscripts_on_relay WHERE id = '17950';
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
+('17950 ', '0', '3', '0', '0', '0', '0', '0', '0', '0','0', '-776.003', '-3718.86', '42.6078', '0', 'The Binding: Strahad Farsan - Move'),
+('17950 ', '4000', '3', '0', '0', '0', '0', '0', '0', '0','0', '-782.851', '-3718.55', '41.5492', '0', 'The Binding: Strahad Farsan - Move'),
+('17950 ', '7000', '3', '0', '0', '0', '0', '0', '0', '0','0', '-785.161', '-3721.88', '40.8014', '0', 'The Binding: Strahad Farsan - Move'),
+('17950 ', '10000', '3', '0', '0', '0', '0', '0', '0', '0','0', '-785.912', '-3723.26', '40.4528', '2.05949', 'The Binding: Strahad Farsan - Move'),
+('17950 ', '13000', '29', '51', '2', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Toggle Npc Flags');
+
+-- Failure script for quest The Binding.
+DELETE FROM dbscripts_on_relay WHERE id = '17951';
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
+('17951', '15000', '0', '0', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Respawn'),
+('17951', '15000', '0', '0', '0', '0', '14384', '9', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Respawn'),
+('17951', '15000', '0', '0', '0', '0', '14385', '9', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Respawn'),
+('17951', '15000', '0', '0', '0', '0', '14370', '9', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Respawn');
 
 -- Script when Strahad Farsan casts spell Summon Effect
 DELETE FROM dbscripts_on_event WHERE id = '1428';
@@ -43,7 +60,9 @@ INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalon
 -- Spawn script for Summoned Felhunter.
 DELETE FROM dbscripts_on_relay WHERE id = '6268';
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
+('6268 ', '0', '53', '1795', '0', '0', '0', '0', '0', '945','0', '0', '0', '0', '0', 'The Binding: Summoned Felhunter - Add to Scripted Map Event'),
 ('6268 ', '2000', '22', '14', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', 'The Binding: Summoned Felhunter - Set Faction');
+
 
 DELETE FROM creature_spawn_data_template WHERE entry = '6268';
 INSERT INTO `creature_spawn_data_template` (`Entry`, `RelayId`) VALUES 
