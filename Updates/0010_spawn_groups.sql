@@ -35,15 +35,6 @@ LinkedId INT NOT NULL COMMENT 'Linked Spawn Group ID',
 PRIMARY KEY(Id, LinkedId)
 );
 
-SET @CGUID := 5680000;
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
-(@CGUID+522, 24239, 568, 1, 117.3631, 923.5686, 33.97257, 1.58825, 259200, 259200, 0, 0, 0, 0); -- Malacrass
-
-REPLACE INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
-(10000, 'Malacrass', 0, 0, 10000, 0);
-REPLACE INTO spawn_group_spawn VALUES
-(10000,@CGUID+522);
-
 DELETE FROM gameobject WHERE id IN(176150,176151);
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax, animprogress, state) VALUES
 ('45459', '0', '0', '1', '1382.42', '-1449.85', '56.969', '1.64061', '0', '0', '0.731354', '0.681998', '60', '60', '100', '1'),

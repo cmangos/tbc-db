@@ -1414,7 +1414,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+518, 24223, 568, 1, 408.24572, 1405.53161, 74.59789, 1.15191, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
 (@CGUID+519, 24223, 568, 1, 394.94815, 1381.38928, 74.50968, 3.78736, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
 (@CGUID+520, 24223, 568, 1, 429.48010, 1371.66577, 74.41665, 5.46288, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
-(@CGUID+521, 24223, 568, 1, 446.02258, 1354.25329, 85.51732, 5.84685, 7200, 7200, 0, 0, 0, 0); -- Eagle Trash Aggro Trigger
+(@CGUID+521, 24223, 568, 1, 446.02258, 1354.25329, 85.51732, 5.84685, 7200, 7200, 0, 0, 0, 0), -- Eagle Trash Aggro Trigger
+(@CGUID+522, 24239, 568, 1, 117.3631, 923.5686, 33.97257, 1.58825, 259200, 259200, 0, 0, 0, 0); -- Malacrass
 
 -- ===========
 -- GAMEOBJECTS
@@ -1535,6 +1536,12 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+
+-- Spawn Groups
+INSERT INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
+(10000, 'Malacrass', 0, 0, 10000, 0); -- spawns after custom worldstate after all 4 bosses are dead
+INSERT INTO spawn_group_spawn VALUES
+(10000,@CGUID+522);
 
 -- =========
 -- DBSCRIPTS
