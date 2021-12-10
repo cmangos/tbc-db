@@ -67,21 +67,4 @@ REPLACE INTO spawn_group_entry(Id, Entry, MaxCount, Chance) VALUES
 (1,176150,1,0),
 (1,176151,9,0);
 
-SET @CGUID := 5800000;
-REPLACE INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
-(10001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72800, 0);
-
-REPLACE INTO spawn_group_spawn(Id, Guid) VALUES
-(10001,@CGUID+185),
-(10001,@CGUID+164),
-(10001,@CGUID+165),
-(10001,@CGUID+169);
-
-REPLACE INTO spawn_group_entry(Id, Entry, MinCount, MaxCount, Chance) VALUES
-(10001,25509,1,2,0),
-(10001,25597,1,2,0),
-(10001,25597,1,2,0);
-
-DELETE FROM creature_linking WHERE guid IN(@CGUID+185,@CGUID+164,@CGUID+165,@CGUID+169);
-DELETE FROM creature_linking WHERE master_guid IN(@CGUID+185,@CGUID+164,@CGUID+165,@CGUID+169);
 

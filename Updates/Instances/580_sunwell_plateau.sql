@@ -1056,10 +1056,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+223, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+224, @CGUID+219, 1167), -- Volatile Fiend -> Volatile Fiend
 (@CGUID+219, @CGUID+348, 1024), -- Volatile Fiend -> M'uru
-(@CGUID+164, @CGUID+169, 1167), -- creature_spawn_entry -> Painbringer
-(@CGUID+165, @CGUID+169, 1167), -- creature_spawn_entry -> Painbringer
-(@CGUID+185, @CGUID+169, 1167), -- Oblivion Mage -> Painbringer
-(@CGUID+169, @CGUID+348, 1024), -- Painbringer -> M'uru
 (@CGUID+174, @CGUID+177, 1167), -- Apocalypse Guard -> Apocalypse Guard
 (@CGUID+177, @CGUID+348, 1024), -- Apocalypse Guard -> M'uru
 (@CGUID+187, @CGUID+173, 1167), -- Oblivion Mage -> Doomfire Destroyer
@@ -1132,10 +1128,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+143, 25369), (@CGUID+143, 25371), -- Sunblade Vindicator, Sunblade Dawn Priest
 (@CGUID+144, 25367), (@CGUID+144, 25371), -- Sunblade Arch Mage, Sunblade Dawn Priest
 (@CGUID+145, 25370), (@CGUID+145, 25371), -- Sunblade Dusk Priest, Sunblade Dawn Priest
-(@CGUID+164, 25509), (@CGUID+164, 25591), -- Priestess of Torment, Painbringer
-(@CGUID+165, 25509), (@CGUID+165, 25597), -- Priestess of Torment, Oblivion Mage
 (@CGUID+166, 25509), (@CGUID+166, 25597), -- Priestess of Torment, Oblivion Mage
-(@CGUID+169, 25509), (@CGUID+169, 25591), -- Priestess of Torment, Painbringer
 (@CGUID+170, 25591), (@CGUID+170, 25597), -- Painbringer, Oblivion Mage
 (@CGUID+186, 25591), (@CGUID+186, 25597); -- Painbringer, Oblivion Mage
 
@@ -1570,6 +1563,21 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+
+-- Spawn Groups
+INSERT INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
+(10001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72800, 0);
+
+INSERT INTO spawn_group_spawn(Id, Guid) VALUES
+(10001,@CGUID+185),
+(10001,@CGUID+164),
+(10001,@CGUID+165),
+(10001,@CGUID+169);
+
+INSERT INTO spawn_group_entry(Id, Entry, MinCount, MaxCount, Chance) VALUES
+(10001,25509,1,2,0),
+(10001,25597,1,2,0),
+(10001,25597,1,2,0);
 
 -- =========
 -- DBSCRIPTS
