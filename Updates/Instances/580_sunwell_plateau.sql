@@ -1565,18 +1565,21 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- Spawn Groups
+DELETE FROM spawn_group WHERE Id IN(10001);
 INSERT INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
 (10001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72800, 0);
 
+DELETE FROM spawn_group_spawn WHERE Id IN(10001);
 INSERT INTO spawn_group_spawn(Id, Guid) VALUES
 (10001,@CGUID+185),
 (10001,@CGUID+164),
 (10001,@CGUID+165),
 (10001,@CGUID+169);
 
+DELETE FROM spawn_group_entry WHERE Id IN(10001);
 INSERT INTO spawn_group_entry(Id, Entry, MinCount, MaxCount, Chance) VALUES
 (10001,25509,1,2,0),
-(10001,25597,1,2,0),
+(10001,25591,1,2,0),
 (10001,25597,1,2,0);
 
 -- =========

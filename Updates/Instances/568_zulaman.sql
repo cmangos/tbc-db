@@ -1538,8 +1538,10 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- Spawn Groups
+DELETE FROM spawn_group WHERE Id IN(10000);
 INSERT INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
 (10000, 'Malacrass', 0, 0, 10000, 0); -- spawns after custom worldstate after all 4 bosses are dead
+DELETE FROM spawn_group_spawn WHERE Id IN(10000);
 INSERT INTO spawn_group_spawn VALUES
 (10000,@CGUID+522);
 
