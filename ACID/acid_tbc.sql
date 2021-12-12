@@ -12815,7 +12815,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zamja 3399
 -- Xen'to 3400
 -- Shenthul 3401
-('340101', '3401', '22', '0', '100', '0', '78', '2460', '0', '0', '0', '0', '53', '3401', '0', '0', '15', '2460', '6', '0', '0', '0', '0', '0', 'Shenthul - OnReceive EMOTE_SALUTE - complete quest and start relay Script'),
+('340101','3401','22','0','100','1','78','2460','0','0','0','0','53','3401','0','0','15','2460','6','0','0','0','0','0','Shenthul - OnReceive EMOTE_SALUTE - complete quest and start relay Script'),
 -- Zando'zan 3402
 -- Sian'tsu 3403
 -- Jandi 3404
@@ -29845,8 +29845,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1504302','15043','0','0','100','1025','3000','6000','20000','25000','0','0','11','3604','1','32','0','0','0','0','0','0','0','0','Zulian Crocolisk - Cast Tendon Rip'),
 -- Gurubashi 15047 - Closest Player?
 ('1504701','15047','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','0','0','0','0','Gurubashi - Set Immobilized State and Disable Melee on Spawn'),
-('1504702','15047','29','0','100','0','1000','1000','0','0','0','0','11','24178','4','512','0','0','0','0','0','0','0','0','Gurubashi - Cast Will of Hakkar on Generic Timer'),
-('1504703','15047','29','0','100','0','21000','21000','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Gurubashi - Die on Generic Timer'),
+('1504702','15047','0','0','100','0','1000','1000','0','0','0','0','11','24178','4','512','0','0','0','0','0','0','0','0','Gurubashi - Cast Will of Hakkar on Generic Timer'),
+('1504703','15047','0','0','100','0','21000','21000','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Gurubashi - Die on Generic Timer'),
 -- Zulian Stalker
 ('1506701','15067','1','0','100','0','1000','1000','0','0','0','0','11','22766','0','32','0','0','0','0','0','0','0','0','Zulian Stalker - Cast Sneak OOC'),
 ('1506702','15067','9','0','100','1024','0','5','0','0','0','0','11','24337','1','0','0','0','0','0','0','0','0','0','Zulian Stalker - Cast Ambush'),
@@ -31306,6 +31306,14 @@ INSERT INTO dbscript_random_templates (id, `type`, target_id, chance, comments) 
 (15, 0, 830, 0, '2338,2339 - Random Death Texts'),
 (15, 0, 831, 0, '2338,2339 - Random Death Texts'),
 (15, 0, 832, 0, '2338,2339 - Random Death Texts'),
+(16, 0, 5955, 0, 'Junior Apothecary Holland 10665 - Random OOC Texts'),
+(16, 0, 5956, 0, 'Junior Apothecary Holland 10665 - Random OOC Texts'),
+(16, 0, 5957, 0, 'Junior Apothecary Holland 10665 - Random OOC Texts'),
+(16, 0, 5958, 0, 'Junior Apothecary Holland 10665 - Random OOC Texts'),
+(16, 0, 5959, 0, 'Junior Apothecary Holland 10665 - Random OOC Texts'),
+(16, 0, 5960, 0, 'Junior Apothecary Holland 10665 - Random OOC Texts'),
+(16, 0, 5961, 0, 'Junior Apothecary Holland 10665 - Random OOC Texts'),
+(16, 0, 5962, 0, 'Junior Apothecary Holland 10665 - Random OOC Texts'),
 
 (896, 0, 995, 0, 'Greishan Ironstove 3291 - Random OOC Texts'),
 (896, 0, 996, 0, 'Greishan Ironstove 3291 - Random OOC Texts'),

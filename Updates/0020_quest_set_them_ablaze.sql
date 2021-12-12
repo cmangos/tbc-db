@@ -86,6 +86,24 @@ DELETE FROM dbscripts_on_creature_movement WHERE id = '848003';
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `command`, `datalong`, `comments`) VALUES 
 ('848003', '39', '1', 'Kalaran the Deceiver - Enable Flying');
 
+-- Old Script - Table `dbscripts_on_creature_movement` contain unused script, id 848001.
+DELETE FROM dbscripts_on_creature_movement WHERE id = '848001';
+-- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
+-- (848001, 1000, 0, 21, 1, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kalaran the Deceiver - active');
+-- (848001, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 4456, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 3000, 0, 0, 0, 0, 0, 0, 0, 0, 4458, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 7000, 0, 0, 0, 0, 0, 0, 0, 0, 4457, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 13000, 0, 0, 0, 0, 0, 8509, 20, 7, 4459, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 15000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4.65994, 0, '');
+-- (848001, 18000, 0, 0, 0, 0, 0, 0, 0, 0, 4460, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 22000, 0, 0, 0, 0, 0, 0, 0, 0, 4461, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 27000, 0, 0, 0, 0, 0, 0, 0, 0, 4462, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 32000, 0, 0, 0, 0, 0, 8509, 20, 7, 4468, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 35000, 0, 0, 0, 0, 0, 0, 0, 0, 4464, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 38000, 0, 0, 0, 0, 0, 0, 0, 0, 4463, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 41000, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON');
+-- (848001, 44000, 0, 0, 0, 0, 0, 0, 0, 0, 4465, 0, 0, 0, 0, 0, 0, 0, 0, '');
+-- (848001, 48000, 0, 21, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kalaran the Deceiver - unactive');
 
 -- Kalaran the Deceiver should not start waypoints immediately.
 UPDATE `creature_template` SET `MovementType`=0 WHERE `entry`=8480;
