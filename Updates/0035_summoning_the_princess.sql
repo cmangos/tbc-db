@@ -4,7 +4,7 @@ DELETE FROM dbscripts_on_event WHERE id IN (383, 384, 385);
 INSERT INTO `dbscripts_on_event` (`id`, `command`, `datalong`, `datalong2`, `comments`) VALUES 
 ('383', '9', '15221', '62', 'Quest - Stone of West Binding - Yellow Aura spawn'),
 ('384', '9', '15214', '62', 'Quest - Stone of East Binding - Yellow Aura spawn'),
-('385', '9', '15219', '62', 'Quest - Stone of Outer Binding - Yellow Aura spawn'),
+('385', '9', '15219', '62', 'Quest - Stone of Outer Binding - Yellow Aura spawn');
 
 DELETE FROM dbscripts_on_quest_end WHERE id = 651;
 INSERT INTO `dbscripts_on_quest_end` (`id`, `command`, `datalong`, `datalong2`, `comments`) VALUES 
