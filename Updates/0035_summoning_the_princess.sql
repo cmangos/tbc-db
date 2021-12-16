@@ -56,7 +56,7 @@ UPDATE `quest_template` SET `DetailsEmote1`='0', `DetailsEmote2`='0', `DetailsEm
 
 DELETE FROM dbscripts_on_event WHERE id = 420;
 INSERT INTO `dbscripts_on_event` (`id`, `priority`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `x`, `y`, `z`, `o`, `comments`) VALUES 
-('420', '0', '0', '10', '2755', '3000000', '0', '0', '0','0', '-931.73', '-3111.81', '48.517', '3.27404', 'Summoning the Princess - Summon Myzrael'),
+('420', '0', '0', '10', '2755', '3000000', '0', '0', '0','0', '-943.4269', '-3119.6946', '49.04779', '4.46804', 'Summoning the Princess - Summon Myzrael'),
 ('420', '1', '0', '4', '46', '128', '2755', '50', '3', '0','0', '0', '0', '0', 'Summoning the Princess - Myzrael - Not Attackable'),
 ('420', '0', '3000', '36', '0', '0', '2755', '50', '3', '0', '0', '0', '0', '0', 'Summoning the Princess - Myzrael - Set Facing'),
 ('420', '0', '3000', '0', '0', '0', '2755', '50', '3', '842', '0', '0', '0', '0', 'Summoning the Princess - Myzrael - Say Text'),
