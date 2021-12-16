@@ -1567,7 +1567,7 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- Spawn Groups
 DELETE FROM spawn_group WHERE Id IN(10001);
 INSERT INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
-(10001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72800, 0);
+(10001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72801, 0);
 
 DELETE FROM spawn_group_spawn WHERE Id IN(10001);
 INSERT INTO spawn_group_spawn(Id, Guid) VALUES
