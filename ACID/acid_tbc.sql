@@ -29095,7 +29095,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2548305','25483','0','0','100','1025','7000','14000','12000','24000','0','0','11','46453','17','0','0','0','0','0','0','0','0','0','Shadowsword Manafiend - Cast Drain Mana'),
 -- Shadowsword Assassin 25484
 ('2548401','25484','4','0','100','0','0','0','0','0','0','0','11','46459','4','512','57','2','30','0','0','0','0','0','Shadowsword Assassin - Cast Assassin''s Mark and Enable Range Mode on Aggro'),
-('2548402','25484','0','0','100','1024','0','0','0','0','0','0','11','46460','4','512','57','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Aimed Shot and Enable Melee Mode'),
+('2548402','25484','0','0','100','1024','0','0','0','0','0','0','11','46460','4','768','57','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Aimed Shot and Enable Melee Mode'),
 ('2548403','25484','0','0','100','1025','5000','10000','25000','35000','0','0','11','46463','1','0','0','0','0','0','0','0','0','0','Shadowsword Assassin - Cast Shadowstep'),
 -- Shadowsword Deathbringer 25485 - Disease Buffet only on Tank when everyone else is dead
 ('2548501','25485','11','0','100','0','0','0','0','0','0','0','11','42459','0','34','0','0','0','0','0','0','0','0','Shadowsword Deathbringer - Cast Dual Wield (Passive) on Spawn'),
