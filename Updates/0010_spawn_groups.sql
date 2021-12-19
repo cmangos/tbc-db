@@ -67,4 +67,5 @@ REPLACE INTO spawn_group_entry(Id, Entry, MaxCount, Chance) VALUES
 (1,176150,1,0),
 (1,176151,9,0);
 
+DELETE FROM `pool_gameobject_template` WHERE `Id` IN (176150,176151); -- `pool_gameobject_template` has a non existing gameobject spawn (GUID: 0 Entry 45078) defined for pool id (16476), skipped.
 
