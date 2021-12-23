@@ -1,3 +1,9 @@
+-- Add WPL cauldron gossip menu
+DELETE FROM `gossip_menu` WHERE `entry` = 3183; -- Source: Vanilla MaNGOS
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES
+(3183, 3939, 0, 0),
+(3183, 4040, 0, 3734); -- condition 60007 = "3734	8	5230	0	0	0	0	Quest ID 5230 Rewarded"
+
 DELETE FROM gossip_menu_option WHERE menu_id IN(3183) AND id IN(0);
 INSERT INTO gossip_menu_option(menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
 ('3183', '0', '0', 'How are we doing in the battle to subvert the cauldrons?', '6552', '1', '1', '0', '0', '0', '0', '0', '', '0', '0');
