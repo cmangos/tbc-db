@@ -1294,12 +1294,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+159, 25507, 580, 1, 1772.698, 1081.986, 17.86209, 4.677482, 7200, 7200, 0, 0, 0, 0), -- Sunblade Protector
 (@CGUID+160, 25507, 580, 1, 1783.857, 1037.209, 17.62657, 2.687807, 7200, 7200, 0, 0, 0, 0), -- Sunblade Protector
 (@CGUID+163, 25509, 580, 1, 1853.727, 457.4495, 32.1155, 0.9773844, 7200, 7200, 0, 0, 0, 0), -- Priestess of Torment
-(@CGUID+164, 0, 580, 1, 1871.085, 594.3121, 32.11271, 0.1570796, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
-(@CGUID+165, 0, 580, 1, 1883.228, 598.1644, 32.11551, 3.525565, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+164, 0, 580, 1, 1871.085, 594.3121, 32.11271, 0.1570796, 7200, 7200, 0, 0, 0, 0), -- spawn_group_spawn
+(@CGUID+165, 0, 580, 1, 1883.228, 598.1644, 32.11551, 3.525565, 7200, 7200, 0, 0, 0, 0), -- spawn_group_spawn
 (@CGUID+166, 0, 580, 1, 1914.773, 535.8484, 32.09056, 0.5235988, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+167, 25509, 580, 1, 1917.303, 517.7648, 32.11562, 6.126106, 7200, 7200, 0, 0, 0, 0), -- Priestess of Torment
 (@CGUID+168, 25591, 580, 1, 1864.21, 454.597, 32.11551, 1.291544, 7200, 7200, 0, 0, 0, 0), -- Painbringer
-(@CGUID+169, 0, 580, 1, 1879.155, 587.7015, 32.11551, 2.042035, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
+(@CGUID+169, 0, 580, 1, 1879.155, 587.7015, 32.11551, 2.042035, 7200, 7200, 0, 0, 0, 0), -- spawn_group_spawn
 (@CGUID+170, 0, 580, 1, 1913.788, 508.0453, 32.1156, 5.986479, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+171, 25592, 580, 1, 1835.517, 482.012, 32.02716, 4.822407, 7200, 7200, 5, 0, 0, 1), -- Doomfire Destroyer
 (@CGUID+172, 25592, 580, 1, 1843.338, 693.5061, 32.11551, 3.979351, 7200, 7200, 0, 0, 0, 0), -- Doomfire Destroyer
@@ -1315,7 +1315,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+182, 25597, 580, 1, 1830.805, 692.5985, 32.11551, 6.126106, 7200, 7200, 0, 0, 0, 2), -- Oblivion Mage
 (@CGUID+183, 25597, 580, 1, 1845.191, 461.8214, 32.11549, 0.8203048, 7200, 7200, 0, 0, 0, 0), -- Oblivion Mage
 (@CGUID+184, 25597, 580, 1, 1849.583, 683.4805, 32.11378, 1.762783, 7200, 7200, 0, 0, 0, 2), -- Oblivion Mage
-(@CGUID+185, 25597, 580, 1, 1870.42, 603.783, 32.11551, 5.235988, 7200, 7200, 0, 0, 0, 0), -- Oblivion Mage
+(@CGUID+185, 0, 580, 1, 1870.42, 603.783, 32.11551, 5.235988, 7200, 7200, 0, 0, 0, 0), -- spawn_group_spawn
 (@CGUID+186, 0, 580, 1, 1916.655, 526.8185, 32.1088, 0.2094395, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+187, 25597, 580, 1, 1945.679, 557.8885, 32.11449, 4.939282, 7200, 7200, 0, 0, 0, 2), -- Oblivion Mage
 (@CGUID+188, 25597, 580, 1, 1954.708, 530.5291, 32.11552, 1.954769, 7200, 7200, 0, 0, 0, 2), -- Oblivion Mage
@@ -1564,23 +1564,23 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
--- Spawn Groups
-DELETE FROM spawn_group WHERE Id IN(10001);
-INSERT INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
-(10001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72801, 3);
+-- ============
+-- SPAWN GROUPS
+-- ============
 
-DELETE FROM spawn_group_spawn WHERE Id IN(10001);
-INSERT INTO spawn_group_spawn(Id, Guid) VALUES
-(10001,@CGUID+185),
-(10001,@CGUID+164),
-(10001,@CGUID+165),
-(10001,@CGUID+169);
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(58001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72801, 3);
 
-DELETE FROM spawn_group_entry WHERE Id IN(10001);
-INSERT INTO spawn_group_entry(Id, Entry, MinCount, MaxCount, Chance) VALUES
-(10001,25509,1,2,0),
-(10001,25591,1,2,0),
-(10001,25597,1,2,0);
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(58001, 25509, 1, 2, 0),
+(58001, 25591, 1, 2, 0),
+(58001, 25597, 1, 2, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`) VALUES
+(58001, @CGUID+185),
+(58001, @CGUID+164),
+(58001, @CGUID+165),
+(58001, @CGUID+169);
 
 -- =========
 -- DBSCRIPTS

@@ -29,6 +29,10 @@ DELETE FROM pool_template WHERE entry IN (SELECT pool_entry FROM pool_gameobject
 DELETE FROM pool_gameobject WHERE guid IN (SELECT guid FROM tmp_gameobject);
 DELETE FROM pool_gameobject_template WHERE id IN (SELECT id FROM tmp_gameobject);
 
+DELETE FROM spawn_group WHERE id BETWEEN 30000 AND 72499; -- map 30 to 724
+DELETE FROM spawn_group_entry WHERE id BETWEEN 30000 AND 72499;
+DELETE FROM spawn_group_spawn WHERE guid IN (SELECT guid FROM tmp_creature);
+
 DELETE FROM creature_movement WHERE id IN (SELECT guid FROM tmp_creature);
 DELETE FROM creature_movement_template WHERE entry IN (SELECT id FROM tmp_creature WHERE id NOT IN (12999,21075,23033,24110)); -- Exclude NPCs spawned in both instance and open world
 DELETE FROM creature_addon WHERE guid IN (SELECT guid FROM tmp_creature);
