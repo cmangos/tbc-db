@@ -8,5 +8,5 @@ UPDATE dbscripts_on_event SET dataint4=10003,dataint3=0 WHERE id IN(14143) AND c
 
 ALTER TABLE db_version CHANGE COLUMN required_s2436_01_mangos_dbscripts required_s2437_01_mangos_spawn_data_template_relay bit;
 
-ALTER TABLE creature_spawn_data_template ADD COLUMN RelayId INT UNSIGNED NOT NULL COMMENT 'dbscripts_on_relay' AFTER SpawnFlags;
+ALTER TABLE creature_spawn_data_template ADD COLUMN RelayId INT UNSIGNED NOT NULL DEFAULT '0' COMMENT 'dbscripts_on_relay' AFTER SpawnFlags;
 
