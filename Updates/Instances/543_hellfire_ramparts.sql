@@ -9,18 +9,19 @@ EndDBScriptData */
 SET @CGUID := 5430000; -- creatures
 SET @OGUID := 5430000; -- gameobjects
 SET @PGUID := 48200; -- pools
+SET @SGGUID := 54300; -- spawn_groups
 
 -- =========
 -- CREATURES
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
-(@CGUID+2, 1, -1270, 1642.56, 91.6092, 3.55975, 0, 0),
-(@CGUID+2, 2, -1232.97, 1662.94, 92.4019, 0.464499, 0, 0),
-(@CGUID+4, 1, -1337.58, 1676.92, 91.7461, 2.14132, 0, 0),
-(@CGUID+4, 2, -1358.19, 1701.99, 84.6861, 2.40209, 0, 0),
-(@CGUID+4, 3, -1337.58, 1676.92, 91.7461, 2.14132, 0, 0),
-(@CGUID+4, 4, -1324.93, 1661.38, 93.0835, 5.34654, 0, 0),
+-- (@CGUID+2, 1, -1270, 1642.56, 91.6092, 3.55975, 0, 0),
+-- (@CGUID+2, 2, -1232.97, 1662.94, 92.4019, 0.464499, 0, 0),
+-- (@CGUID+4, 1, -1337.58, 1676.92, 91.7461, 2.14132, 0, 0),
+-- (@CGUID+4, 2, -1358.19, 1701.99, 84.6861, 2.40209, 0, 0),
+-- (@CGUID+4, 3, -1337.58, 1676.92, 91.7461, 2.14132, 0, 0),
+-- (@CGUID+4, 4, -1324.93, 1661.38, 93.0835, 5.34654, 0, 0),
 (@CGUID+17, 1, -1276.92, 1640.51, 91.6726, 2.69188, 22000, 1173),
 (@CGUID+17, 2, -1276.52, 1638.6, 91.6777, 4.62397, 0, 0),
 (@CGUID+17, 3, -1278.69, 1636.47, 91.6955, 3.85742, 0, 0),
@@ -31,28 +32,28 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+17, 8, -1281.31, 1635.72, 91.7092, 5.35595, 0, 0),
 (@CGUID+17, 9, -1277.05, 1636.46, 91.6883, 0.177039, 0, 0),
 (@CGUID+17, 10, -1276.07, 1639.22, 91.6735, 1.16271, 0, 0),
-(@CGUID+19, 1, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
-(@CGUID+19, 2, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
-(@CGUID+19, 3, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
-(@CGUID+19, 4, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
-(@CGUID+19, 5, -1288.32, 1631.62, 91.7501, 2.00938, 0, 0),
-(@CGUID+19, 6, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
-(@CGUID+19, 7, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
-(@CGUID+19, 8, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
-(@CGUID+19, 9, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
-(@CGUID+19, 10, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
-(@CGUID+19, 11, -1288.32, 1631.62, 91.7501, 2.00938, 7000, 1726401),
-(@CGUID+19, 12, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
-(@CGUID+19, 13, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
-(@CGUID+19, 14, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
-(@CGUID+19, 15, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
-(@CGUID+19, 16, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
-(@CGUID+19, 17, -1288.32, 1631.62, 91.7501, 2.00938, 0, 0),
-(@CGUID+19, 18, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
-(@CGUID+20, 1, -1257.71, 1651, 67.9137, 1.8753, 5000, 0),
-(@CGUID+20, 2, -1267.74, 1662.96, 68.787, 2.40937, 0, 0),
-(@CGUID+20, 3, -1249, 1629.44, 68.5386, 4.67525, 0, 0),
-(@CGUID+20, 4, -1246.77, 1593.07, 68.5191, 4.23935, 0, 0),
+-- (@CGUID+19, 1, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
+-- (@CGUID+19, 2, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
+-- (@CGUID+19, 3, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
+-- (@CGUID+19, 4, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
+-- (@CGUID+19, 5, -1288.32, 1631.62, 91.7501, 2.00938, 0, 0),
+-- (@CGUID+19, 6, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
+-- (@CGUID+19, 7, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
+-- (@CGUID+19, 8, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
+-- (@CGUID+19, 9, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
+-- (@CGUID+19, 10, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
+-- (@CGUID+19, 11, -1288.32, 1631.62, 91.7501, 2.00938, 7000, 1726401),
+-- (@CGUID+19, 12, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
+-- (@CGUID+19, 13, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
+-- (@CGUID+19, 14, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
+-- (@CGUID+19, 15, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
+-- (@CGUID+19, 16, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
+-- (@CGUID+19, 17, -1288.32, 1631.62, 91.7501, 2.00938, 0, 0),
+-- (@CGUID+19, 18, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
+-- (@CGUID+20, 1, -1257.71, 1651, 67.9137, 1.8753, 5000, 0),
+-- (@CGUID+20, 2, -1267.74, 1662.96, 68.787, 2.40937, 0, 0),
+-- (@CGUID+20, 3, -1249, 1629.44, 68.5386, 4.67525, 0, 0),
+-- (@CGUID+20, 4, -1246.77, 1593.07, 68.5191, 4.23935, 0, 0),
 (@CGUID+21, 1, -1334.42, 1660.69, 68.7547, 3.5409, 0, 0),
 (@CGUID+21, 2, -1326.84, 1663.61, 68.8289, 0.341192, 0, 0),
 (@CGUID+21, 3, -1313.2, 1668.25, 66.2427, 0.20846, 0, 0),
@@ -112,25 +113,79 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+85, 7, -1403.16, 1696.94, 106.545, 0, 0, 0),
 (@CGUID+85, 8, -1378.89, 1718.07, 106.545, 0, 0, 0),
 (@CGUID+85, 9, -1363.3, 1736.06, 106.545, 0, 0, 0),
-(@CGUID+85, 10, -1354.95, 1766.59, 106.545, 0, 0, 0),
-(@CGUID+89, 1, -1292.36, 1540.43, 68.5946, 1.10731, 0, 0),
-(@CGUID+89, 2, -1282.12, 1555.41, 68.5931, 0.937666, 0, 0),
-(@CGUID+89, 3, -1269.72, 1570.64, 68.613, 0.862268, 0, 0),
-(@CGUID+89, 4, -1283.81, 1552.44, 68.5924, 4.09497, 0, 0),
-(@CGUID+89, 5, -1293.9, 1538.24, 68.5943, 4.09497, 0, 0),
-(@CGUID+89, 6, -1293.64, 1523.46, 68.5913, 4.72957, 0, 0),
-(@CGUID+89, 7, -1285.84, 1503.83, 68.5807, 5.11127, 0, 0),
-(@CGUID+89, 8, -1263.85, 1479.5, 68.5757, 5.44742, 0, 0),
-(@CGUID+89, 9, -1247.75, 1466.51, 68.5773, 5.59272, 0, 0),
-(@CGUID+89, 10, -1232.82, 1458.5, 68.5782, 5.79064, 0, 0),
-(@CGUID+89, 11, -1210.74, 1453.07, 68.5486, 6.04197, 0, 0),
-(@CGUID+89, 12, -1228.86, 1458.19, 68.5776, 2.953, 0, 0),
-(@CGUID+89, 13, -1244.22, 1466.45, 68.5761, 2.64827, 0, 0),
-(@CGUID+89, 14, -1260.87, 1481.05, 68.5715, 2.3883, 0, 0),
-(@CGUID+89, 15, -1275.45, 1494.73, 68.5715, 2.3883, 0, 0),
-(@CGUID+89, 16, -1283.63, 1505.74, 68.5756, 2.35453, 0, 0),
-(@CGUID+89, 17, -1289.75, 1518.26, 68.5811, 2.10791, 0, 0),
-(@CGUID+89, 18, -1294.24, 1535.83, 68.5937, 1.85266, 0, 0);
+(@CGUID+85, 10, -1354.95, 1766.59, 106.545, 0, 0, 0);
+-- (@CGUID+89, 1, -1292.36, 1540.43, 68.5946, 1.10731, 0, 0),
+-- (@CGUID+89, 2, -1282.12, 1555.41, 68.5931, 0.937666, 0, 0),
+-- (@CGUID+89, 3, -1269.72, 1570.64, 68.613, 0.862268, 0, 0),
+-- (@CGUID+89, 4, -1283.81, 1552.44, 68.5924, 4.09497, 0, 0),
+-- (@CGUID+89, 5, -1293.9, 1538.24, 68.5943, 4.09497, 0, 0),
+-- (@CGUID+89, 6, -1293.64, 1523.46, 68.5913, 4.72957, 0, 0),
+-- (@CGUID+89, 7, -1285.84, 1503.83, 68.5807, 5.11127, 0, 0),
+-- (@CGUID+89, 8, -1263.85, 1479.5, 68.5757, 5.44742, 0, 0),
+-- (@CGUID+89, 9, -1247.75, 1466.51, 68.5773, 5.59272, 0, 0),
+-- (@CGUID+89, 10, -1232.82, 1458.5, 68.5782, 5.79064, 0, 0),
+-- (@CGUID+89, 11, -1210.74, 1453.07, 68.5486, 6.04197, 0, 0),
+-- (@CGUID+89, 12, -1228.86, 1458.19, 68.5776, 2.953, 0, 0),
+-- (@CGUID+89, 13, -1244.22, 1466.45, 68.5761, 2.64827, 0, 0),
+-- (@CGUID+89, 14, -1260.87, 1481.05, 68.5715, 2.3883, 0, 0),
+-- (@CGUID+89, 15, -1275.45, 1494.73, 68.5715, 2.3883, 0, 0),
+-- (@CGUID+89, 16, -1283.63, 1505.74, 68.5756, 2.35453, 0, 0),
+-- (@CGUID+89, 17, -1289.75, 1518.26, 68.5811, 2.10791, 0, 0),
+-- (@CGUID+89, 18, -1294.24, 1535.83, 68.5937, 1.85266, 0, 0);
+
+INSERT INTO waypoint_path (entry, pathid, point, position_x, position_y, position_z, orientation, waittime, script_id) VALUES
+(@CGUID+2, 0, 1, -1270, 1642.56, 91.6092, 3.55975, 0, 0),
+(@CGUID+2, 0, 2, -1232.97, 1662.94, 92.4019, 0.464499, 0, 0),
+(@CGUID+4, 0, 1, -1337.58, 1676.92, 91.7461, 2.14132, 0, 0),
+(@CGUID+4, 0, 2, -1358.19, 1701.99, 84.6861, 2.40209, 0, 0),
+(@CGUID+4, 0, 3, -1337.58, 1676.92, 91.7461, 2.14132, 0, 0),
+(@CGUID+4, 0, 4, -1324.93, 1661.38, 93.0835, 5.34654, 0, 0),
+(@CGUID+19, 0, 1, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
+(@CGUID+19, 0, 2, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
+(@CGUID+19, 0, 3, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
+(@CGUID+19, 0, 4, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
+(@CGUID+19, 0, 5, -1288.32, 1631.62, 91.7501, 2.00938, 0, 0),
+(@CGUID+19, 0, 6, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
+(@CGUID+19, 0, 7, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
+(@CGUID+19, 0, 8, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
+(@CGUID+19, 0, 9, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
+(@CGUID+19, 0, 10, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
+(@CGUID+19, 0, 11, -1288.32, 1631.62, 91.7501, 2.00938, 7000, 1726401),
+(@CGUID+19, 0, 12, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
+(@CGUID+19, 0, 13, -1315.75, 1601.66, 91.7501, 4.33494, 0, 0),
+(@CGUID+19, 0, 14, -1305.9, 1593.47, 91.7652, 5.82091, 0, 0),
+(@CGUID+19, 0, 15, -1287.94, 1599.52, 91.7758, 0.217098, 0, 0),
+(@CGUID+19, 0, 16, -1279.58, 1616.86, 91.7583, 1.37478, 0, 0),
+(@CGUID+19, 0, 17, -1288.32, 1631.62, 91.7501, 2.00938, 0, 0),
+(@CGUID+19, 0, 18, -1302.75, 1628.88, 91.7496, 3.65086, 0, 0),
+(@CGUID+20, 0, 1, -1257.71, 1651, 67.9137, 1.8753, 5000, 0),
+(@CGUID+20, 0, 2, -1267.74, 1662.96, 68.787, 2.40937, 0, 0),
+(@CGUID+20, 0, 3, -1249, 1629.44, 68.5386, 4.67525, 0, 0),
+(@CGUID+20, 0, 4, -1246.77, 1593.07, 68.5191, 4.23935, 0, 0),
+(@CGUID+84, 0, 1, -1169.96, 1474.88, 68.4357, 1.14308, 0, 0),
+(@CGUID+84, 0, 2, -1170.63, 1511.93, 68.4449, 1.63161, 0, 0),
+(@CGUID+84, 0, 3, -1196.09, 1540.39, 68.4821, 2.35102, 0, 0),
+(@CGUID+84, 0, 4, -1170.63, 1511.93, 68.4449, 1.63161, 0, 0),
+(@CGUID+84, 0, 5, -1169.96, 1474.88, 68.4357, 1.14308, 0, 0),
+(@CGUID+84, 0, 6, -1181.54, 1452.92, 68.4353, 1.39127, 0, 0),
+(@CGUID+89, 0, 1, -1292.36, 1540.43, 68.5946, 1.10731, 0, 0),
+(@CGUID+89, 0, 2, -1282.12, 1555.41, 68.5931, 0.937666, 0, 0),
+(@CGUID+89, 0, 3, -1269.72, 1570.64, 68.613, 0.862268, 0, 0),
+(@CGUID+89, 0, 4, -1283.81, 1552.44, 68.5924, 4.09497, 0, 0),
+(@CGUID+89, 0, 5, -1293.9, 1538.24, 68.5943, 4.09497, 0, 0),
+(@CGUID+89, 0, 6, -1293.64, 1523.46, 68.5913, 4.72957, 0, 0),
+(@CGUID+89, 0, 7, -1285.84, 1503.83, 68.5807, 5.11127, 0, 0),
+(@CGUID+89, 0, 8, -1263.85, 1479.5, 68.5757, 5.44742, 0, 0),
+(@CGUID+89, 0, 9, -1247.75, 1466.51, 68.5773, 5.59272, 0, 0),
+(@CGUID+89, 0, 10, -1232.82, 1458.5, 68.5782, 5.79064, 0, 0),
+(@CGUID+89, 0, 11, -1210.74, 1453.07, 68.5486, 6.04197, 0, 0),
+(@CGUID+89, 0, 12, -1228.86, 1458.19, 68.5776, 2.953, 0, 0),
+(@CGUID+89, 0, 13, -1244.22, 1466.45, 68.5761, 2.64827, 0, 0),
+(@CGUID+89, 0, 14, -1260.87, 1481.05, 68.5715, 2.3883, 0, 0),
+(@CGUID+89, 0, 15, -1275.45, 1494.73, 68.5715, 2.3883, 0, 0),
+(@CGUID+89, 0, 16, -1283.63, 1505.74, 68.5756, 2.35453, 0, 0),
+(@CGUID+89, 0, 17, -1289.75, 1518.26, 68.5811, 2.10791, 0, 0),
+(@CGUID+89, 0, 18, -1294.24, 1535.83, 68.5937, 1.85266, 0, 0);
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
 
@@ -163,15 +218,159 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (17455, 0, 0, 1, 0, 0, '18950'), -- Bonechewer Beastmaster
 (17517, 0, 0, 1, 0, 0, NULL); -- Hellfire Sentry
 
+INSERT INTO `spawn_group`(`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES 
+(@SGGUID+1, 'Helfire Ramparts - Group 1', 0, 0, 0, 3),
+(@SGGUID+2, 'Helfire Ramparts - Group 2', 0, 0, 0, 3),
+-- (@SGGUID+3, 'Helfire Ramparts - Group 3', 0, 3, 0, 3), -- Bonechewer Destroyer and Archer/Darkcaster
+(@SGGUID+4, 'Helfire Ramparts - Group 4', 0, 0, 0, 3),
+-- (@SGGUID+5, 'Helfire Ramparts - Group 5', 0, 0, 0, 3), -- Bonechewer Destroyer and Archer/Darkcaster
+-- (@SGGUID+6, 'Helfire Ramparts - Group 6', 0, 0, 0, 3), -- Bonechewer Destroyer and Archer/Darkcaster
+(@SGGUID+7, 'Helfire Ramparts - Group 7', 0, 0, 0, 3),
+(@SGGUID+8, 'Helfire Ramparts - Group 8', 0, 0, 0, 3),
+(@SGGUID+9, 'Helfire Ramparts - Group 9', 0, 0, 0, 3),
+(@SGGUID+10, 'Helfire Ramparts - Group 10', 0, 0, 0, 3),
+(@SGGUID+11, 'Helfire Ramparts - Group 11', 0, 0, 0, 3),
+(@SGGUID+12, 'Helfire Ramparts - Group 12', 0, 0, 0, 3),
+(@SGGUID+13, 'Helfire Ramparts - Group 13', 0, 0, 0, 3),
+(@SGGUID+14, 'Helfire Ramparts - Group 14', 0, 0, 0, 3),
+(@SGGUID+15, 'Helfire Ramparts - Group 15 - Boss Watchkeeper Gargolmar', 0, 0, 0, 3),
+(@SGGUID+16, 'Helfire Ramparts - Group 16', 0, 0, 0, 3),
+(@SGGUID+17, 'Helfire Ramparts - Group 17', 0, 0, 0, 3),
+(@SGGUID+18, 'Helfire Ramparts - Group 18', 0, 0, 0, 3),
+(@SGGUID+19, 'Helfire Ramparts - Group 19', 0, 0, 0, 3),
+(@SGGUID+20, 'Helfire Ramparts - Group 20', 0, 0, 0, 3),
+(@SGGUID+21, 'Helfire Ramparts - Group 21', 0, 0, 0, 3),
+(@SGGUID+22, 'Helfire Ramparts - Group 22', 0, 0, 0, 3),
+(@SGGUID+23, 'Helfire Ramparts - Group 23', 0, 0, 0, 3),
+(@SGGUID+24, 'Helfire Ramparts - Group 24', 0, 0, 0, 3),
+(@SGGUID+25, 'Helfire Ramparts - Group 25', 0, 0, 0, 3),
+(@SGGUID+26, 'Helfire Ramparts - Group 26', 0, 0, 0, 3),
+(@SGGUID+27, 'Helfire Ramparts - Group 27', 0, 0, 0, 3),
+(@SGGUID+28, 'Helfire Ramparts - Group 28', 0, 0, 0, 3),
+(@SGGUID+29, 'Helfire Ramparts - Group 29', 0, 0, 0, 3),
+(@SGGUID+30, 'Helfire Ramparts - Group 30', 0, 0, 0, 3);
+
+INSERT INTO `spawn_group_spawn`(`Id`, `Guid`, `SlotId`) VALUES 
+(@SGGUID+1, @CGUID+7, 0), -- Bonechewer Hungerer
+(@SGGUID+1, @CGUID+6, 1), -- Bonechewer Hungerer
+(@SGGUID+2, @CGUID+18, 0), -- Bonechewer Hungerer
+(@SGGUID+2, @CGUID+8, 1), -- Bonechewer Hungerer
+-- (@SGGUID+3, @CGUID+51, 0), -- Bonechewer Destroyer (gets always spawned)
+-- (@SGGUID+3, @CGUID+27, 1), -- Bleeding Hollow Darkcaster
+-- (@SGGUID+3, @CGUID+102, 2), -- Bleeding Hollow Darkcaster
+-- (@SGGUID+3, @CGUID+40, 3), -- Bleeding Hollow Archer
+-- (@SGGUID+3, @CGUID+101, 4), -- Bleeding Hollow Archer
+(@SGGUID+4, @CGUID+20, 0), -- master Bonechewer Ravener
+(@SGGUID+4, @CGUID+64, 1), -- Shattered Hand Warhound
+(@SGGUID+4, @CGUID+65, 2), -- Shattered Hand Warhound
+-- (@SGGUID+5, @CGUID+48, 0), -- Bonechewer Destroyer (gets always spawned)
+-- (@SGGUID+5, @CGUID+103, 1), -- Bleeding Hollow Darkcaster
+-- (@SGGUID+5, @CGUID+104, 2), -- Bleeding Hollow Darkcaster
+-- (@SGGUID+5, @CGUID+38, 3), -- Bleeding Hollow Archer
+-- (@SGGUID+5, @CGUID+39, 4), -- Bleeding Hollow Archer
+-- (@SGGUID+6, @CGUID+49, 0), -- Bonechewer Destroyer (gets always spawned)
+-- (@SGGUID+6, @CGUID+26, 1), -- Bleeding Hollow Darkcaster
+-- (@SGGUID+6, @CGUID+105, 2), -- Bleeding Hollow Darkcaster
+-- (@SGGUID+6, @CGUID+49, 3), -- Bleeding Hollow Archer
+-- (@SGGUID+6, @CGUID+106, 4), -- Bleeding Hollow Archer
+(@SGGUID+7, @CGUID+9, 0), -- Bonechewer Hungerer
+(@SGGUID+7, @CGUID+10, 1), -- Bonechewer Hungerer
+(@SGGUID+7, @CGUID+68, 2), -- Shattered Hand Warhound
+(@SGGUID+7, @CGUID+69, 3), -- Shattered Hand Warhound
+(@SGGUID+8, @CGUID+82, 0), -- Bonechewer Ripper
+(@SGGUID+8, @CGUID+91, 1), -- Bleeding Hollow Scryer
+(@SGGUID+8, @CGUID+92, 2), -- Bleeding Hollow Scryer
+(@SGGUID+8, @CGUID+93, 3), -- Bleeding Hollow Scryer
+(@SGGUID+8, @CGUID+94, 4), -- Bleeding Hollow Scryer
+(@SGGUID+9, @CGUID+23, 0), -- Bonechewer Beastmaster
+(@SGGUID+9, @CGUID+52, 1), -- Bonechewer Destroyer
+(@SGGUID+9, @CGUID+53, 2), -- Bonechewer Destroyer
+(@SGGUID+10, @CGUID+89, 0), -- master Bonechewer Ravener
+(@SGGUID+10, @CGUID+81, 1), -- Shattered Hand Warhound
+(@SGGUID+10, @CGUID+80, 2), -- Shattered Hand Warhound
+(@SGGUID+11, @CGUID+16, 0), -- Bonechewer Hungerer
+(@SGGUID+11, @CGUID+35, 1), -- Bleeding Hollow Darkcaster
+(@SGGUID+11, @CGUID+30, 2), -- Bleeding Hollow Darkcaster
+(@SGGUID+11, @CGUID+54, 3), -- Bonechewer Destroyer
+(@SGGUID+12, @CGUID+11, 0), -- Bonechewer Hungerer
+(@SGGUID+12, @CGUID+12, 1), -- Bonechewer Hungerer
+(@SGGUID+12, @CGUID+70, 2), -- Shattered Hand Warhound
+(@SGGUID+12, @CGUID+71, 3), -- Shattered Hand Warhound
+(@SGGUID+13, @CGUID+55, 0), -- Bonechewer Destroyer
+(@SGGUID+13, @CGUID+13, 1), -- Bonechewer Hungerer
+(@SGGUID+13, @CGUID+31, 2), -- Bleeding Hollow Darkcaster
+(@SGGUID+13, @CGUID+72, 3), -- Shattered Hand Warhound
+(@SGGUID+13, @CGUID+73, 4), -- Shattered Hand Warhound
+(@SGGUID+14, @CGUID+22, 0), -- Bonechewer Ravener
+(@SGGUID+14, @CGUID+78, 1), -- Shattered Hand Warhound
+(@SGGUID+14, @CGUID+79, 2), -- Shattered Hand Warhound
+(@SGGUID+15, @CGUID+84, 0), -- Boss Watchkeeper Gargolmar
+(@SGGUID+15, @CGUID+87, 1), -- Hellfire Watcher
+(@SGGUID+15, @CGUID+88, 2), -- Hellfire Watcher
+(@SGGUID+16, @CGUID+107, 0), -- Bonechewer Destroyer
+(@SGGUID+16, @CGUID+108, 1), -- Bonechewer Destroyer
+(@SGGUID+17, @CGUID+56, 0), -- Bonechewer Destroyer
+(@SGGUID+17, @CGUID+36, 1), -- Bleeding Hollow Darkcaster
+(@SGGUID+17, @CGUID+37, 2), -- Bleeding Hollow Darkcaster
+(@SGGUID+18, @CGUID+57, 0), -- Bonechewer Destroyer 
+(@SGGUID+18, @CGUID+46, 1), -- Bleeding Hollow Archer
+(@SGGUID+18, @CGUID+75, 2), -- Shattered Hand Warhound
+(@SGGUID+18, @CGUID+74, 3), -- Shattered Hand Warhound
+(@SGGUID+18, @CGUID+47, 4), -- Bleeding Hollow Archer
+(@SGGUID+19, @CGUID+14, 0), -- Bonechewer Hungerer
+(@SGGUID+19, @CGUID+15, 1), -- Bonechewer Hungerer
+(@SGGUID+20, @CGUID+83, 0), -- Bonechewer Ripper
+(@SGGUID+20, @CGUID+95, 1), -- Bleeding Hollow Scryer
+(@SGGUID+20, @CGUID+96, 2), -- Bleeding Hollow Scryer
+(@SGGUID+20, @CGUID+97, 3), -- Bleeding Hollow Scryer
+(@SGGUID+20, @CGUID+97, 4), -- Bleeding Hollow Scryer
+(@SGGUID+21, @CGUID+58, 0), -- Bonechewer Destroyer
+(@SGGUID+21, @CGUID+59, 1), -- Bonechewer Destroyer
+(@SGGUID+22, @CGUID+50, 0), -- Bonechewer Destroyer
+(@SGGUID+22, @CGUID+76, 1), -- Shattered Hand Warhound
+(@SGGUID+22, @CGUID+1, 2), -- Bonechewer Hungerer
+(@SGGUID+22, @CGUID+32, 3), -- Bleeding Hollow Scryer
+(@SGGUID+22, @CGUID+63, 4), -- Shattered Hand Warhound
+(@SGGUID+23, @CGUID+60, 0), -- Bonechewer Destroyer
+(@SGGUID+23, @CGUID+42, 1), -- Bleeding Hollow Archer
+(@SGGUID+23, @CGUID+43, 2), -- Bleeding Hollow Archer
+(@SGGUID+24, @CGUID+61, 0), -- Bonechewer Destroyer
+(@SGGUID+24, @CGUID+41, 1), -- Bleeding Hollow Archer
+(@SGGUID+24, @CGUID+45, 2), -- Bleeding Hollow Archer
+(@SGGUID+25, @CGUID+19, 0), -- master Bonechewer Ravener
+(@SGGUID+25, @CGUID+62, 1), -- Shattered Hand Warhound
+(@SGGUID+25, @CGUID+67, 2), -- Shattered Hand Warhound
+(@SGGUID+26, @CGUID+17, 0), -- Bonechewer Hungerer
+(@SGGUID+26, @CGUID+28, 1), -- Bleeding Hollow Darkcaster
+(@SGGUID+26, @CGUID+29, 2), -- Bleeding Hollow Darkcaster
+(@SGGUID+26, @CGUID+66, 3), -- Shattered Hand Warhound
+(@SGGUID+26, @CGUID+77, 4), -- Shattered Hand Warhound
+(@SGGUID+27, @CGUID+2, 0), -- Bonechewer Hungerer
+(@SGGUID+27, @CGUID+3, 1), -- Bonechewer Hungerer
+(@SGGUID+28, @CGUID+33, 0), -- Bleeding Hollow Darkcaster
+(@SGGUID+28, @CGUID+34, 1), -- Bleeding Hollow Darkcaster
+(@SGGUID+29, @CGUID+4, 0), -- Bonechewer Hungerer
+(@SGGUID+29, @CGUID+5, 1), -- Bonechewer Hungerer
+(@SGGUID+30, @CGUID+99, 0), -- Hellfire Sentry
+(@SGGUID+30, @CGUID+100, 1), -- Hellfire Sentry
+
+INSERT INTO `spawn_group_formation`(`SpawnGroupID`, `FormationType`, `FormationSpread`, `FormationOptions`, `MovementID`, `MovementType`, `Comment`) VALUES 
+(@SGGUID+4, 2, '2.2', 0, @CGUID+20, 2, 'Bonechewer Ravener'),
+(@SGGUID+10, 2, '2.2', 0, @CGUID+89, 2, 'Bonechewer Ravener'),
+(@SGGUID+15, 2, 1, 0, @CGUID+84, 2, 'Watchkeeper Gargolmar'),
+(@SGGUID+25, 2, 1, 0, @CGUID+19, 2, 'Bonechewer Ravener'),
+(@SGGUID+27, 2, '2.2', 0, @CGUID+2, 2, 'Bonechewer Hungerer'),
+(@SGGUID+29, 2, 3, 0, @CGUID+4, 2, 'Bonechewer Hungerer');
+
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+7, @CGUID+6, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
-(@CGUID+18, @CGUID+8, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
+-- (@CGUID+7, @CGUID+6, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
+-- (@CGUID+18, @CGUID+8, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
 (@CGUID+27, @CGUID+51, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
 (@CGUID+40, @CGUID+51, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
 (@CGUID+101, @CGUID+51, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
-(@CGUID+102, @CGUID+51, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
-(@CGUID+64, @CGUID+20, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
-(@CGUID+65, @CGUID+20, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
+-- (@CGUID+102, @CGUID+51, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
+-- (@CGUID+64, @CGUID+20, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
+-- (@CGUID+65, @CGUID+20, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
 (@CGUID+38, @CGUID+48, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
 (@CGUID+39, @CGUID+48, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
 (@CGUID+103, @CGUID+48, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
@@ -179,65 +378,65 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+26, @CGUID+49, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
 (@CGUID+44, @CGUID+49, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
 (@CGUID+105, @CGUID+49, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
-(@CGUID+106, @CGUID+49, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
-(@CGUID+10, @CGUID+9, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
-(@CGUID+68, @CGUID+9, 1155), -- Shattered Hand Warhound -> Bonechewer Hungerer
-(@CGUID+69, @CGUID+9, 1155), -- Shattered Hand Warhound -> Bonechewer Hungerer
-(@CGUID+91, @CGUID+82, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
-(@CGUID+92, @CGUID+82, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
-(@CGUID+93, @CGUID+82, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
-(@CGUID+94, @CGUID+82, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
-(@CGUID+52, @CGUID+23, 1155), -- Bonechewer Destroyer -> Bonechewer Beastmaster
-(@CGUID+53, @CGUID+23, 1155), -- Bonechewer Destroyer -> Bonechewer Beastmaster
-(@CGUID+30, @CGUID+16, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Hungerer
-(@CGUID+35, @CGUID+16, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Hungerer
-(@CGUID+54, @CGUID+16, 1155), -- Bonechewer Destroyer -> Bonechewer Hungerer
-(@CGUID+80, @CGUID+89, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
-(@CGUID+81, @CGUID+89, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
-(@CGUID+12, @CGUID+11, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
-(@CGUID+70, @CGUID+11, 1155), -- Shattered Hand Warhound -> Bonechewer Hungerer
-(@CGUID+71, @CGUID+11, 1155), -- Shattered Hand Warhound -> Bonechewer Hungerer
-(@CGUID+13, @CGUID+55, 1155), -- Bonechewer Hungerer -> Bonechewer Destroyer
-(@CGUID+31, @CGUID+55, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
-(@CGUID+72, @CGUID+55, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
-(@CGUID+73, @CGUID+55, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
-(@CGUID+78, @CGUID+22, 1155), -- Shattered Hand Warhound -> Bonechewer Ravener
-(@CGUID+79, @CGUID+22, 1155), -- Shattered Hand Warhound -> Bonechewer Ravener
-(@CGUID+107, @CGUID+108, 1155), -- Bonechewer Destroyer -> Bonechewer Destroyer
-(@CGUID+36, @CGUID+56, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
-(@CGUID+37, @CGUID+56, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
-(@CGUID+46, @CGUID+57, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
-(@CGUID+47, @CGUID+57, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
-(@CGUID+74, @CGUID+57, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
-(@CGUID+75, @CGUID+57, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
-(@CGUID+15, @CGUID+14, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
-(@CGUID+95, @CGUID+83, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
-(@CGUID+96, @CGUID+83, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
-(@CGUID+97, @CGUID+83, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
-(@CGUID+98, @CGUID+83, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
-(@CGUID+59, @CGUID+58, 1155), -- Bonechewer Destroyer -> Bonechewer Destroyer
-(@CGUID+62, @CGUID+19, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
-(@CGUID+67, @CGUID+19, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
-(@CGUID+1, @CGUID+50, 1155), -- Bonechewer Hungerer -> Bonechewer Destroyer
-(@CGUID+32, @CGUID+50, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
-(@CGUID+63, @CGUID+50, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
-(@CGUID+76, @CGUID+50, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
-(@CGUID+42, @CGUID+60, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
-(@CGUID+43, @CGUID+60, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
-(@CGUID+41, @CGUID+61, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
-(@CGUID+45, @CGUID+61, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
-(@CGUID+17, @CGUID+29, 1155), -- Bonechewer Hungerer -> Bleeding Hollow Darkcaster
-(@CGUID+28, @CGUID+29, 1155), -- Bleeding Hollow Darkcaster -> Bleeding Hollow Darkcaster
-(@CGUID+66, @CGUID+29, 1155), -- Shattered Hand Warhound -> Bleeding Hollow Darkcaster
-(@CGUID+77, @CGUID+29, 1155), -- Shattered Hand Warhound -> Bleeding Hollow Darkcaster
-(@CGUID+3, @CGUID+2, 1679), -- Bonechewer Hungerer -> Bonechewer Hungerer
-(@CGUID+34, @CGUID+33, 1155), -- Bleeding Hollow Darkcaster -> Bleeding Hollow Darkcaster
-(@CGUID+5, @CGUID+4, 1679), -- Bonechewer Hungerer -> Bonechewer Hungerer
-(@CGUID+100, @CGUID+99, 1155); -- Hellfire Sentry -> Hellfire Sentry
+(@CGUID+106, @CGUID+49, 1155); -- Bleeding Hollow Archer -> Bonechewer Destroyer
+-- (@CGUID+10, @CGUID+9, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
+-- (@CGUID+68, @CGUID+9, 1155), -- Shattered Hand Warhound -> Bonechewer Hungerer
+-- (@CGUID+69, @CGUID+9, 1155), -- Shattered Hand Warhound -> Bonechewer Hungerer
+-- (@CGUID+91, @CGUID+82, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
+-- (@CGUID+92, @CGUID+82, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
+-- (@CGUID+93, @CGUID+82, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
+-- (@CGUID+94, @CGUID+82, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
+-- (@CGUID+52, @CGUID+23, 1155), -- Bonechewer Destroyer -> Bonechewer Beastmaster
+-- (@CGUID+53, @CGUID+23, 1155), -- Bonechewer Destroyer -> Bonechewer Beastmaster
+-- (@CGUID+30, @CGUID+16, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Hungerer
+-- (@CGUID+35, @CGUID+16, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Hungerer
+-- (@CGUID+54, @CGUID+16, 1155), -- Bonechewer Destroyer -> Bonechewer Hungerer
+-- (@CGUID+80, @CGUID+89, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
+-- (@CGUID+81, @CGUID+89, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
+-- (@CGUID+12, @CGUID+11, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
+-- (@CGUID+70, @CGUID+11, 1155), -- Shattered Hand Warhound -> Bonechewer Hungerer
+-- (@CGUID+71, @CGUID+11, 1155), -- Shattered Hand Warhound -> Bonechewer Hungerer
+-- (@CGUID+13, @CGUID+55, 1155), -- Bonechewer Hungerer -> Bonechewer Destroyer
+-- (@CGUID+31, @CGUID+55, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
+-- (@CGUID+72, @CGUID+55, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
+-- (@CGUID+73, @CGUID+55, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
+-- (@CGUID+78, @CGUID+22, 1155), -- Shattered Hand Warhound -> Bonechewer Ravener
+-- (@CGUID+79, @CGUID+22, 1155), -- Shattered Hand Warhound -> Bonechewer Ravener
+-- (@CGUID+107, @CGUID+108, 1155), -- Bonechewer Destroyer -> Bonechewer Destroyer
+-- (@CGUID+36, @CGUID+56, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
+-- (@CGUID+37, @CGUID+56, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
+-- (@CGUID+46, @CGUID+57, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
+-- (@CGUID+47, @CGUID+57, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
+-- (@CGUID+74, @CGUID+57, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
+-- (@CGUID+75, @CGUID+57, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
+-- (@CGUID+15, @CGUID+14, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
+-- (@CGUID+95, @CGUID+83, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
+-- (@CGUID+96, @CGUID+83, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
+-- (@CGUID+97, @CGUID+83, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
+-- (@CGUID+98, @CGUID+83, 1155), -- Bleeding Hollow Scryer -> Bonechewer Ripper
+-- (@CGUID+59, @CGUID+58, 1155), -- Bonechewer Destroyer -> Bonechewer Destroyer
+-- (@CGUID+62, @CGUID+19, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
+-- (@CGUID+67, @CGUID+19, 1679), -- Shattered Hand Warhound -> Bonechewer Ravener
+-- (@CGUID+1, @CGUID+50, 1155), -- Bonechewer Hungerer -> Bonechewer Destroyer
+-- (@CGUID+32, @CGUID+50, 1155), -- Bleeding Hollow Darkcaster -> Bonechewer Destroyer
+-- (@CGUID+63, @CGUID+50, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
+-- (@CGUID+76, @CGUID+50, 1155), -- Shattered Hand Warhound -> Bonechewer Destroyer
+-- (@CGUID+42, @CGUID+60, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
+-- (@CGUID+43, @CGUID+60, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
+-- (@CGUID+41, @CGUID+61, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
+-- (@CGUID+45, @CGUID+61, 1155), -- Bleeding Hollow Archer -> Bonechewer Destroyer
+-- (@CGUID+17, @CGUID+29, 1155), -- Bonechewer Hungerer -> Bleeding Hollow Darkcaster
+-- (@CGUID+28, @CGUID+29, 1155), -- Bleeding Hollow Darkcaster -> Bleeding Hollow Darkcaster
+-- (@CGUID+66, @CGUID+29, 1155), -- Shattered Hand Warhound -> Bleeding Hollow Darkcaster
+-- (@CGUID+77, @CGUID+29, 1155), -- Shattered Hand Warhound -> Bleeding Hollow Darkcaster
+-- (@CGUID+3, @CGUID+2, 1679), -- Bonechewer Hungerer -> Bonechewer Hungerer
+-- (@CGUID+34, @CGUID+33, 1155), -- Bleeding Hollow Darkcaster -> Bleeding Hollow Darkcaster
+-- (@CGUID+5, @CGUID+4, 1679), -- Bonechewer Hungerer -> Bonechewer Hungerer
+-- (@CGUID+100, @CGUID+99, 1155); -- Hellfire Sentry -> Hellfire Sentry
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (17280, 543, 17455, 4352, 50), -- Shattered Hand Warhound -> Bonechewer Beastmaster
-(17309, 543, 17306, 1671, 0), -- Hellfire Watcher -> Watchkeeper Gargolmar
+-- (17309, 543, 17306, 1671, 0), -- Hellfire Watcher -> Watchkeeper Gargolmar
 (17517, 543, 17536, 133, 0), -- Hellfire Sentry -> Nazan
 (17540, 543, 17308, 12304, 0); -- Fiendish Hound -> Omor the Unscarred
 
