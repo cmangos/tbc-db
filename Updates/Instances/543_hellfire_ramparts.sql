@@ -352,15 +352,15 @@ INSERT INTO `spawn_group_spawn`(`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+29, @CGUID+4, 0), -- Bonechewer Hungerer
 (@SGGUID+29, @CGUID+5, 1), -- Bonechewer Hungerer
 (@SGGUID+30, @CGUID+99, 0), -- Hellfire Sentry
-(@SGGUID+30, @CGUID+100, 1), -- Hellfire Sentry
+(@SGGUID+30, @CGUID+100, 1); -- Hellfire Sentry
 
 INSERT INTO `spawn_group_formation`(`SpawnGroupID`, `FormationType`, `FormationSpread`, `FormationOptions`, `MovementID`, `MovementType`, `Comment`) VALUES 
-(@SGGUID+4, 2, '2.2', 0, @CGUID+20, 2, 'Bonechewer Ravener'),
-(@SGGUID+10, 2, '2.2', 0, @CGUID+89, 2, 'Bonechewer Ravener'),
-(@SGGUID+15, 2, 1, 0, @CGUID+84, 2, 'Watchkeeper Gargolmar'),
-(@SGGUID+25, 2, 1, 0, @CGUID+19, 2, 'Bonechewer Ravener'),
-(@SGGUID+27, 2, '2.2', 0, @CGUID+2, 2, 'Bonechewer Hungerer'),
-(@SGGUID+29, 2, 3, 0, @CGUID+4, 2, 'Bonechewer Hungerer');
+(@SGGUID+4, 2, '3.4', 0, @CGUID+20, 2, 'Bonechewer Ravener'),
+(@SGGUID+10, 2, '3.5', 0, @CGUID+89, 2, 'Bonechewer Ravener'),
+(@SGGUID+15, 2, 3, 0, @CGUID+84, 2, 'Watchkeeper Gargolmar'),
+(@SGGUID+25, 2, 4, 0, @CGUID+19, 2, 'Bonechewer Ravener'),
+(@SGGUID+27, 2, '3.5', 0, @CGUID+2, 2, 'Bonechewer Hungerer'),
+(@SGGUID+29, 2, 4, 0, @CGUID+4, 2, 'Bonechewer Hungerer');
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- (@CGUID+7, @CGUID+6, 1155), -- Bonechewer Hungerer -> Bonechewer Hungerer
