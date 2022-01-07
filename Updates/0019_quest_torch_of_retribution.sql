@@ -12,7 +12,7 @@ INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `d
 ('3453', '22000','1', '16', '0', '0', '0', '0', '0', '0', '0', '0', 'The Torch of Retribution: Kalaran Windblade - Emote OneShotKneel'),
 ('3453', '22000','0', '0', '0', '0', '0', '4449', '0', '0', '0', '0', 'The Torch of Retribution: Kalaran Windblade - Say Text'),
 ('3453', '27000','21', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'The Torch of Retribution: Kalaran Windblade - Set ActiveObject'),
-('3453', '27000','29', '3', '1', '0', '0', '0', '0', '0', '0', '0', 'The Torch of Retribution: Kalaran Windblade - Remove NpcFlags'),
+('3453', '27000','29', '3', '1', '0', '0', '0', '0', '0', '0', '0', 'The Torch of Retribution: Kalaran Windblade - Add NpcFlags'),
 ('3453', '27000','0', '0', '0', '0', '0', '4450', '0', '0', '0', '0', 'The Torch of Retribution: Kalaran Windblade - Say Text'),
 ('3453', '27000','7', '3453', '0', '0', '0', '0', '0', '0', '0', '0', 'The Torch of Retribution: Kalaran Windblade - Player - Complete Ques');
 
