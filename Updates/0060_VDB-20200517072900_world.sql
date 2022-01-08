@@ -866,7 +866,7 @@ INSERT INTO `waypoint_path` (`entry`, `point`, `position_x`, `position_y`, `posi
 (6883, 27, -6690.26, -2159.42, 244.145, 100, 0, 0),
 (6883, 28, -6692.72, -2159.63, 244.195, 4.03171, 225000, 908602); -- 3*150000 befor, split in 2
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (908201,908301);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (908201,908301,908401);
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` BETWEEN 908601 AND 908602;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (908601, 0, 0, 29, 2, 1, 9084, 200, 7, 0, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Thunderheart - Add UNIT_NPC_FLAG_QUESTGIVER'),
@@ -875,19 +875,20 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (908601, 1000, 1, 32, 1, 0, 9084, 200, 7, 0, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Thunderheart - pause WP movement'),
 (908601, 1000, 2, 29, 3, 0, 9077, 200, 7, 0, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Warlord Goretooth - Remove UNIT_NPC_FLAG_GOSSIP & UNIT_NPC_FLAG_QUESTGIVER'),
 (908601, 1000, 3, 32, 0, 0, 9077, 200, 7, 0, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Warlord Goretooth - unpause WP movement'),
+
 -- they should not move on spawn as leader does not move
 -- (908601, 5000, 0, 3, 0, 0, 9082, 200, 7, 0, -6686.64, -2162.67, 244.195, 3.80482, 'Formation Leader (Grunt Gargal) - Thal''trak Proudtusk - Move to Spawn Position'),
 -- (908601, 5000, 0, 3, 0, 0, 9083, 200, 7, 0, -6690.19, -2156.94, 244.195, 4.01426, 'Formation Leader (Grunt Gargal) - Razal''blade - Move to Spawn Position'),
-(908601, 5000, 0, 3, 0, 0, 9084, 200, 7, 0, -6689.95, -2161.96, 244.196, 3.9968, 'Formation Leader (Grunt Gargal) - Thunderheart  - Move to Spawn Position'),
+-- (908601, 5000, 0, 3, 0, 0, 9084, 200, 7, 0, -6689.95, -2161.96, 244.196, 3.9968, 'Formation Leader (Grunt Gargal) - Thunderheart  - Move to Spawn Position'),
 -- (908601, 5000, 0, 3, 0, 0, 9085, 200, 7, 0, -6687.94, -2159.12, 244.195, 3.9968, 'Formation Leader (Grunt Gargal) - Initiate Amakkar - Move to Spawn Position'),
 -- (908601, 5000, 0, 3, 0, 0, 0, 0, 0, 0, -6692.72, -2159.63, 244.195, 4.03171, 'Formation Leader (Grunt Gargal) - Grunt Gargal - Move to Spawn Position'),
+
 (908601, 101000, 0, 32, 0, 0, 9084, 200, 7, 0, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Thunderheart - unpause WP movement'),
 (908601, 101000, 2, 29, 2, 0, 9084, 200, 7, 0, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Thunderheart - Remove UNIT_NPC_FLAG_QUESTGIVER'),
 (908601, 101000, 1, 29, 2, 0, 9082, 200, 7, 0, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Thal''trak Proudtusk - Remove UNIT_NPC_FLAG_QUESTGIVER'),
 
 (908602, 5000, 0, 29, 2, 1, 9084, 200, 7, 0, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Thunderheart - Add UNIT_NPC_FLAG_QUESTGIVER'),
 (908602, 5000, 1, 29, 2, 1, 9082, 200, 7, 0, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Thal''trak Proudtusk - Add UNIT_NPC_FLAG_QUESTGIVER'),
-(908602, 5000, 2, 0, 0, 0, 9083, 200, 7, 4692, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Razal''blade - Say'),
-(908601, 5000, 3, 3, 0, 0, 9084, 200, 7, 0, -6689.95, -2161.96, 244.196, 3.9968, 'Formation Leader (Grunt Gargal) - Thunderheart  - Move to Spawn Position');
+(908602, 5000, 2, 0, 0, 0, 9083, 200, 7, 4692, 0, 0, 0, 0, 'Formation Leader (Grunt Gargal) - Razal''blade - Say');
 
 -- other script related to this is 907701 to 907704
