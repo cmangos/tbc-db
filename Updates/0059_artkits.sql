@@ -1,3 +1,5 @@
+ALTER TABLE db_version CHANGE COLUMN required_s2439_01_mangos_groups_formation required_s2440_01_mangos_artkits bit;
+
 DROP TABLE IF EXISTS gameobject_template_addon;
 CREATE TABLE gameobject_template_addon(
 `Entry` INT UNSIGNED NOT NULL COMMENT 'gameobject_template',
