@@ -26,7 +26,7 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 ('1116', '10000', '0', '0', '0', '0','1550', '0', 'Dream Dust in the Swamp: Krazek - Say Emoted Text'),
 ('1116', '10000', '1', '34', '0', '0','0', '0', 'Dream Dust in the Swamp: Krazek - Emote OneShotWoundCritical'),
 ('1116', '12000', '0', '0', '0', '0','1551', '0', 'Dream Dust in the Swamp: Krazek - Say Text'),
-('1116', '12000', '29', '2', '0', '0','0', '0', 'Dream Dust in the Swamp: Krazek - Add NPC Flags');
+('1116', '12000', '29', '2', '1', '0','0', '0', 'Dream Dust in the Swamp: Krazek - Add NPC Flags');
 
 -- Completion script for quest Rumors for Kravel.
 DELETE FROM `dbscripts_on_quest_end` WHERE id = '1117';
@@ -48,7 +48,7 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `dat
 ('1118', '2000', '3', '0', '0', '0', '3.17649', 'Back to Booty Bay - Crank Fizzlebub - Set Orientation'),
 ('1118', '6000', '3', '0', '0', '0', '2.82158', 'Back to Booty Bay - Crank Fizzlebub - Set Orientation'),
 ('1118', '6000', '0', '0', '0', '1468', '0', 'Back to Booty Bay - Crank Fizzlebub - SayText'),
-('1118', '6000', '29', '2', '0', '0', '0', 'Back to Booty Bay - Crank Fizzlebub - Add NpcFlags'),
+('1118', '6000', '29', '2', '1', '0', '0', 'Back to Booty Bay - Crank Fizzlebub - Add NpcFlags'),
 ('1118', '9000', '3', '0', '0', '0', '2.30383', 'Back to Booty Bay - Crank Fizzlebub - Set Orientation');
 
 UPDATE `quest_template` SET `CompleteScript`='1118' WHERE (`entry`='1118');
