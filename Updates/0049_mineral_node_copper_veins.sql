@@ -1077,10 +1077,6 @@ XYZ Map: %f %f %f %u Orientation: %f' WHERE `entry` = 524;
 -- Correct Size for Felwood Truesilver Deposit, Gold Vein 181108,181109
 UPDATE `gameobject_template` SET `size` = 0.5 WHERE `entry` IN (181108,181109);
 
-UPDATE `gameobject_template` SET `ExtraFlags` = 2 WHERE `entry` IN (1731,1735,2055,3763,103713,181248); -- GAMEOBJECT_EXTRA_FLAG_DYNGUID for Copper
-UPDATE `gameobject_template` SET `ExtraFlags` = 2 WHERE `entry` IN (1732,2054,3764,103711,181249); -- GAMEOBJECT_EXTRA_FLAG_DYNGUID for Tin
-UPDATE `gameobject_template` SET `ExtraFlags` = 2 WHERE `entry` IN (1733,105569,73940); -- GAMEOBJECT_EXTRA_FLAG_DYNGUID for Silver
-
 -- Readjust some Master Mineral Pool max_limit for heavily adjusted pools (others will be adjusted as we go)
 UPDATE `pool_template` SET `max_limit` = 40 /* 80/2 */ WHERE `entry` = 2011; -- 55	Master Mineral Pool - Elwynn Forest (Mine Pooling)
 UPDATE `pool_template` SET `max_limit` = 30 /* (7+112) / 4 */ WHERE `entry` = 2030; -- 43	Master Mineral Pool - Westfall (Mine Pooling)
