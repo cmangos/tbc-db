@@ -29702,7 +29702,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hooktooth Frenzy 11374
 ('1137401','11374','11','0','100','0','0','0','0','0','0','0','11','18943','0','34','11','18950','0','34','0','0','0','0','Hooktooth Frenzy - Cast Double Attack and Invisibility and Stealth Detection on Spawn'),
 ('1137402','11374','0','0','75','1025','1000','3000','3000','5000','0','0','11','12097','1','32','0','0','0','0','0','0','0','0','Hooktooth Frenzy - Cast Pierce Armor'),
--- Jin'do the Hexxer 11380 - boss_jindo
+-- Jin'do the Hexxer 11380
+('1138002','11380','4','0','15','0','0','0','0','0','0','0','1','10449','0','0','0','0','0','0','0','0','0','0','Jin''do the Hexxer - Say on Aggro'),
 -- Bloodlord Mandokir 11382 - boss_mandokir
 -- Sandfury Speaker 11387 - Emotes missing
 ('1138701','11387','11','0','100','0','0','0','0','0','0','0','11','3417','0','34','0','0','0','0','0','0','0','0','Sandfury Speaker - Cast Thrash on Spawn'),
