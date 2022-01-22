@@ -604,7 +604,7 @@ UPDATE `gameobject` SET `animprogress` = 100, `spawntimesecsmin` = 300, `spawnti
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1066601);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
 -- entry Example
-(1066601, 0, 0, 31, 0, 0, 0, 175566, 40, 1024+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordo - Terminate Script if go.entry 175566 not found in 40 range'), --  For KW: `dbscripts_on_creature_movement` has buddy required in data_flags 1025 in command 31 for script id 1066601, but no buddy defined, skipping. datalong = entry, datalong2 = radius by wiki (go entry is new addition)
+(1066601, 0, 0, 31, 175566, 40, 0, 0, 0, 1024+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordo - Terminate Script if go.entry 175566 not found in 40 range'), -- @KW: also returns true for despawned gos currently
 (1066601, 0, 1, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordo - Set Pause Waypoints'),
 (1066601, 0, 2, 36, 0, 0, 0, 175566, 40, 1024+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordo - Face go.entry 175566'),
 (1066601, 1000, 0, 16, 6273, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordo - Play Sound'),
