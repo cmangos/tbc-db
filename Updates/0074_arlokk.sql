@@ -2,7 +2,8 @@ INSERT INTO spell_target_position(id, target_map, target_position_x, target_posi
 (24228, 309, -11516.1, -1605.31, 41.3, 0);
 
 REPLACE INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
-(1451501, 'ZG - High Priestess Arlokk', 0, 0);
+(1451501, 'ZG - High Priestess Arlokk Phase 1', 0, 0),
+(1451502, 'ZG - High Priestess Arlokk Phase 2', 0, 0);
 
 REPLACE INTO creature_spell_list(Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 (1451501, 0, 24212, 0, 100, 0, 100, 1, 8000, 8000,15000, 15000, 'High Priestess Arlokk Phase 1 - Shadow Word Pain on Random'),
