@@ -334,7 +334,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+210, 4832, 48, -818.832, -155.576, -25.7923, 4.74729, 86400, 86400, 0, 0, 0, 0), -- Twilight Lord Kelris
 (@CGUID+211, 4887, 48, -442.424, 211.822, -52.6367, 2.23402, 86400, 86400, 0, 0, 0, 0), -- Ghamoo-ra
 (@CGUID+212, 6243, 48, -412.653, 40.919, -48.1363, 4.31096, 86400, 86400, 0, 0, 0, 0), -- Gelihast
-(@CGUID+213, 12902, 48, -622.355, -10.3501, -22.777, 4.90438, 86400, 86400, 0, 0, 0, 0); -- Lorgus Jett
+(@CGUID+213, 12902, 48, -455.93, -39.96, -32.5239, 2.5, 86400, 86400, 0, 0, 0, 0), -- Lorgus Jett
+(@CGUID+214, 12902, 48, -474.22, -86.95, -39.87, 2.98, 86400, 86400, 0, 0, 0, 0), -- Lorgus Jett
+(@CGUID+215, 12902, 48, -622.355, -10.3501, -22.777, 4.90438, 86400, 86400, 0, 0, 0, 0); -- Lorgus Jett
 
 -- ===========
 -- GAMEOBJECTS
@@ -449,6 +451,7 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+92, @PGUID+90, 0, 'Blackfathom Deeps (Moonshrine Ruins) - Chest Pool');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+(@PGUID+1, 1, 'Blackfathom Deeps - Lorgus Jett (12902)'),
 (@PGUID+51, 2, 'Blackfathom Deeps - Master Mineral Pool'),
 (@PGUID+61, 2, 'Blackfathom Deeps - Bruiseweed (1622)'),
 (@PGUID+62, 4, 'Blackfathom Deeps - Master Stranglekelp Pool'),
@@ -467,7 +470,8 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
--- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+(12902, @PGUID+1, 0, 'Blackfathom Deeps - Lorgus Jett (12902)');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@OGUID+11, @PGUID+51, 0, 'Blackfathom Deeps - Tin Vein, Silver Vein (1732,1733)'),

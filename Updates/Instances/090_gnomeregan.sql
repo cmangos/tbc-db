@@ -717,8 +717,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+177, 6227, 90, -767.642, 346.271, -272.596, 5.21228, 7200, 7200, 5, 0, 0, 1), -- Mechano-Frostwalker
 (@CGUID+178, 6227, 90, -822.527, 425.77, -272.59, 0.008276, 7200, 7200, 5, 0, 0, 1), -- Mechano-Frostwalker
 (@CGUID+179, 6227, 90, -743.622, 238.119, -273.08, 2.5883, 7200, 7200, 5, 0, 0, 1), -- Mechano-Frostwalker
-(@CGUID+180, 6228, 90, -670.911, 686.071, -326.812, 2.99763, 3600, 86400, 0, 0, 0, 2), -- Dark Iron Ambassador
-(@CGUID+181, 6229, 90, -889.137, 360.668, -272.513, 6.24828, 43200, 43200, 0, 0, 0, 0), -- Crowd Pummeler 9-60
+(@CGUID+180, 6228, 90, -670.911, 686.071, -326.812, 2.99763, 86400, 86400, 0, 0, 0, 2), -- Dark Iron Ambassador
+(@CGUID+181, 6229, 90, -889.137, 360.668, -272.513, 6.24828, 86400, 86400, 0, 0, 0, 0), -- Crowd Pummeler 9-60
 (@CGUID+182, 6230, 90, -503.135, 582.624, -230.601, 2.74118, 7200, 7200, 0, 0, 0, 2), -- Peacekeeper Security Suit
 (@CGUID+183, 6230, 90, -529.127, 526.401, -273.068, 2.51303, 7200, 7200, 0, 0, 0, 2), -- Peacekeeper Security Suit
 (@CGUID+184, 6230, 90, -617.866, 521.326, -273.069, 5.91549, 7200, 7200, 0, 0, 0, 2), -- Peacekeeper Security Suit
@@ -777,7 +777,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+237, 6234, 90, -646.241, 524.73, -272.977, 2.32129, 7200, 7200, 3, 0, 0, 1), -- Mechanized Guardian
 (@CGUID+238, 6234, 90, -687.447, 719.957, -317.977, 2.87979, 7200, 7200, 3, 0, 0, 1), -- Mechanized Guardian
 (@CGUID+239, 6234, 90, -741.779, 541.255, -290.977, 3.00197, 7200, 7200, 2, 0, 0, 1), -- Mechanized Guardian
-(@CGUID+240, 6235, 90, -552.048, 502.902, -216.727, 5.75959, 43200, 43200, 0, 0, 0, 0), -- Electrocutioner 6000
+(@CGUID+240, 6235, 90, -552.048, 502.902, -216.727, 5.75959, 86400, 86400, 0, 0, 0, 0), -- Electrocutioner 6000
 (@CGUID+241, 6329, 90, -642.76, 76.9467, -183.17, 0.890118, 7200, 7200, 2, 0, 0, 1), -- Irradiated Pillager
 (@CGUID+242, 6329, 90, -588.034, 18.7032, -179.596, 5.51524, 7200, 7200, 3, 0, 0, 1), -- Irradiated Pillager
 (@CGUID+243, 6329, 90, -550.351, 137.763, -202.068, 5.48033, 7200, 7200, 5, 0, 0, 1), -- Irradiated Pillager
@@ -838,7 +838,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+298, 6407, 90, -492.279, 195.693, -193.619, 1.43117, 7200, 7200, 0, 0, 0, 0), -- Holdout Technician
 (@CGUID+299, 6407, 90, -491.399, 198.038, -193.618, 4.08407, 7200, 7200, 0, 0, 0, 0), -- Holdout Technician
 (@CGUID+300, 6407, 90, -565.122, 184.7, -193.653, 5.06145, 7200, 7200, 0, 0, 0, 0), -- Holdout Technician
-(@CGUID+301, 7079, 90, -471.39, 48.4756, -207.954, 6.03304, 43200, 43200, 0, 0, 0, 2), -- Viscous Fallout
+(@CGUID+301, 7079, 90, -471.39, 48.4756, -207.954, 6.03304, 86400, 86400, 0, 0, 0, 2), -- Viscous Fallout
 (@CGUID+302, 7603, 90, -474.927, 443.173, -230.518, 3.15905, 7200, 7200, 5, 0, 0, 1), -- Leprous Assistant
 (@CGUID+303, 7603, 90, -480.313, 440.908, -230.518, 1.76278, 7200, 7200, 2, 0, 0, 1), -- Leprous Assistant
 (@CGUID+304, 7603, 90, -481.016, 430.803, -230.518, 2.33874, 7200, 7200, 2, 0, 0, 1), -- Leprous Assistant
@@ -931,17 +931,26 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+391, 7603, 90, -679.972, 412.712, -273.064, 4.5664, 7200, 7200, 2, 0, 0, 1), -- Leprous Assistant
 (@CGUID+392, 7603, 90, -670.493, 423.687, -272.981, 0.820305, 7200, 7200, 2, 0, 0, 1), -- Leprous Assistant
 (@CGUID+393, 7603, 90, -668.682, 418.405, -272.981, 0, 7200, 7200, 2, 0, 0, 1), -- Leprous Assistant
-(@CGUID+394, 7800, 90, -531.324, 670.159, -325.185, 2.9147, 43200, 43200, 0, 0, 0, 0), -- Mekgineer Thermaplugg
+(@CGUID+394, 7800, 90, -531.324, 670.159, -325.185, 2.9147, 86400, 86400, 0, 0, 0, 0), -- Mekgineer Thermaplugg
 (@CGUID+395, 7849, 90, -445.317, 207.375, -207.823, 1.58319, 1800, 1800, 0, 0, 0, 2), -- Mobile Alert System
 (@CGUID+396, 7849, 90, -894.855, 397.924, -272.519, 1.40283, 1800, 1800, 0, 0, 0, 2), -- Mobile Alert System
 (@CGUID+397, 7849, 90, -428.066, 223.896, -211.543, 4.84694, 7200, 7200, 5, 0, 0, 1), -- Mobile Alert System
 (@CGUID+398, 7849, 90, -644.602, 512.406, -272.998, 1.35457, 1800, 1800, 0, 0, 0, 2), -- Mobile Alert System
 (@CGUID+399, 7849, 90, -804.261, 531.519, -297.366, 0.629426, 7200, 7200, 5, 0, 0, 1), -- Mobile Alert System
-(@CGUID+400, 7850, 90, -639.869, 71.6499, -183.184, 2.47837, 7200, 7200, 0, 0, 0, 0), -- Kernobee
+-- 400
 (@CGUID+401, 7897, 90, -569.716, 132.406, -202.059, 4.44676, 7200, 7200, 0, 0, 0, 2), -- Alarm-a-bomb 2600
 (@CGUID+402, 7998, 90, -514.935, -138.544, -152.399, 1.65806, 7200, 7200, 0, 0, 0, 0), -- Blastmaster Emi Shortfuse
 (@CGUID+403, 9676, 90, -559.508, 195.829, -193.647, 5.93412, 7200, 7200, 0, 0, 0, 0), -- Tink Sprocketwhistle
-(@CGUID+404, 13876, 90, -617.377, 715.521, -326.969, 2.67035, 7200, 7200, 0, 0, 0, 0); -- Mekgineer Trigger
+(@CGUID+404, 13876, 90, -617.377, 715.521, -326.969, 2.67035, 7200, 7200, 0, 0, 0, 0), -- Mekgineer Trigger
+-- 405 - 410
+(@CGUID+411, 7850, 90, -618.832, 153.15, -199.654, 6.25451, 86400, 86400, 0, 0, 0, 0), -- Kernobee
+(@CGUID+412, 7850, 90, -637.053, 101.836, -194.48, 4.76023, 86400, 86400, 0, 0, 0, 0), -- Kernobee
+(@CGUID+413, 7850, 90, -639.869, 71.6499, -183.184, 2.47837, 86400, 86400, 0, 0, 0, 0), -- Kernobee
+(@CGUID+414, 7850, 90, -621.389, 51.785, -199.647, 0.992438, 86400, 86400, 0, 0, 0, 0), -- Kernobee
+(@CGUID+415, 7850, 90, -600.079, 15.9729, -179.679, 5.47311, 86400, 86400, 0, 0, 0, 0), -- Kernobee
+(@CGUID+416, 7850, 90, -577.696, 28.5626, -197.735, 2.93043, 86400, 86400, 0, 0, 0, 0), -- Kernobee
+(@CGUID+417, 7850, 90, -540.499, 21.528, -179.737, 1.53634, 86400, 86400, 0, 0, 0, 0), -- Kernobee
+(@CGUID+418, 7850, 90, -533.081, 34.7292, -199.073, 1.89563, 86400, 86400, 0, 0, 0, 0); -- Kernobee
 
 -- ===========
 -- GAMEOBJECTS
@@ -1078,6 +1087,7 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Gnomeregan - Dark Iron Ambassador (6228)'),
+(@PGUID+2, 1, 'Gnomeregan - Kernobee (7850)'),
 (@PGUID+89, 1, 'Gnomeregan (The Dormitory) - Chest Pool'),
 (@PGUID+90, 1, 'Gnomeregan (Engineering Labs) - Chest Pool'),
 (@PGUID+91, 1, 'Gnomeregan (The Hall of Gears) - Large Iron Bound/Solid Chest #1'),
@@ -1088,10 +1098,11 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+96, 1, 'Gnomeregan - Large Iron Bound/Solid Chest #6');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+50, @PGUID+1, 70, 'Gnomeregan - Alternate creature to Dark Iron Ambassador (6228)'),
+(@CGUID+50, @PGUID+1, 70, 'Gnomeregan - Dark Iron Ambassador (Substitute)'),
 (@CGUID+180, @PGUID+1, 30, 'Gnomeregan - Dark Iron Ambassador (6228)');
 
--- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+(7850, @PGUID+2, 0, 'Gnomeregan - Kernobee (7850)');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@OGUID+98, @PGUID+91, 0, 'Gnomeregan - Large Iron Bound Chest (74447)'),

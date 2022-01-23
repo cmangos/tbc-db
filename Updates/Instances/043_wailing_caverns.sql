@@ -476,7 +476,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+278, 17, 2.10258, -137.804, -76.5998, 2.62086, 0, 0),
 (@CGUID+278, 18, -30.1591, -123.821, -72.1101, 2.78187, 0, 0),
 (@CGUID+278, 19, 1.53461, -137.419, -76.5367, 5.71297, 0, 0),
-(@CGUID+278, 20, 22.1765, -150.683, -78.5273, 5.65799, 0, 0);
+(@CGUID+278, 20, 22.1765, -150.683, -78.5273, 5.65799, 0, 0),
+(@CGUID+301, 1, -53.984, 271.39, -92.844, 2.41, 1000, 367101), -- Lady Anacondra
+(@CGUID+302, 1, 15.3449, 297.176, -87.7016, 2.80998, 1000, 367101), -- Lady Anacondra
+(@CGUID+303, 1, -67.783, 122.6, -89.94, 3.09, 1000, 367101), -- Lady Anacondra
+(@CGUID+304, 1, 46.4727, 183.984, -89.1516, 4.01967, 1000, 367101); -- Lady Anacondra
 
 DELETE FROM `creature_movement_template` WHERE entry IN (3653);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
@@ -549,8 +553,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (3653, 0, 67, -72.0043, 352.597, -106.162, 4.49793, 0, 0),
 (3653, 0, 68, -77.3223, 330.255, -106.162, 5.07125, 0, 0),
 (3653, 0, 69, -73.4961, 323.783, -106.162, 5.64066, 0, 0),
-(3653, 0, 70, -66.2326, 318.345, -106.592, 5.80559, 0, 0),
-(3671, 0, 1, 15.3449, 297.176, -87.7016, 2.80998, 1000, 367101); -- Lady Anacondra
+(3653, 0, 70, -66.2326, 318.345, -106.592, 5.80559, 0, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+68, 0, 0, 0, 0, 0, '7940'), -- Evolving Ectoplasm
@@ -682,7 +685,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+76, 3653, 43, -64.4082, 319.084, -106.699, 5.7292, 36000, 36000, 0, 0, 0, 2), -- Kresh
 (@CGUID+77, 3669, 43, -151.139, 414.367, -72.6294, 0.279253, 36000, 36000, 0, 0, 0, 0), -- Lord Cobrahn
 (@CGUID+78, 3670, 43, 36.8074, -241.064, -79.4989, 3.26377, 36000, 36000, 0, 0, 0, 0), -- Lord Pythas
-(@CGUID+79, 3671, 43, 15.3449, 297.176, -87.7016, 2.80998, 36000, 36000, 0, 0, 0, 2), -- Lady Anacondra
+-- 79
 (@CGUID+80, 3673, 43, -120.163, -24.624, -28.5832, 2.83035, 36000, 36000, 0, 0, 0, 0), -- Lord Serpentis
 (@CGUID+81, 3674, 43, -283.574, -310.881, -69.1837, 0.564664, 36000, 36000, 10, 0, 0, 1), -- Skum
 (@CGUID+82, 3678, 43, -134.965, 125.402, -78.0945, 3.07178, 7200, 7200, 0, 0, 0, 0), -- Disciple of Naralex
@@ -899,7 +902,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+293, 8886, 43, 42.8985, 478.459, -65.8646, 0.596114, 7200, 7200, 2, 0, 0, 1), -- Deviate Python
 (@CGUID+294, 8886, 43, 42.0807, 474.962, -65.9024, 4.8531, 7200, 7200, 2, 0, 0, 1), -- Deviate Python
 (@CGUID+295, 8886, 43, 48.5716, 398.164, -62.0791, 3.08051, 7200, 7200, 3, 0, 0, 1), -- Deviate Python
-(@CGUID+296, 8886, 43, 53.4507, 398.248, -63.1031, 5.6244, 7200, 7200, 3, 0, 0, 1); -- Deviate Python
+(@CGUID+296, 8886, 43, 53.4507, 398.248, -63.1031, 5.6244, 7200, 7200, 3, 0, 0, 1), -- Deviate Python
+-- 297 - 300
+(@CGUID+301, 3671, 43, -53.984, 271.39, -92.844, 2.41, 86400, 86400, 0, 0, 0, 2), -- Lady Anacondra
+(@CGUID+302, 3671, 43, 15.3449, 297.176, -87.7016, 2.80998, 86400, 86400, 0, 0, 0, 2), -- Lady Anacondra
+(@CGUID+303, 3671, 43, -67.783, 122.6, -89.94, 3.09, 86400, 86400, 0, 0, 0, 2), -- Lady Anacondra
+(@CGUID+304, 3671, 43, 46.4727, 183.984, -89.1516, 4.01967, 86400, 86400, 0, 0, 0, 2); -- Lady Anacondra
 
 -- ======
 -- EVENTS
@@ -918,7 +926,8 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+92, @PGUID+90, 0, 'Wailing Caverns (Winding Chasm) - Chest Pool');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 1, 'Wailing Caverns - Deviate Faerie Dragon / Druid of the Fang'),
+(@PGUID+1, 1, 'Wailing Caverns - Deviate Faerie Dragon (5912)'),
+(@PGUID+2, 1, 'Wailing Caverns - Lady Anacondra (3671)'),
 -- gameobjects
 (@PGUID+51, 3, 'Wailing Caverns - Earthroot (1619)'),
 (@PGUID+52, 1, 'Wailing Caverns - Bruiseweed (1622)'),
@@ -931,10 +940,11 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+92, 1, 'Wailing Caverns (Winding Chasm) - Chest Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+130, @PGUID+1, 65, 'Wailing Caverns - Druid of the Fang'),
-(@CGUID+285, @PGUID+1, 35, 'Wailing Caverns - Deviate Faerie Dragon');
+(@CGUID+130, @PGUID+1, 65, 'Wailing Caverns - Deviate Faerie Dragon (Substitute)'),
+(@CGUID+285, @PGUID+1, 35, 'Wailing Caverns - Deviate Faerie Dragon (5912)');
 
--- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+(3671, @PGUID+2, 0, 'Wailing Caverns - Lady Anacondra (3671)');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@OGUID+1, @PGUID+51, 0, 'Wailing Caverns - Earthroot (1619)'),
