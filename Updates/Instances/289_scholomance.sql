@@ -13,7 +13,7 @@ SET @PGUID := 46600; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+57, 1, 143.481, 99.0964, 104.659, 3.26377, 300000, 0),
 (@CGUID+57, 2, 143.481, 99.0964, 104.659, 3.26377, 21000, 1043201),
 (@CGUID+57, 3, 143.481, 99.0964, 104.659, 3.26377, 30000, 0),
@@ -119,7 +119,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM creature_movement_template WHERE entry IN (11551,14695);
 DELETE FROM creature_movement_template WHERE entry IN (14500) AND `pathId`=0; -- Also has movement path in Dire Maul, map 429
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Necrofiend 11551 - DoRespawnEntranceRoom()
 (11551, 0, 1, 206.34576, 80.71886, 104.24367, 100, 0, 0),
 (11551, 0, 2, 221.18945, 86.518196, 104.71484, 100, 0, 0),

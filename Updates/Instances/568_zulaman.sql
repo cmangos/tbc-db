@@ -16,7 +16,7 @@ SET @PGUID := 49900; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+40, 1, -2.0694609, 1429.6433, 11.327607, 100, 0, 0),
 (@CGUID+40, 2, 0.36654234, 1443.6418, 10.195978, 100, 0, 0),
 (@CGUID+40, 3, 1.5804709, 1455.6984, 9.445978, 100, 0, 0),
@@ -345,8 +345,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+429, 12, 432.675568, 981.687439, 0.000064, 100, 0, 0),
 (@CGUID+429, 13, 421.063110, 987.692993, 0.000064, 100, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (24159,24225,23897,23818,24504,24858);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+DELETE FROM `creature_movement_template` WHERE entry IN (24159,24225,23897,23818,24504,24858);
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Amani Eagle
 (24159, 0, 1, 376.353, 1407.34, 75.5313, 100, 0, 0),
 (24159, 0, 2, 339.1228, 1396.293, 74.28909, 100, 0, 0),

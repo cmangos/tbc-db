@@ -13,7 +13,7 @@ SET @PGUID := 47400; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+75, 1, -9654.33, 1587.96, 21.5113, 0, 0, 0),
 (@CGUID+75, 2, -9649.59, 1562.21, 21.5113, 0, 0, 0),
 (@CGUID+75, 3, -9639.38, 1544.19, 21.5113, 0, 0, 0),
@@ -945,7 +945,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+196, 49, -9320.13, 1941.71, 85.652, 0, 0, 0),
 (@CGUID+196, 50, -9334.3, 1916.92, 85.6798, 0, 0, 0);
 
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Ayamiss the Hunter - Landing Path
 (15369, 1, 1, -9689.981, 1548.296, 33.27733, 100, 0, 0),
 (15369, 1, 2, -9682.716, 1554.252, 31.41621, 100, 0, 0),

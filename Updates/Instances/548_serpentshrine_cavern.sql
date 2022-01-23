@@ -13,7 +13,7 @@ SET @PGUID := 48700; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+42, 1, 45.3171, -294.571, 1.58653, 100, 0, 2121802),
 (@CGUID+42, 2, 49.3555, -297.925, 1.58653, 100, 0, 2121802),
 (@CGUID+42, 3, 51.2663, -303.04, 1.58653, 100, 0, 2121802),
@@ -455,8 +455,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+276, 5, 311.381, -381.423, 22.7006, 100, 0, 0),
 (@CGUID+276, 6, 314.622, -373.256, 22.2985, 100, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (21253,21873,21865,22140);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+DELETE FROM `creature_movement_template` WHERE entry IN (21253,21873,21865,22140);
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Tainted Water Elemental
 -- summoned every 20 seconds by Hydross in SD2 (out of combat only)
 (21253, 0,1,-347.518,-350.367,1.0744,100,0,0),

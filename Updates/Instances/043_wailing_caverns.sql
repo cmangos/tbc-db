@@ -13,7 +13,7 @@ SET @PGUID := 45300; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+96, 1, -70.7889, 120.073, -89.6736, 0.785398, 1000, 384001), -- Druid of the Fang
 (@CGUID+99, 1, -55.2565, 274.696, -92.7608, 4.69494, 1000, 384001), -- Druid of the Fang
 (@CGUID+101, 1, 43.24, 183.35, -88.6997, 5.55015, 1000, 384001), -- Druid of the Fang
@@ -483,7 +483,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+304, 1, 46.4727, 183.984, -89.1516, 4.01967, 1000, 367101); -- Lady Anacondra
 
 DELETE FROM `creature_movement_template` WHERE entry IN (3653);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (3653, 0, 1, -44.8007, 305.259, -106.417, 5.56568, 0, 0),
 (3653, 0, 2, -32.5041, 290.754, -106.417, 5.35127, 0, 0),
 (3653, 0, 3, -20.8746, 273.006, -106.417, 5.13136, 0, 0),

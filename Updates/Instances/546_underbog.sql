@@ -14,7 +14,7 @@ SET @PGUID := 48500; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+2, 1, 93.06754, -360.3329, 33.21555, 100, 0, 0),
 (@CGUID+2, 2, 101.4254, -344.6663, 32.97791, 100, 0, 0),
 (@CGUID+2, 3, 96.96455, -311.3638, 32.52911, 100, 0, 0),
@@ -423,7 +423,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+125,44,107.8272,-362.0116,57.31628,100,0,0);
 
 DELETE FROM creature_movement_template WHERE entry IN (18105,17882,17826);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Ghaz'an (18105)
 -- water path
 ('18105', '0', '1', '234.011', '-472.349', '46', '4.60318', '0', '0'),

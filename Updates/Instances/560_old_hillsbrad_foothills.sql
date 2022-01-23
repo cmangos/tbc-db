@@ -32,7 +32,7 @@ SET @PGUID := 49600; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+321, 1, 2112.395, 49.795464, 53.86632, 100, 0, 0),
 (@CGUID+321, 2, 2116.2764, 49.749023, 53.842293, 100, 0, 0),
 (@CGUID+321, 3, 2119.165, 51.97732, 53.83542, 100, 0, 0),
@@ -1126,7 +1126,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+614, 10, 2637.223, 612.3849, 55.86766, 0, 0, 0);
 
 DELETE FROM creature_movement_template WHERE entry IN (17848,18092,18093,18094,18649,18664,18764,18765,28132,18672,18655,18656,20350,20360);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Lieutenant Drake
 -- Normal
 (17848,0,1,2150.682,126.9137,77.70723,100,1000,5), -- run on

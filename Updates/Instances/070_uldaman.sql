@@ -13,7 +13,7 @@ SET @PGUID := 45600; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+32, 1, -174.126, 137.393, -47.4112, 0, 0, 0),
 (@CGUID+32, 2, -177.074, 165.965, -47.4112, 0, 0, 0),
 (@CGUID+32, 3, -195.662, 169.764, -47.4042, 0, 0, 0),
@@ -97,7 +97,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+116, 19, -94.7018, 350.589, -49.0758, 100, 0, 0),
 (@CGUID+116, 20, -107.367, 351.402, -47.2184, 100, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+4, 0, 0, 1, 0, 0, NULL), -- Shadowforge Relic Hunter

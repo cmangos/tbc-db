@@ -36,7 +36,7 @@ SET @PGUID := 48000; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+62, 1, 519.1552, 222.2354, 1.934802, 100, 0, 0),
 (@CGUID+62, 2, 521.939, 226.1873, 1.938485, 100, 0, 0),
 (@CGUID+62, 3, 528.1561, 228.0725, 1.933536, 100, 0, 0),
@@ -435,7 +435,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+308, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001);
 
 DELETE FROM creature_movement_template WHERE entry=16807;
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Grand Warlock Nethekurse
 (16807, 0, 1, 171.8228, 289.9769, -8.185595, 100, 0, 0),
 (16807, 0, 2, 178.5562, 288.1734, -7.933493, 100, 0, 0),

@@ -13,7 +13,7 @@ SET @PGUID := 49400; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+47, 1, -68.4671, -16.5295, -0.946325, 1.00453, 0, 0),
 (@CGUID+47, 2, -50.0854, 1.97216, -0.948157, 0.717857, 0, 0),
 (@CGUID+47, 3, -38.5007, 3.36018, -0.954319, 6.24392, 0, 0),
@@ -126,7 +126,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+173, 4, -360.753, -170.636, -0.959199, 0, 0, 0),
 (@CGUID+173, 5, -365.623, -154.894, -0.959199, 0, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
 -- INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 

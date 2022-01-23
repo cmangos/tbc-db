@@ -14,7 +14,7 @@ SET @PGUID := 48200; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+2, 1, -1270, 1642.56, 91.6092, 3.55975, 0, 0),
 (@CGUID+2, 2, -1232.97, 1662.94, 92.4019, 0.464499, 0, 0),
 (@CGUID+4, 1, -1337.58, 1676.92, 91.7461, 2.14132, 0, 0),
@@ -132,7 +132,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+89, 17, -1289.75, 1518.26, 68.5811, 2.10791, 0, 0),
 (@CGUID+89, 18, -1294.24, 1535.83, 68.5937, 1.85266, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+16, 0, 0, 1, 173, 0, NULL), -- Bonechewer Hungerer

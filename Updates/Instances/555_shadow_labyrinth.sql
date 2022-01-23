@@ -15,7 +15,7 @@ SET @PGUID := 49200; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+29, 1, -367.898, -267.587, 12.6892, 0.0211422, 18000, 1863103),
 (@CGUID+29, 2, -354.834, -267.555, 12.6874, 0.0211422, 18000, 1863103),
 (@CGUID+30, 1, -254.365, -46.4247, 8.15618, 3.08923, 26000, 1863102),
@@ -438,7 +438,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+266, 7, -129.5516, -134.2706, 4.218479, 100, 0, 0);
 
 DELETE FROM creature_movement_template WHERE entry IN (18731);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Ambassador Hellmaw
 (18731, 0, 1, -156.6754, 4.982729, 8.156394, 4.677482, 2000, 1873101),
 (18731, 0, 2, -159.5139, -2.139098, 8.073091, 0, 0, 0),

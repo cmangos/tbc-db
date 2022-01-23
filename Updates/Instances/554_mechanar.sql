@@ -13,7 +13,7 @@ SET @PGUID := 49100; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+1, 1, 119.042, 78.4115, 14.9303, 3.08366, 0, 0),
 (@CGUID+1, 2, 173.877, 78.9112, 0.003358, 6.07053, 0, 0),
 (@CGUID+1, 3, 185.383, 69.3509, -0.00567, 5.58986, 0, 0),
@@ -131,7 +131,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+71, 9, 100.549, -33.547, 14.9249, 4.27902, 0, 0),
 (@CGUID+71, 10, 99.186, -44.5496, 14.9249, 4.54998, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+33, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller

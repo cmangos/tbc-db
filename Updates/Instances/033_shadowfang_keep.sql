@@ -13,7 +13,7 @@ SET @PGUID := 45000; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+13, 1, -120.853, 2167.94, 139.287, 0, 0, 0),
 (@CGUID+13, 2, -118.518, 2175.52, 140.471, 0, 0, 0),
 (@CGUID+13, 3, -118.981, 2181.69, 141.463, 0, 0, 0),
@@ -441,7 +441,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+133, 11, -233.807, 2207.58, 97.3452, 0, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (4627);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (4627,0,1,-159.547,2178.11,128.944,100,0,0), -- Arugal Voidwalker - top of stairs
 (4627,0,2,-171.113,2182.69,129.255,100,0,0),
 (4627,0,3,-177.613,2175.59,128.161,100,0,0),

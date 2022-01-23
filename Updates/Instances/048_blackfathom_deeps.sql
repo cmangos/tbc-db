@@ -13,7 +13,7 @@ SET @PGUID := 45500; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+6, 1, -632.811, 104.016, -57.2097, 0, 0, 0),
 (@CGUID+6, 2, -622.042, 66.3658, -55.776, 0, 0, 0),
 (@CGUID+6, 3, -600.079, 35.7101, -53.1381, 0, 0, 0),
@@ -57,7 +57,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+208, 3, -791.471, -170.21, -38.9471, 0, 0, 0),
 (@CGUID+208, 4, -762.794, -157.082, -46.5348, 0, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+6, 0, 0, 0, 0, 0, NULL), -- Fallenroot Shadowstalker

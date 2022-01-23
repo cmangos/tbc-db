@@ -165,7 +165,7 @@ INSERT INTO `battleground_events` (`map`, `event1`, `event2`, `description`) VAL
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+327, 1, -717.9724, -351.5104, 67.01498, 100, 0, 0),
 (@CGUID+327, 2, -672.0903, -378.3383, 65.37374, 100, 0, 0),
 (@CGUID+327, 3, -717.9724, -351.5104, 67.01498, 100, 0, 0),
@@ -293,7 +293,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+1899, 7, 33.83179, 95.94749, 21.7635, 100, 0, 0),
 (@CGUID+1899, 8, 40.82042, 103.9332, 21.93791, 4.171337, 51000, 0); -- 40-51secs something
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+36, 0, 0, 1, 0, 0, NULL), -- Irondeep Trogg

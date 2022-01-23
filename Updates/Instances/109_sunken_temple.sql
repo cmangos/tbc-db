@@ -15,10 +15,10 @@ SET @PGUID := 45800; -- pools
 -- CREATURES
 -- =========
 
--- INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
 DELETE FROM creature_movement_template WHERE entry IN (5708,5720,5721,5722,8497);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (5708, 0, 1, -369.26, 94.5071, -148.802, 100, 0, 0),
 (5708, 0, 2, -375.62, 119.789, -148.802, 100, 0, 0),
 (5708, 0, 3, -383.225, 143.882, -148.802, 100, 0, 0),

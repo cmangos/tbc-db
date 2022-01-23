@@ -16,7 +16,7 @@ SET @PGUID := 48900; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+10, 1, 218.647, 8.70929, -7.46839, 0.240802, 0, 0),
 (@CGUID+10, 2, 223.847, -1.61805, -8.21044, 5.04115, 0, 0),
 (@CGUID+10, 3, 224.021, -12.193, -9.42147, 4.71993, 0, 0),
@@ -329,7 +329,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+150, 11, 125.306, 157.433, 22.4401, 3.68492, 0, 0);
 
 DELETE FROM creature_movement_template WHERE entry IN (20865,20864);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Protean Horror
 (20865, 1, 1, 123.2132, 0.05693996, -10.1021, 100, 0, 2086501),
 (20865, 1, 2, 82.020, 0.306, -11.026, 100, 0, 0),

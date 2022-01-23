@@ -13,7 +13,7 @@ SET @PGUID := 45400; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+3, 1, 1994.4, 1976.44, 63.292, 0, 0, 0),
 (@CGUID+3, 2, 2017.38, 2002.92, 61.6866, 0, 0, 0),
 (@CGUID+10, 1, 2005.701, 1530, 80.87834, 0, 0, 0), -- 34:59
@@ -501,7 +501,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+192, 15, 2171.546, 1696.724, 56.45893, 0, 0, 0),
 (@CGUID+192, 16, 2164.323, 1691.301, 56.84164, 0, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+-- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+3, 0, 0, 0, 0, 0, NULL), -- Agathelos the Raging

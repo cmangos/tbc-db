@@ -20,7 +20,7 @@ SET @PGUID := 49700; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+INSERT INTO `creature_movement` (`id`,`point`,`PositionX`,`PositionY`,`PositionZ`,`waittime`,`ScriptId`,`orientation`) VALUES
 -- Pathing for Ashtongue Battlelord Entry: 22844
 (@CGUID+48, 1, 507.0281, 432.0702, 112.7837, 0, 0, 0),
 (@CGUID+48, 2, 518.1005, 434.3029, 112.7837, 0, 0, 0),
@@ -1639,7 +1639,7 @@ INSERT INTO `creature_movement` (`id`,`point`,`position_x`,`position_y`,`positio
 (@CGUID+697, 4, 512.1553, 30.04926, 113.553, 0, 0, 100);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (23089,23070);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- council dead path
 (23089, 1, 1, 642.5905, 305.6287, 271.6884, 100, 0, 0),
 (23089, 1, 2, 660.7646, 305.7663, 271.7024, 100, 1000, 0),
@@ -3605,7 +3605,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2319603, 0, 20, 1, 3, 30000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - MovementType 1 and Spawndist 3 (30secs)'),
 (2319604, 0, 20, 1, 5, 60000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Behemoth - MovementType 1 and Spawndist 5 (60secs)');
 
--- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

@@ -14,7 +14,7 @@ SET @PGUID := 45200; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+49, 1, -199.980743408203125, -576.72650146484375, 20.9768218994140625, 4.454451560974121093, 22000, 0),
 (@CGUID+49, 2, -192.083724975585937, -547.28924560546875, 19.30646896362304687, 1.308700442314147949, 26000, 0),
 (@CGUID+49, 3, -192.33551, -547.7468, 19.306469, 100, 0, 0),
@@ -615,7 +615,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+204, 54, -230.24435, -579.23816, 51.280838, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE entry IN (634, 642, 644, 645, 647);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Defias Overseer - Spawned by Defias Gunpowder (17155)
 (634, 1, 1, -126.69716, -615.88336, 13.5445595, 100, 0, 0),
 (634, 1, 2, -121.63004, -618.0111, 13.660362, 100, 0, 0),

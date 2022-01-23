@@ -16,7 +16,7 @@ SET @PGUID := 51000; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Pathing for Invisible Stalker Entry: 15214
 (@CGUID+13,1,133.2364,12.07051,-2.654361,0,0,0),
 (@CGUID+13,2,126.9184,13.11976,-2.735225,0,0,0),
@@ -798,7 +798,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+206,10,112.4766,-436.349,-42.15494,0,0,0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (24762,24781);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Sunblade Keeper 24762 - handled by creature_linking_template FLAG_FOLLOW atm
 -- (24762, 0, 1, 231.5867, -141.90886, -9.290644, 100, 0, 0),
 -- (24762, 0, 2, 232.50551, -157.80933, -9.297567, 100, 0, 0),
@@ -835,7 +835,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 -- (24781, 0, 17, 231.77934, -135.25781, -9.328548, 100, 1, 1); -- Falls to Ground on Death
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (24844);
-INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`position_x`,`position_y`,`position_z`,`waittime`,`script_id`,`orientation`) VALUES
+INSERT INTO `creature_movement_template` (`entry`,`pathId`,`point`,`PositionX`,`PositionY`,`PositionZ`,`waittime`,`ScriptId`,`orientation`) VALUES
 (24844,1,1,165.9681,-408.1578,-11.50428,0,0,100),
 (24844,1,2,164.3802,-397.1771,2.083333,0,0,100),
 (24844,1,3,162.7923,-386.1964,15.67094,0,0,100),

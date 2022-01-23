@@ -13,7 +13,7 @@ SET @PGUID := 46800; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+269, 1, 3621.35, -3514.28, 137.12, 0, 0, 0),
 (@CGUID+269, 2, 3668.23, -3522.45, 137.885, 0, 0, 0),
 (@CGUID+269, 3, 3621.35, -3514.28, 137.12, 0, 0, 0),
@@ -576,7 +576,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+466, 10, 3433.51, -3070.11, 136.533, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (10808);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Timmy the Cruel 10808
 (10808, 0, 1, 3622.562, -3187.691, 130.639, 100, 0, 0),
 (10808, 0, 2, 3637.907, -3196.123, 128.7287, 100, 0, 0),

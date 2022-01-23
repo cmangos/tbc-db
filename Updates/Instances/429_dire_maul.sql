@@ -18,7 +18,7 @@ SET @PGUID := 47200; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+144, 1, 468.33, 3.67, -3.9162, 100, 0, 0),
 (@CGUID+144, 2, 469.788, 46.4686, -3.91727, 100, 0, 0),
 (@CGUID+144, 3, 478.84, 75.12, -3.88, 100, 0, 0),
@@ -746,7 +746,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 
 DELETE FROM creature_movement_template WHERE entry IN (11492,13280,14321,14323,14325,14327,14351,14354,14483,14482,14241,14353,14566);
 DELETE FROM creature_movement_template WHERE entry IN (14500) AND `pathId`=1; -- Also has movement path in Scholomance, map 289
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Alzzin the Wildshaper
 (11492, 0, 1, 274.844, -427.251, -119.962, 0, 30000, 1149201),
 (11492, 0, 2, 262.298, -445.57, -119.962, 0, 100, 1149202),

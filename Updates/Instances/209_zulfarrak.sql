@@ -14,7 +14,7 @@ SET @PGUID := 46100; -- pools
 -- CREATURES
 -- =========
 
-INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (@CGUID+16, 1, 1489.7271728515625, 824.16650390625, 9.086693763732910156, 6.003932476043701171, 1, 564801),
 (@CGUID+17, 1, 1488.543212890625, 816.12249755859375, 9.214446067810058593, 5.375614166259765625, 1, 565001),
 (@CGUID+18, 1, 1504.884521484375, 818.5782470703125, 8.974157333374023437, 2.460914134979248046, 1, 564801),
@@ -480,7 +480,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `pos
 (@CGUID+298, 45, 1698.88, 886.521, 9.00179, 100, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (7272,7273,7604,7605,7606,7607,7608,7795,10080,10082);
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (7272, 0, 1, 1799.0774, 844.6981, 9.001786, 0, 0, 0),
 (7272, 0, 2, 1815.492, 849.24835, 9.001789, 0, 0, 0),
 (7272, 0, 3, 1825.8649, 874.25726, 9.001789, 0, 0, 0),
