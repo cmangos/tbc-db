@@ -18135,7 +18135,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2081201','20812','1','0','100','1','70000','90000','70000','90000','0','0','54','0','0','10024','45','5','17','0','0','0','0','0','Corki - Random Say and Throw AI Event 5 (A) OOC'),
 -- Legion Fel Cannon 21233
 ('2123301','21233','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Legion Fel Cannon - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
-('2123302','21233','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
+('2123302','21233','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','256','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
 -- Crashing Wave-Spirit
 ('2230901','22309','0','0','100','1025','0','1000','10000','18000','0','0','11','34425','1','0','0','0','0','0','0','0','0','0','Crashing Wave-Spirit - Cast Water Bolt'),
 -- Storming Wind-Ripper
