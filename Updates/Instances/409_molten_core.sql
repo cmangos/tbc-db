@@ -8,6 +8,8 @@ EndDBScriptData */
 SET @CGUID := 4090000; -- creatures
 SET @OGUID := 4090000; -- gameobjects
 SET @PGUID := 47100; -- pools
+SET @GROUP_ID := 4090000;
+SET @PATH_ID := 4090000;
 
 -- =========
 -- CREATURES
@@ -430,7 +432,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+265, 37, 736.271, -1211.63, -118.9, 0, 0, 0),
 (@CGUID+265, 38, 759.382, -1228.88, -119.276, 0, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (12056,12118,12264);
+DELETE FROM creature_movement_template WHERE entry IN (12056,12264);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (12056, 0, 1, 739.986, -953.215, -185.755, 100, 0, 5), -- Run
 (12056, 0, 2, 716.32, -910.881, -193.155, 100, 0, 0),
@@ -449,16 +451,6 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (12056, 0, 15, 740.4, -949.379, -186.349, 100, 0, 0),
 (12056, 0, 16, 746.603, -966.558, -181.564, 100, 0, 0),
 (12056, 0, 17, 747.547, -981.676, -178.401, 100, 0, 0),
-(12118, 0, 1, 1007.78, -958.088, -180.174, 100, 0, 0),
-(12118, 0, 2, 1014.45, -978.563, -181.185, 100, 0, 0),
-(12118, 0, 3, 1037.02, -986.342, -181.516, 100, 0, 0),
-(12118, 0, 4, 1053.15, -990.755, -182.661, 100, 0, 0),
-(12118, 0, 5, 1070.41, -1006.77, -185.544, 100, 0, 0),
-(12118, 0, 6, 1053.98, -989.048, -182.553, 100, 0, 0),
-(12118, 0, 7, 1039.57, -983.699, -181.317, 100, 0, 0),
-(12118, 0, 8, 1014.96, -977.653, -181.223, 100, 0, 0),
-(12118, 0, 9, 1007.78, -958.088, -180.174, 100, 0, 0),
-(12118, 0, 10, 1000.2, -955.407, -179.583, 100, 0, 0),
 (12264, 0, 1, 582.632, -799.272, -205.379, 0.028569, 0, 0),
 (12264, 0, 2, 589.019, -801.701, -205.301, 5.56877, 0, 0),
 (12264, 0, 3, 590.286, -807.078, -205.236, 4.75195, 0, 0),
@@ -595,8 +587,18 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (11672, 409, 11988, 1031, 0), -- Core Rager -> Golemagg the Incinerator
 (11673, 409, 11982, 1024, 0), -- Ancient Core Hound -> Magmadar
 (12099, 409, 12057, 1543, 0), -- Firesworn -> Garr
-(12101, 409, 12057, 1024, 0), -- Lava Surger -> Garr
-(12119, 409, 12118, 1543, 0); -- Flamewaker Protector -> Lucifron
+(12101, 409, 12057, 1024, 0); -- Lava Surger -> Garr
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@GROUP_ID, 'The Molten Core - Lucifron', 0, 0, 0, 3);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@GROUP_ID, @CGUID+266, 0),
+(@GROUP_ID, @CGUID+267, 1),
+(@GROUP_ID, @CGUID+268, 2);
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@GROUP_ID, 4, 5, 0, @PATH_ID, 4, 'The Molten Core - Lucifron');
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 11658, 409, 955.057, -656.78, -199.603, 4.81711, 43200, 43200, 0, 0, 0, 0), -- Molten Giant
@@ -864,9 +866,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+263, 12101, 409, 691.633, -662.572, -209.615, 5.21482, 1680, 1680, 0, 0, 0, 2), -- Lava Surger
 (@CGUID+264, 12101, 409, 608.527, -1193, -195.737, 0.417171, 1680, 1680, 0, 0, 0, 2), -- Lava Surger
 (@CGUID+265, 12101, 409, 758.029, -1227.54, -119.574, 2.51049, 1680, 1680, 0, 0, 0, 2), -- Lava Surger
-(@CGUID+266, 12118, 409, 1000.2, -955.407, -179.583, 5.93384, 604800, 604800, 0, 0, 0, 2), -- Lucifron
-(@CGUID+267, 12119, 409, 1000.2, -955.407, -179.583, 6.18019, 7200, 7200, 0, 0, 0, 0), -- Flamewaker Protector
-(@CGUID+268, 12119, 409, 1000.2, -955.407, -179.583, 5.8443, 7200, 7200, 0, 0, 0, 0), -- Flamewaker Protector
+(@CGUID+266, 12118, 409, 1000.20257568359375, -955.40692138671875, -179.582534790039062, 0.0, 604800, 604800, 0, 0, 0, 0), -- Lucifron - a boss, cant find out its spawn loc, this is the first wp
+(@CGUID+267, 12119, 409, 1002.78607177734375, -951.76617431640625, -178.620162963867187, 0.0, 604800, 604800, 0, 0, 0, 0), -- Flamewaker Protector
+(@CGUID+268, 12119, 409, 1002.24871826171875, -959.68133544921875, -180.471405029296875, 0.0, 604800, 604800, 0, 0, 0, 0), -- Flamewaker Protector
 (@CGUID+269, 12259, 409, 898.074, -545.87, -203.405, 4.81711, 604800, 604800, 0, 0, 0, 0), -- Gehennas
 (@CGUID+270, 12264, 409, 583.49, -799.755, -205.356, 0.23952, 604800, 604800, 0, 0, 0, 2); -- Shazzrah
 
