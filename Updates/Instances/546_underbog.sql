@@ -1167,7 +1167,7 @@ INSERT INTO spawn_group_formation(Id, FormationType, FormationSpread, FormationO
 
 -- TODO: Clean up once formations stabilize
 REPLACE INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
-(10002, 'UB - Ray formation - Hungarfen trash', 0, 0, 0, 3);
+(10002, 'UB - Ray formation - Hungarfen trash', 0, 0, 0, 1);
 REPLACE INTO spawn_group_spawn(Id, Guid, SlotId) VALUES
 (10002,@CGUID+13,0),
 (10002,@CGUID+16,1),
@@ -1187,7 +1187,7 @@ INSERT INTO waypoint_path(PathId, Point, PositionX, PositionY, PositionZ, Orient
 ('10002', '8', '33.423', '-220.337', '-4.53293', '0', '0', '0', NULL);
 
 REPLACE INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
-(10003, 'UB - Naga Broken formation - Ghazan trash', 0, 0, 0, 3);
+(10003, 'UB - Naga Broken formation - Ghazan trash', 0, 0, 0, 1);
 REPLACE INTO spawn_group_spawn(Id, Guid, SlotId) VALUES
 (10003,@CGUID+61,1),
 (10003,@CGUID+62,2),
