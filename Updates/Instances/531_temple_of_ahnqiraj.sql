@@ -916,9 +916,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (15984, 0, 0, 1, 0, 0, NULL); -- Sartura's Royal Guard
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+7, @CGUID+460, 1024), -- Vekniss Warrior -> Battleguard Sartura
-(@CGUID+10, @CGUID+460, 1024), -- Vekniss Warrior -> Battleguard Sartura
-
 (@CGUID+73, @CGUID+72, 515), -- Vekniss Hive Crawler -> Vekniss Hive Crawler
 (@CGUID+75, @CGUID+74, 515), -- Vekniss Hive Crawler -> Vekniss Hive Crawler
 (@CGUID+77, @CGUID+76, 515), -- Vekniss Hive Crawler -> Vekniss Hive Crawler
@@ -1055,10 +1052,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+336, @CGUID+330, 1167),
 (@CGUID+338, @CGUID+330, 1167),
 (@CGUID+335, @CGUID+331, 1167),
-(@CGUID+339, @CGUID+331, 1167),
-(@CGUID+468, @CGUID+460, 1671),
-(@CGUID+469, @CGUID+460, 1671),
-(@CGUID+470, @CGUID+460, 1671);
+(@CGUID+339, @CGUID+331, 1167);
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (15229, 531, 15510, 1024, 0), -- Vekniss Soldier -> Fankriss the Unyielding
@@ -1083,8 +1077,7 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (15802, 531, 15727, 4128, 0), -- Flesh Tentacle -> C'Thun
 (15904, 531, 15727, 4128, 0), -- Tentacle Portal -> C'Thun
 (15910, 531, 15727, 4128, 0), -- Giant Tentacle Portal -> C'Thun
-(15922, 531, 15299, 4112, 0), -- Viscidus Trigger -> Viscidus
-(15984, 531, 15516, 1543, 0); -- Sartura's Royal Guard -> Battleguard Sartura
+(15922, 531, 15299, 4112, 0); -- Viscidus Trigger -> Viscidus
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+56, 15236),(@CGUID+56, 15249), -- Vekniss Wasp, Qiraji Lasher
@@ -1264,7 +1257,26 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+9, 40, -8327.1826171875, 1855.6110839843750, -3.23197579383850097, 100, 0, 0),
 (@PATH_ID+9, 41, -8336.6074218750, 1904.4464111328125, -2.06059956550598144, 100, 0, 0),
 (@PATH_ID+9, 42, -8351.1455078125, 1947.5950927734375, -1.85638904571533203, 100, 0, 0),
-(@PATH_ID+9, 43, -8356.0234375000, 1966.8970947265625, -2.91426014900207519, 100, 0, 0);
+(@PATH_ID+9, 43, -8356.0234375000, 1966.8970947265625, -2.91426014900207519, 100, 0, 0),
+
+(@PATH_ID+10, 01, -8281.8828125000, 1688.6496582031250, -24.9406890869140625, 100, 0, 0),
+(@PATH_ID+10, 02, -8277.1748046875, 1719.1597900390625, -18.7555561065673828, 100, 0, 0),
+(@PATH_ID+10, 03, -8264.5439453125, 1744.8571777343750, -14.9120664596557617, 100, 0, 0),
+(@PATH_ID+10, 04, -8256.1757812500, 1706.1317138671875, -25.5842189788818359, 100, 0, 0),
+(@PATH_ID+10, 05, -8260.7451171875, 1661.0098876953125, -30.5655422210693359, 100, 0, 0),
+(@PATH_ID+10, 06, -8261.7705078125, 1630.5655517578125, -35.7980155944824218, 100, 0, 0),
+(@PATH_ID+10, 07, -8281.7460937500, 1643.8709716796875, -32.4909286499023437, 100, 0, 0),
+(@PATH_ID+10, 08, -8302.4843750000, 1657.6636962890625, -29.6425762176513671, 100, 0, 0),
+(@PATH_ID+10, 09, -8322.0996093750, 1681.1958007812500, -23.7046375274658203, 100, 0, 0),
+(@PATH_ID+10, 10, -8337.4804687500, 1695.2745361328125, -20.5785617828369140, 100, 0, 0),
+(@PATH_ID+10, 11, -8308.3955078125, 1705.1285400390625, -20.3506164550781250, 100, 0, 0),
+(@PATH_ID+10, 12, -8276.4521484375, 1706.4705810546875, -21.6512355804443359, 100, 0, 0),
+(@PATH_ID+10, 13, -8251.4218750000, 1708.8326416015625, -25.7455177307128906, 100, 0, 0),
+(@PATH_ID+10, 14, -8224.5312500000, 1711.2187500000000, -27.2649269104003906, 100, 0, 0),
+(@PATH_ID+10, 15, -8261.4394531250, 1684.3287353515625, -28.2064571380615234, 100, 0, 0),
+(@PATH_ID+10, 16, -8286.0615234375, 1662.6568603515625, -29.5750389099121093, 100, 0, 0),
+(@PATH_ID+10, 17, -8321.0488281250, 1634.6907958984375, -32.0323295593261718, 100, 0, 0),
+(@PATH_ID+10, 18, -8299.0771484375, 1670.9205322265625, -27.8040199279785156, 100, 0, 0);
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@GROUP_ID, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 000', 0, 0, 0, 3),
@@ -1276,7 +1288,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+6, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 006', 0, 0, 0, 1),
 (@GROUP_ID+7, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 007', 0, 0, 0, 3),
 (@GROUP_ID+8, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 000', 0, 0, 0, 1),
-(@GROUP_ID+9, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 001', 0, 0, 0, 1);
+(@GROUP_ID+9, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 001', 0, 0, 0, 1),
+(@GROUP_ID+10, 'Temple of Ahn''Qiraj - Battleguard Sartura', 0, 0, 0, 3);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID, @CGUID+159, 0),
@@ -1334,7 +1347,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 (@GROUP_ID+9, @CGUID+10, 0),
 (@GROUP_ID+9, @CGUID+11, 1),
-(@GROUP_ID+9, @CGUID+12, 2);
+(@GROUP_ID+9, @CGUID+12, 2),
+
+(@GROUP_ID+10, @CGUID+460, 0),
+(@GROUP_ID+10, @CGUID+468, 1),
+(@GROUP_ID+10, @CGUID+469, 2),
+(@GROUP_ID+10, @CGUID+470, 3);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@GROUP_ID, 6, 6, 0, @PATH_ID, 4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 000'),
@@ -1346,7 +1364,8 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@GROUP_ID+6, 6, 6, 0, @PATH_ID+6, 4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 006'),
 (@GROUP_ID+7, 6, 6, 0, @PATH_ID+7, 4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 007'),
 (@GROUP_ID+8, 1, 5, 0, @PATH_ID+8, 4, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 000'),
-(@GROUP_ID+9, 1, 5, 0, @PATH_ID+9, 4, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 001');
+(@GROUP_ID+9, 1, 5, 0, @PATH_ID+9, 4, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 001'),
+(@GROUP_ID+10, 6, 6, 0, @PATH_ID+10, 2, 'Temple of Ahn''Qiraj - Battleguard Sartura');
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 15229, 531, -7955.62, 1322.46, -90.46, 4.38823, 600, 600, 0, 0, 0, 2), -- Vekniss Soldier
@@ -1783,7 +1802,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+457, 15509, 531, -8532.09, 1696.53, -90.26, 1.57, 604800, 604800, 0, 0, 0, 2), -- Princess Huhuran
 (@CGUID+458, 15510, 531, -8085.39, 1196.72, -91.97, 0.62, 604800, 604800, 5, 0, 0, 1), -- Fankriss the Unyielding
 (@CGUID+459, 15511, 531, -8567.05, 2175.89, -4.06608, 4.36944, 604800, 604800, 0, 0, 0, 0), -- Lord Kri
-(@CGUID+460, 15516, 531, -8337.2,  1596.45, -31.2387, 0.923705, 604800, 604800, 0, 0, 0, 2), -- Battleguard Sartura
+(@CGUID+460, 15516, 531, -8281.88, 1688.65, -25.0961, 0.0, 604800, 604800, 0, 0, 0, 0), -- Battleguard Sartura
 (@CGUID+461, 15543, 531, -8586.73, 2173.15, -4.33533, 5.05628, 604800, 604800, 0, 0, 0, 0), -- Princess Yauj
 (@CGUID+462, 15544, 531, -8549.55, 2161.72, -3.6664, 4.46724, 604800, 604800, 0, 0, 0, 2), -- Vem
 (@CGUID+463, 15589, 531, -8570.3,  1991.26, 100.4, 3.44, 604800, 604800, 0, 0, 0, 0), -- Eye of C'Thun
@@ -1791,9 +1810,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+465, 15896, 531, -8570.25, 1991.36, 100.221, 3.47, 25, 25, 0, 0, 0, 0), -- C'Thun Portal
 (@CGUID+466, 15957, 531, -9188.45, 2091.56, -64.17, 6.01, 604800, 604800, 0, 0, 0, 0), -- Ouro Spawner
 (@CGUID+467, 15963, 531, -8953.3,  1233.64, -99.718, 5.3058, 604800, 604800, 0, 0, 0, 0), -- The Master's Eye
-(@CGUID+468, 15984, 531, -8333.34, 1601.4,  -32.4308, 0.923705, 604800, 604800, 0, 0, 0, 0), -- Sartura's Royal Guard
-(@CGUID+469, 15984, 531, -8334.68, 1590.67, -30.7361, 0.923705, 604800, 604800, 0, 0, 0, 0), -- Sartura's Royal Guard
-(@CGUID+470, 15984, 531, -8343.36, 1596.95, -30.7423, 0.923705, 604800, 604800, 0, 0, 0, 0), -- Sartura's Royal Guard
+(@CGUID+468, 15984, 531, -8272.6230468750, 1681.0164794921875, -27.7749671936035156, 0.0, 604800, 604800, 0, 0, 0, 0), -- Sartura's Royal Guard
+(@CGUID+469, 15984, 531, -8285.5244140625, 1693.6724853515625, -23.7936439514160156, 0.0, 604800, 604800, 0, 0, 0, 0), -- Sartura's Royal Guard
+(@CGUID+470, 15984, 531, -8284.9335937500, 1679.3469238281250, -26.8159446716308593, 0.0, 604800, 604800, 0, 0, 0, 0), -- Sartura's Royal Guard
 -- Beetle
 (@CGUID+471, 15475, 531, -8344.54, 1795.33, -1.97901, 5.19843, 25, 25, 12, 0, 0, 1),
 (@CGUID+472, 15475, 531, -8414.74, 2047.43, 9.12548, 1.67446, 25, 25, 20, 0, 0, 1),
