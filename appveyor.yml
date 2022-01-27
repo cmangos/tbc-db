@@ -57,10 +57,7 @@ test_script:
             $env:CORE_HASH = git rev-parse --short HEAD;
             $env:CORE_HASH = $env:COMMIT_URL + $env:CORE_HASH;
             $env:Path += ";C:\Program Files\MySql\MySQL Server 5.7\bin";
-            Write-Host "Creating tbcmangos DATABASE ..." -f Yellow;
-            $env:MYSQL_PWD="Password12!";
-            cmd /c 'mysql -u root < C:\projects\core\sql\create\db_create_mysql.sql';
-            cmd /c 'mysql -u root -Dtbcmangos < C:\projects\core\sql\base\mangos.sql';
+            Write-Host "Creating db install script config file ..." -f Yellow;
             cd C:\projects\database;
             $EOF = "`n";
             $configs = 'MYSQL_HOST="localhost"' + $EOF;
@@ -77,8 +74,10 @@ test_script:
             $configs += 'FORCE_WAIT="NO"' + $EOF;
             [System.IO.File]::WriteAllText("C:\projects\database\InstallFullDB.config", $configs);
             Write-Host "Launching database install script ..." -f Yellow;
-            bash InstallFullDB.sh;
+            bash InstallFullDB.sh -InstallAll root Password12! DeleteAll;
             md C:\projects\database\FullDB
+            Write-Host "Dumping builded database ..." -f Yellow;
+            $env:MYSQL_PWD="Password12!";
             cmd /c 'mysqldump -u root tbcmangos > C:\projects\database\FullDB\mangos.sql';
             cmd /c 'mysqldump -u root tbccharacters > C:\projects\database\FullDB\characters.sql';
             cmd /c 'mysqldump -u root tbcrealmd > C:\projects\database\FullDB\realmd.sql';
