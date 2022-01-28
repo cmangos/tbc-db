@@ -9,6 +9,8 @@ EndDBScriptData */
 SET @CGUID := 5460000; -- creatures
 SET @OGUID := 5460000; -- gameobjects
 SET @PGUID := 48500; -- pools
+SET @GROUP_ID := 5460000;
+SET @PATH_ID := 5460000;
 
 -- =========
 -- CREATURES
@@ -55,14 +57,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+12, 4, 54.9093, -99.7989, -2.74677, 0, 0, 0),
 (@CGUID+12, 5, 69.4635, -79.4921, -2.75098, 0, 0, 0),
 (@CGUID+12, 6, 72.8787, -66.5033, -2.75098, 0, 0, 0),
-(@CGUID+13, 1, 39.8324, -229.47, -4.53228, 0, 0, 5),
-(@CGUID+13, 2, 46.257, -241.332, -4.53228, 0, 0, 0),
-(@CGUID+13, 3, 57.8113, -245.067, -4.52833, 0, 0, 0),
-(@CGUID+13, 4, 46.2711, -241.162, -4.53319, 0, 0, 0),
-(@CGUID+13, 5, 39.8119, -229.012, -4.53319, 0, 0, 0),
-(@CGUID+13, 6, 33.0846, -220.049, -4.53319, 0, 0, 0),
-(@CGUID+13, 7, 31.4191, -201.583, -4.36945, 0, 0, 0),
-(@CGUID+13, 8, 33.423, -220.337, -4.53293, 0, 0, 0),
 (@CGUID+14, 1, 37.1529, -186.697, -4.09001, 0, 0, 5),
 (@CGUID+14, 2, 12.7136, -189.214, -4.53172, 0, 0, 0),
 (@CGUID+14, 3, -4.61627, -175.559, -4.53321, 0, 0, 0),
@@ -191,14 +185,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+76, 11, 337.844, -368.326, 36.889, 0, 0, 0),
 (@CGUID+76, 12, 331.726, -373.947, 40.9642, 0, 0, 0),
 (@CGUID+76, 13, 338.234, -368.014, 36.6846, 0, 0, 0),
-(@CGUID+97, 1, 211.702, -380.781, 48.1706, 0, 0, 0),
-(@CGUID+97, 2, 219.298, -378.574, 48.1772, 0, 0, 0),
-(@CGUID+97, 3, 228.64, -376.503, 48.1903, 0, 0, 0),
-(@CGUID+97, 4, 240.787, -374.489, 48.2244, 0, 0, 0),
-(@CGUID+97, 5, 228.163, -376.683, 48.1922, 0, 0, 0),
-(@CGUID+97, 6, 219.533, -378.656, 48.1803, 0, 0, 0),
-(@CGUID+97, 7, 211.634, -381.018, 48.1742, 0, 0, 0),
-(@CGUID+97, 8, 201.99, -379.466, 48.1103, 0, 0, 0),
 (@CGUID+98, 1, 249.748, -371.735, 72.3417, 0, 0, 0),
 (@CGUID+98, 2, 257.418, -378.847, 72.3756, 0, 0, 0),
 (@CGUID+98, 3, 265.702, -379.173, 72.185, 0, 0, 0),
@@ -515,8 +501,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+38, @CGUID+17, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+39, @CGUID+17, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+36, @CGUID+35, 1679), -- Underbat -> Underbat
-(@CGUID+16, @CGUID+13, 1679), -- Underbat -> Underbat
-(@CGUID+19, @CGUID+13, 1679), -- Underbat -> Underbat
 (@CGUID+15, @CGUID+14, 1679), -- Underbat -> Underbat
 (@CGUID+18, @CGUID+14, 1679), -- Underbat -> Underbat
 (@CGUID+24, @CGUID+40, 1155), -- Underbat -> Underbog Lurker
@@ -547,9 +531,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+60, @CGUID+104, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+67, @CGUID+75, 1155), -- creature_spawn_entry -> creature_spawn_entry
 (@CGUID+71, @CGUID+75, 1155), -- creature_spawn_entry -> creature_spawn_entry
-(@CGUID+61, @CGUID+97, 1679), -- creature_spawn_entry -> Wrathfin Warrior
-(@CGUID+62, @CGUID+97, 1679), -- creature_spawn_entry -> Wrathfin Warrior
-(@CGUID+70, @CGUID+97, 1679), -- creature_spawn_entry -> Wrathfin Warrior
 (@CGUID+63, @CGUID+98, 1155), -- Murkblood Tribesman -> Wrathfin Warrior
 (@CGUID+64, @CGUID+98, 1155), -- Murkblood Tribesman -> Wrathfin Warrior
 (@CGUID+73, @CGUID+98, 1155), -- Murkblood Healer -> Wrathfin Warrior
@@ -611,6 +592,42 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+106, 17729), (@CGUID+106, 17730), (@CGUID+106, 17771), -- Murkblood Spearman, Murkblood Healer, Murkblood Oracle
 (@CGUID+107, 17728), (@CGUID+107, 17729), (@CGUID+107, 17771), -- Murkblood Tribesman, Murkblood Spearman, Murkblood Oracle
 (@CGUID+113, 17724), (@CGUID+113, 17725), (@CGUID+113, 17871); -- Underbat, Underbog Lurker, Underbog Shambler
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@GROUP_ID, 'UB - Ray formation - Hungarfen trash', 0, 0, 0, 1),
+(@GROUP_ID+1, 'UB - Naga Broken formation - Ghazan trash', 0, 0, 0, 1);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@GROUP_ID,@CGUID+13,0),
+(@GROUP_ID,@CGUID+16,1),
+(@GROUP_ID,@CGUID+19,2),
+(@GROUP_ID+1,@CGUID+97,0),
+(@GROUP_ID+1,@CGUID+61,1),
+(@GROUP_ID+1,@CGUID+62,2),
+(@GROUP_ID+1,@CGUID+70,3);
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@GROUP_ID,4,3,0,@PATH_ID,2,'UB - Ray formation - Triangle'),
+(@GROUP_ID+1,0,3,0,@PATH_ID+1,2,'UB - Naga Broken formation - Ghazan trash');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+(@PATH_ID, '1', '39.8324', '-229.47', '-4.53228', '0', '0', '5', NULL),
+(@PATH_ID, '2', '46.257', '-241.332', '-4.53228', '0', '0', '0', NULL),
+(@PATH_ID, '3', '57.8113', '-245.067', '-4.52833', '0', '0', '0', NULL),
+(@PATH_ID, '4', '46.2711', '-241.162', '-4.53319', '0', '0', '0', NULL),
+(@PATH_ID, '5', '39.8119', '-229.012', '-4.53319', '0', '0', '0', NULL),
+(@PATH_ID, '6', '33.0846', '-220.049', '-4.53319', '0', '0', '0', NULL),
+(@PATH_ID, '7', '31.4191', '-201.583', '-4.36945', '0', '0', '0', NULL),
+(@PATH_ID, '8', '33.423', '-220.337', '-4.53293', '0', '0', '0', NULL),
+
+(@PATH_ID+1, '1', '211.702', '-380.781', '48.1706', '0', '0', '0', NULL),
+(@PATH_ID+1, '2', '219.298', '-378.574', '48.1772', '0', '0', '0', NULL),
+(@PATH_ID+1, '3', '228.64', '-376.503', '48.1903', '0', '0', '0', NULL),
+(@PATH_ID+1, '4', '240.787', '-374.489', '48.2244', '0', '0', '0', NULL),
+(@PATH_ID+1, '5', '228.163', '-376.683', '48.1922', '0', '0', '0', NULL),
+(@PATH_ID+1, '6', '219.533', '-378.656', '48.1803', '0', '0', '0', NULL),
+(@PATH_ID+1, '7', '211.634', '-381.018', '48.1742', '0', '0', '0', NULL),
+(@PATH_ID+1, '8', '201.99', '-379.466', '48.1103', '0', '0', '0', NULL);
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 17723, 546, 3, 10.63608, -206.855, -4.449889, 4.590884, 7200, 7200, 3, 0, 0, 1), -- Bog Giant
@@ -1160,57 +1177,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 DELETE FROM dbscripts_on_creature_movement WHERE id=1810501;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 ('1810501', '0', '20', '1', '10', '0', '0', '0', '8', '0', '0', '0', '0', '0', '0', '0', '0', 'Ghaz''an - Random movement around current position');
-
-DELETE FROM spawn_group_formation WHERE Id=10002;
-INSERT INTO spawn_group_formation(Id, FormationType, FormationSpread, FormationOptions, PathId, MovementType, Comment) VALUES
-(10002,4,3,0,10002,2,'UB - Ray formation - Triangle');
-
--- TODO: Clean up once formations stabilize
-REPLACE INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
-(10002, 'UB - Ray formation - Hungarfen trash', 0, 0, 0, 1);
-REPLACE INTO spawn_group_spawn(Id, Guid, SlotId) VALUES
-(10002,@CGUID+13,0),
-(10002,@CGUID+16,1),
-(10002,@CGUID+19,2);
-DELETE FROM creature_linking WHERE guid IN(@CGUID+13,@CGUID+16,@CGUID+19);
-DELETE FROM creature_linking WHERE master_guid IN(@CGUID+13,@CGUID+16,@CGUID+19);
-
-DELETE FROM waypoint_path WHERE PathId IN(10002);
-INSERT INTO waypoint_path(PathId, Point, PositionX, PositionY, PositionZ, Orientation, Waittime, ScriptId, Comment) VALUES
-('10002', '1', '39.8324', '-229.47', '-4.53228', '0', '0', '5', NULL),
-('10002', '2', '46.257', '-241.332', '-4.53228', '0', '0', '0', NULL),
-('10002', '3', '57.8113', '-245.067', '-4.52833', '0', '0', '0', NULL),
-('10002', '4', '46.2711', '-241.162', '-4.53319', '0', '0', '0', NULL),
-('10002', '5', '39.8119', '-229.012', '-4.53319', '0', '0', '0', NULL),
-('10002', '6', '33.0846', '-220.049', '-4.53319', '0', '0', '0', NULL),
-('10002', '7', '31.4191', '-201.583', '-4.36945', '0', '0', '0', NULL),
-('10002', '8', '33.423', '-220.337', '-4.53293', '0', '0', '0', NULL);
-
-REPLACE INTO spawn_group(Id, Name, Type, MaxCount, WorldState, Flags) VALUES
-(10003, 'UB - Naga Broken formation - Ghazan trash', 0, 0, 0, 1);
-REPLACE INTO spawn_group_spawn(Id, Guid, SlotId) VALUES
-(10003,@CGUID+61,1),
-(10003,@CGUID+62,2),
-(10003,@CGUID+70,3),
-(10003,@CGUID+97,0);
-DELETE FROM creature_linking WHERE guid IN(@CGUID+61,@CGUID+62,@CGUID+70,@CGUID+97);
-DELETE FROM creature_linking WHERE master_guid IN(@CGUID+61,@CGUID+62,@CGUID+70,@CGUID+97);
-
-DELETE FROM spawn_group_formation WHERE Id=10003;
-INSERT INTO spawn_group_formation(Id, FormationType, FormationSpread, FormationOptions, PathId, MovementType, Comment) VALUES
-(10003,0,3,0,10003,2,'UB - Naga Broken formation - Ghazan trash');
-
-DELETE FROM waypoint_path WHERE PathId IN(10003);
-INSERT INTO waypoint_path(PathId, Point, PositionX, PositionY, PositionZ, Orientation, Waittime, ScriptId, Comment) VALUES
-('10003', '1', '211.702', '-380.781', '48.1706', '0', '0', '0', NULL),
-('10003', '2', '219.298', '-378.574', '48.1772', '0', '0', '0', NULL),
-('10003', '3', '228.64', '-376.503', '48.1903', '0', '0', '0', NULL),
-('10003', '4', '240.787', '-374.489', '48.2244', '0', '0', '0', NULL),
-('10003', '5', '228.163', '-376.683', '48.1922', '0', '0', '0', NULL),
-('10003', '6', '219.533', '-378.656', '48.1803', '0', '0', '0', NULL),
-('10003', '7', '211.634', '-381.018', '48.1742', '0', '0', '0', NULL),
-('10003', '8', '201.99', '-379.466', '48.1103', '0', '0', '0', NULL);
-
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
