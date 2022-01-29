@@ -1,0 +1,4 @@
+DELETE FROM spell_affect WHERE entry IN(33556);
+INSERT INTO spell_affect VALUES
+(33556,0,0x90100000);
+
