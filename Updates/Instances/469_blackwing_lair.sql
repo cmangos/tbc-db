@@ -403,14 +403,14 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+2, 16, -7646.05322265625, -1079.4195556640625, 449.153411865234375, 100, 0, 0);
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID, 'Blackwing Lair - Blackwing Taskmaster Patrol 000', 0, 0, 0, 1),
-(@GROUP_ID+1, 'Blackwing Lair - Blackwing Taskmaster Patrol 001', 0, 0, 0, 1),
-(@GROUP_ID+2, 'Blackwing Lair - Blackwing Taskmaster Patrol 002', 0, 0, 0, 1);
+(@GROUP_ID+0, 'Blackwing Lair - Blackwing Taskmaster (3) Patrol 000', 0, 0, 0, 1),
+(@GROUP_ID+1, 'Blackwing Lair - Blackwing Taskmaster (3) Patrol 001', 0, 0, 0, 1),
+(@GROUP_ID+2, 'Blackwing Lair - Blackwing Taskmaster (3) Patrol 002', 0, 0, 0, 1);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@GROUP_ID, @CGUID+23, 0),
-(@GROUP_ID, @CGUID+24, 1),
-(@GROUP_ID, @CGUID+25, 2),
+(@GROUP_ID+0, @CGUID+23, 0),
+(@GROUP_ID+0, @CGUID+24, 1),
+(@GROUP_ID+0, @CGUID+25, 2),
 
 (@GROUP_ID+1, @CGUID+26, 0),
 (@GROUP_ID+1, @CGUID+27, 1),
@@ -421,9 +421,9 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID+2, @CGUID+22, 2);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@GROUP_ID, 4, 4, 0, @PATH_ID, 4, 'Blackwing Lair - Blackwing Taskmaster Patrol 000'),
-(@GROUP_ID+1, 4, 4, 0, @PATH_ID+1, 4, 'Blackwing Lair - Blackwing Taskmaster Patrol 001'),
-(@GROUP_ID+2, 4, 4, 0, @PATH_ID+2, 4, 'Blackwing Lair - Blackwing Taskmaster Patrol 002');
+(@GROUP_ID+0, 4, 4, 0, @PATH_ID, 4, 'Blackwing Lair - Blackwing Taskmaster (3) Patrol 000'),
+(@GROUP_ID+1, 4, 4, 0, @PATH_ID+1, 4, 'Blackwing Lair - Blackwing Taskmaster (3) Patrol 001'),
+(@GROUP_ID+2, 4, 4, 0, @PATH_ID+2, 4, 'Blackwing Lair - Blackwing Taskmaster (3) Patrol 002');
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 10162, 469, -7588.27, -1261.92, 482.03, 0.610865, 604800, 604800, 0, 0, 0, 0), -- Lord Victor Nefarius

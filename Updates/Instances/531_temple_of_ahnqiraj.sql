@@ -1279,24 +1279,24 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+10, 18, -8299.0771484375, 1670.9205322265625, -27.8040199279785156, 100, 0, 0);
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 000', 0, 0, 0, 3),
-(@GROUP_ID+1, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 001', 0, 0, 0, 3),
-(@GROUP_ID+2, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 002', 0, 0, 0, 3),
-(@GROUP_ID+3, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 003', 0, 0, 0, 3),
-(@GROUP_ID+4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 004', 0, 0, 0, 3),
-(@GROUP_ID+5, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 005', 0, 0, 0, 3),
-(@GROUP_ID+6, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 006', 0, 0, 0, 1),
-(@GROUP_ID+7, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 007', 0, 0, 0, 3),
-(@GROUP_ID+8, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 000', 0, 0, 0, 1),
-(@GROUP_ID+9, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 001', 0, 0, 0, 1),
-(@GROUP_ID+10, 'Temple of Ahn''Qiraj - Battleguard Sartura', 0, 0, 0, 3);
+(@GROUP_ID+0, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 000', 0, 0, 0, 3),
+(@GROUP_ID+1, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 001', 0, 0, 0, 3),
+(@GROUP_ID+2, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 002', 0, 0, 0, 3),
+(@GROUP_ID+3, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 003', 0, 0, 0, 3),
+(@GROUP_ID+4, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 004', 0, 0, 0, 3),
+(@GROUP_ID+5, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 005', 0, 0, 0, 3),
+(@GROUP_ID+6, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 006', 0, 0, 0, 1),
+(@GROUP_ID+7, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 007', 0, 0, 0, 3),
+(@GROUP_ID+8, 'Temple of Ahn\'Qiraj - Vekniss Warrior (3) Patrol 000', 0, 0, 0, 1),
+(@GROUP_ID+9, 'Temple of Ahn\'Qiraj - Vekniss Warrior (3) Patrol 001', 0, 0, 0, 1),
+(@GROUP_ID+10, 'Temple of Ahn''Qiraj - Battleguard Sartura (4)', 0, 0, 0, 3);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@GROUP_ID, @CGUID+159, 0),
-(@GROUP_ID, @CGUID+86, 1),
-(@GROUP_ID, @CGUID+87, 2),
-(@GROUP_ID, @CGUID+88, 3),
-(@GROUP_ID, @CGUID+89, 4),
+(@GROUP_ID+0, @CGUID+159, 0),
+(@GROUP_ID+0, @CGUID+86, 1),
+(@GROUP_ID+0, @CGUID+87, 2),
+(@GROUP_ID+0, @CGUID+88, 3),
+(@GROUP_ID+0, @CGUID+89, 4),
 
 (@GROUP_ID+1, @CGUID+155, 0),
 (@GROUP_ID+1, @CGUID+78, 1),
@@ -1355,17 +1355,17 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID+10, @CGUID+470, 3);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@GROUP_ID, 6, 6, 0, @PATH_ID, 4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 000'),
-(@GROUP_ID+1, 6, 6, 0, @PATH_ID+1, 4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 001'),
-(@GROUP_ID+2, 6, 6, 0, @PATH_ID+2, 2, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 002'),
-(@GROUP_ID+3, 6, 6, 0, @PATH_ID+3, 4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 003'),
-(@GROUP_ID+4, 6, 6, 0, @PATH_ID+4, 4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 004'),
-(@GROUP_ID+5, 6, 6, 0, @PATH_ID+5, 2, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 005'),
-(@GROUP_ID+6, 6, 6, 0, @PATH_ID+6, 4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 006'),
-(@GROUP_ID+7, 6, 6, 0, @PATH_ID+7, 4, 'Temple of Ahn''Qiraj - Qiraji Champion Patrol 007'),
-(@GROUP_ID+8, 1, 5, 0, @PATH_ID+8, 4, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 000'),
-(@GROUP_ID+9, 1, 5, 0, @PATH_ID+9, 4, 'Temple of Ahn''Qiraj - Vekniss Warrior Patrol 001'),
-(@GROUP_ID+10, 6, 6, 0, @PATH_ID+10, 2, 'Temple of Ahn''Qiraj - Battleguard Sartura');
+(@GROUP_ID+0, 6, 6, 0, @PATH_ID, 4, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 000'),
+(@GROUP_ID+1, 6, 6, 0, @PATH_ID+1, 4, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 001'),
+(@GROUP_ID+2, 6, 6, 0, @PATH_ID+2, 2, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 002'),
+(@GROUP_ID+3, 6, 6, 0, @PATH_ID+3, 4, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 003'),
+(@GROUP_ID+4, 6, 6, 0, @PATH_ID+4, 4, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 004'),
+(@GROUP_ID+5, 6, 6, 0, @PATH_ID+5, 2, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 005'),
+(@GROUP_ID+6, 6, 6, 0, @PATH_ID+6, 4, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 006'),
+(@GROUP_ID+7, 6, 6, 0, @PATH_ID+7, 4, 'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 007'),
+(@GROUP_ID+8, 1, 5, 0, @PATH_ID+8, 4, 'Temple of Ahn\'Qiraj - Vekniss Warrior (3) Patrol 000'),
+(@GROUP_ID+9, 1, 5, 0, @PATH_ID+9, 4, 'Temple of Ahn\'Qiraj - Vekniss Warrior (3) Patrol 001'),
+(@GROUP_ID+10, 6, 6, 0, @PATH_ID+10, 2, 'Temple of Ahn''Qiraj - Battleguard Sartura (4)');
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 15229, 531, -7955.62, 1322.46, -90.46, 4.38823, 600, 600, 0, 0, 0, 2), -- Vekniss Soldier
@@ -1802,7 +1802,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+457, 15509, 531, -8532.09, 1696.53, -90.26, 1.57, 604800, 604800, 0, 0, 0, 2), -- Princess Huhuran
 (@CGUID+458, 15510, 531, -8085.39, 1196.72, -91.97, 0.62, 604800, 604800, 5, 0, 0, 1), -- Fankriss the Unyielding
 (@CGUID+459, 15511, 531, -8567.05, 2175.89, -4.06608, 4.36944, 604800, 604800, 0, 0, 0, 0), -- Lord Kri
-(@CGUID+460, 15516, 531, -8281.88, 1688.65, -25.0961, 0.0, 604800, 604800, 0, 0, 0, 0), -- Battleguard Sartura
+(@CGUID+460, 15516, 531, -8281.8828125000, 1688.6496582031250, -25.9406890869140625, 0.0, 604800, 604800, 0, 0, 0, 0), -- Battleguard Sartura
 (@CGUID+461, 15543, 531, -8586.73, 2173.15, -4.33533, 5.05628, 604800, 604800, 0, 0, 0, 0), -- Princess Yauj
 (@CGUID+462, 15544, 531, -8549.55, 2161.72, -3.6664, 4.46724, 604800, 604800, 0, 0, 0, 2), -- Vem
 (@CGUID+463, 15589, 531, -8570.3,  1991.26, 100.4, 3.44, 604800, 604800, 0, 0, 0, 0), -- Eye of C'Thun
