@@ -338,8 +338,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+666, 2, 2857.77, -3180.22, 298.152, 0.001, 22000, 1614602),
 (@CGUID+669, 1, 2825.4, -3156.5, 298.146, 1.479, 0, 0),
 (@CGUID+669, 2, 2825.4, -3156.5, 298.146, 1.48, 21000, 1614602),
-(@CGUID+670, 1, 2812.05, -3177.41, 298.33, 6.01, 0, 0),
-(@CGUID+670, 2, 2877.82, -3214.98, 298.15, 4.62, 0, 0),
 (@CGUID+671, 1, 2799.63, -3164.42, 298.33, 3.5, 0, 0),
 (@CGUID+671, 2, 2799.63, -3164.42, 298.33, 3.501, 16000, 1614603),
 (@CGUID+704, 1, 2919.12, -3346.21, 298.32, 5.34, 0, 0),
@@ -832,6 +830,14 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (16998, 4, 1, 3006.790039, -3434.280029, 293.957001, 100, 1000, 1699805);
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@CGUID+670, 01, 2886.359619140625,  -3218.305419921875, 298.157318115234375, 100, 0, 0),
+(@CGUID+670, 02, 2871.514892578125,  -3216.968994140625, 298.157318115234375, 100, 0, 0),
+(@CGUID+670, 03, 2860.459960937500,  -3207.909912109375, 298.285980224609375, 100, 0, 0),
+(@CGUID+670, 04, 2848.306396484375,  -3195.512207031250, 298.356781005859375, 100, 0, 0),
+(@CGUID+670, 05, 2839.447509765625,  -3185.542236328125, 298.256744384765625, 100, 0, 0),
+(@CGUID+670, 06, 2828.432128906250,  -3176.264648437500, 298.157318115234375, 100, 0, 0),
+(@CGUID+670, 07, 2813.295898437500,  -3175.835205078125, 298.322174072265625, 100, 0, 0),
+(@CGUID+670, 08, 2790.895019531250,  -3179.500488281250, 298.214019775390625, 100, 0, 0),
 (@CGUID+698, 01, 2804.359863281250, -3190.487792968750, 273.943084716796875, 100, 0, 0),
 (@CGUID+698, 02, 2820.001708984375, -3202.298828125000, 273.921356201171875, 100, 0, 0),
 (@CGUID+698, 03, 2844.853271484375, -3200.757812500000, 273.994842529296875, 100, 0, 0),
@@ -1157,8 +1163,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+337, @CGUID+340, 3), -- Patchwork Golem -> Patchwork Golem
 (@CGUID+341, @CGUID+340, 3), -- Patchwork Golem -> Patchwork Golem
 (@CGUID+651, @CGUID+650, 515), -- Deathknight Captain -> Deathknight Captain
-(@CGUID+684, @CGUID+670, 515), -- Death Touched Warrior -> Deathknight
-(@CGUID+685, @CGUID+670, 515), -- Death Touched Warrior -> Deathknight
 (@CGUID+709, @CGUID+704, 515), -- Necro Knight -> Shade of Naxxramas
 (@CGUID+710, @CGUID+704, 515), -- Necro Knight -> Shade of Naxxramas
 (@CGUID+759, @CGUID+143, 1+4+128+1024), -- Tesla Coil -> Stalagg
@@ -1938,7 +1942,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+667, 16146, 533, 2858.52, -3187.77, 298.152, 6.189, 3520, 3520, 0, 0, 0, 0), -- Deathknight
 (@CGUID+668, 16146, 533, 2814.28, -3155.78, 298.146, 1.536, 3520, 3520, 0, 0, 0, 0), -- Deathknight
 (@CGUID+669, 16146, 533, 2825.4, -3156.5, 298.146, 1.479, 3520, 3520, 0, 0, 0, 2), -- Deathknight
-(@CGUID+670, 16146, 533, 2812.05, -3177.41, 298.33, 6.01, 3520, 3520, 0, 0, 0, 2), -- Deathknight
+(@CGUID+670, 16146, 533, 2886.359619140625,  -3218.305419921875, 298.157318115234375, 0, 3600, 3600, 0, 0, 0, 0), -- Deathknight
 (@CGUID+671, 16146, 533, 2799.63, -3164.42, 298.33, 3.5, 3520, 3520, 0, 0, 0, 2), -- Deathknight
 (@CGUID+672, 16154, 533, 2958.77, -3356.05, 298.31, 3.94, 3520, 3520, 0, 0, 0, 0), -- Risen Deathknight
 (@CGUID+673, 16154, 533, 2951.66, -3348.27, 298.31, 4.03, 3520, 3520, 0, 0, 0, 0), -- Risen Deathknight
@@ -1952,8 +1956,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+681, 16157, 533, 2792.61, -3170.52, 298.33, 0.96, 3520, 3520, 0, 0, 0, 0), -- Doom Touched Warrior
 (@CGUID+682, 16158, 533, 2888.83, -3308.23, 298.32, 3.84, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
 (@CGUID+683, 16158, 533, 2879.88, -3198.33, 298.33, 4.04, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+684, 16158, 533, 2809.91, -3172.91, 298.33, 5.88, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
-(@CGUID+685, 16158, 533, 2807.7, -3178.99, 298.33, 6.1, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
+(@CGUID+684, 16158, 533, 2889.359619140625,  -3221.305419921875, 298.157318115234375, 0, 3600, 3600, 0, 0, 0, 0), -- Death Touched Warrior
+(@CGUID+685, 16158, 533, 2883.359619140625,  -3215.305419921875, 298.157318115234375, 0, 3600, 3600, 0, 0, 0, 0), -- Death Touched Warrior
 (@CGUID+686, 16158, 533, 2799.42, -3159.93, 298.33, 3.85, 3520, 3520, 0, 0, 0, 0), -- Death Touched Warrior
 -- 687 - 697
 (@CGUID+698, 16163, 533, 2804.359863281250, -3190.487792968750, 273.943084716796875, 0, 3600, 3600, 0, 0, 0, 0), -- Deathknight Cavalier
@@ -2990,7 +2994,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (5330005, 'Naxxramas - Deathknight Vindicator (3) Patrol 005', 0, 0, 0, 1),
 (5330006, 'Naxxramas - Death Lord (3) Patrol 000', 0, 0, 0, 1),
 (5330007, 'Naxxramas - Deathknight Cavalier (2) Patrol 000', 0, 0, 0, 1),
-(5330008, 'Naxxramas - Deathknight Cavalier (2) Patrol 001', 0, 0, 0, 1);
+(5330008, 'Naxxramas - Deathknight Cavalier (2) Patrol 001', 0, 0, 0, 1),
+(5330009, 'Naxxramas - Deathknight (3) Patrol 000', 0, 0, 0, 1);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -3003,7 +3008,8 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (5330005, 2, 5, 0, @CGUID+1005, 4, 'Naxxramas - Deathknight Vindicator (3) Patrol 005'),
 (5330006, 2, 7, 0, @CGUID+1030, 4, 'Naxxramas - Death Lord (3) Patrol 000'),
 (5330007, 2, 4, 0, @CGUID+698, 2, 'Naxxramas - Deathknight Cavalier (2) Patrol 000'),
-(5330008, 2, 4, 0, @CGUID+702, 4, 'Naxxramas - Deathknight Cavalier (2) Patrol 001');
+(5330008, 2, 4, 0, @CGUID+702, 4, 'Naxxramas - Deathknight Cavalier (2) Patrol 001'),
+(5330009, 3, 3, 0, @CGUID+670, 4, 'Naxxramas - Deathknight (3) Patrol 000');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (5330000, @CGUID+990, 0),
@@ -3030,7 +3036,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (5330007, @CGUID+698, 0),
 (5330007, @CGUID+699, 1),
 (5330008, @CGUID+702, 0),
-(5330008, @CGUID+703, 1);
+(5330008, @CGUID+703, 1),
+(5330009, @CGUID+670, 0),
+(5330009, @CGUID+684, 1),
+(5330009, @CGUID+685, 2);
 
 -- =========
 -- DBSCRIPTS
