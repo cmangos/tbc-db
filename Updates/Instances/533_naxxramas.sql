@@ -340,8 +340,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+669, 2, 2825.4, -3156.5, 298.146, 1.48, 21000, 1614602),
 (@CGUID+671, 1, 2799.63, -3164.42, 298.33, 3.5, 0, 0),
 (@CGUID+671, 2, 2799.63, -3164.42, 298.33, 3.501, 16000, 1614603),
-(@CGUID+704, 1, 2919.12, -3346.21, 298.32, 5.34, 0, 0),
-(@CGUID+704, 2, 2869, -3296.1, 298.14, 5.58, 0, 0),
 (@CGUID+705, 1, 2903.97, -3293.77, 298.73, 3.96, 0, 0),
 (@CGUID+705, 2, 2854.1, -3335.93, 298.15, 0.75, 0, 0),
 (@CGUID+714, 1, 2830.41, -3329.09, 304.837, 0, 0, 0),
@@ -765,7 +763,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+1051, 11, 3134.2990, -3294.8557, 293.75735, 100, 0, 0),
 (@CGUID+1051, 12, 3140.7144, -3302.6292, 293.75735, 100, 0, 0);
 
-DELETE FROM creature_movement_template WHERE entry IN (16061,15931,15954,16998);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (16061,15931,15954,16998);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 (16061, 0, 1, 2765.25, -3088.47, 267.685, 0.38872, 0, 1606102),
 (16061, 0, 2, 2780, -3090.74, 267.685, 5.78048, 0, 1606102),
@@ -851,6 +849,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+702, 01, 2787.387939453125, -3287.190917968750, 267.757324218750000, 100, 0, 0),
 (@CGUID+702, 02, 2787.864257812500, -3320.594970703125, 267.757293701171875, 100, 0, 0),
 (@CGUID+702, 03, 2787.930908203125, -3363.628173828125, 267.757293701171875, 100, 0, 0),
+(@CGUID+704, 01, 2948.145996093750, -3374.96630859375, 298.157318115234375, 100, 0, 0),
+(@CGUID+704, 02, 2915.294189453125, -3343.23437500000, 298.157318115234375, 100, 0, 0),
+(@CGUID+704, 03, 2898.638916015625, -3327.00830078125, 298.157287597656250, 100, 0, 0),
 (@CGUID+990, 01, 2556.662597656250, -3500.704345703125, 267.749969482421875, 100, 0, 0),
 (@CGUID+990, 02, 2557.385986328125, -3539.411376953125, 267.749969482421875, 100, 0, 0),
 (@CGUID+990, 03, 2555.852783203125, -3582.011962890625, 267.750030517578125, 100, 0, 0),
@@ -961,7 +962,6 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+1005, 17, 2837.153320312500, -2987.224365234375, 263.4650573730468750, 100, 0, 0),
 (@CGUID+1005, 18, 2863.833251953125, -2987.051513671875, 267.7573242187500000, 100, 0, 0),
 (@CGUID+1005, 19, 2895.389892578125, -2985.884033203125, 267.7573242187500000, 100, 0, 0),
-
 (@CGUID+1030, 01, 2924.502929687500, -3188.188964843750, 273.55731201171875, 100, 0, 0),
 (@CGUID+1030, 02, 2876.385009765625, -3190.184326171875, 273.55731201171875, 100, 0, 0);
 
@@ -1163,8 +1163,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+337, @CGUID+340, 3), -- Patchwork Golem -> Patchwork Golem
 (@CGUID+341, @CGUID+340, 3), -- Patchwork Golem -> Patchwork Golem
 (@CGUID+651, @CGUID+650, 515), -- Deathknight Captain -> Deathknight Captain
-(@CGUID+709, @CGUID+704, 515), -- Necro Knight -> Shade of Naxxramas
-(@CGUID+710, @CGUID+704, 515), -- Necro Knight -> Shade of Naxxramas
 (@CGUID+759, @CGUID+143, 1+4+128+1024), -- Tesla Coil -> Stalagg
 (@CGUID+760, @CGUID+144, 1+4+128+1024), -- Tesla Coil -> Feugen
 (@CGUID+857, @CGUID+859, 515), -- Plagued Ghoul -> Plagued Ghoul
@@ -1964,15 +1962,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+699, 16163, 533, 2808.359863281250, -3194.487792968750, 273.943084716796875, 0, 3600, 3600, 0, 0, 0, 0), -- Deathknight Cavalier
 (@CGUID+700, 16163, 533, 2931.502929687500, -3195.188964843750, 273.55731201171875, 0, 3600, 3600, 0, 0, 0, 0), -- Deathknight Cavalier
 (@CGUID+701, 16163, 533, 2917.502929687500, -3181.188964843750, 273.55731201171875, 0, 3600, 3600, 0, 0, 0, 0), -- Deathknight Cavalier
-(@CGUID+702, 16163, 533, 2787.387939453125, -3287.190917968750, 267.757324218750000, 0, 3600, 3600, 0, 0, 0, 2), -- Deathknight Cavalier
-(@CGUID+703, 16163, 533, 2783.387939453125, -3283.190917968750, 267.757324218750000, 0, 3600, 3600, 0, 0, 0, 2), -- Deathknight Cavalier
-(@CGUID+704, 16164, 533, 2919.12, -3346.21, 298.32, 5.34, 3520, 3520, 0, 0, 0, 2), -- Shade of Naxxramas
+(@CGUID+702, 16163, 533, 2787.387939453125, -3287.190917968750, 267.757324218750000, 0, 3600, 3600, 0, 0, 0, 0), -- Deathknight Cavalier
+(@CGUID+703, 16163, 533, 2783.387939453125, -3283.190917968750, 267.757324218750000, 0, 3600, 3600, 0, 0, 0, 0), -- Deathknight Cavalier
+(@CGUID+704, 16164, 533, 2948.145996093750, -3374.96630859375, 298.157318115234375, 0, 3600, 3600, 0, 0, 0, 0), -- Shade of Naxxramas
 (@CGUID+705, 16164, 533, 2903.97, -3293.77, 298.73, 3.96, 3520, 3520, 0, 0, 0, 2), -- Shade of Naxxramas
 (@CGUID+706, 16164, 533, 2847.2, -3263.39, 298.27, 5.43, 3520, 3520, 0, 0, 0, 0), -- Shade of Naxxramas
 (@CGUID+707, 16164, 533, 2837.08, -3273.82, 298.27, 5.57, 3520, 3520, 0, 0, 0, 0), -- Shade of Naxxramas
 (@CGUID+708, 16164, 533, 2786.36, -3271.89, 267.99, 2.57, 3520, 3520, 0, 0, 0, 0), -- Shade of Naxxramas
-(@CGUID+709, 16165, 533, 2920.14, -3342.24, 298.32, 5.41, 3520, 3520, 0, 0, 0, 0), -- Necro Knight
-(@CGUID+710, 16165, 533, 2915.22, -3346.51, 298.32, 5.48, 3520, 3520, 0, 0, 0, 0), -- Necro Knight
+(@CGUID+709, 16165, 533, 2951.145996093750, -3377.96630859375, 298.157318115234375, 0, 3600, 3600, 0, 0, 0, 0), -- Necro Knight
+(@CGUID+710, 16165, 533, 2945.145996093750, -3371.96630859375, 298.157318115234375, 0, 3600, 3600, 0, 0, 0, 0), -- Necro Knight
 (@CGUID+711, 16165, 533, 2840.57, -3267.43, 299.13, 5.44, 3520, 3520, 0, 0, 0, 0), -- Necro Knight
 (@CGUID+712, 16165, 533, 2784.77, -3276.68, 267.99, 2.58, 3520, 3520, 0, 0, 0, 0), -- Necro Knight
 (@CGUID+713, 16165, 533, 2789.26, -3267.53, 267.99, 2.73, 3520, 3520, 0, 0, 0, 0), -- Necro Knight
@@ -2995,7 +2993,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (5330006, 'Naxxramas - Death Lord (3) Patrol 000', 0, 0, 0, 1),
 (5330007, 'Naxxramas - Deathknight Cavalier (2) Patrol 000', 0, 0, 0, 1),
 (5330008, 'Naxxramas - Deathknight Cavalier (2) Patrol 001', 0, 0, 0, 1),
-(5330009, 'Naxxramas - Deathknight (3) Patrol 000', 0, 0, 0, 1);
+(5330009, 'Naxxramas - Deathknight (3) Patrol 000', 0, 0, 0, 1),
+(5330010, 'Naxxramas - Shade of Naxxramas (3) Patrol 000', 0, 0, 0, 1);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -3009,7 +3008,8 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (5330006, 2, 7, 0, @CGUID+1030, 4, 'Naxxramas - Death Lord (3) Patrol 000'),
 (5330007, 2, 4, 0, @CGUID+698, 2, 'Naxxramas - Deathknight Cavalier (2) Patrol 000'),
 (5330008, 2, 4, 0, @CGUID+702, 4, 'Naxxramas - Deathknight Cavalier (2) Patrol 001'),
-(5330009, 3, 3, 0, @CGUID+670, 4, 'Naxxramas - Deathknight (3) Patrol 000');
+(5330009, 3, 3, 0, @CGUID+670, 4, 'Naxxramas - Deathknight (3) Patrol 000'),
+(5330010, 2, 3, 0, @CGUID+704, 4, 'Naxxramas - Shade of Naxxramas (3) Patrol 000');
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (5330000, @CGUID+990, 0),
@@ -3039,7 +3039,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (5330008, @CGUID+703, 1),
 (5330009, @CGUID+670, 0),
 (5330009, @CGUID+684, 1),
-(5330009, @CGUID+685, 2);
+(5330009, @CGUID+685, 2),
+(5330010, @CGUID+704, 0),
+(5330010, @CGUID+709, 1),
+(5330010, @CGUID+710, 2);
 
 -- =========
 -- DBSCRIPTS
