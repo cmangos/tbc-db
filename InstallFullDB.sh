@@ -467,18 +467,18 @@ function execute_sql_file()
 {
   local showstatus=true
   if [[ "$3" == "" ]]; then showstatus=false; fi
-  if $showstatus; then echo -n "$3 ... "; fi
+  if [[ "$showstatus" = true ]]; then echo -n "$3 ... "; fi
   export MYSQL_PWD="$MYSQL_PASSWORD"
   ERRORS=$("$MYSQL_PATH" -u"$MYSQL_USERNAME" -h"$MYSQL_HOST" -P"$MYSQL_PORT" -s -N -D "$1" < "$2" 2>&1)
   if [[ $? != 0 ]]; then
-    if $showstatus; then
+    if [[ "$showstatus" = true ]]; then
       echo "FAILED!"
       echo ">>> $ERRORS";
     fi
     false
     return
   else
-    if $showstatus; then echo "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo "SUCCESS"; fi
   fi
   true
 }
@@ -604,58 +604,58 @@ function check_dbs_accessibility()
     return
   fi
 
-  if $showstatus; then echo -ne "Checking '$WORLD_DB_NAME' db access, please wait..."; fi
+  if [[ "$showstatus" = true ]]; then echo -ne "Checking '$WORLD_DB_NAME' db access, please wait..."; fi
   ERRORS+=($("$MYSQL_PATH" -h$MYSQL_HOST -P$MYSQL_PORT -u$MYSQL_USERNAME -D$WORLD_DB_NAME --connect-timeout=2 -s -e";" 2>&1))
   if [[ $? != 0 ]];  then
     DB_WORLDDB_VERSION="0"
     UNAVAILABLE_DB+=("$WORLD_DB_NAME")
   else
-    if $showstatus; then echo -ne "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
     get_current_db_version "$WORLD_DB_NAME" "db_version"
     DB_WORLDDB_VERSION="$CURRENT_DB_VERSION"
     STATUS_WORLD_DB_FOUND=true
   fi
 
-  if $showstatus; then echo -ne "\033[0K\r"; echo -ne "Checking '$REALM_DB_NAME' db access, please wait...          "; fi
+  if [[ "$showstatus" = true ]]; then echo -ne "\033[0K\r"; echo -ne "Checking '$REALM_DB_NAME' db access, please wait...          "; fi
   ERRORS+=($("$MYSQL_PATH" -h$MYSQL_HOST -P$MYSQL_PORT -u$MYSQL_USERNAME -D$REALM_DB_NAME --connect-timeout=2 -s -e";" 2>&1))
   if [[ $? != 0 ]]
   then
     DB_REALMDB_VERSION="0"
     UNAVAILABLE_DB+=("$REALM_DB_NAME")
   else
-    if $showstatus; then echo -ne "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
     get_current_db_version "$REALM_DB_NAME" "realmd_db_version"
     DB_REALMDB_VERSION="$CURRENT_DB_VERSION"
     STATUS_REALM_DB_FOUND=true
   fi
 
-  if $showstatus; then echo -ne "\033[0K\r"; echo -ne "Checking '$CHAR_DB_NAME' db access, please wait...          "; fi
+  if [[ "$showstatus" = true ]]; then echo -ne "\033[0K\r"; echo -ne "Checking '$CHAR_DB_NAME' db access, please wait...          "; fi
   ERRORS+=($("$MYSQL_PATH" -h$MYSQL_HOST -P$MYSQL_PORT -u$MYSQL_USERNAME -D$CHAR_DB_NAME --connect-timeout=2 -s -e";" 2>&1))
   if [[ $? != 0 ]]
   then
     DB_CHARDB_VERSION="0"
     UNAVAILABLE_DB+=("$CHAR_DB_NAME")
   else
-    if $showstatus; then echo -ne "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
     get_current_db_version "$CHAR_DB_NAME" "character_db_version"
     DB_CHARDB_VERSION="$CURRENT_DB_VERSION"
     STATUS_CHAR_DB_FOUND=true
   fi
 
-  if $showstatus; then echo -ne "\033[0K\r"; echo -ne "Checking '$LOGS_DB_NAME' db access, please wait...          "; fi
+  if [[ "$showstatus" = true ]]; then echo -ne "\033[0K\r"; echo -ne "Checking '$LOGS_DB_NAME' db access, please wait...          "; fi
   ERRORS+=($("$MYSQL_PATH" -h$MYSQL_HOST -P$MYSQL_PORT -u$MYSQL_USERNAME -D$LOGS_DB_NAME --connect-timeout=2 -s -e";" 2>&1))
   if [[ $? != 0 ]]
   then
     DB_LOGSDB_VERSION="0"
     UNAVAILABLE_DB+=("$LOGS_DB_NAME")
   else
-    if $showstatus; then echo -ne "SUCCESS"; fi
+    if [[ "$showstatus" = true ]]; then echo -ne "SUCCESS"; fi
     get_current_db_version "$LOGS_DB_NAME" "logs_db_version"
     DB_LOGSDB_VERSION="$CURRENT_DB_VERSION"
     STATUS_LOGS_DB_FOUND=true
   fi
 
-  if $showstatus; then
+  if [[ "$showstatus" = true ]]; then
     if [[ "${#UNAVAILABLE_DB[@]}" > 0 ]]; then
       echo -ne "\033[0K\r"
       echo -ne "                                                                    "
@@ -1203,16 +1203,10 @@ function apply_locales()
 {
   if [ "$LOCALES" == "YES" ]; then
     echo "> Trying to apply locales data (May take some minutes) ..."
-    for UPDATEFILE in ${ADDITIONAL_PATH}locales/*.sql
-    do
-      if [ -e "$UPDATEFILE" ]; then
-        for UPDATE in ${ADDITIONAL_PATH}locales/*.sql
-        do
-          if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATE" "  - Applying $UPDATE"; then
-            false
-            return
-          fi
-        done
+    for UPDATE in ${ADDITIONAL_PATH}locales/*.sql;do
+      if ! execute_sql_file "$WORLD_DB_NAME" "$UPDATE" "  - Applying $UPDATE"; then
+        false
+        return
       fi
     done
   fi
