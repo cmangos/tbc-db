@@ -6512,7 +6512,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Captured Tarantula 17112
 ('1711201','17112','8','0','100','1','29917','-1','0','0','0','0','33','17112','6','0','11','29918','0','4','5','36','0','0','Captured Tarantula - Quest Credit, Cast Captured Animal Feeding Visual, and Emote on Spellhit (q.9440 Little Morsels)'),
 -- Captured Crocolisk 17113
-('1711301','17113','8','0','100','1','29917','-1','0','0','0','0','33','17113','6','0','11','29918','0','4','5','36','0','0','Captured Crocolisk - Quest Credit, Cast Captured Animal Feeding Visual, and Emote on Spellhit (q.9440 Little Morsels)')
+('1711301','17113','8','0','100','1','29917','-1','0','0','0','0','33','17113','6','0','11','29918','0','4','5','36','0','0','Captured Crocolisk - Quest Credit, Cast Captured Animal Feeding Visual, and Emote on Spellhit (q.9440 Little Morsels)'),
 -- Cursed Lost One
 ('1711501','17115','9','0','100','1025','0','5','9000','13000','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Cursed Lost One - Cast Disarm'),
 ('1711502','17115','9','0','100','1025','0','30','13000','20000','0','0','11','14868','4','32','0','0','0','0','0','0','0','0','Cursed Lost One - Cast Curse of Agony'),
