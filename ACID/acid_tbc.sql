@@ -6507,9 +6507,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1710902','17109','1','0','75','1','30000','60000','240000','300000','0','0','1','14102','14098','14099','0','0','0','0','0','0','0','0','Cersei Dusksinger - Random Say 1 OOC'),
 ('1710903','17109','1','0','75','1','120000','180000','240000','300000','0','0','1','14094','14097','14096','0','0','0','0','0','0','0','0','Cersei Dusksinger - Random Say 2 OOC'),
 ('1710904','17109','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Cersei Dusksinger - Flee at 15% HP'),
--- Captured Jaguar (17111) - NSR
--- Captured Tarantula (17112) - NSR
--- Captured Crocolisk (17113) - NSR
+-- Captured Jaguar 17111
+('1711101','17111','8','0','100','1','29917','-1','0','0','0','0','33','17111','6','0','11','29918','0','4','5','36','0','0','Captured Jaguar - Quest Credit, Cast Captured Animal Feeding Visual, and Emote on Spellhit (q.9440 Little Morsels)'),
+-- Captured Tarantula 17112
+('1711201','17112','8','0','100','1','29917','-1','0','0','0','0','33','17112','6','0','11','29918','0','4','5','36','0','0','Captured Tarantula - Quest Credit, Cast Captured Animal Feeding Visual, and Emote on Spellhit (q.9440 Little Morsels)'),
+-- Captured Crocolisk 17113
+('1711301','17113','8','0','100','1','29917','-1','0','0','0','0','33','17113','6','0','11','29918','0','4','5','36','0','0','Captured Crocolisk - Quest Credit, Cast Captured Animal Feeding Visual, and Emote on Spellhit (q.9440 Little Morsels)')
 -- Cursed Lost One
 ('1711501','17115','9','0','100','1025','0','5','9000','13000','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Cursed Lost One - Cast Disarm'),
 ('1711502','17115','9','0','100','1025','0','30','13000','20000','0','0','11','14868','4','32','0','0','0','0','0','0','0','0','Cursed Lost One - Cast Curse of Agony'),
