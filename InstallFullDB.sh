@@ -511,10 +511,10 @@ function assign_new_value()
 {
   local v="$1"
   if [[ "$2" != "" ]]; then
-      eval $v="$1"
+      eval "$v='${2}'"
   else
       if [[ "$3" != "" ]]; then
-        eval $v="$3"
+        eval "$v='${3}'"
       fi
   fi
 }
@@ -522,7 +522,7 @@ function assign_new_value()
 function change_db_name()
 {
   local nameSettings=( "$WORLD_DB_NAME" "$CHAR_DB_NAME" "$REALM_DB_NAME" "$LOGS_DB_NAME" )
-  if [ $BASH_VERSION -gt 4 ]; then
+  if [[ $BASH_VERSION > 4 ]]; then
     read -e -p    "Enter world database name.......: " -i $WORLD_DB_NAME WORLD_DB_NAME
     read -e -p    "Enter characters database name..: " -i $CHAR_DB_NAME CHAR_DB_NAME
     read -e -p    "Enter realm database name.......: " -i $REALM_DB_NAME REALM_DB_NAME
@@ -533,17 +533,17 @@ function change_db_name()
     read -e -p    "Enter realm database name......current($REALM_DB_NAME).: " rname
     read -e -p    "Enter log database name........current($LOGS_DB_NAME).: "  lname
 
-    assign_new_value 'WORLD_DB_NAME' wname
-    assign_new_value 'CHAR_DB_NAME' cname
-    assign_new_value 'REALM_DB_NAME' rname
-    assign_new_value 'LOGS_DB_NAME' lname
+    assign_new_value 'WORLD_DB_NAME' "${wname}"
+    assign_new_value 'CHAR_DB_NAME' "${cname}"
+    assign_new_value 'REALM_DB_NAME' "${rname}"
+    assign_new_value 'LOGS_DB_NAME' "${lname}"
   fi
 }
 
 function change_mysql_settings()
 {
   print_header
-  if [ $BASH_VERSION -gt 4 ]; then
+  if [[ $BASH_VERSION > 4 ]]; then
     read -e -p    "Enter MySQL host................: " -i $MYSQL_HOST MYSQL_HOST
     read -e -p    "Enter MySQL port................: " -i $MYSQL_PORT MYSQL_PORT
     read -e -p    "Enter MySQL user................: " -i $MYSQL_USERNAME MYSQL_USERNAME
@@ -572,16 +572,16 @@ function change_mysql_settings()
     read -e -p    "DEV_UPDATES(default:NO)........current($DEV_UPDATES).: " dev
     read -e -p    "AHBOT(default:NO)..............current($AHBOT).: " ahb
 
-    assign_new_value 'MYSQL_HOST' mhost
-    assign_new_value 'MYSQL_PORT' mport
-    assign_new_value 'MYSQL_USERNAME' muser
-    assign_new_value 'MYSQL_PASSWORD' mpass
-    assign_new_value 'MYSQL_USERIP' musip
-    assign_new_value 'MYSQL_PATH' mpath
-    assign_new_value 'CORE_PATH' cpath
-    assign_new_value 'LOCALES' loc
-    assign_new_value 'DEV_UPDATES' dev
-    assign_new_value 'AHBOT' ahb
+    assign_new_value 'MYSQL_HOST' "${mhost}"
+    assign_new_value 'MYSQL_PORT' "${mport}"
+    assign_new_value 'MYSQL_USERNAME' "${muser}"
+    assign_new_value 'MYSQL_PASSWORD' "${mpass}"
+    assign_new_value 'MYSQL_USERIP' "${musip}"
+    assign_new_value 'MYSQL_PATH' "${mpath}"
+    assign_new_value 'CORE_PATH' "${cpath}"
+    assign_new_value 'LOCALES' "${loc}"
+    assign_new_value 'DEV_UPDATES' "${dev}"
+    assign_new_value 'AHBOT' "${ahb}"
   fi
 
   # some basic check
@@ -1712,7 +1712,7 @@ function realm_edit()
     # split result so we can print them on specific places (result are separed using tab)
     IFS=$'\t';realmdata=($realmdata); IFS="$OLDIFS"
 
-    if [ ${realmdata[0]} = "$choice" ]; then
+    if [[ ${realmdata[0]} = "$choice" ]]; then
       found=true
       echo "found"
       break
@@ -1723,22 +1723,22 @@ function realm_edit()
     return
   fi
   local orival="$realmdata"
-  if [ $BASH_VERSION -gt 4 ]; then
+  if [[ $BASH_VERSION > 4 ]]; then
     read -e -p "Enter realm id.......................: " -i "${realmdata[0]}" realmdata[0]
     read -e -p "Enter realm name.....................: " -i "${realmdata[1]}" realmdata[1]
     read -e -p "Enter realm address..................: " -i "${realmdata[2]}" realmdata[2]
     read -e -p "Enter realm port.....................: " -i "${realmdata[3]}" realmdata[3]
   else
-    read -e -p "Enter realm id.......................current(${realmdata[0]}).: " realmdata[0]
-    read -e -p "Enter realm name.....................current(${realmdata[1]}).: " realmdata[1]
-    read -e -p "Enter realm address..................current(${realmdata[2]}).: " realmdata[2]
-    read -e -p "Enter realm port.....................current(${realmdata[3]}).: " realmdata[3]
+    local newVal=()
+    read -e -p "Enter realm id.......................current(${realmdata[0]}).: " newVal[0]
+    read -e -p "Enter realm name.....................current(${realmdata[1]}).: " newVal[1]
+    read -e -p "Enter realm address..................current(${realmdata[2]}).: " newVal[2]
+    read -e -p "Enter realm port.....................current(${realmdata[3]}).: " newVal[3]
 
-    for idx in "${#realmdata}";do
-      if [ -z $realmdata[idx] ]; then
-        realmdata[idx] = orival[idx]
-      fi
-    done
+    assign_new_value 'realmdata[0]' "${newVal[0]}"
+    assign_new_value 'realmdata[1]' "${newVal[1]}"
+    assign_new_value 'realmdata[2]' "${newVal[2]}"
+    assign_new_value 'realmdata[3]' "${newVal[3]}"
   fi
 
   echo
@@ -1761,25 +1761,24 @@ function realm_edit()
 function realm_add()
 {
   clear
-  local realmdata
-  realmdata=()
-  realmdata_default=("0" "CMaNGOS" "localhost" "8085")
-  if [ $BASH_VERSION -gt 4 ]; then
+  local realmdata_default=("1" "CMaNGOS ${EXPENSION} server" "localhost" "8085")
+  local realmdata="$realmdata_default"
+
+  if [[ $BASH_VERSION > 4 ]]; then
     read -e -p "Enter realm id (should be unique id).: " -i "${realmdata_default[0]}" realmdata[0]
     read -e -p "Enter realm name.....................: " -i "${realmdata_default[1]}" realmdata[1]
     read -e -p "Enter realm address..................: " -i "${realmdata_default[2]}" realmdata[2]
     read -e -p "Enter realm port.....................: " -i "${realmdata_default[3]}" realmdata[3]
   else
-    read -e -p "Enter realm id (should be unique id).current(${realmdata_default[0]}).: " realmdata[0]
-    read -e -p "Enter realm name.....................current(${realmdata_default[1]}).: " realmdata[1]
-    read -e -p "Enter realm address..................current(${realmdata_default[2]}).: " realmdata[2]
-    read -e -p "Enter realm port.....................current(${realmdata_default[3]}).: " realmdata[3]
-
-    for idx in "${#realmdata}";do
-      if [ -z $realmdata[idx] ]; then
-        realmdata[idx] = realmdata_default[idx]
-      fi
-    done
+    local newVal=()
+    read -e -p "Enter realm id (should be unique id).current(${realmdata_default[0]}).: " newVal[0]
+    read -e -p "Enter realm name.....................current(${realmdata_default[1]}).: " newVal[1]
+    read -e -p "Enter realm address..................current(${realmdata_default[2]}).: " newVal[2]
+    read -e -p "Enter realm port.....................current(${realmdata_default[3]}).: " newVal[3]
+    assign_new_value 'realmdata[0]' "${newVal[0]}" "${realmdata_default[0]}"
+    assign_new_value 'realmdata[1]' "${newVal[1]}" "${realmdata_default[1]}"
+    assign_new_value 'realmdata[2]' "${newVal[2]}" "${realmdata_default[2]}"
+    assign_new_value 'realmdata[3]' "${newVal[3]}" "${realmdata_default[3]}"
   fi
 
   local choice
@@ -1787,7 +1786,6 @@ function realm_add()
   if [[ ! "$choice" =~ ^[Yy]$ ]]; then
       return
   fi
-
   sql="$SQL_INSERT_REALM_LIST('${realmdata[0]}','${realmdata[1]}','${realmdata[2]}','${realmdata[3]}');"
   execute_sql_command "$REALM_DB_NAME" "$sql" "Adding new realm to database"
 }
