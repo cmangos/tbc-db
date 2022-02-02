@@ -1,29 +1,4 @@
 -- Quest series Necklace recovery (Uldaman)
--- Quest Translating the Journal
-DELETE FROM dbscripts_on_quest_end WHERE id = '2338';
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
-('2338 ', '0', '29', '2', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Translating the Journal: Jarkal Mossmeld - Toggle NPC Flags'),
-('2338 ', '0', '21', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Translating the Journal: Jarkal Mossmeld - Set ActiveObject'),
-('2338 ', '0', '3', '0', '0', '0', '0', '0', '0', '0', '0', '-6658.7236','-2158.72','245.35074', '0', 'Translating the Journal: Jarkal Mossmeld - Move'),
-('2338 ', '0', '0', '0', '0', '0', '0', '3082', '0', '0', '0', '0', '0', '0', '0', 'Translating the Journal: Jarkal Mossmeld - Say Text'),
-('2338 ', '8000', '3', '0', '0', '0', '0', '0', '0', '0', '0', '-6673.226','-2180.4727','243.9145', '0', 'Translating the Journal: Jarkal Mossmeld - Move'),
-('2338 ', '17000', '3', '0', '0', '0', '0', '0', '0', '0', '0', '-6679.262','-2170.4294','244.22798', '0', 'Translating the Journal: Jarkal Mossmeld - Move'),
-('2338 ', '25000', '28', '8', '0', '0', '0', '0', '0', '0', '0', '0','0','0', '0', 'Translating the Journal: Jarkal Mossmeld - EmoteState Kneel'),
-('2338 ', '25000', '0', '0', '0', '0', '0', '3084', '0', '0', '0', '0','0','0', '0', 'Translating the Journal: Jarkal Mossmeld - Say Text'),
-('2338 ', '28000', '28', '0', '0', '0', '0', '0', '0', '0', '0', '0','0','0', '0', 'Translating the Journal: Jarkal Mossmeld - EmoteState Stand'),
-('2338 ', '28000', '25', '1', '0', '0', '0', '0', '0', '0', '0', '0','0','0', '0', 'Translating the Journal: Jarkal Mossmeld - Set Run'),
-('2338 ', '29000', '3', '0', '0', '0', '0', '0', '0', '0', '0', '-6653.346','-2139.3271','251.90773', '0', 'Translating the Journal: Jarkal Mossmeld - Move'),
-('2338 ', '34000', '25', '0', '0', '0', '0', '0', '0', '0', '0', '0','0','0', '0', 'Translating the Journal: Jarkal Mossmeld - Set Walk'),
-('2338 ', '35000', '3', '0', '0', '0', '0', '0', '0', '0', '0', '-6653.346','-2139.3271','251.90773', '0', 'Translating the Journal: Jarkal Mossmeld - Move'),
-('2338 ', '37000', '3', '0', '0', '0', '0', '0', '0', '0', '0', '0','0','0', '5.4803338', 'Translating the Journal: Jarkal Mossmeld - Set Orientation'),
-('2338 ', '40000', '15', '9744', '0', '0', '4', '0', '0', '0', '0', '0','0','0', '0', 'Translating the Journal: Jarkal Mossmeld - Cast Spell'),
-('2338 ', '45000', '0', '0', '0', '0', '0', '3085', '0', '0', '0', '0','0','0', '0', 'Translating the Journal: Jarkal Mossmeld - Say Text'),
-('2338 ', '47000', '29', '2', '2', '0', '0', '0', '0', '0', '0', '0','0','0', '0', 'Translating the Journal: Jarkal Mossmeld - Toggle NPC Flags'),
-('2338 ', '47000', '21', '0', '0', '0', '0', '0', '0', '0', '0', '0','0','0', '0', 'Translating the Journal: Jarkal Mossmeld - Remove ActiveObject');
-
-UPDATE `quest_template` SET `CompleteScript`=2338 WHERE `entry`=2338;
-UPDATE `creature_template` SET `SpeedWalk`='1.15' WHERE (`Entry`='6868');
-
 -- Quest Find the Gems and Power Source
 DELETE FROM dbscripts_on_quest_end WHERE id = '2339';
 INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
