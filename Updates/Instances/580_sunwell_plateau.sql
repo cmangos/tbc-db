@@ -1569,18 +1569,18 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(58001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72801, 3);
+(5800001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72801, 3);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(58001, 25509, 1, 2, 0),
-(58001, 25591, 1, 2, 0),
-(58001, 25597, 1, 2, 0);
+(5800001, 25509, 1, 2, 0),
+(5800001, 25591, 1, 2, 0),
+(5800001, 25597, 1, 2, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`) VALUES
-(58001, @CGUID+185),
-(58001, @CGUID+164),
-(58001, @CGUID+165),
-(58001, @CGUID+169);
+(5800001, @CGUID+185),
+(5800001, @CGUID+164),
+(5800001, @CGUID+165),
+(5800001, @CGUID+169);
 
 -- =========
 -- DBSCRIPTS

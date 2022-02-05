@@ -606,17 +606,17 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(54201, 'Blood Furnace - Group 1', 0, 0, 0, 3);
+(5420001, 'Blood Furnace - Group 1', 0, 0, 0, 3);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(54201, 17371, 1, 1, 0),
-(54201, 17395, 1, 1, 0),
-(54201, 17414, 1, 1, 0);
+(5420001, 17371, 1, 1, 0),
+(5420001, 17395, 1, 1, 0),
+(5420001, 17414, 1, 1, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`) VALUES
-(54201, @CGUID+35),
-(54201, @CGUID+44),
-(54201, @CGUID+86);
+(5420001, @CGUID+35),
+(5420001, @CGUID+44),
+(5420001, @CGUID+86);
 
 -- =========
 -- DBSCRIPTS
