@@ -12,10 +12,10 @@ INSERT INTO spawn_group_spawn (Id, Guid, SlotId) VALUES
 DELETE FROM spawn_group_formation WHERE Id=11;
 INSERT INTO spawn_group_formation (Id, FormationType, FormationSpread, FormationOptions, PathId, MovementType, `Comment`) VALUES
 (11, 4, 3, 0, 14872, 2, 'The Barrens - Trok and Swarm of bees');
-UPDATE creature SET position_x=223.9854, position_y=-2901.088, position_z=96.94412, orientation=1.997747, MovementType=0 WHERE guid=13588;
-UPDATE creature SET position_x=224.0135, position_y=-2901.302, position_z=97.1894, orientation=1.612615, MovementType=0 WHERE guid=13586;
-UPDATE creature SET position_x=223.9363, position_y=-2899.909, position_z=97.22249, orientation=1.815302, MovementType=0 WHERE guid=13589;
-UPDATE creature SET position_x=223.9646, position_y=-2899.396, position_z=97.05442, orientation=2.004035, MovementType=0 WHERE guid=13587;
+UPDATE creature SET position_x=223.9854, position_y=-2901.088, position_z=96.94412, orientation=1.997747, MovementType=0, `spawndist` = 0 WHERE guid=13588;
+UPDATE creature SET position_x=224.0135, position_y=-2901.302, position_z=97.1894, orientation=1.612615, MovementType=0, `spawndist` = 0 WHERE guid=13586;
+UPDATE creature SET position_x=223.9363, position_y=-2899.909, position_z=97.22249, orientation=1.815302, MovementType=0, `spawndist` = 0 WHERE guid=13589;
+UPDATE creature SET position_x=223.9646, position_y=-2899.396, position_z=97.05442, orientation=2.004035, MovementType=0, `spawndist` = 0 WHERE guid=13587;
 DELETE FROM creature_movement WHERE id IN (13588,13586,13589,13587);
 DELETE FROM creature_spawn_data WHERE guid=13178;
 INSERT INTO creature_spawn_data (guid, Id) VALUES
