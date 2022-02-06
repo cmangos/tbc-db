@@ -16434,8 +16434,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2164001','21640','13','0','100','1025','15000','20000','0','0','0','0','11','34802','1','0','0','0','0','0','0','0','0','0','Trogma - Cast Kick on Target Casting'),
 ('2164002','21640','2','0','100','1024','25','0','0','0','0','0','11','8599','0','0','54','2384','0','0','0','0','0','0','Trogma - Cast Enrage at 25% HP'),
 -- Electromental 21729 - spell_dummy_npc
-('2172901','21729','11','0','100','0','0','0','0','0','0','0','57','1','35','0','11','37248','0','0','0','0','0','0','Electromental - Enable Caster Mode and Cast Power Converters: Electromental Visual on Spawn'),
-('2172902','21729','9','0','100','1025','0','40','2000','2000','0','0','11','37273','1','256','0','0','0','0','0','0','0','0','Electromental - Cast Lightning Bolt'),
+('2172901','21729','11','0','100','0','0','0','0','0','0','0','57','3','35','0','11','37248','0','0','20','0','0','0','Electromental - Enable Stationary Mode and Cast Power Converters: Electromental Visual on Spawn'),
+('2172902','21729','0','0','100','1025','0','0','2000','2000','0','0','11','37273','1','256','0','0','0','0','0','0','0','0','Electromental - Cast Lightning Bolt'),
 -- Wyrm from Beyond 21796
 ('2179601','21796','11','0','100','0','0','0','0','0','0','0','11','37510','0','0','0','0','0','0','0','0','0','0','Wyrm from Beyond - Cast Summon Singing Ridge Void Storm on Spawn'),
 ('2179602','21796','1','0','100','0','3000','3000','0','0','0','0','11','34876','0','0','19','33554432','0','0','19','256','0','0','Wyrm from Beyond - Cast Wyrm from Beyond Transform and Remove UntFlags on OOC timer'),

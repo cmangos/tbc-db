@@ -166,6 +166,9 @@ UPDATE gameobject_template SET data8=1 WHERE entry=184722; -- Cauldron Bug Summo
 -- Bogblossom 185497,185500 - consumable
 UPDATE `gameobject_template` SET `data5` = 1 WHERE `entry` IN (185497,185500);
 
+UPDATE gameobject_template SET data5=1 WHERE entry=184906; -- Power Converter (consumable)
+UPDATE gameobject_template SET data8=1 WHERE entry=184910; -- Power Converter (serverside)
+
 -- -------------------------------
 -- Item custom changes
 -- -------------------------------
