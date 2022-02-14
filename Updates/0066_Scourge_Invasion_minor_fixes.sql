@@ -4,7 +4,7 @@ INSERT INTO `spell_script_target` VALUES
 (28056, 1, 16172, 0); -- Allow the death spell of shadow of doom to hit the necrotic shard
 UPDATE `creature_template` SET `faction`=1630 WHERE `entry`=16143; -- Make Shadow of Doom evil
 UPDATE `creature_template` SET `UnitFlags`=256 WHERE `entry`=16136; -- Make Necrotic Shard not attackable
-UPDATE `creature_template` SET `UnitFlags`=33554432 WHERE `entry` IN (16356, 16346, 16336, 16306, 16338, 16421, 16386, 16398, 16401); -- Invisible Helper NPCs
+UPDATE `creature_template` SET `UnitFlags`=33554432 WHERE `entry` IN (16356, 16346, 16336, 16306, 16338, 16421, 16386, 16398, 16401, 16995); -- Invisible Helper NPCs
 UPDATE `creature` SET `spawntimesecsmin`=27000, `spawntimesecsmax`=27000 WHERE `id`=16398; -- Don't respawn or spawn Necropolis Proxies. They're spawned by the Necropolis when required
 UPDATE `gameobject_template` SET `Flags`=4 WHERE `entry` IN (181172, 181223, 181215, 181374, 181373, 181154); -- Make Necropolis untargetable/unclickable
 UPDATE `gameobject` SET `spawntimesecsmin`=-1, `spawntimesecsmax`=-1 WHERE `id` IN (181136); -- Summoning Circle
