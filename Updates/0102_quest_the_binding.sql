@@ -2,7 +2,7 @@
 DELETE FROM dbscripts_on_quest_start WHERE id = '1795';
 INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
 ('1795 ', '0', '21', '1', '0', '0', '0', '0', '0', '0', '0', '0','0', '0', '0', 'The Binding: Strahad Farsan - Set ActiveObject'),
-('1795 ', '1000', '29', '51', '0', '0', '0', '0', '0', '0', '0', '0','0', '0', '0', 'The Binding: Strahad Farsan - Remove Npc Flags'),
+('1795 ', '1000', '29', '2', '0', '0', '0', '0', '0', '0', '0', '0','0', '0', '0', 'The Binding: Strahad Farsan - Remove QuestGiver Npc Flags'),
 ('1795 ', '1000', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0','0', '0', 'The Binding: Strahad Farsan - Emote OneShotTalk'),
 ('1795 ', '1000', '0', '0', '0', '0', '0', '2370', '0', '0', '0', '0','0', '0', '0', 'The Binding: Strahad Farsan - Say Text'),
 ('1795 ', '4000', '3', '0', '0', '0', '0', '0', '0', '0','0', '-780.438', '-3718.21', '42.1855', '0', 'The Binding: Strahad Farsan - Move'),
@@ -14,8 +14,8 @@ UPDATE `quest_template` SET `StartScript`=1795 WHERE `entry`=1795;
 -- Success script for quest The Binding.
 DELETE FROM dbscripts_on_relay WHERE id = '17950';
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
-('17950', '0', '40', '92252', '106', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Strahad\'s Summoning Circle - Despawn'),
-('17950', '0', '40', '92388', '106', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Summoning Circle - Despawn'),
+('17950', '0', '40', '92252', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Strahad\'s Summoning Circle - Despawn'),
+('17950', '0', '40', '92388', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Summoning Circle - Despawn'),
 ('17950', '0', '29', '3', '1', '0', '6254', '30', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Wytula - Add NpcFlags'),
 ('17950', '0', '29', '3', '1', '0', '6252', '30', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Magaz - Add NpcFlags'),
 ('17950 ', '0', '3', '0', '0', '0', '0', '0', '0', '0','0', '-776.003', '-3718.86', '42.6078', '0', 'The Binding: Strahad Farsan - Move'),
@@ -25,49 +25,61 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalon
 ('17950 ', '13000', '29', '51', '1', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Add Npc Flags'),
 ('17950 ', '13000', '21', '0', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Remove ActiveObject');
 
--- Failure script for quest The Binding.
+-- Quest Failed (Triggert after 3minutes) 
 DELETE FROM dbscripts_on_relay WHERE id = '17951';
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
-('17951', '0', '0', '31', '6251', '6', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Only terminate script when in range with Strahad Farsan'),
-('17951', '0', '0', '0', '3', '1', '0', '0', '0', '0', '80000', '0', '0', '0', '0', '0', 'The Binding: Acolyte Wytula - test'),
-('17951', '0', '1', '29', '3', '1', '0', '6254', '30', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Wytula - Add NpcFlags'),
-('17951', '0', '2', '29', '3', '1', '0', '6252', '30', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Magaz - Add NpcFlags'),
-('17951', '0', '3', '3', '0', '0', '0', '6251', '25', '0', '0','0', '-776.003', '-3718.86', '42.6078', '0', 'The Binding: Strahad Farsan - Move'),
-('17951', '4000', '0','3', '0', '0', '0', '6251', '25', '0', '0','0', '-782.851', '-3718.55', '41.5492', '0', 'The Binding: Strahad Farsan - Move'),
-('17951', '7000', '0','3', '0', '0', '0', '6251', '25', '0', '0','0', '-785.161', '-3721.88', '40.8014', '0', 'The Binding: Strahad Farsan - Move'),
-('17951', '10000', '0','3', '0', '0', '0', '6251', '25', '0', '0','0', '-785.912', '-3723.26', '40.4528', '2.05949', 'The Binding: Strahad Farsan - Move'),
-('17951', '13000', '0','29', '51', '1', '0', '6251', '25', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Add Npc Flags'),
-('17951', '13000', '0', '21', '0', '0', '0', '6251', '25', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Remove ActiveObject');
+('17951', '185000', '0', '31', '6251', '6', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Only terminate script when in range with Strahad Farsan'),
+('17951', '185000', '1', '45', '17953', '0', '0', '6251', '6', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Start Fail Script');
+
+-- Quest Failed (Player died or Summoned Felhunter is longer then 6 second OOC)
+DELETE FROM dbscripts_on_relay WHERE id = '17952';
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
+('17952', '0', '0',  '45', '17953', '0', '0', '6251', '20', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Start Fail Script'),
+('17952', '1000', '1',  '18', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Despawn Self');
+
+-- Failure Script
+DELETE FROM dbscripts_on_relay WHERE id = '17953';
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
+('17953', '0', '0', '29', '2', '1', '0', '6254', '30', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Wytula - Add QuestGiver NpcFlags'),
+('17953', '0', '0', '29', '2', '1', '0', '6252', '30', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Magaz - Add QuestGiver NpcFlags'),
+('17953', '0', '0', '40', '92252', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Strahad\'s Summoning Circle - Despawn'),
+('17953', '0', '0', '40', '92388', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Summoning Circle - Despawn'),
+('17953', '0', '0', '3', '0', '0', '0', '0', '0', '0', '0','0', '-776.00275', '-3718.8577', '42.708286', '0', 'The Binding: Strahad Farsan - Move'),
+('17953', '3000', '0', '3', '0', '0', '0', '0', '0', '0', '0','0', '-782.85144', '-3718.5479', '41.549194', '0', 'The Binding: Strahad Farsan - Move'),
+('17953', '6000', '0', '3', '0', '0', '0', '0', '0', '0', '0','0', '-785.16113', '-3721.882', '40.80139', '0', 'The Binding: Strahad Farsan - Move'),
+('17953', '11000', '0', '3', '0', '0', '0', '0', '0', '0', '0','0', '-785.9119', '-3723.2622', '40.45276', '0', 'The Binding: Strahad Farsan - Move'),
+('17953', '13000', '0', '3', '0', '0', '0', '0', '0', '0', '0','0', '-785.9119', '-3723.2622', '40.45276', '2.0594', 'The Binding: Strahad Farsan - Move'),
+('17953', '14000', '0','29', '2', '1', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Add Npc Flags'),
+('17953', '14000', '0', '21', '0', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Remove ActiveObject');
 
 -- Script when Strahad Farsan casts spell Summon Effect
 DELETE FROM dbscripts_on_event WHERE id = '1428';
 INSERT INTO `dbscripts_on_event` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `x`, `y`, `z`, `o`, `comments`) VALUES 
-('1428', '0', '0',  '9', '29205', '120', '0', '0', '0', '0', '0','0', '0', '0', '0', 'The Binding: Summon GameObject Strahad\'s Summoning Circle'),
+('1428', '0', '0',  '9', '29205', '190', '0', '0', '0', '0', '0','0', '0', '0', '0', 'The Binding: Summon GameObject Strahad\'s Summoning Circle'),
 ('1428', '2000', '0', '1', '2', '0', '0', '6253', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Fenrick - Emote OneShotBow'),
 ('1428', '2000', '0', '1', '2', '0', '0', '6254', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Wytula - Emote OneShotBow'),
 ('1428', '2000', '0', '1', '2', '0', '0', '6252', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Magaz - Emote OneShotBow'),
 ('1428', '2000', '0', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Emote OneShotTalk'),
 ('1428', '2000', '0', '0', '0', '0', '0', '0', '0', '0', '2374', '0', '0', '0', '0', 'The Binding: Strahad Farsan - Say Text'),
-('1428', '2000', '0', '29', '3', '0', '0', '6254', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Wytula - Remove NpcFlags'),
-('1428', '2000', '0', '29', '3', '0', '0', '6252', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Magaz - Remove NpcFlags'),
-('1428', '5000', '0', '3', '0', '0', '0', '0', '0', '0', '0', '-763.195', '-3720.34', '42.2333', '3.15487', 'The Binding: Strahad Farsan - Move'),
+('1428', '2000', '0', '29', '2', '0', '0', '6254', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Wytula - Remove QuestGiver NpcFlags'),
+('1428', '2000', '0', '29', '2', '0', '0', '6252', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Magaz - Remove QuestGiver  NpcFlags'),
+('1428', '5000', '0', '3', '0', '0', '0', '0', '0', '0', '0', '-763.195', '-3720.34', '42.2333', '0', 'The Binding: Strahad Farsan - Move'),
 ('1428', '5000', '0', '15', '8675', '0', '0', '6253', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Fenrick - Cast Spell Warlock Channeling'),
 ('1428', '5000', '0', '15', '8675', '0', '0', '6254', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Wytula - Cast Spell Warlock Channeling'),
 ('1428', '5000', '0', '15', '8675', '0', '0', '6252', '30', '0', '0', '0', '0', '0', '0', 'The Binding: Acolyte Magaz - Cast Spell Warlock Channeling'),
-('1428', '14000', '0',  '9', '50355', '106', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Summon GameObject Summoning Circle'),
-('1428', '305000', '0',  '45', '17951', '0', '0', '6253', '20', '0', '0', '0', '0', '0', '0', 'The Binding: Start Fail Script');
+('1428', '9000', '0', '3', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3.15487', 'The Binding: Strahad Farsan - Set Facing'),
+('1428', '14000', '0',  '9', '50355', '176', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'The Binding: Summon GameObject Summoning Circle'),
+('1428', '14000', '0',  '45', '17951', '0', '0', '6253', '20', '0', '0', '0', '0', '0', '0', 'The Binding: Start Fail CheckScript');
 
 -- Script when player uses item Tome of the Cabal.
 DELETE FROM dbscripts_on_event WHERE id = '1449';
 INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint4`,`x`, `y`, `z`, `o`, `comments`) VALUES 
-('1449 ', '0', '10', '6268', '120000', '0', '0', '0', '0', '0', '6268', '-768.601', '-3721.96', '42.4778', '2.79253', 'The Binding: Summon Creature Summoned Felhunter'),
-('1449 ', '1000', '1', '34', '0', '0', '6253', '30', '0', '0', '0', '0', '0', '0', '0','The Binding: Acolyte Fenrick - Emote OneShotWoundCritical'),
-('1449 ', '1000', '1', '34', '0', '0', '6254', '30', '0', '0', '0', '0', '0', '0', '0','The Binding: Acolyte Wytula - Emote OneShotWoundCritical'),
-('1449 ', '1000', '1', '34', '0', '0', '6252', '30', '0', '0', '0', '0', '0', '0', '0','The Binding: Acolyte Magaz - Emote OneShotWoundCritical'),
-('1449 ', '1000', '29', '3', '2', '0', '6254', '30', '0', '0', '0', '0', '0', '0', '0','The Binding: Acolyte Wytula - Toggle NpcFlags'),
-('1449 ', '1000', '29', '3', '2', '0', '6252', '30', '0', '0', '0', '0', '0', '0', '0','The Binding: Acolyte Magaz - Toggle NpcFlags'),
-('1449 ', '3000', '40', '92252', '106', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Strahad\'s Summoning Circle - Despawn'),
-('1449 ', '3000', '40', '92388', '106', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Summoning Circle - Despawn');
+('1449', '0', '10', '6268', '120000', '0', '0', '0', '0', '0', '6268', '-768.601', '-3721.96', '42.4778', '2.79253', 'The Binding: Summon Creature Summoned Felhunter'),
+('1449', '1000', '1', '34', '0', '0', '6253', '30', '0', '0', '0', '0', '0', '0', '0','The Binding: Acolyte Fenrick - Emote OneShotWoundCritical'),
+('1449', '1000', '1', '34', '0', '0', '6254', '30', '0', '0', '0', '0', '0', '0', '0','The Binding: Acolyte Wytula - Emote OneShotWoundCritical'),
+('1449', '1000', '1', '34', '0', '0', '6252', '30', '0', '0', '0', '0', '0', '0', '0','The Binding: Acolyte Magaz - Emote OneShotWoundCritical'),
+('1449', '5000', '40', '92252', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Strahad\'s Summoning Circle - Despawn'),
+('1449', '6000', '40', '92388', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0','The Binding: Summoning Circle - Despawn');
 
 -- Spawn script for Summoned Felhunter.
 DELETE FROM dbscripts_on_relay WHERE id = '6268';
@@ -96,4 +108,4 @@ INSERT INTO `spell_script_target` (`entry`, `targetEntry`) VALUES ('8712', '9238
 INSERT INTO `spell_script_target` (`entry`, `targetEntry`) VALUES ('8712', '92252');
 
 -- Correct data for Summoned Felhunter.
-UPDATE `creature_template` SET `faction`=35, `MeleeBaseAttackTime`=2000, `SpeedWalk`=1, `SpeedRun`=1.14286 WHERE `entry`=6268;
+UPDATE `creature_template` SET `faction`=35, `MeleeBaseAttackTime`=2000, `SpeedWalk`=1, `SpeedRun`=1.14286, `MovementType`=0 WHERE `entry`=6268;
