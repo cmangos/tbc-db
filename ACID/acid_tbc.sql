@@ -14774,7 +14774,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('624007','6240','8','0','100','1','25203','-1','0','0','0','0','25','0','0','0','1','2356','0','0','0','0','0','0','Affray Challenger - Flee, Emote on Demoralizing Shout (Rank 7) Spellhit'),
 -- Twiggy Flathead 6248 - npc_twiggy_flathead
 -- Summoned Felhunter 6268
-('626801','6268','18','0','100','1025','100','10','11000','17000','0','0','11','2691','1','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Mana Burn on Target Mana User'),
+('626801','6268','11','0','100','1025','0','0','0','0','0','0','11','7741','0','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Summoned Demon - On Spawn'),
+('626802','6268','18','0','100','1025','100','10','11000','17000','0','0','11','2691','1','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Cast Mana Burn on Target Mana User'),
+('626803','6268','1','0','100','1025','6000','6000','6000','6000','0','0','53','17952','0','0','0','0','0','0','0','0','0','0','Summoned Felhunter - Start Releay Script - 6sec OOC'),
 -- Tazan 6494
 ('649401','6494','9','0','80','1025','0','5','6500','10800','0','0','11','6253','1','0','0','0','0','0','0','0','0','0','Tazan - Cast Backhand'),
 -- Overseer Glibby 6606
