@@ -19629,7 +19629,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2199801','21998','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','50','0','0','0','Kor''kron Wind Rider - Prevent Combat Movement, Prevent Melee, and Set React State Passive on Spawn'),
 ('2199802','21998','11','0','100','0','0','0','0','0','0','0','53','10212','11','0','11','38137','0','0','0','0','0','0','Kor''kron Wind Rider - Start Relay Script (Fly to Player) and Cast Summon Spawn Marker on Spawn'),
 ('2199803','21998','1','0','100','0','5000','5000','0','0','0','0','54','19675','11','0','0','0','0','0','0','0','0','0','Kor''kron Wind Rider - Say on Timer OOC'),
-('2199804','21998','0','0','100','0','2000','2000','0','0','0','0','54','19698','11','0','53','10211','0','0','0','0','0','0','Kor''kron Wind Rider - Say and Start Relay Script (Fly to Spawn Marker)'),
+('2199804','21998','0','0','100','0','2000','2000','0','0','0','0','54','19698','11','0','24','1','0','0','53','10211','0','0','Kor''kron Wind Rider - Say, Evade, and Start Relay Script (Fly to Spawn Marker)'),
 -- Dragonmaw Nether Drake 22000
 ('2200001','22000','0','0','100','1025','5000','10000','16000','20000','0','0','11','38344','1','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Arcane Blast'),
 ('2200002','22000','0','0','100','1025','4000','8000','12000','16000','0','0','11','36513','0','0','0','0','0','0','0','0','0','0','Dragonmaw Nether Drake - Cast Intangible Presence'),
@@ -19666,7 +19666,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2205901','22059','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','50','0','0','0','Wildhammer Gryphon Rider - Prevent Combat Movement, Prevent Melee, and Set React State Passive on Spawn'),
 ('2205902','22059','11','0','100','0','0','0','0','0','0','0','53','10212','11','0','11','38137','0','0','0','0','0','0','Wildhammer Gryphon Rider - Start Relay Script (Fly to Player) and Cast Summon Spawn Marker on Spawn'),
 ('2205903','22059','1','0','100','0','5000','5000','0','0','0','0','54','19742','11','0','0','0','0','0','0','0','0','0','Wildhammer Gryphon Rider - Say on Timer OOC'),
-('2205904','22059','0','0','100','0','2000','2000','0','0','0','0','54','19743','11','0','53','10211','0','0','0','0','0','0','Wildhammer Gryphon Rider - Say and Start Relay Script (Fly to Spawn Marker)'),
+('2205904','22059','0','0','100','0','2000','2000','0','0','0','0','54','19743','11','0','24','1','0','0','53','10211','0','0','Wildhammer Gryphon Rider - Say, Evade, and Start Relay Script (Fly to Spawn Marker)'),
 -- Shadowmoon Soulstealer 22061 - mob_shadowmoon_soulstealer
 -- Air Force Guard Post (Scryer - Dragonhawk) 22066 - npc_air_force_bots
 -- Air Force Trip Wire - Rooftop (Scryer) 22070 - npc_air_force_bots
