@@ -8,4 +8,15 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10212, 0, 0, 37, 0, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Wildhammer Gryphon Rider/Kor''kron Wind Rider - Fly to Player'),
 (10213, 0, 0, 18, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Wildhammer Gryphon Rider/Kor''kron Wind Rider - Despawn Self');
 
+UPDATE creature_template SET GossipMenuId=8756 WHERE Entry=21998; -- Kor'kron Wind Rider
+UPDATE creature_template SET GossipMenuId=8756 WHERE Entry=22059; -- Wildhammer Gryphon Rider
+
+DELETE FROM gossip_menu WHERE entry=8756;
+INSERT INTO gossip_menu (entry, text_id, script_id, condition_id) VALUES
+(8756, 11091, 0, 0);
+DELETE FROM npc_text WHERE id=11091;
+DELETE FROM npc_text_broadcast_text WHERE id=11091;
+INSERT INTO npc_text_broadcast_text (Id, Prob0, BroadcastTextId0) VALUES
+(11091, 1, 21955);
+
 
