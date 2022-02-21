@@ -3050,20 +3050,20 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1614603,1614602,1593101,1606102,1606101,1699801,1699802,1699803,1699804,1699805);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1614603,1000,1,36,0,0,16145,8,0,0,0,0,0,0,0,0,0,'Deathknight captain attacks'),
+(1614603,1000,1,36,0,0,16145,10,0,0,0,0,0,0,0,0,0,'Deathknight captain attacks'),
 (1614603,2000,1,43,0,0,0,0,0,0,0,0,0,0,0,0,0,'Deathknight parries'),
-(1614603,5000,1,1,0,0,16145,8,0,0,0,0,0,0,0,0,0,'Deathknight captain talks'),
-(1614603,7000,1,36,0,0,16145,8,0,0,0,0,0,0,0,0,0,'Deathknight captain attacks'),
+(1614603,5000,1,1,0,0,16145,10,0,0,0,0,0,0,0,0,0,'Deathknight captain talks'),
+(1614603,7000,1,36,0,0,16145,10,0,0,0,0,0,0,0,0,0,'Deathknight captain attacks'),
 (1614603,8000,1,43,0,0,0,0,0,0,0,0,0,0,0,0,0,'Deathknight parries'),
-(1614603,14000,1,60,0,0,16145,8,0,0,0,0,0,0,0,0,0,'Deathknight captain kicks'),
+(1614603,14000,1,60,0,0,16145,10,0,0,0,0,0,0,0,0,0,'Deathknight captain kicks'),
 (1614603,15000,1,43,0,0,0,0,0,0,0,0,0,0,0,0,0,'Deathknight parries'),
-(1614602,1000,1,22,0,0,16145,8,0,0,0,0,0,0,0,0,0,'Deathknight Captain shout'),
-(1614602,3000,1,36,0,0,16146,8,0,0,0,0,0,0,0,0,0,'Deathknight buddy attacks combat dummy'),
+(1614602,1000,1,22,0,0,16145,12,0,0,0,0,0,0,0,0,0,'Deathknight Captain shout'),
+(1614602,3000,1,36,0,0,16146,12,0,0,0,0,0,0,0,0,0,'Deathknight buddy attacks combat dummy'),
 (1614602,5000,1,36,0,0,0,0,0,0,0,0,0,0,0,0,0,'Deathknight attacks combat dummy'),
-(1614602,12000,1,36,0,0,16146,8,0,0,0,0,0,0,0,0,0,'Deathknight buddy attacks combat dummy'),
+(1614602,12000,1,36,0,0,16146,12,0,0,0,0,0,0,0,0,0,'Deathknight buddy attacks combat dummy'),
 (1614602,13000,1,36,0,0,0,0,0,0,0,0,0,0,0,0,0,'Deathknight attacks combat dummy'),
 (1614602,20000,1,36,0,0,0,0,0,0,0,0,0,0,0,0,0,'Deathknight attacks combat dummy'),
-(1614602,21000,1,36,0,0,16146,8,0,0,0,0,0,0,0,0,0,'Deathknight buddy attacks combat dummy'),
+(1614602,21000,1,36,0,0,16146,12,0,0,0,0,0,0,0,0,0,'Deathknight buddy attacks combat dummy'),
 
 (1593101,1000,15,28280,0,0,0,0,0,0,0,0,0,0,0,0,0,'cast summon sewage slime'),
 (1593101,3000,15,28280,0,0,0,0,0,0,0,0,0,0,0,0,0,'cast summon sewage slime'),
