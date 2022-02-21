@@ -75,7 +75,9 @@ REPLACE INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `Position
 (25141, 0, 39 ,-1801.548, 5331.875, -12.43613, 100, 0);
 
 UPDATE `creature` SET `MovementType`=2 WHERE `id`=25141;
-UPDATE `creature_template` SET `MovementType`=2 WHERE `entry`=25151;
+UPDATE `creature_template` SET `MovementType`=2 WHERE `entry`=25141;
+
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` LIKE "25141%" OR `id` LIKE "19216%";
 
 REPLACE INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `comments`) VALUES
 (2514103, 73000, 1, 22, 0, 0, 0, 0, 4, 0, "Commander Steele summons recruits"),
@@ -125,18 +127,29 @@ REPLACE INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalo
 (2514127, 10000, 35, 9, 0, 0, 0, 0, 4, 0, "Commander Steele sends off recruits"),
 (2514130, 0, 1, 2, 0, 0, 0, 0, 4, 0, "Commander Steele bows to Lord Torvos"),
 (2514130, 3000, 0, 0, 0, 0, 0, 0, 4, 16401, "DIALOGUE-REPLACEME - 16401"),
+(2514130, 8000, 0, 0, 0, 0, 25140, 5, 7, 16406, "->Guessed Torvos response<-"),
+(2514130, 15000, 0, 0, 0, 0, 25140, 5, 7, 16407, "->Guessed Torvos response<-"),
 (2514130, 22000, 0, 0, 0, 0, 0, 0, 4, 16403, "DIALOGUE-REPLACEME - 16403"),
 (2514130, 28000, 0, 0, 0, 0, 0, 0, 4, 16404, "DIALOGUE-REPLACEME - 16404"),
 (2514130, 38000, 0, 0, 0, 0, 19202, 5, 7, 16412, "DIALOGUE-REPLACEME(Mordin's response) 16412"),
+(2514130, 38000, 35, 9, 5, 0, 19202, 5, 7, 0, "Make Mordin face Steele"),
+(2514130, 42000, 0, 0, 0, 0, 25140, 5, 7, 16408, "->Guessed Torvos response<-"),
+(2514130, 46000, 35, 10, 5, 0, 25140, 5, 7, 0, "Make Mordin face Torvos"),
+(2514130, 51000, 0, 0, 0, 0, 25140, 5, 7, 16409, "->Guessed Torvos response<-"),
+(2514130, 59000, 0, 0, 0, 0, 25140, 5, 7, 16410, "->Guessed Torvos response<-"),
 (2514130, 66000, 0, 0, 0, 0, 19202, 5, 7, 16413, "DIALOGUE-REPLACEME(Mordin's response) 16413"),
+(2514130, 67000, 35, 11, 5, 0, 19202, 5, 7, 0, "Reset Mordin Orientation"),
 (2514130, 81000, 0, 0, 0, 0, 0, 0, 4, 16405, "DIALOGUE-REPLACEME - 16405"),
+(2514130, 96000, 0, 0, 0, 0, 25140, 5, 7, 16411, "->Guessed Torvos response<-"),
 (2514130, 100000, 1, 2, 0, 0, 0, 0, 4, 0, "Commander Steele bows to Lord Torvos"),
 (2514136, 0, 20, 2, 1, 0, 19216, 10, 7, 0, "Commander Steele talks to Almonen and starts Sermon event"),
 (2514136, 0, 0, 0, 0, 0, 0, 0, 4, 16725, "Thank you for speaking to the men, Almonen. They'll be better for it."),
 (2514136, 31000, 0, 0, 0, 0, 0, 0, 4, 16726, "It would be an honor, Grand Anchorite."),
 (2514137, 35000, 28, 1, 0, 0, 0, 0, 4, 0, "Commander Steele sits down"),
 (2514137, 215000, 28, 0, 0, 0, 0, 0, 4, 0, "Commander Steele stands up"),
-(2514137, 222000, 0, 0, 0, 0, 0, 0, 4, 16779, "May it be as you say, Grand Anchorite."),
+(2514137, 222000, 0, 0, 0, 0, 0, 0, 4, 16779, "May it be as you say, Grand Anchorite.");
+
+REPLACE INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `comments`) VALUES
 (1921651, 8000, 0, 0, 0, 0, 0, 0, 4, 16733, "Your thanks are unnecessary, my friend. I consider it a privilege to speak to your recruits."),
 (1921651, 17000, 0, 0, 0, 0, 0, 0, 4, 16734, "A'dal has opened my mind to truths that I am to impart to our patrons today."),
 (1921651, 26000, 0, 0, 0, 0, 0, 0, 4, 16745, "You are welcome to remain in attendance."),
@@ -212,9 +225,6 @@ UPDATE `creature_movement_template` SET `ScriptId`=1921657 WHERE `Entry`=19216 A
 UPDATE `creature_movement_template` SET `ScriptId`=1921659 WHERE `Entry`=19216 AND `PathId`=1 AND `Point`=9;
 UPDATE `creature_movement_template` SET `ScriptId`=1921660 WHERE `Entry`=19216 AND `PathId`=1 AND `Point`=10;
 
-UPDATE `creature_template` SET `ScriptName`="npc_shattered_sun_trainee" WHERE `entry` IN (25134, 25135, 25136, 25137, 25143);
-UPDATE `creature_template` SET `ScriptName`="npc_commander_steele" WHERE `entry`=25141;
-
 REPLACE INTO `creature_movement` (`Id`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (96648, 1, -1819.389, 5436.759, -12.43534, 100, 0, 0),
 (96648, 2, -1831.606, 5411.151, -12.43531, 2.932153, 200000, 2515503),
@@ -271,21 +281,7 @@ REPLACE INTO `creature_movement` (`Id`, `Point`, `PositionX`, `PositionY`, `Posi
 (96644, 7, -1887.635, 5428.669, -12.4353, 100, 0, 0),
 (96644, 8, -1894.721, 5465.174, -12.43532, 4.869469, 0, 2515304);
 
-UPDATE creature_template SET InhabitType=3 WHERE Entry IN(25141, 25142, 25153, 25155, 19216);
-
-REPLACE INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `action1_type`, `action1_param1`, `action1_param2`, `comment`) VALUES
-(2514202, 25142, 30, 100, 1, 10, 19216, 48, 2, 0, "Creature is summoned to Almonen's sermon"),
-(2515302, 25153, 30, 100, 1, 10, 19216, 48, 2, 0, "Creature is summoned to Almonen's sermon"),
-(2515502, 25155, 30, 100, 1, 10, 19216, 48, 2, 0, "Creature is summoned to Almonen's sermon");
-
-UPDATE `creature_ai_scripts` SET `action2_type`=22, `action2_param1`=1 WHERE `id` IN (2514202, 2515302, 2515502);
-
-UPDATE `creature_ai_scripts` SET `event_inverse_phase_mask`=2 WHERE `id` IN (2514201, 2515301, 2515501);
-
-REPLACE INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `action1_type`, `action1_param1`, `action1_param2`, `comment`) VALUES
-(2514205, 25142, 30, 100, 1, 11, 25142, 22, 0, 0, "Return Creature to Phase 0"),
-(2515305, 25153, 30, 100, 1, 11, 25153, 22, 0, 0, "Return Creature to Phase 0"),
-(2515505, 25155, 30, 100, 1, 11, 25155, 22, 0, 0, "Return Creature to Phase 0");
+UPDATE `creature_template` SET `InhabitType`=3 WHERE `Entry` IN(25141, 25142, 25153, 25155, 19216);
 
 REPLACE INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `comments`) VALUES
 (2514203, 2000, 28, 1, 0, 0, 0, 0, 4, 0, "Sit down for sermon"),
