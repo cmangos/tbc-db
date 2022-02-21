@@ -21,5 +21,5 @@ INSERT INTO areatrigger_involvedrelation (id, quest) VALUES
 (4100, 9265);
 
 -- Add missing completion texts for investigating Scourge invasions in capital cities quests
-UPDATE quest_template SET RequestItemsText="Have you investigated the invasion yet? There's no time for dawdling!", OfferRewardText="Hmm. From what you've told me, the voices within the circles... they must be used for communication of some kind. I shudder to think what unnatural minds are contacted through such magic. Regardless, you seem to have emerged whole and sane.  The Argent Dawn appreciates your service." WHERE entry BETWEEN 9260 AND 9265;
+UPDATE quest_template SET SpecialFlags = 2, RequestItemsText="Have you investigated the invasion yet? There's no time for dawdling!", OfferRewardText="Hmm. From what you've told me, the voices within the circles... they must be used for communication of some kind. I shudder to think what unnatural minds are contacted through such magic. Regardless, you seem to have emerged whole and sane.  The Argent Dawn appreciates your service." WHERE entry BETWEEN 9260 AND 9265;
 
