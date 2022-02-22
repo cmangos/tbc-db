@@ -1489,11 +1489,11 @@ function apply_content_db()
   if [[ "$DB_LAST_CONTENT_VERSION_UPDATE" = "" ]]; then
     DB_LAST_CONTENT_VERSION_UPDATE="$SOURCE_LAST_CONTENT_VERSION_UPDATE"
   else
-    sql="ALTER TABLE db_version DROP COLUMN content_${DB_LAST_CONTENT_VERSION_UPDATE}';"
+    sql="ALTER TABLE db_version DROP COLUMN \`content_${DB_LAST_CONTENT_VERSION_UPDATE}\`;"
     DB_LAST_CONTENT_VERSION_UPDATE="$SOURCE_LAST_CONTENT_VERSION_UPDATE"
   fi
 
-  sql+="ALTER TABLE db_version ADD COLUMN content_${SOURCE_LAST_CONTENT_VERSION_UPDATE} bit(1) DEFAULT NULL;"
+  sql+="ALTER TABLE db_version ADD COLUMN \`content_${SOURCE_LAST_CONTENT_VERSION_UPDATE}\` bit DEFAULT NULL;"
   if ! execute_sql_command "$WORLD_DB_NAME" "$sql" "  - Apllying version changes"; then
     echo ">>> Failed to update content version!"
     false
