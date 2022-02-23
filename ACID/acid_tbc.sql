@@ -29188,11 +29188,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2003102','20031','0','0','100','1025','7000','13000','17000','20000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Bloodwarder Legionnaire - Cast Cleave'),
 ('2003103','20031','0','0','100','1025','10000','16000','18000','27000','0','0','11','33500','0','0','0','0','0','0','0','0','0','0','Bloodwarder Legionnaire - Cast Whirlwind'),
 ('2003104','20031','0','0','100','1025','8000','18000','22000','24000','0','0','11','35949','0','0','0','0','0','0','0','0','0','0','Bloodwarder Legionnaire - Cast Bloodthirst'),
--- Bloodwarder Vindicator 20032 - hammer of wrath anybody who drops below 20%, heal at 50% friendly missing hp Init 10-14
+-- Bloodwarder Vindicator 20032 - heal at 50% friendly missing hp Init 10-14
 ('2003201','20032','0','0','100','1025','3000','9000','18000','24000','0','0','11','13005','1','32','0','0','0','0','0','0','0','0','Bloodwarder Vindicator - Cast Hammer of Justice'),
 ('2003202','20032','14','0','100','1025','71800','50','9000','17000','0','0','11','37249','12','0','0','0','0','0','0','0','0','0','Bloodwarder Vindicator - Cast Flash of Light on Friendly Missing HP'),
 ('2003203','20032','15','0','100','1025','7','30','5000','10000','0','0','11','39078','12','0','0','0','0','0','0','0','0','0','Bloodwarder Vindicator - Cast Cleanse on Friendly CC'),
-('2003204','20032','12','0','100','1025','20','0','3000','5000','0','0','11','37251','1','0','0','0','0','0','0','0','0','0','Bloodwarder Vindicator - Cast Hammer of Wrath at Target 20% HP'),
+('2003204','20032','0','0','100','1025','0','0','3000','5000','0','0','11','37251','4','0','0','0','0','0','0','0','0','0','Bloodwarder Vindicator - Cast Hammer of Wrath on Random Target 20% HP'),
 -- Astromancer 20033
 ('2003301','20033','27','0','100','1','35915','1','15000','30000','0','0','11','35915','0','0','0','0','0','0','0','0','0','0','Astromancer - Cast Molten Armor on Missing Buff'),
 ('2003302','20033','0','0','100','1025','14000','19000','18000','28000','0','0','11','37110','1','0','0','0','0','0','0','0','0','0','Astromancer - Cast Fire Blast'),
@@ -29206,11 +29206,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2003502','20035','0','0','100','1025','19000','29000','22000','31000','0','0','11','34996','1','0','0','0','0','0','0','0','0','0','Bloodwarder Marshal - Cast Uppercut'),
 ('2003503','20035','0','0','100','1025','10000','15000','14000','17000','0','0','11','36132','0','0','0','0','0','0','0','0','0','0','Bloodwarder Marshal - Cast Whirlwind'),
 ('2003504','20035','0','0','100','1025','8000','18000','22000','24000','0','0','11','35949','0','0','0','0','0','0','0','0','0','0','Bloodwarder Marshal - Cast Bloodthirst at 50% HP'),
--- Bloodwarder Squire 20036 - hammer of wrath anybody who drops below 20%, heal at 50% friendly missing hp Init 10-14
+-- Bloodwarder Squire 20036 - heal at 50% friendly missing hp Init 10-14
 ('2003601','20036','0','0','100','1025','3000','9000','18000','24000','0','0','11','39077','1','32','0','0','0','0','0','0','0','0','Bloodwarder Squire - Cast Hammer of Justice'),
 ('2003602','20036','14','0','100','1025','71800','50','9000','17000','0','0','11','37254','12','0','0','0','0','0','0','0','0','0','Bloodwarder Squire - Cast Flash of Light on Friendly Missing HP'),
 ('2003603','20036','15','0','100','1025','7','30','5000','10000','0','0','11','39078','12','0','0','0','0','0','0','0','0','0','Bloodwarder Squire - Cast Cleanse on Friendly CC'),
-('2003604','20036','12','0','100','1025','20','0','3000','5000','0','0','11','37255','1','0','0','0','0','0','0','0','0','0','Bloodwarder Squire - Cast Hammer of Wrath at Target 20% HP'),
+('2003604','20036','0','0','100','1025','0','0','3000','5000','0','0','11','37255','4','0','0','0','0','0','0','0','0','0','Bloodwarder Squire - Cast Hammer of Wrath on Random Target 20% HP'),
 -- Tempest Falconer 20037
 ('2003701','20037','4','0','100','0','0','0','0','0','0','0','57','2','40','0','0','0','0','0','0','0','0','0','Tempest Falconer - Enable Range Mode on Aggro'),
 ('2003702','20037','0','0','100','1025','1000','3000','600000','600000','0','0','11','37318','0','0','0','0','0','0','0','0','0','0','Tempest Falconer - Cast Fire Shield'),
@@ -29258,12 +29258,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2004703','20047','0','0','100','1025','17000','26000','19000','33000','0','0','11','37262','1','0','0','0','0','0','0','0','0','0','Crimson Hand Battle Mage - Cast Frostbolt Volley'),
 -- Crimson Hand Centurion
 ('2004801','20048','0','0','100','1025','5000','9000','19000','26000','0','0','11','37268','0','0','0','0','0','0','0','0','0','0','Crimson Hand Centurion - Cast Arcane Flurry'),
--- Crimson Hand Blood Knight 20049 - hammer of wrath anybody who drops below 20%
+-- Crimson Hand Blood Knight 20049 - init heal timer?
 ('2004901','20049','0','0','100','1025','3000','9000','18000','28000','0','0','11','39077','1','32','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Hammer of Justice'),
 ('2004902','20049','14','0','100','1025','2000','40','5000','10000','0','0','11','37260','12','0','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Renew on Friendly Missing HP'),
 ('2004903','20049','15','0','100','1025','7','30','5000','10000','0','0','11','39078','12','0','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Cleanse on Friendly CC'),
 ('2004904','20049','14','0','100','1025','20000','50','4000','8000','0','0','11','37257','12','0','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Flash of Light on Friendly Missing HP'),
-('2004905','20049','12','0','100','1025','20','0','3000','5000','0','0','11','37259','1','0','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Hammer of Wrath at Target 20% HP'),
+('2004905','20049','0','0','100','1025','0','0','3000','5000','0','0','11','37259','4','0','0','0','0','0','0','0','0','0','Crimson Hand Blood Knight - Cast Hammer of Wrath on Random Target 20% HP'),
 -- Crimson Hand Inquisitor 20050
 ('2005001','20050','4','0','100','0','0','0','0','0','0','0','11','37274','0','0','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Power Infusion on Aggro'),
 ('2005002','20050','0','0','100','1025','25000','31000','30000','43000','0','0','11','37274','0','0','0','0','0','0','0','0','0','0','Crimson Hand Inquisitor - Cast Power Infusion'),
