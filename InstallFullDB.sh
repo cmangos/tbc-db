@@ -12,9 +12,9 @@ FULLDB_FILE=${FULLDB_FILE_ZIP%.gz}
 NEXT_MILESTONES="0.12.4 0.13"
 
 # specific to this core
-EXPENSION="TBC" #warning only 'Classic' or 'TBC' or 'WoTLK' else acid filename will be wrong
+EXPANSION="TBC" #warning only 'Classic' or 'TBC' or 'WoTLK' else acid filename will be wrong
 DATABASE_UPDATE_FILE_PREFIX="s"
-EXPENSION_LC="$(tr [A-Z] [a-z] <<< "$EXPENSION")"
+EXPANSION_LC="$(tr [A-Z] [a-z] <<< "$EXPANSION")"
 
 # internal use
 SOURCE_CONTENT_RELEASE_VERSION=""
@@ -55,10 +55,10 @@ MYSQL_USERNAME_DEFAULT="mangos"
 MYSQL_PASSWORD_DEFAULT="mangos"
 MYSQL_USERIP_DEFAULT="localhost"
 MYSQL_COLSTAT_DEFAULT="" # important to avoid issue with mysqldump using other db than OracleMySQL 8>
-WORLD_DB_NAME_DEFAULT="${EXPENSION_LC}mangos"
-REALM_DB_NAME_DEFAULT="${EXPENSION_LC}realmd"
-CHAR_DB_NAME_DEFAULT="${EXPENSION_LC}characters"
-LOGS_DB_NAME_DEFAULT="${EXPENSION_LC}logs"
+WORLD_DB_NAME_DEFAULT="${EXPANSION_LC}mangos"
+REALM_DB_NAME_DEFAULT="${EXPANSION_LC}realmd"
+CHAR_DB_NAME_DEFAULT="${EXPANSION_LC}characters"
+LOGS_DB_NAME_DEFAULT="${EXPANSION_LC}logs"
 MYSQL_PATH_DEFAULT=""
 CORE_PATH_DEFAULT=""
 MYSQL_DUMP_PATH_DEFAULT=""
@@ -87,10 +87,10 @@ AHBOT="${AHBOT_DEFAULT}"
 FORCE_WAIT="${FORCE_WAIT_DEFAULT}"
 
 #possible search folder for core path
-DEFAULT_CORE_FOLDER="$EXPENSION_LC"
+DEFAULT_CORE_FOLDER="$EXPANSION_LC"
 
 # download backup address
-LAST_BACKUP_ADR="https://github.com/cmangos/${EXPENSION_LC}-db/releases/download/latest/${EXPENSION_LC}-all-backups.tar.gz"
+LAST_BACKUP_ADR="https://github.com/cmangos/${EXPANSION_LC}-db/releases/download/latest/${EXPANSION_LC}-all-backups.tar.gz"
 
 # extract db tittle, db content version, and last content update revision from content db
 function initialize()
@@ -130,7 +130,7 @@ function initialize()
 
   local coreVerRegex="^[ ]+.required_([0-9A-Za-z_]+)"
   # todo this may fail, we need to uniformise all db title with some title schema
-  local contentDBVerRegex="\('${EXPENSION}[A-Za-z -]+([0-9\.]+)[ \"']+([0-9A-Za-z _'-]+)[\"'\. ]+[fF]or"
+  local contentDBVerRegex="\('${EXPANSION}[A-Za-z -]+([0-9\.]+)[ \"']+([0-9A-Za-z _'-]+)[\"'\. ]+[fF]or"
   local coreDBVer=""
   local contentDBVer=""
   local contentDBTittle=""
@@ -269,7 +269,7 @@ function save_settings()
   allsettings+=("## Define default mysql address binding(you can set \"%\" to be able to connect from any computer)")
   allsettings+=("MYSQL_USERIP=\"$MYSQL_USERIP\"")
   allsettings+=("")
-  allsettings+=("## Define the databases names (let them empty for default name '"$EXPENSION_LC"dbtype')")
+  allsettings+=("## Define the databases names (let them empty for default name '"$EXPANSION_LC"dbtype')")
   allsettings+=("WORLD_DB_NAME=\"$WORLD_DB_NAME\"")
   allsettings+=("REALM_DB_NAME=\"$REALM_DB_NAME\"")
   allsettings+=("CHAR_DB_NAME=\"$CHAR_DB_NAME\"")
@@ -435,7 +435,7 @@ print_underline()
 function print_header()
 {
   clear
-  print_underline "Welcome to the CMaNGOS $EXPENSION databases manager" "="
+  print_underline "Welcome to the CMaNGOS $EXPANSION databases manager" "="
   echo
 }
 
@@ -1107,7 +1107,7 @@ function apply_world_db_core_update()
   done
 
   #local wdbrev=$(echo "$SOURCE_WORLDDB_VER" |sed 's/[a-z]*\([0-9]*\)_\([0-9]*\).*/\1\2/g')
-  #echo "    $EXPENSION DB core rev($LAST_CORE_REV), expected core rev($wdbrev)"
+  #echo "    $EXPANSION DB core rev($LAST_CORE_REV), expected core rev($wdbrev)"
   for f in "$CORE_PATH/sql/updates/mangos/"*_mangos_*.sql
   do
     CUR_REV=$(basename "$f" | sed "s/^$DATABASE_UPDATE_FILE_PREFIX\([0-9]*\)_\([0-9]*\).*/\1\2/")
@@ -1356,10 +1356,15 @@ function apply_full_dbc_data()
 # Apply scriptdev2.sql
 function apply_full_scriptdev2_data()
 {
-  if ! execute_sql_file "$WORLD_DB_NAME" "$CORE_PATH/sql/scriptdev2/scriptdev2.sql" "> Trying to apply ScripDev2 data"; then
-    false
-    return
-  fi
+  echo "> Trying to apply ScriptDev2 data"
+  for f in "$CORE_PATH/sql/scriptdev2/"*.sql
+  do
+    local fName=$(basename "$f")
+    if ! execute_sql_file "$WORLD_DB_NAME" "$f" "  - Applying $fName"; then
+      false
+      return
+    fi
+  done
   echo
   true
 }
@@ -1367,7 +1372,7 @@ function apply_full_scriptdev2_data()
 # Apply full ACID file
 function apply_acid_data()
 {
-  if ! execute_sql_file "$WORLD_DB_NAME" "ACID/acid_${EXPENSION_LC}.sql" "> Trying to apply ACID file"; then
+  if ! execute_sql_file "$WORLD_DB_NAME" "ACID/acid_${EXPANSION_LC}.sql" "> Trying to apply ACID file"; then
     false
     return
   fi
@@ -1447,14 +1452,14 @@ function apply_dev_content
 function apply_content_db()
 {
     ## Full Database
-  echo "> Processing main ${EXPENSION}-DB release file \"$DB_RELEASE_TITLE\" ... "
+  echo "> Processing main ${EXPANSION}-DB release file \"$DB_RELEASE_TITLE\" ... "
   if ! apply_main_file; then
     false
     return
   fi
 
   ## Updates
-  echo "> Trying to process ${EXPENSION}-DB updates"
+  echo "> Trying to process ${EXPANSION}-DB updates"
   local COUNT=0
   for UPDATE in "${ADDITIONAL_PATH}Updates/"[0-9]*.sql
   do
@@ -1935,7 +1940,7 @@ function realm_edit()
 function realm_add()
 {
   clear
-  local realmdata_default=("1" "CMaNGOS ${EXPENSION} server" "localhost" "8085")
+  local realmdata_default=("1" "CMaNGOS ${EXPANSION} server" "localhost" "8085")
   local realmdata="$realmdata_default"
 
   if [[ $BASH_VERSION > 4 ]]; then
@@ -1988,7 +1993,7 @@ function print_last_backup_list()
     local fName=$(basename "$currFile")
     echo "$fName"
     ((count++))
-  done < <(printf '%s\n' backups/${EXPENSION_LC}-db_*.gz | sort -zVr)
+  done < <(printf '%s\n' backups/${EXPANSION_LC}-db_*.gz | sort -zVr)
   IFS="$OLDIFS"
 
   if [[ count -le 1 ]]; then
@@ -1996,7 +2001,7 @@ function print_last_backup_list()
   fi
 }
 
-# return only number + expension letter from core version
+# return only number + expansion letter from core version
 # something like 'z0000_01_table_awsome_fix.sql' will return 'z000001'
 # get_clean_core_version coreversion
 # return clean version in CLEAN_CORE_VERSION if success
@@ -2064,7 +2069,7 @@ function build_backup_filename()
     fi
   fi
 
-  BACKUP_FILE_NAME="backups/${EXPENSION_LC}-db_${dbname}_${cleanversion}_v${DB_CONTENT_RELEASE_VERSION}_${contentdbver}_$(date +%y%m%d%H%M).sql"
+  BACKUP_FILE_NAME="backups/${EXPANSION_LC}-db_${dbname}_${cleanversion}_v${DB_CONTENT_RELEASE_VERSION}_${contentdbver}_$(date +%y%m%d%H%M).sql"
   true
 }
 
@@ -2142,7 +2147,7 @@ function backup_restore_file()
   local dbname=""
   local dbtype=""
 
-  local regex="${EXPENSION_LC}-db_([A-Z]+)"
+  local regex="${EXPANSION_LC}-db_([A-Z]+)"
   if [[ "$1" =~ $regex ]]; then
     case ${BASH_REMATCH[1]} in
       "WORLD") dbname="${WORLD_DB_NAME}"; dbtype="WORLD";;
@@ -2204,7 +2209,7 @@ function backup_restore_file()
 function backup_restore_all_last()
 {
   local filenames=()
-  local regex="${EXPENSION_LC}-db_([A-Z]+)"
+  local regex="${EXPANSION_LC}-db_([A-Z]+)"
   local lastWorldFile=""
   local lastCharFile=""
   local lastRealmFile=""
@@ -2259,7 +2264,7 @@ function backup_restore_all_last()
       break;
     fi
 
-  done < <(printf '%s\n' backups/${EXPENSION_LC}-db_*.gz | sort -zVr)
+  done < <(printf '%s\n' backups/${EXPANSION_LC}-db_*.gz | sort -zVr)
   IFS="$OLDIFS"
 
   for filename in "${filenames[@]}"; do
@@ -2288,7 +2293,7 @@ function backup_restore()
     echo "> ${count}) $fName"
     filenames+=("$currFile")
     ((count++))
-  done < <(printf '%s\n' backups/${EXPENSION_LC}-db_${1}_*.gz | sort -zVr)
+  done < <(printf '%s\n' backups/${EXPANSION_LC}-db_${1}_*.gz | sort -zVr)
   IFS="$OLDIFS"
   echo "> 9) Go to previous menu"
 
@@ -2482,9 +2487,9 @@ function full_db_install_menu()
     echo
     echo
     echo
-    echo "> 1) Full default CMaNGOS-core and ${EXPENSION}-DB installation (all DB with MySQL user)"
+    echo "> 1) Full default CMaNGOS-core and ${EXPANSION}-DB installation (all DB with MySQL user)"
     echo "> 2) Edit settings"
-    echo "> 3) Install fresh ${EXPENSION}-DB only to '${WORLD_DB_NAME}'"
+    echo "> 3) Install fresh ${EXPANSION}-DB only to '${WORLD_DB_NAME}'"
     echo "> 8) Advanced database management menu"
     echo "> 9) Return to main menu"
     echo
@@ -2598,7 +2603,7 @@ function main_menu()
     show_installation_status
     echo
     echo "> 1) Manage settings"
-    echo "> 2) Install fresh ${EXPENSION}-DB only to '${WORLD_DB_NAME}'"
+    echo "> 2) Install fresh ${EXPANSION}-DB only to '${WORLD_DB_NAME}'"
     echo "> 3) Install core updates only"
     echo "> 4) Full installation (create all DB and MySQL user, root required)"
     echo "> 5) Advanced DB management (root required)"
@@ -2737,13 +2742,13 @@ function auto_script_install_world()
 {
   if [[ "$STATUS_CONFIG_JUST_CREATED" = true ]]; then
     echo
-    print_underline "$CONFIG_FILE just been created, please edit it and rerun this script to install ${EXPENSION}-DB"
+    print_underline "$CONFIG_FILE just been created, please edit it and rerun this script to install ${EXPANSION}-DB"
     false
     return
   fi
 
   clear
-  print_underline "Welcome to ${EXPENSION}-DB installation"
+  print_underline "Welcome to ${EXPANSION}-DB installation"
   echo
   show_mysql_settings
   echo
@@ -2808,7 +2813,7 @@ function auto_script_restore()
 # display little help
 function show_help
 {
-  echo "${EXPENSION}-DB install script"
+  echo "${EXPANSION}-DB install script"
   echo "$SCRIPT_FILE [options] [arg1 ... argn]"
   echo "options:"
   echo "   -?"
