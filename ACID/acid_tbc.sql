@@ -5750,6 +5750,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Brother Crowley 12336
 -- Melris Malagan 12480
 -- Justine Demalier 12481
+('1248102','12481','30','2','100','1','5','0','0','0','0','0','53','16','6','0','0','0','0','0','0','0','0','0','Justine Demalier - Start Relay Script on Custom Event A Received'),
+('1248103','12481','30','2','100','1','5','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Justine Demalier - Set Event Phase 1 on Custom Event A Received'),
+('1248104','12481','30','0','100','1','6','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Justine Demalier - Set Event Phase 0 on Custom Event B Received'),
 -- Lieutenant Rachel Vaccar 12778
 -- Archmage Gaiman 12779
 -- Sergeant Major Skyshadow 12780
@@ -23543,7 +23546,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1145902','11459','9','0','100','1025','0','30','10700','21700','0','0','11','28858','4','32','0','0','0','0','0','0','0','0','Ironbark Protector - Cast Entangling Roots'),
 ('1145903','11459','9','0','100','1025','0','8','6100','14100','0','0','11','18670','1','0','0','0','0','0','0','0','0','0','Ironbark Protector - Cast Knock Away'),
 -- Alzzin's Minion 11460
-('1146001','11460','11','0','100','0','1000','1000','0','0','0','0','11','10095','0','34','0','0','0','0','0','0','0','0','Alzzin''s Minion - Cast Hate to Zero on Spawn'),
+('1146001','11460','11','0','100','0','0','0','0','0','0','0','11','10095','0','34','0','0','0','0','0','0','0','0','Alzzin''s Minion - Cast Hate to Zero on Spawn'),
 -- Warpwood Guardian (3.3.3 Official Data) - Pummel Data Unknown
 ('1146101','11461','9','0','100','1025','0','5','19200','23700','0','0','11','16172','1','0','0','0','0','0','0','0','0','0','Warpwood Guardian - Cast Head Crack'),
 ('1146102','11461','13','0','100','1025','9000','14000','0','0','0','0','11','15615','1','0','0','0','0','0','0','0','0','0','Warpwood Guardian - Cast Pummel on Target Casting'),
