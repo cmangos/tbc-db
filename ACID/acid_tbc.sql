@@ -28699,7 +28699,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1619301','16193','0','0','100','1025','1000','1000','2000','2000','0','0','11','24317','1','0','0','0','0','0','0','0','0','0','Skeletal Smith - Cast Sunder Armor'),
 ('1619302','16193','0','0','85','1025','0','0','6000','6000','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Skeletal Smith - Cast Disarm'),
 ('1619303','16193','0','0','90','1025','2000','2000','10000','10000','0','0','11','23931','0','0','0','0','0','0','0','0','0','0','Skeletal Smith - Cast Thunderclap'),
--- Unholy Swords 16216 - NSR
+-- Unholy Axe 16194 - creature_spell_list
+-- Unholy Staff 16215 - creature_spell_list
+-- Unholy Swords 16216 - creature_spell_list
 -- Tesla Coil 16218 - npc_tesla_coil
 -- Eye Stalk 16236
 ('1623601','16236','11','0','100','0','0','0','0','0','0','0','21','0','0','0','11','26586','0','1','0','0','0','0','Eye Stalk - Prevent Combat Movement and Cast Birth on Spawn'),
@@ -28747,14 +28749,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1644601','16446','0','0','100','1025','0','0','10000','10000','0','0','11','29325','0','0','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Acid Volley'),
 ('1644602','16446','2','0','75','1025','50','0','30000','30000','0','0','11','28995','0','0','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Stoneskin'),
 ('1644603','16446','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Plague Gargoyle - Cast Invisibility and Stealth Detection on Spawn'),
--- Plagued Deathhound 16448
-('1644801','16448','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Plagued Deathhound - Cast Invisibility and Stealth Detection on Spawn'),
-('1644802','16448','0','0','100','1025','6000','12000','9000','16000','0','0','11','30121','1','0','0','0','0','0','0','0','0','0','Plagued Deathhound - Cast Forceful Howl'),
 -- Plagued Ghoul 16447
 ('1644701','16447','1','0','100','0','1000','1000','0','0','0','0','11','19818','0','32','0','0','0','0','0','0','0','0','Plagued Ghoul - Cast Double Attack OOC'),
 ('1644702','16447','0','0','100','1025','2000','2000','12000','12000','0','0','11','29915','1','0','0','0','0','0','0','0','0','0','Plagued Ghoul - Cast Flesh Rot'),
 ('1644703','16447','0','0','100','1025','3000','3000','15000','15000','0','0','11','13738','1','0','0','0','0','0','0','0','0','0','Plagued Ghoul - Cast Rend'),
 ('1644704','16447','2','0','100','1024','30','0','0','0','0','0','11','24318','0','16','1','2384','0','0','0','0','0','0','Plagued Ghoul - Cast Enrage at 30% HP'),
+-- Plagued Deathhound 16448
+('1644801','16448','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Plagued Deathhound - Cast Invisibility and Stealth Detection on Spawn'),
+('1644802','16448','0','0','100','1025','6000','12000','9000','16000','0','0','11','30121','1','0','0','0','0','0','0','0','0','0','Plagued Deathhound - Cast Forceful Howl'),
 -- Spirit of Naxxramas 16449
 ('1644901','16449','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Spirit of Naxxramas - Cast Invisibility and Stealth Detection on Spawn'),
 -- Deathknight Vindicator 16451
@@ -28801,6 +28803,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1686101','16861','0','0','90','1025','0','0','8000','8000','0','0','11','28413','1','0','0','0','0','0','0','0','0','0','Death Lord - Cast Aura of Agony'),
 ('1686102','16861','0','0','95','1025','1000','1000','4000','4000','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Death Lord - Cast Cleave'),
 ('1686103','16861','0','0','80','1025','3000','3000','5000','5000','0','0','11','28412','4','0','0','0','0','0','0','0','0','0','Death Lord - Cast Death Coil'),
+-- Plagued Guardian 16981 - creature_spell_list
+-- Plagued Construct 16982 - creature_spell_list
+-- Plagued Champion 16983 - creature_spell_list
+-- Plagued Warrior 16984 - creature_spell_list
 -- Garden Gas 17231
 ('1723101','17231','11','0','100','0','0','0','0','0','0','0','11','30074','0','32','50','0','0','0','0','0','0','0','Garden Gas - Cast Toxic Gas and Set React State Passive on Spawn'),
 
