@@ -3,11 +3,9 @@ DBName: Alterac Valley
 DBScriptName:
 DB%Complete: 50
 DBComment:
-Add correct position for Frostwolf Battleguard 14285 at Horde Entrance
 Frostwolf Bloodhound 14282 has 12787 prenerf?
 10991/11677/13088 has 8876 prenerf?
 11603 sometimes have s.13589 - Whitewhisker Overseer 11605 ACID seems wrong
-Find Sniff Spawn Position for @CGUID+609, @CGUID+611, @CGUID+612, @CGUID+613
 Frostwolf 10981 & Alterac Ram 10990 are maybe pooled
 13116/13117 ss.24237 summon 26350/26351 which use ss.46893
 gameobject 178442,178646 depended on supply state?
@@ -132,20 +130,20 @@ INSERT INTO `battleground_events` (`map`, `event1`, `event2`, `description`) VAL
 (30, 21, 5, 'Frostwolf Hut - Horde Defender Quest1'),
 (30, 21, 6, 'Frostwolf Hut - Horde Defender Quest2'),
 (30, 21, 7, 'Frostwolf Hut - Horde Defender Quest3'),
-(30, 46, 1, 'North Mine - Alliance Boss'),
-(30, 46, 3, 'North Mine - Horde Boss'),
-(30, 46, 5, 'North Mine - Neutral Boss'),
-(30, 47, 1, 'South Mine - Alliance Boss'),
-(30, 47, 3, 'South Mine - Horde Boss'),
-(30, 47, 5, 'South Mine - Neutral Boss'),
+(30, 46, 0, 'North Mine - Alliance Boss'),
+(30, 46, 1, 'North Mine - Horde Boss'),
+(30, 46, 2, 'North Mine - Neutral Boss'),
+(30, 47, 0, 'South Mine - Alliance Boss'),
+(30, 47, 1, 'South Mine - Horde Boss'),
+(30, 47, 2, 'South Mine - Neutral Boss'),
 (30, 48, 0, 'Alliance Captain'),
 (30, 49, 0, 'Horde Captain'),
-(30, 50, 1, 'North Mine - Alliance Control'),
-(30, 50, 3, 'North Mine - Horde Control'),
-(30, 50, 5, 'North Mine - Neutral Control'),
-(30, 51, 1, 'South Mine - Alliance Control'),
-(30, 51, 3, 'South Mine - Horde Control'),
-(30, 51, 5, 'South Mine - Neutral Control'),
+(30, 50, 0, 'North Mine - Alliance Control'),
+(30, 50, 1, 'North Mine - Horde Control'),
+(30, 50, 2, 'North Mine - Neutral Control'),
+(30, 51, 0, 'South Mine - Alliance Control'),
+(30, 51, 1, 'South Mine - Horde Control'),
+(30, 51, 2, 'South Mine - Neutral Control'),
 (30, 52, 0, 'Alliance Marshal - Dunbaldar South'),
 (30, 53, 0, 'Alliance Marshal - Dunbaldar North'),
 (30, 54, 0, 'Alliance Marshal - Icewing Bunker'),
@@ -196,26 +194,26 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+328, 20, -1247.391, -342.1514, 59.55701, 100, 0, 0),
 (@CGUID+328, 21, -1238.369, -324.9574, 60.26186, 100, 0, 0),
 (@CGUID+328, 22, -1226.996, -310.9992, 63.6784, 100, 0, 0),
-(@CGUID+345, 1, -1486.33, -682.971, 47.7011, 100, 0, 0),
-(@CGUID+345, 2, -1494.91, -648.142, 48.4024, 100, 0, 0),
-(@CGUID+345, 3, -1489.91, -629.843, 47.5982, 100, 0, 0),
-(@CGUID+345, 4, -1460.69, -607.274, 51.3118, 100, 0, 0),
-(@CGUID+345, 5, -1451.77, -605.11, 51.1929, 100, 0, 0),
-(@CGUID+345, 6, -1437.34, -611.431, 51.134, 100, 0, 0),
-(@CGUID+345, 7, -1432.5, -590.196, 51.0203, 100, 0, 0),
-(@CGUID+345, 8, -1415.36, -576.796, 54.1464, 100, 0, 0),
-(@CGUID+345, 9, -1394.32, -557.176, 55.2875, 100, 0, 0),
-(@CGUID+345, 10, -1415.36, -576.796, 54.1464, 100, 0, 0),
-(@CGUID+345, 11, -1432.5, -590.196, 51.0203, 100, 0, 0),
-(@CGUID+345, 12, -1437.34, -611.431, 51.134, 100, 0, 0),
-(@CGUID+345, 13, -1451.77, -605.11, 51.1929, 100, 0, 0),
-(@CGUID+345, 14, -1460.69, -607.274, 51.3118, 100, 0, 0),
-(@CGUID+345, 15, -1489.91, -629.843, 47.5982, 100, 0, 0),
-(@CGUID+345, 16, -1494.91, -648.142, 48.4024, 100, 0, 0),
-(@CGUID+345, 17, -1486.33, -682.971, 47.7011, 100, 0, 0),
-(@CGUID+345, 18, -1491.89, -701.583, 46.8154, 100, 0, 0),
-(@CGUID+345, 19, -1500.38, -707.63, 47.4581, 100, 0, 0),
-(@CGUID+345, 20, -1491.89, -701.583, 46.8154, 100, 0, 0),
+(@CGUID+349, 1, -1486.33, -682.971, 47.7011, 100, 0, 0),
+(@CGUID+349, 2, -1494.91, -648.142, 48.4024, 100, 0, 0),
+(@CGUID+349, 3, -1489.91, -629.843, 47.5982, 100, 0, 0),
+(@CGUID+349, 4, -1460.69, -607.274, 51.3118, 100, 0, 0),
+(@CGUID+349, 5, -1451.77, -605.11, 51.1929, 100, 0, 0),
+(@CGUID+349, 6, -1437.34, -611.431, 51.134, 100, 0, 0),
+(@CGUID+349, 7, -1432.5, -590.196, 51.0203, 100, 0, 0),
+(@CGUID+349, 8, -1415.36, -576.796, 54.1464, 100, 0, 0),
+(@CGUID+349, 9, -1394.32, -557.176, 55.2875, 100, 0, 0),
+(@CGUID+349, 10, -1415.36, -576.796, 54.1464, 100, 0, 0),
+(@CGUID+349, 11, -1432.5, -590.196, 51.0203, 100, 0, 0),
+(@CGUID+349, 12, -1437.34, -611.431, 51.134, 100, 0, 0),
+(@CGUID+349, 13, -1451.77, -605.11, 51.1929, 100, 0, 0),
+(@CGUID+349, 14, -1460.69, -607.274, 51.3118, 100, 0, 0),
+(@CGUID+349, 15, -1489.91, -629.843, 47.5982, 100, 0, 0),
+(@CGUID+349, 16, -1494.91, -648.142, 48.4024, 100, 0, 0),
+(@CGUID+349, 17, -1486.33, -682.971, 47.7011, 100, 0, 0),
+(@CGUID+349, 18, -1491.89, -701.583, 46.8154, 100, 0, 0),
+(@CGUID+349, 19, -1500.38, -707.63, 47.4581, 100, 0, 0),
+(@CGUID+349, 20, -1491.89, -701.583, 46.8154, 100, 0, 0),
 (@CGUID+387, 1, 289.6146, -383.6547, 4.620863, 100, 0, 0),
 (@CGUID+387, 2, 266.3748, -400.5663, 20.63937, 100, 0, 0),
 (@CGUID+387, 3, 236.8505, -420.9095, 37.19023, 100, 0, 0),
@@ -256,34 +254,34 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+391, 4, 726.0901, -475.4705, 79.14072, 100, 0, 0),
 (@CGUID+391, 5, 705.7, -465.1, 67.4, 100, 0, 0),
 (@CGUID+391, 6, 697.8643, -433.238, 62.79142, 100, 0, 0),
-(@CGUID+1130, 1, 927.5777, -515.9267, 93.3563, 100, 0, 0),
-(@CGUID+1130, 2, 918.3017, -515.0845, 93.68497, 100, 0, 0),
-(@CGUID+1130, 3, 907.7813, -514.1292, 94.7373, 100, 0, 0),
-(@CGUID+1130, 4, 894.2585, -511.6711, 96.00562, 100, 0, 0),
-(@CGUID+1130, 5, 885.7021, -508.7171, 96.83955, 100, 0, 0),
-(@CGUID+1130, 6, 882.9472, -507.766, 96.68661, 100, 0, 0),
-(@CGUID+1130, 7, 879.2994, -490.8898, 96.54842, 100, 0, 0),
-(@CGUID+1130, 8, 872.6658, -491.6815, 96.55302, 100, 0, 0),
-(@CGUID+1130, 9, 865.7615, -494.7393, 96.58194, 100, 0, 0),
-(@CGUID+1130, 10, 852.6349, -500.169, 96.39604, 100, 0, 0),
-(@CGUID+1130, 11, 847.1078, -499.4121, 97.57212, 100, 0, 0),
-(@CGUID+1130, 12, 833.5049, -497.5145, 99.49442, 100, 0, 0),
-(@CGUID+1130, 13, 824.1744, -496.2, 100.7622, 100, 0, 0),
-(@CGUID+1130, 14, 815.2069, -495.48, 100.0972, 100, 0, 0),
-(@CGUID+1130, 15, 807.1964, -494.8593, 100.078, 100, 0, 0),
-(@CGUID+1130, 16, 815.2069, -495.48, 100.0972, 100, 0, 0),
-(@CGUID+1130, 17, 824.1744, -496.2, 100.7622, 100, 0, 0),
-(@CGUID+1130, 18, 833.5049, -497.5145, 99.49442, 100, 0, 0),
-(@CGUID+1130, 19, 847.1078, -499.4121, 97.57212, 100, 0, 0),
-(@CGUID+1130, 20, 852.6349, -500.169, 96.39604, 100, 0, 0),
-(@CGUID+1130, 21, 865.7615, -494.7393, 96.58194, 100, 0, 0),
-(@CGUID+1130, 22, 872.6658, -491.6815, 96.55302, 100, 0, 0),
-(@CGUID+1130, 23, 879.2994, -490.8898, 96.54842, 100, 0, 0),
-(@CGUID+1130, 24, 882.9472, -507.766, 96.68661, 100, 0, 0),
-(@CGUID+1130, 25, 885.7021, -508.7171, 96.83955, 100, 0, 0),
-(@CGUID+1130, 26, 894.2585, -511.6711, 96.00562, 100, 0, 0),
-(@CGUID+1130, 27, 907.7813, -514.1292, 94.7373, 100, 0, 0),
-(@CGUID+1130, 28, 918.3017, -515.0845, 93.68497, 100, 0, 0),
+(@CGUID+1140, 1, 927.5777, -515.9267, 93.3563, 100, 0, 0),
+(@CGUID+1140, 2, 918.3017, -515.0845, 93.68497, 100, 0, 0),
+(@CGUID+1140, 3, 907.7813, -514.1292, 94.7373, 100, 0, 0),
+(@CGUID+1140, 4, 894.2585, -511.6711, 96.00562, 100, 0, 0),
+(@CGUID+1140, 5, 885.7021, -508.7171, 96.83955, 100, 0, 0),
+(@CGUID+1140, 6, 882.9472, -507.766, 96.68661, 100, 0, 0),
+(@CGUID+1140, 7, 879.2994, -490.8898, 96.54842, 100, 0, 0),
+(@CGUID+1140, 8, 872.6658, -491.6815, 96.55302, 100, 0, 0),
+(@CGUID+1140, 9, 865.7615, -494.7393, 96.58194, 100, 0, 0),
+(@CGUID+1140, 10, 852.6349, -500.169, 96.39604, 100, 0, 0),
+(@CGUID+1140, 11, 847.1078, -499.4121, 97.57212, 100, 0, 0),
+(@CGUID+1140, 12, 833.5049, -497.5145, 99.49442, 100, 0, 0),
+(@CGUID+1140, 13, 824.1744, -496.2, 100.7622, 100, 0, 0),
+(@CGUID+1140, 14, 815.2069, -495.48, 100.0972, 100, 0, 0),
+(@CGUID+1140, 15, 807.1964, -494.8593, 100.078, 100, 0, 0),
+(@CGUID+1140, 16, 815.2069, -495.48, 100.0972, 100, 0, 0),
+(@CGUID+1140, 17, 824.1744, -496.2, 100.7622, 100, 0, 0),
+(@CGUID+1140, 18, 833.5049, -497.5145, 99.49442, 100, 0, 0),
+(@CGUID+1140, 19, 847.1078, -499.4121, 97.57212, 100, 0, 0),
+(@CGUID+1140, 20, 852.6349, -500.169, 96.39604, 100, 0, 0),
+(@CGUID+1140, 21, 865.7615, -494.7393, 96.58194, 100, 0, 0),
+(@CGUID+1140, 22, 872.6658, -491.6815, 96.55302, 100, 0, 0),
+(@CGUID+1140, 23, 879.2994, -490.8898, 96.54842, 100, 0, 0),
+(@CGUID+1140, 24, 882.9472, -507.766, 96.68661, 100, 0, 0),
+(@CGUID+1140, 25, 885.7021, -508.7171, 96.83955, 100, 0, 0),
+(@CGUID+1140, 26, 894.2585, -511.6711, 96.00562, 100, 0, 0),
+(@CGUID+1140, 27, 907.7813, -514.1292, 94.7373, 100, 0, 0),
+(@CGUID+1140, 28, 918.3017, -515.0845, 93.68497, 100, 0, 0),
 (@CGUID+1899, 1, 39.89626, 102.9547, 21.90303, 100, 0, 0),
 (@CGUID+1899, 2, 31.50856, 94.22149, 21.40742, 100, 0, 0),
 (@CGUID+1899, 3, 24.31769, 88.03424, 20.8376, 100, 0, 0),
@@ -330,8 +328,8 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (12050, 0, 0, 1, 0, 0, '5301'), -- Stormpike Defender
 (12053, 0, 0, 1, 0, 0, '5301'), -- Frostwolf Guardian
 (13088, 0, 0, 1, 0, 0, NULL), -- Masha Swiftcut
-(13116, 0, 0, 0, 0, 0, ''), -- Alliance Spirit Guide s.22011 - npc_spirit_guide
-(13117, 0, 0, 0, 0, 0, ''), -- Horde Spirit Guide s.22011 - npc_spirit_guide
+(13116, 0, 0, 0, 0, 0, ''), -- Alliance Spirit Guide - npc_spirit_guide
+(13117, 0, 0, 0, 0, 0, ''), -- Horde Spirit Guide - npc_spirit_guide
 (13316, 0, 0, 1, 233, 0, NULL), -- Coldmine Peon
 (13317, 0, 0, 1, 233, 0, NULL), -- Coldmine Miner
 (13326, 0, 0, 1, 0, 0, '5301'), -- Seasoned Defender
@@ -365,14 +363,14 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+1121, @CGUID+327, 515), -- Frostwolf Bloodhound -> Frostwolf Legionnaire
 (@CGUID+1122, @CGUID+328, 515), -- Frostwolf Bloodhound -> Frostwolf Legionnaire
 (@CGUID+1123, @CGUID+328, 515), -- Frostwolf Bloodhound -> Frostwolf Legionnaire
-(@CGUID+346, @CGUID+345, 515), -- Frostwolf Bloodhound -> Frostwolf Battleguard
-(@CGUID+347, @CGUID+345, 515), -- Frostwolf Bloodhound -> Frostwolf Battleguard
+(@CGUID+350, @CGUID+349, 515), -- Frostwolf Bloodhound -> Frostwolf Battleguard
+(@CGUID+351, @CGUID+349, 515), -- Frostwolf Bloodhound -> Frostwolf Battleguard
 (@CGUID+642, @CGUID+387, 515), -- Stormpike Owl -> Stormpike Guardsman
 (@CGUID+643, @CGUID+387, 515), -- Stormpike Owl -> Stormpike Guardsman
 (@CGUID+390, @CGUID+389, 515), -- Stormpike Guardsman -> Stormpike Guardsman
 (@CGUID+392, @CGUID+391, 515), -- Stormpike Guardsman -> Stormpike Guardsman
-(@CGUID+640, @CGUID+1130, 515), -- Stormpike Owl -> Stormpike Battleguard
-(@CGUID+641, @CGUID+1130, 515); -- Stormpike Owl -> Stormpike Battleguard
+(@CGUID+640, @CGUID+1140, 515), -- Stormpike Owl -> Stormpike Battleguard
+(@CGUID+641, @CGUID+1140, 515); -- Stormpike Owl -> Stormpike Battleguard
 
 INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (14772, 30, 11946, 1+16384, 0), -- East Frostwolf Warmaster -> Drek'Thar
@@ -390,18 +388,18 @@ INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`,
 
 INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) VALUES
 (@CGUID+602, 0, 1), -- Firstaid Station - Alliance Control
-(@CGUID+609, 0, 3), -- Firstaid Station - Horde Control
-(@CGUID+603, 1, 1), -- Stormpike Grave - Alliance Control
-(@CGUID+610, 1, 3), -- Stormpike Grave - Horde Control
-(@CGUID+604, 2, 1), -- Stoneheart Grave - Alliance Control
-(@CGUID+611, 2, 3), -- Stoneheart Grave - Horde Control
-(@CGUID+605, 3, 1), -- Snowfall Grave - Alliance Control
-(@CGUID+612, 3, 3), -- Snowfall Grave - Horde Control
-(@CGUID+606, 4, 1), -- Iceblood Grave - Alliance Control
-(@CGUID+613, 4, 3), -- Iceblood Grave - Horde Control
-(@CGUID+607, 5, 1), -- Frostwolf Grave - Alliance Control
-(@CGUID+614, 5, 3), -- Frostwolf Grave - Horde Control
-(@CGUID+608, 6, 1), -- Frostwolf Hut - Alliance Control
+(@CGUID+603, 0, 3), -- Firstaid Station - Horde Control
+(@CGUID+604, 1, 1), -- Stormpike Grave - Alliance Control
+(@CGUID+605, 1, 3), -- Stormpike Grave - Horde Control
+(@CGUID+606, 2, 1), -- Stoneheart Grave - Alliance Control
+(@CGUID+607, 2, 3), -- Stoneheart Grave - Horde Control
+(@CGUID+608, 3, 1), -- Snowfall Grave - Alliance Control
+(@CGUID+609, 3, 3), -- Snowfall Grave - Horde Control
+(@CGUID+610, 4, 1), -- Iceblood Grave - Alliance Control
+(@CGUID+611, 4, 3), -- Iceblood Grave - Horde Control
+(@CGUID+612, 5, 1), -- Frostwolf Grave - Alliance Control
+(@CGUID+613, 5, 3), -- Frostwolf Grave - Horde Control
+(@CGUID+614, 6, 1), -- Frostwolf Hut - Alliance Control
 (@CGUID+615, 6, 3), -- Frostwolf Hut - Horde Control
 (@CGUID+873, 7, 1), -- Dunbaldar South - Alliance Control
 (@CGUID+874, 7, 1), -- Dunbaldar South - Alliance Control
@@ -659,612 +657,8 @@ INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) VALUES
 (@CGUID+1033, 21, 7), -- Frostwolf Hut - Horde Defender Quest 3
 (@CGUID+1034, 21, 7), -- Frostwolf Hut - Horde Defender Quest 3
 (@CGUID+1035, 21, 7), -- Frostwolf Hut - Horde Defender Quest 3
-(@CGUID+264, 46, 5), -- North Mine - Neutral Boss
-(@CGUID+400, 46, 1), -- North Mine - Alliance Boss
-(@CGUID+401, 46, 3), -- North Mine - Horde Boss
-(@CGUID+268, 47, 5), -- South Mine - Neutral Boss
-(@CGUID+462, 47, 3), -- South Mine - Horde Boss
-(@CGUID+460, 47, 1), -- South Mine - Alliance Boss
 (@CGUID+286, 48, 0), -- Alliance Captain
 (@CGUID+282, 49, 0), -- Horde Captain
-(@CGUID+42, 50, 5), -- North Mine - Neutral Control
-(@CGUID+43, 50, 5), -- North Mine - Neutral Control
-(@CGUID+44, 50, 5), -- North Mine - Neutral Control
-(@CGUID+45, 50, 5), -- North Mine - Neutral Control
-(@CGUID+46, 50, 5), -- North Mine - Neutral Control
-(@CGUID+47, 50, 5), -- North Mine - Neutral Control
-(@CGUID+48, 50, 5), -- North Mine - Neutral Control
-(@CGUID+49, 50, 5), -- North Mine - Neutral Control
-(@CGUID+50, 50, 5), -- North Mine - Neutral Control
-(@CGUID+51, 50, 5), -- North Mine - Neutral Control
-(@CGUID+52, 50, 5), -- North Mine - Neutral Control
-(@CGUID+53, 50, 5), -- North Mine - Neutral Control
-(@CGUID+54, 50, 5), -- North Mine - Neutral Control
-(@CGUID+55, 50, 5), -- North Mine - Neutral Control
-(@CGUID+56, 50, 5), -- North Mine - Neutral Control
-(@CGUID+57, 50, 5), -- North Mine - Neutral Control
-(@CGUID+58, 50, 5), -- North Mine - Neutral Control
-(@CGUID+59, 50, 5), -- North Mine - Neutral Control
-(@CGUID+60, 50, 5), -- North Mine - Neutral Control
-(@CGUID+61, 50, 5), -- North Mine - Neutral Control
-(@CGUID+62, 50, 5), -- North Mine - Neutral Control
-(@CGUID+63, 50, 5), -- North Mine - Neutral Control
-(@CGUID+64, 50, 5), -- North Mine - Neutral Control
-(@CGUID+65, 50, 5), -- North Mine - Neutral Control
-(@CGUID+66, 50, 5), -- North Mine - Neutral Control
-(@CGUID+67, 50, 5), -- North Mine - Neutral Control
-(@CGUID+68, 50, 5), -- North Mine - Neutral Control
-(@CGUID+69, 50, 5), -- North Mine - Neutral Control
-(@CGUID+70, 50, 5), -- North Mine - Neutral Control
-(@CGUID+71, 50, 5), -- North Mine - Neutral Control
-(@CGUID+72, 50, 5), -- North Mine - Neutral Control
-(@CGUID+73, 50, 5), -- North Mine - Neutral Control
-(@CGUID+74, 50, 5), -- North Mine - Neutral Control
-(@CGUID+75, 50, 5), -- North Mine - Neutral Control
-(@CGUID+76, 50, 5), -- North Mine - Neutral Control
-(@CGUID+77, 50, 5), -- North Mine - Neutral Control
-(@CGUID+78, 50, 5), -- North Mine - Neutral Control
-(@CGUID+79, 50, 5), -- North Mine - Neutral Control
-(@CGUID+80, 50, 5), -- North Mine - Neutral Control
-(@CGUID+81, 50, 5), -- North Mine - Neutral Control
-(@CGUID+82, 50, 5), -- North Mine - Neutral Control
-(@CGUID+83, 50, 5), -- North Mine - Neutral Control
-(@CGUID+84, 50, 5), -- North Mine - Neutral Control
-(@CGUID+85, 50, 5), -- North Mine - Neutral Control
-(@CGUID+86, 50, 5), -- North Mine - Neutral Control
-(@CGUID+87, 50, 5), -- North Mine - Neutral Control
-(@CGUID+88, 50, 5), -- North Mine - Neutral Control
-(@CGUID+89, 50, 5), -- North Mine - Neutral Control
-(@CGUID+90, 50, 5), -- North Mine - Neutral Control
-(@CGUID+91, 50, 5), -- North Mine - Neutral Control
-(@CGUID+104, 50, 5), -- North Mine - Neutral Control
-(@CGUID+105, 50, 5), -- North Mine - Neutral Control
-(@CGUID+106, 50, 5), -- North Mine - Neutral Control
-(@CGUID+107, 50, 5), -- North Mine - Neutral Control
-(@CGUID+108, 50, 5), -- North Mine - Neutral Control
-(@CGUID+109, 50, 5), -- North Mine - Neutral Control
-(@CGUID+110, 50, 5), -- North Mine - Neutral Control
-(@CGUID+111, 50, 5), -- North Mine - Neutral Control
-(@CGUID+112, 50, 5), -- North Mine - Neutral Control
-(@CGUID+113, 50, 5), -- North Mine - Neutral Control
-(@CGUID+114, 50, 5), -- North Mine - Neutral Control
-(@CGUID+115, 50, 5), -- North Mine - Neutral Control
-(@CGUID+116, 50, 5), -- North Mine - Neutral Control
-(@CGUID+117, 50, 5), -- North Mine - Neutral Control
-(@CGUID+118, 50, 5), -- North Mine - Neutral Control
-(@CGUID+119, 50, 5), -- North Mine - Neutral Control
-(@CGUID+120, 50, 5), -- North Mine - Neutral Control
-(@CGUID+121, 50, 5), -- North Mine - Neutral Control
-(@CGUID+122, 50, 5), -- North Mine - Neutral Control
-(@CGUID+123, 50, 5), -- North Mine - Neutral Control
-(@CGUID+124, 50, 5), -- North Mine - Neutral Control
-(@CGUID+125, 50, 5), -- North Mine - Neutral Control
-(@CGUID+126, 50, 5), -- North Mine - Neutral Control
-(@CGUID+127, 50, 5), -- North Mine - Neutral Control
-(@CGUID+128, 50, 5), -- North Mine - Neutral Control
-(@CGUID+129, 50, 5), -- North Mine - Neutral Control
-(@CGUID+130, 50, 5), -- North Mine - Neutral Control
-(@CGUID+131, 50, 5), -- North Mine - Neutral Control
-(@CGUID+132, 50, 5), -- North Mine - Neutral Control
-(@CGUID+133, 50, 5), -- North Mine - Neutral Control
-(@CGUID+134, 50, 5), -- North Mine - Neutral Control
-(@CGUID+135, 50, 5), -- North Mine - Neutral Control
-(@CGUID+136, 50, 5), -- North Mine - Neutral Control
-(@CGUID+137, 50, 5), -- North Mine - Neutral Control
-(@CGUID+138, 50, 5), -- North Mine - Neutral Control
-(@CGUID+139, 50, 5), -- North Mine - Neutral Control
-(@CGUID+140, 50, 5), -- North Mine - Neutral Control
-(@CGUID+141, 50, 5), -- North Mine - Neutral Control
-(@CGUID+142, 50, 5), -- North Mine - Neutral Control
-(@CGUID+143, 50, 5), -- North Mine - Neutral Control
-(@CGUID+144, 50, 5), -- North Mine - Neutral Control
-(@CGUID+145, 50, 5), -- North Mine - Neutral Control
-(@CGUID+146, 50, 5), -- North Mine - Neutral Control
-(@CGUID+147, 50, 5), -- North Mine - Neutral Control
-(@CGUID+148, 50, 5), -- North Mine - Neutral Control
-(@CGUID+149, 50, 5), -- North Mine - Neutral Control
-(@CGUID+150, 50, 5), -- North Mine - Neutral Control
-(@CGUID+151, 50, 5), -- North Mine - Neutral Control
-(@CGUID+152, 50, 5), -- North Mine - Neutral Control
-(@CGUID+153, 50, 5), -- North Mine - Neutral Control
-(@CGUID+154, 50, 5), -- North Mine - Neutral Control
-(@CGUID+155, 50, 5), -- North Mine - Neutral Control
-(@CGUID+156, 50, 5), -- North Mine - Neutral Control
-(@CGUID+157, 50, 5), -- North Mine - Neutral Control
-(@CGUID+158, 50, 5), -- North Mine - Neutral Control
-(@CGUID+159, 50, 5), -- North Mine - Neutral Control
-(@CGUID+160, 50, 5), -- North Mine - Neutral Control
-(@CGUID+402, 50, 1), -- North Mine - Alliance Control
-(@CGUID+403, 50, 1), -- North Mine - Alliance Control
-(@CGUID+404, 50, 1), -- North Mine - Alliance Control
-(@CGUID+405, 50, 1), -- North Mine - Alliance Control
-(@CGUID+406, 50, 1), -- North Mine - Alliance Control
-(@CGUID+407, 50, 1), -- North Mine - Alliance Control
-(@CGUID+408, 50, 1), -- North Mine - Alliance Control
-(@CGUID+409, 50, 1), -- North Mine - Alliance Control
-(@CGUID+410, 50, 1), -- North Mine - Alliance Control
-(@CGUID+411, 50, 1), -- North Mine - Alliance Control
-(@CGUID+412, 50, 1), -- North Mine - Alliance Control
-(@CGUID+413, 50, 1), -- North Mine - Alliance Control
-(@CGUID+414, 50, 1), -- North Mine - Alliance Control
-(@CGUID+415, 50, 1), -- North Mine - Alliance Control
-(@CGUID+416, 50, 1), -- North Mine - Alliance Control
-(@CGUID+417, 50, 1), -- North Mine - Alliance Control
-(@CGUID+418, 50, 1), -- North Mine - Alliance Control
-(@CGUID+419, 50, 1), -- North Mine - Alliance Control
-(@CGUID+420, 50, 1), -- North Mine - Alliance Control
-(@CGUID+421, 50, 1), -- North Mine - Alliance Control
-(@CGUID+422, 50, 1), -- North Mine - Alliance Control
-(@CGUID+423, 50, 1), -- North Mine - Alliance Control
-(@CGUID+424, 50, 1), -- North Mine - Alliance Control
-(@CGUID+425, 50, 1), -- North Mine - Alliance Control
-(@CGUID+426, 50, 1), -- North Mine - Alliance Control
-(@CGUID+427, 50, 1), -- North Mine - Alliance Control
-(@CGUID+428, 50, 1), -- North Mine - Alliance Control
-(@CGUID+429, 50, 1), -- North Mine - Alliance Control
-(@CGUID+430, 50, 1), -- North Mine - Alliance Control
-(@CGUID+431, 50, 1), -- North Mine - Alliance Control
-(@CGUID+432, 50, 1), -- North Mine - Alliance Control
-(@CGUID+433, 50, 1), -- North Mine - Alliance Control
-(@CGUID+434, 50, 1), -- North Mine - Alliance Control
-(@CGUID+435, 50, 1), -- North Mine - Alliance Control
-(@CGUID+436, 50, 1), -- North Mine - Alliance Control
-(@CGUID+437, 50, 1), -- North Mine - Alliance Control
-(@CGUID+438, 50, 1), -- North Mine - Alliance Control
-(@CGUID+439, 50, 1), -- North Mine - Alliance Control
-(@CGUID+440, 50, 1), -- North Mine - Alliance Control
-(@CGUID+441, 50, 1), -- North Mine - Alliance Control
-(@CGUID+442, 50, 1), -- North Mine - Alliance Control
-(@CGUID+443, 50, 1), -- North Mine - Alliance Control
-(@CGUID+444, 50, 1), -- North Mine - Alliance Control
-(@CGUID+445, 50, 1), -- North Mine - Alliance Control
-(@CGUID+446, 50, 1), -- North Mine - Alliance Control
-(@CGUID+447, 50, 1), -- North Mine - Alliance Control
-(@CGUID+448, 50, 1), -- North Mine - Alliance Control
-(@CGUID+449, 50, 1), -- North Mine - Alliance Control
-(@CGUID+450, 50, 1), -- North Mine - Alliance Control
-(@CGUID+451, 50, 1), -- North Mine - Alliance Control
-(@CGUID+452, 50, 1), -- North Mine - Alliance Control
-(@CGUID+453, 50, 1), -- North Mine - Alliance Control
-(@CGUID+454, 50, 1), -- North Mine - Alliance Control
-(@CGUID+455, 50, 1), -- North Mine - Alliance Control
-(@CGUID+456, 50, 1), -- North Mine - Alliance Control
-(@CGUID+457, 50, 1), -- North Mine - Alliance Control
-(@CGUID+458, 50, 1), -- North Mine - Alliance Control
-(@CGUID+905, 50, 1), -- North Mine - Alliance Control
-(@CGUID+906, 50, 1), -- North Mine - Alliance Control
-(@CGUID+907, 50, 1), -- North Mine - Alliance Control
-(@CGUID+908, 50, 1), -- North Mine - Alliance Control
-(@CGUID+909, 50, 1), -- North Mine - Alliance Control
-(@CGUID+910, 50, 1), -- North Mine - Alliance Control
-(@CGUID+911, 50, 1), -- North Mine - Alliance Control
-(@CGUID+912, 50, 1), -- North Mine - Alliance Control
-(@CGUID+913, 50, 1), -- North Mine - Alliance Control
-(@CGUID+914, 50, 1), -- North Mine - Alliance Control
-(@CGUID+915, 50, 1), -- North Mine - Alliance Control
-(@CGUID+916, 50, 1), -- North Mine - Alliance Control
-(@CGUID+917, 50, 1), -- North Mine - Alliance Control
-(@CGUID+918, 50, 1), -- North Mine - Alliance Control
-(@CGUID+919, 50, 1), -- North Mine - Alliance Control
-(@CGUID+920, 50, 1), -- North Mine - Alliance Control
-(@CGUID+921, 50, 1), -- North Mine - Alliance Control
-(@CGUID+922, 50, 1), -- North Mine - Alliance Control
-(@CGUID+923, 50, 1), -- North Mine - Alliance Control
-(@CGUID+924, 50, 1), -- North Mine - Alliance Control
-(@CGUID+925, 50, 1), -- North Mine - Alliance Control
-(@CGUID+926, 50, 1), -- North Mine - Alliance Control
-(@CGUID+927, 50, 1), -- North Mine - Alliance Control
-(@CGUID+928, 50, 1), -- North Mine - Alliance Control
-(@CGUID+929, 50, 1), -- North Mine - Alliance Control
-(@CGUID+930, 50, 1), -- North Mine - Alliance Control
-(@CGUID+931, 50, 1), -- North Mine - Alliance Control
-(@CGUID+932, 50, 1), -- North Mine - Alliance Control
-(@CGUID+933, 50, 1), -- North Mine - Alliance Control
-(@CGUID+934, 50, 1), -- North Mine - Alliance Control
-(@CGUID+935, 50, 1), -- North Mine - Alliance Control
-(@CGUID+936, 50, 1), -- North Mine - Alliance Control
-(@CGUID+937, 50, 1), -- North Mine - Alliance Control
-(@CGUID+938, 50, 1), -- North Mine - Alliance Control
-(@CGUID+939, 50, 1), -- North Mine - Alliance Control
-(@CGUID+940, 50, 1), -- North Mine - Alliance Control
-(@CGUID+941, 50, 1), -- North Mine - Alliance Control
-(@CGUID+942, 50, 1), -- North Mine - Alliance Control
-(@CGUID+943, 50, 1), -- North Mine - Alliance Control
-(@CGUID+944, 50, 1), -- North Mine - Alliance Control
-(@CGUID+945, 50, 1), -- North Mine - Alliance Control
-(@CGUID+946, 50, 1), -- North Mine - Alliance Control
-(@CGUID+947, 50, 1), -- North Mine - Alliance Control
-(@CGUID+948, 50, 1), -- North Mine - Alliance Control
-(@CGUID+949, 50, 1), -- North Mine - Alliance Control
-(@CGUID+950, 50, 1), -- North Mine - Alliance Control
-(@CGUID+951, 50, 1), -- North Mine - Alliance Control
-(@CGUID+952, 50, 1), -- North Mine - Alliance Control
-(@CGUID+953, 50, 1), -- North Mine - Alliance Control
-(@CGUID+954, 50, 1), -- North Mine - Alliance Control
-(@CGUID+545, 50, 3), -- North Mine - Horde Control
-(@CGUID+546, 50, 3), -- North Mine - Horde Control
-(@CGUID+547, 50, 3), -- North Mine - Horde Control
-(@CGUID+548, 50, 3), -- North Mine - Horde Control
-(@CGUID+549, 50, 3), -- North Mine - Horde Control
-(@CGUID+550, 50, 3), -- North Mine - Horde Control
-(@CGUID+551, 50, 3), -- North Mine - Horde Control
-(@CGUID+552, 50, 3), -- North Mine - Horde Control
-(@CGUID+553, 50, 3), -- North Mine - Horde Control
-(@CGUID+554, 50, 3), -- North Mine - Horde Control
-(@CGUID+555, 50, 3), -- North Mine - Horde Control
-(@CGUID+556, 50, 3), -- North Mine - Horde Control
-(@CGUID+557, 50, 3), -- North Mine - Horde Control
-(@CGUID+558, 50, 3), -- North Mine - Horde Control
-(@CGUID+559, 50, 3), -- North Mine - Horde Control
-(@CGUID+560, 50, 3), -- North Mine - Horde Control
-(@CGUID+561, 50, 3), -- North Mine - Horde Control
-(@CGUID+562, 50, 3), -- North Mine - Horde Control
-(@CGUID+563, 50, 3), -- North Mine - Horde Control
-(@CGUID+564, 50, 3), -- North Mine - Horde Control
-(@CGUID+565, 50, 3), -- North Mine - Horde Control
-(@CGUID+566, 50, 3), -- North Mine - Horde Control
-(@CGUID+567, 50, 3), -- North Mine - Horde Control
-(@CGUID+568, 50, 3), -- North Mine - Horde Control
-(@CGUID+569, 50, 3), -- North Mine - Horde Control
-(@CGUID+570, 50, 3), -- North Mine - Horde Control
-(@CGUID+571, 50, 3), -- North Mine - Horde Control
-(@CGUID+572, 50, 3), -- North Mine - Horde Control
-(@CGUID+573, 50, 3), -- North Mine - Horde Control
-(@CGUID+574, 50, 3), -- North Mine - Horde Control
-(@CGUID+575, 50, 3), -- North Mine - Horde Control
-(@CGUID+576, 50, 3), -- North Mine - Horde Control
-(@CGUID+577, 50, 3), -- North Mine - Horde Control
-(@CGUID+578, 50, 3), -- North Mine - Horde Control
-(@CGUID+579, 50, 3), -- North Mine - Horde Control
-(@CGUID+580, 50, 3), -- North Mine - Horde Control
-(@CGUID+581, 50, 3), -- North Mine - Horde Control
-(@CGUID+582, 50, 3), -- North Mine - Horde Control
-(@CGUID+583, 50, 3), -- North Mine - Horde Control
-(@CGUID+584, 50, 3), -- North Mine - Horde Control
-(@CGUID+585, 50, 3), -- North Mine - Horde Control
-(@CGUID+586, 50, 3), -- North Mine - Horde Control
-(@CGUID+587, 50, 3), -- North Mine - Horde Control
-(@CGUID+588, 50, 3), -- North Mine - Horde Control
-(@CGUID+589, 50, 3), -- North Mine - Horde Control
-(@CGUID+590, 50, 3), -- North Mine - Horde Control
-(@CGUID+591, 50, 3), -- North Mine - Horde Control
-(@CGUID+592, 50, 3), -- North Mine - Horde Control
-(@CGUID+593, 50, 3), -- North Mine - Horde Control
-(@CGUID+594, 50, 3), -- North Mine - Horde Control
-(@CGUID+595, 50, 3), -- North Mine - Horde Control
-(@CGUID+596, 50, 3), -- North Mine - Horde Control
-(@CGUID+597, 50, 3), -- North Mine - Horde Control
-(@CGUID+598, 50, 3), -- North Mine - Horde Control
-(@CGUID+599, 50, 3), -- North Mine - Horde Control
-(@CGUID+600, 50, 3), -- North Mine - Horde Control
-(@CGUID+601, 50, 3), -- North Mine - Horde Control
-(@CGUID+957, 50, 3), -- North Mine - Horde Control
-(@CGUID+958, 50, 3), -- North Mine - Horde Control
-(@CGUID+959, 50, 3), -- North Mine - Horde Control
-(@CGUID+960, 50, 3), -- North Mine - Horde Control
-(@CGUID+961, 50, 3), -- North Mine - Horde Control
-(@CGUID+962, 50, 3), -- North Mine - Horde Control
-(@CGUID+963, 50, 3), -- North Mine - Horde Control
-(@CGUID+964, 50, 3), -- North Mine - Horde Control
-(@CGUID+965, 50, 3), -- North Mine - Horde Control
-(@CGUID+966, 50, 3), -- North Mine - Horde Control
-(@CGUID+967, 50, 3), -- North Mine - Horde Control
-(@CGUID+968, 50, 3), -- North Mine - Horde Control
-(@CGUID+969, 50, 3), -- North Mine - Horde Control
-(@CGUID+970, 50, 3), -- North Mine - Horde Control
-(@CGUID+971, 50, 3), -- North Mine - Horde Control
-(@CGUID+972, 50, 3), -- North Mine - Horde Control
-(@CGUID+973, 50, 3), -- North Mine - Horde Control
-(@CGUID+974, 50, 3), -- North Mine - Horde Control
-(@CGUID+975, 50, 3), -- North Mine - Horde Control
-(@CGUID+976, 50, 3), -- North Mine - Horde Control
-(@CGUID+977, 50, 3), -- North Mine - Horde Control
-(@CGUID+978, 50, 3), -- North Mine - Horde Control
-(@CGUID+979, 50, 3), -- North Mine - Horde Control
-(@CGUID+980, 50, 3), -- North Mine - Horde Control
-(@CGUID+981, 50, 3), -- North Mine - Horde Control
-(@CGUID+982, 50, 3), -- North Mine - Horde Control
-(@CGUID+983, 50, 3), -- North Mine - Horde Control
-(@CGUID+984, 50, 3), -- North Mine - Horde Control
-(@CGUID+985, 50, 3), -- North Mine - Horde Control
-(@CGUID+986, 50, 3), -- North Mine - Horde Control
-(@CGUID+987, 50, 3), -- North Mine - Horde Control
-(@CGUID+988, 50, 3), -- North Mine - Horde Control
-(@CGUID+989, 50, 3), -- North Mine - Horde Control
-(@CGUID+990, 50, 3), -- North Mine - Horde Control
-(@CGUID+991, 50, 3), -- North Mine - Horde Control
-(@CGUID+992, 50, 3), -- North Mine - Horde Control
-(@CGUID+993, 50, 3), -- North Mine - Horde Control
-(@CGUID+994, 50, 3), -- North Mine - Horde Control
-(@CGUID+995, 50, 3), -- North Mine - Horde Control
-(@CGUID+996, 50, 3), -- North Mine - Horde Control
-(@CGUID+997, 50, 3), -- North Mine - Horde Control
-(@CGUID+998, 50, 3), -- North Mine - Horde Control
-(@CGUID+999, 50, 3), -- North Mine - Horde Control
-(@CGUID+1000, 50, 3), -- North Mine - Horde Control
-(@CGUID+1001, 50, 3), -- North Mine - Horde Control
-(@CGUID+1002, 50, 3), -- North Mine - Horde Control
-(@CGUID+1003, 50, 3), -- North Mine - Horde Control
-(@CGUID+1004, 50, 3), -- North Mine - Horde Control
-(@CGUID+1005, 50, 3), -- North Mine - Horde Control
-(@CGUID+1006, 50, 3), -- North Mine - Horde Control
-(@CGUID+22, 51, 5), -- South Mine - Neutral Control
-(@CGUID+23, 51, 5), -- South Mine - Neutral Control
-(@CGUID+24, 51, 5), -- South Mine - Neutral Control
-(@CGUID+25, 51, 5), -- South Mine - Neutral Control
-(@CGUID+26, 51, 5), -- South Mine - Neutral Control
-(@CGUID+27, 51, 5), -- South Mine - Neutral Control
-(@CGUID+28, 51, 5), -- South Mine - Neutral Control
-(@CGUID+29, 51, 5), -- South Mine - Neutral Control
-(@CGUID+30, 51, 5), -- South Mine - Neutral Control
-(@CGUID+31, 51, 5), -- South Mine - Neutral Control
-(@CGUID+172, 51, 5), -- South Mine - Neutral Control
-(@CGUID+173, 51, 5), -- South Mine - Neutral Control
-(@CGUID+174, 51, 5), -- South Mine - Neutral Control
-(@CGUID+175, 51, 5), -- South Mine - Neutral Control
-(@CGUID+176, 51, 5), -- South Mine - Neutral Control
-(@CGUID+177, 51, 5), -- South Mine - Neutral Control
-(@CGUID+178, 51, 5), -- South Mine - Neutral Control
-(@CGUID+179, 51, 5), -- South Mine - Neutral Control
-(@CGUID+180, 51, 5), -- South Mine - Neutral Control
-(@CGUID+181, 51, 5), -- South Mine - Neutral Control
-(@CGUID+182, 51, 5), -- South Mine - Neutral Control
-(@CGUID+183, 51, 5), -- South Mine - Neutral Control
-(@CGUID+184, 51, 5), -- South Mine - Neutral Control
-(@CGUID+185, 51, 5), -- South Mine - Neutral Control
-(@CGUID+186, 51, 5), -- South Mine - Neutral Control
-(@CGUID+187, 51, 5), -- South Mine - Neutral Control
-(@CGUID+188, 51, 5), -- South Mine - Neutral Control
-(@CGUID+189, 51, 5), -- South Mine - Neutral Control
-(@CGUID+190, 51, 5), -- South Mine - Neutral Control
-(@CGUID+191, 51, 5), -- South Mine - Neutral Control
-(@CGUID+192, 51, 5), -- South Mine - Neutral Control
-(@CGUID+193, 51, 5), -- South Mine - Neutral Control
-(@CGUID+194, 51, 5), -- South Mine - Neutral Control
-(@CGUID+195, 51, 5), -- South Mine - Neutral Control
-(@CGUID+196, 51, 5), -- South Mine - Neutral Control
-(@CGUID+197, 51, 5), -- South Mine - Neutral Control
-(@CGUID+198, 51, 5), -- South Mine - Neutral Control
-(@CGUID+199, 51, 5), -- South Mine - Neutral Control
-(@CGUID+200, 51, 5), -- South Mine - Neutral Control
-(@CGUID+201, 51, 5), -- South Mine - Neutral Control
-(@CGUID+202, 51, 5), -- South Mine - Neutral Control
-(@CGUID+203, 51, 5), -- South Mine - Neutral Control
-(@CGUID+204, 51, 5), -- South Mine - Neutral Control
-(@CGUID+205, 51, 5), -- South Mine - Neutral Control
-(@CGUID+206, 51, 5), -- South Mine - Neutral Control
-(@CGUID+207, 51, 5), -- South Mine - Neutral Control
-(@CGUID+208, 51, 5), -- South Mine - Neutral Control
-(@CGUID+209, 51, 5), -- South Mine - Neutral Control
-(@CGUID+210, 51, 5), -- South Mine - Neutral Control
-(@CGUID+211, 51, 5), -- South Mine - Neutral Control
-(@CGUID+212, 51, 5), -- South Mine - Neutral Control
-(@CGUID+213, 51, 5), -- South Mine - Neutral Control
-(@CGUID+214, 51, 5), -- South Mine - Neutral Control
-(@CGUID+215, 51, 5), -- South Mine - Neutral Control
-(@CGUID+216, 51, 5), -- South Mine - Neutral Control
-(@CGUID+217, 51, 5), -- South Mine - Neutral Control
-(@CGUID+218, 51, 5), -- South Mine - Neutral Control
-(@CGUID+219, 51, 5), -- South Mine - Neutral Control
-(@CGUID+220, 51, 5), -- South Mine - Neutral Control
-(@CGUID+221, 51, 5), -- South Mine - Neutral Control
-(@CGUID+223, 51, 5), -- South Mine - Neutral Control
-(@CGUID+224, 51, 5), -- South Mine - Neutral Control
-(@CGUID+225, 51, 5), -- South Mine - Neutral Control
-(@CGUID+226, 51, 5), -- South Mine - Neutral Control
-(@CGUID+227, 51, 5), -- South Mine - Neutral Control
-(@CGUID+228, 51, 5), -- South Mine - Neutral Control
-(@CGUID+229, 51, 5), -- South Mine - Neutral Control
-(@CGUID+230, 51, 5), -- South Mine - Neutral Control
-(@CGUID+231, 51, 5), -- South Mine - Neutral Control
-(@CGUID+232, 51, 5), -- South Mine - Neutral Control
-(@CGUID+233, 51, 5), -- South Mine - Neutral Control
-(@CGUID+234, 51, 5), -- South Mine - Neutral Control
-(@CGUID+235, 51, 5), -- South Mine - Neutral Control
-(@CGUID+236, 51, 5), -- South Mine - Neutral Control
-(@CGUID+237, 51, 5), -- South Mine - Neutral Control
-(@CGUID+238, 51, 5), -- South Mine - Neutral Control
-(@CGUID+239, 51, 5), -- South Mine - Neutral Control
-(@CGUID+240, 51, 5), -- South Mine - Neutral Control
-(@CGUID+241, 51, 5), -- South Mine - Neutral Control
-(@CGUID+242, 51, 5), -- South Mine - Neutral Control
-(@CGUID+243, 51, 5), -- South Mine - Neutral Control
-(@CGUID+244, 51, 5), -- South Mine - Neutral Control
-(@CGUID+245, 51, 5), -- South Mine - Neutral Control
-(@CGUID+246, 51, 5), -- South Mine - Neutral Control
-(@CGUID+247, 51, 5), -- South Mine - Neutral Control
-(@CGUID+248, 51, 5), -- South Mine - Neutral Control
-(@CGUID+249, 51, 5), -- South Mine - Neutral Control
-(@CGUID+250, 51, 5), -- South Mine - Neutral Control
-(@CGUID+251, 51, 5), -- South Mine - Neutral Control
-(@CGUID+252, 51, 5), -- South Mine - Neutral Control
-(@CGUID+253, 51, 5), -- South Mine - Neutral Control
-(@CGUID+254, 51, 5), -- South Mine - Neutral Control
-(@CGUID+255, 51, 5), -- South Mine - Neutral Control
-(@CGUID+256, 51, 5), -- South Mine - Neutral Control
-(@CGUID+257, 51, 5), -- South Mine - Neutral Control
-(@CGUID+258, 51, 5), -- South Mine - Neutral Control
-(@CGUID+259, 51, 5), -- South Mine - Neutral Control
-(@CGUID+260, 51, 5), -- South Mine - Neutral Control
-(@CGUID+261, 51, 5), -- South Mine - Neutral Control
-(@CGUID+506, 51, 3), -- South Mine - Horde Control
-(@CGUID+507, 51, 3), -- South Mine - Horde Control
-(@CGUID+508, 51, 3), -- South Mine - Horde Control
-(@CGUID+509, 51, 3), -- South Mine - Horde Control
-(@CGUID+510, 51, 3), -- South Mine - Horde Control
-(@CGUID+511, 51, 3), -- South Mine - Horde Control
-(@CGUID+512, 51, 3), -- South Mine - Horde Control
-(@CGUID+513, 51, 3), -- South Mine - Horde Control
-(@CGUID+514, 51, 3), -- South Mine - Horde Control
-(@CGUID+515, 51, 3), -- South Mine - Horde Control
-(@CGUID+516, 51, 3), -- South Mine - Horde Control
-(@CGUID+517, 51, 3), -- South Mine - Horde Control
-(@CGUID+518, 51, 3), -- South Mine - Horde Control
-(@CGUID+519, 51, 3), -- South Mine - Horde Control
-(@CGUID+520, 51, 3), -- South Mine - Horde Control
-(@CGUID+521, 51, 3), -- South Mine - Horde Control
-(@CGUID+522, 51, 3), -- South Mine - Horde Control
-(@CGUID+523, 51, 3), -- South Mine - Horde Control
-(@CGUID+524, 51, 3), -- South Mine - Horde Control
-(@CGUID+525, 51, 3), -- South Mine - Horde Control
-(@CGUID+526, 51, 3), -- South Mine - Horde Control
-(@CGUID+527, 51, 3), -- South Mine - Horde Control
-(@CGUID+528, 51, 3), -- South Mine - Horde Control
-(@CGUID+529, 51, 3), -- South Mine - Horde Control
-(@CGUID+530, 51, 3), -- South Mine - Horde Control
-(@CGUID+531, 51, 3), -- South Mine - Horde Control
-(@CGUID+532, 51, 3), -- South Mine - Horde Control
-(@CGUID+533, 51, 3), -- South Mine - Horde Control
-(@CGUID+534, 51, 3), -- South Mine - Horde Control
-(@CGUID+535, 51, 3), -- South Mine - Horde Control
-(@CGUID+536, 51, 3), -- South Mine - Horde Control
-(@CGUID+537, 51, 3), -- South Mine - Horde Control
-(@CGUID+538, 51, 3), -- South Mine - Horde Control
-(@CGUID+539, 51, 3), -- South Mine - Horde Control
-(@CGUID+540, 51, 3), -- South Mine - Horde Control
-(@CGUID+541, 51, 3), -- South Mine - Horde Control
-(@CGUID+542, 51, 3), -- South Mine - Horde Control
-(@CGUID+543, 51, 3), -- South Mine - Horde Control
-(@CGUID+544, 51, 3), -- South Mine - Horde Control
-(@CGUID+646, 51, 3), -- South Mine - Horde Control
-(@CGUID+647, 51, 3), -- South Mine - Horde Control
-(@CGUID+648, 51, 3), -- South Mine - Horde Control
-(@CGUID+649, 51, 3), -- South Mine - Horde Control
-(@CGUID+650, 51, 3), -- South Mine - Horde Control
-(@CGUID+651, 51, 3), -- South Mine - Horde Control
-(@CGUID+652, 51, 3), -- South Mine - Horde Control
-(@CGUID+653, 51, 3), -- South Mine - Horde Control
-(@CGUID+654, 51, 3), -- South Mine - Horde Control
-(@CGUID+655, 51, 3), -- South Mine - Horde Control
-(@CGUID+656, 51, 3), -- South Mine - Horde Control
-(@CGUID+657, 51, 3), -- South Mine - Horde Control
-(@CGUID+658, 51, 3), -- South Mine - Horde Control
-(@CGUID+659, 51, 3), -- South Mine - Horde Control
-(@CGUID+660, 51, 3), -- South Mine - Horde Control
-(@CGUID+661, 51, 3), -- South Mine - Horde Control
-(@CGUID+662, 51, 3), -- South Mine - Horde Control
-(@CGUID+663, 51, 3), -- South Mine - Horde Control
-(@CGUID+664, 51, 3), -- South Mine - Horde Control
-(@CGUID+665, 51, 3), -- South Mine - Horde Control
-(@CGUID+666, 51, 3), -- South Mine - Horde Control
-(@CGUID+667, 51, 3), -- South Mine - Horde Control
-(@CGUID+668, 51, 3), -- South Mine - Horde Control
-(@CGUID+669, 51, 3), -- South Mine - Horde Control
-(@CGUID+670, 51, 3), -- South Mine - Horde Control
-(@CGUID+671, 51, 3), -- South Mine - Horde Control
-(@CGUID+672, 51, 3), -- South Mine - Horde Control
-(@CGUID+673, 51, 3), -- South Mine - Horde Control
-(@CGUID+674, 51, 3), -- South Mine - Horde Control
-(@CGUID+675, 51, 3), -- South Mine - Horde Control
-(@CGUID+676, 51, 3), -- South Mine - Horde Control
-(@CGUID+677, 51, 3), -- South Mine - Horde Control
-(@CGUID+678, 51, 3), -- South Mine - Horde Control
-(@CGUID+679, 51, 3), -- South Mine - Horde Control
-(@CGUID+680, 51, 3), -- South Mine - Horde Control
-(@CGUID+681, 51, 3), -- South Mine - Horde Control
-(@CGUID+682, 51, 3), -- South Mine - Horde Control
-(@CGUID+683, 51, 3), -- South Mine - Horde Control
-(@CGUID+684, 51, 3), -- South Mine - Horde Control
-(@CGUID+685, 51, 3), -- South Mine - Horde Control
-(@CGUID+686, 51, 3), -- South Mine - Horde Control
-(@CGUID+687, 51, 3), -- South Mine - Horde Control
-(@CGUID+688, 51, 3), -- South Mine - Horde Control
-(@CGUID+689, 51, 3), -- South Mine - Horde Control
-(@CGUID+690, 51, 3), -- South Mine - Horde Control
-(@CGUID+691, 51, 3), -- South Mine - Horde Control
-(@CGUID+692, 51, 3), -- South Mine - Horde Control
-(@CGUID+693, 51, 3), -- South Mine - Horde Control
-(@CGUID+694, 51, 3), -- South Mine - Horde Control
-(@CGUID+695, 51, 3), -- South Mine - Horde Control
-(@CGUID+466, 51, 1), -- South Mine - Alliance Control
-(@CGUID+467, 51, 1), -- South Mine - Alliance Control
-(@CGUID+468, 51, 1), -- South Mine - Alliance Control
-(@CGUID+469, 51, 1), -- South Mine - Alliance Control
-(@CGUID+470, 51, 1), -- South Mine - Alliance Control
-(@CGUID+471, 51, 1), -- South Mine - Alliance Control
-(@CGUID+472, 51, 1), -- South Mine - Alliance Control
-(@CGUID+473, 51, 1), -- South Mine - Alliance Control
-(@CGUID+474, 51, 1), -- South Mine - Alliance Control
-(@CGUID+475, 51, 1), -- South Mine - Alliance Control
-(@CGUID+476, 51, 1), -- South Mine - Alliance Control
-(@CGUID+477, 51, 1), -- South Mine - Alliance Control
-(@CGUID+478, 51, 1), -- South Mine - Alliance Control
-(@CGUID+479, 51, 1), -- South Mine - Alliance Control
-(@CGUID+480, 51, 1), -- South Mine - Alliance Control
-(@CGUID+481, 51, 1), -- South Mine - Alliance Control
-(@CGUID+482, 51, 1), -- South Mine - Alliance Control
-(@CGUID+483, 51, 1), -- South Mine - Alliance Control
-(@CGUID+484, 51, 1), -- South Mine - Alliance Control
-(@CGUID+485, 51, 1), -- South Mine - Alliance Control
-(@CGUID+486, 51, 1), -- South Mine - Alliance Control
-(@CGUID+487, 51, 1), -- South Mine - Alliance Control
-(@CGUID+488, 51, 1), -- South Mine - Alliance Control
-(@CGUID+489, 51, 1), -- South Mine - Alliance Control
-(@CGUID+490, 51, 1), -- South Mine - Alliance Control
-(@CGUID+491, 51, 1), -- South Mine - Alliance Control
-(@CGUID+492, 51, 1), -- South Mine - Alliance Control
-(@CGUID+493, 51, 1), -- South Mine - Alliance Control
-(@CGUID+494, 51, 1), -- South Mine - Alliance Control
-(@CGUID+495, 51, 1), -- South Mine - Alliance Control
-(@CGUID+496, 51, 1), -- South Mine - Alliance Control
-(@CGUID+497, 51, 1), -- South Mine - Alliance Control
-(@CGUID+498, 51, 1), -- South Mine - Alliance Control
-(@CGUID+499, 51, 1), -- South Mine - Alliance Control
-(@CGUID+500, 51, 1), -- South Mine - Alliance Control
-(@CGUID+501, 51, 1), -- South Mine - Alliance Control
-(@CGUID+502, 51, 1), -- South Mine - Alliance Control
-(@CGUID+503, 51, 1), -- South Mine - Alliance Control
-(@CGUID+504, 51, 1), -- South Mine - Alliance Control
-(@CGUID+701, 51, 1), -- South Mine - Alliance Control
-(@CGUID+702, 51, 1), -- South Mine - Alliance Control
-(@CGUID+703, 51, 1), -- South Mine - Alliance Control
-(@CGUID+704, 51, 1), -- South Mine - Alliance Control
-(@CGUID+705, 51, 1), -- South Mine - Alliance Control
-(@CGUID+706, 51, 1), -- South Mine - Alliance Control
-(@CGUID+707, 51, 1), -- South Mine - Alliance Control
-(@CGUID+708, 51, 1), -- South Mine - Alliance Control
-(@CGUID+709, 51, 1), -- South Mine - Alliance Control
-(@CGUID+710, 51, 1), -- South Mine - Alliance Control
-(@CGUID+711, 51, 1), -- South Mine - Alliance Control
-(@CGUID+712, 51, 1), -- South Mine - Alliance Control
-(@CGUID+713, 51, 1), -- South Mine - Alliance Control
-(@CGUID+714, 51, 1), -- South Mine - Alliance Control
-(@CGUID+715, 51, 1), -- South Mine - Alliance Control
-(@CGUID+716, 51, 1), -- South Mine - Alliance Control
-(@CGUID+717, 51, 1), -- South Mine - Alliance Control
-(@CGUID+718, 51, 1), -- South Mine - Alliance Control
-(@CGUID+719, 51, 1), -- South Mine - Alliance Control
-(@CGUID+720, 51, 1), -- South Mine - Alliance Control
-(@CGUID+721, 51, 1), -- South Mine - Alliance Control
-(@CGUID+722, 51, 1), -- South Mine - Alliance Control
-(@CGUID+723, 51, 1), -- South Mine - Alliance Control
-(@CGUID+724, 51, 1), -- South Mine - Alliance Control
-(@CGUID+725, 51, 1), -- South Mine - Alliance Control
-(@CGUID+726, 51, 1), -- South Mine - Alliance Control
-(@CGUID+727, 51, 1), -- South Mine - Alliance Control
-(@CGUID+728, 51, 1), -- South Mine - Alliance Control
-(@CGUID+729, 51, 1), -- South Mine - Alliance Control
-(@CGUID+730, 51, 1), -- South Mine - Alliance Control
-(@CGUID+731, 51, 1), -- South Mine - Alliance Control
-(@CGUID+732, 51, 1), -- South Mine - Alliance Control
-(@CGUID+733, 51, 1), -- South Mine - Alliance Control
-(@CGUID+734, 51, 1), -- South Mine - Alliance Control
-(@CGUID+735, 51, 1), -- South Mine - Alliance Control
-(@CGUID+736, 51, 1), -- South Mine - Alliance Control
-(@CGUID+737, 51, 1), -- South Mine - Alliance Control
-(@CGUID+738, 51, 1), -- South Mine - Alliance Control
-(@CGUID+739, 51, 1), -- South Mine - Alliance Control
-(@CGUID+740, 51, 1), -- South Mine - Alliance Control
-(@CGUID+741, 51, 1), -- South Mine - Alliance Control
-(@CGUID+742, 51, 1), -- South Mine - Alliance Control
-(@CGUID+743, 51, 1), -- South Mine - Alliance Control
-(@CGUID+744, 51, 1), -- South Mine - Alliance Control
-(@CGUID+745, 51, 1), -- South Mine - Alliance Control
-(@CGUID+746, 51, 1), -- South Mine - Alliance Control
-(@CGUID+747, 51, 1), -- South Mine - Alliance Control
-(@CGUID+748, 51, 1), -- South Mine - Alliance Control
-(@CGUID+749, 51, 1), -- South Mine - Alliance Control
-(@CGUID+750, 51, 1), -- South Mine - Alliance Control
 (@CGUID+1144, 52, 0), -- Alliance Marshal - Dunbaldar South
 (@CGUID+1142, 53, 0), -- Alliance Marshal - Dunbaldar North
 (@CGUID+1146, 54, 0), -- Alliance Marshal - Icewing Bunker
@@ -1277,8 +671,6 @@ INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) VALUES
 (@CGUID+1163, 59, 0), -- Horde Marshal - West Frostwolf Tower
 (@CGUID+284, 61, 0), -- Alliance - Boss
 (@CGUID+280, 62, 0); -- Horde - Boss
-
--- INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 603, 30, -1594.43, -410.107, 81.4242, 0.945338, 300, 300, 0, 0, 0, 0), -- Grimtooth
@@ -1574,26 +966,30 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+326, 12050, 30, -1400.4, -311.35, 89.3028, 4.99434, 120, 120, 0, 0, 0, 0), -- Stormpike Defender
 (@CGUID+327, 12051, 30, -747.5397, -346.3601, 66.77458, 0.171959, 430, 430, 0, 0, 0, 2), -- Frostwolf Legionnaire
 (@CGUID+328, 12051, 30, -1218.4, -301.2, 68.3, 0.8, 430, 430, 0, 0, 0, 2), -- Frostwolf Legionnaire
-(@CGUID+329, 14285, 30, -1369.2, -539.982, 55.0697, 1.70821, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard	// 14285,14282 in this section not Sniff
-(@CGUID+330, 14285, 30, -1365.98, -538.793, 54.1439, 1.72784, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+331, 14285, 30, -1375.79, -533.335, 55.2052, 6.06324, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+332, 14285, 30, -1374.2, -530.111, 54.1728, 6.05538, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+333, 14285, 30, -1423.32, -591.371, 52.3361, 2.90985, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+334, 14285, 30, -1425.19, -596.139, 51.62, 2.57212, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+335, 14285, 30, -1442.45, -589.847, 51.2054, 6.17708, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+336, 14285, 30, -1442.47, -594.734, 51.1442, 0.447586, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+337, 14285, 30, -1448.26, -613.943, 51.3533, 0.632191, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+338, 14285, 30, -1451.7, -609.035, 51.3421, 0.632196, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+339, 14285, 30, -1447.89, -602.657, 51.2134, 4.48457, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+340, 14285, 30, -1452.09, -601.524, 51.2353, 4.97937, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+341, 14285, 30, -1509.09, -708.758, 48.1612, 5.67053, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+342, 14285, 30, -1504.33, -715.092, 48.4673, 1.87313, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+343, 14285, 30, -1502, -713.391, 47.8395, 2.19514, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+344, 14285, 30, -1506.96, -706.502, 47.7388, 5.31317, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
-(@CGUID+345, 14285, 30, -1491.89, -701.584, 46.8155, 0.820728, 430, 430, 0, 0, 0, 2), -- Frostwolf Battleguard
-(@CGUID+346, 14282, 30, -1494.16, -701.661, 46.8447, 0.793239, 300, 300, 0, 0, 0, 0), -- Frostwolf Bloodhound
-(@CGUID+347, 14282, 30, -1492, -703.365, 46.8902, 0.793239, 300, 300, 0, 0, 0, 0), -- Frostwolf Bloodhound
--- (@CGUID+348 - 354
+(@CGUID+329, 14285, 30, -1369.575439453125, -539.44024658203125, 55.10938644409179687, 1.01229095458984375, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard	// patrol in this section not Sniff
+(@CGUID+330, 14285, 30, -1365.9635009765625, -538.2950439453125, 54.13965988159179687, 1.239183783531188964, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+331, 14285, 30, -1376.06396484375, -534.47515869140625, 55.49314498901367187, 0.453785598278045654, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+332, 14285, 30, -1373.7022705078125, -531.2449951171875, 54.44995880126953125, 0.296705961227416992, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+333, 14285, 30, -1425.2584228515625, -590.78399658203125, 51.81089019775390625, 3.298672199249267578, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+334, 14285, 30, -1427.734375, -595.85479736328125, 51.6255035400390625, 2.652900457382202148, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+335, 14285, 30, -1441.212890625, -588.17901611328125, 51.294891357421875, 6.161012172698974609, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+336, 14285, 30, -1442.2960205078125, -592.6134033203125, 51.17546463012695312, 0.01745329238474369, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+337, 14285, 30, -1449.6405029296875, -614.09649658203125, 51.47637939453125, 0.663225114345550537, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+338, 14285, 30, -1453.2113037109375, -609.6470947265625, 51.51163101196289062, 0.698131680488586425, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+339, 14285, 30, -1447.792724609375, -602.70263671875, 51.29736709594726562, 4.293509960174560546, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+340, 14285, 30, -1452.89306640625, -600.94171142578125, 51.380645751953125, 4.939281940460205078, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+341, 14285, 30, -1496.3922119140625, -637.85040283203125, 47.90900802612304687, 5.846852779388427734, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+342, 14285, 30, -1495.369140625, -634.252197265625, 47.8012847900390625, 5.462880611419677734, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+343, 14285, 30, -1489.3642578125, -651.92523193359375, 48.79279327392578125, 3.089232683181762695, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+344, 14285, 30, -1487.766845703125, -656.1053466796875, 49.02204132080078125, 2.58308720588684082, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+345, 14285, 30, -1482.052490234375, -680.86065673828125, 48.28873062133789062, 3.351032257080078125, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+346, 14285, 30, -1483.2247314453125, -677.3427734375, 48.64051055908203125, 3.525565147399902343, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+347, 14285, 30, -1490.791748046875, -682.8597412109375, 47.7365264892578125, 0.174532920122146606, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+348, 14285, 30, -1490.66748046875, -685.8663330078125, 47.4121551513671875, 0.558505356311798095, 430, 430, 0, 0, 0, 0), -- Frostwolf Battleguard
+(@CGUID+349, 14285, 30, -1491.89, -701.584, 46.8155, 0.820728, 430, 430, 0, 0, 0, 2), -- Frostwolf Battleguard
+(@CGUID+350, 14282, 30, -1494.16, -701.661, 46.8447, 0.793239, 300, 300, 0, 0, 0, 0), -- Frostwolf Bloodhound
+(@CGUID+351, 14282, 30, -1492, -703.365, 46.8902, 0.793239, 300, 300, 0, 0, 0, 0), -- Frostwolf Bloodhound
+-- (@CGUID+352 - 354
 (@CGUID+355, 12053, 30, 635.17, -29.5594, 46.5056, 4.81711, 120, 120, 0, 0, 0, 0), -- Frostwolf Guardian
 (@CGUID+356, 12053, 30, 642.488, -32.9437, 46.365, 4.67748, 120, 120, 0, 0, 0, 0), -- Frostwolf Guardian
 (@CGUID+357, 12053, 30, 642.326, -27.9442, 46.9211, 4.59022, 120, 120, 0, 0, 0, 0), -- Frostwolf Guardian
@@ -1835,21 +1231,25 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+599, 13099, 30, 826.402, -349.454, 47.2722, 1.51844, 120, 120, 0, 0, 0, 0), -- Irondeep Explorer
 (@CGUID+600, 13099, 30, 817.83, -455.715, 48.4207, 0.925025, 120, 120, 0, 0, 0, 0), -- Irondeep Explorer
 (@CGUID+601, 13099, 30, 808.953, -325.964, 52.4043, 3.01942, 120, 120, 0, 0, 0, 0), -- Irondeep Explorer
-(@CGUID+602, 13116, 30, 643.3094, 37.69201, 69.06236, 1.570796, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
-(@CGUID+603, 13116, 30, 672.9843, -367.5333, 29.86406, 5.183628, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
-(@CGUID+604, 13116, 30, 73.26048, -488.1827, 48.88459, 4.764749, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
-(@CGUID+605, 13116, 30, -160.6382, 18.41368, 77.21405, 1.37881, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
-(@CGUID+606, 13116, 30, -540.7137, -397.2314, 50.10065, 5.5676, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
-(@CGUID+607, 13116, 30, -1089.898, -268.6404, 57.1036, 1.53589, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
-(@CGUID+608, 13116, 30, -1488.143, -329.2055, 100.8532, 5.267793, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
-(@CGUID+609, 13117, 30, 643.3094, 37.69201, 69.06236, 1.570796, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
-(@CGUID+610, 13117, 30, 673.1029, -367.5822, 29.86406, 5.166174, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
-(@CGUID+611, 13117, 30, 73.26048, -488.1827, 48.88459, 4.764749, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
-(@CGUID+612, 13117, 30, -160.6382, 18.41368, 77.21405, 1.37881, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
-(@CGUID+613, 13117, 30, -540.7137, -397.2314, 50.10065, 5.5676, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
-(@CGUID+614, 13117, 30, -1089.447, -268.9552, 57.08559, 1.570796, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
-(@CGUID+615, 13117, 30, -1489.474, -329.7788, 100.8793, 3.577925, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
--- (@CGUID+616 - 628
+(@CGUID+602, 13116, 30, 643.3094482421875, 37.69200515747070312, 69.06235504150390625, 1.570796370506286621, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
+(@CGUID+603, 13117, 30, 643.32501220703125, 37.65087890625, 69.0581512451171875, 1.570796370506286621, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
+(@CGUID+604, 13116, 30, 672.9842529296875, -367.533294677734375, 29.86406135559082031, 5.183627605438232421, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
+(@CGUID+605, 13117, 30, 673.1029052734375, -367.582183837890625, 29.86406135559082031, 5.16617441177368164, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
+(@CGUID+606, 13116, 30, 73.26047515869140625, -488.1827392578125, 48.88458633422851562, 4.764749050140380859, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
+(@CGUID+607, 13117, 30, 73.244140625, -487.845001220703125, 48.8932952880859375, 4.747295379638671875, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
+(@CGUID+608, 13116, 30, -160.63818359375, 18.41368293762207031, 77.21405029296875, 1.378810048103332519, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
+(@CGUID+609, 13117, 30, -160.63818359375, 18.41368293762207031, 77.21405029296875, 1.378810048103332519, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
+(@CGUID+610, 13116, 30, -540.7137451171875, -397.2314453125, 50.10065460205078125, 5.567600250244140625, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
+(@CGUID+611, 13117, 30, -540.95611572265625, -397.119476318359375, 50.09281539916992187, 5.567600250244140625, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
+(@CGUID+612, 13116, 30, -1089.8975830078125, -268.640411376953125, 57.10360336303710937, 1.535889744758605957, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
+(@CGUID+613, 13117, 30, -1089.447265625, -268.955230712890625, 57.08559036254882812, 1.570796370506286621, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
+(@CGUID+614, 13116, 30, -1488.142822265625, -329.205474853515625, 100.8531951904296875, 3.59537816047668457, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
+(@CGUID+615, 13117, 30, -1489.4744873046875, -329.778778076171875, 100.8793182373046875, 3.577924966812133789, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
+(@CGUID+616, 13116, 30, 872.7252197265625, -497.276580810546875, 96.76715087890625, 1.553343057632446289, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
+(@CGUID+617, 13116, 30, 873.29022216796875, -484.94586181640625, 96.74733734130859375, 4.642575740814208984, 120, 120, 0, 0, 0, 0), -- Alliance Spirit Guide
+(@CGUID+618, 13117, 30, -1434.359375, -615.23870849609375, 51.29969406127929687, 2.199114799499511718, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
+(@CGUID+619, 13117, 30, -1440.5640869140625, -605.76373291015625, 51.35690689086914062, 5.25344085693359375, 120, 120, 0, 0, 0, 0), -- Horde Spirit Guide
+-- (@CGUID+620 - 628
 (@CGUID+629, 13176, 30, -1251.503, -316.3269, 62.65648, 5.026548, 6300, 6300, 0, 0, 0, 0), -- Smith Regzar
 (@CGUID+630, 13179, 30, 210.875, -357.3596, 56.45859, 5.67232, 430, 430, 0, 0, 0, 0), -- Wing Commander Guse -> Moves to -1331.997, -331.2427, 91.26306, 1.500983
 (@CGUID+631, 13180, 30, 320.4858, -502.6451, 71.23212, 5.934119, 430, 430, 0, 0, 0, 0), -- Wing Commander Jeztor -> Moves to -1334.989, -330.9367, 91.22141, 0.2617994
@@ -2309,23 +1709,23 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1121, 14282, 30, -740.704, -346.2681, 66.88144, 3.333045, 430, 430, 0, 0, 0, 0), -- Frostwolf Bloodhound
 (@CGUID+1122, 14282, 30, -1221.709, -301.6313, 67.55232, 0.8282489, 430, 430, 0, 0, 0, 0), -- Frostwolf Bloodhound
 (@CGUID+1123, 14282, 30, -1218.688, -304.2487, 67.83616, 0.826811, 430, 430, 0, 0, 0, 0), -- Frostwolf Bloodhound
-(@CGUID+1124, 14284, 30, 776.83, -496.3589, 99.70737, 2.513274, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1125, 14284, 30, 773.6514, -497.4816, 99.04083, 2.111848, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1126, 14284, 30, 776.6208, -487.7754, 99.40494, 3.508112, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1127, 14284, 30, 773.0414, -485.532, 98.8613, 4.223697, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1128, 14284, 30, 884.7385, -497.8078, 96.9043, 3.01942, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1129, 14284, 30, 883.6002, -500.6165, 96.84996, 2.251475, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1130, 14284, 30, 936.3436, -511.4911, 93.79216, 3.610045, 430, 430, 0, 0, 0, 2), -- Stormpike Battleguard
-(@CGUID+1131, 14284, 30, 876.6663, -503.8515, 96.70679, 0.03490658, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1132, 14284, 30, 878.9206, -508.4962, 96.79261, 1.151917, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1133, 14284, 30, 866.8444, -505.8405, 96.53249, 2.460914, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1134, 14284, 30, 863.1136, -508.1444, 96.55193, 2.007129, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1135, 14284, 30, 857.8161, -491.9267, 96.91924, 4.869469, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1136, 14284, 30, 854.2764, -494.2414, 96.80172, 5.445427, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1137, 14284, 30, 936.852, -504.9757, 94.22932, 5.72468, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1138, 14284, 30, 939.4198, -502.7771, 94.58874, 5.148721, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1139, 14284, 30, 947.4122, -509.9817, 95.10983, 2.827433, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
-(@CGUID+1140, 14284, 30, 949.0997, -506.9129, 95.42369, 3.316126, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1124, 14284, 30, 776.8299560546875, -496.35894775390625, 99.70737457275390625, 2.513274192810058593, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1125, 14284, 30, 773.6513671875, -497.4815673828125, 99.04083251953125, 2.111848354339599609, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1126, 14284, 30, 776.62078857421875, -487.775390625, 99.404937744140625, 3.50811171531677246, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1127, 14284, 30, 773.04144287109375, -485.532012939453125, 98.861297607421875, 4.223696708679199218, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1128, 14284, 30, 884.738525390625, -497.807830810546875, 96.90430450439453125, 3.019419670104980468, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1129, 14284, 30, 883.60015869140625, -500.616546630859375, 96.8499603271484375, 2.251474618911743164, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1130, 14284, 30, 876.66632080078125, -503.851470947265625, 96.706787109375, 0.03490658476948738, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1131, 14284, 30, 878.92059326171875, -508.4962158203125, 96.79261016845703125, 1.151917338371276855, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1132, 14284, 30, 866.84442138671875, -505.840484619140625, 96.5324859619140625, 2.460914134979248046, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1133, 14284, 30, 863.11358642578125, -508.144439697265625, 96.5519256591796875, 2.007128715515136718, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1134, 14284, 30, 857.81610107421875, -491.926666259765625, 96.9192352294921875, 4.86946868896484375, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1135, 14284, 30, 854.27642822265625, -494.241424560546875, 96.80171966552734375, 5.445427417755126953, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1136, 14284, 30, 936.85198974609375, -504.9757080078125, 94.2293243408203125, 5.724679946899414062, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1137, 14284, 30, 939.4197998046875, -502.777130126953125, 94.58873748779296875, 5.148721218109130859, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1138, 14284, 30, 947.4122314453125, -509.981658935546875, 95.109832763671875, 2.827433347702026367, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1139, 14284, 30, 949.0997314453125, -506.912872314453125, 95.4236907958984375, 3.31612563133239746, 430, 430, 0, 0, 0, 0), -- Stormpike Battleguard
+(@CGUID+1140, 14284, 30, 936.3436, -511.4911, 93.79216, 3.610045, 430, 430, 0, 0, 0, 2), -- Stormpike Battleguard
 (@CGUID+1141, 13816, 30, 704.3499, -22.90712, 50.21867, 0.7853982, 300, 300, 0, 0, 0, 0), -- Prospector Stonehewer
 (@CGUID+1142, 14762, 30, 723.0579, -14.15484, 50.70463, 3.403392, 120, 120, 0, 0, 0, 0), -- Dun Baldar North Marshal
 -- (@CGUID+1143
@@ -2438,7 +1838,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+1987, 13778, 30, 704.947, -18.67008, 91.93361, 2.670354, 300, 300, 0, 0, 0, 0), -- PvP Tower Credit Marker
 (@CGUID+1988, 13778, 30, 704.5838, -18.19016, 91.8703, 6.265732, 300, 300, 0, 0, 0, 0), -- PvP Tower Credit Marker
 (@CGUID+1989, 13796, 30, 704.1282, -17.59928, 91.78996, 3.839724, 300, 300, 0, 0, 0, 0), -- PvP Mine Credit Marker
-
 (@CGUID+1991, 23472, 30, 5190.468, 2906.853, 410.2329, 5.375614, 300, 300, 0, 0, 0, 0), -- World Trigger (Large AOI, Not Immune PC/NPC)
 (@CGUID+1992, 19871, 30, 5276.769, 3051.355, 438.5827, 3.211406, 300, 300, 0, 0, 0, 0), -- World Trigger (Not Immune NPC)
 (@CGUID+1993, 19871, 30, 5159.208, 2938.436, 439.9297, 0.6457718, 300, 300, 0, 0, 0, 0), -- World Trigger (Not Immune NPC)
@@ -2454,146 +1853,132 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+2003, 14848, 30, -539.2852, -168.2434, 115.0156, 1.53589, 300, 300, 2, 0, 0, 1), -- Herald
 (@CGUID+2004, 14848, 30, -48.4094, -288.8058, 55.51976, 0.1745329, 300, 300, 2, 0, 0, 1); -- Herald
 
--- (@CGUID+XXX, 12051, 30, -783.0477, -343.5128, 65.79632, 6.272885, 300, 300, 0, 0, 0, 0), -- Frostwolf Legionnaire
--- Potential Prenerf Spawns Spawn Locations !Wrong Entrys!
--- (@CGUID+281, 11947, 30, -544.134, -167.923, 57.0122, 6.28171, 1785, 1785, 0, 0, 0, 0), -- Captain Galvangar
--- (@CGUID+283, 11948, 30, 702.065, -16.4507, 50.1353, 0.293762, 6300, 6300, 0, 0, 0, 0), -- Vanndar Stormpike
--- (@CGUID+285, 11949, 30, -33.1637, -291.26, 15.0786, 3.00156, 6300, 6300, 0, 0, 0, 0), -- Captain Balinda Stonehearth
--- (@CGUID+287, 11997, 30, 780.729, -496.835, 100.255, 1.37743, 490, 490, 0, 0, 0, 0), -- Stormpike Herald
--- (@CGUID+289, 11997, 30, -1539.03, -763.518, -0.000621079, 1.17101, 120, 120, 0, 0, 0, 0), -- Stormpike Herald
--- (@CGUID+291, 12047, 30, 101.43, -390.854, 45.1353, 0.351658, 1290, 1290, 5, 0, 0, 1), -- Stormpike Mountaineer
--- (@CGUID+292, 12050, 30, -46.1047, -277.776, 15.5645, 1.36669, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
--- (@CGUID+293, 12050, 30, -29.4629, -280.476, 15.5645, 1.47032, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
--- (@CGUID+294, 12050, 30, -7.22618, -289.707, 15.5641, 4.65556, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
--- (@CGUID+295, 12050, 30, -49.9033, -299.553, 15.5645, 4.57782, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
--- (@CGUID+296, 12050, 30, -9.20146, -300.879, 15.5641, 1.43395, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
--- (@CGUID+297, 12050, 30, -33.2382, -302.798, 15.5645, 4.49147, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
--- (@CGUID+298, 12050, 30, -49.6288, -288.507, 15.5645, 6.05312, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
--- (@CGUID+328, 12051, 30, -536.28, -182.784, 57.9519, 4.85222, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
--- (@CGUID+329, 12051, 30, -524.859, -159.15, 57.9469, 0.461474, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
--- (@CGUID+330, 12051, 30, -504.289, -187.986, 57.8778, 5.87226, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
--- (@CGUID+331, 12051, 30, -555.052, -160.853, 57.9569, 5.95878, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
--- (@CGUID+332, 12051, 30, -545.042, -150.999, 57.9568, 4.92368, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
--- (@CGUID+333, 12052, 30, -461.106, -355.693, 31.0315, 5.24885, 430, 430, 5, 0, 0, 1), -- Frostwolf Warrior
--- (@CGUID+334, 12052, 30, -491.932, -338.25, 32.315, 2.65704, 430, 430, 5, 0, 0, 1), -- Frostwolf Warrior
--- (@CGUID+335, 12053, 30, -1286.08, -292.165, 89.4414, 0.13892, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+336, 12053, 30, -1209.79, -258.971, 72.807, 6.04762, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+337, 12053, 30, -1419.36, -322.491, 89.0562, 0.54054, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+338, 12053, 30, -1336.7, -292.145, 90.9146, 3.28446, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+339, 12053, 30, -1290.83, -267.808, 114.151, 0.155989, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+340, 12053, 30, -1159.49, -356.846, 51.8699, 0.276326, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+341, 12053, 30, -1304.12, -270.546, 114.139, 3.52747, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+342, 12053, 30, -1421.74, -318.38, 89.1177, 0.516545, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+343, 12053, 30, -500.359, -177.578, 57.8746, 5.89323, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+344, 12053, 30, -1162.4, -352.024, 51.857, 3.45484, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+345, 12053, 30, -1304.99, -265.518, 114.151, 3.2484, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+346, 12053, 30, -1222.15, -362.484, 57.8358, 4.79095, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+347, 12053, 30, -1357.27, -289.823, 91.5309, 5.21118, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+348, 12053, 30, -1161.1, -348.035, 52.0591, 6.07008, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+349, 12053, 30, -1314.1, -265.656, 91.6178, 3.33955, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+350, 12053, 30, -1217.35, -361.464, 57.2907, 4.81431, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+351, 12053, 30, -1207.97, -249.112, 73.0852, 5.84621, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+352, 12053, 30, -1312.64, -276.64, 91.2948, 3.51738, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+353, 12053, 30, -1344.07, -284.766, 91.1725, 4.98263, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
--- (@CGUID+399, 12127, 30, 627.704, -272.228, 30.1336, 4.89551, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+395, 12127, 30, 645.945, -270.983, 30.1329, 4.85466, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+388, 12127, 30, 624.473, -232.804, 37.4727, 0.151753, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+390, 12127, 30, 637.596, -230.508, 37.508, 3.31479, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+396, 12127, 30, 618.011, -191.652, 38.715, 0.171264, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+397, 12127, 30, 631.399, -189.692, 38.713, 3.286891, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+393, 12127, 30, 660.406, -36.6379, 49.5487, 3.33393, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+394, 12127, 30, 656.257, -22.3926, 49.5618, 3.3598, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+398, 12127, 30, 717.607, -0.564321, 50.6213, 3.63749, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+389, 12127, 30, 723.955, -21.5371, 50.6213, 3.47103, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+616, 13137, 30, -627.388, -394.103, 58.9819, 3.66855, 490, 490, 0, 0, 0, 0), -- Lieutenant Rugba
--- (@CGUID+617, 13138, 30, 121.041, -369.637, 43.1245, 4.79702, 490, 490, 0, 0, 0, 0), -- Lieutenant Spencer
--- (@CGUID+618, 13139, 30, -151.683, -440.279, 40.3853, 4.28611, 1785, 1785, 0, 0, 0, 0), -- Commander Randolph
--- (@CGUID+619, 13140, 30, -537.417, -168.788, 57.0112, 2.93509, 180, 180, 0, 0, 0, 0), -- Commander Dardosh
--- (@CGUID+620, 13143, 30, -621.193, -357.858, 56.1206, 4.77595, 490, 490, 0, 0, 0, 0), -- Lieutenant Stronghoof
--- (@CGUID+621, 13144, 30, -540.745, -173.477, 57.0112, 1.34339, 430, 430, 0, 0, 0, 0), -- Lieutenant Vol'talar
--- (@CGUID+622, 13145, 30, -481.07, -358.03, 28.0431, 0.869456, 430, 430, 0, 0, 0, 0), -- Lieutenant Grummus
--- (@CGUID+623, 13146, 30, -587.534, -319.762, 48.3816, 4.31599, 430, 430, 0, 0, 0, 0), -- Lieutenant Murp
--- (@CGUID+624, 13147, 30, -540.778, -162.662, 56.9975, 5.62241, 430, 430, 0, 0, 0, 0), -- Lieutenant Lewis
--- (@CGUID+625, 13151, 30, -325.452, -631.495, 121.554, 0.624377, 490, 490, 0, 0, 0, 0), -- Syndicate Master Ryson
--- (@CGUID+626, 13152, 30, -1300.72, -276.136, 91.9405, 1.45977, 1785, 1785, 0, 0, 0, 0), -- Commander Malgor
--- (@CGUID+627, 13153, 30, -1426.91, -328.852, 89.1526, 0.972695, 1785, 1785, 0, 0, 0, 0), -- Commander Mulfort
--- (@CGUID+628, 13154, 30, -768.671, -363.85, 90.8949, 1.07916, 6300, 6300, 0, 0, 0, 0), -- Commander Louis Philips
--- (@CGUID+639, 13296, 30, 68.5699, -235.037, 16.3447, 4.04218, 430, 430, 0, 0, 0, 0), -- Lieutenant Largent - faction mounted
--- (@CGUID+640, 13297, 30, -32.8321, -288.675, 15.0786, 2.91902, 430, 430, 0, 0, 0, 0), -- Lieutenant Stouthandle - faction mounted
--- (@CGUID+641, 13298, 30, 84.0297, -260.126, 19.8222, 5.08283, 490, 490, 0, 0, 0, 0), -- Lieutenant Greywand - faction mounted
--- (@CGUID+642, 13299, 30, 79.9676, -236.94, 17.2992, 5.40877, 430, 430, 0, 0, 0, 0), -- Lieutenant Lonadin - faction mounted
--- (@CGUID+643, 13300, 30, -40.902, -480.168, 44.8062, 2.83775, 490, 490, 0, 0, 0, 0), -- Lieutenant Mancuso - faction mounted
--- (@CGUID+751, 13318, 30, 688.857, -131.356, 63.6662, 3.37343, 490, 490, 0, 0, 0, 0), -- Commander Mortimer - faction mounted
--- (@CGUID+752, 13319, 30, 672.59, -296.524, 30.3936, 2.74624, 180, 180, 0, 0, 0, 0), -- Commander Duffy
--- (@CGUID+753, 13320, 30, 196.835, -362.732, 49.2677, 5.87039, 1785, 1785, 0, 0, 0, 0), -- Commander Karl Philips
--- (@CGUID+754, 13325, 30, 99.9783, -312.868, 34.4257, 5.25954, 430, 430, 0, 0, 0, 0), -- Seasoned Mountaineer
--- (@CGUID+812, 13331, 30, 676.381, -31.9315, 50.6192, 1.8439, 610, 610, 5, 0, 0, 1), -- Veteran Defender
--- (@CGUID+813, 13331, 30, 704.814, -38.8323, 50.6213, 1.93984, 610, 610, 5, 0, 0, 1), -- Veteran Defender
--- (@CGUID+814, 13331, 30, 692.081, 3.14777, 50.6212, 5.80163, 610, 610, 5, 0, 0, 1), -- Veteran Defender
--- (@CGUID+815, 13331, 30, 671.829, -17.7163, 50.6192, 5.09153, 610, 610, 5, 0, 0, 1), -- Veteran Defender
--- (@CGUID+872, 13335, 30, 141.547, -367.192, 45.7941, 5.92711, 430, 430, 0, 0, 0, 0), -- Veteran Mountaineer
--- (@CGUID+1036, 13422, 30, 700.033, -13.9355, 50.1353, 0.238083, 430, 430, 5, 0, 0, 1), -- Champion Defender
--- (@CGUID+1037, 13422, 30, 701.632, -19.6478, 50.1353, 0.423632, 430, 430, 5, 0, 0, 1), -- Champion Defender
--- (@CGUID+1066, 13425, 30, -1189.04, -355.773, 53.2966, 5.8898, 430, 430, 5, 0, 0, 1), -- Champion Legionnaire
--- (@CGUID+1067, 13425, 30, -1186.78, -351.523, 53.1589, 5.94942, 430, 430, 5, 0, 0, 1), -- Champion Legionnaire
--- (@CGUID+1068, 13426, 30, -53.9927, -495.938, 44.0359, 2.64533, 430, 430, 5, 0, 0, 1), -- Champion Mountaineer
--- (@CGUID+1069, 13426, 30, -96.1053, -533.749, 45.0986, 3.73703, 430, 430, 5, 0, 0, 1), -- Champion Mountaineer
--- (@CGUID+1070, 13428, 30, -285.642, -136.171, 13.043, 2.66582, 430, 430, 5, 0, 0, 1), -- Champion Warrior
--- (@CGUID+1071, 13428, 30, -260.623, -154.529, 13.1007, 4.98033, 430, 430, 5, 0, 0, 1), -- Champion Warrior
--- (@CGUID+1072, 13428, 30, -273.385, -156.281, 13.1007, 4.90028, 430, 430, 5, 0, 0, 1), -- Champion Warrior
--- (@CGUID+1073, 13428, 30, -269.546, -147.809, 13.1007, 2.23385, 430, 430, 5, 0, 0, 1), -- Champion Warrior
--- (@CGUID+1083, 13446, 30, -157.781, -437.912, 33.2796, 4.65672, 1785, 1785, 0, 0, 0, 0), -- Field Marshal Teravaine - -256.5013, -415.4905, 17.6300 https://www.wowhead.com/npc=13446/field-marshal-teravaine#comments
--- (@CGUID+1086, 13525, 30, -1196.46, -346.499, 53.4791, 5.62613, 490, 490, 5, 0, 0, 1), -- Seasoned Commando
--- (@CGUID+1087, 13525, 30, -1199.71, -349.066, 53.4791, 4.95451, 490, 490, 5, 0, 0, 1), -- Seasoned Commando
--- (@CGUID+1088, 13536, 30, -852.528, -86.9663, 68.5141, 4.09034, 430, 430, 5, 0, 0, 1), -- Champion Coldmine Guard
--- (@CGUID+1089, 13536, 30, -991.148, -261.651, 66.0805, 0.262641, 430, 430, 5, 0, 0, 1), -- Champion Coldmine Guard
--- (@CGUID+1090, 13539, 30, -850.343, -89.4953, 68.4799, 4.39584, 430, 430, 0, 0, 0, 0), -- Champion Coldmine Surveyor
--- (@CGUID+1091, 13545, 30, 956.458, -448.21, 56.8632, 2.54315, 430, 430, 0, 0, 0, 0), -- Champion Irondeep Raider
--- (@CGUID+1092, 13546, 30, -988.586, -259.484, 65.4644, 0.350703, 430, 430, 0, 0, 0, 0), -- Seasoned Coldmine Explorer
--- (@CGUID+1093, 13548, 30, -1028.56, -362.431, 54.1992, 5.09292, 430, 430, 0, 0, 0, 0), -- Champion Coldmine Explorer
--- (@CGUID+1094, 13551, 30, -1009.55, -353.443, 56.559, 4.82275, 430, 430, 0, 0, 0, 0), -- Champion Coldmine Invader
--- (@CGUID+1095, 13554, 30, 883.625, -445.019, 54.5971, 2.45391, 430, 430, 5, 0, 0, 1), -- Champion Irondeep Guard
--- (@CGUID+1096, 13554, 30, 875.561, -448.312, 54.601, 1.37729, 430, 430, 5, 0, 0, 1), -- Champion Irondeep Guard
--- (@CGUID+1097, 13557, 30, 880.271, -448.096, 54.7362, 2.05484, 430, 430, 0, 0, 0, 0), -- Champion Irondeep Surveyor
--- (@CGUID+1098, 13576, 30, 662.116, -285.804, 29.7976, 3.05254, 490, 490, 0, 0, 0, 0), -- Stormpike Ram Rider
--- (@CGUID+1102, 13618, 30, -1253.72, -605.134, 55.3862, 3.10635, 430, 430, 5, 0, 0, 1), -- Stabled Frostwolf
--- (@CGUID+1103, 13618, 30, -1268.26, -598.099, 55.3862, 6.17373, 430, 430, 5, 0, 0, 1), -- Stabled Frostwolf
--- (@CGUID+1104, 13618, 30, -1269.19, -609.817, 55.3277, 6.16468, 430, 430, 5, 0, 0, 1), -- Stabled Frostwolf
--- (@CGUID+1105, 13618, 30, -1267.93, -592.807, 55.3891, 6.23267, 430, 430, 5, 0, 0, 1), -- Stabled Frostwolf
--- (@CGUID+1106, 13676, 30, 2.63958, -437.79, 44.5915, 4.18745, 430, 430, 5, 0, 0, 1), -- Stabled Alterac Ram
--- (@CGUID+1107, 13676, 30, -6.28015, -451.074, 44.5915, 1.00879, 430, 430, 5, 0, 0, 1), -- Stabled Alterac Ram
--- (@CGUID+1110, 13959, 30, 2.18374, 160.637, 10.0215, 0.044756, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
--- (@CGUID+1111, 13959, 30, 32.104, 61.6575, -0.485879, 1.75298, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
--- (@CGUID+1112, 13959, 30, 148.343, 66.2234, 6.05096, 5.92035, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
--- (@CGUID+1113, 13959, 30, 71.0416, 187.098, 7.40629, 4.71952, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
--- (@CGUID+1114, 13959, 30, 92.5633, 133.908, 3.28235, 5.27716, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 46, 0 FROM `creature` WHERE `id` = 13078;
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 50, 0 FROM `creature` WHERE `id` IN (13080,13098,13396,13552,13553,13554,13555,13556,13557) AND `map` = 30; -- North Mine - Alliance Control (c.id 13078)
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 46, 1 FROM `creature` WHERE `id` = 13079;
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 50, 1 FROM `creature` WHERE `id` IN (13081,13099,13397,13540,13541,13542,13543,13544,13545) AND `map` = 30; -- North Mine - Horde Control (c.id 13079)
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 46, 2 FROM `creature` WHERE `id` = 11657;
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 50, 2 FROM `creature` WHERE `id` IN (10987,11599,11600,11601,11602) AND `map` = 30; -- North Mine - Neutral Control (c.id 11657)
 
--- positions corrupted in sniff should be around X: -1389 at horde entrance
--- (@CGUID+1139, 14285, 30, -889.322, -543.784, 55.6655, 2.53483, 2100, 2100, 5, 0, 0, 1), -- Frostwolf Battleguard
--- (@CGUID+1140, 14285, 30, -819.7, -658.118, 53.002, 0.538491, 2100, 2100, 5, 0, 0, 1), -- Frostwolf Battleguard
--- (@CGUID+1141, 14285, 30, -734.548, -699.039, 51.1097, 0.293001, 2100, 2100, 5, 0, 0, 1), -- Frostwolf Battleguard
--- (@CGUID+1142, 14285, 30, -875.008, -559.704, 57.06, 5.32652, 2100, 2100, 5, 0, 0, 1), -- Frostwolf Battleguard
--- (@CGUID+1143, 14285, 30, -853.968, -574.578, 57.895, 3.53729, 2100, 2100, 5, 0, 0, 1), -- Frostwolf Battleguard
--- (@CGUID+1144, 14285, 30, -757.815, -673.444, 52.2337, 4.96346, 2100, 2100, 5, 0, 0, 1), -- Frostwolf Battleguard
--- (@CGUID+1145, 14285, 30, -836.914, -624.471, 54.0821, 1.32866, 2100, 2100, 5, 0, 0, 1), -- Frostwolf Battleguard
--- (@CGUID+1146, 14285, 30, -878.21, -535.002, 54.9482, 1.81071, 2100, 2100, 5, 0, 0, 1), -- Frostwolf Battleguard
--- (@CGUID+1147, 14285, 30, -726.635, -695.739, 51.2789, 3.64901, 2100, 2100, 5, 0, 0, 1), -- Frostwolf Battleguard
--- (@CGUID+1141, 14762, 30, 685.306, -126.185, 63.6432, 4.14633, 490, 490, 0, 0, 0, 0), -- Dun Baldar North Marshal
--- (@CGUID+1143, 14763, 30, 544.579, -93.9946, 44.8191, 0.575999, 490, 490, 0, 0, 0, 0), -- Dun Baldar South Marshal
--- (@CGUID+1145, 14764, 30, 199.209, -375.104, 49.2677, 0.701491, 490, 490, 0, 0, 0, 0), -- Icewing Marshal
--- (@CGUID+1147, 14765, 30, -33.6845, -294.281, 15.0786, 3.12152, 490, 490, 0, 0, 0, 0), -- Stonehearth Marshal
--- (@CGUID+1148, 14765, 30, 717.721, -11.2483, 50.1353, 3.37397, 490, 490, 0, 0, 0, 0), -- Stonehearth Marshal
--- (@CGUID+1150, 14766, 30, 701.885, -11.9266, 50.1353, 5.65734, 490, 490, 0, 0, 0, 0), -- Iceblood Marshal
--- (@CGUID+1151, 14768, 30, 704.404, -20.9202, 50.1353, 1.16734, 490, 490, 0, 0, 0, 0), -- East Frostwolf Marshal
--- (@CGUID+1152, 14769, 30, 715.594, -4.80602, 50.1353, 4.17049, 490, 490, 0, 0, 0, 0), -- West Frostwolf Marshal
--- (@CGUID+1153, 14772, 30, -1351.56, -214.173, 99.3702, 3.88358, 430, 430, 0, 0, 0, 0), -- East Frostwolf Warmaster
--- (@CGUID+1155, 14773, 30, -1353.58, -211.316, 99.3709, 4.20155, 490, 490, 0, 0, 0, 0), -- Iceblood Warmaster
--- (@CGUID+1157, 14774, 30, -1388.15, -223.224, 99.3699, 5.94314, 490, 490, 0, 0, 0, 0), -- Icewing Warmaster
--- (@CGUID+1158, 14775, 30, -1274.52, -220.848, 72.3495, 5.95713, 490, 490, 0, 0, 0, 0), -- Stonehearth Warmaster
--- (@CGUID+1159, 14775, 30, -1237.06, -260.505, 73.3262, 1.98056, 490, 490, 0, 0, 0, 0), -- Stonehearth Warmaster
--- (@CGUID+1160, 14776, 30, -1384.57, -214.123, 99.3711, 5.60385, 490, 490, 0, 0, 0, 0), -- Tower Point Warmaster
--- (@CGUID+1162, 14777, 30, -1388.38, -226.065, 99.3698, 6.22783, 430, 430, 0, 0, 0, 0), -- West Frostwolf Warmaster
--- (@CGUID+1164, 14943, 30, 633.803, -299.425, 30.1336, 3.46924, 490, 490, 0, 0, 0, 0), -- Guse's War Rider
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 47, 0 FROM `creature` WHERE `id` = 13086;
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 51, 0 FROM `creature` WHERE `id` IN (13087,13096,13317,13546,13547,13548,13549,13550,13551) AND `map` = 30; -- South Mine - Alliance Control (c.id 13086)
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 47, 1 FROM `creature` WHERE `id` = 13088;
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 51, 1 FROM `creature` WHERE `id` IN (13089,13097,13316,13534,13535,13536,13537,13538,13539) AND `map` = 30; -- South Mine - Horde Control (c.id 13088)
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 47, 2 FROM `creature` WHERE `id` = 11677;
+INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 51, 2 FROM `creature` WHERE `id` IN (10982,11603,11604,11605,11606) AND `map` = 30; -- South Mine - Neutral Control (c.id 11677)
+
+-- Potential Prenerf Spawns Spawn Locations !Wrong Entrys!
+-- (@CGUID+XXX, 11947, 30, -544.134, -167.923, 57.0122, 6.28171, 1785, 1785, 0, 0, 0, 0), -- Captain Galvangar
+-- (@CGUID+XXX, 11948, 30, 702.065, -16.4507, 50.1353, 0.293762, 6300, 6300, 0, 0, 0, 0), -- Vanndar Stormpike
+-- (@CGUID+XXX, 11949, 30, -33.1637, -291.26, 15.0786, 3.00156, 6300, 6300, 0, 0, 0, 0), -- Captain Balinda Stonehearth
+-- (@CGUID+XXX, 11997, 30, 780.729, -496.835, 100.255, 1.37743, 490, 490, 0, 0, 0, 0), -- Stormpike Herald
+-- (@CGUID+XXX, 11997, 30, -1539.03, -763.518, -0.000621079, 1.17101, 120, 120, 0, 0, 0, 0), -- Stormpike Herald
+-- (@CGUID+XXX, 12047, 30, 101.43, -390.854, 45.1353, 0.351658, 1290, 1290, 5, 0, 0, 1), -- Stormpike Mountaineer
+-- (@CGUID+XXX, 12050, 30, -46.1047, -277.776, 15.5645, 1.36669, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
+-- (@CGUID+XXX, 12050, 30, -29.4629, -280.476, 15.5645, 1.47032, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
+-- (@CGUID+XXX, 12050, 30, -7.22618, -289.707, 15.5641, 4.65556, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
+-- (@CGUID+XXX, 12050, 30, -49.9033, -299.553, 15.5645, 4.57782, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
+-- (@CGUID+XXX, 12050, 30, -9.20146, -300.879, 15.5641, 1.43395, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
+-- (@CGUID+XXX, 12050, 30, -33.2382, -302.798, 15.5645, 4.49147, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
+-- (@CGUID+XXX, 12050, 30, -49.6288, -288.507, 15.5645, 6.05312, 430, 430, 5, 0, 0, 1), -- Stormpike Defender
+-- (@CGUID+XXX, 12051, 30, -536.28, -182.784, 57.9519, 4.85222, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
+-- (@CGUID+XXX, 12051, 30, -524.859, -159.15, 57.9469, 0.461474, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
+-- (@CGUID+XXX, 12051, 30, -504.289, -187.986, 57.8778, 5.87226, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
+-- (@CGUID+XXX, 12051, 30, -555.052, -160.853, 57.9569, 5.95878, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
+-- (@CGUID+XXX, 12051, 30, -545.042, -150.999, 57.9568, 4.92368, 430, 430, 5, 0, 0, 1), -- Frostwolf Legionnaire
+-- (@CGUID+XXX, 12052, 30, -461.106, -355.693, 31.0315, 5.24885, 430, 430, 5, 0, 0, 1), -- Frostwolf Warrior
+-- (@CGUID+XXX, 12052, 30, -491.932, -338.25, 32.315, 2.65704, 430, 430, 5, 0, 0, 1), -- Frostwolf Warrior
+-- (@CGUID+XXX, 12053, 30, -1286.08, -292.165, 89.4414, 0.13892, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1209.79, -258.971, 72.807, 6.04762, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1419.36, -322.491, 89.0562, 0.54054, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1336.7, -292.145, 90.9146, 3.28446, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1290.83, -267.808, 114.151, 0.155989, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1159.49, -356.846, 51.8699, 0.276326, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1304.12, -270.546, 114.139, 3.52747, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1421.74, -318.38, 89.1177, 0.516545, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -500.359, -177.578, 57.8746, 5.89323, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1162.4, -352.024, 51.857, 3.45484, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1304.99, -265.518, 114.151, 3.2484, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1222.15, -362.484, 57.8358, 4.79095, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1357.27, -289.823, 91.5309, 5.21118, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1161.1, -348.035, 52.0591, 6.07008, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1314.1, -265.656, 91.6178, 3.33955, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1217.35, -361.464, 57.2907, 4.81431, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1207.97, -249.112, 73.0852, 5.84621, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1312.64, -276.64, 91.2948, 3.51738, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12053, 30, -1344.07, -284.766, 91.1725, 4.98263, 430, 430, 5, 0, 0, 1), -- Frostwolf Guardian
+-- (@CGUID+XXX, 12127, 30, 627.704, -272.228, 30.1336, 4.89551, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 12127, 30, 645.945, -270.983, 30.1329, 4.85466, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 12127, 30, 624.473, -232.804, 37.4727, 0.151753, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 12127, 30, 637.596, -230.508, 37.508, 3.31479, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 12127, 30, 618.011, -191.652, 38.715, 0.171264, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 12127, 30, 631.399, -189.692, 38.713, 3.286891, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 12127, 30, 660.406, -36.6379, 49.5487, 3.33393, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 12127, 30, 656.257, -22.3926, 49.5618, 3.3598, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 12127, 30, 717.607, -0.564321, 50.6213, 3.63749, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 12127, 30, 723.955, -21.5371, 50.6213, 3.47103, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
+-- (@CGUID+XXX, 13137, 30, -627.388, -394.103, 58.9819, 3.66855, 490, 490, 0, 0, 0, 0), -- Lieutenant Rugba
+-- (@CGUID+XXX, 13138, 30, 121.041, -369.637, 43.1245, 4.79702, 490, 490, 0, 0, 0, 0), -- Lieutenant Spencer
+-- (@CGUID+XXX, 13139, 30, -151.683, -440.279, 40.3853, 4.28611, 1785, 1785, 0, 0, 0, 0), -- Commander Randolph
+-- (@CGUID+XXX, 13140, 30, -537.417, -168.788, 57.0112, 2.93509, 180, 180, 0, 0, 0, 0), -- Commander Dardosh
+-- (@CGUID+XXX, 13143, 30, -621.193, -357.858, 56.1206, 4.77595, 490, 490, 0, 0, 0, 0), -- Lieutenant Stronghoof
+-- (@CGUID+XXX, 13144, 30, -540.745, -173.477, 57.0112, 1.34339, 430, 430, 0, 0, 0, 0), -- Lieutenant Vol'talar
+-- (@CGUID+XXX, 13145, 30, -481.07, -358.03, 28.0431, 0.869456, 430, 430, 0, 0, 0, 0), -- Lieutenant Grummus
+-- (@CGUID+XXX, 13146, 30, -587.534, -319.762, 48.3816, 4.31599, 430, 430, 0, 0, 0, 0), -- Lieutenant Murp
+-- (@CGUID+XXX, 13147, 30, -540.778, -162.662, 56.9975, 5.62241, 430, 430, 0, 0, 0, 0), -- Lieutenant Lewis
+-- (@CGUID+XXX, 13151, 30, -325.452, -631.495, 121.554, 0.624377, 490, 490, 0, 0, 0, 0), -- Syndicate Master Ryson
+-- (@CGUID+XXX, 13152, 30, -1300.72, -276.136, 91.9405, 1.45977, 1785, 1785, 0, 0, 0, 0), -- Commander Malgor
+-- (@CGUID+XXX, 13153, 30, -1426.91, -328.852, 89.1526, 0.972695, 1785, 1785, 0, 0, 0, 0), -- Commander Mulfort
+-- (@CGUID+XXX, 13154, 30, -768.671, -363.85, 90.8949, 1.07916, 6300, 6300, 0, 0, 0, 0), -- Commander Louis Philips
+-- (@CGUID+XXX, 13296, 30, 68.5699, -235.037, 16.3447, 4.04218, 430, 430, 0, 0, 0, 0), -- Lieutenant Largent - faction mounted
+-- (@CGUID+XXX, 13297, 30, -32.8321, -288.675, 15.0786, 2.91902, 430, 430, 0, 0, 0, 0), -- Lieutenant Stouthandle - faction mounted
+-- (@CGUID+XXX, 13298, 30, 84.0297, -260.126, 19.8222, 5.08283, 490, 490, 0, 0, 0, 0), -- Lieutenant Greywand - faction mounted
+-- (@CGUID+XXX, 13299, 30, 79.9676, -236.94, 17.2992, 5.40877, 430, 430, 0, 0, 0, 0), -- Lieutenant Lonadin - faction mounted
+-- (@CGUID+XXX, 13300, 30, -40.902, -480.168, 44.8062, 2.83775, 490, 490, 0, 0, 0, 0), -- Lieutenant Mancuso - faction mounted
+-- (@CGUID+XXX, 13318, 30, 688.857, -131.356, 63.6662, 3.37343, 490, 490, 0, 0, 0, 0), -- Commander Mortimer - faction mounted
+-- (@CGUID+XXX, 13319, 30, 672.59, -296.524, 30.3936, 2.74624, 180, 180, 0, 0, 0, 0), -- Commander Duffy
+-- (@CGUID+XXX, 13320, 30, 196.835, -362.732, 49.2677, 5.87039, 1785, 1785, 0, 0, 0, 0), -- Commander Karl Philips
+-- (@CGUID+XXX, 13325, 30, 99.9783, -312.868, 34.4257, 5.25954, 430, 430, 0, 0, 0, 0), -- Seasoned Mountaineer
+-- (@CGUID+XXX, 13331, 30, 676.381, -31.9315, 50.6192, 1.8439, 610, 610, 5, 0, 0, 1), -- Veteran Defender
+-- (@CGUID+XXX, 13331, 30, 704.814, -38.8323, 50.6213, 1.93984, 610, 610, 5, 0, 0, 1), -- Veteran Defender
+-- (@CGUID+XXX, 13331, 30, 692.081, 3.14777, 50.6212, 5.80163, 610, 610, 5, 0, 0, 1), -- Veteran Defender
+-- (@CGUID+XXX, 13331, 30, 671.829, -17.7163, 50.6192, 5.09153, 610, 610, 5, 0, 0, 1), -- Veteran Defender
+-- (@CGUID+XXX, 13335, 30, 141.547, -367.192, 45.7941, 5.92711, 430, 430, 0, 0, 0, 0), -- Veteran Mountaineer
+-- (@CGUID+XXX, 13422, 30, 700.033, -13.9355, 50.1353, 0.238083, 430, 430, 5, 0, 0, 1), -- Champion Defender
+-- (@CGUID+XXX, 13422, 30, 701.632, -19.6478, 50.1353, 0.423632, 430, 430, 5, 0, 0, 1), -- Champion Defender
+-- (@CGUID+XXX, 13425, 30, -1189.04, -355.773, 53.2966, 5.8898, 430, 430, 5, 0, 0, 1), -- Champion Legionnaire
+-- (@CGUID+XXX, 13425, 30, -1186.78, -351.523, 53.1589, 5.94942, 430, 430, 5, 0, 0, 1), -- Champion Legionnaire
+-- (@CGUID+XXX, 13426, 30, -53.9927, -495.938, 44.0359, 2.64533, 430, 430, 5, 0, 0, 1), -- Champion Mountaineer
+-- (@CGUID+XXX, 13426, 30, -96.1053, -533.749, 45.0986, 3.73703, 430, 430, 5, 0, 0, 1), -- Champion Mountaineer
+-- (@CGUID+XXX, 13428, 30, -285.642, -136.171, 13.043, 2.66582, 430, 430, 5, 0, 0, 1), -- Champion Warrior
+-- (@CGUID+XXX, 13428, 30, -260.623, -154.529, 13.1007, 4.98033, 430, 430, 5, 0, 0, 1), -- Champion Warrior
+-- (@CGUID+XXX, 13428, 30, -273.385, -156.281, 13.1007, 4.90028, 430, 430, 5, 0, 0, 1), -- Champion Warrior
+-- (@CGUID+XXX, 13428, 30, -269.546, -147.809, 13.1007, 2.23385, 430, 430, 5, 0, 0, 1), -- Champion Warrior
+-- (@CGUID+XXX, 13446, 30, -157.781, -437.912, 33.2796, 4.65672, 1785, 1785, 0, 0, 0, 0), -- Field Marshal Teravaine - -256.5013, -415.4905, 17.6300 https://www.wowhead.com/npc=13446/field-marshal-teravaine#comments
+-- (@CGUID+XXX, 13525, 30, -1196.46, -346.499, 53.4791, 5.62613, 490, 490, 5, 0, 0, 1), -- Seasoned Commando
+-- (@CGUID+XXX, 13525, 30, -1199.71, -349.066, 53.4791, 4.95451, 490, 490, 5, 0, 0, 1), -- Seasoned Commando
+-- (@CGUID+XXX, 13536, 30, -852.528, -86.9663, 68.5141, 4.09034, 430, 430, 5, 0, 0, 1), -- Champion Coldmine Guard
+-- (@CGUID+XXX, 13536, 30, -991.148, -261.651, 66.0805, 0.262641, 430, 430, 5, 0, 0, 1), -- Champion Coldmine Guard
+-- (@CGUID+XXX, 13539, 30, -850.343, -89.4953, 68.4799, 4.39584, 430, 430, 0, 0, 0, 0), -- Champion Coldmine Surveyor
+-- (@CGUID+XXX, 13545, 30, 956.458, -448.21, 56.8632, 2.54315, 430, 430, 0, 0, 0, 0), -- Champion Irondeep Raider
+-- (@CGUID+XXX, 13546, 30, -988.586, -259.484, 65.4644, 0.350703, 430, 430, 0, 0, 0, 0), -- Seasoned Coldmine Explorer
+-- (@CGUID+XXX, 13548, 30, -1028.56, -362.431, 54.1992, 5.09292, 430, 430, 0, 0, 0, 0), -- Champion Coldmine Explorer
+-- (@CGUID+XXX, 13551, 30, -1009.55, -353.443, 56.559, 4.82275, 430, 430, 0, 0, 0, 0), -- Champion Coldmine Invader
+-- (@CGUID+XXX, 13554, 30, 883.625, -445.019, 54.5971, 2.45391, 430, 430, 5, 0, 0, 1), -- Champion Irondeep Guard
+-- (@CGUID+XXX, 13554, 30, 875.561, -448.312, 54.601, 1.37729, 430, 430, 5, 0, 0, 1), -- Champion Irondeep Guard
+-- (@CGUID+XXX, 13557, 30, 880.271, -448.096, 54.7362, 2.05484, 430, 430, 0, 0, 0, 0), -- Champion Irondeep Surveyor
+-- (@CGUID+XXX, 13576, 30, 662.116, -285.804, 29.7976, 3.05254, 490, 490, 0, 0, 0, 0), -- Stormpike Ram Rider
+-- (@CGUID+XXX, 13618, 30, -1253.72, -605.134, 55.3862, 3.10635, 430, 430, 5, 0, 0, 1), -- Stabled Frostwolf
+-- (@CGUID+XXX, 13618, 30, -1268.26, -598.099, 55.3862, 6.17373, 430, 430, 5, 0, 0, 1), -- Stabled Frostwolf
+-- (@CGUID+XXX, 13618, 30, -1269.19, -609.817, 55.3277, 6.16468, 430, 430, 5, 0, 0, 1), -- Stabled Frostwolf
+-- (@CGUID+XXX, 13618, 30, -1267.93, -592.807, 55.3891, 6.23267, 430, 430, 5, 0, 0, 1), -- Stabled Frostwolf
+-- (@CGUID+XXX, 13676, 30, 2.63958, -437.79, 44.5915, 4.18745, 430, 430, 5, 0, 0, 1), -- Stabled Alterac Ram
+-- (@CGUID+XXX, 13676, 30, -6.28015, -451.074, 44.5915, 1.00879, 430, 430, 5, 0, 0, 1), -- Stabled Alterac Ram
+-- (@CGUID+XXX, 13959, 30, 2.18374, 160.637, 10.0215, 0.044756, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
+-- (@CGUID+XXX, 13959, 30, 32.104, 61.6575, -0.485879, 1.75298, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
+-- (@CGUID+XXX, 13959, 30, 148.343, 66.2234, 6.05096, 5.92035, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
+-- (@CGUID+XXX, 13959, 30, 71.0416, 187.098, 7.40629, 4.71952, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
+-- (@CGUID+XXX, 13959, 30, 92.5633, 133.908, 3.28235, 5.27716, 430, 430, 5, 0, 0, 1), -- Alterac Yeti
 
 -- TBC only
 UPDATE `creature` SET `spawnMask` = 3 WHERE `map` = 30;
@@ -2602,7 +1987,7 @@ UPDATE `creature` SET `spawnMask` = 3 WHERE `map` = 30;
 -- GAMEOBJECTS
 -- ===========
 
-INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES
+REPLACE INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES
 (@OGUID+136, 63, 0), -- Alliance - Captain Dead
 (@OGUID+137, 63, 0), -- Alliance - Captain Dead
 (@OGUID+138, 63, 0), -- Alliance - Captain Dead
@@ -2628,6 +2013,9 @@ INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES
 (@OGUID+73, 8, 3), -- Dunbaldar North - Horde Control
 (@OGUID+74, 8, 3), -- Dunbaldar North - Horde Control
 (@OGUID+75, 8, 3), -- Dunbaldar North - Horde Control
+(@OGUID+418, 8, 3), -- Dunbaldar North - Horde Control
+(@OGUID+419, 8, 3), -- Dunbaldar North - Horde Control
+(@OGUID+420, 8, 3), -- Dunbaldar North - Horde Control
 (@OGUID+27, 7, 1), -- Dunbaldar South - Alliance Control
 (@OGUID+31, 7, 1), -- Dunbaldar South - Alliance Control
 (@OGUID+178, 7, 2), -- Dunbaldar South - Horde Assaulted
@@ -2636,6 +2024,7 @@ INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES
 (@OGUID+58, 7, 3), -- Dunbaldar South - Horde Control
 (@OGUID+59, 7, 3), -- Dunbaldar South - Horde Control
 (@OGUID+60, 7, 3), -- Dunbaldar South - Horde Control
+(@OGUID+417, 7, 3), -- Dunbaldar South - Horde Control
 (@OGUID+61, 7, 3), -- Dunbaldar South - Horde Control
 (@OGUID+62, 7, 3), -- Dunbaldar South - Horde Control
 (@OGUID+63, 7, 3), -- Dunbaldar South - Horde Control
@@ -2783,195 +2172,211 @@ INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES
 (@OGUID+44, 12, 3); -- Tower Point - Horde Control
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 28048, 30, 41.16716, -426.8661, 44.68277, 2.783799, 0, 0, 0, 0, 120, 120, 0, 1), -- Wooden Chair
-(@OGUID+2, 28049, 30, 39.09879, -425.7462, 44.68799, -0.6195922, 0, 0, 0, 0, 120, 120, 0, 1), -- Wooden Chair
-(@OGUID+3, 28606, 30, 25.758, -425.837, 47.6369, -1.98095, 0, 0, 0, 0, 120, 120, 0, 1), -- Wooden Chair
-(@OGUID+4, 28607, 30, 27.6786, -427.69, 47.6369, -2.67908, 0, 0, 0, 0, 120, 120, 0, 1), -- Wooden Chair
-(@OGUID+5, 28605, 30, 25.2482, -433.104, 47.6369, 2.38237, 0, 0, 0, 0, 120, 120, 0, 1), -- Wooden Chair
-(@OGUID+6, 112192, 30, -155.405, -440.24, 33.2862, 2.34747, 0, 0, 0, 0, 120, 120, 0, 1), -- Chair
-(@OGUID+7, 112192, 30, -150.787, -459.829, 26.4163, 0.558507, 0, 0, 0, 0, 120, 120, 0, 1), -- Chair
-(@OGUID+8, 112192, 30, -153.748, -438.639, 33.2862, -2.88852, 0, 0, 0, 0, 120, 120, 0, 1), -- Chair
-(@OGUID+9, 112192, 30, -149.057, -461.089, 26.4163, 1.38754, 0, 0, 0, 0, 120, 120, 0, 1), -- Chair
-(@OGUID+10, 112192, 30, -168.342, -458.4, 33.2862, -0.445059, 0, 0, 0, 0, 120, 120, 0, 1), -- Chair
-(@OGUID+11, 112192, 30, -142.968, -444.076, 26.4163, -2.23402, 0, 0, 0, 0, 120, 120, 0, 1), -- Chair
-(@OGUID+12, 112192, 30, -145.341, -444.846, 26.4163, -0.05236, 0, 0, 0, 0, 120, 120, 0, 1), -- Chair
-(@OGUID+13, 178364, 30, 638.592, -32.422, 46.0608, -1.62316, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+14, 178364, 30, 669.007, -294.078, 30.2909, 2.77507, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+15, 178364, 30, 77.8013, -404.7, 46.7549, -0.872665, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+16, 178364, 30, -202.6227,-112.5515,78.49015,-1.256636, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+17, 178364, 30, -611.962, -396.17, 60.8351, 2.53682, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+18, 178364, 30, -1082.45, -346.823, 54.9219, -1.53589, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+19, 178364, 30, -1402.21, -307.431, 89.4424, 0.191986, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+20, 178365, 30, 638.592, -32.422, 46.0608, -1.62316, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+21, 178365, 30, 669.007, -294.078, 30.2909, 2.77507, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+22, 178365, 30, 77.8013, -404.7, 46.7549, -0.872665, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+23, 178365, 30, -202.6227,-112.5515,78.49015,-1.256636, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+24, 178365, 30, -611.962, -396.17, 60.8351, 2.53682, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+25, 178365, 30, -1082.45, -346.823, 54.9219, -1.53589, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+26, 178365, 30, -1402.21, -307.431, 89.4424, 0.191986, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+27, 178925, 30, 553.779, -78.6566, 51.9378, -1.22173, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+28, 178925, 30, 674.001, -143.125, 63.6615, 0.994838, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+29, 178925, 30, 203.281, -360.366, 56.3869, -0.925024, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+30, 178925, 30, -152.437, -441.758, 40.3982, -1.95477, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
-(@OGUID+31, 178927, 30, 557.2267, -86.85205, 62.1767, -0.244346, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Alliance A1 Tower Banner BIG
-(@OGUID+32, 178927, 30, 679.339, -136.468, 73.9626, -2.16421, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Alliance A1 Tower Banner BIG
-(@OGUID+33, 178927, 30, 208.973, -365.971, 66.7409, -0.244346, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Alliance A1 Tower Banner BIG
-(@OGUID+34, 178927, 30, -155.832, -449.401, 52.7306, 0.610865, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Alliance A1 Tower Banner BIG
-(@OGUID+35, 178940, 30, -571.88, -262.777, 75.0087, -0.802851, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+36, 178940, 30, -768.907, -363.71, 90.8949, 1.07991, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+37, 178940, 30, -1302.9, -316.981, 113.867, 2.00713, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+38, 178940, 30, -1297.5, -266.767, 114.15, 3.31044, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+39, 178943, 30, -571.88, -262.777, 75.0087, -0.802851, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+40, 178943, 30, -768.907, -363.71, 90.8949, 1.07991, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+41, 178943, 30, -1302.9, -316.981, 113.867, 2.00713, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+42, 178943, 30, -1297.5, -266.767, 114.15, 3.31044, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
-(@OGUID+43, 178955, 30, -572.329, -262.476, 88.6496, -0.575959, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Horde H1 Tower Banner BIG
-(@OGUID+44, 178955, 30, -768.199, -363.105, 104.537, 0.10472, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Horde H1 Tower Banner BIG
-(@OGUID+45, 178955, 30, -1302.84, -316.582, 127.516, 0.122173, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Horde H1 Tower Banner BIG
-(@OGUID+46, 178955, 30, -1297.87, -266.762, 127.796, 0.0698132, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Horde H1 Tower Banner BIG
-(@OGUID+47, 179024, 30, 63.2712, 5.83762, -4.09622, 2.21657, 0, 0, 0, 0, 120, 120, 100, 1), -- Stormpike Banner
-(@OGUID+48, 179025, 30, -1551.8802, -364.1875, 65.5933, -1.9547, 0, 0, 0.8290, -0.5591, 120, 120, 100, 1), -- Frostwolf Banner
-(@OGUID+49, 179044, 30, -191.153, -129.868, 78.5595, -1.25664, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Banner BIG
-(@OGUID+50, 179044, 30, -201.282, -134.319, 78.6753, -0.942478, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Banner BIG
-(@OGUID+51, 179044, 30, -215.981, -91.4101, 80.8702, -1.74533, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Banner BIG
-(@OGUID+52, 179044, 30, -200.465, -96.418, 79.7587, 1.36136, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Banner BIG
-(@OGUID+53, 179064, 30, -190.941, -129.8694, 78.93259, -1.064651, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Banner BIG
-(@OGUID+54, 179064, 30, -201.4437, -134.4444, 78.93211, -0.8552116, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Banner BIG
-(@OGUID+55, 179064, 30, -215.741, -90.99729, 80.08942, 1.169371, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Banner BIG
-(@OGUID+56, 179064, 30, -200.4294, -96.50825, 79.75236, 1.343904, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Banner BIG
-(@OGUID+57, 179065, 30, 562.632, -88.1815, 61.993, 0.383972, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+58, 179065, 30, 562.523, -74.5028, 37.9474, -0.0523599, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+59, 179065, 30, 558.097, -70.9842, 52.4876, 0.820305, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+60, 179065, 30, 578.167, -71.8191, 38.1514, 2.72271, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+61, 179065, 30, 556.028, -94.9242, 44.8191, 3.05433, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+62, 179065, 30, 572.451, -94.3655, 37.9443, -1.72788, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+63, 179065, 30, 549.263, -79.3645, 44.8191, 0.436332, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+64, 179065, 30, 543.513, -94.4006, 52.4819, 0.0349066, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+65, 179065, 30, 572.149, -93.7862, 52.5726, 0.541052, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+66, 179065, 30, 582.162, -81.2375, 37.9216, 0.0872665, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+67, 179065, 30, 664.797, -143.65, 64.1784, -0.453786, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+68, 179065, 30, 664.505, -139.452, 49.6696, -0.0349067, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+69, 179065, 30, 676.067, -124.319, 49.6726, -1.01229, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+70, 179065, 30, 693.004, -144.025, 64.1755, 2.44346, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+71, 179065, 30, 661.175, -117.691, 49.645, 1.91986, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+72, 179065, 30, 684.423, -146.582, 63.6662, 0.994838, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+73, 179065, 30, 682.791, -127.769, 62.4155, 1.09956, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+74, 179065, 30, 674.576, -147.101, 56.5425, -1.6057, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+75, 179065, 30, 655.719, -126.673, 49.8138, 2.80998, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+76, 179065, 30, 231.5031, -356.6881, 42.37038, 0.296706, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+77, 179065, 30, 224.9886, -348.1752, 42.5607, 1.500983, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+78, 179065, 30, 205.7818, -351.3352, 56.8998, 1.012291, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+79, 179065, 30, 196.6049, -369.1871, 56.39142, 2.460914, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+80, 179065, 30, 210.6188, -376.9375, 49.26771, 2.86234, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+81, 179065, 30, 209.6469, -352.632, 42.39587, -0.6981319, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+82, 179065, 30, 220.65, -368.1324, 42.39781, -0.2617996, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+83, 179065, 30, 224.6821, -374.0315, 57.06791, 0.541052, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+84, 179065, 30, 200.2596, -359.9676, 49.26771, -2.897247, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+85, 179065, 30, 196.6188, -378.0163, 56.91305, 1.012291, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+86, 179065, 30, -155.4875, -437.3559, 33.27962, 2.600541, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+87, 179065, 30, -163.4411, -454.1876, 33.27962, 1.937315, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+88, 179065, 30, -143.9772, -445.1482, 26.40972, -1.867502, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+89, 179065, 30, -135.764, -464.7083, 26.38227, 2.251475, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+90, 179065, 30, -154.0755, -466.929, 41.06355, -1.867502, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+91, 179065, 30, -149.9082, -460.3317, 26.40835, -2.094395, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+92, 179065, 30, -151.6378, -439.5213, 40.37969, 0.4363323, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+93, 179065, 30, -131.301, -454.9045, 26.57706, 2.932153, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+94, 179065, 30, -171.291, -444.6835, 40.92113, 2.303835, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+95, 179065, 30, -143.5915, -439.7497, 40.92749, -1.727876, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+96, 179065, 30, -572.667, -267.923, 56.8542, 2.35619, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+97, 179065, 30, -561.021, -262.689, 68.4589, 1.37881, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+98, 179065, 30, -572.538, -262.649, 88.6197, 1.8326, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+99, 179065, 30, -574.77, -251.45, 74.9422, -1.18682, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+100, 179065, 30, -578.625, -267.571, 68.4696, 0.506145, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+101, 179065, 30, -571.476, -257.234, 63.3223, 3.10669, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+102, 179065, 30, -566.035, -273.907, 52.9582, -0.890118, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+103, 179065, 30, -580.948, -259.77, 68.4696, 1.46608, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+104, 179065, 30, -568.318, -267.1, 75.0008, 1.01229, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+105, 179065, 30, -559.621, -268.597, 52.8986, 0.0523599, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+106, 179065, 30, -776.072, -368.046, 84.3558, 2.63545, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+107, 179065, 30, -777.564, -368.521, 90.6701, 1.72788, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+108, 179065, 30, -765.461, -357.711, 90.888, 0.314159, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+109, 179065, 30, -768.763, -362.735, 104.612, 1.81514, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+110, 179065, 30, -760.356, -358.896, 84.3558, 2.1293, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+111, 179065, 30, -771.967, -352.838, 84.3484, 1.74533, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+112, 179065, 30, -773.333, -364.653, 79.2351, -1.64061, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+113, 179065, 30, -764.109, -366.069, 70.0934, 0.383972, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+114, 179065, 30, -767.103, -350.737, 68.7933, 2.80998, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+115, 179065, 30, -760.115, -353.845, 68.8633, 1.79769, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+116, 179065, 30, -1304.87, -304.525, 91.8366, -0.680679, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+117, 179065, 30, -1301.77, -310.974, 95.8252, 0.907571, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+118, 179065, 30, -1305.58, -320.625, 102.166, -0.558505, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+119, 179065, 30, -1294.27, -323.468, 113.893, -1.67552, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+120, 179065, 30, -1302.65, -317.192, 127.487, 2.30383, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+121, 179065, 30, -1293.89, -313.478, 107.328, 1.6057, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+122, 179065, 30, -1312.41, -312.999, 107.328, 1.5708, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+123, 179065, 30, -1311.57, -308.08, 91.7666, -1.85005, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+124, 179065, 30, -1314.7, -322.131, 107.36, 0.645772, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+125, 179065, 30, -1304.6, -310.754, 113.859, -0.401426, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+126, 179065, 30, -1308.24, -273.26, 92.0514, -0.139626, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+127, 179065, 30, -1302.26, -262.858, 95.9269, 0.418879, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+128, 179065, 30, -1297.28, -267.773, 126.756, 2.23402, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+129, 179065, 30, -1299.08, -256.89, 114.108, -2.44346, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+130, 179065, 30, -1303.41, -268.237, 114.151, -1.23918, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+131, 179065, 30, -1304.43, -273.682, 107.612, 0.244346, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+132, 179065, 30, -1309.53, -265.951, 92.1418, -2.49582, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+133, 179065, 30, -1295.55, -263.865, 105.033, 0.925024, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+134, 179065, 30, -1294.71, -281.466, 107.664, -1.50098, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+135, 179065, 30, -1289.69, -259.521, 107.612, -2.19912, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+136, 179065, 30, -3.409288, -306.2875, 33.33995, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+137, 179065, 30, -48.61903, -266.9165, 47.81679, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+138, 179065, 30, -62.94738, -286.212, 66.72883, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+139, 179065, 30, -5.051324, -325.323, 38.85361, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+140, 179065, 30, -64.26768, -289.4115, 33.46896, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+141, 179065, 30, -517.053, -200.429, 80.759, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+142, 179065, 30, -514.361, -163.864, 104.163, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+143, 179065, 30, -568.04, -188.707, 81.55, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+144, 179065, 30, -501.775, -151.581, 81.2027, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+145, 179065, 30, -509.975, -191.652, 83.2978, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Roaring Flame
-(@OGUID+146, 179066, 30, -64.4987, -289.3301, 33.46157, -2.827433, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+147, 179066, 30, -5.980252, -326.1439, 38.85382, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+148, 179066, 30, -2.678928, -306.9978, 33.41654, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+149, 179066, 30, -60.25, -309.2321, 50.24081, -1.466077, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+150, 179066, 30, -48.79406, -266.5331, 47.79163, 2.443461, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+151, 179066, 30, -524.276, -199.6, 82.8733, -1.46608, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+152, 179066, 30, -518.196, -173.085, 102.43, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+153, 179066, 30, -500.732, -145.358, 88.5337, 2.44346, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+154, 179066, 30, -501.084, -150.784, 80.8506, 0, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+155, 179066, 30, -518.309, -163.963, 102.521, 2.96706, 0, 0, 0, 0, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
-(@OGUID+156, 179286, 30, 638.592, -32.422, 46.0608, -1.62316, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+157, 179286, 30, 669.007, -294.078, 30.2909, 2.77507, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+158, 179286, 30, 77.8013, -404.7, 46.7549, -0.872665, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+159, 179286, 30, -202.6227,-112.5515,78.49015,-1.256636, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+160, 179286, 30, -611.962, -396.17, 60.8351, 2.53682, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+161, 179286, 30, -1082.45, -346.823, 54.9219, -1.53589, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+162, 179286, 30, -1402.21, -307.431, 89.4424, 0.191986, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+163, 179287, 30, 638.592, -32.422, 46.0608, -1.62316, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+164, 179287, 30, 669.2953, -294.0375, 30.28969, -0.3665193, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+165, 179287, 30, 77.8013, -404.7, 46.7549, -0.872665, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+166, 179287, 30, -202.6227,-112.5515,78.49015,-1.256636, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+167, 179287, 30, -611.962, -396.17, 60.8351, 2.53682, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+168, 179287, 30, -1082.45, -346.823, 54.9219, -1.53589, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+169, 179287, 30, -1402.21, -307.431, 89.4424, 0.191986, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+170, 179424, 30, -191.153, -129.868, 78.5595, -1.25664, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Pre-Banner BIG
-(@OGUID+171, 179424, 30, -201.282, -134.319, 78.6753, -0.942478, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Pre-Banner BIG
-(@OGUID+172, 179424, 30, -215.981, -91.4101, 80.8702, -1.74533, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Pre-Banner BIG
-(@OGUID+173, 179424, 30, -200.465, -96.418, 79.7587, 1.36136, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Pre-Banner BIG
-(@OGUID+174, 179425, 30, -191.153, -129.868, 78.5595, -1.25664, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Pre-Banner BIG
-(@OGUID+175, 179425, 30, -201.282, -134.319, 78.6753, -0.942478, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Pre-Banner BIG
-(@OGUID+176, 179425, 30, -215.981, -91.4101, 80.8702, -1.74533, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Pre-Banner BIG
-(@OGUID+177, 179425, 30, -200.465, -96.418, 79.7587, 1.36136, 0, 0, 0, 0, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Pre-Banner BIG
-(@OGUID+178, 179435, 30, 553.8216, -78.76752, 51.93868, -1.064651, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+179, 179435, 30, 674.001, -143.125, 63.6615, 0.994838, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+180, 179435, 30, 203.281, -360.366, 56.3869, -0.925024, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+181, 179435, 30, -152.437, -441.758, 40.3982, -1.95477, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
-(@OGUID+182, 179436, 30, 555.8476, -84.41515, 64.43967, 3.124139, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Horde A1 Tower Pre-Banner BIG
-(@OGUID+183, 179436, 30, 679.339, -136.468, 73.9626, -2.16421, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Horde A1 Tower Pre-Banner BIG
-(@OGUID+184, 179436, 30, 208.973, -365.971, 66.7409, -0.244346, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Horde A1 Tower Pre-Banner BIG
-(@OGUID+185, 179436, 30, -155.832, -449.401, 52.7306, 0.610865, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Horde A1 Tower Pre-Banner BIG
-(@OGUID+186, 179446, 30, -572.329, -262.476, 88.6496, -0.575959, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Alliance H1 Tower Pre-Banner BIG
-(@OGUID+187, 179446, 30, -768.199, -363.105, 104.537, 0.10472, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Alliance H1 Tower Pre-Banner BIG
-(@OGUID+188, 179446, 30, -1302.84, -316.582, 127.516, 0.122173, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Alliance H1 Tower Pre-Banner BIG
-(@OGUID+189, 179446, 30, -1297.87, -266.762, 127.796, 0.0698132, 0, 0, 0, 0, 0, 0, 0, 0), -- [PH] Alliance H1 Tower Pre-Banner BIG
+(@OGUID+1, 28048, 30, 41.16716384887695312, -426.866058349609375, 44.68276596069335937, 2.783799409866333007, 0, 0, 0.984040617942810058, 0.177943915128707885, 120, 120, 0, 1), -- Wooden Chair
+(@OGUID+2, 28049, 30, 39.09878921508789062, -425.746246337890625, 44.68799209594726562, -0.61959218978881835, 0, 0, -0.30486443638801574, 0.952395737171173095, 120, 120, 0, 1), -- Wooden Chair
+(@OGUID+3, 28606, 30, 25.757965087890625, -425.8372802734375, 47.63694000244140625, -1.98094844818115234, 0, 0, -0.83628606796264648, 0.548293352127075195, 120, 120, 0, 1), -- Wooden Chair
+(@OGUID+4, 28607, 30, 27.67864608764648437, -427.69012451171875, 47.63694000244140625, -2.67908143997192382, 0, 0, 0.973379373550415039, -0.2291998267173767, 120, 120, 0, 1), -- Wooden Chair
+(@OGUID+5, 28605, 30, 25.24818038940429687, -433.104461669921875, 47.63694000244140625, 2.382374525070190429, 0, 0, 0.928809583187103271, 0.370557367801666259, 120, 120, 0, 1), -- Wooden Chair
+(@OGUID+6, 179384, 30, -145.341384887695312, -444.845672607421875, 26.41629981994628906, -0.05235961452126502, 0, 0, -0.02617681771516799, 0.999657332897186279, 120, 120, 0, 1), -- Chair
+(@OGUID+7, 179385, 30, -155.404754638671875, -440.240142822265625, 33.28620147705078125, 2.347468852996826171, 0, 0, 0.922201156616210937, 0.386710554361343383, 120, 120, 0, 1), -- Chair
+(@OGUID+8, 179386, 30, -150.786636352539062, -459.829376220703125, 26.41629981994628906, 0.558506906032562255, 0, 0, 0.275638103485107421, 0.961261451244354248, 120, 120, 0, 1), -- Chair
+(@OGUID+9, 179387, 30, -153.74835205078125, -438.6392822265625, 33.28620147705078125, -2.8885197639465332, 0, 0, 0.992004930973052978, -0.12619900703430175, 120, 120, 0, 1), -- Chair
+(@OGUID+10, 179388, 30, -149.056793212890625, -461.08917236328125, 26.41629981994628906, 1.387538909912109375, 0, 0, 0.639439821243286132, 0.768841147422790527, 120, 120, 0, 1), -- Chair
+(@OGUID+11, 179389, 30, -168.342391967773437, -458.40032958984375, 33.28620147705078125, -0.44505864381790161, 0, 0, -0.22069728374481201, 0.975342333316802978, 120, 120, 0, 1), -- Chair
+(@OGUID+12, 179390, 30, -142.968017578125, -444.076416015625, 26.41629981994628906, -2.23401975631713867, 0, 0, 0.898793697357177734, -0.4383719265460968, 120, 120, 0, 1), -- Chair
+-- 178364 - BG_AV_GO_GY_BANNER_HORDE
+(@OGUID+13, 178364, 30, 638.605712890625, -32.1506080627441406, 46.09933853149414062, -1.60570323467254638, 0, 0, 0.719339907169342041, -0.69465827941894531, 0, 0, 100, 1), -- Horde Banner (180101)
+(@OGUID+14, 178388, 30, 669.31671142578125, -294.0552978515625, 30.28966903686523437, -0.36651927232742309, 0, 0, 0.182235583662986755, -0.98325490951538085, 0, 0, 100, 1), -- Horde Banner (180101)
+(@OGUID+15, 179285, 30, 77.7978515625, -404.695526123046875, 46.91283416748046875, -0.85521155595779418, 0, 0, 0.414693355560302734, -0.90996122360229492, 0, 0, 100, 1), -- Horde Banner (180101)
+(@OGUID+16, 179467, 30, -202.622726440429687, -112.551490783691406, 78.49015045166015625, -1.25663685798645019, 0, 0, 0.587785184383392333, -0.80901706218719482, 0, 0, 100, 1), -- Horde Banner (180101)
+(@OGUID+17, 179483, 30, -612.671630859375, -396.693267822265625, 60.85839080810546875, 3.089232683181762695, 0, 0, 0.999657332897186279, 0.026176994666457176, 0, 0, 100, 1), -- Horde Banner (180101)
+(@OGUID+18, 178393, 30, -1082.5294189453125, -346.5670166015625, 54.97712326049804687, -1.55334317684173583, 0, 0, 0.700909316539764404, -0.71325039863586425, 0, 0, 100, 1), -- Horde Banner (180101)
+(@OGUID+19, 179472, 30, -1402.19189453125, -307.467071533203125, 89.44189453125, 0.191986218094825744, 0, 0, 0.095845751464366912, 0.995396196842193603, 0, 0, 100, 1), -- Horde Banner (180101)
+-- 178365 - BG_AV_GO_GY_BANNER_ALLIANCE
+(@OGUID+20, 179465, 30, 638.59210205078125, -32.4220390319824218, 46.06084442138671875, -1.62315630912780761, 0, 0, 0.725374400615692138, -0.6883544921875, 0, 0, 100, 1), -- Alliance Banner (180100)
+(@OGUID+21, 178389, 30, 669.00726318359375, -294.078277587890625, 30.29091072082519531, 2.775073528289794921, 0, 0, 0.983254909515380859, 0.182235524058341979, 0, 0, 100, 1), -- Alliance Banner (180100)
+(@OGUID+22, 179284, 30, 77.50444793701171875, -404.58734130859375, 46.78254318237304687, 2.286381244659423828, 0, 0, 0.909961283206939697, 0.414693266153335571, 0, 0, 100, 1), -- Alliance Banner (180100)
+(@OGUID+23, 178365, 30, -202.277786254882812, -113.208442687988281, 78.47940826416015625, -1.25663685798645019, 0, 0, 0.587785184383392333, -0.80901706218719482, 0, 0, 100, 1), -- Alliance Banner (180100)
+(@OGUID+24, 179481, 30, -612.91387939453125, -396.83831787109375, 60.85839080810546875, 3.106686115264892578, 0, 0, 0.999847710132598876, 0.017452383413910865, 0, 0, 100, 1), -- Alliance Banner (180100)
+(@OGUID+25, 178394, 30, -1082.4276123046875, -346.791656494140625, 54.92647552490234375, -1.51843619346618652, 0, 0, 0.6883544921875, -0.72537446022033691, 0, 0, 100, 1), -- Alliance Banner (180100)
+(@OGUID+26, 179470, 30, -1402.2095947265625, -307.43115234375, 89.44242095947265625, 0.191986218094825744, 0, 0, 0.095845751464366912, 0.995396196842193603, 0, 0, 100, 1), -- Alliance Banner (180100)
+-- BG_AV_GO_BANNER_ALLIANCE = 178925, // control flags
+(@OGUID+27, 178925, 30, 553.7794189453125, -78.6565780639648437, 51.93778610229492187, -1.22173047065734863, 0, 0, 0.57357645034790039, -0.81915205717086791, 0, 0, 100, 1), -- Alliance Banner
+(@OGUID+28, 178929, 30, 674.0006103515625, -143.12506103515625, 63.6615142822265625, 0.994837701320648193, 0, 0, 0.47715875506401062, 0.878817141056060791, 0, 0, 100, 1), -- Alliance Banner
+(@OGUID+29, 178935, 30, 203.238494873046875, -360.26422119140625, 56.38615036010742187, -0.87266474962234497, 0, 0, 0.422618329524993896, -0.90630775690078735, 0, 0, 100, 1), -- Alliance Banner
+(@OGUID+30, 178936, 30, -152.433914184570312, -441.61480712890625, 40.3970947265625, -1.93731522560119628, 0, 0, 0.824126124382019042, -0.56640630960464477, 0, 0, 100, 1), -- Alliance Banner
+-- // object entries: alliance: 178927; horde contested: 179436
+(@OGUID+31, 178927, 30, 557.2266845703125, -86.85205078125, 62.17669677734375, -0.24434597790241241, 0, 0, 0.121869280934333801, -0.99254614114761352, 0, 0, 0, 0), -- [PH] Alliance A1 Tower Banner BIG (180421)
+(@OGUID+32, 178932, 30, 679.33917236328125, -136.46783447265625, 73.96262359619140625, -2.16420817375183105, 0, 0, 0.882947564125061035, -0.46947157382965087, 0, 0, 0, 0), -- [PH] Alliance A2 Tower Banner BIG (180421)
+(@OGUID+33, 178947, 30, 208.9728240966796875, -365.97125244140625, 66.7409210205078125, -0.24434597790241241, 0, 0, 0.121869280934333801, -0.99254614114761352, 0, 0, 0, 0), -- [PH] Alliance A3 Tower Banner BIG (180421)
+(@OGUID+34, 178948, 30, -156.4697265625, -449.953125, 50.668243408203125, -0.24434597790241241, 0, 0, 0.121869280934333801, -0.99254614114761352, 0, 0, 0, 0), -- [PH] Alliance A4 Tower Banner BIG (180421)
+-- BG_AV_GO_BANNER_ALLIANCE_CONT = 178940, // contested flags
+(@OGUID+35, 178940, 30, -571.85675048828125, -262.790924072265625, 75.00867462158203125, -0.78539824485778808, 0, 0, 0.382683485746383666, -0.92387950420379638, 0, 0, 100, 1), -- Contested Banner
+(@OGUID+36, 179453, 30, -768.07525634765625, -362.6295166015625, 90.89485931396484375, 1.151917338371276855, 0, 0, 0.544639050960540771, 0.838670551776885986, 0, 0, 100, 1), -- Contested Banner
+(@OGUID+37, 179449, 30, -1302.8995361328125, -316.981109619140625, 113.8671035766601562, 2.007128715515136718, 0, 0, 0.843391478061676025, 0.537299573421478271, 0, 0, 100, 1), -- Contested Banner
+(@OGUID+38, 179445, 30, -1297.694580078125, -266.7301025390625, 114.1512222290039062, -2.93215298652648925, 0, 0, 0.994521915912628173, -0.10452850908041, 0, 0, 100, 1), -- Contested Banner
+-- BG_AV_GO_BANNER_HORDE = 178943, // control flags
+(@OGUID+39, 178946, 30, -571.879638671875, -262.776763916015625, 75.00867462158203125, -0.80285149812698364, 0, 0, 0.39073115587234497, -0.92050486803054809, 0, 0, 100, 1), -- Horde Banner
+(@OGUID+40, 178945, 30, -768.0872802734375, -362.66607666015625, 90.89485931396484375, 1.117010712623596191, 0, 0, 0.529919266700744628, 0.848048090934753417, 0, 0, 100, 1), -- Horde Banner
+(@OGUID+41, 178944, 30, -1302.8681640625, -316.9683837890625, 113.8671035766601562, 2.007128715515136718, 0, 0, 0.843391478061676025, 0.537299573421478271, 0, 0, 100, 1), -- Horde Banner
+(@OGUID+42, 178943, 30, -1297.7154541015625, -266.741485595703125, 114.1512222290039062, -2.96705961227416992, 0, 0, 0.996194720268249511, -0.0871557667851448, 0, 0, 100, 1), -- Horde Banner
+-- // object entries: horde: 178955; alliance contested: 179446
+(@OGUID+43, 178958, 30, -572.32891845703125, -262.476287841796875, 88.64957427978515625, -0.57595854997634887, 0, 0, 0.284015297889709472, -0.95881974697113037, 0, 0, 0, 0), -- [PH] Horde H4 Tower Banner BIG (180422)
+(@OGUID+44, 178957, 30, -768.19903564453125, -363.105255126953125, 104.537200927734375, 0.104719750583171844, 0, 0, 0.052335958927869796, 0.998629510402679443, 0, 0, 0, 0), -- [PH] Horde H3 Tower Banner BIG (180422)
+(@OGUID+45, 178956, 30, -1302.73486328125, -316.63031005859375, 127.5031967163085937, 0.122173056006431579, 0, 0, 0.061048541218042373, 0.998134791851043701, 0, 0, 0, 0), -- [PH] Horde H2 Tower Banner BIG (180422)
+(@OGUID+46, 178955, 30, -1297.7864990234375, -266.742828369140625, 127.7904205322265625, 0.069813162088394165, 0, 0, 0.034899495542049407, 0.999390840530395507, 0, 0, 0, 0), -- [PH] Horde H1 Tower Banner BIG (180422)
+(@OGUID+47, 179024, 30, 63.27116012573242187, 5.837618827819824218, -4.09621810913085937, 2.216568231582641601, 0, 0, 0.894934356212615966, 0.446197777986526489, 120, 120, 100, 1), -- Stormpike Banner
+(@OGUID+48, 179025, 30, -1551.8802490234375, -364.1875, 65.593353271484375, -1.95476889610290527, 0, 0, 0.829037606716156005, -0.55919283628463745, 120, 120, 100, 1), -- Frostwolf Banner
+-- object entries: alliance: 179044; alliance contested: 179424
+(@OGUID+49, 179044, 30, -191.016708374023437, -129.963272094726562, 78.864227294921875, -1.04719769954681396, 0, 0, 0.500000059604644775, -0.8660253882408142, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Banner BIG
+(@OGUID+50, 179044, 30, -201.284072875976562, -134.570266723632812, 78.84847259521484375, -0.82030475139617919, 0, 0, 0.398749053478240966, -0.91706007719039916, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Banner BIG
+(@OGUID+51, 179044, 30, -216.212020874023437, -90.7064361572265625, 79.80706024169921875, 1.169370651245117187, 0, 0, 0.551936984062194824, 0.833885848522186279, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Banner BIG
+(@OGUID+52, 179044, 30, -200.464630126953125, -96.41796875, 79.75870513916015625, 1.361356735229492187, 0, 0, 0.629320383071899414, 0.777145922183990478, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Banner BIG
+-- object entries: horde: 179064; horde contested: 179425
+(@OGUID+53, 179064, 30, -190.94097900390625, -129.869354248046875, 78.93259429931640625, -1.06465089321136474, 0, 0, 0.507538378238677978, -0.86162918806076049, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Banner BIG
+(@OGUID+54, 179064, 30, -201.443679809570312, -134.444442749023437, 78.9321136474609375, -0.85521155595779418, 0, 0, 0.414693355560302734, -0.90996122360229492, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Banner BIG
+(@OGUID+55, 179064, 30, -215.740997314453125, -90.9972915649414062, 80.08941650390625, 1.169370651245117187, 0, 0, 0.551936984062194824, 0.833885848522186279, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Banner BIG
+(@OGUID+56, 179064, 30, -200.429367065429687, -96.5082473754882812, 79.75235748291015625, 1.343903660774230957, 0, 0, 0.622514665126800537, 0.78260815143585205, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Banner BIG
+(@OGUID+57, 179065, 30, 562.632080078125, -88.1814804077148437, 61.99303054809570312, 0.383972406387329101, 0, 0, 0.190808996558189392, 0.981627166271209716, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+58, 179065, 30, 562.52294921875, -74.5027694702148437, 37.94743728637695312, -0.05235988646745681, 0, 0, 0.026176951825618743, -0.99965733289718627, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+59, 179065, 30, 558.0970458984375, -70.984161376953125, 52.48755645751953125, 0.820304811000823974, 0, 0, 0.398749083280563354, 0.917060077190399169, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+60, 179065, 30, 578.16705322265625, -71.8190689086914062, 38.15139389038085937, 2.722713708877563476, 0, 0, 0.978147625923156738, 0.207911655306816101, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+61, 179065, 30, 556.02777099609375, -94.9242095947265625, 44.8191070556640625, 3.054326057434082031, 0, 0, 0.999048233032226562, 0.043619453907012939, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+62, 179065, 30, 572.45086669921875, -94.3654556274414062, 37.94425201416015625, -1.7278759479522705, 0, 0, 0.760405957698822021, -0.64944803714752197, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+63, 179065, 30, 549.262939453125, -79.364532470703125, 44.8191070556640625, 0.436332345008850097, 0, 0, 0.216439619660377502, 0.976296007633209228, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+64, 179065, 30, 543.5126953125, -94.4005508422851562, 52.48191070556640625, 0.03490658476948738, 0, 0, 0.017452405765652656, 0.999847710132598876, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+65, 179065, 30, 572.1492919921875, -93.7861862182617187, 52.57261276245117187, 0.541052043437957763, 0, 0, 0.267238378524780273, 0.963630437850952148, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+66, 179065, 30, 582.161865234375, -81.2375259399414062, 37.9216461181640625, 0.087266460061073303, 0, 0, 0.043619386851787567, 0.999048233032226562, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+67, 179065, 30, 664.7972412109375, -143.650177001953125, 64.17842864990234375, -0.45378574728965759, 0, 0, 0.224951118230819702, -0.9743700623512268, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+68, 179065, 30, 664.50482177734375, -139.451614379882812, 49.6695556640625, -0.03490668907761573, 0, 0, 0.017452457919716835, -0.99984771013259887, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+69, 179065, 30, 676.06695556640625, -124.319343566894531, 49.67263031005859375, -1.01229083538055419, 0, 0, 0.484809547662734985, -0.87461978197097778, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+70, 179065, 30, 693.0042724609375, -144.025070190429687, 64.1754913330078125, 2.443460941314697265, 0, 0, 0.939692616462707519, 0.342020153999328613, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+71, 179065, 30, 661.1746826171875, -117.690757751464843, 49.64495086669921875, 1.919862151145935058, 0, 0, 0.819152057170867919, 0.57357645034790039, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+72, 179065, 30, 684.4228515625, -146.582138061523437, 63.66624832153320312, 0.994837701320648193, 0, 0, 0.47715875506401062, 0.878817141056060791, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+73, 179065, 30, 682.79083251953125, -127.768608093261718, 62.41549301147460937, 1.099557399749755859, 0, 0, 0.522498548030853271, 0.852640151977539062, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+74, 179065, 30, 674.5762939453125, -147.101181030273437, 56.54253005981445312, -1.60570323467254638, 0, 0, 0.719339907169342041, -0.69465827941894531, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+75, 179065, 30, 655.71905517578125, -126.673286437988281, 49.81383895874023437, 2.809980154037475585, 0, 0, 0.986285626888275146, 0.165047571063041687, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+76, 179065, 30, 231.503143310546875, -356.688140869140625, 42.37038040161132812, 0.296705961227416992, 0, 0, 0.147809401154518127, 0.989015877246856689, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+77, 179065, 30, 224.9886016845703125, -348.175201416015625, 42.56069564819335937, 1.500983238220214843, 0, 0, 0.681998372077941894, 0.731353700160980224, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+78, 179065, 30, 205.7818450927734375, -351.335174560546875, 56.8997955322265625, 1.01229095458984375, 0, 0, 0.48480960726737976, 0.874619722366333007, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+79, 179065, 30, 196.6048736572265625, -369.1871337890625, 56.39142227172851562, 2.460914134979248046, 0, 0, 0.942641496658325195, 0.333806902170181274, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+80, 179065, 30, 210.6187591552734375, -376.9375, 49.26770782470703125, 2.862339973449707031, 0, 0, 0.990268051624298095, 0.139173105359077453, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+81, 179065, 30, 209.6469268798828125, -352.6319580078125, 42.39586639404296875, -0.69813191890716552, 0, 0, 0.342020213603973388, -0.93969261646270751, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+82, 179065, 30, 220.64996337890625, -368.13238525390625, 42.39780807495117187, -0.2617996335029602, 0, 0, 0.130526319146156311, -0.99144482612609863, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+83, 179065, 30, 224.68212890625, -374.031463623046875, 57.06790542602539062, 0.541052043437957763, 0, 0, 0.267238378524780273, 0.963630437850952148, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+84, 179065, 30, 200.2595977783203125, -359.967620849609375, 49.26770782470703125, -2.89724659919738769, 0, 0, 0.992546141147613525, -0.12186928838491439, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+85, 179065, 30, 196.6188201904296875, -378.016265869140625, 56.91305160522460937, 1.01229095458984375, 0, 0, 0.48480960726737976, 0.874619722366333007, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+86, 179065, 30, -155.487518310546875, -437.35589599609375, 33.27962112426757812, 2.600540637969970703, 0, 0, 0.963630437850952148, 0.267238348722457885, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+87, 179065, 30, -163.441085815429687, -454.1876220703125, 33.27962112426757812, 1.93731546401977539, 0, 0, 0.824126183986663818, 0.56640625, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+88, 179065, 30, -143.977218627929687, -445.148223876953125, 26.40972328186035156, -1.86750245094299316, 0, 0, 0.803856909275054931, -0.5948227047920227, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+89, 179065, 30, -135.763992309570312, -464.708343505859375, 26.38227272033691406, 2.251474618911743164, 0, 0, 0.902585268020629882, 0.430511146783828735, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+90, 179065, 30, -154.075515747070312, -466.929046630859375, 41.0635528564453125, -1.86750245094299316, 0, 0, 0.803856909275054931, -0.5948227047920227, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+91, 179065, 30, -149.908203125, -460.331695556640625, 26.40834999084472656, -2.09439492225646972, 0, 0, 0.866025388240814208, -0.50000005960464477, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+92, 179065, 30, -151.637802124023437, -439.521270751953125, 40.37968826293945312, 0.436332345008850097, 0, 0, 0.216439619660377502, 0.976296007633209228, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+93, 179065, 30, -131.300994873046875, -454.904510498046875, 26.57706069946289062, 2.932153224945068359, 0, 0, 0.994521915912628173, 0.10452841967344284, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+94, 179065, 30, -171.291015625, -444.683502197265625, 40.92113113403320312, 2.30383467674255371, 0, 0, 0.913545489311218261, 0.406736612319946289, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+95, 179065, 30, -143.591476440429687, -439.749664306640625, 40.92749404907226562, -1.7278759479522705, 0, 0, 0.760405957698822021, -0.64944803714752197, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+96, 179065, 30, -572.66680908203125, -267.9234619140625, 56.85420989990234375, 2.356194496154785156, 0, 0, 0.923879504203796386, 0.382683426141738891, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+97, 179065, 30, -561.0213623046875, -262.6890869140625, 68.4589080810546875, 1.378810048103332519, 0, 0, 0.636078178882598876, 0.771624624729156494, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+98, 179065, 30, -572.538330078125, -262.649261474609375, 88.61969757080078125, 1.832595705986022949, 0, 0, 0.79335331916809082, 0.608761429786682128, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+99, 179065, 30, -574.77020263671875, -251.450027465820312, 74.94216156005859375, -1.18682420253753662, 0, 0, 0.559193015098571777, -0.82903748750686645, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+100, 179065, 30, -578.625, -267.570953369140625, 68.469573974609375, 0.506145477294921875, 0, 0, 0.250380009412765502, 0.968147635459899902, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+101, 179065, 30, -571.47589111328125, -257.234375, 63.32225418090820312, 3.106686115264892578, 0, 0, 0.999847710132598876, 0.017452383413910865, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+102, 179065, 30, -566.03497314453125, -273.9073486328125, 52.95818328857421875, -0.89011794328689575, 0, 0, 0.430511116981506347, -0.90258526802062988, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+103, 179065, 30, -580.94793701171875, -259.770233154296875, 68.469573974609375, 1.466076612472534179, 0, 0, 0.669130623340606689, 0.743144810199737548, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+104, 179065, 30, -568.31781005859375, -267.099822998046875, 75.00077056884765625, 1.01229095458984375, 0, 0, 0.48480960726737976, 0.874619722366333007, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+105, 179065, 30, -559.6212158203125, -268.5966796875, 52.89863967895507812, 0.052359882742166519, 0, 0, 0.026176949962973594, 0.999657332897186279, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+106, 179065, 30, -776.072265625, -368.04638671875, 84.35575103759765625, 2.635447263717651367, 0, 0, 0.968147635459899902, 0.250379949808120727, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+107, 179065, 30, -777.5635986328125, -368.5211181640625, 90.67014312744140625, 1.727875947952270507, 0, 0, 0.760405957698822021, 0.649448037147521972, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+108, 179065, 30, -765.46051025390625, -357.71142578125, 90.88797760009765625, 0.314159303903579711, 0, 0, 0.156434476375579833, 0.987688362598419189, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+109, 179065, 30, -768.76300048828125, -362.73486328125, 104.6117324829101562, 1.815142273902893066, 0, 0, 0.788010716438293457, 0.615661501884460449, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+110, 179065, 30, -760.35589599609375, -358.895721435546875, 84.35575103759765625, 2.129301786422729492, 0, 0, 0.874619722366333007, 0.484809577465057373, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+111, 179065, 30, -771.96746826171875, -352.8380126953125, 84.34844207763671875, 1.745329260826110839, 0, 0, 0.766044437885284423, 0.642787635326385498, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+112, 179065, 30, -773.3331298828125, -364.652679443359375, 79.23514556884765625, -1.64060950279235839, 0, 0, 0.731353700160980224, -0.68199831247329711, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+113, 179065, 30, -764.10894775390625, -366.0693359375, 70.09340667724609375, 0.383972406387329101, 0, 0, 0.190808996558189392, 0.981627166271209716, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+114, 179065, 30, -767.10284423828125, -350.737030029296875, 68.79332733154296875, 2.809980154037475585, 0, 0, 0.986285626888275146, 0.165047571063041687, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+115, 179065, 30, -760.115478515625, -353.844635009765625, 68.86331939697265625, 1.797689080238342285, 0, 0, 0.78260815143585205, 0.622514665126800537, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+116, 179065, 30, -1304.8658447265625, -304.52490234375, 91.83664703369140625, -0.68067866563796997, 0, 0, 0.333806991577148437, -0.94264143705368041, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+117, 179065, 30, -1301.77392578125, -310.97369384765625, 95.82520294189453125, 0.907571256160736083, 0, 0, 0.438371151685714721, 0.898794054985046386, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+118, 179065, 30, -1305.5775146484375, -320.624725341796875, 102.1660385131835937, -0.55850535631179809, 0, 0, 0.275637358427047729, -0.96126168966293334, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+119, 179065, 30, -1294.2664794921875, -323.467620849609375, 113.8926315307617187, -1.67551600933074951, 0, 0, 0.743144810199737548, -0.66913068294525146, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+120, 179065, 30, -1302.6549072265625, -317.19232177734375, 127.487213134765625, 2.30383467674255371, 0, 0, 0.913545489311218261, 0.406736612319946289, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+121, 179065, 30, -1293.89453125, -313.4776611328125, 107.3280029296875, 1.605702877044677734, 0, 0, 0.71933978796005249, 0.694658398628234863, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+122, 179065, 30, -1312.40673828125, -312.998809814453125, 107.3280029296875, 1.570796370506286621, 0, 0, 0.707106769084930419, 0.707106769084930419, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+123, 179065, 30, -1311.566650390625, -308.079742431640625, 91.7665557861328125, -1.85004889965057373, 0, 0, 0.798635482788085937, -0.6018151044845581, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+124, 179065, 30, -1314.703125, -322.1309814453125, 107.3601531982421875, 0.645771801471710205, 0, 0, 0.317304641008377075, 0.948323667049407958, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+125, 179065, 30, -1304.5982666015625, -310.75384521484375, 113.8587417602539062, -0.40142565965652465, 0, 0, 0.199367895722389221, -0.979924738407135, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+126, 179065, 30, -1308.239990234375, -273.26025390625, 92.05139923095703125, -0.13962635397911071, 0, 0, 0.069756470620632171, -0.99756407737731933, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+127, 179065, 30, -1302.2554931640625, -262.857696533203125, 95.9268951416015625, 0.418879061937332153, 0, 0, 0.207911700010299682, 0.978147625923156738, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+128, 179065, 30, -1297.2769775390625, -267.772613525390625, 126.7559127807617187, 2.234021425247192382, 0, 0, 0.898794054985046386, 0.438371151685714721, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+129, 179065, 30, -1299.0775146484375, -256.889923095703125, 114.1078414916992187, -2.44346094131469726, 0, 0, 0.939692616462707519, -0.34202012419700622, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+130, 179065, 30, -1303.4053955078125, -268.2369384765625, 114.1512069702148437, -1.23918378353118896, 0, 0, 0.580702960491180419, -0.81411552429199218, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+131, 179065, 30, -1304.43408203125, -273.681915283203125, 107.6121063232421875, 0.244346097111701965, 0, 0, 0.121869347989559173, 0.992546141147613525, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+132, 179065, 30, -1309.53369140625, -265.950531005859375, 92.14180755615234375, -2.49582076072692871, 0, 0, 0.948323667049407958, -0.31730467081069946, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+133, 179065, 30, -1295.5533447265625, -263.865081787109375, 105.033172607421875, 0.925024449825286865, 0, 0, 0.446197807788848876, 0.894934356212615966, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+134, 179065, 30, -1294.7120361328125, -281.465728759765625, 107.6638412475585937, -1.50098299980163574, 0, 0, 0.681998312473297119, -0.731353759765625, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+135, 179065, 30, -1289.6929931640625, -259.5211181640625, 107.6121063232421875, -2.19911503791809082, 0, 0, 0.89100658893585205, -0.45399039983749389, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+136, 179065, 30, -3.4092879295349121, -306.287506103515625, 33.3399505615234375, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+137, 179065, 30, -48.6190338134765625, -266.91650390625, 47.8167877197265625, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+138, 179065, 30, -62.9473762512207031, -286.21197509765625, 66.72882843017578125, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+139, 179065, 30, -5.05132389068603515, -325.322967529296875, 38.85361480712890625, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+140, 179065, 30, -64.2676849365234375, -289.411529541015625, 33.46895980834960937, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+141, 179065, 30, -517.05316162109375, -200.4287109375, 80.75904083251953125, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+142, 179065, 30, -514.360595703125, -163.863983154296875, 104.16265869140625, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+143, 179065, 30, -568.03961181640625, -188.706924438476562, 81.549957275390625, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+144, 179065, 30, -501.77484130859375, -151.580947875976562, 81.2026824951171875, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+145, 179065, 30, -509.974517822265625, -191.652023315429687, 83.29779052734375, 0, 0, 0, 0, 1, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+146, 179066, 30, -64.4986953735351562, -289.330078125, 33.46157455444335937, -2.82743334770202636, 0, 0, 0.987688362598419189, -0.15643444657325744, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+(@OGUID+147, 179066, 30, -5.98025178909301757, -326.143890380859375, 38.85381698608398437, 0, 0, 0, 0, 1, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+(@OGUID+148, 179066, 30, -2.67892789840698242, -306.997772216796875, 33.41654205322265625, 0, 0, 0, 0, 1, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+(@OGUID+149, 179066, 30, -60.25, -309.2320556640625, 50.240814208984375, -1.46607661247253417, 0, 0, 0.669130623340606689, -0.74314481019973754, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+(@OGUID+150, 179066, 30, -48.7940559387207031, -266.53314208984375, 47.79162979125976562, 2.443460941314697265, 0, 0, 0.939692616462707519, 0.342020153999328613, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+(@OGUID+151, 179066, 30, -524.27581787109375, -199.60009765625, 82.8733062744140625, -1.46607661247253417, 0, 0, 0.669130623340606689, -0.74314481019973754, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+(@OGUID+152, 179066, 30, -518.19586181640625, -173.084854125976562, 102.4303665161132812, 0, 0, 0, 0, 1, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+(@OGUID+153, 179066, 30, -500.731658935546875, -145.357864379882812, 88.5337371826171875, 2.443460941314697265, 0, 0, 0.939692616462707519, 0.342020153999328613, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+(@OGUID+154, 179066, 30, -501.083648681640625, -150.78369140625, 80.85060882568359375, 0, 0, 0, 0, 1, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+(@OGUID+155, 179066, 30, -518.30914306640625, -163.963485717773437, 102.5209884643554687, 2.967059612274169921, 0, 0, 0.996194720268249511, 0.08715580403804779, 0, 0, 0, 0), -- Smoke Emitter, Large AOI, scale 2
+-- 179286 -- BG_AV_GO_GY_BANNER_ALLIANCE_CONT
+(@OGUID+156, 179468, 30, 638.65704345703125, -32.2294387817382812, 46.09035110473632812, -1.62315630912780761, 0, 0, 0.725374400615692138, -0.6883544921875, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+157, 179287, 30, 669.29534912109375, -294.03753662109375, 30.28968620300292968, -0.36651927232742309, 0, 0, 0.182235583662986755, -0.98325490951538085, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+158, 179310, 30, 77.80132293701171875, -404.699859619140625, 46.75493240356445312, -0.87266474962234497, 0, 0, 0.422618329524993896, -0.90630775690078735, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+159, 180419, 30, -202.580841064453125, -112.730262756347656, 78.487579345703125, -0.71558505296707153, 0, 0, 0.350207418203353881, -0.93667215108871459, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+160, 179482, 30, -611.52276611328125, -396.819000244140625, 60.85839080810546875, -0.03490668907761573, 0, 0, 0.017452457919716835, -0.99984771013259887, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+161, 179304, 30, -1082.4476318359375, -346.823394775390625, 54.92188262939453125, -1.53588998317718505, 0, 0, 0.694658458232879638, -0.71933972835540771, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+162, 179471, 30, -1402.2781982421875, -307.37982177734375, 89.44196319580078125, 0.191986218094825744, 0, 0, 0.095845751464366912, 0.995396196842193603, 0, 0, 100, 1), -- Contested Banner (180102)
+-- 179287 -- BG_AV_GO_GY_BANNER_HORDE_CONT
+(@OGUID+163, 179465, 30, 638.59210205078125, -32.4220390319824218, 46.06084442138671875, -1.62315571308135986, 0, 0, -0.72537422180175781, 0.688354730606079101, 0, 0, 100, 1), -- Contested Banner (180100)
+(@OGUID+164, 179286, 30, 669.0321044921875, -294.060333251953125, 30.29091072082519531, 2.775073528289794921, 0, 0, 0.983254909515380859, 0.182235524058341979, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+165, 179308, 30, 78.385528564453125, -405.450531005859375, 46.60544204711914062, -0.85521155595779418, 0, 0, 0.414693355560302734, -0.90996122360229492, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+166, 180420, 30, -202.651580810546875, -112.807289123535156, 78.487060546875, -1.09955763816833496, 0, 0, 0.522498667240142822, -0.85264009237289428, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+167, 179484, 30, -612.6614990234375, -396.69921875, 60.85839080810546875, -0.03490668907761573, 0, 0, 0.017452457919716835, -0.99984771013259887, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+168, 179305, 30, -1082.5361328125, -346.567169189453125, 54.97722244262695312, -1.55334317684173583, 0, 0, 0.700909316539764404, -0.71325039863586425, 0, 0, 100, 1), -- Contested Banner (180102)
+(@OGUID+169, 179473, 30, -1402.175537109375, -307.3056640625, 89.4469757080078125, 0.191986218094825744, 0, 0, 0.095845751464366912, 0.995396196842193603, 0, 0, 100, 1), -- Contested Banner (180102)
+-- alliance contested: 179424
+(@OGUID+170, 179424, 30, -191.153106689453125, -129.868377685546875, 78.5594940185546875, -1.25663685798645019, 0, 0, 0.587785184383392333, -0.80901706218719482, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Pre-Banner BIG
+(@OGUID+171, 179424, 30, -201.281692504882812, -134.31884765625, 78.6753387451171875, -0.94247794151306152, 0, 0, 0.453990578651428222, -0.8910064697265625, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Pre-Banner BIG
+(@OGUID+172, 179424, 30, -215.980911254882812, -91.4101028442382812, 80.87021636962890625, -1.74532926082611083, 0, 0, 0.766044437885284423, -0.64278763532638549, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Pre-Banner BIG
+(@OGUID+173, 179424, 30, -200.738723754882812, -96.6796875, 79.7800140380859375, -2.00712847709655761, 0, 0, 0.84339141845703125, -0.53729963302612304, 60, 60, 0, 0), -- [PH] Alliance Graveyard Mid Pre-Banner BIG
+-- horde contested: 179425
+(@OGUID+174, 179425, 30, -191.17578125, -129.929473876953125, 78.675201416015625, -1.2042773962020874, 0, 0, 0.566406309604644775, -0.82412612438201904, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Pre-Banner BIG
+(@OGUID+175, 179425, 30, -201.178604125976562, -134.266876220703125, 78.677734375, -0.99483758211135864, 0, 0, 0.477158725261688232, -0.87881714105606079, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Pre-Banner BIG
+(@OGUID+176, 179425, 30, -216.158309936523437, -91.621856689453125, 80.86038970947265625, -1.7278759479522705, 0, 0, 0.760405957698822021, -0.64944803714752197, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Pre-Banner BIG
+(@OGUID+177, 179425, 30, -200.6962890625, -96.61767578125, 79.70095062255859375, -2.09439492225646972, 0, 0, 0.866025388240814208, -0.50000005960464477, 60, 60, 0, 0), -- [PH] Horde Graveyard Mid Pre-Banner BIG
+-- BG_AV_GO_BANNER_HORDE_CONT = 179435, // contested flags
+(@OGUID+178, 179435, 30, 553.82159423828125, -78.7675247192382812, 51.93867874145507812, -1.06465089321136474, 0, 0, 0.507538378238677978, -0.86162918806076049, 0, 0, 100, 1), -- Contested Banner
+(@OGUID+179, 179439, 30, 674.046875, -143.155868530273437, 63.66139602661132812, 0.994837701320648193, 0, 0, 0.47715875506401062, 0.878817141056060791, 0, 0, 100, 1), -- Contested Banner
+(@OGUID+180, 179441, 30, 203.2808685302734375, -360.3663330078125, 56.38690567016601562, -0.92502433061599731, 0, 0, 0.446197748184204101, -0.89493441581726074, 0, 0, 100, 1), -- Contested Banner
+(@OGUID+181, 179443, 30, -152.437286376953125, -441.75823974609375, 40.39822769165039062, -1.95476889610290527, 0, 0, 0.829037606716156005, -0.55919283628463745, 0, 0, 100, 1), -- Contested Banner
+-- horde contested: 179436
+(@OGUID+182, 179436, 30, 555.84759521484375, -84.4151458740234375, 64.43967437744140625, 3.124139308929443359, 0, 0, 0.999961912631988525, 0.008726561442017555, 0, 0, 0, 0), -- [PH] Horde A1 Tower Pre-Banner BIG (180423)
+(@OGUID+183, 179440, 30, 677.5916748046875, -139.034286499023437, 76.21964263916015625, -1.98967528343200683, 0, 0, 0.838670551776885986, -0.54463905096054077, 0, 0, 0, 0), -- [PH] Horde A2 Tower Pre-Banner BIG (180423)
+(@OGUID+184, 179442, 30, 202.5411834716796875, -361.857574462890625, 67.73706817626953125, 0.610865175724029541, 0, 0, 0.300705790519714355, 0.953716933727264404, 0, 0, 0, 0), -- [PH] Horde A3 Tower Pre-Banner BIG (180423)
+(@OGUID+185, 179444, 30, -155.832473754882812, -449.40093994140625, 52.7305908203125, 0.610865175724029541, 0, 0, 0.300705790519714355, 0.953716933727264404, 0, 0, 0, 0), -- [PH] Horde A4 Tower Pre-Banner BIG (180423)
+-- alliance contested: 179446
+(@OGUID+186, 179458, 30, -572.20538330078125, -262.476226806640625, 88.66471099853515625, -0.59341222047805786, 0, 0, 0.29237183928489685, -0.95630472898483276, 0, 0, 0, 0), -- [PH] Alliance H4 Tower Pre-Banner BIG (180423)
+(@OGUID+187, 179454, 30, -768.15411376953125, -363.102325439453125, 104.534576416015625, 0.122173056006431579, 0, 0, 0.061048541218042373, 0.998134791851043701, 0, 0, 0, 0), -- [PH] Alliance H3 Tower Pre-Banner BIG (180423)
+(@OGUID+188, 179450, 30, -1302.8350830078125, -316.581878662109375, 127.516387939453125, 0.122173056006431579, 0, 0, 0.061048541218042373, 0.998134791851043701, 0, 0, 0, 0), -- [PH] Alliance H2 Tower Pre-Banner BIG (180423)
+(@OGUID+189, 179446, 30, -1297.869384765625, -266.7623291015625, 127.7958297729492187, 0.069813162088394165, 0, 0, 0.034899495542049407, 0.999390840530395507, 0, 0, 0, 0), -- [PH] Alliance H1 Tower Pre-Banner BIG (180423)
 (@OGUID+190, 180418, 30, -202.6107,-112.778,78.48716,-1.151916, 0, 0, 0, 0, 0, 0, 100, 1), -- Snowfall Banner
 (@OGUID+191, 180424, 30, 780.487, -493.024, 99.9553, 3.0976, 0, 0, 0, 0, 60, 60, 100, 1), -- Alterac Valley Gate
 (@OGUID+192, 180424, 30, -1375.19, -538.981, 55.2824, 0.72178, 0, 0, 0, 0, 60, 60, 100, 1), -- Alterac Valley Gate
@@ -3067,124 +2472,138 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+282, 180654, 30, 558.834, -6.05473, 45.4063, 2.06403, 0, 0, 0, 0, 600, 600, 100, 1), -- Hardpacked Snowdrift
 (@OGUID+283, 180654, 30, 489.569, 13.109, 24.3065, 2.8565, 0, 0, 0, 0, 600, 600, 100, 1), -- Hardpacked Snowdrift
 (@OGUID+284, 180654, 30, 414.552, -36.1106, 0.967913, 4.02281, 0, 0, 0, 0, 600, 600, 100, 1), -- Hardpacked Snowdrift
-(@OGUID+285, 178684, 30, 649.2648, -59.11024, 41.54757, -2.687807, 0, 0, 0, 0, 0, 0, 100, 1), -- Forge
-(@OGUID+286, 178685, 30, 646.2073, -57.24284, 41.65868, -0.1570794, 0, 0, 0, 0, 0, 0, 100, 1), -- Anvil
-(@OGUID+287, 179384, 30, 560.8342, -75.42657, 37.9558, 0.7853977, 0, 0, 0, 0, 0, 0, 100, 1), -- Chair
-(@OGUID+288, 179385, 30, 550.678, -79.82339, 44.8257, -3.097959, 0, 0, 0, 0, 0, 0, 100, 1), -- Chair
-(@OGUID+289, 179386, 30, 568.3257, -89.49924, 37.9558, 1.396264, 0, 0, 0, 0, 0, 0, 100, 1), -- Chair
-(@OGUID+290, 179387, 30, 550.5966, -77.52127, 44.8257, -2.050763, 0, 0, 0, 0, 0, 0, 100, 1), -- Chair
-(@OGUID+291, 179388, 30, 570.4194, -89.05669, 37.9558, 2.225296, 0, 0, 0, 0, 0, 0, 100, 1), -- Chair
-(@OGUID+292, 179389, 30, 555.5166, -101.5895, 44.8257, 0.3926987, 0, 0, 0, 0, 0, 0, 100, 1), -- Chair
-(@OGUID+293, 179390, 30, 561.8506, -73.14806, 37.9558, -1.396262, 0, 0, 0, 0, 0, 0, 100, 1), -- Chair
-(@OGUID+294, 179391, 30, 548.6824, -100.8462, 44.81912, 1.466078, 0, 0, 0, 0, 0, 0, 100, 1), -- Anvil
-(@OGUID+295, 179392, 30, 552.4286, -102.7644, 44.81912, 2.46964, 0, 0, 0, 0, 0, 0, 100, 1), -- Anvil
-(@OGUID+296, 179393, 30, 549.4721, -101.5473, 44.81912, 1.160644, 0, 0, 0, 0, 0, 0, 100, 1), -- Anvil
-(@OGUID+297, 179394, 30, 550.3475, -101.6985, 44.81912, 1.596975, 0, 0, 0, 0, 0, 0, 100, 1), -- Anvil
-(@OGUID+298, 179395, 30, 551.2714, -102.2258, 44.81912, 0.8988435, 0, 0, 0, 0, 0, 0, 100, 1), -- Anvil
-(@OGUID+299, 179396, 30, 553.9467, -103.3469, 44.81912, -0.1919862, 0, 0, 0, 0, 0, 0, 100, 1), -- Anvil
-(@OGUID+300, 179397, 30, 553.7253, -102.396, 44.81912, 0.1570797, 0, 0, 0, 0, 0, 0, 100, 1), -- Anvil
-(@OGUID+301, 179437, 30, 618.7482, -52.11258, 42.11218, -0.06981307, 0, 0, 0, 0, 0, 0, 100, 1), -- Wanted: ORCS!
-(@OGUID+302, 179438, 30, -1181.0996, -370.7472, 53.62457, 2.68780708, 0, 0, 0.974370062351226806, 0.224951043725013732, 0, 0, 100, 1), -- Wanted: DWARVES!
+(@OGUID+285, 178684, 30, 649.2647705078125, -59.1102447509765625, 41.54756927490234375, -2.68780708312988281, 0, 0, 0.974370002746582031, -0.22495099902153015, 0, 0, 100, 1), -- Forge
+(@OGUID+286, 178685, 30, 646.207275390625, -57.2428398132324218, 41.65867996215820312, -0.15707938373088836, 0, 0, -0.07845900207757949, 0.996917009353637695, 0, 0, 100, 1), -- Anvil
+(@OGUID+287, 179384, 30, 560.834228515625, -75.42657470703125, 37.9557952880859375, 0.785397708415985107, 0, 0, 0.382683217525482177, 0.923879623413085937, 0, 0, 100, 1), -- Chair
+(@OGUID+288, 179385, 30, 550.677978515625, -79.823394775390625, 44.8256988525390625, -3.09795928001403808, 0, 0, 0.99976205825805664, -0.02181493677198886, 0, 0, 100, 1), -- Chair
+(@OGUID+289, 179386, 30, 568.32568359375, -89.499237060546875, 37.9557952880859375, 1.396264195442199707, 0, 0, 0.642787933349609375, 0.766044199466705322, 0, 0, 100, 1), -- Chair
+(@OGUID+290, 179387, 30, 550.59661865234375, -77.521270751953125, 44.8256988525390625, -2.05076265335083007, 0, 0, -0.85491204261779785, 0.51877295970916748, 0, 0, 100, 1), -- Chair
+(@OGUID+291, 179388, 30, 570.41943359375, -89.0566864013671875, 37.9557952880859375, 2.225296258926391601, 0, 0, 0.896873056888580322, 0.442288070917129516, 0, 0, 100, 1), -- Chair
+(@OGUID+292, 179389, 30, 555.5166015625, -101.5894775390625, 44.8256988525390625, 0.392698675394058227, 0, 0, 0.195090129971504211, 0.980785310268402099, 0, 0, 100, 1), -- Chair
+(@OGUID+293, 179390, 30, 561.85064697265625, -73.1480636596679687, 37.9557952880859375, -1.39626240730285644, 0, 0, -0.64278721809387207, 0.7660447359085083, 0, 0, 100, 1), -- Chair
+(@OGUID+294, 179391, 30, 548.68243408203125, -100.84619140625, 44.819122314453125, 1.466077685356140136, 0, 0, 0.669131040573120117, 0.743144452571868896, 0, 0, 100, 1), -- Anvil
+(@OGUID+295, 179392, 30, 552.42864990234375, -102.764350891113281, 44.819122314453125, 2.469640016555786132, 0, 0, 0.944088876247406005, 0.329691052436828613, 0, 0, 100, 1), -- Anvil
+(@OGUID+296, 179393, 30, 549.47210693359375, -101.547271728515625, 44.819122314453125, 1.160643577575683593, 0, 0, 0.548293054103851318, 0.83628624677658081, 0, 0, 100, 1), -- Anvil
+(@OGUID+297, 179394, 30, 550.34747314453125, -101.698478698730468, 44.819122314453125, 1.596975326538085937, 0, 0, 0.716301620006561279, 0.697790801525115966, 0, 0, 100, 1), -- Anvil
+(@OGUID+298, 179395, 30, 551.27142333984375, -102.225814819335937, 44.819122314453125, 0.898843467235565185, 0, 0, 0.434444755315780639, 0.900698482990264892, 0, 0, 100, 1), -- Anvil
+(@OGUID+299, 179396, 30, 553.9466552734375, -103.346946716308593, 44.819122314453125, -0.19198615849018096, 0, 0, -0.09584572166204452, 0.995396196842193603, 0, 0, 100, 1), -- Anvil
+(@OGUID+300, 179397, 30, 553.725341796875, -102.395965576171875, 44.819122314453125, 0.157079651951789855, 0, 0, 0.078459113836288452, 0.996917307376861572, 0, 0, 100, 1), -- Anvil
+(@OGUID+301, 179437, 30, 618.7481689453125, -52.1125755310058593, 42.11217880249023437, -0.069813072681427, 0, 0, 0.034899450838565826, -0.9993908405303955, 0, 0, 100, 1), -- Wanted: ORCS!
+(@OGUID+302, 179438, 30, -1181.099609375, -370.747222900390625, 53.62457275390625, 2.687807083129882812, 0, 0, 0.974370062351226806, 0.224951043725013732, 0, 0, 100, 1), -- Wanted: DWARVES!
 (@OGUID+303, 3832, 30, -1235.5711669921875, -241.478118896484375, 73.4377593994140625, 1.483530640602111816, 0, 0, 0.67559051513671875, 0.737277030944824218, 0, 0, 100, 1), -- Burning Embers
 (@OGUID+304, 3833, 30, -1248.8515625, -254.060440063476562, 73.4377593994140625, 1.483530640602111816, 0, 0, 0.67559051513671875, 0.737277030944824218, 0, 0, 100, 1), -- Burning Embers
 (@OGUID+305, 3834, 30, -1248.14892578125, -245.59942626953125, 73.4377593994140625, -0.05236048251390457, 0, 0, -0.02617725171148777, 0.999657332897186279, 0, 0, 100, 1), -- Burning Embers
 (@OGUID+306, 3835, 30, -1237.206298828125, -260.1676025390625, 73.4377593994140625, 1.483530640602111816, 0, 0, 0.67559051513671875, 0.737277030944824218, 0, 0, 100, 1), -- Burning Embers
-(@OGUID+307, 3836, 30, -1260.3656, -248.7669, 77.94541, 1.48353064, 0, 0, 0.67559051513671875, 0.737277030944824218, 0, 0, 100, 1), -- Burning Embers
-(@OGUID+308, 3837, 30, -1249.3153, -244.9074, 92.33716, 0.40142628, 0, 0, 0.199368208646774291, 0.979924619197845458, 0, 0, 100, 1), -- Burning Embers
-(@OGUID+309, 3838, 30, -1250.0917, -254.6035, 92.30152, 0.14835228, 0, 0, 0.074108138680458068, 0.997250258922576904, 0, 0, 100, 1), -- Burning Embers
-(@OGUID+310, 177405, 30, -1140.8155517578125, -343.392364501953125, 50.90771484375, -2.7837996482849121, 0, 0, 0.98404097557067871, -0.17794400453567504, 0, 0, 100, 1), -- Brazier
-(@OGUID+311, 177406, 30, -1139.681884765625, -356.2882080078125, 51.26401901245117187, -0.70685797929763793, 0, 0, -0.34611698985099792, 0.938190996646881103, 0, 0, 100, 1), -- Brazier
-(@OGUID+312, 177408, 30, -743.4266, -398.242, 76.42656, 0.8726642, 0, 0, 0, 0, 0, 0, 100, 1), -- Bonfire
-(@OGUID+313, 177409, 30, -1215.592, -371.9459, 56.5293, 0.3577935, 0, 0, 0, 0, 0, 0, 100, 1), -- Brazier
-(@OGUID+314, 177410, 30, -1241.247, -345.115, 59.68674, 0.3577935, 0, 0, 0, 0, 0, 0, 100, 1), -- Brazier
-(@OGUID+315, 177411, 30, -1202.805, -271.5985, 72.58054, 0.3577935, 0, 0, 0, 0, 0, 0, 100, 1), -- Brazier
-(@OGUID+316, 177412, 30, -1282.2083740234375, -284.083343505859375, 87.25603485107421875, -0.0610855221748352, 0, 0, -0.03053800016641616, 0.999534010887145996, 0, 0, 100, 1), -- Brazier
-(@OGUID+317, 177413, 30, -1256.5538330078125, -280.27777099609375, 73.94734954833984375, -0.0610855221748352, 0, 0, -0.03053800016641616, 0.999534010887145996, 0, 0, 100, 1), -- Brazier
-(@OGUID+318, 177292, 30, -1099.207763671875, -266.23101806640625, 57.88490676879882812, -2.28638100624084472, 0, 0, 0.90996098518371582, -0.41469299793243408, 0, 0, 100, 1), -- Brazier
-(@OGUID+319, 177293, 30, -1082.6024169921875, -266.68072509765625, 57.85751724243164062, 2.408553361892700195, 0, 0, 0.933579981327056884, 0.358368009328842163, 0, 0, 100, 1), -- Brazier
-(@OGUID+320, 179419, 30, -1423.1614990234375, -318.435760498046875, 89.11356353759765625, 2.356192827224731445, 0, 0, 0.923879027366638183, 0.382683992385864257, 0, 0, 100, 1), -- Brazier
-(@OGUID+321, 179945, 30, -1070.53369140625, -617.908203125, 51.32492446899414062, -0.44506001472473144, 0, 0, -0.22069799900054931, 0.975341975688934326, 0, 0, 100, 1), -- Campfire
-(@OGUID+322, 177261, 30, -1290.274, -172.4705, 72.18534, 3.06302, 0, 0, 0, 0, 0, 0, 100, 1), -- Brazier
-(@OGUID+323, 177262, 30, -1286.249, -184.4801, 71.8334, -2.05076, 0, 0, 0, 0, 0, 0, 100, 1), -- Campfire
-(@OGUID+324, 177263, 30, -1280.1744384765625, -220.53717041015625, 72.26860809326171875, 1.623155117034912109, 0, 0, 0.72537398338317871, 0.688355028629302978, 0, 0, 100, 1), -- Campfire
-(@OGUID+325, 179004, 30, -1368.373291015625, -218.88677978515625, 98.42658233642578125, -0.24434597790241241, 0, 0, 0.121869280934333801, -0.99254614114761352, 0, 0, 100, 1), -- Drek'Thar's Scrolls
-(@OGUID+326, 179004, 30, -1371.357666015625, -216.960617065429687, 99.37108612060546875, -0.03490668907761573, 0, 0, 0.017452457919716835, -0.99984771013259887, 0, 0, 100, 1), -- Drek'Thar's Scrolls
-(@OGUID+327, 179004, 30, -1361.5943603515625, -207.93658447265625, 99.3700714111328125, -3.07177948951721191, 0, 0, 0.999390840530395507, -0.03489946201443672, 0, 0, 100, 1), -- Drek'Thar's Scrolls
-(@OGUID+328, 179004, 30, -1359.902099609375, -237.353836059570312, 99.3710174560546875, -1.01229083538055419, 0, 0, 0.484809547662734985, -0.87461978197097778, 0, 0, 100, 1), -- Drek'Thar's Scrolls
-(@OGUID+329, 179004, 30, -1389.341552734375, -225.45367431640625, 99.3710174560546875, 0.663225054740905761, 0, 0, 0.325568139553070068, 0.945518553256988525, 0, 0, 100, 1), -- Drek'Thar's Scrolls
-(@OGUID+330, 179004, 30, -1370.873046875, -205.35211181640625, 99.3712615966796875, 0.209439516067504882, 0, 0, 0.104528464376926422, 0.994521915912628173, 0, 0, 100, 1), -- Drek'Thar's Scrolls
-(@OGUID+331, 179004, 30, -1367.1849365234375, -240.346893310546875, 99.37102508544921875, 0.157079622149467468, 0, 0, 0.078459098935127258, 0.996917307376861572, 0, 0, 100, 1), -- Drek'Thar's Scrolls
-(@OGUID+332, 179909, 30, -914.0135, -520.3479, 57.22959, 1.535891, 0.057846, -0.041104, 0.693564, 0.716892, 0, 0, 100, 1), -- Rock of Durotan
-(@OGUID+333, 51704, 30, -1245.2012939453125, -307.058685302734375, 63.31994247436523437, 3.079593896865844726, -0.00711202248930931, -0.02363062836229801, 0.999219894409179687, 0.030832992866635322, 0, 0, 100, 1), -- Anvil
-(@OGUID+334, 51705, 30, -1258.2259521484375, -310.97747802734375, 63.20154571533203125, 0.862905621528625488, 0.017974497750401496, -0.01690872386097908, 0.418255954980850219, 0.907993912696838378, 0, 0, 100, 1), -- Anvil
-(@OGUID+335, 50984, 30, -1250.392578125, -310.19140625, 61.18503189086914062, -1.10828375816345214, 0.024020733311772346, 0.005656135268509387, -0.52631253004074096, 0.849933028221130371, 0, 0, 100, 1), -- Heated Forge
-(@OGUID+336, 178442, 30, -1258.9970703125, -318.02740478515625, 62.53152084350585937, -2.61799383163452148, 0, 0, 0.965925812721252441, -0.25881904363632202, 0, 0, 100, 1), -- Horde Supply Crate
-(@OGUID+337, 178442, 30, -1259.0013427734375, -317.988433837890625, 63.88884353637695312, -0.97738438844680786, 0, 0, 0.469471573829650878, -0.88294756412506103, 0, 0, 100, 1), -- Horde Supply Crate
-(@OGUID+338, 178442, 30, -1260.2662353515625, -316.172149658203125, 64.1017303466796875, -2.47836756706237792, 0, 0, 0.9455186128616333, -0.32556810975074768, 0, 0, 100, 1), -- Horde Supply Crate
-(@OGUID+339, 178442, 30, -1260.1881103515625, -316.3150634765625, 62.78687286376953125, -2.18166136741638183, 0, 0, 0.887010812759399414, -0.46174865961074829, 0, 0, 100, 1), -- Horde Supply Crate
-(@OGUID+340, 22205, 30, 50.64006, -421.1664, 44.73254, -0.008751923, 0, 0, 0, 0, 0, 0, 100, 1), -- Dwarven Fire
-(@OGUID+341, 22207, 30, 30.41684341430664062, -428.852752685546875, 41.5280303955078125, -2.59181499481201171, 0, 0, 0.962455391883850097, -0.27143990993499755, 0, 0, 100, 1), -- Dwarven Fire
-(@OGUID+342, 22208, 30, 31.2216339111328125, -428.080474853515625, 41.5280303955078125, 0.549779474735260009, 0, 0, 0.271440833806991577, 0.96245509386062622, 0, 0, 100, 1), -- Dwarven Fire
-(@OGUID+343, 161488, 30, 360.91546630859375, -497.098541259765625, 71.33890533447265625, 3.141592741012573242, 0, 0, 0, 0, 0, 0, 100, 1), -- Bonfire
-(@OGUID+344, 161489, 30, 360.3800048828125, -527.5487060546875, 71.120452880859375, -2.05076241493225097, 0, 0, -0.85491198301315307, 0.518773019313812255, 0, 0, 100, 1), -- Anvil
-(@OGUID+345, 179391, 30, -172.362991333007812, -452.824188232421875, 33.27962493896484375, 0.62832045555114746, 0, 0, 0.309017896652221679, 0.951056241989135742, 0, 0, 100, 1), -- Anvil
-(@OGUID+346, 179392, 30, -171.28173828125, -456.89166259765625, 33.27962493896484375, 1.631882667541503906, 0, 0, 0.728370904922485351, 0.685183048248291015, 0, 0, 100, 1), -- Anvil
-(@OGUID+347, 179393, 30, -172.355575561523437, -453.880157470703125, 33.27962493896484375, 0.322886228561401367, 0, 0, 0.160742729902267456, 0.986996352672576904, 0, 0, 100, 1), -- Anvil
-(@OGUID+348, 179394, 30, -171.882232666015625, -454.6318359375, 33.27962493896484375, 0.759218096733093261, 0, 0, 0.370557367801666259, 0.928809583187103271, 0, 0, 100, 1), -- Anvil
-(@OGUID+349, 179395, 30, -171.6558837890625, -455.67132568359375, 33.27962493896484375, 0.061086133122444152, 0, 0, 0.030538318678736686, 0.999533593654632568, 0, 0, 100, 1), -- Anvil
-(@OGUID+350, 179396, 30, -170.698928833007812, -458.40960693359375, 33.27962493896484375, -1.02974343299865722, 0, 0, -0.49242320656776428, 0.870355904102325439, 0, 0, 100, 1), -- Anvil
-(@OGUID+351, 179397, 30, -170.140335083007812, -457.6087646484375, 33.27962493896484375, -0.68067771196365356, 0, 0, -0.33380651473999023, 0.942641615867614746, 0, 0, 100, 1), -- Anvil
-(@OGUID+352, 178646, 30, 640.8292, -55.81939, 41.79124, 1.151917, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Supply Crate
-(@OGUID+353, 178646, 30, 640.8867, -55.83501, 42.37793, -1.832596, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Supply Crate
-(@OGUID+354, 178646, 30, 639.7322, -57.26042, 42.27519, -1.605703, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Supply Crate
-(@OGUID+355, 178646, 30, 639.7105, -57.21251, 41.65714, -1.64061, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Supply Crate
--- (@OGUID+356 - 399
-(@OGUID+400, 178784, 30, -854.9324951171875, -85.9183502197265625, 68.60559844970703125, -2.04203534126281738, 0, 0, 0.852640211582183837, -0.52249848842620849, 150, 300, 100, 1), -- Coldtooth Supplies
-(@OGUID+401, 178784, 30, -947.64239501953125, -208.807296752929687, 77.01006317138671875, 1.361356735229492187, 0, 0, 0.629320383071899414, 0.777145922183990478, 150, 300, 100, 1), -- Coldtooth Supplies
-(@OGUID+402, 178784, 30, -951.39434814453125, -193.694778442382812, 67.63397216796875, 0.802851438522338867, 0, 0, 0.390731126070022583, 0.920504868030548095, 150, 300, 100, 1), -- Coldtooth Supplies
-(@OGUID+403, 178784, 30, -962.4659423828125, -168.578567504882812, 77.65695953369140625, 0.174532920122146606, 0, 0, 0.087155736982822418, 0.996194720268249511, 150, 300, 100, 1), -- Coldtooth Supplies
-(@OGUID+404, 178785, 30, 949.877197265625, -458.19769287109375, 56.48738479614257812, 0.314159303903579711, 0, 0, 0.156434476375579833, 0.987688362598419189, 300, 600, 100, 1), -- Irondeep Supplies
-(@OGUID+405, 178785, 30, 900.34991455078125, -479.02398681640625, 58.35532760620117187, 0.122173056006431579, 0, 0, 0.061048541218042373, 0.998134791851043701, 300, 600, 100, 1), -- Irondeep Supplies
-(@OGUID+406, 178785, 30, 817.5091552734375, -457.3311767578125, 48.46664810180664062, 2.076941728591918945, 0, 0, 0.861629128456115722, 0.507538378238677978, 300, 600, 100, 1), -- Irondeep Supplies
-(@OGUID+407, 178785, 30, 837.11700439453125, -452.555877685546875, 47.23311233520507812, -3.12413930892944335, 0, 0, 0.999961912631988525, -0.00872652977705001, 300, 600, 100, 1), -- Irondeep Supplies
-(@OGUID+408, 178785, 30, 854.44921875, -442.2548828125, 50.65888214111328125, 0.401425689458847045, 0, 0, 0.199367925524711608, 0.979924678802490234, 300, 600, 100, 1), -- Irondeep Supplies
-(@OGUID+409, 178785, 30, 869.7550048828125, -448.86676025390625, 52.5447540283203125, -0.85521155595779418, 0, 0, 0.414693355560302734, -0.90996122360229492, 300, 600, 100, 1), -- Irondeep Supplies
-(@OGUID+410, 178785, 30, 886.6846923828125, -442.35797119140625, 54.69621658325195312, -1.22173047065734863, 0, 0, 0.57357645034790039, -0.81915205717086791, 300, 600, 100, 1), -- Irondeep Supplies
-(@OGUID+411, 178785, 30, 825.2137451171875, -320.173828125, 63.71197509765625, -2.82743334770202636, 0, 0, 0.987688362598419189, -0.15643444657325744, 300, 600, 100, 1), -- Irondeep Supplies
-(@OGUID+412, 178785, 30, 793.41070556640625, -326.28082275390625, 63.11166763305664062, -2.7925267219543457, 0, 0, 0.984807729721069335, -0.17364819347858428, 300, 600, 100, 1); -- Irondeep Supplies
+(@OGUID+307, 3836, 30, -1260.3656005859375, -248.766998291015625, 77.9454193115234375, 1.483530640602111816, 0, 0, 0.67559051513671875, 0.737277030944824218, 0, 0, 100, 1), -- Burning Embers
+(@OGUID+308, 3837, 30, -1249.3153076171875, -244.907470703125, 92.33716583251953125, 0.401426285505294799, 0, 0, 0.199368208646774291, 0.979924619197845458, 0, 0, 100, 1), -- Burning Embers
+(@OGUID+309, 3838, 30, -1250.091796875, -254.603591918945312, 92.30152130126953125, 0.148352280259132385, 0, 0, 0.074108138680458068, 0.997250258922576904, 0, 0, 100, 1), -- Burning Embers
+(@OGUID+310, 177405, 30, -1140.8155517578125, -343.392364501953125, 50.90771484375, -2.7837996482849121, 0, 0, 0.98404097557067871, -0.17794400453567504, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+311, 177406, 30, -1139.681884765625, -356.2882080078125, 51.26401901245117187, -0.70685797929763793, 0, 0, -0.34611698985099792, 0.938190996646881103, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+312, 177408, 30, -743.42657470703125, -398.241973876953125, 76.4265594482421875, 0.872664213180541992, 0.01739400066435337, -0.00633100001141428, 0.422701001167297363, 0.906080007553100585, 0, 0, 100, 1), -- Bonfire (2066)
+(@OGUID+313, 177409, 30, -1215.5924072265625, -371.9459228515625, 56.52930068969726562, 0.357793539762496948, 0, 0, 0.177944004535675048, 0.98404097557067871, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+314, 177410, 30, -1241.24658203125, -345.114959716796875, 59.68674087524414062, 0.357793539762496948, 0, 0, 0.177944004535675048, 0.98404097557067871, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+315, 177411, 30, -1202.8046875, -271.598541259765625, 72.58054351806640625, 0.357793539762496948, 0, 0, 0.177944004535675048, 0.98404097557067871, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+316, 177412, 30, -1282.2083740234375, -284.083343505859375, 87.25603485107421875, -0.0610855221748352, 0, 0, -0.03053800016641616, 0.999534010887145996, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+317, 177413, 30, -1256.5538330078125, -280.27777099609375, 73.94734954833984375, -0.0610855221748352, 0, 0, -0.03053800016641616, 0.999534010887145996, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+318, 177292, 30, -1099.207763671875, -266.23101806640625, 57.88490676879882812, -2.28638100624084472, 0, 0, 0.90996098518371582, -0.41469299793243408, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+319, 177293, 30, -1082.6024169921875, -266.68072509765625, 57.85751724243164062, 2.408553361892700195, 0, 0, 0.933579981327056884, 0.358368009328842163, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+320, 179419, 30, -1423.1614990234375, -318.435760498046875, 89.11356353759765625, 2.356192827224731445, 0, 0, 0.923879027366638183, 0.382683992385864257, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+321, 179945, 30, -1070.53369140625, -617.908203125, 51.32492446899414062, -0.44506001472473144, 0, 0, -0.22069799900054931, 0.975341975688934326, 0, 0, 100, 1), -- Campfire (2061)
+(@OGUID+322, 177261, 30, -1290.2744140625, -172.470535278320312, 72.18534088134765625, 3.063053369522094726, 0.008720000274479389, -0.00034299999242648, 0.999190986156463623, 0.039257999509572982, 0, 0, 100, 1), -- Brazier (2061)
+(@OGUID+323, 177262, 30, -1286.2486572265625, -184.480148315429687, 71.833404541015625, -2.05076169967651367, -0.00733100017532706, -0.02996000088751316, -0.85425800085067749, 0.518932998180389404, 0, 0, 100, 1), -- Campfire (2061)
+(@OGUID+324, 177263, 30, -1280.1744384765625, -220.53717041015625, 72.26860809326171875, 1.623155117034912109, 0, 0, 0.72537398338317871, 0.688355028629302978, 0, 0, 100, 1), -- Campfire (2061)
+(@OGUID+325, 0, 30, -1368.373291015625, -218.88677978515625, 98.42658233642578125, -0.24434597790241241, 0, 0, 0.121869280934333801, -0.99254614114761352, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+326, 0, 30, -1371.357666015625, -216.960617065429687, 99.37108612060546875, -0.03490668907761573, 0, 0, 0.017452457919716835, -0.99984771013259887, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+327, 0, 30, -1361.5943603515625, -207.93658447265625, 99.3700714111328125, -3.07177948951721191, 0, 0, 0.999390840530395507, -0.03489946201443672, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+328, 0, 30, -1359.902099609375, -237.353836059570312, 99.3710174560546875, -1.01229083538055419, 0, 0, 0.484809547662734985, -0.87461978197097778, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+329, 0, 30, -1389.341552734375, -225.45367431640625, 99.3710174560546875, 0.663225054740905761, 0, 0, 0.325568139553070068, 0.945518553256988525, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+330, 0, 30, -1370.873046875, -205.35211181640625, 99.3712615966796875, 0.209439516067504882, 0, 0, 0.104528464376926422, 0.994521915912628173, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+331, 0, 30, -1367.1849365234375, -240.346893310546875, 99.37102508544921875, 0.157079622149467468, 0, 0, 0.078459098935127258, 0.996917307376861572, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+332, 0, 30, -1389.5538330078125, -230.888076782226562, 99.37131500244140625, -0.89011794328689575, 0, 0, 0.430511116981506347, -0.90258526802062988, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+333, 0, 30, -1384.009765625, -212.374404907226562, 99.37100982666015625, -2.68780708312988281, 0, 0, 0.974370062351226806, -0.22495099902153015, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+334, 0, 30, -1377.0546875, -210.818313598632812, 99.36980438232421875, -0.01745349541306495, 0, 0, 0.008726636879146099, -0.99996191263198852, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+335, 0, 30, -1373.2786865234375, -220.912872314453125, 98.42658233642578125, 2.443460941314697265, 0, 0, 0.939692616462707519, 0.342020153999328613, 0, 0, 100, 1), -- Drek'Thar's Scrolls (179004/179005)
+(@OGUID+336, 179909, 30, -914.01348876953125, -520.347900390625, 57.22958755493164062, 1.535890698432922363, 0.057845998555421829, -0.04110400006175041, 0.693563997745513916, 0.716892004013061523, 0, 0, 100, 1), -- Rock of Durotan
+(@OGUID+337, 51704, 30, -1245.2012939453125, -307.058685302734375, 63.31994247436523437, 3.079593896865844726, -0.00711202248930931, -0.02363062836229801, 0.999219894409179687, 0.030832992866635322, 0, 0, 100, 1), -- Anvil
+(@OGUID+338, 51705, 30, -1258.2259521484375, -310.97747802734375, 63.20154571533203125, 0.862905621528625488, 0.017974497750401496, -0.01690872386097908, 0.418255954980850219, 0.907993912696838378, 0, 0, 100, 1), -- Anvil
+(@OGUID+339, 50984, 30, -1250.392578125, -310.19140625, 61.18503189086914062, -1.10828375816345214, 0.024020733311772346, 0.005656135268509387, -0.52631253004074096, 0.849933028221130371, 0, 0, 100, 1), -- Heated Forge
+(@OGUID+340, 178442, 30, -1258.9970703125, -318.02740478515625, 62.53152084350585937, -2.61799383163452148, 0, 0, 0.965925812721252441, -0.25881904363632202, 0, 0, 100, 1), -- Horde Supply Crate
+(@OGUID+341, 178442, 30, -1259.0013427734375, -317.988433837890625, 63.88884353637695312, -0.97738438844680786, 0, 0, 0.469471573829650878, -0.88294756412506103, 0, 0, 100, 1), -- Horde Supply Crate
+(@OGUID+342, 178442, 30, -1260.2662353515625, -316.172149658203125, 64.1017303466796875, -2.47836756706237792, 0, 0, 0.9455186128616333, -0.32556810975074768, 0, 0, 100, 1), -- Horde Supply Crate
+(@OGUID+343, 178442, 30, -1260.1881103515625, -316.3150634765625, 62.78687286376953125, -2.18166136741638183, 0, 0, 0.887010812759399414, -0.46174865961074829, 0, 0, 100, 1), -- Horde Supply Crate
+(@OGUID+344, 22205, 30, 50.64005661010742187, -421.1663818359375, 44.7325439453125, -0.00875192321836948, -0.00858677271753549, 0.001553107169456779, -0.00436275731772184, 0.999952375888824462, 0, 0, 100, 1), -- Dwarven Fire (2061)
+(@OGUID+345, 22207, 30, 30.41684341430664062, -428.852752685546875, 41.5280303955078125, -2.59181499481201171, 0, 0, 0.962455391883850097, -0.27143990993499755, 0, 0, 100, 1), -- Dwarven Fire (2061)
+(@OGUID+346, 22208, 30, 31.2216339111328125, -428.080474853515625, 41.5280303955078125, 0.549779474735260009, 0, 0, 0.271440833806991577, 0.96245509386062622, 0, 0, 100, 1), -- Dwarven Fire (2061)
+(@OGUID+347, 161488, 30, 360.91546630859375, -497.098541259765625, 71.33890533447265625, 3.141592741012573242, 0, 0, 1, 0, 0, 0, 100, 1), -- Bonfire
+(@OGUID+348, 161489, 30, 360.3800048828125, -527.5487060546875, 71.120452880859375, -2.05076241493225097, 0, 0, -0.85491198301315307, 0.518773019313812255, 0, 0, 100, 1), -- Anvil
+(@OGUID+349, 179391, 30, -172.362991333007812, -452.824188232421875, 33.27962493896484375, 0.62832045555114746, 0, 0, 0.309017896652221679, 0.951056241989135742, 0, 0, 100, 1), -- Anvil
+(@OGUID+350, 179392, 30, -171.28173828125, -456.89166259765625, 33.27962493896484375, 1.631882667541503906, 0, 0, 0.728370904922485351, 0.685183048248291015, 0, 0, 100, 1), -- Anvil
+(@OGUID+351, 179393, 30, -172.355575561523437, -453.880157470703125, 33.27962493896484375, 0.322886228561401367, 0, 0, 0.160742729902267456, 0.986996352672576904, 0, 0, 100, 1), -- Anvil
+(@OGUID+352, 179394, 30, -171.882232666015625, -454.6318359375, 33.27962493896484375, 0.759218096733093261, 0, 0, 0.370557367801666259, 0.928809583187103271, 0, 0, 100, 1), -- Anvil
+(@OGUID+353, 179395, 30, -171.6558837890625, -455.67132568359375, 33.27962493896484375, 0.061086133122444152, 0, 0, 0.030538318678736686, 0.999533593654632568, 0, 0, 100, 1), -- Anvil
+(@OGUID+354, 179396, 30, -170.698928833007812, -458.40960693359375, 33.27962493896484375, -1.02974343299865722, 0, 0, -0.49242320656776428, 0.870355904102325439, 0, 0, 100, 1), -- Anvil
+(@OGUID+355, 179397, 30, -170.140335083007812, -457.6087646484375, 33.27962493896484375, -0.68067771196365356, 0, 0, -0.33380651473999023, 0.942641615867614746, 0, 0, 100, 1), -- Anvil
+(@OGUID+356, 178646, 30, 640.8292236328125, -55.8193893432617187, 41.79124069213867187, 1.151917338371276855, 0, 0, 0.544639050960540771, 0.838670551776885986, 0, 0, 100, 1), -- Alliance Supply Crate
+(@OGUID+357, 178646, 30, 640.88671875, -55.8350143432617187, 42.37792587280273437, -1.83259570598602294, 0, 0, 0.79335331916809082, -0.60876142978668212, 0, 0, 100, 1), -- Alliance Supply Crate
+(@OGUID+358, 178646, 30, 639.73223876953125, -57.2604179382324218, 42.2751922607421875, -1.60570323467254638, 0, 0, 0.719339907169342041, -0.69465827941894531, 0, 0, 100, 1), -- Alliance Supply Crate
+(@OGUID+359, 178646, 30, 639.71051025390625, -57.2125129699707031, 41.657135009765625, -1.64060950279235839, 0, 0, 0.731353700160980224, -0.68199831247329711, 0, 0, 100, 1), -- Alliance Supply Crate
+(@OGUID+360, 178784, 30, -820.64410400390625, -136.04296875, 63.19773483276367187, 2.408554315567016601, 0, 0, 0.933580398559570312, 0.358367979526519775, 150, 300, 100, 1), -- Coldtooth Supplies
+(@OGUID+361, 178784, 30, -854.9324951171875, -85.9183502197265625, 68.60559844970703125, -2.04203534126281738, 0, 0, 0.852640211582183837, -0.52249848842620849, 150, 300, 100, 1), -- Coldtooth Supplies
+(@OGUID+362, 178784, 30, -947.64239501953125, -208.807296752929687, 77.01006317138671875, 1.361356735229492187, 0, 0, 0.629320383071899414, 0.777145922183990478, 150, 300, 100, 1), -- Coldtooth Supplies
+(@OGUID+363, 178784, 30, -951.39434814453125, -193.694778442382812, 67.63397216796875, 0.802851438522338867, 0, 0, 0.390731126070022583, 0.920504868030548095, 150, 300, 100, 1), -- Coldtooth Supplies
+(@OGUID+364, 178784, 30, -962.4659423828125, -168.578567504882812, 77.65695953369140625, 0.174532920122146606, 0, 0, 0.087155736982822418, 0.996194720268249511, 150, 300, 100, 1), -- Coldtooth Supplies
+(@OGUID+365, 178785, 30, 949.877197265625, -458.19769287109375, 56.48738479614257812, 0.314159303903579711, 0, 0, 0.156434476375579833, 0.987688362598419189, 300, 600, 100, 1), -- Irondeep Supplies
+(@OGUID+366, 178785, 30, 900.34991455078125, -479.02398681640625, 58.35532760620117187, 0.122173056006431579, 0, 0, 0.061048541218042373, 0.998134791851043701, 300, 600, 100, 1), -- Irondeep Supplies
+(@OGUID+367, 178785, 30, 817.5091552734375, -457.3311767578125, 48.46664810180664062, 2.076941728591918945, 0, 0, 0.861629128456115722, 0.507538378238677978, 300, 600, 100, 1), -- Irondeep Supplies
+(@OGUID+368, 178785, 30, 837.11700439453125, -452.555877685546875, 47.23311233520507812, -3.12413930892944335, 0, 0, 0.999961912631988525, -0.00872652977705001, 300, 600, 100, 1), -- Irondeep Supplies
+(@OGUID+369, 178785, 30, 854.44921875, -442.2548828125, 50.65888214111328125, 0.401425689458847045, 0, 0, 0.199367925524711608, 0.979924678802490234, 300, 600, 100, 1), -- Irondeep Supplies
+(@OGUID+370, 178785, 30, 869.7550048828125, -448.86676025390625, 52.5447540283203125, -0.85521155595779418, 0, 0, 0.414693355560302734, -0.90996122360229492, 300, 600, 100, 1), -- Irondeep Supplies
+(@OGUID+371, 178785, 30, 886.6846923828125, -442.35797119140625, 54.69621658325195312, -1.22173047065734863, 0, 0, 0.57357645034790039, -0.81915205717086791, 300, 600, 100, 1), -- Irondeep Supplies
+(@OGUID+372, 178785, 30, 825.2137451171875, -320.173828125, 63.71197509765625, -2.82743334770202636, 0, 0, 0.987688362598419189, -0.15643444657325744, 300, 600, 100, 1), -- Irondeep Supplies
+(@OGUID+373, 178785, 30, 793.41070556640625, -326.28082275390625, 63.11166763305664062, -2.7925267219543457, 0, 0, 0.984807729721069335, -0.17364819347858428, 300, 600, 100, 1), -- Irondeep Supplies
+(@OGUID+374, 177425, 30, -353.1181640625, 37.095703125, 65.89037322998046875, 3.141592741012573242, 0, 0, 1, 0, 0, 0, 100, 1), -- Campfire (2061)
+(@OGUID+375, 177396, 30, 12.82514095306396484, -120.210830688476562, 41.66688156127929687, 3.141592741012573242, 0, 0, 1, 0, 0, 0, 100, 1), -- Cauldron (2061)
+(@OGUID+376, 0, 30, 724.22760009765625, -28.8534622192382812, 50.62129974365234375, 0.541052043437957763, 0, 0, 0.267238378524780273, 0.963630437850952148, 0, 0, 100, 1), -- Vanndar's Documents (179006/179007/179008)
+(@OGUID+377, 0, 30, 717.86309814453125, 4.872232913970947265, 50.62129974365234375, 1.745329260826110839, 0, 0, 0.766044437885284423, 0.642787635326385498, 0, 0, 100, 1), -- Vanndar's Documents (179006/179007/179008)
+(@OGUID+378, 0, 30, 717.66937255859375, 1.327962040901184082, 50.62129974365234375, 2.513274192810058593, 0, 0, 0.951056540012359619, 0.309016972780227661, 0, 0, 100, 1), -- Vanndar's Documents (179006/179007/179008)
+(@OGUID+379, 0, 30, 715.34954833984375, 2.809135913848876953, 50.62129974365234375, -1.83259570598602294, 0, 0, 0.79335331916809082, -0.60876142978668212, 0, 0, 100, 1), -- Vanndar's Documents (179006/179007/179008)
+(@OGUID+380, 0, 30, 721.557861328125, 1.249673962593078613, 50.62129974365234375, 1.954768657684326171, 0, 0, 0.82903754711151123, 0.559192895889282226, 0, 0, 100, 1), -- Vanndar's Documents (179006/179007/179008)
+(@OGUID+381, 0, 30, 727.11688232421875, -28.9257278442382812, 50.62130355834960937, 2.775073528289794921, 0, 0, 0.983254909515380859, 0.182235524058341979, 0, 0, 100, 1), -- Vanndar's Documents (179006/179007/179008)
+(@OGUID+382, 0, 30, 722.92547607421875, -31.2355690002441406, 50.62130355834960937, -1.65806281566619873, 0, 0, 0.737277328968048095, -0.67559021711349487, 0, 0, 100, 1), -- Vanndar's Documents (179006/179007/179008)
+(@OGUID+383, 34571, 30, -105.423355102539062, -584.35174560546875, 42.01491928100585937, 2.364921092987060546, 0, 0, 0.925540506839752197, 0.378648638725280761, 0, 0, 100, 1), -- Forge
+(@OGUID+384, 161487, 30, 361.097869873046875, -531.69293212890625, 71.1897735595703125, -2.15547943115234375, 0, 0, 0.88089001178741455, -0.47332000732421875, 0, 0, 100, 1), -- Forge
+-- (@OGUID+385, 180424, 30, 794.64312744140625, -493.474517822265625, 99.77789306640625, -0.12217313796281814, 0, 0, 0.061048582196235656, -0.9981347918510437, 0, 0, 100, 1), -- Alterac Valley Gate
+-- (@OGUID+386, 180322, 30, 794.63494873046875, -493.643280029296875, 98.60199737548828125, 3.03687286376953125, 0, 0, 0.998629510402679443, 0.05233597382903099, 0, 0, 100, 1); -- Ghost Gate
+-- Alliance - Boss Dead - Alliance Lost Flames?
+(@OGUID+401, 179065, 30, 584.4066162109375, -40.0251731872558593, 38.67543411254882812, -3.07177948951721191, 0, 0, 0.999390840530395507, -0.03489946201443672, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+402, 179065, 30, 669.2791748046875, -9.81559276580810546, 68.08280181884765625, -0.34906607866287231, 0, 0, 0.173648297786712646, -0.98480772972106933, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+403, 179065, 30, 637.67742919921875, -22.1296119689941406, 45.83824539184570312, -0.87266474962234497, 0, 0, 0.422618329524993896, -0.90630775690078735, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+404, 179065, 30, 680.2996826171875, -48.2595481872558593, 69.04096221923828125, 1.850049138069152832, 0, 0, 0.798635542392730712, 0.60181504487991333, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+405, 179065, 30, 601.42364501953125, -8.08734798431396484, 41.9954376220703125, -0.33161243796348571, 0, 0, 0.165047541260719299, -0.98628562688827514, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+406, 179065, 30, 618.95843505859375, -91.4492721557617187, 46.2015838623046875, -0.55850535631179809, 0, 0, 0.275637358427047729, -0.96126168966293334, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+407, 179065, 30, 693.9171142578125, -19.9106998443603515, 50.62129974365234375, 2.809980154037475585, 0, 0, 0.986285626888275146, 0.165047571063041687, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+408, 179065, 30, 649.8858642578125, -60.9094505310058593, 41.657135009765625, -0.45378574728965759, 0, 0, 0.224951118230819702, -0.9743700623512268, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+409, 179065, 30, 697.90252685546875, -10.8285045623779296, 50.36879730224609375, 1.413716673851013183, 0, 0, 0.649448037147521972, 0.760405957698822021, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+410, 179065, 30, 619.4541015625, -31.8742408752441406, 45.79620361328125, 0.750491559505462646, 0, 0, 0.366501212120056152, 0.930417597293853759, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+411, 179065, 30, 683.22698974609375, -21.9343528747558593, 80.07077789306640625, 2.234021425247192382, 0, 0, 0.898794054985046386, 0.438371151685714721, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+412, 179065, 30, 672.25811767578125, -17.0868606567382812, 50.62070465087890625, 3.089232683181762695, 0, 0, 0.999657332897186279, 0.026176994666457176, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+413, 179065, 30, 629.0030517578125, -137.68023681640625, 39.66905975341796875, 2.129301786422729492, 0, 0, 0.874619722366333007, 0.484809577465057373, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+414, 179065, 30, 716.99456787109375, -34.8136940002441406, 50.62130355834960937, 2.670353651046752929, 0, 0, 0.972369909286499023, 0.233445420861244201, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+415, 179065, 30, 731.68438720703125, -8.08680534362792968, 50.62129974365234375, -0.54105222225189208, 0, 0, 0.267238438129425048, -0.96363043785095214, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+416, 179065, 30, 704.49420166015625, 6.974718093872070312, 50.62130355834960937, -0.94247794151306152, 0, 0, 0.453990578651428222, -0.8910064697265625, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+417, 179065, 30, 581.780517578125, -70.9401016235351562, 38.22216033935546875, 1.605702877044677734, 0, 0, 0.71933978796005249, 0.694658398628234863, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+418, 179065, 30, 658.65802001953125, -117.631019592285156, 49.6421051025390625, -2.75762009620666503, 0, 0, 0.981627166271209716, -0.19080902636051177, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+419, 179065, 30, 680.2628173828125, -118.591583251953125, 64.33632659912109375, 2.548180580139160156, 0, 0, 0.956304728984832763, 0.292371779680252075, 0, 0, 0, 1), -- Roaring Flame
+(@OGUID+420, 179065, 30, 676.392822265625, -146.849609375, 56.54253005981445312, 2.460914134979248046, 0, 0, 0.942641496658325195, 0.333806902170181274, 0, 0, 0, 1); -- Roaring Flame
 
--- Moved Door and Added Ghost Gate
--- (@OGUID+989, 180424, 30, 794.64312744140625, -493.474517822265625, 99.77789306640625, -0.12217313796281814, 0, 0, 0.061048582196235656, -0.9981347918510437, 0, 0, 100, 1), -- Alterac Valley Gate
--- (@OGUID+990, 180322, 30, 794.63494873046875, -493.643280029296875, 98.60199737548828125, 3.03687286376953125, 0, 0, 0.998629510402679443, 0.05233597382903099, 0, 0, 100, 1), -- Ghost Gate
--- Comment Objective Gos for now as they require gameobject_battleground
--- (@OGUID+XXX, 179308, 30, 78.38553, -405.4505, 46.60544, -0.8552116, 0, 0, 0, 0, 0, 0, 100, 1), -- Contested Banner
--- (@OGUID+XXX, 180102, 30, 669.2953, -294.0375, 30.28969, -0.3665193, 0, 0, 0, 0, 0, 0, 100, 1), -- Neutral Banner Aura
--- (@OGUID+XXX, 180102, 30, -611.5228, -396.819, 60.85839, -0.03490669, 0, 0, 0, 0, 0, 0, 100, 1), -- Neutral Banner Aura
--- (@OGUID+XXX, 180102, 30, 77.80132, -404.6999, 46.75493, -0.8726647, 0, 0, 0, 0, 0, 0, 100, 1), -- Neutral Banner Aura
--- (@OGUID+XXX, 180102, 30, 78.38553, -405.4505, 46.60544, -0.8552116, 0, 0, 0, 0, 0, 0, 100, 1), -- Neutral Banner Aura
--- (@OGUID+XXX, 180423, 30, 555.8476, -84.41515, 64.43967, 3.124139, 0, 0, 0, 0, 0, 0, 100, 1), -- Neutral Banner Aura, Large
--- (@OGUID+XXX, 178389, 30, 669.0073, -294.0783, 30.29091, 2.775074, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
--- (@OGUID+XXX, 180100, 30, 669.0073, -294.0783, 30.29091, 2.775074, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner Aura
--- (@OGUID+XXX, 178925, 30, 553.7794, -78.65658, 51.93779, -1.22173, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner
--- (@OGUID+XXX, 180100, 30, 77.50445, -404.5873, 46.78254, 2.286381, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner Aura
--- (@OGUID+XXX, 178932, 30, 679.3392, -136.4678, 73.96262, -2.164208, 0, 0, 0, 0, 0, 0, 100, 1), -- [PH] Alliance A2 Tower Banner BIG
--- (@OGUID+XXX, 180421, 30, 557.2267, -86.85205, 62.1767, -0.244346, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner Aura, Large
--- (@OGUID+XXX, 180100, 30, 638.5921, -32.42204, 46.06084, -1.623156, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner Aura
--- (@OGUID+XXX, 180421, 30, 679.3392, -136.4678, 73.96262, -2.164208, 0, 0, 0, 0, 0, 0, 100, 1), -- Alliance Banner Aura, Large
--- (@OGUID+XXX, 178932, 30, 679.3392, -136.4678, 73.96262, -2.164208, 0, 0, 0, 0, 0, 0, 100, 1), -- [PH] Alliance A2 Tower Banner BIG
--- (@OGUID+XXX, 178945, 30, -768.0873, -362.6661, 90.89486, 1.117011, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
--- (@OGUID+XXX, 179483, 30, -612.6716, -396.6933, 60.85839, 3.089233, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
--- (@OGUID+XXX, 179436, 30, 555.8476, -84.41515, 64.43967, 3.124139, 0, 0, 0, 0, 0, 0, 100, 1), -- [PH] Horde A1 Tower Pre-Banner BIG
--- (@OGUID+XXX, 179440, 30, 677.5917, -139.0343, 76.21964, -1.989675, 0, 0, 0, 0, 0, 0, 100, 1), -- [PH] Horde A2 Tower Pre-Banner BIG
--- (@OGUID+XXX, 180101, 30, -1082.529, -346.567, 54.97712, -1.553343, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner Aura
--- (@OGUID+XXX, 180101, 30, -612.6716, -396.6933, 60.85839, 3.089233, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner Aura
--- (@OGUID+XXX, 180101, 30, -202.6227, -112.5515, 78.49015, -1.256637, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner Aura
--- (@OGUID+XXX, 180101, 30, 77.79785, -404.6955, 46.91283, -0.8552116, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner Aura
--- (@OGUID+XXX, 178946, 30, -571.8796, -262.7768, 75.00867, -0.8028515, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner
--- (@OGUID+XXX, 180422, 30, -768.199, -363.1053, 104.5372, 0.1047198, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner Aura, Large
--- (@OGUID+XXX, 178957, 30, -768.199, -363.1053, 104.5372, 0.1047198, 0, 0, 0, 0, 0, 0, 100, 1), -- [PH] Horde H3 Tower Banner BIG
--- (@OGUID+XXX, 180422, 30, -572.3289, -262.4763, 88.64957, -0.5759585, 0, 0, 0, 0, 0, 0, 100, 1), -- Horde Banner Aura, Large
--- (@OGUID+XXX, 178958, 30, -572.3289, -262.4763, 88.64957, -0.5759585, 0, 0, 0, 0, 0, 0, 100, 1), -- [PH] Horde H4 Tower Banner BIG
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179004 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+325 AND @OGUID+335; -- Drek'Thar's Scrolls
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179005 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+325 AND @OGUID+335; -- Drek'Thar's Scrolls
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179006 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+376 AND @OGUID+382; -- Vanndar's Documents
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179007 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+376 AND @OGUID+382; -- Vanndar's Documents
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179008 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+376 AND @OGUID+382; -- Vanndar's Documents
+
+-- TBC only
+UPDATE `gameobject` SET `spawnMask` = 3 WHERE `map` = 30;
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1000,181355,30,1,480.259,-488.311,66.2366,1.65806,0,0,0.737277,0.675591,7200,7200,255,1), -- Standing, Exterior, Medium - MFF
@@ -3216,8 +2635,20 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+1026,181392,30,1,579.056,-76.7292,43.0804,0.488691,0,0,0.241921,0.970296,7200,7200,255,1), -- Hanging, Streamer - MFF
 (@OGUID+1027,181392,30,1,659.132,-122.51,54.9667,2.56563,0,0,0.958819,0.284016,7200,7200,255,1); -- Hanging, Streamer - MFF
 
--- TBC only
-UPDATE `gameobject` SET `spawnMask` = 3 WHERE `map` = 30;
+-- Hacks due to Core Issues
+UPDATE `gameobject` SET `id` = 178364 WHERE `guid` BETWEEN @OGUID+13 AND @OGUID+19; -- BG_AV_GO_GY_BANNER_HORDE
+UPDATE `gameobject` SET `id` = 178365 WHERE `guid` BETWEEN @OGUID+20 AND @OGUID+26; -- BG_AV_GO_GY_BANNER_ALLIANCE
+UPDATE `gameobject` SET `id` = 178925 WHERE `guid` BETWEEN @OGUID+27 AND @OGUID+30; -- BG_AV_GO_BANNER_ALLIANCE
+UPDATE `gameobject` SET `id` = 178927 WHERE `guid` BETWEEN @OGUID+31 AND @OGUID+34; -- object entries: alliance: 178927; horde contested: 179436
+UPDATE `gameobject` SET `id` = 178940 WHERE `guid` BETWEEN @OGUID+35 AND @OGUID+38; -- BG_AV_GO_BANNER_ALLIANCE_CONT
+UPDATE `gameobject` SET `id` = 178943 WHERE `guid` BETWEEN @OGUID+39 AND @OGUID+42; -- BG_AV_GO_BANNER_HORDE
+UPDATE `gameobject` SET `id` = 178955 WHERE `guid` BETWEEN @OGUID+43 AND @OGUID+48; -- object entries: horde: 178955; alliance contested: 179446
+UPDATE `gameobject` SET `id` = 179286 WHERE `guid` BETWEEN @OGUID+156 AND @OGUID+162; -- BG_AV_GO_GY_BANNER_ALLIANCE_CONT
+UPDATE `gameobject` SET `id` = 179287 WHERE `guid` BETWEEN @OGUID+163 AND @OGUID+169; -- BG_AV_GO_GY_BANNER_HORDE_CONT
+UPDATE `gameobject` SET `id` = 179435 WHERE `guid` BETWEEN @OGUID+178 AND @OGUID+181; -- BG_AV_GO_BANNER_HORDE_CONT
+UPDATE `gameobject` SET `id` = 179436 WHERE `guid` BETWEEN @OGUID+182 AND @OGUID+185; -- object entries: alliance: 178927; horde contested: 179436
+UPDATE `gameobject` SET `id` = 179446 WHERE `guid` BETWEEN @OGUID+186 AND @OGUID+189; -- object entries: horde: 178955; alliance contested: 179446
+UPDATE `gameobject` SET `spawnMask` = 0 WHERE `guid` BETWEEN @OGUID+401 AND @OGUID+416; -- Alliance - Boss Dead - Alliance Lost Flames?
 
 -- ======
 -- EVENTS
@@ -3361,13 +2792,25 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 25, 'Hardpacked Snowdrift (180654)');
+(@PGUID+1, 25, 'Hardpacked Snowdrift (180654)'),
+(@PGUID+2, 7, 'Drek''Thar''s Scrolls (179004/179005)');
 
 -- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
--- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
+(@OGUID+325, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+326, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+327, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+328, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+329, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+330, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+331, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+332, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+333, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+334, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)'),
+(@OGUID+335, @PGUID+2, 0, 'Drek''Thar''s Scrolls (179004/179005)');
 
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (180654, @PGUID+1, 0, 'Hardpacked Snowdrift (180654)');
