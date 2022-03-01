@@ -1,39 +1,42 @@
 -- Main Script
 DELETE FROM dbscripts_on_quest_end WHERE id = '2521';
 INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES 
-('2521', '0', '2', '32', '1', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Check if we are in range'),
-('2521', '0', '1', '21', '1', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Set ActiveObject'),
+('2521', '0', '1', '21', '1', '0', '0', '0', '0', '0','0', '0', '0', '0', '-11362.81','-2982.8386','0.780107', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Set ActiveObject'),
 ('2521', '0', '2', '32', '1', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Pause Waypoints'),
-('2521', '104000', '0', '29', '3', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Remove Npc Flags'),
-('2521', '111000', '0', '0', '0', '0', '0', '0', '0', '0','3441', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
-('2521', '112000', '0', '10', '7364', '15797', '0', '0', '0','0', '0', '0', '0', '0', '-11366.8', '-2979.6', '-0.198364', '0.628319', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Sphere'),
-('2521', '114000', '0', '1', '51', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - OneShotSpellCast'),
-('2521', '114000', '0', '0', '0', '0', '0', '0', '0', '0','3442', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
-('2521', '114000', '0', '15', '10387', '0', '0', '7364', '30', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Flawless Draenethyst Sphere - Cast Spell Lightning Surge'),
-('2521', '115000', '0', '10', '7365', '1609', '0', '0', '0','8', '0', '0', '0', '25210', '-11364.8', '-2978.08', '0.21003', '0.523599', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Fragment'),
-('2521', '117000', '0', '10', '7365', '3235', '0', '0', '0','8', '0', '0', '0', '25210', '-11365.2', '-2981.1', '0.722663', '1.01229', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Fragment'),
-('2521', '121000', '0', '10', '7365', '2828', '0', '0', '0','8', '0', '0', '0', '25210', '-11367.9', '-2980.55', '1.2531', '0.610865', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Fragment'),
-('2521', '124000', '0', '10', '7365', '2438', '0', '0', '0','8', '0', '0', '0', '25210', '-11367.9', '-2977.98', '0.831891', '0.226893', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Fragment'),
-('2521', '129000', '0', '9', '6000016', '35', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', '03', 'To Serve Kum\'isha: Respawn GameObject Nether Rift'),
-('2521', '132000', '0', '0', '0', '0', '0', '0', '0', '0','3475', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
-('2521', '134000', '0', '10', '7401', '21641', '0', '0', '0','8', '0', '0', '0', '25219', '-11283.3', '-2978.3', '21.7695', '3.327', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
-('2521', '134000', '0', '10', '7401', '21641', '0', '0', '0','8', '0', '0', '0', '25218', '-11281.2', '-2979.6', '21.7026', '3.67157', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
-('2521', '134000', '0', '10', '7401', '21641', '0', '0', '0','8', '0', '0', '0', '25217', '-11278.9', '-2978.77', '22.0463', '3.69067', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
-('2521', '134000', '0', '10', '7401', '21641', '0', '0', '0','8', '0', '0', '0', '25216', '-11283', '-2977.42', '21.7573', '3.28084', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
-('2521', '134000', '0', '10', '7401', '23250', '0', '0', '0','8', '0', '0', '0', '25215', '-11326.5', '-2940.2', '26.2404', '4.56531', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
-('2521', '134000', '0', '10', '7401', '23250', '0', '0', '0','8', '0', '0', '0', '25214', '-11326.9', '-2945.39', '22.8358', '5.49779', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
-('2521', '134000', '0', '10', '7401', '19610', '0', '0', '0','8', '0', '0', '0', '25213', '-11346.9', '-2926.89', '20.1307', '3.9705', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
-('2521', '134000', '0', '10', '7401', '19610', '0', '0', '0','8', '0', '0', '0', '25212', '-11350', '-2927.87', '19.9723', '4.73971', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
-('2521', '134000', '0', '10', '7401', '19610', '0', '0', '0','8', '0', '0', '0', '25211', '-11353.1', '-2930.6', '19.0882', '4.99767', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
-('2521', '147000', '0', '0', '0', '0', '0', '0', '0', '0','3476', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
-('2521', '162000', '0', '10', '7409', '10890', '0', '0', '0','8', '0', '0', '0', '0', '-11366.1', '-2979.03', '1.05193', '0.541052', 'To Serve Kum\'isha: Summon Creature Faltering Draenethyst Sphere'),
-('2521', '162000', '1', '15', '10451', '0', '0', '7409', '30', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Flawless Draenethyst Sphere - Cast Spell Implosion'),
-('2521', '172000', '0', '28', '7', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Set Stand State to UNIT_STAND_STATE_DEAD'),
-('2521', '174000', '0', '0', '0', '0', '0', '0', '0', '0','3477', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
-('2521', '177000', '0', '28', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Set Stand State to UNIT_STAND_STATE_STAND'),
-('2521', '177000', '0', '21', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Remove ActiveObject'),
-('2521', '177000', '0', '29', '3', '1', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Add Npc Flags'),
-('2521', '177000', '0', '32', '1', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Start Waypoints');
+('2521', '112000', '0', '29', '2', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Remove Npc Flags'),
+('2521', '112000', '0', '25', '1', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Set Run'),
+('2521', '113000', '3', '3', '01', '0', '0', '0', '0', '0','0', '0', '0', '0', '-11362.586' ,'-2976.938','0.048906326', '3.582', 'To Serve Kum\'isha: Kum\'isha the Collector - Move to crate'),
+('2521', '121000', '0', '25', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Set Walk'),
+('2521', '121000', '0', '0', '0', '0', '0', '0', '0', '0','3441', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
+('2521', '122000', '0', '10', '7364', '15797', '0', '0', '0','0', '0', '0', '0', '0', '-11366.8', '-2979.6', '-0.198364', '0.628319', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Sphere'),
+('2521', '124000', '0', '1', '51', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - OneShotSpellCast'),
+('2521', '124000', '0', '0', '0', '0', '0', '0', '0', '0','3442', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
+('2521', '124000', '0', '15', '10387', '0', '0', '7364', '30', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Flawless Draenethyst Sphere - Cast Spell Lightning Surge'),
+('2521', '125000', '0', '10', '7365', '1609', '0', '0', '0','8', '0', '0', '0', '25210', '-11364.8', '-2978.08', '0.21003', '0.523599', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Fragment'),
+('2521', '127000', '0', '10', '7365', '3235', '0', '0', '0','8', '0', '0', '0', '25210', '-11365.2', '-2981.1', '0.722663', '1.01229', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Fragment'),
+('2521', '131000', '0', '10', '7365', '2828', '0', '0', '0','8', '0', '0', '0', '25210', '-11367.9', '-2980.55', '1.2531', '0.610865', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Fragment'),
+('2521', '134000', '0', '10', '7365', '2438', '0', '0', '0','8', '0', '0', '0', '25210', '-11367.9', '-2977.98', '0.831891', '0.226893', 'To Serve Kum\'isha: Summon Creature Flawless Draenethyst Fragment'),
+('2521', '139000', '0', '9', '6000016', '35', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', '03', 'To Serve Kum\'isha: Respawn GameObject Nether Rift'),
+('2521', '142000', '0', '0', '0', '0', '0', '0', '0', '0','3475', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
+('2521', '144000', '0', '10', '7401', '21641', '0', '0', '0','8', '0', '0', '0', '25219', '-11283.3', '-2978.3', '21.7695', '3.327', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
+('2521', '144000', '0', '10', '7401', '21641', '0', '0', '0','8', '0', '0', '0', '25218', '-11281.2', '-2979.6', '21.7026', '3.67157', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
+('2521', '144000', '0', '10', '7401', '21641', '0', '0', '0','8', '0', '0', '0', '25217', '-11278.9', '-2978.77', '22.0463', '3.69067', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
+('2521', '144000', '0', '10', '7401', '21641', '0', '0', '0','8', '0', '0', '0', '25216', '-11283', '-2977.42', '21.7573', '3.28084', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
+('2521', '144000', '0', '10', '7401', '23250', '0', '0', '0','8', '0', '0', '0', '25215', '-11326.5', '-2940.2', '26.2404', '4.56531', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
+('2521', '144000', '0', '10', '7401', '23250', '0', '0', '0','8', '0', '0', '0', '25214', '-11326.9', '-2945.39', '22.8358', '5.49779', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
+('2521', '144000', '0', '10', '7401', '19610', '0', '0', '0','8', '0', '0', '0', '25213', '-11346.9', '-2926.89', '20.1307', '3.9705', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
+('2521', '144000', '0', '10', '7401', '19610', '0', '0', '0','8', '0', '0', '0', '25212', '-11350', '-2927.87', '19.9723', '4.73971', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
+('2521', '144000', '0', '10', '7401', '19610', '0', '0', '0','8', '0', '0', '0', '25211', '-11353.1', '-2930.6', '19.0882', '4.99767', 'To Serve Kum\'isha: Summon Creature Draenei Refugee'),
+('2521', '157000', '0', '0', '0', '0', '0', '0', '0', '0','3476', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
+('2521', '172000', '0', '10', '7409', '10890', '0', '0', '0','8', '0', '0', '0', '0', '-11366.1', '-2979.03', '1.05193', '0.541052', 'To Serve Kum\'isha: Summon Creature Faltering Draenethyst Sphere'),
+('2521', '172000', '1', '15', '10451', '0', '0', '7409', '30', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Flawless Draenethyst Sphere - Cast Spell Implosion'),
+('2521', '182000', '0', '28', '7', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Set Stand State to UNIT_STAND_STATE_DEAD'),
+('2521', '184000', '0', '0', '0', '0', '0', '0', '0', '0','3477', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Say Text'),
+('2521', '187000', '0', '28', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Set Stand State to UNIT_STAND_STATE_STAND'),
+('2521', '187000', '0', '21', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Remove ActiveObject'),
+('2521', '187000', '0', '29', '2', '1', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Add Npc Flags'),
+('2521', '197000', '0', '32', '0', '0', '0', '0', '0', '0','0', '0', '0', '0', '0', '0', '0', '0', 'To Serve Kum\'isha: Kum\'isha the Collector - Start Waypoints - Custom');
+-- On TBC retail he get stuck at the crate and dont starts his waypoint movement again. Custom fixed this
 
 UPDATE `quest_template` SET `CompleteScript`=2521 WHERE `entry`=2521;
 
@@ -205,7 +208,7 @@ INSERT INTO `creature_spawn_data_template` (`Entry`, `RelayId`) VALUES
 -- Correct creature data.
 UPDATE `creature_template` SET `Faction`=35, `UnitFlags`=768, `SpeedWalk`=1, `SpeedRun`=1.14286 WHERE `entry`=7364;
 UPDATE `creature_template` SET `Faction`=35, `UnitFlags`=768, `SpeedWalk`=1, `SpeedRun`=1.14286 WHERE `entry`=7365;
-UPDATE `creature_template` SET `Faction`=120, `UnitFlags`=768, `SpeedWalk`=1.11111, `SpeedRun`=1.14286 WHERE `entry`=7401;
+UPDATE `creature_template` SET `Faction`=120, `UnitFlags`=768, `SpeedWalk`=1.11111, `SpeedRun`=1.14286, MovementType='0' WHERE `entry`=7401;
 UPDATE `creature_template` SET `Faction`=14, `UnitFlags`=33555200, `SpeedWalk`=1, `SpeedRun`=1.14286 WHERE `entry`=7409;
 
 -- Define targets for spell Implosion.
@@ -222,7 +225,7 @@ UPDATE `broadcast_text` SET `ChatTypeID`=2 WHERE `Id`=3441;
 
 -- Kum'isha the Collector Waypoints
 DELETE FROM creature_movement_template WHERE entry = 7363;
-INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `waittime`, `script_id`) VALUES 
+INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES 
 (7363, 0, 1, -11369.783,-2980.7336,1.626466, 0, 0, 0),
 (7363, 0, 2, -11371.476,-2982.291,1.6745617, 100, 34000, 0),
 (7363, 0, 3, -11368.286,-2973.2224,1.7229016, 0, 0, 0),
@@ -246,4 +249,4 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `position_
 (7363, 0, 21, -11361.419,-2998.49,-0.008955479, 0, 0, 0),
 (7363, 0, 22, -11362.81,-2982.8386,0.780107, 100, 450000, 0);
 
-UPDATE `creature` SET `MovementType`='2' WHERE (`id`='7363');
+UPDATE creature SET MovementType='2' WHERE (`id`='7363');
