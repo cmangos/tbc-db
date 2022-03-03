@@ -1,4 +1,4 @@
-SET @PATH_ID := 15544; -- 3
+SET @PATH_ID := 3; -- 3
 SET @PATH_TYPE := 4;
 
 SET @GROUP_ID := 15;
