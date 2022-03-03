@@ -9910,11 +9910,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stormscale Wave Rider 2179
 ('217901','2179','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Stormscale Myrmidon - Flee at 15% HP'),
 ('217902','2179','0','0','100','1025','8000','13000','12000','16000','0','0','11','13586','17','0','0','0','0','0','0','0','0','0','Stormscale Wave Rider - Cast Aqua Jet'),
--- Stormscale Siren 2180
+-- Stormscale Siren 2180 - creature_spell_list
 ('218001','2180','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Stormscale Siren - Enable Range Mode on Spawn'),
 ('218002','2180','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Stormscale Siren - Flee at 15% HP'),
-('218003','2180','14','0','100','1025','200','40','4000','12000','18000','25000','11','11642','12','0','0','0','0','0','0','0','0','0','Stormscale Siren - Cast Heal on Friendly Missing HP'),
-('218004','2180','9','0','100','1025','0','40','3400','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Stormscale Siren - Cast Holy Smite'),
+('218003','2180','9','0','100','1025','0','40','3400','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Stormscale Siren - Cast Holy Smite'),
 -- Stormscale Myrmidon 2181
 ('218101','2181','11','0','100','0','0','0','0','0','0','0','11','7095','0','34','0','0','0','0','0','0','0','0','Stormscale Myrmidon - Cast Knockdown Proc on Spawn'),
 ('218102','2181','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Stormscale Myrmidon - Flee at 15% HP'),
@@ -10199,11 +10198,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lunaclaw (12138) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Lunaclaw Spirit (12144) - npc_lunaclaw_spirit
 -- Sickly Deer (12298) - spell_dummy_npc
--- Stormscale Toxicologist 12321
+-- Stormscale Toxicologist 12321 - creature_spell_list
 ('1232101','12321','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Stormscale Toxicologist - Enable Range Mode on Aggro'),
 ('1232102','12321','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Stormscale Toxicologist - Flee at 15% HP'),
-('1232103','12321','14','0','100','1025','200','40','4000','12000','18000','25000','11','11642','12','0','0','0','0','0','0','0','0','0','Stormscale Toxicologist - Cast Heal on Friendly Missing HP'),
-('1232104','12321','9','0','100','1025','0','40','3400','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Stormscale Toxicologist - Cast Holy Smite'),
+('1232103','12321','9','0','100','1025','0','40','3400','4800','0','0','11','9734','1','256','0','0','0','0','0','0','0','0','Stormscale Toxicologist - Cast Holy Smite'),
 -- Thamarian 12656
 ('1265601','12656','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Thamarian - Flee at 15% HP'),
 -- Elder Starweave (15601) - NSR
@@ -29038,10 +29036,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2537002','25370','0','0','100','1025','8000','12000','10000','20000','0','0','11','46562','4','0','0','0','0','0','0','0','0','0','Sunblade Dusk Priest - Cast Mind Flay'),
 ('2537003','25370','0','0','100','1025','5000','9000','8000','9000','0','0','11','46560','4','0','0','0','0','0','0','0','0','0','Sunblade Dusk Priest - Cast Shadow Word: Pain'),
 ('2537004','25370','0','0','100','1025','5000','8000','9000','18000','0','0','11','46561','4','32','0','0','0','0','0','0','0','0','Sunblade Dusk Priest - Cast Fear'),
--- Sunblade Dawn Priest 25371
+-- Sunblade Dawn Priest 25371 - creature_spell_list
 ('2537101','25371','4','0','100','0','0','0','0','0','0','0','52','3','0','0','11','46565','0','3','0','0','0','0','Sunblade Dawn Priest - Interrupt Channelling and Cast Holyform on Aggro'),
 ('2537102','25371','0','0','100','1025','6000','10000','8000','17000','0','0','11','46564','0','0','0','0','0','0','0','0','0','0','Sunblade Dawn Priest - Cast Holy Nova'),
-('2537103','25371','14','0','100','1025','50000','100','4000','5000','15000','17000','11','46563','12','0','0','0','0','0','0','0','0','0','Sunblade Dawn Priest - Cast Renew on Friendly Missing HP'),
 -- Sunblade Scout 25372 - npc_sunblade_scout
 -- Shadowsword Soulbinder 25373 - CoE only on Tank when everyone else is dead, 2537301 unconfirmed
 ('2537301','25373','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Shadowsword Soulbinder - Interrupt Channelling on Aggro'),
