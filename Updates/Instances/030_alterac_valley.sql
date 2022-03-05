@@ -2596,15 +2596,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+419, 179065, 30, 680.2628173828125, -118.591583251953125, 64.33632659912109375, 2.548180580139160156, 0, 0, 0.956304728984832763, 0.292371779680252075, 0, 0, 0, 1), -- Roaring Flame
 (@OGUID+420, 179065, 30, 676.392822265625, -146.849609375, 56.54253005981445312, 2.460914134979248046, 0, 0, 0.942641496658325195, 0.333806902170181274, 0, 0, 0, 1); -- Roaring Flame
 
-INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179004 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+325 AND @OGUID+335; -- Drek'Thar's Scrolls
-INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179005 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+325 AND @OGUID+335; -- Drek'Thar's Scrolls
-INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179006 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+376 AND @OGUID+382; -- Vanndar's Documents
-INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179007 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+376 AND @OGUID+382; -- Vanndar's Documents
-INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179008 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+376 AND @OGUID+382; -- Vanndar's Documents
-
--- TBC only
-UPDATE `gameobject` SET `spawnMask` = 3 WHERE `map` = 30;
-
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1000,181355,30,1,480.259,-488.311,66.2366,1.65806,0,0,0.737277,0.675591,7200,7200,255,1), -- Standing, Exterior, Medium - MFF
 (@OGUID+1001,181355,30,1,465.63,-496.88,66.4395,2.74016,0,0,0.979924,0.19937,7200,7200,255,1), -- Standing, Exterior, Medium - MFF
@@ -2634,6 +2625,15 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+1025,181392,30,1,-134.165,-459.231,31.7696,-0.314158,0,0,-0.156434,0.987688,7200,7200,255,1), -- Hanging, Streamer - MFF
 (@OGUID+1026,181392,30,1,579.056,-76.7292,43.0804,0.488691,0,0,0.241921,0.970296,7200,7200,255,1), -- Hanging, Streamer - MFF
 (@OGUID+1027,181392,30,1,659.132,-122.51,54.9667,2.56563,0,0,0.958819,0.284016,7200,7200,255,1); -- Hanging, Streamer - MFF
+
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179004 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+325 AND @OGUID+335; -- Drek'Thar's Scrolls
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179005 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+325 AND @OGUID+335; -- Drek'Thar's Scrolls
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179006 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+376 AND @OGUID+382; -- Vanndar's Documents
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179007 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+376 AND @OGUID+382; -- Vanndar's Documents
+INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) SELECT `guid`, 179008 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+376 AND @OGUID+382; -- Vanndar's Documents
+
+-- TBC only
+UPDATE `gameobject` SET `spawnMask` = 3 WHERE `map` = 30;
 
 -- Hacks due to Core Issues
 UPDATE `gameobject` SET `id` = 178364 WHERE `guid` BETWEEN @OGUID+13 AND @OGUID+19; -- BG_AV_GO_GY_BANNER_HORDE
