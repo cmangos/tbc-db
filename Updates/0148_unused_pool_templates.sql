@@ -29,3 +29,9 @@ DELETE FROM `pool_template` WHERE `entry` = 31239; -- Dun Morogh (Chill Breeze V
 DELETE FROM `pool_template` WHERE `entry` IN (31177,31197,31238,31263); -- Dun Morogh - Chest Pool / Redridge Mountains - Chest Pool / Darkshore - Chest Pool / Tirisfal Glades - Chest Pool - objects are in area pools
 DELETE FROM `pool_template` WHERE `entry` IN (39925,39931,39932); -- no chests found in these zones, so maybe there are none
 
+-- Pool Template Id (39935) is empty. - 39935	0	Deadwind Pass - Master Chest Pool
+-- Pool Template Id (39938) is empty. - 39938	0	Moonglade - Master Chest Pool
+-- Pool Template Id (39939) is empty. - 39939	0	Silithus - Master Chest Pool
+-- Pool Template Id (39951) is empty. - 39951	0	Isle of Quel'Danas - Master Chest Pool
+DELETE FROM `pool_template` WHERE `entry` IN (39935,39938,39939,39951);
+
