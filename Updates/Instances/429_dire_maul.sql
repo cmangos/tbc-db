@@ -77,7 +77,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+182, 1, 273.0064, 195.1208, 2.936266, 0.8552113, 1000, 1144401),
 (@CGUID+183, 1, 280.5277, 204.3547, 2.936328, 4.066617, 1000, 1144401),
 (@CGUID+218, 1, 568.2037, 479.5251, 29.54745, 3.228859, 15000, 1144801),
-(@CGUID+218, 2, 568.2037, 479.5251, 29.54745, 3.228859, 28000, 1144802),
+(@CGUID+218, 2, 568.2037, 479.5251, 29.54745, 3.228859, 28000, 0),
 (@CGUID+218, 3, 568.2037, 479.5251, 29.54745, 3.228859, 10000, 1001),
 (@CGUID+281, 1, 51.3525, -721.915, -25.1438, 0, 0, 0),
 (@CGUID+281, 2, 26.2717, -683.886, -25.1616, 0, 0, 0),
@@ -945,7 +945,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (11489, 0, 0, 1, 0, 0, NULL), -- Tendris Warpwood
 (11490, 0, 0, 1, 0, 0, NULL), -- Zevrim Thornhoof
 (11491, 0, 0, 1, 0, 0, NULL), -- Old Ironbark
-(11492, 0, 0, 1, 0, 0, '22128 21157'), -- Alzzin the Wildshaper
+(11492, 0, 0, 1, 0, 0, '22128'), -- Alzzin the Wildshaper
 (11496, 0, 0, 1, 0, 0, NULL), -- Immol'thar
 (11501, 0, 0, 1, 0, 0, NULL), -- King Gordok
 (13021, 0, 0, 1, 0, 0, NULL), -- Warpwood Crusher
@@ -1648,7 +1648,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+559, 11489, 429, 14.3925, 475.848, -23.3028, 1.55431, 10800, 10800, 0, 0, 0, 0), -- Tendris Warpwood
 (@CGUID+560, 11490, 429, -34.983, -448, -37.8785, 0.191986, 1000000, 1000000, 0, 0, 0, 0), -- Zevrim Thornhoof
 (@CGUID+561, 11491, 429, -72.1719, -283.252, -57.7497, 4.08407, 1000000, 1000000, 0, 0, 0, 0), -- Old Ironbark
-(@CGUID+562, 11492, 429, 274.844, -427.251, -119.962, 0.970313, 1000000, 1000000, 5, 0, 0, 2), -- Alzzin the Wildshaper
+(@CGUID+562, 11492, 429, 274.844, -427.251, -119.962, 0.970313, 1000000, 1000000, 0, 0, 0, 2), -- Alzzin the Wildshaper
 (@CGUID+563, 11496, 429, -38.0807, 812.44, -29.4525, 4.69494, 7200, 7200, 0, 0, 0, 0), -- Immol'thar
 (@CGUID+564, 11501, 429, 829.6969, 481.3277, 37.40153, 3.193953, 43200, 43200, 0, 0, 0, 0), -- King Gordok
 (@CGUID+565, 13021, 429, -16.8805, -177.09, -2.63107, 4.81711, 7200, 7200, 0, 0, 0, 0), -- Warpwood Crusher
@@ -2680,11 +2680,10 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1144401, 0, 1, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Mage-Lord - EMOTE_STATE_SPELLPRECAST'),
 (1144401, 0, 15, 21227, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Mage-Lord - Cast Fire & Ice Channeling'),
 
-(1144801, 0, 1, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Warlock - EMOTE_STATE_SPELLPRECAST'),
-(1144801, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Warlock - Cast Dark Channeling'),
-
-(1144802, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Warlock - Remove EmoteState'),
-(1144802, 0, 47, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Warlock - Interrupt Channelling'),
+(1144801, 1000, 1, 193, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Warlock - EMOTE_STATE_SPELLPRECAST'),
+(1144801, 1000, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Warlock - Cast Dark Channeling'),
+(1144801, 15000, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Warlock - Remove EmoteState'),
+(1144801, 15000, 47, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Warlock - Interrupt Channelling'),
 
 (1303601, 0, 20, 1, 1, 35000, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 'Gordok Mastiff - MovementType 1 and Spawndist 1 (35secs)'),
 
@@ -2696,6 +2695,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1424101, 25000, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'ironbark redeemed - set not active'),
 
 (1149201, 0, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cast Dark Channeling'),
+(1149201, 30000, 37, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Alzzin the Wildshaper - Interrupt Channelling'),
 (1149202, 0, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Switch to random movement around the current position'),
 (1149202, 75000, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Switch back to waypoint movement'),
 
