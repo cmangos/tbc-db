@@ -8059,8 +8059,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('618002','6180','11','0','100','0','0','0','0','0','0','0','11','7165','0','0','0','0','0','0','0','0','0','0','Defias Raider - Defias Raider - Cast Battle Stance on Spawn'),
 ('618003','6180','0','0','100','1025','5000','7500','12500','15000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Defias Raider - Cast Heroic Strike'),
 -- Daphne Stilwell 6182 - npc_daphne_stilwell
--- Klaven Mortwake 7053
-('705301','7053','10','0','100','1','0','30','60000','60000','1','20264','1','3092','0','0','0','0','0','0','0','0','0','0','Klaven Mortwake - Say on LOS(q.2359)'),
+-- Klaven Mortwake 7053 - npc_foreman_klaven_mortwake
 
 
 
@@ -14799,7 +14798,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Polly
 ('716801','7168','11','0','100','0','0','0','0','0','0','0','1','3165','0','0','0','0','0','0','0','0','0','0','Polly - Say on Spawn'),
 -- Taskmaster Fizzule 7233 - npc_taskmaster_fizzule
--- Venture Co. Lookout - npc_venture_co_lookout
+-- Foreman Silixiz 7287 - npc_foreman_silixiz
+-- Grand Foreman Puzik Gallywix 7288 - npc_gallywix
+-- Venture Co. Lookout 7307 - npc_venture_co_lookout
 -- Venture Co. Patroller
 ('730801','7308','8','0','100','1','1943','-1','0','0','0','0','11','10266','15','0','0','0','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 1 Spellhit'),
 ('730802','7308','8','0','100','1','8639','-1','0','0','0','0','11','10266','15','0','0','0','0','0','0','0','0','0','Venture Co. Patroller - Cast Lung Puncture on Rupture Rank 2 Spellhit'),
