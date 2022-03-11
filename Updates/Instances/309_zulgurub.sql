@@ -477,7 +477,9 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (11359, 4, 1, -11742.034180, -1606.073975, 40.748543, 100, 0, 0),
 (11359, 4, 2, -11739.069336, -1668.112915, 36.996002, 100, 0, 0),
 (11359, 4, 3, -11739.987305, -1681.579712, 40.750183, 100, 0, 0),
-(11359, 4, 4, -11732.525391, -1693.093018, 40.746841, 100, 0, 1135904);
+(11359, 4, 4, -11732.525391, -1693.093018, 40.746841, 100, 0, 1135904),
+
+(14507, 0, 1, -12029.8, -1707.93, 39.413, 3.71755, 1000, 1450701); -- High Priest Venoxis
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+127, 0, 0, 1, 0, 0, NULL), -- Hakkari Blood Priest
@@ -573,7 +575,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (11391, 0, 8, 1, 0, 0, NULL), -- Vilebranch Speaker
 (11830, 0, 0, 1, 0, 0, NULL), -- Hakkari Priest
 (11831, 0, 0, 1, 0, 0, NULL), -- Hakkari Witch Doctor
-(14507, 0, 8, 1, 0, 0, '21157'), -- High Priest Venoxis
+(14507, 0, 8, 1, 0, 0, NULL), -- High Priest Venoxis
 (14509, 0, 0, 1, 0, 0, NULL), -- High Priest Thekal
 (14510, 0, 0, 1, 0, 0, NULL), -- High Priestess Mar'li
 (14517, 0, 0, 1, 0, 0, NULL), -- High Priestess Jeklik
@@ -1225,7 +1227,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+589, 13321, 309, -11883.7, -1685.52, 14.3972, 5.8394, 7200, 7200, 5, 0, 0, 1), -- Frog
 (@CGUID+590, 13321, 309, -11824.4, -1492.95, 11.4211, 3.67213, 7200, 7200, 5, 0, 0, 1), -- Frog
 (@CGUID+591, 13321, 309, -11787.6, -1382.22, 10.9178, 4.84159, 7200, 7200, 5, 0, 0, 1), -- Frog
-(@CGUID+592, 14507, 309, -12029.8, -1707.93, 39.413, 3.71755, 259200, 259200, 0, 0, 0, 0), -- High Priest Venoxis
+(@CGUID+592, 14507, 309, -12029.8, -1707.93, 39.413, 3.71755, 259200, 259200, 0, 0, 0, 2), -- High Priest Venoxis
 (@CGUID+593, 14509, 309, -11700.8, -1998.94, 62.4163, 1.6057, 259200, 259200, 0, 0, 0, 0), -- High Priest Thekal
 (@CGUID+594, 14510, 309, -12326.5, -1577.11, 133.588, 4.81711, 259200, 259200, 0, 0, 0, 0), -- High Priestess Mar'li
 (@CGUID+595, 14517, 309, -12291.9, -1380.08, 144.902, 2.28638, 259200, 259200, 0, 0, 0, 0), -- High Priestess Jeklik
@@ -1783,7 +1785,7 @@ INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `descripti
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1134001,1134002,1135901,1135902,1135903,1135904);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1134001,1134002,1135901,1135902,1135903,1135904,1450701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1134001, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - kneel'),
 (1134001, 30000, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hakkari Blood Priest - stand up'),
@@ -1803,7 +1805,9 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1135903, 30000, 20, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 4'),
 
 (1135904, 1000, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - random movement after path 4'),
-(1135904, 35000, 20, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 3');
+(1135904, 35000, 20, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Soulflayer - continue on path 3'),
+
+(1450701, 1000, 15, 21157, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'High Priest Venoxis - Cast Dark Channeling');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
