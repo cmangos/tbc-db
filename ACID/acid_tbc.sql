@@ -2818,7 +2818,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1527402','15274','0','0','75','1025','12000','14000','56000','64000','0','0','11','25602','1','0','0','0','0','0','0','0','0','0','Mana Wyrm - Cast Faerie Fire'),
 -- Magistrix Erona (15278) - NSR
 -- Julia Sunstriker (15279) - NSR
--- Jesthenis Sunstriker (15280) - NSR
+-- Jesthenis Sunstriker 15280
+('1528001','15280','1','0','100','1','5000','8000','5000','8000','0','0','53','10213','0','0','0','0','0','0','0','0','0','0','Jesthenis Sunstriker - Start Relay Script on OOC'),
 -- Lanthan Perilon 15281
 ('1528101','15281','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Lanthan Perilon - Enable Range Mode on Aggro'),
 ('1528102','15281','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Lanthan Perilon - Flee at 15% HP'),
