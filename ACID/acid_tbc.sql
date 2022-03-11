@@ -1682,7 +1682,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('622106','6221','0','0','100','1025','7900','16200','7900','16900','0','0','11','25712','1','0','0','0','0','0','0','0','0','0','Addled Leper - Cast Heroic Strike'),
 ('622107','6221','0','0','100','1025','0','0','2400','3700','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Addled Leper - Cast Shoot'),
 -- Dannie Fizzwizzle (6328) - NSR
--- Wren Darkspring (6376) - NSR
+-- Wren Darkspring 6376
+('637601','6376','1','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Wren Darkspring - Despawn Guardians OOC'),
+('637602','6376','1','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Wren Darkspring - Cast Summon Imp OOC'),
 -- Hands Springsprocket (6782) - NSR
 -- Tannok Frosthammer (6806) - NSR
 -- Onin MacHammar (6886) - NSR
@@ -2952,7 +2954,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Prospector Anvilward (15420) - npc_prospector_anvilward
 -- Innkeeper Delaniel (15433) - npc_innkeeper
 -- Marsilla Dawnstar (15493) - NSR
--- Yasmine Teli'Larien (15494) - NSR
+-- Yasmine Teli'Larien 15494
+('1549301','15493','1','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Yasmine Teli\'Larien - Despawn Guardians OOC'),
+('1549302','15493','1','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Yasmine Teli\'Larien - Cast Summon Imp OOC'),
 -- Aleinia (15501) - NSR
 -- Ranger Sallina (15513) - NSR
 -- Eversong Tender 15635
@@ -7088,7 +7092,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Vance Undergloom (5695) - NSR
 -- Ageron Kargal (5724) - NSR
 -- Deathguard Lundmark (5725) - guard_tirisfal
--- Kayla Smithe (5749) - NSR
+-- Kayla Smithe 5749
+('574901','5749','1','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Kayla Smithe - Despawn Guardians OOC'),
+('574902','5749','1','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Kayla Smithe - Cast Summon Imp OOC'),
 -- Gina Lang 5750
 ('575001','5750','1','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Gina Lang - Despawn Guardians OOC'),
 ('575002','5750','1','0','100','0','0','0','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Gina Lang - Cast Summon Imp OOC'),
