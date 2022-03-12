@@ -17456,7 +17456,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1925301','19253','30','0','100','1','5','16580','0','0','0','0','18','33536','10','0','0','0','0','0','0','0','0','0','Lieutenant General Orion - change targets unitFlag on Receive AI Event A'),
 ('1925302','19253','30','0','100','1','6','16582','0','0','0','0','18','768','10','0','0','0','0','0','0','0','0','0','Lieutenant General Orion - change targets unitFlag on Receive AI Event B'),
 -- General Krakork
-('1925501','19255','1','0','100','1','150000','150000','150000','150000','0','0','1','16391','16392','16390','5','5','0','0','0','0','0','0','General Krakork - Random Gossip Speech and Emote'),
+('1925501','19255','1','0','100','1','90000','120000','90000','120000','0','0','53','10215','0','0','0','0','0','0','0','0','0','0','General Krakork - Start Relay Script on OOC'),
 -- Arcanist Torseldori 19257
 ('1925701','19257','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Arcanist Torseldori - Enable Range Mode on Aggro'),
 ('1925702','19257','0','0','100','1025','8000','12000','11000','22000','0','0','11','22272','1','0','0','0','0','0','0','0','0','0','Arcanist Torseldori - Cast Arcane Missiles'),
