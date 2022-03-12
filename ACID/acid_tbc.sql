@@ -28067,7 +28067,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ====================================
 -- Hellfire Channeler (17256) - mob_hellfire_channeler
 -- Magtheridon (17257) - boss_magtheridon
--- Burning Abyssal (17454) - mob_abyssal
+-- Burning Abyssal 17454
+('1745401','17454','11','0','100','0','0','0','0','0','0','0','11','30516','0','34','50','0','0','0','0','0','0','0','Burning Abyssal - Cast Fire Blast, Set ReactState Passive on Spawn'),
+('1745402','17454','29','0','100','0','1000','1000','0','0','0','0','50','2','0','0','38','0','0','0','0','0','0','0','Burning Abyssal - Set ReactState Aggressive, Zone Combat Pulse on Generic Timer'),
 -- Target Trigger 17474 - NullAI
 -- Magtheridon's Room 17516
 ('1751601','17516','11','0','100','0','0','0','0','0','0','0','11','30632','0','0','50','0','0','0','0','0','0','0','Magtheridon''s Room - Cast Debris and REACT_PASSIVE on Spawn'),
