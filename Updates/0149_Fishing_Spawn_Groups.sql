@@ -933,7 +933,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT 9005, `guid`, -1
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT 9006, `guid`, -1 FROM `gameobject` WHERE `guid` BETWEEN 1080080 AND 1080083;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT 9007, `guid`, -1 FROM `gameobject` WHERE `guid` BETWEEN 1080084 AND 1080089;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT 9008, `guid`, -1 FROM `gameobject` WHERE `guid` BETWEEN 1080090 AND 1080112;
-INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT 9009, `guid`, -1 FROM `gameobject` WHERE `guid` BETWEEN 1080113 AND 1080115;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT 9009, `guid`, -1 FROM `gameobject` WHERE `guid` BETWEEN 1080113 AND 1080116;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT 9010, `guid`, -1 FROM `gameobject` WHERE `guid` BETWEEN 1080117 AND 1080143;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT 9011, `guid`, -1 FROM `gameobject` WHERE `guid` BETWEEN 1080144 AND 1080152;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) SELECT 9012, `guid`, -1 FROM `gameobject` WHERE `guid` BETWEEN 1080153 AND 1080160;
