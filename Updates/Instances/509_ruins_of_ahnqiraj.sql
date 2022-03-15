@@ -24,43 +24,43 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+75, 8, -9656.5, 1670.77, 21.864, 0, 0, 0),
 (@CGUID+75, 9, -9644.07, 1631.98, 21.7366, 0, 0, 0),
 (@CGUID+75, 10, -9641.11, 1606.59, 21.5115, 0, 0, 0),
-(@CGUID+78, 1, -9593.87, 1602.92, 21.5114, 0, 0, 0),
-(@CGUID+78, 2, -9616.94, 1598.47, 21.5113, 0, 0, 0),
-(@CGUID+78, 3, -9644.37, 1600.97, 21.5115, 0, 0, 0),
-(@CGUID+78, 4, -9666.59, 1602.68, 21.5115, 0, 0, 0),
-(@CGUID+78, 5, -9693.13, 1615.85, 24.8499, 0, 0, 0),
-(@CGUID+78, 6, -9666.59, 1602.68, 21.5115, 0, 0, 0),
-(@CGUID+78, 7, -9644.37, 1600.97, 21.5115, 0, 0, 0),
-(@CGUID+78, 8, -9616.94, 1598.47, 21.5113, 0, 0, 0),
-(@CGUID+78, 9, -9593.87, 1602.92, 21.5114, 0, 0, 0),
-(@CGUID+78, 10, -9567.26, 1581.45, 21.6481, 0, 0, 0),
-(@CGUID+78, 11, -9593.87, 1602.92, 21.5114, 0, 0, 0),
-(@CGUID+81, 1, -9665.34, 1553.45, 21.5113, 0, 0, 0),
-(@CGUID+81, 2, -9690.09, 1528.43, 21.569, 0, 0, 0),
-(@CGUID+81, 3, -9697.1, 1511.1, 21.5709, 0, 0, 0),
-(@CGUID+81, 4, -9716.54, 1490.72, 22.1461, 0, 0, 0),
-(@CGUID+81, 5, -9737.13, 1482.49, 23.2584, 0, 0, 0),
-(@CGUID+81, 6, -9716.54, 1490.72, 22.1461, 0, 0, 0),
-(@CGUID+81, 7, -9697.1, 1511.1, 21.5709, 0, 0, 0),
-(@CGUID+81, 8, -9690.09, 1528.43, 21.569, 0, 0, 0),
-(@CGUID+81, 9, -9665.34, 1553.45, 21.5113, 0, 0, 0),
-(@CGUID+81, 10, -9631.85, 1575.04, 21.5113, 0, 0, 0),
-(@CGUID+81, 11, -9613.67, 1599.05, 21.5113, 0, 0, 0),
-(@CGUID+81, 12, -9592.85, 1628.06, 22.5028, 0, 0, 0),
-(@CGUID+81, 13, -9613.67, 1599.05, 21.5113, 0, 0, 0),
-(@CGUID+81, 14, -9631.85, 1575.04, 21.5113, 0, 0, 0),
-(@CGUID+84, 1, -9643.71, 1556.37, 21.5113, 0, 0, 0),
-(@CGUID+84, 2, -9611.8, 1561.21, 21.6363, 0, 0, 0),
-(@CGUID+84, 3, -9589.69, 1574.34, 21.6481, 0, 0, 0),
-(@CGUID+84, 4, -9590.35, 1600.98, 21.5114, 0, 0, 0),
-(@CGUID+84, 5, -9617.4, 1634.87, 21.5113, 0, 0, 0),
-(@CGUID+84, 6, -9648.47, 1660.42, 21.7723, 0, 0, 0),
-(@CGUID+84, 7, -9672.45, 1659.05, 21.5119, 0, 0, 0),
-(@CGUID+84, 8, -9684.25, 1618.95, 22.0196, 0, 0, 0),
-(@CGUID+84, 9, -9680.49, 1588.97, 21.7323, 0, 0, 0),
-(@CGUID+84, 10, -9686.44, 1561.45, 21.569, 0, 0, 0),
-(@CGUID+84, 11, -9686.44, 1561.45, 21.569, 0, 0, 0),
-(@CGUID+84, 12, -9643.71, 1556.37, 21.5113, 0, 0, 0),
+(@CGUID+76, 1, -9593.87, 1602.92, 21.5114, 0, 0, 0),
+(@CGUID+76, 2, -9616.94, 1598.47, 21.5113, 0, 0, 0),
+(@CGUID+76, 3, -9644.37, 1600.97, 21.5115, 0, 0, 0),
+(@CGUID+76, 4, -9666.59, 1602.68, 21.5115, 0, 0, 0),
+(@CGUID+76, 5, -9693.13, 1615.85, 24.8499, 0, 0, 0),
+(@CGUID+76, 6, -9666.59, 1602.68, 21.5115, 0, 0, 0),
+(@CGUID+76, 7, -9644.37, 1600.97, 21.5115, 0, 0, 0),
+(@CGUID+76, 8, -9616.94, 1598.47, 21.5113, 0, 0, 0),
+(@CGUID+76, 9, -9593.87, 1602.92, 21.5114, 0, 0, 0),
+(@CGUID+76, 10, -9567.26, 1581.45, 21.6481, 0, 0, 0),
+(@CGUID+76, 11, -9593.87, 1602.92, 21.5114, 0, 0, 0),
+(@CGUID+77, 1, -9665.34, 1553.45, 21.5113, 0, 0, 0),
+(@CGUID+77, 2, -9690.09, 1528.43, 21.569, 0, 0, 0),
+(@CGUID+77, 3, -9697.1, 1511.1, 21.5709, 0, 0, 0),
+(@CGUID+77, 4, -9716.54, 1490.72, 22.1461, 0, 0, 0),
+(@CGUID+77, 5, -9737.13, 1482.49, 23.2584, 0, 0, 0),
+(@CGUID+77, 6, -9716.54, 1490.72, 22.1461, 0, 0, 0),
+(@CGUID+77, 7, -9697.1, 1511.1, 21.5709, 0, 0, 0),
+(@CGUID+77, 8, -9690.09, 1528.43, 21.569, 0, 0, 0),
+(@CGUID+77, 9, -9665.34, 1553.45, 21.5113, 0, 0, 0),
+(@CGUID+77, 10, -9631.85, 1575.04, 21.5113, 0, 0, 0),
+(@CGUID+77, 11, -9613.67, 1599.05, 21.5113, 0, 0, 0),
+(@CGUID+77, 12, -9592.85, 1628.06, 22.5028, 0, 0, 0),
+(@CGUID+77, 13, -9613.67, 1599.05, 21.5113, 0, 0, 0),
+(@CGUID+77, 14, -9631.85, 1575.04, 21.5113, 0, 0, 0),
+(@CGUID+78, 1, -9643.71, 1556.37, 21.5113, 0, 0, 0),
+(@CGUID+78, 2, -9611.8, 1561.21, 21.6363, 0, 0, 0),
+(@CGUID+78, 3, -9589.69, 1574.34, 21.6481, 0, 0, 0),
+(@CGUID+78, 4, -9590.35, 1600.98, 21.5114, 0, 0, 0),
+(@CGUID+78, 5, -9617.4, 1634.87, 21.5113, 0, 0, 0),
+(@CGUID+78, 6, -9648.47, 1660.42, 21.7723, 0, 0, 0),
+(@CGUID+78, 7, -9672.45, 1659.05, 21.5119, 0, 0, 0),
+(@CGUID+78, 8, -9684.25, 1618.95, 22.0196, 0, 0, 0),
+(@CGUID+78, 9, -9680.49, 1588.97, 21.7323, 0, 0, 0),
+(@CGUID+78, 10, -9686.44, 1561.45, 21.569, 0, 0, 0),
+(@CGUID+78, 11, -9686.44, 1561.45, 21.569, 0, 0, 0),
+(@CGUID+78, 12, -9643.71, 1556.37, 21.5113, 0, 0, 0),
 (@CGUID+87, 1, -8601.4, 1614.53, 31.9299, 0, 0, 0),
 (@CGUID+87, 2, -8609.68, 1613.56, 31.9299, 0, 0, 0),
 (@CGUID+87, 3, -8619.38, 1610.39, 31.9299, 0, 0, 0),
@@ -1031,34 +1031,26 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+56, @CGUID+95, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
 (@CGUID+57, @CGUID+96, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
 (@CGUID+58, @CGUID+96, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+59, @CGUID+75, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+60, @CGUID+75, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
+(@CGUID+75, @CGUID+197, 1024), -- Hive'Zara Stinger -> Ayamiss the Hunter
+(@CGUID+59, @CGUID+75, 1667), -- creature_spawn_entry -> Hive'Zara Stinger
+(@CGUID+60, @CGUID+75, 1667), -- creature_spawn_entry -> Hive'Zara Stinger
 (@CGUID+61, @CGUID+75, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
 (@CGUID+62, @CGUID+75, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+63, @CGUID+78, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+64, @CGUID+78, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+65, @CGUID+78, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+66, @CGUID+78, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+67, @CGUID+81, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+68, @CGUID+81, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+69, @CGUID+81, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+70, @CGUID+81, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+71, @CGUID+84, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+72, @CGUID+84, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+73, @CGUID+84, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+74, @CGUID+84, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
-(@CGUID+75, @CGUID+197, 1024), -- Hive'Zara Stinger -> Ayamiss the Hunter
-(@CGUID+76, @CGUID+75, 1667), -- Hive'Zara Stinger -> Hive'Zara Stinger
-(@CGUID+77, @CGUID+75, 1667), -- Hive'Zara Stinger -> Hive'Zara Stinger
+(@CGUID+76, @CGUID+197, 1024), -- Hive'Zara Stinger -> Ayamiss the Hunter
+(@CGUID+63, @CGUID+76, 1667), -- creature_spawn_entry -> Hive'Zara Stinger
+(@CGUID+64, @CGUID+76, 1667), -- creature_spawn_entry -> Hive'Zara Stinger
+(@CGUID+65, @CGUID+76, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
+(@CGUID+66, @CGUID+76, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
+(@CGUID+77, @CGUID+197, 1024), -- Hive'Zara Stinger -> Ayamiss the Hunter
+(@CGUID+67, @CGUID+77, 1667), -- creature_spawn_entry -> Hive'Zara Stinger
+(@CGUID+68, @CGUID+77, 1667), -- creature_spawn_entry -> Hive'Zara Stinger
+(@CGUID+69, @CGUID+77, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
+(@CGUID+70, @CGUID+77, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
 (@CGUID+78, @CGUID+197, 1024), -- Hive'Zara Stinger -> Ayamiss the Hunter
-(@CGUID+79, @CGUID+78, 1667), -- Hive'Zara Stinger -> Hive'Zara Stinger
-(@CGUID+80, @CGUID+78, 1667), -- Hive'Zara Stinger -> Hive'Zara Stinger
-(@CGUID+81, @CGUID+197, 1024), -- Hive'Zara Stinger -> Ayamiss the Hunter
-(@CGUID+82, @CGUID+81, 1667), -- Hive'Zara Stinger -> Hive'Zara Stinger
-(@CGUID+83, @CGUID+81, 1667), -- Hive'Zara Stinger -> Hive'Zara Stinger
-(@CGUID+84, @CGUID+197, 1024), -- Hive'Zara Stinger -> Ayamiss the Hunter
-(@CGUID+85, @CGUID+84, 1667), -- Hive'Zara Stinger -> Hive'Zara Stinger
-(@CGUID+86, @CGUID+84, 1667), -- Hive'Zara Stinger -> Hive'Zara Stinger
+(@CGUID+71, @CGUID+78, 1667), -- creature_spawn_entry -> Hive'Zara Stinger
+(@CGUID+72, @CGUID+78, 1667), -- creature_spawn_entry -> Hive'Zara Stinger
+(@CGUID+73, @CGUID+78, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
+(@CGUID+74, @CGUID+78, 1667), -- Hive'Zara Wasp -> Hive'Zara Stinger
 (@CGUID+87, @CGUID+188, 1024), -- Hive'Zara Stinger -> Kurinnaxx
 (@CGUID+88, @CGUID+188, 1024), -- Hive'Zara Stinger -> Kurinnaxx
 (@CGUID+89, @CGUID+188, 1024), -- Hive'Zara Stinger -> Kurinnaxx
@@ -1196,34 +1188,27 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+56, 15325, 509, -8800.64, 1653.12, 21.3807, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
 (@CGUID+57, 15325, 509, -8601.47, 1372.66, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
 (@CGUID+58, 15325, 509, -8601.47, 1365.59, 31.9091, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
-(@CGUID+59, 15325, 509, -9656.24, 1592.58, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
-(@CGUID+60, 15325, 509, -9656.24, 1583.34, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
+(@CGUID+59, 0, 509, -9656.24, 1592.58, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+60, 0, 509, -9656.24, 1583.34, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp, Hive'Zara Stinger
 (@CGUID+61, 15325, 509, -9658.95, 1589.87, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
 (@CGUID+62, 15325, 509, -9658.95, 1586.04, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
-(@CGUID+63, 15325, 509, -9595.78, 1607.54, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
-(@CGUID+64, 15325, 509, -9595.78, 1598.3, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
+(@CGUID+63, 0, 509, -9595.78, 1607.54, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+64, 0, 509, -9595.78, 1598.3, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp, Hive'Zara Stinger
 (@CGUID+65, 15325, 509, -9598.49, 1604.84, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
 (@CGUID+66, 15325, 509, -9598.49, 1601.01, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
-(@CGUID+67, 15325, 509, -9667.26, 1558.07, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
-(@CGUID+68, 15325, 509, -9667.26, 1548.84, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
+(@CGUID+67, 0, 509, -9667.26, 1558.07, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+68, 0, 509, -9667.26, 1548.84, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp, Hive'Zara Stinger
 (@CGUID+69, 15325, 509, -9669.96, 1555.37, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
 (@CGUID+70, 15325, 509, -9669.96, 1551.54, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
-(@CGUID+71, 15325, 509, -9645.62, 1560.99, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
-(@CGUID+72, 15325, 509, -9645.62, 1551.75, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
+(@CGUID+71, 0, 509, -9645.62, 1560.99, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+72, 0, 509, -9645.62, 1551.75, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp, Hive'Zara Stinger
 (@CGUID+73, 15325, 509, -9648.33, 1558.28, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
 (@CGUID+74, 15325, 509, -9648.33, 1554.45, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Wasp
 (@CGUID+75, 15327, 509, -9654.33, 1587.96, 21.5113, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
-(@CGUID+76, 15327, 509, -9656.24, 1592.58, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Stinger
-(@CGUID+77, 15327, 509, -9656.24, 1583.34, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Stinger
-(@CGUID+78, 15327, 509, -9593.87, 1602.92, 21.5114, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
-(@CGUID+79, 15327, 509, -9595.78, 1607.54, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Stinger
-(@CGUID+80, 15327, 509, -9595.78, 1598.3, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Stinger
-(@CGUID+81, 15327, 509, -9665.34, 1553.45, 21.5113, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
-(@CGUID+82, 15327, 509, -9667.26, 1558.07, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Stinger
-(@CGUID+83, 15327, 509, -9667.26, 1548.84, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Stinger
-(@CGUID+84, 15327, 509, -9643.71, 1556.37, 21.5113, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
-(@CGUID+85, 15327, 509, -9645.62, 1560.99, 31.9073, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Stinger
-(@CGUID+86, 15327, 509, -9645.62, 1551.75, 31.9071, 0, 21600, 21600, 0, 0, 0, 0), -- Hive'Zara Stinger
+(@CGUID+76, 15327, 509, -9593.87, 1602.92, 21.5114, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
+(@CGUID+77, 15327, 509, -9665.34, 1553.45, 21.5113, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
+(@CGUID+78, 15327, 509, -9643.71, 1556.37, 21.5113, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
+-- @CGUID+79 - 86
 (@CGUID+87, 15327, 509, -8601.4, 1614.53, 31.9299, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
 (@CGUID+88, 15327, 509, -8534.43, 1453.31, 32.032, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
 (@CGUID+89, 15327, 509, -8549.8, 1395.08, 32.032, 0, 21600, 21600, 0, 0, 0, 2), -- Hive'Zara Stinger
@@ -1477,6 +1462,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+335, 15323, 509, -9359.12, 1217.69, 21.4696, 3.12413, 3520, 3520, 0, 0, 0, 0), -- Hive'Zara Sandstalker
 (@CGUID+336, 15323, 509, -9344.64, 1208.04, 21.4770, 0.55358, 3520, 3520, 0, 0, 0, 0); -- Hive'Zara Sandstalker
 
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+59, 15325), (@CGUID+59, 15327), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+60, 15325), (@CGUID+60, 15327), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+63, 15325), (@CGUID+63, 15327), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+64, 15325), (@CGUID+64, 15327), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+67, 15325), (@CGUID+67, 15327), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+68, 15325), (@CGUID+68, 15327), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+71, 15325), (@CGUID+71, 15327), -- Hive'Zara Wasp, Hive'Zara Stinger
+(@CGUID+72, 15325), (@CGUID+72, 15327); -- Hive'Zara Wasp, Hive'Zara Stinger
 
 -- ===========
 -- GAMEOBJECTS
@@ -1508,35 +1502,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 -- =======
 
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 1, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@PGUID+2, 1, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@PGUID+3, 1, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@PGUID+4, 1, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@PGUID+5, 1, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@PGUID+6, 1, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@PGUID+7, 1, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@PGUID+8, 1, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp');
-
-INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+59, @PGUID+1, 25, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+76, @PGUID+1, 75, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+60, @PGUID+2, 25, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+77, @PGUID+2, 75, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+63, @PGUID+3, 25, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+79, @PGUID+3, 75, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+64, @PGUID+4, 25, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+80, @PGUID+4, 75, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+67, @PGUID+5, 25, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+82, @PGUID+5, 75, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+68, @PGUID+6, 25, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+83, @PGUID+6, 75, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+71, @PGUID+7, 25, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+85, @PGUID+7, 75, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+72, @PGUID+8, 25, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp'),
-(@CGUID+86, @PGUID+8, 75, 'AQ20 - Hive''Zara Stinger / Hive''Zara Wasp');
-
+-- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
+-- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
