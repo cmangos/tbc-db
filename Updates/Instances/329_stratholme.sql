@@ -215,148 +215,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+312, 15, 4017.72, -3540.07, 122.869, 0, 0, 0),
 (@CGUID+312, 16, 4024.39, -3520.04, 122.014, 0, 0, 0),
 (@CGUID+312, 17, 4040.32, -3519.08, 121.648, 0, 0, 0),
-(@CGUID+313, 1, 3841.89, -3614.96, 145.062, 0, 0, 5),
-(@CGUID+313, 2, 3833.57, -3623.72, 145.408, 0, 0, 0),
-(@CGUID+313, 3, 3812.11, -3644.59, 146.613, 0, 0, 0),
-(@CGUID+313, 4, 3833.57, -3623.72, 145.408, 0, 0, 0),
-(@CGUID+313, 5, 3841.7, -3615.15, 145.138, 0, 0, 0),
-(@CGUID+313, 6, 3849.18, -3602.26, 143.598, 0, 0, 0),
-(@CGUID+313, 7, 3863.6, -3578.26, 141.375, 0, 0, 0),
-(@CGUID+313, 8, 3876.98, -3543.3, 137.943, 0, 0, 0),
-(@CGUID+313, 9, 3872.04, -3522.9, 138.361, 0, 0, 0),
-(@CGUID+313, 10, 3876.98, -3543.29, 137.96, 0, 0, 0),
-(@CGUID+313, 11, 3863.6, -3578.26, 141.375, 0, 0, 0),
-(@CGUID+313, 12, 3849.27, -3602.1, 143.604, 0, 0, 0),
-(@CGUID+313, 13, 3841.89, -3614.96, 145.062, 0, 0, 0),
-(@CGUID+314, 1, 3821.82, -3635.05, 146.268, 0, 0, 5),
-(@CGUID+314, 2, 3839.66, -3599.7, 144.332, 0, 0, 0),
-(@CGUID+314, 3, 3859.1, -3579.14, 141.963, 0, 0, 0),
-(@CGUID+314, 4, 3883.77, -3545.47, 137.75, 0, 0, 0),
-(@CGUID+314, 5, 3859.1, -3579.14, 141.963, 0, 0, 0),
-(@CGUID+314, 6, 3839.66, -3599.7, 144.332, 0, 0, 0),
-(@CGUID+314, 7, 3821.78, -3634.98, 146.225, 0, 0, 0),
-(@CGUID+314, 8, 3829.27, -3653.29, 145.492, 0, 0, 0),
-(@CGUID+314, 9, 3844.07, -3688.32, 143.179, 0, 0, 0),
-(@CGUID+314, 10, 3867.77, -3680.02, 142.958, 0, 0, 0),
-(@CGUID+314, 11, 3901.58, -3681.78, 141.155, 0, 0, 0),
-(@CGUID+314, 12, 3867.77, -3680.02, 142.958, 0, 0, 0),
-(@CGUID+314, 13, 3844.07, -3688.32, 143.179, 0, 0, 0),
-(@CGUID+314, 14, 3829.27, -3653.29, 145.492, 0, 0, 0),
-(@CGUID+314, 15, 3821.82, -3635.05, 146.268, 0, 0, 0),
-(@CGUID+315, 1, 3844.01, -3685.72, 143.404, 0, 0, 5),
-(@CGUID+315, 2, 3838.72, -3702.62, 142.462, 0, 0, 0),
-(@CGUID+315, 3, 3829.82, -3716.55, 141.879, 0, 0, 0),
-(@CGUID+315, 4, 3844.01, -3685.72, 143.404, 0, 0, 0),
-(@CGUID+315, 5, 3857.53, -3675.49, 143.616, 0, 0, 0),
-(@CGUID+315, 6, 3876.82, -3681.06, 142.505, 0, 0, 0),
-(@CGUID+315, 7, 3892.44, -3678.49, 141.398, 0, 0, 0),
-(@CGUID+315, 8, 3916.48, -3667.52, 137.975, 0, 0, 0),
-(@CGUID+315, 9, 3955.46, -3644, 134.196, 0, 0, 0),
-(@CGUID+315, 10, 3892.44, -3678.49, 141.398, 0, 0, 0),
-(@CGUID+315, 11, 3876.82, -3681.06, 142.505, 0, 0, 0),
-(@CGUID+315, 12, 3857.7, -3675.37, 143.627, 0, 0, 0),
-(@CGUID+315, 13, 3844.01, -3685.72, 143.404, 0, 0, 0),
-(@CGUID+316, 1, 3857.21, -3682.06, 142.894, 0, 0, 5),
-(@CGUID+316, 2, 3840.66, -3667.58, 144.413, 0, 0, 0),
-(@CGUID+316, 3, 3831.58, -3635.96, 146.268, 0, 0, 0),
-(@CGUID+316, 4, 3838.78, -3608.24, 145.114, 0, 0, 0),
-(@CGUID+316, 5, 3853.1, -3582.58, 142.621, 0, 0, 0),
-(@CGUID+316, 6, 3865.07, -3561.98, 138.698, 0, 0, 0),
-(@CGUID+316, 7, 3891.76, -3545.74, 137.553, 0, 0, 0),
-(@CGUID+316, 8, 3865.07, -3561.98, 138.698, 0, 0, 0),
-(@CGUID+316, 9, 3853.1, -3582.58, 142.621, 0, 0, 0),
-(@CGUID+316, 10, 3838.78, -3608.24, 145.114, 0, 0, 0),
-(@CGUID+316, 11, 3831.58, -3635.96, 146.268, 0, 0, 0),
-(@CGUID+316, 12, 3840.66, -3667.58, 144.413, 0, 0, 0),
-(@CGUID+316, 13, 3857.13, -3682.07, 142.898, 0, 0, 0),
-(@CGUID+316, 14, 3879.03, -3680.38, 142.306, 0, 0, 0),
-(@CGUID+316, 15, 3908.15, -3672.52, 138.977, 0, 0, 0),
-(@CGUID+316, 16, 3941.33, -3647.64, 138.761, 0, 0, 0),
-(@CGUID+316, 17, 3955.9, -3645.68, 134.636, 0, 0, 0),
-(@CGUID+316, 18, 3977.86, -3632.36, 130.21, 0, 0, 0),
-(@CGUID+316, 19, 3992.75, -3616.82, 129.582, 0, 0, 0),
-(@CGUID+316, 20, 4001.47, -3584.37, 128.775, 0, 0, 0),
-(@CGUID+316, 21, 4004.57, -3561.6, 125.813, 0, 0, 0),
-(@CGUID+316, 22, 4011.73, -3544.6, 123.323, 0, 0, 0),
-(@CGUID+316, 23, 4034.63, -3522.79, 121.984, 0, 0, 0),
-(@CGUID+316, 24, 4058.86, -3530.33, 122.247, 0, 0, 0),
-(@CGUID+316, 25, 4034.63, -3522.79, 121.984, 0, 0, 0),
-(@CGUID+316, 26, 4011.73, -3544.6, 123.323, 0, 0, 0),
-(@CGUID+316, 27, 4004.57, -3561.6, 125.813, 0, 0, 0),
-(@CGUID+316, 28, 4001.47, -3584.37, 128.775, 0, 0, 0),
-(@CGUID+316, 29, 3992.75, -3616.82, 129.582, 0, 0, 0),
-(@CGUID+316, 30, 3977.86, -3632.36, 130.21, 0, 0, 0),
-(@CGUID+316, 31, 3955.9, -3645.68, 134.636, 0, 0, 0),
-(@CGUID+316, 32, 3941.33, -3647.64, 138.761, 0, 0, 0),
-(@CGUID+316, 33, 3908.15, -3672.52, 138.977, 0, 0, 0),
-(@CGUID+316, 34, 3879.03, -3680.38, 142.306, 0, 0, 0),
-(@CGUID+317, 1, 3982.11, -3631.74, 130.292, 0, 0, 5),
-(@CGUID+317, 2, 4004.64, -3629.83, 129.634, 0, 0, 0),
-(@CGUID+317, 3, 3997.83, -3617.91, 128.965, 0, 0, 0),
-(@CGUID+317, 4, 3994.24, -3598.02, 128.735, 0, 0, 0),
-(@CGUID+317, 5, 4003.15, -3565.29, 126.275, 0, 0, 0),
-(@CGUID+317, 6, 3989.23, -3554.6, 124.741, 0, 0, 0),
-(@CGUID+317, 7, 3960.2, -3556.98, 128.617, 0, 0, 0),
-(@CGUID+317, 8, 3964.56, -3568.54, 127.89, 0, 0, 0),
-(@CGUID+317, 9, 3976.52, -3585.48, 127.685, 0, 0, 0),
-(@CGUID+317, 10, 3989.48, -3588.79, 127.585, 0, 0, 0),
-(@CGUID+317, 11, 4006.2, -3556.55, 124.951, 0, 0, 0),
-(@CGUID+317, 12, 4019.32, -3528.23, 122.165, 0, 0, 0),
-(@CGUID+317, 13, 4035.81, -3528.73, 122.397, 0, 0, 0),
-(@CGUID+317, 14, 4062.12, -3531.17, 122.261, 0, 0, 0),
-(@CGUID+317, 15, 4041.11, -3522.29, 121.872, 0, 0, 0),
-(@CGUID+317, 16, 4006.21, -3544.49, 123.452, 0, 0, 0),
-(@CGUID+317, 17, 3983.61, -3545.68, 124.881, 0, 0, 0),
-(@CGUID+317, 18, 4006.21, -3544.49, 123.452, 0, 0, 0),
-(@CGUID+317, 19, 4041.11, -3522.29, 121.872, 0, 0, 0),
-(@CGUID+317, 20, 4062.12, -3531.17, 122.261, 0, 0, 0),
-(@CGUID+317, 21, 4035.81, -3528.73, 122.397, 0, 0, 0),
-(@CGUID+317, 22, 4019.32, -3528.23, 122.165, 0, 0, 0),
-(@CGUID+317, 23, 4006.2, -3556.55, 124.951, 0, 0, 0),
-(@CGUID+317, 24, 3989.48, -3588.79, 127.585, 0, 0, 0),
-(@CGUID+317, 25, 3976.52, -3585.48, 127.685, 0, 0, 0),
-(@CGUID+317, 26, 3964.56, -3568.54, 127.89, 0, 0, 0),
-(@CGUID+317, 27, 3960.29, -3557.21, 128.651, 0, 0, 0),
-(@CGUID+317, 28, 3989.23, -3554.6, 124.741, 0, 0, 0),
-(@CGUID+317, 29, 4003.15, -3565.29, 126.275, 0, 0, 0),
-(@CGUID+317, 30, 3994.24, -3598.02, 128.735, 0, 0, 0),
-(@CGUID+317, 31, 3997.83, -3617.91, 128.965, 0, 0, 0),
-(@CGUID+317, 32, 4004.64, -3629.83, 129.634, 0, 0, 0),
-(@CGUID+317, 33, 3982.11, -3631.74, 130.292, 0, 0, 0),
-(@CGUID+317, 34, 3962.18, -3642.44, 133.259, 0, 0, 0),
-(@CGUID+318, 1, 3843.04, -3672.38, 144.223, 0, 0, 5),
-(@CGUID+318, 2, 3835.62, -3701.87, 142.634, 0, 0, 0),
-(@CGUID+318, 3, 3858.74, -3682.83, 142.819, 0, 0, 0),
-(@CGUID+318, 4, 3877.29, -3702.88, 142.76, 0, 0, 0),
-(@CGUID+318, 5, 3884.24, -3677.16, 141.819, 0, 0, 0),
-(@CGUID+318, 6, 3900.02, -3672.84, 139.44, 0, 0, 0),
-(@CGUID+318, 7, 3884.31, -3676.91, 141.838, 0, 0, 0),
-(@CGUID+318, 8, 3877.29, -3702.88, 142.76, 0, 0, 0),
-(@CGUID+318, 9, 3858.74, -3682.83, 142.819, 0, 0, 0),
-(@CGUID+318, 10, 3835.62, -3701.87, 142.634, 0, 0, 0),
-(@CGUID+318, 11, 3843.04, -3672.38, 144.223, 0, 0, 0),
-(@CGUID+318, 12, 3830.99, -3654.65, 145.407, 0, 0, 0),
-(@CGUID+318, 13, 3825.59, -3637.62, 146.268, 0, 0, 0),
-(@CGUID+318, 14, 3825.66, -3613.04, 145.322, 0, 0, 0),
-(@CGUID+318, 15, 3825.59, -3637.62, 146.268, 0, 0, 0),
-(@CGUID+318, 16, 3830.99, -3654.65, 145.407, 0, 0, 0),
-(@CGUID+319, 1, 4052.77, -3521.18, 121.645, 0, 0, 5),
-(@CGUID+319, 2, 4024.39, -3520.04, 122.014, 0, 0, 0),
-(@CGUID+319, 3, 4017.72, -3540.07, 122.869, 0, 0, 0),
-(@CGUID+319, 4, 4009.29, -3557.34, 125.133, 0, 0, 0),
-(@CGUID+319, 5, 4001.14, -3574.83, 127.533, 0, 0, 0),
-(@CGUID+319, 6, 3997.41, -3601.48, 129.139, 0, 0, 0),
-(@CGUID+319, 7, 3990.57, -3623.25, 130.038, 0, 0, 0),
-(@CGUID+319, 8, 3967.96, -3640.87, 132.917, 0, 0, 0),
-(@CGUID+319, 9, 3939.73, -3649.16, 139.253, 0, 0, 0),
-(@CGUID+319, 10, 3967.96, -3640.87, 132.917, 0, 0, 0),
-(@CGUID+319, 11, 3990.57, -3623.25, 130.038, 0, 0, 0),
-(@CGUID+319, 12, 3997.41, -3601.48, 129.139, 0, 0, 0),
-(@CGUID+319, 13, 4001.14, -3574.83, 127.533, 0, 0, 0),
-(@CGUID+319, 14, 4009.29, -3557.34, 125.133, 0, 0, 0),
-(@CGUID+319, 15, 4017.72, -3540.07, 122.869, 0, 0, 0),
-(@CGUID+319, 16, 4024.39, -3520.04, 122.014, 0, 0, 0),
-(@CGUID+319, 17, 4040.32, -3519.08, 121.648, 0, 0, 0),
 (@CGUID+320, 1, 3480.39, -3307.11, 130.413, 0, 0, 0),
 (@CGUID+320, 2, 3496.61, -3304.49, 130.248, 0, 0, 0),
 (@CGUID+320, 3, 3501.02, -3320.94, 130.199, 0, 0, 0),
@@ -797,20 +655,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+70, 10384, 329, 3530.04, -3350.78, 132.379, 3.9619, 7200, 7200, 0, 0, 0, 0), -- Spectral Citizen
 (@CGUID+71, 10384, 329, 3480.28, -3302.57, 130.583, 2.23402, 7200, 7200, 0, 0, 0, 0), -- Spectral Citizen
 (@CGUID+72, 10384, 329, 3714.04, -3480.83, 129.701, 0.876692, 7200, 7200, 5, 0, 0, 1), -- Spectral Citizen
-(@CGUID+73, 10384, 329, 3670.07, -3264.18, 127.886, 1.16937, 7200, 7200, 0, 0, 0, 0), -- Spectral Citizen
-(@CGUID+74, 10384, 329, 3697.62, -3374.77, 131.246, 4.36332, 7200, 7200, 0, 0, 0, 0), -- Spectral Citizen
-(@CGUID+75, 10384, 329, 3696.66, -3376.94, 131.376, 1.0821, 7200, 7200, 0, 0, 0, 0), -- Spectral Citizen
+(@CGUID+73, 0, 329, 3670.07, -3264.18, 127.886, 1.16937, 7200, 7200, 0, 0, 0, 0), -- Spectral Citizen
+(@CGUID+74, 0, 329, 3697.62, -3374.77, 131.246, 4.36332, 7200, 7200, 0, 0, 0, 0), -- Spectral Citizen
+(@CGUID+75, 0, 329, 3696.66, -3376.94, 131.376, 1.0821, 7200, 7200, 0, 0, 0, 0), -- Spectral Citizen
 (@CGUID+76, 10384, 329, 3482.35, -3295.59, 131.375, 5.33953, 7200, 7200, 5, 0, 0, 1), -- Spectral Citizen
 (@CGUID+77, 10384, 329, 3683.31, -3327.97, 124.96, 0.162112, 7200, 7200, 5, 0, 0, 1), -- Spectral Citizen
 (@CGUID+78, 10384, 329, 3662.65, -3337.44, 123.913, 5.27352, 7200, 7200, 5, 0, 0, 1), -- Spectral Citizen
-(@CGUID+79, 10385, 329, 3670.07, -3264.18, 127.886, 1.16937, 7200, 7200, 0, 0, 0, 0), -- Ghostly Citizen
+-- (@CGUID+79
 (@CGUID+80, 10385, 329, 3725.91, -3480.77, 130.194, 2.45175, 7200, 7200, 5, 0, 0, 1), -- Ghostly Citizen
 (@CGUID+81, 10385, 329, 3534.04, -3430.79, 138.082, 4.74729, 7200, 7200, 0, 0, 0, 0), -- Ghostly Citizen
 (@CGUID+82, 10385, 329, 3629.17, -3536.3, 138.541, 3.36848, 7200, 7200, 0, 0, 0, 0), -- Ghostly Citizen
 (@CGUID+83, 10385, 329, 3626.35, -3536.6, 138.556, 0, 7200, 7200, 0, 0, 0, 0), -- Ghostly Citizen
 (@CGUID+84, 10385, 329, 3656.81, -3355.02, 126.067, 0.972282, 7200, 7200, 5, 0, 0, 1), -- Ghostly Citizen
-(@CGUID+85, 10385, 329, 3697.62, -3374.77, 131.246, 4.36332, 7200, 7200, 0, 0, 0, 0), -- Ghostly Citizen
-(@CGUID+86, 10385, 329, 3696.66, -3376.94, 131.376, 1.0821, 7200, 7200, 0, 0, 0, 0), -- Ghostly Citizen
+-- (@CGUID+85
+-- (@CGUID+86
 (@CGUID+87, 10385, 329, 3732.72, -3486.28, 131.443, 2.32129, 7200, 7200, 0, 0, 0, 0), -- Ghostly Citizen
 (@CGUID+88, 10385, 329, 3535.85, -3428.41, 136.62, 0.920928, 7200, 7200, 5, 0, 0, 1), -- Ghostly Citizen
 (@CGUID+89, 10385, 329, 3471.3, -3363.83, 137.354, 5.09636, 7200, 7200, 0, 0, 0, 0), -- Ghostly Citizen
@@ -1030,20 +888,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+303, 10407, 329, 3891.4, -3689, 143.387, 1.43117, 7200, 7200, 0, 0, 0, 0), -- Fleshflayer Ghoul
 (@CGUID+304, 10407, 329, 3966.53, -3546.19, 127.225, 5.93412, 7200, 7200, 0, 0, 0, 0), -- Fleshflayer Ghoul
 (@CGUID+305, 10407, 329, 3832.02, -3588.27, 145.217, 4.90438, 7200, 7200, 0, 0, 0, 0), -- Fleshflayer Ghoul
-(@CGUID+306, 10408, 329, 3841.89, -3614.96, 145.062, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
-(@CGUID+307, 10408, 329, 3821.82, -3635.05, 146.268, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
-(@CGUID+308, 10408, 329, 3844.01, -3685.72, 143.404, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
-(@CGUID+309, 10408, 329, 3857.21, -3682.06, 142.894, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
-(@CGUID+310, 10408, 329, 3982.11, -3631.74, 130.292, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
-(@CGUID+311, 10408, 329, 3843.04, -3672.38, 144.223, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
-(@CGUID+312, 10408, 329, 4052.77, -3521.18, 121.645, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
-(@CGUID+313, 10409, 329, 3841.89, -3614.96, 145.062, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Screecher
-(@CGUID+314, 10409, 329, 3821.82, -3635.05, 146.268, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Screecher
-(@CGUID+315, 10409, 329, 3844.01, -3685.72, 143.404, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Screecher
-(@CGUID+316, 10409, 329, 3857.21, -3682.06, 142.894, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Screecher
-(@CGUID+317, 10409, 329, 3982.11, -3631.74, 130.292, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Screecher
-(@CGUID+318, 10409, 329, 3843.04, -3672.38, 144.223, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Screecher
-(@CGUID+319, 10409, 329, 4052.77, -3521.18, 121.645, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Screecher
+(@CGUID+306, 0, 329, 3841.89, -3614.96, 145.062, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
+(@CGUID+307, 0, 329, 3821.82, -3635.05, 146.268, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
+(@CGUID+308, 0, 329, 3844.01, -3685.72, 143.404, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
+(@CGUID+309, 0, 329, 3857.21, -3682.06, 142.894, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
+(@CGUID+310, 0, 329, 3982.11, -3631.74, 130.292, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
+(@CGUID+311, 0, 329, 3843.04, -3672.38, 144.223, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
+(@CGUID+312, 0, 329, 4052.77, -3521.18, 121.645, 0, 1800, 1800, 0, 0, 0, 2), -- Rockwing Gargoyle
+-- (@CGUID+313 - 319
 (@CGUID+320, 10411, 329, 3480.39, -3307.11, 130.413, 0, 900, 900, 0, 0, 0, 2), -- Eye of Naxxramas
 (@CGUID+321, 10411, 329, 3729.96, -3259.32, 127.959, 0, 900, 900, 0, 0, 0, 2), -- Eye of Naxxramas
 (@CGUID+322, 10411, 329, 3823.75, -3625.02, 145.529, 0, 900, 900, 0, 0, 0, 2), -- Eye of Naxxramas
@@ -1202,19 +1054,21 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 -- TBC+ (Paladin quest)
 (@CGUID+600, 17915, 329, 3664.08, -3602.07, 137.043, 3.735, 15, 15, 0, 0, 0, 0); -- [PH] Invis Paladin Quest Credit
 
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
+(@CGUID+73, 10384), (@CGUID+73, 10385), -- Spectral Citizen, Ghostly Citizen
+(@CGUID+74, 10384), (@CGUID+74, 10385), -- Spectral Citizen, Ghostly Citizen
+(@CGUID+75, 10384), (@CGUID+75, 10385), -- Spectral Citizen, Ghostly Citizen
+(@CGUID+306, 10408), (@CGUID+306, 10409), -- Rockwing Gargoyle, Rockwing Screecher
+(@CGUID+307, 10408), (@CGUID+307, 10409), -- Rockwing Gargoyle, Rockwing Screecher
+(@CGUID+308, 10408), (@CGUID+308, 10409), -- Rockwing Gargoyle, Rockwing Screecher
+(@CGUID+309, 10408), (@CGUID+309, 10409), -- Rockwing Gargoyle, Rockwing Screecher
+(@CGUID+310, 10408), (@CGUID+310, 10409), -- Rockwing Gargoyle, Rockwing Screecher
+(@CGUID+311, 10408), (@CGUID+311, 10409), -- Rockwing Gargoyle, Rockwing Screecher
+(@CGUID+312, 10408), (@CGUID+312, 10409); -- Rockwing Gargoyle, Rockwing Screecher
+
 -- ===========
 -- GAMEOBJECTS
 -- ===========
-
-INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
-(@OGUID+62, 153464), (@OGUID+62, 153469), -- Large Solid Chest, Large Mithril Bound Chest
-(@OGUID+63, 153464), (@OGUID+63, 153469), -- Large Solid Chest, Large Mithril Bound Chest
-(@OGUID+64, 153464), (@OGUID+64, 153469), -- Large Solid Chest, Large Mithril Bound Chest
-(@OGUID+65, 153464), (@OGUID+65, 153469), -- Large Solid Chest, Large Mithril Bound Chest
-(@OGUID+66, 153464), (@OGUID+66, 153469), -- Large Solid Chest, Large Mithril Bound Chest
-(@OGUID+67, 153464), (@OGUID+67, 153469), -- Large Solid Chest, Large Mithril Bound Chest
-(@OGUID+68, 153464), (@OGUID+68, 153469), -- Large Solid Chest, Large Mithril Bound Chest
-(@OGUID+69, 153464), (@OGUID+69, 153469); -- Large Solid Chest, Large Mithril Bound Chest
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 -- 1 - 2
@@ -1675,6 +1529,16 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+816, 182072, 329, 3680.86, -3644.45, 150.394, 0.65147, 0, 0, 0, 0, -900, -900, 0, 1),
 (@OGUID+817, 182072, 329, 3676.3, -3637.77, 150.766, 2.21834, 0, 0, 0, 0, -900, -900, 0, 1);
 
+INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
+(@OGUID+62, 153464), (@OGUID+62, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+63, 153464), (@OGUID+63, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+64, 153464), (@OGUID+64, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+65, 153464), (@OGUID+65, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+66, 153464), (@OGUID+66, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+67, 153464), (@OGUID+67, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+68, 153464), (@OGUID+68, 153469), -- Large Solid Chest, Large Mithril Bound Chest
+(@OGUID+69, 153464), (@OGUID+69, 153469); -- Large Solid Chest, Large Mithril Bound Chest
+
 -- ======
 -- EVENTS
 -- ======
@@ -1699,19 +1563,11 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+92, @PGUID+90, 0, 'Stratholme (Side Entrance) - Chest Pool');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 2, 'Enchanted Scarlet Thread (175966) - Stratholme'),
-(@PGUID+2, 1, 'Stratholme - Plague Ghoul / Skul'),
-(@PGUID+3, 1, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher / Stonespine'),
-(@PGUID+4, 1, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@PGUID+5, 1, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@PGUID+6, 1, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@PGUID+7, 1, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@PGUID+8, 1, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@PGUID+9, 1, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@PGUID+10, 1, 'Stratholme - Hearthsinger Forresten (10558)'),
-(@PGUID+11, 1, 'Stratholme - Ghostly / Spectral Citizen'),
-(@PGUID+12, 1, 'Stratholme - Ghostly / Spectral Citizen'),
-(@PGUID+13, 1, 'Stratholme - Ghostly / Spectral Citizen'),
+(@PGUID+1, 2, 'Stratholme - Enchanted Scarlet Thread (175966)'),
+(@PGUID+2, 1, 'Stratholme - Skul (10393)'),
+(@PGUID+3, 1, 'Stratholme - Stonespine (10809)'),
+(@PGUID+4, 1, 'Stratholme - Hearthsinger Forresten (10558)'),
+-- 5 - 13
 (@PGUID+14, 1, 'Stratholme - Scourge Data (176249)'),
 (@PGUID+15, 1, 'Stratholme Supply Crate'),
 (@PGUID+16, 1, 'Stratholme Supply Crate'),
@@ -1778,34 +1634,15 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+92, 1, 'Stratholme (Side Entrance) - Chest Pool');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+196, @PGUID+2, 10, 'Stratholme - Plague Ghoul / Skul'),
-(@CGUID+197, @PGUID+2, 10, 'Stratholme - Plague Ghoul / Skul'),
-(@CGUID+277, @PGUID+2, 40, 'Stratholme - Plague Ghoul / Skul'),
-(@CGUID+278, @PGUID+2, 40, 'Stratholme - Plague Ghoul / Skul'),
-(@CGUID+306, @PGUID+3, 35, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher / Stonespine'),
-(@CGUID+313, @PGUID+3, 35, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher / Stonespine'),
-(@CGUID+457, @PGUID+3, 30, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher / Stonespine'),
-(@CGUID+307, @PGUID+4, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+314, @PGUID+4, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+308, @PGUID+5, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+315, @PGUID+5, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+309, @PGUID+6, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+316, @PGUID+6, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+310, @PGUID+7, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+317, @PGUID+7, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+311, @PGUID+8, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+318, @PGUID+8, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+312, @PGUID+9, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+319, @PGUID+9, 50, 'Stratholme - Rockwing Gargoyle / Rockwing Screecher'),
-(@CGUID+73, @PGUID+11, 0, 'Stratholme - Ghostly / Spectral Citizen'),
-(@CGUID+79, @PGUID+11, 0, 'Stratholme - Ghostly / Spectral Citizen'),
-(@CGUID+74, @PGUID+12, 0, 'Stratholme - Ghostly / Spectral Citizen'),
-(@CGUID+85, @PGUID+12, 0, 'Stratholme - Ghostly / Spectral Citizen'),
-(@CGUID+75, @PGUID+13, 0, 'Stratholme - Ghostly / Spectral Citizen'),
-(@CGUID+86, @PGUID+13, 0, 'Stratholme - Ghostly / Spectral Citizen');
+(@CGUID+196, @PGUID+2, 10, 'Stratholme - Skul (10393)'),
+(@CGUID+197, @PGUID+2, 10, 'Stratholme - Skul (10393)'),
+(@CGUID+277, @PGUID+2, 40, 'Stratholme - Skul (Substitute)'),
+(@CGUID+278, @PGUID+2, 40, 'Stratholme - Skul (Substitute)'),
+(@CGUID+306, @PGUID+3, 66, 'Stratholme - Stonespine (Substitute)'),
+(@CGUID+457, @PGUID+3, 0, 'Stratholme - Stonespine (10809)');
 
 INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-(10558, @PGUID+10, 0, 'Stratholme - Hearthsinger Forresten (10558)');
+(10558, @PGUID+4, 0, 'Stratholme - Hearthsinger Forresten (10558)');
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@OGUID+332, @PGUID+15, 50, 'Stratholme Supply Crate'),
