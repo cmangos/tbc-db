@@ -185,8 +185,8 @@ INSERT INTO `creature_movement` (`Id`, `Point`, `PositionX`, `PositionY`, `Posit
 -- Blasted Lands
 -- =============
 
-SET @PATH_ID := 10008;
-SET @GROUP_ID := 10008;
+SET @PATH_ID := 19001;
+SET @GROUP_ID := 19001;
 SET @CREATURE_0 := 2791;
 SET @CREATURE_1 := 2792;
 SET @CREATURE_2 := 2793;
