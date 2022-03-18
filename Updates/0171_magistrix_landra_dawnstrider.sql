@@ -1,7 +1,3 @@
-DELETE FROM `creature` WHERE `guid`=153057 AND `id`=16210;
-INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `curhealth`) VALUES
-(153057, 16210, 530, 8718.337, -6655.9033, 72.838066, 5.654866695404052734, 300, 300, 0, 0);
-
 DELETE FROM `npc_text_broadcast_text` WHERE Id=8421;
 INSERT INTO `npc_text_broadcast_text` (`Id`, `Prob0`, `BroadcastTextId0`) VALUES
 (8421, 1, 12095);
