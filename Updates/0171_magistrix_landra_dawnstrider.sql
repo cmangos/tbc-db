@@ -1,3 +1,4 @@
+DELETE FROM `npc_text` WHERE `ID`=8421;
 DELETE FROM `npc_text_broadcast_text` WHERE Id=8421;
 INSERT INTO `npc_text_broadcast_text` (`Id`, `Prob0`, `BroadcastTextId0`) VALUES
 (8421, 1, 12095);
