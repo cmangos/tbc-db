@@ -1755,7 +1755,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1511313','15113','22','0','100','1','78','4','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Honored Hero - Salute Emote on Receive Emote'),
 -- Elder Goldwell (15569) - NSR
 -- Wonderform Operator (15732) - NSR
--- Ironforge Reveler (15906) - NSR
+-- Ironforge Reveler (15906)
+('1590601','15906','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Ironforge Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Lieutenant Nevell (16484) - NSR
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Infernal Hound (19207) - NSR
@@ -11051,7 +11052,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1511513','15115','22','0','100','1','78','3','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Honored Ancestor - Salute Emote on Receive Emote'),
 -- Elder Runetotem (15572) - NSR
 -- Wonderform Operator (15732) - NSR
--- Orgrimmar Reveler (15908) - NSR
+-- Orgrimmar Reveler (15908)
+('1590801','15908','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Orgrimmar Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Steamwheedle Bruiser (16096) - SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Wild Wolpertinger (23487) - NSR
@@ -12414,10 +12416,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1562902','15629','0','0','100','1025','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley'),
 -- Tyrande 15633 - NSR
 -- Stormwind Reveler 15694
+('1569401','15694','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Stormwind Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Thunder Bluff Reveler 15719
+('1571901','15719','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Thunder Bluff Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Valadar Starsong 15864
 -- Lunar Festival Vendor 15898
 -- Undercity Reveler 15907
+('1590701','15907','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Undercity Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Fariel Starsong 15909
 -- Lunar Festival Sentinel 15961
 -- Malfurion Stormrage 17949
@@ -14392,6 +14397,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Forest Wisp 15624
 -- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Darnassus Reveler 15905
+('1590501','15905','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Darnassus Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Festival Loremaster 16817
 -- Darnassus Firebreather
