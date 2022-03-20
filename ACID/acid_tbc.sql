@@ -860,7 +860,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greth (10058) - NSR
 -- 7:XT (3.1.1 Official Data)
 ('1422401','14224','1','0','100','1','10000','60000','120000','240000','0','0','1','9091','9093','9092','0','0','0','0','0','0','0','0','7:XT - Random Say OOC'),
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Sarophas (17097) - NSR
 -- Badlands Flame Keeper (25925) - NSR
@@ -1757,7 +1756,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1511313','15113','22','0','100','1','78','4','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Honored Hero - Salute Emote on Receive Emote'),
 -- Elder Goldwell (15569) - NSR
 -- Wonderform Operator (15732) - NSR
--- Ironforge Reveler (15906) - NSR
 -- Lieutenant Nevell (16484) - NSR
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Infernal Hound (19207) - NSR
@@ -1779,7 +1777,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ita Thunderbrew (23684) - npc_brewfest_barker
 -- Gordok Brew Barker (23685) - npc_brewfest_barker
 -- Gordok Brew Chief (23696) - NSR
--- Drunken Brewfest Reveler (23698) - NSR
 -- Barleybrew Festive Keg (23700) - NSR
 -- Thunderbrew Festive Keg (23702) - NSR
 -- Dark Iron Guzzler (23709) - NSR
@@ -1789,9 +1786,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Racing Ram (24462) - NSR
 -- Swift Racing Ram (24463) - NSR
 -- Pol Amberstill (24468) - NSR
--- Brewfest Reveler
-('2448401','24484','1','0','75','1','3000','15000','12000','21000','0','0','10','92','153','1','0','0','0','0','0','0','0','0','Brewfest Reveler - Random Emotes OOC'),
-('2448402','24484','22','0','100','1','35','0','0','0','0','0','11','41586','6','0','0','0','0','0','0','0','0','0','Brewfest Reveler - Cast Brewfest Toast on Receive Drink Emote'),
 -- Ipfelkofer Ironkeg (24710) - npc_brewfest_barker
 -- Dun Morogh Flame Warden (25895) - NSR
 -- High Admiral "Shelly" Jorrik (26081) - NSR
@@ -2079,7 +2073,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1562502','15625','0','0','100','1025','9000','16000','5000','9000','0','0','11','25805','0','0','0','0','0','0','0','0','0','0','Twilight Corrupter - Cast Soul Corruption'),
 ('1562503','15625','0','0','100','1025','12000','18000','35000','45000','0','0','11','25806','5','0','0','0','0','0','0','0','0','0','Twilight Corrupter - Cast Creature of Nightmare'),
 ('1562504','15625','5','0','100','1025','0','0','1','0','0','0','1','11270','0','0','11','21307','0','0','0','0','0','0','Twilight Corrupter - Yell and Cast Swell of Souls on Player Kill'),
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Anchorite Delan (17104) - NSR
 -- Weakened Morbent Fel (24782) - NSR
@@ -2845,7 +2838,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Morja (14871) - NSR
 -- Maxima Blastenheimer (15303) - NSR
 -- Elder Stormbrow (15565) - NSR
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Squire Rowe (17804) - npc_squire_rowe
 -- Bradford Bridenbecker (22985) - NSR
@@ -2854,7 +2846,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elwynn Pink Elekk (23507) - NSR
 -- Thunderbrew Apprentice (23510) - NSR
 -- Gordok Brew Apprentice (23511) - NSR
--- Brewfest Reveler (24484) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Transport Bot D3 (24832) - NSR
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Elwynn Forest Flame Warden (25898) - NSR
@@ -3012,7 +3003,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1567001','15670','0','0','100','1025','3500','17400','12300','27900','0','0','11','7365','1','32','0','0','0','0','0','0','0','0','Grimscale Forager - Cast Bottle of Poison'),
 ('1567002','15670','30','0','100','1','5','15937','0','0','0','0','11','26661','0','0','0','0','0','0','0','0','0','0','Grimscale Forager - Cast Fear on Receive AI Event 5'),
 -- Wonderform Operator (15732) - NSR
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Hathvelion Sungaze (15920) - NSR
 -- Captain Kelisendra (15921) - NSR
 -- Apprentice Loralthalis (15924) - NSR
@@ -3177,10 +3167,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2024402','20244','1','0','100','1','60000','60000','160000','160000','0','0','1','17924','17922','17923','1','17921','17920','17919','0','0','0','0','Nova - Emote and Say OOC'),
 -- Air Force Trip Wire - Rooftop (Horde) (22001) - npc_air_force_bots
 -- Arena Promoter (22101) - NSR
--- Blood Elf Reveler (23045) - HOLIDAY SPECIFIC BUFFS FROM DOING EMOTES (NEED MORE INFORMATION)
 -- Eversong Pink Elekk (23531) - NSR
 -- T'chali's Voodoo Brewery Apprentice (23533) - NSR
--- Brewfest Reveler (24484) - SCRIPTED IN ANOTHER ZONE
 -- Drohn's Distillery Apprentice (24501) - NSR
 -- Eversong Woods Flame Keeper (25931) - NSR
 -- Paymaster (26075) - NSR
@@ -3837,7 +3825,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Swift Brown Steed (14561) - NSR
 -- Sergeant Hartman
 ('1519901','15199','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Sergeant Hartman - Flee at 15% HP'),
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Rousch (16090) - NSR
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Duskingdawn (17092) - NSR
@@ -4079,7 +4066,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ironforge Commendation Officer 15734
 -- Stormwind Commendation Officer 15735
 -- Greatfather Winter's Helper 15745
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Officer Porterhouse 15763
 -- Officer Ironbeard 15764
 -- Elder Bronzebeard 15871
@@ -7413,8 +7399,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Auctioneer Naxxremis 15683
 -- Auctioneer Tricket 15684
 -- Auctioneer Rhyker 15686
--- Winter Reveler
-('1576001','15760','22','0','100','1','58','0','0','0','0','0','11','26218','6','32','0','0','0','0','0','0','0','0','Winter Reveler - Cast Mistletoe on Receive Kiss Emote'),
 -- Ambassador Sunsorrow 16287
 -- Forsaken Commoner 19178
 -- Midsummer Fireeater
@@ -7433,7 +7417,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tirisfal Pink Elekk (23530) - NSR
 -- T'chali's Voodoo Brewery Apprentice 23533
 -- Kraxx 23713
--- Brewfest Reveler (24484) - SCRIPTED IN ANOTHER ZONE
 -- Drohn's Distillery Apprentice 24501
 -- Dancing Flames (25305) - npc_dancing_flames
 -- Edward Cairn 29095
@@ -8982,7 +8965,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Demented Druid Spirit (15260) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Spirit Shade (15261) - npc_spirit_shade
 -- Elder Riversong (15605) - NSR
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Advisor Sunsworn (17100) - NSR
 -- 17106 Vindicator Palanaar
@@ -10216,7 +10198,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thamarian 12656
 ('1265601','12656','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Thamarian - Flee at 15% HP'),
 -- Elder Starweave (15601) - NSR
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Darkshore Flame Warden (25893) - NSR
 -- Beastmaster (26307) - NSR
@@ -10665,7 +10646,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hissperak (14227) - NSR
 -- Giggler (14228) - NSR
 -- Accursed Slitherblade (14229) - NSR
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Crusty
 ('1824101','18241','2','0','100','1025','20','0','120000','120000','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','Crusty - Cast Enrage at 20% HP'),
@@ -11053,7 +11033,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1511513','15115','22','0','100','1','78','3','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Honored Ancestor - Salute Emote on Receive Emote'),
 -- Elder Runetotem (15572) - NSR
 -- Wonderform Operator (15732) - NSR
--- Orgrimmar Reveler (15908) - NSR
 -- Steamwheedle Bruiser (16096) - SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Wild Wolpertinger (23487) - NSR
@@ -11067,7 +11046,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Suntouched Apprentice (23606) - NSR
 -- Gordok Brew Barker (23685) - npc_brewfest_barker
 -- Gordok Brew Chief (23696) - NSR
--- Drunken Brewfest Reveler (23698) - NSR
 -- Gordok Festive Keg (23706) - NSR
 -- Dark Iron Guzzler (23709) - NSR
 -- Self-Turning and Oscillating Utility Target (24108) - NSR
@@ -11075,7 +11053,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- T'chali's Voodoo Brew Festive Keg (24373) - NSR
 -- Racing Ram (24462) - NSR
 -- Swift Racing Ram (24463) - NSR
--- Brewfest Reveler (24484) - SCRIPTED IN ANOTHER ZONE
 -- Drohn's Distillery Barker (24492) - npc_brewfest_barker
 -- T'chali's Voodoo Brewery Barker (24493) - npc_brewfest_barker
 -- Blix Fixwidget (24495) - npc_brewfest_barker
@@ -11483,7 +11460,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1555202','15552','0','0','100','1025','8000','14000','8000','22000','0','0','11','25774','17','0','0','0','0','0','0','0','0','0','Doctor Weavil - Cast Mind Shatter'),
 -- Doctor Weavil's Flying Machine (15553) - NSR
 -- Minion of Weavil (15591) - NSR
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Tidelord Rrurgaz 16072
 ('1607201','16072','0','0','100','1025','1000','4000','14000','21000','0','0','11','16244','0','0','0','0','0','0','0','0','0','0','Tidelord Rrurgaz - Cast Demoralizing Shout'),
 ('1607202','16072','0','0','100','1025','9000','12000','14000','17000','0','0','11','15588','17','0','0','0','0','0','0','0','0','0','Tidelord Rrurgaz - Cast Thunderclap'),
@@ -12355,7 +12331,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit Shade (15261) - npc_spirit_shade
 -- Shade of Taerar (15302) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Elder Grimtotem (15581) - NSR
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Feralas Flame Warden (25899) - NSR
 -- Feralas Flame Keeper (25932) - NSR
@@ -12414,11 +12389,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1562901','15629','5','0','100','1025','0','0','0','0','0','0','11','21307','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Swell of Souls on kill'),
 ('1562902','15629','0','0','100','1025','7000','14000','12000','18000','0','0','11','17228','0','0','0','0','0','0','0','0','0','0','Nightmare Phantasm - Cast Shadowbolt Volley'),
 -- Tyrande 15633 - NSR
--- Stormwind Reveler 15694
--- Thunder Bluff Reveler 15719
 -- Valadar Starsong 15864
 -- Lunar Festival Vendor 15898
--- Undercity Reveler 15907
 -- Fariel Starsong 15909
 -- Lunar Festival Sentinel 15961
 -- Malfurion Stormrage 17949
@@ -12991,13 +12963,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Undercity Commendation Officer 15738
 -- Thunder Bluff Commendation Officer 15739
 -- Great-father Winter's Helper 15746
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Officer Vu'Shalay 15761
 -- Officer Redblade 15765
 -- Lunar Festival Herald 15891
 -- Lunar Festival Harbinger 15895
 -- Lunar Festival Vendor 15898
--- Orgrimmar Reveler 15908
 -- Orok Deathbane 16007
 -- Mokvar 16012
 -- Tharl Stonebleeder 16076
@@ -13418,7 +13388,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1574401','15744','0','0','100','1025','10000','30000','25000','35000','0','0','11','19408','17','0','0','0','0','0','0','0','0','0','Imperial Qiraji Destroyer - Cast Panic'),
 -- Greater Anubisath Warbringer 15754
 -- Greater Silithid Flayer 15756
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Colossus Researcher Sophia 15797
 -- Colossus Researcher Nestor 15798
 -- Colossus Researcher Eazel 15799
@@ -14070,7 +14039,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Qiraji Brigadier General (15753) - NSR
 -- Greater Anubisath Warbringer (15754) - NSR
 -- Greater Silithid Flayer (15756) - NSR
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Might of Kalimdor Lieutenant (15841) - NSR
 -- Might of Kalimdor Priest (15843) - NSR
 -- Mux Manascrambler (16014) - NSR
@@ -14390,8 +14358,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1443201','14432','9','0','100','1025','0','5','5000','8000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Threggil - Cast Strike'),
 -- Elder Bladeleaf 15595
 -- Forest Wisp 15624
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
--- Darnassus Reveler 15905
 -- Midsummer Celebrant 16781 - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Festival Loremaster 16817
 -- Darnassus Firebreather
@@ -15206,7 +15172,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1510602','15106','1','0','100','1','5000','25000','10000','30000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Frostwolf Emissary - Talk Emote OOC'),
 -- Maxima Blastenheimer 15303
 -- Horde Warbringer 15350
--- Winter Reveler (15760) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Tauren Commoner 19176
 -- Althallen Brightblade 20388
 -- Fizim Blastwrench 20499
@@ -30834,16 +30799,30 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1563401','15634','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Priestess of the Moon - Enable Range Mode on Aggro'),
 ('1563402','15634','0','0','100','1025','6000','12000','20000','30000','0','0','11','25839','0','0','0','0','0','0','0','0','0','0','Priestess of the Moon - Cast Mass Healing'),
 -- Baby Shark 15661 - NSR
+-- Stormwind Reveler 15694
+('1569401','15694','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Stormwind Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Tiny Snowman 15710
 ('1571001','15710','22','0','100','1','34','0','0','0','0','0','5','94','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Dance on receive dance emote'),
 ('1571002','15710','22','0','100','1','101','0','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Wave on receive wave emote'),
 ('1571003','15710','22','0','100','1','93','0','0','0','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Talk on receive talk emote'),
 ('1571004','15710','22','0','100','1','94','0','0','0','0','0','5','5','0','0','0','0','0','0','0','0','0','0','Tiny Snowman - Talk Exclamation on receive talkex emote'),
+-- Thunder Bluff Reveler 15719
+('1571901','15719','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Thunder Bluff Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Timbermaw Ancestor 15720
 ('1572001','15720','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Enable Range Mode on Aggro'),
 ('1572002','15720','14','0','100','1025','1000','40','8000','10000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Healing Wave on Friendly Missing HP'),
 ('1572003','15720','0','0','100','1025','0','40','3400','4800','0','0','11','9532','1','256','0','0','0','0','0','0','0','0','Timbermaw Ancestor - Cast Chain Lightning'),
+-- Winter Reveler
+('1576001','15760','22','0','100','1','58','0','0','0','0','0','11','26218','6','32','0','0','0','0','0','0','0','0','Winter Reveler - Cast Mistletoe on Receive Kiss Emote'),
 -- Tranquil Air Totem 15803 - TotemAI
+-- Darnassus Reveler 15905
+('1590501','15905','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Darnassus Reveler - Set faction to 35 if spawned in Moonglade'),
+-- Ironforge Reveler 15906
+('1590601','15906','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Ironforge Reveler - Set faction to 35 if spawned in Moonglade'),
+-- Undercity Reveler 15907
+('1590701','15907','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Undercity Reveler - Set faction to 35 if spawned in Moonglade'),
+-- Orgrimmar Reveler 15908
+('1590801','15908','11','0','100','0','2','493','0','0','0','0','2','35','0','0','0','0','0','0','0','0','0','0','Orgrimmar Reveler - Set faction to 35 if spawned in Moonglade'),
 -- Spectral Stalker 16093
 ('1609301','16093','29','0','100','0','5000','5000','0','0','0','0','19','768','0','0','0','0','0','0','0','0','0','0','Spectral Stalker - Remove UnitFlags on Generic Timer'),
 -- Totem of Wrath 17539 - TotemAI
@@ -30901,7 +30880,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Summoned Searing Totem 22895 - TotemAI
 -- Ashtongue Searing Totem 22896 - TotemAI
 -- Summoned Windfury Totem 22897 - TotemAI
+-- Blood Elf Reveler (23045) - HOLIDAY SPECIFIC BUFFS FROM DOING EMOTES (NEED MORE INFORMATION)
+-- Drunken Brewfest Reveler (23698) - NSR
 -- Captured Totem 23811 - TotemAI
+-- Brewfest Reveler 24484
+('2448401','24484','1','0','75','1','3000','15000','12000','21000','0','0','10','92','153','1','0','0','0','0','0','0','0','0','Brewfest Reveler - Random Emotes OOC'),
+('2448402','24484','22','0','100','1','35','0','0','0','0','0','11','41586','6','0','0','0','0','0','0','0','0','0','Brewfest Reveler - Cast Brewfest Toast on Receive Drink Emote'),
 -- Voodoo Servant 24529
 ('2452901','24529','0','0','100','1025','1000','3000','3000','7000','0','0','11','19874','1','0','0','0','0','0','0','0','0','0','Voodoo Servant - Cast Lightning Bolt'),
 -- D.I.S.C.O.
