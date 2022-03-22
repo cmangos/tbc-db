@@ -6,7 +6,6 @@ DBComment:
 * Investigate Muddy Churning Waters (180369) pooling
 * Investigate Herb (180164,180165,180166,180167,180168) pooling
 * Edge of Madness 4x3 Mad Servant Patrols, out one run on, three others walk (Imp Patrols)
-* @CGUID+148 + @CGUID+546 patrol towards entrance over the first bridge
 -- 180228/180229 50/50 go_spawn_grp?
 EndDBScriptData */
 
@@ -745,7 +744,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+145, 11350, 309, -11910.8, -1322.43, 77.5587, 0.680678, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Axe Thrower
 (@CGUID+146, 11350, 309, -11981.4, -1707.25, 32.3669, 2.80998, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Axe Thrower
 (@CGUID+147, 11350, 309, -11875.6, -1415.3, 61.1701, 5.5676, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Axe Thrower
-(@CGUID+148, 11350, 309, -12059.1, -1670.91, 42.4278, 4.01488, 7200, 7200, 5, 0, 0, 1), -- Gurubashi Axe Thrower
+(@CGUID+148, 11350, 309, -12055.0107421875, -1737.7178955078125, 52.92274093627929687, 3.351032257080078125, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Axe Thrower
 (@CGUID+149, 11350, 309, -11969.4, -1557.64, 40.2843, 1.11701, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Axe Thrower
 (@CGUID+150, 11350, 309, -11637.3, -1885.53, 57.2217, 1.3622, 7200, 7200, 5, 0, 0, 1), -- Gurubashi Axe Thrower
 (@CGUID+151, 11350, 309, -11647.7, -1885.87, 57.3467, 6.15927, 7200, 7200, 5, 0, 0, 1), -- Gurubashi Axe Thrower
@@ -1143,7 +1142,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+543, 11830, 309, -11666.8, -1545.98, 42.7417, 6.19592, 7200, 7200, 0, 0, 0, 0), -- Hakkari Priest
 (@CGUID+544, 11830, 309, -11987.5, -1705.43, 32.3669, 0, 7200, 7200, 0, 0, 0, 0), -- Hakkari Priest
 (@CGUID+545, 11830, 309, -11867.9, -1420.47, 61.0251, 2.68781, 7200, 7200, 0, 0, 0, 0), -- Hakkari Priest
-(@CGUID+546, 11830, 309, -12057.5, -1681.32, 42.7116, 4.66707, 7200, 7200, 5, 0, 0, 1), -- Hakkari Priest
+(@CGUID+546, 0, 309, -12051.0429687500, -1736.5230712890625, 52.04886627197265625, 0.191986218094825744, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Axe Thrower, Hakkari Priest
 (@CGUID+547, 11830, 309, -11964.8, -1549.77, 41.5586, 4.11898, 7200, 7200, 0, 0, 0, 0), -- Hakkari Priest
 (@CGUID+548, 11830, 309, -12292.9, -1842.97, 130.411, 3.24631, 7200, 7200, 0, 0, 0, 0), -- Hakkari Priest
 (@CGUID+549, 11830, 309, -12360.1, -1930.85, 132.438, 5.21853, 7200, 7200, 0, 0, 0, 0), -- Hakkari Priest
@@ -1425,7 +1424,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+437, 11371), (@CGUID+437, 11372), -- Razzashi Serpent, Razzashi Adder
-(@CGUID+468, 11371), (@CGUID+468, 11372); -- Razzashi Serpent, Razzashi Adder
+(@CGUID+468, 11371), (@CGUID+468, 11372), -- Razzashi Serpent, Razzashi Adder
+(@CGUID+546, 11350), (@CGUID+546, 11830); -- Gurubashi Axe Thrower, Hakkari Priest
 
 -- ===========
 -- GAMEOBJECTS
@@ -1752,16 +1752,20 @@ INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `descripti
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID+0, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000', '0', '0', '0', '1');
+(@GROUP_ID+0, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000', '0', '0', '0', '1'),
+(@GROUP_ID+2, 'Zul\Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000', '0', '0', '0', '1');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID+0, @CGUID+468, 0), -- Razzashi Serpent, Razzashi Adder
-(@GROUP_ID+0, @CGUID+437, 1); -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+0, @CGUID+437, 1), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+2, @CGUID+148, 0), -- Gurubashi Axe Thrower
+(@GROUP_ID+2, @CGUID+546, 1); -- Gurubashi Axe Thrower, Hakkari Priest
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@GROUP_ID+0, '2', '2', '0', @PATH_ID+0, 2, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000');
+(@GROUP_ID+0, '2', '2', '0', @PATH_ID+0, 2, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
+(@GROUP_ID+2, '2', '2', '0', @PATH_ID+2, 4, 'Zul\Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@PATH_ID+0, 01, -11874.8427734375, -1325.8515625000000, 78.68711090087890625, 100, 0, 0),
@@ -1783,7 +1787,33 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+0, 17, -11904.7236328125, -1344.1304931640625, 75.75994873046875000, 100, 0, 0),
 (@PATH_ID+0, 18, -11888.3642578125, -1338.8316650390625, 74.93051910400390625, 100, 0, 0),
 (@PATH_ID+0, 19, -11874.8427734375, -1325.8515625000000, 78.68711090087890625, 100, 0, 0),
-(@PATH_ID+0, 20, -11863.7529296875, -1313.4700927734375, 78.72680664062500000, 100, 0, 0);
+(@PATH_ID+0, 20, -11863.7529296875, -1313.4700927734375, 78.72680664062500000, 100, 0, 0),
+(@PATH_ID+2, 01, -12047.3779296875, -1730.9136962890625, 50.61271667480468750, 100, 0, 0),
+(@PATH_ID+2, 02, -12060.6816406250, -1706.4212646484375, 45.02653503417968750, 100, 0, 0),
+(@PATH_ID+2, 03, -12059.0761718750, -1670.9088134765625, 42.50791931152343750, 100, 0, 0),
+(@PATH_ID+2, 04, -12041.7695312500, -1650.1911621093750, 40.77352905273437500, 100, 0, 0),
+(@PATH_ID+2, 05, -12025.2148437500, -1640.9317626953125, 38.75792694091796875, 100, 0, 0),
+(@PATH_ID+2, 06, -12000.1279296875, -1644.0223388671875, 34.70641326904296875, 100, 0, 0),
+(@PATH_ID+2, 07, -11968.1445312500, -1647.8521728515625, 35.50362396240234375, 100, 0, 0),
+(@PATH_ID+2, 08, -11951.5585937500, -1633.4140625000000, 38.97324752807617187, 100, 0, 0),
+(@PATH_ID+2, 09, -11947.8251953125, -1619.8463134765625, 41.20742797851562500, 100, 0, 0),
+(@PATH_ID+2, 10, -11945.3076171875, -1590.3101806640625, 36.83780670166015625, 100, 0, 0),
+(@PATH_ID+2, 11, -11943.6435546875, -1566.9681396484375, 41.14322280883789062, 100, 0, 0),
+(@PATH_ID+2, 12, -11943.1035156250, -1557.1871337890625, 39.79278945922851562, 100, 0, 0),
+(@PATH_ID+2, 13, -11947.2548828125, -1542.4146728515625, 39.66778945922851562, 100, 0, 0),
+(@PATH_ID+2, 14, -11940.4873046875, -1533.6137695312500, 39.66778945922851562, 100, 0, 0),
+(@PATH_ID+2, 15, -11938.0732421875, -1520.2742919921875, 42.86973571777343750, 100, 0, 0),
+(@PATH_ID+2, 16, -11927.8134765625, -1477.2751464843750, 32.16494369506835937, 100, 0, 0),
+(@PATH_ID+2, 17, -11920.7587890625, -1446.3221435546875, 42.85203552246093750, 100, 0, 0),
+(@PATH_ID+2, 18, -11914.9433593750, -1429.7370605468750, 46.97988510131835937, 100, 0, 0),
+(@PATH_ID+2, 19, -11898.9667968750, -1416.9801025390625, 55.54922866821289062, 100, 0, 0),
+(@PATH_ID+2, 20, -11884.6689453125, -1407.5942382812500, 61.11807632446289062, 100, 0, 0),
+(@PATH_ID+2, 21, -11881.2509765625, -1392.7772216796875, 64.10791778564453125, 100, 0, 0),
+(@PATH_ID+2, 22, -11884.9316406250, -1366.6773681640625, 69.18042755126953125, 100, 0, 0),
+(@PATH_ID+2, 23, -11883.8964843750, -1344.9625244140625, 74.07407379150390625, 100, 0, 0),
+(@PATH_ID+2, 24, -11891.5673828125, -1333.3414306640625, 75.76108551025390625, 100, 0, 0),
+(@PATH_ID+2, 25, -11900.2197265625, -1322.3067626953125, 77.35015869140625000, 100, 0, 0),
+(@PATH_ID+2, 26, -11915.1816406250, -1309.0253906250000, 77.85015869140625000, 100, 0, 0);
 
 -- =========
 -- DBSCRIPTS
