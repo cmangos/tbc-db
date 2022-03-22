@@ -1,7 +1,7 @@
 /* DBScriptData
 DBName: Zul'Gurub
 DBScriptName: instance_zulgurub
-DB%Complete: 80
+DB%Complete: 81
 DBComment:
 * Investigate Muddy Churning Waters (180369) pooling
 * Investigate Herb (180164,180165,180166,180167,180168) pooling
@@ -101,31 +101,17 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+175, 15, -11640.9, -1511.29, 40.1723, 0, 0, 0),
 (@CGUID+175, 16, -11630.4, -1500.17, 42.928, 0, 0, 0),
 (@CGUID+175, 17, -11624.9, -1489.5, 45.1543, 0, 0, 0),
-(@CGUID+181, 1, -11954.5, -1813.08, 53.2418, 0, 0, 0),
-(@CGUID+181, 2, -11956.7, -1828.79, 54.6829, 0, 0, 0),
-(@CGUID+181, 3, -11952.2, -1838.46, 55.366, 0, 0, 0),
-(@CGUID+181, 4, -11943.8, -1843.58, 56.2136, 0, 0, 0),
-(@CGUID+181, 5, -11926.1, -1843.4, 58.0102, 0, 0, 0),
-(@CGUID+181, 6, -11907.2, -1845.77, 60.2044, 0, 0, 0),
-(@CGUID+181, 7, -11890.9, -1857.4, 63.0225, 0, 0, 0),
-(@CGUID+181, 8, -11903.1, -1845.2, 60.5397, 0, 0, 0),
-(@CGUID+181, 9, -11919.2, -1842.99, 58.7388, 0, 0, 0),
-(@CGUID+181, 10, -11942.1, -1842.17, 56.3436, 0, 0, 0),
-(@CGUID+181, 11, -11952.4, -1836.91, 55.2541, 0, 0, 0),
-(@CGUID+181, 12, -11953.4, -1816.45, 53.338, 0, 0, 0),
-(@CGUID+181, 13, -11954.6, -1803.02, 52.9549, 0, 0, 0),
-(@CGUID+181, 14, -11954.8, -1790.5, 53.3488, 0, 0, 0),
-(@CGUID+181, 15, -11956.8, -1768.2, 53.4717, 0, 0, 0),
-(@CGUID+181, 16, -11967.9, -1756.25, 53.2638, 0, 0, 0),
-(@CGUID+181, 17, -11987.9, -1756.21, 53.5807, 0, 0, 0),
-(@CGUID+181, 18, -12000, -1754.82, 54.866, 0, 0, 0),
-(@CGUID+181, 19, -12014.8, -1754.89, 55.064, 0, 0, 0),
-(@CGUID+181, 20, -11999.1, -1753.83, 54.7305, 0, 0, 0),
-(@CGUID+181, 21, -11975.8, -1755.59, 52.6417, 0, 0, 0),
-(@CGUID+181, 22, -11963.7, -1759.05, 53.5414, 0, 0, 0),
-(@CGUID+181, 23, -11958, -1769.74, 53.3791, 0, 0, 0),
-(@CGUID+181, 24, -11954.7, -1790.86, 53.3458, 0, 0, 0),
-(@CGUID+181, 25, -11951.6, -1805.5, 52.5094, 0, 0, 0),
+(@CGUID+181, 01, -11892.4951171875, -1857.2500000000000, 63.026908874511718750, 100, 0, 0),
+(@CGUID+181, 02, -11922.2255859375, -1844.5981445312500, 58.643447875976562500, 100, 0, 0),
+(@CGUID+181, 03, -11943.4892578125, -1843.0251464843750, 56.276336669921875000, 100, 0, 0),
+(@CGUID+181, 04, -11955.5322265625, -1833.0516357421875, 55.080913543701171870, 100, 0, 0),
+(@CGUID+181, 05, -11953.8310546875, -1798.9094238281250, 53.284046173095703120, 100, 0, 0),
+(@CGUID+181, 06, -11956.3964843750, -1766.9594726562500, 53.534046173095703120, 100, 0, 0),
+(@CGUID+181, 07, -11968.8564453125, -1756.7725830078125, 53.229122161865234370, 100, 0, 0),
+(@CGUID+181, 08, -11999.7802734375, -1753.2364501953125, 54.840938568115234370, 100, 0, 0),
+(@CGUID+181, 09, -12033.0712890625, -1750.8511962890625, 55.646064758300781250, 100, 0, 0),
+(@CGUID+181, 10, -12050.4570312500, -1766.3370361328125, 60.718105316162109370, 100, 0, 0),
+(@CGUID+181, 11, -12066.4062500000, -1786.6547851562500, 69.817367553710937500, 100, 0, 0),
 (@CGUID+182, 1, -12326.9, -1867.14, 130.261, 0, 0, 0),
 (@CGUID+182, 2, -12323.9, -1854.4, 130.261, 0, 0, 0),
 (@CGUID+182, 3, -12314.1, -1863.58, 130.261, 0, 0, 0),
@@ -777,7 +763,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+178, 11352, 309, -11806.6, -1622.62, 21.2285, 5.49779, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Berserker
 (@CGUID+179, 11352, 309, -11736.1, -1651.65, 21.2108, 0.174533, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Berserker
 (@CGUID+180, 11352, 309, -11736.7, -1636.54, 21.2108, 6.23082, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Berserker
-(@CGUID+181, 11352, 309, -11954.2, -1805.99, 53.222, 1.51931, 7200, 7200, 0, 0, 0, 2), -- Gurubashi Berserker
+(@CGUID+181, 11352, 309, -11892.4951171875, -1857.2500000000000, 63.026908874511718750, 4.468042850494384765, 7200, 7200, 0, 0, 0, 4), -- Gurubashi Berserker
 (@CGUID+182, 11352, 309, -12329.9, -1870.84, 130.349, 0.978481, 7200, 7200, 0, 0, 0, 2), -- Gurubashi Berserker
 (@CGUID+183, 11352, 309, -12101, -1478.76, 128.789, 0.171365, 7200, 7200, 0, 0, 0, 2), -- Gurubashi Berserker
 (@CGUID+184, 11352, 309, -11767.9, -1581.04, 21.1237, 1.5707, 7200, 7200, 0, 0, 0, 0), -- Gurubashi Berserker
@@ -1756,7 +1742,8 @@ INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `descripti
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@GROUP_ID+0, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000', '0', '0', '0', '1'),
 (@GROUP_ID+1, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001', '0', '0', '0', '1'),
-(@GROUP_ID+2, 'Zul\'Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000', '0', '0', '0', '1');
+(@GROUP_ID+2, 'Zul\'Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000', '0', '0', '0', '1'),
+(@GROUP_ID+3, 'Zul\'Gurub - Gurubashi Berserker (1) Patrol 000', '0', '0', '0', '0');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -1766,7 +1753,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID+1, @CGUID+487, 0), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+1, @CGUID+460, 1), -- Razzashi Serpent, Razzashi Adder
 (@GROUP_ID+2, @CGUID+148, 0), -- Gurubashi Axe Thrower
-(@GROUP_ID+2, @CGUID+546, 1); -- Gurubashi Axe Thrower, Hakkari Priest
+(@GROUP_ID+2, @CGUID+546, 1), -- Gurubashi Axe Thrower, Hakkari Priest
+(@GROUP_ID+3, @CGUID+181, 0); -- Gurubashi Berserker
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@GROUP_ID+0, '2', '2', '0', @PATH_ID+0, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
