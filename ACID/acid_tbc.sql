@@ -18139,7 +18139,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Laughing Skull Clan Ruins Credit Marker 18841 - npc_creditmarker_visit_with_ancestors
 -- Garadar Credit Marker 18842 - npc_creditmarker_visit_with_ancestors
 -- "King" Dond 18897
-('1889701','18897','10','0','100','1','1','5','60000','120000','0','0','54','16072','0','0','0','0','0','0','0','0','0','0','"King" Dond - Say OOC LOS'),
+('1889701','18897','1','0','100','1','30000','60000','150000','330000','0','0','54','16072','0','0','0','0','0','0','0','0','0','0','"King" Dond - Say OOC'),
 -- Wazat
 ('1903501','19035','1','0','100','1','15000','22000','55000','65000','0','0','1','16139','16138','16137','0','0','0','0','0','0','0','0','Wazat - Random Say OOC'),
 -- Windroc Matriarch
