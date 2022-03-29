@@ -589,17 +589,6 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (12099, 409, 12057, 1543, 0), -- Firesworn -> Garr
 (12101, 409, 12057, 1024, 0); -- Lava Surger -> Garr
 
-INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@GROUP_ID, 'The Molten Core - Lucifron', 0, 0, 0, 3);
-
-INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@GROUP_ID, @CGUID+266, 0),
-(@GROUP_ID, @CGUID+267, 1),
-(@GROUP_ID, @CGUID+268, 2);
-
-INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@GROUP_ID, 4, 5, 0, @PATH_ID, 4, 'The Molten Core - Lucifron');
-
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 11658, 409, 955.057, -656.78, -199.603, 4.81711, 43200, 43200, 0, 0, 0, 0), -- Molten Giant
 (@CGUID+2, 11658, 409, 1123.9, -546.339, -107.569, 1.85005, 43200, 43200, 0, 0, 0, 0), -- Molten Giant
@@ -964,6 +953,43 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+40, @PGUID+38, 0, 'MC - Dark Iron Deposit');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+
+-- ============
+-- SPAWN GROUPS
+-- ============
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@GROUP_ID+0, 'The Molten Core - Lucifron', 0, 0, 0, 3),
+(@GROUP_ID+1, 'The Molten Core - Garr', 0, 0, 0, 3);
+
+-- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@GROUP_ID+0, @CGUID+266, 0), -- Lucifron
+(@GROUP_ID+0, @CGUID+267, 1), -- Flamewaker Protector
+(@GROUP_ID+0, @CGUID+268, 2), -- Flamewaker Protector
+
+(@GROUP_ID+1, @CGUID+224, 0), -- Garr
+(@GROUP_ID+1, @CGUID+240, 1), -- Firesworn
+(@GROUP_ID+1, @CGUID+241, 2), -- Firesworn
+(@GROUP_ID+1, @CGUID+242, 3), -- Firesworn
+(@GROUP_ID+1, @CGUID+243, 4), -- Firesworn
+(@GROUP_ID+1, @CGUID+244, 5), -- Firesworn
+(@GROUP_ID+1, @CGUID+245, 6), -- Firesworn
+(@GROUP_ID+1, @CGUID+246, 7), -- Firesworn
+(@GROUP_ID+1, @CGUID+247, 8); -- Firesworn
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@GROUP_ID+0, 4, 5, 0, @PATH_ID+0, 4, 'The Molten Core - Lucifron'),
+(@GROUP_ID+1, 6, 10, 0, 0, 1, 'The Molten Core - Garr');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@PATH_ID+0, 01, 1000.20257568359375, -955.40692138671875, -179.582534790039062, 100, 0, 0),
+(@PATH_ID+0, 02, 1007.78198242187500, -958.08843994140625, -180.174041748046875, 100, 0, 0),
+(@PATH_ID+0, 03, 1014.45031738281250, -978.56317138671875, -181.185424804687500, 100, 0, 0),
+(@PATH_ID+0, 04, 1037.02221679687500, -986.34191894531250, -181.516296386718750, 100, 0, 0),
+(@PATH_ID+0, 05, 1053.14965820312500, -990.75457763671875, -182.661544799804687, 100, 0, 0),
+(@PATH_ID+0, 06, 1070.41137695312500, -1006.7645263671875, -185.544433593750000, 100, 0, 0);
 
 -- =========
 -- DBSCRIPTS
