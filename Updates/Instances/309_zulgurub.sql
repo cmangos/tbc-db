@@ -1401,12 +1401,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+816, 15111, 309, -11969.1, -1830.27, 56.0987, 3.38812, 7200, 7200, 0, 0, 0, 0), -- Mad Servant
 (@CGUID+817, 15111, 309, -11968, -1842.86, 56.0263, 0, 7200, 7200, 0, 0, 0, 0), -- Mad Servant
 (@CGUID+818, 15111, 309, -11958.3, -1848.26, 56.4179, 1.76084, 7200, 7200, 0, 0, 0, 0), -- Mad Servant
-(@CGUID+819, 15111, 309, -11880, -1894.01, 63.6083, 5.37942, 7200, 7200, 5, 0, 0, 1), -- Mad Servant
-(@CGUID+820, 15111, 309, -11880.4, -1891.24, 63.6149, 4.09184, 7200, 7200, 5, 0, 0, 1), -- Mad Servant
-(@CGUID+821, 15111, 309, -11879.5, -1888.59, 63.6083, 4.37713, 7200, 7200, 5, 0, 0, 1), -- Mad Servant
-(@CGUID+822, 15111, 309, -11885.8, -1877.17, 63.6083, 1.99538, 7200, 7200, 5, 0, 0, 1), -- Mad Servant
-(@CGUID+823, 15111, 309, -11884.5, -1880.88, 63.6083, 2.00092, 7200, 7200, 5, 0, 0, 1), -- Mad Servant
-(@CGUID+824, 15111, 309, -11883.1, -1883.27, 63.6083, 0.717006, 7200, 7200, 5, 0, 0, 1); -- Mad Servant
+(@CGUID+819, 15111, 309, -11872.7783203125, -1888.9879150390625, 64.28685760498046875, 0.855211317539215087, 21600, 21600, 0, 0, 0, 0), -- Mad Servant
+(@CGUID+820, 15111, 309, -11871.7783203125, -1887.9879150390625, 64.28685760498046875, 0.000000000000000000, 21600, 21600, 0, 0, 0, 0), -- Mad Servant
+(@CGUID+821, 15111, 309, -11870.7783203125, -1886.9879150390625, 64.28685760498046875, 0.000000000000000000, 21600, 21600, 0, 0, 0, 0), -- Mad Servant
+(@CGUID+822, 15111, 309, -11885.8408203125, -1877.8155517578125, 63.5870208740234375, 2.809980154037475585, 21600, 21600, 0, 0, 0, 0), -- Mad Servant
+(@CGUID+823, 15111, 309, -11884.8408203125, -1876.8155517578125, 63.5870208740234375, 0.000000000000000000, 21600, 21600, 0, 0, 0, 0), -- Mad Servant
+(@CGUID+824, 15111, 309, -11883.8408203125, -1875.8155517578125, 63.5870208740234375, 0.000000000000000000, 21600, 21600, 0, 0, 0, 0); -- Mad Servant
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+437, 11371), (@CGUID+437, 11372), -- Razzashi Serpent, Razzashi Adder
@@ -1746,7 +1746,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@GROUP_ID+1, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001', '0', '0', '0', '1'),
 (@GROUP_ID+2, 'Zul\'Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000', '0', '0', '0', '1'),
 (@GROUP_ID+3, 'Zul\'Gurub - Gurubashi Berserker (1) Patrol 000', '0', '0', '0', '0'),
-(@GROUP_ID+4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002', '0', '0', '0', '1');
+(@GROUP_ID+4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002', '0', '0', '0', '1'),
+(@GROUP_ID+5, 'Zul\'Gurub - Mad Servant (3) Patrol 000', '0', '0', '0', '1'),
+(@GROUP_ID+6, 'Zul\'Gurub - Mad Servant (3) Patrol 001', '0', '0', '0', '1');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -1759,13 +1761,21 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@GROUP_ID+2, @CGUID+546, 1), -- Gurubashi Axe Thrower, Hakkari Priest
 (@GROUP_ID+3, @CGUID+181, 0), -- Gurubashi Berserker
 (@GROUP_ID+4, @CGUID+450, 0), -- Razzashi Serpent, Razzashi Adder
-(@GROUP_ID+4, @CGUID+451, 1); -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+4, @CGUID+451, 1), -- Razzashi Serpent, Razzashi Adder
+(@GROUP_ID+5, @CGUID+822, 0), -- Mad Servant
+(@GROUP_ID+5, @CGUID+823, 1), -- Mad Servant
+(@GROUP_ID+5, @CGUID+824, 2), -- Mad Servant
+(@GROUP_ID+6, @CGUID+819, 0), -- Mad Servant
+(@GROUP_ID+6, @CGUID+820, 1), -- Mad Servant
+(@GROUP_ID+6, @CGUID+821, 2); -- Mad Servant
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@GROUP_ID+0, '2', '2', '0', @PATH_ID+0, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
 (@GROUP_ID+1, '2', '2', '0', @PATH_ID+1, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001'),
 (@GROUP_ID+2, '2', '2', '0', @PATH_ID+2, 4, 'Zul\'Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000'),
-(@GROUP_ID+4, '2', '2', '0', @PATH_ID+4, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002');
+(@GROUP_ID+4, '2', '2', '0', @PATH_ID+4, 4, 'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002'),
+(@GROUP_ID+5, '1', '3', '0', @PATH_ID+5, 2, 'Zul\'Gurub - Mad Servant (3) Patrol 000'),
+(@GROUP_ID+6, '1', '3', '0', @PATH_ID+6, 2, 'Zul\'Gurub - Mad Servant (3) Patrol 001');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@PATH_ID+0, 01, -11863.7529296875, -1313.4700927734375, 78.72680664062500000, 100, 0, 0),
@@ -1831,7 +1841,19 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+4, 08, -11968.5029296875, -1770.5247802734375, 54.45021438598632812, 100, 0, 0),
 (@PATH_ID+4, 09, -11966.6181640625, -1790.2196044921875, 54.22960281372070312, 100, 0, 0),
 (@PATH_ID+4, 10, -11961.9472656250, -1803.9279785156250, 54.60923385620117187, 100, 0, 0),
-(@PATH_ID+4, 11, -11938.3281250000, -1819.2622070312500, 52.21226119995117187, 100, 0, 0);
+(@PATH_ID+4, 11, -11938.3281250000, -1819.2622070312500, 52.21226119995117187, 100, 0, 0),
+(@PATH_ID+5, 01, -11893.7041015625, -1880.7554931640625, 63.60831832885742187, 100, 0, 0),
+(@PATH_ID+5, 02, -11891.0302734375, -1885.1721191406250, 63.60831832885742187, 100, 0, 0),
+(@PATH_ID+5, 03, -11885.8535156250, -1884.8515625000000, 63.60831832885742187, 100, 0, 0),
+(@PATH_ID+5, 04, -11883.8828125000, -1881.4486083984375, 63.60831832885742187, 100, 0, 0),
+(@PATH_ID+5, 05, -11885.8173828125, -1877.1693115234375, 63.60831832885742187, 100, 0, 0),
+(@PATH_ID+5, 06, -11891.1093750000, -1875.8903808593750, 63.60831832885742187, 100, 0, 0),
+(@PATH_ID+6, 01, -11879.2148437500, -1887.6453857421875, 63.60831832885742187, 100, 0, 0),
+(@PATH_ID+6, 02, -11880.9931640625, -1892.7508544921875, 63.60831832885742187, 100, 0, 0),
+(@PATH_ID+6, 03, -11877.7763671875, -1896.8364257812500, 63.60831832885742187, 100, 0, 0),
+(@PATH_ID+6, 04, -11872.0585937500, -1895.8775634765625, 63.89884567260742187, 100, 0, 0),
+(@PATH_ID+6, 05, -11870.7783203125, -1890.4826660156250, 64.42716979980468750, 100, 0, 0),
+(@PATH_ID+6, 06, -11874.4931640625, -1886.7122802734375, 64.23136901855468750, 100, 0, 0);
 
 -- =========
 -- DBSCRIPTS
