@@ -1569,7 +1569,7 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(5800001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 72801, 3);
+(5800001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 12001, 3);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (5800001, 25509, 1, 2, 0),
@@ -1621,4 +1621,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+
+DELETE FROM conditions WHERE condition_entry IN(12001) AND type=42;
+INSERT INTO conditions(condition_entry,type,value1,value2,value3) VALUES
+(12001,42,72801,0,1);
 
