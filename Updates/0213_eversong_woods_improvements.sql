@@ -215,6 +215,7 @@ REPLACE INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (5302274, 15641), (5302274, 15642), (5302274, 15643),
 (5302276, 15641), (5302276, 15643);
 
+DELETE FROM `creature_movement` WHERE `Id` IN (55613,55619,55624,55626,55640);
 DELETE FROM `creature_movement` WHERE `Id` IN (SELECT `guid` FROM `creature` WHERE `id` IN (15641,15642,15643));
 DELETE FROM `creature_movement` WHERE `Id` IN (5302249,5302255,5302260,5302262,5302276);
 INSERT INTO `creature_movement` (`Id`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
@@ -806,6 +807,7 @@ REPLACE INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (5302302, 15645), (5302302, 16162),
 (5302307, 15645), (5302307, 16162);
 
+DELETE FROM `creature_movement` WHERE `Id` IN (55708,55716,56766,56767,56770);
 DELETE FROM `creature_movement` WHERE `Id` IN (SELECT `guid` FROM `creature` WHERE `id` IN (15645,16162));
 DELETE FROM `creature_movement` WHERE `Id` IN (5302277,5302285,5302301,5302302,5302305);
 INSERT INTO `creature_movement` (`Id`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
