@@ -224,23 +224,19 @@ UPDATE `creature` SET `equipment_id` = 52513 WHERE `guid` IN (@CGUID+24,@CGUID+2
 -- ===========
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 184179, 543, 3, -1357.39, 1636.75, 65.543, 1.01586, 0, 0, 0, 0, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficulty01
-(@OGUID+2, 184180, 543, 3, -1357.4, 1636.72, 65.5564, 1.01896, 0, 0, 0, 0, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficultyIcon01
-(@OGUID+3, 185168, 543, 1, -1429.8098, 1772.9159, 82.0765, 5.044002, 0, 0, -0.5807028, 0.81411564, -600, -600, 100, 1), -- Reinforced Fel Iron Chest
-(@OGUID+4, 185169, 543, 2, -1429.8098, 1772.9159, 82.0765, 5.044002, 0, 0, -0.5807028, 0.81411564, -600, -600, 100, 1), -- Reinforced Fel Iron Chest
-(@OGUID+5, 184930, 543, 1, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+6, 184931, 543, 1, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+7, 184940, 543, 2, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+8, 184941, 543, 2, -1203.092, 1430.389, 68.54727, 1.518436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+9, 184930, 543, 1, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Fel Iron Chest
-(@OGUID+10, 184931, 543, 1, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Fel Iron Chest
-(@OGUID+11, 184940, 543, 2, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+12, 184941, 543, 2, -1297.503, 1582.332, 91.78211, 0.9075702, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+13, 181734, 543, 3, -1166.2717, 1453.7053, 68.51827, 1.0522249, 0, 0, 0.50217533, 0.8647658, 300, 300, 100, 1), -- Campfire
-(@OGUID+14, 181735, 543, 3, -1189.4822, 1437.6259, 68.46415, 1.0522249, 0, 0, 0.50217533, 0.8647658, 300, 300, 100, 1), -- Bonfire
-(@OGUID+15, 181736, 543, 3, -1218.0891, 1441.1973, 68.64153, 2.4979556, 0, 0, 0.9486618, 0.31629226, 300, 300, 100, 1), -- Campfire
-(@OGUID+16, 181737, 543, 3, -1143.0717, 1508.3219, 68.58932, 1.4167924, 0, 0, 0.65061665, 0.7594063, 300, 300, 100, 1), -- Campfire
-(@OGUID+17, 181738, 543, 3, -1136.574, 1507.0183, 68.372444, 1.4167924, 0, 0, 0.65061665, 0.7594063, 300, 300, 100, 1); -- Meat Rack
+(@OGUID+1, 184179, 543, 3, -1357.3939208984375, 1636.751220703125, 65.54296112060546875, 1.015863299369812011, 0, 0, 0.486371040344238281, 0.873752415180206298, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficulty01
+(@OGUID+2, 184180, 543, 3, -1357.395263671875, 1636.7169189453125, 65.55643463134765625, 1.018955588340759277, 0, 0, 0.487721443176269531, 0.872999310493469238, 0, 0, 0, 0), -- Doodad_InstancePortal_PurpleDifficultyIcon01
+(@OGUID+3, 181734, 543, 3, -1166.271728515625, 1453.705322265625, 68.51827239990234375, 1.05222487449645996, 0, 0, 0.502175331115722656, 0.864765822887420654, 300, 300, 100, 1), -- Campfire
+(@OGUID+4, 181735, 543, 3, -1189.482177734375, 1437.6258544921875, 68.46414947509765625, 1.05222487449645996, 0, 0, 0.502175331115722656, 0.864765822887420654, 300, 300, 100, 1), -- Bonfire
+(@OGUID+5, 181736, 543, 3, -1218.089111328125, 1441.197265625, 68.64153289794921875, 2.497955560684204101, 0, 0, 0.94866180419921875, 0.316292256116867065, 300, 300, 100, 1), -- Campfire
+(@OGUID+6, 181737, 543, 3, -1143.0716552734375, 1508.3218994140625, 68.58931732177734375, 1.41679239273071289, 0, 0, 0.650616645812988281, 0.759406328201293945, 300, 300, 100, 1), -- Campfire
+(@OGUID+7, 181738, 543, 3, -1136.573974609375, 1507.018310546875, 68.37244415283203125, 1.41679239273071289, 0, 0, 0.650616645812988281, 0.759406328201293945, 300, 300, 100, 1), -- Meat Rack
+(@OGUID+8, 185168, 543, 1, -1429.809814453125, 1772.9158935546875, 82.07649993896484375, 5.044002056121826171, 0, 0, -0.58070278167724609, 0.814115643501281738, -600, -600, 100, 1), -- Reinforced Fel Iron Chest
+(@OGUID+9, 185169, 543, 2, -1429.809814453125, 1772.9158935546875, 82.07649993896484375, 5.044002056121826171, 0, 0, -0.58070278167724609, 0.814115643501281738, -600, -600, 100, 1), -- Reinforced Fel Iron Chest
+(@OGUID+10, 0, 543, 1, -1203.0924072265625, 1430.3885498046875, 68.547271728515625, 1.518436193466186523, 0, 0, 0.6883544921875, 0.725374460220336914, 86400, 86400, 100, 1), -- Solid Fel Iron Chest, Bound Fel Iron Chest
+(@OGUID+11, 0, 543, 2, -1203.0924072265625, 1430.3885498046875, 68.547271728515625, 1.518436193466186523, 0, 0, 0.6883544921875, 0.725374460220336914, 86400, 86400, 100, 1), -- Bound Adamantite Chest, Solid Adamantite Chest
+(@OGUID+12, 0, 543, 1, -1297.5025634765625, 1582.3319091796875, 91.78211212158203125, 0.907570183277130126, 0, 0, 0.438370704650878906, 0.898794233798980712, 86400, 86400, 100, 1), -- Solid Fel Iron Chest, Bound Fel Iron Chest
+(@OGUID+13, 0, 543, 2, -1297.5025634765625, 1582.3319091796875, 91.78211212158203125, 0.907570183277130126, 0, 0, 0.438370704650878906, 0.898794233798980712, 86400, 86400, 100, 1); -- Bound Adamantite Chest, Solid Adamantite Chest
 
 -- ======
 -- EVENTS
@@ -249,35 +245,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
-
--- =======
--- POOLING
--- =======
-
-INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
-(@PGUID+91, @PGUID+90, 0, 'Hellfire Ramparts - Chest - #1'),
-(@PGUID+92, @PGUID+90, 0, 'Hellfire Ramparts - Chest - #2');
-
-INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+90, 1, 'Hellfire Ramparts - Master Chest Pool'),
-(@PGUID+91, 1, 'Hellfire Ramparts - Chest - #1'),
-(@PGUID+92, 1, 'Hellfire Ramparts - Chest - #2');
-
--- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-
--- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-
-INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+5, @PGUID+91, 0, 'Hellfire Ramparts - Solid Fel Iron Chest (184930)'),
-(@OGUID+6, @PGUID+91, 0, 'Hellfire Ramparts - Bound Fel Iron Chest (184931)'),
-(@OGUID+7, @PGUID+91, 0, 'Hellfire Ramparts - Bound Adamantite Chest (184940)'),
-(@OGUID+8, @PGUID+91, 0, 'Hellfire Ramparts - Solid Adamantite Chest (184941)'),
-(@OGUID+9, @PGUID+92, 0, 'Hellfire Ramparts - Solid Fel Iron Chest (184930)'),
-(@OGUID+10, @PGUID+92, 0, 'Hellfire Ramparts - Bound Fel Iron Chest (184931)'),
-(@OGUID+11, @PGUID+92, 0, 'Hellfire Ramparts - Bound Adamantite Chest (184940)'),
-(@OGUID+12, @PGUID+92, 0, 'Hellfire Ramparts - Solid Adamantite Chest (184941)');
-
--- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 -- ============
 -- SPAWN GROUPS
@@ -318,9 +285,15 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+32, 'Hellfire Ramparts - Bonechewer Ravener (1) Patrol 001', 0, 0, 0, 1),
 (@SGGUID+33, 'Hellfire Ramparts - Bonechewer Ravener (1) Patrol 002', 0, 0, 0, 1),
 (@SGGUID+34, 'Hellfire Ramparts - Omor the Unscarred (1)', 0, 0, 0, 1),
-(@SGGUID+35, 'Hellfire Ramparts - Vazruden the Herald (1)', 0, 0, 0, 1);
+(@SGGUID+35, 'Hellfire Ramparts - Vazruden the Herald (1)', 0, 0, 0, 1),
+(@SGGUID+36, 'Hellfire Ramparts (Normal) - Solid Fel Iron Chest, Bound Fel Iron Chest (2)', 1, 1, 0, 0),
+(@SGGUID+37, 'Hellfire Ramparts (Heroic) - Bound Adamantite Chest, Solid Adamantite Chest (2)', 1, 1, 0, 0);
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+36, 184930, 0, 0, 60), -- Solid Fel Iron Chest
+(@SGGUID+36, 184931, 0, 0, 40), -- Bound Fel Iron Chest
+(@SGGUID+37, 184940, 0, 0, 60), -- Bound Adamantite Chest
+(@SGGUID+37, 184941, 0, 0, 40); -- Solid Adamantite Chest
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+7, 0), -- Bonechewer Hungerer
@@ -423,7 +396,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+32, @CGUID+21, 0), -- Bonechewer Ravener
 (@SGGUID+33, @CGUID+25, 0), -- Bonechewer Ravener
 (@SGGUID+34, @CGUID+86, 0), -- Omor the Unscarred
-(@SGGUID+35, @CGUID+85, 0); -- Vazruden the Herald
+(@SGGUID+35, @CGUID+85, 0), -- Vazruden the Herald
+(@SGGUID+36, @OGUID+10, -1), -- Solid Fel Iron Chest, Bound Fel Iron Chest
+(@SGGUID+36, @OGUID+12, -1), -- Solid Fel Iron Chest, Bound Fel Iron Chest
+(@SGGUID+37, @OGUID+11, -1), -- Bound Adamantite Chest, Solid Adamantite Chest
+(@SGGUID+37, @OGUID+13, -1); -- Bound Adamantite Chest, Solid Adamantite Chest
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+4, 2, 3.5, 0, @SGGUID+4, 2, 'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 000'),
