@@ -44,14 +44,14 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 (@PATH,1,11,-11384.697,-308.23578,63.358273,100, 0, 0),
 (@PATH,1,12,-11382.183,-317.46582,65.11658,100, 0, 0),
 (@PATH,1,13,-11379.763,-328.08258,65.40881,100, 0, 0),
-(@PATH,1,14,-11372.397,-344.2346,65.67435,100, 0, 0),
+(@PATH,1,14,-11372.397,-344.2346,65.67435,100, 2000, 142101),
 (@PATH,1,15,-11366.07,-364.66504,66.08626,100, 0, 0),
 (@PATH,1,16,-11358.83,-375.84946,65.32926,100, 0, 0),
-(@PATH,1,17,-11350.435,-381.47113,65.6547,100, 0, 142101), -- Spawn Ghouls
+(@PATH,1,17,-11350.435,-381.47113,65.6547,100, 0, 0), -- Spawn Ghouls
 (@PATH,1,18,-11308.213,-370.0369,65.413025,100, 0, 0), 
-(@PATH,1,19,-11299.191,-369.09235,65.643585,100, 4000, 0), 
+(@PATH,1,19,-11299.191,-369.09235,65.643585,100, 30000, 0), 
 (@PATH,1,20,-11271.992,-368.16895,61.901157,100, 0, 0),
-(@PATH,1,21,-11255.041,-371.03772,58.591084,100, 0, 142102); -- Despawn
+(@PATH,1,21,-11255.041,-371.03772,58.591084,100, 3000, 142102); -- Despawn
 
 -- Add quest end script for quest 'Patrol Schedules' entry 330
 -- Privat Merle moves into the camp, faces Player and talks to player.
@@ -60,45 +60,59 @@ DELETE FROM dbscripts_on_quest_end WHERE id = '330';
 INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `x`, `y`, `z`, `comments`) VALUES 
 ('330', '0', '0', '21', '1', '0', '0', '1421', '75', '0', '0', '0', '0', '0', 'Patrol Schedules - Privat Merle - Set ActiveState'),
 ('330', '0', '1', '25', '1', '0', '0', '1421', '75', '0', '0', '0', '0', '0', 'Patrol Schedules - Privat Merle - Set Run'),
-('330', '0', '2', '20', '2', '1', '0', '1421', '75', '0', '0', '0', '0', '0', 'Patrol Schedules - Privat Merle - Start Waypoint Path 1');
+('330', '0', '2', '20', '2', '1', '1', '1421', '75', '0', '0', '0', '0', '0', 'Patrol Schedules - Privat Merle - Start Waypoint Path 1');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id = '142100';
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `dataint`, `x`, `y`, `z`, `comments`) VALUES 
-('142100', '1000', '0', '36', '0', '0', '0', '0', '0', '0','Patrol Schedules - Privat Merle - Face Player'),
-('142100', '1000', '1', '0', '0', '0', '229', '0', '0', '0','Patrol Schedules - Privat Merle - Say Text'),
-('142100', '2000', '22', '0', '0', '0', '0', '0', '0', '0','Patrol Schedules - Privat Merle - Change Faction'),
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (142100, 142101, 142102, 5901000, 5901001);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `dataint`, `dataint2`,`x`, `y`, `z`, `comments`) VALUES 
+('142100', '1000', '0', '36', '0', '0', '0','0', '0', '0', '0', '0','0','Patrol Schedules - Privat Merle - Face Player'),
+('142100', '1000', '1', '0', '0', '0', '0','0', '229', '0', '0', '0','0','Patrol Schedules - Privat Merle - Say Text'),
+('142100', '2000', '2', '22', '7', '0', '0','0', '0', '0', '0', '0','0','Patrol Schedules - Privat Merle - Change Faction'),
 -- Spawn Spreaders
 -- Check how long they should be spawned
 -- Spawn Plaque Spreader as spawn_group
-('142101', '1000', '0', '10', '604', '0', '0', '0', '0', '0','Patrol Schedules - Privat Merle - Spawn Plague Spreader'),
+('142101', '0', '0', '53', '0', '0', '0','0', '20000', '1', '0', '0','0','Patrol Schedules - Privat Merle - Spawn Plague Spreader'),
 -- Despawn at the end of his Waypoint
-('142102', '2000', '0', '18', '0', '0', '0', '0', '0', '0','Patrol Schedules - Privat Merle - Despawn');
+('142102', '2000', '0', '18', '0', '0', '0','0', '0', '0', '0', '0','0','Patrol Schedules - Privat Merle - Despawn'),
+-- Despawn Plague spreader on last waypoint
+('5901001', '0', '0', '53', '0', '0', '0','0', '20000', '0', '0', '0','0','Patrol Schedules - Plaque Spreader - Change WorldState'),
+('5901001', '0', '0', '18', '0', '0', '0','0', '0', '0', '0', '0','0','Patrol Schedules - Plaque Spreader - Despawn');
 
 -- Plaque Spreader spawns
-INSERT INTO `creature` (`guid`, `id`, `position_x`, `position_y`, `position_z`, `orientation`, `curhealth`) VALUES 
-('Free GUID', '604', '-11253.794', '-355.35596', '58.454597', '0', '0'),
-('1224321421', '604', '-11250.679', '-356.77237', '56.685455', '0', '0'),
-('1224321421', '604', '-11257.765', '-359.5209', '59.33482', '0', '0'); --Leader
+DELETE FROM `creature` WHERE `guid` IN (590100, 590101, 590102);
+INSERT INTO `creature` (`guid`, `id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawndist`, `curhealth`, `MovementType`) VALUES 
+('590100', '604', '-11257.765', '-359.5209', '59.33482', '0', '0', '0', '2'),
+('590101', '604', '-11253.794', '-355.35596', '58.454597', '0', '0', '0', '0'),
+('590102', '604', '-11250.679', '-356.77237', '56.685455', '0', '0', '0', '0');
 
+DELETE FROM `spawn_group` WHERE `Id` = '30';
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES 
-('100', 'Duskwood - Plaque Spreader - Quest Patrol Shedules', '0', '3', '3', '1');
+('30', 'Duskwood - Plaque Spreader - Quest Patrol Shedules', '0', '3', '20000', '9');
 
+DELETE FROM `spawn_group_formation` WHERE `Id` = '30';
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES 
-('100', '1', '2', '0', 'path', '0', 'Duskwood - Plaque Spreader - Quest Patrol');
+('30', '1', '4', '0', '590100', '2', 'Duskwood - Plaque Spreader - Quest Patrol');
 
+DELETE FROM `spawn_group_spawn` WHERE `Id` = '30';
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES 
-('3213120', '3213120', '1'),
-('3213120', '3213120', '2'),
-('3213120', '3213120', '3');
+('30', '590100', '0'),
+('30', '590101', '1'),
+('30', '590102', '2');
+
+DELETE FROM `worldstate_name` WHERE `Id` = '20000';
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+('20000', 'Quest - Patrol Shedules - Plague Spreader spawn');
+
+DELETE FROM `conditions` WHERE `condition_entry` = '20000';
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+('20000', '42', '20000', '0', '1', '0', '0', 'Quest ID 330 - Plague Spreader - Spawn');
 
 -- plaque Spreader Waypoints
-SET @PLAQUEPATH := 1421;
-DELETE FROM creature_movement_template WHERE `Entry` = @PLAQUEPATH;
-INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`) VALUES 
-(@PLAQUEPATH,1,-11270.975,-364.99533,61.834743),
-(@PLAQUEPATH,2,-11282.513,-366.25824,63.389675),
-(@PLAQUEPATH,3,-11291.812,-366.56598,64.210236),
-(@PLAQUEPATH,4,-11290.514,-366.52344,64.17557),
-(@PLAQUEPATH,5,-11272.343,-366.87717,62.105503),
-(@PLAQUEPATH,6,-11262.049,-365.63098,60.135162),
-(@PLAQUEPATH,7,-11250.061,-358.7902,56.24234);
+DELETE FROM waypoint_path WHERE `PathId` = 590100;
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `WaitTime`, `ScriptId`) VALUES 
+('590100','1','-11270.975','-364.99533','61.834743', '0', '0'),
+('590100','2','-11282.513','-366.25824','63.389675', '0', '0'),
+('590100','3','-11291.812','-366.56598','64.210236', '2000', '5901000'),
+('590100','4','-11290.514','-366.52344','64.17557', '0', '0'),
+('590100','5','-11272.343','-366.87717','62.105503', '0', '0'),
+('590100','6','-11262.049','-365.63098','60.135162', '0', '0'),
+('590100','7','-11250.061','-358.7902','56.24234', '1000', '5901001');
