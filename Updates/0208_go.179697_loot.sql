@@ -284,5 +284,5 @@ INSERT INTO `gameobject_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 (16718, 21953, 0.3, 1, 1, 1, 0, 'Design: Emerald Owl'); -- ilvl 57
 
 -- Bonus: Update GurubashiArena game_tele
-UPDATE `game_tele` SET `position_x` = -13226.29, `position_x` = 232.03, `position_x` = 33.2887, `orientation` = 1.095 WHERE `Id` = 458;
+UPDATE `game_tele` SET `position_x` = -13226.29, `position_y` = 232.03, `position_z` = 33.2887, `orientation` = 1.095 WHERE `Id` = 321; -- 458 in wotlk, 321 in classic
 
