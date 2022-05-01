@@ -1,5 +1,5 @@
 -- Add missing spawns of credit markers (Darnassus already has them)
-SET @GUID := 160001;
+SET @GUID := 57040;
 DELETE FROM `creature` WHERE `guid` BETWEEN @GUID AND @GUID+9;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
 -- Stormwind
