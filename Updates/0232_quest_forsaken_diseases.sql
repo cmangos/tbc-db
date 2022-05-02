@@ -1,10 +1,10 @@
 -- Add quest end script for quest 'Forsaken Diseas' entry 1011
--- ServerToClient: SMSG_SPELL_START (0x2C3A) Length: 102 ConnIdx: 1 Time: 05/02/2022 16:13:53.153 Number: 444
--- (Cast) CasterGUID: Full: 0x204CB0002003C200000021000066D3D8 Creature/0 R4908/S33 Map: 1 Entry: 3848 Low: 6738904
 -- Update spawn and Waypoints from Kayneth Stillwind
-UPDATE `creature` SET `position_x`='2954.253', `position_y`='-3215.4094', `position_z`='169.20816', `orientation`='2.8972' WHERE (`guid`='32331')
+UPDATE `creature` SET `position_x`='2954.253', `position_y`='-3215.4094', `position_z`='169.20816', `orientation`='2.8972' WHERE (`guid`='32331');
 
-UPDATE `creature_equip_template` SET `equipentry1`='0', `equipentry2`='12870' WHERE (`entry`='3848');
+DELETE FROM creature_equip_template WHERE entry = '3848';
+INSERT INTO `creature_equip_template` (`entry`, `equipentry2`) VALUES ('3848', '12870');
+
 UPDATE `creature_template` SET `EquipmentTemplateId`='3848' WHERE (`Entry`='3848');
 
 SET @PATH := 3848;
