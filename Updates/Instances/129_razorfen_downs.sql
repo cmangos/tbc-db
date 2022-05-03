@@ -8,6 +8,7 @@ EndDBScriptData */
 SET @CGUID := 1290000; -- creatures
 SET @OGUID := 1290000; -- gameobjects
 SET @PGUID := 45900; -- pools
+SET @SGGUID := 1290000;
 
 -- =========
 -- CREATURES
@@ -458,12 +459,14 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+6, 1628, 129, 2464.41, 674.253, 63.8792, 0.85521, 0, 0, 0.414693, 0.909962, 86400, 86400, 100, 1), -- Grave Moss
 (@OGUID+7, 1628, 129, 2613.1, 732.625, 54.4634, 1.41372, 0, 0, 0.649447, 0.760406, 86400, 86400, 100, 1), -- Grave Moss
 -- 1628
-(@OGUID+11, 2046, 129, 2413.38, 939.964, 45.2382, -0.663225, 0, 0, -0.325568, 0.945519, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+12, 2046, 129, 2582.36, 693.47, 56.6378, -0.645772, 0, 0, -0.317305, 0.948324, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+13, 2046, 129, 2515.09, 882.079, 46.5672, 4.34587, 0, 0, -0.824126, 0.566406, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+14, 2046, 129, 2413.05, 978.766, 57.781, 3.99681, 0, 0, -0.909961, 0.414694, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+15, 2046, 129, 2596.79, 764.006, 53.793, 0.994837, 0, 0, 0.477158, 0.878817, 86400, 86400, 100, 1), -- Goldthorn
-(@OGUID+16, 2046, 129, 2492.94, 854.192, 49.0885, 5.06146, 0, 0, -0.573576, 0.819152, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+11, 2046, 129, 2582.364501953125, 693.46978759765625, 56.63781738281250000, 5.637413978576660156, 0, 0, -0.31730461120605468, 0.948323667049407958, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+12, 2046, 129, 2515.095214843750, 882.07928466796875, 46.56720733642578125, 4.345870018005371093, 0, 0, -0.82412624359130859, 0.566406130790710449, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+13, 2046, 129, 2596.788330078125, 764.00567626953125, 53.79298782348632812, 0.994837164878845214, 0, 0, 0.477158546447753906, 0.878817260265350341, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+14, 2046, 129, 2492.934814453125, 854.19189453125000, 49.08848571777343750, 5.061456203460693359, 0, 0, -0.57357597351074218, 0.819152355194091796, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+15, 2046, 129, 2454.034423828125, 942.05480957031250, 36.30526733398437500, 5.235987663269042968, 0, 0, -0.50000000000000000, 0.866025388240814208, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+16, 2046, 129, 2413.054687500000, 978.76562500000000, 57.78102111816406250, 3.996806621551513671, 0, 0, -0.90996074676513671, 0.414694398641586303, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+17, 2046, 129, 2434.530761718750, 988.04473876953125, 48.80647659301757812, 1.099556446075439453, 0, 0, 0.522498130798339843, 0.852640450000762939, 86400, 86400, 100, 1), -- Goldthorn
+(@OGUID+18, 2046, 129, 2413.382080078125, 939.96356201171875, 45.23823928833007812, 5.619962215423583984, 0, 0, -0.32556724548339843, 0.945518851280212402, 86400, 86400, 100, 1), -- Goldthorn
 -- 2046
 (@OGUID+21, 142141, 129, 2479.97, 1006.34, 24.0507, -2.32129, 0, 0, -0.91706, 0.398748, 86400, 86400, 100, 1), -- Arthas' Tears
 (@OGUID+22, 142141, 129, 2536.55, 736.053, 53.7239, 3.05433, 0, 0, 0.999048, 0.0436174, 86400, 86400, 100, 1), -- Arthas' Tears
@@ -529,6 +532,30 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
+-- ============
+-- SPAWN GROUPS
+-- ============
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+0, 'Razorfen Downs - Goldthorn (1) Herb 000', '1', '1', '0', '0'),
+(@SGGUID+1, 'Razorfen Downs - Goldthorn (1) Herb 001', '1', '1', '0', '0');
+
+-- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+0, @OGUID+11, '-1'),
+(@SGGUID+0, @OGUID+12, '-1'),
+(@SGGUID+0, @OGUID+13, '-1'),
+(@SGGUID+0, @OGUID+14, '-1'),
+(@SGGUID+1, @OGUID+15, '-1'),
+(@SGGUID+1, @OGUID+16, '-1'),
+(@SGGUID+1, @OGUID+17, '-1'),
+(@SGGUID+1, @OGUID+18, '-1');
+
+-- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+
+-- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+
 -- =======
 -- POOLING
 -- =======
@@ -540,7 +567,6 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Razorfen Downs - Ragglesnout (7354)'),
 (@PGUID+51, 4, 'Razorfen Downs - Grave Moss (1628)'),
-(@PGUID+52, 2, 'Razorfen Downs - Goldthorn (2046)'),
 (@PGUID+53, 3, 'Razorfen Downs - Arthas'' Tears (142141)'),
 (@PGUID+90, 2, 'Razorfen Downs - Master Chest Pool'),
 (@PGUID+91, 1, 'Razorfen Downs (Spiral of Thorns) - Chest Pool'),
@@ -560,12 +586,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+5, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
 (@OGUID+6, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
 (@OGUID+7, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
-(@OGUID+11, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
-(@OGUID+12, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
-(@OGUID+13, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
-(@OGUID+14, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
-(@OGUID+15, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
-(@OGUID+16, @PGUID+52, 0, 'Razorfen Downs - Goldthorn (2046)'),
 (@OGUID+21, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
 (@OGUID+22, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
 (@OGUID+23, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
