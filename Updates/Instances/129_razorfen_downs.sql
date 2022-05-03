@@ -451,14 +451,7 @@ INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
 (@OGUID+81, 75297), (@OGUID+81, 75300); -- Large Iron Bound Chest, Large Solid Chest
 
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 1628, 129, 2422, 982.551, 48.5452, -0.20944, 0, 0, -0.104529, 0.994522, 86400, 86400, 100, 1), -- Grave Moss
-(@OGUID+2, 1628, 129, 2599.42, 701.18, 55.4969, 1.3439, 0, 0, 0.622513, 0.782609, 86400, 86400, 100, 1), -- Grave Moss
-(@OGUID+3, 1628, 129, 2501.06, 666.093, 53.2512, 0.314159, 0, 0, 0.156434, 0.987688, 86400, 86400, 100, 1), -- Grave Moss
-(@OGUID+4, 1628, 129, 2459.58, 673.032, 63.7238, 0.349066, 0, 0, 0.173648, 0.984808, 86400, 86400, 100, 1), -- Grave Moss
-(@OGUID+5, 1628, 129, 2565.25, 770.484, 55.8443, 1.91986, 0, 0, 0.819152, 0.573577, 86400, 86400, 100, 1), -- Grave Moss
-(@OGUID+6, 1628, 129, 2464.41, 674.253, 63.8792, 0.85521, 0, 0, 0.414693, 0.909962, 86400, 86400, 100, 1), -- Grave Moss
-(@OGUID+7, 1628, 129, 2613.1, 732.625, 54.4634, 1.41372, 0, 0, 0.649447, 0.760406, 86400, 86400, 100, 1), -- Grave Moss
--- 1628
+-- Reuse 1-10
 (@OGUID+11, 2046, 129, 2582.364501953125, 693.46978759765625, 56.63781738281250000, 5.637413978576660156, 0, 0, -0.31730461120605468, 0.948323667049407958, 86400, 86400, 100, 1), -- Goldthorn
 (@OGUID+12, 2046, 129, 2515.095214843750, 882.07928466796875, 46.56720733642578125, 4.345870018005371093, 0, 0, -0.82412624359130859, 0.566406130790710449, 86400, 86400, 100, 1), -- Goldthorn
 (@OGUID+13, 2046, 129, 2596.788330078125, 764.00567626953125, 53.79298782348632812, 0.994837164878845214, 0, 0, 0.477158546447753906, 0.878817260265350341, 86400, 86400, 100, 1), -- Goldthorn
@@ -524,7 +517,19 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+77, 0, 129, 2358.62, 966.718, 40.2895, 1.309, 0, 0, 0.608761, 0.793353, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
 (@OGUID+78, 0, 129, 2435.01, 995.961, 49.3044, 1.37881, 0, 0, 0.636078, 0.771625, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
 -- The Murder Pens
-(@OGUID+81, 0, 129, 2482.92, 774.274, 46.1014, 4.76475, 0, 0, -0.688354, 0.725375, 86400, 86400, 100, 1); -- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+81, 0, 129, 2482.92, 774.274, 46.1014, 4.76475, 0, 0, -0.688354, 0.725375, 86400, 86400, 100, 1), -- Large Iron Bound Chest, Large Solid Chest
+-- Large Iron Bound Chest, Large Solid Chest
+(@OGUID+91, 1628, 129, 2340.314453125000, 968.29394531250000, 42.76864624023437500, 3.892086982727050781, 0, 0, -0.93041706085205078, 0.366502493619918823, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+92, 1628, 129, 2421.997314453125, 982.55090332031250, 48.54520034790039062, 6.073746204376220703, 0, 0, -0.10452842712402343, 0.994521915912628173, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+93, 1628, 129, 2378.140625000000, 980.01940917968750, 55.00445938110351562, 6.143560886383056640, 0, 0, -0.06975555419921875, 0.997564136981964111, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+94, 1628, 129, 2501.062744140625, 666.09265136718750, 53.25121688842773437, 0.314158439636230468, 0, 0, 0.156434059143066406, 0.987688362598419189, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+95, 1628, 129, 2434.400878906250, 671.61999511718750, 54.84750366210937500, 3.926995515823364257, 0, 0, -0.92387866973876953, 0.382685512304306030, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+96, 1628, 129, 2461.848144531250, 641.77343750000000, 54.53068923950195312, 2.548179388046264648, 0, 0, 0.956304550170898437, 0.292372345924377441, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+97, 1628, 129, 2565.246337890625, 770.48419189453125, 55.84431457519531250, 1.919861555099487304, 0, 0, 0.819151878356933593, 0.573576688766479492, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+98, 1628, 129, 2613.105468750000, 732.62554931640625, 54.46342849731445312, 1.413715124130249023, 0, 0, 0.649447441101074218, 0.760406434535980224, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+99, 1628, 129, 2599.421142578125, 701.17999267578125, 55.49686813354492187, 1.343901276588439941, 0, 0, 0.622513771057128906, 0.782608807086944580, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+100, 1628, 129, 2459.579101562500, 673.03179931640625, 63.72379684448242187, 0.349065244197845458, 0, 0, 0.173647880554199218, 0.984807789325714111, 86400, 86400, 100, 1), -- Grave Moss
+(@OGUID+101, 1628, 129, 2464.407714843750, 674.25347900390625, 63.87917709350585937, 0.855210542678833007, 0, 0, 0.414692878723144531, 0.909961462020874023, 86400, 86400, 100, 1); -- Grave Moss
 
 -- ======
 -- EVENTS
@@ -546,7 +551,11 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1, 'Razorfen Downs - Goldthorn (1) Herb 001', '1', '1', '0', '0'),
 (@SGGUID+2, 'Razorfen Downs - Arthas\' Tears (1) Herb 000', '1', '1', '0', '0'),
 (@SGGUID+3, 'Razorfen Downs - Arthas\' Tears (1) Herb 001', '1', '1', '0', '0'),
-(@SGGUID+4, 'Razorfen Downs - Arthas\' Tears (1) Herb 002', '1', '1', '0', '0');
+(@SGGUID+4, 'Razorfen Downs - Arthas\' Tears (1) Herb 002', '1', '1', '0', '0'),
+(@SGGUID+5, 'Razorfen Downs - Grave Moss (1) Herb 000', '1', '1', '0', '0'),
+(@SGGUID+6, 'Razorfen Downs - Grave Moss (1) Herb 001', '1', '1', '0', '0'),
+(@SGGUID+7, 'Razorfen Downs - Grave Moss (1) Herb 002', '1', '1', '0', '0'),
+(@SGGUID+8, 'Razorfen Downs - Grave Moss (1) Herb 003', '1', '1', '0', '0');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -570,7 +579,18 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+4, @OGUID+29, '-1'),
 (@SGGUID+4, @OGUID+30, '-1'),
 (@SGGUID+4, @OGUID+31, '-1'),
-(@SGGUID+4, @OGUID+32, '-1');
+(@SGGUID+4, @OGUID+32, '-1'),
+(@SGGUID+5, @OGUID+91, '-1'),
+(@SGGUID+5, @OGUID+92, '-1'),
+(@SGGUID+5, @OGUID+93, '-1'),
+(@SGGUID+6, @OGUID+94, '-1'),
+(@SGGUID+6, @OGUID+95, '-1'),
+(@SGGUID+6, @OGUID+96, '-1'),
+(@SGGUID+7, @OGUID+97, '-1'),
+(@SGGUID+7, @OGUID+98, '-1'),
+(@SGGUID+7, @OGUID+99, '-1'),
+(@SGGUID+8, @OGUID+100, '-1'),
+(@SGGUID+8, @OGUID+101, '-1');
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 
@@ -586,7 +606,6 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Razorfen Downs - Ragglesnout (7354)'),
-(@PGUID+51, 4, 'Razorfen Downs - Grave Moss (1628)'),
 (@PGUID+90, 2, 'Razorfen Downs - Master Chest Pool'),
 (@PGUID+91, 1, 'Razorfen Downs (Spiral of Thorns) - Chest Pool'),
 (@PGUID+92, 1, 'Razorfen Downs (The Murder Pens) - Chest Pool');
@@ -598,13 +617,6 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+1, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
-(@OGUID+2, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
-(@OGUID+3, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
-(@OGUID+4, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
-(@OGUID+5, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
-(@OGUID+6, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
-(@OGUID+7, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
 (@OGUID+75, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
 (@OGUID+76, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
 (@OGUID+77, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
