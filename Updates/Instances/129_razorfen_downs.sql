@@ -468,13 +468,18 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+17, 2046, 129, 2434.530761718750, 988.04473876953125, 48.80647659301757812, 1.099556446075439453, 0, 0, 0.522498130798339843, 0.852640450000762939, 86400, 86400, 100, 1), -- Goldthorn
 (@OGUID+18, 2046, 129, 2413.382080078125, 939.96356201171875, 45.23823928833007812, 5.619962215423583984, 0, 0, -0.32556724548339843, 0.945518851280212402, 86400, 86400, 100, 1), -- Goldthorn
 -- 2046
-(@OGUID+21, 142141, 129, 2479.97, 1006.34, 24.0507, -2.32129, 0, 0, -0.91706, 0.398748, 86400, 86400, 100, 1), -- Arthas' Tears
-(@OGUID+22, 142141, 129, 2536.55, 736.053, 53.7239, 3.05433, 0, 0, 0.999048, 0.0436174, 86400, 86400, 100, 1), -- Arthas' Tears
-(@OGUID+23, 142141, 129, 2423.88, 1027.32, 38.2242, -2.3911, 0, 0, -0.930417, 0.366502, 86400, 86400, 100, 1), -- Arthas' Tears
-(@OGUID+24, 142141, 129, 2485.72, 782.397, 46.0727, 0.872664, 0, 0, 0.422618, 0.906308, 86400, 86400, 100, 1), -- Arthas' Tears
-(@OGUID+25, 142141, 129, 2459.53, 661.903, 56.6654, 2.35619, 0, 0, 0.92388, 0.382683, 86400, 86400, 100, 1), -- Arthas' Tears
-(@OGUID+26, 142141, 129, 2366.41, 968.678, 40.2011, 4.29351, 0, 0, -0.83867, 0.54464, 86400, 86400, 100, 1), -- Arthas' Tears
-(@OGUID+27, 142141, 129, 2532.19, 804.245, 46.0493, 1.95477, 0, 0, 0.829038, 0.559193, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+21, 142141, 129, 2370.482177734375, 898.14178466796875, 28.97239494323730468, 5.602506637573242187, 0, 0, -0.33380699157714843, 0.942641437053680419, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+22, 142141, 129, 2366.406250000000, 968.67816162109375, 40.20111465454101562, 4.293513298034667968, 0, 0, -0.83866977691650390, 0.544640243053436279, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+23, 142141, 129, 2423.877685546875, 1027.3150634765625, 38.22416687011718750, 3.892086982727050781, 0, 0, -0.93041706085205078, 0.366502493619918823, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+24, 142141, 129, 2397.510986328125, 947.96356201171875, 55.02848434448242187, 0.279251605272293090, 0, 0, 0.139172554016113281, 0.990268170833587646, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+25, 142141, 129, 2536.549560546875, 736.05316162109375, 53.72388076782226562, 3.054326534271240234, 0, 0, 0.999048233032226562, 0.043619260191917419, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+26, 142141, 129, 2485.719482421875, 782.39727783203125, 46.07270812988281250, 0.872663915157318115, 0, 0, 0.422617912292480468, 0.906307935714721679, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+27, 142141, 129, 2459.534912109375, 661.90301513671875, 56.66539001464843750, 2.356194972991943359, 0, 0, 0.923879623413085937, 0.382683247327804565, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+28, 142141, 129, 2532.189941406250, 804.24536132812500, 46.04932403564453125, 1.954769015312194824, 0, 0, 0.829037666320800781, 0.559192776679992675, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+29, 142141, 129, 2475.397705078125, 1051.5881347656250, 48.70906066894531250, 6.038839817047119140, 0, 0, -0.12186908721923828, 0.992546200752258300, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+30, 142141, 129, 2479.966308593750, 1006.3361816406250, 24.05068397521972656, 3.961898565292358398, 0, 0, -0.91705989837646484, 0.398749500513076782, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+31, 142141, 129, 2401.642578125000, 1105.0416259765625, 31.51865005493164062, 1.588248729705810546, 0, 0, 0.713250160217285156, 0.700909554958343505, 86400, 86400, 100, 1), -- Arthas' Tears
+(@OGUID+32, 142141, 129, 2316.083251953125, 969.57897949218750, 26.79796981811523437, 1.623155713081359863, 0, 0, 0.725374221801757812, 0.688354730606079101, 86400, 86400, 100, 1), -- Arthas' Tears
 -- 142141
 (@OGUID+38, 40198, 129, 2409.97, 954.724, 54.7089, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
 (@OGUID+39, 40199, 129, 2394.63, 886.028, 55.4499, 3.14159, 0, 0, 1, 0, 5400, 5400, 100, 1), -- Fire
@@ -538,7 +543,10 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+0, 'Razorfen Downs - Goldthorn (1) Herb 000', '1', '1', '0', '0'),
-(@SGGUID+1, 'Razorfen Downs - Goldthorn (1) Herb 001', '1', '1', '0', '0');
+(@SGGUID+1, 'Razorfen Downs - Goldthorn (1) Herb 001', '1', '1', '0', '0'),
+(@SGGUID+2, 'Razorfen Downs - Arthas\' Tears (1) Herb 000', '1', '1', '0', '0'),
+(@SGGUID+3, 'Razorfen Downs - Arthas\' Tears (1) Herb 001', '1', '1', '0', '0'),
+(@SGGUID+4, 'Razorfen Downs - Arthas\' Tears (1) Herb 002', '1', '1', '0', '0');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -550,7 +558,19 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @OGUID+15, '-1'),
 (@SGGUID+1, @OGUID+16, '-1'),
 (@SGGUID+1, @OGUID+17, '-1'),
-(@SGGUID+1, @OGUID+18, '-1');
+(@SGGUID+1, @OGUID+18, '-1'),
+(@SGGUID+2, @OGUID+21, '-1'),
+(@SGGUID+2, @OGUID+22, '-1'),
+(@SGGUID+2, @OGUID+23, '-1'),
+(@SGGUID+2, @OGUID+24, '-1'),
+(@SGGUID+3, @OGUID+25, '-1'),
+(@SGGUID+3, @OGUID+26, '-1'),
+(@SGGUID+3, @OGUID+27, '-1'),
+(@SGGUID+3, @OGUID+28, '-1'),
+(@SGGUID+4, @OGUID+29, '-1'),
+(@SGGUID+4, @OGUID+30, '-1'),
+(@SGGUID+4, @OGUID+31, '-1'),
+(@SGGUID+4, @OGUID+32, '-1');
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 
@@ -567,7 +587,6 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+1, 1, 'Razorfen Downs - Ragglesnout (7354)'),
 (@PGUID+51, 4, 'Razorfen Downs - Grave Moss (1628)'),
-(@PGUID+53, 3, 'Razorfen Downs - Arthas'' Tears (142141)'),
 (@PGUID+90, 2, 'Razorfen Downs - Master Chest Pool'),
 (@PGUID+91, 1, 'Razorfen Downs (Spiral of Thorns) - Chest Pool'),
 (@PGUID+92, 1, 'Razorfen Downs (The Murder Pens) - Chest Pool');
@@ -586,13 +605,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+5, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
 (@OGUID+6, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
 (@OGUID+7, @PGUID+51, 0, 'Razorfen Downs - Grave Moss (1628)'),
-(@OGUID+21, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
-(@OGUID+22, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
-(@OGUID+23, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
-(@OGUID+24, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
-(@OGUID+25, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
-(@OGUID+26, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
-(@OGUID+27, @PGUID+53, 0, 'Razorfen Downs - Arthas'' Tears (142141)'),
 (@OGUID+75, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
 (@OGUID+76, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
 (@OGUID+77, @PGUID+91, 0, 'Razorfen Downs (Spiral of Thorns) - Large Iron Bound Chest, Large Solid Chest (75297,75300)'),
@@ -622,5 +634,4 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `priority`, `command`
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
-
 
