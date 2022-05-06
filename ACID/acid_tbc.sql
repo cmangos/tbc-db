@@ -40,8 +40,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =================
 -- Alterac Mountains
 -- =================
--- Deer (883) - NSR
--- Sheep (1933) - NSR
 -- Treant (1964) - NSR
 -- Syndicate Footpad (3.1.1 Official Data)
 ('224001','2240','33','0','100','1025','0','0','1800','9800','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Syndicate Footpad - Cast Backstab on Facing Target Back'),
@@ -244,7 +242,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Simone Cantrell (7324) - NSR
 -- Master Kang (7325) - NSR
 -- Carlo Aurelius (8309) - NSR
--- Salome (11776) - NSR
 -- Myrokos Silentform (13085) - NSR
 -- Thanthaldis Snowgleam 13217 (UNOFFICIAL DATA) - NEED OFFICIAL DATA FOR THIS NPC
 ('1321701','13217','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Thanthaldis Snowgleam - Cast Thrash on Spawn'),
@@ -287,7 +284,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Arathi Highlands
 -- ================
 -- Jannos Ironwill (1471) - NSR
--- Cow (2442) - NSR
 -- Witherbark Troll 2552 (3.0.9 Official Data)
 ('255201','2552','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Witherbark Troll - Flee at 15% HP'),
 ('255202','2552','0','0','100','1025','12800','22200','2100','32400','0','0','11','4974','1','32','0','0','0','0','0','0','0','0','Witherbark Troll - Cast Wither Touch'),
@@ -510,7 +506,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hammerfall Grunt (3.0.9 Official Data)
 ('261901','2619','0','0','100','1025','8000','15900','11900','34100','0','0','11','3427','1','32','0','0','0','0','0','0','0','0','Hammerfall Grunt - Cast Infected Wound'),
 ('261902','2619','2','0','100','1025','30','0','16100','39000','0','0','11','3019','0','0','1','1191','0','0','0','0','0','0','Hammerfall Grunt - Cast Frenzy at 30% HP'),
--- Prairie Dog (2620) - NSR
 -- Hammerfall Guardian (2621) - NSR
 -- Blackwater Deckhand (2636) - NSR
 -- Foggy MacKreel 2696
@@ -608,7 +603,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('406301','4063','4','0','100','0','0','0','0','0','0','0','57','2','35','0','1','808','807','815','0','0','0','0','Feeboz - Enable Range Mode and Say on Aggro'),
 ('406302','4063','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Feeboz - Flee at 15% HP'),
 ('406303','4063','9','0','100','1025','0','40','3800','4800','0','0','11','34083','1','256','0','0','0','0','0','0','0','0','Feeboz - Cast Fireball'),
--- Rat (4075) - NSR
 -- Fardel Dabyrie 4479
 ('447901','4479','11','0','100','0','0','0','0','0','0','0','11','8876','0','32','11','10022','0','32','0','0','0','0','Fardel Dabyrie - Cast Thrash and Cast Deadly Poison on Spawn'),
 ('447902','4479','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Fardel Dabyrie - Flee at 15% HP'),
@@ -1328,8 +1322,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Firetail Scorpid (3.1.3 Official Data)
 ('969801','9698','0','0','100','1025','6300','14700','12300','21800','0','0','11','5416','1','32','0','0','0','0','0','0','0','0','Firetail Scorpid - Cast Venom Sting'),
 ('969802','9698','0','0','100','1025','12700','21000','11400','21600','0','0','11','15661','1','32','0','0','0','0','0','0','0','0','Firetail Scorpid - Cast Immolate'),
--- Fire Beetle (9699) - NSR
--- Lava Crab (9700) - NSR
 -- Flamekin Spitter 9776 (3.1.3 Official Data)
 ('977601','9776','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Flamekin Spitter - Enable Range Mode on Aggro'),
 ('977602','9776','9','0','100','1025','0','30','2600','5100','0','0','11','15664','1','256','0','0','0','0','0','0','0','0','Flamekin Spitter - Cast Venom Spit'),
@@ -1441,8 +1433,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nessy (10942) - NSR
 -- Naga Siren (10956) - NSR
 -- Monty (12997) - NSR
--- Deeprun Rat (13016) - spell_dummy_npc
--- Enthralled Deeprun Rat (13017) - NSR
 -- Nipsy (13018) - NSR
 -- Haggle (14041) - NSR
 -- Deeprun Diver (14121) - NSR
@@ -1462,7 +1452,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Small Crag Boar (708) - NSR
 -- Balir Frosthammer (713) - NSR
 -- Talin Keeneye (714) - NSR
--- Rabbit (721) - NSR
 -- Burly Rockjaw Trogg (724) - NSR
 -- Ironforge Mountaineer (727) - guard_dunmorogh - s.6660 RangeMode
 -- Grelin Whitebeard (786) - NSR
@@ -1586,7 +1575,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('127101','1271','0','0','100','1025','2100','4300','17100','23100','0','0','11','3145','1','0','0','0','0','0','0','0','0','0','Old Icebeard - Cast Icy Grasp'),
 ('127102','1271','0','0','100','1025','10000','36400','31700','44700','0','0','11','3146','17','0','0','0','0','0','0','0','0','0','Old Icebeard - Cast Daunting Growl'),
 -- Grawn Thromwyn (1273) - NSR
--- Fluffy (1352) - NSR
 -- Apprentice Soren (1354) - NSR
 -- Cook Ghilm (1355)
 ('135501','1355','1','0','100','1','20000','25000','20000','25000','0','0','53','25','0','0','0','0','0','0','0','0','0','0','Cook Ghilm - Start Relay Script on OOC'),
@@ -1774,7 +1762,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dun Morogh Flame Warden (25895) - NSR
 -- High Admiral "Shelly" Jorrik (26081) - NSR
 -- Beastmaster (26307) - NSR
--- Summer Scorchling (26401) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 -- Boxey Boltspinner (27215) - NSR
 -- Darna Honeybock (27584) - NSR
@@ -2002,7 +1989,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Alyssa Eva (1673) - NSR
 -- Finbus Geargrind (1676) - NSR
 -- Eliza's Guard (1871) - NSR
--- Black Rat (2110) - NSR
 -- Farrin Daris (2112) - NSR
 -- Watcher Callahan (2142) - NSR
 -- Felicia Maline
@@ -2054,7 +2040,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anchorite Delan (17104) - NSR
 -- Weakened Morbent Fel (24782) - NSR
 -- Duskwood Flame Warden (25896) - NSR
--- Summer Scorchling (26401) - NSR
 -- Watcher Blomberg (28987) - NSR
 
 
@@ -2660,7 +2645,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mangy Wolf (525) - NSR
 -- Defias Ambusher (2.4.2 Official Data)
 ('58301','583','4','0','75','0','0','0','0','0','0','0','1','1866','1865','1867','0','0','0','0','0','0','0','0','Defias Ambusher - Random Say on Aggro'),
--- Rabbit (721) - NSR
 -- Murloc Lurker (2.4.2 Official Data)
 ('73201','732','33','0','100','1025','0','0','3900','6900','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Murloc Lurker - Cast Backstab on Facing Target Back'),
 -- Murloc Streamrunner (735) - NSR
@@ -2688,8 +2672,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('88102','881','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Surena Caledon - Enable Range Mode on Aggro'),
 ('88103','881','27','0','100','1','12544','1','15000','30000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Surena Caledon - Cast Frost Armor on Missing Buff'),
 ('88104','881','9','0','100','1025','0','40','3600','4800','0','0','11','20793','1','256','0','0','0','0','0','0','0','0','Surena Caledon - Cast Fireball'),
--- Deer (883) - NSR
--- Fawn (890) - NSR
 -- Homer Stonefield (894) - NSR
 -- Veldan Lightfoot (896) - NSR
 -- Maximillian Crowe (906) - NSR
@@ -2722,7 +2704,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lee Brown (1651) - NSR
 -- Gray Forest Wolf
 ('192201','1922','1','0','10','1','120000','600000','120000','600000','0','0','4','1018','0','0','5','393','0','0','0','0','0','0','Gray Forest Wolf - Howl and Emote OOC'),
--- Sheep (1933) - NSR
 -- Servant of Azora (1949) - NSR
 -- Eastvale Lumberjack (1975) - NSR
 -- Forlorn Spirit 2044 (2.4.2 Official Data)
@@ -2731,7 +2712,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('204403','2044','0','0','100','1025','2000','2000','2000','2000','0','0','11','3105','1','32','0','0','0','0','0','0','0','0','Forlorn Spirit - Cast Curse of Stalvan'),
 -- Andrew Krighton (2046) - NSR
 -- Michelle Belle (2329) - NSR
--- Cow (2442) - NSR
 -- Toddrick (3935) - NSR
 -- Kira Songshine (3937) - NSR
 -- Chestnut Mare (4269) - NSR
@@ -2745,7 +2725,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Henze Faulk (6172) - npc_redemption_target
 -- Helene Peltskinner (6306) - NSR
 -- Donni Anthania (6367) - NSR
--- Cat (6368) - NSR
 -- Dane Winslow 6373
 ('637301','6373','1','0','100','0','2000','2000','0','0','0','0','11','11939','0','0','0','0','0','0','0','0','0','0','Dane Winslow - Cast Summon Imp OOC'),
 ('637302','6373','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Dane Winslow - Despawn Guardians on Evade'),
@@ -2818,10 +2797,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gordok Brew Apprentice (23511) - NSR
 -- Transport Bot D3 (24832) - NSR
 -- Elwynn Forest Flame Warden (25898) - NSR
--- Summer Scorchling (26401) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 -- Plague Zombie (27059) - NSR
--- Plagued Resident (27848) - NSR
 
 
 
@@ -3096,7 +3073,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1705608','17056','1','3071','100','1','0','0','0','0','0','0','11','26295','0','0','22','0','0','0','0','0','0','0','Eversong Partygoer - Cast Firework Yellow and Set Phase 0 (Phase 11)'),
 -- Enraged Wraith 17086 (3.0.3 Official Data)
 ('1708601','17086','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','2384','0','0','0','0','0','0','Enraged Wraith - Cast Enrage at 30% HP'),
--- Broom (17213) - NSR
 -- Master Kelerun Bloodmourn (17807) - npc_kelerun_bloodmourn
 -- Champion Bloodwrath 17809 - (MODIFIED FOR PRE WOTLK)
 ('1780901','17809','2','0','100','1025','50','0','20000','35000','0','0','11','19939','0','0','0','0','0','0','0','0','0','0','Champion Bloodwrath - Cast Flash of Light at 50% HP'),
@@ -3475,7 +3451,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===================
 -- Farmer Ray (232) - NSR
 -- Brown Horse (284) - NSR
--- Sheep (1933) - NSR
 -- Deathstalker Lesh (2214) - NSR
 -- High Executor Darthalia
 ('221501','2215','0','0','100','1025','1000','3000','15000','20000','0','0','11','23511','0','0','0','0','0','0','0','0','0','0','High Executor Darthalia - Cast Demoralizing Shout'),
@@ -3701,7 +3676,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Keeper Bel'varil (2437) - NSR
 -- Bartolo Ginsetti
 ('243801','2438','1','0','100','1','20000','45000','45000','60000','0','0','10','4','15','23','0','0','0','0','0','0','0','0','Bartolo Ginsetti - Random Emotes'),
--- Cow (2442) - NSR
 -- Narillasanz (2447) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Clerk Horrace Whitesteed
 ('244801','2448','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Clerk Horrace Whitesteed - Flee at 15% HP'),
@@ -3742,7 +3716,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Raleigh the Devout
 ('398001','3980','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Raleigh the Devout - Flee at 15% HP'),
 -- Monika Sengutz (3982) - NSR
--- Rat (4075) - NSR
 -- Pinto (5405) - NSR
 -- Ravenholdt Guard (6766) - NSR
 -- Condemned Acolyte
@@ -3794,7 +3767,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Huraan (17218) - NSR
 -- Hillsbrad Flame Warden (25901) - NSR
 -- Hillsbrad Flame Keeper (25935) - NSR
--- Summer Scorchling (26401) - NSR
 
 
 
@@ -4037,7 +4009,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Exodar Commendation Officer 21969
 -- Veteran Gladiator 22097
 -- Grizzled Gladiator 22098
--- Arena Promoter 22101
 -- Farseer Javad 23127
 -- Lucky 23198
 -- Farmer Leon 23200
@@ -4395,8 +4366,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Huldar 2057
 ('205701','2057','4','0','100','0','0','0','0','0','0','0','17','168','0','0','0','0','0','0','0','0','0','0','Huldar - Remove NpCFlags on Aggro'),
 ('205702','2057','7','0','100','0','0','0','0','0','0','0','17','168','3','0','0','0','0','0','0','0','0','0','Huldar - Set NpCFlags on Evade'),
--- Ram (2.4.3 Official Data)
-('209801','2098','2','0','100','0','99','0','0','0','0','0','25','0','0','0','0','0','0','0','0','0','0','0','Ram - Flee at 99% HP'),
 -- Dark Iron Raider (2.4.3 Official Data)
 ('214901','2149','4','0','100','0','0','0','0','0','0','0','1','1935','1935','1935','0','0','0','0','0','0','0','0','Dark Iron Raider - Random Say on Aggro (Could be more Says but not 100% Sure)'),
 -- Large Loch Crocolisk (2.4.3 Official Data)
@@ -4771,8 +4740,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('902603','9026','6','0','100','0','0','0','0','0','0','0','1','5059','0','0','0','0','0','0','0','0','0','0','Overmaster Pyron - Say on Death'),
 -- Incendosaur
 ('931801','9318','9','0','100','1025','0','40','6000','9000','0','0','11','11985','1','0','0','0','0','0','0','0','0','0','Incendosaur - Cast Fireball'),
--- Fire Beetle (9699) - NSR
--- Lava Crab (9700) - NSR
 -- Locheed (9876) - NSR
 -- Graw Cornerstone (11703) - NSR
 -- Overseer Maltorius 14621
@@ -4928,7 +4895,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1680203','16802','0','0','100','1025','22000','24000','44000','48000','0','0','11','33384','0','0','0','0','0','0','0','0','0','0','Lor''themar Theron - Cast Mass Charm'),
 -- Festival Talespinner (16818) - NSR
 -- Honor Hold Target Dummy Middle (16897) - NSR
--- Broom (17213) - NSR
 -- Jenath 17627
 -- Vynna 17628
 -- Feynna 17629
@@ -5019,7 +4985,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Officer Dawning (21970) - NSR
 -- Veteran Gladiator (22097) - NSR
 -- Grizzled Gladiator (22098) - NSR
--- Arena Promoter (22101) - NSR
 -- Loirea Galerunner (22237) - NSR
 -- Silvermoon Fireeater (22804) - NSR
 -- Morshelz Copperpinch (23011) - NSR
@@ -5353,8 +5318,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mura Runetotem (8385) - NSR
 -- Nadia Vernon (9553) - NSR
 -- Sarah Goode (9979) - NSR
--- Infected Squirrel (10779) - NSR
--- Infected Deer (10780) - NSR
 -- Gorefang (3.3.5a Official Data)
 ('1243101','12431','0','0','100','1025','5700','9200','16300','19600','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Gorefang - Cast Rend'),
 -- Old Vicejaw (3.3.5a Official Data)
@@ -5650,7 +5613,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Renzik "The Shiv" 6946
 -- Doc Mixilpixil 7207
 ('720701','7207','22','0','100','1','61','9011','0','0','0','0','53','9003','0','0','15','2608','6','0','0','0','0','0','Doc Mixilpixil - Start Relay Script and Quest Complete (2608) on Receive Emote'),
--- Noarm (7208) - NSR
 -- Borgus Steelhand 7232
 -- Shailiea 7295
 -- Thelman Slatefist (7410) - NSR
@@ -5749,7 +5711,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Farseer Umbrua 20407
 -- Little Noah (23050) - NSR
 -- Alicia (24729) - NSR
--- Fuzz (25058) - NSR
 -- Leesha Tannerby 26548
 -- Plague Zombie (27059) - NSR
 -- Plagued Roach (27845) - NSR
@@ -6373,7 +6334,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Zun'dartha (1775) - NSR
 -- Magtoor (1776) - NSR
 -- Grokor (3622) - NSR
--- Moccasin (4953) - NSR
 -- Murk Slitherer 5224
 ('522401','5224','11','0','100','0','0','0','0','0','0','0','11','3616','0','34','0','0','0','0','0','0','0','0','Murk Slitherer - Cast Poison Proc on Spawn'),
 ('522402','5224','0','0','100','1025','5000','7000','8000','11000','0','0','11','13518','1','0','0','0','0','0','0','0','0','0','Murk Slitherer - Cast Poison'),
@@ -6397,7 +6357,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ongeku (5622) - NSR
 -- Breyk
 ('602601','6026','4','0','100','0','0','0','0','0','0','0','11','14307','0','0','1','4561','0','0','0','0','0','0','Breyk - Cast Summon Enraged Wyvern and Yell on Aggro'),
--- Huge Toad (6653) - NSR
 -- Lost One Rift Traveler 6913
 ('691301','6913','6','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Lost One Rift Traveler - Despawn on Death'),
 -- Innkeeper Karakul (6930) - npc_innkeeper
@@ -6751,7 +6710,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===============
 -- Tirisfal Glades
 -- ===============
--- Rabbit (721) - NSR
 -- Deathguard Linnea (1495) - NSR
 -- Deathguard Dillinger (1496) - NSR
 -- Gunther Arcanus (1497) - NSR
@@ -6976,7 +6934,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Selina Weston (3548) - NSR
 -- Shelene Rhobart (3549) - NSR
 -- Martine Tramblay (3550) - NSR
--- Rat (4075) - NSR
 -- Scarlet Preserver
 ('428001','4280','0','0','100','1025','3000','5000','7000','12000','0','0','11','13953','1','0','0','0','0','0','0','0','0','0','Scarlet Preserver - Cast Holy Strike'),
 ('428002','4280','14','0','100','1025','500','40','12000','18000','0','0','11','13952','12','0','0','0','0','0','0','0','0','0','Scarlet Preserver - Cast Holy Light on Friendly Missing HP'),
@@ -7351,7 +7308,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===================
 -- Western Plaguelands
 -- ===================
--- Deer (883) - NSR
 -- Skeletal Flayer
 ('178301','1783','1','0','100','0','1000','1000','0','0','0','0','11','8876','0','32','0','0','0','0','0','0','0','0','Skeletal Flayer - Cast Thrash OOC'),
 -- Skeletal Sorcerer 1784
@@ -7553,8 +7509,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('188501','1885','9','0','100','1025','0','5','5000','8000','0','0','11','12057','1','0','0','0','0','0','0','0','0','0','Scarlet Smith - Cast Strike'),
 ('188502','1885','9','0','100','1025','0','5','11000','14000','0','0','11','11428','4','0','0','0','0','0','0','0','0','0','Scarlet Smith - Cast Knockdown'),
 ('188503','1885','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Scarlet Smith - Flee at 15% HP'),
--- Black Rat (2110) - NSR
--- Roach (4076) - NSR
 -- Haunting Vision 4472
 ('447201','4472','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Haunting Vision - Enable Range Mode on Aggro'),
 ('447202','4472','0','0','100','1025','6000','9000','8000','12000','0','0','11','11981','1','0','0','0','0','0','0','0','0','0','Haunting Vision - Cast Mana Burn'),
@@ -7603,8 +7557,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1071703','10717','0','0','100','1025','2000','5000','10000','12000','0','0','11','11436','4','32','0','0','0','0','0','0','0','0','Temporal Parasite - Cast Slow'),
 -- Mulgris Deepriver (10739) - NSR
 -- Janice Felstone (10778) - NSR
--- Infected Squirrel (10779) - NSR
--- Infected Deer (10780) - NSR
 -- Jabbering Ghoul
 ('1080101','10801','11','0','100','0','0','0','0','0','0','0','11','26047','0','0','0','0','0','0','0','0','0','0','Jabbering Ghoul - Cast Birth on Spawn'),
 ('1080102','10801','4','0','100','0','0','0','0','0','0','0','11','15716','0','34','1','1191','0','0','0','0','0','0','Jabbering Ghoul - Cast Enrage on Aggro'),
@@ -7718,7 +7670,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ghost of Uther Lightbringer (17233) - NSR
 -- Anchorite Truuen (17238) - npc_anchorite_truuen
 -- Western Plaguelands Flame Warden (25909) - NSR
--- Summer Scorchling (26401) - NSR
 
 
 
@@ -8267,8 +8218,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =========
 -- Ashenvale
 -- =========
--- Deer (883) - NSR
--- Squirrel (1412) - NSR
 -- Voidwalker (1860) - NSR
 -- Therysil (3.3.0 Official Data)
 ('358501','3585','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Therysil - Flee at 15% HP'),
@@ -8700,7 +8649,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Astranaar Sentinel (6087) - NSR
 -- Roaming Felguard (3.3.0 Official Data)
 ('611501','6115','9','0','100','1025','0','5','8400','15500','0','0','11','11428','1','0','0','0','0','0','0','0','0','0','Roaming Felguard - Cast Knockdown'),
--- School of Fish (6145) - NSR
 -- Jayla (6288) - NSR
 -- Harlown Darkweave (6731) - NSR
 -- Innkeeper Kimlya (6738) - npc_innkeeper
@@ -8939,7 +8887,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Heretic Emissary (25951) - NSR
 -- Heretic Bodyguard (25980) - NSR
 -- Frostwave Lieutenant (26116) - NSR
--- Summer Scorchling (26401) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 
 
@@ -9241,19 +9188,15 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==============
 -- Azuremyst Isle
 -- ==============
--- Deer (883) - NSR
--- Rat (4075) - NSR
--- School of Fish (6145) - NSR
--- Pack Mule (16225) - NSR
 -- Megelon (16475) - NSR
 -- Jaeleil (16476) - NSR
 -- Proenitus (16477) - NSR
 -- Draenei Survivor (16483) - npc_draenei_survivor
 -- Keilnei (16499) - NSR
 -- Valaatu (16500) - NSR
--- Aurelon
+-- Aurelon 16501
 ('1650101','16501','14','0','100','1025','75','40','120000','120000','0','0','11','29170','12','0','0','0','0','0','0','0','0','0','Aurelon - Cast Lesser Heal on Friendly Missing HP'),
--- Zalduun
+-- Zalduun 16502
 ('1650201','16502','14','0','100','1025','75','40','120000','120000','0','0','11','29170','12','0','0','0','0','0','0','0','0','0','Zalduun - Cast Lesser Heal on Friendly Missing HP'),
 -- Kore (16503) - NSR
 -- Botanist Taerix (16514) - NSR
@@ -9264,11 +9207,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blood Elf Scout 16521
 ('1652101','16521','4','0','15','0','0','0','0','0','0','0','54','0','0','12008','0','0','0','0','0','0','0','0','Blood Elf Scout - Random Say on Aggro'),
 ('1652102','16521','0','0','100','1025','4000','9000','30000','30000','0','0','11','25602','1','32','0','0','0','0','0','0','0','0','Blood Elf Scout - Cast Faerie Fire'),
--- Surveyor Candress - (RangeMode not required)
+-- Surveyor Candress 16522 - (RangeMode not required)
 ('1652201','16522','1','0','100','0','2000','2000','0','0','0','0','11','31515','0','0','0','0','0','0','0','0','0','0','Surveyor Candress - Cast Red Beam on Spawn'),
 ('1652202','16522','4','0','100','0','0','0','0','0','0','0','28','0','31515','0','1','12767','0','0','45','5','150','0','Surveyor Candress - Remove aura, Say and Send AI Event "A" on Aggro'),
 ('1652203','16522','9','0','100','1025','0','40','12000','16000','0','0','11','9053','1','0','0','0','0','0','0','0','0','0','Surveyor Candress - Cast Fireball'),
--- Inoculated Nestlewood Owlkin
+-- Inoculated Nestlewood Owlkin 16534
 ('1653401','16534','1','0','100','32','1000','1000','0','0','0','0','1','12521','12517','12514','1','12520','12516','12521','1','12517','12514','12520','Inoculated Nestlewood Owlkin - Random Text Emote'),
 -- Vindicator Aldar (16535) - NSR
 -- Mutated Owlkin (16537) - NSR
@@ -9282,10 +9225,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mura (16919) - NSR
 -- Ryosh (16920) - NSR
 -- Ammen Vale Guardian (16921) - NSR
--- Injured Draenei - npc_injured_draenei
+-- Injured Draenei 16971 - npc_injured_draenei
 ('1697101','16971','8','0','100','1','29170','-1','0','0','0','0','47','1','0','0','41','15000','0','0','0','0','0','0','Injured Draenei - Set Sit State and Delayed Despawn on Spellhit'),
 -- Technician Zhanaa (17071) - NSR
--- Draenei Mourner
+-- Draenei Mourner 17073
 ('1707301','17073','1','0','100','1','30000','30000','570000','570000','0','0','1','13413','13419','13425','0','0','0','0','0','0','0','0','Draenei Mourner - Random Say 1'),
 ('1707302','17073','1','0','100','1','210000','210000','570000','570000','0','0','1','13420','13423','13421','0','0','0','0','0','0','0','0','Draenei Mourner - Random Say 2'),
 ('1707303','17073','1','0','100','1','390000','390000','570000','570000','0','0','1','13418','13422','13424','0','0','0','0','0','0','0','0','Draenei Mourner - Random Say 3'),
@@ -9305,14 +9248,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spirit of Water (17181) - NSR
 -- Spirit of Fire (17182) - NSR
 -- Bristlelimb Furbolg (17183) - NSR
--- Bristlelimb Windcaller (Rejuv on Frendlies at 30% HP)
+-- Bristlelimb Windcaller 17184 (Rejuv on Frendlies at 30% HP)
 ('1718401','17184','0','0','100','1025','4000','9000','16000','21000','0','0','11','31272','1','0','0','0','0','0','0','0','0','0','Bristlelimb Windcaller - Cast Wind Shock'),
 ('1718402','17184','2','0','100','1025','30','0','20000','30000','0','0','11','32131','0','0','0','0','0','0','0','0','0','0','Bristlelimb Windcaller - Cast Rejuvenation at 30% HP'),
 -- Bristlelimb Ursa (17185) - NSR
 -- Deranged Owlbeast (17186) - NSR
--- Aberrant Owlbeast
+-- Aberrant Owlbeast 17187
 ('1718701','17187','0','0','100','1025','8000','12000','8000','14000','0','0','11','31270','1','0','0','0','0','0','0','0','0','0','Aberrant Owlbeast - Cast Moonfire'),
--- Raving Owlbeast (3.3.3a Official Data)
+-- Raving Owlbeast 17188 (3.3.3a Official Data)
 ('1718801','17188','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','Raving Owlbeast - Cast Enrage at 30% HP'),
 -- Crazed Wildkin (17189) - NSR
 -- Siltfin Murloc (17190) - NSR
@@ -9325,11 +9268,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1719201','17192','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Siltfin Hunter - Enable Range Mode on Aggro'),
 ('1719202','17192','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Siltfin Hunter - Flee at 15% HP'),
 ('1719203','17192','9','0','100','1025','5','30','2300','3900','0','0','11','10277','1','256','0','0','0','0','0','0','0','0','Siltfin Hunter - Cast Throw'),
--- Wrathscale Naga
+-- Wrathscale Naga 17193
 ('1719301','17193','9','0','100','1025','0','5','12000','15000','0','0','11','9080','1','0','0','0','0','0','0','0','0','0','Wrathscale Naga - Cast Hamstring'),
--- Wrathscale Myrmidon
+-- Wrathscale Myrmidon 17194
 ('1719401','17194','9','0','100','1025','0','5','5000','9000','0','0','11','11976','1','0','0','0','0','0','0','0','0','0','Wrathscale Myrmidon - Cast Strike'),
--- Wrathscale Siren
+-- Wrathscale Siren 17195
 ('1719501','17195','9','0','100','1025','0','5','10000','15000','0','0','11','31273','1','0','0','0','0','0','0','0','0','0','Wrathscale Siren - Cast Screech'),
 -- Root Trapper (17196) - NSR
 -- Root Thresher (17197) - NSR
@@ -9337,12 +9280,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1719901','17199','0','0','100','1025','5000','10000','18000','21000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Ravager Specimen - Cast Rend'),
 ('1719902','17199','0','0','100','1025','3000','12000','40000','40000','0','0','11','8391','1','0','0','0','0','0','0','0','0','0','Ravager Specimen - Cast Ravage'),
 -- Moongraze Stag (17200) - NSR
--- Moongraze Buck
+-- Moongraze Buck 17201
 ('1720101','17201','0','0','100','1025','6000','11000','9000','17000','0','0','11','31274','1','0','0','0','0','0','0','0','0','0','Moongraze Buck - Cast Knockdown'),
 -- Infected Nightstalker Runt (17202) - NSR
 -- Nightstalker (17203) - NSR
--- Temper (17205)
--- Hauteur
+-- Temper (17205) - fireball?
+-- Hauteur 17206
 ('1720601','17206','0','0','100','1025','1000','1000','62000','69000','0','0','11','134','0','0','0','0','0','0','0','0','0','0','Hauteur - Cast Fire Shield'),
 ('1720602','17206','9','0','100','1025','0','25','12000','16000','0','0','11','8050','4','32','0','0','0','0','0','0','0','0','Hauteur - Cast Flame Shock'),
 ('1720603','17206','11','0','100','0','0','0','0','0','0','0','1','13559','0','0','0','0','0','0','0','0','0','0','Hauteur - Say on Spawn'),
@@ -9350,29 +9293,29 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anchorite Fateema (17214) - NSR
 -- Daedal (17215) - NSR
 -- Skittering Crawler (17216) - NSR
--- Barbed Crawler (3.3.3a Official Data)
+-- Barbed Crawler 17217 (3.3.3a Official Data)
 ('1721701','17217','1','0','100','1','1000','1000','600000','600000','0','0','11','31271','0','0','0','0','0','0','0','0','0','0','Barbed Crawler - Cast Thorns on Spawn'),
 -- Hauteur Reborn (17220) - NSR
 -- Artificer Daelo (17222) - NSR
 -- Draenei Artificer (17228) - NSR
 -- Cryptographer Aurren (17232) - NSR
--- Admiral Odesyus (17240) - OOC CONVERSATION WITH "Cookie" McWeaksauce
+-- Admiral Odesyus 17240 - NSR
 -- Priestess Kyleen Il'dinare (17241) - NSR
 -- Archaeologist Adamant Ironheart (17242) - NSR
--- Engineer "Spark" Overgrind (note: Self Cast)
+-- Engineer "Spark" Overgrind 17243 (note: Self Cast)
 ('1724301','17243','30','0','100','33','5','17243','0','0','0','0','1','14077','14082','14076','1','14079','14078','0','0','0','0','0','Engineer "Spark" Overgrind - Randomized Random Say on Receive AI Event A'),
 -- Alliance Axeman (17244) - NSR
 -- Blacksmith Calypso (17245) - NSR
--- "Cookie" McWeaksauce (17246) - OOC CONVERSATION WITH Admiral Odesyus
+-- "Cookie" McWeaksauce 17246
 -- Alliance Logger (17247) - NSR
 -- Flaming Aspect (17272) - NSR
 -- Venture Co. Saboteur 17278
 ('1727801','17278','11','0','100','0','0','0','0','0','0','0','11','5680','0','34','0','0','0','0','0','0','0','0','Venture Co. Saboteur - Cast Torch Burn on Spawn'),
 -- Venture Co. Gemologist 17279
 ('1727901','17279','11','0','100','0','0','0','0','0','0','0','11','5680','0','34','0','0','0','0','0','0','0','0','Venture Co. Gemologist - Cast Torch Burn on Spawn'),
--- Ragnarose (17285) - NSR
--- Warlord Sriss'tiz
-('1729801','17298','9','0','100','1025','0','5','5000','9000','0','0','11','31275','1','0','0','0','0','0','0','0','0','0','Warlord Sriss''tiz - Cast Watery Strike'),
+-- Warlord Sriss'tiz 17298
+('1729801','17298','0','0','100','1025','0','10000','5000','9000','0','0','11','31275','1','0','0','0','0','0','0','0','0','0','Warlord Sriss''tiz - Cast Watery Strike'),
+-- Cowlen 17311 - NSR
 -- Magwin (17312) - npc_magwin
 -- Geezle 17318
 ('1731801','17318','11','0','100','0','0','0','0','0','0','0','11','5680','0','34','0','0','0','0','0','0','0','0','Geezle - Cast Torch Burn on Spawn'),
@@ -9396,7 +9339,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1739301','17393','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','3','0','17002','0','53','19994','11','0','Stillpine Ancestor Yor - Cast Elemental Spawn-in and set correct modelid and START_RELAY_SCRIPT on Spawn'),
 ('1739302','17393','30','0','100','0','5','17393','0','0','0','0','11','30448','11','0','0','0','0','0','0','0','0','0','Stillpine Ancestor Yor - Cast Shadow of the Forest on Summoner on Receive AI Event Custom A'),
 ('1739303','17393','30','0','100','0','6','17393','0','0','0','0','53','19993','11','0','0','0','0','0','0','0','0','0','Stillpine Ancestor Yor - START_RELAY_SCRIPT on Receive AI Event Custom B'),
--- Stillpine Ancestor Vark
+-- Stillpine Ancestor Vark 17410
 ('1741001','17410','11','0','100','0','0','0','0','0','0','0','11','25035','0','1','3','0','17109','0','0','0','0','0','Stillpine Ancestor Vark - Cast Elemental Spawn-in and set correct modelid on Spawn'),
 -- Vale Hunter (17425) - NSR
 -- Velaada (17431) - NSR
@@ -9416,12 +9359,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stillpine the Younger (17445) - NSR
 -- Parkat Steelfur (17446) - NSR
 -- The Kurken (17447) - NSR
--- Chieftain Oomooroo
+-- Chieftain Oomooroo 17448
 ('1744801','17448','9','0','100','1025','0','5','6000','9000','0','0','11','13446','1','0','0','0','0','0','0','0','0','0','Chieftain Oomooroo - Cast Strike'),
 ('1744802','17448','2','0','100','1025','30','0','9000','15000','0','0','11','18501','0','0','0','0','0','0','0','0','0','0','Chieftain Oomooroo - Cast Enrage at 30% HP'),
 -- Vision of the Prophesied Hero (17452) - NSR
 -- Vision of the Kurken (17453) - NSR
--- Skunk (17467) - NSR
 -- Murgurgula 17475
 ('1747501','17475','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Murgurgula - Cast Thrash on Spawn'),
 -- Ruada (17480) - NSR
@@ -9435,30 +9377,30 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dulvi (17488) - NSR
 -- Logan Daniel (17489) - NSR
 -- Ergh of the Stillpine (17490) - NSR
--- Stillpine Raider
+-- Stillpine Raider 17495
 ('1749501','17495','9','0','100','1025','0','5','9000','14000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Stillpine Raider - Cast Heroic Strike'),
 -- Vision of the Forlorn (17499) - NSR
 -- Vision of the Remembered (17500) - NSR
 -- Vision of Purity (17532) - NSR
--- Tavara
+-- Tavara 17551
 ('1755101','17551','8','0','100','1','139','-1','0','0','0','0','33','17551','6','0','0','0','0','0','0','0','0','0','Tavara - Quest Credit on Spellhit (Quest: 9586)'),
 ('1755102','17551','8','0','100','1','2052','-1','0','0','0','0','33','17551','6','0','0','0','0','0','0','0','0','0','Tavara - Quest Credit on Spellhit (Quest: 9586)'),
 ('1755103','17551','8','0','100','1','28880','-1','0','0','0','0','33','17551','6','0','0','0','0','0','0','0','0','0','Tavara - Quest Credit on Spellhit (Quest: 9586)'),
--- Death Ravager
+-- Death Ravager 17556
 ('1755601','17556','9','0','100','1025','0','5','8000','12000','0','0','11','30736','1','0','0','0','0','0','0','0','0','0','Death Ravager - Cast Enraging Bite'),
 ('1755602','17556','9','0','100','1025','0','5','17000','21000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Death Ravager - Cast Rend'),
 ('1755603','17556','2','0','100','1024','30','0','0','0','0','0','11','3019','0','0','1','1191','0','0','0','0','0','0','Death Ravager - Cast Frenzy at 30% HP'),
--- Draenei Youngling
+-- Draenei Youngling 17587
 ('1758701','17587','1','0','75','33','10000','60000','120000','240000','0','0','1','14177','14176','14178','1','14179','14175','0','0','0','0','0','Draenei Youngling - Randomized Say OOC'),
 ('1758702','17587','4','0','50','0','0','0','0','0','0','0','1','17357','0','0','0','0','0','0','0','0','0','0','Draenei Youngling - Say on Aggro'),
 ('1758703','17587','8','0','100','1','28880','-1','0','0','0','0','1','14166','0','0','0','0','0','0','0','0','0','0','Draenei Youngling - Say on Gift of the Naaru Spellhit'),
--- Blood Elf Bandit
+-- Blood Elf Bandit 17591
 ('1759101','17591','1','0','100','0','1000','1000','0','0','0','0','11','5916','0','32','0','0','0','0','0','0','0','0','Blood Elf Bandit - Cast Shadowstalker Stealth OOC'),
 ('1759102','17591','4','0','75','0','0','0','0','0','0','0','1','14183','14182','14181','0','0','0','0','0','0','0','0','Blood Elf Bandit - Random Say on Aggro'),
 ('1759103','17591','9','0','100','1025','0','5','6000','11000','0','0','11','14873','1','0','0','0','0','0','0','0','0','0','Blood Elf Bandit - Cast Sinister Strike'),
 ('1759104','17591','33','0','100','1025','0','0','9000','12000','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Blood Elf Bandit - Cast Backstab on Facing Target Back'),
 ('1759105','17591','0','0','100','1025','9000','14000','16000','21000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Blood Elf Bandit - Cast Eviscerate'),
--- Quel'dorei Magewraith 17612
+-- Quel'dorei Magewraith 17612 -- aggro yell on quest?
 ('1761201','17612','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Quel''dorei Magewraith - Enable Range Mode on Aggro'),
 ('1761202','17612','6','0','100','0','0','0','0','0','0','0','11','30790','0','7','0','0','0','0','0','0','0','0','Quel''dorei Magewraith - Cast Arcane Domination on Death (Quest: 9595)'),
 ('1761203','17612','0','0','100','1025','11000','18000','11000','18000','0','0','11','31596','4','0','0','0','0','0','0','0','0','0','Quel''dorei Magewraith - Cast Counterspell'),
@@ -9467,7 +9409,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1761206','17612','9','0','100','1025','0','40','3800','5200','0','0','11','11921','1','256','0','0','0','0','0','0','0','0','Quel''dorei Magewraith - Cast Fireball'),
 -- Huntress Kella Nightbow (17614) - NSR
 -- Kioni (17929) - NSR
--- Red Crystal Bunny
+-- Red Crystal Bunny 17947
 ('1794701','17947','30','0','100','1','5','16522','0','0','0','0','11','5','0','0','0','0','0','0','0','0','0','0','Red Crystal Bunny - Killself on Receive AI Event A'),
 -- Nabek (17930) - NSR
 -- Heur (17983) - NSR
@@ -9475,21 +9417,18 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Otonambusi 18810
 ('1881001','18810','1','0','100','1','120000','240000','300000','420000','0','0','1','15941','15942','0','0','0','0','0','0','0','0','0','Otonambusi - Say OOC'),
 -- Nibblet (19073) - NSR
--- Apprentice Tedon
+-- Apprentice Tedon 20227
 ('2022701','20227','30','0','100','1','5','16516','0','0','0','0','18','256','10','0','0','0','0','0','0','0','0','0','Apprentice Tedon - Change Targets UnitFlag on Receive AI Event'),
 -- Apprentice Vishael (20233) - NSR
--- Stormwind Marine
+-- Stormwind Marine 20556
 ('2055601','20556','9','0','100','1025','0','5','8000','12000','0','0','11','12170','1','0','0','0','0','0','0','0','0','0','Stormwind Marine - Cast Revenge'),
 ('2055602','20556','0','0','100','1025','3000','5000','9000','14000','0','0','11','12169','0','0','0','0','0','0','0','0','0','0','Stormwind Marine - Cast Shield Block'),
 -- Great Blue Elekk (20848) - NSR
 -- Great Purple Elekk (20850) - NSR
 -- Crusty Bob (21376) - NSR
--- Arena Promoter (22101) - NSR
 -- Azuremyst Isle Flame Warden (25888) - NSR
 -- Paymaster (26075) - NSR
--- Summer Scorchling (26401) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
--- Plagued Resident (27848) - NSR
 
 
 
@@ -9497,8 +9436,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodmyst Isle
 -- ==============
 -- Water Spirit (6748) - NSR
--- Infected Squirrel (10779) - NSR
--- Infected Deer (10780) - NSR
 -- Injured Night Elf Priestess (17117) - NSR
 -- Aqueous (17275) - NSR
 -- Watery Aspect (17276) - NSR
@@ -9586,7 +9523,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Galaen (17426) - NSR
 -- Vindicator Aalesia (17433) - NSR
 -- Morae (17434) - NSR
--- Skunk (17467) - NSR
 -- Prophet Velen 17468
 ('1746801','17468','4','0','100','0','0','0','0','0','0','0','4','10154','0','0','0','0','0','0','0','0','0','0','Prophet Velen - Play Sound 10154 on Aggro'),
 ('1746802','17468','0','0','100','1025','5000','7000','6000','8000','0','0','11','33542','1','0','0','0','0','0','0','0','0','0','Prophet Velen - Cast Staff Strike'),
@@ -9778,7 +9714,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =========
 -- Darkshore
 -- =========
--- Deer (883) - NSR
 -- Moonstalker (2069) - NSR
 -- Moonstalker Runt (2070) - NSR
 -- Moonstalker Matriarch
@@ -10028,7 +9963,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('478802','4788','9','0','100','1025','0','5','9000','13000','0','0','11','6713','1','0','0','0','0','0','0','0','0','0','Fallenroot Satyr - Cast Disarm'),
 -- Auberdine Sentinel (6086) - NSR
 -- Shade of Elura (6133) - NSR
--- School of Fish (6145) - NSR
 -- Kurdram Stonehammer
 ('629701','6297','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Kurdram Stonehammer - Flee at 15% HP'),
 -- Thelgrum Stonehammer
@@ -10116,7 +10050,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Krah'ranik (11817) - NSR
 -- Jory Zaga (11819) - NSR
 -- Captured Rabid Thistle Bear (11836) - NSR
--- Sickly Deer (12298) - spell_dummy_npc
 -- Stormscale Toxicologist 12321 - creature_spell_list
 ('1232101','12321','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Stormscale Toxicologist - Enable Range Mode on Aggro'),
 ('1232102','12321','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Stormscale Toxicologist - Flee at 15% HP'),
@@ -10126,7 +10059,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Elder Starweave (15601) - NSR
 -- Darkshore Flame Warden (25893) - NSR
 -- Beastmaster (26307) - NSR
--- Summer Scorchling (26401) - NSR
 -- Wisp of Ragnaros (26502) - NSR
 
 
@@ -10138,9 +10070,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('118201','1182','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Brother Anton - Flee at 15% HP'),
 -- Maxton Strang
 ('132201','1322','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Maxton Strang - Flee at 15% HP'),
--- Snake (2914) - NSR
--- Rat (4075) - NSR
--- Roach (4076) - NSR
 -- Maurin Bonesplitter (4498) - NSR
 -- Kolkar Centaur 4632
 ('463201','4632','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Kolkar Centaur - Flee at 15% HP'),
@@ -10430,7 +10359,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('607002','6070','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Maraudine Khan Advisor - Flee at 15% HP'),
 ('607003','6070','14','0','100','1025','500','40','14000','18000','0','0','11','11986','12','0','0','0','0','0','0','0','0','0','Maraudine Khan Advisor - Cast Healing Wave on Friendly Missing HP'),
 ('607004','6070','9','0','100','1025','5','20','3400','4800','0','0','11','12548','1','256','0','0','0','0','0','0','0','0','Maraudine Khan Advisor - Cast Frost Shock'),
--- School of Fish (6145) - NSR
 -- Baritanas Skyriver
 ('670601','6706','4','0','100','0','0','0','0','0','0','0','11','14329','0','0','1','4566','0','0','0','0','0','0','Baritanas Skyriver - Cast Summon Enraged Hippogryph on Aggro'),
 -- Thalon
@@ -10807,7 +10735,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('329401','3294','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Ophek - Flee at 15% HP'),
 -- Sen'jin Watcher
 ('329701','3297','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Sen''jin Watcher - Flee at 15% HP'),
--- Adder (3300) - NSR
 -- Master Vornal
 ('330401','3304','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Master Vornal - Flee at 15% HP'),
 -- Takrin Pathseeker
@@ -10871,13 +10798,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('594201','5942','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Zansoa - Flee at 15% HP'),
 -- Rawrk
 ('594301','5943','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Rawrk - Flee at 15% HP'),
--- Hare (5951) - NSR
 -- Den Grunt
 ('595201','5952','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Den Grunt - Flee at 15% HP'),
 -- Razor Hill Grunt (5953) - guard_durotar
 -- Kitha
 ('602701','6027','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Kitha - Flee at 15% HP'),
--- School of Fish (6145) - NSR
 -- Ula'elek
 ('640801','6408','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Ula''elek - Flee at 15% HP'),
 -- Rokar Bladeshadow
@@ -10919,7 +10844,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1068203','10682','7','0','100','0','0','0','0','0','0','0','43','0','2328','0','0','0','0','0','0','0','0','0','Raider Kerr - Mount on Evade'),
 ('1068204','10682','30','0','100','1','5','0','0','0','0','0','58','1','0','0','64','0','0','0','53','17','0','0','Raider Kerr - Set Run Off and Disable Formation Movement and Start Relay Script on AI_EVENT_CUSTOM_EVENTAI_A received'),
 ('1068205','10682','30','0','100','1','6','0','0','0','0','0','58','0','0','0','64','1','0','0','0','0','0','0','Raider Kerr -  Set Run On and Enable Formation Movement on AI_EVENT_CUSTOM_EVENTAI_B received'),
--- Swine (10685) - NSR
 -- Mukdrak
 ('1102501','11025','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Mukdrak - Flee at 15% HP'),
 -- Foreman Thazz'ril
@@ -10992,10 +10916,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ================
 -- Dustwallow Marsh
 -- ================
--- Squirrel (1412) - NSR
--- Toad (1420) - NSR
 -- Privateer Groy (2616) - NSR
--- Snake (2914) - NSR
 -- Dagun the Ravenous 2937
 ('293701','2937','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Dagun the Ravenous - Flee at 15% HP'),
 -- Baldruc 4321
@@ -11317,7 +11238,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ingo Woolybush
 ('538801','5388','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Ingo Woolybush - Flee at 15% HP'),
 -- Pinto (5405) - NSR
--- School of Fish (6145) - NSR
 -- Innkeeper Janene (6272) - npc_innkeeper
 -- Tabetha (6546) - NSR
 -- Demon of the Orb (6549) - NSR
@@ -11507,7 +11427,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lieutenant Khand (23950) - NSR
 -- Lieutenant Aden (23951) - NSR
 -- Firemane Drake (23969) - NSR
--- Giant Marsh Frog (23979) - NSR
 -- Axle (23995) - npc_innkeeper
 -- Mill Worker
 ('2400501','24005','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Mill Worker - Flee at 15% HP'),
@@ -11731,8 +11650,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('987901','9879','11','0','100','0','0','0','0','0','0','0','11','11966','0','34','0','0','0','0','0','0','0','0','Entropic Horror - Cast Fire Shield on Spawn'),
 -- Common Kitten 9937 - npc_kitten
 -- Winna Hazzard (9996) - NSR
--- Tainted Rat (10016) - NSR
--- Tainted Cockroach (10017) - NSR
 -- Corrupted Saber 10042 - npc_corrupt_saber
 -- Trull Failbane (10306) - NSR
 -- Altsoba Ragetotem (10379) - NSR
@@ -12252,9 +12169,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =========
 -- Moonglade
 -- =========
--- Rabbit (721) - NSR
--- Deer (883) - NSR
--- Squirrel (1412) - NSR
 -- Geenia Sunshadow (4184) - NSR
 -- Darnall (7940) - NSR
 -- Sindrayl
@@ -12321,7 +12235,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =======
 -- Mulgore
 -- =======
--- Prairie Dog (2620) - NSR
 -- Harken Windtotem 2947
 ('294701','2947','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Harken Windtotem - Enable Range Mode on Aggro'),
 ('294702','2947','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Harken Windtotem - Flee at 15% HP'),
@@ -12905,28 +12818,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1704101','17041','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Org Fireeater Firebreath Cast'),
 -- Hellfire Combat Dummy 17059
 -- Ambassador Dawnsinger 17098
--- Rough Stone Statue 18372
-('1837201','18372','11','0','100','0','0','0','0','0','0','0','11','32253','11','0','0','0','0','0','0','0','0','0','Rough Stone Statue - Cast Stone Healing on Spawner on Spawn'),
-('1837202','18372','29','0','100','0','12500','12500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Rough Stone Statue - Die on Generic Timer'),
--- Coarse Stone Statue 18734
-('1873401','18734','11','0','100','0','0','0','0','0','0','0','11','32787','11','0','0','0','0','0','0','0','0','0','Coarse Stone Statue - Cast Stone Healing on Spawner on Spawn'),
-('1873402','18734','29','0','100','0','12500','12500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Coarse Stone Statue - Die on Generic Timer'),
--- Heavy Stone Statue 18735
-('1873501','18735','11','0','100','0','0','0','0','0','0','0','11','32788','11','0','0','0','0','0','0','0','0','0','Heavy Stone Statue - Cast Stone Healing on Spawner on Spawn'),
-('1873502','18735','29','0','100','0','16500','16500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Heavy Stone Statue - Die on Generic Timer'),
--- Solid Stone Statue 18736
-('1873601','18736','11','0','100','0','0','0','0','0','0','0','11','32790','11','0','0','0','0','0','0','0','0','0','Solid Stone Statue - Cast Stone Healing on Spawner on Spawn'),
-('1873602','18736','29','0','100','0','16500','16500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Solid Stone Statue - Die on Generic Timer'),
--- Dense Stone Statue 18737
-('1873701','18737','11','0','100','0','0','0','0','0','0','0','11','32791','11','0','0','0','0','0','0','0','0','0','Dense Stone Statue - Cast Stone Healing on Spawner on Spawn'),
-('1873702','18737','29','0','100','0','25500','25500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Dense Stone Statue - Die on Generic Timer'),
 -- Councilor Arial D'Anastasis 19850
 -- Zeggon Botsnap 19912
 -- Andrissa Heartspear 20385
 -- Silvermoon City Commendation Officer 21968
 -- Veteran Gladiator 22097
 -- Grizzled Gladiator 22098
--- Arena Promoter 22101
 -- Troll Roof Stalker 23090
 ('2309001','23090','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Troll Roof Stalker - Enable Range Mode on Aggro'),
 ('2309002','23090','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','1056','0','0','0','0','0','0','0','0','Troll Roof Stalker - Cast Net'),
@@ -13346,9 +13243,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ====================
 -- Stonetalon Mountains
 -- ====================
--- Rabbit (721) - NSR
--- Deer (883) - NSR
--- Squirrel (1412) - NSR
 -- Compact Harvest Reaper (2676) - NSR
 -- Denni'ka
 ('341101','3411','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Denni''ka - Flee at 15% HP'),
@@ -13515,7 +13409,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('407203','4072','29','1','100','0','8000','8000','0','0','0','0','11','3240','0','0','0','0','0','0','0','0','0','0','Magnataur Huntress - Cast Bloody Explosion on Timer (Phase 1)'),
 -- XT:4 (4073) - NSR
 -- XT:9 (4074) - NSR
--- Roach (4076) - NSR
 -- Gaxim Rustfizzle
 ('407701','4077','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Gaxim Rustfizzle - Flee at 15% HP'),
 -- Kaela Shadowspear
@@ -13581,7 +13474,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Taskmaster Whipfang
 ('593201','5932','9','0','100','1025','0','8','15000','19000','0','0','11','16508','1','0','0','0','0','0','0','0','0','0','Taskmaster Whipfang - Cast Intimidating Roar'),
 ('593202','5932','2','0','100','0','20','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Taskmaster Whipfang - Flee at 20% HP'),
--- School of Fish (6145) - NSR
 -- Chimaera Matriarch
 ('616701','6167','9','0','100','1025','0','30','7000','12000','0','0','11','3396','4','32','0','0','0','0','0','0','0','0','Chimaera Matriarch - Cast Corrosive Poison'),
 -- Stonetalon Grunt
@@ -13909,7 +13801,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gusting Vortex (4.0.3 Official Data)
 ('866701','8667','0','0','100','1025','8500','24800','20500','40200','0','0','11','6982','0','0','0','0','0','0','0','0','0','0','Gusting Vortex - Cast Gust of Wind'),
 -- Buzzek Bracketswing (8736) - NSR
--- Riding Ram (8881) - NSR
 -- Riding Tiger (8882) - NSR
 -- Riding Horse (8883) - NSR
 -- Skeletal Mount (8884) - NSR
@@ -13981,7 +13872,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Alurmi (21643) - NSR
 -- Tanaris Flame Warden (25916) - NSR
 -- Tanaris Flame Keeper (25921) - NSR
--- Summer Scorchling (26401) - NSR
 -- Don Carlos (28126) - NSR
 
 
@@ -13990,9 +13880,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Teldrassil
 -- Darnassus
 -- ==========
--- Rabbit (721) - NSR
--- Deer (883) - NSR
--- Toad (1420) - NSR
 -- Treant (1964) - NSR
 -- Young Thistle Boar (1984) - NSR
 -- Thistle Boar (1985) - NSR
@@ -14262,13 +14149,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Festival Loremaster 16817
 -- Darnassus Firebreather
 ('1704901','17049','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Darn Firebreather Firebreath Cast'),
--- Arena Promoter (22101) - NSR
 -- Teldrassil Flame Warden 25906
 -- Master Fire Eater 25975
 -- Paymaster (26075) - NSR
 -- Midsummer Supplier 26123
 -- Earthen Ring Elder 26221
--- Summer Scorchling (26401) - NSR
 -- Fight Promoter (26760) - npc_innkeeper
 
 
@@ -14782,7 +14667,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1213801','12138','1','0','100','0','1000','1000','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Lunaclaw - Cast Thrash OOC'),
 ('1213802','12138','6','0','100','0','0','0','0','0','0','0','11','18986','0','7','0','0','0','0','0','0','0','0','Lunaclaw - Cast Lunaclaw Spirit on Death'),
 -- Lunaclaw Spirit (12144) - npc_lunaclaw_spirit
--- Sickly Gazelle 12296 - spell_dummy_npc
 -- Burning Blade Toxicologist
 ('1231901','12319','4','0','100','0','0','0','0','0','0','0','11','696','0','0','54','7579','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Demon Skin and Say on Aggro'),
 ('1231902','12319','0','0','100','1025','5000','11000','14000','25000','0','0','11','11962','1','0','0','0','0','0','0','0','0','0','Burning Blade Toxicologist - Cast Immolate'),
@@ -16475,7 +16359,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lightning Wasp - Pre 2.1
 ('2218201','22182','1','0','100','1','1000','1000','600000','600000','0','0','11','35319','0','32','0','0','0','0','0','0','0','0','Lightning Wasp - Cast Electric Skin OOC'),
 -- Bladespine Basilisk 22187 - Pre 2.1 - NSR
--- Marmot 22189 - NSR
 -- Spire Needler 22194 - Pre 2.1 - guessed values
 ('2219401','22194','9','0','100','1025','0','30','4000','8000','0','0','11','35331','1','32','0','0','0','0','0','0','0','0','Spire Needler - Cast Black Blood'),
 -- Wrath Speaker 22195
@@ -18340,7 +18223,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spymaster Thalodien 19468 - SAY SEQUENCE
 -- Magistrix Larynna 19469 - SAY SEQUENCE
 -- Archmage Vargoth (19481) - NSR
--- Sagan (19482) - NSR
 -- Custodian Dieworth (19488) - NSR
 -- Lieutenant-Sorcerer Morran (19489) - NSR
 -- Ekkorash the Inquisitor 19493
@@ -18392,17 +18274,17 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Netherologist Coppernickels (19569) - NSR
 -- Rocket-Chief Fuselage (19570) - NSR
 -- Innkeeper Remi Dodoso (19571) - NSR
-('1957101','19571','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Innkeeper Remi Dodoso  - Start Relay Script (Random Emote) on Receive AI Event 5'),
+('1957101','19571','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Innkeeper Remi Dodoso - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Gant 19572
-('1957201','19572','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Gant  - Start Relay Script (Random Emote) on Receive AI Event 5'),
+('1957201','19572','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Gant - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Dash 19573
-('1957301','19573','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Dash  - Start Relay Script (Random Emote) on Receive AI Event 5'),
+('1957301','19573','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Dash - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Kizzie 19574
-('1957401','19574','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Kizzie  - Start Relay Script (Random Emote) on Receive AI Event 5'),
+('1957401','19574','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Kizzie - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Qiff 19575
-('1957501','19575','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Qiff  - Start Relay Script (Random Emote) on Receive AI Event 5'),
+('1957501','19575','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Qiff - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Xyrol 19576
-('1957601','19576','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Xyrol  - Start Relay Script (Random Emote) on Receive AI Event 5'),
+('1957601','19576','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Xyrol - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Bot-Specialist Alley (19578) - NSR
 -- Maxx A. Million Mk. I (19582) - NSR
 -- Grennik (19583) - NSR
@@ -18442,7 +18324,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1964305','19643','0','0','100','1537','0','0','5000','20000','0','0','11','38391','1','256','0','0','0','0','0','0','0','0','Sunfury Astromancer - Cast Scorch (Melee Mode)'),
 -- Papa Wheeler
 ('1964501','19645','1','0','100','1','120000','180000','120000','180000','0','0','54','0','0','10013','0','0','0','0','0','0','0','0','Papa Wheeler - Random Say OOC'),
-('1964502','19645','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Papa Wheeler  - Start Relay Script (Random Emote) on Receive AI Event 5'),
+('1964502','19645','30','0','100','1','5','19570','0','0','0','0','53','-10172','0','0','0','0','0','0','0','0','0','0','Papa Wheeler - Start Relay Script (Random Emote) on Receive AI Event 5'),
 -- Seasoned Vindicator (19651) - NSR
 -- Glacius (19653) - NSR
 -- Summoner Kanthin 19657
@@ -18663,7 +18545,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2040901','20409','0','0','100','1024','3000','9000','0','0','0','0','11','36099','1','0','0','0','0','0','0','0','0','0','Kirin''Var Apprentice - Cast Throw Hammer'),
 -- Rhonsus 20410
 ('2041001','20410','11','0','100','0','0','0','0','0','0','0','11','36635','0','0','0','0','0','0','0','0','0','0','Rhonsus - Cast Fiery Weapon Proc on Spawn'),
--- Spectral Bovine 20411
 -- Bessy 20415 - npc_bessy
 -- Overseer Theredis 20416
 ('2041601','20416','0','0','100','1025','10000','20000','28000','32000','0','0','11','6713','1','0','54','18658','0','0','0','0','0','0','Overseer Theredis - Cast Disarm and Text Emote'),
@@ -19058,7 +18939,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Liza Cutlerflix 24974
 -- Warpy 24977
 -- Netherstorm Flame Keeper 25918
--- Summer Scorchling 26401
 -- Meeda 28343
 -- Blazzle 28344
 
@@ -21247,10 +21127,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==============================================================
 -- Auchindoun: Mana-Tombs - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data
 -- ==============================================================
--- Adder (3300) - NSR
--- Rat (4075) - NSR
--- Roach (4076) - NSR
--- Spider (14881) - NSR
 -- Ethereal Scavenger 18309 (4.3.4 Official Data - Normal/Heroic)
 ('1830901','18309','4','0','15','0','0','0','0','0','0','0','54','0','0','12002','0','0','0','0','0','0','0','0','Ethereal Scavenger - Random Say on Aggro'),
 ('1830902','18309','0','0','100','1025','2400','4800','7200','21700','0','0','11','33871','1','32','0','0','0','0','0','0','0','0','Ethereal Scavenger - Cast Shield Bash'),
@@ -21349,11 +21225,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =================================================================
 -- Auchindoun: Sethekk Halls - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data
 -- =================================================================
--- Snake (2914) - NSR
--- Adder (3300) - NSR
--- Rat (4075) - NSR
--- Roach (4076) - NSR
--- Spider (14881) - NSR
 -- Sethekk Initiate 18318 (4.3.4 Official Data - Normal/Heroic) - 396 (OneShotTalkNoSheathe)
 ('1831801','18318','4','0','15','0','0','0','0','0','0','0','54','0','0','10046','0','0','0','0','0','0','0','0','Sethekk Initiate - Random Say on Aggro'),
 ('1831802','18318','0','0','100','1025','7400','15700','27300','47100','0','0','11','33961','0','0','0','0','0','0','0','0','0','0','Sethekk Initiate - Cast Spell Reflection'),
@@ -22625,7 +22496,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ================================================================================
 -- Caverns of Time: Old Hillsbrad Foothills - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data
 -- ================================================================================
--- Horse (385) - NSR
 -- Forest Moss Creeper (4.3.4 Official Data - Normal/Heroic)
 ('235001','2350','0','0','100','1025','7800','15700','48300','66300','0','0','11','3396','1','32','0','0','0','0','0','0','0','0','Forest Moss Creeper - Cast Corrosive Poison'),
 -- Vicious Gray Bear (2354) - NSR
@@ -22756,7 +22626,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tarren Mill Peasant (18644) - NSR
 -- Tarren Mill Horsehand (18646) - NSR
 -- Innkeeper Monica (18649) - NSR
--- Young Blanchy (18651) - NSR
 -- Jay Lemieux (18655)
 ('1865501','18655','1','0','100','1','30000','60000','60000','90000','0','0','1','19554','19553','0','0','0','0','0','0','0','0','0','Jay Lemieux - Random Say OOC'),
 -- Julie Honeywell (18656)
@@ -22879,8 +22748,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chef Jessen (20378) - NSR
 -- Bilger the Straight-laced (20379) - NSR
 -- Raleigh the True (20380) - NSR
--- Captured Critter (20396) - NSR
--- Reanimated Critter (20398) - NSR
 -- Captain Edward Hanes (20400) - NSR
 -- Frances Lin (20401) - NSR
 -- Zixil (20419) - NSR
@@ -22953,7 +22820,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =================================
 -- Caverns of Time: The Black Morass
 -- =================================
--- Snake (2914)
 -- Medivh (15608) - npc_medivh_black_morass
 -- Shadow Council Enforcer
 ('1702301','17023','1','0','100','0','30000','34000','0','0','0','0','51','0','0','0','0','0','0','0','0','0','0','0','Shadow Council Enforcer - Resume Waypoints OOC'),
@@ -23451,11 +23317,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =========
 -- Dire Maul
 -- =========
--- Deer (883) - NSR
--- Squirrel (1412) - NSR
--- Snake (2914) - NSR
--- Rat (4075) - NSR
--- Roach (4076) - NSR
 -- Gordok Brute 11441 (3.3.3 Official Data)
 ('1144101','11441','11','0','100','0','0','0','0','0','0','0','11','19818','0','34','0','0','0','0','0','0','0','0','Gordok Brute - Cast Double Attack on Spawn'),
 ('1144102','11441','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Gordok Brute - Random Say on Aggro'),
@@ -23707,7 +23568,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1327601','13276','9','0','100','1025','0','20','6100','15700','0','0','11','13340','1','0','0','0','0','0','0','0','0','0','Wildspawn Imp - Cast Fire Blast'),
 -- Death Lash (3.3.3 Official Data)
 ('1328501','13285','1','0','100','0','1000','1000','0','0','0','0','11','8876','0','32','11','16428','0','32','11','25640','0','32','Death Lash - Cast Thrash and Virulent Poison Proc and Thorns OOC'),
--- Frog 13321
 -- Hydrospawn (NEED MORE OFFICIAL DATA)
 ('1328001','13280','9','0','100','1025','0','10','14300','25300','0','0','11','22419','0','0','0','0','0','0','0','0','0','0','Hydrospawn - Cast Riptide'),
 ('1328002','13280','0','0','100','1025','3900','4900','3200','6100','0','0','11','22420','0','0','0','0','0','0','0','0','0','0','Hydrospawn - Cast Submersion'),
@@ -23803,7 +23663,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1435403','14354','0','0','100','1025','13000','16000','13000','16000','0','0','11','14145','4','512','0','0','0','0','0','0','0','0','Pusillin - Cast Fire Blast'),
 ('1435404','14354','9','0','100','1025','0','40','3400','4800','0','0','11','15242','1','256','0','0','0','0','0','0','0','0','Pusillin - Cast Fireball'),
 -- Shen'dralar Ancient 14358
--- Shen'dralar Wisp 14361
 -- Shen'dralar Spirit 14364
 -- Warpwood Spores 14366
 ('1436601','14366','11','0','100','0','0','0','0','0','0','0','11','22802','0','0','50','0','0','0','41','11000','0','0','Warpwood Spores - Cast Choking Spores and Set ReactState Passive and Delayed Despawn on Spawn'),
@@ -24234,8 +24093,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1659411','16594','14','0','100','1029','9600','40','12000','15000','0','0','11','35943','0','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte (Heroic) - Cast Prayer of Healing on Friendly Missing HP'),
 ('1659412','16594','0','0','100','1281','0','0','2500','3000','0','0','11','31516','1','256','0','0','0','0','0','0','0','0','Shadowmoon Acolyte (Normal) - Cast Mind Blast (Range Mode)'),
 ('1659413','16594','0','0','100','1537','0','0','5000','20000','0','0','11','31516','1','256','0','0','0','0','0','0','0','0','Shadowmoon Acolyte (Normal) - Cast Mind Blast (Melee Mode)'),
-('1659414','16594','0','0','100','1281','0','0','2500','3000','0','0','11','15587','1','256','0','0','0','0','0','0','0','0','Shadowmoon Acolyte (Heroic) - Cast Mind Blast (Range Mode)'),
-('1659415','16594','0','0','100','1537','0','0','5000','20000','0','0','11','15587','1','256','0','0','0','0','0','0','0','0','Shadowmoon Acolyte (Heroic) - Cast Mind Blast (Melee Mode)'),
+('1659414','16594','0','0','100','1285','0','0','2500','3000','0','0','11','15587','1','256','0','0','0','0','0','0','0','0','Shadowmoon Acolyte (Heroic) - Cast Mind Blast (Range Mode)'),
+('1659415','16594','0','0','100','1541','0','0','5000','20000','0','0','11','15587','1','256','0','0','0','0','0','0','0','0','Shadowmoon Acolyte (Heroic) - Cast Mind Blast (Melee Mode)'),
 -- Shattered Hand Reaver 16699
 ('1669901','16699','6','0','100','0','0','0','0','0','0','0','45','6','50','0','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Send AI Event B on Death'),
 ('1669902','16699','4','0','15','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shattered Hand Reaver - Random Say on Aggro'),
@@ -24340,8 +24199,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1769409','17694','0','0','100','1029','2000','6000','14000','16000','0','0','11','33508','4','512','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster (Heroic) - Cast Rain of Fire'),
 ('1769410','17694','0','0','100','1281','0','0','2400','3800','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster (Normal) - Cast Shadow Bolt (Range Mode)'),
 ('1769411','17694','0','0','100','1537','0','0','5000','20000','0','0','11','12471','1','256','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster (Normal) - Cast Shadow Bolt (Melee Mode)'),
-('1769412','17694','0','0','100','1281','0','0','2400','3800','0','0','11','15232','1','256','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster (Heroic) - Cast Shadow Bolt (Range Mode)'),
-('1769413','17694','0','0','100','1537','0','0','5000','20000','0','0','11','15232','1','256','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster (Heroic) - Cast Shadow Bolt (Melee Mode)'),
+('1769412','17694','0','0','100','1285','0','0','2400','3800','0','0','11','15232','1','256','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster (Heroic) - Cast Shadow Bolt (Range Mode)'),
+('1769413','17694','0','0','100','1541','0','0','5000','20000','0','0','11','15232','1','256','0','0','0','0','0','0','0','0','Shadowmoon Darkcaster (Heroic) - Cast Shadow Bolt (Melee Mode)'),
 -- Shattered Hand Assassin 17695
 ('1769501','17695','1','0','100','1','1000','1000','10500','10500','0','0','11','30991','0','32','0','0','0','0','0','0','0','0','Shattered Hand Assassin - Cast Stealth OOC'),
 ('1769502','17695','1','0','66','0','1000','1000','0','0','0','0','11','30982','0','32','0','0','0','0','0','0','0','0','Shattered Hand Assassin - Cast Crippling Poison (Crippling Poison) OOC'),
@@ -24486,8 +24345,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ========
 -- Maraudon
 -- ========
--- Snake (2914) - NSR
--- School of Fish (6145) - NSR
 -- Shadowshard Rumbler
 ('1177701','11777','9','0','100','1025','0','10','6000','10000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Shadowshard Rumbler - Cast Trample'),
 -- Shadowshard Smasher
@@ -24623,7 +24480,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1314201','13142','1','0','100','1','1000','1000','600000','600000','0','0','11','21337','0','0','0','0','0','0','0','0','0','0','Deeprot Tangler - Cast Thorns on Spawn'),
 ('1314202','13142','9','0','100','1025','0','30','17000','21000','0','0','11','21331','4','0','0','0','0','0','0','0','0','0','Deeprot Tangler - Cast Entangling Roots'),
 -- Noxxion (13282) - boss_noxxion
--- Frog (13321) - NSR
 -- Subterranean Diemetradon 13323
 ('1332301','13323','9','0','100','1025','0','8','10000','14000','0','0','11','8281','17','0','0','0','0','0','0','0','0','0','Subterranean Diemetradon - Cast Sonic Burst'),
 -- Noxxion's Spawn (13456) - NSR
@@ -24967,7 +24823,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===================================================
 -- Fire Elemental (4.3.4 Official Data)
 ('57501','575','11','0','100','0','0','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Fire Elemental - Cast Elemental Spawn-in on Spawn'),
--- Rabbit (721) - NSR
 -- Houndmaster Loksey (3.0.3 and 4.3.4 Official Data)
 ('397401','3974','4','0','100','0','0','0','0','0','0','0','1','2655','0','0','0','0','0','0','0','0','0','0','Houndmaster Loksey - Yell on Aggro'),
 ('397402','3974','0','0','100','1025','9300','9300','30100','38200','0','0','11','6192','0','0','0','0','0','0','0','0','0','0','Houndmaster Loksey - Cast Battle Shout'),
@@ -24985,7 +24840,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('398304','3983','2','0','100','0','60','0','0','0','0','0','1','6206','0','0','0','0','0','0','0','0','0','0','Interrogator Vishas - Yell at 60% HP'),
 ('398305','3983','2','0','100','0','30','0','0','0','0','0','1','6207','0','0','0','0','0','0','0','0','0','0','Interrogator Vishas - Yell at 30% HP'),
 ('398306','3983','5','0','100','1','0','0','1','0','0','0','1','6205','0','0','0','0','0','0','0','0','0','0','Interrogator Vishas - Yell on Player Kill'),
--- Rat (4075) - NSR
 -- Scarlet Sentry (4.3.4 Official Data)
 ('428301','4283','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Scarlet Sentry - Flee at 15% HP'),
 -- Scarlet Soldier (4.3.4 Official Data)
@@ -25169,7 +25023,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Scholomance
 -- ===========
 -- Darkmaster Gandling (1853) - boss_darkmaster_gandling
--- Rat (4075)
 -- Vectus (SD2 Backport)
 ('1043201','10432','0','0','100','1025','12000','14000','12000','14000','0','0','11','16046','0','0','0','0','0','0','0','0','0','0','Vectus - Cast Blast Wave'),
 ('1043202','10432','0','0','100','1025','2000','4000','20000','25000','0','0','11','18399','4','0','0','0','0','0','0','0','0','0','Vectus - Cast Flamestrike'),
@@ -25666,10 +25519,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1044006','10440','8','0','100','1025','17473','-1','45000','45000','0','0','11','17475','0','2','11','17476','0','2','11','17477','0','2','Baron Rivendare - Cast Raise Dead on Raise Dead Spellhit (1,2,3)'),
 ('1044007','10440','8','0','100','1025','17473','-1','45000','45000','0','0','11','17478','0','2','11','17479','0','2','11','17480','0','2','Baron Rivendare - Cast Raise Dead on Raise Dead Spellhit (4,5,6)'),
 ('1044008','10440','0','0','100','1025','42000','42000','45000','45000','0','0','1','6512','0','0','0','0','0','0','0','0','0','0','Baron Rivendare - Text Emote'),
--- Plagued Rat 10441
-('1044101','10441','9','0','100','1025','0','5','6000','14000','0','0','11','16448','4','32','0','0','0','0','0','0','0','0','Plagued Rat - Cast Black Rot'),
--- Plagued Insect 10461
-('1046101','10461','9','0','100','1025','0','5','6000','14000','0','0','11','16460','4','32','0','0','0','0','0','0','0','0','Plagued Insect - Cast Festering Bite'),
 -- Shrieking Banshee 10463
 ('1046301','10463','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Shrieking Banshee - Enable Range Mode on Aggro'),
 ('1046302','10463','9','0','100','1025','0','5','12000','18000','0','0','11','3589','17','0','0','0','0','0','0','0','0','0','Shrieking Banshee - Cast Deafening Screech'),
@@ -25681,8 +25530,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1051601','10516','1','0','100','0','1000','1000','0','0','0','0','11','22766','0','32','0','0','0','0','0','0','0','0','The Unforgiven - Cast Sneak OOC'),
 ('1051602','10516','10','0','100','0','0','30','0','0','0','0','28','0','22766','0','11','8822','0','0','0','0','0','0','The Unforgiven - Remove Permanent Stealth and Cast Temporary Stealth when Player crosses LOS OOC'),
 ('1051603','10516','0','0','100','1025','6800','10400','11500','14100','0','0','11','14907','0','0','0','0','0','0','0','0','0','0','The Unforgiven - Cast Frost Nova'),
--- Plagued Maggot 10536
-('1053601','10536','9','0','100','1025','0','5','6000','14000','0','0','11','16449','4','32','0','0','0','0','0','0','0','0','Plagued Maggot - Cast Maggot Slime'),
 -- Hearthsinger Forresten 10558
 ('1055801','10558','4','0','100','0','0','0','0','0','0','0','57','2','25','0','11','16331','0','2','0','0','0','0','Hearthsinger Forresten - Enable Range Mode and Cast Incorporeal Defense on Aggro'),
 ('1055802','10558','0','0','100','1025','7000','9000','20000','25000','0','0','11','16798','5','544','0','0','0','0','0','0','0','0','Hearthsinger Forresten - Cast Enchanting Lullaby'),
@@ -25810,7 +25657,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- =============
 -- Sunken Temple
 -- =============
--- Snake (2914) - NSR
 -- Murk Worm 5226 (3.3.0 Official Data)
 ('522601','5226','11','0','100','0','0','0','0','0','0','0','11','8601','0','34','0','0','0','0','0','0','0','0','Murk Worm - Cast Slowing Poison on Spawn'),
 -- Saturated Ooze (3.3.0 Official Data)
@@ -26793,7 +26639,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===============
 -- Wailing Caverns
 -- ===============
--- Snake (2914) - NSR
 -- Deviate Coiler 3630 - NSR
 -- Deviate Stinglash
 ('363101','3631','0','0','100','1025','4000','7000','12000','20000','0','0','11','6607','1','0','0','0','0','0','0','0','0','0','Deviate Stinglash - Cast Lash'),
@@ -26862,8 +26707,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Disciple of Naralex (3678) - npc_disciple_of_naralex
 -- Naralex (3679) - REQUIRES SD2 SCRIPTING FOR ESCORT PART OF THE INSTANCE
 -- Serpentbloom Snake (3680) - NSR
--- Biletoad
-('383501','3835','6','0','75','0','0','0','0','0','0','0','11','10251','7','7','0','0','0','0','0','0','0','0','Biletoad - Cast Biletoad Infection on Death'),
 -- Druid of the Fang 3840
 ('384001','3840','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Druid of the Fang - Enable Range Mode on Aggro'),
 ('384002','3840','2','0','100','1025','50','0','20000','25000','0','0','11','8041','0','0','57','0','0','0','22','1','0','0','Druid of the Fang - Cast Serpent Form and Set Phase 1 at 50% HP'),
@@ -27060,10 +26903,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ============
 -- Black Temple
 -- ============
--- Toad (1420) - NSR
--- Snake (2914) - NSR
 -- Giant Surf Glider (5432) - NSR
--- Spider (14881) - NSR
 -- Mechanical Greench (15721) - NSR
 -- Shade of Akama (22841) - boss_shade_of_akama
 -- Ashtongue Battlelord 22844
@@ -27298,8 +27138,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2308302','23083','0','0','100','1025','1000','6000','15000','21000','0','0','11','25821','4','512','0','0','0','0','0','0','0','0','Shadowmoon Riding Hound - Cast Charge'),
 ('2308303','23083','9','0','100','1025','0','5','3000','6000','0','0','11','41092','4','512','0','0','0','0','0','0','0','0','Shadowmoon Riding Hound - Cast Carnivorous Bite'),
 -- Supremus Volcano 23085 - npc_volcano
--- Sewer Rat (23086) - NSR
--- Sewer Crocolisk (23087) - NSR
 -- Akama (23089) - npc_akama_illidan
 -- Supremus Punch Invis Stalker 23095 - molten_flame
 -- Vengeful Spirit (23109) - NSR
@@ -27628,7 +27466,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('379503','3795','0','0','100','1025','5000','10000','30000','60000','0','0','11','31792','0','32','0','0','0','0','0','0','0','0','Druid of the Claw - Cast Bear Form (Shapeshift)'),
 ('379504','3795','14','0','100','1025','10000','40','15000','18000','0','0','28','0','31792','0','11','31782','12','0','0','0','0','0','Druid of the Claw - Remove Bear Form (Shapeshift) and Cast Rejuvenation on Friendly Missing HP'),
 ('379505','3795','6','0','10','0','0','0','0','0','0','0','54','0','6','10073','0','0','0','0','0','0','0','0','Druid of the Claw - Random Say on Death'),
--- Rat (4075) - NSR
 -- Echo of Archimonde
 ('1308301','13083','1','0','100','0','15000','15000','0','0','0','0','1','20432','0','0','0','0','0','0','0','0','0','0','Echo of Archimonde - Yell 15 Seconds after Spawn'),
 -- Rage Winterchill 17767 - boss_rage_winterchill
@@ -28623,7 +28460,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lady Blaumeux 16065 - boss_lady_blaumeux
 -- Skeletal Stead 16067
 ('1606701','16067','0','0','90','1025','2000','2000','5000','5000','0','0','11','5568','0','0','0','0','0','0','0','0','0','0','Skeletal Stead - Cast Trample'),
--- Larva 16068 - NSR
 -- Unrelenting Trainee 16124
 ('1612401','16124','11','0','100','0','0','0','0','0','0','0','11','29875','0','1','11','18950','0','32','0','0','0','0','Unrelenting Trainee - Cast Check Unrelenting Side and Cast Invisibility and Stealth Detection on Spawn'),
 ('1612402','16124','0','0','100','1025','1000','5000','10000','20000','0','0','11','30285','1','32','0','0','0','0','0','0','0','0','Unrelenting Trainee - Cast Eagle Claw'),
@@ -28837,7 +28673,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ==================
 -- Ruins of Ahn'Qiraj
 -- ==================
--- Roach (4076) - NSR
 -- Vile Scarab (15168) - NSR
 -- Hive'Zara Drone (15318) - NSR
 -- Hive'Zara Collector
@@ -28960,8 +28795,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1546202','15462','0','0','100','1025','5000','9000','4000','6000','0','0','11','24334','4','0','0','0','0','0','0','0','0','0','Spitting Scarab - Cast Acid Spit'),
 -- Lieutenant General Andorov (15471) - npc_general_andorov
 -- Kaldorei Elite (15473) - npc_kaldorei_elite
--- Beetle (15475) - NSR
--- Scorpion (15476) - NSR
 -- Canal Frenzy
 ('1550501','15505','9','0','100','1025','0','5','5000','8000','0','0','11','12097','4','32','0','0','0','0','0','0','0','0','Canal Frenzy - Cast Pierce Armor'),
 -- Buru Egg (15514) - npc_buru_egg
@@ -28987,7 +28820,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===============
 -- Sunwell Plateau
 -- ===============
--- Black Rat (2110) - NSR
 -- Infernal (22203) - NSR
 -- Kalecgos (24844) - npc_kalecgos
 -- Kalecgos (24850) - boss_kalecgos
@@ -29325,7 +29157,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===================
 -- Temple of Ahn'Qiraj
 -- ===================
--- Roach (4076) - NSR
 -- Vekniss Soldier
 ('1522901','15229','4','0','100','0','0','0','0','0','0','0','11','25152','0','1','0','0','0','0','0','0','0','0','Vekniss Soldier - Cast Agro Drones on Aggro'),
 ('1522902','15229','0','0','100','1025','1000','3000','15000','21000','0','0','11','1906','4','0','0','0','0','0','0','0','0','0','Vekniss Soldier - Cast Debilitating Charge'),
@@ -29414,8 +29245,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Arygos (15380) - NSR
 -- Shrieker Scarab (15461) - (ALREADY SCRIPTED IN RUINS OF AHN'QIRAJ)
 -- Spitting Scarab (15462) - (ALREADY SCRIPTED IN RUINS OF AHN'QIRAJ)
--- Beetle (15475) - NSR
--- Scorpion (15476) - NSR
 -- Andorgos (15502) - NSR
 -- Kandrostrasz (15503) - NSR
 -- Vethsera (15504) - NSR
@@ -29790,8 +29619,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ohgan 14988 - mob_ohgan
 -- Poisonous Cloud 14989
 ('1498901','14989','11','0','100','0','0','0','0','0','0','0','11','24320','0','0','0','0','0','0','0','0','0','0','Poisonous Cloud - Cast Poisonous Blood on Spawn'),
--- Jungle Toad 15010
-('1501001','15010','8','0','100','1','24062','-1','0','0','0','0','11','24063','0','0','0','0','0','0','0','0','0','0','Jungle Toad - Cast Disease Cloud on Spell Hit'),
 -- Spawn of Mar'li
 ('1504101','15041','0','0','100','1025','5000','15000','10000','20000','0','0','11','24097','1','0','0','0','0','0','0','0','0','0','Spawn of Mar''li - Cast Poison'),
 -- Zulian Crocolisk
@@ -30395,6 +30222,150 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 
+-- ================
+-- |   Critters   |
+-- ================
+INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
+-- Horse (385) - Critter
+-- Old Blanchy 582 - Critter
+-- Chicken (620) - npc_chicken_cluck - Critter
+-- Chicken 621 - Critter
+-- Rabbit (721) - Critter
+-- Deer (883) - Critter
+-- Fawn (890) - Critter
+-- White Ram 1262 - Critter
+-- Fluffy (1352) - Critter
+-- Squirrel (1412) - Critter
+-- Toad (1420) - Critter
+-- Black Sheep 1932 - Critter
+-- Sheep (1933) - Critter
+-- Ram 2098 - Critter
+-- Black Rat (2110) - Critter
+-- Cow (2442) - Critter
+-- Prairie Dog (2620) - Critter
+-- Snake (2914) - Critter
+-- Adder (3300) - Critter
+-- Dig Rat 3444 - Critter
+-- Wisp 3681 - Critter
+-- Biletoad 3835 - Critter
+('383501','3835','6','0','75','0','0','0','0','0','0','0','11','10251','7','7','0','0','0','0','0','0','0','0','Biletoad - Cast Biletoad Infection on Death'),
+-- Rat (4075) - Critter
+-- Roach (4076) - Critter
+-- Gazelle 4166 - Critter
+-- Moccasin (4953) - Critter
+-- Steed 5689 - Critter
+-- Caged Squirrel 5739 - Critter
+-- Caged Chicken 5740 - Critter
+-- Caged Rabbit 5741 - Critter
+-- Caged Toad 5742 - Critter
+-- Caged Sheep 5743 - Critter
+-- Equipment Squirrel5866 - Critter
+-- Maximum Squirrel 5867 - Critter
+-- Evil Squirrel 5868 - Critter
+-- Hare (5951) - Critter
+-- School of Fish (6145) - Critter
+-- Mouse 6271 - Critter
+ -- Cat (6368) - Critter
+-- Huge Toad (6653) - Critter
+-- Crab 6827 - Critter
+-- A 7186 - Critter
+-- Noarm (7208) - Critter
+-- Pirate treasure trigger mob 7898 - Critter
+-- Riding Ram (8881) - Critter
+-- Effsee 8963 - Critter
+-- Parrot 9600 - Critter
+-- Distract Test 9658 - Critter
+-- Fire Beetle (9699) - Critter
+-- Lava Crab (9700) - Critter
+-- Tainted Rat (10016) - Critter
+-- Tainted Cockroach (10017) - Critter
+-- Plagued Rat 10441 - Critter
+('1044101','10441','9','0','100','1025','0','5','6000','14000','0','0','11','16448','4','32','0','0','0','0','0','0','0','0','Plagued Rat - Cast Black Rot'),
+-- Plagued Insect 10461 - Critter
+('1046101','10461','9','0','100','1025','0','5','6000','14000','0','0','11','16460','4','32','0','0','0','0','0','0','0','0','Plagued Insect - Cast Festering Bite'),
+-- Plagued Slime 10510 - Critter
+-- Plagued Maggot 10536 - Critter
+('1053601','10536','9','0','100','1025','0','5','6000','14000','0','0','11','16449','4','32','0','0','0','0','0','0','0','0','Plagued Maggot - Cast Maggot Slime'),
+-- Krakle's Thermometer 10541 - Critter
+-- Dog 10582 - Critter
+-- Swine (10685) - Critter
+-- Belfry Bat 10716 - Critter
+-- Infected Squirrel (10779) - Critter
+-- Infected Deer (10780) - Critter
+-- Salome (11776) - Critter
+-- Plagueland Termite 12120 - Critter
+-- Voice of Elune 12152 - Critter
+-- Sickly Gazelle 12296 - spell_dummy_npc - Critter
+-- Cured Gazelle 12297 - Critter
+-- Sickly Deer (12298) - spell_dummy_npc - Critter
+-- Cured Deer 12299 - Critter
+-- Nibbles 12383 - Critter
+-- Wisp (Ghost Visual Only) 12861 - Critter
+-- Deeprun Rat (13016) - spell_dummy_npc - Critter
+-- Enthralled Deeprun Rat (13017) - Critter
+-- Frog (13321) - Critter
+-- Core Rat 13338 - Critter
+-- Shen'dralar Wisp 14361 - Critter
+-- Transporter Malfunction 14681 - Critter
+-- Wild Polymorph Target 14801 - Critter
+-- Spider (14881) - Critter
+-- The Good Rabbit 14886 - Critter
+-- Fang 14892 - Critter
+-- Jungle Toad 15010 - Critter
+('1501001','15010','8','0','100','1','24062','-1','0','0','0','0','11','24063','0','0','0','0','0','0','0','0','0','0','Jungle Toad - Cast Disease Cloud on Spell Hit'),
+-- Lady 15065 - Critter
+-- Cleo 15066 - Critter
+-- Underfoot 15071 - Critter
+-- Spike 15072 - Critter
+-- Trick - Critter 15219 - Critter
+-- Beetle (15475) - Critter
+-- Scorpion (15476) - Critter
+-- Golden Hare 15923 - Critter
+-- Maggot 16030 - Critter
+-- Larva 16068 - Critter
+-- Polymorphed Chicken 16369 - Critter
+-- Polymorphed Sheep 16372 - Critter
+-- Polymorphed Rat 16373 - Critter
+-- Polymorph Clone 16479 - Critter
+-- Leapgate 16532 - Critter
+-- Polymorphed Cow 16779 - Critter
+-- Dragonhawk Hatchling 16859 - Critter
+-- Broom (17213) - Critter
+-- Ragnarose (17285) - Critter
+-- Skunk (17467) - Critter
+-- Niblet 17559 - Critter
+-- Stormcrow Shape 17970 - Critter
+-- The Evil Rabbit 18078 - Critter
+-- Young Blanchy (18651) - Critter
+-- Soot 19154 - Critter
+-- Sagan (19482) - Critter
+-- Ewe 19665 - Critter
+-- Sagan (Skunk Form) 19941 - Critter
+-- Captured Critter (20396) - Critter
+-- Reanimated Critter (20398) - Critter
+-- Spectral Bovine 20411 - Critter
+-- Bat 20725 - Critter
+-- Boar Piglet 21034 - Critter
+-- Oronok's Chicken 21247 - Critter
+-- [PH]Test Skunk 21333 - Critter
+-- Talbuk 21922 - Critter
+-- Ruuan Weald Wisp 22152 - Critter
+-- Marmot 22189 - Critter
+-- Skittering Cavern Crawler 22306 - Critter
+-- Brown Marmot 22480 - Critter
+-- Black Cat 22816 - Critter
+('2281601','22816','6','0','100','0','0','0','0','0','0','0','11','39477','13','39','0','0','0','0','0','0','0','0','Black Cat - Cast Bad Luck on Death');
+-- Corvax 22842 - Critter
+-- Rook 22843 - Critter
+-- Sewer Rat (23086) - Critter
+-- Sewer Crocolisk (23087) - Critter
+-- Giant Marsh Frog (23979) - Critter
+-- Fuzz (25058) - Critter
+-- Doomsday Rat 25886 - Critter
+-- 2.4 Sunwell 5 Man Tradeskill Bunny [PH] 26177 - Critter
+
+
+
 -- ==========
 -- Transports
 -- ==========
@@ -30602,7 +30573,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Infernal 89
 ('8901','89','11','0','100','0','0','0','0','0','0','0','11','22707','0','2','11','19483','0','34','0','0','0','0','Infernal - Cast Root and Immolation on Spawn'),
 -- Imp 416 - PetAI
--- Chicken (620) - npc_chicken_cluck
 -- Searing Totem 2523 - TotemAI
 -- Earthbind Totem 2630 - TotemAI
 -- Ward of Laze 2667 - TotemAI
@@ -30897,6 +30867,21 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tainted Stoneskin Totem 18177 - TotemAI
 -- Corrupted Healing Stream Totem 18235 - TotemAI
 -- Corrupted Air Totem 18236 - TotemAI
+-- Rough Stone Statue 18372
+('1837201','18372','11','0','100','0','0','0','0','0','0','0','11','32253','11','0','0','0','0','0','0','0','0','0','Rough Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1837202','18372','29','0','100','0','12500','12500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Rough Stone Statue - Die on Generic Timer'),
+-- Coarse Stone Statue 18734
+('1873401','18734','11','0','100','0','0','0','0','0','0','0','11','32787','11','0','0','0','0','0','0','0','0','0','Coarse Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1873402','18734','29','0','100','0','12500','12500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Coarse Stone Statue - Die on Generic Timer'),
+-- Heavy Stone Statue 18735
+('1873501','18735','11','0','100','0','0','0','0','0','0','0','11','32788','11','0','0','0','0','0','0','0','0','0','Heavy Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1873502','18735','29','0','100','0','16500','16500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Heavy Stone Statue - Die on Generic Timer'),
+-- Solid Stone Statue 18736
+('1873601','18736','11','0','100','0','0','0','0','0','0','0','11','32790','11','0','0','0','0','0','0','0','0','0','Solid Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1873602','18736','29','0','100','0','16500','16500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Solid Stone Statue - Die on Generic Timer'),
+-- Dense Stone Statue 18737
+('1873701','18737','11','0','100','0','0','0','0','0','0','0','11','32791','11','0','0','0','0','0','0','0','0','0','Dense Stone Statue - Cast Stone Healing on Spawner on Spawn'),
+('1873702','18737','29','0','100','0','25500','25500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Dense Stone Statue - Die on Generic Timer'),
 -- Human Commoner 18927 - npc_gossip_npc
 -- Dwarf Commoner 19148 - npc_gossip_npc
 -- Blood Elf Commoner 19169 - npc_gossip_npc
@@ -30938,6 +30923,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Strength of Earth Totem 21992 - TotemAI
 -- Searing Totem 21995 - TotemAI
 -- Spitfire Totem 22091 - TotemAI
+-- Arena Promoter 22101 - NSR
 -- Flame Wave II 22228
 ('2222801','22228','11','0','100','0','0','0','0','0','0','0','11','38608','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Spawn'),
 ('2222802','22228','29','0','100','0','500','500','0','0','0','0','11','38610','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Generic Timer'),
@@ -30966,6 +30952,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fire Nova Totem 24320 - npc_fire_nova_totem
 -- Voodoo Servant 24529
 ('2452901','24529','0','0','100','1025','1000','3000','3000','7000','0','0','11','19874','1','0','0','0','0','0','0','0','0','0','Voodoo Servant - Cast Lightning Bolt'),
+-- Spirit of Competition 27217
 -- D.I.S.C.O.
 ('2798901','27989','11','0','100','0','0','0','0','0','0','0','11','50487','0','0','0','0','0','0','0','0','0','0','D.I.S.C.O. - Cast Create Disco Ball Visual Object on Spawn');
 
@@ -31083,12 +31070,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1643801','16438','0','0','100','1025','0','0','5000','10000','0','0','11','28265','1','0','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Scourge Strike'),
 ('1643802','16438','0','0','100','1025','1000','9000','9000','18000','0','0','11','589','1','32','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Shadow Word: Pain (Rank 1)'),
 -- Mouth of Kel'Thuzad 16995 - scourge_invasion_mouth
+-- Plagued Resident (27848) - NSR
 
 -- ============
 -- Hallow's End
 -- ============
--- Black Cat 22816
-('2281601','22816','6','0','100','0','0','0','0','0','0','0','11','39477','13','39','0','0','0','0','0','0','0','0','Black Cat - Cast Bad Luck on Death'),
 -- Headless Horseman - Fire (DND) 23537 - npc_headless_horseman_fire
 -- Shade of the Horseman 23543 - npc_shade_of_the_horseman
 -- Pumpkin Fiend (23545) - NSR
@@ -31459,6 +31445,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2596201','25962','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Fire Eater - Start Random Relay Script on Timer OOC'),
 -- Flame Eater 25994
 ('2599401','25994','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Flame Eater - Start Random Relay Script on Timer OOC');
+-- Summer Scorchling 26401
 -- Festival Scorchling 26520
 
 -- =======================================================
@@ -31632,6 +31619,10 @@ INSERT INTO dbscript_random_templates (id, `type`, target_id, chance, comments) 
 (19, 0, 1660, 0, 'Warden Thelwater 1719 - OOC Texts'),
 (19, 0, 1661, 0, 'Warden Thelwater 1719 - OOC Texts'),
 (19, 0, 1662, 0, 'Warden Thelwater 1719 - OOC Texts'),
+(21, 0, 39, 0, 'Gryan Stoutmantle - Random OOC Texts'),
+(21, 0, 40, 0, 'Gryan Stoutmantle - Random OOC Texts'),
+(22, 0, 43, 0, 'Captain Danuvin - Random OOC Texts'),
+(22, 0, 44, 0, 'Captain Danuvin - Random OOC Texts'),
 
 (896, 0, 995, 0, 'Greishan Ironstove 3291 - Random OOC Texts'),
 (896, 0, 996, 0, 'Greishan Ironstove 3291 - Random OOC Texts'),
