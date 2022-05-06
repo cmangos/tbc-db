@@ -131,7 +131,7 @@ INSERT INTO `creature_movement` (`Id`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH,6,-11150.508,546.6263,40.746307,100, 1000, 0),
 (@PATH,7,-11150.508,546.6263,40.746307,0.925024,5000,0),
 (@PATH,8,-11145.182,550.96234,44.038548,100, 0, 0),
-(@PATH,9,-11143.321,551.0007,44.9791,100, 0, 0), -- Custom d
+(@PATH,9,-11143.321,551.0007,44.9791,100, 0, 0), -- Custom 
 (@PATH,10,-11142.32,550.67505,45.527344,100, 0, 0),
 (@PATH,11,-11138.388,548.9962,46.550243,100, 0, 0),
 (@PATH,12,-11139.768,547.17053,46.82856,100, 0, 0),
@@ -195,7 +195,3 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 ('705202', '51000', '0', '21', '0', '0', '0', '0', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Remove Active'),
 ('705202', '51000', '1', '25', '0', '0', '0', '0', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Remove Run'),
 ('705202', '51000', '2', '20', '2', '0', '0', '0', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Move');
-
- 
- -- Custom Waypoint zwischen 7 und 8
- text überprüfen erneut evtl. nicht entry based sondern guid based buddy entry nehmen
