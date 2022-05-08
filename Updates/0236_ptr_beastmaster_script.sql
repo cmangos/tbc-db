@@ -1,4 +1,5 @@
 DELETE FROM `npc_text_broadcast_text` WHERE `Id` BETWEEN 25327 AND 25344;
+DELETE FROM `npc_text_broadcast_Text` WHERE `Id` IN (10622, 10627);
 INSERT INTO `npc_text_broadcast_text` (`Id`, `Prob0`, `BroadcastTextId0`) VALUES
 (25327, 1, 25327),
 (25328, 1, 25328),
@@ -17,18 +18,21 @@ INSERT INTO `npc_text_broadcast_text` (`Id`, `Prob0`, `BroadcastTextId0`) VALUES
 (25341, 1, 25341),
 (25342, 1, 25342),
 (25343, 1, 25343),
-(25344, 1, 25344);
+(25344, 1, 25344),
+(10622, 1, 10622),
+(10627, 1, 10627);
 
-DELETE FROM `gossip_menu` WHERE `entry` IN (26301, 26302);
+DELETE FROM `gossip_menu` WHERE `entry` IN (26301, 26302, 26303);
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `condition_id`) VALUES
 (26301, 25329, 0),
-(26302, 25328, 0);
+(26302, 25328, 0),
+(26303, 10622, 0);
 
-DELETE FROM `gossip_menu_option` WHERE `menu_id` IN (26301, 26302);
+DELETE FROM `gossip_menu_option` WHERE `menu_id` IN (26301, 26302, 26303);
 INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_text`, `option_broadcast_text`, `option_id`, `action_menu_id`, `action_script_id`, `condition_id`, `npc_option_npcflag`) VALUES
 (26301, 0, "Stable", 0, 14, 0, 0, 15, 1),
 (26301, 1, "New Pet", 0, 1, 26302, 0, 15, 1),
-(26301, 2, "Untrain Pet", 0, 17, 0, 0, 15, 16),
+(26301, 2, "Untrain Pet", 0, 1, 26303, 0, 15, 16),
 (26302, 0, NULL, 25330, 1, -1, 2630701, 15, 1),
 (26302, 1, NULL, 25331, 1, -1, 2630702, 15, 1),
 (26302, 2, NULL, 25332, 1, -1, 2630703, 15, 1),
@@ -43,7 +47,8 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_text`, `option_broadc
 (26302, 11, NULL, 25341, 1, -1, 2630712, 15, 1),
 (26302, 12, NULL, 25342, 1, -1, 2630713, 15, 1),
 (26302, 13, NULL, 25343, 1, -1, 2630714, 15, 1),
-(26302, 14, NULL, 25344, 1, -1, 2630715, 15, 1);
+(26302, 14, NULL, 25344, 1, -1, 2630715, 15, 1),
+(26303, 0, NULL, 10627, 17, 0, 0, 15, 16);
 
 DELETE FROM `dbscripts_on_gossip` WHERE `id` BETWEEN 2630701 AND 2630715;
 INSERT INTO `dbscripts_on_gossip` (`id`, `command`, `datalong`, `data_flags`, `comments`) VALUES
