@@ -194,6 +194,37 @@ UPDATE `npc_vendor` SET `slot` = 74 WHERE `entry` IN (14753,14754) AND `item` IN
 UPDATE `creature_template` SET `VendorTemplateId` = 451 WHERE `entry` = 14964; -- food was limited to 5, 14963,15124,15125 already has this template set
 DELETE FROM `npc_vendor` WHERE `entry` = 14964;
 
+-- add core update s2448
+ALTER TABLE dbscripts_on_creature_death ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_creature_death ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+ALTER TABLE dbscripts_on_creature_movement ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_creature_movement ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+ALTER TABLE dbscripts_on_event ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_event ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+ALTER TABLE dbscripts_on_go_template_use ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_go_template_use ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+ALTER TABLE dbscripts_on_go_use ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_go_use ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+ALTER TABLE dbscripts_on_gossip ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_gossip ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+ALTER TABLE dbscripts_on_quest_end ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_quest_end ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+ALTER TABLE dbscripts_on_quest_start ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_quest_start ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+ALTER TABLE dbscripts_on_relay ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_relay ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+ALTER TABLE dbscripts_on_spell ADD COLUMN `speed` float NOT NULL DEFAULT '0' AFTER `o`;
+ALTER TABLE dbscripts_on_spell ADD COLUMN `datafloat` float NOT NULL DEFAULT '0' AFTER `dataint4`;
+
+-- add core update 2449
+ALTER TABLE spawn_group_spawn ADD COLUMN `Chance` INT UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Chance for a spawn to occur';
+
+-- add core update 2450
+ALTER TABLE `quest_template` ADD COLUMN `MaxLevel` tinyint(3) unsigned NOT NULL DEFAULT '255' AFTER MinLevel;
+
+-- fix core revision
+ALTER TABLE db_version CHANGE COLUMN required_s2447_01_mangos_worldstate_name required_s2450_01_mangos_quest_maxlevel bit;
+
 -- maybe removed too
 UPDATE `quest_template` SET `RequiredMinRepFaction` = 890, `RequiredMinRepValue` = 3000 WHERE `entry` IN (7863,7864,7865);
 UPDATE `quest_template` SET `MaxLevel` = 34 WHERE `entry` = 7863;
