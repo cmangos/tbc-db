@@ -282,7 +282,7 @@ jobs:
           echo "GIT_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
           $projectNames = "${{github.repository}}".Split("/")[1]
           $expension="${projectNames}".Split("-")[0]
-          echo "EXPENSION_NAME=${expension}" >> $env:GITHUB_ENV
+          echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
 
       - name: Notify
         uses: rjstone/discord-webhook-notify@v1.0.4
@@ -312,7 +312,7 @@ jobs:
           echo "GIT_SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
           $projectNames = "${{github.repository}}".Split("/")[1]
           $expension="${projectNames}".Split("-")[0]
-          echo "EXPENSION_NAME=${expension}" >> $env:GITHUB_ENV
+          echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
 
       - name: Notify
         uses: rjstone/discord-webhook-notify@v1.0.4
