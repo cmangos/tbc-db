@@ -294,8 +294,9 @@ jobs:
           details: |
             - **Branch:** ${{env.GIT_BRANCH}}
             - **Commit:** [${{github.repository}}/${{env.GIT_SHORT_SHA}}](${{github.server_url}}/${{ github.repository }}/commit/${{github.sha}})
-            - **All exported sql:** [Latest sql file](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-db-all.zip)
-            - **Ready to use mysql server:** [For windows x64](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-db-mysql-server.zip)
+            - **All exported sql (You can directly apply them to their respective DB):** [Latest sql file](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-all-db.zip)
+            - **World sql (You can directly apply it to world DB):** [Latest sql file](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-world-db.zip)
+            - **Ready to use mysql server (root password is cmangos, dont forget to change it):** [For windows x64](${{github.server_url}}/${{ github.repository }}/releases/download/latest/${{env.EXPENSION_NAME}}-db-mysql-server.zip)
           footer: Thank @${{github.event.pusher.name}}!
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK_RELEASE }}
           avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
