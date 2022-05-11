@@ -280,6 +280,7 @@ jobs:
       - name: Set environmental variables
         run: |
           echo "GIT_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+          echo "GIT_SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
           projectNames="${GITHUB_REPOSITORY#*/}"
           expension="${projectNames%-*}"
           echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
@@ -290,7 +291,7 @@ jobs:
           severity: info
           username: ${{ github.event.repository.name }}
           description: |
-            **${{env.EXPENSION_NAME}}-db have just been released**
+            **${{env.EXPENSION_NAME}}-db prebuilt have just been released**
           details: |
             - **Branch:** ${{env.GIT_BRANCH}}
             - **Commit:** [${{github.repository}}/${{env.GIT_SHORT_SHA}}](${{github.server_url}}/${{ github.repository }}/commit/${{github.sha}})
