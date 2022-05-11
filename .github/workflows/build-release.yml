@@ -269,16 +269,42 @@ jobs:
           overwrite: true
           file_glob: true
 
-  notify:
-    name: Discord Notification
+  notify-success:
+    name: Discord release successfully notification
     runs-on: ubuntu-20.04
     needs:
       - build-check
       - build
+
+    steps:
+      - name: Set environmental variables
+        run: |
+          echo "GIT_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+          echo "GIT_SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+
+      - name: Notify
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        with:
+          severity: error
+          username: ${{ github.event.repository.name }}
+          description: |
+            **${{env.EXPENSION_NAME}}-db have just been released**
+          details: |
+            - **Branch:** ${{env.GIT_BRANCH}}
+            - **Commit:** [${{github.repository}}/${{env.GIT_SHORT_SHA}}](${{github.server_url}}/${{ github.repository }}/commit/${{github.sha}})
+            - **All exported sql:** [Latest sql file](${{github.server_url}}/${{ github.repository }}/release/${{ env.EXPENSION_NAME }}-db-all.zip)
+            - **Ready to use mysql server:** [For windows x64](${{github.server_url}}/${{ github.repository }}/release/${{ env.EXPENSION_NAME }}-db-mysql-server.zip)
+          footer: Thank @${{github.event.pusher.name}}!
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK_RELEASE }}
+          avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+
+  notify-failure:
+    name: Discord Notification failure
+    runs-on: ubuntu-20.04
     if: failure()
 
     steps:
-      - name: Env
+      - name: Set environmental variables
         run: |
           echo "GIT_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
           echo "GIT_SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
