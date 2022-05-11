@@ -280,8 +280,8 @@ jobs:
       - name: Set environmental variables
         run: |
           echo "GIT_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
-          $projectNames = "${{github.repository}}".Split("/")[1]
-          $expension="${projectNames}".Split("-")[0]
+          projectNames="${GITHUB_REPOSITORY#*/}"
+          expension="${projectNames%-*}"
           echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
 
       - name: Notify
@@ -310,8 +310,8 @@ jobs:
         run: |
           echo "GIT_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
           echo "GIT_SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
-          $projectNames = "${{github.repository}}".Split("/")[1]
-          $expension="${projectNames}".Split("-")[0]
+          projectNames="${GITHUB_REPOSITORY#*/}"
+          expension="${projectNames%-*}"
           echo "EXPENSION_NAME=${expension}" >> $GITHUB_ENV
 
       - name: Notify
