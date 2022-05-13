@@ -195,3 +195,5 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 ('705202', '51000', '0', '21', '0', '0', '0', '0', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Remove Active'),
 ('705202', '51000', '1', '25', '0', '0', '0', '0', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Remove Run'),
 ('705202', '51000', '2', '20', '2', '0', '0', '0', '0', '0', '0','0','0', '0','Defias Patrol - Raven - Move');
+
+UPDATE `creature_movement` SET `comment` = 'Custom Point, MMAP Issues' WHERE `id` = 66988 AND `point` IN (9,34);
