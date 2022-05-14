@@ -31465,7 +31465,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Midsummer Celebrant 16781
 ('1678101','16781','1','0','100','1','0','20000','5000','20000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Midsummer Celebrant - Talk Emote'),
 ('1678102','16781','1','0','100','1','0','60000','5000','60000','0','0','5','4','0','0','0','0','0','0','0','0','0','0','Midsummer Celebrant - Cheer Emote'),
--- Dancing Flames (25305) - npc_dancing_flames
+-- Dancing Flames 25305
+('2530501','25305','11','0','100','0','0','0','0','0','0','0','11','45427','0','0','5','10','0','0','0','0','0','0','Dancing Flames - Cast Brazier Dance and Emote Dance on Spawn'),
+('2530502','25305','22','0','100','1','34','0','0','0','0','0','11','47057','6','0','0','0','0','0','0','0','0','0','Dancing Flames - Cast Fiery Seduction on Player on Receive Emote Dance'),
+('2530503','25305','22','0','100','1','17','0','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Dancing Flames - Bow on Receive Emote Bow'),
+('2530504','25305','22','0','100','1','101','0','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','Dancing Flames - Wave on Receive Emote Wave'),
+('2530505','25305','22','0','100','1','58','0','0','0','0','0','5','33','0','0','0','0','0','0','0','0','0','0','Dancing Flames - shy on Receive Emote Kiss'),
+('2530506','25305','22','0','100','1','329','0','0','0','0','0','5','11','0','0','0','0','0','0','0','0','0','0','Dancing Flames - shy on Receive Emote Joke/Silly'),
 -- [DNT] Torch Tossing Target Bunny Controller 25536 - npc_torch_tossing_bunny_controller
 -- Fire Eater 25962
 ('2596201','25962','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Fire Eater - Start Random Relay Script on Timer OOC'),
