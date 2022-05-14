@@ -31476,9 +31476,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Fire Eater 25962
 ('2596201','25962','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Fire Eater - Start Random Relay Script on Timer OOC'),
 -- Flame Eater 25994
-('2599401','25994','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Flame Eater - Start Random Relay Script on Timer OOC');
+('2599401','25994','1','0','100','1','30000','45000','30000','45000','0','0','53','-12009','0','0','0','0','0','0','0','0','0','0','Flame Eater - Start Random Relay Script on Timer OOC'),
+-- Big Dancing Flames 26267
+('2626701','26267','11','0','100','0','0','0','0','0','0','0','11','46828','0','0','5','10','0','0','0','0','0','0','Big Dancing Flames - Cast Brazier Dance, Big and Emote Dance on Spawn');
 -- Summer Scorchling 26401
 -- Festival Scorchling 26520
+
 
 -- =======================================================
 -- Current Complete Summons Table for all Accepted Scripts
