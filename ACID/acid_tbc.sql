@@ -23098,13 +23098,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2112801','21128','0','0','100','1025','1300','4900','12100','21300','0','0','11','34984','5','544','0','0','0','0','0','0','0','0','Coilfang Ray - Cast Psychic Horror'),
 -- Skar'this the Heretic 22421 - npc_quest_attunement
 -- Ahune (25740) - boss_ahune
--- Ahunite Hailstone
+-- Ahunite Hailstone 25755
 ('2575501','25755','11','0','100','2','0','0','0','0','0','0','11','46542','0','0','0','0','0','0','0','0','0','0','Ahunite Hailstone (Normal) - Cast Chilling Aura on Spawn'),
 ('2575502','25755','11','0','100','4','0','0','0','0','0','0','11','46885','0','0','0','0','0','0','0','0','0','0','Ahunite Hailstone (Heroic) - Cast Chilling Aura on Spawn'),
--- Ahunite Coldwave
+-- Ahunite Coldwave 25756
 ('2575601','25756','0','0','100','1027','1000','1000','4000','5000','0','0','11','46406','1','0','0','0','0','0','0','0','0','0','Ahunite Coldwave (Normal) - Cast Bitter Blast'),
 ('2575602','25756','0','0','100','1029','1000','1000','4000','5000','0','0','11','46887','1','0','0','0','0','0','0','0','0','0','Ahunite Coldwave (Heroic) - Cast Bitter Blast'),
--- Ahunite Frostwind
+-- Ahunite Frostwind 25757
 ('2575701','25757','0','0','100','1025','3000','6000','4000','7000','0','0','11','46568','1','0','0','0','0','0','0','0','0','0','Ahunite Frostwind - Cast Wind Buffet'),
 -- Frozen Core 25865 - npc_frozen_core
 -- Ahune Ice Spear Bunny 25985 - npc_ice_spear_bunny
