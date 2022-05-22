@@ -59,3 +59,12 @@ UPDATE `creature_template` SET `UnitFlags` = 256+33554432 WHERE `entry` IN (
 26339 -- Frozen Core (1)
 );
 
+UPDATE `creature_template` SET `ExtraFlags` = 1 WHERE `entry` IN (
+25865, -- Frozen Core
+26339 -- Frozen Core (1)
+);
+
+-- Currently Lacks Death Prevention so make him Instance Bind too, non issue
+UPDATE `creature_template` SET `HeroicEntry` = 26338, `ExtraFlags` = 1 WHERE `entry` = 25740; -- Ahune	The Frost Lord
+UPDATE `creature_template` SET `ExtraFlags` = 1 WHERE `entry` = 26338; -- Ahune (1)	The Frost Lord
+
