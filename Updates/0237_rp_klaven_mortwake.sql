@@ -64,18 +64,18 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 UPDATE `creature` SET `position_x`='-11129.781', `position_y`='548.0863', `position_z`='61.728893', `orientation`='1.98334' WHERE (`guid`='66995');
 UPDATE `creature` SET `position_x`='-11131.747', `position_y`='547.9329', `position_z`='61.673286', `orientation`='1.92729' WHERE (`guid`='66994');
 
-DELETE FROM `spawn_group` WHERE `Id` = '31';
+DELETE FROM `spawn_group` WHERE `Id` = '19003';
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES 
-('31', 'Westfall - Defias Tower Sentry', '0', '2', '0', '9');
+('19003', 'Westfall - Defias Tower Sentry', '0', '2', '0', '0');
 
-DELETE FROM `spawn_group_formation` WHERE `Id` = '31';
+DELETE FROM `spawn_group_formation` WHERE `Id` = '19003';
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES 
-('31', '1', '2', '0', '66995', '2', 'Westfall - Defias Tower Sentry');
+('19003', '1', '2', '0', '66995', '2', 'Westfall - Defias Tower Sentry');
 
-DELETE FROM `spawn_group_spawn` WHERE `Id` = '31';
+DELETE FROM `spawn_group_spawn` WHERE `Id` = '19003';
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES 
-('31', '66995', '0'),
-('31', '66994', '1');
+('19003', '66995', '0'),
+('19003', '66994', '1');
 
 SET @PATH := 66995; -- creatures
 DELETE FROM waypoint_path WHERE `PathId` = @PATH;
