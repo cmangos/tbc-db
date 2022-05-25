@@ -23107,6 +23107,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ahunite Frostwind 25757
 ('2575701','25757','0','0','100','1025','3000','6000','4000','7000','0','0','11','46568','1','0','0','0','0','0','0','0','0','0','Ahunite Frostwind - Cast Wind Buffet'),
 -- Frozen Core 25865 - npc_frozen_core
+-- Shaman Beam Bunny 000 - 25964
+('2596401','25964','11','0','100','0','0','0','0','0','0','0','53','20598','0','1','0','0','0','0','0','0','0','0','Shaman Beam Bunny 000 - START_RELAY_SCRIPT on Spawn'),
+('2596402','25964','8','0','100','0','45964','-1','0','0','0','0','11','46333','0','0','11','46336','0','0','0','0','0','0','Shaman Beam Bunny 000 - Cast Find Opening Beam End and Beam Attack against Ahune spellhit'),
+('2596403','25964','29','0','100','0','82000','82000','0','0','0','0','53','20601','0','0','0','0','0','0','0','0','0','0','Shaman Beam Bunny 000 - START_RELAY_SCRIPT on Timer'),
+-- Shaman Beam Bunny 001 - 25965
+('2596501','25965','11','0','100','0','0','0','0','0','0','0','53','20599','0','1','0','0','0','0','0','0','0','0','Shaman Beam Bunny 001 - START_RELAY_SCRIPT on Spawn'),
+('2596502','25965','8','0','100','0','45964','-1','0','0','0','0','11','46333','0','0','11','46336','0','0','0','0','0','0','Shaman Beam Bunny 001 - Cast Find Opening Beam End and Beam Attack against Ahune spellhit'),
+-- Shaman Beam Bunny 002 - 25966
+('2596601','25966','11','0','100','0','0','0','0','0','0','0','53','20600','0','1','0','0','0','0','0','0','0','0','Shaman Beam Bunny 002 - START_RELAY_SCRIPT on Spawn'),
+('2596602','25966','8','0','100','0','45964','-1','0','0','0','0','11','46333','0','0','11','46336','0','0','0','0','0','0','Shaman Beam Bunny 001 - Cast Find Opening Beam End and Beam Attack against Ahune spellhit'),
+-- Shaman Bonfire Bunny 000 - 25971
+('2597101','25971','8','0','100','0','46341','-1','0','0','0','0','53','20598','0','0','0','0','0','0','0','0','0','0','Shaman Bonfire Bunny 000 - START_RELAY_SCRIPT on Find Opening Visual Trigger spellhit'),
+-- Shaman Bonfire Bunny 001 - 25972
+('2597201','25972','8','0','100','0','46341','-1','0','0','0','0','53','20599','0','0','0','0','0','0','0','0','0','0','Shaman Bonfire Bunny 001 - START_RELAY_SCRIPT on Find Opening Visual Trigger spellhit'),
+-- Shaman Bonfire Bunny 002 - 25973
+('2597301','25973','8','0','100','0','46341','-1','0','0','0','0','53','20600','0','0','0','0','0','0','0','0','0','0','Shaman Bonfire Bunny 002 - START_RELAY_SCRIPT on Find Opening Visual Trigger spellhit'),
 -- Ahune Ice Spear Bunny 25985 - npc_ice_spear_bunny
 
 

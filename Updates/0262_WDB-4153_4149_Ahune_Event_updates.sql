@@ -28,6 +28,33 @@ UPDATE broadcast_text SET ChatTypeId = 3 WHERE Id BETWEEN 24930 AND 24932;
 -- 24931	Ahune Retreats.  His defenses diminish.
 -- 24932	Ahune will soon resurface.
 
+-- Event starts from objects 'Ice Stone 187882' gossip instead of quest script
+-- q.11691 Summon Ahune
+UPDATE quest_template SET prevQuestId = 11696, RewSpellCast = 0, CompleteScript = 11691 WHERE entry = 11691;
+DELETE FROM dbscripts_on_quest_end WHERE id = 11691;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `condition_id`, `comments`) VALUES
+(11691, 3000, 0, 15, 45930, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Ahune - Summoning Rhyme Spell, make bonfire'); -- tbc-db only as gossip does not work (instance file)
+
+-- Ice Stone 187882
+UPDATE gameobject_template SET Data3 = 11389, `flags` = 0 WHERE entry = 187882;
+DELETE FROM gossip_menu WHERE entry = 11389;
+INSERT INTO gossip_menu (entry,text_id) VALUES
+(11389,15864);
+DELETE FROM npc_text WHERE id IN (15864);
+DELETE FROM npc_text_broadcast_text WHERE Id IN (15864);
+INSERT INTO npc_text_broadcast_text (Id, Prob0, BroadcastTextId0) VALUES
+(15864, 0, 25213);
+DELETE FROM gossip_menu_option WHERE menu_id = 11389;
+INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
+(11389,1,0,'Disturb the stone and summon Lord Ahune.',40443,1,1,-1,0,1138901,0,0,NULL,0,0);
+-- gossip Scripts should also use ID+01
+DELETE FROM dbscripts_on_gossip WHERE `id` IN (7540,7520); -- from instance file for correct delete
+UPDATE gossip_menu_option SET action_script_id = 754001 WHERE menu_id = 7540;
+UPDATE gossip_menu_option SET action_script_id = 752001 WHERE menu_id = 7520;
+
+-- ========
+-- TBC ONLY
+-- ========
 -- Ahunite Frostwind 25757,26341 - https://tbc.wowhead.com/npc=25757/ahunite-frostwind
 UPDATE creature_template SET UnitClass = 2, MinLevelMana = 3155, MaxLevelMana = 3155, `Healthmultiplier` = 0.225, `MinLevelHealth` = 1258, `MaxLevelHealth` = 1258 WHERE entry = 25757;
 UPDATE creature_template SET UnitClass = 2, MinLevelMana = 3155, MaxLevelMana = 3155, `Healthmultiplier` = 0.300, `MinLevelHealth` = 1677, `MaxLevelHealth` = 1677 WHERE entry = 26341;
