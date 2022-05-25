@@ -23124,6 +23124,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shaman Bonfire Bunny 002 - 25973
 ('2597301','25973','8','0','100','0','46341','-1','0','0','0','0','53','20600','0','0','0','0','0','0','0','0','0','0','Shaman Bonfire Bunny 002 - START_RELAY_SCRIPT on Find Opening Visual Trigger spellhit'),
 -- Ahune Ice Spear Bunny 25985 - npc_ice_spear_bunny
+-- [PH] Spank Target Bunny 26190
+('2619001','26190','8','0','100','1','46735','-1','0','0','0','0','11','46734','6','0','0','0','0','0','0','0','0','0','Spank Target Bunny - Cast Spank - Knock To on Spank - Force Bunny To Knock You To spellhit'),
 
 
 
