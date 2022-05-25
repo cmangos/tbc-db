@@ -20,7 +20,7 @@ INSERT INTO npc_text_broadcast_text (Id, Prob0, BroadcastTextId0) VALUES
 (12572, 0, 25373);
 
 -- Shaman Beam Bunny 000 - 003
-UPDATE creature_template SET MovementType = 3 WHERE entry IN (25964,25965,25966);
+UPDATE creature_template SET MovementType = 3, `UnitFlags` = 33554432 WHERE entry IN (25964,25965,25966);
 
 -- text updates
 UPDATE broadcast_text SET ChatTypeId = 3 WHERE Id BETWEEN 24930 AND 24932;
@@ -73,13 +73,15 @@ INSERT INTO `item_template` (`entry`, `class`, `subclass`, `unk0`, `name`, `disp
 REPLACE INTO `gameobject_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
 ('187892','35557','50','2','2','2','0','Huge Snowball'), -- https://tbc.wowhead.com/object=187892/ice-chest, https://tbc.wowhead.com/object=188192/ice-chest
 ('187892','35720','50','2','6','6','0','Lord of Frost\'s Private Label'), -- https://tbc.wowhead.com/object=188191/ice-chest, https://tbc.wowhead.com/object=188124/ice-chest
-('187892','35557','50','2','2','2','0','Huge Snowball'),
-('187892','35720','50','2','6','6','0','Lord of Frost\'s Private Label');
+('188124','35557','50','2','2','2','0','Huge Snowball'),
+('188124','35720','50','2','6','6','0','Lord of Frost\'s Private Label');
 
 -- item drop 35512 'Pocket Full of Snow'
 DELETE FROM `item_loot_template` WHERE entry=35512; -- https://tbc.wowhead.com/item=35512/pocket-full-of-snow#contains
 INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
 ('35512','17202','100','0','2','5','0','Snowball');
+
+UPDATE `creature_template` SET `UnitFlags` = 33554944 WHERE `entry` = 26190; -- [PH] Spank Target Bunny [Entry 26190]
 
 -- ========
 -- TBC ONLY

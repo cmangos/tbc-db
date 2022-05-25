@@ -153,8 +153,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+134, 17964, 547, 3, -27.17291, 1.65894, -0.7652907, 1.815142, 7200, 7200, 0, 0, 0, 0), -- Wastewalker Worker
 (@CGUID+135, 0, 547, 3, -96.44904, -62.15407, -1.792045, 0.1396263, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+136, 17964, 547, 3, -61.51235, -20.17615, -2.663957, 4.18879, 7200, 7200, 0, 0, 0, 0), -- Wastewalker Worker
--- (@CGUID+137, RE-USE
--- (@CGUID+138, RE-USE
+(@CGUID+137, 25961, 547, 3, -109.224, -120.0521, -2.982424, 5.113815, 7200, 7200, 0, 0, 0, 0), -- Earthen Ring Totem
+(@CGUID+138, 25961, 547, 3, -92.68961, -119.6279, -2.270359, 4.223697, 7200, 7200, 0, 0, 0, 0), -- Earthen Ring Totem
 -- (@CGUID+139, RE-USE
 (@CGUID+140, 17964, 547, 3, -73.61772, -182.1575, -5.111982, 5.148721, 7200, 7200, 0, 0, 0, 0), -- Wastewalker Worker
 (@CGUID+141, 0, 547, 3, -60.16751, -176.9379, -4.0791, 4.660029, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
@@ -227,7 +227,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+208, 21128, 547, 3, -71.68305, -553.9335, -0.7895827, 2.841635, 7200, 7200, 2, 0, 0, 1), -- Coilfang Ray
 (@CGUID+209, 21128, 547, 3, -89.3931, -509.1571, -1.50806, 4.328416, 7200, 7200, 2, 0, 0, 1), -- Coilfang Ray
 (@CGUID+210, 22421, 547, 2, -296.4931, -459.0429, 6.146773, 0.7679449, 86400, 86400, 0, 0, 0, 0), -- Skar'this the Heretic
-(@CGUID+211, 25697, 547, 3, -92.4572, -110.664, -2.86676, 2.40855, 86400, 86400, 0, 0, 0, 0), -- Luma Skymother
+(@CGUID+211, 25697, 547, 3, -92.45719, -110.6642, -2.866759, 2.408554, 86400, 86400, 0, 0, 0, 0), -- Luma Skymother
 (@CGUID+212, 25710, 547, 3, 132.721, -116.256, -1.59053, 3.85833, 86400, 86400, 0, 0, 0, 0), -- Numa Cloudsister
 (@CGUID+213, 25745, 547, 3, -96.6415, -230.886, 4.78096, 1.41372, 86400, 86400, 0, 0, 0, 0), -- [PH] Ahune Summon Loc Bunny
 (@CGUID+214, 25746, 547, 3, -96.8723, -212.842, -1.14914, 4.15388, 86400, 86400, 0, 0, 0, 0), -- [PH] Ahune Loot Loc Bunny
@@ -515,7 +515,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (25697, 0, 0, 1, 0, 0, NULL), -- Luma Skymother
 (25745, 0, 0, 1, 0, 0, NULL), -- [PH] Ahune Summon Loc Bunny
 (25746, 0, 0, 1, 0, 0, NULL), -- [PH] Ahune Loot Loc Bunny
-(25754, 0, 0, 1, 0, 0, NULL), -- Earthen Ring Flamecaller
+(25754, 0, 1, 1, 0, 0, NULL), -- Earthen Ring Flamecaller
 (25952, 0, 0, 1, 0, 0, '46314'), -- Slippery Floor Bunny
 (25971, 0, 0, 1, 0, 0, NULL), -- Shaman Bonfire Bunny 000
 (25972, 0, 0, 1, 0, 0, NULL), -- Shaman Bonfire Bunny 001
@@ -645,6 +645,9 @@ INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
 -- ======
 
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+(@CGUID+23, 1), -- [PH] Spank Target Bunny
+(@CGUID+137, 1), -- Earthen Ring Totem
+(@CGUID+138, 1), -- Earthen Ring Totem
 (@CGUID+211, 1), -- Luma Skymother (Midsummer Fire Festival)
 (@CGUID+212, 1), -- Numa Cloudsister (Midsummer Fire Festival)
 (@CGUID+213, 1), -- [PH] Ahune Summon Loc Bunny (Midsummer Fire Festival)
@@ -936,22 +939,22 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+103, @OGUID+59, -1), -- Anchient Lichen (181278)
 (@SGGUID+103, @OGUID+60, -1), -- Anchient Lichen (181278)
 (@SGGUID+103, @OGUID+61, -1), -- Anchient Lichen (181278)
-(@SGGUID+104,@OGUID+1, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+2, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+40, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+41, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+42, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+43, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+44, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+45, -1), -- Felweed (181270)
-(@SGGUID+105,@OGUID+3, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+4, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+5, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+6, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+46, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+47, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+48, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+49, -1); -- Ragveil/Flame Cap
+(@SGGUID+104, @OGUID+1, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+2, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+40, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+41, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+42, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+43, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+44, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+45, -1), -- Felweed (181270)
+(@SGGUID+105, @OGUID+3, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+4, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+5, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+6, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+46, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+47, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+48, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+49, -1); -- Ragveil/Flame Cap
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+1, 2, 4, 0, @SGGUID+1, 4, 'Slave Pens - Coilfang Champion (2) Patrol 000'),
