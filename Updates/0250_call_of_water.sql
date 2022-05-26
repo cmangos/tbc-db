@@ -6,41 +6,14 @@ UPDATE `quest_template` SET `CompleteScript`='0' WHERE `entry`='63';
 -- QuestID 100 'Call of Water' Start Script
 DELETE FROM dbscripts_on_quest_start WHERE id = '100';
 INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
-(100,0,1,45,5897,0,0,5897,18262,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
-(100,0,2,45,5897,0,0,5897,18263,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
-(100,0,3,45,5897,0,0,5897,18264,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
-(100,0,4,45,5897,0,0,5897,18265,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
-(100,0,5,45,5897,0,0,5897,18273,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
-(100,0,6,45,5897,0,0,5897,18274,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
-(100,0,7,45,5897,0,0,5897,18275,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
-(100,0,8,45,5897,0,0,5897,18276,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
-(100,1000,0,9,15176,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Respawn Gameobject'),
-(100,13000,0,9,15175,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Respawn Gameobject'),
-(100,12000,0,31,5895,10,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Check for spawn'),
-(100,15000,0,10,5895,0,0,0,0,8,0,0,0,0,0,417.04,1822.66,12.61,1.483,0,0,'Call of Water - Spawn Minor Manifestation of Water'),
-(100,19000,0,10,6748,0,6,0,0,8,0,0,0,0,0,393.13,1860.64,11.22,5.577,0,0,'Call of Water - Spawn Water Spirit - Path 6'),
-(100,19000,0,10,6748,0,7,0,0,8,0,0,0,0,0,405.81,1843.58,12.54,6.161,0,0,'Call of Water - Spawn Water Spirit - Path 7'),
-(100,19000,0,10,6748,0,10,0,0,8,0,0,0,0,0,424.75,1840.46,12.25,2.945,0,0,'Call of Water - Spawn Water Spirit - Path 10'),
-(100,20000,0,10,6748,0,4,0,0,8,0,0,0,0,0,404.85,1863.62,11.20,5.135,0,0,'Call of Water - Spawn Water Spirit - Path 4'),
-(100,20000,0,10,6748,0,9,0,0,8,0,0,0,0,0,424.45,1818.22,10.46,1.964,0,0,'Call of Water - Spawn Water Spirit - Path 9'),
-(100,22000,0,10,6748,0,3,0,0,8,0,0,0,0,0,431.41,1849.24,11.39,3.516,0,0,'Call of Water - Spawn Water Spirit - Path 3'),
-(100,22000,0,10,6748,0,8,0,0,8,0,0,0,0,0,400.15,1827.50,10.46,0.813,0,0,'Call of Water - Spawn Water Spirit - Path 8'),
-(100,22000,0,10,6748,0,11,0,0,8,0,0,0,0,0,413.20,1831.29,10.46,1.468,0,0,'Call of Water - Spawn Water Spirit - Path 11'),
-(100,24000,0,10,6748,0,2,0,0,8,0,0,0,0,0,439.28,1837.30,12.42,2.934,0,0,'Call of Water - Spawn Water Spirit - Path 2'),
-(100,24000,0,10,6748,0,5,0,0,8,0,0,0,0,0,418.96,1854.28,10.97,4.339,0,0,'Call of Water - Spawn Water Spirit - Path 5'),
-(100,25000,0,10,6748,0,12,0,0,8,0,0,0,0,0,434.02,1862.14,10.89,3.925,0,0,'Call of Water - Spawn Water Spirit - Path 12'),
-(100,25000,0,10,6748,0,1,0,0,8,0,0,0,0,0,392.31,1847.33,12.36,6.068,0,0,'Call of Water - Spawn Water Spirit - Path 1');
+(100,0,0,45,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Start Relay Script');
 
 UPDATE `quest_template` SET `StartScript`='100' WHERE `entry`='100';
-
--- Condiions to check if creatures are in range
-INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `comments`) VALUES 
-('19100', '37', '5897', '50', 'Corrupt Water Spirit in Range');
 
 -- QuestID 1103 Call of Water End Script
 DELETE FROM dbscripts_on_quest_end WHERE id = '1103';
 INSERT INTO dbscripts_on_quest_end(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
-(1103,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Remove Standstate')
+(1103,0,0,28,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Remove Standstate'),
 (1103,0,0,21,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Set Active Object'),
 (1103,1000,0,0,0,0,0,0,0,0,3069,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Say Text'),
 (1103,4000,0,20,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Change Movement');
@@ -53,11 +26,11 @@ INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, dat
 UPDATE `quest_template` SET `StartScript`='96' WHERE `entry`='96';
 
 -- Relay Scripts
-DELETE FROM dbscripts_on_relay WHERE id IN (96, 5897);
+DELETE FROM dbscripts_on_relay WHERE id IN (96, 100, 5897);
 INSERT INTO dbscripts_on_relay(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 -- This relay Script starts when quest 96 is accepted or 5 minutes after the Corrupted Water Spirit got spawned
 (96,0,3,29,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Minor Manifestation of Water - Remove NPC Flags'),
-(96,0,2,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Minor Manifestation of Water - Start Movement'),
+(96,0,2,20,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Minor Manifestation of Water - Start Movement'),
 (96,0,1,35,5,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Minor Manifestation of Water - Send AI Event'),
 -- Actual spawn script
 (100,0,1,45,5897,0,0,5897,18262,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
@@ -70,8 +43,8 @@ INSERT INTO dbscripts_on_relay(id, delay, priority, command, datalong, datalong2
 (100,0,8,45,5897,0,0,5897,18276,16,0,0,0,0,0,0,0,0,0,0,19100,'Call of Water - Corrupt Water Spirit - Start Relay Script'),
 (100,1000,0,9,15176,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Respawn Gameobject'),
 (100,12000,0,9,15175,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Respawn Gameobject'),
-(100,13000,0,31,5895,10,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Check for spawn'),
-(100,15000,0,10,5895,0,0,0,0,8,0,0,0,0,0,417.04,1822.66,12.61,1.483,0,0,'Call of Water - Spawn Minor Manifestation of Water'),
+(100,13000,0,31,5895,15,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Check for spawn'),
+(100,15000,0,10,5895,0,1,0,0,8,0,0,0,0,0,417.04,1822.66,12.61,1.483,0,0,'Call of Water - Spawn Minor Manifestation of Water'),
 (100,19000,0,10,6748,0,6,0,0,8,0,0,0,0,0,393.13,1860.64,11.22,5.577,0,0,'Call of Water - Spawn Water Spirit - Path 6'),
 (100,19000,0,10,6748,0,7,0,0,8,0,0,0,0,0,405.81,1843.58,12.54,6.161,0,0,'Call of Water - Spawn Water Spirit - Path 7'),
 (100,19000,0,10,6748,0,10,0,0,8,0,0,0,0,0,424.75,1840.46,12.25,2.945,0,0,'Call of Water - Spawn Water Spirit - Path 10'),
@@ -89,13 +62,15 @@ INSERT INTO dbscripts_on_relay(id, delay, priority, command, datalong, datalong2
 (5897,0,1,28,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Corrupt Water Spirit - Set Standstate 7'),
 (5897,7000,0,18,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Corrupt Water Spirit - Despawn');
 
-
 -- Waypoint Scripts
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (674800, 700700, 700701);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (589500, 674800, 700700, 700701);
 INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
+-- Minor Manifestation of Water
+(589500,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Minor Manifestation of Water - Pause Movement'),
+(589500,300000,0,20,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Minor Manifestation of Water - Change Movement after 5 minutes'),
 -- Water Spirit
 (674800,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Water Spirit - Pause Movement'),
-(674801,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Water Spirit - Despawn'),
+(674801,0,0,18,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Water Spirit - Despawn'),
 -- Tiev Mordune
 (700700,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Pause Movement'),
 (700700,0,1,0,0,0,0,0,0,0,3070,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Say Text'),
@@ -104,7 +79,7 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (700700,6000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Unpause Movement'),
 (700701,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Pause Movement'),
 (700701,0,1,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Face Player'),
-(700701,0,2,1,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Emote Kneel'),
+(700701,100,2,1,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Emote Kneel'),
 (700701,5000,0,0,0,0,0,0,0,0,3072,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Say Text'),
 (700701,6000,0,45,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Start Relay Script'),
 (700701,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Unpause Movement'),
@@ -199,10 +174,11 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 SET @PATH := 5895;
 DELETE FROM creature_movement_template WHERE `Entry` = @PATH;
 INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES 
-(@PATH,0,1,421.8788,1840.3544,12.0527935,100,0,0),
-(@PATH,0,2,431.01562,1847.8055,11.612364,100,0,0),
-(@PATH,0,3,454.36328,1883.919,5.442026,100,0,0),
-(@PATH,0,4,459.39835,1923.7932,-10.240311,100,1000,674801);
+(@PATH,1,1,421.8788,1840.3544,12.0527935,100,100,589500),
+(@PATH,2,1,421.8788,1840.3544,12.0527935,100,0,0),
+(@PATH,2,2,431.01562,1847.8055,11.612364,100,0,0),
+(@PATH,2,3,454.36328,1883.919,5.442026,100,0,0),
+(@PATH,2,4,459.39835,1923.7932,-10.240311,100,1000,674801);
 
 SET @PATH := 6748;
 DELETE FROM creature_movement_template WHERE `Entry` = @PATH;
