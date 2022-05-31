@@ -1,0 +1,1 @@
+UPDATE `dbscripts_on_creature_movement` SET `search_radius`=20 WHERE `id`=2499901 AND `comments`='Irespeaker - Cast Fel Consumption';
