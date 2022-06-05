@@ -10,6 +10,7 @@ SET @CGUID := 4300000; -- creatures
 SET @OGUID := 4300000; -- gameobjects
 SET @PGUID := 45300; -- pools
 SET @SGGUID := 4300000;
+SET @PATH := 4300000; -- Waypoint Path
 
 -- =========
 -- CREATURES
@@ -636,6 +637,83 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (3653, 0, 68, -77.3223, 330.255, -106.162, 5.07125, 0, 0),
 (3653, 0, 69, -73.4961, 323.783, -106.162, 5.64066, 0, 0),
 (3653, 0, 70, -66.2326, 318.345, -106.592, 5.80559, 0, 0);
+
+DELETE FROM waypoint_path WHERE PathId=@PATH;
+INSERT INTO waypoint_path(PathId, Point, PositionX, PositionY, PositionZ, Orientation, WaitTime, ScriptId, Comment) VALUES
+(@PATH,1,-134.96526,125.40187,-78.09446,2.98006,13000,367800,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,2,-124.4064,131.07953,-78.71027,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,3,-113.91917,142.769,-80.91416,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,4,-111.16669,153.64728,-80.55562,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,5,-110.97073,165.60736,-79.444725,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,6,-109.30049,181.25143,-79.76007,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,7,-110.1942,190.9626,-80.42992,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,8,-109.58964,199.15425,-81.23881,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,9,-110.56909,206.86935,-82.88934,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,10,-110.30787,216.23227,-85.9362,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,11,-108.06385,227.87166,-89.92641,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,12,-104.28827,234.40804,-91.64163,1.124,1000,367801,'Wailing Caverns - Disciple of Naralex - Spawn 1 Wave'),
+(@PATH,13,-104.28827,234.40804,-91.64163,5.742133140563964843,3000,367802,'Wailing Caverns - Disciple of Naralex - After Spawn 1 Wave'),
+(@PATH,14,-98.08711,229.5188,-91.07548,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,15,-93.777916,228.44995,-90.61347,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,16,-85.272385,227.1592,-93.12241,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,17,-81.619774,223.63588,-93.59701,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,18,-78.13694,219.21017,-94.11092,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,19,-71.02429,212.48766,-93.52012,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,20,-66.8499,209.88943,-93.305,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,21,-61.41215,207.00401,-93.55031,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,22,-49.681805,204.15556,-95.96281,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,23,-41.188667,204.99422,-96.51605,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,24,-35.381386,212.98494,-96.097084,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,25,-33.46709,223.27979,-95.67591,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,26,-31.895458,231.73523,-94.46018,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,27,-33.1077,240.3214,-93.595955,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,28,-38.079693,250.99289,-93.11742,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,29,-43.072884,259.32315,-92.84187,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,30,-54.713943,273.85025,-92.84426,100,0,0,'Wailing Caverns - Disciple of Naralex - Spawn 2 Wave'),
+(@PATH,31,-50.375507,279.56708,-92.84426,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,32,-48.92133,284.29807,-92.84426,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,33,-49.880116,287.8062,-92.245026,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,34,-50.754616,291.34595,-91.38129,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,35,-47.99677,295.32455,-90.81825,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,36,-44.49994,299.743,-90.212395,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,37,-38.468487,306.85004,-89.96176,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,38,-34.199474,309.35944,-89.575645,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,39,-27.884659,311.9566,-89.1139,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,40,-23.459465,310.78976,-88.51482,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,41,-17.556763,308.8638,-88.62951,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,42,-9.611309,305.38797,-88.19709,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,43,-3.915017,301.293,-86.81481,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,44,-0.235204,294.51816,-85.46128,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,45,3.204272,288.31448,-85.4905,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,46,6.725203,282.79242,-85.65187,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,47,10.753059,278.38467,-85.8368,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,48,16.977774,273.39676,-86.238335,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,49,25.977861,264.6067,-86.788,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,50,29.228964,257.175,-87.57598,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,51,30.13821,248.86757,-87.37655,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,52,34.11451,244.73685,-87.19066,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,53,38.86757,240.09755,-87.61623,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,54,43.998184,234.17651,-88.02119,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,55,48.403416,229.11066,-88.38168,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,56,49.750046,222.36626,-88.75966,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,57,54.5601,210.85043,-89.80927,100,0,0,'Wailing Caverns - Disciple of Naralex - Stop 3'),
+(@PATH,58,67.69076,205.52835,-92.56347,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,59,71.46944,206.84753,-93.10892,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,60,77.15617,209.72255,-93.07799,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,61,80.431854,214.86958,-93.177925,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,62,83.29396,220.0915,-93.72824,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,63,86.2444,225.64459,-94.54216,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,64,89.99905,229.58038,-95.01256,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,65,94.13328,232.7041,-95.36724,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,66,99.00888,233.9866,-95.57549,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,67,104.59536,233.409,-95.845955,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,68,109.07845,232.6175,-96.046,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,69,112.8708,233.57512,-96.32111,100,0,0,'Wailing Caverns - Disciple of Naralex'),
+(@PATH,70,114.51453,235.30222,-96.1607,100,0,0,'Wailing Caverns - Disciple of Naralex End Event');
+
+DELETE FROM waypoint_path_name WHERE PathId = @PATH;
+INSERT INTO waypoint_path_name(PathId, Name) VALUES
+(@PATH, 'Wailing Caverns - Disciple of Naralex - Escort path');
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+96, 0, 8, 1, 0, 0, ''), -- Druid of the Fang
