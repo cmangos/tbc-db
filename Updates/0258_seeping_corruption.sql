@@ -19,11 +19,26 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `dat
 ('3569', '0', '1', '1', '7', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Emote Eat'),
 ('3569', '4000', '0', '1', '15', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Emote Roat'),
 ('3569', '4000', '1', '0', '0', '0', '0','0', '4533', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Say Text'),
-('3569', '7000', '0', '48', '22', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Kill Self');
+('3569', '7000', '0', '14', '12881', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Remove Aura'),
+-- [0] UpdateType: Values
+-- [0] Health: 0
+-- Cant set Health to 0 or killself, workaround with death stand
+('3569', '7000', '1', '28', '7', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Death Stand - Workaround'),
+('3569', '17000', '0', '18', '0', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Despawn - Workaround');
 
 UPDATE `quest_template` SET `CompleteScript`='3569' WHERE `entry`='3569'; 
+
 -- Respawn Timer for Thersa Windsong
 UPDATE `creature` SET `spawntimesecsmin`='30', `spawntimesecsmax`='30' WHERE (`guid`='31905');
 
 -- Add emote to Chemist Cuely
 UPDATE `creature_template_addon` SET `emote`='69' WHERE (`entry`='8390');
+
+-- ServerToClient: SMSG_UPDATE_OBJECT (0x27C6) Length: 622 ConnIdx: 1 Time: 06/01/2022 11:36:10.731 Number: 1897
+-- [0] UpdateType: CreateObject2
+-- [0] Object Guid: Full: 0x204CB00000083240000027000017330A Creature/0 R4908/S39 Map: 0 Entry: 8393 Low: 1520394
+-- ServerToClient: SMSG_AURA_UPDATE (0x2C22) Length: 52 ConnIdx: 1 Time: 06/01/2022 11:36:10.731 Number: 1898
+-- [0] HasAura: True
+-- [0] SpellID: 12881 (12881)
+-- UnitGUID: Full: 0x204CB00000083240000027000017330A Creature/0 R4908/S39 Map: 0 Entry: 8393 Low: 1520394
+UPDATE `creature_template_addon` SET `auras`='12881' WHERE (`entry`='8393');
