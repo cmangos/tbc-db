@@ -17,3 +17,22 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (367801,0,1,0,0,0,0,0,0,0,1257,0,0,0,0,0,0,0,0,0,0,'Disiple of Naralex - Say Text'),
 (367802,0,0,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Disiple of Naralex - Emote Point'),
 (367802,0,1,0,0,0,0,0,0,0,1263,0,0,0,0,0,0,0,0,0,0,'Disiple of Naralex - Say Text');
+
+
+SET @PATH := 3636;
+DELETE FROM creature_movement_template WHERE `Entry` = @PATH;
+INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+-- Raptor 1
+(@PATH,1,1,-85.90598,227.61963,-93.03453,100,0,0,'Wailing Caverns - Deviate Raptor'),
+(@PATH,1,2,-102.71141,230.54904,-90.739334,100,0,0,'Wailing Caverns - Deviate Raptor'),
+(@PATH,1,3,-102.71141,230.54904,-90.739334,100,0,0,'Wailing Caverns - Deviate Raptor'),
+-- Raptor 2
+(@PATH,2,1,-81.29124,221.22562,-93.76229,100,0,0,'Wailing Caverns - Deviate Raptor'),
+(@PATH,2,2,-92.94477,227.76524,-90.75813,100,0,0,'Wailing Caverns - Deviate Raptor'),
+(@PATH,2,3,-102.23611,230.12544,-90.6959,100,0,0,'Wailing Caverns - Deviate Raptor'),
+(@PATH,2,4,-104.091354,230.78859,-90.55948,100,0,0,'Wailing Caverns - Deviate Raptor'),
+(@PATH,2,5,-104.091354,230.78859,-90.55948,100,0,0,'Wailing Caverns - Deviate Raptor'),
+(@PATH,2,6,-104.091354,230.78859,-90.55948,0.82534259557723999,0,0,'Wailing Caverns - Deviate Raptor');
+
+-- Let Raptor move on spawn
+UPDATE `creature_template` SET `MovementType`='2' WHERE (`Entry`='3636');
