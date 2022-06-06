@@ -14,17 +14,13 @@ INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `dat
 UPDATE `quest_template` SET `CompleteScript`='3568' WHERE `entry`='3568'; 
 
 DELETE FROM `dbscripts_on_quest_end` WHERE `id` = 3569; -- npc flags removed
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `dataint`, `dataint2`,`x`, `y`, `z`, `o`,`comments`) VALUES 
-('3569', '0', '0', '21', '1', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Set Active'),
-('3569', '0', '1', '1', '7', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Emote Eat'),
-('3569', '4000', '0', '1', '15', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Emote Roat'),
-('3569', '4000', '1', '0', '0', '0', '0','0', '4533', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Say Text'),
-('3569', '7000', '0', '14', '12881', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Remove Aura'),
--- [0] UpdateType: Values
--- [0] Health: 0
--- Cant set Health to 0 or killself, workaround with death stand
-('3569', '7000', '1', '28', '7', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Death Stand - Workaround'),
-('3569', '17000', '0', '18', '0', '0', '0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Despawn - Workaround');
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`,`x`, `y`, `z`, `o`,`comments`) VALUES 
+('3569', '0', '0', '21', '1', '0', '0','0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Set Active'),
+('3569', '0', '1', '1', '7', '0', '0','0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Emote Eat'),
+('3569', '4000', '0', '1', '15', '0', '0','0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Emote Roat'),
+('3569', '4000', '1', '0', '0', '0', '0','0', '0','4533', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Say Text'),
+('3569', '7000', '0', '14', '12881', '0', '0','0','0', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Remove Aura'),
+('3569', '7000', '1', '15', '5', '0', '0','0','4', '0', '0', '0', '0','0','0','Seeping Corruption (Part 2) - Thersa Windsong - Kill Self with Spell');
 
 UPDATE `quest_template` SET `CompleteScript`='3569' WHERE `entry`='3569'; 
 
