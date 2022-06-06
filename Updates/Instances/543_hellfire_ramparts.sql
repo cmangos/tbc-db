@@ -410,6 +410,14 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+27, 2, 3.5, 0, @SGGUID+27, 2, 'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 000'),
 (@SGGUID+29, 2, 4, 0, @SGGUID+29, 2, 'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 001');
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+4,'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 000'),
+(@SGGUID+10,'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 001'),
+(@SGGUID+15,'Hellfire Ramparts - Watchkeeper Gargolmar | Hellfire Watcher (3)'),
+(@SGGUID+25,'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 003'),
+(@SGGUID+27,'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 000'),
+(@SGGUID+29,'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 001');
+
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+4, 1, -1257.71, 1651, 67.9137, 1.8753, 5000, 0),
 (@SGGUID+4, 2, -1267.74, 1662.96, 68.787, 2.40937, 0, 0),

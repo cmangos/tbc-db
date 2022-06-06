@@ -629,6 +629,10 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH_ID+1, '7', '211.634', '-381.018', '48.1742', '0', '0', '0', NULL),
 (@PATH_ID+1, '8', '201.99', '-379.466', '48.1103', '0', '0', '0', NULL);
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@PATH_ID,'UB - Ray formation - Triangle'),
+(@PATH_ID+1,'UB - Naga Broken formation - Ghazan trash');
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 17723, 546, 3, 10.63608, -206.855, -4.449889, 4.590884, 7200, 7200, 3, 0, 0, 1), -- Bog Giant
 (@CGUID+2, 17723, 546, 3, 93.06754, -360.3329, 33.21555, 0.456166, 7200, 7200, 0, 0, 0, 2), -- Bog Giant

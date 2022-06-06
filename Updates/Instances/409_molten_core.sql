@@ -983,6 +983,9 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@GROUP_ID+0, 4, 5, 0, @PATH_ID+0, 4, 'The Molten Core - Lucifron'),
 (@GROUP_ID+1, 6, 10, 0, 0, 1, 'The Molten Core - Garr');
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@PATH_ID+0,'The Molten Core - Lucifron');
+
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@PATH_ID+0, 01, 1000.20257568359375, -955.40692138671875, -179.582534790039062, 100, 0, 0),
 (@PATH_ID+0, 02, 1007.78198242187500, -958.08843994140625, -180.174041748046875, 100, 0, 0),

@@ -1350,6 +1350,22 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@GROUP_ID+12, 2, 10, 0, @PATH_ID+12, 4, 'Temple of Ahn\'Qiraj - Vekniss Hive Crawler (2) Patrol 001'),
 (@GROUP_ID+13, 2, 10, 0, @PATH_ID+13, 2, 'Temple of Ahn\'Qiraj - Vekniss Hive Crawler (2) Patrol 002');
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@PATH_ID+0,'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 000'),
+(@PATH_ID+1,'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 001'),
+(@PATH_ID+2,'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 002'),
+(@PATH_ID+3,'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 003'),
+(@PATH_ID+4,'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 004'),
+(@PATH_ID+5,'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 005'),
+(@PATH_ID+6,'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 006'),
+(@PATH_ID+7,'Temple of Ahn\'Qiraj - Qiraji Champion (5) Patrol 007'),
+(@PATH_ID+8,'Temple of Ahn\'Qiraj - Vekniss Warrior (3) Patrol 000'),
+(@PATH_ID+9,'Temple of Ahn\'Qiraj - Vekniss Warrior (3) Patrol 001'),
+(@PATH_ID+10,'Temple of Ahn''Qiraj - Battleguard Sartura (4)'),
+(@PATH_ID+11,'Temple of Ahn\'Qiraj - Vekniss Hive Crawler (2) Patrol 000'),
+(@PATH_ID+12,'Temple of Ahn\'Qiraj - Vekniss Hive Crawler (2) Patrol 001'),
+(@PATH_ID+13,'Temple of Ahn\'Qiraj - Vekniss Hive Crawler (2) Patrol 002');
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 15229, 531, -7955.62, 1322.46, -90.46, 4.38823, 600, 600, 0, 0, 0, 2), -- Vekniss Soldier
 (@CGUID+2, 15229, 531, -7903.95, 1411.55, -66.4528, 4.24687, 600, 600, 0, 0, 0, 2), -- Vekniss Soldier

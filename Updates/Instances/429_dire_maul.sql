@@ -2575,6 +2575,12 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@GROUP_ID+2, 4, 4, 0, @PATH_ID+2, 2, 'DM North - Gordok Mastiff Patrol #3'),
 (@GROUP_ID+3, 3, 4, 0, @PATH_ID+3, 2, 'DM North - Gordok Mastiff Patrol #4');
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@PATH_ID+0,'DM North - Gordok Mastiff Patrol #1'),
+(@PATH_ID+1,'DM North - Gordok Mastiff Patrol #2'),
+(@PATH_ID+2,'DM North - Gordok Mastiff Patrol #3'),
+(@PATH_ID+3,'DM North - Gordok Mastiff Patrol #4');
+
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 (@PATH_ID+0, 1, 468.33, 3.67, -3.9162, 100, 0, 0, ''),
 (@PATH_ID+0, 2, 469.788, 46.4686, -3.91727, 100, 0, 0, ''),

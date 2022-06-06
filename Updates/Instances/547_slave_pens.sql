@@ -1103,6 +1103,26 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+44, 8, -197.918, -719.931, 37.6508, 1.95799, 0, 0),
 (@SGGUID+44, 9, -196.525, -699.135, 37.6758, 1.59827, 0, 0);
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+1,'Slave Pens - Coilfang Champion (2) Patrol 000'),
+(@SGGUID+2,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 001'),
+(@SGGUID+3,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 002'),
+(@SGGUID+4,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
+(@SGGUID+5,'Slave Pens - Coilfang Defender (2) Patrol 000'),
+(@SGGUID+6,'Slave Pens - Coilfang Defender (2) Patrol 001'),
+(@SGGUID+7,'Slave Pens - Coilfang Technician (2) Patrol 000'),
+(@SGGUID+8,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 001'),
+(@SGGUID+9,'Slave Pens - Coilfang Technician (2) Patrol 002'),
+(@SGGUID+10,'Slave Pens - Coilfang Technician (2) Patrol 003'),
+(@SGGUID+11,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 004'),
+(@SGGUID+12,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 005'),
+(@SGGUID+13,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 006'),
+(@SGGUID+14,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 007'),
+(@SGGUID+15,'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 001'),
+(@SGGUID+16,'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 002'),
+(@SGGUID+43,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 003'),
+(@SGGUID+44,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');
+
 -- =========
 -- DBSCRIPTS
 -- =========
