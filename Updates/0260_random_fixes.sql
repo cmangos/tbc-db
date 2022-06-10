@@ -38,14 +38,14 @@ UPDATE `creature_template` SET `ExtraFlags` = `ExtraFlags`&~16384 WHERE `entry` 
 16809,20596, -- Warbringer O'mrogg
 16821, -- Magus Filinthus
 17650, -- Prince Malchezaar's Axes
-18555, -- Dark Portal Beam Invisible Stalker
+-- 18555, -- Dark Portal Beam Invisible Stalker (turning speed different then, legit fix)
 20618, -- Mana Invader
 20857,21585, -- Arcatraz Defender
 20859,21587, -- Arcatraz Warder
 20864,21608, -- Protean Nightmare
-20865,21607, -- Protean Horror
-21075, -- Infernal Target (Hyjal)
-24412 -- Daily Dungeon Image Bunny
+20865,21607 -- Protean Horror
+-- 21075, -- Infernal Target (Hyjal) (turning speed different then, legit fix)
+-- 24412 -- Daily Dungeon Image Bunny (turning speed different then, legit fix)
 );
 
 -- ADD CREATURE_EXTRA_FLAG_MMAP_FORCE_DISABLE
