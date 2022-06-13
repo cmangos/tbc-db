@@ -7142,6 +7142,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Basil Frye 4605
 -- Aelthalyste 4606
 -- Father Lankester 4607
+('460701','4607','30','0','100','1','5','5697','0','0','0','0','53','20602','0','0','0','0','0','0','0','0','0','0','Father Lankester - START_RELAY_SCRIPT on Receive AI Event Custom A (RP EVENT)'),
 -- Father Lazarus 4608 - (HAS ABILITIES - BUT NOT A BOSS - UNKNOWN WHAT THIS NPC DOES)
 -- Doctor Marsh 4609
 -- Algernon 4610
@@ -7208,7 +7209,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('568702','5687','6','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Captive Abomination - Despawn on Death.'),
 -- Godrick Farsan 5693
 -- Gerard Abernathy 5696
--- Theresa (5697) - NSR
+('569601','5696','30','0','100','1','6','5697','0','0','0','0','53','20604','0','0','0','0','0','0','0','0','0','0','Gerard Abernathy - START_RELAY_SCRIPT on Receive AI Event Custom B (RP EVENT)'),
+('569602','5696','30','0','100','1','8','5697','0','0','0','0','53','20605','0','0','0','0','0','0','0','0','0','0','Gerard Abernathy - START_RELAY_SCRIPT on Receive AI Event Custom C (RP EVENT)'),
+-- Theresa 5697
+('569701','5697','1','0','100','1','10000','60000','420000','720000','0','0','53','20603','0','0','0','0','0','0','0','0','0','0','Theresa - START_RELAY_SCRIPT on OOC Timer (RP EVENT)'),
 -- Joanna Whitehall 5698
 -- Leona Tharpe 5699
 -- Samantha Shackleton 5700 (Series of Random Says Need To Be Scripted)
@@ -32136,9 +32140,6 @@ INSERT INTO dbscript_random_templates (id, `type`, target_id, chance, comments) 
 (12008, 0, 13429, 0, 'Blood Elf Scout 16521 - Random Aggro Texts'),
 (12009, 1, 10202, 0, '25962/25994 - Fire Breathing Script'),
 (12009, 1, 10203, 0, '25962/25994 - Torch Juggling Script');
-
--- WOTLK IDs 20000+
--- INSERT INTO dbscript_random_templates (id, `type`, target_id, chance, comments) VALUES
 
 -- =======================================================
 -- Set EventAI in Creature_Template and Final SQL Cleanups
