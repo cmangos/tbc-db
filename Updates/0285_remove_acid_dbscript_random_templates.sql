@@ -3,10 +3,7 @@
 -- SELECT * FROM `dbscript_random_templates` WHERE `id` BETWEEN 0 AND 30000;
 -- =======================================================
 -- Clear dbscript_random_templates used by ACID
-DELETE FROM dbscript_random_templates WHERE `target_id` < 0;
-DELETE rand_temps FROM dbscript_random_templates rand_temps JOIN creature_ai_scripts eai ON (eai.action1_type=54 AND eai.action1_param3=rand_temps.id) OR (eai.action2_type=54 AND eai.action2_param3=rand_temps.id) OR (eai.action3_type=54 AND eai.action3_param3=rand_temps.id);
-DELETE rand_temps FROM dbscript_random_templates rand_temps JOIN creature_ai_scripts eai ON (eai.action1_type=53 AND -eai.action1_param1=rand_temps.id) OR (eai.action2_type=53 AND -eai.action2_param1=rand_temps.id) OR (eai.action3_type=53 AND -eai.action3_param1=rand_temps.id);
-
+DELETE FROM dbscript_random_templates WHERE `id` IN (2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,21,22,896,899,900,904,9000,10005,10006,10009,10011,10012,10013,10014,10017,10018,10019,10020,10022,10023,10024,10025,10026,10027,10028,10029,10031,10032,10033,10034,10035,10036,10037,10038,10039,10040,10041,10042,10043,10045,10046,10049,10060,10061,10062,10063,10064,10065,10066,10067,10068,10069,10070,10071,10072,10073,10074,10075,10076,10077,10078,10079,10083,10084,10133,10135,10136,10137,10138,10139,10140,10141,10142,10143,10144,10145,10146,10147,10148,10149,10150,10151,10152,10153,10154,10163,10164,10165,10167,10168,10169,10170,10171,10172,10176,10177,11997,11998,11999,12000,12001,12002,12003,12004,12005,12006,12007,12008,12009);
 -- Classic IDs 0 - 9999
 INSERT INTO dbscript_random_templates (id, `type`, target_id, chance, comments) VALUES
 (2, 0, 2627, 0, 'Scarlet Monastery - Random Aggro Texts'),
