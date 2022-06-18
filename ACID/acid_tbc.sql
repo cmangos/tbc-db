@@ -8907,11 +8907,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Benjari Edune (24739) - NSR
 -- Goodie (24740) - NSR
 -- Earthen Ring Guide (25324) - NSR
--- Twilight Firesworn (25863) - NSR
--- Twilight Flameguard (25866) - NSR
+-- Twilight Firesworn 25863
+('2586301','25863','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Firesworn - (25% chance) Random Say on Aggro'),
+-- Twilight Flameguard 25866
+('2586601','25866','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Flameguard - (25% chance) Random Say on Aggro'),
 -- Ashenvale Flame Warden (25883) - NSR
 -- Ashenvale Flame Keeper (25884) - NSR
--- Twilight Speaker Viktor (25924) - NSR
+-- Twilight Speaker Viktor 25924
+('2592401','25924','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Speaker Viktor - (25% chance) Random Say on Aggro'),
 -- Ice Caller Briatha (25949) - NSR
 -- Heretic Emissary (25951) - NSR
 -- Heretic Bodyguard (25980) - NSR
