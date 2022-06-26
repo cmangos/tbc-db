@@ -22,8 +22,8 @@ UPDATE `quest_template` SET `CompleteScript`='1027' WHERE `entry`='1027';
 
 -- Quest Raen's Cleansing (Part 6) Entry: 1028
 -- Gameobject Spawns
-DELETE FROM gameobject WHERE `guid` IN (6000000, 6000001, 6000002, 6000003, 6000004, 6000005);
-SET @OGUID := 5000000; -- gameobjects
+DELETE FROM gameobject WHERE `guid` IN (157000, 157001, 157002, 157003, 157004, 157005);
+SET @OGUID := 157000; -- gameobjects
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES 
 (@OGUID, '19538', '1', '2779.4626', '-1552.0814', '265.36655', '5.2010827', '0', '0', '-0.51503754', '0.8571676','-17', '-17'),
 (@OGUID+1, '19538', '1', '2780.1143', '-1552.7924', '266.25015', '0.6632232', '0', '0', '0.32556725', '0.94551885','-17', '-17'),
