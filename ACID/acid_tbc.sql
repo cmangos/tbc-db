@@ -8906,7 +8906,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2473803','24738','9','0','100','1025','5','30','2600','3500','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Elenna Edune - Cast Shoot'),
 -- Benjari Edune (24739) - NSR
 -- Goodie (24740) - NSR
--- Earthen Ring Guide (25324) - NSR
+-- Earthen Ring Guide 25324
+('2532401','25324','11','0','100','0','0','0','0','0','0','0','50','0','0','0','53','19986','0','0','0','0','0','0','Earthen Ring Guide - START_RELAY_SCRIPT and set passive on Spawn'),
+('2532402','25324','30','0','100','0','6','26534','0','0','0','0','53','19987','0','0','0','0','0','0','0','0','0','0','Earthen Ring Guide - START_RELAY_SCRIPT on Receive AI Event Custom B'),
 -- Twilight Firesworn 25863
 ('2586301','25863','4','0','25','0','0','0','0','0','0','0','1','25098','25099','25100','0','0','0','0','0','0','0','0','Twilight Firesworn - (25% chance) Random Say on Aggro'),
 -- Twilight Flameguard 25866
@@ -8920,6 +8922,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Heretic Bodyguard (25980) - NSR
 -- Frostwave Lieutenant (26116) - NSR
 -- Wisp of Ragnaros (26502) - NSR
+-- Totemic Beacon 26534
+('2653401','26534','11','0','100','0','0','0','0','0','0','0','45','5','200','0','22','1','0','0','0','0','0','0','Earthen Ring Guide - Set Phase 1 on Spawn'),
+('2653402','26534','1','5','100','1','5000','5000','5000','5000','0','0','45','6','5','0','0','0','0','0','0','0','0','0','Earthen Ring Guide - Send Event AI 6 - OOC Timer (Phase 1)'),
+('2653403','26534','30','5','100','0','8','25324','0','0','0','0','22','2','0','0','0','0','0','0','0','0','0','0','Earthen Ring Guide - Set Phase 2 on Receive AI Event Custom 8'),
 
 
 
