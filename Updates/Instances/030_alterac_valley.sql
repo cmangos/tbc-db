@@ -2799,14 +2799,44 @@ INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `descripti
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+1, 'Alterac Valley - Frostwolf Battleguard | Frostwolf Bloodhound (3) Patrol 000', '0', '0', '0', '0');
+(@SGGUID+1, 'Alterac Valley - Frostwolf Battleguard | Frostwolf Bloodhound (3) Patrol 000', '0', '0', '0', '0'),
+(@SGGUID+2, 'Alterac Valley - Frostwolf Battleguard (2) Standing 000', '0', '0', '0', '0'),
+(@SGGUID+3, 'Alterac Valley - Frostwolf Battleguard (2) Standing 001', '0', '0', '0', '0'),
+(@SGGUID+4, 'Alterac Valley - Frostwolf Battleguard (2) Standing 002', '0', '0', '0', '0'),
+(@SGGUID+5, 'Alterac Valley - Frostwolf Battleguard (2) Standing 003', '0', '0', '0', '0'),
+(@SGGUID+6, 'Alterac Valley - Frostwolf Battleguard (2) Standing 004', '0', '0', '0', '0'),
+(@SGGUID+7, 'Alterac Valley - Frostwolf Battleguard (2) Standing 005', '0', '0', '0', '0'),
+(@SGGUID+8, 'Alterac Valley - Frostwolf Battleguard (2) Standing 006', '0', '0', '0', '0'),
+(@SGGUID+9, 'Alterac Valley - Frostwolf Battleguard (2) Standing 007', '0', '0', '0', '0'),
+(@SGGUID+10, 'Alterac Valley - Frostwolf Battleguard (2) Standing 008', '0', '0', '0', '0'),
+(@SGGUID+11, 'Alterac Valley - Frostwolf Battleguard (2) Standing 009', '0', '0', '0', '0');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+349, '0'),
 (@SGGUID+1, @CGUID+350, '1'),
-(@SGGUID+1, @CGUID+351, '2');
+(@SGGUID+1, @CGUID+351, '2'),
+(@SGGUID+2, @CGUID+329, '-1'),
+(@SGGUID+2, @CGUID+330, '-1'),
+(@SGGUID+3, @CGUID+331, '-1'),
+(@SGGUID+3, @CGUID+332, '-1'),
+(@SGGUID+4, @CGUID+333, '-1'),
+(@SGGUID+4, @CGUID+334, '-1'),
+(@SGGUID+5, @CGUID+335, '-1'),
+(@SGGUID+5, @CGUID+336, '-1'),
+(@SGGUID+6, @CGUID+337, '-1'),
+(@SGGUID+6, @CGUID+338, '-1'),
+(@SGGUID+7, @CGUID+339, '-1'),
+(@SGGUID+7, @CGUID+340, '-1'),
+(@SGGUID+8, @CGUID+341, '-1'),
+(@SGGUID+8, @CGUID+342, '-1'),
+(@SGGUID+9, @CGUID+343, '-1'),
+(@SGGUID+9, @CGUID+344, '-1'),
+(@SGGUID+10, @CGUID+345, '-1'),
+(@SGGUID+10, @CGUID+346, '-1'),
+(@SGGUID+11, @CGUID+347, '-1'),
+(@SGGUID+11, @CGUID+348, '-1');
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+1, '2', '2', '0', @SGGUID+1, 4, 'Alterac Valley - Frostwolf Battleguard | Frostwolf Bloodhound (3) Patrol 000');
