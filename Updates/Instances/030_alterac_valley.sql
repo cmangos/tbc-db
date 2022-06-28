@@ -311,8 +311,20 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (13088, 0, 0, 1, 0, 0, NULL), -- Masha Swiftcut
 (13116, 0, 0, 0, 0, 0, ''), -- Alliance Spirit Guide - npc_spirit_guide
 (13117, 0, 0, 0, 0, 0, ''), -- Horde Spirit Guide - npc_spirit_guide
+(13137, 14334, 0, 1, 0, 0, NULL), -- Lieutenant Rugba
+(13138, 14337, 0, 1, 0, 0, NULL), -- Lieutenant Spencer
+(13143, 14348, 0, 1, 0, 0, NULL), -- Lieutenant Stronghoof
+(13144, 14388, 0, 1, 0, 0, NULL), -- Lieutenant Vol'talar
+(13147, 10671, 0, 1, 0, 0, NULL), -- Lieutenant Lewis
+(13152, 14334, 0, 1, 0, 0, NULL), -- Commander Malgor
+(13296, 14337, 0, 1, 0, 0, NULL), -- Lieutenant Largent
+(13297, 14577, 0, 1, 0, 0, NULL), -- Lieutenant Stouthandle
+(13298, 14372, 0, 1, 0, 0, NULL), -- Lieutenant Greywand
+(13299, 14330, 0, 1, 0, 0, NULL), -- Lieutenant Lonadin
+(13300, 14337, 0, 1, 0, 0, NULL), -- Lieutenant Mancuso
 (13316, 0, 0, 1, 233, 0, NULL), -- Coldmine Peon
 (13317, 0, 0, 1, 233, 0, NULL), -- Coldmine Miner
+(13318, 14577, 0, 1, 0, 0, NULL), -- Commander Mortimer
 (13326, 0, 0, 1, 0, 0, '5301'), -- Seasoned Defender
 (13328, 0, 0, 1, 0, 0, '5301'), -- Seasoned Guardian
 (13331, 0, 0, 1, 0, 0, '5301'), -- Veteran Defender
@@ -1896,15 +1908,15 @@ INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) SELECT `guid`, 
 -- (@CGUID+XXX, 12127, 30, 656.257, -22.3926, 49.5618, 3.3598, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
 -- (@CGUID+XXX, 12127, 30, 717.607, -0.564321, 50.6213, 3.63749, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
 -- (@CGUID+XXX, 12127, 30, 723.955, -21.5371, 50.6213, 3.47103, 430, 430, 0, 0, 0, 0), -- Stormpike Guardsman
--- (@CGUID+XXX, 13137, 30, -627.388, -394.103, 58.9819, 3.66855, 490, 490, 0, 0, 0, 0), -- Lieutenant Rugba
+-- (@CGUID+XXX, 13137, 30, -637.59930419921875, -373.805572509765625, 61.1605682373046875, 5.829399585723876953, 604800, 604800, 0, 0, 0, 0), -- Lieutenant Rugba
 -- (@CGUID+XXX, 13138, 30, 121.041, -369.637, 43.1245, 4.79702, 490, 490, 0, 0, 0, 0), -- Lieutenant Spencer
 -- (@CGUID+XXX, 13139, 30, -151.683, -440.279, 40.3853, 4.28611, 1785, 1785, 0, 0, 0, 0), -- Commander Randolph
 -- (@CGUID+XXX, 13140, 30, -537.417, -168.788, 57.0112, 2.93509, 180, 180, 0, 0, 0, 0), -- Commander Dardosh
--- (@CGUID+XXX, 13143, 30, -621.193, -357.858, 56.1206, 4.77595, 490, 490, 0, 0, 0, 0), -- Lieutenant Stronghoof
--- (@CGUID+XXX, 13144, 30, -540.745, -173.477, 57.0112, 1.34339, 430, 430, 0, 0, 0, 0), -- Lieutenant Vol'talar
+-- (@CGUID+XXX, 13143, 30, -610.15557861328125, -404.24383544921875, 60.28270721435546875, 2.984513044357299804, 604800, 604800, 0, 0, 0, 0), -- Lieutenant Stronghoof
+-- (@CGUID+XXX, 13144, 30, -498.9283447265625, -195.038253784179687, 57.54837417602539062, 6.143558979034423828, 604800, 604800, 0, 0, 0, 0), -- Lieutenant Vol'talar
 -- (@CGUID+XXX, 13145, 30, -481.07, -358.03, 28.0431, 0.869456, 430, 430, 0, 0, 0, 0), -- Lieutenant Grummus
 -- (@CGUID+XXX, 13146, 30, -587.534, -319.762, 48.3816, 4.31599, 430, 430, 0, 0, 0, 0), -- Lieutenant Murp
--- (@CGUID+XXX, 13147, 30, -540.778, -162.662, 56.9975, 5.62241, 430, 430, 0, 0, 0, 0), -- Lieutenant Lewis
+-- (@CGUID+XXX, 13147, 30, -491.384490966796875, -176.360183715820312, 57.53523635864257812, 5.969026088714599609, 604800, 604800, 0, 0, 0, 0), -- Lieutenant Lewis
 -- (@CGUID+XXX, 13151, 30, -325.452, -631.495, 121.554, 0.624377, 490, 490, 0, 0, 0, 0), -- Syndicate Master Ryson
 -- (@CGUID+XXX, 13152, 30, -1300.72, -276.136, 91.9405, 1.45977, 1785, 1785, 0, 0, 0, 0), -- Commander Malgor
 -- (@CGUID+XXX, 13153, 30, -1426.91, -328.852, 89.1526, 0.972695, 1785, 1785, 0, 0, 0, 0), -- Commander Mulfort
