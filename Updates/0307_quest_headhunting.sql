@@ -1,5 +1,5 @@
 -- All guids are free in Classic, TBC and WOTLK DB
-SET @OGUID := 1081010; -- gameobjects
+SET @OGUID := 157010; -- gameobjects
 
 -- Endscript for Quest 'Headhunting'
 DELETE FROM `dbscripts_on_quest_end` WHERE id = '582';
@@ -31,7 +31,7 @@ INSERT INTO dbscripts_on_quest_end(id, delay, priority, command, datalong, datal
 (582,19000,0,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Nimboya - Face Player'),
 (582,19000,1,0,0,0,0,0,0,0,734,0,0,0,0,0,0,0,0,0,0,'Nimboya - Say EmoteText'),
 (582,19000,2,29,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Nimboya - Add QuestFlags'),
-(582,25000,0,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,3.19395,0,0,'Nimboya - Orientation'),
+(582,25000,0,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,3.19395,0,0,'Nimboya - Change Orientation'),
 (582,25000,1,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Nimboya - Remove Active');
 
 UPDATE `quest_template` SET `CompleteScript`='582' WHERE `entry`='582';
@@ -41,6 +41,7 @@ UPDATE `broadcast_text` SET `ChatTypeID`='2' WHERE (`Id`='732');
 UPDATE `broadcast_text` SET `ChatTypeID`='2' WHERE (`Id`='733');
 
 -- Skull spawns
+DELETE FROM gameobject WHERE `guid` IN (157010, 157011, 157012, 157013, 157014, 157015, 157016, 157017, 157018, 157019, 157020, 157021, 157022, 157023, 157024, 157025, 157026, 157027, 157028);
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `state`) VALUES 
 -- First set delay +1
 (@OGUID, '2371', '0', '-12345.903', '170.5356', '3.004278', '4.4331365', '-0.7986355', '0.60181504', '-60', '-60', '1'),
