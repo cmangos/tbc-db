@@ -14,6 +14,7 @@ EndDBScriptData */
 SET @CGUID := 3000000; -- creatures
 SET @OGUID := 3000000; -- gameobjects
 SET @PGUID := 44900; -- pools
+SET @SGGUID := 3000000;
 
 -- ============
 -- BATTLEGROUND
@@ -194,26 +195,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+328, 20, -1247.391, -342.1514, 59.55701, 100, 0, 0),
 (@CGUID+328, 21, -1238.369, -324.9574, 60.26186, 100, 0, 0),
 (@CGUID+328, 22, -1226.996, -310.9992, 63.6784, 100, 0, 0),
-(@CGUID+349, 1, -1486.33, -682.971, 47.7011, 100, 0, 0),
-(@CGUID+349, 2, -1494.91, -648.142, 48.4024, 100, 0, 0),
-(@CGUID+349, 3, -1489.91, -629.843, 47.5982, 100, 0, 0),
-(@CGUID+349, 4, -1460.69, -607.274, 51.3118, 100, 0, 0),
-(@CGUID+349, 5, -1451.77, -605.11, 51.1929, 100, 0, 0),
-(@CGUID+349, 6, -1437.34, -611.431, 51.134, 100, 0, 0),
-(@CGUID+349, 7, -1432.5, -590.196, 51.0203, 100, 0, 0),
-(@CGUID+349, 8, -1415.36, -576.796, 54.1464, 100, 0, 0),
-(@CGUID+349, 9, -1394.32, -557.176, 55.2875, 100, 0, 0),
-(@CGUID+349, 10, -1415.36, -576.796, 54.1464, 100, 0, 0),
-(@CGUID+349, 11, -1432.5, -590.196, 51.0203, 100, 0, 0),
-(@CGUID+349, 12, -1437.34, -611.431, 51.134, 100, 0, 0),
-(@CGUID+349, 13, -1451.77, -605.11, 51.1929, 100, 0, 0),
-(@CGUID+349, 14, -1460.69, -607.274, 51.3118, 100, 0, 0),
-(@CGUID+349, 15, -1489.91, -629.843, 47.5982, 100, 0, 0),
-(@CGUID+349, 16, -1494.91, -648.142, 48.4024, 100, 0, 0),
-(@CGUID+349, 17, -1486.33, -682.971, 47.7011, 100, 0, 0),
-(@CGUID+349, 18, -1491.89, -701.583, 46.8154, 100, 0, 0),
-(@CGUID+349, 19, -1500.38, -707.63, 47.4581, 100, 0, 0),
-(@CGUID+349, 20, -1491.89, -701.583, 46.8154, 100, 0, 0),
 (@CGUID+387, 1, 289.6146, -383.6547, 4.620863, 100, 0, 0),
 (@CGUID+387, 2, 266.3748, -400.5663, 20.63937, 100, 0, 0),
 (@CGUID+387, 3, 236.8505, -420.9095, 37.19023, 100, 0, 0),
@@ -363,8 +344,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+1121, @CGUID+327, 515), -- Frostwolf Bloodhound -> Frostwolf Legionnaire
 (@CGUID+1122, @CGUID+328, 515), -- Frostwolf Bloodhound -> Frostwolf Legionnaire
 (@CGUID+1123, @CGUID+328, 515), -- Frostwolf Bloodhound -> Frostwolf Legionnaire
-(@CGUID+350, @CGUID+349, 515), -- Frostwolf Bloodhound -> Frostwolf Battleguard
-(@CGUID+351, @CGUID+349, 515), -- Frostwolf Bloodhound -> Frostwolf Battleguard
 (@CGUID+642, @CGUID+387, 515), -- Stormpike Owl -> Stormpike Guardsman
 (@CGUID+643, @CGUID+387, 515), -- Stormpike Owl -> Stormpike Guardsman
 (@CGUID+390, @CGUID+389, 515), -- Stormpike Guardsman -> Stormpike Guardsman
@@ -2814,6 +2793,39 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 (180654, @PGUID+1, 0, 'Hardpacked Snowdrift (180654)');
+
+-- ============
+-- SPAWN GROUPS
+-- ============
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+1, 'Alterac Valley - Frostwolf Battleguard | Frostwolf Bloodhound (3) Patrol 000', '0', '0', '0', '0');
+
+-- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+1, @CGUID+349, '0'),
+(@SGGUID+1, @CGUID+350, '1'),
+(@SGGUID+1, @CGUID+351, '2');
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+1, '2', '2', '0', @SGGUID+1, 4, 'Alterac Valley - Frostwolf Battleguard | Frostwolf Bloodhound (3) Patrol 000');
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+1, 'Alterac Valley - Frostwolf Battleguard | Frostwolf Bloodhound (3) Patrol 000');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+1, 1, -1500.38, -707.63, 47.4581, 100, 0, 0),
+(@SGGUID+1, 2, -1491.89, -701.583, 46.8154, 100, 0, 0),
+(@SGGUID+1, 3, -1486.33, -682.971, 47.7011, 100, 0, 0),
+(@SGGUID+1, 4, -1494.91, -648.142, 48.4024, 100, 0, 0),
+(@SGGUID+1, 5, -1489.91, -629.843, 47.5982, 100, 0, 0),
+(@SGGUID+1, 6, -1460.69, -607.274, 51.3118, 100, 0, 0),
+(@SGGUID+1, 7, -1451.77, -605.11, 51.1929, 100, 0, 0),
+(@SGGUID+1, 8, -1437.34, -611.431, 51.134, 100, 0, 0),
+(@SGGUID+1, 9, -1432.5, -590.196, 51.0203, 100, 0, 0),
+(@SGGUID+1, 10, -1415.36, -576.796, 54.1464, 100, 0, 0),
+(@SGGUID+1, 11, -1394.32, -557.176, 55.2875, 100, 0, 0);
 
 -- =========
 -- DBSCRIPTS
