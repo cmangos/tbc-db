@@ -6,7 +6,7 @@ INSERT INTO dbscripts_on_quest_end(id, delay, priority, command, datalong, datal
 (584,5000,0,3,0,0,0,2519,10,0,0,0,0,0,0,0,0,0,1.65806,0,0,'Kinweelay - Change Orientation'),
 (584,5000,1,15,3644,0,0,2519,10,7,0,0,0,0,0,0,0,0,0,0,0,'Kinweelay - Cast Spell'),
 (584,5000,2,0,0,0,0,2519,10,0,736,0,0,0,0,0,0,0,0,0,0,'Kinweelay - Say Text'),
-(584,12000,0,3,0,0,0,2519,10,0,0,0,0,0,0,0,0,0,1.66586,0,0,'Kinweelay - Change Orientation'),
+(584,12000,0,36,0,0,0,2519,10,0,0,0,0,0,0,0,0,0,0,0,0,'Kinweelay - Face Player'),
 (584,12000,1,0,0,0,0,2519,10,0,740,0,0,0,0,0,0,0,0,0,0,'Kinweelay - Say Text'),
 (584,12000,2,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Bubbling Cauldron - Remove Active');
 
