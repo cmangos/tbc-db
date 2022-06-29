@@ -52,7 +52,6 @@ UPDATE `creature_template` SET `SpeedWalk` = 2.8, `SpeedRun` = 2.28571 WHERE `En
 
 -- -----------------------
 
-UPDATE `creature_template` SET `MinLevel` = 61 WHERE `Entry` = 15324; -- Qiraji Gladiator
 UPDATE `creature_template` SET `MinLevel` = 61 WHERE `Entry` = 15387; -- Qiraji Warrior
 UPDATE `creature_template` SET `MinLevel` = 61 WHERE `Entry` = 15344; -- Swarmguard Needler
 
