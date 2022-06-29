@@ -16507,6 +16507,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Samia Inkling
 ('2198301','21983','1','0','100','1','6000','9000','6000','9000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Samia Inkling - Talk Emote OOC'),
 ('2198302','21983','30','0','100','33','5','22130','0','0','0','0','5','1','5','6','5','11','15','25','5','273','274','0','Samia Inkling - Random Emote on Receive AI Event 5 (A)'),
+-- Rexxar 21984
 -- Air Force Guard Post (Horde - Bat Rider) 21993 - npc_air_force_bots
 -- Air Force Guard Post (Alliance - Gryphon) 21996 - npc_air_force_bots
 -- Air Force Trip Wire - Rooftop (Alliance) 21999 - npc_air_force_bots
