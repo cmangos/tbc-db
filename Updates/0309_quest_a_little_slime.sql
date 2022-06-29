@@ -7,7 +7,7 @@ INSERT INTO dbscripts_on_quest_end(id, delay, priority, command, datalong, datal
 
 UPDATE `quest_template` SET `CompleteScript`='4512' WHERE `entry`='4512';
 
--- Alchemist Arbington waypoints
+-- Laris Geardawdle waypoints
 SET @PATH := 9616;
 DELETE FROM creature_movement_template WHERE `Entry` = @PATH;
 INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES 
