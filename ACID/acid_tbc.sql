@@ -12263,11 +12263,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Clintar Dreamwalker 22834
 -- Cenarion Dreamwarden 22835
 -- Dreamwarden Lurosa 22837
--- Manifest Nightmare 22889
+-- Manifest Nightmare 22889 - hidden aura?
 -- Phantasmal Lash 22902
--- Aspect of the Raven
+('2290201','22902','11','0','100','0','0','0','0','0','0','0','11','34427','0','34','1','20562','0','0','0','0','0','0','Phantasmal Lash - Cast Ethereal Teleport, Emote on Spawn'),
+('2290202','22902','6','0','100','0','0','0','0','0','0','0','41','7000','0','0','0','0','0','0','0','0','0','0','Phantasmal Lash - Delayed Despawn on Death'),
+-- Aspect of the Raven 22915
 ('2291501','22915','0','0','100','0','1000','1000','0','0','0','0','1','20565','0','0','0','0','0','0','0','0','0','0','Aspect of the Raven - Yell on Aggro');
--- Clintar Dreamwalker's Spirit (22916) - npc_clintar_dw_spirit
+-- Clintar Dreamwalker's Spirit 22916 - npc_clintar_dw_spirit
 
 
 
