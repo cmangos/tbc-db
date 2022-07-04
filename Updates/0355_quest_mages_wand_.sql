@@ -21,8 +21,13 @@ DELETE FROM dbscripts_on_quest_end WHERE id = '1951';
 UPDATE `quest_template` SET `CompleteScript`='1951' WHERE `entry`='1951';
 INSERT INTO dbscripts_on_quest_end(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 (1951,0,0,0,0,0,0,0,0,0,2659,0,0,0,0,0,0,0,0,0,0,'Rituals of Power - Tabetha - Say Text'),
-(1951,0,1,3,0,0,0,0,0,0,0,0,0,0,0,-4031.2214,-3394.1526,39.01234,5.033,0,0,'Rituals of Power - Tabetha - Move'),
-(1951,6000,0,3,0,0,0,0,0,0,0,0,0,0,0,-4031.56,-3392.96,39.01,2.129,0,0,'Rituals of Power - Tabetha - Move');
+(1951,0,1,20,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Rituals of Power - Tabetha - Set Movement');
+
+SET @PATH := 6546;
+DELETE FROM creature_movement_template WHERE `Entry` = @PATH AND `PathId` = 1;
+INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@PATH,1,1,-4031.2214,-3394.1526,39.01234,5.092,6000,0),
+(@PATH,1,2,-4031.56,-3392.96,39.01,2.129,1000,3);
 
 -- Mage's Wand id 1952
 DELETE FROM dbscripts_on_quest_start WHERE id = '1952';
