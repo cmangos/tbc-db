@@ -1769,6 +1769,14 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@GROUP_ID+5, '1', '3', '0', @PATH_ID+5, 2, 'Zul\'Gurub - Mad Servant (3) Patrol 000'),
 (@GROUP_ID+6, '1', '3', '0', @PATH_ID+6, 2, 'Zul\'Gurub - Mad Servant (3) Patrol 001');
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@PATH_ID+0,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 000'),
+(@PATH_ID+1,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 001'),
+(@PATH_ID+2,'Zul\'Gurub - Gurubashi Axe Thrower | Hakkari Priest (2) Patrol 000'),
+(@PATH_ID+4,'Zul\'Gurub - Razzashi Serpent | Razzashi Adder (2) Patrol 002'),
+(@PATH_ID+5,'Zul\'Gurub - Mad Servant (3) Patrol 000'),
+(@PATH_ID+6,'Zul\'Gurub - Mad Servant (3) Patrol 001');
+
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@PATH_ID+0, 01, -11863.7529296875, -1313.4700927734375, 78.72680664062500000, 100, 0, 0),
 (@PATH_ID+0, 02, -11874.8427734375, -1325.8515625000000, 78.68711090087890625, 100, 0, 0),

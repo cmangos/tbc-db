@@ -39,7 +39,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+20, 17816, 547, 3, -80.6269, -461.577, -1.59213, 3.75105, 7200, 7200, 1, 0, 0, 1), -- Bogstrok
 (@CGUID+21, 17817, 547, 3, -200.234, -703.039, 37.556, 4.96924, 7200, 7200, 0, 0, 0, 0), -- Greater Bogstrok
 (@CGUID+22, 17817, 547, 3, -14.3222, -182.544, -1.58811, 2.58571, 7200, 7200, 3, 0, 0, 1), -- Greater Bogstrok
--- (@CGUID+23, RE-USE
+(@CGUID+23, 26190, 547, 3, -95.33572, -207.4834, 16.28742, 1, 7200, 7200, 0, 0, 0, 0), -- [PH] Spank Target Bunny
 (@CGUID+24, 17817, 547, 3, -112.3111, -208.1104, -1.33469, 5.986479, 7200, 7200, 1, 0, 0, 1), -- Greater Bogstrok
 (@CGUID+25, 17817, 547, 3, -13.309, -200.404, -1.58687, 4.47067, 7200, 7200, 3, 0, 0, 1), -- Greater Bogstrok
 (@CGUID+26, 17817, 547, 3, -20.9667, -184.502, -1.85655, 1.3762, 7200, 7200, 3, 0, 0, 1), -- Greater Bogstrok
@@ -153,8 +153,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+134, 17964, 547, 3, -27.17291, 1.65894, -0.7652907, 1.815142, 7200, 7200, 0, 0, 0, 0), -- Wastewalker Worker
 (@CGUID+135, 0, 547, 3, -96.44904, -62.15407, -1.792045, 0.1396263, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
 (@CGUID+136, 17964, 547, 3, -61.51235, -20.17615, -2.663957, 4.18879, 7200, 7200, 0, 0, 0, 0), -- Wastewalker Worker
--- (@CGUID+137, RE-USE
--- (@CGUID+138, RE-USE
+(@CGUID+137, 25961, 547, 3, -109.224, -120.0521, -2.982424, 5.113815, 7200, 7200, 0, 0, 0, 0), -- Earthen Ring Totem
+(@CGUID+138, 25961, 547, 3, -92.68961, -119.6279, -2.270359, 4.223697, 7200, 7200, 0, 0, 0, 0), -- Earthen Ring Totem
 -- (@CGUID+139, RE-USE
 (@CGUID+140, 17964, 547, 3, -73.61772, -182.1575, -5.111982, 5.148721, 7200, 7200, 0, 0, 0, 0), -- Wastewalker Worker
 (@CGUID+141, 0, 547, 3, -60.16751, -176.9379, -4.0791, 4.660029, 7200, 7200, 0, 0, 0, 0), -- creature_spawn_entry
@@ -227,7 +227,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+208, 21128, 547, 3, -71.68305, -553.9335, -0.7895827, 2.841635, 7200, 7200, 2, 0, 0, 1), -- Coilfang Ray
 (@CGUID+209, 21128, 547, 3, -89.3931, -509.1571, -1.50806, 4.328416, 7200, 7200, 2, 0, 0, 1), -- Coilfang Ray
 (@CGUID+210, 22421, 547, 2, -296.4931, -459.0429, 6.146773, 0.7679449, 86400, 86400, 0, 0, 0, 0), -- Skar'this the Heretic
-(@CGUID+211, 25697, 547, 3, -92.4572, -110.664, -2.86676, 2.40855, 86400, 86400, 0, 0, 0, 0), -- Luma Skymother
+(@CGUID+211, 25697, 547, 3, -92.45719, -110.6642, -2.866759, 2.408554, 86400, 86400, 0, 0, 0, 0), -- Luma Skymother
 (@CGUID+212, 25710, 547, 3, 132.721, -116.256, -1.59053, 3.85833, 86400, 86400, 0, 0, 0, 0), -- Numa Cloudsister
 (@CGUID+213, 25745, 547, 3, -96.6415, -230.886, 4.78096, 1.41372, 86400, 86400, 0, 0, 0, 0), -- [PH] Ahune Summon Loc Bunny
 (@CGUID+214, 25746, 547, 3, -96.8723, -212.842, -1.14914, 4.15388, 86400, 86400, 0, 0, 0, 0), -- [PH] Ahune Loot Loc Bunny
@@ -346,15 +346,18 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+202, 1, -115.351, -584.643, 4.97746, 6.20593, 32000, 0),
 (@CGUID+202, 2, -115.351, -584.643, 4.97746, 6.20593, 20000, 1378);
 
-DELETE FROM `creature_movement_template` WHERE entry IN (17893,17941,17942,17957,17960,17961);
+DELETE FROM `creature_movement_template` WHERE entry IN (17893,17941,17942,17957,17960,17961,25754,25964,25965,25966);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+-- 17893
 (17893, 0, 1, -190.926, -796.39, 43.7993, 0, 0, 0),
 (17893, 0, 2, -190.926, -796.39, 43.7993, 0.733148, 3000, 1789301),
 (17893, 0, 3, -183.408, -780.199, 43.7993, 100, 1000, 1789302),
+-- 17941
 (17941, 0, 1, 121.63626, -380.37653, 29.957338, 100, 0, 0),
 (17941, 0, 2, 89.427284, -380.23688, 15.121437, 100, 0, 0),
 (17941, 0, 3, 49.4763, -380.21915, 3.0355754, 100, 0, 0),
 (17941, 0, 4, 89.26869, -380.23682, 15.089901, 100, 0, 0),
+-- 17942
 (17942, 0, 1, -261.614, -675.771, 10.5416, 0, 0, 0),
 (17942, 0, 2, -246.732, -683.163, 15.529, 0, 0, 0),
 (17942, 0, 3, -238.079, -686.423, 18.4731, 0, 0, 0),
@@ -363,6 +366,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17942, 0, 6, -208.055, -701.381, 34.9482, 0, 0, 0),
 (17942, 0, 7, -204.026, -702.29, 37.2308, 0, 0, 0),
 (17942, 0, 8, -199.493, -705.598, 37.8027, 100, 1000, 7),
+-- 17957
 (17957, 1, 1, -97.2996, -744.019, 34.8381, 0, 0, 1795701),
 (17957, 1, 2, -99.391, -744.745, 35.1639, 0, 0, 0),
 (17957, 1, 3, -101.482, -745.472, 35.4897, 0, 0, 0),
@@ -379,6 +383,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17957, 1, 14, -175.107, -768.043, 41.4645, 0, 0, 0),
 (17957, 1, 15, -179.833, -773.106, 43.0967, 0, 0, 0),
 (17957, 1, 16, -181.61, -776.623, 43.8054, 0, 0, 0),
+-- 17960
 (17960, 1, 1, -90.2328, -740.959, 36.8262, 0, 0, 0),
 (17960, 1, 2, -97.2765, -745.569, 36.8262, 0, 0, 0),
 (17960, 1, 3, -104.32, -750.179, 36.8262, 0, 0, 0),
@@ -393,6 +398,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17960, 1, 12, -170.165, -763.222, 38.0174, 0, 0, 0),
 (17960, 1, 13, -179.153, -767.196, 42.0397, 0, 0, 0),
 (17960, 1, 14, -180.005, -768.109, 42.3157, 0, 0, 0),
+-- 17961
 (17961, 1, 1, -93.8956, -741.546, 35.7611, 0, 0, 0),
 (17961, 1, 2, -98.6582, -742.38, 35.6239, 0, 0, 0),
 (17961, 1, 3, -103.421, -743.213, 35.4867, 0, 0, 0),
@@ -408,7 +414,92 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17961, 1, 13, -168.516, -770.098, 39.7835, 0, 0, 0),
 (17961, 1, 14, -173.984, -772.021, 42.0383, 0, 0, 0),
 (17961, 1, 15, -174.836, -772.934, 42.3143, 0, 0, 0),
-(17961, 1, 16, -180.41, -777.715, 43.8077, 0, 0, 0);
+(17961, 1, 16, -180.41, -777.715, 43.8077, 0, 0, 0),
+-- 25754
+(25754, 0, 1, -110.195, -116.621, -3.25569, 0.10472, 3000, 2575401), 
+(25754, 0, 2, -111.9345, -129.7239, -2.038486, 100, 0, 0), 
+(25754, 0, 3, -127.8612, -131.6409, -2.100631, 100, 0, 0), 
+(25754, 0, 4, -145.2233, -137.5543, -1.59056, 100, 0, 0), 
+(25754, 0, 5, -145.2233, -137.5543, -1.59056, 4.95, 5000, 2575403), 
+(25754, 1, 1, -145.2233, -137.5543, -1.59056, 100, 100, 5), 
+(25754, 1, 2, -140.9589, -134.8379, -1.214794, 100, 0, 0), 
+(25754, 1, 3, -134.4589, -131.0879, -1.464794, 100, 0, 0), 
+(25754, 1, 4, -128.2089, -127.3379, -1.464794, 100, 0, 0), 
+(25754, 1, 5, -123.4589, -125.0879, -1.214794, 100, 0, 0), 
+(25754, 1, 6, -119.2089, -122.5879, -1.214794, 100, 0, 0), 
+(25754, 1, 7, -117.9589, -121.5879, -1.464794, 100, 0, 0), 
+(25754, 1, 8, -115.2089, -119.8379, -1.714794, 100, 0, 0), 
+(25754, 1, 9, -112.9589, -118.3379, -2.214794, 100, 0, 0), 
+(25754, 1, 10, -110.1945, -116.6215, -3.339027, 0.10472, 5000, 2575402), 
+(25754, 2, 1, -112.21, -120.209, -2.658, 5.18363, 3000, 2575401), 
+(25754, 2, 2, -130.7326, -127.7443, -1.807112, 100, 0, 0), 
+(25754, 2, 3, -129.0413, -132.1494, -2.092847, 100, 0, 0), 
+(25754, 2, 4, -129.0413, -132.1494, -2.092847, 5.1, 5000, 2575404), 
+(25754, 3, 1, -129.0413, -132.1494, -2.092847, 100, 100, 5), 
+(25754, 3, 2, -126.3756, -130.1792, -1.667085, 100, 0, 0), 
+(25754, 3, 3, -124.1256, -128.6792, -1.417085, 100, 0, 0), 
+(25754, 3, 4, -116.8756, -123.4292, -1.667085, 100, 0, 0), 
+(25754, 3, 5, -112.6256, -120.4292, -2.417085, 100, 0, 0), 
+(25754, 3, 6, -112.2099, -120.209, -2.741323, 5.18363, 5000, 2575402), 
+(25754, 4, 1, -93.1848, -115.921, -2.69253, 3.80482, 3000, 2575401), 
+(25754, 4, 2, -100.8831, -124.1661, -1.898314, 100, 0, 0), 
+(25754, 4, 3, -111.8603, -131.0156, -1.826195, 100, 0, 0), 
+(25754, 4, 4, -133.1662, -129.1665, -1.811036, 100, 0, 0), 
+(25754, 4, 5, -137.4383, -136.405, -1.72384, 100, 0, 0), 
+(25754, 4, 6, -137.4383, -136.405, -1.72384, 5.03, 5000, 2575405), 
+(25754, 5, 1, -128.0616, -131.9128, -1.749853, 100, 100, 5), 
+(25754, 5, 2, -125.8116, -130.9128, -1.749853, 100, 0, 0), 
+(25754, 5, 3, -124.5616, -130.1628, -1.749853, 100, 0, 0), 
+(25754, 5, 4, -113.0616, -124.9128, -2.249853, 100, 0, 0), 
+(25754, 5, 5, -103.0616, -120.4128, -1.999853, 100, 0, 0), 
+(25754, 5, 6, -101.5616, -119.6628, -1.999853, 100, 0, 0), 
+(25754, 5, 7, -94.06155, -116.1628, -2.249853, 100, 0, 0), 
+(25754, 5, 8, -93.18479, -115.9206, -2.775866, 3.80482, 5000, 2575402),
+-- 25964
+(25964, 0, 3, -91.0969, -232.6422, 24.65563,  100, 0, 0),
+(25964, 0, 4, -97.20647, -234.4709, 28.46118,  100, 0, 0),
+(25964, 0, 5, -101.5825, -234.9054, 29.35008,  100, 0, 0),
+(25964, 0, 6, -107.1537, -233.7247, 27.1834,  100, 0, 0),
+(25964, 0, 7, -109.4618, -232.0907, 25.12787,  100, 0, 0),
+(25964, 0, 8, -109.4792, -229.4328, 20.98899,  100, 0, 0),
+(25964, 0, 9, -105.9522, -226.8887, 17.26674,  100, 0, 0),
+(25964, 0, 10, -101.0044, -224.8914, 16.04452,  100, 0, 0),
+(25964, 0, 11, -96.82773, -225.9608, 15.73896,  100, 0, 0),
+(25964, 0, 12, -92.59879, -227.0505, 15.54452,  100, 0, 0),
+(25964, 0, 13, -90.07465, -229.0938, 16.58224,  100, 0, 0),
+(25964, 0, 14, -88.24558, -231.7715, 22.47455,  100, 0, 0),
+(25964, 0, 15, -91.0969, -232.6422, 24.65563,  100, 0, 0),
+(25964, 0, 16, -97.20647, -234.4709, 28.46118,  100, 0, 0),
+-- 25965
+(25965, 0, 3, -91.0969, -232.6422, 24.65563,  100, 0, 0),
+(25965, 0, 4, -97.20647, -234.4709, 28.46118,  100, 0, 0),
+(25965, 0, 5, -101.5825, -234.9054, 29.35008,  100, 0, 0),
+(25965, 0, 6, -107.1537, -233.7247, 27.1834,  100, 0, 0),
+(25965, 0, 7, -109.4618, -232.0907, 25.12787,  100, 0, 0),
+(25965, 0, 8, -109.4792, -229.4328, 20.98899,  100, 0, 0),
+(25965, 0, 9, -105.9522, -226.8887, 17.26674,  100, 0, 0),
+(25965, 0, 10, -101.0044, -224.8914, 16.04452,  100, 0, 0),
+(25965, 0, 11, -96.82773, -225.9608, 15.73896,  100, 0, 0),
+(25965, 0, 12, -92.59879, -227.0505, 15.54452,  100, 0, 0),
+(25965, 0, 13, -90.07465, -229.0938, 16.58224,  100, 0, 0),
+(25965, 0, 14, -88.24558, -231.7715, 22.47455,  100, 0, 0),
+(25965, 0, 15, -91.0969, -232.6422, 24.65563,  100, 0, 0),
+(25965, 0, 16, -97.20647, -234.4709, 28.46118,  100, 0, 0),
+-- 25966
+(25966, 0, 3, -91.0969, -232.6422, 24.65563,  100, 0, 0),
+(25966, 0, 4, -97.20647, -234.4709, 28.46118,  100, 0, 0),
+(25966, 0, 5, -101.5825, -234.9054, 29.35008,  100, 0, 0),
+(25966, 0, 6, -107.1537, -233.7247, 27.1834,  100, 0, 0),
+(25966, 0, 7, -109.4618, -232.0907, 25.12787,  100, 0, 0),
+(25966, 0, 8, -109.4792, -229.4328, 20.98899,  100, 0, 0),
+(25966, 0, 9, -105.9522, -226.8887, 17.26674,  100, 0, 0),
+(25966, 0, 10, -101.0044, -224.8914, 16.04452,  100, 0, 0),
+(25966, 0, 11, -96.82773, -225.9608, 15.73896,  100, 0, 0),
+(25966, 0, 12, -92.59879, -227.0505, 15.54452,  100, 0, 0),
+(25966, 0, 13, -90.07465, -229.0938, 16.58224,  100, 0, 0),
+(25966, 0, 14, -88.24558, -231.7715, 22.47455,  100, 0, 0),
+(25966, 0, 15, -91.0969, -232.6422, 24.65563,  100, 0, 0),
+(25966, 0, 16, -97.20647, -234.4709, 28.46118,  100, 0, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+100, 0, 0, 1, 69, 0, '5301'), -- Coilfang Collaborator
@@ -424,7 +515,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (25697, 0, 0, 1, 0, 0, NULL), -- Luma Skymother
 (25745, 0, 0, 1, 0, 0, NULL), -- [PH] Ahune Summon Loc Bunny
 (25746, 0, 0, 1, 0, 0, NULL), -- [PH] Ahune Loot Loc Bunny
-(25754, 0, 0, 1, 0, 0, NULL), -- Earthen Ring Flamecaller
+(25754, 0, 1, 1, 0, 0, NULL), -- Earthen Ring Flamecaller
 (25952, 0, 0, 1, 0, 0, '46314'), -- Slippery Floor Bunny
 (25971, 0, 0, 1, 0, 0, NULL), -- Shaman Bonfire Bunny 000
 (25972, 0, 0, 1, 0, 0, NULL), -- Shaman Bonfire Bunny 001
@@ -454,7 +545,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+17, 184197, 547, 2, 119.7887, -137.3579, -0.7518879, 1.430738, 0, 0, 0.6558962, 0.7548511, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
 (@OGUID+18, 184198, 547, 1, 119.7887, -137.3579, -0.7518879, 1.430738, 0, 0, 0.6558962, 0.7548511, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
 (@OGUID+19, 185292, 547, 2, -297.0662, -459.9854, 3.035661, 0.1047193, 0, 0, 0.05233574, 0.9986296, 180, 180, 255, 1), -- Skar'this's Prison
-(@OGUID+20, 187882, 547, 3, -69.9045, -162.245, -2.36656, 2.42601, 0, 0, 0, 0, 180, 180, 255, 1), -- Ice Stone
+(@OGUID+20, 187882, 547, 3, -69.9045, -162.245, -2.36656, 2.42601, 0, 0, 0, 0, 86400, 86400, 255, 1), -- Ice Stone
 (@OGUID+21, 188067, 547, 3, -83.5253, -172.181, -3.81652, 0.017452, 0, 0, 0, 0, 180, 180, 255, 1), -- Ice Block
 (@OGUID+22, 188067, 547, 3, -75.2318, -217.329, -3.0728, -0.488691, 0, 0, 0, 0, 180, 180, 255, 1), -- Ice Block
 (@OGUID+23, 188067, 547, 3, -49.2725, -168.986, -1.89881, 2.00713, 0, 0, 0, 0, 180, 180, 255, 1), -- Ice Block
@@ -554,6 +645,9 @@ INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
 -- ======
 
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
+(@CGUID+23, 1), -- [PH] Spank Target Bunny
+(@CGUID+137, 1), -- Earthen Ring Totem
+(@CGUID+138, 1), -- Earthen Ring Totem
 (@CGUID+211, 1), -- Luma Skymother (Midsummer Fire Festival)
 (@CGUID+212, 1), -- Numa Cloudsister (Midsummer Fire Festival)
 (@CGUID+213, 1), -- [PH] Ahune Summon Loc Bunny (Midsummer Fire Festival)
@@ -845,22 +939,22 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+103, @OGUID+59, -1), -- Anchient Lichen (181278)
 (@SGGUID+103, @OGUID+60, -1), -- Anchient Lichen (181278)
 (@SGGUID+103, @OGUID+61, -1), -- Anchient Lichen (181278)
-(@SGGUID+104,@OGUID+1, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+2, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+40, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+41, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+42, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+43, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+44, -1), -- Felweed (181270)
-(@SGGUID+104,@OGUID+45, -1), -- Felweed (181270)
-(@SGGUID+105,@OGUID+3, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+4, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+5, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+6, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+46, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+47, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+48, -1), -- Ragveil/Flame Cap
-(@SGGUID+105,@OGUID+49, -1); -- Ragveil/Flame Cap
+(@SGGUID+104, @OGUID+1, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+2, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+40, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+41, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+42, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+43, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+44, -1), -- Felweed (181270)
+(@SGGUID+104, @OGUID+45, -1), -- Felweed (181270)
+(@SGGUID+105, @OGUID+3, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+4, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+5, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+6, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+46, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+47, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+48, -1), -- Ragveil/Flame Cap
+(@SGGUID+105, @OGUID+49, -1); -- Ragveil/Flame Cap
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+1, 2, 4, 0, @SGGUID+1, 4, 'Slave Pens - Coilfang Champion (2) Patrol 000'),
@@ -1009,42 +1103,113 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+44, 8, -197.918, -719.931, 37.6508, 1.95799, 0, 0),
 (@SGGUID+44, 9, -196.525, -699.135, 37.6758, 1.59827, 0, 0);
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+1,'Slave Pens - Coilfang Champion (2) Patrol 000'),
+(@SGGUID+2,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 001'),
+(@SGGUID+3,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress (3) Patrol 002'),
+(@SGGUID+4,'Slave Pens - Coilfang Champion | Coilfang Soothsayer | Coilfang Enchantress | Coilfang Scale-Healer (4) Patrol 003'),
+(@SGGUID+5,'Slave Pens - Coilfang Defender (2) Patrol 000'),
+(@SGGUID+6,'Slave Pens - Coilfang Defender (2) Patrol 001'),
+(@SGGUID+7,'Slave Pens - Coilfang Technician (2) Patrol 000'),
+(@SGGUID+8,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 001'),
+(@SGGUID+9,'Slave Pens - Coilfang Technician (2) Patrol 002'),
+(@SGGUID+10,'Slave Pens - Coilfang Technician (2) Patrol 003'),
+(@SGGUID+11,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 004'),
+(@SGGUID+12,'Slave Pens - Coilfang Technician | Coilfang Collaborator (3) Patrol 005'),
+(@SGGUID+13,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 006'),
+(@SGGUID+14,'Slave Pens - Coilfang Technician | Coilfang Enchantress (3) Patrol 007'),
+(@SGGUID+15,'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 001'),
+(@SGGUID+16,'Slave Pens - Greater Bogstrok | Bogstrok (2) Patrol 002'),
+(@SGGUID+43,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 003'),
+(@SGGUID+44,'Slave Pens - Greater Bogstrok (2) | Bogstrok (2) Patrol 004');
+
 -- =========
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1789301,1789302,1795701);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1789301,1789302,1795701,2575401,2575402,2575403,2575404,2575405);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1789301, 0, 0, 0, 0, 0, 0, 0, 0, 14575, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Say on orientation change'),
 (1789302, 0, 29, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Add NPC Flag gossip'),
 (1789302, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Pause Waypoints'),
-(1795701, 0, 0, 0, 0, 0, 0, 0, 0, 15896, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - Say On Spawn');
+(1795701, 0, 0, 0, 0, 0, 0, 0, 0, 15896, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Champion - Say On Spawn'),
+(2575401, 0, 28, 0, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'UNIT_STAND_STATE_STAND'),
+(2575401, 5, 25, 1, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'RUN ON'),
+(2575401, 10, 29, 1, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove NPCFLAGS'),
+(2575402, 0, 28, 1, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'UNIT_SIT'),
+(2575402, 10, 29, 1, 1, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove NPCFLAGS'),
+(2575402, 100, 20, 0, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'Idle'),
+(2575403, 10, 20, 0, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'Idle'),
+(2575403, 1000, 15, 46345, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 46345'),
+(2575403, 5000, 14, 46345, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'unaura 46345'),
+(2575403, 9000, 15, 46341, 1, 0, 25971, @CGUID+220, 1 | 0x10, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 46341'),
+(2575404, 10, 20, 0, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'Idle'),
+(2575404, 1000, 15, 46345, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 46345'),
+(2575404, 5000, 14, 46345, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'unaura 46345'),
+(2575404, 6000, 15, 46341, 1, 0, 25973, @CGUID+222, 1 | 0x10, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 46341'),
+(2575405, 10, 20, 0, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'Idle'),
+(2575405, 1000, 15, 46345, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 46345'),
+(2575405, 5000, 14, 46345, 0, 0, 0, 0, 0x04, 0, 0, 0, 0, 0, 0, 0, 0, 'unaura 46345'),
+(2575405, 6000, 15, 46341, 1, 0, 25972, @CGUID+221, 1 | 0x10, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 46341');
 
--- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM `dbscripts_on_creature_death` WHERE id = 25740;
+INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(25740,1,15,5,0,0,25971,@CGUID+220,7 | 0x10,0,0,0,0,0,0,0,0,'Shaman Bonfire Bunny 000 - kill self'),
+(25740,2,15,5,0,0,25972,@CGUID+221,7 | 0x10,0,0,0,0,0,0,0,0,'Shaman Bonfire Bunny 001 - kill self'),
+(25740,3,15,5,0,0,25973,@CGUID+222,7 | 0x10,0,0,0,0,0,0,0,0,'Shaman Bonfire Bunny 002 - kill self'),
+(25740,10,20,2,1,0,25745,@CGUID+216,7 | 0x10,1,0,0,0,0,0,0,0,'Earthen Ring Flamecaller#1 - Waypoints'),
+(25740,20,20,2,3,0,25745,@CGUID+217,7 | 0x10,1,0,0,0,0,0,0,0,'Earthen Ring Flamecaller#2 - Waypoints'),
+(25740,30,20,2,5,0,25745,@CGUID+215,7 | 0x10,1,0,0,0,0,0,0,0,'Earthen Ring Flamecaller#2 - Waypoints');
+
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN (10024,20598,20599,20600,20601);
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(10024, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang mob - Move Waypoint'),
+(20598, 1500, 31, 25971, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 25971'),
+(20598, 2000, 15, 45964, 1, 0, 25971, 255, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 45964 b->m'),
+(20598, 3000, 31, 25754, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 25754'),
+(20598, 3100, 0, 0, 0, 0, 25754, 200, 3, 24930, 0, 0, 0, 0, 0, 0, 0, 'buddy SAY - The Earthen Ring\'s Assault Begins.'),
+(20599, 1, 31, 25972, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 25972'),
+(20599, 100, 15, 45964, 1, 0, 25972, 255, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 45964 b->m'),
+(20600, 1, 31, 25973, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 25973'),
+(20600, 100, 15, 45964, 1, 0, 25973, 255, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'cast 45964 b->m'),
+(20601, 1, 31, 25754, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'search for 25754'),
+(20601, 100, 0, 0, 0, 0, 25754, @CGUID+216, 7 | 0x10, 24931, 0, 0, 0, 0, 0, 0, 0, 'buddy SAY - Ahune Retreats.  His defenses diminish.'),
+(20601, 37000, 0, 0, 0, 0, 25754, @CGUID+216, 7 | 0x10, 24932, 0, 0, 0, 0, 0, 0, 0, 'buddy SAY - Ahune will soon resurface.');
+
+DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (752001,754001,1138901);
+INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- 752001
+(752001, 0, 8, 17893, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Give Kill Credit to Group'),
+(752001, 0, 13, 0, 0, 0, 182094, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Open cage'),
+(752001, 0, 48, 256, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove UNIT_FLAG_IMMUNE_TO_PLAYER'),
+(752001, 0, 48, 512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove UNIT_FLAG_IMMUNE_TO_NPC'),
+(752001, 0, 22, 113, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Change faction'),
+(752001, 0, 29, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Remove NPC Gossip flag'),
+(752001, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Move Waypoint'),
+(752001, 0, 10, 17957, 300000, 1, 0, 0, 8, 1, 0, 0, 0, -97.29962, -744.0187, 34.83808, 3.476041, 'Naturalist Bite - Spawn Coilfang Champion'),
+(752001, 0, 10, 17960, 300000, 1, 0, 0, 8, 1, 0, 0, 0, -93.89555, -741.5464, 35.76108, 3.737259, 'Naturalist Bite - Spawn Coilfang Soothsayer'),
+(752001, 0, 10, 17961, 300000, 1, 0, 0, 8, 1, 0, 0, 0, -90.23283, -740.959, 35.3191, 35.94978, 'Naturalist Bite - Spawn Coilfang Enchantress'),
+-- 754001
+(754001, 0, 15, 34906, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Naturalist Bite - Cast Mark of Bite'),
+-- 1138901
+(1138901, 0, 15, 45937, 0, 0, 25745, @CGUID+213, 7 | 0x10, 0, 0, 0, 0, 0, 0, 0, 0, '[PH] Ahune Summon Loc Bunny - Cast Ahune - Summoning Visual 1'),
+(1138901, 100, 20, 2, 0, 0, 25745, @CGUID+216, 7 | 0x10, 1, 0, 0, 0, 0, 0, 0, 0, 'Earthen Ring Flamecaller#1 - Waypoints'),
+(1138901, 101, 20, 2, 4, 0, 25745, @CGUID+215, 7 | 0x10, 1, 0, 0, 0, 0, 0, 0, 0, 'Earthen Ring Flamecaller#2 - Waypoints'),
+(1138901, 102, 20, 2, 2, 0, 25745, @CGUID+217, 7 | 0x10, 1, 0, 0, 0, 0, 0, 0, 0, 'Earthen Ring Flamecaller#3 - Waypoints'),
+(1138901, 500, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'despawn object'),
+(1138901, 1000, 15, 46603, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Force Wisp Flight Missile'),
+(1138901, 1000, 0, 0, 0, 0, 0, 0, 0, 24895, 0, 0, 0, 0, 0, 0, 0, 'say Ahune 1'),
+(1138901, 3000, 15, 45930, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'cast Ahune - Summoning Rhyme Spell,  make bonfire'),
+(1138901, 3000, 0, 0, 0, 0, 0, 0, 0, 24893, 0, 0, 0, 0, 0, 0, 0, 'say Ahune 2'),
+(1138901, 5000, 0, 0, 0, 0, 0, 0, 0, 24894, 0, 0, 0, 0, 0, 0, 0, 'say Ahune 3'),
+(1138901, 10000, 15, 46402, 0, 0, 25745, @CGUID+213, 7 | 0x10, 0, 0, 0, 0, 0, 0, 0, 0, '[PH] Ahune Summon Loc Bunny - Cast Ahune Resurfaces'),
+(1138901, 10000, 10, 25740, 0, 0, 0, 0, 0, 0, 0, 0, 0,  -99.1021, -233.753, -1.22297, 1.5282, 'spawn Ahune'),
+(1138901, 12000, 10, 25865, 0, 0, 25740, 255, 7,  0, 0, 0, 0, -98.0151, -230.456, -1.21089, 1.79769, 'spawn Frozen Core');
+
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-
-DELETE FROM `dbscripts_on_relay` WHERE `id` = 10024;
-INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-('10024', '0', '20', '2', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Coilfang mob - Move Waypoint');
-
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-
-DELETE FROM `dbscripts_on_gossip` WHERE `id` IN (7540,7520);
-INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-('7520', '0', '8', '17893', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Give Kill Credit to Group'),
-('7520', '0', '13', '0', '0', '0', '182094', '5', '1', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Open cage'),
-('7520', '0', '48', '256', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Remove UNIT_FLAG_IMMUNE_TO_PLAYER'),
-('7520', '0', '48', '512', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Remove UNIT_FLAG_IMMUNE_TO_NPC'),
-('7520', '0', '22', '113', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Change faction'),
-('7520', '0', '29', '1', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Remove NPC Gossip flag'),
-('7520', '0', '20', '2', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Move Waypoint'),
-('7520', '0', '10', '17957', '300000', '1', '0', '0', '8', '1', '0', '0', '0', '-97.29962', '-744.0187', '34.83808', '3.476041', 'Naturalist Bite - Spawn Coilfang Champion'),
-('7520', '0', '10', '17960', '300000', '1', '0', '0', '8', '1', '0', '0', '0', '-93.89555', '-741.5464', '35.76108', '3.737259', 'Naturalist Bite - Spawn Coilfang Soothsayer'),
-('7520', '0', '10', '17961', '300000', '1', '0', '0', '8', '1', '0', '0', '0', '-90.23283', '-740.959', '35.3191', '35.94978', 'Naturalist Bite - Spawn Coilfang Enchantress'),
-('7540', '0', '15', '34906', '3', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Naturalist Bite - Cast Mark of Bite');
-
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES

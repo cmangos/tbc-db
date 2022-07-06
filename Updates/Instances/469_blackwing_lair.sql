@@ -425,6 +425,11 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@GROUP_ID+1, 4, 4, 0, @PATH_ID+1, 4, 'Blackwing Lair - Blackwing Taskmaster (3) Patrol 001'),
 (@GROUP_ID+2, 4, 4, 0, @PATH_ID+2, 4, 'Blackwing Lair - Blackwing Taskmaster (3) Patrol 002');
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@PATH_ID+0,'Blackwing Lair - Blackwing Taskmaster (3) Patrol 000'),
+(@PATH_ID+1,'Blackwing Lair - Blackwing Taskmaster (3) Patrol 001'),
+(@PATH_ID+2,'Blackwing Lair - Blackwing Taskmaster (3) Patrol 002');
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 (@CGUID+1, 10162, 469, -7588.27, -1261.92, 482.03, 0.610865, 604800, 604800, 0, 0, 0, 0), -- Lord Victor Nefarius
 (@CGUID+2, 11981, 469, -7407.94, -1031.04, 477.35, 0.87, 604800, 604800, 5, 0, 0, 1), -- Flamegor

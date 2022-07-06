@@ -57,11 +57,16 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+208, 3, -791.471, -170.21, -38.9471, 0, 0, 0),
 (@CGUID+208, 4, -762.794, -157.082, -46.5348, 0, 0, 0);
 
--- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+-- Aku'mai
+(4829, 0, 1, -835.87, -419.49, -33.8904, 100, 0, 0), -- guessed
+(4829, 0, 2, -833.53, -394.72, -33.8904, 1.928, 30000, 0), -- guessed
+(4829, 0, 3, -835.87, -419.49, -33.8904, 100, 0, 0), -- guessed
+(4829, 0, 4, -832.57, -461.36, -34.0912, 100, 0, 0), -- guessed
+(4829, 0, 5, -850.49, -467.74, -34.0226, 100, 0, 0), -- guessed
+(4829, 0, 6, -848.446, -453.865, -33.8922, 1.5708, 60000, 0); -- spawn
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+6, 0, 0, 0, 0, 0, NULL), -- Fallenroot Shadowstalker
-(@CGUID+14, 0, 0, 0, 0, 0, NULL), -- Fallenroot Shadowstalker
 (@CGUID+24, 0, 0, 0, 0, 0, NULL), -- Fallenroot Hellcaller
 (@CGUID+38, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
 (@CGUID+39, 0, 0, 1, 0, 0, NULL), -- Blackfathom Sea Witch
@@ -88,8 +93,8 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
 (4787, 0, 7, 1, 0, 0, NULL), -- Argent Guard Thaelrid
-(4789, 0, 0, 1, 0, 0, '30831'), -- Fallenroot Rogue
-(4798, 0, 33554432, 1, 0, 0, NULL), -- Fallenroot Shadowstalker
+(4789, 0, 0, 1, 0, 0, '7939 22766'), -- Fallenroot Rogue
+(4798, 0, 0, 1, 0, 0, '7939 22766'), -- Fallenroot Shadowstalker
 (4799, 0, 0, 1, 0, 0, NULL), -- Fallenroot Hellcaller
 (4805, 0, 0, 1, 0, 0, '12544'), -- Blackfathom Sea Witch
 (4807, 0, 0, 1, 0, 0, NULL), -- Blackfathom Myrmidon
@@ -328,7 +333,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (@CGUID+204, 4827, 48, -818.598, -54.6887, -38.2682, 0.907571, 7200, 7200, 3, 0, 0, 1), -- Deep Pool Threshfin
 (@CGUID+205, 4827, 48, -795.99, -156.208, -43.0987, 3.59538, 7200, 7200, 2, 0, 0, 1), -- Deep Pool Threshfin
 (@CGUID+206, 4827, 48, -843.467, -94.0556, -37.2355, 0.191986, 7200, 7200, 3, 0, 0, 1), -- Deep Pool Threshfin
-(@CGUID+207, 4829, 48, -848.446, -453.865, -33.8922, 1.5708, 86400, 86400, 0, 0, 0, 0), -- Aku'mai
+(@CGUID+207, 4829, 48, -848.446, -453.865, -33.8922, 1.5708, 86400, 86400, 0, 0, 0, 2), -- Aku'mai
 (@CGUID+208, 4830, 48, -746.744, -169.427, -50.6239, 5.49537, 86400, 86400, 0, 0, 0, 2), -- Old Serra'kis
 (@CGUID+209, 4831, 48, -299.917, 413.755, -57.1229, 3.60618, 86400, 86400, 0, 0, 0, 0), -- Lady Sarevess
 (@CGUID+210, 4832, 48, -818.832, -155.576, -25.7923, 4.74729, 86400, 86400, 0, 0, 0, 0), -- Twilight Lord Kelris

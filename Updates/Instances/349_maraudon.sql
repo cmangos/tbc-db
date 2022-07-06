@@ -1445,6 +1445,10 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+0, 2, 3, 0, @SGGUID+0, 2, 'Maraudon - Sister of Celebrian (2) Patrol 000'),
 (@SGGUID+1, 2, 3, 0, @SGGUID+1, 2, 'Maraudon - Sister of Celebrian (2) Patrol 001');
 
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+0,'Maraudon - Sister of Celebrian (2) Patrol 000'),
+(@SGGUID+1,'Maraudon - Sister of Celebrian (2) Patrol 001');
+
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+0, 1, 948.271, -147.406, -60.1059, 100, 0, 0),
 (@SGGUID+0, 2, 953.646, -127.461, -62.264, 100, 0, 0),
