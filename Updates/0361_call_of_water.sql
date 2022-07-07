@@ -67,7 +67,7 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (700700,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Pause Movement'),
 (700700,0,1,0,0,0,0,0,0,0,3070,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Say Text'),
 (700700,3000,0,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Face Player'),
-(700700,3000,1,15,9835,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Cast Sapta Sight on Player'),
+(700700,3000,1,15,9735,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Cast Sapta Sight on Player'),
 (700700,6000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Unpause Movement'),
 (700701,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Pause Movement'),
 (700701,0,1,36,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Face Player'),
@@ -81,6 +81,9 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (700703,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Remove Movement'),
 (700703,0,1,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Remove Active Object'),
 (700703,4000,0,28,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Set Stanstate');
+
+-- Add spell script target for Spell Sapta Sight
+INSERT INTO `spell_script_target` (`entry`, `targetEntry`) VALUES ('9735', '113791');
 
 -- Make Minoe Manifestation of Water only visable when having Sapta Sight buff 
 UPDATE `creature_template_addon` SET `auras`='8203' WHERE (`entry`='5895');
