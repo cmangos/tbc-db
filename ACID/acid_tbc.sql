@@ -30844,6 +30844,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Frostwolf Emissary 15106
 ('1510601','15106','1','0','100','1','10000','90000','20000','70000','0','0','10','11','18','0','0','0','0','0','0','0','0','0','Frostwolf Emissary - Random Laugh or Cry Emote'),
 ('1510602','15106','1','0','100','1','5000','25000','10000','30000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Frostwolf Emissary - Talk Emote OOC'),
+-- Gnomish Flame Turret 17458
+('1745801','17458','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Gnomish Flame Turret - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
+('1745802','17458','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Gnomish Flame Turret - Set Defensive state on Spawn'),
+('1745803','17458','9','0','100','1','0','10','1000','1000','0','0','11','30527','1','0','0','0','0','0','0','0','0','0','Gnomish Flame Turret - Cast Fire Blast'),
 -- Eye of the Storm Emissary 22013
 ('2201301','22013','1','0','100','1','10000','90000','20000','70000','0','0','10','11','18','0','0','0','0','0','0','0','0','0','Eye of the Storm Emissary - Random Laugh or Cry Emote'),
 ('2201302','22013','1','0','100','1','5000','25000','10000','30000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Eye of the Storm Emissary - Talk Emote OOC'),
