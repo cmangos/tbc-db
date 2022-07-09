@@ -1,5 +1,5 @@
 -- Respawn Dustwallow Marsh Rare Mobs using CCSDB, VMangos, TrinityCore
-
+DELETE FROM `creature_addon` WHERE `guid` = 31612; -- Creature (GUID: 31612) does not exist but has a record in `creature_addon` c.14230 (b2_1_flags 0/16, doesnt matter)
 DELETE FROM `creature` WHERE `id` BETWEEN 14230 AND 14237;
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 -- Burgle Eye 14230
