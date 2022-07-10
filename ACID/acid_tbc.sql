@@ -30775,9 +30775,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grace of Air Totem 7486 - TotemAI
 -- Grace of Air Totem II 7487 - TotemAI
 -- Goblin Land Mine 7527 - s.4100,10837,21688
-('752701','7527','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Set ReactState Passive on Spawn'),
-('752702','7527','29','0','100','0','5000','5000','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Set Phase 1 on Generic Timer'),
-('752703','7527','10','1','100','0','0','8','0','0','0','0','11','4043','15','0','37','0','0','0','0','0','0','0','Goblin Land Mine - Cast Detonation and Die on Hostile LOS (8y) (Phase 1)'),
+('752701','7527','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Goblin Land Mine - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
+('752702','7527','11','0','100','0','0','0','0','0','0','0','11','11816','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Cast Land Mine Arming on Spawn'),
+('752703','7527','29','0','100','0','100','100','0','0','0','0','1','3541','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
+('752704','7527','29','0','100','0','5000','5000','0','0','0','0','1','3542','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
+('752705','7527','29','0','100','0','10000','10000','0','0','0','0','1','3543','0','0','22','1','0','0','28','0','11816','0','Goblin Land Mine - Say and Set Phase 1 and remove aura on Generic Timer'),
+('752706','7527','9','1','100','0','0','8','0','0','0','0','11','4043','0','0','37','0','0','0','0','0','0','0','Goblin Land Mine - Cast Detonation and Die (Phase 1'),
+('752707','7527','6','0','100','0','0','0','0','0','0','0','41','1000','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Despawn 0 on Death'),
 -- Fire Nova Totem IV 7844 - TotemAI
 -- Fire Nova Totem V 7845 - TotemAI
 -- Greater Healing Ward 8179 - TotemAI
