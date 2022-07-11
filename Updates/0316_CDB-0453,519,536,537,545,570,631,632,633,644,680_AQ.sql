@@ -58,7 +58,7 @@ UPDATE `creature_template` SET `MinLevel` = 61 WHERE `Entry` = 15344; -- Swarmgu
 UPDATE `creature_template` SET `MinLevel` = 63, `MaxLevel` = 63 WHERE `Entry` = 15391; -- Captain Qeez
 UPDATE `creature_template` SET `MinLevel` = 63, `MaxLevel` = 63 WHERE `Entry` = 15386; -- Major Yeggeth
 
-UPDATE `creature_template` SET `Faction` = 7, `Faction` = 7, `MovementType` = 1 WHERE `Entry` = 15168; -- Vile Scarab
+UPDATE `creature_template` SET `Faction` = 15, `Faction` = 15, `MovementType` = 1 WHERE `Entry` = 15168; -- Vile Scarab
 
 UPDATE `creature_template` SET `Faction` = 7, `Faction` = 7, `MovementType` = 1 WHERE `Entry` = 15333; -- Silicate Feeder
 
