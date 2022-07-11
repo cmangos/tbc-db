@@ -22,9 +22,9 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (929800,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Pause Waypoints'),
 (929800,0,1,0,0,0,0,0,0,0,6231,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Say EmoteText'),
 (929800,3000,0,0,0,0,0,0,0,0,6232,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Say Text'),
-(929800,3000,1,10,14372,180000,1,0,0,8,1,0,0,0,0,6389.5317,-2501.9636,541.0671, 1.6231,0,20000,'Donova Snowden - Spawn Winterfall Ambusher'),
-(929800,3000,2,10,14372,180000,1,0,0,8,1,0,0,0,0,6386.3447,-2501.3552,540.42206,3.52556,0,20000,'Donova Snowden - Spawn Winterfall Ambusher'),
-(929800,3000,3,10,14372,180000,1,0,0,8,1,0,0,0,0,6389.5327,-2498.4856,540.7365,5.2010,0,20000,'Donova Snowden - Spawn Winterfall Ambusher'),
+(929800,3000,1,10,14372,180000,1,0,0,8,1,0,0,0,0,6389.5317,-2501.9636,541.0671, 1.6231,0,4000,'Donova Snowden - Spawn Winterfall Ambusher'),
+(929800,3000,2,10,14372,180000,1,0,0,8,1,0,0,0,0,6386.3447,-2501.3552,540.42206,3.52556,0,4000,'Donova Snowden - Spawn Winterfall Ambusher'),
+(929800,3000,3,10,14372,180000,1,0,0,8,1,0,0,0,0,6389.5327,-2498.4856,540.7365,5.2010,0,4000,'Donova Snowden - Spawn Winterfall Ambusher'),
 (929800,6000,0,0,0,0,0,0,0,0,6233,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Say Text'),
 (929800,11000,0,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Set Run'),
 (929800,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Donova Snowden - Unpause Waypoints'),
@@ -44,9 +44,9 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 -- Text emote
 UPDATE `broadcast_text` SET `ChatTypeID`='2' WHERE (`Id`='6231');
 
-DELETE FROM conditions WHERE condition_entry = '20000';
+DELETE FROM conditions WHERE condition_entry = '4000';
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `flags`, `comments`) VALUES 
-('20000', '37', '14372', '20', '1', 'Winterfall Ambusher in Range');
+('4000', '37', '14372', '20', '1', 'Winterfall Ambusher in Range');
 
 -- Update spawn Positions from Winterfall Runners
 -- 0x204CB000200AA900000064000039F0B5 Mover
