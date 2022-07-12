@@ -9468,9 +9468,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodmyst Isle
 -- ==============
 -- Water Spirit (6748) - NSR
-('2290300','6748','30','0','100','0','5','0','0','0','0','0','51','0','0','0','0','0','0','0','0','0','0','0','Water Spirit - Unpause Movement on RECEIVE_AI_EVENT'),
+('674801','6748','30','0','100','0','5','0','0','0','0','0','51','0','0','0','0','0','0','0','0','0','0','0','Water Spirit - Unpause Movement on RECEIVE_AI_EVENT'),
 -- Corrupt Water Spirit (5897)
-('2290301','5897','30','0','100','0','5','0','0','0','0','0','53','5897','0','0','0','0','0','0','0','0','0','0','Corrupt Water Spirit - Start Relay Script'),
+('589701','5897','30','0','100','0','5','0','0','0','0','0','53','5897','0','0','0','0','0','0','0','0','0','0','Corrupt Water Spirit - Start Relay Script'),
 -- Injured Night Elf Priestess (17117) - NSR
 -- Aqueous (17275) - NSR
 -- Watery Aspect (17276) - NSR
