@@ -1,9 +1,13 @@
 -- Start script for Quest 'Distracting Jarven'
 -- Quest is available when you accept Bitter Rivals
-UPDATE `quest_template` SET `PrevQuestId`='310' WHERE (`entry`='308');
+UPDATE `quest_template` SET `PrevQuestId`='0' WHERE (`entry`='308');
 
-DELETE FROM `dbscripts_on_quest_start` WHERE id = '308';
-INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
+DELETE FROM conditions WHERE condition_entry = 3751;
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `comments`) VALUES ('3751', '9', '310', 'Distract Jarven - Quest Bitter Rivals taken');
+UPDATE `quest_template` SET `RequiredCondition`='3751' WHERE (`entry`='308');
+
+DELETE FROM `dbscripts_on_quest_end` WHERE id = '308';
+INSERT INTO dbscripts_on_quest_end(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 (308,0,0,21,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Set Active'),
 (308,0,1,29,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Remove NPC Flags'),
 (308,0,2,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Start Movement'),
@@ -26,7 +30,7 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 (@PATH,0,10,-5597.7075,-535.45636,399.16,100,0,0,''),
 (@PATH,0,11,-5597.95,-529.76855,399.65842,100,0,0,''),
 (@PATH,0,12,-5601.2363,-529.56573,399.6584,100,0,0,''),
-(@PATH,0,13,-5602.804,-530.8537,399.6584,100,5000,137301,'Top Event'),
+(@PATH,0,13,-5602.804,-530.8537,399.6584,100,17000,137301,'Top Event'),
 (@PATH,0,14,-5597.1274,-531.0143,399.65842,100,0,0,''),
 (@PATH,0,15,-5597.4155,-537.65393,399.16,100,0,0,''),
 (@PATH,0,16,-5597.5083,-540.71375,399.18384,100,0,0,''),
@@ -48,9 +52,7 @@ DELETE FROM `dbscripts_on_creature_movement` WHERE id IN(137300, 137301, 137302,
 INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 (137300,0,0,9,35875,71,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Respawn Unguarded Thunderbrew Barrel'),
 (137300,1000,1,40,0,0,0,269,10,1,0,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Despawn Guarded Thunderbrew Barrel'),
-(137301,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Pause Waypoints'),
 (137301,1000,1,0,0,0,0,0,0,0,125,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Say Text'),
-(137301,17000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Unpause Waypoints'),
 (137302,1000,1,0,0,0,0,0,0,0,126,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Say Text'),
 (137303,0,0,40,0,0,0,270,10,1,0,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Despawn Unguarded Thunderbrew Barrel'),
 (137303,0,1,21,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Jarven Thunderbrew - Remove Active'),
