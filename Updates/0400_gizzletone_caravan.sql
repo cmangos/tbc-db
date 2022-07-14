@@ -9,23 +9,44 @@ UPDATE `creature` SET `position_x`='-694.2854', `position_y`='1513.5524', `posit
 -- Gizelton Caravan Kodo - 2
 UPDATE `creature` SET `position_x`='-700.3834', `position_y`='1522.3862', `position_z`='90.37961', `orientation`='4.642575' WHERE (`guid`='27289');
 
-
 -- On Respawn script, timers based on ptr tests
+-- On respawn Rigger Gizleton doesnt have any npc flags, only gets added when on Southside point or at escort.
+UPDATE `creature_template` SET `NpcFlags`='0' WHERE (`Entry`='11626');
+
+-- On respawn Cork Gizleton only have npcflag gossip, quest gets added when on escort point
+UPDATE `creature_template` SET `NpcFlags`='1' WHERE (`Entry`='11625');
+
 DELETE FROM `dbscripts_on_relay` WHERE id = '11625';
 INSERT INTO dbscripts_on_relay(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 (11625,0,0,10,12245,613000,0,0,0,0,0,0,0,0,0,-692.7433,1522.2029,90.361115,0.558505,0,0,'Cork Gizelton - Spawn Vendor Tron'),
-(11625,0,0,29,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag'),
+(11625,0,0,29,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add Gossip Flag'),
 (11625,604000,0,29,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove Gossip Flag'),
 (11625,604000,0,0,0,0,0,0,0,0,7505,7,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
 (11625,616000,2,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Set Run'),
 (11625,616000,3,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Change Movement');
 
--- Escort 1 stop
-DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (1162501, 1162502);
+-- Movement Scripts
+DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (1162501, 1162502, 1162502);
 INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
+-- Escort 1 stop
 (1162501,0,0,29,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add QuestGiver Flag'),
 (1162501,1000,0,0,0,0,0,0,0,0,7474,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
-(1162502,0,0,29,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag');
+-- No player took quest, remove QuestGiver flag and start waypoints again.
+(1162501,23000,0,29,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag'),
+-- Southside stop
+(1162502,5000,0,29,1,1,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Add Gossip Flag'),
+(1162502,6000,0,10,12246,610000,0,0,0,0,0,0,0,0,0,-1926.6038,2412.7925,60.695602,0.1745329,0,0,'Cork Gizelton - Spawn Super-Seller 680'),
+(1162502,605000,0,29,1,0,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Remove Gossip Flag'),
+(1162502,605000,0,29,1,0,0,11626,20,0,7506,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text'),
+-- Escort 2 stop
+(1162503,0,0,29,2,1,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Add QuestGiver Flag'),
+(1162503,1000,0,0,0,0,0,11626,20,0,7474,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text'),
+-- No player took quest, remove QuestGiver flag and start waypoints again.
+(1162503,23000,0,29,2,0,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Remove QuestGiver Flag'),
+-- Northside Stop
+(1162504,5000,0,28,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add QuestGiver Flag'),
+(1162504,5000,0,10,12245,613000,0,0,0,0,0,0,0,0,0,-692.7433,1522.2029,90.361115,0.55850,0,0,'Cork Gizelton - Spawn Super-Seller 680'),
+(1162504,609000,0,29,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag');
 
 -- Normal Waypoints when not escorting
 SET @PATH := 11625; 
@@ -48,7 +69,7 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 (@PATH,0,15,-628.5193,1261.6598,89.25135,100,0,0),
 -- Escort quest 1 22:13:06.217 4min wait time
 (@PATH,0,16,-672.38104,1241.8248,89.29438,100,24000,1162501),
-(@PATH,0,17,-702.0911,1222.1292,90.12284,100,100,1162502),
+(@PATH,0,17,-702.0911,1222.1292,90.12284,100,0,0),
 (@PATH,0,18,-744.7477,1200.8258,95.18287,100,0,0),
 (@PATH,0,19,-771.4321,1187.901,98.25634,100,0,0),
 (@PATH,0,20,-803.5311,1179.235,99.54547,100,0,0),
@@ -108,7 +129,8 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 (@PATH,0,74,-1933.0764,2445.4846,59.94646,100,0,0),
 (@PATH,0,75,-1942.031,2435.7446,60.367874,100,0,0),
 (@PATH,0,76,-1938.1177,2419.8853,60.81385,100,0,0),
-(@PATH,0,77,-1924.2578,2408.5117,60.668755,100,0,0),
+-- Southside wait
+(@PATH,0,77,-1924.2578,2408.5117,60.668755,100,616000,1162502),
 (@PATH,0,78,-1904.0231,2395.005,59.857014,100,0,0),
 (@PATH,0,79,-1889.7224,2362.4868,59.929607,100,0,0),
 (@PATH,0,80,-1876.6744,2333.6284,59.929607,100,0,0),
@@ -117,7 +139,7 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 (@PATH,0,83,-1829.3954,2225.2505,59.94646,100,0,0),
 (@PATH,0,84,-1806.38,2200.0608,59.94646,100,0,0),
 -- Escort 2
-(@PATH,0,85,-1803.0452,2183.6484,59.94646,100,0,0),
+(@PATH,0,85,-1803.0452,2183.6484,59.94646,100,24000,1162503),
 (@PATH,0,86,-1802.5979,2105.9092,63.560505,100,0,0),
 (@PATH,0,87,-1810.5092,2075.089,63.224747,100,0,0),
 (@PATH,0,88,-1821.3414,2042.4484,61.039787,100,0,0),
@@ -184,7 +206,7 @@ INSERT INTO `creature_movement_template` (`Entry`, `PathId`, `Point`, `PositionX
 (@PATH,0,149,-696.062,1542.2239,90.02724,100,0,0),
 (@PATH,0,150,-698.582,1525.7721,90.37445,100,0,0),
 (@PATH,0,151,-691.2446,1516.9963,90.48822,100,0,0),
-(@PATH,0,152,-691.2446,1516.9963,90.48822,5.707226753234863281,0,0);
+(@PATH,0,152,-691.2446,1516.9963,90.48822,5.707226753234863281,619000,1162504);
 
 DELETE FROM waypoint_path_name WHERE PathId = '11625';
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES 
