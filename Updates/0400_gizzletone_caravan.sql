@@ -40,13 +40,14 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (1162502,605000,0,29,1,0,0,11626,20,0,7506,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text'),
 -- Escort 2 stop
 (1162503,0,0,29,2,1,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Add QuestGiver Flag'),
-(1162503,1000,0,0,0,0,0,11626,20,0,7474,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text'),
+(1162503,1000,0,0,0,0,0,11626,20,0,7475,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text'),
 -- No player took quest, remove QuestGiver flag and start waypoints again.
 (1162503,23000,0,29,2,0,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Remove QuestGiver Flag'),
 -- Northside Stop
 (1162504,5000,0,28,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add QuestGiver Flag'),
 (1162504,5000,0,10,12245,613000,0,0,0,0,0,0,0,0,0,-692.7433,1522.2029,90.361115,0.55850,0,0,'Cork Gizelton - Spawn Super-Seller 680'),
-(1162504,609000,0,29,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag');
+(1162503,609000,0,0,0,0,0,0,0,0,7505,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
+(1162504,609000,1,29,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag');
 
 -- Normal Waypoints when not escorting
 SET @PATH := 11625; 
