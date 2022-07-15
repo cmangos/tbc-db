@@ -1,7 +1,7 @@
 -- Fix gizzletone Caravan Escort Quests
 -- Update spawn positions
 -- Cork Gizelton
-UPDATE `creature` SET `position_x`='-691.4602', `position_y`='1520.0903', `position_z`='90.361115', `orientation`='0.506145' WHERE (`guid`='28714');
+UPDATE `creature` SET `position_x`='-691.4602', `position_y`='1520.0903', `position_z`='90.361115', `orientation`='0.506145',`MovementType`='0' WHERE (`guid`='28714');
 -- Rigger Gizelton
 UPDATE `creature` SET `position_x`='-694.267', `position_y`='1524.2072', `position_z`='90.361115', `orientation`='0.261799' WHERE (`guid`='28728');
 -- Gizelton Caravan Kodo - 1
@@ -13,23 +13,51 @@ UPDATE `creature` SET `position_x`='-700.3834', `position_y`='1522.3862', `posit
 -- On respawn Rigger Gizleton doesnt have any npc flags, only gets added when on Southside point or at escort.
 UPDATE `creature_template` SET `NpcFlags`='0' WHERE (`Entry`='11626');
 
--- On respawn Cork Gizleton only have npcflag gossip, quest gets added when on escort point
-UPDATE `creature_template` SET `NpcFlags`='1' WHERE (`Entry`='11625');
+-- On respawn Cork Gizleton movement gets added after 10 minutes
+UPDATE `creature_template` SET MovementType='0' WHERE (`Entry`='11625');
+
+-- Delete old Group Setting
+DELETE FROM `creature_linking` WHERE (`master_guid`='27290');
+DELETE FROM `creature_linking_template` WHERE (`entry`='11626');
+
+-- Add them into spawn_group
+DELETE FROM `spawn_group` WHERE `Id` = '19010';
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES 
+('19010', 'Desolace - Gizelton Caravan', '0', '4', '0', '2');
+
+-- Formation with option dont follow leader
+DELETE FROM `spawn_group_formation` WHERE `Id` = '19010';
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES 
+('19010', '1', '10', '4', '0', '0', 'Desolace - Gizelton Caravan');
+
+DELETE FROM `spawn_group_spawn` WHERE `Id` = '19010';
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES 
+('19010', '28714', '0'),
+('19010', '28728', '1'),
+('19010', '27290', '2'),
+('19010', '27289', '3');
+
+-- Start Script after respawning. Maybe add this to creature_ai_scripts
+DELETE FROM creature_spawn_data_template WHERE Entry = '11625';
+INSERT INTO `creature_spawn_data_template` (`Entry`, `RelayId`) VALUES ('11625', '11625');
+DELETE FROM creature_spawn_data WHERE Guid = '28714';
+INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES ('28714', '11625');
 
 DELETE FROM `dbscripts_on_relay` WHERE id = '11625';
 INSERT INTO dbscripts_on_relay(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 (11625,0,0,10,12245,613000,0,0,0,0,0,0,0,0,0,-692.7433,1522.2029,90.361115,0.558505,0,0,'Cork Gizelton - Spawn Vendor Tron'),
-(11625,0,0,29,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add Gossip Flag'),
+(11625,0,0,29,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove Quest Flag'),
 (11625,604000,0,29,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove Gossip Flag'),
 (11625,604000,0,0,0,0,0,0,0,0,7505,7,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
+(11625,616000,1,51,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Change Formation Option'),
 (11625,616000,2,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Set Run'),
 (11625,616000,3,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Change Movement');
 
 -- Movement Scripts
-DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (1162501, 1162502, 1162502);
+DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (1162501, 1162502, 1162503, 1162504);
 INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 -- Escort 1 stop
-(1162501,0,0,29,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add QuestGiver Flag'),
+(1162501,1000,0,29,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add QuestGiver Flag'),
 (1162501,1000,0,0,0,0,0,0,0,0,7474,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
 -- No player took quest, remove QuestGiver flag and start waypoints again.
 (1162501,23000,0,29,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag'),
@@ -46,7 +74,7 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 -- Northside Stop
 (1162504,5000,0,28,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add QuestGiver Flag'),
 (1162504,5000,0,10,12245,613000,0,0,0,0,0,0,0,0,0,-692.7433,1522.2029,90.361115,0.55850,0,0,'Cork Gizelton - Spawn Super-Seller 680'),
-(1162503,609000,0,0,0,0,0,0,0,0,7505,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
+(1162504,609000,0,0,0,0,0,0,0,0,7505,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
 (1162504,609000,1,29,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag');
 
 -- Normal Waypoints when not escorting
@@ -233,7 +261,9 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (1162513,5000,2,10,12977,0,0,0,0,0,0,0,0,0,0,-1095.0416,1196.1388,89.82304,3.612831,0,0,'Cork Gizelton - Spawn Kolkar Ambusher'),
 (1162513,5000,3,10,12977,0,0,0,0,0,0,0,0,0,0,-1108.1927,1181.0596,89.82304,1.012290,0,0,'Cork Gizelton - Spawn Kolkar Ambusher'),
 -- Finnished
-(1162514,4000,0,0,0,0,0,0,0,0,7334,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text');
+(1162514,4000,0,0,0,0,0,0,0,0,7334,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
+-- Missing
+(1162514,4000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Set Run');
 -- Cork Gizelton escort path
 SET @PATH := 11625;
 DELETE FROM waypoint_path WHERE `PathId` = @PATH;
