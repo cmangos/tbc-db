@@ -1,8 +1,6 @@
 -- Fix gizzletone Caravan Escort Quests
 SET @SGUID := 19010; -- spawn_group
 SET @PATH := 19010; -- Normal Waypoints 
-SET @CORKESCORTPATH := 11625; -- Escort 1 Waypoints ScriptDev waypoint_path will always use creature entry as pathid
-SET @RIGGERESCORTPATH := 11626; -- Escort 2 Waypoints ScriptDev waypoint_path will always use creature entry as pathid.
 
 -- Update spawn positions
 -- Cork Gizelton
@@ -23,7 +21,12 @@ UPDATE `creature_template` SET MovementType='0' WHERE (`Entry`='11625');
 
 -- Delete old Group Setting
 DELETE FROM `creature_linking` WHERE (`master_guid`='27290');
+DELETE FROM `creature_linking` WHERE (`guid`='27290');
 DELETE FROM `creature_linking_template` WHERE (`entry`='11626');
+
+-- Delete old Waypoints
+DELETE FROM creature_movement_template WHERE `Entry` = '28714';
+DELETE FROM creature_movement WHERE `Id` = '11625';
 
 -- Add them into spawn_group
 DELETE FROM `spawn_group` WHERE `Id` = @SGUID;
@@ -56,10 +59,6 @@ INSERT INTO dbscripts_on_relay(id, delay, priority, command, datalong, datalong2
 (11625,615000,1,51,150,@SGUID,0,0,0,0,1,0,0,0,0,10,0,0,0,0,0,'Cork Gizelton - Create Formation'),
 (11625,616000,0,20,2,@PATH,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0, 'Cork Gizelton - Change Movement');
 
--- Delete old Waypoints
-DELETE FROM creature_movement_template WHERE `Entry` = '28714';
-DELETE FROM creature_movement WHERE `Id` = '11625';
-
 -- Normal Waypoints when not escorting
 DELETE FROM waypoint_path WHERE `PathId` = @PATH;
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES 
@@ -79,7 +78,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH,14,-600.5682,1272.9078,89.229774,100,0,0),
 (@PATH,15,-628.5193,1261.6598,89.25135,100,0,0),
 -- Escort quest 1 22:13:06.217 4min wait time
-(@PATH,16,-672.38104,1241.8248,89.29438,100,24000,@PATH+1),
+(@PATH,16,-672.38104,1241.8248,89.29438,100,240000,@PATH+1),
 (@PATH,17,-702.0911,1222.1292,90.12284,100,0,0),
 (@PATH,18,-744.7477,1200.8258,95.18287,100,0,0),
 (@PATH,19,-771.4321,1187.901,98.25634,100,0,0),
@@ -150,7 +149,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH,83,-1829.3954,2225.2505,59.94646,100,0,0),
 (@PATH,84,-1806.38,2200.0608,59.94646,100,0,0),
 -- Escort 2
-(@PATH,85,-1803.0452,2183.6484,59.94646,100,24000,@PATH+3),
+(@PATH,85,-1803.0452,2183.6484,59.94646,100,240000,@PATH+3),
 (@PATH,86,-1802.5979,2105.9092,63.560505,100,0,0),
 (@PATH,87,-1810.5092,2075.089,63.224747,100,0,0),
 (@PATH,88,-1821.3414,2042.4484,61.039787,100,0,0),
@@ -231,7 +230,7 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (@PATH+1,1000,0,29,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add QuestGiver Flag'),
 (@PATH+1,1000,0,0,0,0,0,0,0,0,7474,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
 -- No player took quest, remove QuestGiver flag and start waypoints again.
-(@PATH+1,23000,0,29,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag'),
+(@PATH+1,230000,0,29,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Remove QuestGiver Flag'),
 -- Southside stop
 (@PATH+2,5000,0,29,1,1,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Add Gossip Flag'),
 (@PATH+2,6000,0,10,12246,609000,0,0,0,0,0,0,0,0,0,-1926.6038,2412.7925,60.695602,0.1745329,0,0,'Cork Gizelton - Spawn Super-Seller 680'),
@@ -241,7 +240,7 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (@PATH+3,0,0,29,2,1,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Add QuestGiver Flag'),
 (@PATH+3,1000,0,0,0,0,0,11626,20,0,7475,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text'),
 -- No player took quest, remove QuestGiver flag and start waypoints again.
-(@PATH+3,23000,0,29,2,0,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Remove QuestGiver Flag'),
+(@PATH+3,230000,0,29,2,0,0,11626,20,0,0,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Remove QuestGiver Flag'),
 -- Northside Stop
 (@PATH+4,5000,0,28,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Add QuestGiver Flag'),
 (@PATH+4,5000,0,10,12245,613000,0,0,0,0,0,0,0,0,0,-692.7433,1522.2029,90.361115,0.55850,0,0,'Cork Gizelton - Spawn Super-Seller 680'),
