@@ -10994,8 +10994,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Drywallow Snapper
 ('434301','4343','9','0','100','1025','0','5','5000','8000','0','0','11','19319','1','0','0','0','0','0','0','0','0','0','Drywallow Snapper - Cast Vicious Bite'),
 -- Mottled Drywallow Crocolisk (4344) - NSR
+('434401','4344','6','0','100','0','4001','0','0','0','0','0','11','42455','7','2','0','0','0','0','0','0','0','0','Mottled Drywallow Crocolisk -  On Death - Cast Captured Totem Test Credit'),
 -- Drywallow Daggermaw
 ('434501','4345','0','0','100','1025','0','10000','45000','45000','0','0','11','6016','1','32','0','0','0','0','0','0','0','0','Drywallow Daggermaw - Cast Pierce Armor'),
+('434502','4345','6','0','100','0','4001','0','0','0','0','0','11','42455','7','2','0','0','0','0','0','0','0','0','Drywallow Daggermaw -  On Death - Cast Captured Totem Test Credit'),
 -- Noxious Flayer
 ('434601','4346','9','0','100','1025','0','30','6000','11000','0','0','11','43132','4','32','0','0','0','0','0','0','0','0','Noxious Flayer - Cast Poison Burst'),
 -- Noxious Reaver
