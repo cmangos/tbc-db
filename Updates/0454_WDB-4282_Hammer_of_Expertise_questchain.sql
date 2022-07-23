@@ -36,3 +36,24 @@ UPDATE quest_template SET RequiredCondition = 3827 WHERE entry = 3321; -- 0
 -- q.2765 'Expert Blacksmith!'
 UPDATE quest_template SET PrevQuestId = 3321 WHERE entry = 2765; -- 0
 
+-- Script Fix - script totally different in wotlkmangos compared to classicmangos and tbcmangos, using wotlkmangos
+DELETE FROM `dbscripts_on_quest_start` WHERE `id` = 2765;
+INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
+(2765, 1000, 0, 29, 2, 0, 0, 7802, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '7802 - npc_flag removed'),
+(2765, 2000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -12033.3, -1009.85, 49.87, 5.42, 0, 0, ''),
+(2765, 7000, 0, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(2765, 12000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(2765, 14000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -12040, -1006.27, 49.62, 2.55, 0, 0, ''),
+(2765, 18000, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(2765, 23000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(2765, 25000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -12037.8, -1004.74, 49.53, 2.18, 0, 0, ''),
+(2765, 29000, 0, 1, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(2765, 35000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -12040.7, -1009.02, 49.42, 3.63, 0, 0, ''),
+(2765, 40000, 0, 1, 233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(2765, 45000, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
+(2765, 47000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -12033.3, -1004.47, 49.78, 3, 0, 0, ''),
+(2765, 52000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.96, 0, 0, ''),
+(2765, 53000, 0, 29, 2, 1, 0, 7802, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '7802 - npc_flag added'),
+(2765, 54000, 0, 7, 2765, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+UPDATE dbscripts_on_quest_start SET buddy_entry = 0, search_radius = 0, data_flags = 0x04 WHERE command = 29 AND id = 2765;
+
