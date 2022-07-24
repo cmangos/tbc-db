@@ -2259,7 +2259,7 @@ REPLACE INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `
 -- Aquantion 16292
 UPDATE `creature_template` SET `SpeedWalk` = (2.5 / 2.5), `SpeedRun` = (9.027779579162597656 / 7), `UnitFlags` = 0, `DamageSchool` = 4, `MovementType` = 0 WHERE `entry` = 16292;
 -- Altar of Tidal Mastery 181157 - despawn issue on use
-UPDATE `gameobject_template` SET `ExtraFlags` = 0, `data5` = 1 WHERE `entry` = 181157; -- data5 also does not work?
+UPDATE `gameobject_template` SET `ExtraFlags` = 0 WHERE `entry` = 181157; -- data5 also does not work? should be consumed on go usage, dbscript or data5 manipulation doesnt work
 UPDATE `gameobject` SET `spawntimesecsmin` = 15, `spawntimesecsmax` = 30 WHERE `id` = 181157;
 UPDATE `dbscripts_on_event` SET `delay` = 500, `x` = 7945.52978515625, `y` = -7636.7119140625, `z` = 112.9729385375976562, `o` = 2.932153224945068359, `comments` = 'Quest 9174 - Summon Aquantion 16292'  WHERE `id` = 9980 AND `command` = 10;
 DELETE FROM `dbscripts_on_event` WHERE `id` = 9980 AND `command` IN (31,40);
