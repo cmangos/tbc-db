@@ -14,8 +14,8 @@ INSERT INTO dbscripts_on_relay(id, delay, priority, command, datalong, datalong2
 (7523,120000,1,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Suffering Highborne - Remove Active');
 
 -- Start script for Quest 'Remorseful Highborne'
-DELETE FROM `dbscripts_on_quest_end` WHERE id = '5252';
-INSERT INTO dbscripts_on_quest_end(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
+DELETE FROM `dbscripts_on_quest_start` WHERE id = '5252';
+INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 (5252,0,0,0,50,0,0,0,0,0,6505,6506,6507,0,0,0,0,0,0,0,0,'Remorseful Highborne - Say RND Text'),
 (947,20000,0,31,10684,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Remorseful Highborne - Spam Prevention');
 
