@@ -49,8 +49,8 @@ INSERT INTO `creature_movement` (`Id`, `Point`, `PositionX`, `PositionY`, `Posit
 ('158022','1','845.2584','-2657.833','92.1316','1000', '328403'),
 ('158022','2','842.5071' ,'-2673.2441','91.791664','5000', '328402');
 
-DELETE FROM dbscripts_on_event WHERE id IN (4072, 61935);
-INSERT INTO `dbscripts_on_event` (`id`, `command`, `datalong`, `datalong2`,  `comments`) VALUES 
+DELETE FROM dbscripts_on_go_template_use WHERE id IN (4072, 61935);
+INSERT INTO `dbscripts_on_go_template_use` (`id`, `command`, `datalong`, `datalong2`,  `comments`) VALUES 
 ('4072', '45', '0', '4072', 'Quest Samophlange - Main Control Valve start relay script'),
 ('61935', '45', '0', '61935', 'Quest Samophlange - Regulator start relay script');
 
@@ -77,6 +77,3 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 ('328403', '0','0', '25', '1', '0', '0', '0','0', 'Quest Samophlange - Venture co - Set RUN'),
 ('328403', '0','0', '53', '0', '0', '0', '19021','0', 'Set Worldstate'),
 ('328403', '100','1', '0', '0', '0', '0', '4704','0', 'Samophlange - RND Spawn TALK');
-
-UPDATE `gameobject_template` SET `data2`='4072' WHERE (`entry`='4072');
-UPDATE `gameobject_template` SET `data2`='61935' WHERE (`entry`='61935');
