@@ -42,11 +42,44 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (@PATH+2,4000,0,0,0,0,0,11626,20,0,7331,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text'),
 (@PATH+2,5000,0,10,4676,0,0,0,0,0,0,0,0,0,0,-1786.3375,1924.4208,59.727234,3.176499,0,0,'Rigger Gizelton - Spawn Lesser Infernal'),
 (@PATH+2,5000,1,10,4677,0,0,0,0,0,0,0,0,0,0,-1800.8624,1935.1129,60.744423,1.32645,0,0,'Rigger Gizelton - Spawn Doomwarder'),
-(@PATH+2,5000,2,10,4684,0,0,0,0,0,0,0,0,0,0,-1783.3813,1942.7648,60.361816,3.455751,0,0,'Cork Gizelton - Spawn Nether Sorceress'),
+(@PATH+2,5000,2,10,4684,0,0,0,0,0,0,0,0,0,0,-1783.3813,1942.7648,60.361816,3.455751,0,0,'Rigger Gizelton - Spawn Nether Sorceress'),
 -- 3rd wave
 (@PATH+3,4000,0,0,0,0,0,11626,20,0,7332,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text'),
 (@PATH+3,5000,0,10,4684,0,0,0,0,0,0,0,0,0,0,-1678.4297,1838.171,59.01009,2.02458,0,0,'Rigger Gizelton - Spawn Lesser Infernal'),
 (@PATH+3,5000,1,10,4676,0,0,0,0,0,0,0,0,0,0,-1672.9086,1859.5435,59.13584,0.453785,0,0,'Rigger Gizelton - Spawn Kolkar Waylayer'),
 (@PATH+3,5000,2,10,4677,0,0,0,0,0,0,0,0,0,0,-1692.3892,1860.8142,59.030247,4.62512254,0,0,'Rigger Gizelton - Spawn Doomwarder'),
 -- Finnished
-(@PATH+4,4000,0,0,0,0,0,11626,20,0,7333,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text');
+(@PATH+4,4000,0,0,0,0,0,11626,20,0,7333,0,0,0,0,0,0,0,0,0,0,'Rigger Gizelton - Say Text'),
+-- Quest finished - change faction and run mode from group members
+(@PATH+4, 0, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork - run on'),
+(@PATH+4, 0, 0, 25, 1, 0, 0, 11626, 28728, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - run on'),
+(@PATH+4, 0, 0, 29, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork remove questgiver/gossip status'),
+(@PATH+4, 0, 0, 29, 3, 0, 0, 11626, 28728, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger remove questgiver/gossip status'),
+(@PATH+4, 0, 0, 25, 1, 0, 0, 11564, 27290, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo1 - run on'),
+(@PATH+4, 0, 0, 25, 1, 0, 0, 11564, 27289, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo2 - run on'),
+(@PATH+4, 1000, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork - restore faction'),
+(@PATH+4, 1000, 0, 22, 0, 0, 0, 11626, 28728, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - restore faction'),
+(@PATH+4, 1000, 0, 22, 0, 0, 0, 11564, 27290, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo1 - restore faction'),
+(@PATH+4, 1000, 0, 22, 0, 0, 0, 11564, 27289, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo2 - restore faction');
+
+-- On quest start - change faction from all group members and change to walk mode
+DELETE FROM dbscripts_on_quest_start WHERE id = 5943;
+INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES 
+(5943, 1000, 0, 29, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove quest and Gossip Flag'),
+(5943, 0, 0, 25, 0, 0, 0, 11564, 27290, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo2 - run off'),
+(5943, 0, 0, 25, 0, 0, 0, 11564, 27289, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo1 - run off'),
+(5943, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - run off'),
+(5943, 0, 0, 25, 0, 0, 0, 11625, 100, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork - run off'),
+-- [2] Object Guid: Full: 0x204CB000200B5A4000006D000028C628 Creature/0 R4908/S109 Map: 1 Entry: 11625 Low: 2672168
+-- [2] FactionTemplate: 495
+-- [2] Flags: 0
+(5943, 0, 0, 22, 495, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - faction update'),
+-- [3] Object Guid: Full: 0x204CB000200B5A8000006D000028C628 Creature/0 R4908/S109 Map: 1 Entry: 11626 Low: 2672168
+-- [3] FactionTemplate: 495
+-- [3] Flags: 0
+(5943, 0, 0, 22, 495, 33, 0, 11625, 60, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork - faction update'),
+-- [1] Object Guid: Full: 0x204CB000200B4B0000006D000228C628 Creature/0 R4908/S109 Map: 1 Entry: 11564 Low: 36226600
+-- [1] FactionTemplate: 495
+-- [1] Flags: 0
+(5943, 0, 0, 22, 495, 33, 0, 11564, 27289, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo1 - faction update'),
+(5943, 0, 0, 22, 495, 33, 0, 11564, 27290, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo2 - faction update');

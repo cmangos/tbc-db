@@ -27,7 +27,18 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (@PATH+3,5000,2,10,12977,0,0,0,0,0,0,0,0,0,0,-1095.0416,1196.1388,89.82304,3.612831,0,0,'Cork Gizelton - Spawn Kolkar Ambusher'),
 (@PATH+3,5000,3,10,12977,0,0,0,0,0,0,0,0,0,0,-1108.1927,1181.0596,89.82304,1.012290,0,0,'Cork Gizelton - Spawn Kolkar Ambusher'),
 -- Finnished
-(@PATH+4,4000,0,0,0,0,0,0,0,0,7334,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text');
+(@PATH+4,4000,0,0,0,0,0,0,0,0,7334,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
+-- Quest finished - change faction and run mode from group members
+(@PATH+4, 0, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork - run on'),
+(@PATH+4, 2000, 0, 25, 1, 0, 0, 11626, 28728, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - run on'),
+(@PATH+4, 2000, 0, 29, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork remove questgiver/gossip status'),
+(@PATH+4, 2000, 0, 29, 3, 0, 0, 11626, 28728, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger remove questgiver/gossip status'),
+(@PATH+4, 2000, 0, 25, 1, 0, 0, 11564, 27290, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo1 - run on'),
+(@PATH+4, 2000, 0, 25, 1, 0, 0, 11564, 27289, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo2 - run on'),
+(@PATH+4, 2000, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork - restore faction'),
+(@PATH+4, 2000, 0, 22, 0, 0, 0, 11626, 28728, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - restore faction'),
+(@PATH+4, 2000, 0, 22, 0, 0, 0, 11564, 27290, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo1 - restore faction'),
+(@PATH+4, 2000, 0, 22, 0, 0, 0, 11564, 27289, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo2 - restore faction');
 
 -- Cork Gizelton escort path
 DELETE FROM waypoint_path WHERE `PathId` = @PATH;
@@ -55,3 +66,25 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 -- Quest Finished 
 (@PATH,18,-1243.2097,1211.5519,106.35681,100,4000,@PATH+4),
 (@PATH,19,-1243.2097,1211.5519,106.35681,100,5000,0);
+
+-- Run and faction change
+DELETE FROM dbscripts_on_quest_start WHERE id = 5821;
+INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES 
+(5821, 1000, 0, 29, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Remove quest and Gossip Flag'),
+(5821, 0, 0, 25, 0, 0, 0, 11564, 27290, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo2 - run off'),
+(5821, 0, 0, 25, 0, 0, 0, 11564, 27289, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo1 - run off'),
+(5821, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - run off'),
+(5821, 0, 0, 25, 0, 0, 0, 11626, 100, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - run off'),
+-- [2] Object Guid: Full: 0x204CB000200B5A4000006D000028C628 Creature/0 R4908/S109 Map: 1 Entry: 11625 Low: 2672168
+-- [2] FactionTemplate: 495
+-- [2] Flags: 0
+(5821, 0, 0, 22, 495, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork - faction update'),
+-- [3] Object Guid: Full: 0x204CB000200B5A8000006D000028C628 Creature/0 R4908/S109 Map: 1 Entry: 11626 Low: 2672168
+-- [3] FactionTemplate: 495
+-- [3] Flags: 0
+(5821, 0, 0, 22, 495, 33, 0, 11626, 60, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - faction update'),
+-- [1] Object Guid: Full: 0x204CB000200B4B0000006D000228C628 Creature/0 R4908/S109 Map: 1 Entry: 11564 Low: 36226600
+-- [1] FactionTemplate: 495
+-- [1] Flags: 0
+(5821, 0, 0, 22, 495, 33, 0, 11564, 27289, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo1 - faction update'),
+(5821, 0, 0, 22, 495, 33, 0, 11564, 27290, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kodo2 - faction update');

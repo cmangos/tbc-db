@@ -32,7 +32,7 @@ DELETE FROM creature_movement WHERE `Id` = '11625';
 -- Add them into spawn_group
 DELETE FROM `spawn_group` WHERE `Id` = @SGUID;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES 
-(@SGUID, 'Desolace - Gizelton Caravan', '0', '4', '0', '2');
+(@SGUID, 'Desolace - Gizelton Caravan', '0', '4', '0', '3');
 
 -- Don't create that formation in db as its temporary formation
 DELETE FROM `spawn_group_formation` WHERE `Id` = @SGUID;
