@@ -675,7 +675,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 
 REPLACE INTO `creature_spawn_entry` (`guid`, `entry`) SELECT `guid`, 16402 FROM `creature` WHERE `guid` BETWEEN 5303636 AND 5303726;
 REPLACE INTO `creature_spawn_entry` (`guid`, `entry`) SELECT `guid`, 16403 FROM `creature` WHERE `guid` BETWEEN 5303636 AND 5303726;
-UPDATE `creature` SET `id` = 0 WHERE `guid` BETWEEN 5302449 AND 5302484;
+UPDATE `creature` SET `id` = 0 WHERE `guid` BETWEEN 5303636 AND 5303726;
 
 -- =============
 -- The North Sea
@@ -717,7 +717,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `positi
 (5303622, 16404, 530, 8049.63, -5517.96, -25.7112, 5.20108, 300, 300, 25, 1),
 (5303623, 16404, 530, 8116.96, -5448.62, -46.0617, 0.698132, 300, 300, 25, 1),
 (5303624, 16404, 530, 8115.65, -5582.93, -4.67935, 3.07178, 300, 300, 25, 1),
-(5303625, 16404, 530, 8181.52, -5517.78, -21.4738, 3.9968, 300, 300, 15, 1),
+(5303625, 16404, 530, 8181.52, -5517.78, -21.4738, 3.9968, 300, 300, 25, 1),
 
 (5303626, 16405, 530, 6929.59, -5718.05, -2.57678, 4.20766, 300, 300, 25, 1),
 (5303627, 16405, 530, 6786.31, -5718.75, -11.0892, 3.22507, 300, 300, 25, 1),
