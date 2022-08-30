@@ -319,6 +319,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath
 (13144, 14388, 0, 1, 0, 0, NULL), -- Lieutenant Vol'talar
 (13147, 10671, 0, 1, 0, 0, NULL), -- Lieutenant Lewis
 (13152, 14334, 0, 1, 0, 0, NULL), -- Commander Malgor
+(13256, 0, 0, 1, 0, 0, '15876'), -- Lokholar the Ice Lord
 (13296, 14337, 0, 1, 0, 0, NULL), -- Lieutenant Largent
 (13297, 14577, 0, 1, 0, 0, NULL), -- Lieutenant Stouthandle
 (13298, 14372, 0, 1, 0, 0, NULL), -- Lieutenant Greywand
