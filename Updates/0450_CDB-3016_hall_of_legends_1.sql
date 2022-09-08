@@ -414,13 +414,13 @@ UPDATE `npc_vendor` SET `slot` = 1 WHERE `item` = 18839 AND `entry` = 12793; -- 
 UPDATE `npc_vendor` SET `slot` = 2 WHERE `item` = 18841 AND `entry` = 12793; -- Combat Mana Potion
 UPDATE `npc_vendor` SET `slot` = 3, `ExtendedCost` = 1565 WHERE `item` = 31853 AND `entry` = 12793; -- Major Combat Healing Potion (wsg marks, later converted to honor+gold?)
 -- Master Sergeant Biggins 40s+50honor, Brave Stonehide only 40s so middleground 40s + 5 honor no other value matches 50 in ItemExtendedCost.dbc
-UPDATE `item_template` SET `SellPrice` = 1000, `BuyPrice` = 4000, `description` = NULL WHERE `entry` = 31853;
+UPDATE `item_template` SET `SellPrice` = 1000, `BuyPrice` = 4000, `description` = '' WHERE `entry` = 31853;
 DELETE FROM `npc_vendor` WHERE `item` IN (31838,31839,31852) AND `entry` IN (12793); -- removed in tbcclassic so wasnt there anymore in 2.4.3, converted to honor+gold
 -- UPDATE `npc_vendor` SET `slot` = 4 WHERE `item` = 31838 AND `entry` = 12793; -- Major Combat Healing Potion arathi
 -- UPDATE `npc_vendor` SET `slot` = 5 WHERE `item` = 31839 AND `entry` = 12793; -- Major Combat Healing Potion av
 -- UPDATE `npc_vendor` SET `slot` = 6 WHERE `item` = 31852 AND `entry` = 12793; -- Major Combat Healing Potion eots
 UPDATE `npc_vendor` SET `slot` = 7, `ExtendedCost` = 1565 WHERE `item` = 31855 AND `entry` = 12793; -- Major Combat Mana Potion (wsg marks, later converted to honor+gold?)
-UPDATE `item_template` SET `SellPrice` = 1000, `BuyPrice` = 4000, `description` = NULL WHERE `entry` = 31855;
+UPDATE `item_template` SET `SellPrice` = 1000, `BuyPrice` = 4000, `description` = '' WHERE `entry` = 31855;
 DELETE FROM `npc_vendor` WHERE `item` IN (31840,31841,31854) AND `entry` IN (12793); -- removed in tbcclassic so wasnt there anymore in 2.4.3, converted to honor+gold
 -- UPDATE `npc_vendor` SET `slot` = 8 WHERE `item` = 31840 AND `entry` = 12793; -- arathi
 -- UPDATE `npc_vendor` SET `slot` = 9 WHERE `item` = 31841 AND `entry` = 12793; -- av
