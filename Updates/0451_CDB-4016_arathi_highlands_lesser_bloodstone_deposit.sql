@@ -1,6 +1,6 @@
 -- 2002	60	Master Mineral Pool - Arathi Highlands (Main Section) down to 301 due to Jintha'lor update
 -- 2003	4	Master Mineral Pool - Arathi Highlands (Drywhisker Gorge) - down to 17 nodes from 31 due to bloodstone split
-UPDATE `pool_template` SET `max_limit` = 3 WHERE `entry` = 2002; -- i think when i visted that cave there can only be 4 up total which is not already spawned by bloodstone alone
+UPDATE `pool_template` SET `max_limit` = 3 WHERE `entry` = 2003; -- i think when i visted that cave there can only be 4 up total which is not already spawned by bloodstone alone
 
 -- Deletes the 31 spawns of bloodstone + 6 nodes
 -- DELETE FROM `gameobject` WHERE (`guid` IN (70365, 70370, 70375, 70380, 70385, 70390, 70395, 70400, 70405, 70410, 70415, 70420, 70425, 70430, 70435, 70440, 70445, 70450, 70455, 70460, 70465, 70470, 70475, 70480, 70485, 70490, 70495, 70500, 70505, 70564, 70569));
