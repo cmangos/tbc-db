@@ -1,0 +1,158 @@
+UPDATE `pool_template` SET `max_limit` = 26 WHERE `entry` = 2050; -- 29	Master Mineral Pool - Stonetalon Mountains (102+26)
+
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 106308 AND 106314;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 106308 AND 106314;
+DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 8001 AND 8001;
+DELETE FROM `pool_template` WHERE `entry` BETWEEN 8001 AND 8001;
+
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 102231 AND 102236;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 102231 AND 102236;
+DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 7429 AND 7429;
+DELETE FROM `pool_template` WHERE `entry` BETWEEN 7429 AND 7429; 
+
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 102501 AND 102506;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 102501 AND 102506;
+DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 7474 AND 7474;
+DELETE FROM `pool_template` WHERE `entry` BETWEEN 7474 AND 7474;
+
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 106560 AND 106566;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 106560 AND 106566;
+DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 8037 AND 8037;
+DELETE FROM `pool_template` WHERE `entry` BETWEEN 8037 AND 8037;
+
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 106770 AND 106776;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 106770 AND 106776;
+DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 8067 AND 8067;
+DELETE FROM `pool_template` WHERE `entry` BETWEEN 8067 AND 8067;
+
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 106686 AND 106755;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 106686 AND 106755;
+DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 8055 AND 8064;
+DELETE FROM `pool_template` WHERE `entry` BETWEEN 8055 AND 8064;
+
+-- Gold Vein
+DELETE FROM `gameobject` WHERE (`guid` IN (106481,106544,106551,102246,106537,106530,106523,106516,106509,106502,106495,106488,106474));
+DELETE FROM `pool_gameobject` WHERE (`guid` IN (106481,106544,106551,102246,106537,106530,106523,106516,106509,106502,106495,106488,106474));
+
+-- Remove Mithril Deposit from remaining nodes in Stonetalon, can only spawn at these 15 nodes (??? Nodes remaining)
+-- 102135	7413	10	Mineral Spawn Point 23 - Copper
+-- 102136	7413	16	Mineral Spawn Point 23 - Tin
+-- 102137	7413	5	Mineral Spawn Point 23 - Silver
+-- 102138	7413	5	Mineral Spawn Point 23 - Gold
+-- 102139	7413	0	Mineral Spawn Point 23 - Iron 34 -> 64
+-- 102140	7413	30	Mineral Spawn Point 23 - Mithril
+DELETE FROM `pool_gameobject` where `description` LIKE '%Mithril%' and `pool_entry` IN (SELECT `pool_id` FROM `pool_pool` where `mother_pool` = 2050);
+DELETE FROM `gameobject` WHERE `guid` IN (102140,102152,102248,106003,106010,106017,106024,106031,106045,106052,106059,106066,106073,106087,106094,106101,106108,106115,106122,106129,
+106136,106143,106150,106157,106164,106171,106178,106185,106192,106199,106206,106213,106220,106227,106234,106241,106248,106255,106262,106269,106276,106283,106290,106297,106304,106318,
+106325,106332,106339,106346,106353,106360,106367,106374,106381,106402,106409,106416,106423,106430,106437,106444,106451,106458,106465,106472,106479,106486,106493,106500,106507,106514,
+106521,106528,106535,106542,106549,106556,106570,106577,106584,106591,106598,106605,106612,106619,106626,106633,106640,106647,106654,106661,106668,106675,106682,106759,106766,108718);
+-- Some nodes heavily favor copper in stonetalon, thats not good.
+-- 106763	8066	0	Mineral Spawn Point 110 - Copper 39 -> 29.5
+-- 106764	8066	26	Mineral Spawn Point 110 - Tin
+-- 106765	8066	15	Mineral Spawn Point 110 - Iron 15 -> 29.5
+-- 106767	8066	10	Mineral Spawn Point 110 - Silver
+-- 106768	8066	5	Mineral Spawn Point 110 - Gold
+UPDATE `pool_gameobject` SET `Chance` = 0 WHERE `pool_entry` IN (SELECT `pool_id` from `pool_pool` where `mother_pool` = 2050) AND `description` LIKE '%Iron%';
+
+-- Also delete Truesilver spawns only ~3 nodes in all of stonetalon
+DELETE FROM `pool_gameobject` where `description` LIKE '%Truesilver%' and `pool_entry` IN (SELECT `pool_id` FROM `pool_pool` where `mother_pool` = 2050);
+DELETE FROM `gameobject` WHERE `guid` IN (106006,106013,106020,106027,106034,106048,106055,106062,106069,106076,106090,106097,106104,106111,106118,106125,106132,106139,106146,106153,
+106160,106167,106174,106181,106188,106195,106202,106209,106216,106223,106230,106237,106244,106251,106258,106265,106272,106279,106286,106293,106300,106307,106321,106328,106335,106342,
+106349,106356,106363,106370,106377,106384,106405,106412,106419,106426,106433,106440,106447,106454,106461,106468,106475,106482,106489,106496,106503,106510,106517,106524,106531,106538,
+106545,106552,106559,106573,106580,106587,106594,106601,106608,106615,106622,106629,106636,106643,106650,106657,106664,106671,106678,106685,106762,106769,108721);
+
+-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SET @OBJECT_1 = 140550;
+SET @OBJECT_2 = 140551;
+SET @OBJECT_3 = 140552;
+SET @OBJECT_4 = 140553;
+SET @OBJECT_5 = 140554;
+
+SET @GROUP_ID = 10098;
+
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
+(@OBJECT_1, 0, 1, 1, 1392.52453613281250, 1516.4234619140625, 146.4197387695312500, 0.733038187026977539, 0, 0, 0.358367919921875000, 0.933580458164215087, 600, 900, 100, 1),
+(@OBJECT_2, 0, 1, 1, 916.968322753906250, 1492.8428955078125, 14.99642467498779296, 6.108653545379638671, 0, 0, -0.08715534210205078, 0.996194720268249511, 600, 900, 100, 1),
+(@OBJECT_3, 0, 1, 1, 793.298156738281250, 1391.6441650390625, -0.47418999671936035, 1.326448202133178710, 0, 0, 0.615660667419433593, 0.788011372089385986, 600, 900, 100, 1),
+(@OBJECT_4, 0, 1, 1, 744.609802246093750, 1543.0377197265625, -18.1738224029541015, 5.899214267730712890, 0, 0, -0.19080829620361328, 0.981627285480499267, 600, 900, 100, 1),
+(@OBJECT_5, 0, 1, 1, 663.333312988281250, 1399.7349853515625, 21.95711135864257812, 5.044002056121826171, 0, 0, -0.58070278167724609, 0.814115643501281738, 600, 900, 100, 1);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@GROUP_ID, @OBJECT_1, '-1'),
+(@GROUP_ID, @OBJECT_2, '-1'),
+(@GROUP_ID, @OBJECT_3, '-1'),
+(@GROUP_ID, @OBJECT_4, '-1'),
+(@GROUP_ID, @OBJECT_5, '-1');
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@GROUP_ID, 'Stonetalon Mountains - Mithril Deposit | Gold Vein | Truesilver Deposit (1) Ore 000', '1', '1', '0', '0');
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@GROUP_ID, '2040', '0', '0', '0'),
+(@GROUP_ID, '1734', '0', '0', '5'),
+(@GROUP_ID, '2047', '0', '0', '5');
+
+-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SET @OBJECT_1 = 140560;
+SET @OBJECT_2 = 140561;
+SET @OBJECT_3 = 140562;
+SET @OBJECT_4 = 140563;
+SET @OBJECT_5 = 140564;
+
+SET @GROUP_ID = 10099;
+
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
+(@OBJECT_1, 0, 1, 1, 516.378173828125000, 1829.7613525390625, 12.88797664642333984, 3.159062385559082031, 0, 0, -0.99996185302734375, 0.008734640665352344, 600, 900, 100, 1),
+(@OBJECT_2, 0, 1, 1, 435.736968994140625, 1468.7137451171875, 38.66242599487304687, 4.747295856475830078, 0, 0, -0.69465827941894531, 0.719339847564697265, 600, 900, 100, 1),
+(@OBJECT_3, 0, 1, 1, 450.509674072265625, 1604.7485351562500, 24.64069557189941406, 5.951574802398681640, 0, 0, -0.16504669189453125, 0.986285746097564697, 600, 900, 100, 1),
+(@OBJECT_4, 0, 1, 1, 758.624938964843750, 1793.0123291015625, -13.7901735305786132, 0.855210542678833007, 0, 0, 0.414692878723144531, 0.909961462020874023, 600, 900, 100, 1),
+(@OBJECT_5, 0, 1, 1, 540.059265136718750, 1410.3339843750000, 19.14920997619628906, 4.031712055206298828, 0, 0, -0.90258502960205078, 0.430511653423309326, 600, 900, 100, 1);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@GROUP_ID, @OBJECT_1, '-1'),
+(@GROUP_ID, @OBJECT_2, '-1'),
+(@GROUP_ID, @OBJECT_3, '-1'),
+(@GROUP_ID, @OBJECT_4, '-1'),
+(@GROUP_ID, @OBJECT_5, '-1');
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@GROUP_ID, 'Stonetalon Mountains - Mithril Deposit | Gold Vein | Truesilver Deposit (1) Ore 001', '1', '1', '0', '0');
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@GROUP_ID, '2040', '0', '0', '0'),
+(@GROUP_ID, '1734', '0', '0', '5'),
+(@GROUP_ID, '2047', '0', '0', '5');
+
+-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SET @OBJECT_1 = 140570;
+SET @OBJECT_2 = 140571;
+SET @OBJECT_3 = 140572;
+SET @OBJECT_4 = 140573;
+SET @OBJECT_5 = 140574;
+
+SET @GROUP_ID = 10100;
+
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
+(@OBJECT_1, 0, 1, 1, 733.572082519531250, 1935.6286621093750, 30.16183471679687500, 5.794494152069091796, 0, 0, -0.24192142486572265, 0.970295846462249755, 600, 900, 100, 1),
+(@OBJECT_2, 0, 1, 1, 969.634460449218750, 1775.2531738281250, 20.44802856445312500, 4.118979454040527343, 0, 0, -0.88294696807861328, 0.469472706317901611, 600, 900, 100, 1),
+(@OBJECT_3, 0, 1, 1, 999.729736328125000, 1653.8498535156250, 11.59454154968261718, 3.438302755355834960, 0, 0, -0.98901557922363281, 0.147811368107795715, 600, 900, 100, 1),
+(@OBJECT_4, 0, 1, 1, 857.820129394531250, 1923.3511962890625, 25.08635902404785156, 1.256635904312133789, 0, 0, 0.587784767150878906, 0.809017360210418701, 600, 900, 100, 1),
+(@OBJECT_5, 0, 1, 1, 609.827026367187500, 1981.1754150390625, 6.856464862823486328, 5.201082706451416015, 0, 0, -0.51503753662109375, 0.857167601585388183, 600, 900, 100, 1);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@GROUP_ID, @OBJECT_1, '-1'),
+(@GROUP_ID, @OBJECT_2, '-1'),
+(@GROUP_ID, @OBJECT_3, '-1'),
+(@GROUP_ID, @OBJECT_4, '-1'),
+(@GROUP_ID, @OBJECT_5, '-1');
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@GROUP_ID, 'Stonetalon Mountains - Mithril Deposit | Gold Vein | Truesilver Deposit (1) Ore 002', '1', '1', '0', '0');
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@GROUP_ID, '2040', '0', '0', '0'),
+(@GROUP_ID, '1734', '0', '0', '5'),
+(@GROUP_ID, '2047', '0', '0', '5');
