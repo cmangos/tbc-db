@@ -5,7 +5,7 @@ UPDATE `quest_template` SET `CompleteScript`='0' WHERE `entry`='63';
 -- QuestID 100 'Call of Water' Start Script
 DELETE FROM dbscripts_on_quest_start WHERE id = '100';
 INSERT INTO dbscripts_on_quest_start(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
-(100,0,0,45,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Start Relay Script');
+(100,0,0,45,100,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Start Relay Script');
 
 UPDATE `quest_template` SET `StartScript`='100' WHERE `entry`='100';
 
@@ -83,6 +83,7 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (700703,4000,0,28,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Call of Water - Tiev Mordune - Set Stanstate');
 
 -- Add spell script target for Spell Sapta Sight
+DELETE FROM spell_script_target WHERE entry = 9735;
 INSERT INTO `spell_script_target` (`entry`, `targetEntry`) VALUES ('9735', '113791');
 
 -- Make Minoe Manifestation of Water only visable when having Sapta Sight buff 
@@ -96,6 +97,7 @@ UPDATE `creature` SET `spawntimesecsmin`='450', `spawntimesecsmax`='450' WHERE (
 UPDATE `creature` SET `spawndist`='3', `MovementType`='1' WHERE (`id`='5897');
 
 -- Correct faction and Flags for water spirits
+DELETE FROM creature_template_addon WHERE entry = 6748;
 INSERT INTO `creature_template_addon` (`entry`, `auras`) VALUES ('6748', '8203');
 UPDATE `creature_template` SET `Faction`='35', `UnitFlags`='33555200', `MovementType`='2'  WHERE (`Entry`='6748');
 
