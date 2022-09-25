@@ -36,3 +36,7 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (16295,33,7604.385, -7667.204, 153.99678, 100,4000,0,'SAY_END_1'),
 (16295,34,7604.385, -7667.204, 153.99678, 5.888564109802246093,11000,0,'SAY_END_2');
 
+DELETE FROM `waypoint_path_name` WHERE `PathId` IN (16295);
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(16295, 'Ghostlands - Ranger Lilatha (npc_ranger_lilatha)');
+
