@@ -2376,7 +2376,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1187808','11878','5','0','100','1057','5000','5000','1','0','0','0','1','7234','7235','7236','1','7237','7238','7239','0','0','0','0','Nathanos Blightcaller - Say on Player Kill'),
 ('1187809','11878','9','0','100','1025','5','30','2000','4000','0','0','11','16100','1','256','0','0','0','0','0','0','0','0','Nathanos Blightcaller - Cast Shoot'),
 -- Blighthound 11885
-('1188501','11885','11','0','100','0','1000','1000','0','0','0','0','11','16577','0','34','0','0','0','0','0','0','0','0','Blighthound - Cast Disease Cloud on Spawn'),
+('1188501','11885','11','0','100','0','0','0','0','0','0','0','11','16577','0','34','0','0','0','0','0','0','0','0','Blighthound - Cast Disease Cloud on Spawn'),
 ('1188502','11885','0','0','100','1025','0','10000','12000','17000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Blighthound - Cast Rend'),
 -- Mercutio Filthgorger 11886
 ('1188601','11886','4','0','100','0','0','0','0','0','0','0','22','1','0','0','1','7261','0','0','0','0','0','0','Mercutio Filthgorger - Set Phase 1 and Say on Aggro'),
@@ -3967,32 +3967,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Cenarion Emissary Jademoon 15187
 -- Alliance Brigadier General 15351
 -- Katrina Shimmerstar 15353
--- Sergeant Stonebrow 15383 - npc_war_effort
--- Corporal Carnes 15431 - npc_war_effort
--- Dame Twinbraid 15432 - npc_war_effort
--- Private Draxlegauge 15434 - npc_war_effort
--- Master Nightsong 15437 - npc_war_effort
--- Sergeant Major Germaine 15445 - npc_war_effort
--- Bonnie Stoneflayer 15446 - npc_war_effort
--- Private Porter 15448 - npc_war_effort
--- Marta Finespindle 15450 - npc_war_effort
--- Sentinel Silversky 15451 - npc_war_effort
--- Nurse Stonefield 15452 - npc_war_effort
--- Keeper Moonshade 15453 - npc_war_effort
--- Slicky Gastronome 15455 - npc_war_effort
--- Sarah Sadwhistle 15456 - npc_war_effort
--- Huntress Swiftriver 15457 - npc_war_effort
--- General Zog 15539
--- War Effort Volunteer 15663
--- Field Marshal Snowfall 15701
--- Master Sergeant Fizzlebolt 15707
--- Darnassus Commendation Officer 15731
--- Gnomeregan Commendation Officer 15733
--- Ironforge Commendation Officer 15734
--- Stormwind Commendation Officer 15735
 -- Greatfather Winter's Helper 15745
--- Officer Porterhouse 15763
--- Officer Ironbeard 15764
 -- Elder Bronzebeard 15871
 -- Lunar Festival Emissary 15892
 -- Lunar Festival Harbinger 15895
@@ -4986,8 +4961,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2067201','20672','9','0','100','1025','0','5','7000','11000','0','0','11','40505','1','0','0','0','0','0','0','0','0','0','Royal Guard - Cast Cleave'),
 ('2067202','20672','2','0','100','1025','30','0','120000','120000','0','0','11','8599','0','0','0','0','0','0','0','0','0','0','Royal Guard - Cast Enrage at 30% HP'),
 -- Herald Amorlin 20724
--- Senior Sergeant Eveningshade (21155) - NSR
--- Officer Dawning (21970) - NSR
 -- Veteran Gladiator (22097) - NSR
 -- Grizzled Gladiator (22098) - NSR
 -- Loirea Galerunner (22237) - NSR
@@ -5698,10 +5671,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jesper (15310) - NSR
 -- Elder Hammershout (15562) - NSR
 -- Auctioneer Jaxon 15659
--- Master Sergeant Maclure 15708
--- Officer Maloof 15766
-('1576601','15766','30','0','10','1','5','16383','0','0','0','0','54','0','6','18','0','0','0','0','0','0','0','0','Officer Maloof - Say on Receive AI Event A From Flameshocker 16383'),
-('1576602','15766','30','0','10','1','5','16394','0','0','0','0','54','0','6','18','0','0','0','0','0','0','0','0','Officer Maloof - Say on Receive AI Event A From Pallid Horror 16394'),
 -- Lunar Festival Emissary (15892) - NSR
 -- Lunar Festival Harbinger (15895) - NSR
 -- Colara Dean 16002
@@ -12103,8 +12072,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('814501','8145','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Sheendra Tallgrass - Flee at 15% HP'),
 -- Ruw
 ('814601','8146','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Ruw - Flee at 15% HP'),
--- Camp Mojache Brave
-('814701','8147','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Camp Mojache Brave - Flee at 15% HP'),
+-- Camp Mojache Brave 8147 - NSR
 -- Logannas
 ('815701','8157','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Logannas - Flee at 15% HP'),
 -- Bronk
@@ -12821,6 +12789,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1472003','14720','32','0','100','1025','8','25','25000','25000','0','0','11','15749','12','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Shield Charge'),
 ('1472004','14720','0','0','100','1025','3000','9000','15000','15000','0','0','11','16508','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Intimidating Roar'),
 ('1472005','14720','0','0','100','1025','5000','8000','7000','7000','0','0','11','16044','1','0','0','0','0','0','0','0','0','0','High Overlord Saurfang - Cast Cleave'),
+('1472006','14720','30','0','100','0','5','15744','0','0','0','0','1','11614','11538','0','2','777','0','0','0','0','0','0','High Overlord Saurfang - Yell, Set Faction on Receive AI Event Custom A'),
+('1472007','14720','34','0','100','1','26339','-1','30000','60000','0','0','1','11563','0','0','1','11564','0','0','0','0','0','0','High Overlord Saurfang - Emote, Say on Saurfang\'s Rage Procc'),
 -- Rashona Straglash 14726
 -- Vehena 14727
 -- Kruban Darkblade 14843
@@ -12831,33 +12801,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spoops 15309
 -- Horde Warbringer 15350
 -- Rachelle Gothena 15354
--- Commander Stronghammer 15458
--- Miner Cromwell 15459 - npc_war_effort
--- Grunt Maug 15460 - npc_war_effort
--- Senior Sergeant T'kelah 15469 - npc_war_effort
--- Herbalist Proudfeather 15477 - npc_war_effort
--- Batrider Pele'keiki 15508 - npc_war_effort
--- Apothecary Jezel 15512 - npc_war_effort
--- Skinner Jamani 15515 - npc_war_effort
--- Sergeant Umala 15522 - npc_war_effort
--- Doctor Serratus 15525 - npc_war_effort
--- Healer Longrunner 15528 - npc_war_effort
--- Lady Callow 15529 - npc_war_effort
--- Stoneguard Clayhoof 15532 - npc_war_effort
--- Bloodguard Rawtar 15533 - npc_war_effort
--- Fisherman Lin'do 15534 - npc_war_effort
--- Chief Sharpclaw 15535 - npc_war_effort
 -- Elder Darkhorn 15579
--- War Effort Recruit 15696
--- Warlord Gorchuk 15700
--- Senior Sergeant Kai'jin 15704
--- Orgrimmar Commendation Officer 15736
--- Darkspear Commendation Officer 15737
--- Undercity Commendation Officer 15738
--- Thunder Bluff Commendation Officer 15739
 -- Great-father Winter's Helper 15746
--- Officer Vu'Shalay 15761
--- Officer Redblade 15765
 -- Lunar Festival Herald 15891
 -- Lunar Festival Harbinger 15895
 -- Lunar Festival Vendor 15898
@@ -12956,11 +12901,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stonelash Flayer
 ('1173701','11737','1','0','100','0','1000','1000','0','0','0','0','11','3417','0','32','0','0','0','0','0','0','0','0','Stonelash Flayer - Cast Thrash OOC'),
 ('1173702','11737','0','0','100','1025','3000','7000','14000','17000','0','0','11','5416','1','0','0','0','0','0','0','0','0','0','Stonelash Flayer - Cast Venom Sting'),
--- Sand Skitterer
+-- Sand Skitterer 11738
 ('1173801','11738','0','0','100','1025','7000','14000','120000','125000','0','0','11','744','1','0','0','0','0','0','0','0','0','0','Sand Skitterer - Cast Poison'),
--- Rock Stalker
-('1173901','11739','0','0','100','1025','7000','14000','120000','125000','0','0','11','744','1','0','0','0','0','0','0','0','0','0','Rock Stalker - Cast Poison'),
-('1173902','11739','9','0','100','1025','0','30','9000','14000','0','0','11','745','1','0','0','0','0','0','0','0','0','0','Rock Stalker - Cast Web'),
+-- Rock Stalker 11739
+('1173901','11739','0','0','100','1025','5000','20000','20000','25000','0','0','11','745','1','0','0','0','0','0','0','0','0','0','Rock Stalker - Cast Web'),
+('1173902','11739','0','0','100','1025','5000','15000','8000','24000','0','0','11','744','1','0','0','0','0','0','0','0','0','0','Rock Stalker - Cast Poison'),
 -- Dredge Striker
 ('1174001','11740','9','0','100','1025','8','25','5000','5000','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Dredge Striker - Cast Charge'),
 -- Dredge Crusher
@@ -13202,7 +13147,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Anachronos the Ancient 15381 - npc_anachronos_the_ancient
 -- Fandral Staghelm 15382
 -- Kania 15419
--- Kaldorei Infantry 15423
 -- Captain Blackanvil 15440
 -- Ironforge Brigade Rifleman 15441
 ('1544101','15441','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Ironforge Brigade Rifleman - Enable Range Mode on Aggro'),
@@ -13249,11 +13193,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Hive'Regal Hunter-Killer 15620
 -- Jonathan the Revelator 15693
 -- Squire Leoren Mal'derath 15722
--- Colossus Researcher Sophia 15797
--- Colossus Researcher Nestor 15798
--- Colossus Researcher Eazel 15799
--- Lieutenant General Nokhor 15818
--- Orgrimmar Elite Infantryman 15853
 -- Orgrimmar Elite Cavalryman 15854
 -- Tauren Rifleman 15855
 -- Tauren Primalist 15856
@@ -13261,7 +13200,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Stormwind Infantryman 15858
 -- Stormwind Archmage 15859
 -- Kaldorei Marksman 15860
--- Ironforge Infantryman 15861
 -- Ironforge Cavalryman 15862
 -- High Commander Lynore Windstryke 15866
 -- Highlord Leoric Von Zeldig 15868
@@ -19062,6 +19000,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1950403','19504','0','0','100','1025','3000','15000','10000','30000','0','0','11','11436','1','32','0','0','0','0','0','0','0','0','Scryer Guardian - Cast Slow'),
 ('1950404','19504','0','0','100','1025','3000','15000','10000','30000','0','0','11','17195','1','0','0','0','0','0','0','0','0','0','Scryer Guardian - Cast Scorch'),
 ('1950405','19504','9','0','100','1025','0','30','3800','5200','0','0','11','15228','1','256','0','0','0','0','0','0','0','0','Scryer Guardian - Cast Fireball'),
+-- Lelagar 19520 - s.15228,17195,11436
 -- Maddix 19581
 ('1958101','19581','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Maddix - Spawn Enraged Wyvern and Enraged Gryphon on Aggro'),
 -- Wrathwalker 19740
@@ -28810,7 +28749,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1533801','15338','0','0','100','1025','5000','9000','8000','11000','0','0','11','25756','0','0','0','0','0','0','0','0','0','0','Obsidian Destroyer - Cast Purge'),
 -- Ossirian the Unscarred (15339) - boss_ossirian
 -- Moam (15340) - boss_moam
--- General Rajaxx
+-- General Rajaxx 15341
 ('1534101','15341','9','0','100','1025','0','5','7000','9000','0','0','11','6713','4','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Disarm'),
 ('1534102','15341','0','0','100','1025','12000','18000','16000','21000','0','0','11','25599','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Thundercrash'),
 ('1534103','15341','0','0','100','1025','30000','60000','45000','60000','0','0','13','-99','1','0','1','11067','0','0','0','0','0','0','General Rajaxx - Drop Aggro and Yell'),
@@ -28818,7 +28757,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1534105','15341','0','0','100','1025','600000','600000','120000','120000','0','0','11','8269','0','0','1','1191','0','0','0','0','0','0','General Rajaxx - Cast Frenzy after 10 Minutes'),
 ('1534106','15341','6','0','100','0','0','0','0','0','0','0','1','11434','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Yell on Death'),
 ('1534107','15341','11','0','100','0','0','0','0','0','0','0','11','18943','0','0','0','0','0','0','0','0','0','0','General Rajaxx - Cast Double Attack on Spawn'),
-('1534108','-155181','11','0','100','0','0','0','0','0','0','0','54','11429','0','0','0','0','0','0','0','0','0','0','(Guid EAI) General Rajaxx (War Effort) - Yell on Spawn'),
+('1534108','-155940','29','0','100','1','0','0','300000','300000','0','0','54','11429','0','0','18','832','0','0','0','0','0','0','(Guid EAI) General Rajaxx (War Effort) - Yell, Set UnitFlags on Spawn'),
 -- Qiraji Swarmguard
 ('1534301','15343','9','0','100','1025','0','5','8000','12000','0','0','11','25174','4','0','0','0','0','0','0','0','0','0','Qiraji Swarmguard - Cast Sundering Cleave'),
 -- Swarmguard Needler
@@ -28887,6 +28826,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1539205','15392','0','0','100','1025','5000','9000','9000','11000','0','0','11','40504','1','0','0','0','0','0','0','0','0','0','Captain Tuubid - Cast Cleave'),
 ('1539206','15392','0','0','100','1025','11000','14000','17000','21000','0','0','11','25471','8','0','1','11009','0','0','0','0','0','0','Captain Tuubid - Cast Attack Order'),
 ('1539207','15392','7','0','100','0','0','0','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Captain Tuubid - Set Phase 0 on Evade'),
+-- Ahn'Qiraj Trigger 15426
+-- Sand Vortex 15428
+('1542801','15428','11','0','100','0','0','0','0','0','0','0','11','25160','0','34','0','0','0','0','0','0','0','0','Sand Vortex - Cast Sand Storm on Spawn'),
 -- Shrieker Scarab
 ('1546101','15461','9','0','100','1025','0','40','14000','18000','0','0','11','22886','1','0','0','0','0','0','0','0','0','0','Shrieker Scarab - Cast Berserker Charge'),
 ('1546102','15461','0','0','100','1025','5000','9000','10000','15000','0','0','11','26379','0','0','0','0','0','0','0','0','0','0','Shrieker Scarab - Cast Piercing Shriek'),
@@ -30947,40 +30889,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Winter Reveler
 ('1576001','15760','22','0','100','1','58','0','0','0','0','0','11','26218','6','32','0','0','0','0','0','0','0','0','Winter Reveler - Cast Mistletoe on Receive Kiss Emote'),
 -- Tranquil Air Totem 15803 - TotemAI
--- Qiraji Wasp 15414
--- Qiraji Drone 15421
--- Qiraji Tank 15422
--- Anubisath Conqueror 15424
--- Colossus of Zora 15740
--- Colossus of Regal 15741
--- Colossus of Ashi 15742
--- Colossal Anubisath Warbringer 15743
--- Imperial Qiraji Destroyer 15744
-('1574401','15744','0','0','100','1025','10000','30000','25000','35000','0','0','11','19408','17','0','0','0','0','0','0','0','0','0','Imperial Qiraji Destroyer - Cast Panic'),
--- Qiraji Captain 15747
--- Lesser Anubisath Warbringer 15748
--- Lesser Silithid Flayer 15749
--- Qiraji Major 15750
--- Anubisath Warbringer 15751
--- Silithid Flayer 15752
--- Qiraji Brigadier General 15753
--- Greater Anubisath Warbringer 15754
--- Greater Silithid Flayer 15756
--- Qiraji Lieutenant General 15757
--- Supreme Anubisath Warbringer 15758
--- Supreme Silithid Flayer 15759
--- Qiraji Lieutenant 15806
--- Minor Anubisath Warbringer 15807
--- Minor Silithid Flayer 15808
--- Eroded Anubisath Warbringer 15810
--- Faltering Silithid Flayer 15811
--- Qiraji Officer 15812
--- Qiraji Officer Zod 15813
--- Qiraji Lieutenant Jo-rel 15814
--- Qiraji Captain Ka'ark 15815
--- Qiraji Major He'al-ie 15816
--- Qiraji Brigadier General Pax-lish 15817
--- Lieutenant General Nokhor 15818
 -- Might of Kalimdor Grunt 15839
 -- Might of Kalimdor Sergeant 15840
 -- Might of Kalimdor Lieutenant 15841
@@ -31218,6 +31126,212 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1643802','16438','0','0','100','1025','1000','9000','9000','18000','0','0','11','589','1','32','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Shadow Word: Pain (Rank 1)'),
 -- Mouth of Kel'Thuzad 16995 - scourge_invasion_mouth
 -- Plagued Resident (27848) - NSR
+
+-- ====================
+-- Ahn'Qiraj War Effort
+-- ====================
+-- Sergeant Stonebrow 15383 - npc_war_effort
+-- Corporal Carnes 15431 - npc_war_effort
+-- Dame Twinbraid 15432 - npc_war_effort
+-- Private Draxlegauge 15434 - npc_war_effort
+-- Master Nightsong 15437 - npc_war_effort
+-- Sergeant Major Germaine 15445 - npc_war_effort
+-- Bonnie Stoneflayer 15446 - npc_war_effort
+-- Private Porter 15448 - npc_war_effort
+-- Marta Finespindle 15450 - npc_war_effort
+-- Sentinel Silversky 15451 - npc_war_effort
+-- Nurse Stonefield 15452 - npc_war_effort
+-- Keeper Moonshade 15453 - npc_war_effort
+-- Slicky Gastronome 15455 - npc_war_effort
+-- Sarah Sadwhistle 15456 - npc_war_effort
+-- Huntress Swiftriver 15457 - npc_war_effort
+-- Commander Stronghammer 15458
+-- Miner Cromwell 15459 - npc_war_effort
+-- Grunt Maug 15460 - npc_war_effort
+-- Senior Sergeant T'kelah 15469 - npc_war_effort
+-- Herbalist Proudfeather 15477 - npc_war_effort
+-- Batrider Pele'keiki 15508 - npc_war_effort
+-- Apothecary Jezel 15512 - npc_war_effort
+-- Skinner Jamani 15515 - npc_war_effort
+-- Sergeant Umala 15522 - npc_war_effort
+-- Doctor Serratus 15525 - npc_war_effort
+-- Healer Longrunner 15528 - npc_war_effort
+-- Lady Callow 15529 - npc_war_effort
+-- Stoneguard Clayhoof 15532 - npc_war_effort
+-- Bloodguard Rawtar 15533 - npc_war_effort
+-- Fisherman Lin'do 15534 - npc_war_effort
+-- Chief Sharpclaw 15535 - npc_war_effort
+-- General Zog 15539
+-- War Effort Volunteer 15663
+-- War Effort Recruit 15696
+-- Warlord Gorchuk 15700
+-- Field Marshal Snowfall 15701
+-- Senior Sergeant Taiga <War Effort Recruiter> 15702
+-- Senior Sergeant Grimsford <War Effort Recruiter> 15703
+-- Senior Sergeant Kai'jin 15704
+-- Master Sergeant Fizzlebolt 15707
+-- Master Sergeant Maclure 15708
+-- Master Sergeant Moonshadow 15709
+-- Darnassus Commendation Officer 15731
+-- Gnomeregan Commendation Officer 15733
+-- Ironforge Commendation Officer 15734
+-- Stormwind Commendation Officer 15735
+-- Orgrimmar Commendation Officer 15736
+-- Darkspear Commendation Officer 15737
+-- Undercity Commendation Officer 15738
+-- Thunder Bluff Commendation Officer 15739
+-- Officer Vu'Shalay <Darkspear Commendations> 15761
+-- Officer Lunalight <Darnassus Commendations> 15762
+-- Officer Porterhouse <Gnomeregan Commendations> 15763
+-- Officer Ironbeard <Ironforge Commendations> 15764
+-- Officer Redblade <Orgrimmar Commendations> 15765
+-- Officer Maloof <Stormwind Commendations> 15766
+('1576601','15766','30','0','10','1','5','16383','0','0','0','0','54','0','6','18','0','0','0','0','0','0','0','0','Officer Maloof - Say on Receive AI Event A From Flameshocker 16383'),
+('1576602','15766','30','0','10','1','5','16394','0','0','0','0','54','0','6','18','0','0','0','0','0','0','0','0','Officer Maloof - Say on Receive AI Event A From Pallid Horror 16394'),
+-- Officer Thunderstrider <Thunder Bluff Commendations> 15767
+-- Officer Gothena <Undercity Commendations> 15768
+-- Colossus Researcher Sophia 15797
+-- Colossus Researcher Nestor 15798
+-- Colossus Researcher Eazel 15799
+-- Resonating Crystal 15769
+('1576901','15769','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','0','0','0','0','Resonating Crystal - Set Immobilized State and Disable Melee on Spawn'),
+('1576902','15769','0','0','100','1025','0','5000','20000','40000','0','0','11','26195','5','512','0','0','0','0','0','0','0','0','Resonating Crystal - Cast Whisperings of C\'Thun'),
+-- Greater Resonating Crystal 15770
+('1577001','15770','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','0','0','0','0','Greater Resonating Crystal - Set Immobilized State and Disable Melee on Spawn'),
+('1577002','15770','0','0','100','1025','0','5000','20000','40000','0','0','11','26197','5','512','0','0','0','0','0','0','0','0','Greater Resonating Crystal - Cast Whisperings of C\'Thun'),
+-- Major Resonating Crystal 15771
+('1577101','15771','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','0','0','0','0','Major Resonating Crystal - Set Immobilized State and Disable Melee on Spawn'),
+('1577102','15771','0','0','100','1025','0','5000','30000','60000','0','0','11','26198','5','512','0','0','0','0','0','0','0','0','Major Resonating Crystal - Cast Whisperings of C\'Thun'),
+-- Lesser Resonating Crystal 15804
+('1580401','15804','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','0','0','0','0','Lesser Resonating Crystal - Set Immobilized State and Disable Melee on Spawn'),
+('1580402','15804','0','0','100','1025','0','5000','20000','40000','0','0','11','26258','5','512','0','0','0','0','0','0','0','0','Lesser Resonating Crystal - Cast Whisperings of C\'Thun'),
+-- Minor Resonating Crystal 15805
+('1580501','15805','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','0','0','0','0','Minor Resonating Crystal - Set Immobilized State and Disable Melee on Spawn'),
+('1580502','15805','0','0','100','1025','0','5000','12000','24000','0','0','11','26259','5','512','0','0','0','0','0','0','0','0','Minor Resonating Crystal - Cast Whisperings of C\'Thun'),
+-- Qiraji Wasp 15414 - s.25170,25171,25172
+-- Qiraji Drone 15421 - s.25168,25170,25171,25172
+-- Qiraji Tank 15422 - s.25168,25170,25171
+-- Kaldorei Infantry 15423 - s.25171
+-- Anubisath Conqueror 15424 - s.25168,25172
+-- Colossus of Zora 15740 - npc_silithus_boss & creature_spell_list
+-- Colossus of Regal 15741 - npc_silithus_boss & creature_spell_list
+-- Colossus of Ashi 15742 - npc_silithus_boss & creature_spell_list
+-- Colossal Anubisath Warbringer 15743
+('1574301','15743','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','11','18950','0','34','0','0','0','0','Colossal Anubisath Warbringer - Cast Simple Teleport, Invisibility and Stealth Detection on Spawn'),
+('1574302','15743','0','0','100','1025','0','20000','30000','40000','0','0','11','16727','17','0','0','0','0','0','0','0','0','0','Colossal Anubisath Warbringer - Cast War Stomp'),
+('1574303','15743','0','0','100','1025','0','15000','30000','40000','0','0','11','18944','17','0','0','0','0','0','0','0','0','0','Colossal Anubisath Warbringer - Cast Smash'),
+('1574304','15743','0','0','100','1025','0','10000','20000','30000','0','0','11','19632','1','0','0','0','0','0','0','0','0','0','Colossal Anubisath Warbringer - Cast Cleave'),
+-- Imperial Qiraji Destroyer 15744
+('1574401','15744','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Imperial Qiraji Destroyer - Cast Simple Teleport on Spawn'),
+('1574402','15744','0','0','100','1025','20000','40000','120000','140000','0','0','11','23772','17','0','0','0','0','0','0','0','0','0','Imperial Qiraji Destroyer - Cast Wilt'),
+('1574403','15744','0','0','100','1025','10000','30000','25000','35000','0','0','11','19408','17','0','0','0','0','0','0','0','0','0','Imperial Qiraji Destroyer - Cast Panic'),
+('1574404','15744','0','0','100','1025','0','20000','8000','18000','0','0','11','19196','4','512','0','0','0','0','0','0','0','0','Imperial Qiraji Destroyer - Cast Surge'),
+('1574405','15744','0','0','100','1025','0','12000','6000','18000','0','0','11','17963','1','0','0','0','0','0','0','0','0','0','Imperial Qiraji Destroyer - Cast Sundering Cleave'),
+('1574406','-155838','11','0','100','0','0','0','0','0','0','0','45','5','10000','0','0','0','0','0','0','0','0','0','Imperial Qiraji Destroyer (Guid 155838) - Send AI Event A on Spawn'),
+-- Qiraji Captain 15747
+('1574701','15747','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Captain - Cast Demoralizing Shout'),
+('1574702','15747','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Captain - Cast Charge'),
+('1574703','15747','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Captain - Cast Mortal Strike'),
+-- Lesser Anubisath Warbringer 15748
+('1574801','15748','0','0','100','1025','0','15000','12000','24000','0','0','11','11876','17','0','0','0','0','0','0','0','0','0','Lesser Anubisath Warbringer - Cast War Stomp'),
+('1574802','15748','0','0','100','1025','0','18000','8000','24000','0','0','11','11427','1','0','0','0','0','0','0','0','0','0','Lesser Anubisath Warbringer - Cast Cleave'),
+('1574803','15748','0','0','100','1025','0','12000','6000','18000','0','0','11','17963','1','0','0','0','0','0','0','0','0','0','Lesser Anubisath Warbringer - Cast Sundering Cleave'),
+-- Lesser Silithid Flayer 15749
+('1574901','15749','0','0','100','1025','0','20000','12000','24000','0','0','11','6605','17','0','0','0','0','0','0','0','0','0','Lesser Silithid Flayer - Cast Terrifying Screech'),
+('1574902','15749','0','0','100','1025','0','12000','15000','18000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Lesser Silithid Flayer - Cast Rend'),
+-- Qiraji Major 15750
+('1575001','15750','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Major - Cast Demoralizing Shout'),
+('1575002','15750','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Major - Cast Charge'),
+('1575003','15750','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Major - Cast Mortal Strike'),
+-- Anubisath Warbringer 15751
+('1575101','15751','0','0','100','1025','0','15000','12000','24000','0','0','11','11876','17','0','0','0','0','0','0','0','0','0','Anubisath Warbringer - Cast War Stomp'),
+('1575102','15751','0','0','100','1025','0','18000','8000','24000','0','0','11','11427','1','0','0','0','0','0','0','0','0','0','Anubisath Warbringer - Cast Cleave'),
+('1575103','15751','0','0','100','1025','0','12000','6000','18000','0','0','11','17963','1','0','0','0','0','0','0','0','0','0','Anubisath Warbringer - Cast Sundering Cleave'),
+-- Silithid Flayer 15752
+('1575201','15752','0','0','100','1025','0','20000','12000','24000','0','0','11','6605','17','0','0','0','0','0','0','0','0','0','Silithid Flayer - Cast Terrifying Screech'),
+('1575202','15752','0','0','100','1025','0','12000','15000','18000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Silithid Flayer - Cast Rend'),
+-- Qiraji Brigadier General 15753
+('1575301','15753','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Brigadier General - Cast Demoralizing Shout'),
+('1575302','15753','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Brigadier General - Cast Charge'),
+('1575303','15753','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Brigadier General - Cast Mortal Strike'),
+-- Greater Anubisath Warbringer 15754
+('1575401','15754','0','0','100','1025','0','15000','12000','24000','0','0','11','11876','17','0','0','0','0','0','0','0','0','0','Greater Anubisath Warbringer - Cast War Stomp'),
+('1575402','15754','0','0','100','1025','0','18000','8000','24000','0','0','11','11427','1','0','0','0','0','0','0','0','0','0','Greater Anubisath Warbringer - Cast Cleave'),
+('1575403','15754','0','0','100','1025','0','12000','6000','18000','0','0','11','17963','1','0','0','0','0','0','0','0','0','0','Greater Anubisath Warbringer - Cast Sundering Cleave'),
+-- Greater Silithid Flayer 15756
+('1575601','15756','0','0','100','1025','0','20000','12000','24000','0','0','11','6605','17','0','0','0','0','0','0','0','0','0','Greater Silithid Flayer - Cast Terrifying Screech'),
+('1575602','15756','0','0','100','1025','0','12000','15000','18000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Greater Silithid Flayer - Cast Rend'),
+-- Qiraji Lieutenant General 15757
+('1575701','15757','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Lieutenant General - Cast Demoralizing Shout'),
+('1575702','15757','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Lieutenant General - Cast Charge'),
+('1575703','15757','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Lieutenant General - Cast Mortal Strike'),
+-- Supreme Anubisath Warbringer 15758
+('1575801','15758','0','0','100','1025','0','15000','12000','24000','0','0','11','11876','17','0','0','0','0','0','0','0','0','0','Supreme Anubisath Warbringer - Cast War Stomp'),
+('1575802','15758','0','0','100','1025','0','18000','8000','24000','0','0','11','11427','1','0','0','0','0','0','0','0','0','0','Supreme Anubisath Warbringer - Cast Cleave'),
+('1575803','15758','0','0','100','1025','0','12000','6000','18000','0','0','11','17963','1','0','0','0','0','0','0','0','0','0','Supreme Anubisath Warbringer - Cast Sundering Cleave'),
+-- Supreme Silithid Flayer 15759
+('1575901','15759','0','0','100','1025','0','20000','12000','24000','0','0','11','6605','17','0','0','0','0','0','0','0','0','0','Supreme Silithid Flayer - Cast Terrifying Screech'),
+('1575902','15759','0','0','100','1025','0','12000','15000','18000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Supreme Silithid Flayer - Cast Rend'),
+-- Qiraji Lieutenant 15806
+('1580601','15806','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Lieutenant - Cast Demoralizing Shout'),
+('1580602','15806','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Lieutenant - Cast Charge'),
+('1580603','15806','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Lieutenant - Cast Mortal Strike'),
+-- Minor Anubisath Warbringer 15807
+('1580701','15807','0','0','100','1025','0','15000','12000','24000','0','0','11','11876','17','0','0','0','0','0','0','0','0','0','Minor Anubisath Warbringer - Cast War Stomp'),
+('1580702','15807','0','0','100','1025','0','18000','8000','24000','0','0','11','11427','1','0','0','0','0','0','0','0','0','0','Minor Anubisath Warbringer - Cast Cleave'),
+('1580703','15807','0','0','100','1025','0','12000','6000','18000','0','0','11','17963','1','0','0','0','0','0','0','0','0','0','Minor Anubisath Warbringer - Cast Sundering Cleave'),
+-- Minor Silithid Flayer 15808
+('1580801','15808','0','0','100','1025','0','20000','12000','24000','0','0','11','6605','17','0','0','0','0','0','0','0','0','0','Minor Silithid Flayer - Cast Terrifying Screech'),
+('1580802','15808','0','0','100','1025','0','12000','15000','18000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Minor Silithid Flayer - Cast Rend'),
+-- Eroded Anubisath Warbringer 15810
+('1581001','15810','0','0','100','1025','0','15000','12000','24000','0','0','11','11876','17','0','0','0','0','0','0','0','0','0','Eroded Anubisath Warbringer - Cast War Stomp'),
+('1581002','15810','0','0','100','1025','0','18000','8000','24000','0','0','11','11427','1','0','0','0','0','0','0','0','0','0','Eroded Anubisath Warbringer - Cast Cleave'),
+('1581003','15810','0','0','100','1025','0','12000','6000','18000','0','0','11','17963','1','0','0','0','0','0','0','0','0','0','Eroded Anubisath Warbringer - Cast Sundering Cleave'),
+-- Faltering Silithid Flayer 15811
+('1581101','15811','0','0','100','1025','0','20000','12000','24000','0','0','11','6605','17','0','0','0','0','0','0','0','0','0','Faltering Silithid Flayer - Cast Terrifying Screech'),
+('1581102','15811','0','0','100','1025','0','12000','15000','18000','0','0','11','13445','1','0','0','0','0','0','0','0','0','0','Faltering Silithid Flayer - Cast Rend'),
+-- Qiraji Officer 15812
+('1581201','15812','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Officer - Cast Demoralizing Shout'),
+('1581202','15812','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Officer - Cast Charge'),
+('1581203','15812','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Officer - Cast Mortal Strike'),
+-- Qiraji Officer Zod 15813
+('1581301','15813','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Officer Zod - Cast Demoralizing Shout'),
+('1581302','15813','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Officer Zod - Cast Charge'),
+('1581303','15813','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Officer Zod - Cast Mortal Strike'),
+-- Qiraji Lieutenant Jo-rel 15814
+('1581401','15814','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Lieutenant Jo-rel - Cast Demoralizing Shout'),
+('1581402','15814','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Lieutenant Jo-rel - Cast Charge'),
+('1581403','15814','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Lieutenant Jo-rel - Cast Mortal Strike'),
+-- Qiraji Captain Ka'ark 15815
+('1581501','15815','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Captain Ka\'ark - Cast Demoralizing Shout'),
+('1581502','15815','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Captain Ka\'ark - Cast Charge'),
+('1581503','15815','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Captain Ka\'ark - Cast Mortal Strike'),
+-- Qiraji Major He'al-ie 15816
+('1581601','15816','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Major He\'al-ie - Cast Demoralizing Shout'),
+('1581602','15816','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Major He\'al-ie - Cast Charge'),
+('1581603','15816','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Major He\'al-ie - Cast Mortal Strike'),
+-- Qiraji Brigadier General Pax-lish 15817
+('1581701','15817','0','0','100','1025','0','16000','10000','40000','0','0','11','13730','17','0','0','0','0','0','0','0','0','0','Qiraji Brigadier General Pax-lish - Cast Demoralizing Shout'),
+('1581702','15817','0','0','100','1025','0','20000','5000','25000','0','0','11','24023','4','512','0','0','0','0','0','0','0','0','Qiraji Brigadier General Pax-lish - Cast Charge'),
+('1581703','15817','0','0','100','1025','0','16000','8000','24000','0','0','11','19643','1','0','0','0','0','0','0','0','0','0','Qiraji Brigadier General Pax-lish - Cast Mortal Strike'),
+-- Lieutenant General Nokhor 15818
+('1581801','15818','0','0','100','1025','60000','90000','60000','90000','0','0','11','25599','17','0','0','0','0','0','0','0','0','0','Lieutenant General Nokhor - Cast Thundercrash'),
+('1581802','15818','0','0','100','1025','20000','30000','20000','30000','0','0','11','26167','17','2','0','1','11423','0','0','0','0','0','Lieutenant General Nokhor - Cast Colossal Smash'),
+('1581803','15818','0','0','100','1025','0','16000','10000','40000','0','0','11','23511','17','0','0','0','0','0','0','0','0','0','Lieutenant General Nokhor - Cast Demoralizing Shout'),
+('1581804','15818','0','0','100','1025','0','16000','8000','24000','0','0','11','24573','1','0','0','0','0','0','0','0','0','0','Lieutenant General Nokhor - Cast Mortal Strike'),
+-- Orgrimmar Elite Infantryman 15853
+('1585301','15853','0','0','100','1025','0','10000','30000','60000','0','0','11','9128','15','0','0','0','0','0','0','0','0','0','Orgrimmar Elite Infantryman - Cast Battle Shout'),
+('1585302','15853','0','0','100','1025','0','20000','5000','15000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Orgrimmar Elite Infantryman - Cast Heroic Strike'),
+-- Ironforge Infantryman 15861
+('1586101','15861','0','0','100','1025','0','10000','30000','60000','0','0','11','9128','15','0','0','0','0','0','0','0','0','0','Ironforge Infantryman - Cast Battle Shout'),
+('1586102','15861','2','0','100','1025','75','0','5000','15000','0','0','11','20343','15','0','0','0','0','0','0','0','0','0','Ironforge Infantryman - Cast Judgement of Light (Rank 4) at 75% HP'),
+('1586103','15861','0','0','100','1025','0','20000','5000','15000','0','0','11','25710','1','0','0','0','0','0','0','0','0','0','Ironforge Infantryman - Cast Heroic Strike'),
+-- Warcaller Finster 15878
+('1587801','15878','30','0','100','0','5','15744','0','0','0','0','1','11613','0','0','0','0','0','0','0','0','0','0','Warcaller Finster - Yell on Receive AI Event Custom A'),
+-- Senior Sergeant Eveningshade <War Effort Recruiter> 21155
+-- Master Sergeant Thelaana <War Effort Recruiter> 21156
+-- Officer Dawning <Silvermoon City Commendations> 21970
+-- Officer Khaluun <Exodar Commendations> 21971
 
 -- ============
 -- Hallow's End
