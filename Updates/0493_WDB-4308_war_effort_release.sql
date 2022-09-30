@@ -327,7 +327,7 @@ UPDATE gameobject_template SET type=8, `size` = 4 WHERE entry = 180810; -- Reson
 UPDATE gameobject_template SET type=6, `size` = 10 WHERE entry = 180811; -- Resonating Crystal Formation Glow
 
 SET @OGUID := 155200;
-DELETE FROM `gameobject` WHERE guid BETWEEN @OGUID AND @OGUID+41;
+DELETE FROM `gameobject` WHERE guid BETWEEN @OGUID+1 AND @OGUID+41;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
 (@OGUID+1, 180810, 1, 1, -784.85382080078125, -2784.091552734375, 93.9261474609375, 0.296705186367034912, 0, 0, 0.147809028625488281, 0.989015936851501464, 7200, 7200, 100, 1),
 (@OGUID+2, 180810, 1, 1, -151.529251098632812, -2217.197998046875, 93.19226837158203125, 0.296705186367034912, 0, 0, 0.147809028625488281, 0.989015936851501464, 7200, 7200, 100, 1),
@@ -371,8 +371,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+40, 180810, 1, 1, -2349.8, -2383.47, 91.988, 0.296705, 0, 0, 0.147809, 0.989016, 7200, 7200, 100, 1),
 (@OGUID+41, 180810, 1, 1, -7419.87,  819.94, -3.50, 0, 0, 0, 0, 0, 7200, 7200, 100, 1);
 
-DELETE FROM `game_event_gameobject` WHERE `guid` BETWEEN @OGUID AND @OGUID+40;
-INSERT INTO game_event_gameobject SELECT guid, 123 FROM gameobject WHERE guid BETWEEN @CGUID + 1 AND @CGUID + 41; -- AQ War Effort Phase 4 10 Hour War
+DELETE FROM `game_event_gameobject` WHERE `guid` BETWEEN @OGUID+1 AND @OGUID+41;
+INSERT INTO `game_event_gameobject` SELECT `guid`, 123 FROM `gameobject` WHERE `guid` BETWEEN @OGUID+1 AND @OGUID+41; -- AQ War Effort Phase 4 10 Hour War
 
 SET @CGUID := 155200;
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+63;
