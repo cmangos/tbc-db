@@ -58,33 +58,33 @@ DELETE FROM `gameobject` WHERE `guid` BETWEEN 104708 AND 104711;
 DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 7847 AND 7847;
 DELETE FROM `pool_template` WHERE `entry` BETWEEN 7847 AND 7847;
 
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104585 AND 104587;
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 104585 AND 104587;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104584 AND 104587;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 104584 AND 104587;
 DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 7816 AND 7816;
 DELETE FROM `pool_template` WHERE `entry` BETWEEN 7816 AND 7816;
 
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104633 AND 104635;
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 104633 AND 104635;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104632 AND 104635;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 104632 AND 104635;
 DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 7828 AND 7828;
 DELETE FROM `pool_template` WHERE `entry` BETWEEN 7828 AND 7828;
 
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104641 AND 104643;
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 104641 AND 104643;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104640 AND 104643;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 104640 AND 104643;
 DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 7830 AND 7830;
 DELETE FROM `pool_template` WHERE `entry` BETWEEN 7830 AND 7830;
 
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104649 AND 104651;
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 104649 AND 104651;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104648 AND 104651;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 104648 AND 104651;
 DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 7832 AND 7832;
 DELETE FROM `pool_template` WHERE `entry` BETWEEN 7832 AND 7832;
 
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104653 AND 104655;
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 104653 AND 104655;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104652 AND 104655;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 104652 AND 104655;
 DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 7833 AND 7833;
 DELETE FROM `pool_template` WHERE `entry` BETWEEN 7833 AND 7833;
 
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104801 AND 104803;
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 104801 AND 104803;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 104800 AND 104803;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 104800 AND 104803;
 DELETE FROM `pool_pool` WHERE `pool_id` BETWEEN 7870 AND 7870;
 DELETE FROM `pool_template` WHERE `entry` BETWEEN 7870 AND 7870;
 
@@ -100,6 +100,13 @@ DELETE FROM `gameobject` WHERE (`guid` IN (104586,104590,104594,104598,104602,10
 DELETE FROM `pool_gameobject` where `description` LIKE '%Small Thorium%' and `pool_entry` IN (SELECT `pool_id` FROM `pool_pool` where `mother_pool` IN (2048,2049));
 DELETE FROM `gameobject` WHERE (`guid` IN (104584,104588,104592,104596,104600,104608,104612,104624,104632,104640,104648,104652,104664,104668,104672,104680,104684,
 104696,104704,104712,104716,104720,104728,104732,104736,104740,104744,104748,104752,104788,104792,104796,104800,104808,104812));
+-- pools get already deleted above, hence a few errors for some of these
+-- 2022-10-05 19:51:40 `pool_gameobject` has a non existing gameobject spawn (GUID: 104584) defined for pool id (7816), skipped.
+-- 2022-10-05 19:51:40 `pool_gameobject` has a non existing gameobject spawn (GUID: 104632) defined for pool id (7828), skipped.
+-- 2022-10-05 19:51:40 `pool_gameobject` has a non existing gameobject spawn (GUID: 104640) defined for pool id (7830), skipped.
+-- 2022-10-05 19:51:40 `pool_gameobject` has a non existing gameobject spawn (GUID: 104648) defined for pool id (7832), skipped.
+-- 2022-10-05 19:51:40 `pool_gameobject` has a non existing gameobject spawn (GUID: 104652) defined for pool id (7833), skipped.
+-- 2022-10-05 19:51:40 `pool_gameobject` has a non existing gameobject spawn (GUID: 104800) defined for pool id (7870), skipped.
 
 -- Remove more nodes from Hive'Ashi, which was already reworked
 -- https://github.com/cmangos/classic-db/commit/3ca651deddea4de75a3a4521b3d4fe32ce9f1cac
