@@ -170,133 +170,138 @@ INSERT INTO `gameobject_involvedrelation` (`id`, `quest`) VALUES
 -- ServerToClient: SMSG_DESTROY_OBJECT (0x00AA) Length: 9 ConnIdx: 0 Time: 03/25/2009 02:55:34.000 Number: 241309
 -- GUID: Full: 0xF110028416008967 Type: GameObject Entry: 164886 Low: 35175
 -- Despawn Animation: false
+-- https://youtu.be/7l3RcYf8jOY?t=543 - respawns faster then 1sec delay, might even be instant
 -- ServerToClient: SMSG_COMPRESSED_UPDATE_OBJECT (0x01F6) Length: 90 ConnIdx: 0 Time: 03/25/2009 02:55:35.000 Number: 241311
 -- Count: 1
 -- [0] UpdateType: CreateObject2
 -- [0] GUID: Full: 0xF11002841200C798 Type: GameObject Entry: 164882 Low: 51096
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48876) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 2523
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900011, `datalong2` = 300 WHERE `command` = 9 AND `id` = 2523;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (2523, 0, 0, 40, 900001, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900011, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 2523;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (2523, 0, 0, 40, 900001, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48900) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4465
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900012, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4465;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4465, 0, 0, 40, 900002, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900012, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4465;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4465, 0, 0, 40, 900002, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48898) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4464
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900013, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4464;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4464, 0, 0, 40, 900003, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900013, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4464;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4464, 0, 0, 40, 900003, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48877) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 2878
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900014, `datalong2` = 300 WHERE `command` = 9 AND `id` = 2878;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (2878, 0, 0, 40, 900004, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900014, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 2878;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (2878, 0, 0, 40, 900004, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48892) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 3363
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900015, `datalong2` = 300 WHERE `command` = 9 AND `id` = 3363;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (3363, 0, 0, 40, 900005, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900015, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 3363;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (3363, 0, 0, 40, 900005, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48893) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4113
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900016, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4113;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4113, 0, 0, 40, 900006, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900016, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4113;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4113, 0, 0, 40, 900006, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48894) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4114
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900017, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4114;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4114, 0, 0, 40, 900007, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900017, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4114;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4114, 0, 0, 40, 900007, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48895) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4116
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900018, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4116;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4116, 0, 0, 40, 900008, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900018, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4116;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4116, 0, 0, 40, 900008, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 18207) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4118
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900019, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4118;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4118, 0, 0, 40, 900009, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900019, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4118;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4118, 0, 0, 40, 900009, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48896) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4401
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900020, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4401;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4401, 0, 0, 40, 900010, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900020, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4401;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4401, 0, 0, 40, 900010, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48887) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4115
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900031, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4115;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4115, 0, 0, 40, 900021, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900031, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4115;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4115, 0, 0, 40, 900021, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48880) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 1514
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900033, `datalong2` = 300 WHERE `command` = 9 AND `id` = 1514;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (1514, 0, 0, 40, 900022, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900033, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 1514;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (1514, 0, 0, 40, 900022, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48879) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 998
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900036, `datalong2` = 300 WHERE `command` = 9 AND `id` = 998;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (998, 0, 0, 40, 900023, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900036, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 998;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (998, 0, 0, 40, 900023, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48878) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 996
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900037, `datalong2` = 300 WHERE `command` = 9 AND `id` = 996;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (996, 0, 0, 40, 900024, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900037, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 996;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (996, 0, 0, 40, 900024, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48891) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4403
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900038, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4403;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4403, 0, 0, 40, 900025, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900038, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4403;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4403, 0, 0, 40, 900025, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48890) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4343
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900034, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4343;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4343, 0, 0, 40, 900026, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900034, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4343;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4343, 0, 0, 40, 900026, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48889) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4222
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900035, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4222;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4222, 0, 0, 40, 900027, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900035, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4222;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4222, 0, 0, 40, 900027, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48888) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4221
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900039, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4221;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4221, 0, 0, 40, 900028, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900039, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4221;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4221, 0, 0, 40, 900028, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48897) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4466
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900040, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4466;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4466, 0, 0, 40, 900029, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900040, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4466;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4466, 0, 0, 40, 900029, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48899) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4467
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900032, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4467;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4467, 0, 0, 40, 900030, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900032, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4467;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4467, 0, 0, 40, 900030, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48873) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4447
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900047, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4447;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4447, 0, 0, 40, 900041, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900047, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4447;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4447, 0, 0, 40, 900041, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 17641) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4119
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900046, `datalong2` = 300 WHERE  `command` = 9 AND `id` = 4119;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4119, 0, 0, 40, 900042, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900046, `datalong2` = 300, `comments` = 'Respawn' WHERE  `command` = 9 AND `id` = 4119;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4119, 0, 0, 40, 900042, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48875) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4462
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900048, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4462;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4462, 0, 0, 40, 900043, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900048, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4462;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4462, 0, 0, 40, 900043, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48874) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4448
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900045, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4448;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4448, 0, 0, 40, 900044, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900045, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4448;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4448, 0, 0, 40, 900044, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48881) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4117
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900055, `datalong2` = 300, `search_radius` = 0, `data_flags` =0 WHERE `command` = 9 AND `id` = 4117;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4117, 0, 0, 40, 900049, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900055, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4117;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4117, 0, 0, 40, 900049, 23, 'Despawn');
 
--- 4443	5000	0	9	44882	175	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+-- 4443	00	0	9	44882	175	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 -- https://tbc.wowhead.com/quest=4443/corrupted-whipper-root
 -- .go o 44882 has long been overwritten with some campfire in deathknell
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900056, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4443;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4443, 0, 0, 40, 900050, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900056, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4443;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4443, 0, 0, 40, 900050, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48883) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4444
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900057, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4444;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4444, 0, 0, 40, 900051, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900057, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4444;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4444, 0, 0, 40, 900051, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48884) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4445
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900058, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4445;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4445, 0, 0, 40, 900052, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900058, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4445;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4445, 0, 0, 40, 900052, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48885) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4446
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900059, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4446;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4446, 0, 0, 40, 900053, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900059, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4446;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4446, 0, 0, 40, 900053, 23, 'Despawn');
 
 -- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48886) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4461
-UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900060, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4461;
-INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4461, 0, 0, 40, 900054, 23);
+UPDATE `dbscripts_on_quest_end` SET `delay` = 0, `datalong` = 900060, `datalong2` = 300, `comments` = 'Respawn' WHERE `command` = 9 AND `id` = 4461;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`, `comments`) VALUES (4461, 0, 0, 40, 900054, 23, 'Despawn');
 
--- Cleansed dont seem to want to despawn on looting
+-- Remove dbscripts on event which is either for despawn or a visual
+DELETE FROM `dbscripts_on_event` where `id` IN (4102,4185,4192,4193,4194,4195,4196,4197,4284,4288,4118,4234,4235,4236,4237,4260,293,4178,4247,4265,4059,4079,2244,4215,4216,4217,4218,4219,4276,4280);
+
+-- Cleansed dont seem to want to despawn on looting (use dbscripts_on_event for despawn as its directly in the template)
 DELETE FROM `dbscripts_on_go_template_use` WHERE `id` IN (164881,164882,164883,164884,171940,171943,173325,173326,174609,174610,174612,174613,174614,174615,174616,174617,174618,174619,174620,174621,174622,174623,174624,174625,174685,174687,174710,174711,174714,174715);
-INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`) SELECT `entry`, 0, 40 FROM `gameobject_template` WHERE `entry` IN (164881,164882,164883,164884,171940,171943,173325,173326,174609,174610,174612,174613,174614,174615,174616,174617,174618,174619,174620,174621,174622,174623,174624,174625,174685,174687,174710,174711,174714,174715);
+INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `comments`) SELECT `data2`, 0, 40, 'Despawn' FROM `gameobject_template` WHERE `entry` IN (164881,164882,164883,164884,171940,171943,173325,173326,174609,174610,174612,174613,174614,174615,174616,174617,174618,174619,174620,174621,174622,174623,174624,174625,174685,174687,174710,174711,174714,174715);
+
