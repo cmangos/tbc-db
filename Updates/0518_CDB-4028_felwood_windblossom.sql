@@ -2,26 +2,26 @@ DELETE FROM `gameobject` WHERE `id` IN (164886,171939,171942,174594,174595,17459
 174614,174615,174714,174715,164887,173327,174599,174600,174601,174602,174603,174604,174708,174709,164884,174711,173326,174619,174620,174616,174617,174618,
 174621,174710,173324,164885,174684,174608,174609,164881,173325,174685,164888,173284,174605,174606,174607,174686,164883,174622,174623,174624,174625,174687);
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(900001, 164886, 1, 1, 3723.64, -1402.23, 200.395, 5.30595, 0, 0, 0.469405, -0.882983, 3595, 3595, 100, 1),
-(900002, 171939, 1, 1, 3856.6, -1014.86, 241.341, 5.6366, 0, 0, 0.31769, -0.948195, 3595, 3595, 100, 1),
-(900003, 171942, 1, 1, 4191.83, -1147.7, 315.197, 2.72276, 0, 0, 0.978153, 0.207887, 3595, 3595, 100, 1),
-(900004, 174594, 1, 1, 4959.46, -681.357, 294.914, 4.67448, 0, 0, 0.720383, -0.693577, 3595, 3595, 100, 1),
+(900001, 164886, 1, 1, 3766.65, -1400, 203.65, 5.8294, 0, 0, -0.224951, 0.97437, 3595, 3595, 100, 1),
+(900002, 171939, 1, 1, 3866.65, -1000.02, 244.199, 0.942477, 0, 0, 0.45399, 0.891007, 3595, 3595, 100, 1),
+(900003, 171942, 1, 1, 4233.32, -1133.32, 322.629, 1.64061, 0, 0, 0.731353, 0.681999, 3595, 3595, 100, 1),
+(900004, 174594, 1, 1, 6266.67, -2000.02, 573.426, 5.25344, 0, 0, -0.492423, 0.870356, 3595, 3595, 100, 1),
 (900005, 174595, 1, 1, 6900, -2033.33, 583.696, 1.81514, 0, 0, 0.788011, 0.615662, 3595, 3595, 100, 1),
-(900006, 174596, 1, 1, 6733.31, -1566.68, 477.04, -2.82743, 0, 0, 0.987688, -0.156434, 3595, 3595, 100, 1),
-(900007, 174597, 1, 1, 6297.82, -1972.49, 562.09, 5.38682, 0, 0, 0.433329, -0.901236, 3595, 3595, 100, 1),
-(900008, 174598, 1, 1, 6599.99, -1266.66, 448.401, 1.98968, 0, 0, 0.838671, 0.544639, 3595, 3595, 100, 1),
-(900009, 174712, 1, 1, 6724.35, -1578.87, 475.274, 2.44158, 0, 0, 0.93937, 0.342906, 3595, 3595, 100, 1),
-(900010, 174713, 1, 1, 6868.36, -2025.77, 577.324, 2.49261, 0, 0, 0.947813, 0.318828, 3595, 3595, 100, 1),
-(900011, 164882, 1, 1, 3723.64, -1402.23, 200.395, 5.30595, 0, 0, 0.469405, -0.882983, -3595, -3595, 100, 1),
-(900012, 171940, 1, 1, 3856.6, -1014.86, 241.341, 5.6366, 0, 0, 0.31769, -0.948195, -3595, -3595, 100, 1),
-(900013, 171943, 1, 1, 4191.83, -1147.7, 315.197, 2.72276, 0, 0, 0.978153, 0.207887, -3595, -3595, 100, 1),
-(900014, 174610, 1, 1, 4959.46, -681.357, 294.914, 4.67448, 0, 0, 0.720383, -0.693577, -3595, -3595, 100, 1),
-(900015, 174612, 1, 1, 6900, -2033.33, 583.696, 1.81514, 0, 0, 0.788011, 0.615662, -3595, -3595, 100, 1),
-(900016, 174613, 1, 1, 6733.31, -1566.68, 477.04, -2.82743, 0, 0, 0.987688, -0.156434, -3595, -3595, 100, 1),
-(900017, 174614, 1, 1, 6297.82, -1972.49, 562.09, 5.38682, 0, 0, 0.433329, -0.901236, -3595, -3595, 100, 1),
-(900018, 174615, 1, 1, 6599.99, -1266.66, 448.401, 1.98968, 0, 0, 0.838671, 0.544639, -3595, -3595, 100, 1),
-(900019, 174714, 1, 1, 6724.35, -1578.87, 475.274, 2.44158, 0, 0, 0.93937, 0.342906, -3595, -3595, 100, 1),
-(900020, 174715, 1, 1, 6868.36, -2025.77, 577.324, 2.49261, 0, 0, 0.947813, 0.318828, -3595, -3595, 100, 1),
+(900006, 174596, 1, 1, 6733.31, -1566.68, 477.04, 3.45576, 0, 0, -0.987688, 0.156436, 3595, 3595, 100, 1),
+(900007, 174597, 1, 1, 6599.87, -1266.64, 448.412, 1.97222, 0, 0, 0.833885, 0.551938, 3595, 3595, 100, 1),
+(900008, 174598, 1, 1, 5133.34, -333.352, 354.553, 4.86947, 0, 0, -0.649447, 0.760406, 3595, 3595, 100, 1),
+(900009, 174712, 1, 1, 4966.66, -666.679, 295.082, 3.57793, 0, 0, -0.976295, 0.216442, 3595, 3595, 100, 1),
+(900010, 174713, 1, 1, 5433.33, -666.653, 348.089, 1.65806, 0, 0, 0.737277, 0.675591, 3595, 3595, 100, 1),
+(900011, 164882, 1, 1, 3766.66, -1400, 203.648, 1.32645, 0, 0, 0.615661, 0.788011, -3595, -3595, 100, 1),
+(900012, 171940, 1, 1, 3866.73, -999.978, 244.207, 3.52557, 0, 0, -0.981627, 0.190812, -3595, -3595, 100, 1),
+(900013, 171943, 1, 1, 4233.32, -1133.32, 322.629, 1.67551, 0, 0, 0.743144, 0.669131, -3595, -3595, 100, 1),
+(900014, 174610, 1, 1, 6266.68, -2000.01, 573.423, 5.25344, 0, 0, -0.492423, 0.870356, -3595, -3595, 100, 1),
+(900015, 174612, 1, 1, 6899.99, -2033.33, 583.696, 1.88495, 0, 0, 0.809016, 0.587786, -3595, -3595, 100, 1),
+(900016, 174613, 1, 1, 6733.33, -1566.67, 477.042, 3.45576, 0, 0, -0.987688, 0.156436, -3595, -3595, 100, 1),
+(900017, 174614, 1, 1, 6599.99, -1266.66, 448.401, 1.98967, 0, 0, 0.83867, 0.54464, -3595, -3595, 100, 1),
+(900018, 174615, 1, 1, 5133.34, -333.335, 354.555, 4.79966, 0, 0, -0.67559, 0.737278, -3595, -3595, 100, 1),
+(900019, 174714, 1, 1, 4966.66, -666.667, 295.081, 3.59538, 0, 0, -0.97437, 0.224951, -3595, -3595, 100, 1),
+(900020, 174715, 1, 1, 5433.31, -666.657, 348.089, 1.71042, 0, 0, 0.754709, 0.656059, -3595, -3595, 100, 1),
 (900021, 164887, 1, 1, 4066.66, -1233.34, 282.075, 5.13127, 0, 0, -0.544639, 0.838671, 3595, 3595, 100, 1),
 (900022, 173327, 1, 1, 6233.34, -1533.33, 441.796, 0, 0, 0, 0, 1, 3595, 3595, 100, 1),
 (900023, 174599, 1, 1, 6866.66, -1566.67, 496.312, 5.044, 0, 0, -0.580703, 0.814116, 3595, 3595, 100, 1),
@@ -42,26 +42,26 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (900038, 174618, 1, 1, 6433.32, -966.677, 422.408, 5.23599, 0, 0, -0.5, 0.866025, -3595, -3595, 100, 1),
 (900039, 174621, 1, 1, 4866.68, -600.013, 307.548, 0.645772, 0, 0, 0.317305, 0.948324, -3595, -3595, 100, 1),
 (900040, 174710, 1, 1, 4757.86, -460.462, 337.851, 3.61284, 0, 0, -0.972369, 0.233448, -3595, -3595, 100, 1),
-(900041, 173324, 1, 1, 3780.32, -1176, 220.555, 0.167, 0, 0, 0.083403, 0.996516, 3595, 3595, 100, 1),
-(900042, 164885, 1, 1, 3831.22, -1374, 207.119, 0.85, 0, 0, 0.412321, 0.911039, 3595, 3595, 100, 1),
-(900043, 174684, 1, 1, 4867.17, -384, 350.56, 2.762, 0, 0, 0.982043, 0.188659, 3595, 3595, 100, 1),
-(900044, 174608, 1, 1, 6595.34, -827.373, 474.05, 3.28765, 0, 0, 0.997335, -0.0729638, 3595, 3595, 100, 1),
-(900045, 174609, 1, 1, 3780.32, -1176, 220.555, 0.167, 0, 0, 0.083403, 0.996516, -3595, -3595, 100, 1),
-(900046, 164881, 1, 1, 3831.22, -1374, 207.119, 0.85, 0, 0, 0.412321, 0.911039, -3595, -3595, 100, 1),
-(900047, 173325, 1, 1, 4867.17, -384, 350.56, 2.762, 0, 0, 0.982043, 0.188659, -3595, -3595, 100, 1),
-(900048, 174685, 1, 1, 6595.34, -827.373, 474.05, 3.28765, 0, 0, 0.997335, -0.0729638, -3595, -3595, 100, 1),
-(900049, 164888, 1, 1, 6305.33, -957, 417.3, 2.499, 0, 0, 0.948827, 0.315797, 3595, 3595, 100, 1),
-(900050, 173284, 1, 1, 6433.25, -1267, 383.206, 2.234, 0, 0, 0.898789, 0.438381, 3595, 3595, 100, 1),
-(900051, 174605, 1, 1, 6666.67, -1200, 471.328, 2.164, 0, 0, 0.882899, 0.469563, 3595, 3595, 100, 1),
-(900052, 174606, 1, 1, 6353.12, -690.658, 477.432, 0.730612, 0, 0, 0.357235, 0.934014, 3595, 3595, 100, 1),
-(900053, 174607, 1, 1, 6434.15, -1268.32, 383.379, 3.20225, 0, 0, 0.99954, -0.030324, 3595, 3595, 100, 1),
-(900054, 174686, 1, 1, 6669.76, -1209.39, 469.181, 3.43473, 0, 0, 0.989278, -0.146044, 3595, 3595, 100, 1),
-(900055, 164883, 1, 1, 6305.33, -957, 417.3, 2.499, 0, 0, 0.948827, 0.315797, -3595, -3595, 100, 1),
-(900056, 174622, 1, 1, 6433.25, -1267, 383.206, 2.234, 0, 0, 0.898789, 0.438381, -3595, -3595, 100, 1),
-(900057, 174623, 1, 1, 6666.67, -1200, 471.328, 2.164, 0, 0, 0.882899, 0.469563, -3595, -3595, 100, 1),
-(900058, 174624, 1, 1, 6353.12, -690.658, 477.432, 0.730612, 0, 0, 0.357235, 0.934014, -3595, -3595, 100, 1),
-(900059, 174625, 1, 1, 6434.15, -1268.32, 383.379, 3.20225, 0, 0, 0.99954, -0.030324, -3595, -3595, 100, 1),
-(900060, 174687, 1, 1, 6669.76, -1209.39, 469.181, 3.43473, 0, 0, 0.989278, -0.146044, -3595, -3595, 100, 1);
+(900041, 173324, 1, 1, 5966.68, -1266.65, 381.831, 2.1293, 0, 0, 0.874619, 0.48481, 3595, 3595, 100, 1),
+(900042, 164885, 1, 1, 4133.31, -700.016, 283.633, 2.25147, 0, 0, 0.902585, 0.430512, 3595, 3595, 100, 1),
+(900043, 174684, 1, 1, 4874.41, -377.052, 351.308, 2.02458, 0, 0, 0.848047, 0.529921, 3595, 3595, 100, 1),
+(900044, 174608, 1, 1, 6599.99, -800.007, 479.249, 2.14675, 0, 0, 0.878817, 0.47716, 3595, 3595, 100, 1),
+(900045, 174609, 1, 1, 6600, -799.994, 479.261, 2.1293, 0, 0, 0.874619, 0.48481, -3595, -3595, 100, 1),
+(900046, 164881, 1, 1, 4133.31, -700.016, 283.633, 2.21657, 0, 0, 0.894934, 0.446199, -3595, -3595, 100, 1),
+(900047, 173325, 1, 1, 5966.65, -1266.66, 381.831, 2.21657, 0, 0, 0.894934, 0.446199, -3595, -3595, 100, 1),
+(900048, 174685, 1, 1, 4874.41, -377.066, 351.309, 2.11185, 0, 0, 0.870356, 0.492424, -3595, -3595, 100, 1),
+(900049, 164888, 1, 1, 3866.64, -666.657, 329.731, 3.90954, 0, 0, -0.927183, 0.374608, 3595, 3595, 100, 1),
+(900050, 173284, 1, 1, 6433.25, -1266.62, 383.206, 2.23402, 0, 0, 0.898793, 0.438373, 3595, 3595, 100, 1),
+(900051, 174605, 1, 1, 6666.67, -1200, 471.328, 2.16421, 0, 0, 0.882947, 0.469473, 3595, 3595, 100, 1),
+(900052, 174606, 1, 1, 6400, -699.992, 477.424, 2.60054, 0, 0, 0.96363, 0.267241, 3595, 3595, 100, 1),
+(900053, 174607, 1, 1, 5333.33, -833.325, 342.732, 0.628317, 0, 0, 0.309016, 0.951057, 3595, 3595, 100, 1),
+(900054, 174686, 1, 1, 4824.34, -316.803, 358.791, 4.06662, 0, 0, -0.894934, 0.446199, 3595, 3595, 100, 1),
+(900055, 164883, 1, 1, 3866.64, -666.657, 329.731, 3.90954, 0, 0, -0.927183, 0.374608, -3595, -3595, 100, 1), -- copy of 900049
+(900056, 174622, 1, 1, 6433.33, -1266.66, 383.219, 2.32129, 0, 0, 0.91706, 0.39875, -3595, -3595, 100, 1),
+(900057, 174623, 1, 1, 6666.66, -1200, 471.324, 2.21657, 0, 0, 0.894934, 0.446199, -3595, -3595, 100, 1),
+(900058, 174624, 1, 1, 6399.99, -699.997, 477.422, 2.44346, 0, 0, 0.939692, 0.34202, -3595, -3595, 100, 1),
+(900059, 174625, 1, 1, 5333.33, -833.34, 342.734, 0.767944, 0, 0, 0.374606, 0.927184, -3595, -3595, 100, 1),
+(900060, 174687, 1, 1, 4824.35, -316.776, 358.795, 4.13643, 0, 0, -0.878817, 0.47716, -3595, -3595, 100, 1);
 
 UPDATE `gameobject_template` SET `size` = '2', `data0` = '43', `data6` = '0' WHERE (`entry` = '174616');
 
@@ -166,3 +166,137 @@ INSERT INTO `gameobject_involvedrelation` (`id`, `quest`) VALUES
 (174712, 4118),
 (174713, 4401);
 
+--
+-- ServerToClient: SMSG_DESTROY_OBJECT (0x00AA) Length: 9 ConnIdx: 0 Time: 03/25/2009 02:55:34.000 Number: 241309
+-- GUID: Full: 0xF110028416008967 Type: GameObject Entry: 164886 Low: 35175
+-- Despawn Animation: false
+-- ServerToClient: SMSG_COMPRESSED_UPDATE_OBJECT (0x01F6) Length: 90 ConnIdx: 0 Time: 03/25/2009 02:55:35.000 Number: 241311
+-- Count: 1
+-- [0] UpdateType: CreateObject2
+-- [0] GUID: Full: 0xF11002841200C798 Type: GameObject Entry: 164882 Low: 51096
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48876) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 2523
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900011, `datalong2` = 300 WHERE `command` = 9 AND `id` = 2523;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (2523, 0, 0, 40, 900001, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48900) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4465
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900012, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4465;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4465, 0, 0, 40, 900002, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48898) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4464
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900013, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4464;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4464, 0, 0, 40, 900003, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48877) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 2878
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900014, `datalong2` = 300 WHERE `command` = 9 AND `id` = 2878;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (2878, 0, 0, 40, 900004, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48892) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 3363
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900015, `datalong2` = 300 WHERE `command` = 9 AND `id` = 3363;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (3363, 0, 0, 40, 900005, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48893) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4113
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900016, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4113;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4113, 0, 0, 40, 900006, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48894) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4114
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900017, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4114;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4114, 0, 0, 40, 900007, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48895) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4116
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900018, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4116;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4116, 0, 0, 40, 900008, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 18207) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4118
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900019, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4118;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4118, 0, 0, 40, 900009, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48896) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4401
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900020, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4401;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4401, 0, 0, 40, 900010, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48887) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4115
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900031, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4115;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4115, 0, 0, 40, 900021, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48880) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 1514
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900033, `datalong2` = 300 WHERE `command` = 9 AND `id` = 1514;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (1514, 0, 0, 40, 900022, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48879) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 998
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900036, `datalong2` = 300 WHERE `command` = 9 AND `id` = 998;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (998, 0, 0, 40, 900023, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48878) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 996
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900037, `datalong2` = 300 WHERE `command` = 9 AND `id` = 996;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (996, 0, 0, 40, 900024, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48891) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4403
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900038, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4403;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4403, 0, 0, 40, 900025, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48890) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4343
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900034, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4343;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4343, 0, 0, 40, 900026, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48889) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4222
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900035, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4222;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4222, 0, 0, 40, 900027, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48888) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4221
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900039, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4221;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4221, 0, 0, 40, 900028, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48897) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4466
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900040, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4466;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4466, 0, 0, 40, 900029, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48899) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4467
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900032, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4467;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4467, 0, 0, 40, 900030, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48873) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4447
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900047, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4447;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4447, 0, 0, 40, 900041, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 17641) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4119
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900046, `datalong2` = 300 WHERE  `command` = 9 AND `id` = 4119;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4119, 0, 0, 40, 900042, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48875) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4462
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900048, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4462;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4462, 0, 0, 40, 900043, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48874) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4448
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900045, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4448;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4448, 0, 0, 40, 900044, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48881) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4117
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900055, `datalong2` = 300, `search_radius` = 0, `data_flags` =0 WHERE `command` = 9 AND `id` = 4117;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4117, 0, 0, 40, 900049, 23);
+
+-- 4443	5000	0	9	44882	175	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+-- https://tbc.wowhead.com/quest=4443/corrupted-whipper-root
+-- .go o 44882 has long been overwritten with some campfire in deathknell
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900056, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4443;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4443, 0, 0, 40, 900050, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48883) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4444
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900057, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4444;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4444, 0, 0, 40, 900051, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48884) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4445
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900058, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4445;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4445, 0, 0, 40, 900052, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48885) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4446
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900059, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4446;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4446, 0, 0, 40, 900053, 23);
+
+-- 2022-10-05 19:51:42 Table `dbscripts_on_quest_end` has invalid gameobject (GUID: 48886) in SCRIPT_COMMAND_RESPAWN_GAMEOBJECT for script id 4461
+UPDATE `dbscripts_on_quest_end` SET `delay` = 1000, `datalong` = 900060, `datalong2` = 300 WHERE `command` = 9 AND `id` = 4461;
+INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `priority`, `command`, `search_radius`, `data_flags`) VALUES (4461, 0, 0, 40, 900054, 23);
+
+-- Cleansed dont seem to want to despawn on looting
+DELETE FROM `dbscripts_on_go_template_use` WHERE `id` IN (164881,164882,164883,164884,171940,171943,173325,173326,174609,174610,174612,174613,174614,174615,174616,174617,174618,174619,174620,174621,174622,174623,174624,174625,174685,174687,174710,174711,174714,174715);
+INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`) SELECT `entry`, 0, 40 FROM `gameobject_template` WHERE `entry` IN (164881,164882,164883,164884,171940,171943,173325,173326,174609,174610,174612,174613,174614,174615,174616,174617,174618,174619,174620,174621,174622,174623,174624,174625,174685,174687,174710,174711,174714,174715);
