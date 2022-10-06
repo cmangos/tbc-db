@@ -2,7 +2,7 @@
 -- redone with worldstates and formations 
 DELETE FROM `dbscripts_on_quest_start` WHERE id = 6148;
 INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(6148,0,34,1540,0,0,0,0,0,0,0,0,0,0,0,0,0,'Terminate if Demetria is already spawned'),
+(6148,0,34,1173,0,0,0,0,0,0,0,0,0,0,0,0,0,'Terminate if Demetria is already spawned'), -- condition_entry 1540, 1173 in tbcmangos
 (6148,1000,53,0,0,0,0,0,0,30011,1,0,0,0,0,0,0,'Set worldstate variable to 1');
 
 -- move whole group to static spawn
