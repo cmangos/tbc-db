@@ -239,8 +239,9 @@ UPDATE `quest_template` SET `MaxLevel` = 255 WHERE `entry` = 7868;
 
 -- Vanquish the Invaders! 8291 - Removed in TBC & classic
 -- 8290	19	Vanquish the Invaders,7788,7871,7872,7873,8291
-DELETE FROM `creature_questrelation` WHERE `id` = 14733;
-DELETE FROM `creature_involvedrelation` WHERE `id` = 14733;
+DELETE FROM `creature_questrelation` WHERE `id` = 14733; -- Remove Talismans of Merit & Vanquish the Invaders!
+-- Resolves https://github.com/cmangos/issues/issues/3166
+DELETE FROM `creature_involvedrelation` WHERE `id` = 14733 AND `quest` != 9521; -- https://tbc.wowhead.com/npc=14733/sentinel-farsong#ends
 UPDATE `quest_template` SET `RequiredRaces` = 1101, `ExclusiveGroup` = 7788, `CompleteEmote` = 1, `SpecialFlags` = 1 WHERE `entry` IN (8290,7788,7871,7872,7873,8291);
 -- INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES (14733, 8290);
 -- INSERT INTO `creature_involvedrelation` (`id`, `quest`) VALUES (14733, 8290);
@@ -267,10 +268,8 @@ UPDATE `quest_template` SET `MaxLevel` = 69 WHERE `entry` = 8294;
 -- 7875	49	Quell the Silverwing Usurpers
 -- 7876	59	Quell the Silverwing Usurpers
 -- 8294	69	Quell the Silverwing Usurpers
--- DELETE FROM `creature_questrelation` WHERE `id` = 14781 AND `quest` NOT IN (8295,7789,7874,7875,7876,8294);
--- DELETE FROM `creature_involvedrelation` WHERE `id` = 14781 AND `quest` NOT IN (8295,7789,7874,7875,7876,8294);
-DELETE FROM `creature_questrelation` WHERE `id` = 14781;
-DELETE FROM `creature_involvedrelation` WHERE `id` = 14781;
+DELETE FROM `creature_questrelation` WHERE `id` = 14781 AND `quest` NOT IN (8295,7789,7874,7875,7876,8294); -- wotlk also has Mark of Honor
+DELETE FROM `creature_involvedrelation` WHERE `id` = 14781 AND `quest` NOT IN (8295,7789,7874,7875,7876,8294);
 
 -- Removed turn in 3s
 UPDATE `quest_template` SET `MaxLevel` = 19 WHERE `entry` = 8386;
@@ -380,7 +379,7 @@ UPDATE `quest_template` SET `MaxLevel` = 39 WHERE `entry` = 8080;
 UPDATE `quest_template` SET `MaxLevel` = 49 WHERE `entry` = 8156;
 UPDATE `quest_template` SET `MaxLevel` = 59 WHERE `entry` = 8154;
 UPDATE `quest_template` SET `MaxLevel` = 69 WHERE `entry` = 8155;
-DELETE FROM `creature_questrelation` WHERE `id` IN (14984);
+DELETE FROM `creature_questrelation` WHERE `id` IN (14984); -- Arathi Basin Resources! & More Resource Crates
 DELETE FROM `creature_involvedrelation` WHERE `id` IN (14984);
 
 -- Win the battle for Arathi Basin, get an Arathi Resource Crate, and return it to Deathstalker Mortis at Hammerfall.
@@ -394,7 +393,7 @@ UPDATE `quest_template` SET `MaxLevel` = 39 WHERE `entry` = 8161;
 UPDATE `quest_template` SET `MaxLevel` = 49 WHERE `entry` = 8160;
 UPDATE `quest_template` SET `MaxLevel` = 59 WHERE `entry` = 8123;
 UPDATE `quest_template` SET `MaxLevel` = 69 WHERE `entry` = 8299;
-DELETE FROM `creature_questrelation` WHERE `id` IN (15022);
+DELETE FROM `creature_questrelation` WHERE `id` IN (15022); -- More Resource Crates in wotlk
 DELETE FROM `creature_involvedrelation` WHERE `id` IN (15022);
 
 -- https://classic.wowhead.com/search?q=More+Resource+Crates - The Defilers
