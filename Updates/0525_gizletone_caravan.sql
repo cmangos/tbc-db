@@ -27,8 +27,8 @@ DELETE FROM `creature_linking_template` WHERE (`entry`='11626');
 DELETE FROM `creature_linking` WHERE (`guid`='27289');
 
 -- Delete old Waypoints
-DELETE FROM creature_movement_template WHERE `Entry` = '28714';
-DELETE FROM creature_movement WHERE `Id` = '11625';
+DELETE FROM creature_movement_template WHERE `Entry` = '11625';
+DELETE FROM creature_movement WHERE `Id` = '28714';
 
 -- Add them into spawn_group
 DELETE FROM `spawn_group` WHERE `Id` = @SGUID;
