@@ -19133,6 +19133,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2105001','21050','11','0','100','0','0','0','0','0','0','0','11','36006','0','32','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Cast Fel Fire Aura on Spawn'),
 ('2105002','21050','6','0','100','0','0','0','0','0','0','0','11','38365','0','7','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Cast Summon Enraged Earth Shard on Death'),
 ('2105003','21050','9','0','100','1025','5','30','3800','5200','0','0','11','38498','1','0','0','0','0','0','0','0','0','0','Enraged Earth Spirit - Cast Fiery Boulder'),
+-- Camera Shaker - Altar of Damnation 21052
+('2105201','21052','30','0','100','1','5','17008','0','0','0','0','11','35757','0','0','0','0','0','0','0','0','0','0','Camera Shaker - Altar of Damnation - Cast Ultris Destroyed on Receive AI Event 5'),
 -- Enraged Water Spirit
 ('2105901','21059','0','0','100','1025','0','0','10000','20000','0','0','11','38032','1','0','0','0','0','0','0','0','0','0','Enraged Water Spirit - Cast Stormbolt'),
 -- Enraged Air Spirit
