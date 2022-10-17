@@ -1,5 +1,5 @@
 DELETE FROM `npc_text_broadcast_text` WHERE `Id` BETWEEN 25327 AND 25344; -- -0
-DELETE FROM `npc_text_broadcast_Text` WHERE `Id` IN (10622, 10627); -- -0
+DELETE FROM `npc_text_broadcast_text` WHERE `Id` IN (10622, 10627); -- -0
 INSERT INTO `npc_text_broadcast_text` (`Id`, `Prob0`, `BroadcastTextId0`) VALUES
 (25327, 1, 25327),
 (25328, 1, 25328),
