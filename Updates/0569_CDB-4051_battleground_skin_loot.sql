@@ -13,6 +13,9 @@
 -- (3027,-1,3019,3022,0,0,0,''),
 -- (3028,-1,3020,3022,0,0,0,'');
 
+-- https://github.com/cmangos/classic-db/commit/b918b3917d1dd1f277d4d3a4b585cecba739a789#diff-e92a3796e94e2cac58fa48ab09514b0ff014d0e98a2e1621812196867adcbbbaR4
+ALTER TABLE battleground_template ADD COLUMN PlayerSkinReflootId MEDIUMINT UNSIGNED NOT NULL DEFAULT 0 COMMENT 'reference_loot_template entry';
+
 INSERT INTO reference_loot_template(entry, item, ChanceOrQuestChance, groupid, mincountOrRef, maxcount, condition_id, comments) VALUES
 -- ('1', '17502', '75', '0', '1', '1', '3023', ''),
 -- ('1', '17503', '75', '0', '1', '1', '3024', ''),
