@@ -71,9 +71,9 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 (3203, 0, 3, 'Train me.', 3266,  5, 16, 0, 0, 0, 0, 0, NULL, 0,@CONDITION+12),
 (3203, 1, 0, 'I wish to unlearn Armorsmithing!', 19010,  1, 1, -1, 0, 59701, 0, 100000, 'Forgetting your Armorsmithing skill is not something to do lightly.  If you choose to abandon it you will forget all recipes that require Armorsmithing to create!', 19011,@CONDITION+12),
 (3201, 0, 3, 'Train me.',3266 ,5, 16, 0, 0, 0, 0, 0, NULL, 0,@CONDITION+9),
-(3201, 1, 0, 'I wish to unlearn Weaponsmithing!',19007, 1, 1, -1, 0, 320101, 0, 0,'Forgetting your Weaponsmithing skill is not something to do lightly.  If you choose to abandon it you will forget all recipes that require Weaponsmithing to create!', 19008, @CONDITION+9),
+(3201, 1, 0, 'I wish to unlearn Weaponsmithing!',19007, 1, 1, -1, 0, 320101, 0, 100000,'Forgetting your Weaponsmithing skill is not something to do lightly.  If you choose to abandon it you will forget all recipes that require Weaponsmithing to create!', 19008, @CONDITION+9),
 (3202, 0, 3, 'Train me.',3266, 5, 16, 0, 0, 0, 0, 0, NULL, 0,@CONDITION+9),
-(3202, 1, 0, 'I wish to unlearn Weaponsmithing!',19007, 1, 1, -1, 0, 320101, 0, 0,'Forgetting your Weaponsmithing skill is not something to do lightly.  If you choose to abandon it you will forget all recipes that require Weaponsmithing to create!', 19008,@CONDITION+9);
+(3202, 1, 0, 'I wish to unlearn Weaponsmithing!',19007, 1, 1, -1, 0, 320101, 0, 100000,'Forgetting your Weaponsmithing skill is not something to do lightly.  If you choose to abandon it you will forget all recipes that require Weaponsmithing to create!', 19008,@CONDITION+9);
 DELETE FROM `dbscripts_on_gossip` WHERE `id` in (609001,609002,608901,608902,609101,609102,318201,318202,320101,59701);
 INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (609001, 0, 15, 39099, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'cast Master Hammersmith'),
