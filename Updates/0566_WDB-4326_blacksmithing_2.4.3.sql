@@ -87,7 +87,11 @@ INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalo
 (320101, 0, 15, 36436, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'cast Forget (Unlearn Weaponsmith specialization)'),
 (59701, 0,  15, 36435, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'cast Forget (Unlearn Armorsmith specialization)');
 
-UPDATE `creature_template` SET `NpcFlags` = `NpcFlags`&~(2+128) WHERE `entry` = 7231; -- Kelgruk Bloodaxe no Vendor/Innkeeper/Quest Giver
+-- https://www.wowhead.com/tbc/npc=7231/kelgruk-bloodaxe
+-- 2022-10-22 10:42:43 Table `creature_template` have creature (Entry: 7231) with vendor_id 326 but not have flag UNIT_NPC_FLAG_VENDOR (128), vendor items will ignored.
+-- 2022-10-22 10:43:18 Table `npc_vendor` has data for creature (Entry: 7231) without vendor flag, ignoring
+UPDATE `creature_template` SET `NpcFlags` = `NpcFlags`&~(2+128), `VendorTemplateId` = 0 WHERE `entry` = 7231; -- Kelgruk Bloodaxe no Vendor/Innkeeper (vanilla128)/Quest Giver
+DELETE FROM `npc_vendor` WHERE `entry` = 7231;
 
 -- 5164,11177,7230,20125 <Armorsmith Trainer> - 12 Items - corrected for 2.4.3
 DELETE FROM npc_trainer WHERE entry IN (5164,11177,7230,20125);
