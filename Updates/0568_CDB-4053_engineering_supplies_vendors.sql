@@ -1,5 +1,8 @@
 -- Add missing Items for Gearcutter Cogspinner 5175 & Sovik 3413 (both vendor template 133, which stores the general items)
 -- Only sells some of these in classic
+-- https://www.wowhead.com/tbc/item=16041/schematic-thorium-grenade#comments:id=44379
+-- https://www.wowhead.com/tbc/item=16042/schematic-thorium-widget#comments:id=44376
+DELETE FROM `npc_vendor` WHERE `entry` IN (3413,5175) AND `item` IN (16041,16042); -- TBC+
 REPLACE INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `comments`, `slot`) VALUES
 -- https://classic.wowhead.com/npc=5175/gearcutter-cogspinner#sells
 -- Classic only
