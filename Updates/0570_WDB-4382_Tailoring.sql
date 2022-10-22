@@ -7,11 +7,26 @@ and any redundant trainers in capitals were changed into simple apprentices with
 -- DELETE FROM npc_trainer WHERE entry IN (1300,1703,2855,11048,11050,11051,16639,16746); -- -0
 -- DELETE FROM `npc_trainer_template` WHERE `entry` = 1085; -- used by Apprentice Tailor, dont delete keep for progression
 UPDATE creature_template SET NpcFlags = 1, TrainerType = 0, `SpeedWalk` = 1, `TrainerTemplateId` = 0 /*1085*/ WHERE entry IN (1300,1703,2855,11048,11050,11051,16639,16746);
--- DELETE FROM gossip_menu WHERE entry IN(11048,11050,16639);
+UPDATE creature_template SET NpcFlags = 0 WHERE `entry` = 16746;
+-- source trinitycore, gossip_menu exist in tbcmangos except 4269
+UPDATE creature_template SET `GossipMenuId` = 4262 WHERE `entry` = 1300; -- exists
+UPDATE creature_template SET `GossipMenuId` = 4264 WHERE `entry` = 1703;
+UPDATE creature_template SET `GossipMenuId` = 4265 WHERE `entry` = 2855;
+UPDATE creature_template SET `GossipMenuId` = 4268 WHERE `entry` = 11048;
+UPDATE creature_template SET `GossipMenuId` = 4269 WHERE `entry` = 11050;
+UPDATE creature_template SET `GossipMenuId` = 4266 WHERE `entry` = 11051; -- exists
+UPDATE creature_template SET `GossipMenuId` = 8829 WHERE `entry` = 16639;
+
+-- DELETE FROM gossip_menu WHERE entry IN(11048,11050,16639); -- wrong way to resolve this
 -- INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 -- (11048,4268,0,0), -- something about mage trainer
 -- (11050,4269,0,0), -- something about paladin trainer
 -- (16639,8829,0,0); -- good day to be alive?!
+
+DELETE FROM `npc_text` WHERE `Id` = 11459; -- gossip_menu 8829
+INSERT INTO `npc_text_broadcast_text` (`Id`, `BroadcastTextId0`) VALUES (11459, 22513); -- trinitycore, else "UDB text missing"
+DELETE FROM `gossip_menu` WHERE `entry` = 4269;
+INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (4269, 5437, 0, 0);
 
 -- Tailoring Trainer (teaching 101 spells)
 DELETE FROM npc_trainer WHERE entry IN (1103,1346,2399,2627,3004,3363,3484,3523,3704,4159,4193,4576,5153,11052,11557,16366,16640,16729,17487,5041); -- 5041
