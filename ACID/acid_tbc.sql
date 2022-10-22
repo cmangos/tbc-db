@@ -19687,6 +19687,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Black Blood of Draenor 23286
 ('2328601','23286','0','0','100','1025','8000','14000','18000','25000','0','0','11','40818','0','0','0','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Toxic Slime'),
 ('2328602','23286','2','0','100','1024','40','0','0','0','0','0','11','7279','1','0','25','0','0','0','0','0','0','0','Black Blood of Draenor - Cast Black Sludge and Flee at 40% HP'),
+-- Mine Cart 23289
+('2328901','23289','4','0','100','0','0','0','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Mine Cart - Die on Aggro'),
 -- Draenor Blood Terror 23290
 -- Crazed Murkblood Foreman 23305
 ('2330501','23305','2','0','100','1024','30','0','0','0','0','0','11','40743','0','0','54','1191','0','0','0','0','0','0','Crazed Murkblood Foreman - Cast Enrage at 30% HP'),
@@ -19714,6 +19716,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2336001','23360','8','0','100','0','40930','-1','0','0','0','0','11','40931','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Mulverick''s Target - Cast Mulverick''s Great Balls of Lightning on Mulverick''s Great Balls of Lightning Spell Hit'),
 -- Dragonmaw Race: Skyshatter's Target 23361
 ('2336101','23361','8','0','100','0','40945','-1','0','0','0','0','11','41064','0','0','0','0','0','0','0','0','0','0','Dragonmaw Race: Skyshatter''s Target - Cast Sky Shatter on Sky Shatter Spell Hit'),
+-- Dragonmaw Foreman 23376 - NSR
 -- Commander Hobb 23434 - npc_commander_hobb
 -- Sanctum Defender 23435
 ('2343501','23435','4','0','100','0','0','0','0','0','0','0','57','1','30','0','0','0','0','0','0','0','0','0','Sanctum Defender - Enable Caster Mode on Aggro'),
