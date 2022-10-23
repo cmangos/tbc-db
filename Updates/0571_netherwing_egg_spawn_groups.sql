@@ -53,7 +53,7 @@ REPLACE INTO `spawn_group_spawn` (`Guid`, `Id`, `SlotId`) SELECT `guid`, 5300005
 
 -- spawn_group will always fill the maxcount until all gameobjects are on cooldown the first time around, which means that if they are farmed in succession for hours
 -- there will be a fixed set of eggs respawning when the respawntimer is not variable
-UPDATE `gameobject` SET `spawntimesecsmin` = 2700, `spawntimesecsmin` = 4500 WHERE `id` = 185915; -- 3600
+UPDATE `gameobject` SET `spawntimesecsmin` = 2700, `spawntimesecsmax` = 4500 WHERE `id` = 185915; -- 3600
 
 -- Bonus:
 UPDATE `creature_template` SET `UnitFlags` = 32768 WHERE `entry` = 23287; -- Murkblood Miner [0] UNIT_FIELD_FLAGS: 536904448 when "dead"
