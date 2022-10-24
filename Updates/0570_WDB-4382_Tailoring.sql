@@ -28,7 +28,8 @@ UPDATE creature_template SET `GossipMenuId` = 8829 WHERE `entry` = 16639;
 -- (16639,8829,0,0); -- good day to be alive?!
 
 DELETE FROM `npc_text` WHERE `Id` = 11459; -- gossip_menu 8829
-REPLACE INTO `npc_text_broadcast_text` (`Id`, `BroadcastTextId0`) VALUES (11459, 22513); -- trinitycore, else "UDB text missing"
+-- ERROR 1364 (HY000) at line 31: Field 'Prob0' doesn't have a default value
+REPLACE INTO `npc_text_broadcast_text` (`Id`, `BroadcastTextId0`, `Prob0`) VALUES (11459, 22513, 1); -- trinitycore, else "UDB text missing"
 DELETE FROM `gossip_menu` WHERE `entry` = 4269;
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (4269, 5437, 0, 0);
 
