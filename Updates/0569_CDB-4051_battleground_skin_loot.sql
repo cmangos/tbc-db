@@ -1,3 +1,8 @@
+ALTER TABLE db_version CHANGE COLUMN required_s2451_01_mangos_waypoint_path_name required_s2453_01_mangos_eai_dbguid_support bit;
+ALTER TABLE db_version CHANGE COLUMN required_s2453_01_mangos_eai_dbguid_support required_s2454_01_mangos_battleground_reflooot bit;
+
+
+
 -- https://github.com/cmangos/mangos-classic/commit/982b1d4fb5dc93d140d38cf43df1cb7fe34c1c2e#diff-99c9b26db56e3c5097b56b068441ea55e09a6b1af5d031e9107a741d9b83a390R44
 -- not applied to tbcmangos, as pvpranks are no ore
 -- INSERT INTO conditions(condition_entry, type, value1, value2, value3, value4, flags, comments) VALUES
