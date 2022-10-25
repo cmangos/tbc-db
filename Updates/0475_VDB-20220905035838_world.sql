@@ -2,7 +2,9 @@
 -- https://github.com/vmangos/core/commit/8581b971c3e3da9de993952ed7eb64f534234bb7
 
 -- Correct waypoints for Rocklance.
-UPDATE `creature` SET `position_x`=-1464.57, `position_y`=-2806.59, `position_z`=92.3649, `orientation`=0.672961 WHERE `guid`=20720;
+-- 2022-10-25 23:33:16 WaypointMovementGenerator::LoadPath: Creature (Entry: 5841 Counter: 20720) DBGuid: 20720 doesn't have waypoint path 0
+-- 2022-10-25 23:33:16 void WaypointMovementGenerator<Creature>::InitializeWaypointPath> unable to intialize path for Creature (Entry: 5841 Counter: 20720) DBGuid: 20720
+UPDATE `creature` SET `position_x`=-1464.57, `position_y`=-2806.59, `position_z`=92.3649, `orientation`=0.672961, `MovementType` = 0 WHERE `guid`=20720;
 UPDATE `creature` SET `position_x`=-1473.96, `position_y`=-2811.36, `position_z`=92.126, `orientation`=0.672911 WHERE `guid`=14007;
 UPDATE `creature` SET `position_x`=-1471.32, `position_y`=-2814.68, `position_z`=92.1987, `orientation`=0.673215 WHERE `guid`=20588;
 DELETE FROM `creature_linking` WHERE `master_guid` = 20720;
@@ -11,7 +13,7 @@ DELETE FROM `creature_linking` WHERE `master_guid` = 20720;
 -- SPAWN GROUPS
 -- ============
 
-SET @SGROUP := 19005;
+SET @SGROUP := 19022; -- overwritten in 0521_winterfall_boss
 DELETE FROM `spawn_group` WHERE `Id` = @SGROUP;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGROUP, 'The Barrens - Rocklance (3)', 0, 0, 0, 0);
