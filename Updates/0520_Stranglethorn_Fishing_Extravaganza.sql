@@ -1,44 +1,60 @@
 -- Based on https://github.com/vmangos/core/commit/85c1054011d73cc7b69097109201afbf93639758
 
+DELETE FROM `game_event` WHERE `entry` IN (34,35,36,3,4,5); -- Port to 3,4,5 - https://github.com/cmangos/issues/issues/3186
+INSERT INTO `game_event` (`entry`, `schedule_type`, `occurence`, `length`, `holiday`, `linkedTo`, `EventGroup`, `description`) VALUES
+(3, 1, 10080, 240, 0, 0, 0, 'Stranglethorn Fishing Extravaganza - Announce'), -- classicmangos currently Pyrewood Village - Worgen Curse, merge with 27 "Nights"
+(4, 1, 10080, 120, 301, 0, 0, 'Stranglethorn Fishing Extravaganza'), -- classicmangos currently Darkmoon Faire (Elwynn Forest) - July 2020 - Darkmoon Faire Open, move to 76-84
+(5, 1, 10080, 180, 0, 0, 0, 'Stranglethorn Fishing Extravaganza - Turn-in'); -- classicmangos currently Darkmoon Faire (Mulgore) - June 2020 - Darkmoon Faire Open, move to 76-84
+
+DELETE FROM `game_event_time` WHERE `entry` IN (34,35,36,3,4,5);
+INSERT INTO `game_event_time` (`entry`, `start_time`, `end_time`) VALUES
+(3, '2009-01-04 10:00:00', '2025-12-31 00:00:00'),
+(4, '2009-01-04 14:00:00', '2025-12-31 00:00:00'),
+(5, '2009-01-04 14:00:00', '2025-12-31 00:00:00');
+
 -- https://wowpedia.fandom.com/wiki/Stranglethorn_Fishing_Extravaganza?oldid=1583503
 -- Add missing spawns for Booty Bay Elite during the Stranglethorn Fishing Tournament.
-DELETE FROM `creature` WHERE `id` = 15088 AND `guid` IN (54700,54701);
+DELETE FROM `creature` WHERE `id` IN (15077,15078,15079,15088,15116,15119);
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
-(54700, 15088, 0, -14449.2, 482.691, 15.1322, 5.53269, 300, 300, 0, 0),
-(54701, 15088, 0, -14434, 467.192, 15.4505, 3.1765, 300, 300, 0, 0);
+(170630, 15077, 0, -14437.9, 474.425, 16.005, 3.71755, 300, 300, 0, 0), -- guid 105970 in tbcmangos, Correct spawn position of Riggle Bassbait.
+(170631, 15078, 0, -14436.3, 472.755, 15.4215, 3.29867, 300, 300, 0, 0), -- guid 54687, Correct spawn position of Jang.
+(170632, 15079, 0, -14438.6, 476.311, 15.3591, 4.04916, 300, 300, 0, 0), -- guid 54688, Correct spawn position of Fishbot 5000.
+(170633, 15088, 0, -14449.2, 482.691, 15.1322, 5.53269, 300, 300, 0, 0),
+(170634, 15088, 0, -14434, 467.192, 15.4505, 3.1765, 300, 300, 0, 0),
+(170635, 15116, 1, 1592.61, -4416.82, 9.39869, 2.94961, 300, 300, 0, 0), -- announcer og, xyzo corrected
+(170636, 15119, 0, -4964.69, -936.287, 501.743, 5.44543, 300, 300, 0, 0); -- announcer if
 
-UPDATE `creature` SET `position_x` = -14437.9, `position_y` = 474.425, `position_z` = 16.005, `orientation` = 3.71755 WHERE `id` = 15077; -- guid 105970 in tbcmangos, Correct spawn position of Riggle Bassbait.
-UPDATE `creature` SET `position_x` = -14436.3, `position_y` = 472.755, `position_z` = 15.4215, `orientation` = 3.29867 WHERE `id` = 15078; -- guid 54687, Correct spawn position of Jang.
-UPDATE `creature` SET `position_x` = -14438.6, `position_y` = 476.311, `position_z` = 15.3591, `orientation` = 4.04916 WHERE `id` = 15079; -- guid 54688, Correct spawn position of Fishbot 5000.
-
-DELETE FROM `game_event_creature` WHERE `guid` IN (54700,54701,105970,54687,54688);
+DELETE FROM `game_event_creature` WHERE `guid` IN (SELECT `guid` FROM `creature` WHERE `id` IN (15077,15078,15079,15088,15116,15119));
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
-(54700, 34), -- Stranglethorn Fishing Extravaganza - Announce
-(54701, 34),
--- (105970, 34), -- turn-in npcs not active during announce event
--- (54687, 34),
--- (54688, 34),
-(54700, 35), -- Stranglethorn Fishing Extravaganza
-(54701, 35),
-(105970, 35), -- that guy has pre and post event gossip so he must be active during the event. then the event gets ended by first person handing in the quest, which removes his npcflags
-(54687, 35),
-(54688, 35),
-(54700, 36), -- Stranglethorn Fishing Extravaganza - Turn-in
-(54701, 36),
-(105970, 36),
-(54687, 36),
-(54688, 36);
+(170633, 3), -- Stranglethorn Fishing Extravaganza - Announce
+(170634, 3),
+(170635, 3), -- announcer og
+(170636, 3), -- announcer if
+(170630, 3), -- turn-in npcs not active during announce event, maybe wrong on that one
+(170631, 3),
+(170632, 3),
+(170633, 4), -- Stranglethorn Fishing Extravaganza
+(170634, 4),
+(170630, 4), -- that guy has pre and post event gossip so he must be active during the event. then the event gets ended by first person handing in the quest, which removes his npcflags
+(170631, 4),
+(170632, 4),
+(170633, 5), -- Stranglethorn Fishing Extravaganza - Turn-in
+(170634, 5),
+(170630, 5),
+(170631, 5),
+(170632, 5);
 
 -- https://wowwiki-archive.fandom.com/wiki/Quest:Master_Angler?oldid=1485741
 UPDATE `quest_template` SET `CompleteScript` = 8193, `RewOrReqMoney` = 18000 WHERE `entry` = 8193;
 DELETE FROM `dbscripts_on_quest_end` WHERE `id` = 8193;
 INSERT INTO `dbscripts_on_quest_end` (`id`, `command`, `datalong`, `comments`) VALUES
-(8193, 29, 2, 'Riggle Bassbait - Remove UNIT_NPC_FLAG_QUESTGIVER'); -- should also end event 35
+(8193, 29, 2, 'Riggle Bassbait - Remove UNIT_NPC_FLAG_QUESTGIVER'); -- should also end event 4
 DELETE FROM `gossip_menu` WHERE `entry` = 6421 AND `text_id` = 7714;
 INSERT INTO `gossip_menu` (`entry`, `text_id`, `script_id`, `condition_id`) VALUES (6421, 7714, 0, 6036); -- condition for npcflags = 1 instead of 3
-DELETE FROM `conditions` WHERE `condition_entry` = 6036;
+DELETE FROM `conditions` WHERE `condition_entry` IN (6035,6036);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
-(6036, 12, 36, 0, 0, 0, 0, 'Event ID 36 (Stranglethorn Fishing Extravaganza - Turn-in) Active'); -- 36	1	10080	180	0	0	0	Stranglethorn Fishing Extravaganza - Turn-in
+(6035, 12, 4, 0, 0, 0, 0, 'Event ID 4 (Stranglethorn Fishing Extravaganza) Active'),
+(6036, 12, 5, 0, 0, 0, 0, 'Event ID 5 (Stranglethorn Fishing Extravaganza - Turn-in) Active'); -- 5	1	10080	180	0	0	0	Stranglethorn Fishing Extravaganza - Turn-in
 
 -- https://wowpedia.fandom.com/wiki/Apprentice_Angler?oldid=1604868
 -- Tastyfish turn-in
@@ -83,10 +99,10 @@ UPDATE `creature_template` SET `Faction` = 120, `UnitFlags` = 33536 WHERE `entry
 DELETE FROM `gameobject` WHERE `guid` = 20463 AND `id` = 180403;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation2`, `rotation3`, `state`, `animprogress`) VALUES
 (20463, 180403, 0, -14438, 474.412, 15.3034, 3.64774, -0.968147, 0.250381, 1, 100); -- Add missing Soapbox spawn.
-DELETE FROM `game_event_gameobject` WHERE `guid` = 20463;
+DELETE FROM `game_event_gameobject` WHERE `event` IN (34,35,36,3,4,5); -- fishing old
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
-(20463, 35),
-(20463, 36);
+(20463, 4),
+(20463, 5);
 
 -- Ore Node xyz corrected
 UPDATE `gameobject` SET `position_x` = -14360.8, `position_y` = 152.343, `position_z` = 14.1746, `orientation` = 5.61996, `rotation2` = -0.325567, `rotation3` = 0.945519 WHERE `guid` BETWEEN 77684 AND 77688;
