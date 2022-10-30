@@ -23,7 +23,7 @@ INSERT INTO `creature_movement` (`Id`, `Point`,`PositionX`,`PositionY`,`Position
 DELETE FROM `dbscripts_on_creature_movement` WHERE `Id` = 1714614;
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `datafloat`, `x`, `y`, `z`, `o`, `speed`, `condition_id`, `comments`) VALUES
 (1714614, 5000, 0, 1, 353, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kil\'Sorrow Spellbinder/Cultist - EMOTE_STATE_SPELLKNEELSTART'),
-(1714614, 5000, 1, 15, 31902, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kil\'Sorrow Spellbinder/Cultist - Cast Purple Beam'),
+(1714614, 5000, 1, 15, 31902, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Kil\'Sorrow Spellbinder/Cultist - Cast Purple Beam');
 
 DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1714615,1714616);
 INSERT INTO `dbscripts_on_creature_movement` (`id`,`delay`,`priority`,`command`,`datalong`,`datalong2`,`datalong3`,`dataint`,`dataint2`,`dataint3`,`dataint4`,`buddy_entry`,`search_radius`,`data_flags`,`comments`,`x`,`y`,`z`,`o`) VALUES
