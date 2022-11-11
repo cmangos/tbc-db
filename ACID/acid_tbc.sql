@@ -1560,7 +1560,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gamili Frosthide (1238) - NSR
 -- Boran Ironclink (1240) - NSR
 -- Tognus Flintfire (1241) - NSR
--- Hegnar Rumbleshot (1243) - NSR
+-- Hegnar Rumbleshot 1243
+('124301','1243','1','0','100','1','10000','30000','600000','900000','0','0','53','9997','0','0','0','0','0','0','0','0','0','0','Hegnar Rumbleshot - START_RELAY_SCRIPT on OOC Timer (RP:Mortar Combat - start)'),
 -- Kogan Forgestone (1245) - NSR
 -- Innkeeper Belm (1247) - npc_innkeeper
 -- Senir Whitebeard (1252) - NSR
@@ -1693,13 +1694,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('850305','8503','0','0','100','1537','0','0','5000','20000','0','0','11','20793','1','256','0','0','0','0','0','0','0','0','Gibblewilt - Cast Fireball (Melee Mode)'),
 -- Gretta Ganter (8508) - NSR
 -- Shelby Stoneflint (9980) - NSR
--- Angus (10610) - Part of Special Mortar Event (Requires Special Scripting) - Need Video To Script It
--- Shorty (10611) - Part of Special Mortar Event (Requires Special Scripting) - Need Video To Script It
--- Rifleman Wheeler (10803) - Part of Special Mortar Event (3 Seperate XYZ Shoot Spells Required)
--- Rifleman Middlecamp (10804) - Part of Special Mortar Event (7 Seperate XYZ Shoot Spells Required)
--- Spotter Klemmy (10805) - Part of Special Mortar Event (Requires Special Scripting)
+-- Angus 10610
+-- Shorty 10611
+-- Rifleman Wheeler 10803
+-- Rifleman Middlecamp 10804
+-- Spotter Klemmy 10805
 -- Tristane Shadowstone (11807) - NSR
--- Mortar Team Target Dummy (11875) - NSR (Possibly Does something on Mortar Event Hit?)
+-- Mortar Team Target Dummy 11875 - NSR
 -- Yori Crackhelm (11941) - NSR
 -- Stormpike Mountaineer (12047) - NSR
 -- Blue Mechanostrider (12363) - NSR
@@ -1709,7 +1710,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Brown Ram (12372) - NSR
 -- Gray Ram (12373) - NSR
 -- White Riding Ram Mount (12374) - NSR
--- Mortar Team Advanced Target Dummy (12385) - NSR (Possibly Does something on Mortar Event Hit?)
+-- Mortar Team Advanced Target Dummy 12385 - NSR
 -- Mountaineer Dolf (12427) - npc_garments_of_quests
 -- Nori Pridedrift (12738) - NSR
 -- Mounted Ironforge Mountaineer 12996
