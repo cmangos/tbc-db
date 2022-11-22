@@ -1,4 +1,6 @@
 DELETE FROM `creature` WHERE (`guid` BETWEEN 170005 AND 170007) AND `id` = 5434;
+-- https://www.wowhead.com/classic/npc=12123/reef-shark - not in Lordamere Lake
+DELETE FROM `creature` WHERE (guid BETWEEN 170156 AND 170163) OR guid IN (170165,170166,170167,170169,170170,170172,170173,170175) AND `id` = 12123; -- source: classicmangos
 INSERT INTO `creature` (`guid`, `id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (170005, 5434, 1, -3030.62, -4244.16, -11.4944, 3.28582, 900, 900, 0, 2),
 (170006, 5434, 1, -4102.56, -4588.74, -53.1956, 2.30332, 900, 900, 0, 2),
