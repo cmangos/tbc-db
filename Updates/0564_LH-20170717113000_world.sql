@@ -55,5 +55,5 @@ UPDATE `game_graveyard_zone` SET `faction` = 67 WHERE `id` = 853 AND `ghost_loc`
 -- https://github.com/cmangos/tbc-db/commit/417f3b30a00172a811bdd37fe135072ecb2ffc03 - might need temp. active?
 -- DB-SCRIPTS: Process table `dbscripts_on_relay` id 14, command 26 source can not attack (Attacker: Creature (Entry: 4951 Counter: 30654) DBGuid: 30654, Target: Creature (Entry: 4952 Counter: 30481) DBGuid: 30481)
 -- [298] (46) UNIT_FIELD_FLAGS: (768) NotAttackbleByPlayerControlled, OnlyAttackableByPlayerControlled
-UPDATE `creature_template` SET `UnitFlags` = 768 WHERE `entry` = 4952;
+UPDATE `creature_template` SET `UnitFlags` = 32768 WHERE `entry` = 4952; -- 768
 
