@@ -177,3 +177,7 @@ DELETE FROM `dbscripts_on_creature_death` WHERE `id` IN (12339);
 INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (12339,60000,53,0,0,0,0,0,0,30011,0,0,0,0,0,0,0,'Set worldstate variable to 0');
 
+-- Factions
+UPDATE `creature_template` SET `Faction` = 89 WHERE `entry` = 12352; -- Scarlet Trooper
+UPDATE `creature_template` SET `Faction` = 89 WHERE `entry` = 12339; -- Demetria
+
