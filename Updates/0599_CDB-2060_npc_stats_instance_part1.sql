@@ -75,7 +75,7 @@ UPDATE `creature_template` SET `MinLootGold`='575', `MaxLootGold`='756' WHERE `e
 UPDATE `creature_template` SET `DamageMultiplier`='2.4' WHERE `entry`='7357'; -- Mordresh Fire Eye (8H)(3P)(2.3D)(1A) 88-117 2.3 for 117 max, 2.4 for 88min
 UPDATE `creature_template` SET `ArmorMultiplier`= (1769 / 1325) WHERE `entry`='7358'; -- Amnennar the Coldbringer (8H)(8P)(4D)(1.33509A)
 UPDATE `creature_template` SET `MinLevel`='61', `MaxLevel`='61' WHERE `entry`='8717'; -- Felguard Elite (for classic, already correct in tbc)
-UPDATE `creature_template` SET `PowerMultiplier`='3', `DamageMultiplier`='5.7', `MinLootGold`='0', `MaxLootGold`='0', `LootId`='10000' WHERE `entry`='10000'; -- Arugal (dummy npc for 4275, also different powermulti)
+UPDATE `creature_template` SET `PowerMultiplier`='3', `DamageMultiplier`='5.7', `MinLootGold`='0', `MaxLootGold`='0', `LootId`='0' WHERE `entry`='10000'; -- Arugal (dummy npc for 4275, also different powermulti)
 DELETE FROM `creature_loot_template` WHERE `entry` = '10000'; -- (for classic, already correct in tbc)
 UPDATE `creature_template` SET `ArmorMultiplier`='1' WHERE `entry`='11318'; -- Ragefire Trogg (3H)(1P)(1.7D)(0.949778A)
 UPDATE `creature_template` SET `DamageMultiplier`='1.7' WHERE `entry`='11319'; -- Ragefire Shaman (3H)(1P)(3D)(1A)
