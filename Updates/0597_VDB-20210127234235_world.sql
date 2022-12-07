@@ -41,7 +41,9 @@ UPDATE `quest_template` SET `RequiredCondition`=9034 WHERE `entry` = 207;
 
 -- Quest "Forsaken Diseases" is no longer available without completing the prerequisite quest "Kayneth Stillwind".
 -- Fix https://github.com/the-hyjal-project/bugtracker/issues/156 - https://www.wowhead.com/tbc/quest=1011/forsaken-diseases
-UPDATE `quest_template` SET `PrevQuestId`= 4581 WHERE `entry` = 1011;
+-- Quest 1011 should not be unlocked by breadcrumb quest 4581
+-- https://github.com/cmangos/tbc-db/blob/4d7927e752ffe2608cbedc3ae9050852bb1e5ef7/Updates/0487_breadcrumbquests.sql#L141
+-- UPDATE `quest_template` SET `PrevQuestId`= 4581 WHERE `entry` = 1011; -- breadcrumbquest
 
 -- Quest "Deeprun Rat Roundup" has fixed.
 -- Fix https://github.com/the-hyjal-project/bugtracker/issues/124 - https://gist.githubusercontent.com/Kinzcool/e81137dab3bc828631ada717f7da5159/raw/796cd141ede5c02299a55ecd3037cdd460b5944c/creaturedifficulty.sql
