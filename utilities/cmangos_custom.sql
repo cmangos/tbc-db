@@ -204,6 +204,7 @@ UPDATE creature_template SET `modelid2` = 0, `modelid3` = 0, `modelid4` = 0 WHER
 19632, -- Lykul Stinger (6633,7350,11091)
 20155, -- Hillsbrad Internment Lodge Quest Trigger
 20156, -- Thrall Quest Trigger
+21060, -- Enraged Air Spirit (15294)
 25265, -- Demonic Vapor
 25267, -- Demonic Vapor (Trail)
 25703 -- Brutallus Death Cloud
