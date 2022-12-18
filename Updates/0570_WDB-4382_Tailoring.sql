@@ -390,3 +390,10 @@ DELETE FROM npc_trainer_template WHERE entry IN (1086); -- identical with 1081 w
 -- (1086,26791,100000,197,275,50,0), -- 26790
 -- (1086,31460,20000,197,300,0,0);
 
+-- Using parentspell causes wired visual bugs in classic and tbcmangos
+UPDATE `npc_trainer_template` SET `spell` = 3908 WHERE `spell` = 3911;
+UPDATE `npc_trainer_template` SET `spell` = 3909 WHERE `spell` = 3912;
+UPDATE `npc_trainer_template` SET `spell` = 3910 WHERE `spell` = 3913;
+UPDATE `npc_trainer_template` SET `spell` = 12180 WHERE `spell` = 12181;
+UPDATE `npc_trainer_template` SET `spell` = 26790 WHERE `spell` = 26791;
+
