@@ -74,3 +74,24 @@ INSERT INTO dbscripts_on_relay (id, delay, command, datalong, datalong2, datalon
 (19965,7000,1,173,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'Part of Orgrimmar Peon 19425 EAI: emote'),
 (19965,7001,21,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'Part of Orgrimmar Peon 19425 EAI: unactive');
 
+-- Defenders
+-- remove old link between them
+DELETE FROM creature_linking_template WHERE entry IN(18791,18969,18966,18949,18970,18965,18972,18950,18986,18948); -- identical guids between tbc and wotlkmangos
+DELETE FROM creature_linking_template WHERE master_entry IN(18791,18969,18966,18949,18970,18965,18972,18950,18986,18948);
+-- move them to spawn groups
+DELETE FROM `spawn_group` WHERE id = 29996;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(29996, 'Hellfire Peninsula - The Stair of Destiny - Defenders', 0, 0, 0, 1);
+DELETE FROM `spawn_group_spawn` WHERE id = 29996;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(29996, 68127, -1),(29996, 68128, -1),(29996, 68121, -1),(29996, 68118, -1),
+(29996, 68015, -1),(29996, 68016, -1),(29996, 140485, -1),(29996, 68125, -1),
+(29996, 68122, -1),(29996, 68126, -1),(29996, 68123, -1),(29996, 68124, -1),
+(29996, 68114, -1),(29996, 68115, -1),(29996, 68112, -1),(29996, 68111, -1),
+(29996, 68116, -1),(29996, 68113, -1),(29996, 68025, -1),(29996, 68017, -1),
+(29996, 86070, -1),(29996, 86072, -1),(29996, 68024, -1),(29996, 140486, -1),
+(29996, 68264, -1),(29996, 68013, -1),(29996, 68010, -1),(29996, 68262, -1),
+(29996, 140487, -1),(29996, 68011, -1),(29996, 68265, -1),(29996, 68012, -1),
+(29996, 68263, -1),(29996, 68019, -1),(29996, 68022, -1),(29996, 68021, -1),
+(29996, 86071, -1),(29996, 68018, -1);
+
