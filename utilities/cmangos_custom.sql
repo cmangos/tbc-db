@@ -200,18 +200,31 @@ UPDATE broadcast_text SET `text`="Should Kil'jaeden rise up through the Sunwell 
 
 -- modelids with probability = 0
 UPDATE creature_template SET `modelid2` = 0, `modelid3` = 0, `modelid4` = 0 WHERE `entry` IN (
+17432, -- Stillpine Defender (2001,6802,8589)
+17439, -- Stillpine Hunter (2001,6802,8589)
 17734, -- Underbog Lord
 17459, -- Chess Waiting Room (DND)
 18095, -- Doomfire
 18104, -- Doomfire Targeting
 19632, -- Lykul Stinger (6633,7350,11091)
+19937, -- Commander Hogarth (16503,16504,16505)
 20155, -- Hillsbrad Internment Lodge Quest Trigger
 20156, -- Thrall Quest Trigger
 21060, -- Enraged Air Spirit (15294)
+25195, -- Marksman Bova (18742,18741,18740)
 25265, -- Demonic Vapor
 25267, -- Demonic Vapor (Trail)
 25703 -- Brutallus Death Cloud
 );
+
+UPDATE creature_template SET `modelid1` = 0, `modelid3` = 0, `modelid4` = 0 WHERE `entry` IN (
+21419, -- Infernal Attacker - modelid1 (17312)
+22418 -- Archimonde Channel Target (18783)
+);
+
+UPDATE creature_template SET `modelid2` = 17188 WHERE `entry` = 22332; -- Brood of Neltharaku (19980)
+
+-- -------------------------------
 
 UPDATE `creature_template` SET `name` = 'Redeemed Spirit of Earth' WHERE `entry` = 21739; -- Redeemed Spriit of Earth
 

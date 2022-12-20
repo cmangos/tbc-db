@@ -16904,6 +16904,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1683605','16836','9','0','100','1025','0','40','3400','4700','0','0','11','20824','1','256','0','0','0','0','0','0','0','0','Escaped Dreghood - Cast Lightning Bolt'),
 -- Honor Hold Defender 16842
 ('1684201','16842','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Honor Hold Defender - Cast Invisibility and Stealth Detection on Spawn'),
+('1684202','-72636','11','0','100','0','0','0','0','0','0','0','3','0','16387','0','0','0','0','0','0','0','0','0','Honor Hold Defender - Set Model on Spawn'),
+('1684203','-72637','11','0','100','0','0','0','0','0','0','0','3','0','16387','0','0','0','0','0','0','0','0','0','Honor Hold Defender - Set Model on Spawn'),
 -- Crust Burster (16844) - npc_burster_worm
 -- Stormwind Cavalryman
 ('1684301','16843','4','0','100','0','0','0','0','0','0','0','43','0','0','0','0','0','0','0','0','0','0','0','Stormwind Cavalryman - Dismount on Aggro'),
