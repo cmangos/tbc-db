@@ -13659,8 +13659,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('548501','5485','0','0','100','1025','6200','28200','13200','29400','0','0','11','8376','0','0','0','0','0','0','0','0','0','0','Thistleshrub Rootshaper - Cast Earthgrab Totem'),
 -- Gnarled Thistleshrub (5490) - NSR
 -- Alchemist Pestlezugg (5594) - NSR
--- Wastewander Rogue (4.0.3 Official Data)
-('561501','5615','1','0','100','0','1000','1000','0','0','0','0','11','22766','0','32','0','0','0','0','0','0','0','0','Wastewander Rogue - Cast Sneak OOC'),
+-- Wastewander Rogue 5615
+('561501','5615','1','0','100','1','1000','1000','5000','5000','0','0','11','7939','0','34','11','22766','0','34','0','0','0','0','Wastewander Rogue - Cast Sneak OOC'),
 ('561502','5615','33','0','100','1025','0','0','11500','18900','0','0','11','7159','1','0','0','0','0','0','0','0','0','0','Wastewander Rogue - Cast Backstab on Facing Target Back'),
 ('561503','5615','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Wastewander Rogue - Flee at 15% HP'),
 -- Wastewander Thief (4.0.3 Official Data)
