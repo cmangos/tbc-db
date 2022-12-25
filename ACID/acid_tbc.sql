@@ -9131,12 +9131,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('857803','8578','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Magus Rimtori - Enable Range Mode on Aggro'),
 ('857804','8578','9','0','100','1025','0','8','13000','16000','0','0','11','11831','17','1024','0','0','0','0','0','0','0','0','Magus Rimtori - Cast Frost Nova'),
 ('857805','8578','9','0','100','1025','0','40','3400','4800','0','0','11','20823','1','256','0','0','0','0','0','0','0','0','Magus Rimtori - Cast Fireball'),
--- Blood Elf Defender
+-- Blood Elf Defender 8581
 ('858101','8581','9','0','100','1025','0','5','8000','13000','0','0','11','12170','1','0','0','0','0','0','0','0','0','0','Blood Elf Defender - Cast Revenge'),
 ('858102','8581','0','0','100','1025','7000','12000','11000','14000','0','0','11','12169','0','0','0','0','0','0','0','0','0','0','Blood Elf Defender - Cast Shield Block'),
-('858103','8581','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','18','768','0','0','0','0','0','0','Blood Elf Defender - Cast Simple Teleport and Set Immune to Player and NPC on Spawn'),
+('858103','8581','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','18','768','0','0','42','1','0','0','Blood Elf Defender - Cast Simple Teleport and Set Immune to Player and NPC, Set Invincible on Spawn'),
 ('858104','8581','29','0','100','0','2500','2500','0','0','0','0','19','768','0','0','54','4502','0','0','50','2','0','0','Blood Elf Defender - Remove Immune to Player and NPC and Say and Set ReactState Hostile OOC'),
-('858105','8581','2','0','100','0','50','0','0','0','0','0','54','4491','0','0','53','23','0','0','0','0','0','0','Blood Elf Defender - Say and Start Relay Script at 50% HP'),
+('858105','8581','2','0','100','0','50','0','0','0','0','0','54','4491','0','0','53','23','0','0','42','0','0','0','Blood Elf Defender - Say and Start Relay Script, Remove Invincible at 50% HP'),
 -- Haggrum Bloodfist (8586) - NSR
 -- Jediga (8587) - NSR
 -- Angered Infernal (8608)
