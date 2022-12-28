@@ -26,3 +26,19 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Target
 
 -- Event 1432705 Action 1 uses SpellID 22710 that must not target caster (target is 0). Resetting to TARGET_T_NONE.
 
+-- ====
+-- TBC+
+-- ====
+
+-- Event 1870205 Action 1 uses SpellID 33325 that must not target caster (target is 0). Resetting to TARGET_T_NONE. - ACID
+-- Event 1870206 Action 1 uses SpellID 37367 that must not target caster (target is 0). Resetting to TARGET_T_NONE. - ACID
+
+-- Event 1973301 Action 1 uses SpellID 35207 that must not target caster (target is 0). Resetting to TARGET_T_NONE.
+-- ('1973301','19733','2','0','100','1024','50','0','0','0','0','0','11','35207','0','0','0','0','0','0','0','0','0','0','Daggerfen Servant - Cast Bandage at 50% HP'),
+UPDATE creature_template SET SpellList=1973301 WHERE entry=19733;
+DELETE FROM `creature_spell_list_entry` WHERE `Id` = 1973301;
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES (1973301, 'Zangarmarsh - Daggerfen Servant', 0, 0);
+DELETE FROM `creature_spell_list` WHERE `Id` = 1973301;
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1973301, 0, 35207, 0, 204, 0, 100, 1, 0, 10000, 12000, 24000, 'Daggerfen Servant - Bandage on Friendly Missing 50% excluding self'); -- Support - Missing 50% excluding self
+
