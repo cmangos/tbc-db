@@ -69,26 +69,27 @@ UPDATE `quest_template` SET `RequiredRaces` = 0, `RewRepFaction1` = 529, `RewRep
 -- 3461	0	0	I need another Argent Dawn Commission.	6878	1	1	-1	0	3421	0	0		0	90
 
 -- Fixup old entries
--- The Quests already have Req Race Field, so its not needed to do OR OR OR, just ITEM + Quest
-UPDATE `gossip_menu_option` SET `condition_id` = 142 WHERE `menu_id` IN (3421) AND `id` = 0; -- horde
-UPDATE `gossip_menu_option` SET `condition_id` = 8997 WHERE `menu_id` IN (3441) AND `id` = 0; -- alliance
-UPDATE `gossip_menu_option` SET `condition_id` = 8999 WHERE `menu_id` IN (3461) AND `id` = 0; -- 5503 can never be completed if 5401 or 5405 are completed
+-- The Quests already have Req Race Field, so its not needed to do OR OR OR, just ITEM + Quest -> logical mistake, or or or and quest item is all they need as they get closed off by ExclusiveGroup when
+UPDATE `gossip_menu_option` SET `condition_id` = 143 WHERE `menu_id` IN (3421) AND `id` = 0; -- horde
+UPDATE `gossip_menu_option` SET `condition_id` = 143 WHERE `menu_id` IN (3441) AND `id` = 0; -- alliance
+UPDATE `gossip_menu_option` SET `condition_id` = 143 WHERE `menu_id` IN (3461) AND `id` = 0; -- 5503 can never be completed if 5401 or 5405 are completed
 
-REPLACE INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
+DELETE FROM `conditions` WHERE `condition_entry` IN (90,109,110,141,142,143); -- reinsert same data from classicmangos
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
 (90, 2, 12846, 1, 0, 0, 1, 'Player Has Less Than 1 of Item ID 12846 in Inventory'),
 (109, 8, 5405, 0, 0, 0, 0, 'Quest ID 5405 Rewarded'),
 (110, 8, 5503, 0, 0, 0, 0, 'Quest ID 5503 Rewarded'),
-(142, -1, 90, 109, 0, 0, 0, '(Player Has Less Than 1 of Item ID 12846 in Inventory AND Quest ID 5405 Rewarded)'),
-(143, -1, 90, 110, 0, 0, 0, '(Player Has Less Than 1 of Item ID 12846 in Inventory AND Quest ID 5503 Rewarded)');
+(141, -2, 62, 109, 0, 0, 0, '(Quest ID 5401 Rewarded OR Quest ID 5405 Rewarded)'),
+(142, -2, 110, 141, 0, 0, 0, '(Quest ID 5503 Rewarded OR (Quest ID 5401 Rewarded OR Quest ID 5405 Rewarded))'),
+(143, -1, 90, 142, 0, 0, 0, '(Player Has Less Than 1 of Item ID 12846 in Inventory AND (Quest ID 5503 Rewarded OR (Quest ID 5401 Rewarded OR Quest ID 5405 Rewarded)))');
 
 -- Conditions
 -- Quest Argent Dawn Commission - Alliance
 DELETE FROM `conditions` WHERE `condition_entry` BETWEEN 8996 AND 8999; -- 106 taken
+-- -- CONDITION _AND or _OR (entry 141, type -2) has invalid value1 8999, must be lower than entry, skipped
+DELETE FROM `conditions` WHERE `condition_entry` = 62; -- free in both tbc and wotlkmangos
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`) VALUE
-(8996, 8, 5401, 0), -- Quest ID 5401 Rewarded
-(8997, -1, 8996, 90), -- Quest ID 5401 Rewarded & Item missing
-(8998, -2, 109, 8996), -- Quest ID 5405 Rewarded OR 5401
-(8999, -1, 8998, 90); -- (Quest ID 5401 Rewarded OR 5405) AND Item missing
+(62, 8, 5401, 0); -- Quest ID 5401 Rewarded - 106 is used for different in tbcmangos
 
 -- https://tbc.wowhead.com/quest=9183/craftsmans-writ-radiant-circlet#comments:id=2780562 75 rep, when was it increased to 150? classic has 50, 2.2 patch increased
 -- https://wowwiki-archive.fandom.com/wiki/Craftsman%27s_Writs?diff=next&oldid=1535197
