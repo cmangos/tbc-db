@@ -64,10 +64,10 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `comments`) V
 
 -- these have either 118 or 444 where Strong Fishing Pole is in unlimited supply, which is wrong
 UPDATE `npc_vendor_template` SET `maxcount` = 0, `incrtime` = 0 WHERE `entry` = 444 AND `item` = 21552; -- 444	21552	5	43200	0	0	0	Striped Yellowtail
-UPDATE `npc_vendor_template` SET `maxcount` = 1, `incrtime` = 3600 WHERE `entry` IN (118,444) AND `item` = 6365; -- Strong Fishing Pole
+UPDATE `npc_vendor_template` SET `maxcount` = 1, `incrtime` = 7200 WHERE `entry` IN (117,118,444) AND `item` = 6365; -- Strong Fishing Pole
 
 -- Reduce Restocktime for aquadynamic-fish-attractor
-UPDATE `npc_vendor_template` SET `incrtime` = 3600 WHERE `entry` IN (118,444) AND `item` = 6533; -- 12h makes no sense
+UPDATE `npc_vendor_template` SET `incrtime` = 3600 WHERE `entry` IN (117,118,444) AND `item` = 6533; -- 12h makes no sense
 
 DELETE FROM `npc_vendor_template` WHERE `entry` = 117 AND `item` IN (6365,6533); -- missing from general fishing vendors
 INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `comments`) VALUES
