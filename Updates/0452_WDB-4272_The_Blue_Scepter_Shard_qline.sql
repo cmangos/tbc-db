@@ -31,6 +31,9 @@ UPDATE quest_template SET ExclusiveGroup = 0 WHERE entry = 8587; -- -8578
 UPDATE quest_template SET ExclusiveGroup = 0 WHERE entry = 8620; -- -8578
 -- UPDATE creature_loot_template SET condition_id = 65 WHERE item BETWEEN 21103 AND 21110; -- q.8620 'The Only Prescription' taken "65	9	8620	0	0	0	0	Quest ID 8620 Taken"
 -- 97	9	8620	0	0	0	0	Quest ID 8620 Taken in tbcmangos
+-- Add missing Draconic for Dummies for Lady Hederine 10201 - source: wotlkmangos
+-- https://www.wowhead.com/classic/item=21105/draconic-for-dummies#dropped-by
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES (10201, 21105, 6, 0, 1, 1, 97, 'Draconic for Dummies');
 
 -- After you've done these three you can continue here:
 -- q.8728 'The Good News and The Bad News'
