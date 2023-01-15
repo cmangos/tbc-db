@@ -119,7 +119,7 @@ INSERT INTO `gameobject` (guid, id, map, spawnMask, position_x, position_y, posi
 (@OGUID+53,180837,1,1,1619.80,-4092.53,34.4888,3.70010,0,0,-0.961261,0.275640,120,120,255,1), -- Cooking
 (@OGUID+54,180843,1,1,1683.10,-4134.31,39.5390,3.73501,0,0,-0.956305,0.292372,120,120,255,1); -- Bars
 
-DELETE FROM `gameobject` WHERE guid BETWEEN @OGUID+0 AND @OGUID+54;
+DELETE FROM `gameobject` WHERE guid BETWEEN 155500 AND 155554; -- duplicated 155100+
 INSERT INTO `game_event_gameobject` (guid, event) VALUES
 (@OGUID+0, 120),(@OGUID+1, 120),(@OGUID+2, 120),(@OGUID+3, 120),(@OGUID+4, 120),
 (@OGUID+10, 131),(@OGUID+11, 131),(@OGUID+12, 131),(@OGUID+13, 131),(@OGUID+14, 131),
