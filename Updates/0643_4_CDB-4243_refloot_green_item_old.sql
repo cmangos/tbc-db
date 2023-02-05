@@ -1860,6 +1860,23 @@ AND `mincountOrRef` = 1 AND `entry` != 645; -- seemingly high unique chance
 -- 29000	Scarlet Commander Rodrick	56	56
 -- 29076	Scarlet Courier	56	56
 
+-- ========
+-- DBErrors
+-- Table 'creature_loot_template' entry 466 isn't creature entry and not referenced from loot, and then useless.
+-- Table 'creature_loot_template' entry 1756 isn't creature entry and not referenced from loot, and then useless.
+-- classicmangos
+UPDATE `creature_template` SET `LootId` = 466 WHERE `entry` = 466;
+UPDATE `creature_template` SET `LootId` = 1756 WHERE `entry` = 1756;
+INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
+(466, 8932, 71.4286, 0, 1, 1, 0, 'Alterac Swiss'),
+(466, 14047, 85.7143, 0, 1, 1, 0, 'Runecloth'),
+(466, 60008, 5, 1, -60008, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 51-60) - (NPC Levels: 51-60)'),
+
+(1756, 14047, 100, 0, 1, 1, 0, 'Runecloth'),
+(1756, 50603, 0.75, 0, -50603, 1, 0, 'NPC LOOT (White World Drop) - (Item Levels: 65 (Scrolls IV)) - (NPC Levels 55-62)'),
+(1756, 60008, 6, 0, -60008, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 51-60) - (NPC Levels: 51-60)'),
+(1756, 60280, 0.1, 0, -60280, 1, 0, 'NPC LOOT (Blue World Drop) - (Item Levels: 56-65) - (NPC Levels: 60) - VANILLA NPC ONLY');
+
 -- Cleanup move to next file.
 UPDATE reference_loot_template SET comments='';
 UPDATE reference_loot_template ct JOIN item_template it ON it.entry = ct.item AND ct.MinCountOrRef > 0 SET ct.comments = CONCAT(ct.comments, "", it.name);
