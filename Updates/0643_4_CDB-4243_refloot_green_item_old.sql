@@ -58,6 +58,11 @@ SELECT `entry`, 60100, -60100, 0.1, 0, 1 FROM `creature_template` WHERE `entry` 
 3119, -- https://www.wowhead.com/classic/npc=3119/kolkar-drudge
 3129, -- https://www.wowhead.com/classic/npc=3129/kul-tiras-marine
 7235, -- https://www.wowhead.com/classic/npc=7235/gnarlpine-mystic
+15648, -- https://www.wowhead.com/tbc/npc=15648/manawraith
+15651, -- https://www.wowhead.com/tbc/npc=15651/springpaw-stalker
+16162, -- https://www.wowhead.com/tbc/npc=16162/wretched-hooligan
+17216, -- https://www.wowhead.com/tbc/npc=17216/skittering-crawler
+17278, -- https://www.wowhead.com/tbc/npc=17278/venture-co-saboteur
 1126, -- Large Crag Boar (6-7) - https://web.archive.org/web/20071102173813/http://wow.allakhazam.com/db/mob.html?wmob=1126
 1138, -- Snow Tracker Wolf (6-7) - https://web.archive.org/web/20071116001231/http://wow.allakhazam.com/db/mob.html?wmob=1138
 1553, -- Greater Duskbat (6-7) - https://web.archive.org/web/20071109115901/http://wow.allakhazam.com/db/mob.html?wmob=1553
@@ -85,6 +90,7 @@ SELECT `entry`, 60100, -60100, 0.50, 0, 1 FROM `creature_template` WHERE `entry`
 3120, -- https://www.wowhead.com/classic/npc=3120/kolkar-outrunner
 3121, -- https://www.wowhead.com/classic/npc=3121/durotar-tiger
 14428, -- https://www.wowhead.com/classic/npc=14428/uruson
+17202, -- https://www.wowhead.com/tbc/npc=17202/infected-nightstalker-runt
 3122, -- Bloodtalon Taillasher (6-8) - https://web.archive.org/web/20071102180357/http://wow.allakhazam.com/db/mob.html?wmob=3122
 1127, -- Elder Crag Boar (7-8) - https://web.archive.org/web/20071102173818/http://wow.allakhazam.com/db/mob.html?wmob=1127
 1131, -- Winter Wolf (7-8) - https://web.archive.org/web/20071116035529/http://wow.allakhazam.com/db/mob.html?wmob=1131
@@ -103,6 +109,12 @@ UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 0.50 WHERE `mincount
 -- 60101	NPC LOOT (Green World Drop) - (Item Levels: 7-12) - (NPC Levels: 8-9)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60101, -60101, 0.75, 0, 1 FROM `creature_template` WHERE `entry` IN (
+15636, -- https://www.wowhead.com/tbc/npc=15636/eversong-green-keeper
+15652, -- https://www.wowhead.com/tbc/npc=15652/elder-springpaw
+17184, -- https://www.wowhead.com/tbc/npc=17184/bristlelimb-windcaller
+17203, -- https://www.wowhead.com/tbc/npc=17203/nightstalker
+17217, -- https://www.wowhead.com/tbc/npc=17217/barbed-crawler
+17374, -- https://www.wowhead.com/tbc/npc=17374/greater-timberstrider
 2970, -- Swoop (7-9) - https://web.archive.org/web/20071106082958/http://wow.allakhazam.com/db/mob.html?wmob=2970 - little less maybe 0.5
 1133, -- Starving Winter Wolf (8-9) - https://web.archive.org/web/20071116012624/http://wow.allakhazam.com/db/mob.html?wmob=1133
 1554, -- Vampiric Duskbat (8-9) - https://web.archive.org/web/20071109115907/http://wow.allakhazam.com/db/mob.html?wmob=1554
@@ -121,6 +133,10 @@ UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 1 WHERE `mincountOrR
 -- 60103	NPC LOOT (Green World Drop) - (Item Levels: 8-13) - (NPC Levels: 9-10)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60103, -60103, 1.5, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17187, -- https://www.wowhead.com/tbc/npc=17187/aberrant-owlbeast
+17190, -- https://www.wowhead.com/tbc/npc=17190/siltfin-murloc
+17199, -- https://www.wowhead.com/tbc/npc=17199/ravager-specimen
+17345, -- https://www.wowhead.com/tbc/npc=17345/brown-bear
 6911, -- Minion of Sethir (8-10) - https://web.archive.org/web/20071104033823/http://wow.allakhazam.com/db/mob.html?wmob=6911
 1211, -- Leper Gnome (8-10) - https://web.archive.org/web/20071031015009/http://wow.allakhazam.com/db/mob.html?wmob=1211
 2971, -- Taloned Swoop (8-10) - https://web.archive.org/web/20071030065316/http://wow.allakhazam.com/db/mob.html?wmob=2971
@@ -135,9 +151,14 @@ SELECT `entry`, 60103, -60103, 1.5, 0, 1 FROM `creature_template` WHERE `entry` 
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 1.5 WHERE `mincountOrRef` = -60103 AND `ChanceOrQuestChance` IN (2,20); -- rake has special grp, else normal chance
 
 -- 60104	NPC LOOT (Green World Drop) - (Item Levels: 9-13) - (NPC Levels: 10)
+REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
+SELECT `entry`, 60104, -60104, 2, 0, 1 FROM `creature_template` WHERE `entry` = 17556; -- https://web.archive.org/web/20080112052826/http://wow.allakhazam.com/db/mob.html?wmob=17556
+
 -- 60105	NPC LOOT (Green World Drop) - (Item Levels: 9-14) - (NPC Levels: 10-11)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60105, -60105, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17349, -- https://web.archive.org/web/20071224161036/http://wow.allakhazam.com/db/mob.html?wmob=17349
+17525, -- https://www.wowhead.com/tbc/npc=17525/bloodmyst-hatchling
 3110, -- Dreadmaw Crocolisk (9-11) - https://web.archive.org/web/20071031222758/http://wow.allakhazam.com/db/mob.html?wmob=3110
 1190, -- Mountain Boar (10-11) - https://web.archive.org/web/20071102173823/http://wow.allakhazam.com/db/mob.html?wmob=1190
 1195, -- Forest Lurker (10-11) - https://web.archive.org/web/20071015210219/http://wow.allakhazam.com/db/mob.html?wmob=1195
@@ -161,6 +182,7 @@ SELECT `entry`, 60106, -60106, 2, 0, 1 FROM `creature_template` WHERE `entry` = 
 -- 60107	NPC LOOT (Green World Drop) - (Item Levels: 10-15) - (NPC Levels: 11-12)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60107, -60107, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17343, -- https://www.wowhead.com/tbc/npc=17343/thistle-lasher
 1186, -- Elder Black Bear (11-12) - https://web.archive.org/web/20071106033456/http://wow.allakhazam.com/db/mob.html?wmob=1186
 1766, -- Mottled Worg (11-12) - https://web.archive.org/web/20071102202435/http://wow.allakhazam.com/db/mob.html?wmob=1766
 2163, -- Thistle Bear (11-12) - https://web.archive.org/web/20071106121523/http://wow.allakhazam.com/db/mob.html?wmob=2163
@@ -176,6 +198,9 @@ SELECT `entry`, 60108, -60108, 2, 0, 1 FROM `creature_template` WHERE `entry` = 
 -- 60109	NPC LOOT (Green World Drop) - (Item Levels: 11-16) - (NPC Levels: 12-13)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60109, -60109, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17327, -- https://www.wowhead.com/tbc/npc=17327/blacksilt-tidecaller
+17347, -- https://www.wowhead.com/tbc/npc=17347/grizzled-brown-bear
+17352, -- https://www.wowhead.com/tbc/npc=17352/corrupted-treant
 2321, -- Foreststrider Fledgling (11-13) - https://web.archive.org/web/20071109010612/http://wow.allakhazam.com/db/mob.html?wmob=2321
 3254, -- Sunscale Lashtail (11-13) - https://web.archive.org/web/20071102231247/http://wow.allakhazam.com/db/mob.html?wmob=3254
 454, -- Young Goretusk (12-13) - https://web.archive.org/web/20071026072637/http://wow.allakhazam.com/db/mob.html?wmob=454
@@ -195,6 +220,8 @@ SELECT `entry`, 60110, -60110, 100, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60111	NPC LOOT (Green World Drop) - (Item Levels: 12-17) - (NPC Levels: 13-14)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60111, -60111, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17339, -- https://www.wowhead.com/tbc/npc=17339/nazzivus-felsworn
+17673, -- https://www.wowhead.com/tbc/npc=17673/stinkhorn-striker
 2185, -- Darkshore Thresher (12-14) - https://web.archive.org/web/20071107074728/http://wow.allakhazam.com/db/mob.html?wmob=2185
 10160, -- Raging Moonkin (12-14) - https://web.archive.org/web/20071109005956/http://wow.allakhazam.com/db/mob.html?wmob=10160
 830, -- Sand Crawler (13-14) - https://web.archive.org/web/20071107022314/http://wow.allakhazam.com/db/mob.html?wmob=830 unique item
@@ -216,6 +243,7 @@ SELECT `entry`, 60112, -60112, 100, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60113	NPC LOOT (Green World Drop) - (Item Levels: 13-18) - (NPC Levels: 14-15)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60113, -60113, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17344, -- https://www.wowhead.com/tbc/npc=17344/mutated-constrictor
 3255, -- Sunscale Screecher (13-15) - https://web.archive.org/web/20071026041025/http://wow.allakhazam.com/db/mob.html?wmob=3255
 1191, -- Mangy Mountain Boar (14-15) - https://web.archive.org/web/20071102180229/http://wow.allakhazam.com/db/mob.html?wmob=1191
 1693, -- Loch Crocolisk (14-15) - https://web.archive.org/web/20071105062104/http://wow.allakhazam.com/db/mob.html?wmob=1693
@@ -239,6 +267,9 @@ SELECT `entry`, 60113, -60113, 8, 0, 1 FROM `creature_template` WHERE `entry` IN
 -- 60115	NPC LOOT (Green World Drop) - (Item Levels: 14-19) - (NPC Levels: 15-16)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60115, -60115, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17324, -- https://www.wowhead.com/tbc/npc=17324/irradiated-wildkin
+17348, -- https://www.wowhead.com/tbc/npc=17348/elder-brown-bear
+17350, -- https://www.wowhead.com/tbc/npc=17350/royal-blue-flutterer
 2174, -- Coastal Frenzy (14-16) - https://web.archive.org/web/20071108233951/http://wow.allakhazam.com/db/mob.html?wmob=2174
 2322, -- Foreststrider (14-16) - https://web.archive.org/web/20071106082903/http://wow.allakhazam.com/db/mob.html?wmob=2322
 831, -- Sea Crawler (15-16) - https://web.archive.org/web/20071107022320/http://wow.allakhazam.com/db/mob.html?wmob=831 unique item
@@ -269,6 +300,10 @@ SELECT `entry`, 60116, -60116, 100, 0, 1 FROM `creature_template` WHERE `entry` 
 DELETE FROM `creature_loot_template` WHERE `entry` = 3417 AND `mincountOrRef` = -60116;
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60117, -60117, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17342, -- https://www.wowhead.com/tbc/npc=17342/axxarien-hellcaller
+17522, -- https://www.wowhead.com/tbc/npc=17522/myst-spinner
+17527, -- https://www.wowhead.com/tbc/npc=17527/enraged-ravager
+17588, -- https://www.wowhead.com/tbc/npc=17588/veridian-whelp
 3417, -- https://www.wowhead.com/classic/npc=3417/living-flame#comments:id=2892657
 2235, -- Reef Crawler (15-17) - https://web.archive.org/web/20071105191725/http://wow.allakhazam.com/db/mob.html?wmob=2235
 4008, -- Cliff Stormer (15-17) - https://web.archive.org/web/20071117201450/http://wow.allakhazam.com/db/mob.html?wmob=4008
@@ -292,6 +327,10 @@ SELECT `entry`, 60118, -60118, 100, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60119	NPC LOOT (Green World Drop) - (Item Levels: 16-21) - (NPC Levels: 17-18)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60119, -60119, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17346, -- https://www.wowhead.com/tbc/npc=17346/mutated-tangler
+17353, -- https://www.wowhead.com/tbc/npc=17353/corrupted-stomper
+17523, -- https://www.wowhead.com/tbc/npc=17523/myst-leecher
+17589, -- https://www.wowhead.com/tbc/npc=17589/veridian-broodling
 2187, -- Elder Darkshore Thresher (16-18) - https://web.archive.org/web/20071107074733/http://wow.allakhazam.com/db/mob.html?wmob=2187
 3256, -- Sunscale Scytheclaw (16-18) - https://web.archive.org/web/20071120034611/http://wow.allakhazam.com/db/mob.html?wmob=3256
 441, -- Black Dragon Whelp (17-18) - https://web.archive.org/web/20071026091120/http://wow.allakhazam.com/db/mob.html?wmob=441
@@ -324,6 +363,9 @@ SELECT `entry`, 60121, -60121, 8, 0, 1 FROM `creature_template` WHERE `entry` IN
 3861); -- Bleak Worg (18-19) - https://web.archive.org/web/20071106121820/http://wow.allakhazam.com/db/mob.html?wmob=3861
 
 -- 60122	NPC LOOT (Green World Drop) - (Item Levels: 18-22) - (NPC Levels: 19)
+REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
+SELECT `entry`, 60122, -60122, 2, 0, 1 FROM `creature_template` WHERE `entry` = 17683; -- https://www.wowhead.com/tbc/npc=17683/zarakh
+
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60122, -60122, 2, 0, 1 FROM `creature_template` WHERE `entry` = 3257; -- Ishamuhale (19-19) - https://web.archive.org/web/20071019015713/http://wow.allakhazam.com/db/mob.html?wmob=3257
 
@@ -384,6 +426,13 @@ SELECT `entry`, 60126, -60126, 2, 0, 1 FROM `creature_template` WHERE `entry` IN
 3879 -- https://www.wowhead.com/classic/npc=3879/dark-strand-assassin
 );
 
+REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
+SELECT `entry`, 60126, -60126, 5, 0, 1 FROM `creature_template` WHERE `entry` IN (
+16245, -- https://web.archive.org/web/20071229150729/http://wow.allakhazam.com/db/mob.html?wmob=16245
+16246, -- https://web.archive.org/web/20071229150735/http://wow.allakhazam.com/db/mob.html?wmob=16246
+16329 -- https://web.archive.org/web/20071229150744/http://wow.allakhazam.com/db/mob.html?wmob=16329
+);
+
 -- 60127	NPC LOOT (Green World Drop) - (Item Levels: 20-25) - (NPC Levels: 21-22)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60127, -60127, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
@@ -406,6 +455,9 @@ SELECT `entry`, 60128, -60128, 100, 0, 1 FROM `creature_template` WHERE `entry` 
 -- 60130	NPC LOOT (Green World Drop) - (Item Levels: 22-26) - (NPC Levels: 23)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60130, -60130, 100, 0, 1 FROM `creature_template` WHERE `entry` = 14281; -- https://www.wowhead.com/classic/npc=14281/jimmy-the-bleeder
+
+REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
+SELECT `entry`, 60130, -60130, 2, 0, 1 FROM `creature_template` WHERE `entry` = 17359; -- https://www.wowhead.com/tbc/npc=17359/telathion-the-impure
 
 -- 60131	NPC LOOT (Green World Drop) - (Item Levels: 22-27) - (NPC Levels: 23-24)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
@@ -702,8 +754,12 @@ SELECT `entry`, 60161, -60161, 2, 0, 1 FROM `creature_template` WHERE `entry` IN
 4681, -- Mage Hunter	38	39 - https://web.archive.org/web/20071031065459/http://wow.allakhazam.com/db/mob.html?wmob=4681
 4699); -- Scorpashi Venomlash	38	39 - https://web.archive.org/web/20071101110106/http://wow.allakhazam.com/db/mob.html?wmob=4699
 
+-- 60162	NPC LOOT (Green World Drop) - (Item Levels: 38-42) - (NPC Levels: 39)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60162, -60162, 100, 0, 1 FROM `creature_template` WHERE `entry` = 2453; -- https://www.wowhead.com/classic/npc=2453/logrosh
+
+REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
+SELECT `entry`, 60162, -60162, 2, 0, 1 FROM `creature_template` WHERE `entry` = 23873; -- https://web.archive.org/web/20071231194028/http://wow.allakhazam.com/db/mob.html?wmob=23873
 
 -- 60163	NPC LOOT (Green World Drop) - (Item Levels: 38-43) - (NPC Levels: 39-40)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
@@ -798,6 +854,7 @@ SELECT `entry`, 60170, -60170, 2, 0, 1 FROM `creature_template` WHERE `entry` IN
 -- 60171	NPC LOOT (Green World Drop) - (Item Levels: 42-47) - (NPC Levels: 43-44)
 REPLACE INTO `creature_loot_template` (`entry`, `item`, `mincountorref`, `chanceorquestchance`, `groupid`, `maxcount`)
 SELECT `entry`, 60171, -60171, 2, 0, 1 FROM `creature_template` WHERE `entry` IN (
+17236, -- https://www.wowhead.com/tbc/npc=17236/tchakaz
 2691, -- https://web.archive.org/web/20071227070144/http://wow.allakhazam.com/db/mob.html?wmob=2691
 2736, -- Greater Rock Elemental	42	44 - https://web.archive.org/web/20071214012405/http://wow.allakhazam.com/db/mob.html?wmob=2736
 2924, -- Silvermane Wolf	43	44 - https://web.archive.org/web/20071227070203/http://wow.allakhazam.com/db/mob.html?wmob=2924
@@ -1917,7 +1974,7 @@ AND `mincountOrRef` = 1 AND `entry` != 645; -- seemingly high unique chance
 -- classicmangos
 UPDATE `creature_template` SET `LootId` = 466 WHERE `entry` = 466;
 UPDATE `creature_template` SET `LootId` = 1756 WHERE `entry` = 1756;
-INSERT INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
+REPLACE INTO `creature_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `condition_id`, `comments`) VALUES
 (466, 8932, 71.4286, 0, 1, 1, 0, 'Alterac Swiss'),
 (466, 14047, 85.7143, 0, 1, 1, 0, 'Runecloth'),
 (466, 60008, 5, 1, -60008, 1, 0, 'NPC LOOT (Grey World Drop) - (Item Levels: 51-60) - (NPC Levels: 51-60)'),
