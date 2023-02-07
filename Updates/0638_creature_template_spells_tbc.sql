@@ -2209,30 +2209,3 @@ DELETE FROM creature_cooldowns WHERE entry IN (21531);
 INSERT INTO creature_cooldowns (Entry, SpellId, CooldownMin, CooldownMax) VALUES
 (21531, 35062, 60000, 60000);
 
-
-
-
--- ======================================================================================================
--- FIXES/ADJUSTMENTS FOR ALL ABOVE DATA
--- ======================================================================================================
-
--- We don't need certain spells in template, they are handled by core automatically
-UPDATE creature_template_spells SET spell1=0 WHERE spell1 IN (1,3,4);
-UPDATE creature_template_spells SET spell2=0 WHERE spell2 IN (1,3,4);
-UPDATE creature_template_spells SET spell3=0 WHERE spell3 IN (1,3,4);
-UPDATE creature_template_spells SET spell4=0 WHERE spell4 IN (1,3,4);
-UPDATE creature_template_spells SET spell5=0 WHERE spell5 IN (1,3,4);
-UPDATE creature_template_spells SET spell6=0 WHERE spell6 IN (1,3,4);
-UPDATE creature_template_spells SET spell7=0 WHERE spell7 IN (1,3,4);
-UPDATE creature_template_spells SET spell8=0 WHERE spell8 IN (1,3,4);
-
--- Remove Trash which is done mostly by aura passive parent spells
-UPDATE `creature_template_spells` SET `spell1` = 0 WHERE `spell1` = 3391;
-UPDATE `creature_template_spells` SET `spell2` = 0 WHERE `spell2` = 3391;
-UPDATE `creature_template_spells` SET `spell3` = 0 WHERE `spell3` = 3391;
-UPDATE `creature_template_spells` SET `spell4` = 0 WHERE `spell4` = 3391;
-UPDATE `creature_template_spells` SET `spell5` = 0 WHERE `spell5` = 3391;
-UPDATE `creature_template_spells` SET `spell6` = 0 WHERE `spell6` = 3391;
-UPDATE `creature_template_spells` SET `spell7` = 0 WHERE `spell7` = 3391;
-UPDATE `creature_template_spells` SET `spell8` = 0 WHERE `spell8` = 3391;
-
