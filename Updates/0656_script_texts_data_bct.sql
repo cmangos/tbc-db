@@ -53,11 +53,11 @@ UPDATE `broadcast_text` SET `SoundEntriesID1`='12463' WHERE `Id`='25628'; -- "Ah
 -- ('-1230038','No!','0','0','0','0','5265','Grim Patron SAY_PISSED_PATRON_2'),
 -- ('-1560032','No!','10471','0','0','5','5265','thrall hillsbrad SAY_TH_EPOCH_KILL_TARETHA'),
 -- ```
-UPDATE `broadcast_text` SET `SoundEntriesID1`='0', `EmoteID1`='0', WHERE `Id`='5265'; -- Thrall Sound not used there. - Find correct one...
+UPDATE `broadcast_text` SET `SoundEntriesID1`='0', `EmoteID1`='0' WHERE `Id`='5265'; -- Thrall Sound not used there. - Find correct one...
 /*
 16018	Thrall, come outside and face your fate. [PH]
 16019	Taretha's life hangs in the balance. Surely you care for her. Surely you wish to save her... 
 16020	No!
 */
-UPDATE `broadcast_text` SET `SoundEntriesID1`='10471', `EmoteID1`='5', WHERE `Id`='16020'; -- Thrall Sound
+UPDATE `broadcast_text` SET `SoundEntriesID1`='10471', `EmoteID1`='5' WHERE `Id`='16020'; -- Thrall Sound
 
