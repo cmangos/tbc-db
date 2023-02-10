@@ -5,15 +5,16 @@ DELETE FROM gossip_menu WHERE entry IN (1801,1802);
 INSERT INTO gossip_menu (entry,text_id) VALUES
 (1801,2434), -- Hi there! The name's Gregan. What can I do for ya?
 (1802,2433); -- Sure thing, $N. You look like you can be trusted... Trustworthy! I can spot that a mile away...$B$BAnyway, back to what I was sayin'. Takes one Evoroot plant to make the Videre Elixir. The rest 'a the ingredients are trivial really, but the Evoroot, well, that can be a bit tricky to get.
-DELETE FROM `conditions` WHERE `condition_entry` = 369;
+-- DELETE FROM `conditions` WHERE `condition_entry` = 369;
 -- 369	9	3909	0	0	0	0	Quest ID 3909 Taken - tbcmangos
 -- 283	9	3909	0	0	0	0	Quest ID 3909 Taken - classicmangos
+-- 157	9	3909	0	0	0	0	Quest ID 3909 Taken - wotlkmangos
 
 DELETE FROM gossip_menu_option WHERE menu_id IN (1801,1802);
 INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_broadcast_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, box_broadcast_text, condition_id) VALUES
 (1801,0,0,'How can I get Evoroot?',4827,1,1,1915,0,0,0,0,NULL,0,0),
-(1802,0,0,'Can you tell me how I can get a Videre Elixir?',4721,1,1,1801,0,0,0,0,NULL,0,157),
-(1802,1,1,'Buy somethin\', will ya?',4720,3,128,0,0,0,0,0,NULL,0,157);
+(1802,0,0,'Can you tell me how I can get a Videre Elixir?',4721,1,1,1801,0,0,0,0,NULL,0,369),
+(1802,1,1,'Buy somethin\', will ya?',4720,3,128,0,0,0,0,0,NULL,0,369);
 
 -- Event
 DELETE FROM dbscripts_on_event WHERE id = 3718;
