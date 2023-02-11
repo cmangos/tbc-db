@@ -17085,8 +17085,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Haal'eshi Talonguard
 ('1696701','16967','9','0','100','1025','15','40','10000','20000','0','0','11','32720','0','0','0','0','0','0','0','0','0','0','Haal''eshi Talonguard - Cast Sprint'),
 -- Tunneler (16968) - npc_burster_worm
--- Bonestripper Buzzard
-('1697201','16972','9','0','100','1025','0','5','9000','16000','0','0','11','37012','1','0','0','0','0','0','0','0','0','0','Bonestripper Buzzard - Cast Swoop'),
+-- Bonestripper Buzzard 16972
+('1697201','16972','0','0','100','1025','10000','12000','18000','30000','0','0','11','37012','1','2048','0','0','0','0','0','0','0','0','Bonestripper Buzzard - Cast Swoop on Casting'),
 -- Bonestripper Vulture
 ('1697301','16973','9','0','100','1025','0','5','4000','6000','0','0','11','32022','1','32','0','0','0','0','0','0','0','0','Bonestripper Vulture - Gut Rip'),
 -- Rogue Voidwalker 16974
