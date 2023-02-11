@@ -49,6 +49,7 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2800, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 596; -- Brainwashed Noble (same level, class as Marisa, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 599; -- Marisa du'Paige (23-33 at 18, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 616; -- Chatter
+UPDATE `creature_template` SET `DamageMultiplier`='0.75', `MeleeBaseAttackTime`='2000' WHERE `entry`='723'; -- Mosh'Ogg Butcher (1D) (1291 MeleeBaseAttackTime) (54-72 at 44, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 763; -- Lost One Chieftain
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 771; -- Commander Felstrom
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 1500, `DamageMultiplier` = 1.4 WHERE `entry` = 947; -- Rohh the Silent
@@ -71,12 +72,14 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 1552; -- Scale Belly
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.7 WHERE `entry` = 1837; -- Scarlet Judge
 UPDATE `creature_template` SET `DamageMultiplier`='4.5', `MeleeBaseAttackTime`='2000' WHERE `entry`='1838'; -- Scarlet Interrogator (1D) (1141 MeleeBaseAttackTime) (476-631 at 61, bestiary)
+UPDATE `creature_template` SET `DamageMultiplier`='1.7', `MeleeBaseAttackTime`='2000' WHERE `entry`='1839'; -- Scarlet High Clerist (2D) (1700 MeleeBaseAttackTime) (174-230 at 63, bestiary)
 UPDATE `creature_template` SET `DamageMultiplier`='1.7', `MeleeBaseAttackTime`='2000' WHERE `entry`='1841'; -- Scarlet Executioner (1D) (1150 MeleeBaseAttackTime) (177-234 at 60, bestiary)
 UPDATE `creature_template` SET `DamageMultiplier`='4.5', `MeleeBaseAttackTime`='1500' WHERE `entry`='1843'; -- Foreman Jerris (1D) (1133 MeleeBaseAttackTime) (364-483 at 62, bestiary)
 UPDATE `creature_template` SET `DamageMultiplier`='1', `MeleeBaseAttackTime`='2400' WHERE `entry`='1844'; -- Foreman Marcrid (1.2D) (2000 MeleeBaseAttackTime) (120-159 at 58, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 1847; -- Foulmane
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 1848; -- Lord Maldazzar
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 1849; -- Dreadwhisper (not confirmed attacktimer)
+UPDATE `creature_template` SET `DamageMultiplier`='1' WHERE `entry`='1850'; -- Putridius (2.4D) (2000 MeleeBaseAttackTime) (100-132 at 58, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.5 WHERE `entry` = 1851; -- The Husk (not confirmed attacktimer)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.5 WHERE `entry` = 1885; -- Scarlet Smith
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 1910; -- Muad
@@ -95,6 +98,7 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.15 WHERE `entry` = 2192; -- Firecaller Radison
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.5 WHERE `entry` = 2258; -- Stone Fury
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.4 WHERE `entry` = 2283; -- Ravenclaw Regent
+UPDATE `creature_template` SET `DamageMultiplier`='5', `MeleeBaseAttackTime`='2000' WHERE `entry`='2447'; -- Narillasanz (2.4D) (2000 MeleeBaseAttackTime) (369-448 at 44, bestiary) -  variance!!!
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 2452; -- Skhowl
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.75 WHERE `entry` = 2453; -- Lo'Grosh
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 2476; -- Large Loch Crocolisk
@@ -108,16 +112,19 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.5 WHERE `entry` = 2744; -- Shadowforge Commander
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.5 WHERE `entry` = 2751; -- War Golem
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 2752; -- Rumbler
-UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.5 WHERE `entry` = 2753; -- Barnabus
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000', `DamageMultiplier`='1.7' WHERE `entry`='2753'; -- Barnabus (1.5D) (2000 MeleeBaseAttackTime) (90-119 at 38, bestiary)
+UPDATE `creature_template` SET `DamageMultiplier`='3.8', `MeleeBaseAttackTime`='3000' WHERE `entry`='2754'; -- Anathemus (2.4D) (3000 MeleeBaseAttackTime) (426-564 at 45, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.6 WHERE `entry` = 2779; -- Prince Nazjak
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 1000, `DamageMultiplier` = 1.26 WHERE `entry` = 2850; -- Broken Tooth
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.6 WHERE `entry` = 3056; -- Ghost Howl
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 3068; -- Mazzranache
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.4 WHERE `entry` = 3253; -- Silithid Harvester
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.7 WHERE `entry` = 3295; -- Sludge Beast
+UPDATE `creature_template` SET `DamageMultiplier`='2.45' WHERE `entry`='3398'; -- Gesharahan (1.7D) (2000 MeleeBaseAttackTime) (72-96 at 20, bestiary) variance
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 3470; -- Rathorian
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 3535; -- Blackmoss the Fetid
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.8 WHERE `entry` = 3581; -- Sewer Beast
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000', `DamageMultiplier`='1.7' WHERE `entry`='3586'; -- Miner Johnson (1.7D) (1500 MeleeBaseAttackTime) (47-63 at 19, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 3652; -- Trigore the Lasher
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 3672; -- Boahn
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 3718; -- [UNUSED] Wrathtail Tide Princess (not confirmed attacktimer)
@@ -127,6 +134,7 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 3831; -- [UNUSED] Ancient Guardian (not confirmed attacktimer)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 4015; -- Pridewing Patriarch
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 4030; -- Vengeful Ancient
+UPDATE `creature_template` SET `DamageMultiplier`='1.6', `MeleeBaseAttackTime`='2600' WHERE `entry`='4066'; -- Nal'taszar (1D) (1400 MeleeBaseAttackTime) (94-109 at 30, bestiary) - rare in wotlk
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 4132; -- Silithid Ravager
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 4380; -- Darkmist Widow
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 5343; -- Lady Szallah
@@ -164,6 +172,7 @@ UPDATE `creature_template` SET `DamageMultiplier`='1.7', `MeleeBaseAttackTime`='
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 5863; -- Geopriest Gukk'rok
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 1500, `DamageMultiplier` = 1 WHERE `entry` = 5865; -- Dishu
 UPDATE `creature_template` SET `DamageMultiplier`='1.7', `MeleeBaseAttackTime`='2000' WHERE `entry`='5916'; -- Sentinel Amarassan (1D) (1425 MeleeBaseAttackTime)
+UPDATE `creature_template` SET `DamageMultiplier`='1.65', `MeleeBaseAttackTime`='2000' WHERE `entry`='5928'; -- Sorrow Wing (1D) (2000 MeleeBaseAttackTime) (73-84 at 27, bestiary) - variance
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 5933; -- Achellios the Banished
 UPDATE `creature_template` SET `DamageMultiplier`='2.36', `MeleeBaseAttackTime`='2000' WHERE `entry`='5934'; -- Heartrazor (1D) (1383 MeleeBaseAttackTime) (105-140 at 32, bestiary)
 UPDATE `creature_template` SET `DamageMultiplier`='1.75', `MeleeBaseAttackTime`='2000' WHERE `entry`='5935'; -- Ironeye the Invincible (1D) (1341 MeleeBaseAttackTime) (90-119 at 37, bestiary)
@@ -183,7 +192,7 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.36 WHERE `entry` = 7016; -- Lady Vespira
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 7017; -- Lord Sinslayer
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 7895; -- Ambassador Bloodrage
-UPDATE `creature_template` SET `DamageMultiplier`='4', `MeleeBaseAttackTime`='2000' WHERE `entry`='8200'; -- Jin'Zallah the Sandbringer (1D) (1266 MeleeBaseAttackTime)
+UPDATE `creature_template` SET `DamageMultiplier`='2.6', `MeleeBaseAttackTime`='2000' WHERE `entry`='8200'; -- Jin'Zallah the Sandbringer (1D) (1266 MeleeBaseAttackTime) (187-247 at 46, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2600, `DamageMultiplier` = 1.7 WHERE `entry` = 8201; -- Omgorn the Lost
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.9 WHERE `entry` = 8202; -- Cyclok the Mad
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8203; -- Kregg Keelhaul
@@ -196,9 +205,9 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8212; -- The Reak
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.6 WHERE `entry` = 8213; -- Ironback
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8214; -- Jalinde Summerdrake
-UPDATE `creature_template` SET `DamageMultiplier`='6.3', `MeleeBaseAttackTime`='2600' WHERE `entry`='8215'; -- Grimungous (1D) (1233 MeleeBaseAttackTime)
+UPDATE `creature_template` SET `DamageMultiplier`='3.0', `MeleeBaseAttackTime`='2600' WHERE `entry`='8215'; -- Grimungous (1D) (1233 MeleeBaseAttackTime) (330-438 at 50, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 1500, `DamageMultiplier` = 1 WHERE `entry` = 8216; -- Retherokk the Berserker
-UPDATE `creature_template` SET `DamageMultiplier`='5.4', `MeleeBaseAttackTime`='2000' WHERE `entry`='8217'; -- Mith'rethis the Enchanter (1D) (1183 MeleeBaseAttackTime)
+UPDATE `creature_template` SET `DamageMultiplier`='3.2', `MeleeBaseAttackTime`='2000' WHERE `entry`='8217'; -- Mith'rethis the Enchanter (1D) (1183 MeleeBaseAttackTime) (263-349 at 52, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 8218; -- Witherheart the Stalker
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8219; -- Zul'arek Hatefowler
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8277; -- Rekk'tilac
@@ -215,25 +224,29 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 1300, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.65 WHERE `entry` = 8301; -- Clack the Reaver
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.15 WHERE `entry` = 8302; -- Deatheye
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.6 WHERE `entry` = 8303; -- Grunter
-UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8304; -- Dreadscorn
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8304; -- DreadscornUPDATE `creature_template` SET `DamageMultiplier`='5.4' WHERE `entry`='10558'; -- Hearthsinger Forresten (3.5D) (2000 MeleeBaseAttackTime) (392-519 at 57, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8503; -- Gibblewilt
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8660; -- The Evalcharr
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2800, `DamageMultiplier` = 1.25 WHERE `entry` = 8924; -- The Behemoth
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 8978; -- Thauris Balgarr
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2600, `DamageMultiplier` = 1 WHERE `entry` = 8979; -- Gruklash
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 1200, `DamageMultiplier` = 1 WHERE `entry` = 8981; -- Malfunctioning Reaver
-UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 9046; -- Scarshield Quartermaster (118-156 at 55, bestiary)
+UPDATE `creature_template` SET `DamageMultiplier`='4.20', `MeleeBaseAttackTime`='2000' WHERE `entry`='9024'; -- Pyromancer Loregrain (1D) (1183 MeleeBaseAttackTime) (266-352 at 52, bestiary) - variance
+UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 9046; -- Scarshield Quartermaster (118-156 at 55, bestiary) - nonelite in tbc+
 -- points towards tbcmangos missing more dmgnerf commmits from classicmangos! - apart from the 4 CLS commits still not ported.
-UPDATE `creature_template` SET `DamageMultiplier`='5' WHERE `entry`='9218'; -- Spirestone Battle Lord (10D) (2000 MeleeBaseAttackTime)
+UPDATE `creature_template` SET `DamageMultiplier`='6' WHERE `entry`='9217'; -- Spirestone Lord Magus (3.5D) (2000 MeleeBaseAttackTime) (557-738 at 58, bestiary)
+UPDATE `creature_template` SET `DamageMultiplier`='6' WHERE `entry`='9218'; -- Spirestone Battle Lord (3.5D) (2000 MeleeBaseAttackTime) (559-794 at 58, bestiary)
+UPDATE `creature_template` SET `DamageMultiplier`='6' WHERE `entry`='9219'; -- Spirestone Butcher (3.5D) (2000 MeleeBaseAttackTime) (587-779 at 57, bestiary)
 UPDATE `creature_template` SET `DamageMultiplier`='1.0', `MeleeBaseAttackTime`='2000' WHERE `entry`='9596'; -- Bannok Grimaxe (1.25D) (2400 MeleeBaseAttackTime)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 9602; -- Hahk'Zor
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 9604; -- Gorgon'och
-UPDATE `creature_template` SET `DamageMultiplier`='3.9', `MeleeBaseAttackTime`='2000' WHERE `entry`='9718'; -- Ghok Bashguud (3.9D) (2000 MeleeBaseAttackTime)
+UPDATE `creature_template` SET `DamageMultiplier`='1.7', `MeleeBaseAttackTime`='2000' WHERE `entry`='9718'; -- Ghok Bashguud (3.9D) (2000 MeleeBaseAttackTime)
 UPDATE `creature_template` SET `DamageMultiplier`='5', `MeleeBaseAttackTime`='2000' WHERE `entry`='9736'; -- Quartermaster Zigris (5D) (2000 MeleeBaseAttackTime)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 1200, `DamageMultiplier` = 1.35 WHERE `entry` = 10077; -- Deathmaw
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.7 WHERE `entry` = 10078; -- Terrorspark
 UPDATE `creature_template` SET `DamageMultiplier`='2.5' WHERE `entry`='10081'; -- Dustwraith (0.6D) (2000 MeleeBaseAttackTime)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 10197; -- Mezzir the Howler
+UPDATE `creature_template` SET `DamageMultiplier`='4', `MeleeBaseAttackTime`='2000' WHERE `entry`='10198'; -- Kashoch the Reaver (4.6D) (2000 MeleeBaseAttackTime) (416-552 at 60, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2800, `DamageMultiplier` = 1.68 WHERE `entry` = 10199; -- Grizzle Snowpaw
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 1500, `DamageMultiplier` = 1 WHERE `entry` = 10200; -- Rak'shiri
 UPDATE `creature_template` SET `DamageMultiplier`='8.5', `MeleeBaseAttackTime`='2000' WHERE `entry`='10201'; -- Lady Hederine (1D) (1141 MeleeBaseAttackTime) (838-1108 at 61, bestiary)
@@ -244,7 +257,8 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 10357; -- Ressan the Needler
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 10358; -- Fellicent's Shade
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 10359; -- Sri'skulk
-UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000' WHERE `entry`='10393'; -- Skul (9D) (1166 MeleeBaseAttackTime)
+UPDATE `creature_template` SET `DamageMultiplier`='5.20', `MeleeBaseAttackTime`='2000' WHERE `entry`='10393'; -- Skul (9D) (1166 MeleeBaseAttackTime) - variance
+UPDATE `creature_template` SET `DamageMultiplier`='5.4' WHERE `entry`='10558'; -- Hearthsinger Forresten (3.5D) (2000 MeleeBaseAttackTime) (392-519 at 57, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 10559; -- Lady Vespia
 UPDATE `creature_template` SET `DamageMultiplier`='6.66' WHERE `entry`='10584'; -- Urok Doomhowl (6.66D) (3200 MeleeBaseAttackTime)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 1200, `DamageMultiplier` = 1.26 WHERE `entry` = 10639; -- Rorgish Jowl
@@ -265,6 +279,7 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 10825; -- Gish the Unmoving
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 10826; -- Lord Darkscythe (122-162 at 57, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 10827; -- Deathspeaker Selendre
+UPDATE `creature_template` SET `DamageMultiplier`='5.25', `MeleeBaseAttackTime`='2000' WHERE `entry`='11383'; -- High Priestess Hai'watna (5.25D) (2000 MeleeBaseAttackTime) (380-502 at 57, bestiary) - variance (class)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 11580; -- Kelemis the Lifeless (not confirmed attacktimer)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 11688; -- Cursed Centaur
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 12037; -- Ursol'lok
@@ -334,7 +349,9 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2800, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 900, `DamageMultiplier` = 1.49 WHERE `entry` = 14490; -- Rippa (48-64 at 44, bestiary) (variane mob?)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.25 WHERE `entry` = 14491; -- Kurmokk
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 14492; -- Verifonix
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2400', `DamageMultiplier`='8' WHERE `entry`='14506'; -- Lord Hel'nurath (17D) (1133 MeleeBaseAttackTime) (964-1277 at 62, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1 WHERE `entry` = 14697; -- Lumbering Horror
+UPDATE `creature_template` SET `MeleeBaseAttackTime`='2000', `DamageMultiplier`='3.9' WHERE `entry`='16184'; -- Nerubian Overseer (4D) (2000 MeleeBaseAttackTime) (405-538 at 60, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.5 WHERE `entry` = 16379; -- Spirit of the Damned (159-210 at 61, bestiary)
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.5 WHERE `entry` = 16380; -- Bone Witch (159-210 at 61, bestiary)
 -- TBC+
@@ -364,4 +381,7 @@ UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` 
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.8 WHERE `entry` = 20932; -- Nuramoc
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.15 WHERE `entry` = 22060; -- Fenissa the Assassin
 UPDATE `creature_template` SET `MeleeBaseAttackTime` = 2000, `DamageMultiplier` = 1.2 WHERE `entry` = 22062; -- Dr. Whitherlimb
+UPDATE `creature_template` SET `DamageMultiplier`='17', `MeleeBaseAttackTime`='2000' WHERE `entry`='16179'; -- Hyakiss the Lurker (17D) (2000 MeleeBaseAttackTime) (4780-6758 at 73, bestiary) ~16.83
+UPDATE `creature_template` SET `DamageMultiplier`='17', `MeleeBaseAttackTime`='2000' WHERE `entry`='16180'; -- Shadikith the Glider (24D) (1400 MeleeBaseAttackTime) (4780-6758 at 73, bestiary)
+UPDATE `creature_template` SET `DamageMultiplier`='17', `MeleeBaseAttackTime`='1500' WHERE `entry`='16181'; -- Rokad the Ravager (34D) (750 MeleeBaseAttackTime) (3585-5068 at 73, bestiary)
 
