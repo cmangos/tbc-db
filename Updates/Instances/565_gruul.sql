@@ -45,14 +45,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+13, 0, 1, 0, 0, 0, NULL), -- Group 3
 (@CGUID+14, 0, 1, 0, 0, 0, NULL), -- Group 3
 (@CGUID+16, 0, 0, 0, 375, 0, NULL), -- Group 4
 (@CGUID+17, 0, 0, 0, 375, 0, NULL), -- Group 4
 (@CGUID+18, 0, 0, 0, 375, 0, NULL); -- Group 4
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (19389, 0, 0, 1, 0, 0, NULL), -- Lair Brute
 (21350, 0, 0, 1, 0, 0, NULL); -- Gronn-Priest
 
@@ -92,40 +92,43 @@ INSERT INTO creature_spawn_entry (guid, entry) VALUES
 (@CGUID+17, 19389), (@CGUID+17, 21350),
 (@CGUID+18, 19389), (@CGUID+18, 21350);
 
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
-(@CGUID+1, 18831, 565, 1, 143.049, 192.726, -11.2147, 3.40339, 604800, 604800, 0, 0, 0, 0), -- High King Maulgar
-(@CGUID+2, 18832, 565, 1, 149.823, 178.019, -10.5928, 3.10669, 7200, 7200, 0, 0, 0, 0), -- Krosh Firehand
-(@CGUID+3, 18834, 565, 1, 146.521, 185.358, -10.8378, 3.22886, 7200, 7200, 0, 0, 0, 0), -- Olm the Summoner
-(@CGUID+4, 18835, 565, 1, 145.96, 207.296, -8.6713, 3.57792, 7200, 7200, 0, 0, 0, 0), -- Kiggler the Crazed
-(@CGUID+5, 18836, 565, 1, 144.731, 199.921, -9.97698, 3.47321, 7200, 7200, 0, 0, 0, 0), -- Blindeye the Seer
-(@CGUID+6, 19044, 565, 1, 239.919, 359.057, -4.65222, 3.01282, 604800, 604800, 0, 0, 0, 0), -- Gruul the Dragonkiller
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
+(@CGUID+1, 18831, 565, 1, 143.049, 192.726, -11.2147, 3.40339, 604800, 604800, 0, 0), -- High King Maulgar
+(@CGUID+2, 18832, 565, 1, 149.823, 178.019, -10.5928, 3.10669, 7200, 7200, 0, 0), -- Krosh Firehand
+(@CGUID+3, 18834, 565, 1, 146.521, 185.358, -10.8378, 3.22886, 7200, 7200, 0, 0), -- Olm the Summoner
+(@CGUID+4, 18835, 565, 1, 145.96, 207.296, -8.6713, 3.57792, 7200, 7200, 0, 0), -- Kiggler the Crazed
+(@CGUID+5, 18836, 565, 1, 144.731, 199.921, -9.97698, 3.47321, 7200, 7200, 0, 0), -- Blindeye the Seer
+(@CGUID+6, 19044, 565, 1, 239.919, 359.057, -4.65222, 3.01282, 604800, 604800, 0, 0), -- Gruul the Dragonkiller
 -- Patrol 1
-(@CGUID+7, 0, 565, 1, 67.1291, 99.4851, -5.41845, 1.4318, 3600, 3600, 0, 0, 0, 2), -- see creature_spawn_entry
+(@CGUID+7, 0, 565, 1, 67.1291, 99.4851, -5.41845, 1.4318, 3600, 3600, 0, 2), -- creature_spawn_entry
 -- Group 1
-(@CGUID+8, 0, 565, 1, 65.635, 130.703, -6.20328, 6.14971, 3600, 3600, 0, 0, 0, 0), -- see creature_spawn_entry
-(@CGUID+9, 0, 565, 1, 76.6184, 129.076, -7.02181, 3.0576, 3600, 3600, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+8, 0, 565, 1, 65.635, 130.703, -6.20328, 6.14971, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+9, 0, 565, 1, 76.6184, 129.076, -7.02181, 3.0576, 3600, 3600, 0, 0), -- creature_spawn_entry
 -- Patrol 2
-(@CGUID+10, 0, 565, 1, 102.559, 288.509, 1.11309, 4.65193, 3600, 3600, 0, 0, 0, 2), -- see creature_spawn_entry
+(@CGUID+10, 0, 565, 1, 102.559, 288.509, 1.11309, 4.65193, 3600, 3600, 0, 2), -- creature_spawn_entry
 -- Group 2
-(@CGUID+11, 0, 565, 1, 95.9796, 283.051, 2.23278, 0.017294, 3600, 3600, 0, 0, 0, 0), -- see creature_spawn_entry
-(@CGUID+12, 0, 565, 1, 109.359, 281.634, 1.95785, 2.94604, 3600, 3600, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+11, 0, 565, 1, 95.9796, 283.051, 2.23278, 0.017294, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+12, 0, 565, 1, 109.359, 281.634, 1.95785, 2.94604, 3600, 3600, 0, 0), -- creature_spawn_entry
 -- Group 3
-(@CGUID+13, 0, 565, 1, 101.226, 326.936, 1.57027, 1.28414, 3600, 3600, 0, 0, 0, 0), -- see creature_spawn_entry
-(@CGUID+14, 0, 565, 1, 102.668, 335.433, 2.02522, 4.51134, 3600, 3600, 0, 0, 0, 0), -- see creature_spawn_entry
+(@CGUID+13, 0, 565, 1, 101.226, 326.936, 1.57027, 1.28414, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+14, 0, 565, 1, 102.668, 335.433, 2.02522, 4.51134, 3600, 3600, 0, 0), -- creature_spawn_entry
 -- Patrol 3
-(@CGUID+15, 0, 565, 1, 121.425, 353.774, 5.57, 3.99279, 3600, 3600, 0, 0, 0, 2), -- see creature_spawn_entry
+(@CGUID+15, 0, 565, 1, 121.425, 353.774, 5.57, 3.99279, 3600, 3600, 0, 2), -- creature_spawn_entry
 -- Group 4
-(@CGUID+16, 0, 565, 1, 177.683, 371.957, 0.435013, 3.14632, 3600, 3600, 0, 0, 0, 0), -- see creature_spawn_entry
-(@CGUID+17, 0, 565, 1, 175.194, 365.85, 0.046197, 2.95075, 3600, 3600, 0, 0, 0, 0), -- see creature_spawn_entry
-(@CGUID+18, 0, 565, 1, 177.139, 358.69, -1.00116, 2.79996, 3600, 3600, 0, 0, 0, 0); -- see creature_spawn_entry
+(@CGUID+16, 0, 565, 1, 177.683, 371.957, 0.435013, 3.14632, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+17, 0, 565, 1, 175.194, 365.85, 0.046197, 2.95075, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+18, 0, 565, 1, 177.139, 358.69, -1.00116, 2.79996, 3600, 3600, 0, 0); -- creature_spawn_entry
 
 -- ===========
 -- GAMEOBJECTS
 -- ===========
 
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 183817, 565, 1, 99.0729, 249.704, 18.3478, 3.14159, 0, 0, -1, 0, 180, 180, 100, 1), -- Doodad_Portcullis_Gronn01
-(@OGUID+2, 184662, 565, 1, 166.897, 368.226, 16.9209, 4.71239, 0, 0, -0.707107, 0.707107, 180, 180, 100, 0); -- Doodad_Portcullis_Gronn02
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES
+(@OGUID+1, 183817, 565, 1, 99.0729, 249.704, 18.3478, 3.14159, 0, 0, -1, 0, 180, 180), -- Doodad_Portcullis_Gronn01
+(@OGUID+2, 184662, 565, 1, 166.897, 368.226, 16.9209, 4.71239, 0, 0, -0.707107, 0.707107, 180, 180); -- Doodad_Portcullis_Gronn02
+
+INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
+(@OGUID+2, 100, 0); -- Doodad_Portcullis_Gronn02
 
 -- ======
 -- EVENTS
@@ -135,16 +138,16 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
--- =======
--- POOLING
--- =======
+-- ============
+-- SPAWN GROUPS
+-- ============
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
--- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
--- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+-- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+-- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+-- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+-- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+-- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+-- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 
 -- =========
 -- DBSCRIPTS

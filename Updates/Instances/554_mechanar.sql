@@ -133,7 +133,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+33, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller
 (@CGUID+34, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller
 (@CGUID+35, 0, 0, 1, 28, 0, NULL), -- Mechanar Driller
@@ -153,7 +153,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`,
 (@CGUID+56, 0, 0, 1, 28, 0, NULL), -- Mechanar Tinkerer
 (@CGUID+57, 0, 0, 1, 28, 0, NULL); -- Mechanar Tinkerer
 
--- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+-- REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+25, @CGUID+63, 1155), -- Bloodwarder Centurion -> Sunseeker Netherbinder
@@ -206,121 +206,131 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (20481, 554, 19221, 4113, 0); -- Raging Flames -> Nethermancer Sepethrea
 
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
-(@CGUID+1, 19166, 554, 3, 139.302, 79.2735, 9.5361, 3.14005, 7200, 7200, 0, 0, 0, 2), -- Tempest-Forge Patroller
-(@CGUID+2, 19166, 554, 3, 31.1167, 50.942, 0.15789, 4.61499, 7200, 7200, 0, 0, 0, 2), -- Tempest-Forge Patroller
-(@CGUID+3, 19166, 554, 3, 28.4327, -7.32528, 0.00000399165, 3.14865, 7200, 7200, 0, 0, 0, 2), -- Tempest-Forge Patroller
-(@CGUID+4, 19166, 554, 3, 28.5279, 10.7081, -0.000455872, 3.14944, 7200, 7200, 0, 0, 0, 2), -- Tempest-Forge Patroller
-(@CGUID+5, 19166, 554, 3, 30.7088, 3.51896, -0.000455872, 3.1141, 7200, 7200, 0, 0, 0, 0), -- Tempest-Forge Patroller
-(@CGUID+6, 19166, 554, 3, 32.216, -39.603, 0.00384379, 1.54309, 7200, 7200, 0, 0, 0, 2), -- Tempest-Forge Patroller
-(@CGUID+7, 19167, 554, 3, 119.302, 86.1098, 14.9333, 3.23967, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Slayer
-(@CGUID+8, 19167, 554, 3, 74.4081, 65.8713, 14.9247, 3.12422, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Slayer
-(@CGUID+9, 19167, 554, 3, 37.0378, 64.3177, 0.162094, 3.83588, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Slayer
-(@CGUID+10, 19167, 554, 3, 23.3317, -23.394, 0.00000567781, 3.05991, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Slayer
-(@CGUID+11, 19167, 554, 3, 119.726, -66.1184, 14.9247, 2.96427, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Slayer
-(@CGUID+12, 19167, 554, 3, 76.8159, -51.7629, 14.9247, 3.01657, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Slayer
-(@CGUID+13, 19167, 554, 3, 36.3608, -51.3871, 0.162347, 3.06699, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Slayer
-(@CGUID+14, 19168, 554, 3, 225.822, 46.382, -0.00603536, 3.27292, 7200, 7200, 0, 0, 0, 0), -- Sunseeker Astromage
-(@CGUID+15, 19168, 554, 3, 225.811, 59.3986, -0.0020728, 2.99409, 7200, 7200, 0, 0, 0, 0), -- Sunseeker Astromage
-(@CGUID+16, 19168, 554, 3, 272.683, -24.5176, 26.3284, 0.0714562, 10800, 10800, 0, 0, 0, 0), -- Sunseeker Astromage
-(@CGUID+17, 19168, 554, 3, 272.424, -20.9008, 26.3284, 0.0714562, 10800, 10800, 0, 0, 0, 0), -- Sunseeker Astromage
-(@CGUID+18, 19168, 554, 3, 308.545, 15.4713, 25.3862, 3.14629, 10800, 10800, 0, 0, 0, 0), -- Sunseeker Astromage
-(@CGUID+19, 19168, 554, 3, 308.593, 5.20942, 25.3862, 3.14629, 10800, 10800, 0, 0, 0, 0), -- Sunseeker Astromage
-(@CGUID+20, 19218, 554, 3, 89.4443, 24.2701, 14.9247, 0.79717, 7200, 7200, 0, 0, 0, 0), -- Gatewatcher Gyro-Kill
-(@CGUID+21, 19219, 554, 3, 210.416, 15.6408, -2.19211, 3.23112, 86400, 86400, 0, 0, 0, 2), -- Mechano-Lord Capacitus
-(@CGUID+22, 19221, 554, 3, 325.558, 12.5866, 27.8366, 3.05075, 86400, 86400, 0, 0, 0, 0), -- Nethermancer Sepethrea
-(@CGUID+23, 19231, 554, 3, 100.64, -72.6406, 14.9259, 6.20403, 7200, 7200, 0, 0, 0, 2), -- Mechanar Crusher
-(@CGUID+24, 19510, 554, 3, 167.576, 88.3262, 1.13275, 3.13612, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Centurion
-(@CGUID+25, 19510, 554, 3, 23.228, 18.9781, 0.00000711717, 3.11017, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Centurion
-(@CGUID+26, 19510, 554, 3, 166.135, -73.2655, 1.55645, 3.15276, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Centurion
-(@CGUID+27, 19510, 554, 3, 274.023, -17.8571, 26.3284, 6.26825, 10800, 10800, 0, 0, 0, 0), -- Bloodwarder Centurion
-(@CGUID+28, 19510, 554, 3, 273.889, -26.8161, 26.3284, 6.25254, 10800, 10800, 0, 0, 0, 0), -- Bloodwarder Centurion
-(@CGUID+29, 19510, 554, 3, 308.485, 20.3946, 25.3862, 3.12981, 10800, 10800, 0, 0, 0, 0), -- Bloodwarder Centurion
-(@CGUID+30, 19510, 554, 3, 308.485, 11.1399, 25.3862, 3.11175, 10800, 10800, 0, 0, 0, 0), -- Bloodwarder Centurion
-(@CGUID+31, 19710, 554, 3, 176.955, -77.0281, 0.005777, 1.00923, 7200, 7200, 0, 0, 0, 2), -- Gatewatcher Iron-Hand
-(@CGUID+32, 19712, 554, 3, 147.889, 45.0173, -0.00156292, 0.426625, 7200, 7200, 0, 0, 0, 2), -- Mechanar Driller
-(@CGUID+33, 19712, 554, 3, 220.283, -95.5726, 0.0000594996, 0.352802, 7200, 7200, 0, 0, 0, 0), -- Mechanar Driller
-(@CGUID+34, 19712, 554, 3, 216.394, -80.0561, 0.0000594996, 5.4736, 7200, 7200, 0, 0, 0, 0), -- Mechanar Driller
-(@CGUID+35, 19712, 554, 3, 228.547, -53.2302, 0.00192854, 0.154885, 7200, 7200, 0, 0, 0, 0), -- Mechanar Driller
-(@CGUID+36, 19712, 554, 3, 225.146, -61.0923, 0.0015216, 5.13588, 7200, 7200, 0, 0, 0, 0), -- Mechanar Driller
-(@CGUID+37, 19712, 554, 3, 109.813, -55.6875, 14.9233, 1.12643, 7200, 7200, 0, 0, 0, 0), -- Mechanar Driller
-(@CGUID+38, 19712, 554, 3, 108.077, -42.1086, 14.9233, 5.46576, 7200, 7200, 0, 0, 0, 0), -- Mechanar Driller
-(@CGUID+39, 19713, 554, 3, 110.535, 59.7892, 14.9232, 5.11599, 7200, 7200, 0, 0, 0, 0), -- Mechanar Wrecker
-(@CGUID+40, 19713, 554, 3, 110.807, 46.7967, 14.9232, 1.07904, 7200, 7200, 0, 0, 0, 0), -- Mechanar Wrecker
-(@CGUID+41, 19713, 554, 3, 166.968, -17.1549, -0.00102673, 5.45003, 7200, 7200, 0, 0, 0, 0), -- Mechanar Wrecker
-(@CGUID+42, 19713, 554, 3, 174.259, -18.3418, -0.00102673, 3.7575, 7200, 7200, 0, 0, 0, 0), -- Mechanar Wrecker
-(@CGUID+43, 19716, 554, 3, 141.167, -45.2077, -0.00164767, 4.43249, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+44, 19716, 554, 3, 135.119, -44.8897, -0.00164767, 4.44427, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+45, 19716, 554, 3, 139.378, 50.5137, -0.00137669, 1.23199, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+46, 19716, 554, 3, 152.785, 53.8737, -0.00282132, 3.05019, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+47, 19716, 554, 3, 186.807, 40.1627, -0.00623331, 0.127397, 7200, 7200, 0, 0, 0, 2), -- Mechanar Tinkerer
-(@CGUID+48, 19716, 554, 3, 196.496, 36.608, -0.00623331, 5.04792, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+49, 19716, 554, 3, 189.831, 35.4342, -0.00623331, 4.74946, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+50, 19716, 554, 3, 134.617, 44.1247, -0.00164767, 1.67967, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+51, 19716, 554, 3, 180.879, 35.1528, -0.00623331, 4.76203, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+52, 19716, 554, 3, 169.242, -12.2941, -0.00102673, 4.806, 7200, 7200, 3, 0, 0, 1), -- Mechanar Tinkerer
-(@CGUID+53, 19716, 554, 3, 173.388, -13.5083, -0.00102673, 3.74572, 7200, 7200, 3, 0, 0, 1), -- Mechanar Tinkerer
-(@CGUID+54, 19716, 554, 3, 209.166, -90.5678, 0.0000594996, 1.5309, 7200, 7200, 3, 0, 0, 1), -- Mechanar Tinkerer
-(@CGUID+55, 19716, 554, 3, 213.436, -100.189, 0.0000594996, 2.37913, 7200, 7200, 0, 0, 0, 2), -- Mechanar Tinkerer
-(@CGUID+56, 19716, 554, 3, 99.502, -78.7173, 14.9259, 3.83213, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+57, 19716, 554, 3, 92.8965, -79.4786, 14.9259, 5.52074, 7200, 7200, 0, 0, 0, 0), -- Mechanar Tinkerer
-(@CGUID+58, 19716, 554, 3, 106.545, 52.6026, 14.9234, 0.0881336, 7200, 7200, 3, 0, 0, 1), -- Mechanar Tinkerer
-(@CGUID+59, 19735, 554, 3, 205.481, 51.6294, -0.00493833, 3.11426, 7200, 7200, 0, 0, 0, 2), -- Tempest-Forge Destroyer
-(@CGUID+60, 19735, 554, 3, 290.6187, 29.12057, 25.4695, 1.692969, 7200, 7200, 0, 0, 0, 0), -- Tempest-Forge Destroyer
-(@CGUID+61, 19735, 554, 3, 297.3579, -14.26091, 25.38358, 1.81211, 7200, 7200, 4, 0, 0, 1), -- Tempest-Forge Destroyer
-(@CGUID+62, 20059, 554, 3, 169.156, 92.0407, 0.642169, 3.19502, 7200, 7200, 0, 0, 0, 0), -- Sunseeker Netherbinder
-(@CGUID+63, 20059, 554, 3, 23.3113, 21.6298, 0.00000711717, 3.11017, 7200, 7200, 0, 0, 0, 0), -- Sunseeker Netherbinder
-(@CGUID+64, 20059, 554, 3, 23.1913, -20.9207, 0.00000567781, 3.04813, 7200, 7200, 0, 0, 0, 0), -- Sunseeker Netherbinder
-(@CGUID+65, 20059, 554, 3, 169.469, -66.9563, 0.512734, 3.15276, 7200, 7200, 0, 0, 0, 0), -- Sunseeker Netherbinder
-(@CGUID+66, 20988, 554, 3, 133.053, -39.9267, -0.00164767, 6.15486, 7200, 7200, 3, 0, 0, 1), -- Sunseeker Engineer
-(@CGUID+67, 20988, 554, 3, 131.178, 40.8598, 0.007842, 1.00548, 7200, 7200, 3, 0, 0, 1), -- Sunseeker Engineer
-(@CGUID+68, 20988, 554, 3, 104.072, 66.8789, 14.924, 4.4052, 7200, 7200, 0, 0, 0, 2), -- Sunseeker Engineer
-(@CGUID+69, 20988, 554, 3, 138.596, -40.4336, -0.00164767, 3.13108, 7200, 7200, 3, 0, 0, 1), -- Sunseeker Engineer
-(@CGUID+70, 20988, 554, 3, 221.847, -55.5895, 0.00192854, 6.04145, 7200, 7200, 0, 0, 0, 2), -- Sunseeker Engineer
-(@CGUID+71, 20988, 554, 3, 100.143, -43.7053, 14.9233, 4.90812, 7200, 7200, 0, 0, 0, 2), -- Sunseeker Engineer
-(@CGUID+72, 20990, 554, 3, 167.539, 81.4523, 1.13569, 3.13612, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Physician
-(@CGUID+73, 20990, 554, 3, 119.65, 67.89, 14.9258, 2.96792, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Physician
-(@CGUID+74, 20990, 554, 3, 74.1962, 53.6792, 14.9247, 3.12422, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Physician
-(@CGUID+75, 20990, 554, 3, 37.3334, 55.4128, 0.162094, 1.91239, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Physician
-(@CGUID+76, 20990, 554, 3, 23.3909, 24.1625, 0.00000711717, 3.1141, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Physician
-(@CGUID+77, 20990, 554, 3, 23.4324, -18.349, 0.00000567781, 3.04813, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Physician
-(@CGUID+78, 20990, 554, 3, 169.136, -88.8967, 0.652591, 3.08443, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Physician
-(@CGUID+79, 20990, 554, 3, 119.629, -82.6008, 14.9287, 3.13313, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Physician
-(@CGUID+80, 20990, 554, 3, 76.7499, -60.4829, 14.9247, 2.96898, 7200, 7200, 0, 0, 0, 0), -- Bloodwarder Physician
-(@CGUID+81, 20990, 554, 3, 36.4878, -61.3542, 0.163072, 2.95925, 7200, 7200, 0, 0, 0, 0); -- Bloodwarder Physician
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
+(@CGUID+1, 19166, 554, 3, 139.302, 79.2735, 9.5361, 3.14005, 7200, 7200, 0, 2), -- Tempest-Forge Patroller
+(@CGUID+2, 19166, 554, 3, 31.1167, 50.942, 0.15789, 4.61499, 7200, 7200, 0, 2), -- Tempest-Forge Patroller
+(@CGUID+3, 19166, 554, 3, 28.4327, -7.32528, 0.00000399165, 3.14865, 7200, 7200, 0, 2), -- Tempest-Forge Patroller
+(@CGUID+4, 19166, 554, 3, 28.5279, 10.7081, -0.000455872, 3.14944, 7200, 7200, 0, 2), -- Tempest-Forge Patroller
+(@CGUID+5, 19166, 554, 3, 30.7088, 3.51896, -0.000455872, 3.1141, 7200, 7200, 0, 0), -- Tempest-Forge Patroller
+(@CGUID+6, 19166, 554, 3, 32.216, -39.603, 0.00384379, 1.54309, 7200, 7200, 0, 2), -- Tempest-Forge Patroller
+(@CGUID+7, 19167, 554, 3, 119.302, 86.1098, 14.9333, 3.23967, 7200, 7200, 0, 0), -- Bloodwarder Slayer
+(@CGUID+8, 19167, 554, 3, 74.4081, 65.8713, 14.9247, 3.12422, 7200, 7200, 0, 0), -- Bloodwarder Slayer
+(@CGUID+9, 19167, 554, 3, 37.0378, 64.3177, 0.162094, 3.83588, 7200, 7200, 0, 0), -- Bloodwarder Slayer
+(@CGUID+10, 19167, 554, 3, 23.3317, -23.394, 0.00000567781, 3.05991, 7200, 7200, 0, 0), -- Bloodwarder Slayer
+(@CGUID+11, 19167, 554, 3, 119.726, -66.1184, 14.9247, 2.96427, 7200, 7200, 0, 0), -- Bloodwarder Slayer
+(@CGUID+12, 19167, 554, 3, 76.8159, -51.7629, 14.9247, 3.01657, 7200, 7200, 0, 0), -- Bloodwarder Slayer
+(@CGUID+13, 19167, 554, 3, 36.3608, -51.3871, 0.162347, 3.06699, 7200, 7200, 0, 0), -- Bloodwarder Slayer
+(@CGUID+14, 19168, 554, 3, 225.822, 46.382, -0.00603536, 3.27292, 7200, 7200, 0, 0), -- Sunseeker Astromage
+(@CGUID+15, 19168, 554, 3, 225.811, 59.3986, -0.0020728, 2.99409, 7200, 7200, 0, 0), -- Sunseeker Astromage
+(@CGUID+16, 19168, 554, 3, 272.683, -24.5176, 26.3284, 0.0714562, 10800, 10800, 0, 0), -- Sunseeker Astromage
+(@CGUID+17, 19168, 554, 3, 272.424, -20.9008, 26.3284, 0.0714562, 10800, 10800, 0, 0), -- Sunseeker Astromage
+(@CGUID+18, 19168, 554, 3, 308.545, 15.4713, 25.3862, 3.14629, 10800, 10800, 0, 0), -- Sunseeker Astromage
+(@CGUID+19, 19168, 554, 3, 308.593, 5.20942, 25.3862, 3.14629, 10800, 10800, 0, 0), -- Sunseeker Astromage
+(@CGUID+20, 19218, 554, 3, 89.4443, 24.2701, 14.9247, 0.79717, 7200, 7200, 0, 0), -- Gatewatcher Gyro-Kill
+(@CGUID+21, 19219, 554, 3, 210.416, 15.6408, -2.19211, 3.23112, 86400, 86400, 0, 2), -- Mechano-Lord Capacitus
+(@CGUID+22, 19221, 554, 3, 325.558, 12.5866, 27.8366, 3.05075, 86400, 86400, 0, 0), -- Nethermancer Sepethrea
+(@CGUID+23, 19231, 554, 3, 100.64, -72.6406, 14.9259, 6.20403, 7200, 7200, 0, 2), -- Mechanar Crusher
+(@CGUID+24, 19510, 554, 3, 167.576, 88.3262, 1.13275, 3.13612, 7200, 7200, 0, 0), -- Bloodwarder Centurion
+(@CGUID+25, 19510, 554, 3, 23.228, 18.9781, 0.00000711717, 3.11017, 7200, 7200, 0, 0), -- Bloodwarder Centurion
+(@CGUID+26, 19510, 554, 3, 166.135, -73.2655, 1.55645, 3.15276, 7200, 7200, 0, 0), -- Bloodwarder Centurion
+(@CGUID+27, 19510, 554, 3, 274.023, -17.8571, 26.3284, 6.26825, 10800, 10800, 0, 0), -- Bloodwarder Centurion
+(@CGUID+28, 19510, 554, 3, 273.889, -26.8161, 26.3284, 6.25254, 10800, 10800, 0, 0), -- Bloodwarder Centurion
+(@CGUID+29, 19510, 554, 3, 308.485, 20.3946, 25.3862, 3.12981, 10800, 10800, 0, 0), -- Bloodwarder Centurion
+(@CGUID+30, 19510, 554, 3, 308.485, 11.1399, 25.3862, 3.11175, 10800, 10800, 0, 0), -- Bloodwarder Centurion
+(@CGUID+31, 19710, 554, 3, 176.955, -77.0281, 0.005777, 1.00923, 7200, 7200, 0, 2), -- Gatewatcher Iron-Hand
+(@CGUID+32, 19712, 554, 3, 147.889, 45.0173, -0.00156292, 0.426625, 7200, 7200, 0, 2), -- Mechanar Driller
+(@CGUID+33, 19712, 554, 3, 220.283, -95.5726, 0.0000594996, 0.352802, 7200, 7200, 0, 0), -- Mechanar Driller
+(@CGUID+34, 19712, 554, 3, 216.394, -80.0561, 0.0000594996, 5.4736, 7200, 7200, 0, 0), -- Mechanar Driller
+(@CGUID+35, 19712, 554, 3, 228.547, -53.2302, 0.00192854, 0.154885, 7200, 7200, 0, 0), -- Mechanar Driller
+(@CGUID+36, 19712, 554, 3, 225.146, -61.0923, 0.0015216, 5.13588, 7200, 7200, 0, 0), -- Mechanar Driller
+(@CGUID+37, 19712, 554, 3, 109.813, -55.6875, 14.9233, 1.12643, 7200, 7200, 0, 0), -- Mechanar Driller
+(@CGUID+38, 19712, 554, 3, 108.077, -42.1086, 14.9233, 5.46576, 7200, 7200, 0, 0), -- Mechanar Driller
+(@CGUID+39, 19713, 554, 3, 110.535, 59.7892, 14.9232, 5.11599, 7200, 7200, 0, 0), -- Mechanar Wrecker
+(@CGUID+40, 19713, 554, 3, 110.807, 46.7967, 14.9232, 1.07904, 7200, 7200, 0, 0), -- Mechanar Wrecker
+(@CGUID+41, 19713, 554, 3, 166.968, -17.1549, -0.00102673, 5.45003, 7200, 7200, 0, 0), -- Mechanar Wrecker
+(@CGUID+42, 19713, 554, 3, 174.259, -18.3418, -0.00102673, 3.7575, 7200, 7200, 0, 0), -- Mechanar Wrecker
+(@CGUID+43, 19716, 554, 3, 141.167, -45.2077, -0.00164767, 4.43249, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+44, 19716, 554, 3, 135.119, -44.8897, -0.00164767, 4.44427, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+45, 19716, 554, 3, 139.378, 50.5137, -0.00137669, 1.23199, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+46, 19716, 554, 3, 152.785, 53.8737, -0.00282132, 3.05019, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+47, 19716, 554, 3, 186.807, 40.1627, -0.00623331, 0.127397, 7200, 7200, 0, 2), -- Mechanar Tinkerer
+(@CGUID+48, 19716, 554, 3, 196.496, 36.608, -0.00623331, 5.04792, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+49, 19716, 554, 3, 189.831, 35.4342, -0.00623331, 4.74946, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+50, 19716, 554, 3, 134.617, 44.1247, -0.00164767, 1.67967, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+51, 19716, 554, 3, 180.879, 35.1528, -0.00623331, 4.76203, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+52, 19716, 554, 3, 169.242, -12.2941, -0.00102673, 4.806, 7200, 7200, 3, 1), -- Mechanar Tinkerer
+(@CGUID+53, 19716, 554, 3, 173.388, -13.5083, -0.00102673, 3.74572, 7200, 7200, 3, 1), -- Mechanar Tinkerer
+(@CGUID+54, 19716, 554, 3, 209.166, -90.5678, 0.0000594996, 1.5309, 7200, 7200, 3, 1), -- Mechanar Tinkerer
+(@CGUID+55, 19716, 554, 3, 213.436, -100.189, 0.0000594996, 2.37913, 7200, 7200, 0, 2), -- Mechanar Tinkerer
+(@CGUID+56, 19716, 554, 3, 99.502, -78.7173, 14.9259, 3.83213, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+57, 19716, 554, 3, 92.8965, -79.4786, 14.9259, 5.52074, 7200, 7200, 0, 0), -- Mechanar Tinkerer
+(@CGUID+58, 19716, 554, 3, 106.545, 52.6026, 14.9234, 0.0881336, 7200, 7200, 3, 1), -- Mechanar Tinkerer
+(@CGUID+59, 19735, 554, 3, 205.481, 51.6294, -0.00493833, 3.11426, 7200, 7200, 0, 2), -- Tempest-Forge Destroyer
+(@CGUID+60, 19735, 554, 3, 290.6187, 29.12057, 25.4695, 1.692969, 7200, 7200, 0, 0), -- Tempest-Forge Destroyer
+(@CGUID+61, 19735, 554, 3, 297.3579, -14.26091, 25.38358, 1.81211, 7200, 7200, 4, 1), -- Tempest-Forge Destroyer
+(@CGUID+62, 20059, 554, 3, 169.156, 92.0407, 0.642169, 3.19502, 7200, 7200, 0, 0), -- Sunseeker Netherbinder
+(@CGUID+63, 20059, 554, 3, 23.3113, 21.6298, 0.00000711717, 3.11017, 7200, 7200, 0, 0), -- Sunseeker Netherbinder
+(@CGUID+64, 20059, 554, 3, 23.1913, -20.9207, 0.00000567781, 3.04813, 7200, 7200, 0, 0), -- Sunseeker Netherbinder
+(@CGUID+65, 20059, 554, 3, 169.469, -66.9563, 0.512734, 3.15276, 7200, 7200, 0, 0), -- Sunseeker Netherbinder
+(@CGUID+66, 20988, 554, 3, 133.053, -39.9267, -0.00164767, 6.15486, 7200, 7200, 3, 1), -- Sunseeker Engineer
+(@CGUID+67, 20988, 554, 3, 131.178, 40.8598, 0.007842, 1.00548, 7200, 7200, 3, 1), -- Sunseeker Engineer
+(@CGUID+68, 20988, 554, 3, 104.072, 66.8789, 14.924, 4.4052, 7200, 7200, 0, 2), -- Sunseeker Engineer
+(@CGUID+69, 20988, 554, 3, 138.596, -40.4336, -0.00164767, 3.13108, 7200, 7200, 3, 1), -- Sunseeker Engineer
+(@CGUID+70, 20988, 554, 3, 221.847, -55.5895, 0.00192854, 6.04145, 7200, 7200, 0, 2), -- Sunseeker Engineer
+(@CGUID+71, 20988, 554, 3, 100.143, -43.7053, 14.9233, 4.90812, 7200, 7200, 0, 2), -- Sunseeker Engineer
+(@CGUID+72, 20990, 554, 3, 167.539, 81.4523, 1.13569, 3.13612, 7200, 7200, 0, 0), -- Bloodwarder Physician
+(@CGUID+73, 20990, 554, 3, 119.65, 67.89, 14.9258, 2.96792, 7200, 7200, 0, 0), -- Bloodwarder Physician
+(@CGUID+74, 20990, 554, 3, 74.1962, 53.6792, 14.9247, 3.12422, 7200, 7200, 0, 0), -- Bloodwarder Physician
+(@CGUID+75, 20990, 554, 3, 37.3334, 55.4128, 0.162094, 1.91239, 7200, 7200, 0, 0), -- Bloodwarder Physician
+(@CGUID+76, 20990, 554, 3, 23.3909, 24.1625, 0.00000711717, 3.1141, 7200, 7200, 0, 0), -- Bloodwarder Physician
+(@CGUID+77, 20990, 554, 3, 23.4324, -18.349, 0.00000567781, 3.04813, 7200, 7200, 0, 0), -- Bloodwarder Physician
+(@CGUID+78, 20990, 554, 3, 169.136, -88.8967, 0.652591, 3.08443, 7200, 7200, 0, 0), -- Bloodwarder Physician
+(@CGUID+79, 20990, 554, 3, 119.629, -82.6008, 14.9287, 3.13313, 7200, 7200, 0, 0), -- Bloodwarder Physician
+(@CGUID+80, 20990, 554, 3, 76.7499, -60.4829, 14.9247, 2.96898, 7200, 7200, 0, 0), -- Bloodwarder Physician
+(@CGUID+81, 20990, 554, 3, 36.4878, -61.3542, 0.163072, 2.95925, 7200, 7200, 0, 0); -- Bloodwarder Physician
 
 -- ===========
 -- GAMEOBJECTS
 -- ===========
 
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 183788, 554, 3, 0.543812, -1.39348, 0.21172, 3.14729, 0, 0, 0, 0, 25, 25, 0, 1), -- Doodad_FactoryElevator01
-(@OGUID+2, 184225, 554, 3, 73.9475, 149.684, 27.7701, 3.14159, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
-(@OGUID+3, 184226, 554, 3, 73.9475, 149.684, 27.7701, 3.14159, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
-(@OGUID+4, 184227, 554, 3, -38.0125, 0.10273, 0.504373, 3.14159, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
-(@OGUID+5, 184228, 554, 3, -38.0125, 0.10273, 0.504373, 3.14159, 0, 0, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
-(@OGUID+6, 184322, 554, 3, 242.874, 52.3148, 1.59633, 3.14159, 0, 0, -1, 0, 43200, 43200, 0, 1), -- Mo'arg 2 Door
-(@OGUID+7, 184449, 554, 3, 267.928, 52.3148, 27.0425, 3.14159, 0, 0, -1, 0, 7200, 7200, 255, 0), -- Nethermancer Encounter Door
-(@OGUID+8, 184465, 554, 1, 225.442, 83.4075, 0.002621, 4.74591, 0, 0, 0, 0, 10800, 10800, 100, 1), -- Cache of the Legion
-(@OGUID+9, 184632, 554, 3, 236.46, 52.3636, 1.65354, 3.14159, 0, 0, -1, 0, 43200, 43200, 0, 1), -- Mo'arg 1 Door
-(@OGUID+10, 184849, 554, 2, 225.442, 83.4075, 0.002621, 4.74591, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Cache of the Legion
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES
+(@OGUID+1, 183788, 554, 3, 0.543812, -1.39348, 0.21172, 3.14729, 0, 0, 0, 0, 25, 25), -- Doodad_FactoryElevator01
+(@OGUID+2, 184225, 554, 3, 73.9475, 149.684, 27.7701, 3.14159, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
+(@OGUID+3, 184226, 554, 3, 73.9475, 149.684, 27.7701, 3.14159, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_1
+(@OGUID+4, 184227, 554, 3, -38.0125, 0.10273, 0.504373, 3.14159, 0, 0, 0, 0, 0, 0), -- Instance_Portal_Difficulty_0
+(@OGUID+5, 184228, 554, 3, -38.0125, 0.10273, 0.504373, 3.14159, 0, 0, 0, 0, 0,  0), -- Instance_Portal_Difficulty_1
+(@OGUID+6, 184322, 554, 3, 242.874, 52.3148, 1.59633, 3.14159, 0, 0, -1, 0, 43200, 43200), -- Mo'arg 2 Door
+(@OGUID+7, 184449, 554, 3, 267.928, 52.3148, 27.0425, 3.14159, 0, 0, -1, 0, 7200, 7200), -- Nethermancer Encounter Door
+(@OGUID+8, 184465, 554, 1, 225.442, 83.4075, 0.002621, 4.74591, 0, 0, 0, 0, 10800, 10800), -- Cache of the Legion
+(@OGUID+9, 184632, 554, 3, 236.46, 52.3636, 1.65354, 3.14159, 0, 0, -1, 0, 43200, 43200), -- Mo'arg 1 Door
+(@OGUID+10, 184849, 554, 2, 225.442, 83.4075, 0.002621, 4.74591, 0, 0, 0, 0, 86400, 86400), -- Cache of the Legion
 -- RE-USE 11 - 13
-(@OGUID+14, 185015, 554, 3, 144.904, -44.3406, 1.01041, 0.543127, 0, 0, 0, 0, 120, 120, 100, 1), -- Overcharged Manacell
-(@OGUID+15, 185015, 554, 3, 146.76, -36.2917, 1.01041, 5.99065, 0, 0, 0, 0, 120, 120, 100, 1), -- Overcharged Manacell
-(@OGUID+16, 185015, 554, 3, 158.931, -26.9887, 1.00972, 4.98325, 0, 0, 0, 0, 120, 120, 100, 1), -- Overcharged Manacell
-(@OGUID+17, 185015, 554, 3, 151.858, -29.8824, 1.01041, 5.41365, 0, 0, 0, 0, 120, 120, 100, 1), -- Overcharged Manacell
-(@OGUID+18, 184936, 554, 3, 221.32, -90.15, 0.00, 3.73, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+19, 184937, 554, 3, 221.32, -90.15, 0.00, 3.73, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+20, 184936, 554, 3, 131.80, -44.97, -0.00, 0.81, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+21, 184937, 554, 3, 131.80, -44.97, -0.00, 0.81, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+22, 184936, 554, 3, 129.97, 45.00, 0.00, 5.51, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+23, 184937, 554, 3, 129.97, 45.00, 0.00, 5.51, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+24, 184940, 554, 3, 243.344, 14.1168, -0.0019269, 0.50436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+25, 184941, 554, 3, 243.344, 14.1168, -0.0019269, 0.50436, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+26, 184936, 554, 3, 299.06, -46.0161, 25.3949, 6.1043, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Bound Adamantite Chest
-(@OGUID+27, 184937, 554, 3, 299.06, -46.0161, 25.3949, 6.1043, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+28, 184936, 554, 3, 143.472, 179.921, 25.5636, 1.36442, 0, 0, 0, 0, 86400, 86400, 100, 1), -- Solid Adamantite Chest
-(@OGUID+29, 184937, 554, 3, 143.472, 179.921, 25.5636, 1.36442, 0, 0, 0, 0, 86400, 86400, 100, 1); -- Solid Adamantite Chest
+(@OGUID+14, 185015, 554, 3, 144.904, -44.3406, 1.01041, 0.543127, 0, 0, 0, 0, 120, 120), -- Overcharged Manacell
+(@OGUID+15, 185015, 554, 3, 146.76, -36.2917, 1.01041, 5.99065, 0, 0, 0, 0, 120, 120), -- Overcharged Manacell
+(@OGUID+16, 185015, 554, 3, 158.931, -26.9887, 1.00972, 4.98325, 0, 0, 0, 0, 120, 120), -- Overcharged Manacell
+(@OGUID+17, 185015, 554, 3, 151.858, -29.8824, 1.01041, 5.41365, 0, 0, 0, 0, 120, 120), -- Overcharged Manacell
+(@OGUID+18, 184936, 554, 3, 221.32, -90.15, 0.00, 3.73, 0, 0, 0, 0, 86400, 86400), -- Bound Adamantite Chest
+(@OGUID+19, 184937, 554, 3, 221.32, -90.15, 0.00, 3.73, 0, 0, 0, 0, 86400, 86400), -- Solid Adamantite Chest
+(@OGUID+20, 184936, 554, 3, 131.80, -44.97, -0.00, 0.81, 0, 0, 0, 0, 86400, 86400), -- Bound Adamantite Chest
+(@OGUID+21, 184937, 554, 3, 131.80, -44.97, -0.00, 0.81, 0, 0, 0, 0, 86400, 86400), -- Solid Adamantite Chest
+(@OGUID+22, 184936, 554, 3, 129.97, 45.00, 0.00, 5.51, 0, 0, 0, 0, 86400, 86400), -- Bound Adamantite Chest
+(@OGUID+23, 184937, 554, 3, 129.97, 45.00, 0.00, 5.51, 0, 0, 0, 0, 86400, 86400), -- Solid Adamantite Chest
+(@OGUID+24, 184940, 554, 3, 243.344, 14.1168, -0.0019269, 0.50436, 0, 0, 0, 0, 86400, 86400), -- Bound Adamantite Chest
+(@OGUID+25, 184941, 554, 3, 243.344, 14.1168, -0.0019269, 0.50436, 0, 0, 0, 0, 86400, 86400), -- Solid Adamantite Chest
+(@OGUID+26, 184936, 554, 3, 299.06, -46.0161, 25.3949, 6.1043, 0, 0, 0, 0, 86400, 86400), -- Bound Adamantite Chest
+(@OGUID+27, 184937, 554, 3, 299.06, -46.0161, 25.3949, 6.1043, 0, 0, 0, 0, 86400, 86400), -- Solid Adamantite Chest
+(@OGUID+28, 184936, 554, 3, 143.472, 179.921, 25.5636, 1.36442, 0, 0, 0, 0, 86400, 86400), -- Solid Adamantite Chest
+(@OGUID+29, 184937, 554, 3, 143.472, 179.921, 25.5636, 1.36442, 0, 0, 0, 0, 86400, 86400); -- Solid Adamantite Chest
+
+INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
+(@OGUID+1, 0, -1), -- Doodad_FactoryElevator01
+(@OGUID+2, 0, 0), -- Instance_Portal_Difficulty_0
+(@OGUID+3, 0, 0), -- Instance_Portal_Difficulty_1
+(@OGUID+4, 0, 0), -- Instance_Portal_Difficulty_0
+(@OGUID+5, 0, 0), -- Instance_Portal_Difficulty_1
+(@OGUID+6, 0, -1), -- Mo'arg 2 Door
+(@OGUID+7, 100, 0), -- Nethermancer Encounter Door
+(@OGUID+9, 0, -1); -- Mo'arg 1 Door
 
 -- ======
 -- EVENTS
@@ -332,6 +342,17 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 (@CGUID+22, 0, 22804, 0, 0, 0, 2); -- Nethermancer Sepethrea (Feast of Winter Veil - Main Event)
 
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
+
+-- ============
+-- SPAWN GROUPS
+-- ============
+
+-- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+-- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+-- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+-- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+-- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+-- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 
 -- =======
 -- POOLING

@@ -123,10 +123,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 
 -- INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 
-INSERT INTO `creature_addon` (`guid`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+40, 0, 0, 1, 0, 0, NULL); -- World Trigger (Not Immune PC)
 
-REPLACE INTO `creature_template_addon` (`entry`, `mount`, `bytes1`, `b2_0_sheath`, `emote`, `moveflags`, `auras`) VALUES
+REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (17256, 0, 0, 1, 0, 0, NULL), -- Hellfire Channeler
 (17257, 0, 0, 1, 0, 0, '30205'), -- Magtheridon
 (17376, 0, 0, 1, 0, 0, NULL), -- Hellfire Raid Trigger
@@ -148,66 +148,69 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 (17256, 544, 17256, 15, 0), -- Hellfire Channeler -> Hellfire Channeler
 (18829, 544, 18829, 15, 40); -- Hellfire Warder -> Hellfire Warder
 
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
-(@CGUID+1, 15384, 544, 1, -2.59192, 83.3255, 22.6908, 4.57276, 7200, 7200, 0, 0, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
-(@CGUID+2, 15384, 544, 1, 3.16924, -63.2071, 22.8882, 2.14675, 7200, 7200, 0, 0, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
-(@CGUID+3, 17256, 544, 1, -55.6891, 2.17024, 0.71428, 0.05236, 604800, 604800, 0, 0, 0, 0), -- Hellfire Channeler
-(@CGUID+4, 17256, 544, 1, -31.9479, 40.2201, 0.714251, 4.93928, 604800, 604800, 0, 0, 0, 0), -- Hellfire Channeler
-(@CGUID+5, 17256, 544, 1, 10.4777, 23.9914, 0.714224, 3.66519, 604800, 604800, 0, 0, 0, 0), -- Hellfire Channeler
-(@CGUID+6, 17256, 544, 1, 10.3369, -19.7942, 0.714241, 2.53073, 604800, 604800, 0, 0, 0, 0), -- Hellfire Channeler
-(@CGUID+7, 17256, 544, 1, -31.7645, -35.8374, 0.714268, 1.37881, 604800, 604800, 0, 0, 0, 0), -- Hellfire Channeler
-(@CGUID+8, 17257, 544, 1, -18.7012, 2.24051, -0.320873, 3.00197, 604800, 604800, 0, 0, 0, 0), -- Magtheridon
-(@CGUID+9, 17376, 544, 1, 8.79722, -19.4801, 2.43646, 3.07178, 7200, 7200, 0, 0, 0, 0), -- Hellfire Raid Trigger
-(@CGUID+10, 17376, 544, 1, -31.471, -34.156, 2.2351, 1.06465, 7200, 7200, 0, 0, 0, 0), -- Hellfire Raid Trigger
-(@CGUID+11, 17376, 544, 1, -54.2772, 2.34374, 2.30456, 1.3439, 7200, 7200, 0, 0, 0, 0), -- Hellfire Raid Trigger
-(@CGUID+12, 17376, 544, 1, -31.8918, 38.4303, 2.18647, 5.07891, 7200, 7200, 0, 0, 0, 0), -- Hellfire Raid Trigger
-(@CGUID+13, 17376, 544, 1, 9.3589, 23.2286, 2.24895, 3.89208, 7200, 7200, 0, 0, 0, 0), -- Hellfire Raid Trigger
-(@CGUID+14, 17474, 544, 1, 13.1331, 2.75793, -0.312492, 0.264242, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+15, 17474, 544, 1, -12.1116, 1.01105, -0.303638, 6.08346, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+16, 17474, 544, 1, -11.3749, -29.1214, -0.312463, 4.99445, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+17, 17474, 544, 1, -7.10759, 25.524, -0.312497, 5.1917, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+18, 17474, 544, 1, -3.11093, 29.1424, -0.31249, 5.67216, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+19, 17474, 544, 1, -37.1834, -19.4914, -0.312451, 5.05616, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+20, 17474, 544, 1, -29.691, 29.643, -0.034676, 0.478655, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+21, 17474, 544, 1, 13.1331, 2.75793, -0.312492, 0.264242, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+22, 17474, 544, 1, -12.1116, 1.01105, -0.303638, 6.08346, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+23, 17474, 544, 1, -11.3749, -29.1214, -0.312463, 4.99445, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+24, 17474, 544, 1, -7.10759, 25.524, -0.312497, 5.1917, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+25, 17474, 544, 1, -3.11093, 29.1424, -0.31249, 5.67216, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+26, 17474, 544, 1, -37.1834, -19.4914, -0.312451, 5.05616, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+27, 17474, 544, 1, -29.691, 29.643, -0.034676, 0.478655, 300, 300, 0, 0, 0, 0), -- Target Trigger
-(@CGUID+28, 18829, 544, 1, 2.00162, -64.4008, 22.8575, 0.645772, 7200, 7200, 0, 0, 0, 2), -- Hellfire Warder
-(@CGUID+29, 18829, 544, 1, 2.69777, -60.936, 22.8984, 4.95674, 7200, 7200, 0, 0, 0, 2), -- Hellfire Warder
-(@CGUID+30, 18829, 544, 1, 5.55054, -64.0838, 22.9179, 2.86234, 7200, 7200, 0, 0, 0, 2), -- Hellfire Warder
-(@CGUID+31, 18829, 544, 1, 34.5866, -3.04499, 45.1226, 0.069813, 7200, 7200, 0, 0, 0, 0), -- Hellfire Warder
-(@CGUID+32, 18829, 544, 1, 36.4493, 2.02954, 45.1387, 0.034907, 7200, 7200, 0, 0, 0, 0), -- Hellfire Warder
-(@CGUID+33, 18829, 544, 1, 34.3106, 6.95704, 45.1233, 0.017453, 7200, 7200, 0, 0, 0, 0), -- Hellfire Warder
-(@CGUID+34, 18829, 544, 1, -53.9371, 58.8454, 3.1001, 0.356661, 7200, 7200, 0, 0, 0, 2), -- Hellfire Warder
-(@CGUID+35, 18829, 544, 1, -54.8378, 60.2842, 3.07587, 0.173576, 7200, 7200, 0, 0, 0, 2), -- Hellfire Warder
-(@CGUID+36, 18829, 544, 1, -53.5156, 57.127, 3.03991, 0.321231, 7200, 7200, 0, 0, 0, 2), -- Hellfire Warder
-(@CGUID+37, 18829, 544, 1, -0.181343, 67.1853, 22.8294, 1.5708, 7200, 7200, 0, 0, 0, 2), -- Hellfire Warder
-(@CGUID+38, 18829, 544, 1, 6.12531, 69.0678, 22.9075, 2.07694, 7200, 7200, 0, 0, 0, 2), -- Hellfire Warder
-(@CGUID+39, 18829, 544, 1, -8.90767, 68.377, 22.6632, 1.16937, 7200, 7200, 0, 0, 0, 2), -- Hellfire Warder
-(@CGUID+40, 21252, 544, 1, -16.683, 2.34519, -0.320923, 1.29154, 7200, 7200, 0, 0, 0, 0); -- World Trigger (Not Immune PC)
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
+(@CGUID+1, 15384, 544, 1, -2.59192, 83.3255, 22.6908, 4.57276, 7200, 7200, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
+(@CGUID+2, 15384, 544, 1, 3.16924, -63.2071, 22.8882, 2.14675, 7200, 7200, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
+(@CGUID+3, 17256, 544, 1, -55.6891, 2.17024, 0.71428, 0.05236, 604800, 604800, 0, 0), -- Hellfire Channeler
+(@CGUID+4, 17256, 544, 1, -31.9479, 40.2201, 0.714251, 4.93928, 604800, 604800, 0, 0), -- Hellfire Channeler
+(@CGUID+5, 17256, 544, 1, 10.4777, 23.9914, 0.714224, 3.66519, 604800, 604800, 0, 0), -- Hellfire Channeler
+(@CGUID+6, 17256, 544, 1, 10.3369, -19.7942, 0.714241, 2.53073, 604800, 604800, 0, 0), -- Hellfire Channeler
+(@CGUID+7, 17256, 544, 1, -31.7645, -35.8374, 0.714268, 1.37881, 604800, 604800, 0, 0), -- Hellfire Channeler
+(@CGUID+8, 17257, 544, 1, -18.7012, 2.24051, -0.320873, 3.00197, 604800, 604800, 0, 0), -- Magtheridon
+(@CGUID+9, 17376, 544, 1, 8.79722, -19.4801, 2.43646, 3.07178, 7200, 7200, 0, 0), -- Hellfire Raid Trigger
+(@CGUID+10, 17376, 544, 1, -31.471, -34.156, 2.2351, 1.06465, 7200, 7200, 0, 0), -- Hellfire Raid Trigger
+(@CGUID+11, 17376, 544, 1, -54.2772, 2.34374, 2.30456, 1.3439, 7200, 7200, 0, 0), -- Hellfire Raid Trigger
+(@CGUID+12, 17376, 544, 1, -31.8918, 38.4303, 2.18647, 5.07891, 7200, 7200, 0, 0), -- Hellfire Raid Trigger
+(@CGUID+13, 17376, 544, 1, 9.3589, 23.2286, 2.24895, 3.89208, 7200, 7200, 0, 0), -- Hellfire Raid Trigger
+(@CGUID+14, 17474, 544, 1, 13.1331, 2.75793, -0.312492, 0.264242, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+15, 17474, 544, 1, -12.1116, 1.01105, -0.303638, 6.08346, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+16, 17474, 544, 1, -11.3749, -29.1214, -0.312463, 4.99445, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+17, 17474, 544, 1, -7.10759, 25.524, -0.312497, 5.1917, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+18, 17474, 544, 1, -3.11093, 29.1424, -0.31249, 5.67216, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+19, 17474, 544, 1, -37.1834, -19.4914, -0.312451, 5.05616, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+20, 17474, 544, 1, -29.691, 29.643, -0.034676, 0.478655, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+21, 17474, 544, 1, 13.1331, 2.75793, -0.312492, 0.264242, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+22, 17474, 544, 1, -12.1116, 1.01105, -0.303638, 6.08346, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+23, 17474, 544, 1, -11.3749, -29.1214, -0.312463, 4.99445, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+24, 17474, 544, 1, -7.10759, 25.524, -0.312497, 5.1917, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+25, 17474, 544, 1, -3.11093, 29.1424, -0.31249, 5.67216, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+26, 17474, 544, 1, -37.1834, -19.4914, -0.312451, 5.05616, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+27, 17474, 544, 1, -29.691, 29.643, -0.034676, 0.478655, 300, 300, 0, 0), -- Target Trigger
+(@CGUID+28, 18829, 544, 1, 2.00162, -64.4008, 22.8575, 0.645772, 7200, 7200, 0, 2), -- Hellfire Warder
+(@CGUID+29, 18829, 544, 1, 2.69777, -60.936, 22.8984, 4.95674, 7200, 7200, 0, 2), -- Hellfire Warder
+(@CGUID+30, 18829, 544, 1, 5.55054, -64.0838, 22.9179, 2.86234, 7200, 7200, 0, 2), -- Hellfire Warder
+(@CGUID+31, 18829, 544, 1, 34.5866, -3.04499, 45.1226, 0.069813, 7200, 7200, 0, 0), -- Hellfire Warder
+(@CGUID+32, 18829, 544, 1, 36.4493, 2.02954, 45.1387, 0.034907, 7200, 7200, 0, 0), -- Hellfire Warder
+(@CGUID+33, 18829, 544, 1, 34.3106, 6.95704, 45.1233, 0.017453, 7200, 7200, 0, 0), -- Hellfire Warder
+(@CGUID+34, 18829, 544, 1, -53.9371, 58.8454, 3.1001, 0.356661, 7200, 7200, 0, 2), -- Hellfire Warder
+(@CGUID+35, 18829, 544, 1, -54.8378, 60.2842, 3.07587, 0.173576, 7200, 7200, 0, 2), -- Hellfire Warder
+(@CGUID+36, 18829, 544, 1, -53.5156, 57.127, 3.03991, 0.321231, 7200, 7200, 0, 2), -- Hellfire Warder
+(@CGUID+37, 18829, 544, 1, -0.181343, 67.1853, 22.8294, 1.5708, 7200, 7200, 0, 2), -- Hellfire Warder
+(@CGUID+38, 18829, 544, 1, 6.12531, 69.0678, 22.9075, 2.07694, 7200, 7200, 0, 2), -- Hellfire Warder
+(@CGUID+39, 18829, 544, 1, -8.90767, 68.377, 22.6632, 1.16937, 7200, 7200, 0, 2), -- Hellfire Warder
+(@CGUID+40, 21252, 544, 1, -16.683, 2.34519, -0.320923, 1.29154, 7200, 7200, 0, 0); -- World Trigger (Not Immune PC)
 
 -- ===========
 -- GAMEOBJECTS
 -- ===========
 
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`, `animprogress`, `state`) VALUES
-(@OGUID+1, 181713, 544, 1, 8.89169, -19.392, 0.630908, 2.44346, 0, 0, 0, 0, 900, 900, 100, 1), -- Manticron Cube
-(@OGUID+2, 181713, 544, 1, -31.7948, 38.3964, 0.630919, -1.20428, 0, 0, 0, 0, 900, 900, 100, 1), -- Manticron Cube
-(@OGUID+3, 181713, 544, 1, -31.4977, -34.0832, 0.630935, 1.22173, 0, 0, 0, 0, 900, 900, 100, 1), -- Manticron Cube
-(@OGUID+4, 181713, 544, 1, -54.2302, 2.32818, 0.630945, 0.017453, 0, 0, 0, 0, 900, 900, 100, 1), -- Manticron Cube
-(@OGUID+5, 181713, 544, 1, 9.39513, 23.2389, 0.630891, -2.49582, 0, 0, 0, 0, 900, 900, 100, 1), -- Manticron Cube
-(@OGUID+6, 183847, 544, 1, -72.5866, 1.559, 0, 3.14159, 0, 0, 0, 0, 900, 900, 100, 0), -- Doodad_HF_Mag_door01
-(@OGUID+7, 184634, 544, 1, 17.7522, 34.5464, 0.144816, 0.179666, 0, 0, 0, 0, 900, 900, 100, 1), -- Magtheridon Column 003
-(@OGUID+8, 184635, 544, 1, 19.0966, -29.2772, 0.133036, -1.26399, 0, 0, 0, 0, 900, 900, 100, 1), -- Magtheridon Column 002
-(@OGUID+9, 184636, 544, 1, -30.8852, 46.6723, -0.497104, 1.23468, 0, 0, 0, 0, 900, 900, 100, 1), -- Magtheridon Column 004
-(@OGUID+10, 184637, 544, 1, -60.2491, 27.9361, -0.018443, 1.94711, 0, 0, 0, 0, 900, 900, 100, 1), -- Magtheridon Column 005
-(@OGUID+11, 184638, 544, 1, -60.8202, -21.9269, -0.03026, 3.08278, 0, 0, 0, 0, 900, 900, 100, 1), -- Magtheridon Column 000
-(@OGUID+12, 184639, 544, 1, -29.7699, -43.4445, -0.522461, -2.37604, 0, 0, 0, 0, 900, 900, 100, 1), -- Magtheridon Column 001
-(@OGUID+13, 184653, 544, 1, 0, 0, 0, 3.14159, 0, 0, 0, 0, 900, 900, 100, 1); -- Doodad_Hellfire_Raid_FX01
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES
+(@OGUID+1, 181713, 544, 1, 8.89169, -19.392, 0.630908, 2.44346, 0, 0, 0, 0, 900, 900), -- Manticron Cube
+(@OGUID+2, 181713, 544, 1, -31.7948, 38.3964, 0.630919, -1.20428, 0, 0, 0, 0, 900, 900), -- Manticron Cube
+(@OGUID+3, 181713, 544, 1, -31.4977, -34.0832, 0.630935, 1.22173, 0, 0, 0, 0, 900, 900), -- Manticron Cube
+(@OGUID+4, 181713, 544, 1, -54.2302, 2.32818, 0.630945, 0.017453, 0, 0, 0, 0, 900, 900), -- Manticron Cube
+(@OGUID+5, 181713, 544, 1, 9.39513, 23.2389, 0.630891, -2.49582, 0, 0, 0, 0, 900, 900), -- Manticron Cube
+(@OGUID+6, 183847, 544, 1, -72.5866, 1.559, 0, 3.14159, 0, 0, 0, 0, 900, 900), -- Doodad_HF_Mag_door01
+(@OGUID+7, 184634, 544, 1, 17.7522, 34.5464, 0.144816, 0.179666, 0, 0, 0, 0, 900, 900), -- Magtheridon Column 003
+(@OGUID+8, 184635, 544, 1, 19.0966, -29.2772, 0.133036, -1.26399, 0, 0, 0, 0, 900, 900), -- Magtheridon Column 002
+(@OGUID+9, 184636, 544, 1, -30.8852, 46.6723, -0.497104, 1.23468, 0, 0, 0, 0, 900, 900), -- Magtheridon Column 004
+(@OGUID+10, 184637, 544, 1, -60.2491, 27.9361, -0.018443, 1.94711, 0, 0, 0, 0, 900, 900), -- Magtheridon Column 005
+(@OGUID+11, 184638, 544, 1, -60.8202, -21.9269, -0.03026, 3.08278, 0, 0, 0, 0, 900, 900), -- Magtheridon Column 000
+(@OGUID+12, 184639, 544, 1, -29.7699, -43.4445, -0.522461, -2.37604, 0, 0, 0, 0, 900, 900), -- Magtheridon Column 001
+(@OGUID+13, 184653, 544, 1, 0, 0, 0, 3.14159, 0, 0, 0, 0, 900, 900); -- Doodad_Hellfire_Raid_FX01
+
+INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
+(@OGUID+6, 100, 0); -- Doodad_HF_Mag_door01
 
 -- ======
 -- EVENTS
@@ -217,16 +220,16 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipment_id`, `spell_start`, `spell_end`, `event`) VALUES
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
--- =======
--- POOLING
--- =======
+-- ============
+-- SPAWN GROUPS
+-- ============
 
--- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
--- INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
--- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
--- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
+-- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+-- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+-- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+-- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+-- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+-- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 
 -- =========
 -- DBSCRIPTS
