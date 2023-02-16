@@ -2664,7 +2664,6 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 (@OGUID+17, 0, 0),
 (@OGUID+18, 0, -1),
 (@OGUID+19, 0, -1),
-(@OGUID+20, 0, 0),
 (@OGUID+21, 0, -1),
 (@OGUID+22, 0, -1),
 (@OGUID+23, 0, -1),
