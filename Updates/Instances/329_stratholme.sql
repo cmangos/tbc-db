@@ -1577,15 +1577,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+665, 181096, 329, 3423.47, -3055.73, 136.581, 0, 0, 0, 0, 0, 180, 180); -- Brazier of Invocation Spell Focus 20 yd
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+3, 100, 0),
-(@OGUID+4, 100, 0),
-(@OGUID+7, 100, 0),
-(@OGUID+8, 100, 0),
-(@OGUID+14, 100, 0),
-(@OGUID+17, 100, 0),
-(@OGUID+18, 100, 0),
-(@OGUID+19, 100, 0),
-(@OGUID+321, 100, 0),
 (@OGUID+664, 0, -1),
 (@OGUID+665, 0, -1);
 

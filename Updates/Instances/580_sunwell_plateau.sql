@@ -1541,12 +1541,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+35, 188116, 580, 1, 1696.155, 674.9676, 28.05021, 4.81711, 0, 0, -0.6691303, 0.743145, 7200, 7200); -- Orb of the Blue Flight
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+23, 100, 0), -- Doodad_SunwellRaid_Gate_07
-(@OGUID+25, 100, 0), -- Sanctum Planetarium
-(@OGUID+27, 100, 0), -- Doodad_Sunwell_Ice_Barrier01
-(@OGUID+29, 100, 0), -- Doodad_Sunwell_BossForceField01
-(@OGUID+30, 100, 0), -- Doodad_Sunwell_BossCollision01
-(@OGUID+31, 100, 0); -- Doodad_Sunwell_BossCollision02
+(@OGUID+25, 100, 0); -- Sanctum Planetarium
 
 -- ======
 -- EVENTS

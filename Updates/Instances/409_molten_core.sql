@@ -888,14 +888,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+59, 178194, 409, 765.562, -995.398, -197.221, 2.19912, 0, 0, 0, 1, 604800, 604800), -- Lava Crack
 (@OGUID+60, 179703, 409, 756.897, -1180.7, -118.596, 2.91469, 0, 0, 0, 1, -604800, -604800); -- Cache of the Firelord
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+41, 100, 0),
-(@OGUID+42, 100, 0),
-(@OGUID+43, 100, 0),
-(@OGUID+44, 100, 0),
-(@OGUID+45, 100, 0),
-(@OGUID+46, 100, 0),
-(@OGUID+47, 100, 0);
+-- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 -- ======
 -- EVENTS

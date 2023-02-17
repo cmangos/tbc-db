@@ -559,8 +559,6 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+33, 0, 542, 2, 328.702056884765625, -197.719131469726562, -25.508880615234375, 2.98449873924255371, 0, 0, 0.996916770935058593, 0.078466430306434631, 86400, 86400); -- Bound Adamantite Chest, Solid Adamantite Chest
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+7, 100, 0), -- Doodad_Hellfire_DW_PrisonEntry02
-(@OGUID+18, 100, 0), -- Doodad_Hellfire_DW_PrisonEntry05
 (@OGUID+20, 100, 0), -- Doodad_Hellfire_DW_LargeFloor_Crack02onoff
 (@OGUID+21, 100, 0), -- Doodad_Hellfire_DW_LargeFloor_Crack03
 (@OGUID+22, 100, 0), -- Doodad_Hellfire_DW_LargeFloor_Crack04onoff

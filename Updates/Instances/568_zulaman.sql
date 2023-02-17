@@ -1518,15 +1518,12 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+95, 191460, 568, 1, 245.824, 1018.73, 3.5506, -2.9234, 0, 0, -0.994055, 0.108872, 180, 180); -- Bonfire
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+32, 100, 0), -- Lynx Temple Entrance
 (@OGUID+39, 100, 0), -- Zul'Aman Dummy Cage - Open
 (@OGUID+40, 100, 0), -- Zul'Aman Dummy Cage - Open
 (@OGUID+41, 100, 0), -- Zul'Aman Dummy Cage - Open
 (@OGUID+42, 100, 0), -- Zul'Aman Dummy Cage - Open
 (@OGUID+43, 100, 0), -- Zul'Aman Dummy Cage - Open
-(@OGUID+44, 100, 0), -- Zul'Aman Dummy Cage - Open
-(@OGUID+80, 100, 0), -- Doodad_ZulAman_WindDoor01
-(@OGUID+81, 100, 0); -- Doodad_ZulAman_FireDoor01
+(@OGUID+44, 100, 0); -- Zul'Aman Dummy Cage - Open
 
 -- ======
 -- EVENTS

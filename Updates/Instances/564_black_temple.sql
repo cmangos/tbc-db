@@ -3538,14 +3538,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+24, 186261, 564, 1, 747.372, 243.995, 354.224, 0.816941, 0, 0, 0, 0, 180, 180), -- Doodad_BT_Illidan_Door_Right01
 (@OGUID+25, 186262, 564, 1, 748.172, 365.617, 354.224, 2.31417, 0, 0, 0, 0, 180, 180); -- Doodad_BT_Illidan_Door_Left01
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+1, 100, 0), -- Door
-(@OGUID+3, 100, 0), -- Door
-(@OGUID+4, 100, 0), -- Door
-(@OGUID+22, 100, 0), -- Doodad_BT_CommonDoor08
-(@OGUID+23, 100, 0), -- Doodad_BT_CommonDoor07
-(@OGUID+24, 100, 0), -- Doodad_BT_Illidan_Door_Right01
-(@OGUID+25, 100, 0); -- Doodad_BT_Illidan_Door_Left01
+-- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 -- ======
 -- EVENTS

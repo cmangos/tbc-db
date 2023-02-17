@@ -895,11 +895,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+103, 180667, 469, -7526.57, -924.776, 458.826, 0.558504, 0, 0, 0.275637, 0.961262, 180, 180); -- Draconic for Dummies
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+5, 100, 0),
-(@OGUID+7, 100, 0),
 (@OGUID+8, 0, -1),
-(@OGUID+39, 0, -1),
-(@OGUID+52, 100, 0);
+(@OGUID+39, 0, -1);
 
 -- ======
 -- EVENTS

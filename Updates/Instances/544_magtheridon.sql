@@ -209,8 +209,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+12, 184639, 544, 1, -29.7699, -43.4445, -0.522461, -2.37604, 0, 0, 0, 0, 900, 900), -- Magtheridon Column 001
 (@OGUID+13, 184653, 544, 1, 0, 0, 0, 3.14159, 0, 0, 0, 0, 900, 900); -- Doodad_Hellfire_Raid_FX01
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+6, 100, 0); -- Doodad_HF_Mag_door01
+-- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 -- ======
 -- EVENTS

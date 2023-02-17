@@ -2779,11 +2779,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+616, 188509, 230, 902.58, -160.198, -49.7587, 3.62823, 0, 0, -0.970544, 0.240925, 7200, 7200); -- Dark Iron Mole Machine (Minion Summoner Trap)
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+33, 100, 0),
-(@OGUID+99, 100, 0),
-(@OGUID+102, 100, 0),
 (@OGUID+112, 0, -1),
-(@OGUID+272, 100, 0),
 (@OGUID+455, 0, -1),
 (@OGUID+457, 0, -1),
 (@OGUID+458, 0, -1);

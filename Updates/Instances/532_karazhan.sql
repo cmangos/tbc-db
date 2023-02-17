@@ -3193,11 +3193,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+338, 181848, 532, 1, -11335.7, -1908.36, 240.541, 1.78023, 0, 0, 0.777145, 0.629321, 1800, 1800);  -- Sealed Tome
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+277, 100, 0), -- Master's Terrace Door
-(@OGUID+283, 100, 0), -- Master's Terrace Door
-(@OGUID+288, 100, 0), -- Netherspace Door
 (@OGUID+289, 100, 1), -- Chessboard
-(@OGUID+290, 100, 0), -- Massive Door
 (@OGUID+291, 0, -1), -- Master's Terrace Focus
 (@OGUID+292, 0, -1); -- Master's Terrace Focus
 

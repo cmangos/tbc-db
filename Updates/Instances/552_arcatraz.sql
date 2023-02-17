@@ -592,8 +592,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 (@OGUID+9, 0, 0), -- Instance_Portal_Difficulty_0
-(@OGUID+10, 0, 0), -- Instance_Portal_Difficulty_1
-(@OGUID+13, 100, 0); -- Warden's Shield
+(@OGUID+10, 0, 0); -- Instance_Portal_Difficulty_1
 
 -- ======
 -- EVENTS

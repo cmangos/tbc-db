@@ -329,7 +329,6 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 (@OGUID+4, 0, 0), -- Instance_Portal_Difficulty_0
 (@OGUID+5, 0, 0), -- Instance_Portal_Difficulty_1
 (@OGUID+6, 0, -1), -- Mo'arg 2 Door
-(@OGUID+7, 100, 0), -- Nethermancer Encounter Door
 (@OGUID+9, 0, -1); -- Mo'arg 1 Door
 
 -- ======

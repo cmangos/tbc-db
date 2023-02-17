@@ -1616,8 +1616,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `position_x`, `position_y`, `posi
 (@OGUID+271, 180497, 309, -11501.8935546875, -1614.798828125, 44.57218170166015625, 1.57952284812927246, 0, 0, 0.710185348987579345, 0.704014778137207031, 600, 600), -- Forcefield
 (@OGUID+272, 180526, 309, -11569.19921875, -1627.87451171875, 41.27669906616210937, 0.008725880645215511, 0, 0, 0.004362926352769136, 0.999990463256835937, 600, 600); -- Gong of Bethekk
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+271, 100, 0);
+-- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 -- ======
 -- EVENTS

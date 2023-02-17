@@ -127,8 +127,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+1, 183817, 565, 1, 99.0729, 249.704, 18.3478, 3.14159, 0, 0, -1, 0, 180, 180), -- Doodad_Portcullis_Gronn01
 (@OGUID+2, 184662, 565, 1, 166.897, 368.226, 16.9209, 4.71239, 0, 0, -0.707107, 0.707107, 180, 180); -- Doodad_Portcullis_Gronn02
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+2, 100, 0); -- Doodad_Portcullis_Gronn02
+-- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 -- ======
 -- EVENTS

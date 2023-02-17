@@ -1320,15 +1320,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+43, 188524, 585, 3, -326.9337, -595.6099, -51.23578, 3.132858, 0, 0, 0.9999905, 0.00436732, 180, 180); -- Doodad_Sunwell_BossCollision02
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+26, 100, 0), -- Doodad_SunwellRaid_Gate_07
-(@OGUID+27, 100, 0), -- Asylum Door
-(@OGUID+28, 100, 0), -- Assembly Chamber Door
 (@OGUID+30, 100, 0), -- Sanctum Planetarium
-(@OGUID+31, 100, 0), -- Doodad_SunwellRaid_Gate_08
-(@OGUID+32, 100, 0), -- Doodad_Sunwell_Ice_Barrier01
-(@OGUID+41, 100, 0), -- Doodad_Sunwell_BossForceField01
-(@OGUID+42, 100, 0), -- Doodad_Sunwell_BossCollision01
-(@OGUID+43, 100, 0); -- Doodad_Sunwell_BossCollision02
+(@OGUID+31, 100, 0); -- Doodad_SunwellRaid_Gate_08
 
 -- ======
 -- EVENTS
