@@ -352,20 +352,41 @@ INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slo
 UPDATE `creature_template` SET `VendorTemplateId` = 1200 WHERE `entry` IN (2365,2814,3025,3089,3312,3368,3489,3705,3933,3935,3960,4954,5124,5870,23263,23481,23605);
 
 -- group moved to templates
-DELETE FROM `npc_vendor` WHERE entry IN (982,2388,3411,3621,3881,3882,4169,4782,4875,4879,4963,5611,6928,6929,7485,7731,7733,8125,9356,11118,12196,16443,19182,24208) AND `item` IN (117,159,1179,1205,1645,1708,2287,3770,3771,4599,8766,8952);
-DELETE FROM `npc_vendor_template` WHERE entry IN (410,1201);
+DELETE FROM `npc_vendor` WHERE entry IN (258,955,1328,1697,5112,5140,19617) AND `item` IN (159,1179,1205,1645,1708,2593,2594,2595,2596,2723,8766);
+DELETE FROM `npc_vendor_template` WHERE entry IN (404,1201);
 INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `ExtendedCost`, `condition_id`, `comments`) VALUES 
-(1201,117,0,0,1,0,0,'Tough Jerky'),
-(1201,159,0,0,7,0,0,'Refreshing Spring Water'),
-(1201,1179,0,0,8,0,0,'Ice Cold Milk'),
-(1201,1205,0,0,9,0,0,'Melon Juice'),
-(1201,1645,0,0,11,0,0,'Moonberry Juice'),
-(1201,1708,0,0,10,0,0,'Sweet Nectar'),
-(1201,2287,0,0,2,0,0,'Haunch of Meat'),
-(1201,3770,0,0,3,0,0,'Mutton Chop'),
-(1201,3771,0,0,4,0,0,'Wild Hog Shank'),
-(1201,4599,0,0,5,0,0,'Cured Ham Steak'),
-(1201,8766,0,0,12,0,0,'Morning Glory Dew'),
-(1201,8952,0,0,6,0,0,'Roasted Quail');
-UPDATE `creature_template` SET `VendorTemplateId` = 1201 WHERE `entry` IN (982,2388,3411,3621,3881,3882,4169,4782,4875,4879,4963,5611,6928,6929,7485,7731,7733,8125,9356,11118,12196,16443,19182,24208);
+(1201,159,0,0,6,0,0,'Refreshing Spring Water'),
+(1201,1179,0,0,7,0,0,'Ice Cold Milk'),
+(1201,1205,0,0,8,0,0,'Melon Juice'),
+(1201,1645,0,0,10,0,0,'Moonberry Juice'),
+(1201,1708,0,0,9,0,0,'Sweet Nectar'),
+(1201,2593,0,0,2,0,0,'Flask of Port'),
+(1201,2594,0,0,4,0,0,'Flagon of Mead'),
+(1201,2595,0,0,5,0,0,'Jug of Bourbon'),
+(1201,2596,0,0,3,0,0,'Skin of Dwarven Stout'),
+(1201,2723,0,0,1,0,0,'Bottle of Pinot Noir'),
+(1201,8766,0,0,11,0,0,'Morning Glory Dew');
+UPDATE `creature_template` SET `VendorTemplateId` = 1201 WHERE `entry` IN (258,955,1328,1697,5112,5140,19617);
+
+-- group moved to templates
+DELETE FROM `npc_vendor` WHERE entry IN (982,2388,3411,3621,3881,3882,4169,4782,4875,4879,4963,5611,6928,6929,7485,7731,7733,8125,9356,11118,12196,16443,19182,24208) AND `item` IN (117,159,1179,1205,1645,1708,2287,3770,3771,4599,8766,8952);
+DELETE FROM `npc_vendor_template` WHERE entry IN (410,1202);
+INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `ExtendedCost`, `condition_id`, `comments`) VALUES 
+(1202,117,0,0,1,0,0,'Tough Jerky'),
+(1202,159,0,0,7,0,0,'Refreshing Spring Water'),
+(1202,1179,0,0,8,0,0,'Ice Cold Milk'),
+(1202,1205,0,0,9,0,0,'Melon Juice'),
+(1202,1645,0,0,11,0,0,'Moonberry Juice'),
+(1202,1708,0,0,10,0,0,'Sweet Nectar'),
+(1202,2287,0,0,2,0,0,'Haunch of Meat'),
+(1202,3770,0,0,3,0,0,'Mutton Chop'),
+(1202,3771,0,0,4,0,0,'Wild Hog Shank'),
+(1202,4599,0,0,5,0,0,'Cured Ham Steak'),
+(1202,8766,0,0,12,0,0,'Morning Glory Dew'),
+(1202,8952,0,0,6,0,0,'Roasted Quail');
+UPDATE `creature_template` SET `VendorTemplateId` = 1202 WHERE `entry` IN (982,2388,3411,3621,3881,3882,4169,4782,4875,4879,4963,5611,6928,6929,7485,7731,7733,8125,9356,11118,12196,16443,19182,24208);
+
+-- not a vendor - https://www.wowhead.com/wotlk/npc=4963/mikhail#comments:id=525125
+DELETE FROM `npc_vendor` WHERE `entry` = 4963;
+UPDATE `creature_template` SET `VendorTemplateId` = 0 WHERE `entry` = 4963;
 
