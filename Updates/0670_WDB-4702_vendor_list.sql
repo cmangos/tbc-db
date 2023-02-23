@@ -232,6 +232,86 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `Exte
 (5942,6326,0,0,1,0,0,'Recipe: Slitherskin Mackerel'),
 (5942,6368,0,0,2,0,0,'Recipe: Rainbow Fin Albacore');
 
+-- Tharynn Bouden 66 - 1101 + 3 items (18 items in tbc)
+-- vendor list corrected
+UPDATE `creature_template` SET `VendorTemplateId` = 0 WHERE `entry` = 66;
+DELETE FROM `npc_vendor` WHERE entry = 66;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `ExtendedCost`, `condition_id`, `comments`) VALUES
+(66,2320,0,0,8,0,0,'Coarse Thread'),
+(66,2324,0,0,14,0,0,'Bleach'),
+(66,2604,0,0,13,0,0,'Red Dye'),
+(66,2678,0,0,6,0,0,'Mild Spices'),
+(66,2880,0,0,9,0,0,'Weak Flux'),
+(66,2901,0,0,2,0,0,'Mining Pick'),
+(66,3371,0,0,10,0,0,'Empty Vial'),
+(66,4289,0,0,11,0,0,'Salt'),
+(66,5956,0,0,3,0,0,'Blacksmith Hammer'),
+(66,6217,0,0,5,0,0,'Copper Rod'),
+(66,6256,0,0,4,0,0,'Fishing Pole'),
+(66,6260,0,0,15,0,0,'Blue Dye'),
+(66,6270,1,9000,0,0,0,'Pattern: Blue Linen Vest'), -- wasnot limited supply
+(66,6325,0,0,18,0,0,'Recipe: Brilliant Smallfish'),
+(66,6328,0,0,19,0,0,'Recipe: Longjaw Mud Snapper'),
+(66,6529,0,0,12,0,0,'Shiny Bauble'),
+(66,7005,0,0,1,0,0,'Skinning Knife'),
+(66,30817,0,0,7,0,0,'Simple Flour');
+
+-- Barkeep Dobbins 465 - 411 template - 18 items
+-- vendor list corrected
+UPDATE `creature_template` SET `VendorTemplateId` = 0 WHERE `entry` = 465;
+DELETE FROM `npc_vendor` WHERE entry = 465;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `ExtendedCost`, `condition_id`, `comments`) VALUES
+(465,159,0,0,2,0,0,'Refreshing Spring Water'),
+(465,414,0,0,14,0,0,'Dalaran Sharp'),
+(465,422,0,0,15,0,0,'Dwarven Mild'),
+(465,1179,0,0,3,0,0,'Ice Cold Milk'),
+(465,1205,0,0,4,0,0,'Melon Juice'),
+(465,1645,0,0,6,0,0,'Moonberry Juice'),
+(465,1707,0,0,16,0,0,'Stormwind Brie'),
+(465,1708,0,0,5,0,0,'Sweet Nectar'),
+(465,1939,0,0,1,0,0,'Skin of Sweet Rum'),
+(465,2070,0,0,13,0,0,'Darnassian Bleu'),
+(465,2593,0,0,9,0,0,'Flask of Port'),
+(465,2594,0,0,11,0,0,'Flagon of Mead'),
+(465,2595,0,0,12,0,0,'Jug of Bourbon'),
+(465,2596,0,0,10,0,0,'Skin of Dwarven Stout'),
+(465,2723,0,0,8,0,0,'Bottle of Pinot Noir'),
+(465,3927,0,0,17,0,0,'Fine Aged Cheddar'),
+(465,8766,0,0,7,0,0,'Morning Glory Dew'),
+(465,8932,0,0,18,0,0,'Alterac Swiss');
+
+-- Kyra Boucher 1275 - 136 template - 19 items
+-- vendor list corrected
+
+-- Keldric Boucher 1257 - 136 template - 24 items
+-- vendor list corrected
+DELETE FROM `npc_vendor` WHERE entry = 1257;
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `ExtendedCost`, `condition_id`, `comments`) VALUES
+(1257,858,3,9000,29,0,0,'Lesser Healing Potion'), -- missing
+(1257,3371,0,0,24,0,0,'Empty Vial'),
+(1257,3372,0,0,25,0,0,'Leaded Vial'),
+(1257,5565,0,0,20,0,0,'Infernal Stone'),
+(1257,8925,0,0,26,0,0,'Crystal Vial'),
+(1257,16583,0,0,21,0,0,'Demonic Figurine'),
+(1257,17020,0,0,10,0,0,'Arcane Powder'),
+(1257,17021,0,0,16,0,0,'Wild Berries'),
+(1257,17026,0,0,17,0,0,'Wild Thornroot'),
+(1257,17028,0,0,13,0,0,'Holy Candle'),
+(1257,17029,0,0,14,0,0,'Sacred Candle'),
+(1257,17030,0,0,11,0,0,'Ankh'),
+(1257,17031,0,0,8,0,0,'Rune of Teleportation'),
+(1257,17032,0,0,9,0,0,'Rune of Portals'),
+(1257,17033,0,0,12,0,0,'Symbol of Divinity'),
+(1257,17034,0,0,1,0,0,'Maple Seed'),
+(1257,17035,0,0,2,0,0,'Stranglethorn Seed'),
+(1257,17036,0,0,3,0,0,'Ashwood Seed'),
+(1257,17037,0,0,4,0,0,'Hornbeam Seed'),
+(1257,17038,0,0,5,0,0,'Ironwood Seed'),
+(1257,18256,0,0,27,0,0,'Imbued Vial'),
+(1257,21177,0,0,22,0,0,'Symbol of Kings'),
+(1257,22147,0,0,6,0,0,'Flintweed Seed'),
+(1257,22148,0,0,18,0,0,'Wild Quillvine');
+
 -- ------------------------
 -- Templates
 -- Weapons/Armor
@@ -316,7 +396,7 @@ UPDATE `npc_vendor_template` SET `condition_id` = 0 WHERE `entry` IN (428,432,43
 UPDATE `npc_vendor` SET `condition_id` = 0 WHERE `entry` IN (791,1250,1285,1685,3313,4170,4241,4555,7942,8362,12027,12960,16191,17421,18810,19197) AND `item` IN (5042,5048);
 
 -- group moved to templates
-DELETE FROM `npc_vendor` WHERE entry IN (66,1250,1692,2118,3081,3168,3187,3614,4194,16224,16261,16262) AND `item` IN (2320,2324,2604,2678,2880,2901,3371,4289,5956,6217,6256,6260,6529,7005,30817);
+DELETE FROM `npc_vendor` WHERE entry IN (1250,1692,2118,3081,3168,3187,3614,4194,16224,16261,16262) AND `item` IN (2320,2324,2604,2678,2880,2901,3371,4289,5956,6217,6256,6260,6529,7005,30817);
 DELETE FROM `npc_vendor_template` WHERE entry IN (112,1101);
 INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `ExtendedCost`, `condition_id`, `comments`) VALUES 
 (1101,2320,0,0,8,0,0,'Coarse Thread'),
@@ -336,7 +416,7 @@ INSERT INTO `npc_vendor_template` (`entry`, `item`, `maxcount`, `incrtime`, `slo
 -- (1101,10648,0,0,16,0,0,'Common Parchment'), -- Blank Parchment
 (1101,30817,0,0,7,0,0,'Simple Flour');
 -- (1101,39354,0,0,17,0,0,'Light Parchment'); -- wotlk+
-UPDATE `creature_template` SET `VendorTemplateId` = 1101 WHERE `entry` IN (66,1250,1692,2118,3081,3168,3187,3614,4194,16224,16261,16262);
+UPDATE `creature_template` SET `VendorTemplateId` = 1101 WHERE `entry` IN (1250,1692,2118,3081,3168,3187,3614,4194,16224,16261,16262);
 
 -- Food
 -- group moved to templates
