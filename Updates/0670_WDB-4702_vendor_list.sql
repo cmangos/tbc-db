@@ -285,6 +285,7 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `Exte
 
 -- Keldric Boucher 1257 - 136 template - 24 items
 -- vendor list corrected
+UPDATE `creature_template` SET `VendorTemplateId` = 0 WHERE `entry` = 1257;
 DELETE FROM `npc_vendor` WHERE entry = 1257;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `ExtendedCost`, `condition_id`, `comments`) VALUES
 (1257,858,3,9000,29,0,0,'Lesser Healing Potion'), -- missing
