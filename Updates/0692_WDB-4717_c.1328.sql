@@ -1,4 +1,5 @@
 -- Elly Langston 1328
+UPDATE creature SET position_x = -8609.9, position_y = 387.955, position_z = 102.926 WHERE id = 1328;
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN 19958 AND 19964;
 INSERT INTO dbscripts_on_relay (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 -- 19958
@@ -46,5 +47,6 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (27, 0, 1532, 0, 'Elly Langston - Random Text 4'),
 (27, 0, 1533, 0, 'Elly Langston - Random Text 5'),
 (27, 0, 1534, 0, 'Elly Langston - Random Text 6'),
-(27, 0, 1535, 0, 'Elly Langston - Random Text 7');
+(27, 0, 1535, 0, 'Elly Langston - Random Text 7'),
+(27, 0, 1536, 0, 'Elly Langston - Random Text 8');
 
