@@ -242,3 +242,13 @@ DELETE FROM creature_spawn_entry WHERE (guid BETWEEN 99704 AND 99790) AND `guid`
 
 -- keeping 99727,99728,99730,99737,99740,99741,99748,99756,99757,99758,99759,99788 for now.
 
+-- dberrors
+-- `pool_creature` has a non existing creature spawn (GUID: 99710) defined for pool id (16446), skipped.
+-- `pool_creature` has a non existing creature spawn (GUID: 99711) defined for pool id (16447), skipped.
+-- `pool_creature` has a non existing creature spawn (GUID: 99753) defined for pool id (16446), skipped.
+-- `pool_creature` has a non existing creature spawn (GUID: 99754) defined for pool id (16447), skipped.
+-- Pool Template Id (16446) is empty.
+-- Pool Template Id (16447) is empty.
+DELETE FROM `pool_creature` WHERE `guid` IN (99710,99711,99753,99754);
+DELETE FROM `pool_template` WHERE `entry` IN (16446,16447);
+
