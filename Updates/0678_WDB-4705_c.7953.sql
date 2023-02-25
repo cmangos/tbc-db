@@ -1,7 +1,7 @@
 -- Xar'Ti 7953
 -- gossip corrected
 UPDATE gossip_menu SET condition_id = 268 WHERE entry = 4022 AND text_id = 4875; -- "Has Minimum Rank Exalted With Faction ID: 530"
-UPDATE `gossip_menu_option` SET `condition_id` = 268 WHERE `entry` = 4022 AND `id` = 0; -- I seek training to ride a steed. (https://www.wowhead.com/tbc/npc=7953/xarti#comments:id=129990)
+UPDATE `gossip_menu_option` SET `condition_id` = 268 WHERE `menu_id` = 4022 AND `id` = 0; -- I seek training to ride a steed. (https://www.wowhead.com/tbc/npc=7953/xarti#comments:id=129990)
 -- I can teach you the finer points of Raptor Riding, provided you have enough gold to cover the lesson! - 4875
 -- You need to be exalted with the trolls of the Darkspear tribe before I will teach you a riding skill, $c. - 5865
 UPDATE creature_template_addon SET emote = 0 WHERE entry = 7953; -- emote shouldnt be state
