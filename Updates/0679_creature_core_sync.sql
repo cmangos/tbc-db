@@ -17,6 +17,8 @@ ALTER TABLE db_version CHANGE COLUMN required_s2462_01_mangos_creature_drops req
 
 ALTER TABLE `creature_spawn_data_template` CHANGE `EquipmentId` `EquipmentId` MEDIUMINT(8) NOT NULL DEFAULT '-1';
 
+UPDATE `creature_spawn_data_template` SET `EquipmentId` = -1 WHERE `EquipmentId` = 0;
+
 -- todo: remove creature.equipment_id, port to creature_spawn_data_template.EquipmentId (-1) defaults to creature_template.equipmenttemplateid
 -- 0 sets no equipment (used quite often, so this is a smart solution to remove equipment.)
 
