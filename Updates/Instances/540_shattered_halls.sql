@@ -8,10 +8,128 @@ EndDBScriptData */
 SET @CGUID := 5400000; -- creatures
 SET @OGUID := 5400000; -- gameobjects
 SET @SGGUID := 5400000; -- spawn_groups
+SET @CONDITIONID := 54000; -- Condition id
+SET @WSID := 54000; -- Worldstate id
+SET @RElAYID := 540000; -- Relay Scripts
 
 -- =========
 -- CREATURES
 -- =========
+
+INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
+(@CGUID+120, 1, 62.7101, 2.91998, -13.0349, 0, 0, 1670001),
+(@CGUID+120, 2, 56.5515, 2.61235, -13.1199, 0, 0, 1670001),
+(@CGUID+120, 3, 50.393, 2.30471, -13.2049, 0, 0, 1670001),
+(@CGUID+120, 4, 38.6893, 1.72007, -13.1907, 0, 0, 1670001),
+(@CGUID+120, 5, 37.24, 1.64768, -13.1956, 0, 0, 1670001),
+(@CGUID+120, 6, 21.5489, 1.67225, -13.1886, 0, 0, 1670001),
+(@CGUID+120, 7, 9.57407, 1.84343, -13.1916, 0, 0, 1670001),
+(@CGUID+120, 8, 21.5489, 1.67225, -13.1886, 0, 0, 1670001),
+(@CGUID+120, 9, 37.24, 1.64768, -13.1956, 0, 0, 1670001),
+(@CGUID+120, 10, 55.6437, 2.6325, -13.2086, 0, 0, 1670001),
+(@CGUID+121, 1, 46.3248, 59.879, -12.9904, 0, 1000, 5),
+(@CGUID+121, 2, 53.246, 58.0863, -13.1067, 0, 0, 0),
+(@CGUID+121, 3, 60.1673, 56.2936, -13.223, 0, 0, 0),
+(@CGUID+121, 4, 62.0403, 55.8085, -13.2236, 0, 0, 0),
+(@CGUID+121, 5, 66.1605, 54.7413, -13.2229, 0, 0, 0),
+(@CGUID+121, 6, 66.8337, 51.6796, -13.2228, 0, 0, 0),
+(@CGUID+121, 7, 67.2014, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+121, 8, 69.3164, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+121, 9, 69.6013, 39.0919, -13.2298, 0, 0, 0),
+(@CGUID+121, 10, 69.6013, 39.0919, -13.2298, 0, 0, 0),
+(@CGUID+121, 11, 65.8643, 14.4801, -13.2172, 0, 0, 0),
+(@CGUID+121, 12, 57.2744, 7.4202, -13.215, 0, 0, 0),
+(@CGUID+121, 13, 45.6987, 6.42616, -13.1906, 100, 2000, 1742001),
+(@CGUID+122, 1, 83.755, 57.2887, -13.114, 0, 1000, 5),
+(@CGUID+122, 2, 73.5564, 52.4972, -13.2227, 0, 0, 0),
+(@CGUID+122, 3, 73.2092, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+122, 4, 71.868, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+122, 5, 70.8613, 33.1676, -13.2132, 0, 0, 0),
+(@CGUID+122, 6, 70.8613, 33.1676, -13.2132, 0, 0, 0),
+(@CGUID+122, 7, 63.0987, 2.38798, -13.1956, 0, 0, 0),
+(@CGUID+122, 8, 36.6416, -1.55471, -13.1958, 0, 0, 0),
+(@CGUID+122, 9, 25.2589, -4.47658, -13.1882, 0, 0, 0),
+(@CGUID+122, 10, 12.3784, -2.32701, -13.1913, 100, 2000, 1742001),
+(@CGUID+123, 1, 53.5243, 60.0879, -13.0071, 0, 1000, 5),
+(@CGUID+123, 2, 56.8458, 57.6507, -13.1151, 0, 0, 0),
+(@CGUID+123, 3, 60.1673, 55.2135, -13.223, 0, 0, 0),
+(@CGUID+123, 4, 61.37, 54.3309, -13.2237, 0, 0, 0),
+(@CGUID+123, 5, 64.9833, 51.6796, -13.2229, 0, 0, 0),
+(@CGUID+123, 6, 67.2627, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+123, 7, 67.693, 49.6913, -13.2218, 0, 0, 0),
+(@CGUID+123, 8, 67.8674, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+123, 9, 67.8932, 39.0141, -13.2296, 0, 0, 0),
+(@CGUID+123, 10, 67.8932, 39.0141, -13.2296, 0, 0, 0),
+(@CGUID+123, 11, 64.0192, 12.3123, -13.219, 0, 0, 0),
+(@CGUID+123, 12, 46.6975, 4.63054, -13.1906, 0, 0, 0),
+(@CGUID+123, 13, 33.7657, 6.79465, -13.1942, 0, 0, 0),
+(@CGUID+123, 14, 22.7783, 7.14236, -13.1889, 100, 2000, 1742001),
+(@CGUID+124, 1, 90.0297, 57.4987, -13.1003, 0, 1000, 5),
+(@CGUID+124, 2, 73.4619, 54.4364, -13.2227, 0, 0, 0),
+(@CGUID+124, 3, 73.4619, 54.4364, -13.2227, 0, 0, 0),
+(@CGUID+124, 4, 71.4676, 45.247, -13.2218, 0, 0, 0),
+(@CGUID+124, 5, 70.8612, 26.3303, -13.191, 0, 0, 0),
+(@CGUID+124, 6, 69.0497, 8.98774, -13.2077, 0, 0, 0),
+(@CGUID+124, 7, 62.9846, -0.321715, -13.1952, 0, 0, 0),
+(@CGUID+124, 8, 57.8027, -0.197392, -13.2067, 100, 2000, 1742001),
+(@CGUID+125, 1, 87.9912, 57.5445, -13.1049, 0, 1000, 5),
+(@CGUID+125, 2, 73.6565, 52.4234, -13.2226, 0, 0, 0),
+(@CGUID+125, 3, 71.5909, 37.8002, -13.2262, 0, 0, 0),
+(@CGUID+125, 4, 70.0568, 10.5743, -13.2209, 0, 0, 0),
+(@CGUID+125, 5, 52.6026, -0.81406, -13.2027, 0, 0, 0),
+(@CGUID+125, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001),
+(@CGUID+126, 1, 46.3248, 59.879, -12.9904, 0, 1000, 5),
+(@CGUID+126, 2, 53.246, 58.0863, -13.1067, 0, 0, 0),
+(@CGUID+126, 3, 60.1673, 56.2936, -13.223, 0, 0, 0),
+(@CGUID+126, 4, 62.0403, 55.8085, -13.2236, 0, 0, 0),
+(@CGUID+126, 5, 66.1605, 54.7413, -13.2229, 0, 0, 0),
+(@CGUID+126, 6, 66.8337, 51.6796, -13.2228, 0, 0, 0),
+(@CGUID+126, 7, 67.2014, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+126, 8, 69.3164, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+126, 9, 69.6013, 39.0919, -13.2298, 0, 0, 0),
+(@CGUID+126, 10, 69.6013, 39.0919, -13.2298, 0, 0, 0),
+(@CGUID+126, 11, 65.8643, 14.4801, -13.2172, 0, 0, 0),
+(@CGUID+126, 12, 57.2744, 7.4202, -13.215, 0, 0, 0),
+(@CGUID+126, 13, 45.6987, 6.42616, -13.1906, 100, 2000, 1742001),
+(@CGUID+127, 2, 83.755, 57.2887, -13.114, 0, 1000, 5),
+(@CGUID+127, 3, 73.5564, 52.4972, -13.2227, 0, 0, 0),
+(@CGUID+127, 4, 73.2092, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+127, 5, 71.868, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+127, 6, 70.8613, 33.1676, -13.2132, 0, 0, 0),
+(@CGUID+127, 7, 70.8613, 33.1676, -13.2132, 0, 0, 0),
+(@CGUID+127, 8, 63.0987, 2.38798, -13.1956, 0, 0, 0),
+(@CGUID+127, 9, 36.6416, -1.55471, -13.1958, 0, 0, 0),
+(@CGUID+127, 10, 25.2589, -4.47658, -13.1882, 0, 0, 0),
+(@CGUID+127, 11, 12.3784, -2.32701, -13.1913, 100, 2000, 1742001),
+(@CGUID+128, 1, 53.5243, 60.0879, -13.0071, 0, 1000, 5),
+(@CGUID+128, 2, 56.8458, 57.6507, -13.1151, 0, 0, 0),
+(@CGUID+128, 3, 60.1673, 55.2135, -13.223, 0, 0, 0),
+(@CGUID+128, 4, 61.37, 54.3309, -13.2237, 0, 0, 0),
+(@CGUID+128, 5, 64.9833, 51.6796, -13.2229, 0, 0, 0),
+(@CGUID+128, 6, 67.2627, 50.007, -13.2218, 0, 0, 0),
+(@CGUID+128, 7, 67.693, 49.6913, -13.2218, 0, 0, 0),
+(@CGUID+128, 8, 67.8674, 40.3876, -13.2218, 0, 0, 0),
+(@CGUID+128, 9, 67.8932, 39.0141, -13.2296, 0, 0, 0),
+(@CGUID+128, 10, 67.8932, 39.0141, -13.2296, 0, 0, 0),
+(@CGUID+128, 11, 64.0192, 12.3123, -13.219, 0, 0, 0),
+(@CGUID+128, 12, 46.6975, 4.63054, -13.1906, 0, 0, 0),
+(@CGUID+128, 13, 33.7657, 6.79465, -13.1942, 0, 0, 0),
+(@CGUID+128, 14, 22.7783, 7.14236, -13.1889, 100, 2000, 1742001),
+(@CGUID+129, 1, 90.0297, 57.4987, -13.1003, 0, 1000, 5),
+(@CGUID+129, 2, 73.4619, 54.4364, -13.2227, 0, 0, 0),
+(@CGUID+129, 3, 73.4619, 54.4364, -13.2227, 0, 0, 0),
+(@CGUID+129, 4, 71.4676, 45.247, -13.2218, 0, 0, 0),
+(@CGUID+129, 5, 70.8612, 26.3303, -13.191, 0, 0, 0),
+(@CGUID+129, 6, 69.0497, 8.98774, -13.2077, 0, 0, 0),
+(@CGUID+129, 7, 62.9846, -0.321715, -13.1952, 0, 0, 0),
+(@CGUID+129, 8, 57.8027, -0.197392, -13.2067, 100, 2000, 1742001),
+(@CGUID+130, 1, 87.9912, 57.5445, -13.1049, 0, 1000, 5),
+(@CGUID+130, 2, 73.6565, 52.4234, -13.2226, 0, 0, 0),
+(@CGUID+130, 3, 71.5909, 37.8002, -13.2262, 0, 0, 0),
+(@CGUID+130, 4, 70.0568, 10.5743, -13.2209, 0, 0, 0),
+(@CGUID+130, 5, 52.6026, -0.81406, -13.2027, 0, 0, 0),
+(@CGUID+130, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001);
+
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 -- Critters
 (@CGUID+1, 2110, 540, 3, 115.869, 223.215, -47.7406, 1.51629, 900, 900, 5, 0, 0, 1), -- Black Rat
@@ -128,6 +246,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+109, 20709, 540, 3, 235.918, -83.9248, 5.02341, 1.81514, 60, 120, 0, 0, 0, 0), -- Blade Dance Target
 (@CGUID+110, 20709, 540, 3, 242.375, -63.7785, 5.02294, 3.05433, 60, 120, 0, 0, 0, 0), -- Blade Dance Target
 (@CGUID+111, 20709, 540, 3, 243.196, -104.702, 5.02294, 5.14872, 60, 120, 0, 0, 0, 0), -- Blade Dance Target
+-- First Hallway
+(@CGUID+120, 16700, 540, 3, 62.7101, 2.91998, -13.0349, 3.16464, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Legionnaire
+-- normal
+(@CGUID+121, 0, 540, 1, 46.3248, 59.879, -12.9904, 0, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+122, 0, 540, 1, 83.755, 57.2887, -13.114, 3.15, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+123, 0, 540, 1, 53.5243, 60.0879, -13.0071, 0, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+124, 0, 540, 1, 90.0297, 57.4987, -13.1003, 3.261756, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
+(@CGUID+125, 0, 540, 1, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 0, 0, 2), -- creature_spawn_entry
+-- heroic
+(@CGUID+126, 17420, 540, 2, 46.3248, 59.879, -12.9904, 0, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+127, 17420, 540, 2, 83.755, 57.2887, -13.114, 3.15, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+128, 17420, 540, 2, 53.5243, 60.0879, -13.0071, 0, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+129, 17420, 540, 2,  90.0297, 57.4987, -13.1003, 3.261756, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
+(@CGUID+130, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 0, 0, 2); -- Shattered Hand Heathen
 
 -- ===========
 -- GAMEOBJECTS
@@ -158,16 +290,39 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- ======
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+1, 'Shattered Halls - Master Chest', 1, 1, 0, 0);
+(@SGGUID+1, 'Shattered Halls - Master Chest', 1, 1, 0, 0),
+-- First Legionnaire Groups
+(@SGGUID+2, 'Shattered Halls - First Group (Normal)', 0, 5, @CONDITIONID+1, 0),
+(@SGGUID+3, 'Shattered Halls - First Group (Heroic)', 0, 5, @CONDITIONID+1, 0);
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+2,16523, 0, 0, 0), -- Shattered Hand Savage
+(@SGGUID+2,17420, 0, 0, 0); -- Shattered Hand Heathen
+
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @OGUID+7, -1), -- Shattered Halls - Bound Adamantite Chest (184940)
 (@SGGUID+1, @OGUID+8, -1), -- Shattered Halls - Solid Adamantite Chest (184941)
+(@SGGUID+2, @OGUID+121, -1), -- Shattered Hand Heathen - Shattered Hand Savage
+(@SGGUID+2, @OGUID+122, -1), -- Shattered Hand Heathen - Shattered Hand Savage
+(@SGGUID+2, @OGUID+123, -1), -- Shattered Hand Heathen - Shattered Hand Savage
+(@SGGUID+2, @OGUID+124, -1), -- Shattered Hand Heathen - Shattered Hand Savage
+(@SGGUID+2, @OGUID+125, -1), -- Shattered Hand Heathen - Shattered Hand Savage
+(@SGGUID+3, @OGUID+126, -1), -- Shattered Hand Heathen 
+(@SGGUID+3, @OGUID+127, -1), -- Shattered Hand Heathen 
+(@SGGUID+3, @OGUID+128, -1), -- Shattered Hand Heathen 
+(@SGGUID+3, @OGUID+129, -1), -- Shattered Hand Heathen 
+(@SGGUID+3, @OGUID+130, -1); -- Shattered Hand Heathen 
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 
+DELETE FROM worldstate_name WHERE Id BETWEEN @WSID+1 AND @WSID+5;
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(@WSID+1, 'Shattered Halls - First Hallway - Legionnaire');
+
+DELETE FROM conditions WHERE condition_entry BETWEEN @CONDITIONID+1 AND @CONDITIONID+9;
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@CONDITIONID+1, '42', @WSID+1, '0', '1', '0', '0', 'Shattered Halls - First Hallway');
 
 -- ======
 -- EVENTS
@@ -182,6 +337,56 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- DBSCRIPTS
 -- =========
 
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RElAYID AND @RElAYID+51;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(@RElAYID+1,0,0,0,10051,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
+(@RElAYID+1,0,0,35,5,50,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
+
+(@RElAYID+2,0,0,31,17420,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Heaven'),
+(@RElAYID+2,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
+(@RElAYID+2,3000,0,37,0,0,2,17420,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Heathen'),
+(@RElAYID+2,4000,0,36,0,0,0,17420,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - face Legionnaire'),
+(@RElAYID+2,4000,0,36,0,0,0,17420,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Heathen'),
+(@RElAYID+2,5000,0,1,66,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - OneShotSalute'),
+(@RElAYID+2,7000,0,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotSalute'),
+(@RElAYID+2,9000,0,1,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - OneShotTalk'),
+(@RElAYID+2,10000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
+(@RElAYID+2,11000,0,36,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - reset orientation'),
+(@RElAYID+2,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
+
+(@RElAYID+3,0,0,31,16523,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Savage'),
+(@RElAYID+3,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
+(@RElAYID+3,3000,0,37,0,0,2,16523,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Savage'),
+(@RElAYID+3,4000,0,36,0,0,0,16523,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - face Legionnaire'),
+(@RElAYID+3,4000,0,36,0,0,0,16523,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Savage'),
+(@RElAYID+3,5000,0,1,66,0,0,16523,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - OneShotSalute'),
+(@RElAYID+3,7000,0,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotSalute'),
+(@RElAYID+3,9000,0,1,1,0,0,16523,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - OneShotTalk'),
+(@RElAYID+3,10000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
+(@RElAYID+3,11000,0,36,1,0,0,16523,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - reset orientation'),
+(@RElAYID+3,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
+-- till 50 are rp scripts, 50+ are guid based OnDeath scripts from event ai
+(@RElAYID+51,0,0,31,0,50,0,0,@CGUID+120,25,0,0,0,0,0,0,0,0,'First Hallway - Terminate script only if legionnaire is alive'), 
+(@RElAYID+51,0,1,35,0,0,0,16700,@CGUID+120,17,0,0,0,0,0,0,0,0,'First Hallway - send JustDied Event on Death');
+
+DELETE FROM dbscript_random_templates WHERE id IN (10050, 10051);
+INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+(10050, 1, @RElAYID+1, 10, 'Shattered Hand Legionnaire - yell'),
+(10050, 1, @RElAYID+2, 10, 'Shattered Hand Legionnaire - approach ally Heathen'),
+(10050, 1, @RElAYID+3, 10, 'Shattered Hand Legionnaire - approach ally Savage'),
+(10050, 1, 0, 70, 'Shattered Hand Legionnaire - nothing'),
+
+(10051, 0, 16350, 0, 'Shattered Hand Legionnaire - random yell 1'),
+(10051, 0, 17461, 0, 'Shattered Hand Legionnaire - random yell 2'),
+(10051, 0, 16349, 0, 'Shattered Hand Legionnaire - random yell 3'),
+(10051, 0, 16347, 0, 'Shattered Hand Legionnaire - random yell 4'),
+(10051, 0, 16346, 0, 'Shattered Hand Legionnaire - random yell 5');
+
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001,1670002, 1742001);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1670001, 0, 45, 0, 10050, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - 10% chance to yell, 20% chance to talk'),
+(1742001, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - Waypoint Pause'),
+(1742001, 1000, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - EMOTE_STATE_READY1H');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
