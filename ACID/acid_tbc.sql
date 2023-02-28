@@ -19622,7 +19622,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2213802','22138','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Dark Conclave Ritualist - Interrupt Channelling on Aggro'),
 -- Harbinger Saronen 22214
 -- Dragonmaw Peon (22252) - npc_dragonmaw_peon
--- Dragonmaw Ascendant
+-- Dragonmaw Ascendant 22253
 ('2225301','22253','0','0','100','1025','5000','9000','10000','12000','0','0','11','10966','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Uppercut'),
 ('2225302','22253','0','0','100','1025','3000','5000','6000','10000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Cleave'),
 ('2225303','22253','0','0','100','1025','7000','9000','6000','10000','0','0','11','17547','1','0','0','0','0','0','0','0','0','0','Dragonmaw Ascendant - Cast Mortal Strike'),

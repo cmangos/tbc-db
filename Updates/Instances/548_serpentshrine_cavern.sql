@@ -1257,10 +1257,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+289, 22820, 548, 1, 451.099, -544.984, -7.46327, 0.174533, 604800, 604800, 0, 0), -- Seer Olum
 (@CGUID+290, 21212, 548, 1, 29.99015, -922.4088, 42.98521, 1.396263, 604800, 604800, 0, 0); -- Lady Vashj
 
--- Greyheart Skulker - 1 dagger and 1 hammer
-UPDATE creature SET equipment_id=2123201 WHERE guid IN (@CGUID+138,@CGUID+135,@CGUID+134,@CGUID+131);
 -- Greyheart Nether-Mage/Tidecaller - 1 hammer
-UPDATE creature SET equipment_id=50130 WHERE guid IN (@CGUID+119,@CGUID+95,@CGUID+93,@CGUID+110,@CGUID+108);
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (2122901, 2122901);
+REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 2122901 FROM `creature` WHERE `guid` IN (@CGUID+93,@CGUID+95,@CGUID+108,@CGUID+110,@CGUID+119);
+-- Greyheart Skulker - 1 dagger and 1 hammer
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (2123201, 2123201);
+REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 2123201 FROM `creature` WHERE `guid` IN (@CGUID+131,@CGUID+134,@CGUID+135,@CGUID+138);
 
 -- ===========
 -- GAMEOBJECTS
@@ -1367,7 +1369,7 @@ INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`,
 (21214, 2000, 3, 0, 0, 0, 22820, 100, 3, 0, 0, 0, 0, 457.031, -543.231, -7.54802, 0.39321, 'Move Seer Olum out of cage'),
 (21214, 3000, 0, 0, 0, 0, 22820, 100, 3, 20460, 0, 0, 0, 0, 0, 0, 0, 'Force Seer Olum to say text');
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN 10105 AND 10112;
+DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10105 AND 10112;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10105,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - pause waypoints'),
 (10105,0,3,0,0,0,0,0,0,0,0,0,-57.3285,-371.109,1.58651,0,'Honor Guard - move to center (platform 1)'),
@@ -1434,6 +1436,11 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalon
 (10112,16000,0,10102,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - say random (template)'),
 (10112,18000,32,0,0,0,0,0,0,0,0,0,0,0,0,0,'Honor Guard - unpause waypoints'),
 (10112,18000,32,0,0,21301,10,0,0,0,0,0,0,0,0,0,'Shatterer - unpause waypoints');
+
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN (2122901,2123201);
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(2122901, 0, 42, 0, 0, 0, 0, 0, 0, 2028, 0, 0, 0, 0, 0, 0, 0, '21229/21230 - EquipSet 2'),
+(2123201, 0, 42, 0, 0, 0, 0, 0, 0, 2028, 31805, 0, 0, 0, 0, 0, 0, '21232 - EquipSet 2');
 
 DELETE FROM `dbscript_random_templates` WHERE `id` IN (10101,10102,10105,10106,10107,10108,10109,10110,10111,10112);
 INSERT INTO dbscript_random_templates (id, type, target_id, chance) VALUES

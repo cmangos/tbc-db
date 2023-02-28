@@ -501,8 +501,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+180, 0, 545, 3, 39.04907, -237.2698, -22.68699, 5.043978, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+181, 0, 545, 3, -17.88705, -184.7918, -21.95631, 1.973065, 7200, 7200, 2, 1); -- creature_spawn_entry
 
--- Using nondefault weapon
-UPDATE `creature` SET `equipment_id` = 17805 WHERE `guid` IN (@CGUID+21,@CGUID+22);
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (1772101, 1772101);
+REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 1772101 FROM `creature` WHERE `guid` IN (@CGUID+21,@CGUID+22);
 
 -- ===========
 -- GAMEOBJECTS
@@ -689,7 +689,10 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (184126, 12000, 20, 2, 0, 0, 17800, @CGUID+177, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038'),
 (184126, 12000, 20, 2, 0, 0, 17800, @CGUID+176, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Myrmidon 17800 - Change MovementType to 2 on 2000020038');
 
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN (1772101);
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1772101, 0, 42, 0, 0, 0, 0, 0, 0, 2023, 0, 0, 0, 0, 0, 0, 0, 'Coilfang Engineer - EquipSet 2');
+
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

@@ -216,8 +216,10 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+44, 17269), (@CGUID+44, 17270); -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
 
 -- Worker Equipment
-UPDATE `creature` SET `equipment_id` = 52512 WHERE `guid` IN (@CGUID+16,@CGUID+17); -- Bonechewer Hungerer 17259
-UPDATE `creature` SET `equipment_id` = 52513 WHERE `guid` IN (@CGUID+24,@CGUID+25); -- Bonechewer Ravener 17264
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (1725901, 1725901); -- Bonechewer Hungerer
+REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 1725901 FROM `creature` WHERE `guid` IN (@CGUID+16,@CGUID+17);
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (1726401, 1726401); -- Bonechewer Ravener
+REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 1726401 FROM `creature` WHERE `guid` IN (@CGUID+24,@CGUID+25);
 
 -- ===========
 -- GAMEOBJECTS
@@ -477,7 +479,12 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN (1725901,1726401);
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1725901, 0, 42, 0, 0, 0, 0, 0, 0, 2028, 11589, 0, 0, 0, 0, 0, 0, '17259 - EquipSet 2'),
+(1726401, 0, 42, 0, 0, 0, 0, 0, 0, 2028, 22215, 0, 0, 0, 0, 0, 0, '17264 - EquipSet 2');
+
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
