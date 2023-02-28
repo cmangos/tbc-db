@@ -128,7 +128,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+130, 3, 71.5909, 37.8002, -13.2262, 0, 0, 0),
 (@CGUID+130, 4, 70.0568, 10.5743, -13.2209, 0, 0, 0),
 (@CGUID+130, 5, 52.6026, -0.81406, -13.2027, 0, 0, 0),
-(@CGUID+130, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001);
+(@CGUID+130, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001),
+(@CGUID+133, 1, 56.966682,74.25795,-13.222891, 0, 0, 0),
+(@CGUID+133, 2, 64.00517,79.559944,-13.22254, 0, 0, 0),
+(@CGUID+133, 3, 73.133644, 78.94907, -13.222672, 0, 0, 0),
+(@CGUID+133, 4, 80.202415, 73.17268,-13.22248, 0, 0, 0),
+(@CGUID+133, 5, 73.133644, 78.94907, -13.222672, 0, 0, 0),
+(@CGUID+133, 6, 64.00517, 79.559944, -13.22254, 0, 0, 0);
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `currentwaypoint`, `DeathState`, `MovementType`) VALUES
 -- Critters
@@ -262,7 +268,38 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+130, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 0, 0, 2), -- Shattered Hand Heathen
 -- Group of 2 sentrys
 (@CGUID+131, 16507, 540, 3, 66.47607, 41.36766, -13.13848, 4.694936, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Sentry
-(@CGUID+132, 16507, 540, 3, 73.12358, 41.20788, -13.13848, 4.625123, 7200, 7200, 0, 0, 0, 0); -- Shattered Hand Sentry
+(@CGUID+132, 16507, 540, 3, 73.12358, 41.20788, -13.13848, 4.625123, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Sentry
+-- Big Legionnaire group in first room
+(@CGUID+133, 16700, 540, 3, 56.966682,74.25795,-13.222891, 0, 7200, 7200, 0, 0, 0, 2), -- Shattered Hand Legionnaire
+-- 4 Groups with a pair of 2 npc
+-- normal behavior:
+-- caster/brawler either left or right + savage/heathen on the other side
+-- heroic:
+-- caster/brawler left or right + heathen other side
+-- group 1 normal
+(@CGUID+134, 0, 540, 1, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0, 0, 0), -- left
+(@CGUID+135, 0, 540, 1,  56.461, 79.2481, -13.0995, 5.46288, 7200, 7200, 0, 0, 0, 0), -- right
+-- group 1 heroic
+(@CGUID+136, 0, 540, 2, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0, 0, 0), -- left
+(@CGUID+137, 0, 540, 2,  56.461, 79.2481, -13.0995, 5.46288, 7200, 7200, 0, 0, 0, 0), -- right
+-- group 2 normal
+(@CGUID+138, 0, 540, 1, 63.3135, 84.0945, -13.1156, 4.66003, 7200, 7200, 0, 0, 0, 0), -- left
+(@CGUID+139, 0, 540, 1,  65.4234, 84.6101, -13.1184, 4.60767, 7200, 7200, 0, 0, 0, 0), -- right
+-- group 2 heroic
+(@CGUID+140, 0, 540, 2, 63.3135, 84.0945, -13.1156, 4.66003, 7200, 7200, 0, 0, 0, 0), -- left
+(@CGUID+141, 0, 540, 2,  65.4234, 84.6101, -13.1184, 4.60767, 7200, 7200, 0, 0, 0, 0), -- right
+-- group 3 normal
+(@CGUID+142, 0, 540, 1, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- left
+(@CGUID+143, 0, 540, 1,  77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- right
+-- group 3 heroic
+(@CGUID+144, 0, 540, 2, 75.3346, 83.7984, -13.1169, 4.13643, 7200, 7200, 0, 0, 0, 0), -- left
+(@CGUID+145, 0, 540, 2,  77.3988, 82.8904, -13.1101, 3.9619, 7200, 7200, 0, 0, 0, 0), -- right
+-- group 4 normal
+(@CGUID+146, 0, 540, 1, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- left
+(@CGUID+147, 0, 540, 1,  84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0), -- right
+-- group 4 heroic
+(@CGUID+148, 0, 540, 2, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- left
+(@CGUID+149, 0, 540, 2,  84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0); -- right
 
 -- ===========
 -- GAMEOBJECTS
@@ -296,11 +333,26 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+1, 'Shattered Halls - Master Chest', 1, 1, 0, 0),
 -- First Legionnaire Groups
 (@SGGUID+2, 'Shattered Halls - First Group (Normal)', 0, 5, @CONDITIONID+1, 0),
-(@SGGUID+3, 'Shattered Halls - First Group (Heroic)', 0, 5, @CONDITIONID+1, 0);
+(@SGGUID+3, 'Shattered Halls - First Group (Heroic)', 0, 5, @CONDITIONID+1, 0),
+(@SGGUID+4, 'Shattered Halls - HallOfFathers - Group 1 - Normal', 0, 2, 0, 1),
+(@SGGUID+5, 'Shattered Halls - HallOfFathers - Group 1 - Heroic', 0, 2, 0, 1),
+(@SGGUID+6, 'Shattered Halls - HallOfFathers - Group 2 - Normal', 0, 2, 0, 1),
+(@SGGUID+7, 'Shattered Halls - HallOfFathers - Group 2 - Heroic', 0, 2, 0, 1),
+(@SGGUID+8, 'Shattered Halls - HallOfFathers - Group 3 - Normal', 0, 2, 0, 1),
+(@SGGUID+9, 'Shattered Halls - HallOfFathers - Group 3 - Heroic', 0, 2, 0, 1),
+(@SGGUID+10, 'Shattered Halls - HallOfFathers - Group 4 - Normal', 0, 2, 0, 1),
+(@SGGUID+11, 'Shattered Halls - HallOfFathers - Group 4 - Heroic', 0, 2, 0, 1);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+2,16523, 0, 0, 0), -- Shattered Hand Savage
-(@SGGUID+2,17420, 0, 0, 0); -- Shattered Hand Heathen
+(@SGGUID+2, 16523, 0, 5, 0), (@SGGUID+2, 17420, 0, 5, 0), -- Shattered Hand Savage/Heathen (normal)
+(@SGGUID+4, 16523, 0, 1, 0), (@SGGUID+4, 16593, 0, 1, 0), (@SGGUID+4, 16594, 0, 1, 0), (@SGGUID+4, 17420, 0, 1, 0), (@SGGUID+4, 17694, 0, 1, 0), -- Normal
+(@SGGUID+5, 16593, 0, 1, 0), (@SGGUID+5, 16594, 0, 1, 0), (@SGGUID+5, 17420, 1, 1, 0), (@SGGUID+5, 17694, 0, 1, 0), -- Heroic
+(@SGGUID+6, 16523, 0, 1, 0), (@SGGUID+6, 16593, 0, 1, 0), (@SGGUID+6, 16594, 0, 1, 0), (@SGGUID+6, 17420, 0, 1, 0), (@SGGUID+6, 17694, 0, 1, 0), -- Normal
+(@SGGUID+7, 16593, 0, 1, 0), (@SGGUID+7, 16594, 0, 1, 0), (@SGGUID+7, 17420, 1, 1, 0), (@SGGUID+7, 17694, 0, 1, 0), -- Heroic
+(@SGGUID+8, 16523, 0, 1, 0), (@SGGUID+8, 16593, 0, 1, 0), (@SGGUID+8, 16594, 0, 1, 0), (@SGGUID+8, 17420, 0, 1, 0), (@SGGUID+8, 17694, 0, 1, 0), -- Normal
+(@SGGUID+9, 16593, 0, 1, 0), (@SGGUID+9, 16594, 0, 1, 0), (@SGGUID+9, 17420, 1, 1, 0), (@SGGUID+9, 17694, 0, 1, 0), -- Heroic
+(@SGGUID+10, 16523, 0, 1, 0), (@SGGUID+10, 16593, 0, 1, 0), (@SGGUID+10, 16594, 0, 1, 0), (@SGGUID+10, 17420, 0, 1, 0), (@SGGUID+10, 17694, 0, 1, 0), -- Normal
+(@SGGUID+11, 16593, 0, 1, 0), (@SGGUID+11, 16594, 0, 1, 0), (@SGGUID+11, 17420, 1, 1, 0), (@SGGUID+11, 17694, 0, 1, 0); -- Heroic
 
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
@@ -315,7 +367,31 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+3, @OGUID+127, -1), -- Shattered Hand Heathen 
 (@SGGUID+3, @OGUID+128, -1), -- Shattered Hand Heathen 
 (@SGGUID+3, @OGUID+129, -1), -- Shattered Hand Heathen 
-(@SGGUID+3, @OGUID+130, -1); -- Shattered Hand Heathen 
+(@SGGUID+3, @OGUID+130, -1), -- Shattered Hand Heathen 
+-- Group 1 normal
+(@SGGUID+4, @OGUID+134, -1), 
+(@SGGUID+4, @OGUID+135, -1), 
+-- Group 1 heroic
+(@SGGUID+5, @OGUID+136, -1),
+(@SGGUID+5, @OGUID+137, -1), 
+-- Group 2 normal
+(@SGGUID+6, @OGUID+138, -1),
+(@SGGUID+6, @OGUID+139, -1),
+-- Group 1 heroic
+(@SGGUID+7, @OGUID+140, -1),
+(@SGGUID+7, @OGUID+141, -1),
+-- Group 3 normal
+(@SGGUID+8, @OGUID+142, -1),
+(@SGGUID+8, @OGUID+143, -1),
+-- Group 3 heroic
+(@SGGUID+9, @OGUID+144, -1),
+(@SGGUID+9, @OGUID+145, -1),
+-- Group 4 normal
+(@SGGUID+10, @OGUID+146, -1),
+(@SGGUID+10, @OGUID+147, -1),
+-- Group 4 heroic
+(@SGGUID+11, @OGUID+148, -1),
+(@SGGUID+11, @OGUID+149, -1);
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 
