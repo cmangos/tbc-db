@@ -5424,8 +5424,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Agustus Moulaine 1349
 -- Theresa Moulaine 1350
 -- Brother Cassius 1351
--- Adam (1366) - NSR
--- Billy (1367) - NSR
+-- Adam 1366
+('136601','1366','30','0','80','1','5','1367','0','0','0','0','53','9994','0','0','0','0','0','0','0','0','0','0','Adam - (80% chance) START_RELAY_SCRIPT on Receive AI Event Custom A'),
+-- Billy 1367
+('136701','1367','1','0','100','1','30000','60000','55000','120000','0','0','54','0','0','28','45','5','50','0','0','0','0','0','Billy - START_RELAY_SCRIPT (Random) and Send Event A on OOC Timer'),
 -- Justin 1368
 ('136801','1368','1','0','100','1','30000','60000','30000','60000','0','0','53','4','0','0','0','0','0','0','0','0','0','0','Justin - Start Relay Script OOC'),
 -- Brandon (1370) - NSR
