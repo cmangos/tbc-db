@@ -300,6 +300,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 -- group 4 heroic
 (@CGUID+148, 0, 540, 2, 82.4351, 76.1707, -13.1121, 3.735, 7200, 7200, 0, 0, 0, 0), -- left
 (@CGUID+149, 0, 540, 2,  84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0, 0, 0); -- right
+-- Group of 2 sentrys
+(@CGUID+150, 16507, 540, 3, 65.25273, 97.51249, -13.13848, 4.694936, 7200, 7200, 0, 0, 0, 0), -- Shattered Hand Sentry
+(@CGUID+151, 16507, 540, 3, 73.99692, 96.77193, -13.13848, 4.537856, 7200, 7200, 0, 0, 0, 0); -- Shattered Hand Sentry
 
 -- ===========
 -- GAMEOBJECTS
@@ -334,6 +337,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- First Legionnaire Groups
 (@SGGUID+2, 'Shattered Halls - First Group (Normal)', 0, 5, @CONDITIONID+1, 0),
 (@SGGUID+3, 'Shattered Halls - First Group (Heroic)', 0, 5, @CONDITIONID+1, 0),
+-- 2nd legionnaire group
 (@SGGUID+4, 'Shattered Halls - HallOfFathers - Group 1 - Normal', 0, 2, 0, 1),
 (@SGGUID+5, 'Shattered Halls - HallOfFathers - Group 1 - Heroic', 0, 2, 0, 1),
 (@SGGUID+6, 'Shattered Halls - HallOfFathers - Group 2 - Normal', 0, 2, 0, 1),
@@ -341,7 +345,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+8, 'Shattered Halls - HallOfFathers - Group 3 - Normal', 0, 2, 0, 1),
 (@SGGUID+9, 'Shattered Halls - HallOfFathers - Group 3 - Heroic', 0, 2, 0, 1),
 (@SGGUID+10, 'Shattered Halls - HallOfFathers - Group 4 - Normal', 0, 2, 0, 1),
-(@SGGUID+11, 'Shattered Halls - HallOfFathers - Group 4 - Heroic', 0, 2, 0, 1);
+(@SGGUID+11, 'Shattered Halls - HallOfFathers - Group 4 - Heroic', 0, 2, 0, 1),
+-- Sentry Group
+(@SGGUID+12, 'Shattered Halls - HallOfFathers - Group 5', 0, 2, 0, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+2, 16523, 0, 5, 0), (@SGGUID+2, 17420, 0, 5, 0), -- Shattered Hand Savage/Heathen (normal)
@@ -391,7 +397,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+10, @OGUID+147, -1),
 -- Group 4 heroic
 (@SGGUID+11, @OGUID+148, -1),
-(@SGGUID+11, @OGUID+149, -1);
+(@SGGUID+11, @OGUID+149, -1),
+-- Group 5 2 sentrys
+(@SGGUID+12, @OGUID+150, -1),
+(@SGGUID+12, @OGUID+151, -1);
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 
