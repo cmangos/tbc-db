@@ -464,13 +464,13 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- =========
 -- DBSCRIPTS
 -- =========
-
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RElAYID AND @RElAYID+51;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- legionnaire 1 main rp
 (@RElAYID+1,0,0,0,10051,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
 (@RElAYID+1,0,0,35,5,50,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
-
-(@RElAYID+2,0,0,31,17420,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Heaven'),
+-- legionnaire 1 rp with shattered hand heathen npc
+(@RElAYID+2,0,0,31,17420,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for heathen'),
 (@RElAYID+2,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
 (@RElAYID+2,3000,0,37,0,0,2,17420,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Heathen'),
 (@RElAYID+2,4000,0,36,0,0,0,17420,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - face Legionnaire'),
@@ -481,7 +481,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RElAYID+2,10000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
 (@RElAYID+2,11000,0,36,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - reset orientation'),
 (@RElAYID+2,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
-
+-- legionnaire 1 rp with shattered hand savage
 (@RElAYID+3,0,0,31,16523,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Savage'),
 (@RElAYID+3,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
 (@RElAYID+3,3000,0,37,0,0,2,16523,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Savage'),
@@ -503,21 +503,22 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 DELETE FROM dbscript_random_templates WHERE id IN (10050, 10051);
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+-- legionnaire 1 rnd script
 (10050, 1, @RElAYID+1, 10, 'Shattered Hand Legionnaire - yell'),
 (10050, 1, @RElAYID+2, 10, 'Shattered Hand Legionnaire - approach ally Heathen'),
 (10050, 1, @RElAYID+3, 10, 'Shattered Hand Legionnaire - approach ally Savage'),
 (10050, 1, 0, 70, 'Shattered Hand Legionnaire - nothing'),
-
+-- Forming up yells
 (10051, 0, 16350, 0, 'Shattered Hand Legionnaire - random yell 1'),
 (10051, 0, 17461, 0, 'Shattered Hand Legionnaire - random yell 2'),
 (10051, 0, 16349, 0, 'Shattered Hand Legionnaire - random yell 3'),
 (10051, 0, 16347, 0, 'Shattered Hand Legionnaire - random yell 4'),
 (10051, 0, 16346, 0, 'Shattered Hand Legionnaire - random yell 5');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001,1670002, 1670003, 1670004, 1659301, 1670401, 1742001, 1742002);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001, 1670002, 1670003, 1670004, 1659301, 1670401, 1742001, 1742002);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1670001, 0, 45, 0, 10050, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - 10% chance to yell, 20% chance to talk'),
-(1670003, 0, 45, 0, 10060, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - OnSpawn talk'),
+(1670003, 0, 0, 10051, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - OnSpawn talk'),
 (1670004, 1000, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - Emote Rawr'),
 (1670004, 4000, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - Change Movement'),
 (1659301, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'creature_spawn_entry - Change Movement'),
