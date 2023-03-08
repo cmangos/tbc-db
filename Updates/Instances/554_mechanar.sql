@@ -91,7 +91,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+47, 5, 175.857, 36.2103, 1.01048, 4.15964, 0, 0),
 (@CGUID+47, 6, 180.796, 39.2187, -0.006297, 0.397588, 0, 0),
 (@CGUID+47, 7, 191.442, 40.9485, -0.006297, 0.124269, 0, 0),
-(@CGUID+55, 1, 226.707, -109.536, -0.00693, 5.82783, 0, 1971601),
+(@CGUID+55, 1, 226.707, -109.536, -0.00693, 5.82783, 1, 5),
 (@CGUID+55, 2, 207.09, -95.4179, -0.000968, 2.55508, 0, 0),
 (@CGUID+55, 3, 204.143, -88.2587, 0.000499, 1.96132, 0, 0),
 (@CGUID+55, 4, 206.056, -76.7196, 0.00145, 1.33614, 0, 0),
@@ -397,10 +397,8 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id=1971601;
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1971601, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mechanar Tinkerer (Mechanar) RUN ON');
 
+-- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
