@@ -495,10 +495,10 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RElAYID+3,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
 -- till 50 are rp scripts, 50+ are guid based OnDeath scripts from event ai
 -- first legionnaire group
-(@RElAYID+51,0,0,31,0,50,0,0,@CGUID+120,25,0,0,0,0,0,0,0,0,'First Hallway - Terminate script only if legionnaire is alive'), 
+(@RElAYID+51,0,0,31,0,50,0,16700,@CGUID+120,25,0,0,0,0,0,0,0,0,'First Hallway - Terminate script only if legionnaire is alive'),  -- this is currently not working, but we need the check if guid is alive to prevent dberrors on next step
 (@RElAYID+51,0,1,35,0,0,0,16700,@CGUID+120,17,0,0,0,0,0,0,0,0,'First Hallway - send JustDied Event on Death'),
 -- 2nd legionnaire grp
-(@RElAYID+52,0,0,31,0,50,0,0,@CGUID+133,25,0,0,0,0,0,0,0,0,'Legionnaire Group 2 - Terminate script only if legionnaire is alive'), 
+(@RElAYID+52,0,0,31,0,50,0,16700,@CGUID+133,25,0,0,0,0,0,0,0,0,'Legionnaire Group 2 - Terminate script only if legionnaire is alive'), -- this is currently not working, but we need the check if guid is alive to prevent dberrors on next step
 (@RElAYID+52,0,1,35,0,0,0,16700,@CGUID+133,17,0,0,0,0,0,0,0,0,'Legionnaire Group 2 - send JustDied Event on Death');
 
 DELETE FROM dbscript_random_templates WHERE id IN (10050, 10051);
