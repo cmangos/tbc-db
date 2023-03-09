@@ -27,7 +27,7 @@ INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalon
 (@PATH*100+3,5000,2,10,12977,0,0,0,0,0,0,0,0,0,0,-1095.0416,1196.1388,89.82304,3.612831,0,0,'Cork Gizelton - Spawn Kolkar Ambusher'),
 (@PATH*100+3,5000,3,10,12977,0,0,0,0,0,0,0,0,0,0,-1108.1927,1181.0596,89.82304,1.012290,0,0,'Cork Gizelton - Spawn Kolkar Ambusher'),
 -- Finnished
-(@PATH*100+4,4000,0,0,0,0,0,0,0,0,7334,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
+(@PATH*100+4,3000,0,0,0,0,0,0,0,0,7334,0,0,0,0,0,0,0,0,0,0,'Cork Gizelton - Say Text'),
 -- Quest finished - change faction and run mode from group members
 (@PATH*100+4, 0, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Cork - run on'),
 (@PATH*100+4, 2000, 0, 25, 1, 0, 0, 11626, 28728, 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Rigger - run on'),
@@ -64,8 +64,8 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@PATH,16,-1177.8832,1199.1436,95.581436,100,0,0),
 (@PATH,17,-1208.9868,1207.3119,100.70928,100,0,0),
 -- Quest Finished 
-(@PATH,18,-1243.2097,1211.5519,106.35681,100,4000,@PATH*100+4),
-(@PATH,19,-1243.2097,1211.5519,106.35681,100,5000,0);
+(@PATH,18,-1243.2097,1211.5519,106.35681,100,5000,@PATH*100+4),
+(@PATH,19,-1243.2097,1211.5519,106.35681,100,1000,0);
 
 -- Run and faction change
 DELETE FROM dbscripts_on_quest_start WHERE id = 5821;
