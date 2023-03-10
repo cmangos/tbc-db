@@ -18,3 +18,4 @@ INSERT INTO dbscripts_on_relay(id, delay, priority, command, datalong, datalong2
 (14469,22000,0,20,2,0,0,14470,20,0,2,0,0,0,0,0,0,0,0,0,0,'Impsy - Change Movement'),
 (14469,22000,1,0,0,0,0,14470,20,0,9623,0,0,0,0,0,0,0,0,0,0,'Impsy - Say Text'),
 (14469,22000,2,20,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,'Niby the Almighty - Change Movement');
+
