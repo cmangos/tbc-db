@@ -585,9 +585,19 @@ INSERT INTO `gameobject_spawn_entry` (`guid`, `entry`) VALUES
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(5420001, 'Blood Furnace - Group 1', 0, 0, 0, 3);
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(5420001, 17371, 1, 1, 0),
+(5420001, 17395, 1, 1, 0),
+(5420001, 17414, 1, 1, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`) VALUES
+(5420001, @CGUID+35),
+(5420001, @CGUID+44),
+(5420001, @CGUID+86);
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
@@ -620,23 +630,6 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (@OGUID+33, @PGUID+90, 0, 'Blood Furnace - Bound Adamantite Chest, Solid Adamantite Chest (184936,184937)');
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
-
--- ============
--- SPAWN GROUPS
--- ============
-
-INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(5420001, 'Blood Furnace - Group 1', 0, 0, 0, 3);
-
-INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(5420001, 17371, 1, 1, 0),
-(5420001, 17395, 1, 1, 0),
-(5420001, 17414, 1, 1, 0);
-
-INSERT INTO `spawn_group_spawn` (`Id`, `Guid`) VALUES
-(5420001, @CGUID+35),
-(5420001, @CGUID+44),
-(5420001, @CGUID+86);
 
 -- =========
 -- DBSCRIPTS

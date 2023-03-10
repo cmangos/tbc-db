@@ -1540,8 +1540,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+34, 188115, 580, 1, 1651.921, 635.3501, 28.12865, 6.19592, 0, 0, -0.04361916, 0.9990482, 7200, 7200), -- Orb of the Blue Flight
 (@OGUID+35, 188116, 580, 1, 1696.155, 674.9676, 28.05021, 4.81711, 0, 0, -0.6691303, 0.743145, 7200, 7200); -- Orb of the Blue Flight
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+25, 100, 0); -- Sanctum Planetarium
+INSERT INTO `gameobject_addon` (`guid`, `state`) VALUES
+(@OGUID+25, 0); -- Sanctum Planetarium
 
 -- ======
 -- EVENTS
@@ -1553,17 +1553,6 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 (@OGUID+22, 316),  -- Spawn Agamath, The First Gate -> SWP All Gates Closed
 (@OGUID+20, 317),  -- Spawn Rohendor, The Second Gate -> SWP First Gate Open
 (@OGUID+21, 318);  -- Spawn Archonisus, The Third Gate -> SWP Second Gate Open
-
--- ============
--- SPAWN GROUPS
--- ============
-
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 
 -- ============
 -- SPAWN GROUPS
@@ -1582,6 +1571,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`) VALUES
 (5800001, @CGUID+164),
 (5800001, @CGUID+165),
 (5800001, @CGUID+169);
+
+-- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+-- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+-- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 
 -- =========
 -- DBSCRIPTS

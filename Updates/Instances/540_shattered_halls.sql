@@ -639,7 +639,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (16809, 540, 16808, 1, 0), -- Warbringer O'mrogg -> Warchief Kargath Bladefist
-(17693, 540, 17427, 1, 0), -- Shattered Hand Scout -> Shattered Hand Archer-- Abuse Prevention (void Aggro, npc_Shattered_Hand_Scout)
+(17693, 540, 17427, 1, 0), -- Shattered Hand Scout -> Shattered Hand Archer				-- Abuse Prevention (void Aggro, npc_Shattered_Hand_Scout)
 (17427, 540, 17427, 3, 0), -- Shattered Hand Archer -> Shattered Hand Archer
 (17461, 540, 17427, 3, 0), -- Shattered Hand Blood Guard -> Shattered Hand Archer
 (20923, 540, 17427, 3, 0); -- Blood Guard Porung -> Shattered Hand Archer
@@ -1007,7 +1007,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+304, 17420, 540, 2, 46.3248, 59.879, -12.9904, 0, 5, 5, 0, 2), -- Shattered Hand Heathen
 (@CGUID+305, 17420, 540, 2, 83.755, 57.2887, -13.114, 3.15, 5, 5, 0, 2), -- Shattered Hand Heathen
 (@CGUID+306, 17420, 540, 2, 53.5243, 60.0879, -13.0071, 0, 5, 5, 0, 2), -- Shattered Hand Heathen
-(@CGUID+307, 17420, 540, 2,  90.0297, 57.4987, -13.1003, 3.261756, 5, 5, 0, 2), -- Shattered Hand Heathen
+(@CGUID+307, 17420, 540, 2, 90.0297, 57.4987, -13.1003, 3.261756, 5, 5, 0, 2), -- Shattered Hand Heathen
 (@CGUID+308, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 2), -- Shattered Hand Heathen
 -- Hall of the Fathers, random between Shattered Hand Heathen in heroic mode only
 -- Hall of the Fathers, random between Shattered Hand Heathen or Savage in normal mode only

@@ -542,8 +542,6 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (24858, 4, 39, 364.2945, 1429.232, 99.35547, 100, 0, 0),
 (24858, 4, 40, 385.5457, 1429.076, 97.52219, 100, 0, 0);
 
-UPDATE creature SET equipment_id=5592 WHERE guid=@CGUID+104; -- Amanishi Guardian (starts holding a spear for gong event RP script)
-
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 -- (@CGUID+23, 0, 0, 1, 0, 0, '46750'), -- World Trigger (Not Immune PC)
 (@CGUID+66, 0, 1, 1, 0, 0, '18950'), -- Amani'shi Scout
@@ -1258,8 +1256,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+365, 24358, 568, 1, 120.687, 1674, 42.0217, 1.59044, 7200, 7200, 0, 0), -- Harrison Jones
 (@CGUID+366, 24363, 568, 1, 118.8317, 1009.857, 67.82713, 4.869469, 259200, 259200, 0, 0), -- Hex Lord Malacrass (Speech Trigger)
 (@CGUID+367, 24363, 568, 1, 116.2857, 1277.441, -15.26866, 4.590216, 259200, 259200, 0, 0), -- Hex Lord Malacrass (Speech Trigger)
-(@CGUID+368, 24374, 568, 1, 130.0015, 1071.3330, 24.10230, 1.531324, 7200, 7200, 0, 0), -- Amani'shi Berserker// Spawn Event with Movement?
-(@CGUID+369, 24374, 568, 1, 108.6336, 1069.8063, 24.35230, 1.637809, 7200, 7200, 0, 0), -- Amani'shi Berserker// Spawn Event with Movement?
+(@CGUID+368, 24374, 568, 1, 130.0015, 1071.3330, 24.10230, 1.531324, 7200, 7200, 0, 0), -- Amani'shi Berserker					// Spawn Event with Movement?
+(@CGUID+369, 24374, 568, 1, 108.6336, 1069.8063, 24.35230, 1.637809, 7200, 7200, 0, 0), -- Amani'shi Berserker					// Spawn Event with Movement?
 (@CGUID+370, 24374, 568, 1, 127.3527, 976.71862, 31.15251, 1.762782, 7200, 7200, 0, 0), -- Amani'shi Berserker
 (@CGUID+371, 24374, 568, 1, 109.4270, 976.39910, 29.63550, 1.396263, 7200, 7200, 0, 0), -- Amani'shi Berserker
 (@CGUID+372, 24396, 568, 1, 93.9677, 1219.41, -19.3522, 0.995478, 259200, 259200, 5, 1), -- Forest Frog
@@ -1416,6 +1414,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+520, 24223, 568, 1, 429.48010, 1371.66577, 74.41665, 5.46288, 7200, 7200, 0, 0), -- Eagle Trash Aggro Trigger
 (@CGUID+521, 24223, 568, 1, 446.02258, 1354.25329, 85.51732, 5.84685, 7200, 7200, 0, 0); -- Eagle Trash Aggro Trigger
 
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (2359701, 2359701);
+REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 2359701 FROM `creature` WHERE `guid` IN (@CGUID+104); -- Amanishi Guardian (starts holding a spear for gong event RP script)
+
 -- ===========
 -- GAMEOBJECTS
 -- ===========
@@ -1517,13 +1518,13 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+94, 186338, 568, 1, 417.833, 1499.60, 81.6331, 2.28637, 0, 0, 0.909960, 0.414694, 180, 180), -- Zul'Aman Dummy Cage
 (@OGUID+95, 191460, 568, 1, 245.824, 1018.73, 3.5506, -2.9234, 0, 0, -0.994055, 0.108872, 180, 180); -- Bonfire
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+39, 100, 0), -- Zul'Aman Dummy Cage - Open
-(@OGUID+40, 100, 0), -- Zul'Aman Dummy Cage - Open
-(@OGUID+41, 100, 0), -- Zul'Aman Dummy Cage - Open
-(@OGUID+42, 100, 0), -- Zul'Aman Dummy Cage - Open
-(@OGUID+43, 100, 0), -- Zul'Aman Dummy Cage - Open
-(@OGUID+44, 100, 0); -- Zul'Aman Dummy Cage - Open
+INSERT INTO `gameobject_addon` (`guid`, `state`) VALUES
+(@OGUID+39, 0), -- Zul'Aman Dummy Cage - Open
+(@OGUID+40, 0), -- Zul'Aman Dummy Cage - Open
+(@OGUID+41, 0), -- Zul'Aman Dummy Cage - Open
+(@OGUID+42, 0), -- Zul'Aman Dummy Cage - Open
+(@OGUID+43, 0), -- Zul'Aman Dummy Cage - Open
+(@OGUID+44, 0); -- Zul'Aman Dummy Cage - Open
 
 -- ======
 -- EVENTS
@@ -1573,7 +1574,10 @@ INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`
 (186430, 0, 0, 0, 0, 0, 23897, 10, 0, 23208, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Say Text 1'),
 (186430, 2000, 20, 2, 0, 0, 23897, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Zungam - Set Waypoint Movement');
 
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN (2359701);
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(2359701, 0, 42, 0, 0, 0, 0, 0, 0, 13631, 0, 0, 0, 0, 0, 0, 0, 'Amani\'shi Guardian - EquipSet 2');
+
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

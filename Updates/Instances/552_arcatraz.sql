@@ -590,9 +590,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+12, 184319, 552, 3, 199.911, 102.009, 23.6937, 3.14159, 0, 0, 0, 0, 43200, 43200), -- Containment Core Security Field Beta
 (@OGUID+13, 184802, 552, 3, 445.786, -169.263, 43.0466, -0.558505, 0, 0, 0, 0, 43200, 43200); -- Warden's Shield
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+9, 0, 0), -- Instance_Portal_Difficulty_0
-(@OGUID+10, 0, 0); -- Instance_Portal_Difficulty_1
+-- INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 -- ======
 -- EVENTS

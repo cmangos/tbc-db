@@ -496,7 +496,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+30, 18493), (@CGUID+30, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
 (@CGUID+35, 18495), (@CGUID+35, 18497), -- Auchenai Vindicator, Auchenai Monk
 (@CGUID+36, 18493), (@CGUID+36, 18495), (@CGUID+36, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk
-(@CGUID+39, 18493), (@CGUID+39, 18495), -- (@CGUID+39, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk// commented due to x3 Monk combo
+(@CGUID+39, 18493), (@CGUID+39, 18495), -- (@CGUID+39, 18497), -- Auchenai Soulpriest, Auchenai Vindicator, Auchenai Monk								// commented due to x3 Monk combo needs spawn group!
 (@CGUID+41, 18493), (@CGUID+41, 18495), -- Auchenai Soulpriest, Auchenai Vindicator
 (@CGUID+56, 18556), (@CGUID+56, 18557), (@CGUID+56, 18558), (@CGUID+56, 18559), -- Phasing Soldier, Phasing Cleric, Phasing Sorcerer, Phasing Stalker
 (@CGUID+57, 18556), (@CGUID+57, 18557), -- Phasing Soldier, Phasing Cleric

@@ -990,13 +990,13 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+8, 184596, 550, 1, 744.0446, -44.63448, 46.66097, 3.141593, 0, 0, -1, 0, 300, 300), -- Doodad_Kael_Explode_FX_Right01
 (@OGUID+9, 184597, 550, 1, 744.0448, 42.35362, 46.661, 3.141593, 0, 0, -1, 0, 300, 300); -- Doodad_Kael_Explode_FX_Left01
 
-INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
-(@OGUID+2, 100, 0), -- Doodad_TK_Arcane_Door_Horiz04
-(@OGUID+3, 100, 0), -- Doodad_TK_Arcane_Door_Horiz03
-(@OGUID+4, 100, 0), -- Doodad_TK_Arcane_Door_Vert03
-(@OGUID+5, 100, 0), -- Doodad_TK_Raid_Door03
-(@OGUID+6, 100, 0), -- Doodad_TK_Arcane_Door_Vert04
-(@OGUID+7, 100, 0); -- Doodad_TK_Raid_Door04
+INSERT INTO `gameobject_addon` (`guid`, `state`) VALUES
+(@OGUID+2, 0), -- Doodad_TK_Arcane_Door_Horiz04
+(@OGUID+3, 0), -- Doodad_TK_Arcane_Door_Horiz03
+(@OGUID+4, 0), -- Doodad_TK_Arcane_Door_Vert03
+(@OGUID+5, 0), -- Doodad_TK_Raid_Door03
+(@OGUID+6, 0), -- Doodad_TK_Arcane_Door_Vert04
+(@OGUID+7, 0); -- Doodad_TK_Raid_Door04
 
 -- ======
 -- EVENTS
