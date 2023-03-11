@@ -5316,6 +5316,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('589401','5894','9','0','100','1025','0','25','12000','18000','0','0','11','8056','1','0','0','0','0','0','0','0','0','0','Corrupt Minor Manifestation of Water - Cast Frost Shock'),
 ('589402','5894','0','0','100','1025','12000','19000','18000','24000','0','0','11','122','0','0','0','0','0','0','0','0','0','0','Corrupt Minor Manifestation of Water - Cast Frost Nova'),
 -- Minor Manifestation of Water (5895) - NSR
+('589501','5895','11','0','100','0','0','0','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Minor Manifestation of Water - Set Phase 1 OnSpawn'),
+('589502','5895','1','1','100','1','300000','300000','300000','300000','0','0','53','96','0','0','0','0','0','0','0','0','0','0','Minor Manifestation of Water - Start RelayScript'),
 -- Lake Frenzy (6033) - NSR
 -- Deathguard Podrig (6389) - NSR
 -- Astor Hadren (6497)
