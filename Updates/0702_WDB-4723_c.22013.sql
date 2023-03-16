@@ -1,12 +1,16 @@
--- Eye of the Storm Emissary 22013
+-- Stormwind Emissary Patrol
+-- 18	1	40320	6240	283	0	0	Call to Arms: Alterac Valley!
+-- 19	1	40320	6240	284	0	0	Call to Arms: Warsong Gulch!
+-- 20	1	40320	6240	285	0	0	Call to Arms: Arathi Basin!
+-- 21	1	40320	6240	353	0	0	Call to Arms: Eye of the Storm!
 
 -- classic/tbcmangos
-DELETE FROM creature_addon WHERE guid IN (190520.190522,190524,190526,190521,190523,190525,190527);
-DELETE FROM creature_movement WHERE id IN (190520.190522,190524,190526,190521,190523,190525,190527);
-DELETE FROM game_event_creature WHERE guid IN (190520.190522,190524,190526,190521,190523,190525,190527);
-DELETE FROM game_event_creature_data WHERE guid IN (190520.190522,190524,190526,190521,190523,190525,190527);
-DELETE FROM creature_battleground WHERE guid IN (190520.190522,190524,190526,190521,190523,190525,190527);
-DELETE FROM creature_linking WHERE guid IN (190520.190522,190524,190526,190521,190523,190525,190527);
+DELETE FROM creature_addon WHERE guid IN (190520,190522,190524,190526,190521,190523,190525,190527);
+DELETE FROM creature_movement WHERE id IN (190520,190522,190524,190526,190521,190523,190525,190527);
+DELETE FROM game_event_creature WHERE guid IN (190520,190522,190524,190526,190521,190523,190525,190527);
+DELETE FROM game_event_creature_data WHERE guid IN (190520,190522,190524,190526,190521,190523,190525,190527);
+DELETE FROM creature_battleground WHERE guid IN (190520,190522,190524,190526,190521,190523,190525,190527);
+DELETE FROM creature_linking WHERE guid IN (190520,190522,190524,190526,190521,190523,190525,190527);
 DELETE FROM creature where guid IN (
 190520, -- 15103	-8570.55	536.096	101.568
 190522, -- 15102	-8570.55	536.096	101.568
@@ -28,32 +32,43 @@ DELETE FROM creature_linking WHERE guid BETWEEN 11559 AND 11562
  OR master_guid BETWEEN 11559 AND 11562;
 DELETE FROM creature WHERE guid BETWEEN 11559 AND 11562;
 INSERT INTO creature (guid, id, map, position_x, position_y, position_z, orientation, spawntimesecsmin, spawntimesecsmax, spawndist, MovementType) values
-(11559,22013,0,-8351.663,627.2608,95.24413,5.21675,300,300,0,0),
-(11560,22013,0,-8351.663,627.2608,95.24413,5.21675,300,300,0,0),
-(11561,22013,0,-8411.891,575.0306,92.31787,0.8552,300,300,0,0),
-(11562,22013,0,-8409.065,578.2552,92.0611,3.9968,300,300,0,0);
+(11559,0,0,-8351.663,627.2608,95.24413,5.21675,300,300,0,0),
+(11560,0,0,-8351.663,627.2608,95.24413,5.21675,300,300,0,0);
+-- (11561,22013,0,-8411.891,575.0306,92.31787,0.8552,300,300,0,0), -- 190183
+-- (11562,22013,0,-8409.065,578.2552,92.0611,3.9968,300,300,0,0); -- 190182
 
 -- Spawn Groups
 DELETE FROM `spawn_group` WHERE id = 19980;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(19980, 'Stormwind - Eye of the Storm Emissary 22013 x2 - Patrol', 0, 0, 19998, 0x02 | 0x08);
+(19980, 'Stormwind - Battleground Emissary x2 - Patrol', 0, 0, 19998, 0x02 | 0x08);
+
+DELETE FROM conditions WHERE condition_entry IN (19998,6018,6019,6020,6021);
+INSERT INTO conditions (condition_entry, `type`, value1, value2, value3, value4, flags, comments) VALUES
+(6018, 12, 18, 0, 0, 0, 0, 'Event ID 18 Active'),
+(6019, 12, 19, 0, 0, 0, 0, 'Event ID 19 Active'),
+(6020, 12, 20, 0, 0, 0, 0, 'Event ID 20 Active'),
+(6021, 12, 21, 0, 0, 0, 0, 'Event ID 21 Active'),
+(19998, -2, 6018, 6019, 6020, 6021, 0, 'any classic/tbc Battleground Emissary Event Active');
+
+-- wotlkmangos
+-- (6025, 12, 25, 0, 0, 0, 0, 'Event ID 25 Active'), -- 25	1	60480	5758	400	0	0	Call to Arms: Strand of the Ancients!
+-- (6038, 12, 38, 0, 0, 0, 0, 'Event ID 25 Active'), -- 38	1	60480	5758	420	0	0	Call to Arms: Isle of Conquest!
+-- (20XX1, -2, 6018, 6019, 6020, 6021, 0, 'any classic/tbc Battleground Emissary Event Active'),
+-- (20XX2, -2, 6025, 6038, 0, 0, 0, 'any wotlk Battleground Emissary Event Active'),
+-- (19998, -2, 20XX1, 20XX2, 0, 0, 0, 'any classic/tbc/wotlk Battleground Emissary Event Active');
 
 DELETE FROM `spawn_group_spawn` WHERE id = 19980;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (19980, 11559, 0),
 (19980, 11560, 1);
 
-DELETE FROM conditions WHERE condition_entry IN (19998);
-INSERT INTO conditions (condition_entry, `type`, value1, value2, value3, flags, comments) VALUES
-(19998, 12, 21, 0, 0, 0, '');
-
 DELETE FROM `spawn_group_formation` WHERE id = 19980;
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(19980, 1, 2, 0, 19980, 4, 'Stormwind - Eye of the Storm Emissary 22013 x2 - Patrol'); -- linear
+(19980, 1, 2, 0, 19980, 4, 'Stormwind - Battleground Emissary x2 - Patrol'); -- linear
 
 DELETE FROM `waypoint_path_name` WHERE PathId = 19980;
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
-(19980,'Stormwind - Eye of the Storm Emissary 22013 x2 - Patrol');
+(19980,'Stormwind - Battleground Battleground Emissary x2 - Patrol');
 
 DELETE FROM `waypoint_path` WHERE PathId = 19980;
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
@@ -133,6 +148,35 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`,`Positi
 (19980,74,-8731.334,1028.1381,94.18728,100,0,0),
 (19980,75,-8737.871,1055.2648,90.30808,100,0,0),
 (19980,76,-8749.182,1082.7451,90.80248,100,0,0);
+
+DELETE FROM game_event_creature WHERE guid IN (11559,11560); -- does not work with spawn_group
+-- INSERT INTO game_event_creature (guid, event) VALUES
+-- (11559,18),
+-- (11560,18),
+-- (11559,19),
+-- (11560,19),
+-- (11559,20),
+-- (11560,20),
+-- (11559,21),
+-- (11560,21);
+
+DELETE FROM game_event_creature_data WHERE guid IN (11559,11560);
+INSERT INTO game_event_creature_data (guid, event, `entry_id`) VALUES
+-- https://www.wowhead.com/tbc/npc=15103/stormpike-emissary
+(11559,18, 15103),
+(11560,18, 15103),
+-- https://www.wowhead.com/tbc/npc=15102/silverwing-emissary
+(11559,19, 15102),
+(11560,19, 15102),
+-- https://www.wowhead.com/tbc/npc=14991/league-of-arathor-emissary
+(11559,20, 14991),
+(11560,20, 14991),
+-- https://www.wowhead.com/tbc/npc=22013/eye-of-the-storm-emissary
+(11559,21, 22013),
+(11560,21, 22013);
+-- https://www.wowhead.com/wotlk/npc=30566/strand-of-the-ancients-emissary
+-- wotlk has two more battleground events, add them to a seperate condition and link that one into 19998 too, 
+-- so all spawns in all expansions can have same conditions, spawn groups and partly overlapping creature_data
 
 -- add stationary group to game event
 -- one day will move them all to spawn Groups
