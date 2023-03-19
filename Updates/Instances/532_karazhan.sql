@@ -1516,41 +1516,11 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+550, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
 (@CGUID+561, @CGUID+562, 1167), -- Arcane Watchman -> Arcane Watchman
 (@CGUID+562, @CGUID+143, 1024), -- Arcane Watchman -> The Curator
-(@CGUID+631, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+632, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+633, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+634, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+635, @CGUID+565, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+565, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+626, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+627, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+628, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+629, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+630, @CGUID+566, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+566, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+606, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+607, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+608, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+609, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+610, @CGUID+567, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+567, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+621, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+622, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+623, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+624, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+625, @CGUID+568, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+568, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+616, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+617, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+618, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+619, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+620, @CGUID+569, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+569, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
-(@CGUID+611, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+612, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+613, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+614, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
-(@CGUID+615, @CGUID+570, 1679), -- Syphoner -> Arcane Anomaly
 (@CGUID+570, @CGUID+143, 1024), -- Arcane Anomaly -> The Curator
 (@CGUID+564, @CGUID+563, 1167), -- Arcane Watchman -> Arcane Watchman
 (@CGUID+563, @CGUID+644, 1024), -- Arcane Watchman -> Shade of Aran
@@ -3068,7 +3038,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+3, 'Karazhan - Spectral Sentry | Spectral Sentry (2)', 0, 0, 0, 3),
 (@SGGUID+4, 'Karazhan - Concubine | Night Mistress (2)', 0, 0, 0, 3),
 (@SGGUID+5, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron (3)', 0, 0, 0, 3),
-(@SGGUID+6, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron (3)', 0, 0, 0, 3);
+(@SGGUID+6, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron (3)', 0, 0, 0, 3),
+(@SGGUID+7, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
+(@SGGUID+8, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
+(@SGGUID+9, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
+(@SGGUID+10, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
+(@SGGUID+11, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
+(@SGGUID+12, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -3086,7 +3062,44 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+5, @CGUID+502, 2), -- Spectral Patron
 (@SGGUID+6, @CGUID+519, 0), -- Ghostly Philanthropist
 (@SGGUID+6, @CGUID+472, 1), -- Spectral Patron
-(@SGGUID+6, @CGUID+498, 2); -- Spectral Patron
+(@SGGUID+6, @CGUID+498, 2), -- Spectral Patron
+(@SGGUID+7, @CGUID+567, 0), -- Arcane Anomaly
+(@SGGUID+7, @CGUID+606, 1), -- Syphoner
+(@SGGUID+7, @CGUID+607, 2), -- Syphoner
+(@SGGUID+7, @CGUID+608, 3), -- Syphoner
+(@SGGUID+7, @CGUID+609, 4), -- Syphoner
+(@SGGUID+7, @CGUID+610, 5), -- Syphoner
+(@SGGUID+8, @CGUID+568, 0), -- Arcane Anomaly
+(@SGGUID+8, @CGUID+621, 1), -- Syphoner
+(@SGGUID+8, @CGUID+622, 2), -- Syphoner
+(@SGGUID+8, @CGUID+623, 3), -- Syphoner
+(@SGGUID+8, @CGUID+624, 4), -- Syphoner
+(@SGGUID+8, @CGUID+625, 5), -- Syphoner
+(@SGGUID+9, @CGUID+570, 0), -- Arcane Anomaly
+(@SGGUID+9, @CGUID+611, 1), -- Syphoner
+(@SGGUID+9, @CGUID+612, 2), -- Syphoner
+(@SGGUID+9, @CGUID+613, 3), -- Syphoner
+(@SGGUID+9, @CGUID+614, 4), -- Syphoner
+(@SGGUID+9, @CGUID+615, 5), -- Syphoner
+(@SGGUID+10, @CGUID+569, 0), -- Arcane Anomaly
+(@SGGUID+10, @CGUID+616, 1), -- Syphoner
+(@SGGUID+10, @CGUID+617, 2), -- Syphoner
+(@SGGUID+10, @CGUID+618, 3), -- Syphoner
+(@SGGUID+10, @CGUID+619, 4), -- Syphoner
+(@SGGUID+10, @CGUID+620, 5), -- Syphoner
+(@SGGUID+11, @CGUID+566, 0), -- Arcane Anomaly
+(@SGGUID+11, @CGUID+626, 1), -- Syphoner
+(@SGGUID+11, @CGUID+627, 2), -- Syphoner
+(@SGGUID+11, @CGUID+628, 3), -- Syphoner
+(@SGGUID+11, @CGUID+629, 4), -- Syphoner
+(@SGGUID+11, @CGUID+630, 5), -- Syphoner
+(@SGGUID+12, @CGUID+565, 0), -- Arcane Anomaly
+(@SGGUID+12, @CGUID+631, 1), -- Syphoner
+(@SGGUID+12, @CGUID+632, 2), -- Syphoner
+(@SGGUID+12, @CGUID+633, 3), -- Syphoner
+(@SGGUID+12, @CGUID+634, 4), -- Syphoner
+(@SGGUID+12, @CGUID+635, 5); -- Syphoner
+
 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
@@ -3095,7 +3108,13 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+3, 2, 3, 0, @SGGUID+3, 2, 'Karazhan - Spectral Sentry | Spectral Sentry | Patrol 003'),
 (@SGGUID+4, 2, 3, 0, @SGGUID+4, 2, 'Karazhan - Concubine | Night Mistress | Patrol 004'),
 (@SGGUID+5, 4, 3, 0, @SGGUID+5, 2, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron | Patrol 005'),
-(@SGGUID+6, 4, 3, 0, @SGGUID+6, 2, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron | Patrol 006');
+(@SGGUID+6, 4, 3, 0, @SGGUID+6, 2, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron | Patrol 006'),
+(@SGGUID+7, 4, 3, 0, 0, 1, 'Karazhan - Arcane Anomaly | Syphoner (6)'),
+(@SGGUID+8, 4, 3, 0, 0, 1, 'Karazhan - Arcane Anomaly | Syphoner (6)'),
+(@SGGUID+9, 4, 3, 0, 0, 1, 'Karazhan - Arcane Anomaly | Syphoner (6)'),
+(@SGGUID+10, 4, 3, 0, 0, 1, 'Karazhan - Arcane Anomaly | Syphoner (6)'),
+(@SGGUID+11, 4, 3, 0, 0, 1, 'Karazhan - Arcane Anomaly | Syphoner (6)'),
+(@SGGUID+12, 4, 3, 0, 0, 1, 'Karazhan - Arcane Anomaly | Syphoner (6)');
 
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 
