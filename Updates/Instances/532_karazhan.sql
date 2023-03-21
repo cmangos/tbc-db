@@ -3033,18 +3033,18 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+1, 'Karazhan - Spectral Stable Hand | Spectral Stallion (2)', 0, 0, 0, 3),
-(@SGGUID+2, 'Karazhan - Phantom Guardsman | Spectral Sentry (2)', 0, 0, 0, 3),
-(@SGGUID+3, 'Karazhan - Spectral Sentry | Spectral Sentry (2)', 0, 0, 0, 3),
-(@SGGUID+4, 'Karazhan - Concubine | Night Mistress (2)', 0, 0, 0, 3),
-(@SGGUID+5, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron (3)', 0, 0, 0, 3),
-(@SGGUID+6, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron (3)', 0, 0, 0, 3),
-(@SGGUID+7, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
-(@SGGUID+8, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
-(@SGGUID+9, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
-(@SGGUID+10, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
-(@SGGUID+11, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3),
-(@SGGUID+12, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 3);
+(@SGGUID+1, 'Karazhan - Spectral Stable Hand | Spectral Stallion (2)', 0, 0, 0, 1),
+(@SGGUID+2, 'Karazhan - Phantom Guardsman | Spectral Sentry (2)', 0, 0, 0, 1),
+(@SGGUID+3, 'Karazhan - Spectral Sentry | Spectral Sentry (2)', 0, 0, 0, 1),
+(@SGGUID+4, 'Karazhan - Concubine | Night Mistress (2)', 0, 0, 0, 1),
+(@SGGUID+5, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron (3)', 0, 0, 0, 1),
+(@SGGUID+6, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron (3)', 0, 0, 0, 1),
+(@SGGUID+7, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 1),
+(@SGGUID+8, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 1),
+(@SGGUID+9, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 1),
+(@SGGUID+10, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 1),
+(@SGGUID+11, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 1),
+(@SGGUID+12, 'Karazhan - Arcane Anomaly | Syphoner (6)', 0, 0, 0, 1);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -3100,15 +3100,13 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+12, @CGUID+634, 4), -- Syphoner
 (@SGGUID+12, @CGUID+635, 5); -- Syphoner
 
-
-
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@SGGUID+1, 1, 4, 0, @SGGUID+1, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
-(@SGGUID+2, 1, 4, 0, @SGGUID+2, 2, 'Karazhan - Phantom Guardsman | Spectral Sentry | Patrol 002'),
-(@SGGUID+3, 2, 3, 0, @SGGUID+3, 2, 'Karazhan - Spectral Sentry | Spectral Sentry | Patrol 003'),
-(@SGGUID+4, 2, 3, 0, @SGGUID+4, 2, 'Karazhan - Concubine | Night Mistress | Patrol 004'),
-(@SGGUID+5, 4, 3, 0, @SGGUID+5, 2, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron | Patrol 005'),
-(@SGGUID+6, 4, 3, 0, @SGGUID+6, 2, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron | Patrol 006'),
+(@SGGUID+1, 1, 3, 0, @SGGUID+1, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
+(@SGGUID+2, 1, 3, 0, @SGGUID+2, 2, 'Karazhan - Phantom Guardsman | Spectral Sentry | Patrol 002'),
+(@SGGUID+3, 2, 2, 0, @SGGUID+3, 2, 'Karazhan - Spectral Sentry | Spectral Sentry | Patrol 003'),
+(@SGGUID+4, 2, 2, 0, @SGGUID+4, 2, 'Karazhan - Concubine | Night Mistress | Patrol 004'),
+(@SGGUID+5, 4, 2, 0, @SGGUID+5, 2, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron | Patrol 005'),
+(@SGGUID+6, 4, 2, 0, @SGGUID+6, 2, 'Karazhan - Ghostly Philanthropist | Spectral Patron | Spectral Patron | Patrol 006'),
 (@SGGUID+7, 4, 3, 0, 0, 1, 'Karazhan - Arcane Anomaly | Syphoner (6)'),
 (@SGGUID+8, 4, 3, 0, 0, 1, 'Karazhan - Arcane Anomaly | Syphoner (6)'),
 (@SGGUID+9, 4, 3, 0, 0, 1, 'Karazhan - Arcane Anomaly | Syphoner (6)'),
