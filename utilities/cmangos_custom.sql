@@ -230,3 +230,11 @@ UPDATE `creature_template` SET `name` = 'Redeemed Spirit of Earth' WHERE `entry`
 -- -------------------------------
 
 -- None
+
+-- -------------------------------
+-- Spell custom changes
+-- -------------------------------
+
+-- Dance Vibe spell should not stack
+UPDATE `spell_template` SET `StackAmount`='1' WHERE (`Id`='29521');
+
