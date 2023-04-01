@@ -120,15 +120,15 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGGUID+1, @CGUID+32, 0), -- Hellfire Warder
-(@SGGUID+1, @CGUID+31, 1), -- Hellfire Warder
-(@SGGUID+1, @CGUID+33, 2), -- Hellfire Warder
-(@SGGUID+2, @CGUID+37, 0), -- Hellfire Warder
-(@SGGUID+2, @CGUID+38, 1), -- Hellfire Warder
-(@SGGUID+2, @CGUID+39, 2), -- Hellfire Warder
-(@SGGUID+3, @CGUID+28, 0), -- Hellfire Warder
-(@SGGUID+3, @CGUID+29, 1), -- Hellfire Warder
-(@SGGUID+3, @CGUID+30, 2), -- Hellfire Warder
+(@SGGUID+1, @CGUID+32, -), -- Hellfire Warder
+(@SGGUID+1, @CGUID+31, -), -- Hellfire Warder
+(@SGGUID+1, @CGUID+33, -1), -- Hellfire Warder
+(@SGGUID+2, @CGUID+37, -1), -- Hellfire Warder
+(@SGGUID+2, @CGUID+38, -1), -- Hellfire Warder
+(@SGGUID+2, @CGUID+39, -1), -- Hellfire Warder
+(@SGGUID+3, @CGUID+28, -1), -- Hellfire Warder
+(@SGGUID+3, @CGUID+29, -1), -- Hellfire Warder
+(@SGGUID+3, @CGUID+30, -1), -- Hellfire Warder
 (@SGGUID+4, @CGUID+34, 0), -- Hellfire Warder
 (@SGGUID+4, @CGUID+35, 1), -- Hellfire Warder
 (@SGGUID+4, @CGUID+36, 2); -- Hellfire Warder
@@ -169,7 +169,7 @@ DELETE FROM worldstate_name WHERE Id = 4805;
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (4805, 'Magtheridon - Trash Respawn');
 
-DELETE FROM conditions WHERE condition_entry BETWEEN @CONDITIONID+1 AND @CONDITIONID+9;
+DELETE FROM conditions WHERE condition_entry = @SGGUID+1;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, '42', 4805, '0', '0', '0', '0', 'Magtheridon - Trash Respawn');
 
