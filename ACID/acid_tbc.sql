@@ -5474,8 +5474,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Milton Sheaf 1440
 -- Brother Kristoff 1444
 -- Morgg Stormshot 1472
--- Christoph Faral 1477 - (HAS SERIES IF SPEECH SAYS)
--- Aedis Brom 1478 - (HAS SERIES IF SPEECH SAYS)
+-- Christoph Faral 1477
+('147701','1477','30','0','100','1','5','1478','0','0','0','0','64','0','0','0','0','0','0','0','0','0','0','0','Christoph Faral - Stop following master on Receive AI Event Custom A'),
+('147702','1477','30','0','100','1','6','1478','0','0','0','0','64','1','0','0','0','0','0','0','0','0','0','0','Christoph Faral - Start following master on Receive AI Event Custom B'),
+-- Aedis Brom 1478
+('147801','1478','1','0','100','1','60000','140000','60000','140000','0','0','53','-33','0','0','0','0','0','0','0','0','0','0','Aedis Brom - START_RELAY_SCRIPT (Random) on OOC Timer'),
 -- Baros Alexston 1646
 -- Defias Prisoner (1706) - ALREADY SCRIPTED IN STOCKADE
 -- Warden Thelwater 1719
