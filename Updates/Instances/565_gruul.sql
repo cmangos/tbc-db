@@ -8,7 +8,7 @@ EndDBScriptData */
 
 SET @CGUID := 5650000; -- creatures
 SET @OGUID := 5650000; -- gameobjects
-SET @PGUID := 49800; -- pools
+SET @SGGUID := 5650000; -- spawn_groups
 
 -- =========
 -- CREATURES
@@ -56,41 +56,8 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19389, 0, 0, 1, 0, 0, NULL), -- Lair Brute
 (21350, 0, 0, 1, 0, 0, NULL); -- Gronn-Priest
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+2, @CGUID+1, 1159), -- Krosh Firehand -> High King Maulgar
-(@CGUID+3, @CGUID+1, 1159), -- Olm the Summoner -> High King Maulgar
-(@CGUID+4, @CGUID+1, 1159), -- Kiggler the Crazed -> High King Maulgar
-(@CGUID+5, @CGUID+1, 1159), -- Blindeye the Seer -> High King Maulgar
-(@CGUID+7, @CGUID+1, 1024), -- Patrol 1 -> High King Maulgar
-(@CGUID+9, @CGUID+1, 1024), -- Group 1 -> High King Maulgar
-(@CGUID+8, @CGUID+9, 1167), -- Group 1
-(@CGUID+11, @CGUID+12, 1167), -- Group 2
-(@CGUID+13, @CGUID+14, 1167), -- Group 3
-(@CGUID+16, @CGUID+17, 1167), -- Group 4
-(@CGUID+18, @CGUID+17, 1167), -- Group 4
-(@CGUID+12, @CGUID+6, 1024), -- Group 2 -> Gruul the Dragonkiller
-(@CGUID+14, @CGUID+6, 1024), -- Group 3 -> Gruul the Dragonkiller
-(@CGUID+17, @CGUID+6, 1024), -- Group 4 -> Gruul the Dragonkiller
-(@CGUID+10, @CGUID+6, 1024), -- Patrol 2 -> Gruul the Dragonkiller
-(@CGUID+15, @CGUID+6, 1024); -- Patrol 3 -> Gruul the Dragonkiller
-
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (18847, 565, 18834, 12304, 0); -- Wild Fel Stalker -> Olm the Summoner
-
-INSERT INTO creature_spawn_entry (guid, entry) VALUES
--- Randomize between Lair Brute (19389) and Gronn-Priest (21350)
-(@CGUID+7, 19389), (@CGUID+7, 21350),
-(@CGUID+8, 19389), (@CGUID+8, 21350),
-(@CGUID+9, 19389), (@CGUID+9, 21350),
-(@CGUID+10, 19389), (@CGUID+10, 21350),
-(@CGUID+11, 19389), (@CGUID+11, 21350),
-(@CGUID+12, 19389), (@CGUID+12, 21350),
-(@CGUID+13, 19389), (@CGUID+13, 21350),
-(@CGUID+14, 19389), (@CGUID+14, 21350),
-(@CGUID+15, 19389), (@CGUID+15, 21350),
-(@CGUID+16, 19389), (@CGUID+16, 21350),
-(@CGUID+17, 19389), (@CGUID+17, 21350),
-(@CGUID+18, 19389), (@CGUID+18, 21350);
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 18831, 565, 1, 143.049, 192.726, -11.2147, 3.40339, 604800, 604800, 0, 0), -- High King Maulgar
@@ -100,24 +67,24 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+5, 18836, 565, 1, 144.731, 199.921, -9.97698, 3.47321, 7200, 7200, 0, 0), -- Blindeye the Seer
 (@CGUID+6, 19044, 565, 1, 239.919, 359.057, -4.65222, 3.01282, 604800, 604800, 0, 0), -- Gruul the Dragonkiller
 -- Patrol 1
-(@CGUID+7, 0, 565, 1, 67.1291, 99.4851, -5.41845, 1.4318, 3600, 3600, 0, 2), -- creature_spawn_entry
+(@CGUID+7, 0, 565, 1, 67.1291, 99.4851, -5.41845, 1.4318, 3600, 3600, 0, 2), -- spawn_group_entry
 -- Group 1
-(@CGUID+8, 0, 565, 1, 65.635, 130.703, -6.20328, 6.14971, 3600, 3600, 0, 0), -- creature_spawn_entry
-(@CGUID+9, 0, 565, 1, 76.6184, 129.076, -7.02181, 3.0576, 3600, 3600, 0, 0), -- creature_spawn_entry
--- Patrol 2
-(@CGUID+10, 0, 565, 1, 102.559, 288.509, 1.11309, 4.65193, 3600, 3600, 0, 2), -- creature_spawn_entry
+(@CGUID+8, 0, 565, 1, 65.635, 130.703, -6.20328, 6.14971, 3600, 3600, 0, 0), -- spawn_group_entry
+(@CGUID+9, 0, 565, 1, 76.6184, 129.076, -7.02181, 3.0576, 3600, 3600, 0, 0), -- spawn_group_entry
+
+(@CGUID+10, 0, 565, 1, 102.559, 288.509, 1.11309, 4.65193, 3600, 3600, 0, 2), -- spawn_group_entry
 -- Group 2
-(@CGUID+11, 0, 565, 1, 95.9796, 283.051, 2.23278, 0.017294, 3600, 3600, 0, 0), -- creature_spawn_entry
-(@CGUID+12, 0, 565, 1, 109.359, 281.634, 1.95785, 2.94604, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+11, 0, 565, 1, 95.9796, 283.051, 2.23278, 0.017294, 3600, 3600, 0, 0), -- spawn_group_entry
+(@CGUID+12, 0, 565, 1, 109.359, 281.634, 1.95785, 2.94604, 3600, 3600, 0, 0), -- spawn_group_entry
 -- Group 3
-(@CGUID+13, 0, 565, 1, 101.226, 326.936, 1.57027, 1.28414, 3600, 3600, 0, 0), -- creature_spawn_entry
-(@CGUID+14, 0, 565, 1, 102.668, 335.433, 2.02522, 4.51134, 3600, 3600, 0, 0), -- creature_spawn_entry
+(@CGUID+13, 0, 565, 1, 101.226, 326.936, 1.57027, 1.28414, 3600, 3600, 0, 0), -- spawn_group_entry
+(@CGUID+14, 0, 565, 1, 102.668, 335.433, 2.02522, 4.51134, 3600, 3600, 0, 0), -- spawn_group_entry
 -- Patrol 3
-(@CGUID+15, 0, 565, 1, 121.425, 353.774, 5.57, 3.99279, 3600, 3600, 0, 2), -- creature_spawn_entry
+(@CGUID+15, 0, 565, 1, 121.425, 353.774, 5.57, 3.99279, 3600, 3600, 0, 2), -- spawn_group_entry
 -- Group 4
-(@CGUID+16, 0, 565, 1, 177.683, 371.957, 0.435013, 3.14632, 3600, 3600, 0, 0), -- creature_spawn_entry
-(@CGUID+17, 0, 565, 1, 175.194, 365.85, 0.046197, 2.95075, 3600, 3600, 0, 0), -- creature_spawn_entry
-(@CGUID+18, 0, 565, 1, 177.139, 358.69, -1.00116, 2.79996, 3600, 3600, 0, 0); -- creature_spawn_entry
+(@CGUID+16, 0, 565, 1, 177.683, 371.957, 0.435013, 3.14632, 3600, 3600, 0, 0), -- spawn_group_entry
+(@CGUID+17, 0, 565, 1, 175.194, 365.85, 0.046197, 2.95075, 3600, 3600, 0, 0), -- spawn_group_entry
+(@CGUID+18, 0, 565, 1, 177.139, 358.69, -1.00116, 2.79996, 3600, 3600, 0, 0); -- spawn_group_entry
 
 -- ===========
 -- GAMEOBJECTS
@@ -141,12 +108,59 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+1, 'Gruuls\'Lair - High King Maulgar | Group 1', 0, 0, 0, 7),
+(@SGGUID+2, 'Gruuls\'Lair - Gruul | Group 1', 0, 0, 0, 0),
+(@SGGUID+3, 'Gruuls\'Lair - Lair Brute | Gronn-Priest | Patrol', 0, 0, @SGGUID+1, 0),
+(@SGGUID+4, 'Gruuls\'Lair - Lair Brute | Gronn-Priest | Group 2', 0, 0, @SGGUID+1, 3), -- aggro and respawn together
+(@SGGUID+5, 'Gruuls\'Lair - Lair Brute | Gronn-Priest | Patrol', 0, 0, @SGGUID+2, 0),
+(@SGGUID+6, 'Gruuls\'Lair - Lair Brute | Gronn-Priest | Group 3', 0, 0, @SGGUID+2, 3), -- aggro and respawn together
+(@SGGUID+7, 'Gruuls\'Lair - Lair Brute | Gronn-Priest | Group 4', 0, 0, @SGGUID+2, 3), -- aggro and respawn together
+(@SGGUID+8, 'Gruuls\'Lair - Lair Brute | Gronn-Priest | Patrol', 0, 0, @SGGUID+2, 0),
+(@SGGUID+9, 'Gruuls\'Lair - Lair Brute | Gronn-Priest | Group 4', 0, 0, @SGGUID+2, 3); -- aggro and respawn together
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+3, 19389, 0, 0, 0), (@SGGUID+3, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
+(@SGGUID+4, 19389, 0, 0, 0), (@SGGUID+4, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
+(@SGGUID+5, 19389, 0, 0, 0), (@SGGUID+5, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
+(@SGGUID+6, 19389, 0, 0, 0), (@SGGUID+6, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
+(@SGGUID+7, 19389, 0, 0, 0), (@SGGUID+7, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
+(@SGGUID+8, 19389, 0, 0, 0), (@SGGUID+8, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
+(@SGGUID+9, 19389, 0, 0, 0), (@SGGUID+9, 21350, 0, 0, 0); -- Gronn-Priest, Lair Brute
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+1, @CGUID+1, -1), -- High King Maulgar 
+(@SGGUID+1, @CGUID+2, -1), -- Krosh Firehand
+(@SGGUID+1, @CGUID+3, -1), -- Olm the Summoner
+(@SGGUID+1, @CGUID+4, -1), -- Kiggler the Crazed
+(@SGGUID+1, @CGUID+5, -1), -- Blindeye the Seer
+(@SGGUID+2, @CGUID+6, -1), -- Gruul the Dragonkiller
+(@SGGUID+3, @CGUID+7, -1), -- spawn_group_entry
+(@SGGUID+4, @CGUID+8, -1), -- spawn_group_entry
+(@SGGUID+4, @CGUID+9, -1), -- spawn_group_entry
+(@SGGUID+5, @CGUID+10, -1), -- spawn_group_entry
+(@SGGUID+6, @CGUID+11, -1), -- spawn_group_entry
+(@SGGUID+6, @CGUID+12, -1), -- spawn_group_entry
+(@SGGUID+7, @CGUID+13, -1), -- spawn_group_entry
+(@SGGUID+7, @CGUID+14, -1), -- spawn_group_entry
+(@SGGUID+8, @CGUID+15, -1), -- spawn_group_entry
+(@SGGUID+9, @CGUID+16, -1), -- spawn_group_entry
+(@SGGUID+9, @CGUID+17, -1), -- spawn_group_entry
+(@SGGUID+9, @CGUID+18, -1); -- spawn_group_entry
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+
+DELETE FROM worldstate_name WHERE Id IN (2778,4804);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(2778, 'Gruuls\'Lair - Highking Maulgar - Encounter completed'),
+(4804, 'Gruuls\'Lair - Gruul the Dragonkiller - Encounter completed');
+
+DELETE FROM conditions WHERE condition_entry IN (@SGGUID+1, @SGGUID+2);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, '42', 2778, '0', '0', '0', '0', 'Highking Maulgar - Trash Respawn'),
+(@SGGUID+2, '42', 4804, '0', '0', '0', '0', 'Gruul the Dragonkiller - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
