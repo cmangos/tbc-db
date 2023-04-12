@@ -16,7 +16,7 @@ UPDATE creature_spawn_data_template SET Name = 'Dark Iron Antagonist - UnitFlags
 UPDATE creature_spawn_data_template SET Name = 'Mutant War Hound - UnitFlags' WHERE Entry = '10001';
 -- Bonechewer Blood Prophet, Bonechewer Shield Disciple, Bonechewer Blade Fury - UnitFlags
 UPDATE creature_spawn_data_template SET Name = 'BT: Bonechewer NPCs - UnitFlags' WHERE Entry = '10002';
-UPDATE creature_spawn_data_template SET Name = 'Unknown - ModelId' WHERE Entry = '10003'; -- no data in creature_spawn_data
+UPDATE creature_spawn_data_template SET Name = 'World Invisible Trigger - ModelId' WHERE Entry = '10003'; -- used on dscripts_on_event id 14143
 UPDATE creature_spawn_data_template SET Name = 'Cork Gizelton - RelayScript' WHERE Entry = '11625';
 UPDATE creature_spawn_data_template SET Name = 'Stillpine Captive - RelayScript' WHERE Entry = '19985';
 UPDATE creature_spawn_data_template SET Name = 'Stillpine Captive - RelayScript' WHERE Entry = '19986';
