@@ -1258,10 +1258,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+290, 21212, 548, 1, 29.99015, -922.4088, 42.98521, 1.396263, 604800, 604800, 0, 0); -- Lady Vashj
 
 -- Greyheart Nether-Mage/Tidecaller - 1 hammer
-REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (2122901, 2122901);
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (2122901, 2122901, 'Greyheart Tidecaller (21229) | Greyheart Nether-Mage (21230) - RelayScript (2122901)');
 REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 2122901 FROM `creature` WHERE `guid` IN (@CGUID+93,@CGUID+95,@CGUID+108,@CGUID+110,@CGUID+119);
 -- Greyheart Skulker - 1 dagger and 1 hammer
-REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (2123201, 2123201);
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (2123201, 2123201, 'Greyheart Skulker (21232) - RelayScript (2123201)');
 REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 2123201 FROM `creature` WHERE `guid` IN (@CGUID+131,@CGUID+134,@CGUID+135,@CGUID+138);
 
 -- ===========

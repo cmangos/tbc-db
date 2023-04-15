@@ -1414,7 +1414,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+520, 24223, 568, 1, 429.48010, 1371.66577, 74.41665, 5.46288, 7200, 7200, 0, 0), -- Eagle Trash Aggro Trigger
 (@CGUID+521, 24223, 568, 1, 446.02258, 1354.25329, 85.51732, 5.84685, 7200, 7200, 0, 0); -- Eagle Trash Aggro Trigger
 
-REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (2359701, 2359701);
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (2359701, 2359701, 'Amani\'shi Guardian (23597) - RelayScript (2359701)');
 REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 2359701 FROM `creature` WHERE `guid` IN (@CGUID+104); -- Amanishi Guardian (starts holding a spear for gong event RP script)
 
 -- ===========
