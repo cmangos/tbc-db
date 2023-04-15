@@ -216,9 +216,9 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+44, 17269), (@CGUID+44, 17270); -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
 
 -- Worker Equipment
-REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (1725901, 1725901); -- Bonechewer Hungerer
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (1725901, 1725901, 'Bonechewer Hungerer (17259) - RelayScript (1725901)'); -- Bonechewer Hungerer
 REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 1725901 FROM `creature` WHERE `guid` IN (@CGUID+16,@CGUID+17);
-REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (1726401, 1726401); -- Bonechewer Ravener
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (1726401, 1726401, 'Bonechewer Ravener (17264) - RelayScript (1726401)'); -- Bonechewer Ravener
 REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 1726401 FROM `creature` WHERE `guid` IN (@CGUID+24,@CGUID+25);
 
 -- ===========

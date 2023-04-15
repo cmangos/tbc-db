@@ -501,7 +501,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+180, 0, 545, 3, 39.04907, -237.2698, -22.68699, 5.043978, 7200, 7200, 2, 1), -- creature_spawn_entry
 (@CGUID+181, 0, 545, 3, -17.88705, -184.7918, -21.95631, 1.973065, 7200, 7200, 2, 1); -- creature_spawn_entry
 
-REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`) VALUES (1772101, 1772101);
+REPLACE INTO `creature_spawn_data_template` (`entry`, `RelayId`, `Name`) VALUES (1772101, 1772101, 'Coilfang Engineer (17721) - RelayScript (1772101)');
 REPLACE INTO `creature_spawn_data` (`guid`, `id`) SELECT `guid`, 1772101 FROM `creature` WHERE `guid` IN (@CGUID+21,@CGUID+22);
 
 -- ===========
