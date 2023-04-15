@@ -65,9 +65,9 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- Creatures
 -- Servant of the Hand 15080
 DELETE FROM creature_spawn_data_template WHERE entry IN (9999,9998);
-INSERT INTO creature_spawn_data_template (`Entry`, `NpcFlags`, `RelayId`) VALUES 
-(9999,0,28),
-(9998,0,29);
+INSERT INTO creature_spawn_data_template (`Entry`, `NpcFlags`, `RelayId`, `Name`) VALUES 
+(9999,0,28, 'Servant of the Hand (15080) - RelayScript (28)'),
+(9998,0,29, 'Servant of the Hand (15080) - RelayScript (29)');
 DELETE FROM dbscripts_on_relay WHERE id IN (28,29,30);
 INSERT INTO dbscripts_on_relay (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (28,10,15,17321,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'Servant of the Hand 15080 - Spawn Effect - q.8183'),

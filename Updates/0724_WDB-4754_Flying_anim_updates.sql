@@ -4,8 +4,8 @@ INSERT INTO dbscripts_on_relay (id, delay, command, datalong, datalong2, datalon
 (30601,0,39,1,0,0,0,0,0x08,0,0,0,0,0,0,0,0,'GENERIC - FLY ANIM ON - RUN ON');
 -- for generic creature_spawn_data_template
 DELETE FROM creature_spawn_data_template WHERE entry = 20056;
-INSERT INTO creature_spawn_data_template (`Entry`, `SpawnFlags`, `RelayId`) VALUES 
-(20056,3,30601);
+INSERT INTO creature_spawn_data_template (`Entry`, `SpawnFlags`, `RelayId`, `Name`) VALUES 
+(20056,3,30601, 'GENERIC - FLY ANIM ON - RUN ON');
 
 -- Creatures
 
