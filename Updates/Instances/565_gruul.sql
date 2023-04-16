@@ -67,12 +67,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+5, 18836, 565, 1, 144.731, 199.921, -9.97698, 3.47321, 7200, 7200, 0, 0), -- Blindeye the Seer
 (@CGUID+6, 19044, 565, 1, 239.919, 359.057, -4.65222, 3.01282, 604800, 604800, 0, 0), -- Gruul the Dragonkiller
 -- Patrol 1
-(@CGUID+7, 0, 565, 1, 67.1291, 99.4851, -5.41845, 1.4318, 3600, 3600, 0, 2), -- spawn_group_entry
+(@CGUID+7, 19389, 565, 1, 67.1291, 99.4851, -5.41845, 1.4318, 3600, 3600, 0, 0), -- Lair Brute
 -- Group 1
 (@CGUID+8, 0, 565, 1, 65.635, 130.703, -6.20328, 6.14971, 3600, 3600, 0, 0), -- spawn_group_entry
 (@CGUID+9, 0, 565, 1, 76.6184, 129.076, -7.02181, 3.0576, 3600, 3600, 0, 0), -- spawn_group_entry
 
-(@CGUID+10, 0, 565, 1, 102.559, 288.509, 1.11309, 4.65193, 3600, 3600, 0, 2), -- spawn_group_entry
+(@CGUID+10, 19389, 565, 1, 102.559, 288.509, 1.11309, 4.65193, 3600, 3600, 0, 0), -- Lair Brute
 -- Group 2
 (@CGUID+11, 0, 565, 1, 95.9796, 283.051, 2.23278, 0.017294, 3600, 3600, 0, 0), -- spawn_group_entry
 (@CGUID+12, 0, 565, 1, 109.359, 281.634, 1.95785, 2.94604, 3600, 3600, 0, 0), -- spawn_group_entry
@@ -80,7 +80,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+13, 0, 565, 1, 101.226, 326.936, 1.57027, 1.28414, 3600, 3600, 0, 0), -- spawn_group_entry
 (@CGUID+14, 0, 565, 1, 102.668, 335.433, 2.02522, 4.51134, 3600, 3600, 0, 0), -- spawn_group_entry
 -- Patrol 3
-(@CGUID+15, 0, 565, 1, 121.425, 353.774, 5.57, 3.99279, 3600, 3600, 0, 2), -- spawn_group_entry
+(@CGUID+15, 19389, 565, 1, 121.425, 353.774, 5.57, 3.99279, 3600, 3600, 0, 0), -- Lair Brute
 -- Group 4
 (@CGUID+16, 0, 565, 1, 177.683, 371.957, 0.435013, 3.14632, 3600, 3600, 0, 0), -- spawn_group_entry
 (@CGUID+17, 0, 565, 1, 175.194, 365.85, 0.046197, 2.95075, 3600, 3600, 0, 0), -- spawn_group_entry
@@ -120,12 +120,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+9, 'Gruuls\'Lair - Lair Brute | Gronn-Priest | Group 4', 0, 0, @SGGUID+2, 3); -- aggro and respawn together
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+3, 19389, 0, 0, 0), (@SGGUID+3, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
 (@SGGUID+4, 19389, 0, 0, 0), (@SGGUID+4, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
-(@SGGUID+5, 19389, 0, 0, 0), (@SGGUID+5, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
 (@SGGUID+6, 19389, 0, 0, 0), (@SGGUID+6, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
 (@SGGUID+7, 19389, 0, 0, 0), (@SGGUID+7, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
-(@SGGUID+8, 19389, 0, 0, 0), (@SGGUID+8, 21350, 0, 0, 0), -- Gronn-Priest, Lair Brute
 (@SGGUID+9, 19389, 0, 0, 0), (@SGGUID+9, 21350, 0, 0, 0); -- Gronn-Priest, Lair Brute
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
@@ -135,15 +132,15 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+4, -1), -- Kiggler the Crazed
 (@SGGUID+1, @CGUID+5, -1), -- Blindeye the Seer
 (@SGGUID+2, @CGUID+6, -1), -- Gruul the Dragonkiller
-(@SGGUID+3, @CGUID+7, -1), -- spawn_group_entry
+(@SGGUID+3, @CGUID+7, -1), -- Lair Brute
 (@SGGUID+4, @CGUID+8, -1), -- spawn_group_entry
 (@SGGUID+4, @CGUID+9, -1), -- spawn_group_entry
-(@SGGUID+5, @CGUID+10, -1), -- spawn_group_entry
+(@SGGUID+5, @CGUID+10, -1), -- Lair Brute
 (@SGGUID+6, @CGUID+11, -1), -- spawn_group_entry
 (@SGGUID+6, @CGUID+12, -1), -- spawn_group_entry
 (@SGGUID+7, @CGUID+13, -1), -- spawn_group_entry
 (@SGGUID+7, @CGUID+14, -1), -- spawn_group_entry
-(@SGGUID+8, @CGUID+15, -1), -- spawn_group_entry
+(@SGGUID+8, @CGUID+15, -1), -- Lair Brute
 (@SGGUID+9, @CGUID+16, -1), -- spawn_group_entry
 (@SGGUID+9, @CGUID+17, -1), -- spawn_group_entry
 (@SGGUID+9, @CGUID+18, -1); -- spawn_group_entry
