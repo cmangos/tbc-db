@@ -187,11 +187,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+81, 17280, 543, 3, -1297.28, 1534.1, 68.6081, 1.85287, 7200, 7200, 0, 0), -- Shattered Hand Warhound
 (@CGUID+82, 17281, 543, 3, -1267.93, 1556.92, 68.5736, 1.77075, 7200, 7200, 0, 0), -- Bonechewer Ripper
 (@CGUID+83, 17281, 543, 3, -1238.83, 1559.07, 91.0681, 2.32836, 7200, 7200, 0, 0), -- Bonechewer Ripper
-(@CGUID+84, 17306, 543, 3, -1181.54, 1452.92, 68.4353, 1.39127, 86400, 86400, 0, 2), -- Watchkeeper Gargolmar
+(@CGUID+84, 17306, 543, 3, -1165.06262, 1515.9311, 68.5005, 3.07122, 86400, 86400, 0, 0), -- Watchkeeper Gargolmar
 (@CGUID+85, 17307, 543, 3, -1363.894, 1728.0319, 105.86549, 0, 86400, 86400, 0, 3), -- Vazruden the Herald
 (@CGUID+86, 17308, 543, 3, -1122.34, 1718.41, 89.4315, 3.75246, 86400, 86400, 0, 0), -- Omor the Unscarred
-(@CGUID+87, 17309, 543, 3, -1184.73, 1453.48, 68.4394, 1.17214, 7200, 7200, 0, 0), -- Hellfire Watcher
-(@CGUID+88, 17309, 543, 3, -1178.8, 1452.27, 68.4308, 1.41011, 7200, 7200, 0, 0), -- Hellfire Watcher
+(@CGUID+87, 17309, 543, 3, -1158.8267, 1512.1246, 68.4998, 3.2404, 7200, 7200, 0, 0), -- Hellfire Watcher
+(@CGUID+88, 17309, 543, 3, -1169.3240, 1518.8388, 68.520, 0.9921, 7200, 7200, 0, 0), -- Hellfire Watcher
 (@CGUID+89, 17264, 543, 3, -1294.11, 1535.6, 68.5949, 1.86208, 7200, 7200, 0, 2), -- Bonechewer Ravener
 (@CGUID+90, 22515, 543, 3, -1453.2988, 1733.9381, 87.31018, 0.76794, 300, 300, 0, 0), -- World Trigger
 (@CGUID+91, 17478, 543, 3, -1265.38, 1554.34, 68.566, 2.2323, 7200, 7200, 0, 0), -- Bleeding Hollow Scryer
@@ -271,7 +271,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+12, 'Hellfire Ramparts - Bonechewer Hungerer | Shattered Hand Warhound (4)', 0, 0, 0, 1),
 (@SGGUID+13, 'Hellfire Ramparts - Bonechewer Destroyer | Bonechewer Hungerer | Bleeding Hollow Darkcaster | Shattered Hand Warhound (5)', 0, 0, 0, 1),
 (@SGGUID+14, 'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 002', 0, 0, 0, 1),
-(@SGGUID+15, 'Hellfire Ramparts - Watchkeeper Gargolmar | Hellfire Watcher (3)', 0, 0, 0, 1),
+(@SGGUID+15, 'Hellfire Ramparts - Watchkeeper Gargolmar | Hellfire Watcher (3)', 0, 0, @SGGUID+1, 3),
 (@SGGUID+16, 'Hellfire Ramparts - Bonechewer Destroyer (2)', 0, 0, 0, 1),
 (@SGGUID+17, 'Hellfire Ramparts - Bonechewer Destroyer | Bleeding Hollow Darkcaster (3)', 0, 0, 0, 1),
 (@SGGUID+18, 'Hellfire Ramparts - Bonechewer Destroyer | Bleeding Hollow Archer | Shattered Hand Warhound (5)', 0, 0, 0, 1),
@@ -411,7 +411,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+4, 2, 3.5, 0, @SGGUID+4, 2, 'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 000'),
 (@SGGUID+10, 2, 3.5, 0, @SGGUID+10, 2, 'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 001'),
-(@SGGUID+15, 2, 3, 0, @SGGUID+15, 4, 'Hellfire Ramparts - Watchkeeper Gargolmar | Hellfire Watcher (3)'),
+(@SGGUID+15, 2, 3, 0, @SGGUID+15, 2, 'Hellfire Ramparts - Watchkeeper Gargolmar | Hellfire Watcher (3)'),
 (@SGGUID+25, 2, 4, 0, @SGGUID+25, 2, 'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 003'),
 (@SGGUID+27, 2, 3.5, 0, @SGGUID+27, 2, 'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 000'),
 (@SGGUID+29, 2, 4, 0, @SGGUID+29, 2, 'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 001');
@@ -447,10 +447,12 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+10, 16, -1283.63, 1505.74, 68.5756, 2.35453, 0, 0),
 (@SGGUID+10, 17, -1289.75, 1518.26, 68.5811, 2.10791, 0, 0),
 (@SGGUID+10, 18, -1294.24, 1535.83, 68.5937, 1.85266, 0, 0),
-(@SGGUID+15, 1, -1183.732, 1453.0009, 68.44069, 100, 0, 0),
-(@SGGUID+15, 2, -1167.933, 1476.051, 68.43334, 100, 0, 0),
-(@SGGUID+15, 3, -1171.5144, 1516.3859, 68.455894, 100, 0, 0),
-(@SGGUID+15, 4, -1195.6259, 1538.036, 68.49778, 100, 0, 0),
+(@SGGUID+15, 1, -1167.933, 1476.051, 68.425514,100,0,0),
+(@SGGUID+15, 2, -1183.732, 1453.0009, 68.43121,100,0,0),
+(@SGGUID+15, 3, -1167.933, 1476.051, 68.425514,100,0,0),
+(@SGGUID+15, 4, -1171.5144, 1516.3859, 68.44176,100,0,0),
+(@SGGUID+15, 5, -1195.6259, 1538.036, 68.482254,100,0,0),
+(@SGGUID+15, 6, -1171.5144, 1516.3859, 68.44176,100,0,0),
 (@SGGUID+25, 1, -1309.4183, 1623.6088, 91.74948, 100, 0, 0),
 (@SGGUID+25, 2, -1314.9015, 1608.3201, 91.75011, 100, 0, 0),
 (@SGGUID+25, 3, -1310.7594, 1595.7067, 91.759705, 100, 0, 0),
@@ -465,6 +467,16 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+27, 4, -1269.8956, 1642.5133, 91.60827, 100, 0, 0),
 (@SGGUID+29, 1, -1324.969, 1660.7915, 93.00998, 0, 0, 0), 
 (@SGGUID+29, 2, -1345.5702, 1685.6698, 89.944595, 0, 0, 0);
+
+DELETE FROM worldstate_name WHERE Id IN (4698,4699,4700);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(4698, 'Hellfire Ramparts - Watchkeeper Gargolmar - Encounter completed'),
+(4699, 'Hellfire Ramparts - Omor the Unscarred - Encounter completed'),
+(4700, 'Hellfire Ramparts - Vazruden the Herald - Encounter completed');
+
+DELETE FROM conditions WHERE condition_entry = @SGGUID+1;
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, '42', 4698, '0', '0', '0', '0', 'Watchkeeper Gargolmar - Encounter completed');
 
 -- =========
 -- DBSCRIPTS
