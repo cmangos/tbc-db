@@ -4,6 +4,13 @@
 -- https://github.com/cmangos/mangos-tbc/commit/68726e856f17534ecd669e2e7d78fdb773ee8fe9
 ALTER TABLE db_version CHANGE COLUMN required_s2463_01_mangos_spawn_data_equip required_s2464_01_mangos_string_id bit;
 
+DROP TABLE IF EXISTS `string_id`;
+CREATE TABLE `string_id`(
+`Id` INT(11) UNSIGNED NOT NULL,
+`Name` VARCHAR(255) NOT NULL,
+PRIMARY KEY(`Id`)
+);
+
 ALTER TABLE creature_spawn_data_template ADD COLUMN `StringId` INT(11) UNSIGNED NOT NULL DEFAULT '0';
 ALTER TABLE gameobject_addon ADD COLUMN `StringId` INT(11) UNSIGNED NOT NULL DEFAULT '0';
 ALTER TABLE spawn_group ADD COLUMN `StringId` INT(11) UNSIGNED NOT NULL DEFAULT '0';
