@@ -59,3 +59,6 @@ INSERT INTO dbscripts_on_creature_movement (id, delay, command, datalong, datalo
 (2328303,1,18,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'Despawn Self'),
 (2328303,2,21,0,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'Unactive');
 
+-- remove default flying for Lady Sinestra 23283
+UPDATE `creature_template` set inhabittype = inhabittype&~4 WHERE entry = 23283;
+
