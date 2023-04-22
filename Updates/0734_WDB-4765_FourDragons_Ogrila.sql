@@ -122,6 +122,13 @@ UPDATE dbscripts_on_gossip SET search_radius = 20 WHERE id = 868901 AND buddy_en
 UPDATE dbscripts_on_gossip SET search_radius = 20 WHERE id = 869001 AND buddy_entry > 0;
 UPDATE dbscripts_on_gossip SET search_radius = 20 WHERE id = 869101 AND buddy_entry > 0;
 UPDATE dbscripts_on_gossip SET search_radius = 20 WHERE id = 868501 AND buddy_entry > 0;
+-- Player must pay 35 shards to use it
+DELETE FROM dbscripts_on_gossip WHERE id IN (868901,869001,869101,868501) AND delay = 10;
+INSERT INTO dbscripts_on_gossip (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
+(868901,10,17,32569,35,0,0,0,0x08,0,0,0,0,0,0,0,0,'35 Shards removed from Inventory'),
+(869001,10,17,32569,35,0,0,0,0x08,0,0,0,0,0,0,0,0,'35 Shards removed from Inventory'),
+(869101,10,17,32569,35,0,0,0,0x08,0,0,0,0,0,0,0,0,'35 Shards removed from Inventory'),
+(868501,10,17,32569,35,0,0,0,0x08,0,0,0,0,0,0,0,0,'35 Shards removed from Inventory');
 -- 4 dragons - Updates
 UPDATE creature_template SET MovementType = 2 WHERE entry IN (23281,23261,23061,23282); -- already set
 
