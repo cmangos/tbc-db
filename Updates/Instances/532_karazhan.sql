@@ -1230,16 +1230,17 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (15547, 0, 0, 1, 0, 0, '19817'), -- Spectral Charger
 (15548, 0, 0, 1, 0, 0, NULL), -- Spectral Stallion
+(15550, 0, 0, 1, 0, 0, '29872'), -- Attumen the Huntsman
 (15687, 0, 0, 1, 0, 0, NULL), -- Moroes
 (15688, 0, 0, 1, 0, 0, NULL), -- Terestian Illhoof
-(15689, 0, 0, 0, 0, 0, NULL), -- Netherspite
+(15689, 0, 0, 0, 0, 0, '37061 37070'), -- Netherspite
 (15690, 0, 0, 1, 0, 0, NULL), -- Prince Malchezaar
 (15691, 0, 0, 1, 0, 0, NULL), -- The Curator
 (16151, 0, 0, 1, 0, 0, NULL), -- Midnight
 (16153, 0, 0, 1, 0, 0, '28002'), -- Berthold
 (16159, 0, 0, 1, 0, 0, '28002'), -- Calliard
 (16169, 0, 0, 1, 0, 0, '28002'), -- Hastings
-(16170, 0, 0, 1, 0, 0, '22766 29291'), -- Coldmist Stalker
+(16170, 0, 0, 1, 0, 0, '29291 28094 22766'), -- Coldmist Stalker
 (16171, 0, 0, 1, 0, 0, NULL), -- Coldmist Widow
 (16173, 0, 0, 1, 0, 0, NULL), -- Shadowbat
 (16174, 0, 0, 1, 0, 0, NULL), -- Greater Shadowbat
@@ -1268,12 +1269,12 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (16471, 0, 0, 1, 0, 0, NULL), -- Skeletal Usher
 (16472, 0, 0, 1, 69, 0, NULL), -- Phantom Stagehand
 (16473, 0, 0, 1, 0, 0, NULL), -- Spectral Performer
-(16481, 0, 0, 1, 0, 0, NULL), -- Ghastly Haunt
+(16481, 0, 0, 1, 0, 0, '29713'), -- Ghastly Haunt
 (16482, 0, 0, 1, 0, 0, NULL), -- Trapped Soul
 (16485, 0, 0, 1, 0, 0, '18950'), -- Arcane Watchman
 (16488, 0, 0, 1, 0, 0, NULL), -- Arcane Anomaly
 (16489, 0, 0, 1, 0, 0, '19818'), -- Chaotic Sentience
-(16491, 0, 0, 1, 0, 0, '29908'), -- Mana Feeder
+(16491, 0, 0, 1, 0, 0, '10095 29908'), -- Mana Feeder
 (16492, 0, 0, 1, 0, 0, NULL), -- Syphoner
 (16504, 0, 0, 1, 0, 0, '18950 19818'), -- Arcane Protector
 (16524, 0, 0, 1, 0, 0, NULL), -- Shade of Aran
@@ -1307,13 +1308,17 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (17208, 0, 0, 1, 0, 0, NULL), -- Chess Square, WHITE (DND)
 (17225, 0, 3, 1, 0, 0, NULL), -- Nightbane
 (17260, 0, 0, 1, 0, 0, NULL), -- Nightbane Helper Target
+-- (17261, 0, 0, 1, 0, 0, '11838'), -- Restless Skeleton Prenerf
 (17305, 0, 0, 1, 0, 0, NULL), -- Chess Square, BLACK (DND)
 (17317, 0, 0, 1, 0, 0, NULL), -- Chess Square, OUTSIDE WHITE (DND)
 (17459, 0, 0, 1, 0, 0, NULL), -- Chess Waiting Room (DND)
 (17518, 0, 0, 1, 0, 0, '28002'), -- Ythyar
 (17644, 0, 0, 1, 0, 0, NULL), -- Infernal Target
 (17645, 0, 0, 1, 0, 0, NULL), -- Infernal Relay
+(17651, 0, 0, 1, 0, 0, '28002'), -- Image of Medivh
+(17652, 0, 0, 1, 0, 0, '28002'), -- Image of Arcanagos
 (17660, 0, 0, 1, 0, 0, NULL), -- Skeletal Gryphon
+(18168, 0, 0, 1, 0, 0, '32339'), -- The Crone
 (18654, 0, 0, 1, 0, 0, NULL), -- Crowd Murmur Helper
 (21921, 0, 0, 1, 0, 0, NULL), -- Chess - Sound Bunny
 (22519, 0, 0, 1, 0, 0, NULL), -- Chess Piece: Karazhan Invisible Stalker

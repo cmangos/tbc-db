@@ -28244,7 +28244,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1650411','16504','0','0','100','1025','20000','20000','20000','20000','0','0','30','1','2','3','0','0','0','0','0','0','0','0','Arcane Protector - Set Random Phase'),
 -- Shade of Aran (16524) - boss_shade_of_aran
 -- Spell Shade 16525
-('1652501','16525','1','0','100','0','0','0','0','0','0','0','11','29920','0','0','0','0','0','0','0','0','0','0','Spell Shade - Cast Phasing Invisibility on OOC'),
+('1652501','16525','1','0','100','0','1000','10000','0','0','0','0','11','29920','0','0','0','0','0','0','0','0','0','0','Spell Shade - Cast Phasing Invisibility on OOC'),
 ('1652502','16525','9','0','100','1057','0','40','2400','3200','0','0','11','29925','1','256','11','29926','1','256','11','29927','1','256','Spell Shade - Random Cast Fireball or Frostbolt or Shadowbolt'),
 -- Sorcerous Shade
 ('1652601','16526','4','0','100','0','0','0','0','0','0','0','11','29923','0','0','0','0','0','0','0','0','0','0','Sorcerous Shade - Cast Frostbolt Volley on Aggro'),
