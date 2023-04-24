@@ -18,79 +18,23 @@ SET @SGGUID := 5320000; -- spawn_groups
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+130, 1, -11137, -1894.76, 49.8898, 100, 70000, 1555101),
-(@CGUID+130, 2, -11137, -1894.76, 49.8898, 100, 45000, 1555101),
-(@CGUID+130, 3, -11137, -1894.76, 49.8898, 100, 80000, 0),
-(@CGUID+130, 4, -11137, -1894.76, 49.8898, 100, 25000, 1555101),
-(@CGUID+130, 5, -11137, -1894.76, 49.8898, 100, 85000, 0),
-(@CGUID+131, 1, -11141.9, -1893.28, 49.8892, 100, 25000, 1555101),
-(@CGUID+131, 2, -11141.9, -1893.28, 49.8892, 100, 85000, 0),
-(@CGUID+131, 3, -11141.9, -1893.28, 49.8892, 100, 70000, 1555101),
-(@CGUID+131, 4, -11141.9, -1893.28, 49.8892, 100, 45000, 1555101),
-(@CGUID+131, 5, -11141.9, -1893.28, 49.8892, 100, 80000, 0),
-(@CGUID+132, 1, -11134, -1894.84, 49.8898, 100, 80000, 0),
-(@CGUID+132, 2, -11134, -1894.84, 49.8898, 100, 25000, 1555101),
-(@CGUID+132, 3, -11134, -1894.84, 49.8898, 100, 85000, 0),
-(@CGUID+132, 4, -11134, -1894.84, 49.8898, 100, 70000, 1555101),
-(@CGUID+132, 5, -11134, -1894.84, 49.8898, 100, 45000, 1555101),
-(@CGUID+133, 1, -11136, -1961.4, 49.8892, 5.86523, 30000, 1069),
-(@CGUID+133, 2, -11144.1, -1959.7, 49.8912, 0, 0, 1555101),
-(@CGUID+133, 3, -11152.3, -1957.81, 49.8912, 3.1132, 40000, 1069),
-(@CGUID+133, 4, -11144.2, -1959.84, 49.8912, 0, 0, 0),
-(@CGUID+133, 5, -11136, -1961.4, 49.8892, 5.86523, 20000, 1069),
-(@CGUID+133, 6, -11144.1, -1959.7, 49.8912, 0, 0, 0),
-(@CGUID+133, 7, -11152.3, -1957.81, 49.8912, 3.1132, 30000, 1069),
-(@CGUID+133, 8, -11144.2, -1959.84, 49.8912, 0, 0, 1555101),
-(@CGUID+133, 9, -11136, -1961.4, 49.8892, 5.86523, 40000, 1069),
-(@CGUID+133, 10, -11144.1, -1959.7, 49.8912, 0, 0, 0),
-(@CGUID+133, 11, -11152.3, -1957.81, 49.8912, 3.1132, 20000, 1069),
-(@CGUID+133, 12, -11144.2, -1959.84, 49.8912, 0, 0, 0),
-(@CGUID+135, 1, -11147, -1929.18, 49.8892, 6.1095, 30000, 1555101),
-(@CGUID+135, 2, -11164.5, -1938.01, 49.8904, 1.56911, 20000, 1069),
-(@CGUID+135, 3, -11147, -1929.18, 49.8892, 6.1095, 40000, 1069),
-(@CGUID+135, 4, -11164.5, -1938.01, 49.8904, 1.56911, 20000, 1069),
-(@CGUID+135, 5, -11147, -1929.18, 49.8892, 6.1095, 40000, 1069),
-(@CGUID+135, 6, -11164.5, -1938.01, 49.8904, 1.56911, 30000, 1555101),
-(@CGUID+135, 7, -11147, -1929.18, 49.8892, 6.1095, 40000, 1069),
-(@CGUID+135, 8, -11164.5, -1938.01, 49.8904, 1.56911, 20000, 1069),
-(@CGUID+135, 9, -11147, -1929.18, 49.8892, 6.1095, 30000, 1069),
-(@CGUID+135, 10, -11164.5, -1938.01, 49.8904, 1.56911, 30000, 1069),
-(@CGUID+136, 1, -11126.3, -1957.68, 49.8889, 0, 0, 0),
-(@CGUID+136, 2, -11117.6, -1956.5, 49.8889, 0, 0, 0),
-(@CGUID+136, 3, -11110.8, -1953.2, 49.8875, 0, 0, 0),
-(@CGUID+136, 4, -11103.7, -1948.03, 49.8818, 0, 0, 0),
-(@CGUID+136, 5, -11110.7, -1953.61, 49.8872, 0, 0, 0),
-(@CGUID+136, 6, -11118.2, -1957.08, 49.8867, 0, 0, 0),
-(@CGUID+136, 7, -11127.1, -1957.87, 49.889, 0, 0, 0),
-(@CGUID+136, 8, -11132.7, -1958.22, 49.8879, 0, 0, 0),
-(@CGUID+136, 9, -11139.3, -1959.97, 49.8872, 0, 0, 0),
-(@CGUID+136, 10, -11146.4, -1956.93, 49.8911, 0, 0, 0),
-(@CGUID+136, 11, -11152.7, -1949.94, 49.8911, 0, 0, 0),
-(@CGUID+136, 12, -11154.6, -1939.97, 49.8911, 0, 0, 0),
-(@CGUID+136, 13, -11153.2, -1934.92, 49.889, 0, 0, 0),
-(@CGUID+136, 14, -11149.1, -1926.86, 49.8859, 0, 0, 0),
-(@CGUID+136, 15, -11146.8, -1919.61, 49.889, 0, 0, 0),
-(@CGUID+136, 16, -11141.7, -1913.86, 49.889, 0, 0, 0),
-(@CGUID+136, 17, -11133, -1905.59, 49.889, 0, 0, 0),
-(@CGUID+136, 18, -11141.6, -1913.93, 49.8901, 0, 0, 0),
-(@CGUID+136, 19, -11146.9, -1920.1, 49.8901, 0, 0, 0),
-(@CGUID+136, 20, -11148.9, -1927.68, 49.8846, 0, 0, 0),
-(@CGUID+136, 21, -11153.6, -1935.44, 49.8877, 0, 0, 0),
-(@CGUID+136, 22, -11155.1, -1941.44, 49.8888, 0, 0, 0),
-(@CGUID+136, 23, -11152.2, -1951.02, 49.8888, 0, 0, 0),
-(@CGUID+136, 24, -11146.2, -1957.34, 49.8888, 0, 0, 0),
-(@CGUID+136, 25, -11138.6, -1960.31, 49.888, 0, 0, 0),
-(@CGUID+136, 26, -11132, -1958.08, 49.8879, 0, 0, 0),
-(@CGUID+137, 1, -11151.4, -1913.82, 49.8901, 100, 45000, 1555101),
-(@CGUID+137, 2, -11151.4, -1913.82, 49.8901, 100, 80000, 0),
-(@CGUID+137, 3, -11151.4, -1913.82, 49.8901, 100, 25000, 1555101),
-(@CGUID+137, 4, -11151.4, -1913.82, 49.8901, 100, 85000, 0),
-(@CGUID+137, 5, -11151.4, -1913.82, 49.8901, 100, 70000, 1555101),
-(@CGUID+138, 1, -11149.5, -1913.88, 49.8889, 100, 85000, 0),
-(@CGUID+138, 2, -11149.5, -1913.88, 49.8889, 100, 70000, 1555101),
-(@CGUID+138, 3, -11149.5, -1913.88, 49.8889, 100, 45000, 1555101),
-(@CGUID+138, 4, -11149.5, -1913.88, 49.8889, 100, 80000, 0),
-(@CGUID+138, 5, -11149.5, -1913.88, 49.8889, 100, 25000, 1555101),
+(@CGUID+133,1,-11143.012,-1961.3477,49.879215,100,0,0),
+(@CGUID+133,2,-11138.364,-1962.497,49.882862,100,0,0),
+(@CGUID+133,3,-11136.29,-1961.7762,49.88272,100,1000,0),
+(@CGUID+133,4,-11136.29,-1961.7762,49.88272,5.5850,200000,1555101),
+(@CGUID+133,5,-11144.75,-1961.0293,49.882603,100,0,0),
+(@CGUID+133,6,-11148.822,-1959.5332,49.88612,100,0,0),
+(@CGUID+133,7,-11152.233,-1957.8279,49.88612,100,1000,0),
+(@CGUID+133,8,-11152.233,-1957.8279,49.88612,3.2812,20000,0),
+(@CGUID+135, 1,-11155.41,-1935.207,49.883667,100,0,0),
+(@CGUID+135,2,-11159.733,-1937.2158,49.886124,100,0,0),
+(@CGUID+135,3,-11163.512,-1938.0631,49.886124,100,1000,0),
+(@CGUID+135,4,-11163.512,-1938.0631,49.886124,1.9198,20000,0),
+(@CGUID+135,5,-11159.456,-1935.9384,49.886124,100,0,0),
+(@CGUID+135,6,-11155.571,-1933.5658,49.88373,100,0,0),
+(@CGUID+135,7,-11151.797,-1931.5779,49.88446,100,0,0),
+(@CGUID+135,8,-11148.713,-1929.849,49.88243,100,1000,0),
+(@CGUID+135,9,-11148.713,-1929.849,49.88243,6.0737,200000,1555101),
 (@CGUID+153, 1, -10987.6, -1941.79, 47.4489, 5.7, 30000, 0),
 (@CGUID+153, 2, -10983.4, -1968.25, 45.8071, 0, 0, 0),
 (@CGUID+153, 3, -10989, -2016.58, 45.4387, 1.66, 30000, 0),
@@ -1099,6 +1043,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18412, 0, 20, -10911.01, -1767.946, 90.47708, 0, 0, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+135, 0, 0, 0, 69, 0, NULL), -- Spectral Stable Hand - Emote STATE_USESTANDING
 (@CGUID+136, 0, 0, 1, 0, 0, NULL), -- Spectral Stable Hand
 (@CGUID+212, 0, 0, 1, 173, 0, NULL), -- Spectral Apprentice
 (@CGUID+213, 0, 0, 1, 173, 0, NULL), -- Spectral Apprentice
@@ -1327,40 +1272,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (22524, 0, 0, 1, 0, 0, NULL); -- Karazhan - Chess, Victory Controller
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+119, @CGUID+144, 1025), -- Spectral Charger -> Midnight
-(@CGUID+118, @CGUID+122, 1167), -- Spectral Charger -> Spectral Stallion
-(@CGUID+122, @CGUID+144, 1025), -- Spectral Stallion -> Midnight
-(@CGUID+129, @CGUID+136, 1679), -- Spectral Stallion -> Spectral Stable Hand
-(@CGUID+136, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
-(@CGUID+123, @CGUID+126, 1167), -- Spectral Stallion -> Spectral Stallion
-(@CGUID+126, @CGUID+144, 1025), -- Spectral Stallion -> Midnight
-(@CGUID+133, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
-(@CGUID+128, @CGUID+115, 1167), -- Spectral Stallion -> Spectral Charger
-(@CGUID+115, @CGUID+144, 1025), -- Spectral Charger -> Midnight
-(@CGUID+127, @CGUID+134, 1167), -- Spectral Stallion -> Spectral Stable Hand
-(@CGUID+134, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
-(@CGUID+135, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
-(@CGUID+117, @CGUID+125, 1167), -- Spectral Charger -> Spectral Stallion
-(@CGUID+125, @CGUID+144, 1025), -- Spectral Stallion -> Midnight
-(@CGUID+137, @CGUID+138, 1167), -- Spectral Stable Hand -> Spectral Stable Hand
-(@CGUID+120, @CGUID+138, 1167), -- Spectral Charger -> Spectral Stable Hand
-(@CGUID+121, @CGUID+138, 1167), -- Spectral Charger -> Spectral Stable Hand
-(@CGUID+138, @CGUID+144, 1025), -- Spectral Stable Hand -> Midnight
-(@CGUID+130, @CGUID+116, 1167), -- Spectral Stable Hand -> Spectral Charger
-(@CGUID+131, @CGUID+116, 1167), -- Spectral Stable Hand -> Spectral Charger
-(@CGUID+132, @CGUID+116, 1167), -- Spectral Stable Hand -> Spectral Charger
-(@CGUID+124, @CGUID+116, 1167), -- Spectral Stallion -> Spectral Charger
-(@CGUID+116, @CGUID+144, 1025), -- Spectral Charger -> Midnight
-(@CGUID+212, @CGUID+208, 1167), -- Spectral Apprentice -> Spectral Apprentice
-(@CGUID+213, @CGUID+208, 1167), -- Spectral Apprentice -> Spectral Apprentice
-(@CGUID+239, @CGUID+208, 1167), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+240, @CGUID+208, 1167), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+208, @CGUID+144, 1024), -- Spectral Apprentice -> Midnight
-(@CGUID+210, @CGUID+209, 1167), -- Spectral Apprentice -> Spectral Apprentice
-(@CGUID+211, @CGUID+209, 1167), -- Spectral Apprentice -> Spectral Apprentice
-(@CGUID+241, @CGUID+209, 1167), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+242, @CGUID+209, 1167), -- Spectral Servant -> Spectral Apprentice
-(@CGUID+209, @CGUID+144, 1024), -- Spectral Apprentice -> Midnight
 (@CGUID+276, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+279, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+280, @CGUID+278, 1167), -- Phantom Guest -> Phantom Guest
@@ -2030,30 +1941,30 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+112, 15384, 532, 1, -11087.4, -1941.56, 49.9702, 3.50811, 7200, 7200, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
 (@CGUID+113, 15384, 532, 1, -10991, -1884.14, 81.8119, 1.32645, 7200, 7200, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
 (@CGUID+114, 15384, 532, 1, -10916.2, -1867.03, 70.7718, 1.93731, 7200, 7200, 0, 0), -- OLDWorld Trigger (DO NOT DELETE)
-(@CGUID+115, 15547, 532, 1, -11155.9, -1953.25, 49.8916, 3.80355, 7200, 7200, 0, 0), -- Spectral Charger
-(@CGUID+116, 15547, 532, 1, -11139.5, -1890.02, 49.891, 1.00912, 7200, 7200, 0, 0), -- Spectral Charger
-(@CGUID+117, 15547, 532, 1, -11164.9, -1934.71, 49.8911, 2.77403, 7200, 7200, 0, 0), -- Spectral Charger
-(@CGUID+118, 15547, 532, 1, -11107.7, -1941.37, 49.889, 2.64208, 7200, 7200, 0, 0), -- Spectral Charger
-(@CGUID+119, 15547, 532, 1, -11089.1, -1926.95, 49.8903, 0.115459, 7200, 7200, 0, 0), -- Spectral Charger
-(@CGUID+120, 15547, 532, 1, -11153.4, -1913.33, 49.8889, 0.568514, 7200, 7200, 0, 0), -- Spectral Charger
-(@CGUID+121, 15547, 532, 1, -11147.4, -1913.5, 49.8889, 2.36864, 7200, 7200, 0, 0), -- Spectral Charger
-(@CGUID+122, 15548, 532, 1, -11107.1, -1938.8, 49.8887, 2.88791, 7200, 7200, 0, 0), -- Spectral Stallion
-(@CGUID+123, 15548, 532, 1, -11127.1, -1965.08, 49.8867, 4.56539, 7200, 7200, 0, 0), -- Spectral Stallion
-(@CGUID+124, 15548, 532, 1, -11135.1, -1890.34, 49.888, 2.20057, 7200, 7200, 0, 0), -- Spectral Stallion
-(@CGUID+125, 15548, 532, 1, -11165.2, -1931.2, 49.8911, 3.00258, 7200, 7200, 0, 0), -- Spectral Stallion
-(@CGUID+126, 15548, 532, 1, -11133.2, -1963.43, 49.8849, 4.35425, 7200, 7200, 0, 0), -- Spectral Stallion
-(@CGUID+127, 15548, 532, 1, -11146.5, -1934.74, 49.8902, 0.450004, 7200, 7200, 0, 0), -- Spectral Stallion
-(@CGUID+128, 15548, 532, 1, -11153.1, -1956.31, 49.8916, 3.84282, 7200, 7200, 0, 0), -- Spectral Stallion
-(@CGUID+129, 15548, 532, 1, -11133.6, -1959.09, 49.8873, 6.26894, 7200, 7200, 0, 0), -- Spectral Stallion
-(@CGUID+130, 15551, 532, 1, -11137, -1894.76, 49.8898, 6.19825, 7200, 7200, 0, 2), -- Spectral Stable Hand
-(@CGUID+131, 15551, 532, 1, -11141.9, -1893.28, 49.8892, 2.38043, 7200, 7200, 0, 2), -- Spectral Stable Hand
-(@CGUID+132, 15551, 532, 1, -11134, -1894.84, 49.8898, 3.14384, 7200, 7200, 0, 2), -- Spectral Stable Hand
-(@CGUID+133, 15551, 532, 1, -11144.2, -1959.82, 49.8897, 2.87315, 7200, 7200, 0, 2), -- Spectral Stable Hand
-(@CGUID+134, 15551, 532, 1, -11143.5, -1935.19, 49.891, 0.458019, 7200, 7200, 0, 0), -- Spectral Stable Hand
+(@CGUID+115, 15547, 532, 1, -11156.8, -1951.46, 49.9736, 3.61283, 7200, 7200, 0, 0), -- Spectral Charger
+(@CGUID+116, 15547, 532, 1, -11139.7, -1890, 49.9736, 0.785398, 7200, 7200, 0, 0), -- Spectral Charger
+(@CGUID+117, 15547, 532, 1, -11164.9, -1936.27, 49.9736, 3.1765, 7200, 7200, 0, 0), -- Spectral Charger
+(@CGUID+118, 15547, 532, 1, -11108.9, -1942.14, 49.9725, 2.0944, 7200, 7200, 0, 0), -- Spectral Charger
+(@CGUID+119, 15547, 532, 1, -11089.2, -1927.63, 49.9736, 0.0349066, 7200, 7200, 0, 0), -- Spectral Charger
+(@CGUID+120, 15547, 532, 1, -11154.1, -1913.59, 49.9736, 0.750492, 7200, 7200, 0, 0), -- Spectral Charger
+(@CGUID+121, 15547, 532, 1, -11148.6, -1913.5, 49.9736, 2.61799, 7200, 7200, 0, 0), -- Spectral Charger
+(@CGUID+122, 15548, 532, 1, -11107.1, -1938.66, 49.9724, 2.74017, 7200, 7200, 0, 0), -- Spectral Stallion
+(@CGUID+123, 15548, 532, 1, -11128.3, -1965.25, 49.9683, 4.67748, 7200, 7200, 0, 0), -- Spectral Stallion
+(@CGUID+124, 15548, 532, 1, -11135.5, -1891.03, 49.9736, 1.65806, 7200, 7200, 0, 0), -- Spectral Stallion
+(@CGUID+125, 15548, 532, 1, -11166.1, -1931.39, 49.9736, 3.75246, 7200, 7200, 0, 0), -- Spectral Stallion
+(@CGUID+126, 0, 532, 1, -11133.7, -1963.07, 49.9699, 4.18879, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+127, 15548, 532, 1, -11145.6, -1934.5, 49.9736, 0.575959, 7200, 7200, 0, 0), -- Spectral Stallion
+(@CGUID+128, 15548, 532, 1, -11153.7, -1955.55, 49.9736, 4.03171, 7200, 7200, 0, 0), -- Spectral Stallion
+(@CGUID+129, 15548, 532, 1, -11105.36, -1947.5504, 49.968266, 4.265, 7200, 7200, 0, 0), -- Spectral Stallion
+(@CGUID+130, 15551, 532, 1, -11136.7, -1894.22, 49.9736, 6.10865, 7200, 7200, 0, 0), -- Spectral Stable Hand
+(@CGUID+131, 15551, 532, 1, -11142.2, -1892.34, 49.9736, 2.86234, 7200, 7200, 0, 0), -- Spectral Stable Hand
+(@CGUID+132, 15551, 532, 1, -11134.3, -1894.69, 49.9731, 2.72271, 7200, 7200, 0, 0), -- Spectral Stable Hand
+(@CGUID+133, 15551, 532, 1, -11152.289, -1957.6849, 49.97362, 3.3335, 7200, 7200, 0, 2), -- Spectral Stable Hand
+(@CGUID+134, 15551, 532, 1, -11143.3, -1935.52, 49.9736, 0.994838, 7200, 7200, 0, 0), -- Spectral Stable Hand
 (@CGUID+135, 15551, 532, 1, -11150.2, -1930.79, 49.8894, 3.60882, 7200, 7200, 0, 2), -- Spectral Stable Hand
-(@CGUID+136, 15551, 532, 1, -11130.8, -1957.99, 49.8888, 0.117698, 7200, 7200, 0, 2), -- Spectral Stable Hand
-(@CGUID+137, 15551, 532, 1, -11151.4, -1913.82, 49.8901, 2.3075, 7200, 7200, 0, 2), -- Spectral Stable Hand
-(@CGUID+138, 15551, 532, 1, -11149.5, -1913.88, 49.8889, 0.687894, 7200, 7200, 0, 2), -- Spectral Stable Hand
+(@CGUID+136, 15551, 532, 1, -11105.546, -1949.433, 49.879, 3.6406, 7200, 7200, 0, 2), -- Spectral Stable Hand
+(@CGUID+137, 15551, 532, 1, -11152.7, -1914, 49.9736, 2.3911, 7200, 7200, 0, 0), -- Spectral Stable Hand
+(@CGUID+138, 15551, 532, 1, -11149.7, -1914.48, 49.9736, 1.11701, 7200, 7200, 0, 0), -- Spectral Stable Hand
 (@CGUID+139, 15687, 532, 1, -10982.7, -1877.93, 81.8119, 4.62512, 604800, 604800, 0, 2), -- Moroes
 (@CGUID+140, 15688, 532, 1, -11240.61, -1704.266, 179.3202, 0.6632251, 604800, 604800, 0, 0), -- Terestian Illhoof
 (@CGUID+141, 15689, 532, 1, -11089.4, -1615.26, 279.362, 3.60391, 604800, 604800, 0, 2), -- Netherspite
@@ -2123,12 +2034,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+205, 16178, 532, 1, -10906.5, -2047.93, 49.4749, 5.18906, 7200, 7200, 5, 1), -- Phase Hound
 (@CGUID+206, 16178, 532, 1, -10877.7, -2030.21, 49.4749, 2.96402, 7200, 7200, 5, 1), -- Phase Hound
 (@CGUID+207, 16388, 532, 1, -11090.5, -1908.39, 49.9482, 3.61283, 7200, 7200, 0, 0), -- Koren
-(@CGUID+208, 16389, 532, 1, -11097.2, -1901.61, 49.8417, 5.02565, 7200, 7200, 0, 0), -- Spectral Apprentice
-(@CGUID+209, 16389, 532, 1, -11122.7, -1896.08, 49.8902, 3.48162, 7200, 7200, 0, 0), -- Spectral Apprentice
-(@CGUID+210, 16389, 532, 1, -11121.6, -1890.82, 49.8836, 3.19338, 7200, 7200, 0, 0), -- Spectral Apprentice
-(@CGUID+211, 16389, 532, 1, -11125, -1896.74, 49.8918, 6.11585, 7200, 7200, 0, 0), -- Spectral Apprentice
-(@CGUID+212, 16389, 532, 1, -11091.6, -1911.22, 49.8487, 5.00916, 7200, 7200, 0, 0), -- Spectral Apprentice
-(@CGUID+213, 16389, 532, 1, -11096.2, -1904.78, 49.8617, 1.8495, 7200, 7200, 0, 0), -- Spectral Apprentice
+(@CGUID+208, 16389, 532, 1, -11097.5, -1902.15, 49.9294, 5.07891, 7200, 7200, 0, 0), -- Spectral Apprentice
+(@CGUID+209, 16389, 532, 1, -11122.9, -1895.78, 49.9736, 4.17134, 7200, 7200, 0, 0), -- Spectral Apprentice
+(@CGUID+210, 16389, 532, 1, -11121.8, -1890.74, 49.9679, 3.7001, 7200, 7200, 0, 0), -- Spectral Apprentice
+(@CGUID+211, 16389, 532, 1, -11124.9, -1896.57, 49.9736, 0.139626, 7200, 7200, 0, 0), -- Spectral Apprentice
+(@CGUID+212, 16389, 532, 1, -11092.2, -1911.57, 49.9384, 5.63741, 7200, 7200, 0, 0), -- Spectral Apprentice
+(@CGUID+213, 16389, 532, 1, -11096.5, -1904.75, 49.9426, 1.97222, 7200, 7200, 0, 0), -- Spectral Apprentice
 (@CGUID+214, 16406, 532, 1, -10931.9, -1968.7, 92.1811, 0.747578, 7200, 7200, 0, 2), -- Phantom Attendant
 (@CGUID+215, 16406, 532, 1, -10937.3, -1931.25, 93.8218, 4.1193, 7200, 7200, 0, 2), -- Phantom Attendant
 (@CGUID+216, 16406, 532, 1, -10932.3, -1965.46, 92.181, 6.20138, 7200, 7200, 0, 2), -- Phantom Attendant
@@ -2154,10 +2065,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+236, 16407, 532, 1, -10911.2, -2000.3, 92.184, 4.14224, 7200, 7200, 0, 2), -- Spectral Servant
 (@CGUID+237, 16407, 532, 1, -10929.6, -1971.55, 92.1902, 3.78897, 7200, 7200, 0, 2), -- Spectral Servant
 (@CGUID+238, 16407, 532, 1, -10953.8, -1982.26, 79.9745, 1.76204, 7200, 7200, 0, 2), -- Spectral Servant
-(@CGUID+239, 16407, 532, 1, -11099.2, -1898.3, 49.8568, 0.78686, 7200, 7200, 0, 0), -- Spectral Servant
-(@CGUID+240, 16407, 532, 1, -11092.1, -1914.78, 49.86, 1.6241, 7200, 7200, 0, 0), -- Spectral Servant
-(@CGUID+241, 16407, 532, 1, -11123.6, -1898.48, 49.8897, 1.2194, 7200, 7200, 0, 2), -- Spectral Servant
-(@CGUID+242, 16407, 532, 1, -11124, -1891.18, 49.8911, 5.39772, 7200, 7200, 0, 2), -- Spectral Servant
+(@CGUID+239, 16407, 532, 1, -11099.2, -1900.79, 49.9305, 0.977384, 7200, 7200, 0, 0), -- Spectral Servant
+(@CGUID+240, 16407, 532, 1, -11092, -1914.46, 49.9406, 2.21657, 7200, 7200, 0, 0), -- Spectral Servant
+(@CGUID+241, 16407, 532, 1, -11123.4, -1898.76, 49.9736, 1.29154, 7200, 7200, 0, 2), -- Spectral Servant
+(@CGUID+242, 16407, 532, 1, -11124.2, -1891.21, 49.9734, 5.5676, 7200, 7200, 0, 2), -- Spectral Servant
 (@CGUID+243, 16407, 532, 1, -11047.6, -1921.25, 77.2686, 3.53822, 7200, 7200, 0, 2), -- Spectral Servant
 (@CGUID+244, 16408, 532, 1, -10968.9, -1954.76, 79.9729, 4.69735, 7200, 7200, 0, 0), -- Phantom Valet
 (@CGUID+245, 16408, 532, 1, -10948.4, -2014.35, 79.9735, 3.07626, 7200, 7200, 0, 0), -- Phantom Valet
@@ -3345,7 +3256,24 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+21, 'Karazhan - Sealed Tome (21)', 1, 2, 0, 0),
 (@SGGUID+22, 'Karazhan - Sealed Tome (22)', 1, 1, 0, 0),
 (@SGGUID+23, 'Karazhan - Sealed Tome (23)', 1, 1, 0, 0),
-(@SGGUID+24, 'Karazhan - Sealed Tome (24)', 1, 2, 0, 0);
+(@SGGUID+24, 'Karazhan - Sealed Tome (24)', 1, 2, 0, 0),
+-- Boss Spawns
+(@SGGUID+25, 'Karazhan - Midnight', 0, 0, 0, 0),
+-- Trash
+-- Midnight linked
+(@SGGUID+50, 'Karazhan - Spectral Charger | Spectral Stallion', 0, 0, @SGGUID+1, 0), -- single mob that uses spawn_group_entry 
+(@SGGUID+51, 'Karazhan - Spectral Charger | Spectral Stallion | Group 1', 0, 0, @SGGUID+1, 1),
+(@SGGUID+52, 'Karazhan - Spectral Charger | Spectral Stallion | Group 2', 0, 0, @SGGUID+1, 1),
+(@SGGUID+53, 'Karazhan - Spectral Charger | Spectral Stallion | Group 3', 0, 0, @SGGUID+1, 1),
+(@SGGUID+54, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Group 4', 0, 0, @SGGUID+1, 1),
+(@SGGUID+55, 'Karazhan - Spectral Charger | Spectral Stallion | Group 5', 0, 0, @SGGUID+1, 1),
+(@SGGUID+56, 'Karazhan - Spectral Charger (2) | Spectral Stable Hand (2) | Group 6', 0, 0, @SGGUID+1, 1),
+(@SGGUID+57, 'Karazhan - Spectral Charger | Spectral Stallion | Spectral Stable Hand (3) | Group 7', 0, 0, @SGGUID+1, 1),
+(@SGGUID+58, 'Karazhan - Spectral Stable Hand | Spectral Stallion (2) | Patrol 001', 0, 0, @SGGUID+1, 1), -- Patrol
+(@SGGUID+59, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Group 8', 0, 0, @SGGUID+1, 1), 
+(@SGGUID+60, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Group 9', 0, 0, @SGGUID+1, 1),
+(@SGGUID+61, 'Karazhan - Spectral Stable Hand (2) | Patrols', 0, 0, @SGGUID+1, 0); -- 2 solo patroling mobs, dont need to put them in 2 seperate spawn_groups
+ 
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3396,7 +3324,14 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+23, 181845, 0, 0, 0), (@SGGUID+23, 181846, 0, 0, 0), (@SGGUID+23, 181847, 0, 0, 0), (@SGGUID+23, 181848, 0, 0, 0), (@SGGUID+23, 181768, 0, 0, 0), -- Sealed Tome (Loot)
 (@SGGUID+23, 181833, 0, 0, 2), (@SGGUID+23, 181837, 0, 0, 2), (@SGGUID+23, 181839, 0, 0, 2), (@SGGUID+23, 181841, 0, 0, 2), (@SGGUID+23, 181843, 0, 0, 2), -- Sealed Tome (Trap)
 (@SGGUID+24, 181845, 0, 0, 0), (@SGGUID+24, 181846, 0, 0, 0), (@SGGUID+24, 181847, 0, 0, 0), (@SGGUID+24, 181848, 0, 0, 0), (@SGGUID+24, 181768, 0, 0, 0), -- Sealed Tome (Loot)
-(@SGGUID+24, 181833, 0, 0, 2), (@SGGUID+24, 181837, 0, 0, 2), (@SGGUID+24, 181839, 0, 0, 2), (@SGGUID+24, 181841, 0, 0, 2), (@SGGUID+24, 181843, 0, 0, 2); -- Sealed Tome (Trap)
+(@SGGUID+24, 181833, 0, 0, 2), (@SGGUID+24, 181837, 0, 0, 2), (@SGGUID+24, 181839, 0, 0, 2), (@SGGUID+24, 181841, 0, 0, 2), (@SGGUID+24, 181843, 0, 0, 2), -- Sealed Tome (Trap)
+-- Creatures
+(@SGGUID+50, 15547, 0, 0, 0), (@SGGUID+50, 15548, 0, 0, 0), -- Spectral Charger, Spectral Stallion
+(@SGGUID+52, 15547, 0, 0, 0), (@SGGUID+52, 15548, 0, 0, 0); -- Spectral Charger, Spectral Stallion
+
+INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
+-- Midnight linked trash, attack when midnight gets attacked. 
+(@SGGUID+25, @SGGUID+50), (@SGGUID+25, @SGGUID+51), (@SGGUID+25, @SGGUID+52), (@SGGUID+25, @SGGUID+53),(@SGGUID+25, @SGGUID+54), (@SGGUID+25, @SGGUID+55), (@SGGUID+25, @SGGUID+56), (@SGGUID+25, @SGGUID+57), (@SGGUID+25, @SGGUID+58), (@SGGUID+25, @SGGUID+59), (@SGGUID+25, @SGGUID+60), (@SGGUID+25, @SGGUID+61); 
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @OGUID+299, -1), -- Sealed Tome
@@ -3534,11 +3469,85 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+24, @OGUID+433, -1), -- Sealed Tome
 (@SGGUID+24, @OGUID+434, -1), -- Sealed Tome
 (@SGGUID+24, @OGUID+435, -1), -- Sealed Tome
-(@SGGUID+24, @OGUID+436, -1); -- Sealed Tome
+(@SGGUID+24, @OGUID+436, -1),-- Sealed Tome
+-- Boss spawns
+(@SGGUID+25, @CGUID+144, -1),
+-- Trash
+-- Midnight linked
+(@SGGUID+50, @CGUID+119, -1),
+(@SGGUID+51, @CGUID+118, -1),
+(@SGGUID+51, @CGUID+122, -1),
+(@SGGUID+52, @CGUID+123, -1),
+(@SGGUID+52, @CGUID+126, -1),
+(@SGGUID+53, @CGUID+115, -1),
+(@SGGUID+53, @CGUID+128, -1),
+(@SGGUID+54, @CGUID+127, -1),
+(@SGGUID+54, @CGUID+134, -1),
+(@SGGUID+55, @CGUID+117, -1),
+(@SGGUID+55, @CGUID+125, -1),
+(@SGGUID+56, @CGUID+120, -1),
+(@SGGUID+56, @CGUID+121, -1),
+(@SGGUID+56, @CGUID+137, -1), -- waypoints for dbscript
+(@SGGUID+56, @CGUID+138, -1), -- waypoints for dbscript
+(@SGGUID+57, @CGUID+116, -1),
+(@SGGUID+57, @CGUID+124, -1),
+(@SGGUID+57, @CGUID+130, -1), -- waypoints for dbscript
+(@SGGUID+57, @CGUID+131, -1), -- waypoints for dbscript
+(@SGGUID+57, @CGUID+132, -1), -- waypoints for dbscript
+(@SGGUID+58, @CGUID+136, 0), -- Patrol - Spectral Stable Hand
+(@SGGUID+58, @CGUID+129, 1), -- Patrol - Spectral Stallion
+(@SGGUID+59, @CGUID+240, -1),
+(@SGGUID+59, @CGUID+212, -1),
+(@SGGUID+59, @CGUID+213, -1),
+(@SGGUID+59, @CGUID+208, -1),
+(@SGGUID+59, @CGUID+239, -1),
+(@SGGUID+60, @CGUID+241, -1),
+(@SGGUID+60, @CGUID+211, -1),
+(@SGGUID+60, @CGUID+209, -1),
+(@SGGUID+60, @CGUID+242, -1),
+(@SGGUID+60, @CGUID+210, -1),
+(@SGGUID+61, @CGUID+135, -1),
+(@SGGUID+61, @CGUID+133, -1);
 
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001');
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+58,'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+58,1,-11119.062,-1955.4576,49.882957,100,0,0),
+(@SGGUID+58,2,-11126.228,-1957.1259,49.88298,100,0,0),
+(@SGGUID+58,3,-11135.199,-1958.8073,49.882298,100,0,0),
+(@SGGUID+58,4,-11141.338,-1958.9414,49.8705,100,0,0),
+(@SGGUID+58,5,-11147.174,-1956.5747,49.886124,100,0,0),
+(@SGGUID+58,6,-11151.944,-1952.4768,49.88612,100,0,0),
+(@SGGUID+58,7,-11155.628,-1946.7982,49.88612,100,0,0),
+(@SGGUID+58,8,-11156.082,-1938.007,49.886127,100,0,0),
+(@SGGUID+58,9,-11152.993,-1929.4319,49.88324,100,0,0),
+(@SGGUID+58,10,-11148.607,-1922.2838,49.87796,100,0,0),
+(@SGGUID+58,11,-11144.058,-1914.3928,49.88218,100,0,0),
+(@SGGUID+58,12,-11140.925,-1906.7366,49.888054,100,0,0),
+(@SGGUID+58,13,-11137.439,-1894.942,49.886127,100,0,0),
+(@SGGUID+58,14,-11140.893,-1906.6265,49.886124,100,0,0),
+(@SGGUID+58,15,-11144.058,-1914.3928,49.88218,100,0,0),
+(@SGGUID+58,16,-11148.607,-1922.2838,49.87796,100,0,0),
+(@SGGUID+58,17,-11152.993,-1929.4319,49.88324,100,0,0),
+(@SGGUID+58,18,-11156.082,-1938.007,49.886127,100,0,0),
+(@SGGUID+58,19,-11155.628,-1946.7982,49.88612,100,0,0),
+(@SGGUID+58,20,-11151.944,-1952.4768,49.88612,100,0,0),
+(@SGGUID+58,21,-11147.174,-1956.5747,49.886124,100,0,0),
+(@SGGUID+58,22,-11141.338,-1958.9414,49.8705,100,0,0),
+(@SGGUID+58,23,-11135.199,-1958.8073,49.882298,100,0,0),
+(@SGGUID+58,24,-11126.228,-1957.1259,49.88298,100,0,0);
+
+DELETE FROM worldstate_name WHERE Id IN (2315);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(2315, 'Karazhan - Midnight - Encounter completed');
+
+DELETE FROM conditions WHERE condition_entry IN (@SGGUID+1);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, '42', 2315, '0', '0', '0', '0', 'Midnight - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
@@ -3594,12 +3603,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1646801, 1000, 1, 1, 0, 0, 0, 0, 0, 6, 273, 274, 11, 0, 0, 0, 0, 'Spectral Patron - EMOTE_ONESHOT_TALK'),
 (1647001, 1000, 1, 274, 0, 0, 0, 0, 0, 1, 11, 6, 273, 0, 0, 0, 0, 'Ghostly Philanthropist - EMOTE_ONESHOT_NO'),
 (1640701, 0, 0, 0, 0, 0, 0, 0, 0, 13828, 13827, 13826, 0, 0, 0, 0, 0, 'Spectral Servant - Random Say'),
-(1640701, 5000, 31, 16159, 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spectral Servant - Search for 16159'),
-(1640701, 6000, 0, 0, 0, 0, 16159, 60, 3, 13252, 13251, 0, 0, 0, 0, 0, 0, 'Force Calliard - Random Say'),
-(1555101, 0, 0, 0, 0, 0, 0, 0, 0, 13806, 13804, 13805, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Random Say'),
-(1555101, 0, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spectral Stable Hand - STATE_USESTANDING'),
-(1555101, 5000, 31, 16159, 55, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Search for 16159'),
-(1555101, 6000, 0, 0, 0, 0, 16159, 60, 3, 13252, 13251, 0, 0, 0, 0, 0, 0, 'Force Calliard - Random Say');
+(1555101, 0, 0, 0, 0, 0, 0, 0, 0, 13806, 13804, 13805, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Random Say');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
