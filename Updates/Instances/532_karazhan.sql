@@ -298,16 +298,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+238, 6, -10950.3, -1965.63, 79.973, 0, 0, 0),
 (@CGUID+238, 7, -10953, -1997.25, 79.973, 0, 0, 0),
 (@CGUID+238, 8, -10962.5, -2016.67, 79.973, 0, 0, 0),
-(@CGUID+241, 1, -11123.6, -1898.48, 49.8897, 100, 75000, 0),
-(@CGUID+241, 2, -11123.6, -1898.48, 49.8897, 100, 35000, 1640701),
-(@CGUID+241, 3, -11123.6, -1898.48, 49.8897, 100, 70000, 0),
-(@CGUID+241, 4, -11123.6, -1898.48, 49.8897, 100, 80000, 1640701),
-(@CGUID+241, 5, -11123.6, -1898.48, 49.8897, 100, 30000, 0),
-(@CGUID+242, 1, -11124, -1891.18, 49.8911, 100, 45000, 1640701),
-(@CGUID+242, 2, -11124, -1891.18, 49.8911, 100, 45000, 0),
-(@CGUID+242, 3, -11124, -1891.18, 49.8911, 100, 90000, 1640701),
-(@CGUID+242, 4, -11124, -1891.18, 49.8911, 100, 80000, 0),
-(@CGUID+242, 5, -11124, -1891.18, 49.8911, 100, 65000, 0),
 (@CGUID+243, 1, -11052.7, -1923.2, 77.2686, 0, 0, 0),
 (@CGUID+243, 2, -11060.8, -1924.69, 77.2686, 0, 0, 0),
 (@CGUID+243, 3, -11066.5, -1934.07, 77.2686, 0, 0, 0),
@@ -2067,8 +2057,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+238, 16407, 532, 1, -10953.8, -1982.26, 79.9745, 1.76204, 7200, 7200, 0, 2), -- Spectral Servant
 (@CGUID+239, 16407, 532, 1, -11099.2, -1900.79, 49.9305, 0.977384, 7200, 7200, 0, 0), -- Spectral Servant
 (@CGUID+240, 16407, 532, 1, -11092, -1914.46, 49.9406, 2.21657, 7200, 7200, 0, 0), -- Spectral Servant
-(@CGUID+241, 16407, 532, 1, -11123.4, -1898.76, 49.9736, 1.29154, 7200, 7200, 0, 2), -- Spectral Servant
-(@CGUID+242, 16407, 532, 1, -11124.2, -1891.21, 49.9734, 5.5676, 7200, 7200, 0, 2), -- Spectral Servant
+(@CGUID+241, 16407, 532, 1, -11123.4, -1898.76, 49.9736, 1.29154, 7200, 7200, 0, 0), -- Spectral Servant
+(@CGUID+242, 16407, 532, 1, -11124.2, -1891.21, 49.9734, 5.5676, 7200, 7200, 0, 0), -- Spectral Servant
 (@CGUID+243, 16407, 532, 1, -11047.6, -1921.25, 77.2686, 3.53822, 7200, 7200, 0, 2), -- Spectral Servant
 (@CGUID+244, 16408, 532, 1, -10968.9, -1954.76, 79.9729, 4.69735, 7200, 7200, 0, 0), -- Phantom Valet
 (@CGUID+245, 16408, 532, 1, -10948.4, -2014.35, 79.9735, 3.07626, 7200, 7200, 0, 0), -- Phantom Valet
@@ -3329,9 +3319,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+50, 15547, 0, 0, 0), (@SGGUID+50, 15548, 0, 0, 0), -- Spectral Charger, Spectral Stallion
 (@SGGUID+52, 15547, 0, 0, 0), (@SGGUID+52, 15548, 0, 0, 0); -- Spectral Charger, Spectral Stallion
 
-INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
--- Midnight linked trash, attack when midnight gets attacked. 
-(@SGGUID+25, @SGGUID+50), (@SGGUID+25, @SGGUID+51), (@SGGUID+25, @SGGUID+52), (@SGGUID+25, @SGGUID+53),(@SGGUID+25, @SGGUID+54), (@SGGUID+25, @SGGUID+55), (@SGGUID+25, @SGGUID+56), (@SGGUID+25, @SGGUID+57), (@SGGUID+25, @SGGUID+58), (@SGGUID+25, @SGGUID+59), (@SGGUID+25, @SGGUID+60), (@SGGUID+25, @SGGUID+61); 
+-- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @OGUID+299, -1), -- Sealed Tome
@@ -3602,7 +3590,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1642611, 10000, 32, 0, 0, 0, 16425, 6, 7, 0, 0, 0, 0, 0, 0, 0, 0, 'Phantom Guardsman - Resume Waypoints'),
 (1646801, 1000, 1, 1, 0, 0, 0, 0, 0, 6, 273, 274, 11, 0, 0, 0, 0, 'Spectral Patron - EMOTE_ONESHOT_TALK'),
 (1647001, 1000, 1, 274, 0, 0, 0, 0, 0, 1, 11, 6, 273, 0, 0, 0, 0, 'Ghostly Philanthropist - EMOTE_ONESHOT_NO'),
-(1640701, 0, 0, 0, 0, 0, 0, 0, 0, 13828, 13827, 13826, 0, 0, 0, 0, 0, 'Spectral Servant - Random Say'),
 (1555101, 0, 0, 0, 0, 0, 0, 0, 0, 13806, 13804, 13805, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Random Say');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
