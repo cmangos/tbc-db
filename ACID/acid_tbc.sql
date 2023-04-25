@@ -18859,7 +18859,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Void Conduit 20899 - npc_void_conduit
 ('2089901','20899','9','0','100','1','0','500','0','0','0','0','21','0','1','0','20','0','0','0','0','0','0','0','Void Conduit - Prevent Combat Movement and Prevent Melee'),
 ('2089902','20899','8','0','100','1','35734','-1','0','0','0','0','11','5','0','0','0','0','0','0','0','0','0','0','Void Conduit - Credit on Spellhit'),
-('2089903','20899','6','0','100','0','0','0','0','0','0','0','1','18602','0','0','0','0','0','0','0','0','0','0','Void Conduit - Yell on Death'),
 -- Protectorate Nether Drake 20903
 -- Professor Dabiri 20907
 -- Tashar 20913
