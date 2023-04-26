@@ -15,5 +15,5 @@
 DELETE FROM dbscripts_on_creature_death WHERE id IN (22911);
 INSERT INTO dbscripts_on_creature_death (id, delay, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, x, y, z, o, comments) VALUES
 (22911,1,18,5000,0,0,0,0,0x04,0,0,0,0,0,0,0,0,'despawn Self');
-UPDATE `broadcast_text` SET `ChatTypeID`= 1 WHERE `Id` IN (20773);
+UPDATE `broadcast_text` SET `ChatTypeID`= 1 WHERE `Id` IN (20773,21264);
 
