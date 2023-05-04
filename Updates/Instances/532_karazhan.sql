@@ -298,27 +298,32 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+238, 6, -10950.3, -1965.63, 79.973, 0, 0, 0),
 (@CGUID+238, 7, -10953, -1997.25, 79.973, 0, 0, 0),
 (@CGUID+238, 8, -10962.5, -2016.67, 79.973, 0, 0, 0),
-(@CGUID+243, 1, -11052.7, -1923.2, 77.2686, 0, 0, 0),
-(@CGUID+243, 2, -11060.8, -1924.69, 77.2686, 0, 0, 0),
-(@CGUID+243, 3, -11066.5, -1934.07, 77.2686, 0, 0, 0),
-(@CGUID+243, 4, -11067.9, -1944.23, 77.2686, 0, 0, 0),
-(@CGUID+243, 5, -11066.4, -1960.82, 77.2686, 0, 0, 0),
-(@CGUID+243, 6, -11066.1, -1973.73, 77.2686, 0, 0, 0),
-(@CGUID+243, 7, -11067.5, -1986.12, 77.2686, 0, 0, 0),
-(@CGUID+243, 8, -11073.9, -1993.72, 77.2686, 0, 0, 0),
-(@CGUID+243, 9, -11069.7, -2001.22, 77.2686, 0, 0, 0),
-(@CGUID+243, 10, -11065.4, -2006.88, 77.2686, 0, 0, 0),
-(@CGUID+243, 11, -11057.7, -2006.96, 77.2686, 0, 0, 0),
-(@CGUID+243, 12, -11053.8, -2001.26, 77.2686, 0, 0, 0),
-(@CGUID+243, 13, -11052.5, -1992.84, 77.2686, 0, 0, 0),
-(@CGUID+243, 14, -11055, -1986.18, 77.2686, 0, 0, 0),
-(@CGUID+243, 15, -11053.2, -1969.57, 77.2686, 0, 0, 0),
-(@CGUID+243, 16, -11048.8, -1959.82, 77.2686, 0, 0, 0),
-(@CGUID+243, 17, -11048.9, -1952.02, 77.2686, 0, 0, 0),
-(@CGUID+243, 18, -11050.9, -1945.56, 77.2686, 0, 0, 0),
-(@CGUID+243, 19, -11046.4, -1935.58, 77.2686, 0, 0, 0),
-(@CGUID+243, 20, -11044.2, -1927.46, 77.2686, 0, 0, 0),
-(@CGUID+243, 21, -11046.6, -1921.64, 77.2686, 0, 0, 0),
+(@CGUID+243,1,-11065.718,-1963.1342,77.26112,100, 0, 0),
+(@CGUID+243,2,-11065.715,-1972.1046,77.26112,100, 0, 0),
+(@CGUID+243,3,-11066.364,-1980.6091,77.261116,100, 0, 0),
+(@CGUID+243,4,-11066.535,-1984.7947,77.261116,100, 0, 0),
+(@CGUID+243,5,-11069.835,-1987.7533,77.261116,100, 0, 0),
+(@CGUID+243,6,-11071.769,-1990.6068,77.26112,100, 0, 0),
+(@CGUID+243,7,-11071.192,-1998.0259,77.26113,100, 0, 0),
+(@CGUID+243,8,-11068.427,-2002.9899,77.26112,100, 0, 0),
+(@CGUID+243,9,-11061.512,-2005.3854,77.26112,100, 0, 0),
+(@CGUID+243,10,-11054.599,-2003.1658,77.26112,100, 0, 0),
+(@CGUID+243,11,-11054.424,-1996.2369,77.26112,100, 0, 0),
+(@CGUID+243,12,-11056.106,-1987.0751,77.261116,100, 0, 0),
+(@CGUID+243,13,-11054.379,-1977.5282,77.26112,100, 0, 0),
+(@CGUID+243,14,-11052.917,-1969.2594,77.26112,100, 0, 0),
+(@CGUID+243,15,-11050.746,-1959.7369,77.26113,100, 0, 0),
+(@CGUID+243,16,-11049.029,-1950.2257,77.26113,100, 0, 0),
+(@CGUID+243,17,-11048.064,-1942.2107,77.26112,100, 0, 0),
+(@CGUID+243,18,-11047.255,-1932.3529,77.26112,100, 0, 0),
+(@CGUID+243,19,-11047.546,-1921.6298,77.26112,100, 0, 0),
+(@CGUID+243,20,-11057.21,-1924.627,77.26228,100, 0, 0),
+(@CGUID+243,21,-11068.285,-1924.4084,77.26027,100, 0, 0),
+(@CGUID+243,22,-11066.724,-1930.8398,77.26044,100, 0, 0),
+(@CGUID+243,23,-11068.295,-1939.3407,77.25999,100, 0, 0),
+(@CGUID+243,24,-11069.224,-1945.1454,77.262054,100, 0, 0),
+(@CGUID+243,25,-11068.639,-1949.8898,77.26276,100, 0, 0),
+(@CGUID+243,26,-11067.581,-1954.9069,77.26112,100, 0, 0),
 (@CGUID+355, 1, -10935.5, -1933.44, 93.821, 2.95848, 21000, 0),
 (@CGUID+355, 2, -10935.5, -1933.44, 93.821, 2.95848, 22000, 1001),
 (@CGUID+355, 3, -10935.5, -1933.44, 93.821, 2.95848, 18000, 1001),
@@ -329,33 +334,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+357, 3, -10929.7, -1963.39, 92.1806, 4.64001, 16000, 1011),
 (@CGUID+357, 4, -10929.7, -1963.39, 92.1806, 4.64001, 20000, 0),
 (@CGUID+357, 5, -10929.7, -1963.39, 92.1806, 4.64001, 14000, 1001),
-(@CGUID+372, 1, -11059.6, -1939.27, 77.2682, 1.7436, 2000, 1001),
-(@CGUID+372, 2, -11059.6, -1939.27, 77.2682, 1.7436, 2000, 1006),
-(@CGUID+372, 3, -11059.6, -1939.27, 77.2682, 1.7436, 10000, 0),
-(@CGUID+372, 4, -11059.6, -1939.27, 77.2682, 1.7436, 2000, 1011),
-(@CGUID+372, 5, -11059.6, -1939.27, 77.2682, 1.7436, 6000, 0),
-(@CGUID+372, 6, -11059.6, -1939.27, 77.2682, 1.7436, 10000, 1001),
-(@CGUID+372, 7, -11059.6, -1939.27, 77.2682, 1.7436, 5000, 0),
-(@CGUID+372, 8, -11059.6, -1939.27, 77.2682, 6.2816, 3000, 1025),
-(@CGUID+372, 9, -11059.6, -1939.27, 77.2682, 1.7436, 9000, 1001),
-(@CGUID+372, 10, -11059.6, -1939.27, 77.2682, 1.7436, 10000, 1005),
-(@CGUID+372, 11, -11059.6, -1939.27, 77.2682, 1.7436, 8000, 1001),
-(@CGUID+373, 1, -11060.8, -1936.58, 77.2682, 5.37606, 2000, 0),
-(@CGUID+373, 2, -11060.8, -1936.58, 77.2682, 5.37606, 2000, 1011),
-(@CGUID+373, 3, -11060.8, -1936.58, 77.2682, 0.2985, 2000, 1025),
-(@CGUID+373, 4, -11060.8, -1936.58, 77.2682, 5.37606, 10000, 1001),
-(@CGUID+373, 5, -11060.8, -1936.58, 77.2682, 5.37606, 2000, 0),
-(@CGUID+373, 6, -11060.8, -1936.58, 77.2682, 5.37606, 6000, 1011),
-(@CGUID+373, 7, -11060.8, -1936.58, 77.2682, 5.37606, 10000, 0),
-(@CGUID+373, 8, -11060.8, -1936.58, 77.2682, 5.37606, 5000, 1006),
-(@CGUID+373, 9, -11060.8, -1936.58, 77.2682, 5.37606, 8000, 0),
-(@CGUID+373, 10, -11060.8, -1936.58, 77.2682, 5.37606, 10000, 1011),
-(@CGUID+373, 11, -11060.8, -1936.58, 77.2682, 5.37606, 5000, 1001),
-(@CGUID+377, 1, -11069.2, -2007.05, 77.3515, 4.7822, 5000, 0),
-(@CGUID+377, 2, -11069.2, -2007.05, 77.3515, 4.7822, 2000, 1001),
-(@CGUID+377, 3, -11069.2, -2007.05, 77.3515, 4.7822, 8000, 0),
-(@CGUID+377, 4, -11069.2, -2007.05, 77.3515, 4.7822, 10000, 1001),
-(@CGUID+377, 5, -11069.2, -2007.05, 77.3515, 4.7822, 6000, 1001),
 (@CGUID+378, 1, 489.03, -70.4867, 9.54709, 100, 0, 0),
 (@CGUID+378, 2, 485.466, -65.5795, 9.55864, 100, 0, 0),
 (@CGUID+378, 3, 479.067, -63.9467, 9.55825, 100, 0, 0),
@@ -1245,7 +1223,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+229, @CGUID+228, 1167), -- Phantom Attendant -> Phantom Attendant
 (@CGUID+355, @CGUID+228, 1167), -- Spectral Retainer -> Phantom Attendant
 (@CGUID+228, @CGUID+139, 1024), -- Phantom Attendant -> Moroes
-(@CGUID+243, @CGUID+139, 1024), -- Ghostly Servant -> Moroes
 (@CGUID+246, @CGUID+139, 1024), -- Phantom Valet -> Moroes
 (@CGUID+248, @CGUID+139, 1024), -- Phantom Guest -> Moroes
 (@CGUID+249, @CGUID+139, 1024), -- Phantom Guest -> Moroes
@@ -1294,21 +1271,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+330, @CGUID+139, 1024), -- Phantom Guest -> Moroes
 (@CGUID+342, @CGUID+339, 1167), -- Phantom Guest -> Phantom Guest
 (@CGUID+339, @CGUID+139, 1024), -- Phantom Guest -> Moroes
-(@CGUID+361, @CGUID+367, 1167), -- Spectral Chef -> Ghostly Baker
-(@CGUID+362, @CGUID+367, 1167), -- Spectral Chef -> Ghostly Baker
-(@CGUID+367, @CGUID+139, 1024), -- Ghostly Baker -> Moroes
-(@CGUID+363, @CGUID+359, 1167), -- Ghostly Baker -> Spectral Chef
-(@CGUID+364, @CGUID+359, 1167), -- Ghostly Baker -> Spectral Chef
-(@CGUID+359, @CGUID+139, 1024), -- Spectral Chef -> Moroes
-(@CGUID+365, @CGUID+360, 1167), -- Ghostly Baker -> Spectral Chef
-(@CGUID+366, @CGUID+360, 1167), -- Ghostly Baker -> Spectral Chef
-(@CGUID+360, @CGUID+139, 1024), -- Spectral Chef -> Moroes
-(@CGUID+373, @CGUID+372, 1167), -- Ghostly Steward -> Ghostly Steward
-(@CGUID+372, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
-(@CGUID+375, @CGUID+374, 1167), -- Ghostly Steward -> Ghostly Steward
-(@CGUID+374, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
-(@CGUID+377, @CGUID+376, 1167), -- Skeletal Waiter -> Skeletal Waiter
-(@CGUID+376, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
 (@CGUID+379, @CGUID+378, 1167), -- Skeletal Waiter -> Skeletal Waiter
 (@CGUID+378, @CGUID+139, 1024), -- Ghostly Steward -> Moroes
 (@CGUID+417, @CGUID+139, 1024), -- Phantom Guardsman -> Moroes
@@ -1921,7 +1883,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+240, 16407, 532, 1, -11092, -1914.46, 49.9406, 2.21657, 7200, 7200, 0, 0), -- Spectral Servant
 (@CGUID+241, 16407, 532, 1, -11123.4, -1898.76, 49.9736, 1.29154, 7200, 7200, 0, 0), -- Spectral Servant
 (@CGUID+242, 16407, 532, 1, -11124.2, -1891.21, 49.9734, 5.5676, 7200, 7200, 0, 0), -- Spectral Servant
-(@CGUID+243, 16407, 532, 1, -11047.6, -1921.25, 77.2686, 3.53822, 7200, 7200, 0, 2), -- Spectral Servant
+(@CGUID+243, 16407, 532, 1, -11069.093, -1947.1396, 77.3319, 4.9046, 7200, 7200, 0, 2), -- Spectral Servant
 (@CGUID+244, 16408, 532, 1, -10968.9, -1954.76, 79.9729, 4.69735, 7200, 7200, 0, 0), -- Phantom Valet
 (@CGUID+245, 16408, 532, 1, -10948.4, -2014.35, 79.9735, 3.07626, 7200, 7200, 0, 0), -- Phantom Valet
 (@CGUID+246, 16408, 532, 1, -10900.9, -1965.99, 92.1725, 3.0648, 7200, 7200, 0, 0), -- Phantom Valet
@@ -2037,25 +1999,25 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+356, 16410, 532, 1, -10972.2, -2008.22, 79.9729, 4.52886, 7200, 7200, 0, 0), -- Spectral Retainer
 (@CGUID+357, 16410, 532, 1, -10929.7, -1963.39, 92.1806, 4.64001, 7200, 7200, 0, 2), -- Spectral Retainer
 (@CGUID+358, 16410, 532, 1, -10954.5, -1969.66, 79.9729, 3.75209, 7200, 7200, 0, 0), -- Spectral Retainer
-(@CGUID+359, 16411, 532, 1, -11071.1, -1983.6, 77.3515, 2.61799, 7200, 7200, 0, 0), -- Spectral Chef
-(@CGUID+360, 16411, 532, 1, -11052.7, -1954.5, 77.3515, 2.68781, 7200, 7200, 0, 0), -- Spectral Chef
+(@CGUID+359, 0, 532, 1, -11071.1, -1983.6, 77.3515, 2.61799, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+360, 0, 532, 1, -11052.7, -1954.5, 77.3515, 2.68781, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+361, 16411, 532, 1, -11063.4, -1919.51, 77.3515, 0.855211, 7200, 7200, 0, 0), -- Spectral Chef
 (@CGUID+362, 16411, 532, 1, -11060.7, -1921.2, 77.3515, 1.41372, 7200, 7200, 0, 0), -- Spectral Chef
-(@CGUID+363, 16412, 532, 1, -11071.6, -1980.46, 77.3515, 3.31613, 7200, 7200, 0, 0), -- Ghostly Baker
-(@CGUID+364, 16412, 532, 1, -11072.7, -1986.1, 77.3515, 1.79769, 7200, 7200, 0, 0), -- Ghostly Baker
-(@CGUID+365, 16412, 532, 1, -11053.4, -1957.66, 77.3515, 1.72788, 7200, 7200, 0, 0), -- Ghostly Baker
-(@CGUID+366, 16412, 532, 1, -11053.3, -1951.09, 77.3515, 3.54302, 7200, 7200, 0, 0), -- Ghostly Baker
-(@CGUID+367, 16412, 532, 1, -11057.9, -1920.44, 77.2682, 4.33227, 7200, 7200, 0, 0), -- Ghostly Baker
+(@CGUID+363, 0, 532, 1, -11071.6, -1980.46, 77.3515, 3.31613, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+364, 0, 532, 1, -11072.7, -1986.1, 77.3515, 1.79769, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+365, 0, 532, 1, -11053.4, -1957.66, 77.3515, 1.72788, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+366, 0, 532, 1, -11053.3, -1951.09, 77.3515, 3.54302, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+367, 16412, 532, 1, -11057.7, -1919.83, 77.3515, 4.01426, 7200, 7200, 0, 0), -- Ghostly Baker
 (@CGUID+368, 16414, 532, 1, -11022.8, -1898.42, 78.8689, 6.14496, 7200, 7200, 0, 0), -- Ghostly Steward
 (@CGUID+369, 16414, 532, 1, -11023.4, -1907.82, 78.8689, 6.15124, 7200, 7200, 0, 0), -- Ghostly Steward
 (@CGUID+370, 16414, 532, 1, -10948.8, -1919.58, 78.8687, 3.0931, 7200, 7200, 0, 0), -- Ghostly Steward
 (@CGUID+371, 16414, 532, 1, -10947.6, -1913.28, 78.8687, 2.99679, 7200, 7200, 0, 0), -- Ghostly Steward
-(@CGUID+372, 16414, 532, 1, -11059.6, -1939.27, 77.2682, 1.7436, 7200, 7200, 0, 2), -- Ghostly Steward
-(@CGUID+373, 16414, 532, 1, -11060.8, -1936.58, 77.2682, 5.37606, 7200, 7200, 0, 2), -- Ghostly Steward
-(@CGUID+374, 16414, 532, 1, -11062, -1992.07, 77.267, 5.80332, 7200, 7200, 0, 0), -- Ghostly Steward
-(@CGUID+375, 16414, 532, 1, -11059.2, -1991.94, 77.267, 2.65544, 7200, 7200, 0, 0), -- Ghostly Steward
-(@CGUID+376, 16415, 532, 1, -11072.2, -2007.96, 77.3515, 0.034907, 7200, 7200, 0, 0), -- Skeletal Waiter
-(@CGUID+377, 16415, 532, 1, -11069.2, -2007.05, 77.3515, 4.7822, 7200, 7200, 0, 2), -- Skeletal Waiter
+(@CGUID+372, 16414, 532, 1, -11059.6, -1939.02, 77.3515, 1.3439, 7200, 7200, 0, 0), -- Ghostly Steward
+(@CGUID+373, 16414, 532, 1, -11060.3, -1936.51, 77.3515, 5.41052, 7200, 7200, 0, 0), -- Ghostly Steward
+(@CGUID+374, 16414, 532, 1, -11057.8, -1994.26, 77.3515, 1.93732, 7200, 7200, 0, 0), -- Ghostly Steward
+(@CGUID+375, 16414, 532, 1, -11059.8, -1992.05, 77.3515, 5.60251, 7200, 7200, 0, 0), -- Ghostly Steward
+(@CGUID+376, 16415, 532, 1, -11072.2, -2007.96, 77.3515, 0.0349066, 7200, 7200, 0, 0), -- Skeletal Waiter
+(@CGUID+377, 16415, 532, 1, -11069.2, -2007.05, 77.3515, 4.7822, 7200, 7200, 0, 0), -- Skeletal Waiter
 (@CGUID+378, 16415, 532, 1, -11044.6, -1946.25, 77.2668, 1.12313, 7200, 7200, 0, 2), -- Skeletal Waiter
 (@CGUID+379, 16415, 532, 1, -11044.2, -1943.41, 77.2668, 5.45617, 7200, 7200, 0, 2), -- Skeletal Waiter
 (@CGUID+380, 16415, 532, 1, -11051.2, -1973.9, 77.2686, 1.41373, 7200, 7200, 0, 2), -- Skeletal Waiter
@@ -2613,7 +2575,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+941, 22523, 532, 1, -11109.4, -1893.7, 221.153, 3.80482, 180, 180, 0, 0), -- Karazhan - Chess, Victory Dummy Tool
 (@CGUID+942, 22524, 532, 1, -11114.3, -1885.2, 221.153, 1.309, 180, 180, 0, 0), -- Karazhan - Chess, Victory Controller
 (@CGUID+943, 25213, 532, 1, -11101.3, -1850.92, 221.153, 5.35816, 7200, 7200, 0, 0), -- Chess Chest Bunny
-(@CGUID+944, 17660, 532, 1, -11138, -2006.8, 295.427, 1.3016, 7200, 7200, 0, 2); -- Skeletal Gryphon
+(@CGUID+944, 17660, 532, 1, -11138, -2006.8, 295.427, 1.3016, 7200, 7200, 0, 2), -- Skeletal Gryphon
+(@CGUID+945, 16415, 532, 1, -11040.9, -1943.36, 77.3515, 4.39823, 7200, 7200, 0, 0), -- Skeletal Waiter
+(@CGUID+946, 16415, 532, 1, -11044.3, -1943.54, 77.3515, 5.41052, 7200, 7200, 0, 0), -- Skeletal Waiter
+(@CGUID+947, 16415, 532, 1, -11044.5, -1946.31, 77.3515, 1.44862, 7200, 7200, 0, 0); -- Skeletal Waiter
 
 -- (@CGUID+XXX 17260, 532, 1, -11124.99, -1908.318, 110.124, 5.864306, 7200, 7200, 0, 0), -- Nightbane Helper Target - Removed probably due to scripting reasons
 
@@ -3126,7 +3091,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+60, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Group 9', 0, 0, @SGGUID+1, 1),
 (@SGGUID+61, 'Karazhan - Spectral Stable Hand (2) | Patrols', 0, 0, @SGGUID+1, 0), -- 2 solo patroling mobs, dont need to put them in 2 seperate spawn_groups
  -- Moroes linked
- -- upper stable
+ -- ipper livery stable
 (@SGGUID+62, 'Karazhan - Spectral Sentry (2) | Group 10', 0, 2, @SGGUID+2, 1),
 (@SGGUID+63, 'Karazhan - Spectral Sentry | Phantom Guardsman | Patrol 002', 0, 2, @SGGUID+2, 1),
 (@SGGUID+64, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Group 11', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
@@ -3136,7 +3101,16 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+68, 'Karazhan - Spectral Sentry | Phantom Guardsman | Group 15', 0, 1, @SGGUID+2, 0), -- single patrol using spawn_group_entry
 (@SGGUID+69, 'Karazhan - Spectral Sentry | Phantom Guardsman | Group 16', 0, 3, @SGGUID+2, 1),
 (@SGGUID+70, 'Karazhan - Spectral Sentry | Phantom Guardsman | Group 17', 0, 3, @SGGUID+2, 1),
-(@SGGUID+71, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Group 17', 0, 4, @SGGUID+2, 1);
+(@SGGUID+71, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Group 17', 0, 4, @SGGUID+2, 1),
+-- the scullery
+(@SGGUID+72, 'Karazhan - Ghostly Steward (2) | Group 18', 0, 2, @SGGUID+2, 1),
+(@SGGUID+73, 'Karazhan - Spectral Chef (2) | Ghostly Baker | Group 19', 0, 3, @SGGUID+2, 1),
+(@SGGUID+74, 'Karazhan - Skeletal Waiter (2) | Group 20', 0, 2, @SGGUID+2, 1), -- 3 possible spawns-points, 2 active spawns
+(@SGGUID+75, 'Karazhan - Spectral Chef | Ghostly Baker | Group 21', 0, 3, @SGGUID+2, 1), -- spawn_group_entry
+(@SGGUID+76, 'Karazhan - Spectral Chef | Ghostly Baker | Group 22', 0, 3, @SGGUID+2, 1), -- spawn_group_entry
+(@SGGUID+77, 'Karazhan - Ghostly Steward (2) | Group 23', 0, 2, @SGGUID+2, 1),
+(@SGGUID+78, 'Karazhan - Skeletal Waiter (2) | Group 24', 0, 2, @SGGUID+2, 1),
+(@SGGUID+79, 'Karazhan - spectral Servant | Group 25', 0, 1, @SGGUID+2, 1); -- solo patroling pat in the scullery
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3195,7 +3169,9 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+67, 16424, 0, 0, 0), (@SGGUID+67, 16425, 0, 0, 0), -- Spectral Sentry, Phantom Guardsman
 (@SGGUID+68, 16424, 0, 0, 0), (@SGGUID+68, 16425, 0, 0, 0), -- Spectral Sentry, Phantom Guardsman
 (@SGGUID+69, 16424, 0, 0, 0), (@SGGUID+69, 16425, 0, 0, 0), -- Spectral Sentry, Phantom Guardsman
-(@SGGUID+70, 16424, 0, 0, 0), (@SGGUID+70, 16425, 0, 0, 0); -- Spectral Sentry, Phantom Guardsman
+(@SGGUID+70, 16424, 0, 0, 0), (@SGGUID+70, 16425, 0, 0, 0), -- Spectral Sentry, Phantom Guardsman
+(@SGGUID+75, 16411, 0, 0, 0), (@SGGUID+75, 16412, 0, 0, 0), -- Spectral Chef, Ghostly Baker
+(@SGGUID+76, 16411, 0, 0, 0), (@SGGUID+76, 16412, 0, 0, 0); -- Spectral Chef, Ghostly Baker
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
 
@@ -3402,7 +3378,26 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+71, @CGUID+392, -1),
 (@SGGUID+71, @CGUID+393, -1),
 (@SGGUID+71, @CGUID+411, -1),
-(@SGGUID+71, @CGUID+412, -1);
+(@SGGUID+71, @CGUID+412, -1),
+(@SGGUID+72, @CGUID+372, -1),
+(@SGGUID+72, @CGUID+373, -1),
+(@SGGUID+73, @CGUID+361, -1),
+(@SGGUID+73, @CGUID+362, -1),
+(@SGGUID+73, @CGUID+367, -1),
+(@SGGUID+74, @CGUID+945, -1),
+(@SGGUID+74, @CGUID+946, -1),
+(@SGGUID+74, @CGUID+947, -1),
+(@SGGUID+75, @CGUID+360, -1),
+(@SGGUID+75, @CGUID+365, -1),
+(@SGGUID+75, @CGUID+366, -1),
+(@SGGUID+76, @CGUID+359, -1),
+(@SGGUID+76, @CGUID+363, -1),
+(@SGGUID+76, @CGUID+364, -1),
+(@SGGUID+77, @CGUID+374, -1),
+(@SGGUID+77, @CGUID+375, -1),
+(@SGGUID+78, @CGUID+376, -1),
+(@SGGUID+78, @CGUID+377, -1),
+(@SGGUID+79, @CGUID+243, -1);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
@@ -3457,7 +3452,6 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+63,18,-11097.072,-1939.4983,74.44396,100,0,0),
 (@SGGUID+63,19,-11091.714,-1928.8903,74.41774,100,0,0),
 (@SGGUID+63,20,-11092.829,-1917.3286,74.39243,100,0,0);
-
 
 DELETE FROM worldstate_name WHERE Id IN (2315, 2309);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
