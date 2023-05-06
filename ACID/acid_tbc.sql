@@ -22746,7 +22746,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1866402','18664','27','0','100','1','12544','1','15000','30000','0','0','11','12544','0','0','0','0','0','0','0','0','0','0','Aged Dalaran Wizard - Cast Frost Armor on Missing Buff'),
 -- Dalaran Sorceress (18666) - NSR
 -- Thomas Yance 18672 - "text on leaving a customer"
-('1867201','18672','1','0','100','1','10000','30000','120000','300000','0','0','11','19557','19558','19559','0','0','0','0','0','0','0','0','Thomas Yance - Random Yell OOC'),
+('1867201','18672','1','0','100','1','10000','30000','120000','300000','0','0','1','19557','19558','19559','0','0','0','0','0','0','0','0','Thomas Yance - Random Yell OOC'),
 -- Pit Announcer (18673) - NSR
 -- Erozion (18723) - npc_erozion
 -- Brazen (18725) - npc_brazen
