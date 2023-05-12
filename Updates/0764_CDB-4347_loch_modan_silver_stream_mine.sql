@@ -1,7 +1,7 @@
 
 DELETE FROM `creature` WHERE (`guid` IN (9147, 9151, 9155, 9317, 9319, 9322, 9332, 9408, 9409, 9414, 9149, 9150, 9311, 9318, 9321, 9323, 9325, 9326, 9327, 9328, 9333, 9407, 9410, 9153, 9154, 9156, 9192));
 
-DELETE FROM `creature_movement` WHERE (`id` IN (9407));
+DELETE FROM `creature_movement` WHERE (`id` IN (9407,9192)); -- 9192 (1425)
 DELETE FROM `pool_creature_template` WHERE (`id` = 1425); -- 1425	1086	0	Grizlak (1425)
 UPDATE `creature_template` SET `SpeedWalk` = 1 WHERE (`Entry` IN (1175, 1177, 1425));
 DELETE FROM `pool_template` WHERE (`entry` = 1086); -- 1086	1	Grizlak (1425)

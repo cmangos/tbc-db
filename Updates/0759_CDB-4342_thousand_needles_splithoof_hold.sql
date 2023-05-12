@@ -1,9 +1,14 @@
 
+DELETE FROM `creature_addon` WHERE (`guid` IN (SELECT `guid` FROM `creature` where `id` IN (4093,4094,4096,4095,4097,4099)));
 DELETE FROM `creature` WHERE (`guid` IN (13083, 13085, 13094, 13095, 13096, 13097, 13098, 13099, 20970, 20971, 20972, 20974, 20975, 20977, 20994, 21010, 21011, 21012, 21013, 21014, 21015, 21016, 21028, 21029,
 21030, 21031, 21032, 21033, 21035, 21037, 21038, 21702, 21703, 21759, 21760, 21761, 21762, 21763, 21764, 21765, 21766, 21767, 21768, 21769, 21770, 21771));
 
 DELETE FROM `creature_movement` WHERE (`id` IN (21763, 21769, 20977));
 UPDATE `creature` SET `MovementType` = 0 WHERE (`guid`IN (21763, 21769, 20977));
+
+REPLACE INTO `creature_addon` (`guid`, `sheath_state`, `stand_state`) VALUES
+(140032, 1, 3),
+(140033, 1, 3); -- no visual impact as centauren lack certain animation states
 
 SET @CGUID := 140024;
 SET @SGUID := 10103;
