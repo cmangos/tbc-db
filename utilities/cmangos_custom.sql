@@ -139,6 +139,10 @@ UPDATE creature_template SET `modelid2` = 0, `modelid3` = 0, `modelid4` = 0 WHER
 5764 -- Guardian of B
 );
 
+UPDATE creature_template SET `modelid1` = 0, `modelid3` = 0, `modelid4` = 0 WHERE `entry` IN (
+12999 -- World Invisible Trigger (11686)
+);
+
 -- ============================================================
 -- TBC section
 -- ============================================================
@@ -219,7 +223,6 @@ UPDATE creature_template SET `modelid2` = 0, `modelid3` = 0, `modelid4` = 0 WHER
 );
 
 UPDATE creature_template SET `modelid1` = 0, `modelid3` = 0, `modelid4` = 0 WHERE `entry` IN (
-12999, -- World Invisible Trigger (11686)
 21419, -- Infernal Attacker - modelid1 (17312)
 22418 -- Archimonde Channel Target (18783)
 );
