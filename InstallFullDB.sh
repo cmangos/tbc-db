@@ -7,7 +7,7 @@
 ####################################################################################################
 
 # need to be changed on each official DB/CORE release
-FULLDB_FILE_ZIP="TBCDB_1.9.0_TheLastVengeance.sql.gz"
+FULLDB_FILE_ZIP="TBCDB_1.10.0_ReturnOfTheVengeance.sql.gz"
 FULLDB_FILE=${FULLDB_FILE_ZIP%.gz}
 NEXT_MILESTONES="0.12.4 0.13"
 

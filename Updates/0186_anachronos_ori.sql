@@ -1,3 +1,0 @@
-UPDATE creature SET orientation=1.884955525398254394 WHERE id=15192 AND guid=23098;
-
-
