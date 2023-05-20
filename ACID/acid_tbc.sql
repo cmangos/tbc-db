@@ -15189,7 +15189,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('937601','9376','1','0','100','0','1000','1000','0','0','0','0','11','13913','0','32','0','0','0','0','0','0','0','0','Blazerunner - Cast Blazerunner''s Aura OOC'),
 ('937602','9376','0','0','100','1025','4000','8000','10000','16000','0','0','11','17277','0','0','0','0','0','0','0','0','0','0','Blazerunner - Cast Blast Wave'),
 -- Gorishi Egg 9496
-('949601','9496','11','0','100','0','0','0','0','0','0','0','20','0','0','0','21','0','0','0','0','0','0','0','Gorishi Egg - Stop Melee and Stop Movement on Spawn'),
+('949601','9496','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Gorishi Egg - Set ReactState Passive on Spawn'),
 ('949602','9496','29','0','100','0','8000','8000','0','0','0','0','11','14206','0','0','37','0','0','0','41','1000','0','0','Gorishi Egg - Cast Summon Gorishi Grub and Die and Delayed Despawn on Generic Timer'),
 -- Gargantuan Ooze 9621 - Primal Ooze 6557
 -- U'cha
@@ -16651,6 +16651,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2306111','23061','21','5','100','0','0','0','0','0','0','0','41','8000','0','0','53','10128','0','0','0','0','0','0','Rivendark - Delayed Despawn and Start Relay Script on Reached Home (Phase 1)'),
 -- Legion Flak Cannon 23076
 ('2307601','23076','10','0','100','1','0','60','7000','10000','0','0','11','41598','6','2','0','0','0','0','0','0','0','0','Fel Flak Cannon - Cast Knockdown Felcannon: The Bolt Pair on Player Proximity'),
+-- [PH]Knockdown Fel Cannon Dummy 23077
 -- Fel Imp Defender 23078
 ('2307801','23078','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Fel Imp Defender - Enable Range Mode on Spawn'),
 ('2307802','23078','0','0','100','1025','20000','30000','20000','30000','0','0','11','40877','1','256','0','0','0','0','0','0','0','0','Fel Imp Defender - Cast Fireball'),
@@ -16731,7 +16732,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2326110','23261','6','5','100','0','0','0','0','0','0','0','53','10129','0','0','0','0','0','0','0','0','0','0','Furywing - Start Relay Script on Death (Phase 1)'),
 ('2326111','23261','21','5','100','0','0','0','0','0','0','0','41','8000','0','0','53','10130','0','0','0','0','0','0','Furywing - Delayed Despawn and Start Relay Script on Reached Home (Phase 1)'),
 -- Portable Fel Cannon 23278
-('2327802','23278','0','0','100','1025','0','1000','2500','2500','0','0','11','40672','1','0','0','0','0','0','0','0','0','0','Portable Fel Cannon - Combat - Cast Fel Cannon Blast'),
+('2327802','23278','0','0','100','1025','0','1000','2500','2500','0','0','11','40672','1','0','0','0','0','0','0','0','0','0','Portable Fel Cannon - Cast Fel Cannon Blast'),
 -- Insidion 23281
 ('2328101','23281','11','0','100','0','0','0','0','0','0','0','53','30601','0','0','0','0','0','0','0','0','0','0','Insidion - START_RELAY_SCRIPT on Spawn'),
 ('2328102','23281','30','0','100','0','5','23281','0','0','0','0','54','0','11','10083','22','2','0','0','0','0','0','0','Insidion - Random Yell and Set Phase 2 on Receive AI Event 5 (A)'),
@@ -17451,8 +17452,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mo'arg Overseer 19397 - NSR
 -- Gan'arg Peon 19398 - NSR
 -- Fel Cannon 19399
-('1939901','19399','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Fel Cannon - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
-('1939902','19399','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','256','0','0','0','0','0','0','0','0','Fel Cannon - Combat - Cast Fel Cannon Blast'),
+('1939901','19399','11','0','100','0','0','0','0','0','0','0','57','3','50','0','0','0','0','0','0','0','0','0','Fel Cannon - Enable TYPE_NO_MELEE_MODE on Spawn'),
+('1939902','19399','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','256','0','0','0','0','0','0','0','0','Fel Cannon - Cast Fel Cannon Blast'),
 -- Fel Reaver Sentry 19400 - NSR
 -- Maiden of Pain 19408
 ('1940801','19408','1','0','100','1','15000','30000','45000','60000','0','0','11','34086','15','0','0','0','0','0','0','0','0','0','Maiden of Pain - Cast Whipped Frenzy OOC'),
@@ -17658,8 +17659,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2245401','22454','11','0','100','0','0','0','0','0','0','0','54','20301','11','0','11','39205','15','32','0','0','0','0','Fel Spirit - Yell on Spawn and Cast Fel Spirit Visual'),
 ('2245402','22454','29','0','100','0','3000','3000','3000','3000','0','0','19','256','0','0','0','0','0','0','0','0','0','0','Fel Spirit - Remove Immune To Player flag'),
 -- Fel Cannon MKI 22461
-('2246101','22461','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Fel Cannon MKI - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
-('2246102','22461','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','256','0','0','0','0','0','0','0','0','Fel Cannon MKI - Combat - Cast Fel Cannon Blast'),
+('2246101','22461','11','0','100','0','0','0','0','0','0','0','57','3','50','0','0','0','0','0','0','0','0','0','Fel Cannon MKI - Enable TYPE_NO_MELEE_MODE on Spawn'),
+('2246102','22461','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','256','0','0','0','0','0','0','0','0','Fel Cannon MKI - Cast Fel Cannon Blast'),
 -- Bubbling Slimer Bunny 22505
 ('2250501','22505','11','0','100','0','0','0','0','0','0','0','11','39300','0','0','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Cast 39300 on Spawn'),
 ('2250502','22505','1','0','100','1','1000','5000','22000','27000','0','0','12','22506','0','25000','0','0','0','0','0','0','0','0','The Exorcism Bubbling Slimer Bunny (DND) - Spawn Foul Purge'),
@@ -18087,8 +18088,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Corki
 ('2081201','20812','1','0','100','1','70000','90000','70000','90000','0','0','54','0','0','10024','45','5','17','0','0','0','0','0','Corki - Random Say and Throw AI Event 5 (A) OOC'),
 -- Legion Fel Cannon 21233
-('2123301','21233','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Legion Fel Cannon - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
-('2123302','21233','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','256','0','0','0','0','0','0','0','0','Legion Fel Cannon - Combat - Cast Fel Cannon Blast'),
+('2123301','21233','11','0','100','0','0','0','0','0','0','0','57','3','50','0','0','0','0','0','0','0','0','0','Legion Fel Cannon - Enable TYPE_NO_MELEE_MODE on Spawn'),
+('2123302','21233','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','256','0','0','0','0','0','0','0','0','Legion Fel Cannon - Cast Fel Cannon Blast'),
 -- Crashing Wave-Spirit
 ('2230901','22309','0','0','100','1025','0','1000','10000','18000','0','0','11','34425','1','0','0','0','0','0','0','0','0','0','Crashing Wave-Spirit - Cast Water Bolt'),
 -- Storming Wind-Ripper
@@ -18930,7 +18931,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Ethereum Mace
 ('2128601','21286','11','0','100','0','0','0','0','0','0','0','11','12980','0','0','0','0','0','0','0','0','0','0','Ethereum Mace - Cast Simple Teleport on Spawn'),
 -- Warp Storm 21322
-('2132201','21322','11','0','100','0','0','0','0','0','0','0','61','1','0','0','20','0','0','0','0','0','0','0','Warp Storm - Set Immobilized State and Disable Melee on Spawn'),
+('2132201','21322','11','0','100','0','0','0','0','0','0','0','57','3','50','0','0','0','0','0','0','0','0','0','Warp Storm - Enable TYPE_NO_MELEE_MODE on Spawn'),
 ('2132202','21322','29','0','100','1','1000','1000','1000','1000','0','0','11','36580','15','0','0','0','0','0','0','0','0','0','Warp Storm - Cast Warp Storm on Generic Timer'),
 -- Netherock Crumbler 21323
 ('2132301','21323','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Netherock Crumbler - Forced Despawn on Evade'),
@@ -19681,13 +19682,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2231504','22315','29','0','100','0','7000','7000','0','0','0','0','11','38108','0','0','1','20108','0','0','41','2000','0','0','Deathforge Mine - Cast Deathforge Mine Explosion, Emote, Delayed Despawn on Generic Timer'),
 -- Dragonmaw Elite 22331
 ('2233101','22331','11','0','100','0','0','0','0','0','0','0','11','32121','0','0','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Choose Target (50 yd) on Spawn'),
-('2233102','22331','4','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Dragonmaw Elite - Disable Combat Movement on Aggro'),
-('2233103','22331','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Dragonmaw Elite - Flee at 15% HP'),
-('2233104','22331','0','0','100','1025','4000','6000','12000','16000','0','0','11','38859','4','32','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Serpent Sting'),
-('2233105','22331','0','0','100','1025','6000','9000','12000','16000','0','0','11','38861','4','0','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Aimed Shot'),
-('2233106','22331','9','0','100','1025','5','100','2300','3900','0','0','11','38858','1','256','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Shoot'),
+('2233102','22331','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Dragonmaw Elite - Flee at 15% HP'),
+('2233103','22331','0','0','100','1025','4000','6000','12000','16000','0','0','11','38859','4','32','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Serpent Sting'),
+('2233104','22331','0','0','100','1025','6000','9000','12000','16000','0','0','11','38861','4','0','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Aimed Shot'),
+('2233105','22331','9','0','100','1025','5','100','2300','3900','0','0','11','38858','1','256','0','0','0','0','0','0','0','0','Dragonmaw Elite - Cast Shoot'),
 -- Demon Portal (Zuluhed) 22336
-('2233601','22336','29','0','100','0','30000','30000','0','0','0','0','11','38877','0','0','0','0','0','0','0','0','0','0','Demon Portal (Zuluhed) - Cast Summon Arcubus on Generic Timer'),
+('2233601','22336','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Demon Portal (Zuluhed) - Set React State Passive on Spawn'),
+('2233602','22336','29','0','100','0','30000','30000','0','0','0','0','11','38877','0','0','0','0','0','0','0','0','0','0','Demon Portal (Zuluhed) - Cast Summon Arcubus on Generic Timer'),
 -- Arcubus Destroyer 22338 - NSR
 -- Illidari Ravager 22857 - mob_bt_battle_fighter
 -- Shadowhoof Assassin 22858 - mob_bt_battle_fighter
@@ -24004,7 +24005,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('803502','8035','29','0','100','0','0','0','0','0','0','0','1','3541','0','0','0','0','0','0','0','0','0','0','Dark Iron Land Mine - Emote on Generic Timer'),
 ('803503','8035','29','0','100','0','5000','5000','0','0','0','0','1','3542','0','0','0','0','0','0','0','0','0','0','Dark Iron Land Mine - Emote on Generic Timer'),
 ('803504','8035','29','0','100','0','10000','10000','0','0','0','0','1','3543','0','0','22','1','0','0','0','0','0','0','Dark Iron Land Mine - Emote and Set Phase 1 on Generic Timer'),
-('803505','8035','10','5','100','0','0','5','0','0','0','0','11','4043','15','0','41','10000','0','0','37','0','0','0','Dark Iron Land Mine - Cast Detonation and Delayed Despawn OOC LOS (Phase 1)'),
+('803505','8035','10','5','100','0','0','5','0','0','0','0','11','4043','15','0','0','0','0','0','37','0','0','0','Dark Iron Land Mine - Cast Detonation, Die OOC LOS (Phase 1)'),
 -- Sprok (8320) - NSR
 -- Tink Sprocketwhistle (Rough Scripted Data)
 ('967601','9676','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Tink Sprocketwhistle - Flee at 15% HP'),
@@ -24276,7 +24277,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1746504','17465','28','0','100','1029','16145','5','5000','9000','0','0','11','16145','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Heroic) - Cast Sunder Armor on Target Missing Aura Stack'),
 -- Lesser Shadow Fissure 17471 - npc_aoe_damage_trigger
 -- Training Dummy 17578
-('1757801','17578','11','0','100','0','0','0','0','0','0','0','61','1','0','0','42','1','0','0','20','0','0','0','Training Dummy - Set Immobilized State and Set Invincible and Prevent Melee on Spawn'),
+('1757801','17578','11','0','100','0','0','0','0','0','0','0','42','1','0','0','20','0','0','0','0','0','0','0','Training Dummy - Set Invincible, Disable Melee on Spawn'),
 -- Heathen Guard
 ('1762101','17621','0','0','100','1025','6000','10000','10000','14000','0','0','11','30474','1','0','0','0','0','0','0','0','0','0','Heathen Guard - Cast Bloodthirst'),
 ('1762102','17621','2','0','100','1025','30','0','120000','120000','0','0','11','30485','0','0','1','1191','0','0','0','0','0','0','Heathen Guard - Cast Enrage at 30% HP'),
@@ -28668,7 +28669,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Unholy Swords 16216 - creature_spell_list
 -- Tesla Coil 16218 - npc_tesla_coil
 -- Eye Stalk 16236
-('1623601','16236','11','0','100','0','0','0','0','0','0','0','21','0','0','0','11','26586','0','1','0','0','0','0','Eye Stalk - Prevent Combat Movement and Cast Birth on Spawn'),
+('1623601','16236','11','0','100','0','0','0','0','0','0','0','11','26586','0','1','0','0','0','0','0','0','0','0','Eye Stalk - Cast Birth on Spawn'),
 ('1623602','16236','1','0','100','0','2000','30000','0','0','0','0','11','28819','0','1','0','0','0','0','0','0','0','0','Eye Stalk - Cast Submerge Visual OOC'),
 ('1623603','16236','0','0','85','1025','0','0','11000','11000','0','0','11','29407','1','0','0','0','0','0','0','0','0','0','Eye Stalk - Cast Mind Flay'),
 ('1623604','16236','9','0','100','1','36','90','2000','2000','0','0','24','0','0','0','0','0','0','0','0','0','0','0','Eye Stalk - Evade'),
@@ -30727,7 +30728,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- ===============
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 -- Advanced Training Dummy 24792
-('2479201','24792','11','0','100','0','0','0','0','0','0','0','61','1','0','0','42','1','0','0','0','0','0','0','Advanced Training Dummy - Set Immobilized State and Set Invincible on Spawn');
+('2479201','24792','11','0','100','0','0','0','0','0','0','0','50','0','0','0','42','1','0','0','0','0','0','0','Advanced Training Dummy - Set REACT_PASSIVE, Invincible on Spawn');
 
 
 -- ==========================
@@ -30737,17 +30738,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Infernal 89
 ('8901','89','11','0','100','0','0','0','0','0','0','0','11','22707','0','2','11','19483','0','34','0','0','0','0','Infernal - Cast Root and Immolation on Spawn'),
 -- Imp 416 - PetAI
+-- Combat Dummy 1921 - NSR
 -- Searing Totem 2523 - TotemAI
 -- Earthbind Totem 2630 - TotemAI
 -- Ward of Laze 2667 - TotemAI
 -- Target Dummy 2673
-('267301','2673','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Target Dummy - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
-('267302','2673','11','0','100','0','0','0','0','0','0','0','11','4044','0','34','11','27791','0','34','0','0','0','0','Target Dummy - Cast Target Dummy Passive, Suicide on Spawn'),
-('267303','2673','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Target Dummy - Despawn 0 on Death'),
+('267301','2673','11','0','100','0','0','0','0','0','0','0','11','4044','0','34','11','27791','0','34','0','0','0','0','Target Dummy - Cast Target Dummy Passive, Suicide on Spawn'),
 -- Advanced Target Dummy 2674
-('267401','2674','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Advanced Target Dummy - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
 ('267402','2674','11','0','100','0','0','0','0','0','0','0','11','4048','0','34','11','27791','0','34','0','0','0','0','Advanced Target Dummy - Cast Advanced Target Dummy Passive, Suicide on Spawn'),
-('267403','2674','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Advanced Target Dummy - Despawn 0 on Death'),
 -- Explosive Sheep 2675
 ('267501','2675','11','0','100','0','0','0','0','0','0','0','11','4051','0','2','11','8279','0','2','0','0','0','0','Explosive Sheep - Cast Explosive Sheep Passive and Stealth Detection on Spawn'),
 ('267502','2675','29','0','100','0','180000','180000','0','0','0','0','11','8329','0','0','0','0','0','0','0','0','0','0','Explosive Sheep - Kill self after 3m'),
@@ -30774,12 +30772,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('419601','4196','11','0','100','0','0','0','0','0','0','0','11','6590','0','34','50','1','0','0','0','0','0','0','Silithid Swarm - Cast Silithid Swarm Passive, Set ReactState Defensive on Spawn'),
 ('419602','4196','7','0','100','0','0','0','0','0','0','0','56','0','0','0','0','0','0','0','0','0','0','0','Silithid Swarm - Forced Despawn on Evade'),
 -- Hammerhead Shark 5185 - NSR
--- Archery Target 5202
-('520201','5202','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Archery Target - Prevent Combat Movement on Spawn'),
+-- Archery Target 5202 - NSR
 -- Coral Shark 5434
 ('543401','5434','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Coral Shark - Cast Thrash on Spawn'),
 -- Sand Shark 5435
 ('543501','5435','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Sand Shark - Cast Thrash on Spawn'),
+-- Practice Target 5674 - NSR
 -- Summoned Voidwalker 5676
 ('567601','5676','11','0','100','0','0','0','0','0','0','0','11','7741','0','0','1','1987','0','0','0','0','0','0','Summoned Voidwalker - Cast Summoned Demon, Say on Spawn'),
 ('567602','5676','29','0','100','0','1000','1000','0','0','0','0','2','14','0','0','55','11','0','0','0','0','0','0','Summoned Voidwalker - Set Faction Monster, Attack Spawner (Player) on Generic Timer'),
@@ -30839,13 +30837,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Grace of Air Totem 7486 - TotemAI
 -- Grace of Air Totem II 7487 - TotemAI
 -- Goblin Land Mine 7527 - s.4100,10837,21688
-('752701','7527','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Goblin Land Mine - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
-('752702','7527','11','0','100','0','0','0','0','0','0','0','11','11816','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Cast Land Mine Arming on Spawn'),
-('752703','7527','29','0','100','0','100','100','0','0','0','0','1','3541','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
-('752704','7527','29','0','100','0','5000','5000','0','0','0','0','1','3542','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
-('752705','7527','29','0','100','0','10000','10000','0','0','0','0','1','3543','0','0','22','1','0','0','28','0','11816','0','Goblin Land Mine - Say and Set Phase 1 and remove aura on Generic Timer'),
-('752706','7527','9','1','100','0','0','8','0','0','0','0','11','4043','0','0','37','0','0','0','0','0','0','0','Goblin Land Mine - Cast Detonation and Die (Phase 1'),
-('752707','7527','6','0','100','0','0','0','0','0','0','0','41','1000','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Despawn 0 on Death'),
+('752701','7527','11','0','100','0','0','0','0','0','0','0','11','11816','0','34','50','0','0','0','0','0','0','0','Goblin Land Mine - Cast Land Mine Arming, Set ReactState Passive on Spawn'),
+('752702','7527','29','0','100','0','100','100','0','0','0','0','1','3541','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
+('752703','7527','29','0','100','0','5000','5000','0','0','0','0','1','3542','0','0','0','0','0','0','0','0','0','0','Goblin Land Mine - Say on Generic Timer'),
+('752704','7527','29','0','100','0','10000','10000','0','0','0','0','1','3543','0','0','22','1','0','0','28','0','11816','0','Goblin Land Mine - Say and Set Phase 1 and remove aura on Generic Timer'),
+('752705','7527','9','1','100','0','0','8','0','0','0','0','11','4043','0','0','37','0','0','0','0','0','0','0','Goblin Land Mine - Cast Detonation and Die (Phase 1'),
 -- Fire Nova Totem IV 7844 - TotemAI
 -- Fire Nova Totem V 7845 - TotemAI
 -- Greater Healing Ward 8179 - TotemAI
@@ -30887,9 +30883,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1212501','12125','11','0','100','0','0','0','0','0','0','0','11','12787','0','34','0','0','0','0','0','0','0','0','Mammoth Shark - Cast Thrash on Spawn'),
 -- Ice Totem 12141 - TotemAI
 -- Masterwork Target Dummy 12426
-('1242601','12426','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Masterwork Target Dummy - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
-('1242602','12426','11','0','100','0','0','0','0','0','0','0','11','19809','0','34','11','27791','0','34','0','0','0','0','Masterwork Target Dummy - Cast Masterwork Target Dummy Passive, Suicide on Spawn'),
-('1242603','12426','6','0','100','0','0','0','0','0','0','0','41','10000','0','0','0','0','0','0','0','0','0','0','Masterwork Target Dummy - Despawn 0 on Death'),
+('1242601','12426','11','0','100','0','0','0','0','0','0','0','11','19809','0','34','11','27791','0','34','0','0','0','0','Masterwork Target Dummy - Cast Masterwork Target Dummy Passive, Suicide on Spawn'),
 -- Imp Minion 12922
 ('1292201','12922','11','0','100','0','0','0','0','0','0','0','57','3','20','0','0','0','0','0','0','0','0','0','Imp Minion - Enable No Melee Mode on Aggro'),
 ('1292202','12922','4','0','10','0','0','0','0','0','0','0','54','0','0','1','0','0','0','0','0','0','0','0','Imp Minion - Random Say on Aggro'),
@@ -31020,7 +31014,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sandworm 17075 - npc_burster_worm
 -- Invisible Man 17286 - npc_invible_man
 -- Totem of Wrath 17539 - TotemAI
--- Tainted Earthgrab Totem 18176 - TotemAI17306
+-- Tainted Earthgrab Totem 18176 - TotemAI
+-- Tainted Earthgrab Totem (1) 19897 - NSR
 -- Tainted Stoneskin Totem 18177 - TotemAI
 -- Corrupted Healing Stream Totem 18235 - TotemAI
 -- Corrupted Air Totem 18236 - TotemAI
@@ -31039,6 +31034,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Dense Stone Statue 18737
 ('1873701','18737','11','0','100','0','0','0','0','0','0','0','11','32791','11','0','0','0','0','0','0','0','0','0','Dense Stone Statue - Cast Stone Healing on Spawner on Spawn'),
 ('1873702','18737','29','0','100','0','25500','25500','0','0','0','0','37','0','0','0','0','0','0','0','0','0','0','0','Dense Stone Statue - Die on Generic Timer'),
+-- Primal Stone Statue 18738 - NSR
 -- Human Commoner 18927 - npc_gossip_npc
 -- Dwarf Commoner 19148 - npc_gossip_npc
 -- Blood Elf Commoner 19169 - npc_gossip_npc
@@ -31095,7 +31091,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2222811','22228','29','0','100','0','5000','5000','0','0','0','0','11','38610','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Generic Timer'),
 -- Spirit Calling Totem 22318 - TotemAI
 -- Legion Fel Cannon MKII 22451
-('2245101','22451','11','0','100','0','0','0','0','0','0','0','61','1','0','0','57','1','50','0','20','0','0','0','Legion Fel Cannon MKII - Set Immobilized State and Enable Caster Mode and Disable Melee on Spawn'),
+('2245101','22451','11','0','100','0','0','0','0','0','0','0','57','3','50','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Enable TYPE_NO_MELEE_MODE on Spawn'),
 ('2245102','22451','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Cast Fel Cannon Blast'),
 -- Greater Earthbind Totem 22486 - TotemAI
 -- Greater Poison Cleansing Totem 22487 - TotemAI
@@ -31462,6 +31458,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- The Brewmaiden 27166
 ('2716601','27166','11','0','100','0','0','0','0','0','0','0','11','48032','0','2','11','48186','0','2','11','51847','0','2','The Brewmaiden - Cast Brewmaiden Spotlight and Cast Brewmaiden Despawn Control Aura and Cast The Brewmaiden''s Blessing (Rank 6) on Spawn'),
 ('2716602','27166','11','0','100','0','0','0','0','0','0','0','41','30000','0','0','21','0','0','0','1','26303','0','0','The Brewmaiden - Delayed Despawn and Disable Combat Movement and Say Text on Spawn'),
+-- The Black Brewmaiden 27169
 
 -- ==============
 -- Lunar Festival
