@@ -28228,7 +28228,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Chaotic Sentience
 ('1648901','16489','0','0','100','1025','1000','3000','30000','45000','0','0','11','29900','0','32','0','0','0','0','0','0','0','0','Chaotic Sentience - Cast Unstable Magic'),
 -- Mana Feeder 16491
-('1649101','16491','11','0','100','0','0','0','0','0','0','0','11','29908','0','34','0','0','0','0','0','0','0','0','Mana Feeder - Cast Astral Bite on Spawn'),
+('1649101','16491','11','0','100','0','0','0','0','0','0','0','11','10095','0','34','11','29908','0','34','0','0','0','0','Mana Feeder - Cast Hate to Zero, Astral Bite on Spawn'),
 -- Syphoner 16492
 ('1649201','16492','0','0','100','1025','0','3000','9000','13000','0','0','11','29881','16','512','0','0','0','0','0','0','0','0','Syphoner - Cast Drain Mana on Random Player Mana User'),
 -- Arcane Protector 16504 - ss.29857 Astral Spark
