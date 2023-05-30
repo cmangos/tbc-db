@@ -468,15 +468,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+29, 1, -1324.969, 1660.7915, 93.00998, 0, 0, 0), 
 (@SGGUID+29, 2, -1345.5702, 1685.6698, 89.944595, 0, 0, 0);
 
-DELETE FROM worldstate_name WHERE Id IN (4698,4699,4700);
-INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
-(4698, 'Hellfire Ramparts - Watchkeeper Gargolmar - Encounter completed'),
-(4699, 'Hellfire Ramparts - Omor the Unscarred - Encounter completed'),
-(4700, 'Hellfire Ramparts - Vazruden the Herald - Encounter completed');
-
 DELETE FROM conditions WHERE condition_entry = @SGGUID+1;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+1, '42', 4698, '0', '0', '0', '0', 'Watchkeeper Gargolmar - Encounter completed');
+(@SGGUID+1, '42', 4698, '1', '0', '0', '0', 'Watchkeeper Gargolmar - Encounter completed');
 
 -- =========
 -- DBSCRIPTS

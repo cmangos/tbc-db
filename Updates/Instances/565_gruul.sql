@@ -147,15 +147,10 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
 
-DELETE FROM `worldstate_name` WHERE `Id` IN (2778,4804);
-INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
-(2778, 'Gruuls\'Lair - Highking Maulgar - Encounter completed'),
-(4804, 'Gruuls\'Lair - Gruul the Dragonkiller - Encounter completed');
-
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
-(@SGGUID+1, '42', 2778, '0', '0', '0', '0', 'Highking Maulgar - Trash Respawn'),
-(@SGGUID+2, '42', 4804, '0', '0', '0', '0', 'Gruul the Dragonkiller - Trash Respawn');
+(@SGGUID+1, '42', 2778, '1', '0', '0', '0', 'Highking Maulgar - Trash Respawn'),
+(@SGGUID+2, '42', 4804, '1', '0', '0', '0', 'Gruul the Dragonkiller - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS

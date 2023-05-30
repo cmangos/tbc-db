@@ -175,13 +175,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+4,23,-28.083755,65.604164,15.94728,100,0,0),
 (@SGGUID+4,24,-53.951275,58.999866,3.1846943,100,0,0);
 
-DELETE FROM `worldstate_name` WHERE `Id` = 4805;
-INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
-(4805, 'Magtheridon - Trash Respawn');
-
 DELETE FROM `conditions` WHERE `condition_entry` = @SGGUID+1;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
-(@SGGUID+1, '42', 4805, '0', '0', '0', '0', 'Magtheridon - Trash Respawn');
+(@SGGUID+1, '42', 4805, '1', '0', '0', '0', 'Magtheridon - Trash Respawn');
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 -- (@SGGUID+5, @SGGUID+4), (@SGGUID+5, @SGGUID+3), (@SGGUID+5, @SGGUID+2), (@SGGUID+5, @SGGUID+1); -- All Groups should aggro when Magtheridon gets attacked.
