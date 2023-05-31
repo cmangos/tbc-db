@@ -476,7 +476,7 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 
 DELETE FROM conditions WHERE condition_entry = @SGGUID+1;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+1, '42', 4698, '1', '0', '0', '0', 'Watchkeeper Gargolmar - Encounter completed');
+(@SGGUID+1, 42, 4698, 1, 0, 0, 0, 'Watchkeeper Gargolmar - Encounter completed');
 
 -- =========
 -- DBSCRIPTS

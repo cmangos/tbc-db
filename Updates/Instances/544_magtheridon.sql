@@ -181,7 +181,7 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 
 DELETE FROM `conditions` WHERE `condition_entry` = @SGGUID+1;
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
-(@SGGUID+1, '42', 4805, '1', '0', '0', '0', 'Magtheridon - Trash Respawn');
+(@SGGUID+1, 42, 4805, 1, 0, 0, 0, 'Magtheridon - Trash Respawn');
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
 -- (@SGGUID+5, @SGGUID+4), (@SGGUID+5, @SGGUID+3), (@SGGUID+5, @SGGUID+2), (@SGGUID+5, @SGGUID+1); -- All Groups should aggro when Magtheridon gets attacked.

@@ -1616,7 +1616,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
-DELETE FROM conditions WHERE condition_entry IN(12001) AND type=42;
-INSERT INTO conditions(condition_entry,type,value1,value2,value3) VALUES
-(12001,42,72801,0,1);
+DELETE FROM `conditions` WHERE `condition_entry` IN (12001) AND type=42;
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
+(12001, 42, 72801, 0, 1, 0, 0, 'M\'uru');
 

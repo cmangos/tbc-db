@@ -3529,9 +3529,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+58,23,-11135.199,-1958.8073,49.882298,100,0,0),
 (@SGGUID+58,24,-11126.228,-1957.1259,49.88298,100,0,0);
 
-DELETE FROM conditions WHERE condition_entry IN (@SGGUID+1);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+1, '42', 2315, '0', '0', '0', '0', 'Midnight - Trash Respawn');
+(@SGGUID+1, 42, 2315, 1, 0, 0, 0, 'Midnight - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS

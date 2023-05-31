@@ -154,8 +154,8 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
-(@SGGUID+1, '42', 2778, '1', '0', '0', '0', 'Highking Maulgar - Trash Respawn'),
-(@SGGUID+2, '42', 4804, '1', '0', '0', '0', 'Gruul the Dragonkiller - Trash Respawn');
+(@SGGUID+1, 42, 2778, 1, 0, 0, 0, 'Highking Maulgar - Trash Respawn'),
+(@SGGUID+2, 42, 4804, 1, 0, 0, 0, 'Gruul the Dragonkiller - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
