@@ -66,3 +66,26 @@ INSERT INTO `creature_spell_targeting` (Id, Type, Param1, Param2, Param3, Commen
 (111, 1, 1, 0, 512, "Attack - Current - Aura not Present");
 
 UPDATE creature_template SET SpellList = '1640701' WHERE entry = '16407';
+
+-- Spectral Sentry spell_list
+DELETE FROM creature_spell_list WHERE Id = 1642401;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1642401, 1, 29576, 0, 1, 0, 100, 0, 6000, 10000, 11000, 14000, "Spectral Sentry - Multi Shot - on Current"),
+(1642401, 2, 29575, 2, 1, 0, 100, 0, 1100, 2400, 2400, 4000, "Spectral Sentry - Shoot - on Current");
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1642401;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1642401, "Karazhan - Spectral Sentry", 0, 70);
+
+UPDATE creature_template SET SpellList = '1642401' WHERE entry = '16424';
+
+-- Phantom Guardsman spell_list
+DELETE FROM creature_spell_list WHERE Id = 1642501;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1642501, 1, 29684, 0, 1, 0, 100, 0, 6500, 13500, 11000, 23000, "Phantom Guardsman - Shield Slam - on Current");
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1642501;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1642501, "Karazhan - Phantom Guardsman", 0, 0);
+
+UPDATE creature_template SET SpellList = '1642501' WHERE entry = '16425';
