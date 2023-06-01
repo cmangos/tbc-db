@@ -55,7 +55,7 @@ UPDATE creature_template SET SpellList = '1638901' WHERE entry = '16389';
 -- Spectral Servent - 16407
 DELETE FROM creature_spell_list WHERE Id = 1640701;
 INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
-(1640701, 1, 29540, 0, 1, 0, 100, 0, 5000, 12000, 12000, 21000, "Spectral Servent -  Cast Curse of Past Burdens - on current - aura not present");
+(1640701, 1, 29540, 0, 111, 0, 100, 0, 5000, 12000, 12000, 21000, "Spectral Servent -  Cast Curse of Past Burdens - on current - aura not present");
 
 DELETE FROM creature_spell_list_entry WHERE Id = 1640701;
 REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
@@ -67,7 +67,7 @@ INSERT INTO `creature_spell_targeting` (Id, Type, Param1, Param2, Param3, Commen
 
 UPDATE creature_template SET SpellList = '1640701' WHERE entry = '16407';
 
--- Spectral Sentry spell_list
+-- Spectral Sentry 16424
 DELETE FROM creature_spell_list WHERE Id = 1642401;
 INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 (1642401, 1, 29576, 0, 1, 0, 100, 0, 6000, 10000, 11000, 14000, "Spectral Sentry - Multi Shot - on Current"),
@@ -79,7 +79,7 @@ REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceR
 
 UPDATE creature_template SET SpellList = '1642401' WHERE entry = '16424';
 
--- Phantom Guardsman spell_list
+-- Phantom Guardsman 16425
 DELETE FROM creature_spell_list WHERE Id = 1642501;
 INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 (1642501, 1, 29684, 0, 1, 0, 100, 0, 6500, 13500, 11000, 23000, "Phantom Guardsman - Shield Slam - on Current");
@@ -89,3 +89,31 @@ REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceR
 (1642501, "Karazhan - Phantom Guardsman", 0, 0);
 
 UPDATE creature_template SET SpellList = '1642501' WHERE entry = '16425';
+
+-- Spectral Chef 16411
+DELETE FROM creature_spell_list WHERE Id = 1641101;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1641101, 1, 29665, 0, 1, 0, 100, 0, 4000, 8000, 6000, 10000, "Spectral Chef - Cleave - on Current"),
+(1641101, 2, 29667, 0, 1, 0, 100, 0, 8000, 13500, 12000, 15000, "Spectral Chef - Hamstring - on Current"),
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1641101;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1641101, "Karazhan - Spectral Chef", 0, 0);
+
+UPDATE creature_template SET SpellList = '1641101' WHERE entry = '16411';
+
+-- Ghostly Baker 16412
+DELETE FROM creature_spell_list WHERE Id = 1641201;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1641201, 1, 29676, 0, 1, 0, 100, 0, 4000, 8000, 7000, 12000, "Ghostly Baker - Cast Rolling Pin - on Current"),
+(1641201, 2, 29675, 0, 112, 0, 100, 0, 5000, 9000, 12000, 18000, "Ghostly Baker - Cast Roast - Random Aura not Present"),
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1641201;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1641201, "Karazhan - Spectral Chef", 0, 0);
+
+UPDATE creature_template SET SpellList = '1641201' WHERE entry = '16412';
+
+DELETE FROM creature_spell_targeting WHERE Id = 111;
+INSERT INTO `creature_spell_targeting` (Id, Type, Param1, Param2, Param3, Comments) VALUES 
+(112, 1, 0, 0, 512, "Attack - Current - Random Aura not Present");
