@@ -3605,7 +3605,7 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (2315, 'Karazhan - Midnight - Encounter completed'),
 (2309, 'Karazhan - Moroes - Encounter completed');
 
-DELETE FROM `conditions` WHERE `condition_entry IN (@SGGUID+1, @SGGUID+2);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, 2315, 1, 0, 0, 0, 'Midnight - Trash Respawn'),
 (@SGGUID+2, 42, 2309, 1, 0, 0, 0, 'Moroes - Trash Respawn');
