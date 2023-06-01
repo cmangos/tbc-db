@@ -2,11 +2,12 @@
 -- Karazhan creature_ai rework into creature_spell_list
 -- ====================================
 
--- Spectral Charger
+-- Spectral Charger - 15547
 DELETE FROM creature_spell_list WHERE Id = 1554701;
 INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 (1554701, 1, 29320, 0, 110, 0, 100, 0, 10500, 20500, 38700, 46000, "Spectral Charger - Charge - on Farthest away");
 
+DELETE FROM creature_spell_targeting WHERE Id = 110;
 INSERT INTO `creature_spell_targeting` (Id, Type, Param1, Param2, Param3, Comments) VALUES 
 (110, 1, 4, 0, 1, "Attack - Farthest away - in LoS");
 
@@ -16,7 +17,7 @@ REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceR
 
 UPDATE creature_template SET SpellList = '1554701' WHERE entry = '15547';
 
--- Spectral Stallion
+-- Spectral Stallion - 15548
 DELETE FROM creature_spell_list WHERE Id = 1554801;
 INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 (1554801, 1, 29323, 0, 2, 0, 100, 0, 6000, 14500, 6000, 19500 , "Spectral Stallion - Cast Absorb Vitality - on self"),
@@ -28,7 +29,7 @@ REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceR
 
 UPDATE creature_template SET SpellList = '1554801' WHERE entry = '15548';
 
--- Spell List for Spectral Stable Hand
+-- Spectral Stable Hand - 15551
 DELETE FROM creature_spell_list WHERE Id = 1555101;
 INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 (1555101, 3, 18812, 0, 1, 0, 100, 0, 9500, 13500, 14500, 18500, "Spectral Stable Hand - Cast Knockback - on current"),
@@ -39,3 +40,29 @@ REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceR
 (1555101, "Karazhan - Spectral Stable Hand", 0, 0);
 
 UPDATE creature_template SET SpellList = '1555101' WHERE entry = '15551';
+
+-- Spectral Apprentice - 16389
+DELETE FROM creature_spell_list WHERE Id = 1638901;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1638901, 1, 29618, 0, 1, 0, 100, 0, 1200, 3000, 4000, 7000, "Spectral Apprentice - Cast Burning Brand - on current");
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1638901;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1638901, "Karazhan - Spectral Apprentice", 0, 0);
+
+UPDATE creature_template SET SpellList = '1638901' WHERE entry = '16389';
+
+-- Spectral Servent - 16407
+DELETE FROM creature_spell_list WHERE Id = 1640701;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1640701, 1, 29540, 0, 1, 0, 100, 0, 5000, 12000, 12000, 21000, "Spectral Servent -  Cast Curse of Past Burdens - on current - aura not present");
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1640701;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1640701, "Karazhan - Spectral Servent", 0, 0);
+
+DELETE FROM creature_spell_targeting WHERE Id = 111;
+INSERT INTO `creature_spell_targeting` (Id, Type, Param1, Param2, Param3, Comments) VALUES 
+(111, 1, 1, 0, 512, "Attack - Current - Aura not Present");
+
+UPDATE creature_template SET SpellList = '1640701' WHERE entry = '16407';
