@@ -1,6 +1,10 @@
 -- Spell Lists for Spectral Charger, Spectral Stallion and Spectral Stable Hand
 -- Spectral Charger uses Charge on Farthest Player away (in LoS) and Fear after spell hited (confirmed on wotlk ptr)
--- Süectral Stallion using Absorb Vitality and Hoof Strike
+-- Spectral Stallion using Absorb Vitality and Hoof Strike
+
+-- Spectral Stable Hand using Knockback and Pierce Armor on his Current Target
+-- When inCombat and one of the Horses (Spectral Charger, Spectral Stallion) is also infight, buff them and if they fall below 50% also heal them. Using new unit_condition and combat_condition for this.
+-- ToDO: New System, need some good ruling for stringID and unit/combat_condition Id
 
 DELETE FROM creature_spell_list WHERE Id IN (1554701, 1554801, 1555101);
 -- Spell List for Spectral Charger
@@ -11,8 +15,8 @@ INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, Scrip
 (1554801, 2, 29577, 0, 1, 0, 100, 0, 7200, 19400, 1200, 36000, "Spectral Stallion - Cast Hoof Strike - on current"), 
 -- Spell List for Spectral Stable Hand
 INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
-(1555101, 1, 29339, 1, -10000, 0, 0, 100, 0, 4000, 8000, 45000, 48000, "Spectral Stable Hand - Cast Healing Touch - on missing 50%"),
-(1555101, 2, 29340, 1, -10001, 0, 0, 100, 0, 8450, 14550, 10900, 37550, "Spectral Stable Hand - Cast Whip Rage - on friendly missing buff skip self"),
+(1555101, 1, 29339, 1, -10000, 0, 0, 100, 0, 4000, 8000, 45000, 48000, "Spectral Stable Hand - Cast Healing Touch - condition friendly missing 50%"),
+(1555101, 2, 29340, 1, -10001, 0, 0, 100, 0, 8450, 14550, 10900, 37550, "Spectral Stable Hand - Cast Whip Rage - condition friendly missing buff"),
 (1555101, 3, 18812, 0, -1, 1, 0, 100, 0, 9500, 13500, 14500, 18500, "Spectral Stable Hand - Cast Knockback - on current"),
 (1555101, 4, 6016, 0, -1, 1, 0, 100, 0, 7000, 21500, 24000, 63500, "Spectral Stable Hand - Cast Pierce Armor - on current");
   
