@@ -117,3 +117,51 @@ UPDATE creature_template SET SpellList = '1641201' WHERE entry = '16412';
 DELETE FROM creature_spell_targeting WHERE Id = 111;
 INSERT INTO `creature_spell_targeting` (Id, Type, Param1, Param2, Param3, Comments) VALUES 
 (112, 1, 0, 0, 512, "Attack - Current - Random Aura not Present");
+
+UPDATE creature_template SET SpellList = '1641201' WHERE entry = '16412';
+
+-- Skeletal Waiter 16415
+DELETE FROM creature_spell_list WHERE Id = 1641501;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1641501, 1, 32441, 0, 111, 0, 100, 0, 12000, 9000, 21000, 30000, "Skeletal Waiter - Brittle Bones - on current - aura not present");
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1641101;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1641501, "Karazhan - Skeletal Waiter", 0, 0);
+
+UPDATE creature_template SET SpellList = '1641501' WHERE entry = '16415';
+
+-- Phantom Valet 16408
+DELETE FROM creature_spell_list WHERE Id = 1640801;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1640801, 1, 29584, 0, 100, 0, 100, 0, 4800, 10500, 9500, 15000, "Phantom Valet - Demoralizing Shout - on current");
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1640801;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1640801, "Karazhan - Phantom Valet", 0, 0);
+
+UPDATE creature_template SET SpellList = '1640801' WHERE entry = '16408';
+
+-- Spectral Retainer 16410
+DELETE FROM creature_spell_list WHERE Id = 1641001;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1641001, 1, 29578, 0, 0, 0, 100, 0, 7200, 14500, 9700, 14000, "Spectral Retainer - Rend - on random"),
+(1641001, 2, 29578, 0, 0, 0, 101, 0, 9000, 13000, 18000, 22000, "Spectral Retainer - Oath of Fealty - on random not Tank");
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1641001;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1641001, "Karazhan - Spectral Retainer", 0, 0);
+
+UPDATE creature_template SET SpellList = '1641001' WHERE entry = '16410';
+
+-- Phantom Attendant 16406
+DELETE FROM creature_spell_list WHERE Id = 1640601;
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1640601, 1, 29586, 0, 0, 0, 1, 0, 6000, 12000, 16000, 23000, "Phantom Attendant- Kick - on current"),
+(1640601, 2, 29587, 0, 0, 0, 101, 0, 9000, 13000, 18000, 23000, "Phantom Attendant - Shadow Rejuvantation - on missing 70%");
+
+DELETE FROM creature_spell_list_entry WHERE Id = 1641001;
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1640601, "Karazhan - Phantom Attendant", 80, 0);
+
+UPDATE creature_template SET SpellList = '1640601' WHERE entry = '16406';
