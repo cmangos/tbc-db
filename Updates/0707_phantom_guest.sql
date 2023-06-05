@@ -10,12 +10,12 @@ INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, Scrip
 -- Version 3 hunter 
 (1640903, 3, 29583, 0, 1, 0, 100, 0, 7000, 11000, 7000, 9000, "Phantom Guest (Version - hunter) - Impale on current - on current"),
 (1640903, 4, 29582, 2, 1, 0, 100, 0, 0, 2400, 2400, 3700, "Phantom Guest (Version - hunter) - Throw on current - on current"),
--- Version 3 (caster)
+-- Version 3 caster
 (1640904, 1, 29928, 0, 1, 0, 100, 0, 9700, 21000, 13000, 23000, "Phantom Guest (Version - Caster) - Immolate - on current"),
 (1640904, 2, 29930, 0, 1, 0, 100, 0, 6000, 25000, 10000, 25000, "Phantom Guest (Version - Caster) - Curse of Agony - on current"),
 (1640904, 3, 29492, 2, 1, 0, 100, 0, 0, 1200, 1200, 2500, "Phantom Guest (Version - Caster) - Searing Pain - on current"),
 -- version 5 melee
-(1640905, 1, 29581, 0, 1, 0, 100, 0, 0, 5000, 6000, 9000, "Phantom Guest (Version - Healer) - Punch - on current");
+(1640905, 1, 29581, 0, 1, 0, 100, 0, 0, 5000, 6000, 9000, "Phantom Guest (Version - Melee) - Punch - on current");
 
 DELETE FROM creature_spell_list_entry WHERE Id IN (1640901, 1640902, 1640903, 1640904, 1640905);
 REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
@@ -24,6 +24,3 @@ REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceR
 (1640903, "Karazhan - Phantom Guest (Hunter)", 0, 75),
 (1640904, "Karazhan - Phantom Guest (Caster)", 0, 75),
 (1640905, "Karazhan - Phantom Guest (Melee)", 0, 0);
-
--- Dance Vibe spell should not stack 
-UPDATE `spell_template` SET `StackAmount`='1' WHERE (`Id`='29521');
