@@ -3672,7 +3672,7 @@ REPLACE INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalo
 -- version 3 used by spawn_group 71 triggert by guid 5320412
 (1642403, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
 (1642403, 3000, 0, 1, 1, 0, 0, 0, 5320411, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
-(1642403, 6000, 0, 1, 6, 0, 0, 0, 5320392, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Flex'),
+(1642403, 6000, 0, 1, 23, 0, 0, 0, 5320392, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Flex'),
 (1642403, 11000, 0, 1, 1, 0, 0, 0, 5320392, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
 (1642403, 14000, 0, 1, 1, 0, 0, 0, 5320411, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk');
 
