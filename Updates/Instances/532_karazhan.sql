@@ -3647,7 +3647,7 @@ INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `c
 (1642601, 1, 1642601, 70, 'Karazhan - Bennett - Start RP'),
 (1642601, 1, 0, 30, 'Karazhan - Bennett - No RP');
 
-DELETE FROM dbscripts_on_relay WHERE id = 1642601;
+DELETE FROM dbscripts_on_relay WHERE id IN (1642401, 1642402, 1642403, 1642601);
 REPLACE INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1642601, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Pause Waypoints'),
 (1642601, 1000, 1, 36, 0, 0, 0, 16425, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Face Phantom Guardsman'),
@@ -3655,7 +3655,26 @@ REPLACE INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalo
 (1642601, 3000, 0, 35, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Send Custom AI Event A'),
 (1642601, 9000, 0, 35, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Send Custom AI Event B'),
 (1642601, 11000, 0, 35, 8, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Send Custom AI Event C'),
-(1642601, 12000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - UnPause Waypoints');
+(1642601, 12000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - UnPause Waypoints'),
+-- Spectral Sentry/Phantom Guardsman rps
+-- version 1
+(1642401, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642401, 3000, 0, 1, 1, 0, 0, 0, 5320388, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642401, 6000, 0, 1, 11, 0, 0, 0, 5320407, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Laugh'),
+(1642401, 11000, 0, 1, 1, 0, 0, 0, 5320407, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642401, 14000, 0, 1, 1, 0, 0, 0, 5320388, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+-- version 2 used by spawn_group 70 triggert by guid 5320390
+(1642402, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642402, 3000, 0, 1, 1, 0, 0, 0, 5320389, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642402, 6000, 0, 1, 6, 0, 0, 0, 5320408, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Question'),
+(1642402, 11000, 0, 1, 1, 0, 0, 0, 5320408, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642402, 14000, 0, 1, 1, 0, 0, 0, 5320389, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+-- version 3 used by spawn_group 71 triggert by guid 5320412
+(1642403, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642403, 3000, 0, 1, 1, 0, 0, 0, 5320411, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642403, 6000, 0, 1, 6, 0, 0, 0, 5320392, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Flex'),
+(1642403, 11000, 0, 1, 1, 0, 0, 0, 5320392, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642403, 14000, 0, 1, 1, 0, 0, 0, 5320411, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

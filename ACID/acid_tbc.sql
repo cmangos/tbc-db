@@ -28179,6 +28179,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1642515','-5320418','30','1','100','1','5','16426','0','0','0','0','22','0','0','0','59','6','0','0','0','0','0','0','Phantom Guardsman  - Set Phase 0 and Face Bennett - On CustomAIEvent A'),
 ('1642516','-5320418','30','0','100','1','6','16426','0','0','0','0','1','13307','0','0','0','0','0','0','0','0','0','0','Phantom Guardsman  - Say Text - On CustomAIEvent B'),
 ('1642517','-5320418','30','0','100','1','8','16426','0','0','0','0','59','0','1','0','22','1','0','0','0','0','0','0','Phantom Guardsman  - Set Phase 1 and Reset Facing - On CustomAIEvent C'),
+('1642518','-5320412','1','0','100','1','0','0','25000','30000','0','0','53','1642403','0','0','0','0','0','0','0','0','0','0','Phantom Guardsman - OutOfCombat - Start Relay Script'),
 -- Bennett (16426) - NSR
 -- Maiden of Virtue (16457) - boss_maiden_of_virtue
 -- Wanton Hostess 16459
