@@ -894,20 +894,20 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (16426, 0, 2,-11096.697,-1896.982,74.39442,100,0,0),
 (16426, 0, 3,-11099.559,-1896.0282,74.39591,100,0,0),
 (16426, 0, 4,-11101.591,-1893.8387,74.39093,100,0,0),
-(16426, 0, 5,-11102.746,-1891.608,74.38991,100,1000,0),
+(16426, 0, 5,-11102.746,-1891.608,74.38991,100,1000,1642601),
 (16426, 0, 6,-11107.028,-1888.5391,74.38947,100,0,0),
 (16426, 0, 7,-11110.183,-1887.1548,74.38972,100,0,0),
 (16426, 0, 8,-11113.426,-1888.4269,74.399734,100,0,0),
 (16426, 0, 9,-11114.915,-1891.1129,74.40613,100,0,0),
 (16426, 0, 10,-11115.705,-1894.4874,74.40904,100,0,0),
 (16426, 0, 11,-11115.894,-1897.3828,74.40218,100,0,0),
-(16426, 0, 12,-11114.664,-1899.77,74.39636,100,1000,0),
+(16426, 0, 12,-11114.664,-1899.77,74.39636,100,1000,1642601),
 (16426, 0, 13,-11109.591,-1900.4275,74.39805,100,0,0),
 (16426, 0, 14,-11107.776,-1901.8357,74.3983,100,0,0),
 (16426, 0, 15,-11105.841,-1904.2448,74.399155,100,0,0),
 (16426, 0, 16,-11103.8,-1907.5823,74.3952,100,0,0),
 (16426, 0, 17,-11102.566,-1909.854,74.3953,100,0,0),
-(16426, 0, 18,-11101.377,-1911.9944,74.3954,100,1000,0),
+(16426, 0, 18,-11101.377,-1911.9944,74.3954,100,1000,1642601),
 (16426, 0, 19,-11096.391,-1913.4121,74.402336,100,0,0),
 (16426, 0, 20,-11093.494,-1912.1958,74.39592,100,0,0),
 (16426, 0, 21,-11091.122,-1909.6365,74.39901,100,0,0),
@@ -3614,7 +3614,7 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1568701,1568702,1568703,1568704,1568705,1568706,1646801,1647001,1555101);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1568701,1568702,1568703,1568704,1568705,1568706,1646801,1647001,1555101, 1642601, 1642607, 1642611);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1568701, 0, 31, 17007, 30, 0, 0, 0, 0, -25000, 0, 0, 0, 0, 0, 0, 0, 'Terminate Script If Lady Keira Berrybuck Is Not Found in Range'),
 (1568701, 1000, 0, 0, 0, 0, 17007, 30, 3, 13198, 13201, 0, 0, 0, 0, 0, 0, 'Lady Keira Berrybuck Random Say'),
@@ -3634,24 +3634,37 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1568706, 0, 31, 19876, 30, 0, 0, 0, 0, -25000, 0, 0, 0, 0, 0, 0, 0, 'Terminate Script If Lord Robin Daris Is Not Found in Range'),
 (1568706, 1000, 0, 0, 0, 0, 19876, 30, 3, 13198, 13201, 0, 0, 0, 0, 0, 0, 'Lord Robin Daris Random Say'),
 (1568706, 6000, 0, 0, 0, 0, 19876, 30, 1, 13202, 13204, 13206, 0, 0, 0, 0, 0, 'Moroes Random Say'),
+-- Bennet
+(1642601, 0, 31, 16425, 6, 0, 0, 0, 0, -15000, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Terminate Script if Guardsman Found'),
+(1642601, 0, 45, 0, 1642601, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Start RandomScript'),
 (1646801, 1000, 1, 1, 0, 0, 0, 0, 0, 6, 273, 274, 11, 0, 0, 0, 0, 'Spectral Patron - EMOTE_ONESHOT_TALK'),
 (1647001, 1000, 1, 274, 0, 0, 0, 0, 0, 1, 11, 6, 273, 0, 0, 0, 0, 'Ghostly Philanthropist - EMOTE_ONESHOT_NO'),
 (1555101, 0, 0, 0, 0, 0, 0, 0, 0, 13806, 13804, 13805, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Random Say');
 
--- Delete some old used dbscripts_on_creature_movement that no longer getting used to fix dberrors
--- this will get removed, when rp scriptsgot reworked (soon)
--- npcs are Spectral Servant, Skeletal Waiter and Bennetthey ill prob get dont via creature_ai_script
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1640701, 1641501, 1641502, 1642601, 1642607, 1642611);
+-- Bennet has 3 points where he can start his RP with Spectral Sentry and Phantom Guest, chance is around 70%
+DELETE FROM dbscript_random_templates WHERE id = 1642601;
+INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES 
+(1642601, 1, 1642601, 70, 'Karazhan - Bennett - Start RP'),
+(1642601, 1, 0, 30, 'Karazhan - Bennett - No RP');
+
+DELETE FROM dbscripts_on_relay WHERE id = 1642601;
+REPLACE INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1642601, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Pause Waypoints'),
+(1642601, 1000, 1, 36, 0, 0, 0, 16425, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Face Phantom Guardsman'),
+(1642601, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 13299, 13300, 13301, 13302, 0, 0, 0, 0, 'Karazhan - Bennett - Random Say'),
+(1642601, 3000, 0, 35, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Send Custom AI Event A'),
+(1642601, 9000, 0, 35, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Send Custom AI Event B'),
+(1642601, 11000, 0, 35, 8, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Send Custom AI Event C'),
+(1642601, 12000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - UnPause Waypoints');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+
 
 
