@@ -28021,7 +28021,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Karazhan
 -- ========
 -- Spectral Charger 15547 - creature_spell_list
-('1554704','15547','0','5','100','1025','0','0','0','0','0','0','11','29321','17','0','22','0','0','0','0','0','0','0','Spectral Charger - Cast Fear and Set Phase 0 (Phase 1)'),
+('1554701','15547','34','0','100','1','29320','-1','0','0','0','0','11','29321','17','0','0','0','0','0','0','0','0','0','Spectral Charger - Cast Fear on target hit by Charge'),
 -- Spectral Stallion 15548 - creature_spell_list
 -- Attumen the Huntsman (15550) - boss_attumen
 -- Spectral Stable Hand 15551 - creature_spell_list
@@ -28034,7 +28034,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1555112','-5320130','1','0','20','1','30000','60000','30000','60000','0','0','1','13804','13805','13806','0','0','0','0','0','0','0','0','Spectral Stable Hand - Random Say OutOfCombat'),
 ('1555113','-5320131','1','0','10','1','30000','60000','30000','60000','0','0','1','13804','13805','13806','0','0','0','0','0','0','0','0','Spectral Stable Hand - Random Say OutOfCombat'),
 ('1555114','-5320132','1','0','20','1','30000','60000','30000','60000','0','0','1','13804','13805','13806','0','0','0','0','0','0','0','0','Spectral Stable Hand - Random Say OutOfCombat'),
-
 -- Moroes (15687) - boss_moroes
 -- Terestian Illhoof (15688) - boss_terestian_illhoof
 -- Netherspite (15689) - boss_netherspite
