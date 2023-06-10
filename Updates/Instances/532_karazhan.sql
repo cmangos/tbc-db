@@ -3643,6 +3643,16 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- npcs are Spectral Servant, Skeletal Waiter and Bennetthey ill prob get dont via creature_ai_script
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1640701, 1641501, 1641502, 1642601, 1642607, 1642611);
 
+-- 2 Ghostly stewards RP script on The Scullery
+DELETE FROM dbscripts_on_relay WHERE id = 1641401;
+REPLACE INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1641401, 0, 0, 31, 16414, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Ghostly Steward - Terminate Script if 2nd Ghostly Steward Found'), -- this is probably wrong, cause the npc still does the rp even if the friend is dead, but this would cause db errors 
+(1641401, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Ghostly Steward - Emote ONESHOT_TALK'),
+(1641401, 3000, 0, 1, 6, 0, 0, 16414, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - 2nd Ghostly Steward - Emote ONESHOT_QUESTION'),
+(1641401, 7000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6.2657, 'Karazhan - Ghostly Steward - Move Orientation'),
+(1641401, 7000, 1, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Ghostly Steward - Emote ONESHOT_POINT'),
+(1641401, 10000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.57079, 'Karazhan - Ghostly Steward - Move Orientation');
+
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
