@@ -44,53 +44,53 @@ DELETE FROM `pool_pool` WHERE `pool_id` = 4652;
 DELETE FROM `pool_template` WHERE `entry` = 4652;
 
 -- extra bad nodes
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74316 AND 74319;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74316 AND 74319;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74315 AND 74319;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74315 AND 74319;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4603;
 DELETE FROM `pool_template` WHERE `entry` = 4603;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74331 AND 74334;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74331 AND 74334;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74330 AND 74334;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74330 AND 74334;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4606;
 DELETE FROM `pool_template` WHERE `entry` = 4606;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74321 AND 74324;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74321 AND 74324;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74320 AND 74324;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74320 AND 74324;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4604;
 DELETE FROM `pool_template` WHERE `entry` = 4604;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74361 AND 74364;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74361 AND 74364;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74360 AND 74364;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74360 AND 74364;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4612;
 DELETE FROM `pool_template` WHERE `entry` = 4612;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74371 AND 74374;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74371 AND 74374;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74370 AND 74374;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74370 AND 74374;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4614;
 DELETE FROM `pool_template` WHERE `entry` = 4614;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74386 AND 74389;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74386 AND 74389;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74385 AND 74389;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74385 AND 74389;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4617;
 DELETE FROM `pool_template` WHERE `entry` = 4617;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74546 AND 74549;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74546 AND 74549;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74545 AND 74549;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74545 AND 74549;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4649;
 DELETE FROM `pool_template` WHERE `entry` = 4649;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74566 AND 74569;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74566 AND 74569;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74565 AND 74569;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74565 AND 74569;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4653;
 DELETE FROM `pool_template` WHERE `entry` = 4653;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74656 AND 74659;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74656 AND 74659;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74655 AND 74659;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74655 AND 74659;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4671;
 DELETE FROM `pool_template` WHERE `entry` = 4671;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 74691 AND 74694;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74691 AND 74694;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 74690 AND 74694;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 74690 AND 74694;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4678;
 DELETE FROM `pool_template` WHERE `entry` = 4678;
 
