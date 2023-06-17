@@ -51,4 +51,13 @@ UPDATE broadcast_text SET ChatTypeID=1, SoundEntriesID1=10516 WHERE Id IN(17650)
 UPDATE broadcast_text SET ChatTypeID=1, SoundEntriesID1=10517 WHERE Id IN(17651);
 UPDATE broadcast_text SET ChatTypeID=1, SoundEntriesID1=10518 WHERE Id IN(17646);
 
+UPDATE creature_template SET SpellList = 1847801 WHERE entry=18478;
+DELETE FROM creature_spell_list_entry WHERE Id IN(1847801);
+INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1847801, 'AC - Avatar of the Martyred - Normal', 0, 0);
+DELETE FROM creature_spell_list WHERE Id IN(1847801);
+INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+('1847801', '0', '16856', '0', '-1', '1', '0', '100', '1','8500','16800','10900','24100', 'Avatar of the Martyred - Mortal Strike on Current'),
+('1847801', '1', '16145', '0', '-1', '1', '0', '100', '1','6500','11500','6200','15700', 'Avatar of the Martyred - Sunder Armor on Current');
+
 

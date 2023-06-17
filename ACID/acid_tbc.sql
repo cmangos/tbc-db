@@ -21110,10 +21110,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Focus Fire
 ('1837401','18374','29','0','100','0','0','0','0','0','0','0','11','26262','0','0','11','32286','0','2','50','0','0','0','Focus Fire - Cast Birth and Focus Target Visual and react state passive'),
 -- Stolen Soul (18441) - mob_stolen_soul
--- Avatar of the Martyred 18478 (4.3.4 Official Data - Normal/Heroic)
+-- Avatar of the Martyred 18478 spell_list
 ('1847801','18478','11','0','100','0','0','0','0','0','0','0','11','33422','0','32','38','0','0','0','0','0','0','0','Avatar of the Martyred - Cast Phase In and Zone Combat Pulse on Spawn'),
-('1847802','18478','0','0','100','1025','8500','16800','10900','24100','0','0','11','16856','1','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Cast Mortal Strike'),
-('1847803','18478','0','0','100','1025','6500','11500','6200','15700','0','0','11','16145','1','0','0','0','0','0','0','0','0','0','Avatar of the Martyred - Cast Sunder Armor'),
 -- Auchenai Soulpriest 18493 (4.3.4 Official Data - Normal/Heroic)
 ('1849301','18493','4','0','15','0','0','0','0','0','0','0','54','0','0','12001','0','0','0','0','0','0','0','0','Auchenai Soulpriest - Random Say on Aggro'),
 ('1849302','18493','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Auchenai Soulpriest - Enable Range Mode on Aggro'),
