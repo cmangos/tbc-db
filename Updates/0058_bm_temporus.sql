@@ -4,7 +4,7 @@ DELETE FROM creature_spell_list_entry WHERE Id IN(1788001,2074501);
 INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
 (1788001, 'BM - Temporus - Normal', 0, 0),
 (2074501, 'BM - Temporus - Heroic', 0, 0);
-DELETE FROM creature_spell_list WHERE Id IN(1788101,2073701);
+DELETE FROM creature_spell_list WHERE Id IN(1788001,2074501);
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1788001', '0', '31475', '0', '-1', '0', '0', '100', '5','18000','22000','20000','28000', 'Temporus - Wing Buffet'),
 ('1788001', '1', '31464', '0', '-1', '1', '0', '100', '1','3500','7000','4500','7000', 'Temporus - Mortal Wound on Current'),

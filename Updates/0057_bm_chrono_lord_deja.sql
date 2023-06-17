@@ -4,7 +4,7 @@ DELETE FROM creature_spell_list_entry WHERE Id IN(1787901,2073801);
 INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
 (1787901, 'BM - Chrono Lord Deja - Normal', 0, 0),
 (2073801, 'BM - Chrono Lord Deja - Heroic', 0, 0);
-DELETE FROM creature_spell_list WHERE Id IN(1788101,2073701);
+DELETE FROM creature_spell_list WHERE Id IN(1787901,2073801);
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1787901', '0', '31457', '0', '-1', '1', '0', '100', '1','18000','23000','15000','25000', 'Chrono Lord Deja - Arcane Blast on Current'),
 ('1787901', '1', '31472', '0', '-1', '0', '0', '100', '1','20000','30000','20000','30000', 'Chrono Lord Deja - Arcane Discharge'),
