@@ -29,7 +29,6 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1987401', '1', '29385', '0', '-1', '0', '0', '100', '0','5500','16000','16000','25000', 'Baron Rafe Dreuger - Seal of Command - on self'),
 ('1987401', '2', '29386', '0', '-1', '1', '0', '100', '0','14000','23000','19000','25000', 'Baron Rafe Dreuger - Judgement of Command - on Current');
 
-
 -- Lord Robin Daris 19876
 -- Harmstring on Current
 -- Mortal Strike on Current
@@ -63,7 +62,6 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1987301', '1', '29567', '0', '-1', '1', '0', '100', '0','8000','20000','14000','30000', 'Lord Crispin Ference - Heroic Strike - on Current'),
 ('1987301', '2', '11972', '0', '-1', '102', '0', '100', '0','8000','18000','12500','30000', 'Lord Crispin Ference - Shield Bash - on Casting');
 
-
 -- Lady Catriona Von'Indi 19872
 -- Power Word: Shield low CD on friendly missing buff including self 
 -- Greater Heal - missing 75% health 
@@ -82,7 +80,6 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1987201', '2', '15090', '0', '-1', '3', '0', '100', '0','8000','23000','8000','23000', 'Lady Catriona Von''Indi - Dispel Magic - Hardcoded - eligible friendly dispel'),
 ('1987201', '3', '15090', '0', '-1', '100', '0', '100', '0','8000','23000','8000','23000', 'Lady Catriona Von''Indi - Dispel Magic - on Random'),
 ('1987201', '4', '29563', '0', '-1', '1', '0', '100', '0','20000','30000','20000','30000', 'Lady Catriona Von''Indi - Holy Fire - on Current');
-
 
 -- Lady Keira Berrybuck 17007
 -- Casts Holy Light (small) 29562 when friendly or self missing 50%
@@ -104,6 +101,7 @@ INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, T
 ('1700701', '2', '29381', '0', '-1', '1', '0', '100', '0','1000','5000','30000','40000', 'Lady Keira Berrybuck - Greater Blessing of Might - on self');
 
 -- New creature_spell_target 
+DELETE FROM creature_spell_targeting WHERE Id IN (106, 107, 206, 207);
 INSERT INTO `creature_spell_targeting` (`Id`, `Type`, `Param1`, `Param2`, `Param3`, `UnitCondition`, `Comments`) VALUES 
 -- taken from cmangos-wotlk
 ('106', '1', '0', '1', '6', '-1', 'Attack - random player non tank mana user'),
