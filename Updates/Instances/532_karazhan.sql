@@ -2984,74 +2984,74 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+25, 'Karazhan - Midnight', 0, 0, 0, 0),
 -- Trash
 -- Midnight linked
-(@SGGUID+50, 'Karazhan - Spectral Charger | Spectral Stallion', 0, 0, @SGGUID+1, 0), -- single mob that uses spawn_group_entry 
-(@SGGUID+51, 'Karazhan - Spectral Charger | Spectral Stallion | Group 1', 0, 0, @SGGUID+1, 1),
-(@SGGUID+52, 'Karazhan - Spectral Charger | Spectral Stallion | Group 2', 0, 0, @SGGUID+1, 1),
-(@SGGUID+53, 'Karazhan - Spectral Charger | Spectral Stallion | Group 3', 0, 0, @SGGUID+1, 1),
-(@SGGUID+54, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Group 4', 0, 0, @SGGUID+1, 1),
-(@SGGUID+55, 'Karazhan - Spectral Charger | Spectral Stallion | Group 5', 0, 0, @SGGUID+1, 1),
-(@SGGUID+56, 'Karazhan - Spectral Charger (2) | Spectral Stable Hand (2) | Group 6', 0, 0, @SGGUID+1, 1),
-(@SGGUID+57, 'Karazhan - Spectral Charger | Spectral Stallion | Spectral Stable Hand (3) | Group 7', 0, 0, @SGGUID+1, 1),
+(@SGGUID+50, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable', 0, 0, @SGGUID+1, 0), -- single mob that uses spawn_group_entry 
+(@SGGUID+51, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 1', 0, 0, @SGGUID+1, 1),
+(@SGGUID+52, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 2', 0, 0, @SGGUID+1, 1),
+(@SGGUID+53, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 3', 0, 0, @SGGUID+1, 1),
+(@SGGUID+54, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Group 4', 0, 0, @SGGUID+1, 1),
+(@SGGUID+55, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 5', 0, 0, @SGGUID+1, 1),
+(@SGGUID+56, 'Karazhan - Spectral Charger (2) | Spectral Stable Hand (2) | Livery Stable Group 6', 0, 0, @SGGUID+1, 1),
+(@SGGUID+57, 'Karazhan - Spectral Charger | Spectral Stallion | Spectral Stable Hand (3) | Livery Stable Group 7', 0, 0, @SGGUID+1, 1),
 (@SGGUID+58, 'Karazhan - Spectral Stable Hand | Spectral Stallion (2) | Patrol 001', 0, 0, @SGGUID+1, 1), -- Patrol
-(@SGGUID+59, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Group 8', 0, 0, @SGGUID+1, 1), 
-(@SGGUID+60, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Group 9', 0, 0, @SGGUID+1, 1),
+(@SGGUID+59, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Livery Stable Group 8', 0, 0, @SGGUID+1, 1), 
+(@SGGUID+60, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Livery Stable Group 9', 0, 0, @SGGUID+1, 1),
 (@SGGUID+61, 'Karazhan - Spectral Stable Hand (2) | Patrols', 0, 0, @SGGUID+1, 0), -- 2 solo patroling mobs, dont need to put them in 2 seperate spawn_groups
  -- Moroes linked
- -- ipper livery stable
-(@SGGUID+62, 'Karazhan - Spectral Sentry (2) | Group 10', 0, 2, @SGGUID+2, 1),
+ -- Upper Livery Stable
+(@SGGUID+62, 'Karazhan - Spectral Sentry (2) | Upper Livery Stable Group 1', 0, 2, @SGGUID+2, 1),
 (@SGGUID+63, 'Karazhan - Spectral Sentry | Phantom Guardsman | Patrol 002', 0, 2, @SGGUID+2, 1),
-(@SGGUID+64, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Group 11', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
-(@SGGUID+65, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Group 12', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
-(@SGGUID+66, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Group 13', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
-(@SGGUID+67, 'Karazhan - Spectral Sentry | Phantom Guardsman | Group 14', 0, 1, @SGGUID+2, 0), -- single patrol using spawn_group_entry
-(@SGGUID+68, 'Karazhan - Spectral Sentry | Phantom Guardsman | Group 15', 0, 1, @SGGUID+2, 0), -- single patrol using spawn_group_entry
-(@SGGUID+69, 'Karazhan - Spectral Sentry | Phantom Guardsman | Group 16', 0, 3, @SGGUID+2, 1),
-(@SGGUID+70, 'Karazhan - Spectral Sentry | Phantom Guardsman | Group 17', 0, 3, @SGGUID+2, 1),
-(@SGGUID+71, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Group 17', 0, 4, @SGGUID+2, 1),
--- the scullery
-(@SGGUID+72, 'Karazhan - Ghostly Steward (2) | Group 18', 0, 2, @SGGUID+2, 1),
-(@SGGUID+73, 'Karazhan - Spectral Chef (2) | Ghostly Baker | Group 19', 0, 3, @SGGUID+2, 1),
-(@SGGUID+74, 'Karazhan - Skeletal Waiter (2) | Group 20', 0, 2, @SGGUID+2, 1), -- 3 possible spawns-points, 2 active spawns
-(@SGGUID+75, 'Karazhan - Spectral Chef | Ghostly Baker | Group 21', 0, 3, @SGGUID+2, 1), -- spawn_group_entry
-(@SGGUID+76, 'Karazhan - Spectral Chef | Ghostly Baker | Group 22', 0, 3, @SGGUID+2, 1), -- spawn_group_entry
-(@SGGUID+77, 'Karazhan - Ghostly Steward (2) | Group 23', 0, 2, @SGGUID+2, 1),
-(@SGGUID+78, 'Karazhan - Skeletal Waiter (2) | Group 24', 0, 2, @SGGUID+2, 1),
-(@SGGUID+79, 'Karazhan - spectral Servant | Group 25', 0, 1, @SGGUID+2, 1), -- solo patroling pat in the scullery
--- the banquet hall
-(@SGGUID+80, 'Karazhan - Ghostly Steward (2) | Group 26', 0, 2, @SGGUID+2, 1),
-(@SGGUID+81, 'Karazhan - Phantom Guest (9) | Group 27', 0, 9, @SGGUID+2, 1),  -- Phantom Guest groups, 10 spawn points, 9 active, only aggro together - left table from moroes
-(@SGGUID+82, 'Karazhan - Phantom Guest (9) | Group 28', 0, 9, @SGGUID+2, 1),  -- only aggro together - right table from moroes
-(@SGGUID+83, 'Karazhan - Phantom Guest (9) | Group 29', 0, 9, @SGGUID+2, 1),  -- 10 spawn points, 9 active, only aggro together - big table, moroes side
-(@SGGUID+84, 'Karazhan - Phantom Guest (9) | Group 30', 0, 9, @SGGUID+2, 1),  -- 10 spawn points, 9 active, only aggro together - big table, ballroom side
-(@SGGUID+85, 'Karazhan - Ghostly Steward (2) | Group 31', 0, 2, @SGGUID+2, 1),
-(@SGGUID+86, 'Karazhan - Skeletal Waiter (4) | Group 32', 0, 0, @SGGUID+2, 0), -- 4 patrols, spawn_group only to prevent respawn when moroes dead (no need to put them into 4 seperate spawn_groups)
--- the grand ballroom
-(@SGGUID+87, 'Karazhan - Phantom Guests (9) | Group 33', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+88, 'Karazhan - Phantom Guests (9) | Group 34', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+89, 'Karazhan - Phantom Guests (9) | Group 35', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+90, 'Karazhan - Phantom Guests (9) | Group 36', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+91, 'Karazhan - Phantom Guests (9) | Group 37', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
-(@SGGUID+92, 'Karazhan - Phantom Guests (9) | Group 38', 0, 3, @SGGUID+2, 0), -- This group has atleast 15 spawn points (possible more) at the chairs around this room, there are always 3 active spawned
-(@SGGUID+93, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | Group 39', 0, 5, @SGGUID+2, 1), 
-(@SGGUID+94, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | Group 40', 0, 5, @SGGUID+2, 1), 
+(@SGGUID+64, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 2', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
+(@SGGUID+65, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 3', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
+(@SGGUID+66, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 4', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
+(@SGGUID+67, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 5', 0, 1, @SGGUID+2, 0), -- single patrol using spawn_group_entry
+(@SGGUID+68, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 6', 0, 1, @SGGUID+2, 0), -- single patrol using spawn_group_entry
+(@SGGUID+69, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 7', 0, 3, @SGGUID+2, 1),
+(@SGGUID+70, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Group 8', 0, 3, @SGGUID+2, 1),
+(@SGGUID+71, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 9', 0, 4, @SGGUID+2, 1),
+-- The Scullery
+(@SGGUID+72, 'Karazhan - Ghostly Steward (2) | The Scullery Group 1', 0, 2, @SGGUID+2, 1),
+(@SGGUID+73, 'Karazhan - Spectral Chef (2) | Ghostly Baker | The Scullery Group 2', 0, 3, @SGGUID+2, 1),
+(@SGGUID+74, 'Karazhan - Skeletal Waiter (2) | The Scullery Group 3', 0, 2, @SGGUID+2, 1), -- 3 possible spawns-points, 2 active spawns
+(@SGGUID+75, 'Karazhan - Spectral Chef | Ghostly Baker | The Scullery Group 4', 0, 3, @SGGUID+2, 1), -- spawn_group_entry
+(@SGGUID+76, 'Karazhan - Spectral Chef | Ghostly Baker | The Scullery Group 5', 0, 3, @SGGUID+2, 1), -- spawn_group_entry
+(@SGGUID+77, 'Karazhan - Ghostly Steward (2) | The Scullery Group 6', 0, 2, @SGGUID+2, 1),
+(@SGGUID+78, 'Karazhan - Skeletal Waiter (2) | The Scullery Group 7', 0, 2, @SGGUID+2, 1),
+(@SGGUID+79, 'Karazhan - spectral Servant | The Scullery Group 8', 0, 1, @SGGUID+2, 1), -- solo patroling pat in the scullery
+-- The Banquet Hall
+(@SGGUID+80, 'Karazhan - Ghostly Steward (2) | The Banquet Hall Group 1', 0, 2, @SGGUID+2, 1),
+(@SGGUID+81, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 2', 0, 9, @SGGUID+2, 1),  -- Phantom Guest groups, 10 spawn points, 9 active, only aggro together - left table from moroes
+(@SGGUID+82, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 3', 0, 9, @SGGUID+2, 1),  -- only aggro together - right table from moroes
+(@SGGUID+83, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 4', 0, 9, @SGGUID+2, 1),  -- 10 spawn points, 9 active, only aggro together - big table, moroes side
+(@SGGUID+84, 'Karazhan - Phantom Guest (9) | The Banquet Hall Group 5', 0, 9, @SGGUID+2, 1),  -- 10 spawn points, 9 active, only aggro together - big table, ballroom side
+(@SGGUID+85, 'Karazhan - Ghostly Steward (2) | The Banquet Hall Group 6', 0, 2, @SGGUID+2, 1),
+(@SGGUID+86, 'Karazhan - Skeletal Waiter (4) | The Banquet Hall Group 7', 0, 0, @SGGUID+2, 0), -- 4 patrols, spawn_group only to prevent respawn when moroes dead (no need to put them into 4 seperate spawn_groups)
+-- The Grand Ballroom - lower
+(@SGGUID+87, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 1', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+88, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 2', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+89, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 3', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+90, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 4', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+91, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 5', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active, aggro together
+(@SGGUID+92, 'Karazhan - Phantom Guests (9) | The Grand Ballroom Group 6', 0, 3, @SGGUID+2, 0), -- This group has atleast 15 spawn points (possible more) at the chairs around this room, there are always 3 active spawned
+(@SGGUID+93, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom Group 7', 0, 5, @SGGUID+2, 1), 
+(@SGGUID+94, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom Group 8', 0, 5, @SGGUID+2, 1), 
 -- all other npcs in this room (3 phantom valets, 4 spectral servent patrols) they only need spawn_group worldstate to prevent them respawning (despawning on soft reset) when moroes is dead
-(@SGGUID+95, 'Karazhan - Phantom Valets (3) | Spectral Servent (4) | Group 41', 0, 0, @SGGUID+2, 0), 
--- the grand ballroom - top
-(@SGGUID+96, 'Karazhan - Phantom Guests (9) | Group 42', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active
-(@SGGUID+97, 'Karazhan - Phantom Guests (9) | Group 43', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active
-(@SGGUID+98, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | Group 44', 0, 5, @SGGUID+2, 1), 
-(@SGGUID+99, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | Group 45', 0, 5, @SGGUID+2, 1),
--- balcony groups
-(@SGGUID+100, 'Karazhan - Phantom Guests (2) | Group 46', 0, 2, @SGGUID+2, 1), -- 4 spawn points, 2 spawned
-(@SGGUID+101, 'Karazhan - Phantom Guests (2) | Group 47', 0, 2, @SGGUID+2, 1), -- 4 spawn points, 2 spawned
-(@SGGUID+102, 'Karazhan - Phantom Guests (1) | Group 48', 0, 1, @SGGUID+2, 1), -- 2 spawn points, 1 spawned
-(@SGGUID+103, 'Karazhan - Phantom Guests (2) | Group 49', 0, 2, @SGGUID+2, 1), -- 2 spawn points, 2 spawned
-(@SGGUID+104, 'Karazhan - Phantom Guests (2) | Group 50', 0, 2, @SGGUID+2, 1), -- 4 spawn points, 2 spawned
-(@SGGUID+105, 'Karazhan - Phantom Guests (1) | Group 51', 0, 1, @SGGUID+2, 1), -- 4 spawn points, 1 spawned
-(@SGGUID+106, 'Karazhan - Phantom Guests (1) | Group 52', 0, 1, @SGGUID+2, 1), -- 3 spawn points, 1 spawned
-(@SGGUID+107, 'Karazhan - Phantom Guests (1) | Group 53', 0, 1, @SGGUID+2, 1), -- 2 spawn points, 1 spawned
+(@SGGUID+95, 'Karazhan - Phantom Valets (3) | Spectral Servent (4) | The Grand Ballroom Group 9', 0, 0, @SGGUID+2, 0), 
+-- The Grand Ballroom - Upper
+(@SGGUID+96, 'Karazhan - Phantom Guests (9) | The Grand Ballroom  Group 10', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active
+(@SGGUID+97, 'Karazhan - Phantom Guests (9) | The Grand Ballroom  Group 11', 0, 9, @SGGUID+2, 1), -- 10 spawn points, 9 active
+(@SGGUID+98, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom  Group 12', 0, 5, @SGGUID+2, 1), 
+(@SGGUID+99, 'Karazhan - Spectral Retainer | Phantom Attendant (4) | The Grand Ballroom  Group 13', 0, 5, @SGGUID+2, 1),
+-- The Grand Ballroom  - Balcony groups
+(@SGGUID+100, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 14', 0, 2, @SGGUID+2, 1), -- 4 spawn points, 2 spawned
+(@SGGUID+101, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 15', 0, 2, @SGGUID+2, 1), -- 4 spawn points, 2 spawned
+(@SGGUID+102, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 16', 0, 1, @SGGUID+2, 1), -- 2 spawn points, 1 spawned
+(@SGGUID+103, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 17', 0, 2, @SGGUID+2, 1), -- 2 spawn points, 2 spawned
+(@SGGUID+104, 'Karazhan - Phantom Guests (2) | The Grand Ballroom  Group 18', 0, 2, @SGGUID+2, 1), -- 4 spawn points, 2 spawned
+(@SGGUID+105, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 19', 0, 1, @SGGUID+2, 1), -- 4 spawn points, 1 spawned
+(@SGGUID+106, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 20', 0, 1, @SGGUID+2, 1), -- 3 spawn points, 1 spawned
+(@SGGUID+107, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 21', 0, 1, @SGGUID+2, 1), -- 2 spawn points, 1 spawned
 -- all other npcs in this room they only need spawn_group worldstate to prevent them respawning (despawning on soft reset) when moroes is dead
-(@SGGUID+108, 'Karazhan - Patrols | Group 54', 0, 0, @SGGUID+2, 0); 
+(@SGGUID+108, 'Karazhan - Patrols | The Grand Ballroom Group 22', 0, 0, @SGGUID+2, 0); 
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3257,6 +3257,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+25, @CGUID+144, -1),
 -- Trash
 -- Midnight linked
+-- Livery Stable
 (@SGGUID+50, @CGUID+119, -1),
 (@SGGUID+51, @CGUID+118, -1),
 (@SGGUID+51, @CGUID+122, -1),
@@ -3292,6 +3293,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+61, @CGUID+135, -1),
 (@SGGUID+61, @CGUID+133, -1),
 -- moroes linked
+-- Upper Livery Stable
 (@SGGUID+62, @CGUID+385, -1),
 (@SGGUID+62, @CGUID+386, -1),
 (@SGGUID+63, @CGUID+410, 0), -- Patrol
@@ -3481,16 +3483,16 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+95, @CGUID+236, -1),
 -- upper ballroom
 -- phantom guest grp 1
-(@SGGUID+96, @CGUID++272, -1),
-(@SGGUID+96, @CGUID++273, -1),
-(@SGGUID+96, @CGUID++277, -1),
-(@SGGUID+96, @CGUID++320, -1),
-(@SGGUID+96, @CGUID++321, -1),
-(@SGGUID+96, @CGUID++322, -1),
-(@SGGUID+96, @CGUID++323, -1),
-(@SGGUID+96, @CGUID++324, -1),
-(@SGGUID+96, @CGUID++325, -1),
-(@SGGUID+96, @CGUID++326, -1),
+(@SGGUID+96, @CGUID+272, -1),
+(@SGGUID+96, @CGUID+273, -1),
+(@SGGUID+96, @CGUID+277, -1),
+(@SGGUID+96, @CGUID+320, -1),
+(@SGGUID+96, @CGUID+321, -1),
+(@SGGUID+96, @CGUID+322, -1),
+(@SGGUID+96, @CGUID+323, -1),
+(@SGGUID+96, @CGUID+324, -1),
+(@SGGUID+96, @CGUID+325, -1),
+(@SGGUID+96, @CGUID+326, -1),
 -- phantom guest grp 2
 (@SGGUID+97, @CGUID+333, -1),
 (@SGGUID+97, @CGUID+334, -1),
@@ -3503,48 +3505,48 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+97, @CGUID+343, -1),
 (@SGGUID+97, @CGUID+976, -1),
 -- spectral retainer grp 1
-(@SGGUID+98, @CGUID++357, -1),
-(@SGGUID+98, @CGUID++214, -1),
-(@SGGUID+98, @CGUID++216, -1),
-(@SGGUID+98, @CGUID++221, -1),
-(@SGGUID+98, @CGUID++226, -1),
+(@SGGUID+98, @CGUID+357, -1),
+(@SGGUID+98, @CGUID+214, -1),
+(@SGGUID+98, @CGUID+216, -1),
+(@SGGUID+98, @CGUID+221, -1),
+(@SGGUID+98, @CGUID+226, -1),
 -- spectral retainer grp 2
-(@SGGUID+99, @CGUID++215, -1),
-(@SGGUID+99, @CGUID++227, -1),
-(@SGGUID+99, @CGUID++228, -1),
-(@SGGUID+99, @CGUID++229, -1),
-(@SGGUID+99, @CGUID++355, -1),
+(@SGGUID+99, @CGUID+215, -1),
+(@SGGUID+99, @CGUID+227, -1),
+(@SGGUID+99, @CGUID+228, -1),
+(@SGGUID+99, @CGUID+229, -1),
+(@SGGUID+99, @CGUID+355, -1),
 -- balcony groups
-(@SGGUID+100, @CGUID++329, -1),
-(@SGGUID+100, @CGUID++977, -1),
-(@SGGUID+100, @CGUID++978, -1),
-(@SGGUID+100, @CGUID++979, -1),
-(@SGGUID+101, @CGUID++330, -1),
-(@SGGUID+101, @CGUID++331, -1),
-(@SGGUID+101, @CGUID++980, -1),
-(@SGGUID+101, @CGUID++981, -1),
-(@SGGUID+102, @CGUID++332, -1),
-(@SGGUID+102, @CGUID++982, -1),
-(@SGGUID+103, @CGUID++328, -1),
-(@SGGUID+103, @CGUID++337, -1),
-(@SGGUID+104, @CGUID++339, -1),
-(@SGGUID+104, @CGUID++342, -1),
-(@SGGUID+104, @CGUID++983, -1),
-(@SGGUID+104, @CGUID++984, -1),
-(@SGGUID+105, @CGUID++250, -1),
-(@SGGUID+105, @CGUID++985, -1),
-(@SGGUID+105, @CGUID++986, -1),
-(@SGGUID+105, @CGUID++987, -1),
-(@SGGUID+106, @CGUID++249, -1),
-(@SGGUID+106, @CGUID++988, -1),
-(@SGGUID+106, @CGUID++989, -1),
-(@SGGUID+107, @CGUID++248, -1),
-(@SGGUID+107, @CGUID++990, -1),
-(@SGGUID+108, @CGUID++233, -1),
-(@SGGUID+108, @CGUID++234, -1),
-(@SGGUID+108, @CGUID++235, -1),
-(@SGGUID+108, @CGUID++237, -1),
-(@SGGUID+108, @CGUID++246, -1);
+(@SGGUID+100, @CGUID+329, -1),
+(@SGGUID+100, @CGUID+977, -1),
+(@SGGUID+100, @CGUID+978, -1),
+(@SGGUID+100, @CGUID+979, -1),
+(@SGGUID+101, @CGUID+330, -1),
+(@SGGUID+101, @CGUID+331, -1),
+(@SGGUID+101, @CGUID+980, -1),
+(@SGGUID+101, @CGUID+981, -1),
+(@SGGUID+102, @CGUID+332, -1),
+(@SGGUID+102, @CGUID+982, -1),
+(@SGGUID+103, @CGUID+328, -1),
+(@SGGUID+103, @CGUID+337, -1),
+(@SGGUID+104, @CGUID+339, -1),
+(@SGGUID+104, @CGUID+342, -1),
+(@SGGUID+104, @CGUID+983, -1),
+(@SGGUID+104, @CGUID+984, -1),
+(@SGGUID+105, @CGUID+250, -1),
+(@SGGUID+105, @CGUID+985, -1),
+(@SGGUID+105, @CGUID+986, -1),
+(@SGGUID+105, @CGUID+987, -1),
+(@SGGUID+106, @CGUID+249, -1),
+(@SGGUID+106, @CGUID+988, -1),
+(@SGGUID+106, @CGUID+989, -1),
+(@SGGUID+107, @CGUID+248, -1),
+(@SGGUID+107, @CGUID+990, -1),
+(@SGGUID+108, @CGUID+233, -1),
+(@SGGUID+108, @CGUID+234, -1),
+(@SGGUID+108, @CGUID+235, -1),
+(@SGGUID+108, @CGUID+237, -1),
+(@SGGUID+108, @CGUID+246, -1);
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
