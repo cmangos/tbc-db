@@ -87,6 +87,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+171,24,-10944.964,-1957.7006,49.46425,0, 0, 0),
 (@CGUID+171,25,-10940.07,-1958.1528,49.46396,0, 0, 0),
 (@CGUID+171,26,-10944.964,-1957.7006,49.46425,0, 0, 0),
+(@CGUID+189,1,-10922.438,-1947.2457,49.448975,100,0,0),
+(@CGUID+189,2,-10925.944,-1958.844,49.460396,100,0,0),
+(@CGUID+189,3,-10929.736,-1974.6626,49.463673,100,0,0),
+(@CGUID+189,4,-10932.942,-1991.6844,49.4881,100,0,0),
+(@CGUID+189,5,-10933.098,-2008.1046,49.46425,100,0,0),
+(@CGUID+189,6,-10931.85,-2021.9751,49.46425,100,0,0),
+(@CGUID+189,7,-10926.557,-2049.1592,49.46425,100,0,0),
 (@CGUID+202, 1, -10890.5, -2041.62, 49.4749, 0, 0, 0),
 (@CGUID+202, 2, -10887.9, -2018.66, 49.4749, 0, 0, 0),
 (@CGUID+202, 3, -10905.9, -2004.69, 49.4749, 0, 0, 0),
@@ -1440,18 +1447,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+723, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
 (@CGUID+726, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
 -- Servent' Quarters
-(@CGUID+172, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+175, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+178, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+181, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+173, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+174, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+179, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+182, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+176, @CGUID+188, 1167), -- Shadowbat -> Vampiric Shadowbat
-(@CGUID+180, @CGUID+188, 1167), -- Shadowbat -> Vampiric Shadowbat
-(@CGUID+177, @CGUID+186, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+183, @CGUID+186, 1167), -- Shadowbat -> Greater Shadowbat
 (@CGUID+190, @CGUID+200, 1167), -- Shadowbeast -> Dreadbeast
 (@CGUID+196, @CGUID+200, 1167), -- Dreadbeast -> Dreadbeast
 (@CGUID+191, @CGUID+203, 1167), -- Shadowbeast -> Phase Hound
@@ -1680,23 +1675,23 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+170, 16171, 532, 1, -10960, -1970.11, 45.9692, 2.58239, 7200, 7200, 1, 1), -- Coldmist Widow
 (@CGUID+171, 16171, 532, 1, -10942.18, -1957.952, 49.5145, 3.05127, 7200, 7200, 0, 2), -- Coldmist Widow
 (@CGUID+172, 16173, 532, 1, -10939.1, -1993.74, 49.485, 5.32806, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+173, 16173, 532, 1, -10938.1, -1971.15, 49.4742, 5.94601, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+174, 16173, 532, 1, -10931.9, -1946.73, 49.4536, 5.98071, 7200, 7200, 5, 1), -- Shadowbat
+(@CGUID+173, 16173, 532, 1, -10938.1, -1971.15, 49.4742, 5.94601, 7200, 7200, 10, 1), -- Shadowbat
+(@CGUID+174, 16173, 532, 1, -10931.9, -1946.73, 49.4536, 5.98071, 7200, 7200, 10, 1), -- Shadowbat
 (@CGUID+175, 16173, 532, 1, -10921.6, -1997.64, 49.4573, 1.83229, 7200, 7200, 5, 1), -- Shadowbat
 (@CGUID+176, 16173, 532, 1, -10943.7, -2044.69, 49.4743, 0.292089, 7200, 7200, 5, 1), -- Shadowbat
 (@CGUID+177, 16173, 532, 1, -10897, -2013.63, 49.4749, 0.208844, 7200, 7200, 5, 1), -- Shadowbat
 (@CGUID+178, 16173, 532, 1, -10940.3, -2012.74, 49.4742, 1.71882, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+179, 16173, 532, 1, -10920.5, -1971.94, 49.4744, 1.85502, 7200, 7200, 5, 1), -- Shadowbat
+(@CGUID+179, 16173, 532, 1, -10920.5, -1971.94, 49.4744, 1.85502, 7200, 7200, 10, 1), -- Shadowbat
 (@CGUID+180, 16173, 532, 1, -10924, -2032.93, 49.4742, 3.71713, 7200, 7200, 5, 1), -- Shadowbat
 (@CGUID+181, 16173, 532, 1, -10920.6, -2015.3, 49.4755, 2.4857, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+182, 16173, 532, 1, -10913.8, -1950.08, 49.4798, 6.25403, 7200, 7200, 5, 1), -- Shadowbat
+(@CGUID+182, 16173, 532, 1, -10913.8, -1950.08, 49.4798, 6.25403, 7200, 7200, 10, 1), -- Shadowbat
 (@CGUID+183, 16173, 532, 1, -10892.4, -1998.7, 49.4749, 3.76513, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+184, 16174, 532, 1, -10935, -1999.5, 49.4748, 4.8576, 7200, 7200, 5, 1), -- Greater Shadowbat
-(@CGUID+185, 16174, 532, 1, -10925.2, -1958.77, 49.4782, 4.4217, 7200, 7200, 5, 1), -- Greater Shadowbat
-(@CGUID+186, 16174, 532, 1, -10892.6, -2007.23, 49.4749, 3.09675, 7200, 7200, 7, 1), -- Greater Shadowbat
-(@CGUID+187, 16175, 532, 1, -10930.9, -1995.75, 49.4768, 0.335273, 7200, 7200, 5, 1), -- Vampiric Shadowbat
-(@CGUID+188, 16175, 532, 1, -10935, -2035.64, 49.4742, 4.2831, 7200, 7200, 5, 1), -- Vampiric Shadowbat
-(@CGUID+189, 16175, 532, 1, -10933, -1982.57, 49.5231, 4.7068, 7200, 7200, 5, 1), -- Vampiric Shadowbat
+(@CGUID+184, 16174, 532, 1, -10935, -1999.5, 49.4748, 4.8576, 7200, 7200, 10, 1), -- Greater Shadowbat
+(@CGUID+185, 0, 532, 1, -10925.9, -1955.59, 49.5618, 0.09245, 7200, 7200, 15, 1), -- Greater Shadowbat
+(@CGUID+186, 0, 532, 1, -10892.6, -2007.23, 49.4749, 3.09675, 7200, 7200, 7, 1), -- spawn_group_entry
+(@CGUID+187, 16175, 532, 1, -10930.9, -1995.75, 49.4768, 0.335273, 7200, 7200, 10, 1), -- Vampiric Shadowbat
+(@CGUID+188, 0, 532, 1, -10932.5, -2040.53, 49.5575, 5.96903, 7200, 7200, 15, 1), -- spawn_group_entry
+(@CGUID+189, 0, 532, 1, -10923, -1946.34, 49.4349, 4.4838, 7200, 7200, 0, 4), -- spawn_group_entry
 (@CGUID+190, 16176, 532, 1, -10900.5, -2028.95, 49.4742, 2.70167, 7200, 7200, 5, 1), -- Shadowbeast
 (@CGUID+191, 16176, 532, 1, -10905.1, -2057.76, 49.4749, 0.038415, 7200, 7200, 5, 1), -- Shadowbeast
 (@CGUID+192, 16176, 532, 1, -10902.1, -2074.04, 49.4749, 1.31705, 7200, 7200, 5, 1), -- Shadowbeast
@@ -3059,14 +3054,19 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- all other npcs in this room they only need spawn_group worldstate to prevent them respawning (despawning on soft reset) when moroes is dead
 (@SGGUID+108, 'Karazhan - Patrols | The Grand Ballroom Group 22', 0, 0, @SGGUID+2, 0), 
 -- Servents' Quarter 
--- all npcs in here are not linked to any boss. 1 boss spawns after all groups in here are dead
+-- all npcs in here are not linked to any boss
+-- Spiders
 (@SGGUID+110, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 1', 0, 0, 0, 1),
 (@SGGUID+111, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 2', 0, 0, 0, 1),
 (@SGGUID+112, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 3', 0, 0, 0, 1),
-
 (@SGGUID+113, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 4', 0, 0, 0, 1),
 (@SGGUID+114, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 5', 0, 0, 0, 1),
-(@SGGUID+115, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 6', 0, 0, 0, 1);
+(@SGGUID+115, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 6', 0, 0, 0, 1),
+-- Bats
+(@SGGUID+116, 'Karazhan -  Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 7', 0, 0, 0, 0), -- spawn_group_entry 
+(@SGGUID+117, 'Karazhan -  Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 8', 0, 0, 0, 0), -- spawn_group_entry patrol
+(@SGGUID+118, 'Karazhan -  Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 9', 0, 0, 0, 0), -- spawn_group_entry 
+(@SGGUID+119, 'Karazhan -  Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 10', 0, 0, 0, 0); -- spawn_group_entry 
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3127,7 +3127,11 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+69, 16424, 0, 0, 0), (@SGGUID+69, 16425, 0, 0, 0), -- Spectral Sentry, Phantom Guardsman
 (@SGGUID+70, 16424, 0, 0, 0), (@SGGUID+70, 16425, 0, 0, 0), -- Spectral Sentry, Phantom Guardsman
 (@SGGUID+75, 16411, 0, 0, 0), (@SGGUID+75, 16412, 0, 0, 0), -- Spectral Chef, Ghostly Baker
-(@SGGUID+76, 16411, 0, 0, 0), (@SGGUID+76, 16412, 0, 0, 0); -- Spectral Chef, Ghostly Baker
+(@SGGUID+76, 16411, 0, 0, 0), (@SGGUID+76, 16412, 0, 0, 0), -- Spectral Chef, Ghostly Baker
+(@SGGUID+116, 16174, 0, 0, 0), (@SGGUID+116, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
+(@SGGUID+117, 16174, 0, 0, 0), (@SGGUID+117, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
+(@SGGUID+118, 16174, 0, 0, 0), (@SGGUID+118, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
+(@SGGUID+119, 16174, 0, 0, 0), (@SGGUID+119, 16175, 0, 0, 0); -- Greater Shadowbat, Vampiric Shadowbat
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
 
@@ -3563,6 +3567,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+108, @CGUID+237, -1),
 (@SGGUID+108, @CGUID+246, -1),
 -- Servent's Quarter
+-- Spiders
 (@SGGUID+110, @CGUID+166, -1), -- Coldmist Widow
 (@SGGUID+110, @CGUID+150, -1), -- Coldmist Stalker (left)
 (@SGGUID+110, @CGUID+151, -1), -- Coldmist Stalker (right)
@@ -3583,7 +3588,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+115, @CGUID+163, -1), -- Coldmist Widow (right)
 (@SGGUID+115, @CGUID+164, -1), -- Coldmist Widow (left)
 (@SGGUID+115, @CGUID+159, -1), -- Coldmist Stalker (right)
-(@SGGUID+115, @CGUID+161, -1); -- Coldmist Stalker (left)
+(@SGGUID+115, @CGUID+161, -1), -- Coldmist Stalker (left)
+-- Bats
+(@SGGUID+116, @CGUID+185, -1), -- spawn_group_entry
+(@SGGUID+117, @CGUID+189, -1), -- spawn_group_entry
+(@SGGUID+118, @CGUID+188, -1), -- spawn_group_entry
+(@SGGUID+119, @CGUID+186, -1); -- spawn_group_entry
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
