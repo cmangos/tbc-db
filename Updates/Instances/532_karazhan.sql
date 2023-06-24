@@ -94,14 +94,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+189,5,-10933.098,-2008.1046,49.46425,100,0,0),
 (@CGUID+189,6,-10931.85,-2021.9751,49.46425,100,0,0),
 (@CGUID+189,7,-10926.557,-2049.1592,49.46425,100,0,0),
-(@CGUID+202, 1, -10890.5, -2041.62, 49.4749, 0, 0, 0),
-(@CGUID+202, 2, -10887.9, -2018.66, 49.4749, 0, 0, 0),
-(@CGUID+202, 3, -10905.9, -2004.69, 49.4749, 0, 0, 0),
-(@CGUID+202, 4, -10887.4, -2018.75, 49.4749, 0, 0, 0),
-(@CGUID+202, 5, -10890.3, -2042.18, 49.4749, 0, 0, 0),
-(@CGUID+202, 6, -10894.4, -2067.36, 49.4749, 0, 0, 0),
-(@CGUID+202, 7, -10898.9, -2080.08, 49.4749, 0, 0, 0),
-(@CGUID+202, 8, -10895.6, -2066.25, 49.4749, 0, 0, 0),
+(@CGUID+200,1,-10902.333,-2029.5753,49.464252,100,25000,0),
+(@CGUID+200,2,-10896.799,-2037.7389,49.46425,100,0,0),
+(@CGUID+200,3,-10890.914,-2045.2592,49.46425,100,0,0),
+(@CGUID+200,4,-10884.736,-2052.5625,49.46425,100,25000,0), -- ToDo: starts rnd movement for 25 seconds before moving path again
+(@CGUID+200,5,-10892.027,-2042.7123,49.46425,100,0,0),
+(@CGUID+200,6,-10896.028,-2037.4039,49.46425,100,0,0),
+(@CGUID+200,7,-10900.411,-2030.7999,49.464252,100,0,0),
 (@CGUID+230,1,-10955.26,-1963.9414,79.9643,100,0,0),
 (@CGUID+230,2,-10948.735,-1964.8359,79.96393,100,0,0),
 (@CGUID+230,3,-10950.164,-1979.485,79.96417,100,0,0),
@@ -171,7 +170,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+232,20,-10990.762,-2007.194,79.964264,100,0,0),
 (@CGUID+232,21,-10989.674,-1996.9874,79.964294,100,0,0),
 (@CGUID+232,22,-10990.762,-2007.194,79.964264,100,0,0),
-
 (@CGUID+233,1,-10934.876,-2000.5117,92.16736,100,0,0),
 (@CGUID+233,2,-10941.122,-1998.8932,93.82363,100,0,0),
 (@CGUID+233,3,-10942.035,-2006.2756,93.82364,100,0,0),
@@ -1455,19 +1453,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+718, @CGUID+717, 1167), -- Fleshbeast -> Fleshbeast
 (@CGUID+717, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
 (@CGUID+723, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
-(@CGUID+726, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
--- Servent' Quarters
-(@CGUID+190, @CGUID+200, 1167), -- Shadowbeast -> Dreadbeast
-(@CGUID+196, @CGUID+200, 1167), -- Dreadbeast -> Dreadbeast
-(@CGUID+191, @CGUID+203, 1167), -- Shadowbeast -> Phase Hound
-(@CGUID+195, @CGUID+203, 1167), -- Dreadbeast -> Phase Hound
-(@CGUID+205, @CGUID+203, 1167), -- Phase Hound -> Phase Hound
-(@CGUID+192, @CGUID+198, 1167), -- Shadowbeast -> Dreadbeast
-(@CGUID+193, @CGUID+197, 1167), -- Shadowbeast -> Dreadbeast
-(@CGUID+194, @CGUID+199, 1167), -- Shadowbeast -> Dreadbeast
-(@CGUID+204, @CGUID+199, 1167), -- Phase Hound -> Dreadbeast
-(@CGUID+206, @CGUID+199, 1167), -- Phase Hound -> Dreadbeast
-(@CGUID+201, @CGUID+202, 1679); -- Phase Hound -> Phase Hound
+(@CGUID+726, @CGUID+142, 1024); -- Greater Fleshbeast -> Prince Malchezaar
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (16389, 532, 15687, 1024, 300), -- Spectral Apprentice -> Moroes
@@ -1702,23 +1688,23 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+187, 16175, 532, 1, -10930.9, -1995.75, 49.4768, 0.335273, 7200, 7200, 10, 1), -- Vampiric Shadowbat
 (@CGUID+188, 0, 532, 1, -10932.5, -2040.53, 49.5575, 5.96903, 7200, 7200, 15, 1), -- spawn_group_entry
 (@CGUID+189, 0, 532, 1, -10923, -1946.34, 49.4349, 4.4838, 7200, 7200, 0, 4), -- spawn_group_entry
-(@CGUID+190, 16176, 532, 1, -10900.5, -2028.95, 49.4742, 2.70167, 7200, 7200, 5, 1), -- Shadowbeast
+(@CGUID+190, 16176, 532, 1, -10902.3, -2029.58, 49.5575, 5.3058, 7200, 7200, 1, 1), -- Shadowbeast
 (@CGUID+191, 16176, 532, 1, -10905.1, -2057.76, 49.4749, 0.038415, 7200, 7200, 5, 1), -- Shadowbeast
-(@CGUID+192, 16176, 532, 1, -10902.1, -2074.04, 49.4749, 1.31705, 7200, 7200, 5, 1), -- Shadowbeast
-(@CGUID+193, 16176, 532, 1, -10884.3, -2050.78, 49.4742, 5.12777, 7200, 7200, 5, 1), -- Shadowbeast
-(@CGUID+194, 16176, 532, 1, -10882.8, -2036.52, 49.4742, 3.46932, 7200, 7200, 5, 1), -- Shadowbeast
-(@CGUID+195, 16177, 532, 1, -10907.6, -2054.33, 49.4749, 0.0219235, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+196, 16177, 532, 1, -10900.4, -2025.5, 49.4742, 1.5413, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+197, 16177, 532, 1, -10886.2, -2056.85, 49.5575, 3.2238, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+198, 16177, 532, 1, -10894.5, -2076.26, 49.4742, 2.12892, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+199, 16177, 532, 1, -10880.8, -2031.87, 49.4742, 1.3961, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+200, 16177, 532, 1, -10900.5, -2033.61, 49.4749, 2.14721, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+201, 16178, 532, 1, -10896.9, -2067.24, 49.4749, 1.39481, 7200, 7200, 0, 0), -- Phase Hound
-(@CGUID+202, 16178, 532, 1, -10895.4, -2067.46, 49.4749, 1.44507, 7200, 7200, 0, 2), -- Phase Hound
-(@CGUID+203, 16178, 532, 1, -10905.4, -2051.97, 49.4749, 0.0337038, 7200, 7200, 5, 1), -- Phase Hound
-(@CGUID+204, 16178, 532, 1, -10881.7, -2027.52, 49.4742, 2.57868, 7200, 7200, 5, 1), -- Phase Hound
-(@CGUID+205, 16178, 532, 1, -10906.5, -2047.93, 49.4749, 5.18906, 7200, 7200, 5, 1), -- Phase Hound
-(@CGUID+206, 16178, 532, 1, -10877.7, -2030.21, 49.4749, 2.96402, 7200, 7200, 5, 1), -- Phase Hound
+(@CGUID+192, 16176, 532, 1, -10902.1, -2074.04, 49.4749, 1.31705, 7200, 7200, 1, 1), -- Shadowbeast
+(@CGUID+193, 16176, 532, 1, -10884.3, -2050.78, 49.4742, 5.12777, 7200, 7200, 1, 1), -- Shadowbeast
+(@CGUID+194, 16176, 532, 1, -10883.1, -2036.8, 49.5575, 4.86357, 7200, 7200, 1, 1), -- Shadowbeast
+(@CGUID+195, 16177, 532, 1, -10902.9, -2051.85, 49.5575, 0.554985, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+196, 16177, 532, 1, -10900.4, -2026.52, 49.4643, 1.24734, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+197, 16177, 532, 1, -10886.2, -2056.85, 49.5575, 3.2238, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+198, 16177, 532, 1, -10894.5, -2076.26, 49.4742, 2.12892, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+199, 16177, 532, 1, -10881, -2033.25, 49.5575, 6.27755, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+200, 16177, 532, 1, -10902.3, -2029.58, 49.5575, 5.3058, 7200, 7200, 0, 2), -- Dreadbeast
+(@CGUID+201, 16178, 532, 1, -10895.192, -2070.8093, 49.557518, 2.5303, 7200, 7200, 0, 0), -- Phase Hound
+(@CGUID+202, 16178, 532, 1, -10898.383, -2070.2932, 49.552307, 1.16076, 7200, 7200, 0, 0), -- Phase Hound
+(@CGUID+203, 16178, 532, 1, -10899.2, -2052, 49.5575, 0.907571, 7200, 7200, 1, 1), -- Phase Hound
+(@CGUID+204, 16178, 532, 1, -10881.9, -2029.56, 49.5575, 4.69332, 7200, 7200, 1, 1), -- Phase Hound
+(@CGUID+205, 16178, 532, 1, -10901.3, -2047.69, 49.4642, 3.521, 7200, 7200, 1, 1), -- Phase Hound
+(@CGUID+206, 16178, 532, 1, -10885.8, -2032.12, 49.5575, 1.79159, 7200, 7200, 1, 1), -- Phase Hound
 (@CGUID+207, 16388, 532, 1, -11090.5, -1908.39, 49.9482, 3.61283, 7200, 7200, 0, 0), -- Koren
 (@CGUID+208, 16389, 532, 1, -11097.5, -1902.15, 49.9294, 5.07891, 7200, 7200, 0, 0), -- Spectral Apprentice
 (@CGUID+209, 16389, 532, 1, -11122.9, -1895.78, 49.9736, 4.17134, 7200, 7200, 0, 0), -- Spectral Apprentice
@@ -3074,10 +3060,18 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+114, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 5', 0, 0, 0, 1),
 (@SGGUID+115, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 6', 0, 0, 0, 1),
 -- Bats
-(@SGGUID+116, 'Karazhan -  Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 7', 0, 0, 0, 0), -- spawn_group_entry 
-(@SGGUID+117, 'Karazhan -  Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 8', 0, 0, 0, 0), -- spawn_group_entry patrol
-(@SGGUID+118, 'Karazhan -  Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 9', 0, 0, 0, 0), -- spawn_group_entry 
-(@SGGUID+119, 'Karazhan -  Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 10', 0, 0, 0, 0); -- spawn_group_entry 
+(@SGGUID+116, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 7', 0, 0, 0, 0), -- spawn_group_entry 
+(@SGGUID+117, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 8', 0, 0, 0, 0), -- spawn_group_entry patrol
+(@SGGUID+118, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 9', 0, 0, 0, 0), -- spawn_group_entry 
+(@SGGUID+119, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 10', 0, 0, 0, 0), -- spawn_group_entry 
+-- Dogs
+(@SGGUID+120, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 11', 0, 0, 0, 1), 
+(@SGGUID+121, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 12', 0, 0, 0, 1), 
+(@SGGUID+122, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 13', 0, 0, 0, 1), 
+(@SGGUID+123, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 14', 0, 0, 0, 1), 
+(@SGGUID+124, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 15', 0, 0, 0, 1), 
+(@SGGUID+125, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 16', 0, 0, 0, 1), -- solo pat spawn_group_entry
+(@SGGUID+126, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003', 0, 0, 0, 1); -- side by side patrol
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3142,7 +3136,8 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+116, 16174, 0, 0, 0), (@SGGUID+116, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
 (@SGGUID+117, 16174, 0, 0, 0), (@SGGUID+117, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
 (@SGGUID+118, 16174, 0, 0, 0), (@SGGUID+118, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
-(@SGGUID+119, 16174, 0, 0, 0), (@SGGUID+119, 16175, 0, 0, 0); -- Greater Shadowbat, Vampiric Shadowbat
+(@SGGUID+119, 16174, 0, 0, 0), (@SGGUID+119, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
+(@SGGUID+125, 16176, 0, 0, 0), (@SGGUID+125, 16177, 0, 0, 0); -- Shadowbeast, Dreadbeast
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
 
@@ -3604,15 +3599,35 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+116, @CGUID+185, -1), -- spawn_group_entry
 (@SGGUID+117, @CGUID+189, -1), -- spawn_group_entry patrol
 (@SGGUID+118, @CGUID+188, -1), -- spawn_group_entry
-(@SGGUID+119, @CGUID+186, -1); -- spawn_group_entry
+(@SGGUID+119, @CGUID+186, -1), -- spawn_group_entry
+-- Dogs
+(@SGGUID+120, @CGUID+199, -1), -- Dreadbeast
+(@SGGUID+120, @CGUID+204, -1), -- Phase Hound
+(@SGGUID+120, @CGUID+206, -1), -- Phase Hound
+(@SGGUID+120, @CGUID+194, -1), -- Shadowbeast
+(@SGGUID+121, @CGUID+196, -1), -- Dreadbeast
+(@SGGUID+121, @CGUID+190, -1), -- Shadowbeast
+(@SGGUID+122, @CGUID+197, -1), -- Dreadbeast
+(@SGGUID+122, @CGUID+193, -1), -- Shadowbeast
+(@SGGUID+123, @CGUID+195, -1), -- Dreadbeast
+(@SGGUID+123, @CGUID+203, -1), -- Phase Hound
+(@SGGUID+123, @CGUID+205, -1), -- Phase Hound
+(@SGGUID+123, @CGUID+191, -1), -- Shadowbeast
+(@SGGUID+124, @CGUID+198, -1), -- Dreadbeast
+(@SGGUID+124, @CGUID+192, -1), -- Shadowbeast
+(@SGGUID+125, @CGUID+200, -1), -- spawn_group_entry
+(@SGGUID+126, @CGUID+201, 0), -- Phase Hound
+(@SGGUID+126, @CGUID+202, 1); -- Phase Hound
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
-(@SGGUID+63, 1, 3, 0, @SGGUID+63, 2, 'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002');
+(@SGGUID+63, 1, 3, 0, @SGGUID+63, 2, 'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002'),
+(@SGGUID+126, 2, 3, 0, @SGGUID+126, 2, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+58,'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
-(@SGGUID+63,'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002');
+(@SGGUID+63,'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002'),
+(@SGGUID+126,'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+58,1,-11119.062,-1955.4576,49.882957,100,0,0),
@@ -3658,7 +3673,21 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+63,17,-11106.281,-1949.971,74.377235,100,0,0),
 (@SGGUID+63,18,-11097.072,-1939.4983,74.44396,100,0,0),
 (@SGGUID+63,19,-11091.714,-1928.8903,74.41774,100,0,0),
-(@SGGUID+63,20,-11092.829,-1917.3286,74.39243,100,0,0);
+(@SGGUID+63,20,-11092.829,-1917.3286,74.39243,100,0,0),
+(@SGGUID+126,1,-10896.858,-2073.1428,49.46425,100,0,0),
+(@SGGUID+126,2,-10891.749,-2055.0317,49.46425,100,0,0),
+(@SGGUID+126,3,-10892.731,-2044.5374,49.46425,100,0,0),
+(@SGGUID+126,4,-10891.803,-2030.5295,49.464252,100,0,0),
+(@SGGUID+126,5,-10889.802,-2016.572,49.46425,100,0,0),
+(@SGGUID+126,6,-10901.849,-2006.1481,49.46425,100,0,0),
+(@SGGUID+126,7,-10893.869,-2010.3392,49.46425,100,0,0),
+(@SGGUID+126,8,-10907.202,-2005.8795,49.46425,100,0,0),
+(@SGGUID+126,9,-10893.869,-2010.3392,49.46425,100,0,0),
+(@SGGUID+126,10,-10901.849,-2006.1481,49.46425,100,0,0),
+(@SGGUID+126,11,-10889.802,-2016.572,49.46425,100,0,0),
+(@SGGUID+126,12,-10891.803,-2030.5295,49.464252,100,0,0),
+(@SGGUID+126,13,-10892.731,-2044.5374,49.46425,100,0,0),
+(@SGGUID+126,14,-10891.749,-2055.0317,49.46425,100,0,0);
 
 DELETE FROM worldstate_name WHERE Id IN (2315, 2309);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
