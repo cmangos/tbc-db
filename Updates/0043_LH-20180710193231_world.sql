@@ -16,10 +16,6 @@
 -- https://web.archive.org/web/20071013103143/http://thottbot.com:80/i16884
 UPDATE `item_template` SET `minMoneyLoot`=200, `maxMoneyLoot`=300 WHERE `entry`=16884;
 
--- Loot for Sturdy Junkbox.
--- Sturdy Junkbox should contain a few copper.
-UPDATE `item_template` SET `minMoneyLoot`=5, `maxMoneyLoot`=15 WHERE `entry`=16884;
-
 REPLACE INTO `reference_loot_template_names` (`entry`, `name`) VALUES
 (16884, 'Sturdy Junkbox (16884) - (Daggers, Jewellery, Patterns, Poisons)');
 
