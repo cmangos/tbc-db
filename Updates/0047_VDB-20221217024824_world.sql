@@ -2,7 +2,7 @@
 -- https://github.com/vmangos/core/commit/29ad9a622ba501fe2492407f9a77ef70a94a7281
 
 -- Correct drop chance of Turtle Meat from Snapjaw.
--- Classic 30%, TBC 50%, WOTLK 100%
+-- Classic 15%, TBC 25%, WOTLK 50% 1-2 stack!
 UPDATE `creature_loot_template` SET `ChanceOrQuestChance` = 50 WHERE `item`=3712 && `entry`=2408;
 
 -- Correct drop chance of Aged Gorilla Sinew.
