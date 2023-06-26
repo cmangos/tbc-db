@@ -35,45 +35,72 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+135,7,-11151.797,-1931.5779,49.88446,100,0,0),
 (@CGUID+135,8,-11148.713,-1929.849,49.88243,100,1000,0),
 (@CGUID+135,9,-11148.713,-1929.849,49.88243,6.0737,20000,1555101),
-(@CGUID+153, 1, -10987.6, -1941.79, 47.4489, 5.7, 30000, 0),
-(@CGUID+153, 2, -10983.4, -1968.25, 45.8071, 0, 0, 0),
-(@CGUID+153, 3, -10989, -2016.58, 45.4387, 1.66, 30000, 0),
-(@CGUID+153, 4, -10983.3, -1968.52, 45.8041, 0, 0, 0),
-(@CGUID+157, 1, -10972.3, -1976.69, 45.6218, 0, 0, 0),
-(@CGUID+157, 2, -10962.2, -1977.47, 46.0023, 3.19, 30000, 0),
-(@CGUID+157, 3, -10972.3, -1976.72, 45.622, 0, 0, 0),
-(@CGUID+157, 4, -10991.8, -1985.86, 45.9367, 0, 0, 0),
-(@CGUID+157, 5, -11002.7, -1984.18, 47.9988, 0, 0, 0),
-(@CGUID+157, 6, -11008.1, -1983.58, 48.528, 0, 0, 0),
-(@CGUID+157, 7, -11011.1, -1989.4, 48.528, 2.9, 30000, 0),
-(@CGUID+157, 8, -11007.7, -1983.18, 48.528, 0, 0, 0),
-(@CGUID+157, 9, -11001.8, -1984.78, 47.9133, 0, 0, 0),
-(@CGUID+157, 10, -10991.3, -1985.95, 45.9295, 0, 0, 0),
-(@CGUID+171, 1, -10954.7, -1957.12, 46.0198, 0, 0, 0),
-(@CGUID+171, 2, -10935.9, -1958.35, 49.4753, 0, 0, 0),
-(@CGUID+171, 3, -10954.4, -1957.12, 46.0206, 0, 0, 0),
-(@CGUID+171, 4, -10979, -1955.32, 46.073, 0, 0, 0),
-(@CGUID+171, 5, -10984.4, -1959.96, 46.0528, 0, 0, 0),
-(@CGUID+171, 6, -10988.4, -1974.44, 45.8945, 0, 0, 0),
-(@CGUID+171, 7, -10996.2, -1973.62, 46.0204, 0, 0, 0),
-(@CGUID+171, 8, -11005.6, -1971.85, 48.5265, 0, 0, 0),
-(@CGUID+171, 9, -11010.8, -1972.5, 48.5265, 0, 0, 0),
-(@CGUID+171, 10, -11028.9, -1993.95, 48.5265, 0, 0, 0),
-(@CGUID+171, 11, -11044.3, -1992.01, 49.9127, 0, 0, 0),
-(@CGUID+171, 12, -11028.5, -1994.22, 48.5284, 0, 0, 0),
-(@CGUID+171, 13, -11010.5, -1972.82, 48.5284, 0, 0, 0),
-(@CGUID+171, 14, -11004.6, -1972.46, 48.5284, 0, 0, 0),
-(@CGUID+171, 15, -10987.5, -1974.74, 45.8735, 0, 0, 0),
-(@CGUID+171, 16, -10984, -1960.05, 46.0532, 0, 0, 0),
-(@CGUID+171, 17, -10978.4, -1955.46, 46.0747, 0, 0, 0),
-(@CGUID+202, 1, -10890.5, -2041.62, 49.4749, 0, 0, 0),
-(@CGUID+202, 2, -10887.9, -2018.66, 49.4749, 0, 0, 0),
-(@CGUID+202, 3, -10905.9, -2004.69, 49.4749, 0, 0, 0),
-(@CGUID+202, 4, -10887.4, -2018.75, 49.4749, 0, 0, 0),
-(@CGUID+202, 5, -10890.3, -2042.18, 49.4749, 0, 0, 0),
-(@CGUID+202, 6, -10894.4, -2067.36, 49.4749, 0, 0, 0),
-(@CGUID+202, 7, -10898.9, -2080.08, 49.4749, 0, 0, 0),
-(@CGUID+202, 8, -10895.6, -2066.25, 49.4749, 0, 0, 0),
+(@CGUID+153,1,-10989.765,-2006.3658,46.011124,1.39626,20000,0),
+(@CGUID+153,2,-10986.724,-1997.9666,46.011124,100,0,0),
+(@CGUID+153,3,-10984.21,-1988.467,45.77392,100,0,0),
+(@CGUID+153,4,-10983.255,-1972.704,45.79858,100,0,0),
+(@CGUID+153,5,-10983.878,-1963.1901,45.9157,100,0,0),
+(@CGUID+153,6,-10984.466,-1956.6111,46.027966,100,0,0),
+(@CGUID+153,7,-10986.212,-1944.4907,46.011124,100,0,0),
+(@CGUID+153,8,-10986.212,-1944.4907,46.011124,4.904375,20000, 0),
+(@CGUID+153,9,-10985.101,-1950.0212,46.02214,100,0,0),
+(@CGUID+153,10,-10983.021,-1959.5474,46.03796,100,0,0),
+(@CGUID+153,11,-10982.996,-1973.2904,45.792934,100,0,0),
+(@CGUID+153,12,-10985.018,-1986.387,45.79519,100,0,0),
+(@CGUID+153,13,-10987.129,-1995.1914,46.011124,100,0,0),
+(@CGUID+157,1,-10966.695,-1977.4137,45.800316,3.1241,25000,0),
+(@CGUID+157,2,-10976.824,-1979.2079,45.67498,0, 0, 0),
+(@CGUID+157,3,-10985.146,-1981.5681,45.803932,0, 0, 0),
+(@CGUID+157,4,-10995.239,-1984.8306,46.00994,0, 0, 0),
+(@CGUID+157,5,-11007.505,-1983.8522,48.52675,0, 0, 0),
+(@CGUID+157,6,-11012.692,-1978.0052,48.526745,0, 0, 0),
+(@CGUID+157,7,-11016.74,-1968.9121,48.52675,0, 0, 0),
+(@CGUID+157,8,-11016.74,-1968.9121,48.52675,5.166,25000,0),
+(@CGUID+157,9,-11012.509,-1976.3477,48.52674,0, 0, 0),
+(@CGUID+157,10,-11007.938,-1982.0907,48.52675,0, 0, 0),
+(@CGUID+157,11,-10994.812,-1985.4724,46.000217,0, 0, 0),
+(@CGUID+157,12,-10985.987,-1983.7162,45.818737,0, 0, 0),
+(@CGUID+157,13,-10977.645,-1981.2305,45.684868,0, 0, 0),
+(@CGUID+171,1,-10954.322,-1956.5801,46.011154,0, 0, 0),
+(@CGUID+171,2,-10964.097,-1954.8002,45.995483,0, 0, 0),
+(@CGUID+171,3,-10976.868,-1954.6481,46.07587,0, 0, 0),
+(@CGUID+171,4,-10982.455,-1959.851,46.020557,0, 0, 0),
+(@CGUID+171,5,-10984.918,-1965.7986,45.893887,0, 0, 0),
+(@CGUID+171,6,-10988.981,-1970.9119,45.91339,0, 0, 0),
+(@CGUID+171,7,-10993.181,-1973.9045,45.96225,0, 0, 0),
+(@CGUID+171,8,-11007.145,-1972.4321,48.52674,0, 0, 0),
+(@CGUID+171,9,-11016.687,-1980.7526,48.52675,0, 0, 0),
+(@CGUID+171,10,-11022.974,-1986.5317,48.526745,0, 0, 0),
+(@CGUID+171,11,-11029.973,-1992.8566,48.526745,0, 0, 0),
+(@CGUID+171,12,-11038.891,-1993.2291,49.90175,0, 0, 0),
+(@CGUID+171,13,-11029.973,-1992.8566,48.526745,0, 0, 0),
+(@CGUID+171,14,-11022.974,-1986.5317,48.526745,0, 0, 0),
+(@CGUID+171,15,-11016.687,-1980.7526,48.52675,0, 0, 0),
+(@CGUID+171,16,-11007.145,-1972.4321,48.52674,0, 0, 0),
+(@CGUID+171,17,-10993.181,-1973.9045,45.96225,0, 0, 0),
+(@CGUID+171,18,-10988.981,-1970.9119,45.91339,0, 0, 0),
+(@CGUID+171,19,-10984.918,-1965.7986,45.893887,0, 0, 0),
+(@CGUID+171,20,-10982.455,-1959.851,46.020557,0, 0, 0),
+(@CGUID+171,21,-10976.868,-1954.6481,46.07587,0, 0, 0),
+(@CGUID+171,22,-10964.097,-1954.8002,45.995483,0, 0, 0),
+(@CGUID+171,23,-10954.322,-1956.5801,46.011154,0, 0, 0),
+(@CGUID+171,24,-10944.964,-1957.7006,49.46425,0, 0, 0),
+(@CGUID+171,25,-10940.07,-1958.1528,49.46396,0, 0, 0),
+(@CGUID+171,26,-10944.964,-1957.7006,49.46425,0, 0, 0),
+(@CGUID+189,1,-10922.438,-1947.2457,49.448975,100,0,0),
+(@CGUID+189,2,-10925.944,-1958.844,49.460396,100,0,0),
+(@CGUID+189,3,-10929.736,-1974.6626,49.463673,100,0,0),
+(@CGUID+189,4,-10932.942,-1991.6844,49.4881,100,0,0),
+(@CGUID+189,5,-10933.098,-2008.1046,49.46425,100,0,0),
+(@CGUID+189,6,-10931.85,-2021.9751,49.46425,100,0,0),
+(@CGUID+189,7,-10926.557,-2049.1592,49.46425,100,0,0),
+(@CGUID+200,1,-10902.333,-2029.5753,49.464252,100,25000,0),
+(@CGUID+200,2,-10896.799,-2037.7389,49.46425,100,0,0),
+(@CGUID+200,3,-10890.914,-2045.2592,49.46425,100,0,0),
+(@CGUID+200,4,-10884.736,-2052.5625,49.46425,100,25000,0), -- ToDo: starts rnd movement for 25 seconds before moving path again
+(@CGUID+200,5,-10892.027,-2042.7123,49.46425,100,0,0),
+(@CGUID+200,6,-10896.028,-2037.4039,49.46425,100,0,0),
+(@CGUID+200,7,-10900.411,-2030.7999,49.464252,100,0,0),
 (@CGUID+230,1,-10955.26,-1963.9414,79.9643,100,0,0),
 (@CGUID+230,2,-10948.735,-1964.8359,79.96393,100,0,0),
 (@CGUID+230,3,-10950.164,-1979.485,79.96417,100,0,0),
@@ -143,7 +170,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+232,20,-10990.762,-2007.194,79.964264,100,0,0),
 (@CGUID+232,21,-10989.674,-1996.9874,79.964294,100,0,0),
 (@CGUID+232,22,-10990.762,-2007.194,79.964264,100,0,0),
-
 (@CGUID+233,1,-10934.876,-2000.5117,92.16736,100,0,0),
 (@CGUID+233,2,-10941.122,-1998.8932,93.82363,100,0,0),
 (@CGUID+233,3,-10942.035,-2006.2756,93.82364,100,0,0),
@@ -832,7 +858,17 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+953,41,-10957.56,-1915.4032,78.85488,100,0,0),
 (@CGUID+953,42,-10965.671,-1914.349,78.86736,100,0,0),
 (@CGUID+953,43,-10976.98,-1912.8066,78.87737,100,0,0),
-(@CGUID+953,44,-10984.719,-1911.51,78.85487,100,0,0);
+(@CGUID+953,44,-10984.719,-1911.51,78.85487,100,0,0),
+(@CGUID+991,1,-10912.706,-2005.296,49.44169,100,0,0),
+(@CGUID+991,2,-10924.622,-2003.8038,49.46057,100,0,0),
+(@CGUID+991,3,-10944.075,-2001.8298,49.464245,100,0,0),
+(@CGUID+991,4,-10960.566,-2000.3043,45.9958,100,0,0),
+(@CGUID+991,5,-10967.552,-1999.4302,45.88263,100,0,0),
+(@CGUID+991,6,-10944.075,-2001.8298,49.464245,100,0,0),
+(@CGUID+991,7,-10924.694,-2003.7965,49.46425,100,0,0),
+(@CGUID+991,8,-10912.706,-2005.296,49.44169,100,0,0),
+(@CGUID+991,9,-10893.057,-2006.7288,49.46425,100,0,0),
+(@CGUID+991,10,-10889.362,-2016.8032,49.46425,100,0,0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (15687,15689,15690,15691,16159,16426,17161,18412);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
@@ -1417,46 +1453,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+718, @CGUID+717, 1167), -- Fleshbeast -> Fleshbeast
 (@CGUID+717, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
 (@CGUID+723, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
-(@CGUID+726, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
--- Servent' Quarters
-(@CGUID+148, @CGUID+168, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+149, @CGUID+168, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+162, @CGUID+168, 1167), -- Coldmist Widow -> Coldmist Widow
-(@CGUID+150, @CGUID+166, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+151, @CGUID+166, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+152, @CGUID+167, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+158, @CGUID+167, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+154, @CGUID+169, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+155, @CGUID+169, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+156, @CGUID+165, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+160, @CGUID+165, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+170, @CGUID+165, 1167), -- Coldmist Widow -> Coldmist Widow
-(@CGUID+159, @CGUID+163, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+161, @CGUID+163, 1167), -- Coldmist Stalker -> Coldmist Widow
-(@CGUID+164, @CGUID+163, 1167), -- Coldmist Widow -> Coldmist Widow
-(@CGUID+172, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+175, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+178, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+181, @CGUID+184, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+173, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+174, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+179, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+182, @CGUID+185, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+176, @CGUID+188, 1167), -- Shadowbat -> Vampiric Shadowbat
-(@CGUID+180, @CGUID+188, 1167), -- Shadowbat -> Vampiric Shadowbat
-(@CGUID+177, @CGUID+186, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+183, @CGUID+186, 1167), -- Shadowbat -> Greater Shadowbat
-(@CGUID+190, @CGUID+200, 1167), -- Shadowbeast -> Dreadbeast
-(@CGUID+196, @CGUID+200, 1167), -- Dreadbeast -> Dreadbeast
-(@CGUID+191, @CGUID+203, 1167), -- Shadowbeast -> Phase Hound
-(@CGUID+195, @CGUID+203, 1167), -- Dreadbeast -> Phase Hound
-(@CGUID+205, @CGUID+203, 1167), -- Phase Hound -> Phase Hound
-(@CGUID+192, @CGUID+198, 1167), -- Shadowbeast -> Dreadbeast
-(@CGUID+193, @CGUID+197, 1167), -- Shadowbeast -> Dreadbeast
-(@CGUID+194, @CGUID+199, 1167), -- Shadowbeast -> Dreadbeast
-(@CGUID+204, @CGUID+199, 1167), -- Phase Hound -> Dreadbeast
-(@CGUID+206, @CGUID+199, 1167), -- Phase Hound -> Dreadbeast
-(@CGUID+201, @CGUID+202, 1679); -- Phase Hound -> Phase Hound
+(@CGUID+726, @CGUID+142, 1024); -- Greater Fleshbeast -> Prince Malchezaar
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (16389, 532, 15687, 1024, 300), -- Spectral Apprentice -> Moroes
@@ -1649,65 +1646,65 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+145, 16153, 532, 1, -11060.2, -1967.07, 53.1487, 3.33358, 7200, 7200, 0, 0), -- Berthold
 (@CGUID+146, 16159, 532, 1, -11097.1, -1932.95, 49.8893, 1.46162, 7200, 7200, 0, 2), -- Calliard
 (@CGUID+147, 16169, 532, 1, -11076.2, -2011.3, 49.9707, 1.5708, 7200, 7200, 0, 0), -- Hastings
-(@CGUID+148, 16170, 532, 1, -11019.3, -1966.57, 48.5289, 2.45122, 7200, 7200, 5, 1), -- Coldmist Stalker
-(@CGUID+149, 16170, 532, 1, -11025.8, -1969.27, 48.5289, 2.75203, 7200, 7200, 5, 1), -- Coldmist Stalker
-(@CGUID+150, 16170, 532, 1, -11041.8, -2002.2, 49.9113, 4.71553, 7200, 7200, 0, 0), -- Coldmist Stalker
-(@CGUID+151, 16170, 532, 1, -11047.1, -2006.43, 49.8974, 5.38547, 7200, 7200, 0, 0), -- Coldmist Stalker
-(@CGUID+152, 16170, 532, 1, -11015.6, -1997.34, 49.8968, 6.13317, 7200, 7200, 3, 1), -- Coldmist Stalker
-(@CGUID+153, 16170, 532, 1, -10984.5, -1956.05, 46.0463, 4.91184, 7200, 7200, 0, 2), -- Coldmist Stalker
-(@CGUID+154, 16170, 532, 1, -10991.3, -2011.02, 46.0208, 4.61024, 7200, 7200, 3, 1), -- Coldmist Stalker
-(@CGUID+155, 16170, 532, 1, -10996.6, -2008.55, 46.0208, 3.83662, 7200, 7200, 3, 1), -- Coldmist Stalker
-(@CGUID+156, 16170, 532, 1, -10958.8, -1976.58, 46.2374, 2.56349, 7200, 7200, 3, 1), -- Coldmist Stalker
-(@CGUID+157, 16170, 532, 1, -10987, -1984.03, 45.845, 0.226152, 7200, 7200, 0, 2), -- Coldmist Stalker
-(@CGUID+158, 16170, 532, 1, -11011.3, -1994.28, 51.0733, 1.19772, 7200, 7200, 3, 1), -- Coldmist Stalker
-(@CGUID+159, 16170, 532, 1, -10982.4, -1936.61, 47.4328, 2.4661, 7200, 7200, 3, 1), -- Coldmist Stalker
-(@CGUID+160, 16170, 532, 1, -10959.1, -1970.04, 46.0078, 1.62101, 7200, 7200, 3, 1), -- Coldmist Stalker
-(@CGUID+161, 16170, 532, 1, -10985.9, -1940.7, 47.1631, 2.08832, 7200, 7200, 3, 1), -- Coldmist Stalker
-(@CGUID+162, 16171, 532, 1, -11019.8, -1968.76, 48.5289, 2.69077, 7200, 7200, 5, 1), -- Coldmist Widow
-(@CGUID+163, 16171, 532, 1, -10982.1, -1937.41, 46.8787, 1.3937, 7200, 7200, 5, 1), -- Coldmist Widow
-(@CGUID+164, 16171, 532, 1, -10987, -1941.81, 47.1589, 2.72135, 7200, 7200, 5, 1), -- Coldmist Widow
-(@CGUID+165, 16171, 532, 1, -10964.8, -1973.85, 45.8167, 5.20901, 7200, 7200, 5, 1), -- Coldmist Widow
-(@CGUID+166, 16171, 532, 1, -11044.7, -2004.18, 49.9113, 2.55097, 7200, 7200, 5, 1), -- Coldmist Widow
-(@CGUID+167, 16171, 532, 1, -11012.2, -1991.97, 49.8543, 1.25719, 7200, 7200, 5, 1), -- Coldmist Widow
-(@CGUID+168, 16171, 532, 1, -11022.5, -1971.34, 48.5289, 3.75027, 7200, 7200, 5, 1), -- Coldmist Widow
-(@CGUID+169, 16171, 532, 1, -10993.7, -2010.74, 46.0203, 2.05928, 7200, 7200, 5, 1), -- Coldmist Widow
-(@CGUID+170, 16171, 532, 1, -10960, -1969.59, 45.963, 4.11915, 7200, 7200, 5, 1), -- Coldmist Widow
-(@CGUID+171, 16171, 532, 1, -10959.3, -1955.67, 45.9625, 2.9615, 7200, 7200, 0, 2), -- Coldmist Widow
+(@CGUID+148, 16170, 532, 1, -11020.5, -1971.02, 48.6112, 5.83159, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+149, 16170, 532, 1, -11025.6, -1973.86, 48.6112, 4.47894, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+150, 16170, 532, 1, -11042.8, -2001.12, 49.9962, 2.07694, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+151, 16170, 532, 1, -11048.2, -2006.97, 49.9758, 5.38547, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+152, 16170, 532, 1, -11015.6, -1993.78, 48.9746, 2.32479, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+153, 16170, 532, 1, -10989.765,-2006.3658,46.011124, 1.39626, 7200, 7200, 0, 2), -- Coldmist Stalker
+(@CGUID+154, 16170, 532, 1, -10987.6, -2010.37, 46.1036, 2.7173, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+155, 16170, 532, 1, -10993.9, -2006.46, 46.1036, 1.93238, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+156, 16170, 532, 1, -10960.7, -1976.13, 46.044, 1.94937, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+157, 16170, 532, 1, -10966.695,-1977.4137,45.800316,3.1241, 7200, 7200, 0, 2), -- Coldmist Stalker
+(@CGUID+158, 16170, 532, 1, -11009.5, -1988.79, 48.6112, 1.85768, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+159, 16170, 532, 1, -10977.9, -1938.07, 46.0649, 4.09107, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+160, 16170, 532, 1, -10965.8, -1968.36, 45.8687, 3.11145, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+161, 16170, 532, 1, -10983.3, -1941.99, 46.0315, 1.57923, 7200, 7200, 1, 1), -- Coldmist Stalker
+(@CGUID+162, 16171, 532, 1, -11020.7, -1967.14, 48.6112, 3.2089, 7200, 7200, 1, 1), -- Coldmist Widow
+(@CGUID+163, 16171, 532, 1, -10981.9, -1937.79, 46.584, 1.29513, 7200, 7200, 1, 1), -- Coldmist Widow
+(@CGUID+164, 16171, 532, 1, -10986.6, -1942.11, 46.7716, 6.17283, 7200, 7200, 1, 1), -- Coldmist Widow
+(@CGUID+165, 16171, 532, 1, -10964.8, -1973.85, 45.9307, 1.46553, 7200, 7200, 1, 1), -- Coldmist Widow
+(@CGUID+166, 16171, 532, 1, -11044.6, -2005.26, 49.9917, 2.55097, 7200, 7200, 1, 1), -- Coldmist Widow
+(@CGUID+167, 16171, 532, 1, -11012.2, -1991.97, 49.9378, 2.27928, 7200, 7200, 1, 1), -- Coldmist Widow
+(@CGUID+168, 16171, 532, 1, -11025, -1969.93, 48.6112, 5.77445, 7200, 7200, 1, 1), -- Coldmist Widow
+(@CGUID+169, 16171, 532, 1, -10993.4, -2011.3, 46.1036, 2.7173, 7200, 7200, 1, 1), -- Coldmist Widow
+(@CGUID+170, 16171, 532, 1, -10960, -1970.11, 45.9692, 2.58239, 7200, 7200, 1, 1), -- Coldmist Widow
+(@CGUID+171, 16171, 532, 1, -10942.18, -1957.952, 49.5145, 3.05127, 7200, 7200, 0, 2), -- Coldmist Widow
 (@CGUID+172, 16173, 532, 1, -10939.1, -1993.74, 49.485, 5.32806, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+173, 16173, 532, 1, -10938.1, -1971.15, 49.4742, 5.94601, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+174, 16173, 532, 1, -10931.9, -1946.73, 49.4536, 5.98071, 7200, 7200, 5, 1), -- Shadowbat
+(@CGUID+173, 16173, 532, 1, -10938.1, -1971.15, 49.4742, 5.94601, 7200, 7200, 10, 1), -- Shadowbat
+(@CGUID+174, 16173, 532, 1, -10931.9, -1946.73, 49.4536, 5.98071, 7200, 7200, 10, 1), -- Shadowbat
 (@CGUID+175, 16173, 532, 1, -10921.6, -1997.64, 49.4573, 1.83229, 7200, 7200, 5, 1), -- Shadowbat
 (@CGUID+176, 16173, 532, 1, -10943.7, -2044.69, 49.4743, 0.292089, 7200, 7200, 5, 1), -- Shadowbat
 (@CGUID+177, 16173, 532, 1, -10897, -2013.63, 49.4749, 0.208844, 7200, 7200, 5, 1), -- Shadowbat
 (@CGUID+178, 16173, 532, 1, -10940.3, -2012.74, 49.4742, 1.71882, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+179, 16173, 532, 1, -10920.5, -1971.94, 49.4744, 1.85502, 7200, 7200, 5, 1), -- Shadowbat
+(@CGUID+179, 16173, 532, 1, -10920.5, -1971.94, 49.4744, 1.85502, 7200, 7200, 10, 1), -- Shadowbat
 (@CGUID+180, 16173, 532, 1, -10924, -2032.93, 49.4742, 3.71713, 7200, 7200, 5, 1), -- Shadowbat
 (@CGUID+181, 16173, 532, 1, -10920.6, -2015.3, 49.4755, 2.4857, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+182, 16173, 532, 1, -10913.8, -1950.08, 49.4798, 6.25403, 7200, 7200, 5, 1), -- Shadowbat
+(@CGUID+182, 16173, 532, 1, -10913.8, -1950.08, 49.4798, 6.25403, 7200, 7200, 10, 1), -- Shadowbat
 (@CGUID+183, 16173, 532, 1, -10892.4, -1998.7, 49.4749, 3.76513, 7200, 7200, 5, 1), -- Shadowbat
-(@CGUID+184, 16174, 532, 1, -10935, -1999.5, 49.4748, 4.8576, 7200, 7200, 5, 1), -- Greater Shadowbat
-(@CGUID+185, 16174, 532, 1, -10925.2, -1958.77, 49.4782, 4.4217, 7200, 7200, 5, 1), -- Greater Shadowbat
-(@CGUID+186, 16174, 532, 1, -10892.6, -2007.23, 49.4749, 3.09675, 7200, 7200, 7, 1), -- Greater Shadowbat
-(@CGUID+187, 16175, 532, 1, -10930.9, -1995.75, 49.4768, 0.335273, 7200, 7200, 5, 1), -- Vampiric Shadowbat
-(@CGUID+188, 16175, 532, 1, -10935, -2035.64, 49.4742, 4.2831, 7200, 7200, 5, 1), -- Vampiric Shadowbat
-(@CGUID+189, 16175, 532, 1, -10933, -1982.57, 49.5231, 4.7068, 7200, 7200, 5, 1), -- Vampiric Shadowbat
-(@CGUID+190, 16176, 532, 1, -10900.5, -2028.95, 49.4742, 2.70167, 7200, 7200, 5, 1), -- Shadowbeast
+(@CGUID+184, 16174, 532, 1, -10935, -1999.5, 49.4748, 4.8576, 7200, 7200, 10, 1), -- Greater Shadowbat
+(@CGUID+185, 0, 532, 1, -10925.9, -1955.59, 49.5618, 0.09245, 7200, 7200, 15, 1), -- spawn_group_entry
+(@CGUID+186, 0, 532, 1, -10892.6, -2007.23, 49.4749, 3.09675, 7200, 7200, 7, 1), -- spawn_group_entry
+(@CGUID+187, 16175, 532, 1, -10930.9, -1995.75, 49.4768, 0.335273, 7200, 7200, 10, 1), -- Vampiric Shadowbat
+(@CGUID+188, 0, 532, 1, -10932.5, -2040.53, 49.5575, 5.96903, 7200, 7200, 15, 1), -- spawn_group_entry
+(@CGUID+189, 0, 532, 1, -10923, -1946.34, 49.4349, 4.4838, 7200, 7200, 0, 4), -- spawn_group_entry
+(@CGUID+190, 16176, 532, 1, -10902.3, -2029.58, 49.5575, 5.3058, 7200, 7200, 1, 1), -- Shadowbeast
 (@CGUID+191, 16176, 532, 1, -10905.1, -2057.76, 49.4749, 0.038415, 7200, 7200, 5, 1), -- Shadowbeast
-(@CGUID+192, 16176, 532, 1, -10902.1, -2074.04, 49.4749, 1.31705, 7200, 7200, 5, 1), -- Shadowbeast
-(@CGUID+193, 16176, 532, 1, -10884.3, -2050.78, 49.4742, 5.12777, 7200, 7200, 5, 1), -- Shadowbeast
-(@CGUID+194, 16176, 532, 1, -10882.8, -2036.52, 49.4742, 3.46932, 7200, 7200, 5, 1), -- Shadowbeast
-(@CGUID+195, 16177, 532, 1, -10907.6, -2054.33, 49.4749, 0.0219235, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+196, 16177, 532, 1, -10900.4, -2025.5, 49.4742, 1.5413, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+197, 16177, 532, 1, -10886.2, -2056.85, 49.5575, 3.2238, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+198, 16177, 532, 1, -10894.5, -2076.26, 49.4742, 2.12892, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+199, 16177, 532, 1, -10880.8, -2031.87, 49.4742, 1.3961, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+200, 16177, 532, 1, -10900.5, -2033.61, 49.4749, 2.14721, 7200, 7200, 5, 1), -- Dreadbeast
-(@CGUID+201, 16178, 532, 1, -10896.9, -2067.24, 49.4749, 1.39481, 7200, 7200, 0, 0), -- Phase Hound
-(@CGUID+202, 16178, 532, 1, -10895.4, -2067.46, 49.4749, 1.44507, 7200, 7200, 0, 2), -- Phase Hound
-(@CGUID+203, 16178, 532, 1, -10905.4, -2051.97, 49.4749, 0.0337038, 7200, 7200, 5, 1), -- Phase Hound
-(@CGUID+204, 16178, 532, 1, -10881.7, -2027.52, 49.4742, 2.57868, 7200, 7200, 5, 1), -- Phase Hound
-(@CGUID+205, 16178, 532, 1, -10906.5, -2047.93, 49.4749, 5.18906, 7200, 7200, 5, 1), -- Phase Hound
-(@CGUID+206, 16178, 532, 1, -10877.7, -2030.21, 49.4749, 2.96402, 7200, 7200, 5, 1), -- Phase Hound
+(@CGUID+192, 16176, 532, 1, -10902.1, -2074.04, 49.4749, 1.31705, 7200, 7200, 1, 1), -- Shadowbeast
+(@CGUID+193, 16176, 532, 1, -10884.3, -2050.78, 49.4742, 5.12777, 7200, 7200, 1, 1), -- Shadowbeast
+(@CGUID+194, 16176, 532, 1, -10883.1, -2036.8, 49.5575, 4.86357, 7200, 7200, 1, 1), -- Shadowbeast
+(@CGUID+195, 16177, 532, 1, -10902.9, -2051.85, 49.5575, 0.554985, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+196, 16177, 532, 1, -10900.4, -2026.52, 49.4643, 1.24734, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+197, 16177, 532, 1, -10886.2, -2056.85, 49.5575, 3.2238, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+198, 16177, 532, 1, -10894.5, -2076.26, 49.4742, 2.12892, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+199, 16177, 532, 1, -10881, -2033.25, 49.5575, 6.27755, 7200, 7200, 1, 1), -- Dreadbeast
+(@CGUID+200, 16177, 532, 1, -10902.3, -2029.58, 49.5575, 5.3058, 7200, 7200, 0, 2), -- Dreadbeast
+(@CGUID+201, 16178, 532, 1, -10895.192, -2070.8093, 49.557518, 2.5303, 7200, 7200, 0, 0), -- Phase Hound
+(@CGUID+202, 16178, 532, 1, -10898.383, -2070.2932, 49.552307, 1.16076, 7200, 7200, 0, 0), -- Phase Hound
+(@CGUID+203, 16178, 532, 1, -10899.2, -2052, 49.5575, 0.907571, 7200, 7200, 1, 1), -- Phase Hound
+(@CGUID+204, 16178, 532, 1, -10881.9, -2029.56, 49.5575, 4.69332, 7200, 7200, 1, 1), -- Phase Hound
+(@CGUID+205, 16178, 532, 1, -10901.3, -2047.69, 49.4642, 3.521, 7200, 7200, 1, 1), -- Phase Hound
+(@CGUID+206, 16178, 532, 1, -10885.8, -2032.12, 49.5575, 1.79159, 7200, 7200, 1, 1), -- Phase Hound
 (@CGUID+207, 16388, 532, 1, -11090.5, -1908.39, 49.9482, 3.61283, 7200, 7200, 0, 0), -- Koren
 (@CGUID+208, 16389, 532, 1, -11097.5, -1902.15, 49.9294, 5.07891, 7200, 7200, 0, 0), -- Spectral Apprentice
 (@CGUID+209, 16389, 532, 1, -11122.9, -1895.78, 49.9736, 4.17134, 7200, 7200, 0, 0), -- Spectral Apprentice
@@ -2484,7 +2481,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+987, 16409, 532, 1, -10984.9, -2032.58, 93.8216, 1.85515, 7200, 7200, 0, 0), -- Phantom Guest
 (@CGUID+988, 16409, 532, 1, -10992.5, -2008.3, 93.8216, 0.325118, 7200, 7200, 0, 0), -- Phantom Guest
 (@CGUID+989, 16409, 532, 1, -10993.6, -2018.05, 93.8216, 5.90005, 7200, 7200, 0, 0), -- Phantom Guest
-(@CGUID+990, 16409, 532, 1, -11013.8, -1937.58, 93.8216, 3.43555, 7200, 7200, 0, 0); -- Phantom Guest
+(@CGUID+990, 16409, 532, 1, -11013.8, -1937.58, 93.8216, 3.43555, 7200, 7200, 0, 0), -- Phantom Guest
+(@CGUID+991, 16173, 532, 1, -10891.901, -2018.128, 49.464252, 1.6718, 7200, 7200, 0, 2); -- Shadowbat
 
 -- (@CGUID+XXX 17260, 532, 1, -11124.99, -1908.318, 110.124, 5.864306, 7200, 7200, 0, 0), -- Nightbane Helper Target - Removed probably due to scripting reasons
 
@@ -3051,7 +3049,29 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+106, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 20', 0, 1, @SGGUID+2, 1), -- 3 spawn points, 1 spawned
 (@SGGUID+107, 'Karazhan - Phantom Guests (1) | The Grand Ballroom  Group 21', 0, 1, @SGGUID+2, 1), -- 2 spawn points, 1 spawned
 -- all other npcs in this room they only need spawn_group worldstate to prevent them respawning (despawning on soft reset) when moroes is dead
-(@SGGUID+108, 'Karazhan - Patrols | The Grand Ballroom Group 22', 0, 0, @SGGUID+2, 0); 
+(@SGGUID+108, 'Karazhan - Patrols | The Grand Ballroom Group 22', 0, 0, @SGGUID+2, 0), 
+-- Servents' Quarter 
+-- all npcs in here are not linked to any boss
+-- Spiders
+(@SGGUID+110, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 1', 0, 0, 0, 1),
+(@SGGUID+111, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 2', 0, 0, 0, 1),
+(@SGGUID+112, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 3', 0, 0, 0, 1),
+(@SGGUID+113, 'Karazhan - Coldmist Widow (1) | Coldmist Stalker (2) | Servent''s Quarter Group 4', 0, 0, 0, 1),
+(@SGGUID+114, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 5', 0, 0, 0, 1),
+(@SGGUID+115, 'Karazhan - Coldmist Widow (2) | Coldmist Stalker (2) | Servent''s Quarter Group 6', 0, 0, 0, 1),
+-- Bats
+(@SGGUID+116, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 7', 0, 0, 0, 0), -- spawn_group_entry 
+(@SGGUID+117, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 8', 0, 0, 0, 0), -- spawn_group_entry patrol
+(@SGGUID+118, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 9', 0, 0, 0, 0), -- spawn_group_entry 
+(@SGGUID+119, 'Karazhan - Greater Shadowbat | Vampirig Shadowbat | Servent''s Quarter Group 10', 0, 0, 0, 0), -- spawn_group_entry 
+-- Dogs
+(@SGGUID+120, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 11', 0, 0, 0, 1), 
+(@SGGUID+121, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 12', 0, 0, 0, 1), 
+(@SGGUID+122, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 13', 0, 0, 0, 1), 
+(@SGGUID+123, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 14', 0, 0, 0, 1), 
+(@SGGUID+124, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 15', 0, 0, 0, 1), 
+(@SGGUID+125, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 16', 0, 0, 0, 1), -- solo pat spawn_group_entry
+(@SGGUID+126, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003', 0, 0, 0, 1); -- side by side patrol
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3112,7 +3132,12 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+69, 16424, 0, 0, 0), (@SGGUID+69, 16425, 0, 0, 0), -- Spectral Sentry, Phantom Guardsman
 (@SGGUID+70, 16424, 0, 0, 0), (@SGGUID+70, 16425, 0, 0, 0), -- Spectral Sentry, Phantom Guardsman
 (@SGGUID+75, 16411, 0, 0, 0), (@SGGUID+75, 16412, 0, 0, 0), -- Spectral Chef, Ghostly Baker
-(@SGGUID+76, 16411, 0, 0, 0), (@SGGUID+76, 16412, 0, 0, 0); -- Spectral Chef, Ghostly Baker
+(@SGGUID+76, 16411, 0, 0, 0), (@SGGUID+76, 16412, 0, 0, 0), -- Spectral Chef, Ghostly Baker
+(@SGGUID+116, 16174, 0, 0, 0), (@SGGUID+116, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
+(@SGGUID+117, 16174, 0, 0, 0), (@SGGUID+117, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
+(@SGGUID+118, 16174, 0, 0, 0), (@SGGUID+118, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
+(@SGGUID+119, 16174, 0, 0, 0), (@SGGUID+119, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
+(@SGGUID+125, 16176, 0, 0, 0), (@SGGUID+125, 16177, 0, 0, 0); -- Shadowbeast, Dreadbeast
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
 
@@ -3546,15 +3571,63 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+108, @CGUID+234, -1),
 (@SGGUID+108, @CGUID+235, -1),
 (@SGGUID+108, @CGUID+237, -1),
-(@SGGUID+108, @CGUID+246, -1);
+(@SGGUID+108, @CGUID+246, -1),
+-- Servent's Quarter
+-- Spiders
+(@SGGUID+110, @CGUID+166, -1), -- Coldmist Widow
+(@SGGUID+110, @CGUID+150, -1), -- Coldmist Stalker (left)
+(@SGGUID+110, @CGUID+151, -1), -- Coldmist Stalker (right)
+(@SGGUID+111, @CGUID+167, -1), -- Coldmist Widow
+(@SGGUID+111, @CGUID+152, -1), -- Coldmist Stalker (right)
+(@SGGUID+111, @CGUID+158, -1), -- Coldmist Stalker (left)
+(@SGGUID+112, @CGUID+162, -1), -- Coldmist Widow (right)
+(@SGGUID+112, @CGUID+168, -1), -- Coldmist Widow (left)
+(@SGGUID+112, @CGUID+148, -1), -- Coldmist Stalker (right)
+(@SGGUID+112, @CGUID+149, -1), -- Coldmist Stalker (left)
+(@SGGUID+113, @CGUID+169, -1), -- Coldmist Widow
+(@SGGUID+113, @CGUID+154, -1), -- Coldmist Stalker (left)
+(@SGGUID+113, @CGUID+155, -1), -- Coldmist Stalker (right)
+(@SGGUID+114, @CGUID+165, -1), -- Coldmist Widow (right)
+(@SGGUID+114, @CGUID+170, -1), -- Coldmist Widow (left)
+(@SGGUID+114, @CGUID+156, -1), -- Coldmist Stalker (right)
+(@SGGUID+114, @CGUID+160, -1), -- Coldmist Stalker (left)
+(@SGGUID+115, @CGUID+163, -1), -- Coldmist Widow (right)
+(@SGGUID+115, @CGUID+164, -1), -- Coldmist Widow (left)
+(@SGGUID+115, @CGUID+159, -1), -- Coldmist Stalker (right)
+(@SGGUID+115, @CGUID+161, -1), -- Coldmist Stalker (left)
+-- Bats
+(@SGGUID+116, @CGUID+185, -1), -- spawn_group_entry
+(@SGGUID+117, @CGUID+189, -1), -- spawn_group_entry patrol
+(@SGGUID+118, @CGUID+188, -1), -- spawn_group_entry
+(@SGGUID+119, @CGUID+186, -1), -- spawn_group_entry
+-- Dogs
+(@SGGUID+120, @CGUID+199, -1), -- Dreadbeast
+(@SGGUID+120, @CGUID+204, -1), -- Phase Hound
+(@SGGUID+120, @CGUID+206, -1), -- Phase Hound
+(@SGGUID+120, @CGUID+194, -1), -- Shadowbeast
+(@SGGUID+121, @CGUID+196, -1), -- Dreadbeast
+(@SGGUID+121, @CGUID+190, -1), -- Shadowbeast
+(@SGGUID+122, @CGUID+197, -1), -- Dreadbeast
+(@SGGUID+122, @CGUID+193, -1), -- Shadowbeast
+(@SGGUID+123, @CGUID+195, -1), -- Dreadbeast
+(@SGGUID+123, @CGUID+203, -1), -- Phase Hound
+(@SGGUID+123, @CGUID+205, -1), -- Phase Hound
+(@SGGUID+123, @CGUID+191, -1), -- Shadowbeast
+(@SGGUID+124, @CGUID+198, -1), -- Dreadbeast
+(@SGGUID+124, @CGUID+192, -1), -- Shadowbeast
+(@SGGUID+125, @CGUID+200, -1), -- spawn_group_entry
+(@SGGUID+126, @CGUID+201, 0), -- Phase Hound
+(@SGGUID+126, @CGUID+202, 1); -- Phase Hound
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
-(@SGGUID+63, 1, 3, 0, @SGGUID+63, 2, 'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002');
+(@SGGUID+63, 1, 3, 0, @SGGUID+63, 2, 'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002'),
+(@SGGUID+126, 2, 3, 0, @SGGUID+126, 2, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+58,'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
-(@SGGUID+63,'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002');
+(@SGGUID+63,'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002'),
+(@SGGUID+126,'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+58,1,-11119.062,-1955.4576,49.882957,100,0,0),
@@ -3600,7 +3673,21 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+63,17,-11106.281,-1949.971,74.377235,100,0,0),
 (@SGGUID+63,18,-11097.072,-1939.4983,74.44396,100,0,0),
 (@SGGUID+63,19,-11091.714,-1928.8903,74.41774,100,0,0),
-(@SGGUID+63,20,-11092.829,-1917.3286,74.39243,100,0,0);
+(@SGGUID+63,20,-11092.829,-1917.3286,74.39243,100,0,0),
+(@SGGUID+126,1,-10896.858,-2073.1428,49.46425,100,0,0),
+(@SGGUID+126,2,-10891.749,-2055.0317,49.46425,100,0,0),
+(@SGGUID+126,3,-10892.731,-2044.5374,49.46425,100,0,0),
+(@SGGUID+126,4,-10891.803,-2030.5295,49.464252,100,0,0),
+(@SGGUID+126,5,-10889.802,-2016.572,49.46425,100,0,0),
+(@SGGUID+126,6,-10901.849,-2006.1481,49.46425,100,0,0),
+(@SGGUID+126,7,-10893.869,-2010.3392,49.46425,100,0,0),
+(@SGGUID+126,8,-10907.202,-2005.8795,49.46425,100,0,0),
+(@SGGUID+126,9,-10893.869,-2010.3392,49.46425,100,0,0),
+(@SGGUID+126,10,-10901.849,-2006.1481,49.46425,100,0,0),
+(@SGGUID+126,11,-10889.802,-2016.572,49.46425,100,0,0),
+(@SGGUID+126,12,-10891.803,-2030.5295,49.464252,100,0,0),
+(@SGGUID+126,13,-10892.731,-2044.5374,49.46425,100,0,0),
+(@SGGUID+126,14,-10891.749,-2055.0317,49.46425,100,0,0);
 
 DELETE FROM worldstate_name WHERE Id IN (2315, 2309);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
