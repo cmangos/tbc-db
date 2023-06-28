@@ -19,4 +19,18 @@ UPDATE broadcast_text SET ChatTypeID=1,SoundEntriesID1=10527 WHERE Id IN(17871);
 UPDATE broadcast_text SET ChatTypeID=1,SoundEntriesID1=10528 WHERE Id IN(17872);
 UPDATE broadcast_text SET ChatTypeID=1,SoundEntriesID1=10529 WHERE Id IN(17873);
 
+UPDATE creature_template SET SpellList = 1873201 WHERE entry=18732;
+UPDATE creature_template SET SpellList = 2065301 WHERE entry=20653;
+DELETE FROM creature_spell_list_entry WHERE Id IN(1873201,2065301);
+INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1873201, 'SL - Grandmaster Vorpil - Normal', 0, 0),
+(2065301, 'SL - Grandmaster Vorpil - Heroic', 0, 0);
+DELETE FROM creature_spell_list WHERE Id IN(1873201,2065301);
+INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+('1873201', '0', '32963', '0', '-1', '0', '0', '100', '1','13000','19000','10000','26000', 'Grandmaster Vorpil - Shadow Bolt Volley'),
+('1873201', '1', '33563', '0', '-1', '0', '0', '100', '5','38000','44000','36000','44000', 'Grandmaster Vorpil - Draw Shadows'),
+('2065301', '0', '32963', '0', '-1', '0', '0', '100', '1','13000','19000','10000','26000', 'Grandmaster Vorpil - Shadow Bolt Volley'),
+('2065301', '1', '33563', '0', '-1', '0', '0', '100', '5','38000','44000','36000','44000', 'Grandmaster Vorpil - Draw Shadows'),
+('2065301', '2', '38791', '0', '-1', '101', '0', '100', '5','12000','16000','17000','23000', 'Grandmaster Vorpil - Banish on Random');
+
 
