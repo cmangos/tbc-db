@@ -1201,9 +1201,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+435, @CGUID+456, 1167), -- Night Mistress -> Concubine
 (@CGUID+452, @CGUID+456, 1167), -- Concubine -> Concubine
 (@CGUID+456, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+424, @CGUID+443, 1167), -- Wanton Hostess -> Night Mistress
-(@CGUID+436, @CGUID+443, 1167), -- Night Mistress -> Night Mistress
-(@CGUID+447, @CGUID+443, 1167), -- Concubine -> Night Mistress
 (@CGUID+443, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
 (@CGUID+425, @CGUID+432, 1167), -- Wanton Hostess -> Wanton Hostess
 (@CGUID+438, @CGUID+432, 1167), -- Night Mistress -> Wanton Hostess
@@ -3071,7 +3068,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+123, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 14', 0, 0, 0, 1), 
 (@SGGUID+124, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 15', 0, 0, 0, 1), 
 (@SGGUID+125, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 16', 0, 0, 0, 1), -- solo pat spawn_group_entry
-(@SGGUID+126, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003', 0, 0, 0, 1); -- side by side patrol
+(@SGGUID+126, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003', 0, 0, 0, 1), -- side by side patrol
+-- The Guest Chambers - Virtual Maid linked Trash
+(@SGGUID+127, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 001', 0, 0, 0, 1),
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3617,7 +3616,15 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+124, @CGUID+192, -1), -- Shadowbeast
 (@SGGUID+125, @CGUID+200, -1), -- spawn_group_entry
 (@SGGUID+126, @CGUID+201, 0), -- Phase Hound
-(@SGGUID+126, @CGUID+202, 1); -- Phase Hound
+(@SGGUID+126, @CGUID+202, 1), -- Phase Hound
+-- The Guest Chambers - Virtual Maid linked Trash
+(@SGGUID+127, @CGUID+401, -1), -- Phantom Guardsman
+(@SGGUID+127, @CGUID+402, -1), -- Phantom Guardsman
+
+(@SGGUID+128, @CGUID+424, -1), -- 
+(@SGGUID+128, @CGUID+436, -1), -- 
+(@SGGUID+128, @CGUID+443, -1), -- 
+(@SGGUID+128, @CGUID+447, -1), -- 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
