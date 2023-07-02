@@ -190,8 +190,9 @@ DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 76353 AND 76357;
 DELETE FROM `pool_pool` WHERE `pool_id` = 6126;
 DELETE FROM `pool_template` WHERE `entry` = 6126;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 72457 AND 72461;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 72457 AND 72461;
+-- 2023-07-02 15:12:23 `pool_gameobject` has a non existing gameobject spawn (GUID: 72456) defined for pool id (4176), skipped.
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 72456 AND 72461;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 72456 AND 72461;
 DELETE FROM `pool_pool` WHERE `pool_id` = 4176;
 DELETE FROM `pool_template` WHERE `entry` = 4176;
 

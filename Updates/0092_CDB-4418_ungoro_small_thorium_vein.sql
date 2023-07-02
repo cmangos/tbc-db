@@ -309,18 +309,18 @@ DELETE FROM `pool_template` WHERE `entry` = 8821;
 
 -- corrupted nodes
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 110813 AND 110816;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 110813 AND 110816;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 110812 AND 110816;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 110812 AND 110816;
 DELETE FROM `pool_pool` WHERE `pool_id` = 8900;
 DELETE FROM `pool_template` WHERE `entry` = 8900;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 110313 AND 110316;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 110313 AND 110316;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 110312 AND 110316;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 110312 AND 110316;
 DELETE FROM `pool_pool` WHERE `pool_id` = 8800;
 DELETE FROM `pool_template` WHERE `entry` = 8800;
 
-DELETE FROM `gameobject` WHERE `guid` BETWEEN 110453 AND 110456;
-DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 110453 AND 110456;
+DELETE FROM `gameobject` WHERE `guid` BETWEEN 110452 AND 110456;
+DELETE FROM `pool_gameobject` WHERE `guid` BETWEEN 110452 AND 110456;
 DELETE FROM `pool_pool` WHERE `pool_id` = 8828;
 DELETE FROM `pool_template` WHERE `entry` = 8828;
 
