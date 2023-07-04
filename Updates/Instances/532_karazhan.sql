@@ -3716,13 +3716,13 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (2315, 'Karazhan - Midnight - Encounter completed'),
 (2309, 'Karazhan - Moroes - Encounter completed'),
 -- From our wiki: The ones without it filled out have instance_dungeon_encounters.Id * 100 + 2-99. 0 and 1 are always reserved by Core for "Alive" & "Killed".
-(65401, 'Karazhan - Maiden of the Virtue - Encounter completed'); 
+(65400, 'Karazhan - Maiden of the Virtue - Encounter completed'); 
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, 2315, 1, 0, 0, 0, 'Midnight - Trash Respawn'),
 (@SGGUID+2, 42, 2309, 1, 0, 0, 0, 'Moroes - Trash Respawn'),
-(@SGGUID+3, 42, 65401, 1, 0, 0, 0, 'Maiden of the Virtue - Trash Respawn');
+(@SGGUID+3, 42, 65400, 1, 0, 0, 0, 'Maiden of the Virtue - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
