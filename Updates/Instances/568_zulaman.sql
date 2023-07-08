@@ -11,6 +11,7 @@ EndDBScriptData */
 SET @CGUID := 5680000; -- creatures
 SET @OGUID := 5680000; -- gameobjects
 SET @PGUID := 49900; -- pools
+SET @CONDITION := 5680000;
 
 -- =========
 -- CREATURES
@@ -1539,7 +1540,7 @@ INSERT INTO `gameobject_addon` (`guid`, `state`) VALUES
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(5680001, 'Malacrass', 0, 0, 12000, 0); -- spawns after custom worldstate after all 4 bosses are dead
+(5680001, 'Malacrass', 0, 0, @CONDITION+1, 0); -- spawns after custom worldstate after all 4 bosses are dead
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -1554,7 +1555,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`) VALUES
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (2377401,2405901,2389701);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (2377401,2405901,2389701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (2377401, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Run on'),
 (2377401, 0, 1, 274, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Emote - OneShotNo'),
@@ -1585,8 +1586,12 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalon
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
-DELETE FROM `conditions` WHERE `condition_entry` IN(12000) AND type=42;
+DELETE FROM `conditions` WHERE `condition_entry` IN (@CONDITION+1);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
-(12000, 42, 10000, 0, 1, 0, 0, 'Malacrass - Spawn In');
+(@CONDITION+1, 42, @CONDITION+1, 1, 1, 0, 0, 'Zul\'Aman - first 4 bosses dead - spawn Malacrass');
+
+DELETE FROM `worldstate_name` WHERE `Id` IN (@CONDITION+1);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
+(@CONDITION+1, 'Zul\'Aman - first 4 bosses dead - spawn Malacrass');
 
 

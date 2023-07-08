@@ -11,6 +11,7 @@ EndDBScriptData */
 SET @CGUID := 5800000; -- creatures
 SET @OGUID := 5800000; -- gameobjects
 SET @PGUID := 50000; -- pools
+SET @CONDITION := 5800000;
 
 -- =========
 -- CREATURES
@@ -1559,7 +1560,7 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(5800001, 'SWP - Muru trash - Priestess Group 1', 0, 0, 12001, 3);
+(5800001, 'SWP - Muru trash - Priestess Group 1', 0, 0, @CONDITION+1, 3);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (5800001, 25509, 1, 2, 0),
@@ -1616,7 +1617,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (12001) AND type=42;
+DELETE FROM `conditions` WHERE `condition_entry` IN (@CONDITION+1);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES
-(12001, 42, 72801, 0, 1, 0, 0, 'M\'uru');
+(@CONDITION+1, 42, 3423, 1, 0, 0, 0, 'Sunwell Plateau - M\'uru');
 
