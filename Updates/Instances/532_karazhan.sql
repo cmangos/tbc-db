@@ -470,26 +470,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+382,24,-10958.211,-1891.5438,78.86089,100,0,0),
 (@CGUID+382,25,-10953.637,-1895.5786,78.85487,100,0,0),
 (@CGUID+382,26,-10951.598,-1902.0369,78.85487,100,0,0),
-(@CGUID+383, 1, -10878.9, -1979.7, 92.1722, 0, 0, 0),
-(@CGUID+383, 2, -10881.7, -1994.58, 92.1724, 0, 0, 0),
-(@CGUID+383, 3, -10886.1, -2007.44, 92.1736, 0, 0, 0),
-(@CGUID+383, 4, -10893, -2026.14, 92.1736, 0, 0, 0),
-(@CGUID+383, 5, -10895.8, -2033.46, 92.1736, 0, 0, 0),
-(@CGUID+383, 6, -10902.4, -2047.18, 92.1736, 0, 0, 0),
-(@CGUID+383, 7, -10907.8, -2056.71, 92.1718, 0, 0, 0),
-(@CGUID+383, 8, -10914.9, -2067.97, 92.1718, 0, 0, 0),
-(@CGUID+383, 9, -10910.8, -2064.34, 92.1718, 0, 0, 0),
-(@CGUID+383, 10, -10904.2, -2053.52, 92.1718, 0, 0, 0),
-(@CGUID+383, 11, -10899.1, -2044.32, 92.172, 0, 0, 0),
-(@CGUID+383, 12, -10893.6, -2032.75, 92.1735, 0, 0, 0),
-(@CGUID+383, 13, -10890.1, -2022.88, 92.1736, 0, 0, 0),
-(@CGUID+383, 14, -10884.4, -2007.2, 92.1736, 0, 0, 0),
-(@CGUID+383, 15, -10880.2, -1995.82, 92.1736, 0, 0, 0),
-(@CGUID+383, 16, -10877.4, -1982.46, 92.172, 0, 0, 0),
-(@CGUID+383, 17, -10875.8, -1969.99, 92.172, 0, 0, 0),
-(@CGUID+383, 18, -10874.7, -1956.86, 92.1659, 0, 0, 0),
-(@CGUID+383, 19, -10876.4, -1962.09, 92.1662, 0, 0, 0),
-(@CGUID+383, 20, -10878.1, -1973.58, 92.1705, 0, 0, 0),
 (@CGUID+400,1,-11093.302,-1917.6539,74.39205,100,0,0),
 (@CGUID+400,2,-11087.893,-1916.3696,74.39003,100,0,0),
 (@CGUID+400,3,-11085.035,-1915.4186,74.391174,100,0,0),
@@ -520,32 +500,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+409,3,-11147.904,-1946.3444,74.39292,100,0,0),
 (@CGUID+409,4,-11140.592,-1946.3619,74.3886,0.19198,20000,0),
 (@CGUID+409,5,-11153.534,-1944.0614,74.39047,100,0,0),
-(@CGUID+450, 1, -10864, -2024.6, 92.1733, 0, 0, 0),
-(@CGUID+450, 2, -10850.8, -2028.87, 92.1733, 0, 0, 0),
-(@CGUID+450, 3, -10844.6, -2031.06, 90.9263, 0, 0, 0),
-(@CGUID+450, 4, -10850.9, -2027.18, 92.1753, 0, 0, 0),
-(@CGUID+450, 5, -10863.9, -2023.09, 92.1753, 0, 0, 0),
-(@CGUID+450, 6, -10878.5, -2017.45, 92.1753, 0, 0, 0),
-(@CGUID+450, 7, -10887.3, -2021.99, 92.1753, 0, 0, 0),
-(@CGUID+450, 8, -10891.7, -2029.94, 92.1753, 0, 0, 0),
-(@CGUID+450, 9, -10895.5, -2038.29, 92.1753, 0, 0, 0),
-(@CGUID+450, 10, -10902, -2051.27, 92.1723, 0, 0, 0),
-(@CGUID+450, 11, -10908.9, -2062.9, 92.1723, 0, 0, 0),
-(@CGUID+450, 12, -10899.7, -2069.48, 92.1723, 0, 0, 0),
-(@CGUID+450, 13, -10888.4, -2077.46, 92.1646, 0, 0, 0),
-(@CGUID+450, 14, -10876.3, -2086.04, 90.4968, 0, 0, 0),
-(@CGUID+450, 15, -10861, -2095.83, 90.4968, 0, 0, 0),
-(@CGUID+450, 16, -10864.8, -2090.72, 90.4968, 0, 0, 0),
-(@CGUID+450, 17, -10875.2, -2084.16, 90.4968, 0, 0, 0),
-(@CGUID+450, 18, -10884, -2078.08, 92.1638, 0, 0, 0),
-(@CGUID+450, 19, -10896.6, -2069.5, 92.1704, 0, 0, 0),
-(@CGUID+450, 20, -10905.7, -2063.45, 92.1704, 0, 0, 0),
-(@CGUID+450, 21, -10904.8, -2060.19, 92.1704, 0, 0, 0),
-(@CGUID+450, 22, -10899, -2051.44, 92.1707, 0, 0, 0),
-(@CGUID+450, 23, -10892.4, -2037.66, 92.1726, 0, 0, 0),
-(@CGUID+450, 24, -10888.5, -2028.83, 92.1733, 0, 0, 0),
-(@CGUID+450, 25, -10884, -2017.45, 92.1733, 0, 0, 0),
-(@CGUID+450, 26, -10878, -2019.43, 92.1733, 0, 0, 0),
 (@CGUID+460, 1, -10935.8, -1871.22, 110.6, 4.81711, 10000, 1646801),
 (@CGUID+460, 2, -10935.8, -1871.22, 110.6, 4.81711, 2000, 1646801),
 (@CGUID+461, 1, -10875, -1878.74, 110.601, 4.01426, 17000, 0),
@@ -1171,52 +1125,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (22524, 0, 0, 1, 0, 0, NULL); -- Karazhan - Chess, Victory Controller
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+402, @CGUID+401, 1167), -- Phantom Guardsman -> Phantom Guardsman
-(@CGUID+401, @CGUID+420, 1024), -- Phantom Guardsman -> Maiden of Virtue
-(@CGUID+384, @CGUID+383, 1679), -- Spectral Sentry -> Spectral Sentry
-(@CGUID+383, @CGUID+420, 1024), -- Spectral Sentry -> Maiden of Virtue
-(@CGUID+428, @CGUID+445, 1167), -- Wanton Hostess -> Concubine
-(@CGUID+433, @CGUID+445, 1167), -- Night Mistress -> Concubine
-(@CGUID+449, @CGUID+445, 1167), -- Concubine -> Concubine
-(@CGUID+445, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+444, @CGUID+450, 1679), -- Night Mistress -> Concubine
-(@CGUID+450, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+406, @CGUID+403, 1167), -- Phantom Guardsman -> Phantom Guardsman
-(@CGUID+403, @CGUID+420, 1024), -- Phantom Guardsman -> Maiden of Virtue
-(@CGUID+423, @CGUID+442, 1167), -- Wanton Hostess -> Night Mistress
-(@CGUID+429, @CGUID+442, 1167), -- Wanton Hostess -> Night Mistress
-(@CGUID+458, @CGUID+442, 1167), -- Concubine -> Night Mistress
-(@CGUID+442, @CGUID+420, 1024), -- Night Mistress -> Maiden of Virtue
-(@CGUID+431, @CGUID+441, 1167), -- Wanton Hostess -> Night Mistress
-(@CGUID+437, @CGUID+441, 1167), -- Night Mistress -> Night Mistress
-(@CGUID+451, @CGUID+441, 1167), -- Concubine -> Night Mistress
-(@CGUID+441, @CGUID+420, 1024), -- Night Mistress -> Maiden of Virtue
-(@CGUID+405, @CGUID+404, 1167), -- Phantom Guardsman -> Phantom Guardsman
-(@CGUID+404, @CGUID+420, 1024), -- Phantom Guardsman -> Maiden of Virtue
-(@CGUID+421, @CGUID+457, 1167), -- Wanton Hostess -> Concubine
-(@CGUID+434, @CGUID+457, 1167), -- Night Mistress -> Concubine
-(@CGUID+446, @CGUID+457, 1167), -- Concubine -> Concubine
-(@CGUID+457, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+422, @CGUID+456, 1167), -- Wanton Hostess -> Concubine
-(@CGUID+435, @CGUID+456, 1167), -- Night Mistress -> Concubine
-(@CGUID+452, @CGUID+456, 1167), -- Concubine -> Concubine
-(@CGUID+456, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+424, @CGUID+443, 1167), -- Wanton Hostess -> Night Mistress
-(@CGUID+436, @CGUID+443, 1167), -- Night Mistress -> Night Mistress
-(@CGUID+447, @CGUID+443, 1167), -- Concubine -> Night Mistress
-(@CGUID+443, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+425, @CGUID+432, 1167), -- Wanton Hostess -> Wanton Hostess
-(@CGUID+438, @CGUID+432, 1167), -- Night Mistress -> Wanton Hostess
-(@CGUID+453, @CGUID+432, 1167), -- Concubine -> Wanton Hostess
-(@CGUID+432, @CGUID+420, 1024), -- Wanton Hostess -> Maiden of Virtue
-(@CGUID+427, @CGUID+459, 1167), -- Wanton Hostess -> Concubine
-(@CGUID+440, @CGUID+459, 1167), -- Night Mistress -> Concubine
-(@CGUID+448, @CGUID+459, 1167), -- Concubine -> Concubine
-(@CGUID+459, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
-(@CGUID+439, @CGUID+426, 1167), -- Night Mistress -> Wanton Hostess
-(@CGUID+454, @CGUID+426, 1167), -- Concubine -> Wanton Hostess
-(@CGUID+455, @CGUID+426, 1167), -- Concubine -> Wanton Hostess
-(@CGUID+426, @CGUID+420, 1024), -- Concubine -> Maiden of Virtue
 -- Continue Grouped Linking Rework Opera
 -- (@CGUID+522, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
 (@CGUID+526, @CGUID+523, 1167), -- Skeletal Usher -> Skeletal Usher
@@ -1879,8 +1787,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+380, 16415, 532, 1, -10987.401, -1875.8524, 81.81189, 2.3038, 7200, 7200, 0, 2), -- Skeletal Waiter
 (@CGUID+381, 16415, 532, 1, -10961.2, -1928.08, 78.9114, 1.92958, 7200, 7200, 0, 2), -- Skeletal Waiter
 (@CGUID+382, 16415, 532, 1, -10951.9, -1903.08, 78.9352, 4.23474, 7200, 7200, 0, 2), -- Skeletal Waiter
-(@CGUID+383, 16424, 532, 1, -10877.6, -1973.37, 92.1722, 4.5819, 7200, 7200, 0, 2), -- Spectral Sentry
-(@CGUID+384, 16424, 532, 1, -10875.7, -1973.65, 92.1722, 4.54656, 7200, 7200, 0, 0), -- Spectral Sentry
+(@CGUID+383, 16424, 532, 1, -10878.51, -1957.126, 92.2383, 4.7503, 7200, 7200, 0, 0), -- Spectral Sentry
+(@CGUID+384, 16424, 532, 1, -10876.8, -1957.27, 92.1573, 4.84702, 7200, 7200, 0, 0), -- Spectral Sentry
 (@CGUID+385, 16424, 532, 1, -11163.7, -1919.94, 74.4993, 1.27409, 7200, 7200, 0, 0), -- Spectral Sentry
 (@CGUID+386, 16424, 532, 1, -11153.9, -1921.49, 74.5096, 1.58825, 7200, 7200, 0, 0), -- Spectral Sentry
 (@CGUID+387, 0, 532, 1, -11164.6, -1943.54, 74.4773, 0.139626, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -1917,45 +1825,45 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+418, 16425, 532, 1, -11104.5, -1893.58, 74.4882, 2.30383, 7200, 7200, 0, 0), -- Phantom Guardsman
 (@CGUID+419, 16426, 532, 1, -11091.207, -1895.9098, 74.385574, 3.7873, 7200, 7200, 0, 2), -- Bennett
 (@CGUID+420, 16457, 532, 1, -10945.9, -2103.79, 92.7942, 0.872665, 604800, 604800, 0, 0), -- Maiden of Virtue
-(@CGUID+421, 16459, 532, 1, -10890.8, -2082.76, 92.1625, 2.54537, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+422, 16459, 532, 1, -10869.3, -2077.71, 90.4962, 4.66594, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+423, 16459, 532, 1, -10851, -2020.34, 92.2582, 3.33358, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+424, 16459, 532, 1, -10854.6, -1983.88, 92.1599, 5.6092, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+425, 16459, 532, 1, -10828.7, -2005.14, 92.1599, 3.92217, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+426, 16459, 532, 1, -10838.1, -1955.68, 93.442, 4.88692, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+427, 16459, 532, 1, -10851.7, -2099.72, 92.1622, 4.76883, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+428, 16459, 532, 1, -10897.5, -2017.9, 92.2582, 3.29867, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+429, 16459, 532, 1, -10860.3, -2033.83, 92.2582, 1.06465, 7200, 7200, 0, 0), -- Wanton Hostess
+(@CGUID+421, 0, 532, 1, -10890.8, -2082.76, 92.1625, 2.54537, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+422, 0, 532, 1, -10869.3, -2077.71, 90.4962, 4.66594, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+423, 0, 532, 1, -10851, -2020.34, 92.2582, 3.33358, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+424, 0, 532, 1, -10854.6, -1983.88, 92.1599, 5.6092, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+425, 0, 532, 1, -10828.7, -2005.14, 92.1599, 3.92217, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+426, 0, 532, 1, -10838.1, -1955.68, 93.442, 4.88692, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+427, 0, 532, 1, -10851.7, -2099.72, 92.1622, 4.76883, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+428, 0, 532, 1, -10897.5, -2017.9, 92.2582, 3.29867, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+429, 0, 532, 1, -10860.3, -2033.83, 92.2582, 1.06465, 7200, 7200, 0, 0), -- spawn_group_entry
 -- re-use @CGUID+430
-(@CGUID+431, 16459, 532, 1, -10836.8, -2038.3, 90.9262, 2.27205, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+432, 16459, 532, 1, -10832.2, -2006.63, 92.243, 1.81514, 7200, 7200, 0, 0), -- Wanton Hostess
-(@CGUID+433, 16460, 532, 1, -10899.6, -2018.59, 92.2582, 0.890118, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+434, 16460, 532, 1, -10884, -2070.79, 92.1635, 2.56657, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+435, 16460, 532, 1, -10865.8, -2083.78, 90.5791, 2.93215, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+436, 16460, 532, 1, -10849, -1986.93, 92.1599, 1.87856, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+437, 16460, 532, 1, -10833.8, -2038.31, 90.9252, 2.92315, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+438, 16460, 532, 1, -10826.4, -1999.76, 92.1599, 4.91019, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+439, 16460, 532, 1, -10837.5, -1958.96, 93.442, 2.14675, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+440, 16460, 532, 1, -10851.8, -2107.61, 92.1622, 1.92647, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+441, 16460, 532, 1, -10835, -2028.11, 90.9254, 3.5923, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+442, 16460, 532, 1, -10857.8, -2032.5, 92.1737, 3.04802, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+443, 16460, 532, 1, -10847.5, -1983.31, 92.1599, 3.80435, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+444, 16460, 532, 1, -10877.1, -2017.91, 92.1733, 5.96891, 7200, 7200, 0, 0), -- Night Mistress
-(@CGUID+445, 16461, 532, 1, -10896.8, -2012.68, 92.2582, 2.19912, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+446, 16461, 532, 1, -10886.2, -2068.82, 92.2457, 4.46804, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+447, 16461, 532, 1, -10852.9, -1986.96, 92.1599, 1.62959, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+448, 16461, 532, 1, -10854.2, -2101.42, 92.1622, 0.10906, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+449, 16461, 532, 1, -10898.5, -2011.45, 92.2582, 5.98648, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+450, 16461, 532, 1, -10877.6, -2019.31, 92.1733, 5.95399, 7200, 7200, 0, 2), -- Concubine
-(@CGUID+451, 16461, 532, 1, -10833.2, -2030.67, 90.9253, 2.89487, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+452, 16461, 532, 1, -10868.1, -2081.73, 90.5791, 2.18166, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+453, 16461, 532, 1, -10825.5, -2002.59, 92.1599, 2.26733, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+454, 16461, 532, 1, -10829.7, -1960.09, 93.442, 1.09956, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+455, 16461, 532, 1, -10827.6, -1958.63, 93.442, 3.33358, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+456, 16461, 532, 1, -10871, -2080.72, 90.4962, 0.0705771, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+457, 16461, 532, 1, -10893.3, -2081.22, 92.1628, 0.357248, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+458, 16461, 532, 1, -10855.5, -2020.53, 92.1737, 6.13856, 7200, 7200, 0, 0), -- Concubine
-(@CGUID+459, 16461, 532, 1, -10845, -2099.72, 92.1622, 2.67888, 7200, 7200, 0, 0), -- Concubine
+(@CGUID+431, 0, 532, 1, -10836.8, -2038.3, 90.9262, 2.27205, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+432, 0, 532, 1, -10832.2, -2006.63, 92.243, 1.81514, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+433, 0, 532, 1, -10899.6, -2018.59, 92.2582, 0.890118, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+434, 0, 532, 1, -10884, -2070.79, 92.1635, 2.56657, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+435, 0, 532, 1, -10865.8, -2083.78, 90.5791, 2.93215, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+436, 0, 532, 1, -10849, -1986.93, 92.1599, 1.87856, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+437, 0, 532, 1, -10833.8, -2038.31, 90.9252, 2.92315, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+438, 0, 532, 1, -10826.4, -1999.76, 92.1599, 4.91019, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+439, 0, 532, 1, -10837.5, -1958.96, 93.442, 2.14675, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+440, 0, 532, 1, -10851.8, -2107.61, 92.1622, 1.92647, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+441, 0, 532, 1, -10835, -2028.11, 90.9254, 3.5923, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+442, 0, 532, 1, -10857.8, -2032.5, 92.1737, 3.04802, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+443, 0, 532, 1, -10847.5, -1983.31, 92.1599, 3.80435, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+444, 0, 532, 1, -10859.622, -2094.6953, 90.579, 2.6005, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+445, 0, 532, 1, -10896.8, -2012.68, 92.2582, 2.19912, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+446, 0, 532, 1, -10886.2, -2068.82, 92.2457, 4.46804, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+447, 0, 532, 1, -10852.9, -1986.96, 92.1599, 1.62959, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+448, 0, 532, 1, -10854.2, -2101.42, 92.1622, 0.10906, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+449, 0, 532, 1, -10898.5, -2011.45, 92.2582, 5.98648, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+450, 0, 532, 1, -10860.5, -2095.97, 90.5790, 2.4609, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+451, 0, 532, 1, -10833.2, -2030.67, 90.9253, 2.89487, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+452, 0, 532, 1, -10868.1, -2081.73, 90.5791, 2.18166, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+453, 0, 532, 1, -10825.5, -2002.59, 92.1599, 2.26733, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+454, 0, 532, 1, -10829.7, -1960.09, 93.442, 1.09956, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+455, 0, 532, 1, -10827.6, -1958.63, 93.442, 3.33358, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+456, 0, 532, 1, -10871, -2080.72, 90.4962, 0.0705771, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+457, 0, 532, 1, -10893.3, -2081.22, 92.1628, 0.357248, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+458, 0, 532, 1, -10855.5, -2020.53, 92.1737, 6.13856, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+459, 0, 532, 1, -10845, -2099.72, 92.1622, 2.67888, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+460, 16468, 532, 1, -10935.8, -1871.22, 110.6, 4.81711, 7200, 7200, 0, 2), -- Spectral Patron
 (@CGUID+461, 16468, 532, 1, -10875, -1878.74, 110.601, 4.01426, 7200, 7200, 0, 2), -- Spectral Patron
 (@CGUID+462, 16468, 532, 1, -10883.4, -1869.55, 110.599, 4.46804, 7200, 7200, 0, 2), -- Spectral Patron
@@ -2990,14 +2898,14 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+55, 'Karazhan - Spectral Charger | Spectral Stallion | Livery Stable Group 5', 0, 0, @SGGUID+1, 1),
 (@SGGUID+56, 'Karazhan - Spectral Charger (2) | Spectral Stable Hand (2) | Livery Stable Group 6', 0, 0, @SGGUID+1, 1),
 (@SGGUID+57, 'Karazhan - Spectral Charger | Spectral Stallion | Spectral Stable Hand (3) | Livery Stable Group 7', 0, 0, @SGGUID+1, 1),
-(@SGGUID+58, 'Karazhan - Spectral Stable Hand | Spectral Stallion (2) | Patrol 001', 0, 0, @SGGUID+1, 1), -- Patrol
+(@SGGUID+58, 'Karazhan - Spectral Stable Hand | Spectral Stallion (2) | Livery Stable Patrol 001', 0, 0, @SGGUID+1, 1), -- Patrol
 (@SGGUID+59, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Livery Stable Group 8', 0, 0, @SGGUID+1, 1), 
 (@SGGUID+60, 'Karazhan - Spectral Servent (2) | Spectral Apprentice (3) | Livery Stable Group 9', 0, 0, @SGGUID+1, 1),
 (@SGGUID+61, 'Karazhan - Spectral Stable Hand (2) | Patrols', 0, 0, @SGGUID+1, 0), -- 2 solo patroling mobs, dont need to put them in 2 seperate spawn_groups
  -- Moroes linked
  -- Upper Livery Stable
 (@SGGUID+62, 'Karazhan - Spectral Sentry (2) | Upper Livery Stable Group 1', 0, 2, @SGGUID+2, 1),
-(@SGGUID+63, 'Karazhan - Spectral Sentry | Phantom Guardsman | Patrol 002', 0, 2, @SGGUID+2, 1),
+(@SGGUID+63, 'Karazhan - Spectral Sentry | Phantom Guardsman | Upper Livery Stable Patrol 001', 0, 2, @SGGUID+2, 1),
 (@SGGUID+64, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 2', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
 (@SGGUID+65, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 3', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
 (@SGGUID+66, 'Karazhan - Spectral Sentry (2) | Phantom Guardsman (2) | Upper Livery Stable Group 4', 0, 4, @SGGUID+2, 3), -- fighting each other, flag respawn together
@@ -3071,7 +2979,22 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+123, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Phase Hound (2) | Servent''s Quarter Group 14', 0, 0, 0, 1), 
 (@SGGUID+124, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 15', 0, 0, 0, 1), 
 (@SGGUID+125, 'Karazhan - Dreadbeast (1) | Shadowbeast(1) | Servent''s Quarter Group 16', 0, 0, 0, 1), -- solo pat spawn_group_entry
-(@SGGUID+126, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003', 0, 0, 0, 1); -- side by side patrol
+(@SGGUID+126, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 001', 0, 0, 0, 1), -- side by side patrol
+-- The Guest Chambers - Virtual Maid linked Trash
+(@SGGUID+127, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 001', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
+(@SGGUID+128, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 002', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
+(@SGGUID+129, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 003', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
+(@SGGUID+130, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 004', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
+(@SGGUID+131, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 005', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
+(@SGGUID+132, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 006', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
+(@SGGUID+133, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 007', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
+(@SGGUID+134, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 008', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
+(@SGGUID+135, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Group 009', 0, 4, @SGGUID+3, 1), -- spawn_group_entry
+(@SGGUID+136, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 010', 0, 2, @SGGUID+3, 1),
+(@SGGUID+137, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 011', 0, 2, @SGGUID+3, 1),
+(@SGGUID+138, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 012', 0, 2, @SGGUID+3, 1),
+(@SGGUID+139, 'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001', 0, 2, @SGGUID+3, 1),
+(@SGGUID+140, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Patrol 002', 0, 2, @SGGUID+3, 1);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3137,7 +3060,17 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+117, 16174, 0, 0, 0), (@SGGUID+117, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
 (@SGGUID+118, 16174, 0, 0, 0), (@SGGUID+118, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
 (@SGGUID+119, 16174, 0, 0, 0), (@SGGUID+119, 16175, 0, 0, 0), -- Greater Shadowbat, Vampiric Shadowbat
-(@SGGUID+125, 16176, 0, 0, 0), (@SGGUID+125, 16177, 0, 0, 0); -- Shadowbeast, Dreadbeast
+(@SGGUID+125, 16176, 0, 0, 0), (@SGGUID+125, 16177, 0, 0, 0), -- Shadowbeast, Dreadbeast
+(@SGGUID+127, 16459, 0, 2, 0), (@SGGUID+127, 16460, 0, 2, 0), (@SGGUID+127, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+128, 16459, 0, 2, 0), (@SGGUID+128, 16460, 0, 2, 0), (@SGGUID+128, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+129, 16459, 0, 2, 0), (@SGGUID+129, 16460, 0, 2, 0), (@SGGUID+129, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+130, 16459, 0, 2, 0), (@SGGUID+130, 16460, 0, 2, 0), (@SGGUID+130, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+131, 16459, 0, 2, 0), (@SGGUID+131, 16460, 0, 2, 0), (@SGGUID+131, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+132, 16459, 0, 2, 0), (@SGGUID+132, 16460, 0, 2, 0), (@SGGUID+132, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+133, 16459, 0, 2, 0), (@SGGUID+133, 16460, 0, 2, 0), (@SGGUID+133, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+134, 16459, 0, 2, 0), (@SGGUID+134, 16460, 0, 2, 0), (@SGGUID+134, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+135, 16459, 0, 2, 0), (@SGGUID+135, 16460, 0, 2, 0), (@SGGUID+135, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+140, 16459, 0, 0, 0), (@SGGUID+140, 16460, 0, 0, 0), (@SGGUID+140, 16461, 0, 0, 0);-- Wanton Hostess, Night Mistress, Zaelous Paramour
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
 
@@ -3617,17 +3550,68 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+124, @CGUID+192, -1), -- Shadowbeast
 (@SGGUID+125, @CGUID+200, -1), -- spawn_group_entry
 (@SGGUID+126, @CGUID+201, 0), -- Phase Hound
-(@SGGUID+126, @CGUID+202, 1); -- Phase Hound
+(@SGGUID+126, @CGUID+202, 1), -- Phase Hound
+-- The Guest Chambers - Virtual Maid linked Trash
+(@SGGUID+127, @CGUID+424, -1), -- spawn_group_entry
+(@SGGUID+127, @CGUID+436, -1), -- spawn_group_entry
+(@SGGUID+127, @CGUID+443, -1), -- spawn_group_entry
+(@SGGUID+127, @CGUID+447, -1), -- spawn_group_entry
+(@SGGUID+128, @CGUID+425, -1), -- spawn_group_entry
+(@SGGUID+128, @CGUID+432, -1), -- spawn_group_entry
+(@SGGUID+128, @CGUID+438, -1), -- spawn_group_entry
+(@SGGUID+128, @CGUID+453, -1), -- spawn_group_entry
+(@SGGUID+129, @CGUID+426, -1), -- spawn_group_entry
+(@SGGUID+129, @CGUID+439, -1), -- spawn_group_entry
+(@SGGUID+129, @CGUID+454, -1), -- spawn_group_entry
+(@SGGUID+129, @CGUID+455, -1), -- spawn_group_entry
+(@SGGUID+130, @CGUID+428, -1), -- spawn_group_entry
+(@SGGUID+130, @CGUID+433, -1), -- spawn_group_entry
+(@SGGUID+130, @CGUID+445, -1), -- spawn_group_entry
+(@SGGUID+130, @CGUID+449, -1), -- spawn_group_entry
+(@SGGUID+131, @CGUID+423, -1), -- spawn_group_entry
+(@SGGUID+131, @CGUID+429, -1), -- spawn_group_entry
+(@SGGUID+131, @CGUID+442, -1), -- spawn_group_entry
+(@SGGUID+131, @CGUID+458, -1), -- spawn_group_entry
+(@SGGUID+132, @CGUID+431, -1), -- spawn_group_entry
+(@SGGUID+132, @CGUID+437, -1), -- spawn_group_entry
+(@SGGUID+132, @CGUID+441, -1), -- spawn_group_entry
+(@SGGUID+132, @CGUID+451, -1), -- spawn_group_entry
+(@SGGUID+133, @CGUID+421, -1), -- spawn_group_entry
+(@SGGUID+133, @CGUID+434, -1), -- spawn_group_entry
+(@SGGUID+133, @CGUID+446, -1), -- spawn_group_entry
+(@SGGUID+133, @CGUID+457, -1), -- spawn_group_entry
+(@SGGUID+134, @CGUID+422, -1), -- spawn_group_entry
+(@SGGUID+134, @CGUID+435, -1), -- spawn_group_entry
+(@SGGUID+134, @CGUID+452, -1), -- spawn_group_entry
+(@SGGUID+134, @CGUID+456, -1), -- spawn_group_entry
+(@SGGUID+135, @CGUID+427, -1), -- spawn_group_entry
+(@SGGUID+135, @CGUID+440, -1), -- spawn_group_entry
+(@SGGUID+135, @CGUID+448, -1), -- spawn_group_entry
+(@SGGUID+135, @CGUID+459, -1), -- spawn_group_entry
+(@SGGUID+136, @CGUID+401, -1), -- Phantom Guardsman
+(@SGGUID+136, @CGUID+402, -1), -- Phantom Guardsman
+(@SGGUID+137, @CGUID+403, -1), -- Phantom Guardsman
+(@SGGUID+137, @CGUID+406, -1), -- Phantom Guardsman
+(@SGGUID+138, @CGUID+404, -1), -- Phantom Guardsman
+(@SGGUID+138, @CGUID+405, -1), -- Phantom Guardsman
+(@SGGUID+139, @CGUID+383, 0), -- Spectral Sentry 
+(@SGGUID+139, @CGUID+384, 1), -- Spectral Sentry 
+(@SGGUID+140, @CGUID+444, 0), -- Sspawn_group 
+(@SGGUID+140, @CGUID+450, 1); -- Spectral Sentry 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
-(@SGGUID+63, 1, 3, 0, @SGGUID+63, 2, 'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002'),
-(@SGGUID+126, 2, 3, 0, @SGGUID+126, 2, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003');
+(@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Patrol 001'),
+(@SGGUID+63, 1, 3, 0, @SGGUID+63, 2, 'Karazhan - Spectral Sentry | Phantom Guest | Upper Livery Stable Patrol 001'),
+(@SGGUID+126, 2, 3, 0, @SGGUID+126, 2, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 001'),
+(@SGGUID+139, 2, 2, 0, @SGGUID+139, 4, 'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001'),
+(@SGGUID+140, 2, 2, 0, @SGGUID+140, 4, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Patrol 002');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
-(@SGGUID+58,'Karazhan - Spectral Stable Hand | Spectral Stallion | Patrol 001'),
-(@SGGUID+63,'Karazhan - Spectral Sentry | Phantom Guest | Patrol 002'),
-(@SGGUID+126,'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 003');
+(@SGGUID+58,'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Patrol 001'),
+(@SGGUID+63,'Karazhan - Spectral Sentry | Phantom Guest | Upper Livery Stable Patrol 001'),
+(@SGGUID+126,'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 001'),
+(@SGGUID+139,'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001'),
+(@SGGUID+140,'Karazhan - Phantom Guardsman (2) | The Guest Chambers Patrol 002');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+58,1,-11119.062,-1955.4576,49.882957,100,0,0),
@@ -3687,17 +3671,58 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+126,11,-10889.802,-2016.572,49.46425,100,0,0),
 (@SGGUID+126,12,-10891.803,-2030.5295,49.464252,100,0,0),
 (@SGGUID+126,13,-10892.731,-2044.5374,49.46425,100,0,0),
-(@SGGUID+126,14,-10891.749,-2055.0317,49.46425,100,0,0);
+(@SGGUID+126,14,-10891.749,-2055.0317,49.46425,100,0,0),
+(@SGGUID+139,1,-10877.739,-1956.3281,92.15718,100,0,0),
+(@SGGUID+139,2,-10878.219,-1964.8033,92.16148,100,0,0),
+(@SGGUID+139,3,-10879.102,-1973.6588,92.16739,100,0,0),
+(@SGGUID+139,4,-10880.686,-1985.3151,92.167046,100,0,0),
+(@SGGUID+139,5,-10882.779,-1998.8596,92.16794,100,0,0),
+(@SGGUID+139,6,-10885.268,-2007.1274,92.16739,100,0,0),
+(@SGGUID+139,7,-10890.912,-2023.438,92.16737,100,0,0),
+(@SGGUID+139,8,-10893.519,-2030.2101,92.168846,100,0,0),
+(@SGGUID+139,9,-10899.741,-2042.3162,92.1674,100,0,0),
+(@SGGUID+139,10,-10909.461,-2058.395,92.17176,100,0,0),
+(@SGGUID+139,11,-10916.278,-2067.9895,92.17409,100,0,0),
+(@SGGUID+140,1,-10860.43,-2094.978,90.49551,100,0,0),
+(@SGGUID+140,2,-10864.365,-2092.2344,90.49551,100,0,0),
+(@SGGUID+140,3,-10873.738,-2086.1418,90.49551,100,0,0),
+(@SGGUID+140,4,-10883.963,-2079.1252,91.745514,100,0,0),
+(@SGGUID+140,5,-10891.532,-2074.117,92.161644,100,0,0),
+(@SGGUID+140,6,-10899.177,-2068.7905,92.16737,100,0,0),
+(@SGGUID+140,7,-10907.334,-2062.6033,92.16559,100,0,0),
+(@SGGUID+140,8,-10897.506,-2044.3268,92.16731,100,0,0),
+(@SGGUID+140,9,-10889.959,-2030.4911,92.16737,100,0,0),
+(@SGGUID+140,10,-10884.56,-2019.3948,92.16737,100,0,0),
+(@SGGUID+140,11,-10877.586,-2019.096,92.16738,100,0,0),
+(@SGGUID+140,12,-10867.301,-2022.7109,92.16739,100,0,0),
+(@SGGUID+140,13,-10851.211,-2027.8624,92.16738,100,0,0),
+(@SGGUID+140,14,-10846.215,-2029.5452,90.91739,100,0,0),
+(@SGGUID+140,15,-10850.995,-2027.0859,92.16738,100,0,0),
+(@SGGUID+140,16,-10867.161,-2022.1276,92.16739,100,0,0),
+(@SGGUID+140,17,-10877.362,-2018.385,92.16738,100,0,0),
+(@SGGUID+140,18,-10881.871,-2014.0289,92.16738,100,0,0),
+(@SGGUID+140,19,-10881.334,-2006.7539,92.16739,100,0,0),
+(@SGGUID+140,20,-10879.119,-1996.7216,92.16696,100,0,0),
+(@SGGUID+140,21,-10876.982,-1989.0446,92.166985,100,0,0),
+(@SGGUID+140,22,-10868.217,-1990.3922,92.16738,100,0,0),
+(@SGGUID+140,23,-10857.63,-1992.6155,92.153366,100,0,0),
+(@SGGUID+140,24,-10846.696,-1995.0251,92.15176,100,0,0),
+(@SGGUID+140,25,-10840.148,-1995.1738,92.151764,100,0,0),
+(@SGGUID+140,26,-10837.757,-1984.2789,92.151764,100,0,0),
+(@SGGUID+140,27,-10835.076,-1968.5009,93.35488,100,0,0);
 
-DELETE FROM worldstate_name WHERE Id IN (2315, 2309);
+DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 65401);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (2315, 'Karazhan - Midnight - Encounter completed'),
-(2309, 'Karazhan - Moroes - Encounter completed');
+(2309, 'Karazhan - Moroes - Encounter completed'),
+-- From our wiki: The ones without it filled out have instance_dungeon_encounters.Id * 100 + 2-99. 0 and 1 are always reserved by Core for "Alive" & "Killed".
+(65400, 'Karazhan - Maiden of the Virtue - Encounter completed'); 
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, 2315, 1, 0, 0, 0, 'Midnight - Trash Respawn'),
-(@SGGUID+2, 42, 2309, 1, 0, 0, 0, 'Moroes - Trash Respawn');
+(@SGGUID+2, 42, 2309, 1, 0, 0, 0, 'Moroes - Trash Respawn'),
+(@SGGUID+3, 42, 65400, 1, 0, 0, 0, 'Maiden of the Virtue - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
