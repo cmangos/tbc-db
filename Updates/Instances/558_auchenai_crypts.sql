@@ -330,15 +330,20 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+37, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
 (@CGUID+38, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
 (@CGUID+40, 0, 0, 1, 375, 0, NULL), -- Auchenai Monk
-(@CGUID+41, 0, 8, 0, 68, 0, NULL); -- creature_spawn_entry
+(@CGUID+41, 0, 8, 0, 68, 0, NULL), -- creature_spawn_entry
+(@CGUID+60, 0, 3, 1, 0, 0, '32648'), -- Ancient Draenei Spirit
+(@CGUID+61, 0, 3, 1, 0, 0, '32648'), -- Ancient Draenei Spirit
+(@CGUID+68, 0, 3, 1, 0, 0, '32648'), -- Ancient Draenei Spirit
+(@CGUID+69, 0, 3, 1, 0, 0, '32648'); -- Ancient Draenei Spirit
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (18506, 0, 0, 1, 0, 0, '35841 35850'), -- Raging Soul
 (18521, 0, 0, 1, 0, 0, '10095'), -- Raging Skeleton
 (18524, 0, 0, 1, 0, 0, '32885'), -- Angered Skeleton
 (18559, 0, 0, 0, 0, 0, '31748'), -- Phasing Stalker
-(18700, 0, 0, 0, 0, 0, '19818'); -- Reanimated Bones
-
+(18700, 0, 0, 0, 0, 0, '19818'), -- Reanimated Bones
+(19412, 0, 0, 1, 0, 0, '32648'), -- D'ore
+(19416, 0, 0, 1, 0, 0, '32648'); -- Ancient Draenei Spirit
 
 -- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
@@ -410,15 +415,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+57, 0, 558, 3, -144.012, -216.429, 26.6743, 4.04916, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+58, 0, 558, 3, 234.88, -118.766, 26.6746, 0.628319, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+59, 0, 558, 3, 254.086, 16.2811, 1.2111, 3.9968, 7200, 7200, 0, 2), -- spawn_group_entry
--- (@CGUID+60, 19416, 558, 3, 230.425, 27.504, 4.36937, 6.12611, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
--- (@CGUID+61, 19416, 558, 3, 233.828, -156.722, 26.6746, 0.471239, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
+(@CGUID+60, 19416, 558, 3, 72.8591, 46.5644, 24.3768, 6.12611, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
+(@CGUID+61, 19416, 558, 3, 85.0451, 48.407, 13.0171, 6.21337, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
 (@CGUID+63, 0, 558, 3, 103.51, -31.6612, 2.18704, 1.36136, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+64, 0, 558, 3, -138.909, -205.619, 26.6743, 2.75762, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+65, 0, 558, 3, 186.398, -187.634, 26.6152, 5.28835, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+66, 0, 558, 3, 265.723, -167.4, 26.6746, 3.64774, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+67, 0, 558, 3, 170.213, -18.6788, 1.89394, 6.12611, 7200, 7200, 0, 2), -- spawn_group_entry
--- (@CGUID+68, 19416, 558, 3, -112.746, -276.347, 31.772, 4.62512, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
--- (@CGUID+69, 19416, 558, 3, -34.3666, -427.057, 31.0559, 6.17847, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
+(@CGUID+68, 19416, 558, 3, 85.4925, 47.0914, 24.3883, 6.12611, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
+(@CGUID+69, 19416, 558, 3, 98.0462, 46.837, 24.4001, 6.12611, 7200, 7200, 0, 0), -- Ancient Draenei Spirit
 (@CGUID+70, 0, 558, 3, 235.888, 37.0713, 26.69, 6.23083, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+71, 0, 558, 3, 127.675, -9.82014, 0.992616, 4.7473, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+72, 0, 558, 3, -150.584, -157.274, 26.6739, 2.11185, 7200, 7200, 0, 2), -- spawn_group_entry
