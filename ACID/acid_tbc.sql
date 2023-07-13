@@ -9745,6 +9745,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Image of Velen (17874) - NSR
 -- Hunter of the Hand
 ('1787501','17875','11','0','100','32','0','0','0','0','0','0','3','0','17280','0','3','0','17281','0','3','0','17282','0','Hunter of the Hand - randomized model on Spawn'),
+-- [DND]Sunhawk Portal Controller 17886
+('1788601','-5309984','1','0','100','0','0','0','0','0','0','0','53','19953','0','0','0','0','0','0','0','0','0','0','(Guid EAI) [DND]Sunhawk Portal Controller 17886 - START_RELAY_SCRIPT on OOC Timer'),
+('1788602','-5309983','1','0','100','0','0','0','0','0','0','0','53','19954','0','0','0','0','0','0','0','0','0','0','(Guid EAI) [DND]Sunhawk Portal Controller 17886 - START_RELAY_SCRIPT on OOC Timer'),
+('1788603','-5309982','1','0','100','0','0','0','0','0','0','0','53','19955','0','0','0','0','0','0','0','0','0','0','(Guid EAI) [DND]Sunhawk Portal Controller 17886 - START_RELAY_SCRIPT on OOC Timer'),
+('1788604','-5309981','1','0','100','0','0','0','0','0','0','0','53','19956','0','0','0','0','0','0','0','0','0','0','(Guid EAI) [DND]Sunhawk Portal Controller 17886 - START_RELAY_SCRIPT on OOC Timer'),
 -- Void Critter (17887) - NSR
 -- Scout Loryi (17926) - NSR
 -- Scout Jorli (17927) - NSR
