@@ -500,148 +500,90 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+409,3,-11147.904,-1946.3444,74.39292,100,0,0),
 (@CGUID+409,4,-11140.592,-1946.3619,74.3886,0.19198,20000,0),
 (@CGUID+409,5,-11153.534,-1944.0614,74.39047,100,0,0),
-(@CGUID+460, 1, -10935.8, -1871.22, 110.6, 4.81711, 10000, 1646801),
-(@CGUID+460, 2, -10935.8, -1871.22, 110.6, 4.81711, 2000, 1646801),
-(@CGUID+461, 1, -10875, -1878.74, 110.601, 4.01426, 17000, 0),
-(@CGUID+461, 2, -10875, -1878.74, 110.601, 4.01426, 5000, 1646801),
-(@CGUID+462, 1, -10883.4, -1869.55, 110.599, 4.46804, 19000, 1646801),
-(@CGUID+463, 1, -10880.7, -1885.19, 110.602, 2.93215, 3000, 0),
-(@CGUID+463, 2, -10880.7, -1885.19, 110.602, 2.93215, 16000, 1646801),
-(@CGUID+464, 1, -10927.2, -1862.6, 110.599, 4.29351, 5000, 0),
-(@CGUID+464, 2, -10927.2, -1862.6, 110.599, 4.29351, 6000, 1646801),
-(@CGUID+497, 1, -10941.3, -1869.12, 110.601, 0.994838, 1000, 0),
-(@CGUID+497, 2, -10941.3, -1869.12, 110.601, 0.994838, 13000, 1646801),
-(@CGUID+499, 1, -10926.5, -1865.88, 110.599, 2.1293, 3000, 1646801),
-(@CGUID+499, 2, -10926.5, -1865.88, 110.599, 2.1293, 14000, 0),
-(@CGUID+509, 1, -10884.3, -1873.28, 110.599, 1.20428, 16000, 0),
-(@CGUID+509, 2, -10884.3, -1873.28, 110.599, 1.20428, 3000, 1646801),
-(@CGUID+512, 1, -10935.7, -1875.22, 110.602, 1.309, 6000, 0),
-(@CGUID+512, 2, -10935.7, -1875.22, 110.602, 1.309, 7000, 1647001),
-(@CGUID+513, 1, -10939.4, -1867.83, 110.6, 3.05433, 8000, 1647001),
-(@CGUID+513, 2, -10939.4, -1867.83, 110.6, 3.05433, 3000, 1647001),
-(@CGUID+514, 1, -10948.3, -1824.69, 109.262, 0, 0, 0),
-(@CGUID+514, 2, -10946.3, -1846, 109.262, 0, 0, 0),
-(@CGUID+514, 3, -10938.9, -1862.23, 110.517, 0, 0, 0),
-(@CGUID+514, 4, -10928.1, -1874.46, 110.517, 0, 0, 0),
-(@CGUID+514, 5, -10916.9, -1879.99, 111.398, 0, 0, 0),
-(@CGUID+514, 6, -10893.5, -1882.83, 111.398, 0, 0, 0),
-(@CGUID+514, 7, -10881.1, -1879.37, 110.517, 0, 0, 0),
-(@CGUID+514, 8, -10869.3, -1868.39, 110.517, 0, 0, 0),
-(@CGUID+514, 9, -10860.8, -1853.93, 109.263, 0, 0, 0),
-(@CGUID+514, 10, -10855.5, -1836.76, 109.263, 0, 0, 0),
-(@CGUID+514, 11, -10852.3, -1813.64, 107.664, 0, 0, 0),
-(@CGUID+514, 12, -10855.1, -1832.07, 109.263, 0, 0, 0),
-(@CGUID+514, 13, -10862.1, -1852.07, 109.263, 0, 0, 0),
-(@CGUID+514, 14, -10872.5, -1867.94, 110.516, 0, 0, 0),
-(@CGUID+514, 15, -10884.3, -1877.68, 110.516, 0, 0, 0),
-(@CGUID+514, 16, -10897.5, -1880.44, 111.395, 0, 0, 0),
-(@CGUID+514, 17, -10917.8, -1877.28, 111.395, 0, 0, 0),
-(@CGUID+514, 18, -10926.8, -1871.01, 110.517, 0, 0, 0),
-(@CGUID+514, 19, -10937, -1859.16, 110.517, 0, 0, 0),
-(@CGUID+514, 20, -10944.1, -1844.2, 109.262, 0, 0, 0),
-(@CGUID+514, 21, -10945.8, -1829.83, 109.262, 0, 0, 0),
-(@CGUID+514, 22, -10944.9, -1807.53, 107.664, 0, 0, 0),
-(@CGUID+515, 1, -10882.7, -1886.03, 110.601, 0.802851, 4000, 1647001),
-(@CGUID+515, 2, -10882.7, -1886.03, 110.601, 0.802851, 22000, 0),
-(@CGUID+518, 1, -10875.8, -1881.21, 110.602, 2.35619, 7000, 0),
-(@CGUID+518, 2, -10875.8, -1881.21, 110.602, 2.35619, 5000, 1647001),
-(@CGUID+519, 1, -10920.7, -1876.48, 125.425, 0, 0, 0),
-(@CGUID+519, 2, -10930.6, -1871.89, 124.559, 0, 0, 0),
-(@CGUID+519, 3, -10937.9, -1859.6, 124.559, 0, 0, 0),
-(@CGUID+519, 4, -10944.6, -1847.56, 123.304, 0, 0, 0),
-(@CGUID+519, 5, -10945.9, -1834.07, 123.304, 0, 0, 0),
-(@CGUID+519, 6, -10943.5, -1802.8, 121.705, 0, 0, 0),
-(@CGUID+519, 7, -10946.1, -1829.07, 123.304, 0, 0, 0),
-(@CGUID+519, 8, -10943.2, -1849.35, 123.749, 0, 0, 0),
-(@CGUID+519, 9, -10937.7, -1861.77, 124.559, 0, 0, 0),
-(@CGUID+519, 10, -10928.3, -1872.33, 124.559, 0, 0, 0),
-(@CGUID+519, 11, -10919.2, -1878.01, 125.422, 0, 0, 0),
-(@CGUID+519, 12, -10894.6, -1881.75, 125.419, 0, 0, 0),
-(@CGUID+519, 13, -10881.1, -1877.94, 124.559, 0, 0, 0),
-(@CGUID+519, 14, -10867.2, -1865.99, 124.559, 0, 0, 0),
-(@CGUID+519, 15, -10858.9, -1852.72, 123.304, 0, 0, 0),
-(@CGUID+519, 16, -10854.2, -1839.68, 123.304, 0, 0, 0),
-(@CGUID+519, 17, -10851.5, -1811.74, 121.703, 0, 0, 0),
-(@CGUID+519, 18, -10854.7, -1820.73, 121.704, 0, 0, 0),
-(@CGUID+519, 19, -10856.7, -1835.42, 123.304, 0, 0, 0),
-(@CGUID+519, 20, -10862.4, -1852.07, 123.304, 0, 0, 0),
-(@CGUID+519, 21, -10867.4, -1862.19, 124.558, 0, 0, 0),
-(@CGUID+519, 22, -10879.6, -1873.37, 124.558, 0, 0, 0),
-(@CGUID+519, 23, -10892.6, -1879.28, 125.424, 0, 0, 0),
-(@CGUID+519, 24, -10906.3, -1878.73, 125.419, 0, 0, 0),
-(@CGUID+522, 1, -10865.9, -1859.89, 96.6303, 0, 0, 0),
-(@CGUID+522, 2, -10877.7, -1871.75, 97.16, 0, 0, 0),
-(@CGUID+522, 3, -10888.7, -1878.31, 97.1788, 0, 0, 0),
-(@CGUID+522, 4, -10898.5, -1879.55, 94.8503, 0, 0, 0),
-(@CGUID+522, 5, -10915.9, -1877.27, 94.8488, 0, 0, 0),
-(@CGUID+522, 6, -10926.8, -1872.62, 97.4014, 0, 0, 0),
-(@CGUID+522, 7, -10937.3, -1859.07, 96.9942, 0, 0, 0),
-(@CGUID+522, 8, -10944.2, -1841.12, 96.1318, 0, 0, 0),
-(@CGUID+522, 9, -10945.8, -1830.42, 95.6658, 0, 0, 0),
-(@CGUID+522, 10, -10943.4, -1801.48, 94.3943, 0, 0, 0),
-(@CGUID+522, 11, -10945.5, -1830.51, 95.6694, 0, 0, 0),
-(@CGUID+522, 12, -10943.9, -1841.91, 96.1664, 0, 0, 0),
-(@CGUID+522, 13, -10937.2, -1859.83, 97.0086, 0, 0, 0),
-(@CGUID+522, 14, -10925.9, -1873.82, 97.4417, 0, 0, 0),
-(@CGUID+522, 15, -10915, -1877.7, 94.849, 0, 0, 0),
-(@CGUID+522, 16, -10897.8, -1879.96, 94.8462, 0, 0, 0),
-(@CGUID+522, 17, -10887.8, -1878.65, 97.3837, 0, 0, 0),
-(@CGUID+522, 18, -10877, -1871.93, 97.1545, 0, 0, 0),
-(@CGUID+522, 19, -10865, -1860.02, 96.6151, 0, 0, 0),
-(@CGUID+522, 20, -10857.7, -1844.82, 95.8523, 0, 0, 0),
-(@CGUID+522, 21, -10854.8, -1833.31, 95.374, 0, 0, 0),
-(@CGUID+522, 22, -10852.2, -1811.45, 94.323, 0, 0, 0),
-(@CGUID+522, 23, -10856, -1835.57, 95.4789, 0, 0, 0),
-(@CGUID+522, 24, -10861.1, -1849.54, 96.0882, 0, 0, 0),
-(@CGUID+529, 1, -10844.2, -1740.08, 96.1494, 0, 0, 0),
-(@CGUID+529, 2, -10842.4, -1727.83, 96.2236, 0, 0, 0),
-(@CGUID+529, 3, -10841.1, -1718.59, 96.1961, 0, 0, 0),
-(@CGUID+529, 4, -10839.9, -1715.83, 96.1961, 0.52, 20000, 0),
-(@CGUID+529, 5, -10840.9, -1718.93, 96.1961, 0, 0, 0),
-(@CGUID+529, 6, -10842.3, -1728.75, 96.2484, 0, 0, 0),
-(@CGUID+529, 7, -10844.5, -1744.1, 94.4577, 0, 0, 0),
-(@CGUID+529, 8, -10844.1, -1750.57, 94.4427, 0, 0, 0),
-(@CGUID+529, 9, -10845.5, -1760.39, 97.6679, 0, 0, 0),
-(@CGUID+529, 10, -10848.4, -1779.67, 97.6679, 0, 0, 0),
-(@CGUID+529, 11, -10846.5, -1781.69, 97.6679, 5.323, 20000, 0),
-(@CGUID+529, 12, -10848.2, -1779.54, 97.6679, 0, 0, 0),
-(@CGUID+529, 13, -10845.5, -1758.39, 97.546, 0, 0, 0),
-(@CGUID+529, 14, -10844, -1749.79, 94.4427, 0, 0, 0),
-(@CGUID+530, 1, -10861.9, -1748.85, 89.4881, 0, 0, 0),
-(@CGUID+530, 2, -10857.3, -1744.91, 89.4902, 0, 0, 0),
-(@CGUID+530, 3, -10856.5, -1739.71, 90.4698, 0, 0, 0),
-(@CGUID+530, 4, -10858.6, -1729.95, 90.4683, 0, 0, 0),
-(@CGUID+530, 5, -10863.9, -1733.45, 90.4701, 0, 0, 0),
-(@CGUID+530, 6, -10898.8, -1729.58, 90.4697, 0, 0, 0),
-(@CGUID+530, 7, -10863.3, -1733.78, 90.4704, 0, 0, 0),
-(@CGUID+530, 8, -10858.2, -1729.86, 90.4671, 0, 0, 0),
-(@CGUID+530, 9, -10856.1, -1740.41, 90.4688, 0, 0, 0),
-(@CGUID+530, 10, -10857.2, -1745.18, 89.4894, 0, 0, 0),
-(@CGUID+530, 11, -10862.1, -1749.41, 89.4881, 0, 0, 0),
-(@CGUID+530, 12, -10862.6, -1752.14, 89.4798, 0, 0, 0),
-(@CGUID+531, 1, -10846, -1739.05, 96.2012, 0, 0, 0),
-(@CGUID+531, 2, -10849.1, -1755.69, 94.4463, 0, 0, 0),
-(@CGUID+531, 3, -10860.5, -1753.58, 89.471, 0, 0, 0),
-(@CGUID+531, 4, -10859.5, -1748.2, 89.4777, 0, 0, 0),
-(@CGUID+531, 5, -10857.1, -1745.18, 89.4889, 0, 0, 0),
-(@CGUID+531, 6, -10856.2, -1735.53, 90.468, 0, 0, 0),
-(@CGUID+531, 7, -10873.1, -1732.49, 90.4686, 0, 0, 0),
-(@CGUID+531, 8, -10882.6, -1722.88, 90.4688, 0, 0, 0),
-(@CGUID+531, 9, -10882.3, -1719.77, 90.4688, 1.74, 15000, 0),
-(@CGUID+531, 10, -10882.5, -1723.45, 90.4688, 0, 0, 0),
-(@CGUID+531, 11, -10872.7, -1732.8, 90.4689, 0, 0, 0),
-(@CGUID+531, 12, -10861.3, -1733.87, 90.4701, 0, 0, 0),
-(@CGUID+531, 13, -10855.4, -1735.83, 90.4671, 0, 0, 0),
-(@CGUID+531, 14, -10857.2, -1745.44, 89.4881, 0, 0, 0),
-(@CGUID+531, 15, -10859.6, -1748.69, 89.4771, 0, 0, 0),
-(@CGUID+531, 16, -10860.3, -1754, 89.4732, 0, 0, 0),
-(@CGUID+531, 17, -10849.5, -1755.59, 94.4471, 0, 0, 0),
-(@CGUID+531, 18, -10848, -1750.51, 94.4553, 0, 0, 0),
-(@CGUID+531, 19, -10845.6, -1746.09, 94.456, 0, 0, 0),
-(@CGUID+531, 20, -10845.3, -1738.75, 96.2052, 0, 0, 0),
-(@CGUID+531, 21, -10843.8, -1724.91, 96.1957, 0, 0, 0),
-(@CGUID+531, 22, -10841.2, -1714.61, 96.1957, 0.748, 15000, 0),
-(@CGUID+531, 23, -10843.7, -1724.27, 96.1957, 0, 0, 0),
+(@CGUID+522,1,-10944.135,-1802.1428,94.39221,100,0,0),
+(@CGUID+522,2,-10946.081,-1812.8978,94.84816,100,0,0),
+(@CGUID+522,3,-10944.943,-1836.5825,95.946915,100,0,0),
+(@CGUID+522,4,-10939.995,-1854.0751,96.77409,100,0,0),
+(@CGUID+522,5,-10925.268,-1873.7374,97.4904,100,0,0),
+(@CGUID+522,6,-10914.981,-1879.0502,94.833954,100,0,0),
+(@CGUID+522,7,-10897.27,-1881.6647,94.83223,100,0,0),
+(@CGUID+522,8,-10870.537,-1866.2709,96.9554,100,0,0),
+(@CGUID+522,9,-10856.065,-1839.2438,95.597824,100,0,0),
+(@CGUID+522,10,-10852.546,-1814.7057,94.31316,100,0,0),
+(@CGUID+529,1,-10880.155,-1727.1527,90.46348,100,0,0),
+(@CGUID+529,2,-10878.649,-1731.5243,90.46416,100,0,0),
+(@CGUID+529,3,-10876.261,-1733.4023,90.46457,100,0,0),
+(@CGUID+529,4,-10869.368,-1734.7421,90.465195,100,0,0),
+(@CGUID+529,5,-10862.568,-1736.1532,90.46639,100,0,0),
+(@CGUID+529,6,-10861.912,-1740.4462,90.46653,100,0,0),
+(@CGUID+529,7,-10862.983,-1747.4519,89.476456,100,0,0),
+(@CGUID+529,8,-10863.341,-1753.8102,89.471634,100,0,0),
+(@CGUID+529,9,-10857.286,-1755.6987,90.695854,100,0,0),
+(@CGUID+529,10,-10854.92,-1756.0337,92.40921,100,0,0),
+(@CGUID+529,11,-10850.786,-1756.579,94.44388,100,0,0),
+(@CGUID+529,12,-10846.41,-1749.1926,94.442024,100,0,0),
+(@CGUID+529,13,-10844.379,-1744.2964,94.44862,100,0,0),
+(@CGUID+529,14,-10842.759,-1731.7083,96.24141,100,0,0),
+(@CGUID+529,15,-10840.476,-1723.151,96.18301,100,0,0),
+(@CGUID+529,16,-10839.112,-1717.5234,96.18301,100,15000,0),
+(@CGUID+529,17,-10842.524,-1721.9694,96.18301,100,0,0),
+(@CGUID+529,18,-10844.488,-1725.6217,96.18301,100,0,0),
+(@CGUID+529,19,-10845.482,-1734.2395,96.29447,100,0,0),
+(@CGUID+529,20,-10846.428,-1739.2961,96.18925,100,0,0),
+(@CGUID+529,21,-10848.106,-1747.122,94.44862,100,0,0),
+(@CGUID+529,22,-10849.047,-1751.4501,94.44074,100,0,0),
+(@CGUID+529,23,-10850.658,-1754.4744,94.44061,100,0,0),
+(@CGUID+529,24,-10855.614,-1753.7947,91.610374,100,0,0),
+(@CGUID+529,25,-10859.301,-1752.9703,89.45761,100,0,0),
+(@CGUID+529,26,-10859.961,-1750.2882,89.46482,100,0,0),
+(@CGUID+529,27,-10860.073,-1744.7571,89.47519,100,0,0),
+(@CGUID+529,28,-10858.81,-1737.379,90.46449,100,0,0),
+(@CGUID+529,29,-10861.679,-1732.0693,90.462364,100,0,0),
+(@CGUID+529,30,-10867.876,-1731.0162,90.46479,100,0,0),
+(@CGUID+529,31,-10873.192,-1729.4928,90.46424,100,0,0),
+(@CGUID+529,32,-10877.873,-1727.7561,90.46371,100,0,0),
+(@CGUID+529,33,-10881.303,-1724.2177,90.46426,100,0,0),
+(@CGUID+529,34,-10882.351,-1719.8297,90.46425,100,0,0),
+(@CGUID+529,35,-10882.351,-1719.8297,90.46425,1.623156189918518066,15000,0),
+(@CGUID+530,1,-10866.455,-1733.6691,90.46438,100,0,0),
+(@CGUID+530,2,-10856.519,-1731.1744,90.464134,100,0,0),
+(@CGUID+530,3,-10853.995,-1735.4694,90.46407,100,0,0),
+(@CGUID+530,4,-10861.712,-1745.0052,89.478226,100,0,0),
+(@CGUID+530,5,-10862.507,-1751.7698,89.46754,100,0,0),
+(@CGUID+530,6,-10861.712,-1745.0052,89.478226,100,0,0),
+(@CGUID+530,7,-10853.995,-1735.4694,90.46407,100,0,0),
+(@CGUID+530,8,-10856.519,-1731.1744,90.464134,100,0,0),
+(@CGUID+530,9,-10866.455,-1733.6691,90.46438,100,0,0),
+(@CGUID+530,10,-10876.17,-1732.5288,90.464455,100,0,0),
+(@CGUID+530,11,-10886.538,-1731.1649,90.46425,100,0,0),
+(@CGUID+530,12,-10893.101,-1730.3425,90.46425,100,0,0),
+(@CGUID+530,13,-10897.278,-1729.8158,90.46441,100,0,0),
+(@CGUID+530,14,-10886.538,-1731.1649,90.46425,100,0,0),
+(@CGUID+530,15,-10876.17,-1732.5288,90.464455,100,0,0),
+(@CGUID+531,1,-10845.655,-1775.7421,97.66739,100,0,0),
+(@CGUID+531,2,-10845.617,-1770.6315,97.66739,100,0,0),
+(@CGUID+531,3,-10845.481,-1764.441,97.66739,100,0,0),
+(@CGUID+531,4,-10844.793,-1760.0935,97.66739,100,0,0),
+(@CGUID+531,5,-10843.774,-1750.0175,94.43715,100,0,0),
+(@CGUID+531,6,-10843.824,-1745.1448,94.44862,100,0,0),
+(@CGUID+531,7,-10843.589,-1741.3555,95.54324,100,0,0),
+(@CGUID+531,8,-10843.322,-1736.728,96.21711,100,0,0),
+(@CGUID+531,9,-10841.853,-1726.9987,96.18116,100,0,0),
+(@CGUID+531,10,-10840.703,-1720.1685,96.18301,100,0,0),
+(@CGUID+531,11,-10839.359,-1717.5388,96.18301,100,0,0),
+(@CGUID+531,12,-10839.359,-1717.5388,96.18301,1.27409,15000,0),
+(@CGUID+531,13,-10843.656,-1723.5974,96.18301,100,0,0),
+(@CGUID+531,14,-10844.636,-1729.5476,96.30866,100,0,0),
+(@CGUID+531,15,-10845.543,-1737.0605,96.267784,100,0,0),
+(@CGUID+531,16,-10845.537,-1747.3488,94.44862,100,0,0),
+(@CGUID+531,17,-10845.26,-1752.9415,95.1664,100,0,0),
+(@CGUID+531,18,-10846.231,-1757.5922,97.18135,100,0,0),
+(@CGUID+531,19,-10847.263,-1762.544,97.66739,100,0,0),
+(@CGUID+531,20,-10848.21,-1768.8357,97.66739,100,0,0),
+(@CGUID+531,21,-10848.481,-1775.6201,97.66739,100,0,0),
+(@CGUID+531,22,-10848.797,-1779.3268,97.66739,100,0,0),
+(@CGUID+531,23,-10846.589,-1781.2029,97.66739,100,0,0),
+(@CGUID+531,24,-10846.589,-1781.2029,97.66739,6.03883,15000,0),
 (@CGUID+636, 1, -11231.8, -1900.95, 145.87, 0, 0, 0),
 (@CGUID+636, 2, -11248.4, -1896.78, 140.123, 0, 0, 0),
 (@CGUID+636, 3, -11262.1, -1880.44, 135.936, 0, 0, 0),
@@ -1000,18 +942,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+361, 0, 0, 0, 173, 0, NULL), -- Spectral Chef
 (@CGUID+362, 0, 0, 0, 173, 0, NULL), -- Spectral Chef
 (@CGUID+407, 0, 0, 0, 0, 0, NULL), -- Phantom Guardsman
-(@CGUID+465, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
-(@CGUID+466, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
-(@CGUID+489, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
-(@CGUID+495, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
-(@CGUID+500, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
-(@CGUID+504, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
-(@CGUID+508, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
-(@CGUID+510, 0, 5, 1, 0, 0, NULL), -- Spectral Patron
-(@CGUID+516, 0, 5, 1, 0, 0, NULL), -- Ghostly Philanthropist
-(@CGUID+517, 0, 5, 1, 0, 0, NULL), -- Ghostly Philanthropist
-(@CGUID+520, 0, 5, 1, 0, 0, NULL), -- Ghostly Philanthropist
-(@CGUID+521, 0, 5, 1, 0, 0, NULL), -- Ghostly Philanthropist
 (@CGUID+530, 0, 0, 1, 0, 0, NULL), -- Phantom Stagehand
 (@CGUID+540, 0, 8, 1, 0, 0, NULL), -- Spectral Performer
 (@CGUID+954, 0, 0, 0, 400, 0, NULL), -- Phantom Guest
@@ -1125,68 +1055,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (22524, 0, 0, 1, 0, 0, NULL); -- Karazhan - Chess, Victory Controller
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
--- Continue Grouped Linking Rework Opera
--- (@CGUID+522, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
-(@CGUID+526, @CGUID+523, 1167), -- Skeletal Usher -> Skeletal Usher
--- (@CGUID+523, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
-(@CGUID+525, @CGUID+524, 1167), -- Skeletal Usher -> Skeletal Usher
--- (CGUID+524, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
--- (@CGUID+527, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
--- (@CGUID+528, @CGUID+881, 1167), -- Skeletal Usher -> NPC_CROWD_MURMUR_HELPER
-(@CGUID+460, @CGUID+513, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+464, @CGUID+513, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+497, @CGUID+513, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+499, @CGUID+513, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+512, @CGUID+513, 1167), -- Ghostly Philanthropist -> Ghostly Philanthropist
-(@CGUID+461, @CGUID+509, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+462, @CGUID+509, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+463, @CGUID+509, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+515, @CGUID+509, 1167), -- Ghostly Philanthropist -> Spectral Patron
-(@CGUID+518, @CGUID+509, 1167), -- Ghostly Philanthropist -> Spectral Patron
-(@CGUID+465, @CGUID+516, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+500, @CGUID+516, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+466, @CGUID+510, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+517, @CGUID+510, 1167), -- Ghostly Philanthropist -> Spectral Patron
-(@CGUID+468, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+475, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+476, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+477, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+478, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+488, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+503, @CGUID+467, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+470, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+471, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+482, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+483, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+484, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+485, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+501, @CGUID+469, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+472, @CGUID+519, 1679), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+498, @CGUID+519, 1679), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+474, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+486, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+487, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+506, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+507, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+490, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+491, @CGUID+473, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+479, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+480, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+492, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+493, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+494, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+496, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+505, @CGUID+481, 1167), -- Spectral Patron -> Spectral Patron
-(@CGUID+489, @CGUID+521, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+508, @CGUID+521, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+495, @CGUID+520, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+504, @CGUID+520, 1167), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+502, @CGUID+514, 1679), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+511, @CGUID+514, 1679), -- Spectral Patron -> Ghostly Philanthropist
-(@CGUID+536, @CGUID+535, 1167), -- Spectral Performer -> Spectral Performer
-(@CGUID+538, @CGUID+537, 1167), -- Spectral Performer -> Spectral Performer
-(@CGUID+539, @CGUID+533, 1167), -- Spectral Performer -> Spectral Performer
-(@CGUID+540, @CGUID+534, 1167), -- Spectral Performer -> Spectral Performer
 -- The Curator
 (@CGUID+541, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
 (@CGUID+542, @CGUID+143, 1024), -- creature_spawn_entry -> The Curator
@@ -1834,7 +1702,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+427, 0, 532, 1, -10851.7, -2099.72, 92.1622, 4.76883, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+428, 0, 532, 1, -10897.5, -2017.9, 92.2582, 3.29867, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+429, 0, 532, 1, -10860.3, -2033.83, 92.2582, 1.06465, 7200, 7200, 0, 0), -- spawn_group_entry
--- re-use @CGUID+430
+(@CGUID+430, 0, 532, 1, -10880.5, -1859.9, 124.641, 2.28638, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+431, 0, 532, 1, -10836.8, -2038.3, 90.9262, 2.27205, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+432, 0, 532, 1, -10832.2, -2006.63, 92.243, 1.81514, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+433, 0, 532, 1, -10899.6, -2018.59, 92.2582, 0.890118, 7200, 7200, 0, 0), -- spawn_group_entry
@@ -1864,11 +1732,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+457, 0, 532, 1, -10893.3, -2081.22, 92.1628, 0.357248, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+458, 0, 532, 1, -10855.5, -2020.53, 92.1737, 6.13856, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+459, 0, 532, 1, -10845, -2099.72, 92.1622, 2.67888, 7200, 7200, 0, 0), -- spawn_group_entry
-(@CGUID+460, 16468, 532, 1, -10935.8, -1871.22, 110.6, 4.81711, 7200, 7200, 0, 2), -- Spectral Patron
-(@CGUID+461, 16468, 532, 1, -10875, -1878.74, 110.601, 4.01426, 7200, 7200, 0, 2), -- Spectral Patron
-(@CGUID+462, 16468, 532, 1, -10883.4, -1869.55, 110.599, 4.46804, 7200, 7200, 0, 2), -- Spectral Patron
-(@CGUID+463, 16468, 532, 1, -10880.7, -1885.19, 110.602, 2.93215, 7200, 7200, 0, 2), -- Spectral Patron
-(@CGUID+464, 16468, 532, 1, -10927.2, -1862.6, 110.599, 4.29351, 7200, 7200, 0, 2), -- Spectral Patron
+(@CGUID+460, 0, 532, 1, -10935.8, -1871.22, 110.6, 4.81711, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+461, 0, 532, 1, -10875, -1878.74, 110.601, 4.01426, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+462, 0, 532, 1, -10883.4, -1869.55, 110.599, 4.46804, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+463, 0, 532, 1, -10880.7, -1885.19, 110.602, 2.93215, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+464, 0, 532, 1, -10927.2, -1862.6, 110.599, 4.29351, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+465, 16468, 532, 1, -10922.9, -1856.32, 124.556, 0.221857, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+466, 16468, 532, 1, -10883.3, -1863.06, 124.537, 1.96886, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+467, 16468, 532, 1, -10892, -1844.92, 93.5331, 1.76278, 7200, 7200, 0, 0), -- Spectral Patron
@@ -1876,7 +1744,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+469, 16468, 532, 1, -10919.8, -1839.86, 93.4933, 1.13446, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+470, 16468, 532, 1, -10913.4, -1833.96, 93.1516, 1.46608, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+471, 16468, 532, 1, -10924.8, -1834.79, 93.3147, 0.244346, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+472, 16468, 532, 1, -10907, -1880.04, 125.419, 2.80705, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+472, 16468, 532, 1, -10852, -1826.46, 121.699, 4.5327, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+473, 16468, 532, 1, -10890.9, -1825.88, 92.6185, 1.50098, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+474, 16468, 532, 1, -10886.7, -1824.9, 92.5729, 2.02458, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+475, 16468, 532, 1, -10878.5, -1833.15, 92.9463, 1.78024, 7200, 7200, 0, 0), -- Spectral Patron
@@ -1893,50 +1761,49 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+486, 16468, 532, 1, -10881.6, -1823.92, 92.4736, 2.05949, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+487, 16468, 532, 1, -10879.5, -1823.44, 92.4277, 1.71042, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+488, 16468, 532, 1, -10873.3, -1827.71, 92.5919, 2.00713, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+489, 16468, 532, 1, -10864.8, -1822.41, 121.673, 2.39925, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+489, 0, 532, 1, -10864.8, -1822.41, 121.673, 2.39925, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+490, 16468, 532, 1, -10874.5, -1813.23, 91.8655, 1.79769, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+491, 16468, 532, 1, -10875.7, -1818.04, 92.1021, 1.78024, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+492, 16468, 532, 1, -10913.2, -1809.57, 91.9118, 1.5708, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+493, 16468, 532, 1, -10915.3, -1808.43, 91.8576, 0.942478, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+494, 16468, 532, 1, -10916.1, -1813.07, 92.107, 1.16937, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+495, 16468, 532, 1, -10933.1, -1814.89, 121.759, 0.650339, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+495, 0, 532, 1, -10933.1, -1814.89, 121.759, 0.650339, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+496, 16468, 532, 1, -10923.2, -1805.11, 91.7259, 0.628319, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+497, 16468, 532, 1, -10941.3, -1869.12, 110.601, 0.994838, 7200, 7200, 0, 2), -- Spectral Patron
-(@CGUID+498, 16468, 532, 1, -10904.5, -1879.12, 125.418, 3.08743, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+499, 16468, 532, 1, -10926.5, -1865.88, 110.599, 2.1293, 7200, 7200, 0, 2), -- Spectral Patron
+(@CGUID+497, 0, 532, 1, -10941.3, -1869.12, 110.601, 0.994838, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+498, 16468, 532, 1, -10853.8, -1821.13, 121.699, 4.75183, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+499, 0, 532, 1, -10926.5, -1865.88, 110.599, 2.1293, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+500, 16468, 532, 1, -10924.1, -1853.04, 124.528, 0.780342, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+501, 16468, 532, 1, -10914.7, -1838.07, 93.3604, 1.27409, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+502, 16468, 532, 1, -10946.4, -1807.77, 107.664, 4.59462, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+502, 16468, 532, 1, -10853.5, -1829.39, 108.325, 4.50366, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+503, 16468, 532, 1, -10890.7, -1836.26, 93.1279, 2.1293, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+504, 16468, 532, 1, -10934.2, -1818.35, 121.724, 6.054, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+504, 0, 532, 1, -10934.2, -1818.35, 121.724, 6.054, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+505, 16468, 532, 1, -10903.2, -1812.5, 92.0185, 1.44862, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+506, 16468, 532, 1, -10883, -1814.47, 91.9863, 1.8326, 7200, 7200, 0, 0), -- Spectral Patron
 (@CGUID+507, 16468, 532, 1, -10886.3, -1815.13, 92.0542, 1.95477, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+508, 16468, 532, 1, -10864.2, -1819.36, 121.706, 3.66786, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+509, 16468, 532, 1, -10884.3, -1873.26, 110.517, 0.901676, 7200, 7200, 0, 2), -- Spectral Patron
+(@CGUID+508, 0, 532, 1, -10864.2, -1819.36, 121.706, 3.66786, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+509, 0, 532, 1, -10884.3, -1873.26, 110.517, 0.901676, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+510, 16468, 532, 1, -10885.3, -1863.41, 124.537, 2.06014, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+511, 16468, 532, 1, -10944.8, -1809.73, 107.664, 4.68965, 7200, 7200, 0, 0), -- Spectral Patron
-(@CGUID+512, 16470, 532, 1, -10935.7, -1875.29, 110.518, 1.23389, 7200, 7200, 0, 2), -- Ghostly Philanthropist
-(@CGUID+513, 16470, 532, 1, -10939.5, -1867.81, 110.517, 2.99554, 7200, 7200, 0, 2), -- Ghostly Philanthropist
-(@CGUID+514, 16470, 532, 1, -10946.6, -1810.09, 107.664, 4.59462, 7200, 7200, 0, 2), -- Ghostly Philanthropist
-(@CGUID+515, 16470, 532, 1, -10882.7, -1886.03, 110.601, 0.802851, 7200, 7200, 0, 2), -- Ghostly Philanthropist
+(@CGUID+511, 16468, 532, 1, -10854.9, -1826.93, 107.651, 4.56533, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+512, 0, 532, 1, -10935.7, -1875.29, 110.518, 1.23389, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+513, 0, 532, 1, -10939.5, -1867.81, 110.517, 2.99554, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+514, 16470, 532, 1, -10855.6, -1829.73, 108.635, 4.44316, 7200, 7200, 0, 2), -- Ghostly Philanthropist
+(@CGUID+515, 0, 532, 1, -10882.7, -1886.03, 110.601, 0.802851, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+516, 16470, 532, 1, -10919.7, -1861.37, 124.558, 0.77994, 7200, 7200, 0, 0), -- Ghostly Philanthropist
 (@CGUID+517, 16470, 532, 1, -10882.4, -1860.88, 124.537, 2.29208, 7200, 7200, 0, 0), -- Ghostly Philanthropist
-(@CGUID+518, 16470, 532, 1, -10875.8, -1881.21, 110.602, 2.35619, 7200, 7200, 0, 2), -- Ghostly Philanthropist
-(@CGUID+519, 16470, 532, 1, -10906.6, -1878.67, 125.418, 2.89868, 7200, 7200, 0, 2), -- Ghostly Philanthropist
-(@CGUID+520, 16470, 532, 1, -10932.9, -1811.79, 121.696, 5.66492, 7200, 7200, 0, 0), -- Ghostly Philanthropist
-(@CGUID+521, 16470, 532, 1, -10865.5, -1826.61, 121.673, 2.47682, 7200, 7200, 0, 0), -- Ghostly Philanthropist
-(@CGUID+522, 16471, 532, 1, -10862.4, -1850.99, 96.2094, 4.22082, 7200, 7200, 0, 2), -- Skeletal Usher
+(@CGUID+518, 0, 532, 1, -10875.8, -1881.21, 110.602, 2.35619, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+519, 16470, 532, 1, -10853.8, -1825.11, 121.875, 4.57063, 7200, 7200, 0, 0), -- Ghostly Philanthropist
+(@CGUID+520, 0, 532, 1, -10932.9, -1811.79, 121.696, 5.66492, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+521, 0, 532, 1, -10865.5, -1826.61, 121.673, 2.47682, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+522, 16471, 532, 1, -10944.1, -1802.85, 94.3922, 4.52043, 7200, 7200, 0, 4), -- Skeletal Usher
 (@CGUID+523, 16471, 532, 1, -10912.2, -1868.5, 94.7804, 5.86431, 7200, 7200, 0, 0), -- Skeletal Usher
 (@CGUID+524, 16471, 532, 1, -10910, -1891.91, 92.275, 4.83456, 7200, 7200, 0, 0), -- Skeletal Usher
 (@CGUID+525, 16471, 532, 1, -10905.4, -1892.48, 92.2654, 4.72984, 7200, 7200, 0, 0), -- Skeletal Usher
 (@CGUID+526, 16471, 532, 1, -10898.2, -1869.8, 94.7619, 3.24631, 7200, 7200, 0, 0), -- Skeletal Usher
 (@CGUID+527, 16471, 532, 1, -10865.3, -1808.12, 91.5327, 3.01942, 7200, 7200, 0, 0), -- Skeletal Usher
 (@CGUID+528, 16471, 532, 1, -10930.3, -1800.14, 91.5103, 6.16101, 7200, 7200, 0, 0), -- Skeletal Usher
-(@CGUID+529, 16472, 532, 1, -10845.1, -1746.04, 94.4542, 1.17744, 7200, 7200, 0, 2), -- Phantom Stagehand
-(@CGUID+530, 16472, 532, 1, -10862.5, -1751.77, 89.4933, 1.45382, 7200, 7200, 0, 2), -- Phantom Stagehand
-(@CGUID+531, 16472, 532, 1, -10844.8, -1731.14, 96.3397, 4.59219, 7200, 7200, 0, 2), -- Phantom Stagehand
-(@CGUID+532, 16472, 532, 1, -10839, -1717.77, 96.1958, 1.16083, 7200, 7200, 0, 0), -- Phantom Stagehand
+(@CGUID+529, 16472, 532, 1, -10882.34, -1719.6642, 90.55328, 1.71042, 7200, 7200, 0, 2), -- Phantom Stagehand
+(@CGUID+530, 16472, 532, 1, -10880.5, -1731.96, 90.4643, 6.1524, 7200, 7200, 0, 2), -- Phantom Stagehand
+(@CGUID+531, 16472, 532, 1, -10846.5, -1781.31, 97.7509, 5.86431, 7200, 7200, 0, 2), -- Phantom Stagehand
 (@CGUID+533, 16473, 532, 1, -10852.9, -1745.39, 89.5654, 3.82227, 7200, 7200, 0, 0), -- Spectral Performer
 (@CGUID+534, 16473, 532, 1, -10887, -1738.21, 90.5533, 0.977384, 7200, 7200, 0, 0), -- Spectral Performer
 (@CGUID+535, 16473, 532, 1, -10855.9, -1717.56, 96.2783, 6.19592, 7200, 7200, 0, 0), -- Spectral Performer
@@ -1955,7 +1822,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+548, 0, 532, 1, -11090.5, -1969.23, 92.6019, 1.52474, 3600, 3600, 5, 1), -- creature_spawn_entry
 (@CGUID+549, 0, 532, 1, -11057.7, -1997.75, 115.226, 2.9081, 3600, 3600, 5, 1), -- creature_spawn_entry
 (@CGUID+550, 0, 532, 1, -11051.3, -1982.27, 158.296, 4.31096, 3600, 3600, 5, 1), -- creature_spawn_entry
--- Reuse 551 - 560
+(@CGUID+551, 0, 532, 1, -10887.2, -1864.39, 124.641, 1.91986, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+552, 0, 532, 1, -10922, -1857.67, 124.591, 0.780341, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+553, 0, 532, 1, -10920.6, -1859.72, 124.641, 0.575959, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+554, 0, 532, 1, -10863.1, -1815.99, 121.788, 3.00197, 7200, 7200, 0, 0), -- spawn_group_entry
+-- Reuse 555 - 560
 (@CGUID+561, 16485, 532, 1, -11041.2, -1896.44, 161.35, 5.22602, 2700, 2700, 0, 0), -- Arcane Watchman
 (@CGUID+562, 16485, 532, 1, -11001, -1902.44, 161.351, 4.06049, 2700, 2700, 0, 0), -- Arcane Watchman
 (@CGUID+563, 16485, 532, 1, -11218.5, -1850.08, 152.055, 5.59558, 7200, 7200, 0, 0), -- Arcane Watchman
@@ -2390,7 +2261,17 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+988, 16409, 532, 1, -10992.5, -2008.3, 93.8216, 0.325118, 7200, 7200, 0, 0), -- Phantom Guest
 (@CGUID+989, 16409, 532, 1, -10993.6, -2018.05, 93.8216, 5.90005, 7200, 7200, 0, 0), -- Phantom Guest
 (@CGUID+990, 16409, 532, 1, -11013.8, -1937.58, 93.8216, 3.43555, 7200, 7200, 0, 0), -- Phantom Guest
-(@CGUID+991, 16173, 532, 1, -10891.901, -2018.128, 49.464252, 1.6718, 7200, 7200, 0, 2); -- Shadowbat
+-- Servents' Quarter missing patrol
+(@CGUID+991, 16173, 532, 1, -10891.901, -2018.128, 49.464252, 1.6718, 7200, 7200, 0, 2), -- Shadowbat
+-- The Opera Hall missing random spawns
+(@CGUID+992, 16468, 532, 1, -10921, -1824.55, 92.75, 0.575959, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+993, 16468, 532, 1, -10914.2, -1827.05, 92.8276, 1.22173, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+994, 16468, 532, 1, -10920.5, -1806.18, 91.7792, 0.802851, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+995, 16468, 532, 1, -10906.7, -1816.74, 92.2551, 1.76278, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+996, 16468, 532, 1, -10879.5, -1828.98, 92.7314, 1.48353, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+997, 16468, 532, 1, -10878, -1838.16, 93.2085, 1.98968, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+998, 16468, 532, 1, -10877.2, -1823.27, 92.3947, 1.91986, 7200, 7200, 0, 0), -- Spectral Patron
+(@CGUID+999, 16468, 532, 1, -10878.2, -1818.58, 92.1552, 1.91986, 7200, 7200, 0, 0); -- Spectral Patron
 
 -- (@CGUID+XXX 17260, 532, 1, -11124.99, -1908.318, 110.124, 5.864306, 7200, 7200, 0, 0), -- Nightbane Helper Target - Removed probably due to scripting reasons
 
@@ -2994,7 +2875,30 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+137, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 011', 0, 2, @SGGUID+3, 1),
 (@SGGUID+138, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Group 012', 0, 2, @SGGUID+3, 1),
 (@SGGUID+139, 'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001', 0, 2, @SGGUID+3, 1),
-(@SGGUID+140, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Patrol 002', 0, 2, @SGGUID+3, 1);
+(@SGGUID+140, 'Karazhan - Wanton Hostess | Night Mistress | Zaelous Paramour | The Guest Chambers Patrol 002', 0, 2, @SGGUID+3, 1),
+-- The Opera Hall
+(@SGGUID+141, 'Karazhan - Skeletal Usher (2) | The Opera Hall Group 001', 0, 2, @SGGUID+4, 1),
+(@SGGUID+142, 'Karazhan - Skeletal Usher (2) | The Opera Hall Group 002', 0, 2, @SGGUID+4, 1),
+(@SGGUID+143, 'Karazhan - Skeletal Usher (1) | The Opera Hall Solo Patrol', 0, 1, @SGGUID+4, 0),
+(@SGGUID+144, 'Karazhan - Skeletal Usher (1) | The Opera Hall Group Solo Static 01', 0, 1, @SGGUID+4, 0),
+(@SGGUID+145, 'Karazhan - Skeletal Usher (1) | The Opera Hall Group Solo Static 02', 0, 1, @SGGUID+4, 0),
+(@SGGUID+146, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 003', 0, 8, @SGGUID+4, 1), -- 10 Different spawn Points - 8 active
+(@SGGUID+147, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 004', 0, 8, @SGGUID+4, 1), -- 10 Different spawn Points - 8 active
+(@SGGUID+148, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 005', 0, 8, @SGGUID+4, 1), -- 10 Different spawn Points - 8 active
+(@SGGUID+149, 'Karazhan - Spectral Patron (8) | The Opera Hall Group 006', 0, 8, @SGGUID+4, 1), -- 10 Different spawn Points - 8 active
+(@SGGUID+150, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 007', 0, 2, @SGGUID+4, 1),
+(@SGGUID+151, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 008', 0, 2, @SGGUID+4, 1),
+(@SGGUID+152, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 009', 0, 2, @SGGUID+4, 1),
+(@SGGUID+153, 'Karazhan - Spectral Performer (2) | The Opera Hall Group 009', 0, 2, @SGGUID+4, 1),
+(@SGGUID+154, 'Karazhan - Phantom Stagehand (3) | The Opera Hall Patrols', 0, 0, @SGGUID+4, 0),
+(@SGGUID+155, 'Karazhan - Ghostly Philanthropist (2) | Spectral Patron (4) | The Opera Hall Group 010', 0, 6, @SGGUID+4, 1),
+(@SGGUID+156, 'Karazhan - Ghostly Philanthropist (2) | Spectral Patron (4) | The Opera Hall Group 011', 0, 6, @SGGUID+4, 1),
+(@SGGUID+157, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 001', 0, 3, @SGGUID+4, 1),
+(@SGGUID+158, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 012', 0, 3, @SGGUID+4, 0), -- 4 spawns - 3 active
+(@SGGUID+159, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 013', 0, 3, @SGGUID+4, 0), -- 4 spawns - 3 active
+(@SGGUID+160, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 014', 0, 3, @SGGUID+4, 0), -- 4 spawns - 3 active
+(@SGGUID+161, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Group 015', 0, 3, @SGGUID+4, 0), -- 4 spawns - 3 active
+(@SGGUID+162, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 002', 0, 3, @SGGUID+4, 1);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3070,7 +2974,13 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+133, 16459, 0, 2, 0), (@SGGUID+133, 16460, 0, 2, 0), (@SGGUID+133, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
 (@SGGUID+134, 16459, 0, 2, 0), (@SGGUID+134, 16460, 0, 2, 0), (@SGGUID+134, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
 (@SGGUID+135, 16459, 0, 2, 0), (@SGGUID+135, 16460, 0, 2, 0), (@SGGUID+135, 16461, 0, 2, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
-(@SGGUID+140, 16459, 0, 0, 0), (@SGGUID+140, 16460, 0, 0, 0), (@SGGUID+140, 16461, 0, 0, 0);-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+140, 16459, 0, 0, 0), (@SGGUID+140, 16460, 0, 0, 0), (@SGGUID+140, 16461, 0, 0, 0),-- Wanton Hostess, Night Mistress, Zaelous Paramour
+(@SGGUID+155, 16468, 0, 0, 0), (@SGGUID+155, 16470, 2, 2, 0), -- Spectral Patron, Ghostly Philanthropist
+(@SGGUID+156, 16468, 0, 0, 0), (@SGGUID+156, 16470, 2, 2, 0), -- Spectral Patron, Ghostly Philanthropist
+(@SGGUID+158, 16468, 0, 0, 0), (@SGGUID+158, 16470, 1, 1, 0), -- Spectral Patron, Ghostly Philanthropist
+(@SGGUID+159, 16468, 0, 0, 0), (@SGGUID+159, 16470, 1, 1, 0), -- Spectral Patron, Ghostly Philanthropist
+(@SGGUID+160, 16468, 0, 0, 0), (@SGGUID+160, 16470, 1, 1, 0), -- Spectral Patron, Ghostly Philanthropist
+(@SGGUID+161, 16468, 0, 0, 0), (@SGGUID+161, 16470, 1, 1, 0); -- Spectral Patron, Ghostly Philanthropist
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
 
@@ -3596,22 +3506,120 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+138, @CGUID+405, -1), -- Phantom Guardsman
 (@SGGUID+139, @CGUID+383, 0), -- Spectral Sentry 
 (@SGGUID+139, @CGUID+384, 1), -- Spectral Sentry 
-(@SGGUID+140, @CGUID+444, 0), -- Sspawn_group 
-(@SGGUID+140, @CGUID+450, 1); -- Spectral Sentry 
+(@SGGUID+140, @CGUID+444, 0), -- spawn_group_entry
+(@SGGUID+140, @CGUID+450, 1), -- spawn_group_entry
+-- The Opera Hall
+(@SGGUID+141, @CGUID+524, -1), -- Skeletal Usher
+(@SGGUID+141, @CGUID+525, -1), -- Skeletal Usher
+(@SGGUID+142, @CGUID+523, -1), -- Skeletal Usher
+(@SGGUID+142, @CGUID+526, -1), -- Skeletal Usher
+(@SGGUID+143, @CGUID+522, -1), -- Skeletal Usher
+(@SGGUID+144, @CGUID+528, -1), -- Skeletal Usher
+(@SGGUID+145, @CGUID+527, -1), -- Skeletal Usher
+(@SGGUID+146, @CGUID+469, -1), -- Spectral Patron
+(@SGGUID+146, @CGUID+470, -1), -- Spectral Patron
+(@SGGUID+146, @CGUID+471, -1), -- Spectral Patron
+(@SGGUID+146, @CGUID+482, -1), -- Spectral Patron
+(@SGGUID+146, @CGUID+483, -1), -- Spectral Patron
+(@SGGUID+146, @CGUID+484, -1), -- Spectral Patron
+(@SGGUID+146, @CGUID+485, -1), -- Spectral Patron
+(@SGGUID+146, @CGUID+501, -1), -- Spectral Patron
+(@SGGUID+146, @CGUID+992, -1), -- Spectral Patron
+(@SGGUID+146, @CGUID+993, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+479, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+480, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+481, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+492, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+493, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+494, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+496, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+505, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+994, -1), -- Spectral Patron
+(@SGGUID+147, @CGUID+995, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+467, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+468, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+475, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+476, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+477, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+478, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+488, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+503, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+996, -1), -- Spectral Patron
+(@SGGUID+148, @CGUID+997, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+473, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+474, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+486, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+487, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+490, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+491, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+506, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+507, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+998, -1), -- Spectral Patron
+(@SGGUID+149, @CGUID+999, -1), -- Spectral Patron
+(@SGGUID+150, @CGUID+534, -1), -- Spectral Performer
+(@SGGUID+150, @CGUID+540, -1), -- Spectral Performer
+(@SGGUID+151, @CGUID+537, -1), -- Spectral Performer
+(@SGGUID+151, @CGUID+538, -1), -- Spectral Performer
+(@SGGUID+152, @CGUID+533, -1), -- Spectral Performer
+(@SGGUID+152, @CGUID+539, -1), -- Spectral Performer
+(@SGGUID+153, @CGUID+535, -1), -- Spectral Performer
+(@SGGUID+153, @CGUID+536, -1), -- Spectral Performer
+(@SGGUID+154, @CGUID+529, -1), -- Phantom Stagehand
+(@SGGUID+154, @CGUID+530, -1), -- Phantom Stagehand
+(@SGGUID+154, @CGUID+531, -1), -- Phantom Stagehand
+(@SGGUID+155, @CGUID+512, -1), -- spawn_group_entry
+(@SGGUID+155, @CGUID+513, -1), -- spawn_group_entry
+(@SGGUID+155, @CGUID+497, -1), -- spawn_group_entry
+(@SGGUID+155, @CGUID+460, -1), -- spawn_group_entry
+(@SGGUID+155, @CGUID+464, -1), -- spawn_group_entry
+(@SGGUID+155, @CGUID+499, -1), -- spawn_group_entry
+(@SGGUID+156, @CGUID+463, -1), -- spawn_group_entry
+(@SGGUID+156, @CGUID+461, -1), -- spawn_group_entry
+(@SGGUID+156, @CGUID+509, -1), -- spawn_group_entry
+(@SGGUID+156, @CGUID+462, -1), -- spawn_group_entry
+(@SGGUID+156, @CGUID+515, -1), -- spawn_group_entry
+(@SGGUID+156, @CGUID+518, -1), -- spawn_group_entry
+(@SGGUID+157, @CGUID+514, 0), -- Ghostly Philanthropist
+(@SGGUID+157, @CGUID+502, 1), -- Spectral Patron
+(@SGGUID+157, @CGUID+511, 2), -- Spectral Patron
+(@SGGUID+158, @CGUID+508, -1), -- spawn_group_entry
+(@SGGUID+158, @CGUID+489, -1), -- spawn_group_entry
+(@SGGUID+158, @CGUID+521, -1), -- spawn_group_entry
+(@SGGUID+158, @CGUID+554, -1), -- spawn_group_entry
+(@SGGUID+159, @CGUID+430, -1), -- spawn_group_entry
+(@SGGUID+159, @CGUID+466, -1), -- spawn_group_entry
+(@SGGUID+159, @CGUID+510, -1), -- spawn_group_entry
+(@SGGUID+159, @CGUID+517, -1), -- spawn_group_entry
+(@SGGUID+159, @CGUID+551, -1), -- spawn_group_entry
+(@SGGUID+160, @CGUID+500, -1), -- spawn_group_entry
+(@SGGUID+160, @CGUID+465, -1), -- spawn_group_entry
+(@SGGUID+160, @CGUID+516, -1), -- spawn_group_entry
+(@SGGUID+160, @CGUID+552, -1), -- spawn_group_entry
+(@SGGUID+160, @CGUID+553, -1), -- spawn_group_entry
+(@SGGUID+161, @CGUID+495, -1), -- spawn_group_entry
+(@SGGUID+161, @CGUID+520, -1), -- spawn_group_entry
+(@SGGUID+161, @CGUID+504, -1), -- spawn_group_entry
+(@SGGUID+162, @CGUID+519, 0), -- Ghostly Philanthropist
+(@SGGUID+162, @CGUID+472, 1), -- Spectral Patron
+(@SGGUID+162, @CGUID+498, 2); -- Spectral Patron
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Patrol 001'),
 (@SGGUID+63, 1, 3, 0, @SGGUID+63, 2, 'Karazhan - Spectral Sentry | Phantom Guest | Upper Livery Stable Patrol 001'),
 (@SGGUID+126, 2, 3, 0, @SGGUID+126, 2, 'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 001'),
 (@SGGUID+139, 2, 2, 0, @SGGUID+139, 4, 'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001'),
-(@SGGUID+140, 2, 2, 0, @SGGUID+140, 4, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Patrol 002');
+(@SGGUID+140, 2, 2, 0, @SGGUID+140, 4, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Patrol 002'),
+(@SGGUID+157, 4, 3, 0, @SGGUID+157, 4, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 001'),
+(@SGGUID+162, 4, 3, 0, @SGGUID+162, 4, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 002');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+58,'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Patrol 001'),
 (@SGGUID+63,'Karazhan - Spectral Sentry | Phantom Guest | Upper Livery Stable Patrol 001'),
 (@SGGUID+126,'Karazhan - Phase Hound (2) | Servent''s Quarter Patrol 001'),
 (@SGGUID+139,'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001'),
-(@SGGUID+140,'Karazhan - Phantom Guardsman (2) | The Guest Chambers Patrol 002');
+(@SGGUID+140,'Karazhan - Phantom Guardsman (2) | The Guest Chambers Patrol 002'),
+(@SGGUID+157,'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 001'),
+(@SGGUID+162,'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 002');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+58,1,-11119.062,-1955.4576,49.882957,100,0,0),
@@ -3709,26 +3717,65 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+140,24,-10846.696,-1995.0251,92.15176,100,0,0),
 (@SGGUID+140,25,-10840.148,-1995.1738,92.151764,100,0,0),
 (@SGGUID+140,26,-10837.757,-1984.2789,92.151764,100,0,0),
-(@SGGUID+140,27,-10835.076,-1968.5009,93.35488,100,0,0);
+(@SGGUID+140,27,-10835.076,-1968.5009,93.35488,100,0,0),
+(@SGGUID+157,1,-10853.291,-1817.3418,107.65211,100,0,0),
+(@SGGUID+157,2,-10854.301,-1824.8967,107.651474,100,0,0),
+(@SGGUID+157,3,-10856.945,-1834.4891,109.261246,100,0,0),
+(@SGGUID+157,4,-10860.869,-1847.1823,109.261246,100,0,0),
+(@SGGUID+157,5,-10866.72,-1860.2048,110.51116,100,0,0),
+(@SGGUID+157,6,-10870.941,-1866.7227,110.51116,100,0,0),
+(@SGGUID+157,7,-10879.47,-1874.6836,110.51111,100,0,0),
+(@SGGUID+157,8,-10888.249,-1879.1676,111.38604,100,0,0),
+(@SGGUID+157,9,-10898.287,-1880.438,111.39032,100,0,0),
+(@SGGUID+157,10,-10907.798,-1879.6057,111.388855,100,0,0),
+(@SGGUID+157,11,-10916.554,-1877.7357,111.393845,100,0,0),
+(@SGGUID+157,12,-10922.966,-1876.0165,111.386154,100,0,0),
+(@SGGUID+157,13,-10930.705,-1868.3275,110.5111,100,0,0),
+(@SGGUID+157,14,-10939.542,-1856.6754,110.51118,100,0,0),
+(@SGGUID+157,15,-10943.785,-1844.0441,109.26101,100,0,0),
+(@SGGUID+157,16,-10944.968,-1831.1476,109.26129,100,0,0),
+(@SGGUID+157,17,-10944.815,-1822.4271,109.26102,100,0,0),
+(@SGGUID+157,18,-10945.306,-1808.7192,107.6519,100,0,0),
+(@SGGUID+162,1,-10853.216,-1814.6829,121.69863,100,0,0),
+(@SGGUID+162,2,-10853.369,-1822.0712,121.69862,100,0,0),
+(@SGGUID+162,3,-10854.487,-1829.9052,122.504875,100,0,0),
+(@SGGUID+162,4,-10857.309,-1841.0493,123.29238,100,0,0),
+(@SGGUID+162,5,-10860.872,-1852.0968,123.29237,100,0,0),
+(@SGGUID+162,6,-10867.541,-1862.6334,124.54239,100,0,0),
+(@SGGUID+162,7,-10873.423,-1868.6676,124.54238,100,0,0),
+(@SGGUID+162,8,-10883.279,-1875.1191,124.54239,100,0,0),
+(@SGGUID+162,9,-10893.934,-1879.7322,125.41241,100,0,0),
+(@SGGUID+162,10,-10904.841,-1879.0999,125.4174,100,0,0),
+(@SGGUID+162,11,-10916.013,-1876.3314,125.41737,100,0,0),
+(@SGGUID+162,12,-10926.553,-1872.135,124.54239,100,0,0),
+(@SGGUID+162,13,-10934.207,-1864.4043,124.54238,100,0,0),
+(@SGGUID+162,14,-10941.148,-1853.0367,124.54237,100,0,0),
+(@SGGUID+162,15,-10944.294,-1842.1975,123.29237,100,0,0),
+(@SGGUID+162,16,-10945.176,-1829.9506,123.29237,100,0,0),
+(@SGGUID+162,17,-10944.468,-1811.6437,121.69862,100,0,0),
+(@SGGUID+162,18,-10944.01,-1805.0154,121.69862,100,0,0);
 
-DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 65401);
+DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 65400, 65500);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (2315, 'Karazhan - Midnight - Encounter completed'),
 (2309, 'Karazhan - Moroes - Encounter completed'),
 -- From our wiki: The ones without it filled out have instance_dungeon_encounters.Id * 100 + 2-99. 0 and 1 are always reserved by Core for "Alive" & "Killed".
-(65400, 'Karazhan - Maiden of the Virtue - Encounter completed'); 
+(65400, 'Karazhan - Maiden of the Virtue - Encounter completed'), 
+(65500, 'Karazhan - Opera Event - Encounter completed');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, 2315, 1, 0, 0, 0, 'Midnight - Trash Respawn'),
 (@SGGUID+2, 42, 2309, 1, 0, 0, 0, 'Moroes - Trash Respawn'),
-(@SGGUID+3, 42, 65400, 1, 0, 0, 0, 'Maiden of the Virtue - Trash Respawn');
+(@SGGUID+3, 42, 65400, 1, 0, 0, 0, 'Maiden of the Virtue - Trash Respawn'),
+(@SGGUID+4, 42, 65500, 1, 0, 0, 0, 'Opera Event - Trash Respawn');
+
 
 -- =========
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1568701,1568702,1568703,1568704,1568705,1568706,1646801,1647001,1555101);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1568701,1568702,1568703,1568704,1568705,1568706,1555101);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1568701, 0, 31, 17007, 30, 0, 0, 0, 0, -25000, 0, 0, 0, 0, 0, 0, 0, 'Terminate Script If Lady Keira Berrybuck Is Not Found in Range'),
 (1568701, 1000, 0, 0, 0, 0, 17007, 30, 3, 13198, 13201, 0, 0, 0, 0, 0, 0, 'Lady Keira Berrybuck Random Say'),
@@ -3748,8 +3795,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1568706, 0, 31, 19876, 30, 0, 0, 0, 0, -25000, 0, 0, 0, 0, 0, 0, 0, 'Terminate Script If Lord Robin Daris Is Not Found in Range'),
 (1568706, 1000, 0, 0, 0, 0, 19876, 30, 3, 13198, 13201, 0, 0, 0, 0, 0, 0, 'Lord Robin Daris Random Say'),
 (1568706, 6000, 0, 0, 0, 0, 19876, 30, 1, 13202, 13204, 13206, 0, 0, 0, 0, 0, 'Moroes Random Say'),
-(1646801, 1000, 1, 1, 0, 0, 0, 0, 0, 6, 273, 274, 11, 0, 0, 0, 0, 'Spectral Patron - EMOTE_ONESHOT_TALK'),
-(1647001, 1000, 1, 274, 0, 0, 0, 0, 0, 1, 11, 6, 273, 0, 0, 0, 0, 'Ghostly Philanthropist - EMOTE_ONESHOT_NO'),
 (1555101, 0, 0, 0, 0, 0, 0, 0, 0, 13806, 13804, 13805, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Random Say');
 
 -- Delete some old used dbscripts_on_creature_movement that no longer getting used to fix dberrors
