@@ -1,5 +1,6 @@
 -- https://github.com/cmangos/classic-db/commit/614cfbd424c859a43fb7100b3feccec08488d6bf
 DELETE FROM `creature` WHERE (`guid` IN (21698, 21660, 21661));
+DELETE FROM `creature_addon` WHERE (`guid` IN (21698, 21660, 21661));
 DELETE FROM `creature_linking` WHERE (`master_guid` = 21698);
 DELETE FROM `creature_movement` WHERE (`Id` IN (21698, 21660, 21661));
 
