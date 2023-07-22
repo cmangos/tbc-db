@@ -2548,7 +2548,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Forest Spider (2.4.2 Official Data)
 ('3001','30','11','0','100','0','0','0','0','0','0','0','11','11959','0','34','0','0','0','0','0','0','0','0','Forest Spider - Cast Poison Proc on Spawn'),
 -- Defias Thug 38
-('3801','38','4','0','30','0','0','0','0','0','0','0','1','1866','1865','1867','0','0','0','0','0','0','0','0','Defias Thug - Random Say on Aggro'),
+('3801','38','4','0','30','0','0','0','0','0','0','0','54','0','0','35','0','0','0','0','0','0','0','0','Defias Thug - Random Say on Aggro'),
 ('3802','38','30','0','100','1','5','38','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Defias Thug - Set Phase 1 on Receive AI Event Custom A'),
 ('3803','38','1','1','100','1','1000','6000','7000','16000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Defias Thug - Emote on OOC Timer (Phase 1)'),
 -- Kobold Miner (2.4.2 Official Data)
@@ -2575,8 +2575,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('7902','79','0','0','100','1025','2000','4000','18000','29000','0','0','11','9128','0','0','0','0','0','0','0','0','0','0','Narg the Taskmaster - Cast Battleshout'),
 -- Kobold Labourer 80 (2.4.2 Official Data)
 ('8001','80','4','0','10','0','0','0','0','0','0','0','1','1868','1864','0','0','0','0','0','0','0','0','0','Kobold Labourer - Random Say on Aggro'),
--- Defias Cutpurse (2.4.2 Official Data)
-('9401','94','33','0','100','1025','0','0','2400','7900','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Defias Cutpurse - Cast Backstab on Facing Target Back'),
+-- Defias Cutpurse 94
+('9401','94','4','0','25','0','0','0','0','0','0','0','54','0','0','36','0','0','0','0','0','0','0','0','Defias Cutpurse - Random Say on Aggro'),
+('9402','94','33','0','100','1025','0','0','2400','7900','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Defias Cutpurse - Cast Backstab on Facing Target Back'),
 -- Riverpaw Runt (2.4.2 Official Data)
 ('9701','97','4','0','30','0','0','0','0','0','0','0','1','1871','1870','0','0','0','0','0','0','0','0','0','Riverpaw Runt - Random Say on Aggro'),
 ('9702','97','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Riverpaw Runt - Flee at 15% HP'),
@@ -2586,6 +2587,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('9903','99','33','0','100','1025','0','0','3400','5400','0','0','11','53','1','0','0','0','0','0','0','0','0','0','Morgaine the Sly - Cast Backstab on Facing Target Back'),
 -- Gruff Swiftbite 100
 ('10001','100','11','0','100','0','0','0','0','0','0','0','11','3417','0','34','0','0','0','0','0','0','0','0','Gruff Swiftbite - Cast Thrash on Spawn'),
+('10002','100','4','0','20','0','0','0','0','0','0','0','1','1871','1870','0','0','0','0','0','0','0','0','0','Gruff Swiftbite - Say on Aggro'),
 -- Garrick Padfoot (2.4.2 Official Data)
 ('10301','103','4','0','100','0','0','0','0','0','0','0','11','7164','0','0','0','0','0','0','0','0','0','0','Garrick Padfoot - Cast Defensive Stance on Aggro'),
 ('10302','103','0','0','100','0','1000','1000','0','0','0','0','54','0','0','35','0','0','0','0','0','0','0','0','Garrick Padfoot - Random Say on Aggro'),
@@ -2777,7 +2779,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Erma (6749) - NSR
 -- Falkhaan Isenstrider (6774) - NSR
 -- Melika Isenstrider (6778) - NSR
--- Defias Dockmaster 6846 (2.4.2 Official Data)
+-- Defias Dockmaster 6846 - Say on Detect Invisibility
 ('684601','6846','4','0','100','0','0','0','0','0','0','0','1','2867','0','0','0','0','0','0','0','0','0','0','Defias Dockmaster - Say on Aggro'),
 ('684602','6846','0','0','100','0','1500','1500','0','0','0','0','32','6866','1','4','32','6866','1','5','32','6866','1','6','Defias Dockmaster - Spawn 3 Defias Bodyguards 6866 on Aggro'),
 -- Defias Bodyguard 6866 (2.4.2 Official Data)
