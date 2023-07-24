@@ -107,7 +107,7 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+1, 'Gruuls\'Lair - High King Maulgar | Group 1', 0, 0, 0, 7), -- aggro, respawn and evade together
+(@SGGUID+1, 'Gruuls\'Lair - High King Maulgar | Group 1', 0, 0, @SGGUID+1, 7), -- aggro, respawn and evade together
 (@SGGUID+2, 'Gruuls\'Lair - Gruul | Group 1', 0, 0, 0, 0),
 (@SGGUID+3, 'Gruuls\'Lair - Lair Brute | Patrol', 0, 0, @SGGUID+1, 0),
 (@SGGUID+4, 'Gruuls\'Lair - Lair Brute | Gronn-Priest | Group 2', 0, 0, @SGGUID+1, 3), -- aggro and respawn together
