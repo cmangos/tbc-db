@@ -1854,7 +1854,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+673, 16529, 532, 1, -11330.1, -1806.31, 179.73, 0.0933698, 7200, 7200, 0, 0), -- Magical Horror
 (@CGUID+674, 16529, 532, 1, -11317, -1765.21, 179.73, 0.0156188, 7200, 7200, 0, 0), -- Magical Horror
 (@CGUID+675, 16529, 532, 1, -11332.2, -1781.55, 179.734, 3.55024, 7200, 7200, 0, 0), -- Magical Horror
-(@CGUID+676, 16529, 532, 1, -11333.7, -1756.71, 179.735, 4.51288, 7200, 7200, 0, 0), -- Magical Horror
+(@CGUID+676, 16529, 532, 1, -11338.946, -1759.9833, 179.73015, 4.20948, 7200, 7200, 0, 0), -- Magical Horror
 (@CGUID+677, 16530, 532, 1, -11327.7, -1779.36, 179.735, 3.70471, 7200, 7200, 0, 0), -- Mana Warp
 (@CGUID+678, 16530, 532, 1, -11337.3, -1757.36, 179.735, 4.77285, 7200, 7200, 0, 0), -- Mana Warp
 (@CGUID+679, 16530, 532, 1, -11326.6, -1805.98, 179.73, 1.78636, 7200, 7200, 0, 0), -- Mana Warp
@@ -3642,23 +3642,19 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+183, @CGUID+641, -1), -- Arcane Protector
 (@SGGUID+183, @CGUID+642, -1), -- Arcane Protector
 (@SGGUID+183, @CGUID+643, -1), -- Arcane Protector
-
 (@SGGUID+184, @CGUID+675, 0), -- Magical Horror
 (@SGGUID+184, @CGUID+686, 1), -- Mana Warp left
 (@SGGUID+184, @CGUID+687, 2), -- Mana Warp right
 (@SGGUID+184, @CGUID+677, 3), -- Mana Warp behind
-
 (@SGGUID+185, @CGUID+673, 0), -- Magical Horror
 (@SGGUID+185, @CGUID+679, 1), -- Mana Warp
-(@SGGUID+185, @CGUID+682, 1), -- Mana Warp
-
+(@SGGUID+185, @CGUID+682, 2), -- Mana Warp
 (@SGGUID+186, @CGUID+676, 0), -- Magical Horror
 (@SGGUID+186, @CGUID+678, 1), -- Mana Warp
-(@SGGUID+186, @CGUID+685, 1), -- Mana Warp
-
+(@SGGUID+186, @CGUID+685, 2), -- Mana Warp
 (@SGGUID+187, @CGUID+674, 0), -- Magical Horror
 (@SGGUID+187, @CGUID+683, 1), -- Mana Warp
-(@SGGUID+187, @CGUID+684, 1); -- Mana Warp
+(@SGGUID+187, @CGUID+684, 2); -- Mana Warp
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Patrol 001'),
@@ -3673,7 +3669,10 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+167, 4, 4, 0, 0, 1, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 004'),
 (@SGGUID+168, 4, 4, 0, 0, 1, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 005'),
 (@SGGUID+169, 4, 4, 0, 0, 1, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 006'),
-(@SGGUID+170, 4, 4, 0, 0, 1, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 007');
+(@SGGUID+170, 4, 4, 0, 0, 1, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 007'),
+(@SGGUID+185, 6, 4, 0, @SGGUID+185, 4, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 014'),
+(@SGGUID+186, 6, 4, 0, @SGGUID+186, 4, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 015'),
+(@SGGUID+187, 6, 4, 0, @SGGUID+187, 4, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 016');
 
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
@@ -3683,7 +3682,10 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+139,'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001'),
 (@SGGUID+140,'Karazhan - Phantom Guardsman (2) | The Guest Chambers Patrol 002'),
 (@SGGUID+157,'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 001'),
-(@SGGUID+162,'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 002');
+(@SGGUID+162,'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 002'),
+(@SGGUID+185,'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 014'),
+(@SGGUID+186,'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 015'),
+(@SGGUID+187,'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 016');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+58,1,-11119.062,-1955.4576,49.882957,100,0,0),
@@ -3817,7 +3819,26 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+162,15,-10944.294,-1842.1975,123.29237,100,0,0),
 (@SGGUID+162,16,-10945.176,-1829.9506,123.29237,100,0,0),
 (@SGGUID+162,17,-10944.468,-1811.6437,121.69862,100,0,0),
-(@SGGUID+162,18,-10944.01,-1805.0154,121.69862,100,0,0);
+(@SGGUID+162,18,-10944.01,-1805.0154,121.69862,100,0,0),
+-- Right Group
+(@SGGUID+185,1,-11330.125,-1806.31,179.73013,100,30000,0),
+(@SGGUID+185,2,-11334.648,-1806.7336,179.73013,100,0,0),
+(@SGGUID+185,3,-11340.013,-1806.2612,179.73015,100,0,0),
+(@SGGUID+185,4,-11345.853,-1804.0955,179.73015,100,0,0),
+(@SGGUID+185,5,-11350.451,-1800.9005,179.73015,100,30000,0),
+-- left group
+(@SGGUID+186,1,-11338.766,-1757.1305,179.73015,100,30000,0),
+(@SGGUID+186,2,-11341.294,-1760.7415,179.73016,100,0,0),
+(@SGGUID+186,3,-11348.104,-1762.9196,179.73015,100,0,0),
+(@SGGUID+186,4,-11351.775,-1765.7008,179.73015,100,0,0),
+(@SGGUID+186,5,-11354.524,-1769.1731,179.73015,100,0,0),
+(@SGGUID+186,6,-11356.301,-1773.1528,179.73015,100,0,0),
+(@SGGUID+186,7,-11357.377,-1776.5739,179.73015,100,30000,0),
+-- back group
+(@SGGUID+187,1,-11316.958,-1765.2052,179.73015,100,30000,0),
+(@SGGUID+187,2,-11313.794,-1769.3414,179.73015,100,0,0),
+(@SGGUID+187,3,-11311.207,-1774.7487,179.73015,100,0,0),
+(@SGGUID+187,4,-11310.209,-1780.4564,179.73013,100,30000,0);
 
 DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 2501, 2910, 65400, 65500);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
