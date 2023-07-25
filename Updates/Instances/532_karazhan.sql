@@ -584,71 +584,104 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+531,22,-10848.797,-1779.3268,97.66739,100,0,0),
 (@CGUID+531,23,-10846.589,-1781.2029,97.66739,100,0,0),
 (@CGUID+531,24,-10846.589,-1781.2029,97.66739,6.03883,15000,0),
-(@CGUID+636, 1, -11231.8, -1900.95, 145.87, 0, 0, 0),
-(@CGUID+636, 2, -11248.4, -1896.78, 140.123, 0, 0, 0),
-(@CGUID+636, 3, -11262.1, -1880.44, 135.936, 0, 0, 0),
-(@CGUID+636, 4, -11259.1, -1874.63, 135.926, 0, 0, 0),
-(@CGUID+636, 5, -11246.6, -1865.02, 136.009, 0, 0, 0),
-(@CGUID+636, 6, -11239, -1874.89, 136.015, 0, 0, 0),
-(@CGUID+636, 7, -11246.3, -1865.11, 136.01, 0, 0, 0),
-(@CGUID+636, 8, -11258.8, -1874.89, 135.928, 0, 0, 0),
-(@CGUID+636, 9, -11261.9, -1880.76, 135.937, 0, 0, 0),
-(@CGUID+636, 10, -11248, -1897.07, 140.302, 0, 0, 0),
-(@CGUID+636, 11, -11231.5, -1901.35, 145.99, 0, 0, 0),
-(@CGUID+636, 12, -11212.9, -1889.02, 152.054, 0, 0, 0),
-(@CGUID+637, 1, -11251.4, -1817.7, 135.816, 0, 0, 0),
-(@CGUID+637, 2, -11268.2, -1836.84, 135.762, 0, 0, 0),
-(@CGUID+637, 3, -11261.2, -1847.36, 135.978, 0, 0, 0),
-(@CGUID+637, 4, -11264.2, -1862.18, 135.827, 0, 0, 0),
-(@CGUID+637, 5, -11273.4, -1870.83, 135.972, 0, 0, 0),
-(@CGUID+637, 6, -11263.8, -1862.24, 135.83, 0, 0, 0),
-(@CGUID+637, 7, -11260.8, -1846.81, 135.986, 0, 0, 0),
-(@CGUID+637, 8, -11268, -1836.53, 135.763, 0, 0, 0),
-(@CGUID+637, 9, -11250.9, -1816.64, 135.816, 0, 0, 0),
-(@CGUID+637, 10, -11244.6, -1801.06, 135.803, 0, 0, 0),
-(@CGUID+638, 1, -11194.1, -1821.54, 136.024, 0, 0, 0),
-(@CGUID+638, 2, -11215.5, -1822, 136.024, 0, 0, 0),
-(@CGUID+638, 3, -11239.6, -1839.72, 136.024, 0, 0, 0),
-(@CGUID+638, 4, -11245.6, -1857.72, 136.022, 0, 0, 0),
-(@CGUID+638, 5, -11241.4, -1835.27, 136.023, 0, 0, 0),
-(@CGUID+638, 6, -11224.3, -1823.27, 136.023, 0, 0, 0),
-(@CGUID+638, 7, -11200.6, -1820.74, 136.023, 0, 0, 0),
-(@CGUID+638, 8, -11190.8, -1824.72, 136.023, 0, 0, 0),
-(@CGUID+638, 9, -11170.9, -1848.01, 136.023, 0, 0, 0),
-(@CGUID+639, 1, -11219.1, -1752.89, 136.007, 0, 0, 0),
-(@CGUID+639, 2, -11238.2, -1764.89, 135.817, 0, 0, 0),
-(@CGUID+639, 3, -11268.9, -1726.28, 136.019, 0, 0, 0),
-(@CGUID+639, 4, -11236.7, -1765.4, 135.829, 0, 0, 0),
-(@CGUID+639, 5, -11198.4, -1738.05, 136.022, 0, 0, 0),
-(@CGUID+640, 1, -11238.3, -1817.63, 136.004, 0, 0, 0),
-(@CGUID+640, 2, -11217.6, -1801.54, 136.022, 0, 0, 0),
-(@CGUID+640, 3, -11202.9, -1789.49, 136.022, 0, 0, 0),
-(@CGUID+640, 4, -11175.4, -1821.66, 136.022, 0, 0, 0),
-(@CGUID+640, 5, -11202.9, -1789.49, 136.022, 0, 0, 0),
-(@CGUID+640, 6, -11216.9, -1801.61, 136.022, 0, 0, 0),
-(@CGUID+640, 7, -11238.4, -1818.21, 136.009, 0, 0, 0),
-(@CGUID+640, 8, -11252.9, -1830.34, 135.917, 0, 0, 0),
-(@CGUID+641, 1, -11266.3, -1745.74, 135.928, 0, 0, 0),
-(@CGUID+641, 2, -11247.9, -1770.72, 135.736, 0, 0, 0),
-(@CGUID+641, 3, -11249, -1792.63, 135.723, 0, 0, 0),
-(@CGUID+641, 4, -11247.5, -1770.95, 135.74, 0, 0, 0),
-(@CGUID+641, 5, -11267.4, -1745.98, 135.925, 0, 0, 0),
-(@CGUID+641, 6, -11283.6, -1757.37, 135.791, 0, 0, 0),
-(@CGUID+642, 1, -11279.7, -1806.4, 148.078, 0, 0, 0),
-(@CGUID+642, 2, -11290.3, -1822.48, 153.007, 0, 0, 0),
-(@CGUID+642, 3, -11322.5, -1849.88, 164.839, 0, 0, 0),
-(@CGUID+642, 4, -11358.7, -1881.45, 171.358, 0, 0, 0),
-(@CGUID+642, 5, -11322, -1850.02, 164.726, 0, 0, 0),
-(@CGUID+642, 6, -11290.2, -1823.18, 153.166, 0, 0, 0),
-(@CGUID+642, 7, -11280, -1807.5, 148.394, 0, 0, 0),
-(@CGUID+642, 8, -11275.1, -1789.34, 142.365, 0, 0, 0),
-(@CGUID+642, 9, -11274.3, -1773.43, 136.5, 0, 0, 0),
-(@CGUID+642, 10, -11282.3, -1750.99, 135.87, 0, 0, 0),
-(@CGUID+642, 11, -11299.9, -1733.62, 136.038, 0, 0, 0),
-(@CGUID+642, 12, -11281.7, -1751.06, 135.868, 0, 0, 0),
-(@CGUID+642, 13, -11274.2, -1769.19, 135.596, 0, 0, 0),
-(@CGUID+643, 1, -11354.8, -1867.72, 171.469, 0, 0, 0),
-(@CGUID+643, 2, -11383.2, -1836.92, 179.066, 0, 0, 0),
+-- reworked
+(@CGUID+636,1,-11234.652,-1902.2678,144.80687,100,0,0),
+(@CGUID+636,2,-11242.376,-1901.0875,142.21738,100,0,0),
+(@CGUID+636,3,-11250.143,-1895.2155,139.11664,100,0,0),
+(@CGUID+636,4,-11257.955,-1886.3018,135.98216,100,0,0),
+(@CGUID+636,5,-11260.844,-1878.108,135.92447,100,0,0),
+(@CGUID+636,6,-11255.884,-1871.2458,135.91449,100,0,0),
+(@CGUID+636,7,-11248.533,-1868.3633,135.99532,100,0,0),
+(@CGUID+636,8,-11242.855,-1871.226,135.99905,100,0,0),
+(@CGUID+636,9,-11255.884,-1871.2458,135.91449,100,0,0),
+(@CGUID+636,10,-11260.844,-1878.108,135.92447,100,0,0),
+(@CGUID+636,11,-11258.019,-1886.2291,135.98065,100,0,0),
+(@CGUID+636,12,-11250.143,-1895.2155,139.11664,100,0,0),
+(@CGUID+636,13,-11242.376,-1901.0875,142.21738,100,0,0),
+(@CGUID+636,14,-11234.652,-1902.2678,144.80687,100,0,0),
+(@CGUID+636,15,-11226.246,-1898.772,147.91463,100,0,0),
+(@CGUID+636,16,-11218.449,-1893.0543,151.34467,100,0,0),
+(@CGUID+636,17,-11213.536,-1889.4314,152.04805,100,0,0),
+(@CGUID+636,18,-11226.246,-1898.772,147.91463,100,0,0),
+(@CGUID+637,1,-11269.297,-1871.5432,135.94835,100,0,0),
+(@CGUID+637,2,-11261.842,-1866.3837,135.85799,100,0,0),
+(@CGUID+637,3,-11260.148,-1858.1432,135.82002,100,0,0),
+(@CGUID+637,4,-11265.347,-1850.7305,135.75291,100,0,0),
+(@CGUID+637,5,-11269.364,-1844.9835,135.70094,100,0,0),
+(@CGUID+637,6,-11273.001,-1840.8385,135.65984,100,0,0),
+(@CGUID+637,7,-11266.448,-1833.0944,135.74219,100,0,0),
+(@CGUID+637,8,-11259.613,-1821.1395,135.7157,100,0,0),
+(@CGUID+637,9,-11255.973,-1811.1375,135.70863,100,0,0),
+(@CGUID+637,10,-11254.315,-1802.0162,135.67534,100,0,0),
+(@CGUID+638,1,-11244.635,-1861.6107,136.00499,100,0,0),
+(@CGUID+638,2,-11243.633,-1849.3298,136.01608,100,0,0),
+(@CGUID+638,3,-11240.205,-1838.5823,136.01138,100,0,0),
+(@CGUID+638,4,-11232.055,-1829.1354,136.01138,100,0,0),
+(@CGUID+638,5,-11222.885,-1823.4156,136.01138,100,0,0),
+(@CGUID+638,6,-11214.087,-1820.8082,136.01137,100,0,0),
+(@CGUID+638,7,-11200.884,-1822.6813,136.01137,100,0,0),
+(@CGUID+638,8,-11190.939,-1827.63,136.01114,100,0,0),
+(@CGUID+638,9,-11181.966,-1835.762,136.01112,100,0,0),
+(@CGUID+638,10,-11173.904,-1843.7567,136.01112,100,0,0),
+(@CGUID+639,1,-11207.726,-1741.2073,136.01138,100,0,0),
+(@CGUID+639,2,-11217.438,-1749.0182,135.99788,100,0,0),
+(@CGUID+639,3,-11228.104,-1756.5549,135.97401,100,0,0),
+(@CGUID+639,4,-11235.162,-1761.6926,135.9174,100,0,0),
+(@CGUID+639,5,-11228.954,-1769.4824,135.9033,100,0,0),
+(@CGUID+639,6,-11221.928,-1778.9088,135.90015,100,0,0),
+(@CGUID+639,7,-11217.406,-1784.903,135.9538,100,0,0),
+(@CGUID+639,8,-11227.848,-1792.5315,135.9404,100,0,0),
+(@CGUID+639,9,-11236.382,-1798.8492,135.89545,100,0,0),
+(@CGUID+639,10,-11244.46,-1804.8809,135.81401,100,0,0),
+(@CGUID+640,1,-11179.357,-1819.6996,136.01114,100,0,0),
+(@CGUID+640,2,-11184.585,-1812.9401,136.01114,100,0,0),
+(@CGUID+640,3,-11191.397,-1804.2574,136.01115,100,0,0),
+(@CGUID+640,4,-11196.627,-1797.484,136.01112,100,0,0),
+(@CGUID+640,5,-11201.327,-1791.2985,136.01138,100,0,0),
+(@CGUID+640,6,-11207.811,-1796.5381,136.0114,100,0,0),
+(@CGUID+640,7,-11213.821,-1801.6233,136.01138,100,0,0),
+(@CGUID+640,8,-11220.307,-1807.0294,136.01138,100,0,0),
+(@CGUID+640,9,-11227.366,-1813.0164,136.01138,100,0,0),
+(@CGUID+640,10,-11235.879,-1820.589,136.01138,100,0,0),
+(@CGUID+640,11,-11243.814,-1827.6565,136.01138,100,0,0),
+(@CGUID+640,12,-11250.698,-1833.699,135.97995,100,0,0),
+(@CGUID+641,1,-11262.073,-1745.61,135.93542,100,0,0),
+(@CGUID+641,2,-11254.743,-1754.2867,135.89478,100,0,0),
+(@CGUID+641,3,-11248.54,-1762.4084,135.76776,100,0,0),
+(@CGUID+641,4,-11244.443,-1772.4609,135.75342,100,0,0),
+(@CGUID+641,5,-11244.246,-1781.3795,135.7957,100,0,0),
+(@CGUID+641,6,-11244.443,-1772.4609,135.75342,100,0,0),
+(@CGUID+641,7,-11248.54,-1762.4084,135.76776,100,0,0),
+(@CGUID+641,8,-11254.743,-1754.2867,135.89478,100,0,0),
+(@CGUID+641,9,-11262.073,-1745.61,135.93542,100,0,0),
+(@CGUID+641,10,-11269.613,-1736.4952,136.00697,100,0,0),
+(@CGUID+641,11,-11277.36,-1727.5326,136.01083,100,0,0),
+(@CGUID+641,12,-11284.054,-1733.3395,136.01456,100,0,0),
+(@CGUID+641,13,-11290.676,-1739.1726,136.01823,100,0,0),
+(@CGUID+641,14,-11284.054,-1733.3395,136.01456,100,0,0),
+(@CGUID+641,15,-11277.36,-1727.5326,136.01083,100,0,0),
+(@CGUID+641,16,-11269.613,-1736.4952,136.00697,100,0,0),
+(@CGUID+642,1,-11282.719,-1747.2125,135.91495,100,0,0),
+(@CGUID+642,2,-11278.085,-1756.3627,135.8214,100,0,0),
+(@CGUID+642,3,-11275.22,-1766.3102,135.6382,100,0,0),
+(@CGUID+642,4,-11274.691,-1776.3484,137.43626,100,0,0),
+(@CGUID+642,5,-11275.114,-1787.6228,141.67157,100,0,0),
+(@CGUID+642,6,-11278.173,-1801.4655,146.54819,100,0,0),
+(@CGUID+642,7,-11283.93,-1812.7236,149.86386,100,0,0),
+(@CGUID+642,8,-11295.427,-1825.6823,154.9022,100,0,0),
+(@CGUID+642,9,-11307.174,-1836.3917,159.4869,100,0,0),
+(@CGUID+642,10,-11315.685,-1843.8234,162.48993,100,0,0),
+(@CGUID+642,11,-11324.192,-1851.0717,165.1561,100,0,0),
+(@CGUID+642,12,-11334.766,-1860.4056,167.11708,100,0,0),
+(@CGUID+643,1,-11346.433,-1851.5946,170.19037,100,0,0),
+(@CGUID+643,2,-11353.817,-1857.5533,171.80334,100,0,0),
+(@CGUID+643,3,-11360.403,-1862.5851,172.39963,100,0,0),
+(@CGUID+643,4,-11366.273,-1855.2086,173.61658,100,0,0),
+(@CGUID+643,5,-11372.065,-1847.9648,175.13911,100,0,0),
+(@CGUID+643,6,-11378.154,-1839.9221,177.20697,100,0,0),
+(@CGUID+643,7,-11384.107,-1832.3479,179.37885,100,0,0),
+(@CGUID+643,8,-11389.809,-1824.9479,179.73013,100,0,0),
+(@CGUID+643,9,-11395.728,-1817.1012,179.73013,100,0,0),
 (@CGUID+647, 1, -11349.1, -1792.35, 179.735, 0, 0, 0),
 (@CGUID+647, 2, -11351.3, -1750.06, 179.735, 0, 0, 0),
 (@CGUID+647, 3, -11344.3, -1784.9, 179.735, 0, 0, 0),
@@ -1055,73 +1088,12 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (22524, 0, 0, 1, 0, 0, NULL); -- Karazhan - Chess, Victory Controller
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+564, @CGUID+563, 1167), -- Arcane Watchman -> Arcane Watchman
-(@CGUID+563, @CGUID+644, 1024), -- Arcane Watchman -> Shade of Aran
-(@CGUID+584, @CGUID+583, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+585, @CGUID+583, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+583, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+578, @CGUID+572, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+579, @CGUID+572, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+580, @CGUID+572, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+572, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
-(@CGUID+603, @CGUID+575, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+604, @CGUID+575, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+605, @CGUID+575, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+575, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
-(@CGUID+599, @CGUID+574, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+600, @CGUID+574, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+601, @CGUID+574, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+574, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
-(@CGUID+577, @CGUID+590, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+591, @CGUID+590, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+590, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+593, @CGUID+592, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+594, @CGUID+592, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+592, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+597, @CGUID+596, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+598, @CGUID+596, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+596, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+576, @CGUID+571, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+581, @CGUID+571, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+595, @CGUID+571, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+571, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
-(@CGUID+588, @CGUID+589, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+602, @CGUID+589, 1167), -- Mana Feeder -> Mana Feeder
-(@CGUID+589, @CGUID+644, 1024), -- Mana Feeder -> Shade of Aran
-(@CGUID+582, @CGUID+573, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+586, @CGUID+573, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+587, @CGUID+573, 1167), -- Mana Feeder -> Chaotic Sentience
-(@CGUID+573, @CGUID+644, 1024), -- Chaotic Sentience -> Shade of Aran
-(@CGUID+636, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
-(@CGUID+637, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
-(@CGUID+638, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
-(@CGUID+639, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
-(@CGUID+640, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
-(@CGUID+641, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
-(@CGUID+642, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
-(@CGUID+643, @CGUID+644, 1024), -- Arcane Protector -> Shade of Aran
 (@CGUID+647, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
 (@CGUID+652, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
 (@CGUID+653, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
 (@CGUID+654, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
 (@CGUID+655, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
 (@CGUID+656, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+679, @CGUID+673, 1679), -- Mana Warp -> Magical Horror
-(@CGUID+682, @CGUID+673, 1679), -- Mana Warp -> Magical Horror
-(@CGUID+673, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
-(@CGUID+677, @CGUID+675, 1167), -- Mana Warp -> Magical Horror
-(@CGUID+686, @CGUID+675, 1167), -- Mana Warp -> Magical Horror
-(@CGUID+687, @CGUID+675, 1167), -- Mana Warp -> Magical Horror
-(@CGUID+675, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
-(@CGUID+680, @CGUID+672, 1167), -- Mana Warp -> Magical Horror
-(@CGUID+681, @CGUID+672, 1167), -- Mana Warp -> Magical Horror
-(@CGUID+672, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
-(@CGUID+678, @CGUID+676, 1679), -- Mana Warp -> Magical Horror
-(@CGUID+685, @CGUID+676, 1679), -- Mana Warp -> Magical Horror
-(@CGUID+676, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
-(@CGUID+683, @CGUID+674, 1679), -- Mana Warp -> Magical Horror
-(@CGUID+684, @CGUID+674, 1679), -- Mana Warp -> Magical Horror
-(@CGUID+674, @CGUID+644, 1024), -- Magical Horror -> Shade of Aran
 (@CGUID+649, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
 (@CGUID+650, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
 (@CGUID+651, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
@@ -1778,41 +1750,41 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+568, 16488, 532, 1, -11066.2, -1807.43, 165.765, 1.7635, 3600, 3600, 5, 1), -- Arcane Anomaly
 (@CGUID+569, 16488, 532, 1, -11102.6, -1845.36, 165.765, 0.646839, 3600, 3600, 5, 1), -- Arcane Anomaly
 (@CGUID+570, 16488, 532, 1, -11068.9, -1844.65, 165.765, 0.810944, 3600, 3600, 5, 1), -- Arcane Anomaly
-(@CGUID+571, 16489, 532, 1, -11210.7, -1729.92, 136.022, 4.50816, 7200, 7200, 3, 1), -- Chaotic Sentience
-(@CGUID+572, 16489, 532, 1, -11160.7, -1798.34, 136.01, 4.04642, 7200, 7200, 3, 1), -- Chaotic Sentience
-(@CGUID+573, 16489, 532, 1, -11287.7, -1727.16, 136.032, 5.23544, 7200, 7200, 3, 1), -- Chaotic Sentience
-(@CGUID+574, 16489, 532, 1, -11197.9, -1783.47, 136.009, 3.77232, 7200, 7200, 3, 1), -- Chaotic Sentience
-(@CGUID+575, 16489, 532, 1, -11272.1, -1843.55, 135.692, 5.17838, 7200, 7200, 3, 1), -- Chaotic Sentience
-(@CGUID+576, 16491, 532, 1, -11208.5, -1721.65, 136.022, 4.28197, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+577, 16491, 532, 1, -11222.1, -1765.86, 135.98, 3.58225, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+578, 16491, 532, 1, -11154.5, -1805.92, 136.022, 2.81099, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+579, 16491, 532, 1, -11140.6, -1796.57, 136.022, 0.97944, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+580, 16491, 532, 1, -11152.6, -1790.11, 136.001, 1.03441, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+581, 16491, 532, 1, -11201.8, -1724.36, 136.022, 0.186117, 7200, 7200, 3, 1), -- Mana Feeder
+(@CGUID+571, 16489, 532, 1, -11193.9, -1745.98, 136.107, 2.60054, 7200, 7200, 2, 1), -- Chaotic Sentience
+(@CGUID+572, 16489, 532, 1, -11157.9, -1797.88, 136.097, 3.6208, 7200, 7200, 2, 1), -- Chaotic Sentience
+(@CGUID+573, 16489, 532, 1, -11272.3, -1717.92, 136.008, 3.18353, 7200, 7200, 2, 1), -- Chaotic Sentience
+(@CGUID+574, 16489, 532, 1, -11197.1, -1788.18, 136.093, 0.366519, 7200, 7200, 2, 1), -- Chaotic Sentience
+(@CGUID+575, 16489, 532, 1, -11272.1, -1843.55, 135.692, 5.17838, 7200, 7200, 2, 1), -- Chaotic Sentience
+(@CGUID+576, 16491, 532, 1, -11210.8, -1725.77, 136.011, 1.15323, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+577, 16491, 532, 1, -11217.5, -1766.16, 136.083, 2.04204, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+578, 16491, 532, 1, -11153.4, -1802.4, 136.107, 1.47646, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+579, 16491, 532, 1, -11144.3, -1797.32, 136.011, 3.54562, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+580, 16491, 532, 1, -11155.5, -1790.93, 135.976, 4.98387, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+581, 16491, 532, 1, -11203.3, -1724.27, 136.011, 4.6862, 7200, 7200, 2, 1), -- Mana Feeder
 (@CGUID+582, 16491, 532, 1, -11280.7, -1727.23, 136.029, 5.49933, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+583, 16491, 532, 1, -11183.3, -1835.13, 136.024, 4.70713, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+584, 16491, 532, 1, -11185.4, -1837.69, 136.024, 2.51195, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+585, 16491, 532, 1, -11185.5, -1835.85, 136.024, 1.64801, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+586, 16491, 532, 1, -11278, -1715.14, 136.027, 5.36424, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+587, 16491, 532, 1, -11271.2, -1714.82, 136.022, 5.71767, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+588, 16491, 532, 1, -11247.4, -1746.51, 135.98, 4.58913, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+589, 16491, 532, 1, -11235.5, -1751.33, 135.979, 2.65784, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+590, 16491, 532, 1, -11214.2, -1760.62, 136, 3.89398, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+591, 16491, 532, 1, -11216.1, -1773.54, 135.988, 3.77617, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+592, 16491, 532, 1, -11234.5, -1837.04, 136.023, 2.44892, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+593, 16491, 532, 1, -11238.4, -1839.29, 136.024, 5.34331, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+594, 16491, 532, 1, -11232, -1835.48, 136.023, 1.92427, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+595, 16491, 532, 1, -11203.1, -1734.98, 136.022, 3.52327, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+596, 16491, 532, 1, -11250, -1800.99, 135.747, 4.15166, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+597, 16491, 532, 1, -11249.6, -1793.28, 135.712, 5.33054, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+598, 16491, 532, 1, -11255.5, -1804.53, 135.684, 3.91133, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+599, 16491, 532, 1, -11194.6, -1790.03, 136.012, 4.01887, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+600, 16491, 532, 1, -11201.7, -1790.99, 136.023, 3.73854, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+601, 16491, 532, 1, -11199.2, -1779.69, 136.012, 3.86107, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+602, 16491, 532, 1, -11243.2, -1753.55, 135.956, 4.20429, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+603, 16491, 532, 1, -11273.4, -1840.88, 135.673, 5.17838, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+604, 16491, 532, 1, -11270.7, -1839.52, 135.746, 5.17838, 7200, 7200, 3, 1), -- Mana Feeder
-(@CGUID+605, 16491, 532, 1, -11275.8, -1843.91, 135.676, 5.17838, 7200, 7200, 3, 1), -- Mana Feeder
+(@CGUID+583, 16491, 532, 1, -11180.4, -1833.8, 136.107, 0.698132, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+584, 16491, 532, 1, -11174, -1843.68, 136.107, 5.18363, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+585, 16491, 532, 1, -11181.6, -1842.06, 136.107, 2.94961, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+586, 16491, 532, 1, -11279.6, -1718.85, 136.012, 6.20369, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+587, 16491, 532, 1, -11268.6, -1719.72, 136.006, 2.04072, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+588, 16491, 532, 1, -11247.1, -1747.71, 135.97, 3.66742, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+589, 16491, 532, 1, -11235.9, -1750.59, 136.064, 6.12611, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+590, 16491, 532, 1, -11213.7, -1759.14, 136.086, 0.261799, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+591, 16491, 532, 1, -11217.7, -1771.82, 135.999, 2.68938, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+592, 16491, 532, 1, -11236.1, -1843.06, 136.011, 1.46824, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+593, 16491, 532, 1, -11237.3, -1838.93, 136.107, 0.715585, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+594, 16491, 532, 1, -11232, -1835.48, 136.023, 1.92427, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+595, 16491, 532, 1, -11203.5, -1728.65, 136.011, 0.693706, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+596, 16491, 532, 1, -11251, -1796.36, 135.683, 0.964692, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+597, 16491, 532, 1, -11252.1, -1788.72, 135.671, 3.9882, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+598, 16491, 532, 1, -11254.7, -1802.76, 135.675, 3.81644, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+599, 16491, 532, 1, -11194.6, -1793.05, 136.107, 4.51223, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+600, 16491, 532, 1, -11201, -1792.76, 136.107, 2.23402, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+601, 16491, 532, 1, -11197.4, -1784.21, 136.091, 4.38078, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+602, 16491, 532, 1, -11242.4, -1751.24, 135.969, 2.06756, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+603, 16491, 532, 1, -11270.3, -1846.95, 135.707, 2.12447, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+604, 16491, 532, 1, -11269.4, -1835.65, 135.726, 1.84785, 7200, 7200, 2, 1), -- Mana Feeder
+(@CGUID+605, 16491, 532, 1, -11275.9, -1842.64, 135.656, 5.39403, 7200, 7200, 2, 1), -- Mana Feeder
 (@CGUID+606, 16492, 532, 1, -11043.3, -1812.71, 165.766, 4.96156, 3600, 3600, 0, 0), -- Syphoner
 (@CGUID+607, 16492, 532, 1, -11044.7, -1810.58, 165.766, 3.73634, 3600, 3600, 0, 0), -- Syphoner
 (@CGUID+608, 16492, 532, 1, -11047.9, -1810.97, 165.766, 3.73634, 3600, 3600, 0, 0), -- Syphoner
@@ -1843,14 +1815,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+633, 16492, 532, 1, -11149.8, -1876.66, 165.766, 0.374255, 3600, 3600, 0, 0), -- Syphoner
 (@CGUID+634, 16492, 532, 1, -11146.7, -1871.47, 165.766, 1.0709, 3600, 3600, 0, 0), -- Syphoner
 (@CGUID+635, 16492, 532, 1, -11146.5, -1875.64, 165.766, 1.81546, 3600, 3600, 0, 0), -- Syphoner
-(@CGUID+636, 16504, 532, 1, -11218, -1892.16, 151.661, 3.6011, 7200, 7200, 0, 2), -- Arcane Protector
-(@CGUID+637, 16504, 532, 1, -11244.3, -1799.9, 135.797, 4.183, 7200, 7200, 0, 2), -- Arcane Protector
-(@CGUID+638, 16504, 532, 1, -11171, -1847.83, 136.024, 2.26854, 7200, 7200, 0, 2), -- Arcane Protector
-(@CGUID+639, 16504, 532, 1, -11201.4, -1739.98, 136.022, 3.65713, 7200, 7200, 0, 2), -- Arcane Protector
-(@CGUID+640, 16504, 532, 1, -11252.1, -1829.53, 135.919, 0.667895, 7200, 7200, 0, 2), -- Arcane Protector
-(@CGUID+641, 16504, 532, 1, -11283.4, -1757.41, 135.79, 0.715817, 7200, 7200, 0, 2), -- Arcane Protector
-(@CGUID+642, 16504, 532, 1, -11273, -1775.97, 137.429, 4.56977, 7200, 7200, 0, 2), -- Arcane Protector
-(@CGUID+643, 16504, 532, 1, -11383.6, -1836.59, 179.09, 5.55931, 7200, 7200, 0, 2), -- Arcane Protector
+(@CGUID+636, 16504, 532, 1, -11218.087, -1892.7466, 151.52493, 3.847, 7200, 7200, 0, 2), -- Arcane Protector
+(@CGUID+637, 16504, 532, 1, -11267.086, -1870.1588, 135.90031, 0.6238, 7200, 7200, 0, 4), -- Arcane Protector
+(@CGUID+638, 16504, 532, 1, -11244.007, -1854.0493, 136.05383, 1.4918, 7200, 7200, 0, 4), -- Arcane Protector
+(@CGUID+639, 16504, 532, 1, -11210.566, -1743.9158, 136.00826, 3.78029, 7200, 7200, 0, 4), -- Arcane Protector
+(@CGUID+640, 16504, 532, 1, -11182.658, -1814.8232, 136.01114, 2.3675, 7200, 7200, 0, 4), -- Arcane Protector
+(@CGUID+641, 16504, 532, 1, -11273.095, -1732.4678, 136.00871, 5.4251, 7200, 7200, 0, 2), -- Arcane Protector
+(@CGUID+642, 16504, 532, 1, -11282.719, -1747.2125, 135.91495, 5.2, 7200, 7200, 0, 4), -- Arcane Protector
+(@CGUID+643, 16504, 532, 1, -11346.433,-1851.5946,170.19037, 5.55931, 7200, 7200, 0, 4), -- Arcane Protector
 (@CGUID+644, 16524, 532, 1, -11164.5, -1909.56, 232.009, 3.65587, 604800, 604800, 9, 1), -- Shade of Aran
 (@CGUID+645, 16525, 532, 1, -11229.1, -1842.68, 223.943, 5.51664, 7200, 7200, 8, 1), -- Spell Shade
 (@CGUID+646, 16525, 532, 1, -11236.5, -1692.72, 210.88, 4.07465, 7200, 7200, 8, 1), -- Spell Shade
@@ -1878,23 +1850,21 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+668, 16526, 532, 1, -11272.2, -1939.57, 240.47, 0.726708, 7200, 7200, 3, 1), -- Sorcerous Shade
 (@CGUID+669, 16526, 532, 1, -11300.5, -1898.44, 240.47, 5.9496, 7200, 7200, 3, 1), -- Sorcerous Shade
 (@CGUID+670, 16526, 532, 1, -11388.1, -1834.44, 260.773, 5.60933, 7200, 7200, 3, 1), -- Sorcerous Shade
--- re-use @CGUID+671
-(@CGUID+672, 16529, 532, 1, -11304.3, -1806.22, 179.735, 3.96421, 7200, 7200, 0, 0), -- Magical Horror
-(@CGUID+673, 16529, 532, 1, -11332.8, -1807.93, 179.735, 2.47399, 7200, 7200, 5, 1), -- Magical Horror
-(@CGUID+674, 16529, 532, 1, -11310.2, -1766.93, 179.735, 3.66545, 7200, 7200, 0, 0), -- Magical Horror
+-- re-use @CGUID+671 + @CGUID+672
+(@CGUID+673, 16529, 532, 1, -11330.1, -1806.31, 179.73, 0.0933698, 7200, 7200, 0, 0), -- Magical Horror
+(@CGUID+674, 16529, 532, 1, -11317, -1765.21, 179.73, 0.0156188, 7200, 7200, 0, 0), -- Magical Horror
 (@CGUID+675, 16529, 532, 1, -11332.2, -1781.55, 179.734, 3.55024, 7200, 7200, 0, 0), -- Magical Horror
-(@CGUID+676, 16529, 532, 1, -11333.7, -1756.71, 179.735, 4.51288, 7200, 7200, 5, 1), -- Magical Horror
-(@CGUID+677, 16530, 532, 1, -11327.7, -1779.36, 179.735, 3.70471, 7200, 7200, 3, 1), -- Mana Warp
+(@CGUID+676, 16529, 532, 1, -11333.7, -1756.71, 179.735, 4.51288, 7200, 7200, 0, 0), -- Magical Horror
+(@CGUID+677, 16530, 532, 1, -11327.7, -1779.36, 179.735, 3.70471, 7200, 7200, 0, 0), -- Mana Warp
 (@CGUID+678, 16530, 532, 1, -11337.3, -1757.36, 179.735, 4.77285, 7200, 7200, 0, 0), -- Mana Warp
-(@CGUID+679, 16530, 532, 1, -11333.1, -1805.04, 179.735, 2.75752, 7200, 7200, 0, 0), -- Mana Warp
-(@CGUID+680, 16530, 532, 1, -11306, -1803.4, 179.735, 3.70503, 7200, 7200, 0, 0), -- Mana Warp
-(@CGUID+681, 16530, 532, 1, -11301.7, -1806.62, 179.735, 3.66183, 7200, 7200, 0, 0), -- Mana Warp
-(@CGUID+682, 16530, 532, 1, -11334.1, -1811.08, 179.735, 2.73082, 7200, 7200, 0, 0), -- Mana Warp
-(@CGUID+683, 16530, 532, 1, -11314.3, -1764.08, 179.735, 4.09506, 7200, 7200, 0, 0), -- Mana Warp
-(@CGUID+684, 16530, 532, 1, -11309.3, -1769.56, 179.735, 3.57905, 7200, 7200, 0, 0), -- Mana Warp
+(@CGUID+679, 16530, 532, 1, -11326.6, -1805.98, 179.73, 1.78636, 7200, 7200, 0, 0), -- Mana Warp
+-- re-use @CGUID+680 + @CGUID+681
+(@CGUID+682, 16530, 532, 1, -11334.5, -1806.72, 179.73, 1.03114, 7200, 7200, 0, 0), -- Mana Warp
+(@CGUID+683, 16530, 532, 1, -11318.7, -1762.89, 179.73, 5.09651, 7200, 7200, 0, 0), -- Mana Warp
+(@CGUID+684, 16530, 532, 1, -11313.9, -1769.24, 179.73, 1.16837, 7200, 7200, 0, 0), -- Mana Warp
 (@CGUID+685, 16530, 532, 1, -11330.120117, -1756.844727, 179.735001, 4.317230, 7200, 7200, 0, 0), -- Mana Warp
-(@CGUID+686, 16530, 532, 1, -11334.4, -1777.29, 179.735, 3.35992, 7200, 7200, 3, 1), -- Mana Warp
-(@CGUID+687, 16530, 532, 1, -11329.6, -1785.7, 179.735, 3.50915, 7200, 7200, 3, 1), -- Mana Warp
+(@CGUID+686, 16530, 532, 1, -11334.4, -1777.29, 179.735, 3.35992, 7200, 7200, 0, 0), -- Mana Warp
+(@CGUID+687, 16530, 532, 1, -11329.6, -1785.7, 179.735, 3.50915, 7200, 7200, 0, 0), -- Mana Warp
 (@CGUID+688, 16539, 532, 1, -11169.9, -1780.97, 201.229, 2.19283, 7200, 7200, 7, 1), -- Homunculus
 (@CGUID+689, 16539, 532, 1, -11168.5, -1771.92, 201.227, 2.26509, 7200, 7200, 7, 1), -- Homunculus
 (@CGUID+690, 16539, 532, 1, -11165.4, -1765.13, 201.292, 2.53448, 7200, 7200, 7, 1), -- Homunculus
@@ -2851,7 +2821,26 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+167, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 004', 0, 6, @SGGUID+5, 1),
 (@SGGUID+168, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 005', 0, 6, @SGGUID+5, 1),
 (@SGGUID+169, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 006', 0, 6, @SGGUID+5, 1),
-(@SGGUID+170, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 007', 0, 6, @SGGUID+5, 1);
+(@SGGUID+170, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 007', 0, 6, @SGGUID+5, 1),
+-- The Guardian's Library
+(@SGGUID+171, 'Karazhan - Arcane Watchman (2) | Guardian\'s Library Group 001', 0, 2, @SGGUID+6, 1),
+(@SGGUID+172, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 002', 0, 3, @SGGUID+6, 1),
+(@SGGUID+173, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 003', 0, 4, @SGGUID+6, 1),
+(@SGGUID+174, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 004', 0, 3, @SGGUID+6, 1),
+(@SGGUID+175, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 005', 0, 4, @SGGUID+6, 1),
+(@SGGUID+176, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 006', 0, 4, @SGGUID+6, 1),
+(@SGGUID+177, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 007', 0, 3, @SGGUID+6, 1),
+(@SGGUID+178, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 008', 0, 3, @SGGUID+6, 1),
+(@SGGUID+179, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 009', 0, 3, @SGGUID+6, 1),
+(@SGGUID+180, 'Karazhan - Mana Feeder (3) | Guardian\'s Library Group 010', 0, 3, @SGGUID+6, 1),
+(@SGGUID+181, 'Karazhan - Mana Feeder (3) | Chaotic Sentience (1) | Guardian\'s Library Group 011', 0, 4, @SGGUID+6, 1),
+(@SGGUID+182, 'Karazhan - Chaotic Sentience (1) | Guardian\'s Library Group 012', 0, 1, @SGGUID+6, 0),
+-- 8 Solo Patrols - only using worldstate to prevent respawning when Shade of Aran is dead
+(@SGGUID+183, 'Karazhan - Arcane Protector (8) | Guardian\'s Library Patrols', 0, 8, @SGGUID+6, 0),
+(@SGGUID+184, 'Karazhan - Magical Horror (1) | Mana Warp (3) | Guardian\'s Library Group 013', 0, 4, @SGGUID+6, 1), -- pack standing in the middle
+(@SGGUID+185, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 014', 0, 4, @SGGUID+6, 1), -- pack standing right, rnd movement, after some time pathing together
+(@SGGUID+186, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 015', 0, 4, @SGGUID+6, 1), -- pack standing left, rnd movement, after some time pathing together
+(@SGGUID+187, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 016', 0, 4, @SGGUID+6, 1); -- pack standing in the back, rnd movement, after some time pathing together
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3605,7 +3594,71 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+170, @CGUID+632, 2), -- Syphoner
 (@SGGUID+170, @CGUID+633, 3), -- Syphoner
 (@SGGUID+170, @CGUID+634, 4), -- Syphoner
-(@SGGUID+170, @CGUID+635, 5); -- Syphoner
+(@SGGUID+170, @CGUID+635, 5), -- Syphoner
+-- The Guardian's Library
+(@SGGUID+171, @CGUID+563, -1), -- Arcane Watchman
+(@SGGUID+171, @CGUID+564, -1), -- Arcane Watchman
+(@SGGUID+172, @CGUID+592, -1), -- Mana Feeder
+(@SGGUID+172, @CGUID+593, -1), -- Mana Feeder
+(@SGGUID+172, @CGUID+594, -1), -- Mana Feeder
+(@SGGUID+173, @CGUID+575, -1), -- Chaotic Sentience
+(@SGGUID+173, @CGUID+603, -1), -- Mana Feeder
+(@SGGUID+173, @CGUID+604, -1), -- Mana Feeder
+(@SGGUID+173, @CGUID+605, -1), -- Mana Feeder
+(@SGGUID+174, @CGUID+583, -1), -- Mana Feeder
+(@SGGUID+174, @CGUID+584, -1), -- Mana Feeder
+(@SGGUID+174, @CGUID+585, -1), -- Mana Feeder
+(@SGGUID+175, @CGUID+572, -1), -- Chaotic Sentience
+(@SGGUID+175, @CGUID+578, -1), -- Mana Feeder
+(@SGGUID+175, @CGUID+579, -1), -- Mana Feeder
+(@SGGUID+175, @CGUID+580, -1), -- Mana Feeder
+(@SGGUID+176, @CGUID+574, -1), -- Chaotic Sentience
+(@SGGUID+176, @CGUID+599, -1), -- Mana Feeder
+(@SGGUID+176, @CGUID+600, -1), -- Mana Feeder
+(@SGGUID+176, @CGUID+601, -1), -- Mana Feeder
+(@SGGUID+177, @CGUID+596, -1), -- Mana Feeder
+(@SGGUID+177, @CGUID+597, -1), -- Mana Feeder
+(@SGGUID+177, @CGUID+598, -1), -- Mana Feeder
+(@SGGUID+178, @CGUID+577, -1), -- Mana Feeder
+(@SGGUID+178, @CGUID+590, -1), -- Mana Feeder
+(@SGGUID+178, @CGUID+591, -1), -- Mana Feeder
+(@SGGUID+179, @CGUID+588, -1), -- Mana Feeder
+(@SGGUID+179, @CGUID+589, -1), -- Mana Feeder
+(@SGGUID+179, @CGUID+602, -1), -- Mana Feeder
+(@SGGUID+180, @CGUID+576, -1), -- Mana Feeder
+(@SGGUID+180, @CGUID+581, -1), -- Mana Feeder
+(@SGGUID+180, @CGUID+595, -1), -- Mana Feeder
+(@SGGUID+181, @CGUID+573, -1), -- Chaotic Sentience
+(@SGGUID+181, @CGUID+582, -1), -- Mana Feeder
+(@SGGUID+181, @CGUID+586, -1), -- Mana Feeder
+(@SGGUID+181, @CGUID+587, -1), -- Mana Feeder
+(@SGGUID+182, @CGUID+571, -1), -- Chaotic Sentience
+-- Solo Patrols
+(@SGGUID+183, @CGUID+636, -1), -- Arcane Protector
+(@SGGUID+183, @CGUID+637, -1), -- Arcane Protector
+(@SGGUID+183, @CGUID+638, -1), -- Arcane Protector
+(@SGGUID+183, @CGUID+639, -1), -- Arcane Protector
+(@SGGUID+183, @CGUID+640, -1), -- Arcane Protector
+(@SGGUID+183, @CGUID+641, -1), -- Arcane Protector
+(@SGGUID+183, @CGUID+642, -1), -- Arcane Protector
+(@SGGUID+183, @CGUID+643, -1), -- Arcane Protector
+
+(@SGGUID+184, @CGUID+675, 0), -- Magical Horror
+(@SGGUID+184, @CGUID+686, 1), -- Mana Warp left
+(@SGGUID+184, @CGUID+687, 2), -- Mana Warp right
+(@SGGUID+184, @CGUID+677, 3), -- Mana Warp behind
+
+(@SGGUID+185, @CGUID+673, 0), -- Magical Horror
+(@SGGUID+185, @CGUID+679, 1), -- Mana Warp
+(@SGGUID+185, @CGUID+682, 1), -- Mana Warp
+
+(@SGGUID+186, @CGUID+676, 0), -- Magical Horror
+(@SGGUID+186, @CGUID+678, 1), -- Mana Warp
+(@SGGUID+186, @CGUID+685, 1), -- Mana Warp
+
+(@SGGUID+187, @CGUID+674, 0), -- Magical Horror
+(@SGGUID+187, @CGUID+683, 1), -- Mana Warp
+(@SGGUID+187, @CGUID+684, 1); -- Mana Warp
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Patrol 001'),
@@ -3766,23 +3819,24 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+162,17,-10944.468,-1811.6437,121.69862,100,0,0),
 (@SGGUID+162,18,-10944.01,-1805.0154,121.69862,100,0,0);
 
-DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 2501, 65400, 65500);
+DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 2501, 2910, 65400, 65500);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (2315, 'Karazhan - Midnight - Encounter completed'),
 (2309, 'Karazhan - Moroes - Encounter completed'),
 (2501, 'Karazhan - The Curator - Encounter completed'),
+(2910, 'Karazahn - Shade of Aran - Encounter completed'),
 -- From our wiki: The ones without it filled out have instance_dungeon_encounters.Id * 100 + 2-99. 0 and 1 are always reserved by Core for "Alive" & "Killed".
 (65400, 'Karazhan - Maiden of the Virtue - Encounter completed'), 
 (65500, 'Karazhan - Opera Event - Encounter completed');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4, @SGGUID+5);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4, @SGGUID+5, @SGGUID+6);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, 2315, 1, 0, 0, 0, 'Midnight - Trash Respawn'),
 (@SGGUID+2, 42, 2309, 1, 0, 0, 0, 'Moroes - Trash Respawn'),
 (@SGGUID+3, 42, 65400, 1, 0, 0, 0, 'Maiden of the Virtue - Trash Respawn'),
 (@SGGUID+4, 42, 65500, 1, 0, 0, 0, 'Opera Event - Trash Respawn'),
-(@SGGUID+5, 42, 2501, 1, 0, 0, 0, 'The Curator - Trash Respawn');
-
+(@SGGUID+5, 42, 2501, 1, 0, 0, 0, 'The Curator - Trash Respawn'),
+(@SGGUID+6, 42, 2910, 1, 0, 0, 0, 'Shade of Aran - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
