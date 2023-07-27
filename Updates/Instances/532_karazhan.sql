@@ -1088,66 +1088,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (22523, 0, 0, 1, 0, 0, NULL), -- Karazhan - Chess, Victory Dummy Tool
 (22524, 0, 0, 1, 0, 0, NULL); -- Karazhan - Chess, Victory Controller
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+649, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
-(@CGUID+650, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
-(@CGUID+651, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
-(@CGUID+646, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+688, @CGUID+700, 1167), -- Homunculus -> Shadow Pillager
-(@CGUID+689, @CGUID+700, 1167), -- Homunculus -> Shadow Pillager
-(@CGUID+690, @CGUID+700, 1167), -- Homunculus -> Shadow Pillager
-(@CGUID+699, @CGUID+700, 1167), -- Shadow Pillager -> Shadow Pillager
-(@CGUID+701, @CGUID+700, 1167), -- Shadow Pillager -> Shadow Pillager
-(@CGUID+700, @CGUID+140, 1024), -- Shadow Pillager -> Terestian Illhoof
-(@CGUID+692, @CGUID+691, 1167), -- Homunculus -> Homunculus
-(@CGUID+693, @CGUID+691, 1167), -- Homunculus -> Homunculus
-(@CGUID+694, @CGUID+691, 1167), -- Homunculus -> Homunculus
-(@CGUID+695, @CGUID+691, 1167), -- Homunculus -> Homunculus
-(@CGUID+696, @CGUID+691, 1167), -- Homunculus -> Homunculus
-(@CGUID+697, @CGUID+691, 1167), -- Homunculus -> Homunculus
-(@CGUID+698, @CGUID+691, 1167), -- Homunculus -> Homunculus
-(@CGUID+691, @CGUID+140, 1024), -- Homunculus -> Terestian Illhoof
-(@CGUID+645, @CGUID+648, 1167), -- Spell Shade -> Spell Shade
-(@CGUID+657, @CGUID+648, 1167), -- Spell Shade -> Spell Shade
-(@CGUID+658, @CGUID+648, 1167), -- Spell Shade -> Spell Shade
-(@CGUID+648, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+659, @CGUID+668, 1167), -- Spell Shade -> Sorcerous Shade
-(@CGUID+660, @CGUID+668, 1167), -- Spell Shade -> Sorcerous Shade
-(@CGUID+662, @CGUID+668, 1167), -- Spell Shade -> Sorcerous Shade
-(@CGUID+668, @CGUID+142, 1024), -- Sorcerous Shade -> Prince Malchezaar
-(@CGUID+661, @CGUID+669, 1167), -- Spell Shade -> Sorcerous Shade
-(@CGUID+663, @CGUID+669, 1167), -- Spell Shade -> Sorcerous Shade
-(@CGUID+664, @CGUID+669, 1167), -- Spell Shade -> Sorcerous Shade
-(@CGUID+669, @CGUID+142, 1024), -- Sorcerous Shade -> Prince Malchezaar
-(@CGUID+665, @CGUID+670, 1167), -- Spell Shade -> Sorcerous Shade
-(@CGUID+666, @CGUID+670, 1167), -- Spell Shade -> Sorcerous Shade
-(@CGUID+667, @CGUID+670, 1167), -- Spell Shade -> Sorcerous Shade
-(@CGUID+670, @CGUID+142, 1024), -- Sorcerous Shade -> Prince Malchezaar
-(@CGUID+702, @CGUID+142, 1024), -- Ethereal Thief -> Prince Malchezaar
-(@CGUID+703, @CGUID+142, 1024), -- Ethereal Thief -> Prince Malchezaar
-(@CGUID+704, @CGUID+142, 1024), -- Ethereal Thief -> Prince Malchezaar
-(@CGUID+705, @CGUID+142, 1024), -- Ethereal Thief -> Prince Malchezaar
-(@CGUID+706, @CGUID+142, 1024), -- Ethereal Thief -> Prince Malchezaar
-(@CGUID+707, @CGUID+142, 1024), -- Ethereal Thief -> Prince Malchezaar
-(@CGUID+709, @CGUID+142, 1024), -- Ethereal Spellfilcher -> Prince Malchezaar
-(@CGUID+710, @CGUID+142, 1024), -- Ethereal Spellfilcher -> Prince Malchezaar
-(@CGUID+711, @CGUID+142, 1024), -- Ethereal Spellfilcher -> Prince Malchezaar
-(@CGUID+708, @CGUID+141, 1024), -- Ethereal Thief -> Netherspite
-(@CGUID+712, @CGUID+141, 1024), -- Ethereal Spellfilcher -> Netherspite
-(@CGUID+720, @CGUID+721, 1167), -- Fleshbeast -> Fleshbeast
-(@CGUID+721, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
-(@CGUID+713, @CGUID+715, 1167), -- Fleshbeast -> Fleshbeast
-(@CGUID+715, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
-(@CGUID+725, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
-(@CGUID+719, @CGUID+722, 1167), -- Fleshbeast -> Fleshbeast
-(@CGUID+722, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
-(@CGUID+724, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
-(@CGUID+716, @CGUID+714, 1167), -- Fleshbeast -> Fleshbeast
-(@CGUID+714, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
-(@CGUID+718, @CGUID+717, 1167), -- Fleshbeast -> Fleshbeast
-(@CGUID+717, @CGUID+142, 1024), -- Fleshbeast -> Prince Malchezaar
-(@CGUID+723, @CGUID+142, 1024), -- Greater Fleshbeast -> Prince Malchezaar
-(@CGUID+726, @CGUID+142, 1024); -- Greater Fleshbeast -> Prince Malchezaar
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (16389, 532, 15687, 1024, 300), -- Spectral Apprentice -> Moroes
@@ -1880,11 +1821,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+705, 16544, 532, 1, -11336.3, -1761.06, 265.163, 1.07208, 7200, 7200, 0, 2), -- Ethereal Thief
 (@CGUID+706, 16544, 532, 1, -11354, -1765.12, 265.163, 2.57377, 7200, 7200, 0, 2), -- Ethereal Thief
 (@CGUID+707, 16544, 532, 1, -11357.7, -1778.25, 265.163, 2.75676, 7200, 7200, 0, 2), -- Ethereal Thief
-(@CGUID+708, 16544, 532, 1, -11222.6, -1708.81, 290.431, 6.10865, 7200, 7200, 0, 0), -- Ethereal Thief
-(@CGUID+709, 16545, 532, 1, -11212.5, -1707.95, 241.063, 0.139626, 7200, 7200, 0, 0), -- Ethereal Spellfilcher
-(@CGUID+710, 16545, 532, 1, -11223.2, -1686.64, 241.063, 2.05949, 7200, 7200, 0, 0), -- Ethereal Spellfilcher
-(@CGUID+711, 16545, 532, 1, -11178.2, -1778.05, 251.254, 4.67748, 7200, 7200, 0, 0), -- Ethereal Spellfilcher
-(@CGUID+712, 16545, 532, 1, -11238.7, -1684.18, 290.431, 2.16421, 7200, 7200, 0, 0), -- Ethereal Spellfilcher
+(@CGUID+708, 0, 532, 1, -11222.6, -1708.81, 290.431, 6.10865, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+709, 0, 532, 1, -11212.5, -1707.95, 241.063, 0.139626, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+710, 0, 532, 1, -11223.2, -1686.64, 241.063, 2.05949, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+711, 0, 532, 1, -11178.2, -1778.05, 251.254, 4.67748, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+712, 0, 532, 1, -11238.7, -1684.18, 290.431, 2.16421, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+713, 16595, 532, 1, -11015.4, -1915.67, 247.772, 4.27952, 7200, 7200, 3, 1), -- Fleshbeast
 (@CGUID+714, 16595, 532, 1, -11053.9, -1891.48, 245.984, 1.82829, 7200, 7200, 3, 1), -- Fleshbeast
 (@CGUID+715, 16595, 532, 1, -11017.1, -1944.49, 247.772, 1.96887, 7200, 7200, 3, 1), -- Fleshbeast
@@ -2837,7 +2778,27 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+186, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 015', 0, 4, @SGGUID+6, 1), -- pack standing left, rnd movement, after some time pathing together
 (@SGGUID+187, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 016', 0, 4, @SGGUID+6, 1), -- pack standing in the back, rnd movement, after some time pathing together
 -- 6 rnd moving patrols
-(@SGGUID+188, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 017', 0, 4, @SGGUID+6, 0);
+(@SGGUID+188, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 017', 0, 4, @SGGUID+6, 0),
+(@SGGUID+189, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 018', 0, 4, @SGGUID+6, 1),
+-- Imp Groups, linked to Terestian Illhoof
+(@SGGUID+190, 'Karazhan - Shadow Pillager (3) | Homunculus (3) | Guardian\'s Library Group 019', 0, 6, @SGGUID+7, 1),
+(@SGGUID+191, 'Karazhan - Homunculus (8) | Guardian\'s Library Group 020', 0, 8, @SGGUID+7, 1),
+-- Group before Shade of Aran
+(@SGGUID+192, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 021', 0, 8, @SGGUID+6, 1),
+-- Groups linked to *find out what they are linked too
+(@SGGUID+193, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 022', 0, 4, @SGGUID+8, 1),
+(@SGGUID+194, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 023', 0, 4, @SGGUID+8, 1),
+(@SGGUID+195, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 024', 0, 4, @SGGUID+8, 1),
+(@SGGUID+196, 'Karazhan - Ethereal Thief (6) | Guardian\'s Library Group 025', 0, 6, @SGGUID+8, 0),
+(@SGGUID+197, 'Karazhan - Ethereal Thief | Ethereal Spellfilcher | Guardian\'s Library Group 026', 0, 0, @SGGUID+8, 0), -- 5 spawns using spawn_group_entry
+-- Trash after Chess Event linked to Prince
+(@SGGUID+198, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 001', 0, 0, @SGGUID+8, 1),
+(@SGGUID+199, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 002', 0, 0, @SGGUID+8, 1),
+(@SGGUID+200, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 003', 0, 0, @SGGUID+8, 1),
+(@SGGUID+201, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 004', 0, 0, @SGGUID+8, 1),
+(@SGGUID+202, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 005', 0, 0, @SGGUID+8, 1),
+(@SGGUID+203, 'Karazhan - Greater Fleshbeast (4) | Medivh\'s Chambers Patrols', 0, 0, @SGGUID+8, 0);
+
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -2920,7 +2881,8 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+159, 16468, 0, 0, 0), (@SGGUID+159, 16470, 1, 1, 0), -- Spectral Patron, Ghostly Philanthropist
 (@SGGUID+160, 16468, 0, 0, 0), (@SGGUID+160, 16470, 1, 1, 0), -- Spectral Patron, Ghostly Philanthropist
 (@SGGUID+161, 16468, 0, 0, 0), (@SGGUID+161, 16470, 1, 1, 0), -- Spectral Patron, Ghostly Philanthropist
-(@SGGUID+163, 16481, 0, 0, 0), (@SGGUID+163, 16482, 1, 1, 0); -- Ghostly Haunt, Trapped Soul
+(@SGGUID+163, 16481, 0, 0, 0), (@SGGUID+163, 16482, 1, 1, 0), -- Ghostly Haunt, Trapped Soul
+(@SGGUID+197, 16544, 0, 0, 0), (@SGGUID+197, 16545, 0, 0, 0); -- Ethereal Thief, Ethereal Spellfilcher
 
 -- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES 
 
@@ -3655,7 +3617,67 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+188, @CGUID+652, -1), -- Spell Shade
 (@SGGUID+188, @CGUID+654, -1), -- Spell Shade
 (@SGGUID+188, @CGUID+655, -1), -- Spell Shade
-(@SGGUID+188, @CGUID+656, -1); -- Spell Shade
+(@SGGUID+188, @CGUID+656, -1), -- Spell Shade
+(@SGGUID+189, @CGUID+646, -1), -- Spell Shade
+(@SGGUID+189, @CGUID+649, -1), -- Spell Shade
+(@SGGUID+189, @CGUID+650, -1), -- Spell Shade
+(@SGGUID+189, @CGUID+651, -1), -- Spell Shade
+(@SGGUID+190, @CGUID+699, -1), -- Shadow Pillager 
+(@SGGUID+190, @CGUID+700, -1), -- Shadow Pillager 
+(@SGGUID+190, @CGUID+701, -1), -- Shadow Pillager 
+(@SGGUID+190, @CGUID+688, -1), -- Homunculus
+(@SGGUID+190, @CGUID+689, -1), -- Homunculus
+(@SGGUID+190, @CGUID+690, -1), -- Homunculus
+(@SGGUID+191, @CGUID+691, -1), -- Homunculus
+(@SGGUID+191, @CGUID+692, -1), -- Homunculus
+(@SGGUID+191, @CGUID+693, -1), -- Homunculus
+(@SGGUID+191, @CGUID+694, -1), -- Homunculus
+(@SGGUID+191, @CGUID+695, -1), -- Homunculus
+(@SGGUID+191, @CGUID+696, -1), -- Homunculus
+(@SGGUID+191, @CGUID+697, -1), -- Homunculus
+(@SGGUID+191, @CGUID+698, -1), -- Homunculus
+(@SGGUID+192, @CGUID+645, -1), -- Spell Shade
+(@SGGUID+192, @CGUID+648, -1), -- Spell Shade
+(@SGGUID+192, @CGUID+657, -1), -- Spell Shade
+(@SGGUID+192, @CGUID+658, -1), -- Spell Shade
+(@SGGUID+193, @CGUID+659, -1), -- Spell Shade
+(@SGGUID+193, @CGUID+660, -1), -- Spell Shade
+(@SGGUID+193, @CGUID+662, -1), -- Spell Shade
+(@SGGUID+193, @CGUID+668, -1), -- Sorcerous Shade
+(@SGGUID+194, @CGUID+661, -1), -- Spell Shade
+(@SGGUID+194, @CGUID+663, -1), -- Spell Shade
+(@SGGUID+194, @CGUID+664, -1), -- Spell Shade
+(@SGGUID+194, @CGUID+669, -1), -- Sorcerous Shade
+(@SGGUID+195, @CGUID+665, -1), -- Spell Shade
+(@SGGUID+195, @CGUID+666, -1), -- Spell Shade
+(@SGGUID+195, @CGUID+667, -1), -- Spell Shade
+(@SGGUID+195, @CGUID+670, -1), -- Sorcerous Shade
+(@SGGUID+196, @CGUID+702, -1), -- Ethereal Thief
+(@SGGUID+196, @CGUID+703, -1), -- Ethereal Thief
+(@SGGUID+196, @CGUID+704, -1), -- Ethereal Thief
+(@SGGUID+196, @CGUID+705, -1), -- Ethereal Thief
+(@SGGUID+196, @CGUID+706, -1), -- Ethereal Thief
+(@SGGUID+196, @CGUID+707, -1), -- Ethereal Thief
+(@SGGUID+197, @CGUID+708, -1), -- spawn_group_entry
+(@SGGUID+197, @CGUID+709, -1), -- spawn_group_entry
+(@SGGUID+197, @CGUID+710, -1), -- spawn_group_entry
+(@SGGUID+197, @CGUID+711, -1), -- spawn_group_entry
+(@SGGUID+197, @CGUID+712, -1), -- spawn_group_entry
+-- Medivh's Chambers
+(@SGGUID+198, @CGUID+720, -1), -- Fleshbeast
+(@SGGUID+198, @CGUID+721, -1), -- Fleshbeast
+(@SGGUID+199, @CGUID+719, -1), -- Fleshbeast
+(@SGGUID+199, @CGUID+722, -1), -- Fleshbeast
+(@SGGUID+200, @CGUID+717, -1), -- Fleshbeast
+(@SGGUID+200, @CGUID+718, -1), -- Fleshbeast
+(@SGGUID+201, @CGUID+714, -1), -- Fleshbeast
+(@SGGUID+201, @CGUID+716, -1), -- Fleshbeast
+(@SGGUID+202, @CGUID+713, -1), -- Fleshbeast
+(@SGGUID+202, @CGUID+715, -1), -- Fleshbeast
+(@SGGUID+203, @CGUID+723, -1), -- Greater Fleshbeast
+(@SGGUID+203, @CGUID+724, -1), -- Greater Fleshbeast
+(@SGGUID+203, @CGUID+725, -1), -- Greater Fleshbeast
+(@SGGUID+203, @CGUID+726, -1); -- Greater Fleshbeast
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Patrol 001'),
@@ -3841,24 +3863,28 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+187,3,-11311.207,-1774.7487,179.73015,100,0,0),
 (@SGGUID+187,4,-11310.209,-1780.4564,179.73013,100,30000,0);
 
-DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 2501, 2910, 65400, 65500);
+DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 2336, 2501, 2910, 4807, 65400, 65500);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (2315, 'Karazhan - Midnight - Encounter completed'),
 (2309, 'Karazhan - Moroes - Encounter completed'),
+(2336, 'Karazahn - Terestian Illhoof - Encounter completed'),
 (2501, 'Karazhan - The Curator - Encounter completed'),
 (2910, 'Karazahn - Shade of Aran - Encounter completed'),
+(4807, 'Karazahn - Prince Malchezaar - Encounter completed'),
 -- From our wiki: The ones without it filled out have instance_dungeon_encounters.Id * 100 + 2-99. 0 and 1 are always reserved by Core for "Alive" & "Killed".
 (65400, 'Karazhan - Maiden of the Virtue - Encounter completed'), 
 (65500, 'Karazhan - Opera Event - Encounter completed');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4, @SGGUID+5, @SGGUID+6);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4, @SGGUID+5, @SGGUID+6, @SGGUID+7, @SGGUID+8);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, 2315, 1, 0, 0, 0, 'Midnight - Trash Respawn'),
 (@SGGUID+2, 42, 2309, 1, 0, 0, 0, 'Moroes - Trash Respawn'),
 (@SGGUID+3, 42, 65400, 1, 0, 0, 0, 'Maiden of the Virtue - Trash Respawn'),
 (@SGGUID+4, 42, 65500, 1, 0, 0, 0, 'Opera Event - Trash Respawn'),
 (@SGGUID+5, 42, 2501, 1, 0, 0, 0, 'The Curator - Trash Respawn'),
-(@SGGUID+6, 42, 2910, 1, 0, 0, 0, 'Shade of Aran - Trash Respawn');
+(@SGGUID+6, 42, 2910, 1, 0, 0, 0, 'Shade of Aran - Trash Respawn'),
+(@SGGUID+7, 42, 2336, 1, 0, 0, 0, 'Terestian Illhoof - Trash Respawn'),
+(@SGGUID+8, 42, 4807, 1, 0, 0, 0, 'Prince Malchezaar - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
