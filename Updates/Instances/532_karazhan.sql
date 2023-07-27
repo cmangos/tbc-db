@@ -682,27 +682,28 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+643,7,-11384.107,-1832.3479,179.37885,100,0,0),
 (@CGUID+643,8,-11389.809,-1824.9479,179.73013,100,0,0),
 (@CGUID+643,9,-11395.728,-1817.1012,179.73013,100,0,0),
-(@CGUID+647, 1, -11349.1, -1792.35, 179.735, 0, 0, 0),
-(@CGUID+647, 2, -11351.3, -1750.06, 179.735, 0, 0, 0),
-(@CGUID+647, 3, -11344.3, -1784.9, 179.735, 0, 0, 0),
-(@CGUID+647, 4, -11330.5, -1808.57, 179.735, 0, 0, 0),
-(@CGUID+652, 1, -11301.1, -1781.52, 179.735, 0, 0, 0),
-(@CGUID+652, 2, -11295.4, -1771.08, 179.735, 0, 0, 0),
-(@CGUID+652, 3, -11301.3, -1783.01, 179.735, 0, 0, 0),
-(@CGUID+652, 4, -11305.2, -1800.88, 179.735, 0, 0, 0),
-(@CGUID+652, 5, -11294.1, -1792.38, 179.735, 0, 0, 0),
-(@CGUID+653, 1, -11376.5, -1798.31, 179.735, 0, 0, 0),
-(@CGUID+653, 2, -11349.3, -1807.07, 179.735, 0, 0, 0),
-(@CGUID+653, 3, -11346.3, -1778.88, 179.735, 0, 0, 0),
-(@CGUID+654, 1, -11316.9, -1775.31, 179.735, 0, 0, 0),
-(@CGUID+654, 2, -11325.1, -1812.34, 179.735, 0, 0, 0),
-(@CGUID+654, 3, -11320.8, -1776.68, 179.735, 0, 0, 0),
-(@CGUID+654, 4, -11352, -1748.29, 179.735, 0, 0, 0),
-(@CGUID+655, 1, -11293.2, -1770.59, 179.734, 0, 0, 0),
-(@CGUID+655, 2, -11313.8, -1746.06, 179.734, 0, 0, 0),
-(@CGUID+656, 1, -11342.2, -1823.59, 179.735, 0, 0, 0),
-(@CGUID+656, 2, -11317.4, -1815.48, 179.735, 0, 0, 0),
-(@CGUID+656, 3, -11327.6, -1792.15, 179.735, 0, 0, 0),
+(@CGUID+652,1,-11307.568,-1802.7784,179.73013,100,0,0),
+(@CGUID+652,2,-11304.659,-1796.4802,179.73013,100,0,0),
+(@CGUID+652,3,-11302.86,-1789.6647,179.73013,100,0,0),
+(@CGUID+652,4,-11302.177,-1783.1975,179.73013,100,0,0),
+(@CGUID+652,5,-11301.889,-1776.504,179.73013,100,0,0),
+(@CGUID+652,6,-11303.779,-1769.8964,179.73015,100,0,0),
+(@CGUID+654,1,-11353.323,-1750.6598,179.73013,100,0,0),
+(@CGUID+654,2,-11363.92,-1756.069,179.73015,100,0,0),
+(@CGUID+654,3,-11367.862,-1761.8529,179.73015,100,0,0),
+(@CGUID+654,4,-11370.654,-1770.9724,179.73015,100,0,0),
+(@CGUID+654,5,-11369.655,-1780.1028,179.73015,100,0,0),
+(@CGUID+655,1,-11314.492,-1755.703,179.73015,100,0,0),
+(@CGUID+655,2,-11321.455,-1750.7626,179.73015,100,0,0),
+(@CGUID+655,3,-11328.547,-1748.985,179.73016,100,0,0),
+(@CGUID+655,4,-11336.585,-1748.3855,179.73015,100,0,0),
+(@CGUID+655,5,-11346.339,-1750.9174,179.73015,100,0,0),
+(@CGUID+656,1,-11312.95,-1812.0466,179.73016,100,0,0),
+(@CGUID+656,2,-11319.174,-1813.7174,179.73016,100,0,0),
+(@CGUID+656,3,-11324.857,-1814.8167,179.73016,100,0,0),
+(@CGUID+656,4,-11330.075,-1815.1942,179.73013,100,0,0),
+(@CGUID+656,5,-11337.839,-1814.7797,179.73015,100,0,0),
+(@CGUID+656,6,-11344.561,-1812.6958,179.73015,100,0,0),
 (@CGUID+702, 1, -11327.5, -1755.55, 265.165, 1.57868, 9000, 0),
 (@CGUID+702, 2, -11330.7, -1812, 265.165, 4.66686, 9000, 0),
 (@CGUID+703, 1, -11343.5, -1754.66, 265.165, 1.96431, 8000, 0),
@@ -1088,12 +1089,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (22524, 0, 0, 1, 0, 0, NULL); -- Karazhan - Chess, Victory Controller
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+647, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+652, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+653, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+654, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+655, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
-(@CGUID+656, @CGUID+644, 1024), -- Spell Shade -> Shade of Aran
 (@CGUID+649, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
 (@CGUID+650, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
 (@CGUID+651, @CGUID+646, 1167), -- Spell Shade -> Spell Shade
@@ -1826,16 +1821,16 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+644, 16524, 532, 1, -11164.5, -1909.56, 232.009, 3.65587, 604800, 604800, 9, 1), -- Shade of Aran
 (@CGUID+645, 16525, 532, 1, -11229.1, -1842.68, 223.943, 5.51664, 7200, 7200, 8, 1), -- Spell Shade
 (@CGUID+646, 16525, 532, 1, -11236.5, -1692.72, 210.88, 4.07465, 7200, 7200, 8, 1), -- Spell Shade
-(@CGUID+647, 16525, 532, 1, -11325.4, -1814.82, 179.734, 3.19154, 7200, 7200, 0, 2), -- Spell Shade
+-- re-use @CGUID+647 
 (@CGUID+648, 16525, 532, 1, -11240.7, -1831.95, 223.943, 5.07368, 7200, 7200, 8, 1), -- Spell Shade
 (@CGUID+649, 16525, 532, 1, -11238.1, -1704.61, 210.88, 3.59477, 7200, 7200, 8, 1), -- Spell Shade
 (@CGUID+650, 16525, 532, 1, -11227.5, -1716.57, 210.903, 2.01062, 7200, 7200, 8, 1), -- Spell Shade
 (@CGUID+651, 16525, 532, 1, -11222.7, -1697.5, 210.88, 0.969964, 7200, 7200, 8, 1), -- Spell Shade
-(@CGUID+652, 16525, 532, 1, -11295, -1792.66, 179.734, 3.82378, 7200, 7200, 0, 2), -- Spell Shade
-(@CGUID+653, 16525, 532, 1, -11348.2, -1776.83, 179.734, 1.77389, 7200, 7200, 0, 2), -- Spell Shade
-(@CGUID+654, 16525, 532, 1, -11352.6, -1747.5, 179.734, 1.49508, 7200, 7200, 0, 2), -- Spell Shade
-(@CGUID+655, 16525, 532, 1, -11313.9, -1747.16, 179.734, 5.88938, 7200, 7200, 0, 2), -- Spell Shade
-(@CGUID+656, 16525, 532, 1, -11329.4, -1792.93, 179.734, 3.53711, 7200, 7200, 0, 2), -- Spell Shade
+(@CGUID+652, 16525, 532, 1, -11307.568,-1802.7784,179.73013, 3.82378, 7200, 7200, 0, 4), -- Spell Shade
+-- re-use @CGUID+653 
+(@CGUID+654, 16525, 532, 1, -11353.323,-1750.6598,179.73013, 1.49508, 7200, 7200, 0, 4), -- Spell Shade
+(@CGUID+655, 16525, 532, 1, -11314.492,-1755.703,179.73015, 5.88938, 7200, 7200, 0, 4), -- Spell Shade
+(@CGUID+656, 16525, 532, 1, -11312.95,-1812.0466,179.73016, 3.53711, 7200, 7200, 0, 4), -- Spell Shade
 (@CGUID+657, 16525, 532, 1, -11239.4, -1818.61, 223.943, 5.47973, 7200, 7200, 8, 1), -- Spell Shade
 (@CGUID+658, 16525, 532, 1, -11222.1, -1830.24, 223.943, 5.84808, 7200, 7200, 8, 1), -- Spell Shade
 (@CGUID+659, 16525, 532, 1, -11279.7, -1933.79, 240.47, 4.59459, 7200, 7200, 9, 1), -- Spell Shade
@@ -2840,7 +2835,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+184, 'Karazhan - Magical Horror (1) | Mana Warp (3) | Guardian\'s Library Group 013', 0, 4, @SGGUID+6, 1), -- pack standing in the middle
 (@SGGUID+185, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 014', 0, 4, @SGGUID+6, 1), -- pack standing right, rnd movement, after some time pathing together
 (@SGGUID+186, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 015', 0, 4, @SGGUID+6, 1), -- pack standing left, rnd movement, after some time pathing together
-(@SGGUID+187, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 016', 0, 4, @SGGUID+6, 1); -- pack standing in the back, rnd movement, after some time pathing together
+(@SGGUID+187, 'Karazhan - Magical Horror (1) | Mana Warp (2) | Guardian\'s Library Group 016', 0, 4, @SGGUID+6, 1), -- pack standing in the back, rnd movement, after some time pathing together
+-- 6 rnd moving patrols
+(@SGGUID+188, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 017', 0, 4, @SGGUID+6, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 -- Gameobjects
@@ -3654,7 +3651,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+186, @CGUID+685, 2), -- Mana Warp
 (@SGGUID+187, @CGUID+674, 0), -- Magical Horror
 (@SGGUID+187, @CGUID+683, 1), -- Mana Warp
-(@SGGUID+187, @CGUID+684, 2); -- Mana Warp
+(@SGGUID+187, @CGUID+684, 2), -- Mana Warp
+(@SGGUID+188, @CGUID+652, -1), -- Spell Shade
+(@SGGUID+188, @CGUID+654, -1), -- Spell Shade
+(@SGGUID+188, @CGUID+655, -1), -- Spell Shade
+(@SGGUID+188, @CGUID+656, -1); -- Spell Shade
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+58, 1, 3, 0, @SGGUID+58, 2, 'Karazhan - Spectral Stable Hand | Spectral Stallion | Livery Stable Patrol 001'),
