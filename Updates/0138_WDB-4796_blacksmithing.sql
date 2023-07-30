@@ -41,9 +41,9 @@ UPDATE `creature_template` SET `TrainerSpell` = 0, `NpcFlags` = `NpcFlags`|1+16,
 -- 7230	Shayis Steelfury	Armorsmith Trainer
 -- 11177	Okothos Ironrager	Armorsmith
 -- 20125	Zula Slagfury	Armorsmith Trainer
-UPDATE `creature_template` SET `TrainerSpell` = 0, `NpcFlags` = `NpcFlags`|1+16, `TrainerTemplateId` = 133 WHERE `entry` = 5164; -- 9788 19 3001 - CCSDB TBC: 1, 67
+UPDATE `creature_template` SET `TrainerSpell` = 0, `NpcFlags` = `NpcFlags`|3+16, `TrainerTemplateId` = 133 WHERE `entry` = 5164; -- 9788 19 3001 - CCSDB TBC: 1, 67
 UPDATE `creature_template` SET `TrainerSpell` = 0, `NpcFlags` = `NpcFlags`|1+16, `TrainerTemplateId` = 133 WHERE `entry` = 7230; -- 9788 17 3001 - CCSDB TBC: 1, 65, 81
-UPDATE `creature_template` SET `TrainerSpell` = 0, `NpcFlags` = `NpcFlags`|1+16, `TrainerTemplateId` = 133 WHERE `entry` = 11177; -- 9788 19 3001 - CCSDB TBC: 3, 67, 83
+UPDATE `creature_template` SET `TrainerSpell` = 0, `NpcFlags` = `NpcFlags`|3+16, `TrainerTemplateId` = 133 WHERE `entry` = 11177; -- 9788 19 3001 - CCSDB TBC: 3, 67, 83
 UPDATE `creature_template` SET `TrainerSpell` = 0, `NpcFlags` = `NpcFlags`|1+16, `TrainerTemplateId` = 133 WHERE `entry` = 20125; -- 9788 17 3001 - CCSDB TBC: 1, 65, 81
 
 -- Imindril Spearsong 29505 - WotLK ONLY
@@ -163,5 +163,12 @@ INSERT INTO `npc_trainer_template` (`entry`, `spell`, `spellcost`, `reqskill`, `
 
 -- c. 11192,11191,11193
 -- https://youtu.be/d_LrM4rNkvc?t=55
-UPDATE `gossip_menu_option` SET `box_money` = 500000 WHERE `menu_id` IN (6089,6090,6091) AND `box_money` = 1000000;
+-- Changing Blacksmithing Specialization
+-- To cost of changing a specialization is 100 Gold for level 70 players and 50 gold for level 60 players. To change your specialization, you must first talk to the trainer that originally taught your current specialization to unlearn it.
+-- UPDATE `gossip_menu_option` SET `box_money` = 500000 WHERE `menu_id` IN (6089,6090,6091) AND `box_money` = 1000000;
+
+-- 512	15	69	2	0	0	0	Player Level <= 69
+-- 20468	17	17040	0	0	0	0	Player Has Learned Spell: 17040
+-- 20469	17	17041	0	0	0	0	Player Has Learned Spell: 17041
+-- 20470	17	17039	0	0	0	0	Player Has Learned Spell: 17039
 
