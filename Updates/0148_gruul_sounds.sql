@@ -1,0 +1,10 @@
+UPDATE broadcast_text SET SoundEntriesID1 = '11367', ChatTypeID = '1' WHERE Id = 20066;
+UPDATE broadcast_text SET SoundEntriesID1 = '11368', ChatTypeID = '1' WHERE Id = 20067;
+UPDATE broadcast_text SET SoundEntriesID1 = '11369', ChatTypeID = '1' WHERE Id = 20068;
+UPDATE broadcast_text SET SoundEntriesID1 = '11370', ChatTypeID = '1' WHERE Id = 20069;
+UPDATE broadcast_text SET SoundEntriesID1 = '11371', ChatTypeID = '1' WHERE Id = 20070;
+UPDATE broadcast_text SET SoundEntriesID1 = '11372', ChatTypeID = '1' WHERE Id = 20071;
+UPDATE broadcast_text SET SoundEntriesID1 = '11373', ChatTypeID = '1' WHERE Id = 20072;
+UPDATE broadcast_text SET SoundEntriesID1 = '11374', ChatTypeID = '1' WHERE Id = 20073;
+UPDATE broadcast_text SET SoundEntriesID1 = '11375', ChatTypeID = '1' WHERE Id = 20074;
+UPDATE broadcast_text SET SoundEntriesID1 = '11376', ChatTypeID = '1' WHERE Id = 20075;
