@@ -2785,19 +2785,19 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+191, 'Karazhan - Homunculus (8) | Guardian\'s Library Group 020', 0, 8, @SGGUID+7, 1),
 -- Group before Shade of Aran
 (@SGGUID+192, 'Karazhan - Spell Shade (4) | Guardian\'s Library Group 021', 0, 8, @SGGUID+6, 1),
--- Groups linked to *find out what they are linked too
+-- Groups are linked to Netherspite *confirmed on wotlk classic
 (@SGGUID+193, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 022', 0, 4, @SGGUID+8, 1),
 (@SGGUID+194, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 023', 0, 4, @SGGUID+8, 1),
 (@SGGUID+195, 'Karazhan - Spell Shade (3) | Sorcerous Shade (1) | Guardian\'s Library Group 024', 0, 4, @SGGUID+8, 1),
 (@SGGUID+196, 'Karazhan - Ethereal Thief (6) | Guardian\'s Library Group 025', 0, 6, @SGGUID+8, 0),
 (@SGGUID+197, 'Karazhan - Ethereal Thief | Ethereal Spellfilcher | Guardian\'s Library Group 026', 0, 0, @SGGUID+8, 0), -- 5 spawns using spawn_group_entry
 -- Trash after Chess Event linked to Prince
-(@SGGUID+198, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 001', 0, 0, @SGGUID+8, 1),
-(@SGGUID+199, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 002', 0, 0, @SGGUID+8, 1),
-(@SGGUID+200, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 003', 0, 0, @SGGUID+8, 1),
-(@SGGUID+201, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 004', 0, 0, @SGGUID+8, 1),
-(@SGGUID+202, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 005', 0, 0, @SGGUID+8, 1),
-(@SGGUID+203, 'Karazhan - Greater Fleshbeast (4) | Medivh\'s Chambers Patrols', 0, 0, @SGGUID+8, 0);
+(@SGGUID+198, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 001', 0, 0, @SGGUID+9, 1),
+(@SGGUID+199, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 002', 0, 0, @SGGUID+9, 1),
+(@SGGUID+200, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 003', 0, 0, @SGGUID+9, 1),
+(@SGGUID+201, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 004', 0, 0, @SGGUID+9, 1),
+(@SGGUID+202, 'Karazhan - Fleshbeast (2) | Medivh\'s Chambers Group 005', 0, 0, @SGGUID+9, 1),
+(@SGGUID+203, 'Karazhan - Greater Fleshbeast (4) | Medivh\'s Chambers Patrols', 0, 0, @SGGUID+9, 0);
 
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
@@ -3863,12 +3863,13 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+187,3,-11311.207,-1774.7487,179.73015,100,0,0),
 (@SGGUID+187,4,-11310.209,-1780.4564,179.73013,100,30000,0);
 
-DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 2336, 2501, 2910, 4807, 65400, 65500);
+DELETE FROM worldstate_name WHERE Id IN (2315, 2309, 2336, 2501, 2865, 2910, 4807, 65400, 65500);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (2315, 'Karazhan - Midnight - Encounter completed'),
 (2309, 'Karazhan - Moroes - Encounter completed'),
 (2336, 'Karazahn - Terestian Illhoof - Encounter completed'),
 (2501, 'Karazhan - The Curator - Encounter completed'),
+(2865, 'Karazahn - Nethersipte - Encounter completed'),
 (2910, 'Karazahn - Shade of Aran - Encounter completed'),
 (4807, 'Karazahn - Prince Malchezaar - Encounter completed'),
 -- From our wiki: The ones without it filled out have instance_dungeon_encounters.Id * 100 + 2-99. 0 and 1 are always reserved by Core for "Alive" & "Killed".
@@ -3884,7 +3885,8 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+5, 42, 2501, 1, 0, 0, 0, 'The Curator - Trash Respawn'),
 (@SGGUID+6, 42, 2910, 1, 0, 0, 0, 'Shade of Aran - Trash Respawn'),
 (@SGGUID+7, 42, 2336, 1, 0, 0, 0, 'Terestian Illhoof - Trash Respawn'),
-(@SGGUID+8, 42, 4807, 1, 0, 0, 0, 'Prince Malchezaar - Trash Respawn');
+(@SGGUID+8, 42, 2865, 1, 0, 0, 0, 'Netherspite - Trash Respawn'),
+(@SGGUID+9, 42, 4807, 1, 0, 0, 0, 'Prince Malchezaar - Trash Respawn');
 
 -- =========
 -- DBSCRIPTS
