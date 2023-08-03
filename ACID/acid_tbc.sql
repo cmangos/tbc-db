@@ -24120,6 +24120,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Omor the Unscarred (17308) - boss_omor_the_unscarred
 -- Hellfire Watcher 17309 - spell_list
 ('1730901','17309','4','0','15','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Hellfire Watcher - Random Say on Aggro'),
+('1730902','17309','30','0','100','0','5','17306','0','0','0','0','11','30643','10','0','0','0','0','0','0','0','0','0','Hellfire Watcher - Cast Heal on Receive AI Event A'),
 -- Bonechewer Beastmaster 17455 - spell_list
 ('1745501','17455','4','0','100','0','0','0','0','0','0','0','1','14000','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster - Yell on Aggro'),
 ('1745504','17455','0','0','100','2','20000','20000','0','0','0','0','1','14001','0','0','0','0','0','0','0','0','0','0','Bonechewer Beastmaster (Normal) - Yell For Summon Shattered Hand Warhounds'),
