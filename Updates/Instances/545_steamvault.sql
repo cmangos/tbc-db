@@ -9,6 +9,7 @@ EndDBScriptData */
 SET @CGUID := 5450000; -- creatures
 SET @OGUID := 5450000; -- gameobjects
 SET @PGUID := 48400; -- pools
+SET @SGUID := 5450000;
 
 -- =========
 -- CREATURES
@@ -87,24 +88,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+117, 6, -219.235, -260.519, -7.988, 0, 0, 0),
 (@CGUID+117, 7, -208.792, -261.672, -8.07919, 0, 0, 0),
 (@CGUID+117, 8, -202.299, -261.688, -7.97055, 0, 0, 0),
-(@CGUID+157, 1, 22.672, -223.202, -22.536, 0.814135, 0, 0),
-(@CGUID+157, 2, 39.0578, -210.222, -22.6133, 0.594223, 0, 0),
-(@CGUID+157, 3, 22.1297, -224.366, -22.5328, 4.12852, 0, 0),
-(@CGUID+157, 4, 8.45932, -247.386, -23.3366, 4.29345, 0, 0),
-(@CGUID+158, 1, 27.0136, -145.039, -22.3968, 4.2748, 0, 0),
-(@CGUID+158, 2, 21.4739, -159.21, -22.4082, 4.6832, 0, 0),
-(@CGUID+158, 3, 26.7279, -177.709, -22.3997, 5.36256, 0, 0),
-(@CGUID+158, 4, 21.8476, -158.618, -22.4052, 1.39002, 0, 0),
-(@CGUID+158, 5, 30.8925, -138.629, -22.5491, 0.720856, 0, 0),
-(@CGUID+158, 6, 57.7822, -114.87, -22.6239, 0.591266, 0, 0),
-(@CGUID+158, 7, 38.5541, -130.114, -22.6439, 3.84281, 0, 0),
-(@CGUID+159, 1, 13.0123, -180.845, -22.3747, 5.74062, 0, 0),
-(@CGUID+159, 2, 17.6451, -189.086, -22.4312, 4.86726, 0, 0),
-(@CGUID+159, 3, 18.475, -205.289, -22.3882, 4.74945, 0, 0),
-(@CGUID+159, 4, 17.0985, -188.306, -22.4238, 1.99428, 0, 0),
-(@CGUID+159, 5, 9.53988, -180.075, -22.4403, 2.69328, 0, 0),
-(@CGUID+159, 6, -7.20501, -173.28, -23.2732, 2.88963, 0, 0),
-(@CGUID+159, 7, 2.36385, -176.577, -22.3011, 5.97624, 0, 0),
 (@CGUID+174, 1, -103.0932, -412.6261, -6.715064, 100, 0, 0),
 (@CGUID+174, 2, -102.9049, -410.0541, -7.629989, 100, 0, 0),
 (@CGUID+174, 3, -102.8985, -409.8516, -7.701919, 100, 0, 0),
@@ -251,18 +234,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+178, @CGUID+99, 1155), -- creature_spawn_entry -> Coilfang Warrior
 (@CGUID+88, @CGUID+112, 1155), -- Coilfang Siren -> Coilfang Oracle
 (@CGUID+89, @CGUID+112, 1155), -- Coilfang Siren -> Coilfang Oracle
-(@CGUID+160, @CGUID+157, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+161, @CGUID+157, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+162, @CGUID+157, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+163, @CGUID+157, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+165, @CGUID+158, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+166, @CGUID+158, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+167, @CGUID+158, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+171, @CGUID+158, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+164, @CGUID+159, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+168, @CGUID+159, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+169, @CGUID+159, 1679), -- Steam Surger -> Tidal Surger
-(@CGUID+170, @CGUID+159, 1679), -- Steam Surger -> Tidal Surger
 (@CGUID+60, @CGUID+61, 1155), -- Coilfang Myrmidon -> Coilfang Myrmidon
 (@CGUID+40, @CGUID+97, 1679), -- Coilfang Sorceress -> Coilfang Warrior
 (@CGUID+41, @CGUID+97, 1679), -- Coilfang Sorceress -> Coilfang Warrior
@@ -476,21 +447,22 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+154, 21694, 545, 3, 55.4944, -97.78683, -22.53102, 5.718699, 7200, 7200, 2, 1), -- Bog Overlord
 (@CGUID+155, 21694, 545, 3, 55.75964, -198.1884, -22.52994, 3.599802, 7200, 7200, 2, 1), -- Bog Overlord
 (@CGUID+156, 21694, 545, 3, 65.399605, -149.509674, -20.165577, 2.933452, 7200, 7200, 2, 1), -- Bog Overlord			//moved a little due to random movement clipping
-(@CGUID+157, 21695, 545, 3, 8.45414, -247.872, -23.3512, 4.11733, 7200, 7200, 0, 2), -- Tidal Surger
-(@CGUID+158, 21695, 545, 3, 39.1165, -129.825, -22.6993, 3.05338, 7200, 7200, 0, 2), -- Tidal Surger
-(@CGUID+159, 21695, 545, 3, 1.50336, -176.132, -22.3626, 6.0399, 7200, 7200, 0, 2), -- Tidal Surger
+(@CGUID+157, 21695, 545, 3, 8.45414, -247.872, -23.3512, 4.11733, 7200, 7200, 0, 0), -- Tidal Surger
+(@CGUID+158, 21695, 545, 3, 39.1165, -129.825, -22.6993, 3.05338, 7200, 7200, 0, 0), -- Tidal Surger
+(@CGUID+159, 21695, 545, 3, 1.50336, -176.132, -22.3626, 6.0399, 7200, 7200, 0, 0), -- Tidal Surger
 (@CGUID+160, 21696, 545, 3, 6.8201, -250.286, -23.0829, 4.11733, 7200, 7200, 0, 0), -- Steam Surger
 (@CGUID+161, 21696, 545, 3, 10.9861, -249.484, -22.8298, 4.11924, 7200, 7200, 0, 0), -- Steam Surger
 (@CGUID+162, 21696, 545, 3, 10.1835, -245.318, -23.3071, 4.11733, 7200, 7200, 0, 0), -- Steam Surger
 (@CGUID+163, 21696, 545, 3, 6.01744, -246.12, -23.2013, 4.11732, 7200, 7200, 0, 0), -- Steam Surger
-(@CGUID+164, 21696, 545, 3, -0.890754, -175.418, -22.7894, 6.043, 7200, 7200, 0, 0), -- Steam Surger
+(@CGUID+164, 21696, 545, 3, 38.0048, -130.149, -22.6247, 3.12253, 7200, 7200, 0, 0), -- Steam Surger
 (@CGUID+165, 21696, 545, 3, 38.8399, -126.107, -22.5762, 3.19601, 7200, 7200, 0, 0), -- Steam Surger
 (@CGUID+166, 21696, 545, 3, 38.7364, -133.644, -22.7193, 3.16067, 7200, 7200, 0, 0), -- Steam Surger
 (@CGUID+167, 21696, 545, 3, 42.1832, -130.057, -22.7953, 3.06617, 7200, 7200, 0, 0), -- Steam Surger
 (@CGUID+168, 21696, 545, 3, 2.8464, -176.441, -22.2902, 6.01672, 7200, 7200, 0, 0), -- Steam Surger
 (@CGUID+169, 21696, 545, 3, -0.120366, -177.978, -22.8696, 6.17575, 7200, 7200, 0, 0), -- Steam Surger
 (@CGUID+170, 21696, 545, 3, 0.480689, -173.217, -22.1396, 6.06815, 7200, 7200, 0, 0), -- Steam Surger
-(@CGUID+171, 21696, 545, 3, 38.0048, -130.149, -22.6247, 3.12253, 7200, 7200, 0, 0), -- Steam Surger
+(@CGUID+171, 21696, 545, 3, -0.890754, -175.418, -22.7894, 6.043, 7200, 7200, 0, 0), -- Steam Surger
+
 -- RE-USE 172 - 173
 (@CGUID+174, 17722, 545, 3, -92.90063, -445.3097, 5.991491, 1.553343, 7200, 7200, 0, 0), -- Coilfang Sorceress
 (@CGUID+175, 17803, 545, 3, -98.08992, -445.5343, 6.081024, 1.22173, 7200, 7200, 0, 0), -- Coilfang Oracle
@@ -587,12 +559,67 @@ INSERT INTO gameobject_spawn_entry (guid, entry) VALUES
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGUID+1, 'Steamvault - Tidal Surger | Steam Surger (4) Patrol 000', 0, 0, 0, 1),
+(@SGUID+2, 'Steamvault - Tidal Surger | Steam Surger (4) Patrol 001', 0, 0, 0, 1),
+(@SGUID+3, 'Steamvault - Tidal Surger | Steam Surger (4) Patrol 002', 0, 0, 0, 1);
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGUID+1, @CGUID+157, 0, 0), -- Tidal Surger
+(@SGUID+1, @CGUID+160, 1, 0), -- Steam Surger
+(@SGUID+1, @CGUID+161, 2, 0), -- Steam Surger
+(@SGUID+1, @CGUID+162, 3, 0), -- Steam Surger
+(@SGUID+1, @CGUID+163, 4, 0), -- Steam Surger
+
+(@SGUID+2, @CGUID+158, 0, 0), -- Tidal Surger
+(@SGUID+2, @CGUID+164, 1, 0), -- Steam Surger
+(@SGUID+2, @CGUID+165, 2, 0), -- Steam Surger
+(@SGUID+2, @CGUID+166, 3, 0), -- Steam Surger
+(@SGUID+2, @CGUID+167, 4, 0), -- Steam Surger
+
+(@SGUID+3, @CGUID+159, 0, 0), -- Tidal Surger
+(@SGUID+3, @CGUID+168, 1, 0), -- Steam Surger
+(@SGUID+3, @CGUID+169, 2, 0), -- Steam Surger
+(@SGUID+3, @CGUID+170, 3, 0), -- Steam Surger
+(@SGUID+3, @CGUID+171, 4, 0); -- Steam Surger
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGUID+1, 6, 4, 0, @SGUID+1, 4, 'Steamvault - Tidal Surger | Steam Surger (4) Patrol 000'),
+(@SGUID+2, 6, 4, 0, @SGUID+2, 4, 'Steamvault - Tidal Surger | Steam Surger (4) Patrol 001'),
+(@SGUID+3, 6, 4, 0, @SGUID+3, 2, 'Steamvault - Tidal Surger | Steam Surger (4) Patrol 002');
+
+-- INSERT INTO `spawn_group_linked_group` (`Id`, `LinkedId`) VALUES
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGUID+1, 'Steamvault - Tidal Surger | Steam Surger (4) Patrol 000'),
+(@SGUID+2, 'Steamvault - Tidal Surger | Steam Surger (4) Patrol 001'),
+(@SGUID+3, 'Steamvault - Tidal Surger | Steam Surger (4) Patrol 002');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGUID+1, 1, 8.4541445, -247.87244, -23.351183, 100, 0, 0),
+(@SGUID+1, 2, 18.289186, -233.34319, -22.514954, 100, 0, 0),
+(@SGUID+1, 3, 32.239754, -218.6089, -22.641357, 100, 0, 0),
+(@SGUID+1, 4, 39.663795, -206.20955, -22.631807, 100, 0, 0),
+
+(@SGUID+2, 1, 74.02218, -109.2243, -22.627672, 100, 0, 0),
+(@SGUID+2, 2, 57.948982, -114.72305, -22.61207, 100, 0, 0),
+(@SGUID+2, 3, 47.457386, -117.81651, -22.616959, 100, 0, 0),
+(@SGUID+2, 4, 49.124054, -130.7106, -22.783794, 100, 0, 0),
+(@SGUID+2, 5, 32.35119, -129.22713, -22.444157, 100, 0, 0),
+(@SGUID+2, 6, 31.37296, -147.21597, -22.541405, 100, 0, 0),
+(@SGUID+2, 7, 18.65977, -169.44081, -22.41369, 100, 0, 0),
+(@SGUID+2, 8, 28.451773, -183.30582, -22.477484, 100, 0, 0),
+
+(@SGUID+3, 1, 2.8735342, -180.75233, -22.466059, 100, 0, 0),
+(@SGUID+3, 2, 17.594118, -181.13298, -22.42181, 100, 0, 0),
+(@SGUID+3, 3, 18.493568, -203.59416, -22.401865, 100, 0, 0),
+(@SGUID+3, 4, 17.594118, -181.13298, -22.42181, 100, 0, 0),
+(@SGUID+3, 5, 2.950016, -181.21527, -22.511261, 100, 0, 0),
+(@SGUID+3, 6, -7.079567, -173.08127, -23.894533, 100, 0, 0),
+(@SGUID+3, 7, -13.092999, -158.90938, -22.758324, 100, 0, 0),
+(@SGUID+3, 8, -7.1449122, -172.92726, -23.884075, 100, 0, 0);
 
 -- =======
 -- POOLING
