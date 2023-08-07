@@ -1,11 +1,9 @@
 /* DBScriptData
 DBName: Karazhan
 DBScriptName: instance_karazhan
-DB%Complete: 81
+DB%Complete: 90
 DBComment:
-* Continue Grouped Linking Rework Opera
-* Recheck visible Trigger npcs
-* Maiden trash might need pooling
+missing some more rp, for exablme phantom guest rp
 EndDBScriptData */
 
 SET @CGUID := 5320000; -- creatures
@@ -860,20 +858,20 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (16426, 0, 2,-11096.697,-1896.982,74.39442,100,0,0),
 (16426, 0, 3,-11099.559,-1896.0282,74.39591,100,0,0),
 (16426, 0, 4,-11101.591,-1893.8387,74.39093,100,0,0),
-(16426, 0, 5,-11102.746,-1891.608,74.38991,100,1000,0),
+(16426, 0, 5,-11102.746,-1891.608,74.38991,100,1000,1642601),
 (16426, 0, 6,-11107.028,-1888.5391,74.38947,100,0,0),
 (16426, 0, 7,-11110.183,-1887.1548,74.38972,100,0,0),
 (16426, 0, 8,-11113.426,-1888.4269,74.399734,100,0,0),
 (16426, 0, 9,-11114.915,-1891.1129,74.40613,100,0,0),
 (16426, 0, 10,-11115.705,-1894.4874,74.40904,100,0,0),
 (16426, 0, 11,-11115.894,-1897.3828,74.40218,100,0,0),
-(16426, 0, 12,-11114.664,-1899.77,74.39636,100,1000,0),
+(16426, 0, 12,-11114.664,-1899.77,74.39636,100,1000,1642601),
 (16426, 0, 13,-11109.591,-1900.4275,74.39805,100,0,0),
 (16426, 0, 14,-11107.776,-1901.8357,74.3983,100,0,0),
 (16426, 0, 15,-11105.841,-1904.2448,74.399155,100,0,0),
 (16426, 0, 16,-11103.8,-1907.5823,74.3952,100,0,0),
 (16426, 0, 17,-11102.566,-1909.854,74.3953,100,0,0),
-(16426, 0, 18,-11101.377,-1911.9944,74.3954,100,1000,0),
+(16426, 0, 18,-11101.377,-1911.9944,74.3954,100,1000,1642601),
 (16426, 0, 19,-11096.391,-1913.4121,74.402336,100,0,0),
 (16426, 0, 20,-11093.494,-1912.1958,74.39592,100,0,0),
 (16426, 0, 21,-11091.122,-1909.6365,74.39901,100,0,0),
@@ -3892,7 +3890,7 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1568701,1568702,1568703,1568704,1568705,1568706,1555101, 1652501);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1568701,1568702,1568703,1568704,1568705,1568706,1555101, 1642601, 1652501);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1568701, 0, 31, 17007, 30, 0, 0, 0, 0, -25000, 0, 0, 0, 0, 0, 0, 0, 'Terminate Script If Lady Keira Berrybuck Is Not Found in Range'),
 (1568701, 1000, 0, 0, 0, 0, 17007, 30, 3, 13198, 13201, 0, 0, 0, 0, 0, 0, 'Lady Keira Berrybuck Random Say'),
@@ -3913,29 +3911,60 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1568706, 1000, 0, 0, 0, 0, 19876, 30, 3, 13198, 13201, 0, 0, 0, 0, 0, 0, 'Lord Robin Daris Random Say'),
 (1568706, 6000, 0, 0, 0, 0, 19876, 30, 1, 13202, 13204, 13206, 0, 0, 0, 0, 0, 'Moroes Random Say'),
 (1555101, 0, 0, 0, 0, 0, 0, 0, 0, 13806, 13804, 13805, 0, 0, 0, 0, 0, 'Spectral Stable Hand - Random Say'),
+-- Bennet
+(1642601, 0, 31, 16425, 6, 0, 0, 0, 0, -15000, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Terminate Script if Guardsman Found'),
+(1642601, 0, 45, 0, 1642601, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Start RandomScript'),
 -- Spell Shade random script
 (1652501, 0, 45, 0, 1652502, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spell Shade - Random Relay Script');
 
 -- 2 Ghostly stewards RP script on The Scullery
-DELETE FROM dbscripts_on_relay WHERE id IN (1641401, 1652501);
-REPLACE INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+DELETE FROM dbscripts_on_relay WHERE id IN (1641401, 1642601, 1642401, 1642402, 1642403, 1652501);
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1641401, 0, 0, 31, 16414, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Ghostly Steward - Terminate Script if 2nd Ghostly Steward Found'), -- this is probably wrong, cause the npc still does the rp even if the friend is dead, but this would cause db errors 
 (1641401, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Ghostly Steward - Emote ONESHOT_TALK'),
 (1641401, 3000, 0, 1, 6, 0, 0, 16414, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - 2nd Ghostly Steward - Emote ONESHOT_QUESTION'),
 (1641401, 7000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6.2657, 'Karazhan - Ghostly Steward - Move Orientation'),
 (1641401, 7000, 1, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Ghostly Steward - Emote ONESHOT_POINT'),
 (1641401, 10000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.57079, 'Karazhan - Ghostly Steward - Move Orientation'),
+-- Bennett
+(1642601, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Pause Waypoints'),
+(1642601, 1000, 1, 36, 0, 0, 0, 16425, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Face Phantom Guardsman'),
+(1642601, 1000, 1, 0, 0, 0, 0, 0, 0, 0, 13299, 13300, 13301, 13302, 0, 0, 0, 0, 'Karazhan - Bennett - Random Say'),
+(1642601, 3000, 0, 35, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Send Custom AI Event A'),
+(1642601, 9000, 0, 35, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Send Custom AI Event B'),
+(1642601, 11000, 0, 35, 8, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - Send Custom AI Event C'),
+(1642601, 12000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Bennett - UnPause Waypoints'),
+-- Spectral Sentry/Phantom Guardsman rps
+-- version 1
+(1642401, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642401, 3000, 0, 1, 1, 0, 0, 0, 5320388, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642401, 6000, 0, 1, 11, 0, 0, 0, 5320407, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Laugh'),
+(1642401, 11000, 0, 1, 1, 0, 0, 0, 5320407, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642401, 14000, 0, 1, 1, 0, 0, 0, 5320388, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+-- version 2 used by spawn_group 70 triggert by guid 5320390
+(1642402, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642402, 3000, 0, 1, 1, 0, 0, 0, 5320389, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642402, 6000, 0, 1, 6, 0, 0, 0, 5320408, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Question'),
+(1642402, 11000, 0, 1, 1, 0, 0, 0, 5320408, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642402, 14000, 0, 1, 1, 0, 0, 0, 5320389, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+-- version 3 used by spawn_group 71 triggert by guid 5320412
+(1642403, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642403, 3000, 0, 1, 1, 0, 0, 0, 5320411, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642403, 6000, 0, 1, 23, 0, 0, 0, 5320392, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Flex'),
+(1642403, 11000, 0, 1, 1, 0, 0, 0, 5320392, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
+(1642403, 14000, 0, 1, 1, 0, 0, 0, 5320411, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spawn_group_entry - Emote Talk'),
 -- Spell Shade
 (1652501, 0, 0, 21, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spell Shade - Set Active'), -- active to make sure relay script goes threw all the time
 (1652501, 0, 1, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spell Shade - Move Random around Point'),
 (1652501, 20000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spell Shade - Waypoint Movement'),
 (1652501, 20000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spell Shade - Remove Active');
 
-DELETE FROM dbscript_random_templates WHERE id = 1652502;
+DELETE FROM dbscript_random_templates WHERE id IN (1642601, 1652502);
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+(1642601, 1, 1642601, 70, 'Karazhan - Bennett - Start RP'),
+(1642601, 1, 0, 30, 'Karazhan - Bennett - No RP'),
 (1652502, 1, 1652501, 40,'Karazhan - Spell Shade - Start Random Moving'),
 (1652502, 1, 0, 60,'Karazhan - Spell Shade - Nothing');
-
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
