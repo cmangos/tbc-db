@@ -205,7 +205,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+99, 17517, 543, 3, -1383.39, 1711.82, 82.7961, 5.67232, 7200, 7200, 0, 0), -- Hellfire Sentry
 (@CGUID+100, 17517, 543, 3, -1372.56, 1724.31, 82.967, 5.3058, 7200, 7200, 0, 0), -- Hellfire Sentry
 (@CGUID+101, 17271, 543, 3, -1159.13, 1457.56, 68.4082, 2.78812, 7200, 7200, 0, 0), -- Bonechewer Destroyer
-(@CGUID+102, 17271, 543, 3, -1155.26, 1464.11, 68.407, 3.40466, 7200, 7200, 0, 0); -- Bonechewer Destroyer
+(@CGUID+102, 17271, 543, 3, -1155.26, 1464.11, 68.407, 3.40466, 7200, 7200, 0, 0), -- Bonechewer Destroyer
+-- Spawned by Bonechewer Beastmaster
+(@CGUID+103, 17280, 543, 3, -1254.019, 1475.32, 68.657, 1.727, 7200, 7200, 0, 0), -- Shattered Hand Warhound
+(@CGUID+104, 17280, 543, 3, -1256.654, 1470.34, 68.666, 1.762, 7200, 7200, 0, 0), -- Shattered Hand Warhound
+(@CGUID+105, 17280, 543, 3, -1251.409, 1479.62, 68.649, 2.578, 7200, 7200, 0, 0); -- Shattered Hand Warhound
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+26, 17269), (@CGUID+26, 17270), -- Bleeding Hollow Darkcaster, Bleeding Hollow Archer
@@ -293,7 +297,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+34, 'Hellfire Ramparts - Omor the Unscarred (1)', 0, 0, 0, 1),
 (@SGGUID+35, 'Hellfire Ramparts - Vazruden the Herald (1)', 0, 0, 0, 1),
 (@SGGUID+36, 'Hellfire Ramparts (Normal) - Solid Fel Iron Chest, Bound Fel Iron Chest (2)', 1, 1, 0, 0),
-(@SGGUID+37, 'Hellfire Ramparts (Heroic) - Bound Adamantite Chest, Solid Adamantite Chest (2)', 1, 1, 0, 0);
+(@SGGUID+37, 'Hellfire Ramparts (Heroic) - Bound Adamantite Chest, Solid Adamantite Chest (2)', 1, 1, 0, 0),
+-- Spawned by Bonechewer Beast Master
+(@SGGUID+38, 'Hellfire Ramparts - Shattered Hand Warhound (3) | Patrol 003', 0, 3, @SGGUID+2, 9);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+36, 184930, 0, 0, 60), -- Solid Fel Iron Chest
@@ -406,7 +412,11 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+36, @OGUID+10, -1), -- Solid Fel Iron Chest, Bound Fel Iron Chest
 (@SGGUID+36, @OGUID+12, -1), -- Solid Fel Iron Chest, Bound Fel Iron Chest
 (@SGGUID+37, @OGUID+11, -1), -- Bound Adamantite Chest, Solid Adamantite Chest
-(@SGGUID+37, @OGUID+13, -1); -- Bound Adamantite Chest, Solid Adamantite Chest
+(@SGGUID+37, @OGUID+13, -1), -- Bound Adamantite Chest, Solid Adamantite Chest
+-- Spawned by Bonechewer Beast Master
+(@SGGUID+38, @CGUID+103, 0), -- Shattered Hand Warhound
+(@SGGUID+38, @CGUID+104, 1), -- Shattered Hand Warhound
+(@SGGUID+38, @CGUID+105, 2); -- Shattered Hand Warhound
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+4, 2, 3.5, 0, @SGGUID+4, 2, 'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 000'),
@@ -414,7 +424,8 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+15, 2, 3, 0, @SGGUID+15, 2, 'Hellfire Ramparts - Watchkeeper Gargolmar | Hellfire Watcher (3)'),
 (@SGGUID+25, 2, 4, 0, @SGGUID+25, 2, 'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 003'),
 (@SGGUID+27, 2, 3.5, 0, @SGGUID+27, 2, 'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 000'),
-(@SGGUID+29, 2, 4, 0, @SGGUID+29, 2, 'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 001');
+(@SGGUID+29, 2, 4, 0, @SGGUID+29, 2, 'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 001'),
+(@SGGUID+38, 3, 3, 0, @SGGUID+38, 2, 'Hellfire Ramparts - Shattered Hand Warhound (3) Patrol 003');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+4,'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 000'),
@@ -422,7 +433,8 @@ INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+15,'Hellfire Ramparts - Watchkeeper Gargolmar | Hellfire Watcher (3)'),
 (@SGGUID+25,'Hellfire Ramparts - Bonechewer Ravener | Shattered Hand Warhound (3) Patrol 003'),
 (@SGGUID+27,'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 000'),
-(@SGGUID+29,'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 001');
+(@SGGUID+29,'Hellfire Ramparts - Bonechewer Hungerer (2) Patrol 001'),
+(@SGGUID+38,'Hellfire Ramparts - Shattered Hand Warhound (3) Patrol 003');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+4, 1, -1257.71, 1651, 67.9137, 1.8753, 5000, 0),
@@ -466,36 +478,51 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+27, 3, -1255.7458, 1649.3158, 93.13299, 100, 0, 0),
 (@SGGUID+27, 4, -1269.8956, 1642.5133, 91.60827, 100, 0, 0),
 (@SGGUID+29, 1, -1324.969, 1660.7915, 93.00998, 0, 0, 0), 
-(@SGGUID+29, 2, -1345.5702, 1685.6698, 89.944595, 0, 0, 0);
+(@SGGUID+29, 2, -1345.5702, 1685.6698, 89.944595, 0, 0, 0),
+(@SGGUID+38,1,-1254.019, 1475.32, 68.657,100,100,5),
+(@SGGUID+38,2,-1262.1562,1484.3203,68.557724,100,0,0),
+(@SGGUID+38,3,-1270.4551,1489.5599,68.560844,100,0,0),
+(@SGGUID+38,4,-1278.5851,1494.693,68.56402,100,0,0),
+(@SGGUID+38,5,-1284.7661,1501.9167,68.56972,100,0,0),
+(@SGGUID+38,6,-1290.1835,1509.6271,68.57712,100,0,0),
+(@SGGUID+38,7,-1293.6478,1519.2853,68.580696,100,0,0),
+(@SGGUID+38,8,-1295.187,1528.9119,68.58099,100,100,1728001);
 
-DELETE FROM worldstate_name WHERE Id IN (4698,4699,4700);
+DELETE FROM worldstate_name WHERE Id IN (4698,4699,4700, @SGGUID+2);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
 (4698, 'Hellfire Ramparts - Watchkeeper Gargolmar - Encounter completed'),
 (4699, 'Hellfire Ramparts - Omor the Unscarred - Encounter completed'),
-(4700, 'Hellfire Ramparts - Vazruden the Herald - Encounter completed');
+(4700, 'Hellfire Ramparts - Vazruden the Herald - Encounter completed'),
+(@SGGUID+2, 'Hellfire Ramparts - Bonechewer Beastmaster');
 
-DELETE FROM conditions WHERE condition_entry = @SGGUID+1;
+DELETE FROM conditions WHERE condition_entry IN (@SGGUID+1, @SGGUID+2);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+1, 42, 4698, 1, 0, 0, 0, 'Watchkeeper Gargolmar - Encounter completed');
+(@SGGUID+1, 42, 4698, 1, 0, 0, 0, 'Watchkeeper Gargolmar - Encounter completed'),
+(@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Bonechewer Beastmaster - Warhound spawn');
 
 -- =========
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1726401);
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1726401, 0, 0, 0, 0, 0, 17269, @CGUID+29, 17, 13695, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Ravener (Hellfire Ramparts) - Yell At Bleeding Hollow Darkcaster'),
-(1726401, 0, 36, 0, 0, 0, 17269, @CGUID+29, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Ravener (Hellfire Ramparts) - Face Bleeding Hollow Darkcaster'),
-(1726401, 4000, 0, 0, 0, 0, 17269, @CGUID+29, 19, 13989, 0, 0, 0, 0, 0, 0, 0, 'Bleeding Hollow Darkcaster (Hellfire Ramparts) - Yell At Bonechewer Ravener');
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1726401, 1728001);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1726401, 0, 0, 0, 0, 0, 0, 17269, @CGUID+29, 17, 13695, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Ravener (Hellfire Ramparts) - Yell At Bleeding Hollow Darkcaster'),
+(1726401, 0, 0, 36, 0, 0, 0, 17269, @CGUID+29, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Ravener (Hellfire Ramparts) - Face Bleeding Hollow Darkcaster'),
+(1726401, 4000, 0, 0, 0, 0, 0, 17269, @CGUID+29, 19, 13989, 0, 0, 0, 0, 0, 0, 0, 'Bleeding Hollow Darkcaster (Hellfire Ramparts) - Yell At Bonechewer Ravener'),
+(1728001, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Warhound - Change Movement'),
+(1728001, 0, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Warhound - Combat Zone Pulse');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscripts_on_relay` WHERE `id` IN (1725901,1726401);
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN (1725901,1726401, 1745501, 1745502);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1725901, 0, 42, 0, 0, 0, 0, 0, 0, 2028, 11589, 0, 0, 0, 0, 0, 0, '17259 - EquipSet 2'),
-(1726401, 0, 42, 0, 0, 0, 0, 0, 0, 2028, 22215, 0, 0, 0, 0, 0, 0, '17264 - EquipSet 2');
+(1726401, 0, 42, 0, 0, 0, 0, 0, 0, 2028, 22215, 0, 0, 0, 0, 0, 0, '17264 - EquipSet 2'),
+(1745501, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Beastmaster - Activate WorldState'),
+(1745502, 0, 0, 0, 0, 0, 0, 0, 0, 14001, 0, 0, 0, 0, 0, 0, 0, 'Bonechewer Beastmaster - Yell for Summon'),
+(1745502, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'Bonechewer Beastmaster - Activate WorldState');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
