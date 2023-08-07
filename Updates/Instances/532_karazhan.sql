@@ -3876,7 +3876,7 @@ INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
 (65400, 'Karazhan - Maiden of the Virtue - Encounter completed'), 
 (65500, 'Karazhan - Opera Event - Encounter completed');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4, @SGGUID+5, @SGGUID+6, @SGGUID+7, @SGGUID+8);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+2, @SGGUID+3, @SGGUID+4, @SGGUID+5, @SGGUID+6, @SGGUID+7, @SGGUID+8, @SGGUID+9);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
 (@SGGUID+1, 42, 2315, 1, 0, 0, 0, 'Midnight - Trash Respawn'),
 (@SGGUID+2, 42, 2309, 1, 0, 0, 0, 'Moroes - Trash Respawn'),
@@ -3916,11 +3916,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- Spell Shade random script
 (1652501, 0, 45, 0, 1652502, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Spell Shade - Random Relay Script');
 
--- Delete some old used dbscripts_on_creature_movement that no longer getting used to fix dberrors
--- this will get removed, when rp scriptsgot reworked (soon)
--- npcs are Spectral Servant, Skeletal Waiter and Bennetthey ill prob get dont via creature_ai_script
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1640701, 1641501, 1641502, 1642601, 1642607, 1642611);
-
 -- 2 Ghostly stewards RP script on The Scullery
 DELETE FROM dbscripts_on_relay WHERE id IN (1641401, 1652501);
 REPLACE INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
@@ -3936,7 +3931,7 @@ REPLACE INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalo
 (1652501, 20000, 0, 20, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spell Shade - Waypoint Movement'),
 (1652501, 20000, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Karazhan - Spell Shade - Remove Active');
 
-DELETE FROM dbscript_random_templates WHERE id = 1652501;
+DELETE FROM dbscript_random_templates WHERE id = 1652502;
 INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 (1652502, 1, 1652501, 40,'Karazhan - Spell Shade - Start Random Moving'),
 (1652502, 1, 0, 60,'Karazhan - Spell Shade - Nothing');
