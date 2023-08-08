@@ -51,3 +51,24 @@ REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceR
 
 UPDATE `creature_template` SET SpellList=1659301 WHERE entry = 16593;
 UPDATE `creature_template` SET SpellList=2058201 WHERE entry = 20582;
+
+
+-- Shadowmoon Acolyte 16594
+DELETE FROM creature_spell_list WHERE Id IN (1659401, 2057601);
+INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
+(1659401, 1, 15585, 0, 201, 0, 100, 0, 16000, 25000, 16000, 25000, "Shadowmoon Acolyte (Normal) - Prayer of Healing - Missing 50% including self"),
+(1659401, 2, 35944, 0, 202, 0, 100, 0, 10000, 20000, 11000, 26000, "Shadowmoon Acolyte (Normal) - Power Word: Shield - Missing 90% including self"),
+(1659401, 3, 31516, 2, 1, 0, 100, 0, 2500, 5000, 2500, 5000, "Shadowmoon Acolyte (Normal) - Mind Blast - on Current"),
+-- heroic
+(2057601, 1, 35943, 0, 201, 0, 100, 0, 16000, 25000, 16000, 25000, "Shadowmoon Acolyte (Normal) - Prayer of Healing - Missing 50% including self"),
+(2057601, 2, 36052, 0, 202, 0, 100, 0, 10000, 20000, 11000, 26000, "Shadowmoon Acolyte (Normal) - Power Word: Shield - Missing 90% including self"),
+(2057601, 3, 15587, 2, 1, 0, 100, 0, 2500, 5000, 2500, 5000, "Shadowmoon Acolyte (Normal) - Mind Blast - on Current");
+
+DELETE FROM creature_spell_list_entry WHERE Id IN (1659401, 2057601);
+REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
+(1659401, "Shattered Halls - Shadowmoon Acolyte - Normal", 0, 80),
+(2057601, "Shattered Halls - Shadowmoon Acolyte - Heroic", 0, 80);
+
+UPDATE `creature_template` SET SpellList=1659401 WHERE entry = 16594;
+UPDATE `creature_template` SET SpellList=2057601 WHERE entry = 20576;
+
