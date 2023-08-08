@@ -24269,12 +24269,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shattered Hand Sentry 16507 - spell_list
 ('1650701','16507','4','0','15','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shattered Hand Sentry - Random Say on Aggro'),
 -- Shattered Hand Savage 16523
-('1652301','16523','30','0','100','1','5','16700','0','0','0','0','4','1319','0','0','5','36','0','0','0','0','0','0','Shattered Hand Savage - Emote and Play Sound on Receive AI Event A'),
-('1652302','16523','6','0','100','2','0','0','0','0','0','0','45','6','50','0','11','36023','1','7','0','0','0','0','Shattered Hand Savage (Normal) - Send AI Event B, Cast Deathblow on Death'),
-('1652303','16523','6','0','100','4','0','0','0','0','0','0','45','6','50','0','11','36054','1','7','0','0','0','0','Shattered Hand Savage (Heroic) - Send AI Event B, Cast Deathblow on Death'),
-('1652304','16523','4','0','15','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shattered Hand Savage - Random Say on Aggro'),
-('1652305','16523','2','0','100','1025','30','0','120000','120000','0','0','11','30485','0','0','1','1191','0','0','0','0','0','0','Shattered Hand Savage - Cast Enrage at 30% HP'),
-('1652306','16523','9','0','100','1025','0','5','20000','25000','0','0','11','30470','0','0','0','0','0','0','0','0','0','0','Shattered Hand Savage - Cast Slice and Dice'),
+('1652301','16523','4','0','15','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shattered Hand Savage - Random Say on Aggro'),
+('1652302','16523','2','0','100','1025','30','0','120000','120000','0','0','11','30485','0','0','1','1191','0','0','0','0','0','0','Shattered Hand Savage - Cast Enrage at 30% HP'),
+('1652303','16523','30','0','100','1','5','16700','0','0','0','0','4','1319','0','0','5','36','0','0','0','0','0','0','Shattered Hand Savage - Emote and Play Sound on Receive AI Event A'),
+('1652304','16523','6','0','100','2','0','0','0','0','0','0','45','6','50','0','11','36023','1','7','0','0','0','0','Shattered Hand Savage (Normal) - Send AI Event B, Cast Deathblow on Death'),
+('1652305','16523','6','0','100','4','0','0','0','0','0','0','45','6','50','0','11','36054','1','7','0','0','0','0','Shattered Hand Savage (Heroic) - Send AI Event B, Cast Deathblow on Death'),
 -- Shattered Hand Brawler 16593
 ('1659301','16593','6','0','100','0','0','0','0','0','0','0','45','6','50','0','0','0','0','0','0','0','0','0','Shattered Hand Brawler - Send AI Event B on Death'),
 ('1659302','16593','4','0','100','0','0','0','0','0','0','0','11','8876','0','34','28','0','16093','0','0','0','0','0','Shattered Hand Brawler - Cast Thrash and Remove Self Visual - Sleep Until Cancelled (DND) on Aggro'),
