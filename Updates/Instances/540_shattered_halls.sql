@@ -31,6 +31,7 @@ EndDBScriptData */
 SET @CGUID := 5400000; -- creatures
 SET @OGUID := 5400000; -- gameobjects
 SET @PGUID := 48000; -- pools
+SET @SGGUID := 5400000; -- spawn_groups
 
 -- =========
 -- CREATURES
@@ -1055,8 +1056,8 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+4, 182540, 540, 3, 214.4881, 266.1671, -11.51811, 0, 0, 0, 0, 1, 120, 120), -- Grand Warlock Chamber Door
 (@OGUID+5, 184177, 540, 1, -42.05605, -26.77249, -13.51534, 1.469793, 0, 0, 0.6705103, 0.7419003, 0, 0), -- Doodad_InstancePortal_PurpleDifficulty01
 (@OGUID+6, 184178, 540, 2, -42.05605, -26.77249, -13.51534, 1.469793, 0, 0, 0.6705103, 0.7419003, 0, 0), -- Doodad_InstancePortal_PurpleDifficultyIcon01
-(@OGUID+7, 184940, 540, 3, 473.4622, 144.0872, 0.594992, 0.06981169, 0, 0, 0, 0, 86400, 86400), -- Bound Adamantite Chest
-(@OGUID+8, 184941, 540, 3, 473.4622, 144.0872, 0.594992, 0.06981169, 0, 0, 0, 0, 86400, 86400), -- Solid Adamantite Chest
+(@OGUID+7, 0, 540, 3, 473.4622, 144.0872, 0.594992, 0.06981169, 0, 0, 0, 0, 86400, 86400), -- Bound Adamantite Chest
+-- (@OGUID+8, 184941, 540, 3, 473.4622, 144.0872, 0.594992, 0.06981169, 0, 0, 0, 0, 86400, 86400), -- Solid Adamantite Chest
 (@OGUID+9, 181671, 540, 3, 330.75064, 74.205864, 1.079237, 3.1590624, 0, 0, -0.99996185, 0.008734641, 86400, 86400), -- Fel Horde Banner
 (@OGUID+10, 181671, 540, 3, 330.79465, 41.026054, 1.070399, 0.017452462, 0, 0, 0.00872612, 0.9999619, 86400, 86400), -- Fel Horde Banner
 (@OGUID+11, 181435, 540, 3, 242.159, -75.06284, -9.304095, 4.886921, 0, 0, -0.6427879, 0.7660442, 86400, 86400), -- Doodad_OnyziasLairLavaTrap80
@@ -1077,6 +1078,19 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 -- ============
 -- SPAWN GROUPS
 -- ============
+
+-- ======
+-- SPAWN GROUPS
+-- ======
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0);
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+1, 184940, 0, 0, 0), (@SGGUID+1, 184941, 0, 0, 0); -- Bound Adamantite Chest, Solid Adamantite Chest
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+1, @OGUID+7, -1); -- spawn_group_entry
 
 -- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
@@ -1112,8 +1126,7 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+10, 1, 'Shattered Halls - Halls of Father Group 3 - Right'),
 (@PGUID+11, 2, 'Shattered Halls - Halls of Father Group 4 (Master)'),
 (@PGUID+12, 1, 'Shattered Halls - Halls of Father Group 4 - Left'),
-(@PGUID+13, 1, 'Shattered Halls - Halls of Father Group 4 - Right'),
-(@PGUID+71, 1, 'Shattered Halls - Master Chest Pool'); -- gameobject
+(@PGUID+13, 1, 'Shattered Halls - Halls of Father Group 4 - Right');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 (@CGUID+292, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'), -- Shattered Halls - Shattered Hand Assassin (17695)
@@ -1155,9 +1168,7 @@ INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALU
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
-INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@OGUID+7, @PGUID+71, 0, 'Shattered Halls - Bound Adamantite Chest (184940)'),
-(@OGUID+8, @PGUID+71, 0, 'Shattered Halls - Solid Adamantite Chest (184941)');
+-- INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
