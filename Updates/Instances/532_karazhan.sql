@@ -3684,7 +3684,7 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+139, 2, 2, 0, @SGGUID+139, 4, 'Karazhan - Spectral Sentry (2) | The Guest Chambers Patrol 001'),
 (@SGGUID+140, 2, 2, 0, @SGGUID+140, 4, 'Karazhan - Phantom Guardsman (2) | The Guest Chambers Patrol 002'),
 (@SGGUID+157, 4, 3, 0, @SGGUID+157, 4, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 001'),
-(@SGGUID+162, 4, 4, 0, 0, 1, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 002'),
+(@SGGUID+162, 4, 4, 0, @SGGUID+162, 2, 'Karazhan - Ghostly Philanthropist (1) | Spectral Patron (2) | The Opera Hall Patrol 002'),
 (@SGGUID+165, 4, 4, 0, 0, 1, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 002'),
 (@SGGUID+166, 4, 4, 0, 0, 1, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 003'),
 (@SGGUID+167, 4, 4, 0, 0, 1, 'Karazhan - Arcane Anomaly (1) | Syphoner (5) | The Menagerie Group 004'),
