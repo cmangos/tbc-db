@@ -343,14 +343,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+268, 15, 525.0038, 170.1712, 1.932132, 100, 0, 0),
 (@CGUID+268, 16, 519.4442, 175.256, 1.94284, 100, 0, 0),
 (@CGUID+268, 17, 519.6646, 196.366, 1.93649, 100, 0, 0),
-(@CGUID+271, 1, 319.66, -84.301, 1.9296, 100, 0, 0),
-(@CGUID+271, 2, 364.524, -84.1685, 1.9203, 100, 0, 0),
-(@CGUID+271, 3, 374.822, -69.1961, 1.916, 100, 0, 0),
-(@CGUID+271, 4, 374.414, -15.9977, 1.9386, 100, 0, 0),
-(@CGUID+271, 5, 374.822, -69.1961, 1.916, 100, 0, 0),
-(@CGUID+271, 6, 364.524, -84.1685, 1.9203, 100, 0, 0),
-(@CGUID+271, 7, 319.66, -84.301, 1.9296, 100, 0, 0),
-(@CGUID+271, 8, 284.386, -84.4404, 2.0522, 100, 0, 0),
 (@CGUID+282, 1, 76.5898, 203.889, -13.1954, 100, 0, 0),
 (@CGUID+282, 2, 62.5537, 203.886, -13.1971, 100, 0, 0),
 (@CGUID+283, 1, 518.919, 68.903, 1.9103, 100, 0, 0),
@@ -361,26 +353,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+283, 6, 505.479, 58.5282, 1.9274, 100, 0, 0),
 (@CGUID+283, 7, 518.919, 68.903, 1.9103, 100, 0, 0),
 (@CGUID+283, 8, 518.249, 109.256, 1.9397, 100, 0, 0),
-(@CGUID+286, 1, 381.3262, -18.90952, 1.910223, 100, 0, 0),
-(@CGUID+286, 2, 365.755, -24.64996, 1.910089, 100, 0, 0),
-(@CGUID+286, 3, 382.0464, -32.39672, 1.907751, 100, 0, 0),
-(@CGUID+286, 4, 365.755, -24.64996, 1.910089, 100, 0, 0),
-(@CGUID+288, 1, 365.3776, -68.21585, 1.921432, 100, 0, 0),
-(@CGUID+288, 2, 381.3918, -74.53922, 1.918724, 100, 0, 0),
-(@CGUID+288, 3, 365.3776, -68.21585, 1.921432, 100, 0, 0),
-(@CGUID+288, 4, 381.1029, -60.50159, 1.929290, 100, 0, 0),
-(@CGUID+289, 1, 356.6418, -75.4379, 1.913136, 100, 0, 0),
-(@CGUID+289, 2, 354.8625, -90.40958, 1.935186, 100, 0, 0),
-(@CGUID+289, 3, 356.6418, -75.4379, 1.913136, 100, 0, 0),
-(@CGUID+289, 4, 368.5422, -87.62833, 1.911937, 100, 0, 0),
-(@CGUID+290, 1, 332.8256, -76.8942, 1.939301, 100, 0, 0),
-(@CGUID+290, 2, 325.1523, -92.04973, 1.937539, 100, 0, 0),
-(@CGUID+290, 3, 332.8256, -76.8942, 1.939301, 100, 0, 0),
-(@CGUID+290, 4, 346.1981, -88.69315, 1.935099, 100, 0, 0),
-(@CGUID+291, 1, 287.6111, -86.71504, 1.967747, 100, 0, 0),
-(@CGUID+291, 2, 287.5467, -89.24807, 1.969789, 100, 0, 0),
-(@CGUID+291, 3, 282.0956, -88.32939, 2.11288, 100, 0, 0),
-(@CGUID+291, 4, 284.0128, -90.10754, 2.062754, 100, 0, 0),
 (@CGUID+303, 1, 517.5042, 110.2721, 1.933732, 100, 0, 0),
 (@CGUID+303, 2, 521.549011, 134.203003, 1.932780, 100, 0, 0),
 (@CGUID+304, 1, 46.3248, 59.879, -12.9904, 0, 1000, 5),
@@ -433,7 +405,26 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+308, 3, 71.5909, 37.8002, -13.2262, 0, 0, 0),
 (@CGUID+308, 4, 70.0568, 10.5743, -13.2209, 0, 0, 0),
 (@CGUID+308, 5, 52.6026, -0.81406, -13.2027, 0, 0, 0),
-(@CGUID+308, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001);
+(@CGUID+308, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001),
+-- assasins reworked
+(@CGUID+391,1,381.3262,-18.909515,1.9102229,100,0,0),
+(@CGUID+391,2,365.75497,-24.649958,1.9100889,100,0,0),
+(@CGUID+391,3,382.04645,-32.39672,1.9077514,100,0,0),
+(@CGUID+392,1,383.08115,-52.932426,1.939616,100,0,0),
+(@CGUID+392,2,367.0894,-43.882507,1.9245446,100,0,0),
+(@CGUID+392,3,381.66763,-38.641228,1.9141335,100,0,0),
+(@CGUID+393,1,381.3918,-74.539215,1.9187236,100,0,0),
+(@CGUID+393,2,365.37756,-68.21585,1.9214319,100,0,0),
+(@CGUID+393,3,381.1033,-60.501587,1.9292904,100,0,0),
+(@CGUID+394,6,368.5422,-87.628334,1.9119368,100,0,0),
+(@CGUID+394,2,356.64178,-75.437904,1.913136,100,0,0),
+(@CGUID+394,3,354.86255,-90.409584,1.935186,100,0,0),
+(@CGUID+395,1,346.19812,-88.69315,1.9350995,100,0,0),
+(@CGUID+395,2,332.8256,-76.8942,1.9393015,100,0,0),
+(@CGUID+395,3,325.15228,-92.04973,1.9375387,100,0,0),
+(@CGUID+396,1,314.45364,-91.16705,1.9374878,100,0,0),
+(@CGUID+396,2,299.4695,-76.63259,1.9365374,100,0,0),
+(@CGUID+396,3,291.05557,-90.919136,1.9129256,100,0,0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` = 16807;
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
@@ -631,12 +622,9 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+284, @CGUID+283, 1679), -- Rabid Warhound -> Shattered Hand Houndmaster
 (@CGUID+285, @CGUID+283, 1679), -- Rabid Warhound -> Shattered Hand Houndmaster
 (@CGUID+190, @CGUID+191, 1155), -- Shattered Hand Champion -> Shattered Hand Champion
-(@CGUID+192, @CGUID+193, 1155), -- Shattered Hand Champion -> Shattered Hand Champion
--- Warbringer's Ring
-(@CGUID+194, @CGUID+195, 1155), -- Shattered Hand Champion -> Shattered Hand Champion
-(@CGUID+196, @CGUID+197, 1155), -- Shattered Hand Champion -> Shattered Hand Champion
-(@CGUID+272, @CGUID+271, 1679), -- Rabid Warhound -> Shattered Hand Houndmaster
-(@CGUID+273, @CGUID+271, 1679); -- Rabid Warhound -> Shattered Hand Houndmaster
+(@CGUID+192, @CGUID+193, 1155); -- Shattered Hand Champion -> Shattered Hand Champion
+
+
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (16809, 540, 16808, 1, 0), -- Warbringer O'mrogg -> Warchief Kargath Bladefist
@@ -894,10 +882,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+191, 17671, 540, 3, 523.4097, 85.73234, 2.016591, 1.815142, 7200, 7200, 0, 0), -- Shattered Hand Champion
 (@CGUID+192, 17671, 540, 3, 448.3664, 53.29791, 2.02294, 0.4886922, 7200, 7200, 0, 0), -- Shattered Hand Champion
 (@CGUID+193, 17671, 540, 3, 448.6344, 62.37546, 2.01648, 5.654867, 7200, 7200, 0, 0), -- Shattered Hand Champion
-(@CGUID+194, 17671, 540, 3, 378.3717, -7.73405, 1.993441, 1.832596, 7200, 7200, 0, 0), -- Shattered Hand Champion
-(@CGUID+195, 17671, 540, 3, 369.9786, -7.824302, 2.005173, 1.32645, 7200, 7200, 0, 0), -- Shattered Hand Champion
-(@CGUID+196, 17671, 540, 3, 282.9575, -80.28755, 2.17246, 6.021386, 7200, 7200, 0, 0), -- Shattered Hand Champion
-(@CGUID+197, 17671, 540, 3, 283.5523, -89.42811, 2.158092, 0.4363323, 7200, 7200, 0, 0), -- Shattered Hand Champion
+-- reuse 195, 196, 196, 197
 (@CGUID+198, 17687, 540, 3, 475.607, 317.259, 1.93511, 3.53184, 7200, 7200, 10, 1), -- Flame Arrow
 (@CGUID+199, 17687, 540, 3, 474.604, 316.266, 1.93224, 3.52502, 7200, 7200, 10, 1), -- Flame Arrow
 (@CGUID+200, 17687, 540, 3, 458.635, 316.226, 1.9386, 1.09048, 7200, 7200, 10, 1), -- Flame Arrow
@@ -971,9 +956,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+268, 17670, 540, 3, 518.815, 171.06, 1.94158, 3.09919, 7200, 7200, 0, 2), -- Shattered Hand Houndmaster
 (@CGUID+269, 17669, 540, 3, 520.182, 167.783, 1.94016, 3.09684, 7200, 7200, 0, 0), -- Rabid Warhound
 (@CGUID+270, 17669, 540, 3, 520.444, 173.615, 1.94172, 3.09684, 7200, 7200, 0, 0), -- Rabid Warhound
-(@CGUID+271, 17670, 540, 3, 284.386, -84.4405, 2.0522, 6.28306, 7200, 7200, 0, 2), -- Shattered Hand Houndmaster
-(@CGUID+272, 17669, 540, 3, 281.243, -81.5338, 2.13436, 6.28306, 7200, 7200, 0, 0), -- Rabid Warhound
-(@CGUID+273, 17669, 540, 3, 281.242, -87.1548, 2.13436, 6.28306, 7200, 7200, 0, 0), -- Rabid Warhound
 (@CGUID+274, 0, 540, 3, 509.7427, 133.4207, 2.017469, 4.101524, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+275, 16704, 540, 3, 62.3102, 207.759, -13.1978, 4.7401, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
 (@CGUID+276, 16704, 540, 3, 77.1728, 207.646, -13.1964, 4.6223, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
@@ -986,12 +968,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+283, 17670, 540, 3, 518.249, 109.256, 1.93975, 1.57866, 7200, 7200, 0, 2), -- Shattered Hand Houndmaster
 (@CGUID+284, 17669, 540, 3, 515.445, 106.184, 1.93429, 1.57866, 7200, 7200, 0, 0), -- Rabid Warhound
 (@CGUID+285, 17669, 540, 3, 520.66, 106.225, 1.93429, 1.57866, 7200, 7200, 0, 0), -- Rabid Warhound
-(@CGUID+286, 17695, 540, 3, 380.2267, -31.53144, 1.908013, 2.697728, 7200, 7200, 0, 2), -- Shattered Hand Assassin
-(@CGUID+287, 17695, 540, 3, 374.586, -46.7073, 1.9149, 2.44247, 7200, 7200, 5, 1), -- Shattered Hand Assassin
-(@CGUID+288, 17695, 540, 3, 366.7008, -68.73834, 1.921208, 2.765528, 7200, 7200, 0, 2), -- Shattered Hand Assassin
-(@CGUID+289, 17695, 540, 3, 363.8085, -82.77927, 1.913863, 5.48575, 7200, 7200, 0, 2), -- Shattered Hand Assassin
-(@CGUID+290, 17695, 540, 3, 337.8265, -81.30663, 1.937571, 5.56022, 7200, 7200, 0, 2), -- Shattered Hand Assassin
-(@CGUID+291, 17695, 540, 3, 287.0375, -88.17879, 2.06635, 1.347343, 7200, 7200, 0, 2), -- Shattered Hand Assassin
 (@CGUID+292, 17695, 540, 3, 518.477, 173.616, 1.9417, 1.6165, 86400, 86400, 2, 1), -- Shattered Hand Assassin
 (@CGUID+293, 17695, 540, 3, 517.895, 202.398, 1.9305, 1.5851, 86400, 86400, 2, 1), -- Shattered Hand Assassin
 (@CGUID+294, 17695, 540, 3, 257.455, 307.29, -5.471, 4.4046, 86400, 86400, 2, 1), -- Shattered Hand Assassin
@@ -1012,7 +988,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+308, 17420, 540, 2, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 2), -- Shattered Hand Heathen
 -- Hall of the Fathers, random between Shattered Hand Heathen in heroic mode only
 -- Hall of the Fathers, random between Shattered Hand Heathen or Savage in normal mode only
-
 (@CGUID+309, 0, 540, 1, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0), -- Shattered Hand Savage, Shattered Hand Heathen (Normal)
 (@CGUID+310, 17420, 540, 2, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0), -- Shattered Hand Heathen (Heroic)
 (@CGUID+311, 0, 540, 3, 54.4005, 77.7188, -13.1093, 5.55015, 7200, 7200, 0, 0), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
@@ -1043,7 +1018,25 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 
 (@CGUID+330, 0, 540, 1, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0), -- Shattered Hand Savage, Shattered Hand Heathen (Normal)
 (@CGUID+331, 17420, 540, 2, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0), -- Shattered Hand Heathen (Heroic)
-(@CGUID+332, 0, 540, 3, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0); -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+(@CGUID+332, 0, 540, 3, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
+-- reguid to get the in correct order
+-- Way to endboss
+(@CGUID+389, 17671, 540, 3, 378.3717, -7.73405, 1.993441, 1.832596, 7200, 7200, 0, 0), -- Shattered Hand Champion
+(@CGUID+390, 17671, 540, 3, 369.9786, -7.824302, 2.005173, 1.32645, 7200, 7200, 0, 0), -- Shattered Hand Champion
+-- Assasins before endboss
+(@CGUID+391, 17695, 540, 3, 381.3262,-18.909515,1.9102229, 2.697728, 7200, 7200, 0, 4), -- Shattered Hand Assassin
+(@CGUID+392, 17695, 540, 3, 383.08115,-52.932426,1.939616, 2.44247, 7200, 7200, 0, 4), -- Shattered Hand Assassin
+(@CGUID+393, 17695, 540, 3, 381.3918,-74.539215,1.9187236, 2.765528, 7200, 7200, 0, 4), -- Shattered Hand Assassin
+(@CGUID+394, 17695, 540, 3, 368.5422,-87.628334,1.9119368, 5.48575, 7200, 7200, 0, 4), -- Shattered Hand Assassin
+(@CGUID+395, 17695, 540, 3, 346.19812,-88.69315,1.9350995, 5.56022, 7200, 7200, 0, 4), -- Shattered Hand Assassin
+(@CGUID+396, 17695, 540, 3, 314.45364, -91.16705, 1.9374878, 2.3714, 7200, 7200, 0, 4), -- Shattered Hand Assassin
+-- Patrol before endboss
+(@CGUID+397, 17670, 540, 3, 369.437, -32.997, 1.909, 4.731, 7200, 7200, 0, 0), -- Shattered Hand Houndmaster
+(@CGUID+398, 17669, 540, 3, 372.378, -29.858, 1.908, 5.141, 7200, 7200, 0, 0), -- Rabid Warhound
+(@CGUID+399, 17669, 540, 3, 369.321, -26.915, 1.909, 4.296, 7200, 7200, 0, 0), -- Rabid Warhound
+-- last group
+(@CGUID+400, 17671, 540, 3, 282.9575, -80.28755, 2.17246, 6.021386, 7200, 7200, 0, 0), -- Shattered Hand Champion
+(@CGUID+401, 17671, 540, 3, 283.5523, -89.42811, 2.158092, 0.4363323, 7200, 7200, 0, 0); -- Shattered Hand Champion
 
 -- ===========
 -- GAMEOBJECTS
@@ -1084,20 +1077,61 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 -- ======
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0);
+(@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0),
+-- Way to endboss
+(@SGGUID+67, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 001', 0, 2, 0, 1), 
+(@SGGUID+68, 'Shattered Halls - Shattered Hand Assassin (7)', 0, 7, 0, 0), -- Multiple spawns. always 7 active
+(@SGGUID+69, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001', 0, 3, 0, 1),
+(@SGGUID+70, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 002', 0, 2, 0, 1);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+1, 184940, 0, 0, 0), (@SGGUID+1, 184941, 0, 0, 0); -- Bound Adamantite Chest, Solid Adamantite Chest
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGGUID+1, @OGUID+7, -1); -- spawn_group_entry
+(@SGGUID+1, @OGUID+7, -1), -- spawn_group_entry
+-- way to endboss
+(@SGGUID+67, @CGUID+389, -1), -- Shattered Hand Champion
+(@SGGUID+67, @CGUID+390, -1), -- Shattered Hand Champion
+-- assasins rework
+(@SGGUID+68, @CGUID+391, -1), -- Shattered Hand Assasins
+(@SGGUID+68, @CGUID+392, -1), -- Shattered Hand Assasins
+(@SGGUID+68, @CGUID+393, -1), -- Shattered Hand Assasins
+(@SGGUID+68, @CGUID+394, -1), -- Shattered Hand Assasins
+(@SGGUID+68, @CGUID+395, -1), -- Shattered Hand Assasins
+(@SGGUID+68, @CGUID+396, -1), -- Shattered Hand Assasins
+-- Patrol before endboss
+(@SGGUID+69, @CGUID+397, 0), -- Shattered Hand Houndmaster
+(@SGGUID+69, @CGUID+398, 1), -- Rabid Warhound
+(@SGGUID+69, @CGUID+399, 2), -- Rabid Warhound
+-- Last group before endboss
+(@SGGUID+70, @CGUID+400, -1), -- Shattered Hand Champion
+(@SGGUID+70, @CGUID+401, -1); -- Shattered Hand Champion
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+69, 4, 3, 0, @SGGUID+69, 2, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001');
+
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+69, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+69,1,373.44144,-51.05542,1.9361445,100,0,0),
+(@SGGUID+69,2,371.50775,-70.71428,1.9203951,100,0,0),
+(@SGGUID+69,3,359.4892,-82.532364,1.9185716,100,0,0),
+(@SGGUID+69,4,343.14014,-84.82301,1.9350435,100,0,0),
+(@SGGUID+69,5,310.18472,-82.78763,1.9368917,100,0,0),
+(@SGGUID+69,6,298.0218,-79.64861,1.9367486,100,0,0),
+(@SGGUID+69,7,287.82153,-84.24349,1.9618785,100,0,0),
+(@SGGUID+69,8,291.21362,-89.2625,1.9129633,100,0,0),
+(@SGGUID+69,9,306.8405,-87.17954,1.9372501,100,0,0),
+(@SGGUID+69,10,343.15958,-86.27303,1.9356986,100,0,0),
+(@SGGUID+69,11,360.74103,-83.51457,1.9183288,100,0,0),
+(@SGGUID+69,12,373.4364,-71.93072,1.920069,100,0,0),
+(@SGGUID+69,13,375.80185,-50.9922,1.9360272,100,0,0),
+(@SGGUID+69,14,378.60367,-31.814674,1.9073824,100,0,0),
+(@SGGUID+69,15,374.94492,-20.095032,1.9111354,100,0,0),
+(@SGGUID+69,16,369.20135,-20.56937,1.9118699,100,0,0),
+(@SGGUID+69,17,369.4805,-35.282803,1.9122882,100,0,0);
 
 -- =======
 -- POOLING
@@ -1114,7 +1148,6 @@ INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALU
 (@PGUID+13, @PGUID+11, 0, 'Shattered Halls - Halls of Father Group 4 - Right');
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 4, 'Shattered Halls - Shattered Hand Assassin (17695)'),
 (@PGUID+2, 2, 'Shattered Halls - Halls of Father Group 1 (Master)'),
 (@PGUID+3, 1, 'Shattered Halls - Halls of Father Group 1 - Left'),
 (@PGUID+4, 1, 'Shattered Halls - Halls of Father Group 1 - Right'),
@@ -1129,18 +1162,6 @@ INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
 (@PGUID+13, 1, 'Shattered Halls - Halls of Father Group 4 - Right');
 
 INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+292, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'), -- Shattered Halls - Shattered Hand Assassin (17695)
-(@CGUID+293, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+294, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+295, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+296, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+297, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+298, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+299, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+300, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+301, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+302, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
-(@CGUID+303, @PGUID+1, 0, 'Shattered Halls - Shattered Hand Assassin (17695)'),
 (@CGUID+309, @PGUID+3, 0, 'Shattered Halls - creature_spawn_entry - Group 1 - Left'), -- Shattered Halls - Halls of Father Group 1 - Left
 (@CGUID+310, @PGUID+3, 0, 'Shattered Halls - Shattered Hand Heathen (17420) - Group 1 - Left'),
 (@CGUID+311, @PGUID+3, 0, 'Shattered Halls - creature_spawn_entry - Group 1 - Left'),
