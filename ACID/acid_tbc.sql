@@ -2000,7 +2000,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Watcher Corwin (1204) - NSR
 -- Splinter Fist Firemonger 1251 - creature_spell_list
 ('125101','1251','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Splinter Fist Firemonger - Random Say on Aggro'),
-('125102','1251','8','0','100','1','0','4','15000','30000','0','0','11','4979','0','32','0','0','0','0','0','0','0','0','Splinter Fist Firemonger - Cast Fire Ward on Fire Spellhit'),
+('125102','1251','8','0','100','1025','0','4','15000','30000','0','0','11','4979','0','32','0','0','0','0','0','0','0','0','Splinter Fist Firemonger - Cast Fire Ward on Fire Spellhit'),
 -- Black Ravager Mastiff (3.0.3 Official Data)
 ('125801','1258','0','0','100','1025','6300','8900','30200','47300','0','0','11','3149','0','0','0','0','0','0','0','0','0','0','Black Ravager Mastiff - Cast Furious Howl'),
 ('125802','1258','0','0','100','1025','9000','12800','15900','25400','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Black Ravager Mastiff - Cast Rend'),
@@ -2011,7 +2011,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Splinter Fist Enslaver 1487 - creature_spell_list
 ('148701','1487','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Splinter Fist Enslaver - Enable Range Mode on Spawn'),
 ('148702','1487','4','0','10','0','0','0','0','0','0','0','1','1925','1926','1927','0','0','0','0','0','0','0','0','Splinter Fist Enslaver - Random Say on Aggro'),
-('148703','1487','0','0','100','1025','3000','20000','20000','40000','0','0','11','6533','1','1024','0','0','0','0','0','0','0','0','Splinter Fist Enslaver - Cast Net, Distance'),
 -- Lohgan Eva (1672) - NSR
 -- Alyssa Eva (1673) - NSR
 -- Finbus Geargrind (1676) - NSR
