@@ -566,24 +566,12 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+128, @CGUID+96, 1679), -- Creeping Oozeling -> Creeping Ooze
 (@CGUID+129, @CGUID+93, 1679), -- Creeping Oozeling -> Creeping Ooze
 (@CGUID+130, @CGUID+95, 1679), -- Creeping Oozeling -> Creeping Ooze
-(@CGUID+131, @CGUID+92, 1679), -- Creeping Oozeling -> Creeping Ooze
--- Throne of the Damned
--- Gauntlet of Flame
-(@CGUID+146, @CGUID+148, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+147, @CGUID+148, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+150, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+151, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+152, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+149, @CGUID+143, 1); -- Shattered Hand Zealot -> Shattered Hand Archer
+(@CGUID+131, @CGUID+92, 1679); -- Creeping Oozeling -> Creeping Ooze
 
 
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(16809, 540, 16808, 1, 0), -- Warbringer O'mrogg -> Warchief Kargath Bladefist
-(17693, 540, 17427, 1, 0), -- Shattered Hand Scout -> Shattered Hand Archer				-- Abuse Prevention (void Aggro, npc_Shattered_Hand_Scout)
-(17427, 540, 17427, 3, 0), -- Shattered Hand Archer -> Shattered Hand Archer
-(17461, 540, 17427, 3, 0), -- Shattered Hand Blood Guard -> Shattered Hand Archer
-(20923, 540, 17427, 3, 0); -- Blood Guard Porung -> Shattered Hand Archer
+(16809, 540, 16808, 1, 0); -- Warbringer O'mrogg -> Warchief Kargath Bladefist
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 -- commented due to need static entry for rp event
@@ -754,16 +742,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+138, 0, 540, 1, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 2), -- creature_spawn_entry
 -- Re-Use 139-142
 -- Gauntlet of Flames
-(@CGUID+143, 17427, 540, 3, 514.5014, 319.6571, 2.042556, 3.368485, 7200, 7200, 0, 0), -- Shattered Hand Archer
-(@CGUID+144, 17427, 540, 3, 514.8049, 312.0412, 2.036432, 3.001966, 7200, 7200, 0, 0), -- Shattered Hand Archer
-(@CGUID+145, 17461, 540, 1, 512.6873, 315.6516, 2.040503, 2.984513, 86400, 86400, 0, 0), -- Shattered Hand Blood Guard
-(@CGUID+146, 17462, 540, 3, 335.331, 311.7092, 2.02385, 0.9948376, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+147, 17462, 540, 3, 332.262, 314.0845, 2.030712, 0.1570796, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+148, 17462, 540, 3, 335.664, 317.5591, 2.024835, 5.288348, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+149, 17462, 540, 3, 499.0804, 322.2516, 2.031424, 3.281219, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+150, 17462, 540, 3, 498.9346, 309.12, 2.030749, 3.001966, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+151, 17462, 540, 3, 499.8543, 318.8076, 2.032207, 3.159046, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+152, 17462, 540, 3, 499.7404, 313.2804, 2.032141, 3.036873, 7200, 7200, 0, 0), -- Shattered Hand Zealot
 (@CGUID+173, 17552, 540, 3, 191.091, 279.1522, 6.347817, 1.003119, 86400, 86400, 0, 0), -- Hellfire Death Brazier
 (@CGUID+174, 17552, 540, 3, 165.1729, 278.9961, 7.502974, 0.5861885, 86400, 86400, 0, 0), -- Hellfire Death Brazier
 (@CGUID+175, 17552, 540, 3, 179.6241, 258.1517, 7.795619, 0.6800787, 86400, 86400, 0, 0), -- Hellfire Death Brazier
@@ -802,9 +780,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+215, 17687, 540, 3, 294.722, 317.899, 1.91816, 0.186297, 7200, 7200, 10, 1), -- Flame Arrow
 (@CGUID+216, 17687, 540, 3, 287.066, 315.53, 1.87145, 6.21995, 7200, 7200, 10, 1), -- Flame Arrow
 (@CGUID+217, 17687, 540, 3, 455.513, 317.784, 1.94178, 3.58176, 7200, 7200, 10, 1), -- Flame Arrow
-(@CGUID+218, 17693, 540, 3, 341.2886, 314.903, 2.012742, 3.141593, 7200, 7200, 0, 0), -- Shattered Hand Scout
-
-
 (@CGUID+221, 16699, 540, 3, 72.871, 274.047, -13.1036, 4.08407, 7200, 7200, 0, 0), -- Shattered Hand Reaver
 -- (@CGUID+222, 17301, 540, 3, 152.8524, -83.63912, 2.021005, 0.06981317, 86400, 86400, 0, 0), -- Shattered Hand Executioner
 -- (@CGUID+223
@@ -854,7 +829,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+257, 17420, 540, 2, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0), -- Shattered Hand Heathen (Heroic)
 (@CGUID+258, 0, 540, 3, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
 
-(@CGUID+259, 20923, 540, 2, 512.6873, 315.6516, 2.040503, 2.984513, 86400, 86400, 0, 0), -- Blood Guard Porung
 (@CGUID+275, 16704, 540, 3, 62.3102, 207.759, -13.1978, 4.7401, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
 (@CGUID+276, 16704, 540, 3, 77.1728, 207.646, -13.1964, 4.6223, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
 (@CGUID+277, 16704, 540, 3, 69.8649, 212.634, -13.2109, 4.65764, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
@@ -863,7 +837,21 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+282, 16700, 540, 3, 62.5538, 203.886, -13.1971, 0.000229836, 7200, 7200, 0, 2), -- Shattered Hand Legionnaire
 
 -- reguid to get the in correct order
+-- gauntlet
+(@CGUID+317, 17462, 540, 3, 335.331, 311.7092, 2.02385, 0.9948376, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+318, 17462, 540, 3, 332.262, 314.0845, 2.030712, 0.1570796, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+319, 17462, 540, 3, 335.664, 317.5591, 2.024835, 5.288348, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+320, 17693, 540, 3, 341.2886, 314.903, 2.012742, 3.141593, 7200, 7200, 0, 0), -- Shattered Hand Scout
 
+(@CGUID+329, 17462, 540, 3, 499.0804, 322.2516, 2.031424, 3.281219, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+330, 17462, 540, 3, 498.9346, 309.12, 2.030749, 3.001966, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+331, 17462, 540, 3, 499.8543, 318.8076, 2.032207, 3.159046, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+332, 17462, 540, 3, 499.7404, 313.2804, 2.032141, 3.036873, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+
+(@CGUID+333, 17427, 540, 3, 514.5014, 319.6571, 2.042556, 3.368485, 7200, 7200, 0, 0), -- Shattered Hand Archer
+(@CGUID+334, 17427, 540, 3, 514.8049, 312.0412, 2.036432, 3.001966, 7200, 7200, 0, 0), -- Shattered Hand Archer
+(@CGUID+335, 17461, 540, 1, 512.6873, 315.6516, 2.040503, 2.984513, 86400, 86400, 0, 0), -- Shattered Hand Blood Guard
+(@CGUID+336, 20923, 540, 2, 512.6873, 315.6516, 2.040503, 2.984513, 86400, 86400, 0, 0), -- Blood Guard Porung
 -- Shattered Hand Centurion group 1
 (@CGUID+337, 17465, 540, 3, 551.806, 233.474, 0.260, 5.253, 7200, 7200, 0, 0), -- Shattered Hand Centurion
 (@CGUID+338, 17464, 540, 3, 548.59235,228.68463,0.3211252, 1.2740, 7200, 7200, 0, 0), -- Shattered Hand Gladiator
@@ -1020,14 +1008,13 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0),
-(@SGGUID+47, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 0, 0, 0), -- Multiple Spawns, only one active
+(@SGGUID+48, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 0, 0, 0), -- Multiple Spawns, only one active
 -- Gauntlet of Flame
--- (@SGGUID+48, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 3, 0, 1), -- On Aggro gauntlet starts
--- (@SGGUID+49, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 0, 0, 0), -- 8 Zealots that getting spawned when Scout reachs the end of his path
--- (@SGGUID+50, 'Shattered Halls - Shattered Hand Zealot (2) | Gauntlet of Flame Group 003', 0, 0, 0, 0), -- 2 Zealots that respawns every 20 seconds as long gauntlet is active
--- (@SGGUID+51, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 0, 0, 0), -- 4 Zealots before archer blood guard group
--- (@SGGUID+52, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 0), -- Blood Guard ends gauntlet on normal
--- (@SGGUID+53, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 0), -- Blood Guard Porung ends gauntlet on Heroic
+(@SGGUID+49, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 4, 0, 3), -- On Aggro gauntlet starts
+-- (@SGGUID+50, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 0,0, 0), -- 8 Zealots that getting spawned when Scout reachs the end of his path
+(@SGGUID+51, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 4, 0, 3), -- 4 Zealots before archer blood guard group
+(@SGGUID+52, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard ends gauntlet on normal
+(@SGGUID+53, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard Porung ends gauntlet on Heroic
 (@SGGUID+54, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 001', 0, 5, 0, 1),
 (@SGGUID+55, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 002', 0, 5, 0, 1),
 (@SGGUID+56, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 003', 0, 5, 0, 1),
@@ -1066,9 +1053,28 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @OGUID+7, -1), -- spawn_group_entry
 
-(@SGGUID+47, @CGUID+379, -1), -- Shattered Hand Assasins 
-(@SGGUID+47, @CGUID+382, -1), -- Shattered Hand Assasins 
-(@SGGUID+47, @CGUID+388, -1), -- Shattered Hand Assasins 
+(@SGGUID+48, @CGUID+379, -1), -- Shattered Hand Assasins 
+(@SGGUID+48, @CGUID+382, -1), -- Shattered Hand Assasins 
+(@SGGUID+48, @CGUID+388, -1), -- Shattered Hand Assasins 
+
+-- Gauntlet of Flame
+(@SGGUID+49, @CGUID+320, 0), -- Shattered Hand Scout
+(@SGGUID+49, @CGUID+317, 1), -- Shattered Hand Zealot 
+(@SGGUID+49, @CGUID+318, 2), -- Shattered Hand Zealot 
+(@SGGUID+49, @CGUID+319, 3), -- Shattered Hand Zealot 
+
+(@SGGUID+51, @CGUID+329, -1), -- Shattered Hand Zealot 
+(@SGGUID+51, @CGUID+330, -1), -- Shattered Hand Zealot 
+(@SGGUID+51, @CGUID+331, -1), -- Shattered Hand Zealot 
+(@SGGUID+51, @CGUID+332, -1), -- Shattered Hand Zealot 
+
+(@SGGUID+52, @CGUID+335, -1), -- Shattered Hand Blood Guard
+(@SGGUID+52, @CGUID+333, -1), -- Shattered Hand Archer
+(@SGGUID+52, @CGUID+334, -1), -- Shattered Hand Archer
+
+(@SGGUID+53, @CGUID+336, -1), -- Blood Guard Porung
+(@SGGUID+53, @CGUID+333, -1), -- Shattered Hand Archer
+(@SGGUID+53, @CGUID+334, -1), -- Shattered Hand Archer
 
 (@SGGUID+54, @CGUID+337, 0), -- Shattered Hand Centurion
 (@SGGUID+54, @CGUID+338, 0), -- Shattered Hand Gladiator
