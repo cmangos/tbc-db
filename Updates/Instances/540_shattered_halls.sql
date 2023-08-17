@@ -1078,7 +1078,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+48, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 0, 0, 0), -- Multiple Spawns, only one active
 -- Gauntlet of Flame
 (@SGGUID+49, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 4, 0, 3), -- On Aggro gauntlet starts
-(@SGGUID+50, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 8, @SGGUID+4, 2), -- 8 Zealots that getting spawned when Scout reachs the end of his path
+(@SGGUID+50, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 8, @SGGUID+4, 10), -- 8 Zealots that getting spawned when Scout reachs the end of his path
 (@SGGUID+51, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 4, 0, 3), -- 4 Zealots before archer blood guard group
 (@SGGUID+52, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard ends gauntlet on normal
 (@SGGUID+53, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard Porung ends gauntlet on Heroic
