@@ -462,13 +462,16 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+396,2,299.4695,-76.63259,1.9365374,100,0,0),
 (@CGUID+396,3,291.05557,-90.919136,1.9129256,100,0,0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (16807, 17693);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (16807, 17462, 17693);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Grand Warlock Nethekurse
 (16807, 0, 1, 171.8228, 289.9769, -8.185595, 100, 0, 0),
 (16807, 0, 2, 178.5562, 288.1734, -7.933493, 100, 0, 0),
 (16807, 0, 3, 184.7897, 290.3699, -8.18139, 100, 0, 0),
 (16807, 0, 4, 178.5562, 288.1734, -7.933493, 100, 0, 0),
+-- Shattered Hand Zealot
+(17462,1,1,497.68735,316.3075,1.9454536,100,0,0),
+(17462,1,2,485.92004,316.08777,1.9463365,100,100,3),
 -- Shattered Hand Scout
 (17693,1,1,389.98074,315.4098,1.9338964,100,0,0),
 (17693,1,2,419.4097,315.15308,1.940825,100,0,0),
