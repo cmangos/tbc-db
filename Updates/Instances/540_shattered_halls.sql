@@ -408,13 +408,18 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+396,2,299.4695,-76.63259,1.9365374,100,0,0),
 (@CGUID+396,3,291.05557,-90.919136,1.9129256,100,0,0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` = 16807;
+DELETE FROM `creature_movement_template` WHERE `entry` IN (16807, 17693);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Grand Warlock Nethekurse
 (16807, 0, 1, 171.8228, 289.9769, -8.185595, 100, 0, 0),
 (16807, 0, 2, 178.5562, 288.1734, -7.933493, 100, 0, 0),
 (16807, 0, 3, 184.7897, 290.3699, -8.18139, 100, 0, 0),
-(16807, 0, 4, 178.5562, 288.1734, -7.933493, 100, 0, 0);
+(16807, 0, 4, 178.5562, 288.1734, -7.933493, 100, 0, 0),
+-- Shattered Hand Scout
+(17693,1,1,389.98074,315.4098,1.9338964,100,0,0),
+(17693,1,2,419.4097,315.15308,1.940825,100,0,0),
+(17693,1,3,460.31537,316.02213,1.9368871,100,0,0),
+(17693,1,4,488.62424,315.73007,1.9498857,100,1000,0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+52, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
