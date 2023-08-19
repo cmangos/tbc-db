@@ -6199,8 +6199,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('450501','4505','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Bloodsail Deckhand - Flee at 15% HP'),
 -- Bloodsail Swabby 4506
 ('450601','4506','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Bloodsail Swabby - Flee at 15% HP'),
--- Booty Bay Bruiser 4624 - guard_contested
-('462401','4624','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Booty Bay Bruiser - Cast Net'),
+-- Booty Bay Bruiser 4624 - guard_contested & creature_spell_list
+('462401','4624','11','0','100','0','0','0','0','0','0','0','57','2','20','0','0','0','0','0','0','0','0','0','Booty Bay Bruiser - Enable Range Mode on Spawn'),
 -- Foreman Cozzle 4723
 ('472301','4723','4','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Foreman Cozzle - Enable Range Mode on Aggro'),
 ('472302','4723','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Foreman Cozzle - Flee at 15% HP'),
@@ -6234,10 +6234,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1572302','15723','22','0','100','1','34','0','0','0','0','0','11','26035','6','0','5','94','0','0','0','0','0','0','Booty Bay Reveler - Cast Celebrate Good Times!, EMOTE_ONESHOT_DANCE on TEXTEMOTE_DANCE'),
 ('1572303','15723','22','0','100','1','58','0','0','0','0','0','11','25947','6','0','5','24','0','0','0','0','0','0','Booty Bay Reveler - Cast Infatuation, EMOTE_ONESHOT_SHY on TEXTEMOTE_KISS'),
 -- Steamwheedle Bruiser 16096
-('1609601','16096','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Enable Range Mode on Aggro'),
+('1609601','16096','11','0','100','0','0','0','0','0','0','0','57','2','20','0','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Enable Range Mode on Spawn'),
 ('1609602','16096','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Steamwheedle Bruiser - Flee at 15% HP'),
-('1609603','16096','9','0','100','1025','0','18','11000','18000','0','0','11','12024','1','1024','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Cast Net'),
-('1609604','16096','9','0','100','1025','5','30','2200','3800','0','0','11','6660','1','256','0','0','0','0','0','0','0','0','Steamwheedle Bruiser - Cast Shoot'),
 -- Naias 17207
 ('1720701','17207','11','0','100','0','0','0','0','0','0','0','54','13560','11','0','0','0','0','0','0','0','0','0','Naias - Say on Spawn'),
 -- Nizzle
@@ -7069,7 +7067,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1519504','15195','6','0','100','0','0','0','0','0','0','0','11','25007','0','7','0','0','0','0','0','0','0','0','Wickerman Guardian - Cast Wickerman Guardian Ember on Death'),
 -- Darkcaller Yanka (15197) - NSR
 -- Wonderform Operator (15732) - NSR
--- Steamwheedle Bruiser (16096) - ALREADY SCRIPTED IN ANOTHER ZONE
 -- Mehlar Dawnblade (17099) - NSR
 -- Deathguard Florence (24491) - guard_hallows_end_helper
 
@@ -10962,7 +10959,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1511513','15115','22','0','100','1','78','3','0','0','0','0','5','66','0','0','0','0','0','0','0','0','0','0','Honored Ancestor - Salute Emote on Receive Emote'),
 -- Elder Runetotem (15572) - NSR
 -- Wonderform Operator (15732) - NSR
--- Steamwheedle Bruiser (16096) - SCRIPTED IN ANOTHER ZONE
 -- Wild Wolpertinger (23487) - NSR
 -- Brewfest Setup Crew
 ('2350401','23504','11','0','100','0','0','0','0','0','0','0','5','28','0','0','0','0','0','0','0','0','0','0','Brewfest Setup Crew - Working Emote on Spawn'),
@@ -11438,11 +11434,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2361201','23612','4','0','100','0','0','0','0','0','0','0','11','29110','0','0','0','0','0','0','0','0','0','0','Dyslix Silvergrub - Cast Summon Enraged Mounts on Aggro'),
 -- Privateer
 ('2362001','23620','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Privateer - Flee at 15% HP'),
--- Mudsprocket Bruiser 23636
-('2363601','23636','4','0','100','0','0','0','0','0','0','0','57','2','40','0','0','0','0','0','0','0','0','0','Mudsprocket Bruiser - Enable Range Mode on Aggro'),
-('2363602','23636','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Mudsprocket Bruiser - Flee at 15% HP'),
-('2363603','23636','9','0','100','1025','0','20','7000','9000','0','0','11','12024','1','1024','0','0','0','0','0','0','0','0','Mudsprocket Bruiser - Cast Net'),
-('2363604','23636','9','0','100','1025','5','45','2300','3900','0','0','11','23337','1','256','0','0','0','0','0','0','0','0','Mudsprocket Bruiser - Cast Shoot'),
+-- Mudsprocket Bruiser 23636 - no guard_contested? - creature_spell_list
+('2363601','23636','11','0','100','0','0','0','0','0','0','0','57','2','20','0','0','0','0','0','0','0','0','0','Mudsprocket Bruiser - Enable Range Mode on Spawn'),
 -- Deserter Lieutenant 23637
 ('2363701','23637','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Deserter Lieutenant - Flee at 15% HP'),
 ('2363702','23637','9','0','100','1025','0','5','9000','13000','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Deserter Lieutenant - Cast Shield Bash'),
@@ -13101,7 +13094,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Commander Mar'alith 15181
 -- Vish Kozus 15182
 -- Geologist Larksbane 15183
--- Cenarion Hold Infantry 15184 - guard_contested s.18328
+-- Cenarion Hold Infantry 15184 - guard_contested & creature_spell_list
+('1518401','15184','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Cenarion Hold Infantry - Cast Invisibility and Stealth Detection on Spawn'),
+('1518402','15184','36','0','100','1025','0','0','0','0','0','0','11','21727','1','0','0','0','0','0','0','0','0','0','Cenarion Hold Infantry - Cast Summon Player on Unreachable'),
 -- Brood of Nozdormu 15185
 -- Beetix Ficklespragg 15189
 -- Noggle Ficklespragg 15190
@@ -13973,8 +13968,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('939701','9397','1','0','100','1','1000','1000','600000','600000','0','0','11','12550','0','1','0','0','0','0','0','0','0','0','Living Storm - Cast Lightning Shield on Spawn'),
 ('939702','9397','27','0','100','1','12550','1','5000','5000','0','0','11','12550','0','1','0','0','0','0','0','0','0','0','Living Storm - Cast Lightning Shield on Missing Buff'),
 -- Aquementas (9453) - mob_aquementas
--- Gadgetzan Bruiser 9460 - guard_contested
-('946001','9460','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Gadgetzan Bruiser - Cast Net'),
+-- Gadgetzan Bruiser 9460 - guard_contested & creature_spell_list
+('946001','9460','11','0','100','0','0','0','0','0','0','0','57','2','20','0','0','0','0','0','0','0','0','0','Gadgetzan Bruiser - Enable Range Mode on Spawn'),
 -- Yorba Screwspigot (9706) - NSR
 -- Laziphus (9985) - NSR
 -- Prospector Ironboot (10460) - NSR
@@ -14624,8 +14619,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lakota'mani 3474 - NSR
 -- Echeyakee 3475 - NSR
 -- Horde Guard 3501 - NSR
--- Ratchet Bruiser 3502 - guard_contested
-('350201','3502','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Ratchet Bruiser - Cast Net'),
+-- Ratchet Bruiser 3502 - guard_contested & creature_spell_list
+('350201','3502','11','0','100','0','0','0','0','0','0','0','57','2','20','0','0','0','0','0','0','0','0','0','Ratchet Bruiser - Enable Range Mode on Spawn'),
 -- Silithid Protector
 ('350301','3503','11','0','100','0','0','0','0','0','0','0','1','1080','0','0','0','0','0','0','0','0','0','0','Silithid Protector - Emote on Spawn'),
 -- Devrak 3615
@@ -15574,8 +15569,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Himmik 11187
 -- Evie Whirlbrew 11188
 -- Qia 11189
--- Everlook Bruiser 11190 - guard_contested
-('1119001','11190','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Everlook Bruiser - Cast Net'),
+-- Everlook Bruiser 11190 - guard_contested & creature_spell_list
+('1119001','11190','11','0','100','0','0','0','0','0','0','0','57','2','20','0','0','0','0','0','0','0','0','0','Everlook Bruiser - Enable Range Mode on Spawn'),
 -- Lilith the Lithe 11191 - npc_prof_blacksmith
 -- Kilram 11192 - npc_prof_blacksmith
 -- Seril Scourgebane 11193 - npc_prof_blacksmith
@@ -18813,10 +18808,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2048304','20483','0','0','100','1025','4000','8000','10000','15000','0','0','11','36148','17','0','0','0','0','0','0','0','0','0','Naberius - Cast Chill Nova'),
 ('2048305','20483','0','0','100','1281','0','0','3400','4800','0','0','11','15497','1','256','0','0','0','0','0','0','0','0','Naberius - Cast Frostbolt (Range Mode)'),
 ('2048306','20483','0','0','100','1537','0','0','5000','20000','0','0','11','15497','1','256','0','0','0','0','0','0','0','0','Naberius - Cast Frostbolt (Melee Mode)'),
--- Area 52 Big Bruiser 20484
-('2048401','20484','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Area 52 Big Bruiser - Cast Net'),
--- Area 52 Bruiser 20485
-('2048501','20485','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Area 52 Bruiser - Cast Net'),
+-- Area 52 Big Bruiser 20484 - no guard_contested? - creature_spell_list
+-- Area 52 Bruiser 20485 - no guard_contested? - creature_spell_list
 -- Skeletal Stallion
 ('2049501','20495','9','0','100','1025','8','25','15000','21000','0','0','11','22911','1','0','0','0','0','0','0','0','0','0','Skeletal Stallion - Cast Charge'),
 ('2049502','20495','0','0','100','1025','11000','13000','12000','16000','0','0','11','11978','1','0','0','0','0','0','0','0','0','0','Skeletal Stallion - Cast Kick'),
@@ -19112,8 +19105,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sab'aoth 22479
 -- Zeppit 22484 - npc_zeppit
 -- Kerpow Blastwrench 22491
--- Cosmowrench Bruiser
-('2249401','22494','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Cosmowrench Bruiser - Cast Net'),
+-- Cosmowrench Bruiser 22494 - no guard_contested? - creature_spell_list
 -- Rescued Cenarion Expedition Druid 22810
 -- Rescued Lower City Brute 22811
 -- Rescued Sha'tar Vindicator 22812
@@ -20758,6 +20750,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2347102','23471','0','0','100','1025','4000','7000','7000','12000','0','0','11','35321','4','32','0','0','0','0','0','0','0','0','Skettis Outrider - Gushing Wound'),
 ('2347103','23471','0','0','100','1025','6000','9000','11000','16000','0','0','11','40546','0','0','0','0','0','0','0','0','0','0','Skettis Outrider - Cast Retaliation'),
 ('2347104','23471','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','Skettis Outrider - Cast Enrage at 30% HP'),
+-- Concert Bruiser 23721 - no guard_contested? - creature_spell_list
 -- Razorthorn Flayer
 ('2492001','24920','0','0','100','1025','2000','15000','45000','60000','0','0','11','46202','1','0','0','0','0','0','0','0','0','0','Razorthorn Flayer - Cast Pierce Armor'),
 ('2492002','24920','0','0','100','1025','5000','20000','15000','20000','0','0','11','13443','1','0','0','0','0','0','0','0','0','0','Razorthorn Flayer - Cast Rend'),
