@@ -231,7 +231,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (15608, 0, 0, 0, 0, 0, '31635 31556'), -- Medivh
 (17881, 0, 0, 1, 0, 0, NULL), -- Aeonus
 (18170, 0, 0, 0, 0, 0, '19817'), -- Infinite Slayer
-(18982, 0, 0, 1, 0, 0, '18950 22766'), -- Sable Jaguar
+(18982, 0, 0, 1, 0, 0, '7939 22766 18950'), -- Sable Jaguar
 (18983, 0, 0, 1, 0, 0, '34365'), -- Blackfang Tarantula
 (21140, 0, 0, 1, 0, 0, '19818'), -- Rift Lord
 (21862, 0, 0, 0, 0, 0, '32570'); -- Dark Portal Dummy 1.30
