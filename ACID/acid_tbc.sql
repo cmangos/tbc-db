@@ -9369,8 +9369,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Admiral Odesyus 17240 - NSR
 -- Priestess Kyleen Il'dinare (17241) - NSR
 -- Archaeologist Adamant Ironheart (17242) - NSR
--- Engineer "Spark" Overgrind 17243 (note: Self Cast)
+-- Engineer "Spark" Overgrind 17243
 ('1724301','17243','30','0','100','33','5','17243','0','0','0','0','1','14077','14082','14076','1','14079','14078','0','0','0','0','0','Engineer "Spark" Overgrind - Randomized Random Say on Receive AI Event A'),
+('1724302','17243','0','0','100','1025','4000','6000','13000','15000','0','0','11','7978','1','256','0','0','0','0','0','0','0','0','Engineer "Spark" Overgrind - Cast Throw Dynamite'),
 -- Alliance Axeman (17244) - NSR
 -- Blacksmith Calypso (17245) - NSR
 -- "Cookie" McWeaksauce 17246
