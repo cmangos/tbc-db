@@ -11,3 +11,11 @@ UPDATE creature SET position_x = -102.427605, position_y = 6408.821777, position
 UPDATE creature SET position_x = -14.772385, position_y = 6480.810059, position_z = 4.904004 WHERE guid = 72088;
 UPDATE creature SET position_x = -344.064697, position_y = 6590.368164, position_z = 5.176247 WHERE guid = 72104;
 
+-- falling out of bounds, respawn them all at some point.
+-- something is fishy about the needed z level to place them in water.
+-- cant be placed in water by z adjustments evne though it hits water area z.
+DELETE FROM `creature` WHERE `guid` IN (72109,72111,72114);
+UPDATE creature SET position_z = 6.8843 WHERE guid = 72120;
+UPDATE creature SET position_z = -5.7590 WHERE guid = 72097;
+UPDATE creature SET position_z = 3.9164 WHERE guid = 72092;
+
