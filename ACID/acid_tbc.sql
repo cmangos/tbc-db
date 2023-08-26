@@ -26411,8 +26411,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1995302','19953','9','0','100','1025','5','30','2300','3900','0','0','11','34745','1','256','0','0','0','0','0','0','0','0','Frayer Protector - Cast Shoot Thorns'),
 -- White Seedling (4.3.4 Official Data - Normal/Heroic)
 ('1995801','19958','9','0','100','1025','0','5','500','500','0','0','11','34752','1','32','0','0','0','0','0','0','0','0','White Seedling - Cast Freezing Touch'),
--- Blue Seedling (4.3.4 Official Data - Normal/Heroic)
-('1996201','19962','0','0','100','1025','3200','3200','4800','5200','0','0','11','34782','1','0','0','0','0','0','0','0','0','0','Blue Seedling - Cast Bind Feet'),
+-- Blue Seedling
+('1996201','19962','11','0','100','0','0','0','0','0','0','0','11','34781','0','0','0','0','0','0','0','0','0','0','Green Seedling - Cast Bind Feet on Spawn'),
 -- Red Seedling (4.3.4 Official Data - Normal/Heroic)
 ('1996401','19964','9','0','100','1025','0','20','2400','4800','0','0','11','36339','1','0','0','0','0','0','0','0','0','0','Red Seedling - Cast Fire Blast'),
 -- Green Seedling (4.3.4 Official Data - Normal/Heroic)
