@@ -2846,7 +2846,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Transport Bot D3 (24832) - NSR
 -- Elwynn Forest Flame Warden (25898) - NSR
 -- Wisp of Ragnaros (26502) - NSR
--- Plague Zombie (27059) - NSR
 
 
 
@@ -4016,8 +4015,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tormek Stoneriver 16009
 -- Deliana 16013
 -- Garel Redrock 16070
--- Kwee Q. Peddlefeet 16075
-('1607501','16075','22','0','100','1','58','0','0','0','0','0','11','27572','6','32','0','0','0','0','0','0','0','0','Kwee Q. Peddlefeet - Cast Smitten on Receive TEXTEMOTE_KISS'),
 -- Festival Loremaster 16817
 -- Ironforge Firebreather
 ('1704801','17048','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','Ironforge Firebreather - Cast Firebreath');
@@ -4036,7 +4033,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Earthen Ring Elder 26221
 -- Beastmaster 26307
 -- Fight Promoter 26760 - npc_innkeeper
--- Plague Zombie 27059
 -- Gilbarta Grandhammer 27398
 -- Larkin Thunderbrew 27478
 -- Brew Vendor 27806
@@ -4047,8 +4043,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Brew Vendor 27818
 -- Brew Vendor 27819
 -- Brew Vendor 27820
--- Plagued Roach 27845
--- Plagued Vermin 27855
 -- Brew Bubble 27882
 
 
@@ -4223,7 +4217,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2625304','26253','0','0','100','1025','7000','9000','8000','12000','0','0','11','18328','0','0','0','0','0','0','0','0','0','0','Shattered Sun Peacekeeper - Cast Incapacitating Shout'),
 ('2625305','26253','13','0','100','1025','12000','18000','0','0','0','0','11','15618','1','0','0','0','0','0','0','0','0','0','Shattered Sun Peacekeeper - Cast Snap Kick on Target Casting'),
 -- Ohura (26560) - NSR
--- Plague Zombie (27059) - NSR
 
 
 
@@ -5380,7 +5373,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Master Mathias Shaw 332
 -- Mazen Mac'Nadir 338
 -- Kendor Kabonka 340
--- Dungar Longdrink
+-- Dungar Longdrink 352
 ('35201','352','4','0','100','0','0','0','0','0','0','0','11','14313','0','0','1','4566','0','0','0','0','0','0','Dungar Longdrink - Cast Summon Enraged Gryphon and Yell on Aggro'),
 -- High Priestess Laurena 376
 -- Demisette Cloyce 461
@@ -5716,7 +5709,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lord Tony Romano (13283)
 -- Khole Jinglepocket (13435) - NSR
 -- Guchie Jinglepocket (13436) - NSR
--- Major Mattingly - GossipHello_npc_major_mattingly
+-- Major Mattingly 14394 - GossipHello_npc_major_mattingly
 ('1439401','14394','14','0','100','1025','40','800','8000','12000','0','0','11','15493','12','0','0','0','0','0','0','0','0','0','Major Mattingly - Cast Holy Light on Friendly Missing HP'),
 -- Officer Jaxon 14423
 ('1442301','14423','1','0','100','0','1000','1000','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Officer Jaxon - Cast Invisibility and Stealth Detection OOC'),
@@ -5742,6 +5735,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Jesper (15310) - NSR
 -- Elder Hammershout (15562) - NSR
 -- Auctioneer Jaxon 15659
+-- Master Sergeant Maclure 15708
 -- Lunar Festival Emissary (15892) - NSR
 -- Lunar Festival Harbinger (15895) - NSR
 -- Colara Dean 16002
@@ -5752,7 +5746,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Midsummer Firebreather 17038
 ('1703801','17038','1','0','100','1','15000','30000','15000','30000','0','0','11','29403','0','1','0','0','0','0','0','0','0','0','SW Firebreather Firebreath Cast'),
 -- Emissary Taluun 17103
--- Squire Rowe (17804) - npc_squire_rowe
+-- Squire Rowe 17804 - npc_squire_rowe
 -- Harbinger Ennarth 19848
 ('1984801','19848','0','0','100','1025','6000','12000','12000','18000','0','0','11','12169','0','0','0','0','0','0','0','0','0','0','Harbinger Ennarth - Cast Shield Block'),
 ('1984802','19848','0','0','100','1025','6200','7800','5800','13300','0','0','11','12170','1','0','0','0','0','0','0','0','0','0','Harbinger Ennarth - Cast Revenge'),
@@ -5761,10 +5755,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Farseer Umbrua 20407
 -- Little Noah (23050) - NSR
 -- Alicia (24729) - NSR
--- Leesha Tannerby 26548
--- Plague Zombie (27059) - NSR
--- Plagued Roach (27845) - NSR
--- Plagued Vermin (27855) - NSR
 
 
 
@@ -7120,7 +7110,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Michael Garrett 4551
 ('455101','4551','30','0','10','1','5','16383','0','0','0','0','54','0','6','17','0','0','0','0','0','0','0','0','Michael Garrett - Say on Receive AI Event A From Flameshocker 16383'),
 ('455102','4551','30','0','10','1','5','16394','0','0','0','0','54','0','6','17','0','0','0','0','0','0','0','0','Michael Garrett - Say on Receive AI Event A From Pallid Horror 16394'),
-('455103','4551','4','0','100','0','0','0','0','0','0','0','11','14252','0','0','1','4561','0','0','0','0','0','0','Michael Garrett - Cast Summon Enraged Felbats and Yell on Aggro'),
+('455103','4551','4','0','100','0','0','0','0','0','0','0','11','14252','0','0','1','4561','0','0','0','0','0','0','Michael Garrett - Cast Summon Enraged Felbat and Yell on Aggro'),
 -- Eunice Burch 4552
 -- Ronald Burch 4553
 -- Tawny Grisette 4554
@@ -7227,7 +7217,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Helena Atwood 5669
 -- Edrick Killian 5670
 -- Carendin Halgar 5675
--- Lysta Bancroft
+-- Lysta Bancroft 5679
 -- Male Human Captive 5680
 ('568001','5680','11','0','100','0','0','0','0','0','0','0','11','7791','0','0','45','5','10','0','0','0','0','0','Male Human Captive - Cast Summon Visual and Send Custom AI event A on Spawn'),
 ('568002','5680','6','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Male Human Captive - Despawn on Death.'),
@@ -7366,7 +7356,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gordok Brew Apprentice (23511) - NSR
 -- Tirisfal Pink Elekk (23530) - NSR
 -- T'chali's Voodoo Brewery Apprentice 23533
--- Kraxx 23713
 -- Drohn's Distillery Apprentice 24501
 -- Edward Cairn 29095
 
@@ -10673,9 +10662,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('313101','3131','0','0','100','1025','4000','9000','6000','11000','0','0','11','5401','1','0','0','0','0','0','0','0','0','0','Lightning Hide - Cast Lizard Bolt'),
 -- Gar'Thok
 ('313901','3139','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Gar''Thok - Flee at 15% HP'),
--- Lar Prowltusk
-('314001','3140','4','0','100','0','0','0','0','0','0','0','12','8017','1','300000','0','0','0','0','0','0','0','0','Lar Prowltusk - Spawn Sen''jin Guardian on Aggro'),
-('314002','3140','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Lar Prowltusk - Flee at 15% HP'),
+-- Lar Prowltusk 3140
+('314001','3140','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Lar Prowltusk - Flee at 15% HP'),
 -- Makrura Elder
 ('314101','3141','9','0','100','1025','0','5','15000','23000','0','0','11','5424','1','0','0','0','0','0','0','0','0','0','Makrura Elder - Cast Claw Grasp'),
 ('314102','3141','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Makrura Elder - Flee at 15% HP'),
@@ -10831,9 +10819,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('388101','3881','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Grimtak - Flee at 15% HP'),
 -- Zlagk
 ('388201','3882','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Zlagk - Flee at 15% HP'),
--- Hai'zan
-('393301','3933','4','0','100','0','0','0','0','0','0','0','12','8017','1','300000','0','0','0','0','0','0','0','0','Hai''zan - Spawn Sen''jin Guardian on Aggro'),
-('393302','3933','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Hai''zan - Flee at 15% HP'),
+-- Hai'zan 3933
+('393301','3933','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Hai''zan - Flee at 15% HP'),
 -- Holgar Stormaxe
 ('431101','4311','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Holgar Stormaxe - Flee at 15% HP'),
 -- Ruzan
@@ -12907,7 +12894,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Blood Knight Honor Guard 23131
 -- Lucky 23198
 -- D'rei 23201
--- Krixx 23635
 -- Arena Organizer 26012
 -- Paymaster 26075
 -- Master Flame Eater 26113
@@ -12916,7 +12902,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Big Dancing Flames 26267
 -- Beastmaster 26307
 -- Fight Promoter 26760 - npc_innkeeper
--- Plague Zombie 27059
 -- Muja 27399
 -- Ray'ma 27489
 -- Brew Vendor 27810
@@ -12928,8 +12913,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Brew Vendor 27818
 -- Brew Vendor 27819
 -- Brew Vendor 27820
--- Plagued Roach 27845
--- Plagued Vermin 27855
 -- Brew Bubble 27882
 -- Grand Apothecary Putress 28318
 
@@ -30627,6 +30610,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Transports
 -- ==========
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
+-- Krixx 23635 (Zeppelin Engineer)
+-- Kraxx 23713 (Zeppelin Engineer)
 -- Captain Taldar Windsinger 24456 - NSR
 -- Captain "Stash" Torgoley 24833
 ('2483301','24833','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Captain "Stash" Torgoley - Flee at 15% HP'),
@@ -31325,7 +31310,22 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1643801','16438','0','0','100','1025','0','0','5000','10000','0','0','11','28265','1','0','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Scourge Strike'),
 ('1643802','16438','0','0','100','1025','1000','9000','9000','18000','0','0','11','589','1','32','0','0','0','0','0','0','0','0','Skeletal Trooper - Cast Shadow Word: Pain (Rank 1)'),
 -- Mouth of Kel'Thuzad 16995 - scourge_invasion_mouth
+-- Plague Zombie (27059) - NSR
+-- Plagued Roach (27845) - NSR
 -- Plagued Resident (27848) - NSR
+-- Plagued Vermin (27855) - NSR
+-- ZP - Retch! Bunny (28301)
+-- Plague Spreader (28804)
+-- Plague Zombie (30027)
+-- Plague Zombie (30028)
+-- Plague Zombie (30029)
+-- Plague Zombie (30030)
+-- Plague Zombie (30031)
+-- Plague Zombie (30032)
+-- Plague Zombie (30033)
+-- Plague Zombie (30034)
+
+
 
 -- ====================
 -- Ahn'Qiraj War Effort
@@ -31561,6 +31561,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2716601','27166','11','0','100','0','0','0','0','0','0','0','11','48032','0','2','11','48186','0','2','11','51847','0','2','The Brewmaiden - Cast Brewmaiden Spotlight and Cast Brewmaiden Despawn Control Aura and Cast The Brewmaiden''s Blessing (Rank 6) on Spawn'),
 ('2716602','27166','11','0','100','0','0','0','0','0','0','0','41','30000','0','0','21','0','0','0','1','26303','0','0','The Brewmaiden - Delayed Despawn and Disable Combat Movement and Say Text on Spawn'),
 -- The Black Brewmaiden 27169
+
+-- ==================
+-- Love is in the Air
+-- ==================
+-- Kwee Q. Peddlefeet 16075
+('1607501','16075','22','0','100','1','58','0','0','0','0','0','11','27572','6','32','0','0','0','0','0','0','0','0','Kwee Q. Peddlefeet - Cast Smitten on Receive TEXTEMOTE_KISS'),
 
 -- ==============
 -- Lunar Festival
