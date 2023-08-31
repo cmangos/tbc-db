@@ -18423,8 +18423,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Custodian Dieworth (19488) - NSR
 -- Lieutenant-Sorcerer Morran (19489) - NSR
 -- Ekkorash the Inquisitor 19493
-('1949301','19493','0','0','100','1025','8000','11000','18000','23000','0','0','11','36040','4','512','0','0','0','0','0','0','0','0','Ekkorash the Inquisitor - Cast Fel Flamestrike'),
-('1949302','19493','0','0','100','1025','0','0','14000','20000','0','0','11','11980','1','32','0','0','0','0','0','0','0','0','Ekkorash the Inquisitor - Cast Curse of Weakness'),
+('1949301','19493','11','0','100','0','0','0','0','0','0','0','1','17887','0','0','0','0','0','0','0','0','0','0','Ekkorash the Inquisitor - Say - OnSpawn'),
 -- Ar'kelos
 ('1949401','19494','9','0','100','1025','0','8','12000','15000','0','0','11','11975','0','0','0','0','0','0','0','0','0','0','Ar''kelos - Cast Arcane Explosion'),
 -- Stormspire Nexus-Guard 19529
