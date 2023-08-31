@@ -18422,10 +18422,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Archmage Vargoth (19481) - NSR
 -- Custodian Dieworth (19488) - NSR
 -- Lieutenant-Sorcerer Morran (19489) - NSR
--- Ekkorash the Inquisitor 19493
+-- Ekkorash the Inquisitor 19493 - spell_list
 ('1949301','19493','11','0','100','0','0','0','0','0','0','0','1','17887','0','0','0','0','0','0','0','0','0','0','Ekkorash the Inquisitor - Say - OnSpawn'),
--- Ar'kelos
-('1949401','19494','9','0','100','1025','0','8','12000','15000','0','0','11','11975','0','0','0','0','0','0','0','0','0','0','Ar''kelos - Cast Arcane Explosion'),
+-- Ar'kelos - spell_list
 -- Stormspire Nexus-Guard 19529
 ('1952901','19529','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Stormspire Nexus-Guard - Cast Invisibility and Stealth Detection on Spawn'),
 ('1952902','19529','9','0','100','1025','0','5','12000','15000','0','0','11','9080','1','0','0','0','0','0','0','0','0','0','Stormspire Nexus-Guard - Cast Hamstring'),
