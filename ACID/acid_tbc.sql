@@ -16560,7 +16560,19 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Koi-Koi Spirit 22226
 ('2222601','22226','0','0','100','1025','1000','3000','15000','17000','0','0','11','36093','1','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Cast Ghost Strike'),
 ('2222602','22226','6','0','100','0','0','0','0','0','0','0','11','38640','15','0','0','0','0','0','0','0','0','0','Koi-Koi Spirit - Cast Koi-Koi Death'),
--- Grishna Arakkoa 22232 - NSR
+-- Grishna Arakkoa 22232 
+('2223201','22232','11','0','100','0','0','0','0','0','0','0','11','37119','0','0','0','0','0','0','0','0','0','0','Grishna Arakkoa - Cast Spirit Particles on self - OnSpawn'),
+-- Unsuspecting Leafbeard - 22233
+('2223301','22233','11','0','100','0','0','0','0','0','0','0','11','37119','0','0','0','0','0','0','0','0','0','0','Unsuspecting Leafbeard - Cast Spirit Particles on self - OnSpawn'),
+('2223302','22233','8','0','100','0','38632','-1','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Unsuspecting Leafbeard - Set Phase 1 - onSpellhit'),
+('2223303','22233','29','1','100','1','2000','2000','2000','2000','0','0','5','34','0','0','0','0','0','0','0','0','0','0','Unsuspecting Leafbeard - Emote OneShotWoundCritical (Phase 1)'),
+-- Leafbeard Flavor Event Particle Bunny - 22246
+('2224601','22246','11','0','100','0','0','0','0','0','0','0','11','37119','0','0','0','0','0','0','0','0','0','0','Leafbeard Flavor Event Particle Bunny - Cast Spirit Particles on self - OnSpawn'),
+-- Leafbeard Flavor Event Channel Bunny - 22240
+('2224001','22240','11','0','100','0','0','0','0','0','0','0','11','37119','0','0','0','0','0','0','0','0','0','0','Leafbeard Flavor Event Channel Bunny - Cast Spirit Particles on self - OnSpawn'),
+('2224002','22240','11','0','100','0','0','0','0','0','0','0','11','38632','15','0','0','0','0','0','0','0','0','0','Leafbeard Flavor Event Channel Bunny - Cast Cosmetic Purple Beams on self - OnSpawn'),
+-- Evil Koi-Koi - 22235
+('2223501','22235','11','0','100','0','0','0','0','0','0','0','11','37119','0','0','0','0','0','0','0','0','0','0','Evil Koi-Koi - Cast Spirit Particles on self - OnSpawn'),
 -- Bash'ir Raider 22241
 ('2224101','22241','0','0','100','1025','12000','18000','21000','22000','0','0','11','35922','0','0','0','0','0','0','0','0','0','0','Bash''ir Raider - Cast Energy Flare'),
 ('2224102','22241','0','0','100','1025','9000','18000','16000','28000','0','0','11','32920','1','0','0','0','0','0','0','0','0','0','Bash''ir Raider - Cast Warp'),
