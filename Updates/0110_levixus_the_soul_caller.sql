@@ -3,7 +3,7 @@
 -- Group despawns when Levixus is dead and respawns when he respawns
 -- TBC+ creatures guids also free in wotlk db
 
-SET @CGUID := 157000;
+SET @CGUID := 5305000;
 DELETE FROM `creature` WHERE `guid` BETWEEN @CGUID+1 AND @CGUID+30;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnmask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES 
 (@CGUID+1, 19416, 530, 1, -3565.49, 4949.01, -8.94927, 4.34587, 120, 120, 0, 0), 
