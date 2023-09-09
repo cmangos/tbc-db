@@ -2,7 +2,7 @@
 
 -- Bonelasher 18470 - https://www.wowhead.com/tbc/npc=18470/bonelasher
 -- https://github.com/cmangos/wotlk-db/issues/718
-UPDATE `creature_template` SET `SpellList` = 1847001, `InhabitType` = 1, `Detection` = 25, `ExtraFlags` = `ExtraFlags`&~1048576 WHERE `entry` = 18470; -- 2 are airborne
+UPDATE `creature_template` SET `SpellList` = 1847001, `InhabitType` = 1, `Detection` = 25, `ExtraFlags` = `ExtraFlags`|1048576 WHERE `entry` = 18470; -- 2 are airborne
 
 -- 18470	0	34363	0	0	0	0	0	0	0	0	0
 DELETE FROM `creature_template_spells` WHERE `entry` = 18470;
