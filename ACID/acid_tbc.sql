@@ -8245,7 +8245,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Tapoke "Slim" Jahn 4962 - npc_tapoke_slim_jahn
 -- Mikhail 4963 - npc_mikhail
 -- Slim's Friend 4971
-('497101','4971','11','0','100','0','0','0','0','0','0','0','11','3616','0','34','11','8601','0','34','0','0','0','0','Slim''s Friend - Cast Poison Proc and Slowing Poison on Spawn'),
+('497101','4971','11','0','100','0','0','0','0','0','0','0','11','8601','0','34','0','0','0','0','0','0','0','0','Slim''s Friend - Cast Slowing Poison on Spawn'),
 ('497102','4971','33','0','70','1025','0','0','2100','5600','0','0','11','2589','1','0','0','0','0','0','0','0','0','0','Slim''s Friend - Cast Backstab on Facing Target Back'),
 ('497103','4971','7','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Slim''s Friend - Despawn on Evade'),
 -- Comar Villard 5683
