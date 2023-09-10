@@ -25285,7 +25285,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1047702','10477','5','0','100','1024','0','0','1','0','0','0','11','17616','6','0','0','0','0','0','0','0','0','0','Scholomance Necromancer - Cast Corpse Explosion on Player Kill'),
 ('1047703','10477','2','0','100','1025','30','0','28000','28000','0','0','11','12020','1','32','0','0','0','0','0','0','0','0','Scholomance Necromancer - Cast Call of the Grave at 30% HP'),
 ('1047704','10477','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Scholomance Necromancer - Flee at 15% HP'),
--- Splintered Skeleton (10478)
+-- Splintered Skeleton 10478
+('1047801','10478','11','0','100','0','0','0','0','0','0','0','11','11838','0','34','0','0','0','0','0','0','0','0','Splintered Skeleton - Cast Hate to Zero on Spawn'),
 -- Unstable Corpse (3.0.3 Official Data - Logs Only)
 ('1048001','10480','0','0','100','1025','7000','19000','18000','35000','0','0','11','18270','1','0','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Dark Plague'),
 ('1048002','10480','6','0','100','0','0','0','0','0','0','0','11','17689','0','7','0','0','0','0','0','0','0','0','Unstable Corpse - Cast Disease Burst on Death'),
@@ -27673,8 +27674,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1445602','14456','0','0','100','1025','9000','13000','11000','14000','0','0','11','15284','4','0','0','0','0','0','0','0','0','0','Blackwing Guardsman - Cast Cleave'),
 ('1445603','14456','0','0','100','1025','11000','15000','12000','16000','0','0','11','23967','4','0','0','0','0','0','0','0','0','0','Blackwing Guardsman - Cast Dragonbane'),
 -- Ebonroc (14601) - boss_ebonroc
--- Bone Construct
-('1460501','14605','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Bone Construct - Set in Combat with Zone on Spawn'),
+-- Bone Construct 14605
+('1460501','14605','11','0','100','0','0','0','0','0','0','0','38','0','0','0','11','11838','0','34','0','0','0','0','Bone Construct - Zone Combat Pulse, Cast Hate to Zero on Spawn'),
 ('1460502','14605','33','0','100','1025','0','0','5000','8000','0','0','11','8355','1','0','0','0','0','0','0','0','0','0','Bone Construct - Cast Exploit Weakness on Facing Target Back'),
 ('1460503','14605','21','0','100','0','0','0','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Bone Construct - Forced Despawn on Reached Home'),
 -- Corrupted Fire Nova Totem V 14662 - TotemAI
@@ -28446,7 +28447,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1722902','17229','6','0','100','0','0','0','0','0','0','0','11','30065','1','7','0','0','0','0','0','0','0','0','Kil''rek - Cast Broken Pact on Death'),
 -- Demon Chains (17248) - mob_demon_chain
 -- Restless Skeleton 17261
-('1726101','17261','11','0','100','0','0','0','0','0','0','0','50','0','0','0','0','0','0','0','0','0','0','0','Restless Skeleton - React Passive on Spawn'),
+('1726101','17261','11','0','100','0','0','0','0','0','0','0','50','0','0','0','11','11838','0','34','0','0','0','0','Restless Skeleton - React Passive, Cast Hate to Zero (Hate to Zero) on Spawn'),
 ('1726102','17261','29','0','100','0','2000','2000','0','0','0','0','50','2','0','0','38','0','0','0','0','0','0','0','Restless Skeleton - React Aggressive and Zone Combat Pulse on Timer'),
 -- Fiendish Portal 17265 - npc_fiendish_portal
 -- Fiendish Imp 17267
