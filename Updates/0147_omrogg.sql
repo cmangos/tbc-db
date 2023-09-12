@@ -4,7 +4,7 @@ DELETE FROM creature_spell_list_entry WHERE Id IN(1680901,2059601);
 INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
 (1680901, 'SHH - Warbringer O''mrogg - Normal', 0, 0),
 (2059601, 'SHH - Warbringer O''mrogg - Heroic', 0, 0);
-DELETE FROM creature_spell_list WHERE Id IN(1680701,2056801);
+DELETE FROM creature_spell_list WHERE Id IN(1680901,2059601);
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1680901', '0', '30598', '0', '-1', '0', '0', '100', '1','25000','25000','40000','40000', 'Warbringer O''mrogg - Burning Maul'),
 ('1680901', '1', '30618', '0', '-1', '0', '0', '100', '1','30000','30000','25000','40000', 'Warbringer O''mrogg - Beatdown'),
