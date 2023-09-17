@@ -8,4 +8,11 @@ DELETE FROM spell_affect WHERE entry IN(37182);
 INSERT INTO spell_affect(entry, effectId, SpellFamilyMask) VALUES
 (37182, 0, 0x0000000100000000);
 
+-- Tier 5 Warlock 4 Set
+DELETE FROM spell_affect WHERE entry IN(37401,37402,37384);
+INSERT INTO spell_affect(entry, effectId, SpellFamilyMask) VALUES
+(37384,0,0x00000006),
+(37401, 0, 0x0000000000000002), -- corruption
+(37402, 0, 0x0000000000000004); -- immolate
+
 
