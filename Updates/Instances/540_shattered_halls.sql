@@ -325,6 +325,60 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+234, 5, 52.6026, -0.81406, -13.2027, 0, 0, 0),
 (@CGUID+234, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001),
 -- reworked
+-- gauntlet rework
+(@CGUID+321,1,515.1152, 339.82166, 2.1918812,100,100,5),
+(@CGUID+321,2,493.9259,316.13474,1.9472932,100,0,0),
+(@CGUID+321,3,476.05844,317.75107,1.9364125,100,0,0),
+(@CGUID+321,4,455.65674,317.68033,1.9416298,100,0,0),
+(@CGUID+321,5,429.9724,317.08362,1.9209572,100,0,0),
+(@CGUID+321,6,409.81305,318.26263,1.9170406,100,0,0),
+(@CGUID+321,7,384.47876,318.11124,1.9394886,100,0,0),
+(@CGUID+321,8,359.87564,320.17487,1.9181617,3.3510,100,1746201),
+
+(@CGUID+322,1,500.43695, 299.709, 2.0352724,100,100,5),
+(@CGUID+322,2,460.72418,313.97842,1.9364703,100,0,0),
+(@CGUID+322,3,434.42194,314.33572,1.9077104,100,0,0),
+(@CGUID+322,4,403.79083,314.16635,1.9008716,100,0,0),
+(@CGUID+322,5,374.89954,312.64014,1.9247476,100,0,0),
+(@CGUID+322,6,359.43372,312.43814,1.9181622,2.8099,100,1746201),
+
+(@CGUID+323,1,500.66077,335.08316,2.1801622,100,100,5),
+(@CGUID+323,2,483.1907,317.86993,1.9473528,100,0,0),
+(@CGUID+323,3,455.10214,317.3777,1.9421942,100,0,0),
+(@CGUID+323,4,430.9916,316.97632,1.9160842,100,0,0),
+(@CGUID+323,5,400.69287,318.7411,1.8979802,100,0,0),
+(@CGUID+323,6,385.03403,321.49213,1.9389232,3.351,100,1746201),
+
+(@CGUID+324,1,500.4554, 295.4435, 2.0247803,100,100,5),
+(@CGUID+324,2,485.07498,314.65887,1.9463371,100,0,0),
+(@CGUID+324,3,460.7832,315.03976,1.9364105,100,0,0),
+(@CGUID+324,4,435.2396,312.74365,1.9061459,100,0,0),
+(@CGUID+324,5,403.83655,312.20764,1.9023694,100,0,0),
+(@CGUID+324,6,385.5018,309.696,1.938451,2.8099,100,1746201),
+
+(@CGUID+325,1,502.3265, 339.933, 2.1924121,100,100,5),
+(@CGUID+325,2,476.05844,317.75107,1.9364125,100,0,0),
+(@CGUID+325,3,455.1762,318.79874,1.9421194,100,0,0),
+(@CGUID+325,4,429.9724,317.08362,1.9209572,100,0,0),
+(@CGUID+325,5,418.716,319.8783,1.9447119,3.351032257080078125,100,1746201),
+
+(@CGUID+326,1,505.0166, 294.01736, 2.0213714,100,100,5),
+(@CGUID+326,2,484.36633,313.18347,1.9463377,100,0,0),
+(@CGUID+326,3,459.75717,313.03488,1.9374542,100,0,0),
+(@CGUID+326,4,439.54303,312.2451,1.8873941,100,0,0),
+(@CGUID+326,5,420.8947,309.70868,1.9430903,2.8099,100,1746201),
+
+(@CGUID+327,1,507.43033, 340.37152, 2.1807163,100,100,5),
+(@CGUID+327,2,492.0797,318.1158,1.9481977,100,0,0),
+(@CGUID+327,3,480.32916,318.5935,1.9409089,100,0,0),
+(@CGUID+327,4,454.69748,319.9294,1.942607,100,0,0),
+(@CGUID+327,5,454.69748,319.9294,1.942607,3.3510,100,1746201),
+
+(@CGUID+328,1,510.66922, 292.43665, 2.0080533,100,100,5),
+(@CGUID+328,2,485.2548,314.55142,1.946337,100,0,0),
+(@CGUID+328,3,469.40604,311.16257,1.9173245,100,0,0),
+(@CGUID+328,4,460.55313,309.96686,1.936643,2.8099,100,1746201),
+-- gauntlet end
 (@CGUID+357,1,528.1561,228.07251,1.9335356,100,0,0),
 (@CGUID+357,2,521.939,226.18733,1.9384854,100,0,0),
 (@CGUID+357,3,519.15515,222.23543,1.9348023,100,0,0),
@@ -408,13 +462,21 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+396,2,299.4695,-76.63259,1.9365374,100,0,0),
 (@CGUID+396,3,291.05557,-90.919136,1.9129256,100,0,0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` = 16807;
+DELETE FROM `creature_movement_template` WHERE `entry` IN (16807, 17462, 17693);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Grand Warlock Nethekurse
 (16807, 0, 1, 171.8228, 289.9769, -8.185595, 100, 0, 0),
 (16807, 0, 2, 178.5562, 288.1734, -7.933493, 100, 0, 0),
 (16807, 0, 3, 184.7897, 290.3699, -8.18139, 100, 0, 0),
-(16807, 0, 4, 178.5562, 288.1734, -7.933493, 100, 0, 0);
+(16807, 0, 4, 178.5562, 288.1734, -7.933493, 100, 0, 0),
+-- Shattered Hand Zealot
+(17462,1,1,497.68735,316.3075,1.9454536,100,0,0),
+(17462,1,2,485.92004,316.08777,1.9463365,100,100,3),
+-- Shattered Hand Scout
+(17693,1,1,389.98074,315.4098,1.9338964,100,0,0),
+(17693,1,2,419.4097,315.15308,1.940825,100,0,0),
+(17693,1,3,460.31537,316.02213,1.9368871,100,0,0),
+(17693,1,4,488.62424,315.73007,1.9498857,100,1000,0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+52, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
@@ -561,24 +623,12 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+128, @CGUID+96, 1679), -- Creeping Oozeling -> Creeping Ooze
 (@CGUID+129, @CGUID+93, 1679), -- Creeping Oozeling -> Creeping Ooze
 (@CGUID+130, @CGUID+95, 1679), -- Creeping Oozeling -> Creeping Ooze
-(@CGUID+131, @CGUID+92, 1679), -- Creeping Oozeling -> Creeping Ooze
--- Throne of the Damned
--- Gauntlet of Flame
-(@CGUID+146, @CGUID+148, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+147, @CGUID+148, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+150, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+151, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+152, @CGUID+149, 3), -- Shattered Hand Zealot -> Shattered Hand Zealot
-(@CGUID+149, @CGUID+143, 1); -- Shattered Hand Zealot -> Shattered Hand Archer
+(@CGUID+131, @CGUID+92, 1679); -- Creeping Oozeling -> Creeping Ooze
 
 
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
-(16809, 540, 16808, 1, 0), -- Warbringer O'mrogg -> Warchief Kargath Bladefist
-(17693, 540, 17427, 1, 0), -- Shattered Hand Scout -> Shattered Hand Archer				-- Abuse Prevention (void Aggro, npc_Shattered_Hand_Scout)
-(17427, 540, 17427, 3, 0), -- Shattered Hand Archer -> Shattered Hand Archer
-(17461, 540, 17427, 3, 0), -- Shattered Hand Blood Guard -> Shattered Hand Archer
-(20923, 540, 17427, 3, 0); -- Blood Guard Porung -> Shattered Hand Archer
+(16809, 540, 16808, 1, 0); -- Warbringer O'mrogg -> Warchief Kargath Bladefist
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 -- commented due to need static entry for rp event
@@ -749,16 +799,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+138, 0, 540, 1, 87.9912, 57.5445, -13.1049, 3.2617, 5, 5, 0, 2), -- creature_spawn_entry
 -- Re-Use 139-142
 -- Gauntlet of Flames
-(@CGUID+143, 17427, 540, 3, 514.5014, 319.6571, 2.042556, 3.368485, 7200, 7200, 0, 0), -- Shattered Hand Archer
-(@CGUID+144, 17427, 540, 3, 514.8049, 312.0412, 2.036432, 3.001966, 7200, 7200, 0, 0), -- Shattered Hand Archer
-(@CGUID+145, 17461, 540, 1, 512.6873, 315.6516, 2.040503, 2.984513, 86400, 86400, 0, 0), -- Shattered Hand Blood Guard
-(@CGUID+146, 17462, 540, 3, 335.331, 311.7092, 2.02385, 0.9948376, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+147, 17462, 540, 3, 332.262, 314.0845, 2.030712, 0.1570796, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+148, 17462, 540, 3, 335.664, 317.5591, 2.024835, 5.288348, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+149, 17462, 540, 3, 499.0804, 322.2516, 2.031424, 3.281219, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+150, 17462, 540, 3, 498.9346, 309.12, 2.030749, 3.001966, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+151, 17462, 540, 3, 499.8543, 318.8076, 2.032207, 3.159046, 7200, 7200, 0, 0), -- Shattered Hand Zealot
-(@CGUID+152, 17462, 540, 3, 499.7404, 313.2804, 2.032141, 3.036873, 7200, 7200, 0, 0), -- Shattered Hand Zealot
 (@CGUID+173, 17552, 540, 3, 191.091, 279.1522, 6.347817, 1.003119, 86400, 86400, 0, 0), -- Hellfire Death Brazier
 (@CGUID+174, 17552, 540, 3, 165.1729, 278.9961, 7.502974, 0.5861885, 86400, 86400, 0, 0), -- Hellfire Death Brazier
 (@CGUID+175, 17552, 540, 3, 179.6241, 258.1517, 7.795619, 0.6800787, 86400, 86400, 0, 0), -- Hellfire Death Brazier
@@ -797,9 +837,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+215, 17687, 540, 3, 294.722, 317.899, 1.91816, 0.186297, 7200, 7200, 10, 1), -- Flame Arrow
 (@CGUID+216, 17687, 540, 3, 287.066, 315.53, 1.87145, 6.21995, 7200, 7200, 10, 1), -- Flame Arrow
 (@CGUID+217, 17687, 540, 3, 455.513, 317.784, 1.94178, 3.58176, 7200, 7200, 10, 1), -- Flame Arrow
-(@CGUID+218, 17693, 540, 3, 341.2886, 314.903, 2.012742, 3.141593, 7200, 7200, 0, 0), -- Shattered Hand Scout
-
-
 (@CGUID+221, 16699, 540, 3, 72.871, 274.047, -13.1036, 4.08407, 7200, 7200, 0, 0), -- Shattered Hand Reaver
 -- (@CGUID+222, 17301, 540, 3, 152.8524, -83.63912, 2.021005, 0.06981317, 86400, 86400, 0, 0), -- Shattered Hand Executioner
 -- (@CGUID+223
@@ -849,7 +886,6 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+257, 17420, 540, 2, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0), -- Shattered Hand Heathen (Heroic)
 (@CGUID+258, 0, 540, 3, 84.0513, 74.3693, -13.1203, 3.71755, 7200, 7200, 0, 0), -- Shadowmoon Acolyte, Shadowmoon Darkcaster, Shattered Hand Brawler
 
-(@CGUID+259, 20923, 540, 2, 512.6873, 315.6516, 2.040503, 2.984513, 86400, 86400, 0, 0), -- Blood Guard Porung
 (@CGUID+275, 16704, 540, 3, 62.3102, 207.759, -13.1978, 4.7401, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
 (@CGUID+276, 16704, 540, 3, 77.1728, 207.646, -13.1964, 4.6223, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
 (@CGUID+277, 16704, 540, 3, 69.8649, 212.634, -13.2109, 4.65764, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
@@ -858,7 +894,31 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+282, 16700, 540, 3, 62.5538, 203.886, -13.1971, 0.000229836, 7200, 7200, 0, 2), -- Shattered Hand Legionnaire
 
 -- reguid to get the in correct order
+-- gauntlet
+(@CGUID+317, 17462, 540, 3, 335.331, 311.7092, 2.02385, 0.9948376, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+318, 17462, 540, 3, 332.262, 314.0845, 2.030712, 0.1570796, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+319, 17462, 540, 3, 335.664, 317.5591, 2.024835, 5.288348, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+320, 17693, 540, 3, 341.2886, 314.903, 2.012742, 3.141593, 7200, 7200, 0, 0), -- Shattered Hand Scout
 
+-- npc getting spawned during gauntlet
+(@CGUID+321, 17462, 540, 3, 515.1152, 339.82166, 2.1918812, 4.189, 7200, 7200, 0, 2), -- Shattered Hand Zealot
+(@CGUID+322, 17462, 540, 3, 500.43695, 299.709, 2.0352724, 1.837, 7200, 7200, 0, 2), -- Shattered Hand Zealot
+(@CGUID+323, 17462, 540, 3, 500.66077, 335.08316, 2.1801622, 4.790, 7200, 7200, 0, 2), -- Shattered Hand Zealot
+(@CGUID+324, 17462, 540, 3, 500.4554, 295.4435, 2.0247803, 1.765, 7200, 7200, 0, 2), -- Shattered Hand Zealot
+(@CGUID+325, 17462, 540, 3, 502.3265, 339.933, 2.1924121, 4.682, 7200, 7200, 0, 2), -- Shattered Hand Zealot
+(@CGUID+326, 17462, 540, 3, 505.0166, 294.01736, 2.0213714, 1.931, 7200, 7200, 0, 2), -- Shattered Hand Zealot
+(@CGUID+327, 17462, 540, 3, 507.43033, 340.37152, 2.1807163, 4.497, 7200, 7200, 0, 2), -- Shattered Hand Zealot
+(@CGUID+328, 17462, 540, 3, 510.66922, 292.43665, 2.0080533, 2.112, 7200, 7200, 0, 2), -- Shattered Hand Zealot
+
+(@CGUID+329, 17462, 540, 3, 499.0804, 322.2516, 2.031424, 3.281219, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+330, 17462, 540, 3, 498.9346, 309.12, 2.030749, 3.001966, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+331, 17462, 540, 3, 499.8543, 318.8076, 2.032207, 3.159046, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+(@CGUID+332, 17462, 540, 3, 499.7404, 313.2804, 2.032141, 3.036873, 7200, 7200, 0, 0), -- Shattered Hand Zealot
+
+(@CGUID+333, 17427, 540, 3, 514.5014, 319.6571, 2.042556, 3.368485, 7200, 7200, 0, 0), -- Shattered Hand Archer
+(@CGUID+334, 17427, 540, 3, 514.8049, 312.0412, 2.036432, 3.001966, 7200, 7200, 0, 0), -- Shattered Hand Archer
+(@CGUID+335, 17461, 540, 1, 512.6873, 315.6516, 2.040503, 2.984513, 86400, 86400, 0, 0), -- Shattered Hand Blood Guard
+(@CGUID+336, 20923, 540, 2, 512.6873, 315.6516, 2.040503, 2.984513, 86400, 86400, 0, 0), -- Blood Guard Porung
 -- Shattered Hand Centurion group 1
 (@CGUID+337, 17465, 540, 3, 551.806, 233.474, 0.260, 5.253, 7200, 7200, 0, 0), -- Shattered Hand Centurion
 (@CGUID+338, 17464, 540, 3, 548.59235,228.68463,0.3211252, 1.2740, 7200, 7200, 0, 0), -- Shattered Hand Gladiator
@@ -1015,14 +1075,13 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0),
-(@SGGUID+47, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 0, 0, 0), -- Multiple Spawns, only one active
+(@SGGUID+48, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 0, 0, 0), -- Multiple Spawns, only one active
 -- Gauntlet of Flame
--- (@SGGUID+48, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 3, 0, 1), -- On Aggro gauntlet starts
--- (@SGGUID+49, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 0, 0, 0), -- 8 Zealots that getting spawned when Scout reachs the end of his path
--- (@SGGUID+50, 'Shattered Halls - Shattered Hand Zealot (2) | Gauntlet of Flame Group 003', 0, 0, 0, 0), -- 2 Zealots that respawns every 20 seconds as long gauntlet is active
--- (@SGGUID+51, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 0, 0, 0), -- 4 Zealots before archer blood guard group
--- (@SGGUID+52, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 0), -- Blood Guard ends gauntlet on normal
--- (@SGGUID+53, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 0), -- Blood Guard Porung ends gauntlet on Heroic
+(@SGGUID+49, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 4, 0, 3), -- On Aggro gauntlet starts
+(@SGGUID+50, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 8, @SGGUID+4, 10), -- 8 Zealots that getting spawned when Scout reachs the end of his path
+(@SGGUID+51, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 4, 0, 3), -- 4 Zealots before archer blood guard group
+(@SGGUID+52, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard ends gauntlet on normal
+(@SGGUID+53, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard Porung ends gauntlet on Heroic
 (@SGGUID+54, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 001', 0, 5, 0, 1),
 (@SGGUID+55, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 002', 0, 5, 0, 1),
 (@SGGUID+56, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 003', 0, 5, 0, 1),
@@ -1039,7 +1098,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 -- max 1 brawler, darkcaster
 (@SGGUID+60, 'Shattered Halls - Shattered Hand Legionnaire 008', 0, 6, 0, 1),
 (@SGGUID+61, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001', 0, 3, 0, 1),
--- (@SGGUID+62, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 1, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet how when he gets spawned
+-- (@SGGUID+62, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 0, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet how when he gets spawned
 (@SGGUID+63, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
 (@SGGUID+64, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 003', 0, 2, 0, 1),
 (@SGGUID+65, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002', 0, 3, 0, 1),
@@ -1061,9 +1120,37 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @OGUID+7, -1), -- spawn_group_entry
 
-(@SGGUID+47, @CGUID+379, -1), -- Shattered Hand Assasins 
-(@SGGUID+47, @CGUID+382, -1), -- Shattered Hand Assasins 
-(@SGGUID+47, @CGUID+388, -1), -- Shattered Hand Assasins 
+(@SGGUID+48, @CGUID+379, -1), -- Shattered Hand Assasins 
+(@SGGUID+48, @CGUID+382, -1), -- Shattered Hand Assasins 
+(@SGGUID+48, @CGUID+388, -1), -- Shattered Hand Assasins 
+
+-- Gauntlet of Flame
+(@SGGUID+49, @CGUID+320, 0), -- Shattered Hand Scout
+(@SGGUID+49, @CGUID+317, 1), -- Shattered Hand Zealot 
+(@SGGUID+49, @CGUID+318, 2), -- Shattered Hand Zealot 
+(@SGGUID+49, @CGUID+319, 3), -- Shattered Hand Zealot 
+
+(@SGGUID+50, @CGUID+321, -1), -- Shattered Hand Zealot 
+(@SGGUID+50, @CGUID+322, -1), -- Shattered Hand Zealot 
+(@SGGUID+50, @CGUID+323, -1), -- Shattered Hand Zealot 
+(@SGGUID+50, @CGUID+324, -1), -- Shattered Hand Zealot 
+(@SGGUID+50, @CGUID+325, -1), -- Shattered Hand Zealot 
+(@SGGUID+50, @CGUID+326, -1), -- Shattered Hand Zealot 
+(@SGGUID+50, @CGUID+327, -1), -- Shattered Hand Zealot 
+(@SGGUID+50, @CGUID+328, -1), -- Shattered Hand Zealot 
+
+(@SGGUID+51, @CGUID+329, -1), -- Shattered Hand Zealot 
+(@SGGUID+51, @CGUID+330, -1), -- Shattered Hand Zealot 
+(@SGGUID+51, @CGUID+331, -1), -- Shattered Hand Zealot 
+(@SGGUID+51, @CGUID+332, -1), -- Shattered Hand Zealot 
+
+(@SGGUID+52, @CGUID+335, -1), -- Shattered Hand Blood Guard
+(@SGGUID+52, @CGUID+333, -1), -- Shattered Hand Archer
+(@SGGUID+52, @CGUID+334, -1), -- Shattered Hand Archer
+
+(@SGGUID+53, @CGUID+336, -1), -- Blood Guard Porung
+(@SGGUID+53, @CGUID+333, -1), -- Shattered Hand Archer
+(@SGGUID+53, @CGUID+334, -1), -- Shattered Hand Archer
 
 (@SGGUID+54, @CGUID+337, 0), -- Shattered Hand Centurion
 (@SGGUID+54, @CGUID+338, 0), -- Shattered Hand Gladiator
@@ -1210,6 +1297,14 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+69,15,374.94492,-20.095032,1.9111354,100,0,0),
 (@SGGUID+69,16,369.20135,-20.56937,1.9118699,100,0,0),
 (@SGGUID+69,17,369.4805,-35.282803,1.9122882,100,0,0);
+
+DELETE FROM worldstate_name WHERE Id IN (@SGGUID+4);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(@SGGUID+4, 'Shattered Halls - Gauntlet of Flame');
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+4);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+4, 42, @SGGUID+4, 1, 1, 0, 0, 'Shattered Hall - Gauntlet of Flame');
 
 -- =======
 -- POOLING
@@ -1392,12 +1487,14 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10054, 1, 10199, 10, 'Shattered Hand Legionnaire - talk event'),
 (10054, 1, 0, 70, 'Shattered Hand Legionnaire - nothing');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001,1670002,1742001);
-INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1670001, 0, 45, 0, 10050, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - 10% chance to yell, 20% chance to talk'),
-(1670002, 0, 45, 0, 10054, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Legionnaire - 10% force bow/cheer, 10% talk event'),
-(1742001, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - Waypoint Pause'),
-(1742001, 1000, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - EMOTE_STATE_READY1H');
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001, 1670002, 1742001, 1746201);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1670001, 0, 0, 45, 0, 10050, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - 10% chance to yell, 20% chance to talk'),
+(1670002, 0, 1, 45, 0, 10054, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Legionnaire - 10% force bow/cheer, 10% talk event'),
+(1742001, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - Waypoint Pause'),
+(1742001, 1000, 0, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - EMOTE_STATE_READY1H'),
+(1746201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Zealot - Waypoint Pause'),
+(1746201, 0, 1, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Zealot - EMOTE_STATE_READY1H');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
