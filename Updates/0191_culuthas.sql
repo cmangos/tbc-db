@@ -22,7 +22,7 @@ INSERT INTO dbscripts_on_relay(id, delay, priority, command, datalong, datalong2
 (2013301,0,0,0,2013301,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Socrethar - Say Random Text'), 
 (2013301,6000,0,35,5,0,0,20138,25,1,0,0,0,0,0,0,0,0,0,0,0,'Socrethar - Send AI Event A');
 
-DELETE FROM dbscript_random_templates WHERE id IN (2013301, 2013302);
+DELETE FROM dbscript_random_templates WHERE id IN (2013301, 2013302, 2013801);
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 (2013301, 0, 17682, 0, 'Image of Socrethat - Say Text'),
 (2013301, 0, 17688, 0, 'Image of Socrethat - Say Text'),
