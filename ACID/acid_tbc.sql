@@ -31620,6 +31620,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Drohn's Distillery Barker (24492) - npc_brewfest_barker
 -- T'chali's Voodoo Brewery Barker (24493) - npc_brewfest_barker
 -- Blix Fixwidget (24495) - npc_brewfest_barker
+-- Dark Iron Herald 24536 - NSR
 -- The Brewmaiden 27166
 ('2716601','27166','11','0','100','0','0','0','0','0','0','0','11','48032','0','2','11','48186','0','2','11','51847','0','2','The Brewmaiden - Cast Brewmaiden Spotlight and Cast Brewmaiden Despawn Control Aura and Cast The Brewmaiden''s Blessing (Rank 6) on Spawn'),
 ('2716602','27166','11','0','100','0','0','0','0','0','0','0','41','30000','0','0','21','0','0','0','1','26303','0','0','The Brewmaiden - Delayed Despawn and Disable Combat Movement and Say Text on Spawn'),
