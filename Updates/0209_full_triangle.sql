@@ -38,7 +38,7 @@ INSERT INTO dbscripts_on_creature_death(id, delay, priority, command, datalong, 
 -- Movement for Ambassador Solannas and his Guards
 DELETE FROM creature_movement_template WHERE entry IN (19675, 20163, 20199);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(19675,1,1,4131.736, 2930.2441, 354.6069,100,100,4),
+(19675,1,1,4131.736, 2930.2441, 354.6069,100,0,0),
 (19675,1,2,4122.2397,2931.6533,354.50958,100,100,1967501),
 (20163,1,1,4118.5303,2947.3643,354.60495,100,0,0),
 (20163,1,2,4118.8247,2931.8252,354.5096,100,100,2016301),
@@ -54,7 +54,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 UPDATE creature_template SET Faction = 1789, UnitFlags = 33536, MovementType = 2 WHERE entry IN (20163, 20199);
 UPDATE creature_template SET MovementType = 2 WHERE entry = 19675;
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (2016301, 2019901);
+DELETE FROM `dbscripts_on_creature_movement` WHERE id IN (1967501, 2016301, 2019901);
 INSERT INTO dbscripts_on_creature_movement(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
 (1967501,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Nexus-Prince Haramad - Change movement'), 
 (2016301,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Ambassador Solannas - Change movement'), 
