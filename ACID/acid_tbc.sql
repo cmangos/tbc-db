@@ -24365,14 +24365,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1746105','17461','7','0','100','6','0','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Shattered Hand Blood Guard - Fail Gauntlet on Evade'),
 -- Shattered Hand Zealot 17462 - npc_shattered_hand_zealot
 ('1746201','17462','9','0','100','1025','0','5','10000','13000','0','0','11','30989','1','0','0','0','0','0','0','0','0','0','Shattered Hand Zealot - Cast Hamstring'),
--- Shattered Hand Gladiator 17464
-('1746401','17464','11','0','100','0','0','0','0','0','0','0','11','19818','0','34','0','0','0','0','0','0','0','0','Shattered Hand Gladiator - Cast Double Attack on Spawn'),
-('1746402','17464','0','0','100','1025','6000','18000','10000','20000','0','0','11','16856','1','0','0','0','0','0','0','0','0','0','Shattered Hand Gladiator - Cast Mortal Strike'),
--- Shattered Hand Centurion 17465
-('1746501','17465','4','0','25','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Random Say on Aggro'),
-('1746502','17465','0','0','100','1025','3000','7000','17000','21000','0','0','11','31403','0','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion - Cast Battle Shout'),
-('1746503','17465','28','0','100','1027','15572','5','5000','9000','0','0','11','15572','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Normal) - Cast Sunder Armor on Target Missing Aura Stack'),
-('1746504','17465','28','0','100','1029','16145','5','5000','9000','0','0','11','16145','1','0','0','0','0','0','0','0','0','0','Shattered Hand Centurion (Heroic) - Cast Sunder Armor on Target Missing Aura Stack'),
+-- Shattered Hand Gladiator 17464 - spell_list
+-- Shattered Hand Centurion 17465 - spell_list
 -- Lesser Shadow Fissure 17471 - npc_aoe_damage_trigger
 -- Training Dummy 17578
 ('1757801','17578','11','0','100','0','0','0','0','0','0','0','42','1','0','0','20','0','0','0','0','0','0','0','Training Dummy - Set Invincible, Disable Melee on Spawn'),
