@@ -21338,7 +21338,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1850602','18506','4','0','100','0','0','0','0','0','0','0','28','0','32811','0','0','0','0','0','0','0','0','0','Raging Soul - Remove Greater Invisibility on Aggro'),
 ('1850603','18506','0','0','100','1026','0','2000','0','0','0','0','11','32888','1','0','41','4500','0','0','0','0','0','0','Raging Soul (Normal) - Cast Rage and Delayed Despawn'),
 ('1850604','18506','0','0','100','1028','0','2000','0','0','0','0','11','38380','1','0','41','4500','0','0','0','0','0','0','Raging Soul (Heroic) - Cast Rage and Delayed Despawn'),
--- Raging Skeleton 18521 - NSR
+-- Raging Skeleton 18521
+('1852101','18521','11','0','100','0','0','0','0','0','0','0','11','10095','0','34','0','0','0','0','0','0','0','0','Raging Skeleton - Cast Hate to Zero on Spawn'),
 -- Angered Skeleton (18524) - NSR
 -- Phasing Soldier 18556
 ('1855601','18556','11','0','100','0','0','0','0','0','0','0','11','33422','0','34','0','0','0','0','0','0','0','0','Phasing Soldier - Cast Phase In on Spawn'),
