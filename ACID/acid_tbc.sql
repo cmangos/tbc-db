@@ -21588,7 +21588,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2190405','21904','0','0','100','1025','6200','25500','12100','24100','0','0','11','18144','1','0','0','0','0','0','0','0','0','0','Avian Warhawk - Cast Swoop'),
 -- Avian Flyer 21931 - NSR
 -- Anzu (23035) - boss_anzu
--- Brood of Anzu (23132) - NSR
+-- Brood of Anzu 23132
+('2313201','23132','11','0','100','0','0','0','0','0','0','0','11','9205','0','34','0','0','0','0','0','0','0','0','Brood of Anzu - Cast Hate to Zero on Spawn'),
 -- Hawk Spirit 23134 - npc_anzu_bird_spirit
 -- Falcon Spirit 23135 - npc_anzu_bird_spirit
 -- Eagle Spirit 23136 - npc_anzu_bird_spirit
