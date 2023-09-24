@@ -24032,9 +24032,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('621802','6218','6','0','100','0','0','0','0','0','0','0','11','10341','0','7','0','0','0','0','0','0','0','0','Irradiated Slime - Cast Radiation Cloud on Death'),
 -- Corrosive Lurker 6219
 ('621901','6219','11','0','100','0','0','0','0','0','0','0','11','9460','0','34','0','0','0','0','0','0','0','0','Corrosive Lurker - Cast Corrosive Ooze on Spawn'),
--- Irradiated Horror (3.3.5a Official Data)
-('622001','6220','1','0','100','0','1000','1000','0','0','0','0','11','21862','0','32','0','0','0','0','0','0','0','0','Irradiated Horror - Cast Radiation Visual OOC'),
+-- Irradiated Horror 6220
+('622001','6220','11','0','100','0','0','0','0','0','0','0','11','9205','0','34','0','0','0','0','0','0','0','0','Irradiated Horror - Cast Hate to Zero on Spawn'),
 ('622002','6220','0','0','100','1025','15600','19300','9700','21700','0','0','11','8211','1','0','0','0','0','0','0','0','0','0','Irradiated Horror - Cast Chain Burn'),
+('622003','6220','1','0','100','0','1000','1000','0','0','0','0','11','21862','0','32','0','0','0','0','0','0','0','0','Irradiated Horror - Cast Radiation Visual OOC'),
 -- Leprous Technician 6222 - creature_spell_list - OOC Tune Up Spell Casts are Rough Scripted
 ('622201','6222','8','0','100','0','9798','-1','0','0','0','0','1','3367','0','0','0','0','0','0','0','0','0','0','Leprous Technician - Emote on Radiation Spellhit'),
 ('622202','6222','1','0','100','1','10000','45000','30000','70000','0','0','11','10348','0','0','0','0','0','0','0','0','0','0','Leprous Technician - Cast Tune Up OOC'),
