@@ -9,10 +9,10 @@ SET @SGGUID := 26000; -- Shadowmoon Valley
 
 DELETE FROM creature WHERE guid BETWEEN @CGUID+1 AND @CGUID+4;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
-(@CGUID+1, 18694, 530, 0, -4393.311, 291.26086, 56.938923, 5.0147, 43200, 129600, 0, 4), -- dragonmaw fortress
-(@CGUID+2, 18694, 530, 0, -3051.4084, 253.5536, 48.67714, 5.901, 43200, 129600, 0, 4), -- altar of sha'tar
-(@CGUID+3, 18694, 530, 0, -4243.5156, 793.535, 24.832958, 3.223, 43200, 129600, 0, 4), -- sanctum of the stars
-(@CGUID+4, 18694, 530, 0, -3903.2795, 1696.2645, 94.72202, 0.448, 43200, 129600, 0, 4); -- the deathforge
+(@CGUID+1, 18694, 530, 1, -4393.311, 291.26086, 56.938923, 5.0147, 43200, 129600, 0, 4), -- dragonmaw fortress
+(@CGUID+2, 18694, 530, 1, -3051.4084, 253.5536, 48.67714, 5.901, 43200, 129600, 0, 4), -- altar of sha'tar
+(@CGUID+3, 18694, 530, 1, -4243.5156, 793.535, 24.832958, 3.223, 43200, 129600, 0, 4), -- sanctum of the stars
+(@CGUID+4, 18694, 530, 1, -3903.2795, 1696.2645, 94.72202, 0.448, 43200, 129600, 0, 4); -- the deathforge
 
 DELETE FROM creature_movement WHERE id BETWEEN @CGUID+1 AND @CGUID+4;
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
