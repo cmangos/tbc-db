@@ -28356,7 +28356,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1987301','19873','2','0','100','0','20','0','0','0','0','0','11','29390','0','0','0','0','0','0','0','0','0','0','Lord Crispin Ference - Cast Shield Wall at 20%'),
 -- Baron Rafe Dreuger 19874 - spell_list
 -- Baroness Dorothea Millstipe 19875 - spell_lists
-('1987501','19875','27','0','100','1','29406','1','1500','8000','1','0','11','29406','0','0','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Cast Shadowform on Aura Missing'),
+('1987501','19875','0','0','100','1','1500','8000','1500','8000','1','0','11','29406','0','32','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Cast Shadowform on Aura Missing'),
 -- Lord Robin Daris - spell_list
 -- Conjured Water Elemental (21160) - npc_water_elemental
 -- Human Charger (21664) - npc_human_charger
