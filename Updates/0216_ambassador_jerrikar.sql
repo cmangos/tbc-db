@@ -116,7 +116,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+9,22,-4551.0815,1639.1847,174.42854,100,0,0);
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+2, 'Shadowmoon Valley - Ambassador Jerrikar', 1, 1, 0, 0);
+(@SGGUID+2, 'Shadowmoon Valley - Ambassador Jerrikar', 0, 1, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+2, @CGUID+5, -1),
