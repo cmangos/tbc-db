@@ -135,7 +135,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+1, 'Shadowmoon Valley - Collidus the Warp-Watcher', 1, 1, 0, 0);
+(@SGGUID+1, 'Shadowmoon Valley - Collidus the Warp-Watcher', 0, 1, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+1, -1),
