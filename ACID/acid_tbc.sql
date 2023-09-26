@@ -28443,12 +28443,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gradav (16814) - NSR
 -- Kamsis (16815) - NSR
 -- Echo of Medivh (16816) - npc_echo_of_medivh
--- Lady Keira Berrybuck 17007
-('1700701','17007','4','0','100','0','0','0','0','0','0','0','11','29381','0','0','0','0','0','0','0','0','0','0','Lady Keira Berrybuck - Cast Greater Blessing of Might on Aggro'),
-('1700702','17007','0','0','100','1025','5000','14000','18000','30000','0','0','11','29382','0','0','0','0','0','0','0','0','0','0','Lady Keira Berrybuck - Cast Divine Shield'),
-('1700703','17007','16','0','100','1025','29381','30','8000','16000','0','0','11','29381','12','0','0','0','0','0','0','0','0','0','Lady Keira Berrybuck - Cast Greater Blessing of Might on Friendly Missing Buff'),
-('1700704','17007','14','0','100','1025','4000','30','7000','13000','0','0','11','29380','12','0','0','0','0','0','0','0','0','0','Lady Keira Berrybuck - Cast Cleanse on Friendly Missing HP'),
-('1700705','17007','14','0','100','1057','8000','40','10000','15000','0','0','11','29383','12','0','11','29562','12','0','0','0','0','0','Lady Keira Berrybuck - Random Cast Holy Light or Holy Light on Friendly Missing HP'),
+-- Lady Keira Berrybuck 17007 -- spell_list
+('1700701','17007','2','0','100','1024','10','0','0','0','0','0','11','29382','0','0','11','29383','0','0','0','0','0','0','Lady Keira Berrybuck - Cast Divine Shield and Holy Lighton at 10%'),
 -- Phantom Hound - creature_spell_list
 ('1706702','17067','6','0','100','0','0','0','0','0','0','0','11','29541','0','7','0','0','0','0','0','0','0','0','Phantom Hound - Cast Summon Phantom Hound Visual on Death'),
 -- Astral Flare 17096 + 19781 + 19782 + 19783
@@ -28529,29 +28525,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shadow of Aran 18254
 ('1825401','18254','11','0','100','0','0','0','0','0','0','0','57','1','95','0','0','0','0','0','0','0','0','0','Shadow of Aran - Enable Caster Mode on Spawn'),
 ('1825402','18254','9','0','100','1057','0','100','3000','3000','0','0','11','29957','0','256','11','29958','0','256','11','29960','0','256','Shadow of Aran - Cast Frostbolt Volley or Fireball Volley or Arcane Missile Volley'),
--- Lady Catriona Von'Indi 19872
-('1987201','19872','0','0','100','1025','1000','3000','15000','25000','0','0','11','29408','0','32','0','0','0','0','0','0','0','0','Lady Catriona Von''Indi - Cast Power Word: Shield'),
-('1987202','19872','14','0','100','1025','0','40','4000','9000','0','0','11','29564','12','0','0','0','0','0','0','0','0','0','Lady Catriona Von''Indi - Cast Greater Heal on Friendly Missing HP'),
-('1987203','19872','14','0','100','1025','0','30','3000','6000','0','0','11','15090','12','0','0','0','0','0','0','0','0','0','Lady Catriona Von''Indi - Cast Dispel Magic on Friendly Missing HP'),
-('1987204','19872','9','0','100','1025','0','30','5000','10000','0','0','11','15090','4','512','0','0','0','0','0','0','0','0','Lady Catriona Von''Indi - Cast Dispel Magic'),
-('1987205','19872','0','0','100','1025','5000','7000','17000','22000','0','0','11','29563','4','512','0','0','0','0','0','0','0','0','Lady Catriona Von''Indi - Cast Holy Fire'),
--- Lord Crispin Ference 19873
-('1987301','19873','0','0','100','1025','6000','7000','10000','12000','0','0','11','8379','1','0','0','0','0','0','0','0','0','0','Lord Crispin Ference - Cast Disarm'),
-('1987302','19873','0','0','100','1025','8000','10000','7000','11000','0','0','11','29567','1','0','0','0','0','0','0','0','0','0','Lord Crispin Ference - Cast Heroic Strike'),
-('1987303','19873','0','0','100','1025','7000','9000','11000','14000','0','0','11','11972','4','2048','0','0','0','0','0','0','0','0','Lord Crispin Ference - Cast Shield Bash on Casting'),
-('1987304','19873','0','0','100','1025','1000','3000','18000','25000','0','0','11','29390','0','0','0','0','0','0','0','0','0','0','Lord Crispin Ference - Cast Shield Wall'),
--- Baron Rafe Dreuger 19874
-('1987401','19874','0','0','100','1025','20000','35000','30000','50000','0','0','11','13005','1','0','0','0','0','0','0','0','0','0','Baron Rafe Dreuger - Cast Hammer of Justice'),
-('1987402','19874','0','0','100','1025','25000','30000','25000','30000','0','0','11','29386','1','0','0','0','0','0','0','0','0','0','Baron Rafe Dreuger - Cast Judgement of Command'),
-('1987403','19874','0','0','100','1025','7000','9000','30000','35000','0','0','11','29385','0','0','0','0','0','0','0','0','0','0','Baron Rafe Dreuger - Cast Seal of Command'),
--- Baroness Dorothea Millstipe 19875
-('1987501','19875','1','0','100','0','0','0','0','0','0','0','11','29406','0','0','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Cast Shadowform OOC'),
-('1987502','19875','0','0','100','1025','7000','8000','5000','10000','0','0','11','29405','16','512','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Cast Mana Burn on Random Player Mana User'),
-('1987503','19875','9','0','100','1025','0','20','5000','12000','0','0','11','29570','4','512','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Cast Mind Flay'),
--- Lord Robin Daris
-('1987601','19876','9','0','100','1025','0','5','7000','11000','0','0','11','9080','1','0','0','0','0','0','0','0','0','0','Lord Robin Daris - Cast Hamstring'),
-('1987602','19876','0','0','100','1025','8000','10000','11000','14000','0','0','11','29572','1','0','0','0','0','0','0','0','0','0','Lord Robin Daris - Cast Mortal Strike'),
-('1987603','19876','0','0','100','1025','5000','9000','8000','13000','0','0','11','29573','0','0','0','0','0','0','0','0','0','0','Lord Robin Daris - Cast Whirlwind'),
+-- Lady Catriona Von'Indi 19872 - spell_list
+-- Lord Crispin Ference 19873 - spell_list
+('1987301','19873','2','0','100','0','20','0','0','0','0','0','11','29390','0','0','0','0','0','0','0','0','0','0','Lord Crispin Ference - Cast Shield Wall at 20%'),
+-- Baron Rafe Dreuger 19874 - spell_list
+-- Baroness Dorothea Millstipe 19875 - spell_lists
+('1987501','19875','0','0','100','1','1500','8000','1500','8000','1','0','11','29406','0','32','0','0','0','0','0','0','0','0','Baroness Dorothea Millstipe - Cast Shadowform on Aura Missing'),
+-- Lord Robin Daris - spell_list
 -- Conjured Water Elemental (21160) - npc_water_elemental
 -- Human Charger (21664) - npc_human_charger
 -- Human Cleric (21682) - npc_human_cleric
