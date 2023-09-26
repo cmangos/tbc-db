@@ -19198,10 +19198,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1198005','11980','2','0','100','1024','20','0','0','0','0','0','11','38853','0','0','1','20126','0','0','0','0','0','0','Zuluhed the Whacked - Cast Nether Infusion at 20% HP'),
 -- Doomwalker 17711 - boss_doomwalker
 -- Xi'ri 18528 - npc_quest_attunement
--- Collidus the Warp-Watcher
-('1869401','18694','0','0','100','1025','5000','9000','12000','16000','0','0','11','38932','1','0','0','0','0','0','0','0','0','0','Collidus the Warp-Watcher - Cast Blink'),
-('1869402','18694','0','0','100','1025','12000','18000','21000','26000','0','0','11','36414','4','0','0','0','0','0','0','0','0','0','Collidus the Warp-Watcher - Cast Focused Bursts'),
-('1869403','18694','0','0','100','1025','14000','18000','14000','21000','0','0','11','34322','0','0','0','0','0','0','0','0','0','0','Collidus the Warp-Watcher - Cast Psychic Scream'),
+-- Collidus the Warp-Watcher - spell_list
 -- Ambassador Jerrikar
 ('1869501','18695','0','0','100','1025','3000','6000','10000','15000','0','0','11','38926','0','0','0','0','0','0','0','0','0','0','Ambassador Jerrikar - Cast Dark Strike'),
 ('1869502','18695','0','0','100','1025','8000','16000','18000','24000','0','0','11','38916','0','0','0','0','0','0','0','0','0','0','Ambassador Jerrikar - Cast Diplomatic Immunity'),
