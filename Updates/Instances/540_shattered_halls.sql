@@ -885,370 +885,374 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0),
+-- Entrance
+-- (@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 2, 0, 1),
+-- (@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 2, 0, 1),
 -- Halls of Father
-(@SGGUID+27, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 001', 0, 2, 0, 1),
-(@SGGUID+28, 'Shattered Halls - Halls of Father Group 002 - Normal', 0, 2, 0, 1),
-(@SGGUID+29, 'Shattered Halls - Halls of Father Group 002 - Heroic', 0, 2, 0, 1),
-(@SGGUID+30, 'Shattered Halls - Halls of Father Group 003 - Normal', 0, 2, 0, 1),
-(@SGGUID+31, 'Shattered Halls - Halls of Father Group 003 - Heroic', 0, 2, 0, 1),
-(@SGGUID+32, 'Shattered Halls - Halls of Father Group 004 - Normal', 0, 2, 0, 1),
-(@SGGUID+33, 'Shattered Halls - Halls of Father Group 004 - Heroic', 0, 2, 0, 1),
-(@SGGUID+34, 'Shattered Halls - Halls of Father Group 005 - Normal', 0, 2, 0, 1),
-(@SGGUID+35, 'Shattered Halls - Halls of Father Group 005 - Heroic', 0, 2, 0, 1),
-
-(@SGGUID+36, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 006', 0, 2, 0, 1),  -- This group is Important - on GroupDeath they trigger spawning of Legionnaire Group 003
-(@SGGUID+37, 'Shattered Halls - Shattered Hand Legionnaire Group 003', 0, 5, 0, 3), 
-(@SGGUID+38, 'Shattered Halls - Shattered Hand Legionnaire Group 004', 0, 5, 0, 3), 
-(@SGGUID+39, 'Shattered Halls - Shattered Hand Legionnaire Group 005', 0, 6, 0, 3), 
-(@SGGUID+40, 'Shattered Halls - Shattered Hand Legionnaire Group 006', 0, 7, 0, 1), 
-(@SGGUID+41, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2)', 0, 3, 0, 1), 
+(@SGGUID+4, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 001', 0, 2, 0, 1),
+-- Legionnaire Group 2 - not grouped with their legionnaire
+(@SGGUID+5, 'Shattered Halls - Halls of Father Group 002 - Normal', 0, 2, 0, 1),
+(@SGGUID+6, 'Shattered Halls - Halls of Father Group 002 - Heroic', 0, 2, 0, 1),
+(@SGGUID+7, 'Shattered Halls - Halls of Father Group 003 - Normal', 0, 2, 0, 1),
+(@SGGUID+8, 'Shattered Halls - Halls of Father Group 003 - Heroic', 0, 2, 0, 1),
+(@SGGUID+9, 'Shattered Halls - Halls of Father Group 004 - Normal', 0, 2, 0, 1),
+(@SGGUID+10, 'Shattered Halls - Halls of Father Group 004 - Heroic', 0, 2, 0, 1),
+(@SGGUID+11, 'Shattered Halls - Halls of Father Group 005 - Normal', 0, 2, 0, 1),
+(@SGGUID+12, 'Shattered Halls - Halls of Father Group 005 - Heroic', 0, 2, 0, 1),
+(@SGGUID+13, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 006', 0, 2, 0, 1),  -- This group is Important - on GroupDeath they trigger spawning of Legionnaire Group 003
+(@SGGUID+14, 'Shattered Halls - Shattered Hand Legionnaire Group 003', 0, 5, 0, 3), -- spawned when group 14 is dead
+(@SGGUID+15, 'Shattered Halls - Shattered Hand Legionnaire Group 004', 0, 5, 0, 3), 
+(@SGGUID+16, 'Shattered Halls - Shattered Hand Legionnaire Group 005', 0, 6, 0, 3), 
+(@SGGUID+17, 'Shattered Halls - Shattered Hand Legionnaire Group 006', 0, 7, 0, 1), 
+(@SGGUID+18, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2)', 0, 3, 0, 1), 
 -- The Sewer
-(@SGGUID+42, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 001', 0, 6, 0, 1), 
-(@SGGUID+43, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 002', 0, 6, 0, 1), 
-(@SGGUID+44, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 003', 0, 6, 0, 1), 
-(@SGGUID+45, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 004', 0, 6, 0, 1), 
-(@SGGUID+46, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 005', 0, 6, 0, 1), 
-(@SGGUID+47, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 006', 0, 6, 0, 1), 
-(@SGGUID+48, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 0, 0, 0), -- Multiple Spawns, only one active
+(@SGGUID+19, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 001', 0, 6, 0, 1), 
+(@SGGUID+20, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 002', 0, 6, 0, 1), 
+(@SGGUID+21, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 003', 0, 6, 0, 1), 
+(@SGGUID+22, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 004', 0, 6, 0, 1), 
+(@SGGUID+23, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 005', 0, 6, 0, 1), 
+(@SGGUID+24, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 006', 0, 6, 0, 1), 
+-- Shattered Hand Assasins with multiple spawns after 1st Boss, only 1 spawned
+(@SGGUID+25, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 1, 0, 0), 
 -- Gauntlet of Flame
-(@SGGUID+49, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 4, 0, 3), -- On Aggro gauntlet starts
-(@SGGUID+50, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 8, @SGGUID+4, 10), -- 8 Zealots that getting spawned when Scout reachs the end of his path
-(@SGGUID+51, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 4, 0, 3), -- 4 Zealots before archer blood guard group
-(@SGGUID+52, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard ends gauntlet on normal
-(@SGGUID+53, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard Porung ends gauntlet on Heroic
-(@SGGUID+54, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 001', 0, 5, 0, 7),
-(@SGGUID+55, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 002', 0, 5, 0, 7),
-(@SGGUID+56, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 003', 0, 5, 0, 7),
-(@SGGUID+57, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 004', 0, 5, 0, 7),
+(@SGGUID+26, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 4, 0, 3), -- On Aggro gauntlet starts
+(@SGGUID+27, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 8, @SGGUID+4, 10), -- 8 Zealots that getting spawned when Scout reachs the end of his path
+(@SGGUID+28, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 4, 0, 3), -- 4 Zealots before archer blood guard group
+(@SGGUID+29, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard ends gauntlet on normal
+(@SGGUID+30, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard Porung ends gauntlet on Heroic
+(@SGGUID+31, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 001', 0, 5, 0, 7),
+(@SGGUID+32, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 002', 0, 5, 0, 7),
+(@SGGUID+33, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 003', 0, 5, 0, 7),
+(@SGGUID+34, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 004', 0, 5, 0, 7),
 -- Legionnaire Group 7 
-(@SGGUID+58, 'Shattered Halls - Shattered Hand Legionnaire Group 007', 0, 6, 0, 1),
-(@SGGUID+59, 'Shattered Halls - Sparring Hall Group 001', 0, 3, 0, 0), -- Dummy Group with spawn_group_entry
+(@SGGUID+35, 'Shattered Halls - Shattered Hand Legionnaire Group 007', 0, 6, 0, 1),
+(@SGGUID+36, 'Shattered Halls - Sparring Hall Group 001', 0, 3, 0, 0), -- Dummy Group with spawn_group_entry
 -- Legionnaire Group 8 
-(@SGGUID+60, 'Shattered Halls - Shattered Hand Legionnaire 008', 0, 6, 0, 1),
-(@SGGUID+61, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001', 0, 3, 0, 1),
--- (@SGGUID+62, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 0, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet how when he gets spawned
-(@SGGUID+63, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
-(@SGGUID+64, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 003', 0, 2, 0, 1),
-(@SGGUID+65, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002', 0, 3, 0, 1),
-(@SGGUID+66, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 004', 0, 2, 0, 1),
+(@SGGUID+37, 'Shattered Halls - Shattered Hand Legionnaire 008', 0, 6, 0, 1),
+(@SGGUID+38, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001', 0, 3, 0, 1),
+-- (@SGGUID+39, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 0, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet how when he gets spawned
+(@SGGUID+40, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
+(@SGGUID+41, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 003', 0, 2, 0, 1),
+(@SGGUID+42, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002', 0, 3, 0, 1),
+(@SGGUID+43, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 004', 0, 2, 0, 1),
 -- Way to endboss
-(@SGGUID+67, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 001', 0, 2, 0, 1), 
-(@SGGUID+68, 'Shattered Halls - Shattered Hand Assassin (7)', 0, 6, 0, 0), -- 6 static spawned assasins before endboss
-(@SGGUID+69, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001', 0, 3, 0, 1),
-(@SGGUID+70, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 002', 0, 2, 0, 1);
+(@SGGUID+44, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 001', 0, 2, 0, 1), 
+(@SGGUID+45, 'Shattered Halls - Shattered Hand Assassin (7)', 0, 6, 0, 0), -- 6 static spawned assasins before endboss
+(@SGGUID+46, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001', 0, 3, 0, 1),
+(@SGGUID+47, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 002', 0, 2, 0, 1);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+1, 184940, 0, 0, 0), (@SGGUID+1, 184941, 0, 0, 0), -- Bound Adamantite Chest, Solid Adamantite Chest-- Legionnaire Group 8
 -- Hall of Fathers
-(@SGGUID+28, 16523, 0, 1, 0), (@SGGUID+28, 16593, 0, 1, 0), (@SGGUID+28, 16594, 0, 1, 0), (@SGGUID+28, 17420, 0, 1, 0), (@SGGUID+28, 17694, 0, 1, 0), -- Normal
-(@SGGUID+29, 16593, 0, 1, 0), (@SGGUID+29, 16594, 0, 1, 0), (@SGGUID+29, 17420, 1, 1, 0), (@SGGUID+29, 17694, 0, 1, 0), -- Heroic
-(@SGGUID+30, 16523, 0, 1, 0), (@SGGUID+30, 16593, 0, 1, 0), (@SGGUID+30, 16594, 0, 1, 0), (@SGGUID+30, 17420, 0, 1, 0), (@SGGUID+30, 17694, 0, 1, 0), -- Normal
-(@SGGUID+31, 16593, 0, 1, 0), (@SGGUID+31, 16594, 0, 1, 0), (@SGGUID+31, 17420, 1, 1, 0), (@SGGUID+31, 17694, 0, 1, 0), -- Heroic
-(@SGGUID+32, 16523, 0, 1, 0), (@SGGUID+32, 16593, 0, 1, 0), (@SGGUID+32, 16594, 0, 1, 0), (@SGGUID+32, 17420, 0, 1, 0), (@SGGUID+32, 17694, 0, 1, 0), -- Normal
-(@SGGUID+33, 16593, 0, 1, 0), (@SGGUID+33, 16594, 0, 1, 0), (@SGGUID+33, 17420, 1, 1, 0), (@SGGUID+33, 17694, 0, 1, 0), -- Heroic
-(@SGGUID+34, 16523, 0, 1, 0), (@SGGUID+34, 16593, 0, 1, 0), (@SGGUID+34, 16594, 0, 1, 0), (@SGGUID+34, 17420, 0, 1, 0), (@SGGUID+34, 17694, 0, 1, 0), -- Normal
-(@SGGUID+35, 16593, 0, 1, 0), (@SGGUID+35, 16594, 0, 1, 0), (@SGGUID+35, 17420, 1, 1, 0), (@SGGUID+35, 17694, 0, 1, 0), -- Heroic
-(@SGGUID+58, 16523, 0, 2, 0), (@SGGUID+58, 16593, 0, 1, 0), (@SGGUID+58, 16594, 1, 1, 0), (@SGGUID+58, 16699, 1, 2, 0), (@SGGUID+58, 17420, 0, 2, 0), (@SGGUID+58, 17694, 0, 1, 0),  -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Acolyte, Shattered Hand Reaver, Shattered Hand Heathen, Shattered Hand Darkcaster
-(@SGGUID+59, 16523, 0, 2, 0), (@SGGUID+59, 16593, 0, 1, 0), (@SGGUID+59, 16699, 0, 2, 0), (@SGGUID+59, 17420, 0, 2, 0), -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Reaver, Shattered Hand Heathen
-(@SGGUID+60, 16523, 0, 2, 0), (@SGGUID+60, 16593, 0, 1, 0), (@SGGUID+60, 16594, 1, 1, 0), (@SGGUID+60, 16699, 1, 2, 0), (@SGGUID+60, 17420, 0, 2, 0), (@SGGUID+60, 17694, 0, 1, 0),  -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Acolyte, Shattered Hand Reaver, Shattered Hand Heathen, Shattered Hand Darkcaster
-(@SGGUID+63, 16523, 0, 0, 0), (@SGGUID+63, 16699, 0, 0, 0), (@SGGUID+63, 17420, 0, 0, 0); -- Shattered Hand Savage, Shattered Hand Reaver, Shattered Hand Heathen
+(@SGGUID+5, 16523, 0, 1, 0), (@SGGUID+5, 16593, 0, 1, 0), (@SGGUID+5, 16594, 0, 1, 0), (@SGGUID+5, 17420, 0, 1, 0), (@SGGUID+5, 17694, 0, 1, 0), -- Normal
+(@SGGUID+6, 16593, 0, 1, 0), (@SGGUID+6, 16594, 0, 1, 0), (@SGGUID+6, 17420, 1, 1, 0), (@SGGUID+6, 17694, 0, 1, 0), -- Heroic
+(@SGGUID+7, 16523, 0, 1, 0), (@SGGUID+7, 16593, 0, 1, 0), (@SGGUID+7, 16594, 0, 1, 0), (@SGGUID+7, 17420, 0, 1, 0), (@SGGUID+7, 17694, 0, 1, 0), -- Normal
+(@SGGUID+8, 16593, 0, 1, 0), (@SGGUID+8, 16594, 0, 1, 0), (@SGGUID+8, 17420, 1, 1, 0), (@SGGUID+8, 17694, 0, 1, 0), -- Heroic
+(@SGGUID+9, 16523, 0, 1, 0), (@SGGUID+9, 16593, 0, 1, 0), (@SGGUID+9, 16594, 0, 1, 0), (@SGGUID+9, 17420, 0, 1, 0), (@SGGUID+9, 17694, 0, 1, 0), -- Normal
+(@SGGUID+10, 16593, 0, 1, 0), (@SGGUID+10, 16594, 0, 1, 0), (@SGGUID+10, 17420, 1, 1, 0), (@SGGUID+10, 17694, 0, 1, 0), -- Heroic
+(@SGGUID+11, 16523, 0, 1, 0), (@SGGUID+11, 16593, 0, 1, 0), (@SGGUID+11, 16594, 0, 1, 0), (@SGGUID+11, 17420, 0, 1, 0), (@SGGUID+11, 17694, 0, 1, 0), -- Normal
+(@SGGUID+12, 16593, 0, 1, 0), (@SGGUID+12, 16594, 0, 1, 0), (@SGGUID+12, 17420, 1, 1, 0), (@SGGUID+12, 17694, 0, 1, 0), -- Heroic
+(@SGGUID+35, 16523, 0, 2, 0), (@SGGUID+35, 16593, 0, 1, 0), (@SGGUID+35, 16594, 1, 1, 0), (@SGGUID+35, 16699, 1, 2, 0), (@SGGUID+35, 17420, 0, 2, 0), (@SGGUID+35, 17694, 0, 1, 0),  -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Acolyte, Shattered Hand Reaver, Shattered Hand Heathen, Shattered Hand Darkcaster
+(@SGGUID+36, 16523, 0, 2, 0), (@SGGUID+36, 16593, 0, 1, 0), (@SGGUID+36, 16699, 0, 2, 0), (@SGGUID+36, 17420, 0, 2, 0), -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Reaver, Shattered Hand Heathen
+(@SGGUID+37, 16523, 0, 2, 0), (@SGGUID+37, 16593, 0, 1, 0), (@SGGUID+37, 16594, 1, 1, 0), (@SGGUID+37, 16699, 1, 2, 0), (@SGGUID+37, 17420, 0, 2, 0), (@SGGUID+37, 17694, 0, 1, 0),  -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Acolyte, Shattered Hand Reaver, Shattered Hand Heathen, Shattered Hand Darkcaster
+(@SGGUID+40, 16523, 0, 0, 0), (@SGGUID+40, 16699, 0, 0, 0), (@SGGUID+40, 17420, 0, 0, 0); -- Shattered Hand Savage, Shattered Hand Reaver, Shattered Hand Heathen
 
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @OGUID+7, -1), -- spawn_group_entry
 
 -- Hall of Fathers
-(@SGGUID+27, @CGUID+161, -1), -- Shattered Hand Sentry
-(@SGGUID+27, @CGUID+162, -1), -- Shattered Hand Sentry
+(@SGGUID+4, @CGUID+161, -1), -- Shattered Hand Sentry
+(@SGGUID+4, @CGUID+162, -1), -- Shattered Hand Sentry
 
 -- Group 1 normal
-(@SGGUID+28, @CGUID+164, -1), 
-(@SGGUID+28, @CGUID+165, -1), 
+(@SGGUID+5, @CGUID+164, -1), 
+(@SGGUID+5, @CGUID+165, -1), 
 -- Group 1 heroic
-(@SGGUID+29, @CGUID+166, -1),
-(@SGGUID+29, @CGUID+167, -1), 
+(@SGGUID+6, @CGUID+166, -1),
+(@SGGUID+6, @CGUID+167, -1), 
 -- Group 2 normal
-(@SGGUID+30, @CGUID+168, -1),
-(@SGGUID+30, @CGUID+169, -1),
+(@SGGUID+7, @CGUID+168, -1),
+(@SGGUID+7, @CGUID+169, -1),
 -- Group 1 heroic
-(@SGGUID+31, @CGUID+170, -1),
-(@SGGUID+31, @CGUID+171, -1),
+(@SGGUID+8, @CGUID+170, -1),
+(@SGGUID+8, @CGUID+171, -1),
 -- Group 3 normal
-(@SGGUID+32, @CGUID+172, -1),
-(@SGGUID+32, @CGUID+173, -1),
+(@SGGUID+9, @CGUID+172, -1),
+(@SGGUID+9, @CGUID+173, -1),
 -- Group 3 heroic
-(@SGGUID+33, @CGUID+173, -1),
-(@SGGUID+33, @CGUID+175, -1),
+(@SGGUID+10, @CGUID+173, -1),
+(@SGGUID+10, @CGUID+175, -1),
 -- Group 4 normal
-(@SGGUID+34, @CGUID+176, -1),
-(@SGGUID+34, @CGUID+177, -1),
+(@SGGUID+11, @CGUID+176, -1),
+(@SGGUID+11, @CGUID+177, -1),
 -- Group 4 heroic
-(@SGGUID+35, @CGUID+178, -1),
-(@SGGUID+35, @CGUID+179, -1),
+(@SGGUID+12, @CGUID+178, -1),
+(@SGGUID+12, @CGUID+179, -1),
 
-(@SGGUID+36, @CGUID+180, -1), -- Shattered Hand Sentry
-(@SGGUID+36, @CGUID+181, -1), -- Shattered Hand Sentry
+(@SGGUID+13, @CGUID+180, -1), -- Shattered Hand Sentry
+(@SGGUID+13, @CGUID+181, -1), -- Shattered Hand Sentry
 
 -- Legionnaire Group 003
-(@SGGUID+37, @CGUID+182, 0), -- Shattered Hand Legionnaire
-(@SGGUID+37, @CGUID+183, 1), -- 
-(@SGGUID+37, @CGUID+184, 2), -- 
-(@SGGUID+37, @CGUID+185, 3), -- 
-(@SGGUID+37, @CGUID+186, 4), -- 
+(@SGGUID+14, @CGUID+182, 0), -- Shattered Hand Legionnaire
+(@SGGUID+14, @CGUID+183, 1), -- 
+(@SGGUID+14, @CGUID+184, 2), -- 
+(@SGGUID+14, @CGUID+185, 3), -- 
+(@SGGUID+14, @CGUID+186, 4), -- 
 
 -- Legionnaire Group 004
-(@SGGUID+38, @CGUID+187, 0), -- Shattered Hand Legionnaire
-(@SGGUID+38, @CGUID+188, 1), -- 
-(@SGGUID+38, @CGUID+189, 2), -- 
-(@SGGUID+38, @CGUID+190, 3), -- 
-(@SGGUID+38, @CGUID+191, 4), -- 
+(@SGGUID+15, @CGUID+187, 0), -- Shattered Hand Legionnaire
+(@SGGUID+15, @CGUID+188, 1), -- 
+(@SGGUID+15, @CGUID+189, 2), -- 
+(@SGGUID+15, @CGUID+190, 3), -- 
+(@SGGUID+15, @CGUID+191, 4), -- 
 
 -- Legionnaire Group 005
-(@SGGUID+39, @CGUID+192, 0), -- Shattered Hand Legionnaire
-(@SGGUID+39, @CGUID+193, 1), -- 
-(@SGGUID+39, @CGUID+194, 2), -- 
-(@SGGUID+39, @CGUID+195, 3), -- 
-(@SGGUID+39, @CGUID+196, 4), -- 
-(@SGGUID+39, @CGUID+197, 5), -- 
+(@SGGUID+16, @CGUID+192, 0), -- Shattered Hand Legionnaire
+(@SGGUID+16, @CGUID+193, 1), -- 
+(@SGGUID+16, @CGUID+194, 2), -- 
+(@SGGUID+16, @CGUID+195, 3), -- 
+(@SGGUID+16, @CGUID+196, 4), -- 
+(@SGGUID+16, @CGUID+197, 5), -- 
 
 -- Legionnaire Group 006
-(@SGGUID+40, @CGUID+198, 0), -- Shattered Hand Legionnaire
-(@SGGUID+40, @CGUID+199, 1), -- 
-(@SGGUID+40, @CGUID+200, 2), -- 
-(@SGGUID+40, @CGUID+201, 3), -- 
-(@SGGUID+40, @CGUID+202, 4), -- 
-(@SGGUID+40, @CGUID+203, 5), -- 
-(@SGGUID+40, @CGUID+204, 6), -- 
+(@SGGUID+17, @CGUID+198, 0), -- Shattered Hand Legionnaire
+(@SGGUID+17, @CGUID+199, 1), -- 
+(@SGGUID+17, @CGUID+200, 2), -- 
+(@SGGUID+17, @CGUID+201, 3), -- 
+(@SGGUID+17, @CGUID+202, 4), -- 
+(@SGGUID+17, @CGUID+203, 5), -- 
+(@SGGUID+17, @CGUID+204, 6), -- 
 
-(@SGGUID+41, @CGUID+209, 0), -- Shattered Hand Houndmaster
-(@SGGUID+41, @CGUID+210, 1), -- Rabid Warhound
-(@SGGUID+41, @CGUID+211, 2), -- Rabid Warhound
+(@SGGUID+18, @CGUID+209, 0), -- Shattered Hand Houndmaster
+(@SGGUID+18, @CGUID+210, 1), -- Rabid Warhound
+(@SGGUID+18, @CGUID+211, 2), -- Rabid Warhound
 
-(@SGGUID+42, @CGUID+216, 0), -- Creeping Ooze
-(@SGGUID+42, @CGUID+217, 1), -- Creeping Oozeling
-(@SGGUID+42, @CGUID+218, 2), -- Creeping Oozeling
-(@SGGUID+42, @CGUID+219, 3), -- Creeping Oozeling
-(@SGGUID+42, @CGUID+220, 4), -- Creeping Oozeling
-(@SGGUID+42, @CGUID+221, 5), -- Creeping Oozeling
+(@SGGUID+19, @CGUID+216, 0), -- Creeping Ooze
+(@SGGUID+19, @CGUID+217, 1), -- Creeping Oozeling
+(@SGGUID+19, @CGUID+218, 2), -- Creeping Oozeling
+(@SGGUID+19, @CGUID+219, 3), -- Creeping Oozeling
+(@SGGUID+19, @CGUID+220, 4), -- Creeping Oozeling
+(@SGGUID+19, @CGUID+221, 5), -- Creeping Oozeling
 
-(@SGGUID+43, @CGUID+222, 0), -- Creeping Ooze
-(@SGGUID+43, @CGUID+223, 1), -- Creeping Oozeling
-(@SGGUID+43, @CGUID+224, 2), -- Creeping Oozeling
-(@SGGUID+43, @CGUID+225, 3), -- Creeping Oozeling
-(@SGGUID+43, @CGUID+226, 4), -- Creeping Oozeling
-(@SGGUID+43, @CGUID+227, 5), -- Creeping Oozeling
+(@SGGUID+20, @CGUID+222, 0), -- Creeping Ooze
+(@SGGUID+20, @CGUID+223, 1), -- Creeping Oozeling
+(@SGGUID+20, @CGUID+224, 2), -- Creeping Oozeling
+(@SGGUID+20, @CGUID+225, 3), -- Creeping Oozeling
+(@SGGUID+20, @CGUID+226, 4), -- Creeping Oozeling
+(@SGGUID+20, @CGUID+227, 5), -- Creeping Oozeling
 
-(@SGGUID+44, @CGUID+228, 0), -- Creeping Ooze
-(@SGGUID+44, @CGUID+229, 1), -- Creeping Oozeling
-(@SGGUID+44, @CGUID+230, 2), -- Creeping Oozeling
-(@SGGUID+44, @CGUID+231, 3), -- Creeping Oozeling
-(@SGGUID+44, @CGUID+232, 4), -- Creeping Oozeling
-(@SGGUID+44, @CGUID+233, 5), -- Creeping Oozeling
+(@SGGUID+21, @CGUID+228, 0), -- Creeping Ooze
+(@SGGUID+21, @CGUID+229, 1), -- Creeping Oozeling
+(@SGGUID+21, @CGUID+230, 2), -- Creeping Oozeling
+(@SGGUID+21, @CGUID+231, 3), -- Creeping Oozeling
+(@SGGUID+21, @CGUID+232, 4), -- Creeping Oozeling
+(@SGGUID+21, @CGUID+233, 5), -- Creeping Oozeling
 
-(@SGGUID+45, @CGUID+234, 0), -- Creeping Ooze
-(@SGGUID+45, @CGUID+235, 1), -- Creeping Oozeling
-(@SGGUID+45, @CGUID+236, 2), -- Creeping Oozeling
-(@SGGUID+45, @CGUID+237, 3), -- Creeping Oozeling
-(@SGGUID+45, @CGUID+238, 4), -- Creeping Oozeling
-(@SGGUID+45, @CGUID+239, 5), -- Creeping Oozeling
+(@SGGUID+22, @CGUID+234, 0), -- Creeping Ooze
+(@SGGUID+22, @CGUID+235, 1), -- Creeping Oozeling
+(@SGGUID+22, @CGUID+236, 2), -- Creeping Oozeling
+(@SGGUID+22, @CGUID+237, 3), -- Creeping Oozeling
+(@SGGUID+22, @CGUID+238, 4), -- Creeping Oozeling
+(@SGGUID+22, @CGUID+239, 5), -- Creeping Oozeling
 
-(@SGGUID+46, @CGUID+240, 0), -- Creeping Ooze
-(@SGGUID+46, @CGUID+241, 1), -- Creeping Oozeling
-(@SGGUID+46, @CGUID+242, 2), -- Creeping Oozeling
-(@SGGUID+46, @CGUID+243, 3), -- Creeping Oozeling
-(@SGGUID+46, @CGUID+244, 4), -- Creeping Oozeling
-(@SGGUID+46, @CGUID+245, 5), -- Creeping Oozeling
+(@SGGUID+23, @CGUID+240, 0), -- Creeping Ooze
+(@SGGUID+23, @CGUID+241, 1), -- Creeping Oozeling
+(@SGGUID+23, @CGUID+242, 2), -- Creeping Oozeling
+(@SGGUID+23, @CGUID+243, 3), -- Creeping Oozeling
+(@SGGUID+23, @CGUID+244, 4), -- Creeping Oozeling
+(@SGGUID+23, @CGUID+245, 5), -- Creeping Oozeling
 
-(@SGGUID+47, @CGUID+246, 0), -- Creeping Ooze
-(@SGGUID+47, @CGUID+247, 1), -- Creeping Oozeling
-(@SGGUID+47, @CGUID+248, 2), -- Creeping Oozeling
-(@SGGUID+47, @CGUID+249, 3), -- Creeping Oozeling
-(@SGGUID+47, @CGUID+250, 4), -- Creeping Oozeling
-(@SGGUID+47, @CGUID+251, 5), -- Creeping Oozeling
+(@SGGUID+24, @CGUID+246, 0), -- Creeping Ooze
+(@SGGUID+24, @CGUID+247, 1), -- Creeping Oozeling
+(@SGGUID+24, @CGUID+248, 2), -- Creeping Oozeling
+(@SGGUID+24, @CGUID+249, 3), -- Creeping Oozeling
+(@SGGUID+24, @CGUID+250, 4), -- Creeping Oozeling
+(@SGGUID+24, @CGUID+251, 5), -- Creeping Oozeling
 
-(@SGGUID+48, @CGUID+322, -1), -- Shattered Hand Assasins 
-(@SGGUID+48, @CGUID+325, -1), -- Shattered Hand Assasins 
-(@SGGUID+48, @CGUID+331, -1), -- Shattered Hand Assasins 
+(@SGGUID+25, @CGUID+322, -1), -- Shattered Hand Assasins 
+(@SGGUID+25, @CGUID+325, -1), -- Shattered Hand Assasins 
+(@SGGUID+25, @CGUID+331, -1), -- Shattered Hand Assasins 
 
 -- Gauntlet of Flame
-(@SGGUID+49, @CGUID+263, 0), -- Shattered Hand Scout
-(@SGGUID+49, @CGUID+260, 1), -- Shattered Hand Zealot 
-(@SGGUID+49, @CGUID+261, 2), -- Shattered Hand Zealot 
-(@SGGUID+49, @CGUID+262, 3), -- Shattered Hand Zealot 
+(@SGGUID+26, @CGUID+263, 0), -- Shattered Hand Scout
+(@SGGUID+26, @CGUID+260, 1), -- Shattered Hand Zealot 
+(@SGGUID+26, @CGUID+261, 2), -- Shattered Hand Zealot 
+(@SGGUID+26, @CGUID+262, 3), -- Shattered Hand Zealot 
 
-(@SGGUID+50, @CGUID+264, -1), -- Shattered Hand Zealot 
-(@SGGUID+50, @CGUID+265, -1), -- Shattered Hand Zealot 
-(@SGGUID+50, @CGUID+266, -1), -- Shattered Hand Zealot 
-(@SGGUID+50, @CGUID+267, -1), -- Shattered Hand Zealot 
-(@SGGUID+50, @CGUID+268, -1), -- Shattered Hand Zealot 
-(@SGGUID+50, @CGUID+269, -1), -- Shattered Hand Zealot 
-(@SGGUID+50, @CGUID+270, -1), -- Shattered Hand Zealot 
-(@SGGUID+50, @CGUID+271, -1), -- Shattered Hand Zealot 
+(@SGGUID+27, @CGUID+264, -1), -- Shattered Hand Zealot 
+(@SGGUID+27, @CGUID+265, -1), -- Shattered Hand Zealot 
+(@SGGUID+27, @CGUID+266, -1), -- Shattered Hand Zealot 
+(@SGGUID+27, @CGUID+267, -1), -- Shattered Hand Zealot 
+(@SGGUID+27, @CGUID+268, -1), -- Shattered Hand Zealot 
+(@SGGUID+27, @CGUID+269, -1), -- Shattered Hand Zealot 
+(@SGGUID+27, @CGUID+270, -1), -- Shattered Hand Zealot 
+(@SGGUID+27, @CGUID+271, -1), -- Shattered Hand Zealot 
 
-(@SGGUID+51, @CGUID+272, -1), -- Shattered Hand Zealot 
-(@SGGUID+51, @CGUID+273, -1), -- Shattered Hand Zealot 
-(@SGGUID+51, @CGUID+274, -1), -- Shattered Hand Zealot 
-(@SGGUID+51, @CGUID+275, -1), -- Shattered Hand Zealot 
+(@SGGUID+28, @CGUID+272, -1), -- Shattered Hand Zealot 
+(@SGGUID+28, @CGUID+273, -1), -- Shattered Hand Zealot 
+(@SGGUID+28, @CGUID+274, -1), -- Shattered Hand Zealot 
+(@SGGUID+28, @CGUID+275, -1), -- Shattered Hand Zealot 
 
-(@SGGUID+52, @CGUID+278, -1), -- Shattered Hand Blood Guard
-(@SGGUID+52, @CGUID+276, -1), -- Shattered Hand Archer
-(@SGGUID+52, @CGUID+277, -1), -- Shattered Hand Archer
+(@SGGUID+29, @CGUID+278, -1), -- Shattered Hand Blood Guard
+(@SGGUID+29, @CGUID+276, -1), -- Shattered Hand Archer
+(@SGGUID+29, @CGUID+277, -1), -- Shattered Hand Archer
 
-(@SGGUID+53, @CGUID+279, -1), -- Blood Guard Porung
-(@SGGUID+53, @CGUID+276, -1), -- Shattered Hand Archer
-(@SGGUID+53, @CGUID+277, -1), -- Shattered Hand Archer
+(@SGGUID+30, @CGUID+279, -1), -- Blood Guard Porung
+(@SGGUID+30, @CGUID+276, -1), -- Shattered Hand Archer
+(@SGGUID+30, @CGUID+277, -1), -- Shattered Hand Archer
 
-(@SGGUID+54, @CGUID+280, 0), -- Shattered Hand Centurion
-(@SGGUID+54, @CGUID+281, 0), -- Shattered Hand Gladiator
-(@SGGUID+54, @CGUID+282, 0), -- Shattered Hand Gladiator
-(@SGGUID+54, @CGUID+283, 0), -- Shattered Hand Gladiator
-(@SGGUID+54, @CGUID+284, 0), -- Shattered Hand Gladiator
+(@SGGUID+31, @CGUID+280, 0), -- Shattered Hand Centurion
+(@SGGUID+31, @CGUID+281, 0), -- Shattered Hand Gladiator
+(@SGGUID+31, @CGUID+282, 0), -- Shattered Hand Gladiator
+(@SGGUID+31, @CGUID+283, 0), -- Shattered Hand Gladiator
+(@SGGUID+31, @CGUID+284, 0), -- Shattered Hand Gladiator
 
-(@SGGUID+55, @CGUID+285, 0), -- Shattered Hand Centurion
-(@SGGUID+55, @CGUID+286, 0), -- Shattered Hand Gladiator
-(@SGGUID+55, @CGUID+287, 0), -- Shattered Hand Gladiator
-(@SGGUID+55, @CGUID+288, 0), -- Shattered Hand Gladiator
-(@SGGUID+55, @CGUID+289, 0), -- Shattered Hand Gladiator
+(@SGGUID+32, @CGUID+285, 0), -- Shattered Hand Centurion
+(@SGGUID+32, @CGUID+286, 0), -- Shattered Hand Gladiator
+(@SGGUID+32, @CGUID+287, 0), -- Shattered Hand Gladiator
+(@SGGUID+32, @CGUID+288, 0), -- Shattered Hand Gladiator
+(@SGGUID+32, @CGUID+289, 0), -- Shattered Hand Gladiator
 
-(@SGGUID+56, @CGUID+290, 0), -- Shattered Hand Centurion
-(@SGGUID+56, @CGUID+291, 0), -- Shattered Hand Gladiator
-(@SGGUID+56, @CGUID+292, 0), -- Shattered Hand Gladiator
-(@SGGUID+56, @CGUID+293, 0), -- Shattered Hand Gladiator
-(@SGGUID+56, @CGUID+294, 0), -- Shattered Hand Gladiator
+(@SGGUID+33, @CGUID+290, 0), -- Shattered Hand Centurion
+(@SGGUID+33, @CGUID+291, 0), -- Shattered Hand Gladiator
+(@SGGUID+33, @CGUID+292, 0), -- Shattered Hand Gladiator
+(@SGGUID+33, @CGUID+293, 0), -- Shattered Hand Gladiator
+(@SGGUID+33, @CGUID+294, 0), -- Shattered Hand Gladiator
 
 
-(@SGGUID+57, @CGUID+295, 0), -- Shattered Hand Centurion
-(@SGGUID+57, @CGUID+296, 0), -- Shattered Hand Gladiator
-(@SGGUID+57, @CGUID+297, 0), -- Shattered Hand Gladiator
-(@SGGUID+57, @CGUID+298, 0), -- Shattered Hand Gladiator
-(@SGGUID+57, @CGUID+299, 0), -- Shattered Hand Gladiator
+(@SGGUID+34, @CGUID+295, 0), -- Shattered Hand Centurion
+(@SGGUID+34, @CGUID+296, 0), -- Shattered Hand Gladiator
+(@SGGUID+34, @CGUID+297, 0), -- Shattered Hand Gladiator
+(@SGGUID+34, @CGUID+298, 0), -- Shattered Hand Gladiator
+(@SGGUID+34, @CGUID+299, 0), -- Shattered Hand Gladiator
 
-(@SGGUID+58, @CGUID+300, 0), -- Shattered Hand Legionnaire
-(@SGGUID+58, @CGUID+301, 1), -- spawn_group_entry
-(@SGGUID+58, @CGUID+302, 2), -- spawn_group_entry
-(@SGGUID+58, @CGUID+303, 3), -- spawn_group_entry
-(@SGGUID+58, @CGUID+304, 4), -- spawn_group_entry
-(@SGGUID+58, @CGUID+305, 5), -- spawn_group_entry
+(@SGGUID+35, @CGUID+300, 0), -- Shattered Hand Legionnaire
+(@SGGUID+35, @CGUID+301, 1), -- spawn_group_entry
+(@SGGUID+35, @CGUID+302, 2), -- spawn_group_entry
+(@SGGUID+35, @CGUID+303, 3), -- spawn_group_entry
+(@SGGUID+35, @CGUID+304, 4), -- spawn_group_entry
+(@SGGUID+35, @CGUID+305, 5), -- spawn_group_entry
 
-(@SGGUID+59, @CGUID+306, -1), -- spawn_group_entry
-(@SGGUID+59, @CGUID+307, -1), -- spawn_group_entry
-(@SGGUID+59, @CGUID+308, -1), -- spawn_group_entry
+(@SGGUID+36, @CGUID+306, -1), -- spawn_group_entry
+(@SGGUID+36, @CGUID+307, -1), -- spawn_group_entry
+(@SGGUID+36, @CGUID+308, -1), -- spawn_group_entry
 
-(@SGGUID+60, @CGUID+309, 0), -- Shattered Hand Legionnaire
-(@SGGUID+60, @CGUID+310, 1), -- spawn_group_entry
-(@SGGUID+60, @CGUID+311, 2), -- spawn_group_entry
-(@SGGUID+60, @CGUID+312, 3), -- spawn_group_entry
-(@SGGUID+60, @CGUID+313, 4), -- spawn_group_entry
-(@SGGUID+60, @CGUID+314, 5), -- spawn_group_entry
+(@SGGUID+37, @CGUID+309, 0), -- Shattered Hand Legionnaire
+(@SGGUID+37, @CGUID+310, 1), -- spawn_group_entry
+(@SGGUID+37, @CGUID+311, 2), -- spawn_group_entry
+(@SGGUID+37, @CGUID+312, 3), -- spawn_group_entry
+(@SGGUID+37, @CGUID+313, 4), -- spawn_group_entry
+(@SGGUID+37, @CGUID+314, 5), -- spawn_group_entry
 
-(@SGGUID+61, @CGUID+315, 0), -- Shattered Hand Houndmaster
-(@SGGUID+61, @CGUID+316, 1), -- Rabid Warhound
-(@SGGUID+61, @CGUID+317, 2), -- Rabid Warhound
+(@SGGUID+38, @CGUID+315, 0), -- Shattered Hand Houndmaster
+(@SGGUID+38, @CGUID+316, 1), -- Rabid Warhound
+(@SGGUID+38, @CGUID+317, 2), -- Rabid Warhound
 
--- (@SGGUID+62, @CGUID+321, -1), -- Shattered Hand Assasins 
+-- (@SGGUID+39, @CGUID+321, -1), -- Shattered Hand Assasins 
 
-(@SGGUID+63, @CGUID+318, -1), -- spawn_group_entry
-(@SGGUID+63, @CGUID+319, -1), -- Shattered Hand Savage
-(@SGGUID+63, @CGUID+320, -1), -- Shattered Hand Savage
+(@SGGUID+40, @CGUID+318, -1), -- spawn_group_entry
+(@SGGUID+40, @CGUID+319, -1), -- Shattered Hand Savage
+(@SGGUID+40, @CGUID+320, -1), -- Shattered Hand Savage
 
-(@SGGUID+64, @CGUID+323, -1), -- Shattered Hand Champion
-(@SGGUID+64, @CGUID+324, -1), -- Shattered Hand Champion
-(@SGGUID+65, @CGUID+326, 0), -- Shattered Hand Houndmaster
-(@SGGUID+65, @CGUID+327, 1), -- Rabid Warhound
-(@SGGUID+65, @CGUID+328, 2), -- Rabid Warhound
-(@SGGUID+66, @CGUID+329, -1), -- Shattered Hand Champion
-(@SGGUID+66, @CGUID+330, -1), -- Shattered Hand Champion
+(@SGGUID+41, @CGUID+323, -1), -- Shattered Hand Champion
+(@SGGUID+41, @CGUID+324, -1), -- Shattered Hand Champion
+(@SGGUID+42, @CGUID+326, 0), -- Shattered Hand Houndmaster
+(@SGGUID+42, @CGUID+327, 1), -- Rabid Warhound
+(@SGGUID+42, @CGUID+328, 2), -- Rabid Warhound
+(@SGGUID+43, @CGUID+329, -1), -- Shattered Hand Champion
+(@SGGUID+43, @CGUID+330, -1), -- Shattered Hand Champion
 -- way to endboss
-(@SGGUID+67, @CGUID+332, -1), -- Shattered Hand Champion
-(@SGGUID+67, @CGUID+333, -1), -- Shattered Hand Champion
+(@SGGUID+44, @CGUID+332, -1), -- Shattered Hand Champion
+(@SGGUID+44, @CGUID+333, -1), -- Shattered Hand Champion
 -- assasins way before endboss
-(@SGGUID+68, @CGUID+334, -1), -- Shattered Hand Assasins
-(@SGGUID+68, @CGUID+335, -1), -- Shattered Hand Assasins
-(@SGGUID+68, @CGUID+336, -1), -- Shattered Hand Assasins
-(@SGGUID+68, @CGUID+337, -1), -- Shattered Hand Assasins
-(@SGGUID+68, @CGUID+338, -1), -- Shattered Hand Assasins
-(@SGGUID+68, @CGUID+339, -1), -- Shattered Hand Assasins
+(@SGGUID+45, @CGUID+334, -1), -- Shattered Hand Assasins
+(@SGGUID+45, @CGUID+335, -1), -- Shattered Hand Assasins
+(@SGGUID+45, @CGUID+336, -1), -- Shattered Hand Assasins
+(@SGGUID+45, @CGUID+337, -1), -- Shattered Hand Assasins
+(@SGGUID+45, @CGUID+338, -1), -- Shattered Hand Assasins
+(@SGGUID+45, @CGUID+339, -1), -- Shattered Hand Assasins
 -- Patrol before endboss
-(@SGGUID+69, @CGUID+340, 0), -- Shattered Hand Houndmaster
-(@SGGUID+69, @CGUID+341, 1), -- Rabid Warhound
-(@SGGUID+69, @CGUID+342, 2), -- Rabid Warhound
+(@SGGUID+46, @CGUID+340, 0), -- Shattered Hand Houndmaster
+(@SGGUID+46, @CGUID+341, 1), -- Rabid Warhound
+(@SGGUID+46, @CGUID+342, 2), -- Rabid Warhound
 -- Last group before endboss
-(@SGGUID+70, @CGUID+343, -1), -- Shattered Hand Champion
-(@SGGUID+70, @CGUID+344, -1); -- Shattered Hand Champion
+(@SGGUID+47, @CGUID+343, -1), -- Shattered Hand Champion
+(@SGGUID+47, @CGUID+344, -1); -- Shattered Hand Champion
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
-(@SGGUID+42, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 001'),
-(@SGGUID+43, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 002'),
-(@SGGUID+44, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 003'),
-(@SGGUID+45, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 004'),
-(@SGGUID+46, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 005'),
-(@SGGUID+47, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 006'),
-(@SGGUID+61, 4, 3, 0, @SGGUID+61, 2, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002'),
-(@SGGUID+65, 4, 3, 0, @SGGUID+65, 2, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002'),
-(@SGGUID+69, 4, 3, 0, @SGGUID+69, 2, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001');
+(@SGGUID+19, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 001'),
+(@SGGUID+20, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 002'),
+(@SGGUID+21, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 003'),
+(@SGGUID+22, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 004'),
+(@SGGUID+23, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 005'),
+(@SGGUID+24, 6, 3, 0, 0, 1, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 006'),
+(@SGGUID+38, 4, 3, 0, @SGGUID+38, 2, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002'),
+(@SGGUID+42, 4, 3, 0, @SGGUID+42, 2, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002'),
+(@SGGUID+46, 4, 3, 0, @SGGUID+46, 2, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001');
 
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
-(@SGGUID+61, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001'),
-(@SGGUID+65, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002'),
-(@SGGUID+69, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001');
+(@SGGUID+38, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001'),
+(@SGGUID+42, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002'),
+(@SGGUID+46, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
-(@SGGUID+61,1,506.59488,163.44115,1.9319266,100,0,0),
-(@SGGUID+61,2,501.43848,152.39388,1.929595,100,0,0),
-(@SGGUID+61,3,508.708,141.22534,1.9262449,100,0,0),
-(@SGGUID+61,4,522.292,141.31062,1.9339751,100,0,0),
-(@SGGUID+61,5,532.2282,148.97649,1.9294553,100,0,0),
-(@SGGUID+61,6,525.00385,170.1712,1.9321325,100,0,0),
-(@SGGUID+61,7,519.4442,175.25598,1.9428399,100,0,0),
-(@SGGUID+61,8,519.6646,196.366,1.9364898,100,0,0),
-(@SGGUID+61,9,520.9925,208.3555,1.863179,100,0,0),
-(@SGGUID+61,10,513.1584,221.61227,1.9342216,100,0,0),
-(@SGGUID+61,11,521.30457,237.0814,1.9299809,100,0,0),
-(@SGGUID+61,12,517.14276,249.81818,1.9339325,100,0,0),
-(@SGGUID+61,13,506.72614,240.23392,1.93266,100,0,0),
-(@SGGUID+61,14,510.5138,229.18658,1.9293674,100,0,0),
-(@SGGUID+61,15,519.78186,208.59735,1.8669927,100,0,0),
-(@SGGUID+61,16,518.95435,196.91217,1.9373496,100,0,0),
-(@SGGUID+61,17,518.4774,175.9383,1.9424627,100,0,0),
-(@SGGUID+65,1,437.0384,61.912605,1.9237044,100,0,0),
-(@SGGUID+65,2,430.70596,58.27038,2.0049384,100,0,0),
-(@SGGUID+65,3,436.75922,53.82539,1.925432,100,0,0),
-(@SGGUID+65,4,450.10388,57.169678,1.9267677,100,0,0),
-(@SGGUID+65,5,459.8768,57.486713,1.9384289,100,0,0),
-(@SGGUID+65,6,484.6614,57.491474,1.9347191,100,0,0),
-(@SGGUID+65,7,499.84537,57.432102,1.9408772,100,0,0),
-(@SGGUID+65,8,512.16394,59.819527,1.9372166,100,0,0),
-(@SGGUID+65,9,518.48566,74.102104,1.9048867,100,0,0),
-(@SGGUID+65,10,518.7643,84.54578,1.933246,100,0,0),
-(@SGGUID+65,11,522.1816,93.50193,1.9172946,100,0,0),
-(@SGGUID+65,12,522.32776,103.9952,1.9267256,100,0,0),
-(@SGGUID+65,13,518.59015,109.2831,1.9350262,100,0,0),
-(@SGGUID+65,14,514.31537,105.71796,1.929482,100,0,0),
-(@SGGUID+65,15,518.8863,86.14224,1.9351246,100,0,0),
-(@SGGUID+65,16,517.80896,74.34265,1.9050009,100,0,0),
-(@SGGUID+65,17,511.79678,60.39599,1.9369621,100,0,0),
-(@SGGUID+65,18,500.0572,58.475758,1.9402512,100,0,0),
-(@SGGUID+65,19,485.16956,58.154434,1.9346583,100,0,0),
-(@SGGUID+65,20,459.37115,58.70152,1.9383427,100,0,0),
-(@SGGUID+65,21,450.82022,58.783375,1.9266548,100,0,0),
-(@SGGUID+69,1,373.44144,-51.05542,1.9361445,100,0,0),
-(@SGGUID+69,2,371.50775,-70.71428,1.9203951,100,0,0),
-(@SGGUID+69,3,359.4892,-82.532364,1.9185716,100,0,0),
-(@SGGUID+69,4,343.14014,-84.82301,1.9350435,100,0,0),
-(@SGGUID+69,5,310.18472,-82.78763,1.9368917,100,0,0),
-(@SGGUID+69,6,298.0218,-79.64861,1.9367486,100,0,0),
-(@SGGUID+69,7,287.82153,-84.24349,1.9618785,100,0,0),
-(@SGGUID+69,8,291.21362,-89.2625,1.9129633,100,0,0),
-(@SGGUID+69,9,306.8405,-87.17954,1.9372501,100,0,0),
-(@SGGUID+69,10,343.15958,-86.27303,1.9356986,100,0,0),
-(@SGGUID+69,11,360.74103,-83.51457,1.9183288,100,0,0),
-(@SGGUID+69,12,373.4364,-71.93072,1.920069,100,0,0),
-(@SGGUID+69,13,375.80185,-50.9922,1.9360272,100,0,0),
-(@SGGUID+69,14,378.60367,-31.814674,1.9073824,100,0,0),
-(@SGGUID+69,15,374.94492,-20.095032,1.9111354,100,0,0),
-(@SGGUID+69,16,369.20135,-20.56937,1.9118699,100,0,0),
-(@SGGUID+69,17,369.4805,-35.282803,1.9122882,100,0,0);
+(@SGGUID+38,1,506.59488,163.44115,1.9319266,100,0,0),
+(@SGGUID+38,2,501.43848,152.39388,1.929595,100,0,0),
+(@SGGUID+38,3,508.708,141.22534,1.9262449,100,0,0),
+(@SGGUID+38,4,522.292,141.31062,1.9339751,100,0,0),
+(@SGGUID+38,5,532.2282,148.97649,1.9294553,100,0,0),
+(@SGGUID+38,6,525.00385,170.1712,1.9321325,100,0,0),
+(@SGGUID+38,7,519.4442,175.25598,1.9428399,100,0,0),
+(@SGGUID+38,8,519.6646,196.366,1.9364898,100,0,0),
+(@SGGUID+38,9,520.9925,208.3555,1.863179,100,0,0),
+(@SGGUID+38,10,513.1584,221.61227,1.9342216,100,0,0),
+(@SGGUID+38,11,521.30457,237.0814,1.9299809,100,0,0),
+(@SGGUID+38,12,517.14276,249.81818,1.9339325,100,0,0),
+(@SGGUID+38,13,506.72614,240.23392,1.93266,100,0,0),
+(@SGGUID+38,14,510.5138,229.18658,1.9293674,100,0,0),
+(@SGGUID+38,15,519.78186,208.59735,1.8669927,100,0,0),
+(@SGGUID+38,16,518.95435,196.91217,1.9373496,100,0,0),
+(@SGGUID+38,17,518.4774,175.9383,1.9424627,100,0,0),
+(@SGGUID+42,1,437.0384,61.912605,1.9237044,100,0,0),
+(@SGGUID+42,2,430.70596,58.27038,2.0049384,100,0,0),
+(@SGGUID+42,3,436.75922,53.82539,1.925432,100,0,0),
+(@SGGUID+42,4,450.10388,57.169678,1.9267677,100,0,0),
+(@SGGUID+42,5,459.8768,57.486713,1.9384289,100,0,0),
+(@SGGUID+42,6,484.6614,57.491474,1.9347191,100,0,0),
+(@SGGUID+42,7,499.84537,57.432102,1.9408772,100,0,0),
+(@SGGUID+42,8,512.16394,59.819527,1.9372166,100,0,0),
+(@SGGUID+42,9,518.48566,74.102104,1.9048867,100,0,0),
+(@SGGUID+42,10,518.7643,84.54578,1.933246,100,0,0),
+(@SGGUID+42,11,522.1816,93.50193,1.9172946,100,0,0),
+(@SGGUID+42,12,522.32776,103.9952,1.9267256,100,0,0),
+(@SGGUID+42,13,518.59015,109.2831,1.9350262,100,0,0),
+(@SGGUID+42,14,514.31537,105.71796,1.929482,100,0,0),
+(@SGGUID+42,15,518.8863,86.14224,1.9351246,100,0,0),
+(@SGGUID+42,16,517.80896,74.34265,1.9050009,100,0,0),
+(@SGGUID+42,17,511.79678,60.39599,1.9369621,100,0,0),
+(@SGGUID+42,18,500.0572,58.475758,1.9402512,100,0,0),
+(@SGGUID+42,19,485.16956,58.154434,1.9346583,100,0,0),
+(@SGGUID+42,20,459.37115,58.70152,1.9383427,100,0,0),
+(@SGGUID+42,21,450.82022,58.783375,1.9266548,100,0,0),
+(@SGGUID+46,1,373.44144,-51.05542,1.9361445,100,0,0),
+(@SGGUID+46,2,371.50775,-70.71428,1.9203951,100,0,0),
+(@SGGUID+46,3,359.4892,-82.532364,1.9185716,100,0,0),
+(@SGGUID+46,4,343.14014,-84.82301,1.9350435,100,0,0),
+(@SGGUID+46,5,310.18472,-82.78763,1.9368917,100,0,0),
+(@SGGUID+46,6,298.0218,-79.64861,1.9367486,100,0,0),
+(@SGGUID+46,7,287.82153,-84.24349,1.9618785,100,0,0),
+(@SGGUID+46,8,291.21362,-89.2625,1.9129633,100,0,0),
+(@SGGUID+46,9,306.8405,-87.17954,1.9372501,100,0,0),
+(@SGGUID+46,10,343.15958,-86.27303,1.9356986,100,0,0),
+(@SGGUID+46,11,360.74103,-83.51457,1.9183288,100,0,0),
+(@SGGUID+46,12,373.4364,-71.93072,1.920069,100,0,0),
+(@SGGUID+46,13,375.80185,-50.9922,1.9360272,100,0,0),
+(@SGGUID+46,14,378.60367,-31.814674,1.9073824,100,0,0),
+(@SGGUID+46,15,374.94492,-20.095032,1.9111354,100,0,0),
+(@SGGUID+46,16,369.20135,-20.56937,1.9118699,100,0,0),
+(@SGGUID+46,17,369.4805,-35.282803,1.9122882,100,0,0);
 
 DELETE FROM worldstate_name WHERE Id IN (@SGGUID+4);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
