@@ -2903,9 +2903,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Well Watcher Solanian (15295) - NSR
 -- Arcanist Ithanas (15296) - NSR
 -- Arcanist Helion (15297) - NSR
--- Tainted Arcane Wraith 15298 (3.0.3 Official Data)
-('1529801','15298','8','0','100','0','28734','-1','0','0','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Tainted Arcane Wraith - Quest Credit on Mana Tap Spellhit (Quest: 8346)'),
-('1529802','15298','0','0','100','1025','9000','18800','21100','32200','0','0','11','25603','1','0','0','0','0','0','0','0','0','0','Tainted Arcane Wraith - Cast Slow'),
+-- Tainted Arcane Wraith 15298
+('1529801','15298','11','0','100','0','0','0','0','0','0','0','11','18951','0','34','0','0','0','0','0','0','0','0','Tainted Arcane Wraith - Cast Spirit Particles (green) on Spawn'),
+('1529802','15298','8','0','100','0','28734','-1','0','0','0','0','33','15468','6','0','0','0','0','0','0','0','0','0','Tainted Arcane Wraith - Quest Credit on Mana Tap Spellhit (Quest: 8346)'),
+('1529803','15298','0','0','100','1025','9000','18800','21100','32200','0','0','11','25603','1','0','0','0','0','0','0','0','0','0','Tainted Arcane Wraith - Cast Slow'),
 -- Outrunner Alarion (15301) - NSR
 -- Springpaw Cub (15366) - NSR
 -- Felendren the Banished 15367 (3.0.3 Official Data)
