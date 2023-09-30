@@ -571,13 +571,13 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (23542, 0, 0, 1, 0, 0, NULL), -- Amani'shi Axe Thrower
 (23574, 0, 0, 1, 0, 0, NULL), -- Akil'zon
-(23576, 0, 0, 1, 0, 0, NULL), -- Nalorakk
+(23576, 0, 0, 1, 0, 0, '45210 42459'), -- Nalorakk
 (23597, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Guardian
-(23577, 0, 0, 1, 0, 0, NULL), -- Halazzi
-(23578, 0, 0, 1, 0, 0, NULL), -- Jan'alai
-(23580, 22467, 0, 1, 0, 0, '23255'), -- Amani'shi Warbringer
+(23577, 0, 0, 1, 0, 0, '42459'), -- Halazzi
+(23578, 0, 0, 1, 0, 0, '42459'), -- Jan'alai
+(23580, 22467, 0, 1, 0, 0, '23255 42459'), -- Amani'shi Warbringer
 (23581, 0, 0, 1, 0, 0, NULL), -- Amani'shi Medicine Man
-(23582, 0, 0, 1, 0, 0, NULL), -- Amani'shi Tribesman
+(23582, 0, 0, 1, 0, 0, '42459'), -- Amani'shi Tribesman
 (23584, 0, 0, 1, 0, 0, NULL), -- Amani Bear
 (23586, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Scout
 (23587, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Reinforcement
@@ -614,7 +614,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (24363, 0, 0, 1, 0, 0, NULL), -- Hex Lord Malacrass (Speech Trigger)
 (24396, 0, 0, 1, 0, 0, NULL), -- Forest Frog
 (24530, 0, 0, 1, 0, 0, NULL), -- Amani Elder Lynx
-(24549, 0, 0, 1, 0, 0, NULL), -- Amani'shi Tempest
+(24549, 0, 0, 1, 0, 0, '42459'), -- Amani'shi Tempest
 (25173, 0, 0, 1, 0, 0, NULL); -- Zul'Aman Door Trigger
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES

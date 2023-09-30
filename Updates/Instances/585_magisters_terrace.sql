@@ -865,6 +865,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+196, 0, 7, 1, 0, 0, NULL); -- Tyrith
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
+(24557, 0, 0, 1, 0, 0, '42459 44288'), -- Kagani Nightstrike
 (24560, 0, 0, 1, 0, 0, '46025'), -- Priestess Delrissa
 (24685, 0, 0, 1, 0, 0, '44604'), -- Sunblade Magister
 (24722, 0, 0, 1, 0, 0, '25900'), -- Fel Crystal
