@@ -15,4 +15,8 @@ INSERT INTO spell_affect(entry, effectId, SpellFamilyMask) VALUES
 (37401, 0, 0x0000000000000002), -- corruption
 (37402, 0, 0x0000000000000004); -- immolate
 
-
+-- blessing of light
+DELETE FROM spell_affect WHERE entry=19977;
+INSERT INTO spell_affect(entry, effectId, SpellFamilyMask) VALUES
+(19977,0,0x0000000080000000),
+(19977,1,0x0000000040000000);
