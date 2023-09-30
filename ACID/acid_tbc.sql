@@ -16512,6 +16512,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2181101','21811','11','0','100','0','0','0','0','0','0','0','57','2','35','0','0','0','0','0','0','0','0','0','Wyrmcult Broodling - Enable Range Mode on Spawn'),
 ('2181102','21811','0','0','100','1281','0','0','3300','5000','0','0','11','34083','1','256','0','0','0','0','0','0','0','0','Wyrmcult Broodling - Cast Fireball (Range Mode)'),
 ('2181103','21811','0','0','100','1537','0','0','5000','20000','0','0','11','34083','1','256','0','0','0','0','0','0','0','0','Wyrmcult Broodling - Cast Fireball (Melee Mode)'),
+-- Nether Drake Egg Bunny 21814
+('2181401','21814','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','0','0','0','0','0','0','0','0','Nether Drake Egg Bunny - Cast Spirit Particles on Spawn'),
 -- Adolescent Nether Drake 21817 - mobs_nether_drake
 -- Mature Nether Drake 21820 - mobs_nether_drake
 -- Proto-Nether Drake 21821 - mobs_nether_drake
@@ -20442,7 +20444,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Gralga
 ('2119301','21193','1','0','100','1','418000','418000','418000','418000','0','0','1','19063','0','0','0','0','0','0','0','0','0','0','Gralga - Gossip'),
 -- Deathtalon Spirit 21198
-('2119801','21198','11','0','100','0','0','0','0','0','0','0','11','17327','0','32','0','0','0','0','0','0','0','0','Deathtalon Spirit - Cast Spirit Particles on Spawn'),
+('2119801','21198','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','11','33900','0','34','0','0','0','0','Deathtalon Spirit - Cast Spirit Particles, Shroud of Death on Spawn'),
 ('2119802','21198','0','0','100','1025','8000','12000','15000','19000','0','0','11','36093','1','0','0','0','0','0','0','0','0','0','Deathtalon Spirit - Cast Ghost Strike'),
 -- Screeching Spirit 21200
 ('2120001','21200','11','0','100','0','0','0','0','0','0','0','11','17327','0','32','0','0','0','0','0','0','0','0','Screeching Spirit - Cast Spirit Particles on Spawn'),
@@ -20471,7 +20473,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2128504','21285','0','0','100','1281','0','0','3400','4800','0','0','11','31516','1','256','0','0','0','0','0','0','0','0','Auchenai Doomsayer - Cast Mind Blast (Range Mode)'),
 ('2128505','21285','0','0','100','1537','0','0','5000','20000','0','0','11','31516','1','256','0','0','0','0','0','0','0','0','Auchenai Doomsayer - Cast Mind Blast (Melee Mode)'),
 -- Spirit Raven 21324
-('2132401','21324','11','0','100','0','0','0','0','0','0','0','11','17327','0','32','0','0','0','0','0','0','0','0','Spirit Raven - Cast Spirit Particles on Spawn'),
+('2132401','21324','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','11','36978','0','34','0','0','0','0','Spirit Raven - Cast Spirit Particles, Shroud of Death on Spawn'),
 ('2132402','21324','0','0','100','1025','11000','15000','21000','31000','0','0','11','38021','0','0','0','0','0','0','0','0','0','0','Spirit Raven - Cast Terrifying Screech'),
 ('2132403','21324','2','0','100','1025','30','0','5000','8000','0','0','11','38254','4','32','0','0','0','0','0','0','0','0','Spirit Raven - Cast Festering Wound at 30% HP'),
 -- Ethereal Plunderer 21368
@@ -20487,12 +20489,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2140502','21405','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Ethereal Arcanist - Flee at 15% HP'),
 ('2140503','21405','0','0','100','1025','3000','6000','9000','15000','0','0','11','39039','1','0','0','0','0','0','0','0','0','0','Ethereal Arcanist - Cast Force Blast'),
 ('2140504','21405','9','0','100','1025','0','40','3400','4800','0','0','11','33832','1','256','0','0','0','0','0','0','0','0','Ethereal Arcanist - Cast Arcane Missiles'),
--- Terokkar - Bone Wastes - Draenei Soul
-('2142401','21424','1','0','100','0','0','0','0','0','0','0','11','17327','0','0','11','31748','0','0','11','36545','0','0','Terokkar - Bone Wastes - Draenei Soul - Cast Spirit Particles and Cast Spirit Particles, big and Cast Floating Drowned on Spawn'),
+-- Terokkar - Bone Wastes - Draenei Soul 21424
+('2142401','21424','1','0','100','0','0','0','0','0','0','0','11','17327','0','34','11','31748','0','34','11','36545','0','34','Terokkar - Bone Wastes - Draenei Soul - Cast Spirit Particles and Cast Spirit Particles, big and Cast Floating Drowned on Spawn'),
 ('2142402','21424','1','0','100','0','1000','1000','0','0','0','0','11','36550','0','0','0','0','0','0','0','0','0','0','Terokkar - Bone Wastes - Draenei Soul - Cast Floating Drowned on Spawn'),
 -- Bone Wastes - White Nether Orb
 ('2144501','21445','29','0','100','0','9000','9000','0','0','0','0','48','2','0','0','0','0','0','0','0','0','0','0','Bone Wastes - White Nether Orb - Set Waypoint Movement on Generic Timer'),
 -- Trachela 21515 - creature_spell_list
+-- Vengeful Draenei 21636
+('2163601','21636','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','11','31748','0','34','0','0','0','0','Vengeful Draenei - Cast Spirit Particles and Cast Spirit Particles, big on Spawn'),
 -- Vengeful Harbinger 21638 - npc_vengeful_harbinger
 -- Skettis Wing Guard 21644
 ('2164401','21644','2','0','100','1024','30','0','0','0','0','0','11','8599','0','0','1','1191','0','0','0','0','0','0','Skettis Wing Guard - Cast Enrage at 30% HP'),
@@ -20567,8 +20571,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sha'tar Vindicator
 ('2185801','21858','0','0','100','1025','3000','7000','8500','10000','0','0','11','12024','1','0','0','0','0','0','0','0','0','0','Sha''tar Vindicator - Cast Net'),
 -- Slain Sha'tar Vindicator (21859) - NSR (37759 on Spellhit?, summons 21869, movement?)
--- Unliving Guardian 21869 - NSR
--- Unliving Initiate 21870 - NSR
+-- Unliving Guardian 21869 - s.36545 36550 36927
+('2186901','21869','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','11','31748','0','34','0','0','0','0','Unliving Guardian - Cast Spirit Particles, Spirit Particles, big on Spawn'),
+-- Unliving Initiate 21870 - s.36545 36550 36927
+('2187001','21870','11','0','100','0','0','0','0','0','0','0','11','17327','0','34','11','31748','0','34','0','0','0','0','Unliving Initiate - Cast Spirit Particles, Spirit Particles, big on Spawn'),
 -- Mana Bomb Lightning Trigger
 ('2189801','21898','30','0','100','0','5','20809','0','0','0','0','22','1','0','0','11','37843','0','0','0','0','0','0','Mana Bomb Lightning Trigger - Set Phase 1 and Cast Mana Bomb: Lightning on Receive AI Event 5 (A)'),
 ('2189802','21898','1','1','50','1','1200','1200','1200','1200','0','0','11','37843','0','0','0','0','0','0','0','0','0','0','Mana Bomb Lightning Trigger - Cast Mana Bomb: Lightning (Phase 1)'),
