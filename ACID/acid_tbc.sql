@@ -23612,7 +23612,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Lykul Stinger (3.0.3 Official Data - Normal Logs Only)
 ('1963201','19632','2','0','100','1025','50','0','14000','18000','0','0','11','34392','0','0','1','2384','0','0','0','0','0','0','Lykul Stinger - Cast Stinger Rage at 50% HP'),
 -- Underbog Frenzy 20465
-('2046501','20465','9','0','100','1025','0','5','10000','20000','0','0','11','12097','1','0','0','0','0','0','0','0','0','0','Underbog Frenzy - Cast Pierce Armor'),
+('2046501','20465','11','0','100','0','0','0','0','0','0','0','11','18943','0','34','11','18950','0','34','0','0','0','0','Underbog Frenzy - Cast Double Attack, Invisibility and Stealth Detection on Spawn'),
+('2046502','20465','9','0','100','1025','0','5','10000','20000','0','0','11','12097','1','0','0','0','0','0','0','0','0','0','Underbog Frenzy - Cast Pierce Armor'),
 -- Spore Strider 22299
 ('2229901','22299','11','0','100','4','0','0','0','0','0','0','57','2','35','0','38','0','0','0','0','0','0','0','Spore Strider (Heroic) - Enable Range Mode and Zone Combat Pulse on Spawn'),
 ('2229902','22299','7','0','100','4','0','0','0','0','0','0','41','30000','0','0','0','0','0','0','0','0','0','0','Spore Strider (Heroic) - Delayed Despawn on Evade'),
