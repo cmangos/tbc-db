@@ -1169,6 +1169,9 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Invading Anguisher (19290) - NSR
 -- Portal Hound 19311
 ('1931101','19311','11','0','100','0','0','0','0','0','0','0','11','19483','0','34','11','33543','0','0','0','0','0','0','Portal Hound - Cast Infernaling Spawn-In and Immolation on Spawn'),
+-- Lord Marshal Raynor 19385 - s.24221
+('1938501','19385','11','0','100','0','0','0','0','0','0','0','11','18943','0','34','0','0','0','0','0','0','0','0','Lord Marshal Raynor - Cast Double Attack on Spawn'),
+('1938502','19385','0','0','100','1025','5000','10000','5000','20000','0','0','11','20684','1','0','0','0','0','0','0','0','0','0','Lord Marshal Raynor - Cast Cleave'),
 -- Felguard Lieutenant 19391
 ('1939101','19391','0','0','100','1025','2000','3000','7000','10000','0','0','11','15621','1','0','0','0','0','0','0','0','0','0','Felguard Lieutenant - Cast Skull Crack'),
 -- Thunder Bluff Huntsman (19406) - NSR
