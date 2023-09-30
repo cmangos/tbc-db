@@ -24462,10 +24462,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1767007','17670','9','0','100','1027','5','30','2300','5000','0','0','11','15620','1','256','0','0','0','0','0','0','0','0','Shattered Hand Houndmaster (Normal) - Cast Shoot'),
 ('1767008','17670','9','0','100','1029','5','30','2300','5000','0','0','11','22907','1','256','0','0','0','0','0','0','0','0','Shattered Hand Houndmaster (Heroic) - Cast Shoot'),
 -- Shattered Hand Champion 17671
-('1767101','17671','4','0','20','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shattered Hand Champion - Random Say on Aggro'),
-('1767102','17671','9','0','100','1025','0','8','10000','14000','0','0','11','32588','1','0','0','0','0','0','0','0','0','0','Shattered Hand Champion - Cast Concussion Blow and Drop Aggro'),
-('1767103','17671','0','0','100','1025','3000','6000','12000','15000','0','0','11','32587','0','0','0','0','0','0','0','0','0','0','Shattered Hand Champion - Cast Shield Block'),
-('1767104','17671','13','0','100','1025','13000','16000','0','0','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Shattered Hand Champion - Cast Shield Bash on Target Casting'),
+('1767101','17671','11','0','100','0','0','0','0','0','0','0','11','12782','0','34','11','18950','0','34','0','0','0','0','Shattered Hand Champion - Cast Shield Spike, Invisibility and Stealth Detection on Spawn'),
+('1767102','17671','4','0','20','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Shattered Hand Champion - Random Say on Aggro'),
+('1767103','17671','9','0','100','1025','0','8','10000','14000','0','0','11','32588','1','0','0','0','0','0','0','0','0','0','Shattered Hand Champion - Cast Concussion Blow and Drop Aggro'),
+('1767104','17671','0','0','100','1025','3000','6000','12000','15000','0','0','11','32587','0','0','0','0','0','0','0','0','0','0','Shattered Hand Champion - Cast Shield Block'),
+('1767105','17671','13','0','100','1025','13000','16000','0','0','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Shattered Hand Champion - Cast Shield Bash on Target Casting'),
 -- Flame Arrow 17687 - NullAI
 -- Shattered Hand Scout 17693 - npc_shattered_hand_scout
 -- Shadowmoon Darkcaster 17694
