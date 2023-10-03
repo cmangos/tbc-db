@@ -87,7 +87,7 @@ DELETE FROM creature_spell_list WHERE Id = 1641501;
 INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 (1641501, 1, 32441, 0, 121, 0, 100, 0, 11000, 20000, 21000, 30000, "Skeletal Waiter - Brittle Bones - ATTACKING_TARGET_RANDOM - SELECT_FLAG_NOT_AURA");
 
-DELETE FROM creature_spell_list_entry WHERE Id = 1641101;
+DELETE FROM creature_spell_list_entry WHERE Id = 1641501;
 REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
 (1641501, "Karazhan - Skeletal Waiter", 0, 0);
 
@@ -122,7 +122,7 @@ INSERT INTO `creature_spell_list` (Id, Position, SpellId, Flags, TargetId, Scrip
 (1640601, 1, 29586, 0, 1, 0, 100, 0, 5000, 13000, 22000, 32000, "Phantom Attendant - Kick - on current"),
 (1640601, 2, 29587, 0, 201, 0, 100, 0, 9000, 20000, 30000, 35000, "Phantom Attendant - Shadow Rejuvantation - on missing 50% including self");
 
-DELETE FROM creature_spell_list_entry WHERE Id = 1641001;
+DELETE FROM creature_spell_list_entry WHERE Id = 1640601;
 REPLACE INTO `creature_spell_list_entry` (Id, Name, ChanceSupportAction, ChanceRangedAttack) VALUES
 (1640601, "Karazhan - Phantom Attendant", 0, 0);
 
