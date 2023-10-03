@@ -31118,6 +31118,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('952601','9526','0','0','100','1025','3000','6000','12000','15000','0','0','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Gryphon - Cast Rend'),
 -- Enraged Hippogryph 9527
 ('952701','9527','0','0','100','1025','3000','6000','12000','15000','0','0','11','18106','4','32','0','0','0','0','0','0','0','0','Enraged Hippogryph - Cast Rend'),
+-- Felhound Minion 9556 - s.14642 i.7734
+('955601','9556','0','0','100','1025','10000','20000','10000','20000','0','0','11','13321','16','512','0','0','0','0','0','0','0','0','Felhound Minion - Cast Mana Burn on Random Player Mana User'),
 -- Scorching Totem 9637 - TotemAI
 -- Windwall Totem 9687 - TotemAI
 -- Windwall Totem II 9688 - TotemAI
