@@ -10,8 +10,8 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1746401, 2058601);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1746401, 1, 16856, 0, -1, 1, 0, 100, 0, 6000, 18000, 11000, 20000, 'Shattered Hand Gladiator - Morelt Strike - On Current'),
-(2058601, 1, 16856, 0, -1, 1, 0, 100, 0, 9000, 9000, 9000, 15000, 'Shattered Hand Gladiator - Morelt Strike - On Current');
+(1746401, 1, 16856, 0, -1, 1, 0, 100, 0, 6000, 18000, 11000, 20000, 'Shattered Hand Gladiator - Mortal Strike - On Current'),
+(2058601, 1, 16856, 0, -1, 1, 0, 100, 0, 9000, 9000, 9000, 15000, 'Shattered Hand Gladiator - Mortal Strike - On Current');
 
 
 UPDATE `creature_template` SET `SpellList` = 1746401 WHERE `entry` = 17464;
