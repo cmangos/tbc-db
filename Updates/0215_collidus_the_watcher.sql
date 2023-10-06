@@ -133,10 +133,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+4,22,-3595.5696,2217.7903,79.48219,100,0,0),
 (@CGUID+4,23,-3617.3667,2233.468,79.91666,100,0,0);
 
-
+DELETE FROM spawn_group WHERE Id = @SGGUID+1;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+1, 'Shadowmoon Valley - Collidus the Warp-Watcher', 0, 1, 0, 0);
 
+DELETE FROM spawn_group_spawn WHERE Id = @SGGUID+1;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @CGUID+1, -1),
 (@SGGUID+1, @CGUID+2, -1),
