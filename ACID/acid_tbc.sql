@@ -19243,10 +19243,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Doomwalker 17711 - boss_doomwalker
 -- Xi'ri 18528 - npc_quest_attunement
 -- Collidus the Warp-Watcher - spell_list
--- Ambassador Jerrikar
-('1869501','18695','0','0','100','1025','3000','6000','10000','15000','0','0','11','38926','0','0','0','0','0','0','0','0','0','0','Ambassador Jerrikar - Cast Dark Strike'),
-('1869502','18695','0','0','100','1025','8000','16000','18000','24000','0','0','11','38916','0','0','0','0','0','0','0','0','0','0','Ambassador Jerrikar - Cast Diplomatic Immunity'),
-('1869503','18695','0','0','100','1025','9000','12000','14000','19000','0','0','11','38913','4','0','0','0','0','0','0','0','0','0','Ambassador Jerrikar - Cast Silence'),
+-- Ambassador Jerrikar - spell_list
 -- Kraator 18696
 ('1869601','18696','6','0','100','0','0','0','0','0','0','0','28','0','12743','0','0','0','0','0','0','0','0','0','Kraator - Remove Immolation on Death'),
 ('1869602','18696','0','0','100','1025','10000','20000','20000','25000','0','0','11','39293','1','0','0','0','0','0','0','0','0','0','Kraator - Cast Conflagration'),
