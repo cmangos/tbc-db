@@ -28259,14 +28259,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Coldmist Stalker 16170
 ('1617001','16170','1','0','100','1','1000','1000','5000','5000','0','0','11','29291','0','34','11','28094','0','34','11','22766','0','34','Coldmist Stalker - Cast Chilling Poison, Sneak OOC'),
 ('1617002','16170','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coldmist Stalker - Set Instace Data64 (SD2) on Generic Timer'),
--- Coldmist Widow
+-- Coldmist Widow - spell_list
 ('1617107','16171','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coldmist Widow - Set Instace Data64 (SD2) on Generic Timer'),
--- Shadowbat
-('1617301','16173','9','0','100','1025','0','8','7000','11000','0','0','11','29298','0','0','0','0','0','0','0','0','0','0','Shadowbat - Cast Dark Shriek'),
+-- Shadowbat - spell_list
 ('1617302','16173','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Shadowbat - Set Instace Data64 (SD2) on Generic Timer'),
--- Greater Shadowbat
-('1617401','16174','9','0','100','1025','0','5','11000','16000','0','0','11','29303','0','0','0','0','0','0','0','0','0','0','Greater Shadowbat - Cast Wing Beat'),
-('1617402','16174','9','0','100','1025','0','5','7000','10000','0','0','11','29300','4','0','0','0','0','0','0','0','0','0','Greater Shadowbat - Cast Sonic Blast'),
+-- Greater Shadowbat - spell_list
 ('1617403','16174','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Greater Shadowbat - Set Instace Data64 (SD2) on Generic Timer'),
 -- Vampiric Shadowbat
 ('1617501','16175','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Vampiric Shadowbat - Set Instace Data64 (SD2) on Generic Timer'),
