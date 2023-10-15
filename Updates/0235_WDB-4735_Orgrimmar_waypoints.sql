@@ -1,7 +1,7 @@
 -- Orgrimmar
 -- some of waypoints around Orgrimmar were partly missing or wrong (custom made) - corrected
 -- Waypoints
-DELETE FROM creature_movement WHERE id 10347;
+DELETE FROM creature_movement WHERE id = 10347;
 INSERT INTO creature_movement (id, point, positionx, positiony, positionz, orientation, waittime, scriptid) VALUES
 -- 10347
 (10347,1 ,1613.801,-4267.5454,48.003452,100,2000,0),
