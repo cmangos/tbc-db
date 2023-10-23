@@ -686,6 +686,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (21215, 0, 8, 0, 0, 0, NULL), -- Leotheras the Blind
 (21229, 0, 0, 0, 0, 0, '38620'), -- Greyheart Tidecaller
+(21246, 0, 0, 0, 0, 0, '38471'), -- Serpentshrine Sporebat
 (21689, 0, 0, 0, 383, 0, NULL), -- Coilfang Frenzy Corpse
 (21934, 0, 0, 0, 0, 0, '37935'), -- Hydross Cleansing Field Helper
 (21965, 0, 0, 0, 0, 0, '38184'), -- Fathom-Guard Tidalvess
