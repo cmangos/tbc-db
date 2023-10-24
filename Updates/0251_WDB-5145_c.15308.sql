@@ -27,7 +27,7 @@ REPLACE INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positi
 (43322, 15308, 1, 1, -7553.29, 1742.48, 6.15128, 4.59986, 600, 600, 0, 2);
 UPDATE creature SET id = 15308, spawntimesecsmin = 2700, spawntimesecsmax = 3600, spawndist = 0, MovementType = 0 WHERE guid = 43322;
 UPDATE creature SET position_x = -7891.28, position_y = 1840.39, position_z = 3.55864, spawndist = 25, MovementType = 1 WHERE guid = 44253;
-DELETE FROM creature_linking WHERE guid IN (42969,42965);
+DELETE FROM creature_linking WHERE guid IN (42969,42965,44253);
 UPDATE creature SET position_x = -7549.471, position_y = 1734.0094, position_z = 11.4109 WHERE guid IN (43322,42969,42965);
 DELETE FROM creature_movement WHERE id IN (43322);
 -- move them to spawn_group
