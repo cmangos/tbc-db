@@ -1,15 +1,16 @@
 -- bodley
-UPDATE creature_template SET GossipMenuId=7044 WHERE entry=16033;
-DELETE FROM npc_text_broadcast_text WHERE Id IN(25000,25001,25002,25003,25004,25005,25006,25007,25008,25009,25010,25011); -- no longer in sniffs
+UPDATE creature_template SET GossipMenuId=7044,NpcFlags=3 WHERE entry=16033;
+UPDATE creature_template_addon SET auras='27614 27978' WHERE entry IN(16033); -- missed 27978
+DELETE FROM npc_text_broadcast_text WHERE Id IN(8271,25001,25002,25003,25004,25005,8339,8340,25008,25009,25010,25011); -- no longer in sniffs
 INSERT INTO npc_text_broadcast_text(Id,Prob0,BroadcastTextId0) VALUES
-(25000,1,11772),
+(8271,1,11772),
 (25001,1,11775),
 (25002,1,11831),
 (25003,1,11912),
 (25004,1,11777),
 (25005,1,11785),
-(25006,1,11918),
-(25007,1,11920),
+(8339,1,11918),
+(8340,1,11920),
 (25008,1,11781),
 (25009,1,11787),
 (25010,1,11779),
@@ -26,7 +27,7 @@ INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 (7044,25003,0,8007),
 (7044,25002,0,8006),
 (7044,25001,0,8001),
-(7044,25000,0,0),
+(7044,8271,0,0),
 -- bodley retrieve amulet
 (7041,25004,0,0),
 -- amulet retrieved - missing top and whole - guessed ids
@@ -39,8 +40,8 @@ INSERT INTO gossip_menu(entry, text_id, script_id, condition_id) VALUES
 (7042,25009,0,0),
 -- bodley whats going on
 (7087,8338,0,0),
-(7086,25006,0,0),
-(7085,25007,0,0),
+(7086,8339,0,0),
+(7085,8340,0,0),
 (7090,8341,0,0),
 (7089,8342,0,0),
 (7088,8343,0,0);
@@ -69,7 +70,7 @@ INSERT INTO conditions(condition_entry, type, value1, value2, value3, value4, fl
 ('8021', '-2', '8013', '8017', '0', '0', '0', ''),
 ('8022', '-2', '8014', '8018', '0', '0', '0', ''),
 ('8023', '-2', '8019', '8020', '8021', '8022', '0', ''),
-('8024', '8', '8996', '0', '0', '0', '1', 'Quest ID 8996 NOT Rewarded'),
+('8024', '8', '8996', '0', '0', '0', '1', 'Quest ID 8996 NOT Rewarded'), -- return to bodley
 ('8025', '-1', '8023', '8024', '0', '0', '0', ''), -- taken or completed any left amulet quest and not rewarded return to bodley
 ('8026', '8', '9015', '0', '0', '0', '0', 'Quest ID 9015 Rewarded'),
 ('8027', '8', '8989', '0', '0', '0', '1', 'Quest ID 8989 NOT Rewarded'), -- The Right Piece of Lord Valthalak's Amulet variants
@@ -107,34 +108,34 @@ INSERT INTO conditions(condition_entry, type, value1, value2, value3, value4, fl
 ('8061', '-1', '8031', '8059', '0', '0', '0', ''),
 ('8062', '-1', '8038', '8061', '0', '0', '0', '');
 DELETE FROM gossip_menu_option WHERE menu_id IN(7044,7087,7086,7085,7090,7089,7041,7043);
-INSERT INTO gossip_menu_option(menu_id,id,option_icon,option_text,option_broadcast_text,action_menu_id,action_script_id,condition_id) VALUES
-(7044,0,0,'I lost a piece of Lord Valthalak''s Amulet!',11776,7041,0,8032),
-(7044,1,0,'I''ve misplaced the Brazier of Beckoning!',11784,7043,0,8025),
-(7044,2,0,'Bodley, tell me what''s going on.',11915,7087,0,8007), -- return to bodley quest rewarded
-(7087,0,0,'You were telling me about The Veiled Blade and how you took the wrong mission.',11917,7086,0,0),
-(7086,0,0,'No, no, please continue... it''s just that the air up here is so, um, smoky.',11919,7085,0,0),
-(7085,0,0,'Please continue, Bodley.',11921,7090,0,0),
-(7090,0,0,'I thought you were almost done?',11923,7089,0,0),
-(7089,0,0,'What happened to your mercenary company, The Veiled Blade?',11925,7088,0,0),
-(7041,1,0,'Yes I checked, I''m missing the left piece!',11780,7039,704102,8062),
-(7041,0,0,'Yes I checked, I''m missing the top piece!',11778,7038,704101,8058),
-(7041,2,0,'I lost Lord Valthalak''s Amulet!',11773,7037,704103,8057),
-(7043,0,0,'Yes, please summon it back!',11786,7042,704301,8050), -- isalien
-(7043,1,0,'Yes, please summon it back!',11786,7042,704302,8051), -- mor grayhoof
-(7043,2,0,'Yes, please summon it back!',11786,7042,704303,8052), -- kormok
-(7043,3,0,'Yes, please summon it back!',11786,7042,704304,8053), -- jarien
-(7043,4,0,'Yes, please summon it back!',11786,7042,704305,8056); -- lord
+INSERT INTO gossip_menu_option(menu_id,id,option_id,option_icon,option_text,option_broadcast_text,npc_option_npcflag,action_menu_id,action_script_id,condition_id) VALUES
+(7044,0,1,0,'I lost a piece of Lord Valthalak''s Amulet!',11776,1,7041,0,8032),
+(7044,1,1,0,'I''ve misplaced the Brazier of Beckoning!',11784,1,7043,0,8025),
+(7044,2,1,0,'Bodley, tell me what''s going on.',11915,1,7087,0,8024), -- return to bodley quest not rewarded
+(7087,0,1,0,'You were telling me about The Veiled Blade and how you took the wrong mission.',11917,1,7086,0,0),
+(7086,0,1,0,'No, no, please continue... it''s just that the air up here is so, um, smoky.',11919,1,7085,0,0),
+(7085,0,1,0,'Please continue, Bodley.',11921,1,7090,0,0),
+(7090,0,1,0,'I thought you were almost done?',11923,1,7089,0,0),
+(7089,0,1,0,'What happened to your mercenary company, The Veiled Blade?',11925,1,7088,0,0),
+(7041,1,1,0,'Yes I checked, I''m missing the left piece!',11780,1,7039,704102,8062),
+(7041,0,1,0,'Yes I checked, I''m missing the top piece!',11778,1,7038,704101,8058),
+(7041,2,1,0,'I lost Lord Valthalak''s Amulet!',11773,1,7037,704103,8057),
+(7043,0,1,0,'Yes, please summon it back!',11786,1,7042,704301,8050), -- isalien
+(7043,1,1,0,'Yes, please summon it back!',11786,1,7042,704302,8051), -- mor grayhoof
+(7043,2,1,0,'Yes, please summon it back!',11786,1,7042,704303,8052), -- kormok
+(7043,3,1,0,'Yes, please summon it back!',11786,1,7042,704304,8053), -- jarien
+(7043,4,1,0,'Yes, please summon it back!',11786,1,7042,704305,8056); -- lord
 DELETE FROM dbscripts_on_gossip WHERE Id BETWEEN 704301 AND 704305;
 DELETE FROM dbscripts_on_gossip WHERE Id BETWEEN 704101 AND 704103;
 INSERT INTO dbscripts_on_gossip(id, delay, priority, command, datalong, datalong2, datalong3, buddy_entry, search_radius, data_flags, dataint, dataint2, dataint3, dataint4, datafloat, x, y, z, o, speed, condition_id, comments) VALUES
-('704101', '0', '0', '15', '27542', '0', '0', '0', '0', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Top Piece replacement'),
-('704102', '0', '0', '15', '27544', '0', '0', '0', '0', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Left Piece replacement'),
-('704103', '0', '0', '15', '27537', '0', '0', '0', '0', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Amulet replacement'),
-('704301', '0', '0', '15', '27558', '0', '0', '0', '0', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Isalien) replacement'),
-('704302', '0', '0', '15', '27560', '0', '0', '0', '0', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Mor Grayhoof) replacement'),
-('704303', '0', '0', '15', '27562', '0', '0', '0', '0', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Kormok) replacement'),
-('704304', '0', '0', '15', '27563', '0', '0', '0', '0', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Jarien & Sothos) replacement'),
-('704305', '0', '0', '15', '27566', '0', '0', '0', '0', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Lord Valthalakk) replacement');
+('704101', '0', '0', '15', '27542', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Top Piece replacement'),
+('704102', '0', '0', '15', '27544', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Left Piece replacement'),
+('704103', '0', '0', '15', '27537', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Amulet replacement'),
+('704301', '0', '0', '15', '27558', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Isalien) replacement'),
+('704302', '0', '0', '15', '27560', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Mor Grayhoof) replacement'),
+('704303', '0', '0', '15', '27562', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Kormok) replacement'),
+('704304', '0', '0', '15', '27563', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Jarien & Sothos) replacement'),
+('704305', '0', '0', '15', '27566', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Bodley - Brazier (Lord Valthalakk) replacement');
 
 
 
