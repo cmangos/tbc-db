@@ -148,5 +148,5 @@ INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRange
 DELETE FROM creature_spell_list WHERE Id IN(1247301);
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1247301', '0', '8873', '0', '-1', '0', '0', '1', '1','4000','6000','10000','15000', 'Arcanite Dragonling - Flame Breath'),
-('1247301', '1', '9658', '1', '-1', '1', '0', '1', '1','5000','10000','15000','20000', 'Arcanite Dragonling - Flame Buffet');
+('1247301', '1', '9658', '0', '-1', '1', '0', '1', '1','5000','10000','15000','20000', 'Arcanite Dragonling - Flame Buffet');
 
