@@ -572,7 +572,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (23542, 0, 0, 1, 0, 0, NULL), -- Amani'shi Axe Thrower
 (23574, 0, 0, 1, 0, 0, NULL), -- Akil'zon
 (23576, 0, 0, 1, 0, 0, '45210 42459'), -- Nalorakk
-(23597, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Guardian
 (23577, 0, 0, 1, 0, 0, '42459'), -- Halazzi
 (23578, 0, 0, 1, 0, 0, '42459'), -- Jan'alai
 (23580, 22467, 0, 1, 0, 0, '23255 42459'), -- Amani'shi Warbringer
@@ -581,6 +580,8 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (23584, 0, 0, 1, 0, 0, NULL), -- Amani Bear
 (23586, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Scout
 (23587, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Reinforcement
+(23596, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Flame Caster
+(23597, 0, 0, 1, 0, 0, '18950'), -- Amani'shi Guardian
 (23774, 0, 0, 1, 0, 0, NULL), -- Amani'shi Trainer
 (23790, 0, 0, 1, 0, 0, NULL), -- Tanzar
 (23807, 0, 0, 1, 0, 0, NULL), -- Zul'Aman - Bear God Invisman
