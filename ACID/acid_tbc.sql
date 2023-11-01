@@ -24409,6 +24409,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Shattered Hand Zealot 17462 - npc_shattered_hand_zealot
 ('1746201','17462','9','0','100','1025','0','5','10000','13000','0','0','11','30989','1','0','0','0','0','0','0','0','0','0','Shattered Hand Zealot - Cast Hamstring'),
 -- Shattered Hand Gladiator 17464 - spell_list
+('1746401','17464','11','0','100','0','0','0','0','0','0','0','11','19818','0','34','0','0','0','0','0','0','0','0','Shattered Hand Gladiator - Cast Double Attack on Spawn'),
 -- Shattered Hand Centurion 17465 - spell_list
 -- Lesser Shadow Fissure 17471 - npc_aoe_damage_trigger
 -- Training Dummy 17578
