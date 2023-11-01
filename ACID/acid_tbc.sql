@@ -19429,6 +19429,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spawn of Uvuros
 ('2110801','21108','9','0','100','1025','0','20','10000','12000','0','0','11','36406','0','0','0','0','0','0','0','0','0','0','Spawn of Uvuros - Cast Double Breath'),
 ('2110802','21108','32','0','100','1025','0','10','9500','18000','0','0','11','36405','0','0','0','0','0','0','0','0','0','0','Spawn of Uvuros - Cast Stomp in Range'),
+-- Kor'kron Wyvern Rider 21153
+('2115301','21153','11','0','100','0','0','0','0','0','0','0','11','18950','0','34','0','0','0','0','0','0','0','0','Kor''kron Wyvern Rider - Cast Invisibility and Stealth Detection on Spawn'),
 -- Netharel 21164
 ('2116401','21164','0','0','100','1025','3000','5000','10000','12000','0','0','11','39135','1','0','0','0','0','0','0','0','0','0','Netharel - Cast Debilitating Strike'),
 ('2116402','21164','0','2','100','1025','10000','20000','15000','25000','0','0','11','37683','1','0','0','0','0','0','0','0','0','0','Netharel - Cast Evasion (Phase 0)'),
@@ -24473,7 +24475,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- O'mrogg's Left Head 19523 - mob_omrogg_heads
 -- O'mrogg's Right Head 19524 - mob_omrogg_heads
 -- Blade Dance Target 20709 - npc_blade_dance_target
--- Blood Guard Porung 20923
+-- Blood Guard Porung 20923 - ss.30975 ss.32621
 ('2092301','20923','11','0','100','0','0','0','0','0','0','0','11','18950','0','32','0','0','0','0','0','0','0','0','Blood Guard Porung - Cast Invisibility and Stealth Detection on Spawn'),
 ('2092302','20923','4','0','100','6','0','0','0','0','0','0','34','4','4','0','0','0','0','0','0','0','0','0','Blood Guard Porung - End Gauntlet on Aggro'),
 ('2092303','20923','4','0','50','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Blood Guard Porung - Random Say on Aggro'),
