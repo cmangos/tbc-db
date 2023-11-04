@@ -56,22 +56,22 @@ INSERT INTO creature_spell_list_entry(Id, Name, ChanceSupportAction, ChanceRange
 DELETE FROM creature_spell_list WHERE Id IN(1962201,1962202,1962203,1962204);
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1962201', '0', '36805', '2', '-1', '1', '0', '100', '1','0','0','0','0', 'Kael''thas Sunstrider - Fireball on current'),
-('1962201', '1', '36815', '0', '-1', '0', '0', '100', '1','60000','60000','60000','60000', 'Kael''thas Sunstrider - Shock Barrier (starts pyro sequence)'),
-('1962201', '2', '36797', '0', '105', '0', '0', '100', '1','40000','40000','30000','30000', 'Kael''thas Sunstrider - Mind Control'),
-('1962201', '3', '36723', '0', '-1', '0', '0', '100', '1','50000','50000','60000','60000', 'Kael''thas Sunstrider - Phoenix'),
-('1962201', '4', '36834', '0', '-1', '0', '0', '100', '1','45000','45000','60000','60000', 'Kael''thas Sunstrider - Arcane Disruption'),
-('1962201', '5', '36735', '0', '-1', '100', '0', '100', '1','30000','30000','30000','30000', 'Kael''thas Sunstrider - Flame Strike on random player');
+('1962201', '1', '36815', '0', '-1', '0', '0', '100', '10','60000','60000','60000','60000', 'Kael''thas Sunstrider - Shock Barrier (starts pyro sequence)'),
+('1962201', '2', '36797', '0', '105', '0', '0', '100', '10','40000','40000','30000','30000', 'Kael''thas Sunstrider - Mind Control'),
+('1962201', '3', '36723', '0', '-1', '0', '0', '100', '10','50000','50000','60000','60000', 'Kael''thas Sunstrider - Phoenix'),
+('1962201', '4', '36834', '0', '-1', '0', '0', '100', '10','45000','45000','60000','60000', 'Kael''thas Sunstrider - Arcane Disruption'),
+('1962201', '5', '36735', '0', '-1', '100', '0', '100', '10','30000','30000','30000','30000', 'Kael''thas Sunstrider - Flame Strike on random player');
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1962202', '0', '36805', '2', '-1', '1', '0', '100', '1','0','0','0','0', 'Kael''thas Sunstrider - Fireball on current'),
-('1962202', '1', '35941', '0', '-1', '0', '0', '100', '1', '10000','10000','60000','60000', 'Kael''thas Sunstrider - Gravity Lapse');
+('1962202', '1', '35941', '0', '-1', '0', '0', '100', '100', '10000','10000','60000','60000', 'Kael''thas Sunstrider - Gravity Lapse');
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1962203', '0', '36815', '0', '-1', '0', '0', '100', '1','10000','10000','10000','10000', 'Kael''thas Sunstrider - Shock Barrier'),
 ('1962203', '1', '35865', '0', '-1', '0', '0', '100', '1','5000','5000','60000','60000', 'Kael''thas Sunstrider - Summon Nether Vapor'),
 ('1962203', '2', '35869', '0', '-1', '0', '0', '100', '1','8000','8000','2000','4000', 'Kael''thas Sunstrider - Nether Beam');
 INSERT INTO creature_spell_list(Id, Position, SpellId, Flags, CombatCondition, TargetId, ScriptId, Availability, Probability, InitialMin, InitialMax, RepeatMin, RepeatMax, Comments) VALUES
 ('1962204', '0', '36805', '2', '-1', '1', '0', '100', '1','0','0','0','0', 'Kael''thas Sunstrider - Fireball on current'),
-('1962204', '1', '36723', '0', '-1', '0', '0', '100', '1','30000','35000','60000','60000', 'Kael''thas Sunstrider - Phoenix'),
-('1962204', '2', '36834', '0', '-1', '0', '0', '100', '1','20000','25000','60000','60000', 'Kael''thas Sunstrider - Arcane Disruption'),
-('1962204', '3', '36735', '0', '-1', '100', '0', '100', '1','30000','30000','60000','60000', 'Kael''thas Sunstrider - Flame Strike on random player'),
-('1962204', '4', '35941', '0', '-1', '0', '0', '100', '1', '54000','54000','60000','60000', 'Kael''thas Sunstrider - Gravity Lapse');
+('1962204', '1', '36723', '0', '-1', '0', '0', '100', '10','30000','35000','60000','60000', 'Kael''thas Sunstrider - Phoenix'),
+('1962204', '2', '36834', '0', '-1', '0', '0', '100', '10','20000','25000','60000','60000', 'Kael''thas Sunstrider - Arcane Disruption'),
+('1962204', '3', '36735', '0', '-1', '100', '0', '100', '10','30000','30000','60000','60000', 'Kael''thas Sunstrider - Flame Strike on random player'),
+('1962204', '4', '35941', '0', '-1', '0', '0', '100', '100', '54000','54000','60000','60000', 'Kael''thas Sunstrider - Gravity Lapse');
 
