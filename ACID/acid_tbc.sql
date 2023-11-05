@@ -29440,20 +29440,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2126801','21268','11','0','100','0','0','0','0','0','0','0','57','1','95','0','0','0','0','0','0','0','0','0','Netherstrand Longbow - Enable Caster Mode on Spawn'),
 ('2126802','21268','32','0','100','1025','0','8','5000','5000','0','0','14','-100','0','0','0','0','0','0','0','0','0','0','Netherstrand Longbow - Drop Aggro in Range'),
 -- Devastation 21270 - spell_list
--- Cosmic Infuse 21270
-('2127001','21270','9','0','100','1025','0','15','6000','6000','0','0','11','36985','0','0','0','0','0','0','0','0','0','0','Cosmic Infuser - Cast Holy Nova'),
-('2127002','21270','14','0','100','1025','40000','40','10000','15000','0','0','11','36983','12','0','0','0','0','0','0','0','0','0','Cosmic Infuser - Cast Heal on Friendly Missing HP'),
+-- Cosmic Infuser 21270 - spell_list
 -- Infinity Blades 21271
 ('2127101','21271','11','0','100','0','0','0','0','0','0','0','11','12787','0','32','0','0','0','0','0','0','0','0','Infinity Blades - Cast Thrash on Spawn'),
--- Warp Slicer 21272
-('2127201','21272','9','0','100','1025','0','5','6000','6000','0','0','11','36991','1','0','0','0','0','0','0','0','0','0','Warp Slicer - Cast Rend'),
--- Phaseshift Bulwark 21273
-('2127301','21273','32','0','100','1025','0','5','10000','15000','0','0','11','36988','12','0','0','0','0','0','0','0','0','0','Phaseshift Bulwark - Cast Shield Bash in Range'),
-('2127302','21273','11','0','100','0','0','0','0','0','0','0','11','10021','0','2','11','37016','0','2','0','0','0','0','Phaseshift Bulvark - Cast 100% Block and Cast Shield Spike on Spawn'),
--- Staff of Disintegration 21274
+-- Warp Slicer 21272 - spell_list
+-- Phaseshift Bulwark 21273 - spell_list
+('2127301','21273','11','0','100','0','0','0','0','0','0','0','11','10021','0','2','11','37016','0','2','0','0','0','0','Phaseshift Bulvark - Cast 100% Block and Cast Shield Spike on Spawn'),
+-- Staff of Disintegration 21274 - spell_list
 ('2127401','21274','11','0','100','0','0','0','0','0','0','0','57','1','95','0','0','0','0','0','0','0','0','0','Staff of Disintegration - Enable Caster Mode on Spawn'),
-('2127402','21274','9','0','100','1025','0','8','12000','15000','0','0','11','36989','17','1024','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frost Nova'),
-('2127403','21274','9','0','100','1025','0','100','2500','4800','0','0','11','36990','1','256','0','0','0','0','0','0','0','0','Staff of Disintegration - Cast Frostbolt'),
 -- Phoenix (21362) - mob_phoenix_tk
 -- Phoenix Egg (21364) - mob_phoenix_egg_tk
 
