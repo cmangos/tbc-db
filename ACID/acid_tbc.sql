@@ -26940,8 +26940,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Earthen Hallshaper 7077 - EffectDummyCreature_npc_vault_warder
 ('707701','7077','1','0','100','0','1000','1000','0','0','0','0','11','10255','0','32','0','0','0','0','0','0','0','0','Earthen Hallshaper - Cast Stoned OOC'),
 ('707702','7077','6','0','100','0','0','0','0','0','0','0','11','10666','0','2','0','0','0','0','0','0','0','0','Earthen Hallshaper - Cast Earthen Guards Destroyed on Death'),
--- Cleft Scorpid (3.3.5a Official Data)
-('707801','7078','1','0','100','0','1000','1000','0','0','0','0','11','3616','0','32','0','0','0','0','0','0','0','0','Cleft Scorpid - Cast Poison Proc OOC'),
+-- Cleft Scorpid 7078
+('707801','7078','11','0','100','0','0','0','0','0','0','0','11','7276','0','34','0','0','0','0','0','0','0','0','Cleft Scorpid - Cast Poison Proc on Spawn'),
 -- Shadowforge Ambusher (4.0.1 Official Data)
 ('709101','7091','0','0','100','1025','1000','3000','180000','185000','0','0','11','7164','0','0','0','0','0','0','0','0','0','0','Shadowforge Ambusher - Cast Defensive Stance on Aggro'),
 ('709102','7091','0','0','100','1025','7100','13300','7200','16900','0','0','11','11972','1','0','0','0','0','0','0','0','0','0','Shadowforge Ambusher - Cast Shield Bash'),
