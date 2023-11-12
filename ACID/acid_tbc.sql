@@ -28038,20 +28038,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2121805','21218','2','0','100','1024','50','0','0','0','0','0','11','38947','0','0','1','19891','0','0','0','0','0','0','Vashj''ir Honor Guard - Cast Enrage at 50% HP'),
 ('2121806','21218','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Set Instance Data64 (SD2) on Generic Timer'),
 ('2121807','21218','1','0','75','1','10000','60000','60000','60000','0','0','54','0','0','10027','0','0','0','0','0','0','0','0','Vashj''ir Honor Guard - Random Say OOC'),
--- Coilfang Priestess 21220
-('2122001','21220','0','0','100','1025','6000','12000','8000','12000','0','0','11','38582','1','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Holy Smite'),
-('2122002','21220','0','0','100','1025','3600','7800','10400','14200','0','0','11','38585','4','512','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Holy Fire'),
-('2122003','21220','14','0','100','1025','70000','40','16000','21000','0','0','11','38580','12','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Greater Heal on Friendly Missing HP'),
-('2122004','21220','2','0','100','1024','20','0','0','0','0','0','11','38580','0','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Cast Greater Heal at 20% HP'),
-('2122005','21220','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Set Instace Data64 (SD2) on Generic Timer'),
--- Coilfang Beast-Tamer
+-- Coilfang Priestess 21220 - creature_spell_list
+('2122001','21220','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Priestess - Set Instace Data64 (SD2) on Generic Timer'),
+-- Coilfang Beast-Tamer 21221
 ('2122101','21221','9','0','100','1025','0','5','9900','10900','0','0','11','38474','1','0','0','0','0','0','0','0','0','0','Coilfang Beast-Tamer - Cast Cleave'),
 ('2122102','21221','0','0','100','1025','2000','9000','19300','23400','0','0','11','38484','15','0','0','0','0','0','0','0','0','0','Coilfang Beast-Tamer - Cast Bestial Wrath'),
--- Tidewalker Depth-Seer
+-- Tidewalker Depth-Seer 21224
 ('2122401','21224','14','0','100','1025','10000','40','15000','17000','0','0','11','38657','12','0','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Rejuvenation on Friendly Missing HP'),
 ('2122402','21224','14','0','100','1025','25000','40','12000','21000','0','0','11','38658','12','0','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Healing Touch on Friendly Missing HP'),
 ('2122403','21224','2','0','100','1025','20','0','12000','15000','0','0','11','38659','0','0','0','0','0','0','0','0','0','0','Tidewalker Depth-Seer - Cast Tranquility at 20% HP'),
--- Tidewalker Warrior
+-- Tidewalker Warrior 21225
 ('2122501','21225','9','0','100','1025','0','5','18000','27000','0','0','11','39070','1','0','0','0','0','0','0','0','0','0','Tidewalker Warrior - Cast Bloodthirst'),
 ('2122502','21225','0','0','100','1025','12400','16100','15000','19000','0','0','11','39069','1','0','0','0','0','0','0','0','0','0','Tidewalker Warrior - Cast Uppercut'),
 ('2122503','21225','0','0','100','1025','13700','17300','22100','24600','0','0','11','38664','0','0','0','0','0','0','0','0','0','0','Tidewalker Warrior - Cast Frenzy'),
@@ -28094,7 +28090,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Greyheart Shield-Bearer 21231
 ('2123101','21231','0','0','100','1025','7000','13000','10800','12800','0','0','11','38630','18','512','0','0','0','0','0','0','0','0','Greyheart Shield-Bearer - Cast Shield Charge'),
 ('2123102','21231','0','0','100','1025','7300','11400','7600','12600','0','0','11','38631','4','512','0','0','0','0','0','0','0','0','Greyheart Shield-Bearer - Cast Avenger''s Shield'),
--- Greyheart Skulker
+-- Greyheart Skulker 21232
 ('2123201','21232','9','0','100','1025','0','5','4800','7900','0','0','11','38625','4','512','0','0','0','0','0','0','0','0','Greyheart Skulker - Cast Kick'),
 -- Serpentshrine Sporebat 21246
 ('2124601','21246','11','0','100','0','0','0','0','0','0','0','11','38471','0','34','0','0','0','0','0','0','0','0','Serpentshrine Sporebat - Cast Spore Burst on Spawn'),
@@ -28113,7 +28109,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2125111','21251','0','63550','100','1025','16800','22400','27700','31200','0','0','11','38971','5','768','0','0','0','0','0','0','0','0','Underbog Colossus - Cast Acid Geyser (Phase 6-10)'),
 ('2125112','21251','0','65472','100','1025','5700','11400','14400','24900','0','0','11','39032','4','512','0','0','0','0','0','0','0','0','Underbog Colossus - Cast Initial Infection (Phase 1-5)'),
 ('2125113','21251','0','65472','100','1025','14600','19700','21400','33100','0','0','11','38976','0','256','0','0','0','0','0','0','0','0','Underbog Colossus - Cast Spore Quake (Phase 1-5)'),
--- Tainted Water Elemental
+-- Tainted Water Elemental 21253
 ('2125301','21253','11','0','100','0','0','0','0','0','0','0','11','25035','0','0','0','0','0','0','0','0','0','0','Tainted Water Elemental - Cast Elemental Spawn-in on Spawn'),
 -- Purified Water Elemental (21260) - NSR
 -- Greyheart Technician 21263
@@ -28128,18 +28124,20 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2129901','21299','0','0','100','1025','3400','4800','5000','8000','0','0','11','38628','4','512','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Shadow Bolt'),
 ('2129902','21299','0','0','100','1025','8200','13700','25000','30000','0','0','11','38627','0','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Shadow Nova'),
 ('2129903','21299','0','0','100','1025','13200','18700','22900','32100','0','0','11','38626','9','0','0','0','0','0','0','0','0','0','Coilfang Fathom-Witch - Cast Domination'),
--- Coilfang Shatterer
+-- Coilfang Shatterer 21301
 ('2130101','21301','0','0','100','1025','7600','14100','18200','21500','0','0','11','38591','1','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Cast Shatter Armor'),
 ('2130102','21301','29','0','100','2','1000','1000','0','0','0','0','35','1','0','0','0','0','0','0','0','0','0','0','Coilfang Shatterer - Set Instance Data64 (SD2) on Generic Timer'),
--- Coilfang Hate-Screamer
+-- Coilfang Hate-Screamer 21339
 ('2133901','21339','0','0','100','1025','5000','9000','21000','38600','0','0','11','38491','4','512','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Silence'),
 ('2133902','21339','0','0','100','1025','6100','11200','7000','12000','0','0','11','38496','4','512','0','0','0','0','0','0','0','0','Coilfang Hate-Screamer - Cast Sonic Scream'),
 -- Coilfang Frenzy 21508
 ('2150801','21508','11','0','100','0','0','0','0','0','0','0','55','11','0','0','0','0','0','0','0','0','0','0','Coilfang Frenzy - Attack Spawner on Spawn'),
--- Greyheart Spellbinder
+-- Coilfang Frenzy Corpse 21689 - NSR
+-- Greyheart Spellbinder 21806
 ('2180601','21806','1','0','100','0','10000','10000','0','0','0','0','11','37626','0','0','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Green Beam on OOC Timer'),
 ('2180602','21806','0','0','100','1025','6800','10700','10300','13600','0','0','11','37531','4','512','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Mind Blast'),
 ('2180603','21806','13','0','100','1025','8000','12000','0','0','0','0','11','39076','1','0','0','0','0','0','0','0','0','0','Greyheart Spellbinder - Cast Spell Shock on Target Casting'),
+-- Phantom Leotheras 21812 - NSR
 -- Inner Demon (21857) - npc_inner_demon 
 -- Serpentshrine Lurker 21863
 ('2186301','21863','0','0','100','1025','8000','16000','5000','10000','0','0','11','38655','17','0','0','0','0','0','0','0','0','0','Serpentshrine Lurker - Cast Poison Bolt Volley'),
@@ -28158,48 +28156,57 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2187502','21875','5','0','100','1','0','0','1','0','0','0','1','19993','19994','19995','0','0','0','0','0','0','0','0','Shadow of Leotheras - Yell on Player Kill'),
 ('2187503','21875','0','0','100','1025','2000','3000','3000','3000','0','0','11','37674','1','0','0','0','0','0','0','0','0','0','Shadow of Leotheras - Cast Chaos Blast'),
 -- Water Globule 21913 - mob_water_globule
--- Tidewalker Lurker
+-- Tidewalker Lurker 21920
 ('2192001','21920','9','0','100','1025','0','5','5900','7100','0','0','11','41932','1','0','0','0','0','0','0','0','0','0','Tidewalker Lurker - Cast Carnivorous Bite'),
+-- Hydross the Unstable 21932 - NSR
+-- Hydross Beam Helper 21933 - NSR
+-- Hydross Cleansing Field Helper 21934 - NSR
 -- Enchanted Elemental (21958) - mob_enchanted_elemental
 -- Fathom-Guard Caribdis (21964) - boss_fathomguard_caribdis
 -- Fathom-Guard Tidalvess (21965) - boss_fathomguard_tidalvess
 -- Fathom-Guard Sharkkis (21966) - boss_fathomguard_sharkkis
--- Tainted Elemental (SD2 Backport)
+-- World Trigger (Tiny) 21987 - NSR
+-- Tainted Elemental 22009
 ('2200901','22009','11','0','100','0','0','0','0','0','0','0','21','0','0','0','0','0','0','0','0','0','0','0','Tainted Elemental - Prevent Combat Movement on Spawn'),
 ('2200902','22009','0','0','100','1025','0','0','2000','2000','0','0','11','38253','4','512','0','0','0','0','0','0','0','0','Tainted Elemental - Cast Poison Bolt'),
--- Spore Drop Trigger
-('2220701','22207','11','0','100','0','0','0','0','0','0','0','11','38575','0','0','50','0','0','0','0','0','0','0','Spore Drop Trigger - Cast Toxic Spores on Spawn and REACT_PASSIVE'),
 -- Pure Spawn of Hydross (22035) - npc_spawn_of_hydross
 -- Tainted Spawn of Hydross (22036) - npc_spawn_of_hydross
--- Coilfang Elite
+-- Coilfang Elite 22055
 ('2205501','22055','9','0','100','1025','0','5','7000','11000','0','0','11','38260','1','0','0','0','0','0','0','0','0','0','Coilfang Elite - Cast Cleave'),
 ('2205502','22055','0','0','100','1025','5000','9000','12000','15000','0','0','11','38262','1','0','0','0','0','0','0','0','0','0','Coilfang Elite - Cast Hamstring'),
--- Coilfang Strider
+-- Coilfang Strider 22056
 ('2205601','22056','9','0','100','1025','8','100','12000','18000','0','0','11','38259','1','0','0','0','0','0','0','0','0','0','Coilfang Strider - Cast Mind Blast'),
+-- Invisible Stalker Coilfang Raid Console Emotes 22057 - NSR
+-- Spitfire Totem 22091 - TotemAI
 -- Cyclone (Karathress) 22104 - npc_caribdis_cyclone
--- Fathom Lurker
+-- Fathom Lurker 22119
 ('2211901','22119','9','0','100','1025','0','8','14000','21000','0','0','11','25778','1','0','0','0','0','0','0','0','0','0','Fathom Lurker - Cast Knock Away'),
 ('2211902','22119','6','0','100','0','0','0','0','0','0','0','11','38419','0','7','0','0','0','0','0','0','0','0','Fathom Lurker - Cast Spore Explosion on Death'),
--- Fathom Sporebat
+-- Fathom Sporebat 22120
 ('2212001','22120','9','0','100','1025','0','8','14000','21000','0','0','11','25778','1','0','0','0','0','0','0','0','0','0','Fathom Sporebat - Cast Knock Away'),
 -- Toxic Spore Bat 22140 - boss_lady_vashj
+-- Spore Drop Trigger 22207
+('2220701','22207','11','0','100','0','0','0','0','0','0','0','11','38575','0','0','50','0','0','0','0','0','0','0','Spore Drop Trigger - Cast Toxic Spores on Spawn and REACT_PASSIVE'),
+-- Priestess Spirit 22210
 -- Water Elemental Totem 22236 - TotemAI
 -- Serpentshrine Tidecaller 22238
 ('2223801','22238','11','0','100','0','0','0','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Zone Combat Pulse on Spawn'),
 ('2223802','22238','7','0','100','0','0','0','0','0','0','0','41','3000','0','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Forced Despawn on Evade'),
 ('2223803','22238','0','0','100','1025','11000','13000','16000','21000','0','0','11','39035','17','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Frost Nova'),
 ('2223804','22238','0','0','100','1025','8000','14000','11000','16000','0','0','11','38623','1','0','0','0','0','0','0','0','0','0','Serpentshrine Tidecaller - Cast Water Bolt Volley'),
--- Rancid Mushroom
+-- Rancid Mushroom 22250
 ('2225001','22250','11','0','100','0','0','0','0','0','0','0','21','0','0','0','20','0','0','0','50','0','0','0','Rancid Mushroom - Stop Combat Movement and Stop Auto Attack and Set React State Passive on Spawn'),
 ('2225002','22250','29','0','100','1','1500','1500','1500','1500','0','0','11','31698','0','7','0','0','0','0','0','0','0','0','Rancid Mushroom - Cast Grow on Generic Timer'),
 ('2225003','22250','29','0','100','0','20000','20000','0','0','0','0','11','38652','0','7','37','0','0','0','0','0','0','0','Rancid Mushroom - Cast Spore Cloud and Die on Generic Timer'),
--- Mushrom Spell Effect
+-- Mushrom Spell Effect 22335
 ('2233501','22335','11','0','100','0','0','0','0','0','0','0','11','38730','0','0','0','0','0','0','0','0','0','0','Mushrom Spell Effect - Cast Refreshing Mist on Spawn'),
--- Colossus Lurker (22347)
+-- Colossus Lurker 22347
 ('2234701','22347','11','0','100','0','0','0','0','0','0','0','11','38931','0','0','0','0','0','0','0','0','0','0','Colossus Lurker - Cast Colossus Spawn Confuse on Spawn'),
--- Colossus Rager (22352)
+-- Colossus Rager 22352
 ('2235201','22352','11','0','100','0','0','0','0','0','0','0','11','38931','0','0','0','0','0','0','0','0','0','0','Colossus Rager - Cast Colossus Spawn Confuse on Spawn'),
 -- Serpentshrine Parasite (22379) - npc_serpentshrine_parasite
+-- Greater Earthbind Totem 22486 - TotemAI
+-- Greater Poison Cleansing Totem 22487 - TotemAI
 -- Seer Olum (22820) - NSR
 
 
@@ -31357,7 +31364,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2034302','20343','0','0','100','1024','1000','1000','0','0','0','0','11','35120','4','544','0','0','0','0','0','0','0','0','Charming Totem - Cast Charm'),
 -- Strength of Earth Totem 21992 - TotemAI
 -- Searing Totem 21995 - TotemAI
--- Spitfire Totem 22091 - TotemAI
 -- Arena Promoter 22101 - NSR
 -- Flame Wave II 22228
 ('2222801','22228','11','0','100','0','0','0','0','0','0','0','11','38608','0','0','0','0','0','0','0','0','0','0','Flame Wave II - Cast Flame Wave on Spawn'),
@@ -31375,8 +31381,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Legion Fel Cannon MKII 22451
 ('2245101','22451','11','0','100','0','0','0','0','0','0','0','57','3','50','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Enable TYPE_NO_MELEE_MODE on Spawn'),
 ('2245102','22451','0','0','100','1025','0','1000','2500','2500','0','0','11','36238','1','0','0','0','0','0','0','0','0','0','Legion Fel Cannon MKII - Cast Fel Cannon Blast'),
--- Greater Earthbind Totem 22486 - TotemAI
--- Greater Poison Cleansing Totem 22487 - TotemAI
 -- Cyclone Totem 22894 - TotemAI
 -- Summoned Searing Totem 22895 - TotemAI
 -- Ashtongue Searing Totem 22896 - TotemAI
