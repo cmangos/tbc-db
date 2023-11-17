@@ -25718,7 +25718,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Spectral Citizen (10384) - mobs_spectral_ghostly_citizen
 -- Ghostly Citizen (10385) - mobs_spectral_ghostly_citizen
 -- Vengeful Phantom 10387
-('1038701','10387','11','0','100','0','0','0','0','0','0','0','11','16331','0','34','0','0','0','0','0','0','0','0','Vengeful Phantom - Cast Incorporeal Defense on Spawn'),
 ('1038702','10387','1','0','100','0','1000','1000','0','0','0','0','11','22766','0','32','0','0','0','0','0','0','0','0','Vengeful Phantom - Cast Sneak OOC'),
 ('1038703','10387','9','0','100','1025','0','20','12000','16000','0','0','11','15089','4','0','0','0','0','0','0','0','0','0','Vengeful Phantom - Cast Frost Shock'),
 -- Spiteful Phantom 10388
@@ -25891,8 +25890,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Wailing Banshee 10464
 ('1046401','10464','9','0','100','1025','0','30','12000','15000','0','0','11','17105','4','32','0','0','0','0','0','0','0','0','Wailing Banshee - Cast Banshee Curse'),
 ('1046402','10464','0','0','100','1025','4000','9000','20000','27000','0','0','11','19645','0','0','0','0','0','0','0','0','0','0','Wailing Banshee - Cast Anti-Magic Shield'),
--- The Unforgiven 10516
-('1051601','10516','11','0','100','0','0','0','0','0','0','0','11','16331','0','34','0','0','0','0','0','0','0','0','The Unforgiven - Cast Incorporeal Defense on Spawn'),
+-- The Unforgiven 10516 - s.12556 tbc+ only
+('1051601','10516','11','0','100','0','0','0','0','0','0','0','11','12556','0','34','0','0','0','0','0','0','0','0','The Unforgiven - Cast Frost Armor on Spawn'),
 ('1051602','10516','1','0','100','0','1000','1000','0','0','0','0','11','22766','0','32','0','0','0','0','0','0','0','0','The Unforgiven - Cast Sneak OOC'),
 ('1051603','10516','10','0','100','0','0','30','0','0','0','0','28','0','22766','0','11','8822','0','0','0','0','0','0','The Unforgiven - Remove Permanent Stealth and Cast Temporary Stealth when Player crosses LOS OOC'),
 ('1051604','10516','0','0','100','1025','6800','10400','11500','14100','0','0','11','14907','0','0','0','0','0','0','0','0','0','0','The Unforgiven - Cast Frost Nova'),
