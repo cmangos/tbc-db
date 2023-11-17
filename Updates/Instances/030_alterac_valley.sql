@@ -4,7 +4,6 @@ DBScriptName:
 DB%Complete: 50
 DBComment:
 Frostwolf Bloodhound 14282 has 12787 prenerf?
-10991/11677/13088 has 8876 prenerf?
 11603 sometimes have s.13589 - Whitewhisker Overseer 11605 ACID seems wrong
 Frostwolf 10981 & Alterac Ram 10990 are maybe pooled
 13116/13117 ss.24237 summon 26350/26351 which use ss.46893
