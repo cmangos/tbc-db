@@ -21,6 +21,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+3, @CGUID+1, -1),
 (@SGGUID+3, @CGUID+2, -1),
 (@SGGUID+3, @CGUID+3, -1),
-(@SGGUID+3, @CGUID+4, -1);
+(@SGGUID+3, @CGUID+4, -1),
+(@SGGUID+3, @CGUID+5, -1);
 
 
