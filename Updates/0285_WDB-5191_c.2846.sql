@@ -10,7 +10,7 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `Exte
 (2846, 4291, 0, 0, 4, 0, 0, 'Silken Thread'),
 (2846, 8343, 0, 0, 5, 0, 0, 'Heavy Silken Thread'),
 (2846, 14341, 0, 0, 6, 0, 0, 'Rune Thread'),
-(2846, 38426, 0, 0, 7, 0, 0, 'Eternium Thread'),
+-- (2846, 38426, 0, 0, 7, 0, 0, 'Eternium Thread'),
 (2846, 2325, 0, 0, 8, 0, 0, 'Black Dye'),
 (2846, 6260, 0, 0, 9, 0, 0, 'Blue Dye'),
 (2846, 2604, 0, 0, 10, 0, 0, 'Red Dye'),
