@@ -369,18 +369,33 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+106, '1731', '530', '1', -1192.7974853515625, -10935.4111328125, -39.3701095581054687, 0.104719325900077819, 0, 0, 0.052335739135742187, 0.998629570007324218, '600', '600'),
 (@GGUID+107, '1731', '530', '1', -1160.035400390625, -11177.138671875, -54.44647216796875, 3.124123096466064453, 0, 0, 0.99996185302734375, 0.008734640665352344, '600', '600'),
 (@GGUID+108, '1731', '530', '1', -1224.3360595703125, -11110.0703125, -31.1177310943603515, 0.663223206996917724, 0, 0, 0.325567245483398437, 0.945518851280212402, '600', '600'),
-(@GGUID+109, '1731', '530', '1', -1250.2030029296875, -10972.3291015625, -51.3765487670898437, 3.298687219619750976, 0, 0, -0.99691677093505859, 0.078466430306434631, '600', '600');
+(@GGUID+109, '1731', '530', '1', -1250.2030029296875, -10972.3291015625, -51.3765487670898437, 3.298687219619750976, 0, 0, -0.99691677093505859, 0.078466430306434631, '600', '600'),
+(@GGUID+110, '1731', '530', '1', -1898.739990234375, -11405.2607421875, 59.994384765625, 3.996806621551513671, 0, 0, -0.90996074676513671, 0.414694398641586303, '600', '600'),
+(@GGUID+111, '1731', '530', '1', -2545.760986328125, -11210.74609375, 19.49634742736816406, 3.071766138076782226, 0, 0, 0.999390602111816406, 0.034906134009361267, '600', '600'),
+(@GGUID+112, '1731', '530', '1', -1841.701416015625, -11053.771484375, 68.1118316650390625, 4.904376029968261718, 0, 0, -0.636077880859375, 0.771624863147735595, '600', '600');
 
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+14 AND @SGGUID+19;
+
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+14 AND @SGGUID+30;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+14, 'Bloodmyst Isle - Tin Vein - Wyrmscar', 0, 1, 0, 0),
 (@SGGUID+15, 'Bloodmyst Isle - Tin Vein - Right half', 0, 1, 0, 0),
 (@SGGUID+16, 'Bloodmyst Isle - Tin Vein - Axxarien', 0, 1, 0, 0),
 (@SGGUID+17, 'Bloodmyst Isle - Tin Vein - Portal', 0, 1, 0, 0),
 (@SGGUID+18, 'Bloodmyst Isle - Tin Vein - Vector Coil', 0, 1, 0, 0),
-(@SGGUID+19, 'Bloodmyst Isle - Tin Vein - Amberweb Pass', 0, 1, 0, 0);
+(@SGGUID+19, 'Bloodmyst Isle - Tin Vein - Amberweb Pass', 0, 1, 0, 0),
+(@SGGUID+20, 'Bloodmyst Isle - Copper Vein - Blue Isle', 0, 2, 0, 0),
+(@SGGUID+21, 'Bloodmyst Isle - Copper Vein - Wyrmscar and water', 0, 2, 0, 0),
+(@SGGUID+22, 'Bloodmyst Isle - Copper Vein - Underwater', 0, 2, 0, 0),
+(@SGGUID+23, 'Bloodmyst Isle - Copper Vein - Axxarien left', 0, 2, 0, 0),
+(@SGGUID+24, 'Bloodmyst Isle - Copper Vein - Crossroads', 0, 2, 0, 0),
+(@SGGUID+25, 'Bloodmyst Isle - Copper Vein - Cryo Core', 0, 2, 0, 0),
+(@SGGUID+26, 'Bloodmyst Isle - Copper Vein - Nazzivian', 0, 2, 0, 0),
+(@SGGUID+27, 'Bloodmyst Isle - Copper Vein - South of GY', 0, 2, 0, 0),
+(@SGGUID+28, 'Bloodmyst Isle - Copper Vein - Vector Coil and Amberweb', 0, 2, 0, 0),
+(@SGGUID+29, 'Bloodmyst Isle - Copper Vein - Axxarien right', 0, 2, 0, 0),
+(@SGGUID+30, 'Bloodmyst Isle - Copper Vein - Ruins of LorethAran', 0, 2, 0, 0);
 
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+14 AND @SGGUID+19;
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+14 AND @SGGUID+30;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Wyrmscar
 (@SGGUID+14, @GGUID+1, -1),
@@ -419,6 +434,99 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+19, @GGUID+27, -1),
 (@SGGUID+19, @GGUID+30, -1),
 (@SGGUID+19, @GGUID+31, -1);
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Blue Isle
+(@SGGUID+20, @GGUID+33, -1),
+(@SGGUID+20, @GGUID+34, -1),
+(@SGGUID+20, @GGUID+35, -1),
+(@SGGUID+20, @GGUID+36, -1),
+(@SGGUID+20, @GGUID+40, -1),
+(@SGGUID+20, @GGUID+41, -1),
+(@SGGUID+20, @GGUID+42, -1),
+(@SGGUID+20, @GGUID+44, -1),
+(@SGGUID+20, @GGUID+55, -1),
+(@SGGUID+20, @GGUID+59, -1),
+(@SGGUID+20, @GGUID+60, -1),
+(@SGGUID+20, @GGUID+66, -1),
+-- Wyrmscar and water
+(@SGGUID+21, @GGUID+62, -1),
+(@SGGUID+21, @GGUID+63, -1),
+(@SGGUID+21, @GGUID+87, -1),
+(@SGGUID+21, @GGUID+88, -1),
+(@SGGUID+21, @GGUID+89, -1),
+-- Underwater
+(@SGGUID+22, @GGUID+105, -1),
+(@SGGUID+22, @GGUID+106, -1),
+(@SGGUID+22, @GGUID+107, -1),
+(@SGGUID+22, @GGUID+108, -1),
+(@SGGUID+22, @GGUID+109, -1),
+-- Axxarien left
+(@SGGUID+23, @GGUID+39, -1),
+(@SGGUID+23, @GGUID+57, -1),
+(@SGGUID+23, @GGUID+82, -1),
+(@SGGUID+23, @GGUID+103, -1),
+-- Crossroads
+(@SGGUID+24, @GGUID+38, -1),
+(@SGGUID+24, @GGUID+45, -1),
+(@SGGUID+24, @GGUID+53, -1),
+(@SGGUID+24, @GGUID+54, -1),
+(@SGGUID+24, @GGUID+58, -1),
+(@SGGUID+24, @GGUID+86, -1),
+(@SGGUID+24, @GGUID+90, -1),
+(@SGGUID+24, @GGUID+97, -1),
+(@SGGUID+24, @GGUID+101, -1),
+-- Cryo Core
+(@SGGUID+25, @GGUID+50, -1),
+(@SGGUID+25, @GGUID+51, -1),
+(@SGGUID+25, @GGUID+52, -1),
+(@SGGUID+25, @GGUID+68, -1),
+(@SGGUID+25, @GGUID+70, -1),
+(@SGGUID+25, @GGUID+71, -1),
+(@SGGUID+25, @GGUID+72, -1),
+(@SGGUID+25, @GGUID+110, -1),
+-- Nazzivian
+(@SGGUID+26, @GGUID+46, -1),
+(@SGGUID+26, @GGUID+47, -1),
+(@SGGUID+26, @GGUID+92, -1),
+(@SGGUID+26, @GGUID+93, -1),
+(@SGGUID+26, @GGUID+94, -1),
+(@SGGUID+26, @GGUID+95, -1),
+(@SGGUID+26, @GGUID+96, -1),
+(@SGGUID+26, @GGUID+98, -1),
+(@SGGUID+26, @GGUID+99, -1),
+(@SGGUID+26, @GGUID+102, -1),
+(@SGGUID+26, @GGUID+111, -1),
+-- South of GY
+(@SGGUID+27, @GGUID+48, -1),
+(@SGGUID+27, @GGUID+49, -1),
+(@SGGUID+27, @GGUID+73, -1),
+(@SGGUID+27, @GGUID+74, -1),
+(@SGGUID+27, @GGUID+75, -1),
+(@SGGUID+27, @GGUID+80, -1),
+(@SGGUID+27, @GGUID+85, -1),
+(@SGGUID+27, @GGUID+100, -1),
+(@SGGUID+27, @GGUID+112, -1),
+-- Vector Coil and Amberweb
+(@SGGUID+28, @GGUID+76, -1),
+(@SGGUID+28, @GGUID+77, -1),
+(@SGGUID+28, @GGUID+78, -1),
+(@SGGUID+28, @GGUID+79, -1),
+(@SGGUID+28, @GGUID+83, -1),
+(@SGGUID+28, @GGUID+84, -1),
+(@SGGUID+28, @GGUID+91, -1),
+(@SGGUID+28, @GGUID+104, -1),
+-- Axxarien right
+(@SGGUID+29, @GGUID+61, -1),
+(@SGGUID+29, @GGUID+64, -1),
+(@SGGUID+29, @GGUID+65, -1),
+(@SGGUID+29, @GGUID+67, -1),
+(@SGGUID+29, @GGUID+69, -1),
+(@SGGUID+29, @GGUID+81, -1),
+-- Ruins of Loretharan
+(@SGGUID+30, @GGUID+56, -1),
+(@SGGUID+30, @GGUID+43, -1),
+(@SGGUID+30, @GGUID+37, -1),
+(@SGGUID+30, @GGUID+32, -1);
 
 -- when porting adjust these accordingly
 DELETE FROM pool_gameobject WHERE guid IN(75024,75025,75051,75052,75090,75091,75099,75100,75105,75106,101242,101243);
