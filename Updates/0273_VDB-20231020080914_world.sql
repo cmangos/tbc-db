@@ -16,5 +16,8 @@ UPDATE `creature_template` SET `DamageSchool`=5 WHERE `entry`=703; -- Lieutenant
 UPDATE `creature_template` SET `DamageSchool`=2 WHERE `entry`=14467; -- Kroshius should do Fire damage, not Physical
 UPDATE `creature_template` SET `DamageSchool`=2 WHERE `entry`=3736; -- Darkslayer Mordenthal should do Fire damage, not Physical
 
+-- tbc+
+UPDATE `creature_template` SET `DamageSchool`=3 WHERE `entry`=4468; -- Jade Sludge SPELL_SCHOOL_NATURE, not SPELL_SCHOOL_NORMAL tbc+
+
 -- End of migration.
 
