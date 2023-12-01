@@ -21,8 +21,8 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 
 DELETE FROM spawn_group WHERE Id IN(@SGGUID+1,@SGGUID+2);
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+1, 'Ghostlands - Tin Vein - Underlight Mine', 0, 1, 0, 0),
-(@SGGUID+2, 'Ghostlands - Copper Vein - Underlight Mine', 0, 2, 0, 0);
+(@SGGUID+1, 'Ghostlands - Tin Vein - Underlight Mine', 1, 1, 0, 0),
+(@SGGUID+2, 'Ghostlands - Copper Vein - Underlight Mine', 1, 2, 0, 0);
 
 DELETE FROM spawn_group_spawn WHERE Id IN(@SGGUID+1,@SGGUID+2);
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
@@ -139,17 +139,17 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+3 AND @SGGUID+13;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+3, 'Azuremyst Isle - Copper Vein - Silvermyst Isle', 0, 2, 0, 0),
-(@SGGUID+4, 'Azuremyst Isle - Copper Vein - Around Exodar', 0, 2, 0, 0),
-(@SGGUID+5, 'Azuremyst Isle - Copper Vein - Lakes', 0, 2, 0, 0),
-(@SGGUID+6, 'Azuremyst Isle - Copper Vein - Ammen Ford', 0, 1, 0, 0),
-(@SGGUID+7, 'Azuremyst Isle - Copper Vein - Moongraze Woods', 0, 2, 0, 0),
-(@SGGUID+8, 'Azuremyst Isle - Copper Vein - Odesyus Landing coast', 0, 2, 0, 0),
-(@SGGUID+9, 'Azuremyst Isle - Copper Vein - Wrathscale Point coast', 0, 2, 0, 0),
-(@SGGUID+10, 'Azuremyst Isle - Copper Vein - Tides Hollow', 0, 3, 0, 0),
-(@SGGUID+11, 'Azuremyst Isle - Copper Vein - Stillpine Hold Mountain', 0, 2, 0, 0),
-(@SGGUID+12, 'Azuremyst Isle - Copper Vein - Bristlelimb Village', 0, 2, 0, 0),
-(@SGGUID+13, 'Azuremyst Isle - Copper Vein - Stillpine Hold Cave', 0, 3, 0, 0);
+(@SGGUID+3, 'Azuremyst Isle - Copper Vein - Silvermyst Isle', 1, 2, 0, 0),
+(@SGGUID+4, 'Azuremyst Isle - Copper Vein - Around Exodar', 1, 2, 0, 0),
+(@SGGUID+5, 'Azuremyst Isle - Copper Vein - Lakes', 1, 2, 0, 0),
+(@SGGUID+6, 'Azuremyst Isle - Copper Vein - Ammen Ford', 1, 1, 0, 0),
+(@SGGUID+7, 'Azuremyst Isle - Copper Vein - Moongraze Woods', 1, 2, 0, 0),
+(@SGGUID+8, 'Azuremyst Isle - Copper Vein - Odesyus Landing coast', 1, 2, 0, 0),
+(@SGGUID+9, 'Azuremyst Isle - Copper Vein - Wrathscale Point coast', 1, 2, 0, 0),
+(@SGGUID+10, 'Azuremyst Isle - Copper Vein - Tides Hollow', 1, 3, 0, 0),
+(@SGGUID+11, 'Azuremyst Isle - Copper Vein - Stillpine Hold Mountain', 1, 2, 0, 0),
+(@SGGUID+12, 'Azuremyst Isle - Copper Vein - Bristlelimb Village', 1, 2, 0, 0),
+(@SGGUID+13, 'Azuremyst Isle - Copper Vein - Stillpine Hold Cave', 1, 3, 0, 0);
 
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+3 AND @SGGUID+13;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
@@ -377,25 +377,25 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+14 AND @SGGUID+30;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+14, 'Bloodmyst Isle - Tin Vein - Wyrmscar', 0, 1, 0, 0),
-(@SGGUID+15, 'Bloodmyst Isle - Tin Vein - Right half', 0, 1, 0, 0),
-(@SGGUID+16, 'Bloodmyst Isle - Tin Vein - Axxarien', 0, 1, 0, 0),
-(@SGGUID+17, 'Bloodmyst Isle - Tin Vein - Portal', 0, 1, 0, 0),
-(@SGGUID+18, 'Bloodmyst Isle - Tin Vein - Vector Coil', 0, 1, 0, 0),
-(@SGGUID+19, 'Bloodmyst Isle - Tin Vein - Amberweb Pass', 0, 1, 0, 0),
-(@SGGUID+20, 'Bloodmyst Isle - Copper Vein - Blue Isle', 0, 2, 0, 0),
-(@SGGUID+21, 'Bloodmyst Isle - Copper Vein - Wyrmscar and water', 0, 2, 0, 0),
-(@SGGUID+22, 'Bloodmyst Isle - Copper Vein - Underwater', 0, 2, 0, 0),
-(@SGGUID+23, 'Bloodmyst Isle - Copper Vein - Axxarien left', 0, 2, 0, 0),
-(@SGGUID+24, 'Bloodmyst Isle - Copper Vein - Crossroads', 0, 2, 0, 0),
-(@SGGUID+25, 'Bloodmyst Isle - Copper Vein - Cryo Core', 0, 2, 0, 0),
-(@SGGUID+26, 'Bloodmyst Isle - Copper Vein - Nazzivian', 0, 2, 0, 0),
-(@SGGUID+27, 'Bloodmyst Isle - Copper Vein - South of GY', 0, 2, 0, 0),
-(@SGGUID+28, 'Bloodmyst Isle - Copper Vein - Vector Coil and Amberweb', 0, 2, 0, 0),
-(@SGGUID+29, 'Bloodmyst Isle - Copper Vein - Axxarien right', 0, 2, 0, 0),
-(@SGGUID+30, 'Bloodmyst Isle - Copper Vein - Ruins of LorethAran', 0, 2, 0, 0);
+(@SGGUID+14, 'Bloodmyst Isle - Tin Vein - Wyrmscar', 1, 1, 0, 0),
+(@SGGUID+15, 'Bloodmyst Isle - Tin Vein - Right half', 1, 1, 0, 0),
+(@SGGUID+16, 'Bloodmyst Isle - Tin Vein - Axxarien', 1, 1, 0, 0),
+(@SGGUID+17, 'Bloodmyst Isle - Tin Vein - Portal', 1, 1, 0, 0),
+(@SGGUID+18, 'Bloodmyst Isle - Tin Vein - Vector Coil', 1, 1, 0, 0),
+(@SGGUID+19, 'Bloodmyst Isle - Tin Vein - Amberweb Pass', 1, 1, 0, 0),
+(@SGGUID+20, 'Bloodmyst Isle - Copper Vein - Blue Isle', 1, 2, 0, 0),
+(@SGGUID+21, 'Bloodmyst Isle - Copper Vein - Wyrmscar and water', 1, 2, 0, 0),
+(@SGGUID+22, 'Bloodmyst Isle - Copper Vein - Underwater', 1, 2, 0, 0),
+(@SGGUID+23, 'Bloodmyst Isle - Copper Vein - Axxarien left', 1, 2, 0, 0),
+(@SGGUID+24, 'Bloodmyst Isle - Copper Vein - Crossroads', 1, 2, 0, 0),
+(@SGGUID+25, 'Bloodmyst Isle - Copper Vein - Cryo Core', 1, 2, 0, 0),
+(@SGGUID+26, 'Bloodmyst Isle - Copper Vein - Nazzivian', 1, 2, 0, 0),
+(@SGGUID+27, 'Bloodmyst Isle - Copper Vein - South of GY', 1, 2, 0, 0),
+(@SGGUID+28, 'Bloodmyst Isle - Copper Vein - Vector Coil and Amberweb', 1, 2, 0, 0),
+(@SGGUID+29, 'Bloodmyst Isle - Copper Vein - Axxarien right', 1, 2, 0, 0),
+(@SGGUID+30, 'Bloodmyst Isle - Copper Vein - Ruins of LorethAran', 1, 2, 0, 0);
 
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+14 AND @SGGUID+30;
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+14 AND @SGGUID+30;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Wyrmscar
 (@SGGUID+14, @GGUID+1, -1),
@@ -625,9 +625,9 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+31 AND @SGGUID+33;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+31, 'Ghostlands - Tin Vein - Deatholme', 0, 1, 0, 0),
-(@SGGUID+32, 'Ghostlands - Tin Vein - Scar and Zul', 0, 2, 0, 0),
-(@SGGUID+33, 'Ghostlands - Tin Vein - ZebTela', 0, 1, 0, 0);
+(@SGGUID+31, 'Ghostlands - Tin Vein - Deatholme', 1, 1, 0, 0),
+(@SGGUID+32, 'Ghostlands - Tin Vein - Scar and Zul', 1, 2, 0, 0),
+(@SGGUID+33, 'Ghostlands - Tin Vein - ZebTela', 1, 1, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Deatholme
@@ -657,14 +657,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+34 AND @SGGUID+41;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+34, 'Ghostlands - Copper Vein - Deatholme', 0, 2, 0, 0),
-(@SGGUID+35, 'Ghostlands - Copper Vein - Dawnstar Spire', 0, 2, 0, 0),
-(@SGGUID+36, 'Ghostlands - Copper Vein - Suncrown Village', 0, 2, 0, 0),
-(@SGGUID+37, 'Ghostlands - Copper Vein - Sanctum of the Sun', 0, 2, 0, 0),
-(@SGGUID+38, 'Ghostlands - Copper Vein - Goldenmist Village', 0, 2, 0, 0),
-(@SGGUID+39, 'Ghostlands - Copper Vein - Andaroth', 0, 2, 0, 0),
-(@SGGUID+40, 'Ghostlands - Copper Vein - Windrunner Spire', 0, 2, 0, 0),
-(@SGGUID+41, 'Ghostlands - Copper Vein - The Dead Scar', 0, 2, 0, 0);
+(@SGGUID+34, 'Ghostlands - Copper Vein - Deatholme', 1, 2, 0, 0),
+(@SGGUID+35, 'Ghostlands - Copper Vein - Dawnstar Spire', 1, 2, 0, 0),
+(@SGGUID+36, 'Ghostlands - Copper Vein - Suncrown Village', 1, 2, 0, 0),
+(@SGGUID+37, 'Ghostlands - Copper Vein - Sanctum of the Sun', 1, 2, 0, 0),
+(@SGGUID+38, 'Ghostlands - Copper Vein - Goldenmist Village', 1, 2, 0, 0),
+(@SGGUID+39, 'Ghostlands - Copper Vein - Andaroth', 1, 2, 0, 0),
+(@SGGUID+40, 'Ghostlands - Copper Vein - Windrunner Spire', 1, 2, 0, 0),
+(@SGGUID+41, 'Ghostlands - Copper Vein - The Dead Scar', 1, 2, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Deatholme
@@ -869,23 +869,23 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+42 AND @SGGUID+58;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+42, 'Eversong Woods - Copper Vein - Duskwither Spire', 0, 2, 0, 0),
-(@SGGUID+43, 'Eversong Woods - Copper Vein - Road to Duskwither', 0, 2, 0, 0),
-(@SGGUID+44, 'Eversong Woods - Copper Vein - Torwatha', 0, 2, 0, 0),
-(@SGGUID+45, 'Eversong Woods - Copper Vein - Water', 0, 2, 0, 0),
-(@SGGUID+46, 'Eversong Woods - Copper Vein - East Sanctum', 0, 2, 0, 0),
-(@SGGUID+47, 'Eversong Woods - Copper Vein - North Scar', 0, 2, 0, 0),
-(@SGGUID+48, 'Eversong Woods - Copper Vein - South Scar', 0, 2, 0, 0),
-(@SGGUID+49, 'Eversong Woods - Copper Vein - West of Farstrider Retreat', 0, 2, 0, 0),
-(@SGGUID+50, 'Eversong Woods - Copper Vein - South of Fairbreeze Village', 0, 2, 0, 0),
-(@SGGUID+51, 'Eversong Woods - Copper Vein - Sunsail Anchorage', 0, 2, 0, 0),
-(@SGGUID+52, 'Eversong Woods - Copper Vein - West Sanctum island', 0, 2, 0, 0),
-(@SGGUID+53, 'Eversong Woods - Copper Vein - Around Scorched Grove', 0, 2, 0, 0),
-(@SGGUID+54, 'Eversong Woods - Copper Vein - Cliffs', 0, 2, 0, 0),
-(@SGGUID+55, 'Eversong Woods - Copper Vein - Runestone Shandor', 0, 2, 0, 0),
-(@SGGUID+56, 'Eversong Woods - Copper Vein - North Sanctum', 0, 2, 0, 0),
-(@SGGUID+57, 'Eversong Woods - Copper Vein - South of North Sanctum', 0, 2, 0, 0),
-(@SGGUID+58, 'Eversong Woods - Copper Vein - North of Fairbreeze Village', 0, 2, 0, 0);
+(@SGGUID+42, 'Eversong Woods - Copper Vein - Duskwither Spire', 1, 2, 0, 0),
+(@SGGUID+43, 'Eversong Woods - Copper Vein - Road to Duskwither', 1, 2, 0, 0),
+(@SGGUID+44, 'Eversong Woods - Copper Vein - Torwatha', 1, 2, 0, 0),
+(@SGGUID+45, 'Eversong Woods - Copper Vein - Water', 1, 2, 0, 0),
+(@SGGUID+46, 'Eversong Woods - Copper Vein - East Sanctum', 1, 2, 0, 0),
+(@SGGUID+47, 'Eversong Woods - Copper Vein - North Scar', 1, 2, 0, 0),
+(@SGGUID+48, 'Eversong Woods - Copper Vein - South Scar', 1, 2, 0, 0),
+(@SGGUID+49, 'Eversong Woods - Copper Vein - West of Farstrider Retreat', 1, 2, 0, 0),
+(@SGGUID+50, 'Eversong Woods - Copper Vein - South of Fairbreeze Village', 1, 2, 0, 0),
+(@SGGUID+51, 'Eversong Woods - Copper Vein - Sunsail Anchorage', 1, 2, 0, 0),
+(@SGGUID+52, 'Eversong Woods - Copper Vein - West Sanctum island', 1, 3, 0, 0),
+(@SGGUID+53, 'Eversong Woods - Copper Vein - Around Scorched Grove', 1, 2, 0, 0),
+(@SGGUID+54, 'Eversong Woods - Copper Vein - Cliffs', 1, 2, 0, 0),
+(@SGGUID+55, 'Eversong Woods - Copper Vein - Runestone Shandor', 1, 2, 0, 0),
+(@SGGUID+56, 'Eversong Woods - Copper Vein - North Sanctum', 1, 2, 0, 0),
+(@SGGUID+57, 'Eversong Woods - Copper Vein - South of North Sanctum', 1, 2, 0, 0),
+(@SGGUID+58, 'Eversong Woods - Copper Vein - North of Fairbreeze Village', 1, 2, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Duskwither Spire
@@ -1037,5 +1037,9 @@ DELETE FROM pool_gameobject WHERE guid IN(101340,101341,101343,101344,101346,101
 DELETE FROM pool_gameobject WHERE guid IN(101358,101359,101361,101362,101364,101365,101367,101368,101370,101371,101373,101374);
 DELETE FROM pool_gameobject WHERE guid IN(101376,101377,101379,101380,101382,101383,101385,101386,101388,101389,111262,111263);
 DELETE FROM pool_gameobject WHERE guid IN(111264,111265,5300605,5300606,5300608,5300609,5300611,5300612,5300614,5300615,5300617,5300618,5300620,5300621);
+DELETE FROM pool_gameobject WHERE guid IN(75000,75001,75003,75004,75006,75007,75009,75010,75012,75013,75015,75016);
+DELETE FROM pool_gameobject a WHERE guid NOT IN(SELECT guid FROM gameobject b WHERE a.guid=b.guid) AND guid BETWEEN 75018 AND 75118;
+DELETE FROM pool_gameobject a WHERE guid NOT IN(SELECT guid FROM gameobject b WHERE a.guid=b.guid) AND guid BETWEEN 5301069 AND 5301151;
+DELETE FROM pool_gameobject a WHERE guid NOT IN(SELECT guid FROM gameobject b WHERE a.guid=b.guid) AND guid BETWEEN 5301507 AND 5301531;
 
--- TODO: This file will still change
+DELETE FROM pool_template WHERE entry IN(2012,2036,2037);
