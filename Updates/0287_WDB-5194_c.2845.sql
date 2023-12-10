@@ -14,13 +14,13 @@ INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `Exte
 (2845, 2448, 0, 0, 8, 0, 0, 'Heavy Pavise'),
 (2845, 12257, 1, 9000, 9, 0, 0, 'Heavy Notched Belt'); -- missing
 
-UPDATE npc_vendor_template SET Slot = 1 WHERE entry IN (2845) AND item = 2417; -- Augmented Chain Vest
-UPDATE npc_vendor_template SET Slot = 2 WHERE entry IN (2845) AND item = 2419; -- Augmented Chain Belt
-UPDATE npc_vendor_template SET Slot = 3 WHERE entry IN (2845) AND item = 2418; -- Augmented Chain Leggings
-UPDATE npc_vendor_template SET Slot = 4 WHERE entry IN (2845) AND item = 2420; -- Augmented Chain Boots
-UPDATE npc_vendor_template SET Slot = 5 WHERE entry IN (2845) AND item = 2421; -- Augmented Chain Bracers
-UPDATE npc_vendor_template SET Slot = 6 WHERE entry IN (2845) AND item = 2422; -- Augmented Chain Gloves
-UPDATE npc_vendor_template SET Slot = 7 WHERE entry IN (2845) AND item = 3891; -- Augmented Chain Helm
-UPDATE npc_vendor_template SET Slot = 8 WHERE entry IN (2845) AND item = 17189; -- Metal Buckler
-UPDATE npc_vendor_template SET Slot = 9 WHERE entry IN (2845) AND item = 2448; -- Heavy Pavise
+UPDATE npc_vendor_template SET Slot = 1 WHERE entry IN (237) AND item = 2417; -- Augmented Chain Vest
+UPDATE npc_vendor_template SET Slot = 2 WHERE entry IN (237) AND item = 2419; -- Augmented Chain Belt
+UPDATE npc_vendor_template SET Slot = 3 WHERE entry IN (237) AND item = 2418; -- Augmented Chain Leggings
+UPDATE npc_vendor_template SET Slot = 4 WHERE entry IN (237) AND item = 2420; -- Augmented Chain Boots
+UPDATE npc_vendor_template SET Slot = 5 WHERE entry IN (237) AND item = 2421; -- Augmented Chain Bracers
+UPDATE npc_vendor_template SET Slot = 6 WHERE entry IN (237) AND item = 2422; -- Augmented Chain Gloves
+UPDATE npc_vendor_template SET Slot = 7 WHERE entry IN (237) AND item = 3891; -- Augmented Chain Helm
+UPDATE npc_vendor_template SET Slot = 8 WHERE entry IN (237) AND item = 17189; -- Metal Buckler
+UPDATE npc_vendor_template SET Slot = 9 WHERE entry IN (237) AND item = 2448; -- Heavy Pavise
 

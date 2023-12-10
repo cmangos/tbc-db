@@ -214,3 +214,34 @@ UPDATE `npc_vendor` SET `incrtime` = 604800 WHERE `entry` = 15471;
 REPLACE INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`) VALUES
 (14846, 13465, 4, 7200);
 
+-- update
+-- 1313
+DELETE FROM `npc_vendor` WHERE `entry` = 1313 AND `item` IN (785,2447,2449,2453,3355,3356);
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(1313, 785, 4, 7200, 0, 0, 'Mageroyal'), -- 2
+(1313, 2447, 3, 7200, 0, 0, 'Peacebloom'),
+(1313, 2449, 6, 7200, 0, 0, 'Earthroot'), -- 2
+(1313, 2453, 2, 7200, 0, 0, 'Bruiseweed'),
+(1313, 3355, 1, 7200, 0, 0, 'Wild Steelbloom'),
+(1313, 3356, 1, 7200, 0, 0, 'Kingsblood');
+
+UPDATE `creature_template` SET `VendorTemplateId` = 0 WHERE `entry` = 14337;
+DELETE FROM `npc_vendor` WHERE `entry` = 14337; -- 2 more items in wotlk
+INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `condition_id`, `comments`) VALUES
+(14337, 5956, 0, 0, 1, 0, 'Blacksmith Hammer'),
+(14337, 2901, 0, 0, 2, 0, 'Mining Pick'),
+(14337, 4399, 0, 0, 3, 0, 'Wooden Stock'),
+(14337, 4400, 0, 0, 4, 0, 'Heavy Stock'),
+(14337, 2880, 0, 0, 5, 0, 'Weak Flux'),
+(14337, 3466, 0, 0, 6, 0, 'Strong Flux'),
+(14337, 10648, 0, 0, 7, 0, 'Blank Parchment'),
+(14337, 10647, 0, 0, 8, 0, 'Engineer\'s Ink'),
+(14337, 4357, 4, 604800, 9, 0, 'Rough Blasting Powder'),
+(14337, 4364, 4, 604800, 10, 0, 'Coarse Blasting Powder');
+
+-- Lieutenant General Andorov
+UPDATE `npc_vendor` SET `slot`=2, `maxcount`=5 WHERE `entry`=15471 && `item`=13444; -- Major Mana Potion
+UPDATE `npc_vendor` SET `slot`=1, `maxcount`=5 WHERE `entry`=15471 && `item`=13446; -- Major Healing Potion
+UPDATE `npc_vendor` SET `slot`=3, `maxcount`=20 WHERE `entry`=15471 && `item`=14530; -- Heavy Runecloth Bandage
+UPDATE `npc_vendor` SET `slot`=4 WHERE `entry`=15471 && `item`=22219; -- Plans: Jagged Obsidian Shield
+UPDATE `npc_vendor` SET `slot`=5 WHERE `entry`=15471 && `item`=22221; -- Plans: Obsidian Mail Tunic
