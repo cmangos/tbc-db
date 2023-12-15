@@ -941,7 +941,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+43, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 004', 0, 2, 0, 1, 0),
 -- Way to endboss
 (@SGGUID+44, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 001', 0, 2, 0, 1, 0), 
-(@SGGUID+45, 'Shattered Halls - Shattered Hand Assassin (7)', 0, 6, 0, 0), -- 6 static spawned assasins before endboss
+(@SGGUID+45, 'Shattered Halls - Shattered Hand Assassin (7)', 0, 6, 0, 0, 0), -- 6 static spawned assasins before endboss
 (@SGGUID+46, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001', 0, 3, 0, 1, 0),
 (@SGGUID+47, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 002', 0, 2, 0, 1, 0);
 
@@ -1292,11 +1292,19 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
+-- StringIDs
+DELETE FROM string_id WHERE Id IN (@STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6);
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+3, 'Shattered Halls - Halls of Father Group 002'),
+(@STRINGID+4, 'Shattered Halls - Halls of Father Group 003'),
+(@STRINGID+5, 'Shattered Halls - Halls of Father Group 004'),
+(@STRINGID+6, 'Shattered Halls - Halls of Father Group 005');
+
 -- =========
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_relay WHERE id IN (10113,10114, 10198, @RELAYID+2, @RELAYID+3, @RELAYID+4);
+DELETE FROM dbscripts_on_relay WHERE id IN (10113,10114, 10198, @RELAYID+2, @RELAYID+3, @RELAYID+4, @RELAYID+5, @RELAYID+6, @RELAYID+7);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Shattered Hand Legionnaire 001 script 1
 (10113,0,0,0,10051,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
@@ -1332,9 +1340,33 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+3,0,0,35,7,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event C'),
 -- Shattered Hand Legionnaire 002 force cheer
 (@RELAYID+4,0,0,0,0,0,0,0,0,0,12683,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - say'),
-(@RELAYID+4,0,0,35,8,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event D');
+(@RELAYID+4,0,0,35,8,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event D'),
+-- Shattered Hand Legionnaire 002 talk event StringId+3
+(@RELAYID+5,0,0,45,0,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% ftalk event 1, 50% talk event 2'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+3 - script 1
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+6,0,0,31,0,2,0,@STRINGID+3,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+6,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+6,1,2,37,0,0,2,@STRINGID+3,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+6,1,3,28,0,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+6,2000,0,36,0,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - face Legionnaire'),
+(@RELAYID+6,4000,0,28,8,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate kneel'),
+(@RELAYID+6,4000,1,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote point'),
+(@RELAYID+6,4000,1,0,0,0,0,0,0,0,12687,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+6,7000,1,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote laugh'),
+(@RELAYID+6,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+3 - script 1
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+7,0,0,31,0,2,0,@STRINGID+3,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+7,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+7,1,2,37,0,0,2,@STRINGID+3,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+7,1000,0,28,0,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+7,1000,1,1,66,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - emote salute'),
+(@RELAYID+7,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote OneShotExclamation'),
+(@RELAYID+7,4000,0,1,@RELAYID+5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+7,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint');
 
-DELETE FROM dbscript_random_templates WHERE id IN (10050,10051,10052,10053,10054);
+DELETE FROM dbscript_random_templates WHERE id IN (10050,10051,10052,10053,10054, @RELAYID+2, @RELAYID+3, @RELAYID+4);
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Shattered Hand Legionnaire 001 script
 (10050, 1, 10113, 10, 'Shattered Hand Legionnaire - yell'),
@@ -1349,12 +1381,17 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (10051, 0, 16346, 0, 'Shattered Hand Legionnaire - random yell 5'),
 -- Shattered Hand Legionnaire 002 mainscript - started via dbscript_on_creature_movement
 (@RELAYID+2, 1, @RELAYID+2, 10, 'Shattered Hand Legionnaire - force bow/cheer'),
+(@RELAYID+2, 1, @RELAYID+5, 10, 'Shattered Hand Legionnaire - talk event stringid+3'),
 (@RELAYID+2, 1, 0, 90, 'Shattered Hand Legionnaire - nothing'),
 -- Shattered Hand Legionnaire 002 bow/cheer
 (@RELAYID+3, 1, @RELAYID+3, 0, 'Shattered Hand Legionnaire - force bow'),
-(@RELAYID+3, 1, @RELAYID+4, 0, 'Shattered Hand Legionnaire - force cheer');
-
-
+(@RELAYID+3, 1, @RELAYID+4, 0, 'Shattered Hand Legionnaire - force cheer'),
+-- Shattered Hand Legionnaire 002 - stringid+3 talk event
+(@RELAYID+4, 1, @RELAYID+6, 0, 'Shattered Hand Legionnaire - talk event 1'),
+(@RELAYID+4, 1, @RELAYID+7, 0, 'Shattered Hand Legionnaire - talk event 2'),
+-- Shattered Hand Legionnaire 002 - Talk Event 2 - 2 different Texts
+(@RELAYID+5, 0, 12686, 0, 'Shattered Hand Legionnaire - talk event 2 - text'),
+(@RELAYID+5, 0, 12685, 0, 'Shattered Hand Legionnaire - talk event 2 - text');
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001, 1670002, 1742001, 1746201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
