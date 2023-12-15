@@ -890,19 +890,19 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0, 0),
 -- Entrance
--- (@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 2, 0, 1, 0),
--- (@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 2, 0, 1, 0),
+-- (@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 2, 0, 1, @STRINGID),
+-- (@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 2, 0, 1, @STRINGID),
 -- Halls of Father
 (@SGGUID+4, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 001', 0, 2, 0, 1, 0),
 -- Legionnaire Group 2 - not grouped with their legionnaire
-(@SGGUID+5, 'Shattered Halls - Halls of Father Group 002 - Normal', 0, 2, 0, 1, 0),
-(@SGGUID+6, 'Shattered Halls - Halls of Father Group 002 - Heroic', 0, 2, 0, 1, 0),
-(@SGGUID+7, 'Shattered Halls - Halls of Father Group 003 - Normal', 0, 2, 0, 1, 0),
-(@SGGUID+8, 'Shattered Halls - Halls of Father Group 003 - Heroic', 0, 2, 0, 1, 0),
-(@SGGUID+9, 'Shattered Halls - Halls of Father Group 004 - Normal', 0, 2, 0, 1, 0),
-(@SGGUID+10, 'Shattered Halls - Halls of Father Group 004 - Heroic', 0, 2, 0, 1, 0),
-(@SGGUID+11, 'Shattered Halls - Halls of Father Group 005 - Normal', 0, 2, 0, 1), 0,
-(@SGGUID+12, 'Shattered Halls - Halls of Father Group 005 - Heroic', 0, 2, 0, 1), 0,
+(@SGGUID+5, 'Shattered Halls - Halls of Father Group 002 - Normal', 0, 2, 0, 1, @STRINGID+3),
+(@SGGUID+6, 'Shattered Halls - Halls of Father Group 002 - Heroic', 0, 2, 0, 1, @STRINGID+3),
+(@SGGUID+7, 'Shattered Halls - Halls of Father Group 003 - Normal', 0, 2, 0, 1, @STRINGID+4),
+(@SGGUID+8, 'Shattered Halls - Halls of Father Group 003 - Heroic', 0, 2, 0, 1, @STRINGID+4),
+(@SGGUID+9, 'Shattered Halls - Halls of Father Group 004 - Normal', 0, 2, 0, 1, @STRINGID+5),
+(@SGGUID+10, 'Shattered Halls - Halls of Father Group 004 - Heroic', 0, 2, 0, 1, @STRINGID+5),
+(@SGGUID+11, 'Shattered Halls - Halls of Father Group 005 - Normal', 0, 2, 0, 1, @STRINGID+6),
+(@SGGUID+12, 'Shattered Halls - Halls of Father Group 005 - Heroic', 0, 2, 0, 1, @STRINGID+6),
 (@SGGUID+13, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 006', 0, 2, 0, 1, 0),  -- This group is Important - on GroupDeath they trigger spawning of Legionnaire Group 003
 (@SGGUID+14, 'Shattered Halls - Shattered Hand Legionnaire Group 003', 0, 5, 0, 3, 0), -- spawned when group 14 is dead
 (@SGGUID+15, 'Shattered Halls - Shattered Hand Legionnaire Group 004', 0, 5, 0, 3, 0), 
