@@ -887,63 +887,63 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 -- SPAWN GROUPS
 -- ======
 
-INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0),
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+(@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0, 0),
 -- Entrance
--- (@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 2, 0, 1),
--- (@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 2, 0, 1),
+-- (@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 2, 0, 1, 0),
+-- (@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 2, 0, 1, 0),
 -- Halls of Father
-(@SGGUID+4, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 001', 0, 2, 0, 1),
+(@SGGUID+4, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 001', 0, 2, 0, 1, 0),
 -- Legionnaire Group 2 - not grouped with their legionnaire
-(@SGGUID+5, 'Shattered Halls - Halls of Father Group 002 - Normal', 0, 2, 0, 1),
-(@SGGUID+6, 'Shattered Halls - Halls of Father Group 002 - Heroic', 0, 2, 0, 1),
-(@SGGUID+7, 'Shattered Halls - Halls of Father Group 003 - Normal', 0, 2, 0, 1),
-(@SGGUID+8, 'Shattered Halls - Halls of Father Group 003 - Heroic', 0, 2, 0, 1),
-(@SGGUID+9, 'Shattered Halls - Halls of Father Group 004 - Normal', 0, 2, 0, 1),
-(@SGGUID+10, 'Shattered Halls - Halls of Father Group 004 - Heroic', 0, 2, 0, 1),
-(@SGGUID+11, 'Shattered Halls - Halls of Father Group 005 - Normal', 0, 2, 0, 1),
-(@SGGUID+12, 'Shattered Halls - Halls of Father Group 005 - Heroic', 0, 2, 0, 1),
-(@SGGUID+13, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 006', 0, 2, 0, 1),  -- This group is Important - on GroupDeath they trigger spawning of Legionnaire Group 003
-(@SGGUID+14, 'Shattered Halls - Shattered Hand Legionnaire Group 003', 0, 5, 0, 3), -- spawned when group 14 is dead
-(@SGGUID+15, 'Shattered Halls - Shattered Hand Legionnaire Group 004', 0, 5, 0, 3), 
-(@SGGUID+16, 'Shattered Halls - Shattered Hand Legionnaire Group 005', 0, 6, 0, 3), 
-(@SGGUID+17, 'Shattered Halls - Shattered Hand Legionnaire Group 006', 0, 7, 0, 1), 
-(@SGGUID+18, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2)', 0, 3, 0, 1), 
+(@SGGUID+5, 'Shattered Halls - Halls of Father Group 002 - Normal', 0, 2, 0, 1, 0),
+(@SGGUID+6, 'Shattered Halls - Halls of Father Group 002 - Heroic', 0, 2, 0, 1, 0),
+(@SGGUID+7, 'Shattered Halls - Halls of Father Group 003 - Normal', 0, 2, 0, 1, 0),
+(@SGGUID+8, 'Shattered Halls - Halls of Father Group 003 - Heroic', 0, 2, 0, 1, 0),
+(@SGGUID+9, 'Shattered Halls - Halls of Father Group 004 - Normal', 0, 2, 0, 1, 0),
+(@SGGUID+10, 'Shattered Halls - Halls of Father Group 004 - Heroic', 0, 2, 0, 1, 0),
+(@SGGUID+11, 'Shattered Halls - Halls of Father Group 005 - Normal', 0, 2, 0, 1), 0,
+(@SGGUID+12, 'Shattered Halls - Halls of Father Group 005 - Heroic', 0, 2, 0, 1), 0,
+(@SGGUID+13, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 006', 0, 2, 0, 1, 0),  -- This group is Important - on GroupDeath they trigger spawning of Legionnaire Group 003
+(@SGGUID+14, 'Shattered Halls - Shattered Hand Legionnaire Group 003', 0, 5, 0, 3, 0), -- spawned when group 14 is dead
+(@SGGUID+15, 'Shattered Halls - Shattered Hand Legionnaire Group 004', 0, 5, 0, 3, 0), 
+(@SGGUID+16, 'Shattered Halls - Shattered Hand Legionnaire Group 005', 0, 6, 0, 3, 0), 
+(@SGGUID+17, 'Shattered Halls - Shattered Hand Legionnaire Group 006', 0, 7, 0, 1, 0), 
+(@SGGUID+18, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2)', 0, 3, 0, 1, 0), 
 -- The Sewer
-(@SGGUID+19, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 001', 0, 6, 0, 1), 
-(@SGGUID+20, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 002', 0, 6, 0, 1), 
-(@SGGUID+21, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 003', 0, 6, 0, 1), 
-(@SGGUID+22, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 004', 0, 6, 0, 1), 
-(@SGGUID+23, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 005', 0, 6, 0, 1), 
-(@SGGUID+24, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 006', 0, 6, 0, 1), 
+(@SGGUID+19, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 001', 0, 6, 0, 1, 0), 
+(@SGGUID+20, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 002', 0, 6, 0, 1, 0), 
+(@SGGUID+21, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 003', 0, 6, 0, 1, 0), 
+(@SGGUID+22, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 004', 0, 6, 0, 1, 0), 
+(@SGGUID+23, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 005', 0, 6, 0, 1, 0), 
+(@SGGUID+24, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 006', 0, 6, 0, 1, 0), 
 -- Shattered Hand Assasins with multiple spawns after 1st Boss, only 1 spawned
-(@SGGUID+25, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 1, 0, 0), 
+(@SGGUID+25, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 1, 0, 0, 0), 
 -- Gauntlet of Flame
-(@SGGUID+26, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 4, 0, 3), -- On Aggro gauntlet starts
-(@SGGUID+27, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 8, @SGGUID+4, 10), -- 8 Zealots that getting spawned when Scout reachs the end of his path
-(@SGGUID+28, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 4, 0, 3), -- 4 Zealots before archer blood guard group
-(@SGGUID+29, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard ends gauntlet on normal
-(@SGGUID+30, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard Porung ends gauntlet on Heroic
-(@SGGUID+31, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 001', 0, 5, 0, 7),
-(@SGGUID+32, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 002', 0, 5, 0, 7),
-(@SGGUID+33, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 003', 0, 5, 0, 7),
-(@SGGUID+34, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 004', 0, 5, 0, 7),
+(@SGGUID+26, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 4, 0, 3, 0), -- On Aggro gauntlet starts
+(@SGGUID+27, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 8, @SGGUID+4, 10, 0), -- 8 Zealots that getting spawned when Scout reachs the end of his path
+(@SGGUID+28, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 4, 0, 3, 0), -- 4 Zealots before archer blood guard group
+(@SGGUID+29, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3, 0), -- Blood Guard ends gauntlet on normal
+(@SGGUID+30, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3, 0), -- Blood Guard Porung ends gauntlet on Heroic
+(@SGGUID+31, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 001', 0, 5, 0, 7, 0),
+(@SGGUID+32, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 002', 0, 5, 0, 7, 0),
+(@SGGUID+33, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 003', 0, 5, 0, 7, 0),
+(@SGGUID+34, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 004', 0, 5, 0, 7, 0),
 -- Legionnaire Group 7 
-(@SGGUID+35, 'Shattered Halls - Shattered Hand Legionnaire Group 007', 0, 6, 0, 1),
-(@SGGUID+36, 'Shattered Halls - Sparring Hall Group 001', 0, 3, 0, 0), -- Dummy Group with spawn_group_entry
+(@SGGUID+35, 'Shattered Halls - Shattered Hand Legionnaire Group 007', 0, 6, 0, 1, 0),
+(@SGGUID+36, 'Shattered Halls - Sparring Hall Group 001', 0, 3, 0, 0, 0), -- Dummy Group with spawn_group_entry
 -- Legionnaire Group 8 
-(@SGGUID+37, 'Shattered Halls - Shattered Hand Legionnaire 008', 0, 6, 0, 1),
-(@SGGUID+38, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001', 0, 3, 0, 1),
--- (@SGGUID+39, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 0, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet how when he gets spawned
-(@SGGUID+40, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
-(@SGGUID+41, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 003', 0, 2, 0, 1),
-(@SGGUID+42, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002', 0, 3, 0, 1),
-(@SGGUID+43, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 004', 0, 2, 0, 1),
+(@SGGUID+37, 'Shattered Halls - Shattered Hand Legionnaire 008', 0, 6, 0, 1, 0),
+(@SGGUID+38, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001', 0, 3, 0, 1, 0),
+-- (@SGGUID+39, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 0, 0, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet when he gets spawned
+(@SGGUID+40, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1, 0), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
+(@SGGUID+41, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 003', 0, 2, 0, 1, 0),
+(@SGGUID+42, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002', 0, 3, 0, 1, 0),
+(@SGGUID+43, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 004', 0, 2, 0, 1, 0),
 -- Way to endboss
-(@SGGUID+44, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 001', 0, 2, 0, 1), 
+(@SGGUID+44, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 001', 0, 2, 0, 1, 0), 
 (@SGGUID+45, 'Shattered Halls - Shattered Hand Assassin (7)', 0, 6, 0, 0), -- 6 static spawned assasins before endboss
-(@SGGUID+46, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001', 0, 3, 0, 1),
-(@SGGUID+47, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 002', 0, 2, 0, 1);
+(@SGGUID+46, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001', 0, 3, 0, 1, 0),
+(@SGGUID+47, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 002', 0, 2, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+1, 184940, 0, 0, 0), (@SGGUID+1, 184941, 0, 0, 0), -- Bound Adamantite Chest, Solid Adamantite Chest-- Legionnaire Group 8
