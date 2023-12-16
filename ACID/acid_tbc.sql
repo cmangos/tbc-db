@@ -14162,6 +14162,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Warden of Time (19951) - NSR
 -- Sable Jaguar Specimen 20025 - ss.7939
 ('2002501','20025','1','0','100','1','1000','1000','5000','5000','0','0','11','34712','0','34','11','22766','0','34','11','18950','0','34','Sable Jaguar Specimen - Cast Time Stop, Sneak, Invisibility and Stealth Detection OOC'),
+-- Lodaeron Sentry Specimen 20053
+('2005301','20053','11','0','100','0','0','0','0','0','0','0','11','34712','0','34','11','8279','0','34','0','0','0','0','Lodaeron Sentry Specimen - Cast Time Stop, Stealth Detection on Spawn'),
 -- Galgrom (20080) - NSR
 -- Bortega (20081) - NSR
 -- Yarley (20082) - NSR
@@ -22924,8 +22926,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1781402','17814','0','0','100','1025','10800','22900','15700','25300','0','0','11','12169','0','0','0','0','0','0','0','0','0','0','Lordaeron Watchman - Cast Shield Block'),
 ('1781403','17814','2','0','100','0','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Lordaeron Watchman - Flee at 15% HP'),
 ('1781404','17814','6','0','10','0','0','0','0','0','0','0','1','19530','0','0','0','0','0','0','0','0','0','0','Lordaeron Watchman - Random Say on Death'),
--- Lordaeron Sentry 17815 (4.3.4 Official Data - Normal/Heroic)
-('1781501','17815','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Lordaeron Sentry - Enable Range Mode on Aggro'),
+-- Lordaeron Sentry 17815
+('1781501','17815','11','0','100','0','0','0','0','0','0','0','57','2','25','0','11','8279','0','34','0','0','0','0','Lordaeron Sentry - Enable Range Mode, Cast Stealth Detection on Spawn'),
 ('1781502','17815','2','0','100','1024','15','0','0','0','0','0','25','0','0','0','1','1150','0','0','0','0','0','0','Lordaeron Sentry - Flee at 15% HP'),
 ('1781503','17815','9','0','100','1027','5','30','2400','2400','0','0','11','15620','1','256','0','0','0','0','0','0','0','0','Lordaeron Sentry (Normal) - Cast Shoot'),
 ('1781504','17815','9','0','100','1029','5','30','2400','2400','0','0','11','16100','1','256','0','0','0','0','0','0','0','0','Lordaeron Sentry (Heroic) - Cast Shoot'),
