@@ -32,6 +32,8 @@ SET @CGUID := 5400000; -- creatures
 SET @OGUID := 5400000; -- gameobjects
 SET @PGUID := 48000; -- pools
 SET @SGGUID := 5400000; -- spawn_groups
+SET @STRINGID := 5400000; -- used for StringID's
+SET @RELAYID := 5400000; -- used for dbscript_relay
 
 -- =========
 -- CREATURES
@@ -151,9 +153,9 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+160, 5, 52.6026, -0.81406, -13.2027, 0, 0, 0),
 (@CGUID+160, 6, 37.0071, -1.50796, -13.1959, 100, 2000, 1742001),
 (@CGUID+163, 1, 56.966682, 74.25795, -13.222891, 0, 0, 1670002),
-(@CGUID+163, 2, 64.00517,79.559944,-13.22254, 0, 0, 1670002),
-(@CGUID+163, 3, 73.133644,78.94907,-13.222672, 0, 0, 1670002),
-(@CGUID+163, 4, 80.202415,73.17268,-13.22248, 0, 0, 1670002),
+(@CGUID+163, 2, 64.00517,79.559944,-13.22254, 0, 0, 1670003),
+(@CGUID+163, 3, 73.133644,78.94907,-13.222672, 0, 0, 1670004),
+(@CGUID+163, 4, 80.202415,73.17268,-13.22248, 0, 0, 1670005),
 (@CGUID+192, 1, 76.5898, 203.889, -13.1954, 100, 0, 0),
 (@CGUID+192, 2, 62.5537, 203.886, -13.1971, 100, 0, 0),
 (@CGUID+198, 1, 76.4215, 261.567, -13.2031, 0, 0, 0),
@@ -885,63 +887,63 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 -- SPAWN GROUPS
 -- ======
 
-INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
-(@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0),
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+(@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0, 0),
 -- Entrance
--- (@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 2, 0, 1),
--- (@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 2, 0, 1),
+-- (@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 2, 0, 1, @STRINGID),
+-- (@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 2, 0, 1, @STRINGID),
 -- Halls of Father
-(@SGGUID+4, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 001', 0, 2, 0, 1),
+(@SGGUID+4, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 001', 0, 2, 0, 1, 0),
 -- Legionnaire Group 2 - not grouped with their legionnaire
-(@SGGUID+5, 'Shattered Halls - Halls of Father Group 002 - Normal', 0, 2, 0, 1),
-(@SGGUID+6, 'Shattered Halls - Halls of Father Group 002 - Heroic', 0, 2, 0, 1),
-(@SGGUID+7, 'Shattered Halls - Halls of Father Group 003 - Normal', 0, 2, 0, 1),
-(@SGGUID+8, 'Shattered Halls - Halls of Father Group 003 - Heroic', 0, 2, 0, 1),
-(@SGGUID+9, 'Shattered Halls - Halls of Father Group 004 - Normal', 0, 2, 0, 1),
-(@SGGUID+10, 'Shattered Halls - Halls of Father Group 004 - Heroic', 0, 2, 0, 1),
-(@SGGUID+11, 'Shattered Halls - Halls of Father Group 005 - Normal', 0, 2, 0, 1),
-(@SGGUID+12, 'Shattered Halls - Halls of Father Group 005 - Heroic', 0, 2, 0, 1),
-(@SGGUID+13, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 006', 0, 2, 0, 1),  -- This group is Important - on GroupDeath they trigger spawning of Legionnaire Group 003
-(@SGGUID+14, 'Shattered Halls - Shattered Hand Legionnaire Group 003', 0, 5, 0, 3), -- spawned when group 14 is dead
-(@SGGUID+15, 'Shattered Halls - Shattered Hand Legionnaire Group 004', 0, 5, 0, 3), 
-(@SGGUID+16, 'Shattered Halls - Shattered Hand Legionnaire Group 005', 0, 6, 0, 3), 
-(@SGGUID+17, 'Shattered Halls - Shattered Hand Legionnaire Group 006', 0, 7, 0, 1), 
-(@SGGUID+18, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2)', 0, 3, 0, 1), 
+(@SGGUID+5, 'Shattered Halls - Halls of Father Group 002 - Normal', 0, 2, 0, 1, @STRINGID+3),
+(@SGGUID+6, 'Shattered Halls - Halls of Father Group 002 - Heroic', 0, 2, 0, 1, @STRINGID+3),
+(@SGGUID+7, 'Shattered Halls - Halls of Father Group 003 - Normal', 0, 2, 0, 1, @STRINGID+4),
+(@SGGUID+8, 'Shattered Halls - Halls of Father Group 003 - Heroic', 0, 2, 0, 1, @STRINGID+4),
+(@SGGUID+9, 'Shattered Halls - Halls of Father Group 004 - Normal', 0, 2, 0, 1, @STRINGID+5),
+(@SGGUID+10, 'Shattered Halls - Halls of Father Group 004 - Heroic', 0, 2, 0, 1, @STRINGID+5),
+(@SGGUID+11, 'Shattered Halls - Halls of Father Group 005 - Normal', 0, 2, 0, 1, @STRINGID+6),
+(@SGGUID+12, 'Shattered Halls - Halls of Father Group 005 - Heroic', 0, 2, 0, 1, @STRINGID+6),
+(@SGGUID+13, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 006', 0, 2, 0, 1, 0),  -- This group is Important - on GroupDeath they trigger spawning of Legionnaire Group 003
+(@SGGUID+14, 'Shattered Halls - Shattered Hand Legionnaire Group 003', 0, 5, 0, 3, 0), -- spawned when group 14 is dead
+(@SGGUID+15, 'Shattered Halls - Shattered Hand Legionnaire Group 004', 0, 5, 0, 3, 0), 
+(@SGGUID+16, 'Shattered Halls - Shattered Hand Legionnaire Group 005', 0, 6, 0, 3, 0), 
+(@SGGUID+17, 'Shattered Halls - Shattered Hand Legionnaire Group 006', 0, 7, 0, 1, 0), 
+(@SGGUID+18, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2)', 0, 3, 0, 1, 0), 
 -- The Sewer
-(@SGGUID+19, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 001', 0, 6, 0, 1), 
-(@SGGUID+20, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 002', 0, 6, 0, 1), 
-(@SGGUID+21, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 003', 0, 6, 0, 1), 
-(@SGGUID+22, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 004', 0, 6, 0, 1), 
-(@SGGUID+23, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 005', 0, 6, 0, 1), 
-(@SGGUID+24, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 006', 0, 6, 0, 1), 
+(@SGGUID+19, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 001', 0, 6, 0, 1, 0), 
+(@SGGUID+20, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 002', 0, 6, 0, 1, 0), 
+(@SGGUID+21, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 003', 0, 6, 0, 1, 0), 
+(@SGGUID+22, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 004', 0, 6, 0, 1, 0), 
+(@SGGUID+23, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 005', 0, 6, 0, 1, 0), 
+(@SGGUID+24, 'Shattered Halls - Creeping Ooze (1) | Creeping Oozeling (5) | The Sewer Group 006', 0, 6, 0, 1, 0), 
 -- Shattered Hand Assasins with multiple spawns after 1st Boss, only 1 spawned
-(@SGGUID+25, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 1, 0, 0), 
+(@SGGUID+25, 'Shattered Halls - Shattered Hand Assassin (1)', 0, 1, 0, 0, 0), 
 -- Gauntlet of Flame
-(@SGGUID+26, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 4, 0, 3), -- On Aggro gauntlet starts
-(@SGGUID+27, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 8, @SGGUID+4, 10), -- 8 Zealots that getting spawned when Scout reachs the end of his path
-(@SGGUID+28, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 4, 0, 3), -- 4 Zealots before archer blood guard group
-(@SGGUID+29, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard ends gauntlet on normal
-(@SGGUID+30, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3), -- Blood Guard Porung ends gauntlet on Heroic
-(@SGGUID+31, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 001', 0, 5, 0, 7),
-(@SGGUID+32, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 002', 0, 5, 0, 7),
-(@SGGUID+33, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 003', 0, 5, 0, 7),
-(@SGGUID+34, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 004', 0, 5, 0, 7),
+(@SGGUID+26, 'Shattered Halls - Shattered Hand Zealot (3) | Shattered Hand Scout (1) | Gauntlet of Flame Group 001', 0, 4, 0, 3, 0), -- On Aggro gauntlet starts
+(@SGGUID+27, 'Shattered Halls - Shattered Hand Zealot (8) | Gauntlet of Flame Group 002', 0, 8, @SGGUID+4, 10, 0), -- 8 Zealots that getting spawned when Scout reachs the end of his path
+(@SGGUID+28, 'Shattered Halls - Shattered Hand Zealot (4) | Gauntlet of Flame Group 003', 0, 4, 0, 3, 0), -- 4 Zealots before archer blood guard group
+(@SGGUID+29, 'Shattered Halls - Shattered Hand Blood Guard (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3, 0), -- Blood Guard ends gauntlet on normal
+(@SGGUID+30, 'Shattered Halls - Blood Guard Porung (1) | Shattered Hand Archer (2) | Gauntlet of Flame Group 004 (Normal', 0, 0, 0, 3, 0), -- Blood Guard Porung ends gauntlet on Heroic
+(@SGGUID+31, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 001', 0, 5, 0, 7, 0),
+(@SGGUID+32, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 002', 0, 5, 0, 7, 0),
+(@SGGUID+33, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 003', 0, 5, 0, 7, 0),
+(@SGGUID+34, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 004', 0, 5, 0, 7, 0),
 -- Legionnaire Group 7 
-(@SGGUID+35, 'Shattered Halls - Shattered Hand Legionnaire Group 007', 0, 6, 0, 1),
-(@SGGUID+36, 'Shattered Halls - Sparring Hall Group 001', 0, 3, 0, 0), -- Dummy Group with spawn_group_entry
+(@SGGUID+35, 'Shattered Halls - Shattered Hand Legionnaire Group 007', 0, 6, 0, 1, 0),
+(@SGGUID+36, 'Shattered Halls - Sparring Hall Group 001', 0, 3, 0, 0, 0), -- Dummy Group with spawn_group_entry
 -- Legionnaire Group 8 
-(@SGGUID+37, 'Shattered Halls - Shattered Hand Legionnaire 008', 0, 6, 0, 1),
-(@SGGUID+38, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001', 0, 3, 0, 1),
--- (@SGGUID+39, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 0, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet how when he gets spawned
-(@SGGUID+40, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
-(@SGGUID+41, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 003', 0, 2, 0, 1),
-(@SGGUID+42, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002', 0, 3, 0, 1),
-(@SGGUID+43, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 004', 0, 2, 0, 1),
+(@SGGUID+37, 'Shattered Halls - Shattered Hand Legionnaire 008', 0, 6, 0, 1, 0),
+(@SGGUID+38, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001', 0, 3, 0, 1, 0),
+-- (@SGGUID+39, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 0, 0, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet when he gets spawned
+(@SGGUID+40, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1, 0), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
+(@SGGUID+41, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 003', 0, 2, 0, 1, 0),
+(@SGGUID+42, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002', 0, 3, 0, 1, 0),
+(@SGGUID+43, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 004', 0, 2, 0, 1, 0),
 -- Way to endboss
-(@SGGUID+44, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 001', 0, 2, 0, 1), 
-(@SGGUID+45, 'Shattered Halls - Shattered Hand Assassin (7)', 0, 6, 0, 0), -- 6 static spawned assasins before endboss
-(@SGGUID+46, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001', 0, 3, 0, 1),
-(@SGGUID+47, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 002', 0, 2, 0, 1);
+(@SGGUID+44, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 001', 0, 2, 0, 1, 0), 
+(@SGGUID+45, 'Shattered Halls - Shattered Hand Assassin (7)', 0, 6, 0, 0, 0), -- 6 static spawned assasins before endboss
+(@SGGUID+46, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001', 0, 3, 0, 1, 0),
+(@SGGUID+47, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 002', 0, 2, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+1, 184940, 0, 0, 0), (@SGGUID+1, 184941, 0, 0, 0), -- Bound Adamantite Chest, Solid Adamantite Chest-- Legionnaire Group 8
@@ -1290,15 +1292,24 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
+-- StringIDs
+DELETE FROM string_id WHERE Id IN (@STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6);
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+3, 'Shattered Halls - Halls of Father Group 002'),
+(@STRINGID+4, 'Shattered Halls - Halls of Father Group 003'),
+(@STRINGID+5, 'Shattered Halls - Halls of Father Group 004'),
+(@STRINGID+6, 'Shattered Halls - Halls of Father Group 005');
+
 -- =========
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_relay WHERE id IN (10113,10114,10115,10116,10117,10118,10119,10120,10198,10199);
+DELETE FROM dbscripts_on_relay WHERE id IN (10113,10114, 10198, @RELAYID+3, @RELAYID+4, @RELAYID+5, @RELAYID+6, @RELAYID+7, @RELAYID+8, @RELAYID+9, @RELAYID+10, @RELAYID+11, @RELAYID+12, @RELAYID+13, @RELAYID+14, @RELAYID+15, @RELAYID+16, @RELAYID+17);
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Shattered Hand Legionnaire 001 script 1
 (10113,0,0,0,10051,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
 (10113,0,0,35,5,50,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
-
+-- Shattered Hand Legionnaire 001 script 2
 (10114,0,0,31,17420,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Heaven'),
 (10114,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
 (10114,3000,0,37,0,0,2,17420,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Heathen'),
@@ -1310,7 +1321,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10114,10000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
 (10114,11000,0,36,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - reset orientation'),
 (10114,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
-
+-- Shattered Hand Legionnaire 001 script 1
 (10198,0,0,31,16523,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Savage'),
 (10198,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
 (10198,3000,0,37,0,0,2,16523,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Savage'),
@@ -1322,88 +1333,170 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10198,10000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
 (10198,11000,0,36,1,0,0,16523,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - reset orientation'),
 (10198,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
+-- Shattered Hand Legionnaire 002 script 1
+(@RELAYID+3,5000,0,45,0,@RELAYID+5,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% force bow, 50% force cheer'),
+-- Shattered Hand Legionnaire 002 force bow
+(@RELAYID+4,0,0,0,0,0,0,0,0,0,12684,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - say'),
+(@RELAYID+4,0,0,35,7,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event C'),
+-- Shattered Hand Legionnaire 002 force cheer
+(@RELAYID+5,0,0,0,0,0,0,0,0,0,12683,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - say'),
+(@RELAYID+5,0,0,35,8,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event D'),
+-- Shattered Hand Legionnaire 002 talk event StringId+3 - waypoint 1
+(@RELAYID+6,0,0,45,0,@RELAYID+6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% ftalk event 1, 50% talk event 2'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+3 - script 1 waypoint 1
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+7,0,0,31,0,2,0,@STRINGID+3,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+7,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+7,1,2,37,0,0,2,@STRINGID+3,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+7,1,3,28,0,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+7,2000,0,36,0,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - face Legionnaire'),
+(@RELAYID+7,4000,0,28,8,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate kneel'),
+(@RELAYID+7,4000,1,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote point'),
+(@RELAYID+7,4000,1,0,0,0,0,0,0,0,12687,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+7,7000,1,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote laugh'),
+(@RELAYID+7,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+3 - script 2 waypoint 1
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+8,0,0,31,0,2,0,@STRINGID+3,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+8,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+8,1,2,37,0,0,2,@STRINGID+3,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+8,1000,0,28,0,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+8,1000,1,1,66,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - emote salute'),
+(@RELAYID+8,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote OneShotExclamation'),
+(@RELAYID+8,4000,0,1,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+8,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
+-- Shattered Hand Legionnaire 002 talk event StringId+4 - waypoint 2
+(@RELAYID+9,0,0,45,0,@RELAYID+8,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% ftalk event 1, 50% talk event 2'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+4 - script 1 waypoint 2
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+10,0,0,31,0,2,0,@STRINGID+4,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+10,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+10,1,2,37,0,0,2,@STRINGID+4,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+10,1,3,28,0,0,0,@STRINGID+4,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+10,2000,0,36,0,0,0,@STRINGID+4,2,2560,0,0,0,0,0,0,0,0, 'StringId - face Legionnaire'),
+(@RELAYID+10,4000,0,28,8,0,0,@STRINGID+4,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate kneel'),
+(@RELAYID+10,4000,1,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote point'),
+(@RELAYID+10,4000,1,0,0,0,0,0,0,0,12687,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+10,7000,1,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote laugh'),
+(@RELAYID+10,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+4 - script 2 waypoint 2
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+11,0,0,31,0,2,0,@STRINGID+4,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+11,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+11,1,2,37,0,0,2,@STRINGID+4,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+11,1000,0,28,0,0,0,@STRINGID+4,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+11,1000,1,1,66,0,0,@STRINGID+4,2,2560,0,0,0,0,0,0,0,0, 'StringId - emote salute'),
+(@RELAYID+11,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote OneShotExclamation'),
+(@RELAYID+11,4000,0,1,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+11,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
+-- Shattered Hand Legionnaire 002 talk event StringId+5 - waypoint 3
+(@RELAYID+12,0,0,45,0,@RELAYID+10,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% ftalk event 1, 50% talk event 2'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+5 - script 1 waypoint 3
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+13,0,0,31,0,2,0,@STRINGID+5,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+13,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+13,1,2,37,0,0,2,@STRINGID+5,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+13,1,3,28,0,0,0,@STRINGID+5,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+13,2000,0,36,0,0,0,@STRINGID+5,2,2560,0,0,0,0,0,0,0,0, 'StringId - face Legionnaire'),
+(@RELAYID+13,4000,0,28,8,0,0,@STRINGID+5,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate kneel'),
+(@RELAYID+13,4000,1,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote point'),
+(@RELAYID+13,4000,1,0,0,0,0,0,0,0,12687,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+13,7000,1,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote laugh'),
+(@RELAYID+13,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+5 - script 2 waypoint 3
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+14,0,0,31,0,2,0,@STRINGID+5,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+14,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+14,1,2,37,0,0,2,@STRINGID+5,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+14,1000,0,28,0,0,0,@STRINGID+5,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+14,1000,1,1,66,0,0,@STRINGID+5,2,2560,0,0,0,0,0,0,0,0, 'StringId - emote salute'),
+(@RELAYID+14,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote OneShotExclamation'),
+(@RELAYID+14,4000,0,1,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+14,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
+-- Shattered Hand Legionnaire 002 talk event StringId+6 - waypoint 4
+(@RELAYID+15,0,0,45,0,@RELAYID+12,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% ftalk event 1, 50% talk event 2'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+6 - script 1 waypoint 4
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+16,0,0,31,0,2,0,@STRINGID+6,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+16,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+16,1,2,37,0,0,2,@STRINGID+6,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+16,1,3,28,0,0,0,@STRINGID+6,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+16,2000,0,36,0,0,0,@STRINGID+6,2,2560,0,0,0,0,0,0,0,0, 'StringId - face Legionnaire'),
+(@RELAYID+16,4000,0,28,8,0,0,@STRINGID+6,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate kneel'),
+(@RELAYID+16,4000,1,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote point'),
+(@RELAYID+16,4000,1,0,0,0,0,0,0,0,12687,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+16,7000,1,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote laugh'),
+(@RELAYID+16,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
+-- Shattered Hand Legionnaire 002 talk event to StringID+5 - script 2 waypoint 4
+-- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
+(@RELAYID+17,0,0,31,0,2,0,@STRINGID+6,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+17,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+17,1,2,37,0,0,2,@STRINGID+6,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+17,1000,0,28,0,0,0,@STRINGID+6,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
+(@RELAYID+17,1000,1,1,66,0,0,@STRINGID+6,2,2560,0,0,0,0,0,0,0,0, 'StringId - emote salute'),
+(@RELAYID+17,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote OneShotExclamation'),
+(@RELAYID+17,4000,0,1,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+17,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint');
 
-(10115,5000,0,45,0,10052,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% force bow, 50% force cheer'),
-
-(10116,0,0,31,17420,5,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - Search for Heaven'),
-(10116,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - pause waypoints'),
-(10116,3000,0,37,0,0,2,17420,20,2,0,0,0,0,0,0,0,0,'Legionnaire - move to Heathen'),
-(10116,5000,0,36,0,0,0,17420,3,0,0,0,0,0,0,0,0,0,'Heathen - face Legionnaire'),
-(10116,5000,0,36,0,0,0,17694,3,0,0,0,0,0,0,0,0,0,'Darkcaster - face Legionnaire'),
-(10116,5000,0,36,0,0,0,16594,3,0,0,0,0,0,0,0,0,0,'Acolyte - face Legionnaire'),
-(10116,5000,0,36,0,0,0,16593,3,0,0,0,0,0,0,0,0,0,'Brawler - face Legionnaire'),
-(10116,7000,0,36,0,0,0,17420,3,1,0,0,0,0,0,0,0,0,'Legionnaire - face Heathen'),
-(10116,8000,0,45,0,10053,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - 50% force kneel & laugh, 50% force stand & salute'),
-(10116,14000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - unpause waypoints'),
-
-(10199,0,0,31,16523,5,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - Search for Savage'),
-(10199,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - pause waypoints'),
-(10199,3000,0,37,0,0,2,16523,20,2,0,0,0,0,0,0,0,0,'Legionnaire - move to Savage'),
-(10199,5000,0,36,0,0,0,16523,3,0,0,0,0,0,0,0,0,0,'Savage - face Legionnaire'),
-(10199,5000,0,36,0,0,0,17694,3,0,0,0,0,0,0,0,0,0,'Darkcaster - face Legionnaire'),
-(10199,5000,0,36,0,0,0,16594,3,0,0,0,0,0,0,0,0,0,'Acolyte - face Legionnaire'),
-(10199,5000,0,36,0,0,0,16593,3,0,0,0,0,0,0,0,0,0,'Brawler - face Legionnaire'),
-(10199,7000,0,36,0,0,0,17420,3,1,0,0,0,0,0,0,0,0,'Legionnaire - face Heathen'),
-(10199,8000,0,45,0,10053,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - 50% force kneel & laugh, 50% force stand & salute'),
-(10199,14000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - unpause waypoints'),
-
-(10117,0,0,31,17420,5,0,0,0,0,0,0,0,0,0,0,0,0,'Terminate if Heathen not in range'),
-(10117,0,1,28,0,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Heathen - Stand'),
-(10117,0,1,28,0,0,0,17694,5,0,0,0,0,0,0,0,0,0,'Darkcaster - Stand'),
-(10117,0,1,28,0,0,0,16594,5,0,0,0,0,0,0,0,0,0,'Acolyte - Stand'),
-(10117,0,1,28,0,0,0,16593,5,0,0,0,0,0,0,0,0,0,'Brawler - Stand'),
-(10117,2000,1,28,8,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Heathen - Kneel'),
-(10117,2000,1,28,8,0,0,17694,5,0,0,0,0,0,0,0,0,0,'Darkcaster - Kneel'),
-(10117,2000,1,28,8,0,0,16594,5,0,0,0,0,0,0,0,0,0,'Acolyte - Kneel'),
-(10117,2000,1,28,8,0,0,16593,5,0,0,0,0,0,0,0,0,0,'Brawler - Kneel'),
-(10117,2000,0,0,0,0,0,0,0,0,12687,0,0,0,0,0,0,0,'Legionnaire - say'),
-(10117,5000,0,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0,'Legionnaire - Laugh'),
-
-(10118,0,0,31,17420,5,0,0,0,0,0,0,0,0,0,0,0,0,'Terminate if Heathen not in range'),
-(10118,0,1,28,0,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Heathen - Stand'),
-(10118,0,1,28,0,0,0,17694,5,0,0,0,0,0,0,0,0,0,'Darkcaster - Stand'),
-(10118,0,1,28,0,0,0,16594,5,0,0,0,0,0,0,0,0,0,'Acolyte - Stand'),
-(10118,0,1,28,0,0,0,16593,5,0,0,0,0,0,0,0,0,0,'Brawler - Stand'),
-(10118,2000,0,1,113,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Heathen - Salute'),
-(10118,2000,0,1,113,0,0,17694,5,0,0,0,0,0,0,0,0,0,'Darkcaster - Salute'),
-(10118,2000,0,1,113,0,0,16594,5,0,0,0,0,0,0,0,0,0,'Acolyte - Salute'),
-(10118,2000,0,1,113,0,0,16593,5,0,0,0,0,0,0,0,0,0,'Brawler - Salute'),
-(10118,4000,0,0,0,0,0,0,0,0,12685,12686,0,0,0,0,0,0,'Legionnaire - say'),
-
-(10119,0,0,0,0,0,0,0,0,0,12684,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - say'),
-(10119,0,0,35,7,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event C'),
-
-(10120,0,0,0,0,0,0,0,0,0,12683,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - say'),
-(10120,0,0,35,8,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event D');
-
-DELETE FROM dbscript_random_templates WHERE id IN (10050,10051,10052,10053,10054);
+DELETE FROM dbscript_random_templates WHERE id IN (10050,10051,10052,10053,10054, @RELAYID+3, @RELAYID+4, @RELAYID+5, @RELAYID+6, @RELAYID+7, @RELAYID+8, @RELAYID+9, @RELAYID+10, @RELAYID+11, @RELAYID+12);
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+-- Shattered Hand Legionnaire 001 script
 (10050, 1, 10113, 10, 'Shattered Hand Legionnaire - yell'),
 (10050, 1, 10114, 10, 'Shattered Hand Legionnaire - approach ally Heathen'),
 (10050, 1, 10198, 10, 'Shattered Hand Legionnaire - approach ally Savage'),
 (10050, 1, 0, 70, 'Shattered Hand Legionnaire - nothing'),
-
+-- Shattered Hand Legionnaire 001 text scripts
 (10051, 0, 16350, 0, 'Shattered Hand Legionnaire - random yell 1'),
 (10051, 0, 17461, 0, 'Shattered Hand Legionnaire - random yell 2'),
 (10051, 0, 16349, 0, 'Shattered Hand Legionnaire - random yell 3'),
 (10051, 0, 16347, 0, 'Shattered Hand Legionnaire - random yell 4'),
 (10051, 0, 16346, 0, 'Shattered Hand Legionnaire - random yell 5'),
+-- Shattered Hand Legionnaire 002 mainscript - started via dbscript_on_creature_movement
+(@RELAYID+3, 1, @RELAYID+3, 10, 'Shattered Hand Legionnaire - force bow/cheer'),
+(@RELAYID+3, 1, @RELAYID+6, 10, 'Shattered Hand Legionnaire - talk event stringid+3 - waypoint 1'),
+(@RELAYID+3, 1, 0, 80, 'Shattered Hand Legionnaire - nothing'),
+-- Shattered Hand Legionnaire 002 - Talk Event 2 - 2 different Texts
+(@RELAYID+4, 0, 12686, 0, 'Shattered Hand Legionnaire - talk event 2 - text'),
+(@RELAYID+4, 0, 12685, 0, 'Shattered Hand Legionnaire - talk event 2 - text'),
+-- Shattered Hand Legionnaire 002 bow/cheer
+(@RELAYID+5, 1, @RELAYID+4, 0, 'Shattered Hand Legionnaire - force bow'),
+(@RELAYID+5, 1, @RELAYID+5, 0, 'Shattered Hand Legionnaire - force cheer'),
+-- Shattered Hand Legionnaire 002 - stringid+3 talk event waypoint 1
+(@RELAYID+6, 1, @RELAYID+7, 0, 'Shattered Hand Legionnaire - talk event 1'),
+(@RELAYID+6, 1, @RELAYID+8, 0, 'Shattered Hand Legionnaire - talk event 2'),
+-- Shattered Hand Legionnaire 002 mainscript - started via dbscript_on_creature_movement - waypoint 2
+(@RELAYID+7, 1, @RELAYID+3, 10, 'Shattered Hand Legionnaire - force bow/cheer'),
+(@RELAYID+7, 1, @RELAYID+9, 10, 'Shattered Hand Legionnaire - talk event stringid+4 - waypoint 2'),
+(@RELAYID+7, 1, 0, 80, 'Shattered Hand Legionnaire - nothing'),
+-- Shattered Hand Legionnaire 002 - stringid+4 talk event waypoint 2
+(@RELAYID+8, 1, @RELAYID+10, 0, 'Shattered Hand Legionnaire - talk event 1'),
+(@RELAYID+8, 1, @RELAYID+11, 0, 'Shattered Hand Legionnaire - talk event 2'),
+-- Shattered Hand Legionnaire 002 mainscript - started via dbscript_on_creature_movement - waypoint 3
+(@RELAYID+9, 1, @RELAYID+3, 10, 'Shattered Hand Legionnaire - force bow/cheer'),
+(@RELAYID+9, 1, @RELAYID+12, 10, 'Shattered Hand Legionnaire - talk event stringid+5 - waypoint 3'),
+(@RELAYID+9, 1, 0, 80, 'Shattered Hand Legionnaire - nothing'),
+-- Shattered Hand Legionnaire 002 - stringid+5 talk event waypoint 3
+(@RELAYID+10, 1, @RELAYID+13, 0, 'Shattered Hand Legionnaire - talk event 1'),
+(@RELAYID+10, 1, @RELAYID+14, 0, 'Shattered Hand Legionnaire - talk event 2'),
+-- Shattered Hand Legionnaire 002 mainscript - started via dbscript_on_creature_movement - waypoint 4
+(@RELAYID+11, 1, @RELAYID+3, 10, 'Shattered Hand Legionnaire - force bow/cheer'),
+(@RELAYID+11, 1, @RELAYID+15, 10, 'Shattered Hand Legionnaire - talk event stringid+6 - waypoint 4'),
+(@RELAYID+11, 1, 0, 80, 'Shattered Hand Legionnaire - nothing'),
+-- Shattered Hand Legionnaire 002 - stringid+6 talk event waypoint 4
+(@RELAYID+12, 1, @RELAYID+16, 0, 'Shattered Hand Legionnaire - talk event 1'),
+(@RELAYID+12, 1, @RELAYID+17, 0, 'Shattered Hand Legionnaire - talk event 2');
 
-(10052, 1, 10119, 0, 'Shattered Hand Legionnaire - force bow'),
-(10052, 1, 10120, 0, 'Shattered Hand Legionnaire - force cheer'),
-
-(10053, 1, 10117, 0, 'Shattered Hand Legionnaire - force kneel & laugh'),
-(10053, 1, 10118, 0, 'Shattered Hand Legionnaire - force stand & salute'),
-
-(10054, 1, 10115, 10, 'Shattered Hand Legionnaire - force bow/cheer'),
-(10054, 1, 10116, 10, 'Shattered Hand Legionnaire - talk event'),
-(10054, 1, 10199, 10, 'Shattered Hand Legionnaire - talk event'),
-(10054, 1, 0, 70, 'Shattered Hand Legionnaire - nothing');
-
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001, 1670002, 1742001, 1746201);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001, 1670002, 1670003, 1670004, 1670005, 1742001, 1746201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1670001, 0, 0, 45, 0, 10050, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire - 10% chance to yell, 20% chance to talk'),
-(1670002, 0, 1, 45, 0, 10054, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Legionnaire - 10% force bow/cheer, 10% talk event'),
+(1670001, 0, 0, 45, 0, 10050, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 001 - 10% chance to yell, 20% chance to talk'),
+-- Legionnaire 002 base script - waypoint 1
+(1670002, 0, 1, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 002 - 10% force bow/cheer, 10% talk event'),
+-- Legionnaire 002 base script - waypoint 2
+(1670003, 0, 1, 45, 0, @RELAYID+7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 002 - 10% force bow/cheer, 10% talk event'),
+-- Legionnaire 002 base script - waypoint 3
+(1670004, 0, 1, 45, 0, @RELAYID+9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 002 - 10% force bow/cheer, 10% talk event'),
+-- Legionnaire 002 base script - waypoint 4
+(1670005, 0, 1, 45, 0, @RELAYID+11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 002 - 10% force bow/cheer, 10% talk event'),
 (1742001, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - Waypoint Pause'),
 (1742001, 1000, 0, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - EMOTE_STATE_READY1H'),
 (1746201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Zealot - Waypoint Pause'),
