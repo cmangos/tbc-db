@@ -423,29 +423,13 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (18370, 0, 0, 0, 0, 0, NULL), -- Wild Shadow Fissure
 (20923, 0, 0, 0, 0, 0, '18950'); -- Blood Guard Porung
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
--- Entrance - Shattered Hand Legionnaire #1
-(@CGUID+151, @CGUID+150, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+152, @CGUID+150, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+153, @CGUID+150, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+154, @CGUID+150, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+155, @CGUID+150, 1024), -- creature_spawn_entry -> Shattered Hand Legionnaire
-(@CGUID+156, @CGUID+150, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
-(@CGUID+157, @CGUID+150, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
-(@CGUID+158, @CGUID+150, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
-(@CGUID+159, @CGUID+150, 1024), -- Shattered Hand Heathen -> Shattered Hand Legionnaire
-(@CGUID+160, @CGUID+150, 1024); -- Shattered Hand Heathen -> Shattered Hand Legionnaire
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (16809, 540, 16808, 1, 0); -- Warbringer O'mrogg -> Warchief Kargath Bladefist
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 -- commented due to need static entry for rp event
-(@CGUID+151, 16523), (@CGUID+151, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
-(@CGUID+152, 16523), (@CGUID+152, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
-(@CGUID+153, 16523), (@CGUID+153, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
-(@CGUID+154, 16523), (@CGUID+154, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
-(@CGUID+155, 16523), (@CGUID+155, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+184, 16593), (@CGUID+184, 16594), -- Shattered Hand Brawler, Shadowmoon Acolyte
 (@CGUID+186, 16523), (@CGUID+186, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
 (@CGUID+190, 16593), (@CGUID+190, 17694), -- Shattered Hand Brawler, Shadowmoon Darkcaster
@@ -890,8 +874,8 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0, 0),
 -- Entrance
--- (@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 2, 0, 1, @STRINGID),
--- (@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 2, 0, 1, @STRINGID),
+(@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 5, @SGGUID+1, 1, @STRINGID+2),
+(@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 5, @SGGUID+1, 1, @STRINGID+2),
 -- Halls of Father
 (@SGGUID+4, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 001', 0, 2, 0, 1, 0),
 -- Legionnaire Group 2 - not grouped with their legionnaire
@@ -946,7 +930,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+47, 'Shattered Halls - Shattered Hand Champion (2) | Warbringers Ring Group 002', 0, 2, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
-(@SGGUID+1, 184940, 0, 0, 0), (@SGGUID+1, 184941, 0, 0, 0), -- Bound Adamantite Chest, Solid Adamantite Chest-- Legionnaire Group 8
+(@SGGUID+1, 184940, 0, 0, 0), (@SGGUID+1, 184941, 0, 0, 0), -- Bound Adamantite Chest, Solid Adamantite Chest
+-- legionnaire Group 001
+(@SGGUID+2, 16523, 0, 0, 0), (@SGGUID+2, 17420, 0, 0, 0),
 -- Hall of Fathers
 (@SGGUID+5, 16523, 0, 1, 0), (@SGGUID+5, 16593, 0, 1, 0), (@SGGUID+5, 16594, 0, 1, 0), (@SGGUID+5, 17420, 0, 1, 0), (@SGGUID+5, 17694, 0, 1, 0), -- Normal
 (@SGGUID+6, 16593, 0, 1, 0), (@SGGUID+6, 16594, 0, 1, 0), (@SGGUID+6, 17420, 1, 1, 0), (@SGGUID+6, 17694, 0, 1, 0), -- Heroic
@@ -961,9 +947,20 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+37, 16523, 0, 2, 0), (@SGGUID+37, 16593, 0, 1, 0), (@SGGUID+37, 16594, 1, 1, 0), (@SGGUID+37, 16699, 1, 2, 0), (@SGGUID+37, 17420, 0, 2, 0), (@SGGUID+37, 17694, 0, 1, 0),  -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Acolyte, Shattered Hand Reaver, Shattered Hand Heathen, Shattered Hand Darkcaster
 (@SGGUID+40, 16523, 0, 0, 0), (@SGGUID+40, 16699, 0, 0, 0), (@SGGUID+40, 17420, 0, 0, 0); -- Shattered Hand Savage, Shattered Hand Reaver, Shattered Hand Heathen
 
-
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+1, @OGUID+7, -1), -- spawn_group_entry
+-- Legionnaire Group 001
+(@SGGUID+2, @CGUID+151, -1),
+(@SGGUID+2, @CGUID+152, -1),
+(@SGGUID+2, @CGUID+153, -1),
+(@SGGUID+2, @CGUID+154, -1),
+(@SGGUID+2, @CGUID+155, -1),
+
+(@SGGUID+3, @CGUID+156, -1),
+(@SGGUID+3, @CGUID+157, -1),
+(@SGGUID+3, @CGUID+158, -1),
+(@SGGUID+3, @CGUID+159, -1),
+(@SGGUID+3, @CGUID+160, -1),
 
 -- Hall of Fathers
 (@SGGUID+4, @CGUID+161, -1), -- Shattered Hand Sentry
@@ -985,7 +982,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+9, @CGUID+172, -1),
 (@SGGUID+9, @CGUID+173, -1),
 -- Group 3 heroic
-(@SGGUID+10, @CGUID+173, -1),
+(@SGGUID+10, @CGUID+174, -1),
 (@SGGUID+10, @CGUID+175, -1),
 -- Group 4 normal
 (@SGGUID+11, @CGUID+176, -1),
@@ -1258,12 +1255,14 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+46,16,369.20135,-20.56937,1.9118699,100,0,0),
 (@SGGUID+46,17,369.4805,-35.282803,1.9122882,100,0,0);
 
-DELETE FROM worldstate_name WHERE Id IN (@SGGUID+4);
+DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+4);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
+(@SGGUID+1, 'Shattered Halls - Legionnaire Group 001'),
 (@SGGUID+4, 'Shattered Halls - Gauntlet of Flame');
 
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+4);
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+4);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Shattered Hall - Legionnaire Group 001'),
 (@SGGUID+4, 42, @SGGUID+4, 1, 1, 0, 0, 'Shattered Hall - Gauntlet of Flame');
 
 -- =======
@@ -1293,8 +1292,9 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
 -- StringIDs
-DELETE FROM string_id WHERE Id IN (@STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6);
+DELETE FROM string_id WHERE Id IN (@STRINGID+2, @STRINGID+3, @STRINGID+4, @STRINGID+5, @STRINGID+6);
 INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+2, 'Shattered Halls - Legionnaire Group 001'),
 (@STRINGID+3, 'Shattered Halls - Halls of Father Group 002'),
 (@STRINGID+4, 'Shattered Halls - Halls of Father Group 003'),
 (@STRINGID+5, 'Shattered Halls - Halls of Father Group 004'),
@@ -1304,35 +1304,24 @@ INSERT INTO `string_id` (Id, Name) VALUES
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_relay WHERE id IN (10113,10114, 10198, @RELAYID+3, @RELAYID+4, @RELAYID+5, @RELAYID+6, @RELAYID+7, @RELAYID+8, @RELAYID+9, @RELAYID+10, @RELAYID+11, @RELAYID+12, @RELAYID+13, @RELAYID+14, @RELAYID+15, @RELAYID+16, @RELAYID+17);
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+18;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Shattered Hand Legionnaire 001 script 1
-(10113,0,0,0,10051,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
-(10113,0,0,35,5,50,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
+(@RELAYID+1,0,0,0,@RELAYID+2,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
+(@RELAYID+1,0,1,1,36,0,0,@STRINGID+2,50,2560,0,0,0,0,0,0,0,0,'string id - emote oneshot attack'),
+(@RELAYID+1,0,2,16,1319,0,0,@STRINGID+50,2,2560,0,0,0,0,0,0,0,0,'string id - play sound'),
 -- Shattered Hand Legionnaire 001 script 2
-(10114,0,0,31,17420,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Heaven'),
-(10114,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
-(10114,3000,0,37,0,0,2,17420,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Heathen'),
-(10114,4000,0,36,0,0,0,17420,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - face Legionnaire'),
-(10114,4000,0,36,0,0,0,17420,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Heathen'),
-(10114,5000,0,1,66,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - OneShotSalute'),
-(10114,7000,0,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotSalute'),
-(10114,9000,0,1,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - OneShotTalk'),
-(10114,10000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
-(10114,11000,0,36,1,0,0,17420,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Heathen - reset orientation'),
-(10114,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
--- Shattered Hand Legionnaire 001 script 1
-(10198,0,0,31,16523,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - Search for Savage'),
-(10198,0,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - pause waypoints'),
-(10198,3000,0,37,0,0,2,16523,20,2,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - move to Savage'),
-(10198,4000,0,36,0,0,0,16523,20,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - face Legionnaire'),
-(10198,4000,0,36,0,0,0,16523,5,1,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face Savage'),
-(10198,5000,0,1,66,0,0,16523,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - OneShotSalute'),
-(10198,7000,0,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotSalute'),
-(10198,9000,0,1,1,0,0,16523,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - OneShotTalk'),
-(10198,10000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
-(10198,11000,0,36,1,0,0,16523,5,0,0,0,0,0,0,0,0,0,'Shattered Hand Savage - reset orientation'),
-(10198,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
+(@RELAYID+2,0,0,31,0,5,0,@STRINGID+2,5,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+2,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
+(@RELAYID+2,3000,0,37,0,0,2,@STRINGID+2,5,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
+(@RELAYID+2,4000,0,36,0,0,0,@STRINGID+2,5,2048,0,0,0,0,0,0,0,0, 'StringId - face Legionnaire'),
+(@RELAYID+2,4000,0,36,0,0,0,@STRINGID+2,5,2049,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - face StringID'),
+(@RELAYID+2,5000,0,1,66,0,0,@STRINGID+2,5,2048,0,0,0,0,0,0,0,0, 'StringId - emote OneShotSalute'),
+(@RELAYID+2,7000,0,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotSalute'),
+(@RELAYID+2,9000,0,1,1,0,0,@STRINGID+2,5,2048,0,0,0,0,0,0,0,0, 'StringId - emote OneShotTalk'),
+(@RELAYID+2,10000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - OneShotExclamation'),
+(@RELAYID+2,11000,0,36,1,0,0,@STRINGID+2,5,2048,0,0,0,0,0,0,0,0, 'StringId - reset orientation'),
+(@RELAYID+2,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - unpause waypoints'),
 -- Shattered Hand Legionnaire 002 script 1
 (@RELAYID+3,5000,0,45,0,@RELAYID+5,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% force bow, 50% force cheer'),
 -- Shattered Hand Legionnaire 002 force bow
@@ -1438,19 +1427,18 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+17,4000,0,1,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
 (@RELAYID+17,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint');
 
-DELETE FROM dbscript_random_templates WHERE id IN (10050,10051,10052,10053,10054, @RELAYID+3, @RELAYID+4, @RELAYID+5, @RELAYID+6, @RELAYID+7, @RELAYID+8, @RELAYID+9, @RELAYID+10, @RELAYID+11, @RELAYID+12);
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Shattered Hand Legionnaire 001 script
-(10050, 1, 10113, 10, 'Shattered Hand Legionnaire - yell'),
-(10050, 1, 10114, 10, 'Shattered Hand Legionnaire - approach ally Heathen'),
-(10050, 1, 10198, 10, 'Shattered Hand Legionnaire - approach ally Savage'),
-(10050, 1, 0, 70, 'Shattered Hand Legionnaire - nothing'),
+(@RELAYID+1, 1, @RELAYID+1, 10, 'Shattered Hand Legionnaire - yell'),
+(@RELAYID+1, 1, @RELAYID+2, 10, 'Shattered Hand Legionnaire - approach ally Heathen'),
+(@RELAYID+1, 1, 0, 80, 'Shattered Hand Legionnaire - nothing'),
 -- Shattered Hand Legionnaire 001 text scripts
-(10051, 0, 16350, 0, 'Shattered Hand Legionnaire - random yell 1'),
-(10051, 0, 17461, 0, 'Shattered Hand Legionnaire - random yell 2'),
-(10051, 0, 16349, 0, 'Shattered Hand Legionnaire - random yell 3'),
-(10051, 0, 16347, 0, 'Shattered Hand Legionnaire - random yell 4'),
-(10051, 0, 16346, 0, 'Shattered Hand Legionnaire - random yell 5'),
+(@RELAYID+2, 0, 16350, 0, 'Shattered Hand Legionnaire - random yell 1'),
+(@RELAYID+2, 0, 17461, 0, 'Shattered Hand Legionnaire - random yell 2'),
+(@RELAYID+2, 0, 16349, 0, 'Shattered Hand Legionnaire - random yell 3'),
+(@RELAYID+2, 0, 16347, 0, 'Shattered Hand Legionnaire - random yell 4'),
+(@RELAYID+2, 0, 16346, 0, 'Shattered Hand Legionnaire - random yell 5'),
 -- Shattered Hand Legionnaire 002 mainscript - started via dbscript_on_creature_movement
 (@RELAYID+3, 1, @RELAYID+3, 10, 'Shattered Hand Legionnaire - force bow/cheer'),
 (@RELAYID+3, 1, @RELAYID+6, 10, 'Shattered Hand Legionnaire - talk event stringid+3 - waypoint 1'),
@@ -1488,7 +1476,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001, 1670002, 1670003, 1670004, 1670005, 1742001, 1746201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1670001, 0, 0, 45, 0, 10050, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 001 - 10% chance to yell, 20% chance to talk'),
+(1670001, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 001 - 10% chance to yell, 20% chance to talk'),
 -- Legionnaire 002 base script - waypoint 1
 (1670002, 0, 1, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 002 - 10% force bow/cheer, 10% talk event'),
 -- Legionnaire 002 base script - waypoint 2
