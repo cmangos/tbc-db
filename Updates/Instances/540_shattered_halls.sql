@@ -1326,7 +1326,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+1,0,1,1,36,0,0,@STRINGID+2,50,2560,0,0,0,0,0,0,0,0,'string id - emote oneshot attack'),
 (@RELAYID+1,0,2,16,1319,0,0,@STRINGID+2,50,2560,0,0,0,0,0,0,0,0,'string id - play sound'),
 -- Shattered Hand Legionnaire 001 script 2
-(@RELAYID+2,0,0,31,0,5,0,@STRINGID+2,5,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+(@RELAYID+2,0,0,31,0,5,0,@STRINGID+2,5,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if not found'),
 (@RELAYID+2,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
 (@RELAYID+2,3000,0,37,0,0,2,@STRINGID+2,5,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
 (@RELAYID+2,4000,0,36,0,0,0,@STRINGID+2,5,2048,0,0,0,0,0,0,0,0, 'StringId - face Legionnaire'),
@@ -1348,8 +1348,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Shattered Hand Legionnaire 002 talk event StringId+3 - waypoint 1
 (@RELAYID+6,0,0,45,0,@RELAYID+6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% talk event 1, 50% talk event 2'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+3 - script 1 waypoint 1
--- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
-(@RELAYID+7,0,0,31,0,2,0,@STRINGID+3,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+-- terminate script when string id not found in range of 2 yards, or string id is dead (string id = spawn_group)
+(@RELAYID+7,0,0,31,0,2,0,@STRINGID+3,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if not found'),
 (@RELAYID+7,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
 (@RELAYID+7,1,2,37,0,0,2,@STRINGID+3,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
 (@RELAYID+7,1,3,28,0,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
@@ -1360,8 +1360,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+7,7000,1,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote laugh'),
 (@RELAYID+7,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+3 - script 2 waypoint 1
--- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
-(@RELAYID+8,0,0,31,0,2,0,@STRINGID+3,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+-- terminate script when string id not found in range of 2 yards, or string id is dead (string id = spawn_group)
+(@RELAYID+8,0,0,31,0,2,0,@STRINGID+3,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if not found'),
 (@RELAYID+8,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
 (@RELAYID+8,1,2,37,0,0,2,@STRINGID+3,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
 (@RELAYID+8,1000,0,28,0,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
@@ -1372,8 +1372,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Shattered Hand Legionnaire 002 talk event StringId+4 - waypoint 2
 (@RELAYID+9,0,0,45,0,@RELAYID+8,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% talk event 1, 50% talk event 2'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+4 - script 1 waypoint 2
--- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
-(@RELAYID+10,0,0,31,0,2,0,@STRINGID+4,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+-- terminate script when string id not found in range of 2 yards, or string id is dead (string id = spawn_group)
+(@RELAYID+10,0,0,31,0,2,0,@STRINGID+4,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if not found'),
 (@RELAYID+10,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
 (@RELAYID+10,1,2,37,0,0,2,@STRINGID+4,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
 (@RELAYID+10,1,3,28,0,0,0,@STRINGID+4,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
@@ -1384,8 +1384,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+10,7000,1,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote laugh'),
 (@RELAYID+10,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+4 - script 2 waypoint 2
--- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
-(@RELAYID+11,0,0,31,0,2,0,@STRINGID+4,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+-- terminate script when string id not found in range of 2 yards, or string id is dead (string id = spawn_group)
+(@RELAYID+11,0,0,31,0,2,0,@STRINGID+4,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if not found'),
 (@RELAYID+11,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
 (@RELAYID+11,1,2,37,0,0,2,@STRINGID+4,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
 (@RELAYID+11,1000,0,28,0,0,0,@STRINGID+4,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
@@ -1396,8 +1396,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Shattered Hand Legionnaire 002 talk event StringId+5 - waypoint 3
 (@RELAYID+12,0,0,45,0,@RELAYID+10,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% talk event 1, 50% talk event 2'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+5 - script 1 waypoint 3
--- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
-(@RELAYID+13,0,0,31,0,2,0,@STRINGID+5,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+-- terminate script when string id not found in range of 2 yards, or string id is dead (string id = spawn_group)
+(@RELAYID+13,0,0,31,0,2,0,@STRINGID+5,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if not found'),
 (@RELAYID+13,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
 (@RELAYID+13,1,2,37,0,0,2,@STRINGID+5,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
 (@RELAYID+13,1,3,28,0,0,0,@STRINGID+5,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
@@ -1408,8 +1408,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+13,7000,1,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote laugh'),
 (@RELAYID+13,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+5 - script 2 waypoint 3
--- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
-(@RELAYID+14,0,0,31,0,2,0,@STRINGID+5,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+-- terminate script when string id not found in range of 2 yards, or string id is dead (string id = spawn_group)
+(@RELAYID+14,0,0,31,0,2,0,@STRINGID+5,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if not found'),
 (@RELAYID+14,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
 (@RELAYID+14,1,2,37,0,0,2,@STRINGID+5,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
 (@RELAYID+14,1000,0,28,0,0,0,@STRINGID+5,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
@@ -1420,8 +1420,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Shattered Hand Legionnaire 002 talk event StringId+6 - waypoint 4
 (@RELAYID+15,0,0,45,0,@RELAYID+12,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% talk event 1, 50% talk event 2'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+6 - script 1 waypoint 4
--- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
-(@RELAYID+16,0,0,31,0,2,0,@STRINGID+6,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+-- terminate script when string id not found in range of 2 yards, or string id is dead (string id = spawn_group)
+(@RELAYID+16,0,0,31,0,2,0,@STRINGID+6,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if not found'),
 (@RELAYID+16,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
 (@RELAYID+16,1,2,37,0,0,2,@STRINGID+6,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
 (@RELAYID+16,1,3,28,0,0,0,@STRINGID+6,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
@@ -1432,8 +1432,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+16,7000,1,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote laugh'),
 (@RELAYID+16,15000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+5 - script 2 waypoint 4
--- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
-(@RELAYID+17,0,0,31,0,2,0,@STRINGID+6,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
+-- terminate script when string id not found in range of 2 yards, or string id is dead (string id = spawn_group)
+(@RELAYID+17,0,0,31,0,2,0,@STRINGID+6,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if not found'),
 (@RELAYID+17,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
 (@RELAYID+17,1,2,37,0,0,2,@STRINGID+6,2,2050,0,0,0,0,0,0,0,0, 'Legionnaire - move to StringID'),
 (@RELAYID+17,1000,0,28,0,0,0,@STRINGID+6,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
@@ -1491,7 +1491,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001, 1670002, 1670003, 1670004, 1670005, 1708301, 1742001, 1746201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1670001, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 001 - 10% chance to yell, 20% chance to talk'),
+(1670001, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 001 - 10% chance to yell, 10% chance to talk'),
 -- Legionnaire 002 base script - waypoint 1
 (1670002, 0, 1, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 002 - 10% force bow/cheer, 10% talk event'),
 -- Legionnaire 002 base script - waypoint 2
