@@ -391,7 +391,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17083, 3, 3, 71.625595, 126.86035, -13.195059, 100, 0, 0),
 (17083, 3, 4, 69.65978, 92.944626, -13.221933, 100, 100, 1708301),
 (17083, 4, 1, 78.6885, 218.2196, -13.2166, 100, 0, 0),
-(17083, 4, 2, 69.58252, 147.60202, -13.231533, 100, 0, 0)
+(17083, 4, 2, 69.58252, 147.60202, -13.231533, 100, 0, 0),
 (17083, 4, 3, 69.59017, 139.92017, -13.2238035, 100, 100, 1708301),
 (17083, 5, 1, 83.5307, 250.5344, -13.1131, 100, 0, 0),
 (17083, 5, 2, 69.81086, 195.43225, -13.230811, 100, 0, 0),
@@ -1341,10 +1341,10 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+3,5000,0,45,0,@RELAYID+5,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% force bow, 50% force cheer'),
 -- Shattered Hand Legionnaire 002 force bow
 (@RELAYID+4,0,0,0,0,0,0,0,0,0,12684,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - say'),
-(@RELAYID+4,0,0,35,7,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
+(@RELAYID+4,0,0,35,5,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
 -- Shattered Hand Legionnaire 002 force cheer
 (@RELAYID+5,0,0,0,0,0,0,0,0,0,12683,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - say'),
-(@RELAYID+5,0,0,35,8,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event B'),
+(@RELAYID+5,0,0,35,6,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event B'),
 -- Shattered Hand Legionnaire 002 talk event StringId+3 - waypoint 1
 (@RELAYID+6,0,0,45,0,@RELAYID+6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% talk event 1, 50% talk event 2'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+3 - script 1 waypoint 1
