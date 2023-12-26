@@ -374,13 +374,28 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+339,2,299.4695,-76.63259,1.9365374,100,0,0),
 (@CGUID+339,3,291.05557,-90.919136,1.9129256,100,0,0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (16807, 17462, 17693);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (16807, 17083, 17462, 17693);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Grand Warlock Nethekurse
 (16807, 0, 1, 171.8228, 289.9769, -8.185595, 100, 0, 0),
 (16807, 0, 2, 178.5562, 288.1734, -7.933493, 100, 0, 0),
 (16807, 0, 3, 184.7897, 290.3699, -8.18139, 100, 0, 0),
 (16807, 0, 4, 178.5562, 288.1734, -7.933493, 100, 0, 0),
+-- Fel Orc Convert
+(17083, 1, 1, 79.9949, 111.5607, -13.1384, 100, 0, 0),
+(17083, 1, 2, 70.039566, 47.337353, -13.221819, 100, 100, 1708301),
+(17083, 2, 1, 61.1264, 110.8250, -13.1384, 100, 0, 0),
+(17083, 2, 2, 70.039566, 47.337353, -13.221819, 100, 100, 1708301),
+(17083, 3, 1, 88.4735, 187.3315, -13.1929, 100, 0, 0),
+(17083, 3, 2, 69.36077, 151.97517, -13.2360525, 100, 0, 0),
+(17083, 3, 3, 71.625595, 126.86035, -13.195059, 100, 0, 0),
+(17083, 3, 4, 69.65978, 92.944626, -13.221933, 100, 100, 1708301),
+(17083, 4, 1, 78.6885, 218.2196, -13.2166, 100, 0, 0),
+(17083, 4, 2, 69.58252, 147.60202, -13.231533, 100, 0, 0),
+(17083, 4, 3, 69.59017, 139.92017, -13.2238035, 100, 100, 1708301),
+(17083, 5, 1, 83.5307, 250.5344, -13.1131, 100, 0, 0),
+(17083, 5, 2, 69.81086, 195.43225, -13.230811, 100, 0, 0),
+(17083, 5, 3, 69.74186, 167.36273, -13.200679, 100, 100, 1708301),
 -- Shattered Hand Zealot
 (17462,1,1,497.68735,316.3075,1.9454536,100,0,0),
 (17462,1,2,485.92004,316.08777,1.9463365,100,100,3),
@@ -1309,7 +1324,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Shattered Hand Legionnaire 001 script 1
 (@RELAYID+1,0,0,0,@RELAYID+2,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
 (@RELAYID+1,0,1,1,36,0,0,@STRINGID+2,50,2560,0,0,0,0,0,0,0,0,'string id - emote oneshot attack'),
-(@RELAYID+1,0,2,16,1319,0,0,@STRINGID+50,2,2560,0,0,0,0,0,0,0,0,'string id - play sound'),
+(@RELAYID+1,0,2,16,1319,0,0,@STRINGID+2,50,2560,0,0,0,0,0,0,0,0,'string id - play sound'),
 -- Shattered Hand Legionnaire 001 script 2
 (@RELAYID+2,0,0,31,0,5,0,@STRINGID+2,5,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
 (@RELAYID+2,1,1,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - stop waypoint'),
@@ -1326,12 +1341,12 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+3,5000,0,45,0,@RELAYID+5,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% force bow, 50% force cheer'),
 -- Shattered Hand Legionnaire 002 force bow
 (@RELAYID+4,0,0,0,0,0,0,0,0,0,12684,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - say'),
-(@RELAYID+4,0,0,35,7,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event C'),
+(@RELAYID+4,0,0,35,5,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event A'),
 -- Shattered Hand Legionnaire 002 force cheer
 (@RELAYID+5,0,0,0,0,0,0,0,0,0,12683,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - say'),
-(@RELAYID+5,0,0,35,8,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event D'),
+(@RELAYID+5,0,0,35,6,40,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - send Custom AI Event B'),
 -- Shattered Hand Legionnaire 002 talk event StringId+3 - waypoint 1
-(@RELAYID+6,0,0,45,0,@RELAYID+6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% ftalk event 1, 50% talk event 2'),
+(@RELAYID+6,0,0,45,0,@RELAYID+6,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% talk event 1, 50% talk event 2'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+3 - script 1 waypoint 1
 -- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
 (@RELAYID+7,0,0,31,0,2,0,@STRINGID+3,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
@@ -1352,10 +1367,10 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+8,1000,0,28,0,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
 (@RELAYID+8,1000,1,1,66,0,0,@STRINGID+3,2,2560,0,0,0,0,0,0,0,0, 'StringId - emote salute'),
 (@RELAYID+8,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote OneShotExclamation'),
-(@RELAYID+8,4000,0,1,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+8,4000,0,0,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
 (@RELAYID+8,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
 -- Shattered Hand Legionnaire 002 talk event StringId+4 - waypoint 2
-(@RELAYID+9,0,0,45,0,@RELAYID+8,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% ftalk event 1, 50% talk event 2'),
+(@RELAYID+9,0,0,45,0,@RELAYID+8,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% talk event 1, 50% talk event 2'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+4 - script 1 waypoint 2
 -- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
 (@RELAYID+10,0,0,31,0,2,0,@STRINGID+4,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
@@ -1376,10 +1391,10 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+11,1000,0,28,0,0,0,@STRINGID+4,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
 (@RELAYID+11,1000,1,1,66,0,0,@STRINGID+4,2,2560,0,0,0,0,0,0,0,0, 'StringId - emote salute'),
 (@RELAYID+11,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote OneShotExclamation'),
-(@RELAYID+11,4000,0,1,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+11,4000,0,0,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
 (@RELAYID+11,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
 -- Shattered Hand Legionnaire 002 talk event StringId+5 - waypoint 3
-(@RELAYID+12,0,0,45,0,@RELAYID+10,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% ftalk event 1, 50% talk event 2'),
+(@RELAYID+12,0,0,45,0,@RELAYID+10,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% talk event 1, 50% talk event 2'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+5 - script 1 waypoint 3
 -- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
 (@RELAYID+13,0,0,31,0,2,0,@STRINGID+5,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
@@ -1400,10 +1415,10 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+14,1000,0,28,0,0,0,@STRINGID+5,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
 (@RELAYID+14,1000,1,1,66,0,0,@STRINGID+5,2,2560,0,0,0,0,0,0,0,0, 'StringId - emote salute'),
 (@RELAYID+14,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote OneShotExclamation'),
-(@RELAYID+14,4000,0,1,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+14,4000,0,0,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
 (@RELAYID+14,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
 -- Shattered Hand Legionnaire 002 talk event StringId+6 - waypoint 4
-(@RELAYID+15,0,0,45,0,@RELAYID+12,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% ftalk event 1, 50% talk event 2'),
+(@RELAYID+15,0,0,45,0,@RELAYID+12,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - 50% talk event 1, 50% talk event 2'),
 -- Shattered Hand Legionnaire 002 talk event to StringID+6 - script 1 waypoint 4
 -- terminate script when string id found in range of 2 yards, and string id is alive (string id = spawn_group)
 (@RELAYID+16,0,0,31,0,2,0,@STRINGID+6,2,0x800,0,0,0,0,0,0,0,0, 'Legionnaire - search for string id - terminate if found and alive'),
@@ -1424,7 +1439,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+17,1000,0,28,0,0,0,@STRINGID+6,2,2560,0,0,0,0,0,0,0,0, 'StringId - standstate stand'),
 (@RELAYID+17,1000,1,1,66,0,0,@STRINGID+6,2,2560,0,0,0,0,0,0,0,0, 'StringId - emote salute'),
 (@RELAYID+17,4000,0,1,5,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - emote OneShotExclamation'),
-(@RELAYID+17,4000,0,1,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
+(@RELAYID+17,4000,0,0,@RELAYID+4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - say text'),
 (@RELAYID+17,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint');
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
@@ -1474,7 +1489,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+12, 1, @RELAYID+16, 0, 'Shattered Hand Legionnaire - talk event 1'),
 (@RELAYID+12, 1, @RELAYID+17, 0, 'Shattered Hand Legionnaire - talk event 2');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001, 1670002, 1670003, 1670004, 1670005, 1742001, 1746201);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1670001, 1670002, 1670003, 1670004, 1670005, 1708301, 1742001, 1746201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1670001, 0, 0, 45, 0, @RELAYID+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 001 - 10% chance to yell, 20% chance to talk'),
 -- Legionnaire 002 base script - waypoint 1
@@ -1485,8 +1500,14 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1670004, 0, 1, 45, 0, @RELAYID+9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 002 - 10% force bow/cheer, 10% talk event'),
 -- Legionnaire 002 base script - waypoint 4
 (1670005, 0, 1, 45, 0, @RELAYID+11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 002 - 10% force bow/cheer, 10% talk event'),
+-- Fel Orc Convert
+(1708301, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fel Orc Convert - Waypoint Pause'),
+(1708301, 0, 1, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fel Orc Convert - Zone Combat Pulse'),
+(1708301, 0, 2, 20, 1, 5, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fel Orc Convert - Random Movement'),
+-- Base script used for Shattered Hand Heathen and Shattered Hand Savage at entrace
 (1742001, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - Waypoint Pause'),
 (1742001, 1000, 0, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Halls - EMOTE_STATE_READY1H'),
+-- Shattered Hand Zealot
 (1746201, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Zealot - Waypoint Pause'),
 (1746201, 0, 1, 2, 169, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Zealot - EMOTE_STATE_READY1H');
 
