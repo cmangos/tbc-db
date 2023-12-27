@@ -1473,7 +1473,9 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+17,12000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Legionnaire - start waypoint'),
 -- Guid based death scripts called via guid based creature_ai
 (@RELAYID+30,0,0,31,0,50,0,@STRINGID+1,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
-(@RELAYID+30,0,0,35,0,0,0,@STRINGID+1,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied');
+(@RELAYID+30,0,1,35,0,0,0,@STRINGID+1,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied'),
+(@RELAYID+31,0,0,31,0,50,0,@STRINGID+7,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
+(@RELAYID+31,0,1,35,0,0,0,@STRINGID+7,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied');
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES

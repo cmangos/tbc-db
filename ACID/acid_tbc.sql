@@ -24545,12 +24545,29 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2092305','20923','7','0','100','6','0','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Fail Gauntlet on Evade'),
 ('2092306','20923','9','0','100','1029','0','5','7000','10000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Cast Cleave (Heroic)'),
 -- guid based spawn_group_entry scripts
+-- Legionnaire 01
 ('5400151','-5400151','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
 ('5400152','-5400152','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
 ('5400153','-5400153','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
 ('5400154','-5400154','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
-('5400155','-5400155','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death');
-
+('5400155','-5400155','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+-- Legionnaire 02
+('5400164','-5400164','6','0','100','2','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400165','-5400165','6','0','100','2','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400166','-5400166','6','0','100','4','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Heroic) - Start RelayScript on Death'),
+('5400167','-5400167','6','0','100','4','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Heroic) - Start RelayScript on Death'),
+('5400168','-5400168','6','0','100','2','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400169','-5400169','6','0','100','2','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400170','-5400170','6','0','100','4','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Heroic) - Start RelayScript on Death'),
+('5400171','-5400171','6','0','100','4','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Heroic) - Start RelayScript on Death'),
+('5400172','-5400172','6','0','100','2','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400173','-5400173','6','0','100','2','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400174','-5400174','6','0','100','4','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Heroic) - Start RelayScript on Death'),
+('5400175','-5400175','6','0','100','4','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Heroic) - Start RelayScript on Death'),
+('5400176','-5400176','6','0','100','2','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400177','-5400177','6','0','100','2','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400178','-5400178','6','0','100','4','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Heroic) - Start RelayScript on Death'),
+('5400179','-5400179','6','0','100','4','0','0','0','0','0','0','53','5400031','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Heroic) - Start RelayScript on Death');
 
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 -- ==================
