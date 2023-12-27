@@ -889,8 +889,8 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+1, 'Shattered Halls - Adamantite Chest', 1, 1, 0, 0, 0),
 -- Entrance
-(@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 5, @SGGUID+1, 1, @STRINGID+2),
-(@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 5, @SGGUID+1, 1, @STRINGID+2),
+(@SGGUID+2, 'Shattered Halls - Legionnaire Group 001 - Normal', 0, 5, @SGGUID+1, 0, @STRINGID+2),
+(@SGGUID+3, 'Shattered Halls - Legionnaire Group 001 - Heroic', 0, 5, @SGGUID+1, 0, @STRINGID+2),
 -- Halls of Father
 (@SGGUID+4, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 001', 0, 2, 0, 1, 0),
 -- Legionnaire Group 2 - not grouped with their legionnaire
