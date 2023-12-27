@@ -960,12 +960,12 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+34, 'Shattered Halls - Shattered Hand Centurion (1) | Shattered Hand Gladiatior (4) | Sparring Hall Group 004', 0, 5, 0, 7, 0),
 -- Legionnaire Group 7 
 (@SGGUID+35, 'Shattered Halls - Shattered Hand Legionnaire Group 007', 0, 6, 0, 1, 0),
-(@SGGUID+36, 'Shattered Halls - Sparring Hall Group 001', 0, 3, 0, 0, 0), -- Dummy Group with spawn_group_entry
+(@SGGUID+36, 'Shattered Halls - Sparring Hall Group 001', 0, 3, 0, 0, @STRINGID+15), -- Dummy Group with spawn_group_entry
 -- Legionnaire Group 8 
 (@SGGUID+37, 'Shattered Halls - Shattered Hand Legionnaire 008', 0, 6, 0, 1, 0),
 (@SGGUID+38, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001', 0, 3, 0, 1, 0),
 -- (@SGGUID+39, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 0, 0, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet when he gets spawned
-(@SGGUID+40, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1, 0), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
+(@SGGUID+40, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1, @STRINGID+16), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
 (@SGGUID+41, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 003', 0, 2, 0, 1, 0),
 (@SGGUID+42, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002', 0, 3, 0, 1, 0),
 (@SGGUID+43, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 004', 0, 2, 0, 1, 0),
@@ -1337,7 +1337,7 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
 -- StringIDs
-DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+14;
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+16;
 INSERT INTO `string_id` (Id, Name) VALUES 
 (@STRINGID+1, 'Shattered Halls - Shattered Hand Legionnaire 01'),
 (@STRINGID+2, 'Shattered Halls - Legionnaire Group 001'),
@@ -1352,13 +1352,15 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+11, 'Shattered Halls - Shattered Hand Legionnaire 06'),
 (@STRINGID+12, 'Shattered Halls - Shattered Hand Legionnaire 07'),
 (@STRINGID+13, 'Shattered Halls - Shattered Hand Legionnaire 08'),
-(@STRINGID+14, 'Shattered Halls - Sleeping NPCs');
+(@STRINGID+14, 'Shattered Halls - Sleeping Reinforcement'),
+(@STRINGID+15, 'Shattered Halls - Dummy Reinforcement 1'),
+(@STRINGID+16, 'Shattered Halls - Dummy Reinforcement 2');
 
 -- =========
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+36;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+37;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Shattered Hand Legionnaire 001 script 1
 (@RELAYID+1,0,0,0,@RELAYID+2,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
@@ -1492,7 +1494,11 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+34,0,0,31,0,50,0,@STRINGID+10,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
 (@RELAYID+34,0,1,35,0,0,0,@STRINGID+10,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied'),
 (@RELAYID+35,0,0,31,0,50,0,@STRINGID+11,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
-(@RELAYID+35,0,1,35,0,0,0,@STRINGID+11,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied');
+(@RELAYID+35,0,1,35,0,0,0,@STRINGID+11,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied'),
+(@RELAYID+36,0,0,31,0,50,0,@STRINGID+12,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
+(@RELAYID+36,0,1,35,0,0,0,@STRINGID+12,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied'),
+(@RELAYID+37,0,0,31,0,50,0,@STRINGID+13,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
+(@RELAYID+37,0,1,35,0,0,0,@STRINGID+13,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied');
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
