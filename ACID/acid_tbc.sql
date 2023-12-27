@@ -24572,8 +24572,12 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5400183','-5400183','6','0','100','0','0','0','0','0','0','0','53','5400032','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
 ('5400184','-5400184','6','0','100','0','0','0','0','0','0','0','53','5400032','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
 ('5400185','-5400185','6','0','100','0','0','0','0','0','0','0','53','5400032','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
-('5400186','-5400186','6','0','100','0','0','0','0','0','0','0','53','5400032','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death');
-
+('5400186','-5400186','6','0','100','0','0','0','0','0','0','0','53','5400032','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
+-- legionnaire 04
+('5400188','-5400188','6','0','100','0','0','0','0','0','0','0','53','5400033','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
+('5400189','-5400189','6','0','100','0','0','0','0','0','0','0','53','5400033','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
+('5400190','-5400190','6','0','100','0','0','0','0','0','0','0','53','5400033','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
+('5400191','-5400191','6','0','100','0','0','0','0','0','0','0','53','5400033','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death');
 
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 -- ==================
