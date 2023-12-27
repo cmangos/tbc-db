@@ -1479,7 +1479,9 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+32,0,0,31,0,50,0,@STRINGID+8,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
 (@RELAYID+32,0,1,35,0,0,0,@STRINGID+8,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied'),
 (@RELAYID+33,0,0,31,0,50,0,@STRINGID+9,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
-(@RELAYID+33,0,1,35,0,0,0,@STRINGID+9,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied');
+(@RELAYID+33,0,1,35,0,0,0,@STRINGID+9,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied'),
+(@RELAYID+34,0,0,31,0,50,0,@STRINGID+10,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
+(@RELAYID+34,0,1,35,0,0,0,@STRINGID+10,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied');
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
