@@ -24485,6 +24485,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1742002','17420','2','0','100','1025','30','0','120000','120000','0','0','11','30485','0','0','1','1191','0','0','0','0','0','0','Shattered Hand Heathen - Cast Enrage at 30% HP'),
 ('1742003','17420','30','0','100','1','5','16700','0','0','0','0','5','2','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen - Bow Emote on Receive AI Event A'),
 ('1742004','17420','30','0','100','1','6','16700','0','0','0','0','5','71','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen - Cheer Emote on Receive AI Event B'),
+('1742005','-5400156','6','0','100','4','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen  (Heroic) - Start RelayScript on Death'),
+('1742006','-5400157','6','0','100','4','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen  (Heroic) - Start RelayScript on Death'),
+('1742007','-5400158','6','0','100','4','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen  (Heroic) - Start RelayScript on Death'),
+('1742008','-5400159','6','0','100','4','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen  (Heroic) - Start RelayScript on Death'),
+('1742009','-5400160','6','0','100','4','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','Shattered Hand Heathen  (Heroic) - Start RelayScript on Death'),
 -- Shattered Hand Archer 17427
 ('1742701','17427','11','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Shattered Hand Archer - Enable Range Mode on Spawn'),
 -- Shattered Hand Blood Guard 17461
@@ -24538,8 +24543,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2092303','20923','4','0','50','0','0','0','0','0','0','0','54','0','0','11999','0','0','0','0','0','0','0','0','Blood Guard Porung - Random Say on Aggro'),
 ('2092304','20923','6','0','100','6','0','0','0','0','0','0','34','4','3','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Finish Gauntlet on Death'),
 ('2092305','20923','7','0','100','6','0','0','0','0','0','0','34','4','2','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Fail Gauntlet on Evade'),
-('2092306','20923','9','0','100','1029','0','5','7000','10000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Cast Cleave (Heroic)');
-
+('2092306','20923','9','0','100','1029','0','5','7000','10000','0','0','11','15496','1','0','0','0','0','0','0','0','0','0','Blood Guard Porung - Cast Cleave (Heroic)'),
+-- guid based spawn_group_entry scripts
+('5400151','-5400151','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400152','-5400152','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400153','-5400153','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400154','-5400154','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death'),
+('5400155','-5400155','6','0','100','2','0','0','0','0','0','0','53','5400030','0','0','0','0','0','0','0','0','0','0','spawn_group_entry (Normal) - Start RelayScript on Death');
 
 
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
