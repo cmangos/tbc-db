@@ -406,7 +406,9 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17693,1,4,488.62424,315.73007,1.9498857,100,1000,0);
 
 DELETE FROM creature_spawn_data WHERE Id BETWEEN 1670001 AND 1670008;
+DELETE FROM creature_spawn_data WHERE Id = 1659301;
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
+-- Shattered Hand Legionnaires StringID
 (@CGUID+150, '1670001'),
 (@CGUID+163, '1670002'),
 (@CGUID+182, '1670003'),
@@ -414,9 +416,15 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+192, '1670005'),
 (@CGUID+198, '1670006'),
 (@CGUID+300, '1670007'),
-(@CGUID+309, '1670008');
+(@CGUID+309, '1670008'),
+-- Sleeping Reinforcments StringID
+(@CGUID+205, '1659301'),
+(@CGUID+206, '1659301'),
+(@CGUID+207, '1659301'),
+(@CGUID+208, '1659301');
 
 DELETE FROM creature_spawn_data_template WHERE Entry BETWEEN 1670001 AND 1670008;
+DELETE FROM creature_spawn_data_template WHERE Entry = 1659301;
 INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES 
 ('1670001', @STRINGID+1, 'Shattered Halls - Shattered Hand Legionnaire 01'), 
 ('1670002', @STRINGID+7, 'Shattered Halls - Shattered Hand Legionnaire 02'), 
@@ -425,7 +433,8 @@ INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES
 ('1670005', @STRINGID+10, 'Shattered Halls - Shattered Hand Legionnaire 05'), 
 ('1670006', @STRINGID+11, 'Shattered Halls - Shattered Hand Legionnaire 06'), 
 ('1670007', @STRINGID+12, 'Shattered Halls - Shattered Hand Legionnaire 07'), 
-('1670008', @STRINGID+13, 'Shattered Halls - Shattered Hand Legionnaire 08'); 
+('1670008', @STRINGID+13, 'Shattered Halls - Shattered Hand Legionnaire 08'), 
+('1659301', @STRINGID+14, 'Shattered Halls - Sleeping Reinforcments'); 
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+161, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
@@ -1229,7 +1238,6 @@ INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `
 (@SGGUID+42, 4, 3, 0, @SGGUID+42, 2, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002'),
 (@SGGUID+46, 4, 3, 0, @SGGUID+46, 2, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Warbringers Ring Patrol 001');
 
-
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+38, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001'),
 (@SGGUID+42, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002'),
@@ -1329,7 +1337,7 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
 -- StringIDs
-DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+13;
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+14;
 INSERT INTO `string_id` (Id, Name) VALUES 
 (@STRINGID+1, 'Shattered Halls - Shattered Hand Legionnaire 01'),
 (@STRINGID+2, 'Shattered Halls - Legionnaire Group 001'),
@@ -1343,13 +1351,14 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+10, 'Shattered Halls - Shattered Hand Legionnaire 05'),
 (@STRINGID+11, 'Shattered Halls - Shattered Hand Legionnaire 06'),
 (@STRINGID+12, 'Shattered Halls - Shattered Hand Legionnaire 07'),
-(@STRINGID+13, 'Shattered Halls - Shattered Hand Legionnaire 08');
+(@STRINGID+13, 'Shattered Halls - Shattered Hand Legionnaire 08'),
+(@STRINGID+14, 'Shattered Halls - Sleeping NPCs');
 
 -- =========
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+18;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+36;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Shattered Hand Legionnaire 001 script 1
 (@RELAYID+1,0,0,0,@RELAYID+2,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shattered Hand Legionnaire - random yell'),
@@ -1481,7 +1490,9 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+33,0,0,31,0,50,0,@STRINGID+9,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
 (@RELAYID+33,0,1,35,0,0,0,@STRINGID+9,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied'),
 (@RELAYID+34,0,0,31,0,50,0,@STRINGID+10,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
-(@RELAYID+34,0,1,35,0,0,0,@STRINGID+10,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied');
+(@RELAYID+34,0,1,35,0,0,0,@STRINGID+10,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied'),
+(@RELAYID+35,0,0,31,0,50,0,@STRINGID+11,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
+(@RELAYID+35,0,1,35,0,0,0,@STRINGID+11,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied');
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
