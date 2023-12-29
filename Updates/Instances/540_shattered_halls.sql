@@ -1302,12 +1302,16 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 
 DELETE FROM worldstate_name WHERE Id IN (@SGGUID+1, @SGGUID+4);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES 
-(@SGGUID+1, 'Shattered Halls - Legionnaire Group 001'),
+(@SGGUID+1, 'Shattered Halls - Legionnaire Group 01'),
+(@SGGUID+2, 'Shattered Halls - Legionnaire Group 03'),
+(@SGGUID+3, 'Shattered Halls - Legionnaire Group 04 | Legionnaire Group 05'),
 (@SGGUID+4, 'Shattered Halls - Gauntlet of Flame');
 
 DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1, @SGGUID+4);
 INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Shattered Hall - Legionnaire Group 001'),
+(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Shattered Hall - Legionnaire Group 01'),
+(@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Shattered Hall - Legionnaire Group 03'),
+(@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Shattered Hall - Legionnaire Group 04'),
 (@SGGUID+4, 42, @SGGUID+4, 1, 1, 0, 0, 'Shattered Hall - Gauntlet of Flame');
 
 -- =======
