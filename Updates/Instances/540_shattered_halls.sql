@@ -169,6 +169,18 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+185, 2, 75.38901, 128.20035, -13.19655, 100, 1000, 1669901),
 (@CGUID+186, 1, 88.89707, 150.40031, -13.15274, 0, 100, 5),
 (@CGUID+186, 2, 72.90818, 131.60164, -13.200008, 100, 1000, 1742002),
+-- Shattered Hand legionnaire 04
+(@CGUID+187, 1, 85.99913, 186.98563, -13.152245, 100, 100, 1670008),
+(@CGUID+187, 2, 69.46158, 171.00041, -13.204378, 100, 0, 0),
+(@CGUID+187, 3, 69.71826, 164.11491, -13.197376, 100, 500, 1670009),
+(@CGUID+188, 1, 54.244495, 181.24185, -13.142438, 100, 100, 5),
+(@CGUID+188, 2, 63.555927, 163.12886, -13.198391, 5.0614547, 100, 1670401),
+(@CGUID+189, 1, 53.95461, 192.43112, -13.141473, 100, 100, 5),
+(@CGUID+189, 2, 66.03581, 167.7274, -13.20105, 100, 1000, 1669901),
+(@CGUID+190, 1, 85.84835, 193.06874, -13.139966, 100, 100, 5),
+(@CGUID+190, 2, 72.62996, 168.92274, -13.202265, 100, 100, 1659302),
+(@CGUID+191, 1, 85.41226, 181.4781, -13.142398, 100, 100, 5),
+(@CGUID+191, 2, 75.93612,163.10774,-13.198574,4.555309295654296875, 100, 1670401),
 (@CGUID+192, 1, 76.5898, 203.889, -13.1954, 100, 0, 0),
 (@CGUID+192, 2, 62.5537, 203.886, -13.1971, 100, 0, 0),
 (@CGUID+198, 1, 76.4215, 261.567, -13.2031, 0, 0, 0),
@@ -397,6 +409,9 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 -- Shattered Hand Legionnaire 03 waypoints after intro
 (16700, 1, 1, 70.11518,142.67537,-13.226289, 100, 0, 0),
 (16700, 1, 2, 69.93477,128.13034,-13.196481, 100, 0, 0),
+-- Shattered Hand Legionnaire 04 waypoints after intro
+(16700, 2, 1, 69.834885,177.27766,-13.215765, 100, 0, 0),
+(16700, 2, 2, 70.14036,158.16167,-13.219431, 100, 0, 0),
 -- Fel Orc Convert
 (17083, 1, 1, 79.9949, 111.5607, -13.1384, 100, 0, 0),
 (17083, 1, 2, 70.039566, 47.337353, -13.221819, 100, 100, 1708301),
@@ -493,7 +508,6 @@ REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+184, 16593), (@CGUID+184, 16594), (@CGUID+184, 17694), -- Shattered Hand Brawler, Shadowmoon Acolyte, Darkcaster
 (@CGUID+186, 16523), (@CGUID+186, 17420), -- Shattered Hand Savage, Shattered Hand Heathen
-(@CGUID+190, 16593), (@CGUID+190, 17694), -- Shattered Hand Brawler, Shadowmoon Darkcaster
 (@CGUID+200, 16593), (@CGUID+200, 17694), -- Shattered Hand Brawler, Shadowmoon Darkcaster
 (@CGUID+203, 16523), (@CGUID+203, 17420); -- Shattered Hand Savage, Shattered Hand Heathen
 
@@ -695,11 +709,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+186, 0, 540, 3, 88.89707, 150.40031, -13.15274, 3.0073, 7200, 7200, 0, 2), -- creature_spawn_entry
 
 -- Legionnaire Group 4 - spawned on trigger (needs research)
-(@CGUID+187, 16700, 540, 3, 69.5766, 186.23, -13.2424, 4.69381, 7200, 7200, 0, 0), -- Shattered Hand Legionnaire
-(@CGUID+188, 16704, 540, 3, 63.2694, 185.208, -13.2393, 4.73753, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
-(@CGUID+189, 16699, 540, 3, 67.1698, 183.923, -13.2365, 4.69381, 7200, 7200, 0, 0), -- Shattered Hand Reaver
-(@CGUID+190, 0, 540, 3, 72.4708, 184.452, -13.238, 4.72051, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+191, 16704, 540, 3, 76.022, 183.854, -13.2361, 4.65506, 7200, 7200, 0, 0), -- Shattered Hand Sharpshooter
+(@CGUID+187, 16700, 540, 3, 85.99913, 186.98563, -13.152245, 3.429, 7200, 7200, 0, 2), -- Shattered Hand Legionnaire
+(@CGUID+188, 16704, 540, 3, 54.244495, 181.24185, -13.142438, 6.0792, 7200, 7200, 0, 2), -- Shattered Hand Sharpshooter
+(@CGUID+189, 16699, 540, 3, 53.95461, 192.43112, -13.141473, 6.172, 7200, 7200, 0, 2), -- Shattered Hand Reaver
+(@CGUID+190, 0, 540, 3, 85.84835, 193.06874, -13.139966, 3.522612, 7200, 7200, 0, 2), -- spawn_group_entry
+(@CGUID+191, 16704, 540, 3, 85.41226, 181.4781, -13.142398, 3.353, 7200, 7200, 0, 2), -- Shattered Hand Sharpshooter
 
 -- Legionnaire Group 5 - spawned when Group 4 spawns
 (@CGUID+192, 16700, 540, 3, 62.5538, 203.886, -13.1971, 0.000229836, 7200, 7200, 0, 2), -- Shattered Hand Legionnaire
@@ -950,8 +964,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+12, 'Shattered Halls - Halls of Father Group 005 - Heroic', 0, 2, 0, 1, @STRINGID+6),
 (@SGGUID+13, 'Shattered Halls - Shattered Hand Sentry (2) | Halls of Father Group 006', 0, 2, 0, 1, 0),  -- This group is Important - on GroupDeath they trigger spawning of Legionnaire Group 003
 (@SGGUID+14, 'Shattered Halls - Shattered Hand Legionnaire Group 003', 0, 5, @SGGUID+2, 3, 0), -- spawned when group 14 is dead
-(@SGGUID+15, 'Shattered Halls - Shattered Hand Legionnaire Group 004', 0, 5, 0, 3, 0), 
-(@SGGUID+16, 'Shattered Halls - Shattered Hand Legionnaire Group 005', 0, 6, 0, 3, 0), 
+(@SGGUID+15, 'Shattered Halls - Shattered Hand Legionnaire Group 004', 0, 5, @SGGUID+3, 3, 0), 
+(@SGGUID+16, 'Shattered Halls - Shattered Hand Legionnaire Group 005', 0, 6, @SGGUID+3, 3, 0), 
 (@SGGUID+17, 'Shattered Halls - Shattered Hand Legionnaire Group 006', 0, 7, 0, 1, 0), 
 (@SGGUID+18, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2)', 0, 3, 0, 1, 0), 
 -- The Sewer
@@ -1003,6 +1017,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+10, 16593, 0, 1, 0), (@SGGUID+10, 16594, 0, 1, 0), (@SGGUID+10, 17420, 1, 1, 0), (@SGGUID+10, 17694, 0, 1, 0), -- Heroic
 (@SGGUID+11, 16523, 0, 1, 0), (@SGGUID+11, 16593, 0, 1, 0), (@SGGUID+11, 16594, 0, 1, 0), (@SGGUID+11, 17420, 0, 1, 0), (@SGGUID+11, 17694, 0, 1, 0), -- Normal
 (@SGGUID+12, 16593, 0, 1, 0), (@SGGUID+12, 16594, 0, 1, 0), (@SGGUID+12, 17420, 1, 1, 0), (@SGGUID+12, 17694, 0, 1, 0), -- Heroic
+(@SGGUID+15, 16593, 0, 1, 0), (@SGGUID+15, 16594, 0, 1, 0),  (@SGGUID+15, 17694, 0, 1, 0), 
 (@SGGUID+35, 16523, 0, 2, 0), (@SGGUID+35, 16593, 0, 1, 0), (@SGGUID+35, 16594, 1, 1, 0), (@SGGUID+35, 16699, 1, 2, 0), (@SGGUID+35, 17420, 0, 2, 0), (@SGGUID+35, 17694, 0, 1, 0),  -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Acolyte, Shattered Hand Reaver, Shattered Hand Heathen, Shattered Hand Darkcaster
 (@SGGUID+36, 16523, 0, 2, 0), (@SGGUID+36, 16593, 0, 1, 0), (@SGGUID+36, 16699, 0, 2, 0), (@SGGUID+36, 17420, 0, 2, 0), -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Reaver, Shattered Hand Heathen
 (@SGGUID+37, 16523, 0, 2, 0), (@SGGUID+37, 16593, 0, 1, 0), (@SGGUID+37, 16594, 1, 1, 0), (@SGGUID+37, 16699, 1, 2, 0), (@SGGUID+37, 17420, 0, 2, 0), (@SGGUID+37, 17694, 0, 1, 0),  -- Shattered Hand Savage, Shattered Hand Brawler, Shattered Hand Acolyte, Shattered Hand Reaver, Shattered Hand Heathen, Shattered Hand Darkcaster
@@ -1519,7 +1534,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+37,0,0,31,0,50,0,@STRINGID+13,50,0x800,0,0,0,0,0,0,0,0, 'spawn_group_entry - search for string id - terminate if not found'),
 (@RELAYID+37,0,1,35,0,0,0,@STRINGID+13,50,2049,0,0,0,0,0,0,0,0, 'spawn_group_entry - send AIEventJustDied');
 
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+13;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+14;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Shattered Hand Legionnaire 001 script
 (@RELAYID+1, 1, @RELAYID+1, 10, 'Shattered Hand Legionnaire - yell'),
@@ -1570,12 +1585,20 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+13, 0, 16350, 0, 'Shattered Hand Legionnaire 03 - random yell 2'),
 (@RELAYID+13, 0, 16346, 0, 'Shattered Hand Legionnaire 03 - random yell 3'),
 (@RELAYID+13, 0, 17461, 0, 'Shattered Hand Legionnaire 03 - random yell 4'),
-(@RELAYID+13, 0, 16347, 0, 'Shattered Hand Legionnaire 03 - random yell 5');
+(@RELAYID+13, 0, 16347, 0, 'Shattered Hand Legionnaire 03 - random yell 5'),
+-- legionnaire 04 texts
+(@RELAYID+14, 0, 16354, 0, 'Shattered Hand Legionnaire 04 - random yell 1'),
+(@RELAYID+14, 0, 16355, 0, 'Shattered Hand Legionnaire 04 - random yell 2'),
+(@RELAYID+14, 0, 16352, 0, 'Shattered Hand Legionnaire 04 - random yell 3'),
+(@RELAYID+14, 0, 17462, 0, 'Shattered Hand Legionnaire 04 - random yell 4');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1659301, 1669901, 1670001, 1670002, 1670003, 1670004, 1670005, 1670006, 1670007, 1670401, 1708301, 1742001, 1742002, 1746201);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1659301, 1659302, 1669901, 1670001, 1670002, 1670003, 1670004, 1670005, 1670006, 1670007, 1670008, 1670009, 1670401, 1708301, 1742001, 1742002, 1746201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1659301, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - change movement'),
 (1659301, 2000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - standstate kneel'),
+(1659302, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - change movement'),
+(1659302, 1000, 0, 1, 275, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - emote train'),
+(1659302, 3000, 0, 2, 169, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - emote state'),
 (1669901, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Reaver - change movement'),
 (1669901, 2000, 0, 2, 169, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Reaver - emote state'),
 -- Legionnaire 01 rp 
@@ -1592,6 +1615,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1670006, 0, 0, 0, @RELAYID+13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 03 - talk'),
 (1670007, 1000, 0, 1, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 03 - emote rawr'),
 (1670007, 4000, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 03 - change movement'),
+-- Legionnaire 04 intro
+(1670008, 0, 0, 0, @RELAYID+14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 04 - talk'),
+(1670009, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 04 - change movement'),
+(1670009, 1000, 0, 1, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 04 - emote point'),
+(1670009, 4000, 0, 20, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Legionnaire 04 - change movement'),
 -- Shattered Hand Sharpshooter intro
 (1670401, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Sharpshooter - change movement'),
 (1670401, 2000, 0, 1, 214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Sharpshooter - Emote'),
