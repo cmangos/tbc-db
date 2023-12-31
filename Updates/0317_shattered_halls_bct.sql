@@ -25,3 +25,31 @@ UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10184' WHERE Id = '16
 UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10185' WHERE Id = '16366';
 -- No time for slumber! Join the fight! 16367
 UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10186' WHERE Id = '16367';
+
+
+-- Get ready! This shouldn't take long...
+UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10189' WHERE Id = '16349';
+
+-- Show them no quarter! Form up!
+UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10191' WHERE Id = '16350';
+
+-- Line up and crush these fools!
+UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10187' WHERE Id = '16346';
+
+-- Form ranks and make the intruders pay!
+UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10190' WHERE Id = '17461';
+
+-- Form up! Let's make quick work of them!
+UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10188' WHERE Id = '16347';
+
+-- Gakarah ma!
+UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10194' WHERE Id = '16354';
+
+-- We must halt their advance! Take your positions!
+UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10196' WHERE Id = '16355';
+
+-- Lok-Narash! Defensive positions!
+UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10192' WHERE Id = '16352';
+
+-- Hold them back at all costs!
+UPDATE broadcast_text SET ChatTypeID='1', SoundEntriesID1='10195' WHERE Id = '17462';
