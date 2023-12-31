@@ -114,7 +114,7 @@ REPLACE INTO `creature_loot_template` (`entry`, `item`, `chanceorquestchance`, `
 
 -- OOX-22/FE Distress Beacon 8705
 -- https://web.archive.org/web/20080621093156/http://wow.allakhazam.com/db/item.html?witem=8705
-REPLACE INTO `creature_loot_template` (`entry`, `item`, `chanceorquestchance`, `groupid`, `mincountorref`, `maxcount`) VALUES (5345, 8704, 1, 0, 1, 1); -- Diamond Head
+REPLACE INTO `creature_loot_template` (`entry`, `item`, `chanceorquestchance`, `groupid`, `mincountorref`, `maxcount`) VALUES (5345, 8705, 1, 0, 1, 1); -- Diamond Head
 
 -- Grime-Encrusted Ring 9326
 -- https://web.archive.org/web/20080630195017/http://wow.allakhazam.com/db/item.html?witem=9326
