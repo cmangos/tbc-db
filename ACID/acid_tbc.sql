@@ -27289,7 +27289,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Black Temple
 -- ============
 -- Giant Surf Glider (5432) - NSR
--- Mechanical Greench (15721) - NSR
 -- Shade of Akama (22841) - boss_shade_of_akama
 -- Ashtongue Battlelord 22844
 ('2284401','22844','2','0','100','1025','30','0','120000','120000','0','0','11','34970','0','0','1','2384','0','0','0','0','0','0','Ashtongue Battlelord - Cast Frenzy at 30% HP'),
@@ -28793,7 +28792,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1601702','16017','0','0','80','1025','7000','7000','14000','14000','0','0','11','27758','0','16','0','0','0','0','0','0','0','0','Patchwork Golem - Cast War Stomp'),
 ('1601703','16017','0','0','100','1025','5000','5000','5000','5000','0','0','11','27794','0','16','0','0','0','0','0','0','0','0','Patchwork Golem - Cast Cleave'),
 -- Bile Retcher 16018
-('1601801','16018','11','0','100','0','0','0','0','0','0','0','11','27793','0','34','0','0','0','0','0','0','0','0','Patchwork Golem - Cast Disease Cloud on Spawn'),
+('1601801','16018','11','0','100','0','0','0','0','0','0','0','11','30079','0','34','0','0','0','0','0','0','0','0','Bile Retcher - Cast Retching Plague on Spawn'),
 ('1601802','16018','0','0','75','1025','15000','15000','10000','10000','0','0','11','27862','1','0','0','0','0','0','0','0','0','0','Bile Retcher - Cast Bile Retcher Slam'),
 ('1601803','16018','0','0','100','1025','10000','10000','15000','15000','0','0','11','27807','1','0','0','0','0','0','0','0','0','0','Bile Retcher - Cast Bile Vomit'),
 -- Mad Scientist 16020
@@ -31274,6 +31273,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Frostwolf Emissary 15106
 ('1510601','15106','1','0','100','1','10000','90000','20000','70000','0','0','10','11','18','0','0','0','0','0','0','0','0','0','Frostwolf Emissary - Random Laugh or Cry Emote'),
 ('1510602','15106','1','0','100','1','5000','25000','10000','30000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Frostwolf Emissary - Talk Emote OOC'),
+-- Mechanical Greench 15721 - NSR
 -- Gnomish Flame Turret 17458
 ('1745801','17458','11','0','100','0','0','0','0','0','0','0','64','0','0','0','61','0','0','0','21','0','0','0','Gnomish Flame Turret - Disable FOLLOW_MOVEMENT and Set IMMOBILIZED_STATE and Prevent Combat Movement on Spawn'),
 ('1745802','17458','11','0','100','0','0','0','0','0','0','0','50','1','0','0','0','0','0','0','0','0','0','0','Gnomish Flame Turret - Set Defensive state on Spawn'),
