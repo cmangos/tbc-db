@@ -451,7 +451,7 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17693,1,4,488.62424,315.73007,1.9498857,100,1000,0);
 
 DELETE FROM creature_spawn_data WHERE Id BETWEEN 1670001 AND 1670008;
-DELETE FROM creature_spawn_data WHERE Id = 1659301;
+DELETE FROM creature_spawn_data WHERE Id IN (1659301, 1708301);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
 -- Shattered Hand Legionnaires StringID
 (@CGUID+150, '1670001'),
@@ -466,10 +466,13 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+205, '1659301'),
 (@CGUID+206, '1659301'),
 (@CGUID+207, '1659301'),
-(@CGUID+208, '1659301');
+(@CGUID+208, '1659301'),
+-- Fel Orc Convert
+(@CGUID+199, '1708301'),
+(@CGUID+201, '1708301');
 
 DELETE FROM creature_spawn_data_template WHERE Entry BETWEEN 1670001 AND 1670008;
-DELETE FROM creature_spawn_data_template WHERE Entry = 1659301;
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1659301, 1708301);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES 
 ('1670001', @STRINGID+1, 'Shattered Halls - Shattered Hand Legionnaire 01'), 
 ('1670002', @STRINGID+7, 'Shattered Halls - Shattered Hand Legionnaire 02'), 
@@ -479,7 +482,8 @@ INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES
 ('1670006', @STRINGID+11, 'Shattered Halls - Shattered Hand Legionnaire 06'), 
 ('1670007', @STRINGID+12, 'Shattered Halls - Shattered Hand Legionnaire 07'), 
 ('1670008', @STRINGID+13, 'Shattered Halls - Shattered Hand Legionnaire 08'), 
-('1659301', @STRINGID+14, 'Shattered Halls - Sleeping Reinforcments'); 
+('1659301', @STRINGID+14, 'Shattered Halls - Sleeping Reinforcments'),
+('1708301', @STRINGID+17, 'Shattered Halls - Fel Orc Convert');
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+161, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
@@ -1384,7 +1388,7 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
 -- StringIDs
-DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+16;
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+17;
 INSERT INTO `string_id` (Id, Name) VALUES 
 (@STRINGID+1, 'Shattered Halls - Shattered Hand Legionnaire 01'),
 (@STRINGID+2, 'Shattered Halls - Legionnaire Group 001'),
@@ -1401,7 +1405,8 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+13, 'Shattered Halls - Shattered Hand Legionnaire 08'),
 (@STRINGID+14, 'Shattered Halls - Sleeping Reinforcement'),
 (@STRINGID+15, 'Shattered Halls - Dummy Reinforcement 1'),
-(@STRINGID+16, 'Shattered Halls - Dummy Reinforcement 2');
+(@STRINGID+16, 'Shattered Halls - Dummy Reinforcement 2'),
+(@STRINGID+17, 'Shattered Halls - Fel Orc Convert');
 
 -- =========
 -- DBSCRIPTS
