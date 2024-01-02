@@ -1,6 +1,7 @@
 SET @GGUID := 5305000; -- gameobjects
 SET @SGGUID := 21000; -- Ghostlands
 DELETE FROM gameobject WHERE Id IN(181249,181248);
+DELETE FROM gameobject WHERE guid BETWEEN @GGUID+1 AND @GGUID+4; -- tin
 -- special veins of tin
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+1, '0', '530', '1', 7064.7119140625, -6243.3896484375, 18.75861930847167968, 1.343901276588439941, 0, 0, 0.622513771057128906, 0.78260880708694458, '600', '600'),
@@ -265,6 +266,7 @@ DELETE FROM gameobject WHERE id = 1731 and map =530 and position_x BETWEEN -2812
 DELETE FROM gameobject WHERE id = 1732 and map =530 and position_x BETWEEN -2812 AND -970 AND position_y BETWEEN -12651 AND -10370; -- tin
 -- bloodmyst
 SET @GGUID := 5305200;
+DELETE FROM gameobject WHERE guid BETWEEN @GGUID+1 AND @GGUID+31; -- tin
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+1, '0', '530', '1', -1200.16845703125, -12420.482421875, 96.70108795166015625, 0.698131442070007324, 0, 0, 0.342020034790039062, 0.939692676067352294, '600', '600'),
 (@GGUID+2, '0', '530', '1', -1310.0167236328125, -11485.482421875, 23.82255363464355468, 5.201082706451416015, 0, 0, -0.51503753662109375, 0.857167601585388183, '600', '600'),
@@ -554,6 +556,7 @@ INSERT INTO spawn_group_entry(Id,Entry,Chance) VALUES
 DELETE FROM gameobject WHERE id = 1732 and map =530 and position_x BETWEEN 6250 AND 8130 AND position_y BETWEEN -8032 AND -5700; -- tin
 DELETE FROM gameobject WHERE id = 1731 and map =530 and position_x BETWEEN 6250 AND 8130 AND position_y BETWEEN -8032 AND -5700; -- copper
 SET @GGUID := 5305400;
+DELETE FROM gameobject WHERE guid BETWEEN @GGUID+1 AND @GGUID+21; -- tin
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
 (@GGUID+1, '0', '530', '1', 6531.1650390625, -7405.35400390625, 69.88683319091796875, 6.021387100219726562, 0, 0, -0.13052558898925781, 0.991444945335388183, '600', '600'),
 (@GGUID+2, '0', '530', '1', 7258.173828125, -7591.01904296875, 84.4684906005859375, 0.907570242881774902, 0, 0, 0.438370704650878906, 0.898794233798980712, '600', '600'),
@@ -651,6 +654,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+32, 'Ghostlands - Tin Vein - Scar and Zul', 1, 2, 0, 0),
 (@SGGUID+33, 'Ghostlands - Tin Vein - ZebTela', 1, 1, 0, 0);
 
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+31 AND @SGGUID+33;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Deatholme
 (@SGGUID+31, @GGUID+3, -1),
@@ -688,6 +692,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+40, 'Ghostlands - Copper Vein - Windrunner Spire', 1, 2, 0, 0),
 (@SGGUID+41, 'Ghostlands - Copper Vein - The Dead Scar', 1, 2, 0, 0);
 
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+34 AND @SGGUID+41;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Deatholme
 (@SGGUID+34, @GGUID+22, -1),
@@ -919,6 +924,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+57, 'Eversong Woods - Copper Vein - South of North Sanctum', 1, 2, 0, 0),
 (@SGGUID+58, 'Eversong Woods - Copper Vein - North of Fairbreeze Village', 1, 2, 0, 0);
 
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+42 AND @SGGUID+58;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Duskwither Spire
 (@SGGUID+42, @GGUID+34, -1),
