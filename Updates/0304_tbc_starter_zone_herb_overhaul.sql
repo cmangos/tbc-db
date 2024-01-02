@@ -200,6 +200,65 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+209,1619,530,1, -5144.9755859375, -11248.28515625, 4.168517112731933593, 5.026549339294433593, 0, 0, -0.5877847671508789, 0.809017360210418701,600,600),
 (@GGUID+210,1619,530,1, -3353.62060546875, -12525.6943359375, 62.77695083618164062, 2.652894020080566406, 0, 0, 0.970294952392578125, 0.241925001144409179,600,600);
 
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+6;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+1, 'Azuremyst - Earthroot - Northern coast', 1, 2, 0, 0),
+(@SGGUID+2, 'Azuremyst - Earthroot - Stillpine Hold', 1, 2, 0, 0),
+(@SGGUID+3, 'Azuremyst - Earthroot - Azure Watch', 1, 2, 0, 0),
+(@SGGUID+4, 'Azuremyst - Earthroot - Odesyus Landing', 1, 2, 0, 0),
+(@SGGUID+5, 'Azuremyst - Earthroot - Bristlelimb Village', 1, 2, 0, 0),
+(@SGGUID+6, 'Azuremyst - Earthroot - Silvermyst Isle', 1, 2, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id IN(@SGGUID+1,@SGGUID+2);
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Northern coast
+(@SGGUID+1, @GGUID+178, -1),
+(@SGGUID+1, @GGUID+185, -1),
+(@SGGUID+1, @GGUID+186, -1),
+(@SGGUID+1, @GGUID+187, -1),
+(@SGGUID+1, @GGUID+207, -1),
+-- Stillpine Hold
+(@SGGUID+2, @GGUID+177, -1),
+(@SGGUID+2, @GGUID+184, -1),
+(@SGGUID+2, @GGUID+195, -1),
+(@SGGUID+2, @GGUID+199, -1),
+(@SGGUID+2, @GGUID+200, -1),
+(@SGGUID+2, @GGUID+202, -1),
+(@SGGUID+2, @GGUID+210, -1),
+-- Azure Watch
+(@SGGUID+3, @GGUID+176, -1),
+(@SGGUID+3, @GGUID+179, -1),
+(@SGGUID+3, @GGUID+180, -1),
+(@SGGUID+3, @GGUID+181, -1),
+(@SGGUID+3, @GGUID+194, -1),
+(@SGGUID+3, @GGUID+196, -1),
+(@SGGUID+3, @GGUID+201, -1),
+(@SGGUID+3, @GGUID+206, -1),
+-- Odesyus Landing
+(@SGGUID+4, @GGUID+182, -1),
+(@SGGUID+4, @GGUID+183, -1),
+(@SGGUID+4, @GGUID+191, -1),
+(@SGGUID+4, @GGUID+192, -1),
+(@SGGUID+4, @GGUID+193, -1),
+(@SGGUID+4, @GGUID+208, -1),
+-- Bristlelimb Village
+(@SGGUID+5, @GGUID+170, -1),
+(@SGGUID+5, @GGUID+171, -1),
+(@SGGUID+5, @GGUID+175, -1),
+(@SGGUID+5, @GGUID+188, -1),
+(@SGGUID+5, @GGUID+189, -1),
+(@SGGUID+5, @GGUID+203, -1),
+-- Silvermyst Isle
+(@SGGUID+6, @GGUID+172, -1),
+(@SGGUID+6, @GGUID+173, -1),
+(@SGGUID+6, @GGUID+174, -1),
+(@SGGUID+6, @GGUID+190, -1),
+(@SGGUID+6, @GGUID+197, -1),
+(@SGGUID+6, @GGUID+198, -1),
+(@SGGUID+6, @GGUID+204, -1),
+(@SGGUID+6, @GGUID+205, -1),
+(@SGGUID+6, @GGUID+209, -1);
+
 SET @GGUID := 5306000;
 -- Bloodmyst
 DELETE FROM gameobject WHERE id IN(1618,1617,1619,1620,1621,1622,2045) and map =530 and position_x BETWEEN -2863 AND -800 AND position_y BETWEEN -12750 AND -10370;
