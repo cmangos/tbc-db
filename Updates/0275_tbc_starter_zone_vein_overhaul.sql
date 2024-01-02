@@ -263,7 +263,7 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+13, @GGUID+90, -1);
 
 DELETE FROM gameobject WHERE id = 1731 and map =530 and position_x BETWEEN -2812 AND -970 AND position_y BETWEEN -12651 AND -10370; -- copper
-DELETE FROM gameobject WHERE id = 1732 and map =530 and position_x BETWEEN -2812 AND -970 AND position_y BETWEEN -12651 AND -10370; -- tin
+DELETE FROM gameobject WHERE id IN (1732,1733) and map =530 and position_x BETWEEN -2812 AND -970 AND position_y BETWEEN -12651 AND -10370; -- tin
 -- bloodmyst
 SET @GGUID := 5305200;
 DELETE FROM gameobject WHERE guid BETWEEN @GGUID+1 AND @GGUID+31; -- tin
@@ -553,7 +553,7 @@ INSERT INTO spawn_group_entry(Id,Entry,Chance) VALUES
 (@SGGUID+19,1733,5);
 
 -- Ghostlands
-DELETE FROM gameobject WHERE id = 1732 and map =530 and position_x BETWEEN 6250 AND 8130 AND position_y BETWEEN -8032 AND -5700; -- tin
+DELETE FROM gameobject WHERE id IN (1732,1733) and map =530 and position_x BETWEEN 6250 AND 8130 AND position_y BETWEEN -8032 AND -5700; -- tin
 DELETE FROM gameobject WHERE id = 1731 and map =530 and position_x BETWEEN 6250 AND 8130 AND position_y BETWEEN -8032 AND -5700; -- copper
 SET @GGUID := 5305400;
 DELETE FROM gameobject WHERE guid BETWEEN @GGUID+1 AND @GGUID+21; -- tin
