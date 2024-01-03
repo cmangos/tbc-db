@@ -200,7 +200,7 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+209,1619,530,1, -5144.9755859375, -11248.28515625, 4.168517112731933593, 5.026549339294433593, 0, 0, -0.5877847671508789, 0.809017360210418701,600,600),
 (@GGUID+210,1619,530,1, -3353.62060546875, -12525.6943359375, 62.77695083618164062, 2.652894020080566406, 0, 0, 0.970294952392578125, 0.241925001144409179,600,600);
 
-DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+6;
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+17;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+1, 'Azuremyst - Earthroot - Northern coast', 1, 2, 0, 0),
 (@SGGUID+2, 'Azuremyst - Earthroot - Stillpine Hold', 1, 2, 0, 0),
@@ -209,7 +209,20 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+5, 'Azuremyst - Earthroot - Bristlelimb Village', 1, 2, 0, 0),
 (@SGGUID+6, 'Azuremyst - Earthroot - Silvermyst Isle', 1, 2, 0, 0);
 
-DELETE FROM spawn_group_spawn WHERE Id IN(@SGGUID+1,@SGGUID+2);
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+7, 'Azuremyst - Peacebloom - Northern peninsula', 1, 2, 0, 0),
+(@SGGUID+8, 'Azuremyst - Peacebloom - Emberglade', 1, 2, 0, 0),
+(@SGGUID+9, 'Azuremyst - Peacebloom - Exodar North', 1, 2, 0, 0),
+(@SGGUID+10, 'Azuremyst - Peacebloom - Plains', 1, 2, 0, 0),
+(@SGGUID+11, 'Azuremyst - Peacebloom - Azure Watch', 1, 2, 0, 0),
+(@SGGUID+12, 'Azuremyst - Peacebloom - Crashsite', 1, 2, 0, 0),
+(@SGGUID+13, 'Azuremyst - Peacebloom - Odesyus Landing', 1, 2, 0, 0),
+(@SGGUID+14, 'Azuremyst - Peacebloom - South of lakes', 1, 2, 0, 0),
+(@SGGUID+15, 'Azuremyst - Peacebloom - Bristlelimb Village South', 1, 2, 0, 0),
+(@SGGUID+16, 'Azuremyst - Peacebloom - Bristlelimb Village North', 1, 2, 0, 0),
+(@SGGUID+17, 'Azuremyst - Peacebloom - Silvermyst isle', 1, 2, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+17;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Northern coast
 (@SGGUID+1, @GGUID+178, -1),
@@ -258,6 +271,90 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (@SGGUID+6, @GGUID+204, -1),
 (@SGGUID+6, @GGUID+205, -1),
 (@SGGUID+6, @GGUID+209, -1);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Northern peninsula
+(@SGGUID+7, @GGUID+11, -1),
+(@SGGUID+7, @GGUID+21, -1),
+(@SGGUID+7, @GGUID+36, -1),
+(@SGGUID+7, @GGUID+37, -1),
+(@SGGUID+7, @GGUID+46, -1),
+(@SGGUID+7, @GGUID+53, -1),
+(@SGGUID+7, @GGUID+62, -1),
+-- Emberglade
+(@SGGUID+8, @GGUID+35, -1),
+(@SGGUID+8, @GGUID+38, -1),
+(@SGGUID+8, @GGUID+47, -1),
+(@SGGUID+8, @GGUID+54, -1),
+(@SGGUID+8, @GGUID+69, -1),
+(@SGGUID+8, @GGUID+70, -1),
+(@SGGUID+8, @GGUID+71, -1),
+-- Exodar North
+(@SGGUID+9, @GGUID+12, -1),
+(@SGGUID+9, @GGUID+20, -1),
+(@SGGUID+9, @GGUID+61, -1),
+(@SGGUID+9, @GGUID+64, -1),
+-- Plains
+(@SGGUID+10, @GGUID+18, -1),
+(@SGGUID+10, @GGUID+19, -1),
+(@SGGUID+10, @GGUID+39, -1),
+(@SGGUID+10, @GGUID+45, -1),
+(@SGGUID+10, @GGUID+48, -1),
+(@SGGUID+10, @GGUID+49, -1),
+(@SGGUID+10, @GGUID+50, -1),
+(@SGGUID+10, @GGUID+51, -1),
+(@SGGUID+10, @GGUID+52, -1),
+(@SGGUID+10, @GGUID+63, -1),
+-- Azure Watch
+(@SGGUID+11, @GGUID+10, -1),
+(@SGGUID+11, @GGUID+17, -1),
+(@SGGUID+11, @GGUID+27, -1),
+(@SGGUID+11, @GGUID+28, -1),
+(@SGGUID+11, @GGUID+40, -1),
+(@SGGUID+11, @GGUID+67, -1),
+-- Crashsite
+(@SGGUID+12, @GGUID+13, -1),
+(@SGGUID+12, @GGUID+14, -1),
+(@SGGUID+12, @GGUID+26, -1),
+(@SGGUID+12, @GGUID+29, -1),
+(@SGGUID+12, @GGUID+32, -1),
+(@SGGUID+12, @GGUID+44, -1),
+-- Odesyus Landing
+(@SGGUID+13, @GGUID+15, -1),
+(@SGGUID+13, @GGUID+16, -1),
+(@SGGUID+13, @GGUID+24, -1),
+(@SGGUID+13, @GGUID+43, -1),
+(@SGGUID+13, @GGUID+60, -1),
+(@SGGUID+13, @GGUID+65, -1),
+-- South of lakes
+(@SGGUID+14, @GGUID+08, -1),
+(@SGGUID+14, @GGUID+09, -1),
+(@SGGUID+14, @GGUID+25, -1),
+(@SGGUID+14, @GGUID+33, -1),
+(@SGGUID+14, @GGUID+55, -1),
+(@SGGUID+14, @GGUID+56, -1),
+(@SGGUID+14, @GGUID+68, -1),
+-- Bristlelimb Village South
+(@SGGUID+15, @GGUID+03, -1),
+(@SGGUID+15, @GGUID+04, -1),
+(@SGGUID+15, @GGUID+31, -1),
+(@SGGUID+15, @GGUID+34, -1),
+(@SGGUID+15, @GGUID+41, -1),
+(@SGGUID+15, @GGUID+59, -1),
+(@SGGUID+15, @GGUID+66, -1),
+-- Bristlelimb Village North
+(@SGGUID+16, @GGUID+01, -1),
+(@SGGUID+16, @GGUID+02, -1),
+(@SGGUID+16, @GGUID+07, -1),
+(@SGGUID+16, @GGUID+30, -1),
+(@SGGUID+16, @GGUID+57, -1),
+-- Silvermyst isle
+(@SGGUID+17, @GGUID+05, -1),
+(@SGGUID+17, @GGUID+06, -1),
+(@SGGUID+17, @GGUID+22, -1),
+(@SGGUID+17, @GGUID+23, -1),
+(@SGGUID+17, @GGUID+42, -1),
+(@SGGUID+17, @GGUID+58, -1);
 
 SET @GGUID := 5306000;
 -- Bloodmyst
