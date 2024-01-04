@@ -810,6 +810,473 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+459,1622,530,1, -1931.037353515625, -10733.08984375, 111.0366592407226562, 5.026549339294433593, 0, 0, -0.5877847671508789, 0.809017360210418701,600,600),
 (@GGUID+460,1622,530,1, -2054.5908203125, -10643.1728515625, 146.4062957763671875, 2.565631866455078125, 0, 0, 0.958819389343261718, 0.284016460180282592,600,600);
 
+DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+30 AND @SGGUID+81;
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+30, 'Bloodmyst - Peacebloom - Blue Island', 1, 2, 0, 0),
+(@SGGUID+31, 'Bloodmyst - Peacebloom - Wyrmscar Island', 1, 2, 0, 0),
+(@SGGUID+32, 'Bloodmyst - Peacebloom - Nazzivian', 1, 2, 0, 0),
+(@SGGUID+33, 'Bloodmyst - Peacebloom - Ruins', 1, 2, 0, 0),
+(@SGGUID+34, 'Bloodmyst - Peacebloom - Ragefeather Ridge', 1, 2, 0, 0),
+(@SGGUID+35, 'Bloodmyst - Peacebloom - Axxarien', 1, 2, 0, 0),
+(@SGGUID+36, 'Bloodmyst - Peacebloom - Cryo Core', 1, 2, 0, 0),
+(@SGGUID+37, 'Bloodmyst - Peacebloom - Vindicators Rest', 1, 2, 0, 0);
+
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+30 AND @SGGUID+81;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Blue Island
+(@SGGUID+30, @GGUID+02, -1),
+(@SGGUID+30, @GGUID+08, -1),
+(@SGGUID+30, @GGUID+42, -1),
+(@SGGUID+30, @GGUID+46, -1),
+(@SGGUID+30, @GGUID+49, -1),
+(@SGGUID+30, @GGUID+50, -1),
+-- Wyrmscar Island
+(@SGGUID+31, @GGUID+04, -1),
+(@SGGUID+31, @GGUID+28, -1),
+(@SGGUID+31, @GGUID+35, -1),
+(@SGGUID+31, @GGUID+36, -1),
+(@SGGUID+31, @GGUID+44, -1),
+(@SGGUID+31, @GGUID+45, -1),
+-- Nazzivian
+(@SGGUID+32, @GGUID+22, -1),
+(@SGGUID+32, @GGUID+23, -1),
+(@SGGUID+32, @GGUID+24, -1),
+(@SGGUID+32, @GGUID+30, -1),
+(@SGGUID+32, @GGUID+33, -1),
+(@SGGUID+32, @GGUID+51, -1),
+(@SGGUID+32, @GGUID+52, -1),
+(@SGGUID+32, @GGUID+53, -1),
+-- Ruins
+(@SGGUID+33, @GGUID+01, -1),
+(@SGGUID+33, @GGUID+03, -1),
+(@SGGUID+33, @GGUID+17, -1),
+(@SGGUID+33, @GGUID+31, -1),
+(@SGGUID+33, @GGUID+32, -1),
+(@SGGUID+33, @GGUID+34, -1),
+-- Ragefeather Ridge
+(@SGGUID+34, @GGUID+05, -1),
+(@SGGUID+34, @GGUID+09, -1),
+(@SGGUID+34, @GGUID+26, -1),
+(@SGGUID+34, @GGUID+43, -1),
+-- Axxarien
+(@SGGUID+35, @GGUID+10, -1),
+(@SGGUID+35, @GGUID+12, -1),
+(@SGGUID+35, @GGUID+16, -1),
+(@SGGUID+35, @GGUID+20, -1),
+(@SGGUID+35, @GGUID+21, -1),
+(@SGGUID+35, @GGUID+25, -1),
+(@SGGUID+35, @GGUID+37, -1),
+(@SGGUID+35, @GGUID+40, -1),
+(@SGGUID+35, @GGUID+47, -1),
+-- Cryo Core
+(@SGGUID+36, @GGUID+06, -1),
+(@SGGUID+36, @GGUID+07, -1),
+(@SGGUID+36, @GGUID+11, -1),
+(@SGGUID+36, @GGUID+13, -1),
+(@SGGUID+36, @GGUID+15, -1),
+(@SGGUID+36, @GGUID+38, -1),
+(@SGGUID+36, @GGUID+41, -1),
+(@SGGUID+36, @GGUID+48, -1),
+-- Vindicators Rest
+(@SGGUID+37, @GGUID+14, -1),
+(@SGGUID+37, @GGUID+18, -1),
+(@SGGUID+37, @GGUID+19, -1),
+(@SGGUID+37, @GGUID+27, -1),
+(@SGGUID+37, @GGUID+29, -1),
+(@SGGUID+37, @GGUID+39, -1);
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+38, 'Bloodmyst - Silverleaf - Blue Island left', 1, 2, 0, 0),
+(@SGGUID+39, 'Bloodmyst - Silverleaf - Blue Island right', 1, 2, 0, 0),
+(@SGGUID+40, 'Bloodmyst - Silverleaf - Nazzivian', 1, 2, 0, 0),
+(@SGGUID+41, 'Bloodmyst - Silverleaf - Murloc coast', 1, 2, 0, 0),
+(@SGGUID+42, 'Bloodmyst - Silverleaf - Ruins', 1, 2, 0, 0),
+(@SGGUID+43, 'Bloodmyst - Silverleaf - Ragefeather Ridge', 1, 2, 0, 0),
+(@SGGUID+44, 'Bloodmyst - Silverleaf - Wyrmscar Island', 1, 2, 0, 0),
+(@SGGUID+45, 'Bloodmyst - Silverleaf - Axxarien', 1, 2, 0, 0),
+(@SGGUID+46, 'Bloodmyst - Silverleaf - Cryo Core', 1, 2, 0, 0),
+(@SGGUID+47, 'Bloodmyst - Silverleaf - Amberweb Pass', 1, 2, 0, 0),
+(@SGGUID+48, 'Bloodmyst - Silverleaf - Vector Coil', 1, 2, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Blue Island left
+(@SGGUID+38, @GGUID+83, -1),
+(@SGGUID+38, @GGUID+88, -1),
+(@SGGUID+38, @GGUID+116, -1),
+(@SGGUID+38, @GGUID+122, -1),
+(@SGGUID+38, @GGUID+137, -1),
+-- Blue Island right
+(@SGGUID+39, @GGUID+81, -1),
+(@SGGUID+39, @GGUID+82, -1),
+(@SGGUID+39, @GGUID+123, -1),
+(@SGGUID+39, @GGUID+124, -1),
+(@SGGUID+39, @GGUID+140, -1),
+(@SGGUID+39, @GGUID+141, -1),
+-- Nazzivian
+(@SGGUID+40, @GGUID+89, -1),
+(@SGGUID+40, @GGUID+90, -1),
+(@SGGUID+40, @GGUID+119, -1),
+(@SGGUID+40, @GGUID+126, -1),
+(@SGGUID+40, @GGUID+146, -1),
+-- Murloc coast
+(@SGGUID+41, @GGUID+112, -1),
+(@SGGUID+41, @GGUID+113, -1),
+(@SGGUID+41, @GGUID+117, -1),
+(@SGGUID+41, @GGUID+120, -1),
+(@SGGUID+41, @GGUID+121, -1),
+(@SGGUID+41, @GGUID+132, -1),
+(@SGGUID+41, @GGUID+142, -1),
+-- Ruins
+(@SGGUID+42, @GGUID+80, -1),
+(@SGGUID+42, @GGUID+84, -1),
+(@SGGUID+42, @GGUID+106, -1),
+(@SGGUID+42, @GGUID+125, -1),
+(@SGGUID+42, @GGUID+133, -1),
+(@SGGUID+42, @GGUID+144, -1),
+-- Ragefeather Ridge
+(@SGGUID+43, @GGUID+86, -1),
+(@SGGUID+43, @GGUID+92, -1),
+(@SGGUID+43, @GGUID+102, -1),
+(@SGGUID+43, @GGUID+108, -1),
+(@SGGUID+43, @GGUID+127, -1),
+-- Wyrmscar Island
+(@SGGUID+44, @GGUID+85, -1),
+(@SGGUID+44, @GGUID+96, -1),
+(@SGGUID+44, @GGUID+104, -1),
+(@SGGUID+44, @GGUID+128, -1),
+(@SGGUID+44, @GGUID+134, -1),
+(@SGGUID+44, @GGUID+135, -1),
+-- Axxarien
+(@SGGUID+45, @GGUID+87, -1),
+(@SGGUID+45, @GGUID+93, -1),
+(@SGGUID+45, @GGUID+94, -1),
+(@SGGUID+45, @GGUID+95, -1),
+(@SGGUID+45, @GGUID+103, -1),
+(@SGGUID+45, @GGUID+109, -1),
+(@SGGUID+45, @GGUID+111, -1),
+(@SGGUID+45, @GGUID+138, -1),
+(@SGGUID+45, @GGUID+143, -1),
+(@SGGUID+45, @GGUID+147, -1),
+-- Cryo Core
+(@SGGUID+46, @GGUID+91, -1),
+(@SGGUID+46, @GGUID+97, -1),
+(@SGGUID+46, @GGUID+105, -1),
+(@SGGUID+46, @GGUID+107, -1),
+(@SGGUID+46, @GGUID+114, -1),
+(@SGGUID+46, @GGUID+131, -1),
+-- Amberweb Pass
+(@SGGUID+47, @GGUID+99, -1),
+(@SGGUID+47, @GGUID+100, -1),
+(@SGGUID+47, @GGUID+115, -1),
+(@SGGUID+47, @GGUID+129, -1),
+(@SGGUID+47, @GGUID+130, -1),
+(@SGGUID+47, @GGUID+136, -1),
+-- Vector Coil
+(@SGGUID+48, @GGUID+98, -1),
+(@SGGUID+48, @GGUID+101, -1),
+(@SGGUID+48, @GGUID+110, -1),
+(@SGGUID+48, @GGUID+118, -1),
+(@SGGUID+48, @GGUID+139, -1),
+(@SGGUID+48, @GGUID+145, -1);
+
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+49, 'Bloodmyst - Earthroot - Blue Island', 1, 2, 0, 0),
+(@SGGUID+50, 'Bloodmyst - Earthroot - Nazzivian', 1, 2, 0, 0),
+(@SGGUID+51, 'Bloodmyst - Earthroot - Ruins', 1, 2, 0, 0),
+(@SGGUID+52, 'Bloodmyst - Earthroot - Ragefeather Ridge and Axxarien', 1, 2, 0, 0),
+(@SGGUID+53, 'Bloodmyst - Earthroot - Cryo Core', 1, 2, 0, 0),
+(@SGGUID+54, 'Bloodmyst - Earthroot - Amberweb Pass', 1, 2, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Blue Island
+(@SGGUID+49, @GGUID+160, -1),
+(@SGGUID+49, @GGUID+161, -1),
+(@SGGUID+50, @GGUID+176, -1),
+(@SGGUID+49, @GGUID+185, -1),
+-- Nazzivian
+(@SGGUID+50, @GGUID+163, -1),
+(@SGGUID+50, @GGUID+164, -1),
+(@SGGUID+50, @GGUID+174, -1),
+(@SGGUID+50, @GGUID+175, -1),
+(@SGGUID+50, @GGUID+180, -1),
+(@SGGUID+50, @GGUID+190, -1),
+-- Ruins
+(@SGGUID+51, @GGUID+172, -1),
+(@SGGUID+51, @GGUID+182, -1),
+(@SGGUID+51, @GGUID+187, -1),
+(@SGGUID+51, @GGUID+188, -1),
+-- Ragefeather Ridge and Axxarien
+(@SGGUID+52, @GGUID+162, -1),
+(@SGGUID+52, @GGUID+165, -1),
+(@SGGUID+52, @GGUID+171, -1),
+(@SGGUID+52, @GGUID+179, -1),
+(@SGGUID+52, @GGUID+181, -1),
+(@SGGUID+52, @GGUID+183, -1),
+(@SGGUID+52, @GGUID+186, -1),
+-- Cryo Core
+(@SGGUID+53, @GGUID+166, -1),
+(@SGGUID+53, @GGUID+167, -1),
+(@SGGUID+53, @GGUID+169, -1),
+(@SGGUID+53, @GGUID+170, -1),
+(@SGGUID+53, @GGUID+173, -1),
+(@SGGUID+53, @GGUID+189, -1),
+(@SGGUID+53, @GGUID+192, -1),
+-- Amberweb Pass
+(@SGGUID+54, @GGUID+168, -1),
+(@SGGUID+54, @GGUID+177, -1),
+(@SGGUID+54, @GGUID+178, -1),
+(@SGGUID+54, @GGUID+184, -1),
+(@SGGUID+54, @GGUID+191, -1);
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+55, 'Bloodmyst - Mageroyal - Blue Island and Ruins', 1, 1, 0, 0),
+(@SGGUID+56, 'Bloodmyst - Mageroyal - Nazzivian', 1, 1, 0, 0),
+(@SGGUID+57, 'Bloodmyst - Mageroyal - Axxarien', 1, 1, 0, 0),
+(@SGGUID+58, 'Bloodmyst - Mageroyal - Cryo Core', 1, 1, 0, 0),
+(@SGGUID+59, 'Bloodmyst - Mageroyal - Amberweb Pass', 1, 1, 0, 0),
+(@SGGUID+60, 'Bloodmyst - Mageroyal - Wyrmscar Island', 1, 1, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Blue Island and Ruins
+(@SGGUID+55, @GGUID+240, -1),
+(@SGGUID+55, @GGUID+250, -1),
+(@SGGUID+55, @GGUID+259, -1),
+(@SGGUID+55, @GGUID+267, -1),
+(@SGGUID+55, @GGUID+268, -1),
+(@SGGUID+55, @GGUID+269, -1),
+-- Nazzivian
+(@SGGUID+56, @GGUID+244, -1),
+(@SGGUID+56, @GGUID+253, -1),
+(@SGGUID+56, @GGUID+260, -1),
+(@SGGUID+56, @GGUID+262, -1),
+(@SGGUID+56, @GGUID+265, -1),
+(@SGGUID+56, @GGUID+266, -1),
+(@SGGUID+56, @GGUID+276, -1),
+-- Axxarien
+(@SGGUID+57, @GGUID+243, -1),
+(@SGGUID+57, @GGUID+252, -1),
+(@SGGUID+57, @GGUID+254, -1),
+(@SGGUID+57, @GGUID+257, -1),
+(@SGGUID+57, @GGUID+271, -1),
+(@SGGUID+57, @GGUID+274, -1),
+-- Cryo Core
+(@SGGUID+58, @GGUID+245, -1),
+(@SGGUID+58, @GGUID+246, -1),
+(@SGGUID+58, @GGUID+251, -1),
+(@SGGUID+58, @GGUID+263, -1),
+(@SGGUID+58, @GGUID+273, -1),
+(@SGGUID+58, @GGUID+275, -1),
+-- Amberweb Pass
+(@SGGUID+59, @GGUID+247, -1),
+(@SGGUID+59, @GGUID+255, -1),
+(@SGGUID+59, @GGUID+258, -1),
+(@SGGUID+59, @GGUID+264, -1),
+(@SGGUID+59, @GGUID+270, -1),
+(@SGGUID+59, @GGUID+272, -1),
+-- Wyrmscar Island
+(@SGGUID+60, @GGUID+241, -1),
+(@SGGUID+60, @GGUID+242, -1),
+(@SGGUID+60, @GGUID+248, -1),
+(@SGGUID+60, @GGUID+249, -1),
+(@SGGUID+60, @GGUID+256, -1),
+(@SGGUID+60, @GGUID+261, -1);
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+61, 'Bloodmyst - Briarthorn - Blue Island', 1, 1, 0, 0),
+(@SGGUID+62, 'Bloodmyst - Briarthorn - River', 1, 1, 0, 0),
+(@SGGUID+63, 'Bloodmyst - Briarthorn - Murloc Coast', 1, 1, 0, 0),
+(@SGGUID+64, 'Bloodmyst - Briarthorn - Nazzivian', 1, 1, 0, 0),
+(@SGGUID+65, 'Bloodmyst - Briarthorn - Puddles', 1, 1, 0, 0),
+(@SGGUID+66, 'Bloodmyst - Briarthorn - Ragefeather Ridge', 1, 1, 0, 0),
+(@SGGUID+67, 'Bloodmyst - Briarthorn - Axxarien', 1, 1, 0, 0),
+(@SGGUID+68, 'Bloodmyst - Briarthorn - Cryo Core', 1, 1, 0, 0),
+(@SGGUID+69, 'Bloodmyst - Briarthorn - Towards Vector Coil', 1, 1, 0, 0),
+(@SGGUID+70, 'Bloodmyst - Briarthorn - Vindicators Rest', 1, 1, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Blue Island
+(@SGGUID+61, @GGUID+300, -1),
+(@SGGUID+61, @GGUID+301, -1),
+(@SGGUID+61, @GGUID+321, -1),
+(@SGGUID+61, @GGUID+330, -1),
+(@SGGUID+61, @GGUID+334, -1),
+(@SGGUID+61, @GGUID+336, -1),
+-- River
+(@SGGUID+62, @GGUID+316, -1),
+(@SGGUID+62, @GGUID+323, -1),
+(@SGGUID+62, @GGUID+335, -1),
+(@SGGUID+62, @GGUID+337, -1),
+-- Murloc Coast
+(@SGGUID+62, @GGUID+312, -1),
+(@SGGUID+63, @GGUID+319, -1),
+(@SGGUID+63, @GGUID+322, -1),
+(@SGGUID+63, @GGUID+333, -1),
+(@SGGUID+63, @GGUID+348, -1),
+-- Nazzivian
+(@SGGUID+64, @GGUID+303, -1),
+(@SGGUID+64, @GGUID+304, -1),
+(@SGGUID+64, @GGUID+311, -1),
+(@SGGUID+64, @GGUID+318, -1),
+(@SGGUID+64, @GGUID+329, -1),
+(@SGGUID+64, @GGUID+340, -1),
+-- Puddles
+(@SGGUID+65, @GGUID+302, -1),
+(@SGGUID+65, @GGUID+325, -1),
+(@SGGUID+65, @GGUID+332, -1),
+(@SGGUID+65, @GGUID+338, -1),
+(@SGGUID+65, @GGUID+339, -1),
+-- Ragefeather Ridge
+(@SGGUID+66, @GGUID+305, -1),
+(@SGGUID+66, @GGUID+309, -1),
+(@SGGUID+66, @GGUID+326, -1),
+(@SGGUID+66, @GGUID+331, -1),
+(@SGGUID+66, @GGUID+343, -1),
+-- Axxarien
+(@SGGUID+67, @GGUID+306, -1),
+(@SGGUID+67, @GGUID+313, -1),
+(@SGGUID+67, @GGUID+315, -1),
+(@SGGUID+67, @GGUID+328, -1),
+(@SGGUID+67, @GGUID+341, -1),
+-- Cryo Core
+(@SGGUID+68, @GGUID+310, -1),
+(@SGGUID+68, @GGUID+317, -1),
+(@SGGUID+68, @GGUID+324, -1),
+(@SGGUID+68, @GGUID+344, -1),
+(@SGGUID+68, @GGUID+345, -1),
+(@SGGUID+68, @GGUID+346, -1),
+-- Towards Vector Coil
+(@SGGUID+69, @GGUID+307, -1),
+(@SGGUID+69, @GGUID+342, -1),
+(@SGGUID+69, @GGUID+349, -1),
+(@SGGUID+68, @GGUID+347, -1),
+-- Vindicators Rest
+(@SGGUID+70, @GGUID+308, -1),
+(@SGGUID+70, @GGUID+314, -1),
+(@SGGUID+70, @GGUID+320, -1),
+(@SGGUID+70, @GGUID+327, -1);
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+71, 'Bloodmyst - Stranglekelp - Murloc Coast south', 1, 3, 0, 0),
+(@SGGUID+72, 'Bloodmyst - Stranglekelp - Murloc Coast west', 1, 2, 0, 0),
+(@SGGUID+73, 'Bloodmyst - Stranglekelp - Ruins coast', 1, 3, 0, 0),
+(@SGGUID+74, 'Bloodmyst - Stranglekelp - Wyrmscar Island coast', 1, 3, 0, 0),
+(@SGGUID+75, 'Bloodmyst - Stranglekelp - Bloodwash coast', 1, 3, 0, 0),
+(@SGGUID+76, 'Bloodmyst - Stranglekelp - Hidden Reef', 1, 3, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Murloc Coast south
+(@SGGUID+71, @GGUID+381, -1),
+(@SGGUID+71, @GGUID+386, -1),
+(@SGGUID+71, @GGUID+387, -1),
+(@SGGUID+71, @GGUID+390, -1),
+(@SGGUID+71, @GGUID+392, -1),
+(@SGGUID+71, @GGUID+393, -1),
+(@SGGUID+71, @GGUID+394, -1),
+(@SGGUID+71, @GGUID+395, -1),
+(@SGGUID+71, @GGUID+396, -1),
+(@SGGUID+71, @GGUID+397, -1),
+(@SGGUID+71, @GGUID+398, -1),
+-- Murloc Coast west
+(@SGGUID+72, @GGUID+372, -1),
+(@SGGUID+72, @GGUID+388, -1),
+(@SGGUID+72, @GGUID+389, -1),
+(@SGGUID+72, @GGUID+391, -1),
+(@SGGUID+72, @GGUID+419, -1),
+-- Ruins coast
+(@SGGUID+73, @GGUID+360, -1),
+(@SGGUID+73, @GGUID+366, -1),
+(@SGGUID+73, @GGUID+367, -1),
+(@SGGUID+73, @GGUID+382, -1),
+(@SGGUID+73, @GGUID+383, -1),
+(@SGGUID+73, @GGUID+399, -1),
+(@SGGUID+73, @GGUID+400, -1),
+(@SGGUID+73, @GGUID+401, -1),
+(@SGGUID+73, @GGUID+406, -1),
+(@SGGUID+73, @GGUID+407, -1),
+(@SGGUID+73, @GGUID+408, -1),
+(@SGGUID+73, @GGUID+410, -1),
+-- Wyrmscar Island coast
+(@SGGUID+74, @GGUID+361, -1),
+(@SGGUID+74, @GGUID+365, -1),
+(@SGGUID+74, @GGUID+402, -1),
+(@SGGUID+74, @GGUID+403, -1),
+(@SGGUID+74, @GGUID+404, -1),
+(@SGGUID+74, @GGUID+405, -1),
+(@SGGUID+74, @GGUID+409, -1),
+-- Bloodwash coast
+(@SGGUID+75, @GGUID+362, -1),
+(@SGGUID+75, @GGUID+363, -1),
+(@SGGUID+75, @GGUID+364, -1),
+(@SGGUID+75, @GGUID+370, -1),
+(@SGGUID+75, @GGUID+371, -1),
+(@SGGUID+75, @GGUID+384, -1),
+(@SGGUID+75, @GGUID+411, -1),
+(@SGGUID+75, @GGUID+417, -1),
+(@SGGUID+75, @GGUID+418, -1),
+-- Hidden Reef
+(@SGGUID+76, @GGUID+368, -1),
+(@SGGUID+76, @GGUID+369, -1),
+(@SGGUID+76, @GGUID+373, -1),
+(@SGGUID+76, @GGUID+374, -1),
+(@SGGUID+76, @GGUID+375, -1),
+(@SGGUID+76, @GGUID+376, -1),
+(@SGGUID+76, @GGUID+377, -1),
+(@SGGUID+76, @GGUID+378, -1),
+(@SGGUID+76, @GGUID+379, -1),
+(@SGGUID+76, @GGUID+380, -1),
+(@SGGUID+76, @GGUID+385, -1),
+(@SGGUID+76, @GGUID+412, -1),
+(@SGGUID+76, @GGUID+413, -1),
+(@SGGUID+76, @GGUID+414, -1),
+(@SGGUID+76, @GGUID+415, -1),
+(@SGGUID+76, @GGUID+416, -1);
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+(@SGGUID+77, 'Bloodmyst - Bruiseweed - Wyrmscar Island', 1, 1, 0, 0),
+(@SGGUID+78, 'Bloodmyst - Bruiseweed - Axxarien', 1, 1, 0, 0),
+(@SGGUID+79, 'Bloodmyst - Bruiseweed - Cryo Core', 1, 1, 0, 0),
+(@SGGUID+80, 'Bloodmyst - Bruiseweed - Amberweb Pass', 1, 1, 0, 0),
+(@SGGUID+81, 'Bloodmyst - Bruiseweed - Vector Coil', 1, 1, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Wyrmscar Island
+(@SGGUID+77, @GGUID+438, -1),
+(@SGGUID+77, @GGUID+439, -1),
+(@SGGUID+77, @GGUID+445, -1),
+(@SGGUID+77, @GGUID+446, -1),
+(@SGGUID+77, @GGUID+447, -1),
+(@SGGUID+77, @GGUID+448, -1),
+-- Axxarien
+(@SGGUID+78, @GGUID+437, -1),
+(@SGGUID+78, @GGUID+440, -1),
+(@SGGUID+78, @GGUID+441, -1),
+(@SGGUID+78, @GGUID+442, -1),
+(@SGGUID+78, @GGUID+457, -1),
+(@SGGUID+78, @GGUID+458, -1),
+-- Cryo Core
+(@SGGUID+79, @GGUID+430, -1),
+(@SGGUID+79, @GGUID+434, -1),
+(@SGGUID+80, @GGUID+449, -1),
+(@SGGUID+79, @GGUID+454, -1),
+(@SGGUID+79, @GGUID+456, -1),
+-- Amberweb Pass
+(@SGGUID+80, @GGUID+432, -1),
+(@SGGUID+80, @GGUID+435, -1),
+(@SGGUID+80, @GGUID+436, -1),
+(@SGGUID+80, @GGUID+443, -1),
+(@SGGUID+80, @GGUID+450, -1),
+(@SGGUID+80, @GGUID+451, -1),
+(@SGGUID+80, @GGUID+452, -1),
+-- Vector Coil
+(@SGGUID+81, @GGUID+431, -1),
+(@SGGUID+81, @GGUID+433, -1),
+(@SGGUID+81, @GGUID+444, -1),
+(@SGGUID+81, @GGUID+453, -1),
+(@SGGUID+81, @GGUID+455, -1),
+(@SGGUID+81, @GGUID+459, -1),
+(@SGGUID+81, @GGUID+460, -1);
+
 -- one delete query for Ghostlands and Eversong because the boundary is so wonky
 DELETE FROM gameobject WHERE id IN(1618,1617,1619,1620,1621,1622,2045,181166) and map =530 and position_x BETWEEN 6250 AND 10000 AND position_y BETWEEN -8080 AND -5500;
 SET @GGUID := 5306500;
