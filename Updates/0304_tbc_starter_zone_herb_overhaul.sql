@@ -1605,6 +1605,92 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+91, 'Eversong - Peacebloom - North Sanctum', 1, 2, 0, 0),
 (@SGGUID+92, 'Eversong - Peacebloom - Cliffs', 1, 2, 0, 0);
 
+DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+82 AND @SGGUID+126;
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Duskwither Spire
+(@SGGUID+82, @GGUID+11, -1),
+(@SGGUID+82, @GGUID+46, -1),
+(@SGGUID+82, @GGUID+52, -1),
+(@SGGUID+82, @GGUID+53, -1),
+-- Duskwither mountains
+(@SGGUID+83, @GGUID+8, -1),
+(@SGGUID+83, @GGUID+10, -1),
+(@SGGUID+83, @GGUID+43, -1),
+(@SGGUID+83, @GGUID+54, -1),
+(@SGGUID+83, @GGUID+67, -1),
+-- TorWatha
+(@SGGUID+84, @GGUID+12, -1),
+(@SGGUID+84, @GGUID+13, -1),
+(@SGGUID+84, @GGUID+47, -1),
+(@SGGUID+84, @GGUID+55, -1),
+(@SGGUID+84, @GGUID+70, -1),
+(@SGGUID+84, @GGUID+71, -1),
+(@SGGUID+84, @GGUID+72, -1),
+-- Farstrider Retreat
+(@SGGUID+85, @GGUID+6, -1),
+(@SGGUID+85, @GGUID+7, -1),
+(@SGGUID+85, @GGUID+9, -1),
+(@SGGUID+85, @GGUID+29, -1),
+(@SGGUID+85, @GGUID+30, -1),
+(@SGGUID+85, @GGUID+45, -1),
+(@SGGUID+85, @GGUID+60, -1),
+(@SGGUID+85, @GGUID+66, -1),
+-- East Sanctum
+(@SGGUID+86, @GGUID+26, -1),
+(@SGGUID+86, @GGUID+27, -1),
+(@SGGUID+86, @GGUID+42, -1),
+(@SGGUID+86, @GGUID+48, -1),
+(@SGGUID+86, @GGUID+57, -1),
+(@SGGUID+86, @GGUID+59, -1),
+-- Runestone Shandor
+(@SGGUID+87, @GGUID+28, -1),
+(@SGGUID+87, @GGUID+39, -1),
+(@SGGUID+87, @GGUID+40, -1),
+(@SGGUID+87, @GGUID+41, -1),
+(@SGGUID+87, @GGUID+63, -1),
+(@SGGUID+87, @GGUID+65, -1),
+(@SGGUID+87, @GGUID+69, -1),
+-- Fairbreeze Village
+(@SGGUID+88, @GGUID+18, -1),
+(@SGGUID+88, @GGUID+21, -1),
+(@SGGUID+88, @GGUID+22, -1),
+(@SGGUID+88, @GGUID+24, -1),
+(@SGGUID+88, @GGUID+25, -1),
+(@SGGUID+88, @GGUID+32, -1),
+(@SGGUID+88, @GGUID+35, -1),
+(@SGGUID+88, @GGUID+58, -1),
+(@SGGUID+88, @GGUID+62, -1),
+-- Sunsail Anchorage
+(@SGGUID+89, @GGUID+5, -1),
+(@SGGUID+89, @GGUID+23, -1),
+(@SGGUID+89, @GGUID+33, -1),
+(@SGGUID+89, @GGUID+34, -1),
+(@SGGUID+89, @GGUID+44, -1),
+(@SGGUID+89, @GGUID+64, -1),
+(@SGGUID+89, @GGUID+68, -1),
+-- West Sanctum
+(@SGGUID+90, @GGUID+3, -1),
+(@SGGUID+90, @GGUID+4, -1),
+(@SGGUID+90, @GGUID+15, -1),
+(@SGGUID+90, @GGUID+36, -1),
+(@SGGUID+90, @GGUID+37, -1),
+(@SGGUID+90, @GGUID+49, -1),
+-- North Sanctum
+(@SGGUID+91, @GGUID+1, -1),
+(@SGGUID+91, @GGUID+14, -1),
+(@SGGUID+91, @GGUID+16, -1),
+(@SGGUID+91, @GGUID+31, -1),
+(@SGGUID+91, @GGUID+50, -1),
+(@SGGUID+91, @GGUID+51, -1),
+(@SGGUID+91, @GGUID+61, -1),
+-- Cliffs
+(@SGGUID+92, @GGUID+2, -1),
+(@SGGUID+92, @GGUID+17, -1),
+(@SGGUID+92, @GGUID+19, -1),
+(@SGGUID+92, @GGUID+20, -1),
+(@SGGUID+92, @GGUID+38, -1),
+(@SGGUID+92, @GGUID+56, -1);
+
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+93, 'Eversong - Silverleaf - Duskwither Spire', 1, 2, 0, 0),
 (@SGGUID+94, 'Eversong - Silverleaf - Thurons Livery', 1, 2, 0, 0),
@@ -1623,6 +1709,42 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+107, 'Eversong - Silverleaf - Tranquil Shore', 1, 2, 0, 0),
 (@SGGUID+108, 'Eversong - Silverleaf - Sunsail Anchorage', 1, 2, 0, 0),
 (@SGGUID+109, 'Eversong - Silverleaf - Around Scorched Grove', 1, 2, 0, 0);
+/*
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Duskwither Spire
+(@SGGUID+93, @GGUID+, -1),
+-- Thurons Livery
+(@SGGUID+94, @GGUID+, -1),
+-- TorWatha
+(@SGGUID+95, @GGUID+, -1),
+-- Farstrider East
+(@SGGUID+96, @GGUID+, -1),
+-- Farstrider West
+(@SGGUID+97, @GGUID+, -1),
+-- Silvermoon Entrance
+(@SGGUID+98, @GGUID+, -1),
+-- East Sanctum
+(@SGGUID+99, @GGUID+, -1),
+-- ZebWatha
+(@SGGUID+100, @GGUID+, -1),
+-- Runestone Shandor
+(@SGGUID+101, @GGUID+, -1),
+-- Fairbreeze Village
+(@SGGUID+102, @GGUID+, -1),
+-- Cliffs
+(@SGGUID+103, @GGUID+, -1),
+-- North Sanctum
+(@SGGUID+104, @GGUID+, -1),
+-- River Scar North West
+(@SGGUID+105, @GGUID+, -1),
+-- West Sanctum
+(@SGGUID+106, @GGUID+, -1),
+-- Tranquil Shore
+(@SGGUID+107, @GGUID+, -1),
+-- Sunsail Anchorage
+(@SGGUID+108, @GGUID+, -1),
+-- Around Scorched Grove
+(@SGGUID+109, @GGUID+, -1),
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+110, 'Eversong - Earthroot - Duskwither Spire', 1, 2, 0, 0),
@@ -1633,6 +1755,24 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+115, 'Eversong - Earthroot - Scorched Grove Mountain', 1, 2, 0, 0),
 (@SGGUID+116, 'Eversong - Earthroot - Sunsail Anchorage', 1, 2, 0, 0),
 (@SGGUID+117, 'Eversong - Earthroot - West Sanctum', 1, 2, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Duskwither Spire
+(@SGGUID+110, @GGUID+, -1),
+-- TorWatha
+(@SGGUID+111, @GGUID+, -1),
+-- ZebWatha
+(@SGGUID+112, @GGUID+, -1),
+-- East Sanctum
+(@SGGUID+113, @GGUID+, -1),
+-- Fairbreeze Village
+(@SGGUID+114, @GGUID+, -1),
+-- Scorched Grove Mountain
+(@SGGUID+115, @GGUID+, -1),
+-- Sunsail Anchorage
+(@SGGUID+116, @GGUID+, -1),
+-- West Sanctum
+(@SGGUID+117, @GGUID+, -1),
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+118, 'Eversong - Bloodthistle - Duskwither Spire', 1, 2, 0, 0),
@@ -1645,6 +1785,26 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+125, 'Eversong - Bloodthistle - Runestone Falithas', 1, 2, 0, 0),
 (@SGGUID+126, 'Eversong - Bloodthistle - Scorched Grove', 1, 2, 0, 0);
 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Duskwither Spire
+(@SGGUID+118, @GGUID+, -1),
+-- Silvermoon Entrance
+(@SGGUID+119, @GGUID+, -1),
+-- Saltherils Haven
+(@SGGUID+120, @GGUID+, -1),
+-- West Sanctum
+(@SGGUID+121, @GGUID+, -1),
+-- North Sanctum
+(@SGGUID+122, @GGUID+, -1),
+-- East Sanctum
+(@SGGUID+123, @GGUID+, -1),
+-- Runestone Shandor
+(@SGGUID+124, @GGUID+, -1),
+-- Runestone Falithas
+(@SGGUID+125, @GGUID+, -1),
+-- Scorched Grove
+(@SGGUID+126, @GGUID+, -1),
+*/
 SET @GGUID := 5306900;
 -- Ghostlands
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
@@ -1929,7 +2089,7 @@ INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, positio
 (@GGUID+540,1622,530,1, 6337.33447265625, -6237.5, 75.46437835693359375, 3.892086982727050781, 0, 0, -0.93041706085205078, 0.366502493619918823,600,600),
 (@GGUID+541,1622,530,1, 6833.80126953125, -7421.41650390625, 47.66019821166992187, 2.216565132141113281, 0, 0, 0.894933700561523437, 0.44619917869567871,600,600),
 (@GGUID+542,1622,530,1, 7308.0146484375, -5830.0576171875, 13.72437763214111328, 2.914689540863037109, 0, 0, 0.993571281433105468, 0.113208353519439697,600,600);
-
+/*
 DELETE FROM spawn_group WHERE Id BETWEEN @SGGUID+127 AND @SGGUID+172;
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+127, 'Ghostlands - Peacebloom - Farstrider Enclave', 1, 2, 0, 0),
@@ -1942,6 +2102,26 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+134, 'Ghostlands - Peacebloom - Sanctum of the Moon', 1, 2, 0, 0),
 (@SGGUID+135, 'Ghostlands - Peacebloom - Goldenmist Village', 1, 2, 0, 0);
 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Farstrider Enclave
+(@SGGUID+127, @GGUID+, -1),
+-- Trolls
+(@SGGUID+128, @GGUID+, -1),
+-- Descent from Mountains
+(@SGGUID+129, @GGUID+, -1),
+-- South of Sanctum
+(@SGGUID+130, @GGUID+, -1),
+-- West of Sanctum
+(@SGGUID+131, @GGUID+, -1),
+-- Windrunner Spire
+(@SGGUID+132, @GGUID+, -1),
+-- Along Death Scar
+(@SGGUID+133, @GGUID+, -1),
+-- Sanctum of the Moon
+(@SGGUID+134, @GGUID+, -1),
+-- Goldenmist Village
+(@SGGUID+135, @GGUID+, -1),
+
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+136, 'Ghostlands - Silverleaf - Dawnstar Spire and Suncrown Village', 1, 2, 0, 0),
 (@SGGUID+137, 'Ghostlands - Silverleaf - Farstrider Enclave', 1, 2, 0, 0),
@@ -1953,11 +2133,41 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+143, 'Ghostlands - Silverleaf - Goldenmist Village', 1, 2, 0, 0),
 (@SGGUID+144, 'Ghostlands - Silverleaf - West of Moon', 1, 2, 0, 0);
 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Dawnstar Spire and Suncrown Village
+(@SGGUID+136, @GGUID+, -1),
+-- Farstrider Enclave
+(@SGGUID+137, @GGUID+, -1),
+-- Around Sanctum
+(@SGGUID+138, @GGUID+, -1),
+-- South of Sanctum
+(@SGGUID+139, @GGUID+, -1),
+-- Along Death Scar
+(@SGGUID+140, @GGUID+, -1),
+-- Windrunner Spire
+(@SGGUID+141, @GGUID+, -1),
+-- Underlight Mines
+(@SGGUID+142, @GGUID+, -1),
+-- Goldenmist Village
+(@SGGUID+143, @GGUID+, -1),
+-- West of Moon
+(@SGGUID+144, @GGUID+, -1),
+
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+145, 'Ghostlands - Earthroot - Farstrider Enclave', 1, 2, 0, 0),
 (@SGGUID+146, 'Ghostlands - Earthroot - Sanctum of the Sun', 1, 2, 0, 0),
 (@SGGUID+147, 'Ghostlands - Earthroot - Windrunner Spire', 1, 2, 0, 0),
 (@SGGUID+148, 'Ghostlands - Earthroot - Goldenmist Village', 1, 2, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Farstrider Enclave
+(@SGGUID+145, @GGUID+, -1),
+-- Sanctum of the Sun
+(@SGGUID+146, @GGUID+, -1),
+-- Windrunner Spire
+(@SGGUID+147, @GGUID+, -1),
+-- Goldenmist Village
+(@SGGUID+148, @GGUID+, -1),
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+149, 'Ghostlands - Mageroyal - Farstrider Enclave', 1, 2, 0, 0),
@@ -1968,6 +2178,22 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+154, 'Ghostlands - Mageroyal - Underlight Scar', 1, 2, 0, 0),
 (@SGGUID+155, 'Ghostlands - Mageroyal - Goldenmist Isle', 1, 2, 0, 0);
 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Farstrider Enclave
+(@SGGUID+149, @GGUID+, -1),
+-- Sanctum of the Sun
+(@SGGUID+150, @GGUID+, -1),
+-- Along Mountain
+(@SGGUID+151, @GGUID+, -1),
+-- Deathholme Scar
+(@SGGUID+152, @GGUID+, -1),
+-- Windrunner Spire
+(@SGGUID+153, @GGUID+, -1),
+-- Underlight Scar
+(@SGGUID+154, @GGUID+, -1),
+-- Goldenmist Isle
+(@SGGUID+155, @GGUID+, -1),
+
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+156, 'Ghostlands - Briarthorn - Dawnstar Spire', 1, 2, 0, 0),
 (@SGGUID+157, 'Ghostlands - Briarthorn - Troll Country', 1, 2, 0, 0),
@@ -1977,11 +2203,37 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+161, 'Ghostlands - Briarthorn - Middle West Divide', 1, 2, 0, 0),
 (@SGGUID+162, 'Ghostlands - Briarthorn - North West Divide', 1, 2, 0, 0);
 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Dawnstar Spire
+(@SGGUID+156, @GGUID+, -1),
+-- Troll Country
+(@SGGUID+156, @GGUID+, -1),
+-- South of Sanctum
+(@SGGUID+156, @GGUID+, -1),
+-- West of Sanctum
+(@SGGUID+156, @GGUID+, -1),
+-- South West Divide
+(@SGGUID+156, @GGUID+, -1),
+-- Middle West Divide
+(@SGGUID+156, @GGUID+, -1),
+-- North West Divide
+(@SGGUID+156, @GGUID+, -1),
+
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+163, 'Ghostlands - Stranglekelp - Goldenmist Coast', 1, 3, 0, 0),
 (@SGGUID+164, 'Ghostlands - Stranglekelp - Shalandis Isle', 1, 3, 0, 0),
 (@SGGUID+165, 'Ghostlands - Stranglekelp - Windrunner North', 1, 3, 0, 0),
 (@SGGUID+166, 'Ghostlands - Stranglekelp - Windrunner South', 1, 3, 0, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- Goldenmist Coast
+(@SGGUID+163, @GGUID+, -1),
+-- Shalandis Isle
+(@SGGUID+164, @GGUID+, -1),
+-- Windrunner North
+(@SGGUID+165, @GGUID+, -1),
+-- Windrunner South
+(@SGGUID+166, @GGUID+, -1),
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
 (@SGGUID+167, 'Ghostlands - Bruiseweed - ZebTela', 1, 3, 0, 0),
@@ -1991,5 +2243,19 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+171, 'Ghostlands - Bruiseweed - Deathholme Gates', 1, 3, 0, 0),
 (@SGGUID+172, 'Ghostlands - Bruiseweed - Deathholme', 1, 3, 0, 0);
 
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+-- ZebTela
+(@SGGUID+167, @GGUID+, -1),
+-- ZebNowa North
+(@SGGUID+168, @GGUID+, -1),
+-- ZebNowa South
+(@SGGUID+169, @GGUID+, -1),
+-- Windrunner Village
+(@SGGUID+170, @GGUID+, -1),
+-- Deathholme Gates
+(@SGGUID+171, @GGUID+, -1),
+-- Deathholme
+(@SGGUID+172, @GGUID+, -1),
+*/
 DELETE FROM pool_gameobject WHERE guid IN(5491,5508,64908,64918,64923,64924,64925,64926,64933,64934,64937,64938,64939,64947,64948,64950,64958,64959,64961,64962,64963,64965,64966,64969,64970,64971,64977,64978,64984,64991,64992,64993,64994,64995,64997,65006,65015,65021,65025,65045,65064,75002,75005,75008,75011,75014,75017,75119,85303,85305,85306,85308,85310,85311,85312,85313,85316,85318,85319,85320,85321,85324,85325,85326,85329,85332,85333,85338,85348,85352,85356,85361,85362,85363,85364,85369,85370,85371,85372,85375,85380,85381,85383,85384,85386,85388,85391,85396,85398,85399,85401,85403,85404,85405,85408,86161,86191,86192,86193,86218,86221,86237,86252,86267,87059,87202,101309,101312,101315,101318,101321,101324,101327,101330,101333,101336,101339,101342,101345,101348,101351,101354,101357,101360,101363,101366,101369,101372,101375,101378,101381,101384,101387,101390,132383,132384,132385,132386,132387,132388,132389,132390,132391,132392,132393,132394,132395,132396,132397,132398,132399,132400,132401,132402,132403,132404,132405,132406,132407,132408,132409,132410,132411,132412,132413,132414,132415,132416,132417,132418,132419,132420,132421,132422,132423,132425,132426,132427,132428,132430,132431,132432,132433,132434,132435,132436,132437,132438,132439,132440,132441,132442,132443,132444,132445,132446,132447,132448,132449,132450,132451,132452,132453,132454,132455,132456,132457,132458,132459,132460,132461,132462,132463,132464,132465,132466,132467,132468,132469,132470,132471,132472,132473,132474,132475,132476,132477,132478,132479,132480,132481,132482,132483,132484,132485,132486,132487,132488,132489,132490,132491,132492,132493,132494,132495,132496,132497,132498,132499,132557,132558,132559,132560,132561,132562,132563,132564,132565,132566,132567,132568,132569,132570,132571,132572,132573,132574,132575,132576,132577,132578,132579,132580,132581,132582,132583,132584,132585,132586,132587,132588,132589,132590,132591,132592,132593,132594,132595,132596,132597,132598,132599,132600,132601,132602,132603,132604,132605,132606,132607,132608,132609,132610,132611,132612,132613,132614,132615,132616,132617,132618,132619,132620,132621,132622,132623,132624,132625,132626,132627,132628,132629,132630,132631,132632,132633,132634,132635,132636,132637,132638,132639,132640,132641,132642,132643,132644,132645,132646,132647,132648,132649,132650,132651,132652,132653,132654,132655,132656,132657,132658,132659,132660,132661,132662,132663,132664,132665,132666,132667,132668,132669,132670,132671,132673,132674,132675,132676,132677,132678,132679,132680,132682,132683,132684,132685,132686,132687,132688,132689,132690,132691,137277,137278,137279,137280,137281,137282,137283,137284,137285,137286,137287,137288,137291,137292,137293,137294,137296,137297,137298,137299,137300,137301,137302,137303,137304,137305,137306,137307,137308,137309,137310,137311,137312,137313,137314,137315,137316,137317,137318,137319,137320,137321,137322,137323,137324,137325,137326,137327,137328,137329,137330,137331,137332,137333,137334,137335,137336,137337,137338,137339,137340,137341,137342,137343,137344,137345,137346,137347,137348,137349,137350,137351,137352,137353,137354,137355,137356,137357,137358,137359,137360,137361,137362,137363,137364,137365,137366,137367,137368,137369,137370,137371,137372,137373,137374,137375,137376,137377,137379,137380,161772,161773,161774,161775,161776,161777,161778,161779,161780,161781,161782,161783,161784,161785,161786,161787,161788,161789,161790,161791,161792,161793,161794,161795,161796,161797,161798,161799,161800,161801,161802,161803,161804,161805,161806,161807,161808,161809,161810,161811,161812,161813,161814,161815,161816,161817,161818,161819,161820,161821,161822,161823,161824,161825,161826,161827,161828,161829,161830,161831,161832,161833,161834,161835,161836,161837,161838,161839,161840,161841,161842,161843,161844,161845,161846,161847,161848,161849,161850,161851,161852,161853,161854,161855,161856,161857,161858,161859,161860,161861,161862,161863,161864,161865,161866,161867,161868,161869,161870,161871,161872,161873,161874,161875,161876,161877,161878,161879,161880,161881,161882,161883,161884,161885,161886,161887,161888,161889,161890,161891,161892,161893,161894,161895,161896,161897,161898,161899,161900,161901,161902,161903,161904,161905,161906,161907,161908,161909,161910,161911,161912,161913,161914,161915,161916,161917,5300607,5300610,5300613,5300616,5300619,5300622,5301152,5301153,5301154,5301155,5301156,5301157,5301158,5301159,5301160,5301161,5301162,5301163,5301164,5301165,5301166,5301167,5301168,5301169,5301170,5301171,5301172,5301173,5301174,5301175,5301176,5301177,5301178,5301179,5301180,5301181,5301182,5301183,5301184,5301185,5301186,5301187,5301188,5301189,5301190,5301191,5301192,5301193,5301194,5301195,5301196,5301197,5301198,5301199,5301200,5301201,5301202,5301203,5301204,5301480,5301481,5301482,5301483,5301484,5301485,5301486,5301487,5301488,5301489,5301490,5301491,5301492,5301493,5301494,5301495,5301496,5301497,5301498,5301499,5301500,5301501,5301502,5301503,5301504,5301505,5301506);
 DELETE FROM pool_template WHERE entry IN(4694,4695,4696,4697,4698,4699,4700,4701,4702,4703,4704,4705,4706,4707,4708,4709,4710,4711,4712,4713,4714,4715,4716,4717,4718,4719,4720,4721,4722,4723,4724,4725,4726,4727,4728,4729,4730,4731,4732,4733,4734,4735,4736,4737,4738,4739,9045,9046,9047,9048,9049,9050,9051,9052,9053,9054,9055,9056,9057,9058,9059,9060,9061,9062,9063,9064,9065,9066,9067,9068,9069,9070,9071,9072,13009,13010,13026,13027);
