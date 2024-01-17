@@ -1390,23 +1390,23 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- StringIDs
 DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+17;
 INSERT INTO `string_id` (Id, Name) VALUES 
-(@STRINGID+1, 'Shattered Halls - Shattered Hand Legionnaire 01'),
-(@STRINGID+2, 'Shattered Halls - Legionnaire Group 001'),
-(@STRINGID+3, 'Shattered Halls - Halls of Father Group 002'),
-(@STRINGID+4, 'Shattered Halls - Halls of Father Group 003'),
-(@STRINGID+5, 'Shattered Halls - Halls of Father Group 004'),
-(@STRINGID+6, 'Shattered Halls - Halls of Father Group 005'),
-(@STRINGID+7, 'Shattered Halls - Shattered Hand Legionnaire 02'),
-(@STRINGID+8, 'Shattered Halls - Shattered Hand Legionnaire 03'),
-(@STRINGID+9, 'Shattered Halls - Shattered Hand Legionnaire 04'),
-(@STRINGID+10, 'Shattered Halls - Shattered Hand Legionnaire 05'),
-(@STRINGID+11, 'Shattered Halls - Shattered Hand Legionnaire 06'),
-(@STRINGID+12, 'Shattered Halls - Shattered Hand Legionnaire 07'),
-(@STRINGID+13, 'Shattered Halls - Shattered Hand Legionnaire 08'),
-(@STRINGID+14, 'Shattered Halls - Sleeping Reinforcement'),
-(@STRINGID+15, 'Shattered Halls - Dummy Reinforcement 1'),
-(@STRINGID+16, 'Shattered Halls - Dummy Reinforcement 2'),
-(@STRINGID+17, 'Shattered Halls - Fel Orc Convert');
+(@STRINGID+1, 'SHH_LEGIONNAIRE_01'),
+(@STRINGID+2, 'SHH_ENTRANCE_GROUP'),
+(@STRINGID+3, 'SHH_HALLS_OF_FATHER_GROUP_02'),
+(@STRINGID+4, 'SHH_HALLS_OF_FATHER_GROUP_03'),
+(@STRINGID+5, 'SHH_HALLS_OF_FATHER_GROUP_04'),
+(@STRINGID+6, 'SHH_HALLS_OF_FATHER_GROUP_05'),
+(@STRINGID+7, 'SHH_LEGIONNAIRE_02'),
+(@STRINGID+8, 'SHH_LEGIONNAIRE_03'),
+(@STRINGID+9, 'SHH_LEGIONNAIRE_04'),
+(@STRINGID+10, 'SHH_LEGIONNAIRE_05'),
+(@STRINGID+11, 'SHH_LEGIONNAIRE_06'),
+(@STRINGID+12, 'SHH_LEGIONNAIRE_07'),
+(@STRINGID+13, 'SHH_LEGIONNAIRE_08'),
+(@STRINGID+14, 'SHH_SLEEPING_REINF'),
+(@STRINGID+15, 'SHH_DUMMY_REINF_01'),
+(@STRINGID+16, 'SHH_DUMMY_REINF_02'),
+(@STRINGID+17, 'SHH_FEL_ORC_CONVERT');
 
 -- =========
 -- DBSCRIPTS
