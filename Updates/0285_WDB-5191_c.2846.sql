@@ -3,25 +3,25 @@
 UPDATE `creature_template` SET `VendorTemplateId` = 0 WHERE `entry` = 2846;
 DELETE FROM `npc_vendor` WHERE `entry` =  2846;
 INSERT INTO `npc_vendor` (`entry`, `item`, `maxcount`, `incrtime`, `slot`, `ExtendedCost`, `condition_id`, `comments`) VALUES
-(2846, 7005, 0, 0, 0, 0, 0, 'Skinning Knife'),
-(2846, 4289, 0, 0, 1, 0, 0, 'Salt'),
-(2846, 2320, 0, 0, 2, 0, 0, 'Coarse Thread'),
-(2846, 2321, 0, 0, 3, 0, 0, 'Fine Thread'),
-(2846, 4291, 0, 0, 4, 0, 0, 'Silken Thread'),
-(2846, 8343, 0, 0, 5, 0, 0, 'Heavy Silken Thread'),
-(2846, 14341, 0, 0, 6, 0, 0, 'Rune Thread'),
--- (2846, 38426, 0, 0, 7, 0, 0, 'Eternium Thread'),
-(2846, 2325, 0, 0, 8, 0, 0, 'Black Dye'),
-(2846, 6260, 0, 0, 9, 0, 0, 'Blue Dye'),
-(2846, 2604, 0, 0, 10, 0, 0, 'Red Dye'),
-(2846, 2605, 0, 0, 11, 0, 0, 'Green Dye'),
-(2846, 4340, 0, 0, 12, 0, 0, 'Gray Dye'),
-(2846, 4341, 0, 0, 13, 0, 0, 'Yellow Dye'),
-(2846, 6261, 0, 0, 14, 0, 0, 'Orange Dye'),
-(2846, 4342, 0, 0, 15, 0, 0, 'Purple Dye'),
-(2846, 10290, 0, 0, 16, 0, 0, 'Pink Dye'),
-(2846, 5788, 1, 3600, 17, 0, 0, 'Pattern: Thick Murloc Armor'),
-(2846, 5789, 1, 3600, 18, 0, 0, 'Pattern: Murloc Scale Bracers');
+(2846, 7005, 0, 0, 1, 0, 0, 'Skinning Knife'),
+(2846, 4289, 0, 0, 2, 0, 0, 'Salt'),
+(2846, 2320, 0, 0, 3, 0, 0, 'Coarse Thread'),
+(2846, 2321, 0, 0, 4, 0, 0, 'Fine Thread'),
+(2846, 4291, 0, 0, 5, 0, 0, 'Silken Thread'),
+(2846, 8343, 0, 0, 6, 0, 0, 'Heavy Silken Thread'),
+(2846, 14341, 0, 0, 7, 0, 0, 'Rune Thread'),
+-- (2846, 38426, 0, 0, 8, 0, 0, 'Eternium Thread'),
+(2846, 2325, 0, 0, 9, 0, 0, 'Black Dye'),
+(2846, 6260, 0, 0, 10, 0, 0, 'Blue Dye'),
+(2846, 2604, 0, 0, 11, 0, 0, 'Red Dye'),
+(2846, 2605, 0, 0, 12, 0, 0, 'Green Dye'),
+(2846, 4340, 0, 0, 13, 0, 0, 'Gray Dye'),
+(2846, 4341, 0, 0, 14, 0, 0, 'Yellow Dye'),
+(2846, 6261, 0, 0, 15, 0, 0, 'Orange Dye'),
+(2846, 4342, 0, 0, 16, 0, 0, 'Purple Dye'),
+(2846, 10290, 0, 0, 17, 0, 0, 'Pink Dye'),
+(2846, 5788, 1, 3600, 18, 0, 0, 'Pattern: Thick Murloc Armor'),
+(2846, 5789, 1, 3600, 19, 0, 0, 'Pattern: Murloc Scale Bracers');
 
 UPDATE npc_vendor_template SET Slot = 1 WHERE entry IN (141) AND item = 7005; -- Skinning Knife
 UPDATE npc_vendor_template SET Slot = 2 WHERE entry IN (141) AND item = 4289; -- Salt
