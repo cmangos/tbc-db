@@ -1016,7 +1016,7 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+37, 'Shattered Halls - Shattered Hand Legionnaire 008', 0, 6, 0, 1, 0),
 (@SGGUID+38, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 001', 0, 3, 0, 1, 0),
 -- (@SGGUID+39, 'Shattered Halls - Shattered Hand Assasin | Sparing Hall Patrol 001', 0, 0, 0, 0, 0), -- This is a solo Patroling Shattered Hand Assasin, not sure yet when he gets spawned
-(@SGGUID+40, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 1, @STRINGID+16), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
+(@SGGUID+40, 'Shattered Halls - Shattered Hand Savage (2) | spawn_group_entry | Sparring Hall Group 002', 0, 3, 0, 0, @STRINGID+16), -- 3 npcs attacking dummys, 2 static 1 with rnd entry
 (@SGGUID+41, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 003', 0, 2, 0, 1, 0),
 (@SGGUID+42, 'Shattered Halls - Shattered Hand Houndmaster (1) | Rabid Warhound (2) | Sparing Hall Patrol 002', 0, 3, 0, 1, 0),
 (@SGGUID+43, 'Shattered Halls - Shattered Hand Champion (2) | Sparring Hall Group 004', 0, 2, 0, 1, 0),
