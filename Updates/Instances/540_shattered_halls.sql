@@ -216,6 +216,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+198, 20, 88.3872, 265.499, -13.2078, 0, 0, 0),
 (@CGUID+198, 21, 84.6359, 258.439, -13.2054, 0, 0, 0),
 (@CGUID+198, 22, 76.9477, 257.962, -13.2027, 0, 0, 0),
+-- Sleeping Npcs
+(@CGUID+205, 1, 43.5588, 265.281, -10.7783, 1.658063, 1000, 1659303),
+(@CGUID+205, 2, 69.8188, 239.513, -13.193643, 4.72, 20000, 0),
+(@CGUID+206, 1, 43.5914, 253.725, -10.9988, 1.58825, 1000, 1659303),
+(@CGUID+206, 2, 69.8188, 239.513, -13.193643, 4.72, 20000, 0),
+(@CGUID+207, 1, 69.6697, 286.034, -10.8391, 0.122173, 1000, 1659303),
+(@CGUID+207, 2, 69.8188, 239.513, -13.193643, 4.72, 20000, 0),
+(@CGUID+208, 1, 83.5451, 286.75, -10.8789, 3.036873, 1000, 1659303),
+(@CGUID+208, 2, 69.8188, 239.513, -13.193643, 4.72, 20000, 0),
 -- The Sewer
 (@CGUID+212,1,130.40237,258.11697,-45.2686,100,0,0),
 (@CGUID+212,2,116.46909,242.06526,-45.46508,100,0,0),
@@ -490,10 +499,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+162, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
 (@CGUID+180, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
 (@CGUID+181, 0, 0, 0, 333, 0, '18950'), -- Shattered Hand Sentry
-(@CGUID+205, 0, 0, 0, 0, 0, '8876 16093'), -- Shattered Hand Brawler
-(@CGUID+206, 0, 0, 0, 0, 0, '8876 16093'), -- Shattered Hand Brawler
-(@CGUID+207, 0, 0, 0, 0, 0, '8876 16093'), -- Shattered Hand Brawler
-(@CGUID+208, 0, 0, 0, 0, 0, '16093'), -- Shadowmoon Acolyte
 (@CGUID+209, 0, 0, 2, 214, 0, NULL), -- Shattered Hand Houndmaster
 (@CGUID+306, 0, 0, 0, 389, 0, NULL), -- spawn_group_entry
 (@CGUID+307, 0, 0, 0, 389, 0, NULL), -- spawn_group_entry
@@ -749,10 +754,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+203, 0, 540, 3, 77.862, 270.631, -13.1145, 3.89208, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+204, 16699, 540, 3, 83.3397, 265.004, -13.1239, 3.66519, 7200, 7200, 0, 0), -- Shattered Hand Reaver
 -- mobs sleeping around
-(@CGUID+205, 16593, 540, 3, 43.5588, 265.281, -10.7783, 1.658063, 7200, 7200, 0, 0), -- Shattered Hand Brawler
-(@CGUID+206, 16593, 540, 3, 43.5914, 253.725, -10.9988, 1.58825, 7200, 7200, 0, 0), -- Shattered Hand Brawler
-(@CGUID+207, 16593, 540, 3, 69.6697, 286.034, -10.8391, 0.122173, 7200, 7200, 0, 0), -- Shattered Hand Brawler
-(@CGUID+208, 16594, 540, 3, 83.5451, 286.75, -10.8789, 3.036873, 7200, 7200, 0, 0), -- Shadowmoon Acolyte
+(@CGUID+205, 16593, 540, 3, 43.5588, 265.281, -10.7783, 1.658063, 7200, 7200, 0, 2), -- Shattered Hand Brawler
+(@CGUID+206, 16593, 540, 3, 43.5914, 253.725, -10.9988, 1.58825, 7200, 7200, 0, 2), -- Shattered Hand Brawler
+(@CGUID+207, 16593, 540, 3, 69.6697, 286.034, -10.8391, 0.122173, 7200, 7200, 0, 2), -- Shattered Hand Brawler
+(@CGUID+208, 16594, 540, 3, 83.5451, 286.75, -10.8789, 3.036873, 7200, 7200, 0, 2), -- Shadowmoon Acolyte
 
 (@CGUID+209, 17670, 540, 3, 103.0368, 266.3398, -13.13969, 2.9147, 7200, 7200, 0, 0), -- Shattered Hand Houndmaster
 (@CGUID+210, 17669, 540, 3, 102.8895, 262.3415, -13.13969, 3.001966, 7200, 7200, 0, 0), -- Rabid Warhound
@@ -1610,13 +1615,14 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+14, 0, 16352, 0, 'Shattered Hand Legionnaire 04 - random yell 3'),
 (@RELAYID+14, 0, 17462, 0, 'Shattered Hand Legionnaire 04 - random yell 4');
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1659301, 1659302, 1669901, 1670001, 1670002, 1670003, 1670004, 1670005, 1670006, 1670007, 1670008, 1670009, 1670010, 1670401, 1708301, 1742001, 1742002, 1746201);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1659301, 1659302, 1659303, 1669901, 1670001, 1670002, 1670003, 1670004, 1670005, 1670006, 1670007, 1670008, 1670009, 1670010, 1670401, 1708301, 1742001, 1742002, 1746201);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1659301, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - change movement'),
 (1659301, 2000, 0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - standstate kneel'),
 (1659302, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - change movement'),
 (1659302, 1000, 0, 1, 275, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - emote train'),
 (1659302, 3000, 0, 2, 169, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - emote state'),
+(1659303, 0, 0, 15, 16093, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - cast Sleep Until Cancelled'),
 (1669901, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Reaver - change movement'),
 (1669901, 2000, 0, 2, 169, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Reaver - emote state'),
 -- Legionnaire 01 rp 
