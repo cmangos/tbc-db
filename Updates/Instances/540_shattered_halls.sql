@@ -1622,7 +1622,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1659302, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - change movement'),
 (1659302, 1000, 0, 1, 275, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - emote train'),
 (1659302, 3000, 0, 2, 169, 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - emote state'),
-(1659303, 0, 0, 15, 16093, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - cast Sleep Until Cancelled'),
+(1659303, 0, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - run mode on'),
+(1659303, 0, 1, 15, 16093, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'spawn_group_entry - cast Sleep Until Cancelled'),
 (1669901, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Reaver - change movement'),
 (1669901, 2000, 0, 2, 169, 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Reaver - emote state'),
 -- Legionnaire 01 rp 
