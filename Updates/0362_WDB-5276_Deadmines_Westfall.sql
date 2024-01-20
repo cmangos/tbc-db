@@ -175,3 +175,8 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 (19897, 140780, -1),
 (19897, 140781, -1),
 (19897, 140782, -1);
+
+-- Remove pooling
+DELETE FROM `pool_creature_template` WHERE `id` = 599;
+DELETE FROM `pool_template` WHERE `entry` = 1220; -- Marisa du'Paige (599)
+
