@@ -25,7 +25,8 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 (300358, 31272, 0, 'Wetlands (Raptor Ridge) - Solid Chest (2852)'),
 (300359, 31201, 0, 'Redridge Mountains (Stonewatch) - Solid Chest (2850)'),
 (300360, 31199, 0, 'Redridge Mountains (Stonewatch Falls) - Solid Chest (2850)'),
-(300361, 1824, 0, 'Alterac Mountains (Dalaran) - Hidden Strongbox (2039)'), -- Hidden Strongbox (2039)!
+-- `pool_gameobject` has guid 300361 for pool 1824 that already added to pool 1824 from `pool_gameobject_template` for gameobject entry 2039, skipped.
+-- (300361, 1824, 0, 'Alterac Mountains (Dalaran) - Hidden Strongbox (2039)'), -- pool_gameobject_template
 (300362, 31082, 0, 'Alterac Mountains (Strahnbrad) - Solid Chest (2855)'),
 (300363, 31082, 0, 'Alterac Mountains (Strahnbrad) - Solid Chest (2855)'),
 (300364, 31082, 0, 'Alterac Mountains (Strahnbrad) - Solid Chest (2855)'),
