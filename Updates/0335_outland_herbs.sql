@@ -67,11 +67,11 @@ SET @GGUID := 5307600;
 -- select * from gameobject where map=530 and id = 181281 and position_y BETWEEN 1000 and 5301 AND position_x<0; -- skettis
 -- select * from gameobject where map=530 and id = 181281 and position_y BETWEEN -6000 and 1000 AND position_x<0; -- shadowmoon
 -- Mana Thistle - rough map counts - 181281 - https://www.wowhead.com/object=181281/mana-thistle
--- terokkar           - 17 8 8 
--- nagrand            - 8 7
+-- terokkar           - 17 8 9 
+-- nagrand            - 8 8
 -- blades edge        - 10 10
--- netherstorm        - 8 7
--- shadowmoon         - 12 11
+-- netherstorm        - 8 8
+-- shadowmoon         - 12 12
 -- total                55
 DELETE FROM gameobject WHERE map=530 AND position_x NOT BETWEEN 11400 AND 13100 AND Id=181281;
 INSERT INTO gameobject(guid, id, map, spawnMask, position_x, position_y, position_z, orientation, rotation0, rotation1, rotation2, rotation3, spawntimesecsmin, spawntimesecsmax) VALUES
@@ -145,70 +145,77 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flag
 (@SGGUID+10, 'Skettis West - Mana Thistle', 1, 1, 0, 0),
 (@SGGUID+11, 'Netherwing Ledge North - Mana Thistle', 1, 1, 0, 0),
 (@SGGUID+12, 'Netherwing Ledge South - Mana Thistle', 1, 1, 0, 0);
-/*
+
 DELETE FROM spawn_group_spawn WHERE Id BETWEEN @SGGUID+1 AND @SGGUID+12;
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- Netherstorm East
-(@SGGUID+1, @GGUID+, -1),
-(@SGGUID+1, @GGUID+, -1),
-(@SGGUID+1, @GGUID+, -1),
-(@SGGUID+1, @GGUID+, -1),
+(@SGGUID+1, @GGUID+33, -1),
+(@SGGUID+1, @GGUID+34, -1),
+(@SGGUID+1, @GGUID+41, -1),
+(@SGGUID+1, @GGUID+43, -1),
 -- Netherstorm West
-(@SGGUID+2, @GGUID+, -1),
-(@SGGUID+2, @GGUID+, -1),
-(@SGGUID+2, @GGUID+, -1),
-(@SGGUID+2, @GGUID+, -1),
+(@SGGUID+2, @GGUID+37, -1),
+(@SGGUID+2, @GGUID+44, -1),
+(@SGGUID+2, @GGUID+45, -1),
+(@SGGUID+2, @GGUID+52, -1),
 -- BEM North
-(@SGGUID+3, @GGUID+, -1),
-(@SGGUID+3, @GGUID+, -1),
-(@SGGUID+3, @GGUID+, -1),
-(@SGGUID+3, @GGUID+, -1),
+(@SGGUID+3, @GGUID+18, -1),
+(@SGGUID+3, @GGUID+30, -1),
+(@SGGUID+3, @GGUID+35, -1),
+(@SGGUID+3, @GGUID+46, -1),
+(@SGGUID+3, @GGUID+50, -1),
+(@SGGUID+3, @GGUID+51, -1),
 -- BEM West
-(@SGGUID+4, @GGUID+, -1),
-(@SGGUID+4, @GGUID+, -1),
-(@SGGUID+4, @GGUID+, -1),
-(@SGGUID+4, @GGUID+, -1),
+(@SGGUID+4, @GGUID+12, -1),
+(@SGGUID+4, @GGUID+17, -1),
+(@SGGUID+4, @GGUID+39, -1),
+(@SGGUID+4, @GGUID+40, -1),
 -- Nagrand South
-(@SGGUID+5, @GGUID+, -1),
-(@SGGUID+5, @GGUID+, -1),
-(@SGGUID+5, @GGUID+, -1),
-(@SGGUID+5, @GGUID+, -1),
+(@SGGUID+5, @GGUID+1, -1),
+(@SGGUID+5, @GGUID+5, -1),
+(@SGGUID+5, @GGUID+10, -1),
+(@SGGUID+5, @GGUID+13, -1),
 -- Nagrand North
-(@SGGUID+6, @GGUID+, -1),
-(@SGGUID+6, @GGUID+, -1),
-(@SGGUID+6, @GGUID+, -1),
-(@SGGUID+6, @GGUID+, -1),
+(@SGGUID+6, @GGUID+9, -1),
+(@SGGUID+5, @GGUID+26, -1),
+(@SGGUID+6, @GGUID+28, -1),
+(@SGGUID+6, @GGUID+53, -1),
 -- Barrier Hills 01
-(@SGGUID+7, @GGUID+, -1),
-(@SGGUID+7, @GGUID+, -1),
-(@SGGUID+7, @GGUID+, -1),
-(@SGGUID+7, @GGUID+, -1),
+(@SGGUID+7, @GGUID+6, -1),
+(@SGGUID+7, @GGUID+14, -1),
+(@SGGUID+7, @GGUID+16, -1),
+(@SGGUID+7, @GGUID+19, -1),
 -- Barrier Hills 02
-(@SGGUID+8, @GGUID+, -1),
-(@SGGUID+8, @GGUID+, -1),
-(@SGGUID+8, @GGUID+, -1),
-(@SGGUID+8, @GGUID+, -1),
+(@SGGUID+8, @GGUID+2, -1),
+(@SGGUID+8, @GGUID+7, -1),
+(@SGGUID+8, @GGUID+15, -1),
+(@SGGUID+8, @GGUID+36, -1),
 -- Skettis East
-(@SGGUID+9, @GGUID+, -1),
-(@SGGUID+9, @GGUID+, -1),
-(@SGGUID+9, @GGUID+, -1),
-(@SGGUID+9, @GGUID+, -1),
+(@SGGUID+9, @GGUID+21, -1),
+(@SGGUID+9, @GGUID+31, -1),
+(@SGGUID+9, @GGUID+38, -1),
+(@SGGUID+9, @GGUID+47, -1),
 -- Skettis West
-(@SGGUID+10, @GGUID+, -1),
-(@SGGUID+10, @GGUID+, -1),
-(@SGGUID+10, @GGUID+, -1),
-(@SGGUID+10, @GGUID+, -1),
+(@SGGUID+10, @GGUID+25, -1),
+(@SGGUID+10, @GGUID+32, -1),
+(@SGGUID+10, @GGUID+42, -1),
+(@SGGUID+10, @GGUID+49, -1),
+(@SGGUID+10, @GGUID+54, -1),
 -- Netherwing Ledge North
-(@SGGUID+11, @GGUID+, -1),
-(@SGGUID+11, @GGUID+, -1),
-(@SGGUID+11, @GGUID+, -1),
-(@SGGUID+11, @GGUID+, -1),
+(@SGGUID+11, @GGUID+3, -1),
+(@SGGUID+11, @GGUID+8, -1),
+(@SGGUID+11, @GGUID+23, -1),
+(@SGGUID+11, @GGUID+27, -1),
+(@SGGUID+11, @GGUID+29, -1),
+(@SGGUID+11, @GGUID+55, -1),
 -- Netherwing Ledge South
-(@SGGUID+12, @GGUID+, -1),
-(@SGGUID+12, @GGUID+, -1),
-(@SGGUID+12, @GGUID+, -1),
-(@SGGUID+12, @GGUID+, -1);
-*/
+(@SGGUID+12, @GGUID+4, -1),
+(@SGGUID+12, @GGUID+11, -1),
+(@SGGUID+12, @GGUID+20, -1),
+(@SGGUID+12, @GGUID+22, -1),
+(@SGGUID+12, @GGUID+24, -1),
+(@SGGUID+12, @GGUID+48, -1);
+
 -- select count(*) from gameobject where map=530 and id = 181279;
 -- Netherbloom - rough map counts - 181279 - https://www.wowhead.com/object=181279/netherbloom
 -- netherstorm        - 121
