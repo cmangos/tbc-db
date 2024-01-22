@@ -226,6 +226,10 @@ UPDATE creature_template SET `modelid1` = 0, `modelid3` = 0, `modelid4` = 0 WHER
 
 UPDATE creature_template SET `modelid2` = 17188 WHERE `entry` = 22332; -- Brood of Neltharaku (19980)
 
+-- Shattered Halls Dummys add not_attackable and imun by npcs flags
+-- Before: update creature_template set UnitFlags = '2304' where entry = 17578;
+UPDATE creature_template SET UnitFlags = UnitFlags|640 WHERE entry = 17578;
+
 -- -------------------------------
 
 UPDATE `creature_template` SET `name` = 'Redeemed Spirit of Earth' WHERE `entry` = 21739; -- Redeemed Spriit of Earth

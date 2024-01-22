@@ -19,7 +19,3 @@ UPDATE creature_template SET CallForHelp = '6' WHERE entry IN (20590, 20567, 205
 
 -- Shattered Hand Legionnaire Aura of Discipline handled via sd2 script
 DELETE FROM creature_template_addon WHERE entry = 16700;
-
--- Custom change to fix shattered halls dummys getting attacked by gladiators due to different factions
--- Before: update creature_template set UnitFlags = '2304' where entry = 17578;
-UPDATE creature_template SET UnitFlags = UnitFlags|640 WHERE entry = 17578;
