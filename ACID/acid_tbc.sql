@@ -24614,7 +24614,25 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5400311','-5400311','6','0','100','0','0','0','0','0','0','0','53','5400037','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
 ('5400312','-5400312','6','0','100','0','0','0','0','0','0','0','53','5400037','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
 ('5400313','-5400313','6','0','100','0','0','0','0','0','0','0','53','5400037','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
-('5400314','-5400314','6','0','100','0','0','0','0','0','0','0','53','5400037','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death');
+('5400314','-5400314','6','0','100','0','0','0','0','0','0','0','53','5400037','0','0','0','0','0','0','0','0','0','0','spawn_group_entry - Start RelayScript on Death'),
+-- Sleeping Shadowmoon Acolyte
+('540020801','-5400208','11','0','100','0','0','0','0','0','0','0','11','16093','0','32','22','1','0','0','0','0','0','0','Shadowmoon Acolyte - cast Sleep until Casting and set phase 1 on spawn'),
+('540020802','-5400208','1','1','100','1','6000','8000','6000','8000','0','0','59','0','1','0','11','16093','0','32','0','0','0','0','Shadowmoon Acolyte - ooc - reset facing and cast Sleep until Casting - Phase 1'),
+('540020803','-5400208','30','0','100','1','8','0','0','0','0','0','48','2','1','0','1','1','0','0','22','0','0','0','Shadowmoon Acolyte - Change Movement and set Phase 0 on recive event ai C'),
+('540020804','-5400208','23','0','100','1','16093','1','2000','3000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shadowmoon Acolyte - set Phase 1 on aura recive'),
+-- Sleeping Shattered Hand Brawler
+('540020501','-5400205','11','0','100','0','0','0','0','0','0','0','11','16093','0','32','22','1','0','0','0','0','0','0','Shattered Hand Brawler - cast Sleep until Casting and set phase 1 on spawn'),
+('540020502','-5400205','30','0','100','1','8','0','0','0','0','0','48','2','1','0','1','1','0','0','22','0','0','0','Shattered Hand Brawler - Change Movement and set Phase 0 on recive event ai C'),
+('540020503','-5400205','1','1','100','1','6000','8000','6000','8000','0','0','59','0','1','0','11','16093','0','32','0','0','0','0','Shattered Hand Brawler - ooc - reset facing and cast Sleep until Casting - Phase 1'),
+('540020504','-5400205','23','0','100','1','16093','1','2000','3000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Brawler - set Phase 1 on aura recive'),
+('540020601','-5400206','11','0','100','0','0','0','0','0','0','0','11','16093','0','32','22','1','0','0','0','0','0','0','Shattered Hand Brawler - cast Sleep until Casting and set phase 1 on spawn'),
+('540020602','-5400206','30','0','100','1','8','0','0','0','0','0','48','2','1','0','1','1','0','0','22','0','0','0','Shattered Hand Brawler - Change Movement and set Phase 0 on recive event ai C'),
+('540020603','-5400206','1','1','100','1','6000','8000','6000','8000','0','0','59','0','1','0','11','16093','0','32','0','0','0','0','Shattered Hand Brawler - ooc - reset facing and cast Sleep until Casting - Phase 1'),
+('540020604','-5400206','23','0','100','1','16093','1','2000','3000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Brawler - set Phase 1 on aura recive'),
+('540020701','-5400207','11','0','100','0','0','0','0','0','0','0','11','16093','0','32','22','1','0','0','0','0','0','0','Shattered Hand Brawler - cast Sleep until Casting and set phase 1 on spawn'),
+('540020702','-5400207','30','0','100','1','8','0','0','0','0','0','48','2','1','0','1','1','0','0','22','0','0','0','Shattered Hand Brawler - Change Movement and set Phase 0 on recive event ai C'),
+('540020703','-5400207','1','1','100','1','6000','8000','6000','8000','0','0','59','0','1','0','11','16093','0','32','0','0','0','0','Shattered Hand Brawler - ooc - reset facing and cast Sleep until Casting - Phase 1'),
+('540020704','-5400207','23','0','100','1','16093','1','2000','3000','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Shattered Hand Brawler - set Phase 1 on aura recive');
 
 INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_inverse_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`event_param5`,`event_param6`,`action1_type`,`action1_param1`,`action1_param2`,`action1_param3`,`action2_type`,`action2_param1`,`action2_param2`,`action2_param3`,`action3_type`,`action3_param1`,`action3_param2`,`action3_param3`,`comment`) VALUES
 -- ==================
