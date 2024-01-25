@@ -3,29 +3,7 @@ DBName: Hellfire Citadel - The Shattered Halls
 DBScriptName: instance_shattered_halls
 DB%Complete: 80
 DBComment:
-* need to rewrite existing rp scripts to function with creature_spawn_entry
-
-* gladiator fighting script to certain %threshold
-
-combat faction 1692/1693 unitflags 557120
-~40-50% reset, faction 16 unitflags 557136 stop combat activity
-2500 emote 2
-3000 move to homeloc
-reset hp
-1000 change faction start fighting again
-1692 Monster Spar
-1693 Monster Spar Buddy
-
-(1746401, 0, 31, 0, 10, 0, 0, @CGUID+153, 16, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Gladiator - Terminate Script if @CGUID+153 not found'),
-(1746401, 0, 22, 1692, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Gladiator - Set Faction Monster Spar'), -- make the oppsite have 1693 then both attack each other
-(1746401, 0, 35, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shattered Hand Gladiator - Send AI Event 5');
-
-Shattered Hand Centurion: 5 (OneShotExclamation), 11 (OneShotLaugh), 23 (OneShotFlex) - maybe handles the event
-
-* training dummy script like in garadar with hit animation on the dummy
-* groups need to be restructured and hallway scripts have to be made to substitute these static spawned groups
-* Shattered Hand Heathen at the entrance might be pooled with Shattered Hand Savage (1:1 pool, changed to 3:2 static atm)
-* All Shattered Hand Legionnaire Packs need "Substutite Dead Group Member Mechanic"
+There is one Shattered Hand Assasin with static waypoint movement (@CGUID+321), we dont know what triggers his spawn yet.
 EndDBScriptData */
 
 SET @CGUID := 5400000; -- creatures
