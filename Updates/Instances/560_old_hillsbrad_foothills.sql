@@ -3118,18 +3118,11 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10230, 49000, 0, 0, 0, 0, 0, 20352, 20, 0, 18094, 0, 0, 0, 0, 0, 0, 0, 'Arcanist Doan - Say 1'),
 (10230, 56000, 0, 0, 0, 0, 0, 0, 0, 0, 18095, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 9'),
 (10230, 63000, 0, 0, 0, 0, 0, 0, 0, 0, 18096, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 10'), -- And there is this...
-
--- (10230, 66000, 0, 9, @OGUID+300, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Respawn Mograine''s Stronbox 184308'),
 (10230, 66000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'Set WorldState - Spawn Mograine''s Stronbox'),
-
 (10230, 70000, 0, 0, 0, 0, 0, 0, 0, 0, 18097, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 11 (textemote)'), -- Commander Mograine unlocks the chest.
 (10230, 71000, 0, 11, @OGUID+300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mograine''s Stronbox 184308 - Open Door'),
-
--- (10230, 71000, 1, 9, @OGUID+301, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Respawn Dark Crystal 184306'),
 (10230, 71000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'Set WorldState - Spawn Dark Crystal'),
-
--- temp spawn 20391 Event Generator Old Hillsbrad @CGUID+631 ?
-(10230, 71000, 2, 45, 10231, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Face Dark Crystal)'),
+(10230, 72000, 0, 45, 10231, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Face Dark Crystal)'),
 (10230, 73000, 0, 1, 34, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Emote OneShotWoundCritical'),
 (10230, 75000, 0, 0, 0, 0, 0, 20347, 20, 0, 18098, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Say 1'),
 (10230, 78000, 0, 0, 0, 0, 0, 0, 0, 0, 18099, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 12'),
@@ -3181,12 +3174,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10230, 181000, 0, 45, 10234, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Heal 35162)'),
 (10230, 182000, 0, 45, 10234, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Heal 35162)'),
 (10230, 182000, 0, 45, 10233, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Holy Shock 35160)'),
-
--- (10230, 184000, 0, 40, 0, 0, 0, 184306, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Dark Crystal 184306'),
--- (10230, 184000, 1, 9, @OGUID+302, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Respawn Light Crystal 184307'),
 (10230, 184000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'Set WorldState - Despawn Dark Crystal'),
 (10230, 184000, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'Set WorldState - Spawn Light Crystal'),
-
 (10230, 189000, 0, 0, 0, 0, 0, 0, 0, 0, 18122, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 24'),
 (10230, 193000, 0, 0, 0, 0, 0, 0, 0, 0, 18123, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 25'),
 (10230, 196000, 0, 45, 10237, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Start Relay Script (Face Light Crystal)'),
@@ -3201,18 +3190,12 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10230, 219000, 0, 0, 0, 0, 0, 20346, 20, 0, 18126, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Say 3'),
 (10230, 222000, 0, 0, 0, 0, 0, 0, 0, 0, 18127, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 28 (textemote)'), -- Commander Mograine puts the crystal back inside the chest.
 (10230, 222000, 0, 12, @OGUID+300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mograine''s Stronbox 184308 - Close Door'), -- 184308 update flags to 1 then 0 right after, close door? GAMEOBJECT_BYTES_1: 1
-
--- (10230, 223000, 0, 40, 0, 0, 0, 184307, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Light Crystal 184307'),
 (10230, 223000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 0, 0, 0, 0, 0, 0, 0, 'Set WorldState - Despawn Light Crystal'),
-
 (10230, 226000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1819.0977, 1030.0465, 11.167028, 100, 'Commander Mograine - Move'),
 (10230, 226000, 1, 0, 0, 0, 0, 0, 0, 0, 18128, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 29'),
-
--- (10230, 227000, 0, 40, 0, 0, 0, 184308, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Mograine''s Stronbox 184308'),
 (10230, 227000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'Set WorldState - Despawn Mograine''s Stronbox'),
-
 (10230, 227000, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.14159, 'Commander Mograine - Set Facing'),
-(10230, 229500, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1818.3458, 1031.2239, 11.097511, 3.124123, 'Commander Mograine - Move'), -- SMSG_MOVE_UPDATE_TELEPORT
+(10230, 229500, 0, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 1818.3458, 1031.2239, 11.097511, 3.124123, 'Commander Mograine - Move'), -- SMSG_MOVE_UPDATE_TELEPORT
 (10230, 230000, 0, 28, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Sit Medium Chair'),
 (10230, 234000, 0, 0, 0, 0, 0, 0, 0, 0, 18129, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 30'),
 (10230, 245000, 0, 0, 0, 0, 0, 20349, 20, 0, 18130, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Say 4'),

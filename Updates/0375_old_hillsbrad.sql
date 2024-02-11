@@ -25,3 +25,5 @@ UPDATE `creature_template` SET `UnitFlags`=33555200 WHERE `Entry`=20391; -- Even
 
 -- Light Crystal
 UPDATE `gameobject_template` SET `size`=0.05 WHERE `Entry`=184307;
+-- Dark Crystal
+UPDATE `gameobject_template` SET `size`=0.5 WHERE `Entry`=184306;

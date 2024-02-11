@@ -23079,7 +23079,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2034401','20344','1','0','100','1','120000','135000','120000','135000','0','0','53','10222','0','0','0','0','0','0','0','0','0','0','Nat Pagle - Start Relay Script on Timer OOC'),
 -- Commander Mograine 20345
 ('2034501','20345','30','2','100','1','5','20345','0','0','0','0','22','1','0','0','53','10230','0','0','0','0','0','0','Commander Mograine - Set Phase 1 and Start Relay Script on Receive AI Event A (Phase 0)'),
-('2034502','20345','1','1','100','1','300000','300000','300000','300000','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Commander Mograine - Set Phase 0 on Timer OOC (Phase 1)'),
+('2034502','20345','1','1','100','1','600000','600000','600000','600000','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Commander Mograine - Set Phase 0 on Timer OOC (Phase 1)'),
 -- Isillien (20346) - NSR
 -- Abbendis (20347) - NSR
 -- Fairbanks (20348) - NSR
