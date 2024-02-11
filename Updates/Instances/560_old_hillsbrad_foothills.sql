@@ -5,12 +5,10 @@ DB%Complete: 80
 DBComment:
 
 TODO
-* Mograine/Ashbringer event script (Southshore inn)
 * mages/tome event upstairs in Southshore inn script
 * apple gatherers script + gaurds near apple cart emotes (Tarren Mill)
 * Tarren Mill Horsehand movement/script and interactions
 * Capt Sanders/Edward Hanes script/movement
-* Nat Pagle / Hal McAllister talking? emotes?
 * Helcular / Kel'Thuzad - possibly missing texts, should stop waypoints when talking
 * Caretaker Smithers script and movement
 * Vishas, Sally Whitemane, Renault Mograine movement/script
@@ -26,6 +24,7 @@ EndDBScriptData */
 SET @CGUID := 5600000; -- creatures
 SET @OGUID := 5600000; -- gameobjects
 SET @PGUID := 49600; -- pools
+SET @SGGUID := 5600000; -- spawn_groups
 
 -- =========
 -- CREATURES
@@ -62,12 +61,76 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+323, 14, 2037.3037, 111.27539, 64.79469, 100, 0, 0),
 (@CGUID+323, 15, 2045.1321, 124.61867, 64.54904, 100, 0, 0),
 (@CGUID+323, 16, 2051.0134, 145.70901, 65.04503, 100, 0, 0),
-(@CGUID+325, 1, 1802.79, 1019.27, 14.9106, 1.54089, 0, 0),
-(@CGUID+325, 2, 1802.86, 1028.15, 11.0651, 4.68249, 0, 0),
-(@CGUID+325, 3, 1802.64, 1019.01, 14.911, 6.27291, 0, 0),
-(@CGUID+325, 4, 1808.06, 1018.95, 14.9137, 1.54482, 0, 0),
-(@CGUID+325, 5, 1808.04, 1028.25, 18.546, 1.56053, 0, 0),
-(@CGUID+325, 6, 1807.92, 1019.13, 14.9153, 3.09991, 0, 0),
+-- Broom
+(@CGUID+325, 1,  1816.8607, 1010.83, 18.567032, 3.6669321, 0, 0),
+(@CGUID+325, 2,  1819.9545, 1004.7511, 18.567032, 100, 0, 0),
+(@CGUID+325, 3,  1822.1415, 1010.9069, 18.567032, 100, 0, 0),
+(@CGUID+325, 4,  1819.6747, 1013.8729, 18.567032, 100, 0, 0),
+(@CGUID+325, 5,  1819.7737, 1019.1934, 18.567028, 100, 0, 0),
+(@CGUID+325, 6,  1821.2572, 1020.4896, 18.567028, 100, 0, 0),
+(@CGUID+325, 7,  1821.7717, 1025.7178, 18.567028, 100, 0, 0),
+(@CGUID+325, 8,  1819.2789, 1027.1912, 18.567028, 100, 0, 0),
+(@CGUID+325, 9,  1812.5316, 1027.9165, 18.567028, 100, 0, 0),
+(@CGUID+325, 10, 1812.0057, 1028.7157, 18.567026, 100, 0, 0),
+(@CGUID+325, 11, 1810.9141, 1030.375, 18.567028, 100, 0, 0),
+(@CGUID+325, 12, 1813.7496, 1033.3301, 18.567028, 100, 0, 0),
+(@CGUID+325, 13, 1817.2393, 1034.2032, 18.567028, 100, 0, 0),
+(@CGUID+325, 14, 1820.5289, 1036.079, 18.567028, 100, 0, 0),
+(@CGUID+325, 15, 1820.983, 1041.0027, 18.567028, 100, 0, 0),
+(@CGUID+325, 16, 1817.9248, 1042.6091, 18.567028, 100, 0, 0),
+(@CGUID+325, 17, 1816.6707, 1036.796, 18.567028, 100, 0, 0),
+(@CGUID+325, 18, 1815.3088, 1035.4332, 18.567028, 100, 0, 0),
+(@CGUID+325, 19, 1811.5702, 1032.0677, 18.567028, 100, 0, 0),
+(@CGUID+325, 20, 1806.7788, 1032.3864, 18.56703, 100, 0, 0),
+(@CGUID+325, 21, 1805.1759, 1035.5594, 18.567028, 100, 0, 0),
+(@CGUID+325, 22, 1808.12, 1039.5016, 18.567028, 100, 0, 0),
+(@CGUID+325, 23, 1807.8103, 1044.0319, 18.627104, 100, 0, 0),
+(@CGUID+325, 24, 1807.0784, 1039.8435, 18.567028, 100, 0, 0),
+(@CGUID+325, 25, 1804.1061, 1040.1311, 18.567028, 100, 0, 0),
+(@CGUID+325, 26, 1802.7787, 1040.4517, 18.567028, 100, 0, 0),
+(@CGUID+325, 27, 1801.9241, 1039.9397, 18.567028, 100, 0, 0),
+(@CGUID+325, 28, 1802.7655, 1035.9219, 18.567028, 100, 0, 0),
+(@CGUID+325, 29, 1805.4021, 1035.4749, 18.567028, 100, 0, 0),
+(@CGUID+325, 30, 1804.7216, 1031.421, 18.56703, 100, 0, 0),
+(@CGUID+325, 31, 1808.1244, 1027.2107, 18.647707, 100, 0, 0),
+(@CGUID+325, 32, 1808.0878, 1019.627, 14.967029, 100, 0, 0),
+(@CGUID+325, 33, 1805.4635, 1018.8084, 14.967029, 100, 0, 0),
+(@CGUID+325, 34, 1802.3524, 1018.9637, 14.96703, 100, 0, 0),
+(@CGUID+325, 35, 1802.347, 1026.7451, 11.979119, 100, 0, 0),
+(@CGUID+325, 36, 1803.0576, 1030.0647, 11.167028, 100, 0, 0),
+(@CGUID+325, 37, 1805.1423, 1030.8396, 11.167027, 100, 0, 0),
+(@CGUID+325, 38, 1809.228, 1030.816, 11.167028, 100, 0, 0),
+(@CGUID+325, 39, 1811.1567, 1025.7177, 11.766993, 100, 0, 0),
+(@CGUID+325, 40, 1812.5621, 1022.2919, 11.76703, 100, 0, 0),
+(@CGUID+325, 41, 1812.5004, 1010.2839, 11.826964, 100, 0, 0),
+(@CGUID+325, 42, 1813.6487, 1005.9188, 11.786041, 100, 0, 0),
+(@CGUID+325, 43, 1814.0305, 1008.3463, 11.853209, 100, 0, 0),
+(@CGUID+325, 44, 1813.0188, 1013.2789, 11.81078, 100, 0, 0),
+(@CGUID+325, 45, 1813.1599, 1022.3416, 11.76703, 100, 0, 0),
+(@CGUID+325, 46, 1815.9498, 1021.7571, 11.76703, 100, 0, 0),
+(@CGUID+325, 47, 1812.8727, 1024.2288, 11.76703, 100, 0, 0),
+(@CGUID+325, 48, 1812.3297, 1030.2993, 11.167028, 100, 0, 0),
+(@CGUID+325, 49, 1812.0474, 1034.4998, 11.167028, 100, 0, 0),
+(@CGUID+325, 50, 1811.7854, 1038.2385, 11.767029, 100, 0, 0),
+(@CGUID+325, 51, 1811.6299, 1041.3016, 11.767029, 100, 0, 0),
+(@CGUID+325, 52, 1811.5406, 1043.0579, 11.76703, 100, 0, 0),
+(@CGUID+325, 53, 1818.6333, 1051.4596, 11.964669, 100, 0, 0),
+(@CGUID+325, 54, 1816.561, 1051.7565, 11.814325, 100, 0, 0),
+(@CGUID+325, 55, 1816.6007, 1043.8635, 11.767028, 100, 0, 0),
+(@CGUID+325, 56, 1809.6917, 1043.1066, 11.76703, 100, 0, 0),
+(@CGUID+325, 57, 1810.447, 1037.7203, 11.767029, 100, 0, 0),
+(@CGUID+325, 58, 1810.9724, 1032.6188, 11.167028, 100, 0, 0),
+(@CGUID+325, 59, 1805.1882, 1031.2025, 11.167027, 100, 0, 0),
+(@CGUID+325, 60, 1803.2346, 1030.1118, 11.167028, 100, 0, 0),
+(@CGUID+325, 61, 1802.7288, 1019.9808, 14.96703, 100, 0, 0),
+(@CGUID+325, 62, 1806.2817, 1019.1694, 14.967029, 100, 0, 0),
+(@CGUID+325, 63, 1808.1698, 1027.695, 18.567026, 100, 0, 0),
+(@CGUID+325, 64, 1810.4451, 1029.5586, 18.567028, 100, 0, 0),
+(@CGUID+325, 65, 1814.893, 1025.6938, 18.56703, 100, 0, 0),
+(@CGUID+325, 66, 1815.2349, 1025.3442, 18.56703, 100, 0, 0),
+(@CGUID+325, 67, 1817.9694, 1020.0024, 18.567028, 100, 0, 0),
+(@CGUID+325, 68, 1819.2905, 1016.16693, 18.567028, 100, 0, 0),
+(@CGUID+325, 69, 1818.5807, 1011.827, 18.567032, 100, 0, 0),
 (@CGUID+346, 1, 2051.33, 534.764, 73.7314, 0, 0, 0),
 (@CGUID+346, 2, 2051.37, 537.969, 75.5968, 0, 0, 0),
 (@CGUID+346, 3, 2052.96, 540.417, 76.9039, 0, 0, 0),
@@ -1083,6 +1146,14 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+448, 42, 2167.1, 228.618, 52.4411, 0, 0, 0),
 (@CGUID+448, 43, 2180.26, 229.167, 52.4411, 0, 0, 0),
 (@CGUID+448, 44, 2187.37, 241.135, 52.6137, 0, 0, 0),
+
+-- Chef Jessen
+(@CGUID+504, 1, 1816.1407, 1006.5959, 11.905963, 0.0349065, 1000, 2037801), -- pause script and start repeat timer in EAI
+(@CGUID+504, 2, 1816.1407, 1006.5959, 11.905963, 0.0349065, 3000, 2037802),
+(@CGUID+504, 3, 1813.269, 1010.926, 11.838078, 100, 0, 0),
+(@CGUID+504, 4, 1812.7063, 1019.1864, 11.767029, 100, 0, 0),
+(@CGUID+504, 5, 1811.6666, 1025.1326, 11.767029, 100, 20000, 2037803),
+(@CGUID+504, 6, 1812.8987, 1010.8238, 11.830807, 100, 0, 0),
 
 -- Tarren Mill Guardsman (18092) #1
 (@CGUID+602, 1, 2560.236, 765.303, 57.03683, 0, 0, 0),
@@ -2304,7 +2375,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+322, 17840, 560, 3, 2064.28, 164.43, 64.89, 0, 7200, 7200, 0, 0), -- Durnholde Tracking Hound
 (@CGUID+323, 17820, 560, 3, 2061.9016, 161.73117, 65.252426, 1.12480, 7200, 7200, 0, 2), -- Durnholde Rifleman
 (@CGUID+324, 8883, 560, 3, 1891.65, 994.035, 15.1516, 2.33433, 86400, 86400, 0, 0), -- Riding Horse
-(@CGUID+325, 17213, 560, 3, 1802.79, 1019.27, 14.9106, 1.5998, 86400, 86400, 0, 2), -- Broom
+(@CGUID+325, 17213, 560, 3, 1816.8607, 1010.83, 18.567032, 3.6669321, 86400, 86400, 0, 2), -- Broom
 (@CGUID+326, 17814, 560, 3, 2329.58, 909.306, 57.6643, 1.24327, 7200, 7200, 0, 0), -- Lordaeron Watchman
 (@CGUID+327, 17814, 560, 3, 2341.22, 905.443, 57.6643, 1.23542, 7200, 7200, 0, 0), -- Lordaeron Watchman
 (@CGUID+328, 17814, 560, 3, 2327.93, 880.303, 57.6718, 1.21893, 7200, 7200, 0, 0), -- Lordaeron Watchman
@@ -2460,21 +2531,21 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+478, 18887, 560, 3, 2664.6575, 657.5964, 62.021294, 2.72271, 86400, 86400, 0, 0), -- Taretha
 (@CGUID+479, 20342, 560, 3, 1735.42, 1075.09, 6.87962, 3.17806, 86400, 86400, 0, 0), -- Hal McAllister
 (@CGUID+480, 20344, 560, 3, 1735.39, 1077.48, 6.87962, 3.1545, 86400, 86400, 0, 0), -- Nat Pagle
-(@CGUID+481, 20345, 560, 3, 1819.32, 1031.16, 11.0649, 3.18984, 86400, 86400, 0, 0), -- Commander Mograine
-(@CGUID+482, 20346, 560, 3, 1814.75, 1030.44, 11.0651, 0.113828, 86400, 86400, 0, 0), -- Isillien
-(@CGUID+483, 20347, 560, 3, 1814.58, 1032.03, 11.0651, 0.105974, 86400, 86400, 0, 0), -- Abbendis
-(@CGUID+484, 20348, 560, 3, 1819.16, 1032.94, 11.0649, 3.12936, 86400, 86400, 0, 0), -- Fairbanks
-(@CGUID+485, 20349, 560, 3, 1815.4, 1031.36, 11.0651, 0.0117269, 86400, 86400, 0, 0), -- Tirion Fordring
+(@CGUID+481, 20345, 560, 3, 1818.3458, 1031.2239, 11.097511, 3.124123, 86400, 86400, 0, 0), -- Commander Mograine
+(@CGUID+482, 20346, 560, 3, 1814.2883, 1029.9999, 11.148274, 0.01745329, 86400, 86400, 0, 0), -- Isillien
+(@CGUID+483, 20347, 560, 3, 1814.5449, 1032.6057, 11.148274, 6.2482786, 86400, 86400, 0, 0), -- Abbendis
+(@CGUID+484, 20348, 560, 3, 1819.1766, 1032.7164, 11.180844, 3.15904, 86400, 86400, 0, 0), -- Fairbanks
+(@CGUID+485, 20349, 560, 3, 1815.0621, 1031.2677, 11.148274, 6.2482786, 86400, 86400, 0, 0), -- Tirion Fordring
 (@CGUID+486, 20350, 560, 3, 1802.396, 1061.443, 8.593266, 0.2443336, 86400, 86400, 0, 2), -- Kel'Thuzad
 (@CGUID+487, 20351, 560, 3, 1726.5, 1012.83, 1.09859, 2.61729, 86400, 86400, 0, 0), -- Captain Sanders
-(@CGUID+488, 20352, 560, 3, 1816.63, 1027.57, 11.0653, 1.51576, 86400, 86400, 0, 0), -- Arcanist Doan
+(@CGUID+488, 20352, 560, 3, 1816.6013, 1027.0293, 11.169361, 0.87959, 86400, 86400, 0, 0), -- Arcanist Doan
 (@CGUID+489, 20353, 560, 3, 1801.912, 1063.384, 8.660282, 0.2440962, 86400, 86400, 0, 0), -- Helcular
 (@CGUID+490, 20354, 560, 3, 1789.88, 1123.93, 13.3555, 6.25839, 86400, 86400, 0, 0), -- Nathanos Marris
-(@CGUID+491, 20355, 560, 3, 1804.99, 1041.48, 19.4658, 4.54112, 86400, 86400, 0, 0), -- Stalvan Mistmantle
+(@CGUID+491, 20355, 560, 3, 1805.0438, 1042.4078, 19.504314, 4.64257, 86400, 86400, 0, 0), -- Stalvan Mistmantle
 (@CGUID+492, 20357, 560, 3, 1821.21, 1055.1, 11.296, 2.61274, 86400, 86400, 0, 0), -- Sally Whitemane
 (@CGUID+493, 20358, 560, 3, 1819.38, 1056.91, 11.2595, 5.33572, 86400, 86400, 0, 0), -- Renault Mograine
 (@CGUID+494, 20360, 560, 3, 1874.092, 1021.827, 15.74021, 2.388475, 86400, 86400, 0, 2), -- Herod the Bully
-(@CGUID+495, 20361, 560, 3, 1820.17, 1039.49, 18.546, 3.83779, 86400, 86400, 0, 0), -- Taelan
+(@CGUID+495, 20361, 560, 3, 1820.17, 1039.49, 18.546, 3.83779, 86400, 86400, 5, 1), -- Taelan
 (@CGUID+496, 20363, 560, 3, 1937.68, 986.571, 21.6888, 5.49948, 86400, 86400, 0, 0), -- Caretaker Smithers
 (@CGUID+497, 20365, 560, 3, 1876.32, 1087.69, 17.7383, 4.51089, 86400, 86400, 0, 0), -- Bartolo Ginsetti
 (@CGUID+498, 20368, 560, 3, 1851.88, 961.724, 12.0402, 1.78848, 86400, 86400, 0, 0), -- Farmer Kent
@@ -2483,7 +2554,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+501, 20373, 560, 3, 1815.75, 1122.7, 14.7145, 1.5303, 86400, 86400, 0, 0), -- Magistrate Henry Maleb
 (@CGUID+502, 20376, 560, 3, 2334.0234, 926.92645, 54.954033, 4.83456, 86400, 86400, 0, 0), -- Jerry Carter
 (@CGUID+503, 20377, 560, 3, 1816.66, 1017.11, 11.6882, 1.63829, 86400, 86400, 0, 0), -- Barkeep Kelly
-(@CGUID+504, 20378, 560, 3, 1816.52, 1007.04, 11.6763, 6.27606, 86400, 86400, 0, 0), -- Chef Jessen
+(@CGUID+504, 20378, 560, 3, 1816.1407, 1006.5959, 11.905963, 0.0349065, 86400, 86400, 0, 2), -- Chef Jessen
 (@CGUID+505, 20379, 560, 3, 1792.42, 1124.93, 13.3555, 3.48201, 86400, 86400, 0, 0), -- Bilger the Straight-laced
 (@CGUID+506, 20380, 560, 3, 1792.41, 1122.24, 13.3555, 2.55917, 86400, 86400, 0, 0), -- Raleigh the True
 (@CGUID+507, 20400, 560, 3, 1724.57, 1011.26, 1.26768, 2.01646, 86400, 86400, 0, 0), -- Captain Edward Hanes
@@ -2854,17 +2925,37 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+195, 3804, 560, 3, 1846.83, 1112.615, 16.38847, 3.063024, 0, 0, 0.9992285, 0.03927403, 7200, 7200), -- Cozy Fire
 
 -- event related
-(@OGUID+300, 184306, 560, 0, 1816.721, 1031.307, 12.13223, 3.822273, 0, 0, -0.9426413, 0.3338076, -7200, -7200), -- Dark Crystal
-(@OGUID+301, 184306, 560, 0, 1816.721, 1031.307, 12.13223, 3.822273, 0, 0, -0.9426413, 0.3338076, -7200, -7200), -- Dark Crystal
-(@OGUID+302, 184307, 560, 0, 1816.681, 1031.386, 12.78501, 6.230826, 0, 0, -0.02617645, 0.9996573, -7200, -7200), -- Light Crystal
-(@OGUID+303, 184307, 560, 0, 1816.681, 1031.386, 12.78501, 6.230826, 0, 0, -0.02617645, 0.9996573, -7200, -7200), -- Light Crystal
-(@OGUID+304, 184308, 560, 0, 1816.698, 1031.316, 11.84751, 0.01745246, 0, 0, 0.00872612, 0.9999619, -7200, -7200), -- Mograine's Stronbox
-(@OGUID+305, 184308, 560, 0, 1816.698, 1031.316, 11.84751, 0.01745246, 0, 0, 0.00872612, 0.9999619, -7200, -7200), -- Mograine's Stronbox
-(@OGUID+306, 184332, 560, 0, 1819.035, 1023.37, 19.71265, 4.729844, 0, 0, -0.7009087, 0.7132511, -7200, -7200); -- Tome of Scrying
+(@OGUID+300, 184308, 560, 0, 1816.698, 1031.316, 11.84751, 0.01745246, 0, 0, 0.00872612, 0.9999619, 7200, 7200), -- Mograine's Stronbox
+(@OGUID+301, 184306, 560, 0, 1816.721, 1031.307, 12.13223, 3.822273, 0, 0, -0.9426413, 0.3338076, 7200, 7200), -- Dark Crystal
+(@OGUID+302, 184307, 560, 0, 1816.681, 1031.386, 12.78501, 6.230826, 0, 0, -0.02617645, 0.9996573, 7200, 7200), -- Light Crystal
+(@OGUID+303, 184332, 560, 0, 1819.035, 1023.37, 19.71265, 4.729844, 0, 0, -0.7009087, 0.7132511, -7200, -7200); -- Tome of Scrying
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 (@OGUID+79, 0, 0), -- Doodad_InstancePortal_PurpleDifficulty01
-(@OGUID+80, 0, 0); -- Doodad_InstancePortal_PurpleDifficultyIcon01
+(@OGUID+80, 0, 0), -- Doodad_InstancePortal_PurpleDifficultyIcon01
+(@OGUID+300, 0, 1); -- Mograine's Stronbox
+
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+(@SGGUID+1, 'Old Hillsbrad Foothills - Mograine''s Stronbox', 1, 1, @SGGUID+1, 8, 0),
+(@SGGUID+2, 'Old Hillsbrad Foothills - Dark Crystal', 1, 1, @SGGUID+2, 8, 0),
+(@SGGUID+3, 'Old Hillsbrad Foothills - Light Crystal', 1, 1, @SGGUID+3, 8, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
+(@SGGUID+1, @OGUID+300, -1), -- Mograine's Stronbox
+(@SGGUID+2, @OGUID+301, -1), -- Dark Crystal
+(@SGGUID+3, @OGUID+302, -1); -- Light Crystal
+
+DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
+(@SGGUID+1, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
+(@SGGUID+2, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
+(@SGGUID+3, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal');
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
+(@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
+(@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal');
 
 -- ======
 -- EVENTS
@@ -2927,7 +3018,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1784801,1784802,1784803,1809201,1809301,1809401);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1809201,1809301,1809401,2037801,2037802);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lt. Drake - say 1'),
 (1784802,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - switch to path 1'),
@@ -2951,17 +3042,225 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1809401, 0, 15, 33133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Cast Transform'),
 (1809401, 1000, 44, 18171, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Morph to Infinite Defiler'),
 (1809401, 1000, 48, 256+512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Remove UNIT_FLAG_IMMUNE_TO_PLAYER and UNIT_FLAG_IMMUNE_TO_NPC'),
-(1809401, 2000, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Attack Thrall');
+(1809401, 2000, 26, 0, 0, 0, 17876, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tarren Mill Lookout - Attack Thrall'),
+
+(2037801, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Pause Waypoints'),
+(2037801, 1000, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Send AI Event A to Self (starts emote loop & script repeat timer)'),
+(2037802, 0, 0, 0, 0, 0, 0, 0, 0, 18140, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Say 1'),
+(2037803, 1000, 0, 0, 0, 0, 0, 0, 0, 18141, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Say 2'),
+(2037803, 4000, 36, 0, 0, 0, 20345, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Face Commander Mograine'),
+(2037803, 6000, 0, 0, 0, 0, 0, 0, 0, 18142, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Say 3'),
+(2037803, 9000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.5707963, 'Chef Jessen - Set Orientation'),
+(2037803, 11000, 0, 0, 0, 0, 0, 0, 0, 18143, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Say 4'),
+(2037803, 14000, 0, 0, 0, 0, 0, 0, 0, 18144, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Say 5'),
+(2037803, 17000, 1, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Emote');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+
+DELETE FROM `dbscripts_on_relay` WHERE `id` IN (10220,10221,10222,10223,10224,10225,10226,10227,10228,10229,10230,10231,10232,10233,10234,10235,10236,10237);
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(10220, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12742, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Brown'),
+(10221, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12750, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Black Skull Glowing'),
+
+(10222, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17966, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 1'),
+(10222, 3000, 0, 0, 0, 0, 0, 20342, 10, 0, 17967, 0, 0, 0, 0, 0, 0, 0, 'Hal McAllister - Say 1'),
+(10222, 5000, 0, 0, 0, 0, 0, 0, 0, 0, 17968, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 2'),
+(10222, 11000, 0, 0, 0, 0, 0, 20342, 10, 0, 17969, 0, 0, 0, 0, 0, 0, 0, 'Hal McAllister - Say 2'),
+(10222, 13000, 0, 45, 0, 10203, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Start Random Relay Script'),
+-- Dream 1 (That one dream... The crazy one. Remember?)
+(10223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17970, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 3'),
+(10223, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 17971, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 4'),
+(10223, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 17972, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 5'),
+(10223, 18000, 0, 0, 10204, 0, 0, 20342, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hal McAllister - Say Random Response'),
+-- Dream 2 (That one where I'm in Durnholde and that one orc that Blackmoore keeps as his personal slave breaks out...)
+(10224, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17973, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 3'),
+(10224, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 17974, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 4'),
+(10224, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 17975, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 5'),
+(10224, 17000, 0, 0, 10204, 0, 0, 20342, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hal McAllister - Say Random Response'),
+-- Dream 3 (So I'm on some mountain with some big ol' tree. Bunch of elves runnin' around all over...)
+(10225, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17976, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 3'),
+(10225, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 17977, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 4'),
+(10225, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 17978, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 5'),
+(10225, 24000, 0, 0, 10204, 0, 0, 20342, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hal McAllister - Say Random Response'),
+-- Dream 4 (In this dream, I was fishin' master of the world. I moved to some place called Kalimdor...)
+(10226, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17979, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 3'),
+(10226, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 17980, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 4'),
+(10226, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 17981, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 5'),
+-- there's intentionally no Hal response for this dream alone
+-- Dream 5 (I can't even believe this one... You know those two loud-mouthed ruffians, Foror and Tigule?)
+(10227, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17982, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 3'),
+(10227, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 17983, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 4'),
+(10227, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 17984, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 5'),
+(10227, 23000, 0, 0, 10204, 0, 0, 20342, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hal McAllister - Say Random Response'),
+-- Dream 6 (This one's real grim... So the king's kid, Arthas... Well he goes out to battle evil, along with Uther... *Nat pats his brow dry*)
+(10228, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17985, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 3'),
+(10228, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 17986, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 4'),
+(10228, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 17987, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 5'),
+(10228, 18000, 0, 0, 10204, 0, 0, 20342, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hal McAllister - Say Random Response'),
+-- Dream 7 (That one where thousands of people are all watching us from up in the sky...)
+(10229, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18060, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 3'),
+(10229, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 18061, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 4'),
+(10229, 12000, 0, 0, 0, 0, 0, 0, 0, 0, 18062, 0, 0, 0, 0, 0, 0, 0, 'Nat Pagle - Say 5'),
+(10229, 18000, 0, 0, 10204, 0, 0, 20342, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Hal McAllister - Say Random Response'),
+
+(10230, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18084, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 1'),
+(10230, 4000, 0, 0, 0, 0, 0, 0, 0, 0, 18085, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 2'),
+(10230, 13000, 0, 0, 0, 0, 0, 0, 0, 0, 18086, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 3 (textemote)'),
+(10230, 14000, 0, 0, 0, 0, 0, 0, 0, 0, 18087, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 4'),
+(10230, 17000, 0, 0, 0, 0, 0, 0, 0, 0, 18088, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 5'),
+(10230, 25000, 0, 0, 0, 0, 0, 0, 0, 0, 18089, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 6'),
+(10230, 32000, 0, 0, 0, 0, 0, 0, 0, 0, 18090, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 7 (textemote)'), -- Gasps can be heard throughout the room.
+(10230, 35000, 0, 0, 0, 0, 0, 0, 0, 0, 18091, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 8'),
+(10230, 42000, 0, 0, 0, 0, 0, 20349, 20, 0, 18092, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Say 1 (textemote)'),
+(10230, 45000, 0, 0, 0, 0, 0, 20349, 20, 0, 18093, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Say 2'),
+(10230, 49000, 0, 0, 0, 0, 0, 20352, 20, 0, 18094, 0, 0, 0, 0, 0, 0, 0, 'Arcanist Doan - Say 1'),
+(10230, 56000, 0, 0, 0, 0, 0, 0, 0, 0, 18095, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 9'),
+(10230, 63000, 0, 0, 0, 0, 0, 0, 0, 0, 18096, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 10'), -- And there is this...
+
+-- (10230, 66000, 0, 9, @OGUID+300, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Respawn Mograine''s Stronbox 184308'),
+(10230, 66000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 1, 0, 0, 0, 0, 0, 0, 'Set WorldState - Spawn Mograine''s Stronbox'),
+
+(10230, 70000, 0, 0, 0, 0, 0, 0, 0, 0, 18097, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 11 (textemote)'), -- Commander Mograine unlocks the chest.
+(10230, 71000, 0, 11, @OGUID+300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mograine''s Stronbox 184308 - Open Door'),
+
+-- (10230, 71000, 1, 9, @OGUID+301, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Respawn Dark Crystal 184306'),
+(10230, 71000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 1, 0, 0, 0, 0, 0, 0, 'Set WorldState - Spawn Dark Crystal'),
+
+-- temp spawn 20391 Event Generator Old Hillsbrad @CGUID+631 ?
+(10230, 71000, 2, 45, 10231, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Face Dark Crystal)'),
+(10230, 73000, 0, 1, 34, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Emote OneShotWoundCritical'),
+(10230, 75000, 0, 0, 0, 0, 0, 20347, 20, 0, 18098, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Say 1'),
+(10230, 78000, 0, 0, 0, 0, 0, 0, 0, 0, 18099, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 12'),
+(10230, 81000, 0, 36, 0, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Face Commander Mograine'),
+(10230, 83000, 0, 0, 0, 0, 0, 0, 0, 0, 18100, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 13'),
+(10230, 89000, 0, 0, 0, 0, 0, 0, 0, 0, 18101, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 14'),
+(10230, 92000, 0, 0, 0, 0, 0, 0, 0, 0, 18102, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 15 (textemote)'),
+(10230, 97000, 0, 0, 0, 0, 0, 0, 0, 0, 18103, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 16'),
+(10230, 100000, 0, 36, 0, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Face Commander Mograine'),
+(10230, 102000, 0, 0, 0, 0, 0, 20346, 20, 0, 18104, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Say 1'),
+(10230, 107000, 0, 0, 0, 0, 0, 0, 0, 0, 18106, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 17 (textemote)'),
+(10230, 109000, 0, 0, 0, 0, 0, 0, 0, 0, 18107, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 18'),
+(10230, 112000, 0, 0, 0, 0, 0, 0, 0, 0, 18108, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 19'),
+(10230, 118000, 0, 0, 0, 0, 0, 0, 0, 0, 18109, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 20'),
+(10230, 125000, 0, 0, 0, 0, 0, 0, 0, 0, 18110, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 21'),
+(10230, 133000, 0, 0, 0, 0, 0, 20346, 20, 0, 18112, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Say 2'),
+(10230, 135000, 0, 45, 10231, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Face Dark Crystal)'),
+(10230, 137000, 0, 1, 25, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Emote OneShotPoint'),
+(10230, 139000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite)'),
+(10230, 143000, 0, 0, 0, 0, 0, 0, 0, 0, 18113, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 22 (textemote)'), -- Shock then silence overtakes the crowd.
+(10230, 144000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1818.6646, 1029.883, 11.097511, 100, 'Commander Mograine - Move'),
+(10230, 144000, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Stand'),
+(10230, 147000, 0, 45, 10231, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Start Relay Script (Face Dark Crystal)'),
+(10230, 149000, 0, 0, 0, 0, 0, 0, 0, 0, 18117, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 23'),
+(10230, 155000, 0, 0, 0, 0, 0, 20349, 20, 0, 18118, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Say 3'),
+(10230, 158000, 0, 45, 10233, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Holy Shock 35160)'),
+(10230, 162000, 0, 45, 10231, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Face Dark Crystal)'),
+(10230, 163000, 0, 0, 0, 0, 0, 20348, 20, 0, 18121, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Say 1'),
+(10230, 166000, 0, 45, 10234, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Heal 35162)'),
+(10230, 169000, 0, 45, 10232, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Face Event Generator Old Hillsbrad)'),
+(10230, 169000, 0, 45, 10232, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Face Event Generator Old Hillsbrad)'),
+(10230, 169000, 0, 45, 10233, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Holy Shock 35160)'),
+(10230, 169000, 0, 45, 10233, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Holy Shock 35160)'),
+(10230, 170000, 0, 45, 10235, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Smite 35155)'),
+(10230, 171000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite 35155)'),
+(10230, 171000, 0, 45, 10236, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Judgement 35170)'),
+(10230, 172000, 0, 45, 10233, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Holy Shock 35160)'),
+(10230, 173000, 0, 45, 10234, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Heal 35162)'),
+(10230, 174000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite 35155)'),
+(10230, 175000, 0, 45, 10233, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Holy Shock 35160)'),
+(10230, 175000, 0, 45, 10235, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Smite 35155)'),
+(10230, 176000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite 35155)'),
+(10230, 176000, 0, 45, 10236, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Judgement 35170)'),
+(10230, 177000, 0, 45, 10235, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Smite 35155)'),
+(10230, 179000, 0, 45, 10234, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Heal 35162)'),
+(10230, 179000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite 35155)'),
+(10230, 179000, 0, 45, 10234, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Heal 35162)'),
+(10230, 180000, 0, 45, 10234, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Heal 35162)'),
+(10230, 181000, 0, 45, 10234, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Heal 35162)'),
+(10230, 182000, 0, 45, 10234, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Heal 35162)'),
+(10230, 182000, 0, 45, 10233, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Holy Shock 35160)'),
+
+-- (10230, 184000, 0, 40, 0, 0, 0, 184306, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Dark Crystal 184306'),
+-- (10230, 184000, 1, 9, @OGUID+302, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Respawn Light Crystal 184307'),
+(10230, 184000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'Set WorldState - Despawn Dark Crystal'),
+(10230, 184000, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'Set WorldState - Spawn Light Crystal'),
+
+(10230, 189000, 0, 0, 0, 0, 0, 0, 0, 0, 18122, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 24'),
+(10230, 193000, 0, 0, 0, 0, 0, 0, 0, 0, 18123, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 25'),
+(10230, 196000, 0, 45, 10237, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Start Relay Script (Face Light Crystal)'),
+(10230, 198000, 0, 0, 0, 0, 0, 0, 0, 0, 18124, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 26 (textemote)'), -- Commander Mograine reaches out to touch the light crystal.
+(10233, 199500, 0, 15, 35172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Cast Touched by the Light'),
+(10230, 199500, 1, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Kneel'),
+(10230, 203000, 0, 1, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Emote OneShotCry'),
+(10230, 206000, 0, 1, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Emote OneShotCry'),
+(10230, 209000, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Stand'),
+(10230, 211000, 0, 0, 0, 0, 0, 0, 0, 0, 18125, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 27'),
+(10230, 217000, 0, 36, 0, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Face Commander Mograine'),
+(10230, 219000, 0, 0, 0, 0, 0, 20346, 20, 0, 18126, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Say 3'),
+(10230, 222000, 0, 0, 0, 0, 0, 0, 0, 0, 18127, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 28 (textemote)'), -- Commander Mograine puts the crystal back inside the chest.
+(10230, 222000, 0, 12, @OGUID+300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Mograine''s Stronbox 184308 - Close Door'), -- 184308 update flags to 1 then 0 right after, close door? GAMEOBJECT_BYTES_1: 1
+
+-- (10230, 223000, 0, 40, 0, 0, 0, 184307, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Light Crystal 184307'),
+(10230, 223000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 0, 0, 0, 0, 0, 0, 0, 'Set WorldState - Despawn Light Crystal'),
+
+(10230, 226000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1819.0977, 1030.0465, 11.167028, 100, 'Commander Mograine - Move'),
+(10230, 226000, 1, 0, 0, 0, 0, 0, 0, 0, 18128, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 29'),
+
+-- (10230, 227000, 0, 40, 0, 0, 0, 184308, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Despawn Mograine''s Stronbox 184308'),
+(10230, 227000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'Set WorldState - Despawn Mograine''s Stronbox'),
+
+(10230, 227000, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.14159, 'Commander Mograine - Set Facing'),
+(10230, 229500, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1818.3458, 1031.2239, 11.097511, 3.124123, 'Commander Mograine - Move'), -- SMSG_MOVE_UPDATE_TELEPORT
+(10230, 230000, 0, 28, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Sit Medium Chair'),
+(10230, 234000, 0, 0, 0, 0, 0, 0, 0, 0, 18129, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 30'),
+(10230, 245000, 0, 0, 0, 0, 0, 20349, 20, 0, 18130, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Say 4'),
+(10230, 248000, 0, 0, 0, 0, 0, 20346, 20, 0, 18130, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Say 4'),
+(10230, 248000, 0, 0, 0, 0, 0, 20347, 20, 0, 18130, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Say 2'),
+(10230, 248000, 0, 0, 0, 0, 0, 20348, 20, 0, 18130, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Say 2'),
+(10230, 248000, 0, 0, 0, 0, 0, 20352, 20, 0, 18130, 0, 0, 0, 0, 0, 0, 0, 'Arcanist Doan - Say 2'),
+
+(10231, 0, 0, 36, 0, 0, 0, 184306, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis/Isillien/Fairbanks - Face Dark Crystal'),
+
+(10232, 0, 0, 36, 0, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis/Isillien - Face Event Generator Old Hillsbrad'),
+
+(10233, 0, 0, 15, 35160, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis/Tirion Fordring - Cast Holy Shock'),
+
+(10234, 0, 0, 15, 35162, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis/Isillien/Fairbanks/Tirion Fordring - Cast Heal'),
+
+(10235, 0, 0, 15, 35155, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien/Fairbanks - Cast Smite'),
+
+(10236, 0, 0, 15, 35170, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Judgement'),
+
+(10237, 0, 0, 36, 0, 0, 0, 184307, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Face Light Crystal');
+
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_start` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_quest_end` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
 
+DELETE FROM `dbscript_random_templates` WHERE `id` IN (10203,10204,10205);
+INSERT INTO `dbscript_random_templates` (`id`, `type`, `target_id`, `chance`, `comments`) VALUES
+(10203, 1, 10223, 0, 'Nat Pagle - Dream 1'),
+(10203, 1, 10224, 0, 'Nat Pagle - Dream 2'),
+(10203, 1, 10225, 0, 'Nat Pagle - Dream 3'),
+(10203, 1, 10226, 0, 'Nat Pagle - Dream 4'),
+(10203, 1, 10227, 0, 'Nat Pagle - Dream 5'),
+(10203, 1, 10228, 0, 'Nat Pagle - Dream 6'),
+(10203, 1, 10229, 0, 'Nat Pagle - Dream 7'),
 
+(10204, 0, 17988, 0, 'Hal McAllister - Response 1'),
+(10204, 0, 17989, 0, 'Hal McAllister - Response 2'),
+(10204, 0, 17990, 0, 'Hal McAllister - Response 3'),
+(10204, 0, 17991, 0, 'Hal McAllister - Response 4'),
+(10204, 0, 17992, 0, 'Hal McAllister - Response 5'),
+(10204, 0, 17993, 0, 'Hal McAllister - Response 6'),
+(10204, 0, 17994, 0, 'Hal McAllister - Response 7'),
+(10204, 0, 17995, 0, 'Hal McAllister - Response 8'),
+
+(10205, 0, 18132, 0, 'Zixil - Text 1'),
+(10205, 0, 18133, 0, 'Zixil - Text 2'),
+(10205, 0, 18134, 0, 'Zixil - Text 3'),
+(10205, 0, 18135, 0, 'Zixil - Text 4');
