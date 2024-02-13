@@ -27,3 +27,11 @@ UPDATE `creature_template` SET `UnitFlags`=33555200 WHERE `Entry`=20391; -- Even
 UPDATE `gameobject_template` SET `size`=0.05 WHERE `Entry`=184307;
 -- Dark Crystal
 UPDATE `gameobject_template` SET `size`=0.5 WHERE `Entry`=184306;
+
+-- texts for Frances Lin <Barmaid>
+UPDATE broadcast_text SET EmoteID1=1 WHERE Id IN (18157,18158,18159);
+
+UPDATE `creature_template` SET `SpeedWalk`=1 WHERE `Entry` IN (20373,20378,20401);
+
+-- texts for Hillsbrad Citizen
+UPDATE broadcast_text SET EmoteID1=1 WHERE Id BETWEEN 18201 AND 18209;

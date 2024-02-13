@@ -5,14 +5,12 @@ DB%Complete: 80
 DBComment:
 
 TODO
-* mages/tome event upstairs in Southshore inn script
 * apple gatherers script + gaurds near apple cart emotes (Tarren Mill)
 * Tarren Mill Horsehand movement/script and interactions
 * Capt Sanders/Edward Hanes script/movement
 * Helcular / Kel'Thuzad - possibly missing texts, should stop waypoints when talking
 * Caretaker Smithers script and movement
 * Vishas, Sally Whitemane, Renault Mograine movement/script
-* Hillsbrad Citizen pooling/scripts
 * Tarren Mill Fisherman script + emotes
 * Innkeeper Monica missing random emote? "shakes her head at all of the commotion."
 * some creatures seem to be pooled with together with other entrys (patrols in the barracks)
@@ -25,6 +23,7 @@ SET @CGUID := 5600000; -- creatures
 SET @OGUID := 5600000; -- gameobjects
 SET @PGUID := 49600; -- pools
 SET @SGGUID := 5600000; -- spawn_groups
+SET @STRINGID := 5600000; -- used for StringID's
 
 -- =========
 -- CREATURES
@@ -1147,14 +1146,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+448, 43, 2180.26, 229.167, 52.4411, 0, 0, 0),
 (@CGUID+448, 44, 2187.37, 241.135, 52.6137, 0, 0, 0),
 
--- Chef Jessen
-(@CGUID+504, 1, 1816.1407, 1006.5959, 11.905963, 0.0349065, 1000, 2037801), -- pause script and start repeat timer in EAI
-(@CGUID+504, 2, 1816.1407, 1006.5959, 11.905963, 0.0349065, 3000, 2037802),
-(@CGUID+504, 3, 1813.269, 1010.926, 11.838078, 100, 0, 0),
-(@CGUID+504, 4, 1812.7063, 1019.1864, 11.767029, 100, 0, 0),
-(@CGUID+504, 5, 1811.6666, 1025.1326, 11.767029, 100, 20000, 2037803),
-(@CGUID+504, 6, 1812.8987, 1010.8238, 11.830807, 100, 0, 0),
-
 -- Tarren Mill Guardsman (18092) #1
 (@CGUID+602, 1, 2560.236, 765.303, 57.03683, 0, 0, 0),
 (@CGUID+602, 2, 2572.305, 764.4601, 56.73349, 0, 0, 0),
@@ -1195,7 +1186,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+614, 9, 2620.766, 592.524, 56.46237, 0, 0, 0),
 (@CGUID+614, 10, 2637.223, 612.3849, 55.86766, 0, 0, 0);
 
-DELETE FROM `creature_movement_template` WHERE `entry` IN (17848,18092,18093,18094,18649,18664,18764,18765,28132,18672,18655,18656,20350,20360);
+DELETE FROM `creature_movement_template` WHERE `entry` IN (17848,18092,18093,18094,18649,18664,18764,18765,28132,18672,18655,18656,20350,20360,20373,20378,20401);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
 -- Lieutenant Drake
 -- Normal
@@ -1935,7 +1926,46 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (20360, 0, 36, 1883.819946, 1012.700012, 15.276500, 100, 0, 0),
 (20360, 0, 37, 1893.510010, 1004.200012, 15.368600, 100, 0, 0),
 (20360, 0, 38, 1883.819946, 1012.700012, 15.276500, 100, 0, 0),
-(20360, 0, 39, 1874.089966, 1021.830017, 15.740200, 100, 0, 0);
+(20360, 0, 39, 1874.089966, 1021.830017, 15.740200, 100, 0, 0),
+
+-- Magistrate Henry Maleb
+(20373, 0, 1, 1815.9948, 1128.528, 14.896571, 100, 0, 0),
+(20373, 0, 2, 1815.9757, 1121.9319, 14.896573, 100, 0, 0),
+
+-- Chef Jessen
+(20378, 0, 1, 1816.1407, 1006.5959, 11.905963, 0.0349065, 1000, 2037801), -- pause script and start repeat timer in EAI
+(20378, 0, 2, 1816.1407, 1006.5959, 11.905963, 0.0349065, 3000, 2037802),
+(20378, 0, 3, 1813.269, 1010.926, 11.838078, 100, 0, 0),
+(20378, 0, 4, 1812.7063, 1019.1864, 11.767029, 100, 0, 0),
+(20378, 0, 5, 1811.6666, 1025.1326, 11.767029, 100, 20000, 2037803),
+(20378, 0, 6, 1812.8987, 1010.8238, 11.830807, 100, 0, 0),
+
+-- Frances Lin
+(20401, 0, 1, 1814.421, 1016.1131, 11.767029, 100, 0, 0),
+(20401, 0, 2, 1812.9846, 1022.4553, 11.76703, 100, 0, 0),
+(20401, 0, 3, 1813.155, 1030.9547, 11.167028, 100, 8000, 2040101),
+(20401, 0, 4, 1811.1656, 1037.2583, 11.767029, 100, 0, 0),
+(20401, 0, 5, 1807.0463, 1038.4927, 11.767028, 100, 4000, 2040102), 
+(20401, 0, 6, 1811.4893, 1033.161, 11.167028, 100, 0, 0),
+(20401, 0, 7, 1807.2407, 1031.8088, 11.167028, 100, 0, 0),
+(20401, 0, 8, 1803.4313, 1031.8158, 11.167028, 100, 0, 0),
+(20401, 0, 9, 1802.2505, 1027.3381, 11.62325, 100, 0, 0),
+(20401, 0, 10, 1801.75, 1018.7515, 14.96703, 100, 0, 0),
+(20401, 0, 11, 1808.53, 1018.5084, 14.967029, 100, 0, 0),
+(20401, 0, 12, 1808.1046, 1026.6862, 18.567026, 100, 0, 0),
+(20401, 0, 13, 1808.9912, 1030.0287, 18.56703, 100, 2000, 0),
+(20401, 0, 14, 1808.9912, 1030.0287, 18.56703, 5.4105205, 1000, 0),
+(20401, 0, 15, 1808.9912, 1030.0287, 18.56703, 0.6806784, 1000, 0),
+(20401, 0, 16, 1808.9912, 1030.0287, 18.56703, 2.2165682, 2000, 0),
+(20401, 0, 17, 1808.0543, 1019.494, 14.967029, 100, 0, 0),
+(20401, 0, 18, 1802.7164, 1019.3997, 14.96703, 100, 0, 0),
+(20401, 0, 19, 1803.4958, 1028.3624, 11.167028, 100, 0, 0),
+(20401, 0, 20, 1805.415, 1031.0358, 11.167027, 100, 0, 0),
+(20401, 0, 21, 1810.5465, 1030.5178, 11.167028, 100, 0, 0),
+(20401, 0, 22, 1811.577, 1025.1711, 11.767029, 100, 0, 0),
+(20401, 0, 23, 1812.6082, 1018.2567, 11.767029, 100, 0, 0),
+(20401, 0, 24, 1813.9412, 1016.4092, 11.767029, 100, 0, 0),
+(20401, 0, 25, 1820.7648, 1016.4184, 11.767029, 1.570796, 600000, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+361, 0, 3, 0, 0, 0, NULL), -- creature_spawn_entry
@@ -1951,7 +1981,17 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+447, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+449, 0, 1, 0, 0, 0, NULL), -- Orc Prisoner
 (@CGUID+455, 0, 3, 0, 0, 0, NULL), -- Orc Prisoner
-(@CGUID+456, 0, 1, 0, 0, 0, NULL); -- Orc Prisoner
+(@CGUID+456, 0, 1, 0, 0, 0, NULL), -- Orc Prisoner
+(@CGUID+583, 0, 0, 0, 173, 0, NULL), -- Hillsbrad Farmer
+(@CGUID+584, 0, 0, 0, 173, 0, NULL), -- Hillsbrad Farmer
+(@CGUID+585, 0, 0, 0, 173, 0, NULL), -- Hillsbrad Farmer
+(@CGUID+586, 0, 0, 0, 173, 0, NULL), -- Hillsbrad Farmer
+(@CGUID+587, 0, 0, 0, 173, 0, NULL), -- Hillsbrad Farmer
+(@CGUID+588, 0, 0, 0, 173, 0, NULL), -- Hillsbrad Farmer
+(@CGUID+589, 0, 0, 0, 173, 0, NULL), -- Hillsbrad Farmer
+(@CGUID+590, 0, 0, 0, 173, 0, NULL), -- Hillsbrad Farmer
+(@CGUID+591, 0, 0, 0, 173, 0, NULL), -- Hillsbrad Farmer
+(@CGUID+592, 0, 0, 0, 173, 0, NULL); -- Hillsbrad Farmer
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (18092, 0, 0, 0, 0, 0, '19817'), -- Tarren Mill Guardsman
@@ -2038,7 +2078,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 (28163, 560, 28132, 515, 15); -- Guerrero -> Don Carlos
 
-INSERT INTO `creature_spawn_entry` (guid, `entry`) VALUES
+INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 (@CGUID+361, 17819), (@CGUID+361, 17820), -- Durnholde Sentry, Durnholde Rifleman
 (@CGUID+371, 17819), (@CGUID+371, 17820), -- Durnholde Sentry, Durnholde Rifleman
 (@CGUID+388, 17819), (@CGUID+388, 17820), -- Durnholde Sentry, Durnholde Rifleman
@@ -2051,7 +2091,50 @@ INSERT INTO `creature_spawn_entry` (guid, `entry`) VALUES
 (@CGUID+404, 17819), (@CGUID+404, 17820), -- Durnholde Sentry, Durnholde Rifleman
 (@CGUID+409, 17820), (@CGUID+409, 17833), -- Durnholde Rifleman, Durnholde Warden
 (@CGUID+432, 17819), (@CGUID+432, 17860), -- Durnholde Sentry, Durnholde Veteran
-(@CGUID+434, 17819), (@CGUID+434, 17860); -- Durnholde Sentry, Durnholde Veteran
+(@CGUID+434, 17819), (@CGUID+434, 17860), -- Durnholde Sentry, Durnholde Veteran
+-- Hillsbrad Citizens
+(@CGUID+540, 20426), (@CGUID+540, 20428), (@CGUID+540, 20429), (@CGUID+540, 20430),
+(@CGUID+541, 20426), (@CGUID+541, 20428), (@CGUID+541, 20429), (@CGUID+541, 20430),
+(@CGUID+542, 20426), (@CGUID+542, 20428), (@CGUID+542, 20429), (@CGUID+542, 20430),
+(@CGUID+543, 20426), (@CGUID+543, 20428), (@CGUID+543, 20429), (@CGUID+543, 20430),
+(@CGUID+544, 20426), (@CGUID+544, 20428), (@CGUID+544, 20429), (@CGUID+544, 20430),
+(@CGUID+545, 20426), (@CGUID+545, 20428), (@CGUID+545, 20429), (@CGUID+545, 20430),
+(@CGUID+546, 20426), (@CGUID+546, 20428), (@CGUID+546, 20429), (@CGUID+546, 20430),
+(@CGUID+547, 20426), (@CGUID+547, 20428), (@CGUID+547, 20429), (@CGUID+547, 20430),
+(@CGUID+548, 20426), (@CGUID+548, 20428), (@CGUID+548, 20429), (@CGUID+548, 20430),
+(@CGUID+549, 20426), (@CGUID+549, 20428), (@CGUID+549, 20429), (@CGUID+549, 20430),
+(@CGUID+550, 20426), (@CGUID+550, 20428), (@CGUID+550, 20429), (@CGUID+550, 20430),
+(@CGUID+551, 20426), (@CGUID+551, 20428), (@CGUID+551, 20429), (@CGUID+551, 20430),
+(@CGUID+552, 20426), (@CGUID+552, 20428), (@CGUID+552, 20429), (@CGUID+552, 20430),
+(@CGUID+553, 20426), (@CGUID+553, 20428), (@CGUID+553, 20429), (@CGUID+553, 20430),
+(@CGUID+554, 20426), (@CGUID+554, 20428), (@CGUID+554, 20429), (@CGUID+554, 20430),
+(@CGUID+555, 20426), (@CGUID+555, 20428), (@CGUID+555, 20429), (@CGUID+555, 20430),
+(@CGUID+556, 20426), (@CGUID+556, 20428), (@CGUID+556, 20429), (@CGUID+556, 20430),
+(@CGUID+557, 20426), (@CGUID+557, 20428), (@CGUID+557, 20429), (@CGUID+557, 20430),
+(@CGUID+558, 20426), (@CGUID+558, 20428), (@CGUID+558, 20429), (@CGUID+558, 20430),
+(@CGUID+559, 20426), (@CGUID+559, 20428), (@CGUID+559, 20429), (@CGUID+559, 20430),
+(@CGUID+560, 20426), (@CGUID+560, 20428), (@CGUID+560, 20429), (@CGUID+560, 20430),
+(@CGUID+561, 20426), (@CGUID+561, 20428), (@CGUID+561, 20429), (@CGUID+561, 20430),
+(@CGUID+562, 20426), (@CGUID+562, 20428), (@CGUID+562, 20429), (@CGUID+562, 20430),
+(@CGUID+563, 20426), (@CGUID+563, 20428), (@CGUID+563, 20429), (@CGUID+563, 20430),
+(@CGUID+564, 20426), (@CGUID+564, 20428), (@CGUID+564, 20429), (@CGUID+564, 20430),
+(@CGUID+565, 20426), (@CGUID+565, 20428), (@CGUID+565, 20429), (@CGUID+565, 20430),
+(@CGUID+566, 20426), (@CGUID+566, 20428), (@CGUID+566, 20429), (@CGUID+566, 20430),
+(@CGUID+567, 20426), (@CGUID+567, 20428), (@CGUID+567, 20429), (@CGUID+567, 20430),
+(@CGUID+568, 20426), (@CGUID+568, 20428), (@CGUID+568, 20429), (@CGUID+568, 20430),
+(@CGUID+569, 20426), (@CGUID+569, 20428), (@CGUID+569, 20429), (@CGUID+569, 20430),
+(@CGUID+570, 20426), (@CGUID+570, 20428), (@CGUID+570, 20429), (@CGUID+570, 20430),
+(@CGUID+571, 20426), (@CGUID+571, 20428), (@CGUID+571, 20429), (@CGUID+571, 20430),
+(@CGUID+572, 20426), (@CGUID+572, 20428), (@CGUID+572, 20429), (@CGUID+572, 20430),
+(@CGUID+573, 20426), (@CGUID+573, 20428), (@CGUID+573, 20429), (@CGUID+573, 20430),
+(@CGUID+574, 20426), (@CGUID+574, 20428), (@CGUID+574, 20429), (@CGUID+574, 20430),
+(@CGUID+575, 20426), (@CGUID+575, 20428), (@CGUID+575, 20429), (@CGUID+575, 20430),
+(@CGUID+576, 20426), (@CGUID+576, 20428), (@CGUID+576, 20429), (@CGUID+576, 20430),
+(@CGUID+577, 20426), (@CGUID+577, 20428), (@CGUID+577, 20429), (@CGUID+577, 20430),
+(@CGUID+578, 20426), (@CGUID+578, 20428), (@CGUID+578, 20429), (@CGUID+578, 20430),
+(@CGUID+579, 20426), (@CGUID+579, 20428), (@CGUID+579, 20429), (@CGUID+579, 20430),
+(@CGUID+580, 20426), (@CGUID+580, 20428), (@CGUID+580, 20429), (@CGUID+580, 20430),
+(@CGUID+581, 20426), (@CGUID+581, 20428), (@CGUID+581, 20429), (@CGUID+581, 20430);
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 20434, 560, 3, 1889.295, 992.3798, 15.2348, 2.251475, 7200, 7200, 0, 0), -- Horse
@@ -2551,14 +2634,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+498, 20368, 560, 3, 1851.88, 961.724, 12.0402, 1.78848, 86400, 86400, 0, 0), -- Farmer Kent
 (@CGUID+499, 20370, 560, 3, 1819.11, 1022.68, 18.546, 1.6269, 86400, 86400, 0, 0), -- Phin Odelic
 (@CGUID+500, 20372, 560, 3, 2335.806, 926.977, 54.91743, 4.62512, 86400, 86400, 0, 0), -- Jonathan Revah
-(@CGUID+501, 20373, 560, 3, 1815.75, 1122.7, 14.7145, 1.5303, 86400, 86400, 0, 0), -- Magistrate Henry Maleb
+(@CGUID+501, 20373, 560, 3, 1815.9757, 1121.9319, 14.896573, 1.5303, 86400, 86400, 0, 2), -- Magistrate Henry Maleb
 (@CGUID+502, 20376, 560, 3, 2334.0234, 926.92645, 54.954033, 4.83456, 86400, 86400, 0, 0), -- Jerry Carter
-(@CGUID+503, 20377, 560, 3, 1816.66, 1017.11, 11.6882, 1.63829, 86400, 86400, 0, 0), -- Barkeep Kelly
+(@CGUID+503, 20377, 560, 3, 1816.5262, 1016.9359, 11.771445, 1.640609, 86400, 86400, 0, 0), -- Barkeep Kelly
 (@CGUID+504, 20378, 560, 3, 1816.1407, 1006.5959, 11.905963, 0.0349065, 86400, 86400, 0, 2), -- Chef Jessen
 (@CGUID+505, 20379, 560, 3, 1792.42, 1124.93, 13.3555, 3.48201, 86400, 86400, 0, 0), -- Bilger the Straight-laced
 (@CGUID+506, 20380, 560, 3, 1792.41, 1122.24, 13.3555, 2.55917, 86400, 86400, 0, 0), -- Raleigh the True
 (@CGUID+507, 20400, 560, 3, 1724.57, 1011.26, 1.26768, 2.01646, 86400, 86400, 0, 0), -- Captain Edward Hanes
-(@CGUID+508, 20401, 560, 3, 1820.11, 1017.07, 11.6882, 1.55975, 86400, 86400, 0, 0), -- Frances Lin
+(@CGUID+508, 20401, 560, 3, 1820.7648, 1016.4184, 11.767029, 1.570796, 86400, 86400, 0, 2), -- Frances Lin
 (@CGUID+509, 20419, 560, 3, 1758.36, 1044.51, 6.87962, 3.23304, 86400, 86400, 0, 0), -- Zixil
 (@CGUID+510, 20420, 560, 3, 1756.05, 1043.65, 6.87974, 1.50517, 86400, 86400, 0, 0), -- Overwatch Mark 0
 (@CGUID+511, 20422, 560, 3, 1813.88, 1024.54, 18.546, 3.05239, 86400, 86400, 0, 0), -- Kirin Tor Mage
@@ -2590,48 +2673,48 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+537, 20434, 560, 3, 1887.117, 999.249, 15.2348, 2.286381, 7200, 7200, 0, 0), -- Horse
 (@CGUID+538, 20432, 560, 3, 1797.084, 1018.894, 11.17717, 3.089233, 7200, 7200, 0, 0), -- Beggar
 (@CGUID+539, 20432, 560, 3, 1899.019, 1110.426, 17.83234, 0.8028514, 7200, 7200, 0, 0), -- Beggar
-(@CGUID+540, 20426, 560, 3, 1941.92, 1087.87, 25.5007, 0.999939, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+541, 20426, 560, 3, 1939.98, 1092.63, 25.7574, 5.74767, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+542, 20426, 560, 3, 1846.63, 1035.59, 16.4081, 3.31607, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+543, 20426, 560, 3, 1803.84, 1050.82, 10.9498, 0.00505018, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+544, 20426, 560, 3, 1802.98, 1041.38, 11.6916, 0.0309679, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+545, 20426, 560, 3, 1806.37, 1111.12, 13.3558, 5.41802, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+546, 20426, 560, 3, 1803.39, 1118.39, 13.3555, 3.12465, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+547, 20428, 560, 3, 1948.82, 1097.53, 26.8087, 5.21063, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+548, 20428, 560, 3, 1843.16, 1049.55, 15.1808, 0.158773, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+549, 20428, 560, 3, 1786.24, 1073.02, 11.2316, 3.08774, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+550, 20428, 560, 3, 1806.47, 1041.24, 11.6917, 3.13329, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+551, 20428, 560, 3, 1819.34, 1087.57, 12.4705, 1.71879, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+552, 20428, 560, 3, 1792.72, 1106.02, 12.4537, 2.50812, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+553, 20428, 560, 3, 1782.76, 1127.42, 13.3555, 0.69778, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+554, 20428, 560, 3, 1808.49, 1129.88, 13.3555, 3.15214, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+555, 20428, 560, 3, 1889.77, 1091.65, 18.8602, 5.6772, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+556, 20428, 560, 3, 1894.47, 1100.49, 23.6263, 2.38795, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+557, 20428, 560, 3, 2648.42, 701.486, 56.2887, 5.51583, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+558, 20429, 560, 3, 2011.51, 1040.96, 25.873, 6.19787, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+559, 20429, 560, 3, 1944.91, 1091.43, 26.3673, 3.15979, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+560, 20429, 560, 3, 1875.78, 1046.94, 19.0236, 2.32647, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+561, 20429, 560, 3, 1807.61, 1050.37, 11.1079, 3.14664, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+562, 20429, 560, 3, 1819.03, 1090.44, 12.4652, 4.90358, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+563, 20429, 560, 3, 1790.73, 1107.24, 12.4537, 5.72433, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+564, 20429, 560, 3, 1784.71, 1128.98, 13.3555, 3.95718, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+565, 20429, 560, 3, 1800.71, 1118.56, 13.3555, 6.23876, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+566, 20429, 560, 3, 1843.34, 1109.06, 16.4485, 1.62062, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+567, 20429, 560, 3, 1849.53, 1102.22, 16.4447, 0.0262618, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+568, 20429, 560, 3, 1893.82, 1098.59, 18.8535, 0.792026, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+569, 20429, 560, 3, 1893.63, 1094.25, 23.6263, 5.63401, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+570, 20429, 560, 3, 1889.79, 1105.25, 23.6217, 2.39188, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+571, 20429, 560, 3, 2649.23, 700.131, 56.271, 2.2648, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+572, 20430, 560, 3, 2011.42, 1039.97, 25.9761, 6.18609, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+573, 20430, 560, 3, 1950.06, 1094.69, 26.8233, 2.11913, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+574, 20430, 560, 3, 1845.6, 1049.8, 15.2171, 3.38676, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+575, 20430, 560, 3, 1853.9, 1037.27, 16.4049, 4.8319, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+576, 20430, 560, 3, 1786.99, 1075.12, 11.5149, 3.11131, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+577, 20430, 560, 3, 1808.68, 1108.25, 13.3572, 2.20574, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+578, 20430, 560, 3, 1782.16, 1118.66, 13.3555, 3.3053, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+579, 20430, 560, 3, 1806.18, 1129.7, 13.3555, 0.0851638, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+580, 20430, 560, 3, 1895.64, 1100.66, 18.847, 3.85901, 86400, 86400, 0, 0), -- Hillsbrad Citizen
-(@CGUID+581, 20430, 560, 3, 1892.95, 1102.15, 23.6263, 5.46671, 86400, 86400, 0, 0), -- Hillsbrad Citizen
+(@CGUID+540, 0, 560, 3, 1941.92, 1087.87, 25.5007, 0.999939, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+541, 0, 560, 3, 1939.98, 1092.63, 25.7574, 5.74767, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+542, 0, 560, 3, 1846.63, 1035.59, 16.4081, 3.31607, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+543, 0, 560, 3, 1803.84, 1050.82, 10.9498, 0.00505018, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+544, 0, 560, 3, 1802.98, 1041.38, 11.6916, 0.0309679, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+545, 0, 560, 3, 1806.37, 1111.12, 13.3558, 5.41802, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+546, 0, 560, 3, 1803.39, 1118.39, 13.3555, 3.12465, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+547, 0, 560, 3, 1948.82, 1097.53, 26.8087, 5.21063, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+548, 0, 560, 3, 1843.16, 1049.55, 15.1808, 0.158773, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+549, 0, 560, 3, 1786.24, 1073.02, 11.2316, 3.08774, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+550, 0, 560, 3, 1806.47, 1041.24, 11.6917, 3.13329, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+551, 0, 560, 3, 1819.34, 1087.57, 12.4705, 1.71879, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+552, 0, 560, 3, 1792.72, 1106.02, 12.4537, 2.50812, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+553, 0, 560, 3, 1782.76, 1127.42, 13.3555, 0.69778, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+554, 0, 560, 3, 1808.49, 1129.88, 13.3555, 3.15214, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+555, 0, 560, 3, 1889.77, 1091.65, 18.8602, 5.6772, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+556, 0, 560, 3, 1894.47, 1100.49, 23.6263, 2.38795, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+557, 0, 560, 3, 2648.42, 701.486, 56.2887, 5.51583, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+558, 0, 560, 3, 2011.51, 1040.96, 25.873, 6.19787, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+559, 0, 560, 3, 1944.91, 1091.43, 26.3673, 3.15979, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+560, 0, 560, 3, 1875.78, 1046.94, 19.0236, 2.32647, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+561, 0, 560, 3, 1807.61, 1050.37, 11.1079, 3.14664, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+562, 0, 560, 3, 1819.03, 1090.44, 12.4652, 4.90358, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+563, 0, 560, 3, 1790.73, 1107.24, 12.4537, 5.72433, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+564, 0, 560, 3, 1784.71, 1128.98, 13.3555, 3.95718, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+565, 0, 560, 3, 1800.71, 1118.56, 13.3555, 6.23876, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+566, 0, 560, 3, 1843.34, 1109.06, 16.4485, 1.62062, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+567, 0, 560, 3, 1849.53, 1102.22, 16.4447, 0.0262618, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+568, 0, 560, 3, 1893.82, 1098.59, 18.8535, 0.792026, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+569, 0, 560, 3, 1893.63, 1094.25, 23.6263, 5.63401, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+570, 0, 560, 3, 1889.79, 1105.25, 23.6217, 2.39188, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+571, 0, 560, 3, 2649.23, 700.131, 56.271, 2.2648, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+572, 0, 560, 3, 2011.42, 1039.97, 25.9761, 6.18609, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+573, 0, 560, 3, 1950.06, 1094.69, 26.8233, 2.11913, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+574, 0, 560, 3, 1845.6, 1049.8, 15.2171, 3.38676, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+575, 0, 560, 3, 1853.9, 1037.27, 16.4049, 4.8319, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+576, 0, 560, 3, 1786.99, 1075.12, 11.5149, 3.11131, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+577, 0, 560, 3, 1808.68, 1108.25, 13.3572, 2.20574, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+578, 0, 560, 3, 1782.16, 1118.66, 13.3555, 3.3053, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+579, 0, 560, 3, 1806.18, 1129.7, 13.3555, 0.0851638, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+580, 0, 560, 3, 1895.64, 1100.66, 18.847, 3.85901, 86400, 86400, 0, 0), -- creature_spawn_entry
+(@CGUID+581, 0, 560, 3, 1892.95, 1102.15, 23.6263, 5.46671, 86400, 86400, 0, 0), -- creature_spawn_entry
 (@CGUID+582, 20432, 560, 3, 1818.89, 994.88, 11.0784, 4.69839, 86400, 86400, 0, 0), -- Beggar
 (@CGUID+583, 20433, 560, 3, 1852.17, 945.774, 11.8424, 4.34888, 86400, 86400, 0, 0), -- Hillsbrad Farmer
 (@CGUID+584, 20433, 560, 3, 1848.82, 937.322, 11.8424, 4.47062, 86400, 86400, 0, 0), -- Hillsbrad Farmer
@@ -2644,12 +2727,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+591, 20433, 560, 3, 1869.66, 935.246, 11.8495, 2.19689, 86400, 86400, 0, 0), -- Hillsbrad Farmer
 (@CGUID+592, 20433, 560, 3, 1864.57, 930.21, 11.8224, 2.55818, 86400, 86400, 0, 0), -- Hillsbrad Farmer
 (@CGUID+593, 20434, 560, 3, 1880.34, 992.801, 15.1515, 5.51126, 86400, 86400, 0, 0), -- Horse
-(@CGUID+594, 20441, 560, 3, 1882.16, 1100.4, 18.8604, 5.74003, 86400, 86400, 0, 0), -- Natasha Morris
-(@CGUID+595, 21341, 560, 3, 1827.7, 948.985, 15.4446, 2.32177, 86400, 86400, 0, 0), -- Victor
-(@CGUID+596, 21342, 560, 3, 1829.8, 951.789, 15.3027, 3.0247, 86400, 86400, 0, 0), -- Alex
-(@CGUID+597, 21343, 560, 3, 1825.75, 955.628, 16.1763, 5.40446, 86400, 86400, 0, 0), -- Harvey
-(@CGUID+598, 21344, 560, 3, 1823.26, 952.299, 16.6008, 6.2684, 86400, 86400, 0, 0), -- Phil
-(@CGUID+599, 21345, 560, 3, 1829.28, 954.9, 15.6466, 3.87686, 86400, 86400, 0, 0), -- Hugh
+(@CGUID+594, 20441, 560, 3, 1882.16, 1100.4, 18.8604, 5.74003, 86400, 86400, 5, 1), -- Natasha Morris
+(@CGUID+595, 21341, 560, 3, 1820.9138, 951.32355, 16.568651, 1.1868238, 86400, 86400, 0, 0), -- Victor
+(@CGUID+596, 21342, 560, 3, 1824.5419, 952.72003, 16.352728, 2.7925267, 86400, 86400, 0, 0), -- Alex
+(@CGUID+597, 21343, 560, 3, 1819.0342, 955.422, 16.114717, 5.67231, 86400, 86400, 0, 0), -- Harvey
+(@CGUID+598, 21344, 560, 3, 1821.3049, 957.2806, 16.247116, 4.852015, 86400, 86400, 0, 0), -- Phil
+(@CGUID+599, 21345, 560, 3, 1824.8151, 955.7093, 16.312666, 3.769911, 86400, 86400, 0, 0), -- Hugh
 
 -- PATROL 1 - starts near shack next to windmill at farm
 (@CGUID+600, 18093, 560, 3, 2547.974, 761.9453, 56.85905, 0.3247781, 7200, 7200, 0, 0), -- Tarren Mill Protector
@@ -2923,39 +3006,17 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 (@OGUID+193, 3804, 560, 3, 1850.632, 1032.164, 16.34453, 0.1396245, 0, 0, 0.06975555, 0.9975641, 7200, 7200), -- Cozy Fire
 (@OGUID+194, 3803, 560, 3, 1847.715, 1112.489, 16.38847, 1.771508, 0, 0, 0.7743921, 0.632706, 7200, 7200), -- Cozy Fire
 (@OGUID+195, 3804, 560, 3, 1846.83, 1112.615, 16.38847, 3.063024, 0, 0, 0.9992285, 0.03927403, 7200, 7200), -- Cozy Fire
+(@OGUID+196, 184332, 560, 3, 1819.035, 1023.37, 19.71265, 4.729844, 0, 0, -0.7009087, 0.7132511, 7200, 7200), -- Tome of Scrying
 
 -- event related
 (@OGUID+300, 184308, 560, 3, 1816.698, 1031.316, 11.84751, 0.01745246, 0, 0, 0.00872612, 0.9999619, 7200, 7200), -- Mograine's Stronbox
 (@OGUID+301, 184306, 560, 3, 1816.721, 1031.307, 12.13223, 3.822273, 0, 0, -0.9426413, 0.3338076, 7200, 7200), -- Dark Crystal
-(@OGUID+302, 184307, 560, 3, 1816.681, 1031.386, 12.78501, 6.230826, 0, 0, -0.02617645, 0.9996573, 7200, 7200), -- Light Crystal
-(@OGUID+303, 184332, 560, 3, 1819.035, 1023.37, 19.71265, 4.729844, 0, 0, -0.7009087, 0.7132511, -7200, -7200); -- Tome of Scrying
+(@OGUID+302, 184307, 560, 3, 1816.681, 1031.386, 12.78501, 6.230826, 0, 0, -0.02617645, 0.9996573, 7200, 7200); -- Light Crystal
 
 INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 (@OGUID+79, 0, 0), -- Doodad_InstancePortal_PurpleDifficulty01
 (@OGUID+80, 0, 0), -- Doodad_InstancePortal_PurpleDifficultyIcon01
 (@OGUID+300, 0, 1); -- Mograine's Stronbox
-
-INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
-(@SGGUID+1, 'Old Hillsbrad Foothills - Mograine''s Stronbox', 1, 1, @SGGUID+1, 8, 0),
-(@SGGUID+2, 'Old Hillsbrad Foothills - Dark Crystal', 1, 1, @SGGUID+2, 8, 0),
-(@SGGUID+3, 'Old Hillsbrad Foothills - Light Crystal', 1, 1, @SGGUID+3, 8, 0);
-
-INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
-(@SGGUID+1, @OGUID+300, -1), -- Mograine's Stronbox
-(@SGGUID+2, @OGUID+301, -1), -- Dark Crystal
-(@SGGUID+3, @OGUID+302, -1); -- Light Crystal
-
-DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
-INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
-(@SGGUID+1, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
-(@SGGUID+2, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
-(@SGGUID+3, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal');
-
-DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
-INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
-(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
-(@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
-(@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal');
 
 -- ======
 -- EVENTS
@@ -2969,12 +3030,68 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
+(@SGGUID+1, 'Old Hillsbrad Foothills - Mograine''s Stronbox', 1, 1, @SGGUID+1, 8, 0),
+(@SGGUID+2, 'Old Hillsbrad Foothills - Dark Crystal', 1, 1, @SGGUID+2, 8, 0),
+(@SGGUID+3, 'Old Hillsbrad Foothills - Light Crystal', 1, 1, @SGGUID+3, 8, 0);
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @OGUID+300, -1, 0), -- Mograine's Stronbox
+(@SGGUID+2, @OGUID+301, -1, 0), -- Dark Crystal
+(@SGGUID+3, @OGUID+302, -1, 0); -- Light Crystal
+
+DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
+INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
+(@SGGUID+1, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
+(@SGGUID+2, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
+(@SGGUID+3, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal');
+
+DELETE FROM `conditions` WHERE `condition_entry` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
+INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3`, `value4`, `flags`, `comments`) VALUES 
+(@SGGUID+1, 42, @SGGUID+1, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Mograine''s Stronbox'),
+(@SGGUID+2, 42, @SGGUID+2, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Dark Crystal'),
+(@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal');
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+
+DELETE FROM `string_id` WHERE `Id`=@STRINGID+1;
+INSERT INTO `string_id` (`Id`, `Name`) VALUES
+(@STRINGID+1, 'OHF_CITIZEN_CONVO_PARTNER');
+
+DELETE FROM `creature_spawn_data_template` WHERE `Entry` IN (10003,10004);
+INSERT INTO `creature_spawn_data_template` (`Entry`, `NpcFlags`, `UnitFlags`, `Faction`, `ModelId`, `EquipmentId`, `CurHealth`, `CurMana`, `SpawnFlags`, `RelayId`, `StringId`, `Name`) VALUES
+(10003, -1, -1, 0, 0, -1, 0, 0, 0, 10238, 0, 'Hillsbrad Citizen - RelayScript (10238) - Random Talk Emote'),
+(10004, -1, -1, 0, 0, -1, 0, 0, 0, 0, @STRINGID+1, 'Hillsbrad Citizen - StringId (5600001) - Special Conversation Partner');
+
+INSERT INTO `creature_spawn_data` (`guid`, `Id`) VALUES
+(@CGUID+561, 10003),
+(@CGUID+543, 10003),
+(@CGUID+574, 10003),
+(@CGUID+548, 10003),
+(@CGUID+577, 10003),
+(@CGUID+545, 10003),
+(@CGUID+552, 10003),
+(@CGUID+563, 10003),
+(@CGUID+564, 10003),
+(@CGUID+553, 10003),
+(@CGUID+546, 10003),
+(@CGUID+565, 10003),
+(@CGUID+554, 10003),
+(@CGUID+579, 10003),
+(@CGUID+580, 10003),
+(@CGUID+568, 10003),
+(@CGUID+581, 10003),
+(@CGUID+556, 10003),
+(@CGUID+541, 10003),
+(@CGUID+559, 10003),
+(@CGUID+540, 10003),
+(@CGUID+550, 10003),
+(@CGUID+544, 10003),
+(@CGUID+573, 10004),
+(@CGUID+562, 10004);
 
 -- =======
 -- POOLING
@@ -3018,7 +3135,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1809201,1809301,1809401,2037801,2037802);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1809201,1809301,1809401,2037801,2037802,2037803,2040101,2040102);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lt. Drake - say 1'),
 (1784802,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - switch to path 1'),
@@ -3053,13 +3170,19 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (2037803, 9000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.5707963, 'Chef Jessen - Set Orientation'),
 (2037803, 11000, 0, 0, 0, 0, 0, 0, 0, 18143, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Say 4'),
 (2037803, 14000, 0, 0, 0, 0, 0, 0, 0, 18144, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Say 5'),
-(2037803, 17000, 1, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Emote');
+(2037803, 17000, 1, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Chef Jessen - Emote'),
+
+(2040101, 1000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6.230825, 'Frances Lin - Set Orientation'),
+(2040101, 1000, 0, 0, 0, 0, 0, 0, 0, 18157, 0, 0, 0, 0, 0, 0, 0, 'Frances Lin - Say 1'),
+(2040101, 4000, 0, 0, 0, 0, 0, 0, 0, 18158, 0, 0, 0, 0, 0, 0, 0, 'Frances Lin - Say 2'),
+(2040102, 1000, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.2863812, 'Frances Lin - Set Orientation'),
+(2040102, 1000, 0, 0, 0, 0, 0, 0, 0, 18159, 0, 0, 0, 0, 0, 0, 0, 'Frances Lin - Say 3');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscripts_on_relay` WHERE `id` IN (10220,10221,10222,10223,10224,10225,10226,10227,10228,10229,10230,10231,10232,10233,10234,10235,10236,10237);
+DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10220 AND 10240;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10220, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12742, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Brown'),
 (10221, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12750, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Black Skull Glowing'),
@@ -3194,7 +3317,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10230, 226000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1819.0977, 1030.0465, 11.167028, 100, 'Commander Mograine - Move'),
 (10230, 226000, 1, 0, 0, 0, 0, 0, 0, 0, 18128, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 29'),
 (10230, 227000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+1, 0, 0, 0, 0, 0, 0, 0, 'Set WorldState - Despawn Mograine''s Stronbox'),
-(10230, 227000, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.14159, 'Commander Mograine - Set Facing'),
+(10230, 227000, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3.14159, 'Commander Mograine - Set Orientation'),
 (10230, 229500, 0, 3, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 1818.3458, 1031.2239, 11.097511, 3.124123, 'Commander Mograine - Move'), -- SMSG_MOVE_UPDATE_TELEPORT
 (10230, 230000, 0, 28, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Sit Medium Chair'),
 (10230, 234000, 0, 0, 0, 0, 0, 0, 0, 0, 18129, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 30'),
@@ -3216,7 +3339,21 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 
 (10236, 0, 0, 15, 35170, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Judgement'),
 
-(10237, 0, 0, 36, 0, 0, 0, 184307, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Face Light Crystal');
+(10237, 0, 0, 36, 0, 0, 0, 184307, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Face Light Crystal'),
+
+(10238, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen - Send AI Event A to Self (starts talk emote loop)'),
+
+-- convo between @CGUID+547 and @CGUID+573
+(10239, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18206, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #1 - Say 1'),
+(10239, 6500, 0, 0, 0, 0, 0, @STRINGID+1, 10, 2048, 18207, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #2 - Say 1'),
+(10239, 13000, 0, 0, 0, 0, 0, 0, 0, 0, 18208, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #1 - Say 2'),
+(10239, 19500, 0, 0, 0, 0, 0, @STRINGID+1, 10, 2048, 18209, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #2 - Say 2'),
+-- convo between @CGUID+551 and @CGUID+562
+(10240, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18201, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #3 - Say 1'),
+(10240, 6500, 0, 0, 0, 0, 0, @STRINGID+1, 10, 2048, 18202, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #4 - Say 1'),
+(10240, 14500, 0, 0, 0, 0, 0, 0, 0, 0, 18203, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #3 - Say 2'),
+(10240, 22500, 0, 0, 0, 0, 0, @STRINGID+1, 10, 2048, 18204, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #4 - Say 2'),
+(10240, 34500, 0, 0, 0, 0, 0, 0, 0, 0, 18205, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #3 - Say 3');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

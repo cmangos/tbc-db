@@ -22931,7 +22931,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 
 
 -- ================================================================================
--- Caverns of Time: Old Hillsbrad Foothills - (4.3.4 Official Data - Normal/Heroic) - 100% Scripted From Official Data
+-- Caverns of Time: Old Hillsbrad Foothills - (4.3.4 Official Data - Normal/Heroic)
 -- ================================================================================
 -- Forest Moss Creeper (4.3.4 Official Data - Normal/Heroic)
 ('235001','2350','0','0','100','1025','7800','15700','48300','66300','0','0','11','3396','1','32','0','0','0','0','0','0','0','0','Forest Moss Creeper - Cast Corrosive Poison'),
@@ -23126,8 +23126,21 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Kirin Tor Mage 20422
 ('2042201','20422','11','0','100','32','0','0','0','0','0','0','53','10220','0','0','53','10221','0','0','0','0','0','0','Kirin Tor Mage - Start Random Relay Script to Set Equipment on Spawn'),
 -- Hillsbrad Peasant (20424) - NSR
--- Hillsbrad Citizen (20426) - NSR
--- Beggar (20432) - NSR (Some LOS Says Can Be Added)
+-- Hillsbrad Citizen 20426
+('2042601','20426','30','0','100','1','5','20426','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Set Phase 1 on Receive AI Event A'),
+('2042602','20426','1','1','100','1','2000','5000','2000','5000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Emote on Timer OOC (Phase 1)'),
+-- Hillsbrad Citizen 20428
+('2042801','20428','30','0','100','1','5','20428','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Set Phase 1 on Receive AI Event A'),
+('2042802','20428','1','1','100','1','2000','5000','2000','5000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Emote on Timer OOC (Phase 1)'),
+-- Hillsbrad Citizen 20429
+('2042901','20429','30','0','100','1','5','20429','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Set Phase 1 on Receive AI Event A'),
+('2042902','20429','1','1','100','1','2000','5000','2000','5000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Emote on Timer OOC (Phase 1)'),
+-- Hillsbrad Citizen 20430
+('2043001','20430','30','0','100','1','5','20430','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Set Phase 1 on Receive AI Event A'),
+('2043002','20430','1','1','100','1','2000','5000','2000','5000','0','0','5','1','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Emote on Timer OOC (Phase 1)'),
+('5600547','-5600547','1','0','100','1','60000','180000','140000','180000','0','0','53','10239','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Start Relay Script on Timer OOC'),
+('5600551','-5600551','1','0','100','1','30000','230000','210000','230000','0','0','53','10240','0','0','0','0','0','0','0','0','0','0','Hillsbrad Citizen - Start Relay Script on Timer OOC'),
+-- Beggar 20432 - at_beggar
 -- Hillsbrad Farmer (20433) - NSR
 -- Natasha Morris (20441) - NSR
 -- Victor (21341) - NSR
