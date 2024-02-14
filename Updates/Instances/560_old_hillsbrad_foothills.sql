@@ -3303,7 +3303,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10230, 193000, 0, 0, 0, 0, 0, 0, 0, 0, 18123, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 25'),
 (10230, 196000, 0, 45, 10237, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Start Relay Script (Face Light Crystal)'),
 (10230, 198000, 0, 0, 0, 0, 0, 0, 0, 0, 18124, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 26 (textemote)'), -- Commander Mograine reaches out to touch the light crystal.
-(10233, 199500, 0, 15, 35172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Cast Touched by the Light'),
+(10230, 199500, 0, 15, 35172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Cast Touched by the Light'),
 (10230, 199500, 1, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Kneel'),
 (10230, 203000, 0, 1, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Emote OneShotCry'),
 (10230, 206000, 0, 1, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Emote OneShotCry'),
