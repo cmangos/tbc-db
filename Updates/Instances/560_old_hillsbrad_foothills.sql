@@ -10,12 +10,10 @@ TODO
 * Capt Sanders/Edward Hanes script/movement
 * Helcular / Kel'Thuzad - possibly missing texts, should stop waypoints when talking
 * Caretaker Smithers script and movement
-* Vishas, Sally Whitemane, Renault Mograine movement/script
 * Tarren Mill Fisherman script + emotes
 * Innkeeper Monica missing random emote? "shakes her head at all of the commotion."
 * some creatures seem to be pooled with together with other entrys (patrols in the barracks)
 * Don Carlos, Guerrero Heroic Dummy Template?
-* Little Jimmy Vishas, Sally Whitemane, Renault Mograine script and movement
 
 EndDBScriptData */
 
@@ -2625,8 +2623,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+489, 20353, 560, 3, 1801.912, 1063.384, 8.660282, 0.2440962, 86400, 86400, 0, 0), -- Helcular
 (@CGUID+490, 20354, 560, 3, 1789.88, 1123.93, 13.3555, 6.25839, 86400, 86400, 0, 0), -- Nathanos Marris
 (@CGUID+491, 20355, 560, 3, 1805.0438, 1042.4078, 19.504314, 4.64257, 86400, 86400, 0, 0), -- Stalvan Mistmantle
-(@CGUID+492, 20357, 560, 3, 1821.21, 1055.1, 11.296, 2.61274, 86400, 86400, 0, 0), -- Sally Whitemane
-(@CGUID+493, 20358, 560, 3, 1819.38, 1056.91, 11.2595, 5.33572, 86400, 86400, 0, 0), -- Renault Mograine
+(@CGUID+492, 20357, 560, 3, 1909.918, 993.6586, 15.845679, 4.95155525, 86400, 86400, 0, 0), -- Sally Whitemane
+(@CGUID+493, 20358, 560, 3, 1911.8611, 994.13245, 16.357399, 4.9489, 86400, 86400, 0, 0), -- Renault Mograine
 (@CGUID+494, 20360, 560, 3, 1874.092, 1021.827, 15.74021, 2.388475, 86400, 86400, 0, 2), -- Herod the Bully
 (@CGUID+495, 20361, 560, 3, 1820.17, 1039.49, 18.546, 3.83779, 86400, 86400, 5, 1), -- Taelan
 (@CGUID+496, 20363, 560, 3, 1937.68, 986.571, 21.6888, 5.49948, 86400, 86400, 0, 0), -- Caretaker Smithers
@@ -2773,7 +2771,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+629, 20391, 560, 3, 1815.177, 1035.551, 11.17216, 3.944444, 7200, 7200, 0, 0), -- Event Generator Old Hillsbrad
 (@CGUID+630, 20391, 560, 3, 1736.539, 1073.198, 6.962951, 2.181662, 7200, 7200, 0, 0), -- Event Generator Old Hillsbrad
 (@CGUID+631, 20391, 560, 3, 1816.784, 1031.313, 12.56942, 6.265732, 7200, 7200, 0, 0), -- Event Generator Old Hillsbrad
-(@CGUID+632, 20359, 560, 3, 1861.473, 1087.851, 17.66494, 4.719225, 7200, 7200, 0, 0), -- Little Jimmy Vishas
+(@CGUID+632, 20359, 560, 3, 1909.4442, 995.6017, 16.181616, 4.9492154, 7200, 7200, 0, 0), -- Little Jimmy Vishas
 (@CGUID+633, 20155, 560, 3, 2102.716, 95.313805, 53.068726, 3.31612, 7200, 7200, 0, 0), -- Hillsbrad Internment Lodge Quest Trigger
 (@CGUID+634, 19433, 560, 3, 2190.86, 156.63531, 88.52896, 1.44862, 7200, 7200, 0, 0), -- CoT Hillsbrad Despawn Trigger Unit
 (@CGUID+635, 2408, 560, 3, 2381.204, 502.0198, 34.41981, 2.336742, 180, 180, 5, 1), -- Snapjaw
@@ -3033,12 +3031,16 @@ INSERT INTO `gameobject_addon` (`guid`, `animprogress`, `state`) VALUES
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`, `StringId`) VALUES
 (@SGGUID+1, 'Old Hillsbrad Foothills - Mograine''s Stronbox', 1, 1, @SGGUID+1, 8, 0),
 (@SGGUID+2, 'Old Hillsbrad Foothills - Dark Crystal', 1, 1, @SGGUID+2, 8, 0),
-(@SGGUID+3, 'Old Hillsbrad Foothills - Light Crystal', 1, 1, @SGGUID+3, 8, 0);
+(@SGGUID+3, 'Old Hillsbrad Foothills - Light Crystal', 1, 1, @SGGUID+3, 8, 0),
+(@SGGUID+4, 'Old Hillsbrad Foothills - Scarlet Crusade Children', 0, 0, 0, 0, 0);
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @OGUID+300, -1, 0), -- Mograine's Stronbox
 (@SGGUID+2, @OGUID+301, -1, 0), -- Dark Crystal
-(@SGGUID+3, @OGUID+302, -1, 0); -- Light Crystal
+(@SGGUID+3, @OGUID+302, -1, 0), -- Light Crystal
+(@SGGUID+4, @CGUID+492, 0, 0), -- Sally Whitemane
+(@SGGUID+4, @CGUID+493, 1, 0), -- Renault Mograine
+(@SGGUID+4, @CGUID+632, 2, 0); -- Little Jimmy Vishas
 
 DELETE FROM `worldstate_name` WHERE `Id` IN (@SGGUID+1,@SGGUID+2,@SGGUID+3);
 INSERT INTO `worldstate_name` (`Id`, `Name`) VALUES
@@ -3053,9 +3055,72 @@ INSERT INTO `conditions` (`condition_entry`, `type`, `value1`, `value2`, `value3
 (@SGGUID+3, 42, @SGGUID+3, 1, 1, 0, 0, 'Old Hillsbrad Foothills - Ashbringer Event - Light Crystal');
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+4, 3, 4, 0, @SGGUID+4, 2, 'Old Hillsbrad Foothills - Scarlet Crusade Children');
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+4, 'Old Hillsbrad Foothills - Scarlet Crusade Children');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+(@SGGUID+4, 1, 1927.6208, 969.2012, 17.91233, 100, 0, 0, ''),
+(@SGGUID+4, 2, 1935.2817, 973.1046, 19.765339, 100, 0, 0, ''),
+(@SGGUID+4, 3, 1947.6158, 971.5432, 21.53548, 100, 0, 0, ''),
+(@SGGUID+4, 4, 1958.584, 970.6836, 22.758991, 100, 0, 0, ''),
+(@SGGUID+4, 5, 1968.3883, 971.84503, 23.962679, 100, 0, 0, ''),
+(@SGGUID+4, 6, 1971.8309, 999.0618, 28.299349, 100, 0, 0, ''),
+(@SGGUID+4, 7, 1968.9197, 1011.7449, 27.550247, 100, 0, 0, ''),
+(@SGGUID+4, 8, 1960.7737, 1023.3538, 25.96747, 100, 0, 0, ''),
+(@SGGUID+4, 9, 1950.8038, 1033.8225, 23.942024, 100, 0, 0, ''),
+(@SGGUID+4, 10, 1934.9801, 1042.5717, 22.137825, 100, 0, 0, ''),
+(@SGGUID+4, 11, 1918.8728, 1048.3973, 19.421812, 100, 0, 0, ''),
+(@SGGUID+4, 12, 1909.8624, 1053.3057, 18.460752, 100, 0, 0, ''),
+(@SGGUID+4, 13, 1909.7411, 1063.2158, 19.511656, 100, 0, 0, ''),
+(@SGGUID+4, 14, 1911.3334, 1086.1061, 21.112108, 100, 0, 0, ''),
+(@SGGUID+4, 15, 1913.2205, 1107.5017, 20.97138, 100, 0, 0, ''),
+(@SGGUID+4, 16, 1903.625, 1124.6158, 18.734564, 100, 0, 0, ''),
+(@SGGUID+4, 17, 1893.4742, 1135.568, 18.443138, 100, 0, 0, ''),
+(@SGGUID+4, 18, 1874.9469, 1136.4017, 17.251, 100, 0, 0, ''),
+(@SGGUID+4, 19, 1864.8711, 1128.6273, 15.882499, 100, 0, 0, ''),
+(@SGGUID+4, 20, 1863.2114, 1102.2101, 17.787773, 100, 0, 0, ''),
+(@SGGUID+4, 21, 1857.6895, 1086.4677, 17.20242, 100, 0, 0, ''),
+(@SGGUID+4, 22, 1862.7196, 1068.6813, 15.936551, 100, 0, 0, ''),
+(@SGGUID+4, 23, 1842.51, 1056.6361, 14.976986, 100, 0, 0, ''),
+(@SGGUID+4, 24, 1824.3262, 1064.956, 12.36829, 100, 0, 0, ''),
+(@SGGUID+4, 25, 1828.1018, 1088.4716, 13.716602, 100, 0, 0, ''),
+(@SGGUID+4, 26, 1831.9336, 1125.584, 13.931124, 100, 0, 0, ''),
+(@SGGUID+4, 27, 1793.192, 1150.9938, 10.930223, 100, 0, 0, ''),
+(@SGGUID+4, 28, 1766.386, 1139.3741, 11.0818, 100, 0, 0, ''),
+(@SGGUID+4, 29, 1768.2086, 1114.6821, 11.178861, 100, 0, 0, ''),
+(@SGGUID+4, 30, 1779.9342, 1096.4996, 12.219379, 100, 0, 0, ''),
+(@SGGUID+4, 31, 1779.9685, 1094.0162, 11.908344, 100, 0, 0, ''),
+(@SGGUID+4, 32, 1780.1993, 1076.44, 10.655781, 100, 0, 0, ''),
+(@SGGUID+4, 33, 1766.623, 1073.1769, 6.8965716, 100, 0, 0, ''),
+(@SGGUID+4, 34, 1764.3131, 1031.9971, 6.967027, 100, 0, 0, ''),
+(@SGGUID+4, 35, 1769.7189, 1015.6437, 6.427197, 100, 0, 0, ''),
+(@SGGUID+4, 36, 1781.427, 1015.7469, 9.314404, 100, 0, 0, ''),
+(@SGGUID+4, 37, 1784.0868, 1026.5377, 10.612499, 100, 0, 0, ''),
+(@SGGUID+4, 38, 1786.029, 1045.1888, 9.896137, 100, 0, 0, ''),
+(@SGGUID+4, 39, 1787.9987, 1059.0806, 7.6214795, 100, 0, 0, ''),
+(@SGGUID+4, 40, 1815.3898, 1060.277, 10.641117, 100, 0, 0, ''),
+(@SGGUID+4, 41, 1829.5338, 1058.778, 13.859013, 100, 0, 0, ''),
+(@SGGUID+4, 42, 1836.428, 1047.2233, 14.894588, 100, 0, 0, ''),
+(@SGGUID+4, 43, 1838.2704, 1026.9523, 15.142665, 100, 0, 0, ''),
+(@SGGUID+4, 44, 1842.7277, 1008.9644, 14.742396, 100, 0, 0, ''),
+(@SGGUID+4, 45, 1849.1177, 1000.2745, 15.083217, 100, 0, 0, ''),
+(@SGGUID+4, 46, 1857.2428, 998.5936, 14.867991, 100, 0, 0, ''),
+(@SGGUID+4, 47, 1866.1174, 1015.569, 15.556972, 100, 0, 0, ''),
+(@SGGUID+4, 48, 1868.3208, 1027.3716, 15.498511, 100, 0, 0, ''),
+(@SGGUID+4, 49, 1869.6267, 1037.2123, 16.729485, 100, 0, 0, ''),
+(@SGGUID+4, 50, 1865.5181, 1049.5011, 15.335751, 100, 0, 0, ''),
+(@SGGUID+4, 51, 1867.5786, 1060.357, 16.225822, 100, 0, 0, ''),
+(@SGGUID+4, 52, 1878.767, 1060.9973, 17.684929, 100, 0, 0, ''),
+(@SGGUID+4, 53, 1897.9668, 1053.58, 17.920403, 100, 0, 0, ''),
+(@SGGUID+4, 54, 1905.4509, 1045.5461, 18.431456, 100, 0, 0, ''),
+(@SGGUID+4, 55, 1904.2731, 1028.3635, 19.276466, 100, 0, 0, ''),
+(@SGGUID+4, 56, 1904.4609, 1016.3633, 18.276466, 100, 0, 0, ''),
+(@SGGUID+4, 57, 1909.918, 993.6586, 15.845679, 100, 0, 0, ''),
+(@SGGUID+4, 58, 1918.1559, 980.7051, 17.270973, 100, 0, 0, '');
 
 DELETE FROM `string_id` WHERE `Id`=@STRINGID+1;
 INSERT INTO `string_id` (`Id`, `Name`) VALUES
@@ -3091,7 +3156,12 @@ INSERT INTO `creature_spawn_data` (`guid`, `Id`) VALUES
 (@CGUID+550, 10003),
 (@CGUID+544, 10003),
 (@CGUID+573, 10004),
-(@CGUID+562, 10004);
+(@CGUID+562, 10004),
+
+-- run on
+(@CGUID+492, 1), -- Sally Whitemane
+(@CGUID+493, 1), -- Renault Mograine
+(@CGUID+632, 1); -- Little Jimmy Vishas
 
 -- =======
 -- POOLING
@@ -3264,46 +3334,46 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10230, 133000, 0, 0, 0, 0, 0, 20346, 20, 0, 18112, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Say 2'),
 (10230, 135000, 0, 45, 10231, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Face Dark Crystal)'),
 (10230, 137000, 0, 1, 25, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Emote OneShotPoint'),
-(10230, 139000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite)'),
+(10230, 139000, 0, 15, 35155, 0, 0, 20346, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Cast Smite'),
 (10230, 143000, 0, 0, 0, 0, 0, 0, 0, 0, 18113, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 22 (textemote)'), -- Shock then silence overtakes the crowd.
 (10230, 144000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1818.6646, 1029.883, 11.097511, 100, 'Commander Mograine - Move'),
 (10230, 144000, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Stand'),
 (10230, 147000, 0, 45, 10231, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Start Relay Script (Face Dark Crystal)'),
 (10230, 149000, 0, 0, 0, 0, 0, 0, 0, 0, 18117, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 23'),
 (10230, 155000, 0, 0, 0, 0, 0, 20349, 20, 0, 18118, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Say 3'),
-(10230, 158000, 0, 45, 10233, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Holy Shock 35160)'),
+(10230, 158000, 0, 15, 35160, 0, 0, 20349, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Holy Shock'),
 (10230, 162000, 0, 45, 10231, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Face Dark Crystal)'),
 (10230, 163000, 0, 0, 0, 0, 0, 20348, 20, 0, 18121, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Say 1'),
-(10230, 166000, 0, 45, 10234, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Heal 35162)'),
+(10230, 166000, 0, 15, 35162, 0, 0, 20348, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Cast Heal'),
 (10230, 169000, 0, 45, 10232, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Face Event Generator Old Hillsbrad)'),
 (10230, 169000, 0, 45, 10232, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Face Event Generator Old Hillsbrad)'),
-(10230, 169000, 0, 45, 10233, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Holy Shock 35160)'),
-(10230, 169000, 0, 45, 10233, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Holy Shock 35160)'),
-(10230, 170000, 0, 45, 10235, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Smite 35155)'),
-(10230, 171000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite 35155)'),
-(10230, 171000, 0, 45, 10236, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Judgement 35170)'),
-(10230, 172000, 0, 45, 10233, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Holy Shock 35160)'),
-(10230, 173000, 0, 45, 10234, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Heal 35162)'),
-(10230, 174000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite 35155)'),
-(10230, 175000, 0, 45, 10233, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Holy Shock 35160)'),
-(10230, 175000, 0, 45, 10235, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Smite 35155)'),
-(10230, 176000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite 35155)'),
-(10230, 176000, 0, 45, 10236, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Judgement 35170)'),
-(10230, 177000, 0, 45, 10235, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Smite 35155)'),
-(10230, 179000, 0, 45, 10234, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Heal 35162)'),
-(10230, 179000, 0, 45, 10235, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Smite 35155)'),
-(10230, 179000, 0, 45, 10234, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Heal 35162)'),
-(10230, 180000, 0, 45, 10234, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Cast Heal 35162)'),
-(10230, 181000, 0, 45, 10234, 0, 0, 20346, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Start Relay Script (Cast Heal 35162)'),
-(10230, 182000, 0, 45, 10234, 0, 0, 20347, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Start Relay Script (Cast Heal 35162)'),
-(10230, 182000, 0, 45, 10233, 0, 0, 20349, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Start Relay Script (Cast Holy Shock 35160)'),
+(10230, 169000, 0, 15, 35160, 0, 0, 20347, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Cast Holy Shock'),
+(10230, 169000, 0, 15, 35160, 0, 0, 20349, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Holy Shock'),
+(10230, 170000, 0, 15, 35155, 0, 0, 20348, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Cast Smite'),
+(10230, 171000, 0, 15, 35155, 0, 0, 20346, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Cast Smite'),
+(10230, 171000, 0, 15, 35170, 0, 0, 20349, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Judgement'),
+(10230, 172000, 0, 15, 35160, 0, 0, 20347, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Cast Holy Shock'),
+(10230, 173000, 0, 15, 35162, 0, 0, 20348, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Cast Heal'),
+(10230, 174000, 0, 15, 35155, 0, 0, 20346, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Cast Smite'),
+(10230, 175000, 0, 15, 35160, 0, 0, 20347, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Cast Holy Shock'),
+(10230, 175000, 0, 15, 35155, 0, 0, 20348, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Cast Smite'),
+(10230, 176000, 0, 15, 35155, 0, 0, 20346, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Cast Smite'),
+(10230, 176000, 0, 15, 35170, 0, 0, 20349, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Judgement'),
+(10230, 177000, 0, 15, 35155, 0, 0, 20348, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Cast Smite'),
+(10230, 179000, 0, 15, 35162, 0, 0, 20347, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Cast Heal'),
+(10230, 179000, 0, 15, 35155, 0, 0, 20346, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Cast Smite'),
+(10230, 179000, 0, 15, 35162, 0, 0, 20349, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Heal'),
+(10230, 180000, 0, 15, 35162, 0, 0, 20348, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Cast Heal'),
+(10230, 181000, 0, 15, 35162, 0, 0, 20346, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien - Cast Heal'),
+(10230, 182000, 0, 15, 35162, 0, 0, 20347, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis - Cast Heal'),
+(10230, 183000, 0, 15, 35160, 0, 0, 20349, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Holy Shock'),
 (10230, 184000, 0, 53, 0, 0, 0, 0, 0, 0, @SGGUID+2, 0, 0, 0, 0, 0, 0, 0, 'Set WorldState - Despawn Dark Crystal'),
 (10230, 184000, 1, 53, 0, 0, 0, 0, 0, 0, @SGGUID+3, 1, 0, 0, 0, 0, 0, 0, 'Set WorldState - Spawn Light Crystal'),
 (10230, 189000, 0, 0, 0, 0, 0, 0, 0, 0, 18122, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 24'),
 (10230, 193000, 0, 0, 0, 0, 0, 0, 0, 0, 18123, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 25'),
-(10230, 196000, 0, 45, 10237, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Start Relay Script (Face Light Crystal)'),
+(10230, 196000, 0, 45, 10233, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Start Relay Script (Face Light Crystal)'),
 (10230, 198000, 0, 0, 0, 0, 0, 0, 0, 0, 18124, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 26 (textemote)'), -- Commander Mograine reaches out to touch the light crystal.
-(10230, 199500, 0, 15, 35172, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Cast Touched by the Light'),
+(10230, 199500, 0, 15, 35172, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Cast Touched by the Light'),
 (10230, 199500, 1, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Kneel'),
 (10230, 203000, 0, 1, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Emote OneShotCry'),
 (10230, 206000, 0, 1, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Emote OneShotCry'),
@@ -3328,18 +3398,44 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10230, 248000, 0, 0, 0, 0, 0, 20352, 20, 0, 18130, 0, 0, 0, 0, 0, 0, 0, 'Arcanist Doan - Say 2'),
 
 (10231, 0, 0, 36, 0, 0, 0, 184306, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis/Isillien/Fairbanks - Face Dark Crystal'),
-
 (10232, 0, 0, 36, 0, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis/Isillien - Face Event Generator Old Hillsbrad'),
+(10233, 0, 0, 36, 0, 0, 0, 184307, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Face Light Crystal'),
 
-(10233, 0, 0, 15, 35160, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis/Tirion Fordring - Cast Holy Shock'),
+(10234, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Pause WP Movement'),
+(10234, 3000, 0, 15, 35136, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Cast Summon Captured Critter'),
+(10234, 3200, 0, 0, 0, 0, 0, 0, 0, 0, 18013, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Say 1'),
+(10234, 7800, 0, 36, 0, 0, 0, 20396, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Face Captured Critter'),
+(10234, 7800, 0, 45, 10235, 0, 0, 20358, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Renault Mograine - Start Relay Script (Face Captured Critter)'),
+(10234, 7800, 0, 45, 10235, 0, 0, 20359, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Little Jimmy Vishas - Start Relay Script (Face Captured Critter)'),
+(10234, 8000, 0, 0, 0, 0, 0, 0, 0, 0, 18014, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Say 2'),
+(10234, 14500, 0, 0, 0, 0, 0, 20359, 20, 0, 18015, 0, 0, 0, 0, 0, 0, 0, 'Little Jimmy Vishas - Say 1'),
+(10234, 17500, 0, 45, 10235, 0, 0, 20359, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Little Jimmy Vishas - Start Relay Script (Face Captured Critter)'),
+(10234, 19500, 0, 0, 0, 0, 0, 20359, 20, 0, 18016, 0, 0, 0, 0, 0, 0, 0, 'Little Jimmy Vishas - Say 2'),
+(10234, 26000, 0, 36, 0, 0, 0, 20359, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Little Jimmy Vishas - Face Sally Whitemane'),
+(10234, 27500, 0, 0, 0, 0, 0, 20359, 20, 0, 18017, 0, 0, 0, 0, 0, 0, 0, 'Little Jimmy Vishas - Say 3'),
+(10234, 34000, 0, 36, 0, 0, 0, 20358, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Face Renault Mograine'),
+(10234, 36000, 0, 0, 0, 0, 0, 0, 0, 0, 18019, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Say 3'),
+(10234, 42000, 0, 45, 10235, 0, 0, 20358, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Renault Mograine - Start Relay Script (Face Captured Critter)'),
+(10234, 44000, 0, 0, 0, 0, 0, 20358, 20, 0, 18020, 0, 0, 0, 0, 0, 0, 0, 'Renault Mograine - Say 1'),
+(10234, 47000, 0, 0, 0, 0, 0, 20358, 20, 0, 18021, 0, 0, 0, 0, 0, 0, 0, 'Renault Mograine - Say 2'),
+(10234, 47000, 1, 0, 0, 0, 0, 20358, 20, 0, 18022, 0, 0, 0, 0, 0, 0, 0, 'Renault Mograine - Say 3 (textemote)'),
+(10234, 52000, 0, 0, 0, 0, 0, 0, 0, 0, 18023, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Say 4'),
+(10234, 52000, 1, 0, 0, 0, 0, 0, 0, 0, 18024, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Say 5 (textemote)'),
+(10234, 58500, 0, 0, 0, 0, 0, 20358, 20, 0, 18026, 0, 0, 0, 0, 0, 0, 0, 'Renault Mograine - Say 4'),
+(10234, 63500, 0, 0, 0, 0, 0, 0, 0, 0, 18027, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Say 6'),
+(10234, 66500, 0, 36, 0, 0, 0, 20396, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Face Captured Critter'),
+(10234, 66500, 0, 45, 10235, 0, 0, 20358, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Renault Mograine - Start Relay Script (Face Captured Critter)'),
+(10234, 66500, 0, 45, 10235, 0, 0, 20359, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Little Jimmy Vishas - Start Relay Script (Face Captured Critter)'),
+(10234, 68500, 0, 37, 0, 0, 2, 20396, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Move to Captured Critter'),
+(10234, 70000, 0, 15, 35137, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Cast Kill Critter'), -- Renault Mograine and Little Jimmy Vishas also cast the same spell here, but don't see the point
+(10234, 70000, 1, 15, 31261, 1, 0, 20396, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Captured Critter - Cast Permanent Feign Death (Root)'), -- it's possible this should be a spell script on hit by spell 35137
+(10234, 74000, 0, 0, 0, 0, 0, 0, 0, 0, 18028, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Say 7 (textemote)'),
+(10234, 74000, 1, 0, 0, 0, 0, 0, 0, 0, 18029, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Say 8'),
+(10234, 82000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sally Whitemane - Unpause WP Movement'),
 
-(10234, 0, 0, 15, 35162, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Abbendis/Isillien/Fairbanks/Tirion Fordring - Cast Heal'),
+(10235, 0, 0, 36, 0, 0, 0, 20396, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Renault Mograine & Little Jimmy Vishas - Face Captured Critter'),
 
-(10235, 0, 0, 15, 35155, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Isillien/Fairbanks - Cast Smite'),
-
-(10236, 0, 0, 15, 35170, 0, 0, 20391, 20, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Judgement'),
-
-(10237, 0, 0, 36, 0, 0, 0, 184307, 20, 1025, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Face Light Crystal'),
+-- reuse 10236-10237
 
 (10238, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen - Send AI Event A to Self (starts talk emote loop)'),
 

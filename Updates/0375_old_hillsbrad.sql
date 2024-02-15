@@ -35,3 +35,7 @@ UPDATE `creature_template` SET `SpeedWalk`=1 WHERE `Entry` IN (20373,20378,20401
 
 -- texts for Hillsbrad Citizen
 UPDATE broadcast_text SET EmoteID1=1 WHERE Id BETWEEN 18201 AND 18209;
+
+-- Sally Whitemane, Renault Mograine, and Little Jimmy Vishas
+UPDATE `creature_template` SET `SpeedWalk`=1 WHERE `Entry` IN (20357,20358,20359);
+UPDATE broadcast_text SET ChatTypeID=2 WHERE Id IN (18022,18024,18028);

@@ -23099,7 +23099,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Nathanos Marris (20354) - NSR
 -- Stalvan Mistmantle 20355
 ('2035501','20355','11','0','100','0','0','0','0','0','0','0','11','14915','0','2','0','0','0','0','0','0','0','0','Stalvan Mistmantle - Self Visual - Sleep Until Cancelled (DND) on Spawn'),
--- Sally Whitemane (20357) - NSR
+-- Sally Whitemane 20357
+('2035701','20357','1','0','100','1','120000','180000','420000','480000','0','0','53','10234','0','0','0','0','0','0','0','0','0','0','Sally Whitemane - Start Relay Script on Timer OOC'),
 -- Renault Mograine (20358) - NSR
 -- Little Jimmy Vishas (20359) - NSR
 -- Herod the Bully (20360) - NSR
