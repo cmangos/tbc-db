@@ -1,4 +1,4 @@
--- Missing in Action Escort Path
+-- Defias Brotherhood Escort Path
 SET @PATH := 467;
 
 -- Defias Traiter escort waypoints
