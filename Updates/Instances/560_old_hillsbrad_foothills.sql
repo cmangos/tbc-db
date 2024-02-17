@@ -3450,7 +3450,7 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10230, 144000, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Set Stand State - Stand'),
 (10230, 147000, 0, 45, 10231, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Start Relay Script (Face Dark Crystal)'),
 (10230, 149000, 0, 0, 0, 0, 0, 0, 0, 0, 18117, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Say 23'),
-(10230, 152000, 0, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Emote OneShotQuestion'),
+(10230, 152000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Mograine - Emote OneShotExclamation'),
 (10230, 155000, 0, 0, 0, 0, 0, 20349, 20, 0, 18118, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Say 3'),
 (10230, 158000, 0, 15, 35160, 0, 0, 20349, 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 'Tirion Fordring - Cast Holy Shock'),
 (10230, 162000, 0, 45, 10231, 0, 0, 20348, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Fairbanks - Start Relay Script (Face Dark Crystal)'),
