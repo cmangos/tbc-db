@@ -23090,7 +23090,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2035003','20350','1','0','100','1','95000','95000','335000','335000','0','0','1','18044','0','0','0','0','0','0','0','0','0','0','Kel''Thuzad - Conversation Sequence 1'),
 ('2035004','20350','1','0','100','1','105000','105000','345000','345000','0','0','1','18050','0','0','0','0','0','0','0','0','0','0','Kel''Thuzad - Conversation Sequence 1'),
 ('2035005','20350','1','0','100','1','125000','125000','365000','365000','0','0','1','18052','0','0','0','0','0','0','0','0','0','0','Kel''Thuzad - Conversation Sequence 1'),
--- Captain Sanders (20351) - NSR
+-- Captain Sanders 20351
+('2035101','20351','1','5','100','1','5000','5000','5000','5000','0','0','5','92','0','0','0','0','0','0','0','0','0','0','Captain Sanders - Emote on Timer OOC (Phase 1)'),
+('2035102','20351','30','0','100','1','5','20351','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Captain Sanders - Set Phase 1 on Receive AI Event A'),
+('2035103','20351','30','0','100','1','6','20351','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Captain Sanders - Set Phase 0 on Receive AI Event B'),
 -- Arcanist Doan (20352) - NSR
 -- Helcular
 ('2035301','20353','1','0','100','1','70000','70000','310000','310000','0','0','1','18041','0','0','0','0','0','0','0','0','0','0','Helcular - Conversation Sequence 1'),
@@ -23111,7 +23114,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Phin Odelic (20370) - NSR
 -- Jonathan Revah (20372) - NSR
 -- Magistrate Henry Maleb (20373) - NSR
--- Jerry Carter (20376) - NSR
+-- Jerry Carter 20376
+('2037601','20376','1','0','100','1','110000','165000','110000','165000','0','0','53','10236','0','0','0','0','0','0','0','0','0','0','Jerry Carter - Start Relay Script on Timer OOC'),
 -- Barkeep Kelly (20377) - NSR
 -- Chef Jessen 20378
 ('2037801','20378','1','5','100','1','780000','1020000','780000','1020000','0','0','51','0','0','0','22','0','0','0','0','0','0','0','Chef Jesson - Unpause Waypoints and Set Phase 0 on Timer OOC (Phase 1)'),
@@ -23119,7 +23123,10 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2037803','20378','30','0','100','1','5','20378','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Chef Jesson - Set Phase 1 on Receive AI Event A'),
 -- Bilger the Straight-laced (20379) - NSR
 -- Raleigh the True (20380) - NSR
--- Captain Edward Hanes (20400) - NSR
+-- Captain Edward Hanes 20400
+('2040001','20400','1','5','100','1','5000','5000','5000','5000','0','0','5','92','0','0','0','0','0','0','0','0','0','0','Captain Edward Hanes - Emote on Timer OOC (Phase 1)'),
+('2040002','20400','30','0','100','1','5','20400','0','0','0','0','22','1','0','0','0','0','0','0','0','0','0','0','Captain Edward Hanes - Set Phase 1 on Receive AI Event A'),
+('2040003','20400','30','0','100','1','6','20400','0','0','0','0','22','0','0','0','0','0','0','0','0','0','0','0','Captain Edward Hanes - Set Phase 0 on Receive AI Event B'),
 -- Frances Lin (20401) - NSR
 -- Zixil 20419
 ('2041901','20419','1','0','100','1','40000','60000','40000','60000','0','0','54','0','0','10205','0','0','0','0','0','0','0','0','Zixil - Random Say on Timer OOC'),
