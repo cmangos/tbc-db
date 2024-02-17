@@ -66,4 +66,5 @@ UPDATE broadcast_text SET ChatTypeID=2 WHERE Id IN (18076,18080);
 -- Caretaker Smithers
 UPDATE broadcast_text SET ChatTypeID=2 WHERE Id IN (17997,17998,17999,18011);
 UPDATE broadcast_text SET EmoteID1=1 WHERE Id IN (18009,18012);
-UPDATE `creature_equip_template` SET `equipentry1`=1485, `SpeedWalk`=1 WHERE `entry`=20363; -- original: 1117 (fishing rod?)
+UPDATE `creature_equip_template` SET `equipentry1`=1485 WHERE `entry`=20363; -- original: 1117 (fishing rod?)
+UPDATE `creature_template` SET `SpeedWalk`=1 WHERE `Entry`=20363;
