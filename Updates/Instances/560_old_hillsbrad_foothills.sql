@@ -8,7 +8,6 @@ TODO
 * apple gatherers script + gaurds near apple cart emotes (Tarren Mill)
 * Tarren Mill Horsehand movement/script and interactions
 * Helcular / Kel'Thuzad - possibly missing texts, should stop waypoints when talking
-* Caretaker Smithers script and movement
 * Tarren Mill Fisherman script + emotes
 * Innkeeper Monica missing random emote? "shakes her head at all of the commotion."
 * some creatures seem to be pooled with together with other entrys (patrols in the barracks)
@@ -1925,6 +1924,40 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (20360, 0, 38, 1883.819946, 1012.700012, 15.276500, 100, 0, 0),
 (20360, 0, 39, 1874.089966, 1021.830017, 15.740200, 100, 0, 0),
 
+-- Caretaker Smithers
+(20363, 0, 1, 1919.8694, 1014.0391, 20.042213, 100, 5000, 2036301),
+(20363, 0, 2, 1921.5907, 1004.0491, 19.631691, 100, 0, 0),
+(20363, 0, 3, 1920.5603, 999.7766, 19.011696, 100, 0, 0),
+(20363, 0, 4, 1924.5566, 995.5218, 19.71006, 100, 5000, 2036301),
+(20363, 0, 5, 1929.5927, 989.8991, 20.393776, 100, 0, 0),
+(20363, 0, 6, 1935.6606, 984.0484, 21.123981, 100, 0, 0),
+(20363, 0, 7, 1943.4469, 975.2496, 21.252644, 100, 0, 0),
+(20363, 0, 8, 1949.0729, 980.20294, 22.772175, 100, 0, 0),
+(20363, 0, 9, 1945.2955, 982.9886, 22.528156, 100, 0, 0),
+(20363, 0, 10, 1939.2311, 989.23114, 22.174519, 100, 5000, 2036301),
+(20363, 0, 11, 1934.8616, 994.15106, 21.865559, 100, 0, 0),
+(20363, 0, 12, 1938.1279, 997.93555, 22.883991, 100, 0, 0),
+(20363, 0, 13, 1944.8516, 991.9502, 23.633991, 100, 0, 0),
+(20363, 0, 14, 1951.4713, 984.99426, 23.759968, 100, 0, 0),
+(20363, 0, 15, 1954.8463, 989.21277, 24.921223, 100, 0, 0),
+(20363, 0, 16, 1951.3962, 993.43414, 24.868855, 100, 5000, 2036301),
+(20363, 0, 17, 1951.9749, 999.4719, 25.357868, 100, 0, 0),
+(20363, 0, 18, 1956.5465, 997.03485, 25.95528, 100, 0, 0),
+(20363, 0, 19, 1961.9579, 989.9653, 26.100544, 100, 0, 0),
+(20363, 0, 20, 1967.4908, 988.8749, 26.474886, 100, 0, 0),
+(20363, 0, 21, 1970.9928, 993.5809, 27.716585, 100, 0, 0),
+(20363, 0, 22, 1970.8381, 1003.7231, 28.175247, 100, 0, 0),
+(20363, 0, 23, 1969.6588, 1012.2213, 27.550247, 100, 5000, 2036302),
+(20363, 0, 24, 1970.7725, 1004.1947, 28.13059, 100, 15000, 2036303),
+(20363, 0, 25, 1969.6709, 1012.1162, 27.550247, 100, 0, 0),
+(20363, 0, 26, 1961.2242, 1026.4314, 25.099794, 100, 0, 0),
+(20363, 0, 27, 1950.4635, 1034.7577, 23.537117, 100, 0, 0),
+(20363, 0, 28, 1934.9088, 1047.05, 20.748543, 100, 0, 0),
+(20363, 0, 29, 1924.6755, 1043.0906, 21.203306, 100, 0, 0),
+(20363, 0, 30, 1914.0985, 1036.8203, 20.454527, 100, 0, 0),
+(20363, 0, 31, 1913.6925, 1027.6425, 19.6876, 100, 0, 0),
+(20363, 0, 32, 1921.0701, 1023.8725, 21.260475, 5.689773082733154296, 1000, 2036304),
+
 -- Magistrate Henry Maleb
 (20373, 0, 1, 1815.9948, 1128.528, 14.896571, 100, 0, 0),
 (20373, 0, 2, 1815.9757, 1121.9319, 14.896573, 100, 0, 0),
@@ -2626,7 +2659,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+493, 20358, 560, 3, 1911.8611, 994.13245, 16.357399, 4.9489, 86400, 86400, 0, 0), -- Renault Mograine
 (@CGUID+494, 20360, 560, 3, 1874.092, 1021.827, 15.74021, 2.388475, 86400, 86400, 0, 2), -- Herod the Bully
 (@CGUID+495, 20361, 560, 3, 1820.17, 1039.49, 18.546, 3.83779, 86400, 86400, 5, 1), -- Taelan
-(@CGUID+496, 20363, 560, 3, 1937.68, 986.571, 21.6888, 5.49948, 86400, 86400, 0, 0), -- Caretaker Smithers
+(@CGUID+496, 20363, 560, 3, 1937.68, 986.571, 21.6888, 5.49948, 86400, 86400, 0, 2), -- Caretaker Smithers
 (@CGUID+497, 20365, 560, 3, 1876.32, 1087.69, 17.7383, 4.51089, 86400, 86400, 0, 0), -- Bartolo Ginsetti
 (@CGUID+498, 20368, 560, 3, 1851.88, 961.724, 12.0402, 1.78848, 86400, 86400, 0, 0), -- Farmer Kent
 (@CGUID+499, 20370, 560, 3, 1819.11, 1022.68, 18.546, 1.6269, 86400, 86400, 0, 0), -- Phin Odelic
@@ -3264,7 +3297,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1809201,1809301,1809401,2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1784801,1784802,1784803,1809201,1809301,1809401,2037801,2037802,2037803,2040101,2040102,2035101,2035102,2035103,2036301,2036302,2036303,2036304);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1784801,0,0,0,0,0,0,0,0,0,15737,0,0,0,0,0,0,0,'Lt. Drake - say 1'),
 (1784802,0,0,20,2,1,0,0,0,0,0,0,0,0,0,0,0,0,'Lt. Drake - switch to path 1'),
@@ -3353,7 +3386,28 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (2035103, 87000, 0, 0, 0, 0, 0, 0, 0, 0, 18083, 0, 0, 0, 0, 0, 0, 0, 'Captain Sanders - Say 12'),
 (2035103, 90000, 0, 1, 273, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Sanders - Emote OneShotYes'),
 (2035103, 90000, 0, 1, 273, 0, 0, 20400, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Edward Hanes - Emote OneShotYes'),
-(2035103, 93000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Sanders - Unpause Waypoints');
+(2035103, 93000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Captain Sanders - Unpause Waypoints'),
+
+(2036301, 1000, 0, 1, 381, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Emote OneShotLoot'),
+(2036301, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 17997, 17998, 17999, 0, 0, 0, 0, 0, 'Caretaker Smithers - Random Say (textemote)'),
+
+(2036302, 1000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Emote OneShotExclamation'),
+(2036302, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 17996, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Say 1'),
+
+(2036303, 1000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Emote OneShotExclamation'),
+(2036303, 4000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.94247776, 'Caretaker Smithers - Set Orientation'),
+(2036303, 8000, 0, 1, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Emote OneShotRude'),
+
+(2036304, 0, 0, 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Pause Waypoints'),
+(2036304, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 18009, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Say 2'),
+(2036304, 4000, 0, 15, 14915, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Cast Self Visual - Sleep Until Cancelled (DND)'),
+(2036304, 4200, 0, 0, 0, 0, 0, 0, 0, 0, 18011, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Say 3 (textemote)'),
+(2036304, 4400, 0, 28, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Set Stand State - Sleep'),
+(2036304, 42000, 0, 14, 14915, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Remove Aura Self Visual - Sleep Until Cancelled (DND)'),
+(2036304, 42000, 1, 28, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Set Stand State - Sit'),
+(2036304, 45000, 0, 0, 0, 0, 0, 0, 0, 0, 18012, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Say 4'),
+(2036304, 48000, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Set Stand State - Stand'),
+(2036304, 51000, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Caretaker Smithers - Unpause Waypoints');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
