@@ -8,7 +8,6 @@ TODO
 * apple gatherers script + gaurds near apple cart emotes (Tarren Mill)
 * Tarren Mill Horsehand movement/script and interactions
 * Helcular / Kel'Thuzad - possibly missing texts, should stop waypoints when talking
-* Tarren Mill Fisherman script + emotes
 * Innkeeper Monica missing random emote? "shakes her head at all of the commotion."
 * some creatures seem to be pooled with together with other entrys (patrols in the barracks)
 * Don Carlos, Guerrero Heroic Dummy Template?
@@ -2027,6 +2026,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (18092, 0, 0, 0, 0, 0, '19817'), -- Tarren Mill Guardsman
 (18096, 0, 0, 0, 0, 0, '19818'), -- Epoch Hunter
 (18170, 0, 0, 0, 0, 0, '19817'), -- Infinite Slayer
+(18657, 0, 0, 0, 379, 0, NULL), -- Tarren Mill Fisherman
 (18887, 0, 0, 0, 0, 0, '33071'), -- Taretha
 (20342, 0, 0, 1, 379, 0, NULL), -- Hal McAllister
 (20344, 0, 0, 1, 379, 0, NULL), -- Nat Pagle
@@ -3413,7 +3413,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 
-DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10220 AND 10240;
+DELETE FROM `dbscripts_on_relay` WHERE `id` BETWEEN 10220 AND 10242;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (10220, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12742, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Brown'),
 (10221, 0, 0, 42, 0, 0, 0, 0, 0, 0, 12750, 0, 0, 0, 0, 0, 0, 0, 'Kirin Tor Mage - Equip Monster - Item, Book - Black Skull Glowing'),
@@ -3604,7 +3604,10 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10236, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18160, 0, 0, 0, 0, 0, 0, 0, 'Jerry Carter - Say 1'),
 (10236, 3000, 0, 0, 0, 0, 0, 20372, 10, 0, 18161, 0, 0, 0, 0, 0, 0, 0, 'Jonathan Revah - Say 1'),
 
--- 10237 reuse
+-- convo #1 between @CGUID+621 and @CGUID+622/@CGUID+623
+(10237, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15647, 15648, 15649, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #1 - Convo Path 1'),
+(10237, 6500, 0, 0, 0, 0, 0, 18657, @CGUID+623, 16, 15650, 15651, 15652, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #2 - Convo Path 1'),
+(10237, 13000, 0, 0, 0, 0, 0, 18657, @CGUID+622, 16, 15653, 15654, 15655, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #3 - Convo Path 1'),
 
 (10238, 0, 0, 35, 5, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen - Send AI Event A to Self (starts talk emote loop)'),
 
@@ -3618,7 +3621,16 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (10240, 6500, 0, 0, 0, 0, 0, @STRINGID+1, 10, 2048, 18202, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #4 - Say 1'),
 (10240, 14500, 0, 0, 0, 0, 0, 0, 0, 0, 18203, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #3 - Say 2'),
 (10240, 22500, 0, 0, 0, 0, 0, @STRINGID+1, 10, 2048, 18204, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #4 - Say 2'),
-(10240, 34500, 0, 0, 0, 0, 0, 0, 0, 0, 18205, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #3 - Say 3');
+(10240, 34500, 0, 0, 0, 0, 0, 0, 0, 0, 18205, 0, 0, 0, 0, 0, 0, 0, 'Hillsbrad Citizen #3 - Say 3'),
+
+-- convo #2 between @CGUID+621 and @CGUID+622/@CGUID+623
+(10241, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15656, 15657, 15658, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #1 - Convo Path 2'),
+(10241, 6500, 0, 0, 0, 0, 0, 18657, @CGUID+623, 16, 15659, 15660, 15661, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #2 - Convo Path 2'),
+(10241, 13000, 0, 0, 0, 0, 0, 18657, @CGUID+622, 16, 15662, 15663, 15664, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #3 - Convo Path 2'),
+-- convo #3 between @CGUID+621 and @CGUID+622/@CGUID+623
+(10242, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15665, 15666, 15667, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #1 - Convo Path 3'),
+(10242, 6500, 0, 0, 0, 0, 0, 18657, @CGUID+623, 16, 15668, 15669, 0, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #2 - Convo Path 3'),
+(10242, 13000, 0, 0, 0, 0, 0, 18657, @CGUID+622, 16, 15670, 15671, 15672, 0, 0, 0, 0, 0, 'Hillsbrad Fisherman #3 - Convo Path 3');
 
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
