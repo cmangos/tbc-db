@@ -1,3 +1,4 @@
 ALTER TABLE db_version CHANGE COLUMN required_s2472_01_mangos_precision_decimal required_s2475_01_mangos_spell_template bit;
 
 DROP TABLE `spell_bonus_data`;
+ALTER TABLE db_version CHANGE COLUMN required_s2475_01_mangos_spell_template required_s2476_01_mangos_spell_template_ap bit;
