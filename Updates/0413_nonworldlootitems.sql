@@ -437,3 +437,6 @@ DELETE FROM `creature_loot_template` WHERE `item` = 21037 AND `comments` = 'Crud
 DELETE FROM `creature_loot_template` WHERE `item` = 21039 AND `comments` = 'Narain\'s Turban';
 DELETE FROM `creature_loot_template` WHERE `item` = 21040 AND `comments` = 'Narain\'s Robe';
 
+-- Table 'creature_loot_template' entry 11521 (creature entry) not exist but used as loot id in DB.
+UPDATE `creature_template` SET `lootid` = 0 WHERE `entry` = 11521;
+
