@@ -1,13 +1,13 @@
--- Fix spawning of Gurok the Ursurper 
+-- Fix spawning of Gurok the Usurper 
 UPDATE gameobject_template SET size = '2' WHERE entry = '182183';
 
 -- Reguid gameobjects and fix their spawn points
 -- delete old spawns
+SET @OGUID := 157030; -- gameobjects
 DELETE FROM gameobject WHERE id = '182183' and guid IN (31670, 31671, 31672, 31673, 31674, 31677, 31678);
 DELETE FROM gameobject WHERE id = '182182' and guid = '22661';
 -- delete new used guids for safty (they are free)
 DELETE FROM gameobject WHERE guid BETWEEN @OGUID+1 AND @OGUID+8;
-SET @OGUID := 157030; -- gameobjects
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecsmin`, `spawntimesecsmax`) VALUES 
 -- Warmaul Skull despawns after 20 minutes
 (@OGUID+1, 182183, 530, 1,  -874.77618408203125, 8692.4345703125, 251.572296142578125, 0.837757468223571777, 0, 0, 0.406736373901367187, 0.913545548915863037, -1200, -1200),
@@ -23,14 +23,14 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `posit
 -- Spell SendEvent
 DELETE FROM dbscripts_on_event WHERE id = 11420;
 INSERT INTO `dbscripts_on_event` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(11420, 0, 0, 9, @OGUID+1, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Ursurper - Spawn Warmaul Skull'), -- 09:13:27.242
-(11420, 0, 0, 9, @OGUID+2, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Ursurper - Spawn Warmaul Skull'),
-(11420, 0, 0, 9, @OGUID+3, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Ursurper - Spawn Warmaul Skull'),
-(11420, 0, 0, 9, @OGUID+4, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Ursurper - Spawn Warmaul Skull'),
-(11420, 0, 0, 9, @OGUID+5, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Ursurper - Spawn Warmaul Skull'),
-(11420, 0, 0, 9, @OGUID+6, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Ursurper - Spawn Warmaul Skull'),
-(11420, 0, 0, 9, @OGUID+7, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Ursurper - Spawn Warmaul Skull'),
-(11420, 6000, 0, 10, 18182, 1200000, 0, 0, 0, 0, 0, 0, 0, 0, -879.5234, 8689.484, 251.65562, 0.34899, 'Gurok the Ursurper - Spawn Gurok'); -- 09:13:33.657
+(11420, 0, 0, 9, @OGUID+1, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Usurper - Spawn Warmaul Skull'), -- 09:13:27.242
+(11420, 0, 0, 9, @OGUID+2, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Usurper - Spawn Warmaul Skull'),
+(11420, 0, 0, 9, @OGUID+3, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Usurper - Spawn Warmaul Skull'),
+(11420, 0, 0, 9, @OGUID+4, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Usurper - Spawn Warmaul Skull'),
+(11420, 0, 0, 9, @OGUID+5, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Usurper - Spawn Warmaul Skull'),
+(11420, 0, 0, 9, @OGUID+6, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Usurper - Spawn Warmaul Skull'),
+(11420, 0, 0, 9, @OGUID+7, 1200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Gurok the Usurper - Spawn Warmaul Skull'),
+(11420, 6000, 0, 10, 18182, 1200000, 0, 0, 0, 0, 0, 0, 0, 0, -879.5234, 8689.484, 251.65562, 0.34899, 'Gurok the Usurper - Spawn Gurok'); -- 09:13:33.657
 
 UPDATE creature_template SET MovementType = '1' WHERE entry = '18182';
 
