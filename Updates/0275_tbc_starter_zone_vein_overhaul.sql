@@ -962,14 +962,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`) VALUES
 -- North Scar
 (@SGGUID+47, @GGUID+23, -1),
 (@SGGUID+47, @GGUID+24, -1),
-(@SGGUID+47, @GGUID+43, -1),
+(@SGGUID+47, @GGUID+44, -1),
 (@SGGUID+47, @GGUID+82, -1),
 (@SGGUID+47, @GGUID+89, -1),
 -- South Scar
 (@SGGUID+48, @GGUID+25, -1),
 (@SGGUID+48, @GGUID+26, -1),
 (@SGGUID+48, @GGUID+42, -1),
-(@SGGUID+48, @GGUID+44, -1),
+(@SGGUID+48, @GGUID+43, -1),
 (@SGGUID+48, @GGUID+66, -1),
 (@SGGUID+48, @GGUID+67, -1),
 (@SGGUID+48, @GGUID+109, -1),
