@@ -16,23 +16,6 @@ SET @SGGUID := 5420000; -- spawn_groups
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+17, 1, 324.55176, 178.18733, 9.621044, 100, 0, 0),
-(@CGUID+17, 2, 336.69104, 181.29048, 9.6058855, 100, 0, 0),
-(@CGUID+17, 3, 355.97595, 184.10721, 9.612866, 100, 0, 0),
-(@CGUID+17, 4, 364.6575, 187.59103, 9.593795, 100, 0, 0),
-(@CGUID+17, 5, 355.81107, 188.74825, 9.611445, 100, 0, 0),
-(@CGUID+17, 6, 343.706, 186.20348, 9.603957, 100, 0, 0),
-(@CGUID+17, 7, 322.65393, 181.08018, 9.625981, 100, 0, 0),
-(@CGUID+17, 8, 309.36154, 176.67279, 9.626833, 100, 0, 0),
-(@CGUID+19, 1, 414.42773, 189.93799, 9.59339, 100, 0, 0),
-(@CGUID+19, 2, 423.64374, 185.80287, 9.594542, 100, 0, 0),
-(@CGUID+19, 3, 436.50864, 182.92798, 9.605893, 100, 0, 0),
-(@CGUID+19, 4, 452.7311, 179.21104, 9.619894, 100, 0, 0),
-(@CGUID+19, 5, 467.72385, 174.4185, 9.61599, 100, 0, 0),
-(@CGUID+19, 6, 478.2882, 173.65736, 9.621479, 100, 0, 0),
-(@CGUID+19, 7, 470.06467, 178.68526, 9.624211, 100, 0, 0),
-(@CGUID+19, 8, 456.35074, 183.76631, 9.624776, 100, 0, 0),
-(@CGUID+19, 9, 437.40936, 188.72676, 9.612754, 100, 0, 0),
 (@CGUID+21, 1, 237.2137, -66.08345, 9.62556, 100, 0, 0),
 (@CGUID+21, 2, 238.36339, -79.17138, 9.6227, 100, 0, 0),
 (@CGUID+21, 3, 231.7169, -84.90454, 9.624776, 100, 0, 0),
@@ -50,18 +33,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+25, 3, 328.897, -188.367, -25.4252, 1.50098, 28000, 1737101),
 (@CGUID+25, 4, 328.897, -188.367, -25.4252, 1.50098, 28000, 1737101),
 (@CGUID+25, 5, 328.897, -188.367, -25.4252, 1.50098, 32000, 1737101),
-(@CGUID+35, 1, 454.405, 101.397, 9.69803, 4.36332, 5000, 1011),
-(@CGUID+35, 2, 454.405, 101.397, 9.69803, 4.36332, 7000, 1001),
-(@CGUID+35, 3, 454.405, 101.397, 9.69803, 4.36332, 9000, 1005),
-(@CGUID+35, 4, 454.405, 101.397, 9.69803, 4.36332, 3000, 1001),
-(@CGUID+44, 1, 450.437, 99.8139, 9.69946, 6.12611, 5000, 1001),
-(@CGUID+44, 2, 450.437, 99.8139, 9.69946, 6.12611, 3000, 1011),
-(@CGUID+44, 3, 450.437, 99.8139, 9.69946, 6.12611, 9000, 1001),
-(@CGUID+44, 4, 450.437, 99.8139, 9.69946, 6.12611, 5000, 1006),
-(@CGUID+86, 1, 453.979, 96.0174, 9.69831, 2.32129, 3000, 1005),
-(@CGUID+86, 2, 453.979, 96.0174, 9.69831, 2.32129, 9000, 1001),
-(@CGUID+86, 3, 453.979, 96.0174, 9.69831, 2.32129, 7000, 1011),
-(@CGUID+86, 4, 453.979, 96.0174, 9.69831, 2.32129, 11000, 1001),
 (@CGUID+174, 1, 135.97264, -92.95206, -0.9103361, 100, 0, 0),
 (@CGUID+174, 2, 98.57112, -93.5057, -18.174309, 100, 0, 0),
 (@CGUID+174, 3, 87.04167, -93.61084, -23.506758, 100, 0, 0),
@@ -76,9 +47,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+175, 6, 314.86356, -5.066976, 9.619539, 100, 0, 0),
 (@CGUID+175, 7, 325.94113, -3.506139, 9.613604, 100, 0, 0),
 (@CGUID+175, 8, 336.203, -3.257006, 9.620309, 100, 0, 0),
-(@CGUID+176, 1, 306.70996, 165.99048, 9.616598, 100, 15000, 0),
-(@CGUID+176, 2, 306.1128, 167.47755, 9.624279, 100, 0, 0),
-(@CGUID+176, 3, 300.26605, 182.17151, 9.607527, 100, 15000, 0),
+(@CGUID+176, 1, 300.26605, 182.17151, 9.607527, 100, 35000, 0), -- paus timer between 30 and 40 seconds
+(@CGUID+176, 2, 306.70996, 165.99048, 9.616599, 100, 35000, 0),
 (@CGUID+179, 1, 476.784, -93.1227, 9.55735, 3.73372, 0, 0),
 (@CGUID+179, 2, 467.336, -88.8467, 9.55295, 2.59097, 0, 0),
 (@CGUID+179, 3, 464.628, -82.5587, 9.56012, 1.83227, 0, 0),
@@ -96,18 +66,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+179, 15, 470.883, -90.6855, 9.55499, 5.28017, 0, 0),
 (@CGUID+179, 16, 477.229, -93.2723, 9.55717, 6.01216, 0, 0),
 (@CGUID+179, 17, 483.607, -88.3845, 9.55416, 0.815969, 0, 0),
-(@CGUID+186, 1, 465.83167, 102.65931, 9.617579, 100, 0, 0),
-(@CGUID+186, 2, 461.84326, 110.45399, 9.617397, 100, 0, 0),
-(@CGUID+186, 3, 456.01096, 113.43774, 9.610462, 100, 0, 0),
-(@CGUID+186, 4, 444.21097, 113.16295, 9.6138, 100, 0, 0),
-(@CGUID+186, 5, 439.22122, 109.7692, 9.614745, 100, 0, 0),
-(@CGUID+186, 6, 438.705, 101.90328, 9.61795, 100, 0, 0),
-(@CGUID+186, 7, 438.95593, 85.28889, 9.621242, 100, 0, 0),
-(@CGUID+186, 8, 435.34122, 78.87463, 9.616966, 100, 0, 0),
-(@CGUID+186, 9, 442.463, 71.65649, 9.6086645, 100, 0, 0),
-(@CGUID+186, 10, 451.94202, 71.28447, 9.6162815, 100, 0, 0),
-(@CGUID+186, 11, 461.8614, 72.601974, 9.616849, 100, 0, 0),
-(@CGUID+186, 12, 468.20193, 80.050804, 9.618986, 100, 0, 0),
 (@CGUID+200, 1, 490.932, -74.1161, 9.5538, 1.50084, 5000, 1889401),
 (@CGUID+200, 2, 487.898, -68.2115, 9.54962, 2.16764, 0, 0),
 (@CGUID+200, 3, 481.883, -63.8886, 9.54679, 2.65459, 0, 0),
@@ -154,9 +112,9 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+31, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Warlock
 (@CGUID+32, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Warlock
 (@CGUID+33, 0, 0, 1, 0, 0, '31059'), -- Shadowmoon Warlock
-(@CGUID+34, 0, 0, 1, 0, 0, '31059'), -- creature_spawn_entry
-(@CGUID+43, 0, 0, 1, 0, 0, '31059'), -- creature_spawn_entry
-(@CGUID+45, 0, 0, 1, 0, 0, '31059'), -- creature_spawn_entry
+(@CGUID+34, 0, 0, 1, 0, 0, '31059'), -- spawn_group_entry
+(@CGUID+43, 0, 0, 1, 0, 0, '31059'), -- spawn_group_entry
+(@CGUID+45, 0, 0, 1, 0, 0, '31059'), -- spawn_group_entry
 (@CGUID+47, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
 (@CGUID+48, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
 (@CGUID+49, 0, 0, 1, 0, 0, '8876 31059'), -- Shadowmoon Adept
@@ -175,7 +133,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+79, 0, 0, 0, 333, 0, NULL), -- Felguard Annihilator
 (@CGUID+81, 0, 0, 0, 333, 0, NULL), -- Felguard Annihilator
 (@CGUID+85, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
-(@CGUID+87, 0, 0, 1, 0, 0, '31059'), -- creature_spawn_entry
+(@CGUID+87, 0, 0, 1, 0, 0, '31059'), -- spawn_group_entry
 (@CGUID+88, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
 (@CGUID+90, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
 (@CGUID+92, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
@@ -193,28 +151,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (21174, 0, 0, 1, 0, 0, '30205'); -- Magtheridon
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+16, @CGUID+17, 1679), -- Laughing Skull Enforcer -> Laughing Skull Enforcer
-(@CGUID+65, @CGUID+85, 1155), -- Nascent Fel Orc -> Shadowmoon Technician
-(@CGUID+88, @CGUID+85, 1155), -- Shadowmoon Technician -> Shadowmoon Technician
-(@CGUID+67, @CGUID+92, 1155), -- Nascent Fel Orc -> Shadowmoon Technician
-(@CGUID+90, @CGUID+92, 1155), -- Shadowmoon Technician -> Shadowmoon Technician
-(@CGUID+32, @CGUID+68, 1155), -- Shadowmoon Warlock -> Nascent Fel Orc
-(@CGUID+45, @CGUID+68, 1155), -- creature_spawn_entry -> Nascent Fel Orc
-(@CGUID+33, @CGUID+75, 1155), -- Shadowmoon Warlock -> Nascent Fel Orc
-(@CGUID+34, @CGUID+75, 1155), -- creature_spawn_entry -> Nascent Fel Orc
-(@CGUID+18, @CGUID+19, 1679), -- Laughing Skull Enforcer -> Laughing Skull Enforcer
-(@CGUID+73, @CGUID+94, 1155), -- Nascent Fel Orc -> Shadowmoon Technician
-(@CGUID+95, @CGUID+94, 1155), -- Shadowmoon Technician -> Shadowmoon Technician
-(@CGUID+189, @CGUID+186, 1679), -- Laughing Skull Legionnaire -> Laughing Skull Warden
-(@CGUID+190, @CGUID+186, 1679), -- Laughing Skull Legionnaire -> Laughing Skull Warden
-(@CGUID+44, @CGUID+35, 1155), -- spawn_group_spawn -> spawn_group_spawn
-(@CGUID+86, @CGUID+35, 1155), -- spawn_group_spawn -> spawn_group_spawn
-(@CGUID+89, @CGUID+91, 1155), -- Shadowmoon Technician -> Shadowmoon Technician
-(@CGUID+93, @CGUID+91, 1155), -- Shadowmoon Technician -> Shadowmoon Technician
-(@CGUID+31, @CGUID+66, 1155), -- Shadowmoon Warlock -> Nascent Fel Orc
-(@CGUID+87, @CGUID+66, 1155), -- creature_spawn_entry -> Nascent Fel Orc
-(@CGUID+26, @CGUID+144, 1155), -- Shadowmoon Warlock -> Fel Orc Neophyte
-(@CGUID+43, @CGUID+144, 1155), -- creature_spawn_entry -> Fel Orc Neophyte
 (@CGUID+28, @CGUID+30, 1679), -- Shadowmoon Warlock -> Shadowmoon Warlock
 (@CGUID+209, @CGUID+30, 1679), -- Hellfire Familiar -> Shadowmoon Warlock
 (@CGUID+210, @CGUID+30, 1679), -- Hellfire Familiar -> Shadowmoon Warlock
@@ -252,10 +188,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+13, 17370, 542, 3, 284.57366943359375, -8.7647562026977539, 8.920128822326660156, 3.560471534729003906, 7200, 7200, 0, 0), -- Laughing Skull Enforcer
 (@CGUID+14, 17370, 542, 3, 323.928558349609375, 28.14127349853515625, 9.704203605651855468, 4.747295379638671875, 7200, 7200, 0, 0), -- Laughing Skull Enforcer
 (@CGUID+15, 17370, 542, 3, 331.069061279296875, 28.0790252685546875, 9.704688072204589843, 4.677482128143310546, 7200, 7200, 0, 0), -- Laughing Skull Enforcer
-(@CGUID+16, 17370, 542, 3, 322.653931, 181.080185, 9.619082, 0, 7200, 7200, 0, 0), -- Laughing Skull Enforcer
-(@CGUID+17, 17370, 542, 3, 324.55176, 178.18733, 9.621044, 0, 7200, 7200, 0, 2), -- Laughing Skull Enforcer
-(@CGUID+18, 17370, 542, 3, 414.269836, 186.942139, 9.592139, 0, 7200, 7200, 0, 0), -- Laughing Skull Enforcer
-(@CGUID+19, 17370, 542, 3, 414.42773, 189.93799, 9.59339, 0, 7200, 7200, 0, 2), -- Laughing Skull Enforcer
+(@CGUID+16, 17370, 542, 3, 357.117, 186.741, 9.60855, 3.66015, 7200, 7200, 0, 0), -- Laughing Skull Enforcer
+(@CGUID+17, 17370, 542, 3, 355.976, 184.107, 9.61287, 0.145034, 7200, 7200, 0, 0), -- Laughing Skull Enforcer
+(@CGUID+18, 17370, 542, 3, 478.288, 173.657, 9.62148, 5.98159, 7200, 7200, 0, 0), -- Laughing Skull Enforcer
+(@CGUID+19, 17370, 542, 3, 479.179, 176.522, 9.61884, 5.98158, 7200, 7200, 0, 0), -- Laughing Skull Enforcer
 (@CGUID+20, 0, 542, 3, 351.593, 69.7604, 9.61397, 5.0562, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+21, 17371, 542, 3, 237.2137, -66.08345, 9.62556, 0, 7200, 7200, 0, 4), -- spawn_group_entry
 (@CGUID+22, 17371, 542, 3, 327.04425, -11.012064, 9.426495, 0, 7200, 7200, 0, 4), -- Shadowmoon Warlock
@@ -270,8 +206,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+31, 17371, 542, 3, 467.006256103515625, 63.60230255126953125, 9.694701194763183593, 5.235987663269042968, 7200, 7200, 0, 0), -- Shadowmoon Warlock
 (@CGUID+32, 17371, 542, 3, 369.572662353515625, 188.5665130615234375, 9.685747146606445312, 0.628318548202514648, 7200, 7200, 0, 0), -- Shadowmoon Warlock
 (@CGUID+33, 17371, 542, 3, 399.38653564453125, 189.72723388671875, 9.686238288879394531, 0.261799395084381103, 7200, 7200, 0, 0), -- Shadowmoon Warlock
-(@CGUID+34, 0, 542, 3, 408.150238037109375, 185.319610595703125, 9.680528640747070312, 1.570796370506286621, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+35, 0, 542, 3, 454.40496826171875, 101.3967132568359375, 9.698034286499023437, 4.363323211669921875, 7200, 7200, 0, 2), -- spawn_group_spawn
+(@CGUID+34, 0, 542, 3, 408.150238037109375, 185.319610595703125, 9.680528640747070312, 1.570796370506286621, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+35, 0, 542, 3, 454.40496826171875, 101.3967132568359375, 9.698034286499023437, 4.363323211669921875, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+36, 17377, 542, 3, 326.502899169921875, -86.0027542114257812, -24.5770149230957031, 3.59537816047668457, 604800, 604800, 0, 0), -- Keli'dan the Breaker
 (@CGUID+37, 17380, 542, 3, 455.335723876953125, -1.82919394969940185, 9.629873275756835937, 1.431169986724853515, 604800, 604800, 0, 0), -- Broggok
 (@CGUID+38, 17381, 542, 3, 328.126708984375, 128.865631103515625, 9.618732452392578125, 5.0113372802734375, 604800, 604800, 3, 1), -- The Maker
@@ -279,9 +215,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+40, 17395, 542, 3, 312.673095703125, 9.930631637573242187, 9.701819419860839843, 0.471238881349563598, 7200, 7200, 0, 0), -- Shadowmoon Summoner
 (@CGUID+41, 17395, 542, 3, 336.492767333984375, 10.28137493133544921, 9.702851295471191406, 5.8817596435546875, 7200, 7200, 0, 0), -- Shadowmoon Summoner
 (@CGUID+42, 17395, 542, 3, 336.21966552734375, 4.42312479019165039, 9.703363418579101562, 1.29154360294342041, 7200, 7200, 0, 0), -- Shadowmoon Summoner
-(@CGUID+43, 0, 542, 3, 440.664703369140625, 61.70375442504882812, 9.692664146423339843, 4.904375076293945312, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+44, 0, 542, 3, 450.437286376953125, 99.813873291015625, 9.699462890625, 6.126105785369873046, 7200, 7200, 0, 2), -- spawn_group_spawn
-(@CGUID+45, 0, 542, 3, 382.414276123046875, 190.2224273681640625, 9.685167312622070312, 2.652900457382202148, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+43, 0, 542, 3, 440.664703369140625, 61.70375442504882812, 9.692664146423339843, 4.904375076293945312, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+44, 0, 542, 3, 450.437286376953125, 99.813873291015625, 9.699462890625, 6.126105785369873046, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+45, 0, 542, 3, 382.414276123046875, 190.2224273681640625, 9.685167312622070312, 2.652900457382202148, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+46, 0, 542, 3, 330.141143798828125, 66.27161407470703125, 9.697047233581542968, 2.094395160675048828, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+47, 17397, 542, 3, 7.439785003662109375, -82.995849609375, -41.247039794921875, 3.822271108627319335, 7200, 7200, 0, 0), -- Shadowmoon Adept
 (@CGUID+48, 17397, 542, 3, -13.854771614074707, -80.9222183227539062, -41.2514877319335937, 5.742133140563964843, 7200, 7200, 0, 0), -- Shadowmoon Adept
@@ -322,8 +258,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+83, 17414, 542, 3, 338.039459228515625, 96.26967620849609375, 9.701704978942871093, 1.396263360977172851, 7200, 7200, 0, 0), -- Shadowmoon Technician
 (@CGUID+84, 17414, 542, 3, 316.03106689453125, 95.69887542724609375, 9.701928138732910156, 5.550147056579589843, 7200, 7200, 0, 0), -- Shadowmoon Technician
 (@CGUID+85, 17414, 542, 3, 318.781402587890625, 185.2650604248046875, 9.698854446411132812, 2.007128715515136718, 7200, 7200, 0, 0), -- Shadowmoon Technician
-(@CGUID+86, 0, 542, 3, 453.978729248046875, 96.01741790771484375, 9.698311805725097656, 2.321287870407104492, 7200, 7200, 0, 2), -- spawn_group_spawn
-(@CGUID+87, 0, 542, 3, 472.297149658203125, 63.81904983520507812, 9.692515373229980468, 4.729842185974121093, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+86, 0, 542, 3, 453.978729248046875, 96.01741790771484375, 9.698311805725097656, 2.321287870407104492, 7200, 7200, 0, 0), -- spawn_group_entry
+(@CGUID+87, 0, 542, 3, 472.297149658203125, 63.81904983520507812, 9.692515373229980468, 4.729842185974121093, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+88, 17414, 542, 3, 331.8583984375, 191.021331787109375, 9.687047004699707031, 1.797689080238342285, 7200, 7200, 0, 0), -- Shadowmoon Technician
 (@CGUID+89, 17414, 542, 3, 483.04931640625, 94.2425079345703125, 9.707494735717773437, 1.01229095458984375, 7200, 7200, 0, 0), -- Shadowmoon Technician
 (@CGUID+90, 17414, 542, 3, 346.391510009765625, 198.9452056884765625, 11.10355091094970703, 1.623156189918518066, 7200, 7200, 0, 0), -- Shadowmoon Technician
@@ -412,18 +348,18 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+173, 17491, 542, 3, 170.166, -93.7266, 9.6934, 1.76685, 7200, 7200, 8, 1), -- Laughing Skull Rogue
 (@CGUID+174, 17491, 542, 3, 135.97264, -92.95206, -0.9103361, 4.9218282, 7200, 7200, 0, 2), -- Laughing Skull Rogue
 (@CGUID+175, 17491, 542, 3, 306.339, -4.02884, 9.62585, 6.15417, 7200, 7200, 0, 2), -- Laughing Skull Rogue
-(@CGUID+176, 17491, 542, 3, 300.266, 182.171, 9.60753, 1.94978, 7200, 7200, 0, 2), -- Laughing Skull Rogue
-(@CGUID+177, 17491, 542, 3, 482.555, 175.603, 9.70426, 2.86234, 7200, 7200, 0, 0), -- Laughing Skull Rogue
+(@CGUID+176, 17491, 542, 3, 300.26605, 182.17151, 9.607527, 1.94949, 7200, 7200, 0, 2), -- Laughing Skull Rogue
+(@CGUID+177, 17491, 542, 3, 482.55462, 175.602859, 9.704257, 2.86233, 7200, 7200, 0, 0), -- Laughing Skull Rogue
 (@CGUID+178, 17491, 542, 3, 428.906, -20.6582, 9.63164, 0.750492, 7200, 7200, 0, 0), -- Laughing Skull Rogue
 (@CGUID+179, 17491, 542, 3, 483.723, -88.2442, 9.55027, 3.0605, 7200, 7200, 0, 2), -- Laughing Skull Rogue
 (@CGUID+180, 17491, 542, 3, 405.187, -63.8279, 9.69997, 5.5676, 7200, 7200, 0, 0), -- Laughing Skull Rogue
 -- 181 - 184
 (@CGUID+185, 17624, 542, 3, 310.4854, 76.86802, 9.623767, 0.8873, 7200, 7200, 0, 0), -- Laughing Skull Warden
-(@CGUID+186, 17624, 542, 3, 466.618, 95.1607, 9.61807, 1.67525, 7200, 7200, 0, 2), -- Laughing Skull Warden
+(@CGUID+186, 17624, 542, 3, 460.953, 110.909, 9.61634, 2.66872, 7200, 7200, 0, 0), -- Laughing Skull Warden
 (@CGUID+187, 17626, 542, 3, 247.787872314453125, -28.022470474243164, 7.035767555236816406, 4.171336650848388671, 7200, 7200, 0, 0), -- Laughing Skull Legionnaire
 (@CGUID+188, 17626, 542, 3, 278.640533447265625, -0.40290799736976623, 8.021465301513671875, 3.368485450744628906, 7200, 7200, 0, 0), -- Laughing Skull Legionnaire
-(@CGUID+189, 17626, 542, 3, 467.767, 94.1342, 9.61823, 1.62005, 7200, 7200, 0, 0), -- Laughing Skull Legionnaire
-(@CGUID+190, 17626, 542, 3, 465.385, 93.9836, 9.61759, 1.57843, 7200, 7200, 0, 0), -- Laughing Skull Legionnaire
+(@CGUID+189, 17626, 542, 3, 459.173, 109.087, 9.61681, 2.04374, 7200, 7200, 0, 0), -- Laughing Skull Legionnaire
+(@CGUID+190, 17626, 542, 3, 462.575, 108.493, 9.61743, 2.30106, 7200, 7200, 0, 0), -- Laughing Skull Legionnaire
 (@CGUID+191, 17626, 542, 3, 352.875, 72.4726, 9.615, 5.0562, 7200, 7200, 0, 0), -- Laughing Skull Legionnaire
 (@CGUID+192, 17626, 542, 3, 307.906, 78.3996, 9.62325, 1.18552, 7200, 7200, 0, 0), -- Laughing Skull Legionnaire
 (@CGUID+193, 17653, 542, 3, 320.75, -63.6120796203613281, -24.6360912322998046, 4.886921882629394531, 7200, 7200, 0, 0), -- Shadowmoon Channeler
@@ -447,11 +383,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+212, 21174, 542, 3, 320.911529541015625, -83.0625381469726562, -133.306869506835937, 3.001966238021850585, 7200, 7200, 0, 0); -- Magtheridon
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
-(@CGUID+34, 17371), (@CGUID+34, 17395), -- Shadowmoon Warlock, Shadowmoon Summoner
-(@CGUID+39, 17371), (@CGUID+39, 17395), (@CGUID+39, 17414), -- Shadowmoon Warlock, Shadowmoon Summoner, Shadowmoon Technician
-(@CGUID+43, 17371), (@CGUID+43, 17395), -- Shadowmoon Warlock, Shadowmoon Summoner
-(@CGUID+45, 17371), (@CGUID+45, 17395), -- Shadowmoon Warlock, Shadowmoon Summoner
-(@CGUID+87, 17395), (@CGUID+87, 17414); -- Shadowmoon Summoner, Shadowmoon Technician
+(@CGUID+39, 17371), (@CGUID+39, 17395), (@CGUID+39, 17414); -- Shadowmoon Warlock, Shadowmoon Summoner, Shadowmoon Technician
 
 -- ===========
 -- GAMEOBJECTS
@@ -539,15 +471,31 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+17, 'Blood Furnace - Group 016 - Shadowmoon Technician | spawn_group_entry', 0, 0, 0, 0, 1, 0),
 (@SGGUID+18, 'Blood Furnace - Group 017 - Shadowmoon Technician | spawn_group_entry', 0, 0, 0, 0, 1, 0),
 (@SGGUID+19, 'Blood Furnace - Group 018 - spawn_group_entry | Laughing Skull Legionnaire - Patrol 001', 0, 0, 0, 0, 1, 0),
-(@SGGUID+20, 'Blood Furnace - Group 019 - Laughing Skull Legionnaire | Laughing Skull Warden - Patrol 002', 0, 0, 0, 0, 1, 0);
-
+(@SGGUID+20, 'Blood Furnace - Group 019 - Laughing Skull Legionnaire | Laughing Skull Warden - Patrol 002', 0, 0, 0, 0, 1, 0),
+(@SGGUID+21, 'Blood Furnace - Group 020 - Nascent Fel Orc | Shadowmoon Technician (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+22, 'Blood Furnace - Group 021 - Laughing Skull Enforcer (2) - Patrol 003', 0, 0, 0, 0, 1, 0),
+(@SGGUID+23, 'Blood Furnace - Group 022 - Nascent Fel Orc | Shadowmoon Technician (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+24, 'Blood Furnace - Group 023 - Nascent Fel Orc | Shadowmoon Warlock | spawn_group_entry', 0, 0, 0, 0, 1, 0),
+(@SGGUID+25, 'Blood Furnace - Group 024 - Nascent Fel Orc | Shadowmoon Warlock | spawn_group_entry ', 0, 0, 0, 0, 1, 0),
+(@SGGUID+26, 'Blood Furnace - Group 025 - Laughing Skull Enforcer (2) - Patrol 004', 0, 0, 0, 0, 1, 0),
+(@SGGUID+27, 'Blood Furnace - Group 026 - Nascent Fel Orc | Shadowmoon Technician (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+28, 'Blood Furnace - Group 027 - Shadowmoon Technician (3)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+29, 'Blood Furnace - Group 028 - spawn_group_entry', 0, 0, 0, 0, 1, 0),
+(@SGGUID+30, 'Blood Furnace - Group 029 - Fel Orc Neophyte | Shadowmoon Warlock | spawn_group_entry', 0, 0, 0, 0, 1, 0),
+(@SGGUID+31, 'Blood Furnace - Group 030 - Fel Orc Neophyte | Shadowmoon Warlock | spawn_group_entry', 0, 0, 0, 0, 1, 0),
+(@SGGUID+32, 'Blood Furnace - Group 031 - Laughing Skull Warden | Laughing Skull Legionnaire (2) - Patrol 005', 0, 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+7, 17371, 0, 0, 0), (@SGGUID+7, 17395, 0, 0, 0), -- Shadowmoon Warlock, Shadowmoon Summoner
 (@SGGUID+16, 17371, 0, 0, 0), (@SGGUID+16, 17395, 0, 0, 0), (@SGGUID+16, 17414, 0, 0, 0), -- Shadowmoon Warlock, Shadowmoon Summoner, Shadowmoon Technician
 (@SGGUID+17, 17371, 0, 0, 0), (@SGGUID+17, 17395, 0, 0, 0), (@SGGUID+17, 17414, 0, 0, 0), -- Shadowmoon Warlock, Shadowmoon Summoner, Shadowmoon Technician
 (@SGGUID+18, 17371, 0, 0, 0), (@SGGUID+18, 17395, 0, 0, 0), (@SGGUID+18, 17414, 0, 0, 0),  -- Shadowmoon Warlock, Shadowmoon Summoner, Shadowmoon Technician
-(@SGGUID+19, 17371, 0, 0, 0), (@SGGUID+19, 17414, 0, 0, 0);  -- Shadowmoon Warlock, Shadowmoon Technician
+(@SGGUID+19, 17371, 0, 0, 0), (@SGGUID+19, 17414, 0, 0, 0),  -- Shadowmoon Warlock, Shadowmoon Technician
+(@SGGUID+24, 17371, 0, 0, 0), (@SGGUID+24, 17395, 0, 0, 0),  -- Shadowmoon Warlock, Shadowmoon Summoner
+(@SGGUID+25, 17371, 0, 0, 0), (@SGGUID+25, 17395, 0, 0, 0),  -- Shadowmoon Warlock, Shadowmoon Summoner
+(@SGGUID+29, 17371, 0, 1, 0), (@SGGUID+29, 17395, 0, 1, 0), (@SGGUID+29, 17414, 0, 1, 0),  -- Shadowmoon Warlock, Shadowmoon Summoner, Shadowmoon Technician
+(@SGGUID+30, 17395, 0, 1, 0), (@SGGUID+30, 17414, 0, 1, 0), -- Shadowmoon Summoner, Shadowmoon Technician
+(@SGGUID+31, 17395, 0, 1, 0), (@SGGUID+31, 17414, 0, 1, 0); -- Shadowmoon Summoner, Shadowmoon Technician
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+9, 0, 0), -- Laughing Skull Enforcer - left
@@ -610,7 +558,53 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+19, @CGUID+191, 1, 0), -- Laughing Skull Legionnaire
 
 (@SGGUID+20, @CGUID+185, 0, 0), -- Laughing Skull Warden
-(@SGGUID+20, @CGUID+192, 1, 0); -- Laughing Skull Legionnaire
+(@SGGUID+20, @CGUID+192, 1, 0), -- Laughing Skull Legionnaire
+
+(@SGGUID+21, @CGUID+65, 0, 0), -- Nascent Fel Orc
+(@SGGUID+21, @CGUID+85, 1, 0), -- Shadowmoon Technician
+(@SGGUID+21, @CGUID+88, 2, 0), -- Shadowmoon Technician
+
+(@SGGUID+22, @CGUID+16, 0, 0), -- Laughing Skull Enforcer
+(@SGGUID+22, @CGUID+17, 1, 0), -- Laughing Skull Enforcer
+
+(@SGGUID+23, @CGUID+67, 0, 0), -- Nascent Fel Orc
+(@SGGUID+23, @CGUID+90, 1, 0), -- Shadowmoon Technician
+(@SGGUID+23, @CGUID+92, 2, 0), -- Shadowmoon Technician
+
+(@SGGUID+24, @CGUID+68, 0, 0), -- Nascent Fel Orc
+(@SGGUID+24, @CGUID+32, 1, 0), -- Shadowmoon Warlock
+(@SGGUID+24, @CGUID+45, 2, 0), -- spawn_group_entry
+
+(@SGGUID+25, @CGUID+75, 0, 0), -- Nascent Fel Orc
+(@SGGUID+25, @CGUID+33, 1, 0), -- Shadowmoon Warlock
+(@SGGUID+25, @CGUID+34, 2, 0), -- spawn_group_entry
+
+(@SGGUID+26, @CGUID+18, 0, 0), -- Laughing Skull Enforcer
+(@SGGUID+26, @CGUID+19, 1, 0), -- Laughing Skull Enforcer
+
+(@SGGUID+27, @CGUID+73, 0, 0), -- Nascent Fel Orc
+(@SGGUID+27, @CGUID+94, 1, 0), -- Shadowmoon Technician
+(@SGGUID+27, @CGUID+95, 2, 0), -- Shadowmoon Technician#
+
+(@SGGUID+28, @CGUID+89, 0, 0), -- Shadowmoon Technician
+(@SGGUID+28, @CGUID+91, 1, 0), -- Shadowmoon Technician
+(@SGGUID+28, @CGUID+93, 2, 0), -- Shadowmoon Technician
+
+(@SGGUID+29, @CGUID+35, 0, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+44, 1, 0), -- spawn_group_entry
+(@SGGUID+29, @CGUID+86, 2, 0), -- spawn_group_entry
+
+(@SGGUID+30, @CGUID+66, 0, 0), -- Nascent Fel Orc
+(@SGGUID+30, @CGUID+87, 1, 0), -- spawn_group_entry
+(@SGGUID+30, @CGUID+31, 2, 0), -- Shadowmoon Warlock
+
+(@SGGUID+31, @CGUID+144, 0, 0), -- Nascent Fel Orc
+(@SGGUID+31, @CGUID+43, 1, 0), -- spawn_group_entry
+(@SGGUID+31, @CGUID+26, 2, 0), -- Shadowmoon Warlock
+
+(@SGGUID+32, @CGUID+186, 0, 0), -- Laughing Skull Warden
+(@SGGUID+32, @CGUID+189, 1, 0), -- Laughing Skull Legionnaire
+(@SGGUID+32, @CGUID+190, 2, 0); -- Laughing Skull Legionnaire
 
 -- Rogue spawn_group - needs more testing
 -- (@SGGUID+5, @CGUID+174, 0, 0), -- Laughing Skull Rogue patroling on first stairs
@@ -620,11 +614,17 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+19, 2, 3, 0, @SGGUID+19, 2, 'Blood Furnace - Group 018 - Shadowmoon Technician | Laughing Skull Legionnaire - Patrol 001'),
-(@SGGUID+20, 2, 3, 0, @SGGUID+20, 2, 'Blood Furnace - Group 019 - Laughing Skull Warden | Laughing Skull Legionnaire - Patrol 002');
+(@SGGUID+20, 2, 3, 0, @SGGUID+20, 2, 'Blood Furnace - Group 019 - Laughing Skull Warden | Laughing Skull Legionnaire - Patrol 002'),
+(@SGGUID+22, 2, 3, 0, @SGGUID+22, 2, 'Blood Furnace - Group 021 - Laughing Skull Enforcer (2) - Patrol 003'),
+(@SGGUID+26, 2, 3, 0, @SGGUID+26, 2, 'Blood Furnace - Group 025 - Laughing Skull Enforcer (2) - Patrol 004'),
+(@SGGUID+32, 4, 3, 0, @SGGUID+32, 2, 'Blood Furnace - Group 031 - Laughing Skull Warden | Laughing Skull Legionnaire (2) - Patrol 005');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+19, 'Blood Furnace - Group 018 - Shadowmoon Technician | Laughing Skull Legionnaire - Patrol 001'),
-(@SGGUID+20, 'Blood Furnace - Group 020 - Laughing Skull Warden | Laughing Skull Legionnaire - Patrol 002');
+(@SGGUID+20, 'Blood Furnace - Group 020 - Laughing Skull Warden | Laughing Skull Legionnaire - Patrol 002'),
+(@SGGUID+22, 'Blood Furnace - Group 021 - Laughing Skull Enforcer (2) - Patrol 003'),
+(@SGGUID+26, 'Blood Furnace - Group 025 - Laughing Skull Enforcer (2) - Patrol 004'),
+(@SGGUID+32, 'Blood Furnace - Group 031 - Laughing Skull Warden | Laughing Skull Legionnaire (2) - Patrol 005');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+19, 1, 351.59265, 69.76043, 9.613965, 100, 0, 0),
@@ -647,8 +647,36 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+20, 7, 310.36923, 65.03784, 9.618994, 100, 0, 0),
 (@SGGUID+20, 8, 305.49063, 62.037125, 9.615655, 100, 0, 0),
 (@SGGUID+20, 9, 305.57996, 68.605995, 9.618317, 100, 0, 0),
-(@SGGUID+20, 10, 310.4854, 76.86802, 9.623767, 100, 0, 0);
-
+(@SGGUID+20, 10, 310.4854, 76.86802, 9.623767, 100, 0, 0),
+(@SGGUID+22, 1, 364.6575, 187.59103, 9.593795, 100, 0, 0),
+(@SGGUID+22, 2, 355.81107, 188.74825, 9.611445, 100, 0, 0),
+(@SGGUID+22, 3, 343.706, 186.20348, 9.603957, 100, 0, 0),
+(@SGGUID+22, 4, 322.65393, 181.08018, 9.625981, 100, 0, 0),
+(@SGGUID+22, 5, 309.36154, 176.67279, 9.626834, 100, 0, 0),
+(@SGGUID+22, 6, 324.55176, 178.18733, 9.621043, 100, 0, 0),
+(@SGGUID+22, 7, 336.69104, 181.29048, 9.605886, 100, 0, 0),
+(@SGGUID+22, 8, 355.97595, 184.10721, 9.612866, 100, 0, 0),
+(@SGGUID+26, 1, 470.06467, 178.68526, 9.624211, 100, 0, 0),
+(@SGGUID+26, 2, 456.35074, 183.76631, 9.624776, 100, 0, 0),
+(@SGGUID+26, 3, 437.40936, 188.72676, 9.612754, 100, 0, 0),
+(@SGGUID+26, 4, 414.42773, 189.93799, 9.59339, 100, 0, 0),
+(@SGGUID+26, 5, 423.64374, 185.80287, 9.594542, 100, 0, 0),
+(@SGGUID+26, 6, 436.50864, 182.92798, 9.605893, 100, 0, 0),
+(@SGGUID+26, 7, 452.7311, 179.21104, 9.619894, 100, 0, 0),
+(@SGGUID+26, 8, 467.72385, 174.4185, 9.61599, 100, 0, 0),
+(@SGGUID+26, 9, 478.2882, 173.65736, 9.621479, 100, 0, 0), 
+(@SGGUID+32, 1, 444.21097, 113.16295, 9.6138, 100, 0, 0),
+(@SGGUID+32, 2, 439.22122, 109.7692, 9.614745, 100, 0, 0),
+(@SGGUID+32, 3, 438.705, 101.90328, 9.61795, 100, 0, 0),
+(@SGGUID+32, 4, 438.95593, 85.28889, 9.621243, 100, 0, 0),
+(@SGGUID+32, 5, 435.34122, 78.87463, 9.616966, 100, 0, 0),
+(@SGGUID+32, 6, 442.463, 71.65649, 9.6086645, 100, 0, 0),
+(@SGGUID+32, 7, 451.94202, 71.28447, 9.6162815, 100, 0, 0),
+(@SGGUID+32, 8, 461.8614, 72.601974, 9.616849, 100, 0, 0),
+(@SGGUID+32, 9, 468.20193, 80.050804, 9.618986, 100, 0, 0),
+(@SGGUID+32, 10, 465.83167, 102.65931, 9.617579, 100, 0, 0),
+(@SGGUID+32, 11, 461.84326, 110.45399, 9.617397, 100, 0, 0),
+(@SGGUID+32, 12, 456.01096, 113.43774, 9.610462, 100, 0, 0);
 
 -- =======
 -- POOLING
