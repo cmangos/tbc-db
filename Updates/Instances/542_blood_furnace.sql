@@ -67,6 +67,14 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17380, 0, 7, 456.328, 78.3051, 9.61487, 1.53589, 0, 0);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
+(@CGUID+6, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
+(@CGUID+7, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
+(@CGUID+9, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
+(@CGUID+10, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
+(@CGUID+11, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
+(@CGUID+12, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
+(@CGUID+14, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
+(@CGUID+15, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
 (@CGUID+16, 0, 0, 1, 0, 0, NULL), -- Laughing Skull Enforcer
 (@CGUID+17, 0, 0, 1, 0, 0, NULL), -- Laughing Skull Enforcer
 (@CGUID+18, 0, 0, 1, 0, 0, NULL), -- Laughing Skull Enforcer
@@ -446,7 +454,7 @@ INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`
 (@SGGUID+19, 17371, 0, 0, 0), (@SGGUID+19, 17414, 0, 0, 0),  -- Shadowmoon Warlock, Shadowmoon Technician
 (@SGGUID+24, 17371, 0, 0, 0), (@SGGUID+24, 17395, 0, 0, 0),  -- Shadowmoon Warlock, Shadowmoon Summoner
 (@SGGUID+25, 17371, 0, 0, 0), (@SGGUID+25, 17395, 0, 0, 0),  -- Shadowmoon Warlock, Shadowmoon Summoner
-(@SGGUID+29, 17371, 0, 1, 0), (@SGGUID+29, 17395, 0, 1, 0), (@SGGUID+29, 17414, 0, 1, 0),  -- Shadowmoon Warlock, Shadowmoon Summoner, Shadowmoon Technician
+(@SGGUID+29, 17371, 0, 0, 0), (@SGGUID+29, 17395, 0, 0, 0), (@SGGUID+29, 17414, 0, 0, 0),  -- Shadowmoon Warlock, Shadowmoon Summoner, Shadowmoon Technician
 (@SGGUID+30, 17395, 0, 1, 0), (@SGGUID+30, 17414, 0, 1, 0), -- Shadowmoon Summoner, Shadowmoon Technician
 (@SGGUID+31, 17395, 0, 1, 0), (@SGGUID+31, 17414, 0, 1, 0); -- Shadowmoon Summoner, Shadowmoon Technician
 
