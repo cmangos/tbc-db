@@ -671,38 +671,40 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+32, 10, 465.83167, 102.65931, 9.617579, 100, 0, 0),
 (@SGGUID+32, 11, 461.84326, 110.45399, 9.617397, 100, 0, 0),
 (@SGGUID+32, 12, 456.01096, 113.43774, 9.610462, 100, 0, 0),
-(@SGGUID+34, 1, 492.4174, -9.293329, 9.563409, 100, 0, 0),
+
+(@SGGUID+34, 1, 492.4174, -9.293329, 9.563409, 100, 5000, 1889401),
 (@SGGUID+34, 2, 488.8029, -16.216816, 9.560678, 100, 0, 0),
 (@SGGUID+34, 3, 488.5971, -27.189554, 9.550882, 100, 0, 0),
 (@SGGUID+34, 4, 489.5562, -42.582874, 9.557194, 100, 0, 0),
-(@SGGUID+34, 5, 487.2237, -46.331753, 9.560828, 100, 0, 0),
+(@SGGUID+34, 5, 487.2237, -46.331753, 9.560828, 100, 5000, 1889401),
 (@SGGUID+34, 6, 475.7844, -49.514557, 9.563148, 100, 0, 0),
 (@SGGUID+34, 7, 469.93903, -49.56061, 9.562215, 100, 0, 0),
 (@SGGUID+34, 8, 465.9425, -46.190033, 9.562853, 100, 0, 0),
 (@SGGUID+34, 9, 464.31836, -40.05853, 9.5648985, 100, 0, 0),
 (@SGGUID+34, 10, 464.1594, -32.407433, 9.540473, 100, 0, 0),
 (@SGGUID+34, 11, 467.5221, -27.171303, 9.551024, 100, 0, 0),
-(@SGGUID+34, 12, 470.29358, -26.362574, 9.55173, 100, 0, 0),
+(@SGGUID+34, 12, 470.29358, -26.362574, 9.55173, 100, 5000, 1889401),
 (@SGGUID+34, 13, 482.69983, -23.873701, 9.553878, 100, 0, 0),
 (@SGGUID+34, 14, 487.17227, -18.626303, 9.558537, 100, 0, 0),
 (@SGGUID+34, 15, 490.11685, -13.089669, 9.563461, 100, 0, 0),
+
 (@SGGUID+35, 6, 491.30783, -83.39267, 9.559532, 100, 0, 0),
 (@SGGUID+35, 7, 491.1338, -77.10125, 9.556976, 100, 0, 0),
 (@SGGUID+35, 8, 489.0302, -70.4867, 9.547089, 100, 0, 0),
 (@SGGUID+35, 9, 485.46555, -65.57949, 9.558637, 100, 0, 0),
 (@SGGUID+35, 10, 479.0668, -63.946674, 9.558247, 100, 0, 0),
-(@SGGUID+35, 11, 472.05426, -65.089485, 9.556719, 100, 0, 0),
+(@SGGUID+35, 11, 472.05426, -65.089485, 9.556719, 100, 5000, 1889401),
 (@SGGUID+35, 12, 465.2839, -67.996925, 9.549834, 100, 0, 0),
 (@SGGUID+35, 13, 464.07477, -71.89881, 9.552552, 100, 0, 0),
 (@SGGUID+35, 14, 463.9062, -77.500374, 9.581109, 100, 0, 0),
-(@SGGUID+35, 15, 463.53168, -83.95495, 9.581274, 100, 0, 0),
+(@SGGUID+35, 15, 463.53168, -83.95495, 9.581274, 100, 5000, 1889401),
 (@SGGUID+35, 16, 464.99164, -77.96278, 9.578054, 100, 0, 0),
 (@SGGUID+35, 17, 464.84445, -71.00115, 9.551927, 100, 0, 0),
 (@SGGUID+35, 18, 469.24283, -65.89543, 9.548371, 100, 0, 0),
 (@SGGUID+35, 19, 474.90884, -64.26512, 9.557476, 100, 0, 0),
 (@SGGUID+35, 20, 483.48578, -65.092834, 9.55851, 100, 0, 0),
 (@SGGUID+35, 21, 490.59982, -70.9917, 9.548428, 100, 0, 0),
-(@SGGUID+35, 22, 490.69455, -77.077736, 9.556896, 100, 0, 0);
+(@SGGUID+35, 22, 490.69455, -77.077736, 9.556896, 100, 5000, 1889401);
 
 -- =======
 -- POOLING
@@ -728,8 +730,10 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- =========
 -- DBSCRIPTS
 -- =========
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1889401);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(1889401, 2000, 15, 33111, 0, 0, 17371, 8, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Felguard Brute - Shadowmoon Warlock (17371) - Cast Fel Power on Felguard Brute (18894)');
 
--- INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
