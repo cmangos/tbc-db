@@ -1,9 +1,8 @@
 /* DBScriptData
 DBName: Hellfire Citadel - The Blood Furnace
 DBScriptName: instance_blood_furnace
-DB%Complete: 85
+DB%Complete: 95
 DBComment:
-* ai second boss adds aggro drop ability, spell scripting for second boss aoe ability (scaling)
 EndDBScriptData */
 
 SET @CGUID := 5420000; -- creatures
@@ -23,16 +22,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+22, 1, 327.04425, -11.012064, 9.426495, 100, 0, 0),
 (@CGUID+22, 2, 328.393, 7.28222, 9.623969, 100, 0, 0),
 (@CGUID+22, 3, 327.90256, 25.295847, 9.625213, 100, 0, 0),
-(@CGUID+24, 1, 317.703, -172.405, -25.4257, 6.10865, 32000, 1737101),
-(@CGUID+24, 2, 317.703, -172.405, -25.4257, 6.10865, 34000, 1737101),
-(@CGUID+24, 3, 317.703, -172.405, -25.4257, 6.10865, 26000, 1737101),
-(@CGUID+24, 4, 317.703, -172.405, -25.4257, 6.10865, 29000, 1737101),
-(@CGUID+24, 5, 317.703, -172.405, -25.4257, 6.10865, 26000, 1737101),
-(@CGUID+25, 1, 328.897, -188.367, -25.4252, 1.50098, 26000, 1737101),
-(@CGUID+25, 2, 328.897, -188.367, -25.4252, 1.50098, 34000, 1737101),
-(@CGUID+25, 3, 328.897, -188.367, -25.4252, 1.50098, 28000, 1737101),
-(@CGUID+25, 4, 328.897, -188.367, -25.4252, 1.50098, 28000, 1737101),
-(@CGUID+25, 5, 328.897, -188.367, -25.4252, 1.50098, 32000, 1737101),
 (@CGUID+174, 1, 135.97264, -92.95206, -0.9103361, 100, 0, 0),
 (@CGUID+174, 2, 98.57112, -93.5057, -18.174309, 100, 0, 0),
 (@CGUID+174, 3, 87.04167, -93.61084, -23.506758, 100, 0, 0),
@@ -65,33 +54,7 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+179, 14, 466.379, -84.5461, 9.55922, 4.91339, 0, 0),
 (@CGUID+179, 15, 470.883, -90.6855, 9.55499, 5.28017, 0, 0),
 (@CGUID+179, 16, 477.229, -93.2723, 9.55717, 6.01216, 0, 0),
-(@CGUID+179, 17, 483.607, -88.3845, 9.55416, 0.815969, 0, 0),
-(@CGUID+200, 1, 490.932, -74.1161, 9.5538, 1.50084, 5000, 1889401),
-(@CGUID+200, 2, 487.898, -68.2115, 9.54962, 2.16764, 0, 0),
-(@CGUID+200, 3, 481.883, -63.8886, 9.54679, 2.65459, 0, 0),
-(@CGUID+200, 4, 472.176, -62.9624, 9.54538, 2.96875, 5000, 1889401),
-(@CGUID+200, 5, 465.56, -68.5521, 9.54718, 3.85703, 0, 0),
-(@CGUID+200, 6, 464.085, -83.4881, 9.56054, 4.55839, 5000, 1889401),
-(@CGUID+200, 7, 464.375, -71.6199, 9.55217, 1.38853, 0, 0),
-(@CGUID+200, 8, 469.352, -64.6788, 9.54787, 1.06809, 0, 0),
-(@CGUID+200, 9, 478.612, -62.6469, 9.54498, 0.175088, 0, 0),
-(@CGUID+200, 10, 486.064, -66.3932, 9.54751, 5.84252, 0, 0),
-(@CGUID+200, 11, 489.049, -70.2684, 9.54869, 5.38935, 0, 0),
-(@CGUID+200, 12, 489.83, -77.8941, 9.55994, 4.81444, 0, 0),
-(@CGUID+201, 1, 493.362, -8.68338, 9.5612, 0.589779, 5000, 1889401),
-(@CGUID+201, 2, 491.364, -12.7158, 9.56095, 4.2246, 0, 0),
-(@CGUID+201, 3, 488.805, -28.512, 9.54957, 4.61259, 0, 0),
-(@CGUID+201, 4, 489.434, -43.8256, 9.55707, 4.64479, 0, 0),
-(@CGUID+201, 5, 486.861, -48.372, 9.56171, 4.09344, 5000, 1889401),
-(@CGUID+201, 6, 469.609, -47.661, 9.56227, 3.09677, 0, 0),
-(@CGUID+201, 7, 465.538, -44.9848, 9.56087, 2.51714, 0, 0),
-(@CGUID+201, 8, 462.41, -36.9628, 9.55242, 2.04198, 0, 0),
-(@CGUID+201, 9, 461.945, -28.9552, 9.5481, 1.63593, 0, 0),
-(@CGUID+201, 10, 463.569, -25.5645, 9.5481, 1.15448, 0, 0),
-(@CGUID+201, 11, 467.51, -22.6321, 9.54876, 0.632188, 5000, 1889401),
-(@CGUID+201, 12, 479.996, -21.3982, 9.55193, 6.26506, 0, 0),
-(@CGUID+201, 13, 484.093, -19.5356, 9.55428, 0.219069, 0, 0),
-(@CGUID+201, 14, 489.485, -11.4491, 9.56425, 0.890584, 0, 0);
+(@CGUID+179, 17, 483.607, -88.3845, 9.55416, 0.815969, 0, 0);
 
 DELETE FROM `creature_movement_template` WHERE `entry` IN (17380);
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
@@ -150,25 +113,7 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (17653, 0, 0, 1, 0, 0, NULL), -- Shadowmoon Channeler
 (21174, 0, 0, 1, 0, 0, '30205'); -- Magtheridon
 
-INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+28, @CGUID+30, 1679), -- Shadowmoon Warlock -> Shadowmoon Warlock
-(@CGUID+209, @CGUID+30, 1679), -- Hellfire Familiar -> Shadowmoon Warlock
-(@CGUID+210, @CGUID+30, 1679), -- Hellfire Familiar -> Shadowmoon Warlock
-(@CGUID+211, @CGUID+30, 1679), -- Hellfire Familiar -> Shadowmoon Warlock
-(@CGUID+27, @CGUID+201, 1679), -- Shadowmoon Warlock -> Felguard Brute
-(@CGUID+29, @CGUID+200, 1679), -- Shadowmoon Warlock -> Felguard Brute
-(@CGUID+199, @CGUID+198, 1155), -- Felguard Brute -> Felguard Brute
-(@CGUID+203, @CGUID+23, 1155), -- Hellfire Familiar -> Shadowmoon Warlock
-(@CGUID+204, @CGUID+23, 1155), -- Hellfire Familiar -> Shadowmoon Warlock
-(@CGUID+205, @CGUID+23, 1155), -- Hellfire Familiar -> Shadowmoon Warlock
-(@CGUID+206, @CGUID+23, 1155), -- Hellfire Familiar -> Shadowmoon Warlock
-(@CGUID+207, @CGUID+23, 1155), -- Hellfire Familiar -> Shadowmoon Warlock
-(@CGUID+208, @CGUID+23, 1155), -- Hellfire Familiar -> Shadowmoon Warlock
-(@CGUID+81, @CGUID+79, 1155), -- Felguard Annihilator -> Felguard Annihilator
-(@CGUID+77, @CGUID+25, 1155), -- Felguard Annihilator -> Shadowmoon Warlock
-(@CGUID+80, @CGUID+25, 1155), -- Felguard Annihilator -> Shadowmoon Warlock
-(@CGUID+76, @CGUID+24, 1155), -- Felguard Annihilator -> Shadowmoon Warlock
-(@CGUID+78, @CGUID+24, 1155); -- Felguard Annihilator -> Shadowmoon Warlock
+-- INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 
 -- INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
@@ -195,9 +140,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+20, 0, 542, 3, 351.593, 69.7604, 9.61397, 5.0562, 7200, 7200, 0, 2), -- spawn_group_entry
 (@CGUID+21, 17371, 542, 3, 237.2137, -66.08345, 9.62556, 0, 7200, 7200, 0, 4), -- spawn_group_entry
 (@CGUID+22, 17371, 542, 3, 327.04425, -11.012064, 9.426495, 0, 7200, 7200, 0, 4), -- Shadowmoon Warlock
-(@CGUID+23, 17371, 542, 3, 423.094, -82.3433, 9.62334, 2.69742, 7200, 7200, 3, 1), -- Shadowmoon Warlock
-(@CGUID+24, 17371, 542, 3, 317.70306396484375, -172.40533447265625, -25.4256973266601562, 6.108652114868164062, 7200, 7200, 0, 2), -- Shadowmoon Warlock
-(@CGUID+25, 17371, 542, 3, 328.897491455078125, -188.366622924804687, -25.425241470336914, 1.500983119010925292, 7200, 7200, 0, 2), -- Shadowmoon Warlock
+(@CGUID+23, 17371, 542, 3, 423.094, -82.3433, 9.62334, 2.69742, 7200, 7200, 2, 1), -- Shadowmoon Warlock
+(@CGUID+24, 17371, 542, 3, 317.70306396484375, -172.40533447265625, -25.4256973266601562, 6.108652114868164062, 7200, 7200, 0, 0), -- Shadowmoon Warlock
+(@CGUID+25, 17371, 542, 3, 328.897491455078125, -188.366622924804687, -25.425241470336914, 1.500983119010925292, 7200, 7200, 0, 0), -- Shadowmoon Warlock
 (@CGUID+26, 17371, 542, 3, 445.658966064453125, 61.78424072265625, 9.6945037841796875, 4.328416347503662109, 7200, 7200, 0, 0), -- Shadowmoon Warlock
 (@CGUID+27, 17371, 542, 3, 490.501, -7.73751, 9.56211, 0.522235, 7200, 7200, 0, 0), -- Shadowmoon Warlock
 (@CGUID+28, 17371, 542, 3, 494.708282470703125, 3.539125919342041015, 9.629895210266113281, 2.897246599197387695, 7200, 7200, 0, 0), -- Shadowmoon Warlock
@@ -211,7 +156,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+36, 17377, 542, 3, 326.502899169921875, -86.0027542114257812, -24.5770149230957031, 3.59537816047668457, 604800, 604800, 0, 0), -- Keli'dan the Breaker
 (@CGUID+37, 17380, 542, 3, 455.335723876953125, -1.82919394969940185, 9.629873275756835937, 1.431169986724853515, 604800, 604800, 0, 0), -- Broggok
 (@CGUID+38, 17381, 542, 3, 328.126708984375, 128.865631103515625, 9.618732452392578125, 5.0113372802734375, 604800, 604800, 3, 1), -- The Maker
-(@CGUID+39, 0, 542, 3, 340.263824462890625, 102.1913528442382812, 9.702587127685546875, 4.537856101989746093, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+39, 0, 542, 3, 340.263824462890625, 102.1913528442382812, 9.702587127685546875, 4.537856101989746093, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+40, 17395, 542, 3, 312.673095703125, 9.930631637573242187, 9.701819419860839843, 0.471238881349563598, 7200, 7200, 0, 0), -- Shadowmoon Summoner
 (@CGUID+41, 17395, 542, 3, 336.492767333984375, 10.28137493133544921, 9.702851295471191406, 5.8817596435546875, 7200, 7200, 0, 0), -- Shadowmoon Summoner
 (@CGUID+42, 17395, 542, 3, 336.21966552734375, 4.42312479019165039, 9.703363418579101562, 1.29154360294342041, 7200, 7200, 0, 0), -- Shadowmoon Summoner
@@ -369,21 +314,20 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+197, 17653, 542, 3, 343.5838623046875, -103.630592346191406, -24.5688228607177734, 2.356194496154785156, 7200, 7200, 0, 0), -- Shadowmoon Channeler
 (@CGUID+198, 18894, 542, 3, 456.875152587890625, -79.4452896118164062, 9.686198234558105468, 6.248278617858886718, 7200, 7200, 0, 0), -- Felguard Brute
 (@CGUID+199, 18894, 542, 3, 456.89849853515625, -89.408203125, 9.681890487670898437, 0.05235987901687622, 7200, 7200, 0, 0), -- Felguard Brute
-(@CGUID+200, 18894, 542, 3, 490.701, -75.7409, 9.55482, 1.8787, 7200, 7200, 0, 2), -- Felguard Brute
-(@CGUID+201, 18894, 542, 3, 492.417, -9.29333, 9.56341, 1.02598, 7200, 7200, 0, 2), -- Felguard Brute
-(@CGUID+203, 19016, 542, 3, 430.485, -74.5045, 9.62771, 6.19338, 7200, 7200, 3, 1), -- Hellfire Familiar
-(@CGUID+204, 19016, 542, 3, 415.619, -83.7208, 9.61892, 4.77352, 7200, 7200, 3, 1), -- Hellfire Familiar
-(@CGUID+205, 19016, 542, 3, 428.693, -93.3119, 9.6156, 5.66917, 7200, 7200, 3, 1), -- Hellfire Familiar
-(@CGUID+206, 19016, 542, 3, 418.592, -70.12, 9.62705, 1.60699, 7200, 7200, 3, 1), -- Hellfire Familiar
-(@CGUID+207, 19016, 542, 3, 432.618, -80.317, 9.62791, 2.30452, 7200, 7200, 3, 1), -- Hellfire Familiar
-(@CGUID+208, 19016, 542, 3, 419.593, -90.9202, 9.70846, 0.0174533, 7200, 7200, 3, 1), -- Hellfire Familiar
+(@CGUID+200, 18894, 542, 3, 490.701, -75.7409, 9.55482, 1.8787, 7200, 7200, 0, 0), -- Felguard Brute
+(@CGUID+201, 18894, 542, 3, 492.417, -9.29333, 9.56341, 1.02598, 7200, 7200, 0, 0), -- Felguard Brute
+(@CGUID+203, 19016, 542, 3, 430.485, -74.5045, 9.62771, 6.19338, 7200, 7200, 2, 1), -- Hellfire Familiar
+(@CGUID+204, 19016, 542, 3, 415.619, -83.7208, 9.61892, 4.77352, 7200, 7200, 2, 1), -- Hellfire Familiar
+(@CGUID+205, 19016, 542, 3, 428.693, -93.3119, 9.6156, 5.66917, 7200, 7200, 2, 1), -- Hellfire Familiar
+(@CGUID+206, 19016, 542, 3, 418.592, -70.12, 9.62705, 1.60699, 7200, 7200, 2, 1), -- Hellfire Familiar
+(@CGUID+207, 19016, 542, 3, 432.618, -80.317, 9.62791, 2.30452, 7200, 7200, 2, 1), -- Hellfire Familiar
+(@CGUID+208, 19016, 542, 3, 419.593, -90.9202, 9.70846, 0.0174533, 7200, 7200, 2, 1), -- Hellfire Familiar
 (@CGUID+209, 19016, 542, 3, 488.285858154296875, 1.742849946022033691, 9.628323554992675781, 1.047197580337524414, 7200, 7200, 0, 0), -- Hellfire Familiar
 (@CGUID+210, 19016, 542, 3, 489.53802490234375, 8.015559196472167968, 9.628659248352050781, 3.59537816047668457, 7200, 7200, 0, 0), -- Hellfire Familiar
 (@CGUID+211, 19016, 542, 3, 484.705902099609375, 8.66715240478515625, 9.631420135498046875, 6.161012172698974609, 7200, 7200, 0, 0), -- Hellfire Familiar
 (@CGUID+212, 21174, 542, 3, 320.911529541015625, -83.0625381469726562, -133.306869506835937, 3.001966238021850585, 7200, 7200, 0, 0); -- Magtheridon
 
-INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
-(@CGUID+39, 17371), (@CGUID+39, 17395), (@CGUID+39, 17414); -- Shadowmoon Warlock, Shadowmoon Summoner, Shadowmoon Technician
+-- INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 
 -- ===========
 -- GAMEOBJECTS
@@ -481,9 +425,18 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+27, 'Blood Furnace - Group 026 - Nascent Fel Orc | Shadowmoon Technician (2)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+28, 'Blood Furnace - Group 027 - Shadowmoon Technician (3)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+29, 'Blood Furnace - Group 028 - spawn_group_entry', 0, 0, 0, 0, 1, 0),
-(@SGGUID+30, 'Blood Furnace - Group 029 - Fel Orc Neophyte | Shadowmoon Warlock | spawn_group_entry', 0, 0, 0, 0, 1, 0),
+(@SGGUID+30, 'Blood Furnace - Group 029 - Nascent Fel Orc | Shadowmoon Warlock | spawn_group_entry', 0, 0, 0, 0, 1, 0),
 (@SGGUID+31, 'Blood Furnace - Group 030 - Fel Orc Neophyte | Shadowmoon Warlock | spawn_group_entry', 0, 0, 0, 0, 1, 0),
-(@SGGUID+32, 'Blood Furnace - Group 031 - Laughing Skull Warden | Laughing Skull Legionnaire (2) - Patrol 005', 0, 0, 0, 0, 1, 0);
+(@SGGUID+32, 'Blood Furnace - Group 031 - Laughing Skull Warden | Laughing Skull Legionnaire (2) - Patrol 005', 0, 0, 0, 0, 1, 0),
+(@SGGUID+33, 'Blood Furnace - Group 032 - Shadowmoon Warlock (2) | Hellfire Familiar (3)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+34, 'Blood Furnace - Group 033 - Felguard Brute | Shadowmoon Warlock - Patrol 006', 0, 0, 0, 0, 1, 0),
+(@SGGUID+35, 'Blood Furnace - Group 034 - Felguard Brute | Shadowmoon Warlock - Patrol 007', 0, 0, 0, 0, 1, 0),
+(@SGGUID+36, 'Blood Furnace - Group 034 - Felguard Brute (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+37, 'Blood Furnace - Group 035 - Shadowmoon Warlock | Hellfire Familiar (6)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+38, 'Blood Furnace - Group 036 - Felguard Annihilator (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+39, 'Blood Furnace - Group 037 - Shadowmoon Warlock | Felguard Annihilator (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+40, 'Blood Furnace - Group 038 - Shadowmoon Warlock | Felguard Annihilator (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+41, 'Blood Furnace - Laughing Skull Rogue - random spawns', 0, 4, 0, 0, 0, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+7, 17371, 0, 0, 0), (@SGGUID+7, 17395, 0, 0, 0), -- Shadowmoon Warlock, Shadowmoon Summoner
@@ -598,33 +551,74 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+30, @CGUID+87, 1, 0), -- spawn_group_entry
 (@SGGUID+30, @CGUID+31, 2, 0), -- Shadowmoon Warlock
 
-(@SGGUID+31, @CGUID+144, 0, 0), -- Nascent Fel Orc
+(@SGGUID+31, @CGUID+144, 0, 0), -- Fel Orc Neophyte
 (@SGGUID+31, @CGUID+43, 1, 0), -- spawn_group_entry
 (@SGGUID+31, @CGUID+26, 2, 0), -- Shadowmoon Warlock
 
 (@SGGUID+32, @CGUID+186, 0, 0), -- Laughing Skull Warden
 (@SGGUID+32, @CGUID+189, 1, 0), -- Laughing Skull Legionnaire
-(@SGGUID+32, @CGUID+190, 2, 0); -- Laughing Skull Legionnaire
+(@SGGUID+32, @CGUID+190, 2, 0), -- Laughing Skull Legionnaire
 
--- Rogue spawn_group - needs more testing
--- (@SGGUID+5, @CGUID+174, 0, 0), -- Laughing Skull Rogue patroling on first stairs
--- (@SGGUID+5, @CGUID+173, 0, 0), -- Laughing Skull Rogue rnd movement upstairs right
--- (@SGGUID+5, @CGUID+172, 0, 0), -- Laughing Skull Rogue rnd movement upstairs left
--- (@SGGUID+5, @CGUID+175, 0, 0), -- Laughing Skull Rogue waypoints before first boss
+(@SGGUID+33, @CGUID+30, 0, 0), -- Shadowmoon Warlock
+(@SGGUID+33, @CGUID+28, 1, 0), -- Shadowmoon Warlock 
+(@SGGUID+33, @CGUID+209, 2, 0), -- Hellfire Familiar
+(@SGGUID+33, @CGUID+210, 3, 0), -- Hellfire Familiar
+(@SGGUID+33, @CGUID+211, 4, 0), -- Hellfire Familiar
+
+(@SGGUID+34, @CGUID+201, 0, 0), -- Felguard Brute
+(@SGGUID+34, @CGUID+27, 1, 0), -- Shadowmoon Warlock 
+
+(@SGGUID+35, @CGUID+200, 0, 0), -- Felguard Brute
+(@SGGUID+35, @CGUID+29, 1, 0), -- Shadowmoon Warlock 
+
+(@SGGUID+36, @CGUID+198, 0, 0), -- Felguard Brute
+(@SGGUID+36, @CGUID+199, 1, 0), -- Felguard Brute
+
+(@SGGUID+37, @CGUID+23, 0, 0), -- Shadowmoon Warlock 
+(@SGGUID+37, @CGUID+203, 1, 0), -- Hellfire Familiar
+(@SGGUID+37, @CGUID+204, 2, 0), -- Hellfire Familiar
+(@SGGUID+37, @CGUID+205, 3, 0), -- Hellfire Familiar
+(@SGGUID+37, @CGUID+206, 4, 0), -- Hellfire Familiar
+(@SGGUID+37, @CGUID+207, 5, 0), -- Hellfire Familiar
+(@SGGUID+37, @CGUID+208, 6, 0), -- Hellfire Familiar
+
+(@SGGUID+38, @CGUID+79, 0, 0), -- Felguard Annhilator
+(@SGGUID+38, @CGUID+81, 1, 0), -- Felguard Annhilator
+
+(@SGGUID+39, @CGUID+25, 0, 0), -- Shadowmoon Warlock 
+(@SGGUID+39, @CGUID+77, 1, 0), -- Felguard Annhilator
+(@SGGUID+39, @CGUID+80, 2, 0), -- Felguard Annhilator
+
+(@SGGUID+40, @CGUID+24, 0, 0), -- Shadowmoon Warlock 
+(@SGGUID+40, @CGUID+76, 1, 0), -- Felguard Annhilator
+(@SGGUID+40, @CGUID+78, 2, 0), -- Felguard Annhilator
+
+-- Rogue spawn_group 7 different spawns, 3-4 active
+(@SGGUID+41, @CGUID+174, 0, 0), -- Pathing on Front Stairs
+(@SGGUID+41, @CGUID+175, 0, 0), -- Room Before The Maker
+(@SGGUID+41, @CGUID+176, 0, 0), -- Hallway Start After The Maker
+(@SGGUID+41, @CGUID+177, 0, 0), -- Hallway End After The Maker
+(@SGGUID+41, @CGUID+178, 0, 0), -- Room After Broggok static
+(@SGGUID+41, @CGUID+179, 0, 0), -- Room After Broggok patrol
+(@SGGUID+41, @CGUID+180, 0, 0); -- Top of Final Ramp
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+19, 2, 3, 0, @SGGUID+19, 2, 'Blood Furnace - Group 018 - Shadowmoon Technician | Laughing Skull Legionnaire - Patrol 001'),
 (@SGGUID+20, 2, 3, 0, @SGGUID+20, 2, 'Blood Furnace - Group 019 - Laughing Skull Warden | Laughing Skull Legionnaire - Patrol 002'),
 (@SGGUID+22, 2, 3, 0, @SGGUID+22, 2, 'Blood Furnace - Group 021 - Laughing Skull Enforcer (2) - Patrol 003'),
 (@SGGUID+26, 2, 3, 0, @SGGUID+26, 2, 'Blood Furnace - Group 025 - Laughing Skull Enforcer (2) - Patrol 004'),
-(@SGGUID+32, 4, 3, 0, @SGGUID+32, 2, 'Blood Furnace - Group 031 - Laughing Skull Warden | Laughing Skull Legionnaire (2) - Patrol 005');
+(@SGGUID+32, 4, 3, 0, @SGGUID+32, 2, 'Blood Furnace - Group 031 - Laughing Skull Warden | Laughing Skull Legionnaire (2) - Patrol 005'),
+(@SGGUID+34, 2, 3, 0, @SGGUID+34, 2, 'Blood Furnace - Group 033 - Felguard Brute | Shadowmoon Warlock - Patrol 006'),
+(@SGGUID+35, 2, 3, 0, @SGGUID+35, 2, 'Blood Furnace - Group 034 - Felguard Brute | Shadowmoon Warlock - Patrol 007');
 
 INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 (@SGGUID+19, 'Blood Furnace - Group 018 - Shadowmoon Technician | Laughing Skull Legionnaire - Patrol 001'),
 (@SGGUID+20, 'Blood Furnace - Group 020 - Laughing Skull Warden | Laughing Skull Legionnaire - Patrol 002'),
 (@SGGUID+22, 'Blood Furnace - Group 021 - Laughing Skull Enforcer (2) - Patrol 003'),
 (@SGGUID+26, 'Blood Furnace - Group 025 - Laughing Skull Enforcer (2) - Patrol 004'),
-(@SGGUID+32, 'Blood Furnace - Group 031 - Laughing Skull Warden | Laughing Skull Legionnaire (2) - Patrol 005');
+(@SGGUID+32, 'Blood Furnace - Group 031 - Laughing Skull Warden | Laughing Skull Legionnaire (2) - Patrol 005'),
+(@SGGUID+34, 'Blood Furnace - Group 033 - Felguard Brute | Shadowmoon Warlock - Patrol 006'),
+(@SGGUID+35, 'Blood Furnace - Group 034 - Felguard Brute | Shadowmoon Warlock - Patrol 007');
 
 INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
 (@SGGUID+19, 1, 351.59265, 69.76043, 9.613965, 100, 0, 0),
@@ -676,7 +670,41 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 (@SGGUID+32, 9, 468.20193, 80.050804, 9.618986, 100, 0, 0),
 (@SGGUID+32, 10, 465.83167, 102.65931, 9.617579, 100, 0, 0),
 (@SGGUID+32, 11, 461.84326, 110.45399, 9.617397, 100, 0, 0),
-(@SGGUID+32, 12, 456.01096, 113.43774, 9.610462, 100, 0, 0);
+(@SGGUID+32, 12, 456.01096, 113.43774, 9.610462, 100, 0, 0),
+
+(@SGGUID+34, 1, 492.4174, -9.293329, 9.563409, 100, 5000, 1889401),
+(@SGGUID+34, 2, 488.8029, -16.216816, 9.560678, 100, 0, 0),
+(@SGGUID+34, 3, 488.5971, -27.189554, 9.550882, 100, 0, 0),
+(@SGGUID+34, 4, 489.5562, -42.582874, 9.557194, 100, 0, 0),
+(@SGGUID+34, 5, 487.2237, -46.331753, 9.560828, 100, 5000, 1889401),
+(@SGGUID+34, 6, 475.7844, -49.514557, 9.563148, 100, 0, 0),
+(@SGGUID+34, 7, 469.93903, -49.56061, 9.562215, 100, 0, 0),
+(@SGGUID+34, 8, 465.9425, -46.190033, 9.562853, 100, 0, 0),
+(@SGGUID+34, 9, 464.31836, -40.05853, 9.5648985, 100, 0, 0),
+(@SGGUID+34, 10, 464.1594, -32.407433, 9.540473, 100, 0, 0),
+(@SGGUID+34, 11, 467.5221, -27.171303, 9.551024, 100, 0, 0),
+(@SGGUID+34, 12, 470.29358, -26.362574, 9.55173, 100, 5000, 1889401),
+(@SGGUID+34, 13, 482.69983, -23.873701, 9.553878, 100, 0, 0),
+(@SGGUID+34, 14, 487.17227, -18.626303, 9.558537, 100, 0, 0),
+(@SGGUID+34, 15, 490.11685, -13.089669, 9.563461, 100, 0, 0),
+
+(@SGGUID+35, 6, 491.30783, -83.39267, 9.559532, 100, 0, 0),
+(@SGGUID+35, 7, 491.1338, -77.10125, 9.556976, 100, 0, 0),
+(@SGGUID+35, 8, 489.0302, -70.4867, 9.547089, 100, 0, 0),
+(@SGGUID+35, 9, 485.46555, -65.57949, 9.558637, 100, 0, 0),
+(@SGGUID+35, 10, 479.0668, -63.946674, 9.558247, 100, 0, 0),
+(@SGGUID+35, 11, 472.05426, -65.089485, 9.556719, 100, 5000, 1889401),
+(@SGGUID+35, 12, 465.2839, -67.996925, 9.549834, 100, 0, 0),
+(@SGGUID+35, 13, 464.07477, -71.89881, 9.552552, 100, 0, 0),
+(@SGGUID+35, 14, 463.9062, -77.500374, 9.581109, 100, 0, 0),
+(@SGGUID+35, 15, 463.53168, -83.95495, 9.581274, 100, 5000, 1889401),
+(@SGGUID+35, 16, 464.99164, -77.96278, 9.578054, 100, 0, 0),
+(@SGGUID+35, 17, 464.84445, -71.00115, 9.551927, 100, 0, 0),
+(@SGGUID+35, 18, 469.24283, -65.89543, 9.548371, 100, 0, 0),
+(@SGGUID+35, 19, 474.90884, -64.26512, 9.557476, 100, 0, 0),
+(@SGGUID+35, 20, 483.48578, -65.092834, 9.55851, 100, 0, 0),
+(@SGGUID+35, 21, 490.59982, -70.9917, 9.548428, 100, 0, 0),
+(@SGGUID+35, 22, 490.69455, -77.077736, 9.556896, 100, 5000, 1889401);
 
 -- =======
 -- POOLING
@@ -685,17 +713,9 @@ INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `Posit
 -- INSERT INTO `pool_pool` (`pool_id`, `mother_pool`, `chance`, `description`) VALUES
 
 INSERT INTO `pool_template` (`entry`, `max_limit`, `description`) VALUES
-(@PGUID+1, 4, 'Blood Furnace - Laughing Skull Rogues'),
 (@PGUID+90, 1, 'Blood Furnace - Master Chest Pool');
 
-INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
-(@CGUID+174, @PGUID+1, 0, 'Blood Furnace - Laughing Skull Rogues - Pathing on Front Stairs'),
-(@CGUID+175, @PGUID+1, 0, 'Blood Furnace - Laughing Skull Rogues - Room Before The Maker'),
-(@CGUID+176, @PGUID+1, 0, 'Blood Furnace - Laughing Skull Rogues - Hallway Start After The Maker'),
-(@CGUID+177, @PGUID+1, 0, 'Blood Furnace - Laughing Skull Rogues - Hallway End After The Maker'),
-(@CGUID+178, @PGUID+1, 0, 'Blood Furnace - Laughing Skull Rogues - Room After Broggok'),
-(@CGUID+179, @PGUID+1, 0, 'Blood Furnace - Laughing Skull Rogues - Room After Broggok'),
-(@CGUID+180, @PGUID+1, 0, 'Blood Furnace - Laughing Skull Rogues - Top of Final Ramp');
+-- INSERT INTO `pool_creature` (`guid`, `pool_entry`, `chance`, `description`) VALUES
 
 -- INSERT INTO `pool_creature_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
@@ -710,11 +730,9 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- =========
 -- DBSCRIPTS
 -- =========
-
-DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1737101,1889401);
+DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1889401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1737101, 2000, 15, 33111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Shadowmoon Warlock - Cast Fel Power on Felguard Annhilator (17400) / Brute (18894)'),
-(1889401, 2000, 15, 33111, 0, 0, 17371, 8, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Felguard Brute - Shadowmoon Warlock (17371) - Cast Fel Power on Felguard Annhilator (17400) / Brute (18894)');
+(1889401, 2000, 15, 33111, 0, 0, 17371, 8, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Felguard Brute - Shadowmoon Warlock (17371) - Cast Fel Power on Felguard Brute (18894)');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
