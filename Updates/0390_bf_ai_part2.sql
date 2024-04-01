@@ -32,7 +32,6 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 (1740001, 2, 27577, 0, -1, 107, 0, 100, 0, 2000, 10000, 8000, 16000, 'Felguard Annihilator - Intercept - random not in melee'),
 (1740001, 3, 18072, 0, -1, 1, 0, 100, 0, 1000, 5000, 8000, 14000, 'Felguard Annihilator - Uppercut - current'),
 (1860401, 1, 15615, 0, -1, 122, 0, 100, 0, 4000, 13000, 6000, 16000, 'Felguard Annihilator - Pummel - random casting'),
-(1860401, 2, 27577, 0, -1, 107, 0, 100, 0, 2000, 10000, 8000, 16000, 'Felguard Annihilator - Intercept - random not in melee'),
 (1860401, 3, 18072, 0, -1, 1, 0, 100, 0, 1000, 5000, 8000, 14000, 'Felguard Annihilator - Uppercut - current');
 
 UPDATE `creature_template` SET `SpellList` = 1740001 WHERE `entry` = 17400;
