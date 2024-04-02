@@ -18,7 +18,7 @@ UPDATE `creature_template` SET `SpellList` = 1861201 WHERE `entry` = 18612;
 
 
 -- Felguard Annihilator 17400
--- tests on wotlk classic showed that they use intercept also in normal mode
+-- tests on wotlk classic showed that they use intercept only in normal mode
 DELETE FROM `creature_template_spells` WHERE `entry` IN (17400, 18604);
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1740001, 1860401);
