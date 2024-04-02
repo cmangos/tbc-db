@@ -9,6 +9,7 @@ SET @CGUID := 5420000; -- creatures
 SET @OGUID := 5420000; -- gameobjects
 SET @PGUID := 48100; -- pools
 SET @SGGUID := 5420000; -- spawn_groups
+SET @RELAYID := 5420000; -- used for varius dbscripts_on_relay
 
 -- =========
 -- CREATURES
@@ -742,10 +743,19 @@ DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1889401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1889401, 2000, 15, 33111, 0, 0, 17371, 8, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Felguard Brute - Shadowmoon Warlock (17371) - Cast Fel Power on Felguard Brute (18894)');
 
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+(@RELAYID+1,0,0,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - emote laugh'),
+(@RELAYID+1,8000,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - emote talk'),
+(@RELAYID+2,0,0,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - emote laugh'),
+(@RELAYID+2,2000,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - emote talk'),
+(@RELAYID+2,8000,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - emote talk'),
+(@RELAYID+3,0,0,31,17400,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shadowmoon Warlock - terminate script if Felguard Annihilator found and alive'),
+(@RELAYID+3,0,0,15,33111,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shadowmoon Warlock - Cast Fel Power on Felguard Annihilator');
+
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_template_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_event` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_spell` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_gossip` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
