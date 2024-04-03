@@ -10,6 +10,7 @@ SET @OGUID := 5420000; -- gameobjects
 SET @PGUID := 48100; -- pools
 SET @SGGUID := 5420000; -- spawn_groups
 SET @RELAYID := 5420000; -- used for varius dbscripts_on_relay
+SET @STRINGID := 5420000; -- used for StringID's
 
 -- =========
 -- CREATURES
@@ -111,7 +112,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+92, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
 (@CGUID+94, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
 (@CGUID+95, 0, 0, 0, 69, 0, NULL), -- Shadowmoon Technician
-(@CGUID+144, 0, 0, 1, 13, 0, NULL); -- Fel Orc Neophyte
+(@CGUID+144, 0, 8, 1, 0, 0, NULL); -- Fel Orc Neophyte
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (17370, 0, 0, 1, 333, 0, NULL), -- Laughing Skull Enforcer
@@ -445,7 +446,12 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+38, 'Blood Furnace - Group 036 - Felguard Annihilator (2)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+39, 'Blood Furnace - Group 037 - Shadowmoon Warlock | Felguard Annihilator (2)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+40, 'Blood Furnace - Group 038 - Shadowmoon Warlock | Felguard Annihilator (2)', 0, 0, 0, 0, 1, 0),
-(@SGGUID+41, 'Blood Furnace - Laughing Skull Rogue - random spawns', 0, 4, 0, 0, 0, 0);
+(@SGGUID+41, 'Blood Furnace - Laughing Skull Rogue - random spawns', 0, 4, 0, 0, 0, 0),
+-- Broggok Prison Cell npc groups
+(@SGGUID+42, 'Blood Furnace - Prison Cell Group Front Left', 0, 0, 0, 0, 3, @STRINGID+1),
+(@SGGUID+43, 'Blood Furnace - Prison Cell Group Front Righ', 0, 0, 0, 0, 3, @STRINGID+2),
+(@SGGUID+44, 'Blood Furnace - Prison Cell Group Back Left', 0, 0, 0, 0, 3, @STRINGID+3),
+(@SGGUID+45, 'Blood Furnace - Prison Cell Group Back Right', 0, 0, 0, 0, 3, @STRINGID+4);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+7, 17371, 0, 0, 0), (@SGGUID+7, 17395, 0, 0, 0), -- Shadowmoon Warlock, Shadowmoon Summoner
@@ -609,7 +615,27 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+41, @CGUID+177, 0, 0), -- Hallway End After The Maker
 (@SGGUID+41, @CGUID+178, 0, 0), -- Room After Broggok static
 (@SGGUID+41, @CGUID+179, 0, 0), -- Room After Broggok patrol
-(@SGGUID+41, @CGUID+180, 0, 0); -- Top of Final Ramp
+(@SGGUID+41, @CGUID+180, 0, 0), -- Top of Final Ramp
+
+-- Broggok Prison Cell Groups
+-- Front Left
+(@SGGUID+42, @CGUID+158, 0, 0), -- Fel Orc Neophyte
+(@SGGUID+42, @CGUID+162, 1, 0), -- Fel Orc Neophyte
+(@SGGUID+42, @CGUID+72, 2, 0), -- Nascent Fel Orc
+(@SGGUID+42, @CGUID+74, 3, 0), -- Nascent Fel Orc
+-- Front Right
+(@SGGUID+43, @CGUID+141, 0, 0), -- Fel Orc Neophyte
+(@SGGUID+43, @CGUID+137, 1, 0), -- Fel Orc Neophyte
+(@SGGUID+43, @CGUID+146, 2, 0), -- Fel Orc Neophytec
+(@SGGUID+43, @CGUID+62, 3, 0), -- Nascent Fel Orc
+-- back left 
+(@SGGUID+44, @CGUID+69, 0, 0), -- Nascent Fel Orc
+(@SGGUID+44, @CGUID+70, 1, 0), -- Nascent Fel Orc
+(@SGGUID+44, @CGUID+71, 2, 0), -- Nascent Fel Orc
+-- back right 
+(@SGGUID+45, @CGUID+63, 0, 0), -- Nascent Fel Orc
+(@SGGUID+45, @CGUID+64, 1, 0), -- Nascent Fel Orc
+(@SGGUID+45, @CGUID+135, 2, 0); -- Fel Orc Neophyte
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+19, 2, 3, 0, @SGGUID+19, 2, 'Blood Furnace - Group 018 - Shadowmoon Technician | Laughing Skull Legionnaire - Patrol 001'),
@@ -736,6 +762,14 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 
 -- INSERT INTO `pool_gameobject_template` (`id`, `pool_entry`, `chance`, `description`) VALUES
 
+-- StringIDs
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+4;
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+1, 'BF_PRISON_CELL_GROUP_01'), -- front left
+(@STRINGID+2, 'BF_PRISON_CELL_GROUP_02'), -- front right
+(@STRINGID+3, 'BF_PRISON_CELL_GROUP_03'), -- back left
+(@STRINGID+4, 'BF_PRISON_CELL_GROUP_04'); -- back right
+
 -- =========
 -- DBSCRIPTS
 -- =========
@@ -743,7 +777,7 @@ DELETE FROM `dbscripts_on_creature_movement` WHERE `id` IN (1889401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1889401, 2000, 15, 33111, 0, 0, 17371, 8, 3, 0, 0, 0, 0, 0, 0, 0, 0, 'Felguard Brute - Shadowmoon Warlock (17371) - Cast Fel Power on Felguard Brute (18894)');
 
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+15;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (@RELAYID+1,0,0,1,11,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - emote laugh'),
 (@RELAYID+1,8000,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - emote talk'),
@@ -751,7 +785,25 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+2,2000,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - emote talk'),
 (@RELAYID+2,8000,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,'spawn_group_entry - emote talk'),
 (@RELAYID+3,0,0,31,17400,6,0,0,0,0,0,0,0,0,0,0,0,0,'Shadowmoon Warlock - terminate script if Felguard Annihilator found and alive'),
-(@RELAYID+3,0,0,15,33111,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shadowmoon Warlock - Cast Fel Power on Felguard Annihilator');
+(@RELAYID+3,0,0,15,33111,0,0,0,0,0,0,0,0,0,0,0,0,0,'Shadowmoon Warlock - Cast Fel Power on Felguard Annihilator'),
+-- Broggok Event NPC RPs ooc
+-- They use 3 npcs in this sequence: OneShotBattleRoar, OneShotRoar, OneShotShot -> start again, 1 cell all together
+-- front left
+(@RELAYID+4,0,1,1,53,0,0,@STRINGID+1,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotBattleRoar'),
+(@RELAYID+5,0,1,1,15,0,0,@STRINGID+1,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotRoar'),
+(@RELAYID+6,0,1,1,22,0,0,@STRINGID+1,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotShot'),
+-- front right
+(@RELAYID+7,0,1,1,53,0,0,@STRINGID+2,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotBattleRoar'),
+(@RELAYID+8,0,1,1,15,0,0,@STRINGID+2,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotRoar'),
+(@RELAYID+9,0,1,1,22,0,0,@STRINGID+2,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotShot'),
+-- back left
+(@RELAYID+10,0,1,1,53,0,0,@STRINGID+3,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotBattleRoar'),
+(@RELAYID+11,0,1,1,15,0,0,@STRINGID+3,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotRoar'),
+(@RELAYID+12,0,1,1,22,0,0,@STRINGID+3,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotShot'),
+-- back right
+(@RELAYID+13,0,1,1,53,0,0,@STRINGID+4,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotBattleRoar'),
+(@RELAYID+14,0,1,1,15,0,0,@STRINGID+4,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotRoar'),
+(@RELAYID+15,0,1,1,22,0,0,@STRINGID+4,8,2560,0,0,0,0,0,0,0,0,'string id - emote OneShotShot');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
