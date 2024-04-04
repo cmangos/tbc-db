@@ -26,4 +26,4 @@ UPDATE creature_template SET CallForHelp = '8' WHERE entry IN (17491, 18610);
 -- Felguard Annihilator
 UPDATE creature_template SET CallForHelp = '8' WHERE entry IN (17400, 18604);
 -- Hellfire Imp
-UPDATE creature_template SET CallForHelp = '6' WHERE entry IN (17477, 18606;
+UPDATE creature_template SET CallForHelp = '6' WHERE entry IN (17477, 18606);
