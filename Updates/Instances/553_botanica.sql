@@ -28,16 +28,12 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+8, 2, 2.36405, 242.874, -5.51154, 3.34423, 0, 0),
 (@CGUID+8, 3, 2.44798, 215.308, -5.54035, 4.78387, 0, 0),
 (@CGUID+8, 4, 3.94135, 214.042, -5.54035, 4.79017, 10000, 1799305),
-(@CGUID+15, 1, 0.319128, 93.3509, -5.65202, 4.74977, 2000, 0),
-(@CGUID+15, 2, 0.304653, 53.7379, -5.65205, 4.80789, 0, 0),
-(@CGUID+15, 3, 0.246856, 49.9056, -5.61616, 4.84559, 0, 0),
-(@CGUID+15, 4, 1.77807, 47.0135, -5.52788, 5.07885, 0, 0),
-(@CGUID+15, 5, 2.35202, 46.2708, -5.53589, 4.48292, 10000, 1799305),
-(@CGUID+16, 1, -2.91064, 93.3038, -5.65202, 4.66102, 2000, 0),
-(@CGUID+16, 2, -3.09647, 53.6826, -5.65205, 4.75056, 0, 0),
-(@CGUID+16, 3, -2.9898, 50.0713, -5.62371, 3.9573, 0, 0),
-(@CGUID+16, 4, -3.98776, 46.8545, -5.53157, 4.35943, 0, 0),
-(@CGUID+16, 5, -4.7336, 45.9968, -5.55443, 4.8874, 10000, 1799305),
+-- reworked
+(@CGUID+15, 1, 3.70889, 59.1549, -5.55738, 3.20157, 0, 0),
+(@CGUID+15,	2, 2.6163983,46.717686,-5.612038,4.817108631134033203,100,1799301),
+(@CGUID+16, 1, -6.33425, 59.407, -5.55881, 0.030197, 0, 0),
+(@CGUID+16, 2, -5.080652,46.597015,-5.6218123,4.817108631134033203, 100,1799301),
+--
 (@CGUID+19, 1, -10.473, 160.51, -5.54034, 4.94409, 8000, 0),
 (@CGUID+19, 2, -9.05886, 151.889, -5.54034, 4.99122, 0, 0),
 (@CGUID+19, 3, -3.30866, 147.948, -5.54034, 5.68237, 0, 0),
@@ -356,7 +352,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+15, @CGUID+16, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
 (@CGUID+17, @CGUID+18, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
 (@CGUID+6, @CGUID+19, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
 (@CGUID+48, @CGUID+51, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Greenkeeper
@@ -500,8 +495,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+12, 17993, 553, 3, 47.263, 291.679, -5.67585, 3.49587, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+13, 17993, 553, 3, -164.9891, 473.0342, -17.74157, 1.570796, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+14, 17993, 553, 3, -157.6686, 471.7192, -17.74158, 1.762783, 7200, 7200, 0, 0), -- Bloodwarder Protector
-(@CGUID+15, 17993, 553, 3, 0.319128, 93.3509, -5.65202, 4.74977, 7200, 7200, 0, 2), -- Bloodwarder Protector
-(@CGUID+16, 17993, 553, 3, -2.91064, 93.3038, -5.65202, 4.66102, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+15, 17993, 553, 3, 3.70889, 59.1549, -5.55738, 3.20157, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+16, 17993, 553, 3, -6.33425, 59.407, -5.55881, 0.030197, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+17, 17993, 553, 3, 2.61628, 90.4882, -5.64622, 4.33368, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+18, 17993, 553, 3, -5.64378, 90.6378, -5.64235, 4.93059, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+19, 17993, 553, 3, -10.473, 160.51, -5.54034, 4.94409, 7200, 7200, 0, 2), -- Bloodwarder Protector
@@ -720,9 +715,16 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `WorldStateExpression`, `Flags`, `StringID`) VALUES
+(@SGGUID+1, 'The Botanica - Group 001 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @CGUID+15, 0, 0), -- Bloodwarder Protectorr - right
+(@SGGUID+1, @CGUID+16, , 0), -- Bloodwarder Protectorr - right
+
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
@@ -782,9 +784,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1797604, 1000, 1, 66, 0, 0, 18404, @CGUID+38, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Steward Salute'),
 (1797604, 1000, 1, 66, 0, 0, 17993, @CGUID+22, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
 (1797604, 1000, 1, 66, 0, 0, 17993, @CGUID+23, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1799301, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Run Mode On'),
-(1799301, 0, 22, 190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Set Faction 190'),
-(1799301, 0, 48, 33554432, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Add UNIT_FLAG_NOT_SELECTABLE'),
 (1799302, 0, 15, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Cast Suicide'),
 (1799302, 17000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Despawn'),
 (1799303, 300, 0, 0, 0, 0, 0, 0, 0, 16994, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Text'),
@@ -816,7 +815,13 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1950506, 1000, 15, 34173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Cast Sunseeker Blessing'),
 (1950701, 0, 48, 33554432, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - Add UNIT_FLAG_NOT_SELECTABLE'),
 (1950701, 0, 22, 190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - Set Faction 190'),
-(1950701, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - MovementType 0');
+(1950701, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - MovementType 0'),
+-- reworked
+-- Sunseeker Protector entrance Intro
+(1799301, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Disable Waypoint Movement'),
+(1799301, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
+(1799301, 5000, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote STATE_READY1H');
+
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
