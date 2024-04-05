@@ -60,12 +60,11 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+41, 2, 21.3242, 287.963, -1.84732, 0, 0, 0),
 (@CGUID+41, 3, 0.477138, 288.18, 1.06289, 0, 0, 0),
 (@CGUID+41, 4, -15.096, 288.706, -0.936859, 0, 0, 0),
-(@CGUID+42, 1, -1.23806, 53.2298, -5.65058, 1.58023, 0, 0),
-(@CGUID+42, 2, -1.05688, 93.7442, -5.6518, 1.73888, 0, 0),
-(@CGUID+42, 3, -0.781224, 113.317, -5.58331, 1.75852, 0, 0),
-(@CGUID+42, 4, -1.38405, 95.682, -5.65011, 4.73989, 0, 0),
-(@CGUID+42, 5, -1.40982, 55.0453, -5.65189, 4.76188, 0, 0),
-(@CGUID+42, 6, -1.02573, 43.8376, -5.60675, 4.63622, 0, 0),
+-- reworked
+(@CGUID+42,1,-1.203372,40.81776,-5.697605, 100, 0, 0),
+(@CGUID+42,2,-1.29136,76.94684,-5.6766257, 100, 0, 0),
+(@CGUID+42,3,-0.755125,111.97571,-5.6210504, 100, 0, 0),
+--
 (@CGUID+43, 1, -0.68236, 155.411, -5.5395, 0, 0, 0),
 (@CGUID+43, 2, -15.2839, 169.103, -5.5395, 0, 0, 0),
 (@CGUID+43, 3, -15.7084, 183.927, -5.5395, 0, 0, 0),
@@ -293,8 +292,6 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+10, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
 (@CGUID+11, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
 (@CGUID+12, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+15, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+16, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
 (@CGUID+17, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
 (@CGUID+18, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
 (@CGUID+19, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
@@ -522,7 +519,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+39, 18404, 553, 3, 159.136, 283.813, -3.27211, 1.29749, 7200, 7200, 0, 0), -- Bloodwarder Steward
 (@CGUID+40, 18405, 553, 3, 14.0417, 186.274, -5.54034, 4.61588, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
 (@CGUID+41, 18405, 553, 3, -17.7493, 288.036, -1.50225, 3.13537, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
-(@CGUID+42, 18405, 553, 3, -1.15049, 43.6785, -5.60109, 4.72246, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
+(@CGUID+42, 18405, 553, 3, -0.891327, 103.078, -5.69279, 4.69708, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
 (@CGUID+43, 18405, 553, 3, -0.544267, 126.423, -5.53933, 1.64223, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
 (@CGUID+44, 18419, 553, 3, 13.8952, 197.464, -5.54041, 0.944012, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
 (@CGUID+45, 18419, 553, 3, 16.2932, 195.016, -5.54041, 0.366745, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
@@ -820,6 +817,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- Sunseeker Protector entrance Intro
 (1799301, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Disable Waypoint Movement'),
 (1799301, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
+(1799301, 3000, 54, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
 (1799301, 5000, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote STATE_READY1H');
 
 
