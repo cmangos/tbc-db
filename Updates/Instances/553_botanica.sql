@@ -16,21 +16,16 @@ SET @SGGUID := 5530000; -- spawn_groups
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
--- reworked
 (@CGUID+6, 1, 6.78807, 151.432, -5.45704, 5.51524, 0, 0),
 (@CGUID+6, 2, 2.362805, 147.59216, -5.540375, 100, 0, 0),
 (@CGUID+6, 3, 1.4508862, 134.90886, -5.5403657, 100, 0, 0),
 (@CGUID+6, 4, 4.29729, 131.94543, -5.5403824,4.729842185974121093, 100,1799301),
---
-(@CGUID+7, 1, -14.7259, 244.255, -5.21435, 6.01145, 8000, 0),
-(@CGUID+7, 2, -3.16054, 243.291, -5.5165, 0.021216, 0, 0),
-(@CGUID+7, 3, -3.54976, 215.113, -5.53931, 4.55846, 0, 0),
-(@CGUID+7, 4, -5.03136, 214.278, -5.54035, 4.38648, 10000, 1799305),
-(@CGUID+8, 1, 12.5368, 244.131, -5.27665, 3.28297, 8000, 0),
-(@CGUID+8, 2, 2.36405, 242.874, -5.51154, 3.34423, 0, 0),
-(@CGUID+8, 3, 2.44798, 215.308, -5.54035, 4.78387, 0, 0),
-(@CGUID+8, 4, 3.94135, 214.042, -5.54035, 4.79017, 10000, 1799305),
--- reworked
+(@CGUID+7, 1, -8.30962, 231.934, -5.45701, 100, 0, 0),
+(@CGUID+7, 2, -3.372449,213.47765,-5.540368, 100, 0, 0),
+(@CGUID+7, 3, -7.0612993,213.17163,-5.540358,4.729842185, 100, 1799301),
+(@CGUID+8, 1, 6.90713, 230.813, -5.45704, 100, 0, 0),
+(@CGUID+8, 2, 1.471469, 212.70377, -5.5403714, 100, 0, 0),
+(@CGUID+8, 3, 6.880586, 213.50626, -5.540371, 4.729842185, 100, 1799301),
 (@CGUID+15, 1, 3.70889, 59.1549, -5.55738, 3.20157, 0, 0),
 (@CGUID+15,	2, 2.6163983,46.717686,-5.612038,4.81710863,100,1799301),
 (@CGUID+16, 1, -6.33425, 59.407, -5.55881, 0.030197, 0, 0),
@@ -52,16 +47,13 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+27, 2, -171.44, 422.8947, -17.74458, 1.72701, 60000, 1799303),
 (@CGUID+36, 1, 50.9215, 293.818, -5.63032, 1.68861, 0, 0),
 (@CGUID+36, 2, 50.4144, 282.994, -5.64831, 4.90482, 0, 0),
-(@CGUID+40, 1, 13.2272, 178.591, -5.5404, 5.07526, 0, 0),
-(@CGUID+40, 2, 13.7786, 193.285, -5.5404, 1.59438, 0, 0),
-(@CGUID+40, 3, 9.13868, 197.798, -5.5404, 2.30752, 5000, 0),
-(@CGUID+40, 4, -0.635412, 203.851, -5.5404, 2.58712, 0, 0),
-(@CGUID+40, 5, -0.660702, 223.381, -5.5404, 1.5881, 0, 0),
-(@CGUID+40, 6, -0.571616, 247.901, -5.51829, 1.44751, 0, 0),
-(@CGUID+40, 7, -0.697975, 222.215, -5.54037, 4.71005, 3000, 0),
-(@CGUID+40, 8, -0.301946, 204.186, -5.54037, 4.2663, 0, 0),
-(@CGUID+40, 9, 8.68828, 198.154, -5.54037, 5.7028, 0, 0),
-(@CGUID+40, 10, 13.1168, 194.426, -5.54037, 5.58342, 0, 0),
+-- reworked
+(@CGUID+40, 1, 14.184935, 177.34564, -5.540413, 100, 0, 0),
+(@CGUID+40, 2, 14.394636, 191.62259, -5.540397, 100, 0, 0),
+(@CGUID+40, 3, 9.744885, 197.85094, -5.5403867, 100, 0, 0),
+(@CGUID+40, 4, -0.7083383, 202.68777, -5.5403733, 100, 0, 0),
+(@CGUID+40, 5, -0.863688, 242.40205, -5.575537, 100, 0, 0),
+--
 (@CGUID+41, 1, 1.07692, 288.114, 1.03451, 0, 0, 0),
 (@CGUID+41, 2, 21.3242, 287.963, -1.84732, 0, 0, 0),
 (@CGUID+41, 3, 0.477138, 288.18, 1.06289, 0, 0, 0),
@@ -76,26 +68,15 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+43, 3, -16.622828, 182.00102, -5.540346, 100, 0, 0),
 (@CGUID+43, 4, -15.95655, 167.93321, -5.5403438, 100, 0, 0),
 (@CGUID+43, 5, -0.7087244, 156.81229, -5.5403714, 100, 0, 0),
-
-(@CGUID+44, 1, 13.8952, 197.464, -5.54041, 0.944012, 18000, 1069),
-(@CGUID+44, 2, 15.0475, 193.183, -5.54122, 5.06034, 0, 0),
-(@CGUID+44, 3, 16.6998, 192.651, -5.54122, 1.01789, 0, 0),
-(@CGUID+44, 4, 17.8517, 192.876, -5.54122, 1.01789, 20000, 1069),
-(@CGUID+44, 5, 17.5705, 192.439, -5.54122, 6.14419, 0, 0),
-(@CGUID+44, 6, 14.347, 193.671, -5.54122, 2.7764, 0, 0),
-(@CGUID+44, 7, 13.4535, 196.095, -5.54122, 2.07583, 0, 0),
-(@CGUID+46, 1, -19.4848, 197.125, -5.54034, 1.06967, 29000, 1069),
-(@CGUID+46, 2, -18.3153, 195.691, -5.54122, 5.31716, 0, 0),
-(@CGUID+46, 3, -14.4761, 195.052, -5.54122, 6.11827, 0, 0),
-(@CGUID+46, 4, -9.28239, 198.789, -5.54122, 0.623626, 0, 0),
-(@CGUID+46, 5, -7.14421, 203.369, -5.54122, 1.55354, 0, 0),
-(@CGUID+46, 6, -8.27586, 203.442, -5.54122, 3.07721, 24000, 1069),
-(@CGUID+46, 7, -6.73612, 202.567, -5.54122, 5.76642, 0, 0),
-(@CGUID+46, 8, -8.75032, 199.727, -5.54122, 4.15635, 0, 0),
-(@CGUID+46, 9, -13.0694, 195.498, -5.54122, 3.85475, 0, 0),
-(@CGUID+46, 10, -17.5981, 194.664, -5.54122, 3.32383, 0, 0),
-(@CGUID+46, 11, -19.281, 195.896, -5.54122, 2.41276, 0, 0),
 -- reworked
+(@CGUID+44, 1, 17.342175, 193.04478, -5.5404058, 0.94247776, 18000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+44, 2, 13.118124, 198.47266, -5.5403895, 0.85521131, 18000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+46, 1, -19.617546, 196.94617, -5.540346, 1.361356, 18000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+46, 2, -10.832382, 198.47723, -5.540348, 100, 0, 0),
+(@CGUID+46, 3, -7.085683, 202.04625, -5.5403624, 100, 0, 0),
+(@CGUID+46, 4, -8.21974, 204.3309, -5.5403585, 3.5604715, 18000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+46, 5, -12.490674, 195.6114, -5.540347, 100, 0, 0),
+(@CGUID+46, 6, -16.424341, 194.29588, -5.5403495, 100, 0, 0),
 (@CGUID+48, 1, 2.213683, 163.03323, -5.5403795, 2.251474618911743164, 17000, 0), -- waittime between 5 and 30 seconds
 (@CGUID+48, 2, -4.294355, 161.2607, -5.540364, 100, 0, 0),
 (@CGUID+48, 3, -6.205455, 163.51398, -5.54036, 100, 0, 0),
@@ -302,9 +283,9 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+11, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
 (@CGUID+12, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
 (@CGUID+19, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+44, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+44, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+45, 0, 8, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+46, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+46, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+47, 0, 8, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+48, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+49, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
@@ -357,11 +338,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+46, @CGUID+47, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Greenkeeper
-(@CGUID+178, @CGUID+47, 1155), -- Bloodwarder Mender -> Bloodwarder Greenkeeper
-(@CGUID+44, @CGUID+177, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+45, @CGUID+177, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+8, @CGUID+7, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
 (@CGUID+49, @CGUID+179, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
 (@CGUID+50, @CGUID+179, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
 (@CGUID+30, @CGUID+28, 1155), -- Bloodfalcon -> Bloodwarder Falconer
@@ -488,7 +464,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+4, 17978, 553, 3, 4.9486, 596.5779, -15.07834, 4.694936, 86400, 86400, 0, 0), -- Thorngrin the Tender
 (@CGUID+5, 17980, 553, 3, -204.1253, 391.249, -11.19434, 0.01745329, 86400, 86400, 0, 0), -- Laj
 (@CGUID+6, 17993, 553, 3, 6.78807, 151.432, -5.45704, 5.51524, 7200, 7200, 0, 2), -- Bloodwarder Protector
-(@CGUID+7, 17993, 553, 3, -14.7259, 244.255, -5.21435, 6.01145, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+7, 17993, 553, 3, -8.30962, 231.934, -5.45701, 0.349066, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+8, 17993, 553, 3, 12.5368, 244.131, -5.27665, 3.28297, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+9, 17993, 553, 3, 15.7168, 284.394, -1.44363, 2.76937, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+10, 17993, 553, 3, 15.8236, 291.783, -1.47023, 3.74327, 7200, 7200, 0, 0), -- Bloodwarder Protector
@@ -521,14 +497,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+37, 18404, 553, 3, 149.565, 281.787, -4.65385, 1.01615, 7200, 7200, 0, 0), -- Bloodwarder Steward
 (@CGUID+38, 18404, 553, 3, 165.194, 298.208, -4.77445, 3.85272, 7200, 7200, 0, 0), -- Bloodwarder Steward
 (@CGUID+39, 18404, 553, 3, 159.136, 283.813, -3.27211, 1.29749, 7200, 7200, 0, 0), -- Bloodwarder Steward
-(@CGUID+40, 18405, 553, 3, 14.0417, 186.274, -5.54034, 4.61588, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
+(@CGUID+40, 18405, 553, 3, 14.3946, 191.623, -5.5404, 1.55611, 7200, 7200, 0, 4), -- Tempest-Forge Peacekeeper
 (@CGUID+41, 18405, 553, 3, -17.7493, 288.036, -1.50225, 3.13537, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
 (@CGUID+42, 18405, 553, 3, -0.891327, 103.078, -5.69279, 4.69708, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
 (@CGUID+43, 18405, 553, 3, -0.733345, 122.922, -5.54038, 4.71166, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
-(@CGUID+44, 18419, 553, 3, 13.8952, 197.464, -5.54041, 0.944012, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
-(@CGUID+45, 18419, 553, 3, 16.2932, 195.016, -5.54041, 0.366745, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
-(@CGUID+46, 18419, 553, 3, -19.4848, 197.125, -5.54034, 1.06967, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
-(@CGUID+47, 18419, 553, 3, -13.7922, 197.698, -5.54033, 2.3538, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
+(@CGUID+44, 18419, 553, 3, 17.342175,193.04478,-5.5404058,0.942477762699127197, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
+(@CGUID+45, 18419, 553, 3, 15.8812, 195.363, -5.45708, 0.244346, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
+(@CGUID+46, 18419, 553, 3, -19.617546,196.94617,-5.540346,1.361356854438781738, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
+(@CGUID+47, 18419, 553, 3, -14.2483, 197.646, -5.45702, 2.49582, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
 (@CGUID+48, 18419, 553, 3, 2.213683,163.03323,-5.5403795,2.251474618911743164, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
 (@CGUID+49, 18419, 553, 3, 4.00238, 252.355, -5.47518, 1.10514, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
 (@CGUID+50, 18419, 553, 3, -4.23689, 254.019, -5.4428, 2.29894, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
@@ -720,7 +696,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+1, 'The Botanica - Group 001 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+2, 'The Botanica - Group 002 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+3, 'The Botanica - Group 003 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
-(@SGGUID+4, 'The Botanica - Group 004 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0);
+(@SGGUID+4, 'The Botanica - Group 004 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
+(@SGGUID+5, 'The Botanica - Group 005 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
+(@SGGUID+6, 'The Botanica - Group 006 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
+(@SGGUID+7, 'The Botanica - Group 007 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -736,7 +715,18 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+4, @CGUID+180, 0, 0), -- Bloodwarder Mender
 (@SGGUID+4, @CGUID+48, 1, 0), -- Bloodwarder Greenkeeper
-(@SGGUID+4, @CGUID+51, 2, 0); -- Bloodwarder Greenkeeper
+(@SGGUID+4, @CGUID+51, 2, 0), -- Bloodwarder Greenkeeper
+
+(@SGGUID+5, @CGUID+177, 0, 0), -- Bloodwarder Mender
+(@SGGUID+5, @CGUID+45, 1, 0), -- Bloodwarder Greenkeeper
+(@SGGUID+5, @CGUID+44, 2, 0), -- Bloodwarder Greenkeeper
+
+(@SGGUID+6, @CGUID+178, 0, 0), -- Bloodwarder Mender
+(@SGGUID+6, @CGUID+47, 1, 0), -- Bloodwarder Greenkeeper
+(@SGGUID+6, @CGUID+46, 2, 0), -- Bloodwarder Greenkeeper
+
+(@SGGUID+7, @CGUID+7, 0, 0), -- Bloodwarder Protector - left
+(@SGGUID+7, @CGUID+8, 1, 0); -- Bloodwarder Protector - right
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
