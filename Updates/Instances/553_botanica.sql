@@ -10,6 +10,7 @@ SET @CGUID := 5530000; -- creatures
 SET @OGUID := 5530000; -- gameobjects
 SET @PGUID := 49000; -- pools
 SET @SGGUID := 5530000; -- spawn_groups
+SET @STRINGID := 5530000; -- used for StringID's
 
 -- =========
 -- CREATURES
@@ -450,7 +451,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+3, 17977, 553, 3, 63.84069, 391.8824, -27.89385, 3.211406, 86400, 86400, 0, 0), -- Warp Splinter
 (@CGUID+4, 17978, 553, 3, 4.9486, 596.5779, -15.07834, 4.694936, 86400, 86400, 0, 0), -- Thorngrin the Tender
 (@CGUID+5, 17980, 553, 3, -204.1253, 391.249, -11.19434, 0.01745329, 86400, 86400, 0, 0), -- Laj
-(@CGUID+6, 17993, 553, 3, 6.78807, 151.432, -5.45704, 5.51524, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+6, 17993, 553, 3, 6.78807, 151.432, -5.45704, 5.51524, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+7, 17993, 553, 3, -8.30962, 231.934, -5.45701, 0.349066, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+8, 17993, 553, 3, 12.5368, 244.131, -5.27665, 3.28297, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+9, 17993, 553, 3, 32.3466, 283.21, -5.56045, 1.8326, 7200, 7200, 0, 2), -- Bloodwarder Protector
@@ -463,7 +464,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+16, 17993, 553, 3, -6.33425, 59.407, -5.55881, 0.030197, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+17, 17993, 553, 3, 0.660349, 104.14, -5.63461, 2.63602, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+18, 17993, 553, 3, -2.99842, 104.287, -5.62851, 0.514356, 7200, 7200, 0, 2), -- Bloodwarder Protector
-(@CGUID+19, 17993, 553, 3, -8.37349, 150.827, -5.45702, 0.191986, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+19, 17993, 553, 3, -8.37349, 150.827, -5.45702, 0.191986, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+20, 17993, 553, 3, 151.661, 281.789, -4.33474, 1.61228, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+21, 17993, 553, 3, 153.757, 281.744, -4.00861, 2.17694, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+22, 17993, 553, 3, 165.165, 295.535, -4.37166, 3.11024, 7200, 7200, 0, 0), -- Bloodwarder Protector
@@ -675,18 +676,29 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
+-- ======
+-- StringIDs
+-- ======
+
+DELETE FROM string_id WHERE Id = @STRINGID+1;
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+1, 'BLOODWARDER_PROTECTOR_GROUP_01'),
+(@STRINGID+2, 'BLOODWARDER_PROTECTOR_GROUP_02'),
+(@STRINGID+3, 'BLOODWARDER_PROTECTOR_GROUP_03'),
+(@STRINGID+4, 'BLOODWARDER_PROTECTOR_GROUP_04');
+
 -- ============
 -- SPAWN GROUPS
 -- ============
 
 INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `WorldStateExpression`, `Flags`, `StringID`) VALUES
-(@SGGUID+1, 'The Botanica - Group 001 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
-(@SGGUID+2, 'The Botanica - Group 002 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
-(@SGGUID+3, 'The Botanica - Group 003 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+1, 'The Botanica - Group 001 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+1),
+(@SGGUID+2, 'The Botanica - Group 002 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+2),
+(@SGGUID+3, 'The Botanica - Group 003 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+3),
 (@SGGUID+4, 'The Botanica - Group 004 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
 (@SGGUID+5, 'The Botanica - Group 005 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
 (@SGGUID+6, 'The Botanica - Group 006 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
-(@SGGUID+7, 'The Botanica - Group 007 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+7, 'The Botanica - Group 007 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+4),
 (@SGGUID+8, 'The Botanica - Group 008 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
 (@SGGUID+9, 'The Botanica - Group 009 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 0, 0, 0, 1, 0),
 (@SGGUID+10, 'The Botanica - Group 010 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0);
@@ -824,8 +836,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 -- reworked
 -- Sunseeker Protector entrance Intro
 (1799301, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Disable Waypoint Movement'),
-(1799301, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
-(1799301, 3000, 66, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
+(1799301, 3000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
 (1799301, 5000, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote STATE_READY1H');
 
 
