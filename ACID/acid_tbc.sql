@@ -26537,7 +26537,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Thorngrin the Tender 17978 - boss_thorngrin
 -- Laj (17980) - boss_laj
 -- Bloodwarder Protector - spell_list
-('1799303','17993','2','0','100','1024','20','0','0','0','0','0','11','35399','0','0','0','0','0','0','0','0','0','0','Bloodwarder Protector - Cast Spell Reflection at 20% HP'),
+('1799301','17993','2','0','100','1024','20','0','0','0','0','0','11','35399','0','0','0','0','0','0','0','0','0','0','Bloodwarder Protector - Cast Spell Reflection at 20% HP'),
 -- Bloodwarder Falconer 17994 - spell_list
 ('1799401','17994','2','0','100','1024','20','0','0','0','0','0','11','31567','0','0','0','0','0','0','0','0','0','0','Bloodwarder Falconer - Cast Deterrence at 20% HP'),
 -- Bloodfalcon 18155 - spell_list
