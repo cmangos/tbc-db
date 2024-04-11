@@ -266,14 +266,6 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17976, 0, 34, 159.54, 287.615, -4.10529, 5.3792, 10000, 1797601);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+6, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+7, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+8, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+9, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+10, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+11, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+12, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+19, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
 (@CGUID+44, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+45, 0, 8, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+46, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
@@ -325,6 +317,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+179, 0, 8, 0, 0, 0, NULL); -- Bloodwarder Mender
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
+(17993, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Protector
 (17976, 0, 0, 1, 0, 0, '19818 34792'), -- Commander Sarannis
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
