@@ -11,6 +11,7 @@ SET @OGUID := 5530000; -- gameobjects
 SET @PGUID := 49000; -- pools
 SET @SGGUID := 5530000; -- spawn_groups
 SET @STRINGID := 5530000; -- used for StringID's
+SET @RELAYID := 5530000; -- used for dbscript_on_relay
 
 -- =========
 -- CREATURES
@@ -781,7 +782,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501,1797601,1797602,1797603,1797604,1799301,1799302,1799303,1799304,1799305, 1840401,
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501,1797601,1797602,1797603,1797604,1799302,1799303,1799304,1799305, 
 1842001,1842002,1842003,1842004,1842005,1842006,1842101,1842201,1842202,1842203,1950501,1950502,1950503,1950504,1950505,1950506,1950701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1797501, 0, 0, 0, 0, 0, 0, 0, 0, 16945, 16946, 16948, 16947, 0, 0, 0, 0, 'High Botanist Freywinn - Text'),
@@ -829,18 +830,35 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1950506, 1000, 15, 34173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Cast Sunseeker Blessing'),
 (1950701, 0, 48, 33554432, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - Add UNIT_FLAG_NOT_SELECTABLE'),
 (1950701, 0, 22, 190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - Set Faction 190'),
-(1950701, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - MovementType 0'),
--- reworked
+(1950701, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - MovementType 0');
+
+-- Reworked MovementScripts
+-- Once Bota rework is done, we will only have one of this
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1799301, 1840401);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Sunseeker Protector entrance Intro
-(1799301, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Disable Waypoint Movement'),
-(1799301, 3000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
-(1799301, 5000, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote STATE_READY1H'),
+(1799301, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Disable Waypoint Movement'),
+(1799301, 2000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
+(1799301, 4000, 0, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote STATE_READY1H'),
 -- Bloodwarder Steward
-(1840401, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Steward - Disable Waypoint Movement'),
-(1840401, 1000, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Exclamation'),
-(1840401, 4000, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Steward - Move Waypoints');
+(1840401, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Steward - Disable Waypoint Movement'),
+(1840401, 1000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Exclamation'),
+(1840401, 4000, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Steward - Move Waypoints');
 
-
+-- RelayScripts for RP handled via creature_ai_scripts
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Bloodwarder Greenkeeper at then end of first Hallway
+-- On retail the rp can even happen if one of the Bloodwarder Greenkeepers is dead, to minimize dberrors we only let the rp happen when both are alive
+(@RELAYID+1, 0, 0, 31, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Bloodwarder Greenkeeper - Terminate Script if 2nd Bloodwarder Greenkeeper Found'),
+(@RELAYID+1, 0, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.06981, 'Bloodwarder Greenkeeper - Move Orientation'),
+(@RELAYID+1, 0, 2, 3, 0, 0, 0, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 3.1415, 'Bloodwarder Greenkeeper (2) - Move Orientation'),
+(@RELAYID+1, 0, 3, 1, 378, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0., 'Bloodwarder Greenkeeper - Emote StateTalk'),
+(@RELAYID+1, 0, 4, 1, 378, 0, 0, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Greenkeeper (2) - Emote StateTalk'),
+(@RELAYID+1, 7000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.14675, 'Bloodwarder Greenkeeper - Move Orientation'),
+(@RELAYID+1, 7000, 1, 3, 0, 0, 0, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0.977, 'Bloodwarder Greenkeeper (2) - Move Orientation'),
+(@RELAYID+1, 7000, 2, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0., 'Bloodwarder Greenkeeper - Emote StateUseStanding'),
+(@RELAYID+1, 7000, 3, 1, 69, 0, 0, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Greenkeeper (2) - Emote StateUseStanding');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

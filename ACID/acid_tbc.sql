@@ -26546,7 +26546,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1840401','18404','0','0','100','1025','11000','18000','17000','25000','0','0','11','34821','15','0','0','0','0','0','0','0','0','0','Bloodwarder Steward - Cast Arcane Flurry'),
 -- Tempest Forge Peacekeeper - spell_list
 ('1840501','18405','1','0','15','1','30000','120000','120000','240000','0','0','1','16785','16784','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Random Say OOC'),
--- Bloodwarder Greenkeeper - spell_list
+-- Bloodwarder Greenkeeper 18419 - spell_list - guid based
+('5530050','-5530050','1','0','100','1','0','0','25000','30000','0','0','53','5530001','0','0','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper - Start RelayScript'),
 -- Sunseeker Geomancer (4.3.4 Official Data - Normal)
 ('1842001','18420','9','0','100','1025','0','8','3600','8400','0','0','11','35124','0','0','0','0','0','0','0','0','0','0','Sunseeker Geomancer - Cast Arcane Explosion'),
 -- Sunseeker Researcher 18421 (4.3.4 Official Data - Normal/Heroic)
