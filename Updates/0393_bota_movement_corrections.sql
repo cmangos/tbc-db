@@ -18,3 +18,8 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.14286' WHERE entry I
 -- [2] WalkSpeed: 2.5 
 -- [2] RunSpeed: 8
 UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.14286' WHERE entry IN (17993, 21548);
+
+-- Bloodfalcon
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.14286' WHERE entry IN (18155, 21544);
