@@ -26548,6 +26548,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Bloodwarder Steward 18404 - spell_list
 -- Tempest Forge Peacekeeper - spell_list
 ('1840501','18405','1','0','15','1','30000','120000','120000','240000','0','0','1','16785','16784','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Random Say OOC'),
+('1840502','18405','34','0','100','1','34793','-1','0','0','0','0','13','-100','0','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Reset Target Threat on hit by Arcane Blast'),
 -- Bloodwarder Greenkeeper 18419 - spell_list - guid based
 ('5530050','-5530050','1','0','100','1','0','0','25000','30000','0','0','53','5530001','0','0','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper - Start RelayScript'),
 -- Sunseeker Geomancer (4.3.4 Official Data - Normal)
