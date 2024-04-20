@@ -356,12 +356,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+20, @CGUID+37, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+21, @CGUID+37, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+24, @CGUID+39, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+25, @CGUID+39, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+22, @CGUID+38, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+23, @CGUID+38, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
 (@CGUID+63, @CGUID+54, 1155), -- Sunseeker Botanist -> Sunseeker Researcher
 (@CGUID+86, @CGUID+54, 1155), -- Sunseeker Chemist -> Sunseeker Researcher
 (@CGUID+144, @CGUID+54, 1155), -- Greater Frayer -> Sunseeker Researcher
@@ -746,7 +740,10 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+9, 'The Botanica - Group 009 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 4, 0, 0, 3, 0),
 (@SGGUID+10, 'The Botanica - Group 010 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+5),
 (@SGGUID+11, 'The Botanica - Group 011 - Bloodwarder Protector (2) - Bloodwarder Steward', 0, 0, 0, 0, 1, @STRINGID+6),
-(@SGGUID+12, 'The Botanica - Group 012 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 4, 0, 0, 1, 0);
+(@SGGUID+12, 'The Botanica - Group 012 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 4, 0, 0, 1, 0),
+(@SGGUID+13, 'The Botanica - Group 013 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+14, 'The Botanica - Group 014 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+15, 'The Botanica - Group 015 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -794,7 +791,19 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+12, @CGUID+29, 0, 0), -- Bloodwarder Falconer
 (@SGGUID+12, @CGUID+33, 1, 0), -- Bloodfalcon
 (@SGGUID+12, @CGUID+34, 2, 0), -- Bloodfalcon
-(@SGGUID+12, @CGUID+35, 3, 0); -- Bloodfalcon
+(@SGGUID+12, @CGUID+35, 3, 0), -- Bloodfalcon
+
+(@SGGUID+13, @CGUID+37, 0, 0), --Bloodwarder Steward
+(@SGGUID+13, @CGUID+20, 1, 0), --Bloodwarder Protector
+(@SGGUID+13, @CGUID+21, 2, 0), --Bloodwarder Protector
+
+(@SGGUID+14, @CGUID+39, 0, 0), --Bloodwarder Steward
+(@SGGUID+14, @CGUID+24, 1, 0), --Bloodwarder Protector
+(@SGGUID+14, @CGUID+25, 2, 0), --Bloodwarder Protector
+
+(@SGGUID+15, @CGUID+38, 0, 0), --Bloodwarder Steward
+(@SGGUID+15, @CGUID+22, 1, 0), --Bloodwarder Protector
+(@SGGUID+15, @CGUID+23, 2, 0); --Bloodwarder Protector
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
