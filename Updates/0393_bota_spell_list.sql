@@ -8,9 +8,9 @@ INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `C
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1799301, 2154801);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
-(1799301, 1, 34784, 0, -1, 207, 0, 100, 0, 6000, 15000, 20000, 30000, 'Bloodwarder Protector - Intervene - friendly missing 25%'),
+(1799301, 1, 34784, 0, -1, 203, 0, 100, 0, 6000, 15000, 20000, 30000, 'Bloodwarder Protector - Intervene - friendly missing 10%'),
 (1799301, 2, 29765, 0, -1, 1, 0, 100, 0, 6000, 14000, 7000, 16000, 'Bloodwarder Protector - Crystal Strike - current'),
-(2154801, 1, 34784, 0, -1, 207, 0, 100, 0, 6000, 15000, 20000, 30000, 'Bloodwarder Protector - Intervene - friendly missing 25%'),
+(2154801, 1, 34784, 0, -1, 203, 0, 100, 0, 6000, 15000, 20000, 30000, 'Bloodwarder Protector - Intervene - friendly missing 10%'),
 (2154801, 2, 29765, 0, -1, 1, 0, 100, 0, 6000, 14000, 7000, 16000, 'Bloodwarder Protector - Crystal Strike - current');
 
 UPDATE `creature_template` SET `SpellList` = 1799301 WHERE `entry` = 17993;
