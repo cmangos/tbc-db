@@ -229,40 +229,9 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17975, 0, 6, 120.543, 449.982, -4.88372, 4.41551, 10000, 1069),
 (17975, 0, 7, 120.543, 449.982, -4.88372, 4.41551, 10000, 1797501),
 (17975, 0, 8, 120.796, 450.93, -4.93171, 1.61949, 0, 0),
-(17976, 0, 1, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 2, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 3, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 4, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 5, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 6, 151.954, 283.758, -4.67356, 4.76895, 3000, 1797602),
-(17976, 0, 7, 151.954, 283.758, -4.67356, 4.76895, 6000, 1378),
-(17976, 0, 8, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 9, 162.8, 295.447, -4.80194, 0.02357, 3000, 1797604),
-(17976, 0, 10, 162.8, 295.447, -4.80194, 0.02357, 6000, 1378),
-(17976, 0, 11, 152.491, 294.444, -4.6658, 2.39233, 0, 0),
-(17976, 0, 12, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 13, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 14, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 15, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 16, 159.54, 287.615, -4.10529, 5.3792, 3000, 1797603),
-(17976, 0, 17, 159.54, 287.615, -4.10529, 5.3792, 6000, 1378),
-(17976, 0, 18, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 19, 151.954, 283.758, -4.67356, 4.76895, 3000, 1797602),
-(17976, 0, 20, 151.954, 283.758, -4.67356, 4.76895, 6000, 1378),
-(17976, 0, 21, 152.491, 294.444, -4.6658, 2.39233, 0, 0),
-(17976, 0, 22, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 23, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 24, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 25, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 26, 162.8, 295.447, -4.80194, 0.02357, 3000, 1797604),
-(17976, 0, 27, 162.8, 295.447, -4.80194, 0.02357, 6000, 1378),
-(17976, 0, 28, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 29, 159.54, 287.615, -4.10529, 5.3792, 3000, 1797603),
-(17976, 0, 30, 159.54, 287.615, -4.10529, 5.3792, 6000, 1378),
-(17976, 0, 31, 152.491, 294.444, -4.6658, 2.39233, 0, 0),
-(17976, 0, 32, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 33, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 34, 159.54, 287.615, -4.10529, 5.3792, 10000, 1797601),
+-- Commander Sarannis
+(17976, 0, 1, 125.72935,321.18497,-3.6359386, 100, 0, 0),
+(17976, 0, 2, 151.0752,295.8979,-4.574456, 100, 1000, 1797601),
 -- Bloodwarder Steward after Intro
 (18404, 1, 1, 50.01569,292.96957,-5.64004, 100, 1000, 0),
 (18404, 1, 2, 50.185688,282.52002,-5.6333885, 100, 1000, 0),
@@ -460,7 +429,7 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 17975, 553, 3, 118.742, 452.274, -4.89607, 0.796403, 86400, 86400, 0, 2), -- High Botanist Freywinn
-(@CGUID+2, 17976, 553, 3, 120.012, 327.677, -4.99033, 5.47973, 86400, 86400, 0, 2), -- Commander Sarannis
+(@CGUID+2, 17976, 553, 3, 125.72935,321.18497,-3.6359386, 5.47973, 86400, 86400, 0, 2), -- Commander Sarannis
 (@CGUID+3, 17977, 553, 3, 63.84069, 391.8824, -27.89385, 3.211406, 86400, 86400, 0, 0), -- Warp Splinter
 (@CGUID+4, 17978, 553, 3, 4.9486, 596.5779, -15.07834, 4.694936, 86400, 86400, 0, 0), -- Thorngrin the Tender
 (@CGUID+5, 17980, 553, 3, -204.1253, 391.249, -11.19434, 0.01745329, 86400, 86400, 0, 0), -- Laj
@@ -705,7 +674,10 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+8, 'BLOODFALCON_02'),
 (@STRINGID+9, 'BLOODFALCON_03'),
 (@STRINGID+10, 'BLOODFALCON_04'),
-(@STRINGID+11, 'BLOODFALCON_05');
+(@STRINGID+11, 'BLOODFALCON_05'),
+(@STRINGID+12, 'COMMANDER_SARANNIS_GROUP_01'), -- bloodwarder protector / steward groups before sarannis
+(@STRINGID+13, 'COMMANDER_SARANNIS_GROUP_02'), -- bloodwarder protector / steward groups before sarannis
+(@STRINGID+14, 'COMMANDER_SARANNIS_GROUP_03'); -- bloodwarder protector / steward groups before sarannis
 
 DELETE FROM creature_spawn_data WHERE Id IN (1815501, 1815502, 1815503, 1815504, 1815505);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
@@ -741,9 +713,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+10, 'The Botanica - Group 010 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+5),
 (@SGGUID+11, 'The Botanica - Group 011 - Bloodwarder Protector (2) - Bloodwarder Steward', 0, 0, 0, 0, 1, @STRINGID+6),
 (@SGGUID+12, 'The Botanica - Group 012 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 4, 0, 0, 1, 0),
-(@SGGUID+13, 'The Botanica - Group 013 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
-(@SGGUID+14, 'The Botanica - Group 014 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0),
-(@SGGUID+15, 'The Botanica - Group 015 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0);
+(@SGGUID+13, 'The Botanica - Group 013 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+12),
+(@SGGUID+14, 'The Botanica - Group 014 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+13),
+(@SGGUID+15, 'The Botanica - Group 015 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+14);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -793,17 +765,17 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+12, @CGUID+34, 2, 0), -- Bloodfalcon
 (@SGGUID+12, @CGUID+35, 3, 0), -- Bloodfalcon
 
-(@SGGUID+13, @CGUID+37, 0, 0), --Bloodwarder Steward
-(@SGGUID+13, @CGUID+20, 1, 0), --Bloodwarder Protector
-(@SGGUID+13, @CGUID+21, 2, 0), --Bloodwarder Protector
+(@SGGUID+13, @CGUID+37, 0, 0), -- Bloodwarder Steward
+(@SGGUID+13, @CGUID+20, 1, 0), -- Bloodwarder Protector
+(@SGGUID+13, @CGUID+21, 2, 0), -- Bloodwarder Protector
 
-(@SGGUID+14, @CGUID+39, 0, 0), --Bloodwarder Steward
-(@SGGUID+14, @CGUID+24, 1, 0), --Bloodwarder Protector
-(@SGGUID+14, @CGUID+25, 2, 0), --Bloodwarder Protector
+(@SGGUID+14, @CGUID+39, 0, 0), -- Bloodwarder Steward
+(@SGGUID+14, @CGUID+24, 1, 0), -- Bloodwarder Protector
+(@SGGUID+14, @CGUID+25, 2, 0), -- Bloodwarder Protector
 
-(@SGGUID+15, @CGUID+38, 0, 0), --Bloodwarder Steward
-(@SGGUID+15, @CGUID+22, 1, 0), --Bloodwarder Protector
-(@SGGUID+15, @CGUID+23, 2, 0); --Bloodwarder Protector
+(@SGGUID+15, @CGUID+38, 0, 0), -- Bloodwarder Steward
+(@SGGUID+15, @CGUID+22, 1, 0), -- Bloodwarder Protector
+(@SGGUID+15, @CGUID+23, 2, 0); -- Bloodwarder Protector
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
@@ -847,23 +819,10 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501,1797601,1797602,1797603,1797604,1799302,1799303,1799304,1799305,
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501,1799302,1799303,1799304,1799305,
 1842001,1842002,1842003,1842004,1842005,1842006,1842101,1842201,1842202,1842203,1950501,1950502,1950503,1950504,1950505,1950506,1950701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1797501, 0, 0, 0, 0, 0, 0, 0, 0, 16945, 16946, 16948, 16947, 0, 0, 0, 0, 'High Botanist Freywinn - Text'),
-(1797601, 0, 0, 0, 0, 0, 0, 0, 0, 16861, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis - Text'),
-(1797602, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Salute'),
-(1797602, 1000, 1, 66, 0, 0, 18404, @CGUID+37, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Steward Salute'),
-(1797602, 1000, 1, 66, 0, 0, 17993, @CGUID+20, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797602, 1000, 1, 66, 0, 0, 17993, @CGUID+21, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797603, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Salute'),
-(1797603, 1000, 1, 66, 0, 0, 17993, @CGUID+24, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797603, 1000, 1, 66, 0, 0, 17993, @CGUID+25, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797603, 1000, 1, 66, 0, 0, 18404, @CGUID+39, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Steward Salute'),
-(1797604, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Salute'),
-(1797604, 1000, 1, 66, 0, 0, 18404, @CGUID+38, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Steward Salute'),
-(1797604, 1000, 1, 66, 0, 0, 17993, @CGUID+22, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797604, 1000, 1, 66, 0, 0, 17993, @CGUID+23, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
 (1799302, 0, 15, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Cast Suicide'),
 (1799302, 17000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Despawn'),
 (1799303, 300, 0, 0, 0, 0, 0, 0, 0, 16994, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Text'),
@@ -899,9 +858,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 
 -- Reworked MovementScripts
 -- Once Bota rework is done, we will only have one of this
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1799301, 1815501, 1840401);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797601, 1799301, 1815501, 1840401);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- Sunseeker Protector entrance Intro
+-- Commander Sarannis RP
+(1797601, 0, 0, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis - 10% chance to yell, 10% chance to talk with friends'),
+-- Sunseeker Protector entrance Intro 
 (1799301, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Disable Waypoint Movement'),
 (1799301, 2000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
 (1799301, 4000, 0, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote STATE_READY1H'),
@@ -914,7 +875,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1840401, 4000, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Steward - Move Waypoints');
 
 
-DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Bloodwarder Falconer RP script 
 (@RELAYID+1, 1, @RELAYID+2, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 01'),
@@ -922,7 +883,13 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+1, 1, @RELAYID+4, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 02'),
 -- 2nd Bloodwarder Falconer RP script
 (@RELAYID+2, 1, @RELAYID+5, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 03'),
-(@RELAYID+2, 1, @RELAYID+6, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 04');
+(@RELAYID+2, 1, @RELAYID+6, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 04'),
+-- Commander Sarannis
+(@RELAYID+3, 1, @RELAYID+7, 5, 'Commander Sarannis - random yell'),
+(@RELAYID+3, 1, @RELAYID+8, 5, 'Commander Sarannis - talk event 01'),
+(@RELAYID+3, 1, @RELAYID+9, 5, 'Commander Sarannis - talk event 02'),
+(@RELAYID+3, 1, @RELAYID+10, 5, 'Commander Sarannis - talk event 03'),
+(@RELAYID+3, 1, 0, 80, 'Commander Sarannis - nothing');
 
 -- RelayScripts for RP handled via creature_ai_scripts
 DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
@@ -967,7 +934,43 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+6,1,1,36,0,0,0,@STRINGID+11,10,2049,0,0,0,0,0,0,0,0,'Bloodwarder Falconer - face StringID'),
 (@RELAYID+6,1,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Emote Point'),
 (@RELAYID+6,1,3,0,0,0,0,0,0,0,16783,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Say Text'),
-(@RELAYID+6,1,4,20,2,5,0,@STRINGID+11,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints');
+(@RELAYID+6,1,4,20,2,5,0,@STRINGID+11,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints'),
+-- Commander Sarannis random Yell
+(@RELAYID+7,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Stop Waypoint'),
+(@RELAYID+7,1,0,3,0,0,0,0,0,0,0,0,0,0,155.922,290.894,-4.873918,0, 'Commander Sarannis - MoveToPoint'),
+(@RELAYID+7,2000,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote Cheer'),
+(@RELAYID+7,2000,1,0,0,0,0,0,0,0,16861,0,0,0,0,0,0,0, 'Commander Sarannis - Say Text'),
+(@RELAYID+7,8000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Start Waypoint'),
+-- Commander Sarannis talk event group 01
+(@RELAYID+8,0,0,31,0,10,0,@STRINGID+12,20,0x800,0,0,0,0,0,0,0,0, 'Commander Sarannis - search for string id - terminate if not found'),
+(@RELAYID+8,1,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Stop Waypoint'),
+(@RELAYID+8,1,1,3,0,0,0,0,0,0,0,0,0,0,151.53856,284.7357,-4.882605,0, 'Commander Sarannis - MoveToPoint'),
+(@RELAYID+8,3000,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,4.7538, 'Commander Sarannis - Change Orientation'),
+(@RELAYID+8,3000,1,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote OneShotSalute'),
+(@RELAYID+8,3000,2,36,0,0,0,@STRINGID+12,5,2560,0,0,0,0,0,0,0,0, 'StringId - face Commander Sarannis'),
+(@RELAYID+8,3000,3,1,66,0,0,@STRINGID+12,5,2560,0,0,0,0,0,0,0,0, 'StringId - Emote OneShotSalute'),
+(@RELAYID+8,6000,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote Talk'),
+(@RELAYID+8,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Start Waypoint'),
+-- Commander Sarannis talk event group 02
+(@RELAYID+9,0,0,31,0,10,0,@STRINGID+13,20,0x800,0,0,0,0,0,0,0,0, 'Commander Sarannis - search for string id - terminate if not found'),
+(@RELAYID+9,1,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Stop Waypoint'),
+(@RELAYID+9,1,1,3,0,0,0,0,0,0,0,0,0,0,160.72835,289.48978,-4.2098813,0, 'Commander Sarannis - MoveToPoint'),
+(@RELAYID+9,3000,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,5.693943, 'Commander Sarannis - Change Orientation'),
+(@RELAYID+9,3000,1,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote OneShotSalute'),
+(@RELAYID+9,3000,2,36,0,0,0,@STRINGID+13,5,2560,0,0,0,0,0,0,0,0, 'StringId - face Commander Sarannis'),
+(@RELAYID+9,3000,3,1,66,0,0,@STRINGID+13,5,2560,0,0,0,0,0,0,0,0, 'StringId - Emote OneShotSalute'),
+(@RELAYID+9,6000,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote Talk'),
+(@RELAYID+9,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Start Waypoint'),
+-- Commander Sarannis talk event group 03
+(@RELAYID+10,0,0,31,0,10,0,@STRINGID+14,20,0x800,0,0,0,0,0,0,0,0, 'Commander Sarannis - search for string id - terminate if not found'),
+(@RELAYID+10,1,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Stop Waypoint'),
+(@RELAYID+10,1,1,3,0,0,0,0,0,0,0,0,0,0,162.1837,295.61197,-4.9209743,0, 'Commander Sarannis - MoveToPoint'),
+(@RELAYID+10,3000,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,6.2574, 'Commander Sarannis - Change Orientation'),
+(@RELAYID+10,3000,1,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote OneShotSalute'),
+(@RELAYID+10,3000,2,36,0,0,0,@STRINGID+14,5,2560,0,0,0,0,0,0,0,0, 'StringId - face Commander Sarannis'),
+(@RELAYID+10,3000,3,1,66,0,0,@STRINGID+14,5,2560,0,0,0,0,0,0,0,0, 'StringId - Emote OneShotSalute'),
+(@RELAYID+10,6000,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote Talk'),
+(@RELAYID+10,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Start Waypoint');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
