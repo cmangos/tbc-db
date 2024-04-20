@@ -285,7 +285,19 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (18155, 3, 3, -30.454828, 284.31418, -1.8473247, 100, 0, 0),
 (18155, 3, 4, -36.54842, 295.91965, -1.8473227, 100, 0, 0),
 (18155, 3, 5, -43.856365, 291.876, -1.8473231, 100, 0, 0),
-(18155, 3, 6, -36.486675, 280.83936, -1.8473251, 100, 1000, 1815501);
+(18155, 3, 6, -36.486675, 280.83936, -1.8473251, 100, 1000, 1815501),
+-- cguid +34
+(18155, 4, 1, 111.71642, 300.11435, -5.3999314, 100, 0, 0),
+(18155, 4, 2, 120.55673, 289.947, -5.4101934, 100, 0, 0),
+(18155, 4, 3, 124.90892, 284.409, -5.414986, 100, 0, 0),
+(18155, 4, 4, 114.74198, 276.31375, -6.998992, 100, 0, 0),
+(18155, 4, 5, 109.52783, 279.67487, -6.9367213, 100, 1000, 1815501),
+-- cguid +35
+(18155, 5, 1, 85.99113, 289.54016, -5.40623, 100, 0, 0),
+(18155, 5, 2, 77.20944, 279.08054, -5.4442782, 100, 0, 0),
+(18155, 5, 3, 84.07146, 264.81665, -5.4246054, 100, 0, 0),
+(18155, 5, 4, 92.041145, 267.70798, -5.393035, 100, 0, 0),
+(18155, 5, 5, 100.84679, 280.37253, -6.887546, 100, 1000, 1815501);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
 (@CGUID+44, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
@@ -344,9 +356,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+33, @CGUID+29, 1155), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+34, @CGUID+29, 1155), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+35, @CGUID+29, 1155), -- Bloodfalcon -> Bloodwarder Falconer
 (@CGUID+20, @CGUID+37, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
 (@CGUID+21, @CGUID+37, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
 (@CGUID+24, @CGUID+39, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
@@ -488,9 +497,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+30, 18155, 553, 3, -29.06995,287.01328,-1.8473243, 0.007071402, 7200, 7200, 3, 1), -- Bloodfalcon
 (@CGUID+31, 18155, 553, 3, -36.823017,294.92844,-1.8473228, 3.965074, 7200, 7200, 3, 1), -- Bloodfalcon
 (@CGUID+32, 18155, 553, 3, -36.486675,280.83936,-1.8473251, 4.205199, 7200, 7200, 3, 1), -- Bloodfalcon
-(@CGUID+33, 18155, 553, 3, 99.73528, 294.2418, -6.621962, 5.114256, 7200, 7200, 2, 1), -- Bloodfalcon
-(@CGUID+34, 18155, 553, 3, 109.5525, 279.5057, -6.903647, 2.450218, 7200, 7200, 2, 1), -- Bloodfalcon
-(@CGUID+35, 18155, 553, 3, 100.5429, 280.2014, -6.790884, 1.894372, 7200, 7200, 2, 1), -- Bloodfalcon
+(@CGUID+33, 18155, 553, 3, 99.73528, 294.2418, -6.621962, 5.114256, 7200, 7200, 3, 1), -- Bloodfalcon
+(@CGUID+34, 18155, 553, 3, 109.52783, 279.67487, -6.9367213, 2.450218, 7200, 7200, 3, 1), -- Bloodfalcon
+(@CGUID+35, 18155, 553, 3, 100.84679,280.37253,-6.887546, 1.894372, 7200, 7200, 3, 1), -- Bloodfalcon
 (@CGUID+36, 18404, 553, 3, 76.77335, 282.6367, -5.3302107, 1.815142, 7200, 7200, 0, 0), -- Bloodwarder Steward
 (@CGUID+37, 18404, 553, 3, 149.565, 281.787, -4.65385, 1.01615, 7200, 7200, 0, 0), -- Bloodwarder Steward
 (@CGUID+38, 18404, 553, 3, 165.194, 298.208, -4.77445, 3.85272, 7200, 7200, 0, 0), -- Bloodwarder Steward
@@ -700,20 +709,26 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+6, 'BLOODWARDER_PROTECTOR_GROUP_06'),
 (@STRINGID+7, 'BLOODFALCON_01'),
 (@STRINGID+8, 'BLOODFALCON_02'),
-(@STRINGID+9, 'BLOODFALCON_03');
+(@STRINGID+9, 'BLOODFALCON_03'),
+(@STRINGID+10, 'BLOODFALCON_04'),
+(@STRINGID+11, 'BLOODFALCON_05');
 
-DELETE FROM creature_spawn_data WHERE Id IN (1815501, 1815502, 1815503);
+DELETE FROM creature_spawn_data WHERE Id IN (1815501, 1815502, 1815503, 1815504, 1815505);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
 -- Bloodfalcon StringIds
 (@CGUID+30, '1815501'),
 (@CGUID+31, '1815502'),
-(@CGUID+32, '1815503');
+(@CGUID+32, '1815503'),
+(@CGUID+34, '1815504'),
+(@CGUID+35, '1815505');
 
-DELETE FROM creature_spawn_data_template WHERE Entry IN (1815501, 1815502, 1815503);
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1815501, 1815502, 1815503, 1815504, 1815505);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES 
 ('1815501', @STRINGID+7, 'The Botanica - BLOODFALCON_01'), 
 ('1815502', @STRINGID+8, 'The Botanica - BLOODFALCON_02'), 
-('1815503', @STRINGID+9, 'The Botanica - BLOODFALCON_03'); 
+('1815503', @STRINGID+9, 'The Botanica - BLOODFALCON_03'),
+('1815504', @STRINGID+10, 'The Botanica - BLOODFALCON_04'),
+('1815505', @STRINGID+11, 'The Botanica - BLOODFALCON_05');
 
 -- ============
 -- SPAWN GROUPS
@@ -730,7 +745,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+8, 'The Botanica - Group 008 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
 (@SGGUID+9, 'The Botanica - Group 009 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 4, 0, 0, 3, 0),
 (@SGGUID+10, 'The Botanica - Group 010 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+5),
-(@SGGUID+11, 'The Botanica - Group 011 - Bloodwarder Protector (2) - Bloodwarder Steward', 0, 0, 0, 0, 1, @STRINGID+6);
+(@SGGUID+11, 'The Botanica - Group 011 - Bloodwarder Protector (2) - Bloodwarder Steward', 0, 0, 0, 0, 1, @STRINGID+6),
+(@SGGUID+12, 'The Botanica - Group 012 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 4, 0, 0, 1, 0);
 
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 
@@ -773,7 +789,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+11, @CGUID+36, 0, 0), -- Bloodwarder Steward
 (@SGGUID+11, @CGUID+11, 1, 0), -- Bloodwarder Protector - right
-(@SGGUID+11, @CGUID+12, 2, 0); -- Bloodwarder Protector - left
+(@SGGUID+11, @CGUID+12, 2, 0), -- Bloodwarder Protector - left
+
+(@SGGUID+12, @CGUID+29, 0, 0), -- Bloodwarder Falconer
+(@SGGUID+12, @CGUID+33, 1, 0), -- Bloodfalcon
+(@SGGUID+12, @CGUID+34, 2, 0), -- Bloodfalcon
+(@SGGUID+12, @CGUID+35, 3, 0); -- Bloodfalcon
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
@@ -876,7 +897,8 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1799301, 2000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
 (1799301, 4000, 0, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote STATE_READY1H'),
 -- Bloodfalcon after RP waypoints go back to rnd movement with 3y dist 
-(1815501, 0, 0, 20, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodfalcon - RandomMovement 3yards'),
+(1815501, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodfalcon - Disable Movement'),
+(1815501, 1000, 0, 20, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodfalcon - RandomMovement 3yards'),
 -- Bloodwarder Steward
 (1840401, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Steward - Disable Waypoint Movement'),
 (1840401, 1000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Exclamation'),
@@ -885,13 +907,16 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+2;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
--- Bloodwarder Falconer RP script 01
+-- Bloodwarder Falconer RP script 
 (@RELAYID+1, 1, @RELAYID+2, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 01'),
 (@RELAYID+1, 1, @RELAYID+3, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 02'),
-(@RELAYID+1, 1, @RELAYID+4, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 02');
+(@RELAYID+1, 1, @RELAYID+4, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 02'),
+-- 2nd Bloodwarder Falconer RP script
+(@RELAYID+2, 1, @RELAYID+5, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 03'),
+(@RELAYID+2, 1, @RELAYID+6, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 04');
 
 -- RelayScripts for RP handled via creature_ai_scripts
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+5;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Bloodwarder Greenkeeper at then end of first Hallway
 -- On retail the rp can even happen if one of the Bloodwarder Greenkeepers is dead, to minimize dberrors we only let the rp happen when both are alive
@@ -921,8 +946,19 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+4,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,4.7822, 'Bloodwarder Falconer - face StringID'),
 (@RELAYID+4,1,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Emote Point'),
 (@RELAYID+4,1,3,0,0,0,0,0,0,0,16783,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Say Text'),
-(@RELAYID+4,1,4,20,2,3,0,@STRINGID+9,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints');
-
+(@RELAYID+4,1,4,20,2,3,0,@STRINGID+9,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints'),
+-- 2nd Bloodwarder Falconer RP 01 with Bloodfalcone CGUID+34
+(@RELAYID+5,0,0,31,0,10,0,@STRINGID+10,10,0x800,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - search for string id - terminate if not found'),
+(@RELAYID+5,1,1,36,0,0,0,@STRINGID+10,10,2049,0,0,0,0,0,0,0,0,'Bloodwarder Falconer - face StringID'),
+(@RELAYID+5,1,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Emote Point'),
+(@RELAYID+5,1,3,0,0,0,0,0,0,0,16783,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Say Text'),
+(@RELAYID+5,1,4,20,2,4,0,@STRINGID+10,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints'),
+-- 2nd Bloodwarder Falconer RP 01 with Bloodfalcone CGUID+35
+(@RELAYID+6,0,0,31,0,10,0,@STRINGID+11,10,0x800,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - search for string id - terminate if not found'),
+(@RELAYID+6,1,1,36,0,0,0,@STRINGID+11,10,2049,0,0,0,0,0,0,0,0,'Bloodwarder Falconer - face StringID'),
+(@RELAYID+6,1,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Emote Point'),
+(@RELAYID+6,1,3,0,0,0,0,0,0,0,16783,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Say Text'),
+(@RELAYID+6,1,4,20,2,5,0,@STRINGID+11,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
