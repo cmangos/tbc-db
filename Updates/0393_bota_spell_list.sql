@@ -115,3 +115,21 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1963301 WHERE `entry` = 19633;
 UPDATE `creature_template` SET `SpellList` = 2154701 WHERE `entry` = 21547;
+
+
+-- Bloodwarder Steward 18404
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18404, 21549);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1840401, 2154901);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1840401, 'Botanica - Bloodwarder Steward - Normal', 90, 0),
+(2154901, 'Botanica - Bloodwarder Steward - Heroic', 90, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1840401, 2154901);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1840401, 1, 34821, 0, -1, 0, 0, 100, 0, 11000, 18000, 17000, 25000, 'Bloodwarder Steward - Arcane Flurry - none'),
+(2154901, 1, 34821, 0, -1, 0, 0, 100, 0, 11000, 18000, 17000, 25000, 'Bloodwarder Steward - Arcane Flurry - none');
+
+
+UPDATE `creature_template` SET `SpellList` = 1840401 WHERE `entry` = 18404;
+UPDATE `creature_template` SET `SpellList` = 2154901 WHERE `entry` = 21549;

@@ -26545,8 +26545,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('5530029','-5530029','1','0','100','1','0','12000','15000','25000','0','0','53','-5530002','0','0','0','0','0','0','0','0','0','0','Bloodwarder Falconer - StartRandomScript OOC'),
 -- Bloodfalcon 18155 - spell_list
 ('1815501','18155','9','0','100','1025','8','25','10000','10000','0','0','11','32323','1','0','0','0','0','0','0','0','0','0','Bloodfalcon - Cast Charge'),
--- Bloodwarder Steward 18404
-('1840401','18404','0','0','100','1025','11000','18000','17000','25000','0','0','11','34821','15','0','0','0','0','0','0','0','0','0','Bloodwarder Steward - Cast Arcane Flurry'),
+-- Bloodwarder Steward 18404 - spell_list
 -- Tempest Forge Peacekeeper - spell_list
 ('1840501','18405','1','0','15','1','30000','120000','120000','240000','0','0','1','16785','16784','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Random Say OOC'),
 -- Bloodwarder Greenkeeper 18419 - spell_list - guid based
