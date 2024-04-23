@@ -26628,15 +26628,13 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1996901','19969','11','0','100','0','0','0','0','0','0','0','11','34757','0','0','0','0','0','0','0','0','0','0','Green Seedling - Cast Toxic Pollen on Spawn'),
 ('1996902','19969','6','0','100','0','0','0','0','0','0','0','28','0','34757','0','0','0','0','0','0','0','0','0','Green Seedling - Remove Toxic Pollen on Death'),
 -- Summoned Bloodwarder Reservist (4.3.4 Official Data - Normal/Heroic)
-('2007801','20078','0','0','100','1025','12400','16400','8100','16200','0','0','11','34820','1','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Reservist - Cast Arcane Strike'),
+('2007801','20078','11','0','100','0','0','0','0','0','0','0','11','34815','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Reservist - Cast Teleport Effect on Spawn'),
+('2007802','20078','1','0','100','0','2000','2000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Reservist - Zone Combat Pulse'),
+('2007803','20078','1','0','100','0','5000','5000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Reservist - Despawn 5 secs OOC'),
 -- Summoned Bloodwarder Mender 20083 (4.3.4 Official Data - Normal/Heroic)
-('2008301','20083','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Enable Range Mode on Aggro'),
-('2008302','20083','27','0','100','1','34809','1','15000','30000','0','0','11','34809','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Cast Holy Fury on Missing Buff'),
-('2008303','20083','14','0','100','1027','3600','40','15700','26500','0','0','11','35096','12','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender (Normal) - Cast Greater Heal on Friendly Missing HP'),
-('2008304','20083','14','0','100','1029','5000','40','15700','26500','0','0','11','35096','12','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender (Heroic) - Cast Greater Heal on Friendly Missing HP'),
-('2008305','20083','16','0','100','1025','34809','30','14500','22900','0','0','11','34809','12','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Cast Holy Fury on Friendly Missing Buff'),
-('2008306','20083','9','0','100','1027','0','30','2500','3500','0','0','11','17194','1','256','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender (Normal) - Cast Mind Blast'),
-('2008307','20083','9','0','100','1029','0','30','2500','3500','0','0','11','17287','1','256','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender (Heroic) - Cast Mind Blast'),
+('2008301','20083','11','0','100','0','0','0','0','0','0','0','11','34815','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Cast Teleport Effect on Spawn'),
+('2008302','20083','1','0','100','0','2000','2000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Zone Combat Pulse'),
+('2008303','20083','1','0','100','0','5000','5000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Despawn 5 secs OOC'),
 -- Mutate Fleshlasher (4.3.4 Official Data - Normal/Heroic)
 ('2535401','25354','0','0','100','1025','7800','12100','6200','12100','0','0','11','34351','1','0','0','0','0','0','0','0','0','0','Mutate Fleshlasher - Cast Vicious Bite'),
 
