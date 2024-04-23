@@ -56,8 +56,6 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1797601 WHERE `entry` = 17976;
 UPDATE `creature_template` SET `SpellList` = 2155101 WHERE `entry` = 21551;
 
-
-
 -- Summoned Bloodwarder Mender 20083
 -- WalkSpeed: 2.5
 -- RunSpeed: 8
