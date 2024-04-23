@@ -9,109 +9,85 @@ EndDBScriptData */
 SET @CGUID := 5530000; -- creatures
 SET @OGUID := 5530000; -- gameobjects
 SET @PGUID := 49000; -- pools
+SET @SGGUID := 5530000; -- spawn_groups
+SET @STRINGID := 5530000; -- used for StringID's
+SET @RELAYID := 5530000; -- used for dbscript_on_relay
 
 -- =========
 -- CREATURES
 -- =========
 
 INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(@CGUID+6, 1, 9.0511, 160.359, -5.54034, 4.42808, 8000, 0),
-(@CGUID+6, 2, 7.00565, 151.863, -5.54034, 4.61972, 0, 0),
-(@CGUID+6, 3, 2.13972, 149.017, -5.54034, 3.65525, 0, 0),
-(@CGUID+6, 4, 2.85909, 133.568, -5.54034, 4.71868, 0, 0),
-(@CGUID+6, 5, 4.66944, 131.582, -5.53933, 4.39113, 10000, 1799305),
-(@CGUID+7, 1, -14.7259, 244.255, -5.21435, 6.01145, 8000, 0),
-(@CGUID+7, 2, -3.16054, 243.291, -5.5165, 0.021216, 0, 0),
-(@CGUID+7, 3, -3.54976, 215.113, -5.53931, 4.55846, 0, 0),
-(@CGUID+7, 4, -5.03136, 214.278, -5.54035, 4.38648, 10000, 1799305),
-(@CGUID+8, 1, 12.5368, 244.131, -5.27665, 3.28297, 8000, 0),
-(@CGUID+8, 2, 2.36405, 242.874, -5.51154, 3.34423, 0, 0),
-(@CGUID+8, 3, 2.44798, 215.308, -5.54035, 4.78387, 0, 0),
-(@CGUID+8, 4, 3.94135, 214.042, -5.54035, 4.79017, 10000, 1799305),
-(@CGUID+15, 1, 0.319128, 93.3509, -5.65202, 4.74977, 2000, 0),
-(@CGUID+15, 2, 0.304653, 53.7379, -5.65205, 4.80789, 0, 0),
-(@CGUID+15, 3, 0.246856, 49.9056, -5.61616, 4.84559, 0, 0),
-(@CGUID+15, 4, 1.77807, 47.0135, -5.52788, 5.07885, 0, 0),
-(@CGUID+15, 5, 2.35202, 46.2708, -5.53589, 4.48292, 10000, 1799305),
-(@CGUID+16, 1, -2.91064, 93.3038, -5.65202, 4.66102, 2000, 0),
-(@CGUID+16, 2, -3.09647, 53.6826, -5.65205, 4.75056, 0, 0),
-(@CGUID+16, 3, -2.9898, 50.0713, -5.62371, 3.9573, 0, 0),
-(@CGUID+16, 4, -3.98776, 46.8545, -5.53157, 4.35943, 0, 0),
-(@CGUID+16, 5, -4.7336, 45.9968, -5.55443, 4.8874, 10000, 1799305),
-(@CGUID+19, 1, -10.473, 160.51, -5.54034, 4.94409, 8000, 0),
-(@CGUID+19, 2, -9.05886, 151.889, -5.54034, 4.99122, 0, 0),
-(@CGUID+19, 3, -3.30866, 147.948, -5.54034, 5.68237, 0, 0),
-(@CGUID+19, 4, -3.96269, 134.198, -5.54034, 4.71083, 0, 0),
-(@CGUID+19, 5, -5.29153, 130.642, -5.53917, 4.81372, 10000, 1799305),
+(@CGUID+6, 1, 6.788073, 151.4322, -5.4570436, 100, 0, 0),
+(@CGUID+6, 2, 2.362805,147.59216,-5.540375, 100, 0, 0),
+(@CGUID+6, 3, 1.4508862,134.90886,-5.5403657, 100, 0, 0),
+(@CGUID+6, 4, 4.29729,131.94543,-5.5403824,4.7298421, 100,1799301),
+(@CGUID+7, 1, -7.523286, 231.72736, -5.540363, 100, 0, 0),
+(@CGUID+7, 2, -7.061299,213.17163,-5.540358,4.72984, 100, 1799301),
+(@CGUID+8, 1, 6.1883936, 230.93802, -5.540376, 100, 0, 0),
+(@CGUID+8, 2, 6.8805857,213.50626,-5.540371,4.7298421, 100, 1799301),
+(@CGUID+9, 1, 32.346626, 283.20956, -5.5604477, 100, 0, 0),
+(@CGUID+9, 2, 26.896982,287.0706,-4.1127744, 100, 0, 0),
+(@CGUID+9, 3, 20.110651,286.30273,-1.8328751, 100, 0, 0),
+(@CGUID+9, 4, 16.271194,284.02432,-1.5828129,3.071779, 100, 1799301),
+(@CGUID+10, 1, 32.74755, 292.83197, -5.5621696, 100, 0, 0),
+(@CGUID+10, 2, 21.091858,289.26254,-1.8360193, 100, 0, 0),
+(@CGUID+10, 3, 16.016445,291.94034,-1.5188626,3.071779, 100, 1799301),
+(@CGUID+11, 1,  75.01243, 283.88235, -5.3920293, 100, 0, 0),
+(@CGUID+11, 2,  47.614925,284.43405,-5.6762114,3.0717, 100, 1799301),
+(@CGUID+12, 1,  75.30202, 292.3356, -5.3812394, 100, 0, 0),
+(@CGUID+12, 2,  47.417965,291.92233,-5.6771345,3.0717, 100, 1799301),
+(@CGUID+15, 1, 2.71023, 59.10882, -5.62977, 100, 0, 0),
+(@CGUID+15,	2, 2.616398,46.717686,-5.612038,4.817108,100,1799301),
+(@CGUID+16, 1, -6.33425, 59.407, -5.55881, 0.030197, 0, 0),
+(@CGUID+16, 2, -5.080652,46.597015,-5.6218123,4.81710863, 100,1799301),
+(@CGUID+17, 1, 0.660349, 104.14, -5.63461, 2.63602, 0, 0),
+(@CGUID+17, 2, -0.022206, 89.449295, -5.6558495, 100, 0, 0),
+(@CGUID+17, 3, 2.641394, 89.34601, -5.6321697, 4.81710863, 100,1799301),
+(@CGUID+18, 1, -2.99842, 104.287, -5.62851, 0.514356, 0, 0),
+(@CGUID+18, 2, -5.041232,89.27867,-5.672416,4.817108, 100,1799301),
+(@CGUID+19, 1, -8.37349, 150.82703, -5.4570227, 100, 0, 0),
+(@CGUID+19, 2, -2.929497,133.55092,-5.540361, 100, 0, 0),
+(@CGUID+19, 3, -5.799148,131.35872,-5.540354,4.729842, 100,1799301),
 (@CGUID+26, 1, -161.2056, 391.8802, -17.6449, 1.954769, 16000, 1799301),
 (@CGUID+26, 2, -162.1803, 409.8343, -17.70864, 100, 0, 1799304),
 (@CGUID+26, 3, -162.6438, 427.7587, -17.79374, 100, 60000, 1799302),
 (@CGUID+27, 1, -166.6638, 391.7631, -17.61385, 1.32645, 16000, 1799301),
 (@CGUID+27, 2, -171.44, 422.8947, -17.74458, 1.72701, 60000, 1799303),
-(@CGUID+36, 1, 50.9215, 293.818, -5.63032, 1.68861, 0, 0),
-(@CGUID+36, 2, 50.4144, 282.994, -5.64831, 4.90482, 0, 0),
-(@CGUID+40, 1, 13.2272, 178.591, -5.5404, 5.07526, 0, 0),
-(@CGUID+40, 2, 13.7786, 193.285, -5.5404, 1.59438, 0, 0),
-(@CGUID+40, 3, 9.13868, 197.798, -5.5404, 2.30752, 5000, 0),
-(@CGUID+40, 4, -0.635412, 203.851, -5.5404, 2.58712, 0, 0),
-(@CGUID+40, 5, -0.660702, 223.381, -5.5404, 1.5881, 0, 0),
-(@CGUID+40, 6, -0.571616, 247.901, -5.51829, 1.44751, 0, 0),
-(@CGUID+40, 7, -0.697975, 222.215, -5.54037, 4.71005, 3000, 0),
-(@CGUID+40, 8, -0.301946, 204.186, -5.54037, 4.2663, 0, 0),
-(@CGUID+40, 9, 8.68828, 198.154, -5.54037, 5.7028, 0, 0),
-(@CGUID+40, 10, 13.1168, 194.426, -5.54037, 5.58342, 0, 0),
-(@CGUID+41, 1, 1.07692, 288.114, 1.03451, 0, 0, 0),
-(@CGUID+41, 2, 21.3242, 287.963, -1.84732, 0, 0, 0),
-(@CGUID+41, 3, 0.477138, 288.18, 1.06289, 0, 0, 0),
-(@CGUID+41, 4, -15.096, 288.706, -0.936859, 0, 0, 0),
-(@CGUID+42, 1, -1.23806, 53.2298, -5.65058, 1.58023, 0, 0),
-(@CGUID+42, 2, -1.05688, 93.7442, -5.6518, 1.73888, 0, 0),
-(@CGUID+42, 3, -0.781224, 113.317, -5.58331, 1.75852, 0, 0),
-(@CGUID+42, 4, -1.38405, 95.682, -5.65011, 4.73989, 0, 0),
-(@CGUID+42, 5, -1.40982, 55.0453, -5.65189, 4.76188, 0, 0),
-(@CGUID+42, 6, -1.02573, 43.8376, -5.60675, 4.63622, 0, 0),
-(@CGUID+43, 1, -0.68236, 155.411, -5.5395, 0, 0, 0),
-(@CGUID+43, 2, -15.2839, 169.103, -5.5395, 0, 0, 0),
-(@CGUID+43, 3, -15.7084, 183.927, -5.5395, 0, 0, 0),
-(@CGUID+43, 4, -14.9384, 169.299, -5.5395, 0, 0, 0),
-(@CGUID+43, 5, -1.41195, 155.483, -5.5395, 0, 0, 0),
-(@CGUID+43, 6, -0.859962, 128.029, -5.5395, 0, 0, 0),
-(@CGUID+44, 1, 13.8952, 197.464, -5.54041, 0.944012, 18000, 1069),
-(@CGUID+44, 2, 15.0475, 193.183, -5.54122, 5.06034, 0, 0),
-(@CGUID+44, 3, 16.6998, 192.651, -5.54122, 1.01789, 0, 0),
-(@CGUID+44, 4, 17.8517, 192.876, -5.54122, 1.01789, 20000, 1069),
-(@CGUID+44, 5, 17.5705, 192.439, -5.54122, 6.14419, 0, 0),
-(@CGUID+44, 6, 14.347, 193.671, -5.54122, 2.7764, 0, 0),
-(@CGUID+44, 7, 13.4535, 196.095, -5.54122, 2.07583, 0, 0),
-(@CGUID+46, 1, -19.4848, 197.125, -5.54034, 1.06967, 29000, 1069),
-(@CGUID+46, 2, -18.3153, 195.691, -5.54122, 5.31716, 0, 0),
-(@CGUID+46, 3, -14.4761, 195.052, -5.54122, 6.11827, 0, 0),
-(@CGUID+46, 4, -9.28239, 198.789, -5.54122, 0.623626, 0, 0),
-(@CGUID+46, 5, -7.14421, 203.369, -5.54122, 1.55354, 0, 0),
-(@CGUID+46, 6, -8.27586, 203.442, -5.54122, 3.07721, 24000, 1069),
-(@CGUID+46, 7, -6.73612, 202.567, -5.54122, 5.76642, 0, 0),
-(@CGUID+46, 8, -8.75032, 199.727, -5.54122, 4.15635, 0, 0),
-(@CGUID+46, 9, -13.0694, 195.498, -5.54122, 3.85475, 0, 0),
-(@CGUID+46, 10, -17.5981, 194.664, -5.54122, 3.32383, 0, 0),
-(@CGUID+46, 11, -19.281, 195.896, -5.54122, 2.41276, 0, 0),
-(@CGUID+48, 1, -0.268618, 160.028, -5.5395, 0, 0, 0),
-(@CGUID+48, 2, -4.24328, 161.149, -5.5395, 0, 0, 0),
-(@CGUID+48, 3, -6.01467, 167.23, -5.5395, 1.6093, 34000, 1069),
-(@CGUID+48, 4, -3.54166, 160.511, -5.5395, 0, 0, 0),
-(@CGUID+48, 5, 2.36906, 161.495, -5.5395, 0, 0, 0),
-(@CGUID+48, 6, 2.31835, 163.18, -5.54038, 2.31852, 16000, 1069),
-(@CGUID+49, 1, 4.00238, 252.355, -5.47518, 1.10514, 22000, 1069),
-(@CGUID+49, 2, 4.00238, 252.355, -5.47518, 2.97588, 7000, 1378),
-(@CGUID+49, 3, 4.00238, 252.355, -5.47518, 1.10514, 30000, 1069),
-(@CGUID+49, 4, 4.00238, 252.355, -5.47518, 2.97588, 7000, 1378),
-(@CGUID+49, 5, 4.00238, 252.355, -5.47518, 1.10514, 16000, 1069),
-(@CGUID+49, 6, 4.00238, 252.355, -5.47518, 2.97588, 7000, 1378),
-(@CGUID+50, 1, -4.23689, 254.019, -5.4428, 2.29894, 22000, 1069),
-(@CGUID+50, 2, -4.23689, 254.019, -5.4428, 6.05072, 7000, 1378),
-(@CGUID+50, 3, -4.23689, 254.019, -5.4428, 2.29894, 30000, 1069),
-(@CGUID+50, 4, -4.23689, 254.019, -5.4428, 6.05072, 7000, 1378),
-(@CGUID+50, 5, -4.23689, 254.019, -5.4428, 2.29894, 16000, 1069),
-(@CGUID+50, 6, -4.23689, 254.019, -5.4428, 6.05072, 7000, 1378),
+(@CGUID+36, 1, 76.77335, 282.6367, -5.3302107, 100, 0, 0),
+(@CGUID+36, 2, 48.324623, 287.81854, -5.6766315, 100, 100, 1840401),
+(@CGUID+40, 1, 14.184935, 177.34564, -5.540413, 100, 0, 0),
+(@CGUID+40, 2, 14.394636, 191.62259, -5.540397, 100, 0, 0),
+(@CGUID+40, 3, 9.744885, 197.85094, -5.5403867, 100, 0, 0),
+(@CGUID+40, 4, -0.7083383, 202.68777, -5.5403733, 100, 0, 0),
+(@CGUID+40, 5, -0.863688, 242.40205, -5.575537, 100, 0, 0),
+(@CGUID+41, 1, 48.18709, 287.5947, -5.6766033, 100, 0, 0),
+(@CGUID+41, 2, 9.004453, 288.18857, 0.010088495, 100, 0, 0),
+(@CGUID+41, 3, -2.241252, 288.31714, 1.0406969, 100, 0, 0),
+(@CGUID+41, 4, -15.361143, 288.29004, -0.9933745, 100, 0, 0),
+(@CGUID+42,1,-1.203372,40.81776,-5.697605, 100, 0, 0),
+(@CGUID+42,2,-1.29136,76.94684,-5.6766257, 100, 0, 0),
+(@CGUID+42,3,-0.755125,111.97571,-5.6210504, 100, 0, 0),
+(@CGUID+43, 1,  -0.733345, 122.922, -5.54038, 0, 0, 0),
+(@CGUID+43, 2, -0.681508, 156.79243, -5.5403776, 100, 0, 0),
+(@CGUID+43, 3, -16.622828, 182.00102, -5.540346, 100, 0, 0),
+(@CGUID+43, 4, -15.95655, 167.93321, -5.5403438, 100, 0, 0),
+(@CGUID+43, 5, -0.7087244, 156.81229, -5.5403714, 100, 0, 0),
+(@CGUID+44, 1, 17.342175, 193.04478, -5.5404058, 0.94247776, 18000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+44, 2, 13.118124, 198.47266, -5.5403895, 0.85521131, 18000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+46, 1, -19.617546, 196.94617, -5.540346, 1.361356, 18000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+46, 2, -10.832382, 198.47723, -5.540348, 100, 0, 0),
+(@CGUID+46, 3, -7.085683, 202.04625, -5.5403624, 100, 0, 0),
+(@CGUID+46, 4, -8.21974, 204.3309, -5.5403585, 3.5604715, 18000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+46, 5, -12.490674, 195.6114, -5.540347, 100, 0, 0),
+(@CGUID+46, 6, -16.424341, 194.29588, -5.5403495, 100, 0, 0),
+(@CGUID+48, 1, 2.213683, 163.03323, -5.5403795, 2.251474618911743164, 17000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+48, 2, -4.294355, 161.2607, -5.540364, 100, 0, 0),
+(@CGUID+48, 3, -6.205455, 163.51398, -5.54036, 100, 0, 0),
+(@CGUID+48, 4, -6.24241, 166.6921, -5.5403614, 100, 0, 0),
+(@CGUID+48, 5, -6.24241, 166.6921, -5.5403614,1.780235767364501953, 18000, 0), -- waittime between 5 and 30 seconds
+(@CGUID+48, 6, -3.464332, 161.02238, -5.540366, 100, 0, 0),
+(@CGUID+48, 7, 0.992403, 160.6039, -5.5403786, 100, 0, 0),
 (@CGUID+52, 1, 162.23, 452.538, -5.41697, 4.74775, 15000, 1842005),
 (@CGUID+52, 2, 162.23, 452.538, -5.41697, 4.74775, 19000, 1842006),
 (@CGUID+52, 3, 163.493, 446.524, -6.9092, 4.91817, 0, 0),
@@ -253,59 +229,51 @@ INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX
 (17975, 0, 6, 120.543, 449.982, -4.88372, 4.41551, 10000, 1069),
 (17975, 0, 7, 120.543, 449.982, -4.88372, 4.41551, 10000, 1797501),
 (17975, 0, 8, 120.796, 450.93, -4.93171, 1.61949, 0, 0),
-
-(17976, 0, 1, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 2, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 3, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 4, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 5, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 6, 151.954, 283.758, -4.67356, 4.76895, 3000, 1797602),
-(17976, 0, 7, 151.954, 283.758, -4.67356, 4.76895, 6000, 1378),
-(17976, 0, 8, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 9, 162.8, 295.447, -4.80194, 0.02357, 3000, 1797604),
-(17976, 0, 10, 162.8, 295.447, -4.80194, 0.02357, 6000, 1378),
-(17976, 0, 11, 152.491, 294.444, -4.6658, 2.39233, 0, 0),
-(17976, 0, 12, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 13, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 14, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 15, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 16, 159.54, 287.615, -4.10529, 5.3792, 3000, 1797603),
-(17976, 0, 17, 159.54, 287.615, -4.10529, 5.3792, 6000, 1378),
-(17976, 0, 18, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 19, 151.954, 283.758, -4.67356, 4.76895, 3000, 1797602),
-(17976, 0, 20, 151.954, 283.758, -4.67356, 4.76895, 6000, 1378),
-(17976, 0, 21, 152.491, 294.444, -4.6658, 2.39233, 0, 0),
-(17976, 0, 22, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 23, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 24, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 25, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 26, 162.8, 295.447, -4.80194, 0.02357, 3000, 1797604),
-(17976, 0, 27, 162.8, 295.447, -4.80194, 0.02357, 6000, 1378),
-(17976, 0, 28, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 29, 159.54, 287.615, -4.10529, 5.3792, 3000, 1797603),
-(17976, 0, 30, 159.54, 287.615, -4.10529, 5.3792, 6000, 1378),
-(17976, 0, 31, 152.491, 294.444, -4.6658, 2.39233, 0, 0),
-(17976, 0, 32, 120.012, 327.677, -4.99033, 5.47973, 0, 0),
-(17976, 0, 33, 152.491, 294.444, -4.6658, 5.52686, 0, 0),
-(17976, 0, 34, 159.54, 287.615, -4.10529, 5.3792, 10000, 1797601);
+-- Commander Sarannis
+(17976, 0, 1, 125.72935,321.18497,-3.6359386, 100, 0, 0),
+(17976, 0, 2, 151.0752,295.8979,-4.574456, 100, 1000, 1797601),
+-- Bloodwarder Steward after Intro
+(18404, 1, 1, 50.01569,292.96957,-5.64004, 100, 1000, 0),
+(18404, 1, 2, 50.185688,282.52002,-5.6333885, 100, 1000, 0),
+-- Bloodfalcon RP Waypoints 
+-- cguid +30
+(18155, 1, 1, -4.634653, 291.63293, 0.8281061, 100, 0, 0),
+(18155, 1, 2, -4.589425, 284.45688, 0.84829205, 100, 0, 0),
+(18155, 1, 3, -23.234816, 285.8802, -1.8473233, 100, 0, 0),
+(18155, 1, 4, -29.06995, 287.01328, -1.8473243, 100, 1000, 1815501),
+-- cguid +31
+(18155, 2, 1, -32.633892, 313.6926, -2.9892454, 100, 2000, 0),
+(18155, 2, 2, -36.44413, 294.66745, -1.847323, 100, 0, 0),
+(18155, 2, 3, -42.860966, 291.474, -1.8473232, 100, 0, 0),
+(18155, 2, 4, -36.010468, 279.61514, -1.8473252, 100, 0, 0),
+(18155, 2, 5, -29.392775, 291.65842, -1.8473235, 100, 0, 0),
+(18155, 2, 6, -36.823017, 294.92844, -1.8473228, 100, 1000, 1815501),
+-- cguid+32
+(18155, 3, 1, -30.482723, 259.80405, -3.4442956, 100, 2000, 0),
+(18155, 3, 2, -36.03879, 280.80167, -1.8473251, 100, 0, 0),
+(18155, 3, 3, -30.454828, 284.31418, -1.8473247, 100, 0, 0),
+(18155, 3, 4, -36.54842, 295.91965, -1.8473227, 100, 0, 0),
+(18155, 3, 5, -43.856365, 291.876, -1.8473231, 100, 0, 0),
+(18155, 3, 6, -36.486675, 280.83936, -1.8473251, 100, 1000, 1815501),
+-- cguid +34
+(18155, 4, 1, 111.71642, 300.11435, -5.3999314, 100, 0, 0),
+(18155, 4, 2, 120.55673, 289.947, -5.4101934, 100, 0, 0),
+(18155, 4, 3, 124.90892, 284.409, -5.414986, 100, 0, 0),
+(18155, 4, 4, 114.74198, 276.31375, -6.998992, 100, 0, 0),
+(18155, 4, 5, 109.52783, 279.67487, -6.9367213, 100, 1000, 1815501),
+-- cguid +35
+(18155, 5, 1, 85.99113, 289.54016, -5.40623, 100, 0, 0),
+(18155, 5, 2, 77.20944, 279.08054, -5.4442782, 100, 0, 0),
+(18155, 5, 3, 84.07146, 264.81665, -5.4246054, 100, 0, 0),
+(18155, 5, 4, 92.041145, 267.70798, -5.393035, 100, 0, 0),
+(18155, 5, 5, 100.84679, 280.37253, -6.887546, 100, 1000, 1815501);
 
 INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
-(@CGUID+6, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+7, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+8, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+9, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+10, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+11, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+12, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+15, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+16, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+17, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+18, 0, 0, 1, 333, 0, NULL), -- Bloodwarder Protector
-(@CGUID+19, 0, 0, 1, 0, 0, NULL), -- Bloodwarder Protector
-(@CGUID+44, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+44, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+45, 0, 8, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+46, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+46, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+47, 0, 8, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
+(@CGUID+48, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+49, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+50, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+51, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
@@ -352,37 +320,11 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+179, 0, 8, 0, 0, 0, NULL); -- Bloodwarder Mender
 
 REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath_state`, `emote`, `moveflags`, `auras`) VALUES
+(17993, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Protector
 (17976, 0, 0, 1, 0, 0, '19818 34792'), -- Commander Sarannis
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+15, @CGUID+16, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+17, @CGUID+18, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+6, @CGUID+19, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+48, @CGUID+51, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Greenkeeper
-(@CGUID+180, @CGUID+51, 1155), -- Bloodwarder Mender -> Bloodwarder Greenkeeper
-(@CGUID+46, @CGUID+47, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Greenkeeper
-(@CGUID+178, @CGUID+47, 1155), -- Bloodwarder Mender -> Bloodwarder Greenkeeper
-(@CGUID+44, @CGUID+177, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+45, @CGUID+177, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+8, @CGUID+7, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+49, @CGUID+179, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+50, @CGUID+179, 1155), -- Bloodwarder Greenkeeper -> Bloodwarder Mender
-(@CGUID+30, @CGUID+28, 1155), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+31, @CGUID+28, 1155), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+32, @CGUID+28, 1155), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+9, @CGUID+10, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
-(@CGUID+11, @CGUID+36, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+12, @CGUID+36, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+33, @CGUID+29, 1155), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+34, @CGUID+29, 1155), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+35, @CGUID+29, 1155), -- Bloodfalcon -> Bloodwarder Falconer
-(@CGUID+20, @CGUID+37, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+21, @CGUID+37, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+24, @CGUID+39, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+25, @CGUID+39, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+22, @CGUID+38, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
-(@CGUID+23, @CGUID+38, 1155), -- Bloodwarder Protector -> Bloodwarder Steward
 (@CGUID+63, @CGUID+54, 1155), -- Sunseeker Botanist -> Sunseeker Researcher
 (@CGUID+86, @CGUID+54, 1155), -- Sunseeker Chemist -> Sunseeker Researcher
 (@CGUID+144, @CGUID+54, 1155), -- Greater Frayer -> Sunseeker Researcher
@@ -487,24 +429,24 @@ INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
 (@CGUID+1, 17975, 553, 3, 118.742, 452.274, -4.89607, 0.796403, 86400, 86400, 0, 2), -- High Botanist Freywinn
-(@CGUID+2, 17976, 553, 3, 120.012, 327.677, -4.99033, 5.47973, 86400, 86400, 0, 2), -- Commander Sarannis
+(@CGUID+2, 17976, 553, 3, 125.72935,321.18497,-3.6359386, 5.47973, 86400, 86400, 0, 2), -- Commander Sarannis
 (@CGUID+3, 17977, 553, 3, 63.84069, 391.8824, -27.89385, 3.211406, 86400, 86400, 0, 0), -- Warp Splinter
 (@CGUID+4, 17978, 553, 3, 4.9486, 596.5779, -15.07834, 4.694936, 86400, 86400, 0, 0), -- Thorngrin the Tender
 (@CGUID+5, 17980, 553, 3, -204.1253, 391.249, -11.19434, 0.01745329, 86400, 86400, 0, 0), -- Laj
-(@CGUID+6, 17993, 553, 3, 9.0511, 160.359, -5.54034, 4.42808, 7200, 7200, 0, 2), -- Bloodwarder Protector
-(@CGUID+7, 17993, 553, 3, -14.7259, 244.255, -5.21435, 6.01145, 7200, 7200, 0, 2), -- Bloodwarder Protector
-(@CGUID+8, 17993, 553, 3, 12.5368, 244.131, -5.27665, 3.28297, 7200, 7200, 0, 2), -- Bloodwarder Protector
-(@CGUID+9, 17993, 553, 3, 15.7168, 284.394, -1.44363, 2.76937, 7200, 7200, 0, 0), -- Bloodwarder Protector
-(@CGUID+10, 17993, 553, 3, 15.8236, 291.783, -1.47023, 3.74327, 7200, 7200, 0, 0), -- Bloodwarder Protector
-(@CGUID+11, 17993, 553, 3, 47.1522, 284.676, -5.67585, 2.93823, 7200, 7200, 0, 0), -- Bloodwarder Protector
-(@CGUID+12, 17993, 553, 3, 47.263, 291.679, -5.67585, 3.49587, 7200, 7200, 0, 0), -- Bloodwarder Protector
+(@CGUID+6, 17993, 553, 3, 6.788073, 151.4322, -5.4570436, 0.19198, 7200, 7200, 0, 0), -- Bloodwarder Protector
+(@CGUID+7, 17993, 553, 3, -7.523286, 231.72736, -5.540363, 6.24230, 7200, 7200, 0, 0), -- Bloodwarder Protector
+(@CGUID+8, 17993, 553, 3, 6.1883936, 230.93802, -5.540376, 3.1466, 7200, 7200, 0, 0), -- Bloodwarder Protector
+(@CGUID+9, 17993, 553, 3, 32.346626, 283.20956, -5.5604477, 1.8325957, 7200, 7200, 0, 0), -- Bloodwarder Protector
+(@CGUID+10, 17993, 553, 3, 32.74755, 292.83197, -5.5621696, 5.323254, 7200, 7200, 0, 0), -- Bloodwarder Protector
+(@CGUID+11, 17993, 553, 3, 75.01243, 283.88235, -5.3920293, 1.762782, 7200, 7200, 0, 0), -- Bloodwarder Protector
+(@CGUID+12, 17993, 553, 3, 75.30202, 292.3356, -5.3812394, 4.95673513, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+13, 17993, 553, 3, -164.9891, 473.0342, -17.74157, 1.570796, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+14, 17993, 553, 3, -157.6686, 471.7192, -17.74158, 1.762783, 7200, 7200, 0, 0), -- Bloodwarder Protector
-(@CGUID+15, 17993, 553, 3, 0.319128, 93.3509, -5.65202, 4.74977, 7200, 7200, 0, 2), -- Bloodwarder Protector
-(@CGUID+16, 17993, 553, 3, -2.91064, 93.3038, -5.65202, 4.66102, 7200, 7200, 0, 2), -- Bloodwarder Protector
-(@CGUID+17, 17993, 553, 3, 2.61628, 90.4882, -5.64622, 4.33368, 7200, 7200, 0, 0), -- Bloodwarder Protector
-(@CGUID+18, 17993, 553, 3, -5.64378, 90.6378, -5.64235, 4.93059, 7200, 7200, 0, 0), -- Bloodwarder Protector
-(@CGUID+19, 17993, 553, 3, -10.473, 160.51, -5.54034, 4.94409, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+15, 17993, 553, 3, 2.71023, 59.10882, -5.62977, 3.12338, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+16, 17993, 553, 3, -6.33425, 59.407, -5.55881, 0.030197, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+17, 17993, 553, 3, 0.660349, 104.14, -5.63461, 2.63602, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+18, 17993, 553, 3, -2.99842, 104.287, -5.62851, 0.514356, 7200, 7200, 0, 2), -- Bloodwarder Protector
+(@CGUID+19, 17993, 553, 3, -8.37349, 150.82703, -5.4570227, 0.191986, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+20, 17993, 553, 3, 151.661, 281.789, -4.33474, 1.61228, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+21, 17993, 553, 3, 153.757, 281.744, -4.00861, 2.17694, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+22, 17993, 553, 3, 165.165, 295.535, -4.37166, 3.11024, 7200, 7200, 0, 0), -- Bloodwarder Protector
@@ -513,30 +455,30 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+25, 17993, 553, 3, 163.108, 287.899, -3.3132, 2.55293, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+26, 17993, 553, 3, -161.2056, 391.8802, -17.6449, 1.954769, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+27, 17993, 553, 3, -166.6638, 391.7631, -17.61385, 1.32645, 7200, 7200, 0, 2), -- Bloodwarder Protector
-(@CGUID+28, 17994, 553, 3, -35.58167, 287.6745, -1.763991, 5.654867, 7200, 7200, 0, 0), -- Bloodwarder Falconer
+(@CGUID+28, 17994, 553, 3, -35.5817, 287.674, -1.76399, 5.654867, 7200, 7200, 0, 0), -- Bloodwarder Falconer
 (@CGUID+29, 17994, 553, 3, 102.0354, 286.8515, -6.792948, 0.8377581, 7200, 7200, 2, 1), -- Bloodwarder Falconer
-(@CGUID+30, 18155, 553, 3, -29.4177, 288.0682, -1.763992, 0.007071402, 7200, 7200, 2, 1), -- Bloodfalcon
-(@CGUID+31, 18155, 553, 3, -37.61485, 292.3913, -1.847323, 3.965074, 7200, 7200, 2, 1), -- Bloodfalcon
-(@CGUID+32, 18155, 553, 3, -37.19297, 282.2485, -1.847325, 4.205199, 7200, 7200, 2, 1), -- Bloodfalcon
-(@CGUID+33, 18155, 553, 3, 99.73528, 294.2418, -6.621962, 5.114256, 7200, 7200, 2, 1), -- Bloodfalcon
-(@CGUID+34, 18155, 553, 3, 109.5525, 279.5057, -6.903647, 2.450218, 7200, 7200, 2, 1), -- Bloodfalcon
-(@CGUID+35, 18155, 553, 3, 100.5429, 280.2014, -6.790884, 1.894372, 7200, 7200, 2, 1), -- Bloodfalcon
-(@CGUID+36, 18404, 553, 3, 50.4144, 282.994, -5.64831, 1.66981, 7200, 7200, 0, 2), -- Bloodwarder Steward
+(@CGUID+30, 18155, 553, 3, -29.06995,287.01328,-1.8473243, 0.007071402, 7200, 7200, 3, 1), -- Bloodfalcon
+(@CGUID+31, 18155, 553, 3, -36.823017,294.92844,-1.8473228, 3.965074, 7200, 7200, 3, 1), -- Bloodfalcon
+(@CGUID+32, 18155, 553, 3, -36.486675,280.83936,-1.8473251, 4.205199, 7200, 7200, 3, 1), -- Bloodfalcon
+(@CGUID+33, 18155, 553, 3, 99.73528, 294.2418, -6.621962, 5.114256, 7200, 7200, 3, 1), -- Bloodfalcon
+(@CGUID+34, 18155, 553, 3, 109.52783, 279.67487, -6.9367213, 2.450218, 7200, 7200, 3, 1), -- Bloodfalcon
+(@CGUID+35, 18155, 553, 3, 100.84679,280.37253,-6.887546, 1.894372, 7200, 7200, 3, 1), -- Bloodfalcon
+(@CGUID+36, 18404, 553, 3, 76.77335, 282.6367, -5.3302107, 1.815142, 7200, 7200, 0, 0), -- Bloodwarder Steward
 (@CGUID+37, 18404, 553, 3, 149.565, 281.787, -4.65385, 1.01615, 7200, 7200, 0, 0), -- Bloodwarder Steward
 (@CGUID+38, 18404, 553, 3, 165.194, 298.208, -4.77445, 3.85272, 7200, 7200, 0, 0), -- Bloodwarder Steward
 (@CGUID+39, 18404, 553, 3, 159.136, 283.813, -3.27211, 1.29749, 7200, 7200, 0, 0), -- Bloodwarder Steward
-(@CGUID+40, 18405, 553, 3, 14.0417, 186.274, -5.54034, 4.61588, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
-(@CGUID+41, 18405, 553, 3, -17.7493, 288.036, -1.50225, 3.13537, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
-(@CGUID+42, 18405, 553, 3, -1.15049, 43.6785, -5.60109, 4.72246, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
-(@CGUID+43, 18405, 553, 3, -0.544267, 126.423, -5.53933, 1.64223, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
-(@CGUID+44, 18419, 553, 3, 13.8952, 197.464, -5.54041, 0.944012, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
-(@CGUID+45, 18419, 553, 3, 16.2932, 195.016, -5.54041, 0.366745, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
-(@CGUID+46, 18419, 553, 3, -19.4848, 197.125, -5.54034, 1.06967, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
-(@CGUID+47, 18419, 553, 3, -13.7922, 197.698, -5.54033, 2.3538, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
-(@CGUID+48, 18419, 553, 3, 1.14457, 162.3, -5.54036, 1.77654, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
-(@CGUID+49, 18419, 553, 3, 4.00238, 252.355, -5.47518, 1.10514, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
-(@CGUID+50, 18419, 553, 3, -4.23689, 254.019, -5.4428, 2.29894, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
-(@CGUID+51, 18419, 553, 3, -2.82268, 162.395, -5.54036, 1.45845, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
+(@CGUID+40, 18405, 553, 3, 14.3946, 191.623, -5.5404, 1.55611, 7200, 7200, 0, 4), -- Tempest-Forge Peacekeeper
+(@CGUID+41, 18405, 553, 3, 9.004453, 288.18857, 0.010088495, 3.13537, 7200, 7200, 0, 4), -- Tempest-Forge Peacekeeper
+(@CGUID+42, 18405, 553, 3, -0.891327, 103.078, -5.69279, 4.69708, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
+(@CGUID+43, 18405, 553, 3, -0.733345, 122.922, -5.54038, 4.71166, 7200, 7200, 0, 2), -- Tempest-Forge Peacekeeper
+(@CGUID+44, 18419, 553, 3, 17.342175,193.04478,-5.5404058,0.942477762699127197, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
+(@CGUID+45, 18419, 553, 3, 15.8812, 195.363, -5.45708, 0.244346, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
+(@CGUID+46, 18419, 553, 3, -19.617546,196.94617,-5.540346,1.361356854438781738, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
+(@CGUID+47, 18419, 553, 3, -14.2483, 197.646, -5.45702, 2.49582, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
+(@CGUID+48, 18419, 553, 3, 2.213683,163.03323,-5.5403795,2.251474618911743164, 7200, 7200, 0, 2), -- Bloodwarder Greenkeeper
+(@CGUID+49, 18419, 553, 3, 3.13933, 253.476, -5.3924, 3.14159, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
+(@CGUID+50, 18419, 553, 3, -4.45333, 252.871, -5.39659, 0.0698132, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
+(@CGUID+51, 18419, 553, 3,-3.43691, 163.531, -5.45704, 1.15192, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
 (@CGUID+52, 18420, 553, 3, 162.23, 452.538, -5.41697, 4.74775, 7200, 7200, 0, 2), -- Sunseeker Geomancer
 (@CGUID+53, 18420, 553, 3, 88.4563, 495.092, -5.38647, 5.83944, 7200, 7200, 0, 2), -- Sunseeker Geomancer
 (@CGUID+54, 0, 553, 3, 152.061, 369.7167, -5.303072, 0.7853982, 7200, 7200, 0, 0), -- creature_spawn_entry
@@ -664,8 +606,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+176, 19608, 553, 3, 16.9297, 368.371, -26.301, 0.360461, 7200, 7200, 3, 1), -- Frayer Wildling
 (@CGUID+177, 19633, 553, 3, 10.61955, 202.3912, -5.457047, 4.13643, 7200, 7200, 0, 0), -- Bloodwarder Mender
 (@CGUID+178, 19633, 553, 3, -11.26626, 201.1227, -5.457016, 5.51524, 7200, 7200, 0, 0), -- Bloodwarder Mender
-(@CGUID+179, 19633, 553, 3, -0.755704, 255.1196, -5.407638, 1.675516, 7200, 7200, 0, 0), -- Bloodwarder Mender
-(@CGUID+180, 19633, 553, 3, 6.15941, 166.406, -5.54122, 1.51584, 7200, 7200, 3, 1), -- Bloodwarder Mender
+(@CGUID+179, 19633, 553, 3, -0.755704, 255.12, -5.40764, 1.67552, 7200, 7200, 0, 0), -- Bloodwarder Mender
+(@CGUID+180, 19633, 553, 3,  6.21388, 166.129, -5.54038, 5.40107, 7200, 7200, 2, 1), -- Bloodwarder Mender
 (@CGUID+181, 19843, 553, 3, -65.9018, 560.5957, -17.78348, 0.7689893, 7200, 7200, 4, 1), -- Nethervine Trickster
 (@CGUID+182, 19843, 553, 3, -79.93607, 549.6142, -17.78638, 3.643529, 7200, 7200, 3, 1), -- Nethervine Trickster
 (@CGUID+183, 19865, 553, 3, -172.9828, 418.549, -17.63096, 2.548181, 7200, 7200, 0, 0), -- Mutate Horror
@@ -716,13 +658,125 @@ INSERT INTO `game_event_creature_data` (`guid`, `entry_id`, `modelid`, `equipmen
 -- INSERT INTO `game_event_creature` (`guid`, `event`) VALUES
 -- INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES
 
+-- ======
+-- StringIDs
+-- ======
+
+DELETE FROM string_id WHERE Id BETWEEN @STRINGID+1 AND @STRINGID+9;
+INSERT INTO `string_id` (Id, Name) VALUES 
+(@STRINGID+1, 'BLOODWARDER_PROTECTOR_GROUP_01'),
+(@STRINGID+2, 'BLOODWARDER_PROTECTOR_GROUP_02'),
+(@STRINGID+3, 'BLOODWARDER_PROTECTOR_GROUP_03'),
+(@STRINGID+4, 'BLOODWARDER_PROTECTOR_GROUP_04'),
+(@STRINGID+5, 'BLOODWARDER_PROTECTOR_GROUP_05'),
+(@STRINGID+6, 'BLOODWARDER_PROTECTOR_GROUP_06'),
+(@STRINGID+7, 'BLOODFALCON_01'),
+(@STRINGID+8, 'BLOODFALCON_02'),
+(@STRINGID+9, 'BLOODFALCON_03'),
+(@STRINGID+10, 'BLOODFALCON_04'),
+(@STRINGID+11, 'BLOODFALCON_05'),
+(@STRINGID+12, 'COMMANDER_SARANNIS_GROUP_01'), -- bloodwarder protector / steward groups before sarannis
+(@STRINGID+13, 'COMMANDER_SARANNIS_GROUP_02'), -- bloodwarder protector / steward groups before sarannis
+(@STRINGID+14, 'COMMANDER_SARANNIS_GROUP_03'); -- bloodwarder protector / steward groups before sarannis
+
+DELETE FROM creature_spawn_data WHERE Id IN (1815501, 1815502, 1815503, 1815504, 1815505);
+INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
+-- Bloodfalcon StringIds
+(@CGUID+30, '1815501'),
+(@CGUID+31, '1815502'),
+(@CGUID+32, '1815503'),
+(@CGUID+34, '1815504'),
+(@CGUID+35, '1815505');
+
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1815501, 1815502, 1815503, 1815504, 1815505);
+INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES 
+('1815501', @STRINGID+7, 'The Botanica - BLOODFALCON_01'), 
+('1815502', @STRINGID+8, 'The Botanica - BLOODFALCON_02'), 
+('1815503', @STRINGID+9, 'The Botanica - BLOODFALCON_03'),
+('1815504', @STRINGID+10, 'The Botanica - BLOODFALCON_04'),
+('1815505', @STRINGID+11, 'The Botanica - BLOODFALCON_05');
+
 -- ============
 -- SPAWN GROUPS
 -- ============
 
--- INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Flags`) VALUES
+INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `WorldStateExpression`, `Flags`, `StringID`) VALUES
+(@SGGUID+1, 'The Botanica - Group 001 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+1),
+(@SGGUID+2, 'The Botanica - Group 002 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+2),
+(@SGGUID+3, 'The Botanica - Group 003 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+3),
+(@SGGUID+4, 'The Botanica - Group 004 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
+(@SGGUID+5, 'The Botanica - Group 005 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
+(@SGGUID+6, 'The Botanica - Group 006 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
+(@SGGUID+7, 'The Botanica - Group 007 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+4),
+(@SGGUID+8, 'The Botanica - Group 008 - Bloodwarder Greenkeeper (2) - Bloodwarder Mender', 0, 0, 0, 0, 1, 0),
+(@SGGUID+9, 'The Botanica - Group 009 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 4, 0, 0, 3, 0),
+(@SGGUID+10, 'The Botanica - Group 010 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+5),
+(@SGGUID+11, 'The Botanica - Group 011 - Bloodwarder Protector (2) - Bloodwarder Steward', 0, 0, 0, 0, 1, @STRINGID+6),
+(@SGGUID+12, 'The Botanica - Group 012 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 4, 0, 0, 1, 0),
+(@SGGUID+13, 'The Botanica - Group 013 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+12),
+(@SGGUID+14, 'The Botanica - Group 014 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+13),
+(@SGGUID+15, 'The Botanica - Group 015 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+14);
+
 -- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
--- INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+
+INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
+(@SGGUID+1, @CGUID+15, 0, 0), -- Bloodwarder Protector - right
+(@SGGUID+1, @CGUID+16, 1, 0), -- Bloodwarder Protector - left
+
+(@SGGUID+2, @CGUID+17, 0, 0), -- Bloodwarder Protector - right
+(@SGGUID+2, @CGUID+18, 1, 0), -- Bloodwarder Protector - left
+
+(@SGGUID+3, @CGUID+6, 0, 0), -- Bloodwarder Protector - right
+(@SGGUID+3, @CGUID+19, 1, 0), -- Bloodwarder Protector - left
+
+(@SGGUID+4, @CGUID+180, 0, 0), -- Bloodwarder Mender
+(@SGGUID+4, @CGUID+48, 1, 0), -- Bloodwarder Greenkeeper
+(@SGGUID+4, @CGUID+51, 2, 0), -- Bloodwarder Greenkeeper
+
+(@SGGUID+5, @CGUID+177, 0, 0), -- Bloodwarder Mender
+(@SGGUID+5, @CGUID+45, 1, 0), -- Bloodwarder Greenkeeper
+(@SGGUID+5, @CGUID+44, 2, 0), -- Bloodwarder Greenkeeper
+
+(@SGGUID+6, @CGUID+178, 0, 0), -- Bloodwarder Mender
+(@SGGUID+6, @CGUID+47, 1, 0), -- Bloodwarder Greenkeeper
+(@SGGUID+6, @CGUID+46, 2, 0), -- Bloodwarder Greenkeeper
+
+(@SGGUID+7, @CGUID+7, 0, 0), -- Bloodwarder Protector - left
+(@SGGUID+7, @CGUID+8, 1, 0), -- Bloodwarder Protector - right
+
+(@SGGUID+8, @CGUID+179, 0, 0), -- Bloodwarder Mender
+(@SGGUID+8, @CGUID+49, 1, 0), -- Bloodwarder Greenkeeper
+(@SGGUID+8, @CGUID+50, 2, 0), -- Bloodwarder Greenkeeper
+
+(@SGGUID+9, @CGUID+28, 0, 0), -- Bloodwarder Falconer
+(@SGGUID+9, @CGUID+30, 1, 0), -- Bloodfalcon
+(@SGGUID+9, @CGUID+31, 2, 0), -- Bloodfalcon
+(@SGGUID+9, @CGUID+32, 3, 0), -- Bloodfalcon
+
+(@SGGUID+10, @CGUID+9, 0, 0), -- Bloodwarder Protector - right
+(@SGGUID+10, @CGUID+10, 1, 0), -- Bloodwarder Protector - left
+
+(@SGGUID+11, @CGUID+36, 0, 0), -- Bloodwarder Steward
+(@SGGUID+11, @CGUID+11, 1, 0), -- Bloodwarder Protector - right
+(@SGGUID+11, @CGUID+12, 2, 0), -- Bloodwarder Protector - left
+
+(@SGGUID+12, @CGUID+29, 0, 0), -- Bloodwarder Falconer
+(@SGGUID+12, @CGUID+33, 1, 0), -- Bloodfalcon
+(@SGGUID+12, @CGUID+34, 2, 0), -- Bloodfalcon
+(@SGGUID+12, @CGUID+35, 3, 0), -- Bloodfalcon
+
+(@SGGUID+13, @CGUID+37, 0, 0), -- Bloodwarder Steward
+(@SGGUID+13, @CGUID+20, 1, 0), -- Bloodwarder Protector
+(@SGGUID+13, @CGUID+21, 2, 0), -- Bloodwarder Protector
+
+(@SGGUID+14, @CGUID+39, 0, 0), -- Bloodwarder Steward
+(@SGGUID+14, @CGUID+24, 1, 0), -- Bloodwarder Protector
+(@SGGUID+14, @CGUID+25, 2, 0), -- Bloodwarder Protector
+
+(@SGGUID+15, @CGUID+38, 0, 0), -- Bloodwarder Steward
+(@SGGUID+15, @CGUID+22, 1, 0), -- Bloodwarder Protector
+(@SGGUID+15, @CGUID+23, 2, 0); -- Bloodwarder Protector
+
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
 -- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
@@ -765,26 +819,10 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501,1797601,1797602,1797603,1797604,1799301,1799302,1799303,1799304,1799305,
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501,1799302,1799303,1799304,1799305,
 1842001,1842002,1842003,1842004,1842005,1842006,1842101,1842201,1842202,1842203,1950501,1950502,1950503,1950504,1950505,1950506,1950701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1797501, 0, 0, 0, 0, 0, 0, 0, 0, 16945, 16946, 16948, 16947, 0, 0, 0, 0, 'High Botanist Freywinn - Text'),
-(1797601, 0, 0, 0, 0, 0, 0, 0, 0, 16861, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis - Text'),
-(1797602, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Salute'),
-(1797602, 1000, 1, 66, 0, 0, 18404, @CGUID+37, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Steward Salute'),
-(1797602, 1000, 1, 66, 0, 0, 17993, @CGUID+20, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797602, 1000, 1, 66, 0, 0, 17993, @CGUID+21, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797603, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Salute'),
-(1797603, 1000, 1, 66, 0, 0, 17993, @CGUID+24, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797603, 1000, 1, 66, 0, 0, 17993, @CGUID+25, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797603, 1000, 1, 66, 0, 0, 18404, @CGUID+39, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Steward Salute'),
-(1797604, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Salute'),
-(1797604, 1000, 1, 66, 0, 0, 18404, @CGUID+38, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Steward Salute'),
-(1797604, 1000, 1, 66, 0, 0, 17993, @CGUID+22, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1797604, 1000, 1, 66, 0, 0, 17993, @CGUID+23, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis (Botanica) - Bloodwarder Protector Salute'),
-(1799301, 0, 25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Run Mode On'),
-(1799301, 0, 22, 190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Set Faction 190'),
-(1799301, 0, 48, 33554432, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Add UNIT_FLAG_NOT_SELECTABLE'),
 (1799302, 0, 15, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Cast Suicide'),
 (1799302, 17000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Despawn'),
 (1799303, 300, 0, 0, 0, 0, 0, 0, 0, 16994, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Text'),
@@ -817,6 +855,122 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1950701, 0, 48, 33554432, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - Add UNIT_FLAG_NOT_SELECTABLE'),
 (1950701, 0, 22, 190, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - Set Faction 190'),
 (1950701, 1000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Gene-Splicer - MovementType 0');
+
+-- Reworked MovementScripts
+-- Once Bota rework is done, we will only have one of this
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797601, 1799301, 1815501, 1840401);
+INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Commander Sarannis RP
+(1797601, 0, 0, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis - 10% chance to yell, 10% chance to talk with friends'),
+-- Sunseeker Protector entrance Intro 
+(1799301, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Disable Waypoint Movement'),
+(1799301, 2000, 0, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Salute'),
+(1799301, 4000, 0, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote STATE_READY1H'),
+-- Bloodfalcon after RP waypoints go back to rnd movement with 3y dist 
+(1815501, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodfalcon - Disable Movement'),
+(1815501, 1000, 0, 20, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodfalcon - RandomMovement 3yards'),
+-- Bloodwarder Steward
+(1840401, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Steward - Disable Waypoint Movement'),
+(1840401, 1000, 0, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Emote Exclamation'),
+(1840401, 4000, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Steward - Move Waypoints');
+
+
+DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
+INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
+-- Bloodwarder Falconer RP script 
+(@RELAYID+1, 1, @RELAYID+2, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 01'),
+(@RELAYID+1, 1, @RELAYID+3, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 02'),
+(@RELAYID+1, 1, @RELAYID+4, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 02'),
+-- 2nd Bloodwarder Falconer RP script
+(@RELAYID+2, 1, @RELAYID+5, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 03'),
+(@RELAYID+2, 1, @RELAYID+6, 0, 'Bloodwarder Falconer - random talk Bloodfalcon 04'),
+-- Commander Sarannis
+(@RELAYID+3, 1, @RELAYID+7, 5, 'Commander Sarannis - random yell'),
+(@RELAYID+3, 1, @RELAYID+8, 5, 'Commander Sarannis - talk event 01'),
+(@RELAYID+3, 1, @RELAYID+9, 5, 'Commander Sarannis - talk event 02'),
+(@RELAYID+3, 1, @RELAYID+10, 5, 'Commander Sarannis - talk event 03'),
+(@RELAYID+3, 1, 0, 80, 'Commander Sarannis - nothing');
+
+-- RelayScripts for RP handled via creature_ai_scripts
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+6;
+INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
+-- Bloodwarder Greenkeeper at then end of first Hallway
+-- On retail the rp can even happen if one of the Bloodwarder Greenkeepers is dead, to minimize dberrors we only let the rp happen when both are alive
+(@RELAYID+1, 0, 0, 31, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Bloodwarder Greenkeeper - Terminate Script if 2nd Bloodwarder Greenkeeper Found'),
+(@RELAYID+1, 0, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.06981, 'Bloodwarder Greenkeeper - Move Orientation'),
+(@RELAYID+1, 0, 2, 3, 0, 0, 0, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 3.1415, 'Bloodwarder Greenkeeper (2) - Move Orientation'),
+(@RELAYID+1, 0, 3, 1, 378, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0., 'Bloodwarder Greenkeeper - Emote StateTalk'),
+(@RELAYID+1, 0, 4, 1, 378, 0, 0, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Greenkeeper (2) - Emote StateTalk'),
+(@RELAYID+1, 7000, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.14675, 'Bloodwarder Greenkeeper - Move Orientation'),
+(@RELAYID+1, 7000, 1, 3, 0, 0, 0, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0.977, 'Bloodwarder Greenkeeper (2) - Move Orientation'),
+(@RELAYID+1, 7000, 2, 1, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0., 'Bloodwarder Greenkeeper - Emote StateUseStanding'),
+(@RELAYID+1, 7000, 3, 1, 69, 0, 0, 18419, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Greenkeeper (2) - Emote StateUseStanding'),
+-- Bloodwarder Falconer RP 01 with Bloodfalcon CGUID+30
+(@RELAYID+2,0,0,31,0,10,0,@STRINGID+7,10,0x800,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - search for string id - terminate if not found'),
+(@RELAYID+2,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,6.265731, 'Bloodwarder Falconer - Change Orientation'),
+(@RELAYID+2,1,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Emote Point'),
+(@RELAYID+2,1,3,0,0,0,0,0,0,0,16783,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Say Text'),
+(@RELAYID+2,1,4,20,2,1,0,@STRINGID+7,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints'),
+-- Bloodwarder Falconer RP 02 with Bloodfalcon CGUID+31
+(@RELAYID+3,0,0,31,0,10,0,@STRINGID+8,10,0x800,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - search for string id - terminate if not found'),
+(@RELAYID+3,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1.570796, 'Bloodwarder Falconer - Change Orientation'),
+(@RELAYID+3,1,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Emote Point'),
+(@RELAYID+3,1,3,0,0,0,0,0,0,0,16783,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Say Text'),
+(@RELAYID+3,1,4,20,2,2,0,@STRINGID+8,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints'),
+-- Bloodwarder Falconer RP 03 with Bloodfalcon CGUID+32
+(@RELAYID+4,0,0,31,0,10,0,@STRINGID+9,10,0x800,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - search for string id - terminate if not found'),
+(@RELAYID+4,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,4.7822, 'Bloodwarder Falconer - face StringID'),
+(@RELAYID+4,1,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Emote Point'),
+(@RELAYID+4,1,3,0,0,0,0,0,0,0,16783,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Say Text'),
+(@RELAYID+4,1,4,20,2,3,0,@STRINGID+9,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints'),
+-- 2nd Bloodwarder Falconer RP 01 with Bloodfalcone CGUID+34
+(@RELAYID+5,0,0,31,0,10,0,@STRINGID+10,10,0x800,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - search for string id - terminate if not found'),
+(@RELAYID+5,1,1,36,0,0,0,@STRINGID+10,10,2049,0,0,0,0,0,0,0,0,'Bloodwarder Falconer - face StringID'),
+(@RELAYID+5,1,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Emote Point'),
+(@RELAYID+5,1,3,0,0,0,0,0,0,0,16783,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Say Text'),
+(@RELAYID+5,1,4,20,2,4,0,@STRINGID+10,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints'),
+-- 2nd Bloodwarder Falconer RP 01 with Bloodfalcone CGUID+35
+(@RELAYID+6,0,0,31,0,10,0,@STRINGID+11,10,0x800,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - search for string id - terminate if not found'),
+(@RELAYID+6,1,1,36,0,0,0,@STRINGID+11,10,2049,0,0,0,0,0,0,0,0,'Bloodwarder Falconer - face StringID'),
+(@RELAYID+6,1,2,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Emote Point'),
+(@RELAYID+6,1,3,0,0,0,0,0,0,0,16783,0,0,0,0,0,0,0, 'Bloodwarder Falconer - Say Text'),
+(@RELAYID+6,1,4,20,2,5,0,@STRINGID+11,10,2048,2,0,0,0,0,0,0,0, 'StringId - start waypoints'),
+-- Commander Sarannis random Yell
+(@RELAYID+7,0,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Stop Waypoint'),
+(@RELAYID+7,1,0,3,0,0,0,0,0,0,0,0,0,0,155.922,290.894,-4.873918,0, 'Commander Sarannis - MoveToPoint'),
+(@RELAYID+7,2000,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote Cheer'),
+(@RELAYID+7,2000,1,0,0,0,0,0,0,0,16861,0,0,0,0,0,0,0, 'Commander Sarannis - Say Text'),
+(@RELAYID+7,8000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Start Waypoint'),
+-- Commander Sarannis talk event group 01
+(@RELAYID+8,0,0,31,0,10,0,@STRINGID+12,20,0x800,0,0,0,0,0,0,0,0, 'Commander Sarannis - search for string id - terminate if not found'),
+(@RELAYID+8,1,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Stop Waypoint'),
+(@RELAYID+8,1,1,3,0,0,0,0,0,0,0,0,0,0,151.53856,284.7357,-4.882605,0, 'Commander Sarannis - MoveToPoint'),
+(@RELAYID+8,3000,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,4.7538, 'Commander Sarannis - Change Orientation'),
+(@RELAYID+8,3000,1,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote OneShotSalute'),
+(@RELAYID+8,3000,2,36,0,0,0,@STRINGID+12,5,2560,0,0,0,0,0,0,0,0, 'StringId - face Commander Sarannis'),
+(@RELAYID+8,3000,3,1,66,0,0,@STRINGID+12,5,2560,0,0,0,0,0,0,0,0, 'StringId - Emote OneShotSalute'),
+(@RELAYID+8,6000,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote Talk'),
+(@RELAYID+8,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Start Waypoint'),
+-- Commander Sarannis talk event group 02
+(@RELAYID+9,0,0,31,0,10,0,@STRINGID+13,20,0x800,0,0,0,0,0,0,0,0, 'Commander Sarannis - search for string id - terminate if not found'),
+(@RELAYID+9,1,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Stop Waypoint'),
+(@RELAYID+9,1,1,3,0,0,0,0,0,0,0,0,0,0,160.72835,289.48978,-4.2098813,0, 'Commander Sarannis - MoveToPoint'),
+(@RELAYID+9,3000,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,5.693943, 'Commander Sarannis - Change Orientation'),
+(@RELAYID+9,3000,1,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote OneShotSalute'),
+(@RELAYID+9,3000,2,36,0,0,0,@STRINGID+13,5,2560,0,0,0,0,0,0,0,0, 'StringId - face Commander Sarannis'),
+(@RELAYID+9,3000,3,1,66,0,0,@STRINGID+13,5,2560,0,0,0,0,0,0,0,0, 'StringId - Emote OneShotSalute'),
+(@RELAYID+9,6000,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote Talk'),
+(@RELAYID+9,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Start Waypoint'),
+-- Commander Sarannis talk event group 03
+(@RELAYID+10,0,0,31,0,10,0,@STRINGID+14,20,0x800,0,0,0,0,0,0,0,0, 'Commander Sarannis - search for string id - terminate if not found'),
+(@RELAYID+10,1,0,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Stop Waypoint'),
+(@RELAYID+10,1,1,3,0,0,0,0,0,0,0,0,0,0,162.1837,295.61197,-4.9209743,0, 'Commander Sarannis - MoveToPoint'),
+(@RELAYID+10,3000,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,6.2574, 'Commander Sarannis - Change Orientation'),
+(@RELAYID+10,3000,1,1,66,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote OneShotSalute'),
+(@RELAYID+10,3000,2,36,0,0,0,@STRINGID+14,5,2560,0,0,0,0,0,0,0,0, 'StringId - face Commander Sarannis'),
+(@RELAYID+10,3000,3,1,66,0,0,@STRINGID+14,5,2560,0,0,0,0,0,0,0,0, 'StringId - Emote OneShotSalute'),
+(@RELAYID+10,6000,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Emote Talk'),
+(@RELAYID+10,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Start Waypoint');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

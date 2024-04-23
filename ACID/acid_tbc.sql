@@ -26536,32 +26536,21 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Warp Splinter (17977) - boss_warp_splinter
 -- Thorngrin the Tender 17978 - boss_thorngrin
 -- Laj (17980) - boss_laj
--- Bloodwarder Protector (4.3.4 Official Data - Normal/Heroic)
-('1799301','17993','14','0','100','1024','10000','25','0','0','0','0','11','34784','12','0','0','0','0','0','0','0','0','0','Bloodwarder Protector - Cast Intervene on Friendly Missing HP'),
-('1799302','17993','0','0','100','1025','6600','14100','8200','16100','0','0','11','29765','1','0','0','0','0','0','0','0','0','0','Bloodwarder Protector - Cast Crystal Strike'),
-('1799303','17993','2','0','100','1024','20','0','0','0','0','0','11','35399','0','0','0','0','0','0','0','0','0','0','Bloodwarder Protector - Cast Spell Reflection at 20% HP'),
--- Bloodwarder Falconer 17994 (4.3.4 Official Data - Normal/Heroic)
-('1799401','17994','4','0','80','0','0','0','0','0','0','0','1','16783','0','0','0','0','0','0','0','0','0','0','Bloodwarder Falconer - Say on Aggro'),
-('1799402','17994','0','0','100','1025','2400','12100','10800','22300','0','0','11','34852','8','0','0','0','0','0','0','0','0','0','Bloodwarder Falconer - Cast Call of the Falcon'),
-('1799403','17994','0','0','100','1025','4800','18100','15700','27700','0','0','11','32908','1','0','0','0','0','0','0','0','0','0','Bloodwarder Falconer - Cast Wing Clip'),
-('1799404','17994','2','0','100','1024','20','0','0','0','0','0','11','31567','0','0','0','0','0','0','0','0','0','0','Bloodwarder Falconer - Cast Deterrence at 20% HP'),
--- Bloodfalcon (4.3.4 Official Data - Normal/Heroic)
+-- Bloodwarder Protector - spell_list
+('1799301','17993','2','0','100','1024','20','0','0','0','0','0','11','35399','0','0','0','0','0','0','0','0','0','0','Bloodwarder Protector - Cast Spell Reflection at 20% HP'),
+-- Bloodwarder Falconer 17994 - spell_list
+('1799401','17994','2','0','100','1024','20','0','0','0','0','0','11','31567','0','0','0','0','0','0','0','0','0','0','Bloodwarder Falconer - Cast Deterrence at 20% HP'),
+-- guid based
+('5530028','-5530028','1','0','100','1','0','12000','15000','25000','0','0','53','-5530001','0','0','0','0','0','0','0','0','0','0','Bloodwarder Falconer - StartRandomScript OOC'),
+('5530029','-5530029','1','0','100','1','0','12000','15000','25000','0','0','53','-5530002','0','0','0','0','0','0','0','0','0','0','Bloodwarder Falconer - StartRandomScript OOC'),
+-- Bloodfalcon 18155 - spell_list
 ('1815501','18155','9','0','100','1025','8','25','10000','10000','0','0','11','32323','1','0','0','0','0','0','0','0','0','0','Bloodfalcon - Cast Charge'),
-('1815502','18155','0','0','100','1025','6200','13300','10800','19300','0','0','11','34856','1','0','0','0','0','0','0','0','0','0','Bloodfalcon - Cast Bloodburn'),
-('1815503','18155','0','0','100','1025','12500','25300','25300','44200','0','0','11','18144','1','0','0','0','0','0','0','0','0','0','Bloodfalcon - Cast Swoop'),
--- Bloodwarder Steward 18404
-('1840401','18404','0','0','100','1025','11000','18000','17000','25000','0','0','11','34821','15','0','0','0','0','0','0','0','0','0','Bloodwarder Steward - Cast Arcane Flurry'),
--- Tempest Forge Peacekeeper (4.3.4 Official Data - Normal/Heroic)
+-- Bloodwarder Steward 18404 - spell_list
+-- Tempest Forge Peacekeeper - spell_list
 ('1840501','18405','1','0','15','1','30000','120000','120000','240000','0','0','1','16785','16784','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Random Say OOC'),
-('1840502','18405','0','0','100','1025','9200','21700','12100','24100','0','0','11','34785','1','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Cast Arcane Volley'),
-('1840503','18405','0','0','100','1025','8400','19300','7200','18100','0','0','11','34791','0','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Cast Arcane Explosion'),
-('1840504','18405','0','0','100','1025','7600','16400','15700','25300','0','0','11','34793','1','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Cast Arcane Blast'),
--- Bloodwarder Greenkeeper (4.3.4 Official Data - Normal/Heroic) - No Coma Data Available
-('1841901','18419','0','0','100','1027','4800','14500','6100','18200','0','0','11','34798','1','0','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper (Normal) - Cast Greenkeeper''s Fury'),
-('1841902','18419','0','0','100','1029','3100','8400','3600','7300','0','0','11','39121','1','0','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper (Heroic) - Cast Greenkeeper''s Fury'),
-('1841903','18419','0','0','100','1027','9600','16900','7200','20500','0','0','11','34797','1','0','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper (Normal) - Cast Nature Shock'),
-('1841904','18419','0','0','100','1029','9600','16900','7200','16900','0','0','11','39120','1','0','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper (Heroic) - Cast Nature Shock'),
-('1841905','18419','0','0','100','1025','12000','18000','17000','21000','0','0','11','34800','5','512','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper - Cast Impending Coma'),
+('1840502','18405','34','0','100','1','34793','-1','0','0','0','0','13','-100','0','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Reset Target Threat on hit by Arcane Blast'),
+-- Bloodwarder Greenkeeper 18419 - spell_list - guid based
+('5530050','-5530050','1','0','100','1','0','0','25000','30000','0','0','53','5530001','0','0','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper - Start RelayScript'),
 -- Sunseeker Geomancer (4.3.4 Official Data - Normal)
 ('1842001','18420','9','0','100','1025','0','8','3600','8400','0','0','11','35124','0','0','0','0','0','0','0','0','0','0','Sunseeker Geomancer - Cast Arcane Explosion'),
 -- Sunseeker Researcher 18421 (4.3.4 Official Data - Normal/Heroic)
@@ -26615,14 +26604,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Frayer Wildling (4.3.4 Official Data - Normal/Heroic)
 ('1960801','19608','0','0','100','1027','4200','8100','4100','10200','0','0','11','34644','1','0','0','0','0','0','0','0','0','0','Frayer Wildling (Normal) - Cast Lash'),
 ('1960802','19608','0','0','100','1029','4200','8100','4100','8300','0','0','11','39122','1','0','0','0','0','0','0','0','0','0','Frayer Wildling (Heroic) - Cast Lash'),
--- Bloodwarder Mender 19633 (4.3.4 Official Data - Normal/Heroic)
-('1963301','19633','4','0','100','0','0','0','0','0','0','0','57','2','25','0','0','0','0','0','0','0','0','0','Bloodwarder Mender - Enable Range Mode on Aggro'),
-('1963302','19633','27','0','100','1','34809','1','15000','30000','0','0','11','34809','0','0','0','0','0','0','0','0','0','0','Bloodwarder Mender - Cast Holy Fury on Missing Buff'),
-('1963303','19633','14','0','100','1027','3600','40','15700','26500','0','0','11','35096','12','0','0','0','0','0','0','0','0','0','Bloodwarder Mender (Normal) - Cast Greater Heal on Friendly Missing HP'),
-('1963304','19633','14','0','100','1029','5000','40','15700','26500','0','0','11','35096','12','0','0','0','0','0','0','0','0','0','Bloodwarder Mender (Heroic) - Cast Greater Heal on Friendly Missing HP'),
-('1963305','19633','16','0','100','1025','34809','30','14500','22900','0','0','11','34809','12','0','0','0','0','0','0','0','0','0','Bloodwarder Mender - Cast Holy Fury on Friendly Missing Buff'),
-('1963306','19633','9','0','100','1027','0','30','2500','3500','0','0','11','17194','1','256','0','0','0','0','0','0','0','0','Bloodwarder Mender (Normal) - Cast Mind Blast'),
-('1963307','19633','9','0','100','1029','0','30','2500','3500','0','0','11','17287','1','256','0','0','0','0','0','0','0','0','Bloodwarder Mender (Heroic) - Cast Mind Blast'),
+-- Bloodwarder Mender 19633 - spell_list
+('1963301','19633','27','0','100','1','34809','1','15000','30000','0','0','11','34809','0','0','0','0','0','0','0','0','0','0','Bloodwarder Mender - Cast Holy Fury on Missing Buff'),
 -- Nethervine Trickster (4.3.4 Official Data - Normal/Heroic)
 ('1984301','19843','1','0','100','0','1000','1000','0','0','0','0','11','30831','0','32','0','0','0','0','0','0','0','0','Nethervine Trickster - Cast Stealth OOC'),
 ('1984302','19843','33','0','100','1025','0','0','4100','9700','0','0','11','34614','1','0','0','0','0','0','0','0','0','0','Nethervine Trickster - Cast Backstab on Facing Target Back'),
