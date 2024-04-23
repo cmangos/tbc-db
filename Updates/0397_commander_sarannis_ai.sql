@@ -36,3 +36,22 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2007801 WHERE `entry` = 20078;
 UPDATE `creature_template` SET `SpellList` = 2156901 WHERE `entry` = 21569;
+
+
+-- Commander Sarannis SpellList
+DELETE FROM `creature_template_spells` WHERE `entry` IN (17976, 21551);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1797601, 2155101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1797601, 'The Botanica - Commander Sarannis - Normal', 0, 0),
+(2155101, 'The Botanica - Commander Sarannis - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1797601, 2155101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1797601, 1, 34799, 0, 1188, 1, 0, 100, 0, 11000, 23000, 12000, 24000, 'Commander Sarannis - Arcane Devastation - current condition'),
+(2155101, 1, 34803, 0, -1, 0, 5530011, 100, 0, 60000, 60000, 60000, 60000, 'Commander Sarannis - Summon Reinforcement'),
+(2155101, 2, 34799, 0, 1188, 1, 0, 100, 0, 11000, 23000, 12000, 24000, 'Commander Sarannis - Arcane Devastation - current condition');
+
+
+UPDATE `creature_template` SET `SpellList` = 1797601 WHERE `entry` = 17976;
+UPDATE `creature_template` SET `SpellList` = 2155101 WHERE `entry` = 21551;

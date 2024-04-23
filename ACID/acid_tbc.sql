@@ -26528,11 +26528,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1797602','17976','4','0','100','0','0','0','0','0','0','0','1','19936','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Aggro'),
 ('1797603','17976','6','0','100','0','0','0','0','0','0','0','1','19942','0','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Death'),
 ('1797604','17976','5','0','100','1025','5000','5000','1','0','0','0','1','19938','19937','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Player Kill'),
-('1797605','17976','24','0','100','1025','34794','1','13300','17400','0','0','11','34799','1','0','1','19939','19940','0','0','0','0','0','Commander Sarannis - Cast Arcane Devastation and Yell on Target Arcane Resonance Aura Stack'),
-('1797606','17976','2','0','100','1026','55','0','0','0','0','0','12','20078','4','1800000','12','19633','4','1800000','1','17562','0','0','Commander Sarannis (Normal) - Spawn Bloodwarder Reservist and Bloodwarder Mender and Emote at 55% HP'),
-('1797607','17976','2','0','100','1026','55','0','0','0','0','0','12','20078','4','1800000','12','20078','4','1800000','1','19941','0','0','Commander Sarannis (Normal) - Spawn 2 Bloodwarder Reservists and Yell at 55% HP'),
-('1797608','17976','0','0','100','1029','30000','30000','60000','60000','0','0','12','20078','4','1800000','12','19633','4','1800000','1','17562','0','0','Commander Sarannis (Heroic) - Spawn Bloodwarder Reservist and Bloodwarder Mender and Emote'),
-('1797609','17976','0','0','100','1029','30000','30000','60000','60000','0','0','12','20078','4','1800000','12','20078','4','1800000','1','19941','0','0','Commander Sarannis (Heroic) - Spawn 2 Bloodwarder Reservists and Yell'),
+('1797605','17976','37','0','100','1025','34799','0','0','0','0','0','1','19939','19940','0','0','0','0','0','0','0','0','0','Commander Sarannis - Yell on Target hit by Arcane Devastation'),
+('1797606','17976','2','0','100','1026','55','0','0','0','0','0','11','34803','0','0','53','5530011','0','0','0','0','0','0','Commander Sarannis (Normal) - Cast Summon Reinforcement and start relay script at 55% HP'),
 -- Warp Splinter (17977) - boss_warp_splinter
 -- Thorngrin the Tender 17978 - boss_thorngrin
 -- Laj (17980) - boss_laj
@@ -26627,11 +26624,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Green Seedling (4.3.4 Official Data - Normal/Heroic)
 ('1996901','19969','11','0','100','0','0','0','0','0','0','0','11','34757','0','0','0','0','0','0','0','0','0','0','Green Seedling - Cast Toxic Pollen on Spawn'),
 ('1996902','19969','6','0','100','0','0','0','0','0','0','0','28','0','34757','0','0','0','0','0','0','0','0','0','Green Seedling - Remove Toxic Pollen on Death'),
--- Summoned Bloodwarder Reservist (4.3.4 Official Data - Normal/Heroic)
+-- Summoned Bloodwarder Reservist - spell_list
 ('2007801','20078','11','0','100','0','0','0','0','0','0','0','11','34815','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Reservist - Cast Teleport Effect on Spawn'),
 ('2007802','20078','1','0','100','0','2000','2000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Reservist - Zone Combat Pulse'),
 ('2007803','20078','1','0','100','0','5000','5000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Reservist - Despawn 5 secs OOC'),
--- Summoned Bloodwarder Mender 20083 (4.3.4 Official Data - Normal/Heroic)
+-- Summoned Bloodwarder Mender 20083 - spell_list
 ('2008301','20083','11','0','100','0','0','0','0','0','0','0','11','34815','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Cast Teleport Effect on Spawn'),
 ('2008302','20083','1','0','100','0','2000','2000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Zone Combat Pulse'),
 ('2008303','20083','1','0','100','0','5000','5000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Despawn 5 secs OOC'),
