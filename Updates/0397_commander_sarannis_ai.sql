@@ -21,7 +21,7 @@ UPDATE `creature_template` SET `SpellList` = 2008301 WHERE `entry` = 20083;
 UPDATE `creature_template` SET `SpellList` = 2156801 WHERE `entry` = 21568;
 
 
--- Summoned Bloodwarder Reservist 20083
+-- Summoned Bloodwarder Reservist 20078
 DELETE FROM `creature_template_spells` WHERE `entry` IN (20078, 21569);
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2007801, 2156901);
@@ -55,3 +55,18 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1797601 WHERE `entry` = 17976;
 UPDATE `creature_template` SET `SpellList` = 2155101 WHERE `entry` = 21551;
+
+
+
+-- Summoned Bloodwarder Mender 20083
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+-- FactionTemplate: 16
+UPDATE creature_template SET Faction = '16', SpeedWalk = '1', SpeedRun = '1.14286' WHERE entry IN (20083, 21568);
+
+
+-- Summoned Bloodwarder Reservist 20078
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+-- FactionTemplate: 16
+UPDATE creature_template SET Faction = '16', SpeedWalk = '1', SpeedRun = '1.14286' WHERE entry IN (20078, 21569);
