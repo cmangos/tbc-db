@@ -111,32 +111,6 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+61, 4, 121.211, 455.423, -4.88299, 3.87829, 15000, 1842101),
 (@CGUID+61, 5, 134.158, 467.606, -1.69619, 0.751624, 0, 0),
 (@CGUID+61, 6, 158.166, 491.949, -4.52846, 0.748482, 0, 0),
-(@CGUID+64, 1, 153.194, 402.43, -5.3864, 1.09406, 21000, 0),
-(@CGUID+64, 2, 152.247, 399.99, -5.3864, 4.42258, 0, 0),
-(@CGUID+64, 3, 153.166, 393.779, -5.3864, 4.85926, 0, 0),
-(@CGUID+64, 4, 157.038, 387.449, -5.3864, 5.26139, 0, 0),
-(@CGUID+64, 5, 160.205, 378.829, -5.3864, 4.99357, 0, 0),
-(@CGUID+64, 6, 159.918, 377.573, -5.3864, 4.48777, 26000, 0),
-(@CGUID+64, 7, 162.102, 381.613, -5.3864, 1.03202, 0, 0),
-(@CGUID+64, 8, 161.551, 390.539, -5.3864, 1.60222, 0, 0),
-(@CGUID+64, 9, 155.869, 395.531, -5.3864, 2.50621, 0, 0),
-(@CGUID+64, 10, 151.97, 399.905, -5.3864, 2.29887, 0, 0),
-(@CGUID+66, 1, 159.904, 402.942, -5.3864, 2.17163, 26000, 0),
-(@CGUID+66, 2, 161.38, 401.344, -5.3864, 5.50722, 0, 0),
-(@CGUID+66, 3, 168.674, 402.822, -5.3864, 6.18816, 0, 0),
-(@CGUID+66, 4, 177.992, 404.019, -5.3864, 6.28162, 0, 0),
-(@CGUID+66, 5, 182.163, 403.591, -5.3864, 5.64702, 0, 0),
-(@CGUID+66, 6, 182.889, 396.989, -5.3864, 4.91896, 0, 0),
-(@CGUID+66, 7, 181.288, 388.73, -5.3864, 4.46971, 0, 0),
-(@CGUID+66, 8, 188.878, 381.951, -5.43289, 5.66351, 0, 0),
-(@CGUID+66, 9, 191.392, 382.601, -5.44611, 0.146877, 0, 0),
-(@CGUID+66, 10, 192.458, 383.717, -5.44123, 0.775196, 31000, 0),
-(@CGUID+66, 11, 189.689, 381.902, -5.43911, 3.72201, 0, 0),
-(@CGUID+66, 12, 182.847, 387.644, -5.38726, 2.44338, 0, 0),
-(@CGUID+66, 13, 182.062, 400.955, -5.38726, 1.62971, 0, 0),
-(@CGUID+66, 14, 178.353, 404.378, -5.38726, 2.39626, 0, 0),
-(@CGUID+66, 15, 166.276, 401.489, -5.38726, 3.37644, 0, 0),
-(@CGUID+66, 16, 161.438, 401.543, -5.38726, 3.16752, 0, 0),
 (@CGUID+68, 1, 174.2612, 496.2471, -2.47682, 2.216568, 4000, 1842201),
 (@CGUID+68, 2, 174.2612, 496.2471, -2.47682, 2.216568, 6000, 1842203),
 (@CGUID+68, 3, 174.2612, 496.2471, -2.47682, 2.216568, 55000, 1842202),
@@ -325,8 +299,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+145, @CGUID+64, 1679), -- Greater Frayer -> Sunseeker Botanist
-(@CGUID+147, @CGUID+66, 1679), -- Greater Frayer -> Sunseeker Botanist
 (@CGUID+70, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
 (@CGUID+71, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
 (@CGUID+72, @CGUID+52, 1155), -- Frayer -> Sunseeker Geomancer
@@ -467,10 +439,10 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+61, 18421, 553, 3, 164.783, 501.235, -2.07282, 0.239551, 7200, 7200, 0, 2), -- Sunseeker Researcher
 (@CGUID+62, 0, 553, 3, 175.843, 387.166, -5.30306, 2.23402, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+63, 18422, 553, 3, 158.949, 369.891, -5.30307, 0.471239, 7200, 7200, 0, 0), -- Sunseeker Botanist
-(@CGUID+64, 18422, 553, 3, 152.724, 401.763, -5.38639, 1.10902, 7200, 7200, 0, 2), -- Sunseeker Botanist
+(@CGUID+64, 18422, 553, 3, 161.32674,377.6318,-5.38641,3.892084, 7200, 7200, 0, 0), -- Sunseeker Botanist
 (@CGUID+65, 18422, 553, 3, 161.187, 408.951, -5.30312, 6.26573, 7200, 7200, 0, 0), -- Sunseeker Botanist
-(@CGUID+66, 18422, 553, 3, 159.899, 402.71, -5.38639, 2.16378, 7200, 7200, 0, 2), -- Sunseeker Botanist
-(@CGUID+67, 18422, 553, 3, 158.516, 283.924, -3.61983, 6.18421, 7200, 7200, 0, 0), -- Sunseeker Botanist
+(@CGUID+66, 18422, 553, 3,161.58592,402.9305,-5.38644,2.2689280, 7200, 7200, 0, 0), -- Sunseeker Botanist
+(@CGUID+67, 18422, 553, 3, 194.021, 381.961, -5.3712, 5.16617, 7200, 7200, 0, 0), -- Sunseeker Botanist
 (@CGUID+68, 18422, 553, 3, 174.2612, 496.2471, -2.47682, 2.216568, 7200, 7200, 0, 2), -- Sunseeker Botanist
 (@CGUID+69, 18422, 553, 3, 161.8249, 508.441, -2.508824, 5.480334, 7200, 7200, 0, 2), -- Sunseeker Botanist
 (@CGUID+70, 18587, 553, 3, 168.887, 442.034, -6.92318, 3.42043, 7200, 7200, 3, 1), -- Frayer
@@ -548,9 +520,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+142, 19555, 553, 3, -9.87732, 599.763, -8.5421, 6.03884, 7200, 7200, 0, 0), -- TK Atrium Channel Target
 (@CGUID+143, 19555, 553, 3, 20.0907, 599.71, -8.29904, 3.14159, 7200, 7200, 0, 0), -- TK Atrium Channel Target
 (@CGUID+144, 19557, 553, 3, 160.619, 371.029, -5.30307, 3.24631, 7200, 7200, 0, 0), -- Greater Frayer
-(@CGUID+145, 19557, 553, 3, 151.366, 400.148, -5.38639, 0.900887, 7200, 7200, 0, 0), -- Greater Frayer
+(@CGUID+145, 19557, 553, 3, 163.06595,381.01263,-5.3864136,3.892084, 7200, 7200, 0, 0), -- Greater Frayer
 (@CGUID+146, 19557, 553, 3, 163.089, 409.039, -5.30312, 2.60054, 7200, 7200, 0, 0), -- Greater Frayer
-(@CGUID+147, 19557, 553, 3, 161.871, 399.913, -5.38639, 2.1049, 7200, 7200, 0, 0), -- Greater Frayer
+(@CGUID+147, 19557, 553, 3, 165.01082,403.72226,-5.3864384,2.268928, 7200, 7200, 0, 0), -- Greater Frayer
 (@CGUID+148, 19557, 553, 3, 194.849, 380.179, -5.3831, 1.67552, 7200, 7200, 0, 0), -- Greater Frayer
 (@CGUID+149, 19557, 553, 3, 172.6151, 498.3585, -2.312288, 4.433136, 7200, 7200, 0, 0), -- Greater Frayer
 (@CGUID+150, 19557, 553, 3, 163.7609, 507.1059, -2.360956, 3.508112, 7200, 7200, 0, 0), -- Greater Frayer
@@ -694,14 +666,16 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+15, 'The Botanica - Group 015 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+14),
 (@SGGUID+16, 'The Botanica - Group 016 - Sunseeker Botanist  - Greater Frayer - Sunseeker Researcher | Sunseeker Chemist', 0, 4, 0, 0, 1, 0),
 (@SGGUID+17, 'The Botanica - Group 017 - Sunseeker Researcher | Sunseeker Chemist', 0, 3, 0, 0, 1, 0),
-(@SGGUID+18, 'The Botanica - Group 018 - Sunseeker Botanist  - Greater Frayer - Sunseeker Researcher | Sunseeker Chemist', 0, 5, 0, 0, 1, 0),
-(@SGGUID+19, 'The Botanica - Group 019 - Sunseeker Botanist  - Greater Frayer - Sunseeker Researcher | Sunseeker Chemist', 0, 5, 0, 0, 1, 0),
+(@SGGUID+18, 'The Botanica - Group 018 - Sunseeker Botanist - Greater Frayer - Sunseeker Researcher | Sunseeker Chemist', 0, 5, 0, 0, 1, 0),
+(@SGGUID+19, 'The Botanica - Group 019 - Sunseeker Botanist - Greater Frayer - Sunseeker Researcher | Sunseeker Chemist', 0, 5, 0, 0, 1, 0),
+(@SGGUID+20, 'The Botanica - Group 020 - Sunseeker Botanist - Greater Frayer | Patrol 01', 0, 0, 0, 0, 1, 0),
+(@SGGUID+21, 'The Botanica - Group 021 - Sunseeker Botanist - Greater Frayer | Patrol 02', 0, 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+16, 18421, 1, 1, 0), (@SGGUID+16, 19486, 1, 1, 0), -- Sunseeker Researcher, Sunseeker Chemist
 (@SGGUID+17, 18421, 1, 2, 0), (@SGGUID+17, 19486, 1, 2, 0), -- Sunseeker Researcher, Sunseeker Chemist
 (@SGGUID+18, 18421, 1, 2, 0), (@SGGUID+18, 19486, 1, 2, 0), -- Sunseeker Researcher, Sunseeker Chemist
-(@SGGUID+19, 18421, 1, 2, 0), (@SGGUID+19, 19486, 1, 2, 0), -- Sunseeker Researcher, Sunseeker Chemist
+(@SGGUID+19, 18421, 1, 2, 0), (@SGGUID+19, 19486, 1, 2, 0); -- Sunseeker Researcher, Sunseeker Chemist
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+15, 0, 0), -- Bloodwarder Protector - right
@@ -776,15 +750,56 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+18, @CGUID+89, 3, 0), -- spawn_group_entry
 (@SGGUID+18, @CGUID+58, 3, 0), -- spawn_group_entry
 
-(@SGGUID+18, @CGUID+65, 0, 0), -- Sunseeker Botanist
-(@SGGUID+18, @CGUID+146, 1, 0), -- Greater Frayer
-(@SGGUID+18, @CGUID+55, 2, 0), -- spawn_group_entry
-(@SGGUID+18, @CGUID+59, 3, 0), -- spawn_group_entry
-(@SGGUID+18, @CGUID+88, 3, 0), -- spawn_group_entry
+(@SGGUID+19, @CGUID+65, 0, 0), -- Sunseeker Botanist
+(@SGGUID+19, @CGUID+146, 1, 0), -- Greater Frayer
+(@SGGUID+19, @CGUID+55, 2, 0), -- spawn_group_entry
+(@SGGUID+19, @CGUID+59, 3, 0), -- spawn_group_entry
+(@SGGUID+19, @CGUID+88, 3, 0), -- spawn_group_entry
 
--- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
--- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
--- INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`, `Comment`) VALUES
+(@SGGUID+20, @CGUID+64, 0, 0), -- Sunseeker Botanist
+(@SGGUID+20, @CGUID+145, 1, 0), -- Greater Frayer
+
+(@SGGUID+21, @CGUID+66, 0, 0), -- Sunseeker Botanist
+(@SGGUID+21, @CGUID+147, 1, 0); -- Greater Frayer
+
+INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
+(@SGGUID+20, 1, 3, 0, @SGGUID+20, 2, 'The Botanica - Group 020 - Sunseeker Botanist - Greater Frayer | Patrol 01'),
+(@SGGUID+21, 1, 3, 0, @SGGUID+21, 2, 'The Botanica - Group 021 - Sunseeker Botanist - Greater Frayer | Patrol 02');
+
+
+INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
+(@SGGUID+20, 'The Botanica - Group 020 - Sunseeker Botanist - Greater Frayer | Patrol 01'),
+(@SGGUID+21, 'The Botanica - Group 021 - Sunseeker Botanist - Greater Frayer | Patrol 02');
+
+INSERT INTO `waypoint_path` (`PathId`, `Point`, `PositionX`, `PositionY`, `PositionZ`, `Orientation`, `WaitTime`, `ScriptId`) VALUES
+(@SGGUID+20, 1, 161.32674, 377.6318, -5.38641,3.892084121704101562, 20000, 0), -- waittime between 15-25 seconds
+(@SGGUID+20, 2, 164.73518, 383.69333, -5.3864155, 100, 0, 0),
+(@SGGUID+20, 3, 164.08838, 388.16116, -5.386421, 100, 0, 0),
+(@SGGUID+20, 4, 161.8422, 392.52505, -5.3864274, 100, 0, 0),
+(@SGGUID+20, 5, 159.04375, 394.92587, -5.3864317, 100, 0, 0),
+(@SGGUID+20, 6, 154.68452, 398.07758, -5.386438, 100, 0, 0),
+(@SGGUID+20, 7, 153.94124, 401.8906, -5.3864427,0.942477762699127197, 20000, 0), -- waittime between 15-25 seconds
+(@SGGUID+20, 8, 157.82056, 395.40057, -5.386433, 100, 0, 0),
+(@SGGUID+20, 9, 160.73982, 392.51236, -5.386428, 100, 0, 0),
+(@SGGUID+20, 10, 163.7198, 388.017, -5.386421, 100, 0, 0),
+(@SGGUID+20, 11, 163.84503, 385.06787, -5.386418, 100, 0, 0),
+(@SGGUID+20, 12, 163.11421, 380.81992, -5.386413, 100, 0, 0),
+
+(@SGGUID+21, 1, 161.58592, 402.9305, -5.38644,2.268928050994873046, 20000, 0), -- waittime between 15-25 seconds
+(@SGGUID+21, 2, 168.7618, 399.839, -5.386432, 100, 0, 0),
+(@SGGUID+21, 3, 172.81506, 400.5747, -5.3864307, 100, 0, 0),
+(@SGGUID+21, 4, 177.91023, 400.0075, -5.3864274, 100, 0, 0),
+(@SGGUID+21, 5, 181.75496, 397.46924, -5.3864226, 100, 0, 0),
+(@SGGUID+21, 6, 182.47469, 393.09888, -5.3864174, 100, 0, 0),
+(@SGGUID+21, 7, 183.03293, 388.3197, -5.386411, 100, 0, 0),
+(@SGGUID+21, 8, 185.39342, 384.4199, -5.3914785, 100, 0, 0),
+(@SGGUID+21, 9, 188.07881, 383.3712, -5.397547, 100, 0, 0),
+(@SGGUID+21, 10, 191.3777, 384.4846, -5.4048786,0.767944872379302978, 20000, 0), -- waittime between 15-25 seconds
+(@SGGUID+21, 11, 183.88887, 388.4998, -5.3879004, 100, 0, 0),
+(@SGGUID+21, 12, 182.7735, 392.4268, -5.3864164, 100, 0, 0),
+(@SGGUID+21, 13, 181.82643, 397.84805, -5.386423, 100, 0, 0),
+(@SGGUID+21, 14, 177.46024, 402.43765, -5.3864307, 100, 0, 0),
+(@SGGUID+21, 15, 169.00165, 404.75284, -5.386438, 100, 0, 0);
 
 -- =======
 -- POOLING
