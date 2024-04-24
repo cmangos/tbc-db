@@ -277,7 +277,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+49, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+50, 0, 0, 0, 0, 0, NULL), -- Bloodwarder Greenkeeper
 (@CGUID+51, 0, 0, 0, 69, 0, NULL), -- Bloodwarder Greenkeeper
-(@CGUID+54, 0, 0, 0, 69, 0, NULL), -- Sunseeker Researcher
+(@CGUID+54, 0, 0, 0, 69, 0, NULL), -- spawn_group_entry
 (@CGUID+55, 0, 0, 1, 0, 0, NULL), -- Sunseeker Researcher
 (@CGUID+56, 0, 0, 1, 0, 0, NULL), -- Sunseeker Researcher
 (@CGUID+57, 0, 0, 1, 0, 0, NULL), -- Sunseeker Researcher
@@ -291,7 +291,7 @@ INSERT INTO `creature_addon` (`guid`, `mount`, `stand_state`, `sheath_state`, `e
 (@CGUID+67, 0, 8, 0, 0, 0, NULL), -- Sunseeker Botanist
 (@CGUID+68, 0, 0, 1, 0, 0, NULL), -- Sunseeker Botanist
 (@CGUID+69, 0, 0, 1, 0, 0, NULL), -- Sunseeker Botanist
-(@CGUID+86, 0, 0, 0, 69, 0, NULL), -- Sunseeker Chemist
+(@CGUID+86, 0, 0, 0, 69, 0, NULL), -- spawn_group_entry
 (@CGUID+87, 0, 0, 1, 69, 0, NULL), -- Sunseeker Chemist
 (@CGUID+88, 0, 0, 1, 69, 0, NULL), -- Sunseeker Chemist
 (@CGUID+89, 0, 0, 1, 69, 0, NULL), -- Sunseeker Chemist
@@ -325,9 +325,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+63, @CGUID+54, 1155), -- Sunseeker Botanist -> Sunseeker Researcher
-(@CGUID+86, @CGUID+54, 1155), -- Sunseeker Chemist -> Sunseeker Researcher
-(@CGUID+144, @CGUID+54, 1155), -- Greater Frayer -> Sunseeker Researcher
 (@CGUID+145, @CGUID+64, 1679), -- Greater Frayer -> Sunseeker Botanist
 (@CGUID+57, @CGUID+89, 1155), -- Sunseeker Researcher -> Sunseeker Chemist
 (@CGUID+58, @CGUID+89, 1155), -- Sunseeker Researcher -> Sunseeker Chemist
@@ -415,14 +412,12 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- REPLACE INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`, `search_range`) VALUES
 
 INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
-(@CGUID+54, 18421), (@CGUID+54, 19486), -- Sunseeker Researcher, Sunseeker Chemist
 (@CGUID+55, 18421), (@CGUID+55, 19486), -- Sunseeker Researcher, Sunseeker Chemist
 (@CGUID+56, 18421), (@CGUID+56, 19486), -- Sunseeker Researcher, Sunseeker Chemist
 (@CGUID+57, 18421), (@CGUID+57, 19486), -- Sunseeker Researcher, Sunseeker Chemist
 (@CGUID+58, 18421), (@CGUID+58, 19486), -- Sunseeker Researcher, Sunseeker Chemist
 (@CGUID+59, 18421), (@CGUID+59, 19486), -- Sunseeker Researcher, Sunseeker Chemist
 (@CGUID+62, 18421), (@CGUID+62, 19486), -- Sunseeker Researcher, Sunseeker Chemist
-(@CGUID+86, 18421), (@CGUID+86, 19486), -- Sunseeker Researcher, Sunseeker Chemist
 (@CGUID+87, 18421), (@CGUID+87, 19486), -- Sunseeker Researcher, Sunseeker Chemist
 (@CGUID+88, 18421), (@CGUID+88, 19486), -- Sunseeker Researcher, Sunseeker Chemist
 (@CGUID+89, 18421), (@CGUID+89, 19486); -- Sunseeker Researcher, Sunseeker Chemist
@@ -481,7 +476,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+51, 18419, 553, 3,-3.43691, 163.531, -5.45704, 1.15192, 7200, 7200, 0, 0), -- Bloodwarder Greenkeeper
 (@CGUID+52, 18420, 553, 3, 162.23, 452.538, -5.41697, 4.74775, 7200, 7200, 0, 2), -- Sunseeker Geomancer
 (@CGUID+53, 18420, 553, 3, 88.4563, 495.092, -5.38647, 5.83944, 7200, 7200, 0, 2), -- Sunseeker Geomancer
-(@CGUID+54, 0, 553, 3, 152.061, 369.7167, -5.303072, 0.7853982, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+54, 0, 553, 3, 152.061, 369.717, -5.30307, 0.785398, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+55, 0, 553, 3, 158.6152, 411.4069, -5.303119, 3.787364, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+56, 0, 553, 3, 176.3798, 392.6798, -5.303068, 3.769911, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+57, 0, 553, 3, 197.5445, 377.9596, -5.40067, 5.637414, 7200, 7200, 0, 0), -- creature_spawn_entry
@@ -490,7 +485,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+60, 18421, 553, 3, 170.1024, 499.2883, -2.201025, 1.291544, 7200, 7200, 0, 0), -- Sunseeker Researcher
 (@CGUID+61, 18421, 553, 3, 164.783, 501.235, -2.07282, 0.239551, 7200, 7200, 0, 2), -- Sunseeker Researcher
 (@CGUID+62, 0, 553, 3, 175.8427, 387.1663, -5.303061, 2.234021, 7200, 7200, 0, 0), -- creature_spawn_entry
-(@CGUID+63, 18422, 553, 3, 158.9493, 369.8913, -5.303071, 0.4712389, 7200, 7200, 0, 0), -- Sunseeker Botanist
+(@CGUID+63, 18422, 553, 3, 158.949, 369.891, -5.30307, 0.471239, 7200, 7200, 0, 0), -- Sunseeker Botanist
 (@CGUID+64, 18422, 553, 3, 152.724, 401.763, -5.38639, 1.10902, 7200, 7200, 0, 2), -- Sunseeker Botanist
 (@CGUID+65, 18422, 553, 3, 161.1868, 408.9511, -5.303116, 6.265732, 7200, 7200, 0, 0), -- Sunseeker Botanist
 (@CGUID+66, 18422, 553, 3, 159.899, 402.71, -5.38639, 2.16378, 7200, 7200, 0, 2), -- Sunseeker Botanist
@@ -513,7 +508,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+83, 18587, 553, 3, 99.0343, 483.894, -6.67042, 3.69687, 7200, 7200, 3, 1), -- Frayer
 (@CGUID+84, 18587, 553, 3, 103.663, 480.451, -6.65843, 3.69687, 7200, 7200, 3, 1), -- Frayer
 (@CGUID+85, 18587, 553, 3, 101.155, 490.86, -6.75729, 3.69687, 7200, 7200, 3, 1), -- Frayer
-(@CGUID+86, 0, 553, 3, 152.3964, 375.2624, -5.303071, 5.427974, 7200, 7200, 0, 0), -- creature_spawn_entry
+(@CGUID+86, 0, 553, 3, 152.396, 375.262, -5.30307, 5.42797, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+87, 0, 553, 3, 170.202, 387.4484, -5.303062, 0.541052, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+88, 0, 553, 3, 152.3955, 406.0444, -5.303119, 0.8552113, 7200, 7200, 0, 0), -- creature_spawn_entry
 (@CGUID+89, 0, 553, 3, 198.1311, 373.6621, -5.423732, 0.4712389, 7200, 7200, 0, 0), -- creature_spawn_entry
@@ -571,7 +566,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+141, 19555, 553, 3, -1.83877, 510.545, 0.624383, 2.58309, 7200, 7200, 0, 0), -- TK Atrium Channel Target
 (@CGUID+142, 19555, 553, 3, -9.87732, 599.763, -8.5421, 6.03884, 7200, 7200, 0, 0), -- TK Atrium Channel Target
 (@CGUID+143, 19555, 553, 3, 20.0907, 599.71, -8.29904, 3.14159, 7200, 7200, 0, 0), -- TK Atrium Channel Target
-(@CGUID+144, 19557, 553, 3, 160.6192, 371.0287, -5.303069, 3.246312, 7200, 7200, 0, 0), -- Greater Frayer
+(@CGUID+144, 19557, 553, 3, 160.619, 371.029, -5.30307, 3.24631, 7200, 7200, 0, 0), -- Greater Frayer
 (@CGUID+145, 19557, 553, 3, 151.366, 400.148, -5.38639, 0.900887, 7200, 7200, 0, 0), -- Greater Frayer
 (@CGUID+146, 19557, 553, 3, 163.0895, 409.0392, -5.303117, 2.600541, 7200, 7200, 0, 0), -- Greater Frayer
 (@CGUID+147, 19557, 553, 3, 161.871, 399.913, -5.38639, 2.1049, 7200, 7200, 0, 0), -- Greater Frayer
@@ -715,9 +710,13 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+12, 'The Botanica - Group 012 - Bloodwarder Falconer - Bloodfalcon (3)', 0, 4, 0, 0, 1, 0),
 (@SGGUID+13, 'The Botanica - Group 013 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+12),
 (@SGGUID+14, 'The Botanica - Group 014 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+13),
-(@SGGUID+15, 'The Botanica - Group 015 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+14);
+(@SGGUID+15, 'The Botanica - Group 015 - Bloodwarder Steward - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, @STRINGID+14),
 
--- INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+16, 'The Botanica - Group 016 - Sunseeker Botanist  - Greater Frayer - Sunseeker Researcher | Sunseeker Chemist', 0, 4, 0, 0, 1, 0),
+
+INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
+(@SGGUID+16, 18421, 1, 1, 0), (@SGGUID+16, 19486, 1, 1, 0); -- Sunseeker Researcher, Sunseeker Chemist
+
 
 INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+1, @CGUID+15, 0, 0), -- Bloodwarder Protector - right
@@ -775,7 +774,12 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 
 (@SGGUID+15, @CGUID+38, 0, 0), -- Bloodwarder Steward
 (@SGGUID+15, @CGUID+22, 1, 0), -- Bloodwarder Protector
-(@SGGUID+15, @CGUID+23, 2, 0); -- Bloodwarder Protector
+(@SGGUID+15, @CGUID+23, 2, 0), -- Bloodwarder Protector
+
+(@SGGUID+16, @CGUID+53, 0, 0), -- Sunseeker Botanist
+(@SGGUID+16, @CGUID+144, 1, 0), -- Greater Frayer
+(@SGGUID+16, @CGUID+54, 2, 0), -- spawn_group_entry
+(@SGGUID+16, @CGUID+86, 3, 0), -- spawn_group_entry
 
 -- INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 -- INSERT INTO `waypoint_path_name` (`PathId`, `Name`) VALUES
