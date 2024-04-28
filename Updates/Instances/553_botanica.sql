@@ -197,14 +197,8 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+133, 18, -18.2628, 518.513, -5.97764, 6.24732, 0, 0);
 
 INSERT INTO `creature_movement_template` (`entry`, `pathId`, `point`, `PositionX`, `PositionY`, `PositionZ`, `orientation`, `waittime`, `ScriptId`) VALUES
-(17975, 0, 1, 116.584, 455.602, -4.95288, 2.61773, 0, 0),
-(17975, 0, 2, 115.153, 455.568, -4.89346, 3.33087, 10000, 1069),
-(17975, 0, 3, 115.153, 455.568, -4.89346, 3.33087, 10000, 1797501),
-(17975, 0, 4, 116.623, 455.478, -4.94902, 6.17716, 0, 0),
-(17975, 0, 5, 120.628, 451.036, -4.92864, 5.62188, 0, 0),
-(17975, 0, 6, 120.543, 449.982, -4.88372, 4.41551, 10000, 1069),
-(17975, 0, 7, 120.543, 449.982, -4.88372, 4.41551, 10000, 1797501),
-(17975, 0, 8, 120.796, 450.93, -4.93171, 1.61949, 0, 0),
+(17975, 0, 1, 116.32591,455.5696,-4.941401,3.3859, 220000, 1797501), -- between 20-30 seconds
+(17975, 0, 2, 120.16402,450.68173,-4.894922,4.5553, 220000, 1797501),
 -- Commander Sarannis
 (17976, 0, 1, 125.72935,321.18497,-3.6359386, 100, 0, 0),
 (17976, 0, 2, 151.0752,295.8979,-4.574456, 100, 1000, 1797601),
@@ -366,7 +360,7 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 -- INSERT INTO `creature_spawn_entry` (`guid`, `entry`) VALUES
 
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecsmin`, `spawntimesecsmax`, `spawndist`, `MovementType`) VALUES
-(@CGUID+1, 17975, 553, 3, 118.742, 452.274, -4.89607, 0.796403, 86400, 86400, 0, 2), -- High Botanist Freywinn
+(@CGUID+1, 17975, 553, 3, 116.32591,455.5696,-4.941401,3.3859, 86400, 86400, 0, 2), -- High Botanist Freywinn
 (@CGUID+2, 17976, 553, 3, 125.72935,321.18497,-3.6359386, 5.47973, 86400, 86400, 0, 2), -- Commander Sarannis
 (@CGUID+3, 17977, 553, 3, 63.84069, 391.8824, -27.89385, 3.211406, 86400, 86400, 0, 0), -- Warp Splinter
 (@CGUID+4, 17978, 553, 3, 4.9486, 596.5779, -15.07834, 4.694936, 86400, 86400, 0, 0), -- Thorngrin the Tender
@@ -850,10 +844,9 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501,1799302,1799303,1799304,1799305,
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1799302,1799303,1799304,1799305,
 1950501,1950502,1950503,1950504,1950505,1950506,1950701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
-(1797501, 0, 0, 0, 0, 0, 0, 0, 0, 16945, 16946, 16948, 16947, 0, 0, 0, 0, 'High Botanist Freywinn - Text'),
 (1799302, 0, 15, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Cast Suicide'),
 (1799302, 17000, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Despawn'),
 (1799303, 300, 0, 0, 0, 0, 0, 0, 0, 16994, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Text'),
@@ -876,9 +869,11 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 
 -- Reworked MovementScripts
 -- Once Bota rework is done, we will only have one of this
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797601, 1799301, 1815501, 1840401, 1842001, 1842001, 1842101);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501, 1797601, 1799301, 1815501, 1840401, 1842001, 1842001, 1842101);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
--- Commander Sarannis RP
+-- High Botanist Freywinn
+(1797501, 10000, 1, 0, 0, 0, 0, 0, 0, 0, 16945, 16946, 16947, 16948, 0, 0, 0, 0, 'High Botanist Freywinn - Say Text'),
+-- Commander Sarannis RP 
 (1797601, 0, 0, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis - 10% chance to yell, 10% chance to talk with friends'),
 -- Sunseeker Protector entrance Intro 
 (1799301, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Disable Waypoint Movement'),
