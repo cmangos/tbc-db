@@ -88,10 +88,10 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+48, 5, -6.24241, 166.6921, -5.5403614,1.780235767364501953, 18000, 0), -- waittime between 5 and 30 seconds
 (@CGUID+48, 6, -3.464332, 161.02238, -5.540366, 100, 0, 0),
 (@CGUID+48, 7, 0.992403, 160.6039, -5.5403786, 100, 0, 0),
-(@CGUID+52, 1, 159.73839,450.8425,-5.4134717,4.6949357, 45000, 1842001),
+(@CGUID+52, 1, 159.73839,450.8425,-5.4134717,4.6949357, 40000, 1842001),
 (@CGUID+52, 2, 162.57597,441.6976,-6.8499804, 100, 0, 0),
 (@CGUID+52, 3, 162.00397,439.0201,-6.834277, 100, 0, 0),
-(@CGUID+52, 4, 157.23569,436.5563,-6.774154,3.618516921997070312, 12000, 1842002),
+(@CGUID+52, 4, 157.23569,436.5563,-6.774154,3.618516921997070312, 14000, 1842002),
 (@CGUID+52, 5, 162.69269,439.46976,-6.8432956, 100, 0, 0),
 (@CGUID+52, 6, 161.09004,446.55927,-6.8829055, 100, 0, 0),
 (@CGUID+53, 1, 88.4563, 495.092, -5.38647, 5.83944, 15000, 1842002),
@@ -100,19 +100,26 @@ INSERT INTO `creature_movement` (`id`, `point`, `PositionX`, `PositionY`, `Posit
 (@CGUID+53, 4, 102.952, 491.174, -6.76313, 6.25021, 8000, 1842004),
 (@CGUID+53, 5, 97.2095, 493.595, -6.78375, 6.13632, 0, 0),
 (@CGUID+53, 6, 88.4563, 495.092, -5.38647, 5.83944, 4000, 0),
-(@CGUID+61, 1, 164.783, 501.235, -2.07282, 0.239551, 25000, 0),
-(@CGUID+61, 2, 158.254, 492.187, -4.47891, 4.28121, 0, 0),
-(@CGUID+61, 3, 136.829, 470.648, -1.59932, 3.93877, 0, 0),
-(@CGUID+61, 4, 121.211, 455.423, -4.88299, 3.87829, 15000, 1842101),
-(@CGUID+61, 5, 134.158, 467.606, -1.69619, 0.751624, 0, 0),
-(@CGUID+61, 6, 158.166, 491.949, -4.52846, 0.748482, 0, 0),
-(@CGUID+68, 1, 174.2612, 496.2471, -2.47682, 2.216568, 4000, 1842201),
-(@CGUID+68, 2, 174.2612, 496.2471, -2.47682, 2.216568, 6000, 1842203),
-(@CGUID+68, 3, 174.2612, 496.2471, -2.47682, 2.216568, 55000, 1842202),
-(@CGUID+69, 1, 161.8249, 508.441, -2.508824, 5.480334, 25000, 0),
-(@CGUID+69, 2, 161.8249, 508.441, -2.508824, 5.480334, 4000, 1842201),
-(@CGUID+69, 3, 161.8249, 508.441, -2.508824, 5.480334, 6000, 1842203),
-(@CGUID+69, 4, 161.8249, 508.441, -2.508824, 5.480334, 55000, 1842202),
+
+
+(@CGUID+61, 1, 164.13808,501.65262,-2.1696212, 0.418879032135009765, 20000, 0), -- waittime between 20 and 25 seconds
+(@CGUID+61, 2, 160.26875,496.43365,-3.2064958, 100, 0, 0),
+(@CGUID+61, 3, 158.66127,492.3432,-4.3930135, 100, 0, 0),
+(@CGUID+61, 4, 156.15257,489.36734,-4.859781, 100, 0, 0),
+(@CGUID+61, 5, 150.52888,483.8496,-4.525158, 100, 0, 0),
+(@CGUID+61, 6, 138.15617,471.4412,-1.7105827, 100, 0, 0),
+(@CGUID+61, 7, 125.0919,458.282,-4.002604, 100, 0, 0),
+(@CGUID+61, 8, 121.70873,455.64517,-4.8065243, 100, 16000, 1842101),
+(@CGUID+61, 9, 130.02815,463.01624,-2.5864294, 100, 0, 0),
+(@CGUID+61, 10, 136.78746,469.63675,-1.535325, 100, 0, 0),
+(@CGUID+61, 11, 143.60991,477.3061,-2.8943598, 100, 0, 0),
+(@CGUID+61, 12, 151.18382,484.21405,-4.5561795, 100, 0, 0),
+(@CGUID+61, 13, 157.28519,490.94662,-4.815488, 100, 0, 0),
+(@CGUID+61, 14, 158.17474,496.27377,-3.8682458, 100, 0, 0),
+(@CGUID+61, 15, 159.99934,499.248,-2.327699, 100, 0, 0),
+
+
+
 (@CGUID+91, 1, 20.1188, 589.6809, -17.7396, 1.58825, 32000, 1950503), -- 1 Adjustment due to CallForHelp on Aggro: points 1,2,6 -> 20.1188, 589.6809, -17.7396 / 20.11373, 588.0859, -17.75986
 (@CGUID+91, 2, 20.1188, 589.6809, -17.7396, 1.46975, 4000, 1950506), -- 2
 (@CGUID+91, 3, 19.3148, 583.8, -17.8192, 4.30189, 0, 0),
@@ -294,10 +301,6 @@ REPLACE INTO `creature_template_addon` (`entry`, `mount`, `stand_state`, `sheath
 (19843, 0, 0, 1, 0, 0, '30831'); -- Nethervine Trickster
 
 INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
-(@CGUID+60, @CGUID+68, 1155), -- Sunseeker Researcher -> Sunseeker Botanist
-(@CGUID+149, @CGUID+68, 1155), -- Greater Frayer -> Sunseeker Botanist
-(@CGUID+69, @CGUID+90, 1155), -- Sunseeker Botanist -> Sunseeker Chemist
-(@CGUID+150, @CGUID+90, 1155), -- Greater Frayer -> Sunseeker Chemist
 (@CGUID+78, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
 (@CGUID+79, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
 (@CGUID+80, @CGUID+53, 1155), -- Frayer -> Sunseeker Geomancer
@@ -423,15 +426,15 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+58, 0, 553, 3, 199.583, 372.112, -5.43548, 0.663225, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+59, 0, 553, 3, 152.883, 411.747, -5.30312, 5.37561, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+60, 18421, 553, 3, 170.1024, 499.2883, -2.201025, 1.291544, 7200, 7200, 0, 0), -- Sunseeker Researcher
-(@CGUID+61, 18421, 553, 3, 164.783, 501.235, -2.07282, 0.239551, 7200, 7200, 0, 2), -- Sunseeker Researcher
+(@CGUID+61, 18421, 553, 3, 164.13808,501.65262,-2.1696212, 0.4188790321, 7200, 7200, 0, 2), -- Sunseeker Researcher
 (@CGUID+62, 0, 553, 3, 175.843, 387.166, -5.30306, 2.23402, 7200, 7200, 0, 0), -- spawn_group_entry
 (@CGUID+63, 18422, 553, 3, 158.949, 369.891, -5.30307, 0.471239, 7200, 7200, 0, 0), -- Sunseeker Botanist
 (@CGUID+64, 18422, 553, 3, 161.32674,377.6318,-5.38641,3.892084, 7200, 7200, 0, 0), -- Sunseeker Botanist
 (@CGUID+65, 18422, 553, 3, 161.187, 408.951, -5.30312, 6.26573, 7200, 7200, 0, 0), -- Sunseeker Botanist
 (@CGUID+66, 18422, 553, 3,161.58592,402.9305,-5.38644,2.2689280, 7200, 7200, 0, 0), -- Sunseeker Botanist
 (@CGUID+67, 18422, 553, 3, 194.021, 381.961, -5.3712, 5.16617, 7200, 7200, 0, 0), -- Sunseeker Botanist
-(@CGUID+68, 18422, 553, 3, 174.2612, 496.2471, -2.47682, 2.216568, 7200, 7200, 0, 2), -- Sunseeker Botanist
-(@CGUID+69, 18422, 553, 3, 161.8249, 508.441, -2.508824, 5.480334, 7200, 7200, 0, 2), -- Sunseeker Botanist
+(@CGUID+68, 18422, 553, 3, 174.2612, 496.2471, -2.47682, 2.216568, 7200, 7200, 0, 0), -- Sunseeker Botanist
+(@CGUID+69, 18422, 553, 3, 161.8249, 508.441, -2.508824, 5.480334, 7200, 7200, 0, 0), -- Sunseeker Botanist
 (@CGUID+70, 18587, 553, 3, 168.887, 442.034, -6.92318, 3.42043, 7200, 7200, 3, 1), -- Frayer
 (@CGUID+71, 18587, 553, 3, 171.384, 437.23, -6.93856, 4.57889, 7200, 7200, 3, 1), -- Frayer
 (@CGUID+72, 18587, 553, 3, 165.965, 436.164, -6.87502, 3.31047, 7200, 7200, 3, 1), -- Frayer
@@ -657,8 +660,9 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+19, 'The Botanica - Group 019 - Sunseeker Botanist - Greater Frayer - Sunseeker Researcher | Sunseeker Chemist', 0, 5, 0, 0, 1, 0),
 (@SGGUID+20, 'The Botanica - Group 020 - Sunseeker Botanist - Greater Frayer | Patrol 01', 0, 0, 0, 0, 1, 0),
 (@SGGUID+21, 'The Botanica - Group 021 - Sunseeker Botanist - Greater Frayer | Patrol 02', 0, 0, 0, 0, 1, 0),
-
-(@SGGUID+22, 'The Botanica - Group 022 - Sunseeker Geomancer - Frayer (8)', 0, 0, 0, 0, 1, 0);
+(@SGGUID+22, 'The Botanica - Group 022 - Sunseeker Geomancer - Frayer (8)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+23, 'The Botanica - Group 023 - Sunseeker Researcher - Greater Frayer - Sunseeker Botanist', 0, 0, 0, 0, 0, 0), -- this group dont aggro together
+(@SGGUID+24, 'The Botanica - Group 024 - Sunseeker Chemist - Greater Frayer - Sunseeker Botanist', 0, 0, 0, 0, 0, 0); -- this group dont aggro together
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+16, 18421, 1, 1, 0), (@SGGUID+16, 19486, 1, 1, 0), -- Sunseeker Researcher, Sunseeker Chemist
@@ -759,7 +763,14 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+22, @CGUID+74, 5, 0), -- Frayer
 (@SGGUID+22, @CGUID+75, 6, 0), -- Frayer
 (@SGGUID+22, @CGUID+76, 7, 0), -- Frayer
-(@SGGUID+22, @CGUID+77, 8, 0); -- Frayer
+(@SGGUID+22, @CGUID+77, 8, 0), -- Frayer
+
+(@SGGUID+23, @CGUID+60, 0, 0), -- Sunseeker Researcher
+(@SGGUID+23, @CGUID+68, 1, 0), -- Sunseeker Botanist
+(@SGGUID+23, @CGUID+149, 2, 0), -- Greater Frayer 
+(@SGGUID+24, @CGUID+90, 0, 0), -- Sunseeker Chemist
+(@SGGUID+24, @CGUID+69, 1, 0), -- Sunseeker Botanist
+(@SGGUID+24, @CGUID+150, 2, 0); -- Greater Frayer 
 
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
@@ -840,7 +851,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- =========
 
 DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797501,1799302,1799303,1799304,1799305,
-1842101,1842201,1842202,1842203,1950501,1950502,1950503,1950504,1950505,1950506,1950701);
+1950501,1950502,1950503,1950504,1950505,1950506,1950701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1797501, 0, 0, 0, 0, 0, 0, 0, 0, 16945, 16946, 16948, 16947, 0, 0, 0, 0, 'High Botanist Freywinn - Text'),
 (1799302, 0, 15, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Cast Suicide'),
@@ -852,11 +863,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1799305, 1000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector (Botanica) - Salute'),
 (1799305, 3000, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector (Botanica) - Ready For Combat'),
 (1799305, 3000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector (Botanica) - Disable Waypoint Movement'),
-(1842101, 1000, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1842101, 6000, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''),
-(1842201, 0, 0, 0, 0, 0, 0, 0, 0, 17000, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Botanist in Botanica'),
-(1842202, 0, 0, 0, 0, 0, 0, 0, 0, 16999, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Botanist in Botanica'),
-(1842203, 0, 15, 34254, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Botanist - Cast Rejuvenate Plant'),
 (1950501, 0, 15, 34221, 0, 0, 19555, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Crystal Channel TK Atrium Channel Target'),
 (1950502, 0, 15, 34200, 0, 0, 19511, @CGUID+122, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Crystal Channel Nethervine Inciter'),
 (1950502, 7000, 15, 34187, 0, 0, 19511, @CGUID+122, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Nethervine Inciter Casts Sunseeker Blessing'),
@@ -870,7 +876,7 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 
 -- Reworked MovementScripts
 -- Once Bota rework is done, we will only have one of this
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797601, 1799301, 1815501, 1840401, 1842001, 1842001);
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1797601, 1799301, 1815501, 1840401, 1842001, 1842001, 1842101);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Commander Sarannis RP
 (1797601, 0, 0, 45, 0, @RELAYID+3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Commander Sarannis - 10% chance to yell, 10% chance to talk with friends'),
@@ -887,12 +893,18 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1840401, 4000, 0, 20, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Steward - Move Waypoints'),
 -- Sunseeker Geomancer
 (1842001, 2000, 0, 15, 34167, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Cast Blizard'), 
-(1842001, 22000, 0, 15, 34169, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Cast RainOfFire'), 
-
-(1842002, 0, 0, 15, 34170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Cast Arcane Explosion'),
-(1842002, 2000, 0, 15, 34170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Cast Arcane Explosion'), 
-(1842002, 4000, 0, 15, 34170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Cast Arcane Explosion'), 
-(1842002, 6000, 0, 0, 0, 0, 0, 0, 0, 0, 17178, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Say Text');
+(1842001, 20000, 0, 15, 34169, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Cast RainOfFire'), 
+(1842002, 1000, 0, 15, 34170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Cast Arcane Explosion'),
+(1842002, 3000, 0, 15, 34170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Cast Arcane Explosion'), 
+(1842002, 5000, 0, 15, 34170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Cast Arcane Explosion'), 
+(1842002, 8000, 0, 0, 0, 0, 0, 0, 0, 0, 17178, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Geomancer - Say Text'),
+-- Sunseeker Researcher Patroling at 2nd Boss
+(1842101, 1000, 0, 31, 17975, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Researcher - Terminate if High Botanist Freywinn'),
+(1842101, 2000, 0, 36, 0, 0, 0, 17975, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Researcher - Face High Botanist Freywinn'),
+(1842101, 2000, 1, 0, 0, 0, 0, 0, 0, 0, 16942, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Researcher - Say Text'),
+(1842101, 8000, 0, 36, 0, 0, 0, 17975, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Researcher - Face High Botanist Freywinn'),
+(1842101, 8000, 1, 0, 0, 0, 0, 0, 0, 0, 16942, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Researcher - Say Text'),
+(1842101, 15000, 0, 0, 0, 0, 0, 0, 0, 0, 16944, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Researcher - Say EmotedText');
 
 -- 08:09:31.491
 
