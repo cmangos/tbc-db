@@ -845,7 +845,7 @@ INSERT INTO `pool_gameobject` (`guid`, `pool_entry`, `chance`, `description`) VA
 -- DBSCRIPTS
 -- =========
 
-DELETE FROM dbscripts_on_creature_movement WHERE id IN (1799302,1799303,1799304,1799305,
+DELETE FROM dbscripts_on_creature_movement WHERE id IN (1799302,1799303,1799304,
 1950501,1950502,1950503,1950504,1950505,1950506,1950701);
 INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (1799302, 0, 15, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Cast Suicide'),
@@ -854,9 +854,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `command`, `datalon
 (1799303, 1700, 15, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Cast Suicide'), -- 3700
 (1799303, 18200, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Protector (Botanica) - Despawn'),
 (1799304, 200, 0, 0, 0, 0, 0, 0, 0, 16993, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector - Text'),
-(1799305, 1000, 1, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector (Botanica) - Salute'),
-(1799305, 3000, 1, 333, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector (Botanica) - Ready For Combat'),
-(1799305, 3000, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'Bloodwarder Protector (Botanica) - Disable Waypoint Movement'),
 (1950501, 0, 15, 34221, 0, 0, 19555, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Crystal Channel TK Atrium Channel Target'),
 (1950502, 0, 15, 34200, 0, 0, 19511, @CGUID+122, 17, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Crystal Channel Nethervine Inciter'),
 (1950502, 7000, 15, 34187, 0, 0, 19511, @CGUID+122, 23, 0, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Channeler (Botanica) - Nethervine Inciter Casts Sunseeker Blessing'),

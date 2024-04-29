@@ -26551,8 +26551,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunseeker Geomancer - spell_list
 -- Sunseeker Researcher 18421 - spell_list
 -- Sunseeker Botanist - spell_list - guid based rp scriots
-('5530068','-5530068','1','0','100','1','0','20000','50000','70000','0','0','53','5530012','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript'),
-('5530069','-5530069','1','0','100','1','0','20000','50000','70000','0','0','53','5530012','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript'),
+('5530068','-5530068','1','0','100','1','0','20000','50000','80000','0','0','53','5530012','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript'),
+('5530069','-5530069','1','0','100','1','0','20000','50000','80000','0','0','53','5530012','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript'),
 -- Frayer (4.3.4 Official Data - Normal/Heroic)
 ('1858701','18587','8','0','100','1','34167','-1','1000','1000','0','0','11','34202','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Frost Form on Blizzard SpellHit'),
 ('1858702','18587','8','0','100','1','34169','-1','1000','1000','0','0','11','34203','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Fire Form on Rain of Fire SpellHit'),
