@@ -902,8 +902,6 @@ INSERT INTO `dbscripts_on_creature_movement` (`id`, `delay`, `priority`, `comman
 (1842101, 8000, 1, 0, 0, 0, 0, 0, 0, 0, 16942, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Researcher - Say Text'),
 (1842101, 15000, 0, 0, 0, 0, 0, 0, 0, 0, 16944, 0, 0, 0, 0, 0, 0, 0, 'Sunseeker Researcher - Say EmotedText');
 
--- 08:09:31.491
-
 DELETE FROM dbscript_random_templates WHERE id BETWEEN @RELAYID+1 AND @RELAYID+3;
 INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VALUES
 -- Bloodwarder Falconer RP script 
@@ -921,7 +919,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+3, 1, 0, 80, 'Commander Sarannis - nothing');
 
 -- RelayScripts for RP handled via creature_ai_scripts
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+11;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Bloodwarder Greenkeeper at then end of first Hallway
 -- On retail the rp can even happen if one of the Bloodwarder Greenkeepers is dead, to minimize dberrors we only let the rp happen when both are alive
@@ -1002,7 +1000,14 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+10,13000,0,32,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Commander Sarannis - Start Waypoint'),
 -- Commander Sarannis AI dbscript
 (@RELAYID+11,0,0,0,0,0,0,0,0,0,17562,0,0,0,0,0,0,0, 'Commander Sarannis - Emoted Text'),
-(@RELAYID+11,2000,0,0,0,0,0,0,0,0,19941,0,0,0,0,0,0,0, 'Commander Sarannis - Say Text');
+(@RELAYID+11,2000,0,0,0,0,0,0,0,0,19941,0,0,0,0,0,0,0, 'Commander Sarannis - Say Text'),
+-- Sunseeker Botanist
+(@RELAYID+12, 0, 0, 31, 19557, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,'Sunseeker Botanist - Terminate Script if Greater Frayer Found'),
+(@RELAYID+12,1,1,1,274,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Sunseeker Botanist - Emote OneShotNo'),
+(@RELAYID+12,1,2,0,0,0,0,0,0,0,17000,0,0,0,0,0,0,0, 'Sunseeker Botanist - Say Text'),
+(@RELAYID+12,3000,0,15,34254,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Sunseeker Botanist - Cast Rejuvenate Plant'),
+(@RELAYID+12,10000,0,1,273,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Sunseeker Botanist - Emote OneShotYes'),
+(@RELAYID+12,10000,1,0,0,0,0,0,0,0,16999,0,0,0,0,0,0,0, 'Sunseeker Botanist - Say Text');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
