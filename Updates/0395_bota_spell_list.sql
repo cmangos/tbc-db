@@ -122,14 +122,126 @@ DELETE FROM `creature_template_spells` WHERE `entry` IN (18404, 21549);
 
 DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1840401, 2154901);
 INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
-(1840401, 'Botanica - Bloodwarder Steward - Normal', 90, 0),
-(2154901, 'Botanica - Bloodwarder Steward - Heroic', 90, 0);
+(1840401, 'Botanica - Bloodwarder Steward - Normal', 0, 0),
+(2154901, 'Botanica - Bloodwarder Steward - Heroic', 0, 0);
 
 DELETE FROM `creature_spell_list` WHERE `Id` IN (1840401, 2154901);
 INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
 (1840401, 1, 34821, 0, -1, 0, 0, 100, 0, 11000, 18000, 17000, 25000, 'Bloodwarder Steward - Arcane Flurry - none'),
 (2154901, 1, 34821, 0, -1, 0, 0, 100, 0, 11000, 18000, 17000, 25000, 'Bloodwarder Steward - Arcane Flurry - none');
 
-
 UPDATE `creature_template` SET `SpellList` = 1840401 WHERE `entry` = 18404;
 UPDATE `creature_template` SET `SpellList` = 2154901 WHERE `entry` = 21549;
+
+-- Sunseeker Geomancer 18420
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18420, 21574);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1842001, 2157401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1842001, 'Botanica - Sunseeker Geomancer - Normal', 0, 0),
+(2157401, 'Botanica - Sunseeker Geomancer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1842001, 2157401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1842001, 1, 35124, 0, -1, 2, 0, 100, 0, 4000, 8000, 4000, 8000, 'Sunseeker Geomancer - Arcane Explosion - self'),
+(2157401, 1, 35124, 0, -1, 2, 0, 100, 0, 4000, 8000, 4000, 8000, 'Sunseeker Geomancer - AArcane Explosion - self');
+
+UPDATE `creature_template` SET `SpellList` = 1842001 WHERE `entry` = 18420;
+UPDATE `creature_template` SET `SpellList` = 2157401 WHERE `entry` = 21574;
+
+
+-- Sunseeker Researcher 18421
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18421, 21577);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1842101, 2157701);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1842101, 'Botanica - Sunseeker Researcher - Normal', 0, 0),
+(2157701, 'Botanica - Sunseeker Researcher - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1842101, 2157701);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1842101, 1, 34353, 0, -1, 1, 0, 100, 0, 6000, 10000, 6000, 10000, 'Sunseeker Researcher - Frost Shock - current'),
+(1842101, 2, 34355, 0, -1, 2, 0, 100, 0, 12000, 20000, 24000, 30000, 'Sunseeker Researcher - Poison Shield - self'),
+(1842101, 3, 34352, 0, -1, 100, 0, 100, 0, 4000, 18000, 6000, 20000, 'Sunseeker Researcher - Mind Shock - random'),
+(1842101, 4, 34354, 0, -1, 1, 0, 100, 0, 6000, 16000, 8000, 18000, 'Sunseeker Researcher - Flame Shock - current'),
+(2157701, 1, 34353, 0, -1, 1, 0, 100, 0, 6000, 10000, 6000, 10000, 'Sunseeker Researcher - Frost Shock - current'),
+(2157701, 2, 34355, 0, -1, 2, 0, 100, 0, 12000, 20000, 24000, 30000, 'Sunseeker Researcher - Poison Shield - self'),
+(2157701, 3, 34352, 0, -1, 100, 0, 100, 0, 4000, 18000, 6000, 20000, 'Sunseeker Researcher - Mind Shock - random'),
+(2157701, 4, 34354, 0, -1, 1, 0, 100, 0, 6000, 16000, 8000, 18000, 'Sunseeker Researcher - Flame Shock - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1842101 WHERE `entry` = 18421;
+UPDATE `creature_template` SET `SpellList` = 2157701 WHERE `entry` = 21577;
+
+
+-- Sunseeker Botanist 18422
+DELETE FROM `creature_template_spells` WHERE `entry` IN (18422, 21570);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1842201, 2157001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1842201, 'Botanica - Sunseeker Botanist - Normal', 80, 0),
+(2157001, 'Botanica - Sunseeker Botanist - Heroic', 80, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1842201, 2157001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1842201, 1, 34350, 0, -1, 6, 0, 100, 0, 6000, 16000, 17000, 28000, 'Sunseeker Botanist - Nature''s Rage - friendly missing buff skip self'),
+(1842201, 2, 34254, 0, -5530001, 0, 0, 100, 0, 2000, 12000, 25000, 35000, 'Sunseeker Botanist - Rejuvenate Plant - friendly missing 20% skip self'),
+(1842201, 3, 27637, 0, -1, 206, 0, 100, 0, 4000, 14000, 22000, 32000, 'Sunseeker Botanist - Regrowth - friendly missing 25% including self'),
+(2157001, 1, 34350, 0, -1, 6, 0, 100, 0, 6000, 16000, 17000, 28000, 'Sunseeker Botanist - Nature''s Rage - friendly missing buff skip self'),
+(2157001, 2, 39126, 0, -5530001, 0, 0, 100, 0, 2000, 12000, 25000, 35000, 'Sunseeker Botanist - Rejuvenate Plant - friendly missing 20% skip self'),
+(2157001, 3, 39125, 0, -1, 206, 0, 100, 0, 4000, 14000, 22000, 32000, 'Sunseeker Botanist - Regrowth - friendly missing 25% including self');
+
+UPDATE `creature_template` SET `SpellList` = 1842201 WHERE `entry` = 18422;
+UPDATE `creature_template` SET `SpellList` = 2157001 WHERE `entry` = 21570;
+
+-- Sunseeker Botanist Rejuvenate Plant should only be casted on friendly Plants, using custom unit_condition combat condition for this
+-- Unit Condition for Sunseeker Botanist
+DELETE FROM `unit_condition` WHERE `Id` IN (-5530001);
+INSERT INTO `unit_condition` (Id,Variable_0,Op_0,Value_0,Variable_1,Op_1,Value_1) VALUES
+(-5530001,75,1,5530015,12,4,80);	-- STRING_ID EQUAL_TO 5320001, HEALTH_PERCENT, LESS_THAN_OR_EQUAL_TO 80
+
+  -- Combat Condition for Sunseeker Botanist
+DELETE FROM `combat_condition` WHERE `Id` IN (-5530001); 
+INSERT INTO `combat_condition` (Id, FriendConditionID_0,FriendConditionOp_0,FriendConditionCount_0) VALUES
+(-5530001,-5530001,6,1); -- STRING_ID EQUAL_TO 5530015
+
+-- Assign string_id to all plants in botanica
+UPDATE `creature_template` SET `StringId1` = 5530015 WHERE `entry` IN (19557, 19608, 19920, 19958, 19962, 19964, 19969, 21555, 21554, 21579, 21583, 21550, 21566, 21557);
+
+-- Sunseeker Chemist 19486
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19486, 21572);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1948601, 2157201);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1948601, 'Botanica - Sunseeker Chemist - Normal', 0, 0),
+(2157201, 'Botanica - Sunseeker Chemist - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1948601, 2157201);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1948601, 1, 34358, 0, -1, 100, 0, 100, 0, 8000, 16000, 18000, 28000, 'Sunseeker Chemist - Vial of Poison - random'),
+(1948601, 2, 34359, 0, -1, 3, 0, 100, 0, 12000, 21000, 14000, 24000, 'Sunseeker Chemist - Fire Breath Potion - self'),
+(2157201, 1, 39127, 0, -1, 100, 0, 100, 0, 8000, 16000, 18000, 28000, 'Sunseeker Chemist - Vial of Poison - random'),
+(2157201, 2, 39128, 0, -1, 3, 0, 100, 0, 12000, 21000, 14000, 24000, 'Sunseeker Chemist - Fire Breath Potion - self');
+
+
+UPDATE `creature_template` SET `SpellList` = 1948601 WHERE `entry` = 19486;
+UPDATE `creature_template` SET `SpellList` = 2157201 WHERE `entry` = 21572;
+
+
+-- Greater Frayer 19557
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19557, 21555);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1955701, 2155501);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1955701, 'Botanica - Greater Frayer - Normal', 0, 0),
+(2155501, 'Botanica - Greater Frayer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1955701, 2155501);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1955701, 1, 34644, 0, -1, 1, 0, 100, 0, 5000, 13000, 6000, 14000, 'Greater Frayer - Lash - current'),
+(2155501, 1, 39122, 0, -1, 1, 0, 100, 0, 5000, 13000, 6000, 14000, 'Greater Frayer - Lash - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1955701 WHERE `entry` = 19557;
+UPDATE `creature_template` SET `SpellList` = 2155501 WHERE `entry` = 21555;
+
