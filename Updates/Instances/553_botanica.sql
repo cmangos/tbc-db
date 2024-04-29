@@ -609,7 +609,8 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+11, 'BLOODFALCON_05'),
 (@STRINGID+12, 'COMMANDER_SARANNIS_GROUP_01'), -- bloodwarder protector / steward groups before sarannis
 (@STRINGID+13, 'COMMANDER_SARANNIS_GROUP_02'), -- bloodwarder protector / steward groups before sarannis
-(@STRINGID+14, 'COMMANDER_SARANNIS_GROUP_03'); -- bloodwarder protector / steward groups before sarannis
+(@STRINGID+14, 'COMMANDER_SARANNIS_GROUP_03'), -- bloodwarder protector / steward groups before sarannis
+(@STRINGID+15, 'BOTANICA_PLANTS'); -- used for custom unit_condition
 
 DELETE FROM creature_spawn_data WHERE Id IN (1815501, 1815502, 1815503, 1815504, 1815505);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 

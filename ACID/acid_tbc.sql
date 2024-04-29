@@ -26548,28 +26548,14 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1840502','18405','34','0','100','1','34793','-1','0','0','0','0','13','-100','0','0','0','0','0','0','0','0','0','0','Tempest Forge Peacekeeper - Reset Target Threat on hit by Arcane Blast'),
 -- Bloodwarder Greenkeeper 18419 - spell_list - guid based
 ('5530050','-5530050','1','0','100','1','0','0','25000','30000','0','0','53','5530001','0','0','0','0','0','0','0','0','0','0','Bloodwarder Greenkeeper - Start RelayScript'),
--- Sunseeker Geomancer (4.3.4 Official Data - Normal)
-('1842001','18420','9','0','100','1025','0','8','3600','8400','0','0','11','35124','0','0','0','0','0','0','0','0','0','0','Sunseeker Geomancer - Cast Arcane Explosion'),
--- Sunseeker Researcher 18421 (4.3.4 Official Data - Normal/Heroic)
-('1842101','18421','0','0','100','1025','7200','16900','7200','21700','0','0','11','34352','1','0','0','0','0','0','0','0','0','0','Sunseeker Researcher - Cast Mind Shock'),
-('1842102','18421','0','0','100','1025','5500','21700','12100','24100','0','0','11','34354','1','0','0','0','0','0','0','0','0','0','Sunseeker Researcher - Cast Flame Shock'),
-('1842103','18421','0','0','100','1025','25300','33100','12100','19300','0','0','11','34353','1','0','0','0','0','0','0','0','0','0','Sunseeker Researcher - Cast Frost Shock'),
-('1842104','18421','0','0','100','1025','3000','5000','2000','5000','0','0','11','34355','0','32','0','0','0','0','0','0','0','0','Sunseeker Researcher - Cast Poison Shield'),
+-- Sunseeker Geomancer - spell_list
+-- Sunseeker Researcher 18421 - spell_list
 -- Sunseeker Botanist (4.3.4 Official Data - Normal/Heroic)
-('1842201','18422','16','0','100','1025','34350','15','16900','27700','0','0','11','34350','12','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Cast Nature''s Rage on Friendly Missing Buff'),
-('1842202','18422','0','0','100','1027','19300','19300','38600','38600','0','0','11','34254','1','0','0','0','0','0','0','0','0','0','Sunseeker Botanist (Normal) - Cast Rejuvenate Plant'),
-('1842203','18422','0','0','100','1029','19300','19300','38600','38600','0','0','11','39126','1','0','0','0','0','0','0','0','0','0','Sunseeker Botanist (Heroic) - Cast Rejuvenate Plant'),
-('1842204','18422','14','0','100','1027','4000','15','13300','35100','0','0','11','27637','12','0','0','0','0','0','0','0','0','0','Sunseeker Botanist (Normal) - Cast Regrowth on Friendly Missing HP'),
-('1842205','18422','14','0','100','1029','5600','15','13300','35100','0','0','11','39125','12','0','0','0','0','0','0','0','0','0','Sunseeker Botanist (Heroic) - Cast Regrowth on Friendly Missing HP'),
 -- Frayer (4.3.4 Official Data - Normal/Heroic)
 ('1858701','18587','8','0','100','1','34167','-1','1000','1000','0','0','11','34202','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Frost Form on Blizzard SpellHit'),
 ('1858702','18587','8','0','100','1','34169','-1','1000','1000','0','0','11','34203','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Fire Form on Rain of Fire SpellHit'),
 ('1858703','18587','8','0','100','1','34170','-1','1000','1000','0','0','11','34204','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Arcane Form on Arcane Explosion SpellHit'),
--- Sunseeker Chemist (4.3.4 Official Data - Normal)
-('1948601','19486','0','0','100','1027','4300','21500','18100','36200','0','0','11','34358','1','0','0','0','0','0','0','0','0','0','Sunseeker Chemist (Normal) - Cast Vial of Poison'),
-('1948602','19486','0','0','100','1029','4300','18200','18100','36200','0','0','11','39127','1','0','0','0','0','0','0','0','0','0','Sunseeker Chemist (Heroic) - Cast Vial of Poison'),
-('1948603','19486','0','0','100','1027','14400','22900','14500','24100','0','0','11','34359','0','0','0','0','0','0','0','0','0','0','Sunseeker Chemist (Normal) - Cast Fire Breath Potion'),
-('1948604','19486','0','0','100','1029','12200','19600','14500','24100','0','0','11','39128','0','0','0','0','0','0','0','0','0','0','Sunseeker Chemist (Heroic) - Cast Fire Breath Potion'),
+-- Sunseeker Chemist - spell_list
 -- Sunseeker Channeler 19505 (4.3.4 Official Data - Normal/Heroic)
 ('1950501','19505','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Sunseeker Channeler - Interrupt Channelling on Aggro'),
 ('1950502','19505','0','0','100','1025','5000','10000','12000','18000','0','0','11','34634','0','0','0','0','0','0','0','0','0','0','Sunseeker Channeler - Cast Sunseeker Aura'),
@@ -26593,9 +26579,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1951203','19512','0','0','100','1025','4300','16100','8100','12200','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Nethervine Reaper - Cast Cleave'),
 -- Mutate Fear-Shrieker (FEAR SPELL WAS REMOVED IN 4.x.x)
 ('1951301','19513','0','0','100','1025','8000','24000','28000','36000','0','0','11','30584','0','0','0','0','0','0','0','0','0','0','Mutate Fear-Shrieker - Cast Fear'),
--- Greater Frayer (4.3.4 Official Data - Normal/Heroic)
-('1955701','19557','0','0','100','1027','2300','8300','5100','12100','0','0','11','34644','1','0','0','0','0','0','0','0','0','0','Greater Frayer (Normal) - Cast Lash'),
-('1955702','19557','0','0','100','1029','2300','8300','5100','12100','0','0','11','39122','1','0','0','0','0','0','0','0','0','0','Greater Frayer (Heroic) - Cast Lash'),
+-- Greater Frayer - spell_list
 -- Mutate Fleshlasher (4.3.4 Official Data - Normal/Heroic)
 ('1959801','19598','0','0','100','1025','7800','12100','6200','12100','0','0','11','34351','1','0','0','0','0','0','0','0','0','0','Mutate Fleshlasher - Cast Vicious Bite'),
 -- Frayer Wildling (4.3.4 Official Data - Normal/Heroic)
