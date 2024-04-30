@@ -58,3 +58,8 @@ UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.14286' WHERE entry I
 -- [0] WalkSpeed: 4
 -- [0] RunSpeed: 10
 UPDATE creature_template SET SpeedWalk = '1.6', SpeedRun = '1.428' WHERE entry IN (17975, 21558);
+
+-- Green Seedling, Blue Seedling, White Seedling, Red Seedling
+-- WalkSpeed: 2
+-- RunSpeed: 2
+UPDATE creature_template SET SpeedWalk = '0.8', SpeedRun = '0.285' WHERE entry IN (19958, 19962, 19964, 19969, 21550, 21557, 21566, 21583);
