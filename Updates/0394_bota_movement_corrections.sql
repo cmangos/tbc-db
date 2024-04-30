@@ -63,3 +63,13 @@ UPDATE creature_template SET SpeedWalk = '1.6', SpeedRun = '1.428' WHERE entry I
 -- WalkSpeed: 2
 -- RunSpeed: 2
 UPDATE creature_template SET SpeedWalk = '0.8', SpeedRun = '0.285' WHERE entry IN (19958, 19962, 19964, 19969, 21550, 21557, 21566, 21583);
+
+-- Nethervince Inciter / Nethervine Reaper
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.14286' WHERE entry IN (19511, 21563, 19512, 21564);
+
+-- Sunseeker Channeler
+-- WalkSpeed: 2.5
+-- RunSpeed: 8
+UPDATE creature_template SET SpeedWalk = '1', SpeedRun = '1.14286' WHERE entry IN (19505, 21571);
