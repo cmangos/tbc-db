@@ -26572,11 +26572,8 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunseeker Harvester - spell_list
 -- Nethervine Inciter (19511,21563) - creature_spell_list
 ('1951101','19511','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Inciter - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),
-('1951102','19511','0','0','100','1025','4300','9700','21700','38600','0','0','11','34615','16','544','0','0','0','0','0','0','0','0','Nethervine Inciter - Cast Mind Numbing Poison on Random Player Mana User'),
 -- Nethervine Reaper 19512 (4.3.4 Official Data - Normal/Heroic)
 ('1951201','19512','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Reaper - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),
-('1951202','19512','0','0','100','1029','17200','22600','21200','26400','0','0','11','34626','1','32','0','0','0','0','0','0','0','0','Nethervine Reaper (Heroic) - Cast Pale Death'),
-('1951203','19512','0','0','100','1025','4300','16100','8100','12200','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Nethervine Reaper - Cast Cleave'),
 -- Mutate Fear-Shrieker (FEAR SPELL WAS REMOVED IN 4.x.x)
 ('1951301','19513','0','0','100','1025','8000','24000','28000','36000','0','0','11','30584','0','0','0','0','0','0','0','0','0','0','Mutate Fear-Shrieker - Cast Fear'),
 -- Greater Frayer - spell_list

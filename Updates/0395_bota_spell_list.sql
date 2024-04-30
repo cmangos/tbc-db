@@ -263,3 +263,45 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1950901 WHERE `entry` = 19509;
 UPDATE `creature_template` SET `SpellList` = 2157501 WHERE `entry` = 21575;
 
+
+-- Nethervine Inciter 19511
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19511, 21563);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1951101, 2156301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1951101, 'Botanica - Nethervine Inciter - Normal', 0, 0),
+(2156301, 'Botanica - Nethervine Inciter - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1951101, 2156301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1951101, 1, 30621, 0, -1, 1, 0, 100, 0, 10000, 22000, 20000, 32000, 'Nethervine Inciter - Kidney Shot - current'),
+(1951101, 2, 34616, 0, -1, 1, 0, 100, 0, 6000, 18000, 120000, 130000, 'Nethervine Inciter - Deadly Poison - current'),
+(1951101, 3, 34615, 0, -1, 105, 0, 100, 0, 6000, 18000, 22000, 32000, 'Nethervine Inciter - Mind Numbing Poison - random mana user'),
+
+(2156301, 1, 30621, 0, -1, 1, 0, 100, 0, 10000, 22000, 20000, 32000, 'Nethervine Inciter - Kidney Shot - current'),
+(2156301, 2, 34616, 0, -1, 1, 0, 100, 0, 6000, 18000, 120000, 130000, 'Nethervine Inciter - Deadly Poison - current'),
+(2156301, 3, 34615, 0, -1, 105, 0, 100, 0, 6000, 18000, 22000, 32000, 'Nethervine Inciter - Mind Numbing Poison - random mana user');
+
+UPDATE `creature_template` SET `SpellList` = 1951101 WHERE `entry` = 19511;
+UPDATE `creature_template` SET `SpellList` = 2156301 WHERE `entry` = 21563;
+
+
+-- Nethervine Reaper 19512
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19512, 21564);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1951201, 2156401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1951201, 'Botanica - Nethervine Reaper - Normal', 0, 0),
+(2156401, 'Botanica - Nethervine Reaper - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1951201, 2156401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1951201, 1, 34626, 0, -1, 100, 0, 100, 0, 6000, 17000, 20000, 30000, 'Nethervine Reaper - Pale Death - random'),
+(1951201, 2, 15284, 0, -1, 1, 0, 100, 0, 8000, 21000, 8000, 21000, 'Nethervine Reaper - Cleave - current'),
+(2156401, 1, 34626, 0, -1, 100, 0, 100, 0, 6000, 17000, 20000, 30000, 'Nethervine Reaper - Pale Death - random'),
+(2156401, 2, 15284, 0, -1, 1, 0, 100, 0, 8000, 21000, 8000, 21000, 'Nethervine Reaper - Cleave - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1951201 WHERE `entry` = 19512;
+UPDATE `creature_template` SET `SpellList` = 2156401 WHERE `entry` = 21564;
+
