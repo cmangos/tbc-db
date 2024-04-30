@@ -26566,9 +26566,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1950701','19507','0','0','100','1027','4800','15300','18100','25300','0','0','11','34642','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Normal) - Cast Death and Decay'),
 ('1950702','19507','0','0','100','1029','4800','15300','18100','25300','0','0','11','39347','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Heroic) - Cast Death and Decay'),
 ('1950703','19507','0','0','100','1025','22100','29400','34800','37700','0','0','11','34247','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer - Cast Summon Lasher Beast'),
--- Sunseeker Herbalist (4.3.4 Official Data - Normal/Heroic)
-('1950801','19508','0','0','100','1025','6100','9600','12100','20500','0','0','11','22127','4','512','0','0','0','0','0','0','0','0','Sunseeker Herbalist - Cast Entangling Roots'),
-('1950802','19508','0','0','100','1025','1000','4000','5000','8000','0','0','11','34641','4','512','0','0','0','0','0','0','0','0','Sunseeker Herbalist - Cast Spade Toss'),
+-- Sunseeker Herbalist - spell_list
 -- Sunseeker Harvester - spell_list
 -- Nethervine Inciter (19511,21563) - creature_spell_list
 ('1951101','19511','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Inciter - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),

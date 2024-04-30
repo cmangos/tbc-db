@@ -305,3 +305,19 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1951201 WHERE `entry` = 19512;
 UPDATE `creature_template` SET `SpellList` = 2156401 WHERE `entry` = 21564;
 
+
+-- Sunseeker Herbalist 19508
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19508, 21576);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1950801, 2157601);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1950801, 'Botanica - Sunseeker Herbalist - Normal', 0, 0),
+(2157601, 'Botanica - Sunseeker Herbalist - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1950801, 2157601);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1950801, 1, 22127, 0, -1, 1, 0, 100, 0, 7000, 16000, 13000, 19000, 'Sunseeker Herbalist - Entangling Roots - current'),
+(2157601, 1, 22127, 0, -1, 1, 0, 100, 0, 7000, 16000, 13000, 19000, 'Sunseeker Herbalist - Entangling Roots - current');
+
+UPDATE `creature_template` SET `SpellList` = 1950801 WHERE `entry` = 19508;
+UPDATE `creature_template` SET `SpellList` = 2157601 WHERE `entry` = 21576;
