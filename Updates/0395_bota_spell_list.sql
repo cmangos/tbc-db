@@ -321,3 +321,23 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 1950801 WHERE `entry` = 19508;
 UPDATE `creature_template` SET `SpellList` = 2157601 WHERE `entry` = 21576;
+
+
+-- Sunseeker Channeler 19505
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19505, 21571);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1950501, 2157101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1950501, 'Botanica - Sunseeker Channeler - Normal', 0, 0),
+(2157101, 'Botanica - Sunseeker Channeler - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1950501, 2157101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1950501, 1, 34634, 0, -1, 2, 0, 100, 0, 6000, 15000, 9000, 22000, 'Sunseeker Channeler - Sunseeker Aura - self'),
+(1950501, 1, 34637, 0, -1, 105, 0, 100, 0, 7000, 16000, 12000, 27000, 'Sunseeker Channeler - Soul Channel - random mana user'),
+(2157101, 1, 34634, 0, -1, 2, 0, 100, 0, 6000, 15000, 9000, 22000, 'Sunseeker Channeler - Sunseeker Aura - self'),
+(2157101, 1, 34637, 0, -1, 105, 0, 100, 0, 7000, 16000, 12000, 27000, 'Sunseeker Channeler - Soul Channel - random mana user');
+
+UPDATE `creature_template` SET `SpellList` = 1950501 WHERE `entry` = 19505;
+UPDATE `creature_template` SET `SpellList` = 2157101 WHERE `entry` = 21571;
+

@@ -26560,8 +26560,6 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunseeker Chemist - spell_list
 -- Sunseeker Channeler 19505 (4.3.4 Official Data - Normal/Heroic)
 ('1950501','19505','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Sunseeker Channeler - Interrupt Channelling on Aggro'),
-('1950502','19505','0','0','100','1025','5000','10000','12000','18000','0','0','11','34634','0','0','0','0','0','0','0','0','0','0','Sunseeker Channeler - Cast Sunseeker Aura'),
-('1950503','19505','0','0','100','1025','8100','14200','12100','27700','0','0','11','34637','16','512','0','0','0','0','0','0','0','0','Sunseeker Channeler - Cast Soul Channel on Random Player Mana User'),
 -- Sunseeker Gene-Splicer (4.3.4 Official Data - Normal/Heroic)
 ('1950701','19507','0','0','100','1027','4800','15300','18100','25300','0','0','11','34642','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Normal) - Cast Death and Decay'),
 ('1950702','19507','0','0','100','1029','4800','15300','18100','25300','0','0','11','39347','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Heroic) - Cast Death and Decay'),
