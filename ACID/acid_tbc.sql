@@ -26569,9 +26569,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Sunseeker Herbalist (4.3.4 Official Data - Normal/Heroic)
 ('1950801','19508','0','0','100','1025','6100','9600','12100','20500','0','0','11','22127','4','512','0','0','0','0','0','0','0','0','Sunseeker Herbalist - Cast Entangling Roots'),
 ('1950802','19508','0','0','100','1025','1000','4000','5000','8000','0','0','11','34641','4','512','0','0','0','0','0','0','0','0','Sunseeker Herbalist - Cast Spade Toss'),
--- Sunseeker Harvester (4.3.4 Official Data - Normal/Heroic) - (No Polymorph Data Available)
-('1950901','19509','0','0','100','1025','3100','9700','8400','15700','0','0','11','34640','1','0','0','0','0','0','0','0','0','0','Sunseeker Harvester - Cast Wilting Touch'),
-('1950902','19509','0','0','100','1025','9000','15000','12000','18000','0','0','11','34639','5','512','0','0','0','0','0','0','0','0','Sunseeker Harvester - Cast Polymorph'),
+-- Sunseeker Harvester - spell_list
 -- Nethervine Inciter (19511,21563) - creature_spell_list
 ('1951101','19511','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Inciter - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),
 ('1951102','19511','0','0','100','1025','4300','9700','21700','38600','0','0','11','34615','16','544','0','0','0','0','0','0','0','0','Nethervine Inciter - Cast Mind Numbing Poison on Random Player Mana User'),
