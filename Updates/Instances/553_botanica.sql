@@ -550,7 +550,10 @@ INSERT INTO `string_id` (Id, Name) VALUES
 (@STRINGID+12, 'COMMANDER_SARANNIS_GROUP_01'), -- bloodwarder protector / steward groups before sarannis
 (@STRINGID+13, 'COMMANDER_SARANNIS_GROUP_02'), -- bloodwarder protector / steward groups before sarannis
 (@STRINGID+14, 'COMMANDER_SARANNIS_GROUP_03'), -- bloodwarder protector / steward groups before sarannis
-(@STRINGID+15, 'BOTANICA_PLANTS'); -- used for custom unit_condition
+(@STRINGID+15, 'BOTANICA_PLANTS'), -- used for custom unit_condition
+(@STRINGID+16, 'SUNSEEKER_CHANNELER_GROUP_RIGHT'),
+(@STRINGID+17, 'SUNSEEKER_CHANNELER_GROUP_LEFT'),
+(@STRINGID+18, 'SUNSEEKER_CHANNELER_TARGET');
 
 DELETE FROM creature_spawn_data WHERE Id IN (1815501, 1815502, 1815503, 1815504, 1815505);
 INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES 
@@ -559,15 +562,18 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 (@CGUID+31, '1815502'),
 (@CGUID+32, '1815503'),
 (@CGUID+34, '1815504'),
-(@CGUID+35, '1815505');
+(@CGUID+35, '1815505'),
+-- Nethervince Inciter target for Sunseeker Channeler - Channel spell
+(@CGUID+122, '1951101');
 
-DELETE FROM creature_spawn_data_template WHERE Entry IN (1815501, 1815502, 1815503, 1815504, 1815505);
+DELETE FROM creature_spawn_data_template WHERE Entry IN (1815501, 1815502, 1815503, 1815504, 1815505, 1951101);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `StringId`, `Name`) VALUES 
 ('1815501', @STRINGID+7, 'The Botanica - BLOODFALCON_01'), 
 ('1815502', @STRINGID+8, 'The Botanica - BLOODFALCON_02'), 
 ('1815503', @STRINGID+9, 'The Botanica - BLOODFALCON_03'),
 ('1815504', @STRINGID+10, 'The Botanica - BLOODFALCON_04'),
-('1815505', @STRINGID+11, 'The Botanica - BLOODFALCON_05');
+('1815505', @STRINGID+11, 'The Botanica - BLOODFALCON_05'),
+('1951101', @STRINGID+18, 'The Botanica - SUNSEEKER_CHANNELER_TARGET');
 
 -- ============
 -- SPAWN GROUPS
@@ -600,8 +606,8 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+24, 'The Botanica - Group 024 - Sunseeker Chemist - Greater Frayer - Sunseeker Botanist', 0, 0, 0, 0, 0, 0), -- this group dont aggro together
 (@SGGUID+25, 'The Botanica - Group 025 - Sunseeker Geomancer - Frayer (8)', 0, 0, 0, 0, 3, 0), -- respawn together
 (@SGGUID+26, 'The Botanica - Group 026 - Sunseeker Harvester - Sunseeker Herbalist (2)', 0, 0, 0, 0, 1, 0), 
-(@SGGUID+27, 'The Botanica - Group 027 - Sunseeker Channeler (2)', 0, 0, 0, 0, 1, 0), 
-(@SGGUID+28, 'The Botanica - Group 028 - Sunseeker Channeler (2)', 0, 0, 0, 0, 1, 0), 
+(@SGGUID+27, 'The Botanica - Group 027 - Sunseeker Channeler (2)', 0, 0, 0, 0, 1, @STRINGID+16), 
+(@SGGUID+28, 'The Botanica - Group 028 - Sunseeker Channeler (2)', 0, 0, 0, 0, 1, @STRINGID+17), 
 (@SGGUID+29, 'The Botanica - Group 029 - Nethervine Inciter - Nethervine Reaper | Patrol 03', 0, 0, 0, 0, 1, 0),
 
 (@SGGUID+30, 'The Botanica - Group 030 - Nethervine Inciter (2)- Nethervine Reaper (2)', 0, 0, 0, 0, 1, 0),
@@ -912,7 +918,7 @@ INSERT INTO dbscript_random_templates (id, type, target_id, chance, comments) VA
 (@RELAYID+3, 1, 0, 80, 'Commander Sarannis - nothing');
 
 -- RelayScripts for RP handled via creature_ai_scripts
-DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+12;
+DELETE FROM dbscripts_on_relay WHERE id BETWEEN @RELAYID+1 AND @RELAYID+14;
 INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- Bloodwarder Greenkeeper at then end of first Hallway
 -- On retail the rp can even happen if one of the Bloodwarder Greenkeepers is dead, to minimize dberrors we only let the rp happen when both are alive
@@ -1000,7 +1006,13 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 (@RELAYID+12,1,2,0,0,0,0,0,0,0,17000,0,0,0,0,0,0,0, 'Sunseeker Botanist - Say Text'),
 (@RELAYID+12,3000,0,15,34254,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Sunseeker Botanist - Cast Rejuvenate Plant'),
 (@RELAYID+12,10000,0,1,273,0,0,0,0,0,0,0,0,0,0,0,0,0, 'Sunseeker Botanist - Emote OneShotYes'),
-(@RELAYID+12,10000,1,0,0,0,0,0,0,0,16999,0,0,0,0,0,0,0, 'Sunseeker Botanist - Say Text');
+(@RELAYID+12,10000,1,0,0,0,0,0,0,0,16999,0,0,0,0,0,0,0, 'Sunseeker Botanist - Say Text'),
+-- Sunseeker Channeler
+(@RELAYID+13,0,0,15,34156,0,0,@STRINGID+16,10,2560,0,0,0,0,0,0,0,0, 'StringID - Cast Crystal Channel'),
+(@RELAYID+2,9000,0,31,0,10,0,@STRINGID+8,10,0x800,0,0,0,0,0,0,0,0, 'Sunseeker Channeler - Terminitate Script if Nethervince Inciter not found'),
+(@RELAYID+13,10000,0,15,34200,0,0,@STRINGID+18,15,2049,0,0,0,0,0,0,0,0, 'Sunseeker Channeler - Cast Crystal Channel'),
+(@RELAYID+13,18000,0,1,11,0,0,@STRINGID+16,10,2560,0,0,0,0,0,0,0,0, 'StringID - Emote Laugh'),
+(@RELAYID+14,0,0,15,34156,0,0,@STRINGID+17,10,2560,0,0,0,0,0,0,0,0, 'StringID - Cast Crystal Channel');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 -- INSERT INTO `dbscripts_on_go_use` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES

@@ -26558,8 +26558,11 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1858702','18587','8','0','100','1','34169','-1','1000','1000','0','0','11','34203','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Fire Form on Rain of Fire SpellHit'),
 ('1858703','18587','8','0','100','1','34170','-1','1000','1000','0','0','11','34204','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Arcane Form on Arcane Explosion SpellHit'),
 -- Sunseeker Chemist - spell_list
--- Sunseeker Channeler 19505 (4.3.4 Official Data - Normal/Heroic)
+-- Sunseeker Channeler 19505 - spell_list
 ('1950501','19505','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Sunseeker Channeler - Interrupt Channelling on Aggro'),
+-- guid based
+('5530093','-5530093','1','0','100','1','0','0','55000','600000','0','0','53','5530013','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript OOC'),
+('5530095','-5530095','1','0','100','1','0','0','55000','600000','0','0','53','5530014','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript OOC'),
 -- Sunseeker Gene-Splicer (4.3.4 Official Data - Normal/Heroic)
 ('1950701','19507','0','0','100','1027','4800','15300','18100','25300','0','0','11','34642','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Normal) - Cast Death and Decay'),
 ('1950702','19507','0','0','100','1029','4800','15300','18100','25300','0','0','11','39347','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Heroic) - Cast Death and Decay'),
