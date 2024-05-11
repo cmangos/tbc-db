@@ -194,8 +194,6 @@ UPDATE broadcast_text SET `text`="Should Kil'jaeden rise up through the Sunwell 
 -- Creature custom changes
 -- -------------------------------
 
-UPDATE creature_template SET `DisplayId2` = 17188 WHERE `entry` = 22332; -- Brood of Neltharaku (19980)
-
 -- Shattered Halls Dummys add not_attackable and imun by npcs flags
 -- Before: update creature_template set UnitFlags = '2304' where entry = 17578;
 UPDATE creature_template SET UnitFlags = UnitFlags|640 WHERE entry = 17578;
