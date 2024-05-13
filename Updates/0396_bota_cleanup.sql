@@ -14,3 +14,8 @@ INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) VAL
 (39126,1,21550,0), -- 19962 normal entry
 (39126,1,21566,0), -- 19964 normal entry
 (39126,1,21557,0); -- 19969 normal entry
+
+-- Crystal Channel
+DELETE FROM spell_script_target WHERE entry IN(34156);
+INSERT INTO spell_script_target(entry, type, targetEntry, inverseEffectMask) VALUES
+(34156,1,19555,0);

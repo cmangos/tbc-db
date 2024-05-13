@@ -26581,27 +26581,21 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('1858702','18587','8','0','100','1','34169','-1','1000','1000','0','0','11','34203','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Fire Form on Rain of Fire SpellHit'),
 ('1858703','18587','8','0','100','1','34170','-1','1000','1000','0','0','11','34204','0','33','0','0','0','0','0','0','0','0','Frayer - Cast Arcane Form on Arcane Explosion SpellHit'),
 -- Sunseeker Chemist - spell_list
--- Sunseeker Channeler 19505 (4.3.4 Official Data - Normal/Heroic)
+-- Sunseeker Channeler 19505 - spell_list
 ('1950501','19505','4','0','100','0','0','0','0','0','0','0','52','3','0','0','0','0','0','0','0','0','0','0','Sunseeker Channeler - Interrupt Channelling on Aggro'),
-('1950502','19505','0','0','100','1025','5000','10000','12000','18000','0','0','11','34634','0','0','0','0','0','0','0','0','0','0','Sunseeker Channeler - Cast Sunseeker Aura'),
-('1950503','19505','0','0','100','1025','8100','14200','12100','27700','0','0','11','34637','16','512','0','0','0','0','0','0','0','0','Sunseeker Channeler - Cast Soul Channel on Random Player Mana User'),
+-- guid based
+('5530093','-5530093','1','0','100','1','0','0','55000','600000','0','0','53','5530013','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript OOC'),
+('5530095','-5530095','1','0','100','1','0','0','55000','600000','0','0','53','5530014','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript OOC'),
 -- Sunseeker Gene-Splicer (4.3.4 Official Data - Normal/Heroic)
 ('1950701','19507','0','0','100','1027','4800','15300','18100','25300','0','0','11','34642','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Normal) - Cast Death and Decay'),
 ('1950702','19507','0','0','100','1029','4800','15300','18100','25300','0','0','11','39347','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Heroic) - Cast Death and Decay'),
 ('1950703','19507','0','0','100','1025','22100','29400','34800','37700','0','0','11','34247','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer - Cast Summon Lasher Beast'),
--- Sunseeker Herbalist (4.3.4 Official Data - Normal/Heroic)
-('1950801','19508','0','0','100','1025','6100','9600','12100','20500','0','0','11','22127','4','512','0','0','0','0','0','0','0','0','Sunseeker Herbalist - Cast Entangling Roots'),
-('1950802','19508','0','0','100','1025','1000','4000','5000','8000','0','0','11','34641','4','512','0','0','0','0','0','0','0','0','Sunseeker Herbalist - Cast Spade Toss'),
--- Sunseeker Harvester (4.3.4 Official Data - Normal/Heroic) - (No Polymorph Data Available)
-('1950901','19509','0','0','100','1025','3100','9700','8400','15700','0','0','11','34640','1','0','0','0','0','0','0','0','0','0','Sunseeker Harvester - Cast Wilting Touch'),
-('1950902','19509','0','0','100','1025','9000','15000','12000','18000','0','0','11','34639','5','512','0','0','0','0','0','0','0','0','Sunseeker Harvester - Cast Polymorph'),
+-- Sunseeker Herbalist - spell_list
+-- Sunseeker Harvester - spell_list
 -- Nethervine Inciter (19511,21563) - creature_spell_list
 ('1951101','19511','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Inciter - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),
-('1951102','19511','0','0','100','1025','4300','9700','21700','38600','0','0','11','34615','16','544','0','0','0','0','0','0','0','0','Nethervine Inciter - Cast Mind Numbing Poison on Random Player Mana User'),
 -- Nethervine Reaper 19512 (4.3.4 Official Data - Normal/Heroic)
 ('1951201','19512','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Reaper - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),
-('1951202','19512','0','0','100','1029','17200','22600','21200','26400','0','0','11','34626','1','32','0','0','0','0','0','0','0','0','Nethervine Reaper (Heroic) - Cast Pale Death'),
-('1951203','19512','0','0','100','1025','4300','16100','8100','12200','0','0','11','15284','1','0','0','0','0','0','0','0','0','0','Nethervine Reaper - Cast Cleave'),
 -- Mutate Fear-Shrieker (FEAR SPELL WAS REMOVED IN 4.x.x)
 ('1951301','19513','0','0','100','1025','8000','24000','28000','36000','0','0','11','30584','0','0','0','0','0','0','0','0','0','0','Mutate Fear-Shrieker - Cast Fear'),
 -- Greater Frayer - spell_list
