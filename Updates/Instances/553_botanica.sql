@@ -254,19 +254,6 @@ INSERT INTO `creature_linking` (`guid`, `master_guid`, `flag`) VALUES
 (@CGUID+124, @CGUID+123, 1155), -- Nethervine Inciter -> Nethervine Inciter
 (@CGUID+129, @CGUID+123, 1155), -- Nethervine Reaper -> Nethervine Inciter
 (@CGUID+130, @CGUID+123, 1155), -- Nethervine Reaper -> Nethervine Inciter
-(@CGUID+98, @CGUID+117, 1155), -- Sunseeker Gene-Splicer -> Sunseeker Harvester
-(@CGUID+118, @CGUID+117, 1155), -- Sunseeker Harvester -> Sunseeker Harvester
-(@CGUID+153, @CGUID+117, 1155), -- Mutate Fleshlasher -> Sunseeker Harvester
-(@CGUID+154, @CGUID+117, 1155), -- Mutate Fleshlasher -> Sunseeker Harvester
-(@CGUID+97, @CGUID+151, 1155), -- Sunseeker Gene-Splicer -> Mutate Fleshlasher
-(@CGUID+112, @CGUID+151, 1155), -- Sunseeker Herbalist -> Mutate Fleshlasher
-(@CGUID+116, @CGUID+151, 1155), -- Sunseeker Harvester -> Mutate Fleshlasher
-(@CGUID+152, @CGUID+151, 1155), -- Mutate Fleshlasher -> Mutate Fleshlasher
-(@CGUID+99, @CGUID+155, 1155), -- Sunseeker Gene-Splicer -> Mutate Fleshlasher
-(@CGUID+113, @CGUID+155, 1155), -- Sunseeker Herbalist -> Mutate Fleshlasher
-(@CGUID+119, @CGUID+155, 1155), -- Sunseeker Harvester -> Mutate Fleshlasher
-(@CGUID+156, @CGUID+155, 1155), -- Mutate Fleshlasher -> Mutate Fleshlasher
-(@CGUID+13, @CGUID+14, 1155), -- Bloodwarder Protector -> Bloodwarder Protector
 (@CGUID+134, @CGUID+183, 1155), -- Mutate Fear-Shrieker -> Mutate Horror
 (@CGUID+135, @CGUID+183, 1155), -- Mutate Fear-Shrieker -> Mutate Horror
 (@CGUID+184, @CGUID+183, 1155), -- Mutate Horror -> Mutate Horror
@@ -312,8 +299,8 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+10, 17993, 553, 3, 32.74755, 292.83197, -5.5621696, 5.323254, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+11, 17993, 553, 3, 75.01243, 283.88235, -5.3920293, 1.762782, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+12, 17993, 553, 3, 75.30202, 292.3356, -5.3812394, 4.95673513, 7200, 7200, 0, 0), -- Bloodwarder Protector
-(@CGUID+13, 17993, 553, 3, -164.9891, 473.0342, -17.74157, 1.570796, 7200, 7200, 0, 0), -- Bloodwarder Protector
-(@CGUID+14, 17993, 553, 3, -157.6686, 471.7192, -17.74158, 1.762783, 7200, 7200, 0, 0), -- Bloodwarder Protector
+(@CGUID+13, 17993, 553, 3, -164.989, 473.034, -17.7416, 1.5708, 7200, 7200, 0, 0), -- Bloodwarder Protector
+(@CGUID+14, 17993, 553, 3, -157.669, 471.719, -17.7416, 1.76278, 7200, 7200, 0, 0), -- Bloodwarder Protector
 (@CGUID+15, 17993, 553, 3, 2.71023, 59.10882, -5.62977, 3.12338, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+16, 17993, 553, 3, -6.33425, 59.407, -5.55881, 0.030197, 7200, 7200, 0, 2), -- Bloodwarder Protector
 (@CGUID+17, 17993, 553, 3, 0.660349, 104.14, -5.63461, 2.63602, 7200, 7200, 0, 2), -- Bloodwarder Protector
@@ -396,9 +383,9 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+94, 19505, 553, 3, -20.1536, 505.03, -5.22962, 1.27409, 7200, 7200, 0, 0), -- Sunseeker Channeler
 (@CGUID+95, 19505, 553, 3, -15.6348, 505.633, -5.2228, 2.47837, 7200, 7200, 0, 0), -- Sunseeker Channeler
 (@CGUID+96, 19505, 553, 3, -9.717303,588.702,-17.651875,2.11580, 7200, 7200, 0, 2), -- Sunseeker Channeler
-(@CGUID+97, 19507, 553, 3, -131.5275, 507.6039, -17.74161, 4.153883, 7200, 7200, 0, 0), -- Sunseeker Gene-Splicer
-(@CGUID+98, 19507, 553, 3, -150.3988, 526.5366, -17.74155, 3.630285, 7200, 7200, 0, 0), -- Sunseeker Gene-Splicer
-(@CGUID+99, 19507, 553, 3, -160.4898, 499.152, -17.74157, 3.193953, 7200, 7200, 0, 0), -- Sunseeker Gene-Splicer
+(@CGUID+97, 19507, 553, 3, -131.527, 507.604, -17.7416, 4.15388, 7200, 7200, 0, 0), -- Sunseeker Gene-Splicer
+(@CGUID+98, 19507, 553, 3, -150.399, 526.537, -17.7416, 3.63028, 7200, 7200, 0, 0), -- Sunseeker Gene-Splicer
+(@CGUID+99, 19507, 553, 3, -160.49, 499.152, -17.7416, 3.19395, 7200, 7200, 0, 0), -- Sunseeker Gene-Splicer
 (@CGUID+100, 19507, 553, 3, -157.634, 411.701, -17.6124, 1.27409, 7200, 7200, 0, 2), -- Sunseeker Gene-Splicer
 (@CGUID+101, 19507, 553, 3, -177.217, 408.964, -17.6069, 2.07694, 7200, 7200, 0, 2), -- Sunseeker Gene-Splicer
 (@CGUID+102, 19507, 553, 3, -150.54, 400.302, -17.7579, 2.75762, 7200, 7200, 0, 2), -- Sunseeker Gene-Splicer
@@ -411,14 +398,14 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+109, 19507, 553, 3, -179.922, 401.107, -17.6042, 0.488692, 7200, 7200, 0, 2), -- Sunseeker Gene-Splicer
 (@CGUID+110, 19507, 553, 3, -164.275, 375.683, -17.6168, 2.75762, 7200, 7200, 0, 2), -- Sunseeker Gene-Splicer
 (@CGUID+111, 19507, 553, 3, -152.4, 372.664, -17.6055, 0.331613, 7200, 7200, 0, 2), -- Sunseeker Gene-Splicer
-(@CGUID+112, 19508, 553, 3, -129.1739, 503.9626, -17.74162, 3.385939, 7200, 7200, 0, 0), -- Sunseeker Herbalist
-(@CGUID+113, 19508, 553, 3, -163.5266, 504.2899, -17.74156, 3.909538, 7200, 7200, 0, 0), -- Sunseeker Herbalist
+(@CGUID+112, 19508, 553, 3, -129.174, 503.963, -17.7416, 3.38594, 7200, 7200, 0, 0), -- Sunseeker Herbalist
+(@CGUID+113, 19508, 553, 3, -163.527, 504.29, -17.7416, 3.90954, 7200, 7200, 0, 0), -- Sunseeker Herbalist
 (@CGUID+114, 19508, 553, 3, -16.2608, 482.706, -5.38576, 3.94444, 7200, 7200, 0, 0), -- Sunseeker Herbalist
 (@CGUID+115, 19508, 553, 3, -17.3213, 485.099, -5.36875, 2.96706, 7200, 7200, 0, 0), -- Sunseeker Herbalist
-(@CGUID+116, 19509, 553, 3, -135.6872, 508.0049, -17.7416, 4.782202, 7200, 7200, 0, 0), -- Sunseeker Harvester
-(@CGUID+117, 19509, 553, 3, -154.4782, 529.9067, -17.74155, 3.752458, 7200, 7200, 0, 0), -- Sunseeker Harvester
-(@CGUID+118, 19509, 553, 3, -149.5856, 522.2166, -17.74157, 2.827433, 7200, 7200, 0, 0), -- Sunseeker Harvester
-(@CGUID+119, 19509, 553, 3, -161.7712, 495.0295, -17.74158, 2.932153, 7200, 7200, 0, 0), -- Sunseeker Harvester
+(@CGUID+116, 19509, 553, 3, -135.687, 508.005, -17.7416, 4.7822, 7200, 7200, 0, 0), -- Sunseeker Harvester
+(@CGUID+117, 19509, 553, 3, -154.478, 529.907, -17.7416, 3.75246, 7200, 7200, 0, 0), -- Sunseeker Harvester
+(@CGUID+118, 19509, 553, 3, -149.586, 522.217, -17.7416, 2.82743, 7200, 7200, 0, 0), -- Sunseeker Harvester
+(@CGUID+119, 19509, 553, 3, -161.771, 495.03, -17.7416, 2.93215, 7200, 7200, 0, 0), -- Sunseeker Harvester
 (@CGUID+120, 19509, 553, 3, -15.0387, 479.981, -5.40512, 1.39626, 7200, 7200, 0, 0), -- Sunseeker Harvester
 (@CGUID+121, 19511, 553, 3, 1.63937,482.49994,-5.5345893, 6.193, 7200, 7200, 0, 4), -- Nethervine Inciter
 (@CGUID+122, 19511, 553, 3, 2.500325,493.41788,-5.437914, 6.193, 7200, 7200, 0, 4), -- Nethervine Inciter
@@ -450,12 +437,12 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `position_x`, `positio
 (@CGUID+148, 19557, 553, 3, 194.849, 380.179, -5.3831, 1.67552, 7200, 7200, 0, 0), -- Greater Frayer
 (@CGUID+149, 19557, 553, 3, 172.615, 498.358, -2.31229, 4.43314, 7200, 7200, 0, 0), -- Greater Frayer
 (@CGUID+150, 19557, 553, 3, 163.761, 507.106, -2.36096, 3.50811, 7200, 7200, 0, 0), -- Greater Frayer
-(@CGUID+151, 19598, 553, 3, -133.4, 518.873, -17.8247, 4.12176, 7200, 7200, 3, 1), -- Mutate Fleshlasher
-(@CGUID+152, 19598, 553, 3, -126.586, 510.349, -17.8247, 2.6295, 7200, 7200, 3, 1), -- Mutate Fleshlasher
-(@CGUID+153, 19598, 553, 3, -149.496, 533.72, -17.8249, 4.90715, 7200, 7200, 3, 1), -- Mutate Fleshlasher
-(@CGUID+154, 19598, 553, 3, -145.39, 520.226, -17.8249, 3.71334, 7200, 7200, 3, 1), -- Mutate Fleshlasher
-(@CGUID+155, 19598, 553, 3, -155.895, 511.581, -17.8249, 2.20537, 7200, 7200, 3, 1), -- Mutate Fleshlasher
-(@CGUID+156, 19598, 553, 3, -154.103, 502.819, -17.8249, 5.08386, 7200, 7200, 3, 1), -- Mutate Fleshlasher
+(@CGUID+151, 19598, 553, 3, -130.892, 514.109, -17.7416, 0.628319, 7200, 7200, 2, 1), -- Mutate Fleshlasher
+(@CGUID+152, 19598, 553, 3, -127.188, 508.097, -17.7416, 0.680678, 7200, 7200, 2, 1), -- Mutate Fleshlasher
+(@CGUID+153, 19598, 553, 3, -148.281, 533.29, -17.7415, 2.86234, 7200, 7200, 2, 1), -- Mutate Fleshlasher
+(@CGUID+154, 19598, 553, 3, -144.334, 524.885, -17.7416, 3.56047, 7200, 7200, 2, 1), -- Mutate Fleshlasher
+(@CGUID+155, 19598, 553, 3, -158.112, 507.402, -17.7416, 5.49779, 7200, 7200, 2, 1), -- Mutate Fleshlasher
+(@CGUID+156, 19598, 553, 3, -153.206, 499.78, -17.7416, 4.39823, 7200, 7200, 2, 1), -- Mutate Fleshlasher
 (@CGUID+157, 19608, 553, 3, -7.40264, 405.74, -28.8768, 0.568592, 7200, 7200, 3, 1), -- Frayer Wildling
 (@CGUID+158, 19608, 553, 3, -11.3965, 409.641, -28.9496, 1.05554, 7200, 7200, 3, 1), -- Frayer Wildling
 (@CGUID+159, 19608, 553, 3, -5.04485, 413.541, -28.7785, 0.851335, 7200, 7200, 3, 1), -- Frayer Wildling
@@ -609,9 +596,12 @@ INSERT INTO `spawn_group` (`Id`, `Name`, `Type`, `MaxCount`, `WorldState`, `Worl
 (@SGGUID+27, 'The Botanica - Group 027 - Sunseeker Channeler (2)', 0, 0, 0, 0, 1, @STRINGID+16), 
 (@SGGUID+28, 'The Botanica - Group 028 - Sunseeker Channeler (2)', 0, 0, 0, 0, 1, @STRINGID+17), 
 (@SGGUID+29, 'The Botanica - Group 029 - Nethervine Inciter - Nethervine Reaper | Patrol 03', 0, 0, 0, 0, 1, 0),
-
 (@SGGUID+30, 'The Botanica - Group 030 - Nethervine Inciter (2)- Nethervine Reaper (2)', 0, 0, 0, 0, 1, 0),
-(@SGGUID+31, 'The Botanica - Group 031 - Nethervine Inciter (2)- Nethervine Reaper (2)', 0, 0, 0, 0, 1, 0);
+(@SGGUID+31, 'The Botanica - Group 031 - Nethervine Inciter (2)- Nethervine Reaper (2)', 0, 0, 0, 0, 1, 0),
+(@SGGUID+32, 'The Botanica - Group 032 - Sunseeker Gene-Splicer - Sunseeker Herbalist - Sunseeker Harvester - Mutate Fleshlasher (2)', 0, 0, 0, 0, 3, 0), -- aggro and respawn together
+(@SGGUID+33, 'The Botanica - Group 033 - Sunseeker Gene-Splicer - Sunseeker Harvester (2) - Mutate Fleshlasher (2)', 0, 0, 0, 0, 3, 0), -- aggro and respawn together
+(@SGGUID+34, 'The Botanica - Group 034 - Sunseeker Gene-Splicer - Sunseeker Herbalist - Sunseeker Harvester - Mutate Fleshlasher (2)', 0, 0, 0, 0, 3, 0), -- aggro and respawn together
+(@SGGUID+35, 'The Botanica - Group 035 - Bloodwarder Protector (2)', 0, 0, 0, 0, 1, 0);
 
 INSERT INTO `spawn_group_entry` (`Id`, `Entry`, `MinCount`, `MaxCount`, `Chance`) VALUES
 (@SGGUID+16, 18421, 1, 1, 0), (@SGGUID+16, 19486, 1, 1, 0), -- Sunseeker Researcher, Sunseeker Chemist
@@ -752,7 +742,28 @@ INSERT INTO `spawn_group_spawn` (`Id`, `Guid`, `SlotId`, `Chance`) VALUES
 (@SGGUID+31, @CGUID+123, 0, 0), -- Nethervine Inciter
 (@SGGUID+31, @CGUID+124, 1, 0), -- Nethervine Inciter
 (@SGGUID+31, @CGUID+129, 2, 0), -- Nethervine Reaper
-(@SGGUID+31, @CGUID+130, 3, 0); -- Nethervine Reaper
+(@SGGUID+31, @CGUID+130, 3, 0), -- Nethervine Reaper
+
+(@SGGUID+32, @CGUID+97, 0, 0), -- Sunseeker Gen-Splicer
+(@SGGUID+32, @CGUID+112, 1, 0), -- Sunseeker Herbalist
+(@SGGUID+32, @CGUID+116, 2, 0), -- Sunseeker Harvester
+(@SGGUID+32, @CGUID+151, 3, 0), -- Mutate Fleshlasher
+(@SGGUID+32, @CGUID+152, 4, 0), -- Mutate Fleshlasher
+
+(@SGGUID+33, @CGUID+98, 0, 0), -- Sunseeker Gen-Splicer
+(@SGGUID+33, @CGUID+117, 1, 0), -- Sunseeker Harvester
+(@SGGUID+33, @CGUID+118, 2, 0), -- Sunseeker Harvester
+(@SGGUID+33, @CGUID+153, 3, 0), -- Mutate Fleshlasher
+(@SGGUID+33, @CGUID+154, 4, 0), -- Mutate Fleshlasher
+
+(@SGGUID+34, @CGUID+99, 0, 0), -- Sunseeker Gen-Splicer
+(@SGGUID+34, @CGUID+113, 1, 0), -- Sunseeker Herbalist
+(@SGGUID+34, @CGUID+119, 2, 0), -- Sunseeker Harvester
+(@SGGUID+34, @CGUID+155, 3, 0), -- Mutate Fleshlasher
+(@SGGUID+34, @CGUID+156, 4, 0), -- Mutate Fleshlasher
+
+(@SGGUID+35, @CGUID+13, 0, 0), -- Bloodwarder Protector - right
+(@SGGUID+35, @CGUID+14, 1, 0); -- Bloodwarder Protector - left
 
 INSERT INTO `spawn_group_formation` (`Id`, `FormationType`, `FormationSpread`, `FormationOptions`, `PathId`, `MovementType`, `Comment`) VALUES
 (@SGGUID+20, 1, 3, 0, @SGGUID+20, 2, 'The Botanica - Group 020 - Sunseeker Botanist - Greater Frayer | Patrol 01'),
@@ -1010,8 +1021,8 @@ INSERT INTO `dbscripts_on_relay` (`id`, `delay`, `priority`, `command`, `datalon
 -- Sunseeker Channeler
 (@RELAYID+13,0,0,15,34156,0,0,@STRINGID+16,10,2560,0,0,0,0,0,0,0,0, 'StringID - Cast Crystal Channel'),
 (@RELAYID+2,9000,0,31,0,10,0,@STRINGID+8,10,0x800,0,0,0,0,0,0,0,0, 'Sunseeker Channeler - Terminitate Script if Nethervince Inciter not found'),
-(@RELAYID+13,10000,0,15,34200,0,0,@STRINGID+18,15,2049,0,0,0,0,0,0,0,0, 'Sunseeker Channeler - Cast Crystal Channel'),
-(@RELAYID+13,18000,0,1,11,0,0,@STRINGID+16,10,2560,0,0,0,0,0,0,0,0, 'StringID - Emote Laugh'),
+(@RELAYID+13,11000,0,15,34200,0,0,@STRINGID+18,15,2049,0,0,0,0,0,0,0,0, 'Sunseeker Channeler - Cast Crystal Channel'),
+(@RELAYID+13,19000,0,1,11,0,0,@STRINGID+16,10,2560,0,0,0,0,0,0,0,0, 'StringID - Emote Laugh'),
 (@RELAYID+14,0,0,15,34156,0,0,@STRINGID+17,10,2560,0,0,0,0,0,0,0,0, 'StringID - Cast Crystal Channel');
 
 -- INSERT INTO `dbscripts_on_creature_death` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `buddy_entry`, `search_radius`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
