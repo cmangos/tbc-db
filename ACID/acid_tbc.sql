@@ -26586,21 +26586,16 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- guid based
 ('5530093','-5530093','1','0','100','1','0','0','55000','600000','0','0','53','5530013','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript OOC'),
 ('5530095','-5530095','1','0','100','1','0','0','55000','600000','0','0','53','5530014','0','0','0','0','0','0','0','0','0','0','Sunseeker Botanist - Start RelayScript OOC'),
--- Sunseeker Gene-Splicer (4.3.4 Official Data - Normal/Heroic)
-('1950701','19507','0','0','100','1027','4800','15300','18100','25300','0','0','11','34642','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Normal) - Cast Death and Decay'),
-('1950702','19507','0','0','100','1029','4800','15300','18100','25300','0','0','11','39347','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer (Heroic) - Cast Death and Decay'),
-('1950703','19507','0','0','100','1025','22100','29400','34800','37700','0','0','11','34247','1','0','0','0','0','0','0','0','0','0','Sunseeker Gene-Splicer - Cast Summon Lasher Beast'),
+-- Sunseeker Gene-Splicer - spell_list
 -- Sunseeker Herbalist - spell_list
 -- Sunseeker Harvester - spell_list
 -- Nethervine Inciter (19511,21563) - creature_spell_list
 ('1951101','19511','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Inciter - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),
 -- Nethervine Reaper 19512 (4.3.4 Official Data - Normal/Heroic)
 ('1951201','19512','8','0','100','1','34222','-1','0','0','0','0','11','34173','0','0','0','0','0','0','0','0','0','0','Nethervine Reaper - Cast Sunseeker Blessing on Sunseeker Blessing Spellhit'),
--- Mutate Fear-Shrieker (FEAR SPELL WAS REMOVED IN 4.x.x)
-('1951301','19513','0','0','100','1025','8000','24000','28000','36000','0','0','11','30584','0','0','0','0','0','0','0','0','0','0','Mutate Fear-Shrieker - Cast Fear'),
+-- Mutate Fear-Shrieker - spell_list
 -- Greater Frayer - spell_list
--- Mutate Fleshlasher (4.3.4 Official Data - Normal/Heroic)
-('1959801','19598','0','0','100','1025','7800','12100','6200','12100','0','0','11','34351','1','0','0','0','0','0','0','0','0','0','Mutate Fleshlasher - Cast Vicious Bite'),
+-- Mutate Fleshlasher - spell_list
 -- Frayer Wildling (4.3.4 Official Data - Normal/Heroic)
 ('1960801','19608','0','0','100','1027','4200','8100','4100','10200','0','0','11','34644','1','0','0','0','0','0','0','0','0','0','Frayer Wildling (Normal) - Cast Lash'),
 ('1960802','19608','0','0','100','1029','4200','8100','4100','8300','0','0','11','39122','1','0','0','0','0','0','0','0','0','0','Frayer Wildling (Heroic) - Cast Lash'),
@@ -26635,8 +26630,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 ('2008301','20083','11','0','100','0','0','0','0','0','0','0','11','34815','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Cast Teleport Effect on Spawn'),
 ('2008302','20083','1','0','100','0','2000','2000','0','0','0','0','38','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Zone Combat Pulse'),
 ('2008303','20083','1','0','100','0','5000','5000','0','0','0','0','41','0','0','0','0','0','0','0','0','0','0','0','Summoned Bloodwarder Mender - Despawn 5 secs OOC'),
--- Mutate Fleshlasher (4.3.4 Official Data - Normal/Heroic)
-('2535401','25354','0','0','100','1025','7800','12100','6200','12100','0','0','11','34351','1','0','0','0','0','0','0','0','0','0','Mutate Fleshlasher - Cast Vicious Bite'),
+-- Mutate Fleshlasher - spell_list
 
 
 

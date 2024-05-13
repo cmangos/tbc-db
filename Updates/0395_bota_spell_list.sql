@@ -341,3 +341,73 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 UPDATE `creature_template` SET `SpellList` = 1950501 WHERE `entry` = 19505;
 UPDATE `creature_template` SET `SpellList` = 2157101 WHERE `entry` = 21571;
 
+
+-- Sunseeker Gene-Splicer 19507
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19507, 21573);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1950701, 2157301);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1950701, 'Botanica - Sunseeker Gene-Splicer - Normal', 0, 0),
+(2157301, 'Botanica - Sunseeker Gene-Splicer - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1950701, 2157301);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1950701, 1, 34247, 0, -1, 1, 0, 100, 0, 19000, 24000, 32000, 38000, 'Sunseeker Gene-Splicer - Summon Lasher Beast'),
+(1950701, 2, 34642, 0, -1, 1, 0, 100, 0, 5000, 16000, 12000, 23000, 'Sunseeker Gene-Splicer - Death and Decay - current'),
+(2157301, 1, 34247, 0, -1, 1, 0, 100, 0, 19000, 24000, 32000, 38000, 'Sunseeker Gene-Splicer - Summon Lasher Beast'),
+(2157301, 2, 39347, 0, -1, 1, 0, 100, 0, 5000, 16000, 12000, 23000, 'Sunseeker Gene-Splicer - Death and Decay - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1950701 WHERE `entry` = 19507;
+UPDATE `creature_template` SET `SpellList` = 2157301 WHERE `entry` = 21573;
+
+
+-- Mutate Fear-Shrieker 19513
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19513, 21560);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1951301, 2156001);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1951301, 'Botanica - Mutate Fear-Shrieker - Normal', 0, 0),
+(2156001, 'Botanica - Mutate Fear-Shrieker - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1951301, 2156001);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1951301, 1, 30584, 0, -1, 1, 0, 100, 0, 8000, 24000, 28000, 36000, 'Mutate Fear-Shrieker - Fear'),
+(2156001, 1, 30584, 0, -1, 1, 0, 100, 0, 8000, 24000, 28000, 36000, 'Mutate Fear-Shrieker - Fear');
+
+
+UPDATE `creature_template` SET `SpellList` = 1951301 WHERE `entry` = 19513;
+UPDATE `creature_template` SET `SpellList` = 2156001 WHERE `entry` = 21560;
+
+-- Mutate Fleshlasher 19598
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19598, 21561);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1959801, 2156101);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1959801, 'Botanica - Mutate Fleshlasher - Normal', 0, 0),
+(2156101, 'Botanica - Mutate Fleshlasher - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1959801, 2156101);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1959801, 1, 34351, 0, -1, 1, 0, 100, 0, 6000, 20000, 6000, 20000, 'Mutate Fleshlasher - Vicious Bite'),
+(2156101, 1, 34351, 0, -1, 1, 0, 100, 0, 6000, 20000, 6000, 20000, 'Mutate Fleshlasher - Vicious Bite');
+
+
+UPDATE `creature_template` SET `SpellList` = 1959801 WHERE `entry` = 19598;
+UPDATE `creature_template` SET `SpellList` = 2156101 WHERE `entry` = 21561;
+
+
+-- Mutate Fleshlasher - spawned from Summon Lasher Beast spell 25354
+DELETE FROM `creature_template_spells` WHERE `entry` IN (25354);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (2535401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(2535401, 'Botanica - Mutate Fleshlasher', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (2535401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(2535401, 1, 34351, 0, -1, 1, 0, 100, 0, 6000, 20000, 6000, 20000, 'Mutate Fleshlasher - Vicious Bite');
+
+
+UPDATE `creature_template` SET `SpellList` = 2535401 WHERE `entry` = 25354;
+
