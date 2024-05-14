@@ -542,7 +542,7 @@ INSERT INTO `creature_spawn_data` (`Guid`, `Id`) VALUES
 
 DELETE FROM creature_spawn_data_template WHERE Entry IN (1799301, 1815501, 1815502, 1815503, 1815504, 1815505, 1950701, 1951101);
 INSERT INTO `creature_spawn_data_template` (`Entry`, `UnitFlags`, `Faction`, `StringId`, `Name`) VALUES 
-('1799301', '0', '190', '0', 'The Botanica - Bloodwarder Protector'),
+('1799301', '33587264', '190', '0', 'The Botanica - Bloodwarder Protector'),
 ('1815501', '0', '0', @STRINGID+7, 'The Botanica - BLOODFALCON_01'), 
 ('1815502', '0', '0', @STRINGID+8, 'The Botanica - BLOODFALCON_02'), 
 ('1815503', '0', '0', @STRINGID+9, 'The Botanica - BLOODFALCON_03'),
