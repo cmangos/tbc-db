@@ -411,3 +411,20 @@ INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `Combat
 
 UPDATE `creature_template` SET `SpellList` = 2535401 WHERE `entry` = 25354;
 
+
+-- Frayer Wildling 19608
+DELETE FROM `creature_template_spells` WHERE `entry` IN (19608, 21554);
+
+DELETE FROM `creature_spell_list_entry` WHERE `Id` IN (1960801, 2155401);
+INSERT INTO `creature_spell_list_entry` (`Id`, `Name`, `ChanceSupportAction`, `ChanceRangedAttack`) VALUES
+(1960801, 'Botanica - Frayer Wildling - Normal', 0, 0),
+(2155401, 'Botanica - Frayer Wildling - Heroic', 0, 0);
+
+DELETE FROM `creature_spell_list` WHERE `Id` IN (1960801, 2155401);
+INSERT INTO `creature_spell_list` (`Id`, `Position`, `SpellId`, `Flags`, `CombatCondition`, `TargetId`, `ScriptId`, `Availability`, `Probability`, `InitialMin`, `InitialMax`, `RepeatMin`, `RepeatMax`, `Comments`) VALUES
+(1960801, 1, 34644, 0, -1, 1, 0, 100, 0, 4000, 12000, 6000, 14000, 'Frayer Wildling - Lash - current'),
+(2155401, 1, 39122, 0, -1, 1, 0, 100, 0, 4000, 12000, 6000, 14000, 'Frayer Wildling - Lash - current');
+
+
+UPDATE `creature_template` SET `SpellList` = 1960801 WHERE `entry` = 19608;
+UPDATE `creature_template` SET `SpellList` = 2155401 WHERE `entry` = 21554;

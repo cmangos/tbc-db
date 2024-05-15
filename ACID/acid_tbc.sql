@@ -26599,9 +26599,7 @@ INSERT INTO `creature_ai_scripts` (`id`,`creature_id`,`event_type`,`event_invers
 -- Mutate Fear-Shrieker - spell_list
 -- Greater Frayer - spell_list
 -- Mutate Fleshlasher - spell_list
--- Frayer Wildling (4.3.4 Official Data - Normal/Heroic)
-('1960801','19608','0','0','100','1027','4200','8100','4100','10200','0','0','11','34644','1','0','0','0','0','0','0','0','0','0','Frayer Wildling (Normal) - Cast Lash'),
-('1960802','19608','0','0','100','1029','4200','8100','4100','8300','0','0','11','39122','1','0','0','0','0','0','0','0','0','0','Frayer Wildling (Heroic) - Cast Lash'),
+-- Frayer Wildling - spell_list
 -- Bloodwarder Mender 19633 - spell_list
 ('1963301','19633','27','0','100','1','34809','1','15000','30000','0','0','11','34809','0','0','0','0','0','0','0','0','0','0','Bloodwarder Mender - Cast Holy Fury on Missing Buff'),
 -- Nethervine Trickster (4.3.4 Official Data - Normal/Heroic)
